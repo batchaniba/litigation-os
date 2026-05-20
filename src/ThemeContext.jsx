@@ -6,6 +6,7 @@ export const THEMES = {
     // Shell
     bg: DARK_BG,
     headerBg: `linear-gradient(135deg, ${NAVY} 0%, ${DARK_BG} 100%)`,
+    headerText: "white",
     bannerBg: "linear-gradient(90deg, #0F1A2E 0%, #1A2A49 50%, #0F1A2E 100%)",
     text: "#E2E8F0",
     mutedText: "#94A3B8",
@@ -41,14 +42,15 @@ export const THEMES = {
   light: {
     // Shell
     bg: "#F0F4F8",
-    headerBg: `linear-gradient(135deg, #1A2A49 0%, #2C3F6A 100%)`,
+    headerBg: `linear-gradient(135deg, #FFFFFF 0%, #F5F7FA 100%)`,
+    headerText: "#0F172A",
     bannerBg: "linear-gradient(90deg, #E8EDF4 0%, #F0F4F8 50%, #E8EDF4 100%)",
     text: "#1E293B",
     mutedText: "#64748B",
     footerText: "#64748B",
     footerBorder: "#CBD5E1",
     tabActive: { bg: `${GOLD}22`, border: `1px solid ${GOLD}`, color: GOLD },
-    tabInactive: { bg: "transparent", border: "1px solid transparent", color: "#CBD5E1" },
+    tabInactive: { bg: "transparent", border: "1px solid transparent", color: "#64748B" },
     clockBtn: { border: "1px solid #CBD5E1", color: "#94A3B8" },
     // Components
     cardBg: "#FFFFFF",
