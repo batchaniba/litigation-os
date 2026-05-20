@@ -38,7 +38,7 @@ export const DamagesTab = ({ damagesView, setDamagesView }) => {
       {/* Aggregate Total Card */}
       <div style={{ background: theme.aggregateCardBg, borderRadius: 12, padding: 28, border: `1px solid ${GOLD}30`, marginBottom: 24, textAlign: "center" }}>
         <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: GOLD, fontWeight: 700, letterSpacing: 3, textTransform: "uppercase", marginBottom: 8 }}>Aggregate Exposure — {damagesView}</div>
-        <div style={{ fontSize: 48, fontWeight: 700, color: "white" }}>
+        <div style={{ fontSize: 48, fontWeight: 700, color: theme.aggregateCardText }}>
           {formatCurrency(VIEW_TOTALS[damagesView])}
           {damagesView === "aggressive" && <span style={{ fontSize: 28, color: GOLD }}>+</span>}
         </div>
@@ -80,7 +80,7 @@ export const DamagesTab = ({ damagesView, setDamagesView }) => {
               cursor: "pointer", textAlign: "center", transition: "all 0.3s", color: "inherit", font: "inherit", margin: 0
             }}>
               <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: isActive ? GOLD : theme.subtleText, fontWeight: 700, letterSpacing: 1, textTransform: "uppercase", marginBottom: 8 }}>{v}</div>
-              <div style={{ fontSize: 26, fontWeight: 700, color: isActive ? theme.heading : theme.mutedText }}>{formatCurrency(total)}{v === "aggressive" && "+"}</div>
+              <div style={{ fontSize: 26, fontWeight: 700, color: isActive ? theme.aggregateCardText : theme.mutedText }}>{formatCurrency(total)}{v === "aggressive" && "+"}</div>
             </button>
           );
         })}
