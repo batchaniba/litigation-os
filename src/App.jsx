@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NAVY, GOLD, BODY_GRAY, DARK_BG } from "./constants";
+import { GOLD, BODY_GRAY } from "./constants";
 import { getPDTMidnight, parseEventDatePDT } from "./utils/dateUtils";
 import { useDeadlineClock } from "./hooks/useDeadlineClock";
 import { useCaseFilters } from "./hooks/useCaseFilters";
@@ -9,33 +9,7 @@ import { MattersTab } from "./components/MattersTab";
 import { TimelineTab } from "./components/TimelineTab";
 import { DamagesTab } from "./components/DamagesTab";
 import { TheoriesTab } from "./components/TheoriesTab";
-
-const THEMES = {
-  dark: {
-    bg: DARK_BG,
-    headerBg: `linear-gradient(135deg, ${NAVY} 0%, ${DARK_BG} 100%)`,
-    bannerBg: "linear-gradient(90deg, #0F1A2E 0%, #1A2A49 50%, #0F1A2E 100%)",
-    text: "#E2E8F0",
-    mutedText: "#94A3B8",
-    footerText: "#475569",
-    footerBorder: NAVY,
-    tabActive: { bg: `${GOLD}18`, border: `1px solid ${GOLD}`, color: GOLD },
-    tabInactive: { bg: "transparent", border: "1px solid transparent", color: "#94A3B8" },
-    clockBtn: { border: "1px solid #475569", color: "#64748B" },
-  },
-  light: {
-    bg: "#F0F4F8",
-    headerBg: `linear-gradient(135deg, #1A2A49 0%, #2C3F6A 100%)`,
-    bannerBg: "linear-gradient(90deg, #E8EDF4 0%, #F0F4F8 50%, #E8EDF4 100%)",
-    text: "#1E293B",
-    mutedText: "#64748B",
-    footerText: "#64748B",
-    footerBorder: "#CBD5E1",
-    tabActive: { bg: `${GOLD}22`, border: `1px solid ${GOLD}`, color: GOLD },
-    tabInactive: { bg: "transparent", border: "1px solid transparent", color: "#CBD5E1" },
-    clockBtn: { border: "1px solid #CBD5E1", color: "#94A3B8" },
-  },
-};
+import { ThemeContext, THEMES } from "./ThemeContext";
 
 const tabs = ["Dashboard", "Matters", "Timeline", "Damages", "Theories"];
 
@@ -56,6 +30,7 @@ export default function LitigationPortfolio() {
   const timeLeft = useDeadlineClock(upcomingEvents);
 
   return (
+    <ThemeContext.Provider value={theme}>
     <div style={{ minHeight: "100vh", background: theme.bg, color: theme.text, fontFamily: "'Cormorant Garamond', 'Georgia', serif" }}>
       <style>{`@keyframes clockPulse { 0%,100%{opacity:1} 50%{opacity:0.25} }`}</style>
 
@@ -154,5 +129,6 @@ export default function LitigationPortfolio() {
         <span>Confidential — Attorney Work Product</span>
       </div>
     </div>
+    </ThemeContext.Provider>
   );
 }
