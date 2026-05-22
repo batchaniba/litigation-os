@@ -284,7 +284,9 @@ export const cases = [
       procedural_status: "Filed 05/29/2026. Gov. Claim presented 03/02/2026; deemed rejected 05/15/2026. Filed within 6-month suit deadline (Gov. Code §945.6(a)(1)).",
       damages: "$200,000 - $500,000+", risk: "§820.2 immunity — rebutted: condition approval and hold placement are ministerial acts under CDCR's own nexus requirements, not discretionary policy. Bane Act treble damages. Dodd as managing agent supports entity punitive damages.",
       evidence: ["Detention records (Santa Rita)", "Special Condition 063 + Reason Code 08", "CHP Detention Certificate", "DMV APS Decision (Case 34739340)", "Centerline paystubs ($33.35/$50.03)", "Form 1502-DR (unemployment as aggravating factor)", "Aug. 2025 updated conditions (reaffirmation)"],
-      documents: []
+      documents: [
+        { label: "Complaint — Newanforbi v. Urrea et al.", path: "/documents/matter-14/Newanforbi v Urrea.pdf" }
+      ]
     },
     {
       number: 15, caption: "Newanforbi v. Dodd, et al.", case_no: "TBD (Sacramento Sup. Ct.)", court: "Sacramento Sup. Ct.",
@@ -317,20 +319,23 @@ export const cases = [
       documents: [
         { label: "Verified Complaint (dated June 15, 2026)", path: "/documents/matter-15/Dodd.pdf" },
         { label: "Complaint — Newanforbi v. Dodd et al. (filed May 13, 2026)", path: "/documents/matter-15/Newanforbi v. Dodd, et al..pdf" },
+        { label: "Complaint — Newanforbi v. Dodd (filed May 13, 2026)", path: "/documents/matter-15/Newanforbi v. Dodd.pdf" },
         { label: "Government Claim (GCP Intake Form)", path: "/documents/matter-15/Print_GCP_INTAKE_FORM.pdf" }
       ]
     },
     {
-      number: 16, caption: "Newanforbi v. Rojo", case_no: "2:26-cv-00193-DC-CKD", court: "USDC E.D. Cal.",
-      claims: "42 USC 1983: Civil Rights", status: "Filed 01/22/2026",
-      filed: "January 22, 2026", judge: "Hon. Dena M. Coggins / Mag. Delaney", cluster: 2, type: "Federal",
+      number: 16, caption: "Newanforbi v. Rojo", case_no: "TBD (San Joaquin Sup. Ct.)", court: "San Joaquin Sup. Ct.",
+      claims: "Bane Act, IIED, Negligence", status: "Filed",
+      filed: "2026", judge: "TBD", cluster: 2, type: "State",
       defendants: "Joseelyn Rojo, Parole Agent, CDCR",
-      causes: ["Civil Rights Violation (42 USC 1983)"],
-      key_facts: "Agent Rojo assumed AOR on Nov. 19, 2025 and withheld finalized Discharge Review Report from Plaintiff. Perpetuated unlawful retention.",
+      causes: ["Bane Act (Civ. Code §52.1)", "Intentional Infliction of Emotional Distress", "Negligence"],
+      key_facts: "Agent Rojo assumed AOR on Nov. 19, 2025 and withheld finalized Discharge Review Report from Plaintiff. Perpetuated unlawful retention. State court action asserting Bane Act, IIED, and Negligence claims.",
       procedural_status: "Filed. Early stage.",
       damages: "TBD", risk: "",
       evidence: ["Discharge Review Report", "Non-disclosure records"],
-      documents: []
+      documents: [
+        { label: "Complaint — Newanforbi v. Rojo", path: "/documents/matter-16/Newanforbi v. Rojo.pdf" }
+      ]
     },
     {
       number: 17, caption: "Newanforbi v. Maloney et al.", case_no: "2:26-cv-00194-DAD-SCR", court: "USDC E.D. Cal.",
