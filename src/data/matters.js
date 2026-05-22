@@ -276,12 +276,12 @@ export const cases = [
     },
     {
       number: 14, caption: "Newanforbi v. Urrea et al.", case_no: "TBD (San Joaquin Sup. Ct.)", court: "San Joaquin Sup. Ct.",
-      claims: "False Imprisonment, Bane Act, IIED, Negligent Supervision", status: "Filed 05/29/2026",
-      filed: "May 29, 2026", judge: "TBD", cluster: 2, type: "State", archived: true,
+      claims: "Writ of Mandate, False Imprisonment, Bane Act, IIED, Negligent Supervision", status: "Filed June 30, 2026",
+      filed: "June 30, 2026", judge: "TBD", cluster: 2, type: "State",
       defendants: "Glenn Urrea, Parole Agent (individually); Gary Noguchi (#7284), Unit Supervisor (individually); Keely Dodd (#6462), Parole Administrator (individually); State of California / CDCR; DOES 1-10",
       causes: ["False Imprisonment", "Bane Act (Civ. Code §52.1)", "IIED", "Negligent Supervision (against CDCR)"],
       key_facts: "State tort parallel to federal Matter 13. On Nov. 1, 2024, at the precise moment Plaintiff was eligible for release from Santa Rita Jail on the DUI detention, Agent Urrea placed a parole hold based on Special Condition 063 — a Halloween curfew ('Operation Boo') categorically applied without individualized nexus to Plaintiff's adult-victim commitment offense. Five days of arbitrary imprisonment. No written notice, no hearing, no neutral decision-maker. Housed with dangerous cellmate; transported to holding tank for court appearance that never occurred; released only after bail bond company intervened. Cascading harm: arrest triggered DMV APS suspension (Dec. 4, 2024), CDL commercially disqualified, lost Centerline Drivers employment on his first scheduled shift. Ongoing lost wages: $104,000–$143,620 over ~65 weeks ($1,600–$2,209/week). Nov. 2025 Discharge Review cited Plaintiff's unemployment — caused by Defendants' own conduct — as aggravating factor to deny discharge. Condition 063 reaffirmed in Aug. 2025 update, demonstrating systemic practice.",
-      procedural_status: "Filed 05/29/2026. Gov. Claim presented 03/02/2026; deemed rejected 05/15/2026. Filed within 6-month suit deadline (Gov. Code §945.6(a)(1)).",
+      procedural_status: "Filed June 30, 2026 (Verified Petition for Writ of Mandate and Complaint). Gov. Claim presented 05/13/2026; deemed rejected 06/27/2026 (45 days, Gov. Code §912.4(c)). Filed within 6-month suit deadline under Gov. Code §945.6(a)(1). Suit deadline: Dec. 27, 2026.",
       damages: "$200,000 - $500,000+", risk: "§820.2 immunity — rebutted: condition approval and hold placement are ministerial acts under CDCR's own nexus requirements, not discretionary policy. Bane Act treble damages. Dodd as managing agent supports entity punitive damages.",
       evidence: ["Detention records (Santa Rita)", "Special Condition 063 + Reason Code 08", "CHP Detention Certificate", "DMV APS Decision (Case 34739340)", "Centerline paystubs ($33.35/$50.03)", "Form 1502-DR (unemployment as aggravating factor)", "Aug. 2025 updated conditions (reaffirmation)"],
       documents: [
@@ -302,7 +302,7 @@ export const cases = [
         "Count 5 — Declaratory Relief (CCP §1060) against CDCR — Nov. 19, 2025 determination void; underground GPS regulations unenforceable"
       ],
       key_facts: "Attacks the November 2025 Discharge Review directly — seven documented facial defects: (a) 'Eagan' copy-paste error — Noguchi's supervisor section names a different parolee, proving no individualized review; (b) fabricated 'ten-year term' exclusion with no statutory basis; (c) fabricated 6.5-year minimum from academic research, not statute; (d) contradictory treatment characterizations; (e) scoring anomaly (14 pts = 'Increase' band, yet 'Retain'); (f) GPS violations from unpromulgated underground regulation; (g) report never served — notice field blank (Rojo's failure). Dodd's Nov. 19, 2025 electronic ratification is the operative act imposing unlawful parole continuation from Dec. 2, 2025. As a result of the defective Form 1502-DR, Plaintiff has been subjected to ongoing unlawful parole supervision: 24/7 GPS monitoring, curfew, travel restrictions, warrantless searches, and mandatory HOPE treatment — all without lawful authority. 'Non-compliant'/'failed treatment' designations under HOPE are structurally impossible under that program's own blanket policy. CDCR's mandatory duty breach traces to Dec. 2, 2021 and produced $109,408 in documented CDL wage losses (2022–2024). Liberty loss: $100/day from November 19, 2025, accruing daily. ACSOL demurrer overruled (Ex. C); §3574 OAL approval eff. April 28, 2025 (Ex. D); Centerline Wage Notice Oct. 30, 2024 (Ex. E).",
-      procedural_status: "Original gov. claim filed March 21, 2026 (DGS/ORIM); incident date December 1, 2025; Form 1502-DR final approval November 19, 2025. Original gov. claim deemed rejected March 27, 2026 (§912.4(c)). Complaint filed May 13, 2026. NEW: Second gov. claim presented April 23, 2026 (Conf. No. 26042324436661, Ex. F); deemed rejected June 7, 2026 (45 days, Gov. Code §912.4(c)). Verified Complaint dated June 15, 2026 supersedes original; timely under Gov. Code §945.6(a)(2) two-year period. Bench trial elected (jury WAIVED). Case # TBD. Unlimited civil jurisdiction; no statutory cap on general or punitive damages.",
+      procedural_status: "Original gov. claim filed March 21, 2026 (DGS/ORIM); incident date December 1, 2025; Form 1502-DR final approval November 19, 2025. Original gov. claim deemed rejected May 5, 2026 (45 days, §912.4(c)). Original complaint dated May 8, 2026; filed May 13, 2026. NEW: Second gov. claim presented April 23, 2026 (Conf. No. 26042324436661, Ex. F); deemed rejected June 7, 2026 (45 days, Gov. Code §912.4(c)). Verified Complaint dated June 15, 2026 supersedes original; timely under Gov. Code §945.6(a)(2) two-year period. Suit deadline under first claim: Nov. 5, 2026. Bench trial elected (jury WAIVED). Case # TBD. Unlimited civil jurisdiction; no statutory cap on general or punitive damages.",
       damages: "Two-track theory to avoid double recovery. Track 1 — CDCR (Count 1): $109,408 CDL wages (2022–2024) + compliance costs + pre-event emotional distress from Dec. 2, 2021. Track 2 — Individual defendants Dodd, Noguchi, Rojo (Counts 2–4): $100/day liberty from Nov. 19, 2025 accruing daily; post-Nov. 19, 2025 lost wages, compliance costs (HOPE transportation, program fees, polygraphs, GPS), and emotional distress. Punitive damages against Dodd, Noguchi, and Rojo individually (Civ. Code §3294); punitive NOT sought against CDCR (Gov. Code §818). No statutory cap on general or punitive damages.",
       risk: "§820.2 discretionary immunity rebutted by mandatory/ministerial duties under PC §3001(a)(2) and §3574 (Johnson v. State; Sullivan v. County of LA). The 'Eagan' copy-paste error — another parolee's name in Plaintiff's Discharge Review — is uniquely powerful proof of no individualized review. Dodd, Noguchi, and Rojo fabricated eligibility rules ('6.5-year' minimum; '10-year term' exclusion) with no statutory basis, constituting ultra vires conduct that negates immunity. Conscious disregard of Dwyer (2023) and April 2025 regulatory amendments to 15 CCR supports punitive damages. Continuing tort: each day of unlawful supervision is a separate act, tolling accrual. Two-track damages structure avoids double recovery between CDCR and individual defendants. No statutory cap on general or punitive damages.",
       evidence: [
@@ -318,23 +318,23 @@ export const cases = [
       ],
       documents: [
         { label: "Verified Complaint (dated June 15, 2026)", path: "/documents/matter-15/Dodd.pdf" },
-        { label: "Complaint — Newanforbi v. Dodd et al. (filed May 13, 2026)", path: "/documents/matter-15/Newanforbi v. Dodd, et al..pdf" },
-        { label: "Complaint — Newanforbi v. Dodd (filed May 13, 2026)", path: "/documents/matter-15/Newanforbi v. Dodd.pdf" },
+        { label: "Original Complaint — Newanforbi v. Dodd et al. (dated May 8, 2026)", path: "/documents/matter-15/Newanforbi v. Dodd, et al..pdf" },
+        { label: "Verified Complaint — Newanforbi v. Dodd et al. (June 15, 2026)", path: "/documents/matter-15/Newanforbi v. Dodd.pdf" },
         { label: "Government Claim (GCP Intake Form)", path: "/documents/matter-15/Print_GCP_INTAKE_FORM.pdf" }
       ]
     },
     {
       number: 16, caption: "Newanforbi v. Rojo", case_no: "TBD (San Joaquin Sup. Ct.)", court: "San Joaquin Sup. Ct.",
-      claims: "Bane Act, IIED, Negligence", status: "Filed",
-      filed: "2026", judge: "TBD", cluster: 2, type: "State",
+      claims: "Bane Act, IIED, Negligence", status: "Filed July 7, 2026",
+      filed: "July 7, 2026", judge: "TBD", cluster: 2, type: "State",
       defendants: "Joseelyn Rojo, Parole Agent, CDCR",
       causes: ["Bane Act (Civ. Code §52.1)", "Intentional Infliction of Emotional Distress", "Negligence"],
       key_facts: "Agent Rojo assumed AOR on Nov. 19, 2025 and withheld finalized Discharge Review Report from Plaintiff. Perpetuated unlawful retention. State court action asserting Bane Act, IIED, and Negligence claims.",
-      procedural_status: "Filed. Early stage.",
+      procedural_status: "Filed July 7, 2026. Gov. Claim presented 05/19/2026 (Confirmation No. 26051930365359, Ex. E); deemed rejected 07/03/2026 (45 days, Gov. Code §912.4(c)). Filed within 6-month suit deadline under Gov. Code §945.6(a)(1). Suit deadline: Jan. 3, 2027.",
       damages: "TBD", risk: "",
-      evidence: ["Discharge Review Report", "Non-disclosure records"],
+      evidence: ["Discharge Review Report", "Non-disclosure records", "Nov. 19, 2025 telephone confirmation (Rojo)", "Gov. Claim Confirmation No. 26051930365359"],
       documents: [
-        { label: "Complaint — Newanforbi v. Rojo", path: "/documents/matter-16/Newanforbi v. Rojo.pdf" }
+        { label: "Complaint — Newanforbi v. Rojo (filed July 7, 2026)", path: "/documents/matter-16/Newanforbi v. Rojo.pdf" }
       ]
     },
     {
