@@ -55,7 +55,8 @@ const PERTINENT_FILINGS = [
   { title: "Newanforbi v. Dodd, et al.", matter: 15 },
   { title: "Newanforbi v. Macomber", matter: 11 },
   { title: "Newanforbi v. Candelaria, et al", matter: 7 },
-  { title: "Newanforbi v. Rojo, et al.", matter: 16 },
+  { title: "Newanforbi v. Rojo (Federal — Free Exercise)", matter: 21 },
+  { title: "Newanforbi v. Rojo (State)", matter: 16 },
 ];
 
 export const DashboardTab = ({ upcomingEvents, setClusterFilter, setActiveTab }) => {
