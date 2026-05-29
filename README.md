@@ -12,11 +12,11 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 |---|---|
 | Plaintiff | Brendan Ngehsi Newanforbi |
 | Representation | Pro Se / In Propria Persona |
-| Active Matters | 19 |
+| Active Matters | 21 |
 | Jurisdictions | USDC E.D. Cal., San Joaquin Sup. Ct., Alameda Sup. Ct., Sacramento Sup. Ct., Santa Clara Sup. Ct. |
-| Aggregate Exposure (Moderate) | $2,710,000 |
-| Aggregate Exposure (Aggressive) | $5,550,000+ |
-| Prepared | May 6, 2026 |
+| Aggregate Exposure (Moderate) | $2,785,000 |
+| Aggregate Exposure (Aggressive) | $5,700,000+ |
+| Prepared | May 29, 2026 |
 
 ---
 
@@ -25,8 +25,8 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 ### Cluster 1 — CHP Traffic Stop, DUI Arrest & DMV APS Challenge (Matters 1, 2, 7, 8)
 Arising from a November 1, 2024 CHP encounter on I-580. Officers arrested Plaintiff after he declined an optional PAS test, despite dashcam footage contradicting the DUI report's fabricated observations. No charges were filed. A 5-day parole hold followed. The cluster spans four matters: a federal §1983 complaint against CHP officers (MTD under submission); a parallel Alameda state tort action asserting False Imprisonment, Battery, and Bane Act claims (STAYED pending federal MTD); a federal §1983 against DMV Hearing Officer Candelaria and DMV Director Gordon challenging a void APS CDL suspension (FAC filed); and a state Writ of Administrative Mandate in Sacramento Superior Court seeking to set aside the same void APS decision.
 
-### Cluster 2 — Parole Retaliation, HOPE Abuse & Policy 19-03 (Matters 3–6, 11, 13–18)
-The largest cluster — 11 matters (Matter 6 voluntarily dismissed without prejudice May 21, 2026; refiling preserved) — targeting CDCR's parole supervision apparatus and the HOPE Psychotherapy program. Core allegations include:
+### Cluster 2 — Parole Retaliation, HOPE Abuse & Policy 19-03 (Matters 3–6, 11, 13–18, 21)
+The largest cluster — 12 matters (Matter 6 voluntarily dismissed without prejudice May 21, 2026; refiling preserved) — targeting CDCR's parole supervision apparatus, the HOPE Psychotherapy program, and constitutional violations in parole travel decisions. Core allegations include:
 - **First Amendment retaliation** by Agent Derrick, who suppressed speech and sabotaged Plaintiff's FedEx employment
 - **Facially defective Discharge Review** (November 2025) containing a copy-paste error naming a different parolee ("Eagan"), a fabricated 6.5-year retention minimum sourced from academic research rather than statute, and unemployment (caused by Defendants' own conduct) cited as an aggravating factor
 - **HOPE's structural fee incentive** (~$9,690–$10,600/year per parolee at two groups/week) with no completion bonus — a practice condemned in *In re Dwyer* (2023)
@@ -68,6 +68,8 @@ Three purely equitable proceedings seeking court orders directing CDCR to act �
 | 17 | Newanforbi v. Maloney et al. | 2:26-cv-00194-DAD-SCR | USDC E.D. Cal. | Federal | Filed 01/22/2026 |
 | 18 | Newanforbi v. Barocio | 2:26-cv-00191-DJC-CSK (PC) | USDC E.D. Cal. | Federal | Prisoner Civil Rights — redesignated 04/02/2026 |
 | 19 | Newanforbi v. Macomber | C2604791 | Santa Clara Sup. Ct. | State | Filed 04/03/2026; OSC anticipated 06/05/2026 |
+| 20 | Newanforbi v. CHP, et al. | TBD | Alameda Sup. Ct. | State | Verified Petition filed 05/29/2026 |
+| 21 | Newanforbi v. Rojo, et al. | 2:26-cv-00193-DC-CKD | USDC E.D. Cal. | Federal | Filed 01/22/2026; First Amendment/Due Process |
 
 ---
 
@@ -83,7 +85,8 @@ Three purely equitable proceedings seeking court orders directing CDCR to act �
 | Consumer Fraud | $40,000 | $75,000 | $150,000 |
 | Attorneys' Fees | $55,000 | $135,000 | $350,000 |
 | § 1983 Civil Rights — Barocio PPC/Retaliation (Matter 18) | $150,000 | $150,000 | $150,000 |
-| **Total** | **$1,140,000** | **$2,710,000** | **$5,550,000+** |
+| Free Exercise / Due Process — Religious Travel Denial (Matter 21) | $30,000 | $75,000 | $150,000 |
+| **Total** | **$1,170,000** | **$2,785,000** | **$5,700,000+** |
 
 ---
 
