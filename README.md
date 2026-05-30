@@ -1,6 +1,6 @@
 # Newanforbi Litigation Portfolio
 
-An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi**, Pro Se / In Propria Persona. The portfolio tracks 18 active civil matters across federal and California state courts, providing a structured view of case status, procedural history, damages exposure, and overarching legal theories.
+An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi**, Pro Se / In Propria Persona. The portfolio tracks 19 active civil matters across federal and California state courts, providing a structured view of case status, procedural history, damages exposure, and overarching legal theories.
 
 **Live site:** https://newanforbi.github.io/interactive-litigation-portfolio/
 
@@ -12,21 +12,21 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 |---|---|
 | Plaintiff | Brendan Ngehsi Newanforbi |
 | Representation | Pro Se / In Propria Persona |
-| Active Matters | 19 |
+| Active Matters | 21 |
 | Jurisdictions | USDC E.D. Cal., San Joaquin Sup. Ct., Alameda Sup. Ct., Sacramento Sup. Ct., Santa Clara Sup. Ct. |
-| Aggregate Exposure (Moderate) | $2,560,000 |
-| Aggregate Exposure (Aggressive) | $5,400,000+ |
-| Prepared | March 18, 2026 |
+| Aggregate Exposure (Moderate) | $2,785,000 |
+| Aggregate Exposure (Aggressive) | $5,700,000+ |
+| Prepared | May 29, 2026 |
 
 ---
 
 ## Case Clusters
 
-### Cluster 1 — CHP Traffic Stop & DUI Arrest (Matters 1–2)
-Arising from a November 1, 2024 CHP encounter on I-580. Officers arrested Plaintiff after he declined an optional PAS test, despite dashcam footage contradicting the DUI report's fabricated observations. No charges were filed. A 5-day parole hold followed. The cluster spans a federal §1983 complaint (MTD briefed) and a parallel Alameda state tort action asserting False Imprisonment, Battery, and Bane Act claims.
+### Cluster 1 — CHP Traffic Stop, DUI Arrest & DMV APS Challenge (Matters 1, 2, 7, 8)
+Arising from a November 1, 2024 CHP encounter on I-580. Officers arrested Plaintiff after he declined an optional PAS test, despite dashcam footage contradicting the DUI report's fabricated observations. No charges were filed. A 5-day parole hold followed. The cluster spans four matters: a federal §1983 complaint against CHP officers (MTD under submission); a parallel Alameda state tort action asserting False Imprisonment, Battery, and Bane Act claims (STAYED pending federal MTD); a federal §1983 against DMV Hearing Officer Candelaria and DMV Director Gordon challenging a void APS CDL suspension (FAC filed); and a state Writ of Administrative Mandate in Sacramento Superior Court seeking to set aside the same void APS decision.
 
-### Cluster 2 — Parole Retaliation, HOPE Abuse & Policy 19-03 (Matters 3–8, 11–18)
-The largest cluster — 15 matters — targeting CDCR's parole supervision apparatus and the HOPE Psychotherapy program. Core allegations include:
+### Cluster 2 — Parole Retaliation, HOPE Abuse & Policy 19-03 (Matters 3–6, 11, 13–18, 21)
+The largest cluster — 12 matters (Matter 6 voluntarily dismissed without prejudice May 21, 2026; refiling preserved) — targeting CDCR's parole supervision apparatus, the HOPE Psychotherapy program, and constitutional violations in parole travel decisions. Core allegations include:
 - **First Amendment retaliation** by Agent Derrick, who suppressed speech and sabotaged Plaintiff's FedEx employment
 - **Facially defective Discharge Review** (November 2025) containing a copy-paste error naming a different parolee ("Eagan"), a fabricated 6.5-year retention minimum sourced from academic research rather than statute, and unemployment (caused by Defendants' own conduct) cited as an aggravating factor
 - **HOPE's structural fee incentive** (~$9,690–$10,600/year per parolee at two groups/week) with no completion bonus — a practice condemned in *In re Dwyer* (2023)
@@ -39,8 +39,8 @@ Fraud and UCL claims against Diamond Truck Sales (Texas) and Dakota Financial fo
 
 ### Cluster 4 — Administrative Writs & Habeas Corpus (Matters 9, 10, 19)
 Three purely equitable proceedings seeking court orders directing CDCR to act — no tort damages sought. All three target the Secretary of CDCR in his official capacity:
-- **Matter 9** (Writ of Mandate, Sacramento): Compels CDCR to conduct a lawful, individualized discharge determination. Hearing set 05/29/2026, Dept. 13A.
-- **Matter 10** (Habeas Corpus, Santa Clara): Challenges continued compelled  treatment as unlawful restraint after five-plus years of parole with no new convictions. Awaiting OSC.
+- **Matter 9** (Writ of Mandate, Sacramento): AG Demurrer hearing 05/29/2026, Dept. 13A; merits hearing targeted Aug. 27, 2026.
+- **Matter 10** (Habeas Corpus, Santa Clara): Challenges continued compelled treatment as unlawful restraint after five-plus years of parole with no new convictions. Awaiting OSC.
 - **Matter 19** (Habeas Corpus, Santa Clara): Seeks immediate and unconditional discharge from parole. Filed 04/03/2026; OSC anticipated 06/05/2026. Companion to Matter 10, targeting the parole term itself rather than treatment conditions.
 
 ---
@@ -49,25 +49,27 @@ Three purely equitable proceedings seeking court orders directing CDCR to act �
 
 | # | Caption | Case No. | Court | Type | Status |
 |---|---|---|---|---|---|
-| 1 | Newanforbi v. CHP et al. | 2:25-cv-01460-DC-CSK | USDC E.D. Cal. | Federal | MTD briefed |
-| 2 | Newanforbi v. Meza-Gonzalez et al. | 26CV168913 | Alameda Sup. Ct. | State | Service deadline ~04/05/2026 |
-| 3 | Newanforbi v. Derrick et al. | 2:26-cv-00004-DJC-JDP | USDC E.D. Cal. | Federal | Ex Parte filed |
-| 4 | Newanforbi v. Derrick et al. | TBD | San Joaquin Sup. Ct. | State | Gov. Claim rejected; filing imminent |
-| 5 | Newanforbi v. Palacios et al. | STK-CV-UF-2026-0001032 | San Joaquin Sup. Ct. | State | Palacios served 02/24/2026; response due 03/26/2026; HOPE service pending |
-| 6 | Newanforbi v. HOPE et al. | 2:26-cv-00195-TLN-AC | USDC E.D. Cal. | Federal | Filed 01/22/2026 |
-| 7 | Newanforbi v. Candelaria | TBD | USDC E.D. Cal. | Federal | Filed 05/29/2026 |
-| 8 | Newanforbi v. DMV / Candelaria | TBD | San Joaquin Sup. Ct. | State | Filed 05/29/2026 |
-| 9 | Newanforbi v. Macomber | 26WM000028 | Sacramento Sup. Ct. | State | Hearing 05/29/2026, Dept. 13A |
+| 1 | Newanforbi v. CHP et al. | 2:25-cv-01460-DC-CSK | USDC E.D. Cal. | Federal | MTD briefed; ruling pending |
+| 2 | Newanforbi v. Meza-Gonzalez et al. | 26CV168913 | Alameda Sup. Ct. | State | STAYED — Stipulation for Stay filed Apr. 14, 2026 |
+| 3 | Newanforbi v. Derrick et al. | 2:26-cv-00004-DJC-JDP | USDC E.D. Cal. | Federal | MTD (Doc 24) under submission; 5/28/2026 hearing vacated; awaiting ruling |
+| 4 | Newanforbi v. Derrick et al. | TBD | San Joaquin Sup. Ct. | State | Filed 05/29/2026 |
+| 5 | Newanforbi v. Palacios et al. | STK-CV-UF-2026-0001032 | San Joaquin Sup. Ct. | State | Demurrer filed 05/22/2026; hearing 07/15/2026; discovery deadline 06/08/2026 |
+| 6 | Newanforbi v. HOPE et al. | 2:26-cv-00195-TLN-AC | USDC E.D. Cal. | Federal | VOLUNTARILY DISMISSED WITHOUT PREJUDICE (May 21, 2026); refiling preserved |
+| 7 | Newanforbi v. Candelaria | 2:26-cv-00983-DC-CSK | USDC E.D. Cal. | Federal | Active — FAC filed Apr. 27, 2026 |
+| 8 | Newanforbi v. Candelaria, et al. | 26WM000135 | Sacramento Sup. Ct. | State | Fee Waiver Denied 05/19/2026; hearing 07/17/2026, Dept. 10C |
+| 9 | Newanforbi v. Macomber | 26WM000028 | Sacramento Sup. Ct. | State | Demurrer hearing 05/29/2026, Dept. 13A; merits hearing targeted 08/27/2026 |
 | 10 | Newanforbi v. Macomber | C2602632 | Santa Clara Sup. Ct. | State | Awaiting OSC |
 | 11 | Newanforbi v. Macomber | TBD | USDC E.D. Cal. | Federal | Filed 03/02/2026 |
 | 12 | Ngwa Nforbi v. Diamond Truck Sales | STK-CV-UF-2026-0001094 | San Joaquin Sup. Ct. | State | Diamond served 03/11/2026; response due 04/10/2026; Dakota service pending |
 | 13 | Newanforbi v. Urrea et al. | 2:26-cv-00190-DC-SCR | USDC E.D. Cal. | Federal | Filed 01/22/2026 |
-| 14 | Newanforbi v. Urrea et al. | TBD | San Joaquin Sup. Ct. | State | Complaint ready |
-| 15 | Newanforbi v. Moua et al. | TBD | San Joaquin Sup. Ct. | State | Filed 03/31/2026 |
-| 16 | Newanforbi v. Rojo | 2:26-cv-00193-DC-CKD | USDC E.D. Cal. | Federal | Filed 01/22/2026 |
+| 14 | Newanforbi v. Urrea et al. | TBD | San Joaquin Sup. Ct. | State | Filed June 30, 2026 |
+| 15 | Newanforbi v. Dodd, et al. | TBD | Sacramento Sup. Ct. | State | Verified Complaint dated June 15, 2026; bench trial elected |
+| 16 | Newanforbi v. Rojo | TBD | San Joaquin Sup. Ct. | State | Filed July 7, 2026 |
 | 17 | Newanforbi v. Maloney et al. | 2:26-cv-00194-DAD-SCR | USDC E.D. Cal. | Federal | Filed 01/22/2026 |
-| 18 | Newanforbi v. Barocio | 2:26-cv-00191-DJC-CSK | USDC E.D. Cal. | Federal | Filed 01/22/2026 |
-| 19 | Newanforbi v. Macomber | TBD | Santa Clara Sup. Ct. | State | Filed 04/03/2026; OSC anticipated 06/05/2026 |
+| 18 | Newanforbi v. Barocio | 2:26-cv-00191-DJC-CSK (PC) | USDC E.D. Cal. | Federal | Prisoner Civil Rights — redesignated 04/02/2026 |
+| 19 | Newanforbi v. Macomber | C2604791 | Santa Clara Sup. Ct. | State | Filed 04/03/2026; OSC anticipated 06/05/2026 |
+| 20 | Newanforbi v. CHP, et al. | TBD | Alameda Sup. Ct. | State | Verified Petition filed 05/29/2026 |
+| 21 | Newanforbi v. Rojo, et al. | 2:26-cv-00193-DC-CKD | USDC E.D. Cal. | Federal | Filed 01/22/2026; First Amendment/Due Process |
 
 ---
 
@@ -82,7 +84,9 @@ Three purely equitable proceedings seeking court orders directing CDCR to act �
 | Punitive Damages | $200,000 | $700,000 | $1,750,000 |
 | Consumer Fraud | $40,000 | $75,000 | $150,000 |
 | Attorneys' Fees | $55,000 | $135,000 | $350,000 |
-| **Total** | **$990,000** | **$2,560,000** | **$5,400,000+** |
+| § 1983 Civil Rights — Barocio PPC/Retaliation (Matter 18) | $150,000 | $150,000 | $150,000 |
+| Free Exercise / Due Process — Religious Travel Denial (Matter 21) | $30,000 | $75,000 | $150,000 |
+| **Total** | **$1,170,000** | **$2,785,000** | **$5,700,000+** |
 
 ---
 

@@ -1,19 +1,21 @@
 import { useState } from "react";
-import { NAVY, GOLD, BODY_GRAY, DARK_BG } from "./constants";
+import { GOLD, BODY_GRAY } from "./constants";
 import { getPDTMidnight, parseEventDatePDT } from "./utils/dateUtils";
 import { useDeadlineClock } from "./hooks/useDeadlineClock";
 import { useCaseFilters } from "./hooks/useCaseFilters";
-
 import { PORTFOLIO } from "./data";
 import { DashboardTab } from "./components/DashboardTab";
 import { MattersTab } from "./components/MattersTab";
 import { TimelineTab } from "./components/TimelineTab";
 import { DamagesTab } from "./components/DamagesTab";
 import { TheoriesTab } from "./components/TheoriesTab";
+import { ThemeContext, THEMES } from "./ThemeContext";
 
 const tabs = ["Dashboard", "Matters", "Timeline", "Damages", "Theories"];
 
 export default function LitigationPortfolio() {
+  const [darkMode, setDarkMode] = useState(true);
+  const theme = THEMES[darkMode ? "dark" : "light"];
   const [activeTab, setActiveTab] = useState("Dashboard");
   const { clusterFilter, setClusterFilter, typeFilter, setTypeFilter, searchQuery, setSearchQuery, filteredCases } = useCaseFilters();
   const [damagesView, setDamagesView] = useState("moderate");
@@ -28,33 +30,50 @@ export default function LitigationPortfolio() {
   const timeLeft = useDeadlineClock(upcomingEvents);
 
   return (
-    <div style={{ minHeight: "100vh", background: DARK_BG, color: "#E2E8F0", fontFamily: "'Cormorant Garamond', 'Georgia', serif" }}>
+    <ThemeContext.Provider value={theme}>
+    <div style={{ minHeight: "100vh", background: theme.bg, color: theme.text, fontFamily: "'Cormorant Garamond', 'Georgia', serif" }}>
       <style>{`@keyframes clockPulse { 0%,100%{opacity:1} 50%{opacity:0.25} }`}</style>
 
       {/* Header */}
-      <div style={{ background: `linear-gradient(135deg, ${NAVY} 0%, ${DARK_BG} 100%)`, borderBottom: `2px solid ${GOLD}`, padding: "28px 32px 20px" }}>
+      <div style={{ background: theme.headerBg, borderBottom: `2px solid ${GOLD}`, padding: "28px 32px 20px" }}>
         <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between", flexWrap: "wrap", gap: 16 }}>
           <div>
             <div style={{ color: GOLD, fontSize: 11, fontFamily: "'DM Sans', sans-serif", fontWeight: 700, letterSpacing: 4, textTransform: "uppercase", marginBottom: 6 }}>Litigation Portfolio</div>
-            <h1 style={{ fontSize: 32, fontWeight: 700, color: "white", margin: 0, lineHeight: 1.1 }}>Brendan Ngehsi Newanforbi</h1>
+            <h1 style={{ fontSize: 32, fontWeight: 700, color: theme.headerText, margin: 0, lineHeight: 1.1 }}>Brendan Ngehsi Newanforbi</h1>
             <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: BODY_GRAY, marginTop: 6 }}>Pro Se / In Propria Persona · Prepared {PORTFOLIO.prepared_date}</div>
           </div>
-          <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
-            {tabs.map(t => (
-              <button key={t} onClick={() => setActiveTab(t)} aria-current={activeTab === t ? "page" : undefined} style={{
-                padding: "8px 18px", borderRadius: 6, border: activeTab === t ? `1px solid ${GOLD}` : "1px solid transparent",
-                background: activeTab === t ? `${GOLD}18` : "transparent", color: activeTab === t ? GOLD : "#94A3B8",
-                fontFamily: "'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, cursor: "pointer", transition: "all 0.2s",
-                letterSpacing: 0.5
-              }}>{t}</button>
-            ))}
+          <div style={{ display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap" }}>
+            <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
+              {tabs.map(t => (
+                <button key={t} onClick={() => setActiveTab(t)} aria-current={activeTab === t ? "page" : undefined} style={{
+                  padding: "8px 18px", borderRadius: 6,
+                  border: activeTab === t ? theme.tabActive.border : theme.tabInactive.border,
+                  background: activeTab === t ? theme.tabActive.bg : theme.tabInactive.bg,
+                  color: activeTab === t ? theme.tabActive.color : theme.tabInactive.color,
+                  fontFamily: "'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, cursor: "pointer", transition: "all 0.2s",
+                  letterSpacing: 0.5
+                }}>{t}</button>
+              ))}
+            </div>
+            <button
+              onClick={() => setDarkMode(v => !v)}
+              aria-label={darkMode ? "Switch to light mode" : "Switch to dark mode"}
+              title={darkMode ? "Light mode" : "Dark mode"}
+              style={{
+                padding: "7px 10px", borderRadius: 6, border: `1px solid ${GOLD}44`,
+                background: "transparent", color: GOLD, fontSize: 16, cursor: "pointer",
+                lineHeight: 1, transition: "all 0.2s", flexShrink: 0,
+              }}
+            >
+              {darkMode ? "☀" : "🌙"}
+            </button>
           </div>
         </div>
       </div>
 
       {/* Deadline Clock Banner */}
       <div style={{
-        background: "linear-gradient(90deg, #0F1A2E 0%, #1A2A49 50%, #0F1A2E 100%)",
+        background: theme.bannerBg,
         borderBottom: `1px solid ${timeLeft.urgent ? "#EF444440" : GOLD + "30"}`,
         padding: "10px 32px",
         display: "flex", alignItems: "center", justifyContent: "center", gap: 28, flexWrap: "wrap",
@@ -87,8 +106,9 @@ export default function LitigationPortfolio() {
         </>}
         <button onClick={() => setShowClock(v => !v)} aria-expanded={showClock} aria-controls="deadline-clock-display" style={{
           position: "absolute", right: 16, top: "50%", transform: "translateY(-50%)",
-          padding: "4px 10px", borderRadius: 5, border: `1px solid #475569`,
-          background: "transparent", color: "#64748B", fontFamily: "'DM Sans', sans-serif",
+          padding: "4px 10px", borderRadius: 5,
+          border: theme.clockBtn.border,
+          background: "transparent", color: theme.clockBtn.color, fontFamily: "'DM Sans', sans-serif",
           fontSize: 10, fontWeight: 600, cursor: "pointer", letterSpacing: 0.5, textTransform: "uppercase"
         }}>
           {showClock ? "Hide" : "Show"}
@@ -105,9 +125,10 @@ export default function LitigationPortfolio() {
       </div>
 
       {/* Footer */}
-      <div style={{ borderTop: `1px solid ${NAVY}`, padding: "16px 32px", fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "#475569" }}>
+      <div style={{ borderTop: `1px solid ${theme.footerBorder}`, padding: "16px 32px", fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: theme.footerText }}>
         <span>Confidential — Attorney Work Product</span>
       </div>
     </div>
+    </ThemeContext.Provider>
   );
 }
