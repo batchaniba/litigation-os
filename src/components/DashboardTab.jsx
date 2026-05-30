@@ -1,9 +1,9 @@
 import { PORTFOLIO } from "../data";
-import { CARD_BG, NAVY, GOLD, BORDER_BLUE } from "../constants";
+import { GOLD, BORDER_BLUE } from "../constants";
+import { useTheme } from "../ThemeContext";
 
 const formatCurrency = (n) => "$" + n.toLocaleString();
 
-// One-pass aggregation over cases — computed once at module load.
 const totalMatters = PORTFOLIO.cases.length;
 const clusterCounts = { 1: 0, 2: 0, 3: 0, 4: 0 };
 const clusterNumberLists = { 1: [], 2: [], 3: [], 4: [] };
@@ -55,97 +55,101 @@ const PERTINENT_FILINGS = [
   { title: "Newanforbi v. Dodd, et al.", matter: 15 },
   { title: "Newanforbi v. Macomber", matter: 11 },
   { title: "Newanforbi v. Candelaria, et al", matter: 7 },
-  { title: "Newanforbi v. Rojo, et al.", matter: 16 },
+  { title: "Newanforbi v. Rojo (Federal — Free Exercise)", matter: 21 },
+  { title: "Newanforbi v. Rojo (State)", matter: 16 },
 ];
 
-export const DashboardTab = ({ upcomingEvents, setClusterFilter, setActiveTab }) => (
-  <div>
-    {/* Stats Row */}
-    <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 16, marginBottom: 28 }}>
-      {[
-        { label: "Active Matters", value: totalMatters, sub: `${federalCount} Federal · ${stateCount} State` },
-        { label: "Jurisdictions", value: PORTFOLIO.jurisdictions.length, sub: "Courts across CA" },
-        { label: "Aggregate Exposure", value: moderateExposure, sub: "Moderate estimate" },
-        { label: "Next Deadline", value: upcomingEvents[0]?.date || "—", sub: upcomingEvents[0]?.event?.slice(0, 35) || "" }
-      ].map((s, i) => (
-        <div key={i} style={{ background: CARD_BG, borderRadius: 10, padding: "20px 22px", border: `1px solid ${NAVY}`, position: "relative", overflow: "hidden" }}>
-          <div style={{ position: "absolute", top: 0, left: 0, width: 3, height: "100%", background: GOLD, borderRadius: "10px 0 0 10px" }} />
-          <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "#64748B", fontWeight: 600, letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 8 }}>{s.label}</div>
-          <div style={{ fontSize: 28, fontWeight: 700, color: "white" }}>{s.value}</div>
-          <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "#64748B", marginTop: 4 }}>{s.sub}</div>
-        </div>
-      ))}
-    </div>
-
-    {/* Two-column: Upcoming + Clusters */}
-    <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20, marginBottom: 28 }}>
-      {/* Upcoming */}
-      <div style={{ background: CARD_BG, borderRadius: 10, padding: 24, border: `1px solid ${NAVY}` }}>
-        <h3 style={{ fontSize: 18, fontWeight: 700, color: GOLD, margin: "0 0 16px", fontFamily: "'DM Sans', sans-serif", letterSpacing: 0.5 }}>Upcoming Deadlines</h3>
-        <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-          {upcomingEvents.map((e, i) => (
-            <div key={i} style={{ display: "flex", gap: 14, alignItems: "flex-start" }}>
-              <div style={{ minWidth: 90, fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 700, color: "#F472B6", paddingTop: 2 }}>{e.date}</div>
-              <div>
-                <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: "#CBD5E1" }}>{e.event}</div>
-                <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "#64748B", marginTop: 2 }}>Matter {e.matters}</div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Cluster Breakdown */}
-      <div style={{ background: CARD_BG, borderRadius: 10, padding: 24, border: `1px solid ${NAVY}` }}>
-        <h3 style={{ fontSize: 18, fontWeight: 700, color: GOLD, margin: "0 0 16px", fontFamily: "'DM Sans', sans-serif", letterSpacing: 0.5 }}>Case Clusters</h3>
-        {CLUSTERS.map(cl => (
-          <div
-            key={cl.n}
-            role="button"
-            tabIndex={0}
-            style={{ marginBottom: 16, cursor: "pointer" }}
-            onClick={() => { setClusterFilter(cl.n); setActiveTab("Matters"); }}
-            onKeyDown={e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setClusterFilter(cl.n); setActiveTab("Matters"); } }}
-            aria-label={`Filter matters by cluster: ${cl.label}`}
-          >
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 4 }}>
-              <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, color: "#CBD5E1" }}>{cl.label}</span>
-              <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: cl.color, fontWeight: 700 }}>{clusterCounts[cl.n]} matters</span>
-            </div>
-            <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 10, color: "#475569", marginBottom: 6 }}>Matters {clusterMattersStr[cl.n]}</div>
-            <div style={{ height: 6, background: "#1E293B", borderRadius: 3, overflow: "hidden" }}>
-              <div style={{ height: "100%", width: `${(clusterCounts[cl.n] / totalMatters) * 100}%`, background: cl.color, borderRadius: 3, transition: "width 0.6s ease" }} />
-            </div>
+export const DashboardTab = ({ upcomingEvents, setClusterFilter, setActiveTab }) => {
+  const theme = useTheme();
+  return (
+    <div>
+      {/* Stats Row */}
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 16, marginBottom: 28 }}>
+        {[
+          { label: "Active Matters", value: totalMatters, sub: `${federalCount} Federal · ${stateCount} State` },
+          { label: "Jurisdictions", value: PORTFOLIO.jurisdictions.length, sub: "Courts across CA" },
+          { label: "Aggregate Exposure", value: moderateExposure, sub: "Moderate estimate" },
+          { label: "Next Deadline", value: upcomingEvents[0]?.date || "—", sub: upcomingEvents[0]?.event?.slice(0, 35) || "" }
+        ].map((s, i) => (
+          <div key={i} style={{ background: theme.cardBg, borderRadius: 10, padding: "20px 22px", border: `1px solid ${theme.cardBorder}`, position: "relative", overflow: "hidden" }}>
+            <div style={{ position: "absolute", top: 0, left: 0, width: 3, height: "100%", background: GOLD, borderRadius: "10px 0 0 10px" }} />
+            <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: theme.subtleText, fontWeight: 600, letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 8 }}>{s.label}</div>
+            <div style={{ fontSize: 28, fontWeight: 700, color: theme.heading }}>{s.value}</div>
+            <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: theme.subtleText, marginTop: 4 }}>{s.sub}</div>
           </div>
         ))}
-        <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "#64748B", marginTop: 12, fontStyle: "italic" }}>Click a cluster to filter matters →</div>
+      </div>
 
-        {/* Pertinent Filings */}
-        <div style={{ marginTop: 24, borderTop: `1px solid ${NAVY}`, paddingTop: 16 }}>
-          <h4 style={{ fontSize: 13, fontWeight: 700, color: GOLD, margin: "0 0 12px", fontFamily: "'DM Sans', sans-serif", letterSpacing: 0.5, textTransform: "uppercase" }}>Pertinent Filings</h4>
-          <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-            {PERTINENT_FILINGS.map((f, i) => (
-              <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "8px 12px", background: "#0F172A", borderRadius: 6, border: `1px solid ${BORDER_BLUE}25` }}>
-                <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 600, color: "#CBD5E1" }}>{f.title}</span>
-                <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: "#94A3B8", background: "#1E293B", borderRadius: 4, padding: "2px 8px" }}>Matter {f.matter}</span>
+      {/* Two-column: Upcoming + Clusters */}
+      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20, marginBottom: 28 }}>
+        {/* Upcoming */}
+        <div style={{ background: theme.cardBg, borderRadius: 10, padding: 24, border: `1px solid ${theme.cardBorder}` }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, color: GOLD, margin: "0 0 16px", fontFamily: "'DM Sans', sans-serif", letterSpacing: 0.5 }}>Upcoming Deadlines</h3>
+          <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+            {upcomingEvents.map((e, i) => (
+              <div key={i} style={{ display: "flex", gap: 14, alignItems: "flex-start" }}>
+                <div style={{ minWidth: 90, fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 700, color: "#F472B6", paddingTop: 2 }}>{e.date}</div>
+                <div>
+                  <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: theme.secondaryText }}>{e.event}</div>
+                  <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: theme.subtleText, marginTop: 2 }}>Matter {e.matters}</div>
+                </div>
               </div>
             ))}
           </div>
         </div>
-      </div>
-    </div>
 
-    {/* Courts Overview */}
-    <div style={{ background: CARD_BG, borderRadius: 10, padding: 24, border: `1px solid ${NAVY}` }}>
-      <h3 style={{ fontSize: 18, fontWeight: 700, color: GOLD, margin: "0 0 16px", fontFamily: "'DM Sans', sans-serif" }}>Jurisdictional Distribution</h3>
-      <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
-        {PORTFOLIO.jurisdictions.map(j => (
-          <div key={j} style={{ background: NAVY, borderRadius: 8, padding: "12px 18px", border: `1px solid ${BORDER_BLUE}30`, flex: "1 1 180px" }}>
-            <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: "#94A3B8", marginBottom: 4 }}>{j}</div>
-            <div style={{ fontSize: 24, fontWeight: 700, color: "white" }}>{courtCounts[j] || 0}</div>
+        {/* Cluster Breakdown */}
+        <div style={{ background: theme.cardBg, borderRadius: 10, padding: 24, border: `1px solid ${theme.cardBorder}` }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, color: GOLD, margin: "0 0 16px", fontFamily: "'DM Sans', sans-serif", letterSpacing: 0.5 }}>Case Clusters</h3>
+          {CLUSTERS.map(cl => (
+            <div
+              key={cl.n}
+              role="button"
+              tabIndex={0}
+              style={{ marginBottom: 16, cursor: "pointer" }}
+              onClick={() => { setClusterFilter(cl.n); setActiveTab("Matters"); }}
+              onKeyDown={e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setClusterFilter(cl.n); setActiveTab("Matters"); } }}
+              aria-label={`Filter matters by cluster: ${cl.label}`}
+            >
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 4 }}>
+                <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, color: theme.secondaryText }}>{cl.label}</span>
+                <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: cl.color, fontWeight: 700 }}>{clusterCounts[cl.n]} matters</span>
+              </div>
+              <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 10, color: theme.subtleText, marginBottom: 6 }}>Matters {clusterMattersStr[cl.n]}</div>
+              <div style={{ height: 6, background: theme.barTrack, borderRadius: 3, overflow: "hidden" }}>
+                <div style={{ height: "100%", width: `${(clusterCounts[cl.n] / totalMatters) * 100}%`, background: cl.color, borderRadius: 3, transition: "width 0.6s ease" }} />
+              </div>
+            </div>
+          ))}
+          <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: theme.subtleText, marginTop: 12, fontStyle: "italic" }}>Click a cluster to filter matters →</div>
+
+          {/* Pertinent Filings */}
+          <div style={{ marginTop: 24, borderTop: `1px solid ${theme.cardBorder}`, paddingTop: 16 }}>
+            <h4 style={{ fontSize: 13, fontWeight: 700, color: GOLD, margin: "0 0 12px", fontFamily: "'DM Sans', sans-serif", letterSpacing: 0.5, textTransform: "uppercase" }}>Pertinent Filings</h4>
+            <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+              {PERTINENT_FILINGS.map((f, i) => (
+                <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "8px 12px", background: theme.deepBg, borderRadius: 6, border: `1px solid ${BORDER_BLUE}25` }}>
+                  <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 600, color: theme.secondaryText }}>{f.title}</span>
+                  <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: theme.badgeNumColor, background: theme.badgeNumBg, borderRadius: 4, padding: "2px 8px" }}>Matter {f.matter}</span>
+                </div>
+              ))}
+            </div>
           </div>
-        ))}
+        </div>
+      </div>
+
+      {/* Courts Overview */}
+      <div style={{ background: theme.cardBg, borderRadius: 10, padding: 24, border: `1px solid ${theme.cardBorder}` }}>
+        <h3 style={{ fontSize: 18, fontWeight: 700, color: GOLD, margin: "0 0 16px", fontFamily: "'DM Sans', sans-serif" }}>Jurisdictional Distribution</h3>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
+          {PORTFOLIO.jurisdictions.map(j => (
+            <div key={j} style={{ background: theme.navySubtleBg, borderRadius: 8, padding: "12px 18px", border: `1px solid ${BORDER_BLUE}30`, flex: "1 1 180px" }}>
+              <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: theme.mutedText, marginBottom: 4 }}>{j}</div>
+              <div style={{ fontSize: 24, fontWeight: 700, color: theme.heading }}>{courtCounts[j] || 0}</div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
+};

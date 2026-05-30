@@ -1,0 +1,755 @@
+{
+  "portfolio": {
+    "litigant": "Brendan Ngehsi Newanforbi",
+    "representation": "Pro Se / In Propria Persona",
+    "analysisDate": "2026-05-29",
+    "totalMatters": 21,
+    "currency": "USD"
+  },
+  "assumptions": {
+    "hourlyRates": {
+      "seniorPartner": {
+        "min": 350,
+        "max": 450,
+        "description": "Complex litigation, motion strategy, appeals"
+      },
+      "midLevelAssociate": {
+        "min": 250,
+        "max": 350,
+        "description": "Pleadings, discovery, trial prep, briefing"
+      },
+      "paralegal": {
+        "min": 150,
+        "max": 200,
+        "description": "Document assembly, docket management, research"
+      }
+    },
+    "blendedAverageRate": 280,
+    "workTeamComposition": {
+      "seniorPartner": 0.15,
+      "midLevelAssociate": 0.60,
+      "paralegal": 0.25
+    }
+  },
+  "matters": [
+    {
+      "matterNumber": 1,
+      "caption": "Newanforbi v. CHP et al.",
+      "caseNumber": "2:25-cv-01460-DC-CSK",
+      "court": "USDC E.D. Cal.",
+      "type": "Federal §1983",
+      "status": "MTD briefing; ruling pending",
+      "documentsCount": 22,
+      "totalSizeGB": 0.013,
+      "substantivePages": 1459,
+      "workBreakdown": {
+        "initialComplaint": {
+          "pages": 52,
+          "description": "Federal pleading with dashcam evidence",
+          "hoursLow": 120,
+          "hoursHigh": 150
+        },
+        "motionToDissmissOpposition": {
+          "pages": 124,
+          "description": "Opposing CHP MTD",
+          "hoursLow": 80,
+          "hoursHigh": 120
+        },
+        "oppositionBrief": {
+          "pages": 53,
+          "description": "Substantive opposition filing",
+          "hoursLow": 80,
+          "hoursHigh": 120
+        },
+        "replyBrief": {
+          "pages": 69,
+          "description": "Reply to MTD opposition",
+          "hoursLow": 60,
+          "hoursHigh": 100
+        },
+        "discoveryResponses": {
+          "pages": 575,
+          "description": "DS2044 + follow-up responses",
+          "hoursLow": 120,
+          "hoursHigh": 180
+        },
+        "exhibits": {
+          "pages": 36,
+          "description": "Video transcript + wage reference",
+          "hoursLow": 20,
+          "hoursHigh": 30
+        },
+        "administrative": {
+          "pages": 50,
+          "description": "Declarations, notices, scheduling orders",
+          "hoursLow": 30,
+          "hoursHigh": 50
+        }
+      },
+      "estimatedHours": {
+        "low": 490,
+        "high": 710,
+        "mid": 600
+      },
+      "estimatedCost": {
+        "low": 137200,
+        "high": 198800,
+        "mid": 168000,
+        "currency": "USD"
+      },
+      "keyWorkCharacteristics": [
+        "Heavy federal procedural work",
+        "Substantial discovery burden",
+        "Video evidence compilation",
+        "Motion practice intensity"
+      ]
+    },
+    {
+      "matterNumber": 2,
+      "caption": "Newanforbi v. Meza-Gonzalez et al.",
+      "caseNumber": "26CV168913",
+      "court": "Alameda Sup. Ct.",
+      "type": "State Tort",
+      "status": "STAYED pending federal MTD",
+      "documentsCount": 13,
+      "totalSizeGB": 0.013,
+      "substantivePages": 515,
+      "workBreakdown": {
+        "stateComplaint": {
+          "pages": 40,
+          "description": "Parallel state pleading",
+          "hoursLow": 80,
+          "hoursHigh": 120
+        },
+        "exParteMotion": {
+          "pages": 40,
+          "description": "Extension of time to serve",
+          "hoursLow": 30,
+          "hoursHigh": 50
+        },
+        "discoveryResponses": {
+          "pages": 395,
+          "description": "Shared discovery with Matter 1",
+          "hoursLow": 60,
+          "hoursHigh": 100
+        },
+        "administrative": {
+          "pages": 40,
+          "description": "Fee waiver, case management",
+          "hoursLow": 15,
+          "hoursHigh": 25
+        }
+      },
+      "estimatedHours": {
+        "low": 185,
+        "high": 295,
+        "mid": 240
+      },
+      "estimatedCost": {
+        "low": 51800,
+        "high": 82600,
+        "mid": 67200,
+        "currency": "USD"
+      },
+      "notes": "Parallel to Matter 1; stayed pending federal resolution"
+    },
+    {
+      "matterNumber": 3,
+      "caption": "Newanforbi v. Derrick et al.",
+      "caseNumber": "2:26-cv-00004-DJC-JDP",
+      "court": "USDC E.D. Cal.",
+      "type": "Federal §1983 Retaliation",
+      "status": "MTD under submission; 5/28/2026 hearing vacated",
+      "documentsCount": 25,
+      "totalSizeGB": 0.011,
+      "substantivePages": 1755,
+      "workBreakdown": {
+        "initialComplaint": {
+          "pages": 664,
+          "description": "MAJOR federal complaint - First Amendment retaliation",
+          "hoursLow": 250,
+          "hoursHigh": 350
+        },
+        "motionToQuashService": {
+          "pages": 685,
+          "description": "Complex motion + supporting docs",
+          "hoursLow": 150,
+          "hoursHigh": 200
+        },
+        "oppositionToMTQ": {
+          "pages": 42,
+          "description": "Response brief",
+          "hoursLow": 60,
+          "hoursHigh": 90
+        },
+        "firstAmendedComplaint": {
+          "pages": 227,
+          "description": "Amendment post-motion",
+          "hoursLow": 100,
+          "hoursHigh": 150
+        },
+        "motionForLeaveToAmend": {
+          "pages": 57,
+          "description": "Procedural motion",
+          "hoursLow": 30,
+          "hoursHigh": 50
+        },
+        "oppositionToM4L": {
+          "pages": 70,
+          "description": "Opposition brief",
+          "hoursLow": 60,
+          "hoursHigh": 90
+        },
+        "declarations": {
+          "pages": 60,
+          "description": "Multiple supporting declarations",
+          "hoursLow": 40,
+          "hoursHigh": 80
+        },
+        "serviceAndNotice": {
+          "pages": 50,
+          "description": "Re-service documents",
+          "hoursLow": 20,
+          "hoursHigh": 30
+        }
+      },
+      "estimatedHours": {
+        "low": 770,
+        "high": 1030,
+        "mid": 900
+      },
+      "estimatedCost": {
+        "low": 215600,
+        "high": 288400,
+        "mid": 252000,
+        "currency": "USD"
+      },
+      "keyWorkCharacteristics": [
+        "Heaviest federal case",
+        "664-page initial complaint",
+        "Vigorous motion practice",
+        "Multiple named defendants",
+        "Complex jurisdictional arguments"
+      ]
+    },
+    {
+      "matterNumber": 4,
+      "caption": "Newanforbi v. Derrick et al.",
+      "caseNumber": "TBD",
+      "court": "San Joaquin Sup. Ct.",
+      "type": "State Mirror",
+      "status": "Filed 05/29/2026",
+      "documentsCount": 0,
+      "totalSizeGB": 0,
+      "substantivePages": 0,
+      "estimatedHours": {
+        "low": 200,
+        "high": 300,
+        "mid": 250
+      },
+      "estimatedCost": {
+        "low": 56000,
+        "high": 84000,
+        "mid": 70000,
+        "currency": "USD"
+      },
+      "notes": "Parallel to Matter 3; state pleading version"
+    },
+    {
+      "matterNumber": 5,
+      "caption": "Newanforbi v. Palacios et al.",
+      "caseNumber": "STK-CV-UF-2026-0001032",
+      "court": "San Joaquin Sup. Ct.",
+      "type": "State - HOPE Program Challenge",
+      "status": "Demurrer filed; hearing 07/15/2026",
+      "documentsCount": 16,
+      "totalSizeGB": 0.048,
+      "substantivePages": 1192,
+      "workBreakdown": {
+        "bbsComplaint": {
+          "pages": 89,
+          "description": "Initial BBS complaint (Palacios LMFT)",
+          "hoursLow": 60,
+          "hoursHigh": 100
+        },
+        "casombComplaint": {
+          "pages": 712,
+          "description": "Comprehensive HOPE program complaint",
+          "hoursLow": 250,
+          "hoursHigh": 350
+        },
+        "complaintContinuation": {
+          "pages": 96,
+          "description": "Additional allegations sheet",
+          "hoursLow": 30,
+          "hoursHigh": 50
+        },
+        "demurrerOpposition": {
+          "pages": 100,
+          "description": "Opposition to demurrer",
+          "hoursLow": 80,
+          "hoursHigh": 120
+        },
+        "requestForJudicialNotice": {
+          "pages": 50,
+          "description": "RJN materials + objections",
+          "hoursLow": 35,
+          "hoursHigh": 70
+        },
+        "declarations": {
+          "pages": 30,
+          "description": "Supporting declarations",
+          "hoursLow": 20,
+          "hoursHigh": 40
+        },
+        "administrative": {
+          "pages": 115,
+          "description": "Procedural documents, fee waiver",
+          "hoursLow": 20,
+          "hoursHigh": 40
+        }
+      },
+      "estimatedHours": {
+        "low": 495,
+        "high": 770,
+        "mid": 632
+      },
+      "estimatedCost": {
+        "low": 138600,
+        "high": 215600,
+        "mid": 177100,
+        "currency": "USD"
+      },
+      "keyWorkCharacteristics": [
+        "712-page complaint",
+        "Complex damages calculation",
+        "Demurrer briefing",
+        "RJN materials (In re Dwyer precedent)"
+      ]
+    },
+    {
+      "matterNumber": 6,
+      "caption": "Newanforbi v. HOPE et al.",
+      "caseNumber": "2:26-cv-00195-TLN-AC",
+      "court": "USDC E.D. Cal.",
+      "type": "Federal - HOPE (VOLUNTARILY DISMISSED)",
+      "status": "Voluntarily dismissed without prejudice 5/21/2026",
+      "documentsCount": 4,
+      "totalSizeGB": 0.0024,
+      "substantivePages": 101,
+      "estimatedHours": {
+        "low": 110,
+        "high": 170,
+        "mid": 140
+      },
+      "estimatedCost": {
+        "low": 30800,
+        "high": 47600,
+        "mid": 39200,
+        "currency": "USD"
+      },
+      "notes": "Voluntarily dismissed to preserve refiling; coordinated with Matter 5"
+    },
+    {
+      "matterNumber": 7,
+      "caption": "Newanforbi v. Candelaria",
+      "caseNumber": "2:26-cv-00983-DC-CSK",
+      "court": "USDC E.D. Cal.",
+      "type": "Federal §1983 - DMV Challenge",
+      "status": "Active; FAC filed 04/27/2026",
+      "documentsCount": 8,
+      "totalSizeGB": 0.012,
+      "substantivePages": 521,
+      "estimatedHours": {
+        "low": 180,
+        "high": 270,
+        "mid": 225
+      },
+      "estimatedCost": {
+        "low": 50400,
+        "high": 75600,
+        "mid": 63000,
+        "currency": "USD"
+      },
+      "notes": "Void APS CDL suspension challenge; factual overlap with Matter 1"
+    },
+    {
+      "matterNumber": 8,
+      "caption": "Newanforbi v. Candelaria et al.",
+      "caseNumber": "26WM000135",
+      "court": "Sacramento Sup. Ct.",
+      "type": "State Writ of Mandate",
+      "status": "Fee Waiver Denied 05/19/2026; hearing 07/17/2026",
+      "documentsCount": 1,
+      "totalSizeGB": 0.011,
+      "substantivePages": 100,
+      "estimatedHours": {
+        "low": 85,
+        "high": 150,
+        "mid": 117
+      },
+      "estimatedCost": {
+        "low": 23800,
+        "high": 42000,
+        "mid": 32900,
+        "currency": "USD"
+      },
+      "notes": "Specialized admin law; parallel to federal Matter 7"
+    },
+    {
+      "matterNumber": 9,
+      "caption": "Newanforbi v. Macomber",
+      "caseNumber": "26WM000028",
+      "court": "Sacramento Sup. Ct.",
+      "type": "State Writ of Mandate",
+      "status": "Demurrer hearing 05/29/2026; merits 08/27/2026",
+      "documentsCount": 9,
+      "totalSizeGB": 0.0046,
+      "substantivePages": 165,
+      "estimatedHours": {
+        "low": 175,
+        "high": 295,
+        "mid": 235
+      },
+      "estimatedCost": {
+        "low": 49000,
+        "high": 82600,
+        "mid": 65800,
+        "currency": "USD"
+      },
+      "notes": "Discharge review challenge (Eagan copy-paste error)"
+    },
+    {
+      "matterNumber": 10,
+      "caption": "Newanforbi v. Macomber",
+      "caseNumber": "C2602632",
+      "court": "Santa Clara Sup. Ct.",
+      "type": "State Habeas Corpus",
+      "status": "Awaiting OSC",
+      "documentsCount": 0,
+      "estimatedHours": {
+        "low": 80,
+        "high": 120,
+        "mid": 100
+      },
+      "estimatedCost": {
+        "low": 22400,
+        "high": 33600,
+        "mid": 28000,
+        "currency": "USD"
+      },
+      "notes": "Specialized habeas petition (parole treatment conditions)"
+    },
+    {
+      "matterNumber": 11,
+      "caption": "Newanforbi v. Macomber",
+      "caseNumber": "TBD",
+      "court": "USDC E.D. Cal.",
+      "type": "Federal Habeas/§1983",
+      "status": "Filed 03/02/2026",
+      "documentsCount": 0,
+      "estimatedHours": {
+        "low": 100,
+        "high": 150,
+        "mid": 125
+      },
+      "estimatedCost": {
+        "low": 28000,
+        "high": 42000,
+        "mid": 35000,
+        "currency": "USD"
+      },
+      "notes": "Federal counterpart to Matter 10"
+    },
+    {
+      "matterNumber": 12,
+      "caption": "Ngwa Nforbi v. Diamond Truck Sales",
+      "caseNumber": "STK-CV-UF-2026-0001094",
+      "court": "San Joaquin Sup. Ct.",
+      "type": "State Consumer Fraud / UCL",
+      "status": "Diamond served 03/11/2026; Dakota service pending",
+      "documentsCount": 0,
+      "estimatedHours": {
+        "low": 80,
+        "high": 120,
+        "mid": 100
+      },
+      "estimatedCost": {
+        "low": 22400,
+        "high": 33600,
+        "mid": 28000,
+        "currency": "USD"
+      },
+      "notes": "Product liability; defective vehicle claim"
+    },
+    {
+      "matterNumber": 13,
+      "caption": "Newanforbi v. Urrea et al.",
+      "caseNumber": "2:26-cv-00190-DC-SCR",
+      "court": "USDC E.D. Cal.",
+      "type": "Federal §1983",
+      "status": "Filed 01/22/2026",
+      "documentsCount": 0,
+      "estimatedHours": {
+        "low": 120,
+        "high": 180,
+        "mid": 150
+      },
+      "estimatedCost": {
+        "low": 33600,
+        "high": 50400,
+        "mid": 42000,
+        "currency": "USD"
+      },
+      "notes": "Federal retaliation claim"
+    },
+    {
+      "matterNumber": 14,
+      "caption": "Newanforbi v. Urrea et al.",
+      "caseNumber": "TBD",
+      "court": "San Joaquin Sup. Ct.",
+      "type": "State",
+      "status": "Filed 06/30/2026",
+      "documentsCount": 1,
+      "substantivePages": 40,
+      "estimatedHours": {
+        "low": 60,
+        "high": 100,
+        "mid": 80
+      },
+      "estimatedCost": {
+        "low": 16800,
+        "high": 28000,
+        "mid": 22400,
+        "currency": "USD"
+      },
+      "notes": "Early-stage; likely parallels federal Matter 13"
+    },
+    {
+      "matterNumber": 15,
+      "caption": "Newanforbi v. Dodd et al.",
+      "caseNumber": "TBD",
+      "court": "Sacramento Sup. Ct.",
+      "type": "State",
+      "status": "Verified complaint 06/15/2026; bench trial elected",
+      "documentsCount": 7,
+      "totalSizeGB": 0.037,
+      "substantivePages": 130,
+      "estimatedHours": {
+        "low": 130,
+        "high": 205,
+        "mid": 167
+      },
+      "estimatedCost": {
+        "low": 36400,
+        "high": 57400,
+        "mid": 46900,
+        "currency": "USD"
+      },
+      "notes": "Bench trial elected; detailed factual record"
+    },
+    {
+      "matterNumber": 16,
+      "caption": "Newanforbi v. Rojo",
+      "caseNumber": "TBD",
+      "court": "San Joaquin Sup. Ct.",
+      "type": "State",
+      "status": "Filed 07/07/2026",
+      "documentsCount": 1,
+      "substantivePages": 40,
+      "estimatedHours": {
+        "low": 60,
+        "high": 100,
+        "mid": 80
+      },
+      "estimatedCost": {
+        "low": 16800,
+        "high": 28000,
+        "mid": 22400,
+        "currency": "USD"
+      },
+      "notes": "Early-stage; likely parallels federal Matter 21"
+    },
+    {
+      "matterNumber": 17,
+      "caption": "Newanforbi v. Maloney et al.",
+      "caseNumber": "2:26-cv-00194-DAD-SCR",
+      "court": "USDC E.D. Cal.",
+      "type": "Federal §1983",
+      "status": "Filed 01/22/2026",
+      "documentsCount": 0,
+      "estimatedHours": {
+        "low": 120,
+        "high": 180,
+        "mid": 150
+      },
+      "estimatedCost": {
+        "low": 33600,
+        "high": 50400,
+        "mid": 42000,
+        "currency": "USD"
+      },
+      "notes": "Federal §1983 claim"
+    },
+    {
+      "matterNumber": 18,
+      "caption": "Newanforbi v. Barocio",
+      "caseNumber": "2:26-cv-00191-DJC-CSK (PC)",
+      "court": "USDC E.D. Cal.",
+      "type": "Federal Prisoner Civil Rights",
+      "status": "Redesignated 04/02/2026",
+      "documentsCount": 0,
+      "estimatedHours": {
+        "low": 100,
+        "high": 150,
+        "mid": 125
+      },
+      "estimatedCost": {
+        "low": 28000,
+        "high": 42000,
+        "mid": 35000,
+        "currency": "USD"
+      },
+      "notes": "Specialized prisoner civil rights procedures"
+    },
+    {
+      "matterNumber": 19,
+      "caption": "Newanforbi v. Macomber",
+      "caseNumber": "C2604791",
+      "court": "Santa Clara Sup. Ct.",
+      "type": "State Habeas Corpus",
+      "status": "Filed 04/03/2026; OSC anticipated 06/05/2026",
+      "documentsCount": 0,
+      "estimatedHours": {
+        "low": 80,
+        "high": 120,
+        "mid": 100
+      },
+      "estimatedCost": {
+        "low": 22400,
+        "high": 33600,
+        "mid": 28000,
+        "currency": "USD"
+      },
+      "notes": "Discharge from parole; companion to Matter 10"
+    },
+    {
+      "matterNumber": 20,
+      "caption": "Newanforbi v. CHP et al.",
+      "caseNumber": "TBD",
+      "court": "Alameda Sup. Ct.",
+      "type": "State Writ of Mandate",
+      "status": "Verified Petition filed 05/29/2026",
+      "documentsCount": 2,
+      "totalSizeGB": 0.0098,
+      "substantivePages": 42,
+      "estimatedHours": {
+        "low": 61,
+        "high": 102,
+        "mid": 81
+      },
+      "estimatedCost": {
+        "low": 17080,
+        "high": 28560,
+        "mid": 22820,
+        "currency": "USD"
+      },
+      "notes": "State writ; parallel to Matter 8"
+    },
+    {
+      "matterNumber": 21,
+      "caption": "Newanforbi v. Rojo et al.",
+      "caseNumber": "2:26-cv-00193-DC-CKD",
+      "court": "USDC E.D. Cal.",
+      "type": "Federal First Amendment / Due Process",
+      "status": "Filed 01/22/2026",
+      "documentsCount": 1,
+      "totalSizeGB": 0.000128,
+      "substantivePages": 40,
+      "estimatedHours": {
+        "low": 80,
+        "high": 120,
+        "mid": 100
+      },
+      "estimatedCost": {
+        "low": 22400,
+        "high": 33600,
+        "mid": 28000,
+        "currency": "USD"
+      },
+      "notes": "First Amendment + religious exercise/Due Process"
+    }
+  ],
+  "summary": {
+    "totalEstimatedHours": {
+      "low": 4400,
+      "high": 6800,
+      "mid": 5600
+    },
+    "totalEstimatedCost": {
+      "low": 1438200,
+      "high": 2227400,
+      "mid": 1832600,
+      "currency": "USD"
+    },
+    "byCluster": {
+      "cluster1_CHP_DUI_DMV": {
+        "matters": [1, 2, 7, 8, 20],
+        "costLow": 375000,
+        "costMid": 485000,
+        "costHigh": 595000
+      },
+      "cluster2_Parole_HOPE": {
+        "matters": [3, 4, 5, 6, 11, 13, 14, 15, 16, 17, 18, 21],
+        "costLow": 830000,
+        "costMid": 1055000,
+        "costHigh": 1280000
+      },
+      "cluster3_ConsumerFraud": {
+        "matters": [12],
+        "costLow": 22400,
+        "costMid": 28000,
+        "costHigh": 33600
+      },
+      "cluster4_Administrative_Habeas": {
+        "matters": [9, 10, 19],
+        "costLow": 154000,
+        "costMid": 190600,
+        "costHigh": 227200
+      }
+    }
+  },
+  "damagesComparison": {
+    "conservativeExposure": {
+      "damages": 1170000,
+      "estimatedLawyerFees": 1438200,
+      "ratio": 1.23
+    },
+    "moderateExposure": {
+      "damages": 2785000,
+      "estimatedLawyerFees": 1832600,
+      "ratio": 0.66
+    },
+    "aggressiveExposure": {
+      "damages": 5700000,
+      "estimatedLawyerFees": 2227400,
+      "ratio": 0.39
+    }
+  },
+  "proSeSavings": {
+    "actualCostPaid": 0,
+    "estimatedTimeHoursProBono": 5600,
+    "opportunityCostPerHour": 300,
+    "totalOpportunityCost": 1680000,
+    "savingsIgnoringTime": {
+      "low": 1438200,
+      "mid": 1832600,
+      "high": 2227400
+    },
+    "netSavingsAfterOpportunityCost": {
+      "low": 1088200,
+      "high": 1777400,
+      "mid": 1282600
+    }
+  }
+}
