@@ -289,12 +289,12 @@ export const cases = [
     },
     {
       number: 12, caption: "Ngwa Nforbi v. Diamond Truck Sales", case_no: "STK-CV-UF-2026-0001094", court: "San Joaquin Sup. Ct.",
-      claims: "Fraud, Breach of Contract, UCL (B&P 17200), Rescission", status: "Active — Diamond Truck Sales served 03/11/2026; POS filed; response due 04/10/2026",
+      claims: "Fraud, Breach of Contract, UCL (B&P 17200), Rescission", status: "Active — Default judgment request submitted 06/15/2026 at 9:00 A.M.",
       filed: "February 13, 2026", judge: "Hon. Robert T. Waters", cluster: 3, type: "State",
       defendants: "Diamond Truck Sales Inc. (Texas); Dakota Financial LLC (California); DOES 1-25",
       causes: ["Fraudulent Concealment", "Intentional Misrepresentation", "Negligent Misrepresentation", "Breach of Contract", "UCL Violation", "Rescission", "Declaratory Relief"],
       key_facts: "Purchased 2014 Volvo VNL for $26,900. Diamond concealed DEF/emissions defect and prior CHP out-of-service. Truck entered catastrophic derate mode — unable to exceed 35 mph.",
-      procedural_status: "Filed 02/13/2026. Fee waiver approved. Summons issued. CMC 08/12/2026. Diamond Truck Sales Inc. served 03/11/2026; POS filed 03/11/2026; response due 04/10/2026. Dakota Financial LLC — service still needed.",
+      procedural_status: "Filed 02/13/2026. Fee waiver approved. Summons issued. Diamond Truck Sales Inc. served 03/11/2026; POS filed 03/11/2026; response due 04/10/2026. No response filed; request for entry of default judgment submitted 06/15/2026 at 9:00 A.M. Dakota Financial LLC — service still needed. CMC 08/12/2026 (pending default adjudication).",
       damages: "$75,000 - $150,000+", risk: "Diamond is Texas corp.; service/jurisdiction issues. Dakota is CA-based.",
       evidence: ["Buyer's Order", "Dakota financing agreement", "Emissions records", "CHP out-of-service docs"],
       documents: []

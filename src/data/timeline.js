@@ -89,6 +89,7 @@ export const timeline = [
     { date: "Jun. 1, 2026", event: "Gov. claim accrual deadline — Derrick & Urrea state torts (6 months from Dec. 1, 2025 accrual; claims already filed)", matters: "4,14", type: "filing", upcoming: true },
     { date: "Jun. 5, 2026", event: "OSC anticipated — Immediate Discharge habeas (Santa Clara Sup. Ct.)", matters: "19", type: "hearing", upcoming: true },
     { date: "Jun. 3, 2026", event: "Case Management Statement (CM-110) due — Meza-Gonzalez; meet-and-confer (Rule 3.724); post jury fees (CCP §631)", matters: "2", type: "filing", upcoming: true },
+    { date: "Jun. 15, 2026", event: "Request for Entry of Default Judgment submitted — Diamond Truck Sales (Matter 12) at 9:00 A.M.; Diamond failed to respond to service within 30-day deadline", matters: "12", type: "filing", upcoming: true },
     { date: "Jun. 18, 2026", event: "Motion Hearing — I-918 Supp. B Certification, 2:30 PM, Dept. 518, Hayward Hall of Justice", matters: "2", type: "hearing", upcoming: true },
     { date: "Jul. 6, 2026", event: "Case Management Conference, 2:30 PM, Dept. 518, Hayward — Judge Mark Fickes", matters: "2", type: "hearing", upcoming: true },
     { date: "Aug. 12, 2026", event: "CMC, San Joaquin Superior Court", matters: "12", type: "hearing", upcoming: true },
