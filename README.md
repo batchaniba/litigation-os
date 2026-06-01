@@ -12,11 +12,12 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 |---|---|
 | Plaintiff | Brendan Ngehsi Newanforbi |
 | Representation | Pro Se / In Propria Persona |
-| Active Matters | 21 |
+| Active Matters | 22 |
 | Jurisdictions | USDC E.D. Cal., San Joaquin Sup. Ct., Alameda Sup. Ct., Sacramento Sup. Ct., Santa Clara Sup. Ct. |
-| Aggregate Exposure (Moderate) | $2,785,000 |
-| Aggregate Exposure (Aggressive) | $5,700,000+ |
-| Prepared | May 29, 2026 |
+| Aggregate Exposure (Conservative) | ~$1,500,000+ |
+| Aggregate Exposure (Moderate) | ~$3,600,000+ |
+| Aggregate Exposure (Aggressive) | ~$7,500,000+ |
+| Prepared | May 29, 2026; Matter 22 updated June 1, 2026 |
 
 ---
 
@@ -42,6 +43,9 @@ Three purely equitable proceedings seeking court orders directing CDCR to act �
 - **Matter 9** (Writ of Mandate, Sacramento): AG Demurrer hearing 05/29/2026, Dept. 13A; merits hearing targeted Aug. 27, 2026.
 - **Matter 10** (Habeas Corpus, Santa Clara): Challenges continued compelled treatment as unlawful restraint after five-plus years of parole with no new convictions. Awaiting OSC.
 - **Matter 19** (Habeas Corpus, Santa Clara): Seeks immediate and unconditional discharge from parole. Filed 04/03/2026; OSC anticipated 06/05/2026. Companion to Matter 10, targeting the parole term itself rather than treatment conditions.
+
+### Cluster 5 — Employment / Statutory Violation (Matter 22)
+**Newanforbi v. Pilot Travel Centers LLC** (San Joaquin Superior Court, filed 05/29/2026) — A single-plaintiff wrongful-termination and statutory-violation matter with exceptionally strong liability. Core violations: (1) Penal Code §290.46(j)(2)(E) — unlawful use of sex offender registry information for employment purposes (categorical prohibition with treble damages and civil penalty); (2) Fair Credit Reporting Act (FCRA) violations; (3) California Investigative Consumer Reporting Agencies Act (ICRAA) violations; (4) Wrongful Termination in violation of public policy (Tameny); (5) Intentional and Negligent Infliction of Emotional Distress (IIED/NIED); (6) Unfair Business Practices (Bus. & Prof. Code §17200 — UCL). Defendant's own Post-Adverse Action Notice admits that the sole basis for termination was Plaintiff's registration in the California Sex Offender Registry — a "smoking gun" that admits the unlawful conduct. Defendant is a sophisticated, national employer (Fortune 500-level) with in-house legal counsel and a dedicated background check department. The background check vendor (Checkr) included a statutory disclaimer warning Defendant of the prohibition. No legitimate safety concern was cited. Timing (hired Dec. 15, terminated Dec. 30, during holidays after Plaintiff disclosed severe financial hardship) supports high emotional distress and punitive damages.
 
 ---
 
@@ -70,6 +74,7 @@ Three purely equitable proceedings seeking court orders directing CDCR to act �
 | 19 | Newanforbi v. Macomber | C2604791 | Santa Clara Sup. Ct. | State | Filed 04/03/2026; OSC anticipated 06/05/2026 |
 | 20 | Newanforbi v. CHP, et al. | TBD | Alameda Sup. Ct. | State | Verified Petition filed 05/29/2026 |
 | 21 | Newanforbi v. Rojo, et al. | 2:26-cv-00193-DC-CKD | USDC E.D. Cal. | Federal | Filed 01/22/2026; First Amendment/Due Process |
+| 22 | Newanforbi v. Pilot Travel Centers LLC | TBD | San Joaquin Sup. Ct. | State | Filed 05/29/2026; PC §290.46(j) violation (registry employment ban) |
 
 ---
 
