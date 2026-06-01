@@ -7,5 +7,6 @@ export const damages_table = [
     { category: "Consumer Fraud", matters: "12", conservative: 40000, moderate: 75000, aggressive: 150000 },
     { category: "Attorneys' Fees", matters: "1, 3, 6, 7, 8, 11, 13, 14, 17, 20, 21", conservative: 55000, moderate: 135000, aggressive: 350000 },
     { category: "§ 1983 Civil Rights — Barocio PPC/Retaliation (Matter 18)", matters: "18", conservative: 150000, moderate: 150000, aggressive: 150000 },
-    { category: "Free Exercise / Due Process — Religious Travel Denial (Matter 21)", matters: "21", conservative: 30000, moderate: 75000, aggressive: 150000 }
+    { category: "Free Exercise / Due Process — Religious Travel Denial (Matter 21)", matters: "21", conservative: 30000, moderate: 75000, aggressive: 150000 },
+    { category: "PC §290.46(j) Violation + Wrongful Termination (Matter 22)", matters: "22", conservative: 220000, moderate: 525000, aggressive: 1000000 }
 ];
