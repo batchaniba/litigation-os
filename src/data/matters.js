@@ -357,6 +357,7 @@ export const cases = [
         "Newanforbi v. Macomber tentative ruling (May 29, 2026, Sacramento Super. Ct. No. 26WM000028) — confirms custody-directed relief is wrong vehicle; this action is the correct one"
       ],
       documents: [
+        { label: "Complaint — Newanforbi v. CDCR, et al.", path: "/documents/matter-15/Newanforbi v. CDCR, et al.pdf" },
         { label: "RECALIBRATED Complaint for Damages (dated June 8, 2026)", path: "/documents/matter-15/Newanforbi v Dodd RECALIBRATED.pdf" },
         { label: "Verified Complaint (dated June 15, 2026)", path: "/documents/matter-15/Dodd.pdf" },
         { label: "Original Complaint — Newanforbi v. Dodd et al. (dated May 8, 2026)", path: "/documents/matter-15/Newanforbi v. Dodd, et al..pdf" },
