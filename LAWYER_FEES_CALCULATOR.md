@@ -149,28 +149,31 @@
 
 ---
 
-### **Matter 6: Newanforbi v. HOPE et al. — Federal (VOLUNTARILY DISMISSED 5/21/2026)**
+### **Matter 6: Newanforbi v. HOPE et al. — Federal (DISMISSED WITHOUT PREJUDICE 5/21/2026; Minute Order 6/1/2026)**
 **Case No.:** 2:26-cv-00195-TLN-AC (USDC E.D. Cal.)  
-**Status:** Voluntarily dismissed without prejudice; refiling preserved  
-**Documents:** 4 files, 2.4MB
+**Status:** Dismissed without prejudice (Notice of Voluntary Dismissal filed 5/21/2026; Minute Order entered 6/1/2026 by Chief District Judge Troy L. Nunley); case closed; refiling preserved  
+**Documents:** 5 files, 2.4MB
 
 #### Document Analysis:
 | Document | Pages | Work Type | Est. Hours |
 |---|---|---|---|
 | Initial Complaint | ~50 | Federal complaint (HOPE program) | 100–150 |
+| First Amended Complaint | ~30 | Amendment (narrowed to HOPE & Macomber) | 40–60 |
 | Notice of Related Cases | 41 | Administrative | 5–10 |
 | Notice of Voluntary Dismissal | ~10 | Procedural | 5–10 |
+| Minute Order (Dismissal) | ~2 | Court order | 0 |
 
-**Total Pages:** ~101  
-**Estimated Total Hours:** 110–170 hours  
+**Total Pages:** ~133  
+**Estimated Total Hours:** 150–230 hours  
 **Estimated Cost at Blended Rate ($280/hr avg):**  
-- **Low:** $30,800
-- **High:** $47,600
-- **Mid-Point: $39,200**
+- **Low:** $42,000
+- **High:** $64,400
+- **Mid-Point: $53,200**
 
 **Notes:**  
 - Voluntarily dismissed to preserve refiling and coordinate with state Matter 5
-- Minimal procedural follow-up
+- Strategic narrowing to HOPE and Macomber (FAC dropped individual CDCR defendants)
+- Formally closed by Minute Order 6/1/2026; refiling rights preserved
 - Work preserved for future federal refiling
 
 ---
