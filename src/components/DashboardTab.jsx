@@ -138,6 +138,19 @@ export const DashboardTab = ({ upcomingEvents, setClusterFilter, setActiveTab })
         </div>
       </div>
 
+      {/* Milestone: First Interstate Case */}
+      <div style={{ background: `linear-gradient(135deg, ${GOLD}15, ${GOLD}08)`, borderRadius: 10, padding: 24, border: `2px solid ${GOLD}40`, marginBottom: 28 }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
+          <div style={{ fontSize: 32, lineHeight: 1 }}>🌎</div>
+          <div>
+            <h3 style={{ fontSize: 18, fontWeight: 700, color: GOLD, margin: "0 0 6px", fontFamily: "'DM Sans', sans-serif", letterSpacing: 0.5 }}>First Interstate Reaching Case</h3>
+            <p style={{ margin: 0, fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: theme.secondaryText, lineHeight: 1.4 }}>
+              Matter 22 represents the first litigation matter with interstate service of process. Demand letter sent via Certified Mail to corporate headquarters in Tennessee.
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* Courts Overview */}
       <div style={{ background: theme.cardBg, borderRadius: 10, padding: 24, border: `1px solid ${theme.cardBorder}` }}>
         <h3 style={{ fontSize: 18, fontWeight: 700, color: GOLD, margin: "0 0 16px", fontFamily: "'DM Sans', sans-serif" }}>Jurisdictional Distribution</h3>
