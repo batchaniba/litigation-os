@@ -329,7 +329,7 @@ export const cases = [
       ]
     },
     {
-      number: 15, caption: "Newanforbi v. Dodd, et al.", case_no: "TBD (San Joaquin Sup. Ct.)", court: "San Joaquin Sup. Ct.",
+      number: 15, caption: "Newanforbi v. California Department of Corrections and Rehabilitation, et al.", case_no: "TBD (San Joaquin Sup. Ct.)", court: "San Joaquin Sup. Ct.",
       claims: "Negligence, False Imprisonment, IIED, Breach of Mandatory Duty",
       status: "RECALIBRATED Complaint for Damages dated June 8, 2026 (San Joaquin Sup. Ct.); 4 counts; jury trial demanded; money damages only — no custody challenge; responds to Macomber tentative ruling (May 29, 2026) holding mandate is wrong vehicle for custody-directed relief; gov. claim April 23, 2026 (Conf. No. 26042324436661) deemed rejected June 7, 2026; timeliness under Gov. Code §945.6(a)(2) two-year period; case # TBD",
       filed: "May 13, 2026 (original, Sacramento Sup. Ct.); RECALIBRATED Complaint dated June 8, 2026 (San Joaquin Sup. Ct., supersedes)", judge: "TBD", cluster: 2, type: "State",
