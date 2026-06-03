@@ -418,7 +418,7 @@ export const cases = [
       documents: []
     },
     {
-      number: 20, caption: "Newanforbi v. California Highway Patrol, et al.", case_no: "TBD", court: "Alameda Sup. Ct.",
+      number: 20, caption: "Newanforbi v. California Highway Patrol, et al.", case_no: "26CV191136", court: "Alameda Sup. Ct.",
       claims: "Writ of Mandate (CCP §1085; PC §679.10) — U Visa Certification; Declaratory Relief (CCP §1060)", status: "Active — Petition filed 05/29/2026; CMC pending; Summons issued 06/03/2026; Fee Waiver Request submitted",
       filed: "May 29, 2026", judge: "TBD", cluster: 1, type: "State",
       defendants: "California Highway Patrol; G. Serrato, Captain and Commander CHP Dublin Area; Gary Paul, Lieutenant CHP Dublin Area; Eric Dutra, Sergeant CHP Dublin Area; DOES 1-10",
