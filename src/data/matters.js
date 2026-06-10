@@ -426,6 +426,12 @@ export const cases = [
       claims: "Writ of Mandate (CCP §1085; PC §679.10) — U Visa Certification; Declaratory Relief (CCP §1060)", status: "Active — Petition filed 05/29/2026; CMC pending; Summons issued 06/03/2026; Fee Waiver Request submitted",
       filed: "May 29, 2026", judge: "TBD", cluster: 1, type: "State",
       defendants: "California Highway Patrol; G. Serrato, Captain and Commander CHP Dublin Area; Gary Paul, Lieutenant CHP Dublin Area; Eric Dutra, Sergeant CHP Dublin Area; DOES 1-10",
+      serviceTracking: [
+        { name: "G. Serrato", title: "Captain and Commander", location: "CHP Dublin Area (Alameda)", served: false, dateServed: null },
+        { name: "Gary Paul", title: "Lieutenant", location: "CHP Dublin Area (Alameda)", served: false, dateServed: null },
+        { name: "Eric Dutra", title: "Sergeant", location: "CHP Dublin Area (Alameda)", served: false, dateServed: null },
+        { name: "California Highway Patrol", title: "Organization", location: "CHP Sacramento (Sacramento)", served: true, dateServed: "June 3, 2026" }
+      ],
       causes: [
         "Count I — Writ of Mandate (CCP §1085): Failure to Perform Mandatory Duty Under Penal Code §679.10(b) — compel certification of Form I-918 Supplement B",
         "Count II — Writ of Mandate (CCP §1085): Failure to Perform Ministerial Duty Under PC §679.10(g) — reason-giving requirement for denials",
