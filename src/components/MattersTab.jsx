@@ -2,6 +2,7 @@ import { useState } from "react";
 import { PORTFOLIO } from "../data";
 import { GOLD, BORDER_BLUE } from "../constants";
 import { StatusBadge, ClusterBadge, TypeBadge, ArchiveBadge } from "./Badges";
+import { ServiceTracker } from "./ServiceTracker";
 import { useTheme } from "../ThemeContext";
 
 const MatterCard = ({ matter: c, isOpen, onToggle }) => {
@@ -82,6 +83,8 @@ const MatterCard = ({ matter: c, isOpen, onToggle }) => {
               ))}
             </div>
           </div>
+
+          {c.serviceTracking && <ServiceTracker serviceTracking={c.serviceTracking} />}
         </div>
       )}
     </div>
