@@ -406,7 +406,13 @@ export const cases = [
         { label: "Verified Complaint (dated June 15, 2026)", path: "/documents/matter-15/Dodd.pdf" },
         { label: "Original Complaint — Newanforbi v. Dodd et al. (dated May 8, 2026)", path: "/documents/matter-15/Newanforbi v. Dodd, et al..pdf" },
         { label: "Verified Complaint — Newanforbi v. Dodd et al. (June 15, 2026)", path: "/documents/matter-15/Newanforbi v. Dodd.pdf" },
-        { label: "Government Claim (GCP Intake Form)", path: "/documents/matter-15/Print_GCP_INTAKE_FORM.pdf" }
+        { label: "Government Claim (GCP Intake Form)", path: "/documents/matter-15/Print_GCP_INTAKE_FORM.pdf" },
+        { label: "Civil Case Cover Sheet (CM-010)", path: "/documents/matter-15/5417 CM010 Civil Case Cover Sheet.pdf" },
+        { label: "Summons — Civil", path: "/documents/matter-15/5417 SUM100 Summons - Civil.pdf" },
+        { label: "Complaint (5417)", path: "/documents/matter-15/5417 Complaint.pdf" },
+        { label: "Notice of Case Assignment Scheduling Information", path: "/documents/matter-15/5417 Notice of Case Assignment Scheduling Information.pdf" },
+        { label: "Clerk's Certificate of Service by Mail", path: "/documents/matter-15/5417 Clerk s Certificate of Service by Mail.pdf" },
+        { label: "Order on Court Fee Waiver (FW-003)", path: "/documents/matter-15/Newanforbi v. CDCR FW003 Order on Court Fee Waiver.pdf" }
       ]
     },
     {
