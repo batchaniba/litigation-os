@@ -230,8 +230,7 @@ export const cases = [
         { label: "FAC — Word Format (Apr. 27, 2026)", path: "/documents/matter-07/FAC Newanforbi v Candelaria.docx" },
         { label: "Original Complaint — Newanforbi v. Candelaria", path: "/documents/matter-07/Newanforbi v. Candelaria.pdf" },
         { label: "Arrest Report (CHP, CHP Case RJ68845)", path: "/documents/matter-07/Arrest Report.pdf" },
-        { label: "CHP Video Transcript (Dashcam Audio)", path: "/documents/matter-07/CHP Transcript.pdf" },
-        { label: "Candelaria Recommendation and Ruling (R&R)", path: "/documents/matter-07/Candelaria R&R.pdf" },
+        { label: "CHP Dashcam Transcript", path: "/documents/matter-07/CHP Transcript.pdf" },
         { label: "DMV APS Notice / Notice of Stay / Temporary License (Dec. 4, 2024)", path: "/documents/matter-07/DAD 2024-12-04.pdf" },
         { label: "DS2044 — Notification of Discovery (APS Case 34739340)", path: "/documents/matter-07/DS2044 Notification of Discovery 34739340.pdf" },
         { label: "Discovery Response — Personal Statement (Dec. 9, 2024)", path: "/documents/matter-07/Discovery-Response.pdf" },
@@ -239,9 +238,10 @@ export const cases = [
         { label: "Exhibit A Cover — DMV Decision", path: "/documents/matter-07/Exhibit A Cover DMV Decision.pdf" },
         { label: "Exhibit B Cover — Dairyland SR-22", path: "/documents/matter-07/Exhibit B Cover Dairyland SR22.pdf" },
         { label: "Exhibit C Cover — CHP Dashcam Transcript", path: "/documents/matter-07/Exhibit C Cover CHP Dashcam Transcript.pdf" },
-        { label: "Objections to Factual Record — Candelaria (Bolstered)", path: "/documents/matter-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf" },
-        { label: "Supplemental Declaration of Newanforbi", path: "/documents/matter-07/Supplemental Declaration Newanforbi v Candelaria.pdf" },
-        { label: "DMV Decision (Administrative Per Se — Case 34739340)", path: "/documents/matter-07/DMV Decision.pdf" }
+        { label: "Candelaria Response & Reply", path: "/documents/matter-07/Candelaria R&R.pdf" },
+        { label: "DMV Decision (Administrative Per Se — Case 34739340)", path: "/documents/matter-07/DMV Decision.pdf" },
+        { label: "Supplemental Declaration (Newanforbi v. Candelaria)", path: "/documents/matter-07/Supplemental Declaration Newanforbi v Candelaria.pdf" },
+        { label: "Objections to Findings & Recommendations (BOLSTERED 3)", path: "/documents/matter-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf" }
       ]
     },
     {
