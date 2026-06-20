@@ -657,7 +657,11 @@ export const cases = [
         "California Attorney General Information Bulletin No. DLE-2024-05 (April 3, 2024) — mandatory guidance directing all law enforcement to certify when statutory elements met"
       ],
       documents: [
-        { label: "Complaint for Damages, Declaratory Relief, and Injunctive Relief (42 U.S.C. § 1983) (filed TBD)", path: "/documents/matter-24/Complaint.pdf" }
+        { label: "Complaint for Damages, Declaratory Relief, and Injunctive Relief (42 U.S.C. § 1983)", path: "/documents/matter-24/Complaint.pdf" },
+        { label: "Northern District of California ISC and Magistrate Consent Form", path: "/documents/matter-24/ND Cal ISC and Magistrate Consent form.pdf" },
+        { label: "Northern District of California In Forma Pauperis (IFP) Application", path: "/documents/matter-24/Nd Cal IFP Application.pdf" },
+        { label: "Northern District of California Proposed Summons", path: "/documents/matter-24/Nd Cal Proposed Summons.pdf" },
+        { label: "Response/Brief (Document 1-2)", path: "/documents/matter-24/1 2.pdf" }
       ]
     }
 ];
