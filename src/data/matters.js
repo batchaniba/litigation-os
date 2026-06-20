@@ -308,16 +308,34 @@ export const cases = [
       documents: []
     },
     {
-      number: 12, caption: "Ngwa Nforbi v. Diamond Truck Sales", case_no: "STK-CV-UF-2026-0001094", court: "San Joaquin Sup. Ct.",
-      claims: "Fraud, Breach of Contract, UCL (B&P 17200), Rescission", status: "Active — Default judgment request submitted 06/15/2026 at 9:00 A.M.",
+      number: 12, caption: "Brendan Ngwa Nforbi v. Diamond Truck Sales, Inc.", case_no: "STK-CV-UF-2026-0001094", court: "San Joaquin Sup. Ct.",
+      claims: "Fraudulent Concealment, Intentional Misrepresentation, Negligent Misrepresentation, Breach of Contract, UCL §17200, Rescission & Restitution, Declaratory Relief", status: "Active — Default judgment request submitted 06/15/2026; CMC 08/12/2026, 8:30 AM, Dept. 11B",
       filed: "February 13, 2026", judge: "Hon. Robert T. Waters", cluster: 3, type: "State",
-      defendants: "Diamond Truck Sales Inc. (Texas); Dakota Financial LLC (California); DOES 1-25",
-      causes: ["Fraudulent Concealment", "Intentional Misrepresentation", "Negligent Misrepresentation", "Breach of Contract", "UCL Violation", "Rescission", "Declaratory Relief"],
-      key_facts: "Purchased 2014 Volvo VNL for $26,900. Diamond concealed DEF/emissions defect and prior CHP out-of-service. Truck entered catastrophic derate mode — unable to exceed 35 mph.",
-      procedural_status: "Filed 02/13/2026. Fee waiver approved. Summons issued. Diamond Truck Sales Inc. served 03/11/2026; POS filed 03/11/2026; response due 04/10/2026. No response filed; request for entry of default judgment submitted 06/15/2026 at 9:00 A.M. Dakota Financial LLC — service still needed. CMC 08/12/2026 (pending default adjudication).",
-      damages: "$75,000 - $150,000+", risk: "Diamond is Texas corp.; service/jurisdiction issues. Dakota is CA-based.",
-      evidence: ["Buyer's Order", "Dakota financing agreement", "Emissions records", "CHP out-of-service docs"],
-      documents: []
+      defendants: "Diamond Truck Sales, Inc. (California corporation operating at multiple locations including Texas and South Carolina); Dakota Financial LLC (California); DOES 1-20",
+      causes: ["Fraudulent Concealment (Count 1)", "Intentional Misrepresentation (Count 2)", "Negligent Misrepresentation (Count 3)", "Breach of Contract (Count 4)", "Violation of Unfair Competition Law, B&P Code §17200 (Count 5)", "Rescission and Restitution (Count 6)", "Declaratory Relief (Count 7)"],
+      key_facts: "On April 4, 2023, Plaintiff purchased a 2014 Volvo VNL diesel semi-truck (VIN: 4V4NC9EH6EN142206) from Diamond for $26,900.00 (total charges $27,092.75) with >$12,000 down payment and remaining balance financed by third-party lender. At time of sale, truck suffered a severe DEF/emissions system defect affecting the selective catalytic reduction (SCR) system, rendering it non-compliant with California emissions regulations and unsafe for highway operation. Diamond concealed and failed to disclose: (1) the emissions defect; (2) truck's regulatory non-compliance; (3) prior owner's written/verbal disclosure of DEF system failure and engine derate condition to Diamond before resale; (4) California enforcement agency's out-of-service order. Prior owner expressly disclosed the defect to Diamond; Diamond possessed actual knowledge but sold truck to Plaintiff without disclosure. Shortly after purchase while operating under Lease-On Owner Operator Agreement, truck experienced catastrophic emissions failure, entered 'limp mode,' emitted excessive black smoke, became incapable of exceeding approximately 35 mph, rendering it commercially unusable and unsafe. Plaintiff suffered documented economic losses: deposit $12,345.10; GAP enrollment $1,895.00; DMV/registration $3,442.00; towing/repair costs ~$7,447.34; storage/insurance. Subtotal direct losses ~$25,129.44. Lost net commercial income >$46,800 (projected weekly earnings ~$1,800; unable to perform under hauling contracts including Amazon Relay). Plaintiff unable to mitigate by renting/purchasing replacement vehicle due to capital exhaustion.",
+      procedural_status: "Filed 02/13/2026 (pro se, fee waiver approved). Summons issued. Diamond Truck Sales Inc. served 03/11/2026 via POS-010; response due 04/10/2026. No response filed; request for entry of default judgment submitted 06/15/2026 at 9:00 A.M. Dakota Financial LLC — service status pending. Case assigned to Hon. Robert T. Waters, Department 11B for all purposes including trial. Case Management Conference scheduled 08/12/2026, 8:30 AM, Dept. 11B. ADR & Scheduling information available on sjcourts.org/self-help. Jury trial demanded.",
+      damages: "$75,000 - $150,000+: Documented direct economic losses (~$25,129.44); lost net commercial income (>$46,800 to date, continuing); consequential damages including lost business opportunities and freight income; punitive and exemplary damages under Civ. Code §3294; disgorgement and restitution under UCL §17200; costs of suit; prejudgment and postjudgment interest per Civ. Code §3287(a).",
+      risk: "Strong case: Diamond's fraud/concealment clearly pleaded; prior owner's disclosure to Diamond establishes knowledge; catastrophic defect objectively documented; damages quantifiable. Default judgment risk eliminated if Diamond responds before or at CMC. Dakota Financial as financer may raise defenses. Punitive damages exposure substantial given willful conduct post-disclosure knowledge.",
+      evidence: ["2014 Volvo VNL vehicle (VIN: 4V4NC9EH6EN142206)", "Retail Buyer's Order (April 4, 2023, $26,900 + $192.75 charges)", "Power of Attorney (notarized, San Joaquin County)", "Prior owner's disclosure to Diamond (written/verbal, per Plaintiff's allegations)", "California enforcement agency out-of-service order/citation documentation", "Lease-On Owner Operator Agreement", "Truck catastrophic failure incident records", "Economic losses documentation: deposit receipt ($12,345.10), GAP enrollment ($1,895.00), DMV receipt ($3,442.00), towing invoices (Brannon Tire $1,197.34, Golden Empire Towing $450.00, Mobile Will's Repair $800.00, Almaraz Diesel $5,000.00)", "W-2/earnings records from hauling carriers (Amazon Relay, et al.)", "Storage and insurance payment records", "Third-party financing agreement (Dakota Financial)", "Prior owner contact information and statement"],
+      documents: [
+        { label: "Original Complaint (Feb. 13, 2026)", path: "/documents/matter-12/1094 Complaint.pdf" },
+        { label: "Amended Complaint", path: "/documents/matter-12/1094 Amended Complaint.pdf" },
+        { label: "Summons — Civil", path: "/documents/matter-12/1094 SUM100 Summons - Civil.pdf" },
+        { label: "Summons — Civil 2", path: "/documents/matter-12/1094 SUM100 Summons - Civil 2.pdf" },
+        { label: "AMENDED Summons — Civil", path: "/documents/matter-12/1094 SUM100 AMENDED Summons - Civil.pdf" },
+        { label: "Civil Case Cover Sheet (CM-010)", path: "/documents/matter-12/1094 CM010 Civil Case Cover Sheet.pdf" },
+        { label: "Order on Court Fee Waiver (FW-003)", path: "/documents/matter-12/1094 FW003 Order on Court Fee Waiver.pdf" },
+        { label: "Notice of Case Assignment Scheduling Information", path: "/documents/matter-12/1094 Notice of Case Assignment Scheduling Information.pdf" },
+        { label: "Proof of Service of Summons", path: "/documents/matter-12/1094 POS010 Proof of Service of Summons.pdf" },
+        { label: "Proof of Service of Summons 2", path: "/documents/matter-12/1094 POS010 Proof of Service of Summons 2.pdf" },
+        { label: "Proof of Service of Summons 3", path: "/documents/matter-12/1094 POS010 Proof of Service of Summons 3.pdf" },
+        { label: "Proof of Service of Summons 4", path: "/documents/matter-12/1094 POS010 Proof of Service of Summons 4.pdf" },
+        { label: "Proof of Service of Summons 5", path: "/documents/matter-12/1094 POS010 Proof of Service of Summons 5.pdf" },
+        { label: "FullCourt Enterprise — Civil Case", path: "/documents/matter-12/FullCourt Enterprise - Civil Case.pdf" },
+        { label: "FullCourt Enterprise — Civil ROA Summary", path: "/documents/matter-12/FullCourt Enterprise - Civil ROA Summary.pdf" },
+        { label: "DTS Default Judgment Packet", path: "/documents/matter-12/DTS Default Judgment Packet.pdf" }
+      ]
     },
     {
       number: 13, caption: "Newanforbi v. Urrea et al.", case_no: "2:26-cv-00190-DC-SCR", court: "USDC E.D. Cal.",
