@@ -326,7 +326,23 @@ export const cases = [
       procedural_status: "Filed 02/13/2026. Fee waiver approved. Summons issued. Diamond Truck Sales Inc. served 03/11/2026; POS filed 03/11/2026; response due 04/10/2026. No response filed; request for entry of default judgment submitted 06/15/2026 at 9:00 A.M. Dakota Financial LLC — service still needed. CMC 08/12/2026 (pending default adjudication).",
       damages: "$75,000 - $150,000+", risk: "Diamond is Texas corp.; service/jurisdiction issues. Dakota is CA-based.",
       evidence: ["Buyer's Order", "Dakota financing agreement", "Emissions records", "CHP out-of-service docs"],
-      documents: []
+      documents: [
+        { label: "Original Complaint (Feb. 13, 2026)", path: "/documents/matter-12/1094 Complaint.pdf" },
+        { label: "Amended Complaint (March 2026)", path: "/documents/matter-12/1094 Amended Complaint.pdf" },
+        { label: "CM010 Civil Case Cover Sheet", path: "/documents/matter-12/1094 CM010 Civil Case Cover Sheet.pdf" },
+        { label: "Notice of Case Assignment and Scheduling Information", path: "/documents/matter-12/1094 Notice of Case Assignment Scheduling Information.pdf" },
+        { label: "FW003 — Order on Court Fee Waiver (approved)", path: "/documents/matter-12/1094 FW003 Order on Court Fee Waiver.pdf" },
+        { label: "Original Summons - Civil", path: "/documents/matter-12/1094 SUM100 Summons - Civil.pdf" },
+        { label: "Amended Summons - Civil", path: "/documents/matter-12/1094 SUM100 AMENDED Summons - Civil.pdf" },
+        { label: "Proof of Service of Summons (Batch 1)", path: "/documents/matter-12/1094 POS010 Proof of Service of Summons.pdf" },
+        { label: "Proof of Service of Summons (Batch 2)", path: "/documents/matter-12/1094 POS010 Proof of Service of Summons 2.pdf" },
+        { label: "Proof of Service of Summons (Batch 3)", path: "/documents/matter-12/1094 POS010 Proof of Service of Summons 3.pdf" },
+        { label: "Proof of Service of Summons (Batch 4)", path: "/documents/matter-12/1094 POS010 Proof of Service of Summons 4.pdf" },
+        { label: "Proof of Service of Summons (Batch 5)", path: "/documents/matter-12/1094 POS010 Proof of Service of Summons 5.pdf" },
+        { label: "DTS Default Judgment Packet (June 15, 2026)", path: "/documents/matter-12/DTS Default Judgment Packet.pdf" },
+        { label: "FullCourt Enterprise — Civil Case Summary", path: "/documents/matter-12/FullCourt Enterprise - Civil Case.pdf" },
+        { label: "FullCourt Enterprise — Record of Actions (ROA) Summary", path: "/documents/matter-12/FullCourt Enterprise - Civil ROA Summary.pdf" }
+      ]
     },
     {
       number: 13, caption: "Newanforbi v. Urrea et al.", case_no: "2:26-cv-00190-DC-SCR", court: "USDC E.D. Cal.",
