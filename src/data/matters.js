@@ -155,7 +155,20 @@ export const cases = [
         { label: "Discovery — DISC-001 Sec. 4a2 to HOPE Psychotherapy (May 22, 2026)", path: "/documents/matter-05/DISC001_SEC_4a2 HOPE1.pdf" },
         { label: "Discovery — DISC-001 Sec. 4a2 to Palacios (May 22, 2026)", path: "/documents/matter-05/DISC001_SEC_4a2 Palacios .pdf" },
         { label: "Defendant Palacios' Responses to Plaintiff's Requests for Admission, Set One (filed June 8, 2026)", path: "/documents/matter-05/PALACIOS resp plntf RFA1 (NEWpal) (060826).pdf" },
-        { label: "HOPE Psychotherapy's Responses to Plaintiff's Requests for Admission, Set One — DRAFT (June 8, 2026)", path: "/documents/matter-05/DRFT HOPE resp plntf RFA1.pdf" }
+        { label: "HOPE Psychotherapy's Responses to Plaintiff's Requests for Admission, Set One — DRAFT (June 8, 2026)", path: "/documents/matter-05/DRFT HOPE resp plntf RFA1.pdf" },
+        { label: "Palacios' Responses to Form Interrogatories, Set One (June 15, 2026)", path: "/documents/matter-05/PALACIOS resp plntf FROGS1 (NEWpal) (061526).pdf" },
+        { label: "Palacios' Responses to Requests for Production, Set One (June 15, 2026)", path: "/documents/matter-05/PALACIOS resp plntf RFP1 (NEWpal) (061526).pdf" },
+        { label: "Palacios' Responses to Special Interrogatories, Set One (June 12, 2026)", path: "/documents/matter-05/PALACIOS resp plntf SROGS1 (NEWpal) (061226).pdf" },
+        { label: "HOPE's Responses to Form Interrogatories, Set One (June 15, 2026)", path: "/documents/matter-05/HOPE resp plntf FROGS1 (NEWpal) (061526).pdf" },
+        { label: "HOPE's Responses to Requests for Production, Set One (June 15, 2026)", path: "/documents/matter-05/HOPE resp plntf RFP1 (newpal) (061526).pdf" },
+        { label: "HOPE's Responses to Special Interrogatories, Set One (June 15, 2026)", path: "/documents/matter-05/HOPE resp plntf SROGS1 (NEWpal) (061526).pdf" },
+        { label: "Plaintiff's Requests for Admission to Defendants (June 18, 2026)", path: "/documents/matter-05/RFA to Pl (NEWpal) (061826).pdf" },
+        { label: "Plaintiff's Requests for Production to Defendants (June 18, 2026)", path: "/documents/matter-05/RFP to Pl (NEWpal) (061826).pdf" },
+        { label: "Plaintiff's Special Interrogatories to Defendants (June 18, 2026)", path: "/documents/matter-05/SROGS to Pl (NEWpal) (061826).pdf" },
+        { label: "Plaintiff's Special Interrogatories, Set Two to HOPE (June 2026)", path: "/documents/matter-05/SROG Set Two HOPE NEWpal .pdf" },
+        { label: "Plaintiff's Special Interrogatories, Set Two to Palacios (June 2026)", path: "/documents/matter-05/SROG Set Two PALACIOS NEWpal .pdf" },
+        { label: "Stipulated Protective Order (SIGNED June 13–14, 2026)", path: "/documents/matter-05/Stipulated Protective Order SIGNED.pdf" },
+        { label: "Meet and Confer Letter re: Deficient Discovery Responses (June 16, 2026)", path: "/documents/matter-05/Meet and Confer Letter 061626.pdf" }
       ]
     },
     {
