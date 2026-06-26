@@ -6,6 +6,7 @@ export const StatusBadge = ({ status }) => {
   if (status.includes("Filed") || status.includes("Active")) { color = "#34D399"; bg = "rgba(52,211,153,0.12)"; }
   if (status.includes("Gov. Claim") || status.includes("45-day")) { color = GOLD; bg = "rgba(200,168,75,0.12)"; }
   if (status.includes("MTD") || status.includes("Hearing")) { color = "#F472B6"; bg = "rgba(244,114,182,0.12)"; }
+  if (status.includes("DISMISSED")) { color = "#F87171"; bg = "rgba(248,113,113,0.12)"; }
   return <span style={{ fontSize: 11, padding: "3px 10px", borderRadius: 20, color, background: bg, fontWeight: 600, whiteSpace: "nowrap", letterSpacing: 0.3 }}>{status.length > 40 ? status.slice(0, 38) + "…" : status}</span>;
 };
 
