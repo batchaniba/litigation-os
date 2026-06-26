@@ -130,5 +130,6 @@ export const timeline = [
     { date: "May 19, 2026", event: "Gov. Claim presented — Rojo state tort (Confirmation No. 26051930365359; 45-day clock begins)", matters: "16", type: "filing" },
     { date: "Jul. 3, 2026", event: "Gov. claim deemed rejected — Rojo state tort (45 days from 05/19/2026 presentment, Gov. Code §912.4(c))", matters: "16", type: "milestone", upcoming: true },
     { date: "Jul. 7, 2026", event: "Complaint filed — Newanforbi v. Rojo (San Joaquin Sup. Ct.)", matters: "16", type: "filing", upcoming: true },
-    { date: "Jan. 3, 2027", event: "Suit filing deadline — Rojo state tort (6 months from 07/03/2026 deemed rejection, Gov. Code §945.6(a)(1))", matters: "16", type: "filing", upcoming: true }
+    { date: "Jan. 3, 2027", event: "Suit filing deadline — Rojo state tort (6 months from 07/03/2026 deemed rejection, Gov. Code §945.6(a)(1))", matters: "16", type: "filing", upcoming: true },
+    { date: "Jun. 29, 2026", event: "Notices of Voluntary Dismissal With Prejudice filed — Matters 11 (Macomber federal), 13 (Urrea federal), 17 (Maloney), 18 (Barocio), and 21 (Rojo federal) dismissed with prejudice under FRCP 41(a)(1)(A)(i); self-executing", matters: "11,13,17,18,21", type: "milestone", upcoming: true }
 ];
