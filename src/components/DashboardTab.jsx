@@ -5,14 +5,17 @@ import { useTheme } from "../ThemeContext";
 const formatCurrency = (n) => "$" + n.toLocaleString();
 
 const totalMatters = PORTFOLIO.cases.length;
+const activeMatters = PORTFOLIO.cases.filter(c => !c.archived).length;
 const clusterCounts = { 1: 0, 2: 0, 3: 0, 4: 0 };
 const clusterNumberLists = { 1: [], 2: [], 3: [], 4: [] };
 const courtCounts = {};
 let federalCount = 0;
 let stateCount = 0;
 for (const c of PORTFOLIO.cases) {
-  if (c.type === "Federal") federalCount++;
-  else if (c.type === "State") stateCount++;
+  if (!c.archived) {
+    if (c.type === "Federal") federalCount++;
+    else if (c.type === "State") stateCount++;
+  }
   if (clusterCounts[c.cluster] !== undefined) {
     clusterCounts[c.cluster]++;
     clusterNumberLists[c.cluster].push(c.number);
@@ -51,12 +54,11 @@ const CLUSTERS = [
 ];
 
 const PERTINENT_FILINGS = [
-  { title: "Newanforbi v. Urrea, et al.", matter: 13 },
   { title: "Newanforbi v. Dodd, et al.", matter: 15 },
-  { title: "Newanforbi v. Macomber", matter: 11 },
   { title: "Newanforbi v. Candelaria, et al", matter: 7 },
-  { title: "Newanforbi v. Rojo (Federal — Free Exercise)", matter: 21 },
   { title: "Newanforbi v. Rojo (State)", matter: 16 },
+  { title: "Newanforbi v. Urrea et al. (State)", matter: 14 },
+  { title: "Newanforbi v. Serrato et al.", matter: 24 },
 ];
 
 export const DashboardTab = ({ upcomingEvents, setClusterFilter, setActiveTab }) => {
@@ -66,7 +68,7 @@ export const DashboardTab = ({ upcomingEvents, setClusterFilter, setActiveTab })
       {/* Stats Row */}
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 16, marginBottom: 28 }}>
         {[
-          { label: "Active Matters", value: totalMatters, sub: `${federalCount} Federal · ${stateCount} State` },
+          { label: "Active Matters", value: activeMatters, sub: `${federalCount} Federal · ${stateCount} State · ${totalMatters} total` },
           { label: "Jurisdictions", value: PORTFOLIO.jurisdictions.length, sub: "Courts across CA" },
           { label: "Aggregate Exposure", value: moderateExposure, sub: "Moderate estimate" },
           { label: "Next Deadline", value: upcomingEvents[0]?.date || "—", sub: upcomingEvents[0]?.event?.slice(0, 35) || "" }
