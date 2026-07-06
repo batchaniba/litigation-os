@@ -1,6 +1,10 @@
 export const timeline = [
     { date: "Dec. 2, 2020", event: "Released on parole; HOPE Program begins", matters: "All", type: "milestone" },
     { date: "Apr. 4, 2023", event: "Purchased defective Volvo semi-truck from Diamond", matters: "12", type: "event" },
+    { date: "Aug. 27, 2025", event: "Prior, factually distinct habeas petition (filed Apr./May 2025 in Santa Clara Superior Court, challenging whether Petitioner's parole term should be three years per the Abstract of Judgment rather than the ten-year statutory maximum) denied by Judge Geffon; disclosed in the April 2026 habeas petition (Matter 19) under Cal. Rules of Court, rule 4.552 and distinguished under the successive-petition doctrine (In re Clark)", matters: "19", type: "ruling" },
+    { date: "Dec. 1, 2025", event: "CDCR discharge review — Agent Long Moua recommends 'Retain on Parole'; Unit Supervisor Gary Noguchi and Parole Administrator Keely Dodd concur, citing Policy 19-03's 6.5-year time-served minimum, incomplete HOPE treatment, technical violations, and state-induced unemployment", matters: "19", type: "event" },
+    { date: "Feb. 10, 2026", event: "Government Tort Claim presented — preserving damages arising from unlawful parole restraint underlying the Matter 19 habeas petition", matters: "19", type: "filing" },
+    { date: "Mar. 31, 2026", event: "Petition for Writ of Habeas Corpus (Immediate Discharge from Parole) signed, naming Keely Dodd and Jeff Macomber as Respondents", matters: "19", type: "filing" },
     { date: "Mar. 2023", event: "In re Dwyer: Court condemns HOPE blanket retention policy", matters: "9,6,5,11,15", type: "ruling" },
     { date: "Dec. 2023", event: "ACSOL v. Macomber: Demurrer overruled", matters: "9,6,5,11", type: "ruling" },
     { date: "Nov. 1, 2024", event: "CHP stop on I-580; DUI arrest; 5-day parole hold", matters: "1,2,13,14", type: "event" },
