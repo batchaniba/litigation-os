@@ -32,7 +32,8 @@ export const cases = [
         { label: "CHP Arrest Report", path: "/documents/matter-01/Arrest Report.pdf" },
         { label: "CHP Video Transcript (Exhibit A)", path: "/documents/matter-01/Exhibit_A_CHP_Video_Transcript.pdf" },
         { label: "Discovery Response", path: "/documents/matter-01/Discovery-Response.pdf" },
-        { label: "Centerline Wage Reference", path: "/documents/matter-01/Centerline Wage Reference.pdf" }
+        { label: "Centerline Wage Reference", path: "/documents/matter-01/Centerline Wage Reference.pdf" },
+        { label: "Notice of Change of Address (filed July 7, 2026)", path: "/documents/matter-01/Notice of Change of Address (July 7, 2026).pdf" }
       ]
     },
     {
@@ -49,7 +50,8 @@ export const cases = [
         { label: "Stipulation for Stay Pending Resolution of Concurrent Federal Action (filed Apr. 14, 2026)", path: "/documents/matter-02/Signed Stipulation for Stay.pdf" },
         { label: "[Proposed] Order re: Stipulation for Stay (filed Apr. 14, 2026)", path: "/documents/matter-02/[Proposed] Order re Stipulation for Stay.pdf" },
         { label: "Defendants' Opposition to Plaintiff's Motion for U-Visa Certification (filed June 5, 2026)", path: "/documents/matter-02/Opposition to Motion for U-visa certification.pdf" },
-        { label: "Plaintiff's Reply in Support of Motion for U-Visa Certification (filed June 8, 2026)", path: "/documents/matter-02/Reply ISO UVisa Cert 10pg.pdf" }
+        { label: "Plaintiff's Reply in Support of Motion for U-Visa Certification (filed June 8, 2026)", path: "/documents/matter-02/Reply ISO UVisa Cert 10pg.pdf" },
+        { label: "Notice of Change of Address (filed July 7, 2026)", path: "/documents/matter-02/Notice of Change of Address (July 7, 2026).pdf" }
       ]
     },
     {
@@ -92,7 +94,8 @@ export const cases = [
         { label: "Derrick M4L Reply", path: "/documents/matter-03/DerrickM4LReply.pdf" },
         { label: "Derrick M4L (main)", path: "/documents/matter-03/Derrick_M4L.pdf" },
         { label: "Palacios Motion to Dismiss FAC (Doc 24, Apr. 6, 2026)", path: "/documents/matter-03/PalaciosMTD_Doc24.pdf" },
-        { label: "Plaintiff's Opposition to Palacios MTD (filed Apr. 9, 2026; entered Apr. 13, 2026)", path: "/documents/matter-03/Opposition_PalaciosMTD.pdf" }
+        { label: "Plaintiff's Opposition to Palacios MTD (filed Apr. 9, 2026; entered Apr. 13, 2026)", path: "/documents/matter-03/Opposition_PalaciosMTD.pdf" },
+        { label: "Notice of Change of Address (filed July 7, 2026)", path: "/documents/matter-03/Notice of Change of Address (July 7, 2026).pdf" }
       ]
     },
     {
@@ -169,7 +172,8 @@ export const cases = [
         { label: "Plaintiff's Special Interrogatories, Set Two to HOPE (June 2026)", path: "/documents/matter-05/SROG Set Two HOPE NEWpal .pdf" },
         { label: "Plaintiff's Special Interrogatories, Set Two to Palacios (June 2026)", path: "/documents/matter-05/SROG Set Two PALACIOS NEWpal .pdf" },
         { label: "Stipulated Protective Order (SIGNED June 13–14, 2026)", path: "/documents/matter-05/Stipulated Protective Order SIGNED.pdf" },
-        { label: "Meet and Confer Letter re: Deficient Discovery Responses (June 16, 2026)", path: "/documents/matter-05/Meet and Confer Letter 061626.pdf" }
+        { label: "Meet and Confer Letter re: Deficient Discovery Responses (June 16, 2026)", path: "/documents/matter-05/Meet and Confer Letter 061626.pdf" },
+        { label: "Notice of Change of Address (filed July 7, 2026)", path: "/documents/matter-05/Notice of Change of Address (July 7, 2026).pdf" }
       ]
     },
     {
@@ -260,7 +264,8 @@ export const cases = [
         { label: "Candelaria Response & Reply to FAC", path: "/documents/matter-07/Candelaria R&R.pdf" },
         { label: "DMV Administrative Per Se Decision (Case 34739340, February 11, 2025, Hearing Officer Diana Candelaria)", path: "/documents/matter-07/DMV Decision.pdf" },
         { label: "Supplemental Declaration (Newanforbi v. Candelaria, FAC)", path: "/documents/matter-07/Supplemental Declaration Newanforbi v Candelaria.pdf" },
-        { label: "Objections to Findings & Recommendations (BOLSTERED 3)", path: "/documents/matter-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf" }
+        { label: "Objections to Findings & Recommendations (BOLSTERED 3)", path: "/documents/matter-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf" },
+        { label: "Notice of Change of Address (filed July 7, 2026)", path: "/documents/matter-07/Notice of Change of Address (July 7, 2026).pdf" }
       ]
     },
     {
@@ -291,7 +296,8 @@ export const cases = [
       ],
       documents: [
         { label: "Verified Petition for Writ of Administrative Mandate (May 18, 2026)", path: "/documents/matter-08/Newanforbi v. Candelaria Mandamus.pdf" },
-        { label: "Order on Court Fee Waiver — FW-003 (May 19, 2026)", path: "/documents/matter-08/FW-003_Fee_Waiver_Order.pdf" }
+        { label: "Order on Court Fee Waiver — FW-003 (May 19, 2026)", path: "/documents/matter-08/FW-003_Fee_Waiver_Order.pdf" },
+        { label: "Notice of Change of Address (filed July 7, 2026)", path: "/documents/matter-08/Notice of Change of Address (July 7, 2026).pdf" }
       ]
     },
     {
@@ -362,7 +368,8 @@ export const cases = [
         { label: "Proof of Service of Summons 5", path: "/documents/matter-12/1094 POS010 Proof of Service of Summons 5.pdf" },
         { label: "FullCourt Enterprise — Civil Case", path: "/documents/matter-12/FullCourt Enterprise - Civil Case.pdf" },
         { label: "FullCourt Enterprise — Civil ROA Summary", path: "/documents/matter-12/FullCourt Enterprise - Civil ROA Summary.pdf" },
-        { label: "DTS Default Judgment Packet", path: "/documents/matter-12/DTS Default Judgment Packet.pdf" }
+        { label: "DTS Default Judgment Packet", path: "/documents/matter-12/DTS Default Judgment Packet.pdf" },
+        { label: "Notice of Change of Address (filed July 7, 2026)", path: "/documents/matter-12/Notice of Change of Address (July 7, 2026).pdf" }
       ]
     },
     {
@@ -434,7 +441,8 @@ export const cases = [
         { label: "Complaint (5417)", path: "/documents/matter-15/5417 Complaint.pdf" },
         { label: "Notice of Case Assignment Scheduling Information", path: "/documents/matter-15/5417 Notice of Case Assignment Scheduling Information.pdf" },
         { label: "Clerk's Certificate of Service by Mail", path: "/documents/matter-15/5417 Clerk s Certificate of Service by Mail.pdf" },
-        { label: "Order on Court Fee Waiver (FW-003)", path: "/documents/matter-15/Newanforbi v. CDCR FW003 Order on Court Fee Waiver.pdf" }
+        { label: "Order on Court Fee Waiver (FW-003)", path: "/documents/matter-15/Newanforbi v. CDCR FW003 Order on Court Fee Waiver.pdf" },
+        { label: "Notice of Change of Address (filed July 7, 2026)", path: "/documents/matter-15/Notice of Change of Address (July 7, 2026).pdf" }
       ]
     },
     {
@@ -532,7 +540,8 @@ export const cases = [
         { label: "Summons on Petition (issued June 3, 2026)", path: "/documents/matter-20/Summons on Petition.pdf" },
         { label: "Notice of Case Management Conference (June 3, 2026)", path: "/documents/matter-20/Notice of Case Management Conference.pdf" },
         { label: "Request to Waive Court Fees (June 3, 2026)", path: "/documents/matter-20/Request to Waive Court Fees.pdf" },
-        { label: "Receipt (June 3, 2026)", path: "/documents/matter-20/RECEIPT.pdf" }
+        { label: "Receipt (June 3, 2026)", path: "/documents/matter-20/RECEIPT.pdf" },
+        { label: "Notice of Change of Address (filed July 7, 2026)", path: "/documents/matter-20/Notice of Change of Address (July 7, 2026).pdf" }
       ]
     },
     {
@@ -569,13 +578,13 @@ export const cases = [
       ]
     },
     {
-      number: 22, caption: "Newanforbi v. Pilot Travel Centers LLC", case_no: "TBD", court: "San Joaquin Sup. Ct.",
+      number: 22, caption: "Newanforbi v. Pilot Travel Centers LLC", case_no: "STK-CV-UWT-2026-0007649", court: "San Joaquin Sup. Ct.",
       claims: "PC §290.46(j) Violation, Wrongful Termination, FCRA, ICRAA, UCL §17200, IIED, NIED", status: "Filed 05/29/2026; demand pending; lawsuit filing deadline July 1, 2026 if demand not met",
       filed: "May 29, 2026", judge: "TBD", cluster: 3, type: "State",
       defendants: "Pilot Travel Centers LLC (Delaware LLC d/b/a Pilot Flying J, Knoxville, TN)",
       causes: ["Violation of Penal Code Section 290.46(j) — Unlawful Use of Sex Offender Registry Information for Employment", "Wrongful Termination in Violation of Public Policy (Tameny)", "Violation of Fair Credit Reporting Act (15 U.S.C. §1681 et seq.)", "Violation of California Investigative Consumer Reporting Agencies Act (Civ. Code §1786 et seq.)", "Unfair Business Practices (Bus. & Prof. Code §17200)", "Intentional Infliction of Emotional Distress", "Negligent Infliction of Emotional Distress"],
       key_facts: "Plaintiff, facing severe financial hardship (phone disconnected due to inability to pay), applied repeatedly to Defendant Pilot Travel Centers. Defendant's recruiter Brian O'Toole confirmed Plaintiff's 'qualifications and experience are a potential fit.' On December 10, 2025, Defendant extended written offer for Guest Services Leader position at Lodi Travel Center (Store 617): $24.00/hr, $500 sign-on bonus, health/dental/vision benefits, 401(k) with employer matching, PTO and life insurance, effective December 15, 2025. Offer expressly contingent on 'satisfactory background check.' Plaintiff disclosed his financial hardship directly to O'Toole (December 1, 2025): 'Unfortunately, I have fell on hard times financially and I am in need of help. Well, namely I need a job. My phone is disconnected because of this reason.' On December 15, 2025, Defendant assigned Plaintiff Employee ID 573787, welcomed him to 'the Pilot family,' completed onboarding, and Plaintiff commenced active employment, working regular shifts and receiving weekly paychecks: Dec. 19 ($425.67), Dec. 29 ($915.29), Jan. 5, 2026 ($857.26), Jan. 9 ($426.11), Jan. 23 ($48.69 — final partial paycheck). Total gross wages earned: approximately $2,673.02. On December 15, 2025, Defendant initiated background check through vendor Checkr, Inc. On December 23, 2025, Checkr completed report (Report ID: 43f3d4df15540eaf0ba009f3) for Requestor Company: Pilot Travel Centers LLC. Overall status: 'Consider' (not disqualifying). County criminal searches in all four jurisdictions (San Joaquin, Washoe NV, Santa Clara, Sheridan WY) returned 'Clear' — no criminal convictions, pending charges, or court records of any kind. The sole flagged item: 'CA SEX OFFENDER REGISTRY' listing. The Checkr report itself contained a prominent California-specific statutory disclaimer informing Defendant that the report 'does not guarantee accuracy or truthfulness' and that information 'may be inaccurately associated with the consumer.' On December 30, 2025, while Plaintiff was actively employed and in good standing, Defendant issued Post-Adverse Action Notice by email from backgroundcheck@pilottravelcenters.com, stating: 'We regret to inform you that your report does not meet Pilot Travel Centers LLC (the 'Company') standards. This decision was based in whole or in part on information contained in a report, including the following specific items contained in the report prepared by Checkr, Inc. ... REGISTRATION IN CA SEX OFFENDER REGISTRY.' Defendant did not cite any criminal conviction, any job-related safety concern, or invoke the narrow 'protect a person at risk' exception of PC §290.46(j)(1). Defendant cited one thing and one thing only: registry status. California Penal Code Section 290.46(j)(2)(E), enacted as part of Megan's Law, categorically prohibits the use of registry information 'for purposes relating to ... Employment ... ' The statute makes absolutely unlawful the practice Defendant engaged in. Defendant is a sophisticated, Fortune 500-level corporate employer with a dedicated background check department and in-house legal counsel, operating hundreds of locations across California. The Checkr report explicitly warned Defendant about the statutory prohibition. Defendant's conduct was willful, knowing, and deliberate — not inadvertent or a mistake of law.",
-      procedural_status: "Complaint filed pro se May 29, 2026 in San Joaquin Superior Court. Case number not yet assigned (marked TBD on filing). Judge TBD. Demand letter sent via Certified Mail on June 2, 2026 (USPS Tracking #9589 0710 5270 3567 3286 45) to Eva Rigamonti, Esq., Executive Vice President & Chief Legal Officer, Pilot Travel Centers LLC, Legal Department, 5508 Lonas Drive, Knoxville, TN 37909. Lawsuit filing deadline July 1, 2026 if demand not met. Early stage.",
+      procedural_status: "Complaint filed pro se May 29, 2026 in San Joaquin Superior Court; case number now assigned as STK-CV-UWT-2026-0007649. Judge TBD. Demand letter sent via Certified Mail on June 2, 2026 (USPS Tracking #9589 0710 5270 3567 3286 45) to Eva Rigamonti, Esq., Executive Vice President & Chief Legal Officer, Pilot Travel Centers LLC, Legal Department, 5508 Lonas Drive, Knoxville, TN 37909. Lawsuit filing deadline July 1, 2026 if demand not met. Early stage. July 7, 2026: Notice of Change of Address filed reflecting Plaintiff's relocation to Milpitas, CA.",
       damages: "CONSERVATIVE TIER (Defense View / Early Settlement Range): $220,000–$375,000 damages exposure; likely settlement $125,000–$200,000. Past lost wages $12,000–$17,000. Future lost wages $30,000–$50,000 (fast mitigation, 6–12 months). Lost bonus + benefits $15,000–$20,000. Treble multiplier $180,000–$255,000. Civil penalty §290.46(k) $10,000. Emotional distress/IIED $25,000–$50,000. FCRA/ICRAA statutory $5,000–$10,000. Punitive damages exposure $0–$50,000. MODERATE TIER (Realistic Settlement / Mid-Verdict): $525,000–$800,000 damages exposure; likely settlement $225,000–$300,000. Past lost wages $17,000–$20,000. Future lost wages $80,000–$100,000 (24 months). Lost bonus + benefits $25,000–$30,000. Treble multiplier $375,000–$450,000. Civil penalty §290.46(k) $15,000–$25,000. Emotional distress/IIED $75,000–$150,000. FCRA/ICRAA statutory $10,000–$25,000. Punitive damages exposure $50,000–$150,000. AGGRESSIVE TIER (High-End Jury Exposure): $1,000,000–$1,725,000+ damages exposure; jury verdict potential $400,000–$600,000+. Past lost wages $20,000–$25,000. Future lost wages $150,000–$250,000 (3+ years). Lost bonus + benefits $30,000–$35,000. Treble multiplier $600,000–$900,000. Civil penalty §290.46(k) $25,000. Emotional distress/IIED $150,000–$250,000+. FCRA/ICRAA statutory $25,000–$50,000. Punitive damages exposure $200,000–$500,000+. ATTORNEY FEES NOTE: Retaining counsel adds $100,000–$300,000+ by trial under §290.46(l), FCRA, ICRAA (fee-shifting statutes); substantial settlement leverage. NON-MONETARY RELIEF (across all tiers): Policy correction, record expungement, neutral reference letter, statewide employment policy change at all Pilot California locations. First Cause of Action (PC §290.46(j)): Actual damages trebled per §290.46(l); civil penalty per §290.46(k); attorney's fees and costs per §290.46(l). Second Cause of Action (Wrongful Termination): Compensatory damages for lost past and future wages plus lost benefits; general damages for emotional distress and humiliation; punitive damages per Civ. Code §3294 for willful, oppressive conduct. Third Cause of Action (FCRA): Actual or statutory damages per 15 U.S.C. §1681n; punitive damages; attorney's fees and costs. Fourth Cause of Action (ICRAA): Actual damages; punitive damages for willful violations per Civ. Code §1786.50; attorney's fees and costs. Fifth Cause of Action (UCL): Restitution of all wages and benefits Plaintiff would have earned; injunctive relief ordering Defendant to cease using sex offender registry information for employment purposes at all California locations. Sixth Cause of Action (IIED): Compensatory damages for severe emotional distress; punitive damages per §3294. Seventh Cause of Action (NIED): Compensatory damages for severe emotional distress. All Causes: Prejudgment interest at legal rate; costs of suit; attorney's fees where authorized by statute.",
       risk: "Extremely favorable. Defendant's own Post-Adverse Action Notice is a smoking gun — explicit written admission that sole basis for termination was registry status. PC §290.46(j)(2)(E) unambiguously prohibits this use. No exception applies. The statute is per se violation; no qualified immunity defenses available (state law, private employer). Defendant received statutory warning from Checkr but proceeded anyway. The county criminal searches were 'Clear' (no convictions, no safety predicate). Defendant hired, onboarded, paid, and then terminated Plaintiff within 15 days during the holiday season after learning of registry status while employee was actively working — strong emotional distress showing and evidence of bad faith. Plaintiff disclosed severe financial hardship to recruiter — Defendant knew the job was a lifeline. Timing and manner of termination (email between Christmas and New Year's) exemplifies extreme and outrageous conduct under IIED standard. No comparators or legitimate basis to distinguish registry status from other factors — the registry listing was the sole identified basis. FCRA and ICRAA violations flow directly from using legally prohibited information. Punitive damages supportable under §3294 — Defendant is large corporation with resources to know the law; conduct continued despite statutory warning; willful, conscious disregard for Plaintiff's rights.",
       evidence: [
@@ -599,7 +608,8 @@ export const cases = [
         { label: "Complaint for Damages (filed 05/29/2026)", path: "/documents/matter-22/Newanforbi v. Pilot Travel Centers LLC.pdf" },
         { label: "Offer Letter (Dec. 10, 2025)", path: "/documents/matter-22/offer_letter_2025-12-10.pdf" },
         { label: "Post-Adverse Action Notice (Dec. 30, 2025)", path: "/documents/matter-22/Post-adverse action notice - Pilot Travel Centers LLC 2.pdf" },
-        { label: "Demand Letter (undated)", path: "/documents/matter-22/Demand Letter Newanforbi v Pilot Travel Centers.pdf" }
+        { label: "Demand Letter (undated)", path: "/documents/matter-22/Demand Letter Newanforbi v Pilot Travel Centers.pdf" },
+        { label: "Notice of Change of Address (filed July 7, 2026)", path: "/documents/matter-22/Notice of Change of Address (July 7, 2026).pdf" }
       ]
     },
     {
@@ -665,7 +675,8 @@ export const cases = [
         { label: "Filed Complaint (Doc. 1) and ISC Order Setting CMC & ADR Deadlines (Doc. 4) — Case No. 4:26-cv-05953-ASK, Filed June 17, 2026", path: "/documents/matter-24/1 2.pdf" },
         { label: "ISC Order and Magistrate Judge Consent/Declination Form — N.D. Cal. (Case No. 4:26-cv-05953-ASK)", path: "/documents/matter-24/ND Cal ISC and Magistrate Consent form.pdf" },
         { label: "In Forma Pauperis (IFP) Application — N.D. Cal.", path: "/documents/matter-24/Nd Cal IFP Application.pdf" },
-        { label: "Proposed Summons — N.D. Cal. (Captain G. Serrato)", path: "/documents/matter-24/Nd Cal Proposed Summons.pdf" }
+        { label: "Proposed Summons — N.D. Cal. (Captain G. Serrato)", path: "/documents/matter-24/Nd Cal Proposed Summons.pdf" },
+        { label: "Notice of Change of Address (filed July 7, 2026)", path: "/documents/matter-24/Notice of Change of Address (July 7, 2026).pdf" }
       ]
     }
 ];
