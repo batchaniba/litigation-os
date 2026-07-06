@@ -496,7 +496,8 @@ export const cases = [
       damages: "Equitable: Immediate unconditional discharge from parole, effective Dec. 2, 2025. Government Tort Claim presented Feb. 10, 2026 preserves a separate damages track for the unlawful restraint.", risk: "Habeas exhaustion and ripeness arguments (addressed via futility, pure-question-of-law, and inadequacy-of-Form-602 doctrines); Matter 10 OSC still pending — courts may consolidate or sequence; successive-petition doctrine argument re: the Aug. 27, 2025 Geffon denial, distinguished on the ground that this petition raises new claims under the newly effective §3574 and the Dec. 1, 2025 denial.",
       evidence: ["Form 1502-DR (Discharge Review Report, Dec. 1, 2025) — 10 defects", "LS/CMI documentation (score 5 vs. threshold 11), CSRA score 2, Stable-2007 score 6", "15 CCR §3574 and CDCR Form 3043", "In re Dwyer order (San Mateo Super. Ct. No. SC-080355A/HC-3020, Mar. 20, 2023)", "Centerline Wage Reference", "FedEx Office employment documentation (Mar.–Apr. 2025)", "ACSOL v. Macomber (Sacramento Super. Ct. No. 23STCP02378)", "Prior habeas petition record — denied by Judge Geffon, Aug. 27, 2025", "Government Tort Claim (presented Feb. 10, 2026)", "PC §3000/§3001 parole term records; parole history since Dec. 2, 2020", "Same administrative record as Matters 9, 10, 11, 15"],
       documents: [
-        { label: "Petition for Writ of Habeas Corpus — Immediate Discharge from Parole (signed Mar. 31, 2026; filed Apr. 3, 2026)", path: "/documents/matter-19/Petition for Writ of Habeas Corpus (filed Apr. 3, 2026).pdf" }
+        { label: "Petition for Writ of Habeas Corpus — Immediate Discharge from Parole (signed Mar. 31, 2026; filed Apr. 3, 2026)", path: "/documents/matter-19/Petition for Writ of Habeas Corpus (filed Apr. 3, 2026).pdf" },
+        { label: "Notice of Change of Address (filed July 7, 2026)", path: "/documents/matter-19/Notice of Change of Address (July 7, 2026).pdf" }
       ]
     },
     {
