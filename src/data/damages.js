@@ -1,13 +1,12 @@
 export const damages_table = [
-    { category: "Lost Wages / Economic Harm", matters: "1, 2, 3, 5, 7, 15, 22, 23", conservative: 300000, moderate: 625000, aggressive: 1000000 },
+    { category: "Lost Wages / Economic Harm", matters: "1, 2, 3, 5, 7, 15, 22", conservative: 275000, moderate: 580000, aggressive: 935000 },
     { category: "False Imprisonment", matters: "1, 2, 15", conservative: 65000, moderate: 165000, aggressive: 325000 },
-    { category: "Emotional Distress", matters: "1, 2, 3, 5, 7, 15, 22, 23, 24", conservative: 100000, moderate: 275000, aggressive: 600000 },
+    { category: "Emotional Distress", matters: "1, 2, 3, 5, 7, 15, 22, 24", conservative: 85000, moderate: 240000, aggressive: 535000 },
     { category: "Bane Act / Treble", matters: "1, 2, 5", conservative: 75000, moderate: 200000, aggressive: 450000 },
-    { category: "Punitive Damages", matters: "1, 2, 3, 5, 7, 15, 22, 23, 24", conservative: 175000, moderate: 625000, aggressive: 1600000 },
+    { category: "Punitive Damages", matters: "1, 2, 3, 5, 7, 15, 22, 24", conservative: 165000, moderate: 595000, aggressive: 1500000 },
     { category: "Consumer Fraud", matters: "12", conservative: 40000, moderate: 75000, aggressive: 150000 },
-    { category: "Attorneys' Fees", matters: "1, 3, 5, 7, 22, 23, 24", conservative: 55000, moderate: 125000, aggressive: 300000 },
+    { category: "Attorneys' Fees", matters: "1, 3, 5, 7, 22, 24", conservative: 50000, moderate: 110000, aggressive: 260000 },
     { category: "PC §290.46(j) Violation + Wrongful Termination (Matter 22)", matters: "22", conservative: 220000, moderate: 525000, aggressive: 1000000 },
-    { category: "PC §290.46(j) Violation + Employment Discrimination (Matter 23)", matters: "23", conservative: 150000, moderate: 375000, aggressive: 750000 },
     { category: "42 USC §1983 — Arbitrary U Visa Certification Denial & Retaliation (Matter 24)", matters: "24", conservative: 75000, moderate: 200000, aggressive: 450000 }
 ];
 
@@ -147,24 +146,6 @@ export const matter_damages = [
             { label: "FCRA / ICRAA Statutory", conservative: 10000, moderate: 20000, aggressive: 40000 },
             { label: "Civil Penalty §290.46(k)", conservative: 10000, moderate: 20000, aggressive: 25000 },
             { label: "Punitive", conservative: 15000, moderate: 30000, aggressive: 70000 }
-        ]
-    },
-    {
-        number: 23,
-        caption: "Newanforbi v. Macy's Inc.",
-        court: "San Joaquin Sup. Ct.",
-        claims: "PC §290.46(j), Wrongful Rejection, FCRA, ICRAA, UCL, IIED",
-        status: "Pre-litigation / complaint filed; adverse action received",
-        risk: "Extremely favorable — HireRight report itself contains the statutory warning; all criminal records Clear; Fortune 500 defendant",
-        settlement_note: "Earlier causal chain than Matter 22; faster resolution anticipated; HireRight as co-defendant creates cross-claim leverage",
-        conservative: 150000, moderate: 375000, aggressive: 750000,
-        components: [
-            { label: "Economic (wages + benefits)", conservative: 60000, moderate: 120000, aggressive: 220000 },
-            { label: "PC §290.46(l) Treble Add-On", conservative: 50000, moderate: 165000, aggressive: 360000 },
-            { label: "Emotional Distress / IIED", conservative: 25000, moderate: 65000, aggressive: 120000 },
-            { label: "FCRA / ICRAA Statutory", conservative: 5000, moderate: 15000, aggressive: 35000 },
-            { label: "Civil Penalty §290.46(k)", conservative: 5000, moderate: 5000, aggressive: 10000 },
-            { label: "Punitive", conservative: 5000, moderate: 5000, aggressive: 5000 }
         ]
     },
     {
