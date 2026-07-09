@@ -69,7 +69,7 @@ export const matter_damages = [
         caption: "Newanforbi v. Palacios et al.",
         court: "San Joaquin Sup. Ct.",
         claims: "Fraud, Negligence Per Se, IIED, IIEPEA, Bane Act, UCL",
-        status: "Demurrer hearing July 15, 2026; discovery ongoing",
+        status: "Reply filed 07/07/2026; demurrer hearing July 15, 2026 — IMMINENT",
         risk: "Favorable — private defendants, no immunity; Palacios video admission near-dispositive on fraud scienter",
         settlement_note: "Strongest single-matter liability in portfolio; HOPE financial motive documented ($10,600/yr per retained parolee)",
         conservative: 225000, moderate: 575000, aggressive: 1150000,
