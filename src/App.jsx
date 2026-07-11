@@ -9,9 +9,10 @@ import { MattersTab } from "./components/MattersTab";
 import { TimelineTab } from "./components/TimelineTab";
 import { DamagesTab } from "./components/DamagesTab";
 import { TheoriesTab } from "./components/TheoriesTab";
+import { CostOfCounselTab } from "./components/CostOfCounselTab";
 import { ThemeContext, THEMES } from "./ThemeContext";
 
-const tabs = ["Dashboard", "Matters", "Timeline", "Damages", "Theories"];
+const tabs = ["Dashboard", "Matters", "Timeline", "Damages", "Theories", "Cost of Counsel"];
 
 export default function LitigationPortfolio() {
   const [darkMode, setDarkMode] = useState(true);
@@ -122,6 +123,7 @@ export default function LitigationPortfolio() {
         {activeTab === "Timeline"  && <TimelineTab showPastEvents={showPastEvents} setShowPastEvents={setShowPastEvents} />}
         {activeTab === "Damages"   && <DamagesTab damagesView={damagesView} setDamagesView={setDamagesView} />}
         {activeTab === "Theories"  && <TheoriesTab />}
+        {activeTab === "Cost of Counsel" && <CostOfCounselTab />}
       </div>
 
       {/* Footer */}
