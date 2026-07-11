@@ -140,6 +140,19 @@ export const DashboardTab = ({ upcomingEvents, setClusterFilter, setActiveTab })
         </div>
       </div>
 
+      {/* Milestone: First Settlement */}
+      <div style={{ background: `linear-gradient(135deg, ${GOLD}15, ${GOLD}08)`, borderRadius: 10, padding: 24, border: `2px solid ${GOLD}40`, marginBottom: 16 }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
+          <div style={{ fontSize: 32, lineHeight: 1 }}>💰</div>
+          <div>
+            <h3 style={{ fontSize: 18, fontWeight: 700, color: GOLD, margin: "0 0 6px", fontFamily: "'DM Sans', sans-serif", letterSpacing: 0.5 }}>First Case to Settle</h3>
+            <p style={{ margin: 0, fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: theme.secondaryText, lineHeight: 1.4 }}>
+              Matter 22 became the first matter in this portfolio to reach a negotiated settlement — resolved pro se, without counsel, in under six weeks from filing.
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* Milestone: First Interstate Case */}
       <div style={{ background: `linear-gradient(135deg, ${GOLD}15, ${GOLD}08)`, borderRadius: 10, padding: 24, border: `2px solid ${GOLD}40`, marginBottom: 28 }}>
         <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
