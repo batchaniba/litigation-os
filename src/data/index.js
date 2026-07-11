@@ -2,6 +2,7 @@ import { cases } from "./matters";
 import { timeline } from "./timeline";
 import { theories } from "./theories";
 import { damages_table, matter_damages } from "./damages";
+import { lawyer_fees, lawyer_fees_summary } from "./lawyerFees";
 
 export const PORTFOLIO = {
   plaintiff: "Brendan Ngehsi Newanforbi",
@@ -14,4 +15,6 @@ export const PORTFOLIO = {
   theories,
   damages_table,
   matter_damages,
+  lawyer_fees,
+  lawyer_fees_summary,
 };
