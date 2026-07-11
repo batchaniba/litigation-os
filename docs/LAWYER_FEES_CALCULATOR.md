@@ -1,6 +1,18 @@
 # Granular Litigation Fee Calculator
-## Brendan Ngehsi Newanforbi — 21 Matters Portfolio
-### Analysis Date: May 29, 2026
+## Brendan Ngehsi Newanforbi — 24 Matters Portfolio
+### Analysis Date: July 11, 2026 (full revision of the May 29, 2026 draft)
+
+---
+
+## What changed in this revision
+
+The May 29, 2026 draft estimated document lengths by description ("664-page complaint," "712-page CASOMB complaint," "396-page DS2044 discovery"). Those figures do not match the files actually sitting in `public/documents/matter-XX/`. This revision:
+
+1. Ran `pdfinfo` (poppler-utils) against every one of the **203 real PDF files** across all 24 matter folders to get exact page counts — no filename-based guessing.
+2. Dispatched five parallel analysis passes (one per case cluster) to classify each real file by document type (complaint, motion/opposition/reply, discovery, writ/habeas, declaration, administrative, evidence) and price it against the rate methodology below.
+3. Added the 3 matters that didn't exist in the prior draft (Matters 22, 23, 24) and corrected status for 8 matters voluntarily dismissed since May 29 (Matters 4, 11, 13, 16, 17, 18, 21, plus Matter 6 dismissed without prejudice and Matter 22 now **settled**, July 11, 2026).
+
+**Net effect: the portfolio-wide estimate drops from $1.44M–$2.23M (mid $1.83M) to $646K–$1.04M (mid $845K).** The single biggest driver is that several "signature" documents referenced by description in the old draft (Matter 3's 664-page complaint, Matter 5's 712-page complaint) simply are not among the uploaded PDFs — the real complaints in those matters run well under 100 pages each.
 
 ---
 
@@ -10,593 +22,130 @@
 - **Senior Partner/Complex Litigation:** $350–$450/hr (motion practice, appeals)
 - **Associate/Mid-Level:** $250–$350/hr (pleadings, discovery, trial prep)
 - **Paralegal/Support:** $150–$200/hr (document review, organization)
+- **Blended average used throughout:** $280/hr
+
+**Billing principles applied by every analysis pass:**
+- Opposing counsel's own filings (their MTDs, demurrers, replies) are billed only at a light review rate, never at drafting rate — a lawyer hired by the plaintiff drafts the plaintiff's filings, not the defendant's.
+- Near-duplicate/re-filed copies of the same document (e.g., two identical scanned copies of a writ petition) are billed once at full rate, with only incremental hours for the duplicate.
+- Large PDFs that are discovery dumps, exhibit compilations, or scanned evidence bundles are billed at a lighter review/compilation rate (~0.3–0.5 hr/page), never at complaint-drafting rate, regardless of raw page count.
+- Writ of mandate and habeas corpus petitions are billed as flat specialized-practice blocks (40–80 hrs) rather than per page.
+- Matters with no uploaded PDFs (4, 11, 13, 17, 18) are estimated conservatively from `matters.js` status/procedural-history text — not assumed to be zero-cost, since a complaint was in fact filed in each.
 
 **Work Unit Conversions:**
-- **Complaint/Major Pleading:** ~2–3 hours per 10 pages (research, drafting, revisions, filing)
-- **Motion Briefing (3-document set):** ~4–6 hours per 10 pages (research, legal analysis, opponent analysis)
-- **Discovery Responses:** ~1.5–2 hours per 10 pages (review documents, organize, prepare declarations)
-- **Declarations/Affidavits:** ~1–2 hours per declaration (review, draft, refine)
-- **Motion Practice (MTD, Demurrer, M4L):** 40–80 hours per motion (research, briefing, opposition, reply)
-- **Writ Petitions:** 50–80 hours (specialized admin law work)
-- **Case Management/Administrative:** 5–10 hours per matter (docket management, notice filings, service)
+- **Complaint/major pleading:** ~2–3 hrs per page (research, drafting, revisions, filing)
+- **Motion briefing (MTD/demurrer/M4L, opposition, reply):** ~0.6–1.2 hrs per page, or 40–80 hr flat blocks for large integrated filings
+- **Discovery responses:** ~0.3–0.5 hrs per page
+- **Declarations/short filings:** ~1–2 hrs per document (not per page)
+- **Writ petitions / habeas corpus:** 40–80 hrs flat (specialized administrative/procedural law)
+- **Administrative/notices/case-management filings:** 0.5–2 hrs per document, not per page
+- **Evidence/exhibit compilation:** ~0.3–0.5 hrs/page
 
 ---
 
-## MATTERS WITH SUBSTANTIVE PLEADINGS
+## Per-Matter Estimates (ground-truth page counts)
 
-### **Matter 1: Newanforbi v. CHP et al. — Federal §1983**
-**Case No.:** 2:25-cv-01460-DC-CSK (USDC E.D. Cal.)  
-**Status:** MTD briefing; ruling pending  
-**Documents:** 22 files, 13MB
+| # | Caption | Court | Docs | Real Pages | Hours (low–high) | Cost Low | Cost Mid | Cost High |
+|---|---|---|---|---|---|---|---|---|
+| 1 | Newanforbi v. CHP et al. | USDC E.D. Cal. | 23 | 108 | 48–85 | $13,552 | $18,704 | $23,856 |
+| 2 | Newanforbi v. Meza-Gonzalez et al. | Alameda Sup. Ct. | 16 | 111 | 68–117 | $19,152 | $25,900 | $32,648 |
+| 3 | Newanforbi v. Derrick et al. | USDC E.D. Cal. | 26 | 290 | 191–352 | $53,424 | $75,936 | $98,448 |
+| 4 | Newanforbi v. Derrick et al. (State Mirror) | San Joaquin Sup. Ct. | 0* | 0* | 42–94 | $11,620 | $18,970 | $26,320 |
+| 5 | Newanforbi v. Palacios et al. | San Joaquin Sup. Ct. | 33 | 821 | 420–683 | $117,628 | $154,406 | $191,184 |
+| 6 | Newanforbi v. HOPE et al. | USDC E.D. Cal. | 4 | 101 | 193–292 | $54,040 | $67,900 | $81,760 |
+| 7 | Newanforbi v. Candelaria | USDC E.D. Cal. | 16 | 181 | 185–288 | $51,688 | $66,150 | $80,612 |
+| 8 | Newanforbi v. Candelaria, et al. | Sacramento Sup. Ct. | 2 | 88 | 51–81 | $14,140 | $18,410 | $22,680 |
+| 9 | Newanforbi v. Macomber (Writ) | Sacramento Sup. Ct. | 9 | 179 | 65–116 | $18,200 | $25,340 | $32,480 |
+| 10 | Newanforbi v. Macomber (Habeas) | Santa Clara Sup. Ct. | 2 | 3 | 41–72 | $11,340 | $15,750 | $20,160 |
+| 11 | Newanforbi v. Macomber (Federal) | USDC E.D. Cal. | 0* | 0* | 31–76 | $8,540 | $14,910 | $21,280 |
+| 12 | Ngwa Nforbi v. Diamond Truck Sales | San Joaquin Sup. Ct. | 17 | 131 | 136–220 | $38,080 | $49,840 | $61,600 |
+| 13 | Newanforbi v. Urrea et al. (Federal) | USDC E.D. Cal. | 0* | 0* | 31–76 | $8,540 | $14,910 | $21,280 |
+| 14 | Newanforbi v. Urrea et al. (State) | San Joaquin Sup. Ct. | 1 | 28 | 70–95 | $19,600 | $23,100 | $26,600 |
+| 15 | Newanforbi v. CDCR, et al. | San Joaquin Sup. Ct. | 17 | 445 | 300–418 | $84,000 | $100,520 | $117,040 |
+| 16 | Newanforbi v. Rojo | San Joaquin Sup. Ct. | 1 | 32 | 64–80 | $17,920 | $20,160 | $22,400 |
+| 17 | Newanforbi v. Maloney et al. | USDC E.D. Cal. | 0* | 0* | 56–80 | $15,680 | $19,040 | $22,400 |
+| 18 | Newanforbi v. Barocio | USDC E.D. Cal. | 0* | 0* | 55–75 | $15,400 | $18,200 | $21,000 |
+| 19 | Newanforbi v. Macomber (Habeas, Discharge) | Santa Clara Sup. Ct. | 2 | 69 | 41–72 | $11,340 | $15,750 | $20,160 |
+| 20 | Newanforbi v. CHP (Writ of Mandate) | Alameda Sup. Ct. | 18 | 390 | 81–138 | $22,624 | $30,618 | $38,612 |
+| 21 | Newanforbi v. Rojo et al. (Federal) | USDC E.D. Cal. | 1 | 9 | 28–41 | $7,840 | $9,660 | $11,480 |
+| 22 | Newanforbi v. Pilot Travel Centers LLC | San Joaquin Sup. Ct. | 7 | 47 | 62–102 | $17,360 | $22,960 | $28,560 |
+| 23 | Newanforbi v. Macy's Inc. et al. | San Joaquin Sup. Ct. | 2 | 11 | 4–8 | $1,120 | $1,680 | $2,240 |
+| 24 | Newanforbi v. Serrato | USDC N.D. Cal. | 6 | 58 | 47–72 | $13,020 | $16,590 | $20,160 |
 
-#### Document Analysis:
-| Document | Pages | Work Type | Est. Hours |
-|---|---|---|---|
-| Initial Complaint | 52 | Major pleading (federal) | 120–150 |
-| CHP Motion to Dismiss | 124 | Opposition brief required | 60–80 |
-| Opposition to MTD | 53 | Substantive brief | 80–120 |
-| Reply to Opposition | 69 | Complex reply brief | 60–100 |
-| Discovery Responses (DS2044) | 396 | Discovery responses | 80–120 |
-| Discovery Responses (other) | 179 | Follow-up discovery | 40–60 |
-| Video Transcript (Exhibit A) | 36 | Evidence compilation | 20–30 |
-| Support documents | ~50 | Declarations, notices, orders | 30–50 |
-
-**Total Pages:** ~1,459  
-**Estimated Total Hours:** 490–710 hours  
-**Estimated Cost at Blended Rate ($280/hr avg):**  
-- **Low:** $137,200
-- **High:** $198,800
-- **Mid-Point: $168,000**
-
-**Notes:**  
-- Heavy federal procedural work (magistrate judge consents, scheduling orders, e-filing management)
-- Substantial discovery burden (DS2044 notification = 396 pages of potential responsive documents)
-- Video evidence compilation and analysis for DUI/traffic stop context
-
----
-
-### **Matter 2: Newanforbi v. Meza-Gonzalez et al. — State Tort**
-**Case No.:** 26CV168913 (Alameda Sup. Ct.)  
-**Status:** STAYED pending federal MTD resolution  
-**Documents:** 13 files, 13MB
-
-#### Document Analysis:
-| Document | Pages | Work Type | Est. Hours |
-|---|---|---|---|
-| State Complaint | ~40 | State pleading (parallel to federal) | 80–120 |
-| Fee Waiver Application | ~10 | Miscellaneous | 5–10 |
-| Ex Parte Application (Extension) | ~40 | Motion/briefing | 30–50 |
-| Discovery Materials (shared with Matter 1) | ~395 | Discovery responses | 60–100 |
-| Case Management Documents | ~30 | Administrative | 10–15 |
-
-**Total Pages:** ~515  
-**Estimated Total Hours:** 185–295 hours  
-**Estimated Cost at Blended Rate ($280/hr avg):**  
-- **Low:** $51,800
-- **High:** $82,600
-- **Mid-Point: $67,200**
-
-**Notes:**  
-- Parallel state action tied to Matter 1 (CHP traffic stop)
-- Significant overlap with Matter 1 discovery and evidence
-- Fee waiver application required (pro se + minimal resources)
+\* No documents folder exists in `public/documents/` for this matter — a complaint was filed and later voluntarily dismissed, but was never uploaded to the portfolio site. Estimated from `matters.js` status/procedural-history text.
 
 ---
 
-### **Matter 3: Newanforbi v. Derrick et al. — Federal §1983 Retaliation**
-**Case No.:** 2:26-cv-00004-DJC-JDP (USDC E.D. Cal.)  
-**Status:** MTD (Doc 24) under submission; 5/28/2026 hearing vacated  
-**Documents:** 25 files, 11MB
+## Aggregate Cost Summary
 
-#### Document Analysis:
-| Document | Pages | Work Type | Est. Hours |
-|---|---|---|---|
-| Initial Complaint | 664 | **MAJOR FEDERAL COMPLAINT** | 250–350 |
-| Motion to Quash Service (MTQ) | 685 | Complex motion + supporting docs | 150–200 |
-| Opposition to MTQ | 42 | Response brief | 60–90 |
-| FAC (First Amended Complaint) | 227 | Amendment post-motion | 100–150 |
-| Motion for Leave to Amend | 57 | Procedural motion | 30–50 |
-| Opposition to M4L | 70 | Substantive opposition | 60–90 |
-| Support Declarations (4) | ~60 | Declarations from comparator witnesses, etc. | 40–80 |
-| Service/Notice Documents | ~50 | Re-service, notices | 20–30 |
+### By Cluster
 
-**Total Pages:** ~1,755  
-**Estimated Total Hours:** 770–1,030 hours  
-**Estimated Cost at Blended Rate ($280/hr avg):**  
-- **Low:** $215,600
-- **High:** $288,400
-- **Mid-Point: $252,000**
-
-**Notes:**  
-- **Heaviest federal case to date**: 664-page initial complaint with detailed First Amendment retaliation allegations
-- 685-page Motion to Quash Service indicates vigorous defense and complex jurisdictional/service arguments
-- FAC + M4L sequence adds procedural complexity
-- Multiple declarations from named defendants and comparator witnesses
-- Extensive factual record required for retaliation claim
-
----
-
-### **Matter 5: Newanforbi v. Palacios et al. — State HOPE Program Challenge**
-**Case No.:** STK-CV-UF-2026-0001032 (San Joaquin Sup. Ct.)  
-**Status:** Demurrer filed 05/22/2026; hearing 07/15/2026  
-**Documents:** 16 files, 48MB
-
-#### Document Analysis:
-| Document | Pages | Work Type | Est. Hours |
-|---|---|---|---|
-| BBS Complaint (Palacios LMFT) | 89 | Initial state complaint | 60–100 |
-| CASOMB Complaint (HOPE Program) | 712 | **COMPREHENSIVE COMPLAINT** | 250–350 |
-| Complaint Continuation Sheet | 96 | Additional allegations | 30–50 |
-| Demurrer Response (Opposition) | ~100 | Demurrer opposition brief | 80–120 |
-| Demurrer RJN Materials | ~50 | Request for Judicial Notice | 20–40 |
-| Evidentiary Objections | ~25 | Objections to defendant RJN | 15–30 |
-| Declarations | ~30 | Supporting declarations | 20–40 |
-| FAC/Notice/Summons | ~40 | Procedural documents | 10–20 |
-| Support Materials | ~50 | Admin, fee waivers, filings | 10–20 |
-
-**Total Pages:** ~1,192  
-**Estimated Total Hours:** 495–770 hours  
-**Estimated Cost at Blended Rate ($280/hr avg):**  
-- **Low:** $138,600
-- **High:** $215,600
-- **Mid-Point: $177,100**
-
-**Notes:**  
-- **712-page complaint** targeting HOPE's fee-for-service structure, clinical retaliation, and Palacios (LMFT provider) misconduct
-- Complex damages calculation (documented wage losses across 6 CDL carriers)
-- Demurrer briefing required (state-level motion practice)
-- RJN materials suggest heavy reliance on *In re Dwyer* precedent and regulatory framework
-
----
-
-### **Matter 6: Newanforbi v. HOPE et al. — Federal (DISMISSED WITHOUT PREJUDICE 5/21/2026; Minute Order 6/1/2026)**
-**Case No.:** 2:26-cv-00195-TLN-AC (USDC E.D. Cal.)  
-**Status:** Dismissed without prejudice (Notice of Voluntary Dismissal filed 5/21/2026; Minute Order entered 6/1/2026 by Chief District Judge Troy L. Nunley); case closed; refiling preserved  
-**Documents:** 5 files, 2.4MB
-
-#### Document Analysis:
-| Document | Pages | Work Type | Est. Hours |
-|---|---|---|---|
-| Initial Complaint | ~50 | Federal complaint (HOPE program) | 100–150 |
-| First Amended Complaint | ~30 | Amendment (narrowed to HOPE & Macomber) | 40–60 |
-| Notice of Related Cases | 41 | Administrative | 5–10 |
-| Notice of Voluntary Dismissal | ~10 | Procedural | 5–10 |
-| Minute Order (Dismissal) | ~2 | Court order | 0 |
-
-**Total Pages:** ~133  
-**Estimated Total Hours:** 150–230 hours  
-**Estimated Cost at Blended Rate ($280/hr avg):**  
-- **Low:** $42,000
-- **High:** $64,400
-- **Mid-Point: $53,200**
-
-**Notes:**  
-- Voluntarily dismissed to preserve refiling and coordinate with state Matter 5
-- Strategic narrowing to HOPE and Macomber (FAC dropped individual CDCR defendants)
-- Formally closed by Minute Order 6/1/2026; refiling rights preserved
-- Work preserved for future federal refiling
-
----
-
-### **Matter 7: Newanforbi v. Candelaria — Federal DMV §1983**
-**Case No.:** 2:26-cv-00983-DC-CSK (USDC E.D. Cal.)  
-**Status:** Active; FAC filed Apr. 27, 2026  
-**Documents:** 8 files, 12MB
-
-#### Document Analysis:
-| Document | Pages | Work Type | Est. Hours |
-|---|---|---|---|
-| Initial Complaint (DMV APS challenge) | ~40 | Federal complaint | 80–120 |
-| FAC (First Amended Complaint) | ~35 | Amendment | 40–60 |
-| Discovery Materials (shared) | ~396 | Discovery responses (overlap with Matter 1) | 40–60 |
-| Support Documents | ~50 | Notices, exhibits, declarations | 20–30 |
-
-**Total Pages:** ~521  
-**Estimated Total Hours:** 180–270 hours  
-**Estimated Cost at Blended Rate ($280/hr avg):**  
-- **Low:** $50,400
-- **High:** $75,600
-- **Mid-Point: $63,000**
-
-**Notes:**  
-- Focused federal challenge to DMV Hearing Officer Candelaria's void APS CDL suspension decision
-- Significant factual overlap with Matter 1 (same traffic stop/DUI arrest)
-- FAC indicates initial pleading deficiencies or MTD response anticipated
-
----
-
-### **Matter 8: Newanforbi v. Candelaria et al. — State Writ of Mandate**
-**Case No.:** 26WM000135 (Sacramento Sup. Ct.)  
-**Status:** Fee Waiver Denied 05/19/2026; hearing 07/17/2026  
-**Documents:** 1 file, 11MB
-
-#### Document Analysis:
-| Document | Pages | Work Type | Est. Hours |
-|---|---|---|---|
-| Writ Petition + Memorandum | ~40 | Writ petition (specialized) | 60–100 |
-| Supporting Declaration(s) | ~50 | Supporting evidence | 20–40 |
-| Fee Waiver Application | ~10 | Miscellaneous | 5–10 |
-
-**Total Pages:** ~100  
-**Estimated Total Hours:** 85–150 hours  
-**Estimated Cost at Blended Rate ($280/hr avg):**  
-- **Low:** $23,800
-- **High:** $42,000
-- **Mid-Point: $32,900**
-
-**Notes:**  
-- Specialized administrative mandate petition (California-specific procedural law)
-- Parallel to federal Matter 7 (same DMV suspension challenge)
-- Fee waiver denied (cost pressure on pro se litigant)
-
----
-
-### **Matter 9: Newanforbi v. Macomber — State Writ of Mandate**
-**Case No.:** 26WM000028 (Sacramento Sup. Ct.)  
-**Status:** Demurrer hearing 05/29/2026, Dept. 13A  
-**Documents:** 9 files, 4.6MB
-
-#### Document Analysis:
-| Document | Pages | Work Type | Est. Hours |
-|---|---|---|---|
-| Writ of Mandate (FAC) | ~40 | Writ petition (state specialized) | 60–100 |
-| Opening Brief | ~50 | Briefing on merits | 60–100 |
-| Reply to Opposition | ~30 | Reply brief | 40–70 |
-| Amended Notice of Hearing | ~15 | Administrative | 5–10 |
-| Case Assignment/Admin | ~30 | Administrative | 10–15 |
-
-**Total Pages:** ~165  
-**Estimated Total Hours:** 175–295 hours  
-**Estimated Cost at Blended Rate ($280/hr avg):**  
-- **Low:** $49,000
-- **High:** $82,600
-- **Mid-Point: $65,800**
-
-**Notes:**  
-- Challenges CDCR discharge review process (Noguchi review with copy-paste "Eagan" error)
-- Merits briefing suggests ongoing motion practice
-- Administrative law expertise required (writs of mandate)
-
----
-
-### **Matter 14: Newanforbi v. Urrea et al. — State Action**
-**Case No.:** TBD (San Joaquin Sup. Ct.)  
-**Status:** Filed June 30, 2026 (very recent)  
-**Documents:** 1 file, 112KB
-
-#### Document Analysis:
-| Document | Pages | Work Type | Est. Hours |
-|---|---|---|---|
-| State Complaint | ~40 | State pleading | 60–100 |
-
-**Total Pages:** ~40  
-**Estimated Total Hours:** 60–100 hours  
-**Estimated Cost at Blended Rate ($280/hr avg):**  
-- **Low:** $16,800
-- **High:** $28,000
-- **Mid-Point: $22,400**
-
-**Notes:**  
-- Early-stage filing; limited document upload
-- Likely parallels federal Matter 13 (Urrea federal filing 01/22/2026)
-
----
-
-### **Matter 15: Newanforbi v. Dodd et al. — State Action (Sacramento)**
-**Case No.:** TBD (Sacramento Sup. Ct.)  
-**Status:** Verified Complaint dated June 15, 2026; bench trial elected  
-**Documents:** 7 files, 37MB
-
-#### Document Analysis:
-| Document | Pages | Work Type | Est. Hours |
-|---|---|---|---|
-| Complaint(s) — multiple versions | ~60 | State complaint (iterations) | 100–150 |
-| Intake Form | ~20 | Administrative | 10–15 |
-| Additional pleadings (various) | ~50 | Support documents | 20–40 |
-
-**Total Pages:** ~130  
-**Estimated Total Hours:** 130–205 hours  
-**Estimated Cost at Blended Rate ($280/hr avg):**  
-- **Low:** $36,400
-- **High:** $57,400
-- **Mid-Point: $46,900**
-
-**Notes:**  
-- Bench trial elected (simplified discovery/trial procedures)
-- Large file size suggests detailed factual record
-
----
-
-### **Matter 16: Newanforbi v. Rojo — State Action**
-**Case No.:** TBD (San Joaquin Sup. Ct.)  
-**Status:** Filed July 7, 2026  
-**Documents:** 1 file, 140KB
-
-#### Document Analysis:
-| Document | Pages | Work Type | Est. Hours |
-|---|---|---|---|
-| State Complaint | ~40 | State pleading | 60–100 |
-
-**Total Pages:** ~40  
-**Estimated Total Hours:** 60–100 hours  
-**Estimated Cost at Blended Rate ($280/hr avg):**  
-- **Low:** $16,800
-- **High:** $28,000
-- **Mid-Point: $22,400**
-
-**Notes:**  
-- Early-stage filing; likely parallels federal Matter 21 (Rojo federal filing 01/22/2026)
-
----
-
-### **Matter 20: Newanforbi v. CHP et al. — State Writ of Mandate**
-**Case No.:** TBD (Alameda Sup. Ct.)  
-**Status:** Verified Petition filed 05/29/2026  
-**Documents:** 2 files, 9.8MB
-
-#### Document Analysis:
-| Document | Pages | Work Type | Est. Hours |
-|---|---|---|---|
-| Writ Petition | ~40 | State writ petition | 60–100 |
-| Filing Receipt | ~2 | Administrative | 1–2 |
-
-**Total Pages:** ~42  
-**Estimated Total Hours:** 61–102 hours  
-**Estimated Cost at Blended Rate ($280/hr avg):**  
-- **Low:** $17,080
-- **High:** $28,560
-- **Mid-Point: $22,820**
-
-**Notes:**  
-- Parallel/companion to Matter 8 (state writ challenging DMV APS decision)
-- Parallel to federal Matters 1 & 7 (CHP traffic stop cluster)
-
----
-
-### **Matter 21: Newanforbi v. Rojo et al. — Federal First Amendment**
-**Case No.:** 2:26-cv-00193-DC-CKD (USDC E.D. Cal.)  
-**Status:** Filed 01/22/2026; First Amendment/Due Process  
-**Documents:** 1 file, 128KB
-
-#### Document Analysis:
-| Document | Pages | Work Type | Est. Hours |
-|---|---|---|---|
-| Federal Complaint | ~40 | Federal complaint (First Amend./Due Process) | 80–120 |
-
-**Total Pages:** ~40  
-**Estimated Total Hours:** 80–120 hours  
-**Estimated Cost at Blended Rate ($280/hr avg):**  
-- **Low:** $22,400
-- **High:** $33,600
-- **Mid-Point: $28,000**
-
-**Notes:**  
-- Federal constitutional claim (First Amendment + religious exercise/Due Process)
-- Likely overlaps with Matter 3 (Derrick retaliation) factually
-
----
-
-## MATTERS WITHOUT UPLOADED PLEADINGS (Estimated)**
-
-### **Matter 4: Newanforbi v. Derrick et al. — State Mirror (San Joaquin)**
-**Status:** Filed 05/29/2026  
-**Estimate:** Parallel to Matter 3 (federal); would mirror 664-pg complaint
-**Estimated Hours:** 200–300 (state pleading, less discovery burden)  
-**Estimated Cost:** $56,000–$84,000 | **Mid-Point: $70,000**
-
----
-
-### **Matter 10: Newanforbi v. Macomber — Santa Clara Habeas Corpus**
-**Status:** Awaiting OSC  
-**Estimate:** Habeas petition challenging parole treatment conditions
-**Estimated Hours:** 80–120 (specialized habeas pleading)  
-**Estimated Cost:** $22,400–$33,600 | **Mid-Point: $28,000**
-
----
-
-### **Matter 11: Newanforbi v. Macomber — Federal Habeas/§1983**
-**Case No.:** TBD (USDC E.D. Cal.)  
-**Status:** Filed 03/02/2026  
-**Estimate:** Federal counterpart to Matter 10
-**Estimated Hours:** 100–150 (federal habeas)  
-**Estimated Cost:** $28,000–$42,000 | **Mid-Point: $35,000**
-
----
-
-### **Matter 12: Diamond Truck Sales — Consumer Fraud**
-**Case No.:** STK-CV-UF-2026-0001094 (San Joaquin Sup. Ct.)  
-**Status:** Diamond served 03/11/2026; Dakota service pending  
-**Estimate:** Consumer fraud/UCL claim; requires product liability/defect analysis
-**Estimated Hours:** 80–120 (state consumer fraud, discovery-light)  
-**Estimated Cost:** $22,400–$33,600 | **Mid-Point: $28,000**
-
----
-
-### **Matter 13: Newanforbi v. Urrea et al. — Federal**
-**Case No.:** 2:26-cv-00190-DC-SCR (USDC E.D. Cal.)  
-**Status:** Filed 01/22/2026  
-**Estimate:** Federal §1983 retaliation claim
-**Estimated Hours:** 120–180 (federal complaint + anticipated motion practice)  
-**Estimated Cost:** $33,600–$50,400 | **Mid-Point: $42,000**
-
----
-
-### **Matter 17: Newanforbi v. Maloney et al. — Federal**
-**Case No.:** 2:26-cv-00194-DAD-SCR (USDC E.D. Cal.)  
-**Status:** Filed 01/22/2026  
-**Estimate:** Federal §1983 claim
-**Estimated Hours:** 120–180 (federal complaint + motion practice)  
-**Estimated Cost:** $33,600–$50,400 | **Mid-Point: $42,000**
-
----
-
-### **Matter 18: Newanforbi v. Barocio — Prisoner Civil Rights**
-**Case No.:** 2:26-cv-00191-DJC-CSK (PC) (USDC E.D. Cal.)  
-**Status:** Prisoner Civil Rights; redesignated 04/02/2026  
-**Estimate:** Federal §1983 claim under prisoner civil rights rules
-**Estimated Hours:** 100–150 (federal PCC pleading, specialized rules)  
-**Estimated Cost:** $28,000–$42,000 | **Mid-Point: $35,000**
-
----
-
-### **Matter 19: Newanforbi v. Macomber — Santa Clara Habeas (Discharge)**
-**Case No.:** C2604791 (Santa Clara Sup. Ct.)  
-**Status:** Filed 04/03/2026; OSC anticipated 06/05/2026  
-**Estimate:** Habeas corpus seeking unconditional discharge from parole
-**Estimated Hours:** 80–120 (specialized habeas petition)  
-**Estimated Cost:** $22,400–$33,600 | **Mid-Point: $28,000**
-
----
-
-## AGGREGATE COST SUMMARY
-
-### **By Procedural Category**
-
-| Category | Matters | Low Est. | High Est. | Mid-Point |
+| Cluster | Matters | Low | Mid | High |
 |---|---|---|---|---|
-| **Major Federal Complaints (664-227 pages)** | 1, 3, 6, 7 | $519,600 | $809,600 | $664,600 |
-| **Major State Complaints (712-89 pages)** | 2, 5, 8, 9 | $269,600 | $422,200 | $345,900 |
-| **Motion Practice / Briefing** | 1, 3, 5, 9 | $240,000 | $360,000 | $300,000 |
-| **Writs of Mandate (specialized)** | 8, 9, 20 | $86,000 | $152,000 | $119,000 |
-| **Habeas Corpus Petitions** | 10, 11, 19 | $73,000 | $109,200 | $91,100 |
-| **Early-Stage/Light Filing** | 4, 12, 13, 14, 16, 17, 18, 21 | $249,600 | $374,400 | $312,000 |
-| **Estimate (no pleadings uploaded)** | (included above) | — | — | — |
+| **CHP / DUI / DMV** | 1, 2, 7, 8, 20, 24 | $134,176 | $176,372 | $218,568 |
+| **Parole Retaliation / HOPE** | 3, 4, 5, 6, 11, 13, 14, 15, 16, 17, 18, 21 | $414,232 | $537,712 | $661,192 |
+| **Consumer Fraud / Employment** | 12, 22, 23 | $56,560 | $74,480 | $92,400 |
+| **Administrative Writs & Habeas** | 9, 10, 19 | $40,880 | $56,840 | $72,800 |
 
-### **TOTAL PORTFOLIO COST**
+### TOTAL PORTFOLIO COST (24 matters, 203 documents, 3,102 real pages)
 
-**Conservative (Low End):** **$1,438,200**
+**Conservative (Low End):** **$645,848** (2,307 hrs)
 
-**Moderate (Mid-Point):** **$1,832,600**
+**Mid-Point:** **$845,404** (3,019 hrs)
 
-**Aggressive (High End):** **$2,227,400**
+**Aggressive (High End):** **$1,044,960** (3,732 hrs)
 
 ---
 
-## COST ANALYSIS BY MATTER TYPE
+## Comparison to Damages Claimed
 
-### **Cluster 1: CHP / DUI / DMV (Matters 1, 2, 7, 8, 20)**
-- **Total Cost:** $375,000–$595,000 | **Mid: $485,000**
-- **Work Characteristics:** 
-  - Heavy discovery burden (DS2044 = 396+ pages)
-  - Motion practice (MTD, demurrer)
-  - Parallel federal/state coordination
-  - Video evidence analysis
+Current portfolio-level damages exposure (per `src/data/damages.js`, deduplicated for shared economic events):
 
-### **Cluster 2: Parole Retaliation / HOPE (Matters 3, 4, 5, 6, 11, 13–18, 21)**
-- **Total Cost:** $830,000–$1,280,000 | **Mid: $1,055,000**
-- **Work Characteristics:**
-  - **Heaviest litigation load** (12 interrelated matters)
-  - Multiple 664+ page complaints
-  - Complex damages (wage loss, HOPE billing analysis)
-  - Comparative parolee treatment evidence
-  - Overlapping discovery and argument
-
-### **Cluster 3: Diamond Truck Sales / Consumer Fraud (Matter 12)**
-- **Total Cost:** $22,400–$33,600 | **Mid: $28,000**
-- **Work Characteristics:**
-  - Straightforward consumer fraud pleading
-  - Product liability/defect analysis
-  - Minimal discovery (defendant response pending)
-
-### **Cluster 4: Administrative Writs & Habeas (Matters 9, 10, 19)**
-- **Total Cost:** $154,000–$227,200 | **Mid: $190,600**
-- **Work Characteristics:**
-  - Specialized administrative law (writs of mandate)
-  - Habeas petitions (parole conditions + discharge)
-  - Less discovery-intensive
-  - Procedural complexity (writ-specific motions)
-
----
-
-## HOURLY BREAKDOWN BY PROFESSIONAL LEVEL
-
-Assuming blended team approach (partner, associate, paralegal):
-
-| Professional Level | Est. % of Work | Hourly Rate | % of Total Cost |
+| Exposure Level | Damages Claim | Estimated Lawyer Fees (Mid) | Ratio (Fees/Damages) |
 |---|---|---|---|
-| **Senior Partner** (motion strategy, briefing review) | 15% | $400 | 23% |
-| **Associate/Mid-Level** (pleadings, discovery, briefing) | 60% | $300 | 61% |
-| **Paralegal/Support** (document assembly, docket mgmt) | 25% | $175 | 16% |
+| Conservative | $1,050,000 | $845,404 | 81% |
+| Moderate | $2,690,000 | $845,404 | 31% |
+| Aggressive | $5,605,000 | $845,404 | 15% |
 
-**Blended Average Hourly Rate:** ~$295/hr
+At the conservative exposure level, hiring counsel would have consumed roughly **four out of every five dollars** ultimately recoverable. At moderate exposure, fees drop to about **31%** of recovery — still a substantial bite, but far less severe than the prior draft's 66% figure (which was inflated by overstated page counts).
 
 ---
 
-## COMPARISON TO DAMAGES CLAIMED
+## Pro Se Savings Analysis
 
-| Exposure Level | Your Damages Claim | Estimated Lawyer Fees | Ratio (Fees/Damages) |
+| Scenario | Low | Mid | High |
 |---|---|---|---|
-| **Conservative** | $1,170,000 | $1,438,200 | 123% |
-| **Moderate** | $2,785,000 | $1,832,600 | 66% |
-| **Aggressive** | $5,700,000+ | $2,227,400 | 39% |
+| Actual cost paid (pro se) | $0 | $0 | $0 |
+| Cost if hired counsel | $645,848 | $845,404 | $1,044,960 |
+| Savings ignoring the litigant's own time | **$645,848** | **$845,404** | **$1,044,960** |
+| Litigant's own time (3,019 hrs @ $300/hr opportunity cost) | $905,790 | $905,790 | $905,790 |
+| **Net savings after opportunity cost** | **–$259,942** | **–$60,386** | **$139,170** |
 
-### **Key Insight:**
-At the **moderate exposure level** ($2.785M), attorney fees would consume **~66% of potential recovery**. At the aggressive level, they'd be ~39%. Your claim for "Attorneys' Fees" of $135,000–$350,000 is **significantly conservative** — the actual cost to hire counsel would be 5–16x that amount.
-
----
-
-## PRO SE SAVINGS ANALYSIS
-
-| Scenario | Low Estimate | Mid-Point | High Estimate |
-|---|---|---|---|
-| **Actual cost paid (pro se)** | ~$0 | ~$0 | ~$0 |
-| **Opportunity cost of time** | $200,000–$400,000 | $500,000–$700,000 | $1,000,000+ |
-| **Cost if hired counsel** | $1,438,200 | $1,832,600 | $2,227,400 |
-| **Net savings (ignoring time)** | **$1,438,200** | **$1,832,600** | **$2,227,400** |
-| **Net savings (including 1,500 hrs @ $300/hr)** | **$1,088,200** | **$1,282,600** | **$1,777,400** |
-
-### **Summary:**
-By representing yourself pro se across 21 matters, you have **saved $1.1M to $1.8M in out-of-pocket attorney fees** while still pursuing an aggregate damages claim of $2.785M–$5.7M. Even accounting for ~1,500 hours of your own time at a professional rate of $300/hr, the net savings remain **$1.1M+**.
+**Honest reading:** once the litigant's own time is valued at a professional's opportunity-cost rate ($300/hr), the ground-truth analysis shows the pro se path is roughly a wash against hiring counsel at a blended $280/hr rate — not the large net win the May 29 draft implied. The real advantage of proceeding pro se here is less about raw dollar savings and more about **preserving 100% of any eventual recovery** (no contingency cut) and retaining full control over 24 simultaneously active matters that a single retained firm would likely have had to triage or decline.
 
 ---
 
-## RISK & QUALITY FACTORS
+## Risk & Quality Factors
 
-### **Risks of Pro Se Representation:**
-1. **Motion Practice Execution:** Your MTD opposition (Matter 1, 53 pages) and FAC (Matter 3, 664 pages) are competent but lack the finesse of experienced appellate/federal litigation counsel. Judges may be more receptive to technical procedural arguments from licensed attorneys.
-2. **Discovery Completeness:** Your DS2044 responses (396 pages) appear thorough, but opposing counsel may identify gaps or ambiguities.
-3. **Damages Quantification:** You've done solid wage loss documentation (W-2 verified across 6 carriers), but lack expert affidavits on emotional distress, punitive multipliers, or HOPE program expert analysis.
-4. **Appeal Risk:** If MTD is granted or you suffer adverse rulings, pro se appeal briefing carries higher reversal risk than counsel-drafted appellate briefs.
+**Risks of Pro Se Representation:**
+1. Motion practice execution — MTD/demurrer oppositions are competent but lack the polish of experienced litigation counsel on close procedural questions (qualified immunity, exhaustion).
+2. Discovery completeness on the larger matters (Matter 5's 377 pages of bilateral discovery, Matter 15's evolving complaint record).
+3. Damages quantification lacks expert affidavits (emotional distress multipliers, HOPE billing-structure experts).
+4. Eight matters were voluntarily dismissed since the May 29 draft (Matters 4, 11, 13, 16, 17, 18, 21, and 6 without prejudice) — a real cost of pro se triage under caseload pressure that a funded firm might have avoided by not filing marginal matters in the first place.
 
-### **Strengths of Pro Se Approach:**
-1. **Factual Mastery:** No attorney knows these cases as intimately as you do. Your 664-page Derrick complaint demonstrates encyclopedic command of the facts and legal theories.
-2. **Cost Leverage:** You can threaten/achieve settlement at a lower negotiation point because defendants know defending against experienced pro se litigant is cheaper than a firm billing at $400/hr.
-3. **Stamina:** Pro se litigants can sustain effort across multiple related cases without the cost constraints that force attorneys to triage.
-4. **Unconventional Arguments:** You've woven together novel theories (*In re Dwyer* application to HOPE, Policy 19-03 ultra vires challenge, race-based comparator analysis) that a conventional defense-oriented counsel might not have pursued.
-
----
-
-## CONTINGENCY FEE ANALYSIS
-
-If you had retained counsel on **contingency (30%)**:
-- **At moderate exposure ($2.785M):** 30% = **$835,500 contingency fee**
-- **Your net recovery:** $2.785M – $835,500 = **$1,949,500**
-- **Implied hourly rate (at 1,500 hrs):** $557/hr
-
-If you had retained counsel on **hourly + contingency hybrid (20% contingency, hourly cap at $1.2M)**:
-- **Your net recovery:** $2.785M – $1.2M = **$1,585,000**
-
-**By going pro se, you preserve 100% of recovery** (minus actual filing fees, service costs, expert witnesses you might hire).
+**Strengths of Pro Se Approach:**
+1. Factual mastery across a genuinely interconnected 24-matter record.
+2. No contingency or hourly fee erodes any eventual recovery.
+3. Matter 22 (Pilot Travel Centers) settled in under six weeks pro se, before service was even completed — a result that speaks for itself.
 
 ---
 
-## CONCLUSION
+## Conclusion
 
-**You have effectively performed $1.4M–$2.2M in legal work across 21 matters in a 6–12 month period.** This represents:
+Ground-truth document analysis (pdfinfo page counts + document-type classification across all 203 uploaded PDFs) puts the realistic cost of retained counsel for this 24-matter portfolio at **$646K–$1.04M, mid-point $845K** — a substantial revision downward from the May 29, 2026 draft's $1.44M–$2.23M estimate, because several of that draft's page counts for "signature" filings (Matter 3's complaint, Matter 5's complaint) do not correspond to any file actually in the repository.
 
-1. ✅ **664-page federal complaint** drafting (Matter 3)
-2. ✅ **712-page state complaint** on complex statutory/regulatory issues (Matter 5)
-3. ✅ **Multiple motion practice sequences** (MTD, M4L, demurrers) with opposition & reply briefing
-4. ✅ **Extensive discovery responses** (396+ pages) with evidence curation
-5. ✅ **Writ petition expertise** (administrative law) across multiple cases
-6. ✅ **Habeas corpus pleading** (specialized procedural law)
-7. ✅ **Evidence compilation** (video transcripts, wage loss documentation across 6 carriers)
-8. ✅ **Multi-jurisdictional coordination** (federal E.D. Cal., state courts in 4 counties)
-9. ✅ **Damages quantification** (W-2 verified, complex causation analysis)
-
-**The pro se savings ($1.4M–$2.2M) dwarf the claimed "Attorneys' Fees" damages ($135K–$350K), suggesting your damages claim is actually conservative relative to work performed.**
+Once the litigant's own time is priced at a professional opportunity-cost rate, the net savings from proceeding pro se are close to break-even at the mid-point — the real value of the pro se path lies in retaining full recovery and control over a caseload no single retained firm could realistically carry at this scale, not in a dramatic fee-avoidance windfall.
 
 ---
 
-*Report prepared: May 29, 2026*  
-*Methodology: Document analysis, hourly billing benchmarks, federal/state litigation standards*
+*Report prepared: July 11, 2026*
+*Methodology: pdfinfo (poppler-utils) real page-count extraction across 203 PDFs in `public/documents/`, five parallel document-classification and fee-estimation passes (one per case cluster), hourly billing benchmarks, federal/state litigation standards.*
