@@ -513,7 +513,7 @@ export const cases = [
     },
     {
       number: 20, caption: "Newanforbi v. California Highway Patrol, et al.", case_no: "26CV191136", court: "Alameda Sup. Ct.",
-      claims: "Writ of Mandate (CCP §1085; PC §679.10) — U Visa Certification; Declaratory Relief (CCP §1060)", status: "Active — Petition filed 05/29/2026; CMC pending; Summons issued 06/03/2026; Fee Waiver Request submitted",
+      claims: "Writ of Mandate (CCP §1085; PC §679.10) — U Visa Certification; Declaratory Relief (CCP §1060)", status: "Active — Petition filed 05/29/2026; Summons issued 06/03/2026; AG's Office (Deputy AG Vanessa Ing) filed Demurrer + MPA + M&C Declaration + Proposed Order; opposition to demurrer forthcoming",
       filed: "May 29, 2026", judge: "TBD", cluster: 1, type: "State",
       defendants: "California Highway Patrol; G. Serrato, Captain and Commander CHP Dublin Area; Gary Paul, Lieutenant CHP Dublin Area; Eric Dutra, Sergeant CHP Dublin Area; DOES 1-10",
       serviceTracking: [
@@ -555,7 +555,11 @@ export const cases = [
         { label: "Notice of Case Management Conference (June 3, 2026)", path: "/documents/matter-20/Notice of Case Management Conference.pdf" },
         { label: "Request to Waive Court Fees (June 3, 2026)", path: "/documents/matter-20/Request to Waive Court Fees.pdf" },
         { label: "Receipt (June 3, 2026)", path: "/documents/matter-20/RECEIPT.pdf" },
-        { label: "Notice of Change of Address (filed July 7, 2026)", path: "/documents/matter-20/Notice of Change of Address (July 7, 2026).pdf" }
+        { label: "Notice of Change of Address (filed July 7, 2026)", path: "/documents/matter-20/Notice of Change of Address (July 7, 2026).pdf" },
+        { label: "AG Demurrer to Petition (Deputy AG Vanessa Ing)", path: "/documents/matter-20/AG Demurrer to Petition.pdf" },
+        { label: "AG MPA in Support of Demurrer", path: "/documents/matter-20/AG MPA ISO Demurrer.pdf" },
+        { label: "Declaration of Vanessa Ing Re: Meet and Confer", path: "/documents/matter-20/AG Decl. Vanessa Ing - Meet and Confer.pdf" },
+        { label: "AG Proposed Order on Demurrer", path: "/documents/matter-20/AG Proposed Order on Demurrer.pdf" }
       ]
     },
     {
@@ -627,7 +631,8 @@ export const cases = [
         { label: "Post-Adverse Action Notice (Dec. 30, 2025)", path: "/documents/matter-22/Post-adverse action notice - Pilot Travel Centers LLC 2.pdf" },
         { label: "Demand Letter (undated)", path: "/documents/matter-22/Demand Letter Newanforbi v Pilot Travel Centers.pdf" },
         { label: "Notice of Change of Address (filed July 7, 2026)", path: "/documents/matter-22/Notice of Change of Address (July 7, 2026).pdf" },
-        { label: "LA County Sheriff Filing Receipt — Service of Process on Pilot (issued July 9, 2026)", path: "/documents/matter-22/Filing Receipt Service of Process on Pilot.pdf" }
+        { label: "LA County Sheriff Filing Receipt — Service of Process on Pilot (issued July 9, 2026)", path: "/documents/matter-22/Filing Receipt Service of Process on Pilot.pdf" },
+        { label: "Confidential Settlement Communications (Evid. Code §1152 / R. 408)", path: "/documents/matter-22/Confidential Settlement Communications R 408.pdf" }
       ]
     },
     {
