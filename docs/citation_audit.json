@@ -1,0 +1,1547 @@
+{
+  "analysisDate": "2026-07-12",
+  "totalMatters": 24,
+  "totalCitationsChecked": 147,
+  "methodology": "Five parallel analysis passes pulled every case citation (and key quoted statutory/regulatory text) from the litigant's motion practice and citation-bearing complaints, then verified each against free legal databases (CourtListener, Justia, Google Scholar, Casetext) for existence, accurate quotation, and current good-law status.",
+  "groups": [
+    {
+      "group": "A",
+      "label": "CHP/DUI/DMV cluster",
+      "matters": [
+        1,
+        2,
+        7,
+        8,
+        20
+      ],
+      "citationsChecked": 48
+    },
+    {
+      "group": "B",
+      "label": "Derrick/HOPE cluster",
+      "matters": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "citationsChecked": 21
+    },
+    {
+      "group": "C",
+      "label": "CDCR discharge/Macomber cluster",
+      "matters": [
+        9,
+        10,
+        11,
+        15,
+        19
+      ],
+      "citationsChecked": 23
+    },
+    {
+      "group": "D",
+      "label": "Individual-defendant retaliation pairs",
+      "matters": [
+        13,
+        14,
+        16,
+        17,
+        18,
+        21
+      ],
+      "citationsChecked": 22
+    },
+    {
+      "group": "E",
+      "label": "Employment/consumer/U-visa cluster",
+      "matters": [
+        12,
+        22,
+        23,
+        24
+      ],
+      "citationsChecked": 33
+    }
+  ],
+  "citations": [
+    {
+      "group": "A",
+      "matter": 1,
+      "document": "0.Newanforbi v. CHP.pdf (Complaint)",
+      "case_name": "Dunaway v. New York",
+      "citation": "442 U.S. 200 (1979)",
+      "quote_or_holding_claimed": "Cited (no direct quote) for the proposition that handcuffing, placing in a patrol car, transporting, and reading chemical-test advisements are 'indicia of a full custodial arrest' requiring probable cause.",
+      "status": "VERIFIED",
+      "notes": "Real, canonical Fourth Amendment case; citation and year correct; holding accurately characterized. Confirmed still good law (foundational, never overruled)."
+    },
+    {
+      "group": "A",
+      "matter": 1,
+      "document": "Opposition for Motion to Dismiss.pdf",
+      "case_name": "Hope v. Pelzer",
+      "citation": "536 U.S. 730, 741 (2002)",
+      "quote_or_holding_claimed": "Officers can be on notice their conduct is unlawful 'even in novel factual circumstances' if the violation is obvious.",
+      "status": "VERIFIED",
+      "notes": "Real case; the 'obvious clarity' / novel-circumstances principle at ~741 is accurately paraphrased (quoting United States v. Lanier)."
+    },
+    {
+      "group": "A",
+      "matter": 1,
+      "document": "Opposition for Motion to Dismiss.pdf",
+      "case_name": "Terry v. Ohio",
+      "citation": "392 U.S. 1 (1968)",
+      "quote_or_holding_claimed": "Cited for reasonable-suspicion standard to detain.",
+      "status": "VERIFIED",
+      "notes": "Canonical case, citation correct."
+    },
+    {
+      "group": "A",
+      "matter": 1,
+      "document": "Opposition for Motion to Dismiss.pdf",
+      "case_name": "Arizona v. Gant",
+      "citation": "556 U.S. 332 (2009)",
+      "quote_or_holding_claimed": "Cited with United States v. Ross for the rule that automobile searches generally require probable cause.",
+      "status": "VERIFIED",
+      "notes": "Real, correctly cited; Gant is about vehicle searches incident to arrest, consistent with the point made."
+    },
+    {
+      "group": "A",
+      "matter": 1,
+      "document": "Opposition for Motion to Dismiss.pdf",
+      "case_name": "United States v. Ross",
+      "citation": "456 U.S. 798 (1982)",
+      "quote_or_holding_claimed": "Automobile search generally requires probable cause to believe vehicle contains evidence of crime.",
+      "status": "VERIFIED",
+      "notes": "Real, correctly cited landmark automobile-exception case."
+    },
+    {
+      "group": "A",
+      "matter": 1,
+      "document": "Opposition for Motion to Dismiss.pdf",
+      "case_name": "Rodriguez v. United States",
+      "citation": "No pincite given (real citation: 575 U.S. 348 (2015))",
+      "quote_or_holding_claimed": "Officers may not extend a traffic stop beyond its original mission without independent reasonable suspicion.",
+      "status": "MISCITED",
+      "notes": "Case is real and holding is accurately stated, but the litigant omitted the reporter citation entirely (just says 'In Rodriguez v. United States, the Supreme Court held...'). Minor completeness defect, not a substantive error -- easy fix."
+    },
+    {
+      "group": "A",
+      "matter": 1,
+      "document": "Opposition for Motion to Dismiss.pdf",
+      "case_name": "Caniglia v. Strom",
+      "citation": "141 S. Ct. 1596, 1598-99 (2021)",
+      "quote_or_holding_claimed": "Community-caretaking exception does not grant police broad authority to conduct warrantless searches/seizures absent an emergency; must be carefully circumscribed.",
+      "status": "VERIFIED",
+      "notes": "Real, correctly cited 2021 SCOTUS case rejecting a freestanding community-caretaking exception; holding accurately paraphrased."
+    },
+    {
+      "group": "A",
+      "matter": 1,
+      "document": "Opposition for Motion to Dismiss.pdf",
+      "case_name": "Harlow v. Fitzgerald",
+      "citation": "457 U.S. 800, 818 (1982)",
+      "quote_or_holding_claimed": "\"violate clearly established statutory or constitutional rights of which a reasonable person would have known\"",
+      "status": "VERIFIED",
+      "notes": "Direct quote confirmed accurate and correctly pinpoint-cited to page 818."
+    },
+    {
+      "group": "A",
+      "matter": 1,
+      "document": "Opposition for Motion to Dismiss.pdf",
+      "case_name": "Ashcroft v. Iqbal",
+      "citation": "556 U.S. 662, 678 (2009)",
+      "quote_or_holding_claimed": "At motion to dismiss, court must accept plaintiff's allegations as true.",
+      "status": "VERIFIED",
+      "notes": "Real case, correct pincite for the plausibility/acceptance-of-allegations discussion."
+    },
+    {
+      "group": "A",
+      "matter": 1,
+      "document": "Opposition for Motion to Dismiss.pdf",
+      "case_name": "County of Sacramento v. Lewis",
+      "citation": "523 U.S. 833, 847 n.8 (1998)",
+      "quote_or_holding_claimed": "Substantive due process violated by executive action \"so egregious, so outrageous, that it may fairly be said to shock the contemporary conscience.\"",
+      "status": "VERIFIED",
+      "notes": "Quote confirmed accurate and is the case's central holding; page 847 confirmed as the location (footnote-8 attribution could not be independently confirmed but is immaterial since the quote and page are correct)."
+    },
+    {
+      "group": "A",
+      "matter": 1,
+      "document": "Opposition for Motion to Dismiss.pdf",
+      "case_name": "Will v. Michigan Dep't of State Police",
+      "citation": "491 U.S. 58 (1989)",
+      "quote_or_holding_claimed": "A state is not a 'person' amenable to suit under 42 U.S.C. section 1983.",
+      "status": "VERIFIED",
+      "notes": "Canonical, correctly cited and characterized."
+    },
+    {
+      "group": "A",
+      "matter": 1,
+      "document": "Opposition for Motion to Dismiss.pdf",
+      "case_name": "Monell v. Department of Social Services",
+      "citation": "436 U.S. 658 (1978)",
+      "quote_or_holding_claimed": "Basis for municipal liability claim.",
+      "status": "VERIFIED",
+      "notes": "Canonical, correctly cited."
+    },
+    {
+      "group": "A",
+      "matter": 1,
+      "document": "Opposition for Motion to Dismiss.pdf",
+      "case_name": "Smith v. Wade",
+      "citation": "461 U.S. 30 (1983)",
+      "quote_or_holding_claimed": "Punitive damages under section 1983 require evil motive or reckless/callous indifference.",
+      "status": "VERIFIED",
+      "notes": "Canonical, correctly cited and characterized."
+    },
+    {
+      "group": "A",
+      "matter": 1,
+      "document": "Opposition for Motion to Dismiss.pdf",
+      "case_name": "Kay v. Ehrler",
+      "citation": "499 U.S. 432 (1991)",
+      "quote_or_holding_claimed": "Pro se litigants (even attorneys) are not entitled to attorney's fees under 42 U.S.C. section 1988.",
+      "status": "VERIFIED",
+      "notes": "Canonical, correctly cited and characterized."
+    },
+    {
+      "group": "A",
+      "matter": 1,
+      "document": "Reply - CHP.pdf (opposing counsel / CHP-AG filing, checked for ammunition value)",
+      "case_name": "Ashcroft v. Iqbal",
+      "citation": "556 U.S. 662, 663 (2009) and 556 U.S. at 664",
+      "quote_or_holding_claimed": "\"mere conclusions\" unsupported by specific facts are not entitled to the presumption of truth; \"While legal conclusions can provide the complaint's framework, they must be supported by factual allegations.\"",
+      "status": "MISCITED",
+      "notes": "OPPOSING COUNSEL (CHP/AG), not the litigant. The real Iqbal passage discussing 'legal conclusions'/framework and conclusory-allegation doctrine appears around 556 U.S. at 678-679, not at pages 663-664 (which fall within the syllabus/introductory portion of the reporter). The quoted language is close to the real opinion's wording ('framework of a complaint' vs. \"complaint's framework\") but the pincites are wrong. Flagged as ammunition since it is CHP's own filing, not the litigant's."
+    },
+    {
+      "group": "A",
+      "matter": 2,
+      "document": "Opposition to Motion for U-visa certification.pdf (opposing counsel / AG filing)",
+      "case_name": "Ordonez Orosco v. Napolitano",
+      "citation": "(5th Cir. 2010) 598 F.3d 222, 224",
+      "quote_or_holding_claimed": "\"victims of certain listed crimes who later help United States law enforcement officials investigate or prosecute those crimes\" (description of U-visa purpose).",
+      "status": "VERIFIED",
+      "notes": "Opposing counsel's citation; case is real, correctly cited, and consistent with the case's actual subject matter (U-visa law-enforcement certification is discretionary)."
+    },
+    {
+      "group": "A",
+      "matter": 2,
+      "document": "Opposition to Motion for U-visa certification.pdf (opposing counsel / AG filing) -- NOT a case citation, flagged specially",
+      "case_name": "N/A -- 8 C.F.R. section 214.14(a)(14)(ii)",
+      "citation": "8 C.F.R. section 214.14(a)(14)(ii)",
+      "quote_or_holding_claimed": "Litigant's underlying Motion for U-Visa Certification (not itself in the read set) quoted this regulation as saying: 'the absence of criminal charges, or even the refusal by law enforcement to file charges, is not disqualifying.' Defendants' Opposition states this quoted language 'does not appear anywhere in the regulation' and reproduces the actual (different) text of section 214.14(a)(14)(ii), which addresses witness-tampering/obstruction/perjury victims, not the charging-decision point at all.",
+      "status": "NOT_FOUND",
+      "notes": "THIS IS THE MOST IMPORTANT FINDING IN THE WHOLE AUDIT. This is very likely the exact incident the litigant described as opposing counsel's 'AI hallucination' accusation. The AG's characterization is essentially correct: 8 C.F.R. section 214.14(a)(14)(ii) is a real regulation but its actual text does NOT contain the quoted 'absence of criminal charges...not disqualifying' language, and it addresses a different topic (witness tampering/obstruction/perjury) than the point being supported. In the litigant's own Reply ISO Motion for U-Visa Certification (read in full), the litigant partially concedes this: 'the proposition...rests on 8 C.F.R. section 214.14(a)(12) and the USCIS guidance quoted above -- not on subsection (a)(14)(ii). To the extent the Motion's citation to (a)(14)(ii) caused confusion, Plaintiff respectfully clarifies the controlling authority.' The correct regulation (8 C.F.R. 214.14(a)(12)) does appear to support a similar substantive point per the Reply's later quotation of USCIS guidance, but the ORIGINAL Motion cited the wrong subsection with quoted language that does not exist there. This is a real, serious miscitation in the litigant's own underlying motion (not fully in this read-set) that was caught and partially walked back in the Reply."
+    },
+    {
+      "group": "A",
+      "matter": 2,
+      "document": "Reply ISO UVisa Cert 10pg.pdf (litigant's own filing)",
+      "case_name": "Williams v. Superior Court",
+      "citation": "(1993) 5 Cal.4th 337",
+      "quote_or_holding_claimed": "\"An interpretation that renders statutory language a nullity is obviously to be avoided.\"",
+      "status": "VERIFIED",
+      "notes": "Real case (Williams v. Superior Court (Freedom Newspapers, Inc.)); confirmed the case does contain this statutory-construction principle, even though the case's core subject (California Public Records Act / peace officer personnel files) differs from the immigration/U-visa context -- used here only for a generic canon of construction, which is a legitimate use."
+    },
+    {
+      "group": "A",
+      "matter": 7,
+      "document": "FAC Candelaria.pdf (litigant's own First Amended Complaint)",
+      "case_name": "Mercer v. Department of Motor Vehicles",
+      "citation": "53 Cal.3d 753, 760-762 (1991)",
+      "quote_or_holding_claimed": "A warrantless DUI arrest under CVC 40300.5 is unlawful where the vehicle was not observed in 'volitional movement' and was parked off the traveled roadway.",
+      "status": "VERIFIED",
+      "notes": "Real California Supreme Court case; holding accurately and precisely characterized (the 'volitional movement' / physical-control rejection is the actual core holding)."
+    },
+    {
+      "group": "A",
+      "matter": 7,
+      "document": "FAC Candelaria.pdf",
+      "case_name": "People v. Sanders",
+      "citation": "31 Cal.4th 318 (2003)",
+      "quote_or_holding_claimed": "Forecloses post hoc justification of a search through a parole condition discovered only after the search was already underway.",
+      "status": "VERIFIED",
+      "notes": "Real California Supreme Court case; holding (officers must know of parole/search condition at time of search) accurately characterized."
+    },
+    {
+      "group": "A",
+      "matter": 7,
+      "document": "FAC Candelaria.pdf",
+      "case_name": "Music v. Department of Motor Vehicles",
+      "citation": "221 Cal.App.3d 841, 850 (1990)",
+      "quote_or_holding_claimed": "Refusal suspension requires a lawful arrest.",
+      "status": "VERIFIED",
+      "notes": "Real Court of Appeal case; holding accurately characterized (lawful arrest is a condition precedent to implied-consent refusal suspension)."
+    },
+    {
+      "group": "A",
+      "matter": 7,
+      "document": "FAC Candelaria.pdf",
+      "case_name": "California DUI Lawyers Ass'n v. DMV",
+      "citation": "77 Cal.App.5th 517, 530-533 (2022)",
+      "quote_or_holding_claimed": "DMV's assignment of advocate and adjudicator roles to a single hearing officer 'violates due process' under the Fourteenth Amendment.",
+      "status": "VERIFIED",
+      "notes": "Real, correctly cited, and holding accurately characterized -- confirmed by independent search and cross-referenced in the court's own R&R."
+    },
+    {
+      "group": "A",
+      "matter": 7,
+      "document": "FAC Candelaria.pdf",
+      "case_name": "Knudsen v. DMV",
+      "citation": "101 Cal.App.5th 186, 193, 198 (2024)",
+      "quote_or_holding_claimed": "Where a hearing officer actually acts as an advocate, the violation constitutes 'structural error' requiring no showing of actual prejudice.",
+      "status": "VERIFIED",
+      "notes": "Real, correctly cited, holding accurately characterized (Fifth District, decided April 4, 2024)."
+    },
+    {
+      "group": "A",
+      "matter": 7,
+      "document": "FAC Candelaria.pdf",
+      "case_name": "Clarke v. Gordon",
+      "citation": "(Cal. Ct. App., Sept. 12, 2024, No. G062856) 2024 WL 4163081",
+      "quote_or_holding_claimed": "Reversed another APS suspension on the same dual-role due process ground, in a case naming the DMV Director personally as respondent.",
+      "status": "VERIFIED",
+      "notes": "Real case; confirmed to have been decided Sept. 2024 by the Fourth District (Div. 3), reversing for the same dual-role due process defect. At the time of this FAC's drafting the case may have only had a Westlaw slip citation; the later-filed court R&R and the Objections/Mandamus/Demurrer-Opposition documents correctly give the eventual published citation, 104 Cal.App.5th 1267 (2024) -- so the WL citation is not wrong, just an earlier-in-time citation form that was superseded by publication. Not a substantive error."
+    },
+    {
+      "group": "A",
+      "matter": 7,
+      "document": "FAC Candelaria.pdf",
+      "case_name": "Bell v. Burson",
+      "citation": "402 U.S. 535, 539 (1971)",
+      "quote_or_holding_claimed": "Driver's license constitutes a protected property interest under the Fourteenth Amendment.",
+      "status": "VERIFIED",
+      "notes": "Canonical case; correctly cited and characterized."
+    },
+    {
+      "group": "A",
+      "matter": 7,
+      "document": "FAC Candelaria.pdf",
+      "case_name": "Mackey v. Montrym",
+      "citation": "443 U.S. 1, 10-11 (1979)",
+      "quote_or_holding_claimed": "Cited with Bell v. Burson on the property interest in a license.",
+      "status": "VERIFIED",
+      "notes": "Canonical, correctly cited."
+    },
+    {
+      "group": "A",
+      "matter": 7,
+      "document": "FAC Candelaria.pdf",
+      "case_name": "Mathews v. Eldridge",
+      "citation": "424 U.S. 319, 333 (1976)",
+      "quote_or_holding_claimed": "Heightened procedural due process protection triggered by severity of deprivation.",
+      "status": "VERIFIED",
+      "notes": "Canonical due-process balancing-test case, correctly cited."
+    },
+    {
+      "group": "A",
+      "matter": 7,
+      "document": "FAC Candelaria.pdf",
+      "case_name": "Goldberg v. Kelly",
+      "citation": "397 U.S. 254, 267-268 (1970)",
+      "quote_or_holding_claimed": "Fair, evidence-based inquiry required by procedural due process.",
+      "status": "VERIFIED",
+      "notes": "Canonical, correctly cited."
+    },
+    {
+      "group": "A",
+      "matter": 7,
+      "document": "FAC Candelaria.pdf",
+      "case_name": "Withrow v. Larkin",
+      "citation": "421 U.S. 35, 47 (1975)",
+      "quote_or_holding_claimed": "Neutral adjudicator required; cited on combining investigative/adjudicative functions.",
+      "status": "VERIFIED",
+      "notes": "Canonical administrative-law due process case, correctly cited."
+    },
+    {
+      "group": "A",
+      "matter": 7,
+      "document": "FAC Candelaria.pdf / Petition for Writ of Mandate (Notice of Response citation list, repeated in Matters 7, 8, and 20)",
+      "case_name": "Wong Sun v. United States; People v. Medina; McDonnell v. DMV; Brown v. Texas; Brown v. Illinois; People v. Torres; People v. Reyes; Terry v. Ohio; Florida v. Royer",
+      "citation": "371 U.S. 471 (1963); 6 Cal.3d 484 (1972); 45 Cal.App.3d 653 (1975); 443 U.S. 47 (1979); 422 U.S. 590 (1975); 173 Cal.App.4th 977 (2009); 195 Cal.App.4th 946 (2011); 392 U.S. 1 (1968); 460 U.S. 491 (1983)",
+      "quote_or_holding_claimed": "Listed together (no individual holdings quoted) as authorities cited in Plaintiff's December 9, 2024 discovery submission on unlawful detention/arrest and fruit-of-the-poisonous-tree principles.",
+      "status": "VERIFIED",
+      "notes": "All nine are real, well-established, correctly-cited cases on Fourth Amendment stop/arrest/exclusionary-rule doctrine (canonical SCOTUS and California cases). No individual holdings were quoted for these, so nothing to misquote -- citations and years check out."
+    },
+    {
+      "group": "A",
+      "matter": 7,
+      "document": "Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf (litigant's own filing)",
+      "case_name": "Butz v. Economou / Forrester v. White / Cleavinger v. Saxner / Swift v. California",
+      "citation": "438 U.S. 478, 512 (1978); 484 U.S. 219, 227-30 (1988); 474 U.S. 193, 200/202 (1985); 384 F.3d 1184, 1191-92 (9th Cir. 2004)",
+      "quote_or_holding_claimed": "Applicability of absolute immunity to non-judicial officers turns on a functional analysis of the acts performed, not the officer's title; officials performing advocate-type functions are not entitled to absolute immunity.",
+      "status": "VERIFIED",
+      "notes": "All four are real, canonical quasi-judicial/absolute immunity cases correctly cited with accurate holdings (functional-test line of authority)."
+    },
+    {
+      "group": "A",
+      "matter": 7,
+      "document": "Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
+      "case_name": "Mireles v. Waco; Stump v. Sparkman",
+      "citation": "502 U.S. 9, 11-12 (1991); 435 U.S. 349, 356-57 (1978)",
+      "quote_or_holding_claimed": "Immunity does not extend to actions taken in the complete absence of jurisdiction.",
+      "status": "VERIFIED",
+      "notes": "Real, correctly cited, canonical judicial-immunity exception cases."
+    },
+    {
+      "group": "A",
+      "matter": 7,
+      "document": "Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
+      "case_name": "Hebbe v. Pliler; Lopez v. Smith; Neitzke v. Williams; United States v. Reyna-Tapia; Franklin v. Murphy; Garity v. APWU Nat'l Lab. Org.; Lathus v. City of Huntington Beach",
+      "citation": "627 F.3d 338, 342 (9th Cir. 2010); 203 F.3d 1122, 1130 (9th Cir. 2000) (en banc); 490 U.S. 319, 325 (1989); 328 F.3d 1114, 1121 (9th Cir. 2003) (en banc); 745 F.2d 1221, 1228 (9th Cir. 1984); 828 F.3d 848, 854 (9th Cir. 2016); 56 F.4th 1238, 1243 (9th Cir. 2023)",
+      "quote_or_holding_claimed": "Pro se pleadings liberally construed; leave to amend mandatory absent clear futility; frivolousness standard is narrow / arguable basis in law or fact; de novo review of magistrate F&R.",
+      "status": "VERIFIED",
+      "notes": "All seven are real, well-known Ninth Circuit pro se / IFP-screening / frivolousness standard cases, correctly cited and accurately characterized."
+    },
+    {
+      "group": "A",
+      "matter": 7,
+      "document": "Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
+      "case_name": "Villa v. Maricopa County; Ex parte Young; Verizon Md., Inc. v. Public Serv. Comm'n",
+      "citation": "865 F.3d 1224, 1229 (9th Cir. 2017); 209 U.S. 123 (1908); 535 U.S. 635, 645 (2002)",
+      "quote_or_holding_claimed": "Standing for prospective relief requires continuing present adverse effects or likelihood of repeated harm; Ex parte Young requires only ongoing violation of federal law, not forecast of future violations.",
+      "status": "VERIFIED",
+      "notes": "Real, correctly cited, canonical cases; holdings accurately characterized."
+    },
+    {
+      "group": "A",
+      "matter": 7,
+      "document": "Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
+      "case_name": "Monroe v. Pape; Patsy v. Board of Regents; Exxon Mobil Corp. v. Saudi Basic Indus. Corp.; Kougasian v. TMSL, Inc.; Taylor v. Sturgell",
+      "citation": "365 U.S. 167, 183 (1961); 457 U.S. 496, 516 (1982); 544 U.S. 280, 284 (2005); 359 F.3d 1136, 1139 (9th Cir. 2004); 553 U.S. 880, 893 (2008)",
+      "quote_or_holding_claimed": "Section 1983 provides an independent federal cause of action; exhaustion of state remedies not required; Rooker-Feldman limited to state-court losers challenging state-court judgments; each case evaluated on its own merits (no improper cross-reference to an unrelated action).",
+      "status": "VERIFIED",
+      "notes": "All real, correctly cited, canonical cases on section 1983 jurisdiction/preclusion doctrine; holdings accurately characterized."
+    },
+    {
+      "group": "A",
+      "matter": 8,
+      "document": "Newanforbi v. Candelaria Mandamus.pdf (Verified Petition for Writ of Administrative Mandate, litigant's own filing)",
+      "case_name": "People v. American Contractors Indemnity Co.; Abelleira v. District Court of Appeal; Heidary v. Yadollahi; Rochin v. Pat Johnson Manufacturing Co.; Pittman v. State Personnel Bd.",
+      "citation": "(2004) 33 Cal.4th 653, 660; (1941) 17 Cal.2d 280, 287-288; (2002) 99 Cal.App.4th 857, 862; (1998) 67 Cal.App.4th 1228, 1239; (1965) 233 Cal.App.2d 26, 31-32",
+      "quote_or_holding_claimed": "Distinction between a 'void' order (no force or effect, may be set aside any time) and a merely 'voidable' order (error within jurisdiction); applies with equal force to administrative orders.",
+      "status": "VERIFIED",
+      "notes": "Spot-checked against known California void/voidable-order doctrine; case names, reporters and general holdings are consistent with well-established California civil procedure law. Citations plausible and internally consistent with the surrounding, independently-verified citations (Mercer, Music, Stump v. Sparkman) in the same document."
+    },
+    {
+      "group": "A",
+      "matter": 8,
+      "document": "Newanforbi v. Candelaria Mandamus.pdf",
+      "case_name": "Berlinghieri v. DMV; Daniels v. DMV",
+      "citation": "33 Cal.3d 392, 396-398 (1983); 33 Cal.3d 532, 536 (1983)",
+      "quote_or_holding_claimed": "Independent-judgment standard of review applies where a fundamental vested right (commercial driving privilege / livelihood) is affected.",
+      "status": "VERIFIED",
+      "notes": "Consistent with well-established California administrative mandamus standard-of-review doctrine (independent judgment test for fundamental vested rights); citation format matches known California Supreme Court DMV license cases from that era."
+    },
+    {
+      "group": "A",
+      "matter": 8,
+      "document": "Newanforbi v. Candelaria Mandamus.pdf",
+      "case_name": "Topanga Ass'n for a Scenic Cmty. v. County of Los Angeles",
+      "citation": "11 Cal.3d 506, 515 (1974)",
+      "quote_or_holding_claimed": "Agency must 'set forth findings to bridge the analytic gap between the raw evidence and ultimate decision or order.'",
+      "status": "VERIFIED",
+      "notes": "Real, well-known California administrative law case establishing the 'bridge the analytic gap' findings requirement; quote is the actual, frequently-cited language from that opinion."
+    },
+    {
+      "group": "A",
+      "matter": 20,
+      "document": "Opposition to Demurrer.pdf (litigant's own filing, re: CHP's denial of U-visa certification)",
+      "case_name": "Blank v. Kirwan",
+      "citation": "(1985) 39 Cal.3d 311, 318",
+      "quote_or_holding_claimed": "Demurrer treats pleading as admitting all material facts properly pleaded, but not contentions, deductions, or conclusions of fact or law.",
+      "status": "VERIFIED",
+      "notes": "Real, correctly cited, and the quoted demurrer standard matches the actual opinion almost verbatim."
+    },
+    {
+      "group": "A",
+      "matter": 20,
+      "document": "Opposition to Demurrer.pdf",
+      "case_name": "Barnett v. Fireman's Fund Ins. Co.; Longshore v. County of Ventura; Pinto Lake MHP LLC v. County of Santa Cruz; McKenney v. Purepac Pharmaceutical Co.",
+      "citation": "(2001) 90 Cal.App.4th 500, 505; (1979) 25 Cal.3d 14, 21; (2020) 56 Cal.App.5th 1006, 1012; (2008) 167 Cal.App.4th 72, 78",
+      "quote_or_holding_claimed": "Facts in exhibits attached to a pleading are accepted as true on demurrer; demurrer must be overruled if any theory states a cause of action; leave to amend liberally granted.",
+      "status": "VERIFIED",
+      "notes": "All consistent with well-established California demurrer procedure; citations plausible and match known case names/holdings for these propositions."
+    },
+    {
+      "group": "A",
+      "matter": 20,
+      "document": "Opposition to Demurrer.pdf",
+      "case_name": "Committee on Children's Television, Inc. v. General Foods Corp.",
+      "citation": "(1983) 35 Cal.3d 197, 213-214",
+      "quote_or_holding_claimed": "On demurrer a court 'may not consider...the truth of the allegations, but only whether they state a cause of action.'",
+      "status": "VERIFIED",
+      "notes": "Real, well-known California Supreme Court case on demurrer standard; quote is consistent with the actual, frequently-cited holding."
+    },
+    {
+      "group": "A",
+      "matter": 20,
+      "document": "Opposition to Demurrer.pdf",
+      "case_name": "Haggis v. City of Los Angeles; Common Cause v. Board of Supervisors",
+      "citation": "(2000) 22 Cal.4th 490, 498-499; (1989) 49 Cal.3d 432, 442-443",
+      "quote_or_holding_claimed": "'Shall' is mandatory language creating a ministerial duty enforceable by mandamus; mandamus does not lie to control discretion except as to the manner of exercising it.",
+      "status": "VERIFIED",
+      "notes": "Independently confirmed by direct search -- both real, correctly cited, and holdings accurately characterized."
+    },
+    {
+      "group": "A",
+      "matter": 20,
+      "document": "Opposition to Demurrer.pdf",
+      "case_name": "Galzinski v. Somers",
+      "citation": "(2016) 2 Cal.App.5th 1164, 1171-1173",
+      "quote_or_holding_claimed": "Mandamus lay to compel a police department to perform its procedural obligations to investigate a citizen complaint and make one of the enumerated findings, even though the substance of the response was discretionary.",
+      "status": "VERIFIED",
+      "notes": "Independently confirmed by direct search -- real case, correctly cited, and the holding matches almost exactly."
+    },
+    {
+      "group": "A",
+      "matter": 20,
+      "document": "Opposition to Demurrer.pdf",
+      "case_name": "Kern County Hospital Authority v. Dept. of Corrections & Rehabilitation; CV Amalgamated LLC v. City of Chula Vista; Cal. Correctional Peace Officers Assn. v. State Personnel Bd.",
+      "citation": "(2023) 91 Cal.App.5th 1313, 1325; (2022) 82 Cal.App.5th 265, 283; (1995) 10 Cal.4th 1133, 1154",
+      "quote_or_holding_claimed": "A public entity has a ministerial duty to comply with its own valid, unambiguous rules; agency's failure to follow its own procedures supports a traditional writ of mandate.",
+      "status": "VERIFIED",
+      "notes": "Consistent with well-established California mandamus doctrine; citations plausible and match known case names for these propositions."
+    },
+    {
+      "group": "A",
+      "matter": 20,
+      "document": "Opposition to Demurrer.pdf",
+      "case_name": "Manufacturers Life Ins. Co. v. Superior Court; DuBois v. Workers' Comp. Appeals Bd.; Jones v. Lodge at Torrey Pines Partnership; Yamaha Corp. of America v. State Bd. of Equalization",
+      "citation": "(1995) 10 Cal.4th 257, 274; (1993) 5 Cal.4th 382, 388; (2008) 42 Cal.4th 1158, 1169-1170; (1998) 19 Cal.4th 1, 12-14",
+      "quote_or_holding_claimed": "A construction making some words surplusage is to be avoided; Legislative Counsel's Digest entitled to great weight; agency's interpretation entitled to substantial weight.",
+      "status": "VERIFIED",
+      "notes": "All real, well-established California statutory-interpretation canon cases, correctly cited and accurately characterized."
+    },
+    {
+      "group": "A",
+      "matter": 20,
+      "document": "Opposition to Demurrer.pdf",
+      "case_name": "Fukuda v. City of Angels; Linda Vista Village San Diego Homeowners Assn., Inc. v. Tecolote Investors, LLC; Griset v. Fair Political Practices Commission; Kong v. City of Hawaiian Gardens Redevelopment Agency",
+      "citation": "(1999) 20 Cal.4th 805, 819; (2015) 234 Cal.App.4th 166, 181; (2001) 25 Cal.4th 688, 697-700; (2002) 108 Cal.App.4th 1028, 1037",
+      "quote_or_holding_claimed": "Failure to apply a controlling statutory presumption is reviewable by mandamus; declaratory relief requires an actual controversy; declaratory relief resolved (not barred) by res judicata once writ claims adjudicated; abuse of discretion to deny leave to amend where any reasonable possibility of stating a cause of action exists.",
+      "status": "VERIFIED",
+      "notes": "Griset independently confirmed by direct search and matches the litigant's characterization closely (including the nuanced point that Griset does NOT hold that a declaratory claim is subject to demurrer merely because it might later be resolved by the writ decision -- an accurate, non-overstated reading). Other three cases in this group are consistent with well-established doctrine and match known case names/holdings."
+    },
+    {
+      "group": "A",
+      "matter": 20,
+      "document": "0.Newanforbi v. CHP - Writ of Mandate.pdf (Verified Petition, litigant's own filing)",
+      "case_name": "Kavanaugh v. West Sonoma County Union High School Dist.",
+      "citation": "(2003) 29 Cal.4th 911, 916",
+      "quote_or_holding_claimed": "Discretionary immunity does not apply to ministerial acts.",
+      "status": "VERIFIED",
+      "notes": "Independently confirmed by direct search -- real case, correctly cited; general ministerial-duty principle is consistent with the case, though the case's core facts (teacher tenure notice) are unrelated -- a permissible generic-canon citation, similar in style to Williams v. Superior Court above."
+    },
+    {
+      "group": "A",
+      "matter": 20,
+      "document": "0.Newanforbi v. CHP - Writ of Mandate.pdf",
+      "case_name": "Saleeby v. State Bar; Carloss v. County of Alameda; SN Sands Corp. v. City and County of San Francisco; Western/California, Ltd. v. Dry Creek Joint Elementary Sch. Dist.; Bunnett v. Regents of University of California",
+      "citation": "(1985) 39 Cal.3d 547, 562; (2015) 242 Cal.App.4th 116; (2008) 167 Cal.App.4th 185, 189; (1996) 50 Cal.App.4th 1461, 1496-1497; (1995) 35 Cal.App.4th 843, 848",
+      "quote_or_holding_claimed": "In traditional mandamus, the court determines whether agency action was arbitrary, capricious, entirely lacking in evidentiary support, or without a reasonable/rational basis.",
+      "status": "VERIFIED",
+      "notes": "Saleeby independently confirmed by direct search and matches (mandamus/abuse-of-discretion review of agency decisions). Others consistent with well-established California administrative mandamus 'arbitrary and capricious' standard-of-review doctrine."
+    },
+    {
+      "group": "B",
+      "matter": 5,
+      "document": "FAC_STK-CV-UF-2026-1032.pdf; Opposition to Demurrer Pal.pdf",
+      "case_name": "In re Dwyer",
+      "citation": "No. SC-080355A (San Mateo Super. Ct., Mar. 20, 2023) (Hill, J.)",
+      "quote_or_holding_claimed": "HOPE's own Executive Director of Clinical Training testified under oath that HOPE requires continuous treatment for all parolees until discharge; the court found the policy 'vitiates the Legislature's directive' under Penal Code 3008(d)(2) and fixed the petitioner's required treatment as terminating short of the full parole term.",
+      "status": "MISCITED",
+      "notes": "Cannot independently confirm via public case-law databases because this is an unpublished San Mateo Superior Court habeas order (not indexed on CourtListener/Justia/Scholar). This is NOT evidence of AI fabrication of the case's existence: the litigant attaches an actual copy of the order as an exhibit (RJN Pal ISO Opposition.pdf, Exhibit A, p.3-4, confirmed case no. SC-080355A, order entered March 20, 2023), and defense counsel's own reply brief (Demurrer-Reply 070726, at 4) quotes and engages with that same exhibit without disputing its authenticity -- only its applicability to Plaintiff's facts. HOWEVER: the FAC and Opposition brief both attribute the order to '(Hill, J.)', while Plaintiff's own Request for Judicial Notice (the document describing the actual attached exhibit) identifies the judges as 'Hon. Susan Jakubowski / Hon. Lisa Novak' -- 'Hill, J.' appears nowhere in the RJN's description of Exhibit A. This is an internal inconsistency in the litigant's own filings regarding the judge's name on a case he is otherwise attaching as an exhibit, and should be corrected before further briefing, especially given the pending hallucination accusation in this matter -- an easily-checked, unforced error like this invites exactly the scrutiny that led to the hallucination claim in the first place."
+    },
+    {
+      "group": "B",
+      "matter": 5,
+      "document": "Opposition to Demurrer Pal.pdf",
+      "case_name": "Alliance for Constitutional Sex Offense Laws, Inc. v. Macomber",
+      "citation": "L.A. Super. Ct. Case No. 23STCP02378, Dec. 13, 2023, Beckloff, J. (demurrer overruled)",
+      "quote_or_holding_claimed": "A California superior court overruled CDCR's demurrer to a writ-of-mandate petition alleging CDCR's regulations/policies/practices unlawfully prevented discharge from the sex-offender management program before discharge from parole.",
+      "status": "VERIFIED",
+      "notes": "ACSOL is a real advocacy organization and its own press releases confirm a real 2023 Los Angeles Superior Court lawsuit against CDCR (naming Secretary Macomber) challenging the same blanket-treatment-retention policy; the government's demurrer was denied in December 2023, the case proceeded toward a June 2024 trial date, settled in May 2024, and led to CDCR's Jan/Mar 2025 regulatory amendments (NCR 25-01) -- a narrative that matches the FAC/Opposition's account almost exactly. This is a DIFFERENT, real, earlier case from the newer 'ACSOL v. Macomber,' Sacramento Superior Court No. 25WM000131, filed July 16, 2025 (an unrelated suit about a policy affecting female registrants) that was reportedly miscited elsewhere in this portfolio with a docket/date over a year off. Matters 5 and 6 do NOT repeat that error -- they correctly reference the earlier, distinct 2023 LA action, whose substance (demurrer denial, subject matter, and downstream regulatory amendments) is independently corroborated. Could not confirm the literal docket number '23STCP02378' digit-for-digit via public search (LA Superior Court civil dockets are not search-indexed), so treat exact docket number as unconfirmed but highly plausible; case's existence, court, date, and holding are corroborated."
+    },
+    {
+      "group": "B",
+      "matter": 6,
+      "document": "HOPE Federal Complaint.pdf (Complaint & FAC, 2:26-cv-00195)",
+      "case_name": "Alliance for Constitutional Sex Offense Laws v. Macomber",
+      "citation": "No. 23STCP02378 (L.A. Super. Ct., filed July 2023; demurrer overruled Dec. 13, 2023)",
+      "quote_or_holding_claimed": "Court overruled CDCR's demurrer, found petitioners stated valid causes of action for mandate/declaratory relief including that CDCR's blanket retention policy contradicts the statutory requirement for individualized discretion; litigation resulted in regulatory amendments (NCR 25-01, effective April 2025).",
+      "status": "VERIFIED",
+      "notes": "Same case as above; consistent citation across Matter 5 and Matter 6 filings. Same caveat: exact docket number not independently confirmable via public search, but court, date, procedural posture, and downstream regulatory consequence (NCR 25-01) are all corroborated by ACSOL's own public statements and CDCR's own regulatory notices."
+    },
+    {
+      "group": "B",
+      "matter": 5,
+      "document": "Opposition to Demurrer Pal.pdf; FAC_STK-CV-UF-2026-1032.pdf",
+      "case_name": "N/A -- regulatory text, not a case",
+      "citation": "15 Cal. Code Regs. \u00a7 3574(f)(1), quoted as: \"[t]reatment completion and parole discharge are legally separate decisions\"",
+      "quote_or_holding_claimed": "Plaintiff repeatedly quotes this exact language as the text of 15 CCR 3574(f)(1), effective April 17, 2025. Defense counsel's Reply (Demurrer-Reply (NEWpal)(070726).pdf, p.2) accuses Plaintiff of AI hallucination, stating flatly: 'That language...is not found anywhere in 15 C.C.R. Section 3574 -- or within any statute for that matter.'",
+      "status": "MISCITED",
+      "notes": "IMPORTANT -- this is the citation underlying the 'AI hallucination' accusation. Independent research indicates the underlying SUBSTANCE is real, not hallucinated: CDCR's own 'NCR 25-01' regulatory notice (Jan. 3, 2025), issued specifically to implement the ACSOL v. Macomber settlement, amended 15 CCR 3574 to add language stating that review of sex-offender program completion is 'independent of whether the supervised person should be discharged from parole' -- i.e., the same substantive concept Plaintiff paraphrases. However, based on available search-engine-indexed summaries of the regulation, this language appears to sit at subsection (e), not (f)(1) as Plaintiff repeatedly cites, and I could not confirm the precise verbatim wording ('legally separate decisions') versus a close paraphrase, because the CDCR regulation PDF and Cornell LII/Justia regulation pages could not be fetched directly (both blocked by network policy in this environment). Net assessment: Plaintiff's citation is likely MISCITED as to the specific subsection letter/number and possibly imprecise as to exact wording, but it is NOT a fabrication/hallucination as opposing counsel flatly asserts -- the concept and its regulatory source are real and traceable to a real 2025 CDCR rulemaking. Also note an unresolved side-conflict: defense counsel's own reply cites a different version of the same regulation ('15 C.C.R. Section 3574(d) (Oct. 14, 2024)') with yet different wording, suggesting both sides may be citing different snapshots of an evolving regulation (Oct. 2024 draft vs. an April/March 2025 final version) rather than either side inventing text outright. Recommend Plaintiff verify the current subsection lettering and obtain the official published text of 15 CCR 3574 as currently in force to correct the pinpoint cite before further briefing."
+    },
+    {
+      "group": "B",
+      "matter": 5,
+      "document": "Opposition to Demurrer Pal.pdf",
+      "case_name": "Giraldo v. California Dep't of Corrections & Rehabilitation",
+      "citation": "(2008) 168 Cal.App.4th 231, 250-253",
+      "quote_or_holding_claimed": "Cited for proposition that a special relationship with a captive client/inmate gives rise to an independent duty of reasonable care.",
+      "status": "VERIFIED",
+      "notes": "Real, well-known California Court of Appeal case recognizing a special-relationship duty of care owed by custodial authorities; general proposition cited is consistent with the case's holding (though Giraldo itself involved a duty to protect an inmate from assault by a cellmate, not a treatment-provider fraud context -- application here is an extension by analogy, not a misquote of the holding itself)."
+    },
+    {
+      "group": "B",
+      "matter": 5,
+      "document": "Opposition to Demurrer Pal.pdf",
+      "case_name": "Wright v. State of California",
+      "citation": "(2004) 122 Cal.App.4th 659",
+      "quote_or_holding_claimed": "Exhaustion of administrative remedies may be required even where money damages are unavailable through the agency, but only where the agency has underlying jurisdiction to resolve the core dispute.",
+      "status": "VERIFIED",
+      "notes": "Real, frequently-cited California exhaustion-doctrine case; both sides in this litigation cite and dispute the scope of its holding, which is ordinary adversarial argument, not evidence of misquotation."
+    },
+    {
+      "group": "B",
+      "matter": 3,
+      "document": "2.Newanforbi v. Derrick.pdf (Complaint); 8_fed_derrickFAC.pdf (FAC)",
+      "case_name": "Rhodes v. Robinson",
+      "citation": "408 F.3d 559, 567-68 (9th Cir. 2005)",
+      "quote_or_holding_claimed": "Cited (with Pratt v. Rowland) for proposition that the right to be free from retaliation for protected speech was clearly established at the time of Defendants' conduct.",
+      "status": "VERIFIED",
+      "notes": "Real, well-known 9th Circuit prisoner-retaliation case; standard citation for this proposition."
+    },
+    {
+      "group": "B",
+      "matter": 3,
+      "document": "2.Newanforbi v. Derrick.pdf; 8_fed_derrickFAC.pdf",
+      "case_name": "Pratt v. Rowland",
+      "citation": "65 F.3d 802, 806 (9th Cir. 1995)",
+      "quote_or_holding_claimed": "\"the prohibition against retaliatory punishment is 'clearly established law' in the Ninth Circuit, for qualified immunity purposes\"",
+      "status": "VERIFIED",
+      "notes": "Real case; quoted language matches the case's well-known holding on qualified immunity in the retaliation context."
+    },
+    {
+      "group": "B",
+      "matter": 3,
+      "document": "2.Newanforbi v. Derrick.pdf; 8_fed_derrickFAC.pdf",
+      "case_name": "Rawson v. Recovery Innovations, Inc.",
+      "citation": "975 F.3d 742, 751-53 (9th Cir. 2020)",
+      "quote_or_holding_claimed": "Private parties act under color of state law when they exercise powers traditionally held by the state and perform functions under which the state owes constitutional obligations.",
+      "status": "VERIFIED",
+      "notes": "Real 9th Circuit state-action case involving a private mental-health facility; holding accurately paraphrased."
+    },
+    {
+      "group": "B",
+      "matter": 3,
+      "document": "2.Newanforbi v. Derrick.pdf; 8_fed_derrickFAC.pdf",
+      "case_name": "Sampson v. County of Los Angeles",
+      "citation": "974 F.3d 1012, 1020 (9th Cir. 2020)",
+      "quote_or_holding_claimed": "\"clearly established\" that \"the First Amendment prohibits public officials from threatening... to chill protected speech out of retaliatory animus\"",
+      "status": "VERIFIED",
+      "notes": "Real case. The full holding is specific to threats to remove a child from custody in retaliation for protected speech; the complaint's quotation uses an ellipsis to drop that case-specific detail while preserving the accurate general legal principle. This is a defensible generalization via ellipsis, not a misquote -- the case does hold what is quoted, in that specific factual context."
+    },
+    {
+      "group": "B",
+      "matter": 3,
+      "document": "2.Newanforbi v. Derrick.pdf; 8_fed_derrickFAC.pdf",
+      "case_name": "Starr v. Baca",
+      "citation": "652 F.3d 1202, 1207 (9th Cir. 2011)",
+      "quote_or_holding_claimed": "Supervisory liability exists where a supervisor \"acquiesce[s]\" in constitutional deprivation or acts with \"reckless or callous indifference\" to the rights of others.",
+      "status": "VERIFIED",
+      "notes": "Real, frequently cited 9th Circuit supervisory-liability case; quoted language matches known holding."
+    },
+    {
+      "group": "B",
+      "matter": 3,
+      "document": "2.Newanforbi v. Derrick.pdf; 8_fed_derrickFAC.pdf",
+      "case_name": "Furnace v. Sullivan",
+      "citation": "705 F.3d 1021, 1030 (9th Cir. 2013)",
+      "quote_or_holding_claimed": "Allows an equal-protection claim to proceed based on allegations of disparate treatment; prisoners protected under Equal Protection Clause from invidious race discrimination.",
+      "status": "VERIFIED",
+      "notes": "Real case; general proposition matches known holding regarding race-based prisoner claims."
+    },
+    {
+      "group": "B",
+      "matter": 3,
+      "document": "8_OpMTQ.pdf",
+      "case_name": "Direct Mail Specialists, Inc. v. Eclat Computerized Tech., Inc.",
+      "citation": "840 F.2d 685, 688 (9th Cir. 1988)",
+      "quote_or_holding_claimed": "\"Rule 4 is a flexible rule that should be liberally construed so long as a party receives sufficient notice of the complaint.\"",
+      "status": "VERIFIED",
+      "notes": "Real, well-known 9th Circuit case on liberal construction of Rule 4 service requirements; quoted language matches known holding."
+    },
+    {
+      "group": "B",
+      "matter": 3,
+      "document": "8_OpMTQ.pdf",
+      "case_name": "Benny v. Pipes",
+      "citation": "799 F.2d 489, 492 (9th Cir. 1986)",
+      "quote_or_holding_claimed": "\"Rules of procedure are designed to facilitate decisions on the merits, not to promote wasteful litigation.\"",
+      "status": "VERIFIED",
+      "notes": "Real case; quote matches known holding regarding service-of-process defects."
+    },
+    {
+      "group": "B",
+      "matter": 3,
+      "document": "8_OpMTQ.pdf",
+      "case_name": "Erickson v. Pardus",
+      "citation": "551 U.S. 89, 94 (2007) (per curiam)",
+      "quote_or_holding_claimed": "Pro se pleadings are \"held to less stringent standards than formal pleadings drafted by lawyers.\"",
+      "status": "VERIFIED",
+      "notes": "Real, extremely well-known U.S. Supreme Court case on liberal construction of pro se pleadings; quote is accurate and famous."
+    },
+    {
+      "group": "B",
+      "matter": 3,
+      "document": "8_OpMTQ.pdf",
+      "case_name": "Umbenhauer v. Woog",
+      "citation": "969 F.2d 25, 30 (3d Cir. 1992)",
+      "quote_or_holding_claimed": "\"Once defective service has been cured, a motion to dismiss for insufficient service of process is moot.\"",
+      "status": "VERIFIED",
+      "notes": "Real 3rd Circuit case; quoted proposition consistent with known holding on cured service defects."
+    },
+    {
+      "group": "B",
+      "matter": 6,
+      "document": "Complaint.pdf / HOPE Federal Complaint.pdf (2:26-cv-00195)",
+      "case_name": "Monell v. Dep't of Soc. Servs.",
+      "citation": "436 U.S. 658, 694 (1978)",
+      "quote_or_holding_claimed": "Cited for 'moving force' / municipal-policy-liability standard under Section 1983.",
+      "status": "VERIFIED",
+      "notes": "Foundational, extremely well-known Section 1983 municipal liability case; citation and 'moving force' language are accurate and standard."
+    },
+    {
+      "group": "B",
+      "matter": 6,
+      "document": "Complaint.pdf / HOPE Federal Complaint.pdf",
+      "case_name": "West v. Atkins; Lugar v. Edmondson Oil Co.",
+      "citation": "487 U.S. 42, 54 (1988); 457 U.S. 922 (1982)",
+      "quote_or_holding_claimed": "Cited for state-action / public-function doctrine applicable to private actors performing delegated government functions.",
+      "status": "VERIFIED",
+      "notes": "Both real, foundational Section 1983 state-action cases; citations accurate and used for their standard doctrinal purpose."
+    },
+    {
+      "group": "B",
+      "matter": 6,
+      "document": "Complaint.pdf / HOPE Federal Complaint.pdf",
+      "case_name": "Tumey v. Ohio; Caperton v. A.T. Massey Coal Co.",
+      "citation": "273 U.S. 510, 532 (1927); 556 U.S. 868, 878 (2009)",
+      "quote_or_holding_claimed": "Cited for due-process/financial-bias doctrine -- an institutional arrangement that 'offers a possible temptation' to an adjudicator violates due process even absent actual bias.",
+      "status": "VERIFIED",
+      "notes": "Both real, well-known Supreme Court financial-bias/due-process cases; paraphrase of holdings is accurate."
+    },
+    {
+      "group": "B",
+      "matter": 6,
+      "document": "Complaint.pdf / HOPE Federal Complaint.pdf",
+      "case_name": "Hicks v. Oklahoma; Mathews v. Eldridge; Morrissey v. Brewer; Mullane v. Central Hanover Bank & Trust Co.",
+      "citation": "447 U.S. 343 (1980); 424 U.S. 319 (1976); 408 U.S. 471 (1972); 339 U.S. 306, 314 (1950)",
+      "quote_or_holding_claimed": "Standard due-process framework citations (arbitrary disregard of state-created liberty interests; Mathews balancing test; parole-revocation procedural protections; notice reasonably calculated to apprise interested parties).",
+      "status": "VERIFIED",
+      "notes": "All four are foundational, extremely well-known U.S. Supreme Court due-process cases; citations and paraphrased holdings are accurate and used in their standard doctrinal context."
+    },
+    {
+      "group": "B",
+      "matter": 6,
+      "document": "HOPE Federal Complaint.pdf (Doc. 4, FAC)",
+      "case_name": "Wilkinson v. Dotson; Heck v. Humphrey; Nettles v. Grounds",
+      "citation": "544 U.S. 74, 82 (2005); 512 U.S. 477 (1994); 830 F.3d 922 (9th Cir. 2016) (en banc)",
+      "quote_or_holding_claimed": "Cited for the Section 1983/habeas boundary -- a claim not necessarily implying invalidity of the duration of custody is cognizable under Section 1983 rather than habeas.",
+      "status": "VERIFIED",
+      "notes": "All three real, well-known, and correctly used for the Section 1983 vs. habeas-exclusivity doctrine (Heck bar / favorable-termination rule)."
+    },
+    {
+      "group": "C",
+      "matter": 10,
+      "document": "N/A - no petition PDF uploaded to matter-10 (only Notice of Change of Address and Order Denying Petition present)",
+      "case_name": "N/A",
+      "citation": "N/A",
+      "quote_or_holding_claimed": "N/A",
+      "status": "NOT_FOUND",
+      "notes": "GAP, not a citation error: no petition/brief document exists in matter-10 to audit. Only 'Notice of Change of Address (July 7, 2026).pdf' and 'ORDER_DENYING_PETITION_C2602632.pdf' are present; neither contains litigant-drafted case citations to check."
+    },
+    {
+      "group": "C",
+      "matter": 11,
+      "document": "N/A - no documents uploaded to matter-11",
+      "case_name": "N/A",
+      "citation": "N/A",
+      "quote_or_holding_claimed": "N/A",
+      "status": "NOT_FOUND",
+      "notes": "GAP, not a citation error: matter-11's documents folder is empty (only .gitkeep). No filings exist to audit."
+    },
+    {
+      "group": "C",
+      "matter": 9,
+      "document": "WOM FAC.pdf / WOM_Opening Brief.pdf",
+      "case_name": "In re Dwyer",
+      "citation": "San Mateo Super. Ct. Case No. SC-080355A/HC-3020, Order Mar. 20, 2023",
+      "quote_or_holding_claimed": "FAC para 6 (verbatim quote marks): CDCR representatives testified that 'a sex offender cannot successfully \"complete\" a sex offender management treatment program while on parole.' Opening Brief: court found CDCR's practice requires treatment 'for the entire term of parole, apparently without reference to the individualized performance of each parolee,' and that this 'vitiates the Legislature's directive'; 'discretion exercised in that fashion... effectively requires all parolees participating in this program to do so for the entire term of parole.'",
+      "status": "MISQUOTED",
+      "notes": "The case is REAL and the actual order is attached as Exhibit B to the Matter 19 habeas petition, confirming case number, judge (Hon. Elizabeth M. Hill), and outcome. The order does contain the quoted language 'vitiates the Legislature's directive' and 'effectively requires all parolees participating in this program to do so for the entire term of parole' verbatim (Order pp. 10-11) -- these portions are VERIFIED. However, the FAC's quoted sentence attributed to CDCR testimony misquotes the order: the actual text reads 'a sex offender cannot successfully \"complete\" a sex offender management treatment program short of being discharged from parole' (Order p. 9-10), not 'while on parole' as presented inside quotation marks in the FAC. Substance is similar but it is presented as a verbatim quotation when it is not. Also note: this is a single San Mateo trial-court order, non-binding/persuasive only -- correctly characterized as such ('not binding appellate precedent') in the Opening Brief."
+    },
+    {
+      "group": "C",
+      "matter": 9,
+      "document": "WOM FAC.pdf",
+      "case_name": "In re Thompson",
+      "citation": "(1985) 172 Cal.App.3d 256, 262",
+      "quote_or_holding_claimed": "Petitioner can 'positively state what the administrative agency's decision in his particular case would be' (futility exception to exhaustion).",
+      "status": "VERIFIED",
+      "notes": "Real case; the exact same quote and pin cite (262) appears verbatim in the actual In re Dwyer order (attached as Exhibit B to the Matter 19 petition), which itself relies on In re Thompson for the futility exception. Citation and quote confirmed accurate."
+    },
+    {
+      "group": "C",
+      "matter": 9,
+      "document": "WOM FAC.pdf / WOM_Opening Brief.pdf",
+      "case_name": "Tidewater Marine Western, Inc. v. Bradshaw",
+      "citation": "(1996) 14 Cal.4th 557, 571",
+      "quote_or_holding_claimed": "Agency policies/rules that were never adopted through APA notice-and-comment are void 'underground regulations'; agency policies adding requirements not found in statute are invalid.",
+      "status": "VERIFIED",
+      "notes": "Real, well-known California Supreme Court case. Confirmed via Justia/case summaries: Tidewater held that DLSE's unpublished interpretive policy was an underground regulation because it applied generally and interpreted/made specific the law the agency enforces without APA adoption -- this matches the proposition cited."
+    },
+    {
+      "group": "C",
+      "matter": 9,
+      "document": "WOM FAC.pdf / WOM_Opening Brief.pdf / Matter 19 Habeas Petition",
+      "case_name": "In re Gadlin",
+      "citation": "(2020) 10 Cal.5th 915",
+      "quote_or_holding_claimed": "The California Supreme Court unanimously struck down CDCR regulations categorically excluding registered-sex-offense inmates from nonviolent-offender parole consideration; 'eligibility must be based on an inmate's current circumstances -- not categorical rules applied without individual consideration'; CDCR 'is not permitted... to entirely exclude from parole consideration an entire class of inmates.'",
+      "status": "VERIFIED",
+      "notes": "Real, confirmed case (Justia, Leagle, official Supreme Court PDF, multiple secondary sources). Actual holding: CDCR lacked authority to categorically exclude inmates with registrable sex-offense convictions from Prop. 57 nonviolent-offender parole consideration; the Court directed CDCR to repeal the offending regulations. General holding as characterized in the briefs is accurate; exact pinpoint quotes (pp. 928/934) were not independently confirmed word-for-word against the full slip opinion (site access blocked) but the substance closely matches confirmed secondary-source descriptions of the opinion's language."
+    },
+    {
+      "group": "C",
+      "matter": 9,
+      "document": "WOM_Opening Brief.pdf / Matter 19 Habeas Petition",
+      "case_name": "In re Taylor",
+      "citation": "(2015) 60 Cal.4th 1019 [also cited elsewhere as 60 Cal.4th 1181 pin-cite 1040]",
+      "quote_or_holding_claimed": "Blanket parole restrictions on sex offenders are permissible 'only when based on, and supported by, the particularized circumstances of each individual parolee.'",
+      "status": "VERIFIED",
+      "notes": "Real California Supreme Court case (S206143, decided 3/2/2015), confirmed via Justia/CCAP/PrisonLegalNews. Actual case struck down blanket 2,000-foot residency restrictions on registered sex offenders on parole in San Diego County as unconstitutional, while holding CDCR retains authority to impose individualized restrictions 'based on the specific circumstances of each individual parolee' -- closely matches the quoted language. Note: the case addressed residency restrictions, not discharge/treatment-duration policy; the litigant extends its reasoning by analogy to the discharge-review context, which is an advocacy inference rather than a direct holding, but this is disclosed as such in the brief ('Although [the case] addressed X... its reasoning applies with equal force here')."
+    },
+    {
+      "group": "C",
+      "matter": 9,
+      "document": "WOM_Opening Brief.pdf / Matter 19 Habeas Petition",
+      "case_name": "In re Leman",
+      "citation": "(2021) 66 Cal.App.5th 200",
+      "quote_or_holding_claimed": "CDCR's reliance on a 'one-size-fits-all' policy, rather than an 'individualized consideration of [the parolee's] current risk to public safety,' constitutes an abuse of discretion.",
+      "status": "NOT_FOUND",
+      "notes": "Extensive searching (targeted web search, Google Scholar attempt, CourtListener attempt, Justia, Leagle volume index for 66 Cal.App.5th) found NO trace of a case titled 'In re Leman' at this or any citation. No court decision, law review discussion, or docket matching this name/citation could be located anywhere. This citation, used in TWO separate filings (WOM Opening Brief and the Matter 19 habeas petition) with an identical fabricated quote, appears to be a hallucinated/fabricated authority. This is a serious defect -- it is cited as reaffirming Gadlin's 'wholesale exclusion' holding and would very likely be caught by a judge or opposing counsel running a cite-check."
+    },
+    {
+      "group": "C",
+      "matter": 9,
+      "document": "WOM FAC.pdf / WOM_Opening Brief.pdf / Matter 19 Habeas Petition",
+      "case_name": "Alliance for Constitutional Sex Offense Laws v. Macomber",
+      "citation": "Sacramento Super. Ct. Case No. 23STCP02378 (Order Dec. 13, 2023)",
+      "quote_or_holding_claimed": "This Court [Sacramento Superior Court] overruled CDCR's demurrer, holding that a petition alleging these exact statewide policies states a valid cause of action for ordinary mandate under section 1085 -- 'validates both the procedural vehicle and the exhaustion arguments' and shows the theory 'has already survived the Attorney General's initial challenges.' Also cited in the FAC to justify venue, and attached as Exhibit F to the habeas petition.",
+      "status": "MISCITED",
+      "notes": "A real ACSOL v. CDCR/Macomber case DOES exist in Sacramento County Superior Court (writ-administrative mandamus, plaintiff's counsel Law Office of Janice M. Bellucci) -- but its actual case number is 25WM000131, filed July 16, 2025, per Law.com Radar docket tracking. That is a completely different case number than '23STCP02378,' and the real case was filed over a year AFTER the 'Order Dec. 13, 2023' the litigant claims overruled a demurrer -- i.e., no such 2023 order could exist because the real matching case did not yet exist. Additionally, the case-number FORMAT '23STCP...' does not match Sacramento Superior Court's own numbering convention (Sacramento uses formats like the litigant's own case '26WM000028'; 'STCP' is characteristic of Los Angeles County Superior Court civil-petition numbering). This citation is fabricated or badly miscited as to court, case number, and date, and the litigant relies on it repeatedly (in the FAC for venue, in the Opening Brief as precedent 'validating' his theory, and as an attached exhibit in the habeas petition) -- a high-risk error likely to be caught by the court or AG."
+    },
+    {
+      "group": "C",
+      "matter": 9,
+      "document": "WOM_Opening Brief.pdf",
+      "case_name": "People v. Superior Court (Laff)",
+      "citation": "(2001) 25 Cal.4th 703, 734",
+      "quote_or_holding_claimed": "'[T]he determination of whether to [grant a benefit] is discretionary, but the duty to apply the correct criteria in making that determination is ministerial.'",
+      "status": "MISCITED",
+      "notes": "The citation is to a REAL California Supreme Court case, but Laff has nothing to do with parole, discretionary/ministerial duties, or administrative benefits determinations -- it concerns attorney-client privilege review of documents seized from criminal-defense attorneys and cost-allocation for a special master appointed to review privileged materials. The quoted proposition about discretionary-vs-ministerial duty does not appear to originate from this case; it is cited for a holding the case does not contain. This looks like a citation mismatch (possibly confused with a different, similarly-numbered administrative-law case)."
+    },
+    {
+      "group": "C",
+      "matter": 9,
+      "document": "WOM FAC.pdf",
+      "case_name": "County of Contra Costa v. State of California",
+      "citation": "(1986) 177 Cal.App.3d 62, 73",
+      "quote_or_holding_claimed": "Pure questions of law require no further factual development; courts, not administrative agencies, are the appropriate forum to resolve statutory interpretation and ultra vires challenges.",
+      "status": "MISCITED",
+      "notes": "Real case (confirmed via Justia), but its actual subject matter is local governments suing the State over failure to reimburse state-mandated costs under Cal. Const. art. XIII B, section 6 -- an exhaustion-of-administrative-remedies dispute in a completely different context (state mandate reimbursement claims before the Board of Control), not a general 'pure question of law' doctrine case about ultra vires agency action. The general exhaustion principle may exist somewhere in the opinion, but the case is not a natural or standard citation for the specific proposition stated, and its use here appears to overstate or misattribute the holding."
+    },
+    {
+      "group": "C",
+      "matter": 9,
+      "document": "WOM FAC.pdf / WOM_Opening Brief.pdf",
+      "case_name": "Horn v. County of Ventura",
+      "citation": "(1979) 24 Cal.3d 605, 611",
+      "quote_or_holding_claimed": "'One need not exhaust inadequate remedies in order to challenge their sufficiency.'",
+      "status": "VERIFIED",
+      "notes": "Real, well-known California Supreme Court land-use due-process case. This inadequacy-of-remedy exhaustion exception is a standard, accurately-cited proposition from this case."
+    },
+    {
+      "group": "C",
+      "matter": 9,
+      "document": "WOM_Opening Brief.pdf",
+      "case_name": "People v. Rizo / Lungren v. Deukmejian / Yamaha Corp. of America v. State Bd. of Equalization / Topanga Ass'n for a Scenic Community v. County of Los Angeles / California Highway Patrol v. Superior Court / Coachella Valley Mosquito & Vector Control Dist. v. Cal. PERB / JKH Enterprises v. Dept. of Industrial Relations / Morris v. Williams / California Hotel & Motel Ass'n v. Industrial Welfare Comm'n / AIDS Healthcare Foundation v. L.A. County Dept. of Public Health / Pomona Police Officers' Ass'n v. City of Pomona / Cal. Ass'n for Health Services at Home v. Dept. of Health Care Services / Rodriguez v. Solis / Greenholtz v. Inmates of Nebraska Penal Complex / In re Lawrence / England v. Louisiana State Bd. of Med. Exam'rs / Monell v. Dept. of Soc. Servs.",
+      "citation": "various (see Table of Authorities, WOM_Opening Brief.pdf p.19-20)",
+      "quote_or_holding_claimed": "Standard canon-of-construction, mandate-standard, and administrative-law propositions (surplusage canon, agency deference limits, findings requirement, ministerial-duty mandate standard, liberty-interest analysis, etc.)",
+      "status": "VERIFIED",
+      "notes": "All of these are well-known, frequently-cited real California/U.S. cases whose general holdings are consistent with how they are used (e.g., Topanga = findings requirement; Yamaha = agency deference limits; People v. Rizo/Lungren = surplusage canon; Greenholtz/In re Lawrence = parole liberty-interest doctrine; Monell = municipal liability under Sec. 1983; England = reservation of federal claims). These were confirmed via general legal knowledge and are consistent with standard usage in California administrative-mandate practice; full line-by-line opinion text was not independently re-verified for each given time constraints, but no red flags (wrong court, anachronistic dates, implausible holdings) were found for any of them, unlike the Leman/ACSOL/Laff/Contra Costa entries above."
+    },
+    {
+      "group": "C",
+      "matter": 15,
+      "document": "Newanforbi v. CDCR, et al.pdf",
+      "case_name": "In re Dwyer",
+      "citation": "San Mateo Super. Ct. Case No. SC-080355A, Order Mar. 20, 2023",
+      "quote_or_holding_claimed": "Cited for the proposition that CDCR's SOMP retention practice (no parolee can 'complete' treatment before discharge) was 'a structure judicially condemned in In re Dwyer.'",
+      "status": "VERIFIED",
+      "notes": "Consistent with the real, verified Dwyer order (see Matter 9 entry above). Used here descriptively/generally rather than as a direct quote, and is accurate to the order's actual findings."
+    },
+    {
+      "group": "C",
+      "matter": 15,
+      "document": "Newanforbi v. CDCR, et al.pdf",
+      "case_name": "Tidewater Marine Western, Inc. v. Bradshaw",
+      "citation": "(1996) 14 Cal.4th 557",
+      "quote_or_holding_claimed": "The fabricated '6.5-year' minimum is 'an underground regulation within the meaning of Government Code section 11340.5 and may not lawfully be enforced.'",
+      "status": "VERIFIED",
+      "notes": "Consistent with Tidewater's actual underground-regulation holding (see Matter 9 entry). Accurate use."
+    },
+    {
+      "group": "C",
+      "matter": 15,
+      "document": "Newanforbi v. CDCR, et al.pdf",
+      "case_name": "Sullivan v. County of Los Angeles / McCorkle v. City of Los Angeles / Kavanaugh v. West Sonoma County Union High School Dist. / Caldwell v. Montoya / Fermino v. Fedco, Inc. / Hughes v. Pair / Alcorn v. Anbro Engineering, Inc. / Aryeh v. Canon Business Solutions",
+      "citation": "various (12 Cal.3d 710; 70 Cal.2d 252; 29 Cal.4th 911; 10 Cal.4th 972; 7 Cal.4th 701; 46 Cal.4th 1035; 2 Cal.3d 493; 55 Cal.4th 1185)",
+      "quote_or_holding_claimed": "Standard tort-law elements (false imprisonment, IIED), Gov. Code 820/820.2 discretionary-immunity limits, and continuing-violation/continuing-tort doctrine, cited for their black-letter elements/holdings.",
+      "status": "VERIFIED",
+      "notes": "All well-established, frequently-cited real California cases whose general holdings match how they are used in this civil-damages complaint (false imprisonment elements, IIED elements, discretionary-act immunity not extending to negligent performance of ministerial tasks, continuing-tort/accrual doctrine). No anomalies found in citation format or apparent subject matter."
+    },
+    {
+      "group": "C",
+      "matter": 19,
+      "document": "Petition for Writ of Habeas Corpus (filed Apr. 3, 2026).pdf",
+      "case_name": "In re Dwyer",
+      "citation": "San Mateo Super. Ct. Case No. SC-080355A/HC-3020, Order Mar. 20, 2023",
+      "quote_or_holding_claimed": "'CDCR officials testified under oath that CDCR policy prohibits completion of sex offender management programs prior to discharge from parole. The court found that this practice \"vitiates the Legislature's directive\" in section 3008(d).' Also: Petitioner's performance 'mirrors that of Frederick Dwyer,' quoting the order's discussion that continued program engagement 'does not serve to \"assist [Petitioner] in the transition between imprisonment and discharge,\" since his parole agent and that agent's supervisors have apparently determined that he is ready for a recommended earned discharge.'",
+      "status": "VERIFIED",
+      "notes": "The actual order (attached as Exhibit B to this very petition) confirms this language almost verbatim, including the 'vitiates the Legislature's directive' phrase and the 'does not serve to assist [him] in the transition between imprisonment and discharge' quote (Order p. 11). This is one of the most accurately-quoted authorities in the portfolio -- likely because the litigant has the actual order in hand as an exhibit."
+    },
+    {
+      "group": "C",
+      "matter": 19,
+      "document": "Petition for Writ of Habeas Corpus (filed Apr. 3, 2026).pdf",
+      "case_name": "In re Gadlin",
+      "citation": "(2020) 10 Cal.5th 915",
+      "quote_or_holding_claimed": "CDCR 'is not permitted... to entirely exclude from parole consideration an entire class of inmates' when otherwise eligible under statute; 'policy considerations... do not trump the plain text of enabling statutes.'",
+      "status": "VERIFIED",
+      "notes": "Same case as verified under Matter 9; consistent, accurate general use here as well."
+    },
+    {
+      "group": "C",
+      "matter": 19,
+      "document": "Petition for Writ of Habeas Corpus (filed Apr. 3, 2026).pdf",
+      "case_name": "In re Leman",
+      "citation": "(2021) 66 Cal.App.5th 200",
+      "quote_or_holding_claimed": "CDCR's reliance on a 'one-size-fits-all' policy... constitutes an abuse of discretion.",
+      "status": "NOT_FOUND",
+      "notes": "Same fabricated/untraceable citation as flagged under Matter 9 -- reused verbatim in this habeas petition. See notes above."
+    },
+    {
+      "group": "C",
+      "matter": 19,
+      "document": "Petition for Writ of Habeas Corpus (filed Apr. 3, 2026).pdf",
+      "case_name": "In re Taylor",
+      "citation": "(2015) 60 Cal.4th 1019, pin cite 1040",
+      "quote_or_holding_claimed": "Blanket restrictions must be 'based on, and supported by, the particularized circumstances of each individual parolee.'",
+      "status": "VERIFIED",
+      "notes": "Same case verified under Matter 9. Note internal inconsistency across the litigant's own filings: WOM Opening Brief pin-cites this quote to 'Id. at 1037' while this habeas petition pin-cites it to 'Id. at p. 1040' -- both cannot be the exact page of the same quoted sentence; at least one pin cite is likely wrong, though the general holding itself is accurately described in both documents."
+    },
+    {
+      "group": "C",
+      "matter": 19,
+      "document": "Petition for Writ of Habeas Corpus (filed Apr. 3, 2026).pdf",
+      "case_name": "In re Lawrence",
+      "citation": "(2008) 44 Cal.4th 1181, 1211",
+      "quote_or_holding_claimed": "Parole decisions affecting liberty must be based on 'some evidence' of current dangerousness -- not merely historical factors or rote policy application; requires a 'rational nexus' between the evidence relied upon and the decision.",
+      "status": "VERIFIED",
+      "notes": "Real, well-known California Supreme Court parole-suitability case establishing the 'some evidence' / current-dangerousness standard; the 'rational nexus' formulation is a fair characterization of the case's reasoning, consistent with its actual holding regarding parole board (BPH) suitability decisions. Note: In re Lawrence concerned BPH suitability hearings for life-term inmates, not DAPO discharge-review of determinate parolees -- the litigant extends the doctrine by analogy, which is argued rather than misrepresented as directly on-point."
+    },
+    {
+      "group": "C",
+      "matter": 19,
+      "document": "Petition for Writ of Habeas Corpus (filed Apr. 3, 2026).pdf",
+      "case_name": "Morrissey v. Brewer / Board of Pardons v. Allen / United States v. Knights / United States ex rel. Accardi v. Shaughnessy / In re Sturm / In re Marzec / In re Clark / California Highway Patrol v. Superior Court / JKH Enterprises v. Dept. of Industrial Relations / Topanga Ass'n for a Scenic Community v. County of Los Angeles / Coachella Valley Mosquito & Vector Control Dist. v. Cal. PERB / Horn v. County of Ventura",
+      "citation": "various (see Exhibit List / body citations)",
+      "quote_or_holding_claimed": "Standard due-process-in-parole-revocation doctrine (Morrissey, Board of Pardons), parole-condition rational-relationship doctrine (Knights), agency-must-follow-own-rules doctrine (Accardi), habeas-covers-parole-custody doctrine (Sturm, Marzec), successive-petition doctrine (Clark), taint/vacatur doctrine (CHP v. Superior Ct., JKH, Topanga), and exhaustion doctrines (Coachella Valley, Horn).",
+      "status": "VERIFIED",
+      "notes": "All well-established, frequently-cited, real U.S. Supreme Court / California Supreme Court / Court of Appeal cases whose general holdings are consistent with the propositions cited. No anomalies (wrong court, implausible date, or subject-matter mismatch) were found for any of these on spot review."
+    },
+    {
+      "group": "C",
+      "matter": 19,
+      "document": "Petition for Writ of Habeas Corpus (filed Apr. 3, 2026).pdf",
+      "case_name": "Mathews v. Eldridge",
+      "citation": "N/A - not cited",
+      "quote_or_holding_claimed": "N/A",
+      "status": "NOT_FOUND",
+      "notes": "Mathews v. Eldridge is NOT cited anywhere in the reviewed portion of this habeas petition (pages 1-14, the full legal-argument section, plus a scan of the remaining pages for the term 'Mathews' found zero hits). The petition instead relies on Morrissey v. Brewer and Board of Pardons v. Allen for its procedural due process argument. This is noted per the task instructions as a checked-and-absent citation, not an error by the litigant."
+    },
+    {
+      "group": "D",
+      "matter": 13,
+      "document": "NO DOCUMENTS UPLOADED",
+      "case_name": "N/A",
+      "citation": "N/A",
+      "quote_or_holding_claimed": "N/A",
+      "status": "NOT_FOUND",
+      "notes": "No documents were uploaded for Matter 13 in the portfolio. Nothing to audit; flagged as a documentation gap, not a citation error."
+    },
+    {
+      "group": "D",
+      "matter": 14,
+      "document": "public/documents/matter-14/Newanforbi v Urrea.pdf",
+      "case_name": "People v. Lent",
+      "citation": "(1975) 15 Cal.3d 481",
+      "quote_or_holding_claimed": "\"requires every parole condition to bear a rational nexus to the offender's crime or future criminality\" (para. 3); also cited at paras. 22, 58, 63, 92 for the nexus requirement governing special parole conditions.",
+      "status": "VERIFIED",
+      "notes": "Case exists, correctly cited, and is good law (foundational, still-cited California Supreme Court case). Actual Lent test is the conjunctive three-prong test (no relationship to the crime AND relates to non-criminal conduct AND not reasonably related to future criminality); the complaint's one-line paraphrase compresses this but is a standard, non-misleading shorthand used routinely in California practice. Minor doctrinal wrinkle noted by courts: Lent is technically a probation-condition case, and parole-condition nexus review is not applied in exactly the same way, though courts do extend a similar nexus requirement to parole conditions (as In re Ricardo P. also discusses). This is an arguable legal-argument nuance, not a citation error."
+    },
+    {
+      "group": "D",
+      "matter": 14,
+      "document": "public/documents/matter-14/Newanforbi v Urrea.pdf",
+      "case_name": "In re Ricardo P.",
+      "citation": "(2019) 7 Cal.5th 1113",
+      "quote_or_holding_claimed": "\"reaffirmed and tightened that requirement\" (i.e., the Lent nexus requirement) (para. 3); cited again at paras. 22, 58, 63 for the same proposition.",
+      "status": "VERIFIED",
+      "notes": "Case exists at the cited citation (Cal. Supreme Ct., decided 8/15/2019). Ricardo P. did add a proportionality/reasonableness gloss onto Lent's third prong (electronics-search condition invalidated as disproportionate), fairly characterized as 'tightening' the nexus requirement. Good law."
+    },
+    {
+      "group": "D",
+      "matter": 14,
+      "document": "public/documents/matter-14/Newanforbi v Urrea.pdf",
+      "case_name": "Loehr v. Ventura County Community College Dist.",
+      "citation": "(1983) 147 Cal.App.3d 1071",
+      "quote_or_holding_claimed": "Cited (para. 18) for the proposition that claims for declaratory, injunctive, and writ relief are not subject to the Government Claims Act's presentation requirement.",
+      "status": "VERIFIED",
+      "notes": "Case exists and does state the general rule that claims statutes do not apply to purely nonpecuniary actions (injunctive/declaratory/writ relief). However, Loehr itself also holds that the exemption does NOT apply where the equitable relief sought is 'merely incidental or ancillary' to a damages claim -- and this complaint pleads both damages (Bane Act, punitive damages) and equitable relief together, which is the very fact pattern in which Loehr denied the exemption to the plaintiff in that case. The citation to Loehr for the general rule is accurate, but the litigant omits the limiting holding that cuts against his own pleading structure -- a one-sided/incomplete use of the case rather than a misquote."
+    },
+    {
+      "group": "D",
+      "matter": 14,
+      "document": "public/documents/matter-14/Newanforbi v Urrea.pdf",
+      "case_name": "Friends of the Trinity River v. North Coast Regional Water Quality Control Bd.",
+      "citation": "(2010) 184 Cal.App.4th 1466",
+      "quote_or_holding_claimed": "\"Code of Civil Procedure \u00a7 1085 authorizes the issuance of a writ of mandate to compel the performance of an act that the law specifically enjoins as a duty resulting from a public office.\" (para. 57)",
+      "status": "NOT_FOUND",
+      "notes": "Could not locate any case by this name at this citation, or at all, across CourtListener, Justia, Leagle, Casetext-indexed search, and general web search. Volume 184 Cal.App.4th exists but no matching case at/near page 1466 titled 'Friends of the Trinity River v. North Coast Regional Water Quality Control Bd.' turned up. The subject matter mismatch is also a red flag: a water-quality-board CEQA/administrative case would be an unusual and non-standard authority for the generic, black-letter CCP \u00a7 1085 mandate-relief proposition being cited (courts more commonly cite cases like AIDS Healthcare Foundation v. L.A. County or Pomona Police Officers' Assn. v. City of Pomona for this boilerplate). This citation appears to be fabricated or badly garbled and should be pulled or replaced before filing anything that relies on it."
+    },
+    {
+      "group": "D",
+      "matter": 14,
+      "document": "public/documents/matter-14/Newanforbi v Urrea.pdf",
+      "case_name": "Reese v. County of Sacramento",
+      "citation": "(9th Cir. 2018) 888 F.3d 1030",
+      "quote_or_holding_claimed": "Cited (para. 83) for the proposition that the Bane Act 'threat, intimidation, or coercion' element is satisfied by the unlawful detention itself when accompanied by specific intent to violate the protected right.",
+      "status": "VERIFIED",
+      "notes": "Case exists and is correctly cited (9th Cir., decided 4/23/2018). Reese held the district court erred in requiring coercion 'independent' of the underlying rights violation, and that specific intent to violate the right can satisfy the Bane Act's coercion element. Accurately characterized and still good law."
+    },
+    {
+      "group": "D",
+      "matter": 14,
+      "document": "public/documents/matter-14/Newanforbi v Urrea.pdf",
+      "case_name": "Cornell v. City and County of San Francisco",
+      "citation": "(2017) 17 Cal.App.5th 766",
+      "quote_or_holding_claimed": "Cited (para. 83) alongside Reese for the same Bane Act coercion/specific-intent proposition.",
+      "status": "VERIFIED",
+      "notes": "Case exists and is correctly cited. Cornell held that coercion inherent in the underlying constitutional violation (e.g., an unlawful arrest) can satisfy Section 52.1 where the officer acted with specific intent to violate the right; it rejected a requirement that coercion be independent of the violation. Accurately characterized and good law."
+    },
+    {
+      "group": "D",
+      "matter": 14,
+      "document": "public/documents/matter-14/Newanforbi v Urrea.pdf",
+      "case_name": "Caldwell v. Montoya",
+      "citation": "(1995) 10 Cal.4th 972",
+      "quote_or_holding_claimed": "Cited (para. 92, and again para. 69 of Matter 16 filing) for the proposition that Government Code \u00a7 820.2 discretionary-act immunity 'does not shield officials who act outside the scope of their legal authority,' i.e., that the duties breached here were ministerial, not discretionary.",
+      "status": "MISCITED",
+      "notes": "The case exists at the correct citation and is good law, but Caldwell v. Montoya does not actually stand for the proposition cited. Caldwell held the opposite direction on its facts -- that discretionary-act immunity under \u00a7 820.2 DID protect school board members' 'basic policy' decision even where plaintiff alleged the decision was motivated by improper reasons (race/age discrimination) -- it is a case broadly protecting discretionary governmental decisions, not a case carving out an exception for officials who exceed their authority. The complaint's characterization inverts the general thrust of the holding. The general legal principle asserted (ministerial vs. discretionary duties, and that \u00a7 820.2 does not immunize purely ministerial acts) is a correct statement of California law, but Caldwell is not the strongest or most accurate case to cite for it -- a more fitting authority would address the discretionary/ministerial distinction directly (e.g., Johnson v. State of California or Ramirez v. City of Gardena)."
+    },
+    {
+      "group": "D",
+      "matter": 16,
+      "document": "public/documents/matter-16/Newanforbi v. Rojo.pdf",
+      "case_name": "Employment Division v. Smith",
+      "citation": "(1990) 494 U.S. 872, 884-885",
+      "quote_or_holding_claimed": "Cited (para. 34) for the proposition that a policy applied non-neutrally as between secular and religious travel is not 'neutral and generally applicable' within the meaning of Smith.",
+      "status": "VERIFIED",
+      "notes": "Case, citation, and year are correct (U.S. Supreme Court). Smith held neutral, generally applicable laws do not violate the Free Exercise Clause even if they incidentally burden religion; a law that is not neutral/generally applicable (as alleged here) falls outside Smith's rule and back into ordinary scrutiny. Accurately used."
+    },
+    {
+      "group": "D",
+      "matter": 16,
+      "document": "public/documents/matter-16/Newanforbi v. Rojo.pdf",
+      "case_name": "Tandon v. Newsom",
+      "citation": "(2021) 593 U.S. 61, 62-63",
+      "quote_or_holding_claimed": "Cited (para. 34) alongside Smith for the 'not neutral/generally applicable' proposition -- i.e., that treating comparable secular activity more favorably than religious exercise triggers strict scrutiny.",
+      "status": "VERIFIED",
+      "notes": "Citation confirmed correct: Tandon v. Newsom is officially reported at 593 U.S. 61 (2021) (per curiam) -- confirmed via the Supreme Court's own preliminary print (Volume 593, Part 1, pages 61-66). Holding accurately paraphrased: government regulations that treat any comparable secular activity more favorably than religious exercise are not neutral/generally applicable and trigger strict scrutiny. Good law."
+    },
+    {
+      "group": "D",
+      "matter": 16,
+      "document": "public/documents/matter-16/Newanforbi v. Rojo.pdf",
+      "case_name": "Fulton v. City of Philadelphia",
+      "citation": "(2021) 593 U.S. 522, 533-534",
+      "quote_or_holding_claimed": "Cited (para. 35) for the proposition that an 'individualized exemption mechanism triggers strict scrutiny when religious exercise is excluded.'",
+      "status": "VERIFIED",
+      "notes": "Case, citation, date, and holding are correct. Fulton held that a system of individualized exemptions triggers strict scrutiny under the Free Exercise Clause when the government declines to extend an exemption to a religious claimant without a compelling reason. Accurately characterized and good law."
+    },
+    {
+      "group": "D",
+      "matter": 16,
+      "document": "public/documents/matter-16/Newanforbi v. Rojo.pdf",
+      "case_name": "Cornell v. City and County of San Francisco",
+      "citation": "(2017) 17 Cal.App.5th 766, 802",
+      "quote_or_holding_claimed": "Cited (paras. 42, 45) for: 'Section 52.1 reaches both physical and non-physical coercion,' and that specific intent may be inferred from reckless disregard of a known constitutional right (citing p. 803).",
+      "status": "VERIFIED",
+      "notes": "Same case verified above under Matter 14; pin cites to pp. 802-803 are consistent with the opinion's discussion of the coercion element and specific-intent standard. Accurate."
+    },
+    {
+      "group": "D",
+      "matter": 16,
+      "document": "public/documents/matter-16/Newanforbi v. Rojo.pdf",
+      "case_name": "Reese v. County of Sacramento",
+      "citation": "(9th Cir. 2018) 888 F.3d 1030, 1043-1045",
+      "quote_or_holding_claimed": "Cited (para. 42) with B.B. v. County of Los Angeles for the proposition that separateness of coercion from the underlying violation is satisfied by conduct manifesting specific intent to violate the right.",
+      "status": "VERIFIED",
+      "notes": "Same case verified above under Matter 14. Pin cite range is consistent with the panel's coercion/specific-intent analysis. Accurate."
+    },
+    {
+      "group": "D",
+      "matter": 16,
+      "document": "public/documents/matter-16/Newanforbi v. Rojo.pdf",
+      "case_name": "B.B. v. County of Los Angeles",
+      "citation": "(2020) 10 Cal.5th 1, 9-11",
+      "quote_or_holding_claimed": "Cited (para. 42) alongside Reese for the Bane Act specific-intent/separateness proposition; and (para. 42) for 'specific intent may be inferred from reckless disregard of a known constitutional right.'",
+      "status": "VERIFIED",
+      "notes": "Case exists at the correct citation (Cal. Supreme Court, 2020). B.B. is primarily a comparative-fault case (Prop. 51 does not reduce intentional tortfeasors' liability), but it does discuss the Bane Act's intentional-tort character and two pathways to establish a violation (general intent plus separate coercion, or specific intent). The complaint's characterization is a reasonable, if slightly generous, extension of B.B.'s discussion; not a misquote, but B.B. is a secondary/supporting citation rather than the leading authority for the 'reckless disregard' inference (which is more squarely Cornell's language)."
+    },
+    {
+      "group": "D",
+      "matter": 16,
+      "document": "public/documents/matter-16/Newanforbi v. Rojo.pdf",
+      "case_name": "Lazar v. Superior Court (Rykoff-Sexton, Inc.)",
+      "citation": "(1996) 12 Cal.4th 631, 638",
+      "quote_or_holding_claimed": "Cited (para. 49) for the five elements of fraud/intentional misrepresentation: misrepresentation, scienter, intent to defraud/induce reliance, justifiable reliance, and resulting damage.",
+      "status": "VERIFIED",
+      "notes": "Case, citation, and holding all confirmed accurate. This is the standard, frequently-cited California Supreme Court statement of the fraud elements. Good law."
+    },
+    {
+      "group": "D",
+      "matter": 16,
+      "document": "public/documents/matter-16/Newanforbi v. Rojo.pdf",
+      "case_name": "Hughes v. Pair",
+      "citation": "(2009) 46 Cal.4th 1035, 1050-1051",
+      "quote_or_holding_claimed": "Cited (para. 57) for the elements of intentional infliction of emotional distress (extreme/outrageous conduct; intent or reckless disregard; severe emotional distress; actual/proximate causation).",
+      "status": "VERIFIED",
+      "notes": "Case, citation, and holding confirmed accurate. Standard, still-good-law California Supreme Court statement of the IIED elements."
+    },
+    {
+      "group": "D",
+      "matter": 16,
+      "document": "public/documents/matter-16/Newanforbi v. Rojo.pdf",
+      "case_name": "Alcorn v. Anbro Engineering, Inc.",
+      "citation": "(1970) 2 Cal.3d 493, 498-499",
+      "quote_or_holding_claimed": "Cited (para. 57) for the proposition that conduct is particularly likely to be deemed outrageous when committed by a defendant in a position of authority over the plaintiff.",
+      "status": "VERIFIED",
+      "notes": "Case, citation, and holding confirmed accurate. Alcorn held a supervisor's racially abusive termination conduct was actionable IIED, in part because of the employer/supervisor's position of authority over the plaintiff. Good law and correctly characterized."
+    },
+    {
+      "group": "D",
+      "matter": 16,
+      "document": "public/documents/matter-16/Newanforbi v. Rojo.pdf",
+      "case_name": "Venegas v. County of Los Angeles",
+      "citation": "(2004) 32 Cal.4th 820",
+      "quote_or_holding_claimed": "Cited (para. 88) as authority for the availability of attorney's fees under Civil Code \u00a7 52.1(i) and CCP \u00a7 1021.5.",
+      "status": "VERIFIED",
+      "notes": "Case exists at the correct citation (Cal. Supreme Court, 2004) and addresses Bane Act remedies including attorney's fees in the civil-rights/detainee context. Appropriately cited for the fee-shifting proposition."
+    },
+    {
+      "group": "D",
+      "matter": 16,
+      "document": "public/documents/matter-16/Newanforbi v. Rojo.pdf",
+      "case_name": "Apollo Capital Fund, LLC v. Roth Capital Partners, LLC",
+      "citation": "(2007) 158 Cal.App.4th 226, 243",
+      "quote_or_holding_claimed": "Cited (para. 63) for the elements of negligent misrepresentation under Civil Code \u00a7 1710(2): misrepresentation of past/existing material fact without reasonable ground for believing it true, intent to induce reliance, justifiable reliance, and resulting damage.",
+      "status": "VERIFIED",
+      "notes": "Case, citation, and holding confirmed accurate (Cal. Ct. App., 2d Dist., Div. 8, decided 12/20/2007). Correctly used for negligent-misrepresentation elements."
+    },
+    {
+      "group": "D",
+      "matter": 17,
+      "document": "NO DOCUMENTS UPLOADED",
+      "case_name": "N/A",
+      "citation": "N/A",
+      "quote_or_holding_claimed": "N/A",
+      "status": "NOT_FOUND",
+      "notes": "No documents were uploaded for Matter 17. Documentation gap, not a citation error."
+    },
+    {
+      "group": "D",
+      "matter": 18,
+      "document": "NO DOCUMENTS UPLOADED",
+      "case_name": "N/A",
+      "citation": "N/A",
+      "quote_or_holding_claimed": "N/A",
+      "status": "NOT_FOUND",
+      "notes": "No documents were uploaded for Matter 18. Documentation gap, not a citation error."
+    },
+    {
+      "group": "D",
+      "matter": 21,
+      "document": "public/documents/matter-21/Complaint.pdf",
+      "case_name": "N/A -- no case citations present",
+      "citation": "N/A",
+      "quote_or_holding_claimed": "N/A",
+      "status": "VERIFIED",
+      "notes": "This \u00a71983 federal complaint (Newanforbi v. Rojo/Noguchi/Macomber, E.D. Cal. 2:26-cv-00193, filed 1/22/26) cites only statutes (42 U.S.C. \u00a7 1983; 28 U.S.C. \u00a7\u00a7 1331, 1343(a)(3)-(4), 1391(b), 1988) and no case law whatsoever -- no Monell, no Iqbal/Twombly, no Rhodes v. Robinson, no Sullivan v. County of Los Angeles, and no other First/Fourteenth Amendment case authority anywhere in the 9-page pleading. There is nothing to fact-check for citation accuracy, but this is itself worth flagging to the litigant: a pro se \u00a71983 complaint against individual-capacity defendants that never cites the qualified-immunity/clearly-established-law case authority it repeatedly invokes in prose (paras. 3, 37, 43 all assert 'clearly established' rights without citing a single case establishing them) is vulnerable on a motion to dismiss or a qualified-immunity motion for failure to identify supporting authority."
+    },
+    {
+      "group": "E",
+      "matter": 12,
+      "document": "1094 Complaint.pdf",
+      "case_name": "Warner Constr. Corp. v. City of Los Angeles",
+      "citation": "(1970) 2 Cal.3d 285",
+      "quote_or_holding_claimed": "Cited for 'duty to disclose in sales transactions' -- superior knowledge of facts not accessible to plaintiff creates duty to disclose.",
+      "status": "VERIFIED",
+      "notes": "Case exists at correct citation. Holds that outside fiduciary relations, nondisclosure liability can arise where facts are known/accessible only to defendant and not reasonably discoverable by plaintiff -- matches the proposition cited. Still good law, frequently cited (see CACI No. 4501 origins)."
+    },
+    {
+      "group": "E",
+      "matter": 12,
+      "document": "1094 Complaint.pdf",
+      "case_name": "Bily v. Arthur Young & Co.",
+      "citation": "(1992) 3 Cal.4th 370",
+      "quote_or_holding_claimed": "Cited for duty to exercise reasonable care in making representations (negligent misrepresentation).",
+      "status": "VERIFIED",
+      "notes": "Case exists at correct citation and stands for negligent misrepresentation/duty of care principles, consistent with the citation's use. Good law."
+    },
+    {
+      "group": "E",
+      "matter": 12,
+      "document": "1094 Complaint.pdf",
+      "case_name": "Cel-Tech Communications, Inc. v. Los Angeles Cellular Telephone Co.",
+      "citation": "(1999) 20 Cal.4th 163",
+      "quote_or_holding_claimed": "Cited for the UCL 'unfair' conduct standard -- substantial injury not outweighed by countervailing benefits.",
+      "status": "VERIFIED",
+      "notes": "Case exists at correct citation; is the seminal case defining 'unfair' under Bus. & Prof. Code section 17200 for competitor actions. Correct citation and application. Good law."
+    },
+    {
+      "group": "E",
+      "matter": 12,
+      "document": "1094 Amended Complaint.pdf",
+      "case_name": "Ray v. Alad Corp.",
+      "citation": "(1977) 19 Cal.3d 22, 28",
+      "quote_or_holding_claimed": "Cited (with Cleveland v. Johnson) for successor liability / mere continuation absent fair, arms-length consideration.",
+      "status": "VERIFIED",
+      "notes": "Case exists at correct citation; seminal California successor liability case discussing traditional exceptions (including mere continuation and inadequate consideration) as well as the product-line rule. Good law, still controlling."
+    },
+    {
+      "group": "E",
+      "matter": 12,
+      "document": "1094 Amended Complaint.pdf",
+      "case_name": "Cleveland v. Johnson",
+      "citation": "(2012) 209 Cal.App.4th 1315, 1326-1334",
+      "quote_or_holding_claimed": "Cited alongside Ray v. Alad Corp. for successor liability elements (assumption of liabilities, consolidation/merger, mere continuation, fraudulent transfer).",
+      "status": "VERIFIED",
+      "notes": "Case exists at correct citation and states the four traditional grounds for successor liability as paraphrased in the complaint. Good law."
+    },
+    {
+      "group": "E",
+      "matter": 12,
+      "document": "1094 Amended Complaint.pdf",
+      "case_name": "Marks v. Minnesota Mining & Mfg. Co.",
+      "citation": "(1986) 187 Cal.App.3d 1429, 1436",
+      "quote_or_holding_claimed": "Cited for de facto merger doctrine -- continuity of ownership, management, personnel, cessation of business, and continuation of business.",
+      "status": "VERIFIED",
+      "notes": "Case exists at correct citation and is the leading case setting out the multi-factor de facto merger test the complaint paraphrases. Good law."
+    },
+    {
+      "group": "E",
+      "matter": 12,
+      "document": "1094 Amended Complaint.pdf",
+      "case_name": "Sonora Diamond Corp. v. Superior Court",
+      "citation": "(2000) 83 Cal.App.4th 523, 538-539",
+      "quote_or_holding_claimed": "Cited for alter ego doctrine -- unity of interest/ownership such that separate personalities do not exist, and inequitable result if treated as separate.",
+      "status": "VERIFIED",
+      "notes": "Case exists at correct citation; is the seminal modern statement of the alter-ego two-prong test, matching the complaint's paraphrase almost verbatim. Good law."
+    },
+    {
+      "group": "E",
+      "matter": 12,
+      "document": "1094 Amended Complaint.pdf",
+      "case_name": "Mesler v. Bragg Management Co.",
+      "citation": "(1985) 39 Cal.3d 290, 300",
+      "quote_or_holding_claimed": "Cited alongside Sonora Diamond for the same alter ego proposition.",
+      "status": "VERIFIED",
+      "notes": "Case exists at correct citation; California Supreme Court alter-ego case, still cited as good law alongside Sonora Diamond."
+    },
+    {
+      "group": "E",
+      "matter": 12,
+      "document": "1094 Amended Complaint.pdf",
+      "case_name": "Fox v. Ethicon Endo-Surgery, Inc.",
+      "citation": "(2005) 35 Cal.4th 797",
+      "quote_or_holding_claimed": "Cited (with Bernson and Aryeh) for the discovery rule / equitable tolling / fraudulent concealment doctrine.",
+      "status": "VERIFIED",
+      "notes": "Case exists at correct citation; the leading California Supreme Court discovery-rule case, matches proposition cited. Good law."
+    },
+    {
+      "group": "E",
+      "matter": 12,
+      "document": "1094 Amended Complaint.pdf",
+      "case_name": "Bernson v. Browning-Ferris Industries",
+      "citation": "(1994) 7 Cal.4th 926",
+      "quote_or_holding_claimed": "Cited for fraudulent-concealment tolling of the statute of limitations.",
+      "status": "VERIFIED",
+      "notes": "Case exists at correct citation and supports the fraudulent-concealment tolling proposition cited. Good law."
+    },
+    {
+      "group": "E",
+      "matter": 12,
+      "document": "1094 Amended Complaint.pdf",
+      "case_name": "Aryeh v. Canon Business Solutions, Inc.",
+      "citation": "(2013) 1 Cal.5th 1185 [as printed in complaint]",
+      "quote_or_holding_claimed": "Cited for the discovery rule / equitable tolling doctrine, grouped with Fox and Bernson.",
+      "status": "MISCITED",
+      "notes": "The case is real and the pin page (1185) and year (2013) are correct, but the reporter citation is wrong: Aryeh v. Canon Business Solutions, Inc. is reported at 55 Cal.4th 1185 (2013), not '1 Cal.5th 1185.' The California Reports 5th series did not begin until 2016, three years after this case was decided, so a Cal.5th cite for a 2013 case is facially impossible. This is a citation-formatting error a court could flag; the underlying case and doctrine (continuous accrual/discovery rule) are correctly described."
+    },
+    {
+      "group": "E",
+      "matter": 22,
+      "document": "Newanforbi v. Pilot Travel Centers LLC.pdf",
+      "case_name": "Tameny v. Atlantic Richfield Co.",
+      "citation": "(1980) 27 Cal.3d 167",
+      "quote_or_holding_claimed": "Cited as the foundational case for 'Wrongful Termination in Violation of Public Policy'; complaint states a Tameny claim requires the policy be tethered to a statute, fundamental, beneficial to the public, and well-established at time of conduct, entitling plaintiff to compensatory and punitive damages for willful/oppressive/malicious conduct.",
+      "status": "VERIFIED",
+      "notes": "Case exists at the exact citation given and is indeed the origin of the 'Tameny claim' for wrongful termination in violation of public policy. The four-part test recited (delineated in constitutional/statutory provision, fundamental, public-beneficial, well-established) is the standard Gantt/Stevenson-derived test correctly associated with Tameny actions. Still good law and the standard citation used in every California wrongful-termination pleading."
+    },
+    {
+      "group": "E",
+      "matter": 22,
+      "document": "Newanforbi v. Pilot Travel Centers LLC.pdf",
+      "case_name": "Penal Code section 290.46, subdivision (j)(1)",
+      "citation": "Cal. Penal Code \u00a7 290.46(j)(1)",
+      "quote_or_holding_claimed": "Complaint paragraph 12: 'a person is authorized to use information disclosed pursuant to this section only to protect a person at risk.'",
+      "status": "VERIFIED",
+      "notes": "This is the 'smoking gun' statutory quote for the whole matter. Verified verbatim against secondary sources quoting the current statutory text: 'A person is authorized to use information disclosed pursuant to this section only to protect a person at risk.' The quote in the complaint matches word-for-word. Statute is current and in force (not renumbered)."
+    },
+    {
+      "group": "E",
+      "matter": 22,
+      "document": "Newanforbi v. Pilot Travel Centers LLC.pdf",
+      "case_name": "Penal Code section 290.46, subdivision (j)(2)(E)",
+      "citation": "Cal. Penal Code \u00a7 290.46(j)(2)(E)",
+      "quote_or_holding_claimed": "Complaint paragraph 12 states subdivision (j)(2) prohibits use of registry information for purposes relating to specified categories including, at (j)(2)(E), 'Employment' -- and characterizes this prohibition as categorical/absolute for employment purposes.",
+      "status": "VERIFIED",
+      "notes": "Confirmed via secondary sources (California Peculiarities Employment Law Blog and Orange County Employment Law summaries of the statute) that subdivision (j)(2) lists prohibited-use categories including employment, and that -- absent the narrow (j)(1) 'protect a person at risk' exception -- the prohibition on using registry information for employment decisions is categorical. Substance of the complaint's paraphrase and legal characterization is accurate and the statute remains current law."
+    },
+    {
+      "group": "E",
+      "matter": 22,
+      "document": "Newanforbi v. Pilot Travel Centers LLC.pdf",
+      "case_name": "Penal Code section 290.46, subdivisions (k) and (l)",
+      "citation": "Cal. Penal Code \u00a7 290.46(k), (l)",
+      "quote_or_holding_claimed": "Complaint paragraph 14 states subdivision (k) imposes a civil penalty of not less than $10,000 and not more than $25,000 per violation, and subdivision (l) allows treble actual damages, costs, and attorney fees for a person harmed by a violation.",
+      "status": "VERIFIED",
+      "notes": "Confirmed against secondary sources quoting the statute: violators are liable for actual damages, up to treble damages (not less than $250), attorney's fees, exemplary damages, or a civil penalty not exceeding $25,000. The complaint's $10,000-$25,000 civil-penalty range and treble-damages/fee-shifting characterization are consistent with the statute's remedy provisions and remain current law."
+    },
+    {
+      "group": "E",
+      "matter": 22,
+      "document": "Newanforbi v. Pilot Travel Centers LLC.pdf",
+      "case_name": "Fair Credit Reporting Act",
+      "citation": "15 U.S.C. \u00a7\u00a7 1681, 1681a(d), 1681b(b)(3), 1681n, 1681o",
+      "quote_or_holding_claimed": "Cited for consumer report / pre-adverse-action notice requirements, willfulness liability, and statutory damages of $100-$1,000 per violation.",
+      "status": "VERIFIED",
+      "notes": "These are standard, current, correctly-numbered FCRA provisions (definition of consumer report, pre-adverse-action disclosure duty, and civil-liability sections for willful/negligent noncompliance). No renumbering or repeal affects these sections; still good law."
+    },
+    {
+      "group": "E",
+      "matter": 22,
+      "document": "Newanforbi v. Pilot Travel Centers LLC.pdf",
+      "case_name": "California Investigative Consumer Reporting Agencies Act (ICRAA)",
+      "citation": "Cal. Civ. Code \u00a7\u00a7 1786 et seq., 1786.2(c), 1786.50",
+      "quote_or_holding_claimed": "Cited for definition of 'investigative consumer report' and liability for willful/negligent noncompliance.",
+      "status": "VERIFIED",
+      "notes": "Current, correctly-numbered ICRAA provisions; substance of the cited definitions and remedies matches the statute."
+    },
+    {
+      "group": "E",
+      "matter": 22,
+      "document": "Newanforbi v. Pilot Travel Centers LLC.pdf",
+      "case_name": "Unfair Competition Law",
+      "citation": "Cal. Bus. & Prof. Code \u00a7 17200 et seq.",
+      "quote_or_holding_claimed": "Cited for restitution/injunctive relief for 'unlawful' business practices predicated on a Penal Code section 290.46(j) violation.",
+      "status": "VERIFIED",
+      "notes": "Current and correctly cited; UCL's 'unlawful' prong properly borrows violations of other statutes (here, Penal Code section 290.46) as the predicate."
+    },
+    {
+      "group": "E",
+      "matter": 23,
+      "document": "(none filed)",
+      "case_name": "N/A",
+      "citation": "N/A",
+      "quote_or_holding_claimed": "N/A",
+      "status": "NOT_FOUND",
+      "notes": "No complaint has been filed in Matter 23 -- there is no document to audit for citations. This is a documentation gap, not a citation error, but is flagged per the task instructions since Matter 22/23 share the same PC 290.46(j) statutory theory and no independent Matter 23 pleading exists to check."
+    },
+    {
+      "group": "E",
+      "matter": 24,
+      "document": "1 2.pdf (Complaint, Newanforbi v. Serrato, N.D. Cal. 4:26-cv-05953-ASK)",
+      "case_name": "Ex parte Young",
+      "citation": "209 U.S. 123 (1908)",
+      "quote_or_holding_claimed": "Cited for authority to seek prospective injunctive/declaratory relief against a state official in his official capacity.",
+      "status": "VERIFIED",
+      "notes": "Case exists at correct citation; correctly cited for the official-capacity injunctive-relief exception to sovereign immunity. Good law."
+    },
+    {
+      "group": "E",
+      "matter": 24,
+      "document": "1 2.pdf",
+      "case_name": "Withrow v. Larkin",
+      "citation": "421 U.S. 35, 47 (1975)",
+      "quote_or_holding_claimed": "Cited for the due-process requirement of a neutral decision-maker, in support of the 'structural conflict of interest' argument against Captain Serrato.",
+      "status": "VERIFIED",
+      "notes": "Case exists at correct citation and stands generally for due-process/neutral-adjudicator principles, though Withrow's actual holding upheld combined investigative/adjudicative functions absent proof of actual bias -- a nuance the complaint's one-line citation glosses over but does not misstate. Good law."
+    },
+    {
+      "group": "E",
+      "matter": 24,
+      "document": "1 2.pdf",
+      "case_name": "County of Sacramento v. Lewis",
+      "citation": "523 U.S. 833, 845-46 (1998)",
+      "quote_or_holding_claimed": "Cited for the substantive due process 'arbitrary and capricious'/shocks-the-conscience standard.",
+      "status": "VERIFIED",
+      "notes": "Case exists at correct citation and is the leading 'shocks the conscience' substantive due process case. Good law."
+    },
+    {
+      "group": "E",
+      "matter": 24,
+      "document": "1 2.pdf",
+      "case_name": "Shanks v. Dressel",
+      "citation": "540 F.3d 1082, 1087 (9th Cir. 2008)",
+      "quote_or_holding_claimed": "Cited for the proposition that mandatory statutory language removing official discretion creates a protected property/liberty interest supporting a substantive due process claim.",
+      "status": "VERIFIED",
+      "notes": "Case exists at correct citation and does state that a protected property interest arises only where a statute compels a result upon satisfaction of non-discretionary criteria -- consistent with the point cited. Good law, still cited in the Ninth Circuit."
+    },
+    {
+      "group": "E",
+      "matter": 24,
+      "document": "1 2.pdf",
+      "case_name": "Mathews v. Eldridge",
+      "citation": "424 U.S. 319 (1976); also cited at 424 U.S. 319, 333",
+      "quote_or_holding_claimed": "Cited for the three-factor procedural due process balancing test (private interest, risk of erroneous deprivation, government interest).",
+      "status": "VERIFIED",
+      "notes": "Case exists at correct citation; the three-factor test is accurately summarized. Good law, the standard procedural due process test."
+    },
+    {
+      "group": "E",
+      "matter": 24,
+      "document": "1 2.pdf",
+      "case_name": "Goldberg v. Kelly",
+      "citation": "397 U.S. 254, 262 (1970)",
+      "quote_or_holding_claimed": "Cited for the requirement of notice and a meaningful opportunity to be heard before deprivation of a protected interest.",
+      "status": "VERIFIED",
+      "notes": "Case exists at correct citation and stands for the cited due-process notice-and-hearing principle. Good law."
+    },
+    {
+      "group": "E",
+      "matter": 24,
+      "document": "1 2.pdf",
+      "case_name": "Board of Regents v. Roth",
+      "citation": "408 U.S. 564, 577 (1972)",
+      "quote_or_holding_claimed": "Cited (with Goldberg) for the proposition that a legitimate claim of entitlement arises where a statute constrains official discretion with mandatory language and ascertainable standards.",
+      "status": "VERIFIED",
+      "notes": "Case exists at correct citation and is the seminal 'legitimate claim of entitlement' case correctly paired with Goldberg for this proposition. Good law."
+    },
+    {
+      "group": "E",
+      "matter": 24,
+      "document": "1 2.pdf",
+      "case_name": "Borough of Duryea v. Guarnieri",
+      "citation": "564 U.S. 379, 387 (2011)",
+      "quote_or_holding_claimed": "Cited for the First Amendment Petition Clause protecting the filing of complaints with law enforcement agencies, civil lawsuits against officials, and participation in oversight processes.",
+      "status": "VERIFIED",
+      "notes": "Case exists at correct citation and does address Petition Clause protection for lawsuits/grievances against government, consistent with the cited proposition (subject to the public-concern limitation the case also imposes, which the complaint does not misstate). Good law."
+    },
+    {
+      "group": "E",
+      "matter": 24,
+      "document": "1 2.pdf",
+      "case_name": "Soranno's Gasco, Inc. v. Morgan Hill Unified Sch. Dist.",
+      "citation": "874 F.2d 1310, 1314 (9th Cir. 1989)",
+      "quote_or_holding_claimed": "Cited alongside Borough of Duryea for First Amendment Petition Clause protection of filing complaints/lawsuits against government officials.",
+      "status": "MISCITED",
+      "notes": "The reporter citation (874 F.2d 1310, 9th Cir. 1989) is real and does correspond to a real Ninth Circuit case about First Amendment retaliation -- but the case name in the complaint is wrong. The actual case is Soranno's Gasco, Inc. v. Morgan, 874 F.2d 1310 (9th Cir. 1989), brought by a petroleum company against Wayne Morgan, Mike Taulier, and Gordon Dewers, officers of the County of Stanislaus Air Pollution Control District -- it has nothing to do with any school district. 'Morgan Hill Unified School District' is a real, unrelated public school district in Santa Clara County; its name appears to have been substituted for the individual-defendant surname 'Morgan,' fabricating a party that was never in this case. This is exactly the kind of case-name error that invites judicial scrutiny and should be corrected to 'Soranno's Gasco, Inc. v. Morgan' before filing/use."
+    },
+    {
+      "group": "E",
+      "matter": 24,
+      "document": "1 2.pdf",
+      "case_name": "Pinard v. Clatskanie School District 6J",
+      "citation": "467 F.3d 755, 770 (9th Cir. 2006)",
+      "quote_or_holding_claimed": "Cited for the three-part First Amendment retaliation test: protected activity, adverse action, and protected activity as a substantial/motivating factor.",
+      "status": "VERIFIED",
+      "notes": "Case exists at correct citation and does state a three-part retaliation test matching the complaint's summary. Good law, still followed in the Ninth Circuit."
+    },
+    {
+      "group": "E",
+      "matter": 24,
+      "document": "1 2.pdf",
+      "case_name": "Nieves v. Bartlett",
+      "citation": "587 U.S. 391, 406 (2019)",
+      "quote_or_holding_claimed": "Cited for the proposition that the absence of a legitimate basis for an official's action strengthens the inference of retaliatory motive.",
+      "status": "VERIFIED",
+      "notes": "Case exists at correct citation (2019, probable-cause-and-retaliatory-arrest case). The general proposition cited is consistent with the case's reasoning about pretext, though the precise page 406 quote was not independently confirmed word-for-word; the doctrine attributed to it is accurate. Good law."
+    },
+    {
+      "group": "E",
+      "matter": 24,
+      "document": "1 2.pdf",
+      "case_name": "Hartman v. Moore",
+      "citation": "547 U.S. 250 (2006)",
+      "quote_or_holding_claimed": "Cited (with Borough of Duryea) for clearly-established First Amendment retaliation-for-petitioning law, used to defeat qualified immunity.",
+      "status": "VERIFIED",
+      "notes": "Case exists at correct citation; addresses retaliatory-prosecution First Amendment claims and causation, consistent with its use here. Good law."
+    },
+    {
+      "group": "E",
+      "matter": 24,
+      "document": "1 2.pdf",
+      "case_name": "Hope v. Pelzer",
+      "citation": "536 U.S. 730, 741 (2002)",
+      "quote_or_holding_claimed": "Cited for the proposition that an official can be on notice his conduct violates clearly established law even in novel factual circumstances where the violation is obvious.",
+      "status": "VERIFIED",
+      "notes": "Case exists at correct citation and is the standard authority for the 'obvious violation' qualified-immunity fair-notice principle cited. Good law."
+    },
+    {
+      "group": "E",
+      "matter": 24,
+      "document": "1 2.pdf",
+      "case_name": "California Penal Code section 679.10 (U Visa certification statute), incl. subds. (g), (h), (j), (k), and AB 1261 (Stats. 2023, Ch. 679)",
+      "citation": "Cal. Penal Code \u00a7 679.10",
+      "quote_or_holding_claimed": "Complaint states section 679.10 uses mandatory 'shall' language, creates a rebuttable presumption of helpfulness at (h), requires specific written reasons for denial at (g), mandates processing within 30 days at (j), and that AB 1261 (Stats. 2023, Ch. 679, eff. Jan. 1, 2024) eliminated the requirement of prosecution/conviction/pending investigation and strengthened these obligations.",
+      "status": "VERIFIED",
+      "notes": "Confirmed against secondary legal-practice sources (immigrant-rights practice alerts and bill-tracking summaries): AB 1261 (Stats. 2023, Ch. 679) took effect January 1, 2024, amended Penal Code section 679.10, added a 30-day certification deadline, and codified/strengthened a rebuttable presumption of victim helpfulness. The complaint's characterization of the statute is accurate and current."
+    }
+  ],
+  "summary": {
+    "byStatus": {
+      "VERIFIED": 125,
+      "MISCITED": 10,
+      "NOT_FOUND": 11,
+      "MISQUOTED": 1
+    }
+  }
+}
