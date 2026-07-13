@@ -220,24 +220,42 @@ export const lawyer_fees = [
     cost: { low: 13020, high: 20160, mid: 16590 },
     notes: "Newest and lightest matter in the cluster; only a single 21-page complaint plus routine N.D. Cal. intake paperwork (IFP application, proposed summons, ISC/magistrate consent form) have been filed so far."
   },
+  {
+    number: 25, caption: "Newanforbi v. Federal Express Corporation", caseNumber: "TBD",
+    court: "San Joaquin Sup. Ct.", type: "State — PC §290.46(j) / ICRAA / Wrongful Failure to Hire",
+    status: "Complaint drafted and verified July 15, 2026; not yet filed or served",
+    documentsCount: 10, totalPagesReal: 27,
+    hours: { low: 45, high: 75, mid: 60 },
+    cost: { low: 12600, high: 21000, mid: 16800 },
+    notes: "Pre-filing stage: the 18-page, six-count complaint is the only substantive drafting product; the remaining 9 pages are single-page First Advantage notice/reminder emails reviewed for the factual record, not drafted. No answer, motion practice, or discovery exists yet because the complaint has not been filed."
+  },
+  {
+    number: 26, caption: "Newanforbi v. United Parcel Service, Inc.", caseNumber: "TBD",
+    court: "San Joaquin Sup. Ct.", type: "State — PC §290.46(j) / ICRAA / Wrongful Failure to Hire",
+    status: "Complaint drafted and verified July 15, 2026; not yet filed or served — filing is time-sensitive",
+    documentsCount: 5, totalPagesReal: 22,
+    hours: { low: 40, high: 68, mid: 54 },
+    cost: { low: 11200, high: 19040, mid: 15120 },
+    notes: "Pre-filing stage, same posture as Matter 25: the 18-page, six-count complaint is the only substantive drafting product; the remaining 4 pages are single-page First Advantage notice/reminder emails. No answer, motion practice, or discovery exists yet because the complaint has not been filed."
+  },
 ];
 
 export const lawyer_fees_summary = {
-  analysisDate: "2026-07-11",
-  totalMatters: 24,
-  totalDocumentsAnalyzed: 203,
-  totalPagesReal: 3102,
+  analysisDate: "2026-07-13",
+  totalMatters: 26,
+  totalDocumentsAnalyzed: 218,
+  totalPagesReal: 3151,
   methodology: {
     blendedHourlyRate: 280,
     rateRange: { seniorPartner: [350, 450], midAssociate: [250, 350], paralegal: [150, 200] },
     note: "Every PDF in public/documents/matter-XX/ was measured with pdfinfo for real page counts (poppler-utils), then classified by document type (complaint, motion/opposition/reply, discovery, writ/habeas, declaration, administrative, evidence) and priced using the hours-per-page/per-document conversions in docs/LAWYER_FEES_CALCULATOR.md. Opposing counsel's filings are billed only at a light review rate, never at drafting rate. Matters with no uploaded PDFs are estimated conservatively from matters.js status text.",
   },
-  totalEstimatedHours: { low: 2306.6, high: 3732.0, mid: 3019.3 },
-  totalEstimatedCost: { low: 645848, high: 1044960, mid: 845404 },
+  totalEstimatedHours: { low: 2391.6, high: 3875.0, mid: 3133.3 },
+  totalEstimatedCost: { low: 669648, high: 1085000, mid: 877324 },
   byCluster: {
     cluster1: { label: "CHP / DUI / DMV", matters: [1, 2, 7, 8, 20, 24], costLow: 134176, costMid: 176372, costHigh: 218568 },
     cluster2: { label: "Parole Retaliation / HOPE", matters: [3, 4, 5, 6, 11, 13, 14, 15, 16, 17, 18, 21], costLow: 414232, costMid: 537712, costHigh: 661192 },
-    cluster3: { label: "Consumer Fraud / Employment", matters: [12, 22, 23], costLow: 56560, costMid: 74480, costHigh: 92400 },
+    cluster3: { label: "Consumer Fraud / Employment", matters: [12, 22, 23, 25, 26], costLow: 80360, costMid: 106400, costHigh: 132440 },
     cluster4: { label: "Administrative Writs & Habeas", matters: [9, 10, 19], costLow: 40880, costMid: 56840, costHigh: 72800 },
   },
 };
