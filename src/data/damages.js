@@ -7,7 +7,8 @@ export const damages_table = [
     { category: "Consumer Fraud", matters: "12", conservative: 40000, moderate: 75000, aggressive: 150000 },
     { category: "Attorneys' Fees", matters: "1, 3, 5, 7, 22, 24", conservative: 50000, moderate: 110000, aggressive: 260000 },
     { category: "PC §290.46(j) Violation + Wrongful Termination (Matter 22)", matters: "22", conservative: 220000, moderate: 525000, aggressive: 1000000 },
-    { category: "42 USC §1983 — Arbitrary U Visa Certification Denial & Retaliation (Matter 24)", matters: "24", conservative: 75000, moderate: 200000, aggressive: 450000 }
+    { category: "42 USC §1983 — Arbitrary U Visa Certification Denial & Retaliation (Matter 24)", matters: "24", conservative: 75000, moderate: 200000, aggressive: 450000 },
+    { category: "PC §290.46(j) Failure to Hire — FedEx / UPS (Matters 25, 26)", matters: "25, 26", conservative: 75000, moderate: 180000, aggressive: 420000 }
 ];
 
 // Per-matter bottoms-up breakdown — individual case ceilings before deduplication
@@ -162,6 +163,40 @@ export const matter_damages = [
             { label: "Emotional Distress", conservative: 20000, moderate: 60000, aggressive: 100000 },
             { label: "Punitive (Serrato individually)", conservative: 20000, moderate: 55000, aggressive: 150000 },
             { label: "Fees — 42 USC §1988", conservative: 15000, moderate: 25000, aggressive: 80000 }
+        ]
+    },
+    {
+        number: 25,
+        caption: "Newanforbi v. Federal Express Corporation",
+        court: "San Joaquin Sup. Ct.",
+        claims: "PC §290.46(j), Wrongful Failure to Hire, ICRAA, Invasion of Privacy, Negligence Per Se, UCL",
+        status: "Complaint drafted/verified July 15, 2026; not yet filed",
+        risk: "Favorable on the law but pled on information and belief — no admitted-basis letter or recovered background report, unlike Matters 22/23; strongest evidence is the application-to-denial notice trail (2 pre-adverse notices, 5 reminders)",
+        settlement_note: "No wage documentation (never employed) caps economic damages relative to Matter 22; statutory penalty and fee-shifting are the main leverage points",
+        conservative: 40000, moderate: 95000, aggressive: 220000,
+        components: [
+            { label: "PC §290.46(j)(4)(A) Statutory Penalty", conservative: 25000, moderate: 40000, aggressive: 75000 },
+            { label: "Emotional Distress / Lost Opportunity", conservative: 8000, moderate: 25000, aggressive: 60000 },
+            { label: "ICRAA Statutory + Punitive", conservative: 2000, moderate: 5000, aggressive: 10000 },
+            { label: "Punitive (Civ. Code §3294)", conservative: 0, moderate: 10000, aggressive: 45000 },
+            { label: "Fees — PC §290.46(j)(4)(A) / ICRAA", conservative: 5000, moderate: 15000, aggressive: 30000 }
+        ]
+    },
+    {
+        number: 26,
+        caption: "Newanforbi v. United Parcel Service, Inc.",
+        court: "San Joaquin Sup. Ct.",
+        claims: "PC §290.46(j), Wrongful Failure to Hire, ICRAA, Invasion of Privacy, Negligence Per Se, UCL",
+        status: "Complaint drafted/verified July 15, 2026; not yet filed — TIME-SENSITIVE (adverse action July 31, 2024)",
+        risk: "Favorable on the law but pled on information and belief, as with Matter 25; principal risk is procedural — several causes carry 2-year limitations periods running from the July 31, 2024 adverse action",
+        settlement_note: "Filing urgency is the dominant near-term issue; no wage documentation (never employed) caps economic damages relative to Matter 22",
+        conservative: 35000, moderate: 85000, aggressive: 200000,
+        components: [
+            { label: "PC §290.46(j)(4)(A) Statutory Penalty", conservative: 25000, moderate: 35000, aggressive: 65000 },
+            { label: "Emotional Distress / Lost Opportunity", conservative: 5000, moderate: 20000, aggressive: 55000 },
+            { label: "ICRAA Statutory + Punitive", conservative: 2000, moderate: 5000, aggressive: 10000 },
+            { label: "Punitive (Civ. Code §3294)", conservative: 0, moderate: 10000, aggressive: 40000 },
+            { label: "Fees — PC §290.46(j)(4)(A) / ICRAA", conservative: 3000, moderate: 15000, aggressive: 30000 }
         ]
     }
 ];
