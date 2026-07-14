@@ -9,7 +9,7 @@ export const damages_table = [
     { category: "PC §290.46(j) Violation + Wrongful Termination (Matter 22)", matters: "22", conservative: 220000, moderate: 525000, aggressive: 1000000 },
     { category: "42 USC §1983 — Arbitrary U Visa Certification Denial & Retaliation (Matter 24)", matters: "24", conservative: 75000, moderate: 200000, aggressive: 450000 },
     { category: "PC §290.46(j) Failure to Hire — FedEx / UPS (Matters 25, 26)", matters: "25, 26", conservative: 75000, moderate: 180000, aggressive: 420000 },
-    { category: "PC §290.46(j) — Wrongful Termination / Failure to Employ — Randstad (Matter 27)", matters: "27", conservative: 45000, moderate: 110000, aggressive: 250000 }
+    { category: "PC §290.46(j) — Wrongful Termination / Failure to Employ — Randstad / RK Logistics (Matter 27)", matters: "27", conservative: 45000, moderate: 110000, aggressive: 250000 }
 ];
 
 // Per-matter bottoms-up breakdown — individual case ceilings before deduplication
@@ -206,8 +206,8 @@ export const matter_damages = [
         court: "San Joaquin Sup. Ct.",
         claims: "PC §290.46(j), Wrongful Termination / Failure to Employ, FCRA, ICRAA, UCL",
         status: "Pre-adverse notice received Jul. 13, 2026; complaint not yet filed",
-        risk: "Favorable — rehire documentation and MVR request establish active CDL placement; InfoMart notice is direct evidence of adverse registry reporting; portfolio-wide pattern of five employers corroborates willful practice",
-        settlement_note: "Fifth PC §290.46(j) matter in portfolio; pattern evidence from prior matters dramatically strengthens willfulness showing against both Randstad and InfoMart as co-defendant",
+        risk: "Extremely favorable — Plaintiff holds the actual InfoMart BGC report (Order No. 15780719): all 7 county/state criminal searches and federal criminal returned No Record; registry is the only flagged item; Billing Code 'RK LOGISTICS' and Client Package 'RK Logistics' in report header prove RK Logistics set the criteria that triggered 'NEEDS APPROVAL'; this is not an information-and-belief case",
+        settlement_note: "Fifth PC §290.46(j) matter in portfolio; pattern evidence from prior matters dramatically strengthens willfulness showing; RK Logistics named as co-defendant alongside Randstad US, LLC — two-defendant structure creates settlement cross-pressure, with each defendant incentivized to attribute the placement decision to the other",
         conservative: 45000, moderate: 110000, aggressive: 250000,
         components: [
             { label: "PC §290.46(j)(4)(A) Statutory Penalty", conservative: 25000, moderate: 40000, aggressive: 75000 },
