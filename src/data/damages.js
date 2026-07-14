@@ -206,7 +206,7 @@ export const matter_damages = [
         court: "San Joaquin Sup. Ct.",
         claims: "PC §290.46(j), Wrongful Termination / Failure to Employ, FCRA, ICRAA, UCL",
         status: "Pre-adverse notice received Jul. 13, 2026; complaint not yet filed",
-        risk: "Favorable — rehire documentation and MVR request establish active CDL placement; InfoMart notice is direct evidence of adverse registry reporting; portfolio-wide pattern of five employers corroborates willful practice; RK Logistics as end client adds joint-and-several liability and cross-defendant pressure",
+        risk: "Extremely favorable — Plaintiff holds the actual InfoMart BGC report (Order No. 15780719): all 7 county/state criminal searches and federal criminal returned No Record; registry is the only flagged item; Billing Code 'RK LOGISTICS' and Client Package 'RK Logistics' in report header prove RK Logistics set the criteria that triggered 'NEEDS APPROVAL'; this is not an information-and-belief case",
         settlement_note: "Fifth PC §290.46(j) matter in portfolio; pattern evidence from prior matters dramatically strengthens willfulness showing; RK Logistics named as co-defendant alongside Randstad US, LLC — two-defendant structure creates settlement cross-pressure, with each defendant incentivized to attribute the placement decision to the other",
         conservative: 45000, moderate: 110000, aggressive: 250000,
         components: [
