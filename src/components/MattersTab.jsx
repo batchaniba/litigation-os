@@ -12,6 +12,9 @@ const MatterCard = ({ matter: c, isOpen, onToggle }) => {
       {c.status && c.status.startsWith("SETTLED") && (
         <div aria-label="Settled" style={{ position: "absolute", top: 14, right: -28, width: 110, background: "#16a34a", color: "#fff", fontSize: 10, fontFamily: "'DM Sans', sans-serif", fontWeight: 800, letterSpacing: 2, textTransform: "uppercase", textAlign: "center", padding: "5px 0", transform: "rotate(45deg)", boxShadow: "0 2px 8px rgba(0,0,0,0.35)", pointerEvents: "none", zIndex: 10 }}>SETTLED</div>
       )}
+      {c.badge === "DEFAULT" && (
+        <div aria-label="Default" style={{ position: "absolute", top: 14, right: -28, width: 110, background: GOLD, color: "#fff", fontSize: 10, fontFamily: "'DM Sans', sans-serif", fontWeight: 800, letterSpacing: 2, textTransform: "uppercase", textAlign: "center", padding: "5px 0", transform: "rotate(45deg)", boxShadow: "0 2px 8px rgba(0,0,0,0.35)", pointerEvents: "none", zIndex: 10 }}>DEFAULT</div>
+      )}
       {/* Header row */}
       <button
         onClick={onToggle}
