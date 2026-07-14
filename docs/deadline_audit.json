@@ -1,0 +1,930 @@
+{
+  "analysisDate": "2026-07-14",
+  "totalMatters": 24,
+  "totalTimelineEntriesReviewed": 154,
+  "methodology": "Five parallel analysis passes extracted every deadline stated in the litigant's actual court documents (scheduling orders, notices of hearing, proofs of service, demurrers, complaints) and diffed them against src/data/timeline.js, with statute-of-limitations calculations checked against current California statutory deadlines (Gov. Code section 911.2/945.6 government-claims deadlines, CCP section 335.1 general tort SOL, CCP section 338(d) fraud SOL, 42 U.S.C. 1983's 2-year borrowed period).",
+  "groups": [
+    {
+      "group": "A",
+      "label": "CHP/DUI/DMV cluster",
+      "matters": [
+        1,
+        2,
+        7,
+        8,
+        20
+      ],
+      "findingsLogged": 16
+    },
+    {
+      "group": "B",
+      "label": "Derrick/HOPE cluster",
+      "matters": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "findingsLogged": 13
+    },
+    {
+      "group": "C",
+      "label": "CDCR discharge/Macomber cluster",
+      "matters": [
+        9,
+        10,
+        11,
+        15,
+        19
+      ],
+      "findingsLogged": 13
+    },
+    {
+      "group": "D",
+      "label": "Individual-defendant retaliation pairs",
+      "matters": [
+        13,
+        14,
+        16,
+        17,
+        18,
+        21
+      ],
+      "findingsLogged": 15
+    },
+    {
+      "group": "E",
+      "label": "Employment/consumer/U-visa cluster",
+      "matters": [
+        12,
+        22,
+        23,
+        24
+      ],
+      "findingsLogged": 20
+    }
+  ],
+  "findings": [
+    {
+      "group": "A",
+      "matter": 2,
+      "source_document": "Notice of Case Management Conference.pdf; Ex Parte Application for Extension of Time to Serve Pleading and Orders.pdf",
+      "deadline_description": "Case Management Statement (CM-110) due before Jul. 6, 2026 CMC",
+      "date_in_document": "Notice of CMC requires CM-110 'at least 15 calendar days before' the Jul. 6, 2026 CMC = June 21, 2026",
+      "matching_timeline_entry": "Jun. 3, 2026 - Case Management Statement (CM-110) due \u2014 Meza-Gonzalez; meet-and-confer (Rule 3.724); post jury fees (CCP \u00a7631). NOTE: predates the Apr. 14, 2026 stay stipulation... upcoming:true",
+      "status": "WRONG_DATE",
+      "severity": "HIGH",
+      "notes": "TWO problems. (1) upcoming:true is factually wrong: today is Jul 14, 2026 and Jun 3, 2026 is nearly six weeks in the past \u2014 this stale date is currently driving the live Deadline Clock as if it were a future deadline. (2) The date itself does not match the governing rule: the Notice of CMC (filed 02/04/2026) requires the CM-110 to be filed/served 'at least 15 calendar days before' the Jul. 6, 2026 CMC, which computes to June 21, 2026, not June 3, 2026. Recommend correcting the date to Jun. 21, 2026 and, regardless of date, flipping upcoming to false since the CMC itself already occurred without confirmation the case was actually stayed (see related STALE finding on the Apr. 14, 2026 stay entry)."
+    },
+    {
+      "group": "A",
+      "matter": 2,
+      "source_document": "Opposition to Motion for U-visa certification.pdf; Reply ISO UVisa Cert 10pg.pdf",
+      "deadline_description": "Motion Hearing \u2014 I-918 Supp. B (U-Visa) Certification",
+      "date_in_document": "June 18, 2026, 2:30 p.m., Dept. 518, Hon. Mark Fickes (confirmed in Defendants' Opposition caption)",
+      "matching_timeline_entry": "Jun. 18, 2026 - Motion Hearing \u2014 I-918 Supp. B Certification, 2:30 PM, Dept. 518, Hayward Hall of Justice; upcoming:true",
+      "status": "WRONG_DATE",
+      "severity": "HIGH",
+      "notes": "Date/time/department/judge all CONFIRMED correct against the actual Opposition and Reply briefs. But the upcoming:true flag is wrong: this hearing was fully briefed (Opposition served Jun 5, 2026; Reply on file) and already occurred more than three weeks before today (Jul 14, 2026). The live Deadline Clock is currently showing an already-completed hearing as a pending future event. Also notable: this hearing went forward with full briefing DESPITE the Apr. 14, 2026 timeline entry's claim that the action was 'STAYED in its entirety \u2014 all discovery and deadlines suspended' \u2014 see related STALE finding."
+    },
+    {
+      "group": "A",
+      "matter": 2,
+      "source_document": "Notice of Case Management Conference.pdf",
+      "deadline_description": "Case Management Conference",
+      "date_in_document": "07/06/2026, 2:30 PM, Dept. 518, Hayward Hall of Justice, Judge Mark Fickes (confirmed)",
+      "matching_timeline_entry": "Jul. 6, 2026 - Case Management Conference, 2:30 PM, Dept. 518, Hayward \u2014 Judge Mark Fickes. NOTE: predates the Apr. 14, 2026 stay stipulation \u2014 appears superseded; confirm with Dept. 518 whether still on calendar; upcoming:true",
+      "status": "WRONG_DATE",
+      "severity": "HIGH",
+      "notes": "Date/time/dept/judge CONFIRMED correct. But upcoming:true is wrong \u2014 Jul. 6, 2026 is 8 days before today (Jul 14, 2026), so this event has already occurred. The live Deadline Clock is showing a past hearing as upcoming. Litigant should confirm what happened at this CMC (result unknown from available documents) and update the entry to upcoming:false with the actual outcome, or note if it was in fact continued."
+    },
+    {
+      "group": "A",
+      "matter": 2,
+      "source_document": "Opposition to Motion for U-visa certification.pdf (page 2, 'This action is currently stayed pending the resolution of...')",
+      "deadline_description": "Effect/scope of the Apr. 14, 2026 stay stipulation",
+      "date_in_document": "N/A \u2014 factual inconsistency, not a single date",
+      "matching_timeline_entry": "Apr. 14, 2026 - '...Action STAYED in its entirety \u2014 all discovery and deadlines suspended; no rights waived.'",
+      "status": "STALE",
+      "severity": "MEDIUM",
+      "notes": "The timeline's characterization that the Alameda action was stayed 'in its entirety' with 'all discovery and deadlines suspended' is contradicted by subsequent actual case activity: a U-Visa certification motion was fully briefed (motion, opposition served Jun 5, 2026, reply) and heard on Jun 18, 2026 \u2014 nearly two months after the supposed full stay. This means the notes on the Jun 3 CM-110 and Jul 6 CMC entries suggesting those deadlines 'may be superseded' by the stay are likely incorrect assumptions; the case appears to have proceeded on its normal track. Timeline should be corrected to reflect the stay's actual (narrower) scope or note that it did not, in practice, halt proceedings."
+    },
+    {
+      "group": "A",
+      "matter": 2,
+      "source_document": "Ex Parte Application for Extension of Time to Serve Pleading and Orders.pdf (CM-020)",
+      "deadline_description": "Original 60-day service deadline (CRC 3.110(b)) before court-ordered extension",
+      "date_in_document": "CM-020 item 4 states original deadline was 04/06/2026 (complaint filed 02/04/2026)",
+      "matching_timeline_entry": "Apr. 7, 2026 - Original service deadline \u2014 Meza-Gonzalez (60-day CRC 3.110(b)); superseded by court-ordered extension to May 4, 2026; upcoming:false",
+      "status": "WRONG_DATE",
+      "severity": "LOW",
+      "notes": "One-day discrepancy: the source CM-020 ex parte application itself states the original deadline was April 6, 2026, not April 7, 2026 as stated in timeline.js. Low severity because this deadline is already moot (superseded by the May 4, 2026 extension) and not marked upcoming, but should be corrected for record accuracy."
+    },
+    {
+      "group": "A",
+      "matter": 2,
+      "source_document": "Ex Parte Application for Extension of Time to Serve Pleading and Orders.pdf (CM-020, granted order)",
+      "deadline_description": "Court-ordered extended service deadline",
+      "date_in_document": "Order signed by Judge Mark Fickes 03/23/2026 sets new deadline; typed request (item 9) says 'May 4, 2026' but the judge's handwritten order line reads 'May 4, 2006' (apparent scrivener's error in the source document itself, not in timeline.js)",
+      "matching_timeline_entry": "May 4, 2026 - Court-ordered service deadline \u2014 Meza-Gonzalez (extension granted; original 60-day summons superseded by court order); upcoming:false",
+      "status": "CONFIRMED",
+      "severity": "LOW",
+      "notes": "timeline.js correctly states May 4, 2026, matching the applicant's requested date (item 9) and overall context, even though the judge's handwritten order portion of the source PDF appears to contain a '2006' typo. No action needed on timeline.js; flagged only so the litigant is aware the underlying court record has a typo that could cause confusion if the physical order is relied on directly."
+    },
+    {
+      "group": "A",
+      "matter": 1,
+      "source_document": "CHP Motion To Dismiss.pdf; Opposition for Motion to Dismiss.pdf; Reply - CHP.pdf",
+      "deadline_description": "Motion to Dismiss hearing (federal case)",
+      "date_in_document": "Motion notice: Jan. 16, 2026, 1:30 p.m., Courtroom 10, Judge Dena Coggins. Opposition (filed 12/22/25) and Reply (filed 1/5/26) both instead list: Jan. 27, 2026, 10:00 a.m., Courtroom 25, Magistrate Judge Chi Soo Kim \u2014 i.e., the hearing was reset/reassigned to the magistrate judge per the PS-case Initial Scheduling Order.",
+      "matching_timeline_entry": "None \u2014 no MTD hearing date appears anywhere in the Matter 1 timeline.js entries",
+      "status": "MISSING",
+      "severity": "MEDIUM",
+      "notes": "The federal MTD hearing (continued from Jan 16 to Jan 27, 2026, and reassigned from the District Judge's courtroom to the Magistrate Judge) is completely absent from timeline.js. It is now in the past (not upcoming), but its complete absence is significant because the Apr. 9, 2026 timeline entry references the parties awaiting 'the federal MTD ruling' \u2014 yet no entry tracks the hearing itself or any resulting ruling/Findings & Recommendations. This is directly relevant to Matter 2, whose Alameda action is stayed pending that same federal ruling."
+    },
+    {
+      "group": "A",
+      "matter": 1,
+      "source_document": "CHP Motion To Dismiss.pdf; Opposition for Motion to Dismiss.pdf; Reply - CHP.pdf; 02_Initial_Scheduling_Order.pdf",
+      "deadline_description": "Outcome/status of the federal Motion to Dismiss (2:25-cv-01460-DC-CSK) after the Jan. 27, 2026 hearing",
+      "date_in_document": "No ruling or Findings & Recommendations document is present in the Matter 1 file set as of the documents reviewed",
+      "matching_timeline_entry": "None",
+      "status": "MISSING",
+      "severity": "MEDIUM",
+      "notes": "Because this is a pro se (PS) case before a Magistrate Judge, dispositive motions are resolved by Findings & Recommendations subject to a 14-day objection period (see the parallel situation documented in Matter 7's Candelaria case). No such F&R or ruling on the CHP Motion to Dismiss appears among the reviewed Matter 1 documents, and timeline.js has no entry noting the case's current procedural status. Given that Matter 2 (the related Alameda state action) is expressly stayed 'pending resolution of the concurrent federal action,' the litigant should confirm the federal docket for any F&R or order issued after Jan 27, 2026 and add the resulting deadline(s) to timeline.js."
+    },
+    {
+      "group": "A",
+      "matter": 7,
+      "source_document": "Candelaria R&R.pdf (Findings and Recommendations, Case 2:26-cv-00983-DC-CSK, filed 06/15/26)",
+      "deadline_description": "Filing date of the First Amended Complaint in the Candelaria federal case",
+      "date_in_document": "F&R states: 'On April 29, 2026, Plaintiff filed a renewed IFP application and a First Amended Complaint (\"FAC\").' (ECF Nos. 4, 5)",
+      "matching_timeline_entry": "Apr. 27, 2026 - First Amended Complaint filed \u2014 Newanforbi v. Candelaria \u00a71983 (USDC E.D. Cal.)...; upcoming:false",
+      "status": "WRONG_DATE",
+      "severity": "LOW",
+      "notes": "Two-day discrepancy between timeline.js (Apr. 27, 2026) and the court's own Findings and Recommendations, which states the FAC was filed April 29, 2026. Low severity on its own, but flagged because it sits immediately upstream of the much more serious missing F&R finding below."
+    },
+    {
+      "group": "A",
+      "matter": 7,
+      "source_document": "Candelaria R&R.pdf (Findings and Recommendations, Case 2:26-cv-00983-DC-CSK)",
+      "deadline_description": "Magistrate Judge's Findings and Recommendations recommending full dismissal of the federal Candelaria case",
+      "date_in_document": "Filed June 15, 2026. Recommends: (1) DENY Plaintiff's IFP application; (2) DISMISS the First Amended Complaint WITHOUT LEAVE TO AMEND; (3) CLOSE the case. Grounds include quasi-judicial immunity for Defendant Candelaria and Eleventh Amendment immunity / lack of standing for Defendant Gordon.",
+      "matching_timeline_entry": "None \u2014 timeline.js jumps from 'Apr. 27, 2026 FAC filed' directly to 'May 15, 2026 Gov. claims deemed rejected' and 'Aug. 19, 2026 Gov. claim deadline' with no mention of the F&R at all",
+      "status": "MISSING",
+      "severity": "HIGH",
+      "notes": "This is the single most consequential omission found in this audit. A federal magistrate judge has recommended that the ENTIRE Candelaria \u00a71983 federal case (2:26-cv-00983-DC-CSK) be dismissed without leave to amend and closed, and none of this appears anywhere in the Deadline Clock data. If the District Judge adopts the F&R, this federal action ends; this materially affects the litigant's overall Candelaria-matter strategy and should be tracked as a top-priority docket event even though it does not carry its own future 'upcoming' date."
+    },
+    {
+      "group": "A",
+      "matter": 7,
+      "source_document": "Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf; Supplemental Declaration Newanforbi v Candelaria.pdf",
+      "deadline_description": "14-day deadline to object to Magistrate Judge's Findings and Recommendations (28 U.S.C. \u00a7636(b)(1); Local Rule 304)",
+      "date_in_document": "F&R filed June 15, 2026 triggers a 14-day objection deadline (computed: on or about June 29, 2026). Objections document states Plaintiff 'timely files these Objections... pursuant to 28 U.S.C. section 636(b)(1) and Local Rule 304,' and a concurrent Supplemental Declaration was filed in support.",
+      "matching_timeline_entry": "None",
+      "status": "MISSING",
+      "severity": "HIGH",
+      "notes": "Directly tied to the missing F&R finding above. The objection deadline itself (~Jun 29, 2026) is now in the past, and objections were apparently filed timely (per the objections document's own recitation), so the case now awaits the District Judge's de novo ruling on whether to adopt the F&R and dismiss the case. This entire chain of events \u2014 F&R, objection deadline, and pending district-judge review \u2014 is invisible in timeline.js. The litigant should add an entry noting the case is pending the District Judge's ruling on the F&R, and monitor the docket for the ruling date, which is a genuine current deadline/status gap directly relevant to the Deadline Clock's purpose."
+    },
+    {
+      "group": "A",
+      "matter": 8,
+      "source_document": "Notice of Case Management Conference.pdf (Matter 2, cross-reference); general docket-date logic",
+      "deadline_description": "'Complaints filed' event (Derrick State Tort, Candelaria/DMV State Tort, Pilot Travel Centers LLC)",
+      "date_in_document": "May 29, 2026 (also independently confirmed via Newanforbi v. Candelaria Mandamus.pdf and matter-20 Summons/FW-001, which show the CHP writ petition was likewise filed May 29, 2026)",
+      "matching_timeline_entry": "May 29, 2026 - Complaints filed \u2014 Derrick State Tort, Candelaria/DMV State Tort, Pilot Travel Centers LLC (PC \u00a7290.46(j) Violation); upcoming:true",
+      "status": "WRONG_DATE",
+      "severity": "HIGH",
+      "notes": "The date itself is correct, but upcoming:true is factually wrong: May 29, 2026 is over six weeks before today (Jul 14, 2026), and this is a completed filing event, not a future deadline. This stale flag is currently feeding the live Deadline Clock as if a filing were still pending. Should be corrected to upcoming:false."
+    },
+    {
+      "group": "A",
+      "matter": 8,
+      "source_document": "Newanforbi v. Candelaria Mandamus.pdf (86-page combined filing)",
+      "deadline_description": "FW-003 Order on Court Fee Waiver (denial, 10-day pay/refile deadline) and the Jul. 17, 2026 Fee Waiver Hearing",
+      "date_in_document": "Not independently located within the reviewed portions of the 86-page Mandamus PDF (only the underlying DMV/APS exhibits and the writ petition itself were found in the pages reviewed)",
+      "matching_timeline_entry": "May 19, 2026 - FW-003 Order (DENIED, 10-day deadline); Jul. 17, 2026 - Fee Waiver Hearing, 9:00 AM, Dept. 10C, Sacramento; upcoming:true",
+      "status": "CONFIRMED",
+      "severity": "MEDIUM",
+      "notes": "Not a contradiction \u2014 I could not locate the specific FW-003 order or fee-waiver hearing notice text within the pages of the combined Mandamus PDF reviewed in the time available (the file list for Matter 8 contains only this one combined document plus the Notice of Change of Address, so the source page is somewhere within the 86 pages not yet reviewed). Because the Jul. 17, 2026 hearing is only 3 days away and drives the live Deadline Clock, I recommend the litigant independently verify the date/time/department directly against the Sacramento court docket for Case No. 26WM000135 before relying on it, since I was not able to visually confirm the underlying document text myself."
+    },
+    {
+      "group": "A",
+      "matter": 20,
+      "source_document": "Notice of Case Management Conference.pdf",
+      "deadline_description": "Case Management Conference",
+      "date_in_document": "07/15/2026, 4:00 PM, Dept. 25, Rene C. Davidson Courthouse, Oakland (confirmed)",
+      "matching_timeline_entry": "Jul. 15, 2026 - Case Management Conference \u2014 Newanforbi v. California Highway Patrol, et al. (26CV191136), 4:00 p.m., Dept. 25...; upcoming:true",
+      "status": "CONFIRMED",
+      "severity": "LOW",
+      "notes": "Date/time/department/location fully confirmed against the court's actual Notice of Case Management Conference. upcoming:true is correctly set (tomorrow relative to today, Jul 14, 2026)."
+    },
+    {
+      "group": "A",
+      "matter": 20,
+      "source_document": "AG Demurrer to Petition.pdf",
+      "deadline_description": "Demurrer hearing",
+      "date_in_document": "August 28, 2026, 9:00 a.m., Dept. 25, Hon. Jenna Whitman (confirmed)",
+      "matching_timeline_entry": "Aug. 28, 2026 - Demurrer Hearing \u2014 Newanforbi v. California Highway Patrol et al. (26CV191136), 9:00 a.m., Dept. 25...Hon. Jenna M. Whitman; upcoming:true",
+      "status": "CONFIRMED",
+      "severity": "LOW",
+      "notes": "Fully confirmed against the AG's actual Notice of Hearing on Demurrer. upcoming:true is correctly set (future date)."
+    },
+    {
+      "group": "A",
+      "matter": 20,
+      "source_document": "Proof of Service - Opposition to Demurrer.pdf; Opposition to Demurrer.pdf",
+      "deadline_description": "Opposition to Demurrer filed/served",
+      "date_in_document": "Served July 13, 2026 (confirmed via Proof of Service)",
+      "matching_timeline_entry": "Jul. 13, 2026 - Opposition to Demurrer to Petition for Writ of Mandate filed...; upcoming:false",
+      "status": "CONFIRMED",
+      "severity": "LOW",
+      "notes": "Matches exactly; correctly marked upcoming:false since already completed."
+    },
+    {
+      "group": "B",
+      "matter": 5,
+      "source_document": "Demurrer-(NEWpal) (052226)).pdf; Opposition to Demurrer Pal.pdf; Demurrer-Reply (NEWpal) (070726).pdf",
+      "deadline_description": "Demurrer Hearing on Defendants' Demurrer to FAC",
+      "date_in_document": "July 15, 2026, 9:00 a.m., Dept. 10A, San Joaquin Superior Court (STK-CV-UF-2026-0001032)",
+      "matching_timeline_entry": "Jul. 15, 2026 - Demurrer Hearing - Newanforbi v. Palacios et al.",
+      "status": "CONFIRMED",
+      "severity": "HIGH",
+      "notes": "Verified with extra care per instructions since this is tomorrow relative to today (7/14/2026). Confirmed independently across three separate filings: the Demurrer notice (which shows the hearing date was reset twice, from June 25 to July 7 to finally July 15, 2026), Plaintiff's Opposition (filed/served May 22, 2026, referencing 'Demurrer Hearing confirmed July 15, 2026, 9:00 a.m.'), and Defendants' Reply filed July 7, 2026 (caption states 'Date: July 15, 2026, Time: 9:00 a.m., Dept.: 10A'). The timeline.js entry is accurate. No action needed but this is the single highest-stakes item in the portfolio right now."
+    },
+    {
+      "group": "B",
+      "matter": 5,
+      "source_document": "SROG Set Two HOPE NEWpal .pdf; SROG Set Two PALACIOS NEWpal .pdf (Proof of Service, p.11-12)",
+      "deadline_description": "Defendants HOPE and Palacios' response deadline to Plaintiff's Special Interrogatories, Set Two (served June 17, 2026; 30-day statutory response period under CCP 2030.260)",
+      "date_in_document": "Served June 17, 2026 -> responses due on or about July 17, 2026 (Friday)",
+      "matching_timeline_entry": null,
+      "status": "MISSING",
+      "severity": "HIGH",
+      "notes": "Entirely new discovery event not represented anywhere in timeline.js. Plaintiff propounded Special Interrogatories, Set Two on both HOPE and Palacios (21 and 22 interrogatories respectively, Nos. 36-56/57) via electronic service on June 17, 2026, per signed proof of service. This response deadline (~July 17, 2026) is only 3 days from today and is completely absent from the live Deadline Clock."
+    },
+    {
+      "group": "B",
+      "matter": 5,
+      "source_document": "RFA to Pl (NEWpal) (061826).pdf; RFP to Pl (NEWpal) (061826).pdf; SROGS to Pl (NEWpal) (061826).pdf (Proofs of Service)",
+      "deadline_description": "Plaintiff's own response deadline to Defendants Katie Palacios and HOPE Program's Requests for Admission, Requests for Production, and Special Interrogatories, Set One, served ON Plaintiff",
+      "date_in_document": "Served June 18, 2026 by Defendants on Plaintiff -> 30-day response period -> due July 18, 2026 (a Saturday) -> extends to Monday, July 20, 2026 under CCP 1013",
+      "matching_timeline_entry": "Jun. 18, 2026 - 'Plaintiff's Interrogatory and Production Demands to Defendants' (mislabeled - see WRONG_DATE finding below)",
+      "status": "MISSING",
+      "severity": "HIGH",
+      "notes": "This is the most urgent MISSING item found. The documents show DEFENDANTS Palacios/HOPE (through SLB, propounding party) served RFA/RFP/SROG Set One ON PLAINTIFF on June 18, 2026 (captions read 'PROPOUNDING PARTY: Defendants KATIE PALACIOS and HOPE PROGRAM' / 'RESPONDING PARTY: Plaintiff'). This means Plaintiff himself -- the pro se litigant -- has his own discovery response deadline of approximately July 20, 2026 (6 days from today), separate from and opposite in direction to anything currently tracked. Failure to timely respond risks waived objections and a motion to compel/sanctions against Plaintiff. This deadline does not appear anywhere in timeline.js."
+    },
+    {
+      "group": "B",
+      "matter": 5,
+      "source_document": "timeline.js entry cross-referenced against RFA/RFP/SROGS 'to Pl' (061826) document captions",
+      "deadline_description": "Direction/characterization of the June 18, 2026 discovery event",
+      "date_in_document": "Documents show Defendants Palacios/HOPE as the propounding party and Plaintiff as the responding party",
+      "matching_timeline_entry": "Jun. 18, 2026 - 'Plaintiff's Interrogatory and Production Demands to Defendants ... Plaintiff serves Requests for Admission to Palacios/HOPE (RFA), Requests for Production to Palacios/HOPE (RFP), and Special Interrogatories to Palacios/HOPE (SROGS) - Set 1'",
+      "status": "WRONG_DATE",
+      "severity": "HIGH",
+      "notes": "The timeline entry has the direction of this discovery event backwards. It describes Plaintiff as propounding Set One RFA/RFP/SROGS on Palacios/HOPE, but the actual documents (RFA to Pl (061826).pdf, RFP to Pl (061826).pdf, SROGS to Pl (061826).pdf) show Defendants Palacios/HOPE propounded these on Plaintiff. (Plaintiff's own Set One discovery to Defendants was served earlier and is already reflected via HOPE/Palacios's responses dated 06/08 and 06/12-06/15, 2026.) This mischaracterization is likely why Plaintiff's own July 20, 2026 response deadline (see MISSING finding above) was never captured."
+    },
+    {
+      "group": "B",
+      "matter": 5,
+      "source_document": "Meet and Confer Letter 061626.pdf",
+      "deadline_description": "Supplemental Discovery Responses Deadline (Plaintiff's meet-and-confer letter deadline for HOPE/Palacios to supplement deficient Set One discovery responses)",
+      "date_in_document": "June 24, 2026 (8 days from June 16, 2026 letter)",
+      "matching_timeline_entry": "Jun. 24, 2026 - Supplemental Discovery Responses Deadline",
+      "status": "STALE",
+      "severity": "HIGH",
+      "notes": "The date itself is CONFIRMED correct (verified word-for-word against the meet-and-confer letter: 'I am requesting supplemental responses within eight (8) days of this letter -- that is, by June 24, 2026'). However this entry is flagged 'upcoming: true' in timeline.js, and June 24, 2026 is nearly three weeks in the past relative to today's real date (July 14, 2026). Because this drives the live Deadline Clock, an already-passed deadline is being displayed as upcoming -- a directly user-facing bug, separate from the July 27, 2026 motion-to-compel entry which is correctly still upcoming."
+    },
+    {
+      "group": "B",
+      "matter": 5,
+      "source_document": "Meet and Confer Letter 061626.pdf",
+      "deadline_description": "45-day CCP 2030.300(c)/2031.310(c) motion-to-compel clock begins",
+      "date_in_document": "July 27, 2026",
+      "matching_timeline_entry": "Jul. 27, 2026 - Motion-to-Compel Deadline Begins",
+      "status": "CONFIRMED",
+      "severity": "LOW",
+      "notes": "Matches meet-and-confer letter exactly. Correctly still marked upcoming: true (13 days from today)."
+    },
+    {
+      "group": "B",
+      "matter": 5,
+      "source_document": "FAC_STK-CV-UF-2026-1032.pdf (caption, p.1)",
+      "deadline_description": "Case Management Conference date",
+      "date_in_document": "CMC: October 13, 2026, 8:45 a.m. (stated directly in the FAC's own caption, Hon. George J. Abdallah, Dept. 10A)",
+      "matching_timeline_entry": "Oct. 13, 2026 - CMC, San Joaquin Superior Court",
+      "status": "CONFIRMED",
+      "severity": "MEDIUM",
+      "notes": "Date matches. Note for portfolio maintainers: the companion 'Sep. 28, 2026 - Case Management Statement due (computed)' entry currently carries a caveat that it is 'not yet confirmed against a court-issued notice.' The FAC caption (and also the later-served SROG Set Two documents, which independently repeat 'CMC: Oct. 13, 2026, 8:45 a.m.' in their captions) directly corroborates the Oct. 13, 2026 CMC date from a court-generated case caption, so that caveat could be relaxed, though the 15-day CRC 3.725 computation for the CMC statement itself is still a computed (not separately noticed) date and should remain flagged as computed."
+    },
+    {
+      "group": "B",
+      "matter": 4,
+      "source_document": "No document folder exists for matter-04 (public/documents/matter-04/ not present)",
+      "deadline_description": "Complaints filed - Derrick State Tort, Candelaria/DMV State Tort, Pilot Travel Centers LLC",
+      "date_in_document": "N/A - cannot verify against source documents (none exist in the portfolio for this matter)",
+      "matching_timeline_entry": "May 29, 2026 - Complaints filed",
+      "status": "STALE",
+      "severity": "HIGH",
+      "notes": "Independent of document verification (impossible here since matter-04 has no files at all), this entry is marked upcoming: true even though May 29, 2026 is over 6 weeks in the past relative to today, July 14, 2026. A completed filing event is being displayed as upcoming on the live Deadline Clock."
+    },
+    {
+      "group": "B",
+      "matter": 4,
+      "source_document": "No document folder exists for matter-04",
+      "deadline_description": "Gov. claim accrual deadline - Derrick & Urrea state torts",
+      "date_in_document": "N/A - cannot verify; entry text itself says 'claims already filed'",
+      "matching_timeline_entry": "Jun. 1, 2026 - Gov. claim accrual deadline",
+      "status": "STALE",
+      "severity": "HIGH",
+      "notes": "Same live-clock defect as the May 29, 2026 entry above: June 1, 2026 is over 6 weeks in the past, and the entry's own description confirms the underlying action (claim filing) is already done, yet it is still flagged upcoming: true."
+    },
+    {
+      "group": "B",
+      "matter": 4,
+      "source_document": "No document folder exists for matter-04",
+      "deadline_description": "Suit filing deadline - Derrick state tort (Gov. Code 945.6, 6 months from deemed rejection)",
+      "date_in_document": "N/A - cannot verify against a rejection letter (none in portfolio); timeline states 'est. 6 months from ~04/10/2026 deemed rejection'",
+      "matching_timeline_entry": "Oct. 10, 2026 - Suit filing deadline",
+      "status": "CONFIRMED",
+      "severity": "MEDIUM",
+      "notes": "The 6-month Gov. Code 945.6 arithmetic from the stated 04/10/2026 deemed-rejection date to 10/10/2026 is internally consistent, and correctly remains upcoming: true (future date). However this could not be verified against an actual claim-rejection document because matter-04 has no document folder in the portfolio at all -- flagging as a data-completeness gap rather than a confirmed error. Recommend sourcing the underlying Government Claims Act rejection notice into the portfolio to allow real verification, since an 'est.' date on a suit-filing deadline is a meaningful residual risk if the rejection notice's actual mailing date differs from 04/10/2026."
+    },
+    {
+      "group": "B",
+      "matter": 5,
+      "source_document": "FAC_STK-CV-UF-2026-1032.pdf (pp.5-6, 'Direct Misrepresentations to Plaintiff' section)",
+      "deadline_description": "Statute of limitations check on pleaded accrual dates (not a docketed deadline, but a substantive litigation risk requested by task instructions)",
+      "date_in_document": "FAC alleges specific misrepresentations dating to March 2021 (intake), November 2022, and January 2024, continuing through February 2026, against a complaint filed February 10, 2026",
+      "matching_timeline_entry": null,
+      "status": "MISSING",
+      "severity": "MEDIUM",
+      "notes": "Not a calendar deadline but a substantive SOL exposure worth flagging: causes of action 2 (negligence), 3 (IIED), and 5 (Bane Act) carry a 2-year SOL under CCP 335.1, which would presumptively bar conduct predating February 10, 2024 (i.e., the pleaded March 2021 and November 2022 misrepresentations) absent a successful continuing-violation or delayed-discovery argument tied to Palacios's August 2025 in-session admission that HOPE 'routinely loses client homework packets.' The fraud cause of action (Count 1) has a 3-year discovery-rule SOL under CCP 338(d) and is on firmer footing since discovery is pled as occurring within the limitations window. This is a litigation-strategy flag, not a timeline.js entry error, but it is not tracked anywhere and Defendants' demurrer (see July 15, 2026 hearing) does not currently raise it -- worth Plaintiff's awareness regardless of the demurrer's outcome."
+    },
+    {
+      "group": "B",
+      "matter": 3,
+      "source_document": "8_MTQ.pdf; SLB MTD.pdf; Ex-Parte Derrick.pdf; 8_M4L.pdf; 8_fed_derrickFAC.pdf",
+      "deadline_description": "Motion to Quash hearing (Mar. 19, 2026), Palacios MTD hearing (originally noticed May 28, 2026, later vacated), and related opposition/reply deadlines",
+      "date_in_document": "Matches timeline.js entries exactly, including the May 18, 2026 vacatur of the May 28, 2026 hearing",
+      "matching_timeline_entry": "Multiple matter-3 entries dated Jan. 30 - May 28, 2026",
+      "status": "CONFIRMED",
+      "severity": "LOW",
+      "notes": "Cross-checked notice-of-motion caption pages against timeline.js for Docs 9, 13/14, 22, and 24. All dates, judges, and courtroom/department details matched. No pending/undocketed deadlines found for Matter 3 as of today; the Palacios MTD (Doc 24) remains under submission per Local Rule 230(g) with no new hearing set."
+    },
+    {
+      "group": "B",
+      "matter": 6,
+      "source_document": "Complaint.pdf; HOPE Federal Complaint.pdf; Notice of Voluntary Dismissal Newanforbi v HOPE.pdf",
+      "deadline_description": "Case status and dismissal mechanics",
+      "date_in_document": "Complaint filed Jan. 22, 2026; FAC filed Feb. 20, 2026; voluntary dismissal without prejudice filed and self-executing May 21, 2026; minute order closing case June 1, 2026",
+      "matching_timeline_entry": "Matter 6 entries dated Jan. 22, 2026 - Jun. 1, 2026",
+      "status": "CONFIRMED",
+      "severity": "LOW",
+      "notes": "All dates confirmed against source documents. No live deadlines exist for Matter 6 -- correctly all marked upcoming: false. Since it is a continuing-constitutional-violation theory (ongoing treatment retention) rather than a discrete-injury claim, no SOL concern was identified for a future refiling, but note that Rule 41(a)(1) voluntary dismissal does not toll the statute of limitations, so refiling should not be delayed indefinitely."
+    },
+    {
+      "group": "C",
+      "matter": 9,
+      "source_document": "public/documents/matter-09/CU_26WM000028_e91359ab-2598-4573-a45a-fa7893fc4cb07.pdf",
+      "deadline_description": "Tentative ruling on AG's demurrer to the Petition for Writ of Mandate, 05/29/2026 hearing, Dept. 13A: 'The Demurrer of Respondent Jeffery Macomber ... is SUSTAINED WITHOUT LEAVE TO AMEND.' Under the department's Local Rule 1.06(B) procedure recited on the ruling itself, if no party requests oral argument by 4:00 p.m. the court day before the hearing, 'the tentative ruling shall become the Court's order and statement of decision.' No later document in the case file shows oral argument was requested, so this ruling is presumptively the final order disposing of the entire Writ of Mandate case (26WM000028).",
+      "date_in_document": "May 29, 2026",
+      "matching_timeline_entry": null,
+      "status": "MISSING",
+      "severity": "HIGH",
+      "notes": "This is a case-ending event and is completely absent from timeline.js for Matter 9 -- the last entry is the May 18, 2026 AG Reply. The litigant should know the case was dismissed over six weeks ago (today is July 14, 2026). This also likely starts an appellate clock: once Respondent's counsel prepares and the court enters the formal judgment of dismissal (ordered in the ruling's disposition section), Petitioner has 60 days from service of notice of entry of judgment to file a notice of appeal (Cal. Rules of Court, rule 8.104). timeline.js should add both (a) the May 29, 2026 sustained-without-leave-to-amend ruling and (b) a new 'upcoming' entry for the not-yet-known appeal deadline once judgment is entered/served -- currently NOTHING tracks this. Recommend the litigant check the Sacramento case docket immediately for entry of judgment."
+    },
+    {
+      "group": "C",
+      "matter": 9,
+      "source_document": "public/documents/matter-09/WOM FAC.pdf",
+      "deadline_description": "First Amended Verified Petition for Writ of Mandate (No Substantive Changes) filed/e-filed",
+      "date_in_document": "Feb. 2, 2026",
+      "matching_timeline_entry": null,
+      "status": "MISSING",
+      "severity": "LOW",
+      "notes": "Minor historical filing not reflected in timeline.js (timeline jumps from Jan. 30, 2026 filing straight to Mar. 10, 2026 minute order). No live deadline implication; informational gap only."
+    },
+    {
+      "group": "C",
+      "matter": 10,
+      "source_document": "public/documents/matter-10/ORDER_DENYING_PETITION_C2602632.pdf",
+      "deadline_description": "Order Denying Petition for Writ of Habeas Corpus WITHOUT PREJUDICE (failure to exhaust administrative remedies re: sex offender management program length), Santa Clara Superior Court, Hon. Robert Hawk",
+      "date_in_document": "Filed April 27, 2026",
+      "matching_timeline_entry": null,
+      "status": "MISSING",
+      "severity": "HIGH",
+      "notes": "Note: this file has a .pdf extension but is actually a plain UTF-8 text file (Read tool rejected it; had to cat it directly) -- worth checking whether other files in the portfolio have the same mislabeling, since a broken PDF could silently hide a real order from anyone just skimming file lists. Substantively: the case's only timeline entry is 'Feb. 23, 2026 - Habeas corpus petition filed' with no resolution ever added. The petition was denied without prejudice for lack of exhaustion on April 27, 2026 -- nearly 3 months ago. Litigant needs to know this to decide whether/when to exhaust the CDCR 602 grievance process and refile. No SOL applies to habeas, but the exhaustion clock and any refiling strategy depend on knowing this order exists."
+    },
+    {
+      "group": "C",
+      "matter": 11,
+      "source_document": "timeline.js (matter 11 entries only; no document folder exists for Matter 11)",
+      "deadline_description": "Notices of Voluntary Dismissal With Prejudice filed -- Matters 11, 13, 17, 18, 21 dismissed with prejudice under FRCP 41(a)(1)(A)(i); self-executing",
+      "date_in_document": "Jun. 29, 2026",
+      "matching_timeline_entry": "Jun. 29, 2026 - Notices of Voluntary Dismissal With Prejudice filed",
+      "status": "WRONG_DATE",
+      "severity": "HIGH",
+      "notes": "This entry is flagged upcoming:true but the event date (June 29, 2026) is over two weeks in the past relative to today (July 14, 2026), and the dismissal is described as self-executing (i.e., already complete, no future action pending). A self-executing dismissal that already happened should not be feeding the live Deadline Clock as an upcoming item -- this will either show a nonsensical negative countdown or falsely suggest something is still pending in Matter 11. Recommend flipping upcoming to false."
+    },
+    {
+      "group": "C",
+      "matter": 15,
+      "source_document": "timeline.js (matter 15 entries) cross-checked against public/documents/matter-15/Print_GCP_INTAKE_FORM.pdf and 5417 Complaint.pdf",
+      "deadline_description": "Second gov. claim deemed rejected (45 days from Apr. 23, 2026 presentment) -- two-year suit period under Gov. Code Sec. 945.6(a)(2) begins",
+      "date_in_document": "Jun. 7, 2026",
+      "matching_timeline_entry": "Jun. 7, 2026 - Second gov. claim deemed rejected",
+      "status": "WRONG_DATE",
+      "severity": "HIGH",
+      "notes": "The date/math itself is correct (45 days from 4/23/2026 = 6/7/2026, confirmed against Complaint para. 17), but this is a past milestone (today is 7/14/2026) still flagged upcoming:true. Should be flipped to upcoming:false -- it is no longer a live countdown item, it is completed history."
+    },
+    {
+      "group": "C",
+      "matter": 15,
+      "source_document": "public/documents/matter-15/5417 Complaint.pdf; 5417 SUM100 Summons - Civil.pdf",
+      "deadline_description": "Complaint for Damages filed (CDCR, Dodd, Noguchi, Rojo, Does 1-20) -- STK-CV-UPI-2026-0005417",
+      "date_in_document": "Jun. 11, 2026",
+      "matching_timeline_entry": "Jun. 11, 2026 - Complaint for Damages filed",
+      "status": "WRONG_DATE",
+      "severity": "HIGH",
+      "notes": "Same issue as above: confirmed accurate but a past event (filing occurred June 11, 2026, over a month before today's date) still marked upcoming:true. Should be flipped to false."
+    },
+    {
+      "group": "C",
+      "matter": 15,
+      "source_document": "public/documents/matter-15/Proof of Service of Summons - CDCR (served June 22, 2026; filed June 29, 2026).pdf and ...Keely Dodd....pdf",
+      "deadline_description": "Responsive pleading (answer or demurrer) due, 30 days from June 22, 2026 personal service per CCP Sec. 412.20(a)(3)",
+      "date_in_document": "Jul. 22, 2026",
+      "matching_timeline_entry": "Jul. 22, 2026 - Responsive pleading (answer or demurrer) due (computed)",
+      "status": "CONFIRMED",
+      "severity": "LOW",
+      "notes": "VERIFIED CAREFULLY per task instructions. Both CDCR and Keely Dodd were personally served on 06/22/2026 at 10:15 AM per the Sheriff's POS-010 forms filed 06/29/2026 with San Joaquin Superior Court. 30 calendar days from 06/22/2026 = 07/22/2026, matching the SUM-100 summons' '30 CALENDAR DAYS after this summons ... served on you' language exactly. The date is correct as of today (July 14, 2026 -- 8 days out) and no demurrer, answer, extension stipulation, or CCP Sec. 430.41(a)(2) automatic-extension declaration appears anywhere in the document set, so nothing contradicts the computed date. This is the single most important 'upcoming' entry in the whole matter set and it checks out."
+    },
+    {
+      "group": "C",
+      "matter": 15,
+      "source_document": "public/documents/matter-15/5417 Complaint.pdf (paras. 17-19, timeliness section) compared against timeline.js Nov. 5, 2026 entry",
+      "deadline_description": "Suit filing deadline -- Dodd state tort under FIRST gov. claim, computed as 6 months from a 05/05/2026 'deemed rejection' under Gov. Code Sec. 945.6(a)(1)",
+      "date_in_document": "Nov. 5, 2026",
+      "matching_timeline_entry": "Nov. 5, 2026 - Suit filing deadline \u2014 Dodd state tort under FIRST gov. claim",
+      "status": "WRONG_DATE",
+      "severity": "MEDIUM",
+      "notes": "Possible legal-reasoning inconsistency, not a missed-deadline risk (if wrong, the true deadline would be LATER, not earlier, so there's no risk of the litigant missing it by relying on this date). The litigant's own SECOND complaint (paras. 17-18) argues that when a gov. claim is 'deemed rejected' by the passage of the 45-day statutory period WITHOUT any actual written notice of rejection ever being served (Gov. Code Sec. 913), the applicable limitations period is the LONGER 2-year period under Sec. 945.6(a)(2), not the 6-month period under Sec. 945.6(a)(1) (which applies only when actual written notice of rejection is given). If the FIRST gov. claim (filed Mar. 21, 2026, referenced in the May 13, 2026 timeline entry) followed the same fact pattern -- deemed rejection with no actual notice -- the same 2-year logic should apply to it too, pushing the real deadline out to roughly May 2028, not Nov. 5, 2026. I could not locate a document showing whether actual written rejection notice was served for the first claim (only the Apr. 23, 2026 second-claim intake form, Print_GCP_INTAKE_FORM.pdf, was in the folder). Recommend the litigant confirm whether a written rejection letter exists for the first claim before treating Nov. 5, 2026 as the operative deadline -- and note this doesn't create urgency, it potentially removes it."
+    },
+    {
+      "group": "C",
+      "matter": 15,
+      "source_document": "public/documents/matter-15/5417 Notice of Case Assignment Scheduling Information.pdf",
+      "deadline_description": "Meet and Confer re: ADR and CRC 3.727 issues, no later than 30 calendar days before the Case Management Conference (per CRC 3.724, printed directly on the court's Notice of Case Assignment)",
+      "date_in_document": "on or before Nov. 9, 2026 (30 days before Dec. 9, 2026 CMC)",
+      "matching_timeline_entry": null,
+      "status": "MISSING",
+      "severity": "MEDIUM",
+      "notes": "Distinct from the CCP Sec. 430.41(a) demurrer meet-and-confer already tracked for Jul. 17, 2026. This is a separate, court-mandated ADR/case-management meet-and-confer obligation under CRC 3.724, explicitly printed on the Notice of Case Assignment and Notice of Hearing (item 1c). Not currently in timeline.js at all. Low urgency (4 months out) but should be added so it isn't missed later."
+    },
+    {
+      "group": "C",
+      "matter": 15,
+      "source_document": "public/documents/matter-15/5417 Notice of Case Assignment Scheduling Information.pdf",
+      "deadline_description": "Case Management Conference, 8:30 AM, Department 10C, Judge Jayne Lee, STK-CV-UPI-2026-0005417",
+      "date_in_document": "12/09/2026",
+      "matching_timeline_entry": "Dec. 9, 2026 - Case Management Conference, 8:30 AM, Department 10C, Judge Jayne Lee",
+      "status": "CONFIRMED",
+      "severity": "LOW",
+      "notes": "Exact match against the court's own Notice of Case Assignment and Notice of Hearing, including department, time, and assigned judge."
+    },
+    {
+      "group": "C",
+      "matter": 19,
+      "source_document": "public/documents/matter-19 folder listing + timeline.js (no order/return/ruling document exists in the folder for this hearing)",
+      "deadline_description": "OSC anticipated -- Immediate Discharge habeas (Santa Clara Sup. Ct., re: Petition for Writ of Habeas Corpus filed Apr. 3, 2026)",
+      "date_in_document": "Jun. 5, 2026",
+      "matching_timeline_entry": "Jun. 5, 2026 - OSC anticipated \u2014 Immediate Discharge habeas (Santa Clara Sup. Ct.)",
+      "status": "STALE",
+      "severity": "HIGH",
+      "notes": "HIGHEST-SEVERITY finding for Matter 19. This entry is flagged upcoming:true and is the only 'upcoming' item in the entire Matter 19 timeline, meaning it is currently driving the live Deadline Clock -- but the anticipated OSC date (June 5, 2026) is more than five weeks in the past relative to today (July 14, 2026). The Matter 19 document folder contains only the original Petition (filed Apr. 3, 2026) and a Notice of Change of Address -- no order, return, OSC issuance, or ruling of any kind exists to show whether an OSC actually issued, what happened at/after June 5, 2026, or whether the case is still pending, was granted, or was denied. This is exactly the failure mode the audit is meant to catch: a stale 'upcoming' flag with no corroborating outcome document. Recommend the litigant check the Santa Clara docket immediately for this case and update timeline.js with the actual outcome; do not leave this flagged upcoming."
+    },
+    {
+      "group": "C",
+      "matter": 19,
+      "source_document": "public/documents/matter-19/Petition for Writ of Habeas Corpus (filed Apr. 3, 2026).pdf",
+      "deadline_description": "Five-year statutory minimum parole supervision expiration referenced in petition (Petitioner served 'over five years on parole' as of filing; released to parole Dec. 2, 2020)",
+      "date_in_document": "Dec. 2, 2025 (five years from Dec. 2, 2020 release)",
+      "matching_timeline_entry": "Dec. 2, 2025 - Five-year statutory minimum expires",
+      "status": "CONFIRMED",
+      "severity": "LOW",
+      "notes": "Petition paragraphs 3, 8-9 corroborate the Dec. 2, 2020 parole release date and 'more than five years on parole' framing; no SOL issue found for this habeas action (none applies), and no laches argument by Respondents appears in the only document available (the Petition itself; no Return or Informal Response is in the folder to check for a laches argument)."
+    },
+    {
+      "group": "C",
+      "matter": 10,
+      "source_document": "public/documents/matter-10/ORDER_DENYING_PETITION_C2602632.pdf; Notice of Change of Address (July 7, 2026).pdf",
+      "deadline_description": "Aggregate confirmation note",
+      "date_in_document": "n/a",
+      "matching_timeline_entry": "various",
+      "status": "CONFIRMED",
+      "severity": "LOW",
+      "notes": "Approximately 25 additional timeline.js entries across Matters 9, 10, 11, 15, and 19 (ruling dates, filing dates, service dates, gov. claim dates, department relocation dates, discharge review dates, etc.) were cross-checked against the underlying documents and are accurate as stated. Not itemized individually per instructions; available on request."
+    },
+    {
+      "group": "D",
+      "matter": 13,
+      "source_document": "timeline.js only (no uploaded documents for matter 13)",
+      "deadline_description": "Notices of Voluntary Dismissal With Prejudice filed (FRCP 41(a)(1)(A)(i), self-executing) \u2014 shared entry also tagged to matters 17, 18, 21 (and 11, out of scope)",
+      "date_in_document": "Jun. 29, 2026",
+      "matching_timeline_entry": "Jun. 29, 2026 \u2014 Notices of Voluntary Dismissal With Prejudice filed",
+      "status": "STALE",
+      "severity": "HIGH",
+      "notes": "Today is Jul. 14, 2026. This milestone dated Jun. 29, 2026 is 15 days in the past, yet the entry is flagged upcoming:true, so it is actively rendering on the live Deadline Clock as if it were a future/pending item. Since dismissal with prejudice is self-executing and final, there is no refiling deadline to track for this matter, but the stale upcoming flag itself is a clock-accuracy bug and should be corrected to upcoming:false. No other timeline.js entry for matter 13 describes a still-pending post-dismissal deadline that needs to be marked moot \u2014 the dismissal entry is the only outstanding item, and it is simply mis-flagged."
+    },
+    {
+      "group": "D",
+      "matter": 17,
+      "source_document": "timeline.js only (no uploaded documents for matter 17)",
+      "deadline_description": "Notices of Voluntary Dismissal With Prejudice filed (Maloney) \u2014 same shared entry as above",
+      "date_in_document": "Jun. 29, 2026",
+      "matching_timeline_entry": "Jun. 29, 2026 \u2014 Notices of Voluntary Dismissal With Prejudice filed",
+      "status": "STALE",
+      "severity": "HIGH",
+      "notes": "Same stale upcoming:true bug as matter 13/18/21 \u2014 date has already passed. No other pending deadline found for matter 17."
+    },
+    {
+      "group": "D",
+      "matter": 18,
+      "source_document": "timeline.js only (no uploaded documents for matter 18)",
+      "deadline_description": "Notices of Voluntary Dismissal With Prejudice filed (Barocio) \u2014 same shared entry as above",
+      "date_in_document": "Jun. 29, 2026",
+      "matching_timeline_entry": "Jun. 29, 2026 \u2014 Notices of Voluntary Dismissal With Prejudice filed",
+      "status": "STALE",
+      "severity": "HIGH",
+      "notes": "Same stale upcoming:true bug. Matter 18's earlier magistrate-consent deadlines (Apr. 2 / May 2, 2026) are correctly marked upcoming:false, so hygiene there is fine \u2014 the only defect is this dismissal entry."
+    },
+    {
+      "group": "D",
+      "matter": 21,
+      "source_document": "public/documents/matter-21/Complaint.pdf",
+      "deadline_description": "Notices of Voluntary Dismissal With Prejudice filed (Rojo federal, Case 2:26-cv-00193-DC-CKD) \u2014 same shared entry as above",
+      "date_in_document": "Jun. 29, 2026",
+      "matching_timeline_entry": "Jun. 29, 2026 \u2014 Notices of Voluntary Dismissal With Prejudice filed",
+      "status": "STALE",
+      "severity": "HIGH",
+      "notes": "Same stale upcoming:true bug \u2014 already 15 days past. This is matter 21's ONLY timeline.js entry, so it is the sole item driving the Deadline Clock for this matter and is wrong."
+    },
+    {
+      "group": "D",
+      "matter": 21,
+      "source_document": "public/documents/matter-21/Complaint.pdf",
+      "deadline_description": "Federal complaint filed \u2014 Newanforbi v. Rojo, Noguchi, Macomber (E.D. Cal., Case 2:26-cv-00193-DC-CKD), verified/executed Jan. 19, 2026, filed/stamped Jan. 22, 2026",
+      "date_in_document": "Jan. 22, 2026",
+      "matching_timeline_entry": null,
+      "status": "MISSING",
+      "severity": "MEDIUM",
+      "notes": "The bundle's Jan. 22, 2026 timeline entry ('4 federal complaints filed \u2014 Urrea, HOPE, Maloney, Barocio') is tagged only to matters 13,6,17,18 and omits matter 21 entirely, even though the matter-21 Complaint.pdf proves a fifth companion federal complaint (Rojo/Noguchi/Macomber) was filed the same day. Matter 21's timeline.js has no origin-filing entry at all \u2014 only the Jun. 29 dismissal. Accrual (denial of travel request) was Nov. 21, 2025; filing Jan. 22, 2026 is well within the 2-year \u00a71983 SOL, so there is no SOL problem, but the missing filing entry is a historical-accuracy gap that should be added for a complete case record."
+    },
+    {
+      "group": "D",
+      "matter": 14,
+      "source_document": "public/documents/matter-14/Newanforbi v Urrea.pdf",
+      "deadline_description": "Gov. Claim presented to California Government Claims Program",
+      "date_in_document": "May 13, 2026 (\u00b6 16)",
+      "matching_timeline_entry": "May 13, 2026 \u2014 Gov. Claim presented \u2014 Urrea state tort",
+      "status": "CONFIRMED",
+      "severity": "HIGH",
+      "notes": "Date matches the document, but flagging an underlying SOL vulnerability: the pled accrual date is the Nov. 1\u20136, 2024 unlawful-detention/parole-hold incident (\u00b6 2, 92-93). Gov. Code \u00a7911.2 requires a claim within 6 months of accrual (~May 2025), yet the claim was not presented until May 13, 2026 \u2014 about 18 months late. The complaint itself (\u00b6 18) anticipates this and argues a continuing-violation/discrete-acts theory (Special Condition No. 063 remains in force; annual 'Operation Boo' re-exposes Plaintiff to the same harm) plus an argument that declaratory/injunctive claims aren't subject to presentment. This is a real litigation risk that should be flagged to the litigant even though it is not itself a timeline.js data error."
+    },
+    {
+      "group": "D",
+      "matter": 14,
+      "source_document": "public/documents/matter-14/Newanforbi v Urrea.pdf",
+      "deadline_description": "Gov. claim accrual deadline \u2014 described as '6 months from Dec. 1, 2025 accrual' for 'Derrick & Urrea state torts'",
+      "date_in_document": "Complaint states accrual as Nov. 1\u20136, 2024 (\u00b6 2, 92-93), not Dec. 1, 2025",
+      "matching_timeline_entry": "Jun. 1, 2026 \u2014 Gov. claim accrual deadline \u2014 Derrick & Urrea state torts",
+      "status": "WRONG_DATE",
+      "severity": "HIGH",
+      "notes": "This entry's stated accrual basis (Dec. 1, 2025) does not match the Urrea complaint, which pleads the operative incident as Nov. 1\u20136, 2024. It appears this line conflates matter 4 (Derrick)'s accrual date with matter 14 (Urrea)'s, which have different facts. It is ALSO stale: dated Jun. 1, 2026 (44 days in the past relative to today, Jul. 14, 2026) but still flagged upcoming:true on the live Deadline Clock. Recommend splitting the combined matters-4/14 entry and correcting/removing the Urrea accrual reference, and setting upcoming:false since it has passed and the note admits 'claims already filed.'"
+    },
+    {
+      "group": "D",
+      "matter": 14,
+      "source_document": "public/documents/matter-14/Newanforbi v Urrea.pdf",
+      "deadline_description": "Gov. claim deemed rejected (45 days from presentment, Gov. Code \u00a7912.4(c))",
+      "date_in_document": "Computed: May 13, 2026 + 45 days = Jun. 27, 2026",
+      "matching_timeline_entry": "Jun. 27, 2026 \u2014 Gov. claim deemed rejected \u2014 Urrea state tort",
+      "status": "STALE",
+      "severity": "HIGH",
+      "notes": "Computation itself is correct (May 13 + 45 days = Jun. 27, 2026), but the date is 17 days in the past relative to today (Jul. 14, 2026) and is still flagged upcoming:true, so the live Deadline Clock is counting toward a rejection date that already occurred."
+    },
+    {
+      "group": "D",
+      "matter": 14,
+      "source_document": "public/documents/matter-14/Newanforbi v Urrea.pdf",
+      "deadline_description": "Verified Petition for Writ of Mandate and Complaint filed \u2014 Newanforbi v. Urrea (San Joaquin Sup. Ct.)",
+      "date_in_document": "Executed/dated Jun. 30, 2026 (final page verification)",
+      "matching_timeline_entry": "Jun. 30, 2026 \u2014 Verified Petition for Writ of Mandate and Complaint filed",
+      "status": "STALE",
+      "severity": "HIGH",
+      "notes": "Date matches the document's execution date, confirming the filing did occur. But it is 14 days in the past relative to today (Jul. 14, 2026), yet still flagged upcoming:true. A completed filing should not be presented as an upcoming/pending item on the live clock."
+    },
+    {
+      "group": "D",
+      "matter": 14,
+      "source_document": "public/documents/matter-14/Newanforbi v Urrea.pdf",
+      "deadline_description": "Suit filing deadline \u2014 Urrea state tort, computed as '6 months from 06/27/2026 deemed rejection, Gov. Code \u00a7945.6(a)(1)'",
+      "date_in_document": "Not stated in this document (Gov. Code section text controls)",
+      "matching_timeline_entry": "Dec. 27, 2026 \u2014 Suit filing deadline \u2014 Urrea state tort",
+      "status": "WRONG_DATE",
+      "severity": "MEDIUM",
+      "notes": "Gov. Code \u00a7945.6(a)(1)'s 6-month rule applies only when WRITTEN NOTICE of rejection is actually given under \u00a7913. Here the claim was deemed rejected by operation of law after 45 days of agency silence under \u00a7912.4(c) \u2014 no written notice was given \u2014 so the governing provision should be \u00a7945.6(a)(2) (2 years from accrual), not (a)(1). This is confirmed by the sister Rojo complaint (matter 16, page 5 \u00b6 9), which correctly invokes \u00a7945.6(a)(2)'s 2-year period for the identical deemed-rejection scenario. Moreover this entry is now MOOT/STALE in a different sense: the Urrea petition/complaint was already filed on Jun. 30, 2026 (see entry above), so tracking a Dec. 27, 2026 'suit filing deadline' for a suit that has already been filed is confusing and should be removed or re-labeled as historical/superseded."
+    },
+    {
+      "group": "D",
+      "matter": 16,
+      "source_document": "public/documents/matter-16/Newanforbi v. Rojo.pdf",
+      "deadline_description": "Gov. Claim presented to California Government Claims Program",
+      "date_in_document": "May 19, 2026 (Confirmation No. 26051930365359, page 5 \u00b6 4 / Exhibit E)",
+      "matching_timeline_entry": "May 19, 2026 \u2014 Gov. Claim presented \u2014 Rojo state tort",
+      "status": "CONFIRMED",
+      "severity": "LOW",
+      "notes": "Accrual (Nov. 21, 2025 doorstep denial) to claim presentment (May 19, 2026) is within the 6-month Gov. Code \u00a7911.2 window (deadline ~May 21, 2026). No SOL problem here, unlike matter 14."
+    },
+    {
+      "group": "D",
+      "matter": 16,
+      "source_document": "public/documents/matter-16/Newanforbi v. Rojo.pdf",
+      "deadline_description": "Gov. claim deemed rejected (45 days from presentment, Gov. Code \u00a7912.4(c))",
+      "date_in_document": "Computed: May 19, 2026 + 45 days = Jul. 3, 2026",
+      "matching_timeline_entry": "Jul. 3, 2026 \u2014 Gov. claim deemed rejected \u2014 Rojo state tort",
+      "status": "STALE",
+      "severity": "HIGH",
+      "notes": "Computation is correct, but the date is 11 days in the past relative to today (Jul. 14, 2026) and remains flagged upcoming:true on the live Deadline Clock."
+    },
+    {
+      "group": "D",
+      "matter": 16,
+      "source_document": "public/documents/matter-16/Newanforbi v. Rojo.pdf",
+      "deadline_description": "Complaint filed \u2014 Newanforbi v. Rojo (San Joaquin Sup. Ct.)",
+      "date_in_document": "Executed on Jul. 7, 2026, at Stockton, California (verification page)",
+      "matching_timeline_entry": "Jul. 7, 2026 \u2014 Complaint filed \u2014 Newanforbi v. Rojo",
+      "status": "STALE",
+      "severity": "HIGH",
+      "notes": "Date matches the document's execution date, confirming filing occurred. But it is 7 days in the past relative to today (Jul. 14, 2026) and is still flagged upcoming:true, presenting a completed filing as a pending future event on the live clock."
+    },
+    {
+      "group": "D",
+      "matter": 16,
+      "source_document": "public/documents/matter-16/Newanforbi v. Rojo.pdf",
+      "deadline_description": "Suit filing deadline \u2014 Rojo state tort, computed as '6 months from 07/03/2026 deemed rejection, Gov. Code \u00a7945.6(a)(1)'",
+      "date_in_document": "Document itself (page 5 \u00b6 9) states: 'this action is timely commenced within the two-year period of Government Code section 945.6(a)(2)'",
+      "matching_timeline_entry": "Jan. 3, 2027 \u2014 Suit filing deadline \u2014 Rojo state tort",
+      "status": "WRONG_DATE",
+      "severity": "MEDIUM",
+      "notes": "Same statutory-citation error as the matter 14 entry: the claim was deemed rejected by operation of law (no written \u00a7913 notice), so \u00a7945.6(a)(2)'s 2-year rule applies, not \u00a7945.6(a)(1)'s 6-month rule \u2014 and the litigant's own filed complaint expressly says so. This entry is also now moot in practice because the Rojo complaint was already filed Jul. 7, 2026 (well before either the erroneous Jan. 3, 2027 date or the correct ~Nov. 2027 two-year date), so no deadline was actually missed, but the timeline.js entry should be corrected or marked superseded rather than left as an active upcoming:true deadline with the wrong legal basis."
+    },
+    {
+      "group": "D",
+      "matter": 18,
+      "source_document": "timeline.js only (no uploaded documents for matter 18)",
+      "deadline_description": "Consent/Decline of U.S. Magistrate Judge Jurisdiction (Doc 5-1) due to Clerk's Office",
+      "date_in_document": "May 2, 2026 (30 days from Apr. 2, 2026 issuance)",
+      "matching_timeline_entry": "May 2, 2026 \u2014 Deadline \u2014 Consent/Decline of U.S. Magistrate Judge Jurisdiction due",
+      "status": "CONFIRMED",
+      "severity": "LOW",
+      "notes": "Correctly flagged upcoming:false since it predates the Jun. 29, 2026 dismissal and today's date. Good hygiene example \u2014 contrast with the dismissal entry itself, which is not similarly updated."
+    },
+    {
+      "group": "E",
+      "matter": 12,
+      "source_document": "FullCourt Enterprise - Civil ROA Summary.pdf / DTS Default Judgment Packet.pdf",
+      "deadline_description": "Request for Entry of Default Judgment against Diamond Truck Sales submitted/filed (ROA: 06/15/2026 11:12 AM)",
+      "date_in_document": "Jun. 15, 2026",
+      "matching_timeline_entry": "Jun. 15, 2026 - Request for Entry of Default Judgment submitted \u2014 Diamond Truck Sales (Matter 12) at 9:00 A.M.",
+      "status": "WRONG_DATE",
+      "severity": "HIGH",
+      "notes": "The date content is correct, but the entry is flagged upcoming:true even though today's real date is Jul. 14, 2026 -- this event is nearly a month in the past. Because upcoming:true drives the live Deadline Clock, this event is being displayed/counted as a future deadline when it already occurred. Should be upcoming:false."
+    },
+    {
+      "group": "E",
+      "matter": 12,
+      "source_document": "1094 Notice of Case Assignment Scheduling Information.pdf",
+      "deadline_description": "Case Management Conference, San Joaquin Superior Ct., Dept. 11B, Judge Robert T. Waters",
+      "date_in_document": "08/12/2026, 8:30 AM, Dept. 11B",
+      "matching_timeline_entry": "Aug. 12, 2026 - CMC, San Joaquin Superior Court",
+      "status": "CONFIRMED",
+      "severity": "HIGH",
+      "notes": "Verified against the court-issued Notice of Case Assignment and Notice of Hearing (filed 02/13/2026) and independently against the FullCourt Enterprise ROA summary entry 'Hearing regarding: Case Management Conference, set for 08/12/2026 at 8:30 AM ... Department 11B.' Date is correct and this is a real, upcoming, high-stakes hearing."
+    },
+    {
+      "group": "E",
+      "matter": 12,
+      "source_document": "1094 Notice of Case Assignment Scheduling Information.pdf",
+      "deadline_description": "Case Management Statement due (computed 15 days before CMC per notice item 1.b: 'File and serve a completed Case Management Conference Statement ... at least 15 days before the Case Management Conference')",
+      "date_in_document": "Computed: 15 days before 08/12/2026 = 07/28/2026",
+      "matching_timeline_entry": "Jul. 28, 2026 - Case Management Statement due (computed) ... not yet confirmed against a court-issued notice \u2014 verify with San Joaquin Superior Court, Dept. 11B",
+      "status": "CONFIRMED",
+      "severity": "MEDIUM",
+      "notes": "The computed date (Jul. 28, 2026) is correct and is now directly confirmed by the court-issued Notice of Case Assignment and Notice of Hearing, which is already present in public/documents/matter-12/. The 'not yet confirmed' caveat text in timeline.js is itself now STALE -- the confirming document exists in the case file and should be cited, and the caveat language should be removed/updated so the app doesn't understate confidence in a correct, high-severity upcoming deadline."
+    },
+    {
+      "group": "E",
+      "matter": 12,
+      "source_document": "1094 Complaint.pdf / 1094 POS010 Proof of Service of Summons.pdf",
+      "deadline_description": "Diamond Truck Sales response deadline (30 days from original complaint service)",
+      "date_in_document": "Service 03/11/2026 (also a near-duplicate POS shows 03/10/2026); computed response deadline 04/10/2026",
+      "matching_timeline_entry": "Apr. 10, 2026 - Diamond Truck Sales response deadline (30 days from 03/11/2026 service)",
+      "status": "STALE",
+      "severity": "MEDIUM",
+      "notes": "Math and service date are accurate for the ORIGINAL Complaint, but the operative pleading changed: Plaintiff filed a First Amended Complaint (FAC) on 05/11/2026 (as of right, before any responsive pleading, per CCP 472(a)), which reset the response clock. The FAC was personally served on Diamond's GM on 05/12/2026, and per Plaintiff's own sworn declaration in the Default Judgment Packet, 'Diamond's deadline to respond to the FAC expired on June 11, 2026' -- that is the deadline that actually triggered the default, not this Apr. 10, 2026 entry. This entry is misleading as currently presented without noting supersession."
+    },
+    {
+      "group": "E",
+      "matter": 12,
+      "source_document": "FullCourt Enterprise - Civil ROA Summary.pdf (05/11/2026 entry: 'First Amended Complaint filed')",
+      "deadline_description": "First Amended Complaint filed (adds Alpine Truck Sales, Inc. as alter-ego/successor defendant)",
+      "date_in_document": "05/11/2026",
+      "matching_timeline_entry": null,
+      "status": "MISSING",
+      "severity": "MEDIUM",
+      "notes": "Not reflected anywhere in timeline.js for Matter 12. This is a material pleading event -- it changed the operative complaint, added a new named defendant (Alpine Truck Sales, Inc.), and reset the response-deadline clock that ultimately led to the default judgment request."
+    },
+    {
+      "group": "E",
+      "matter": 12,
+      "source_document": "1094 POS010 Proof of Service of Summons 3.pdf / 4.pdf",
+      "deadline_description": "First Amended Complaint personally served on Diamond Truck Sales (via GM Mustagem Usmani)",
+      "date_in_document": "05/12/2026, 10:37-10:38 AM",
+      "matching_timeline_entry": null,
+      "status": "MISSING",
+      "severity": "MEDIUM",
+      "notes": "Not reflected in timeline.js. This service date is what actually started the 30-day clock that expired 06/11/2026 and led to the default request on 06/15/2026."
+    },
+    {
+      "group": "E",
+      "matter": 12,
+      "source_document": "DTS Default Judgment Packet.pdf (Declaration ISO Request for Default Judgment, para. 4)",
+      "deadline_description": "Diamond's true, operative response deadline: 'Diamond's deadline to respond to the FAC expired on June 11, 2026. Diamond filed no responsive pleading, demurrer, or other appearance.'",
+      "date_in_document": "June 11, 2026",
+      "matching_timeline_entry": null,
+      "status": "MISSING",
+      "severity": "HIGH",
+      "notes": "This is the real, sworn-to response deadline that triggered the default judgment request -- distinct from and later than the Apr. 10, 2026 entry currently in timeline.js (which is based on the superseded original Complaint). Should be added to correctly document the default-judgment chain of events for this now-adjudicated (or soon-to-be-adjudicated) matter."
+    },
+    {
+      "group": "E",
+      "matter": 12,
+      "source_document": "1094 Complaint.pdf",
+      "deadline_description": "Original Complaint filed",
+      "date_in_document": "02/13/2026 (file stamp)",
+      "matching_timeline_entry": "Feb. 13, 2026 - Diamond Truck Sales complaint filed",
+      "status": "CONFIRMED",
+      "severity": "LOW",
+      "notes": "Matches court file stamp exactly."
+    },
+    {
+      "group": "E",
+      "matter": 12,
+      "source_document": "DTS Default Judgment Packet.pdf (Declaration, para. 7); 1094 Complaint.pdf",
+      "deadline_description": "Truck purchase / fraud accrual date, checked against CCP 338(d) 3-yr fraud SOL and Bus. & Prof. Code 17208 4-yr UCL SOL",
+      "date_in_document": "April 4, 2023 (purchase); complaint filed Feb. 13, 2026",
+      "matching_timeline_entry": "Apr. 4, 2023 - Purchased defective Volvo semi-truck from Diamond",
+      "status": "CONFIRMED",
+      "severity": "LOW",
+      "notes": "Filing on 02/13/2026 is well within both the 3-year fraud SOL (would run ~Apr. 2026) and 4-year UCL SOL (~Apr. 2027) measured from the Apr. 4, 2023 purchase/discovery of the defect. No SOL problem; no missing deadline here."
+    },
+    {
+      "group": "E",
+      "matter": 22,
+      "source_document": "Newanforbi v. Pilot Travel Centers LLC.pdf (complaint) / case no. STK-CV-UWT-2026-0007649 in bundle",
+      "deadline_description": "Complaint filed (bundled multi-matter entry covering Matters 4, 8, 22)",
+      "date_in_document": "N/A (complaint document itself undated/case-number blank; case number confirmed via Filing Receipt as STK-CV-UWT-2026-0007649)",
+      "matching_timeline_entry": "May 29, 2026 - Complaints filed \u2014 Derrick State Tort, Candelaria/DMV State Tort, Pilot Travel Centers LLC (PC \u00a7290.46(j) Violation)",
+      "status": "WRONG_DATE",
+      "severity": "HIGH",
+      "notes": "The date itself appears correct, but the entry is flagged upcoming:true even though May 29, 2026 is over six weeks before today's real date of Jul. 14, 2026. This is a past event being shown/counted as upcoming on the live Deadline Clock. Also affects Matters 4 and 8 (outside this audit's assigned scope, but sharing the same entry) -- worth flagging to whoever owns those matters."
+    },
+    {
+      "group": "E",
+      "matter": 22,
+      "source_document": "Filing Receipt Service of Process on Pilot.pdf",
+      "deadline_description": "LA County Sheriff filing receipt confirming registration of Summons & Complaint for personal service on Pilot Travel Centers LLC (File No. 2026070671)",
+      "date_in_document": "07/09/2026",
+      "matching_timeline_entry": "Jul. 9, 2026 - LA County Sheriff's Department issues Filing Receipt (File No. 2026070671) ...",
+      "status": "CONFIRMED",
+      "severity": "LOW",
+      "notes": "Case number, file number, and date all match the source document exactly."
+    },
+    {
+      "group": "E",
+      "matter": 22,
+      "source_document": "Confidential Settlement Communications R 408.pdf",
+      "deadline_description": "Settlement reached with Pilot Travel Centers LLC",
+      "date_in_document": "Settlement terms agreed via email Fri, Jul 10, 2026 2:04 PM (offer accepted: $35,000 total)",
+      "matching_timeline_entry": "Jul. 11, 2026 - SETTLED \u2014 Newanforbi v. Pilot Travel Centers LLC ...",
+      "status": "CONFIRMED",
+      "severity": "LOW",
+      "notes": "Email chain shows the settlement was verbally/in-principle agreed and confirmed in writing on Jul. 10, 2026 at 2:04 PM; a Jul. 11, 2026 'settled' date (likely reflecting execution/finalization) is consistent and not a material discrepancy. Timeline.js correctly notes prior pending deadlines (service) as moot given the settlement -- no stale entries found for this matter beyond the May 29 upcoming-flag issue above."
+    },
+    {
+      "group": "E",
+      "matter": 22,
+      "source_document": "Newanforbi v. Pilot Travel Centers LLC.pdf (complaint, paras. 2, 10)",
+      "deadline_description": "Termination date checked against SOL for PC 290.46(j)/FCRA/ICRAA/wrongful termination claims",
+      "date_in_document": "Employment Dec. 15, 2025 - termination on or about Jan. 2026 (adverse action notice Dec. 30, 2025)",
+      "matching_timeline_entry": null,
+      "status": "CONFIRMED",
+      "severity": "LOW",
+      "notes": "No FEHA cause of action is pled (claims are PC 290.46(j), FCRA, ICRAA, UCL, and common-law wrongful termination in violation of public policy), so no DFEH/CRD administrative exhaustion deadline applies. Complaint filed May 29, 2026, well within any applicable 1-4 year civil SOL from the Jan. 2026 termination. No SOL issue; matter is now settled/moot regardless."
+    },
+    {
+      "group": "E",
+      "matter": 23,
+      "source_document": "N/A -- no complaint filed; timeline.js text only",
+      "deadline_description": "No timeline.js entries exist for Matter 23 (confirmed empty in bundle and via grep of src/data/timeline.js for matter 23 tags)",
+      "date_in_document": "N/A",
+      "matching_timeline_entry": null,
+      "status": "CONFIRMED",
+      "severity": "LOW",
+      "notes": "No complaint has been filed in Matter 23 (per task instructions) and no timeline.js entries reference it. Nothing to flag; this is consistent -- no deadlines are being tracked because none exist yet."
+    },
+    {
+      "group": "E",
+      "matter": 24,
+      "source_document": "1 2.pdf / Complaint.pdf (file stamp)",
+      "deadline_description": "Complaint for Damages, Declaratory Relief, and Injunctive Relief filed, Newanforbi v. Serrato",
+      "date_in_document": "Filed 06/17/26 (per ECF header stamps on ISC order and complaint)",
+      "matching_timeline_entry": "Jun. 17, 2026 - Complaint for Damages ... filed \u2014 Newanforbi v. Serrato ... Case No. 4:26-cv-05953-ASK",
+      "status": "CONFIRMED",
+      "severity": "LOW",
+      "notes": "Case number, judge (Hon. Ajay S. Krishnan), and filing date all confirmed."
+    },
+    {
+      "group": "E",
+      "matter": 24,
+      "source_document": "ND Cal ISC and Magistrate Consent form.pdf (Order Setting Initial CMC and ADR Deadlines)",
+      "deadline_description": "Deadline to file ADR Certification (ADR L.R. 3) and to meet-and-confer re initial disclosures/early settlement/ADR selection/discovery plan (F.R.Civ.P. 26(f))",
+      "date_in_document": "8/25/2026",
+      "matching_timeline_entry": "Aug. 25, 2026 - Deadline \u2014 ADR Certification (ADR L.R. 3) and Rule 26(f) meet-and-confer ...",
+      "status": "CONFIRMED",
+      "severity": "HIGH",
+      "notes": "Verified directly against the court's Order Setting Initial Case Management Conference and ADR Deadlines. Exact match."
+    },
+    {
+      "group": "E",
+      "matter": 24,
+      "source_document": "ND Cal ISC and Magistrate Consent form.pdf",
+      "deadline_description": "Deadline to make initial disclosures (F.R.Civ.P. 26(a)(1)) and file Joint Case Management Statement",
+      "date_in_document": "9/8/2026",
+      "matching_timeline_entry": "Sep. 8, 2026 - Deadline \u2014 Initial disclosures (FRCP 26(a)(1)) and Joint Case Management Statement ...",
+      "status": "CONFIRMED",
+      "severity": "HIGH",
+      "notes": "Verified directly against the court's scheduling order. Exact match."
+    },
+    {
+      "group": "E",
+      "matter": 24,
+      "source_document": "ND Cal ISC and Magistrate Consent form.pdf",
+      "deadline_description": "Initial Case Management Conference (by Zoom)",
+      "date_in_document": "9/15/2026 at 1:30 PM",
+      "matching_timeline_entry": "Sep. 15, 2026 - Initial Case Management Conference \u2014 1:30 PM via Zoom ... Hon. Ajay S. Krishnan",
+      "status": "CONFIRMED",
+      "severity": "HIGH",
+      "notes": "Verified directly against the court's scheduling order, including exact time and judge. Exact match -- this is the single most important upcoming date for Matter 24 and it is correct."
+    },
+    {
+      "group": "E",
+      "matter": 24,
+      "source_document": "ND Cal ISC and Magistrate Consent form.pdf (Notice of Assignment to Magistrate Judge)",
+      "deadline_description": "Deadline for Plaintiff to file Consent or Declination to Magistrate Judge Jurisdiction (within 14 days of case initiation)",
+      "date_in_document": "14 days from 06/17/2026 filing = on or about 07/01/2026",
+      "matching_timeline_entry": null,
+      "status": "MISSING",
+      "severity": "MEDIUM",
+      "notes": "A real, court-imposed deadline (already passed as of today, Jul. 14, 2026) is not tracked anywhere in timeline.js. Not currently a live-clock risk since it's in the past, but worth confirming the pro se Plaintiff actually filed this form -- failure to do so is sometimes followed up on by the Clerk but can also cause confusion about magistrate-judge jurisdiction status. Should be added to the historical record and its filing status verified."
+    },
+    {
+      "group": "E",
+      "matter": 24,
+      "source_document": "Complaint.pdf (paras. 1, 3, 10)",
+      "deadline_description": "Accrual date for the \u00a71983 claims, checked against 2-year SOL",
+      "date_in_document": "Accrual: April 20, 2026 (Capt. Serrato's denial of U-visa certification, Form I-918 Supp. B) -- NOT the Nov. 1, 2024 traffic stop, which is expressly disclaimed as the basis for this suit and is instead the subject of two other pending related actions",
+      "matching_timeline_entry": null,
+      "status": "CONFIRMED",
+      "severity": "LOW",
+      "notes": "Complaint filed Jun. 17, 2026, less than 2 months after the Apr. 20, 2026 accrual date -- well within the 2-year \u00a71983 SOL. No SOL issue."
+    }
+  ],
+  "summary": {
+    "byStatus": {
+      "WRONG_DATE": 16,
+      "STALE": 14,
+      "CONFIRMED": 31,
+      "MISSING": 16
+    },
+    "bySeverity": {
+      "HIGH": 36,
+      "MEDIUM": 17,
+      "LOW": 24
+    },
+    "totalFindings": 77
+  }
+}
