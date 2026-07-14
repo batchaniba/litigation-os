@@ -264,7 +264,7 @@ Five parallel review passes each took a cluster of matters, read the operative p
 ### Group E — Matters 22, 24, 25, 26
 
 ## Matter 22 — Newanforbi v. Pilot Travel Centers LLC
-**Filing reviewed:** Complaint for Damages, filed May 29, 2026 (settled July 11, 2026; reviewed as filed)
+**Filing reviewed:** Complaint for Damages, filed May 29, 2026 (settled July 14, 2026; reviewed as filed)
 **Overall vulnerability:** **Low** on the core PC §290.46(j) and Tameny claims; **Medium** on the IIED/NIED counts
 **Lead attack:** The Post-Adverse Action Notice is a genuine admission on the statutory element, so the real fight is a demurrer to the IIED/NIED counts on workers'-compensation-exclusivity grounds — a termination decision, even an unlawful one, is conduct within the "normal risks of the employment relationship," and NIED is almost never viable against an employer for a termination-related injury.
 
