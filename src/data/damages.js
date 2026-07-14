@@ -8,7 +8,8 @@ export const damages_table = [
     { category: "Attorneys' Fees", matters: "1, 3, 5, 7, 22, 24", conservative: 50000, moderate: 110000, aggressive: 260000 },
     { category: "PC §290.46(j) Violation + Wrongful Termination (Matter 22)", matters: "22", conservative: 220000, moderate: 525000, aggressive: 1000000 },
     { category: "42 USC §1983 — Arbitrary U Visa Certification Denial & Retaliation (Matter 24)", matters: "24", conservative: 75000, moderate: 200000, aggressive: 450000 },
-    { category: "PC §290.46(j) Failure to Hire — FedEx / UPS (Matters 25, 26)", matters: "25, 26", conservative: 75000, moderate: 180000, aggressive: 420000 }
+    { category: "PC §290.46(j) Failure to Hire — FedEx / UPS (Matters 25, 26)", matters: "25, 26", conservative: 75000, moderate: 180000, aggressive: 420000 },
+    { category: "PC §290.46(j) — Wrongful Termination / Failure to Employ — Randstad (Matter 27)", matters: "27", conservative: 45000, moderate: 110000, aggressive: 250000 }
 ];
 
 // Per-matter bottoms-up breakdown — individual case ceilings before deduplication
@@ -197,6 +198,23 @@ export const matter_damages = [
             { label: "ICRAA Statutory + Punitive", conservative: 2000, moderate: 5000, aggressive: 10000 },
             { label: "Punitive (Civ. Code §3294)", conservative: 0, moderate: 10000, aggressive: 40000 },
             { label: "Fees — PC §290.46(j)(4)(A) / ICRAA", conservative: 3000, moderate: 15000, aggressive: 30000 }
+        ]
+    },
+    {
+        number: 27,
+        caption: "Newanforbi v. Randstad, et al.",
+        court: "San Joaquin Sup. Ct.",
+        claims: "PC §290.46(j), Wrongful Termination / Failure to Employ, FCRA, ICRAA, UCL",
+        status: "Pre-adverse notice received Jul. 13, 2026; complaint not yet filed",
+        risk: "Favorable — rehire documentation and MVR request establish active CDL placement; InfoMart notice is direct evidence of adverse registry reporting; portfolio-wide pattern of five employers corroborates willful practice",
+        settlement_note: "Fifth PC §290.46(j) matter in portfolio; pattern evidence from prior matters dramatically strengthens willfulness showing against both Randstad and InfoMart as co-defendant",
+        conservative: 45000, moderate: 110000, aggressive: 250000,
+        components: [
+            { label: "PC §290.46(j)(4)(A) Statutory Penalty", conservative: 25000, moderate: 40000, aggressive: 75000 },
+            { label: "Emotional Distress / Lost Opportunity", conservative: 10000, moderate: 30000, aggressive: 75000 },
+            { label: "FCRA / ICRAA Statutory + Punitive", conservative: 5000, moderate: 15000, aggressive: 35000 },
+            { label: "Punitive (Civ. Code §3294) — pattern of violations", conservative: 0, moderate: 10000, aggressive: 50000 },
+            { label: "Fees — PC §290.46(j)(4)(A) / FCRA / ICRAA", conservative: 5000, moderate: 15000, aggressive: 15000 }
         ]
     }
 ];
