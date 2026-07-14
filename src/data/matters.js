@@ -355,6 +355,7 @@ export const cases = [
     {
       number: 12, caption: "Brendan Ngwa Nforbi v. Diamond Truck Sales, Inc.", case_no: "STK-CV-UF-2026-0001094", court: "San Joaquin Sup. Ct.",
       claims: "Fraudulent Concealment, Intentional Misrepresentation, Negligent Misrepresentation, Breach of Contract, UCL §17200, Rescission & Restitution, Declaratory Relief", status: "Active — Default judgment request submitted 06/15/2026; CMC 08/12/2026, 8:30 AM, Dept. 11B",
+      badge: "DEFAULT",
       filed: "February 13, 2026", judge: "Hon. Robert T. Waters", cluster: 3, type: "State",
       defendants: "Diamond Truck Sales, Inc. (California corporation operating at multiple locations including Texas and South Carolina); Dakota Financial LLC (California); DOES 1-20",
       causes: ["Fraudulent Concealment (Count 1)", "Intentional Misrepresentation (Count 2)", "Negligent Misrepresentation (Count 3)", "Breach of Contract (Count 4)", "Violation of Unfair Competition Law, B&P Code §17200 (Count 5)", "Rescission and Restitution (Count 6)", "Declaratory Relief (Count 7)"],
