@@ -12,12 +12,12 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 |---|---|
 | Plaintiff | Brendan Ngehsi Newanforbi |
 | Representation | Pro Se / In Propria Persona |
-| Active Matters | 22 |
+| Active Matters | 23 |
 | Jurisdictions | USDC E.D. Cal., San Joaquin Sup. Ct., Alameda Sup. Ct., Sacramento Sup. Ct., Santa Clara Sup. Ct. |
 | Aggregate Exposure (Conservative) | ~$1,500,000+ |
 | Aggregate Exposure (Moderate) | ~$3,600,000+ |
 | Aggregate Exposure (Aggressive) | ~$7,500,000+ |
-| Prepared | May 29, 2026; Matter 22 updated June 1, 2026 |
+| Prepared | May 29, 2026; updated July 14, 2026 (Matter 22 settled; Matters 25, 26, 27 added) |
 
 ---
 
@@ -44,10 +44,12 @@ Three purely equitable proceedings seeking court orders directing CDCR to act �
 - **Matter 10** (Habeas Corpus, Santa Clara): Challenges continued compelled treatment as unlawful restraint after five-plus years of parole with no new convictions. Awaiting OSC.
 - **Matter 19** (Habeas Corpus, Santa Clara): Seeks immediate and unconditional discharge from parole. Filed 04/03/2026; OSC anticipated 06/05/2026. Companion to Matter 10, targeting the parole term itself rather than treatment conditions.
 
-### Cluster 5 — Employment / Statutory Violation (Matters 22, 25, 26)
-**Newanforbi v. Pilot Travel Centers LLC** (Matter 22, San Joaquin Superior Court, filed 05/29/2026; SETTLED 07/11/2026) — A single-plaintiff wrongful-termination and statutory-violation matter with exceptionally strong liability. Core violations: (1) Penal Code §290.46(j)(2)(E) — unlawful use of sex offender registry information for employment purposes (categorical prohibition with treble damages and civil penalty); (2) Fair Credit Reporting Act (FCRA) violations; (3) California Investigative Consumer Reporting Agencies Act (ICRAA) violations; (4) Wrongful Termination in violation of public policy (Tameny); (5) Intentional and Negligent Infliction of Emotional Distress (IIED/NIED); (6) Unfair Business Practices (Bus. & Prof. Code §17200 — UCL). Defendant's own Post-Adverse Action Notice admits that the sole basis for termination was Plaintiff's registration in the California Sex Offender Registry — a "smoking gun" that admits the unlawful conduct. Defendant is a sophisticated, national employer (Fortune 500-level) with in-house legal counsel and a dedicated background check department. The background check vendor (Checkr) included a statutory disclaimer warning Defendant of the prohibition. No legitimate safety concern was cited. Timing (hired Dec. 15, terminated Dec. 30, during holidays after Plaintiff disclosed severe financial hardship) supports high emotional distress and punitive damages.
+### Cluster 5 — Employment / Statutory Violation (Matters 22, 25, 26, 27)
+**Newanforbi v. Pilot Travel Centers LLC** (Matter 22, San Joaquin Superior Court, filed 05/29/2026; SETTLED 07/14/2026) — A single-plaintiff wrongful-termination and statutory-violation matter with exceptionally strong liability. Core violations: (1) Penal Code §290.46(j)(2)(E) — unlawful use of sex offender registry information for employment purposes (categorical prohibition with treble damages and civil penalty); (2) Fair Credit Reporting Act (FCRA) violations; (3) California Investigative Consumer Reporting Agencies Act (ICRAA) violations; (4) Wrongful Termination in violation of public policy (Tameny); (5) Intentional and Negligent Infliction of Emotional Distress (IIED/NIED); (6) Unfair Business Practices (Bus. & Prof. Code §17200 — UCL). Defendant's own Post-Adverse Action Notice admits that the sole basis for termination was Plaintiff's registration in the California Sex Offender Registry — a "smoking gun" that admits the unlawful conduct. Defendant is a sophisticated, national employer (Fortune 500-level) with in-house legal counsel and a dedicated background check department. The background check vendor (Checkr) included a statutory disclaimer warning Defendant of the prohibition. No legitimate safety concern was cited. Timing (hired Dec. 15, terminated Dec. 30, during holidays after Plaintiff disclosed severe financial hardship) supports high emotional distress and punitive damages.
 
 **Newanforbi v. Federal Express Corporation** (Matter 25) and **Newanforbi v. United Parcel Service, Inc.** (Matter 26) — Two parallel failure-to-hire matters under the same PC §290.46(j)(2)(E) theory, both drafted and verified July 15, 2026 but not yet filed. FedEx's background check (First Advantage, "FEDEX GROUND HR") ran March 2025, ending in a final adverse action notice March 19, 2025; UPS's background check ran July 2024, ending in a final adverse action notice July 31, 2024. Unlike Matter 22, Plaintiff was never hired at either company and does not possess the underlying background report (the First Advantage portal links expired), so both complaints plead FedEx's/UPS's use of registry information on information and belief rather than from an admitted-basis letter. The UPS matter is time-sensitive: several pleaded causes of action carry two-year limitations periods running from the July 31, 2024 adverse action.
+
+**Newanforbi v. Randstad, et al.** (Matter 27, San Joaquin Superior Court, not yet filed) — The fifth and most recent PC §290.46(j)(2)(E) matter. Plaintiff was rehired by Randstad General Staffing on July 7, 2026 and was being placed in a CDL commercial driving role (MVR form requested by RIS Site Manager II Danyea Watkins). Background check vendor InfoMart LLC submitted a check at 6:22 PM on July 7; on July 13, 2026, InfoMart issued a FCRA §607(b) Notice to Consumer for Employment Purposes, stating it is "reporting criminal or other public record information that may be adverse" to Randstad. The earliest adverse action date under FCRA's five-business-day rule is July 21, 2026. Defendants include Randstad Inhouse Services, Randstad General Staffing, and InfoMart LLC. Complaint not yet drafted or filed.
 
 ---
 
@@ -79,6 +81,7 @@ Three purely equitable proceedings seeking court orders directing CDCR to act �
 | 22 | Newanforbi v. Pilot Travel Centers LLC | TBD | San Joaquin Sup. Ct. | State | Filed 05/29/2026; PC §290.46(j) violation (registry employment ban) |
 | 25 | Newanforbi v. Federal Express Corporation | TBD | San Joaquin Sup. Ct. | State | Complaint drafted/verified 07/15/2026; PC §290.46(j) failure to hire; not yet filed |
 | 26 | Newanforbi v. United Parcel Service, Inc. | TBD | San Joaquin Sup. Ct. | State | Complaint drafted/verified 07/15/2026; PC §290.46(j) failure to hire; not yet filed (time-sensitive — adverse action 07/31/2024) |
+| 27 | Newanforbi v. Randstad, et al. | TBD | San Joaquin Sup. Ct. | State | Pre-adverse notice received 07/13/2026; adverse action expected on or after 07/21/2026; complaint not yet filed |
 
 ---
 
