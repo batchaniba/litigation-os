@@ -604,7 +604,7 @@ export const cases = [
     },
     {
       number: 22, caption: "Newanforbi v. Pilot Travel Centers LLC", case_no: "STK-CV-UWT-2026-0007649", court: "San Joaquin Sup. Ct.",
-      claims: "PC §290.46(j) Violation, Wrongful Termination, FCRA, ICRAA, UCL §17200, IIED, NIED", status: "SETTLED — July 11, 2026 (pro se; resolved in under six weeks from filing, before service completed)",
+      claims: "PC §290.46(j) Violation, Wrongful Termination, FCRA, ICRAA, UCL §17200, IIED, NIED", status: "SETTLED — July 14, 2026 · $35,000 (pro se; DocuSigned by both parties; resolved in under seven weeks from filing, before service completed)",
       filed: "May 29, 2026", judge: "TBD", cluster: 3, type: "State",
       defendants: "Pilot Travel Centers LLC (Delaware LLC d/b/a Pilot Flying J, Knoxville, TN)",
       serviceTracking: [
