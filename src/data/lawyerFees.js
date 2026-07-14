@@ -242,29 +242,29 @@ export const lawyer_fees = [
     number: 27, caption: "Newanforbi v. Randstad, et al.", caseNumber: "TBD",
     court: "San Joaquin Sup. Ct.", type: "State — PC §290.46(j) / FCRA / ICRAA / Wrongful Termination",
     status: "Pre-adverse notice received Jul. 13, 2026; adverse action imminent; complaint not yet drafted or filed",
-    documentsCount: 3, totalPagesReal: 5,
-    hours: { low: 20, high: 40, mid: 30 },
-    cost: { low: 5600, high: 11200, mid: 8400 },
-    notes: "Earliest-stage matter in the portfolio — only the three evidentiary emails (rehire confirmation, MVR request, InfoMart pre-adverse notice) have been reviewed so far; no complaint has been drafted yet. Hours reflect case assessment, initial theory development, and complaint-drafting preparation based on the Matters 22/25/26 template. Once drafted, the complaint will add a substantial increment tracked in a future update."
+    documentsCount: 8, totalPagesReal: 24,
+    hours: { low: 32, high: 58, mid: 44 },
+    cost: { low: 8960, high: 16240, mid: 12320 },
+    notes: "Pre-filing stage. Eight documents analyzed: three onboarding/notice emails (rehire confirmation, MVR request, InfoMart FCRA pre-adverse notice); the 15-page InfoMart background check report (Order No. 15780719) — the evidentiary centerpiece confirming registry as the sole adverse flag; and four corroborating screenshots (Indeed application, RK Logistics auto-SMS, two Randstad recruiter iMessages establishing the inhouse staffing pipeline from June 30 Indeed application through July 2 Watkins referral). Hours reflect case assessment, initial theory development, BGC report analysis, and complaint-drafting preparation based on the Matters 22/25/26 template. Once drafted, the complaint will add a substantial increment tracked in a future update."
   },
 ];
 
 export const lawyer_fees_summary = {
   analysisDate: "2026-07-14",
   totalMatters: 27,
-  totalDocumentsAnalyzed: 221,
-  totalPagesReal: 3156,
+  totalDocumentsAnalyzed: 226,
+  totalPagesReal: 3175,
   methodology: {
     blendedHourlyRate: 280,
     rateRange: { seniorPartner: [350, 450], midAssociate: [250, 350], paralegal: [150, 200] },
     note: "Every PDF in public/documents/matter-XX/ was measured with pdfinfo for real page counts (poppler-utils), then classified by document type (complaint, motion/opposition/reply, discovery, writ/habeas, declaration, administrative, evidence) and priced using the hours-per-page/per-document conversions in docs/LAWYER_FEES_CALCULATOR.md. Opposing counsel's filings are billed only at a light review rate, never at drafting rate. Matters with no uploaded PDFs are estimated conservatively from matters.js status text.",
   },
-  totalEstimatedHours: { low: 2411.6, high: 3915.0, mid: 3163.3 },
-  totalEstimatedCost: { low: 675248, high: 1096200, mid: 885724 },
+  totalEstimatedHours: { low: 2423.6, high: 3933.0, mid: 3177.3 },
+  totalEstimatedCost: { low: 678608, high: 1101240, mid: 889644 },
   byCluster: {
     cluster1: { label: "CHP / DUI / DMV", matters: [1, 2, 7, 8, 20, 24], costLow: 134176, costMid: 176372, costHigh: 218568 },
     cluster2: { label: "Parole Retaliation / HOPE", matters: [3, 4, 5, 6, 11, 13, 14, 15, 16, 17, 18, 21], costLow: 414232, costMid: 537712, costHigh: 661192 },
-    cluster3: { label: "Consumer Fraud / Employment", matters: [12, 22, 23, 25, 26, 27], costLow: 85960, costMid: 114800, costHigh: 143640 },
+    cluster3: { label: "Consumer Fraud / Employment", matters: [12, 22, 23, 25, 26, 27], costLow: 89320, costMid: 118720, costHigh: 148680 },
     cluster4: { label: "Administrative Writs & Habeas", matters: [9, 10, 19], costLow: 40880, costMid: 56840, costHigh: 72800 },
   },
 };
