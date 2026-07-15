@@ -15,6 +15,9 @@ const MatterCard = ({ matter: c, isOpen, onToggle }) => {
       {c.badge === "DEFAULT" && (
         <div aria-label="Default" style={{ position: "absolute", top: 14, right: -28, width: 110, background: GOLD, color: "#fff", fontSize: 10, fontFamily: "'DM Sans', sans-serif", fontWeight: 800, letterSpacing: 2, textTransform: "uppercase", textAlign: "center", padding: "5px 0", transform: "rotate(45deg)", boxShadow: "0 2px 8px rgba(0,0,0,0.35)", pointerEvents: "none", zIndex: 10 }}>DEFAULT</div>
       )}
+      {c.badge === "DISMISSED" && (
+        <div aria-label="Dismissed" style={{ position: "absolute", top: 14, right: -28, width: 110, background: "#dc2626", color: "#fff", fontSize: 10, fontFamily: "'DM Sans', sans-serif", fontWeight: 800, letterSpacing: 2, textTransform: "uppercase", textAlign: "center", padding: "5px 0", transform: "rotate(45deg)", boxShadow: "0 2px 8px rgba(0,0,0,0.35)", pointerEvents: "none", zIndex: 10 }}>DISMISSED</div>
+      )}
       {/* Header row */}
       <button
         onClick={onToggle}
