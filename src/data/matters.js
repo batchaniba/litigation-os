@@ -113,6 +113,7 @@ export const cases = [
     {
       number: 5, caption: "Newanforbi v. Palacios et al.", case_no: "STK-CV-UF-2026-0001032", court: "San Joaquin Sup. Ct.",
       claims: "Fraud/Intentional Misrepresentation, Negligence (incl. Negligence Per Se), IIED, Intentional Interference w/ Prospective Econ. Adv., Bane Act (§52.1), Declaratory Relief, UCL (§17200)", status: "ADVERSE TENTATIVE RULING (posted ~07/13/2026): Defendants' Demurrer to FAC tentatively GRANTED WITHOUT LEAVE TO AMEND on failure-to-exhaust-administrative-remedies grounds; Plaintiff filed Notice of Intent to Appear and Argue 07/13/2026; Demurrer Hearing 07/15/2026, 9:00 a.m., Dept. 10A, Hon. George J. Abdallah — NOT YET FINAL, oral argument pending; $85,000 Global Settlement Offer REJECTED — SLB/Van Dine letter May 23, 2026; Document Production received and reviewed 07/09–10/2026 (Clinical Operational Manual, treatment manuals, employee handbook, homework/audit records, collateral notes, insurance policies); CMC: October 13, 2026, 8:45 a.m., Dept. 10A",
+      badge: "DISMISSED",
       filed: "February 10, 2026", judge: "Hon. George J. Abdallah, Dept. 10A", cluster: 2, type: "State",
       defendants: "HOPE Psychotherapy, Inc., d/b/a HOPE Program (California corporation); Katie Palacios, site Director / LMFT No. 44555 (individually and as managing agent under Civ. Code §3294(b)); DOES 1-10",
       causes: [
