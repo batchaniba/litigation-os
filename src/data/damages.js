@@ -9,7 +9,7 @@ export const damages_table = [
     { category: "PC §290.46(j) Violation + Wrongful Termination (Matter 22)", matters: "22", conservative: 220000, moderate: 525000, aggressive: 1000000 },
     { category: "42 USC §1983 — Arbitrary U Visa Certification Denial & Retaliation (Matter 24)", matters: "24", conservative: 75000, moderate: 200000, aggressive: 450000 },
     { category: "PC §290.46(j) Failure to Hire — FedEx / UPS (Matters 25, 26)", matters: "25, 26", conservative: 75000, moderate: 180000, aggressive: 420000 },
-    { category: "PC §290.46(j) — Wrongful Termination / Failure to Employ — Randstad / RK Logistics (Matter 27)", matters: "27", conservative: 45000, moderate: 110000, aggressive: 250000 }
+    { category: "PC §290.46(j) — Wrongful Termination / Failure to Employ — Randstad / RK Logistics (Matter 27)", matters: "27", conservative: 180000, moderate: 437000, aggressive: 835000 }
 ];
 
 // Per-matter bottoms-up breakdown — individual case ceilings before deduplication
@@ -204,17 +204,18 @@ export const matter_damages = [
         number: 27,
         caption: "Newanforbi v. Randstad, et al.",
         court: "San Joaquin Sup. Ct.",
-        claims: "PC §290.46(j), Wrongful Termination / Failure to Employ, FCRA, ICRAA, UCL",
-        status: "Pre-adverse notice received Jul. 13, 2026; complaint not yet filed",
-        risk: "Extremely favorable — Plaintiff holds the actual InfoMart BGC report (Order No. 15780719): all 7 county/state criminal searches and federal criminal returned No Record; registry is the only flagged item; Billing Code 'RK LOGISTICS' and Client Package 'RK Logistics' in report header prove RK Logistics set the criteria that triggered 'NEEDS APPROVAL'; this is not an information-and-belief case",
-        settlement_note: "Fifth PC §290.46(j) matter in portfolio; pattern evidence from prior matters dramatically strengthens willfulness showing; RK Logistics named as co-defendant alongside Randstad US, LLC — two-defendant structure creates settlement cross-pressure, with each defendant incentivized to attribute the placement decision to the other",
-        conservative: 45000, moderate: 110000, aggressive: 250000,
+        claims: "PC §290.46(j), Wrongful Termination / Failure to Employ (Tameny), FCRA, ICRAA, UCL",
+        status: "Pre-adverse notice received Jul. 13, 2026; adverse action expected on or after Jul. 21, 2026; complaint not yet filed",
+        risk: "Extremely favorable — Plaintiff holds the actual InfoMart BGC report (Order No. 15780719): all 7 county/state criminal searches and federal criminal returned No Record; registry is the only flagged item; Billing Code 'RK LOGISTICS' and Client Package 'RK Logistics' in report header prove RK Logistics configured the criteria triggering 'NEEDS APPROVAL, PER CLIENT CRITERIA.' Rehire email establishes employment relationship existed at time of BGC — stronger Tameny posture than the pure failure-to-hire cases in Matters 25/26. Wage rate confirmed at $28.50/hr, 42.5 hrs/week (Mon–Fri 2:30 PM–11:00 PM), generating overtime each week; actual lost wages eclipse the §290.46(j)(4)(A) $25,000 statutory floor within approximately 6.5 months, making actual-damages the operative measure.",
+        settlement_note: "Fifth PC §290.46(j) matter in portfolio; pattern evidence across five employers strengthens willfulness showing on all. Two-defendant structure (Randstad US, LLC as employer of record + RK Logistics Group, Inc. as criteria-setting end client) creates cross-pressure: each defendant is incentivized to attribute the adverse decision to the other. Punitive exposure is amplified by both defendants' substantial net worth — Randstad is a subsidiary of a global staffing company; RK Logistics serves the semiconductor and EV supply chain. Rehire posture + documented wage rate produces back pay and front pay exposure not present in Matters 25/26.",
+        conservative: 179838, moderate: 437095, aggressive: 834352,
         components: [
-            { label: "PC §290.46(j)(4)(A) Statutory Penalty", conservative: 25000, moderate: 40000, aggressive: 75000 },
-            { label: "Emotional Distress / Lost Opportunity", conservative: 10000, moderate: 30000, aggressive: 75000 },
-            { label: "FCRA / ICRAA Statutory + Punitive", conservative: 5000, moderate: 15000, aggressive: 35000 },
-            { label: "Punitive (Civ. Code §3294) — pattern of violations", conservative: 0, moderate: 10000, aggressive: 50000 },
-            { label: "Fees — PC §290.46(j)(4)(A) / FCRA / ICRAA", conservative: 5000, moderate: 15000, aggressive: 15000 }
+            { label: "Lost Wages — Back Pay ($28.50/hr × 42.5 hrs/wk incl. weekly OT at 1.5x; $1,246.88/wk: conservative 12 mo. / moderate 18 mo. / aggressive 24 mo.)", conservative: 64838, moderate: 97257, aggressive: 129676 },
+            { label: "Front Pay — Future Lost Earnings (conservative: none / moderate: 12 additional mo. / aggressive: 24 additional mo.)", conservative: 0, moderate: 64838, aggressive: 129676 },
+            { label: "Emotional Distress — Wrongful rescission of accepted rehire position; fifth cumulative §290.46(j) employment denial compounds distress narrative", conservative: 25000, moderate: 50000, aggressive: 75000 },
+            { label: "FCRA / ICRAA Statutory + Punitive (willful noncompliance; InfoMart report itself contains FCRA Summary of Rights and CA ICRA Notice — parties had constructive notice of the statutory framework at the moment of use)", conservative: 15000, moderate: 25000, aggressive: 50000 },
+            { label: "Punitive (Civ. Code §3294) — Two corporate defendants with independent net worth exposure; fifth repeat §290.46(j) violation supports willfulness finding; 'NEEDS APPROVAL, PER CLIENT CRITERIA' shows deliberate criteria configuration, not inadvertent use", conservative: 50000, moderate: 150000, aggressive: 350000 },
+            { label: "Attorney Fees — PC §290.46(j)(4)(A) mandatory fee-shifting + FCRA + ICRAA", conservative: 25000, moderate: 50000, aggressive: 100000 }
         ]
     }
 ];
