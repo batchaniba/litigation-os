@@ -9,7 +9,8 @@ export const damages_table = [
     { category: "PC §290.46(j) Violation + Wrongful Termination (Matter 22)", matters: "22", conservative: 220000, moderate: 525000, aggressive: 1000000 },
     { category: "42 USC §1983 — Arbitrary U Visa Certification Denial & Retaliation (Matter 24)", matters: "24", conservative: 75000, moderate: 200000, aggressive: 450000 },
     { category: "PC §290.46(j) Failure to Hire — FedEx / UPS (Matters 25, 26)", matters: "25, 26", conservative: 75000, moderate: 180000, aggressive: 420000 },
-    { category: "PC §290.46(j) — Wrongful Termination / Failure to Employ — Randstad / RK Logistics (Matter 27)", matters: "27", conservative: 180000, moderate: 437000, aggressive: 835000 }
+    { category: "PC §290.46(j) — Wrongful Termination / Failure to Employ — Randstad / RK Logistics (Matter 27)", matters: "27", conservative: 180000, moderate: 437000, aggressive: 835000 },
+    { category: "§1983 Monell / Individual + Bane Act + RICO — HOPE / Shannon Smith (Matter 28)", matters: "28", conservative: 249000, moderate: 666000, aggressive: 1510000 }
 ];
 
 // Per-matter bottoms-up breakdown — individual case ceilings before deduplication
@@ -216,6 +217,24 @@ export const matter_damages = [
             { label: "FCRA / ICRAA Statutory + Punitive (willful noncompliance; InfoMart report itself contains FCRA Summary of Rights and CA ICRA Notice — parties had constructive notice of the statutory framework at the moment of use)", conservative: 15000, moderate: 25000, aggressive: 50000 },
             { label: "Punitive (Civ. Code §3294) — Two corporate defendants with independent net worth exposure; fifth repeat §290.46(j) violation supports willfulness finding; 'NEEDS APPROVAL, PER CLIENT CRITERIA' shows deliberate criteria configuration, not inadvertent use", conservative: 50000, moderate: 150000, aggressive: 350000 },
             { label: "Attorney Fees — PC §290.46(j)(4)(A) mandatory fee-shifting + FCRA + ICRAA", conservative: 25000, moderate: 50000, aggressive: 100000 }
+        ]
+    },
+    {
+        number: 28,
+        caption: "Newanforbi v. HOPE Psychotherapy, Inc. et al.",
+        court: "USDC N.D. Cal.",
+        claims: "42 U.S.C. §1983 Monell + Individual Capacity; Bane Act §52.1; Fraud/Negligent Misrepresentation; RICO §1962(c)-(d)",
+        status: "Complaint mailed Jul. 16, 2026; anticipated receipt Jul. 20, 2026",
+        risk: "Favorable on state-actor theory (West v. Atkins); Monell supported by In re Dwyer condemnation of HOPE's blanket retention policy and HOPE's own Clinical Operational Manual; RICO carries dismissal risk but is pleaded as aggressive multiplier; Philadelphia Indemnity insurance ($1M per-incident / $5M aggregate) creates realistic settlement floor",
+        settlement_note: "Shannon Smith's individual-capacity exposure creates personal settlement pressure independent of HOPE's corporate insurance. 542 pages of discovery already in hand from dismissed state case. RICO treble exposure ($249K–$1.51M range) and §1988 fee shifting give Plaintiff substantial leverage. Insurance floor anchors realistic resolution in the $500K–$1M range on moderate facts.",
+        conservative: 249000, moderate: 666000, aggressive: 1510000,
+        components: [
+            { label: "Lost CDL Wages — Economic Harm (documented W-2s: $109,408+ over 2022–2024; $72K/yr but-for CDL career rate; conservative: 2 yr / moderate: 3 yr / aggressive: 5 yr)", conservative: 144000, moderate: 216000, aggressive: 360000 },
+            { label: "§1983 Compensatory Damages — Constitutional deprivation, liberty-interest violation, emotional distress (Monell against HOPE + individual capacity against Smith)", conservative: 30000, moderate: 100000, aggressive: 200000 },
+            { label: "Bane Act §52.1 — Coercive interference with constitutional rights ($25,000 statutory minimum per violation; multiple violations alleged)", conservative: 25000, moderate: 75000, aggressive: 150000 },
+            { label: "RICO §1964(c) — Treble damages for enterprise conduct (fraudulent billing to CDCR; false adverse reporting to parole agents); conservative: $0 (dismissal risk) / moderate: $150K / aggressive: $450K", conservative: 0, moderate: 150000, aggressive: 450000 },
+            { label: "Punitive Damages — §1983 against Shannon Smith individually; Bane Act treble exposure; deliberate policy of retaliatory reporting", conservative: 25000, moderate: 75000, aggressive: 200000 },
+            { label: "Attorney Fees — 42 U.S.C. §1988 (§1983 / Bane Act); RICO fee shifting", conservative: 25000, moderate: 50000, aggressive: 150000 }
         ]
     }
 ];
