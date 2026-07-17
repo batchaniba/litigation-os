@@ -9,6 +9,7 @@ export const outcomes = {
       status: "SETTLED",
       date: "July 11, 2026",
       amount: 35000,
+      confidential: true,
       speed: "Under 6 weeks from filing",
       served: false,
       claims: "PC §290.46(j)(2)(E) Wrongful Termination; Tameny; ICRAA; UCL §17200",
