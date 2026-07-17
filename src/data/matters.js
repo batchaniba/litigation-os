@@ -382,7 +382,7 @@ export const cases = [
         { label: "FullCourt Enterprise — Civil Case", path: "/documents/matter-12/FullCourt Enterprise - Civil Case.pdf" },
         { label: "FullCourt Enterprise — Civil ROA Summary", path: "/documents/matter-12/FullCourt Enterprise - Civil ROA Summary.pdf" },
         { label: "DTS Default Judgment Packet", path: "/documents/matter-12/DTS Default Judgment Packet.pdf" },
-        { label: "Proof of Service of Summons — Alpine Truck Sales, Inc. (served July 1, 2026; POS-010 signed July 2, 2026)", path: "/documents/matter-12/1094 POS010 Proof of Service of Summons 6.pdf" },
+        { label: "Proof of Service of Summons — Alpine Truck Sales, Inc. (served July 1, 2026; POS-010 signed July 2, 2026)", path: "/documents/matter-12/1094 POS010 Proof of Service of Summons - Alpine (July 1, 2026).jpeg" },
         { label: "Notice of Change of Address (filed July 7, 2026)", path: "/documents/matter-12/Notice of Change of Address (July 7, 2026).pdf" }
       ]
     },
