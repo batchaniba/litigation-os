@@ -58,6 +58,17 @@ The largest cluster — 13 matters — targeting CDCR's parole supervision appar
 
 Fraud and UCL claims against Diamond Truck Sales, Inc. and Alpine Truck Sales, Inc. for concealing a DEF/emissions defect and prior CHP out-of-service order on a 2014 Volvo VNL (VIN: 4V4NC9EH6EN142206) purchased for $26,900. The truck entered catastrophic derate mode immediately after purchase, rendering it commercially unusable. Direct documented losses ~$25,129.44; lost hauling income >$46,800. Diamond Truck Sales, Inc. served March 11, 2026 — no response filed; default judgment request submitted June 15, 2026. Alpine Truck Sales, Inc. personally served July 1, 2026 (Mustagem Usmani, Manager, 1201 S Soderquist Road, Turlock); response deadline July 31, 2026; no meet-and-confer contact received. Request for Default Judgment pre-drafted. CMC: August 12, 2026, 8:30 AM, Dept. 11B, Hon. Robert T. Waters.
 
+**Expected recovery — favorable August 12, 2026 CMC:** With both named defendants in default (Diamond since April 10, 2026; Alpine deadline July 31, 2026 — before CMC), the August 12 hearing is the prove-up entry point. A favorable ruling is expected to yield:
+
+| Component | Amount |
+|---|---|
+| Direct Documented Economic Losses (deposit $12,345.10 + GAP $1,895 + DMV $3,442 + towing/repair ~$7,447.34) | $25,129.44 |
+| Lost Commercial Hauling Income (Amazon Relay and other contracts; accruing) | $20,000 – $100,000 |
+| Fraud Punitive Damages (Civ. Code §3294) + UCL §17200 Restitution/Disgorgement | $11,870 – $74,870 |
+| **Total Expected Recovery** | **$57,000 (conservative) – $200,000 (aggressive)** |
+
+*Direct losses of $25,129.44 are fully documented and essentially undisputable on default. Lost commercial income and punitive damages are subject to judicial discretion at the prove-up hearing.*
+
 ### Cluster 4 — Administrative Writs & Habeas Corpus (Matters 9, 10, 19)
 
 Three purely equitable proceedings seeking court orders directing CDCR to act — no tort damages sought. All target the Secretary of CDCR in his official capacity:

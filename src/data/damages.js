@@ -107,7 +107,7 @@ export const matter_damages = [
         claims: "Fraud, Negligent Misrepresentation, Breach of Contract, UCL",
         status: "Default judgment request submitted 06/15/2026; CMC 08/12/2026",
         risk: "Strong on liability — prior owner's disclosure to Diamond establishes actual knowledge; defect objectively documented",
-        settlement_note: "Default against Diamond may resolve fastest; Dakota Financial LLC service pending",
+        settlement_note: "Default against Diamond already requested (Jun. 15, 2026); default against Alpine imminent (response deadline Jul. 31, 2026); CMC Aug. 12, 2026 is the prove-up entry point",
         conservative: 57000, moderate: 100000, aggressive: 200000,
         components: [
             { label: "Direct Economic Losses (deposit, GAP, DMV, towing)", conservative: 25130, moderate: 25130, aggressive: 25130 },
