@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { GOLD } from "../constants";
 import { useTheme } from "../ThemeContext";
-import { useViewport } from "../hooks/useViewport";
 import { outcomes } from "../data/outcomes";
 
 const fmt = (n) => "$" + n.toLocaleString();
@@ -61,7 +60,6 @@ function StatTile({ label, amount, prefix = "", color, sub, confidential = false
 
 function OutcomeCard({ item, color, statusLabel, theme }) {
   const [open, setOpen] = useState(false);
-  const { isMobile } = useViewport();
   return (
     <div style={{
       background: theme.cardBg,
@@ -134,7 +132,7 @@ function OutcomeCard({ item, color, statusLabel, theme }) {
           borderTop: `1px solid ${theme.cardBorder}`,
         }}>
           <div style={{
-            display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: 20, paddingTop: 18,
+            display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20, paddingTop: 18,
           }}>
             <div>
               <Label>Claims</Label>
@@ -181,7 +179,6 @@ const bodyText = (theme) => ({
 
 export function OutcomesTab() {
   const theme = useTheme();
-  const { isMobile } = useViewport();
   const pct = Math.min((combined / moderate) * 100, 100);
 
   return (
@@ -205,7 +202,7 @@ export function OutcomesTab() {
       </div>
 
       {/* Stat tiles */}
-      <div style={{ display: "flex", flexDirection: isMobile ? "column" : "row", gap: 16, flexWrap: "wrap", marginBottom: 28 }}>
+      <div style={{ display: "flex", gap: 16, flexWrap: "wrap", marginBottom: 28 }}>
         <StatTile
           label="Confirmed — Settled"
           amount={realized}
@@ -344,7 +341,6 @@ export function OutcomesTab() {
 
 function DemandCard({ item, theme }) {
   const [open, setOpen] = useState(false);
-  const { isMobile } = useViewport();
   const ORANGE = "#ea580c";
   return (
     <div style={{
@@ -403,7 +399,7 @@ function DemandCard({ item, theme }) {
       {open && (
         <div style={{ padding: "0 24px 24px", borderTop: `1px solid ${theme.cardBorder}` }}>
           <div style={{
-            display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: 20, paddingTop: 18,
+            display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20, paddingTop: 18,
           }}>
             <div>
               <Label>Demand Sent</Label>
