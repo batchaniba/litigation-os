@@ -14,7 +14,7 @@ const anticipated = outcomes.anticipated.reduce((s, r) => s + r.amount, 0);
 const combined   = realized + anticipated;
 const moderate   = outcomes.portfolio_exposure.moderate;
 
-function StatTile({ label, amount, prefix = "", color, sub, theme }) {
+function StatTile({ label, amount, prefix = "", color, sub, confidential = false, theme }) {
   return (
     <div style={{
       flex: 1, minWidth: 180,
@@ -34,12 +34,19 @@ function StatTile({ label, amount, prefix = "", color, sub, theme }) {
         fontFamily: "'DM Sans', sans-serif", fontSize: 10, fontWeight: 700,
         letterSpacing: 3, textTransform: "uppercase", color, marginBottom: 10,
       }}>{label}</div>
-      <div style={{
-        fontFamily: "'Cormorant Garamond', Georgia, serif",
-        fontSize: 38, fontWeight: 700, color: theme.heading, lineHeight: 1,
-      }}>
-        {prefix}{fmt(amount)}
-      </div>
+      {confidential ? (
+        <div style={{
+          fontFamily: "'DM Sans', sans-serif", fontSize: 15, fontWeight: 600,
+          fontStyle: "italic", color: theme.mutedText, lineHeight: 1, paddingTop: 6,
+        }}>Terms Confidential</div>
+      ) : (
+        <div style={{
+          fontFamily: "'Cormorant Garamond', Georgia, serif",
+          fontSize: 38, fontWeight: 700, color: theme.heading, lineHeight: 1,
+        }}>
+          {prefix}{fmt(amount)}
+        </div>
+      )}
       {sub && (
         <div style={{
           fontFamily: "'DM Sans', sans-serif", fontSize: 11,
@@ -102,10 +109,14 @@ function OutcomeCard({ item, color, statusLabel, theme }) {
 
         {/* Amount */}
         <div style={{
-          fontFamily: "'Cormorant Garamond', Georgia, serif",
-          fontSize: 26, fontWeight: 700, color, whiteSpace: "nowrap",
+          fontFamily: item.confidential ? "'DM Sans', sans-serif" : "'Cormorant Garamond', Georgia, serif",
+          fontSize: item.confidential ? 12 : 26,
+          fontWeight: item.confidential ? 600 : 700,
+          fontStyle: item.confidential ? "italic" : "normal",
+          color: item.confidential ? theme.mutedText : color,
+          whiteSpace: "nowrap",
         }}>
-          {item.type === "default_judgment" ? "~" : ""}{fmt(item.amount)}
+          {item.confidential ? "Confidential" : `${item.type === "default_judgment" ? "~" : ""}${fmt(item.amount)}`}
         </div>
 
         <div aria-hidden style={{
@@ -196,6 +207,7 @@ export function OutcomesTab() {
           amount={realized}
           color={GREEN}
           sub="Matter 22 · Pilot Travel Centers · July 11, 2026"
+          confidential={outcomes.realized.some(r => r.confidential)}
           theme={theme}
         />
         <StatTile
