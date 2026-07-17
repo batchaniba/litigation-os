@@ -17,6 +17,8 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 | Settled | 1 (Matter 22 — Pilot Travel Centers LLC, July 11, 2026) |
 | Dismissed / Closed | 11 |
 | Jurisdictions | USDC E.D. Cal., USDC N.D. Cal., San Joaquin Sup. Ct., Alameda Sup. Ct., Sacramento Sup. Ct., Santa Clara Sup. Ct. |
+| Housing Status | **Homeless since July 2, 2026** — direct consequence of retaliatory inter-county parole transfer (Stockton → Santa Clara) imposed immediately after filing Matter 15 (Newanforbi v. CDCR, et al.); transfer caused loss of Stockton family housing; Matters 3, 9, and 19 are also potential retaliatory predicate acts |
+| Representation | Pro Se / In Propria Persona — all 28 matters self-litigated; estimated equivalent private-counsel cost: $703,808–$1,144,640 |
 | Aggregate Exposure (Conservative) | ~$1,554,000+ |
 | Aggregate Exposure (Moderate) | ~$3,973,000+ |
 | Aggregate Exposure (Aggressive) | ~$8,370,000+ |
@@ -42,7 +44,7 @@ Arising from a November 1, 2024 CHP encounter on I-580. Officers arrested Plaint
 The largest cluster — 13 matters — targeting CDCR's parole supervision apparatus, the HOPE Psychotherapy program, and constitutional violations across parole travel, housing, and employment decisions. Core allegations include:
 
 - **First Amendment retaliation** by Agent Derrick, who suppressed speech and sabotaged Plaintiff's FedEx employment; explicit "you do not have freedom of speech" statement satisfies *Rhodes v. Robinson*.
-- **Retaliatory inter-county transfer** on July 2, 2026 — supervision moved from San Joaquin to Santa Clara County immediately after filing Matter 15 naming Supervising Agent Noguchi; caused loss of Stockton housing and employment.
+- **Retaliatory inter-county transfer** on July 2, 2026 — supervision moved from San Joaquin to Santa Clara County immediately after filing Matter 15 naming Supervising Agent Noguchi; caused loss of Stockton family housing and employment; Plaintiff has been **homeless since July 2, 2026**. Matters 3, 9, and 19 are also potential retaliatory predicate acts for the transfer.
 - **HOPE's structural fee incentive** (~$9,690–$10,600/year per parolee at standard billing rates; condemned in *In re Dwyer*, SC-080355A, San Mateo County Super. Ct., Mar. 20, 2023) with no completion credit — financial incentive to retain rather than discharge.
 - **HOPE's blanket retention policy** requiring the full parole term regardless of clinical progress — documented in HOPE's own Clinical Operational Manual (HOPE_000294) and condemned in *In re Dwyer*; now forms the Monell theory in Matter 28.
 - **Retaliatory reporting** — false no-shows logged and adverse CDCR Form 3043 reports directed by Shannon Smith; HOPE_000142/194 (produced in Matter 5) documents a no-show logged despite agent-confirmed technical error.
@@ -165,7 +167,7 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 
 ## Attorney Fees Analysis
 
-Estimated cost of retaining private counsel to litigate the full portfolio from current posture through resolution. Based on real page counts extracted from all 232 documents across 28 matters (3,228 total pages), classified by document type and priced at a blended rate of **$280/hour** (senior partner $350–$450 / mid-associate $250–$350 / paralegal $150–$200). Opposing-party filings billed at light review rate only.
+Plaintiff is representing himself pro se across all 28 matters. The figures below represent what he would have been required to spend on private counsel to litigate this portfolio — costs he has absorbed entirely through self-representation. Based on real page counts extracted from all 232 documents across 28 matters (3,228 total pages), classified by document type and priced at a blended rate of **$280/hour** (senior partner $350–$450 / mid-associate $250–$350 / paralegal $150–$200). Opposing-party filings billed at light review rate only.
 
 | Cluster | Matters | Low | Mid | High |
 |---|---|---|---|---|
@@ -176,7 +178,7 @@ Estimated cost of retaining private counsel to litigate the full portfolio from 
 | **Portfolio Total** | **28 matters / 232 docs / 3,228 pages** | **$703,808** | **$923,944** | **$1,144,640** |
 | **Estimated Hours** | | **2,513.6 hrs** | **3,299.8 hrs** | **4,088.0 hrs** |
 
-*Fee-shifting statutes (42 U.S.C. §1988, PC §290.46(j)(4)(A), RICO 18 U.S.C. §1964(c), FCRA, ICRAA) apply across the majority of active matters — mandatory fee recovery upon prevailing substantially offsets or eliminates the above costs.*
+*Plaintiff has litigated all 28 matters pro se, absorbing the full economic equivalent of the above without compensation. Fee-shifting statutes (42 U.S.C. §1988, PC §290.46(j)(4)(A), RICO 18 U.S.C. §1964(c), FCRA, ICRAA) apply across the majority of active matters — mandatory fee recovery upon prevailing substantially offsets or eliminates the above costs.*
 
 ---
 
