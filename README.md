@@ -12,16 +12,16 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 |---|---|
 | Plaintiff | Brendan Ngehsi Newanforbi |
 | Representation | Pro Se / In Propria Persona |
-| Total Matters | 28 |
-| Active / Open | 16 |
+| Total Matters | 29 |
+| Active / Open | 17 |
 | Settled | 1 (Matter 22 — Pilot Travel Centers LLC, July 11, 2026) |
 | Dismissed / Closed | 11 |
 | Jurisdictions | USDC E.D. Cal., USDC N.D. Cal., San Joaquin Sup. Ct., Alameda Sup. Ct., Sacramento Sup. Ct., Santa Clara Sup. Ct. |
 | Housing Status | **Homeless since July 2, 2026** — direct consequence of retaliatory inter-county parole transfer (Stockton → Santa Clara) imposed immediately after filing Matter 15 (Newanforbi v. CDCR, et al.); transfer caused loss of Stockton family housing; Matters 3, 9, and 19 are also potential retaliatory predicate acts |
-| Representation | Pro Se / In Propria Persona — all 28 matters self-litigated; estimated equivalent private-counsel cost: $703,808–$1,144,640 |
-| Aggregate Exposure (Conservative) | ~$1,554,000+ |
-| Aggregate Exposure (Moderate) | ~$3,973,000+ |
-| Aggregate Exposure (Aggressive) | ~$8,370,000+ |
+| Representation | Pro Se / In Propria Persona — all 29 matters self-litigated; estimated equivalent private-counsel cost: $709,408–$1,155,280 |
+| Aggregate Exposure (Conservative) | ~$1,584,000+ |
+| Aggregate Exposure (Moderate) | ~$4,048,000+ |
+| Aggregate Exposure (Aggressive) | ~$8,550,000+ |
 | Last Updated | July 17, 2026 |
 
 ---
@@ -81,14 +81,15 @@ Three purely equitable proceedings seeking court orders directing CDCR to act �
 - **Matter 10** (Santa Clara Sup. Ct., C2602632): Habeas Corpus — challenges continued compelled treatment as unlawful restraint; CLOSED — petition denied without prejudice April 27, 2026 (exhaustion grounds).
 - **Matter 19** (Santa Clara Sup. Ct., C2604791): Habeas Corpus — seeks immediate and unconditional discharge from parole; filed April 3, 2026.
 
-### Cluster 5 — Employment / Statutory Violation (Matters 22, 25, 26, 27)
+### Cluster 5 — Employment / Statutory Violation (Matters 22, 25, 26, 27, 29)
 
-Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibition on using sex offender registry information for employment purposes — against separate employers across a 30-month window.
+Six matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibition on using sex offender registry information for employment purposes — against separate employers across a 30-month window.
 
 - **Matter 22** (Newanforbi v. Pilot Travel Centers LLC) — **SETTLED July 11, 2026** — San Joaquin Superior Court (STK-CV-UWT-2026-0007649). Wrongful termination; Defendant's own Post-Adverse Action Notice admitted registry as sole termination basis. Resolved pro se in under six weeks from filing, before service was completed. First portfolio settlement.
 - **Matter 25** (Newanforbi v. Federal Express Corporation) — San Joaquin Superior Court; PC §290.46(j) failure to hire; First Advantage BGC ran March 2025; final adverse action March 19, 2025; complaint verified July 15, 2026; not yet filed.
 - **Matter 26** (Newanforbi v. United Parcel Service, Inc.) — San Joaquin Superior Court; PC §290.46(j) failure to hire; First Advantage BGC ran July 2024; final adverse action July 31, 2024; complaint verified July 15, 2026; not yet filed — **TIME-SENSITIVE: 2-year limitations period approaches July 31, 2026.**
 - **Matter 27** (Newanforbi v. Randstad US, LLC and RK Logistics Group, Inc.) — San Joaquin Superior Court; PC §290.46(j) / FCRA / ICRAA / Tameny wrongful termination. Rehired July 7, 2026; InfoMart BGC (Order No. 15780719) shows Billing Code "RK LOGISTICS" and Status "NEEDS APPROVAL, PER CLIENT CRITERIA" with registry as the sole adverse flag. FCRA pre-adverse notice received July 13, 2026; earliest adverse action date July 21, 2026. Complaint not yet filed.
+- **Matter 29** (Newanforbi v. Amazon.com Services LLC) — anticipated Alameda Superior Court; PC §290.46(j) / FCRA / ICRAA / IIED failure to hire. Application submitted; pre-hire appointment attended July 7, 2026 (Fremont, CA); Accurate Background LLC (shortcode 45996) BGC submitted July 7, 2026; BGC pending 10+ days as of July 17, 2026; adverse action anticipated. Sixth PC §290.46(j) matter in portfolio; complaint not yet filed.
 
 ---
 
@@ -115,6 +116,7 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | 26 | Newanforbi v. United Parcel Service, Inc. | TBD | San Joaquin Sup. Ct. | State | Complaint verified July 15, 2026; PC §290.46(j); not yet filed — TIME-SENSITIVE |
 | 27 | Newanforbi v. Randstad US, LLC et al. | TBD | San Joaquin Sup. Ct. | State | Pre-adverse notice July 13, 2026; adverse action expected on or after July 21, 2026; complaint not yet filed |
 | 28 | Newanforbi v. Shannon Smith, LCSW, CEO, et al. | TBD | USDC N.D. Cal. | Federal | Complaint mailed July 16, 2026; anticipated receipt July 20, 2026; §1983 + Bane Act + RICO |
+| 29 | Newanforbi v. Amazon.com Services LLC | TBD | Alameda Sup. Ct. (anticipated) | State | Pre-complaint — BGC pending 10+ days (Accurate Background, shortcode 45996); adverse action anticipated; PC §290.46(j) + FCRA + ICRAA |
 
 ### Settled
 
@@ -172,7 +174,8 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | PC §290.46(j) Failure to Hire — FedEx / UPS | 25, 26 | $75,000 | $180,000 | $420,000 |
 | PC §290.46(j) — Wrongful Termination / Failure to Employ — Randstad / RK Logistics | 27 | $180,000 | $437,000 | $835,000 |
 | §1983 Monell + Individual + Bane Act + RICO — Shannon Smith / HOPE | 28 | $249,000 | $666,000 | $1,510,000 |
-| **Portfolio Total (pre-deduplication)** | | **$1,593,000** | **$4,008,000** | **$8,420,000** |
+| PC §290.46(j) Failure to Hire — Amazon | 29 | $30,000 | $75,000 | $180,000 |
+| **Portfolio Total (pre-deduplication)** | | **$1,623,000** | **$4,083,000** | **$8,600,000** |
 
 *Note: The portfolio total reflects independent per-defendant exposure across all matters before deduplication of shared economic events (e.g., the same CDL wage-loss period underlying Matters 1, 2, 7, 15). Per-matter settlement negotiations treat each defendant independently.*
 
@@ -182,18 +185,18 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 
 ## Attorney Fees Analysis
 
-Plaintiff is representing himself pro se across all 28 matters. The figures below represent what he would have been required to spend on private counsel to litigate this portfolio — costs he has absorbed entirely through self-representation. Based on real page counts extracted from all 232 documents across 28 matters (3,228 total pages), classified by document type and priced at a blended rate of **$280/hour** (senior partner $350–$450 / mid-associate $250–$350 / paralegal $150–$200). Opposing-party filings billed at light review rate only.
+Plaintiff is representing himself pro se across all 29 matters. The figures below represent what he would have been required to spend on private counsel to litigate this portfolio — costs he has absorbed entirely through self-representation. Based on real page counts extracted from all 243 documents across 29 matters (3,247 total pages), classified by document type and priced at a blended rate of **$280/hour** (senior partner $350–$450 / mid-associate $250–$350 / paralegal $150–$200). Opposing-party filings billed at light review rate only.
 
 | Cluster | Matters | Low | Mid | High |
 |---|---|---|---|---|
 | CHP / DUI / DMV | 1, 2, 7, 8, 20, 24 | $134,176 | $176,372 | $218,568 |
 | Parole Retaliation / HOPE | 3, 4, 5, 6, 11, 13, 14, 15, 16, 17, 18, 21, 28 | $439,432 | $572,012 | $704,592 |
-| Consumer Fraud / Employment | 12, 22, 23, 25, 26, 27 | $89,320 | $118,720 | $148,680 |
+| Consumer Fraud / Employment | 12, 22, 23, 25, 26, 27, 29 | $94,920 | $126,840 | $159,320 |
 | Administrative Writs & Habeas | 9, 10, 19 | $40,880 | $56,840 | $72,800 |
-| **Portfolio Total** | **28 matters / 232 docs / 3,228 pages** | **$703,808** | **$923,944** | **$1,144,640** |
-| **Estimated Hours** | | **2,513.6 hrs** | **3,299.8 hrs** | **4,088.0 hrs** |
+| **Portfolio Total** | **29 matters / 243 docs / 3,247 pages** | **$709,408** | **$932,064** | **$1,155,280** |
+| **Estimated Hours** | | **2,533.6 hrs** | **3,328.8 hrs** | **4,126.0 hrs** |
 
-*Plaintiff has litigated all 28 matters pro se, absorbing the full economic equivalent of the above without compensation. Fee-shifting statutes (42 U.S.C. §1988, PC §290.46(j)(4)(A), RICO 18 U.S.C. §1964(c), FCRA, ICRAA) apply across the majority of active matters — mandatory fee recovery upon prevailing substantially offsets or eliminates the above costs.*
+*Plaintiff has litigated all 29 matters pro se, absorbing the full economic equivalent of the above without compensation. Fee-shifting statutes (42 U.S.C. §1988, PC §290.46(j)(4)(A), RICO 18 U.S.C. §1964(c), FCRA, ICRAA) apply across the majority of active matters — mandatory fee recovery upon prevailing substantially offsets or eliminates the above costs.*
 
 ---
 
@@ -217,7 +220,7 @@ Plaintiff is representing himself pro se across all 28 matters. The figures belo
 
 9. **Policy 19-03 as Ultra Vires Action** — Policy 19-03 is affirmatively contradictory to 15 CCR § 3574 (effective April 2025). Regulations have the force of statute (*Tidewater Marine*). *Mathews v. Eldridge* balancing confirms a due process violation.
 
-10. **PC §290.46(j)(2)(E) Pattern Across Five Employers** — Matter 22 (Pilot, settled), Matter 25 (FedEx), Matter 26 (UPS), Matter 27 (Randstad/RK Logistics). Each case's willfulness finding supports punitive damages in the others. Matter 22's settlement confirms the statutory claim is viable; Matter 27's InfoMart report is the strongest evidence set (Plaintiff holds the actual BGC report; Billing Code "RK LOGISTICS" documents the end-client's criteria configuration).
+10. **PC §290.46(j)(2)(E) Pattern Across Six Employers** — Matter 22 (Pilot, settled), Matter 25 (FedEx), Matter 26 (UPS), Matter 27 (Randstad/RK Logistics), Matter 29 (Amazon). Each case's willfulness finding supports punitive damages in the others. Matter 22's settlement confirms the statutory claim is viable; Matter 27's InfoMart report is the strongest evidence set (Plaintiff holds the actual BGC report; Billing Code "RK LOGISTICS" documents the end-client's criteria configuration); Matter 29's Accurate Background SMS (shortcode 45996) establishes the BGC vendor relationship and consent.
 
 ---
 

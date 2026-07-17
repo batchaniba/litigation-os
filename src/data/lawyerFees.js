@@ -256,24 +256,34 @@ export const lawyer_fees = [
     cost: { low: 25200, high: 43400, mid: 34300 },
     notes: "Six documents totaling approximately 53 pages: 22-page federal complaint (the dominant cost driver — novel theory development across RICO, §1983 Monell, individual-capacity §1983, Bane Act, and fraud/negligent misrepresentation in a single pleading; hours are elevated accordingly); 4-page Motion for Protective Order; 3-page supporting Declaration; state court Stipulated Protective Order as Exhibit A (~10 pages); 5-page Proposed NDCA Protective Order; 9-page signed state Stipulated PO. Hours reflect drafting a complex multi-theory federal complaint from scratch leveraging 542 pages of discovery already produced in the dismissed state case, plus preparation of the contemporaneous protective-order motion package. Fee-shifting under §1988 and RICO makes attorney fee recovery highly probable if Plaintiff prevails."
   },
+  {
+    number: 29, caption: "Newanforbi v. Amazon.com Services LLC", caseNumber: "TBD",
+    court: "TBD — anticipated Alameda Sup. Ct.",
+    type: "State — PC §290.46(j) / FCRA / ICRAA / Failure to Hire",
+    status: "Pre-complaint — BGC pending; adverse action anticipated",
+    documentsCount: 11, totalPagesReal: 19,
+    hours: { low: 20, high: 38, mid: 29 },
+    cost: { low: 5600, high: 10640, mid: 8120 },
+    notes: "Pre-filing stage. Eleven documents: 5 PDFs (13 pages) — Amazon Simple Hire Checklists (2), Amazon Jobs BGC-status emails (2), and Equifax onboarding reminder — and 6 screenshots (6 pages) documenting the application, pre-hire appointment, Amazon/Accurate Background SMS chain, and pending BGC status. No complaint drafted yet; hours reflect case assessment and theory development from the established §290.46(j) portfolio template. Fee-shifting under PC §290.46(j)(4)(A), FCRA, and ICRAA applies upon prevailing."
+  },
 ];
 
 export const lawyer_fees_summary = {
   analysisDate: "2026-07-17",
-  totalMatters: 28,
-  totalDocumentsAnalyzed: 232,
-  totalPagesReal: 3228,
+  totalMatters: 29,
+  totalDocumentsAnalyzed: 243,
+  totalPagesReal: 3247,
   methodology: {
     blendedHourlyRate: 280,
     rateRange: { seniorPartner: [350, 450], midAssociate: [250, 350], paralegal: [150, 200] },
     note: "Every PDF in public/documents/matter-XX/ was measured with pdfinfo for real page counts (poppler-utils), then classified by document type (complaint, motion/opposition/reply, discovery, writ/habeas, declaration, administrative, evidence) and priced using the hours-per-page/per-document conversions in docs/LAWYER_FEES_CALCULATOR.md. Opposing counsel's filings are billed only at a light review rate, never at drafting rate. Matters with no uploaded PDFs are estimated conservatively from matters.js status text.",
   },
-  totalEstimatedHours: { low: 2513.6, high: 4088.0, mid: 3299.8 },
-  totalEstimatedCost: { low: 703808, high: 1144640, mid: 923944 },
+  totalEstimatedHours: { low: 2533.6, high: 4126.0, mid: 3328.8 },
+  totalEstimatedCost: { low: 709408, high: 1155280, mid: 932064 },
   byCluster: {
     cluster1: { label: "CHP / DUI / DMV", matters: [1, 2, 7, 8, 20, 24], costLow: 134176, costMid: 176372, costHigh: 218568 },
     cluster2: { label: "Parole Retaliation / HOPE", matters: [3, 4, 5, 6, 11, 13, 14, 15, 16, 17, 18, 21, 28], costLow: 439432, costMid: 572012, costHigh: 704592 },
-    cluster3: { label: "Consumer Fraud / Employment", matters: [12, 22, 23, 25, 26, 27], costLow: 89320, costMid: 118720, costHigh: 148680 },
+    cluster3: { label: "Consumer Fraud / Employment", matters: [12, 22, 23, 25, 26, 27, 29], costLow: 94920, costMid: 126840, costHigh: 159320 },
     cluster4: { label: "Administrative Writs & Habeas", matters: [9, 10, 19], costLow: 40880, costMid: 56840, costHigh: 72800 },
   },
 };
