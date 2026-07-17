@@ -373,6 +373,11 @@ function DemandCard({ item, theme }) {
           borderRadius: 20, padding: "4px 14px", whiteSpace: "nowrap",
         }}>Demand Pending</div>
 
+        <div style={{
+          fontFamily: "'Cormorant Garamond', Georgia, serif",
+          fontSize: 26, fontWeight: 700, color: ORANGE, whiteSpace: "nowrap",
+        }}>{fmt(item.demand_amount)}</div>
+
         <div aria-hidden style={{
           color: theme.subtleText, fontSize: 18,
           transition: "transform 0.3s", transform: open ? "rotate(180deg)" : "rotate(0)",
