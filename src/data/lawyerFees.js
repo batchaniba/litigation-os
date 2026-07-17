@@ -247,23 +247,32 @@ export const lawyer_fees = [
     cost: { low: 8960, high: 16240, mid: 12320 },
     notes: "Pre-filing stage. Eight documents analyzed: three onboarding/notice emails (rehire confirmation, MVR request, InfoMart FCRA pre-adverse notice); the 15-page InfoMart background check report (Order No. 15780719) — the evidentiary centerpiece confirming registry as the sole adverse flag; and four corroborating screenshots (Indeed application, RK Logistics auto-SMS, two Randstad recruiter iMessages establishing the inhouse staffing pipeline from June 30 Indeed application through July 2 Watkins referral). Hours reflect case assessment, initial theory development, BGC report analysis, and complaint-drafting preparation based on the Matters 22/25/26 template. Once drafted, the complaint will add a substantial increment tracked in a future update."
   },
+  {
+    number: 28, caption: "Newanforbi v. HOPE Psychotherapy, Inc. et al.", caseNumber: "TBD",
+    court: "USDC N.D. Cal.", type: "Federal — 42 U.S.C. §1983 (Monell + Individual Capacity); Bane Act §52.1; Fraud/Negligent Misrepresentation; RICO 18 U.S.C. §1962(c)-(d)",
+    status: "Complaint (v2) mailed Jul. 16, 2026; anticipated receipt USDC N.D. Cal. Jul. 20, 2026",
+    documentsCount: 6, totalPagesReal: 53,
+    hours: { low: 90, high: 155, mid: 122.5 },
+    cost: { low: 25200, high: 43400, mid: 34300 },
+    notes: "Six documents totaling approximately 53 pages: 22-page federal complaint (the dominant cost driver — novel theory development across RICO, §1983 Monell, individual-capacity §1983, Bane Act, and fraud/negligent misrepresentation in a single pleading; hours are elevated accordingly); 4-page Motion for Protective Order; 3-page supporting Declaration; state court Stipulated Protective Order as Exhibit A (~10 pages); 5-page Proposed NDCA Protective Order; 9-page signed state Stipulated PO. Hours reflect drafting a complex multi-theory federal complaint from scratch leveraging 542 pages of discovery already produced in the dismissed state case, plus preparation of the contemporaneous protective-order motion package. Fee-shifting under §1988 and RICO makes attorney fee recovery highly probable if Plaintiff prevails."
+  },
 ];
 
 export const lawyer_fees_summary = {
-  analysisDate: "2026-07-14",
-  totalMatters: 27,
-  totalDocumentsAnalyzed: 226,
-  totalPagesReal: 3175,
+  analysisDate: "2026-07-17",
+  totalMatters: 28,
+  totalDocumentsAnalyzed: 232,
+  totalPagesReal: 3228,
   methodology: {
     blendedHourlyRate: 280,
     rateRange: { seniorPartner: [350, 450], midAssociate: [250, 350], paralegal: [150, 200] },
     note: "Every PDF in public/documents/matter-XX/ was measured with pdfinfo for real page counts (poppler-utils), then classified by document type (complaint, motion/opposition/reply, discovery, writ/habeas, declaration, administrative, evidence) and priced using the hours-per-page/per-document conversions in docs/LAWYER_FEES_CALCULATOR.md. Opposing counsel's filings are billed only at a light review rate, never at drafting rate. Matters with no uploaded PDFs are estimated conservatively from matters.js status text.",
   },
-  totalEstimatedHours: { low: 2423.6, high: 3933.0, mid: 3177.3 },
-  totalEstimatedCost: { low: 678608, high: 1101240, mid: 889644 },
+  totalEstimatedHours: { low: 2513.6, high: 4088.0, mid: 3299.8 },
+  totalEstimatedCost: { low: 703808, high: 1144640, mid: 923944 },
   byCluster: {
     cluster1: { label: "CHP / DUI / DMV", matters: [1, 2, 7, 8, 20, 24], costLow: 134176, costMid: 176372, costHigh: 218568 },
-    cluster2: { label: "Parole Retaliation / HOPE", matters: [3, 4, 5, 6, 11, 13, 14, 15, 16, 17, 18, 21], costLow: 414232, costMid: 537712, costHigh: 661192 },
+    cluster2: { label: "Parole Retaliation / HOPE", matters: [3, 4, 5, 6, 11, 13, 14, 15, 16, 17, 18, 21, 28], costLow: 439432, costMid: 572012, costHigh: 704592 },
     cluster3: { label: "Consumer Fraud / Employment", matters: [12, 22, 23, 25, 26, 27], costLow: 89320, costMid: 118720, costHigh: 148680 },
     cluster4: { label: "Administrative Writs & Habeas", matters: [9, 10, 19], costLow: 40880, costMid: 56840, costHigh: 72800 },
   },
