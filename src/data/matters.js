@@ -807,7 +807,7 @@ export const cases = [
       ]
     },
     {
-      number: 28, caption: "Newanforbi v. HOPE Psychotherapy, Inc. et al.", case_no: "TBD", court: "USDC N.D. Cal.",
+      number: 28, caption: "Newanforbi v. Shannon Smith, LCSW, CEO, et al.", case_no: "TBD", court: "USDC N.D. Cal.",
       claims: "42 U.S.C. §1983 (Monell + Individual Capacity); Bane Act (Cal. Civ. Code §52.1); Fraud / Negligent Misrepresentation; RICO (18 U.S.C. §1962(c)-(d))",
       status: "Complaint mailed July 16, 2026 — USDC N.D. Cal. (anticipated receipt July 20, 2026)",
       filed: "July 16, 2026 (mailed); anticipated receipt July 20, 2026", judge: "TBD", cluster: 2, type: "Federal",

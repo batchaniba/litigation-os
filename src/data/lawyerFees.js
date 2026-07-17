@@ -248,7 +248,7 @@ export const lawyer_fees = [
     notes: "Pre-filing stage. Eight documents analyzed: three onboarding/notice emails (rehire confirmation, MVR request, InfoMart FCRA pre-adverse notice); the 15-page InfoMart background check report (Order No. 15780719) — the evidentiary centerpiece confirming registry as the sole adverse flag; and four corroborating screenshots (Indeed application, RK Logistics auto-SMS, two Randstad recruiter iMessages establishing the inhouse staffing pipeline from June 30 Indeed application through July 2 Watkins referral). Hours reflect case assessment, initial theory development, BGC report analysis, and complaint-drafting preparation based on the Matters 22/25/26 template. Once drafted, the complaint will add a substantial increment tracked in a future update."
   },
   {
-    number: 28, caption: "Newanforbi v. HOPE Psychotherapy, Inc. et al.", caseNumber: "TBD",
+    number: 28, caption: "Newanforbi v. Shannon Smith, LCSW, CEO, et al.", caseNumber: "TBD",
     court: "USDC N.D. Cal.", type: "Federal — 42 U.S.C. §1983 (Monell + Individual Capacity); Bane Act §52.1; Fraud/Negligent Misrepresentation; RICO 18 U.S.C. §1962(c)-(d)",
     status: "Complaint (v2) mailed Jul. 16, 2026; anticipated receipt USDC N.D. Cal. Jul. 20, 2026",
     documentsCount: 6, totalPagesReal: 53,
