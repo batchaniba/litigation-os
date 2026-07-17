@@ -2,7 +2,6 @@ import { useState } from "react";
 import { PORTFOLIO } from "../data";
 import { GOLD } from "../constants";
 import { useTheme } from "../ThemeContext";
-import { useViewport } from "../hooks/useViewport";
 
 const fmt = (n) => "$" + Math.round(n).toLocaleString();
 const VIEWS = ["low", "mid", "high"];
@@ -96,7 +95,6 @@ function FeeMatterCard({ m, view, expanded, onToggle, theme }) {
 
 export const CostOfCounselTab = () => {
   const theme = useTheme();
-  const { isMobile } = useViewport();
   const [view, setView] = useState("mid");
   const [expandedMatter, setExpandedMatter] = useState(null);
 
@@ -140,7 +138,7 @@ export const CostOfCounselTab = () => {
         </div>
       </div>
 
-      <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "repeat(3, 1fr)", gap: 14, marginBottom: 24 }}>
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 14, marginBottom: 24 }}>
         {VIEWS.map((v) => {
           const t = summary.totalEstimatedCost[v];
           const isActive = v === view;

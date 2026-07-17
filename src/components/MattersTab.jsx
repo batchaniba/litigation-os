@@ -4,11 +4,9 @@ import { GOLD, BORDER_BLUE } from "../constants";
 import { StatusBadge, ClusterBadge, TypeBadge, ArchiveBadge } from "./Badges";
 import { ServiceTracker } from "./ServiceTracker";
 import { useTheme } from "../ThemeContext";
-import { useViewport } from "../hooks/useViewport";
 
 const MatterCard = ({ matter: c, isOpen, onToggle }) => {
   const theme = useTheme();
-  const { isMobile } = useViewport();
   return (
     <div style={{ position: "relative", background: theme.cardBg, borderRadius: 10, border: isOpen ? `1px solid ${GOLD}40` : `1px solid ${theme.cardBorder}`, overflow: "hidden", transition: "border-color 0.3s" }}>
       {c.status && c.status.startsWith("SETTLED") && (
@@ -47,7 +45,7 @@ const MatterCard = ({ matter: c, isOpen, onToggle }) => {
       {/* Expanded detail */}
       {isOpen && (
         <div id={`matter-detail-${c.number}`} style={{ padding: "0 22px 22px", borderTop: `1px solid ${theme.cardBorder}` }}>
-          <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: 20, paddingTop: 18 }}>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20, paddingTop: 18 }}>
             <div>
               <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 10, color: GOLD, fontWeight: 700, letterSpacing: 2, textTransform: "uppercase", marginBottom: 8 }}>Defendants</div>
               <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: theme.secondaryText, lineHeight: 1.6, margin: 0 }}>{c.defendants}</p>
