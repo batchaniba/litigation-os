@@ -10,7 +10,8 @@ export const damages_table = [
     { category: "42 USC §1983 — Arbitrary U Visa Certification Denial & Retaliation (Matter 24)", matters: "24", conservative: 75000, moderate: 200000, aggressive: 450000 },
     { category: "PC §290.46(j) Failure to Hire — FedEx / UPS (Matters 25, 26)", matters: "25, 26", conservative: 75000, moderate: 180000, aggressive: 420000 },
     { category: "PC §290.46(j) — Wrongful Termination / Failure to Employ — Randstad / RK Logistics (Matter 27)", matters: "27", conservative: 180000, moderate: 437000, aggressive: 835000 },
-    { category: "§1983 Monell / Individual + Bane Act + RICO — Shannon Smith / HOPE (Matter 28)", matters: "28", conservative: 249000, moderate: 666000, aggressive: 1510000 }
+    { category: "§1983 Monell / Individual + Bane Act + RICO — Shannon Smith / HOPE (Matter 28)", matters: "28", conservative: 249000, moderate: 666000, aggressive: 1510000 },
+    { category: "PC §290.46(j) Failure to Hire — Amazon (Matter 29)", matters: "29", conservative: 30000, moderate: 75000, aggressive: 180000 }
 ];
 
 // Per-matter bottoms-up breakdown — individual case ceilings before deduplication
@@ -237,6 +238,23 @@ export const matter_damages = [
             { label: "RICO §1964(c) — Treble damages for enterprise conduct (fraudulent billing to CDCR; false adverse reporting to parole agents); conservative: $0 (dismissal risk) / moderate: $150K / aggressive: $450K", conservative: 0, moderate: 150000, aggressive: 450000 },
             { label: "Punitive Damages — §1983 against Shannon Smith individually; Bane Act treble exposure; deliberate policy of retaliatory reporting", conservative: 25000, moderate: 75000, aggressive: 200000 },
             { label: "Attorney Fees — 42 U.S.C. §1988 (§1983 / Bane Act); RICO fee shifting", conservative: 25000, moderate: 50000, aggressive: 150000 }
+        ]
+    },
+    {
+        number: 29,
+        caption: "Newanforbi v. Amazon.com Services LLC",
+        court: "TBD — anticipated Alameda Sup. Ct.",
+        claims: "PC §290.46(j)(2)(E) Violation, FCRA, ICRAA, Invasion of Privacy, UCL §17200, IIED",
+        status: "Pre-complaint — BGC pending 10+ days as of Jul. 17, 2026; Accurate Background running check on Amazon's behalf; adverse action anticipated; sixth PC §290.46(j) matter in portfolio",
+        risk: "Extremely favorable on liability — PC §290.46(j)(2)(E) categorically prohibits registry use; BGC delay is consistent with registry-flag review; sixth cumulative violation compounds willfulness; Amazon's size and documented hiring pipeline maximize punitive and fee exposure",
+        settlement_note: "Sixth PC §290.46(j) matter; pattern evidence across five prior employers (22/25/26/27 + prior) drives willfulness; Amazon's significant net worth and documented BGC-vendor relationship (Accurate Background, shortcode 45996) create substantial punitive exposure; pre-adverse notice once issued triggers FCRA 5-business-day waiting period before adverse action",
+        conservative: 30000, moderate: 75000, aggressive: 180000,
+        components: [
+            { label: "PC §290.46(j)(4)(A) Statutory Penalty (per-violation minimum $25,000; Amazon as corporate employer heightens willfulness finding)", conservative: 25000, moderate: 30000, aggressive: 50000 },
+            { label: "Emotional Distress — sixth cumulative PC §290.46(j) employment denial; compounding dignitary harm narrative across Amazon, Randstad, FedEx, UPS, Pilot; IIED claim supported by ongoing pattern", conservative: 3000, moderate: 20000, aggressive: 50000 },
+            { label: "ICRAA Statutory (Accurate Background as reporting agency; failure to follow proper notice/disclosure procedures)", conservative: 1000, moderate: 5000, aggressive: 10000 },
+            { label: "Punitive Damages (Civ. Code §3294 — willful violation; sixth employer in portfolio; Amazon's institutional size and knowledge of BGC-vendor practices)", conservative: 0, moderate: 15000, aggressive: 60000 },
+            { label: "Attorney Fees — PC §290.46(j)(4)(A) mandatory fee-shifting; FCRA; ICRAA", conservative: 1000, moderate: 5000, aggressive: 10000 }
         ]
     }
 ];
