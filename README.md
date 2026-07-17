@@ -86,8 +86,8 @@ Three purely equitable proceedings seeking court orders directing CDCR to act �
 Six matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibition on using sex offender registry information for employment purposes — against separate employers across a 30-month window.
 
 - **Matter 22** (Newanforbi v. Pilot Travel Centers LLC) — **SETTLED July 11, 2026** — San Joaquin Superior Court (STK-CV-UWT-2026-0007649). Wrongful termination; Defendant's own Post-Adverse Action Notice admitted registry as sole termination basis. Resolved pro se in under six weeks from filing, before service was completed. First portfolio settlement.
-- **Matter 25** (Newanforbi v. Federal Express Corporation) — San Joaquin Superior Court (STK-CV-UWT-2026-0009113); PC §290.46(j) failure to hire; First Advantage BGC ran March 2025; final adverse action March 19, 2025; complaint filed July 15, 2026; assigned to Dept. 11B, Hon. Robert T. Waters; CMC January 13, 2027.
-- **Matter 26** (Newanforbi v. United Parcel Service, Inc.) — San Joaquin Superior Court (STK-CV-UWT-2026-0009118); PC §290.46(j) failure to hire; First Advantage BGC ran July 2024; final adverse action July 31, 2024; complaint filed July 15, 2026 — **2-year limitations period preserved (filed 16 days ahead of the July 31, 2026 cutoff)**; assigned to Dept. 10B, Hon. Blanca Banuelos; CMC January 14, 2027.
+- **Matter 25** (Newanforbi v. Federal Express Corporation) — San Joaquin Superior Court (STK-CV-UWT-2026-0009118); PC §290.46(j) failure to hire; First Advantage BGC ran March 2025; final adverse action March 19, 2025; complaint filed July 15, 2026; assigned to Dept. 10B, Hon. Blanca Banuelos; CMC January 14, 2027.
+- **Matter 26** (Newanforbi v. United Parcel Service, Inc.) — San Joaquin Superior Court (STK-CV-UWT-2026-0009113); PC §290.46(j) failure to hire; First Advantage BGC ran July 2024; final adverse action July 31, 2024; complaint filed July 15, 2026 — **2-year limitations period preserved (filed 16 days ahead of the July 31, 2026 cutoff)**; UPS filed first (lower case number); assigned to Dept. 11B, Hon. Robert T. Waters; CMC January 13, 2027.
 - **Matter 27** (Newanforbi v. Randstad US, LLC and RK Logistics Group, Inc.) — San Joaquin Superior Court; PC §290.46(j) / FCRA / ICRAA / Tameny wrongful termination. Rehired July 7, 2026; InfoMart BGC (Order No. 15780719) shows Billing Code "RK LOGISTICS" and Status "NEEDS APPROVAL, PER CLIENT CRITERIA" with registry as the sole adverse flag. FCRA pre-adverse notice received July 13, 2026; earliest adverse action date July 21, 2026. Complaint not yet filed.
 - **Matter 29** (Newanforbi v. Amazon.com Services LLC and Accurate Background LLC) — anticipated Alameda Superior Court; PC §290.46(j) / FCRA / ICRAA / IIED failure to hire. Application submitted; pre-hire appointment attended July 7, 2026 (Fremont, CA); Accurate Background LLC (shortcode 45996) BGC submitted July 7, 2026; BGC pending 10+ days as of July 17, 2026; adverse action anticipated. Sixth PC §290.46(j) matter in portfolio; complaint not yet filed. **Critical precedent: Lerma v. Amazon.com Services, LLC et al., No. 8:22-cv-01727 (C.D. Cal., settled Sept. 29, 2023)** — putative class action against the same two defendants (Amazon + Accurate Background) on the same PC §290.46(j) registry theory; Amazon's post-settlement continuation of the identical practice in 2026 establishes willfulness under Civ. Code §3294.
 
@@ -112,8 +112,8 @@ Six matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibit
 | 19 | Newanforbi v. Macomber | C2604791 | Santa Clara Sup. Ct. | State | Filed Apr. 3, 2026; habeas — seeks unconditional parole discharge |
 | 20 | Newanforbi v. CHP, et al. | 26CV191136 | Alameda Sup. Ct. | State | Demurrer opposition filed July 13, 2026; hearing Aug. 28, 2026, Dept. 25 |
 | 24 | Newanforbi v. Serrato | 4:26-cv-05953-ASK | USDC N.D. Cal. | Federal | Filed June 17, 2026; ISC Order issued; CMC Sept. 15, 2026 |
-| 25 | Newanforbi v. Federal Express Corporation | STK-CV-UWT-2026-0009113 | San Joaquin Sup. Ct. | State | Filed July 15, 2026; Dept. 11B, Hon. Robert T. Waters; CMC Jan. 13, 2027 |
-| 26 | Newanforbi v. United Parcel Service, Inc. | STK-CV-UWT-2026-0009118 | San Joaquin Sup. Ct. | State | Filed July 15, 2026; limitations period preserved; Dept. 10B, Hon. Blanca Banuelos; CMC Jan. 14, 2027 |
+| 25 | Newanforbi v. Federal Express Corporation | STK-CV-UWT-2026-0009118 | San Joaquin Sup. Ct. | State | Filed July 15, 2026; Dept. 10B, Hon. Blanca Banuelos; CMC Jan. 14, 2027 |
+| 26 | Newanforbi v. United Parcel Service, Inc. | STK-CV-UWT-2026-0009113 | San Joaquin Sup. Ct. | State | Filed July 15, 2026; limitations period preserved (16 days to spare); Dept. 11B, Hon. Robert T. Waters; CMC Jan. 13, 2027 |
 | 27 | Newanforbi v. Randstad US, LLC et al. | TBD | San Joaquin Sup. Ct. | State | Pre-adverse notice July 13, 2026; adverse action expected on or after July 21, 2026; complaint not yet filed |
 | 28 | Newanforbi v. Shannon Smith, LCSW, CEO, et al. | TBD | USDC N.D. Cal. | Federal | Complaint mailed July 16, 2026; anticipated receipt July 20, 2026; §1983 + Bane Act + RICO |
 | 29 | Newanforbi v. Amazon.com Services LLC et al. | TBD | Alameda Sup. Ct. (anticipated) | State | Pre-complaint — BGC pending 10+ days (Accurate Background LLC, shortcode 45996); adverse action anticipated; PC §290.46(j) + FCRA + ICRAA; Lerma precedent (same defendants, settled Sept. 2023) establishes willfulness |
@@ -155,12 +155,12 @@ Six matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibit
 | Sep. 13, 2026 | 25, 26 | Service deadline — FedEx and UPS (60 days from July 15, 2026 filing; CRC 3.110) |
 | Sept. 15, 2026 | 24 | Case Management Conference — USDC N.D. Cal. (4:26-cv-05953-ASK) |
 | Dec. 9, 2026 | 15 | Case Management Conference — 8:30 AM, Dept. 10C, San Joaquin Sup. Ct. |
-| Dec. 14, 2026 | 25 | Meet-and-confer deadline — 30 days before Jan. 13, 2027 CMC (CRC 3.724; STK-CV-UWT-2026-0009113) |
-| Dec. 15, 2026 | 26 | Meet-and-confer deadline — 30 days before Jan. 14, 2027 CMC (CRC 3.724; STK-CV-UWT-2026-0009118) |
-| Dec. 29, 2026 | 25 | Case Management Statement due — JC Form CM-110; 15 days before Jan. 13, 2027 CMC (CRC 3.725; STK-CV-UWT-2026-0009113) |
-| Dec. 30, 2026 | 26 | Case Management Statement due — JC Form CM-110; 15 days before Jan. 14, 2027 CMC (CRC 3.725; STK-CV-UWT-2026-0009118) |
-| Jan. 13, 2027 | 25 | Case Management Conference — 8:30 AM, Dept. 11B, Hon. Robert T. Waters, San Joaquin Sup. Ct. (STK-CV-UWT-2026-0009113) |
-| Jan. 14, 2027 | 26 | Case Management Conference — 8:45 AM, Dept. 10B, Hon. Blanca Banuelos, San Joaquin Sup. Ct. (STK-CV-UWT-2026-0009118) |
+| Dec. 14, 2026 | 26 | Meet-and-confer deadline — 30 days before Jan. 13, 2027 CMC (CRC 3.724; STK-CV-UWT-2026-0009113) |
+| Dec. 15, 2026 | 25 | Meet-and-confer deadline — 30 days before Jan. 14, 2027 CMC (CRC 3.724; STK-CV-UWT-2026-0009118) |
+| Dec. 29, 2026 | 26 | Case Management Statement due — JC Form CM-110; 15 days before Jan. 13, 2027 CMC (CRC 3.725; STK-CV-UWT-2026-0009113) |
+| Dec. 30, 2026 | 25 | Case Management Statement due — JC Form CM-110; 15 days before Jan. 14, 2027 CMC (CRC 3.725; STK-CV-UWT-2026-0009118) |
+| Jan. 13, 2027 | 26 | Case Management Conference — 8:30 AM, Dept. 11B, Hon. Robert T. Waters, San Joaquin Sup. Ct. (STK-CV-UWT-2026-0009113) |
+| Jan. 14, 2027 | 25 | Case Management Conference — 8:45 AM, Dept. 10B, Hon. Blanca Banuelos, San Joaquin Sup. Ct. (STK-CV-UWT-2026-0009118) |
 
 ---
 
