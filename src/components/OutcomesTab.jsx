@@ -13,6 +13,7 @@ const realized   = outcomes.realized.reduce((s, r) => s + r.amount, 0);
 const anticipated = outcomes.anticipated.reduce((s, r) => s + r.amount, 0);
 const combined   = realized + anticipated;
 const moderate   = outcomes.portfolio_exposure.moderate;
+const demandTotal = outcomes.active_demands.reduce((s, d) => s + d.demand_amount, 0);
 
 function StatTile({ label, amount, prefix = "", color, sub, confidential = false, theme }) {
   return (
@@ -285,11 +286,22 @@ export function OutcomesTab() {
         background: theme.cardBg,
         border: "1px solid #ea580c30",
         borderRadius: 10, padding: "14px 20px", marginBottom: 14,
+        display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 12,
       }}>
         <div style={{
           fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: theme.mutedText, lineHeight: 1.6,
         }}>
           Pre-filing demands transmitted <strong style={{ color: theme.heading }}>July 12, 2026</strong> · Response deadline <strong style={{ color: "#ea580c" }}>July 26, 2026 at 5:00 PM PT</strong>
+        </div>
+        <div>
+          <div style={{
+            fontFamily: "'DM Sans', sans-serif", fontSize: 9, fontWeight: 700,
+            letterSpacing: 2, textTransform: "uppercase", color: "#ea580c", marginBottom: 4, textAlign: "right",
+          }}>Combined Demand</div>
+          <div style={{
+            fontFamily: "'Cormorant Garamond', Georgia, serif",
+            fontSize: 28, fontWeight: 700, color: "#ea580c",
+          }}>{fmt(demandTotal)}</div>
         </div>
       </div>
       <div style={{ display: "flex", flexDirection: "column", gap: 12, marginBottom: 32 }}>
