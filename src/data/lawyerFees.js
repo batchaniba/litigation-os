@@ -223,7 +223,7 @@ export const lawyer_fees = [
   {
     number: 25, caption: "Newanforbi v. Federal Express Corporation", caseNumber: "TBD",
     court: "San Joaquin Sup. Ct.", type: "State — PC §290.46(j) / ICRAA / Wrongful Failure to Hire",
-    status: "Filed July 15, 2026; Case No. STK-CV-UWT-2026-0009113; Dept. 11B, Hon. Robert T. Waters; CMC Jan. 13, 2027",
+    status: "Filed July 15, 2026; Case No. STK-CV-UWT-2026-0009118; Dept. 10B, Hon. Blanca Banuelos; CMC Jan. 14, 2027",
     documentsCount: 11, totalPagesReal: 28,
     hours: { low: 45, high: 75, mid: 60 },
     cost: { low: 12600, high: 21000, mid: 16800 },
@@ -232,7 +232,7 @@ export const lawyer_fees = [
   {
     number: 26, caption: "Newanforbi v. United Parcel Service, Inc.", caseNumber: "TBD",
     court: "San Joaquin Sup. Ct.", type: "State — PC §290.46(j) / ICRAA / Wrongful Failure to Hire",
-    status: "Filed July 15, 2026; Case No. STK-CV-UWT-2026-0009118; limitations period preserved; Dept. 10B, Hon. Blanca Banuelos; CMC Jan. 14, 2027",
+    status: "Filed July 15, 2026; Case No. STK-CV-UWT-2026-0009113; limitations period preserved (16 days ahead of July 31, 2026 cutoff); Dept. 11B, Hon. Robert T. Waters; CMC Jan. 13, 2027",
     documentsCount: 6, totalPagesReal: 23,
     hours: { low: 40, high: 68, mid: 54 },
     cost: { low: 11200, high: 19040, mid: 15120 },
