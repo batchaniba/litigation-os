@@ -4,7 +4,7 @@ export const damages_table = [
     { category: "Emotional Distress", matters: "1, 2, 3, 5, 7, 15, 22, 24", conservative: 85000, moderate: 240000, aggressive: 535000 },
     { category: "Bane Act / Treble", matters: "1, 2, 5", conservative: 75000, moderate: 200000, aggressive: 450000 },
     { category: "Punitive Damages", matters: "1, 2, 3, 5, 7, 15, 22, 24", conservative: 165000, moderate: 595000, aggressive: 1500000 },
-    { category: "Consumer Fraud", matters: "12", conservative: 40000, moderate: 75000, aggressive: 150000 },
+    { category: "Consumer Fraud", matters: "12", conservative: 79000, moderate: 110000, aggressive: 200000 },
     { category: "Attorneys' Fees", matters: "1, 3, 5, 7, 22, 24", conservative: 50000, moderate: 110000, aggressive: 260000 },
     { category: "PC §290.46(j) Violation + Wrongful Termination (Matter 22)", matters: "22", conservative: 220000, moderate: 525000, aggressive: 1000000 },
     { category: "42 USC §1983 — Arbitrary U Visa Certification Denial & Retaliation (Matter 24)", matters: "24", conservative: 75000, moderate: 200000, aggressive: 450000 },
@@ -108,11 +108,13 @@ export const matter_damages = [
         status: "Default judgment request submitted 06/15/2026; CMC 08/12/2026",
         risk: "Strong on liability — prior owner's disclosure to Diamond establishes actual knowledge; defect objectively documented",
         settlement_note: "Default against Diamond already requested (Jun. 15, 2026); default against Alpine imminent (response deadline Jul. 31, 2026); CMC Aug. 12, 2026 is the prove-up entry point",
-        conservative: 57000, moderate: 100000, aggressive: 200000,
+        conservative: 79000, moderate: 110000, aggressive: 200000,
         components: [
-            { label: "Direct Economic Losses (deposit, GAP, DMV, towing)", conservative: 25130, moderate: 25130, aggressive: 25130 },
-            { label: "Lost Commercial Income", conservative: 20000, moderate: 50000, aggressive: 100000 },
-            { label: "Fraud Punitive + UCL Restitution", conservative: 11870, moderate: 24870, aggressive: 74870 }
+            { label: "Documented Out-of-Pocket (deposit $12,345.10, GAP $1,895, DMV $3,442, Brannon Tire $1,197.34, Mobile Will's $740, Golden Empire Towing $562.50, Western Truck Center $36.71)", conservative: 20219, moderate: 20219, aggressive: 20219 },
+            { label: "Undocumented Out-of-Pocket, sworn testimony (Commercial Towing $750 + Almaraz Diesel $5,000)", conservative: 5750, moderate: 5750, aggressive: 5750 },
+            { label: "Lost Commercial Hauling Income (18 wks × $1,300/wk conservative; Amazon Relay carrier agreement; FAC pleads $46,800+ to date)", conservative: 23400, moderate: 46800, aggressive: 100000 },
+            { label: "Prejudgment Interest (Civ. Code §3287(a); 7% × ~3.04 yrs on documented losses)", conservative: 4303, moderate: 4303, aggressive: 4303 },
+            { label: "Punitive Damages (Civ. Code §3294; fraudulent concealment + intentional misrepresentation; Diamond→Alpine rebrand as consciousness-of-liability badge)", conservative: 25000, moderate: 33000, aggressive: 70000 }
         ]
     },
     {

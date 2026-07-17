@@ -62,12 +62,16 @@ Fraud and UCL claims against Diamond Truck Sales, Inc. and Alpine Truck Sales, I
 
 | Component | Amount |
 |---|---|
-| Direct Documented Economic Losses (deposit $12,345.10 + GAP $1,895 + DMV $3,442 + towing/repair ~$7,447.34) | $25,129.44 |
-| Lost Commercial Hauling Income (Amazon Relay and other contracts; accruing) | $20,000 – $100,000 |
-| Fraud Punitive Damages (Civ. Code §3294) + UCL §17200 Restitution/Disgorgement | $11,870 – $74,870 |
-| **Total Expected Recovery** | **$57,000 (conservative) – $200,000 (aggressive)** |
+| Documented Out-of-Pocket (deposit $12,345.10 + GAP $1,895 + DMV $3,442 + Brannon Tire $1,197.34 + Mobile Will's $740 + Golden Empire Towing $562.50 + Western Truck Center $36.71) | $20,218.65 |
+| Undocumented Out-of-Pocket, sworn testimony (Commercial Towing $750 + Almaraz Diesel $5,000) | $5,750.00 |
+| Lost Commercial Hauling Income (18 wks × $1,300/wk; Amazon Relay carrier agreement on file) | $23,400.00 |
+| Prejudgment Interest (Civ. Code §3287(a); 7% × ~3.04 yrs on documented losses) | $4,302.55 |
+| **Compensatory Subtotal (per Declaration ISO Default Judgment, filed June 15, 2026)** | **$53,671.20** |
+| Punitive Damages (Civ. Code §3294; fraudulent concealment + intentional misrepresentation; Diamond→Alpine rebrand as consciousness-of-liability badge) | ≥ $25,000.00 |
+| Costs of Suit (per Form MC-010 — filing fees, sheriff's service fees, etc.) | per MC-010 |
+| **Total Monetary Judgment Requested (per Default Judgment Packet)** | **≥ $78,671.20 + costs** |
 
-*Direct losses of $25,129.44 are fully documented and essentially undisputable on default. Lost commercial income and punitive damages are subject to judicial discretion at the prove-up hearing.*
+*The $78,671.20 floor is established in the Declaration ISO Default Judgment filed June 15, 2026 against Diamond Truck Sales, Inc. Punitive damages and costs are subject to judicial discretion at the August 12, 2026 prove-up hearing. Lost income was deliberately underpled at 18 weeks (conservative) versus the FAC's $46,800+ allegation; FAC paragraph 31 controls the Greenup v. Rodman notice ceiling on lost income.*
 
 ### Cluster 4 — Administrative Writs & Habeas Corpus (Matters 9, 10, 19)
 
@@ -161,14 +165,14 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | Emotional Distress | 1, 2, 3, 5, 7, 15, 22, 24 | $85,000 | $240,000 | $535,000 |
 | Bane Act / Treble | 1, 2, 5 | $75,000 | $200,000 | $450,000 |
 | Punitive Damages | 1, 2, 3, 5, 7, 15, 22, 24 | $165,000 | $595,000 | $1,500,000 |
-| Consumer Fraud (Matter 12) | 12 | $40,000 | $75,000 | $150,000 |
+| Consumer Fraud (Matter 12) | 12 | $79,000 | $110,000 | $200,000 |
 | Attorneys' Fees | 1, 3, 5, 7, 22, 24 | $50,000 | $110,000 | $260,000 |
 | PC §290.46(j) + Wrongful Termination | 22 | $220,000 | $525,000 | $1,000,000 |
 | §1983 — U Visa Certification Denial & Retaliation | 24 | $75,000 | $200,000 | $450,000 |
 | PC §290.46(j) Failure to Hire — FedEx / UPS | 25, 26 | $75,000 | $180,000 | $420,000 |
 | PC §290.46(j) — Wrongful Termination / Failure to Employ — Randstad / RK Logistics | 27 | $180,000 | $437,000 | $835,000 |
 | §1983 Monell + Individual + Bane Act + RICO — Shannon Smith / HOPE | 28 | $249,000 | $666,000 | $1,510,000 |
-| **Portfolio Total (pre-deduplication)** | | **$1,554,000** | **$3,973,000** | **$8,370,000** |
+| **Portfolio Total (pre-deduplication)** | | **$1,593,000** | **$4,008,000** | **$8,420,000** |
 
 *Note: The portfolio total reflects independent per-defendant exposure across all matters before deduplication of shared economic events (e.g., the same CDL wage-loss period underlying Matters 1, 2, 7, 15). Per-matter settlement negotiations treat each defendant independently.*
 
