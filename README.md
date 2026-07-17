@@ -58,6 +58,21 @@ The largest cluster — 13 matters — targeting CDCR's parole supervision appar
 
 Fraud and UCL claims against Diamond Truck Sales, Inc. and Alpine Truck Sales, Inc. for concealing a DEF/emissions defect and prior CHP out-of-service order on a 2014 Volvo VNL (VIN: 4V4NC9EH6EN142206) purchased for $26,900. The truck entered catastrophic derate mode immediately after purchase, rendering it commercially unusable. Direct documented losses ~$25,129.44; lost hauling income >$46,800. Diamond Truck Sales, Inc. served March 11, 2026 — no response filed; default judgment request submitted June 15, 2026. Alpine Truck Sales, Inc. personally served July 1, 2026 (Mustagem Usmani, Manager, 1201 S Soderquist Road, Turlock); response deadline July 31, 2026; no meet-and-confer contact received. Request for Default Judgment pre-drafted. CMC: August 12, 2026, 8:30 AM, Dept. 11B, Hon. Robert T. Waters.
 
+**Expected recovery — favorable August 12, 2026 CMC:** With both named defendants in default (Diamond since April 10, 2026; Alpine deadline July 31, 2026 — before CMC), the August 12 hearing is the prove-up entry point. A favorable ruling is expected to yield:
+
+| Component | Amount |
+|---|---|
+| Documented Out-of-Pocket (deposit $12,345.10 + GAP $1,895 + DMV $3,442 + Brannon Tire $1,197.34 + Mobile Will's $740 + Golden Empire Towing $562.50 + Western Truck Center $36.71) | $20,218.65 |
+| Undocumented Out-of-Pocket, sworn testimony (Commercial Towing $750 + Almaraz Diesel $5,000) | $5,750.00 |
+| Lost Commercial Hauling Income (18 wks × $1,300/wk; Amazon Relay carrier agreement on file) | $23,400.00 |
+| Prejudgment Interest (Civ. Code §3287(a); 7% × ~3.04 yrs on documented losses) | $4,302.55 |
+| **Compensatory Subtotal (per Declaration ISO Default Judgment, filed June 15, 2026)** | **$53,671.20** |
+| Punitive Damages (Civ. Code §3294; fraudulent concealment + intentional misrepresentation; Diamond→Alpine rebrand as consciousness-of-liability badge) | ≥ $25,000.00 |
+| Costs of Suit (per Form MC-010 — filing fees, sheriff's service fees, etc.) | per MC-010 |
+| **Total Monetary Judgment Requested (per Default Judgment Packet)** | **≥ $78,671.20 + costs** |
+
+*The $78,671.20 floor is established in the Declaration ISO Default Judgment filed June 15, 2026 against Diamond Truck Sales, Inc. Punitive damages and costs are subject to judicial discretion at the August 12, 2026 prove-up hearing. Lost income was deliberately underpled at 18 weeks (conservative) versus the FAC's $46,800+ allegation; FAC paragraph 31 controls the Greenup v. Rodman notice ceiling on lost income.*
+
 ### Cluster 4 — Administrative Writs & Habeas Corpus (Matters 9, 10, 19)
 
 Three purely equitable proceedings seeking court orders directing CDCR to act — no tort damages sought. All target the Secretary of CDCR in his official capacity:
@@ -150,14 +165,14 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | Emotional Distress | 1, 2, 3, 5, 7, 15, 22, 24 | $85,000 | $240,000 | $535,000 |
 | Bane Act / Treble | 1, 2, 5 | $75,000 | $200,000 | $450,000 |
 | Punitive Damages | 1, 2, 3, 5, 7, 15, 22, 24 | $165,000 | $595,000 | $1,500,000 |
-| Consumer Fraud (Matter 12) | 12 | $40,000 | $75,000 | $150,000 |
+| Consumer Fraud (Matter 12) | 12 | $79,000 | $110,000 | $200,000 |
 | Attorneys' Fees | 1, 3, 5, 7, 22, 24 | $50,000 | $110,000 | $260,000 |
 | PC §290.46(j) + Wrongful Termination | 22 | $220,000 | $525,000 | $1,000,000 |
 | §1983 — U Visa Certification Denial & Retaliation | 24 | $75,000 | $200,000 | $450,000 |
 | PC §290.46(j) Failure to Hire — FedEx / UPS | 25, 26 | $75,000 | $180,000 | $420,000 |
 | PC §290.46(j) — Wrongful Termination / Failure to Employ — Randstad / RK Logistics | 27 | $180,000 | $437,000 | $835,000 |
 | §1983 Monell + Individual + Bane Act + RICO — Shannon Smith / HOPE | 28 | $249,000 | $666,000 | $1,510,000 |
-| **Portfolio Total (pre-deduplication)** | | **$1,554,000** | **$3,973,000** | **$8,370,000** |
+| **Portfolio Total (pre-deduplication)** | | **$1,593,000** | **$4,008,000** | **$8,420,000** |
 
 *Note: The portfolio total reflects independent per-defendant exposure across all matters before deduplication of shared economic events (e.g., the same CDL wage-loss period underlying Matters 1, 2, 7, 15). Per-matter settlement negotiations treat each defendant independently.*
 
