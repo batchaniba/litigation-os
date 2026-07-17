@@ -223,20 +223,20 @@ export const lawyer_fees = [
   {
     number: 25, caption: "Newanforbi v. Federal Express Corporation", caseNumber: "TBD",
     court: "San Joaquin Sup. Ct.", type: "State — PC §290.46(j) / ICRAA / Wrongful Failure to Hire",
-    status: "Complaint drafted and verified July 15, 2026; not yet filed or served",
-    documentsCount: 10, totalPagesReal: 27,
+    status: "Filed July 15, 2026; Case No. STK-CV-UWT-2026-0009113; Dept. 11B, Hon. Robert T. Waters; CMC Jan. 13, 2027",
+    documentsCount: 11, totalPagesReal: 28,
     hours: { low: 45, high: 75, mid: 60 },
     cost: { low: 12600, high: 21000, mid: 16800 },
-    notes: "Pre-filing stage: the 18-page, six-count complaint is the only substantive drafting product; the remaining 9 pages are single-page First Advantage notice/reminder emails reviewed for the factual record, not drafted. No answer, motion practice, or discovery exists yet because the complaint has not been filed."
+    notes: "Filed July 15, 2026. The 18-page, six-count complaint is the only substantive drafting product; the remaining 9 pages are single-page First Advantage notice/reminder emails reviewed for the factual record. No answer, motion practice, or discovery exists yet; service not yet completed."
   },
   {
     number: 26, caption: "Newanforbi v. United Parcel Service, Inc.", caseNumber: "TBD",
     court: "San Joaquin Sup. Ct.", type: "State — PC §290.46(j) / ICRAA / Wrongful Failure to Hire",
-    status: "Complaint drafted and verified July 15, 2026; not yet filed or served — filing is time-sensitive",
-    documentsCount: 5, totalPagesReal: 22,
+    status: "Filed July 15, 2026; Case No. STK-CV-UWT-2026-0009118; limitations period preserved; Dept. 10B, Hon. Blanca Banuelos; CMC Jan. 14, 2027",
+    documentsCount: 6, totalPagesReal: 23,
     hours: { low: 40, high: 68, mid: 54 },
     cost: { low: 11200, high: 19040, mid: 15120 },
-    notes: "Pre-filing stage, same posture as Matter 25: the 18-page, six-count complaint is the only substantive drafting product; the remaining 4 pages are single-page First Advantage notice/reminder emails. No answer, motion practice, or discovery exists yet because the complaint has not been filed."
+    notes: "Filed July 15, 2026 — 16 days before the July 31, 2026 two-year limitations cutoff, preserving all time-sensitive claims. The 18-page, six-count complaint is the only substantive drafting product; the remaining 4 pages are single-page First Advantage notice/reminder emails. No answer, motion practice, or discovery exists yet; service not yet completed."
   },
   {
     number: 27, caption: "Newanforbi v. Randstad, et al.", caseNumber: "TBD",
@@ -271,8 +271,8 @@ export const lawyer_fees = [
 export const lawyer_fees_summary = {
   analysisDate: "2026-07-17",
   totalMatters: 29,
-  totalDocumentsAnalyzed: 243,
-  totalPagesReal: 3247,
+  totalDocumentsAnalyzed: 245,
+  totalPagesReal: 3249,
   methodology: {
     blendedHourlyRate: 280,
     rateRange: { seniorPartner: [350, 450], midAssociate: [250, 350], paralegal: [150, 200] },
