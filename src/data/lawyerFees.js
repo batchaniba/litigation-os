@@ -257,7 +257,7 @@ export const lawyer_fees = [
     notes: "Six documents totaling approximately 53 pages: 22-page federal complaint (the dominant cost driver — novel theory development across RICO, §1983 Monell, individual-capacity §1983, Bane Act, and fraud/negligent misrepresentation in a single pleading; hours are elevated accordingly); 4-page Motion for Protective Order; 3-page supporting Declaration; state court Stipulated Protective Order as Exhibit A (~10 pages); 5-page Proposed NDCA Protective Order; 9-page signed state Stipulated PO. Hours reflect drafting a complex multi-theory federal complaint from scratch leveraging 542 pages of discovery already produced in the dismissed state case, plus preparation of the contemporaneous protective-order motion package. Fee-shifting under §1988 and RICO makes attorney fee recovery highly probable if Plaintiff prevails."
   },
   {
-    number: 29, caption: "Newanforbi v. Amazon.com Services LLC", caseNumber: "TBD",
+    number: 29, caption: "Newanforbi v. Amazon.com Services, LLC", caseNumber: "TBD",
     court: "TBD — anticipated Alameda Sup. Ct.",
     type: "State — PC §290.46(j) / FCRA / ICRAA / Failure to Hire",
     status: "Pre-complaint — BGC pending; adverse action anticipated",
