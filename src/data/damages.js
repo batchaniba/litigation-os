@@ -10,7 +10,7 @@ export const damages_table = [
     { category: "42 USC §1983 — Arbitrary U Visa Certification Denial & Retaliation (Matter 24)", matters: "24", conservative: 75000, moderate: 200000, aggressive: 450000 },
     { category: "PC §290.46(j) Failure to Hire — FedEx / UPS (Matters 25, 26)", matters: "25, 26", conservative: 75000, moderate: 180000, aggressive: 420000 },
     { category: "PC §290.46(j) — Wrongful Termination / Failure to Employ — Randstad / RK Logistics (Matter 27)", matters: "27", conservative: 180000, moderate: 437000, aggressive: 835000 },
-    { category: "§1983 Monell / Individual + Bane Act + RICO — HOPE / Shannon Smith (Matter 28)", matters: "28", conservative: 249000, moderate: 666000, aggressive: 1510000 }
+    { category: "§1983 Monell / Individual + Bane Act + RICO — Shannon Smith / HOPE (Matter 28)", matters: "28", conservative: 249000, moderate: 666000, aggressive: 1510000 }
 ];
 
 // Per-matter bottoms-up breakdown — individual case ceilings before deduplication
@@ -221,7 +221,7 @@ export const matter_damages = [
     },
     {
         number: 28,
-        caption: "Newanforbi v. HOPE Psychotherapy, Inc. et al.",
+        caption: "Newanforbi v. Shannon Smith, LCSW, CEO, et al.",
         court: "USDC N.D. Cal.",
         claims: "42 U.S.C. §1983 Monell + Individual Capacity; Bane Act §52.1; Fraud/Negligent Misrepresentation; RICO §1962(c)-(d)",
         status: "Complaint mailed Jul. 16, 2026; anticipated receipt Jul. 20, 2026",
