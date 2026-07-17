@@ -2,6 +2,7 @@ import { useState } from "react";
 import { PORTFOLIO } from "../data";
 import { GOLD } from "../constants";
 import { useTheme } from "../ThemeContext";
+import { useViewport } from "../hooks/useViewport";
 
 const fmt = (n) => "$" + n.toLocaleString();
 const VIEWS = ["conservative", "moderate", "aggressive"];
@@ -44,6 +45,7 @@ const riskColor = (risk = "") => {
 };
 
 function MatterCard({ m, view, expanded, onToggle, theme }) {
+  const { isMobile } = useViewport();
   const total = m[view];
   const pct = (total / MAX_MATTER_AGGRESSIVE) * 100;
   const rc = riskColor(m.risk);
@@ -159,7 +161,7 @@ function MatterCard({ m, view, expanded, onToggle, theme }) {
           </div>
 
           {/* Risk + settlement notes */}
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, marginTop: 14 }}>
+          <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: 10, marginTop: 14 }}>
             <div style={{ background: theme.deepBg, borderRadius: 6, padding: "10px 12px" }}>
               <div style={{
                 fontFamily: "'DM Sans', sans-serif", fontSize: 9, fontWeight: 700,
@@ -194,6 +196,7 @@ const tdStyle = (theme) => ({
 
 export const DamagesTab = ({ damagesView, setDamagesView }) => {
   const theme = useTheme();
+  const { isMobile } = useViewport();
   const [dashMode, setDashMode] = useState("portfolio");
   const [expandedMatter, setExpandedMatter] = useState(null);
 
@@ -274,7 +277,7 @@ export const DamagesTab = ({ damagesView, setDamagesView }) => {
             })}
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 14, marginTop: 24 }}>
+          <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "repeat(3, 1fr)", gap: 14, marginTop: 24 }}>
             {VIEWS.map(v => {
               const total = PORTFOLIO_TOTALS[v];
               const isActive = v === damagesView;
@@ -323,7 +326,7 @@ export const DamagesTab = ({ damagesView, setDamagesView }) => {
           </div>
 
           {/* Tier comparison strip */}
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 10, marginBottom: 20 }}>
+          <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "repeat(3, 1fr)", gap: 10, marginBottom: 20 }}>
             {VIEWS.map(v => {
               const total = MATTER_TOTALS[v];
               const isActive = v === damagesView;
