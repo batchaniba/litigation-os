@@ -1,6 +1,6 @@
 # Newanforbi Litigation Portfolio
 
-An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi**, Pro Se / In Propria Persona. The portfolio tracks 19 active civil matters across federal and California state courts, providing a structured view of case status, procedural history, damages exposure, and overarching legal theories.
+An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi**, Pro Se / In Propria Persona. The portfolio tracks 28 civil matters across federal and California state courts, providing a structured view of case status, procedural history, damages exposure, and overarching legal theories.
 
 **Live site:** https://newanforbi.github.io/interactive-litigation-portfolio/
 
@@ -12,12 +12,12 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 |---|---|
 | Plaintiff | Brendan Ngehsi Newanforbi |
 | Representation | Pro Se / In Propria Persona |
-| Active Matters | 23 |
-| Jurisdictions | USDC E.D. Cal., San Joaquin Sup. Ct., Alameda Sup. Ct., Sacramento Sup. Ct., Santa Clara Sup. Ct. |
-| Aggregate Exposure (Conservative) | ~$1,500,000+ |
-| Aggregate Exposure (Moderate) | ~$3,600,000+ |
-| Aggregate Exposure (Aggressive) | ~$7,500,000+ |
-| Prepared | May 29, 2026; updated July 14, 2026 (Matter 22 settled; Matters 25, 26, 27 added) |
+| Total Matters | 28 |
+| Jurisdictions | USDC E.D. Cal., USDC N.D. Cal., San Joaquin Sup. Ct., Alameda Sup. Ct., Sacramento Sup. Ct., Santa Clara Sup. Ct. |
+| Aggregate Exposure (Conservative) | ~$1,750,000+ |
+| Aggregate Exposure (Moderate) | ~$4,250,000+ |
+| Aggregate Exposure (Aggressive) | ~$9,000,000+ |
+| Prepared | May 29, 2026; updated July 17, 2026 (Matter 5 dismissed; Matter 28 added — HOPE NDCA federal) |
 
 ---
 
@@ -49,7 +49,10 @@ Three purely equitable proceedings seeking court orders directing CDCR to act �
 
 **Newanforbi v. Federal Express Corporation** (Matter 25) and **Newanforbi v. United Parcel Service, Inc.** (Matter 26) — Two parallel failure-to-hire matters under the same PC §290.46(j)(2)(E) theory, both drafted and verified July 15, 2026 but not yet filed. FedEx's background check (First Advantage, "FEDEX GROUND HR") ran March 2025, ending in a final adverse action notice March 19, 2025; UPS's background check ran July 2024, ending in a final adverse action notice July 31, 2024. Unlike Matter 22, Plaintiff was never hired at either company and does not possess the underlying background report (the First Advantage portal links expired), so both complaints plead FedEx's/UPS's use of registry information on information and belief rather than from an admitted-basis letter. The UPS matter is time-sensitive: several pleaded causes of action carry two-year limitations periods running from the July 31, 2024 adverse action.
 
-**Newanforbi v. Randstad, et al.** (Matter 27, San Joaquin Superior Court, not yet filed) — The fifth and most recent PC §290.46(j)(2)(E) matter. Plaintiff was rehired by Randstad General Staffing on July 7, 2026 and was being placed in a CDL commercial driving role (MVR form requested by RIS Site Manager II Danyea Watkins). Background check vendor InfoMart LLC submitted a check at 6:22 PM on July 7; on July 13, 2026, InfoMart issued a FCRA §607(b) Notice to Consumer for Employment Purposes, stating it is "reporting criminal or other public record information that may be adverse" to Randstad. The earliest adverse action date under FCRA's five-business-day rule is July 21, 2026. Defendants include Randstad Inhouse Services, Randstad General Staffing, and InfoMart LLC. Complaint not yet drafted or filed.
+**Newanforbi v. Randstad, et al.** (Matter 27, San Joaquin Superior Court, not yet filed) — The fifth and most recent PC §290.46(j)(2)(E) matter. Plaintiff was rehired by Randstad General Staffing on July 7, 2026 and was being placed in a CDL commercial driving role (MVR form requested by RIS Site Manager II Danyea Watkins). Background check vendor InfoMart LLC submitted a check at 6:22 PM on July 7; on July 13, 2026, InfoMart issued a FCRA §607(b) Notice to Consumer for Employment Purposes, stating it is "reporting criminal or other public record information that may be adverse" to Randstad. The earliest adverse action date under FCRA's five-business-day rule is July 21, 2026. Defendants: Randstad US, LLC and RK Logistics Group, Inc. Complaint not yet drafted or filed.
+
+### Cluster 6 — Federal Civil Rights / RICO: HOPE Psychotherapy (Matter 28)
+**Newanforbi v. HOPE Psychotherapy, Inc. et al.** (Matter 28, USDC N.D. Cal., complaint mailed July 16, 2026; anticipated receipt July 20, 2026) — Federal successor to Newanforbi v. Palacios et al. (STK-CV-UF-2026-0001032), dismissed July 15, 2026 on demurrer. Defendants: HOPE Psychotherapy, Inc. (d/b/a HOPE Program), CASOMB-certified CDCR-contracted sex offender management program, and Shannon Smith, LCSW (CEO and founder, individually). Claims: (1) 42 U.S.C. §1983 — Monell against HOPE (blanket treatment-retention policy condemned in In re Dwyer, SC-080355A); (2) 42 U.S.C. §1983 — Individual capacity against Shannon Smith for directing retaliatory parole reporting; (3) Bane Act, Cal. Civ. Code §52.1 (coercive interference); (4) Fraud and Negligent Misrepresentation; (5) RICO, 18 U.S.C. §1962(c)-(d) (fraudulent billing to CDCR; false adverse reporting). State-actor doctrine: West v. Atkins, 487 U.S. 42 (1988). Philadelphia Indemnity Policy No. 067968 ($1M per-incident / $5M aggregate). Motion for Protective Order filed contemporaneously seeking authorization to retain and use 542 pages of HOPE discovery (Bates HOPE_000001–542) produced in the dismissed state case under equivalent protective-order terms.
 
 ---
 
@@ -61,7 +64,7 @@ Three purely equitable proceedings seeking court orders directing CDCR to act �
 | 2 | Newanforbi v. Meza-Gonzalez et al. | 26CV168913 | Alameda Sup. Ct. | State | STAYED — Stipulation for Stay filed Apr. 14, 2026 |
 | 3 | Newanforbi v. Derrick et al. | 2:26-cv-00004-DJC-JDP | USDC E.D. Cal. | Federal | MTD (Doc 24) under submission; 5/28/2026 hearing vacated; awaiting ruling |
 | 4 | Newanforbi v. Derrick et al. | TBD | San Joaquin Sup. Ct. | State | Filed 05/29/2026 |
-| 5 | Newanforbi v. Palacios et al. | STK-CV-UF-2026-0001032 | San Joaquin Sup. Ct. | State | Demurrer filed 05/22/2026; hearing 07/15/2026; discovery deadline 06/08/2026 |
+| 5 | Newanforbi v. Palacios et al. | STK-CV-UF-2026-0001032 | San Joaquin Sup. Ct. | State | DISMISSED — Demurrer granted without leave to amend, July 15, 2026 (exhaustion grounds) |
 | 6 | Newanforbi v. HOPE et al. | 2:26-cv-00195-TLN-AC | USDC E.D. Cal. | Federal | VOLUNTARILY DISMISSED WITHOUT PREJUDICE (May 21, 2026); refiling preserved |
 | 7 | Newanforbi v. Candelaria | 2:26-cv-00983-DC-CSK | USDC E.D. Cal. | Federal | Active — FAC filed Apr. 27, 2026 |
 | 8 | Newanforbi v. Candelaria, et al. | 26WM000135 | Sacramento Sup. Ct. | State | Fee Waiver Denied 05/19/2026; hearing 07/17/2026, Dept. 10C |
@@ -82,6 +85,7 @@ Three purely equitable proceedings seeking court orders directing CDCR to act �
 | 25 | Newanforbi v. Federal Express Corporation | TBD | San Joaquin Sup. Ct. | State | Complaint drafted/verified 07/15/2026; PC §290.46(j) failure to hire; not yet filed |
 | 26 | Newanforbi v. United Parcel Service, Inc. | TBD | San Joaquin Sup. Ct. | State | Complaint drafted/verified 07/15/2026; PC §290.46(j) failure to hire; not yet filed (time-sensitive — adverse action 07/31/2024) |
 | 27 | Newanforbi v. Randstad, et al. | TBD | San Joaquin Sup. Ct. | State | Pre-adverse notice received 07/13/2026; adverse action expected on or after 07/21/2026; complaint not yet filed |
+| 28 | Newanforbi v. HOPE Psychotherapy, Inc. et al. | TBD | USDC N.D. Cal. | Federal | Complaint mailed 07/16/2026; anticipated receipt 07/20/2026; §1983 Monell + Individual (Shannon Smith), Bane Act, Fraud, RICO |
 
 ---
 
