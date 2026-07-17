@@ -163,6 +163,23 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 
 ---
 
+## Attorney Fees Analysis
+
+Estimated cost of retaining private counsel to litigate the full portfolio from current posture through resolution. Based on real page counts extracted from all 232 documents across 28 matters (3,228 total pages), classified by document type and priced at a blended rate of **$280/hour** (senior partner $350–$450 / mid-associate $250–$350 / paralegal $150–$200). Opposing-party filings billed at light review rate only.
+
+| Cluster | Matters | Low | Mid | High |
+|---|---|---|---|---|
+| CHP / DUI / DMV | 1, 2, 7, 8, 20, 24 | $134,176 | $176,372 | $218,568 |
+| Parole Retaliation / HOPE | 3, 4, 5, 6, 11, 13, 14, 15, 16, 17, 18, 21, 28 | $439,432 | $572,012 | $704,592 |
+| Consumer Fraud / Employment | 12, 22, 23, 25, 26, 27 | $89,320 | $118,720 | $148,680 |
+| Administrative Writs & Habeas | 9, 10, 19 | $40,880 | $56,840 | $72,800 |
+| **Portfolio Total** | **28 matters / 232 docs / 3,228 pages** | **$703,808** | **$923,944** | **$1,144,640** |
+| **Estimated Hours** | | **2,513.6 hrs** | **3,299.8 hrs** | **4,088.0 hrs** |
+
+*Fee-shifting statutes (42 U.S.C. §1988, PC §290.46(j)(4)(A), RICO 18 U.S.C. §1964(c), FCRA, ICRAA) apply across the majority of active matters — mandatory fee recovery upon prevailing substantially offsets or eliminates the above costs.*
+
+---
+
 ## Legal Theories
 
 1. **First Amendment Retaliation as the Catalyst** — Derrick's explicit "you do not have freedom of speech" statement satisfies the *Rhodes v. Robinson* chilling effect test and anchors the retaliation cascade across multiple matters.
