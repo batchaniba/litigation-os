@@ -242,7 +242,7 @@ export const matter_damages = [
     },
     {
         number: 29,
-        caption: "Newanforbi v. Amazon.com Services LLC",
+        caption: "Newanforbi v. Amazon.com Services, LLC",
         court: "TBD — anticipated Alameda Sup. Ct.",
         claims: "PC §290.46(j)(2)(E) Violation, FCRA, ICRAA, Invasion of Privacy, UCL §17200, IIED",
         status: "Pre-complaint — BGC pending 10+ days as of Jul. 17, 2026; Accurate Background running check on Amazon's behalf; adverse action anticipated; sixth PC §290.46(j) matter in portfolio",
