@@ -12,7 +12,6 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 |---|---|
 | Plaintiff | Brendan Ngehsi Newanforbi |
 | Representation | Pro Se / In Propria Persona |
-| Current Address | 1090 S Milpitas Blvd, Unit #304, Milpitas, CA 95035 |
 | Total Matters | 28 |
 | Active / Open | 16 |
 | Settled | 1 (Matter 22 — Pilot Travel Centers LLC, July 11, 2026) |
