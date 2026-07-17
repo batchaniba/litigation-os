@@ -37,8 +37,8 @@ export default function LitigationPortfolio() {
       <style>{`@keyframes clockPulse { 0%,100%{opacity:1} 50%{opacity:0.25} }`}</style>
 
       {/* Header */}
-      <div style={{ background: theme.headerBg, borderBottom: `2px solid ${GOLD}`, padding: "28px 32px 20px" }}>
-        <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between", flexWrap: "wrap", gap: 16 }}>
+      <div style={{ background: theme.headerBg, borderBottom: `2px solid ${GOLD}` }}>
+        <div style={{ maxWidth: 1200, margin: "0 auto", padding: "28px 24px 20px", display: "flex", alignItems: "flex-end", justifyContent: "space-between", flexWrap: "wrap", gap: 16 }}>
           <div>
             <div style={{ color: GOLD, fontSize: 11, fontFamily: "'DM Sans', sans-serif", fontWeight: 700, letterSpacing: 4, textTransform: "uppercase", marginBottom: 6 }}>Litigation Portfolio</div>
             <h1 style={{ fontSize: 32, fontWeight: 700, color: theme.headerText, margin: 0, lineHeight: 1.1 }}>Brendan Ngehsi Newanforbi</h1>
@@ -77,7 +77,9 @@ export default function LitigationPortfolio() {
       <div style={{
         background: theme.bannerBg,
         borderBottom: `1px solid ${timeLeft.urgent ? "#EF444440" : GOLD + "30"}`,
-        padding: "10px 32px",
+      }}>
+      <div style={{
+        maxWidth: 1200, margin: "0 auto", padding: "10px 24px",
         display: "flex", alignItems: "center", justifyContent: "center", gap: 28, flexWrap: "wrap",
         position: "relative"
       }}>
@@ -116,6 +118,7 @@ export default function LitigationPortfolio() {
           {showClock ? "Hide" : "Show"}
         </button>
       </div>
+      </div>
 
       {/* Tab content */}
       <div style={{ maxWidth: 1200, margin: "0 auto", padding: "24px 24px 60px" }}>
@@ -129,8 +132,10 @@ export default function LitigationPortfolio() {
       </div>
 
       {/* Footer */}
-      <div style={{ borderTop: `1px solid ${theme.footerBorder}`, padding: "16px 32px", fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: theme.footerText }}>
-        <span>Confidential — Attorney Work Product</span>
+      <div style={{ borderTop: `1px solid ${theme.footerBorder}` }}>
+        <div style={{ maxWidth: 1200, margin: "0 auto", padding: "16px 24px", fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: theme.footerText }}>
+          <span>Confidential — Attorney Work Product</span>
+        </div>
       </div>
     </div>
     </ThemeContext.Provider>
