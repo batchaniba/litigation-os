@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { GOLD, BODY_GRAY } from "./constants";
+import { useViewport } from "./hooks/useViewport";
 import { getPDTMidnight, parseEventDatePDT } from "./utils/dateUtils";
 import { useDeadlineClock } from "./hooks/useDeadlineClock";
 import { useCaseFilters } from "./hooks/useCaseFilters";
@@ -18,6 +19,7 @@ const tabs = ["Dashboard", "Matters", "Timeline", "Damages", "Theories", "Cost o
 export default function LitigationPortfolio() {
   const [darkMode, setDarkMode] = useState(true);
   const theme = THEMES[darkMode ? "dark" : "light"];
+  const { isMobile, isTablet } = useViewport();
   const [activeTab, setActiveTab] = useState("Dashboard");
   const { clusterFilter, setClusterFilter, typeFilter, setTypeFilter, searchQuery, setSearchQuery, filteredCases } = useCaseFilters();
   const [damagesView, setDamagesView] = useState("moderate");
@@ -38,21 +40,29 @@ export default function LitigationPortfolio() {
 
       {/* Header */}
       <div style={{ background: theme.headerBg, borderBottom: `2px solid ${GOLD}` }}>
-        <div style={{ maxWidth: 1200, margin: "0 auto", padding: "28px 24px 20px", display: "flex", alignItems: "flex-end", justifyContent: "space-between", flexWrap: "wrap", gap: 16 }}>
+        <div style={{
+          maxWidth: 1200, margin: "0 auto",
+          padding: isMobile ? "18px 16px 14px" : "28px 24px 20px",
+          display: "flex",
+          flexDirection: isMobile ? "column" : "row",
+          alignItems: isMobile ? "flex-start" : "flex-end",
+          justifyContent: "space-between",
+          gap: isMobile ? 14 : 16,
+        }}>
           <div>
             <div style={{ color: GOLD, fontSize: 11, fontFamily: "'DM Sans', sans-serif", fontWeight: 700, letterSpacing: 4, textTransform: "uppercase", marginBottom: 6 }}>Litigation Portfolio</div>
-            <h1 style={{ fontSize: 32, fontWeight: 700, color: theme.headerText, margin: 0, lineHeight: 1.1 }}>Brendan Ngehsi Newanforbi</h1>
+            <h1 style={{ fontSize: isMobile ? 22 : 32, fontWeight: 700, color: theme.headerText, margin: 0, lineHeight: 1.1 }}>Brendan Ngehsi Newanforbi</h1>
             <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: BODY_GRAY, marginTop: 6 }}>Pro Se / In Propria Persona · Prepared {PORTFOLIO.prepared_date}</div>
           </div>
-          <div style={{ display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap" }}>
-            <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap", width: isMobile ? "100%" : "auto" }}>
+            <div style={{ display: "flex", gap: isMobile ? 4 : 6, flexWrap: "wrap", flex: 1 }}>
               {tabs.map(t => (
                 <button key={t} onClick={() => setActiveTab(t)} aria-current={activeTab === t ? "page" : undefined} style={{
-                  padding: "8px 18px", borderRadius: 6,
+                  padding: isMobile ? "6px 10px" : "8px 18px", borderRadius: 6,
                   border: activeTab === t ? theme.tabActive.border : theme.tabInactive.border,
                   background: activeTab === t ? theme.tabActive.bg : theme.tabInactive.bg,
                   color: activeTab === t ? theme.tabActive.color : theme.tabInactive.color,
-                  fontFamily: "'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, cursor: "pointer", transition: "all 0.2s",
+                  fontFamily: "'DM Sans', sans-serif", fontSize: isMobile ? 11 : 13, fontWeight: 600, cursor: "pointer", transition: "all 0.2s",
                   letterSpacing: 0.5
                 }}>{t}</button>
               ))}
@@ -121,7 +131,7 @@ export default function LitigationPortfolio() {
       </div>
 
       {/* Tab content */}
-      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "24px 24px 60px" }}>
+      <div style={{ maxWidth: 1200, margin: "0 auto", padding: isMobile ? "16px 14px 48px" : isTablet ? "20px 20px 52px" : "24px 24px 60px" }}>
         {activeTab === "Dashboard" && <DashboardTab upcomingEvents={upcomingEvents} setClusterFilter={setClusterFilter} setActiveTab={setActiveTab} />}
         {activeTab === "Matters"   && <MattersTab filteredCases={filteredCases} clusterFilter={clusterFilter} setClusterFilter={setClusterFilter} typeFilter={typeFilter} setTypeFilter={setTypeFilter} searchQuery={searchQuery} setSearchQuery={setSearchQuery} />}
         {activeTab === "Timeline"  && <TimelineTab showPastEvents={showPastEvents} setShowPastEvents={setShowPastEvents} />}

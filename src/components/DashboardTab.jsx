@@ -1,6 +1,7 @@
 import { PORTFOLIO } from "../data";
 import { GOLD, BORDER_BLUE } from "../constants";
 import { useTheme } from "../ThemeContext";
+import { useViewport } from "../hooks/useViewport";
 
 const formatCurrency = (n) => "$" + n.toLocaleString();
 
@@ -63,6 +64,7 @@ const PERTINENT_FILINGS = [
 
 export const DashboardTab = ({ upcomingEvents, setClusterFilter, setActiveTab }) => {
   const theme = useTheme();
+  const { isMobile } = useViewport();
   return (
     <div>
       {/* Stats Row */}
@@ -83,7 +85,7 @@ export const DashboardTab = ({ upcomingEvents, setClusterFilter, setActiveTab })
       </div>
 
       {/* Two-column: Upcoming + Clusters */}
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20, marginBottom: 28 }}>
+      <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: 20, marginBottom: 28 }}>
         {/* Upcoming */}
         <div style={{ background: theme.cardBg, borderRadius: 10, padding: 24, border: `1px solid ${theme.cardBorder}` }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, color: GOLD, margin: "0 0 16px", fontFamily: "'DM Sans', sans-serif", letterSpacing: 0.5 }}>Upcoming Deadlines</h3>
