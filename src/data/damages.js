@@ -11,7 +11,8 @@ export const damages_table = [
     { category: "PC §290.46(j) Failure to Hire — FedEx / UPS (Matters 25, 26)", matters: "25, 26", conservative: 75000, moderate: 180000, aggressive: 420000 },
     { category: "PC §290.46(j) — Wrongful Termination / Failure to Employ — Randstad / RK Logistics (Matter 27)", matters: "27", conservative: 180000, moderate: 437000, aggressive: 835000 },
     { category: "§1983 Monell / Individual + Bane Act + RICO — Shannon Smith / HOPE (Matter 28)", matters: "28", conservative: 249000, moderate: 666000, aggressive: 1510000 },
-    { category: "PC §290.46(j) Failure to Hire — Amazon (Matter 29)", matters: "29", conservative: 30000, moderate: 75000, aggressive: 180000 }
+    { category: "PC §290.46(j) Failure to Hire — Amazon (Matter 29)", matters: "29", conservative: 30000, moderate: 75000, aggressive: 180000 },
+    { category: "§1983 Retaliation + Due Process + Bane Act + IIED — Moua / CDCR (Matter 30)", matters: "30", conservative: 90000, moderate: 225000, aggressive: 525000 }
 ];
 
 // Per-matter bottoms-up breakdown — individual case ceilings before deduplication
@@ -255,6 +256,25 @@ export const matter_damages = [
             { label: "ICRAA Statutory (Accurate Background as reporting agency; failure to follow proper notice/disclosure procedures; Accurate Background named defendant in Lerma — post-settlement repeat violation supports willful noncompliance finding)", conservative: 1000, moderate: 5000, aggressive: 10000 },
             { label: "Punitive Damages (Civ. Code §3294 — post-Lerma willfulness: Amazon and Accurate Background settled identical §290.46(j) claim Sept. 2023 and continued the same BGC practice; three-year post-settlement repetition is strongest possible willfulness predicate; Amazon's market capitalization supports meaningful punitive multiplier)", conservative: 0, moderate: 15000, aggressive: 60000 },
             { label: "Attorney Fees — PC §290.46(j)(4)(A) mandatory fee-shifting; FCRA; ICRAA", conservative: 1000, moderate: 5000, aggressive: 10000 }
+        ]
+    },
+    {
+        number: 30,
+        caption: "Newanforbi v. Moua, et al.",
+        court: "USDC N.D. Cal.",
+        claims: "42 U.S.C. §1983 First Amendment Retaliation, §1983 Due Process, Bane Act Cal. Civ. Code §52.1, IIED",
+        status: "Pre-complaint — Gary Noguchi served Jul. 7, 2026; Joseelyn Rojo served Jul. 14, 2026; Moua service pending",
+        risk: "Very strong on liability — three independent retaliation vectors each independently actionable; fabricated telehealth violation contradicted by contemporaneous text records; 18-day interval between CDCR lawsuit service and retaliatory transfer is direct evidence of retaliatory motive; punitive damages strongly supported against Moua personally for fabricated parole violation",
+        settlement_note: "Primary settlement drivers: (1) fabricated parole violation documented in real-time text evidence (Moua never sent access code; BNN asked twice; violation submitted anyway); (2) 18-day temporal proximity between CDCR lawsuit service and retaliatory transfer is nearly impossible to explain as coincidental; (3) Bane Act §52.1 exposes individual defendants to statutory penalties plus 3× compensatory; (4) punitive exposure against Moua personally for knowing fabrication of violation; (5) Macy's employment destruction directly traceable to transfer with no legitimate administrative basis.",
+        conservative: 90000, moderate: 225000, aggressive: 525000,
+        components: [
+            { label: "§1983 Compensatory — First Amendment Retaliation (two-step documented retaliation: Derrick suit → file transfer; CDCR suit service → retaliatory transfer within 18 days; emotional distress from unconstitutional parole supervision)", conservative: 25000, moderate: 75000, aggressive: 175000 },
+            { label: "§1983 Compensatory — Fourteenth Amendment Due Process (fabricated 'failure to attend treatment' violation based on access code Moua never provided; administrative record harm; ongoing parole conditions impacted by manufactured pretext)", conservative: 15000, moderate: 40000, aggressive: 100000 },
+            { label: "Lost Wages — Macy's Captain Selling & Support ($21.50/hr × ~30 hrs/wk; last shift Jul. 2, 2026; LOA through Aug. 12 preferred return; lost employment opportunity attributable entirely to retaliatory transfer from Stockton to Santa Clara GPS Unit)", conservative: 5000, moderate: 20000, aggressive: 50000 },
+            { label: "Bane Act Cal. Civ. Code §52.1(b) — minimum $4,000 statutory civil penalty per violation plus up to 3× actual damages plus mandatory attorney fees; coercive use of fabricated violation and retaliatory transfer to suppress First Amendment petition activity", conservative: 12000, moderate: 35000, aggressive: 75000 },
+            { label: "IIED — fabricated parole violation; forced housing/employment displacement from Stockton to Santa Clara GPS jurisdiction; employment destruction; sex offender registration completed under duress of third-strike automatic life sentence (Pen. Code §667(e)(2)(A)) during active housing displacement", conservative: 15000, moderate: 30000, aggressive: 75000 },
+            { label: "Punitive Damages — Moua personally (knowing fabrication of parole violation by withholding access code then submitting non-attendance as willful non-compliance; retaliatory transfer executed within 18 days of lawsuit service)", conservative: 0, moderate: 15000, aggressive: 25000 },
+            { label: "Attorney Fees — 42 U.S.C. §1988 (§1983 fee-shifting); Bane Act mandatory fee award", conservative: 18000, moderate: 10000, aggressive: 25000 }
         ]
     }
 ];
