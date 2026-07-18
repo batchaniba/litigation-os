@@ -266,23 +266,33 @@ export const lawyer_fees = [
     cost: { low: 5600, high: 10640, mid: 8120 },
     notes: "Pre-filing stage. Eleven documents: 5 PDFs (13 pages) — Amazon Simple Hire Checklists (2), Amazon Jobs BGC-status emails (2), and Equifax onboarding reminder — and 6 screenshots (6 pages) documenting the application, pre-hire appointment, Amazon/Accurate Background SMS chain, and pending BGC status. No complaint drafted yet; hours reflect case assessment and theory development from the established §290.46(j) portfolio template. Fee-shifting under PC §290.46(j)(4)(A), FCRA, and ICRAA applies upon prevailing."
   },
+  {
+    number: 30, caption: "Newanforbi v. Moua, et al.", caseNumber: "TBD",
+    court: "USDC N.D. Cal.",
+    type: "Federal — 42 U.S.C. §1983 (First Amendment Retaliation + Due Process); Bane Act Cal. Civ. Code §52.1; IIED",
+    status: "Pre-complaint — Gary Noguchi served Jul. 7, 2026; Joseelyn Rojo served Jul. 14, 2026; complaint being drafted",
+    documentsCount: 11, totalPagesReal: 38,
+    hours: { low: 55, high: 130, mid: 85 },
+    cost: { low: 15400, high: 36400, mid: 23800 },
+    notes: "Pre-filing stage. Eleven documents totaling approximately 38 real pages: 25-page Derrick FAC (Case 2:26-cv-00004-DJC-JDP, E.D. Cal. — scanned PDF, confirms triggering protected activity); 3 CASOMB submission PDFs (~5 pages — Dr. Kirsten Mason inquiry, BNN responses, telehealth accommodation request); 4 screenshots (4 pages — Agent Moua contact card, Agent Brown text exchanges, CountySuite service records); Macy's job offer (~2 pages); Macy's work schedule (~2 pages). Hours are substantially elevated versus other pre-filing matters because: (1) the complaint requires three independent §1983 retaliation theories each with distinct factual predicates; (2) Bane Act §52.1 adds a state-law coercion theory with heightened pleading requirements; (3) multiple defendants with different capacities (Moua as primary actor, Noguchi/Rojo as supervisors); (4) the retaliatory file-transfer-to-Moua theory requires careful pleading of causation in a two-step chain. Federal complaint drafting is the primary cost driver; fee-shifting under 42 U.S.C. §1988 and Bane Act makes attorney fee recovery highly probable on prevailing."
+  },
 ];
 
 export const lawyer_fees_summary = {
   analysisDate: "2026-07-17",
-  totalMatters: 29,
-  totalDocumentsAnalyzed: 245,
-  totalPagesReal: 3249,
+  totalMatters: 30,
+  totalDocumentsAnalyzed: 256,
+  totalPagesReal: 3287,
   methodology: {
     blendedHourlyRate: 280,
     rateRange: { seniorPartner: [350, 450], midAssociate: [250, 350], paralegal: [150, 200] },
     note: "Every PDF in public/documents/matter-XX/ was measured with pdfinfo for real page counts (poppler-utils), then classified by document type (complaint, motion/opposition/reply, discovery, writ/habeas, declaration, administrative, evidence) and priced using the hours-per-page/per-document conversions in docs/LAWYER_FEES_CALCULATOR.md. Opposing counsel's filings are billed only at a light review rate, never at drafting rate. Matters with no uploaded PDFs are estimated conservatively from matters.js status text.",
   },
-  totalEstimatedHours: { low: 2533.6, high: 4126.0, mid: 3328.8 },
-  totalEstimatedCost: { low: 709408, high: 1155280, mid: 932064 },
+  totalEstimatedHours: { low: 2588.6, high: 4256.0, mid: 3413.8 },
+  totalEstimatedCost: { low: 724808, high: 1191680, mid: 955864 },
   byCluster: {
     cluster1: { label: "CHP / DUI / DMV", matters: [1, 2, 7, 8, 20, 24], costLow: 134176, costMid: 176372, costHigh: 218568 },
-    cluster2: { label: "Parole Retaliation / HOPE", matters: [3, 4, 5, 6, 11, 13, 14, 15, 16, 17, 18, 21, 28], costLow: 439432, costMid: 572012, costHigh: 704592 },
+    cluster2: { label: "Parole Retaliation / HOPE", matters: [3, 4, 5, 6, 11, 13, 14, 15, 16, 17, 18, 21, 28, 30], costLow: 454832, costMid: 595812, costHigh: 740992 },
     cluster3: { label: "Consumer Fraud / Employment", matters: [12, 22, 23, 25, 26, 27, 29], costLow: 94920, costMid: 126840, costHigh: 159320 },
     cluster4: { label: "Administrative Writs & Habeas", matters: [9, 10, 19], costLow: 40880, costMid: 56840, costHigh: 72800 },
   },
