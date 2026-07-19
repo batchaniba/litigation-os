@@ -56,11 +56,11 @@ const CLUSTERS = [
 ];
 
 const PERTINENT_FILINGS = [
-  { title: "Newanforbi v. Dodd, et al.", matter: 15 },
-  { title: "Newanforbi v. Candelaria, et al", matter: 7 },
-  { title: "Newanforbi v. Rojo (State)", matter: 16 },
-  { title: "Newanforbi v. Urrea et al. (State)", matter: 14 },
+  { title: "Newanforbi v. CDCR, et al.", matter: 15 },
+  { title: "Newanforbi v. Candelaria, et al.", matter: 7 },
   { title: "Newanforbi v. Serrato et al.", matter: 24 },
+  { title: "Newanforbi v. Shannon Smith, LCSW, et al.", matter: 28 },
+  { title: "Newanforbi v. Moua, et al.", matter: 30 },
 ];
 
 export const DashboardTab = ({ upcomingEvents, setClusterFilter, setActiveTab }) => {
