@@ -15,7 +15,7 @@ import { JudicialOpinionsTab } from "./components/JudicialOpinionsTab";
 import { NotableQuotesTab } from "./components/NotableQuotesTab";
 import { ThemeContext, THEMES } from "./ThemeContext";
 
-const tabs = ["Dashboard", "Matters", "Timeline", "Damages", "Theories", "Cost of Counsel", "Outcomes", "Judicial Opinions", "Notable Quotes"];
+const tabs = ["Dashboard", "Matters", "Timeline", "Damages", "Theories", "Cost of Counsel", "Profit", "Judicial Opinions", "Notable Quotes"];
 
 export default function LitigationPortfolio() {
   const [darkMode, setDarkMode] = useState(true);
@@ -151,7 +151,7 @@ export default function LitigationPortfolio() {
         {activeTab === "Damages"   && <DamagesTab damagesView={damagesView} setDamagesView={setDamagesView} />}
         {activeTab === "Theories"  && <TheoriesTab />}
         {activeTab === "Cost of Counsel" && <CostOfCounselTab />}
-        {activeTab === "Outcomes" && <OutcomesTab />}
+        {activeTab === "Profit" && <OutcomesTab />}
         {activeTab === "Judicial Opinions" && <JudicialOpinionsTab />}
         {activeTab === "Notable Quotes" && <NotableQuotesTab />}
       </div>
