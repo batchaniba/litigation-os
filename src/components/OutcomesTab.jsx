@@ -446,7 +446,7 @@ function OpinionCard({ item, theme }) {
                 borderRadius: 6, padding: "6px 14px",
               }}
             >
-              <span style={{ fontSize: 14 }}>📄</span> View Minute Order
+              <span style={{ fontSize: 14 }}>📄</span> View {item.type === "merits" ? "Opinion" : "Minute Order"}
             </a>
           )}
         </div>
