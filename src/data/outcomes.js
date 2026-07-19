@@ -198,6 +198,17 @@ export const outcomes = {
       note: "Adopted wholesale from an unrelated 2003 E.D. Va. decision to characterize the federal filing as a pretextual end-run around state administrative remedies.",
     },
     {
+      quote: "Plaintiff then made the 'strategic decision' to intentionally ignore half of Defendants' motion. Plaintiff regrets this decision, but the Court's local rules do not allow a non-moving party to bifurcate a moving party's motion, respond to the portion it prefers, and then request a second round of briefing on the remainder under the guise that it conserves judicial resources.",
+      speaker: "Erick J. Rhoan, Deputy Attorney General",
+      role: "California Attorney General's Office — counsel for Defendants Derrick & Noguchi",
+      source: "Opposition to Plaintiff's Motion for Leave to File Supplemental Opposition, p.4",
+      case_no: "2:26-cv-00004-DJC-JDP",
+      date: "February 26, 2026",
+      matter: 3,
+      category: "dismissive",
+      note: "Accuses Plaintiff of manipulating the briefing schedule under a false pretext, after Defendants' own reply first raised the waiver argument that Plaintiff's supplemental opposition sought to address.",
+    },
+    {
       quote: "You have already been released from prison . . . it doesn't matter anyways.",
       speaker: "Defendant John Doe",
       role: "CDCR Unit Supervisor/Sergeant, quoted in grievance denial",
