@@ -97,23 +97,59 @@ function OpinionCard({ item, theme }) {
             <Label>Portfolio Significance</Label>
             <p style={{ ...bodyText(theme), lineHeight: 1.7 }}>{item.significance}</p>
           </div>
-          {item.document_path && (
-            <a
-              href={item.document_path}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={e => e.stopPropagation()}
-              style={{
-                display: "inline-flex", alignItems: "center", gap: 8,
-                fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 600,
-                color, textDecoration: "none",
-                background: color + "12", border: `1px solid ${color}44`,
-                borderRadius: 6, padding: "6px 14px",
-              }}
-            >
-              <span style={{ fontSize: 14 }}>📄</span> View {item.type === "merits" ? "Opinion" : "Minute Order"}
-            </a>
-          )}
+          <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
+            {item.document_path && (
+              <a
+                href={item.document_path}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={e => e.stopPropagation()}
+                style={{
+                  display: "inline-flex", alignItems: "center", gap: 8,
+                  fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 600,
+                  color, textDecoration: "none",
+                  background: color + "12", border: `1px solid ${color}44`,
+                  borderRadius: 6, padding: "6px 14px",
+                }}
+              >
+                <span style={{ fontSize: 14 }}>📄</span> View {item.type === "merits" ? "Opinion / F&R" : "Minute Order"}
+              </a>
+            )}
+            {item.objections_path && (
+              <a
+                href={item.objections_path}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={e => e.stopPropagation()}
+                style={{
+                  display: "inline-flex", alignItems: "center", gap: 8,
+                  fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 600,
+                  color: AMBER, textDecoration: "none",
+                  background: AMBER + "12", border: `1px solid ${AMBER}44`,
+                  borderRadius: 6, padding: "6px 14px",
+                }}
+              >
+                <span style={{ fontSize: 14 }}>✍️</span> Objections to F&R
+              </a>
+            )}
+            {item.nsa_path && (
+              <a
+                href={item.nsa_path}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={e => e.stopPropagation()}
+                style={{
+                  display: "inline-flex", alignItems: "center", gap: 8,
+                  fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 600,
+                  color: GREEN, textDecoration: "none",
+                  background: GREEN + "12", border: `1px solid ${GREEN}44`,
+                  borderRadius: 6, padding: "6px 14px",
+                }}
+              >
+                <span style={{ fontSize: 14 }}>📌</span> Notice of Supp. Authority
+              </a>
+            )}
+          </div>
         </div>
       )}
     </div>
@@ -222,17 +258,30 @@ export function JudicialOpinionsTab() {
           Magistrate Judge Chi Soo Kim has been assigned to three separate E.D. Cal. matters —
           Matter 1 (2:25-cv-01460-DC-CSK), Matter 21 (2:26-cv-00191-DJC-CSK), and Matter 7
           (2:26-cv-00983-DC-CSK) — and has ruled adversely in all three, in that order.
+          Matters 1 and 7 are assigned to District Judge Dena Coggins for de novo review;
+          Matter 21 is assigned to District Judge Daniel J. Calabretta.
+        </p>
+        <p style={{
+          fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: theme.secondaryText,
+          lineHeight: 1.8, margin: "0 0 12px",
+        }}>
+          The pattern is compounding: the Matter 7 F&R (June 15, 2026) explicitly cross-referenced
+          the Matter 1 F&R (April 20, 2026), citing it as evidence that plaintiff's complaints are
+          "pending dismissal for failure to state a claim" — a feedback loop in which each adverse
+          ruling by the same judicial officer is recycled as ammunition in the next matter before
+          any merits hearing.
         </p>
         <p style={{
           fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: theme.secondaryText,
           lineHeight: 1.8, margin: 0,
         }}>
-          The pattern is compounding: the Matter 7 F&R (June 15, 2026) explicitly cross-referenced
-          the Matter 1 F&R (April 20, 2026), citing it as evidence that plaintiff's complaints are
-          "pending dismissal for failure to state a claim." Each adverse ruling by the same judicial
-          officer is being recycled as ammunition in the next matter — a feedback loop in which the
-          outcome of one case prejudices the next before any merits hearing. This pattern warrants
-          monitoring for recusal grounds under 28 U.S.C. § 455 on future E.D. Cal. filings.
+          <strong style={{ color: theme.heading }}>Counter-move filed July 7, 2026:</strong> Notices
+          of Supplemental Authority submitted in both Matter 1 and Matter 7, citing{" "}
+          <em>Newanforbi v. Serrato</em> (N.D. Cal. June 29, 2026), in which Magistrate Judge Ajay
+          Krishnan found the same November 2024 CHP incident allegations sufficient under § 1915 —
+          directly attacking the cross-reference and the frivolousness characterization. Both notices
+          are now before District Judge Dena Coggins on de novo review. The pattern warrants
+          continued monitoring for recusal grounds under 28 U.S.C. § 455 on future E.D. Cal. filings.
         </p>
       </div>
     </div>
