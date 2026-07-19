@@ -61,7 +61,7 @@ const PERTINENT_FILINGS = [
   { title: "Newanforbi v. Federal Express Corporation", matter: 25 },
   { title: "Newanforbi v. United Parcel Service, Inc.", matter: 26 },
   { title: "Newanforbi v. Randstad, et al.", matter: 27 },
-  { title: "Newanforbi v. Shannon Smith, LCSW, et al.", matter: 28 },
+  { title: "Newanforbi v. Shannon Smith, LCSW, et al.", matter: 28, note: "Matter 5 Successor — HOPE / Palacios" },
   { title: "Newanforbi v. Amazon.com Services, LLC", matter: 29 },
   { title: "Newanforbi v. Moua, et al.", matter: 30 },
 ];
@@ -136,7 +136,12 @@ export const DashboardTab = ({ upcomingEvents, setClusterFilter, setActiveTab })
             <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
               {PERTINENT_FILINGS.map((f, i) => (
                 <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "8px 12px", background: theme.deepBg, borderRadius: 6, border: `1px solid ${BORDER_BLUE}25` }}>
-                  <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 600, color: theme.secondaryText }}>{f.title}</span>
+                  <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 600, color: theme.secondaryText }}>
+                    {f.title}
+                    {f.note && (
+                      <span style={{ display: "block", fontSize: 10, fontWeight: 500, color: theme.subtleText, marginTop: 1 }}>{f.note}</span>
+                    )}
+                  </span>
                   <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: theme.badgeNumColor, background: theme.badgeNumBg, borderRadius: 4, padding: "2px 8px" }}>Matter {f.matter}</span>
                 </div>
               ))}
