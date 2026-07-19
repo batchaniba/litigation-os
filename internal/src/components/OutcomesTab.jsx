@@ -2,6 +2,7 @@ import { useState } from "react";
 import { GOLD } from "../constants";
 import { useTheme } from "../ThemeContext";
 import { outcomes } from "../data/outcomes";
+import { PORTFOLIO } from "../data";
 
 const fmt = (n) => "$" + n.toLocaleString();
 
@@ -14,6 +15,21 @@ const anticipated = outcomes.anticipated.reduce((s, r) => s + r.amount, 0);
 const combined   = realized + anticipated;
 const moderate   = outcomes.portfolio_exposure.moderate;
 const demandTotal = outcomes.active_demands.reduce((s, d) => s + d.demand_amount, 0);
+const demandSentDates = outcomes.active_demands.map(d => new Date(d.sent_date));
+const demandDeadlines = outcomes.active_demands.map(d => new Date(d.deadline));
+const earliestSent = new Date(Math.min(...demandSentDates));
+const latestSent = new Date(Math.max(...demandSentDates));
+const earliestDeadline = new Date(Math.min(...demandDeadlines));
+const latestDeadline = new Date(Math.max(...demandDeadlines));
+const fmtDate = (d) => d.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
+const demandSentRange = earliestSent.getTime() === latestSent.getTime()
+  ? fmtDate(earliestSent)
+  : `${fmtDate(earliestSent)} – ${fmtDate(latestSent)}`;
+const demandDeadlineRange = earliestDeadline.getTime() === latestDeadline.getTime()
+  ? fmtDate(earliestDeadline)
+  : `${fmtDate(earliestDeadline)} – ${fmtDate(latestDeadline)}`;
+const totalMatterCount = PORTFOLIO.cases.length;
+const activeMatterCount = PORTFOLIO.cases.filter(c => !c.archived).length;
 
 function StatTile({ label, amount, prefix = "", color, sub, confidential = false, theme }) {
   return (
@@ -196,8 +212,8 @@ export function OutcomesTab() {
           fontFamily: "'DM Sans', sans-serif", fontSize: 13,
           color: theme.mutedText, margin: 0, maxWidth: 620,
         }}>
-          29 matters filed across six jurisdictions. 17 active. The first recoveries are in — one settled,
-          one heading to default judgment. All pro se.
+          {totalMatterCount} matters filed across six jurisdictions. {activeMatterCount} active. The first recoveries are in — one settled,
+          one heading to default judgment, {outcomes.active_demands.length} demands outstanding. All pro se.
         </p>
       </div>
 
@@ -260,7 +276,7 @@ export function OutcomesTab() {
           fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: theme.mutedText,
           marginTop: 8,
         }}>
-          {pct.toFixed(1)}% captured · {fmt(moderate - combined)} remaining at moderate estimate across {17} active matters
+          {pct.toFixed(1)}% captured · {fmt(moderate - combined)} remaining at moderate estimate across {activeMatterCount} active matters
         </div>
       </div>
 
@@ -291,7 +307,7 @@ export function OutcomesTab() {
         <div style={{
           fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: theme.mutedText, lineHeight: 1.6,
         }}>
-          Pre-filing demands transmitted <strong style={{ color: theme.heading }}>July 12, 2026</strong> · Response deadline <strong style={{ color: "#ea580c" }}>July 26, 2026 at 5:00 PM PT</strong>
+          Pre-filing demands transmitted <strong style={{ color: theme.heading }}>{demandSentRange}</strong> · Response deadlines <strong style={{ color: "#ea580c" }}>{demandDeadlineRange}</strong>
         </div>
         <div>
           <div style={{
@@ -325,14 +341,15 @@ export function OutcomesTab() {
           fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: theme.secondaryText,
           lineHeight: 1.8, margin: 0,
         }}>
-          Matter 22 settled in under six weeks, pro se, before a single proof of service was filed —
+          Matter 22 settled in under seven weeks, pro se, before a single proof of service was filed —
           because the defendant's own adverse-action notice named the registry as the only reason for termination.
           There was nothing to litigate. Matter 12 reaches a default posture because both defendants chose not
           to respond. Matters 25 and 26 are already filed and assigned; pre-filing demands of $85,000 each went
-          out three days before the complaints — citing the Pilot settlement as a resolved precedent.
-          These outcomes are not anomalies; they reflect the quality of the underlying record
-          across all 29 matters. The remaining {fmt(moderate - combined)} at moderate estimate represents
-          17 active matters where that same record is still at work.
+          out citing the Pilot settlement as a resolved precedent. Matter 27 followed the same $85,000 pattern
+          against both Randstad and RK Logistics after a termination that came before the FCRA waiting period
+          even ran. These outcomes are not anomalies; they reflect the quality of the underlying record
+          across all {totalMatterCount} matters. The remaining {fmt(moderate - combined)} at moderate estimate represents
+          {activeMatterCount} active matters where that same record is still at work.
         </p>
       </div>
     </div>
