@@ -2,6 +2,9 @@ import { PORTFOLIO } from "../data";
 import { GOLD, BORDER_BLUE } from "../constants";
 import { useTheme } from "../ThemeContext";
 
+const FILED_GREEN = "#34D399";
+const UPCOMING_AMBER = "#FBBF24";
+
 const formatCurrency = (n) => "$" + n.toLocaleString();
 
 const totalMatters = PORTFOLIO.cases.length;
@@ -56,14 +59,14 @@ const CLUSTERS = [
 ];
 
 const PERTINENT_FILINGS = [
-  { title: "Newanforbi v. CDCR, et al.", matter: 15 },
-  { title: "Newanforbi v. Serrato et al.", matter: 24 },
-  { title: "Newanforbi v. Federal Express Corporation", matter: 25 },
-  { title: "Newanforbi v. United Parcel Service, Inc.", matter: 26 },
-  { title: "Newanforbi v. Randstad, et al.", matter: 27 },
-  { title: "Newanforbi v. Shannon Smith, LCSW, et al.", matter: 28, note: "Matter 5 Successor — HOPE / Palacios" },
-  { title: "Newanforbi v. Amazon.com Services, LLC", matter: 29 },
-  { title: "Newanforbi v. Moua, et al.", matter: 30 },
+  { title: "Newanforbi v. CDCR, et al.", matter: 15, date: "Filed May 13, 2026", dateStatus: "filed" },
+  { title: "Newanforbi v. Serrato et al.", matter: 24, date: "Filed Jun 17, 2026", dateStatus: "filed" },
+  { title: "Newanforbi v. Federal Express Corporation", matter: 25, date: "Filed Jul 15, 2026", dateStatus: "filed" },
+  { title: "Newanforbi v. United Parcel Service, Inc.", matter: 26, date: "Filed Jul 15, 2026", dateStatus: "filed" },
+  { title: "Newanforbi v. Randstad, et al.", matter: 27, date: "Anticipated Jul 21, 2026", dateStatus: "upcoming" },
+  { title: "Newanforbi v. Shannon Smith, LCSW, et al.", matter: 28, note: "Matter 5 Successor — HOPE / Palacios", date: "Mailed Jul 16, 2026", dateStatus: "filed" },
+  { title: "Newanforbi v. Amazon.com Services, LLC", matter: 29, date: "Pre-Complaint — BGC Pending", dateStatus: "upcoming" },
+  { title: "Newanforbi v. Moua, et al.", matter: 30, date: "Anticipated Sep 16, 2026", dateStatus: "upcoming" },
 ];
 
 export const DashboardTab = ({ upcomingEvents, setClusterFilter, setActiveTab }) => {
@@ -134,17 +137,25 @@ export const DashboardTab = ({ upcomingEvents, setClusterFilter, setActiveTab })
           <div style={{ marginTop: 24, borderTop: `1px solid ${theme.cardBorder}`, paddingTop: 16 }}>
             <h4 style={{ fontSize: 13, fontWeight: 700, color: GOLD, margin: "0 0 12px", fontFamily: "'DM Sans', sans-serif", letterSpacing: 0.5, textTransform: "uppercase" }}>Pertinent Filings</h4>
             <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-              {PERTINENT_FILINGS.map((f, i) => (
-                <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "8px 12px", background: theme.deepBg, borderRadius: 6, border: `1px solid ${BORDER_BLUE}25` }}>
-                  <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 600, color: theme.secondaryText }}>
-                    {f.title}
-                    {f.note && (
-                      <span style={{ display: "block", fontSize: 10, fontWeight: 500, color: theme.subtleText, marginTop: 1 }}>{f.note}</span>
-                    )}
-                  </span>
-                  <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: theme.badgeNumColor, background: theme.badgeNumBg, borderRadius: 4, padding: "2px 8px" }}>Matter {f.matter}</span>
-                </div>
-              ))}
+              {PERTINENT_FILINGS.map((f, i) => {
+                const dateColor = f.dateStatus === "upcoming" ? UPCOMING_AMBER : FILED_GREEN;
+                return (
+                  <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "8px 12px", background: theme.deepBg, borderRadius: 6, border: `1px solid ${BORDER_BLUE}25`, gap: 12 }}>
+                    <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 600, color: theme.secondaryText }}>
+                      {f.title}
+                      {f.note && (
+                        <span style={{ display: "block", fontSize: 10, fontWeight: 500, color: theme.subtleText, marginTop: 1 }}>{f.note}</span>
+                      )}
+                    </span>
+                    <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 3, flexShrink: 0 }}>
+                      <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: theme.badgeNumColor, background: theme.badgeNumBg, borderRadius: 4, padding: "2px 8px" }}>Matter {f.matter}</span>
+                      {f.date && (
+                        <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9.5, fontWeight: 600, color: dateColor, whiteSpace: "nowrap" }}>{f.date}</span>
+                      )}
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
