@@ -81,7 +81,7 @@ A comprehensive guide for building single-page data-heavy dashboards using the S
 All data lives in `/src/data/` as ESM modules imported into a central `index.js`:
 
 ```
-src/data/
+internal/src/data/
 ├── index.js          (consolidates all imports into PORTFOLIO object)
 ├── matters.js        (case metadata: case numbers, captions, status)
 ├── timeline.js       (chronological events, deadlines, court orders)
@@ -324,15 +324,15 @@ npm run dev
 
 # 2. Open http://localhost:5173/interactive-litigation-portfolio/
 
-# 3. Make changes to src/ files
-#    - Edit data: src/data/matters.js, src/data/timeline.js, etc.
-#    - Edit components: src/components/*.jsx
-#    - Update utils: src/utils/*.js
+# 3. Make changes to internal/src/ files
+#    - Edit data: internal/src/data/matters.js, internal/src/data/timeline.js, etc.
+#    - Edit components: internal/src/components/*.jsx
+#    - Update utils: internal/src/utils/*.js
 
 # 4. Watch browser for live updates (Vite HMR)
 
 # 5. When satisfied:
-git add src/
+git add internal/src/
 git commit -m "Update: [what changed]"
 git push -u origin [branch-name]
 ```
@@ -340,26 +340,26 @@ git push -u origin [branch-name]
 ### Updating Case Data
 
 **Adding a new case:**
-1. Add entry to `src/data/matters.js`
+1. Add entry to `internal/src/data/matters.js`
 2. Assign numeric `id` (next available)
 3. Assign to a `cluster` (e.g., "Cluster 1")
 4. Verify `court` matches one in `PORTFOLIO.jurisdictions`
 5. Browser updates instantly via HMR
 
 **Adding a timeline event:**
-1. Add entry to `src/data/timeline.js`
+1. Add entry to `internal/src/data/timeline.js`
 2. Use `date: "MMM. DD, YYYY"` format (e.g., "May 29, 2026")
 3. Set `matter` to numeric case ID
 4. Set `upcoming: true` if future; `false` if past
 5. Deadline clock auto-updates on next event
 
 **Updating damages:**
-1. Edit `src/data/damages.js`
+1. Edit `internal/src/data/damages.js`
 2. Modify conservative/moderate/aggressive values
 3. Component auto-recalculates totals on selection change
 
 **Adding a legal theory:**
-1. Add entry to `src/data/theories.js`
+1. Add entry to `internal/src/data/theories.js`
 2. Include array of `cases` (numeric IDs) that support theory
 3. Reference will appear in TheoriesTab and linked to matters
 
@@ -433,7 +433,7 @@ export default defineConfig({
 ### 1. Data-Driven UI
 
 All component content derives from `PORTFOLIO` object. To update the dashboard:
-- **Do:** Edit files in `src/data/`
+- **Do:** Edit files in `internal/src/data/`
 - **Don't:** Hardcode text in components
 
 ```javascript
@@ -463,7 +463,7 @@ const relatedCase = PORTFOLIO.cases.find(c => c.id === event.matter);
 All dates stored as strings ("May 15, 2026"); parsed to UTC using PDT offset:
 
 ```javascript
-// src/utils/dateUtils.js
+// internal/src/utils/dateUtils.js
 export const parseEventDatePDT = (dateStr) => {
   // Parses as midnight PDT (UTC-7 in summer)
   const temp = new Date(dateStr.replace(/^~/, "").replace(/\./g, ""));
@@ -543,7 +543,7 @@ useEffect(() => {
 
 #### 1. Add a New Matter
 
-**File:** `src/data/matters.js`
+**File:** `internal/src/data/matters.js`
 
 ```javascript
 export const cases = [
@@ -565,7 +565,7 @@ export const cases = [
 
 #### 2. Add a Timeline Event
 
-**File:** `src/data/timeline.js`
+**File:** `internal/src/data/timeline.js`
 
 ```javascript
 {
@@ -581,14 +581,14 @@ export const cases = [
 
 #### 3. Change Theme Colors
 
-**File:** `src/constants.js`
+**File:** `internal/src/constants.js`
 
 ```javascript
 // Edit these:
 export const GOLD = "#D4AF37";           // accent color
 export const BODY_GRAY = "#94A3B8";      // secondary text
 
-// And in src/ThemeContext.jsx:
+// And in internal/src/ThemeContext.jsx:
 export const THEMES = {
   dark: {
     bg: "#0F172A",           // background
@@ -620,14 +620,14 @@ Then update references in components:
 
 #### 5. Add a New Tab
 
-1. **Create component:** `src/components/NewTab.jsx`
+1. **Create component:** `internal/src/components/NewTab.jsx`
    ```javascript
    export function NewTabComponent() {
      return <div>{/* content */}</div>;
    }
    ```
 
-2. **Add to tab list:** `src/App.jsx`
+2. **Add to tab list:** `internal/src/App.jsx`
    ```javascript
    const tabs = ["Dashboard", "Matters", "Timeline", "Damages", "Theories", "NewTab"];
    ```
@@ -639,7 +639,7 @@ Then update references in components:
 
 #### 6. Rename the Plaintiff
 
-**File:** `src/data/index.js`
+**File:** `internal/src/data/index.js`
 
 ```javascript
 export const PORTFOLIO = {
@@ -650,7 +650,7 @@ export const PORTFOLIO = {
 
 #### 7. Update Prepared Date
 
-**File:** `src/data/index.js`
+**File:** `internal/src/data/index.js`
 
 ```javascript
 prepared_date: "Jun. 30, 2026",
@@ -727,16 +727,16 @@ Read code → Find module → Edit → Test → Commit → Push → Repeat
 
 | Path | Purpose | Edit Frequency |
 |------|---------|---|
-| `src/App.jsx` | Root component, layout, state | Low (architecture is stable) |
-| `src/data/matters.js` | Case metadata | High (new cases, status updates) |
-| `src/data/timeline.js` | Events and deadlines | High (ongoing court activity) |
-| `src/data/damages.js` | Damages table | Medium (scenario adjustments) |
-| `src/data/theories.js` | Legal arguments | Medium (new theories, refinements) |
-| `src/components/*.jsx` | UI components | Low (typically stable) |
-| `src/constants.js` | Colors, config | Low |
-| `src/ThemeContext.jsx` | Dark/light mode | Low |
-| `src/utils/dateUtils.js` | Date parsing | Very low |
-| `src/hooks/*.js` | Custom React hooks | Low |
+| `internal/src/App.jsx` | Root component, layout, state | Low (architecture is stable) |
+| `internal/src/data/matters.js` | Case metadata | High (new cases, status updates) |
+| `internal/src/data/timeline.js` | Events and deadlines | High (ongoing court activity) |
+| `internal/src/data/damages.js` | Damages table | Medium (scenario adjustments) |
+| `internal/src/data/theories.js` | Legal arguments | Medium (new theories, refinements) |
+| `internal/src/components/*.jsx` | UI components | Low (typically stable) |
+| `internal/src/constants.js` | Colors, config | Low |
+| `internal/src/ThemeContext.jsx` | Dark/light mode | Low |
+| `internal/src/utils/dateUtils.js` | Date parsing | Very low |
+| `internal/src/hooks/*.js` | Custom React hooks | Low |
 | `vite.config.js` | Build configuration | Very low |
 | `package.json` | Dependencies | Low (monitor for updates) |
 | `index.html` | HTML entry point, fonts | Low |
