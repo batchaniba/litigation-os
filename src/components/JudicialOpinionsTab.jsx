@@ -97,23 +97,59 @@ function OpinionCard({ item, theme }) {
             <Label>Portfolio Significance</Label>
             <p style={{ ...bodyText(theme), lineHeight: 1.7 }}>{item.significance}</p>
           </div>
-          {item.document_path && (
-            <a
-              href={item.document_path}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={e => e.stopPropagation()}
-              style={{
-                display: "inline-flex", alignItems: "center", gap: 8,
-                fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 600,
-                color, textDecoration: "none",
-                background: color + "12", border: `1px solid ${color}44`,
-                borderRadius: 6, padding: "6px 14px",
-              }}
-            >
-              <span style={{ fontSize: 14 }}>📄</span> View {item.type === "merits" ? "Opinion" : "Minute Order"}
-            </a>
-          )}
+          <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
+            {item.document_path && (
+              <a
+                href={item.document_path}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={e => e.stopPropagation()}
+                style={{
+                  display: "inline-flex", alignItems: "center", gap: 8,
+                  fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 600,
+                  color, textDecoration: "none",
+                  background: color + "12", border: `1px solid ${color}44`,
+                  borderRadius: 6, padding: "6px 14px",
+                }}
+              >
+                <span style={{ fontSize: 14 }}>📄</span> View {item.type === "merits" ? "Opinion / F&R" : "Minute Order"}
+              </a>
+            )}
+            {item.objections_path && (
+              <a
+                href={item.objections_path}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={e => e.stopPropagation()}
+                style={{
+                  display: "inline-flex", alignItems: "center", gap: 8,
+                  fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 600,
+                  color: AMBER, textDecoration: "none",
+                  background: AMBER + "12", border: `1px solid ${AMBER}44`,
+                  borderRadius: 6, padding: "6px 14px",
+                }}
+              >
+                <span style={{ fontSize: 14 }}>✍️</span> Objections to F&R
+              </a>
+            )}
+            {item.nsa_path && (
+              <a
+                href={item.nsa_path}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={e => e.stopPropagation()}
+                style={{
+                  display: "inline-flex", alignItems: "center", gap: 8,
+                  fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 600,
+                  color: GREEN, textDecoration: "none",
+                  background: GREEN + "12", border: `1px solid ${GREEN}44`,
+                  borderRadius: 6, padding: "6px 14px",
+                }}
+              >
+                <span style={{ fontSize: 14 }}>📌</span> Notice of Supp. Authority
+              </a>
+            )}
+          </div>
         </div>
       )}
     </div>
