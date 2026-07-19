@@ -61,6 +61,20 @@ export const outcomes = {
   ],
   judicial_opinions: [
     {
+      matter: 21,
+      caption: "Newanforbi v. K. Barocio et al.",
+      case_no: "2:26-cv-00191-DJC-CSK",
+      court: "USDC E.D. Cal.",
+      judge: "Magistrate Judge Chi Soo Kim",
+      date: "May 18, 2026",
+      type: "merits",
+      outcome: "adverse",
+      title: "§ 1915A Screening Order: Complaint Dismissed With Leave to Amend",
+      holding: "IFP GRANTED. Complaint DISMISSED with leave to amend within 30 days. (1) First Amendment retaliation — Barocio: animus traced to technology embarrassment during BPH hearing, not to plaintiff's protected grievance activity; insufficient nexus between protected conduct and retaliatory act. Hernandez: no facts showing intentional omission or retaliatory motive. John Doe: denial of a grievance is not an adverse action cognizable under the First Amendment. (2) Equal Protection (class of one): 'refused or failed to apply' the PPC is too vague to allege intentional disparate treatment — no facts demonstrating intentional denial. (3) Procedural Due Process: no standalone due process claim for the prison grievance process itself. Complaint dismissed as too vague and conclusory to satisfy Rule 8(a)(2). Plaintiff not granted leave to add new claims or new defendants.",
+      significance: "Adverse at §1915A screening but curable — dismissed without prejudice with leave to amend. The court identified specific, fixable pleading gaps: the temporal nexus between the grievance filing and Barocio's animus was traceable to the BPH technology incident rather than the grievance itself, and no facts tied Hernandez to Barocio's conduct. The core factual injury — Barocio's refusal to apply the July 9, 2020 One-Time Positive Programming Credit (PPC) caused 84 days of extended custody and an inflated parole end date of December 2, 2030, confirmed by the disparate treatment of plaintiff's cellmate who received the same credit — was not contested and remains the live factual predicate. This is the source of Westlaw citation 2026 WL 1389969.",
+      document_path: "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+    },
+    {
       matter: 9,
       caption: "Newanforbi v. Macomber",
       case_no: "26WM000028",
