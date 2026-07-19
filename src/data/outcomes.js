@@ -61,7 +61,7 @@ export const outcomes = {
   ],
   judicial_opinions: [
     {
-      matter: 11,
+      matter: 9,
       caption: "Newanforbi v. Macomber",
       case_no: "26WM000028",
       court: "Sacramento Sup. Ct., Dept. 32",
@@ -75,7 +75,7 @@ export const outcomes = {
       document_path: "/documents/opinions/Newanforbi v Macomber - Sacramento Sup Ct - Minute Order Mar 10 2026.pdf",
     },
     {
-      matter: 11,
+      matter: 9,
       caption: "Newanforbi v. Macomber",
       case_no: "26WM000028",
       court: "Sacramento Sup. Ct., Dept. 13A",
@@ -118,8 +118,8 @@ export const outcomes = {
     },
   ],
   portfolio_exposure: {
-    conservative: 1623000,
-    moderate: 4083000,
-    aggressive: 8600000,
+    conservative: 1713000,
+    moderate: 4308000,
+    aggressive: 9125000,
   },
 };
