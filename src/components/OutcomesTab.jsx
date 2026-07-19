@@ -188,7 +188,7 @@ export function OutcomesTab() {
         <div style={{
           fontFamily: "'DM Sans', sans-serif", fontSize: 10, fontWeight: 700,
           letterSpacing: 4, textTransform: "uppercase", color: GOLD, marginBottom: 8,
-        }}>Portfolio Outcomes</div>
+        }}>Portfolio Profit</div>
         <h2 style={{ fontSize: 28, fontWeight: 700, color: theme.heading, margin: "0 0 6px" }}>
           Results
         </h2>
