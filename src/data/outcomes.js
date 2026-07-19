@@ -223,6 +223,17 @@ export const outcomes = {
       note: "Cited to portray Plaintiff as litigious — instead became the portfolio's Westlaw-indexed accolade, now featured in the site header (2026 WL 1067541 · 2026 WL 1389969).",
     },
     {
+      quote: "The Court must extend the time in which to rule on Petitioner's habeas petition. Good cause for the extension is established by the need to thoroughly review the voluminous papers and the court's recent workload.",
+      speaker: "Hon. Robert Hawk",
+      role: "Judge of the Superior Court, Santa Clara Sup. Ct.",
+      source: "Order Extending Time",
+      case_no: "C2604791",
+      date: "July 2, 2026",
+      matter: 19,
+      category: "backhanded",
+      note: "Framed as a scheduling matter, but the stated reason is the volume of Plaintiff's filed papers — a court, not opposing counsel, on the record describing the habeas petition as substantial enough to require additional time beyond the standard 60-day review period.",
+    },
+    {
       quote: "Newanforbi has not administratively challenged CDCR's actions and he cannot pretend to know how CDCR would address a meritorious grievance.",
       speaker: "Kathleen R. Walton, Deputy Attorney General",
       role: "California Attorney General's Office — counsel for Respondent Jeffrey Macomber (CDCR)",
