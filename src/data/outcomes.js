@@ -59,6 +59,22 @@ export const outcomes = {
       notes: "Complaint filed July 15 enclosed as Exhibit A. Pilot settlement (STK-CV-UWT-2026-0007649) cited as precedent. Litigation hold notice issued. 4 exhibits (July 2024 adverse action chain).",
     },
   ],
+  judicial_opinions: [
+    {
+      matter: 11,
+      caption: "Newanforbi v. Macomber",
+      case_no: "26WM000028",
+      court: "Sacramento Sup. Ct., Dept. 32",
+      judge: "Hon. James P. Arguelles",
+      date: "March 10, 2026",
+      type: "procedural",
+      outcome: "adverse",
+      title: "Court Order Vacating Hearing Scheduled on March 27, 2026",
+      holding: "Petition must be served in the same manner as a summons (CCP §1096, §§413.10–417.40); mail service is insufficient to establish the Court's jurisdiction over Respondent. Hearing on the merits vacated pending proper service and proof of service filed with the Court.",
+      significance: "Procedural ruling only — not on the merits of the writ. Court applied CCP §1088.5 (no action until respondent served). Cure: personal service on Macomber and filing of POS-010 reinstates the right to a merits hearing. Underlying petition remains live.",
+      document_path: "/documents/opinions/Newanforbi v Macomber - Sacramento Sup Ct - Minute Order Mar 10 2026.pdf",
+    },
+  ],
   portfolio_exposure: {
     conservative: 1623000,
     moderate: 4083000,
