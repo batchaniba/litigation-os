@@ -44,7 +44,7 @@ export default function LitigationPortfolio() {
           <img
             src={darkMode ? "/logo-dark.png" : "/logo-light.png"}
             alt="Newanforbi — In Propria Persona"
-            style={{ height: 160, width: "auto", objectFit: "contain", flexShrink: 0 }}
+            style={{ height: 220, width: "auto", objectFit: "contain", flexShrink: 0 }}
           />
           {/* Westlaw Accolade */}
           <div style={{ flex: 1, display: "flex", alignItems: "flex-end", justifyContent: "flex-start", paddingLeft: 40, minWidth: 0 }}>
