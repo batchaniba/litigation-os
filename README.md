@@ -2,7 +2,7 @@
 
 An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi**, Pro Se / In Propria Persona. The portfolio tracks 28 civil matters across federal and California state courts, providing a structured view of case status, procedural history, damages exposure, and overarching legal theories.
 
-**Live site:** https://newanforbi.github.io/interactive-litigation-portfolio/
+**Live site:** https://interactive-litigation-portfolio.vercel.app
 
 ---
 
@@ -234,7 +234,7 @@ Plaintiff is representing himself pro se across all 29 matters. The figures belo
 
 - **Framework:** React 18
 - **Build tool:** Vite 5
-- **Deployment:** GitHub Actions → GitHub Pages
+- **Deployment:** Vercel
 - **Fonts:** Cormorant Garamond (headings), DM Sans (UI)
 - **Styling:** Inline styles (zero external CSS dependencies)
 
@@ -245,7 +245,7 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:5173/interactive-litigation-portfolio/
+Open http://localhost:5173/
 
 ## Build
 
