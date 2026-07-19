@@ -152,12 +152,28 @@ export function NotableQuotesTab() {
         }}>On the record</div>
         <p style={{
           fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: theme.secondaryText,
+          lineHeight: 1.8, margin: "0 0 12px",
+        }}>
+          A pattern runs underneath most of these quotes: when the underlying facts are hard to
+          answer, the response reaches for Plaintiff's character instead — "strategic," "under the
+          guise," filed beneath a section literally titled "Generative AI." None of these lines argue
+          the merits. Each substitutes a characterization of the litigant for an engagement with the
+          record.
+        </p>
+        <p style={{
+          fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: theme.secondaryText,
           lineHeight: 1.8, margin: 0,
         }}>
-          Language read one way at the pleading stage can read very differently once placed
-          beside a coordinate ruling on the same facts. The Van Dine and Palacios lines were
-          both offered to undercut Plaintiff's credibility — the Krishnan line, decided weeks
-          later on the identical underlying incident, cuts the other way.
+          And in every instance where that characterization can be tested against something
+          concrete — a coordinate court ruling on the identical incident, an institution's own
+          inability to explain its conduct, a plain timestamp-to-timestamp timeline — it doesn't
+          hold. Krishnan's order and CSK's Candelaria F&R reached opposite conclusions on the
+          same November 2024 CHP allegations fourteen days apart. CDCR's own May 29, 2026
+          order admits it "refuses to provide any explanation" for the conduct its counsel called
+          administratively unchallengeable. The Van Dine citation meant to paint Plaintiff as
+          litigious is now the portfolio's Westlaw accolade. Read together, the quotes say less
+          about the litigant they describe than about how often a rapid, thorough, well-supported
+          filing gets answered with suspicion rather than a rebuttal on the merits.
         </p>
       </div>
     </div>
