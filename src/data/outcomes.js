@@ -61,6 +61,20 @@ export const outcomes = {
   ],
   judicial_opinions: [
     {
+      matter: 19,
+      caption: "In re Newanforbi (Habeas Corpus)",
+      case_no: "C2604791 (Habeas) / C1761642 (Trial Ct.)",
+      court: "Santa Clara Sup. Ct.",
+      judge: "Hon. Robert Hawk",
+      date: "July 2, 2026",
+      type: "procedural",
+      outcome: "procedural",
+      title: "Order Extending Time to Rule on Petition for Writ of Habeas Corpus",
+      holding: "The Court found good cause to extend the time in which to rule on Plaintiff's habeas petition, citing the need to thoroughly review the voluminous papers filed and the court's recent workload. The time to issue an order was extended to August 1, 2026. (Cal. Rules of Court, rule 4.551(i).)",
+      significance: "A procedural extension only — not a ruling on the merits. Confirms the petition, filed April 3, 2026 seeking immediate and unconditional discharge from parole, remains under active review by the Court rather than having lapsed or been summarily denied. The extension itself is notable: the Court's own stated reason — the volume of the record — reflects the substantiality of the papers filed in support of discharge. August 1, 2026 is now the operative deadline for the Court to rule.",
+      document_path: "/documents/opinions/Newanforbi Habeas - Santa Clara Sup Ct - Order Extending Time Jul 2 2026.pdf",
+    },
+    {
       matter: 5,
       caption: "Newanforbi v. Palacios et al. (HOPE Program)",
       case_no: "STK-CV-UF-2026-0001032",
