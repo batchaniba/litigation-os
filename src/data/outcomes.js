@@ -61,6 +61,20 @@ export const outcomes = {
   ],
   judicial_opinions: [
     {
+      matter: 5,
+      caption: "Newanforbi v. Palacios et al. (HOPE Program)",
+      case_no: "STK-CV-UF-2026-0001032",
+      court: "San Joaquin Sup. Ct., Dept. 10A",
+      judge: "Hon. George J. Abdallah, Jr.",
+      date: "July 15, 2026",
+      type: "merits",
+      outcome: "adverse",
+      title: "Order Sustaining Demurrer to First Amended Complaint Without Leave to Amend",
+      holding: "Demurrer to the First Amended Complaint SUSTAINED without leave to amend. Court affirmed the July 10, 2026 tentative ruling. Ground: failure to exhaust administrative remedies — exhaustion is a jurisdictional prerequisite and plaintiff failed to satisfy it. Demurrer brought by defendants HOPE Program (Sims, Lawrence & Broghammer) / Blaze Van Dine, Esq. Plaintiff appeared pro se and argued the tentative. Court's oral ruling sustained the demurrer. CMC on October 13, 2026 at 8:45 AM preserved on calendar.",
+      significance: "Notable as the matter in which defense counsel Blaze Van Dine (Sims, Lawrence & Broghammer) cited plaintiff's Westlaw-indexed federal opinions (2026 WL 1067541; 2026 WL 1389969) in his own demurrer brief — the source of the Westlaw accolade featured in this portfolio. The exhaustion defect is procedural and jurisdictional, not a merits ruling — if administrative remedies remain available or an exhaustion exception applies, the defect may be curable in a subsequent complaint. Case not dismissed: CMC October 13, 2026 at 8:45 AM remains on calendar. Note: Minute Order states exhaustion as the ruling ground; defense's proposed order (signed same date) states broader 'failure to state any cause of action' — the Minute Order controls. Same firm (Sims, Lawrence & Broghammer) represented HOPE Program in this matter.",
+      document_path: "/documents/opinions/Newanforbi v Palacios - San Joaquin Sup Ct - Demurrer Sustained WOLA Jul 15 2026.pdf",
+    },
+    {
       matter: 21,
       caption: "Newanforbi v. K. Barocio et al.",
       case_no: "2:26-cv-00191-DJC-CSK",
