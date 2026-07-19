@@ -209,6 +209,17 @@ export const outcomes = {
       note: "The stated basis for denying Plaintiff's grievance over a withheld 84-day Positive Programming Credit — a credit that determines the length of parole custody regardless of release status.",
     },
     {
+      quote: "The Court finds the allegations in plaintiff's complaint so vague and conclusory that it is unable to determine whether the current action is frivolous or fails to state a claim for relief.",
+      speaker: "Magistrate Judge Chi Soo Kim",
+      role: "U.S. Magistrate Judge, USDC E.D. Cal.",
+      source: "Screening Order, p.8:21-22",
+      case_no: "2:26-cv-00191-DJC-CSK",
+      date: "May 18, 2026",
+      matter: 21,
+      category: "sharp",
+      note: "Issued in the same order as the 'already been released from prison' quote above. Notably, even unable to determine frivolousness, the Court granted leave to amend here — a materially different outcome than the Matter 1 and Matter 7 F&Rs, where CSK denied leave to amend outright.",
+    },
+    {
       quote: "Subject is fixated on lawsuits instead of subject material.",
       speaker: "Katie Palacios, Clinical Director",
       role: "HOPE Program, CDCR Form 1502-DR (Discharge Review Report)",
