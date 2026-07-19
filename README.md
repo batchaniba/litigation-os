@@ -1,4 +1,4 @@
-<img src="public/logo-light.png" alt="Newanforbi — In Propria Persona" width="180" align="right" />
+<img src="public/logo-light.png" alt="Newanforbi — In Propria Persona" width="180" align="left" />
 
 # Newanforbi Litigation Portfolio
 
@@ -6,7 +6,7 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 
 **Live site:** https://interactive-litigation-portfolio.vercel.app
 
-<br clear="right" />
+<br clear="left" />
 
 ---
 
