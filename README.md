@@ -1,6 +1,6 @@
 # Newanforbi Litigation Portfolio
 
-An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi**, Pro Se / In Propria Persona. The portfolio tracks 28 civil matters across federal and California state courts, providing a structured view of case status, procedural history, damages exposure, and overarching legal theories.
+An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi**, Pro Se / In Propria Persona. The portfolio tracks 30 civil matters across federal and California state courts, providing a structured view of case status, procedural history, damages exposure, and overarching legal theories.
 
 **Live site:** https://interactive-litigation-portfolio.vercel.app
 
@@ -12,17 +12,17 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 |---|---|
 | Plaintiff | Brendan Ngehsi Newanforbi |
 | Representation | Pro Se / In Propria Persona |
-| Total Matters | 29 |
-| Active / Open | 17 |
+| Total Matters | 30 |
+| Active / Open | 16 |
 | Settled | 1 (Matter 22 — Pilot Travel Centers LLC, July 11, 2026) |
-| Dismissed / Closed | 11 |
+| Dismissed / Closed | 13 |
 | Jurisdictions | USDC E.D. Cal., USDC N.D. Cal., San Joaquin Sup. Ct., Alameda Sup. Ct., Sacramento Sup. Ct., Santa Clara Sup. Ct. |
 | Housing Status | **Homeless since July 2, 2026** — direct consequence of retaliatory inter-county parole transfer (Stockton → Santa Clara) imposed immediately after filing Matter 15 (Newanforbi v. CDCR, et al.); transfer caused loss of Stockton family housing; Matters 3, 9, and 19 are also potential retaliatory predicate acts |
-| Representation | Pro Se / In Propria Persona — all 29 matters self-litigated; estimated equivalent private-counsel cost: $709,408–$1,155,280 |
-| Aggregate Exposure (Conservative) | ~$1,584,000+ |
-| Aggregate Exposure (Moderate) | ~$4,048,000+ |
-| Aggregate Exposure (Aggressive) | ~$8,550,000+ |
-| Last Updated | July 17, 2026 |
+| Representation | Pro Se / In Propria Persona — all 30 matters self-litigated; estimated equivalent private-counsel cost: $724,808–$1,191,680 |
+| Aggregate Exposure (Conservative) | ~$1,713,000+ |
+| Aggregate Exposure (Moderate) | ~$4,308,000+ |
+| Aggregate Exposure (Aggressive) | ~$9,125,000+ |
+| Last Updated | July 19, 2026 |
 
 ---
 
@@ -32,16 +32,16 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 
 Arising from a November 1, 2024 CHP encounter on I-580. Officers arrested Plaintiff after he declined an optional PAS test, despite dashcam footage contradicting the DUI report's fabricated observations. No charges were filed; a 5-day parole hold followed. The cluster spans six matters:
 
-- **Matter 1** (USDC E.D. Cal.): Federal §1983 against CHP officers; MTD fully briefed, ruling pending.
-- **Matter 2** (Alameda Sup. Ct.): Parallel state tort action (False Imprisonment, Battery, Bane Act); STAYED pending federal MTD resolution.
-- **Matter 7** (USDC E.D. Cal.): Federal §1983 against DMV Hearing Officer Candelaria and DMV Director Gordon challenging void APS CDL suspension (FAC filed Apr. 27, 2026).
-- **Matter 8** (Sacramento Sup. Ct.): State Writ of Administrative Mandate challenging the same void APS decision; Fee Waiver Hearing July 17, 2026.
+- **Matter 1** (USDC E.D. Cal.): Federal §1983 against CHP officers; adverse F&R issued April 20, 2026 (Magistrate CSK recommends MTD GRANTED WOLA — 4th/14th Amendment, qualified immunity); District Judge DC adoption pending. If adopted, Matter 2 (Alameda, stayed) becomes the primary vehicle.
+- **Matter 2** (Alameda Sup. Ct.): Parallel state tort action (False Imprisonment, Battery, Bane Act); STAYED pending Matter 1 District Judge ruling.
+- **Matter 7** (USDC E.D. Cal.): Federal §1983 against DMV Hearing Officer Candelaria and DMV Director Gordon; adverse F&R issued June 15, 2026 (Magistrate CSK: IFP denied as frivolous; FAC dismissed WOLA — quasi-judicial immunity for Candelaria, 11th Amendment / standing failure for Gordon); District Judge DC adoption pending.
+- **Matter 8** (Sacramento Sup. Ct.): State Writ of Administrative Mandate challenging the same void APS decision; Fee Waiver Hearing held July 17, 2026, Dept. 10C.
 - **Matter 20** (Alameda Sup. Ct.): State Writ of Mandate against CHP; demurrer opposition filed July 13, 2026; demurrer hearing Aug. 28, 2026.
 - **Matter 24** (USDC N.D. Cal.): §1983 against San Mateo Sheriff Deputy Serrato for arbitrary U Visa certification denial and retaliation; filed June 17, 2026; CMC September 15, 2026.
 
-### Cluster 2 — Parole Retaliation, HOPE Abuse & Policy 19-03 (Matters 3–6, 11, 13–18, 21, 28)
+### Cluster 2 — Parole Retaliation, HOPE Abuse & Policy 19-03 (Matters 3–6, 11, 13–18, 21, 28, 30)
 
-The largest cluster — 13 matters — targeting CDCR's parole supervision apparatus, the HOPE Psychotherapy program, and constitutional violations across parole travel, housing, and employment decisions. Core allegations include:
+The largest cluster — 14 matters — targeting CDCR's parole supervision apparatus, the HOPE Psychotherapy program, and constitutional violations across parole travel, housing, and employment decisions. Core allegations include:
 
 - **First Amendment retaliation** by Agent Derrick, who suppressed speech and sabotaged Plaintiff's FedEx employment; explicit "you do not have freedom of speech" statement satisfies *Rhodes v. Robinson*.
 - **Retaliatory inter-county transfer** on July 2, 2026 — supervision moved from San Joaquin to Santa Clara County immediately after filing Matter 15 naming Supervising Agent Noguchi; caused loss of Stockton family housing and employment; Plaintiff has been **homeless since July 2, 2026**. Matters 3, 9, and 19 are also potential retaliatory predicate acts for the transfer.
@@ -53,6 +53,7 @@ The largest cluster — 13 matters — targeting CDCR's parole supervision appar
 - Documented CDL career wage losses: $109,408 across 6 carriers (W-2 verified, 2022–2024).
 - **Matter 5 (Palacios)** — state action disposed July 15, 2026 (demurrer sustained, exhaustion grounds); 542 pages of HOPE discovery (Bates HOPE_000001–542) produced before dismissal are now carried into **Matter 28** via Motion for Protective Order.
 - **Matter 28** (USDC N.D. Cal.): Federal successor; §1983 Monell (HOPE) + Individual Capacity (Shannon Smith, LCSW), Bane Act §52.1, Fraud/Negligent Misrepresentation, RICO 18 U.S.C. §1962(c)-(d); complaint mailed July 16, 2026.
+- **Matter 30** (USDC N.D. Cal., San Jose Div.): §1983 First Amendment Retaliation + Due Process, Bane Act §52.1, IIED against Long Moua (Badge #7472) and Gary Noguchi (Badge #7284) for the November 14, 2025 retaliatory 1502-DR and the July 2, 2026 inter-county parole transfer; Government Claims Act claim filed July 18, 2026; complaint filing September 16, 2026.
 
 ### Cluster 3 — Consumer Fraud / Defective Vehicle (Matter 12)
 
@@ -75,17 +76,17 @@ Fraud and UCL claims against Diamond Truck Sales, Inc. and Alpine Truck Sales, I
 
 ### Cluster 4 — Administrative Writs & Habeas Corpus (Matters 9, 10, 19)
 
-Three purely equitable proceedings seeking court orders directing CDCR to act — no tort damages sought. All target the Secretary of CDCR in his official capacity:
+Three equitable proceedings seeking court orders directing CDCR to act — no tort damages sought. Two are now closed; one remains active:
 
-- **Matter 9** (Sacramento Sup. Ct., 26WM000028): Writ of Mandate; AG Demurrer argued May 29, 2026; merits hearing targeted Aug. 27, 2026.
-- **Matter 10** (Santa Clara Sup. Ct., C2602632): Habeas Corpus — challenges continued compelled treatment as unlawful restraint; CLOSED — petition denied without prejudice April 27, 2026 (exhaustion grounds).
-- **Matter 19** (Santa Clara Sup. Ct., C2604791): Habeas Corpus — seeks immediate and unconditional discharge from parole; filed April 3, 2026.
+- **Matter 9** (Sacramento Sup. Ct., 26WM000028): Writ of Mandate — **CLOSED**. Demurrer sustained without leave to amend May 29, 2026 (Hon. James P. Arguelles, Dept. 13A): CDCR has no duty under Pen. Code §3008 to conduct an individualized EDC assessment where §3000(b)(2)(B) mandates a 10-year parole term; habeas corpus is the correct vehicle. The substantive claim is live in Matter 19.
+- **Matter 10** (Santa Clara Sup. Ct., C2602632): Habeas Corpus — **CLOSED**. Petition denied without prejudice April 27, 2026 (exhaustion; PC §3008(d)(2) certification required).
+- **Matter 19** (Santa Clara Sup. Ct., C2604791): Habeas Corpus — **ACTIVE**. Seeks immediate and unconditional discharge from parole; filed April 3, 2026; Order Extending Time issued July 2, 2026 (Hon. Robert Hawk); court deadline to rule: **August 1, 2026**.
 
 ### Cluster 5 — Employment / Statutory Violation (Matters 22, 25, 26, 27, 29)
 
-Six matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibition on using sex offender registry information for employment purposes — against separate employers across a 30-month window.
+Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibition on using sex offender registry information for employment purposes — against separate employers across a 30-month window.
 
-- **Matter 22** (Newanforbi v. Pilot Travel Centers LLC) — **SETTLED July 11, 2026** — San Joaquin Superior Court (STK-CV-UWT-2026-0007649). Wrongful termination; Defendant's own Post-Adverse Action Notice admitted registry as sole termination basis. Resolved pro se in under six weeks from filing, before service was completed. First portfolio settlement.
+- **Matter 22** (Newanforbi v. Pilot Travel Centers LLC) — **SETTLED July 11, 2026** — San Joaquin Superior Court (STK-CV-UWT-2026-0007649). Wrongful termination; Defendant's own Post-Adverse Action Notice admitted registry as sole termination basis. Resolved pro se in under seven weeks from filing, before service was completed. First portfolio settlement.
 - **Matter 25** (Newanforbi v. Federal Express Corporation) — San Joaquin Superior Court (STK-CV-UWT-2026-0009118); PC §290.46(j) failure to hire; First Advantage BGC ran March 2025; final adverse action March 19, 2025; complaint filed July 15, 2026; assigned to Dept. 10B, Hon. Blanca Banuelos; CMC January 14, 2027.
 - **Matter 26** (Newanforbi v. United Parcel Service, Inc.) — San Joaquin Superior Court (STK-CV-UWT-2026-0009113); PC §290.46(j) failure to hire; First Advantage BGC ran July 2024; final adverse action July 31, 2024; complaint filed July 15, 2026 — **2-year limitations period preserved (filed 16 days ahead of the July 31, 2026 cutoff)**; UPS filed first (lower case number); assigned to Dept. 11B, Hon. Robert T. Waters; CMC January 13, 2027.
 - **Matter 27** (Newanforbi v. Randstad US, LLC and RK Logistics Group, Inc.) — San Joaquin Superior Court; PC §290.46(j) / FCRA / ICRAA / Tameny wrongful termination. Rehired July 7, 2026; InfoMart BGC (Order No. 15780719) shows Billing Code "RK LOGISTICS" and Status "NEEDS APPROVAL, PER CLIENT CRITERIA" with registry as the sole adverse flag. FCRA pre-adverse notice received July 13, 2026; earliest adverse action date July 21, 2026. Complaint not yet filed.
@@ -99,44 +100,46 @@ Six matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibit
 
 | # | Caption | Case No. | Court | Type | Status |
 |---|---|---|---|---|---|
-| 1 | Newanforbi v. CHP et al. | 2:25-cv-01460-DC-CSK | USDC E.D. Cal. | Federal | MTD fully briefed; ruling pending |
-| 2 | Newanforbi v. Meza-Gonzalez et al. | 26CV168913 | Alameda Sup. Ct. | State | STAYED pending federal MTD (Matter 1) resolution |
+| 1 | Newanforbi v. CHP et al. | 2:25-cv-01460-DC-CSK | USDC E.D. Cal. | Federal | Adverse F&R Apr. 20, 2026 (MTD recommended GRANTED WOLA — 4th/14th Amend., QI); District Judge DC adoption pending; Matter 2 (Alameda) active if adopted |
+| 2 | Newanforbi v. Meza-Gonzalez et al. | 26CV168913 | Alameda Sup. Ct. | State | STAYED pending Matter 1 District Judge ruling |
 | 3 | Newanforbi v. Derrick et al. | 2:26-cv-00004-DJC-JDP | USDC E.D. Cal. | Federal | MTD (Doc 24) under submission; hearing vacated; awaiting ruling |
-| 4 | Newanforbi v. Derrick et al. | TBD | San Joaquin Sup. Ct. | State | Filed May 29, 2026 |
-| 7 | Newanforbi v. Candelaria | 2:26-cv-00983-DC-CSK | USDC E.D. Cal. | Federal | FAC filed Apr. 27, 2026; active |
-| 8 | Newanforbi v. Candelaria, et al. | 26WM000135 | Sacramento Sup. Ct. | State | Fee Waiver Hearing July 17, 2026, Dept. 10C |
-| 9 | Newanforbi v. Macomber | 26WM000028 | Sacramento Sup. Ct. | State | AG Demurrer argued May 29, 2026; merits hearing targeted Aug. 27, 2026 |
+| 7 | Newanforbi v. Candelaria | 2:26-cv-00983-DC-CSK | USDC E.D. Cal. | Federal | Adverse F&R Jun. 15, 2026 (IFP denied; FAC dismissed WOLA — quasi-judicial immunity, 11th Amend.); District Judge DC adoption pending |
+| 8 | Newanforbi v. Candelaria, et al. | 26WM000135 | Sacramento Sup. Ct. | State | Fee Waiver Hearing held July 17, 2026, Dept. 10C |
 | 12 | Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. | STK-CV-UF-2026-0001094 | San Joaquin Sup. Ct. | State | Default imminent — Alpine served July 1, 2026; response deadline July 31, 2026; CMC Aug. 12, 2026 |
-| 15 | Newanforbi v. CDCR, et al. | STK-CV-UPI-2026-5417 | San Joaquin Sup. Ct. | State | CDCR/Dodd served June 22, 2026; responsive pleading due July 22, 2026; CMC Dec. 9, 2026 |
-| 16 | Newanforbi v. Rojo | TBD | San Joaquin Sup. Ct. | State | Filed July 7, 2026; Gov. claim deemed rejected July 3, 2026 |
-| 19 | Newanforbi v. Macomber | C2604791 | Santa Clara Sup. Ct. | State | Filed Apr. 3, 2026; habeas — seeks unconditional parole discharge |
+| 15 | Newanforbi v. CDCR, et al. | STK-CV-UPI-2026-5417 | San Joaquin Sup. Ct. | State | CDCR/Dodd served June 22, 2026; responsive pleading extended to Aug. 21, 2026 (mutual agreement Jul. 16); M&C call Jul. 30 (11:00 a.m.); CMC Dec. 9, 2026 |
+| 19 | Newanforbi v. Macomber | C2604791 | Santa Clara Sup. Ct. | State | Habeas — seeks unconditional parole discharge; Order Extending Time July 2, 2026 (Hon. Robert Hawk); court deadline to rule: Aug. 1, 2026 |
 | 20 | Newanforbi v. CHP, et al. | 26CV191136 | Alameda Sup. Ct. | State | Demurrer opposition filed July 13, 2026; hearing Aug. 28, 2026, Dept. 25 |
 | 24 | Newanforbi v. Serrato | 4:26-cv-05953-ASK | USDC N.D. Cal. | Federal | Filed June 17, 2026; ISC Order issued; CMC Sept. 15, 2026 |
-| 25 | Newanforbi v. Federal Express Corporation | STK-CV-UWT-2026-0009118 | San Joaquin Sup. Ct. | State | Filed July 15, 2026; Dept. 10B, Hon. Blanca Banuelos; CMC Jan. 14, 2027 |
-| 26 | Newanforbi v. United Parcel Service, Inc. | STK-CV-UWT-2026-0009113 | San Joaquin Sup. Ct. | State | Filed July 15, 2026; limitations period preserved (16 days to spare); Dept. 11B, Hon. Robert T. Waters; CMC Jan. 13, 2027 |
+| 25 | Newanforbi v. Federal Express Corporation | STK-CV-UWT-2026-0009118 | San Joaquin Sup. Ct. | State | Filed July 15, 2026; demand response deadline July 26 (5:00 PM PT); Dept. 10B, Hon. Blanca Banuelos; CMC Jan. 14, 2027 |
+| 26 | Newanforbi v. United Parcel Service, Inc. | STK-CV-UWT-2026-0009113 | San Joaquin Sup. Ct. | State | Filed July 15, 2026; demand response deadline July 26 (5:00 PM PT); limitations period preserved (16 days to spare); Dept. 11B, Hon. Robert T. Waters; CMC Jan. 13, 2027 |
 | 27 | Newanforbi v. Randstad US, LLC et al. | TBD | San Joaquin Sup. Ct. | State | Pre-adverse notice July 13, 2026; adverse action expected on or after July 21, 2026; complaint not yet filed |
 | 28 | Newanforbi v. Shannon Smith, LCSW, CEO, et al. | TBD | USDC N.D. Cal. | Federal | Complaint mailed July 16, 2026; anticipated receipt July 20, 2026; §1983 + Bane Act + RICO |
-| 29 | Newanforbi v. Amazon.com Services, LLC et al. | TBD | Alameda Sup. Ct. (anticipated) | State | Pre-complaint — BGC pending 10+ days (Accurate Background LLC, shortcode 45996); adverse action anticipated; PC §290.46(j) + FCRA + ICRAA; Lerma precedent (same defendants, settled Sept. 2023) establishes willfulness |
+| 29 | Newanforbi v. Amazon.com Services, LLC et al. | TBD | Alameda Sup. Ct. (anticipated) | State | Pre-complaint — BGC pending (Accurate Background LLC, shortcode 45996); adverse action anticipated; PC §290.46(j) + FCRA + ICRAA; Lerma precedent (same defendants, settled Sept. 2023) establishes willfulness |
+| 30 | Newanforbi v. Moua, et al. | TBD (N.D. Cal., San Jose Div.) | USDC N.D. Cal. | Federal | GCA claim filed July 18, 2026; deemed rejected Sep. 1, 2026; complaint filing Sep. 16, 2026; §1983 First Amend. Retaliation + Due Process + Bane Act + IIED |
 
 ### Settled
 
 | # | Caption | Case No. | Court | Outcome |
 |---|---|---|---|---|
-| 22 | Newanforbi v. Pilot Travel Centers LLC | STK-CV-UWT-2026-0007649 | San Joaquin Sup. Ct. | SETTLED July 11, 2026 — negotiated resolution pro se in under six weeks from filing; settlement terms confidential |
+| 22 | Newanforbi v. Pilot Travel Centers LLC | STK-CV-UWT-2026-0007649 | San Joaquin Sup. Ct. | SETTLED July 11, 2026 — negotiated resolution pro se in under seven weeks from filing; settlement terms confidential |
 
 ### Dismissed / Closed / Archived
 
 | # | Caption | Case No. | Court | Disposition |
 |---|---|---|---|---|
+| 4 | Newanforbi v. Derrick et al. | TBD | San Joaquin Sup. Ct. | NOT PURSUING — Voluntarily Dismissed |
 | 5 | Newanforbi v. Palacios et al. | STK-CV-UF-2026-0001032 | San Joaquin Sup. Ct. | DISMISSED — Demurrer granted without leave to amend July 15, 2026 (exhaustion grounds); 542-page HOPE discovery carried into Matter 28 |
 | 6 | Newanforbi v. HOPE et al. | 2:26-cv-00195-TLN-AC | USDC E.D. Cal. | VOLUNTARILY DISMISSED WITHOUT PREJUDICE May 21, 2026; refiling preserved |
+| 9 | Newanforbi v. Macomber | 26WM000028 | Sacramento Sup. Ct. | DISMISSED — Demurrer Sustained WOLA May 29, 2026 (writ of mandate; habeas corpus is the correct vehicle; substantive claim live in Matter 19) |
 | 10 | Newanforbi v. Macomber | C2602632 | Santa Clara Sup. Ct. | CLOSED — Petition denied without prejudice Apr. 27, 2026 (exhaustion; PC §3008(d)(2) certification required) |
 | 11 | Newanforbi v. Macomber | TBD | USDC E.D. Cal. | DISMISSED WITH PREJUDICE June 29, 2026 (FRCP 41(a)(1)(A)(i)) |
 | 13 | Newanforbi v. Urrea et al. | 2:26-cv-00190-DC-SCR | USDC E.D. Cal. | DISMISSED WITH PREJUDICE June 29, 2026 (FRCP 41(a)(1)(A)(i)) |
 | 14 | Newanforbi v. Urrea et al. | TBD | San Joaquin Sup. Ct. | NOT PURSUING — Voluntarily dismissed |
+| 16 | Newanforbi v. Rojo | TBD | San Joaquin Sup. Ct. | NOT PURSUING — Voluntarily Dismissed |
 | 17 | Newanforbi v. Maloney et al. | 2:26-cv-00194-DAD-SCR | USDC E.D. Cal. | DISMISSED WITH PREJUDICE June 29, 2026 (FRCP 41(a)(1)(A)(i)) |
 | 18 | Newanforbi v. Barocio | 2:26-cv-00191-DJC-CSK | USDC E.D. Cal. | DISMISSED WITH PREJUDICE June 29, 2026 (FRCP 41(a)(1)(A)(i)) |
 | 21 | Newanforbi v. Rojo, et al. | 2:26-cv-00193-DC-CKD | USDC E.D. Cal. | DISMISSED WITH PREJUDICE June 29, 2026 (FRCP 41(a)(1)(A)(i)) |
+| 23 | Newanforbi v. Macy's Inc. et al. | TBD | San Joaquin Sup. Ct. | NOT PURSUING — Voluntarily Dismissed |
 
 ---
 
@@ -145,15 +148,18 @@ Six matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibit
 | Date | Matter | Event |
 |---|---|---|
 | July 21, 2026 | 27 | Earliest adverse action date — Randstad / RK Logistics (FCRA 5-business-day rule from July 13 pre-adverse notice) |
-| July 22, 2026 | 15 | Responsive pleading due — CDCR/Dodd (30 days from June 22, 2026 service; CCP §412.20(a)(3)) |
-| July 22, 2026 | 15 | Meet-and-confer deadline — CCP §430.41(a) (5 days before July 22 responsive pleading deadline, if demurrer intended) |
+| July 26, 2026 | 25, 26 | Demand letter response deadline — FedEx ($85,000; STK-CV-UWT-2026-0009118) and UPS ($85,000; STK-CV-UWT-2026-0009113); 5:00 PM PT |
+| July 30, 2026 | 15 | Meet-and-confer call (CCP §430.41) — 11:00 a.m.; Judith Gronna (DAG) to call BNN re: anticipated demurrer (STK-CV-UPI-2026-5417) |
 | July 31, 2026 | 12 | Alpine Truck Sales, Inc. response deadline (CCP §412.20(a)(3); 30 days from July 1, 2026 personal service) |
+| Aug. 1, 2026 | 19 | Court deadline to rule — Santa Clara Sup. Ct. habeas (C2604791, Hon. Robert Hawk; per Order Extending Time July 2, 2026) |
 | Aug. 12, 2026 | 12 | Case Management Conference — 8:30 AM, Dept. 11B, Hon. Robert T. Waters (San Joaquin Sup. Ct.) |
+| Aug. 21, 2026 | 15 | Responsive pleading/demurrer deadline — CDCR/Dodd (extended per mutual agreement July 16, 2026; original deadline was July 22) |
 | Aug. 21, 2026 | 20 | AG reply deadline — 5 court days before Aug. 28 demurrer hearing (CRC 3.1320(b)) |
-| Aug. 27, 2026 | 9 | Merits hearing — Writ of Mandate (26WM000028, Sacramento Sup. Ct.) |
 | Aug. 28, 2026 | 20 | Demurrer Hearing — 9:00 AM, Dept. 25, Alameda Sup. Ct. (Hon. Jenna M. Whitman) |
+| Sep. 1, 2026 | 30 | Government Claims Act — 45-day review period expires; claim deemed rejected by operation of law (Gov. Code §912.4); earliest complaint filing date |
 | Sep. 13, 2026 | 25, 26 | Service deadline — FedEx and UPS (60 days from July 15, 2026 filing; CRC 3.110) |
-| Sept. 15, 2026 | 24 | Case Management Conference — USDC N.D. Cal. (4:26-cv-05953-ASK) |
+| Sep. 15, 2026 | 24 | Case Management Conference — USDC N.D. Cal. (4:26-cv-05953-ASK) |
+| Sep. 16, 2026 | 30 | Complaint filing — Newanforbi v. Moua, et al. (USDC N.D. Cal., San Jose Division); §1983 First Amend. Retaliation + Due Process + Bane Act + IIED |
 | Dec. 9, 2026 | 15 | Case Management Conference — 8:30 AM, Dept. 10C, San Joaquin Sup. Ct. |
 | Dec. 14, 2026 | 26 | Meet-and-confer deadline — 30 days before Jan. 13, 2027 CMC (CRC 3.724; STK-CV-UWT-2026-0009113) |
 | Dec. 15, 2026 | 25 | Meet-and-confer deadline — 30 days before Jan. 14, 2027 CMC (CRC 3.724; STK-CV-UWT-2026-0009118) |
@@ -181,7 +187,8 @@ Six matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibit
 | PC §290.46(j) — Wrongful Termination / Failure to Employ — Randstad / RK Logistics | 27 | $180,000 | $437,000 | $835,000 |
 | §1983 Monell + Individual + Bane Act + RICO — Shannon Smith / HOPE | 28 | $249,000 | $666,000 | $1,510,000 |
 | PC §290.46(j) Failure to Hire — Amazon | 29 | $30,000 | $75,000 | $180,000 |
-| **Portfolio Total (pre-deduplication)** | | **$1,623,000** | **$4,083,000** | **$8,600,000** |
+| §1983 First Amend. Retaliation + Due Process + Bane Act + IIED — Moua / Noguchi | 30 | $90,000 | $225,000 | $525,000 |
+| **Portfolio Total (pre-deduplication)** | | **$1,713,000** | **$4,308,000** | **$9,125,000** |
 
 *Note: The portfolio total reflects independent per-defendant exposure across all matters before deduplication of shared economic events (e.g., the same CDL wage-loss period underlying Matters 1, 2, 7, 15). Per-matter settlement negotiations treat each defendant independently.*
 
@@ -196,13 +203,13 @@ Plaintiff is representing himself pro se across all 29 matters. The figures belo
 | Cluster | Matters | Low | Mid | High |
 |---|---|---|---|---|
 | CHP / DUI / DMV | 1, 2, 7, 8, 20, 24 | $134,176 | $176,372 | $218,568 |
-| Parole Retaliation / HOPE | 3, 4, 5, 6, 11, 13, 14, 15, 16, 17, 18, 21, 28 | $439,432 | $572,012 | $704,592 |
+| Parole Retaliation / HOPE | 3, 4, 5, 6, 11, 13, 14, 15, 16, 17, 18, 21, 28, 30 | $454,832 | $595,812 | $740,992 |
 | Consumer Fraud / Employment | 12, 22, 23, 25, 26, 27, 29 | $94,920 | $126,840 | $159,320 |
 | Administrative Writs & Habeas | 9, 10, 19 | $40,880 | $56,840 | $72,800 |
-| **Portfolio Total** | **29 matters / 245 docs / 3,249 pages** | **$709,408** | **$932,064** | **$1,155,280** |
-| **Estimated Hours** | | **2,533.6 hrs** | **3,328.8 hrs** | **4,126.0 hrs** |
+| **Portfolio Total** | **30 matters / 257 docs / 3,313 pages** | **$724,808** | **$955,864** | **$1,191,680** |
+| **Estimated Hours** | | **2,588.6 hrs** | **3,413.8 hrs** | **4,256.0 hrs** |
 
-*Plaintiff has litigated all 29 matters pro se, absorbing the full economic equivalent of the above without compensation. Fee-shifting statutes (42 U.S.C. §1988, PC §290.46(j)(4)(A), RICO 18 U.S.C. §1964(c), FCRA, ICRAA) apply across the majority of active matters — mandatory fee recovery upon prevailing substantially offsets or eliminates the above costs.*
+*Plaintiff has litigated all 30 matters pro se, absorbing the full economic equivalent of the above without compensation. Fee-shifting statutes (42 U.S.C. §1988, PC §290.46(j)(4)(A), RICO 18 U.S.C. §1964(c), FCRA, ICRAA) apply across the majority of active matters — mandatory fee recovery upon prevailing substantially offsets or eliminates the above costs.*
 
 ---
 
@@ -226,7 +233,7 @@ Plaintiff is representing himself pro se across all 29 matters. The figures belo
 
 9. **Policy 19-03 as Ultra Vires Action** — Policy 19-03 is affirmatively contradictory to 15 CCR § 3574 (effective April 2025). Regulations have the force of statute (*Tidewater Marine*). *Mathews v. Eldridge* balancing confirms a due process violation.
 
-10. **PC §290.46(j)(2)(E) Pattern Across Six Employers** — Matter 22 (Pilot, settled), Matter 25 (FedEx), Matter 26 (UPS), Matter 27 (Randstad/RK Logistics), Matter 29 (Amazon). Each case's willfulness finding supports punitive damages in the others. Matter 22's settlement confirms the statutory claim is viable; Matter 27's InfoMart report is the strongest evidence set (Plaintiff holds the actual BGC report; Billing Code "RK LOGISTICS" documents the end-client's criteria configuration); Matter 29's Accurate Background SMS (shortcode 45996) establishes the BGC vendor relationship and consent. **Matter 29 carries a uniquely powerful willfulness predicate:** *Lerma v. Amazon.com Services, LLC et al.*, No. 8:22-cv-01727 (C.D. Cal., filed Sept. 2022, settled Sept. 29, 2023) — a putative class action in which Amazon and Accurate Background LLC were co-defendants on the identical PC §290.46(j) registry-for-employment theory — Amazon's post-settlement continuation of the same BGC practice in July 2026 eliminates any good-faith defense and satisfies the "conscious disregard" standard for punitive damages under Cal. Civ. Code §3294 as to both defendants.
+10. **PC §290.46(j)(2)(E) Pattern Across Five Employers** — Matter 22 (Pilot, settled), Matter 25 (FedEx), Matter 26 (UPS), Matter 27 (Randstad/RK Logistics), Matter 29 (Amazon). Each case's willfulness finding supports punitive damages in the others. Matter 22's settlement confirms the statutory claim is viable; Matter 27's InfoMart report is the strongest evidence set (Plaintiff holds the actual BGC report; Billing Code "RK LOGISTICS" documents the end-client's criteria configuration); Matter 29's Accurate Background SMS (shortcode 45996) establishes the BGC vendor relationship and consent. **Matter 29 carries a uniquely powerful willfulness predicate:** *Lerma v. Amazon.com Services, LLC et al.*, No. 8:22-cv-01727 (C.D. Cal., filed Sept. 2022, settled Sept. 29, 2023) — a putative class action in which Amazon and Accurate Background LLC were co-defendants on the identical PC §290.46(j) registry-for-employment theory — Amazon's post-settlement continuation of the same BGC practice in July 2026 eliminates any good-faith defense and satisfies the "conscious disregard" standard for punitive damages under Cal. Civ. Code §3294 as to both defendants.
 
 ---
 
