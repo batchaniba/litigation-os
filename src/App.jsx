@@ -48,17 +48,20 @@ export default function LitigationPortfolio() {
           {/* Westlaw Accolade */}
           <div style={{ flex: 1, display: "flex", alignItems: "flex-end", justifyContent: "flex-start", paddingLeft: 28, minWidth: 0 }}>
             <div>
-              <div style={{ fontSize: 9, fontFamily: "'DM Sans', sans-serif", fontWeight: 700, letterSpacing: 3, color: GOLD, textTransform: "uppercase", marginBottom: 4 }}>
+              <div style={{ fontSize: 9, fontFamily: "'DM Sans', sans-serif", fontWeight: 700, letterSpacing: 3, color: GOLD, textTransform: "uppercase", marginBottom: 6 }}>
                 📚 Westlaw-Indexed
               </div>
-              <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, fontStyle: "italic", color: BODY_GRAY, lineHeight: 1.5, marginBottom: 4 }}>
-                "…two lawsuits in federal court that have resulted in opinions available on Westlaw."
+              <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, fontStyle: "italic", color: BODY_GRAY, lineHeight: 1.6, marginBottom: 6, maxWidth: 380 }}>
+                "In this regard, it appears from a search of Westlaw that Plaintiff filed two other lawsuits in federal court that have resulted in opinions available on Westlaw."
               </div>
-              <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 10, fontWeight: 700, color: GOLD, letterSpacing: 0.5 }}>
+              <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 10, fontWeight: 700, color: GOLD, letterSpacing: 0.5, marginBottom: 4 }}>
                 2026 WL 1067541 · 2026 WL 1389969
               </div>
-              <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9, color: BODY_GRAY, marginTop: 3, opacity: 0.7 }}>
-                — Opposing Counsel, Palacios Demurrer (Matter 5)
+              <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9, color: BODY_GRAY, opacity: 0.8, lineHeight: 1.5 }}>
+                — Blaze Van Dine, Esq. · Sims, Lawrence &amp; Broghammer
+              </div>
+              <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9, color: BODY_GRAY, opacity: 0.6 }}>
+                Palacios Demurrer (Matter 5)
               </div>
             </div>
           </div>
