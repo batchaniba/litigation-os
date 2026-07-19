@@ -147,7 +147,7 @@ export const DashboardTab = ({ upcomingEvents, setClusterFilter, setActiveTab })
           <div>
             <h3 style={{ fontSize: 18, fontWeight: 700, color: GOLD, margin: "0 0 6px", fontFamily: "'DM Sans', sans-serif", letterSpacing: 0.5 }}>First Case to Settle</h3>
             <p style={{ margin: 0, fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: theme.secondaryText, lineHeight: 1.4 }}>
-              Matter 22 became the first matter in this portfolio to reach a negotiated settlement — resolved pro se, without counsel, in under six weeks from filing.
+              Matter 22 became the first matter in this portfolio to reach a negotiated settlement — resolved pro se, without counsel, in under seven weeks from filing.
             </p>
           </div>
         </div>

@@ -44,6 +44,23 @@ export default function LitigationPortfolio() {
             <h1 style={{ fontSize: 32, fontWeight: 700, color: theme.headerText, margin: 0, lineHeight: 1.1 }}>Brendan Ngehsi Newanforbi</h1>
             <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: BODY_GRAY, marginTop: 6 }}>Pro Se / In Propria Persona · Prepared {PORTFOLIO.prepared_date}</div>
           </div>
+          {/* Westlaw Accolade */}
+          <div style={{ flex: 1, display: "flex", alignItems: "flex-end", justifyContent: "flex-start", paddingLeft: 28, minWidth: 0 }}>
+            <div>
+              <div style={{ fontSize: 9, fontFamily: "'DM Sans', sans-serif", fontWeight: 700, letterSpacing: 3, color: GOLD, textTransform: "uppercase", marginBottom: 4 }}>
+                📚 Westlaw-Indexed
+              </div>
+              <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, fontStyle: "italic", color: BODY_GRAY, lineHeight: 1.5, marginBottom: 4 }}>
+                "…two lawsuits in federal court that have resulted in opinions available on Westlaw."
+              </div>
+              <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 10, fontWeight: 700, color: GOLD, letterSpacing: 0.5 }}>
+                2026 WL 1067541 · 2026 WL 1389969
+              </div>
+              <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9, color: BODY_GRAY, marginTop: 3, opacity: 0.7 }}>
+                — Opposing Counsel, Palacios Demurrer (Matter 5)
+              </div>
+            </div>
+          </div>
           <div style={{ display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap" }}>
             <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
               {tabs.map(t => (
