@@ -44,7 +44,7 @@ export default function LitigationPortfolio() {
           <img
             src={darkMode ? "/logo-dark.png" : "/logo-light.png"}
             alt="Newanforbi — In Propria Persona"
-            style={{ height: 120, width: 120, objectFit: "cover", flexShrink: 0, borderRadius: "50%" }}
+            style={{ height: 160, width: "auto", objectFit: "contain", flexShrink: 0 }}
           />
           <div style={{ paddingLeft: 8 }}>
             <div style={{ color: GOLD, fontSize: 11, fontFamily: "'DM Sans', sans-serif", fontWeight: 700, letterSpacing: 4, textTransform: "uppercase", marginBottom: 6 }}>Litigation Portfolio</div>
