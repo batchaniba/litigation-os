@@ -158,7 +158,9 @@ function OpinionCard({ item, theme }) {
 
 export function JudicialOpinionsTab() {
   const theme = useTheme();
-  const opinions = outcomes.judicial_opinions ?? [];
+  const opinions = [...(outcomes.judicial_opinions ?? [])].sort(
+    (a, b) => new Date(b.date) - new Date(a.date)
+  );
   const adverseCount = opinions.filter(o => o.outcome === "adverse").length;
   const favorableCount = opinions.filter(o => o.outcome === "favorable").length;
 
