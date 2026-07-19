@@ -39,7 +39,13 @@ export default function LitigationPortfolio() {
 
       {/* Header */}
       <div style={{ background: theme.headerBg, borderBottom: `2px solid ${GOLD}` }}>
-        <div style={{ maxWidth: 1200, margin: "0 auto", padding: "28px 24px 20px", display: "flex", alignItems: "flex-end", justifyContent: "space-between", flexWrap: "wrap", gap: 16 }}>
+        <div style={{ maxWidth: 1200, margin: "0 auto", padding: "20px 24px 20px", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 16 }}>
+          {/* Logo */}
+          <img
+            src={darkMode ? "/logo-dark.png" : "/logo-light.png"}
+            alt="Newanforbi — In Propria Persona"
+            style={{ height: 90, width: 90, objectFit: "contain", flexShrink: 0 }}
+          />
           <div>
             <div style={{ color: GOLD, fontSize: 11, fontFamily: "'DM Sans', sans-serif", fontWeight: 700, letterSpacing: 4, textTransform: "uppercase", marginBottom: 6 }}>Litigation Portfolio</div>
             <h1 style={{ fontSize: 32, fontWeight: 700, color: theme.headerText, margin: 0, lineHeight: 1.1 }}>Brendan Ngehsi Newanforbi</h1>
