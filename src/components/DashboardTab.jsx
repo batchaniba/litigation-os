@@ -6,8 +6,8 @@ const formatCurrency = (n) => "$" + n.toLocaleString();
 
 const totalMatters = PORTFOLIO.cases.length;
 const activeMatters = PORTFOLIO.cases.filter(c => !c.archived).length;
-const clusterCounts = { 1: 0, 2: 0, 3: 0, 4: 0 };
-const clusterNumberLists = { 1: [], 2: [], 3: [], 4: [] };
+const clusterCounts = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 };
+const clusterNumberLists = { 1: [], 2: [], 3: [], 4: [], 5: [] };
 const courtCounts = {};
 let federalCount = 0;
 let stateCount = 0;
@@ -40,6 +40,7 @@ const clusterMattersStr = {
   2: formatRanges(clusterNumberLists[2]),
   3: formatRanges(clusterNumberLists[3]),
   4: formatRanges(clusterNumberLists[4]),
+  5: formatRanges(clusterNumberLists[5]),
 };
 
 const moderateExposure = formatCurrency(
@@ -49,8 +50,9 @@ const moderateExposure = formatCurrency(
 const CLUSTERS = [
   { n: 1, label: "CHP Traffic Stop, DUI Arrest & DMV", color: "#60A5FA" },
   { n: 2, label: "Parole Retaliation, HOPE Abuse & Policy 19-03", color: "#A78BFA" },
-  { n: 3, label: "Consumer Fraud / Defective Vehicle", color: "#FBBF24" },
+  { n: 3, label: "Employment Violations", color: "#FBBF24" },
   { n: 4, label: "Administrative Writs & Habeas Corpus", color: "#34D399" },
+  { n: 5, label: "Consumer Fraud / Defective Vehicle", color: "#F97316" },
 ];
 
 const PERTINENT_FILINGS = [
