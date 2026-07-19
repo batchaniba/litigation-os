@@ -186,6 +186,7 @@ export function JudicialOpinionsTab() {
         border: `1px solid ${GOLD}30`,
         borderRadius: 10, padding: "20px 24px",
         borderLeft: `3px solid ${GOLD}`,
+        marginBottom: 16,
       }}>
         <div style={{
           fontFamily: "'DM Sans', sans-serif", fontSize: 10, fontWeight: 700,
@@ -200,6 +201,38 @@ export function JudicialOpinionsTab() {
           No ruling to date has resolved a matter on a fully developed factual record.
           The dashcam footage, blood-draw warrant, and structural-bias evidence that drive the
           underlying claims remain unreached by any court.
+        </p>
+      </div>
+
+      {/* CSK Pattern note */}
+      <div style={{
+        background: theme.cardBg,
+        border: `1px solid ${RED}30`,
+        borderRadius: 10, padding: "20px 24px",
+        borderLeft: `3px solid ${RED}`,
+      }}>
+        <div style={{
+          fontFamily: "'DM Sans', sans-serif", fontSize: 10, fontWeight: 700,
+          letterSpacing: 2, textTransform: "uppercase", color: RED, marginBottom: 10,
+        }}>Judicial Assignment Pattern — Magistrate Judge Chi Soo Kim (CSK)</div>
+        <p style={{
+          fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: theme.secondaryText,
+          lineHeight: 1.8, margin: "0 0 12px",
+        }}>
+          Magistrate Judge Chi Soo Kim has been assigned to three separate E.D. Cal. matters —
+          Matter 1 (2:25-cv-01460-DC-CSK), Matter 21 (2:26-cv-00191-DJC-CSK), and Matter 7
+          (2:26-cv-00983-DC-CSK) — and has ruled adversely in all three, in that order.
+        </p>
+        <p style={{
+          fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: theme.secondaryText,
+          lineHeight: 1.8, margin: 0,
+        }}>
+          The pattern is compounding: the Matter 7 F&R (June 15, 2026) explicitly cross-referenced
+          the Matter 1 F&R (April 20, 2026), citing it as evidence that plaintiff's complaints are
+          "pending dismissal for failure to state a claim." Each adverse ruling by the same judicial
+          officer is being recycled as ammunition in the next matter — a feedback loop in which the
+          outcome of one case prejudices the next before any merits hearing. This pattern warrants
+          monitoring for recusal grounds under 28 U.S.C. § 455 on future E.D. Cal. filings.
         </p>
       </div>
     </div>
