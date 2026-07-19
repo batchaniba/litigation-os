@@ -39,20 +39,20 @@ export default function LitigationPortfolio() {
 
       {/* Header */}
       <div style={{ background: theme.headerBg, borderBottom: `2px solid ${GOLD}` }}>
-        <div style={{ maxWidth: 1200, margin: "0 auto", padding: "20px 24px 20px", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 16 }}>
+        <div style={{ maxWidth: 1200, margin: "0 auto", padding: "20px 24px 20px", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 24 }}>
           {/* Logo */}
           <img
             src={darkMode ? "/logo-dark.png" : "/logo-light.png"}
             alt="Newanforbi — In Propria Persona"
-            style={{ height: 90, width: 90, objectFit: "contain", flexShrink: 0 }}
+            style={{ height: 120, width: 120, objectFit: "cover", flexShrink: 0, borderRadius: "50%" }}
           />
-          <div>
+          <div style={{ paddingLeft: 8 }}>
             <div style={{ color: GOLD, fontSize: 11, fontFamily: "'DM Sans', sans-serif", fontWeight: 700, letterSpacing: 4, textTransform: "uppercase", marginBottom: 6 }}>Litigation Portfolio</div>
             <h1 style={{ fontSize: 32, fontWeight: 700, color: theme.headerText, margin: 0, lineHeight: 1.1 }}>Brendan Ngehsi Newanforbi</h1>
             <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: BODY_GRAY, marginTop: 6 }}>Pro Se / In Propria Persona · Prepared {PORTFOLIO.prepared_date}</div>
           </div>
           {/* Westlaw Accolade */}
-          <div style={{ flex: 1, display: "flex", alignItems: "flex-end", justifyContent: "flex-start", paddingLeft: 28, minWidth: 0 }}>
+          <div style={{ flex: 1, display: "flex", alignItems: "flex-end", justifyContent: "flex-start", paddingLeft: 40, minWidth: 0 }}>
             <div>
               <div style={{ fontSize: 9, fontFamily: "'DM Sans', sans-serif", fontWeight: 700, letterSpacing: 3, color: GOLD, textTransform: "uppercase", marginBottom: 6 }}>
                 📚 Westlaw-Indexed
