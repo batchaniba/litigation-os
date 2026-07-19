@@ -57,9 +57,12 @@ const CLUSTERS = [
 
 const PERTINENT_FILINGS = [
   { title: "Newanforbi v. CDCR, et al.", matter: 15 },
-  { title: "Newanforbi v. Candelaria, et al.", matter: 7 },
   { title: "Newanforbi v. Serrato et al.", matter: 24 },
+  { title: "Newanforbi v. Federal Express Corporation", matter: 25 },
+  { title: "Newanforbi v. United Parcel Service, Inc.", matter: 26 },
+  { title: "Newanforbi v. Randstad, et al.", matter: 27 },
   { title: "Newanforbi v. Shannon Smith, LCSW, et al.", matter: 28 },
+  { title: "Newanforbi v. Amazon.com Services, LLC", matter: 29 },
   { title: "Newanforbi v. Moua, et al.", matter: 30 },
 ];
 
