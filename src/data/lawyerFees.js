@@ -267,22 +267,22 @@ export const lawyer_fees = [
     notes: "Pre-filing stage. Eleven documents: 5 PDFs (13 pages) — Amazon Simple Hire Checklists (2), Amazon Jobs BGC-status emails (2), and Equifax onboarding reminder — and 6 screenshots (6 pages) documenting the application, pre-hire appointment, Amazon/Accurate Background SMS chain, and pending BGC status. No complaint drafted yet; hours reflect case assessment and theory development from the established §290.46(j) portfolio template. Fee-shifting under PC §290.46(j)(4)(A), FCRA, and ICRAA applies upon prevailing."
   },
   {
-    number: 30, caption: "Newanforbi v. Moua, et al.", caseNumber: "TBD",
+    number: 30, caption: "Newanforbi v. Moua, et al.", caseNumber: "TBD (filed Sep. 16, 2026; awaiting court assignment)",
     court: "USDC N.D. Cal.",
     type: "Federal — 42 U.S.C. §1983 (First Amendment Retaliation + Due Process); Bane Act Cal. Civ. Code §52.1; IIED",
-    status: "Pre-complaint — Gary Noguchi served Jul. 7, 2026; Joseelyn Rojo served Jul. 14, 2026; complaint being drafted",
-    documentsCount: 11, totalPagesReal: 38,
+    status: "Complaint filed September 16, 2026 — USDC N.D. Cal.; Gary Noguchi (Badge #7284) served Jul. 7, 2026; Joseelyn Rojo served Jul. 14, 2026; Long Moua (Badge #7472) service pending; GCA claim filed Jul. 18, 2026, deemed rejected Sep. 1, 2026",
+    documentsCount: 12, totalPagesReal: 64,
     hours: { low: 55, high: 130, mid: 85 },
     cost: { low: 15400, high: 36400, mid: 23800 },
-    notes: "Pre-filing stage. Eleven documents totaling approximately 38 real pages: 25-page Derrick FAC (Case 2:26-cv-00004-DJC-JDP, E.D. Cal. — scanned PDF, confirms triggering protected activity); 3 CASOMB submission PDFs (~5 pages — Dr. Kirsten Mason inquiry, BNN responses, telehealth accommodation request); 4 screenshots (4 pages — Agent Moua contact card, Agent Brown text exchanges, CountySuite service records); Macy's job offer (~2 pages); Macy's work schedule (~2 pages). Hours are substantially elevated versus other pre-filing matters because: (1) the complaint requires three independent §1983 retaliation theories each with distinct factual predicates; (2) Bane Act §52.1 adds a state-law coercion theory with heightened pleading requirements; (3) multiple defendants with different capacities (Moua as primary actor, Noguchi/Rojo as supervisors); (4) the retaliatory file-transfer-to-Moua theory requires careful pleading of causation in a two-step chain. Federal complaint drafting is the primary cost driver; fee-shifting under 42 U.S.C. §1988 and Bane Act makes attorney fee recovery highly probable on prevailing."
+    notes: "Complaint filed Sep. 16, 2026. Twelve documents totaling approximately 64 real pages: 26-page verified complaint (Newanforbi v. Moua, et al.); 25-page Derrick FAC (Case 2:26-cv-00004-DJC-JDP, E.D. Cal. — scanned PDF, confirms triggering protected activity and Noguchi as named co-defendant); 3 CASOMB submission PDFs (~5 pages — Dr. Kirsten Mason inquiry, BNN responses, telehealth accommodation request); 4 screenshots (4 pages — Agent Moua contact card, Agent Brown text exchanges, CountySuite service records); Macy's job offer (~2 pages); Macy's work schedule (~2 pages). Hours are substantially elevated because: (1) the complaint requires three independent §1983 retaliation theories each with distinct factual predicates; (2) Bane Act §52.1 adds a state-law coercion theory requiring Shoyoye pleading of independence; (3) Heck v. Humphrey and absolute immunity must be preemptively addressed; (4) Government Claims Act exhaustion (GCA claim Jul. 18, deemed rejected Sep. 1) must be pleaded; (5) supervisory liability for Noguchi (named Derrick FAC co-defendant + 1502-DR co-author) and Rojo. Fee-shifting under 42 U.S.C. §1988 and mandatory Bane Act attorney fees make attorney fee recovery highly probable on prevailing."
   },
 ];
 
 export const lawyer_fees_summary = {
-  analysisDate: "2026-07-17",
+  analysisDate: "2026-09-16",
   totalMatters: 30,
-  totalDocumentsAnalyzed: 256,
-  totalPagesReal: 3287,
+  totalDocumentsAnalyzed: 257,
+  totalPagesReal: 3313,
   methodology: {
     blendedHourlyRate: 280,
     rateRange: { seniorPartner: [350, 450], midAssociate: [250, 350], paralegal: [150, 200] },
