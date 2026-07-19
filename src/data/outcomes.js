@@ -242,6 +242,17 @@ export const outcomes = {
       note: "Cited to portray Plaintiff as litigious — instead became the portfolio's Westlaw-indexed accolade, now featured in the site header (2026 WL 1067541 · 2026 WL 1389969).",
     },
     {
+      quote: "Newanforbi has not administratively challenged CDCR's actions and he cannot pretend to know how CDCR would address a meritorious grievance.",
+      speaker: "Kathleen R. Walton, Deputy Attorney General",
+      role: "California Attorney General's Office — counsel for Respondent Jeffrey Macomber (CDCR)",
+      source: "Reply to Opposition to Respondent's Demurrer, p.3",
+      case_no: "26WM000028",
+      date: "May 15, 2026",
+      matter: 9,
+      category: "dismissive",
+      note: "Casts Plaintiff's exhaustion argument as presumptuous rather than substantive — yet the same court's May 29, 2026 order later found CDCR itself 'refuses to provide any explanation' for why it undertook the discharge review process in the first place.",
+    },
+    {
       quote: "While Defendant Serrato had discretion to certify the request, he did not have discretion to retaliate against Mr. Newanforbi.",
       speaker: "Magistrate Judge Ajay S. Krishnan",
       role: "U.S. Magistrate Judge, USDC N.D. Cal.",
