@@ -8,10 +8,10 @@ export const lawyer_fees = [
     number: 1, caption: "Newanforbi v. CHP et al.", caseNumber: "2:25-cv-01460-DC-CSK",
     court: "USDC E.D. Cal.", type: "Federal - 42 U.S.C. 1983 (4th/14th Amend., Monell)",
     status: "Filed 05/27/2025; MTD fully briefed (MTD, Opposition, Reply); ruling pending",
-    documentsCount: 23, totalPagesReal: 108,
-    hours: { low: 48.4, high: 85.2, mid: 66.8 },
-    cost: { low: 13552, high: 23856, mid: 18704 },
-    notes: "Real page counts are far smaller than a naive filename-based guess would suggest (108 total pages, not 1,000+); the MTD briefing cycle is genuinely modest in length. Opposing-party filings (CHP's MTD, AG's Reply) are billed only at a light review rate, not drafting rate."
+    documentsCount: 25, totalPagesReal: 116,
+    hours: { low: 49.4, high: 88.2, mid: 68.8 },
+    cost: { low: 13832, high: 24696, mid: 19264 },
+    notes: "Real page counts are far smaller than a naive filename-based guess would suggest (116 total pages, not 1,000+); the MTD briefing cycle is genuinely modest in length. Opposing-party filings (CHP's MTD, AG's Reply) are billed only at a light review rate, not drafting rate. True-up increment: Notice of Change of Address and a Notice of Supplemental Authority (Serrato Order) were present on disk but not previously counted; billed at flat administrative rates."
   },
   {
     number: 2, caption: "Newanforbi v. Meza-Gonzalez et al.", caseNumber: "26CV168913",
@@ -44,10 +44,10 @@ export const lawyer_fees = [
     number: 5, caption: "Newanforbi v. Palacios et al.", caseNumber: "STK-CV-UF-2026-0001032",
     court: "San Joaquin Sup. Ct.", type: "State",
     status: "Active — Demurrer to FAC fully briefed; hearing 07/15/2026; discovery underway",
-    documentsCount: 33, totalPagesReal: 821,
-    hours: { low: 420.1, high: 682.8, mid: 551.45 },
-    cost: { low: 117628, high: 191184, mid: 154406 },
-    notes: "Largest matter in this batch by real page count (821 pages across 33 files) — driven mainly by heavy bilateral discovery (377 pp) and two large Requests for Judicial Notice (222 pp combined). The prior 712-page 'CASOMB Complaint' estimate in LAWYER_FEES_CALCULATOR.md does not match the actual file (38 real pages); real pdfinfo counts were used throughout. Matters.js notes that 12 underlying discovery-production PDFs (defendants' document production) were removed from the public repository after review and are correctly absent from both the ground-truth JSON and this cost estimate."
+    documentsCount: 38, totalPagesReal: 833,
+    hours: { low: 422.1, high: 687.8, mid: 554.95 },
+    cost: { low: 118188, high: 192584, mid: 155386 },
+    notes: "Largest matter in this batch by real page count (833 pages across 38 files) — driven mainly by heavy bilateral discovery (377 pp) and two large Requests for Judicial Notice (222 pp combined). The prior 712-page 'CASOMB Complaint' estimate in LAWYER_FEES_CALCULATOR.md does not match the actual file (38 real pages); real pdfinfo counts were used throughout. Matters.js notes that 12 underlying discovery-production PDFs (defendants' document production) were removed from the public repository after review and are correctly absent from both the ground-truth JSON and this cost estimate. True-up increment: the Order Sustaining Demurrer to FAC (court order, light review only), a duplicate Tentative Ruling text file, and other previously uncounted administrative pages were added at light review/admin rates, not drafting rate."
   },
   {
     number: 6, caption: "Newanforbi v. HOPE et al.", caseNumber: "2:26-cv-00195-TLN-AC",
@@ -62,10 +62,10 @@ export const lawyer_fees = [
     number: 7, caption: "Newanforbi v. Candelaria", caseNumber: "2:26-cv-00983-DC-CSK",
     court: "USDC E.D. Cal.", type: "Federal - 42 U.S.C. 1983 Procedural Due Process (structural bias, DMV APS)",
     status: "Active; FAC filed Apr. 27, 2026; objections to F&R filed; awaiting ruling",
-    documentsCount: 16, totalPagesReal: 181,
-    hours: { low: 184.6, high: 287.9, mid: 236.25 },
-    cost: { low: 51688, high: 80612, mid: 66150 },
-    notes: "Highest-cost matter in the cluster because it contains two real complaint drafts (60p original + 31p FAC) totaling 91 pages of genuine pleading work; this is a defensible, non-inflated result since the original complaint is billed once at full rate and the FAC only at a reduced amendment rate."
+    documentsCount: 17, totalPagesReal: 185,
+    hours: { low: 185.1, high: 289.4, mid: 237.25 },
+    cost: { low: 51828, high: 81032, mid: 66430 },
+    notes: "Highest-cost matter in the cluster because it contains two real complaint drafts (60p original + 31p FAC) totaling 91 pages of genuine pleading work; this is a defensible, non-inflated result since the original complaint is billed once at full rate and the FAC only at a reduced amendment rate. True-up increment: a Notice of Supplemental Authority (Serrato Order) present on disk but not previously counted, billed at a flat administrative rate."
   },
   {
     number: 8, caption: "Newanforbi v. Candelaria, et al.", caseNumber: "26WM000135",
@@ -134,10 +134,10 @@ export const lawyer_fees = [
     number: 15, caption: "Newanforbi v. California Department of Corrections and Rehabilitation, et al.", caseNumber: "STK-CV-UPI-2026-5417",
     court: "San Joaquin Sup. Ct.", type: "State",
     status: "Active — Complaint for Damages filed June 11, 2026; CDCR & Dodd served June 22; responsive pleading due ~July 22, 2026",
-    documentsCount: 17, totalPagesReal: 445,
-    hours: { low: 300, high: 418, mid: 359 },
-    cost: { low: 84000, high: 117040, mid: 100520 },
-    notes: "Largest matter in this batch (445 real pages, 17 files). Multiple complaint versions reflect genuine post-demurrer recalibration (companion Macomber mandate case, Matter 19/9, received an adverse tentative ruling that forced a damages-only rewrite) rather than pure duplication. The two ~110-page files were billed at evidence-compilation, not complaint, rates specifically to keep the estimate defensible rather than inflated."
+    documentsCount: 19, totalPagesReal: 448,
+    hours: { low: 300.5, high: 419.5, mid: 360 },
+    cost: { low: 84140, high: 117460, mid: 100800 },
+    notes: "Largest matter in this batch (448 real pages, 19 files). Multiple complaint versions reflect genuine post-demurrer recalibration (companion Macomber mandate case, Matter 19/9, received an adverse tentative ruling that forced a damages-only rewrite) rather than pure duplication. The two ~110-page files were billed at evidence-compilation, not complaint, rates specifically to keep the estimate defensible rather than inflated. True-up increment: a meet-and-confer calendar invite and a minor administrative filing present on disk but not previously counted, billed at flat administrative rates."
   },
   {
     number: 16, caption: "Newanforbi v. Rojo", caseNumber: "TBD (San Joaquin Sup. Ct.)",
@@ -170,10 +170,10 @@ export const lawyer_fees = [
     number: 19, caption: "Newanforbi v. Macomber", caseNumber: "C2604791",
     court: "Santa Clara Sup. Ct.", type: "Habeas Corpus — Immediate Discharge from Parole (Pen. Code §1473; PC §§3000, 3001, 3008(d)(2); 15 CCR §3574)",
     status: "Active — Filed 04/03/2026; OSC anticipated 06/05/2026",
-    documentsCount: 2, totalPagesReal: 69,
-    hours: { low: 40.5, high: 72, mid: 56.25 },
-    cost: { low: 11340, high: 20160, mid: 15750 },
-    notes: "Companion matter to Matters 9, 10, and 11 (same administrative record); targets the parole term itself rather than treatment compulsion. The 67-page petition is unusually dense for a habeas filing (5 causes of action, 6 exhibits, extensive regulatory/case-law analysis re: In re Gadlin, In re Leman, ACSOL v. Macomber), justifying the top of the 40-70 hr specialized-habeas range."
+    documentsCount: 3, totalPagesReal: 70,
+    hours: { low: 41, high: 73, mid: 57 },
+    cost: { low: 11480, high: 20440, mid: 15960 },
+    notes: "Companion matter to Matters 9, 10, and 11 (same administrative record); targets the parole term itself rather than treatment compulsion. The 67-page petition is unusually dense for a habeas filing (5 causes of action, 6 exhibits, extensive regulatory/case-law analysis re: In re Gadlin, In re Leman, ACSOL v. Macomber), justifying the top of the 40-70 hr specialized-habeas range. True-up increment: Notice of Change of Address present on disk but not previously counted, billed at a flat administrative rate."
   },
   {
     number: 20, caption: "Newanforbi v. California Highway Patrol, et al.", caseNumber: "26CV191136",
@@ -188,19 +188,19 @@ export const lawyer_fees = [
     number: 21, caption: "Newanforbi v. Rojo et al.", caseNumber: "2:26-cv-00193-DC-CKD",
     court: "USDC E.D. Cal.", type: "Federal",
     status: "DISMISSED WITH PREJUDICE — Notice of Voluntary Dismissal (FRCP 41(a)(1)(A)(i)) filed June 29, 2026, self-executing; no defendant ever answered or moved",
-    documentsCount: 1, totalPagesReal: 9,
-    hours: { low: 28, high: 41, mid: 34.5 },
-    cost: { low: 7840, high: 11480, mid: 9660 },
-    notes: "Only the complaint itself is present in the documents folder. Case was voluntarily dismissed with prejudice before any defendant answered or moved, so no motion practice is billed."
+    documentsCount: 2, totalPagesReal: 21,
+    hours: { low: 28.5, high: 42.5, mid: 35.5 },
+    cost: { low: 7980, high: 11900, mid: 9940 },
+    notes: "Only the complaint itself is billable drafting work; the folder also contains a 12-page CSK order (Barocio-related) present on disk but not previously counted — billed at a light review-only rate since court orders are not billable attorney drafting time. Case was voluntarily dismissed with prejudice before any defendant answered or moved, so no motion practice is billed."
   },
   {
     number: 22, caption: "Newanforbi v. Pilot Travel Centers LLC", caseNumber: "STK-CV-UWT-2026-0007649",
     court: "San Joaquin Sup. Ct.", type: "State — PC §290.46(j) / FCRA / ICRAA / UCL / Wrongful Termination",
     status: "SETTLED July 11, 2026 — resolved in under six weeks, before service completed",
-    documentsCount: 7, totalPagesReal: 47,
-    hours: { low: 62, high: 102, mid: 82 },
-    cost: { low: 17360, high: 28560, mid: 22960 },
-    notes: "Light litigation footprint by design: a complaint was drafted and filed, but the matter settled via demand letter and negotiation before service was even completed, so no answer, motion practice, or discovery ever occurred — billed accordingly at pre-litigation/negotiation intensity rather than full federal-style motion practice."
+    documentsCount: 8, totalPagesReal: 45,
+    hours: { low: 63, high: 103.5, mid: 83.25 },
+    cost: { low: 17640, high: 28980, mid: 23310 },
+    notes: "Light litigation footprint by design: a complaint was drafted and filed, but the matter settled via demand letter and negotiation before service was even completed, so no answer, motion practice, or discovery ever occurred — billed accordingly at pre-litigation/negotiation intensity rather than full federal-style motion practice. True-up increment: the process server's Invoice and Signed Proof of Service (POS-010), relocated into this folder during an earlier cleanup, was present on disk but not previously counted — billed at evidence/exhibit rate."
   },
   {
     number: 23, caption: "Newanforbi v. Macy's Inc. et al.", caseNumber: "TBD",
@@ -251,10 +251,10 @@ export const lawyer_fees = [
     number: 28, caption: "Newanforbi v. Shannon Smith, LCSW, CEO, et al.", caseNumber: "TBD",
     court: "USDC N.D. Cal.", type: "Federal — 42 U.S.C. §1983 (Monell + Individual Capacity); Bane Act §52.1; Fraud/Negligent Misrepresentation; RICO 18 U.S.C. §1962(c)-(d)",
     status: "Complaint (v2) mailed Jul. 16, 2026; anticipated receipt USDC N.D. Cal. Jul. 20, 2026",
-    documentsCount: 6, totalPagesReal: 53,
-    hours: { low: 90, high: 155, mid: 122.5 },
-    cost: { low: 25200, high: 43400, mid: 34300 },
-    notes: "Six documents totaling approximately 53 pages: 22-page federal complaint (the dominant cost driver — novel theory development across RICO, §1983 Monell, individual-capacity §1983, Bane Act, and fraud/negligent misrepresentation in a single pleading; hours are elevated accordingly); 4-page Motion for Protective Order; 3-page supporting Declaration; state court Stipulated Protective Order as Exhibit A (~10 pages); 5-page Proposed NDCA Protective Order; 9-page signed state Stipulated PO. Hours reflect drafting a complex multi-theory federal complaint from scratch leveraging 542 pages of discovery already produced in the dismissed state case, plus preparation of the contemporaneous protective-order motion package. Fee-shifting under §1988 and RICO makes attorney fee recovery highly probable if Plaintiff prevails."
+    documentsCount: 6, totalPagesReal: 75,
+    hours: { low: 101, high: 174, mid: 137.5 },
+    cost: { low: 28280, high: 48720, mid: 38500 },
+    notes: "Six documents totaling 75 real pages (corrected from a 53-page estimate — several documents ran longer than originally guessed): 24-page federal complaint (the dominant cost driver — novel theory development across RICO, §1983 Monell, individual-capacity §1983, Bane Act, and fraud/negligent misrepresentation in a single pleading; hours are elevated accordingly); 10-page Motion for Protective Order; 6-page supporting Declaration (billed per-document, not per-page, per methodology); state court Stipulated Protective Order as Exhibit A (12 pages); 12-page Proposed NDCA Protective Order; 11-page signed state Stipulated PO. Hours reflect drafting a complex multi-theory federal complaint from scratch leveraging 542 pages of discovery already produced in the dismissed state case, plus preparation of the contemporaneous protective-order motion package — now correctly priced against the actual, longer motion and proposed-order page counts. Fee-shifting under §1988 and RICO makes attorney fee recovery highly probable if Plaintiff prevails."
   },
   {
     number: 29, caption: "Newanforbi v. Amazon.com Services, LLC", caseNumber: "TBD",
@@ -271,29 +271,29 @@ export const lawyer_fees = [
     court: "USDC N.D. Cal.",
     type: "Federal — 42 U.S.C. §1983 (First Amendment Retaliation + Due Process); Bane Act Cal. Civ. Code §52.1; IIED",
     status: "Complaint filed September 16, 2026 — USDC N.D. Cal.; Gary Noguchi (Badge #7284) served Jul. 7, 2026; Joseelyn Rojo served Jul. 14, 2026; Long Moua (Badge #7472) service pending; GCA claim filed Jul. 18, 2026, deemed rejected Sep. 1, 2026",
-    documentsCount: 12, totalPagesReal: 64,
-    hours: { low: 55, high: 130, mid: 85 },
-    cost: { low: 15400, high: 36400, mid: 23800 },
-    notes: "Complaint filed Sep. 16, 2026. Twelve documents totaling approximately 64 real pages: 26-page verified complaint (Newanforbi v. Moua, et al.); 25-page Derrick FAC (Case 2:26-cv-00004-DJC-JDP, E.D. Cal. — scanned PDF, confirms triggering protected activity and Noguchi as named co-defendant); 3 CASOMB submission PDFs (~5 pages — Dr. Kirsten Mason inquiry, BNN responses, telehealth accommodation request); 4 screenshots (4 pages — Agent Moua contact card, Agent Brown text exchanges, CountySuite service records); Macy's job offer (~2 pages); Macy's work schedule (~2 pages). Hours are substantially elevated because: (1) the complaint requires three independent §1983 retaliation theories each with distinct factual predicates; (2) Bane Act §52.1 adds a state-law coercion theory requiring Shoyoye pleading of independence; (3) Heck v. Humphrey and absolute immunity must be preemptively addressed; (4) Government Claims Act exhaustion (GCA claim Jul. 18, deemed rejected Sep. 1) must be pleaded; (5) supervisory liability for Noguchi (named Derrick FAC co-defendant + 1502-DR co-author) and Rojo. Fee-shifting under 42 U.S.C. §1988 and mandatory Bane Act attorney fees make attorney fee recovery highly probable on prevailing."
+    documentsCount: 12, totalPagesReal: 107,
+    hours: { low: 56, high: 132, mid: 86.5 },
+    cost: { low: 15680, high: 36960, mid: 24220 },
+    notes: "Complaint filed Sep. 16, 2026. Twelve documents totaling 107 real pages (corrected from a 64-page estimate): 26-page verified complaint (Newanforbi v. Moua, et al.); 25-page Derrick FAC (Case 2:26-cv-00004-DJC-JDP, E.D. Cal. — scanned PDF, confirms triggering protected activity and Noguchi as named co-defendant); 3 CASOMB submission PDFs (~5 pages — Dr. Kirsten Mason inquiry, BNN responses, telehealth accommodation request); 4 screenshots (4 pages — Agent Moua contact card, Agent Brown text exchanges, CountySuite service records); Macy's job offer (~3 pages); Macy's work schedule (~2 pages); and a 42-page 'Newanforbi v. CDCR, et al 3.pdf' — on inspection this is a duplicate copy of the SUM-100 Summons and Complaint for Damages already fully billed under Matter 15 (case STK-CV-UPI-2026-5417), sitting in this folder as cross-reference evidence for the Noguchi/Rojo service history — billed at a nominal flat rate (not per-page) since it is fully duplicative of already-priced Matter 15 work, not new drafting. Hours are substantially elevated because: (1) the complaint requires three independent §1983 retaliation theories each with distinct factual predicates; (2) Bane Act §52.1 adds a state-law coercion theory requiring Shoyoye pleading of independence; (3) Heck v. Humphrey and absolute immunity must be preemptively addressed; (4) Government Claims Act exhaustion (GCA claim Jul. 18, deemed rejected Sep. 1) must be pleaded; (5) supervisory liability for Noguchi (named Derrick FAC co-defendant + 1502-DR co-author) and Rojo. Fee-shifting under 42 U.S.C. §1988 and mandatory Bane Act attorney fees make attorney fee recovery highly probable on prevailing."
   },
 ];
 
 export const lawyer_fees_summary = {
   analysisDate: "2026-09-16",
   totalMatters: 30,
-  totalDocumentsAnalyzed: 274,
-  totalPagesReal: 3397,
+  totalDocumentsAnalyzed: 287,
+  totalPagesReal: 3500,
   methodology: {
     blendedHourlyRate: 280,
     rateRange: { seniorPartner: [350, 450], midAssociate: [250, 350], paralegal: [150, 200] },
     note: "Every PDF in public/documents/matter-XX/ was measured with pdfinfo for real page counts (poppler-utils), then classified by document type (complaint, motion/opposition/reply, discovery, writ/habeas, declaration, administrative, evidence) and priced using the hours-per-page/per-document conversions in docs/LAWYER_FEES_CALCULATOR.md. Opposing counsel's filings are billed only at a light review rate, never at drafting rate. Matters with no uploaded PDFs are estimated conservatively from matters.js status text.",
   },
-  totalEstimatedHours: { low: 2616.6, high: 4292.0, mid: 3446.8 },
-  totalEstimatedCost: { low: 732648, high: 1201760, mid: 965104 },
+  totalEstimatedHours: { low: 2634.6, high: 4328.0, mid: 3473.8 },
+  totalEstimatedCost: { low: 737688, high: 1211840, mid: 972664 },
   byCluster: {
-    cluster1: { label: "CHP / DUI / DMV", matters: [1, 2, 7, 8, 20, 24], costLow: 134176, costMid: 176372, costHigh: 218568 },
-    cluster2: { label: "Parole Retaliation / HOPE", matters: [3, 4, 5, 6, 11, 13, 14, 15, 16, 17, 18, 21, 28, 30], costLow: 454832, costMid: 595812, costHigh: 740992 },
-    cluster3: { label: "Consumer Fraud / Employment", matters: [12, 22, 23, 25, 26, 27, 29], costLow: 102760, costMid: 136080, costHigh: 169400 },
-    cluster4: { label: "Administrative Writs & Habeas", matters: [9, 10, 19], costLow: 40880, costMid: 56840, costHigh: 72800 },
+    cluster1: { label: "CHP / DUI / DMV", matters: [1, 2, 7, 8, 20, 24], costLow: 134596, costMid: 177212, costHigh: 219828 },
+    cluster2: { label: "Parole Retaliation / HOPE", matters: [3, 4, 5, 6, 11, 13, 14, 15, 16, 17, 18, 21, 28, 30], costLow: 459032, costMid: 601972, costHigh: 749112 },
+    cluster3: { label: "Consumer Fraud / Employment", matters: [12, 22, 23, 25, 26, 27, 29], costLow: 103040, costMid: 136430, costHigh: 169820 },
+    cluster4: { label: "Administrative Writs & Habeas", matters: [9, 10, 19], costLow: 41020, costMid: 57050, costHigh: 73080 },
   },
 };
