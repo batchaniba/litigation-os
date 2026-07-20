@@ -2,6 +2,7 @@ import { useState } from "react";
 import { GOLD } from "../constants";
 import { useTheme } from "../ThemeContext";
 import { outcomes } from "../data/outcomes";
+import { withBase } from "../utils/paths";
 
 const GREEN  = "#16a34a";
 const RED    = "#dc2626";
@@ -100,7 +101,7 @@ function OpinionCard({ item, theme }) {
           <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
             {item.document_path && (
               <a
-                href={item.document_path}
+                href={withBase(item.document_path)}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={e => e.stopPropagation()}
@@ -117,7 +118,7 @@ function OpinionCard({ item, theme }) {
             )}
             {item.objections_path && (
               <a
-                href={item.objections_path}
+                href={withBase(item.objections_path)}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={e => e.stopPropagation()}
@@ -134,7 +135,7 @@ function OpinionCard({ item, theme }) {
             )}
             {item.nsa_path && (
               <a
-                href={item.nsa_path}
+                href={withBase(item.nsa_path)}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={e => e.stopPropagation()}

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { GOLD, BODY_GRAY } from "./constants";
 import { getPDTMidnight, parseEventDatePDT } from "./utils/dateUtils";
+import { withBase } from "./utils/paths";
 import { useDeadlineClock } from "./hooks/useDeadlineClock";
 import { useCaseFilters } from "./hooks/useCaseFilters";
 import { PORTFOLIO } from "./data";
@@ -43,7 +44,7 @@ export default function LitigationPortfolio() {
         <div style={{ maxWidth: 1200, margin: "0 auto", padding: "20px 24px 20px", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 24 }}>
           {/* Logo */}
           <img
-            src={darkMode ? "/logo-dark.png" : "/logo-light.png"}
+            src={withBase(darkMode ? "/logo-dark.png" : "/logo-light.png")}
             alt="Newanforbi — In Propria Persona"
             style={{ height: 220, width: "auto", objectFit: "contain", flexShrink: 0 }}
           />
