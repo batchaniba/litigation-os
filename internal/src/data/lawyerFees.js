@@ -106,11 +106,11 @@ export const lawyer_fees = [
   {
     number: 12, caption: "Brendan Ngwa Nforbi v. Diamond Truck Sales, Inc.", caseNumber: "STK-CV-UF-2026-0001094",
     court: "San Joaquin Sup. Ct.", type: "State — Consumer Fraud / UCL",
-    status: "Active — Default ENTERED against Diamond (05/12/2026); Alpine served 07/01/2026 (POS-010, Levying Officer File No. 2026002577); CM-110 filed 07/20/2026; CMC 08/12/2026",
-    documentsCount: 19, totalPagesReal: 139,
-    hours: { low: 138, high: 225, mid: 181.5 },
-    cost: { low: 38640, high: 63000, mid: 50820 },
-    notes: "Active case with a real 34-page amended complaint and a substantial 58-page default judgment packet already on file, so the fee estimate here is meaningfully higher than a generic 'early-stage/light filing' guess — the underlying documents show genuine substantive drafting work, not just a bare-bones complaint. Increment: 6-page CM-110 Case Management Statement (filed Jul. 20, 2026), billed as a flat administrative filing plus a short sworn declaration (Attachment 4b itemizing the $78,671.20 default judgment prove-up), not per-page drafting rate; and a 2-page formal POS-010 Proof of Service for Alpine Truck Sales (Levying Officer File No. 2026002577) — a duplicate confirmation of the already-tracked July 1, 2026 service, billed at a nominal administrative rate."
+    status: "Active — Default ENTERED against Diamond (05/12/2026); Alpine served 07/01/2026 (POS-010, Levying Officer File No. 2026002577); Alpine default judgment packet pre-drafted, execution date 08/01/2026; CM-110 filed 07/20/2026; CMC 08/12/2026",
+    documentsCount: 20, totalPagesReal: 147,
+    hours: { low: 148, high: 242, mid: 195 },
+    cost: { low: 41440, high: 67760, mid: 54600 },
+    notes: "Active case with a real 34-page amended complaint and a substantial 58-page default judgment packet already on file, so the fee estimate here is meaningfully higher than a generic 'early-stage/light filing' guess — the underlying documents show genuine substantive drafting work, not just a bare-bones complaint. Increment: 6-page CM-110 Case Management Statement (filed Jul. 20, 2026), billed as a flat administrative filing plus a short sworn declaration (Attachment 4b itemizing the $78,671.20 default judgment prove-up), not per-page drafting rate; a 2-page formal POS-010 Proof of Service for Alpine Truck Sales (Levying Officer File No. 2026002577) — a duplicate confirmation of the already-tracked July 1, 2026 service, billed at a nominal administrative rate; and an 8-page Alpine Default Judgment Packet (3-page CIV-100 Request for Entry of Default/Court Judgment, billed at a flat administrative-filing rate, plus a 5-page supporting Declaration developing the derivative successor-liability/alter-ego theory — billed at a motion-brief-adjacent rate given the legal research and case citations required, not a routine declaration rate)."
   },
   {
     number: 13, caption: "Newanforbi v. Urrea et al.", caseNumber: "2:26-cv-00190-DC-SCR",
@@ -281,19 +281,19 @@ export const lawyer_fees = [
 export const lawyer_fees_summary = {
   analysisDate: "2026-09-16",
   totalMatters: 30,
-  totalDocumentsAnalyzed: 289,
-  totalPagesReal: 3508,
+  totalDocumentsAnalyzed: 290,
+  totalPagesReal: 3516,
   methodology: {
     blendedHourlyRate: 280,
     rateRange: { seniorPartner: [350, 450], midAssociate: [250, 350], paralegal: [150, 200] },
     note: "Every PDF in public/documents/matter-XX/ was measured with pdfinfo for real page counts (poppler-utils), then classified by document type (complaint, motion/opposition/reply, discovery, writ/habeas, declaration, administrative, evidence) and priced using the hours-per-page/per-document conversions in docs/LAWYER_FEES_CALCULATOR.md. Opposing counsel's filings are billed only at a light review rate, never at drafting rate. Matters with no uploaded PDFs are estimated conservatively from matters.js status text.",
   },
-  totalEstimatedHours: { low: 2636.6, high: 4333.0, mid: 3477.3 },
-  totalEstimatedCost: { low: 738248, high: 1213240, mid: 973644 },
+  totalEstimatedHours: { low: 2646.6, high: 4350.0, mid: 3490.8 },
+  totalEstimatedCost: { low: 741048, high: 1218000, mid: 977424 },
   byCluster: {
     cluster1: { label: "CHP / DUI / DMV", matters: [1, 2, 7, 8, 20, 24], costLow: 134596, costMid: 177212, costHigh: 219828 },
     cluster2: { label: "Parole Retaliation / HOPE", matters: [3, 4, 5, 6, 11, 13, 14, 15, 16, 17, 18, 21, 28, 30], costLow: 459032, costMid: 601972, costHigh: 749112 },
-    cluster3: { label: "Consumer Fraud / Employment", matters: [12, 22, 23, 25, 26, 27, 29], costLow: 103600, costMid: 137410, costHigh: 171220 },
+    cluster3: { label: "Consumer Fraud / Employment", matters: [12, 22, 23, 25, 26, 27, 29], costLow: 106400, costMid: 141190, costHigh: 175980 },
     cluster4: { label: "Administrative Writs & Habeas", matters: [9, 10, 19], costLow: 41020, costMid: 57050, costHigh: 73080 },
   },
 };
