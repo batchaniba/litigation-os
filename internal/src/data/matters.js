@@ -384,7 +384,7 @@ export const cases = [
         { label: "DTS Default Judgment Packet", path: "/documents/matter-12/DTS Default Judgment Packet.pdf" },
         { label: "Proof of Service of Summons — Alpine Truck Sales, Inc. (photo, served July 1, 2026; POS-010 signed July 2, 2026)", path: "/documents/matter-12/1094 POS010 Proof of Service of Summons - Alpine (July 1, 2026).jpeg" },
         { label: "POS-010 Proof of Service of Summons — Alpine Truck Sales, Inc. (formal filed copy; Levying Officer File No. 2026002577)", path: "/documents/matter-12/POS010 Proof of Service - Alpine Truck Sales (Levying Officer File No. 2026002577).pdf" },
-        { label: "Alpine Default Judgment Packet — CIV-100 Request for Entry of Default/Court Judgment + Declaration (pre-drafted, execution date Aug. 1, 2026)", path: "/documents/matter-12/Alpine Default Judgment Packet (Pre-Drafted, Execution Date Aug 1 2026).pdf" },
+        { label: "Alpine Default Judgment Packet — complete filing record: CIV-100 Request for Entry of Default/Court Judgment, Declaration, and Exhibits 1–10 with covers (pre-drafted, execution date Aug. 1, 2026)", path: "/documents/matter-12/Alpine Default Judgment Packet (Pre-Drafted, Execution Date Aug 1 2026).pdf" },
         { label: "Notice of Change of Address (filed July 7, 2026)", path: "/documents/matter-12/Notice of Change of Address (July 7, 2026).pdf" },
         { label: "CM-110 Case Management Statement, incl. Attachment 4b Declaration in Support of Default Judgment (filed July 20, 2026)", path: "/documents/matter-12/CM110 Case Management Statement (Jul 20 2026).pdf" }
       ]
