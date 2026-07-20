@@ -256,7 +256,7 @@ export const outcomes = {
       case_no: "C2604791",
       date: "July 2, 2026",
       matter: 19,
-      category: "backhanded",
+      category: "procedural",
       note: "Framed as a scheduling matter, but the stated reason is the volume of Plaintiff's filed papers — a court, not opposing counsel, on the record describing the habeas petition as substantial enough to require additional time beyond the standard 60-day review period.",
     },
     {
