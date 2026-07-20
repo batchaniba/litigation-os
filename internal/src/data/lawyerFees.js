@@ -221,31 +221,31 @@ export const lawyer_fees = [
     notes: "Newest and lightest matter in the cluster; only a single 21-page complaint plus routine N.D. Cal. intake paperwork (IFP application, proposed summons, ISC/magistrate consent form) have been filed so far."
   },
   {
-    number: 25, caption: "Newanforbi v. Federal Express Corporation", caseNumber: "TBD",
+    number: 25, caption: "Newanforbi v. Federal Express Corporation", caseNumber: "STK-CV-UWT-2026-0009118",
     court: "San Joaquin Sup. Ct.", type: "State — PC §290.46(j) / ICRAA / Wrongful Failure to Hire",
-    status: "Filed July 15, 2026; Case No. STK-CV-UWT-2026-0009118; Dept. 10B, Hon. Blanca Banuelos; CMC Jan. 14, 2027",
-    documentsCount: 11, totalPagesReal: 28,
-    hours: { low: 45, high: 75, mid: 60 },
-    cost: { low: 12600, high: 21000, mid: 16800 },
-    notes: "Filed July 15, 2026. The 18-page, six-count complaint is the only substantive drafting product; the remaining 9 pages are single-page First Advantage notice/reminder emails reviewed for the factual record. No answer, motion practice, or discovery exists yet; service not yet completed."
+    status: "Filed July 15, 2026; Case No. STK-CV-UWT-2026-0009118; Dept. 10B, Hon. Blanca Banuelos; CMC Jan. 14, 2027; FW-003 Fee Waiver GRANTED July 15, 2026",
+    documentsCount: 17, totalPagesReal: 53,
+    hours: { low: 47, high: 79, mid: 63 },
+    cost: { low: 13160, high: 22120, mid: 17640 },
+    notes: "Filed July 15, 2026. The 18-page, six-count complaint is the only substantive drafting product; most remaining pages are single-page First Advantage notice/reminder emails reviewed for the factual record. Increment since the prior estimate: file-stamped complaint confirmation pages, the FW-003 fee waiver order (GRANTED), a duplicate Notice of Case Assignment/Hearing, and the SUM-100 Summons — all billed at light administrative/evidence-review rates, not drafting rate. No answer, motion practice, or discovery exists yet; service not yet completed."
   },
   {
-    number: 26, caption: "Newanforbi v. United Parcel Service, Inc.", caseNumber: "TBD",
+    number: 26, caption: "Newanforbi v. United Parcel Service, Inc.", caseNumber: "STK-CV-UWT-2026-0009113",
     court: "San Joaquin Sup. Ct.", type: "State — PC §290.46(j) / ICRAA / Wrongful Failure to Hire",
-    status: "Filed July 15, 2026; Case No. STK-CV-UWT-2026-0009113; limitations period preserved (16 days ahead of July 31, 2026 cutoff); Dept. 11B, Hon. Robert T. Waters; CMC Jan. 13, 2027",
-    documentsCount: 6, totalPagesReal: 23,
-    hours: { low: 40, high: 68, mid: 54 },
-    cost: { low: 11200, high: 19040, mid: 15120 },
-    notes: "Filed July 15, 2026 — 16 days before the July 31, 2026 two-year limitations cutoff, preserving all time-sensitive claims. The 18-page, six-count complaint is the only substantive drafting product; the remaining 4 pages are single-page First Advantage notice/reminder emails. No answer, motion practice, or discovery exists yet; service not yet completed."
+    status: "Filed July 15, 2026; Case No. STK-CV-UWT-2026-0009113; limitations period preserved (16 days ahead of July 31, 2026 cutoff); Dept. 11B, Hon. Robert T. Waters; CMC Jan. 13, 2027; FW-003 Fee Waiver GRANTED July 15, 2026; SER-001 Sheriff service request filed July 20, 2026",
+    documentsCount: 13, totalPagesReal: 48,
+    hours: { low: 43, high: 74, mid: 58.5 },
+    cost: { low: 12040, high: 20720, mid: 16380 },
+    notes: "Filed July 15, 2026 — 16 days before the July 31, 2026 two-year limitations cutoff, preserving all time-sensitive claims. The 18-page, six-count complaint is the only substantive drafting product; most remaining pages are single-page First Advantage notice/reminder emails. Increment since the prior estimate: file-stamped complaint confirmation pages, the FW-003 fee waiver order (GRANTED), a duplicate Notice of Case Assignment/Hearing, the SUM-100 Summons, and a 5-page SER-001 Request for Sheriff to Serve Court Papers (Sacramento County, registered-agent service, requested deadline July 31, 2026) — billed as a light administrative/procedural task, not full motion-drafting rate. No answer, motion practice, or discovery exists yet."
   },
   {
-    number: 27, caption: "Newanforbi v. Randstad, et al.", caseNumber: "TBD",
-    court: "San Joaquin Sup. Ct.", type: "State — PC §290.46(j) / FCRA / ICRAA / Wrongful Termination",
-    status: "Pre-adverse notice received Jul. 13, 2026; adverse action imminent; complaint not yet drafted or filed",
-    documentsCount: 8, totalPagesReal: 24,
-    hours: { low: 32, high: 58, mid: 44 },
-    cost: { low: 8960, high: 16240, mid: 12320 },
-    notes: "Pre-filing stage. Eight documents analyzed: three onboarding/notice emails (rehire confirmation, MVR request, InfoMart FCRA pre-adverse notice); the 15-page InfoMart background check report (Order No. 15780719) — the evidentiary centerpiece confirming registry as the sole adverse flag; and four corroborating screenshots (Indeed application, RK Logistics auto-SMS, two Randstad recruiter iMessages establishing the inhouse staffing pipeline from June 30 Indeed application through July 2 Watkins referral). Hours reflect case assessment, initial theory development, BGC report analysis, and complaint-drafting preparation based on the Matters 22/25/26 template. Once drafted, the complaint will add a substantial increment tracked in a future update."
+    number: 27, caption: "Newanforbi v. Randstad, et al.", caseNumber: "TBD (Alameda Sup. Ct.)",
+    court: "Alameda Sup. Ct.", type: "State — PC §290.46(j) / Wrongful Termination / ICRAA / Negligence Per Se / UCL",
+    status: "Employment terminated July 15, 2026. Verified Complaint for Damages executed July 20, 2026; Pre-Filing Demand Letters sent to Randstad and RK Logistics same day ($85,000 each, deadline Aug. 2, 2026); SER-001 Sheriff service request executed for Randstad; not yet e-filed — no case number assigned",
+    documentsCount: 12, totalPagesReal: 58,
+    hours: { low: 55, high: 84, mid: 69.5 },
+    cost: { low: 15400, high: 23520, mid: 19460 },
+    notes: "Substantial increment from the prior pre-filing estimate now that the complaint and demand letters are drafted. Twelve documents, 58 real pages: the 19-page Verified Complaint for Damages (major pleading, 2–3 hr/page — dominant cost driver); two 4-page Pre-Filing Demand Letters to Randstad and RK Logistics (substantive negotiation correspondence citing Tameny, Evid. Code §669, and Bus. & Prof. Code §17200, with itemized settlement terms, billed at ~1–1.5 hr/page); the 15-page InfoMart background check report (Order No. 15780719 — evidentiary centerpiece, billed at evidence-review rate); two CA SOS registered-agent records (6 pages) and two Gmail demand-transmittal confirmations (2 pages), both at evidence-review rate; three onboarding/notice emails (rehire confirmation, MVR request, InfoMart pre-adverse notice); and a 5-page SER-001 Request for Sheriff to Serve Court Papers naming Randstad's registered agent, billed as a light administrative/procedural task. Once e-filed (if the August 2 demand deadline lapses), service and any motion practice will add a further increment."
   },
   {
     number: 28, caption: "Newanforbi v. Shannon Smith, LCSW, CEO, et al.", caseNumber: "TBD",
@@ -281,19 +281,19 @@ export const lawyer_fees = [
 export const lawyer_fees_summary = {
   analysisDate: "2026-09-16",
   totalMatters: 30,
-  totalDocumentsAnalyzed: 257,
-  totalPagesReal: 3313,
+  totalDocumentsAnalyzed: 274,
+  totalPagesReal: 3397,
   methodology: {
     blendedHourlyRate: 280,
     rateRange: { seniorPartner: [350, 450], midAssociate: [250, 350], paralegal: [150, 200] },
     note: "Every PDF in public/documents/matter-XX/ was measured with pdfinfo for real page counts (poppler-utils), then classified by document type (complaint, motion/opposition/reply, discovery, writ/habeas, declaration, administrative, evidence) and priced using the hours-per-page/per-document conversions in docs/LAWYER_FEES_CALCULATOR.md. Opposing counsel's filings are billed only at a light review rate, never at drafting rate. Matters with no uploaded PDFs are estimated conservatively from matters.js status text.",
   },
-  totalEstimatedHours: { low: 2588.6, high: 4256.0, mid: 3413.8 },
-  totalEstimatedCost: { low: 724808, high: 1191680, mid: 955864 },
+  totalEstimatedHours: { low: 2616.6, high: 4292.0, mid: 3446.8 },
+  totalEstimatedCost: { low: 732648, high: 1201760, mid: 965104 },
   byCluster: {
     cluster1: { label: "CHP / DUI / DMV", matters: [1, 2, 7, 8, 20, 24], costLow: 134176, costMid: 176372, costHigh: 218568 },
     cluster2: { label: "Parole Retaliation / HOPE", matters: [3, 4, 5, 6, 11, 13, 14, 15, 16, 17, 18, 21, 28, 30], costLow: 454832, costMid: 595812, costHigh: 740992 },
-    cluster3: { label: "Consumer Fraud / Employment", matters: [12, 22, 23, 25, 26, 27, 29], costLow: 94920, costMid: 126840, costHigh: 159320 },
+    cluster3: { label: "Consumer Fraud / Employment", matters: [12, 22, 23, 25, 26, 27, 29], costLow: 102760, costMid: 136080, costHigh: 169400 },
     cluster4: { label: "Administrative Writs & Habeas", matters: [9, 10, 19], costLow: 40880, costMid: 56840, costHigh: 72800 },
   },
 };
