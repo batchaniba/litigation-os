@@ -69,7 +69,7 @@ export const outcomes = {
       deadline_time: "5:00 PM PT",
       counsel: "Randstad Legal / Privacy Dept.",
       counsel_email: "privacyofficer@randstad.com",
-      notes: "Verified Complaint for Damages (Alameda Sup. Ct., executed July 20, 2026) enclosed as the pre-filing exhibit. Employment terminated July 15, 2026 — only 2 business days after the July 13 FCRA pre-adverse notice, short of the 5-business-day waiting period. cc: call.center@, rus-privacy@, hrsupport@randstadusa.com, complianceofficer@randstad.com.",
+      notes: "Verified Complaint for Damages (Alameda Sup. Ct., executed July 20, 2026) enclosed as the pre-filing exhibit. Employment terminated July 15, 2026 — only 2 business days after the July 13 FCRA pre-adverse notice, short of the 5-business-day waiting period. Cites Tameny, Evid. Code §669, and Bus. & Prof. Code §17200. Non-monetary terms: written confirmation of a policy change, correction of personnel record to 'eligible for rehire,' no non-disparagement clause, confidentiality limited to the settlement amount only. Also mailed to Legal Dept./Office of General Counsel, 1 Overton Park Drive, Suite 300, Atlanta, GA 30339. cc: call.center@, rus-privacy@, hrsupport@randstadusa.com, complianceofficer@randstad.com.",
     },
     {
       matter: 27,
@@ -82,7 +82,7 @@ export const outcomes = {
       deadline_time: "5:00 PM PT",
       counsel: "RK Logistics Group Legal Dept.",
       counsel_email: "info@rklogisticsgroup.com",
-      notes: "Verified Complaint for Damages (Alameda Sup. Ct., executed July 20, 2026) enclosed as the pre-filing exhibit. InfoMart report shows RK Logistics as the billing client that configured the screening criteria triggering the 'NEEDS APPROVAL' flag. cc: peter.odonnell@, nikki.michaux@rklogisticsgroup.com.",
+      notes: "Verified Complaint for Damages (Alameda Sup. Ct., executed July 20, 2026) enclosed as the pre-filing exhibit. InfoMart report shows RK Logistics as the billing client that configured the screening criteria triggering the 'NEEDS APPROVAL' flag. Cites Tameny, Evid. Code §669, and Bus. & Prof. Code §17200. Non-monetary terms: written confirmation of a policy change, correction of personnel record to 'eligible for rehire,' no non-disparagement clause, confidentiality limited to the settlement amount only. Also mailed to Legal Dept./HR, 47020 Kato Road, Fremont, CA 94538. cc: peter.odonnell@, nikki.michaux@rklogisticsgroup.com.",
     },
   ],
   judicial_opinions: [
