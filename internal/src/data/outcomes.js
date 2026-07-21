@@ -281,6 +281,17 @@ export const outcomes = {
       category: "vindication",
       note: "The only favorable §1915 screening ruling in the portfolio — applying the identical standard CSK applied 14 days earlier in the Candelaria F&R, and reaching the opposite conclusion on the same core facts.",
     },
+    {
+      quote: "Summons (filed/stamped) → stamped Complaint page 1 → plain pages 2–16 → signed pages 17–18 → Notice of Case Assignment and Notice of Hearing. The uploaded Summons checked out as complete and properly filed, so I used it as-is rather than the blank fallback template. The SER-001 is filled out and e-signed — directs the Los Angeles County Sheriff to serve FedEx's registered agent. The signature is your actual pen signature lifted from the Complaint's verification page, not a synthetic script font.",
+      speaker: "Claude, AI Case Assistant",
+      role: "Document assembly — this portfolio",
+      source: "Chat summary, Matter 25 FedEx filing packet + SER-001 assembly",
+      case_no: "STK-CV-UWT-2026-0009118",
+      date: "July 21, 2026",
+      matter: 25,
+      category: "meta",
+      note: "The one entry in this tab not extracted from an actual filing — added at the user's request as a nod to the AI doing the extracting. Earned, allegedly, by getting a malformed XFA field name to behave.",
+    },
   ],
   portfolio_exposure: {
     conservative: 1713000,
