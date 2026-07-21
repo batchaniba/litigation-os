@@ -4,6 +4,7 @@ import { GOLD } from "../constants";
 import { getPDTMidnight } from "../utils/dateUtils";
 import { groupEventsByDay, buildMonthGrid, dayKey, parseMatterNumbers } from "../utils/calendarUtils";
 import { useTheme } from "../ThemeContext";
+import { Modal } from "./Modal";
 
 const TYPE_COLORS = { filing: "#34D399", hearing: "#F472B6", ruling: "#60A5FA", event: "#94A3B8", milestone: GOLD, deadline: "#EF4444" };
 const WEEKDAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -17,7 +18,7 @@ export const CalendarTab = () => {
 
   const [viewYear, setViewYear] = useState(today.getUTCFullYear());
   const [viewMonth, setViewMonth] = useState(today.getUTCMonth());
-  const [selectedKey, setSelectedKey] = useState(todayKey);
+  const [selectedKey, setSelectedKey] = useState(null);
 
   const { byDay, ungrounded } = useMemo(() => groupEventsByDay(PORTFOLIO.timeline), []);
   const cells = useMemo(() => buildMonthGrid(viewYear, viewMonth), [viewYear, viewMonth]);
@@ -27,7 +28,7 @@ export const CalendarTab = () => {
     if (m < 0) { m = 11; y -= 1; } else if (m > 11) { m = 0; y += 1; }
     setViewMonth(m); setViewYear(y);
   };
-  const goToday = () => { setViewYear(today.getUTCFullYear()); setViewMonth(today.getUTCMonth()); setSelectedKey(todayKey); };
+  const goToday = () => { setViewYear(today.getUTCFullYear()); setViewMonth(today.getUTCMonth()); };
 
   const selectedEvents = byDay.get(selectedKey) || [];
 
@@ -48,8 +49,6 @@ export const CalendarTab = () => {
 
   return (
     <div>
-      <h2 style={{ fontSize: 24, fontWeight: 700, color: theme.heading, marginBottom: 24 }}>Calendar</h2>
-
       {/* Month nav header */}
       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 16 }}>
         <button onClick={() => goToMonth(-1)} aria-label="Previous month" style={navBtnStyle}>‹</button>
@@ -88,10 +87,10 @@ export const CalendarTab = () => {
               tabIndex={0}
               aria-current={isToday ? "date" : undefined}
               aria-label={`${MONTH_NAMES[cell.date.getUTCMonth()]} ${cell.date.getUTCDate()}, ${cell.date.getUTCFullYear()}${events.length ? `, ${events.length} event(s)` : ""}`}
-              onClick={() => setSelectedKey(cell.key)}
-              onKeyDown={e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setSelectedKey(cell.key); } }}
+              onClick={() => { if (events.length > 0) setSelectedKey(cell.key); }}
+              onKeyDown={e => { if ((e.key === "Enter" || e.key === " ") && events.length > 0) { e.preventDefault(); setSelectedKey(cell.key); } }}
               style={{
-                minHeight: 84, padding: "6px 8px", borderRadius: 6, cursor: "pointer",
+                minHeight: 84, padding: "6px 8px", borderRadius: 6, cursor: events.length > 0 ? "pointer" : "default",
                 opacity: cell.inMonth ? 1 : 0.4,
                 background: isSelected ? `${GOLD}15` : theme.cardBg,
                 border: isToday ? `2px solid ${GOLD}` : `1px solid ${theme.cardBorder}`,
@@ -123,14 +122,12 @@ export const CalendarTab = () => {
         ))}
       </div>
 
-      {/* Day-detail panel */}
-      <div style={{ background: theme.cardBg, borderRadius: 10, padding: 20, border: `1px solid ${theme.cardBorder}`, marginBottom: 24 }}>
-        <h3 style={{ fontSize: 15, fontWeight: 700, color: GOLD, margin: "0 0 12px", fontFamily: "'DM Sans', sans-serif" }}>
-          {selectedKey}{selectedKey === todayKey ? " (Today)" : ""}
-        </h3>
-        {selectedEvents.length === 0 && (
-          <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: theme.subtleText, margin: 0 }}>No events on this day.</p>
-        )}
+      {/* Day-detail modal */}
+      <Modal
+        isOpen={selectedKey !== null}
+        onClose={() => setSelectedKey(null)}
+        title={selectedKey ? `${selectedKey}${selectedKey === todayKey ? " (Today)" : ""}` : ""}
+      >
         {selectedEvents.map((e, i) => (
           <div key={i} style={{ marginBottom: i === selectedEvents.length - 1 ? 0 : 14 }}>
             <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 10, fontWeight: 700, color: TYPE_COLORS[e.type] || theme.subtleText, textTransform: "uppercase", letterSpacing: 1 }}>{e.type}</span>
@@ -144,7 +141,7 @@ export const CalendarTab = () => {
             </div>
           </div>
         ))}
-      </div>
+      </Modal>
 
       {/* Ungroundable-date events */}
       {ungrounded.length > 0 && (

@@ -8,7 +8,6 @@ import { PORTFOLIO } from "./data";
 import { DashboardTab } from "./components/DashboardTab";
 import { MattersTab } from "./components/MattersTab";
 import { TimelineTab } from "./components/TimelineTab";
-import { CalendarTab } from "./components/CalendarTab";
 import { DamagesTab } from "./components/DamagesTab";
 import { TheoriesTab } from "./components/TheoriesTab";
 import { CostOfCounselTab } from "./components/CostOfCounselTab";
@@ -17,7 +16,7 @@ import { JudicialOpinionsTab } from "./components/JudicialOpinionsTab";
 import { NotableQuotesTab } from "./components/NotableQuotesTab";
 import { ThemeContext, THEMES } from "./ThemeContext";
 
-const tabs = ["Dashboard", "Matters", "Timeline", "Calendar", "Damages", "Theories", "Cost of Counsel", "Profit", "Judicial Opinions", "Notable Quotes"];
+const tabs = ["Dashboard", "Matters", "Timeline", "Damages", "Theories", "Cost of Counsel", "Profit", "Judicial Opinions", "Notable Quotes"];
 
 export default function LitigationPortfolio() {
   const [darkMode, setDarkMode] = useState(true);
@@ -150,7 +149,6 @@ export default function LitigationPortfolio() {
         {activeTab === "Dashboard" && <DashboardTab upcomingEvents={upcomingEvents} setClusterFilter={setClusterFilter} setActiveTab={setActiveTab} />}
         {activeTab === "Matters"   && <MattersTab filteredCases={filteredCases} clusterFilter={clusterFilter} setClusterFilter={setClusterFilter} typeFilter={typeFilter} setTypeFilter={setTypeFilter} searchQuery={searchQuery} setSearchQuery={setSearchQuery} />}
         {activeTab === "Timeline"  && <TimelineTab showPastEvents={showPastEvents} setShowPastEvents={setShowPastEvents} />}
-        {activeTab === "Calendar"  && <CalendarTab />}
         {activeTab === "Damages"   && <DamagesTab damagesView={damagesView} setDamagesView={setDamagesView} />}
         {activeTab === "Theories"  && <TheoriesTab />}
         {activeTab === "Cost of Counsel" && <CostOfCounselTab />}
