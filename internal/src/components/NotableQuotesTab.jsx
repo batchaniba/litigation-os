@@ -7,6 +7,7 @@ const AMBER  = "#d97706";
 const PURPLE = "#9333ea";
 const GREEN  = "#16a34a";
 const BLUE   = "#2563eb";
+const TEAL   = "#0d9488";
 
 const QUOTE_COLORS = {
   sharp:      { color: RED,    label: "Sharp"                },
@@ -14,6 +15,7 @@ const QUOTE_COLORS = {
   backhanded: { color: PURPLE, label: "Backhanded"           },
   vindication:{ color: GREEN,  label: "Vindication"          },
   procedural: { color: BLUE,   label: "Procedural"           },
+  meta:       { color: TEAL,   label: "Fourth Wall"          },
 };
 
 function QuoteCard({ item, theme }) {
@@ -112,7 +114,7 @@ export function NotableQuotesTab() {
 
       {/* Summary bar */}
       <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 32 }}>
-        {["sharp", "dismissive", "backhanded", "procedural", "vindication"].map(cat => {
+        {["sharp", "dismissive", "backhanded", "procedural", "vindication", "meta"].map(cat => {
           const { color, label } = QUOTE_COLORS[cat];
           return (
             <div key={cat} style={{
