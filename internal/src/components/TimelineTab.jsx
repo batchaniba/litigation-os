@@ -1,11 +1,13 @@
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import { PORTFOLIO } from "../data";
 import { GOLD } from "../constants";
 import { getPDTMidnight, parseEventDatePDT } from "../utils/dateUtils";
 import { useTheme } from "../ThemeContext";
+import { CalendarTab } from "./CalendarTab";
 
 export const TimelineTab = ({ showPastEvents, setShowPastEvents }) => {
   const theme = useTheme();
+  const [view, setView] = useState("list");
   const cutoff = useMemo(() => getPDTMidnight(), []);
   const { pastEvents, recentEvents } = useMemo(() => {
     const sorted = [...PORTFOLIO.timeline].sort((a, b) => parseEventDatePDT(a.date) - parseEventDatePDT(b.date));
@@ -40,11 +42,10 @@ export const TimelineTab = ({ showPastEvents, setShowPastEvents }) => {
   return (
     <div>
       <h2 style={{ fontSize: 24, fontWeight: 700, color: theme.heading, marginBottom: 24 }}>Procedural Timeline</h2>
-      <div style={{ position: "relative", paddingLeft: 32 }}>
-        <div style={{ position: "absolute", left: 11, top: 0, bottom: 0, width: 2, background: `linear-gradient(to bottom, ${GOLD}, ${theme.cardBorder})` }} />
-        {/* Past events toggle */}
-        <div style={{ position: "relative", marginBottom: 24, paddingLeft: 24 }}>
-          <div style={{ position: "absolute", left: -26, top: 10, width: 12, height: 12, borderRadius: "50%", background: theme.bg, border: `2px solid ${theme.subtleText}` }} />
+
+      {/* View controls */}
+      <div style={{ display: "flex", gap: 8, marginBottom: 24, flexWrap: "wrap" }}>
+        {view === "list" && (
           <button onClick={() => setShowPastEvents(v => !v)} style={{
             padding: "8px 16px", borderRadius: 6, border: `1px solid ${theme.cardBorder}`,
             background: theme.cardBg, color: theme.mutedText, fontFamily: "'DM Sans', sans-serif",
@@ -52,17 +53,32 @@ export const TimelineTab = ({ showPastEvents, setShowPastEvents }) => {
           }}>
             {showPastEvents ? `Hide past events (${pastEvents.length})` : `Show past events (${pastEvents.length})`}
           </button>
-        </div>
-        {showPastEvents && pastEvents.map((t, i) => renderEvent(t, i))}
-        {/* Upcoming divider */}
-        <div style={{ position: "relative", marginBottom: 24, paddingLeft: 24 }}>
-          <div style={{ position: "absolute", left: -30, top: "50%", transform: "translateY(-50%)", width: 20, height: 20, borderRadius: "50%", background: GOLD, border: `2px solid ${GOLD}`, display: "flex", alignItems: "center", justifyContent: "center" }} />
-          <div style={{ borderTop: `1px dashed ${GOLD}40`, paddingTop: 8 }}>
-            <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: GOLD, letterSpacing: 1, textTransform: "uppercase" }}>Upcoming & Present</span>
-          </div>
-        </div>
-        {recentEvents.map((t, i) => renderEvent(t, i))}
+        )}
+        <button onClick={() => setView(v => (v === "list" ? "calendar" : "list"))} style={{
+          padding: "8px 16px", borderRadius: 6, border: `1px solid ${GOLD}66`,
+          background: `${GOLD}18`, color: GOLD, fontFamily: "'DM Sans', sans-serif",
+          fontSize: 12, fontWeight: 700, cursor: "pointer", letterSpacing: 0.3
+        }}>
+          {view === "list" ? "Calendar View" : "List View"}
+        </button>
       </div>
+
+      {view === "list" ? (
+        <div style={{ position: "relative", paddingLeft: 32 }}>
+          <div style={{ position: "absolute", left: 11, top: 0, bottom: 0, width: 2, background: `linear-gradient(to bottom, ${GOLD}, ${theme.cardBorder})` }} />
+          {showPastEvents && pastEvents.map((t, i) => renderEvent(t, i))}
+          {/* Upcoming divider */}
+          <div style={{ position: "relative", marginBottom: 24, paddingLeft: 24 }}>
+            <div style={{ position: "absolute", left: -30, top: "50%", transform: "translateY(-50%)", width: 20, height: 20, borderRadius: "50%", background: GOLD, border: `2px solid ${GOLD}`, display: "flex", alignItems: "center", justifyContent: "center" }} />
+            <div style={{ borderTop: `1px dashed ${GOLD}40`, paddingTop: 8 }}>
+              <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: GOLD, letterSpacing: 1, textTransform: "uppercase" }}>Upcoming & Present</span>
+            </div>
+          </div>
+          {recentEvents.map((t, i) => renderEvent(t, i))}
+        </div>
+      ) : (
+        <CalendarTab />
+      )}
     </div>
   );
 };
