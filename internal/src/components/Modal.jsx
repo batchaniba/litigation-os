@@ -34,10 +34,9 @@ export const Modal = ({ isOpen, onClose, title, children }) => {
         aria-label={title}
         onClick={(e) => e.stopPropagation()}
         style={{
-          background: `${theme.cardBg}4D`, border: `1px solid ${theme.cardBorder}`,
-          backdropFilter: "blur(14px)", WebkitBackdropFilter: "blur(14px)",
-          borderRadius: 10, padding: 28, width: "100%", maxWidth: 560,
-          maxHeight: "85vh", overflowY: "auto", position: "relative",
+          background: theme.cardBg, border: `1px solid ${theme.cardBorder}`,
+          borderRadius: 10, padding: 24, width: "100%", maxWidth: 480,
+          maxHeight: "80vh", overflowY: "auto", position: "relative",
           boxShadow: "0 20px 60px rgba(0,0,0,0.4)",
         }}
       >
