@@ -83,9 +83,11 @@ function QuoteCard({ item, theme }) {
 
 export function NotableQuotesTab() {
   const theme = useTheme();
-  const quotes = [...(outcomes.notable_quotes ?? [])].sort(
-    (a, b) => new Date(b.date) - new Date(a.date)
-  );
+  const quotes = [...(outcomes.notable_quotes ?? [])].sort((a, b) => {
+    if (a.category === "meta" && b.category !== "meta") return 1;
+    if (b.category === "meta" && a.category !== "meta") return -1;
+    return new Date(b.date) - new Date(a.date);
+  });
   const counts = quotes.reduce((acc, q) => {
     acc[q.category] = (acc[q.category] || 0) + 1;
     return acc;
