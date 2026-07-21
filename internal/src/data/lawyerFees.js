@@ -1,4 +1,4 @@
-// Ground-truth lawyer-fee estimate for the entire 24-matter portfolio.
+// Ground-truth lawyer-fee estimate for the entire 30-matter portfolio.
 // Real page counts extracted with pdfinfo from every PDF in public/documents/matter-XX/
 // (poppler-utils), then classified by document type and priced per the methodology in
 // docs/LAWYER_FEES_CALCULATOR.md by five parallel analysis passes, one per case cluster.
@@ -178,7 +178,7 @@ export const lawyer_fees = [
   {
     number: 20, caption: "Newanforbi v. California Highway Patrol, et al.", caseNumber: "26CV191136",
     court: "Alameda Sup. Ct.", type: "State - Writ of Mandate (CCP 1085, PC 679.10 U-Visa Certification)",
-    status: "Active - Petition filed 05/29/2026; AG Demurrer filed; Opposition filed 07/11/2026; hearing 08/28/2026",
+    status: "Active - Petition filed 05/29/2026; AG Demurrer filed; Opposition filed 07/13/2026; hearing 08/28/2026",
     documentsCount: 18, totalPagesReal: 390,
     hours: { low: 80.8, high: 137.9, mid: 109.35 },
     cost: { low: 22624, high: 38612, mid: 30618 },
@@ -267,10 +267,10 @@ export const lawyer_fees = [
     notes: "Pre-filing stage. Eleven documents: 5 PDFs (13 pages) — Amazon Simple Hire Checklists (2), Amazon Jobs BGC-status emails (2), and Equifax onboarding reminder — and 6 screenshots (6 pages) documenting the application, pre-hire appointment, Amazon/Accurate Background SMS chain, and pending BGC status. No complaint drafted yet; hours reflect case assessment and theory development from the established §290.46(j) portfolio template. Fee-shifting under PC §290.46(j)(4)(A), FCRA, and ICRAA applies upon prevailing."
   },
   {
-    number: 30, caption: "Newanforbi v. Moua, et al.", caseNumber: "TBD (filed Sep. 16, 2026; awaiting court assignment)",
+    number: 30, caption: "Newanforbi v. Moua, et al.", caseNumber: "TBD",
     court: "USDC N.D. Cal.",
     type: "Federal — 42 U.S.C. §1983 (First Amendment Retaliation + Due Process); Bane Act Cal. Civ. Code §52.1; IIED",
-    status: "Complaint filed September 16, 2026 — USDC N.D. Cal.; Gary Noguchi (Badge #7284) served Jul. 7, 2026; Joseelyn Rojo served Jul. 14, 2026; Long Moua (Badge #7472) service pending; GCA claim filed Jul. 18, 2026, deemed rejected Sep. 1, 2026",
+    status: "Pre-complaint — anticipated filing September 16, 2026, USDC N.D. Cal.; Gary Noguchi (Badge #7284) served Jul. 7, 2026; Joseelyn Rojo served Jul. 14, 2026; Long Moua (Badge #7472) service pending; GCA claim filed Jul. 18, 2026, anticipated deemed rejected Sep. 1, 2026",
     documentsCount: 12, totalPagesReal: 107,
     hours: { low: 56, high: 132, mid: 86.5 },
     cost: { low: 15680, high: 36960, mid: 24220 },
@@ -279,7 +279,7 @@ export const lawyer_fees = [
 ];
 
 export const lawyer_fees_summary = {
-  analysisDate: "2026-09-16",
+  analysisDate: "2026-07-21",
   totalMatters: 30,
   totalDocumentsAnalyzed: 290,
   totalPagesReal: 3557,
