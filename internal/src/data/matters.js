@@ -1,12 +1,12 @@
 export const cases = [
     {
       number: 1, caption: "Newanforbi v. CHP et al.", case_no: "2:25-cv-01460-DC-CSK", court: "USDC E.D. Cal.",
-      claims: "42 USC 1983: 4A Search/Seizure, Due Process, Monell", status: "Filed 05/27/2025; MTD briefed",
+      claims: "42 USC 1983: 4A Search/Seizure, Due Process, Monell", status: "Filed 05/27/2025; Magistrate Judge issued Findings & Recommendations RECOMMENDING DISMISSAL (Apr. 20, 2026); Plaintiff filed Objections to the F&R (Apr. 21, 2026) and a Notice of Supplemental Authority citing the favorable Serrato ruling (Jul. 7, 2026); District Judge Coggins's ruling on the F&R remains PENDING as of this writing",
       filed: "May 27, 2025", judge: "Hon. Dena M. Coggins", cluster: 1, type: "Federal",
       defendants: "State of California / CHP; Officer Santiago Meza-Gonzalez (#023295); Officer Jose Melano (#023054)",
       causes: ["Unreasonable Search and Seizure (4th Amend.)", "Violation of Due Process (14th Amend.)", "Monell Liability"],
       key_facts: "On November 1, 2024 at approximately 12:54 AM, Plaintiff — a CDL commercial truck driver — was lawfully parked on the I-580 East shoulder in Livermore, CA, resting in a rental Tesla Model Y. CHP Officers Meza-Gonzalez (#023295) and Melano (#023054) approached under the pretext of a welfare check. Upon spotting a cup in the center console, one officer speculated 'I think it's booze' — pivoting to a DUI investigation with no articulable facts; the cup did not contain alcohol. Without consent or a warrant, Officer Melano searched the interior; the only item recovered was an empty container found during the search itself, not in plain view beforehand. Plaintiff showed no signs of impairment yet was handcuffed and transported for chemical testing. The CHP arrest report fabricated observations of slurred speech and alcohol odor directly contradicted by dashcam footage (Exhibit A); the Alameda County DA declined to file any charges. Post-arrest, Plaintiff was held five days on a parole violation hold without arraignment, confined with a menacing homicide suspect. The chemical refusal designation triggered a Class A CDL suspension through February 2026, causing over a year of lost commercial driving wages.",
-      procedural_status: "Complaint filed pro se May 27, 2025. Summons issued October 28, 2025; service deadline January 26, 2026. Defendants moved to dismiss under Rule 12(b)(6) on December 10, 2025 (hearing January 16, 2026). Plaintiff's opposition (December 22, 2025) conceded dismissal of the State, official-capacity claims, Monell (Count III), punitive damages, and attorneys' fees — preserving Count I (4th Amendment) and Count II (14th Amendment) against both officers individually and requesting leave to amend. AG filed reply January 5, 2026, seeking full dismissal with prejudice. Matter awaits the Court's ruling on Counts I and II. Apr. 9, 2026: During the Matter 2 M&C call (state demurrer, CCP §430.41), Plaintiff raised 28 U.S.C. § 636(c) consent to Magistrate Judge jurisdiction for this federal matter (2:25-cv-01460-DC-CSK) as a means of expediting adjudication of the pending MTD. DAG Li stated the State typically prefers district judge adjudication but agreed to consult his clients; follow-up anticipated alongside the stipulated stay draft (~Apr. 20, 2026).",
+      procedural_status: "Complaint filed pro se May 27, 2025. Summons issued October 28, 2025; service deadline January 26, 2026. Defendants moved to dismiss under Rule 12(b)(6) on December 10, 2025 (hearing January 16, 2026). Plaintiff's opposition (December 22, 2025) conceded dismissal of the State, official-capacity claims, Monell (Count III), punitive damages, and attorneys' fees — preserving Count I (4th Amendment) and Count II (14th Amendment) against both officers individually and requesting leave to amend. AG filed reply January 5, 2026, seeking full dismissal with prejudice. April 20, 2026: Magistrate Judge issued Findings & Recommendations (F&R) recommending the MTD be GRANTED and the action dismissed. April 21, 2026: Plaintiff filed Objections to the F&R, contesting the qualified-immunity/probable-cause analysis and requesting the District Judge decline the F&R or grant leave to amend (served on DAG Haiyang Li). July 7, 2026: Plaintiff filed a Notice of Supplemental Authority alerting the Court to Magistrate Judge Krishnan's June 29, 2026 order in the related Serrato matter (N.D. Cal.), which granted IFP and found a complaint arising from this same November 1, 2024 incident sufficient to survive §1915 screening — cited as persuasive authority against the F&R. As of this writing, District Judge Dena M. Coggins has not yet ruled on the F&R or the Objections; the matter remains pending on de novo review. Apr. 9, 2026: During the Matter 2 M&C call (state demurrer, CCP §430.41), Plaintiff raised 28 U.S.C. § 636(c) consent to Magistrate Judge jurisdiction for this federal matter (2:25-cv-01460-DC-CSK) as a means of expediting adjudication of the pending MTD. DAG Li stated the State typically prefers district judge adjudication but agreed to consult his clients; follow-up anticipated alongside the stipulated stay draft (~Apr. 20, 2026).",
       damages: "$175,000 – $450,000+: 1+ year of lost CDL wages and reduced future earning capacity; compensation for 5-day unlawful parole hold without judicial review; emotional distress from wrongful arrest and dangerous jail conditions (confinement with menacing homicide suspect); recoverable civil rights costs.",
       risk: "Significant. Qualified immunity under Wesby/Kisela requires precedent 'squarely governing' these specific facts — none cited to date. Iqbal/Twombly risk is acute: critical facts defeating immunity (cup not in plain view; fabricated report) appeared first in the Opposition, leaving the Complaint facially thin. Plaintiff's concessions narrowed the case to individual-capacity claims on Counts I and II only, eliminating Monell. Leave to amend will likely be needed to overcome qualified immunity at the 12(b)(6) stage.",
       evidence: [
@@ -25,15 +25,28 @@ export const cases = [
       ],
       documents: [
         { label: "Complaint (May 27, 2025)", path: "/documents/matter-01/0.Newanforbi v. CHP.pdf" },
+        { label: "Civil Cover Sheet (JS 44) (May 21, 2025)", path: "/documents/matter-01/18_Civil_Cover_Sheet.pdf" },
+        { label: "Summons in a Civil Case (issued Oct. 28, 2025)", path: "/documents/matter-01/07_Summons_Sheet.pdf" },
+        { label: "Notice of Electronic Filing — Civil Case Opened (Oct. 28, 2025)", path: "/documents/matter-01/06_Notice_of_E-Filing_1.pdf" },
+        { label: "Notice of Electronic Filing — Summons Issued (Oct. 28, 2025)", path: "/documents/matter-01/09_Notice_of_E-Filing_2.pdf" },
+        { label: "Filing Fee Receipt (Oct. 28, 2025)", path: "/documents/matter-01/10_Filing_Fee_Receipt.pdf" },
+        { label: "Magistrate Judge Consent — Court Information Letter", path: "/documents/matter-01/03_Magistrate_Judge_Consent.pdf" },
+        { label: "Notice of Availability of a Magistrate Judge (Oct. 28, 2025)", path: "/documents/matter-01/04_Magistrate_Judge_Availabilty.pdf" },
+        { label: "Consent / Decline of Magistrate Judge Jurisdiction (form)", path: "/documents/matter-01/05_Magistrate_Judge_Consent_Decline_Sheet.pdf" },
         { label: "CHP Motion to Dismiss (Dec. 10, 2025)", path: "/documents/matter-01/CHP Motion To Dismiss.pdf" },
         { label: "Opposition to Motion to Dismiss (Dec. 22, 2025)", path: "/documents/matter-01/Opposition for Motion to Dismiss.pdf" },
         { label: "Reply — CHP (Jan. 5, 2026)", path: "/documents/matter-01/Reply - CHP.pdf" },
         { label: "Initial Scheduling Order (Oct. 28, 2025)", path: "/documents/matter-01/02_Initial_Scheduling_Order.pdf" },
         { label: "CHP Arrest Report", path: "/documents/matter-01/Arrest Report.pdf" },
+        { label: "CHP Officer's Statement — Chemical Test Admonition (DS 367) (Nov. 1, 2024)", path: "/documents/matter-01/ds367 ngwanforbi f7953179.pdf" },
+        { label: "DMV Driver Record — Discovery Production (Dec. 4, 2024)", path: "/documents/matter-01/DAD 2024-12-04.pdf" },
+        { label: "DMV Notification of Discovery — APS Hearing Packet (Dec. 4, 2024)", path: "/documents/matter-01/DS2044 Notification of Discovery 34739340.pdf" },
         { label: "CHP Video Transcript (Exhibit A)", path: "/documents/matter-01/Exhibit_A_CHP_Video_Transcript.pdf" },
         { label: "Discovery Response", path: "/documents/matter-01/Discovery-Response.pdf" },
         { label: "Centerline Wage Reference", path: "/documents/matter-01/Centerline Wage Reference.pdf" },
-        { label: "Notice of Change of Address (filed July 7, 2026)", path: "/documents/matter-01/Notice of Change of Address (July 7, 2026).pdf" }
+        { label: "Notice of Change of Address (filed July 7, 2026)", path: "/documents/matter-01/Notice of Change of Address (July 7, 2026).pdf" },
+        { label: "Plaintiff's Objections to Findings & Recommendations (Apr. 21, 2026)", path: "/documents/matter-01/Objections to FR - April 21 2026.pdf" },
+        { label: "Notice of Supplemental Authority — Serrato Order (Jul. 7, 2026)", path: "/documents/matter-01/Notice of Supplemental Authority - Serrato Order - July 7 2026.pdf" }
       ]
     },
     {
@@ -47,6 +60,19 @@ export const cases = [
       damages: "$100,000 - $300,000+", risk: "",
       evidence: ["Same as Matter 1", "State procedural records", "CHP Detention Certificate (Dublin CHP-01991, Pen. Code §851.6)", "Warrant affidavit and dashcam contradictions", "Government Tort Claim notice", "DMV administrative proceeding records", "POST/CHP internal affairs complaint"],
       documents: [
+        { label: "Complaint for Damages (filed Feb. 4, 2026)", path: "/documents/matter-02/Newanforbi v. Meza Gonzalez et al.pdf" },
+        { label: "Notice of E-Filing Confirmation (filed Feb. 4, 2026) — Complaint & Fee Waiver Accepted", path: "/documents/matter-02/Notice of E-Filing Confirmation.pdf" },
+        { label: "Request to Waive Court Fees — FW-001 (filed Feb. 4, 2026)", path: "/documents/matter-02/FW-001 Approved Fee Waiver.pdf" },
+        { label: "Notice of Case Assignment — Dept. 518, Hon. Mark Fickes (Case No. 26CV168913)", path: "/documents/matter-02/Notice of Case Assignment.pdf" },
+        { label: "Notice of Case Management Conference (CMC scheduled Jul. 6, 2026, Dept. 518)", path: "/documents/matter-02/Notice of Case Management Conference.pdf" },
+        { label: "Ex Parte Application for Extension of Time to Serve Pleading (filed Mar. 20, 2026) — extension to May 4, 2026", path: "/documents/matter-02/Ex Parte Application for Extension of Time to Serve Pleading and Orders.pdf" },
+        { label: "Receipt — Ex Parte Application Filing Fee, Waived (Mar. 20, 2026)", path: "/documents/matter-02/RECEIPT.pdf" },
+        { label: "CHP Arrest Report", path: "/documents/matter-02/Arrest Report.pdf" },
+        { label: "CHP Officer's Statement — Chemical Test Admonition (DS 367) (Nov. 1, 2024)", path: "/documents/matter-02/ds367 ngwanforbi f7953179.pdf" },
+        { label: "DMV Driver Record — Discovery Production (Dec. 4, 2024)", path: "/documents/matter-02/DAD 2024-12-04.pdf" },
+        { label: "DMV Notification of Discovery — APS Hearing Packet (Dec. 4, 2024)", path: "/documents/matter-02/DS2044 Notification of Discovery 34739340.pdf" },
+        { label: "CHP Video Transcript (Exhibit A)", path: "/documents/matter-02/Exhibit_A_CHP_Video_Transcript.pdf" },
+        { label: "Discovery Response", path: "/documents/matter-02/Discovery-Response.pdf" },
         { label: "Defendants' Opposition to Plaintiff's Motion for U-Visa Certification (filed June 5, 2026)", path: "/documents/matter-02/Opposition to Motion for U-visa certification.pdf" },
         { label: "Plaintiff's Reply in Support of Motion for U-Visa Certification (filed June 8, 2026)", path: "/documents/matter-02/Reply ISO UVisa Cert 10pg.pdf" },
         { label: "Notice of Change of Address (filed July 7, 2026)", path: "/documents/matter-02/Notice of Change of Address (July 7, 2026).pdf" }
@@ -93,6 +119,8 @@ export const cases = [
         { label: "Derrick M4L (main)", path: "/documents/matter-03/Derrick_M4L.pdf" },
         { label: "Palacios Motion to Dismiss FAC (Doc 24, Apr. 6, 2026)", path: "/documents/matter-03/SLB MTD.pdf" },
         { label: "Plaintiff's Opposition to Palacios MTD (filed Apr. 9, 2026; entered Apr. 13, 2026)", path: "/documents/matter-03/SLB Opposition to MTD.pdf" },
+        { label: "Notice of Related Cases (Doc 28, May 20, 2026)", path: "/documents/matter-03/28 Notice of Related Cases.pdf" },
+        { label: "Notice of Appearance — Blaze Van Dine for Katie Palacios (Doc 27, May 20, 2026)", path: "/documents/matter-03/Notice of Appearance Blaze.pdf" },
         { label: "Notice of Change of Address (filed July 7, 2026)", path: "/documents/matter-03/Notice of Change of Address (July 7, 2026).pdf" }
       ]
     },
@@ -319,6 +347,12 @@ export const cases = [
       damages: "Equitable: Vacate denial; order new review or discharge", risk: "",
       evidence: ["Admin. Record", "Form 1502-DR", "Opening Brief", "Proof of Service (04/13/2026)"],
       documents: [
+        { label: "Notice of Confirmation of Electronic Filing — Petition for Writ of Mandate and Fee Waiver Accepted (January 30, 2026)", path: "/documents/matter-09/WOM-efile.pdf" },
+        { label: "Request to Waive Court Fees (Form FW-001) — filed January 30, 2026", path: "/documents/matter-09/WOM-Fee Waiver.pdf" },
+        { label: "Notice of Case Assignment — Dept. 32, Hon. James P. Arguelles (February 2, 2026)", path: "/documents/matter-09/WOM-Case Assignment.pdf" },
+        { label: "First Amended Verified Petition for Writ of Mandate — No Substantive Changes (February 2, 2026)", path: "/documents/matter-09/WOM FAC.pdf" },
+        { label: "Opening Brief in Support of Petition for Writ of Mandate (February 9, 2026)", path: "/documents/matter-09/WOM_Opening Brief.pdf" },
+        { label: "Amended Notice of Hearing on Petition for Writ of Mandate, with Exhibits A–F (March 31, 2026)", path: "/documents/matter-09/Amended Notice of Hearing on Petition for Writ of Mandate.pdf" },
         { label: "AG Reply to Opposition to Demurrer (May 18, 2026)", path: "/documents/matter-09/26WM000028_Reply_to_Opp.pdf" },
         { label: "Case Update — CU_26WM000028 (May 29, 2026)", path: "/documents/matter-09/CU_26WM000028_e91359ab-2598-4573-a45a-fa7893fc4cb07.pdf" }
       ]
