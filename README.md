@@ -1,6 +1,6 @@
 <img src="internal/public/logo-light.png" alt="Newanforbi — In Propria Persona" width="180" align="left" />
 
-# Newanforbi Litigation Portfolio
+# Interactive Litigation Portfolio
 
 An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi**, Pro Se / In Propria Persona. The portfolio tracks 30 civil matters across federal and California state courts, providing a structured view of case status, procedural history, damages exposure, and overarching legal theories. **Live site:** https://interactive-litigation-portfolio.vercel.app · 
 
