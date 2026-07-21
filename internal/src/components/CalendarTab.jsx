@@ -49,8 +49,6 @@ export const CalendarTab = () => {
 
   return (
     <div>
-      <h2 style={{ fontSize: 24, fontWeight: 700, color: theme.heading, marginBottom: 24 }}>Calendar</h2>
-
       {/* Month nav header */}
       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 16 }}>
         <button onClick={() => goToMonth(-1)} aria-label="Previous month" style={navBtnStyle}>‹</button>
