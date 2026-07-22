@@ -361,7 +361,7 @@ export const cases = [
     {
       number: 10, caption: "Newanforbi v. Macomber", case_no: "C2602632", court: "Santa Clara Sup. Ct.",
       claims: "Habeas Corpus (PC §3008(d)(2); 15 CCR §3574) — Treatment Termination", status: "CLOSED — Order Denying Petition Without Prejudice (April 27, 2026)",
-      filed: "February 23, 2026", judge: "Hon. Robert Hawk", cluster: 4, type: "State", archived: true,
+      filed: "February 23, 2026", judge: "Hon. Robert Hawk", cluster: 4, type: "State", archived: true, badge: "DISMISSED",
       defendants: "Jeffrey Macomber, Secretary of CDCR (official capacity)",
       causes: ["PC §3008(d)(2)", "15 CCR §3574", "Challenge to compelled treatment as unlawful restraint"],
       key_facts: "On parole since Dec. 2020. Over 5 years of treatment. No new convictions, no revocations, low risk. Repeated clinician turnover and administrative resets. No good-cause finding issued for continued retention.",
