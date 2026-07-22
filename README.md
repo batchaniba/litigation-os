@@ -130,7 +130,7 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 
 | # | Caption | Case No. | Court | Disposition |
 |---|---|---|---|---|
-| 3 | Newanforbi v. Derrick et al. | 2:26-cv-00004-DJC-JDP | USDC E.D. Cal. | **ABANDONED** — MTD (Doc 24) was under submission at time of withdrawal; Defendant Palacios's exposure survives independently through Matter 5's discovery record and Matter 28 |
+| 3 | Newanforbi v. Derrick et al. | 2:26-cv-00004-DJC-JDP | USDC E.D. Cal. | **ABANDONED** as to Derrick and Noguchi — voluntarily dismissed without prejudice July 22, 2026; Palacios's MTD (Doc 24) remains under submission and Palacios's claims proceed on all counts of the operative FAC, unaffected |
 | 4 | Newanforbi v. Derrick et al. | TBD | San Joaquin Sup. Ct. | **ABANDONED** — Voluntarily Dismissed (state-tort mirror of Matter 3) |
 | 5 | Newanforbi v. Palacios et al. | STK-CV-UF-2026-0001032 | San Joaquin Sup. Ct. | DISMISSED — Demurrer granted without leave to amend July 15, 2026 (exhaustion grounds); 542-page HOPE discovery carried into Matter 28 |
 | 6 | Newanforbi v. HOPE et al. | 2:26-cv-00195-TLN-AC | USDC E.D. Cal. | VOLUNTARILY DISMISSED WITHOUT PREJUDICE May 21, 2026; refiling preserved |

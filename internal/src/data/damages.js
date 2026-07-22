@@ -71,7 +71,7 @@ export const matter_damages = [
         caption: "Newanforbi v. Derrick et al.",
         court: "USDC E.D. Cal.",
         claims: "1A Retaliation, Equal Protection, Due Process",
-        status: "MTD under submission; Palacios MTD briefed",
+        status: "Derrick & Noguchi dismissed w/o prejudice Jul. 22, 2026; Palacios MTD (Doc 24) under submission, claims proceed on all FAC counts",
         risk: "QI rebutted by on-record speech suppression + sworn comparator declarations",
         settlement_note: "SLB rejected $85K global (Matters 3+5); trial leverage grows with discovery",
         conservative: 112000, moderate: 300000, aggressive: 625000,
