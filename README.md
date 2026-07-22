@@ -18,7 +18,7 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 | Dismissed / Closed / Abandoned | 16 |
 | Jurisdictions | USDC E.D. Cal., USDC N.D. Cal., San Joaquin Sup. Ct., Alameda Sup. Ct., Sacramento Sup. Ct., Santa Clara Sup. Ct. |
 | Housing Status | **Homeless since July 2, 2026** — direct consequence of retaliatory inter-county parole transfer (Stockton → Santa Clara) imposed immediately after filing Matter 15 (Newanforbi v. CDCR, et al.); transfer caused loss of Stockton family housing; Matters 3, 9, and 19 are also potential retaliatory predicate acts |
-| Representation | Pro Se / In Propria Persona — all 30 matters self-litigated; estimated equivalent private-counsel cost: $746,004–$1,228,976 |
+| Representation | Pro Se / In Propria Persona — all 30 matters self-litigated; estimated equivalent private-counsel cost: $746,284–$1,229,536 |
 | Aggregate Exposure (Conservative) | ~$1,041,000+ |
 | Aggregate Exposure (Moderate) | ~$2,643,000+ |
 | Aggregate Exposure (Aggressive) | ~$5,849,000+ |
@@ -55,7 +55,7 @@ The largest cluster — 14 matters — targeting CDCR's parole supervision appar
 - Documented CDL career wage losses: $109,408 across 6 carriers (W-2 verified, 2022–2024).
 - **Matter 5 (Palacios)** — state action disposed July 15, 2026 (demurrer sustained, exhaustion grounds); 542 pages of HOPE discovery (Bates HOPE_000001–542) produced before dismissal are now carried into **Matter 28** via Motion for Protective Order.
 - **Matter 15** (San Joaquin Sup. Ct., STK-CV-UPI-2026-5417) — **ABANDONED.** Would have asserted Negligence, False Imprisonment, IIED, and Breach of Mandatory Duty against CDCR, Dodd, and Noguchi — the highest single-matter exposure in the portfolio. Complaint was filed and both individual defendants personally served; a responsive-pleading extension had been agreed with Deputy Attorney General Judith S. Gronna. Voluntarily dismissed with prejudice as to all defendants on July 24, 2026 due to a real, credible safety threat — unrelated to the Matter 19 habeas ruling.
-- **Matter 28** (USDC N.D. Cal.): Federal successor; §1983 Monell (HOPE) + Individual Capacity (Shannon Smith, LCSW), Bane Act §52.1, Fraud/Negligent Misrepresentation, RICO 18 U.S.C. §1962(c)-(d); complaint mailed July 16, 2026.
+- **Matter 28** (USDC N.D. Cal., Case No. 3:26-cv-07504, Hon. Lisa J. Cisneros): Federal successor; §1983 Monell (HOPE) + Individual Capacity (Shannon Smith, LCSW), Bane Act §52.1, Fraud/Negligent Misrepresentation, RICO 18 U.S.C. §1962(c)-(d); case filed July 20, 2026, Initial CMC set October 22, 2026.
 - **Matter 30** (USDC N.D. Cal., San Jose Div.) — **ABANDONED.** Would have asserted §1983 First Amendment Retaliation + Due Process, Bane Act §52.1, and IIED against Long Moua (Badge #7472) and Gary Noguchi (Badge #7284) for the November 14, 2025 retaliatory 1502-DR and the July 2, 2026 inter-county parole transfer; Government Claims Act claim was filed July 18, 2026, but the matter was voluntarily withdrawn before the anticipated complaint filing due to a real, credible safety threat.
 - **Matters 3, 4, 14, 16 (Derrick, Urrea, Rojo)** — all **ABANDONED** for the same reason as Matter 30. Matter 3's federal MTD was under submission at the time of withdrawal; Defendant Palacios's exposure survives independently through Matter 5's discovery record and Matter 28. Matters 6, 11, 13, 17, 18, and 21 — the federal §1983 companion suits against HOPE, Macomber, Urrea, Maloney, and Barocio, all filed the week of January 22, 2026 — were voluntarily dismissed (five with prejudice, together, on June 29, 2026) once the surviving vehicles above made the parallel federal claims unnecessary.
 
@@ -115,7 +115,7 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | 25 | Newanforbi v. Federal Express Corporation | STK-CV-UWT-2026-0009118 | San Joaquin Sup. Ct. | State | Filed July 15, 2026; demand response deadline July 26 (5:00 PM PT); Dept. 10B, Hon. Blanca Banuelos; CMC Jan. 14, 2027; LA Sheriff accepted SER-001 service request July 21, 2026 |
 | 26 | Newanforbi v. United Parcel Service, Inc. | STK-CV-UWT-2026-0009113 | San Joaquin Sup. Ct. | State | Filed July 15, 2026; demand response deadline July 26 (5:00 PM PT); limitations period preserved (16 days to spare); Dept. 11B, Hon. Robert T. Waters; CMC Jan. 13, 2027 |
 | 27 | Newanforbi v. Randstad US, LLC et al. | 26CV199902 | Alameda Sup. Ct. | State | Filed July 20, 2026, Hon. Karin Schwartz, Dept. 20; RK Logistics denied the demand July 21, 2026 through Garcia & Gurney, ALC — grounds rebutted; Randstad has not responded, deadline Aug. 2, 2026 |
-| 28 | Newanforbi v. Shannon Smith, LCSW, CEO, et al. | TBD | USDC N.D. Cal. | Federal | Complaint mailed July 16, 2026; anticipated receipt July 20, 2026; §1983 + Bane Act + RICO |
+| 28 | Newanforbi v. Shannon Smith, LCSW, CEO, et al. | 3:26-cv-07504 | USDC N.D. Cal. | Federal | Case filed July 20, 2026, Hon. Lisa J. Cisneros; Initial CMC Oct. 22, 2026; §1983 + Bane Act + RICO |
 | 29 | Newanforbi v. Amazon.com Services, LLC et al. | TBD | Alameda Sup. Ct. (anticipated) | State | Pre-complaint — BGC pending (Accurate Background LLC, shortcode 45996); adverse action anticipated; PC §290.46(j) + FCRA + ICRAA; Lerma precedent (same defendants, settled Sept. 2023) establishes willfulness |
 
 ### Settled
@@ -202,16 +202,16 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 
 ## Attorney Fees Analysis
 
-Plaintiff is representing himself pro se across all 30 matters. The figures below represent what he would have been required to spend on private counsel to litigate this portfolio — costs he has absorbed entirely through self-representation. Based on real page counts extracted from all 302 documents across the portfolio (3,607 total pages), classified by document type and priced at a blended rate of **$280/hour** (senior partner $350–$450 / mid-associate $250–$350 / paralegal $150–$200). Opposing-party filings billed at light review rate only.
+Plaintiff is representing himself pro se across all 30 matters. The figures below represent what he would have been required to spend on private counsel to litigate this portfolio — costs he has absorbed entirely through self-representation. Based on real page counts extracted from all 303 documents across the portfolio (3,609 total pages), classified by document type and priced at a blended rate of **$280/hour** (senior partner $350–$450 / mid-associate $250–$350 / paralegal $150–$200). Opposing-party filings billed at light review rate only.
 
 | Cluster | Matters | Low | Mid | High |
 |---|---|---|---|---|
 | CHP / DUI / DMV | 1, 2, 7, 8, 20, 24 | $134,596 | $177,212 | $219,828 |
-| Parole Retaliation / HOPE | 3, 4, 5, 6, 11, 13, 14, 15, 16, 17, 18, 21, 28, 30 | $459,032 | $601,972 | $749,112 |
+| Parole Retaliation / HOPE | 3, 4, 5, 6, 11, 13, 14, 15, 16, 17, 18, 21, 28, 30 | $459,312 | $602,392 | $749,672 |
 | Consumer Fraud / Employment | 12, 22, 23, 25, 26, 27, 29 | $111,356 | $149,170 | $186,900 |
 | Administrative Writs & Habeas | 9, 10, 19 | $41,020 | $57,050 | $73,080 |
-| **Portfolio Total** | **30 matters / 302 docs / 3,607 pages** | **$746,004** | **$985,390** | **$1,228,976** |
-| **Estimated Hours** | | **2,664.3 hrs** | **3,519.3 hrs** | **4,389.2 hrs** |
+| **Portfolio Total** | **30 matters / 303 docs / 3,609 pages** | **$746,284** | **$985,810** | **$1,229,536** |
+| **Estimated Hours** | | **2,665.3 hrs** | **3,520.8 hrs** | **4,391.2 hrs** |
 
 *Plaintiff has litigated all 30 matters pro se, absorbing the full economic equivalent of the above without compensation. Fee-shifting statutes (42 U.S.C. §1988, PC §290.46(j)(4)(A), RICO 18 U.S.C. §1964(c), FCRA, ICRAA) apply across the majority of active matters — mandatory fee recovery upon prevailing substantially offsets or eliminates the above costs.*
 
