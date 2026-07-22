@@ -239,13 +239,13 @@ export const lawyer_fees = [
     notes: "Filed July 15, 2026 — 16 days before the July 31, 2026 two-year limitations cutoff, preserving all time-sensitive claims. The 18-page, six-count complaint is the only substantive drafting product; most remaining pages are single-page First Advantage notice/reminder emails. Increment since the prior estimate: file-stamped complaint confirmation pages, the FW-003 fee waiver order (GRANTED), a duplicate Notice of Case Assignment/Hearing, the SUM-100 Summons, and a 5-page SER-001 Request for Sheriff to Serve Court Papers (Sacramento County, registered-agent service, requested deadline July 31, 2026) — billed as a light administrative/procedural task, not full motion-drafting rate. No answer, motion practice, or discovery exists yet."
   },
   {
-    number: 27, caption: "Newanforbi v. Randstad, et al.", caseNumber: "TBD (Alameda Sup. Ct.)",
+    number: 27, caption: "Newanforbi v. Randstad, et al.", caseNumber: "26CV199902 (Alameda Sup. Ct.)",
     court: "Alameda Sup. Ct.", type: "State — PC §290.46(j) / Wrongful Termination / ICRAA / Negligence Per Se / UCL",
-    status: "Employment terminated July 15, 2026. Verified Complaint for Damages executed July 20, 2026; Pre-Filing Demand Letters sent to Randstad and RK Logistics same day ($85,000 each, deadline Aug. 2, 2026); SER-001 Sheriff service request executed for Randstad; not yet e-filed — no case number assigned",
-    documentsCount: 12, totalPagesReal: 58,
-    hours: { low: 55, high: 84, mid: 69.5 },
-    cost: { low: 15400, high: 23520, mid: 19460 },
-    notes: "Substantial increment from the prior pre-filing estimate now that the complaint and demand letters are drafted. Twelve documents, 58 real pages: the 19-page Verified Complaint for Damages (major pleading, 2–3 hr/page — dominant cost driver); two 4-page Pre-Filing Demand Letters to Randstad and RK Logistics (substantive negotiation correspondence citing Tameny, Evid. Code §669, and Bus. & Prof. Code §17200, with itemized settlement terms, billed at ~1–1.5 hr/page); the 15-page InfoMart background check report (Order No. 15780719 — evidentiary centerpiece, billed at evidence-review rate); two CA SOS registered-agent records (6 pages) and two Gmail demand-transmittal confirmations (2 pages), both at evidence-review rate; three onboarding/notice emails (rehire confirmation, MVR request, InfoMart pre-adverse notice); and a 5-page SER-001 Request for Sheriff to Serve Court Papers naming Randstad's registered agent, billed as a light administrative/procedural task. Once e-filed (if the August 2 demand deadline lapses), service and any motion practice will add a further increment."
+    status: "Employment terminated July 15, 2026. Verified Complaint for Damages e-filed July 20, 2026 via One Legal — Case No. 26CV199902 assigned, Hon. Karin Schwartz, Dept. 20; Complaint, Civil Case Cover Sheet, and Fee Waiver ACCEPTED, Summons REJECTED on a caption technicality and being resubmitted; Pre-Filing Demand Letters sent to Randstad and RK Logistics same day ($85,000 each, deadline Aug. 2, 2026); SER-001 Sheriff service request executed for Randstad. On July 21, 2026, RK Logistics denied the demand through counsel Garcia & Gurney, ALC; Randstad has not yet responded.",
+    documentsCount: 24, totalPagesReal: 108,
+    hours: { low: 69.7, high: 118.2, mid: 93.95 },
+    cost: { low: 19516, high: 33096, mid: 26306 },
+    notes: "Substantial increment now that the complaint has actually been e-filed and RK Logistics has responded. Twelve new documents since the pre-filing estimate (24 total, 108 real pages, +50 pages): the e-filing confirmation packet (Civil Case Cover Sheet, Fee Waiver, Order on Fee Waiver, Notice of Confirmation of E-Filing, Notice of Case Assignment, Notice of CMC, and two SUM-100 versions plus the blank template) billed as light administrative/procedural tasks (0.5–2 hr/doc, per methodology); a duplicate filed copy of the 19-page Complaint billed only incrementally per the near-duplicate rule; and the 12-page Garcia & Gurney response letter, billed above the standard opposing-counsel light-review rate to account for the substantive rebuttal analysis it required (comparing the SambaSafety Class A/Class C license distinction and the Jack Altares email against the letter's employer-status argument), plus its 1-page Gmail transmittal. Prior 12-document, 58-page base (19-page Verified Complaint, two 4-page demand letters, 15-page InfoMart report, CA SOS records, Gmail demand transmittals, onboarding emails, and the 5-page SER-001) carries forward unchanged. Randstad's August 2 response is still outstanding; service and any motion practice on either defendant will add a further increment."
   },
   {
     number: 28, caption: "Newanforbi v. Shannon Smith, LCSW, CEO, et al.", caseNumber: "TBD",
@@ -279,21 +279,21 @@ export const lawyer_fees = [
 ];
 
 export const lawyer_fees_summary = {
-  analysisDate: "2026-07-21",
+  analysisDate: "2026-07-22",
   totalMatters: 30,
-  totalDocumentsAnalyzed: 290,
-  totalPagesReal: 3557,
+  totalDocumentsAnalyzed: 302,
+  totalPagesReal: 3607,
   methodology: {
     blendedHourlyRate: 280,
     rateRange: { seniorPartner: [350, 450], midAssociate: [250, 350], paralegal: [150, 200] },
     note: "Every PDF in public/documents/matter-XX/ was measured with pdfinfo for real page counts (poppler-utils), then classified by document type (complaint, motion/opposition/reply, discovery, writ/habeas, declaration, administrative, evidence) and priced using the hours-per-page/per-document conversions in docs/LAWYER_FEES_CALCULATOR.md. Opposing counsel's filings are billed only at a light review rate, never at drafting rate. Matters with no uploaded PDFs are estimated conservatively from matters.js status text.",
   },
-  totalEstimatedHours: { low: 2649.6, high: 4355.0, mid: 3494.8 },
-  totalEstimatedCost: { low: 741888, high: 1219400, mid: 978544 },
+  totalEstimatedHours: { low: 2664.3, high: 4389.2, mid: 3519.25 },
+  totalEstimatedCost: { low: 746004, high: 1228976, mid: 985390 },
   byCluster: {
     cluster1: { label: "CHP / DUI / DMV", matters: [1, 2, 7, 8, 20, 24], costLow: 134596, costMid: 177212, costHigh: 219828 },
     cluster2: { label: "Parole Retaliation / HOPE", matters: [3, 4, 5, 6, 11, 13, 14, 15, 16, 17, 18, 21, 28, 30], costLow: 459032, costMid: 601972, costHigh: 749112 },
-    cluster3: { label: "Consumer Fraud / Employment", matters: [12, 22, 23, 25, 26, 27, 29], costLow: 107240, costMid: 142310, costHigh: 177380 },
+    cluster3: { label: "Consumer Fraud / Employment", matters: [12, 22, 23, 25, 26, 27, 29], costLow: 111356, costMid: 149170, costHigh: 186900 },
     cluster4: { label: "Administrative Writs & Habeas", matters: [9, 10, 19], costLow: 41020, costMid: 57050, costHigh: 73080 },
   },
 };
