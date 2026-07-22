@@ -48,6 +48,12 @@ const MatterCard = ({ matter: c, isOpen, onToggle }) => {
         <div aria-hidden="true" style={{ color: theme.subtleText, fontSize: 18, transition: "transform 0.3s", transform: isOpen ? "rotate(180deg)" : "rotate(0)" }}>▾</div>
       </button>
 
+      {c.note && (
+        <div style={{ margin: "0 22px 16px", padding: "8px 14px", borderRadius: 6, background: `${GOLD}12`, border: `1px solid ${GOLD}40`, fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 600, color: theme.secondaryText }}>
+          📌 {c.note}
+        </div>
+      )}
+
       {/* Expanded detail */}
       {isOpen && (
         <div id={`matter-detail-${c.number}`} style={{ padding: "0 22px 22px", borderTop: `1px solid ${theme.cardBorder}` }}>
