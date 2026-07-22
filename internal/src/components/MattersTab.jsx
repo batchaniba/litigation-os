@@ -146,6 +146,10 @@ export const MattersTab = ({ filteredCases, clusterFilter, setClusterFilter, typ
         <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: theme.subtleText, marginLeft: "auto" }}>{filteredCases.length} of {PORTFOLIO.cases.length}</span>
       </div>
 
+      <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, fontStyle: "italic", color: theme.subtleText, marginBottom: 16 }}>
+        Matters marked <strong style={{ color: "#6b7280", fontStyle: "normal" }}>ABANDONED</strong> were voluntarily abandoned due to real, credible safety threats.
+      </div>
+
       {/* Matter Cards */}
       <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
         {filteredCases.length === 0 ? (
