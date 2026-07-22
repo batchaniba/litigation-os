@@ -48,7 +48,7 @@ const MatterCard = ({ matter: c, isOpen, onToggle }) => {
           </div>
           {c.note && (
             <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 600, fontStyle: "italic", color: theme.secondaryText, whiteSpace: "nowrap" }}>
-              {c.note}
+              📌 {c.note}
             </div>
           )}
         </div>
