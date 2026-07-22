@@ -59,7 +59,7 @@ const CLUSTERS = [
 ];
 
 const PERTINENT_FILINGS = [
-  { title: "Newanforbi v. CDCR, et al.", matter: 15, date: "Filed May 13, 2026", dateStatus: "filed" },
+  { title: "Newanforbi v. CDCR, et al.", matter: 15, note: "ABANDONED — Voluntary Dismissal With Prejudice Jul 24", date: "Filed May 13, 2026", dateStatus: "filed" },
   { title: "Newanforbi v. Serrato et al.", matter: 24, date: "Filed Jun 17, 2026", dateStatus: "filed" },
   { title: "Newanforbi v. Federal Express Corporation", matter: 25, date: "Filed Jul 15, 2026", dateStatus: "filed" },
   { title: "Newanforbi v. United Parcel Service, Inc.", matter: 26, date: "Filed Jul 15, 2026", dateStatus: "filed" },

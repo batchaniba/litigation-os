@@ -133,7 +133,7 @@ export const lawyer_fees = [
   {
     number: 15, caption: "Newanforbi v. California Department of Corrections and Rehabilitation, et al.", caseNumber: "STK-CV-UPI-2026-5417",
     court: "San Joaquin Sup. Ct.", type: "State",
-    status: "Active — Complaint for Damages filed June 11, 2026; CDCR & Dodd served June 22; responsive pleading due ~July 22, 2026",
+    status: "ABANDONED — Voluntary Dismissal With Prejudice filed July 24, 2026, as to all defendants, due to a real, credible safety threat. Complaint for Damages had been filed June 11, 2026; CDCR & Dodd served June 22.",
     documentsCount: 19, totalPagesReal: 448,
     hours: { low: 300.5, high: 419.5, mid: 360 },
     cost: { low: 84140, high: 117460, mid: 100800 },
