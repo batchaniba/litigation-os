@@ -20,7 +20,10 @@ const MAX_PORTFOLIO_AGGRESSIVE = PORTFOLIO.damages_table.reduce(
   (m, x) => Math.max(m, x.aggressive), 0
 );
 
-const MATTER_TOTALS = PORTFOLIO.matter_damages.reduce(
+const ARCHIVED_MATTER_NUMS = new Set(PORTFOLIO.cases.filter(c => c.archived).map(c => c.number));
+const ACTIVE_MATTER_DAMAGES = PORTFOLIO.matter_damages.filter(m => !ARCHIVED_MATTER_NUMS.has(m.number));
+
+const MATTER_TOTALS = ACTIVE_MATTER_DAMAGES.reduce(
   (acc, m) => {
     acc.conservative += m.conservative;
     acc.moderate += m.moderate;
@@ -31,7 +34,7 @@ const MATTER_TOTALS = PORTFOLIO.matter_damages.reduce(
 );
 
 const MAX_MATTER_AGGRESSIVE = Math.max(
-  ...PORTFOLIO.matter_damages.map(m => m.aggressive)
+  ...ACTIVE_MATTER_DAMAGES.map(m => m.aggressive)
 );
 
 // Risk badge color
@@ -197,7 +200,7 @@ export const DamagesTab = ({ damagesView, setDamagesView }) => {
   const [dashMode, setDashMode] = useState("portfolio");
   const [expandedMatter, setExpandedMatter] = useState(null);
 
-  const sortedMatters = [...PORTFOLIO.matter_damages].sort(
+  const sortedMatters = [...ACTIVE_MATTER_DAMAGES].sort(
     (a, b) => b[damagesView] - a[damagesView]
   );
 
