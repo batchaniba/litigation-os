@@ -19,9 +19,9 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 | Jurisdictions | USDC E.D. Cal., USDC N.D. Cal., San Joaquin Sup. Ct., Alameda Sup. Ct., Sacramento Sup. Ct., Santa Clara Sup. Ct. |
 | Housing Status | **Homeless since July 2, 2026** — direct consequence of retaliatory inter-county parole transfer (Stockton → Santa Clara) imposed immediately after filing Matter 15 (Newanforbi v. CDCR, et al.); transfer caused loss of Stockton family housing; Matters 3, 9, and 19 are also potential retaliatory predicate acts |
 | Representation | Pro Se / In Propria Persona — all 30 matters self-litigated; estimated equivalent private-counsel cost: $746,004–$1,228,976 |
-| Aggregate Exposure (Conservative) | ~$1,713,000+ |
-| Aggregate Exposure (Moderate) | ~$4,308,000+ |
-| Aggregate Exposure (Aggressive) | ~$9,125,000+ |
+| Aggregate Exposure (Conservative) | ~$1,291,000+ |
+| Aggregate Exposure (Moderate) | ~$3,223,000+ |
+| Aggregate Exposure (Aggressive) | ~$6,875,000+ |
 | Last Updated | July 22, 2026 |
 
 *Of the 15 dismissed/closed/abandoned matters: six (Matters 3, 4, 14, 16, 23, 30) were voluntarily abandoned due to real, credible safety threats; six federal companion suits (Matters 6, 11, 13, 17, 18, 21) were voluntarily dismissed — five with prejudice, together, on June 29, 2026 — once the stronger surviving vehicles (the Matter 19 habeas track, the Matter 15 damages track, and Matter 28's Monell/RICO case) made the parallel federal claims redundant; and three (Matters 5, 9, 10) closed on procedural/exhaustion grounds rather than the merits, with Matter 5's discovery record carried forward into Matter 28. See [All Matters](#all-matters) below for the full disposition table.*
@@ -179,25 +179,26 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 
 | Category | Matters | Conservative | Moderate | Aggressive |
 |---|---|---|---|---|
-| Lost Wages / Economic Harm | 1, 2, 3, 5, 7, 15, 22 | $275,000 | $580,000 | $935,000 |
+| Lost Wages / Economic Harm | 1, 2, 7, 15, 22 | $110,000 | $280,000 | $550,000 |
 | False Imprisonment | 1, 2, 15 | $65,000 | $165,000 | $325,000 |
-| Emotional Distress | 1, 2, 3, 5, 7, 15, 22, 24 | $85,000 | $240,000 | $535,000 |
-| Bane Act / Treble | 1, 2, 5 | $75,000 | $200,000 | $450,000 |
-| Punitive Damages | 1, 2, 3, 5, 7, 15, 22, 24 | $165,000 | $595,000 | $1,500,000 |
+| Emotional Distress | 1, 2, 5, 7, 15, 22, 24 | $60,000 | $170,000 | $415,000 |
+| Bane Act / Treble | 1, 2 | $15,000 | $50,000 | $70,000 |
+| Punitive Damages | 1, 2, 7, 15, 22, 24 | $105,000 | $320,000 | $850,000 |
 | Consumer Fraud (Matter 12) | 12 | $79,000 | $110,000 | $200,000 |
-| Attorneys' Fees | 1, 3, 5, 7, 22, 24 | $50,000 | $110,000 | $260,000 |
+| Attorneys' Fees | 1, 7, 22, 24 | $28,000 | $45,000 | $70,000 |
 | PC §290.46(j) + Wrongful Termination | 22 | $220,000 | $525,000 | $1,000,000 |
 | §1983 — U Visa Certification Denial & Retaliation | 24 | $75,000 | $200,000 | $450,000 |
 | PC §290.46(j) Failure to Hire — FedEx / UPS | 25, 26 | $75,000 | $180,000 | $420,000 |
 | PC §290.46(j) — Wrongful Termination / Failure to Employ — Randstad / RK Logistics | 27 | $180,000 | $437,000 | $835,000 |
 | §1983 Monell + Individual + Bane Act + RICO — Shannon Smith / HOPE | 28 | $249,000 | $666,000 | $1,510,000 |
 | PC §290.46(j) Failure to Hire — Amazon | 29 | $30,000 | $75,000 | $180,000 |
-| §1983 First Amend. Retaliation + Due Process + Bane Act + IIED — Moua / Noguchi | 30 | $90,000 | $225,000 | $525,000 |
-| **Portfolio Total (pre-deduplication)** | | **$1,713,000** | **$4,308,000** | **$9,125,000** |
+| **Portfolio Total (pre-deduplication)** | | **$1,291,000** | **$3,223,000** | **$6,875,000** |
 
 *Note: The portfolio total reflects independent per-defendant exposure across all matters before deduplication of shared economic events (e.g., the same CDL wage-loss period underlying Matters 1, 2, 7, 15). Per-matter settlement negotiations treat each defendant independently.*
 
 *Matter 22 (Pilot) settled July 11, 2026 — terms confidential per settlement agreement.*
+
+*Matters 3 (Derrick), 5 (Palacios), and 30 (Moua) have been excluded from this table following their abandonment/dismissal. Matter 3's Lost Income, Emotional Distress, Punitive, and Fees components and Matter 5's Lost CDL Wages, Bane Act/Treble, Punitive, and Fees components were subtracted from the matching rows above; Matter 5's own damages breakdown has no dedicated Emotional Distress line item, so that row still carries its unquantified share. Matter 30's dedicated row (was $90,000 / $225,000 / $525,000) was removed outright.*
 
 ---
 
