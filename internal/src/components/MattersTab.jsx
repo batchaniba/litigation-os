@@ -39,17 +39,19 @@ const MatterCard = ({ matter: c, isOpen, onToggle }) => {
           <div style={{ fontSize: 16, fontWeight: 700, color: theme.heading, marginBottom: 3 }}>{c.caption}</div>
           <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: theme.subtleText }}>{c.case_no} · {c.court}</div>
         </div>
-        <div style={{ display: "flex", gap: 8, alignItems: "center", flexWrap: "wrap" }}>
-          <ClusterBadge cluster={c.cluster} />
-          <TypeBadge type={c.type} />
-          <StatusBadge status={c.status} />
-          {c.archived && <ArchiveBadge />}
-        </div>
-        {c.note && (
-          <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 600, fontStyle: "italic", color: theme.secondaryText, whiteSpace: "nowrap" }}>
-            {c.note}
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 6 }}>
+          <div style={{ display: "flex", gap: 8, alignItems: "center", flexWrap: "wrap" }}>
+            <ClusterBadge cluster={c.cluster} />
+            <TypeBadge type={c.type} />
+            <StatusBadge status={c.status} />
+            {c.archived && <ArchiveBadge />}
           </div>
-        )}
+          {c.note && (
+            <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 600, fontStyle: "italic", color: theme.secondaryText, whiteSpace: "nowrap" }}>
+              {c.note}
+            </div>
+          )}
+        </div>
         <div aria-hidden="true" style={{ color: theme.subtleText, fontSize: 18, transition: "transform 0.3s", transform: isOpen ? "rotate(180deg)" : "rotate(0)" }}>▾</div>
       </button>
 
