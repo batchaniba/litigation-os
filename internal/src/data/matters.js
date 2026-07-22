@@ -340,7 +340,7 @@ export const cases = [
     {
       number: 9, caption: "Newanforbi v. Macomber", case_no: "26WM000028", court: "Sacramento Sup. Ct.",
       claims: "Writ of Mandate (CCP §1085)", status: "Closed — Demurrer Hearing 05/29/2026, Dept. 13A",
-      filed: "January 30, 2026", judge: "Hon. James P. Arguelles", cluster: 4, type: "State", archived: true,
+      filed: "January 30, 2026", judge: "Hon. James P. Arguelles", cluster: 4, type: "State", archived: true, badge: "DENIED",
       defendants: "Jeff Macomber, Secretary of CDCR",
       causes: ["Writ of Mandate (CCP §1085) — Compel ministerial duty to conduct individualized discharge determination"],
       key_facts: "Challenges November 2025 Discharge Review decision. CDCR abused discretion: facial scoring errors in Form 1502-DR, retaliatory input from compromised agents, wrong legal standard, blanket denial based on treatment non-completion.",
@@ -361,7 +361,7 @@ export const cases = [
     {
       number: 10, caption: "Newanforbi v. Macomber", case_no: "C2602632", court: "Santa Clara Sup. Ct.",
       claims: "Habeas Corpus (PC §3008(d)(2); 15 CCR §3574) — Treatment Termination", status: "CLOSED — Order Denying Petition Without Prejudice (April 27, 2026)",
-      filed: "February 23, 2026", judge: "Hon. Robert Hawk", cluster: 4, type: "State", archived: true, badge: "DISMISSED",
+      filed: "February 23, 2026", judge: "Hon. Robert Hawk", cluster: 4, type: "State", archived: true, badge: "DENIED",
       defendants: "Jeffrey Macomber, Secretary of CDCR (official capacity)",
       causes: ["PC §3008(d)(2)", "15 CCR §3574", "Challenge to compelled treatment as unlawful restraint"],
       key_facts: "On parole since Dec. 2020. Over 5 years of treatment. No new convictions, no revocations, low risk. Repeated clinician turnover and administrative resets. No good-cause finding issued for continued retention.",
