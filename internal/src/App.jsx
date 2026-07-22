@@ -69,21 +69,41 @@ export default function LitigationPortfolio() {
             </div>
             {/* Opposing Counsel */}
             <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 12, flexShrink: 0 }}>
-              <img
-                src={withBase(darkMode ? "/branding/slb-dark.png" : "/branding/slb-light.png")}
-                alt="Sims, Lawrence & Broghammer"
-                style={{ width: darkMode ? 175 : 120, height: darkMode ? 62 : 42, objectFit: "contain", objectPosition: "right center" }}
-              />
-              <img
-                src={withBase(darkMode ? "/branding/garcia-gurney-dark.png" : "/branding/garcia-gurney.png")}
-                alt="Garcia & Gurney, A Law Corporation"
-                style={{ width: 130, height: 44, objectFit: "contain", objectPosition: "right center" }}
-              />
-              <img
-                src={withBase(darkMode ? "/branding/dag-dark.jpg" : "/branding/dag-light.jpg")}
-                alt="California Department of Justice, Office of the Attorney General"
-                style={{ height: 64, width: 64, objectFit: "cover", borderRadius: "50%" }}
-              />
+              {/* SLB */}
+              <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                <div style={{ textAlign: "right", fontFamily: "'DM Sans', sans-serif" }}>
+                  <div style={{ fontSize: 10, fontWeight: 600, color: BODY_GRAY, lineHeight: 1.5 }}>Bryan Malone</div>
+                  <div style={{ fontSize: 10, fontWeight: 600, color: BODY_GRAY, lineHeight: 1.5 }}>Blaze Van Dine</div>
+                </div>
+                <img
+                  src={withBase(darkMode ? "/branding/slb-dark.png" : "/branding/slb-light.png")}
+                  alt="Sims, Lawrence & Broghammer"
+                  style={{ width: darkMode ? 175 : 120, height: darkMode ? 62 : 42, objectFit: "contain", objectPosition: "right center" }}
+                />
+              </div>
+              {/* Garcia & Gurney */}
+              <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                <div style={{ textAlign: "right", fontFamily: "'DM Sans', sans-serif" }}>
+                  <div style={{ fontSize: 10, fontWeight: 600, color: BODY_GRAY, lineHeight: 1.5 }}>Melinda Garcia</div>
+                </div>
+                <img
+                  src={withBase(darkMode ? "/branding/garcia-gurney-dark.png" : "/branding/garcia-gurney.png")}
+                  alt="Garcia & Gurney, A Law Corporation"
+                  style={{ width: 130, height: 44, objectFit: "contain", objectPosition: "right center" }}
+                />
+              </div>
+              {/* DAG */}
+              <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                <div style={{ textAlign: "right", fontFamily: "'DM Sans', sans-serif" }}>
+                  <div style={{ fontSize: 10, fontWeight: 600, color: BODY_GRAY, lineHeight: 1.5 }}>Judith S. Gronna</div>
+                  <div style={{ fontSize: 9, color: BODY_GRAY, opacity: 0.7, lineHeight: 1.4 }}>Deputy Attorney General</div>
+                </div>
+                <img
+                  src={withBase(darkMode ? "/branding/dag-dark.jpg" : "/branding/dag-light.jpg")}
+                  alt="California Department of Justice, Office of the Attorney General"
+                  style={{ height: 64, width: 64, objectFit: "cover", borderRadius: "50%" }}
+                />
+              </div>
             </div>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap" }}>
