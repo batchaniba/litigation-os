@@ -1,9 +1,9 @@
 export const damages_table = [
-    { category: "Lost Wages / Economic Harm", matters: "1, 2, 7, 15, 22", conservative: 110000, moderate: 280000, aggressive: 550000 },
-    { category: "False Imprisonment", matters: "1, 2, 15", conservative: 65000, moderate: 165000, aggressive: 325000 },
-    { category: "Emotional Distress", matters: "1, 2, 5, 7, 15, 22, 24", conservative: 60000, moderate: 170000, aggressive: 415000 },
+    { category: "Lost Wages / Economic Harm", matters: "1, 2, 7, 22", conservative: 20000, moderate: 130000, aggressive: 334000 },
+    { category: "False Imprisonment", matters: "1, 2", conservative: 40000, moderate: 85000, aggressive: 215000 },
+    { category: "Emotional Distress", matters: "1, 2, 5, 7, 22, 24", conservative: 0, moderate: 20000, aggressive: 115000 },
     { category: "Bane Act / Treble", matters: "1, 2", conservative: 15000, moderate: 50000, aggressive: 70000 },
-    { category: "Punitive Damages", matters: "1, 2, 7, 15, 22, 24", conservative: 105000, moderate: 320000, aggressive: 850000 },
+    { category: "Punitive Damages", matters: "1, 2, 7, 22, 24", conservative: 30000, moderate: 120000, aggressive: 450000 },
     { category: "Consumer Fraud", matters: "12", conservative: 79000, moderate: 110000, aggressive: 200000 },
     { category: "Attorneys' Fees", matters: "1, 7, 22, 24", conservative: 28000, moderate: 45000, aggressive: 70000 },
     { category: "PC §290.46(j) Violation + Wrongful Termination (Matter 22)", matters: "22", conservative: 220000, moderate: 525000, aggressive: 1000000 },
@@ -13,12 +13,18 @@ export const damages_table = [
     { category: "§1983 Monell / Individual + Bane Act + RICO — Shannon Smith / HOPE (Matter 28)", matters: "28", conservative: 249000, moderate: 666000, aggressive: 1510000 },
     { category: "PC §290.46(j) Failure to Hire — Amazon (Matter 29)", matters: "29", conservative: 30000, moderate: 75000, aggressive: 180000 }
 ];
-// Matters 3, 5, and 30 are excluded/reduced above (abandoned Jul. 2026 / dismissed Jul. 15, 2026):
+// Matters 3, 5, 15, and 30 are excluded/reduced above (abandoned/dismissed Jul. 2026):
 // - Matter 3 (Derrick, ABANDONED): its Lost Income, Emotional Distress, Punitive, and Fees
 //   components subtracted from the matching rows; no False Imprisonment/Bane Act component existed for it.
 // - Matter 5 (Palacios, DISMISSED): its Lost CDL Wages, Bane Act/Treble, Punitive, and Fees
 //   components subtracted; Matter 5 has no dedicated Emotional Distress component in its own
 //   breakdown, so its (unquantified) share of that row was left in place rather than guessed at.
+// - Matter 15 (CDCR/Dodd/Noguchi, ABANDONED — voluntary dismissal with prejudice, Jul. 24, 2026):
+//   its Lost CDL Wages, Liberty Deprivation (False Imprisonment), Emotional Distress, and Punitive
+//   components subtracted. Its Out-of-Pocket Compliance Costs ($20K/$40K/$60K) and Retaliatory
+//   Transfer Losses ($15K/$30K/$64K) components have no matching category row and were never
+//   captured here at all. Emotional Distress conservative would have gone negative after this
+//   subtraction (row already reduced by Matter 3's share) — floored at $0 rather than shown negative.
 // - Matter 30 (Moua, ABANDONED): its dedicated single-matter row removed entirely
 //   (was: conservative $90,000 / moderate $225,000 / aggressive $525,000).
 
