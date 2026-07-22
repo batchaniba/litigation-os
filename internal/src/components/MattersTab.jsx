@@ -13,7 +13,7 @@ const MatterCard = ({ matter: c, isOpen, onToggle }) => {
         <div aria-label="Settled" style={{ position: "absolute", top: 14, right: -28, width: 110, background: "#16a34a", color: "#fff", fontSize: 10, fontFamily: "'DM Sans', sans-serif", fontWeight: 800, letterSpacing: 2, textTransform: "uppercase", textAlign: "center", padding: "5px 0", transform: "rotate(45deg)", boxShadow: "0 2px 8px rgba(0,0,0,0.35)", pointerEvents: "none", zIndex: 10 }}>SETTLED</div>
       )}
       {c.badge === "DEFAULT" && (
-        <div aria-label="Default" style={{ position: "absolute", top: 14, right: -28, width: 110, background: GOLD, color: "#fff", fontSize: 10, fontFamily: "'DM Sans', sans-serif", fontWeight: 800, letterSpacing: 2, textTransform: "uppercase", textAlign: "center", padding: "5px 0", transform: "rotate(45deg)", boxShadow: "0 2px 8px rgba(0,0,0,0.35)", pointerEvents: "none", zIndex: 10 }}>DEFAULT</div>
+        <div aria-label="Default" style={{ position: "absolute", top: 14, right: -28, width: 110, background: "#16a34a", color: "#fff", fontSize: 10, fontFamily: "'DM Sans', sans-serif", fontWeight: 800, letterSpacing: 2, textTransform: "uppercase", textAlign: "center", padding: "5px 0", transform: "rotate(45deg)", boxShadow: "0 2px 8px rgba(0,0,0,0.35)", pointerEvents: "none", zIndex: 10 }}>DEFAULT</div>
       )}
       {c.badge === "DISMISSED" && (
         <div aria-label="Dismissed" style={{ position: "absolute", top: 14, right: -28, width: 110, background: "#dc2626", color: "#fff", fontSize: 10, fontFamily: "'DM Sans', sans-serif", fontWeight: 800, letterSpacing: 2, textTransform: "uppercase", textAlign: "center", padding: "5px 0", transform: "rotate(45deg)", boxShadow: "0 2px 8px rgba(0,0,0,0.35)", pointerEvents: "none", zIndex: 10 }}>DISMISSED</div>
@@ -39,11 +39,18 @@ const MatterCard = ({ matter: c, isOpen, onToggle }) => {
           <div style={{ fontSize: 16, fontWeight: 700, color: theme.heading, marginBottom: 3 }}>{c.caption}</div>
           <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: theme.subtleText }}>{c.case_no} · {c.court}</div>
         </div>
-        <div style={{ display: "flex", gap: 8, alignItems: "center", flexWrap: "wrap" }}>
-          <ClusterBadge cluster={c.cluster} />
-          <TypeBadge type={c.type} />
-          <StatusBadge status={c.status} />
-          {c.archived && <ArchiveBadge />}
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 6 }}>
+          <div style={{ display: "flex", gap: 8, alignItems: "center", flexWrap: "wrap" }}>
+            <ClusterBadge cluster={c.cluster} />
+            <TypeBadge type={c.type} />
+            <StatusBadge status={c.status} />
+            {c.archived && <ArchiveBadge />}
+          </div>
+          {c.note && (
+            <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 600, fontStyle: "italic", color: theme.secondaryText, whiteSpace: "nowrap" }}>
+              📌 {c.note}
+            </div>
+          )}
         </div>
         <div aria-hidden="true" style={{ color: theme.subtleText, fontSize: 18, transition: "transform 0.3s", transform: isOpen ? "rotate(180deg)" : "rotate(0)" }}>▾</div>
       </button>
@@ -144,6 +151,10 @@ export const MattersTab = ({ filteredCases, clusterFilter, setClusterFilter, typ
           }}>{t ?? "All"}</button>
         ))}
         <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: theme.subtleText, marginLeft: "auto" }}>{filteredCases.length} of {PORTFOLIO.cases.length}</span>
+      </div>
+
+      <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, fontStyle: "italic", color: theme.subtleText, marginBottom: 16 }}>
+        Matters marked <strong style={{ color: "#6b7280", fontStyle: "normal" }}>ABANDONED</strong> were voluntarily abandoned due to real, credible safety threats.
       </div>
 
       {/* Matter Cards */}
