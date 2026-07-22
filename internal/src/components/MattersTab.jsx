@@ -19,7 +19,10 @@ const MatterCard = ({ matter: c, isOpen, onToggle }) => {
         <div aria-label="Dismissed" style={{ position: "absolute", top: 14, right: -28, width: 110, background: "#dc2626", color: "#fff", fontSize: 10, fontFamily: "'DM Sans', sans-serif", fontWeight: 800, letterSpacing: 2, textTransform: "uppercase", textAlign: "center", padding: "5px 0", transform: "rotate(45deg)", boxShadow: "0 2px 8px rgba(0,0,0,0.35)", pointerEvents: "none", zIndex: 10 }}>DISMISSED</div>
       )}
       {c.badge === "ABANDONED" && (
-        <div aria-label="Abandoned" style={{ position: "absolute", top: 14, right: -28, width: 110, background: "#6b7280", color: "#fff", fontSize: 10, fontFamily: "'DM Sans', sans-serif", fontWeight: 800, letterSpacing: 2, textTransform: "uppercase", textAlign: "center", padding: "5px 0", transform: "rotate(45deg)", boxShadow: "0 2px 8px rgba(0,0,0,0.35)", pointerEvents: "none", zIndex: 10 }}>ABANDONED</div>
+        <div aria-label="Abandoned" style={{ position: "absolute", top: 14, right: -28, width: 110, background: "#FFFFFF", color: "#1a1a1a", border: "1px solid #00000022", fontSize: 10, fontFamily: "'DM Sans', sans-serif", fontWeight: 800, letterSpacing: 2, textTransform: "uppercase", textAlign: "center", padding: "5px 0", transform: "rotate(45deg)", boxShadow: "0 2px 8px rgba(0,0,0,0.35)", pointerEvents: "none", zIndex: 10 }}>ABANDONED</div>
+      )}
+      {c.badge === "DENIED" && (
+        <div aria-label="Denied" style={{ position: "absolute", top: 14, right: -28, width: 110, background: "#6b7280", color: "#fff", fontSize: 10, fontFamily: "'DM Sans', sans-serif", fontWeight: 800, letterSpacing: 2, textTransform: "uppercase", textAlign: "center", padding: "5px 0", transform: "rotate(45deg)", boxShadow: "0 2px 8px rgba(0,0,0,0.35)", pointerEvents: "none", zIndex: 10 }}>DENIED</div>
       )}
       {c.badge === "PENDING" && (
         <div aria-label="Pending" style={{ position: "absolute", top: 14, right: -28, width: 110, background: "#eab308", color: "#1a1a1a", fontSize: 10, fontFamily: "'DM Sans', sans-serif", fontWeight: 800, letterSpacing: 2, textTransform: "uppercase", textAlign: "center", padding: "5px 0", transform: "rotate(45deg)", boxShadow: "0 2px 8px rgba(0,0,0,0.35)", pointerEvents: "none", zIndex: 10 }}>PENDING</div>
