@@ -59,14 +59,12 @@ const CLUSTERS = [
 ];
 
 const PERTINENT_FILINGS = [
-  { title: "Newanforbi v. CDCR, et al.", matter: 15, note: "ABANDONED — Voluntary Dismissal With Prejudice Jul 24", date: "Filed May 13, 2026", dateStatus: "filed" },
   { title: "Newanforbi v. Serrato et al.", matter: 24, date: "Filed Jun 17, 2026", dateStatus: "filed" },
   { title: "Newanforbi v. Federal Express Corporation", matter: 25, date: "Filed Jul 15, 2026", dateStatus: "filed" },
   { title: "Newanforbi v. United Parcel Service, Inc.", matter: 26, date: "Filed Jul 15, 2026", dateStatus: "filed" },
   { title: "Newanforbi v. Randstad, et al.", matter: 27, note: "Case No. 26CV199902 — RK Logistics Denied Jul 21", date: "Filed Jul 20, 2026", dateStatus: "filed" },
   { title: "Newanforbi v. Shannon Smith, LCSW, et al.", matter: 28, note: "Case No. 3:26-cv-07504 — Hon. Lisa J. Cisneros", date: "Filed Jul 20, 2026", dateStatus: "filed" },
   { title: "Newanforbi v. Amazon.com Services, LLC", matter: 29, date: "Pre-Complaint — BGC Pending", dateStatus: "upcoming" },
-  { title: "Newanforbi v. Moua, et al.", matter: 30, date: "Anticipated Sep 16, 2026", dateStatus: "upcoming" },
 ];
 
 export const DashboardTab = ({ upcomingEvents, setClusterFilter, setActiveTab }) => {
