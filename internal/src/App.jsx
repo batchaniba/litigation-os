@@ -68,16 +68,11 @@ export default function LitigationPortfolio() {
               </div>
             </div>
             {/* Opposing Counsel */}
-            <div style={{ display: "flex", alignItems: "center", gap: 20, flexShrink: 0 }}>
-              <img
-                src={withBase(darkMode ? "/branding/dag-dark.jpg" : "/branding/dag-light.jpg")}
-                alt="California Department of Justice, Office of the Attorney General"
-                style={{ height: 40, width: "auto", objectFit: "contain" }}
-              />
+            <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 12, flexShrink: 0 }}>
               <img
                 src={withBase(darkMode ? "/branding/slb-dark.png" : "/branding/slb-light.png")}
                 alt="Sims, Lawrence & Broghammer"
-                style={{ height: 40, width: "auto", objectFit: "contain" }}
+                style={{ height: 60, width: "auto", objectFit: "contain" }}
               />
               <div style={{
                 background: darkMode ? "#FFFFFF" : "transparent",
@@ -87,9 +82,14 @@ export default function LitigationPortfolio() {
                 <img
                   src={withBase("/branding/garcia-gurney.png")}
                   alt="Garcia & Gurney, A Law Corporation"
-                  style={{ height: 28, width: "auto", objectFit: "contain" }}
+                  style={{ height: 40, width: "auto", objectFit: "contain" }}
                 />
               </div>
+              <img
+                src={withBase(darkMode ? "/branding/dag-dark.jpg" : "/branding/dag-light.jpg")}
+                alt="California Department of Justice, Office of the Attorney General"
+                style={{ height: 64, width: 64, objectFit: "cover", borderRadius: "50%" }}
+              />
             </div>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap" }}>
