@@ -70,7 +70,7 @@ export default function LitigationPortfolio() {
             {/* Opposing Counsel */}
             <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 12, flexShrink: 0 }}>
               {/* SLB */}
-              <div style={{ display: "flex", alignItems: "center", gap: darkMode ? 3 : 10 }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
                 <div style={{ textAlign: "right", fontFamily: "'DM Sans', sans-serif" }}>
                   <div style={{ fontSize: 10, fontWeight: 600, color: BODY_GRAY, lineHeight: 1.5 }}>Bryan Malone</div>
                   <div style={{ fontSize: 10, fontWeight: 600, color: BODY_GRAY, lineHeight: 1.5 }}>Blaze Van Dine</div>
@@ -78,7 +78,7 @@ export default function LitigationPortfolio() {
                 <img
                   src={withBase(darkMode ? "/branding/slb-dark.png" : "/branding/slb-light.png")}
                   alt="Sims, Lawrence & Broghammer"
-                  style={{ width: darkMode ? 175 : 120, height: darkMode ? 62 : 42, objectFit: "contain", objectPosition: "right center" }}
+                  style={{ height: darkMode ? 62 : 42, width: "auto" }}
                 />
               </div>
               {/* Garcia & Gurney */}
