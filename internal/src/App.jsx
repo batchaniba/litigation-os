@@ -72,12 +72,12 @@ export default function LitigationPortfolio() {
               <img
                 src={withBase(darkMode ? "/branding/slb-dark.png" : "/branding/slb-light.png")}
                 alt="Sims, Lawrence & Broghammer"
-                style={{ height: 60, width: "auto", objectFit: "contain" }}
+                style={{ width: 130, height: 44, objectFit: "contain", objectPosition: "right center" }}
               />
               <img
                 src={withBase(darkMode ? "/branding/garcia-gurney-dark.png" : "/branding/garcia-gurney.png")}
                 alt="Garcia & Gurney, A Law Corporation"
-                style={{ height: 60, width: "auto", objectFit: "contain" }}
+                style={{ width: 130, height: 44, objectFit: "contain", objectPosition: "right center" }}
               />
               <img
                 src={withBase(darkMode ? "/branding/dag-dark.jpg" : "/branding/dag-light.jpg")}
