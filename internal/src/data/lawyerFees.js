@@ -25,7 +25,7 @@ export const lawyer_fees = [
   {
     number: 3, caption: "Newanforbi v. Derrick et al.", caseNumber: "2:26-cv-00004-DJC-JDP",
     court: "USDC E.D. Cal.", type: "Federal",
-    status: "Active — MTD (Doc 24) under submission; hearing vacated, awaiting ruling",
+    status: "ABANDONED as to Derrick and Noguchi — Notice of Voluntary Dismissal Without Prejudice filed Jul. 22, 2026; Palacios MTD (Doc 24) remains under submission, hearing vacated, awaiting ruling",
     documentsCount: 26, totalPagesReal: 290,
     hours: { low: 190.8, high: 351.6, mid: 271.2 },
     cost: { low: 53424, high: 98448, mid: 75936 },
