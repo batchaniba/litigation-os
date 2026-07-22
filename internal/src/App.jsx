@@ -74,17 +74,11 @@ export default function LitigationPortfolio() {
                 alt="Sims, Lawrence & Broghammer"
                 style={{ height: 60, width: "auto", objectFit: "contain" }}
               />
-              <div style={{
-                background: darkMode ? "#FFFFFF" : "transparent",
-                borderRadius: 6, padding: darkMode ? "6px 10px" : 0,
-                display: "flex", alignItems: "center",
-              }}>
-                <img
-                  src={withBase("/branding/garcia-gurney.png")}
-                  alt="Garcia & Gurney, A Law Corporation"
-                  style={{ height: 40, width: "auto", objectFit: "contain" }}
-                />
-              </div>
+              <img
+                src={withBase(darkMode ? "/branding/garcia-gurney-dark.png" : "/branding/garcia-gurney.png")}
+                alt="Garcia & Gurney, A Law Corporation"
+                style={{ height: 60, width: "auto", objectFit: "contain" }}
+              />
               <img
                 src={withBase(darkMode ? "/branding/dag-dark.jpg" : "/branding/dag-light.jpg")}
                 alt="California Department of Justice, Office of the Attorney General"
