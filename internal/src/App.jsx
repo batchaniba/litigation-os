@@ -95,8 +95,9 @@ export default function LitigationPortfolio() {
               {/* DAG */}
               <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
                 <div style={{ textAlign: "right", fontFamily: "'DM Sans', sans-serif" }}>
-                  <div style={{ fontSize: 10, fontWeight: 600, color: BODY_GRAY, lineHeight: 1.5 }}>Judith S. Gronna</div>
-                  <div style={{ fontSize: 9, color: BODY_GRAY, opacity: 0.7, lineHeight: 1.4 }}>Deputy Attorney General</div>
+                  {["Haiyang A. Li", "Erick Rhoan", "Vanessa Ing", "Mark Beckington", "Judith S. Gronna"].map(name => (
+                    <div key={name} style={{ fontSize: 10, fontWeight: 600, color: BODY_GRAY, lineHeight: 1.5 }}>{name}</div>
+                  ))}
                 </div>
                 <img
                   src={withBase(darkMode ? "/branding/dag-dark.jpg" : "/branding/dag-light.jpg")}
