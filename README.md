@@ -13,18 +13,18 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 | Plaintiff | Brendan Ngehsi Newanforbi |
 | Representation | Pro Se / In Propria Persona |
 | Total Matters | 30 |
-| Active / Open | 14 |
+| Active / Open | 13 |
 | Settled | 1 (Matter 22 — Pilot Travel Centers LLC, July 11, 2026) |
-| Dismissed / Closed / Abandoned | 15 |
+| Dismissed / Closed / Abandoned | 16 |
 | Jurisdictions | USDC E.D. Cal., USDC N.D. Cal., San Joaquin Sup. Ct., Alameda Sup. Ct., Sacramento Sup. Ct., Santa Clara Sup. Ct. |
 | Housing Status | **Homeless since July 2, 2026** — direct consequence of retaliatory inter-county parole transfer (Stockton → Santa Clara) imposed immediately after filing Matter 15 (Newanforbi v. CDCR, et al.); transfer caused loss of Stockton family housing; Matters 3, 9, and 19 are also potential retaliatory predicate acts |
 | Representation | Pro Se / In Propria Persona — all 30 matters self-litigated; estimated equivalent private-counsel cost: $746,004–$1,228,976 |
-| Aggregate Exposure (Conservative) | ~$1,291,000+ |
-| Aggregate Exposure (Moderate) | ~$3,223,000+ |
-| Aggregate Exposure (Aggressive) | ~$6,875,000+ |
+| Aggregate Exposure (Conservative) | ~$1,041,000+ |
+| Aggregate Exposure (Moderate) | ~$2,643,000+ |
+| Aggregate Exposure (Aggressive) | ~$5,849,000+ |
 | Last Updated | July 22, 2026 |
 
-*Of the 15 dismissed/closed/abandoned matters: six (Matters 3, 4, 14, 16, 23, 30) were voluntarily abandoned due to real, credible safety threats; six federal companion suits (Matters 6, 11, 13, 17, 18, 21) were voluntarily dismissed — five with prejudice, together, on June 29, 2026 — once the stronger surviving vehicles (the Matter 19 habeas track, the Matter 15 damages track, and Matter 28's Monell/RICO case) made the parallel federal claims redundant; and three (Matters 5, 9, 10) closed on procedural/exhaustion grounds rather than the merits, with Matter 5's discovery record carried forward into Matter 28. See [All Matters](#all-matters) below for the full disposition table.*
+*Of the 16 dismissed/closed/abandoned matters: seven (Matters 3, 4, 14, 15, 16, 23, 30) were voluntarily abandoned due to real, credible safety threats — Matter 15 (the portfolio's largest single exposure) most recently, by voluntary dismissal with prejudice as to all defendants filed July 24, 2026; six federal companion suits (Matters 6, 11, 13, 17, 18, 21) were voluntarily dismissed — five with prejudice, together, on June 29, 2026 — once the stronger surviving vehicles (the Matter 19 habeas track and Matter 28's Monell/RICO case) made the parallel federal claims redundant; and three (Matters 5, 9, 10) closed on procedural/exhaustion grounds rather than the merits, with Matter 5's discovery record carried forward into Matter 28. See [All Matters](#all-matters) below for the full disposition table.*
 
 ---
 
@@ -54,7 +54,7 @@ The largest cluster — 14 matters — targeting CDCR's parole supervision appar
 - **Policy 19-03** enforced after 15 CCR § 3574 superseded it in April 2025 — ultra vires categorical bar.
 - Documented CDL career wage losses: $109,408 across 6 carriers (W-2 verified, 2022–2024).
 - **Matter 5 (Palacios)** — state action disposed July 15, 2026 (demurrer sustained, exhaustion grounds); 542 pages of HOPE discovery (Bates HOPE_000001–542) produced before dismissal are now carried into **Matter 28** via Motion for Protective Order.
-- **Matter 15** (San Joaquin Sup. Ct., STK-CV-UPI-2026-5417): Negligence, False Imprisonment, IIED, and Breach of Mandatory Duty against CDCR, Dodd, and Noguchi — the highest single-matter exposure in the portfolio. Responsive pleading deadline extended to August 21, 2026 by agreement with Deputy Attorney General Judith S. Gronna; meet-and-confer call set July 30, 2026. **Contingent on Matter 19:** Plaintiff intends to dismiss Matter 15 if the August 1, 2026 habeas ruling in Matter 19 is favorable, since unconditional discharge from parole would substantially moot the ongoing-injury theory here.
+- **Matter 15** (San Joaquin Sup. Ct., STK-CV-UPI-2026-5417) — **ABANDONED.** Would have asserted Negligence, False Imprisonment, IIED, and Breach of Mandatory Duty against CDCR, Dodd, and Noguchi — the highest single-matter exposure in the portfolio. Complaint was filed and both individual defendants personally served; a responsive-pleading extension had been agreed with Deputy Attorney General Judith S. Gronna. Voluntarily dismissed with prejudice as to all defendants on July 24, 2026 due to a real, credible safety threat — unrelated to the Matter 19 habeas ruling.
 - **Matter 28** (USDC N.D. Cal.): Federal successor; §1983 Monell (HOPE) + Individual Capacity (Shannon Smith, LCSW), Bane Act §52.1, Fraud/Negligent Misrepresentation, RICO 18 U.S.C. §1962(c)-(d); complaint mailed July 16, 2026.
 - **Matter 30** (USDC N.D. Cal., San Jose Div.) — **ABANDONED.** Would have asserted §1983 First Amendment Retaliation + Due Process, Bane Act §52.1, and IIED against Long Moua (Badge #7472) and Gary Noguchi (Badge #7284) for the November 14, 2025 retaliatory 1502-DR and the July 2, 2026 inter-county parole transfer; Government Claims Act claim was filed July 18, 2026, but the matter was voluntarily withdrawn before the anticipated complaint filing due to a real, credible safety threat.
 - **Matters 3, 4, 14, 16 (Derrick, Urrea, Rojo)** — all **ABANDONED** for the same reason as Matter 30. Matter 3's federal MTD was under submission at the time of withdrawal; Defendant Palacios's exposure survives independently through Matter 5's discovery record and Matter 28. Matters 6, 11, 13, 17, 18, and 21 — the federal §1983 companion suits against HOPE, Macomber, Urrea, Maloney, and Barocio, all filed the week of January 22, 2026 — were voluntarily dismissed (five with prejudice, together, on June 29, 2026) once the surviving vehicles above made the parallel federal claims unnecessary.
@@ -109,7 +109,6 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | 7 | Newanforbi v. Candelaria | 2:26-cv-00983-DC-CSK | USDC E.D. Cal. | Federal | Adverse F&R Jun. 15, 2026 (IFP denied; FAC dismissed WOLA — quasi-judicial immunity, 11th Amend.); District Judge DC adoption pending |
 | 8 | Newanforbi v. Candelaria, et al. | 26WM000135 | Sacramento Sup. Ct. | State | Fee Waiver Hearing held July 17, 2026, Dept. 10C |
 | 12 | Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. | STK-CV-UF-2026-0001094 | San Joaquin Sup. Ct. | State | Default entered against Diamond; Alpine served July 1, 2026, no response; CMC Aug. 12, 2026 |
-| 15 | Newanforbi v. CDCR, et al. | STK-CV-UPI-2026-5417 | San Joaquin Sup. Ct. | State | **PENDING dismissal contingency** — CDCR/Dodd served June 22, 2026; responsive pleading extended to Aug. 21, 2026 (mutual agreement Jul. 16); M&C call Jul. 30 (11:00 a.m.); CMC Dec. 9, 2026. Plaintiff intends to dismiss if the Aug. 1, 2026 Matter 19 habeas ruling is favorable |
 | 19 | Newanforbi v. Macomber | C2604791 | Santa Clara Sup. Ct. | State | Habeas — seeks unconditional parole discharge; Order Extending Time July 2, 2026 (Hon. Robert Hawk); court deadline to rule: Aug. 1, 2026 |
 | 20 | Newanforbi v. CHP, et al. | 26CV191136 | Alameda Sup. Ct. | State | Demurrer opposition filed July 13, 2026; hearing Aug. 28, 2026, Dept. 25 |
 | 24 | Newanforbi v. Serrato | 4:26-cv-05953-ASK | USDC N.D. Cal. | Federal | Filed June 17, 2026; ISC Order issued; CMC Sept. 15, 2026 |
@@ -140,6 +139,7 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | 11 | Newanforbi v. Macomber | TBD | USDC E.D. Cal. | DISMISSED WITH PREJUDICE June 29, 2026 (FRCP 41(a)(1)(A)(i)) |
 | 13 | Newanforbi v. Urrea et al. | 2:26-cv-00190-DC-SCR | USDC E.D. Cal. | DISMISSED WITH PREJUDICE June 29, 2026 (FRCP 41(a)(1)(A)(i)) |
 | 14 | Newanforbi v. Urrea et al. | TBD | San Joaquin Sup. Ct. | **ABANDONED** — Voluntarily Dismissed |
+| 15 | Newanforbi v. CDCR, et al. | STK-CV-UPI-2026-5417 | San Joaquin Sup. Ct. | **ABANDONED** — Voluntary Dismissal With Prejudice filed July 24, 2026 as to all defendants (CDCR, Dodd, Noguchi); was the portfolio's largest single-matter exposure |
 | 16 | Newanforbi v. Rojo | TBD | San Joaquin Sup. Ct. | **ABANDONED** — Voluntarily Dismissed |
 | 17 | Newanforbi v. Maloney et al. | 2:26-cv-00194-DAD-SCR | USDC E.D. Cal. | DISMISSED WITH PREJUDICE June 29, 2026 (FRCP 41(a)(1)(A)(i)) |
 | 18 | Newanforbi v. Barocio | 2:26-cv-00191-DJC-CSK | USDC E.D. Cal. | DISMISSED WITH PREJUDICE June 29, 2026 (FRCP 41(a)(1)(A)(i)) |
@@ -153,19 +153,17 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 
 | Date | Matter | Event |
 |---|---|---|
+| July 24, 2026 | 15 | ABANDONED — Voluntary Dismissal With Prejudice filed as to all defendants (CDCR, Dodd, Noguchi), due to a real, credible safety threat |
 | July 26, 2026 | 25, 26 | Demand letter response deadline — FedEx ($85,000; STK-CV-UWT-2026-0009118) and UPS ($85,000; STK-CV-UWT-2026-0009113); 5:00 PM PT |
-| July 30, 2026 | 15 | Meet-and-confer call (CCP §430.41) — 11:00 a.m.; Judith S. Gronna (DAG) to call BNN re: anticipated demurrer (STK-CV-UPI-2026-5417) |
 | July 31, 2026 | 12 | Alpine Truck Sales, Inc. response deadline (CCP §412.20(a)(3); 30 days from July 1, 2026 personal service) |
-| Aug. 1, 2026 | 19 | Court deadline to rule — Santa Clara Sup. Ct. habeas (C2604791, Hon. Robert Hawk; per Order Extending Time July 2, 2026); **Matter 15's dismissal contingency turns on this ruling** |
+| Aug. 1, 2026 | 19 | Court deadline to rule — Santa Clara Sup. Ct. habeas (C2604791, Hon. Robert Hawk; per Order Extending Time July 2, 2026) |
 | Aug. 2, 2026 | 27 | Response deadline — Pre-filing demand to Randstad US, LLC (5:00 PM PT); RK Logistics already denied July 21, 2026 through Garcia & Gurney, ALC |
 | Aug. 12, 2026 | 12 | Case Management Conference — 8:30 AM, Dept. 11B, Hon. Robert T. Waters (San Joaquin Sup. Ct.) |
-| Aug. 21, 2026 | 15 | Responsive pleading/demurrer deadline — CDCR/Dodd (extended per mutual agreement July 16, 2026; original deadline was July 22) |
 | Aug. 21, 2026 | 20 | AG reply deadline — 5 court days before Aug. 28 demurrer hearing (CRC 3.1320(b)) |
 | Aug. 28, 2026 | 20 | Demurrer Hearing — 9:00 AM, Dept. 25, Alameda Sup. Ct. (Hon. Jenna M. Whitman) |
 | Sep. 2, 2026 | 20 | Case Management Conference (continued from July 15) — Dept. 25, Alameda Sup. Ct. |
 | Sep. 13, 2026 | 25, 26 | Service deadline — FedEx and UPS (60 days from July 15, 2026 filing; CRC 3.110) |
 | Sep. 15, 2026 | 24 | Case Management Conference — USDC N.D. Cal. (4:26-cv-05953-ASK) |
-| Dec. 9, 2026 | 15 | Case Management Conference — 8:30 AM, Dept. 10C, San Joaquin Sup. Ct. |
 | Dec. 14, 2026 | 26 | Meet-and-confer deadline — 30 days before Jan. 13, 2027 CMC (CRC 3.724; STK-CV-UWT-2026-0009113) |
 | Dec. 15, 2026 | 25 | Meet-and-confer deadline — 30 days before Jan. 14, 2027 CMC (CRC 3.724; STK-CV-UWT-2026-0009118) |
 | Dec. 29, 2026 | 26 | Case Management Statement due — JC Form CM-110; 15 days before Jan. 13, 2027 CMC (CRC 3.725; STK-CV-UWT-2026-0009113) |
@@ -179,11 +177,11 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 
 | Category | Matters | Conservative | Moderate | Aggressive |
 |---|---|---|---|---|
-| Lost Wages / Economic Harm | 1, 2, 7, 15, 22 | $110,000 | $280,000 | $550,000 |
-| False Imprisonment | 1, 2, 15 | $65,000 | $165,000 | $325,000 |
-| Emotional Distress | 1, 2, 5, 7, 15, 22, 24 | $60,000 | $170,000 | $415,000 |
+| Lost Wages / Economic Harm | 1, 2, 7, 22 | $20,000 | $130,000 | $334,000 |
+| False Imprisonment | 1, 2 | $40,000 | $85,000 | $215,000 |
+| Emotional Distress | 1, 2, 5, 7, 22, 24 | $0 | $20,000 | $115,000 |
 | Bane Act / Treble | 1, 2 | $15,000 | $50,000 | $70,000 |
-| Punitive Damages | 1, 2, 7, 15, 22, 24 | $105,000 | $320,000 | $850,000 |
+| Punitive Damages | 1, 2, 7, 22, 24 | $30,000 | $120,000 | $450,000 |
 | Consumer Fraud (Matter 12) | 12 | $79,000 | $110,000 | $200,000 |
 | Attorneys' Fees | 1, 7, 22, 24 | $28,000 | $45,000 | $70,000 |
 | PC §290.46(j) + Wrongful Termination | 22 | $220,000 | $525,000 | $1,000,000 |
@@ -192,13 +190,13 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | PC §290.46(j) — Wrongful Termination / Failure to Employ — Randstad / RK Logistics | 27 | $180,000 | $437,000 | $835,000 |
 | §1983 Monell + Individual + Bane Act + RICO — Shannon Smith / HOPE | 28 | $249,000 | $666,000 | $1,510,000 |
 | PC §290.46(j) Failure to Hire — Amazon | 29 | $30,000 | $75,000 | $180,000 |
-| **Portfolio Total (pre-deduplication)** | | **$1,291,000** | **$3,223,000** | **$6,875,000** |
+| **Portfolio Total (pre-deduplication)** | | **$1,041,000** | **$2,643,000** | **$5,849,000** |
 
 *Note: The portfolio total reflects independent per-defendant exposure across all matters before deduplication of shared economic events (e.g., the same CDL wage-loss period underlying Matters 1, 2, 7, 15). Per-matter settlement negotiations treat each defendant independently.*
 
 *Matter 22 (Pilot) settled July 11, 2026 — terms confidential per settlement agreement.*
 
-*Matters 3 (Derrick), 5 (Palacios), and 30 (Moua) have been excluded from this table following their abandonment/dismissal. Matter 3's Lost Income, Emotional Distress, Punitive, and Fees components and Matter 5's Lost CDL Wages, Bane Act/Treble, Punitive, and Fees components were subtracted from the matching rows above; Matter 5's own damages breakdown has no dedicated Emotional Distress line item, so that row still carries its unquantified share. Matter 30's dedicated row (was $90,000 / $225,000 / $525,000) was removed outright.*
+*Matters 3 (Derrick), 5 (Palacios), 15 (CDCR/Dodd/Noguchi), and 30 (Moua) have been excluded/reduced above following their abandonment or dismissal. Matter 3's Lost Income, Emotional Distress, Punitive, and Fees components; Matter 5's Lost CDL Wages, Bane Act/Treble, Punitive, and Fees components; and Matter 15's Lost CDL Wages, Liberty Deprivation, Emotional Distress, and Punitive components were all subtracted from their matching rows. Two gaps are worth flagging: Matter 5's own damages breakdown has no dedicated Emotional Distress line item, so that row still carries its unquantified share; and Matter 15's Out-of-Pocket Compliance Costs ($20K/$40K/$60K) and Retaliatory Transfer Losses ($15K/$30K/$64K) components never had a matching category row at all, so removing Matter 15 pulls more out of the Per-Matter total than out of this table. Matter 30's dedicated row (was $90,000 / $225,000 / $525,000) was removed outright. The Emotional Distress row's conservative estimate would have gone negative after Matter 15's subtraction (already reduced by Matter 3's share); it's floored at $0 rather than shown negative.*
 
 ---
 
