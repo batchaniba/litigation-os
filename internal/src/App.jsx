@@ -49,7 +49,7 @@ export default function LitigationPortfolio() {
             style={{ height: 220, width: "auto", objectFit: "contain", flexShrink: 0 }}
           />
           {/* Westlaw Accolade */}
-          <div style={{ flex: 1, display: "flex", alignItems: "flex-end", justifyContent: "flex-start", paddingLeft: 40, minWidth: 0 }}>
+          <div style={{ flex: 1, display: "flex", alignItems: "flex-end", justifyContent: "space-between", paddingLeft: 40, minWidth: 0, gap: 24 }}>
             <div>
               <div style={{ fontSize: 9, fontFamily: "'DM Sans', sans-serif", fontWeight: 700, letterSpacing: 3, color: GOLD, textTransform: "uppercase", marginBottom: 6 }}>
                 📚 Westlaw-Indexed
@@ -65,6 +65,30 @@ export default function LitigationPortfolio() {
               </div>
               <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9, color: BODY_GRAY, opacity: 0.6 }}>
                 Palacios Demurrer (Matter 5)
+              </div>
+            </div>
+            {/* Opposing Counsel */}
+            <div style={{ display: "flex", alignItems: "center", gap: 20, flexShrink: 0 }}>
+              <img
+                src={withBase(darkMode ? "/branding/dag-dark.jpg" : "/branding/dag-light.jpg")}
+                alt="California Department of Justice, Office of the Attorney General"
+                style={{ height: 40, width: "auto", objectFit: "contain" }}
+              />
+              <img
+                src={withBase(darkMode ? "/branding/slb-dark.png" : "/branding/slb-light.png")}
+                alt="Sims, Lawrence & Broghammer"
+                style={{ height: 40, width: "auto", objectFit: "contain" }}
+              />
+              <div style={{
+                background: darkMode ? "#FFFFFF" : "transparent",
+                borderRadius: 6, padding: darkMode ? "6px 10px" : 0,
+                display: "flex", alignItems: "center",
+              }}>
+                <img
+                  src={withBase("/branding/garcia-gurney.png")}
+                  alt="Garcia & Gurney, A Law Corporation"
+                  style={{ height: 28, width: "auto", objectFit: "contain" }}
+                />
               </div>
             </div>
           </div>
