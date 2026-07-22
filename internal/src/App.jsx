@@ -72,7 +72,7 @@ export default function LitigationPortfolio() {
               <img
                 src={withBase(darkMode ? "/branding/slb-dark.png" : "/branding/slb-light.png")}
                 alt="Sims, Lawrence & Broghammer"
-                style={{ width: 160, height: 56, objectFit: "contain", objectPosition: "right center" }}
+                style={{ width: darkMode ? 160 : 140, height: darkMode ? 56 : 48, objectFit: "contain", objectPosition: "right center" }}
               />
               <img
                 src={withBase(darkMode ? "/branding/garcia-gurney-dark.png" : "/branding/garcia-gurney.png")}
