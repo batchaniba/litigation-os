@@ -347,7 +347,9 @@ export function OutcomesTab() {
           to respond. Matters 25 and 26 are already filed and assigned; pre-filing demands of $85,000 each went
           out citing the Pilot settlement as a resolved precedent. Matter 27 followed the same $85,000 pattern
           against both Randstad and RK Logistics after a termination that came before the FCRA waiting period
-          even ran. These outcomes are not anomalies; they reflect the quality of the underlying record
+          even ran; the complaint is already on file (No. 26CV199902, Alameda Sup. Ct.), and RK Logistics has
+          since denied the demand through counsel — a response that reaches only the Tameny claim against RK
+          Logistics and leaves Randstad's own exposure untouched. These outcomes are not anomalies; they reflect the quality of the underlying record
           across all {totalMatterCount} matters. The remaining {fmt(moderate - combined)} at moderate estimate represents
           {activeMatterCount} active matters where that same record is still at work.
         </p>
@@ -359,11 +361,15 @@ export function OutcomesTab() {
 function DemandCard({ item, theme }) {
   const [open, setOpen] = useState(false);
   const ORANGE = "#ea580c";
+  const RED = "#ef4444";
+  const denied = item.response_status === "denied";
+  const statusColor = denied ? RED : ORANGE;
+  const statusLabel = denied ? "Denied" : "Demand Pending";
   return (
     <div style={{
       background: theme.cardBg,
       borderRadius: 10,
-      border: `1px solid ${open ? ORANGE + "60" : theme.cardBorder}`,
+      border: `1px solid ${open ? statusColor + "60" : theme.cardBorder}`,
       overflow: "hidden",
       transition: "border-color 0.2s",
     }}>
@@ -398,13 +404,13 @@ function DemandCard({ item, theme }) {
         <div style={{
           fontFamily: "'DM Sans', sans-serif", fontSize: 10, fontWeight: 700,
           letterSpacing: 2, textTransform: "uppercase",
-          background: ORANGE + "18", color: ORANGE, border: `1px solid ${ORANGE}44`,
+          background: statusColor + "18", color: statusColor, border: `1px solid ${statusColor}44`,
           borderRadius: 20, padding: "4px 14px", whiteSpace: "nowrap",
-        }}>Demand Pending</div>
+        }}>{statusLabel}</div>
 
         <div style={{
           fontFamily: "'Cormorant Garamond', Georgia, serif",
-          fontSize: 26, fontWeight: 700, color: ORANGE, whiteSpace: "nowrap",
+          fontSize: 26, fontWeight: 700, color: statusColor, whiteSpace: "nowrap",
         }}>{fmt(item.demand_amount)}</div>
 
         <div aria-hidden style={{
@@ -423,6 +429,12 @@ function DemandCard({ item, theme }) {
               <p style={bodyText(theme)}>{item.sent_date}</p>
               <Label>Response Deadline</Label>
               <p style={bodyText(theme)}>{item.deadline} · {item.deadline_time}</p>
+              {denied && (
+                <>
+                  <Label>Response Received</Label>
+                  <p style={{ ...bodyText(theme), color: RED }}>{item.response_date} — Denied</p>
+                </>
+              )}
             </div>
             <div>
               <Label>Respondent's Counsel</Label>
