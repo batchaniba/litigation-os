@@ -1,19 +1,26 @@
 export const damages_table = [
-    { category: "Lost Wages / Economic Harm", matters: "1, 2, 3, 5, 7, 15, 22", conservative: 275000, moderate: 580000, aggressive: 935000 },
+    { category: "Lost Wages / Economic Harm", matters: "1, 2, 7, 15, 22", conservative: 110000, moderate: 280000, aggressive: 550000 },
     { category: "False Imprisonment", matters: "1, 2, 15", conservative: 65000, moderate: 165000, aggressive: 325000 },
-    { category: "Emotional Distress", matters: "1, 2, 3, 5, 7, 15, 22, 24", conservative: 85000, moderate: 240000, aggressive: 535000 },
-    { category: "Bane Act / Treble", matters: "1, 2, 5", conservative: 75000, moderate: 200000, aggressive: 450000 },
-    { category: "Punitive Damages", matters: "1, 2, 3, 5, 7, 15, 22, 24", conservative: 165000, moderate: 595000, aggressive: 1500000 },
+    { category: "Emotional Distress", matters: "1, 2, 5, 7, 15, 22, 24", conservative: 60000, moderate: 170000, aggressive: 415000 },
+    { category: "Bane Act / Treble", matters: "1, 2", conservative: 15000, moderate: 50000, aggressive: 70000 },
+    { category: "Punitive Damages", matters: "1, 2, 7, 15, 22, 24", conservative: 105000, moderate: 320000, aggressive: 850000 },
     { category: "Consumer Fraud", matters: "12", conservative: 79000, moderate: 110000, aggressive: 200000 },
-    { category: "Attorneys' Fees", matters: "1, 3, 5, 7, 22, 24", conservative: 50000, moderate: 110000, aggressive: 260000 },
+    { category: "Attorneys' Fees", matters: "1, 7, 22, 24", conservative: 28000, moderate: 45000, aggressive: 70000 },
     { category: "PC §290.46(j) Violation + Wrongful Termination (Matter 22)", matters: "22", conservative: 220000, moderate: 525000, aggressive: 1000000 },
     { category: "42 USC §1983 — Arbitrary U Visa Certification Denial & Retaliation (Matter 24)", matters: "24", conservative: 75000, moderate: 200000, aggressive: 450000 },
     { category: "PC §290.46(j) Failure to Hire — FedEx / UPS (Matters 25, 26)", matters: "25, 26", conservative: 75000, moderate: 180000, aggressive: 420000 },
     { category: "PC §290.46(j) — Wrongful Termination / Failure to Employ — Randstad / RK Logistics (Matter 27)", matters: "27", conservative: 180000, moderate: 437000, aggressive: 835000 },
     { category: "§1983 Monell / Individual + Bane Act + RICO — Shannon Smith / HOPE (Matter 28)", matters: "28", conservative: 249000, moderate: 666000, aggressive: 1510000 },
-    { category: "PC §290.46(j) Failure to Hire — Amazon (Matter 29)", matters: "29", conservative: 30000, moderate: 75000, aggressive: 180000 },
-    { category: "§1983 Retaliation + Due Process + Bane Act + IIED — Moua / CDCR (Matter 30)", matters: "30", conservative: 90000, moderate: 225000, aggressive: 525000 }
+    { category: "PC §290.46(j) Failure to Hire — Amazon (Matter 29)", matters: "29", conservative: 30000, moderate: 75000, aggressive: 180000 }
 ];
+// Matters 3, 5, and 30 are excluded/reduced above (abandoned Jul. 2026 / dismissed Jul. 15, 2026):
+// - Matter 3 (Derrick, ABANDONED): its Lost Income, Emotional Distress, Punitive, and Fees
+//   components subtracted from the matching rows; no False Imprisonment/Bane Act component existed for it.
+// - Matter 5 (Palacios, DISMISSED): its Lost CDL Wages, Bane Act/Treble, Punitive, and Fees
+//   components subtracted; Matter 5 has no dedicated Emotional Distress component in its own
+//   breakdown, so its (unquantified) share of that row was left in place rather than guessed at.
+// - Matter 30 (Moua, ABANDONED): its dedicated single-matter row removed entirely
+//   (was: conservative $90,000 / moderate $225,000 / aggressive $525,000).
 
 // Per-matter bottoms-up breakdown — individual case ceilings before deduplication
 // Portfolio view above avoids double-counting shared economic events (e.g., same CDL
