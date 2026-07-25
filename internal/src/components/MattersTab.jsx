@@ -119,9 +119,10 @@ const MatterCard = ({ matter: c, isOpen, onToggle }) => {
   );
 };
 
-export const MattersTab = ({ filteredCases, clusterFilter, setClusterFilter, typeFilter, setTypeFilter, searchQuery, setSearchQuery }) => {
+export const MattersTab = ({ filteredCases, statusFilter, setStatusFilter, clusterFilter, setClusterFilter, typeFilter, setTypeFilter, searchQuery, setSearchQuery }) => {
   const theme = useTheme();
   const [expandedMatter, setExpandedMatter] = useState(null);
+  const activeCount = PORTFOLIO.cases.filter(c => !c.archived).length;
 
   return (
     <div>
@@ -134,6 +135,16 @@ export const MattersTab = ({ filteredCases, clusterFilter, setClusterFilter, typ
           aria-label="Search matters by caption, case number, or keywords"
           style={{ flex: "1 1 200px", padding: "10px 16px", borderRadius: 8, border: `1px solid ${theme.cardBorder}`, background: theme.inputBg, color: theme.inputColor, fontFamily: "'DM Sans', sans-serif", fontSize: 13, outline: "none" }}
         />
+        {["active", "all"].map(s => (
+          <button key={s} onClick={() => setStatusFilter(s)} aria-pressed={statusFilter === s} style={{
+            padding: "8px 14px", borderRadius: 6,
+            border: statusFilter === s ? `1px solid ${GOLD}` : `1px solid ${theme.filterInactiveBorder}`,
+            background: statusFilter === s ? `${GOLD}18` : theme.filterInactiveBg,
+            color: statusFilter === s ? GOLD : theme.filterInactiveColor,
+            fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 600, cursor: "pointer"
+          }}>{s === "active" ? `Active (${activeCount})` : "All"}</button>
+        ))}
+        <span style={{ color: theme.subtleText, fontFamily: "'DM Sans', sans-serif", fontSize: 12 }}>|</span>
         {[null, 1, 2, 3, 4].map(c => (
           <button key={c ?? "all"} onClick={() => setClusterFilter(c)} style={{
             padding: "8px 14px", borderRadius: 6,
@@ -166,7 +177,7 @@ export const MattersTab = ({ filteredCases, clusterFilter, setClusterFilter, typ
           <div style={{ padding: "40px 24px", textAlign: "center", fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: theme.subtleText }}>
             No matters match your current filters.{" "}
             <button
-              onClick={() => { setClusterFilter(null); setTypeFilter(null); setSearchQuery(""); }}
+              onClick={() => { setStatusFilter("active"); setClusterFilter(null); setTypeFilter(null); setSearchQuery(""); }}
               style={{ background: "none", border: "none", color: GOLD, cursor: "pointer", fontFamily: "'DM Sans', sans-serif", fontSize: 14, textDecoration: "underline", padding: 0 }}
             >
               Clear all filters

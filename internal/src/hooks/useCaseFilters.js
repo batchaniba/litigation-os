@@ -2,12 +2,14 @@ import { useState, useMemo } from "react";
 import { PORTFOLIO } from "../data";
 
 export const useCaseFilters = () => {
+  const [statusFilter, setStatusFilter] = useState("active"); // "active" | "all"
   const [clusterFilter, setClusterFilter] = useState(null);
   const [typeFilter, setTypeFilter] = useState(null);
   const [searchQuery, setSearchQuery] = useState("");
 
   const filteredCases = useMemo(() => {
     return PORTFOLIO.cases.filter(c => {
+      if (statusFilter === "active" && c.archived) return false;
       if (clusterFilter && c.cluster !== clusterFilter) return false;
       if (typeFilter && c.type !== typeFilter) return false;
       if (searchQuery) {
@@ -16,7 +18,7 @@ export const useCaseFilters = () => {
       }
       return true;
     });
-  }, [clusterFilter, typeFilter, searchQuery]);
+  }, [statusFilter, clusterFilter, typeFilter, searchQuery]);
 
-  return { clusterFilter, setClusterFilter, typeFilter, setTypeFilter, searchQuery, setSearchQuery, filteredCases };
+  return { statusFilter, setStatusFilter, clusterFilter, setClusterFilter, typeFilter, setTypeFilter, searchQuery, setSearchQuery, filteredCases };
 };

@@ -22,7 +22,7 @@ export default function LitigationPortfolio() {
   const [darkMode, setDarkMode] = useState(true);
   const theme = THEMES[darkMode ? "dark" : "light"];
   const [activeTab, setActiveTab] = useState("Dashboard");
-  const { clusterFilter, setClusterFilter, typeFilter, setTypeFilter, searchQuery, setSearchQuery, filteredCases } = useCaseFilters();
+  const { statusFilter, setStatusFilter, clusterFilter, setClusterFilter, typeFilter, setTypeFilter, searchQuery, setSearchQuery, filteredCases } = useCaseFilters();
   const [damagesView, setDamagesView] = useState("moderate");
   const [showPastEvents, setShowPastEvents] = useState(false);
   const [showClock, setShowClock] = useState(false);
@@ -220,7 +220,7 @@ export default function LitigationPortfolio() {
       {/* Tab content */}
       <div style={{ maxWidth: 1200, margin: "0 auto", padding: "24px 24px 60px" }}>
         {activeTab === "Dashboard" && <DashboardTab upcomingEvents={upcomingEvents} setClusterFilter={setClusterFilter} setActiveTab={setActiveTab} />}
-        {activeTab === "Matters"   && <MattersTab filteredCases={filteredCases} clusterFilter={clusterFilter} setClusterFilter={setClusterFilter} typeFilter={typeFilter} setTypeFilter={setTypeFilter} searchQuery={searchQuery} setSearchQuery={setSearchQuery} />}
+        {activeTab === "Matters"   && <MattersTab filteredCases={filteredCases} statusFilter={statusFilter} setStatusFilter={setStatusFilter} clusterFilter={clusterFilter} setClusterFilter={setClusterFilter} typeFilter={typeFilter} setTypeFilter={setTypeFilter} searchQuery={searchQuery} setSearchQuery={setSearchQuery} />}
         {activeTab === "Timeline"  && <TimelineTab showPastEvents={showPastEvents} setShowPastEvents={setShowPastEvents} />}
         {activeTab === "Damages"   && <DamagesTab damagesView={damagesView} setDamagesView={setDamagesView} />}
         {activeTab === "Theories"  && <TheoriesTab />}
