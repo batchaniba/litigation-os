@@ -54,7 +54,7 @@ export const outcomes = {
       counsel: "Allison Aguirre Kray, Esq. (Cal. Bar No. 312544)",
       counsel_email: "allison.kray@fedex.com",
       response_status: "no response",
-      notes: "Complaint filed July 15 enclosed as Exhibit A. Pilot settlement (STK-CV-UWT-2026-0007649) cited as precedent. Litigation hold notice issued. 8 exhibits (March 2025 adverse action chain). No response received from FedEx by the July 26, 2026 deadline; non-response after the complaint is already filed and assigned strengthens settlement posture. Service of process proceeds per the SER-001 already on file.",
+      notes: "Complaint filed July 15 enclosed as Exhibit A. Pilot settlement (STK-CV-UWT-2026-0007649) cited as precedent. Litigation hold notice issued. 8 exhibits (March 2025 adverse action chain). No response received from FedEx by the July 26, 2026 deadline; non-response after the complaint is already filed and assigned strengthens settlement posture. SERVED July 24, 2026 on Ct Corporation System (Jaqueline Mejia, CA Authorized Employee) per LA County Sheriff's Civil File Status; proof of service to be filed with the court.",
     },
     {
       matter: 26,
@@ -68,7 +68,7 @@ export const outcomes = {
       counsel: "Norman M. Brothers Jr., Esq.",
       counsel_email: "norman.brothers@ups.com",
       response_status: "no response",
-      notes: "Complaint filed July 15 enclosed as Exhibit A. Pilot settlement (STK-CV-UWT-2026-0007649) cited as precedent. Litigation hold notice issued. 4 exhibits (July 2024 adverse action chain). No response received from UPS by the July 26, 2026 deadline; non-response after the complaint is already filed and assigned strengthens settlement posture. Service of process proceeds per the SER-001 already on file.",
+      notes: "Complaint filed July 15 enclosed as Exhibit A. Pilot settlement (STK-CV-UWT-2026-0007649) cited as precedent. Litigation hold notice issued. 4 exhibits (July 2024 adverse action chain). No response received from UPS by the July 26, 2026 deadline; non-response after the complaint is already filed and assigned strengthens settlement posture. SERVED July 22, 2026 on Josh Swindell, Authorized Agent, per Sacramento County Sheriff's Civil File Status; proof of service to be filed with the court.",
     },
     {
       matter: 27,

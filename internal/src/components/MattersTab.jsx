@@ -30,6 +30,9 @@ const MatterCard = ({ matter: c, isOpen, onToggle }) => {
       {c.badge === "TIMELY" && (
         <div aria-label="Timely filed" style={{ position: "absolute", top: 14, right: -28, width: 110, background: "#0284c7", color: "#fff", fontSize: 10, fontFamily: "'DM Sans', sans-serif", fontWeight: 800, letterSpacing: 2, textTransform: "uppercase", textAlign: "center", padding: "5px 0", transform: "rotate(45deg)", boxShadow: "0 2px 8px rgba(0,0,0,0.35)", pointerEvents: "none", zIndex: 10 }}>TIMELY</div>
       )}
+      {c.badge === "SERVED" && (
+        <div aria-label="Served" style={{ position: "absolute", top: 14, right: -28, width: 110, background: "#0d9488", color: "#fff", fontSize: 10, fontFamily: "'DM Sans', sans-serif", fontWeight: 800, letterSpacing: 2, textTransform: "uppercase", textAlign: "center", padding: "5px 0", transform: "rotate(45deg)", boxShadow: "0 2px 8px rgba(0,0,0,0.35)", pointerEvents: "none", zIndex: 10 }}>SERVED</div>
+      )}
       {/* Header row */}
       <button
         onClick={onToggle}
