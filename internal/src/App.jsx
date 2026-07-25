@@ -37,7 +37,14 @@ export default function LitigationPortfolio() {
   return (
     <ThemeContext.Provider value={theme}>
     <div style={{ minHeight: "100vh", background: theme.bg, color: theme.text, fontFamily: "'Cormorant Garamond', 'Georgia', serif" }}>
-      <style>{`@keyframes clockPulse { 0%,100%{opacity:1} 50%{opacity:0.25} }`}</style>
+      <style>{`
+        @keyframes clockPulse { 0%,100%{opacity:1} 50%{opacity:0.25} }
+        .firm-link { text-decoration: none; transition: opacity 0.15s ease; cursor: pointer; }
+        .firm-link:hover { opacity: 0.82; }
+        .firm-link:hover .firm-logo { filter: drop-shadow(0 0 0 transparent); }
+        .firm-link .firm-external-hint { opacity: 0; transform: translateY(-2px); transition: opacity 0.15s ease, transform 0.15s ease; }
+        .firm-link:hover .firm-external-hint { opacity: 1; transform: translateY(0); }
+      `}</style>
 
       {/* Header */}
       <div style={{ background: theme.headerBg, borderBottom: `2px solid ${GOLD}` }}>
@@ -70,41 +77,68 @@ export default function LitigationPortfolio() {
             {/* Opposing Counsel */}
             <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 12, flexShrink: 0 }}>
               {/* SLB */}
-              <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+              <a
+                href="https://www.sims-law.net/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Visit Sims, Lawrence & Broghammer (sims-law.net) ↗"
+                className="firm-link"
+                style={{ display: "flex", alignItems: "center", gap: 8, color: "inherit" }}
+              >
                 <div style={{ textAlign: "right", fontFamily: "'DM Sans', sans-serif" }}>
                   <div style={{ fontSize: 10, fontWeight: 600, color: BODY_GRAY, lineHeight: 1.5 }}>Bryan Malone</div>
                   <div style={{ fontSize: 10, fontWeight: 600, color: BODY_GRAY, lineHeight: 1.5 }}>Blaze Van Dine</div>
+                  <div className="firm-external-hint" style={{ fontSize: 8, fontWeight: 700, letterSpacing: 0.5, color: GOLD, lineHeight: 1.5, textTransform: "uppercase" }}>Visit site ↗</div>
                 </div>
                 <img
+                  className="firm-logo"
                   src={withBase(darkMode ? "/branding/slb-dark.png" : "/branding/slb-light.png")}
                   alt="Sims, Lawrence & Broghammer"
                   style={{ height: darkMode ? 62 : 42, width: "auto" }}
                 />
-              </div>
+              </a>
               {/* Garcia & Gurney */}
-              <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+              <a
+                href="https://www.garciagurney.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Visit Garcia & Gurney, A Law Corporation (garciagurney.com) ↗"
+                className="firm-link"
+                style={{ display: "flex", alignItems: "center", gap: 10, color: "inherit" }}
+              >
                 <div style={{ textAlign: "right", fontFamily: "'DM Sans', sans-serif" }}>
                   <div style={{ fontSize: 10, fontWeight: 600, color: BODY_GRAY, lineHeight: 1.5 }}>Melinda Garcia</div>
+                  <div className="firm-external-hint" style={{ fontSize: 8, fontWeight: 700, letterSpacing: 0.5, color: GOLD, lineHeight: 1.5, textTransform: "uppercase" }}>Visit site ↗</div>
                 </div>
                 <img
+                  className="firm-logo"
                   src={withBase(darkMode ? "/branding/garcia-gurney-dark.png" : "/branding/garcia-gurney.png")}
                   alt="Garcia & Gurney, A Law Corporation"
                   style={{ width: 130, height: 44, objectFit: "contain", objectPosition: "right center" }}
                 />
-              </div>
+              </a>
               {/* DAG */}
-              <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+              <a
+                href="https://oag.ca.gov/dag-recruitment"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Visit California Attorney General's Office — Deputy Attorney General recruitment (oag.ca.gov) ↗"
+                className="firm-link"
+                style={{ display: "flex", alignItems: "center", gap: 10, color: "inherit" }}
+              >
                 <div style={{ textAlign: "right", fontFamily: "'DM Sans', sans-serif" }}>
                   {["Haiyang A. Li", "Erick Rhoan", "Vanessa Ing", "Mark Beckington", "Judith S. Gronna"].map(name => (
                     <div key={name} style={{ fontSize: 10, fontWeight: 600, color: BODY_GRAY, lineHeight: 1.5 }}>{name}</div>
                   ))}
+                  <div className="firm-external-hint" style={{ fontSize: 8, fontWeight: 700, letterSpacing: 0.5, color: GOLD, lineHeight: 1.5, textTransform: "uppercase" }}>Visit site ↗</div>
                 </div>
                 <img
+                  className="firm-logo"
                   src={withBase(darkMode ? "/branding/dag-dark.jpg" : "/branding/dag-light.jpg")}
                   alt="California Department of Justice, Office of the Attorney General"
                   style={{ height: 64, width: 64, objectFit: "cover", borderRadius: "50%" }}
                 />
-              </div>
+              </a>
             </div>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap" }}>
