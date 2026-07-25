@@ -244,7 +244,7 @@ Plaintiff is representing himself pro se across all 30 matters. The figures belo
 ## Tech Stack
 
 - **Framework:** React 18
-- **Build tool:** Vite 5
+- **Build tool:** Vite 6
 - **Deployment:** Vercel (primary) + GitHub Pages (mirror)
 - **Fonts:** Cormorant Garamond (headings), DM Sans (UI)
 - **Styling:** Inline styles (zero external CSS dependencies)

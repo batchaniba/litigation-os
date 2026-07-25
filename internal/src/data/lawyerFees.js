@@ -70,7 +70,7 @@ export const lawyer_fees = [
   {
     number: 8, caption: "Newanforbi v. Candelaria, et al.", caseNumber: "26WM000135",
     court: "Sacramento Sup. Ct.", type: "State - Writ of Administrative Mandate (CCP 1094.5)",
-    status: "Fee Waiver Denied (05/19/2026); hearing 07/17/2026; petition pending",
+    status: "NOT PURSUING — Fee Waiver Denied (05/19/2026); non-appearance denial 07/17/2026; fee-payment deadline lapsed ~07/27/2026 by deliberate choice, not pursued further",
     documentsCount: 2, totalPagesReal: 88,
     hours: { low: 50.5, high: 81, mid: 65.75 },
     cost: { low: 14140, high: 22680, mid: 18410 },
