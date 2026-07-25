@@ -348,6 +348,17 @@ export const outcomes = {
       category: "sharp",
       note: "On the misquoted Rawson v. Recovery Innovations, Inc. citation in Plaintiff's opposition — followed immediately by a reminder of the Rule 11(b)(2) certification obligation that legal contentions be 'warranted by existing law.'",
     },
+    {
+      quote: "It is not obvious that this Court has authority to alter the state court's requirement to return or destroy documents, even if this Court were to impose equivalent protections in its own protective order.",
+      speaker: "Magistrate Judge Lisa J. Cisneros",
+      role: "U.S. Magistrate Judge, USDC N.D. Cal.",
+      source: "Order Addressing IFP Application, Denying Motion for Protective Order, and Requiring Filing of State Court Decision, p.2",
+      case_no: "3:26-cv-07504-LJC",
+      date: "July 23, 2026",
+      matter: 28,
+      category: "procedural",
+      note: "The core holding denying the protective order without prejudice — premised on the Matter 3 MTD still being under submission, a premise Peterson's ruling overtook the very next day.",
+    },
   ],
   portfolio_exposure: {
     conservative: 1713000,
