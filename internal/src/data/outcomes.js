@@ -337,6 +337,17 @@ export const outcomes = {
       category: "meta",
       note: "The one entry in this tab not extracted from an actual filing — added at the user's request as a nod to the AI doing the extracting. Earned, allegedly, by getting a malformed XFA field name to behave.",
     },
+    {
+      quote: "However, this quotation does not appear in Rawson. What is more, Rawson does not stand for this proposition since it did not concern the operation of a re-entry program or even include the word \"parole.\"",
+      speaker: "Magistrate Judge Jeremy D. Peterson",
+      role: "U.S. Magistrate Judge, USDC E.D. Cal.",
+      source: "Order Granting Palacios's Motion to Dismiss, p.6 n.5",
+      case_no: "2:26-cv-00004-DJC-JDP",
+      date: "July 24, 2026",
+      matter: 3,
+      category: "sharp",
+      note: "On the misquoted Rawson v. Recovery Innovations, Inc. citation in Plaintiff's opposition — followed immediately by a reminder of the Rule 11(b)(2) certification obligation that legal contentions be 'warranted by existing law.'",
+    },
   ],
   portfolio_exposure: {
     conservative: 1713000,
