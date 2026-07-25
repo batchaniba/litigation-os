@@ -50,7 +50,7 @@ const moderateExposure = formatCurrency(
   PORTFOLIO.damages_table.reduce((s, r) => s + r.moderate, 0)
 );
 
-const CLUSTERS = [
+export const CLUSTERS = [
   { n: 1, label: "CHP Traffic Stop, DUI Arrest & DMV", color: "#60A5FA" },
   { n: 2, label: "Parole Retaliation, HOPE Abuse & Policy 19-03", color: "#A78BFA" },
   { n: 3, label: "Employment Violations", color: "#FBBF24" },

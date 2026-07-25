@@ -6,6 +6,7 @@ import { useDeadlineClock } from "./hooks/useDeadlineClock";
 import { useCaseFilters } from "./hooks/useCaseFilters";
 import { PORTFOLIO } from "./data";
 import { DashboardTab } from "./components/DashboardTab";
+import { CensusTab } from "./components/CensusTab";
 import { MattersTab } from "./components/MattersTab";
 import { TimelineTab } from "./components/TimelineTab";
 import { DamagesTab } from "./components/DamagesTab";
@@ -16,7 +17,7 @@ import { JudicialOpinionsTab } from "./components/JudicialOpinionsTab";
 import { NotableQuotesTab } from "./components/NotableQuotesTab";
 import { ThemeContext, THEMES } from "./ThemeContext";
 
-const tabs = ["Dashboard", "Matters", "Timeline", "Damages", "Theories", "Cost of Counsel", "Profit", "Judicial Opinions", "Notable Quotes"];
+const tabs = ["Dashboard", "Census", "Matters", "Timeline", "Damages", "Theories", "Cost of Counsel", "Profit", "Judicial Opinions", "Notable Quotes"];
 
 export default function LitigationPortfolio() {
   const [darkMode, setDarkMode] = useState(true);
@@ -141,8 +142,20 @@ export default function LitigationPortfolio() {
               </a>
             </div>
           </div>
-          <div style={{ display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap" }}>
-            <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 8 }}>
+            <button
+              onClick={() => setDarkMode(v => !v)}
+              aria-label={darkMode ? "Switch to light mode" : "Switch to dark mode"}
+              title={darkMode ? "Light mode" : "Dark mode"}
+              style={{
+                padding: "5px 9px", borderRadius: 6, border: `1px solid ${GOLD}44`,
+                background: "transparent", color: GOLD, fontSize: 14, cursor: "pointer",
+                lineHeight: 1, transition: "all 0.2s", flexShrink: 0,
+              }}
+            >
+              {darkMode ? "☀" : "🌙"}
+            </button>
+            <div style={{ display: "flex", gap: 6, flexWrap: "wrap", justifyContent: "flex-end" }}>
               {tabs.map(t => (
                 <button key={t} onClick={() => setActiveTab(t)} aria-current={activeTab === t ? "page" : undefined} style={{
                   padding: "8px 18px", borderRadius: 6,
@@ -154,18 +167,6 @@ export default function LitigationPortfolio() {
                 }}>{t}</button>
               ))}
             </div>
-            <button
-              onClick={() => setDarkMode(v => !v)}
-              aria-label={darkMode ? "Switch to light mode" : "Switch to dark mode"}
-              title={darkMode ? "Light mode" : "Dark mode"}
-              style={{
-                padding: "7px 10px", borderRadius: 6, border: `1px solid ${GOLD}44`,
-                background: "transparent", color: GOLD, fontSize: 16, cursor: "pointer",
-                lineHeight: 1, transition: "all 0.2s", flexShrink: 0,
-              }}
-            >
-              {darkMode ? "☀" : "🌙"}
-            </button>
           </div>
         </div>
       </div>
@@ -220,6 +221,7 @@ export default function LitigationPortfolio() {
       {/* Tab content */}
       <div style={{ maxWidth: 1200, margin: "0 auto", padding: "24px 24px 60px" }}>
         {activeTab === "Dashboard" && <DashboardTab upcomingEvents={upcomingEvents} setClusterFilter={setClusterFilter} setActiveTab={setActiveTab} />}
+        {activeTab === "Census"    && <CensusTab setActiveTab={setActiveTab} setClusterFilter={setClusterFilter} setStatusFilter={setStatusFilter} setSearchQuery={setSearchQuery} damagesView={damagesView} setDamagesView={setDamagesView} setShowPastEvents={setShowPastEvents} />}
         {activeTab === "Matters"   && <MattersTab filteredCases={filteredCases} statusFilter={statusFilter} setStatusFilter={setStatusFilter} clusterFilter={clusterFilter} setClusterFilter={setClusterFilter} typeFilter={typeFilter} setTypeFilter={setTypeFilter} searchQuery={searchQuery} setSearchQuery={setSearchQuery} />}
         {activeTab === "Timeline"  && <TimelineTab showPastEvents={showPastEvents} setShowPastEvents={setShowPastEvents} />}
         {activeTab === "Damages"   && <DamagesTab damagesView={damagesView} setDamagesView={setDamagesView} />}
