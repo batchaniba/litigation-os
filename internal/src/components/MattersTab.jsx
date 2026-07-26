@@ -54,7 +54,7 @@ const MatterCard = ({ matter: c, isOpen, onToggle }) => {
           </div>
           {c.note && (
             <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 600, fontStyle: "italic", color: theme.secondaryText, whiteSpace: "nowrap" }}>
-              📌 {c.note}
+              {c.badge === "PENDING" ? "⏳" : "📌"} {c.note}
             </div>
           )}
         </div>
@@ -172,6 +172,7 @@ export const MattersTab = ({ filteredCases, statusFilter, setStatusFilter, clust
 
       <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, fontStyle: "italic", color: theme.subtleText, marginBottom: 16 }}>
         Matters marked <strong style={{ color: "#6b7280", fontStyle: "normal" }}>ABANDONED</strong> were voluntarily abandoned due to real, credible safety threats.
+        Matters marked ⏳ <strong style={{ color: "#eab308", fontStyle: "normal" }}>PENDING</strong> are prepared but not yet filed, contingent on external timing.
       </div>
 
       {/* Matter Cards */}
