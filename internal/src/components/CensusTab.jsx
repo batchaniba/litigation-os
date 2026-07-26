@@ -6,8 +6,11 @@ import { getPDTMidnight } from "../utils/dateUtils";
 import { CLUSTERS } from "./DashboardTab";
 
 const fmt = (n) => "$" + Math.round(n).toLocaleString();
+const MONO = "'Courier New', ui-monospace, monospace";
+const SANS = "'DM Sans', sans-serif";
+const GREEN = "#34D399";
 
-// ---- Status badge → label/color, reusing the exact ribbon colors MattersTab uses ----
+// ---- Status badge → label, reusing the exact ribbon labels MattersTab uses ----
 const BADGE_LABEL = {
   DEFAULT: "Default judgment sought",
   DISMISSED: "Dismissed",
@@ -17,19 +20,6 @@ const BADGE_LABEL = {
   TIMELY: "Timely",
   SERVED: "Served",
 };
-const STATUS_COLORS = {
-  "Live": GOLD,
-  "Settled": "#34D399",
-  "Served": "#0d9488",
-  "Timely": "#0284c7",
-  "Default judgment sought": "#16a34a",
-  "Denied": "#6b7280",
-  "Dismissed": "#dc2626",
-  "Abandoned": "#94A3B8",
-  "Pending": "#eab308",
-};
-const STATUS_ORDER = ["Live", "Settled", "Abandoned", "Dismissed", "Denied", "Default judgment sought", "Served", "Timely", "Pending"];
-
 // Settlement isn't tracked as a `badge` field — matters.js marks it with a
 // "SETTLED" prefix on `status` instead (the same signal MattersTab's ribbon uses).
 const statusLabelOf = (c) => {
@@ -67,20 +57,33 @@ const totalDocuments = PORTFOLIO.cases.reduce((s, c) => s + (c.documents?.length
 const totalEvidence = PORTFOLIO.cases.reduce((s, c) => s + (c.evidence?.length || 0), 0);
 const totalCauses = PORTFOLIO.cases.reduce((s, c) => s + (c.causes?.length || 0), 0);
 
+// Status palette: reuse MattersTab's exact ribbon colors; anything else falls
+// back through the cluster palette below so every bar still gets a distinct hue.
+const STATUS_COLOR = {
+  "Settled": GREEN,
+  "Served": "#0d9488",
+  "Timely": "#0284c7",
+  "Default judgment sought": "#16a34a",
+  "Denied": "#6b7280",
+  "Dismissed": "#dc2626",
+  "Abandoned": "#94A3B8",
+  "Pending": "#eab308",
+  "Live": GOLD,
+};
 const statusCounts = {};
 for (const c of PORTFOLIO.cases) {
   const label = statusLabelOf(c);
   statusCounts[label] = (statusCounts[label] || 0) + 1;
 }
-const statusRows = STATUS_ORDER
-  .filter(s => statusCounts[s])
-  .map(s => ({ label: s, count: statusCounts[s], color: STATUS_COLORS[s] || GOLD }));
+const statusRows = Object.entries(statusCounts)
+  .map(([label, count]) => ({ label, count, value: count, color: STATUS_COLOR[label] || GOLD }))
+  .sort((a, b) => b.count - a.count);
 const maxStatus = Math.max(...statusRows.map(r => r.count));
 
 const clusterCounts = {};
 for (const c of PORTFOLIO.cases) clusterCounts[c.cluster] = (clusterCounts[c.cluster] || 0) + 1;
 const clusterRows = CLUSTERS
-  .map(cl => ({ ...cl, count: clusterCounts[cl.n] || 0 }))
+  .map(cl => ({ ...cl, count: clusterCounts[cl.n] || 0, value: clusterCounts[cl.n] || 0 }))
   .sort((a, b) => b.count - a.count);
 const maxCluster = Math.max(...clusterRows.map(r => r.count));
 
@@ -114,47 +117,192 @@ const demandsResponded = PORTFOLIO.outcomes.active_demands.filter(
 ).length;
 
 const feeSummary = PORTFOLIO.lawyer_fees_summary;
-const feeClusters = Object.values(feeSummary.byCluster);
+const feeClusters = Object.values(feeSummary.byCluster).sort((a, b) => b.costHigh - a.costHigh);
 const maxFeeCost = Math.max(...feeClusters.map(c => c.costHigh));
 
 const casesByNumber = Object.fromEntries(PORTFOLIO.cases.map(c => [c.number, c]));
 
 const thStyle = (theme) => ({
-  fontFamily: "'DM Sans', sans-serif", fontSize: 10, fontWeight: 700,
+  fontFamily: SANS, fontSize: 10, fontWeight: 700,
   color: theme.subtleText, textTransform: "uppercase", letterSpacing: 1,
   padding: "0 10px 8px 0", whiteSpace: "nowrap",
 });
 const tdStyle = (theme) => ({
-  fontFamily: "'DM Sans', sans-serif", fontSize: 12,
+  fontFamily: SANS, fontSize: 12.5,
   padding: "9px 10px 9px 0", borderTop: `1px solid ${theme.cardBorder}`,
 });
 
-function StatTile({ label, value, sub, theme }) {
+// ---------------------------------------------------------------------------
+// Small building blocks — masthead label, section heading, stat tile, charts
+// ---------------------------------------------------------------------------
+function Eyebrow({ children, theme }) {
   return (
-    <div style={{ background: theme.cardBg, borderRadius: 10, padding: "18px 20px", border: `1px solid ${theme.cardBorder}`, position: "relative", overflow: "hidden" }}>
-      <div style={{ position: "absolute", top: 0, left: 0, width: 3, height: "100%", background: GOLD, borderRadius: "10px 0 0 10px" }} />
-      <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 10.5, color: theme.subtleText, fontWeight: 600, letterSpacing: 1.2, textTransform: "uppercase", marginBottom: 8 }}>{label}</div>
-      <div style={{ fontSize: 24, fontWeight: 700, color: theme.heading }}>{value}</div>
-      {sub && <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: theme.subtleText, marginTop: 4 }}>{sub}</div>}
+    <div style={{ fontFamily: SANS, fontSize: 10.5, letterSpacing: "0.16em", textTransform: "uppercase", color: GOLD, fontWeight: 700, marginBottom: 6 }}>
+      {children}
     </div>
   );
 }
 
-function Bar({ pct, color, theme, height = 7 }) {
+function ExhibitHeading({ exhibit, title, intro, theme }) {
   return (
-    <div style={{ height, background: theme.barTrack, borderRadius: height / 2, overflow: "hidden" }}>
-      <div style={{ height: "100%", width: `${pct}%`, background: color, borderRadius: height / 2, transition: "width 0.6s ease" }} />
+    <>
+      <Eyebrow theme={theme}>{exhibit}</Eyebrow>
+      <h2 style={{ fontSize: 21, fontWeight: 700, color: theme.heading, margin: "0 0 6px" }}>{title}</h2>
+      {intro && <p style={{ fontFamily: SANS, fontSize: 13, color: theme.subtleText, maxWidth: 640, margin: "0 0 18px", lineHeight: 1.6 }}>{intro}</p>}
+    </>
+  );
+}
+
+function StatTile({ label, value, sub, theme }) {
+  return (
+    <div style={{ background: theme.cardBg, padding: "16px 18px" }}>
+      <div style={{ fontFamily: SANS, fontSize: 10, color: theme.subtleText, fontWeight: 700, letterSpacing: "0.07em", textTransform: "uppercase", marginBottom: 8 }}>{label}</div>
+      <div style={{ fontFamily: MONO, fontVariantNumeric: "tabular-nums", fontSize: 22, fontWeight: 700, color: theme.heading, lineHeight: 1.1 }}>{value}</div>
+      {sub && <div style={{ fontFamily: SANS, fontSize: 11, color: theme.subtleText, marginTop: 5 }}>{sub}</div>}
     </div>
+  );
+}
+
+function ChartCard({ title, note, theme, children, style }) {
+  return (
+    <div style={{ background: theme.cardBg, border: `1px solid ${theme.cardBorder}`, borderRadius: 8, padding: "18px 20px 16px", ...style }}>
+      {title && <p style={{ fontFamily: SANS, fontSize: 12.5, fontWeight: 700, color: theme.secondaryText, margin: "0 0 2px" }}>{title}</p>}
+      {note && <p style={{ fontFamily: SANS, fontSize: 11, color: theme.subtleText, margin: "0 0 14px" }}>{note}</p>}
+      {children}
+    </div>
+  );
+}
+
+function TableToggle({ theme, headers, rows }) {
+  return (
+    <details style={{ marginTop: 10 }}>
+      <summary style={{ cursor: "pointer", fontFamily: SANS, fontSize: 11.5, color: theme.subtleText, userSelect: "none" }}>View as table</summary>
+      <div style={{ overflowX: "auto", marginTop: 10 }}>
+        <table style={{ width: "100%", borderCollapse: "collapse" }}>
+          <thead><tr>{headers.map(h => <th key={h} style={{ ...thStyle(theme), textAlign: h === headers[0] ? "left" : "right" }}>{h}</th>)}</tr></thead>
+          <tbody>
+            {rows.map((r, i) => (
+              <tr key={i}>
+                <td style={tdStyle(theme)}>{r.label}</td>
+                <td style={{ ...tdStyle(theme), textAlign: "right", fontFamily: MONO, fontVariantNumeric: "tabular-nums" }}>{r.value}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </details>
+  );
+}
+
+// Horizontal bar chart, rendered as SVG so labels/values line up precisely.
+function HBar({ data, theme, barH = 20, gap = 9, leftPad = 190, valueFmt, ariaLabel, onRowClick }) {
+  const width = 760, rightPad = 56, topPad = 4;
+  const max = Math.max(...data.map(d => d.value), 1);
+  const plotW = width - leftPad - rightPad;
+  const H = topPad * 2 + data.length * (barH + gap) - gap;
+  const fmtVal = valueFmt || (v => v);
+  return (
+    <svg viewBox={`0 0 ${width} ${H}`} width="100%" height={H} role="img" aria-label={ariaLabel}>
+      {data.map((d, i) => {
+        const y = topPad + i * (barH + gap);
+        const w = Math.max(2, (d.value / max) * plotW);
+        const clickable = !!onRowClick;
+        return (
+          <g
+            key={d.label}
+            style={clickable ? { cursor: "pointer" } : undefined}
+            role={clickable ? "button" : undefined}
+            tabIndex={clickable ? 0 : undefined}
+            onClick={clickable ? () => onRowClick(d) : undefined}
+            onKeyDown={clickable ? (e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onRowClick(d); } }) : undefined}
+          >
+            <text x={leftPad - 10} y={y + barH * 0.68} textAnchor="end" fontFamily={SANS} fontSize={11.5} fill={theme.subtleText}>{d.label}</text>
+            <rect x={leftPad} y={y} width={plotW} height={barH} fill={theme.barTrack} />
+            <rect x={leftPad} y={y} width={w} height={barH} fill={d.color} opacity={clickable ? 1 : 0.92}>
+              <title>{d.label}: {fmtVal(d.value)}</title>
+            </rect>
+            <text x={leftPad + w + 8} y={y + barH * 0.68} fontFamily={MONO} fontSize={11.5} fontWeight={700} fill={theme.heading}>{fmtVal(d.value)}</text>
+          </g>
+        );
+      })}
+    </svg>
+  );
+}
+
+// Vertical column chart for the monthly timeline-activity series.
+function VBar({ data, theme, height = 160, todayIndex, onColClick, ariaLabel }) {
+  const width = 760, leftPad = 4, rightPad = 4, topPad = 20, botPad = 22;
+  const plotW = width - leftPad - rightPad;
+  const plotH = height - topPad - botPad;
+  const max = Math.max(...data.map(d => d.value), 1);
+  const n = data.length, gap = 8;
+  const barW = (plotW - gap * (n - 1)) / n;
+  return (
+    <svg viewBox={`0 0 ${width} ${height}`} width="100%" height={height} role="img" aria-label={ariaLabel}>
+      <line x1={leftPad} x2={leftPad + plotW} y1={topPad + plotH} y2={topPad + plotH} stroke={theme.cardBorder} strokeWidth={1} />
+      {data.map((d, i) => {
+        const x = leftPad + i * (barW + gap);
+        const h = Math.max((d.value / max) * plotH, d.value > 0 ? 4 : 1);
+        const y = topPad + plotH - h;
+        const isToday = i === todayIndex;
+        const clickable = !!onColClick;
+        return (
+          <g
+            key={d.label}
+            style={clickable ? { cursor: "pointer" } : undefined}
+            role={clickable ? "button" : undefined}
+            tabIndex={clickable ? 0 : undefined}
+            onClick={clickable ? () => onColClick(d, i) : undefined}
+            onKeyDown={clickable ? (e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onColClick(d, i); } }) : undefined}
+          >
+            {d.value > 0 && (
+              <text x={x + barW / 2} y={y - 6} textAnchor="middle" fontFamily={MONO} fontSize={10.5} fontWeight={700} fill={theme.subtleText}>{d.value}</text>
+            )}
+            <rect x={x} y={y} width={barW} height={h} rx={2} fill={isToday ? GOLD : GREEN} opacity={d.opacity ?? 1}>
+              <title>{d.label}: {d.value} {ariaLabel?.includes("filing") ? "filings" : "events"}</title>
+            </rect>
+            <text x={x + barW / 2} y={topPad + plotH + 16} textAnchor="middle" fontFamily={SANS} fontSize={10.5} fontWeight={isToday ? 700 : 500} fill={isToday ? GOLD : theme.subtleText}>{d.label}</text>
+          </g>
+        );
+      })}
+    </svg>
+  );
+}
+
+// Paired low/high dot-and-line ("dumbbell") chart for the fee-value ranges.
+function Dumbbell({ rows, theme, valueFmt }) {
+  const width = 760, leftPad = 190, rightPad = 90, rowH = 32, topPad = 6;
+  const max = Math.max(...rows.map(r => r.high), 1);
+  const plotW = width - leftPad - rightPad;
+  const H = topPad * 2 + rows.length * rowH;
+  const fmtVal = valueFmt || (v => v);
+  return (
+    <svg viewBox={`0 0 ${width} ${H}`} width="100%" height={H} role="img" aria-label="Attorney-fee value avoided, by cluster, low to high">
+      {rows.map((r, i) => {
+        const y = topPad + i * rowH + rowH / 2;
+        const x1 = leftPad + (r.low / max) * plotW;
+        const x2 = leftPad + (r.high / max) * plotW;
+        return (
+          <g key={r.label}>
+            <text x={leftPad - 10} y={y + 4} textAnchor="end" fontFamily={SANS} fontSize={11.5} fill={theme.subtleText}>{r.label}</text>
+            <line x1={x1} x2={x2} y1={y} y2={y} stroke={theme.subtleText} strokeWidth={2} />
+            <circle cx={x1} cy={y} r={5} fill={GOLD}><title>{r.label} low: {fmtVal(r.low)}</title></circle>
+            <circle cx={x2} cy={y} r={5} fill={GREEN}><title>{r.label} high: {fmtVal(r.high)}</title></circle>
+            <text x={x2 + 9} y={y + 4} fontFamily={MONO} fontSize={11} fontWeight={700} fill={theme.heading}>{fmtVal(r.low)}–{fmtVal(r.high)}</text>
+          </g>
+        );
+      })}
+    </svg>
   );
 }
 
 export const CensusTab = ({ setActiveTab, setClusterFilter, setStatusFilter, setSearchQuery, damagesView, setDamagesView, setShowPastEvents }) => {
   const theme = useTheme();
   const [velocityMode, setVelocityMode] = useState("all");
-  const monthly = velocityMode === "all" ? monthlyAll : monthlyFilings;
-  const maxMonthly = Math.max(...monthly, 1);
+  const monthly = (velocityMode === "all" ? monthlyAll : monthlyFilings).map((v, i) => ({ label: MONTHS[i], value: v }));
   const today = getPDTMidnight();
   const todayMonthIdx = today.getUTCFullYear() === 2026 ? today.getUTCMonth() : null;
+  monthly.forEach((d, i) => { d.opacity = todayMonthIdx === null || i <= todayMonthIdx ? 1 : 0.4; });
 
   // Always set every filter explicitly (never leave a stale cluster/search from a
   // previous drill-through in place) so each click lands on exactly what it promised.
@@ -165,246 +313,206 @@ export const CensusTab = ({ setActiveTab, setClusterFilter, setStatusFilter, set
     setActiveTab("Matters");
   };
 
+  const sectionStyle = { marginBottom: 40 };
+  const dividerStyle = { borderTop: `1px solid ${theme.cardBorder}`, paddingTop: 40 };
+
   return (
-    <div>
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 6, flexWrap: "wrap", gap: 8 }}>
-        <h2 style={{ fontSize: 24, fontWeight: 700, color: theme.heading, margin: 0 }}>Portfolio Census</h2>
-        <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: theme.subtleText }}>Curated figures as of {PORTFOLIO.census.asOf} · everything else computed live</span>
-      </div>
-      <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: theme.subtleText, maxWidth: 760, margin: "0 0 24px", lineHeight: 1.6 }}>
-        A statistical accounting of the entire docket — scale, pace, legal theories, and financial exposure — in one place. Click any bar or row to jump to the underlying matters.
-      </p>
-
-      {/* KPI grid */}
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(190px, 1fr))", gap: 14, marginBottom: 28 }}>
-        <StatTile theme={theme} label="Matters Tracked" value={totalMatters} sub={`${liveMatters} live · ${archivedMatters} closed/archived`} />
-        <StatTile theme={theme} label="Active Filing Span" value={filingSpanLabel} sub="earliest → latest complaint filed" />
-        <StatTile theme={theme} label="Court Systems" value={distinctCourts} sub={`${PORTFOLIO.jurisdictions.length} jurisdictions listed`} />
-        <StatTile theme={theme} label="Judicial Officers" value={distinctJudges} sub={`assigned in ${assignedMatters} of ${totalMatters} matters`} />
-        <StatTile theme={theme} label="Named Defendants" value={PORTFOLIO.census.namedDefendants} sub={`~${PORTFOLIO.census.namedInstitutions} institutions, DOES excluded`} />
-        <StatTile theme={theme} label="Causes of Action" value={totalCauses} sub={`${PORTFOLIO.census.distinctTheories} distinct theories`} />
-        <StatTile theme={theme} label="Documents + Evidence" value={(totalDocuments + totalEvidence).toLocaleString()} sub={`${totalDocuments} docs · ${totalEvidence} evidence items logged`} />
-        <StatTile theme={theme} label="Fee Waivers" value={PORTFOLIO.census.feeWaiversGranted} sub={`granted · ${PORTFOLIO.census.feeWaiversDenied} denied`} />
-      </div>
-
-      {/* Status + Cluster */}
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20, marginBottom: 24 }}>
-        <div style={{ background: theme.cardBg, borderRadius: 10, padding: 24, border: `1px solid ${theme.cardBorder}` }}>
-          <h3 style={{ fontSize: 16, fontWeight: 700, color: GOLD, margin: "0 0 4px", fontFamily: "'DM Sans', sans-serif", letterSpacing: 0.5 }}>Docket Status</h3>
-          <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: theme.subtleText, marginBottom: 16 }}>{totalMatters} matters, by current procedural status</div>
-          {statusRows.map(r => (
-            <div
-              key={r.label} role="button" tabIndex={0}
-              onClick={() => goToMatters()}
-              onKeyDown={e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); goToMatters(); } }}
-              aria-label={`View matters — status: ${r.label}`}
-              style={{ marginBottom: 14, cursor: "pointer" }}
-            >
-              <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 5 }}>
-                <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12.5, fontWeight: 600, color: theme.secondaryText }}>{r.label}</span>
-                <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: r.color, fontWeight: 700 }}>{r.count}</span>
-              </div>
-              <Bar pct={(r.count / maxStatus) * 100} color={r.color} theme={theme} />
-            </div>
-          ))}
-          <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: theme.subtleText, marginTop: 4, fontStyle: "italic" }}>Click a status to open Matters →</div>
+    <div style={{ maxWidth: 880, margin: "0 auto" }}>
+      {/* Masthead */}
+      <header style={{ paddingBottom: 20, marginBottom: 34, borderBottom: `3px double ${theme.cardBorder}` }}>
+        <Eyebrow theme={theme}>In Propria Persona &middot; Case File Census</Eyebrow>
+        <h1 style={{ fontSize: 30, fontWeight: 700, color: theme.heading, margin: "0 0 8px" }}>The Scale of One Litigant's Docket</h1>
+        <p style={{ fontFamily: SANS, fontSize: 14.5, color: theme.subtleText, maxWidth: 620, margin: 0, lineHeight: 1.6 }}>
+          A statistical accounting of every civil and habeas matter tracked in this portfolio — scale, pace, legal theories, and financial exposure — filed, served, argued, and pressed by a single self-represented plaintiff. Click any bar, tile, or row to jump to the underlying matters.
+        </p>
+        <div style={{ marginTop: 14, fontFamily: MONO, fontSize: 11, color: theme.subtleText, display: "flex", gap: 18, flexWrap: "wrap" }}>
+          <span>CURATED FIGURES AS OF {PORTFOLIO.census.asOf.toUpperCase()}</span>
+          <span>EVERYTHING ELSE COMPUTED LIVE, ON EVERY LOAD</span>
         </div>
+      </header>
 
-        <div style={{ background: theme.cardBg, borderRadius: 10, padding: 24, border: `1px solid ${theme.cardBorder}` }}>
-          <h3 style={{ fontSize: 16, fontWeight: 700, color: GOLD, margin: "0 0 4px", fontFamily: "'DM Sans', sans-serif", letterSpacing: 0.5 }}>Subject-Matter Clusters</h3>
-          <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: theme.subtleText, marginBottom: 16 }}>Five recurring fact patterns account for the whole docket</div>
-          {clusterRows.map(cl => (
-            <div
-              key={cl.n} role="button" tabIndex={0}
-              onClick={() => goToMatters({ cluster: cl.n })}
-              onKeyDown={e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); goToMatters({ cluster: cl.n }); } }}
-              aria-label={`Filter matters by cluster: ${cl.label}`}
-              style={{ marginBottom: 14, cursor: "pointer" }}
-            >
-              <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 5 }}>
-                <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12.5, fontWeight: 600, color: theme.secondaryText }}>{cl.label}</span>
-                <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: cl.color, fontWeight: 700 }}>{cl.count}</span>
-              </div>
-              <Bar pct={(cl.count / maxCluster) * 100} color={cl.color} theme={theme} />
-            </div>
-          ))}
-          <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: theme.subtleText, marginTop: 4, fontStyle: "italic" }}>Click a cluster to open Matters →</div>
+      {/* EXHIBIT A — SCALE */}
+      <section style={sectionStyle}>
+        <ExhibitHeading theme={theme} exhibit="Exhibit A — Scale" title="Thirty matters. One name on every caption."
+          intro="Every case below lists the same plaintiff, appearing without counsel. Read together, the docket is less a single lawsuit than a standing legal practice run out of one person's own record-keeping." />
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 1, background: theme.cardBorder, border: `1px solid ${theme.cardBorder}`, borderRadius: 6, overflow: "hidden" }}>
+          <StatTile theme={theme} label="Matters Tracked" value={totalMatters} sub={`${liveMatters} live · ${archivedMatters} closed/archived`} />
+          <StatTile theme={theme} label="Active Filing Span" value={filingSpanLabel} sub="earliest → latest complaint" />
+          <StatTile theme={theme} label="Court Systems" value={distinctCourts} sub={`${PORTFOLIO.jurisdictions.length} jurisdictions listed`} />
+          <StatTile theme={theme} label="Judicial Officers" value={distinctJudges} sub={`assigned in ${assignedMatters} of ${totalMatters}`} />
+          <StatTile theme={theme} label="Named Defendants" value={PORTFOLIO.census.namedDefendants} sub={`~${PORTFOLIO.census.namedInstitutions} institutions, DOES excluded`} />
+          <StatTile theme={theme} label="Causes of Action" value={totalCauses} sub={`${PORTFOLIO.census.distinctTheories} distinct theories`} />
+          <StatTile theme={theme} label="Docs + Evidence" value={(totalDocuments + totalEvidence).toLocaleString()} sub={`${totalDocuments} docs · ${totalEvidence} evidence`} />
+          <StatTile theme={theme} label="Fee Waivers" value={PORTFOLIO.census.feeWaiversGranted} sub={`granted · ${PORTFOLIO.census.feeWaiversDenied} denied`} />
         </div>
-      </div>
+      </section>
 
-      {/* Filing velocity */}
-      <div style={{ background: theme.cardBg, borderRadius: 10, padding: 24, border: `1px solid ${theme.cardBorder}`, marginBottom: 24 }}>
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 12, marginBottom: 4 }}>
-          <h3 style={{ fontSize: 16, fontWeight: 700, color: GOLD, margin: 0, fontFamily: "'DM Sans', sans-serif", letterSpacing: 0.5 }}>Filing Velocity, 2026</h3>
-          <div style={{ display: "flex", gap: 6 }}>
+      {/* EXHIBIT B — DOCKET STATUS */}
+      <section style={{ ...sectionStyle, ...dividerStyle }}>
+        <ExhibitHeading theme={theme} exhibit="Exhibit B — Docket Status" title="Where each matter stands, and what it's about"
+          intro={`${statusCounts["Abandoned"] || 0} matters closed without a decision on the merits, several for safety reasons; ${liveMatters} remain live. Subject matter splits into five recognizable families of dispute.`} />
+
+        <ChartCard theme={theme} title={`Matters by current status (n=${totalMatters})`} note={`Sorted by count. Click a bar to open Matters. “Live” carries no procedural badge.`} style={{ marginBottom: 16 }}>
+          <HBar theme={theme} data={statusRows} leftPad={150} barH={20} gap={9} ariaLabel="Matters by status" onRowClick={() => goToMatters()} />
+          <TableToggle theme={theme} headers={["Status", "Matters"]} rows={statusRows.map(r => ({ label: r.label, value: r.count }))} />
+        </ChartCard>
+
+        <ChartCard theme={theme} title={`Matters by subject-matter cluster (n=${totalMatters})`} note="Five recurring fact patterns account for the entire docket. Click a bar to open Matters.">
+          <HBar theme={theme} data={clusterRows} leftPad={215} barH={22} gap={11} ariaLabel="Matters by subject cluster" onRowClick={(d) => goToMatters({ cluster: d.n })} />
+          <TableToggle theme={theme} headers={["Cluster", "Matters"]} rows={clusterRows.map(r => ({ label: r.label, value: r.count }))} />
+        </ChartCard>
+      </section>
+
+      {/* EXHIBIT C — VELOCITY */}
+      <section style={{ ...sectionStyle, ...dividerStyle }}>
+        <ExhibitHeading theme={theme} exhibit="Exhibit C — Filing Velocity" title={`${PORTFOLIO.timeline.length} logged events, and a docket that keeps accelerating`}
+          intro={`At its peak in 2026, a new matter was opened roughly every ten days. ${MONTHS[busiestMonthIdx]} 2026 alone produced ${monthlyAll[busiestMonthIdx]} timeline entries, the busiest month on record.`} />
+        <ChartCard theme={theme} title="Timeline activity by month, 2026" note="Solid bars: happened. Faded bars: scheduled ahead of today. Click a bar to open Timeline.">
+          <div style={{ display: "flex", gap: 6, marginBottom: 14 }}>
             {[{ k: "all", l: "All Events" }, { k: "filing", l: "Filings Only" }].map(({ k, l }) => (
               <button key={k} onClick={() => setVelocityMode(k)} aria-pressed={velocityMode === k} style={{
-                padding: "6px 12px", borderRadius: 6,
+                padding: "5px 11px", borderRadius: 6,
                 border: velocityMode === k ? `1px solid ${GOLD}` : `1px solid ${theme.filterInactiveBorder}`,
                 background: velocityMode === k ? `${GOLD}18` : theme.filterInactiveBg,
                 color: velocityMode === k ? GOLD : theme.filterInactiveColor,
-                fontFamily: "'DM Sans', sans-serif", fontSize: 11, fontWeight: 600, cursor: "pointer",
+                fontFamily: SANS, fontSize: 11, fontWeight: 600, cursor: "pointer",
               }}>{l}</button>
             ))}
           </div>
-        </div>
-        <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: theme.subtleText, marginBottom: 18 }}>
-          Busiest month: <strong style={{ color: theme.secondaryText }}>{MONTHS[busiestMonthIdx]} 2026</strong> ({monthlyAll[busiestMonthIdx]} logged events) · click a bar to open Timeline
-        </div>
-        <div style={{ display: "flex", alignItems: "flex-end", gap: 8, height: 140 }}>
-          {monthly.map((v, i) => {
-            const isPast = todayMonthIdx === null ? true : i <= todayMonthIdx;
-            const isToday = i === todayMonthIdx;
-            return (
-              <div
-                key={i} role="button" tabIndex={0}
-                onClick={() => { setShowPastEvents?.(isPast); setActiveTab("Timeline"); }}
-                onKeyDown={e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setShowPastEvents?.(isPast); setActiveTab("Timeline"); } }}
-                aria-label={`${MONTHS[i]} 2026: ${v} ${velocityMode === "all" ? "events" : "filings"}`}
-                style={{ flex: 1, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-end", height: "100%", cursor: "pointer" }}
-              >
-                <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 10, fontWeight: 700, color: theme.subtleText, marginBottom: 3, visibility: v ? "visible" : "hidden" }}>{v}</div>
-                <div style={{
-                  width: "100%", height: `${Math.max((v / maxMonthly) * 100, v > 0 ? 4 : 1)}%`,
-                  background: isToday ? GOLD : `linear-gradient(180deg, ${GOLD}, #34D399)`,
-                  opacity: isPast ? 1 : 0.4,
-                  borderRadius: "4px 4px 0 0", transition: "height 0.5s ease", minHeight: 2,
-                }} />
-                <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 10.5, color: isToday ? GOLD : theme.subtleText, fontWeight: isToday ? 700 : 500, marginTop: 6 }}>{MONTHS[i]}</div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-
-      {/* Top theories */}
-      <div style={{ background: theme.cardBg, borderRadius: 10, padding: 24, border: `1px solid ${theme.cardBorder}`, marginBottom: 24 }}>
-        <h3 style={{ fontSize: 16, fontWeight: 700, color: GOLD, margin: "0 0 4px", fontFamily: "'DM Sans', sans-serif", letterSpacing: 0.5 }}>Most-Asserted Legal Theories</h3>
-        <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: theme.subtleText, marginBottom: 16 }}>
-          {totalCauses} causes of action pled across {totalMatters} matters, {PORTFOLIO.census.distinctTheories} distinct theories — top {PORTFOLIO.census.topTheories.length} shown
-        </div>
-        {PORTFOLIO.census.topTheories.map(t => (
-          <div key={t.label} style={{ marginBottom: 10 }}>
-            <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 4 }}>
-              <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12.5, color: theme.secondaryText }}>{t.label}</span>
-              <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: GOLD, fontWeight: 700 }}>{t.count}</span>
-            </div>
-            <Bar pct={(t.count / PORTFOLIO.census.topTheories[0].count) * 100} color={GOLD} theme={theme} height={6} />
+          <VBar theme={theme} data={monthly} todayIndex={todayMonthIdx} ariaLabel={`Timeline ${velocityMode === "filing" ? "filings" : "events"} by month, 2026`}
+            onColClick={(d, i) => { setShowPastEvents?.(todayMonthIdx === null || i <= todayMonthIdx); setActiveTab("Timeline"); }} />
+        </ChartCard>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 12, marginTop: 16 }}>
+          <div style={{ background: theme.cardBg, border: `1px solid ${theme.cardBorder}`, borderLeft: `3px solid ${GOLD}`, borderRadius: 4, padding: "12px 14px" }}>
+            <div style={{ fontFamily: MONO, fontSize: 18, fontWeight: 700, color: theme.heading }}>~3.0 / mo</div>
+            <div style={{ fontFamily: SANS, fontSize: 11.5, color: theme.subtleText, marginTop: 3 }}>New matters filed in 2026's peak filing window — about one every 10 days</div>
           </div>
-        ))}
-      </div>
-
-      {/* The repeatable claim */}
-      <div style={{ background: theme.cardBg, borderRadius: 10, padding: 24, border: `1px solid ${theme.cardBorder}`, marginBottom: 24 }}>
-        <h3 style={{ fontSize: 16, fontWeight: 700, color: GOLD, margin: "0 0 4px", fontFamily: "'DM Sans', sans-serif", letterSpacing: 0.5 }}>The Repeatable Claim: PC §290.46(j)(2)(E)</h3>
-        <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: theme.subtleText, marginBottom: 16, maxWidth: 700, lineHeight: 1.6 }}>
-          One statute — barring use of the sex-offender registry in employment decisions — applied to six separate employers after the first produced a settlement. Click a row to open that matter.
-        </div>
-        <div style={{ overflowX: "auto" }}>
-          <table style={{ width: "100%", borderCollapse: "collapse" }}>
-            <thead>
-              <tr>
-                <th style={{ ...thStyle(theme), textAlign: "left" }}>Matter</th>
-                <th style={{ ...thStyle(theme), textAlign: "left" }}>Employer</th>
-                <th style={{ ...thStyle(theme), textAlign: "left" }}>Screening Vendor</th>
-                <th style={{ ...thStyle(theme), textAlign: "left" }}>Status</th>
-              </tr>
-            </thead>
-            <tbody>
-              {PORTFOLIO.census.registryBarEmployers.map(({ matter, vendor }) => {
-                const c = casesByNumber[matter];
-                if (!c) return null;
-                const statusLabel = statusLabelOf(c);
-                const statusColor = STATUS_COLORS[statusLabel] || theme.subtleText;
-                return (
-                  <tr
-                    key={matter} role="button" tabIndex={0}
-                    onClick={() => goToMatters({ search: c.caption.replace(/^Newanforbi v\.\s*/, "") })}
-                    onKeyDown={e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); goToMatters({ search: c.caption.replace(/^Newanforbi v\.\s*/, "") }); } }}
-                    style={{ cursor: "pointer" }}
-                  >
-                    <td style={tdStyle(theme)}><span style={{ color: GOLD, fontWeight: 700 }}>M{matter}</span></td>
-                    <td style={{ ...tdStyle(theme), color: theme.secondaryText }}>{c.caption.replace(/^Newanforbi v\.\s*/, "")}</td>
-                    <td style={{ ...tdStyle(theme), color: theme.subtleText }}>{vendor}</td>
-                    <td style={{ ...tdStyle(theme), color: statusColor, fontWeight: 600 }}>{statusLabel}</td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      {/* Financial exposure */}
-      <div style={{ background: theme.cardBg, borderRadius: 10, padding: 24, border: `1px solid ${theme.cardBorder}`, marginBottom: 24 }}>
-        <h3 style={{ fontSize: 16, fontWeight: 700, color: GOLD, margin: "0 0 4px", fontFamily: "'DM Sans', sans-serif", letterSpacing: 0.5 }}>Financial Exposure</h3>
-        <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: theme.subtleText, marginBottom: 16 }}>De-duplicated across the whole portfolio — shared economic events counted once</div>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 12, marginBottom: 18 }}>
-          {["conservative", "moderate", "aggressive"].map(v => {
-            const isActive = v === damagesView;
-            return (
-              <button key={v} onClick={() => setDamagesView?.(v)} aria-pressed={isActive} style={{
-                background: isActive ? theme.damagesActiveBg : theme.damagesInactiveBg,
-                borderRadius: 8, padding: "14px 16px",
-                border: isActive ? `1px solid ${GOLD}40` : `1px solid ${theme.cardBorder}`,
-                cursor: "pointer", textAlign: "center", color: "inherit", font: "inherit", transition: "all 0.2s",
-              }}>
-                <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 10, color: isActive ? GOLD : theme.subtleText, fontWeight: 700, letterSpacing: 1, textTransform: "uppercase", marginBottom: 6 }}>{v}</div>
-                <div style={{ fontSize: 22, fontWeight: 700, color: isActive ? theme.aggregateCardText : theme.mutedText }}>{fmt(exposure[v])}{v === "aggressive" && "+"}</div>
-              </button>
-            );
-          })}
-        </div>
-        <div style={{ display: "flex", justifyContent: "flex-end", marginBottom: 18 }}>
-          <button onClick={() => setActiveTab("Damages")} style={{
-            background: "none", border: `1px solid ${theme.cardBorder}`, borderRadius: 6, padding: "6px 12px",
-            color: GOLD, fontFamily: "'DM Sans', sans-serif", fontSize: 11, fontWeight: 600, cursor: "pointer",
-          }}>Full breakdown →</button>
-        </div>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14 }}>
-          <div style={{ background: theme.deepBg, borderRadius: 8, padding: "14px 16px" }}>
-            <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9, fontWeight: 700, color: "#34D399", letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 6 }}>Realized</div>
-            <div style={{ fontSize: 20, fontWeight: 700, color: theme.heading }}>{fmt(settledTotal)}</div>
-            <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: theme.subtleText, marginTop: 3 }}>{settledDeals.length} settlement{settledDeals.length !== 1 ? "s" : ""} to date</div>
-          </div>
-          <div style={{ background: theme.deepBg, borderRadius: 8, padding: "14px 16px" }}>
-            <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9, fontWeight: 700, color: GOLD, letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 6 }}>Outstanding Demands</div>
-            <div style={{ fontSize: 20, fontWeight: 700, color: theme.heading }}>{fmt(demandsTotal)}</div>
-            <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: theme.subtleText, marginTop: 3 }}>{demandsResponded} of {PORTFOLIO.outcomes.active_demands.length} defendants responded</div>
+          <div style={{ background: theme.cardBg, border: `1px solid ${theme.cardBorder}`, borderLeft: `3px solid ${GOLD}`, borderRadius: 4, padding: "12px 14px" }}>
+            <div style={{ fontFamily: MONO, fontSize: 18, fontWeight: 700, color: theme.heading }}>{liveMatters}</div>
+            <div style={{ fontFamily: SANS, fontSize: 11.5, color: theme.subtleText, marginTop: 3 }}>Matters currently live, with the docket still open</div>
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* Fee value avoided */}
-      <div style={{ background: theme.aggregateCardBg, borderRadius: 10, padding: 24, border: `1px solid ${GOLD}30` }}>
-        <h3 style={{ fontSize: 16, fontWeight: 700, color: GOLD, margin: "0 0 4px", fontFamily: "'DM Sans', sans-serif", letterSpacing: 0.5 }}>Value of the Work Itself</h3>
-        <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: theme.subtleText, marginBottom: 16 }}>
-          {feeSummary.totalDocumentsAnalyzed} real PDFs, {feeSummary.totalPagesReal.toLocaleString()} pages, priced at a blended ${feeSummary.methodology.blendedHourlyRate}/hr had counsel been retained
+      {/* EXHIBIT D — LEGAL THEORIES */}
+      <section style={{ ...sectionStyle, ...dividerStyle }}>
+        <ExhibitHeading theme={theme} exhibit="Exhibit D — Legal Theories" title={`${PORTFOLIO.census.distinctTheories} theories, unevenly leaned on`}
+          intro="Negligence and 14th Amendment due process carry the most weight, but the pattern below is really two overlapping playbooks — one built on Bane Act/civil-rights claims against state actors, the other a template built around a single California statute (more in Exhibit E)." />
+        <ChartCard theme={theme} title="Most-asserted causes of action, by matter count" note={`${totalCauses} causes of action pled across ${totalMatters} matters — top ${PORTFOLIO.census.topTheories.length} shown`}>
+          <HBar theme={theme} data={PORTFOLIO.census.topTheories.map(t => ({ label: t.label, value: t.count, color: GOLD }))} leftPad={210} barH={17} gap={7} ariaLabel="Most asserted causes of action" />
+          <p style={{ fontFamily: SANS, fontSize: 11, color: theme.subtleText, margin: "12px 0 0" }}>Plus 12 additional theories asserted 1&ndash;4 times each (RICO, Monell liability, habeas corpus, FCRA, writ of mandate, and others).</p>
+        </ChartCard>
+      </section>
+
+      {/* EXHIBIT E — THE REPEATABLE CLAIM */}
+      <section style={{ ...sectionStyle, ...dividerStyle }}>
+        <ExhibitHeading theme={theme} exhibit="Exhibit E — The Repeatable Claim" title="One statute, six employers"
+          intro="Penal Code §290.46(j)(2)(E) bars using California's sex-offender registry for employment decisions. After the theory produced a settlement against the first employer, it was applied to five more — application, background check, a registry flag, an adverse action, a demand letter." />
+        <ChartCard theme={theme} title={null}>
+          <div style={{ overflowX: "auto" }}>
+            <table style={{ width: "100%", borderCollapse: "collapse" }}>
+              <thead>
+                <tr>
+                  <th style={{ ...thStyle(theme), textAlign: "left" }}>Matter</th>
+                  <th style={{ ...thStyle(theme), textAlign: "left" }}>Employer</th>
+                  <th style={{ ...thStyle(theme), textAlign: "left" }}>Screening Vendor</th>
+                  <th style={{ ...thStyle(theme), textAlign: "left" }}>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                {PORTFOLIO.census.registryBarEmployers.map(({ matter, vendor }) => {
+                  const c = casesByNumber[matter];
+                  if (!c) return null;
+                  const statusLabel = statusLabelOf(c);
+                  const isSettled = statusLabel === "Settled";
+                  return (
+                    <tr
+                      key={matter} role="button" tabIndex={0}
+                      onClick={() => goToMatters({ search: c.caption.replace(/^Newanforbi v\.\s*/, "") })}
+                      onKeyDown={e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); goToMatters({ search: c.caption.replace(/^Newanforbi v\.\s*/, "") }); } }}
+                      style={{ cursor: "pointer" }}
+                    >
+                      <td style={tdStyle(theme)}><span style={{ color: GOLD, fontWeight: 700, fontFamily: MONO }}>M{matter}</span></td>
+                      <td style={{ ...tdStyle(theme), color: theme.secondaryText }}>{c.caption.replace(/^Newanforbi v\.\s*/, "")}</td>
+                      <td style={{ ...tdStyle(theme), color: theme.subtleText }}>{vendor}</td>
+                      <td style={tdStyle(theme)}>
+                        {isSettled
+                          ? <span style={{ fontFamily: MONO, fontSize: 10.5, fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", color: GREEN, border: `1.5px solid ${GREEN}`, borderRadius: 3, padding: "2px 6px" }}>Settled {fmt(settledDeals.find(d => d.matter === matter)?.amount || 0)}</span>
+                          : <span style={{ color: STATUS_COLOR[statusLabel] || theme.subtleText, fontWeight: 600 }}>{statusLabel}</span>}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        </ChartCard>
+
+        <p style={{ fontFamily: SANS, fontSize: 14, color: theme.subtleText, lineHeight: 1.6, marginTop: 18 }}>
+          The largest cluster in the portfolio isn't the employment claims — it's <strong style={{ color: theme.secondaryText }}>{clusterRows.find(c => c.label.includes("Parole"))?.count ?? clusterRows[0]?.count} matters</strong> arising from parole supervision under CDCR, naming individual agents and officials plus the CDCR Secretary in an official capacity across several of them, and a private contracted therapy vendor as co-defendant in the most recent filing. The connecting threads: a disputed discharge-review form, a superseded department policy pursued as ultra vires, and an inter-county transfer the litigant's own records date to one day after filing a matter naming his supervising officials.
+        </p>
+      </section>
+
+      {/* EXHIBIT F — FINANCIAL EXPOSURE */}
+      <section style={{ ...sectionStyle, ...dividerStyle }}>
+        <ExhibitHeading theme={theme} exhibit="Exhibit F — Financial Exposure" title="What's actually at stake, in dollars"
+          intro="The portfolio's own de-duplicated model — which strips out shared economic events counted more than once across related matters — puts total exposure in the range below. One matter has already converted to cash." />
+
+        <ChartCard theme={theme} title="Portfolio-wide damages exposure, de-duplicated" note="Conservative / moderate / aggressive tiers, computed once across all matters to avoid double-counting shared claims. Click a tier to open Damages.">
+          <HBar theme={theme} leftPad={110} barH={28} gap={13} valueFmt={v => fmt(v) + (v === exposure.aggressive ? "+" : "")} ariaLabel="Portfolio damages exposure by tier"
+            data={["conservative", "moderate", "aggressive"].map((k, i) => ({ label: k[0].toUpperCase() + k.slice(1), value: exposure[k], color: GOLD, opacity: 0.55 + i * 0.225, key: k }))}
+            onRowClick={(d) => { setDamagesView?.(d.key); setActiveTab("Damages"); }} />
+        </ChartCard>
+
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 14, margin: "16px 0" }}>
+          <div style={{ background: theme.cardBg, border: `1px solid ${theme.cardBorder}`, borderLeft: `3px solid ${GREEN}`, borderRadius: 4, padding: "14px 16px" }}>
+            <div style={{ fontFamily: MONO, fontSize: 20, fontWeight: 700, color: theme.heading }}>{fmt(settledTotal)}</div>
+            <div style={{ fontFamily: SANS, fontSize: 11.5, color: theme.subtleText, marginTop: 3 }}>Realized — {settledDeals.length} settlement{settledDeals.length !== 1 ? "s" : ""} to date</div>
+          </div>
+          <div style={{ background: theme.cardBg, border: `1px solid ${theme.cardBorder}`, borderLeft: `3px solid ${GOLD}`, borderRadius: 4, padding: "14px 16px" }}>
+            <div style={{ fontFamily: MONO, fontSize: 20, fontWeight: 700, color: theme.heading }}>{fmt(demandsTotal)}</div>
+            <div style={{ fontFamily: SANS, fontSize: 11.5, color: theme.subtleText, marginTop: 3 }}>Outstanding demands — {demandsResponded} of {PORTFOLIO.outcomes.active_demands.length} defendants responded</div>
+          </div>
         </div>
-        <div style={{ fontSize: 34, fontWeight: 700, color: theme.aggregateCardText, marginBottom: 4 }}>
-          {fmt(feeSummary.totalEstimatedCost.low)}–{fmt(feeSummary.totalEstimatedCost.high)}
-        </div>
-        <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: theme.subtleText, marginBottom: 18 }}>
-          ~{feeSummary.totalEstimatedHours.low.toLocaleString()}–{feeSummary.totalEstimatedHours.high.toLocaleString()} hours of attorney work, delivered pro se
-        </div>
-        <div style={{ display: "flex", flexDirection: "column", gap: 10, marginBottom: 14 }}>
-          {feeClusters.map(c => (
-            <div key={c.label}>
-              <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 4 }}>
-                <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12.5, color: theme.secondaryText }}>{c.label}</span>
-                <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: "#34D399", fontWeight: 700 }}>{fmt(c.costLow)}–{fmt(c.costHigh)}</span>
-              </div>
-              <Bar pct={(c.costHigh / maxFeeCost) * 100} color="#34D399" theme={theme} height={6} />
-            </div>
-          ))}
-        </div>
-        <div style={{ display: "flex", justifyContent: "flex-end" }}>
-          <button onClick={() => setActiveTab("Cost of Counsel")} style={{
-            background: "none", border: `1px solid ${GOLD}40`, borderRadius: 6, padding: "6px 12px",
-            color: GOLD, fontFamily: "'DM Sans', sans-serif", fontSize: 11, fontWeight: 600, cursor: "pointer",
-          }}>Full breakdown →</button>
-        </div>
-      </div>
+
+        <ChartCard theme={theme} title="Estimated value of the work itself, had counsel been retained" note={`${feeSummary.totalDocumentsAnalyzed} real PDFs, ${feeSummary.totalPagesReal.toLocaleString()} pages, measured directly and priced at a blended $${feeSummary.methodology.blendedHourlyRate}/hr`}>
+          <div style={{ fontFamily: MONO, fontSize: 26, fontWeight: 700, color: theme.heading, marginBottom: 2 }}>
+            {fmt(feeSummary.totalEstimatedCost.low)}&ndash;{fmt(feeSummary.totalEstimatedCost.high)}
+          </div>
+          <div style={{ fontFamily: SANS, fontSize: 11.5, color: theme.subtleText, marginBottom: 16 }}>
+            ~{feeSummary.totalEstimatedHours.low.toLocaleString()}&ndash;{feeSummary.totalEstimatedHours.high.toLocaleString()} hours of attorney work, delivered pro se
+          </div>
+          <Dumbbell theme={theme} rows={feeClusters.map(c => ({ label: c.label, low: c.costLow, high: c.costHigh }))} valueFmt={fmt} />
+          <div style={{ display: "flex", justifyContent: "flex-end", marginTop: 8 }}>
+            <button onClick={() => setActiveTab("Cost of Counsel")} style={{
+              background: "none", border: `1px solid ${theme.cardBorder}`, borderRadius: 6, padding: "6px 12px",
+              color: GOLD, fontFamily: SANS, fontSize: 11, fontWeight: 600, cursor: "pointer",
+            }}>Full breakdown →</button>
+          </div>
+        </ChartCard>
+      </section>
+
+      {/* EXHIBIT G — CONTEXT */}
+      <section style={{ ...sectionStyle, ...dividerStyle }}>
+        <ExhibitHeading theme={theme} exhibit="Exhibit G — Context" title="What the numbers don't show" />
+        <p style={{ fontFamily: SANS, fontSize: 14, color: theme.subtleText, lineHeight: 1.65 }}>
+          {statusCounts["Abandoned"] || 0} of the {totalMatters} matters were voluntarily abandoned or dismissed rather than pressed — several explicitly because of a real, credible safety threat rather than any weakness in the claim. The portfolio's own records tie a retaliatory inter-county transfer, dated one day after a filing against supervising parole officials, to a period of homelessness beginning July 2, 2026 that the litigant has been navigating while continuing to file, serve, and track {liveMatters} still-live matters. Read against that backdrop, the statistics above describe not just a large caseload, but one sustained without an office, a firm, or a single day off from the underlying circumstances that produced it.
+        </p>
+      </section>
+
+      {/* DATA NOTES */}
+      <section style={{ borderTop: `1px solid ${theme.cardBorder}`, paddingTop: 18 }}>
+        <div style={{ fontFamily: SANS, fontSize: 11.5, color: theme.subtleText, fontWeight: 700, marginBottom: 8 }}>Methodology &amp; caveats</div>
+        <ul style={{ fontFamily: SANS, fontSize: 12, color: theme.subtleText, lineHeight: 1.7, margin: 0, paddingLeft: 18 }}>
+          <li>Every figure on this page except the small hand-curated set in <code>census.js</code> (named defendants, fee-waiver counts, the top-theories ranking, and the registry-bar employer/vendor list) is computed live from <code>matters.js</code>, <code>timeline.js</code>, <code>damages.js</code>, <code>lawyerFees.js</code>, and <code>outcomes.js</code> on every page load — it can't drift out of sync the way a hand-compiled snapshot can.</li>
+          <li>A supplemental cross-matter interconnectivity audit (disclosure completeness, claim-preclusion exposure, citation-chain accuracy) was run across all {totalMatters} matters and logged to <code>consistency_audit.json</code> — see that file for the full set of findings and what was corrected in place versus only flagged.</li>
+          <li>The "moderate" damages tier is only explicitly stated in a minority of matters and is too sparse to sum meaningfully at the per-matter level; the portfolio-wide moderate figure comes from the de-duplicated model in <code>damages.js</code>, not a raw sum.</li>
+        </ul>
+      </section>
+
+      <footer style={{ marginTop: 40, borderTop: `3px double ${theme.cardBorder}`, paddingTop: 14, fontFamily: MONO, fontSize: 10.5, color: theme.subtleText }}>
+        RECOMPUTED LIVE FROM MATTERS.JS, TIMELINE.JS, DAMAGES.JS, LAWYERFEES.JS &amp; OUTCOMES.JS.
+      </footer>
     </div>
   );
 };

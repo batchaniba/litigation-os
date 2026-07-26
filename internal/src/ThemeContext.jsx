@@ -3,6 +3,7 @@ import { NAVY, GOLD, DARK_BG, CARD_BG, CLUSTER_NAVY } from "./constants";
 
 export const THEMES = {
   dark: {
+    isDark: true,
     // Shell
     bg: DARK_BG,
     headerBg: `linear-gradient(135deg, ${NAVY} 0%, ${DARK_BG} 100%)`,
@@ -40,6 +41,7 @@ export const THEMES = {
     damagesInactiveBg: CARD_BG,
   },
   light: {
+    isDark: false,
     // Shell
     bg: "#F0F4F8",
     headerBg: `linear-gradient(135deg, #FFFFFF 0%, #F5F7FA 100%)`,
