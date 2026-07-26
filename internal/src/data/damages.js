@@ -11,9 +11,10 @@ export const damages_table = [
     { category: "PC §290.46(j) Failure to Hire — FedEx / UPS (Matters 25, 26)", matters: "25, 26", conservative: 75000, moderate: 180000, aggressive: 420000 },
     { category: "PC §290.46(j) — Wrongful Termination / Failure to Employ — Randstad / RK Logistics (Matter 27)", matters: "27", conservative: 180000, moderate: 437000, aggressive: 835000 },
     { category: "§1983 Monell / Individual + Bane Act + RICO — Shannon Smith / HOPE (Matter 28)", matters: "28", conservative: 249000, moderate: 666000, aggressive: 1510000 },
-    { category: "PC §290.46(j) Failure to Hire — Amazon (Matter 29)", matters: "29", conservative: 30000, moderate: 75000, aggressive: 180000 }
+    { category: "PC §290.46(j) Failure to Hire — Amazon (Matter 29)", matters: "29", conservative: 30000, moderate: 75000, aggressive: 180000 },
+    { category: "§1983 Retaliation, Due Process, Bane Act & IIED — Moua (Matter 30)", matters: "30", conservative: 90000, moderate: 225000, aggressive: 525000 }
 ];
-// Matters 3, 5, 15, and 30 are excluded/reduced above (abandoned/dismissed Jul. 2026):
+// Matters 3, 5, and 15 are excluded/reduced above (abandoned/dismissed Jul. 2026):
 // - Matter 3 (Derrick, ABANDONED): its Lost Income, Emotional Distress, Punitive, and Fees
 //   components subtracted from the matching rows; no False Imprisonment/Bane Act component existed for it.
 // - Matter 5 (Palacios, DISMISSED): its Lost CDL Wages, Bane Act/Treble, Punitive, and Fees
@@ -25,8 +26,10 @@ export const damages_table = [
 //   Transfer Losses ($15K/$30K/$64K) components have no matching category row and were never
 //   captured here at all. Emotional Distress conservative would have gone negative after this
 //   subtraction (row already reduced by Matter 3's share) — floored at $0 rather than shown negative.
-// - Matter 30 (Moua, ABANDONED): its dedicated single-matter row removed entirely
-//   (was: conservative $90,000 / moderate $225,000 / aggressive $525,000).
+// - Matter 30 (Moua) is NOT abandoned — it's a pending, pre-complaint matter whose filing is
+//   contingent on Plaintiff's parole discharge timing (see matters.js status field). Its dedicated
+//   row above was restored accordingly; it had previously been removed here on a mistaken
+//   "abandoned" premise that the litigant has since corrected.
 
 // Per-matter bottoms-up breakdown — individual case ceilings before deduplication
 // Portfolio view above avoids double-counting shared economic events (e.g., same CDL
