@@ -23,7 +23,7 @@ export const outcomes = {
       speed: "Under 6 weeks from filing",
       served: false,
       claims: "PC §290.46(j)(2)(E) Wrongful Termination; Tameny; ICRAA; UCL §17200",
-      notes: "Defendant's own Post-Adverse Action Notice named the registry as the sole basis for termination — no ambiguity on liability. Resolved pro se before service was completed. First portfolio matter to reach a negotiated resolution.",
+      notes: "Defendant's own Post-Adverse Action Notice named the registry as the sole basis for termination — no ambiguity on liability. Resolved pro se before service was completed. First portfolio matter to reach a negotiated resolution. FLAGGED: this settlement's case number and existence have since been cited by name as persuasive precedent in demand letters to three other corporate defendants (Matters 25, 26, 27). Only the signature page of the signed release is in the document repository (see Matter 22) — the confidentiality clause's actual scope (amount only, vs. the fact/existence of settlement) has not been confirmed against the full release text. Worth resolving before this case number is cited again.",
     },
   ],
   anticipated: [

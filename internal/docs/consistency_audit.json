@@ -1,33 +1,35 @@
 {
-  "analysisDate": "2026-07-11",
-  "totalMatters": 24,
-  "mattersWithUploadedPleadings": 18,
-  "methodology": "Five parallel document-reading analysis passes grouped by shared underlying facts (not legal theme), cross-referencing actual pleading PDFs against src/data/matters.js case-tracking summaries.",
+  "analysisDate": "2026-07-26",
+  "totalMatters": 30,
+  "mattersWithUploadedPleadings": 25,
+  "methodology": "Five parallel document-reading analysis passes grouped by shared underlying facts (not legal theme), cross-referencing actual pleading PDFs against src/data/matters.js case-tracking summaries. SUPPLEMENTAL PASS (2026-07-26): four additional parallel passes, one per cluster, specifically targeting cross-matter INTERCONNECTIVITY missed by the original methodology — related-case disclosure completeness, claim-preclusion/res judicata exposure from dismissals in companion matters, claim-splitting/double-recovery risk across matters sharing one injury, and citation-chain accuracy as the portfolio grew from 24 to 30 matters. Findings 23-36 below are from this supplemental pass; several were independently verified against the underlying matters.js/timeline.js/outcomes.js text (and, for finding 33, the actual settlement release PDF) before being recorded. Matters.js was corrected in place for several of these (see 'cured' notes) rather than left as open findings only.",
   "groups": [
     {
       "group": "A",
-      "label": "CHP/DUI/DMV cluster",
+      "label": "CHP/DUI/DMV/U-Visa cluster",
       "matters": [
         1,
         2,
         7,
         8,
-        20
+        20,
+        24
       ]
     },
     {
       "group": "B",
-      "label": "Derrick/HOPE cluster",
+      "label": "Derrick/HOPE/Palacios structural cluster",
       "matters": [
         3,
         4,
         5,
-        6
+        6,
+        28
       ]
     },
     {
       "group": "C",
-      "label": "CDCR discharge/Macomber cluster",
+      "label": "CDCR discharge review/Macomber cluster",
       "matters": [
         9,
         10,
@@ -45,17 +47,27 @@
         16,
         17,
         18,
-        21
+        21,
+        30
       ]
     },
     {
       "group": "E",
-      "label": "Employment/consumer/U-visa cluster",
+      "label": "PC §290.46(j) employment cluster",
       "matters": [
-        12,
         22,
         23,
-        24
+        25,
+        26,
+        27,
+        29
+      ]
+    },
+    {
+      "group": "F",
+      "label": "Consumer fraud (standalone — confirmed not substantively related to Group E; prior 'Group E' grouping that included Matter 12 was arbitrary, see finding 36)",
+      "matters": [
+        12
       ]
     }
   ],
@@ -72,9 +84,9 @@
       "category": "sworn_contradiction",
       "description": "Directly opposite sworn characterizations of the same Nov. 1, 2024 event as either a 'full custodial arrest' or a mere 'detention, not an arrest.' In Matter 1's federal Complaint (filed 5/27/2025), Plaintiff affirmatively pleads that CHP's post-hoc characterization of the encounter as a 'detention' is 'factually and legally incorrect,' and argues that handcuffing, transport, and chemical-test advisements are 'all indicia of a full custodial arrest' under Dunaway v. New York. In Matters 7 (FAC and original Complaint, USDC), 8 (Sacramento writ petition), and 20 (Alameda writ petition), Plaintiff takes the opposite position: he affirmatively adopts and relies on the CHP Detention Certificate as conclusive, dispositive proof that the event 'ceased to be an arrest as a matter of law,' calling it 'legally equivalent to a judicial finding that no crime was committed' and the basis for voiding the DMV suspension and for U-visa 'false imprisonment' victim status. These are irreconcilable sworn positions on the same historical fact (arrest vs. detention-only), each adopted only when convenient to the forum's legal theory. This is classic impeachment/judicial-estoppel material: opposing counsel in any one matter can quote his sworn pleadings in the others to show he takes whatever position suits the immediate claim.",
       "quotes": {
-        "Matter 1 Complaint \u00b618": "Despite the arrest report reflecting that charges were sought, the California Highway Patrol later issued correspondence characterizing the encounter as a mere 'detention' because no charges were filed by the District Attorney. Plaintiff asserts that this characterization is factually and legally incorrect. He was subjected to handcuffing, placed in the back of a patrol vehicle, transported under guard, and read chemical test advisements \u2014 all indicia of a full custodial arrest within the meaning of Dunaway v. New York, 442 U.S. 200 (1979).",
-        "Matter 7 FAC \u00b62/\u00b667": "The California Highway Patrol ('CHP') formally reclassified the encounter as 'a detention only, not an arrest.' ... By operation of Penal Code sections 849(b)(1), 849(c), and 849.5, the event ceased to be an arrest as a matter of law.",
-        "Matter 8 Petition \u00b62": "By operation of Penal Code sections 849(c) and 849.5, the encounter 'shall not be deemed an arrest, but a detention only.'",
+        "Matter 1 Complaint ¶18": "Despite the arrest report reflecting that charges were sought, the California Highway Patrol later issued correspondence characterizing the encounter as a mere 'detention' because no charges were filed by the District Attorney. Plaintiff asserts that this characterization is factually and legally incorrect. He was subjected to handcuffing, placed in the back of a patrol vehicle, transported under guard, and read chemical test advisements — all indicia of a full custodial arrest within the meaning of Dunaway v. New York, 442 U.S. 200 (1979).",
+        "Matter 7 FAC ¶2/¶67": "The California Highway Patrol ('CHP') formally reclassified the encounter as 'a detention only, not an arrest.' ... By operation of Penal Code sections 849(b)(1), 849(c), and 849.5, the event ceased to be an arrest as a matter of law.",
+        "Matter 8 Petition ¶2": "By operation of Penal Code sections 849(c) and 849.5, the encounter 'shall not be deemed an arrest, but a detention only.'",
         "Matter 20 Petition (Section B heading)": "The Detention Certificate and Statutory Nullification of the Arrest ... By operation of law, the event ceased to be an arrest more than two months before the January 24, 2025 APS hearing."
       }
     },
@@ -86,11 +98,11 @@
       ],
       "severity": "HIGH",
       "category": "sworn_contradiction",
-      "description": "Sworn conflict over when Plaintiff's Centerline Drivers, LLC employment began. Matter 7's original Complaint and First Amended Complaint (both filed in USDC E.D. Cal., signed) repeatedly and specifically allege Plaintiff 'commenced his employment with Centerline Drivers, LLC on October 30, 2024 \u2014 just two days before' the Nov. 1, 2024 encounter, emphasizing the dramatic timing to support the due-process/damages narrative. Matter 20's Verified Petition for Writ of Mandate (signed under penalty of perjury) instead states Plaintiff's Centerline wages are documented on 'twenty-six consecutive weekly pay stubs covering the pay periods from May 5, 2024 through January 3, 2025' \u2014 meaning he has wage records with Centerline from more than five months before the alleged October 30, 2024 start date. Both cannot be literally true as pled; if he only started employment on Oct. 30, 2024, he could not have pay stubs from May 2024, and if pay stubs exist from May 2024, the 'two days before the encounter' framing in Matter 7 is false or misleading.",
+      "description": "Sworn conflict over when Plaintiff's Centerline Drivers, LLC employment began. Matter 7's original Complaint and First Amended Complaint (both filed in USDC E.D. Cal., signed) repeatedly and specifically allege Plaintiff 'commenced his employment with Centerline Drivers, LLC on October 30, 2024 — just two days before' the Nov. 1, 2024 encounter, emphasizing the dramatic timing to support the due-process/damages narrative. Matter 20's Verified Petition for Writ of Mandate (signed under penalty of perjury) instead states Plaintiff's Centerline wages are documented on 'twenty-six consecutive weekly pay stubs covering the pay periods from May 5, 2024 through January 3, 2025' — meaning he has wage records with Centerline from more than five months before the alleged October 30, 2024 start date. Both cannot be literally true as pled; if he only started employment on Oct. 30, 2024, he could not have pay stubs from May 2024, and if pay stubs exist from May 2024, the 'two days before the encounter' framing in Matter 7 is false or misleading.",
       "quotes": {
-        "Matter 7 FAC \u00b63": "He had commenced his employment with Centerline Drivers, LLC on October 30, 2024\u2014just two days before the November 1, 2024 CHP encounter\u2014assigned to the Lily Transportation/Toyota Dedicated route in San Ramon, California.",
-        "Matter 7 FAC \u00b611": "Plaintiff was employed as a professional commercial truck driver by Centerline Drivers, LLC ... with a start date of October 30, 2024\u2014two days before the encounter giving rise to this action.",
-        "Matter 20 Petition \u00b633": "Before the events of November 1, 2024, Petitioner was employed as a commercial truck driver through Centerline Drivers, LLC, earning weekly wages averaging approximately $900 to $2,800 depending on assignment, reflected on twenty-six consecutive weekly pay stubs covering the pay periods from May 5, 2024 through January 3, 2025."
+        "Matter 7 FAC ¶3": "He had commenced his employment with Centerline Drivers, LLC on October 30, 2024—just two days before the November 1, 2024 CHP encounter—assigned to the Lily Transportation/Toyota Dedicated route in San Ramon, California.",
+        "Matter 7 FAC ¶11": "Plaintiff was employed as a professional commercial truck driver by Centerline Drivers, LLC ... with a start date of October 30, 2024—two days before the encounter giving rise to this action.",
+        "Matter 20 Petition ¶33": "Before the events of November 1, 2024, Petitioner was employed as a commercial truck driver through Centerline Drivers, LLC, earning weekly wages averaging approximately $900 to $2,800 depending on assignment, reflected on twenty-six consecutive weekly pay stubs covering the pay periods from May 5, 2024 through January 3, 2025."
       }
     },
     {
@@ -104,9 +116,9 @@
       "category": "sworn_contradiction",
       "description": "Materially different quantifications of the same lost-wage/CDL-suspension harm across three sworn filings, using inconsistent methodologies and totals for what should be one consistent number. Matter 1 gives only a vague range ('$175,000-$450,000+') for '1+ year of lost CDL wages.' Matter 7's FAC computes a detailed base figure of $69,368/year (40 hrs/week x $33.35/hr x 52 weeks) plus add-ons totaling $326,000+ overall (economic + non-economic). Matter 20's Petition instead states wages 'averaging approximately $900 to $2,800 per week' (which would annualize to roughly $46,800-$145,600, i.e., a very different range than the flat $33.35/hr figure) and separately claims 'approximately $112,000' in lost wages for the same one-year suspension period. None of these figures reconcile with each other, and the wage-rate methodology (flat hourly x 40 hrs/week vs. actual pay-stub range averaging $900-$2,800/week) is inconsistent between Matter 7 and Matter 20 even though both purport to rely on the same Centerline employment.",
       "quotes": {
-        "Matter 1 (matters.js damages)": "$175,000 \u2013 $450,000+: 1+ year of lost CDL wages and reduced future earning capacity...",
-        "Matter 7 FAC \u00b639(a)": "Economic damages totaling at least $176,368, comprising: base lost wages of $69,368 for the one-year suspension period (forty hours per week at $33.35 per hour, over fifty-two weeks)...",
-        "Matter 20 Petition \u00b651 (lost wages section)": "Lost wages \u2014 approximately $112,000 and continuing. Petitioner's documented pre-incident earnings ... reflected on twenty-six consecutive weekly Centerline Drivers, LLC pay stubs averaging approximately $900 to $2,800 per week ... place his lost wages during the one-year CDL suspension at approximately $112,000."
+        "Matter 1 (matters.js damages)": "$175,000 – $450,000+: 1+ year of lost CDL wages and reduced future earning capacity...",
+        "Matter 7 FAC ¶39(a)": "Economic damages totaling at least $176,368, comprising: base lost wages of $69,368 for the one-year suspension period (forty hours per week at $33.35 per hour, over fifty-two weeks)...",
+        "Matter 20 Petition ¶51 (lost wages section)": "Lost wages — approximately $112,000 and continuing. Petitioner's documented pre-incident earnings ... reflected on twenty-six consecutive weekly Centerline Drivers, LLC pay stubs averaging approximately $900 to $2,800 per week ... place his lost wages during the one-year CDL suspension at approximately $112,000."
       }
     },
     {
@@ -118,11 +130,11 @@
       ],
       "severity": "LOW",
       "category": "sworn_contradiction",
-      "description": "Minor one-minute discrepancy in the sworn stop time. Matter 1's Complaint (\u00b610) and Matter 8's Petition (\u00b615) both allege the stop occurred 'at approximately 12:54 a.m./00:54 AM.' Matter 7's original Complaint (\u00b617) and FAC (\u00b616, \u00b65(a)) both allege '12:55 a.m.' This is trivial standing alone ('approximately' language covers it), but because later filings anchor legal arguments to precise dashcam timestamps down to the second, a sloppy one-minute drift on the anchor time across sworn pleadings is the kind of small inconsistency opposing counsel could use to suggest carelessness with 'precise' factual claims.",
+      "description": "Minor one-minute discrepancy in the sworn stop time. Matter 1's Complaint (¶10) and Matter 8's Petition (¶15) both allege the stop occurred 'at approximately 12:54 a.m./00:54 AM.' Matter 7's original Complaint (¶17) and FAC (¶16, ¶5(a)) both allege '12:55 a.m.' This is trivial standing alone ('approximately' language covers it), but because later filings anchor legal arguments to precise dashcam timestamps down to the second, a sloppy one-minute drift on the anchor time across sworn pleadings is the kind of small inconsistency opposing counsel could use to suggest carelessness with 'precise' factual claims.",
       "quotes": {
-        "Matter 1 Complaint \u00b610": "On November 1, 2024, at approximately 00:54 AM, Plaintiff was lawfully parked...",
-        "Matter 8 Petition \u00b615": "On November 1, 2024, at approximately 12:54 a.m., Petitioner was lawfully parked on the right shoulder...",
-        "Matter 7 FAC \u00b616": "At approximately 12:55 a.m., CHP Officers Santiago Meza-Gonzalez ... and Jose Melano ... parked behind Plaintiff's vehicle."
+        "Matter 1 Complaint ¶10": "On November 1, 2024, at approximately 00:54 AM, Plaintiff was lawfully parked...",
+        "Matter 8 Petition ¶15": "On November 1, 2024, at approximately 12:54 a.m., Petitioner was lawfully parked on the right shoulder...",
+        "Matter 7 FAC ¶16": "At approximately 12:55 a.m., CHP Officers Santiago Meza-Gonzalez ... and Jose Melano ... parked behind Plaintiff's vehicle."
       }
     },
     {
@@ -132,9 +144,9 @@
       ],
       "severity": "LOW",
       "category": "sworn_contradiction",
-      "description": "Internal arithmetic error, repeated verbatim: Matter 7's FAC states the dashcam audio activated at 00:55:37 and that Officer Melano's 'I think it's booze' remark came at 00:56:09, then labels this gap as 'approximately fourteen seconds' \u2014 but 00:56:09 minus 00:55:37 is 32 seconds, not 14. The 'fourteen seconds' framing also appears in Matter 1's narrative description of the same moment. This is not a cross-matter contradiction (the same error recurs consistently) but is a checkable, sworn misstatement of the objective dashcam timeline that a motivated opposing party could use to undercut the precision Plaintiff claims for his second-by-second dashcam analysis.",
+      "description": "Internal arithmetic error, repeated verbatim: Matter 7's FAC states the dashcam audio activated at 00:55:37 and that Officer Melano's 'I think it's booze' remark came at 00:56:09, then labels this gap as 'approximately fourteen seconds' — but 00:56:09 minus 00:55:37 is 32 seconds, not 14. The 'fourteen seconds' framing also appears in Matter 1's narrative description of the same moment. This is not a cross-matter contradiction (the same error recurs consistently) but is a checkable, sworn misstatement of the objective dashcam timeline that a motivated opposing party could use to undercut the precision Plaintiff claims for his second-by-second dashcam analysis.",
       "quotes": {
-        "Matter 7 FAC \u00b617(a),(e)": "(a) 00:55:37 \u2014 Audio recording activates as the CHP vehicle comes to a stop. ... (e) 00:56:09 \u2014 Officer Melano: 'I think it's booze.' (Significance: approximately fourteen seconds after audio activation, before any welfare assessment...)"
+        "Matter 7 FAC ¶17(a),(e)": "(a) 00:55:37 — Audio recording activates as the CHP vehicle comes to a stop. ... (e) 00:56:09 — Officer Melano: 'I think it's booze.' (Significance: approximately fourteen seconds after audio activation, before any welfare assessment...)"
       }
     },
     {
@@ -146,9 +158,9 @@
       ],
       "severity": "MEDIUM",
       "category": "sworn_contradiction",
-      "description": "Shifting/incomplete explanation for why Plaintiff appeared to exhibit possible impairment cues. Matter 1's Complaint attributes his roadside rest to 'feeling fatigued following a long night of social activity' (consistent with his commercial-driver training to pull over rather than drive fatigued) and never mentions any medical condition. Matter 7's FAC and Matter 20's Petition drop all reference to 'a long night of social activity' and instead introduce, for the first time, that Plaintiff 'is pre-diabetic,' a condition said to 'physiologically produce signs mimicking alcohol intoxication.' The two explanations are not mutually exclusive, but the complete disappearance of the 'long night of social activity' detail \u2014 replaced by a new, previously-unmentioned medical explanation \u2014 in the later, more legally aggressive filings is the kind of narrative drift that could be highlighted as tailoring facts to the theory needed in each forum.",
+      "description": "Shifting/incomplete explanation for why Plaintiff appeared to exhibit possible impairment cues. Matter 1's Complaint attributes his roadside rest to 'feeling fatigued following a long night of social activity' (consistent with his commercial-driver training to pull over rather than drive fatigued) and never mentions any medical condition. Matter 7's FAC and Matter 20's Petition drop all reference to 'a long night of social activity' and instead introduce, for the first time, that Plaintiff 'is pre-diabetic,' a condition said to 'physiologically produce signs mimicking alcohol intoxication.' The two explanations are not mutually exclusive, but the complete disappearance of the 'long night of social activity' detail — replaced by a new, previously-unmentioned medical explanation — in the later, more legally aggressive filings is the kind of narrative drift that could be highlighted as tailoring facts to the theory needed in each forum.",
       "quotes": {
-        "Matter 1 Complaint \u00b610": "Plaintiff had chosen to pull over out of an abundance of caution after feeling fatigued following a long night of social activity, consistent with his professional training as a commercial truck driver...",
+        "Matter 1 Complaint ¶10": "Plaintiff had chosen to pull over out of an abundance of caution after feeling fatigued following a long night of social activity, consistent with his professional training as a commercial truck driver...",
         "Matter 7 FAC (key_facts)": "Plaintiff is pre-diabetic, a condition that can physiologically produce signs mimicking alcohol intoxication: red/watery eyes, balance impairment, and altered time perception."
       }
     },
@@ -162,10 +174,10 @@
       "category": "sworn_contradiction",
       "description": "The core financial-conflict-of-interest figure (HOPE's annual per-parolee revenue from group/CTM fees) changed between Plaintiff's own verified, sworn pleadings without explanation or reconciliation, and remains unsupported by any document produced in discovery to date. Matter 6's original Complaint (Doc 1, filed Jan. 22, 2026, verified under penalty of perjury Jan. 19, 2026) computes 'approximately $9,690 annually' from a single source -- Alameda County Contract No. 901843/27270 -- using an explicit calculation ($85/group session x ~104 sessions/year, plus $85/CTM x 2 CTMs/year staffed for 5 participants). Matter 6's First Amended Complaint (Doc 4, filed Feb. 20, 2026, verified Feb. 17, 2026) -- only about a month later -- restates the billing-rate evidence as broader ranges ($75-$100/group, $130-$200/individual, $450-$600/polygraph, $1,000/psychosexual eval) sourced from THREE contracts (Procurement Contract No. 18262, Contract No. 901843/27270, and Master Contract No. 901949) and asserts, without showing the underlying math, that the same fact pattern 'generates approximately $10,600 per year in baseline fees alone.' The $10,600 figure (not $9,690) is then repeated verbatim in Matter 5's FAC (filed Apr. 22, 2026) as the basis for the fraud/financial-incentive theory. Per matters.js's own procedural_status notes for Matter 5, no document produced in discovery as of July 2026 supports either the $10,600 or the $9,690 figure or any CDCR billing/incentive data at all -- this is flagged internally as 'a discovery-compulsion target.' The unexplained ~9.4% increase between two sworn complaints in the same case, combined with the shift from a single contract with shown arithmetic to multiple contracts with no shown arithmetic, is the kind of internal inconsistency defense counsel (already arguing 'AI hallucination' of quoted regulatory language in the Matter 5 demurrer reply) would highlight to attack Plaintiff's factual reliability on the central financial-conflict allegation common to Matters 5 and 6.",
       "quotes": {
-        "matter_6_original_complaint_p7": "A single parolee attending two group sessions per week (approximately 104 group sessions annually) and two Containment Team Meetings per year\u2014each CTM billed at $85 per client staffed for five CTM participants\u2014generates approximately $9,690 annually in group and CTM fees alone.",
+        "matter_6_original_complaint_p7": "A single parolee attending two group sessions per week (approximately 104 group sessions annually) and two Containment Team Meetings per year—each CTM billed at $85 per client staffed for five CTM participants—generates approximately $9,690 annually in group and CTM fees alone.",
         "matter_6_FAC_p6": "Based on documented billing rates, a single parolee attending two weekly group sessions and two annual CTMs generates approximately $10,600 per year in baseline fees alone.",
         "matter_5_FAC_p5": "HOPE's continuation of the policy is driven by financial incentive: each retained parolee generates approximately $10,600 annually in baseline group and CTM revenue; there is no fee for completion; discharge terminates the revenue.",
-        "matters_js_matter_5_procedural_status": "No document produced to date supports the ~$10,600/year per-client revenue figure or any CDCR billing/incentive structure \u2014 that evidence, if it exists, has not yet been produced and should be a discovery-compulsion target."
+        "matters_js_matter_5_procedural_status": "No document produced to date supports the ~$10,600/year per-client revenue figure or any CDCR billing/incentive structure — that evidence, if it exists, has not yet been produced and should be a discovery-compulsion target."
       }
     },
     {
@@ -179,7 +191,7 @@
       "description": "Matter 3's First Amended Complaint (verified Jan. 12, 2026) pleads a specific factual event -- Derrick and Palacios jointly revoking Plaintiff's standard 10-minute HOPE grace period -- and dates it 'in or about early April 2025' (paras. 23-26 of Doc 5), with the quote 'You are clearly abusing the 10-minute as an excuse to show up late.' This same event is central evidence in Matter 5, where HOPE's own produced business records (collateral notes, Bates HOPE_000190) date the grace-period revocation to February 20, 2025 -- roughly six weeks earlier than pled. This is not a hypothetical: matters.js's own Matter 5 entry already flags it as 'a discrepancy to reconcile before further briefing,' meaning Plaintiff's own documentary evidence in one case contradicts the specific date sworn to in another case's live, operative pleading. Because both the original Matter 3 Complaint and its FAC are verified under penalty of perjury, and the Matter 3 MTD is currently under submission, this date discrepancy is a live, unresolved sworn-statement inconsistency that opposing counsel (SLB, which represents defendants across Matters 3, 5, and 6 and has already signaled cross-case damages arguments) could use to impeach the FAC's factual precision if it surfaces in discovery or at trial.",
       "quotes": {
         "matter_3_FAC_p6": "In or about early April 2025, Defendant Derrick informed Plaintiff that the 10-minute grace period was being removed, stating: \"You are clearly abusing the 10-minute as an excuse to show up late.\"",
-        "matters_js_matter_5_procedural_status": "Collateral notes document a custody gap from Nov. 1\u201312, 2024 (Bates HOPE_000184-186) ... and date the grace-period revocation to Feb. 20, 2025 (Bates HOPE_000190) rather than April 2025 as pled in the FAC \u2014 a discrepancy to reconcile before further briefing."
+        "matters_js_matter_5_procedural_status": "Collateral notes document a custody gap from Nov. 1–12, 2024 (Bates HOPE_000184-186) ... and date the grace-period revocation to Feb. 20, 2025 (Bates HOPE_000190) rather than April 2025 as pled in the FAC — a discrepancy to reconcile before further briefing."
       }
     },
     {
@@ -190,10 +202,10 @@
       ],
       "severity": "MEDIUM",
       "category": "sworn_contradiction",
-      "description": "Agent Derrick's degree of engagement with Plaintiff is characterized very differently across the two federal cases in which he is named. In Matter 3 (First Amendment retaliation), Derrick is portrayed as an actively engaged, retaliatory supervisor who personally threatened Plaintiff ('You do not have freedom of speech. Not in HOPE group you don't.'), jointly revoked the grace period, gave a negative oral CTM report focused on Plaintiff's speech, escalated supervision from monthly to twice-monthly visits, required PACT-meeting attendance atypical for his tenure, and confronted Plaintiff over a Form 22 reassignment request ('You're just finding something to complain about, huh?'). In Matter 6's original Complaint (due-process claim over the Nov. 2025 discharge review), Derrick is instead characterized as procedurally derelict and largely absent from his duties: 'Agent Derrick failed to initiate CTMs or complete Form 3043, as required by 15 CCR \u00a7 3574, directly causing the procedural void' (paras. 21, 84). These two portraits -- a hands-on retaliator closely monitoring and punishing Plaintiff's speech versus an agent who failed to perform basic required oversight functions -- are in some tension, though not strictly irreconcilable (an agent could retaliate informally while skipping required paperwork). Worth tightening so the two theories do not read as describing two different people.",
+      "description": "Agent Derrick's degree of engagement with Plaintiff is characterized very differently across the two federal cases in which he is named. In Matter 3 (First Amendment retaliation), Derrick is portrayed as an actively engaged, retaliatory supervisor who personally threatened Plaintiff ('You do not have freedom of speech. Not in HOPE group you don't.'), jointly revoked the grace period, gave a negative oral CTM report focused on Plaintiff's speech, escalated supervision from monthly to twice-monthly visits, required PACT-meeting attendance atypical for his tenure, and confronted Plaintiff over a Form 22 reassignment request ('You're just finding something to complain about, huh?'). In Matter 6's original Complaint (due-process claim over the Nov. 2025 discharge review), Derrick is instead characterized as procedurally derelict and largely absent from his duties: 'Agent Derrick failed to initiate CTMs or complete Form 3043, as required by 15 CCR § 3574, directly causing the procedural void' (paras. 21, 84). These two portraits -- a hands-on retaliator closely monitoring and punishing Plaintiff's speech versus an agent who failed to perform basic required oversight functions -- are in some tension, though not strictly irreconcilable (an agent could retaliate informally while skipping required paperwork). Worth tightening so the two theories do not read as describing two different people.",
       "quotes": {
         "matter_3_FAC_p5-9": "At their first meeting, Defendant Derrick stated that Plaintiff's speech in HOPE group was \"disruptive\" and warned Plaintiff that \"it would not be good for you if you didn't stop.\" ... \"You do not have freedom of speech. Not in HOPE group you don't.\"",
-        "matter_6_original_complaint_p4_and_p14": "Agent Derrick had direct responsibility for: (a) initiating timely Containment Team Meetings ... Agent Derrick failed to initiate CTMs or complete Form 3043, as required by 15 CCR \u00a7 3574, directly causing the procedural void."
+        "matter_6_original_complaint_p4_and_p14": "Agent Derrick had direct responsibility for: (a) initiating timely Containment Team Meetings ... Agent Derrick failed to initiate CTMs or complete Form 3043, as required by 15 CCR § 3574, directly causing the procedural void."
       }
     },
     {
@@ -203,7 +215,7 @@
       ],
       "severity": "LOW",
       "category": "documentation_gap",
-      "description": "Matter 4 (San Joaquin Superior Court state-law mirror of Matter 3) has no uploaded pleadings in the repository (documents: []), so its factual allegations cannot be checked against the actual filed complaint -- only against the matters.js summary. That summary appears facially consistent with Matter 3 (same Derrick speech-suppression threat, same FedEx economic-interference theory, same Noguchi negligent-supervision theory), and the matter is marked 'NOT PURSUING \u2014 Voluntarily Dismissed,' which reduces practical exposure. This is flagged as a documentation gap, not a discovered contradiction: if Matter 4 is ever refiled or revived, its complaint should be checked directly against Matter 3's FAC for the same date-specific details (especially the April 2025 vs. Feb. 20, 2025 grace-period date issue noted above), since it pleads the same underlying facts under different causes of action.",
+      "description": "Matter 4 (San Joaquin Superior Court state-law mirror of Matter 3) has no uploaded pleadings in the repository (documents: []), so its factual allegations cannot be checked against the actual filed complaint -- only against the matters.js summary. That summary appears facially consistent with Matter 3 (same Derrick speech-suppression threat, same FedEx economic-interference theory, same Noguchi negligent-supervision theory), and the matter is marked 'NOT PURSUING — Voluntarily Dismissed,' which reduces practical exposure. This is flagged as a documentation gap, not a discovered contradiction: if Matter 4 is ever refiled or revived, its complaint should be checked directly against Matter 3's FAC for the same date-specific details (especially the April 2025 vs. Feb. 20, 2025 grace-period date issue noted above), since it pleads the same underlying facts under different causes of action.",
       "quotes": {
         "matters_js_matter_4": "State law parallel to Matter 3. Bane Act claim based on Derrick's speech suppression threats and witness intimidation. Intentional and negligent economic interference: documented FedEx relationship ($20/hr) destroyed."
       }
@@ -338,10 +350,10 @@
       ],
       "severity": "LOW",
       "category": "recordkeeping_error",
-      "description": "matters.js's 'causes' array for Matter 14 lists only 4 causes of action (False Imprisonment, Bane Act, IIED, Negligent Supervision), while the actual filed complaint pleads 9 counts, including Writ of Mandate (CCP \u00a71085), Declaratory Relief, Injunctive Relief, California Constitution Article I \u00a713, and California Constitution Article I \u00a77 -- all omitted from the causes list even though the 'claims' field does mention 'Writ of Mandate.' This is an incomplete summary rather than a false one, but it understates the scope of relief actually sought in the verified pleading.",
+      "description": "matters.js's 'causes' array for Matter 14 lists only 4 causes of action (False Imprisonment, Bane Act, IIED, Negligent Supervision), while the actual filed complaint pleads 9 counts, including Writ of Mandate (CCP §1085), Declaratory Relief, Injunctive Relief, California Constitution Article I §13, and California Constitution Article I §7 -- all omitted from the causes list even though the 'claims' field does mention 'Writ of Mandate.' This is an incomplete summary rather than a false one, but it understates the scope of relief actually sought in the verified pleading.",
       "quotes": {
-        "matters.js Matter 14 causes": "[\"False Imprisonment\", \"Bane Act (Civ. Code \u00a752.1)\", \"IIED\", \"Negligent Supervision (against CDCR)\"]",
-        "Actual Matter 14 complaint caption causes list": "(1) Writ of Mandate (CCP \u00a7 1085); (2) Declaratory Relief (CCP \u00a7 1060); (3) Injunctive Relief; (4) Violation of Cal. Const. Art. I, \u00a7 13; (5) Violation of Cal. Const. Art. I, \u00a7 7; (6) Tom Bane Civil Rights Act (Civ. Code \u00a7 52.1); (7) False Imprisonment; (8) Intentional Infliction of Emotional Distress; (9) Negligent Violation of Mandatory Duty (Gov. Code \u00a7 815.6)."
+        "matters.js Matter 14 causes": "[\"False Imprisonment\", \"Bane Act (Civ. Code §52.1)\", \"IIED\", \"Negligent Supervision (against CDCR)\"]",
+        "Actual Matter 14 complaint caption causes list": "(1) Writ of Mandate (CCP § 1085); (2) Declaratory Relief (CCP § 1060); (3) Injunctive Relief; (4) Violation of Cal. Const. Art. I, § 13; (5) Violation of Cal. Const. Art. I, § 7; (6) Tom Bane Civil Rights Act (Civ. Code § 52.1); (7) False Imprisonment; (8) Intentional Infliction of Emotional Distress; (9) Negligent Violation of Mandatory Duty (Gov. Code § 815.6)."
       }
     },
     {
@@ -353,11 +365,11 @@
       ],
       "severity": "HIGH",
       "category": "sworn_contradiction",
-      "description": "Matter 24's verified federal complaint (Newanforbi v. Serrato, N.D. Cal. 4:26-cv-05953-ASK, signed under penalty of perjury June 12, 2026, filed June 17, 2026) contains a 'RELATED ACTIONS' section (paragraphs 11-12) that lists only two related actions (the Meza-Gonzalez state tort action, Alameda Sup. Ct. No. 26CV168913 = Matter 2, and the E.D. Cal. federal civil-rights action, Case No. 2:25-CV-01460-DC-CSK = Matter 13/related) and then affirmatively swears: 'Neither related action asserts any claim against Captain Serrato. Neither related action challenges the April 20, 2026 denial of the U Visa certification request... This action raises no claims that duplicate or overlap with the related actions.' This is contradicted by the portfolio's own matters.js: (1) Matter 20 (Newanforbi v. California Highway Patrol, et al., Alameda Sup. Ct. No. 26CV191136) was already filed and pending as of May 29, 2026 (three weeks before Matter 24 was filed), names 'G. Serrato, Captain and Commander CHP Dublin Area' individually as a defendant, and seeks a Writ of Mandate under PC \u00a7679.10 to compel the identical U-Visa certification -- yet it is entirely omitted from Matter 24's related-actions disclosure. (2) Matter 2 (26CV168913), which IS listed in Matter 24 but described only by its tort causes of action (false imprisonment, battery, Bane Act), also has a fully-briefed 'U-Visa Certification Motion' pending in that same case with a hearing set for June 18, 2026 -- the day after Matter 24 was filed -- yet Matter 24's sworn statement that 'no related action challenges the ... U Visa certification denial' does not mention this motion at all. The combined effect is a sworn representation to a federal court that appears materially incomplete or false regarding directly overlapping, concurrently pending litigation against the same defendant over the identical certification decision -- a serious duplicative-litigation / candor-to-the-court / claim-splitting exposure that opposing counsel or the court could raise sua sponte (and a Rule 11/perjury-adjacent problem given the verification).",
+      "description": "Matter 24's verified federal complaint (Newanforbi v. Serrato, N.D. Cal. 4:26-cv-05953-ASK, signed under penalty of perjury June 12, 2026, filed June 17, 2026) contains a 'RELATED ACTIONS' section (paragraphs 11-12) that lists only two related actions (the Meza-Gonzalez state tort action, Alameda Sup. Ct. No. 26CV168913 = Matter 2, and the E.D. Cal. federal civil-rights action, Case No. 2:25-CV-01460-DC-CSK = Matter 13/related) and then affirmatively swears: 'Neither related action asserts any claim against Captain Serrato. Neither related action challenges the April 20, 2026 denial of the U Visa certification request... This action raises no claims that duplicate or overlap with the related actions.' This is contradicted by the portfolio's own matters.js: (1) Matter 20 (Newanforbi v. California Highway Patrol, et al., Alameda Sup. Ct. No. 26CV191136) was already filed and pending as of May 29, 2026 (three weeks before Matter 24 was filed), names 'G. Serrato, Captain and Commander CHP Dublin Area' individually as a defendant, and seeks a Writ of Mandate under PC §679.10 to compel the identical U-Visa certification -- yet it is entirely omitted from Matter 24's related-actions disclosure. (2) Matter 2 (26CV168913), which IS listed in Matter 24 but described only by its tort causes of action (false imprisonment, battery, Bane Act), also has a fully-briefed 'U-Visa Certification Motion' pending in that same case with a hearing set for June 18, 2026 -- the day after Matter 24 was filed -- yet Matter 24's sworn statement that 'no related action challenges the ... U Visa certification denial' does not mention this motion at all. The combined effect is a sworn representation to a federal court that appears materially incomplete or false regarding directly overlapping, concurrently pending litigation against the same defendant over the identical certification decision -- a serious duplicative-litigation / candor-to-the-court / claim-splitting exposure that opposing counsel or the court could raise sua sponte (and a Rule 11/perjury-adjacent problem given the verification).",
       "quotes": {
         "matter_24_complaint_para_11_12": "Plaintiff discloses the following related pending actions arising from the same underlying incident of November 1, 2024, but asserting distinct claims not at issue in this action: a. Newanforbi v. Meza-Gonzalez, et al., ... b. Newanforbi v. State of California, et al., ... Neither related action asserts any claim against Captain Serrato. Neither related action challenges the April 20, 2026 denial of the U Visa certification request. Neither related action seeks the declaratory or injunctive relief sought here -- namely, an order compelling execution of Form I-918, Supplement B. This action is limited to the certification denial and raises no claims that duplicate or overlap with the related actions.",
-        "matters_js_matter_20": "number: 20, caption: 'Newanforbi v. California Highway Patrol, et al.', case_no: '26CV191136', ... claims: 'Writ of Mandate (CCP \u00a71085; PC \u00a7679.10) \u2014 U Visa Certification; Declaratory Relief (CCP \u00a71060)' ... filed: 'May 29, 2026' ... defendants: 'California Highway Patrol; G. Serrato, Captain and Commander CHP Dublin Area; Gary Paul, Lieutenant CHP Dublin Area; Eric Dutra, Sergeant CHP Dublin Area; DOES 1-10'",
-        "matters_js_matter_2_status": "status: 'STAYED \u2014 Stipulation for Stay filed Apr. 14, 2026; U-Visa Certification Motion briefed (Opp. June 5, 2026; Reply June 8, 2026); hearing June 18, 2026 at 2:30 p.m. (Dept. 518)'"
+        "matters_js_matter_20": "number: 20, caption: 'Newanforbi v. California Highway Patrol, et al.', case_no: '26CV191136', ... claims: 'Writ of Mandate (CCP §1085; PC §679.10) — U Visa Certification; Declaratory Relief (CCP §1060)' ... filed: 'May 29, 2026' ... defendants: 'California Highway Patrol; G. Serrato, Captain and Commander CHP Dublin Area; Gary Paul, Lieutenant CHP Dublin Area; Eric Dutra, Sergeant CHP Dublin Area; DOES 1-10'",
+        "matters_js_matter_2_status": "status: 'STAYED — Stipulation for Stay filed Apr. 14, 2026; U-Visa Certification Motion briefed (Opp. June 5, 2026; Reply June 8, 2026); hearing June 18, 2026 at 2:30 p.m. (Dept. 518)'"
       }
     },
     {
@@ -382,22 +394,262 @@
       ],
       "severity": "LOW",
       "category": "clean",
-      "description": "No material inconsistency found in the legal-theory framing between Matter 22's actual filed complaint (Pilot Travel Centers) and Matter 23's matters.js key_facts narrative (Macy's, no complaint ever filed). Both describe the identical statutory architecture in the same way: PC \u00a7290.46(j)(2)(E) as a categorical, exception-free prohibition on using registry information for employment purposes; the narrow (j)(1) 'protect a person at risk' exception as inapplicable to ordinary retail/travel-center positions; the same FCRA/ICRAA/UCL/Tameny wrongful-termination theory stack; and the same 'sophisticated Fortune 500 employer received an explicit statutory warning in the background-check vendor's report and proceeded anyway' aggravating narrative. The factual differences between the two (Matter 22: hired, worked 15 days, then terminated based on a completed Checkr 'Consider' report; Matter 23: job offer only, background check still pending/'Managed Adjudication 3.0: Pending' at the offer stage, no termination because Plaintiff never started) are exactly the kind of differences that should exist between two independent factual events, and matters.js itself expressly flags this distinction ('Unlike Matter 22 ... Matter 23 involves attempted prevention of employment at the offer stage'). Matter 23's key_facts is explicitly framed as anticipatory/predictive ('Macy's is expected to issue a Post-Adverse Action Notice...', 'If Macy's rejects the offer...') rather than as an adjudicated fact, which is consistent with its status of 'NOT PURSUING \u2014 Voluntarily Dismissed' and 'No complaint filed yet' -- i.e., the anticipated adverse action apparently never materialized into a viable claim, and the hedged language in matters.js accurately reflects that a complaint was never filed. No sworn or inconsistent factual claims were identified.",
+      "description": "No material inconsistency found in the legal-theory framing between Matter 22's actual filed complaint (Pilot Travel Centers) and Matter 23's matters.js key_facts narrative (Macy's, no complaint ever filed). Both describe the identical statutory architecture in the same way: PC §290.46(j)(2)(E) as a categorical, exception-free prohibition on using registry information for employment purposes; the narrow (j)(1) 'protect a person at risk' exception as inapplicable to ordinary retail/travel-center positions; the same FCRA/ICRAA/UCL/Tameny wrongful-termination theory stack; and the same 'sophisticated Fortune 500 employer received an explicit statutory warning in the background-check vendor's report and proceeded anyway' aggravating narrative. The factual differences between the two (Matter 22: hired, worked 15 days, then terminated based on a completed Checkr 'Consider' report; Matter 23: job offer only, background check still pending/'Managed Adjudication 3.0: Pending' at the offer stage, no termination because Plaintiff never started) are exactly the kind of differences that should exist between two independent factual events, and matters.js itself expressly flags this distinction ('Unlike Matter 22 ... Matter 23 involves attempted prevention of employment at the offer stage'). Matter 23's key_facts is explicitly framed as anticipatory/predictive ('Macy's is expected to issue a Post-Adverse Action Notice...', 'If Macy's rejects the offer...') rather than as an adjudicated fact, which is consistent with its status of 'NOT PURSUING — Voluntarily Dismissed' and 'No complaint filed yet' -- i.e., the anticipated adverse action apparently never materialized into a viable claim, and the hedged language in matters.js accurately reflects that a complaint was never filed. No sworn or inconsistent factual claims were identified.",
+      "quotes": {}
+    },
+    {
+      "group": "A",
+      "matters": [
+        20,
+        24
+      ],
+      "severity": "HIGH",
+      "category": "disclosure_gap",
+      "description": "Matter 24's complaint (filed June 17, 2026, after Matter 20 already existed) lists only two related actions and swears 'no claims that duplicate or overlap with the related actions' — omitting Matter 20 entirely. This is not mutual silence: Matter 20's own July 13, 2026 Request for Judicial Notice affirmatively describes Matter 24 as 'the related federal action' and both matters concede they challenge the identical April 20, 2026 certification denial. The litigant treats the relationship as real when it helps (citing Matter 24's IFP order as persuasive authority in Matter 20) and denies it when candor would create a duplicative-litigation problem for Matter 24. Uncured as of 2026-07-26. CURED (partially): matters.js's Matter 24 entry now carries an explicit 'UNRESOLVED DISCLOSURE GAP' note flagging this for corrective supplemental disclosure to the N.D. Cal. court; the underlying court filing itself has not been amended.",
+      "quotes": {
+        "Matter 24 procedural_status (as filed)": "Related pending actions disclosed in complaint: (a) Newanforbi v. Meza-Gonzalez... (b) Newanforbi v. State of California... This action limited to certification denial; no claims duplicate or overlap with related actions.",
+        "Matter 20 RJN, July 13, 2026 (per Matter 24's own CROSS-MATTER LEVERAGE paragraph)": "via the Request for Judicial Notice (Exhibit A) filed July 13, 2026... on the ground that this order screened and found sufficient a complaint arising from the same underlying incident and the same April 20, 2026 certification denial at issue in that Petition."
+      }
+    },
+    {
+      "group": "A",
+      "matters": [
+        7,
+        24
+      ],
+      "severity": "MEDIUM",
+      "category": "citation_error",
+      "description": "Matter 24's 'CROSS-MATTER LEVERAGE' paragraph — which exists specifically to track the four-matter citation web built on its own IFP order — states Matter 7's Notice of Supplemental Authority was filed 'the same day, July 7, 2026' as Matter 1's. Matter 7's own record shows this date was later corrected: the actual filing was July 9, 2026 (Document 9), and Matter 7's own text explicitly notes it 'corrects the July 7, 2026 date previously on record, which was assumed to match the identical filing in Matter 1.' Matter 7 caught and fixed its own error; Matter 24's summary of the chain was never updated to match, so anyone relying on Matter 24's account would misstate Matter 7's actual filing date. CURED: matters.js's Matter 24 entry now reads 'ELECTRONICALLY FILED July 9, 2026 (Document 9) — corrected from an initially assumed July 7 date; see Matter 7.'",
+      "quotes": {
+        "Matter 24 (before correction)": "Matter 7 (Newanforbi v. Candelaria...), via an identical Notice of Supplemental Authority filed the same day, July 7, 2026",
+        "Matter 7 (own record)": "Notice of Supplemental Authority electronically filed July 9, 2026 (Document 9, per the court-stamped copy — corrects the July 7, 2026 date previously on record, which was assumed to match the identical filing in Matter 1)"
+      }
+    },
+    {
+      "group": "A",
+      "matters": [
+        1,
+        7,
+        24
+      ],
+      "severity": "MEDIUM",
+      "category": "recordkeeping_error",
+      "description": "Matter 24 characterizes Matters 1 and 7 as 'additionally cross-citing each other's Magistrate F&Rs.' The record only supports a one-directional relationship: Matter 7's F&R (Mag. Kim) cites Matter 1's F&R as supporting grounds, and Matter 7's own Notice of Supplemental Authority discusses that reference — but Matter 1's own procedural_status never mentions citing or discussing Matter 7's F&R (which did not issue until after Matter 1's own Objections were filed). 'Cross-citing' overstates reciprocal reliance that doesn't yet exist on this record. CURED: matters.js's Matter 24 entry now describes this as 'Matter 7 citing Matter 1's Magistrate F&R (Matter 1's own record does not yet reflect a reciprocal citation back to Matter 7, so this is a one-directional relationship, not mutual cross-citing).'",
+      "quotes": {}
+    },
+    {
+      "group": "A",
+      "matters": [
+        1,
+        7,
+        24
+      ],
+      "severity": "MEDIUM",
+      "category": "preclusion_risk",
+      "description": "The 'four-matter chain' argument in Matter 24 rests on Matter 7's F&R, which itself relies on Matter 1's F&R 'as supporting grounds' — but both F&Rs remain unadopted recommendations pending District Judge review on Objections as of this writing. If the District Judge in Matter 1 rejects that F&R, the premise Magistrate Kim relied on in Matter 7 disappears retroactively, weakening the entire chain built on Matter 24's favorable IFP screening order. This sequencing risk was not flagged anywhere before this pass. CURED: matters.js's Matter 24 entry now includes a 'NOTE ON FOUNDATION STRENGTH' paragraph making this dependency explicit.",
+      "quotes": {}
+    },
+    {
+      "group": "A",
+      "matters": [
+        1,
+        2,
+        7,
+        20
+      ],
+      "severity": "HIGH",
+      "category": "claim_overlap",
+      "description": "Four separate pending dockets (two federal — Matters 1 and 7 — and two state — Matters 2 and 20) each independently claim damages traceable to the same indivisible harm: the one-year CDL suspension arising from the Nov. 1, 2024 incident. Only Matter 8, among this cluster, contains reservation language ('Monetary consequential damages reserved for federal action, 2:26-cv-00983-DC-CSK') preventing double recovery. Matters 1, 2, 7, and 20 contain no offset, reservation, or no-double-recovery language of any kind. CURED: matters.js's damages fields for Matters 1, 2, 7, and 20 now each carry a bracketed [FLAGGED] note cross-referencing the other three and noting the absence of coordinating language.",
+      "quotes": {}
+    },
+    {
+      "group": "A",
+      "matters": [
+        20
+      ],
+      "severity": "MEDIUM",
+      "category": "recordkeeping_error",
+      "description": "Matter 20's own structured serviceTracking array marks Defendant Serrato 'served: false, dateServed: null,' while that same matter's prose separately states 'Summons on Petition served on respondents (Serrato, Paul, Dutra, and CHP)' on June 3, 2026 — a direct internal contradiction within the same matter record about whether the same individual defendant has been served. Not yet corrected in this pass; flagged for the litigant's own reconciliation since it affects answer-deadline and default calculations.",
+      "quotes": {}
+    },
+    {
+      "group": "B",
+      "matters": [
+        6,
+        28
+      ],
+      "severity": "HIGH",
+      "category": "disclosure_gap",
+      "description": "Matter 6 (federal, HOPE + Macomber, same ~$10,600/parolee structural-conflict theory) was voluntarily dismissed without prejudice May 21, 2026 — one day after HOPE's own counsel (SLB) appeared and identified Matters 3 and 6 as related via a Notice of Related Cases (ECF No. 5) — with refiling expressly preserved. Matter 28, filed later against the same HOPE entity (plus its CEO) on a Monell/RICO theory recomputing essentially the same per-parolee figure over a longer horizon, is a plausible refiling of Matter 6's theory. Matter 28's own procedural_status carefully discloses Matter 5 (the state case) to Judge Cisneros for preclusion purposes, but nowhere mentions Matter 6 — despite SLB having already put a federal judge on notice of a Matter 3/6 relationship once before. CURED: matters.js's Matter 28 entry now carries an explicit 'UNRESOLVED DISCLOSURE GAP' paragraph naming Matter 6 and recommending a corrective disclosure.",
+      "quotes": {
+        "Matter 6 (own record)": "HOPE appeared through SLB... via Notice of Related Cases (ECF No. 5, May 20, 2026) — identifying related cases: Matter 3 (Derrick, 2:26-cv-0004) and this matter — the first and only paper served by any defendant."
+      }
+    },
+    {
+      "group": "B",
+      "matters": [
+        3,
+        15,
+        30
+      ],
+      "severity": "HIGH",
+      "category": "claim_overlap",
+      "description": "The same June 29, 2026 retaliatory-transfer order (reported/executed July 2, 2026) is pled with two different, uncross-referenced causal narratives. Matters 3 and 15 attribute it to institutional retaliation by 'Stockton parole' / Noguchi's unit, tied to the filing of Matter 15 naming Noguchi. Matter 30 attributes the same event to Agent Moua's personal decision, driven by a fabricated telehealth violation, without describing Noguchi's institutional role in that framing (though Noguchi appears elsewhere in Matter 30 as a reserved potential DOE defendant). The two framings aren't mutually exclusive, but a factfinder crediting one causal story in one forum could undercut the other's theory, and none of the three matters cross-references this. CURED: matters.js's Matter 30 entry now explicitly notes the diverging causal accounts and cross-references Matters 3 and 15.",
+      "quotes": {}
+    },
+    {
+      "group": "B",
+      "matters": [
+        3,
+        30
+      ],
+      "severity": "MEDIUM",
+      "category": "preclusion_risk",
+      "description": "Matter 30 reserves Gary Noguchi as a potential future DOE-amendment defendant on a supervisory-liability theory. Matter 3's July 24, 2026 order already dismissed a supervisory-liability theory against this same Noguchi 'for lack of supervisory-liability allegations under Hansen v. Black' (with leave to amend, and in evident tension with Plaintiff's own July 22, 2026 self-executing voluntary dismissal of Noguchi from that same action). Neither ruling forecloses a differently-pleaded theory, but any future amendment naming Noguchi in Matter 30 should address the Hansen v. Black pleading gap Matter 3 already identified, rather than repeat it. CURED: matters.js's Matter 30 entry now carries a 'FLAGGED RISK FOR THAT RESERVATION' note making this explicit.",
+      "quotes": {}
+    },
+    {
+      "group": "B",
+      "matters": [
+        9,
+        10,
+        11,
+        15,
+        19,
+        30
+      ],
+      "severity": "MEDIUM",
+      "category": "disclosure_gap",
+      "description": "Matter 30's key_facts describe Moua as having 'authored the Nov. 14, 2025 CDCR Form 1502-DR... judicially questioned by Sacramento County Superior Court' — the identical instrument whose facial defects are the entire subject of the discharge-review cluster (Matters 9, 10, 11, 15, 19). Matter 30 discloses no relatedness to any of them, even though Matter 19's pending habeas ruling could adjudicate the validity of that same 1502-DR in a way bearing directly on Matter 30's characterization of it. CURED: matters.js's Matter 30 entry now cross-references Matter 19 and the discharge-review cluster explicitly.",
+      "quotes": {}
+    },
+    {
+      "group": "C",
+      "matters": [
+        19
+      ],
+      "severity": "LOW",
+      "category": "recordkeeping_error",
+      "description": "Matter 19's key_facts still describes itself as 'Companion to Matters 9, 10, 11, and 15, which arise from the same administrative record' without noting that all four are now closed (Matter 9 demurrer sustained; Matter 10 denied without prejudice; Matter 11 dismissed with prejudice; Matter 15 dismissed with prejudice for safety reasons) — making Matter 19 the sole surviving vehicle for the entire Nov./Dec. 2025 discharge-review challenge, which raises the practical stakes of its pending ruling (due by Aug. 1, 2026) beyond what the old text conveys. CURED: matters.js's Matter 19 entry now states this explicitly.",
+      "quotes": {}
+    },
+    {
+      "group": "D",
+      "matters": [
+        13,
+        14
+      ],
+      "severity": "HIGH",
+      "category": "preclusion_risk",
+      "description": "Matter 13 (federal, naming Urrea) was voluntarily dismissed WITH PREJUDICE on June 29, 2026. Matter 14 (state mirror, same Nov. 1, 2024 curfew-hold incident, same Urrea) was filed the very next day, June 30, 2026. A with-prejudice voluntary dismissal is ordinarily treated as an adjudication on the merits for claim-preclusion purposes, and because Matter 13 was a federal-question §1983 case, Matter 14's state-law claims on the same transaction could have been brought there under supplemental jurisdiction (28 U.S.C. §1367) — giving Urrea a credible res judicata/claim-splitting defense that Matter 14's own risk assessment never mentions. Neither matter discloses the other as related. CURED: matters.js's Matter 14 entry now carries this preclusion note in its risk field.",
+      "quotes": {
+        "Matter 13 status": "DISMISSED WITH PREJUDICE — Notice of Voluntary Dismissal filed June 29, 2026 (FRCP 41(a)(1)(A)(i)); self-executing",
+        "Matter 14 filed date": "June 30, 2026"
+      }
+    },
+    {
+      "group": "D",
+      "matters": [
+        16,
+        21
+      ],
+      "severity": "HIGH",
+      "category": "preclusion_risk",
+      "description": "Same pattern as Matters 13/14, one week later: Matter 21 (federal, naming Rojo, the Nov. 17-21, 2025 travel-denial incident) was voluntarily dismissed WITH PREJUDICE on June 29, 2026; Matter 16 (state, same incident, same Rojo) was filed July 7, 2026. Matter 16's risk field was previously blank. Same res judicata/claim-splitting exposure applies, compounded by the pre-existing finding (see finding for Matters 16/21 in the original audit) that Matter 16's key_facts field describes the wrong underlying incident entirely — a separate, still-unresolved documentation gap. CURED (partial): matters.js's Matter 16 entry now has a populated risk field flagging the preclusion exposure and expressly noting the key_facts mismatch is not resolved by this note.",
+      "quotes": {
+        "Matter 21 status": "DISMISSED WITH PREJUDICE — Notice of Voluntary Dismissal filed June 29, 2026 (FRCP 41(a)(1)(A)(i)); self-executing",
+        "Matter 16 filed date": "July 7, 2026"
+      }
+    },
+    {
+      "group": "D",
+      "matters": [
+        17,
+        18
+      ],
+      "severity": "MEDIUM",
+      "category": "recordkeeping_error",
+      "description": "Matters 17 (Maloney) and 18 (Barocio) were both dismissed WITH PREJUDICE on June 29, 2026, with no state-law mirror ever filed — unlike Matters 13/14 and 21/16. Their claims are therefore permanently extinguished, yet matters.js continued to list live-looking damages figures ($50,000-$200,000+ and $150,000 respectively) with no notation that these are no longer realizable. Anyone using the portfolio to tally aggregate exposure would overstate real recoverable value (though neither figure was ever included in the live damages_table/matter_damages rollups used by the app's Damages tab, so there was no numeric contamination of the headline exposure figures — only the free-text fields were stale). CURED: matters.js's damages fields for both matters now read 'MOOT — permanently unrecoverable' with an explanatory note, and their risk fields now state no further risk analysis applies.",
+      "quotes": {}
+    },
+    {
+      "group": "D",
+      "matters": [
+        30
+      ],
+      "severity": "MEDIUM",
+      "category": "recordkeeping_error",
+      "description": "Matter 30 was tagged 'archived: true, badge: \"ABANDONED\"' in matters.js despite its own status text describing a live, not-yet-filed action ('Pre-complaint — 26-page verified Complaint v9 prepared... anticipated filing September 16, 2026') with a real upcoming Government Claims Act deemed-rejection date (~Sep. 1, 2026). This is the same badge/archived combination used elsewhere only for genuinely closed matters, and risks the litigant or anyone auditing the portfolio treating Matter 30 as closed and missing its own filing deadline. By contrast, Matter 29 — in the identical 'pre-complaint' posture — carried no such tag. CURED: the archived/badge tags were removed from Matter 30's entry.",
+      "quotes": {}
+    },
+    {
+      "group": "E",
+      "matters": [
+        23,
+        27,
+        29,
+        30
+      ],
+      "severity": "HIGH",
+      "category": "claim_overlap",
+      "description": "Matter 23 (Macy's) was framed entirely prospectively in matters.js — 'Macy's is expected to issue a Post-Adverse Action Notice,' adjudication 'anticipated' by June 3, 2026, filing 'anticipated for July/August 2026' — as though a registry-based rejection was still pending. In fact, per timeline.js (entries tagged to Matter 30), Macy's honored the offer: Plaintiff began working the 'Captain, Selling and Support' position at the Stockton Sherwood store May 28, 2026 and worked it through July 2, 2026, when the unrelated CDCR retaliatory transfer (Matter 30) made the job inaccessible. No registry-based adverse action of any kind ever occurred at Macy's. Independently verified against timeline.js during this pass. Despite this, Matters 27 and 29 both continued to count Matter 23 among 'the fifth/sixth PC §290.46(j) matter in the portfolio,' overstating the strength of the cross-employer willfulness pattern by silently including a data point that actually cuts the other way (a completed, incident-free hire). CURED: Matter 23's status/key_facts/procedural_status/damages/risk fields were rewritten to reflect the actual outcome and flag the miscount; Matters 27 and 29's 'fifth/sixth matter' language (and the mirrored text in damages.js's Matter 29 entry) were corrected to separately track confirmed-adverse-action matters (22, 25, 26, 27, with 29 anticipated) from the raw count of matters merely asserting the theory (which still includes 23).",
+      "quotes": {
+        "Matter 23 (before correction)": "Based on the nearly identical facts in the parallel Pilot Travel Centers matter (Matter 22), Macy's is expected to issue a Post-Adverse Action Notice rejecting Plaintiff's employment solely on the basis of his listing on the California Sex Offender Registry",
+        "timeline.js (tagged Matter 30)": "BNN begins employment as Captain Selling & Support at Macy's, Stockton Sherwood store — $21.50/hr; offer letter confirms full-time position. BNN is actively employed at Macy's at the time of the June 29, 2026 retaliatory transfer order."
+      }
+    },
+    {
+      "group": "E",
+      "matters": [
+        22,
+        25,
+        26,
+        27
+      ],
+      "severity": "MEDIUM",
+      "category": "disclosure_gap",
+      "description": "Matter 22's settlement (Matter 22, $35,000, July 11/14 2026) is flagged 'confidential: true' in outcomes.js. Its case number and existence have nonetheless been cited by name as persuasive settlement precedent in demand letters to three subsequent corporate targets (Matters 25, 26, 27). Whether the signed release's confidentiality clause covers only the dollar amount or the fact/existence of settlement was checked directly against the document repository during this pass: only page 6 of 6 (the signature page) of the release is on file at public/documents/matter-22/ — the substantive confidentiality clause itself is not in the repository, so its actual scope cannot be confirmed from the portfolio's own records. CURED (partial — flagged, not resolved): notes added to both Matter 22's document list and outcomes.js's realized-settlement entry recommending this be confirmed against the full release before the case number is cited again.",
+      "quotes": {}
+    },
+    {
+      "group": "E",
+      "matters": [
+        25,
+        26
+      ],
+      "severity": "LOW",
+      "category": "disclosure_gap",
+      "description": "Matters 25 (FedEx) and 26 (UPS) were filed the same day (July 15, 2026) in the same courthouse (San Joaquin Sup. Ct.), assigned to adjacent departments, asserting the identical PC §290.46(j) theory — but against different corporate defendants arising from separate hiring transactions. Neither complaint discloses the other. This likely does not trigger CRC 3.300 (which keys on common questions of fact/law arising from the same or related transactions, not merely the same legal theory) but was not previously addressed either way. CURED: both matters' procedural_status fields now note the point for awareness, concluding a notice is unlikely to be required but flagging it in case either court raises it sua sponte.",
+      "quotes": {}
+    },
+    {
+      "group": "F",
+      "matters": [
+        12
+      ],
+      "severity": "LOW",
+      "category": "recordkeeping_error",
+      "description": "The original audit's 'Group E' (Employment/consumer/U-visa cluster) bundled Matter 12 (Diamond/Alpine Truck Sales consumer-fraud/defective-vehicle case) together with the PC §290.46(j) employment matters and Matter 24 (U-Visa). Matter 12 has no registry, employment, or background-check element and no substantive legal-theory connection to the employment cluster; its only real links are coincidental — same plaintiff, same San Joaquin court, and (per Matter 26's own text) the same department/judge as Matter 26. The grouping was a facially convenient bucket, not a legal-theory relationship. CURED: this audit file's groups array now lists Matter 12 as its own standalone 'Group F,' and Matter 24 has been moved into Group A (its actual CHP/DUI/DMV/U-Visa citation-chain cluster) rather than the old Group E.",
       "quotes": {}
     }
   ],
   "summary": {
     "bySeverity": {
-      "HIGH": 8,
-      "MEDIUM": 7,
-      "LOW": 7
+      "HIGH": 15,
+      "MEDIUM": 16,
+      "LOW": 10
     },
     "byCategory": {
       "sworn_contradiction": 13,
       "documentation_gap": 2,
-      "recordkeeping_error": 6,
-      "clean": 1
+      "recordkeeping_error": 12,
+      "clean": 1,
+      "disclosure_gap": 5,
+      "citation_error": 1,
+      "preclusion_risk": 4,
+      "claim_overlap": 3
     },
-    "totalFindings": 22
+    "totalFindings": 41,
+    "note": "Findings 1-22 are from the original 2026-07-11 pass (sworn-pleading contradictions and recordkeeping errors within 24 matters). Findings 23-41 are from the 2026-07-26 supplemental interconnectivity pass (cross-matter disclosure gaps, preclusion/claim-splitting exposure, and citation-chain accuracy across all 30 matters). Several of the supplemental findings were cured in place in matters.js/damages.js/outcomes.js during the same pass — see each finding's description for what was and wasn't fixed."
   }
 }
