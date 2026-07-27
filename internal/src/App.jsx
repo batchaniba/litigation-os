@@ -128,7 +128,7 @@ export default function LitigationPortfolio() {
                 style={{ display: "flex", alignItems: "center", gap: 10, color: "inherit" }}
               >
                 <div style={{ textAlign: "right", fontFamily: "'DM Sans', sans-serif" }}>
-                  {["Haiyang A. Li", "Erick Rhoan", "Vanessa Ing", "Mark Beckington", "Judith S. Gronna"].map(name => (
+                  {["Haiyang A. Li", "Erick Rhoan", "Vanessa Ing", "Mark Beckington", "Judith S. Gronna", "Anthony Hakl"].map(name => (
                     <div key={name} style={{ fontSize: 10, fontWeight: 600, color: BODY_GRAY, lineHeight: 1.5 }}>{name}</div>
                   ))}
                   <div className="firm-external-hint" style={{ fontSize: 8, fontWeight: 700, letterSpacing: 0.5, color: GOLD, lineHeight: 1.5, textTransform: "uppercase" }}>Visit site ↗</div>
