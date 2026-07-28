@@ -1033,7 +1033,11 @@ export const cases = [
         { label: "Lerma v. Amazon — Amazon's Answer to FAC (Dkt. 45, Aug. 23, 2023) — answering the surviving Fair Chance Act claim only", path: "/documents/matter-29/lerma-v-amazon/Dkt 45 - Amazon's Answer to FAC (Aug 23, 2023).pdf" },
         { label: "Lerma v. Amazon — Notice of Settlement (Dkt. 46, Sep. 21, 2023)", path: "/documents/matter-29/lerma-v-amazon/Dkt 46 - Notice of Settlement (Sep 21, 2023).pdf" },
         { label: "Lerma v. Amazon — Order Dismissing Action on Notice of Settlement (Dkt. 47, Sep. 29, 2023)", path: "/documents/matter-29/lerma-v-amazon/Dkt 47 - Order Dismissing Action on Notice of Settlement (Sep 29, 2023).pdf" },
-        { label: "Lerma v. Amazon — Full Docket Sheet", path: "/documents/matter-29/lerma-v-amazon/Docket Sheet (as of Jul 27, 2026).pdf" }
+        { label: "Lerma v. Amazon — Full Docket Sheet", path: "/documents/matter-29/lerma-v-amazon/Docket Sheet (as of Jul 27, 2026).pdf" },
+        { label: "Complaint for Damages — 7 causes of action, executed July 28, 2026, ready for e-filing (Alameda Superior Court)", path: "/documents/matter-29/Newanforbi_v_Amazon_Complaint.pdf" },
+        { label: "CM-010 Civil Case Cover Sheet — completed (Unlimited Civil; Other Employment (15); 7 causes of action)", path: "/documents/matter-29/CM010 Newanforbi v Amazon.pdf" },
+        { label: "SUM-100 Summons — completed (Alameda Superior Court; clerk-issuance fields left blank for filing)", path: "/documents/matter-29/SUM100 Newanforbi v Amazon.pdf" },
+        { label: "FW-001 Request to Waive Court Fees — completed, mirrors approved Matter 27 fee waiver", path: "/documents/matter-29/FW001 Newanforbi v Amazon.pdf" }
       ]
     },
     {
