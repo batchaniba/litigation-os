@@ -257,14 +257,14 @@ export const lawyer_fees = [
     notes: "Seven documents totaling 77 real pages (corrected from a 53-page estimate — several documents ran longer than originally guessed): 24-page federal complaint (the dominant cost driver — novel theory development across RICO, §1983 Monell, individual-capacity §1983, Bane Act, and fraud/negligent misrepresentation in a single pleading; hours are elevated accordingly); 10-page Motion for Protective Order; 6-page supporting Declaration (billed per-document, not per-page, per methodology); state court Stipulated Protective Order as Exhibit A (12 pages); 12-page Proposed NDCA Protective Order; 11-page signed state Stipulated PO; 2-page PACER docket sheet confirming case filing and docket activity, billed at a nominal administrative-monitoring rate. Hours reflect drafting a complex multi-theory federal complaint from scratch leveraging 542 pages of discovery already produced in the dismissed state case, plus preparation of the contemporaneous protective-order motion package — now correctly priced against the actual, longer motion and proposed-order page counts. Fee-shifting under §1988 and RICO makes attorney fee recovery highly probable if Plaintiff prevails."
   },
   {
-    number: 29, caption: "Newanforbi v. Amazon.com Services, LLC", caseNumber: "TBD",
-    court: "TBD — anticipated Alameda Sup. Ct.",
+    number: 29, caption: "Newanforbi v. Amazon.com Services, LLC", caseNumber: "TBD — e-filed Jul. 28, 2026, awaiting court acceptance/case number assignment",
+    court: "Alameda County Superior Court, Oakland Civil",
     type: "State — PC §290.46(j) / FCRA / ICRAA / Failure to Hire",
-    status: "Pre-complaint — BGC pending; adverse action anticipated",
-    documentsCount: 11, totalPagesReal: 19,
-    hours: { low: 20, high: 38, mid: 29 },
-    cost: { low: 5600, high: 10640, mid: 8120 },
-    notes: "Pre-filing stage. Eleven documents: 5 PDFs (13 pages) — Amazon Simple Hire Checklists (2), Amazon Jobs BGC-status emails (2), and Equifax onboarding reminder — and 6 screenshots (6 pages) documenting the application, pre-hire appointment, Amazon/Accurate Background SMS chain, and pending BGC status. No complaint drafted yet; hours reflect case assessment and theory development from the established §290.46(j) portfolio template. Fee-shifting under PC §290.46(j)(4)(A), FCRA, and ICRAA applies upon prevailing."
+    status: "CASE FILED July 28, 2026 — e-filed via One Legal (Confirmation #35236062); court acceptance and case number assignment pending",
+    documentsCount: 16, totalPagesReal: 54,
+    hours: { low: 76, high: 127, mid: 101.5 },
+    cost: { low: 21280, high: 35560, mid: 28420 },
+    notes: "Substantial increment now that the complaint has actually been e-filed. Five new documents since the pre-filing estimate (16 total, 54 real pages, +35 pages): the 27-page Verified Complaint (7 causes of action) is the dominant new cost driver, billed at the standard 2–3 hr/page major-pleading rate ($54–81 hrs alone); the 3-page CM-010 Civil Case Cover Sheet, 1-page SUM-100 Summons, 2-page FW-001 Request to Waive Court Fees, and 2-page One Legal Order Receipt (eFiling Confirmation #35236062, Filing Order #28857032) are billed as light administrative/procedural tasks (0.5–2 hr/doc), consistent with how the equivalent e-filing packet was priced in Matter 27. Prior 11-document, 19-page pre-filing base (Amazon Simple Hire Checklists, BGC-status emails, Equifax reminder, and application/appointment screenshots) carries forward unchanged. Court acceptance, case number assignment, and service (two defendants — Amazon.com Services, LLC via CSC – Lawyers Incorporating Service in Sacramento County, and Accurate Background LLC via CT Corporation System in Los Angeles County, per the Lerma docket) will each add a further increment; two draft SER-001 Sheriff service request forms have been prepared but not yet executed or filed, so they are not yet counted here. Fee-shifting under PC §290.46(j)(4)(A), FCRA, and ICRAA applies upon prevailing."
   },
   {
     number: 30, caption: "Newanforbi v. Moua, et al.", caseNumber: "TBD",
@@ -279,21 +279,21 @@ export const lawyer_fees = [
 ];
 
 export const lawyer_fees_summary = {
-  analysisDate: "2026-07-22",
+  analysisDate: "2026-07-28",
   totalMatters: 30,
-  totalDocumentsAnalyzed: 303,
-  totalPagesReal: 3609,
+  totalDocumentsAnalyzed: 308,
+  totalPagesReal: 3644,
   methodology: {
     blendedHourlyRate: 280,
     rateRange: { seniorPartner: [350, 450], midAssociate: [250, 350], paralegal: [150, 200] },
     note: "Every PDF in public/documents/matter-XX/ was measured with pdfinfo for real page counts (poppler-utils), then classified by document type (complaint, motion/opposition/reply, discovery, writ/habeas, declaration, administrative, evidence) and priced using the hours-per-page/per-document conversions in docs/LAWYER_FEES_CALCULATOR.md. Opposing counsel's filings are billed only at a light review rate, never at drafting rate. Matters with no uploaded PDFs are estimated conservatively from matters.js status text.",
   },
-  totalEstimatedHours: { low: 2665.3, high: 4391.2, mid: 3520.75 },
-  totalEstimatedCost: { low: 746284, high: 1229536, mid: 985810 },
+  totalEstimatedHours: { low: 2721.3, high: 4480.2, mid: 3593.25 },
+  totalEstimatedCost: { low: 761964, high: 1254456, mid: 1006110 },
   byCluster: {
     cluster1: { label: "CHP / DUI / DMV", matters: [1, 2, 7, 8, 20, 24], costLow: 134596, costMid: 177212, costHigh: 219828 },
     cluster2: { label: "Parole Retaliation / HOPE", matters: [3, 4, 5, 6, 11, 13, 14, 15, 16, 17, 18, 21, 28, 30], costLow: 459312, costMid: 602392, costHigh: 749672 },
-    cluster3: { label: "Consumer Fraud / Employment", matters: [12, 22, 23, 25, 26, 27, 29], costLow: 111356, costMid: 149170, costHigh: 186900 },
+    cluster3: { label: "Consumer Fraud / Employment", matters: [12, 22, 23, 25, 26, 27, 29], costLow: 127036, costMid: 169470, costHigh: 211820 },
     cluster4: { label: "Administrative Writs & Habeas", matters: [9, 10, 19], costLow: 41020, costMid: 57050, costHigh: 73080 },
   },
 };
