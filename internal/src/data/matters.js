@@ -946,7 +946,16 @@ export const cases = [
         { label: "Pay.gov Filing Fee Payment Confirmation — $405.00 federal civil filing fee paid in full, mooting the IFP application (Jul. 24, 2026)", path: "/documents/matter-28/Pay.gov Filing Fee Payment Confirmation (Jul 24 2026).pdf" },
         { label: "State Court Decision required by the Jul. 23, 2026 order — Order Sustaining Demurrer to FAC Without Leave to Amend, San Joaquin Sup. Ct. (Jul. 15, 2026), from Matter 5", path: "/documents/matter-05/Order Sustaining Demurrer to FAC WOLA - Jul 15 2026.pdf" },
         { label: "Complaint — as filed and served on SLB (Jul. 22, 2026)", path: "/documents/matter-28/Complaint_Newanforbi_v_Smith_NDCA (as filed, served on SLB Jul 22 2026).pdf" },
-        { label: "Declaration ISO Motion for Protective Order and Exhibit A — combined, as filed", path: "/documents/matter-28/Declaration ISO Motion PO NDCA and Exhibit A (combined, as filed).pdf" }
+        { label: "Declaration ISO Motion for Protective Order and Exhibit A — combined, as filed", path: "/documents/matter-28/Declaration ISO Motion PO NDCA and Exhibit A (combined, as filed).pdf" },
+        { label: "HOPE Clinical Operational Manual, pp. 1–90 (Matter 5 discovery)", path: "/documents/matter-28/HOPE Discovery (Matter 5)/1_HOPE_Clinical_Operational_Manual_9_24_24_225349_pg_1_to_90.pdf" },
+        { label: "HOPE Clinical Operational Manual, pp. 91–125 (Matter 5 discovery)", path: "/documents/matter-28/HOPE Discovery (Matter 5)/1_HOPE_Clinical_Operational_Manual_9_24_24_225349_pg_91_to_125.pdf" },
+        { label: "Plaintiff's Homework/Completion Packet — redacted (Matter 5 discovery)", path: "/documents/matter-28/HOPE Discovery (Matter 5)/1_PHCP06796815_Rdctd_131_pdf.pdf" },
+        { label: "HOPE Maintenance Curriculum (Matter 5 discovery)", path: "/documents/matter-28/HOPE Discovery (Matter 5)/2_HOPE_Maintenance_Curriculum_350434.pdf" },
+        { label: "Plaintiff's Session/Homework Documentation — redacted (Matter 5 discovery)", path: "/documents/matter-28/HOPE Discovery (Matter 5)/2_PHSD1838240007_Rdctd_32104_pdf.pdf" },
+        { label: "HOPE Program Employee Handbook, 2023 (Matter 5 discovery)", path: "/documents/matter-28/HOPE Discovery (Matter 5)/3_HOPE_Prgrm_Emply_Hndbk_2023_435485_pdf.pdf" },
+        { label: "HOPE Proprietary Treatment Manual, Feb. 18, 2019 (Matter 5 discovery)", path: "/documents/matter-28/HOPE Discovery (Matter 5)/4_HOPE_Prprtry_Trtmnt_Mnul_2_18_2019_486537.pdf" },
+        { label: "Clinical Director Job Description (Matter 5 discovery)", path: "/documents/matter-28/HOPE Discovery (Matter 5)/5_CD_Job_Description_538542_pdf.pdf" },
+        { label: "Collateral Notes / Communications (Matter 5 discovery)", path: "/documents/matter-28/HOPE Discovery (Matter 5)/Collateral_NotesComm_139199_pdf.pdf" }
       ]
     },
     {
