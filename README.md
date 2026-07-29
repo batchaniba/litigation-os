@@ -22,7 +22,7 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 | Aggregate Exposure (Conservative) | ~$1,131,000+ |
 | Aggregate Exposure (Moderate) | ~$2,868,000+ |
 | Aggregate Exposure (Aggressive) | ~$6,374,000+ |
-| Last Updated | July 22, 2026 |
+| Last Updated | July 29, 2026 |
 
 *Of the 16 dismissed/closed/abandoned matters: seven (Matters 3, 4, 14, 15, 16, 23, 30) were voluntarily abandoned due to real, credible safety threats — Matter 15 (the portfolio's largest single exposure) most recently, by voluntary dismissal with prejudice as to all defendants filed July 24, 2026; six federal companion suits (Matters 6, 11, 13, 17, 18, 21) were voluntarily dismissed — five with prejudice, together, on June 29, 2026 — once the stronger surviving vehicles (the Matter 19 habeas track and Matter 28's Monell/RICO case) made the parallel federal claims redundant; and three (Matters 5, 9, 10) closed on procedural/exhaustion grounds rather than the merits, with Matter 5's discovery record carried forward into Matter 28. See [All Matters](#all-matters) below for the full disposition table.*
 
@@ -77,6 +77,14 @@ Fraud and UCL claims against Diamond Truck Sales, Inc. and Alpine Truck Sales, I
 | **Total Monetary Judgment Requested (per Default Judgment Packet)** | **≥ $78,671.20 + costs** |
 
 *The $78,671.20 floor is established in the Declaration ISO Default Judgment filed June 15, 2026 against Diamond Truck Sales, Inc. Punitive damages and costs are subject to judicial discretion at the August 12, 2026 prove-up hearing. Lost income was deliberately underpled at 18 weeks (conservative) versus the FAC's $46,800+ allegation; FAC paragraph 31 controls the Greenup v. Rodman notice ceiling on lost income.*
+
+**Post-judgment collection prep (as of July 29, 2026 — no judgment entered yet):** EJ-001 (Abstract of Judgment), EJ-130 (Writ of Execution), AT-138/EJ-125 (Judgment Debtor Examination), and MC-012 (Memorandum of Costs After Judgment) are pre-drafted with the case's fixed facts (parties, court, case number) already filled in, so they're ready to complete and file the same day or next business day once the Aug. 12 CMC actually produces a judgment — no field asserts a judgment date or amount that hasn't happened. Alpine's joint-and-several exposure runs through its own pre-drafted default judgment packet (CIV-100, execution date Aug. 1, 2026), not a CCP §187 motion to amend the judgment — §187 amendment adds an alter ego who was never a named party, and generally isn't available where the underlying judgment is by default; Alpine is already a named, personally-served defendant, so its own default judgment is the correct vehicle.
+
+**Default judgment packet review findings (flagged Jul. 29, 2026):**
+- **Case number error** — every CIV-100 in both the Diamond and Alpine default judgment packets, and the original [Proposed] Judgment (JUD-100), showed the case number as `STK-CV-UF-2026-1094` instead of the actual `STK-CV-UF-2026-0001094`. The JUD-100 has been corrected (new file in the documents list, ready to submit at the Aug. 12 CMC) and also now names Alpine — not just Diamond — in Item 5a's operative "against defendant" field, since the original only mentioned Alpine's joint-and-several liability in freeform Item 8 text, which the abstract-of-judgment and writ-of-execution forms aren't built to read. Diamond's CIV-100/Declaration were already submitted to the court on 6/15/26 with the case-number error baked in — that can't be fixed by editing a repository copy; confirm with the clerk that the case docketed correctly, and fix Alpine's CIV-100 before it's filed Aug. 1.
+- **"Osmani" vs. "Usmani"** — Alpine's own Declaration ISO Default Judgment (¶6) cites "the same Osmani family ownership and management" as part of the sworn evidentiary basis for the alter-ego/successor theory, but the only individual named anywhere else in the service record is Usmani (spelled two ways: "Mustagem" and "Mustaqem"). Confirm which name is correct before it's relied on further — this is now inside a sworn filing, not just outside planning notes.
+- **Standing question on the lost-income claim** — the Lease-On Owner Operator Agreement behind the $23,400 lost-income figure is contractually between Gobbato Builders, LLC and a separate registered entity, "Altamont Freight LLC" (confirmed by its own W-9 and Amazon Relay driver roster, at a different Modesto address), not personally Brendan Ngwa Nforbi, though the Declaration frames the loss as his personally. Unlikely to be caught in an uncontested default prove-up, but worth resolving before relying on it in a contested posture.
+- **DMV fee vs. pending use-tax exemption** — the $3,442 DMV fee claimed in full as damages includes ~$2,421 in CA use/city-use tax that a CDTFA exemption request in the same exhibit set sought to avoid; the Declaration doesn't disclose whether that exemption was granted, which could reduce the true out-of-pocket DMV obligation if it was.
 
 ### Cluster 4 — Administrative Writs & Habeas Corpus (Matters 9, 10, 19)
 
@@ -160,7 +168,7 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | July 31, 2026 | 12 | Alpine Truck Sales, Inc. response deadline (CCP §412.20(a)(3); 30 days from July 1, 2026 personal service) |
 | Aug. 1, 2026 | 19 | Court deadline to rule — Santa Clara Sup. Ct. habeas (C2604791, Hon. Robert Hawk; per Order Extending Time July 2, 2026) |
 | Aug. 2, 2026 | 27 | Response deadline — Pre-filing demand to Randstad US, LLC (5:00 PM PT); RK Logistics already denied July 21, 2026 through Garcia & Gurney, ALC |
-| Aug. 12, 2026 | 12 | Case Management Conference — 8:30 AM, Dept. 11B, Hon. Robert T. Waters (San Joaquin Sup. Ct.) |
+| Aug. 12, 2026 | 12 | Case Management Conference / default prove-up entry point — 8:30 AM, Dept. 11B, Hon. Robert T. Waters (San Joaquin Sup. Ct.); EJ-001, EJ-130, EJ-125, and MC-012 pre-drafted and ready to complete same day/next business day if judgment enters |
 | Aug. 21, 2026 | 20 | AG reply deadline — 5 court days before Aug. 28 demurrer hearing (CRC 3.1320(b)) |
 | Aug. 28, 2026 | 20 | Demurrer Hearing — 9:00 AM, Dept. 25, Alameda Sup. Ct. (Hon. Jenna M. Whitman) |
 | Sep. 2, 2026 | 20 | Case Management Conference (continued from July 15) — Dept. 25, Alameda Sup. Ct. |
