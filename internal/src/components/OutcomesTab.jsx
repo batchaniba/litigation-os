@@ -31,17 +31,26 @@ const demandDeadlineRange = earliestDeadline.getTime() === latestDeadline.getTim
 const totalMatterCount = PORTFOLIO.cases.length;
 const activeMatterCount = PORTFOLIO.cases.filter(c => !c.archived).length;
 
-function StatTile({ label, amount, prefix = "", color, sub, confidential = false, theme }) {
+function StatTile({ label, amount, prefix = "", color, sub, confidential = false, theme, href, linkLabel }) {
+  const Tag = href ? "a" : "div";
+  const linkProps = href ? { href, target: "_blank", rel: "noopener noreferrer" } : {};
   return (
-    <div style={{
-      flex: 1, minWidth: 180,
-      background: theme.cardBg,
-      border: `1px solid ${color}44`,
-      borderRadius: 12,
-      padding: "24px 28px",
-      position: "relative",
-      overflow: "hidden",
-    }}>
+    <Tag
+      {...linkProps}
+      style={{
+        flex: 1, minWidth: 180,
+        background: theme.cardBg,
+        border: `1px solid ${color}44`,
+        borderRadius: 12,
+        padding: "24px 28px",
+        position: "relative",
+        overflow: "hidden",
+        display: "block",
+        textDecoration: "none",
+        color: "inherit",
+        cursor: href ? "pointer" : "default",
+      }}
+    >
       <div style={{
         position: "absolute", top: 0, left: 0, right: 0, height: 3,
         background: color,
@@ -70,7 +79,16 @@ function StatTile({ label, amount, prefix = "", color, sub, confidential = false
           color: theme.mutedText, marginTop: 8, lineHeight: 1.4,
         }}>{sub}</div>
       )}
-    </div>
+      {href && (
+        <div style={{
+          fontFamily: "'DM Sans', sans-serif", fontSize: 10, fontWeight: 700,
+          letterSpacing: 1, color, marginTop: 12,
+          display: "flex", alignItems: "center", gap: 4,
+        }}>
+          {linkLabel || "Open"} <span aria-hidden="true">↗</span>
+        </div>
+      )}
+    </Tag>
   );
 }
 
@@ -234,6 +252,8 @@ export function OutcomesTab() {
           color={AMBER}
           sub="Matter 12 · Diamond / Alpine · Prove-up Aug. 12, 2026"
           theme={theme}
+          href="https://claude.ai/code/artifact/41e12d5f-30c9-439d-9f58-2aaf9317a9ac"
+          linkLabel="The Last Mile: judgment → cash walkthrough"
         />
         <StatTile
           label="Combined Near-Term"
