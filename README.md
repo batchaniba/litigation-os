@@ -38,7 +38,7 @@ Arising from a November 1, 2024 CHP encounter on I-580. Officers arrested Plaint
 - **Matter 2** (Alameda Sup. Ct.): Parallel state tort action (False Imprisonment, Battery, Bane Act); STAYED pending Matter 1 District Judge ruling.
 - **Matter 7** (USDC E.D. Cal.): Federal §1983 against DMV Hearing Officer Candelaria and DMV Director Gordon; adverse F&R issued June 15, 2026 (Magistrate CSK: IFP denied as frivolous; FAC dismissed WOLA — quasi-judicial immunity for Candelaria, 11th Amendment / standing failure for Gordon); District Judge DC adoption pending.
 - **Matter 8** (Sacramento Sup. Ct.): State Writ of Administrative Mandate challenging the same void APS decision; Fee Waiver Hearing held July 17, 2026, Dept. 10C.
-- **Matter 20** (Alameda Sup. Ct.): State Writ of Mandate against CHP; demurrer opposition filed July 13, 2026; demurrer hearing Aug. 28, 2026.
+- **Matter 20** (Alameda Sup. Ct.): State Writ of Mandate against CHP; demurrer opposition filed July 13, 2026; CHP demurrer hearing Aug. 28, 2026. Individual Respondents Serrato, Paul, and Dutra filed their own joinders/demurrers July 30, 2026 and stipulated to advance their Oct. 16/23 hearing dates to Aug. 28 as well (stipulation not yet entered).
 - **Matter 24** (USDC N.D. Cal.): §1983 against San Mateo Sheriff Deputy Serrato for arbitrary U Visa certification denial and retaliation; filed June 17, 2026; CMC September 15, 2026.
 
 ### Cluster 2 — Parole Retaliation, HOPE Abuse & Policy 19-03 (Matters 3–6, 11, 13–18, 21, 28, 30)
@@ -125,7 +125,7 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | 8 | Newanforbi v. Candelaria, et al. | 26WM000135 | Sacramento Sup. Ct. | State | Fee Waiver Hearing held July 17, 2026, Dept. 10C |
 | 12 | Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. | STK-CV-UF-2026-0001094 | San Joaquin Sup. Ct. | State | Default entered against Diamond; Alpine served July 1, 2026, no response; CMC Aug. 12, 2026 |
 | 19 | Newanforbi v. Macomber | C2604791 | Santa Clara Sup. Ct. | State | Habeas — seeks unconditional parole discharge; Order Extending Time July 2, 2026 (Hon. Robert Hawk); court deadline to rule: Aug. 1, 2026 |
-| 20 | Newanforbi v. CHP, et al. | 26CV191136 | Alameda Sup. Ct. | State | Demurrer opposition filed July 13, 2026; hearing Aug. 28, 2026, Dept. 25 |
+| 20 | Newanforbi v. CHP, et al. | 26CV191136 | Alameda Sup. Ct. | State | Demurrer opposition filed July 13, 2026; hearing Aug. 28, 2026, Dept. 25; Individual Respondents' joinders/demurrers filed July 30, 2026, stipulated to be heard same date |
 | 24 | Newanforbi v. Serrato | 4:26-cv-05953-ASK | USDC N.D. Cal. | Federal | Filed June 17, 2026; ISC Order issued; CMC Sept. 15, 2026 |
 | 25 | Newanforbi v. Federal Express Corporation | STK-CV-UWT-2026-0009118 | San Joaquin Sup. Ct. | State | Filed July 15, 2026; demand response deadline July 26 (5:00 PM PT); Dept. 10B, Hon. Blanca Banuelos; CMC Jan. 14, 2027; SERVED July 24, 2026 (Ct Corporation System / Jaqueline Mejia) |
 | 26 | Newanforbi v. United Parcel Service, Inc. | STK-CV-UWT-2026-0009113 | San Joaquin Sup. Ct. | State | Filed July 15, 2026; demand response deadline July 26 (5:00 PM PT); limitations period preserved (16 days to spare); Dept. 11B, Hon. Robert T. Waters; CMC Jan. 13, 2027; SERVED July 22, 2026 (Josh Swindell, Authorized Agent) |
