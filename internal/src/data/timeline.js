@@ -1,4 +1,5 @@
 export const timeline = [
+    { date: "Jul. 30, 2026", event: "Portfolio-wide gap analysis identifies First Advantage LLC — the background-check vendor that generated the registry-flagged reports underlying both Matter 25 (FedEx) and Matter 26 (UPS) — as a party with independent FCRA/ICRAA vendor-liability exposure never itself named as a defendant; opened as Matter 31, pre-complaint, no demand letter sent", matters: "31", type: "milestone" },
     { date: "Dec. 2, 2020", event: "Released on parole; HOPE Program begins", matters: "All", type: "milestone" },
     { date: "Apr. 4, 2023", event: "Purchased defective Volvo semi-truck from Diamond", matters: "12", type: "event" },
     { date: "Aug. 27, 2025", event: "Prior, factually distinct habeas petition (filed Apr./May 2025 in Santa Clara Superior Court, challenging whether Petitioner's parole term should be three years per the Abstract of Judgment rather than the ten-year statutory maximum) denied by Judge Geffon; disclosed in the April 2026 habeas petition (Matter 19) under Cal. Rules of Court, rule 4.552 and distinguished under the successive-petition doctrine (In re Clark)", matters: "19", type: "ruling" },
