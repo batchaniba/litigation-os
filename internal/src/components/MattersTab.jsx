@@ -148,14 +148,14 @@ export const MattersTab = ({ filteredCases, statusFilter, setStatusFilter, clust
           }}>{s === "active" ? `Active (${activeCount})` : "All"}</button>
         ))}
         <span style={{ color: theme.subtleText, fontFamily: "'DM Sans', sans-serif", fontSize: 12 }}>|</span>
-        {[null, 1, 2, 3, 4].map(c => (
+        {[null, 1, 2, 3, 4, 5].map(c => (
           <button key={c ?? "all"} onClick={() => setClusterFilter(c)} style={{
             padding: "8px 14px", borderRadius: 6,
             border: clusterFilter === c ? `1px solid ${GOLD}` : `1px solid ${theme.filterInactiveBorder}`,
             background: clusterFilter === c ? `${GOLD}18` : theme.filterInactiveBg,
             color: clusterFilter === c ? GOLD : theme.filterInactiveColor,
             fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 600, cursor: "pointer"
-          }}>{c === null ? "All" : c === 1 ? "CHP" : c === 2 ? "Parole/HOPE" : c === 3 ? "Vehicle" : "Writs"}</button>
+          }}>{c === null ? "All" : c === 1 ? "CHP" : c === 2 ? "Parole/HOPE" : c === 3 ? "Employment" : c === 4 ? "Writs" : "Consumer Fraud"}</button>
         ))}
         <span style={{ color: theme.subtleText, fontFamily: "'DM Sans', sans-serif", fontSize: 12 }}>|</span>
         {[null, "Federal", "State"].map(t => (

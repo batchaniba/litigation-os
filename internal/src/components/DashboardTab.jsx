@@ -65,6 +65,7 @@ const PERTINENT_FILINGS = [
   { title: "Newanforbi v. Randstad, et al.", matter: 27, note: "Case No. 26CV199902 — RK Logistics Denied Jul 21", date: "Filed Jul 20, 2026", dateStatus: "filed" },
   { title: "Newanforbi v. Shannon Smith, LCSW, et al.", matter: 28, note: "Case No. 3:26-cv-07504 — Hon. Lisa J. Cisneros", date: "Filed Jul 20, 2026", dateStatus: "filed" },
   { title: "Newanforbi v. Amazon.com Services, LLC", matter: 29, date: "Pre-Complaint — BGC Pending", dateStatus: "upcoming" },
+  { title: "Newanforbi v. First Advantage LLC", matter: 31, note: "Identified via portfolio gap analysis — vendor for Matters 25 & 26", date: "Not Yet Filed", dateStatus: "upcoming" },
 ];
 
 export const DashboardTab = ({ upcomingEvents, setClusterFilter, setActiveTab }) => {

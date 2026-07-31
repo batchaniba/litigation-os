@@ -12,7 +12,8 @@ export const damages_table = [
     { category: "PC §290.46(j) — Wrongful Termination / Failure to Employ — Randstad / RK Logistics (Matter 27)", matters: "27", conservative: 180000, moderate: 437000, aggressive: 835000 },
     { category: "§1983 Monell / Individual + Bane Act + RICO — Shannon Smith / HOPE (Matter 28)", matters: "28", conservative: 249000, moderate: 666000, aggressive: 1510000 },
     { category: "PC §290.46(j) Failure to Hire — Amazon (Matter 29)", matters: "29", conservative: 30000, moderate: 75000, aggressive: 180000 },
-    { category: "§1983 Retaliation, Due Process, Bane Act & IIED — Moua (Matter 30)", matters: "30", conservative: 90000, moderate: 225000, aggressive: 525000 }
+    { category: "§1983 Retaliation, Due Process, Bane Act & IIED — Moua (Matter 30)", matters: "30", conservative: 90000, moderate: 225000, aggressive: 525000 },
+    { category: "FCRA / ICRAA Vendor Liability — First Advantage LLC (Matter 31)", matters: "31", conservative: 30000, moderate: 89000, aggressive: 205000 }
 ];
 // Matters 3, 5, and 15 are excluded/reduced above (abandoned/dismissed Jul. 2026):
 // - Matter 3 (Derrick, ABANDONED): its Lost Income, Emotional Distress, Punitive, and Fees
@@ -291,6 +292,23 @@ export const matter_damages = [
             { label: "IIED — fabricated parole violation; forced housing/employment displacement from Stockton to Santa Clara GPS jurisdiction; employment destruction; sex offender registration completed under duress of third-strike automatic life sentence (Pen. Code §667(e)(2)(A)) during active housing displacement", conservative: 15000, moderate: 30000, aggressive: 75000 },
             { label: "Punitive Damages — Moua personally (knowing fabrication of parole violation by withholding access code then submitting non-attendance as willful non-compliance; retaliatory transfer executed within 18 days of lawsuit service)", conservative: 0, moderate: 15000, aggressive: 25000 },
             { label: "Attorney Fees — 42 U.S.C. §1988 (§1983 fee-shifting); Bane Act mandatory fee award", conservative: 18000, moderate: 10000, aggressive: 25000 }
+        ]
+    },
+    {
+        number: 31,
+        caption: "Newanforbi v. First Advantage LLC",
+        court: "San Joaquin Sup. Ct. (anticipated)",
+        claims: "FCRA §1681b(b), FCRA §1681e(b), ICRAA, Negligence Per Se, UCL §17200",
+        status: "Identified via portfolio gap analysis Jul. 30, 2026 — not yet filed; no demand letter sent",
+        risk: "Favorable pattern (same vendor, two registry-flagged reports, two employers, 8 months apart) but untested theory in this portfolio — reaches the CRA rather than the employer that used the report; still constrained by the same information-and-belief gap affecting Matters 25/26 pending discovery of the underlying reports",
+        settlement_note: "Deliberately excludes Emotional Distress / Lost Opportunity — already claimed against FedEx (Matter 25) and UPS (Matter 26) for these same two denials; this matter's exposure is additive (vendor-specific ICRAA/FCRA statutory penalties), not a duplicate of the employer-side claims",
+        conservative: 30000, moderate: 89000, aggressive: 205000,
+        components: [
+            { label: "ICRAA Statutory Damages (Civ. Code §1786.50(a)(1) — not less than $10,000 per willful violation; two independent furnishing events, UPS Jul. 2024 and FedEx Mar. 2025)", conservative: 20000, moderate: 30000, aggressive: 50000 },
+            { label: "FCRA Statutory Damages (15 U.S.C. §1681n — willful noncompliance, $100–$1,000 per violation per report furnished; two reports)", conservative: 2000, moderate: 4000, aggressive: 10000 },
+            { label: "FCRA §1681e(b) Reasonable-Procedures Failure — Actual Damages (failure to exclude/flag categorically prohibited registry information despite First Advantage's own statutory disclaimer already printed on its notices)", conservative: 0, moderate: 15000, aggressive: 40000 },
+            { label: "Punitive Damages (Civ. Code §3294 / ICRAA willfulness — same vendor, two separate adverse actions eight months apart, evidencing a systemic practice rather than an isolated error)", conservative: 0, moderate: 20000, aggressive: 60000 },
+            { label: "Attorney Fees (ICRAA Civ. Code §1786.50(a)(2) mandatory fee-shifting + FCRA §1681n/o)", conservative: 8000, moderate: 20000, aggressive: 45000 }
         ]
     }
 ];
