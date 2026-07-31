@@ -18,6 +18,10 @@ except ImportError:
 from reportlab.lib.pagesizes import letter
 from reportlab.lib.units import inch
 from reportlab.pdfgen import canvas
+
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+SIGNATURE_IMG = os.path.join(SCRIPT_DIR, "assets", "newanforbi-pen-signature.png")
+SIG_IMG_W_PX, SIG_IMG_H_PX = 369, 101  # actual pixel dims, for aspect ratio
 from reportlab.lib.colors import black
 
 PAGE_W, PAGE_H = letter
@@ -330,7 +334,7 @@ CONTENT = [
 
     ("LIST_ITEM", "3. Deny Respondents' request that the demurrers be sustained without leave to amend."),
 
-    ("SIGNATURE", "\nDated: ___________________\n\n\n___________________________________\nBRENDAN NGEHSI NEWANFORBI\nPetitioner, In Pro Per"),
+    ("SIGNATURE", "\nDated: July 31, 2026\n\n\n___________________________________\nBRENDAN NGEHSI NEWANFORBI\nPetitioner, In Pro Per"),
 
     # =====================================================
     # PROOF OF SERVICE
@@ -342,7 +346,7 @@ CONTENT = [
 
     ("PARA", "I am the Petitioner in the above-captioned action, appearing in propria persona. I am over the age of eighteen and a resident of San Joaquin County, California. My mailing address is 1455 Cat Tail Drive, Stockton, California 95204, and my electronic service address is bnn.cdl@gmail.com."),
 
-    ("PARA", "On ___________________, 2026, I served true and correct copies of the following document:"),
+    ("PARA", "On July 31, 2026, I served true and correct copies of the following document:"),
 
     ("LIST_ITEM", "1. PETITIONER'S OPPOSITION TO INDIVIDUAL RESPONDENTS' DEMURRERS AND JOINDERS TO RESPONDENT CHP'S DEMURRER; MEMORANDUM OF POINTS AND AUTHORITIES"),
 
@@ -352,7 +356,7 @@ CONTENT = [
 
     ("PARA", "I declare under penalty of perjury under the laws of the State of California that the foregoing is true and correct."),
 
-    ("SIGNATURE", "\nExecuted on ___________________, 2026,\nat Stockton, California.\n\n\n___________________________________\nBRENDAN NGEHSI NEWANFORBI"),
+    ("SIGNATURE", "\nExecuted on July 31, 2026,\nat Stockton, California.\n\n\n___________________________________\nBRENDAN NGEHSI NEWANFORBI"),
 ]
 
 
@@ -451,6 +455,14 @@ def main():
             d.blank_line()
         elif c_type == "SIGNATURE":
             for line in text.split("\n"):
+                if line.strip() and set(line.strip()) == {"_"}:
+                    d._ensure_line()
+                    y = d._line_y(d.current_line)
+                    img_w = 130
+                    img_h = img_w * (SIG_IMG_H_PX / SIG_IMG_W_PX)
+                    img_x = (CONTENT_RIGHT - 20) - img_w
+                    c.drawImage(SIGNATURE_IMG, img_x, y + 3, width=img_w, height=img_h,
+                                mask='auto', preserveAspectRatio=True)
                 d.write_line(line, right=True, right_margin_offset=20)
             d.blank_line()
         elif c_type == "PAGEBREAK":
