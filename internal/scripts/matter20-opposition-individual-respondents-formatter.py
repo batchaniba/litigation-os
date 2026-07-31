@@ -350,9 +350,11 @@ CONTENT = [
 
     ("LIST_ITEM", "1. PETITIONER'S OPPOSITION TO INDIVIDUAL RESPONDENTS' DEMURRERS AND JOINDERS TO RESPONDENT CHP'S DEMURRER; MEMORANDUM OF POINTS AND AUTHORITIES"),
 
-    ("PARA", "on the following party by transmitting a true copy via electronic mail and by depositing a true copy in the United States mail, first-class postage prepaid, in a sealed envelope addressed as follows:"),
+    ("PARA", "on the following party by transmitting a true copy via electronic mail, addressed as follows:"),
 
     ("PARA", "Vanessa Ing, Deputy Attorney General, Office of the Attorney General, 455 Golden Gate Avenue, Suite 11000, San Francisco, CA 94102-7004. E-mail: Vanessa.Ing@doj.ca.gov. Attorneys for Respondents California Highway Patrol, Gerardo Serrato, Gary Paul, and Eric Dutra."),
+
+    ("PARA", "In addition, on July 31, 2026, I submitted a true copy of the same document, together with a Request for Sheriff to Serve Court Documents (Judicial Council Form SER-001) directing service by mail on the party and address above, to the Civil Section of the Alameda County Sheriff's Office, 1225 Fallon Street, #104, Oakland, California 94612, for that office to execute service by mail at no charge pursuant to Government Code section 26721 and the fee waiver granted to Petitioner in this action."),
 
     ("PARA", "I declare under penalty of perjury under the laws of the State of California that the foregoing is true and correct."),
 
