@@ -8,9 +8,8 @@
 # (same visual convention as matter-20/Opposition to Demurrer.pdf).
 #
 # FILED_STATUS: set to False until this is actually e-filed with the
-# court and served -- while False, a "DRAFT -- NOT FILED" watermark is
-# stamped on every page so the PDF is self-describing regardless of its
-# filename or which folder it's sitting in.
+# court and served. Mirrors the `filed: false` flag on this document's
+# entry in matters.js -- update both together.
 # ==========================================================
 import os, sys
 
@@ -160,8 +159,7 @@ CONTENT = [
 # ==========================================================
 
 def main():
-    watermark = None if FILED_STATUS else "DRAFT — NOT FILED"
-    d = PleadingPaper(OUTPUT_PATH, doc_title_footer=DOC_TITLE_FOOTER, watermark_text=watermark)
+    d = PleadingPaper(OUTPUT_PATH, doc_title_footer=DOC_TITLE_FOOTER)
     c = d.c
 
     # === TOP ATTORNEY BLOCK (matches matter-20/Opposition to Demurrer.pdf) ===
@@ -260,7 +258,7 @@ def main():
     d.save()
     print(f"SUCCESS! Generated: {OUTPUT_PATH}")
     if not FILED_STATUS:
-        print("NOTE: FILED_STATUS is False -- document was stamped with a DRAFT watermark.")
+        print("NOTE: FILED_STATUS is False -- not yet e-filed/served.")
 
 
 if __name__ == "__main__":

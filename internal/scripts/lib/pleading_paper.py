@@ -15,7 +15,7 @@
 #   sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "lib"))
 #   from pleading_paper import (
 #       PleadingPaper, CONTENT_LEFT, CONTENT_RIGHT, CONTENT_WIDTH,
-#       PAGE_W, PAGE_H, FONT_SIZE, draw_watermark,
+#       PAGE_W, PAGE_H, FONT_SIZE,
 #   )
 #
 #   d = PleadingPaper(out_path, doc_title_footer="MY DOCUMENT -- CASE NAME")
@@ -33,7 +33,7 @@ except ImportError:
 from reportlab.lib.pagesizes import letter
 from reportlab.lib.units import inch
 from reportlab.pdfgen import canvas
-from reportlab.lib.colors import black, Color
+from reportlab.lib.colors import black
 
 PAGE_W, PAGE_H = letter
 MARGIN_LEFT = 1.0 * inch
@@ -61,7 +61,7 @@ COURT_LINE1 = "SUPERIOR COURT OF THE STATE OF CALIFORNIA"
 
 
 class PleadingPaper:
-    def __init__(self, filename, doc_title_footer="", watermark_text=None):
+    def __init__(self, filename, doc_title_footer=""):
         """
         filename: output PDF path.
         doc_title_footer: the small centered footer line repeated on every
@@ -69,14 +69,11 @@ class PleadingPaper:
             Auto-shrinks if it would overflow the space between the two
             vertical border lines, so a long case caption can never print
             past the page edges the way it did before this fix existed.
-        watermark_text: optional diagonal watermark (e.g. "DRAFT -- NOT FILED")
-            stamped on every page. None means no watermark.
         """
         self.c = canvas.Canvas(filename, pagesize=letter)
         self.page_num = 0
         self.current_line = 0
         self.doc_title_footer = doc_title_footer
-        self.watermark_text = watermark_text
         self.start_new_page()
 
     def start_new_page(self):
@@ -85,8 +82,6 @@ class PleadingPaper:
         self.page_num += 1
         self.current_line = 0
         self._draw_page_frame()
-        if self.watermark_text:
-            draw_watermark(self.c, self.watermark_text)
 
     def _draw_page_frame(self):
         c = self.c
@@ -284,16 +279,3 @@ class PleadingPaper:
 
     def save(self):
         self.c.save()
-
-
-def draw_watermark(c, text, angle=45, size=60, opacity=0.12):
-    """Stamp a large diagonal translucent watermark across the current page.
-    Intended for draft/unfiled documents so the PDF is self-describing
-    regardless of what it's named or where it's stored."""
-    c.saveState()
-    c.setFillColor(Color(0.6, 0.1, 0.1, alpha=opacity))
-    c.setFont("Helvetica-Bold", size)
-    c.translate(PAGE_W / 2, PAGE_H / 2)
-    c.rotate(angle)
-    c.drawCentredString(0, 0, text)
-    c.restoreState()
