@@ -458,7 +458,7 @@ def main():
                 if line.strip() and set(line.strip()) == {"_"}:
                     d._ensure_line()
                     y = d._line_y(d.current_line)
-                    img_w = 110
+                    img_w = 155
                     img_h = img_w * (SIG_IMG_H_PX / SIG_IMG_W_PX)
                     line_right = CONTENT_RIGHT - 20
                     line_width = c.stringWidth(line, "Times-Roman", FONT_SIZE)
