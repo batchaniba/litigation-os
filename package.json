@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "validate": "node internal/scripts/validate-portfolio.mjs",
     "extract:matter1": "node internal/scripts/extract-matter-pdfs.mjs"
   },
   "dependencies": {
