@@ -42,7 +42,7 @@ FOOTER_RULE_Y = TEXT_END_Y - 12
 FOOTER_PAGE_Y = FOOTER_RULE_Y - 16
 FOOTER_TITLE_Y = FOOTER_PAGE_Y - 18
 
-DOC_TITLE_FOOTER = "OPPOSITION TO INDIVIDUAL RESPONDENTS' DEMURRERS — NEWANFORBI v. CALIFORNIA HIGHWAY PATROL, ET AL."
+DOC_TITLE_FOOTER = "OPPOSITION TO INDIVIDUAL RESPONDENTS' DEMURRERS — NEWANFORBI v. CHP, ET AL."
 COURT_LINE1 = "SUPERIOR COURT OF THE STATE OF CALIFORNIA"
 COURT_LINE2 = "COUNTY OF ALAMEDA"
 
@@ -77,7 +77,11 @@ class PleadingPaper:
         center_x = (VERT_LINE_LEFT + CONTENT_RIGHT) / 2
         c.setFont("Helvetica", 10)
         c.drawCentredString(center_x, FOOTER_PAGE_Y, f"Page {self.page_num}")
-        c.setFont("Helvetica", 9)
+        avail_footer_width = CONTENT_RIGHT - VERT_LINE_LEFT - 4
+        footer_size = 9
+        while footer_size > 6 and c.stringWidth(DOC_TITLE_FOOTER, "Helvetica", footer_size) > avail_footer_width:
+            footer_size -= 0.5
+        c.setFont("Helvetica", footer_size)
         c.drawCentredString(center_x, FOOTER_TITLE_Y, DOC_TITLE_FOOTER)
 
     def _line_y(self, idx):
