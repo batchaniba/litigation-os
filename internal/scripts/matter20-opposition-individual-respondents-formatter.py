@@ -458,9 +458,12 @@ def main():
                 if line.strip() and set(line.strip()) == {"_"}:
                     d._ensure_line()
                     y = d._line_y(d.current_line)
-                    img_w = 130
+                    img_w = 110
                     img_h = img_w * (SIG_IMG_H_PX / SIG_IMG_W_PX)
-                    img_x = (CONTENT_RIGHT - 20) - img_w
+                    line_right = CONTENT_RIGHT - 20
+                    line_width = c.stringWidth(line, "Times-Roman", FONT_SIZE)
+                    line_center = line_right - line_width / 2
+                    img_x = line_center - img_w / 2
                     c.drawImage(SIGNATURE_IMG, img_x, y + 3, width=img_w, height=img_h,
                                 mask='auto', preserveAspectRatio=True)
                 d.write_line(line, right=True, right_margin_offset=20)
