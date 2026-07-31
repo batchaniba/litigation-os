@@ -644,7 +644,8 @@ export const cases = [
         { label: "Memorandum of Points and Authorities ISO Gerardo Serrato's Joinder and Demurrer (filed July 30, 2026)", path: "/documents/matter-20/Serrato MPA ISO Joinder and Demurrer.pdf" },
         { label: "Joint Stipulation to Advance Dates of Hearings on Demurrers of Individual Respondents; [Proposed] Order (filed July 30, 2026)", path: "/documents/matter-20/Joint Stipulation to Advance Hearing Dates - Individual Respondents; Proposed Order.pdf" },
         { label: "[Proposed] Order Granting Joinders of Individual Respondents; Sustaining Demurrers to Petition (submitted by Individual Respondents, unsigned, July 30, 2026)", path: "/documents/matter-20/Proposed Order Granting Joinders; Sustaining Demurrers - Individual Respondents.pdf" },
-        { label: "Stipulation to Advance Hearing Date — pre-filing draft with Petitioner's e-signature (superseded by the filed Joint Stipulation above)", path: "/documents/matter-20/Stipulation to Advance Hearing Date.docx" }
+        { label: "Stipulation to Advance Hearing Date — pre-filing draft with Petitioner's e-signature (superseded by the filed Joint Stipulation above)", path: "/documents/matter-20/Stipulation to Advance Hearing Date.docx" },
+        { label: "Opposition to Individual Respondents' Demurrers and Joinders; MPA — DRAFT, not yet dated, signed, or served (rebuts Serrato/Paul/Dutra's 'not a certifying official' argument under PC §679.10(b); incorporates the July 13, 2026 Opposition to CHP's Demurrer by reference for the joinder-based arguments)", path: "/documents/matter-20/Opposition to Individual Respondents' Demurrers and Joinders; MPA (DRAFT - unsigned, unfiled).pdf" }
       ]
     },
     {
