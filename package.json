@@ -8,6 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "validate": "node internal/scripts/validate-portfolio.mjs",
+    "index:build": "python3 internal/scripts/build-document-index.py",
+    "index:search": "python3 internal/scripts/search-documents.py",
     "extract:matter1": "node internal/scripts/extract-matter-pdfs.mjs"
   },
   "dependencies": {
