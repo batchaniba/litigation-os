@@ -307,7 +307,8 @@ Plaintiff is representing himself pro se across all 31 matters. The figures belo
 - **Deployment:** Vercel (primary) + GitHub Pages (mirror)
 - **Fonts:** Cormorant Garamond (headings), DM Sans (UI)
 - **Styling:** `internal/src/styles/app.css` + component styles
-- **Matter data:** one JSON file per matter under `internal/src/data/matters/`
+- **Matter data:** one JSON file per matter under `internal/src/data/matters/` (shell uses `summaries.json`; full records lazy-load)
+- **Timeline:** `internal/src/data/timeline.json` (full log) + generated `upcoming.json` for the shell deadline clock
 - **Documents:** `internal/public/documents/` (PDFs via Git LFS; shared exhibits under `_shared/`, blank Judicial Council templates under `_form-library/`)
 
 ## Local Development
@@ -323,9 +324,10 @@ Open http://localhost:5173/
 Useful scripts:
 
 ```bash
-npm run sync:summaries        # rebuild light matter summaries for the shell bundle
+npm run sync:summaries        # rebuild light matter summaries + document search index
+npm run sync:upcoming         # rebuild upcoming.json from timeline.json for the shell
 npm run generate:readme       # regenerate marked README tables from portfolio data
-npm run validate              # summaries + README freshness + schema/doc/cross-module checks
+npm run validate              # summaries + upcoming + README freshness + schema/doc checks
 npm run scaffold:matter -- 32 "Newanforbi v. Example"
 ```
 

@@ -55,7 +55,7 @@ const distinctJudges = new Set(
 ).size;
 const assignedMatters = PORTFOLIO.cases.filter(c => c.judge?.startsWith("Hon.")).length;
 
-const totalDocuments = PORTFOLIO.cases.reduce((s, c) => s + (c.documents?.length || 0), 0);
+const totalDocuments = PORTFOLIO.cases.reduce((s, c) => s + (c.documentCount || 0), 0);
 const totalEvidence = PORTFOLIO.cases.reduce((s, c) => s + (c.evidenceCount ?? c.evidence?.length ?? 0), 0);
 const totalCauses = PORTFOLIO.cases.reduce((s, c) => s + (c.causes?.length || 0), 0);
 
@@ -506,7 +506,7 @@ export const CensusTab = ({ setActiveTab, setClusterFilter, setStatusFilter, set
       <section style={{ borderTop: `1px solid ${theme.cardBorder}`, paddingTop: 18 }}>
         <div style={{ fontFamily: SANS, fontSize: 11.5, color: theme.subtleText, fontWeight: 700, marginBottom: 8 }}>Methodology &amp; caveats</div>
         <ul style={{ fontFamily: SANS, fontSize: 12, color: theme.subtleText, lineHeight: 1.7, margin: 0, paddingLeft: 18 }}>
-          <li>Every figure on this page except the small hand-curated set in <code>census.js</code> (named defendants, fee-waiver counts, the top-theories ranking, and the registry-bar employer/vendor list) is computed live from <code>matters.js</code>, <code>timeline.js</code>, <code>damages.js</code>, <code>lawyerFees.js</code>, and <code>outcomes.js</code> on every page load — it can't drift out of sync the way a hand-compiled snapshot can.</li>
+          <li>Every figure on this page except the small hand-curated set in <code>census.js</code> (named defendants, fee-waiver counts, the top-theories ranking, and the registry-bar employer/vendor list) is computed live from matter JSON, <code>timeline.json</code>, <code>damages.js</code>, <code>lawyerFees.js</code>, and <code>outcomes.js</code> on every page load — it can't drift out of sync the way a hand-compiled snapshot can.</li>
           <li>A supplemental cross-matter interconnectivity audit (disclosure completeness, claim-preclusion exposure, citation-chain accuracy) was run across all {totalMatters} matters and logged to <code>consistency_audit.json</code> — see that file for the full set of findings and what was corrected in place versus only flagged.</li>
           <li>The "moderate" damages tier is only explicitly stated in a minority of matters and is too sparse to sum meaningfully at the per-matter level; the portfolio-wide moderate figure comes from the de-duplicated model in <code>damages.js</code>, not a raw sum.</li>
         </ul>

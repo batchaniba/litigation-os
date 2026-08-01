@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { GOLD } from "../constants";
 import { useTheme } from "../ThemeContext";
+import { cases } from "../data/matters";
 import { outcomes } from "../data/outcomes";
-import { PORTFOLIO } from "../data";
 
 const fmt = (n) => "$" + n.toLocaleString();
 
@@ -28,8 +28,8 @@ const demandSentRange = earliestSent.getTime() === latestSent.getTime()
 const demandDeadlineRange = earliestDeadline.getTime() === latestDeadline.getTime()
   ? fmtDate(earliestDeadline)
   : `${fmtDate(earliestDeadline)} – ${fmtDate(latestDeadline)}`;
-const totalMatterCount = PORTFOLIO.cases.length;
-const activeMatterCount = PORTFOLIO.cases.filter(c => !c.archived).length;
+const totalMatterCount = cases.length;
+const activeMatterCount = cases.filter(c => !c.archived).length;
 
 function StatTile({ label, amount, prefix = "", color, sub, confidential = false, theme, href, linkLabel }) {
   const Tag = href ? "a" : "div";

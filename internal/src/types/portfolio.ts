@@ -32,7 +32,7 @@ export interface MatterSummary {
   defendants: string;
   causes: string[];
   evidenceCount: number;
-  documents?: PortfolioDocument[];
+  documentCount: number;
   serviceTracking?: ServiceRecord[];
   archived?: boolean;
   badge?: string;
@@ -46,6 +46,13 @@ export interface Matter extends MatterSummary {
   damages: string;
   risk: string;
   evidence: string[];
+  documents?: PortfolioDocument[];
+}
+
+export interface DocumentIndexEntry {
+  matter: number;
+  label: string;
+  path: string;
 }
 
 export interface TimelineEvent {

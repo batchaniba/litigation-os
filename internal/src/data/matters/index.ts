@@ -5,7 +5,7 @@ import summaries from "./summaries.json";
 export const cases = summaries as MatterSummary[];
 
 // Full NN.json records are code-split and loaded on demand.
-const matterLoaders = import.meta.glob(["./*.json", "!./summaries.json"]) as Record<
+const matterLoaders = import.meta.glob(["./*.json", "!./summaries.json", "!./document-index.json"]) as Record<
   string,
   () => Promise<{ default: Matter }>
 >;
@@ -23,6 +23,9 @@ export function loadMatter(number: number): Promise<Matter> {
     const matter = mod.default;
     if (matter.evidenceCount == null) {
       matter.evidenceCount = Array.isArray(matter.evidence) ? matter.evidence.length : 0;
+    }
+    if (matter.documentCount == null) {
+      matter.documentCount = Array.isArray(matter.documents) ? matter.documents.length : 0;
     }
     return matter;
   });

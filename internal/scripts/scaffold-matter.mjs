@@ -10,7 +10,7 @@
 //   internal/src/data/matters/NN.json
 //   internal/public/documents/matter-NN/
 //
-// Then fill in the JSON and add companion rows in timeline.js,
+// Then fill in the JSON and add companion rows in timeline.json,
 // damages.js, and lawyerFees.js (validate will warn until those exist).
 // ==========================================================
 import fs from "node:fs";
@@ -81,7 +81,8 @@ console.log(`Created ${path.relative(REPO_ROOT, docsDir)}/`);
 console.log(`
 Next checklist for Matter ${number}:
   [ ] Fill key_facts, procedural_status, damages, risk, causes in ${fileName}
-  [ ] Add timeline.js entries (mark upcoming deadlines with upcoming: true)
+  [ ] Add timeline.json entries (mark upcoming deadlines with upcoming: true)
+  [ ] Run npm run sync:upcoming after timeline edits
   [ ] Add damages.js matter_damages[] row (and damages_table category if needed)
   [ ] Add lawyerFees.js lawyer_fees[] row
   [ ] Update README matter inventory / deadlines if this matter is active
