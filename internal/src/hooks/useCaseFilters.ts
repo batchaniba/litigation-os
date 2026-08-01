@@ -1,15 +1,15 @@
 import { useMemo, useState } from "react";
 import { cases } from "../data/matters";
 import { matter_damages } from "../data/damages";
-import { timeline } from "../data/timeline";
-import type { MatterSummary } from "../types/portfolio";
+import upcoming from "../data/upcoming.json";
+import type { MatterSummary, TimelineEvent } from "../types/portfolio";
 import { parseEventDatePDT } from "../utils/dateUtils";
 
 export type MatterSortKey = "number" | "filed" | "deadline" | "exposure" | "court" | "status";
 export interface MatterFilterState { status: string; cluster: number | null; type: string | null; query: string; sort: MatterSortKey }
 
 const nextDeadlineByMatter = new Map<number, number>();
-for (const event of timeline.filter((item) => item.upcoming)) {
+for (const event of upcoming as TimelineEvent[]) {
   const timestamp = +parseEventDatePDT(event.date);
   for (const raw of event.matters.split(",")) {
     const matter = Number(raw.trim());
@@ -37,8 +37,7 @@ export const useCaseFilters = (initial: Partial<MatterFilterState> = {}) => {
     if (typeFilter && matter.type !== typeFilter) return false;
     if (!searchQuery) return true;
     const query = searchQuery.toLowerCase();
-    const docLabels = (matter.documents ?? []).map((doc) => doc.label);
-    return [matter.caption, matter.case_no, matter.court, matter.claims, matter.defendants, matter.status, ...(matter.causes ?? []), ...docLabels]
+    return [matter.caption, matter.case_no, matter.court, matter.claims, matter.defendants, matter.status, ...(matter.causes ?? [])]
       .some((value) => value?.toLowerCase().includes(query));
   }).sort((a, b) => {
     if (sortKey === "filed") return filedTimestamp(b.filed) - filedTimestamp(a.filed);

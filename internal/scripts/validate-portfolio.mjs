@@ -42,7 +42,9 @@ function walkFiles(dir) {
 }
 
 const cases = loadMatters();
-const { timeline } = await import(pathToFileURL(path.join(REPO_ROOT, "internal/src/data/timeline.js")).href);
+const timeline = JSON.parse(
+  fs.readFileSync(path.join(REPO_ROOT, "internal/src/data/timeline.json"), "utf8"),
+);
 const { matter_damages } = await import(pathToFileURL(path.join(REPO_ROOT, "internal/src/data/damages.js")).href);
 const { lawyer_fees } = await import(pathToFileURL(path.join(REPO_ROOT, "internal/src/data/lawyerFees.js")).href);
 const { outcomes } = await import(pathToFileURL(path.join(REPO_ROOT, "internal/src/data/outcomes.js")).href);
@@ -147,14 +149,15 @@ for (const m of cases) {
 }
 
 // JSON files on disk that are not loadable matter records
+const MATTERS_DIR_ALLOWLIST = new Set(["summaries.json", "document-index.json"]);
 for (const name of fs.readdirSync(MATTERS_DIR)) {
-  if (!name.endsWith(".json") || name === "summaries.json") continue;
+  if (!name.endsWith(".json") || MATTERS_DIR_ALLOWLIST.has(name)) continue;
   if (!/^\d{2}\.json$/.test(name)) {
     fail(`matters/${name}: filename must be NN.json (zero-padded matter number)`);
   }
 }
 
-// ---------- timeline.js ----------
+// ---------- timeline.json ----------
 
 for (const [i, t] of timeline.entries()) {
   const tag = `timeline[${i}] (${t.date ?? "<no date>"})`;

@@ -4,7 +4,7 @@
 //
 // Source of truth:
 //   - internal/src/data/matters/NN.json  (matter tables + counts)
-//   - internal/src/data/timeline.js      (upcoming deadlines)
+//   - internal/src/data/timeline.json    (upcoming deadlines)
 //   - internal/src/data/damages.js       (damages summary + aggregates)
 //
 // Markers (HTML comments) in README.md delimit regenerable blocks:
@@ -132,7 +132,9 @@ function replaceBlock(readme, name, body) {
 }
 
 const cases = loadMatters();
-const { timeline } = await import(pathToFileURL(path.join(REPO_ROOT, "internal/src/data/timeline.js")).href);
+const timeline = JSON.parse(
+  fs.readFileSync(path.join(REPO_ROOT, "internal/src/data/timeline.json"), "utf8"),
+);
 const { damages_table } = await import(pathToFileURL(path.join(REPO_ROOT, "internal/src/data/damages.js")).href);
 
 const active = cases.filter((m) => bucket(m) === "active");

@@ -1,9 +1,10 @@
 import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Outlet, useLocation } from "react-router-dom";
-import { timeline } from "../../data/timeline";
+import upcoming from "../../data/upcoming.json";
 import { ThemeContext, THEMES } from "../../ThemeContext";
 import { useDeadlineClock } from "../../hooks/useDeadlineClock";
 import { PortfolioUIContext, type PortfolioUIValue } from "../../context/PortfolioUIContext";
+import type { TimelineEvent } from "../../types/portfolio";
 import { getPDTMidnight, parseEventDatePDT } from "../../utils/dateUtils";
 import { DeadlineBanner } from "./DeadlineBanner";
 import { Breadcrumbs } from "./Breadcrumbs";
@@ -34,8 +35,8 @@ export function ShellLayout() {
 
   const upcomingEvents = useMemo(() => {
     const today = getPDTMidnight();
-    return timeline
-      .filter((event) => event.upcoming && parseEventDatePDT(event.date) >= today)
+    return (upcoming as TimelineEvent[])
+      .filter((event) => parseEventDatePDT(event.date) >= today)
       .sort((a, b) => +parseEventDatePDT(a.date) - +parseEventDatePDT(b.date));
   }, []);
   const timeLeft = useDeadlineClock(upcomingEvents);

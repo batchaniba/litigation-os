@@ -1,8 +1,10 @@
 import { useEffect, useMemo, useRef, useState, type KeyboardEvent as ReactKeyboardEvent } from "react";
 import { Link } from "react-router-dom";
 import { cases } from "../../data/matters";
+import documentIndex from "../../data/matters/document-index.json";
 import { timeline } from "../../data/timeline";
 import { useTheme } from "../../ThemeContext";
+import type { DocumentIndexEntry } from "../../types/portfolio";
 import { formatMatterPath } from "../../utils/formatters";
 import { withBase } from "../../utils/paths";
 
@@ -14,6 +16,7 @@ export default function GlobalSearchDialog({ onClose }: { onClose: () => void })
   const inputRef = useRef<HTMLInputElement>(null);
   const resultRefs = useRef<Array<HTMLAnchorElement | null>>([]);
   const theme = useTheme();
+  const captionByMatter = useMemo(() => new Map(cases.map((matter) => [matter.number, matter.caption])), []);
 
   useEffect(() => {
     inputRef.current?.focus();
@@ -34,15 +37,23 @@ export default function GlobalSearchDialog({ onClose }: { onClose: () => void })
     for (const matter of cases) {
       const fields = [matter.caption, matter.case_no, matter.court, matter.defendants, matter.claims, ...(matter.causes ?? [])];
       if (fields.some((field) => field?.toLowerCase().includes(needle))) found.push({ id: `matter-${matter.number}`, type: "Matter", title: `Matter ${matter.number} · ${matter.caption}`, detail: `${matter.case_no} · ${matter.status}`, matter: matter.number });
-      for (const document of matter.documents ?? []) {
-        if (document.label.toLowerCase().includes(needle) || document.path.toLowerCase().includes(needle)) found.push({ id: `document-${matter.number}-${document.path}`, type: "Document", title: document.label, detail: `Matter ${matter.number} · ${matter.caption}`, href: withBase(document.path) });
+    }
+    for (const document of documentIndex as DocumentIndexEntry[]) {
+      if (document.label.toLowerCase().includes(needle) || document.path.toLowerCase().includes(needle)) {
+        found.push({
+          id: `document-${document.matter}-${document.path}`,
+          type: "Document",
+          title: document.label,
+          detail: `Matter ${document.matter} · ${captionByMatter.get(document.matter) ?? "Unknown matter"}`,
+          href: withBase(document.path),
+        });
       }
     }
     for (const [index, event] of timeline.entries()) {
       if (`${event.event} ${event.date} ${event.type} ${event.matters}`.toLowerCase().includes(needle)) found.push({ id: `event-${index}`, type: "Event", title: event.event, detail: `${event.date} · Matter ${event.matters}`, matter: Number(event.matters.split(",")[0]) || undefined });
     }
     return found.slice(0, 40);
-  }, [query]);
+  }, [captionByMatter, query]);
 
   useEffect(() => { setActiveIndex(results.length ? 0 : -1); }, [results.length, query]);
   const handleSearchKeys = (event: ReactKeyboardEvent<HTMLInputElement>) => {
