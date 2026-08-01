@@ -367,9 +367,9 @@ export function OutcomesTab() {
           to respond. Matters 25 and 26 are already filed and assigned; pre-filing demands of $85,000 each went
           out citing the Pilot settlement as a resolved precedent. Matter 27 followed the same $85,000 pattern
           against both Randstad and RK Logistics after a termination that came before the FCRA waiting period
-          even ran; the complaint is already on file (No. 26CV199902, Alameda Sup. Ct.), and RK Logistics has
-          since denied the demand through counsel — a response that reaches only the Tameny claim against RK
-          Logistics and leaves Randstad's own exposure untouched. These outcomes are not anomalies; they reflect the quality of the underlying record
+          even ran; the complaint is already on file (No. 26CV199902, Alameda Sup. Ct.), both defendants were
+          SERVED July 30, 2026, and RK Logistics has since denied the demand through counsel — a response that
+          reaches only the Tameny claim against RK Logistics and leaves Randstad's own exposure untouched. These outcomes are not anomalies; they reflect the quality of the underlying record
           across all {totalMatterCount} matters. The remaining {fmt(moderate - combined)} at moderate estimate represents
           {activeMatterCount} active matters where that same record is still at work.
         </p>
