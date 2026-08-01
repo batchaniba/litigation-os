@@ -2,24 +2,23 @@
 // ==========================================================
 // Portfolio integrity checker.
 //
-// Runs the checks that were previously done ad hoc, by hand, in
-// individual sessions -- every documents[] path resolving to a real
-// file, required fields present on each matter/timeline entry, and
-// every timeline entry pointing at a matter number that actually
-// exists. Exits non-zero (and prints every problem found, not just
-// the first) if anything is wrong, so it can run in CI instead of
-// depending on whoever happens to remember to check by hand.
+// Validates matter JSON records, timeline references, cross-module
+// coverage (damages / lawyer fees), document path existence, orphan
+// files under public/documents, and outcomes opinion paths.
+// Exits non-zero if any error is found (warnings are informational).
 //
 // Usage: node internal/scripts/validate-portfolio.mjs
 //        npm run validate
 // ==========================================================
 import fs from "node:fs";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
+import { loadMatters, MATTERS_DIR } from "./load-matters.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(__dirname, "..", "..");
 const PUBLIC_ROOT = path.join(REPO_ROOT, "internal", "public");
+const DOCUMENTS_ROOT = path.join(PUBLIC_ROOT, "documents");
 
 const errors = [];
 const warnings = [];
@@ -31,10 +30,24 @@ function warn(msg) {
   warnings.push(msg);
 }
 
-const { cases } = await import(path.join(REPO_ROOT, "internal/src/data/matters.js"));
-const { timeline } = await import(path.join(REPO_ROOT, "internal/src/data/timeline.js"));
+function walkFiles(dir) {
+  const out = [];
+  if (!fs.existsSync(dir)) return out;
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    const full = path.join(dir, entry.name);
+    if (entry.isDirectory()) out.push(...walkFiles(full));
+    else if (entry.isFile() && !entry.name.startsWith(".")) out.push(full);
+  }
+  return out;
+}
 
-// ---------- matters.js ----------
+const cases = loadMatters();
+const { timeline } = await import(pathToFileURL(path.join(REPO_ROOT, "internal/src/data/timeline.js")).href);
+const { matter_damages } = await import(pathToFileURL(path.join(REPO_ROOT, "internal/src/data/damages.js")).href);
+const { lawyer_fees } = await import(pathToFileURL(path.join(REPO_ROOT, "internal/src/data/lawyerFees.js")).href);
+const { outcomes } = await import(pathToFileURL(path.join(REPO_ROOT, "internal/src/data/outcomes.js")).href);
+
+// ---------- matter JSON records ----------
 
 const REQUIRED_MATTER_FIELDS = [
   ["number", "number"],
@@ -55,9 +68,13 @@ const REQUIRED_MATTER_FIELDS = [
 ];
 
 const seenMatterNumbers = new Set();
+const referencedDocPaths = new Set();
+let missingFiledCount = 0;
 
 for (const m of cases) {
-  const tag = `Matter ${m.number ?? "<no number>"} (${m.caption ?? "<no caption>"})`;
+  const source = m.__sourceFile ?? "?.json";
+  const tag = `Matter ${m.number ?? "<no number>"} (${m.caption ?? "<no caption>"}) [${source}]`;
+  const expectedName = `${String(m.number).padStart(2, "0")}.json`;
 
   if (m.number == null) {
     fail(`${tag}: missing required field "number"`);
@@ -66,6 +83,9 @@ for (const m of cases) {
       fail(`Matter number ${m.number} is used more than once`);
     }
     seenMatterNumbers.add(m.number);
+    if (source !== expectedName) {
+      fail(`${tag}: file should be named ${expectedName}`);
+    }
   }
 
   for (const [field, type] of REQUIRED_MATTER_FIELDS) {
@@ -112,15 +132,27 @@ for (const m of cases) {
           const onDisk = path.join(PUBLIC_ROOT, d.path);
           if (!fs.existsSync(onDisk)) {
             fail(`${dtag}: path does not resolve to a real file: ${d.path}`);
+          } else {
+            referencedDocPaths.add(path.resolve(onDisk));
           }
         }
         if ("filed" in d && typeof d.filed !== "boolean") {
           fail(`${dtag}: "filed" should be boolean when present, got ${typeof d.filed}`);
         } else if (!("filed" in d)) {
-          warn(`${dtag}: no "filed" field set (label: "${d.label}") -- status only lives in prose`);
+          missingFiledCount += 1;
         }
       }
     }
+  }
+}
+
+// JSON files on disk that are not loadable matter records
+for (const name of fs.readdirSync(MATTERS_DIR)) {
+  if (!name.endsWith(".json")) continue;
+  const n = Number(name.replace(/\.json$/, ""));
+  if (Number.isNaN(n) || !seenMatterNumbers.has(n)) {
+    // loadMatters already parsed all json; flag orphans / bad names
+    if (Number.isNaN(n)) fail(`matters/${name}: filename must be NN.json (zero-padded matter number)`);
   }
 }
 
@@ -139,7 +171,7 @@ for (const [i, t] of timeline.entries()) {
       if (Number.isNaN(n)) {
         fail(`${tag}: "matters" contains non-numeric entry "${raw.trim()}"`);
       } else if (!seenMatterNumbers.has(n)) {
-        fail(`${tag}: references matter ${n}, which does not exist in matters.js`);
+        fail(`${tag}: references matter ${n}, which does not exist in matter JSON records`);
       }
     }
   }
@@ -148,9 +180,93 @@ for (const [i, t] of timeline.entries()) {
   }
 }
 
+// ---------- damages / lawyer fees coverage ----------
+
+const damageNumbers = new Set((matter_damages ?? []).map((d) => d.number));
+const feeNumbers = new Set((lawyer_fees ?? []).map((f) => f.number));
+
+for (const n of seenMatterNumbers) {
+  if (!damageNumbers.has(n)) {
+    warn(`Matter ${n}: no entry in damages.js matter_damages[]`);
+  }
+  if (!feeNumbers.has(n)) {
+    warn(`Matter ${n}: no entry in lawyerFees.js lawyer_fees[]`);
+  }
+}
+
+for (const d of matter_damages ?? []) {
+  if (!seenMatterNumbers.has(d.number)) {
+    fail(`damages.js matter_damages: references matter ${d.number}, which has no JSON record`);
+  }
+}
+for (const f of lawyer_fees ?? []) {
+  if (!seenMatterNumbers.has(f.number)) {
+    fail(`lawyerFees.js: references matter ${f.number}, which has no JSON record`);
+  }
+}
+
+// ---------- outcomes paths ----------
+
+function checkOutcomePath(tag, p) {
+  if (typeof p !== "string" || !p.trim()) return;
+  if (!p.startsWith("/documents/")) {
+    fail(`${tag}: path "${p}" should start with "/documents/"`);
+    return;
+  }
+  const onDisk = path.join(PUBLIC_ROOT, p);
+  if (!fs.existsSync(onDisk)) {
+    fail(`${tag}: path does not resolve to a real file: ${p}`);
+  } else {
+    referencedDocPaths.add(path.resolve(onDisk));
+  }
+}
+
+for (const [i, op] of (outcomes.judicial_opinions ?? []).entries()) {
+  const tag = `outcomes.judicial_opinions[${i}] (matter ${op.matter ?? "?"})`;
+  if (op.matter != null && !seenMatterNumbers.has(op.matter)) {
+    fail(`${tag}: references matter ${op.matter}, which has no JSON record`);
+  }
+  checkOutcomePath(`${tag}.document_path`, op.document_path);
+  checkOutcomePath(`${tag}.objections_path`, op.objections_path);
+  checkOutcomePath(`${tag}.nsa_path`, op.nsa_path);
+}
+
+// ---------- filed-field + orphan document summaries (warn) ----------
+
+if (missingFiledCount > 0) {
+  warn(
+    `${missingFiledCount} documents[] entries omit boolean "filed" (status lives only in prose labels)`,
+  );
+}
+
+const onDiskDocs = walkFiles(DOCUMENTS_ROOT).map((p) => path.resolve(p));
+const formLibraryPrefix = path.resolve(path.join(DOCUMENTS_ROOT, "_form-library"));
+const orphans = [];
+for (const full of onDiskDocs) {
+  if (full.startsWith(formLibraryPrefix + path.sep) || full === formLibraryPrefix) continue;
+  if (!referencedDocPaths.has(full)) {
+    orphans.push(path.relative(PUBLIC_ROOT, full));
+  }
+}
+if (orphans.length) {
+  const preview = orphans.slice(0, 15);
+  warn(`${orphans.length} orphan document(s) on disk not referenced in matters/outcomes:`);
+  for (const rel of preview) warn(`  - ${rel}`);
+  if (orphans.length > preview.length) {
+    warn(`  …and ${orphans.length - preview.length} more`);
+  }
+}
+
 // ---------- report ----------
 
-console.log(`Checked ${cases.length} matters, ${timeline.length} timeline entries.`);
+console.log(
+  `Checked ${cases.length} matter JSON records in ${path.relative(REPO_ROOT, MATTERS_DIR)}, ` +
+    `${timeline.length} timeline entries, ` +
+    `${(matter_damages ?? []).length} damages rows, ` +
+    `${(lawyer_fees ?? []).length} lawyer-fee rows, ` +
+    `${(outcomes.judicial_opinions ?? []).length} judicial opinions, ` +
+    `${onDiskDocs.length} files under documents/.`,
+);
 
 if (warnings.length) {
   console.log(`\n${warnings.length} warning(s):`);

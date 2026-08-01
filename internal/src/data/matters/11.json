@@ -1,0 +1,31 @@
+{
+  "number": 11,
+  "caption": "Newanforbi v. Macomber",
+  "case_no": "TBD (USDC E.D. Cal.)",
+  "court": "USDC E.D. Cal.",
+  "claims": "42 USC 1983: Procedural Due Process (Policy 19-03)",
+  "status": "DISMISSED WITH PREJUDICE — Notice of Voluntary Dismissal filed June 29, 2026 (FRCP 41(a)(1)(A)(i)); self-executing",
+  "filed": "March 2, 2026",
+  "judge": "TBD",
+  "cluster": 2,
+  "type": "Federal",
+  "archived": true,
+  "badge": "DISMISSED",
+  "defendants": "Jeff Macomber, Secretary of CDCR (official capacity only)",
+  "causes": [
+    "Procedural Due Process (14th Amend.) — Policy 19-03 challenge; declaratory/injunctive relief under Ex parte Young"
+  ],
+  "key_facts": "Challenges CDCR's enforcement of Policy 19-03's categorical 6.5-year bar after Section 3574 adoption (April 2025). Noguchi cited Policy 19-03 as sole basis: 'only completed approximately 4 years of the required 6.5 years.' No Section 3574 analysis. LS/CMI 5 vs. threshold 11. Form 602 exhausted through 3 levels. Equitable relief only.",
+  "procedural_status": "Filed 03/02/2026. Early stage. June 29, 2026: Notice of Voluntary Dismissal With Prejudice filed under FRCP 41(a)(1)(A)(i)); self-executing; no defendant had filed an answer or motion for summary judgment; case dismissed with prejudice.",
+  "damages": "Equitable: Declaratory judgment; permanent injunction; de novo review; DAPO training order; §1988 fees",
+  "risk": "Heck v. Humphrey (addressed via Wilkinson v. Dotson); abstention arguments (distinguished).",
+  "evidence": [
+    "Form 1502-DR",
+    "Policy 19-03",
+    "Section 3574/NCR 25-01",
+    "Form 602 grievance",
+    "LS/CMI documentation",
+    "Dwyer/ACSOL decisions"
+  ],
+  "documents": []
+}

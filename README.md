@@ -273,16 +273,26 @@ Plaintiff is representing himself pro se across all 31 matters. The figures belo
 - **Build tool:** Vite 6
 - **Deployment:** Vercel (primary) + GitHub Pages (mirror)
 - **Fonts:** Cormorant Garamond (headings), DM Sans (UI)
-- **Styling:** Inline styles (zero external CSS dependencies)
+- **Styling:** `internal/src/styles/app.css` + component styles
+- **Matter data:** one JSON file per matter under `internal/src/data/matters/`
+- **Documents:** `internal/public/documents/` (PDFs via Git LFS; shared exhibits under `_shared/`)
 
 ## Local Development
 
 ```bash
 npm install
+git lfs pull   # if document PDFs show as pointer files
 npm run dev
 ```
 
 Open http://localhost:5173/
+
+Useful scripts:
+
+```bash
+npm run validate              # schema, doc paths, cross-module coverage
+npm run scaffold:matter -- 32 "Newanforbi v. Example"
+```
 
 ## Build
 
@@ -293,9 +303,9 @@ npm run preview # preview the production build locally
 
 ## Deployment
 
-**Vercel** builds and deploys automatically on every push to `main` — no extra config, served from the domain root.
+**Vercel** builds and deploys automatically on every push to `main` — no extra config, served from the domain root. Enable Git LFS for the Vercel project so document PDFs are present at build time.
 
-**GitHub Pages** deploys via `.github/workflows/deploy-gh-pages.yml` on every push to `main`. Because GitHub Pages serves this repo as a project site under a subpath (`/interactive-litigation-portfolio/`) rather than a domain root, `vite.config.js` conditionally sets `base` from a `GITHUB_PAGES` env var the workflow sets at build time — Vercel builds leave it unset and get `base: '/'` as before. One-time setup: in the repo's **Settings → Pages**, set **Source** to **GitHub Actions**.
+**GitHub Pages** deploys via `.github/workflows/deploy-gh-pages.yml` on every push to `main` (typecheck + validate + build; LFS checkout enabled). Because GitHub Pages serves this repo as a project site under a subpath (`/interactive-litigation-portfolio/`) rather than a domain root, `vite.config.js` conditionally sets `base` from a `GITHUB_PAGES` env var the workflow sets at build time — Vercel builds leave it unset and get `base: '/'` as before. One-time setup: in the repo's **Settings → Pages**, set **Source** to **GitHub Actions**.
 
 ---
 

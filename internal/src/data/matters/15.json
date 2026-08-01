@@ -1,0 +1,110 @@
+{
+  "number": 15,
+  "caption": "Newanforbi v. California Department of Corrections and Rehabilitation, et al.",
+  "case_no": "STK-CV-UPI-2026-5417",
+  "court": "San Joaquin Sup. Ct.",
+  "claims": "Negligence, False Imprisonment, IIED, Breach of Mandatory Duty",
+  "status": "ABANDONED — Voluntary Dismissal With Prejudice filed July 24, 2026, as to all defendants (CDCR, Keely Dodd, and Gary Noguchi), due to a real, credible safety threat. Complaint for Damages (STK-CV-UPI-2026-5417) had been filed June 11, 2026 (San Joaquin Sup. Ct.); CDCR and Dodd personally served June 22, 2026; responsive pleading deadline had been extended to Aug. 21, 2026 by agreement with Judith S. Gronna, DAG (Correctional Law Section, CA DOJ), with a meet-and-confer call set for Jul. 30, 2026 — both now moot. CMC previously set Dec. 9, 2026, Dept. 10C (Judge Jayne Lee), vacated.",
+  "filed": "May 13, 2026 (original, Sacramento Sup. Ct.); RECALIBRATED Complaint dated June 8, 2026 (San Joaquin Sup. Ct., supersedes)",
+  "judge": "Hon. Jayne Lee, Dept. 10C",
+  "cluster": 2,
+  "type": "State",
+  "archived": true,
+  "badge": "ABANDONED",
+  "defendants": "Keely Dodd (#6462), Parole Administrator, DAPO Northern Region HQ Sacramento (individually); Gary Noguchi (#7284), Unit Supervisor (individually); Joseelyn Rojo, Parole Agent (individually); CDCR; DOES 1-20. Long Moua (#7472) authoring agent only — non-party; CDCR vicariously liable. Andrew Derrick (#6910) dropped from this action. Punitive damages sought against Dodd, Noguchi, and Rojo individually (Civ. Code §3294); NOT against CDCR (Gov. Code §818).",
+  "causes": [
+    "Count 1 — Negligence; Negligent Undertaking (Gov. Code §820(a)) against all defendants — voluntary election to conduct discharge review created ministerial duty of care; operational/clerical failures (wrong parolee name, obsolete form, fabricated rules, non-service) are not discretionary; §820.2 immunity inapplicable",
+    "Count 2 — False Imprisonment against all defendants — Nov. 19, 2025 void instrument (names 'Eagan') supplies no lawful privilege; continuing restraint (GPS, curfew, warrantless searches) accruing $100/day from Nov. 19, 2025",
+    "Count 3 — IIED against individual defendants (Dodd, Noguchi, Rojo) — extreme and outrageous to strip liberty through instrument adjudicating another person by name; at minimum reckless disregard; punitive damages under Civ. Code §3294",
+    "Count 4 — Breach of Mandatory Duty (Gov. Code §815.6) against CDCR — 15 CCR §§3720–3722 impose mandatory 'shall' duties on form, scoring, documentation, and service when review is conducted; Apr. 17, 2025 §3574 amendments reinforce individualized-process duties"
+  ],
+  "key_facts": "RECALIBRATED complaint (June 8, 2026) responds to Macomber tentative ruling (May 29, 2026, Sacramento Super. Ct. No. 26WM000028) holding mandate is the wrong vehicle for custody-directed/prospective relief. This action seeks money damages only for completed torts — no discharge order, no future review, no custody adjudication. Even a court persuaded Plaintiff must serve a ten-year term cannot license the affirmative wrongs: the lawfulness of the underlying parole term and the validity of the particular November 2025 instrument are distinct questions. Seven documented facial defects provable from the four corners of the Form 1502-DR: (a) Noguchi's supervisor comments name 'Eagan' — 'Eagan has only completed approximately 4 years of the required 6.5 years of supervision' — proving no individualized review of Plaintiff occurred; (b) fabricated '6.5-year' supervision minimum (no statute, regulation, or duly promulgated rule); (c) fabricated Policy 19-03 categorical '10-year term' exclusion (no published version); (d) mutually exclusive frameworks — Case Type PC3000(b)(5)(B) vs. '10-year term' denial; (e) obsolete CDCR Form 1502-DR (Rev. 01/22) bypassing current scoring rubric effective April 17, 2025; (f) omission of mandatory CTM findings, CDCR Form 3043, treatment-provider signature, and good-cause finding; (g) non-service — 'Parolee Provided Copy,' 'Mailed By,' and 'Delivered By' fields on page 5 all blank. Dodd's Nov. 19, 2025 electronic ratification converts facially defective field recommendation into operative administrative decree. CDL losses: $6,000/month ongoing (~$72,000/year but-for capacity at $33.35/hour regular, $50.03/hour premium per Centerline Wage Notice Oct. 31, 2024). Liberty loss: $100/day from Nov. 19, 2025 (200+ days at filing; PC §4904 benchmark $70/day for ordinary wrongful supervision). HOPE 'non-compliant'/'failed treatment' designations structurally impossible under program's blanket retention policy (In re Dwyer, 2023). Plaintiff supervised by Stockton 2 GPS Parole Unit, San Joaquin County — venue proper there (CCP §§393(b), 395(a)). Post-filing retaliatory transfer (July 2, 2026): the Nov. 2025 Form 1502-DR itself documents four prior violations during the discharge review period, each resolved with a verbal reprimand or PACT program referral — never a transfer. The same category of conduct, previously handled informally, was selectively enforced as grounds for an inter-county transfer only after Plaintiff filed this action naming Noguchi individually. The transfer displaced Plaintiff from his Stockton family housing and Stockton job and relocated him to Santa Clara County, away from the San Joaquin courthouse where this case is pending, while the related federal retaliation case (Matter 3, 2:26-cv-00004-DJC-JDP) sat fully briefed and awaiting ruling.",
+  "procedural_status": "Original gov. claim filed March 21, 2026 (DGS/ORIM); incident date December 1, 2025; Form 1502-DR final approval November 19, 2025. Original gov. claim deemed rejected May 5, 2026 (45 days, §912.4(c)). Original complaint dated May 8, 2026; filed May 13, 2026 (Sacramento Sup. Ct.). Second gov. claim presented April 23, 2026 (Conf. No. 26042324436661, Ex. A); deemed rejected June 7, 2026 (45 days, Gov. Code §912.4(c)). Companion mandate petition (Sacramento Super. Ct. No. 26WM000028) received tentative ruling May 29, 2026 sustaining AG demurrer — court held custody-directed prospective relief belongs in habeas and that PC §3000(b)(2)(B) imposes 10-year term eliminating §3008 duty. RECALIBRATED Complaint for Damages (June 8, 2026), filed as Complaint for Damages (STK-CV-UPI-2026-5417) June 11, 2026 in San Joaquin Superior Court — damages only, no custody relief, fundamentally different in kind from mandate petition. Timely under Gov. Code §945.6(a)(2) two-year period from second gov. claim deemed rejection (June 7, 2026). Suit deadline under first claim: Nov. 5, 2026. Jury trial demanded. CMC set Dec. 9, 2026, 8:30 AM, Dept. 10C, Judge Jayne Lee. Unlimited civil jurisdiction; no statutory cap on general or punitive damages. July 2, 2026 — immediately after the June 11 filing (which names Supervising Parole Agent Gary Noguchi, a defendant here), Stockton parole transferred Plaintiff's supervision from San Joaquin County to Santa Clara County (San Jose), stating as the basis a parole violation category that the Nov. 2025 Form 1502-DR discharge review shows was resolved four other times during the same review period by verbal reprimand or PACT referral rather than transfer. The transfer cost Plaintiff his Stockton family housing and Stockton employment and moved him away from the San Joaquin County courthouse where this action is pending; it coincided with the Matter 3 federal MTD (2:26-cv-00004-DJC-JDP) being fully briefed and under submission. June 22, 2026: Defendants CDCR and Keely Dodd personally served (Sheriff's Civil Bureau, Agent T. Taber) via Elizabeth Scrambler, Office Technician, at CDCR's Sacramento office (10111 Old Placerville Road, Sacramento, CA 95827), each at 10:15 AM; fee waived. June 29, 2026: Sheriff's Proofs of Service of Summons (POS-010) as to both CDCR and Dodd filed with San Joaquin Superior Court. July 16, 2026 (5:18 PM): Judith S. Gronna, Deputy Attorney General (Correctional Law Section, CA DOJ; (619) 321-5785), emailed Plaintiff confirming representation of Defendants Dodd and CDCR; stated matter was recently assigned and she needed additional time to prepare a responsive pleading and meet and confer regarding a demurrer; requested Plaintiff's non-opposition to a 30-day extension of the July 22, 2026 responsive pleading deadline (to August 21, 2026) under CCP §430.41(a)(2); proposed meet-and-confer dates of July 30, 2026 or August 10–14, 2026. July 16, 2026 (6:15 PM): Plaintiff confirmed non-opposition to 30-day extension to August 21, 2026, and confirmed availability for meet-and-confer on July 30, 2026 at 11:00 a.m. Responsive pleading deadline EXTENDED to August 21, 2026 (confirmed by mutual agreement; Gronna to file §430.41(a)(2) declaration). July 17, 2026 (8:33 AM): Gronna confirmed 11:00 AM on July 30 works. (8:44 AM): Gronna issued calendar invite — JSG to call BNN at (209) 801-4442. Meet-and-confer under CCP §430.41 confirmed July 30, 2026 at 11:00 a.m. Demurrer anticipated.",
+  "damages": "Economic: Lost CDL wages accruing ~$6,000/month from Nov. 19, 2025 through judgment (but-for earning capacity ~$72,000/year; $33.35/hour regular, $50.03/hour premium — Centerline Wage Notice Oct. 31, 2024); out-of-pocket compliance costs (HOPE transportation ~30 miles round trip multiple times/week at IRS mileage rate, 6–8 hrs/week attendance time value, program fees, polygraph exams, GPS maintenance). Non-economic: Liberty deprivation $100/day from Nov. 19, 2025 (200+ days at filing, accruing daily; PC §4904 benchmark); severe emotional distress (anxiety from GPS monitoring on fabricated/misidentified basis; depression, hypervigilance, sleep disruption; indignity of liberty governed by document naming another person; humiliation from 'non-compliant' label; reputational harm). Punitive damages against Dodd, Noguchi, and Rojo individually (Civ. Code §3294) — willful, oppressive, malicious conduct; NOT sought against CDCR (Gov. Code §818). No statutory cap on general or punitive damages. Uncompensated (not yet pled) — loss of Stockton family housing and loss of Stockton employment resulting from the July 2, 2026 retaliatory transfer to Santa Clara County; relevant to punitive damages as further evidence of willful/oppressive conduct and to a prospective retaliation claim.",
+  "risk": "§820.2 discretionary immunity inapplicable — acts and omissions are ministerial/operational/clerical, not policy choices (McCorkle v. City of LA (1969) 70 Cal.2d 252; Kavanaugh; Caldwell v. Montoya). Negligence in performing a task after the discretionary decision to act is not immunized. §820.4 does not exonerate for false imprisonment. The 'Eagan' copy-paste error is uniquely powerful — Noguchi personally authored the comment naming a different parolee, not merely failed to catch a subordinate's error; he cannot claim reasonable reliance. Dodd possessed authority to reject/correct/remand and declined. Fabricated rules ('6.5-year' minimum; '10-year term' Policy 19-03 exclusion) constitute ultra vires conduct negating immunity. Continuing-tort doctrine: each day of enforcement is a separate actionable wrong; limitations period measured backward from filing (Aryeh v. Canon (2013) 55 Cal.4th 1185; Watts v. Johnson (2018) 27 Cal.App.5th 734). Sullivan v. County of LA (1974) supports damages for unlawful detention. July 2, 2026 transfer: departure from CDCR's own established practice (four comparable violations in the same 1502-DR review period resolved by verbal reprimand/PACT referral, never transfer) is evidence of pretext; combined with the one-day-after-filing timing and the named defendant (Noguchi) ordering or approving the transfer, this supports a retaliation/right-to-court-access theory and undercuts any qualified/discretionary immunity defense grounded in routine supervision decisions. | ANTICIPATED EXHAUSTION DEMURRER (Gronna) — REBUTTAL: (1) GOV CLAIMS ACT COMPLIANCE: For tort damages, the Government Claims Act (Gov. Code §§905, 910, 945.4) is the exhaustion mechanism — two claims filed (Mar. 21 and Apr. 23, 2026) and deemed rejected; no additional CDCR internal grievance process is required before a tort damages suit (City of San Jose v. Superior Court (1974) 12 Cal.3d 447). (2) MACOMBER RULING CONFIRMS THIS ACTION IS CORRECT VEHICLE: The May 29, 2026 tentative ruling in 26WM000028 held that custody-directed/prospective relief belongs in habeas corpus, not mandate — and explicitly that 'CDCR had no duty to follow Section 3008' in conducting the review. This ruling does not touch Money Damages — it confirms the mandate petition was the wrong vehicle for what Petitioner sought THERE (custody/discharge); this action seeks no custody relief, making Macomber inapplicable here. (3) MACOMBER RULING ACTUALLY SUPPORTS NEGLIGENT UNDERTAKING: The court expressly stated 'it is not clear why CDCR undertook the early parole review process in the first place' and 'CDCR never explained why it has done so.' If CDCR had no statutory duty to conduct the review (per Macomber), yet voluntarily undertook it anyway, its negligent execution creates liability under the negligent undertaking doctrine (Restatement (Second) of Torts §324A; Paz v. California (1990) 22 Cal.3d 647) — voluntary assumption of a task creates a duty to perform it non-negligently. (4) ULTRA VIRES/EXCESS JURISDICTION EXCEPTION: Where an agency acts in excess of its jurisdiction (as Macomber found CDCR did vis-à-vis §3008), exhaustion of administrative remedies is excused (Hittle v. Santa Barbara County Employees Retirement Ass'n (1985) 39 Cal.3d 374; Campbell v. Regents of University of California (2005) 35 Cal.4th 311). The 'Eagan' misidentification error is itself excess-of-jurisdiction conduct — an instrument adjudicating a third party by name is void on its face. (5) HABEAS CORPUS (MATTER 19) IS ACTIVE: Hon. Robert Hawk issued an Order Extending Time (July 2, 2026, Case C2604791) — the court is actively reviewing the habeas petition for custody/discharge relief, demonstrating Petitioner IS pursuing the proper vehicle for custody claims in parallel. Any exhaustion argument premised on failure to pursue a remedy is defeated by this active proceeding.",
+  "evidence": [
+    "Form 1502-DR (Ex. B) — 7 facial defects provable from four corners; Discharge Review Report authored by Moua Nov. 14, signed by Noguchi & Dodd Nov. 19, 2025; page 5 service fields blank",
+    "Gov. Claim receipt, April 23, 2026, Conf. No. 26042324436661 (Ex. A)",
+    "Dwyer v. CDCR court orders — condemning same/similar CDCR SOMP retention practices",
+    "ACSOL v. Macomber demurrer overruled — precedent on discharge-review duties",
+    "OAL 15 CCR §3574 approval, eff. April 17, 2025 — mandatory individualized-process duties",
+    "Centerline Drivers Wage Notice, Oct. 31, 2024 — $33.35/hour regular, $50.03/hour premium; ~$72,000/year but-for earning capacity",
+    "W-2 wage statements (6 carriers) — CDL wage history",
+    "HOPE treatment program records and policies — 'non-compliant' designations structurally impossible under blanket retention policy",
+    "GPS monitoring records — 24/7 custodial restraint imposed under void instrument",
+    "Newanforbi v. Macomber tentative ruling (May 29, 2026, Sacramento Super. Ct. No. 26WM000028) — confirms custody-directed relief is wrong vehicle; this action is the correct one",
+    "Form 1502-DR (Nov. 2025) — documents 4 prior violations during the review period, each resolved by verbal reprimand or PACT referral; comparator evidence of selective enforcement against the July 2, 2026 transfer",
+    "Inter-county transfer order/notice (July 2, 2026) — Stockton (San Joaquin) to Santa Clara County (San Jose); issued one day after service/filing of Complaint for Damages naming Noguchi",
+    "STK-CV-UPI-2026-5417 Complaint for Damages, filed June 11, 2026 — establishes the protected filing that immediately preceded the transfer"
+  ],
+  "documents": [
+    {
+      "label": "Complaint — Newanforbi v. CDCR, et al.",
+      "path": "/documents/matter-15/Newanforbi v. CDCR, et al.pdf"
+    },
+    {
+      "label": "RECALIBRATED Complaint for Damages (dated June 8, 2026)",
+      "path": "/documents/matter-15/Newanforbi v Dodd RECALIBRATED.pdf"
+    },
+    {
+      "label": "Verified Complaint (dated June 15, 2026)",
+      "path": "/documents/matter-15/Dodd.pdf"
+    },
+    {
+      "label": "Original Complaint — Newanforbi v. Dodd et al. (dated May 8, 2026)",
+      "path": "/documents/matter-15/Newanforbi v. Dodd, et al..pdf"
+    },
+    {
+      "label": "Verified Complaint — Newanforbi v. Dodd et al. (June 15, 2026)",
+      "path": "/documents/matter-15/Newanforbi v. Dodd.pdf"
+    },
+    {
+      "label": "Government Claim (GCP Intake Form)",
+      "path": "/documents/matter-15/Print_GCP_INTAKE_FORM.pdf"
+    },
+    {
+      "label": "Civil Case Cover Sheet (CM-010)",
+      "path": "/documents/matter-15/5417 CM010 Civil Case Cover Sheet.pdf"
+    },
+    {
+      "label": "Summons — Civil",
+      "path": "/documents/matter-15/5417 SUM100 Summons - Civil.pdf"
+    },
+    {
+      "label": "Complaint (5417)",
+      "path": "/documents/matter-15/5417 Complaint.pdf"
+    },
+    {
+      "label": "Proof of Service of Summons — CDCR (served June 22, 2026; filed June 29, 2026)",
+      "path": "/documents/matter-15/Proof of Service of Summons - CDCR (served June 22, 2026; filed June 29, 2026).pdf"
+    },
+    {
+      "label": "Proof of Service of Summons — Keely Dodd (served June 22, 2026; filed June 29, 2026)",
+      "path": "/documents/matter-15/Proof of Service of Summons - Keely Dodd (served June 22, 2026; filed June 29, 2026).pdf"
+    },
+    {
+      "label": "Notice of Case Assignment Scheduling Information",
+      "path": "/documents/matter-15/5417 Notice of Case Assignment Scheduling Information.pdf"
+    },
+    {
+      "label": "Clerk's Certificate of Service by Mail",
+      "path": "/documents/matter-15/5417 Clerk s Certificate of Service by Mail.pdf"
+    },
+    {
+      "label": "Order on Court Fee Waiver (FW-003)",
+      "path": "/documents/matter-15/Newanforbi v. CDCR FW003 Order on Court Fee Waiver.pdf"
+    },
+    {
+      "label": "Notice of Change of Address (filed July 7, 2026)",
+      "path": "/documents/matter-15/Notice of Change of Address (July 7, 2026).pdf"
+    },
+    {
+      "label": "Email — Extension Request & Meet-and-Confer Scheduling (Gronna ↔ Newanforbi, Jul. 16–17, 2026)",
+      "path": "/documents/matter-15/Request for Extension of Time in Newanforbi v. CDCR, Case No. STK-CV-UPI-2026-54.pdf"
+    },
+    {
+      "label": "CCP §430.41 Meet-and-Confer Calendar Invite (Gronna, Jul. 17, 2026) — JSG to call BNN at (209) 801-4442, Jul. 30, 11:00 AM",
+      "path": "/documents/matter-15/CCP 430.41 Meet and Confer Calendar Invite (Gronna, Jul. 17, 2026).pdf"
+    }
+  ]
+}
