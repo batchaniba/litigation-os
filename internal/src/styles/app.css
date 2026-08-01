@@ -37,13 +37,13 @@ a { color: inherit; }
 .legacy-counsel-names { color: #495467; text-align: right; font-family: var(--font-sans); font-size: 10px; font-weight: 600; line-height: 1.5; }
 .legacy-garcia-logo { width: 130px; height: 44px; object-fit: contain; object-position: right center; }
 .legacy-dag-logo { width: 64px; height: 64px; object-fit: cover; border-radius: 50%; }
-.legacy-header-controls { display: flex; flex: 1 1 100%; flex-direction: column; align-items: flex-end; gap: 8px; }
+.legacy-header-controls { display: flex; flex: 1 1 100%; flex-direction: column; align-items: stretch; gap: 8px; }
 .legacy-header-actions { display: flex; align-items: center; justify-content: flex-end; gap: 8px; }
 .legacy-search-trigger { display: flex; align-items: center; justify-content: space-between; gap: 18px; min-width: 240px; min-height: 38px; border: 1px solid; border-radius: 8px; padding: 6px 10px 6px 13px; cursor: pointer; font-family: var(--font-sans); font-size: 12px; text-align: left; }
 kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px 6px; font-family: var(--font-sans); font-size: 9px; }
 .legacy-theme-toggle { padding: 5px 9px; border: 1px solid rgb(200 168 75 / 27%); border-radius: 6px; background: transparent; color: var(--gold); font-size: 14px; cursor: pointer; line-height: 1; transition: all .2s; flex-shrink: 0; }
-.legacy-navigation { display: flex; gap: 4px; flex-wrap: wrap; justify-content: flex-end; }
-.legacy-nav-link { padding: 8px 11px; border-radius: 6px; font-family: var(--font-sans); font-size: 12px; font-weight: 600; letter-spacing: .35px; text-decoration: none; cursor: pointer; transition: all .2s; }
+.legacy-navigation { display: flex; gap: 4px; flex-wrap: nowrap; width: 100%; }
+.legacy-nav-link { flex: 1 1 0; min-width: 0; text-align: center; padding: 8px 4px; border-radius: 6px; font-family: var(--font-sans); font-size: 11px; font-weight: 600; letter-spacing: .2px; white-space: nowrap; text-decoration: none; cursor: pointer; transition: all .2s; }
 .legacy-deadline-row { max-width: 1200px; margin: 0 auto; padding: 10px 24px; display: flex; align-items: center; justify-content: center; gap: 28px; flex-wrap: wrap; position: relative; }
 .legacy-deadline-label { color: var(--gold); font-family: var(--font-sans); font-size: 10px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; white-space: nowrap; }
 .legacy-deadline-display { display: flex; align-items: center; justify-content: center; gap: 28px; flex-wrap: wrap; }
@@ -131,8 +131,8 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
   .legacy-header-controls { width: 100%; align-items: flex-start; }
   .legacy-header-actions { width: 100%; justify-content: space-between; }
   .legacy-search-trigger { min-width: 0; flex: 1; }
-  .legacy-navigation { width: 100%; justify-content: flex-start; overflow-x: auto; flex-wrap: nowrap; padding-bottom: 4px; }
-  .legacy-nav-link { white-space: nowrap; }
+  .legacy-navigation { width: 100%; overflow-x: auto; flex-wrap: nowrap; padding-bottom: 4px; }
+  .legacy-nav-link { flex: 1 1 0; white-space: nowrap; }
   .legacy-deadline-row { justify-content: flex-start; padding: 10px 76px 10px 16px; }
   .legacy-deadline-display { justify-content: flex-start; gap: 14px; }
   .legacy-deadline-description { text-align: left; }

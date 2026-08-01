@@ -14,7 +14,6 @@ export const ROUTES = {
 
 export const NAV_ITEMS = [
   { label: "Dashboard", path: ROUTES.dashboard, end: true, icon: "⌂", group: "Overview" },
-  { label: "Census", path: ROUTES.census, end: false, icon: "▦", group: "Overview" },
   { label: "Matters", path: ROUTES.matters, end: false, icon: "§", group: "Casework" },
   { label: "Timeline", path: ROUTES.timeline, end: false, icon: "↦", group: "Casework" },
   { label: "Calendar", path: ROUTES.calendar, end: false, icon: "□", group: "Casework" },
