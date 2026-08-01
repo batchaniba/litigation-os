@@ -1,0 +1,97 @@
+{
+  "number": 2,
+  "caption": "Newanforbi v. Meza-Gonzalez et al.",
+  "case_no": "26CV168913",
+  "court": "Alameda Sup. Ct.",
+  "claims": "False Imprisonment, Battery, Bane Act",
+  "status": "STAYED — Stipulation for Stay filed Apr. 14, 2026; U-Visa Certification Motion briefed (Opp. June 5, 2026; Reply June 8, 2026) and heard June 18, 2026 at 2:30 p.m. (Dept. 518); no ruling on the motion has been reported since the hearing — follow up with the clerk's office to confirm whether an order has issued",
+  "filed": "February 4, 2026",
+  "judge": "Hon. Marc Fickes",
+  "cluster": 1,
+  "type": "State",
+  "defendants": "Santiago Meza-Gonzalez; Jose Melano; State of California / CHP; DOES 1-10",
+  "causes": [
+    "False Imprisonment",
+    "Battery",
+    "Bane Act (Civ. Code 52.1)"
+  ],
+  "key_facts": "Parallel state tort action from same Nov. 1, 2024 CHP encounter. Bane Act claim targets coerced waiver of PAS refusal right. Fabricated report constitutes independent wrongfulness. U-visa certification motion: Plaintiff seeks judicial certification under 8 U.S.C. § 1101(a)(15)(U) and Cal. Pen. Code § 679.10, establishing victim status and helpfulness in detection/investigation of qualifying criminal activity (false imprisonment, unlawful restraint, obstruction of justice, perjury, felonious assault).",
+  "procedural_status": "Filed 02/04/2026. Fee Waiver Hearing 03/03/2026. CMC 07/06/2026. Mar. 25, 2026: State of California/CHP and Melano served. Meza-Gonzalez service in progress; court-ordered extension to May 4, 2026. Apr. 2, 2026: DAG Allen Haiyang Li (DOJ) notified anticipated demurrer under CCP §430.10(c) (other action pending — federal case 2:25-cv-01460-DC-CSK) and (e) (insufficient facts). M&C required per CCP §430.41; call scheduled Apr. 9, 2026. Apr. 9, 2026: M&C call completed. Li agreed in principle to stipulated stay of Alameda action pending Judge Kim's federal MTD ruling; demurrer briefing deferred. Plaintiff also raised 28 U.S.C. § 636(c) magistrate consent; Li to consult clients. Apr. 13, 2026: DAG Li circulated draft stipulation. Plaintiff reviewed and returned counter-draft same day with four additions: (1) definition of 'final resolution' tied to entry of final judgment or dispositive order plus expiration of any appeal period; (2) tolling provision for applicable statutory deadlines during stay; (3) fallback response deadline if parties cannot agree after stay lifts; (4) without-prejudice clause preserving all claims, defenses, and rights. Apr. 14, 2026 (11:32 AM): Li accepted all counter-draft language without further revision and placed stipulation on pleading paper. Plaintiff reviewed, signed, and returned executed copy (Apr. 14, 12:03 PM). Apr. 14, 2026 (1:50 PM): Adriana Zagal (DOJ Legal Secretary) served filed copies via E-SERVICE — Stipulation for Stay Pending Resolution of Concurrent Federal Action and [Proposed] Order re: Stipulation for Stay. Action is now STAYED in its entirety pending final resolution of federal Matter 1 (2:25-cv-01460-DC-CSK). All discovery and deadlines suspended; no claims, defenses, or rights waived. June 2026: U-Visa Certification Motion briefed — filed after CHP Commander Serrato's April 20, 2026 denial of Petitioner's direct certification request (the same denial challenged by mandamus in Matter 20); this motion asks the Alameda Superior Court judge already presiding over this tort action to certify Form I-918 Supplement B directly, as an independent, parallel track to Matter 20's writ compelling CHP itself to certify. June 5, 2026: Defendants (State/CHP/Meza-Gonzalez/Melano) filed Opposition, arguing U-visa certification requires pending criminal prosecution, that a civil judge has no role certifying victims of crimes alleged only in a civil complaint, and disputing the Motion's citation to 8 C.F.R. §214.14(a)(14)(ii) as unsupported by the subsection's actual text. June 8, 2026: Plaintiff filed a 12-page Reply: (1) clarified that the 'no prosecution required' proposition rests on 8 C.F.R. §214.14(a)(12) and USCIS's U Visa Law Enforcement Resource Guide, not (a)(14)(ii) — conceding the citation but not the underlying point, and noting Defendants' own quoted text from (a)(14)(ii) (obstruction/perjury victims harmed by 'manipulation of the legal system') independently supports certification on this record; (2) argued 8 U.S.C. §1101(a)(15)(U)(i)(III) and Cal. Penal Code §679.10(a)(1) both list judges among certifying officials without limiting that role to criminal proceedings, and that CHP's own refusal to certify is precisely why judicial certification exists; (3) tied the qualifying offenses to record evidence — the dashcam's 'Is it water? No this is piss' exchange (obstruction/perjury re: the warrant affidavit), the Nov. 1–5, 2024 confinement (false imprisonment), and the warrantless blood draw (felonious assault/battery). Hearing held June 18, 2026 at 2:30 p.m. in Dept. 518 before Hon. Mark Fickes; no ruling has been reported as of this writing, over five weeks later — status should be confirmed with the clerk's office rather than assumed either way. Note: the underlying Motion for U-Visa Certification itself (only the Opposition and Reply) is not currently hosted in this repository's document store. Separately, on the CM-110 (originally due Jun. 3, 2026) and the Jul. 6, 2026 CMC referenced in the timeline: both postdate the Apr. 14, 2026 stay stipulation, whose own text ('Action is now STAYED in its entirety... All discovery and deadlines suspended') unambiguously covers them — both are superseded by the stay and did not need to be met; no further confirmation with the court is required on that point.",
+  "damages": "$100,000 - $300,000+ [FLAGGED: no breakdown reserves or excludes the CDL lost-wage component already claimed in Matters 1, 7, and 20 for the same one-year suspension — see the same note on Matter 1's damages field]",
+  "risk": "",
+  "evidence": [
+    "Same as Matter 1",
+    "State procedural records",
+    "CHP Detention Certificate (Dublin CHP-01991, Pen. Code §851.6)",
+    "Warrant affidavit and dashcam contradictions",
+    "Government Tort Claim notice",
+    "DMV administrative proceeding records",
+    "POST/CHP internal affairs complaint"
+  ],
+  "documents": [
+    {
+      "label": "Complaint for Damages (filed Feb. 4, 2026)",
+      "path": "/documents/matter-02/Newanforbi v. Meza Gonzalez et al.pdf"
+    },
+    {
+      "label": "Notice of E-Filing Confirmation (filed Feb. 4, 2026) — Complaint & Fee Waiver Accepted",
+      "path": "/documents/matter-02/Notice of E-Filing Confirmation.pdf"
+    },
+    {
+      "label": "Request to Waive Court Fees — FW-001 (filed Feb. 4, 2026)",
+      "path": "/documents/matter-02/FW-001 Approved Fee Waiver.pdf"
+    },
+    {
+      "label": "Notice of Case Assignment — Dept. 518, Hon. Mark Fickes (Case No. 26CV168913)",
+      "path": "/documents/matter-02/Notice of Case Assignment.pdf"
+    },
+    {
+      "label": "Notice of Case Management Conference (CMC scheduled Jul. 6, 2026, Dept. 518)",
+      "path": "/documents/matter-02/Notice of Case Management Conference.pdf"
+    },
+    {
+      "label": "Ex Parte Application for Extension of Time to Serve Pleading (filed Mar. 20, 2026) — extension to May 4, 2026",
+      "path": "/documents/matter-02/Ex Parte Application for Extension of Time to Serve Pleading and Orders.pdf"
+    },
+    {
+      "label": "Receipt — Ex Parte Application Filing Fee, Waived (Mar. 20, 2026)",
+      "path": "/documents/matter-02/RECEIPT.pdf"
+    },
+    {
+      "label": "CHP Arrest Report",
+      "path": "/documents/_shared/chp-nov1-2024/Arrest Report.pdf"
+    },
+    {
+      "label": "CHP Officer's Statement — Chemical Test Admonition (DS 367) (Nov. 1, 2024)",
+      "path": "/documents/_shared/chp-nov1-2024/ds367 ngwanforbi f7953179.pdf"
+    },
+    {
+      "label": "DMV Driver Record — Discovery Production (Dec. 4, 2024)",
+      "path": "/documents/_shared/chp-nov1-2024/DAD 2024-12-04.pdf"
+    },
+    {
+      "label": "DMV Notification of Discovery — APS Hearing Packet (Dec. 4, 2024)",
+      "path": "/documents/_shared/chp-nov1-2024/DS2044 Notification of Discovery 34739340.pdf"
+    },
+    {
+      "label": "CHP Video Transcript (Exhibit A)",
+      "path": "/documents/_shared/chp-nov1-2024/Exhibit_A_CHP_Video_Transcript.pdf"
+    },
+    {
+      "label": "Discovery Response",
+      "path": "/documents/_shared/chp-nov1-2024/Discovery-Response.pdf"
+    },
+    {
+      "label": "Defendants' Opposition to Plaintiff's Motion for U-Visa Certification (filed June 5, 2026)",
+      "path": "/documents/matter-02/Opposition to Motion for U-visa certification.pdf"
+    },
+    {
+      "label": "Plaintiff's Reply in Support of Motion for U-Visa Certification (filed June 8, 2026)",
+      "path": "/documents/matter-02/Reply ISO UVisa Cert 10pg.pdf"
+    },
+    {
+      "label": "Notice of Change of Address (filed July 7, 2026)",
+      "path": "/documents/matter-02/Notice of Change of Address (July 7, 2026).pdf"
+    }
+  ]
+}

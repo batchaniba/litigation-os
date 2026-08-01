@@ -83,7 +83,7 @@ All data lives in `/src/data/` as ESM modules imported into a central `index.js`
 ```
 internal/src/data/
 ├── index.js          (consolidates all imports into PORTFOLIO object)
-├── matters.js        (case metadata: case numbers, captions, status)
+├── matters/          (one NN.json per matter + index.ts loader)
 ├── timeline.js       (chronological events, deadlines, court orders)
 ├── damages.js        (damages table: conservative/moderate/aggressive scenarios)
 └── theories.js       (legal theories, causes of action)
@@ -98,31 +98,27 @@ export const PORTFOLIO = {
   contact: { address: "...", ... },
   prepared_date: "May 6, 2026",
   jurisdictions: ["USDC E.D. Cal.", ...],
-  cases: [...],              // matters.js
+  cases: [...],              // matters/*.json via matters/index.ts
   timeline: [...],           // timeline.js
   theories: [...],           // theories.js
   damages_table: {...},      // damages.js
 };
 ```
 
-### matters.js Schema
+### Matter JSON Schema (`matters/NN.json`)
 
 ```javascript
-export const cases = [
-  {
-    id: 1,
-    caption: "Newanforbi v. CHP et al.",
-    caseNo: "2:25-cv-01460-DC-CSK",
-    court: "USDC E.D. Cal.",
-    type: "Federal",         // "Federal" | "State"
-    cluster: "Cluster 1",    // grouping key
-    status: "MTD briefed; ruling pending",
-    plaintiff: "Brendan Ngehsi Newanforbi",
-    defendants: [...],
-    // ... additional metadata
-  },
-  // ... more cases
-];
+{
+  number: 1,                 // must match filename 01.json
+  caption: "Newanforbi v. CHP et al.",
+  case_no: "2:25-cv-01460-DC-CSK",
+  court: "USDC E.D. Cal.",
+  type: "Federal",           // "Federal" | "State"
+  cluster: 1,                // numeric cluster
+  status: "MTD briefed; ruling pending",
+  defendants: "...",         // prose string today
+  // ... additional metadata
+}
 ```
 
 ### timeline.js Schema
@@ -340,17 +336,17 @@ git push -u origin [branch-name]
 ### Updating Case Data
 
 **Adding a new case:**
-1. Add entry to `internal/src/data/matters.js`
-2. Assign numeric `id` (next available)
-3. Assign to a `cluster` (e.g., "Cluster 1")
-4. Verify `court` matches one in `PORTFOLIO.jurisdictions`
-5. Browser updates instantly via HMR
+1. Run `npm run scaffold:matter -- <N> "Caption"` — creates `matters/NN.json` + `documents/matter-NN/`
+2. Fill required fields in the JSON (`number`, `cluster` as a number, status prose, etc.)
+3. Add companion rows in `timeline.js`, `damages.js`, and `lawyerFees.js`
+4. Drop PDFs under `internal/public/documents/matter-NN/` and list them in `documents[]`
+5. Run `npm run validate` (also runs in CI and the GitHub Pages deploy workflow)
 
 **Adding a timeline event:**
 1. Add entry to `internal/src/data/timeline.js`
 2. Use `date: "MMM. DD, YYYY"` format (e.g., "May 29, 2026")
-3. Set `matter` to numeric case ID
-4. Set `upcoming: true` if future; `false` if past
+3. Set `matters` to a comma-separated matter-number string (e.g., `"27"` or `"25,26"`)
+4. Set `upcoming: true` if future; omit/false if past
 5. Deadline clock auto-updates on next event
 
 **Updating damages:**
@@ -728,7 +724,7 @@ Read code → Find module → Edit → Test → Commit → Push → Repeat
 | Path | Purpose | Edit Frequency |
 |------|---------|---|
 | `internal/src/App.jsx` | Root component, layout, state | Low (architecture is stable) |
-| `internal/src/data/matters.js` | Case metadata | High (new cases, status updates) |
+| `internal/src/data/matters/*.json` | Case metadata (one file per matter) | High (new cases, status updates) |
 | `internal/src/data/timeline.js` | Events and deadlines | High (ongoing court activity) |
 | `internal/src/data/damages.js` | Damages table | Medium (scenario adjustments) |
 | `internal/src/data/theories.js` | Legal arguments | Medium (new theories, refinements) |

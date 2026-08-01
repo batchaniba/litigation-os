@@ -1,0 +1,40 @@
+{
+  "number": 14,
+  "caption": "Newanforbi v. Urrea et al.",
+  "case_no": "TBD (San Joaquin Sup. Ct.)",
+  "court": "San Joaquin Sup. Ct.",
+  "claims": "Writ of Mandate, False Imprisonment, Bane Act, IIED, Negligent Supervision",
+  "status": "NOT PURSUING — Voluntarily Dismissed",
+  "filed": "June 30, 2026",
+  "judge": "TBD",
+  "cluster": 2,
+  "type": "State",
+  "archived": true,
+  "badge": "ABANDONED",
+  "defendants": "Glenn Urrea, Parole Agent (individually); Gary Noguchi (#7284), Unit Supervisor (individually); Keely Dodd (#6462), Parole Administrator (individually); State of California / CDCR; DOES 1-10",
+  "causes": [
+    "False Imprisonment",
+    "Bane Act (Civ. Code §52.1)",
+    "IIED",
+    "Negligent Supervision (against CDCR)"
+  ],
+  "key_facts": "State tort parallel to federal Matter 13. On Nov. 1, 2024, at the precise moment Plaintiff was eligible for release from Santa Rita Jail on the DUI detention, Agent Urrea placed a parole hold based on Special Condition 063 — a Halloween curfew ('Operation Boo') categorically applied without individualized nexus to Plaintiff's adult-victim commitment offense. Five days of arbitrary imprisonment. No written notice, no hearing, no neutral decision-maker. Housed with dangerous cellmate; transported to holding tank for court appearance that never occurred; released only after bail bond company intervened. Cascading harm: arrest triggered DMV APS suspension (Dec. 4, 2024), CDL commercially disqualified, lost Centerline Drivers employment on his first scheduled shift. Ongoing lost wages: $104,000–$143,620 over ~65 weeks ($1,600–$2,209/week). Nov. 2025 Discharge Review cited Plaintiff's unemployment — caused by Defendants' own conduct — as aggravating factor to deny discharge. Condition 063 reaffirmed in Aug. 2025 update, demonstrating systemic practice.",
+  "procedural_status": "Filed June 30, 2026 (Verified Petition for Writ of Mandate and Complaint). Gov. Claim presented 05/13/2026; deemed rejected 06/27/2026 (45 days, Gov. Code §912.4(c)). Filed within 6-month suit deadline under Gov. Code §945.6(a)(1). Suit deadline: Dec. 27, 2026.",
+  "damages": "$200,000 - $500,000+",
+  "risk": "§820.2 immunity — rebutted: condition approval and hold placement are ministerial acts under CDCR's own nexus requirements, not discretionary policy. Bane Act treble damages. Dodd as managing agent supports entity punitive damages. FLAGGED — potential claim-preclusion exposure: this matter arises from the same Nov. 1, 2024 curfew-hold incident as Matter 13 (federal, naming Urrea), which was voluntarily dismissed WITH PREJUDICE on June 29, 2026, one day before this state action was filed June 30, 2026. As with Matter 16/21 (same pattern, different defendant), a with-prejudice federal dismissal followed immediately by a same-transaction state refiling risks a res judicata/claim-splitting defense that isn't addressed anywhere in this record, and neither matter discloses the other as related.",
+  "evidence": [
+    "Detention records (Santa Rita)",
+    "Special Condition 063 + Reason Code 08",
+    "CHP Detention Certificate",
+    "DMV APS Decision (Case 34739340)",
+    "Centerline paystubs ($33.35/$50.03)",
+    "Form 1502-DR (unemployment as aggravating factor)",
+    "Aug. 2025 updated conditions (reaffirmation)"
+  ],
+  "documents": [
+    {
+      "label": "Complaint — Newanforbi v. Urrea et al.",
+      "path": "/documents/matter-14/Newanforbi v Urrea.pdf"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-import { damages_table } from "./damages";
+import { damages_table } from "./damages.js";
 
 // portfolio_exposure is derived from damages_table (the actively-maintained, de-duplicated
 // category rollup) rather than hand-maintained separately, so the headline figures can never
