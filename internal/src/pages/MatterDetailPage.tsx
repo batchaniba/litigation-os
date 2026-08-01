@@ -1,14 +1,14 @@
 import type { ReactNode } from "react";
 import { Link, useParams } from "react-router-dom";
 import { StatusBadge, ClusterBadge, TypeBadge, ArchiveBadge } from "../components/Badges";
-import { EmptyState } from "../components/ui/AsyncState";
+import { EmptyState, RouteLoading } from "../components/ui/AsyncState";
 import { ServiceTracker } from "../components/ServiceTracker";
 import { MatterSummary } from "../components/matters/MatterSummary";
 import { GOLD } from "../constants";
-import { cases } from "../data/matters";
+import { getMatterSummary } from "../data/matters";
+import { useMatter } from "../hooks/useMatter";
 import { ROUTES } from "../routes";
 import { useTheme } from "../ThemeContext";
-import type { Matter } from "../types/portfolio";
 import { withBase } from "../utils/paths";
 import { groupDocuments } from "../utils/documentGroups";
 import { matterActivity } from "../utils/matterTimeline";
@@ -21,10 +21,20 @@ function DetailSection({ label, children }: { label: string; children: ReactNode
 export function MatterDetailPage() {
   const { matterNumber } = useParams();
   const theme = useTheme();
-  const matter = cases.find((item) => item.number === Number(matterNumber)) as Matter | undefined;
+  const number = Number(matterNumber);
+  const summary = getMatterSummary(number);
+  const { matter, status } = useMatter(summary ? number : null);
 
-  if (!matter) {
+  if (!summary) {
     return <EmptyState title="Matter not found" detail={`No portfolio matter uses number ${matterNumber}.`} action={<Link className="back-link" to={ROUTES.matters}>Return to matters</Link>} />;
+  }
+
+  if (status === "error") {
+    return <EmptyState title="Could not load matter" detail={`Matter ${number} summary exists but the full record failed to load.`} action={<Link className="back-link" to={ROUTES.matters}>Return to matters</Link>} />;
+  }
+
+  if (status === "loading" || status === "idle" || !matter) {
+    return <RouteLoading label={`Loading matter ${number}`} />;
   }
 
   const activity = matterActivity(matter.number);

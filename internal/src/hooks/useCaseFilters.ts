@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 import { cases } from "../data/matters";
 import { matter_damages } from "../data/damages";
 import { timeline } from "../data/timeline";
-import type { Matter } from "../types/portfolio";
+import type { MatterSummary } from "../types/portfolio";
 import { parseEventDatePDT } from "../utils/dateUtils";
 
 export type MatterSortKey = "number" | "filed" | "deadline" | "exposure" | "court" | "status";
@@ -29,7 +29,7 @@ export const useCaseFilters = (initial: Partial<MatterFilterState> = {}) => {
   const [searchQuery, setSearchQuery] = useState(initial.query ?? "");
   const [sortKey, setSortKey] = useState<MatterSortKey>(initial.sort ?? "number");
 
-  const filteredCases = useMemo(() => (cases as Matter[]).filter((matter) => {
+  const filteredCases = useMemo(() => (cases as MatterSummary[]).filter((matter) => {
     if (statusFilter === "active" && matter.archived) return false;
     if (statusFilter === "archived" && !matter.archived) return false;
     if (statusFilter === "upcoming" && !nextDeadlineByMatter.has(matter.number)) return false;
@@ -37,8 +37,9 @@ export const useCaseFilters = (initial: Partial<MatterFilterState> = {}) => {
     if (typeFilter && matter.type !== typeFilter) return false;
     if (!searchQuery) return true;
     const query = searchQuery.toLowerCase();
-    return [matter.caption, matter.case_no, matter.court, matter.claims, matter.defendants, matter.key_facts, ...(matter.causes ?? [])]
-      .some((value) => value.toLowerCase().includes(query));
+    const docLabels = (matter.documents ?? []).map((doc) => doc.label);
+    return [matter.caption, matter.case_no, matter.court, matter.claims, matter.defendants, matter.status, ...(matter.causes ?? []), ...docLabels]
+      .some((value) => value?.toLowerCase().includes(query));
   }).sort((a, b) => {
     if (sortKey === "filed") return filedTimestamp(b.filed) - filedTimestamp(a.filed);
     if (sortKey === "deadline") return (nextDeadlineByMatter.get(a.number) ?? Infinity) - (nextDeadlineByMatter.get(b.number) ?? Infinity);

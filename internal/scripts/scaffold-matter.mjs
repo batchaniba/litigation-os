@@ -73,6 +73,9 @@ fs.writeFileSync(
   "# Place matter PDFs here. Reference them from documents[] in the matter JSON.\n",
 );
 
+const { spawnSync } = await import("node:child_process");
+spawnSync(process.execPath, [path.join(__dirname, "sync-matter-summaries.mjs")], { stdio: "inherit" });
+
 console.log(`Created ${path.relative(REPO_ROOT, jsonPath)}`);
 console.log(`Created ${path.relative(REPO_ROOT, docsDir)}/`);
 console.log(`
@@ -83,5 +86,5 @@ Next checklist for Matter ${number}:
   [ ] Add lawyerFees.js lawyer_fees[] row
   [ ] Update README matter inventory / deadlines if this matter is active
   [ ] Drop PDFs into ${path.relative(REPO_ROOT, docsDir)} and list them in documents[]
-  [ ] npm run validate
+  [ ] npm run sync:summaries && npm run validate
 `);

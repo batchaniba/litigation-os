@@ -56,7 +56,7 @@ const distinctJudges = new Set(
 const assignedMatters = PORTFOLIO.cases.filter(c => c.judge?.startsWith("Hon.")).length;
 
 const totalDocuments = PORTFOLIO.cases.reduce((s, c) => s + (c.documents?.length || 0), 0);
-const totalEvidence = PORTFOLIO.cases.reduce((s, c) => s + (c.evidence?.length || 0), 0);
+const totalEvidence = PORTFOLIO.cases.reduce((s, c) => s + (c.evidenceCount ?? c.evidence?.length ?? 0), 0);
 const totalCauses = PORTFOLIO.cases.reduce((s, c) => s + (c.causes?.length || 0), 0);
 
 // Status palette: reuse MattersTab's exact ribbon colors; anything else falls

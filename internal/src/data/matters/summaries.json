@@ -1,0 +1,2494 @@
+[
+  {
+    "number": 1,
+    "caption": "Newanforbi v. CHP et al.",
+    "case_no": "2:25-cv-01460-DC-CSK",
+    "court": "USDC E.D. Cal.",
+    "claims": "42 USC 1983: 4A Search/Seizure, Due Process, Monell",
+    "status": "Filed 05/27/2025; Magistrate Judge issued Findings & Recommendations RECOMMENDING DISMISSAL (Apr. 20, 2026); Plaintiff filed Objections to the F&R (Apr. 21, 2026) and a Notice of Supplemental Authority citing the favorable Serrato ruling (Jul. 7, 2026); District Judge Coggins's ruling on the F&R remains PENDING as of this writing",
+    "filed": "May 27, 2025",
+    "judge": "Hon. Dena M. Coggins",
+    "cluster": 1,
+    "type": "Federal",
+    "defendants": "State of California / CHP; Officer Santiago Meza-Gonzalez (#023295); Officer Jose Melano (#023054)",
+    "causes": [
+      "Unreasonable Search and Seizure (4th Amend.)",
+      "Violation of Due Process (14th Amend.)",
+      "Monell Liability"
+    ],
+    "documents": [
+      {
+        "label": "Complaint (May 27, 2025)",
+        "path": "/documents/matter-01/0.Newanforbi v. CHP.pdf"
+      },
+      {
+        "label": "Civil Cover Sheet (JS 44) (May 21, 2025)",
+        "path": "/documents/matter-01/18_Civil_Cover_Sheet.pdf"
+      },
+      {
+        "label": "Summons in a Civil Case (issued Oct. 28, 2025)",
+        "path": "/documents/matter-01/07_Summons_Sheet.pdf"
+      },
+      {
+        "label": "Notice of Electronic Filing — Civil Case Opened (Oct. 28, 2025)",
+        "path": "/documents/matter-01/06_Notice_of_E-Filing_1.pdf"
+      },
+      {
+        "label": "Notice of Electronic Filing — Summons Issued (Oct. 28, 2025)",
+        "path": "/documents/matter-01/09_Notice_of_E-Filing_2.pdf"
+      },
+      {
+        "label": "Filing Fee Receipt (Oct. 28, 2025)",
+        "path": "/documents/matter-01/10_Filing_Fee_Receipt.pdf"
+      },
+      {
+        "label": "Magistrate Judge Consent — Court Information Letter",
+        "path": "/documents/matter-01/03_Magistrate_Judge_Consent.pdf"
+      },
+      {
+        "label": "Notice of Availability of a Magistrate Judge (Oct. 28, 2025)",
+        "path": "/documents/matter-01/04_Magistrate_Judge_Availabilty.pdf"
+      },
+      {
+        "label": "Consent / Decline of Magistrate Judge Jurisdiction (form)",
+        "path": "/documents/matter-01/05_Magistrate_Judge_Consent_Decline_Sheet.pdf"
+      },
+      {
+        "label": "CHP Motion to Dismiss (Dec. 10, 2025)",
+        "path": "/documents/matter-01/CHP Motion To Dismiss.pdf"
+      },
+      {
+        "label": "Opposition to Motion to Dismiss (Dec. 22, 2025)",
+        "path": "/documents/matter-01/Opposition for Motion to Dismiss.pdf"
+      },
+      {
+        "label": "Reply — CHP (Jan. 5, 2026)",
+        "path": "/documents/matter-01/Reply - CHP.pdf"
+      },
+      {
+        "label": "Initial Scheduling Order (Oct. 28, 2025)",
+        "path": "/documents/matter-01/02_Initial_Scheduling_Order.pdf"
+      },
+      {
+        "label": "CHP Arrest Report",
+        "path": "/documents/_shared/chp-nov1-2024/Arrest Report.pdf"
+      },
+      {
+        "label": "CHP Officer's Statement — Chemical Test Admonition (DS 367) (Nov. 1, 2024)",
+        "path": "/documents/_shared/chp-nov1-2024/ds367 ngwanforbi f7953179.pdf"
+      },
+      {
+        "label": "DMV Driver Record — Discovery Production (Dec. 4, 2024)",
+        "path": "/documents/_shared/chp-nov1-2024/DAD 2024-12-04.pdf"
+      },
+      {
+        "label": "DMV Notification of Discovery — APS Hearing Packet (Dec. 4, 2024)",
+        "path": "/documents/_shared/chp-nov1-2024/DS2044 Notification of Discovery 34739340.pdf"
+      },
+      {
+        "label": "CHP Video Transcript (Exhibit A)",
+        "path": "/documents/_shared/chp-nov1-2024/Exhibit_A_CHP_Video_Transcript.pdf"
+      },
+      {
+        "label": "Discovery Response",
+        "path": "/documents/_shared/chp-nov1-2024/Discovery-Response.pdf"
+      },
+      {
+        "label": "Centerline Wage Reference",
+        "path": "/documents/matter-01/Centerline Wage Reference.pdf"
+      },
+      {
+        "label": "Notice of Change of Address (filed July 7, 2026)",
+        "path": "/documents/matter-01/Notice of Change of Address (July 7, 2026).pdf"
+      },
+      {
+        "label": "Plaintiff's Objections to Findings & Recommendations (Apr. 21, 2026)",
+        "path": "/documents/matter-01/Objections to FR - April 21 2026.pdf"
+      },
+      {
+        "label": "Notice of Supplemental Authority — Serrato Order (Jul. 7, 2026)",
+        "path": "/documents/matter-01/Notice of Supplemental Authority - Serrato Order - July 7 2026.pdf"
+      }
+    ],
+    "evidenceCount": 12
+  },
+  {
+    "number": 2,
+    "caption": "Newanforbi v. Meza-Gonzalez et al.",
+    "case_no": "26CV168913",
+    "court": "Alameda Sup. Ct.",
+    "claims": "False Imprisonment, Battery, Bane Act",
+    "status": "STAYED — Stipulation for Stay filed Apr. 14, 2026; U-Visa Certification Motion briefed (Opp. June 5, 2026; Reply June 8, 2026) and heard June 18, 2026 at 2:30 p.m. (Dept. 518); no ruling on the motion has been reported since the hearing — follow up with the clerk's office to confirm whether an order has issued",
+    "filed": "February 4, 2026",
+    "judge": "Hon. Marc Fickes",
+    "cluster": 1,
+    "type": "State",
+    "defendants": "Santiago Meza-Gonzalez; Jose Melano; State of California / CHP; DOES 1-10",
+    "causes": [
+      "False Imprisonment",
+      "Battery",
+      "Bane Act (Civ. Code 52.1)"
+    ],
+    "documents": [
+      {
+        "label": "Complaint for Damages (filed Feb. 4, 2026)",
+        "path": "/documents/matter-02/Newanforbi v. Meza Gonzalez et al.pdf"
+      },
+      {
+        "label": "Notice of E-Filing Confirmation (filed Feb. 4, 2026) — Complaint & Fee Waiver Accepted",
+        "path": "/documents/matter-02/Notice of E-Filing Confirmation.pdf"
+      },
+      {
+        "label": "Request to Waive Court Fees — FW-001 (filed Feb. 4, 2026)",
+        "path": "/documents/matter-02/FW-001 Approved Fee Waiver.pdf"
+      },
+      {
+        "label": "Notice of Case Assignment — Dept. 518, Hon. Mark Fickes (Case No. 26CV168913)",
+        "path": "/documents/matter-02/Notice of Case Assignment.pdf"
+      },
+      {
+        "label": "Notice of Case Management Conference (CMC scheduled Jul. 6, 2026, Dept. 518)",
+        "path": "/documents/matter-02/Notice of Case Management Conference.pdf"
+      },
+      {
+        "label": "Ex Parte Application for Extension of Time to Serve Pleading (filed Mar. 20, 2026) — extension to May 4, 2026",
+        "path": "/documents/matter-02/Ex Parte Application for Extension of Time to Serve Pleading and Orders.pdf"
+      },
+      {
+        "label": "Receipt — Ex Parte Application Filing Fee, Waived (Mar. 20, 2026)",
+        "path": "/documents/matter-02/RECEIPT.pdf"
+      },
+      {
+        "label": "CHP Arrest Report",
+        "path": "/documents/_shared/chp-nov1-2024/Arrest Report.pdf"
+      },
+      {
+        "label": "CHP Officer's Statement — Chemical Test Admonition (DS 367) (Nov. 1, 2024)",
+        "path": "/documents/_shared/chp-nov1-2024/ds367 ngwanforbi f7953179.pdf"
+      },
+      {
+        "label": "DMV Driver Record — Discovery Production (Dec. 4, 2024)",
+        "path": "/documents/_shared/chp-nov1-2024/DAD 2024-12-04.pdf"
+      },
+      {
+        "label": "DMV Notification of Discovery — APS Hearing Packet (Dec. 4, 2024)",
+        "path": "/documents/_shared/chp-nov1-2024/DS2044 Notification of Discovery 34739340.pdf"
+      },
+      {
+        "label": "CHP Video Transcript (Exhibit A)",
+        "path": "/documents/_shared/chp-nov1-2024/Exhibit_A_CHP_Video_Transcript.pdf"
+      },
+      {
+        "label": "Discovery Response",
+        "path": "/documents/_shared/chp-nov1-2024/Discovery-Response.pdf"
+      },
+      {
+        "label": "Defendants' Opposition to Plaintiff's Motion for U-Visa Certification (filed June 5, 2026)",
+        "path": "/documents/matter-02/Opposition to Motion for U-visa certification.pdf"
+      },
+      {
+        "label": "Plaintiff's Reply in Support of Motion for U-Visa Certification (filed June 8, 2026)",
+        "path": "/documents/matter-02/Reply ISO UVisa Cert 10pg.pdf"
+      },
+      {
+        "label": "Notice of Change of Address (filed July 7, 2026)",
+        "path": "/documents/matter-02/Notice of Change of Address (July 7, 2026).pdf"
+      }
+    ],
+    "evidenceCount": 7
+  },
+  {
+    "number": 3,
+    "caption": "Newanforbi v. Derrick et al.",
+    "case_no": "2:26-cv-00004-DJC-JDP",
+    "court": "USDC E.D. Cal.",
+    "claims": "42 USC 1983: 1A Retaliation, 14A Equal Protection, Due Process",
+    "status": "Order filed July 24, 2026 (Mag. Peterson): Palacios's MTD (Doc 24) GRANTED — failed all four Ninth Circuit state-actor tests; court flagged a misquoted Rawson v. Recovery Innovations citation in Plaintiff's opposition and issued a Rule 11(b)(2) reminder. Derrick/Noguchi's MTQ/MTD (Doc 9) GRANTED IN PART (claims dismissed) / DENIED IN PART (quash denied as moot given their waiver of service). 1A retaliation and substantive due process claims DISMISSED as to all defendants; FAC DISMISSED WITH LEAVE TO AMEND within 14 days (by August 7, 2026) — if no amendment is filed, the action proceeds solely on the Equal Protection claim against Derrick. This is in apparent, unresolved tension with Plaintiff's July 22, 2026 Notice of Voluntary Dismissal, which purported to self-execute the dismissal of both Derrick and Noguchi two days before this order; the order does not address that filing.",
+    "filed": "January 5, 2026",
+    "judge": "Hon. Daniel J. Calabretta / Mag. Peterson",
+    "cluster": 2,
+    "type": "Federal",
+    "archived": true,
+    "badge": "ABANDONED",
+    "note": "Palacios's MTD GRANTED Jul. 24; FAC dismissed w/ leave to amend by Aug. 7. Jul. 22 dismissal of Derrick/Noguchi was valid as a matter of right (no answer/MSJ served) — Jul. 24 order doesn't address it.",
+    "defendants": "Andrew Derrick (#6910) — Notice of Voluntary Dismissal filed Jul. 22, 2026 (self-executing under Rule 41(a)(1)(A)(i)); Jul. 24, 2026 order nonetheless treats him as the sole remaining defendant if no amended complaint is filed — tension unresolved on the docket; Katie Palacios — MTD GRANTED Jul. 24, 2026 (failed all four state-actor tests); claims DISMISSED WITH LEAVE TO AMEND; Gary Noguchi (#7284) — Notice of Voluntary Dismissal filed Jul. 22, 2026 (self-executing); Jul. 24, 2026 order separately dismissed claims against him for failure to allege supervisory liability",
+    "causes": [
+      "First Amendment Retaliation",
+      "Equal Protection (race-based)",
+      "Substantive Due Process — Arbitrary Abuse of Power"
+    ],
+    "documents": [
+      {
+        "label": "Original Complaint (Doc 1, Jan. 5, 2026)",
+        "path": "/documents/matter-03/2.Newanforbi v. Derrick.pdf"
+      },
+      {
+        "label": "First Amended Complaint (Doc 5, Jan. 12, 2026)",
+        "path": "/documents/matter-03/8_fed_derrickFAC.pdf"
+      },
+      {
+        "label": "Defendants' MTQ / Motion to Dismiss (Doc 9, Jan. 30, 2026)",
+        "path": "/documents/matter-03/8_MTQ.pdf"
+      },
+      {
+        "label": "Plaintiff's Opposition to MTQ (Doc 10, Feb. 2, 2026)",
+        "path": "/documents/matter-03/8_OpMTQ.pdf"
+      },
+      {
+        "label": "Defendants' Reply (Doc 12)",
+        "path": "/documents/matter-03/8_reply.pdf"
+      },
+      {
+        "label": "Plaintiff's Motion for Leave — Supplemental Opp. (Doc 13)",
+        "path": "/documents/matter-03/8_M4L.pdf"
+      },
+      {
+        "label": "Defendants' Mot. to Strike / Opp. to M4L (Doc 14, Feb. 26, 2026)",
+        "path": "/documents/matter-03/8_OpM4L.pdf"
+      },
+      {
+        "label": "SLB Stipulation & Proposed Order (Doc 22, Apr. 2, 2026)",
+        "path": "/documents/matter-03/SLBStipulation.pdf"
+      },
+      {
+        "label": "Ex Parte Motion",
+        "path": "/documents/matter-03/Ex-Parte Derrick.pdf"
+      },
+      {
+        "label": "Beard Declaration",
+        "path": "/documents/matter-03/8_Mbeard.pdf"
+      },
+      {
+        "label": "Huybers Declaration",
+        "path": "/documents/matter-03/8_Dhuybers.pdf"
+      },
+      {
+        "label": "J. Scott Document",
+        "path": "/documents/matter-03/8_Jscott.pdf"
+      },
+      {
+        "label": "Declaration Re: Good-Faith Service Efforts on Palacios & Notice to Defense Counsel (Doc 19, Mar. 9, 2026)",
+        "path": "/documents/matter-03/GoodFaithDeclaration.pdf"
+      },
+      {
+        "label": "Notice of CASOMB",
+        "path": "/documents/matter-03/NoticeCASOMB.pdf"
+      },
+      {
+        "label": "Summons Returned Executed",
+        "path": "/documents/matter-03/SummonsReturnedExecuted.pdf"
+      },
+      {
+        "label": "Plaintiff's Motion for Leave, Re-docketed w/ Proposed Order (Doc 15 / 15-1, Feb. 26, 2026)",
+        "path": "/documents/matter-03/DerrickM4L1.pdf"
+      },
+      {
+        "label": "Plaintiff's [Proposed] Supplemental Opposition to MTD — merits brief on 1A retaliation, due process, equal protection & declaratory relief (Doc 16, Feb. 26, 2026)",
+        "path": "/documents/matter-03/DerrickM4LProposed.pdf"
+      },
+      {
+        "label": "Plaintiff's Reply ISO Motion for Leave & Opposition to Mot. to Strike (Doc 17, Mar. 4, 2026)",
+        "path": "/documents/matter-03/DerrickM4LReply.pdf"
+      },
+      {
+        "label": "Palacios Motion to Dismiss FAC (Doc 24, Apr. 6, 2026)",
+        "path": "/documents/matter-03/SLB MTD.pdf"
+      },
+      {
+        "label": "Plaintiff's Opposition to Palacios MTD (filed Apr. 9, 2026; entered Apr. 13, 2026)",
+        "path": "/documents/matter-03/SLB Opposition to MTD.pdf"
+      },
+      {
+        "label": "Notice of Related Cases (Doc 28, May 20, 2026)",
+        "path": "/documents/matter-03/28 Notice of Related Cases.pdf"
+      },
+      {
+        "label": "Notice of Appearance — Blaze Van Dine for Katie Palacios (Doc 27, May 20, 2026)",
+        "path": "/documents/matter-03/Notice of Appearance Blaze.pdf"
+      },
+      {
+        "label": "Notice of Change of Address (filed July 7, 2026)",
+        "path": "/documents/matter-03/Notice of Change of Address (July 7, 2026).pdf"
+      },
+      {
+        "label": "Notice of Voluntary Dismissal Without Prejudice as to Derrick and Noguchi Only (Jul. 22, 2026)",
+        "path": "/documents/matter-03/Notice of Voluntary Dismissal - Derrick and Noguchi (Jul 22 2026).pdf"
+      },
+      {
+        "label": "Order Granting Palacios's MTD; Granting in Part Derrick/Noguchi's Motion; FAC Dismissed With Leave to Amend (Doc 31, Jul. 24, 2026)",
+        "path": "/documents/opinions/Newanforbi v Derrick - USDC EDCal - MTD Order Jul 24 2026.pdf"
+      }
+    ],
+    "evidenceCount": 8
+  },
+  {
+    "number": 4,
+    "caption": "Newanforbi v. Derrick et al.",
+    "case_no": "TBD",
+    "court": "San Joaquin Sup. Ct.",
+    "claims": "IIED, Bane Act, Intentional/Negligent Econ. Interference, Negligent Supervision, NIED",
+    "status": "NOT PURSUING — Voluntarily Dismissed",
+    "filed": "May 29, 2026",
+    "judge": "TBD",
+    "cluster": 2,
+    "type": "State",
+    "archived": true,
+    "badge": "ABANDONED",
+    "defendants": "Andrew Jackson Derrick (individually); Gary Noguchi (individually); State of California / CDCR; DOES 1-20",
+    "causes": [
+      "IIED",
+      "Bane Act (Civ. Code §52.1)",
+      "Intentional Interference w/ Econ. Adv.",
+      "Negligent Interference w/ Econ. Adv.",
+      "Negligent Supervision",
+      "NIED"
+    ],
+    "documents": [],
+    "evidenceCount": 2
+  },
+  {
+    "number": 5,
+    "caption": "Newanforbi v. Palacios et al.",
+    "case_no": "STK-CV-UF-2026-0001032",
+    "court": "San Joaquin Sup. Ct.",
+    "claims": "Fraud/Intentional Misrepresentation, Negligence (incl. Negligence Per Se), IIED, Intentional Interference w/ Prospective Econ. Adv., Bane Act (§52.1), Declaratory Relief, UCL (§17200)",
+    "status": "DISMISSED — San Joaquin Superior Court (Hon. George J. Abdallah, Jr.) confirmed the tentative ruling at the 07/15/2026, 9:00 a.m. hearing after oral argument and GRANTED Defendants' Demurrer to FAC WITHOUT LEAVE TO AMEND on failure-to-exhaust-administrative-remedies grounds; state court action disposed. $85,000 Global Settlement Offer REJECTED — SLB/Van Dine letter May 23, 2026; Document Production received and reviewed 07/09–10/2026 (Clinical Operational Manual, treatment manuals, employee handbook, homework/audit records, collateral notes, insurance policies). Dismissal supplies predicate facts for the NDCA complaint against HOPE (Matter 28).",
+    "badge": "DISMISSED",
+    "filed": "February 10, 2026",
+    "judge": "Hon. George J. Abdallah, Dept. 10A",
+    "cluster": 2,
+    "type": "State",
+    "archived": true,
+    "defendants": "HOPE Psychotherapy, Inc., d/b/a HOPE Program (California corporation); Katie Palacios, site Director / LMFT No. 44555 (individually and as managing agent under Civ. Code §3294(b)); DOES 1-10",
+    "causes": [
+      "Count 1 — Fraud / Intentional Misrepresentation (against all defendants): intake misrepresentations (March 2021); Akins group representation (November 2022); January 2024 group representation; June 2024 false homework statement; CTM 'partial homework' submissions to CDCR (November 2022–February 2026)",
+      "Count 2 — Negligence, including Negligence Per Se (against all defendants): PC §3008(d)(2) and 15 CCR §3574(f)(1) violated; special relationship under Giraldo; failure to maintain accurate homework records; false reporting of partial completion to CDCR",
+      "Count 3 — IIED (against all defendants): continued post-Dwyer blanket retention; false 'not completed' characterizations to CDCR; June 2024 false homework denial; August 2025 retaliatory CTM statements ('disruptive,' 'ringleader,' 'abhorrent,' 'acting job')",
+      "Count 4 — Intentional Interference with Prospective Economic Advantage (against all defendants): disruption of CDL carrier relationships (United Road, Keurig Dr Pepper, Tiger Lines LLC, US-1 Shorthaul, Lazer Spot Inc., Centerline Drivers); $109,408 documented 2022-2024 losses",
+      "Count 5 — Bane Act, Civ. Code §52.1 (against all defendants): interference with PC §3008(d)(2) and 15 CCR §3574(f)(1) rights through coercion; Palacios's August 2025 intimidation; $25,000 statutory damages per violation",
+      "Count 6 — Declaratory Relief: judicial declaration that HOPE's blanket retention policy is unlawful; permanent injunction requiring individualized assessment per published CASOMB criteria",
+      "Count 7 — UCL, Bus. & Prof. Code §17200 (against all defendants): blanket retention policy = unlawful business practice; false partial-homework reporting = unfair business practice; restitution of all fees wrongfully retained"
+    ],
+    "documents": [
+      {
+        "label": "First Amended Complaint (filed Apr. 22, 2026)",
+        "path": "/documents/matter-05/FAC_STK-CV-UF-2026-1032.pdf"
+      },
+      {
+        "label": "BBS Complaint — Palacios LMFT 44555",
+        "path": "/documents/matter-05/BBS Complaint Palacios LMFT 44555.pdf"
+      },
+      {
+        "label": "CASOMB Complaint — HOPE Program",
+        "path": "/documents/matter-05/CASOMB Complaint - HOPE Program.pdf"
+      },
+      {
+        "label": "CASOMB Complaint Continuation Sheet",
+        "path": "/documents/matter-05/CASOMB Complaint Continuation Sheet .pdf"
+      },
+      {
+        "label": "Fee Waiver (approved)",
+        "path": "/documents/matter-05/Fee Waiver - Newanforbi v. Palacios, et al..pdf"
+      },
+      {
+        "label": "Original Summons + Complaint (Feb. 10, 2026)",
+        "path": "/documents/matter-05/Summons + Complaint - Newanforbi v. Palacios, et al. .pdf"
+      },
+      {
+        "label": "Defendants' Demurrer to FAC — Van Dine/SLB (May 22, 2026)",
+        "path": "/documents/matter-05/Demurrer-(NEWpal) (052226)).pdf"
+      },
+      {
+        "label": "Declaration ISO Demurrer — Van Dine/SLB (May 22, 2026)",
+        "path": "/documents/matter-05/Demurrer-Decl (NEWpal) (052226)).pdf"
+      },
+      {
+        "label": "Points and Authorities ISO Demurrer — Van Dine/SLB (May 22, 2026)",
+        "path": "/documents/matter-05/Demurrer-PO (NEWpal) (052226)).pdf"
+      },
+      {
+        "label": "Defendants' RJN ISO Demurrer — Van Dine/SLB (May 22, 2026)",
+        "path": "/documents/matter-05/Demurrer-RJN (NEWpal) (052226)).pdf"
+      },
+      {
+        "label": "Plaintiff's Opposition to Demurrer to FAC (May 22, 2026)",
+        "path": "/documents/matter-05/Opposition to Demurrer Pal.pdf"
+      },
+      {
+        "label": "Declaration of Brendan Ngehsi Newanforbi ISO Opposition (May 22, 2026)",
+        "path": "/documents/matter-05/Declaration Pal ISO Opposition.pdf"
+      },
+      {
+        "label": "Plaintiff's RJN ISO Opposition to Demurrer (May 22, 2026)",
+        "path": "/documents/matter-05/RJN Pal ISO Opposition.pdf"
+      },
+      {
+        "label": "Plaintiff's Evidentiary Objections to Defendants' RJN (May 22, 2026)",
+        "path": "/documents/matter-05/Evidentiary Pal Objections to Defendants RJN.pdf"
+      },
+      {
+        "label": "Discovery — DISC-001 Sec. 4a2 to HOPE Psychotherapy (May 22, 2026)",
+        "path": "/documents/matter-05/DISC001_SEC_4a2 HOPE1.pdf"
+      },
+      {
+        "label": "Discovery — DISC-001 Sec. 4a2 to Palacios (May 22, 2026)",
+        "path": "/documents/matter-05/DISC001_SEC_4a2 Palacios .pdf"
+      },
+      {
+        "label": "Defendant Palacios' Responses to Plaintiff's Requests for Admission, Set One (filed June 8, 2026)",
+        "path": "/documents/matter-05/PALACIOS resp plntf RFA1 (NEWpal) (060826).pdf"
+      },
+      {
+        "label": "HOPE Psychotherapy's Responses to Plaintiff's Requests for Admission, Set One — DRAFT (June 8, 2026)",
+        "path": "/documents/matter-05/DRFT HOPE resp plntf RFA1.pdf"
+      },
+      {
+        "label": "Palacios' Responses to Form Interrogatories, Set One (June 15, 2026)",
+        "path": "/documents/matter-05/PALACIOS resp plntf FROGS1 (NEWpal) (061526).pdf"
+      },
+      {
+        "label": "Palacios' Responses to Requests for Production, Set One (June 15, 2026)",
+        "path": "/documents/matter-05/PALACIOS resp plntf RFP1 (NEWpal) (061526).pdf"
+      },
+      {
+        "label": "Palacios' Responses to Special Interrogatories, Set One (June 12, 2026)",
+        "path": "/documents/matter-05/PALACIOS resp plntf SROGS1 (NEWpal) (061226).pdf"
+      },
+      {
+        "label": "HOPE's Responses to Form Interrogatories, Set One (June 15, 2026)",
+        "path": "/documents/matter-05/HOPE resp plntf FROGS1 (NEWpal) (061526).pdf"
+      },
+      {
+        "label": "HOPE's Responses to Requests for Production, Set One (June 15, 2026)",
+        "path": "/documents/matter-05/HOPE resp plntf RFP1 (newpal) (061526).pdf"
+      },
+      {
+        "label": "HOPE's Responses to Special Interrogatories, Set One (June 15, 2026)",
+        "path": "/documents/matter-05/HOPE resp plntf SROGS1 (NEWpal) (061526).pdf"
+      },
+      {
+        "label": "Plaintiff's Requests for Admission to Defendants (June 18, 2026)",
+        "path": "/documents/matter-05/RFA to Pl (NEWpal) (061826).pdf"
+      },
+      {
+        "label": "Plaintiff's Requests for Production to Defendants (June 18, 2026)",
+        "path": "/documents/matter-05/RFP to Pl (NEWpal) (061826).pdf"
+      },
+      {
+        "label": "Plaintiff's Special Interrogatories to Defendants (June 18, 2026)",
+        "path": "/documents/matter-05/SROGS to Pl (NEWpal) (061826).pdf"
+      },
+      {
+        "label": "Plaintiff's Special Interrogatories, Set Two to HOPE (June 2026)",
+        "path": "/documents/matter-05/SROG Set Two HOPE NEWpal .pdf"
+      },
+      {
+        "label": "Plaintiff's Special Interrogatories, Set Two to Palacios (June 2026)",
+        "path": "/documents/matter-05/SROG Set Two PALACIOS NEWpal .pdf"
+      },
+      {
+        "label": "Stipulated Protective Order (SIGNED June 13–14, 2026)",
+        "path": "/documents/matter-05/Stipulated Protective Order SIGNED.pdf"
+      },
+      {
+        "label": "Meet and Confer Letter re: Deficient Discovery Responses (June 16, 2026)",
+        "path": "/documents/matter-05/Meet and Confer Letter 061626.pdf"
+      },
+      {
+        "label": "Notice of Change of Address (filed July 7, 2026)",
+        "path": "/documents/matter-05/Notice of Change of Address (July 7, 2026).pdf"
+      },
+      {
+        "label": "Defendants' Reply in Support of Demurrer to FAC — Van Dine/SLB (July 7, 2026)",
+        "path": "/documents/matter-05/Demurrer-Reply (NEWpal) (070726).pdf"
+      },
+      {
+        "label": "Declaration of Blaze Van Dine ISO Defendants' Reply — SLB (July 7, 2026)",
+        "path": "/documents/matter-05/Demurrer-Reply Decl (NEWpal) (070726).pdf"
+      },
+      {
+        "label": "Tentative Ruling on Demurrer — GRANTED WITHOUT LEAVE TO AMEND (posted July 13, 2026; hearing July 15, 2026)",
+        "path": "/documents/matter-05/Tentative Ruling on Demurrer (posted July 13, 2026, hearing July 15, 2026).pdf"
+      },
+      {
+        "label": "Plaintiff's Notice of Intent to Appear and Argue Tentative Ruling (July 13, 2026)",
+        "path": "/documents/matter-05/Plaintiff's Notice of Intent to Appear and Argue Tentative Ruling (July 13, 2026).pdf"
+      },
+      {
+        "label": "Order Sustaining Demurrer to FAC Without Leave to Amend — Hon. George J. Abdallah, Jr. (July 15, 2026, confirming tentative ruling; case disposed)",
+        "path": "/documents/matter-05/Order Sustaining Demurrer to FAC WOLA - Jul 15 2026.pdf"
+      }
+    ],
+    "evidenceCount": 17
+  },
+  {
+    "number": 6,
+    "caption": "Newanforbi v. HOPE et al.",
+    "case_no": "2:26-cv-00195-TLN-AC",
+    "court": "USDC E.D. Cal.",
+    "claims": "42 U.S.C. § 1983: Procedural Due Process — Three Counts: (I) Damages against HOPE; (II) Injunctive/Declaratory Relief against HOPE & Macomber; (III) Delegation Without Safeguards against both",
+    "status": "DISMISSED WITHOUT PREJUDICE — Notice of Voluntary Dismissal filed May 21, 2026; Minute Order entered June 1, 2026 (FRCP 41(a)(1)(A)(i); case closed; refiling preserved; ECF No. 5 Notice of Related Cases was not an answer or MSJ)",
+    "filed": "January 22, 2026",
+    "judge": "Hon. Troy L. Nunley / Mag. Allison Claire",
+    "cluster": 2,
+    "type": "Federal",
+    "archived": true,
+    "badge": "DISMISSED",
+    "defendants": "HOPE Psychotherapy, Inc. d/b/a HOPE PROGRAM (NPI 1992154603; for damages — Count I; injunctive/declaratory — Counts II–III); Jeff Macomber, Secretary CDCR (official capacity; injunctive/declaratory relief only — Counts II–III; Ex parte Young). [FAC narrowed from 9 original defendants — all individual CDCR defendants (Palacios, Bishop, Dodd, Moua, Noguchi, Derrick, Rojo) dropped in FAC filed Feb. 20, 2026.]",
+    "causes": [
+      "Count I — 42 U.S.C. § 1983 Damages: Procedural Due Process (14th Amend.) — HOPE denied Plaintiff meaningful opportunity to be heard before discharge review; HOPE fabricated '10-year parole term' ineligibility rule; eight documented facial defects in Form 1502-DR; financial conflict of interest — HOPE billed CDCR ~$10,600/year per retained parolee (against HOPE Psychotherapy, Inc. for compensatory, nominal, and punitive damages)",
+      "Count II — 42 U.S.C. § 1983 Declaratory & Injunctive Relief (Ex parte Young): (a) HOPE's blanket retention policy violates procedural due process — judicially condemned in In re Dwyer (San Mateo Super. Ct. Mar. 20, 2023) and ACSOL v. Macomber (L.A. Super. Ct. Dec. 13, 2023); (b) CDCR's discharge review framework violates Cal. Penal Code §§ 3001(a)(2) and 3008(d)(2) and 15 CCR § 3574 (against HOPE and Macomber, official capacity)",
+      "Count III — 42 U.S.C. § 1983 Delegation Without Safeguards: CDCR delegated discharge authority to a financially conflicted private vendor (HOPE) without adequate procedural safeguards — HOPE's financial interest in retention creates structural bias that taints the entire discharge review framework (against HOPE and Macomber, official capacity)"
+    ],
+    "documents": [
+      {
+        "label": "Original Complaint (Doc 1, Jan. 22, 2026) — 9 defendants; 3 counts",
+        "path": "/documents/matter-06/Complaint.pdf"
+      },
+      {
+        "label": "First Amended Complaint (Doc 4, Feb. 20, 2026) — narrowed to HOPE & Macomber; 3 restructured counts",
+        "path": "/documents/matter-06/HOPE Federal Complaint.pdf"
+      },
+      {
+        "label": "Notice of Related Cases (ECF No. 5, May 20, 2026) — SLB for HOPE; identifies Matters 3 & 6",
+        "path": "/documents/matter-06/5. Notice of Related Cases.pdf"
+      },
+      {
+        "label": "Notice of Voluntary Dismissal Without Prejudice (ECF No. 6, May 21, 2026) — FRCP 41(a)(1)(A)(i); entire action dismissed; refiling preserved",
+        "path": "/documents/matter-06/Notice of Voluntary Dismissal Newanforbi v HOPE.pdf"
+      }
+    ],
+    "evidenceCount": 14
+  },
+  {
+    "number": 7,
+    "caption": "Newanforbi v. Candelaria",
+    "case_no": "2:26-cv-00983-DC-CSK",
+    "court": "USDC E.D. Cal.",
+    "claims": "42 USC 1983: Procedural Due Process — Structural Bias, Denial of Neutral Decisionmaker, Deprivation Without Due Process",
+    "status": "Active — FAC filed Apr. 27, 2026; Magistrate Judge Chi Soo Kim issued Findings & Recommendations (ECF No. 6, Jun. 15, 2026) recommending IFP denial and dismissal WITHOUT LEAVE TO AMEND; Plaintiff filed Objections (Jun. 18, 2026) and a Notice of Supplemental Authority citing the favorable Serrato ruling (electronically filed Jul. 9, 2026, per the court-stamped copy — corrects the Jul. 7, 2026 date previously on record); District Judge's ruling on the F&R remains PENDING as of this writing",
+    "filed": "April 27, 2026",
+    "judge": "Hon. Dena M. Coggins (referred to Magistrate Judge Chi Soo Kim) — same district/magistrate pair as Matter 1, per the shared \"DC-CSK\" case-number suffix",
+    "cluster": 1,
+    "type": "Federal",
+    "defendants": "Diana Candelaria, DMV Hearing Officer (individual capacity); Steve Gordon, Director of California DMV (official capacity)",
+    "causes": [
+      "Count I — 42 U.S.C. § 1983 Damages: Procedural Due Process (14th Amend.) — structural bias; simultaneous prosecutor/adjudicator; irrebuttable presumption of official regularity (against Candelaria, individual capacity)",
+      "Count II — 42 U.S.C. § 1983 Declaratory Relief (28 U.S.C. §§ 2201–2202): (a) APS hearing violated Due Process — hearing officer served as DMV's prosecuting advocate and trier of fact; (b) DMV lacked statutory authority — 'lawful arrest' predicate required by VC §§ 13353 and 13353.2 destroyed by PC § 849(b)(1) Detention Certificate; (c) DMV's irrebuttable presumption of official regularity violates procedural due process (against Gordon, official capacity, Ex parte Young)",
+      "Count III — 42 U.S.C. § 1983 Injunctive Relief (Ex parte Young): (a) vacate Feb 11 2025 APS Decision Case 34739340; (b) immediate CDL reinstatement free of suspension penalties; (c) prohibit $125 reissue fee and SR-22 requirement; (d) require neutral decisionmaker for any new hearing (against Gordon, official capacity)"
+    ],
+    "documents": [
+      {
+        "label": "First Amended Complaint (Apr. 27, 2026)",
+        "path": "/documents/matter-07/FAC Candelaria.pdf"
+      },
+      {
+        "label": "FAC — Word Format (Apr. 27, 2026)",
+        "path": "/documents/matter-07/FAC Newanforbi v Candelaria.docx"
+      },
+      {
+        "label": "Original Complaint — Newanforbi v. Candelaria",
+        "path": "/documents/matter-07/Newanforbi v. Candelaria.pdf"
+      },
+      {
+        "label": "CHP Arrest-Investigation Report (CHP Form 202, RJ68845, File No. 202400898)",
+        "path": "/documents/_shared/chp-nov1-2024/Arrest Report.pdf"
+      },
+      {
+        "label": "CHP Dashcam Transcript (00:54:36–01:57:10, CAD No. 241101GG0064)",
+        "path": "/documents/matter-07/CHP Transcript.pdf"
+      },
+      {
+        "label": "DMV APS Notice / Notice of Stay / Temporary License (December 4, 2024)",
+        "path": "/documents/_shared/chp-nov1-2024/DAD 2024-12-04.pdf"
+      },
+      {
+        "label": "DS2044 — Notification of Discovery (APS Case 34739340)",
+        "path": "/documents/_shared/chp-nov1-2024/DS2044 Notification of Discovery 34739340.pdf"
+      },
+      {
+        "label": "Plaintiff's Notice of Response to Request for Discovery — Personal Statement (December 9, 2024)",
+        "path": "/documents/_shared/chp-nov1-2024/Discovery-Response.pdf"
+      },
+      {
+        "label": "DS-367 — Chemical Test Refusal Form (Officer Meza-Gonzalez, Badge #023295, License F7953179)",
+        "path": "/documents/_shared/chp-nov1-2024/ds367 ngwanforbi f7953179.pdf"
+      },
+      {
+        "label": "Exhibit A Cover — DMV APS Decision (Case 34739340)",
+        "path": "/documents/matter-07/Exhibit A Cover DMV Decision.pdf"
+      },
+      {
+        "label": "Exhibit B Cover — Dairyland SR-22 Insurance",
+        "path": "/documents/matter-07/Exhibit B Cover Dairyland SR22.pdf"
+      },
+      {
+        "label": "Exhibit C Cover — CHP Dashcam Transcript",
+        "path": "/documents/matter-07/Exhibit C Cover CHP Dashcam Transcript.pdf"
+      },
+      {
+        "label": "Magistrate Judge's Findings & Recommendations — IFP Denial and Dismissal Without Leave to Amend (ECF No. 6, Jun. 15, 2026)",
+        "path": "/documents/matter-07/Candelaria R&R.pdf"
+      },
+      {
+        "label": "DMV Administrative Per Se Decision (Case 34739340, February 11, 2025, Hearing Officer Diana Candelaria)",
+        "path": "/documents/matter-07/DMV Decision.pdf"
+      },
+      {
+        "label": "Supplemental Declaration (Newanforbi v. Candelaria, FAC)",
+        "path": "/documents/matter-07/Supplemental Declaration Newanforbi v Candelaria.pdf"
+      },
+      {
+        "label": "Objections to Findings & Recommendations (BOLSTERED 3)",
+        "path": "/documents/matter-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf"
+      },
+      {
+        "label": "Notice of Supplemental Authority — Serrato Order, draft (superseded by the electronically filed version below)",
+        "path": "/documents/matter-07/Notice of Supplemental Authority - Serrato Order - July 7 2026.pdf"
+      },
+      {
+        "label": "Notice of Supplemental Authority — Serrato Order, ELECTRONICALLY FILED (Document 9, Jul. 9, 2026)",
+        "path": "/documents/matter-07/Notice of Supplemental Authority - Serrato Order - ELECTRONICALLY FILED Jul 9 2026.pdf"
+      },
+      {
+        "label": "Notice of Change of Address (filed July 7, 2026)",
+        "path": "/documents/matter-07/Notice of Change of Address (July 7, 2026).pdf"
+      }
+    ],
+    "evidenceCount": 17
+  },
+  {
+    "number": 8,
+    "caption": "Newanforbi v. Candelaria, et al.",
+    "case_no": "26WM000135",
+    "court": "Sacramento Sup. Ct.",
+    "claims": "Writ of Administrative Mandate (CCP §§1094.5, 473(d); Veh. Code §13559) — Set aside void APS Decision",
+    "status": "NOT PURSUING — fee-payment deadline (~Jul. 27, 2026) lapsed without payment or a revised FW-001; Petitioner made the deliberate decision not to continue this petition given the burden of the retaliatory transfer to Santa Clara. The underlying CDL-suspension theory and its consequential damages remain live in the primary vehicle, Matter 7 (2:26-cv-00983-DC-CSK); this matter's equitable/vacatur track alone is abandoned.",
+    "note": "Fee deadline lapsed ~Jul. 27, 2026 — not pursued further; Matter 7 remains the live vehicle for the same underlying theory.",
+    "filed": "May 18, 2026",
+    "judge": "TBD (Dept. 10C)",
+    "cluster": 1,
+    "type": "State",
+    "archived": true,
+    "badge": "ABANDONED",
+    "defendants": "Diana Candelaria, Driver Safety Hearing Officer, California DMV (official capacity); California Department of Motor Vehicles; Does 1-10",
+    "causes": [
+      "Count I — Want of Statutory Predicate: No 'Lawful Arrest' (Veh. Code §13353(a)(1); CCP §1094.5(b)) — APS refusal suspension lacks 'lawful arrest' predicate; PC §849(b)(1) Detention Certificate (Nov. 5, 2024) irrevocably destroyed that predicate before the Jan. 24, 2025 hearing",
+      "Count II — Failure to Proceed in the Manner Required by Law (CCP §1094.5(b); Topanga Ass'n v. County of L.A., 11 Cal.3d 506) — Decision does not mention Detention Certificate; dismisses arguments as 'unpersuasive' without analysis; mischaracterizes record; never applies Mercer v. DMV or People v. Sanders",
+      "Count III — Findings Unsupported by the Weight of the Evidence (CCP §1094.5(c); Berlinghieri v. DMV, 33 Cal.3d 392) — Dashcam audio directly contradicts DS-367's 'strong distinct odor of alcohol'; only liquid identified on scene was urine; no objective signs of impairment on video; walk-and-turn abandoned by officers; no pass/fail FST standard",
+      "Count IV — Structural Bias — Unconstitutional Dual-Role Framework (U.S. Const. 14th Amend.; Cal. Const. art. I §7) — DMV hearing officer serves as both advocate and adjudicator; structural error under Knudsen v. DMV (no showing of actual prejudice required); framework condemned in Cal. DUI Lawyers Ass'n v. DMV, Knudsen, Clarke v. Gordon",
+      "Count V — Excess of Jurisdiction — Adjudication of a Non-Existent Subject Matter (CCP §1094.5(b)) — Decision void; rendered in clear absence of jurisdiction over subject matter that did not legally exist at time of hearing"
+    ],
+    "documents": [
+      {
+        "label": "Verified Petition for Writ of Administrative Mandate (May 18, 2026)",
+        "path": "/documents/matter-08/Newanforbi v. Candelaria Mandamus.pdf"
+      },
+      {
+        "label": "Civil Case Cover Sheet CM-010, electronically filed (May 18, 2026)",
+        "path": "/documents/matter-08/Civil Case Cover Sheet CM-010 (electronically filed May 18 2026).pdf"
+      },
+      {
+        "label": "Order on Court Fee Waiver After Hearing — FW-008, denied for non-appearance (Jul. 17, 2026)",
+        "path": "/documents/matter-08/Order on Court Fee Waiver After Hearing - FW-008 (Jul 17 2026).pdf"
+      },
+      {
+        "label": "Court Minutes — Fee Waiver Hearing DENIED, non-appearance (Jul. 17, 2026)",
+        "path": "/documents/matter-08/Court Minutes - Fee Waiver Hearing DENIED, Non-Appearance (Jul 17 2026).pdf"
+      },
+      {
+        "label": "Court Minutes (Jul. 17, 2026) and Civil Case Cover Sheet CM-010, pp. 2-3",
+        "path": "/documents/matter-08/Court Minutes (Jul 17 2026) and Civil Case Cover Sheet CM-010 pp.2-3.pdf"
+      },
+      {
+        "label": "Notice of Change of Address (filed July 7, 2026)",
+        "path": "/documents/matter-08/Notice of Change of Address (July 7, 2026).pdf"
+      }
+    ],
+    "evidenceCount": 8
+  },
+  {
+    "number": 9,
+    "caption": "Newanforbi v. Macomber",
+    "case_no": "26WM000028",
+    "court": "Sacramento Sup. Ct.",
+    "claims": "Writ of Mandate (CCP §1085)",
+    "status": "Closed — Demurrer Hearing 05/29/2026, Dept. 13A",
+    "filed": "January 30, 2026",
+    "judge": "Hon. James P. Arguelles",
+    "cluster": 4,
+    "type": "State",
+    "archived": true,
+    "badge": "DENIED",
+    "defendants": "Jeff Macomber, Secretary of CDCR",
+    "causes": [
+      "Writ of Mandate (CCP §1085) — Compel ministerial duty to conduct individualized discharge determination"
+    ],
+    "documents": [
+      {
+        "label": "Notice of Confirmation of Electronic Filing — Petition for Writ of Mandate and Fee Waiver Accepted (January 30, 2026)",
+        "path": "/documents/matter-09/WOM-efile.pdf"
+      },
+      {
+        "label": "Request to Waive Court Fees (Form FW-001) — filed January 30, 2026",
+        "path": "/documents/matter-09/WOM-Fee Waiver.pdf"
+      },
+      {
+        "label": "Notice of Case Assignment — Dept. 32, Hon. James P. Arguelles (February 2, 2026)",
+        "path": "/documents/matter-09/WOM-Case Assignment.pdf"
+      },
+      {
+        "label": "First Amended Verified Petition for Writ of Mandate — No Substantive Changes (February 2, 2026)",
+        "path": "/documents/matter-09/WOM FAC.pdf"
+      },
+      {
+        "label": "Opening Brief in Support of Petition for Writ of Mandate (February 9, 2026)",
+        "path": "/documents/matter-09/WOM_Opening Brief.pdf"
+      },
+      {
+        "label": "Amended Notice of Hearing on Petition for Writ of Mandate, with Exhibits A–F (March 31, 2026)",
+        "path": "/documents/matter-09/Amended Notice of Hearing on Petition for Writ of Mandate.pdf"
+      },
+      {
+        "label": "AG Reply to Opposition to Demurrer (May 18, 2026)",
+        "path": "/documents/matter-09/26WM000028_Reply_to_Opp.pdf"
+      },
+      {
+        "label": "Case Update — CU_26WM000028 (May 29, 2026)",
+        "path": "/documents/matter-09/CU_26WM000028_e91359ab-2598-4573-a45a-fa7893fc4cb07.pdf"
+      }
+    ],
+    "evidenceCount": 4
+  },
+  {
+    "number": 10,
+    "caption": "Newanforbi v. Macomber",
+    "case_no": "C2602632",
+    "court": "Santa Clara Sup. Ct.",
+    "claims": "Habeas Corpus (PC §3008(d)(2); 15 CCR §3574) — Treatment Termination",
+    "status": "CLOSED — Order Denying Petition Without Prejudice (April 27, 2026)",
+    "filed": "February 23, 2026",
+    "judge": "Hon. Robert Hawk",
+    "cluster": 4,
+    "type": "State",
+    "archived": true,
+    "badge": "DENIED",
+    "defendants": "Jeffrey Macomber, Secretary of CDCR (official capacity)",
+    "causes": [
+      "PC §3008(d)(2)",
+      "15 CCR §3574",
+      "Challenge to compelled treatment as unlawful restraint"
+    ],
+    "documents": [
+      {
+        "label": "Order Denying Petition for Writ of Habeas Corpus Without Prejudice (April 27, 2026)",
+        "path": "/documents/matter-10/ORDER_DENYING_PETITION_C2602632.pdf"
+      },
+      {
+        "label": "Notice of Change of Address (filed July 7, 2026)",
+        "path": "/documents/matter-10/Notice of Change of Address (July 7, 2026).pdf"
+      }
+    ],
+    "evidenceCount": 4
+  },
+  {
+    "number": 11,
+    "caption": "Newanforbi v. Macomber",
+    "case_no": "TBD (USDC E.D. Cal.)",
+    "court": "USDC E.D. Cal.",
+    "claims": "42 USC 1983: Procedural Due Process (Policy 19-03)",
+    "status": "DISMISSED WITH PREJUDICE — Notice of Voluntary Dismissal filed June 29, 2026 (FRCP 41(a)(1)(A)(i)); self-executing",
+    "filed": "March 2, 2026",
+    "judge": "TBD",
+    "cluster": 2,
+    "type": "Federal",
+    "archived": true,
+    "badge": "DISMISSED",
+    "defendants": "Jeff Macomber, Secretary of CDCR (official capacity only)",
+    "causes": [
+      "Procedural Due Process (14th Amend.) — Policy 19-03 challenge; declaratory/injunctive relief under Ex parte Young"
+    ],
+    "documents": [],
+    "evidenceCount": 6
+  },
+  {
+    "number": 12,
+    "caption": "Brendan Ngwa Nforbi v. Diamond Truck Sales, Inc.",
+    "case_no": "STK-CV-UF-2026-0001094",
+    "court": "San Joaquin Sup. Ct.",
+    "claims": "Fraudulent Concealment, Intentional Misrepresentation, Negligent Misrepresentation, Breach of Contract, UCL §17200, Rescission & Restitution, Declaratory Relief",
+    "status": "Active — Default ENTERED against Diamond Truck Sales, Inc.; default prove-up hearing requested at/after CMC; Alpine Truck Sales, Inc. served July 1, 2026, response deadline July 31, 2026, no appearance; Alpine Request for Entry of Default/Court Judgment and Declaration pre-drafted, execution date August 1, 2026, ready to file once Alpine's deadline lapses; CM-110 Case Management Statement filed July 20, 2026; CMC 08/12/2026, 8:30 AM, Dept. 11B",
+    "badge": "DEFAULT",
+    "filed": "February 13, 2026",
+    "judge": "Hon. Robert T. Waters",
+    "cluster": 5,
+    "type": "State",
+    "defendants": "Diamond Truck Sales, Inc. (California corporation operating at multiple locations including Texas and South Carolina); Alpine Truck Sales, Inc. (California corporation; 1201 S Soderquist Road, Turlock, CA 95380); DOES 1-20",
+    "causes": [
+      "Fraudulent Concealment (Count 1)",
+      "Intentional Misrepresentation (Count 2)",
+      "Negligent Misrepresentation (Count 3)",
+      "Breach of Contract (Count 4)",
+      "Violation of Unfair Competition Law, B&P Code §17200 (Count 5)",
+      "Rescission and Restitution (Count 6)",
+      "Declaratory Relief (Count 7)"
+    ],
+    "documents": [
+      {
+        "label": "Original Complaint (Feb. 13, 2026)",
+        "path": "/documents/matter-12/1094 Complaint.pdf"
+      },
+      {
+        "label": "Amended Complaint",
+        "path": "/documents/matter-12/1094 Amended Complaint.pdf"
+      },
+      {
+        "label": "Summons — Civil",
+        "path": "/documents/matter-12/1094 SUM100 Summons - Civil.pdf"
+      },
+      {
+        "label": "Summons — Civil 2",
+        "path": "/documents/matter-12/1094 SUM100 Summons - Civil 2.pdf"
+      },
+      {
+        "label": "AMENDED Summons — Civil",
+        "path": "/documents/matter-12/1094 SUM100 AMENDED Summons - Civil.pdf"
+      },
+      {
+        "label": "Civil Case Cover Sheet (CM-010)",
+        "path": "/documents/matter-12/1094 CM010 Civil Case Cover Sheet.pdf"
+      },
+      {
+        "label": "Order on Court Fee Waiver (FW-003)",
+        "path": "/documents/matter-12/1094 FW003 Order on Court Fee Waiver.pdf"
+      },
+      {
+        "label": "Notice of Case Assignment Scheduling Information",
+        "path": "/documents/matter-12/1094 Notice of Case Assignment Scheduling Information.pdf"
+      },
+      {
+        "label": "Proof of Service of Summons",
+        "path": "/documents/matter-12/1094 POS010 Proof of Service of Summons.pdf"
+      },
+      {
+        "label": "Proof of Service of Summons 2",
+        "path": "/documents/matter-12/1094 POS010 Proof of Service of Summons 2.pdf"
+      },
+      {
+        "label": "Proof of Service of Summons 3",
+        "path": "/documents/matter-12/1094 POS010 Proof of Service of Summons 3.pdf"
+      },
+      {
+        "label": "Proof of Service of Summons 4",
+        "path": "/documents/matter-12/1094 POS010 Proof of Service of Summons 4.pdf"
+      },
+      {
+        "label": "Proof of Service of Summons 5",
+        "path": "/documents/matter-12/1094 POS010 Proof of Service of Summons 5.pdf"
+      },
+      {
+        "label": "FullCourt Enterprise — Civil Case",
+        "path": "/documents/matter-12/FullCourt Enterprise - Civil Case.pdf"
+      },
+      {
+        "label": "FullCourt Enterprise — Civil ROA Summary",
+        "path": "/documents/matter-12/FullCourt Enterprise - Civil ROA Summary.pdf"
+      },
+      {
+        "label": "DTS Default Judgment Packet",
+        "path": "/documents/matter-12/DTS Default Judgment Packet.pdf"
+      },
+      {
+        "label": "Proof of Service of Summons — Alpine Truck Sales, Inc. (photo, served July 1, 2026; POS-010 signed July 2, 2026)",
+        "path": "/documents/matter-12/1094 POS010 Proof of Service of Summons - Alpine (July 1, 2026).jpeg"
+      },
+      {
+        "label": "POS-010 Proof of Service of Summons — Alpine Truck Sales, Inc. (formal filed copy; Levying Officer File No. 2026002577)",
+        "path": "/documents/matter-12/POS010 Proof of Service - Alpine Truck Sales (Levying Officer File No. 2026002577).pdf"
+      },
+      {
+        "label": "Alpine Default Judgment Packet — complete filing record: CIV-100 Request for Entry of Default/Court Judgment, Declaration, and Exhibits 1–10 with covers (pre-drafted, execution date Aug. 1, 2026) — FLAGGED: case number field reads STK-CV-UF-2026-1094, missing the leading zeros in the actual case number STK-CV-UF-2026-0001094; correct before filing",
+        "path": "/documents/matter-12/Alpine Default Judgment Packet (Pre-Drafted, Execution Date Aug 1 2026).pdf"
+      },
+      {
+        "label": "[Proposed] Judgment (JUD-100) — corrected: case number fixed to STK-CV-UF-2026-0001094 and Alpine Truck Sales, Inc. added to Item 5a \"against defendant\" (the original draft named only Diamond in the operative parties field; Alpine's joint-and-several liability appeared only in freeform Item 8 text, which risked the abstract/writ not treating Alpine as a named judgment debtor). Ready to submit at the Aug. 12 CMC.",
+        "path": "/documents/matter-12/1094 JUD100 [Proposed] Judgment (Corrected -- case number, Alpine added to Item 5a, ready to submit).pdf"
+      },
+      {
+        "label": "Alpine Default Judgment Packet — corrected: complete filing record (CIV-100 Request for Entry of Default/Court Judgment, Declaration, and Exhibits 1–10 with covers) with the case number fixed to STK-CV-UF-2026-0001094 on all 3 CIV-100 pages (the Declaration and exhibit cover pages already had it right). Exhibit boundaries also reorganized: Exhibit 1 (Vehicle Sale) now holds the Retail Buyer's Order, Texas Sales and Use Tax Exemption Certification, CDTFA-106 Use Tax Clearance Request, Buyer's Tag Receipt, and both Powers of Attorney (Dakota Financial and Diamond Truck Sales); Exhibit 2 (DMV Fees) now holds only the DMV Report of Deposit of Fees and the DMV Generated Fees printout. Ready to file Aug. 1, 2026 once Alpine's response deadline lapses.",
+        "path": "/documents/matter-12/1094 Alpine Default Judgment Packet (Corrected Case Number, Ready to File Aug 1 2026).pdf"
+      },
+      {
+        "label": "Notice of Change of Address (filed July 7, 2026)",
+        "path": "/documents/matter-12/Notice of Change of Address (July 7, 2026).pdf"
+      },
+      {
+        "label": "CM-110 Case Management Statement, incl. Attachment 4b Declaration in Support of Default Judgment (filed July 20, 2026)",
+        "path": "/documents/matter-12/CM110 Case Management Statement (Jul 20 2026).pdf"
+      },
+      {
+        "label": "EJ-001 Abstract of Judgment — draft, party/court caption filled; judgment date and amount left blank pending Aug. 12 CMC outcome",
+        "path": "/documents/matter-12/1094 EJ001 Abstract of Judgment (Draft, Pending Judgment Entry).pdf"
+      },
+      {
+        "label": "EJ-001 Abstract of Judgment — blank form",
+        "path": "/documents/matter-12/1094 EJ001 Abstract of Judgment (Blank Form).pdf"
+      },
+      {
+        "label": "AT-138/EJ-125 Application and Order for Appearance and Examination — draft, ready to file once a judgment debtor and hearing date are confirmed. Corrected: Item 8 (\"This court is not the court in which the money judgment is entered\") was erroneously checked; San Joaquin Superior Court is the entering court, so that box is now unchecked.",
+        "path": "/documents/matter-12/1094 AT138-EJ125 Application and Order for Appearance and Examination (Draft, Pending Judgment Entry).pdf"
+      },
+      {
+        "label": "AT-138/EJ-125 Application and Order for Appearance and Examination — blank form",
+        "path": "/documents/matter-12/1094 AT138-EJ125 Application and Order for Appearance and Examination (Blank Form).pdf"
+      },
+      {
+        "label": "EJ-130 Writ of Execution — draft, party/court caption filled; judgment amount/date left blank pending Aug. 12 CMC outcome",
+        "path": "/documents/matter-12/1094 EJ130 Writ of Execution (Draft, Pending Judgment Entry).pdf"
+      },
+      {
+        "label": "EJ-130 Writ of Execution — blank form",
+        "path": "/documents/matter-12/1094 EJ130 Writ of Execution (Blank Form).pdf"
+      },
+      {
+        "label": "EJ-160 Claim of Exemption — blank form, kept only as a reference copy (this is the judgment debtor's own form, returned to the levying officer, not filed by the creditor)",
+        "path": "/documents/matter-12/1094 EJ160 Claim of Exemption (Blank Form, Debtor-Filed Reference Copy).pdf"
+      },
+      {
+        "label": "MC-012 Memorandum of Costs After Judgment — draft, caption filled; cost/interest line items intentionally left blank until actually incurred post-judgment",
+        "path": "/documents/matter-12/1094 MC012 Memorandum of Costs After Judgment (Draft, Pending Judgment Entry).pdf"
+      },
+      {
+        "label": "MC-012 Memorandum of Costs After Judgment — blank form",
+        "path": "/documents/matter-12/1094 MC012 Memorandum of Costs After Judgment (Blank Form).pdf"
+      },
+      {
+        "label": "AT-167/EJ-152 Memorandum of Garnishee — Diamond Truck Sales, Inc. / Bank of Stockton, Golden State Branch, 134 S Golden State Blvd, Turlock, CA 95380 — caption pre-filled, garnishee items 3–9 left blank for the bank to complete under penalty of perjury within 10 days of levy; branch address confirmed as a valid service location — see DFPI central-locations finding below",
+        "path": "/documents/matter-12/1094 AT167-EJ152 Memorandum of Garnishee - Diamond Truck Sales - Bank of Stockton (Draft, Pending Levy).pdf"
+      },
+      {
+        "label": "AT-167/EJ-152 Memorandum of Garnishee — Diamond Truck Sales, Inc. / JPMorgan Chase Bank, N.A., Countryside Dr. Branch, 2951 Countryside Dr, Turlock, CA 95380 — caption pre-filled, garnishee items 3–9 left blank; branch address confirmed as a valid service location — see DFPI central-locations finding below",
+        "path": "/documents/matter-12/1094 AT167-EJ152 Memorandum of Garnishee - Diamond Truck Sales - JPMorgan Chase (Draft, Pending Levy).pdf"
+      },
+      {
+        "label": "AT-167/EJ-152 Memorandum of Garnishee — Alpine Truck Sales, Inc. / Bank of Stockton, Golden State Branch, 134 S Golden State Blvd, Turlock, CA 95380 — caption pre-filled, garnishee items 3–9 left blank for the bank to complete; branch address confirmed as a valid service location — see DFPI central-locations finding below",
+        "path": "/documents/matter-12/1094 AT167-EJ152 Memorandum of Garnishee - Alpine Truck Sales - Bank of Stockton (Draft, Pending Levy).pdf"
+      },
+      {
+        "label": "AT-167/EJ-152 Memorandum of Garnishee — Alpine Truck Sales, Inc. / JPMorgan Chase Bank, N.A., Countryside Dr. Branch, 2951 Countryside Dr, Turlock, CA 95380 — caption pre-filled, garnishee items 3–9 left blank; branch address confirmed as a valid service location — see DFPI central-locations finding below",
+        "path": "/documents/matter-12/1094 AT167-EJ152 Memorandum of Garnishee - Alpine Truck Sales - JPMorgan Chase (Draft, Pending Levy).pdf"
+      },
+      {
+        "label": "AT-167/EJ-152 Memorandum of Garnishee — blank form",
+        "path": "/documents/matter-12/1094 AT167-EJ152 Memorandum of Garnishee (Blank Form).pdf"
+      },
+      {
+        "label": "DFPI Central Locations for Service of Legal Process (statewide registry, downloaded Jul. 29, 2026) — searched in full; neither JPMorgan Chase Bank, N.A. nor Bank of Stockton has a designation on file, so under CCP §684.115's default rule every California branch of each bank is a valid service location",
+        "path": "/documents/matter-12/DFPI Central Locations for Service of Legal Process (downloaded Jul 29 2026 - no Chase or Bank of Stockton entry).xlsx"
+      },
+      {
+        "label": "Bank of Stockton — DFPI Regulated Entity Listing (Jul. 29, 2026) — confirms Bank of Stockton as DFPI License No. 45, HQ at 301 East Miner Avenue, Stockton, CA 95202; supporting context only, not a substitute for the central-locations registry above",
+        "path": "/documents/matter-12/Bank of Stockton - DFPI Regulated Entity Listing (Jul 29 2026).pdf"
+      }
+    ],
+    "evidenceCount": 12
+  },
+  {
+    "number": 13,
+    "caption": "Newanforbi v. Urrea et al.",
+    "case_no": "2:26-cv-00190-DC-SCR",
+    "court": "USDC E.D. Cal.",
+    "claims": "42 USC 1983: Unconstitutional Detention (Halloween Curfew)",
+    "status": "DISMISSED WITH PREJUDICE — Notice of Voluntary Dismissal filed June 29, 2026 (FRCP 41(a)(1)(A)(i)); self-executing",
+    "filed": "January 22, 2026",
+    "judge": "Hon. Dena M. Coggins / Mag. Riordan",
+    "cluster": 2,
+    "type": "Federal",
+    "archived": true,
+    "badge": "DISMISSED",
+    "defendants": "Agent Urrea; Jeff Macomber; G. Noguchi",
+    "causes": [
+      "4th & 14th Amendment Violations — Unconstitutional Detention"
+    ],
+    "documents": [],
+    "evidenceCount": 3
+  },
+  {
+    "number": 14,
+    "caption": "Newanforbi v. Urrea et al.",
+    "case_no": "TBD (San Joaquin Sup. Ct.)",
+    "court": "San Joaquin Sup. Ct.",
+    "claims": "Writ of Mandate, False Imprisonment, Bane Act, IIED, Negligent Supervision",
+    "status": "NOT PURSUING — Voluntarily Dismissed",
+    "filed": "June 30, 2026",
+    "judge": "TBD",
+    "cluster": 2,
+    "type": "State",
+    "archived": true,
+    "badge": "ABANDONED",
+    "defendants": "Glenn Urrea, Parole Agent (individually); Gary Noguchi (#7284), Unit Supervisor (individually); Keely Dodd (#6462), Parole Administrator (individually); State of California / CDCR; DOES 1-10",
+    "causes": [
+      "False Imprisonment",
+      "Bane Act (Civ. Code §52.1)",
+      "IIED",
+      "Negligent Supervision (against CDCR)"
+    ],
+    "documents": [
+      {
+        "label": "Complaint — Newanforbi v. Urrea et al.",
+        "path": "/documents/matter-14/Newanforbi v Urrea.pdf"
+      }
+    ],
+    "evidenceCount": 7
+  },
+  {
+    "number": 15,
+    "caption": "Newanforbi v. California Department of Corrections and Rehabilitation, et al.",
+    "case_no": "STK-CV-UPI-2026-5417",
+    "court": "San Joaquin Sup. Ct.",
+    "claims": "Negligence, False Imprisonment, IIED, Breach of Mandatory Duty",
+    "status": "ABANDONED — Voluntary Dismissal With Prejudice filed July 24, 2026, as to all defendants (CDCR, Keely Dodd, and Gary Noguchi), due to a real, credible safety threat. Complaint for Damages (STK-CV-UPI-2026-5417) had been filed June 11, 2026 (San Joaquin Sup. Ct.); CDCR and Dodd personally served June 22, 2026; responsive pleading deadline had been extended to Aug. 21, 2026 by agreement with Judith S. Gronna, DAG (Correctional Law Section, CA DOJ), with a meet-and-confer call set for Jul. 30, 2026 — both now moot. CMC previously set Dec. 9, 2026, Dept. 10C (Judge Jayne Lee), vacated.",
+    "filed": "May 13, 2026 (original, Sacramento Sup. Ct.); RECALIBRATED Complaint dated June 8, 2026 (San Joaquin Sup. Ct., supersedes)",
+    "judge": "Hon. Jayne Lee, Dept. 10C",
+    "cluster": 2,
+    "type": "State",
+    "archived": true,
+    "badge": "ABANDONED",
+    "defendants": "Keely Dodd (#6462), Parole Administrator, DAPO Northern Region HQ Sacramento (individually); Gary Noguchi (#7284), Unit Supervisor (individually); Joseelyn Rojo, Parole Agent (individually); CDCR; DOES 1-20. Long Moua (#7472) authoring agent only — non-party; CDCR vicariously liable. Andrew Derrick (#6910) dropped from this action. Punitive damages sought against Dodd, Noguchi, and Rojo individually (Civ. Code §3294); NOT against CDCR (Gov. Code §818).",
+    "causes": [
+      "Count 1 — Negligence; Negligent Undertaking (Gov. Code §820(a)) against all defendants — voluntary election to conduct discharge review created ministerial duty of care; operational/clerical failures (wrong parolee name, obsolete form, fabricated rules, non-service) are not discretionary; §820.2 immunity inapplicable",
+      "Count 2 — False Imprisonment against all defendants — Nov. 19, 2025 void instrument (names 'Eagan') supplies no lawful privilege; continuing restraint (GPS, curfew, warrantless searches) accruing $100/day from Nov. 19, 2025",
+      "Count 3 — IIED against individual defendants (Dodd, Noguchi, Rojo) — extreme and outrageous to strip liberty through instrument adjudicating another person by name; at minimum reckless disregard; punitive damages under Civ. Code §3294",
+      "Count 4 — Breach of Mandatory Duty (Gov. Code §815.6) against CDCR — 15 CCR §§3720–3722 impose mandatory 'shall' duties on form, scoring, documentation, and service when review is conducted; Apr. 17, 2025 §3574 amendments reinforce individualized-process duties"
+    ],
+    "documents": [
+      {
+        "label": "Complaint — Newanforbi v. CDCR, et al.",
+        "path": "/documents/matter-15/Newanforbi v. CDCR, et al.pdf"
+      },
+      {
+        "label": "RECALIBRATED Complaint for Damages (dated June 8, 2026)",
+        "path": "/documents/matter-15/Newanforbi v Dodd RECALIBRATED.pdf"
+      },
+      {
+        "label": "Verified Complaint (dated June 15, 2026)",
+        "path": "/documents/matter-15/Dodd.pdf"
+      },
+      {
+        "label": "Original Complaint — Newanforbi v. Dodd et al. (dated May 8, 2026)",
+        "path": "/documents/matter-15/Newanforbi v. Dodd, et al..pdf"
+      },
+      {
+        "label": "Verified Complaint — Newanforbi v. Dodd et al. (June 15, 2026)",
+        "path": "/documents/matter-15/Newanforbi v. Dodd.pdf"
+      },
+      {
+        "label": "Government Claim (GCP Intake Form)",
+        "path": "/documents/matter-15/Print_GCP_INTAKE_FORM.pdf"
+      },
+      {
+        "label": "Civil Case Cover Sheet (CM-010)",
+        "path": "/documents/matter-15/5417 CM010 Civil Case Cover Sheet.pdf"
+      },
+      {
+        "label": "Summons — Civil",
+        "path": "/documents/matter-15/5417 SUM100 Summons - Civil.pdf"
+      },
+      {
+        "label": "Complaint (5417)",
+        "path": "/documents/matter-15/5417 Complaint.pdf"
+      },
+      {
+        "label": "Proof of Service of Summons — CDCR (served June 22, 2026; filed June 29, 2026)",
+        "path": "/documents/matter-15/Proof of Service of Summons - CDCR (served June 22, 2026; filed June 29, 2026).pdf"
+      },
+      {
+        "label": "Proof of Service of Summons — Keely Dodd (served June 22, 2026; filed June 29, 2026)",
+        "path": "/documents/matter-15/Proof of Service of Summons - Keely Dodd (served June 22, 2026; filed June 29, 2026).pdf"
+      },
+      {
+        "label": "Notice of Case Assignment Scheduling Information",
+        "path": "/documents/matter-15/5417 Notice of Case Assignment Scheduling Information.pdf"
+      },
+      {
+        "label": "Clerk's Certificate of Service by Mail",
+        "path": "/documents/matter-15/5417 Clerk s Certificate of Service by Mail.pdf"
+      },
+      {
+        "label": "Order on Court Fee Waiver (FW-003)",
+        "path": "/documents/matter-15/Newanforbi v. CDCR FW003 Order on Court Fee Waiver.pdf"
+      },
+      {
+        "label": "Notice of Change of Address (filed July 7, 2026)",
+        "path": "/documents/matter-15/Notice of Change of Address (July 7, 2026).pdf"
+      },
+      {
+        "label": "Email — Extension Request & Meet-and-Confer Scheduling (Gronna ↔ Newanforbi, Jul. 16–17, 2026)",
+        "path": "/documents/matter-15/Request for Extension of Time in Newanforbi v. CDCR, Case No. STK-CV-UPI-2026-54.pdf"
+      },
+      {
+        "label": "CCP §430.41 Meet-and-Confer Calendar Invite (Gronna, Jul. 17, 2026) — JSG to call BNN at (209) 801-4442, Jul. 30, 11:00 AM",
+        "path": "/documents/matter-15/CCP 430.41 Meet and Confer Calendar Invite (Gronna, Jul. 17, 2026).pdf"
+      }
+    ],
+    "evidenceCount": 13
+  },
+  {
+    "number": 16,
+    "caption": "Newanforbi v. Rojo",
+    "case_no": "TBD (San Joaquin Sup. Ct.)",
+    "court": "San Joaquin Sup. Ct.",
+    "claims": "Bane Act, IIED, Negligence",
+    "status": "NOT PURSUING — Voluntarily Dismissed",
+    "filed": "July 7, 2026",
+    "judge": "TBD",
+    "cluster": 2,
+    "type": "State",
+    "archived": true,
+    "badge": "ABANDONED",
+    "defendants": "Joseelyn Rojo, Parole Agent, CDCR",
+    "causes": [
+      "Bane Act (Civ. Code §52.1)",
+      "Intentional Infliction of Emotional Distress",
+      "Negligence"
+    ],
+    "documents": [
+      {
+        "label": "Complaint — Newanforbi v. Rojo (filed July 7, 2026)",
+        "path": "/documents/matter-16/Newanforbi v. Rojo.pdf"
+      }
+    ],
+    "evidenceCount": 4
+  },
+  {
+    "number": 17,
+    "caption": "Newanforbi v. Maloney et al.",
+    "case_no": "2:26-cv-00194-DAD-SCR",
+    "court": "USDC E.D. Cal.",
+    "claims": "42 USC 1983: Civil Rights",
+    "status": "DISMISSED WITH PREJUDICE — Notice of Voluntary Dismissal filed June 29, 2026 (FRCP 41(a)(1)(A)(i)); self-executing",
+    "filed": "January 22, 2026",
+    "judge": "Hon. Dale A. Drozd / Mag. Riordan",
+    "cluster": 2,
+    "type": "Federal",
+    "archived": true,
+    "badge": "DISMISSED",
+    "defendants": "J. Maloney (#59491); Jeff Macomber (official capacity)",
+    "causes": [
+      "Civil Rights Violation",
+      "Declaratory and Injunctive Relief"
+    ],
+    "documents": [],
+    "evidenceCount": 2
+  },
+  {
+    "number": 18,
+    "caption": "Newanforbi v. Barocio",
+    "case_no": "2:26-cv-00191-DJC-CSK (PC)",
+    "court": "USDC E.D. Cal.",
+    "claims": "42 USC 1983: Prisoner Civil Rights",
+    "status": "DISMISSED WITH PREJUDICE — Notice of Voluntary Dismissal filed June 29, 2026 (FRCP 41(a)(1)(A)(i)); self-executing",
+    "filed": "January 22, 2026",
+    "judge": "Hon. Daniel J. Calabretta / Mag. Chi Soo Kim",
+    "cluster": 2,
+    "type": "Federal",
+    "archived": true,
+    "badge": "DISMISSED",
+    "defendants": "K. Barocio, ET AL.",
+    "causes": [
+      "Civil Rights Violation (42 USC 1983)"
+    ],
+    "documents": [],
+    "evidenceCount": 1
+  },
+  {
+    "number": 19,
+    "caption": "Newanforbi v. Macomber",
+    "case_no": "C2604791",
+    "court": "Santa Clara Sup. Ct.",
+    "claims": "Habeas Corpus — Immediate Discharge from Parole (Pen. Code §1473; PC §§3000, 3001, 3008(d)(2); 15 CCR §3574)",
+    "status": "Active — Order Extending Time to Rule issued July 2, 2026; court has until August 1, 2026 to rule (Cal. Rules of Court, rule 4.551(i)); Judge Robert Hawk cited need to thoroughly review voluminous papers",
+    "filed": "April 3, 2026",
+    "judge": "Hon. Robert Hawk",
+    "cluster": 4,
+    "type": "State",
+    "defendants": "Keely Dodd, CDCR Parole Administrator (individual capacity); Jeffrey Macomber, Secretary of CDCR (official capacity)",
+    "causes": [
+      "Habeas Corpus — Immediate and Unconditional Discharge from Parole (Pen. Code §1473)",
+      "CDCR Policy 19-03 is an invalid underground regulation (Gov. Code §11342.600; Tidewater Marine v. Bradshaw) and exceeds statutory authority under PC §3008(d)(2)",
+      "Use of obsolete Form 1502-DR instead of mandated Form 3043 violates 15 CCR §3574(f) (Accardi doctrine)",
+      "Substantive Due Process — no individualized finding of current dangerousness (In re Lawrence; In re Taylor)",
+      "Procedural Due Process — no notice, no hearing, no neutral decision-maker, no CTM meeting"
+    ],
+    "documents": [
+      {
+        "label": "Petition for Writ of Habeas Corpus — Immediate Discharge from Parole (signed Mar. 31, 2026; filed Apr. 3, 2026)",
+        "path": "/documents/matter-19/Petition for Writ of Habeas Corpus (filed Apr. 3, 2026).pdf"
+      },
+      {
+        "label": "Order Extending Time — Hon. Robert Hawk (filed July 2, 2026; time extended to Aug. 1, 2026)",
+        "path": "/documents/matter-19/Order Extending Time (July 2, 2026).pdf"
+      },
+      {
+        "label": "Notice of Change of Address (filed July 7, 2026)",
+        "path": "/documents/matter-19/Notice of Change of Address (July 7, 2026).pdf"
+      }
+    ],
+    "evidenceCount": 11
+  },
+  {
+    "number": 20,
+    "caption": "Newanforbi v. California Highway Patrol, et al.",
+    "case_no": "26CV191136",
+    "court": "Alameda Sup. Ct.",
+    "claims": "Writ of Mandate (CCP §1085; PC §679.10) — U Visa Certification; Declaratory Relief (CCP §1060)",
+    "status": "Active — Petition filed 05/29/2026; AG Demurrer (CHP) filed; Opposition to Demurrer filed 07/13/2026; CHP Demurrer Hearing: 08/28/2026, 9:00 a.m., Dept. 25 — Hon. Jenna M. Whitman. Individual Respondents Serrato, Paul, and Dutra filed their own Joinders and Demurrers 07/30/2026, each also arguing Petitioner fails to allege they are 'certifying officials' under PC §679.10(b); a Joint Stipulation filed the same day asks the Court to advance their Oct. 16/23, 2026 hearing dates to Aug. 28, 2026 to be heard alongside CHP's Demurrer — stipulation not yet signed/entered. Separately, the July 15, 2026 Case Management Conference was continued to September 2, 2026 per the court's tentative ruling (forwarded by Deputy AG Vanessa Ing).",
+    "filed": "May 29, 2026",
+    "judge": "Hon. Jenna M. Whitman, Dept. 25",
+    "cluster": 1,
+    "type": "State",
+    "defendants": "California Highway Patrol; G. Serrato, Captain and Commander CHP Dublin Area; Gary Paul, Lieutenant CHP Dublin Area; Eric Dutra, Sergeant CHP Dublin Area; DOES 1-10",
+    "serviceTracking": [
+      {
+        "name": "G. Serrato",
+        "title": "Captain and Commander",
+        "location": "CHP Dublin Area (Alameda)",
+        "served": true,
+        "dateServed": "June 30, 2026"
+      },
+      {
+        "name": "Gary Paul",
+        "title": "Lieutenant",
+        "location": "CHP Dublin Area (Alameda)",
+        "served": true,
+        "dateServed": "June 30, 2026"
+      },
+      {
+        "name": "Eric Dutra",
+        "title": "Sergeant",
+        "location": "CHP Dublin Area (Alameda)",
+        "served": true,
+        "dateServed": "June 30, 2026"
+      },
+      {
+        "name": "California Highway Patrol",
+        "title": "Organization",
+        "location": "CHP Sacramento (Sacramento)",
+        "served": true,
+        "dateServed": "June 3, 2026"
+      }
+    ],
+    "causes": [
+      "Count I — Writ of Mandate (CCP §1085): Failure to Perform Mandatory Duty Under Penal Code §679.10(b) — compel certification of Form I-918 Supplement B",
+      "Count II — Writ of Mandate (CCP §1085): Failure to Perform Ministerial Duty Under PC §679.10(g) — reason-giving requirement for denials",
+      "Count III — Writ of Mandate (CCP §1085): Failure to Apply Rebuttable Presumption of Helpfulness Under PC §679.10(h)",
+      "Count IV — Declaratory Relief (CCP §1060): Facial Deficiency of April 20, 2026 Denial and Construction of PC §679.10"
+    ],
+    "documents": [
+      {
+        "label": "Verified Petition for Writ of Mandate (filed May 29, 2026)",
+        "path": "/documents/matter-20/0.Newanforbi v. CHP - Writ of Mandate.pdf",
+        "filed": true
+      },
+      {
+        "label": "Filing Receipt — One Legal (May 29, 2026)",
+        "path": "/documents/matter-20/Filing Receipt - One Legal.pdf",
+        "filed": true
+      },
+      {
+        "label": "Notice of E-Filing Confirmation (June 3, 2026)",
+        "path": "/documents/matter-20/Notice of E-Filing Confirmation.pdf",
+        "filed": true
+      },
+      {
+        "label": "Petition for Writ of Mandate — Filed Copy (June 3, 2026)",
+        "path": "/documents/matter-20/Petition for Writ of Mandate.pdf",
+        "filed": true
+      },
+      {
+        "label": "Summons on Petition (issued June 3, 2026)",
+        "path": "/documents/matter-20/Summons on Petition.pdf",
+        "filed": true
+      },
+      {
+        "label": "Notice of Case Management Conference (June 3, 2026)",
+        "path": "/documents/matter-20/Notice of Case Management Conference.pdf",
+        "filed": true
+      },
+      {
+        "label": "Request to Waive Court Fees (June 3, 2026)",
+        "path": "/documents/matter-20/Request to Waive Court Fees.pdf",
+        "filed": true
+      },
+      {
+        "label": "Receipt (June 3, 2026)",
+        "path": "/documents/matter-20/RECEIPT.pdf",
+        "filed": true
+      },
+      {
+        "label": "Notice of Change of Address (filed July 7, 2026)",
+        "path": "/documents/matter-20/Notice of Change of Address (July 7, 2026).pdf",
+        "filed": true
+      },
+      {
+        "label": "AG Demurrer to Petition (Deputy AG Vanessa Ing)",
+        "path": "/documents/matter-20/AG Demurrer to Petition.pdf",
+        "filed": true
+      },
+      {
+        "label": "AG MPA in Support of Demurrer",
+        "path": "/documents/matter-20/AG MPA ISO Demurrer.pdf",
+        "filed": true
+      },
+      {
+        "label": "Declaration of Vanessa Ing Re: Meet and Confer",
+        "path": "/documents/matter-20/AG Decl. Vanessa Ing - Meet and Confer.pdf",
+        "filed": true
+      },
+      {
+        "label": "AG Proposed Order on Demurrer",
+        "path": "/documents/matter-20/AG Proposed Order on Demurrer.pdf",
+        "filed": true
+      },
+      {
+        "label": "Opposition to Demurrer (filed July 13, 2026)",
+        "path": "/documents/matter-20/Opposition to Demurrer.pdf",
+        "filed": true
+      },
+      {
+        "label": "Declaration of Petitioner ISO Opposition",
+        "path": "/documents/matter-20/Declaration of Petitioner ISO Opposition.pdf",
+        "filed": true
+      },
+      {
+        "label": "Request for Judicial Notice with Exhibits",
+        "path": "/documents/matter-20/Request for Judicial Notice with Exhibits.pdf",
+        "filed": true
+      },
+      {
+        "label": "Proposed Order Overruling Demurrer",
+        "path": "/documents/matter-20/Proposed Order Overruling Demurrer.pdf",
+        "filed": true
+      },
+      {
+        "label": "Proof of Service — Opposition to Demurrer",
+        "path": "/documents/matter-20/Proof of Service - Opposition to Demurrer.pdf",
+        "filed": true
+      },
+      {
+        "label": "Case Management Statement (CM-110) (filed June 30, 2026)",
+        "path": "/documents/matter-20/Case Management Statement (CM-110) (filed June 30, 2026).pdf",
+        "filed": true
+      },
+      {
+        "label": "Tentative Ruling re: Case Management — CMC Continued to Sept. 2, 2026 (Hon. Jenna Whitman, July 12, 2026)",
+        "path": "/documents/matter-20/Tentative Ruling on CMC Continuance - Hon. Jenna Whitman (July 12, 2026).pdf",
+        "filed": true
+      },
+      {
+        "label": "Order Initial Case Management Conference — Continued to Sept. 2, 2026 (signed July 15, 2026; entered/served July 21, 2026)",
+        "path": "/documents/matter-20/Order Continuing Initial CMC to Sep 2 2026 (Jul 21 2026).pdf",
+        "filed": true
+      },
+      {
+        "label": "Declaration of Vanessa Ing Re: Meet and Confer on Individual Respondents' Demurrers (executed July 29, 2026)",
+        "path": "/documents/matter-20/AG Decl. Vanessa Ing - Meet and Confer (Individual Respondents).pdf",
+        "filed": true
+      },
+      {
+        "label": "Respondent Eric Dutra's Notice of Joinder; Notice of Demurrer and Demurrer to Petition; Notice of Hearing (filed July 30, 2026)",
+        "path": "/documents/matter-20/Dutra Notice of Joinder and Demurrer.pdf",
+        "filed": true
+      },
+      {
+        "label": "Memorandum of Points and Authorities ISO Eric Dutra's Joinder and Demurrer (filed July 30, 2026)",
+        "path": "/documents/matter-20/Dutra MPA ISO Joinder and Demurrer.pdf",
+        "filed": true
+      },
+      {
+        "label": "Respondent Gary Paul's Notice of Joinder; Notice of Demurrer and Demurrer to Petition; Notice of Hearing (filed July 30, 2026)",
+        "path": "/documents/matter-20/Paul Notice of Joinder and Demurrer.pdf",
+        "filed": true
+      },
+      {
+        "label": "Memorandum of Points and Authorities ISO Gary Paul's Joinder and Demurrer (filed July 30, 2026)",
+        "path": "/documents/matter-20/Paul MPA ISO Joinder and Demurrer.pdf",
+        "filed": true
+      },
+      {
+        "label": "Respondent Gerardo Serrato's Notice of Joinder; Notice of Demurrer and Demurrer to Petition; Notice of Hearing (filed July 30, 2026)",
+        "path": "/documents/matter-20/Serrato Notice of Joinder and Demurrer.pdf",
+        "filed": true
+      },
+      {
+        "label": "Memorandum of Points and Authorities ISO Gerardo Serrato's Joinder and Demurrer (filed July 30, 2026)",
+        "path": "/documents/matter-20/Serrato MPA ISO Joinder and Demurrer.pdf",
+        "filed": true
+      },
+      {
+        "label": "Joint Stipulation to Advance Dates of Hearings on Demurrers of Individual Respondents; [Proposed] Order (filed July 30, 2026)",
+        "path": "/documents/matter-20/Joint Stipulation to Advance Hearing Dates - Individual Respondents; Proposed Order.pdf",
+        "filed": true
+      },
+      {
+        "label": "[Proposed] Order Granting Joinders of Individual Respondents; Sustaining Demurrers to Petition (submitted by Individual Respondents, unsigned, July 30, 2026)",
+        "path": "/documents/matter-20/Proposed Order Granting Joinders; Sustaining Demurrers - Individual Respondents.pdf",
+        "filed": true
+      },
+      {
+        "label": "Stipulation to Advance Hearing Date — pre-filing draft with Petitioner's e-signature (superseded by the filed Joint Stipulation above)",
+        "path": "/documents/matter-20/Stipulation to Advance Hearing Date.docx",
+        "filed": false
+      },
+      {
+        "label": "Opposition to Individual Respondents' Demurrers and Joinders; MPA — signed and dated July 31, 2026; NOT YET actually filed with the court, e-mailed to the AG's office, or mailed to the Sheriff (rebuts Serrato/Paul/Dutra's 'not a certifying official' argument under PC §679.10(b) by leading with Pet. ¶¶14-16's express 'is a certifying official' allegations and citing Exhibits 11/13 for the assignment letter and Paul's email; incorporates the July 13, 2026 Opposition to CHP's Demurrer by reference for the joinder-based arguments; Proof of Service describes e-mail service on Deputy AG Vanessa Ing plus a Request for Sheriff to Serve Court Documents (SER-001) to the Alameda County Sheriff's Civil Section for mail service under Petitioner's fee waiver, Gov. Code §26721)",
+        "path": "/documents/matter-20/Opposition-to-Individual-Respondents-Demurrers.pdf",
+        "filed": false
+      }
+    ],
+    "evidenceCount": 12
+  },
+  {
+    "number": 21,
+    "caption": "Newanforbi v. Rojo et al.",
+    "case_no": "2:26-cv-00193-DC-CKD",
+    "court": "USDC E.D. Cal.",
+    "claims": "42 USC 1983: Free Exercise Clause (First Amendment), Due Process (Fourteenth Amendment)",
+    "status": "DISMISSED WITH PREJUDICE — Notice of Voluntary Dismissal filed June 29, 2026 (FRCP 41(a)(1)(A)(i)); self-executing",
+    "filed": "January 22, 2026",
+    "judge": "TBD",
+    "cluster": 2,
+    "type": "Federal",
+    "archived": true,
+    "badge": "DISMISSED",
+    "defendants": "Joseelyn Rojo (Parole Agent, individually); Gary Noguchi (Supervising Parole Agent, individually); Jeff Macomber (Secretary CDCR, official capacity)",
+    "causes": [
+      "Count I — Violation of Free Exercise Clause (First Amendment)",
+      "Count II — Violation of Due Process Clause (Fourteenth Amendment)"
+    ],
+    "documents": [
+      {
+        "label": "Complaint for Damages, Declaratory, and Injunctive Relief (Jan. 22, 2026)",
+        "path": "/documents/matter-21/Complaint.pdf"
+      }
+    ],
+    "evidenceCount": 17
+  },
+  {
+    "number": 22,
+    "caption": "Newanforbi v. Pilot Travel Centers LLC",
+    "case_no": "STK-CV-UWT-2026-0007649",
+    "court": "San Joaquin Sup. Ct.",
+    "claims": "PC §290.46(j) Violation, Wrongful Termination, FCRA, ICRAA, UCL §17200, IIED, NIED",
+    "status": "SETTLED — July 14, 2026 (pro se; DocuSigned by both parties; resolved in under seven weeks from filing, before service completed)",
+    "filed": "May 29, 2026",
+    "judge": "TBD",
+    "cluster": 3,
+    "type": "State",
+    "note": "§290.46(j) theory originated via iterative Grok prompting — now the basis for 6 matters (22, 23, 25, 26, 27, 29), only 4 of which (22, 25, 26, 27) involve a confirmed adverse action — see Matter 23.",
+    "defendants": "Pilot Travel Centers LLC (Delaware LLC d/b/a Pilot Flying J, Knoxville, TN)",
+    "serviceTracking": [
+      {
+        "name": "Pilot Travel Centers LLC",
+        "title": "Defendant (registered agent)",
+        "location": "Los Angeles County",
+        "served": false,
+        "dateServed": null
+      }
+    ],
+    "causes": [
+      "Violation of Penal Code Section 290.46(j) — Unlawful Use of Sex Offender Registry Information for Employment",
+      "Wrongful Termination in Violation of Public Policy (Tameny)",
+      "Violation of Fair Credit Reporting Act (15 U.S.C. §1681 et seq.)",
+      "Violation of California Investigative Consumer Reporting Agencies Act (Civ. Code §1786 et seq.)",
+      "Unfair Business Practices (Bus. & Prof. Code §17200)",
+      "Intentional Infliction of Emotional Distress",
+      "Negligent Infliction of Emotional Distress"
+    ],
+    "documents": [
+      {
+        "label": "Complaint for Damages (filed 05/29/2026)",
+        "path": "/documents/matter-22/Newanforbi v. Pilot Travel Centers LLC.pdf"
+      },
+      {
+        "label": "Offer Letter (Dec. 10, 2025)",
+        "path": "/documents/matter-22/offer_letter_2025-12-10.pdf"
+      },
+      {
+        "label": "Post-Adverse Action Notice (Dec. 30, 2025)",
+        "path": "/documents/matter-22/Post-adverse action notice - Pilot Travel Centers LLC 2.pdf"
+      },
+      {
+        "label": "Demand Letter (undated)",
+        "path": "/documents/matter-22/Demand Letter Newanforbi v Pilot Travel Centers.pdf"
+      },
+      {
+        "label": "Notice of Change of Address (filed July 7, 2026)",
+        "path": "/documents/matter-22/Notice of Change of Address (July 7, 2026).pdf"
+      },
+      {
+        "label": "LA County Sheriff Filing Receipt — Service of Process on Pilot (issued July 9, 2026)",
+        "path": "/documents/matter-22/Filing Receipt Service of Process on Pilot.pdf"
+      },
+      {
+        "label": "Signed Settlement Release Agreement (DocuSign) — NOTE: only page 6 of 6 (the signature page) is on file here; the substantive confidentiality/non-disclosure clause referenced on this page is not itself in the repository",
+        "path": "/documents/matter-22/Nforbi Release (v.2).docx.pdf"
+      },
+      {
+        "label": "Invoice and Signed Proof of Service — Pilot Travel Centers",
+        "path": "/documents/matter-22/Invoice and Signed Proof of Service - Pilot Travel Centers.pdf"
+      }
+    ],
+    "evidenceCount": 15
+  },
+  {
+    "number": 23,
+    "caption": "Newanforbi v. Macy's Inc. et al.",
+    "case_no": "TBD",
+    "court": "San Joaquin Sup. Ct.",
+    "claims": "PC §290.46(j) Violation, Wrongful Termination, FCRA, ICRAA, UCL §17200, IIED, NIED",
+    "status": "NOT PURSUING — Voluntarily Dismissed. The anticipated registry-based adverse action never occurred: Macy's honored the offer, and Plaintiff worked the position from May 28, 2026 until an unrelated CDCR retaliatory transfer (see Matter 30) made the Stockton job inaccessible on July 2, 2026. No PC §290.46(j) violation ever materialized on these facts.",
+    "filed": "Pending",
+    "judge": "TBD",
+    "cluster": 3,
+    "type": "State",
+    "archived": true,
+    "badge": "ABANDONED",
+    "defendants": "Macy's Inc. (Delaware corporation; parent entity); Macy's, Inc., an affiliate, subsidiary or division thereof (actual employer entity); HireRight, LLC (background screening vendor)",
+    "causes": [
+      "Violation of Penal Code Section 290.46(j) — Unlawful Use of Sex Offender Registry Information for Employment",
+      "Wrongful Termination in Violation of Public Policy (Tameny)",
+      "Violation of Fair Credit Reporting Act (15 U.S.C. §1681 et seq.)",
+      "Violation of California Investigative Consumer Reporting Agencies Act (Civ. Code §1786 et seq.)",
+      "Unfair Business Practices (Bus. & Prof. Code §17200)",
+      "Intentional Infliction of Emotional Distress",
+      "Negligent Infliction of Emotional Distress"
+    ],
+    "documents": [
+      {
+        "label": "Job Offer Letter (May 28, 2026)",
+        "path": "/documents/matter-23/Job Offer-Selling and Support Captain, Stockton Sherwood - Full Time.pdf"
+      },
+      {
+        "label": "HireRight Background Check Report (May 28–29, 2026)",
+        "path": "/documents/matter-23/HireRight Report to Macy's Corporate Services (Pre-Employment - BGC). Subject- C 2.pdf"
+      }
+    ],
+    "evidenceCount": 12
+  },
+  {
+    "number": 24,
+    "caption": "Newanforbi v. Serrato",
+    "case_no": "4:26-cv-05953-ASK",
+    "court": "USDC N.D. Cal.",
+    "claims": "42 USC 1983: Fourteenth Amendment (Substantive & Procedural Due Process), First Amendment (Retaliation); Declaratory Relief",
+    "status": "Active — Complaint filed June 17, 2026; Case No. 4:26-cv-05953-ASK; assigned to Magistrate Judge Ajay S. Krishnan; ISC Order issued June 17, 2026; CMC scheduled September 15, 2026; Jury Trial Demanded. U.S. Marshal service on Defendant Serrato requested (USM-285, Doc. 7, filed Jun. 29, 2026); USMS acknowledged receipt of the process package Jul. 1, 2026 (USM-285, Doc. 14, filed Jul. 21, 2026) — the certification-of-service portion of both USM-285 forms remains unexecuted (no box checked, no server signature/date), so personal service on Serrato is NOT YET confirmed on the docket as of this writing.",
+    "filed": "June 17, 2026",
+    "judge": "Hon. Ajay S. Krishnan, U.S. Magistrate Judge (N.D. Cal.)",
+    "cluster": 1,
+    "type": "Federal",
+    "defendants": "Captain G. Serrato, Commander, Dublin Area, California Highway Patrol (individual and official capacities)",
+    "causes": [
+      "Count I — 42 U.S.C. § 1983 Damages: Fourteenth Amendment -- Substantive Due Process — Arbitrary and Conscience-Shocking Denial of Mandatory U Visa Certification Duty",
+      "Count II — 42 U.S.C. § 1983 Damages: Fourteenth Amendment -- Procedural Due Process — Deprivation Without Constitutionally Adequate Process",
+      "Count III — 42 U.S.C. § 1983 Damages: First Amendment -- Retaliation for Protected Petitioning Activity",
+      "Count IV — Declaratory Relief (28 U.S.C. §§ 2201-2202) — Declaring Denial Unconstitutional and Plaintiff's Entitlement to Certification"
+    ],
+    "documents": [
+      {
+        "label": "Complaint for Damages, Declaratory Relief, and Injunctive Relief — Draft (42 U.S.C. § 1983; 4 Causes of Action)",
+        "path": "/documents/matter-24/Complaint.pdf"
+      },
+      {
+        "label": "Filed Complaint (Doc. 1) and ISC Order Setting CMC & ADR Deadlines (Doc. 4) — Case No. 4:26-cv-05953-ASK, Filed June 17, 2026",
+        "path": "/documents/matter-24/1 2.pdf"
+      },
+      {
+        "label": "ISC Order and Magistrate Judge Consent/Declination Form — N.D. Cal. (Case No. 4:26-cv-05953-ASK)",
+        "path": "/documents/matter-24/ND Cal ISC and Magistrate Consent form.pdf"
+      },
+      {
+        "label": "In Forma Pauperis (IFP) Application — N.D. Cal.",
+        "path": "/documents/matter-24/Nd Cal IFP Application.pdf"
+      },
+      {
+        "label": "Proposed Summons — N.D. Cal. (Captain G. Serrato)",
+        "path": "/documents/matter-24/Nd Cal Proposed Summons.pdf"
+      },
+      {
+        "label": "Notice of Change of Address (filed July 7, 2026)",
+        "path": "/documents/matter-24/Notice of Change of Address (July 7, 2026).pdf"
+      }
+    ],
+    "evidenceCount": 12
+  },
+  {
+    "number": 25,
+    "caption": "Newanforbi v. Federal Express Corporation",
+    "case_no": "STK-CV-UWT-2026-0009118",
+    "court": "San Joaquin Sup. Ct.",
+    "claims": "PC §290.46(j)(2)(E) Violation, Failure to Hire (Tameny), ICRAA, Invasion of Privacy, Negligence Per Se, UCL §17200",
+    "status": "Filed July 15, 2026; assigned to Dept. 10B, Hon. Blanca Banuelos; CMC January 14, 2027, 8:45 AM; service deadline September 13, 2026 (60 days, CRC 3.110). SERVED July 24, 2026, 9:00 AM on FedEx's registered agent — Ct Corporation System, by Jaqueline Mejia, California Authorized Employee (CCP § 416.10) — per Los Angeles County Sheriff's Civil File Status (File No. 2026075280, case Active as of 07/21/2026); proof of service to be filed well ahead of the September 13, 2026 deadline. COMPUTED: responsive pleading due August 24, 2026 (30 days from service, CCP §412.20(a)(3); August 23 falls on a Sunday, extended to Monday per CCP §12a); if FedEx elects to demur, CCP §430.41(a)(2) meet-and-confer must occur at least 5 days earlier — by August 19, 2026 — or FedEx must file a declaration for the automatic 30-day extension.",
+    "filed": "July 15, 2026",
+    "judge": "Hon. Blanca Banuelos, Dept. 10B",
+    "cluster": 3,
+    "type": "State",
+    "badge": "SERVED",
+    "defendants": "Federal Express Corporation; and DOES 1 through 10, inclusive",
+    "causes": [
+      "Violation of Cal. Penal Code § 290.46(j)(2)(E)",
+      "Failure to Hire in Violation of Public Policy (Tameny)",
+      "Violation of ICRAA (Cal. Civ. Code § 1786 et seq.)",
+      "Invasion of Privacy (Cal. Const., Art. I, § 1)",
+      "Negligence Per Se",
+      "Unlawful Business Practices (Bus. & Prof. Code § 17200 et seq.)"
+    ],
+    "documents": [
+      {
+        "label": "Complaint for Damages (drafted/verified July 15, 2026)",
+        "path": "/documents/matter-25/Newanforbi v FedEx Complaint.pdf"
+      },
+      {
+        "label": "FedEx Application Confirmation Email (July 17, 2024)",
+        "path": "/documents/matter-25/Federal Express Corporation Application Completed!.pdf"
+      },
+      {
+        "label": "Pre-Adverse Employment Action Notice (Mar. 10, 2025)",
+        "path": "/documents/matter-25/FedEx Pre-Adverse Employment Action Notice.pdf"
+      },
+      {
+        "label": "Pre-Adverse Employment Action Notice — duplicate to secondary email (Mar. 11, 2025)",
+        "path": "/documents/matter-25/FedEx Pre-Adverse Employment Action Notice 2.pdf"
+      },
+      {
+        "label": "REMINDER — Pre-Adverse Action Notice (Mar. 11, 2025, 1:45 PM)",
+        "path": "/documents/matter-25/REMINDER - FedEx Pre-Adverse Employment Action Notice.pdf"
+      },
+      {
+        "label": "REMINDER — Pre-Adverse Action Notice (Mar. 12, 2025)",
+        "path": "/documents/matter-25/REMINDER - FedEx Pre-Adverse Employment Action Notice 2.pdf"
+      },
+      {
+        "label": "REMINDER — Pre-Adverse Action Notice (Mar. 13, 2025)",
+        "path": "/documents/matter-25/REMINDER - FedEx Pre-Adverse Employment Action Notice 3.pdf"
+      },
+      {
+        "label": "REMINDER — Pre-Adverse Action Notice (Mar. 14, 2025)",
+        "path": "/documents/matter-25/REMINDER - FedEx Pre-Adverse Employment Action Notice 4.pdf"
+      },
+      {
+        "label": "REMINDER — Pre-Adverse Action Notice (Mar. 16, 2025)",
+        "path": "/documents/matter-25/REMINDER - FedEx Pre-Adverse Employment Action Notice 5.pdf"
+      },
+      {
+        "label": "Adverse Employment Action Notice — final denial (Mar. 19, 2025)",
+        "path": "/documents/matter-25/FedEx Adverse Employment Action Notice.pdf"
+      },
+      {
+        "label": "Demand Packet — $85,000 Demand to Federal Express Corporation (Jul. 12, 2026)",
+        "path": "/documents/matter-25/FedEx Demand Packet Newanforbi.pdf"
+      },
+      {
+        "label": "Notice of Case Assignment — Dept. 10B, Hon. Blanca Banuelos; CMC Jan. 14, 2027 (STK-CV-UWT-2026-0009118)",
+        "path": "/documents/matter-25/Notice of Case Assignment and Scheduling Information.pdf"
+      },
+      {
+        "label": "Complaint — Filed Copy p.1, Court-Stamped (Jul. 15, 2026)",
+        "path": "/documents/matter-25/Complaint - Filed Copy p.1, Court-Stamped (Jul 15 2026).pdf"
+      },
+      {
+        "label": "Complaint — Filed Copy pp.17-18, Jury Demand & Verification (Jul. 15, 2026)",
+        "path": "/documents/matter-25/Complaint - Filed Copy pp.17-18, Jury Demand & Verification (Jul 15 2026).pdf"
+      },
+      {
+        "label": "Notice of Case Assignment and Notice of Hearing (Jul. 15, 2026)",
+        "path": "/documents/matter-25/Notice of Case Assignment and Notice of Hearing (Jul 15 2026).pdf"
+      },
+      {
+        "label": "SUM-100 Summons — Federal Express Corporation (Jul. 15, 2026)",
+        "path": "/documents/matter-25/SUM-100 Summons - Federal Express Corporation (Jul 15 2026).pdf"
+      },
+      {
+        "label": "FW-003 Order on Court Fee Waiver — GRANTED (Jul. 15, 2026)",
+        "path": "/documents/matter-25/FW-003 Order on Court Fee Waiver - GRANTED (Jul 15 2026).pdf"
+      },
+      {
+        "label": "Complete Filing Packet — Summons, Complaint (stamped p.1, signed pp.17-18), and Notice of Case Assignment (ready to serve)",
+        "path": "/documents/matter-25/Newanforbi v FedEx - Complete Filing Packet (Summons, Complaint, Notice).pdf"
+      },
+      {
+        "label": "SER-001 Request for Sheriff to Serve Court Papers — Federal Express Corp. c/o C T Corporation System, Los Angeles County (executed/e-signed Jul. 21, 2026)",
+        "path": "/documents/matter-25/SER-001 Request for Sheriff to Serve Court Papers - Federal Express (Jul 21 2026).pdf"
+      },
+      {
+        "label": "LA County Sheriff's Department Filing Receipt — Summons & Complaint service accepted, File No. 2026075280, Fee Waiver applied (Jul. 21, 2026)",
+        "path": "/documents/matter-25/LA County Sheriff Filing Receipt (Jul 21 2026).pdf"
+      },
+      {
+        "label": "LA County Sheriff Civil File Status — SERVED Jul. 24, 2026 on Ct Corporation System (Jaqueline Mejia), File No. 2026075280 (printed Jul. 25, 2026)",
+        "path": "/documents/matter-25/LA County Sheriff Civil File Status - Service Confirmed (Jul 25 2026).pdf"
+      }
+    ],
+    "evidenceCount": 8
+  },
+  {
+    "number": 26,
+    "caption": "Newanforbi v. United Parcel Service, Inc.",
+    "case_no": "STK-CV-UWT-2026-0009113",
+    "court": "San Joaquin Sup. Ct.",
+    "claims": "PC §290.46(j)(2)(E) Violation, Failure to Hire (Tameny), ICRAA, Invasion of Privacy, Negligence Per Se, UCL §17200",
+    "status": "Filed July 15, 2026; limitations period preserved — 16 days to spare (2-year cutoff: July 31, 2026); assigned to Dept. 11B, Hon. Robert T. Waters; CMC January 13, 2027, 8:30 AM; service deadline September 13, 2026 (60 days, CRC 3.110). SERVED July 22, 2026, 12:51 PM on United Parcel Service, Inc., accepted by Josh Swindell, Authorized Agent, per Sacramento County Sheriff's Civil File Status (well ahead of the requested July 31, 2026 service deadline); note the Sheriff's Civil File itself shows Closed as of 07/23/2026, reflecting only that the sheriff's service assignment is complete — the underlying court action remains active and unaffected. COMPUTED: responsive pleading due August 21, 2026 (30 days from service, CCP §412.20(a)(3)); if UPS elects to demur, CCP §430.41(a)(2) meet-and-confer must occur at least 5 days earlier — the calendar count lands on Sunday, August 16, 2026, so meet-and-confer should be completed no later than Friday, August 14, 2026 — or UPS must file a declaration for the automatic 30-day extension. PROOF OF SERVICE MAILED TO THE COURT: the Sheriff's Civil Bureau's signed POS-010 Proof of Service of Summons (Levying Officer File No. 2026026041; executed July 23, 2026 by Sheriff's Authorized Agent Jim Cooper, attesting to F. Conley's July 22, 2026, 12:51 PM personal service on Josh Swindell, Authorized Agent, C/O CSC - Lawyers Incorporating Service) was mailed to San Joaquin Superior Court, 180 E Weber Ave, Stockton, CA 95202 on July 28, 2026, expected to arrive and be filed on or about July 30, 2026 — well ahead of the September 13, 2026 CRC 3.110 proof-of-service deadline.",
+    "filed": "July 15, 2026",
+    "judge": "Hon. Robert T. Waters, Dept. 11B",
+    "cluster": 3,
+    "type": "State",
+    "badge": "TIMELY",
+    "defendants": "United Parcel Service, Inc.; and DOES 1 through 10, inclusive",
+    "causes": [
+      "Violation of Cal. Penal Code § 290.46(j)(2)(E)",
+      "Failure to Hire in Violation of Public Policy (Tameny)",
+      "Violation of ICRAA (Cal. Civ. Code § 1786 et seq.)",
+      "Invasion of Privacy (Cal. Const., Art. I, § 1)",
+      "Negligence Per Se",
+      "Unlawful Business Practices (Bus. & Prof. Code § 17200 et seq.)"
+    ],
+    "documents": [
+      {
+        "label": "Complaint for Damages (drafted/verified July 15, 2026)",
+        "path": "/documents/matter-26/Newanforbi v UPS Complaint.pdf"
+      },
+      {
+        "label": "Pre-Adverse Action Notification (Jul. 22, 2024)",
+        "path": "/documents/matter-26/Pre Adverse Action Notification regarding your application with UPS.pdf"
+      },
+      {
+        "label": "REMINDER — Pre-Adverse Action Notification (Jul. 23, 2024)",
+        "path": "/documents/matter-26/REMINDER - Pre Adverse Action Notification regarding your application with UPS.pdf"
+      },
+      {
+        "label": "REMINDER — Pre-Adverse Action Notification (Jul. 27, 2024)",
+        "path": "/documents/matter-26/REMINDER - Pre Adverse Action Notification regarding your application with UPS 2.pdf"
+      },
+      {
+        "label": "Final Adverse Action Notification (Jul. 31, 2024)",
+        "path": "/documents/matter-26/Final Adverse Action Notification regarding your application with UPS.pdf"
+      },
+      {
+        "label": "UPS Demand Packet (Newanforbi)",
+        "path": "/documents/matter-26/UPS Demand Packet Newanforbi.pdf"
+      },
+      {
+        "label": "Notice of Case Assignment — Dept. 11B, Hon. Robert T. Waters; CMC Jan. 13, 2027 (STK-CV-UWT-2026-0009113)",
+        "path": "/documents/matter-26/Notice of Case Assignment and Scheduling Information.pdf"
+      },
+      {
+        "label": "Complaint — Filed Copy p.1, Court-Stamped (Jul. 15, 2026)",
+        "path": "/documents/matter-26/Complaint - Filed Copy p.1, Court-Stamped (Jul 15 2026).pdf"
+      },
+      {
+        "label": "Complaint — Filed Copy pp.17-18, Jury Demand & Verification (Jul. 15, 2026)",
+        "path": "/documents/matter-26/Complaint - Filed Copy pp.17-18, Jury Demand & Verification (Jul 15 2026).pdf"
+      },
+      {
+        "label": "Notice of Case Assignment and Notice of Hearing (Jul. 15, 2026)",
+        "path": "/documents/matter-26/Notice of Case Assignment and Notice of Hearing (Jul 15 2026).pdf"
+      },
+      {
+        "label": "SUM-100 Summons — United Parcel Service, Inc. (Jul. 15, 2026)",
+        "path": "/documents/matter-26/SUM-100 Summons - United Parcel Service Inc (Jul 15 2026).pdf"
+      },
+      {
+        "label": "FW-003 Order on Court Fee Waiver — GRANTED (Jul. 15, 2026)",
+        "path": "/documents/matter-26/FW-003 Order on Court Fee Waiver - GRANTED (Jul 15 2026).pdf"
+      },
+      {
+        "label": "SER-001 Request for Sheriff to Serve Court Papers — Sacramento County (Jul. 20, 2026)",
+        "path": "/documents/matter-26/SER-001 Request for Sheriff to Serve Court Papers (Jul 20 2026).pdf"
+      },
+      {
+        "label": "Sacramento County Sheriff Civil File Status — SERVED Jul. 22, 2026 on Josh Swindell, Authorized Agent (printed Jul. 25, 2026)",
+        "path": "/documents/matter-26/Sacramento County Sheriff Civil File Status - Service Confirmed (Jul 25 2026).pdf"
+      },
+      {
+        "label": "POS-010 Proof of Service of Summons, signed (Levying Officer File No. 2026026041; executed Jul. 23, 2026 by Sheriff's Authorized Agent Jim Cooper) — mailed to San Joaquin Superior Court Jul. 28, 2026, expected to arrive/file on or about Jul. 30, 2026",
+        "path": "/documents/matter-26/POS-010 Proof of Service of Summons - United Parcel Service (Jul 23 2026).pdf"
+      }
+    ],
+    "evidenceCount": 7
+  },
+  {
+    "number": 27,
+    "caption": "Newanforbi v. Randstad, et al.",
+    "case_no": "26CV199902",
+    "court": "Alameda Sup. Ct.",
+    "claims": "PC §290.46(j)(2)(E) Violation, Wrongful Termination in Violation of Public Policy, ICRAA, Invasion of Privacy, Negligence Per Se (Evid. Code §669), UCL §17200",
+    "status": "Employment TERMINATED July 15, 2026. Pre-Filing Demand Letters sent to both Randstad and RK Logistics July 20, 2026 — $85,000 settlement demand each, response deadline 5:00 PM PT August 2, 2026. Verified Complaint for Damages e-filed July 20, 2026 via One Legal (Reference No. 28788633) — Complaint, Civil Case Cover Sheet, and Request to Waive Court Fees all ACCEPTED; case number 26CV199902 assigned, Hon. Karin Schwartz, Dept. 20. The accompanying Summons was REJECTED by the clerk (defendant name on the Summons did not match the Complaint caption's full corporate designations); corrected, resubmitted, and ELECTRONICALLY FILED/ACCEPTED July 21, 2026. SER-001 Requests for Sheriff to Serve Court Papers executed July 24, 2026 for both defendants (service deadline Aug. 7, 2026). Sacramento County Sheriff Civil Bureau e-filing order O26005291 (Filing Packet FP26007154, Levy Officer File 2026026857) ACCEPTED July 27, 2026. SERVED July 30, 2026, 1:34 PM on both Randstad US, LLC, a Delaware limited liability company, and The RK Logistics Group, Inc., a California corporation — each accepted by Josh Swindell, Authorized Agent (1 attempt each; $50.00 fee each, $100.00 applied) — per Sacramento County Sheriff's Civil File Details (File No. 2026026857, Case Manager G. Her; printed Aug. 1, 2026); well ahead of the Aug. 7, 2026 SER-001 deadline and the Rule 3.110(b) proof-of-service deadline of September 18, 2026. Note the Sheriff's Civil File itself shows Closed as of 07/31/2026, reflecting only that the sheriff's service assignment is complete — the underlying court action remains active before Hon. Karin Schwartz, Dept. 20; CMC set for December 17, 2026. COMPUTED: responsive pleading due August 31, 2026 (30 days from service, CCP §412.20(a)(3); August 29 falls on a Saturday, extended to Monday per CCP §12a); if either defendant elects to demur, CCP §430.41(a)(2) meet-and-confer must occur at least 5 days earlier — by August 26, 2026 — or that defendant must file a declaration for the automatic 30-day extension.",
+    "filed": "E-filed July 20, 2026 (Complaint, CCS, and Fee Waiver accepted; corrected Summons ELECTRONICALLY FILED/ACCEPTED July 21, 2026)",
+    "judge": "Hon. Karin Schwartz, Dept. 20",
+    "cluster": 3,
+    "type": "State",
+    "badge": "SERVED",
+    "defendants": "Randstad US, LLC (d/b/a Randstad General Staffing; Randstad Inhouse Services); RK Logistics Group, Inc. (end client / joint employer directing placement decision); and DOES 1 through 20, inclusive",
+    "serviceTracking": [
+      {
+        "name": "Randstad US, LLC",
+        "title": "Defendant (registered agent CSC - Lawyers Incorporating Service)",
+        "location": "Sacramento County",
+        "served": true,
+        "dateServed": "July 30, 2026 (Josh Swindell / Authorized Agent)"
+      },
+      {
+        "name": "The RK Logistics Group, Inc.",
+        "title": "Defendant (registered agent CSC - Lawyers Incorporating Service)",
+        "location": "Sacramento County",
+        "served": true,
+        "dateServed": "July 30, 2026 (Josh Swindell / Authorized Agent)"
+      }
+    ],
+    "causes": [
+      "Violation of Cal. Penal Code § 290.46(j)(2)(E)",
+      "Wrongful Termination in Violation of Public Policy",
+      "Violation of ICRAA (Cal. Civ. Code § 1786 et seq.)",
+      "Invasion of Privacy (Cal. Const., Art. I, § 1)",
+      "Negligence Per Se (Evid. Code § 669)",
+      "Unlawful Business Practices (Bus. & Prof. Code § 17200 et seq.)"
+    ],
+    "documents": [
+      {
+        "label": "Rehire Confirmation Email (Jul. 7, 2026)",
+        "path": "/documents/matter-27/Welcome to Randstad.pdf"
+      },
+      {
+        "label": "MVR Form Request — RIS Site Manager II Danyea Watkins (Jul. 7, 2026)",
+        "path": "/documents/matter-27/MVR Form.pdf"
+      },
+      {
+        "label": "InfoMart Notice to Consumer for Employment Purposes — FCRA Pre-Adverse Notice (Jul. 13, 2026)",
+        "path": "/documents/matter-27/Notice to Consumer for Employment Purposes.pdf"
+      },
+      {
+        "label": "InfoMart Background Check Report — Order No. 15780719 (Jul. 7–13, 2026) — Billing Code: RK LOGISTICS; Status: NEEDS APPROVAL; Registry: Record Found",
+        "path": "/documents/matter-27/15780719Final_Profile.PDF"
+      },
+      {
+        "label": "Indeed Application Screenshot — Class C Driver - Bobtail, RK Logistics Group Inc., Newark CA (Jun. 30, 2026)",
+        "path": "/documents/matter-27/IMG_7176.jpeg"
+      },
+      {
+        "label": "RK Logistics Automated SMS Acknowledgment — +1 (762) 795-5146 (Jun. 30, 2026, 8:26 PM)",
+        "path": "/documents/matter-27/IMG_7177.png"
+      },
+      {
+        "label": "iMessage — Randstad Recruiter Dishon Bryant: 'class C driver position you applied for at RK Logistics' (Jul. 1, 2026)",
+        "path": "/documents/matter-27/IMG_7178.png"
+      },
+      {
+        "label": "iMessage — Dishon Bryant Refers Danyea Watkins as RK Logistics Site Manager (Jul. 2, 2026)",
+        "path": "/documents/matter-27/IMG_7179.png"
+      },
+      {
+        "label": "Verified Complaint for Damages — Newanforbi v. Randstad US, LLC et al. (Alameda Sup. Ct., executed Jul. 20, 2026)",
+        "path": "/documents/matter-27/Complaint for Damages - Newanforbi v Randstad US LLC et al (Jul 20 2026).pdf"
+      },
+      {
+        "label": "Pre-Filing Demand Letter — Randstad US, LLC ($85,000; response deadline Aug. 2, 2026)",
+        "path": "/documents/matter-27/Pre-Filing Demand Letter - Randstad US LLC (Jul 20 2026).pdf"
+      },
+      {
+        "label": "Pre-Filing Demand Letter — RK Logistics Group, Inc. ($85,000; response deadline Aug. 2, 2026)",
+        "path": "/documents/matter-27/Pre-Filing Demand Letter - RK Logistics Group Inc (Jul 20 2026).pdf"
+      },
+      {
+        "label": "Gmail — Demand Transmittal to Randstad Legal/Privacy/HR (Jul. 20, 2026)",
+        "path": "/documents/matter-27/Gmail - Demand Sent to Randstad (Jul 20 2026).pdf"
+      },
+      {
+        "label": "Gmail — Demand Transmittal to RK Logistics Legal (Jul. 20, 2026)",
+        "path": "/documents/matter-27/Gmail - Demand Sent to RK Logistics (Jul 20 2026).pdf"
+      },
+      {
+        "label": "CA Secretary of State — Randstad US, LLC Registered Agent for Service of Process (Entity #201700410170)",
+        "path": "/documents/matter-27/Randstad US LLC - CA SOS Registered Agent for Service of Process.pdf"
+      },
+      {
+        "label": "CA Secretary of State — RK Logistics Group, Inc. Registered Agent for Service of Process (Entity #2611624)",
+        "path": "/documents/matter-27/RK Logistics Group Inc - CA SOS Registered Agent for Service of Process.pdf"
+      },
+      {
+        "label": "SER-001 Request for Sheriff to Serve Court Papers — Randstad US, LLC (executed Jul. 20, 2026; superseded by the Jul. 24, 2026 version below)",
+        "path": "/documents/matter-27/SER-001 Request for Sheriff to Serve Court Papers (Jul 20 2026).pdf"
+      },
+      {
+        "label": "SER-001 Request for Sheriff to Serve Court Papers — Randstad US, LLC (executed Jul. 24, 2026; Sacramento County, agent CSC - Lawyers Incorporating Service; service deadline Aug. 7, 2026)",
+        "path": "/documents/matter-27/SER-001 Request for Sheriff to Serve Court Papers - Randstad US LLC (Jul 24 2026).pdf"
+      },
+      {
+        "label": "SER-001 Request for Sheriff to Serve Court Papers — The RK Logistics Group, Inc. (executed Jul. 24, 2026; Sacramento County, agent CSC - Lawyers Incorporating Service; service deadline Aug. 7, 2026)",
+        "path": "/documents/matter-27/SER-001 Request for Sheriff to Serve Court Papers - RK Logistics Group Inc (Jul 24 2026).pdf"
+      },
+      {
+        "label": "Sacramento County Sheriff Civil Bureau E-Filing Order O26005291 (PROCESSED, Jul. 27, 2026) — Filing Packet FP26007154, Levy Officer File 2026026857; confirms service processed and underway on both Randstad US, LLC and The RK Logistics Group, Inc.",
+        "path": "/documents/matter-27/Sacramento County Sheriff E-Filing Order O26005291 (PROCESSED, Jul 27 2026).pdf"
+      },
+      {
+        "label": "Filed Complaint — Newanforbi v. Randstad US, LLC et al. (Case No. 26CV199902, e-filed Jul. 20, 2026)",
+        "path": "/documents/matter-27/Randstad Complaint.pdf"
+      },
+      {
+        "label": "Civil Case Cover Sheet (Accepted, Jul. 20, 2026)",
+        "path": "/documents/matter-27/Randstad Civil Case Cover Sheet.pdf"
+      },
+      {
+        "label": "Request to Waive Court Fees (Accepted, Jul. 20, 2026)",
+        "path": "/documents/matter-27/Randstad Request to Waive Court Fees.pdf"
+      },
+      {
+        "label": "Order on Court Fee Waiver (Superior Court)",
+        "path": "/documents/matter-27/Randstad Order on Court Fee Waiver (Superior Court).pdf"
+      },
+      {
+        "label": "Notice of Confirmation of Electronic Filing — Summons REJECTED (defendant name inconsistent with Complaint caption); Complaint, CCS, and Fee Waiver Accepted",
+        "path": "/documents/matter-27/Randstad Notice of E-Filing Confirmation.pdf"
+      },
+      {
+        "label": "Notice of Case Assignment — Case No. 26CV199902, Hon. Karin Schwartz, Dept. 20",
+        "path": "/documents/matter-27/Randstad Notice of Case Assignment.pdf"
+      },
+      {
+        "label": "Notice of Case Management Conference — Dec. 17, 2026, 3:00 PM, Dept. 20; 60-day service deadline",
+        "path": "/documents/matter-27/Randstad Notice of Case Management Conference.pdf"
+      },
+      {
+        "label": "SUM-100 Summons — AS ORIGINALLY SUBMITTED (REJECTED by clerk Jul. 20, 2026)",
+        "path": "/documents/matter-27/SUM100 Newanforbi v Randstad.pdf"
+      },
+      {
+        "label": "SUM-100 Summons — CORRECTED, as resubmitted (defendant caption conformed to Complaint; Case No. 26CV199902 added; superseded by the ELECTRONICALLY FILED version below)",
+        "path": "/documents/matter-27/SUM100 Newanforbi v Randstad (Corrected for Resubmission).pdf"
+      },
+      {
+        "label": "SUM-100 Summons — CORRECTED, ELECTRONICALLY FILED/ACCEPTED by the court (Jul. 21, 2026, Deputy Clerk A. Gospel)",
+        "path": "/documents/matter-27/SUM100 Newanforbi v Randstad (ELECTRONICALLY FILED Jul 21 2026).pdf"
+      },
+      {
+        "label": "Blank SUM-100 Judicial Council Form Template",
+        "path": "/documents/matter-27/sum100.pdf"
+      },
+      {
+        "label": "Complete Filing Packet — Civil Case Cover Sheet, filed Summons, filed Complaint, Notice of Case Assignment, and Notice of Case Management Conference, merged for service (Jul. 20–21, 2026)",
+        "path": "/documents/matter-27/Complete Filing Packet - Newanforbi v Randstad US LLC et al (Jul 20-21 2026).pdf"
+      },
+      {
+        "label": "Garcia & Gurney, ALC — Response to Pre-Filing Demand for Settlement, on behalf of RK Logistics Group, Inc. (Jul. 21, 2026)",
+        "path": "/documents/matter-27/GG Ltr to Newanforbi 7.21.2026 - signed.pdf"
+      },
+      {
+        "label": "Gmail — Response to Pre-Filing Demand for Settlement, Garcia & Gurney Transmittal (Jul. 21, 2026)",
+        "path": "/documents/matter-27/Gmail - Response to PreFiling Demand for Settlement.pdf"
+      },
+      {
+        "label": "Sacramento County Sheriff Civil File Status — SERVED Jul. 30, 2026, 1:34 PM on both Randstad US, LLC and The RK Logistics Group, Inc. (Josh Swindell, Authorized Agent); File No. 2026026857 (printed Aug. 1, 2026)",
+        "path": "/documents/matter-27/Sacramento County Sheriff Civil File Status - Service Confirmed (Aug 1 2026).pdf"
+      }
+    ],
+    "evidenceCount": 16
+  },
+  {
+    "number": 28,
+    "caption": "Newanforbi v. Shannon Smith, LCSW, CEO, et al.",
+    "case_no": "3:26-cv-07504",
+    "court": "USDC N.D. Cal.",
+    "claims": "42 U.S.C. §1983 (Monell + Individual Capacity); Bane Act (Cal. Civ. Code §52.1); Fraud / Negligent Misrepresentation; RICO (18 U.S.C. §1962(c)-(d))",
+    "status": "Case Filed July 20, 2026 — Hon. Lisa J. Cisneros. Order filed July 23, 2026 required: (1) correct district IFP form by Aug. 13, 2026 — MOOTED July 24, 2026 by Plaintiff's direct payment of the $405 federal civil filing fee (Pay.gov, Case No. DCAN326CV007504); (2) the state court's demurrer decision by Aug. 13, 2026 for preclusion analysis — SATISFIED July 27, 2026, 17 days early, via Notice of Payment of Filing Fee and Filing of State Court Decision (Exs. A-C: signed Order, Tentative Ruling, and Minute Order from Matter 5). Motion for Protective Order DENIED WITHOUT PREJUDICE. Initial Case Management Conference set Oct. 22, 2026",
+    "filed": "Case Filed July 20, 2026 (complaint docketed July 21, 2026)",
+    "judge": "Hon. Lisa J. Cisneros",
+    "cluster": 2,
+    "type": "Federal",
+    "defendants": "HOPE Psychotherapy, Inc. (d/b/a HOPE Program), CASOMB-certified LCSW Professional Corporation (principal office: 1245 B Street, Hayward, CA 94541; 16 statewide locations); Shannon Smith, LCSW (CEO and Founder, individually)",
+    "causes": [
+      "42 U.S.C. §1983 — Monell (HOPE)",
+      "42 U.S.C. §1983 — Individual Capacity (Shannon Smith)",
+      "Bane Act (Cal. Civ. Code §52.1)",
+      "Fraud and Negligent Misrepresentation",
+      "RICO (18 U.S.C. §1962(c)-(d))"
+    ],
+    "documents": [
+      {
+        "label": "Complaint v2 — draft (mailed Jul. 16, 2026; superseded by the as-filed version below)",
+        "path": "/documents/matter-28/Complaint v2 Newanforbi v HOPE NDCA.pdf"
+      },
+      {
+        "label": "Motion for Protective Order (filed Jul. 16, 2026)",
+        "path": "/documents/matter-28/Motion Protective Order NDCA.pdf"
+      },
+      {
+        "label": "Declaration ISO Motion for Protective Order (Jul. 16, 2026)",
+        "path": "/documents/matter-28/Declaration ISO Motion PO NDCA.pdf"
+      },
+      {
+        "label": "Exhibit A — State Court Stipulated Protective Order (entered Jun. 17, 2026; STK-CV-UF-2026-0001032)",
+        "path": "/documents/matter-28/Exhibit A Stipulated Protective Order.pdf"
+      },
+      {
+        "label": "Proposed Protective Order — NDCA (Jul. 16, 2026)",
+        "path": "/documents/matter-28/Proposed Protective Order NDCA.pdf"
+      },
+      {
+        "label": "Stipulated Protective Order SIGNED — State Court (Jun. 17, 2026)",
+        "path": "/documents/matter-28/Stipulated Protective Order SIGNED.pdf"
+      },
+      {
+        "label": "PACER Docket Sheet — Newanforbi v. Smith et al. (3:26-cv-07504), USDC N.D. Cal. (as of Jul. 22, 2026)",
+        "path": "/documents/matter-28/Ngehsi Newanforbi v. Smith et al (3_26-cv-07504), California Northern District Court.pdf"
+      },
+      {
+        "label": "Order Addressing IFP Application, Denying Motion for Protective Order, and Requiring Filing of State Court Decision (Doc 7, Jul. 23, 2026)",
+        "path": "/documents/opinions/Newanforbi v Smith - USDC NDCal - IFP PO Order Jul 23 2026.pdf"
+      },
+      {
+        "label": "Pay.gov Filing Fee Payment Confirmation — $405.00 federal civil filing fee paid in full, mooting the IFP application (Jul. 24, 2026)",
+        "path": "/documents/matter-28/Pay.gov Filing Fee Payment Confirmation (Jul 24 2026).pdf"
+      },
+      {
+        "label": "Doc 8 — Notice of Pay.gov Filing Fee Payment, entered on the court's own docket by CAND Finance (filed Jul. 24, 2026)",
+        "path": "/documents/matter-28/Doc 8 - Notice of Pay.gov Filing Fee Payment (CAND Docket, filed Jul 24 2026).pdf"
+      },
+      {
+        "label": "Doc 9 — Notice of Payment of Filing Fee and Filing of State Court Decision, with Exhibits A-B (dated Jul. 27, 2026; docketed Jul. 30, 2026)",
+        "path": "/documents/matter-28/Doc 9 - Notice of Payment of Filing Fee and Filing of State Court Decision (filed Jul 30 2026).pdf"
+      },
+      {
+        "label": "Amended Certificate of Service re Doc. 9 — corrects erroneous CM/ECF recital; Notice was in fact served on the Clerk by USPS mail (executed Jul. 31, 2026, at Milpitas, CA)",
+        "path": "/documents/matter-28/Amended Certificate of Service (re Dkt 9, dated Jul 31 2026).pdf"
+      },
+      {
+        "label": "State Court Decision required by the Jul. 23, 2026 order — Order Sustaining Demurrer to FAC Without Leave to Amend, San Joaquin Sup. Ct. (Jul. 15, 2026), from Matter 5",
+        "path": "/documents/matter-05/Order Sustaining Demurrer to FAC WOLA - Jul 15 2026.pdf"
+      },
+      {
+        "label": "Complaint — as filed and served on SLB (Jul. 22, 2026)",
+        "path": "/documents/matter-28/Complaint_Newanforbi_v_Smith_NDCA (as filed, served on SLB Jul 22 2026).pdf"
+      },
+      {
+        "label": "Declaration ISO Motion for Protective Order and Exhibit A — combined, as filed",
+        "path": "/documents/matter-28/Declaration ISO Motion PO NDCA and Exhibit A (combined, as filed).pdf"
+      },
+      {
+        "label": "HOPE Clinical Operational Manual, pp. 1–90 (Matter 5 discovery)",
+        "path": "/documents/matter-28/HOPE Discovery (Matter 5)/1_HOPE_Clinical_Operational_Manual_9_24_24_225349_pg_1_to_90.pdf"
+      },
+      {
+        "label": "HOPE Clinical Operational Manual, pp. 91–125 (Matter 5 discovery)",
+        "path": "/documents/matter-28/HOPE Discovery (Matter 5)/1_HOPE_Clinical_Operational_Manual_9_24_24_225349_pg_91_to_125.pdf"
+      },
+      {
+        "label": "Plaintiff's Homework/Completion Packet — redacted (Matter 5 discovery)",
+        "path": "/documents/matter-28/HOPE Discovery (Matter 5)/1_PHCP06796815_Rdctd_131_pdf.pdf"
+      },
+      {
+        "label": "HOPE Maintenance Curriculum (Matter 5 discovery)",
+        "path": "/documents/matter-28/HOPE Discovery (Matter 5)/2_HOPE_Maintenance_Curriculum_350434.pdf"
+      },
+      {
+        "label": "Plaintiff's Session/Homework Documentation — redacted (Matter 5 discovery)",
+        "path": "/documents/matter-28/HOPE Discovery (Matter 5)/2_PHSD1838240007_Rdctd_32104_pdf.pdf"
+      },
+      {
+        "label": "HOPE Program Employee Handbook, 2023 (Matter 5 discovery)",
+        "path": "/documents/matter-28/HOPE Discovery (Matter 5)/3_HOPE_Prgrm_Emply_Hndbk_2023_435485_pdf.pdf"
+      },
+      {
+        "label": "HOPE Proprietary Treatment Manual, Feb. 18, 2019 (Matter 5 discovery)",
+        "path": "/documents/matter-28/HOPE Discovery (Matter 5)/4_HOPE_Prprtry_Trtmnt_Mnul_2_18_2019_486537.pdf"
+      },
+      {
+        "label": "Clinical Director Job Description (Matter 5 discovery)",
+        "path": "/documents/matter-28/HOPE Discovery (Matter 5)/5_CD_Job_Description_538542_pdf.pdf"
+      },
+      {
+        "label": "Collateral Notes / Communications (Matter 5 discovery)",
+        "path": "/documents/matter-28/HOPE Discovery (Matter 5)/Collateral_NotesComm_139199_pdf.pdf"
+      }
+    ],
+    "evidenceCount": 15
+  },
+  {
+    "number": 29,
+    "caption": "Newanforbi v. Amazon.com Services, LLC",
+    "case_no": "26CV201554",
+    "court": "Alameda Sup. Ct. (Hayward Hall of Justice, Dept. 520)",
+    "claims": "PC §290.46(j)(2)(E) Violation, Fair Chance Act (Gov. Code §12952), FCRA, ICRAA, Invasion of Privacy, UCL §17200, IIED",
+    "status": "CASE FILED July 28, 2026 — the same day Plaintiff's confirmed training shift (Jul. 28–29, 2026) was to begin. Verified Complaint (7 causes of action), Civil Case Cover Sheet, Summons, and Request to Waive Court Fees e-filed via One Legal (Confirmation #35236062, Filing Order #28857032, submitted 7:19 AM PT) — ALL FOUR documents ACCEPTED per the Notice of Confirmation of Electronic Filing (Submission No. 26AA00198620, generated Jul. 29, 2026, 12:07 PM), no rejections. Case No. 26CV201554 assigned; Notice of Case Assignment confirms direct calendaring to Hon. Jamilah Jefferson, Dept. 520, Hayward Hall of Justice, 24405 Amador Street, Hayward, CA 94544 ((510) 690-2729, Dept520@alameda.courts.ca.gov). Case Management Conference set January 6, 2027, 10:00 AM, Dept. 520; Rule 3.110(b) service/proof-of-service deadline September 26, 2026 (60 days from filing; CCP §12a rolls to Monday, September 28, 2026 since the 26th falls on a Saturday). SER-001 Requests for Sheriff to Serve Court Papers executed July 29, 2026 for both defendants — Amazon.com Services, LLC (Sacramento County Sheriff, registered agent CSC - Lawyers Incorporating Service) and Accurate Background LLC (Los Angeles County Sheriff, registered agent CT Corporation System). SERVICE SUBMITTED/ENGAGED JULY 29, 2026: for Amazon, the executed SER-001 was submitted to the Sacramento County Sheriff Civil Bureau's e-filing system the same day (E-Filing Order #O26005379, Filing Packet #FP26007325, submitted 1:43 PM) — status ACCEPTED just 37 minutes later (2:20 PM), Levy Officer File #2026027206 assigned, the $52.05 hold ($50.00 Summons & Complaint service fee, $1.95 processing fee, $0.10 payment gateway fee) now charged in full; notably, this fee was not waived, consistent with the FW-003 fee waiver order still being outstanding (see below) — Plaintiff paid the Sheriff's fee out of pocket rather than wait for the ruling. As with Matter 27, the quick acceptance confirms the SER-001's written deadline field (Sept. 26/28, 2026) does not appear to gate the Sheriff's actual processing pace. For Accurate Background, Plaintiff engaged a private process server rather than the Sheriff: Sarah Thompson of L.A. Process Servers (laprocessservers@hotmail.com, (323) 508-1711) — the same server who completed service on Pilot Travel Centers LLC's registered agent (also CT Corporation System, same Glendale address) in Matter 22 — was emailed July 29, 2026 at 1:55 PM with the case caption, Accurate Background's registered-agent address, and a proposed $60 fee (mirroring the Matter 22 rate) for a service packet described as 35 pages; the attached packet actually sent (Summons, Complaint, Notice of Case Assignment, and Notice of Case Management Conference) runs 32 pages and does not include the Civil Case Cover Sheet, a discrepancy from the email's stated page count and document list worth reconciling if Sarah's invoice reflects the 35-page/CM-010-inclusive description. Her fee confirmation and proof of service are still pending as of this writing. OPEN ITEM — FEE WAIVER RULING OUTSTANDING: the Notice of Confirmation of Electronic Filing marks the Request to Waive Court Fees 'Accepted,' but that reflects only that the filing was accepted for processing, not that a judicial officer has ruled on it; no FW-003 Order on Court Fee Waiver (granting or denying) has been received as of this writing, unlike Matters 25, 26, and 27, where the FW-003 grant order is already on file — reason for the delay is not yet known; status will be updated once it arrives. Filing follows the Jul. 27, 2026 Simple Hire checklist change removing Plaintiff's assigned training shift ('You do not have a shift selected') while the background check remained 'Pending' 20+ days after submission and no formal adverse action notice had issued — treated as the ripening event for suit. If a formal registry-based adverse action is later confirmed, this would be the fifth such action in the portfolio (after Matters 22, 25, 26, 27); Matter 23 is not part of that count — Macy's completed that hire without incident (see Matter 23).",
+    "filed": "E-filed July 28, 2026 via One Legal (Confirmation #35236062, Filing Order #28857032, submitted 7:19 AM PT); ACCEPTED — Case No. 26CV201554 assigned Jul. 29, 2026",
+    "judge": "Hon. Jamilah Jefferson, Dept. 520 (Hayward Hall of Justice)",
+    "cluster": 3,
+    "type": "State",
+    "defendants": "Amazon.com Services, LLC (Amazon fulfillment and warehouse operations; principal employer entity for Amazon fulfillment center workers in California); Accurate Background LLC (consumer reporting agency; conducted the background check on Amazon's behalf under shortcode 45996; prior co-defendant with Amazon in Lerma v. Amazon.com Services, LLC et al., No. 8:22-cv-01727 (C.D. Cal.) — the PC §290.46(j) claim in that case was dismissed at the pleading stage in May 2023, not settled; the case ultimately settled in Sept. 2023 on a surviving Fair Chance Act claim against Amazon only, see key_facts); and DOES 1–10, inclusive",
+    "causes": [
+      "Violation of Cal. Penal Code § 290.46(j)(2)(E) — categorical prohibition on registry information use for employment",
+      "Violation of California Fair Chance Act (Cal. Gov. Code § 12952) — failure to individually assess registry/conviction history against the specific duties of the job before denying employment",
+      "Violation of Fair Credit Reporting Act (15 U.S.C. §1681 et seq.)",
+      "Violation of ICRAA (Cal. Civ. Code § 1786 et seq.)",
+      "Invasion of Privacy (Cal. Const., Art. I, § 1)",
+      "Unlawful Business Practices (Bus. & Prof. Code § 17200 et seq.)",
+      "Intentional Infliction of Emotional Distress"
+    ],
+    "documents": [
+      {
+        "label": "Amazon Application — Review & Submit (job details: $21.50/hr, 19 hrs/wk, Fremont, Jul. 28 start)",
+        "path": "/documents/matter-29/IMG_6973.png"
+      },
+      {
+        "label": "Amazon Application Confirmation — 'Thank you for applying'; pre-hire appt. Jul. 7, 2026 at Fremont DC",
+        "path": "/documents/matter-29/IMG_6974.png"
+      },
+      {
+        "label": "Congratulations on Your Amazon Offer Email — conditional offer, $21.50–$24.00/hr (Jul. 3, 2026)",
+        "path": "/documents/matter-29/Congratulations on Your Amazon Offer Email (Jul 3, 2026).pdf"
+      },
+      {
+        "label": "Confirmed Pre-Hire Appointment Email (Jul. 3, 2026)",
+        "path": "/documents/matter-29/Confirmed Pre-Hire Appointment Email (Jul 3, 2026).pdf"
+      },
+      {
+        "label": "Pre-Hire Appointment Email — Amazon Jobs, Jul. 7, 2026, 9:00 AM, 44051 Osgood Rd. Fremont CA",
+        "path": "/documents/matter-29/IMG_7020.png"
+      },
+      {
+        "label": "Reminder: Pre-Hire Appointment Email (Jul. 4, 2026)",
+        "path": "/documents/matter-29/Reminder Pre-Hire Appointment Email (Jul 4, 2026).pdf"
+      },
+      {
+        "label": "Pre-Hire Appointment Confirmed SMS (shortcode 39816, Jul. 3, 2026)",
+        "path": "/documents/matter-29/IMG_7435.jpeg"
+      },
+      {
+        "label": "Pre-Hire Appointment Reminder SMS (shortcode 39816, Jul. 4 and Jul. 6, 2026)",
+        "path": "/documents/matter-29/IMG_7436.jpeg"
+      },
+      {
+        "label": "Amazon Application Survey Email (Jul. 6, 2026)",
+        "path": "/documents/matter-29/Amazon Application Survey Email (Jul 6, 2026).pdf"
+      },
+      {
+        "label": "Reminder: Pre-Hire Appointment Email 2 (Jul. 6, 2026)",
+        "path": "/documents/matter-29/Reminder Pre-Hire Appointment Email (Jul 6, 2026).pdf"
+      },
+      {
+        "label": "Amazon Jobs SMS (31432) — Training Schedule (Jul. 6) + BGC 5-Day Update (Jul. 8, 2026)",
+        "path": "/documents/matter-29/IMG_7302.jpeg"
+      },
+      {
+        "label": "Accurate Background SMS (45996) — BGC Consent: 'requesting background check on behalf of Amazon' (Jul. 7, 2026)",
+        "path": "/documents/matter-29/IMG_7303.jpeg"
+      },
+      {
+        "label": "Accurate Background SMS (45996) — full thread, consent (Jul. 7) through 'START' opt-in reply (Jul. 17, 2026)",
+        "path": "/documents/matter-29/IMG_7438.jpeg"
+      },
+      {
+        "label": "Completed Pre-Hire Appointment Email (Jul. 7, 2026)",
+        "path": "/documents/matter-29/Completed Pre-Hire Appointment Email (Jul 7, 2026).pdf"
+      },
+      {
+        "label": "Accurate Background — Notification of Electronic Communication (Y94611404) (Jul. 7, 2026)",
+        "path": "/documents/matter-29/Accurate Background - Notification of Electronic Communication (Y94611404).pdf"
+      },
+      {
+        "label": "Accurate Background — Other Information Needed for Screening Request (ID# 496623722) (Jul. 7, 2026)",
+        "path": "/documents/matter-29/Accurate Background - Other Information Needed (Screening ID 496623722).pdf"
+      },
+      {
+        "label": "Form I-9 and System Audit Log — completed Jul. 4–5, 2026 (SSN redacted for public disclosure)",
+        "path": "/documents/matter-29/I-9 Form and Audit Log (SSN redacted).pdf"
+      },
+      {
+        "label": "Amazon Simple Hire Checklist — BGC Pending, Drug Test ✓, I-9 ✓ (Jul. 17, 2026)",
+        "path": "/documents/matter-29/IMG_7304.png"
+      },
+      {
+        "label": "Amazon Simple Hire Checklist v1 (Jul. 17, 2026)",
+        "path": "/documents/matter-29/Amazon Simple Hire Checklist.pdf"
+      },
+      {
+        "label": "Amazon Simple Hire Checklist v2 (Jul. 17, 2026)",
+        "path": "/documents/matter-29/Amazon Simple Hire Checklist 2.pdf"
+      },
+      {
+        "label": "Amazon Simple Hire Checklist v3 — BGC still Pending, 1/6 activities complete (Jul. 27, 2026)",
+        "path": "/documents/matter-29/Amazon Simple Hire Checklist 3.pdf"
+      },
+      {
+        "label": "Amazon Jobs Email — BGC In Progress (Jul. 12, 2026)",
+        "path": "/documents/matter-29/Information regarding your Amazon application.pdf"
+      },
+      {
+        "label": "Amazon Jobs Email — BGC Delay Apology (Jul. 17, 2026)",
+        "path": "/documents/matter-29/Information regarding your Amazon application 2.pdf"
+      },
+      {
+        "label": "Equifax Onboarding Reminder Email (Jul. 4, 2026)",
+        "path": "/documents/matter-29/Reminder from Amazon.com, Inc. and its affiliates!.pdf"
+      },
+      {
+        "label": "Amazon Reference Number Confirmation (Y94611404) (Jul. 27, 2026)",
+        "path": "/documents/matter-29/Amazon Reference Number Confirmation (Y94611404).pdf"
+      },
+      {
+        "label": "Lerma v. Amazon — Class Action Complaint (Dkt. 1, Sep. 21, 2022)",
+        "path": "/documents/matter-29/lerma-v-amazon/Dkt 01 - Class Action Complaint (Sep 21, 2022).pdf"
+      },
+      {
+        "label": "Lerma v. Amazon — First Amended Complaint (Dkt. 20, Nov. 15, 2022) — source of Fair Chance Act theory",
+        "path": "/documents/matter-29/lerma-v-amazon/Dkt 20 - First Amended Class Action Complaint (Nov 15, 2022).pdf"
+      },
+      {
+        "label": "Lerma v. Amazon — Accurate Background's Motion to Dismiss FAC (Dkt. 23, Dec. 15, 2022)",
+        "path": "/documents/matter-29/lerma-v-amazon/Dkt 23 - Accurate Background's Motion to Dismiss FAC (Dec 15, 2022).pdf"
+      },
+      {
+        "label": "Lerma v. Amazon — Accurate Background's Memorandum ISO Motion to Dismiss (Dkt. 23-1) — adverse case law on §290.46(j) claims against CRAs",
+        "path": "/documents/matter-29/lerma-v-amazon/Dkt 23-1 - Accurate Background's Memorandum ISO Motion to Dismiss (Dec 15, 2022).pdf"
+      },
+      {
+        "label": "Lerma v. Amazon — Exhibit A, Accurate Background's Report on Lerma (Dkt. 23-2) — National Sex Offender Database Search returned 'no record found'",
+        "path": "/documents/matter-29/lerma-v-amazon/Dkt 23-2 - Exhibit A - Accurate Background's Report on Lerma (Search IDs 250459977-79) (Dec 15, 2022).pdf"
+      },
+      {
+        "label": "Lerma v. Amazon — Amazon's Motion to Dismiss Claims One and Five (Dkt. 24, Dec. 15, 2022)",
+        "path": "/documents/matter-29/lerma-v-amazon/Dkt 24 - Amazon's Motion to Dismiss Claims One and Five (Dec 15, 2022).pdf"
+      },
+      {
+        "label": "Lerma v. Amazon — Exhibit 2, Pre-Adverse Action Notice (Dkt. 24-4)",
+        "path": "/documents/matter-29/lerma-v-amazon/Dkt 24-4 - Exhibit 2 - Pre-Adverse Action Notice (Dec 15, 2022).pdf"
+      },
+      {
+        "label": "Lerma v. Amazon — Exhibit 3, Adverse Action Notice (Dkt. 24-5)",
+        "path": "/documents/matter-29/lerma-v-amazon/Dkt 24-5 - Exhibit 3 - Adverse Action Notice (Dec 15, 2022).pdf"
+      },
+      {
+        "label": "Lerma v. Amazon — Plaintiff's Opposition to Motions to Dismiss (Dkt. 26, Jan. 19, 2023)",
+        "path": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf"
+      },
+      {
+        "label": "Lerma v. Amazon — ORDER GRANTING Motions to Dismiss (Dkt. 36, May 26, 2023) — Megan's Law/FCRA/UCL claims dismissed; key ruling for Matter 29's risk assessment",
+        "path": "/documents/matter-29/lerma-v-amazon/Dkt 36 - ORDER GRANTING Motions to Dismiss - Megan's Law, FCRA, UCL Claims Dismissed (May 26, 2023).pdf"
+      },
+      {
+        "label": "Lerma v. Amazon — Order to Show Cause re Dismissal for Lack of Prosecution (Dkt. 43, Aug. 3, 2023)",
+        "path": "/documents/matter-29/lerma-v-amazon/Dkt 43 - Order to Show Cause re Dismissal for Lack of Prosecution (Aug 3, 2023).pdf"
+      },
+      {
+        "label": "Lerma v. Amazon — Amazon's Answer to FAC (Dkt. 45, Aug. 23, 2023) — answering the surviving Fair Chance Act claim only",
+        "path": "/documents/matter-29/lerma-v-amazon/Dkt 45 - Amazon's Answer to FAC (Aug 23, 2023).pdf"
+      },
+      {
+        "label": "Lerma v. Amazon — Notice of Settlement (Dkt. 46, Sep. 21, 2023)",
+        "path": "/documents/matter-29/lerma-v-amazon/Dkt 46 - Notice of Settlement (Sep 21, 2023).pdf"
+      },
+      {
+        "label": "Lerma v. Amazon — Order Dismissing Action on Notice of Settlement (Dkt. 47, Sep. 29, 2023)",
+        "path": "/documents/matter-29/lerma-v-amazon/Dkt 47 - Order Dismissing Action on Notice of Settlement (Sep 29, 2023).pdf"
+      },
+      {
+        "label": "Lerma v. Amazon — Full Docket Sheet",
+        "path": "/documents/matter-29/lerma-v-amazon/Docket Sheet (as of Jul 27, 2026).pdf"
+      },
+      {
+        "label": "Complaint for Damages — 7 causes of action, executed July 28, 2026, ready for e-filing (Alameda Superior Court)",
+        "path": "/documents/matter-29/Newanforbi_v_Amazon_Complaint.pdf"
+      },
+      {
+        "label": "CM-010 Civil Case Cover Sheet — completed (Unlimited Civil; Other Employment (15); 7 causes of action)",
+        "path": "/documents/matter-29/CM010 Newanforbi v Amazon.pdf"
+      },
+      {
+        "label": "SUM-100 Summons — completed (Alameda Superior Court; clerk-issuance fields left blank for filing)",
+        "path": "/documents/matter-29/SUM100 Newanforbi v Amazon.pdf"
+      },
+      {
+        "label": "FW-001 Request to Waive Court Fees — completed, mirrors approved Matter 27 fee waiver",
+        "path": "/documents/matter-29/FW001 Newanforbi v Amazon.pdf"
+      },
+      {
+        "label": "One Legal Order Receipt — eFiling Confirmation #35236062, Filing Order #28857032 (submitted Jul. 28, 2026, 7:19 AM PT; Alameda County Superior Court, Oakland Civil)",
+        "path": "/documents/matter-29/One Legal Order Receipt - eFiling Confirmation 35236062 (Jul 28 2026).pdf"
+      },
+      {
+        "label": "Notice of Confirmation of Electronic Filing — Case No. 26CV201554; Complaint, Civil Case Cover Sheet, Summons, and Request to Waive Court Fees all ACCEPTED (Submission No. 26AA00198620, Jul. 29, 2026)",
+        "path": "/documents/matter-29/Notice of Confirmation of Electronic Filing - Case No. 26CV201554, all documents ACCEPTED (Jul 29 2026).pdf"
+      },
+      {
+        "label": "Complaint for Damages — AS FILED, Case No. 26CV201554 (Jul. 28, 2026)",
+        "path": "/documents/matter-29/Complaint for Damages - AS FILED, Case No. 26CV201554 (Jul 28 2026).pdf"
+      },
+      {
+        "label": "CM-010 Civil Case Cover Sheet — AS FILED (Jul. 28, 2026)",
+        "path": "/documents/matter-29/CM-010 Civil Case Cover Sheet - AS FILED (Jul 28 2026).pdf"
+      },
+      {
+        "label": "SUM-100 Summons — AS FILED (Jul. 28, 2026)",
+        "path": "/documents/matter-29/SUM-100 Summons - AS FILED (Jul 28 2026).pdf"
+      },
+      {
+        "label": "FW-001 Request to Waive Court Fees — AS FILED (Jul. 28, 2026)",
+        "path": "/documents/matter-29/FW-001 Request to Waive Court Fees - AS FILED (Jul 28 2026).pdf"
+      },
+      {
+        "label": "Notice of Case Assignment — Case No. 26CV201554, Hon. Jamilah Jefferson, Dept. 520, Hayward Hall of Justice",
+        "path": "/documents/matter-29/Notice of Case Assignment - Case No. 26CV201554, Hon. Jamilah Jefferson Dept 520 (Jul 29 2026).pdf"
+      },
+      {
+        "label": "Notice of Case Management Conference — Jan. 6, 2027, 10:00 AM, Dept. 520; 60-day Rule 3.110(b) service deadline",
+        "path": "/documents/matter-29/Notice of Case Management Conference - Jan 6 2027 Dept 520 (Jul 29 2026).pdf"
+      },
+      {
+        "label": "SER-001 Request for Sheriff to Serve Court Papers — Amazon.com Services, LLC (executed Jul. 29, 2026; Sacramento County, agent CSC - Lawyers Incorporating Service)",
+        "path": "/documents/matter-29/SER-001 Request for Sheriff to Serve Court Papers - Amazon.com Services LLC (executed Jul 29 2026).pdf"
+      },
+      {
+        "label": "SER-001 Request for Sheriff to Serve Court Papers — Accurate Background LLC (executed Jul. 29, 2026; Los Angeles County, agent CT Corporation System)",
+        "path": "/documents/matter-29/SER-001 Request for Sheriff to Serve Court Papers - Accurate Background LLC (executed Jul 29 2026).pdf"
+      },
+      {
+        "label": "Sacramento County Sheriff E-Filing Order #O26005379 (SUBMITTED, Jul. 29, 2026, 1:43 PM) — Amazon.com Services, LLC service request; Filing Packet #FP26007325, $52.05 hold placed, not yet charged",
+        "path": "/documents/matter-29/Sacramento County Sheriff E-Filing Order O26005379 (SUBMITTED, Jul 29 2026).pdf"
+      },
+      {
+        "label": "Sacramento County Sheriff E-Filing Order #O26005379 (PROCESSED/ACCEPTED, Jul. 29, 2026, 2:20 PM) — Levy Officer File #2026027206 assigned; $52.05 charged in full",
+        "path": "/documents/matter-29/Sacramento County Sheriff E-Filing Order O26005379 (PROCESSED, ACCEPTED, Jul 29 2026).pdf"
+      },
+      {
+        "label": "Gmail — Service Request to L.A. Process Servers (Sarah Thompson) re Accurate Background LLC (Jul. 29, 2026, 1:55 PM); proposed $60 fee, packet attached",
+        "path": "/documents/matter-29/Gmail - Service Request to LA Process Servers re Accurate Background (Jul 29 2026).pdf"
+      },
+      {
+        "label": "Service Packet Sent to L.A. Process Servers — Summons, Complaint, Notice of Case Assignment, Notice of CMC (32 pp., as actually attached Jul. 29, 2026; note this omits the Civil Case Cover Sheet described in the covering email)",
+        "path": "/documents/matter-29/Service Packet Sent to LA Process Servers - Summons, Complaint, Notice of Case Assignment, Notice of CMC (32 pp, Jul 29 2026).pdf"
+      }
+    ],
+    "evidenceCount": 24
+  },
+  {
+    "number": 30,
+    "caption": "Newanforbi v. Moua, et al.",
+    "case_no": "TBD",
+    "court": "USDC N.D. Cal.",
+    "claims": "42 U.S.C. §1983 First Amendment Retaliation, §1983 Fourteenth Amendment Due Process, Bane Act Cal. Civ. Code §52.1, IIED",
+    "status": "Pre-complaint — 26-page verified Complaint v9 prepared naming Moua and DOES 1-10 only, anticipated filing September 16, 2026 (USDC N.D. Cal.), 15 days after the Government Claims Act claim is deemed rejected; Gary Noguchi and Joseelyn Rojo were served (Jul. 7 and Jul. 14, 2026) under an earlier complaint draft naming them directly, but Plaintiff has since deliberately narrowed the operative pleading to Moua alone, reserving them for potential later DOE amendment; Long Moua service pending; Government Claims Act claim filed Jul. 18, 2026, anticipated deemed-rejected Sep. 1, 2026 (Gov. Code §912.4(c)); plaintiff homeless since Jul. 2, 2026",
+    "note": "NOT abandoned — if discharged from CDCR parole supervision before this matter's filing window closes, Plaintiff intends to file it.",
+    "badge": "PENDING",
+    "filed": "Anticipated September 16, 2026 (not yet filed)",
+    "judge": "TBD",
+    "cluster": 2,
+    "type": "Federal",
+    "defendants": "Long Moua (CDCR Parole Agent, Badge #7472 — received BNN's file on or about Jan. 26, 2026, ~14 days after BNN filed the Derrick FAC; fabricated March 31, 2026 telehealth 'failure to attend treatment' violation by withholding the access code then submitting BNN's non-attendance as willful; authored Nov. 14, 2025 CDCR Form 1502-DR (Discharge Review Report), reviewed/e-signed by Noguchi, judicially questioned by Sacramento County Superior Court; ordered retaliatory transfer to Santa Clara GPS Unit on Jun. 29, 2026, 7 days after BNN served CDCR in separate lawsuit, citing 'too many violations'); and DOES 1–10, inclusive. NOTE: an earlier complaint draft named Gary Noguchi (CDCR Parole Agent, Badge #7284, Unit Supervisor San Joaquin County Parole GPS Unit — Moua's direct supervisor; co-defendant in Newanforbi v. Andrew Derrick et al. FAC, Case 2:26-cv-00004-DJC-JDP; co-authored the 1502-DR with Moua) and Joseelyn Rojo (CDCR Parole official) as co-defendants, and both were served under that draft (Noguchi Jul. 7, 2026; Rojo Jul. 14, 2026). Plaintiff has confirmed the narrowing to Moua-only in the operative Complaint v9 was a deliberate strategic choice, not an oversight — the claim against Moua is pleaded on its own facts, with Noguchi and Rojo reserved for potential later amendment as DOE defendants if discovery substantiates their supervisory involvement. FLAGGED RISK FOR THAT RESERVATION: Matter 3's July 24, 2026 order already dismissed a supervisory-liability theory against this same Noguchi 'for lack of supervisory-liability allegations under Hansen v. Black' (with leave to amend, not a final merits adjudication — and in the same order the court itself noted this sits in tension with Plaintiff's own July 22, 2026 self-executing voluntary dismissal of Noguchi from that action). Neither ruling forecloses a differently-pleaded supervisory theory here, but any future DOE amendment naming Noguchi should address Hansen v. Black head-on rather than repeat the pleading gap Matter 3 already identified. This matter also does not currently disclose its overlap with the discharge-review cluster (Matters 9, 10, 11, 15, 19) — Moua co-authored the same Nov. 14, 2025 Form 1502-DR whose facial defects are the entire subject of that cluster (see Matter 19, now the sole still-pending vehicle for that challenge). Separately, this matter's causal account of the June 29, 2026 retaliatory transfer (Moua's personal decision, driven by the fabricated telehealth violation) differs from Matters 3 and 15's account of the same transfer (institutional retaliation by 'Stockton parole,' Noguchi's unit, tied to the Matter 15 filing) — the two framings aren't mutually exclusive, but neither cross-references the other, and a factfinder crediting one causal story could undercut the other.",
+    "causes": [
+      "42 U.S.C. § 1983 — First Amendment Retaliation: Moua received BNN's file within ~14 days of the Derrick lawsuit (Jan. 12 → Jan. 26, 2026); Moua executed retaliatory transfer to Santa Clara GPS Unit within 18 days of CDCR lawsuit service (Jun. 22 → Jun. 29, 2026); causal nexus between protected petition activity and adverse parole action established by temporal proximity and Moua's cited pretext ('too many violations')",
+      "42 U.S.C. § 1983 — Fourteenth Amendment Due Process: fabricated 'failure to attend treatment' violation submitted by Moua into the parole system based on a telehealth session BNN could not attend because Moua never provided the access code; manufactured pretext used to justify retaliatory transfer without legitimate administrative basis",
+      "Tom Bane Civil Rights Act, Cal. Civ. Code § 52.1 — coercive interference with First and Fourteenth Amendment rights: Moua's use of the fabricated violation as a threatened and actual sanction (administrative record blemish + retaliatory transfer) constitutes threats, intimidation, and coercion within the meaning of §52.1; third-strike sex offender registration completed under duress of automatic life sentence amplifies the coercive context",
+      "Intentional Infliction of Emotional Distress: fabrication of a parole violation, forced relocation from Stockton to Santa Clara GPS jurisdiction, destruction of Macy's employment ($21.50/hr Captain role, ~$3,870+ lost wages), compelled sex offender registration under duress of third-strike life sentence, and ongoing housing and employment instability constitute extreme and outrageous conduct causing severe emotional distress",
+      "[RESERVED — not pleaded in operative Complaint v9] Supervisory Liability (42 U.S.C. § 1983) as to Noguchi and Rojo: a prior complaint draft alleged supervisory defendants ratified, condoned, or failed to prevent Moua's retaliatory conduct, and both were served under that draft (Jul. 7 and Jul. 14, 2026); Plaintiff deliberately narrowed the operative pleading to Moua alone, preserving this theory as a potential DOE amendment rather than pleading it in the five-count complaint prepared for filing"
+    ],
+    "documents": [
+      {
+        "label": "Newanforbi v. Derrick et al. FAC (Case 2:26-cv-00004-DJC-JDP, E.D. Cal., filed Jan. 12, 2026) — triggering protected activity",
+        "path": "/documents/matter-30/8_fed_derrickFAC 2.pdf"
+      },
+      {
+        "label": "CASOMB Complaint Submission — HOPE Psychotherapy (Feb. 23, 2026 email confirmation)",
+        "path": "/documents/matter-30/CASOMB Complaint Submission – HOPE Psychotherapy, Inc. 2.pdf"
+      },
+      {
+        "label": "CASOMB / Dr. Kirsten Mason inquiry + BNN response (Feb. 26, 2026) — confirms treatment plan deficiencies",
+        "path": "/documents/matter-30/CASOMB Complaint Submission – HOPE Psychotherapy, Inc. 3.pdf"
+      },
+      {
+        "label": "BNN Telehealth Accommodation Request to CDCR (Feb. 27, 2026, 9:22 AM)",
+        "path": "/documents/matter-30/CASOMB Complaint Submission – HOPE Psychotherapy, Inc. 4.pdf"
+      },
+      {
+        "label": "Agent Moua Contact Card — Incoming Call Mar. 18, 2026 at 1:36 PM, 55 sec, +1(510)227-9994",
+        "path": "/documents/matter-30/IMG_7328.png"
+      },
+      {
+        "label": "Agent Brown Text — Jul. 2, 2026: Macy's schedule + job offer sent; BNN requests permission to continue working during Santa Clara transition",
+        "path": "/documents/matter-30/IMG_7325.png"
+      },
+      {
+        "label": "Agent Brown Text — Jul. 6, 2026: BNN confirms sex offender registration complete + Amazon job start July 28",
+        "path": "/documents/matter-30/IMG_7326.png"
+      },
+      {
+        "label": "CountySuite Service Records — Gary Noguchi (Jul. 7) and Joseelyn Rojo (Jul. 14) served",
+        "path": "/documents/matter-30/IMG_7327.png"
+      },
+      {
+        "label": "Proof of Service of Summons (POS-010) — Gary Noguchi, served Jul. 7, 2026, 11:46 AM (earlier complaint draft naming him directly; now defunct — narrowed out of operative Complaint v9, reserved as potential DOE amendment)",
+        "path": "/documents/matter-30/Proof of Service of Summons - Gary Noguchi (served Jul 7 2026).pdf"
+      },
+      {
+        "label": "Proof of Service of Summons (POS-010) — Joseelyn Rojo, served Jul. 14, 2026, 10:20 AM (earlier complaint draft naming her directly; now defunct — narrowed out of operative Complaint v9, reserved as potential DOE amendment)",
+        "path": "/documents/matter-30/Proof of Service of Summons - Joseelyn Rojo (served Jul 14 2026).pdf"
+      },
+      {
+        "label": "Macy's Job Offer — Captain Selling & Support, $21.50/hr, start May 28, 2026, Stockton Sherwood",
+        "path": "/documents/matter-30/Job Offer-Selling and Support Captain, Stockton Sherwood - Full Time.pdf"
+      },
+      {
+        "label": "Macy's Work Schedule (printed Jul. 2, 2026 at 3:16 PM) — active shifts through Jul. 18; confirms employment at time of retaliatory transfer",
+        "path": "/documents/matter-30/My Schedule.pdf"
+      },
+      {
+        "label": "Newanforbi v. CDCR, et al. — State Case STK-CV-UPI-2026-0005417 (Judge Jayne Lee, Dept 10C; CMC Dec. 9, 2026) — second triggering protected activity",
+        "path": "/documents/matter-30/Newanforbi v. CDCR, et al 3.pdf"
+      },
+      {
+        "label": "Complaint v9 — Newanforbi v. Moua, et al. (filed Sep. 16, 2026, USDC N.D. Cal.) — 26-page verified complaint; §1983 First Amendment Retaliation, Due Process, Bane Act, IIED; Moua Badge #7472; GCA exhaustion pleaded; Heck addressed",
+        "path": "/documents/matter-30/Complaint v9 Newanforbi v Moua NDCAL.pdf"
+      }
+    ],
+    "evidenceCount": 19
+  },
+  {
+    "number": 31,
+    "caption": "Newanforbi v. First Advantage LLC",
+    "case_no": "TBD",
+    "court": "San Joaquin Sup. Ct. (anticipated)",
+    "claims": "FCRA § 1681b(b), FCRA § 1681e(b), ICRAA, Negligence Per Se, UCL § 17200",
+    "status": "IDENTIFIED VIA PORTFOLIO GAP ANALYSIS (Jul. 30, 2026) — NOT YET FILED; no demand letter sent; no complaint drafted. Opened as a candidate matter after a document-level review found First Advantage LLC named as the background-check vendor in both Matter 25 (FedEx) and Matter 26 (UPS), yet never itself named as a defendant, unlike the comparable vendors in the same cluster (Accurate Background — Matter 29; HireRight — Matter 23).",
+    "note": "Vendor-side companion to Matters 25/26 — same underlying reports, different defendant theory",
+    "badge": "PENDING",
+    "filed": "Not yet filed",
+    "judge": "TBD",
+    "cluster": 3,
+    "type": "State",
+    "defendants": "First Advantage LLC (fadv.com; consumer reporting agency / investigative consumer reporting agency); DOES 1 through 10, inclusive",
+    "causes": [
+      "Violation of the Fair Credit Reporting Act, 15 U.S.C. § 1681b(b)(1) — Furnishing a Consumer Report for Employment Purposes Without a Permissible/Certified Purpose",
+      "Violation of the Fair Credit Reporting Act, 15 U.S.C. § 1681e(b) — Failure to Follow Reasonable Procedures to Assure Maximum Possible Accuracy",
+      "Violation of the California Investigative Consumer Reporting Agencies Act (Cal. Civ. Code § 1786 et seq.)",
+      "Negligence Per Se (Evid. Code § 669; predicate duty: Cal. Penal Code § 290.46(j)(2)(E))",
+      "Unlawful Business Practices (Bus. & Prof. Code § 17200 et seq.)"
+    ],
+    "documents": [
+      {
+        "label": "First Advantage Pre Adverse Action Notification re: UPS application (Jul. 22, 2024) — cross-referenced from Matter 26",
+        "path": "/documents/matter-26/Pre Adverse Action Notification regarding your application with UPS.pdf"
+      },
+      {
+        "label": "First Advantage Final Adverse Action Notification re: UPS application (Jul. 31, 2024) — cross-referenced from Matter 26",
+        "path": "/documents/matter-26/Final Adverse Action Notification regarding your application with UPS.pdf"
+      },
+      {
+        "label": "First Advantage Pre-Adverse Employment Action Notice re: FedEx application (Mar. 10, 2025) — cross-referenced from Matter 25",
+        "path": "/documents/matter-25/FedEx Pre-Adverse Employment Action Notice.pdf"
+      },
+      {
+        "label": "First Advantage Adverse Employment Action Notice re: FedEx application (Mar. 19, 2025) — cross-referenced from Matter 25",
+        "path": "/documents/matter-25/FedEx Adverse Employment Action Notice.pdf"
+      }
+    ],
+    "evidenceCount": 10
+  }
+]

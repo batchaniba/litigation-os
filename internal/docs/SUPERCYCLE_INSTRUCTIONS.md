@@ -340,7 +340,7 @@ git push -u origin [branch-name]
 2. Fill required fields in the JSON (`number`, `cluster` as a number, status prose, etc.)
 3. Add companion rows in `timeline.js`, `damages.js`, and `lawyerFees.js`
 4. Drop PDFs under `internal/public/documents/matter-NN/` and list them in `documents[]`
-5. Run `npm run validate` (also runs in CI and the GitHub Pages deploy workflow)
+5. Run `npm run sync:summaries && npm run validate` (also runs in CI and the GitHub Pages deploy workflow). Full prose stays in `NN.json` and is lazy-loaded on expand/detail; list views use `summaries.json`.
 
 **Adding a timeline event:**
 1. Add entry to `internal/src/data/timeline.js`

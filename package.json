@@ -8,8 +8,10 @@
     "build": "vite build",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
-    "validate": "node internal/scripts/validate-portfolio.mjs",
+    "sync:summaries": "node internal/scripts/sync-matter-summaries.mjs",
+    "validate": "node internal/scripts/sync-matter-summaries.mjs --check && node internal/scripts/validate-portfolio.mjs",
     "scaffold:matter": "node internal/scripts/scaffold-matter.mjs",
+    "prebuild": "npm run sync:summaries",
     "index:build": "python3 internal/scripts/build-document-index.py",
     "index:search": "python3 internal/scripts/search-documents.py",
     "extract:matter1": "node internal/scripts/extract-matter-pdfs.mjs"
