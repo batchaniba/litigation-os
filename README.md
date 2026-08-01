@@ -12,19 +12,25 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 |---|---|
 | Plaintiff | Brendan Ngehsi Newanforbi |
 | Representation | Pro Se / In Propria Persona |
+<!-- PORTFOLIO:OVERVIEW_COUNTS:START -->
 | Total Matters | 31 |
 | Active / Open | 14 |
-| Settled | 1 (Matter 22 — Pilot Travel Centers LLC, July 11, 2026) |
+| Settled | 1 (Matter 22 — Newanforbi v. Pilot Travel Centers LLC, July 14, 2026) |
 | Dismissed / Closed / Abandoned | 16 |
+<!-- PORTFOLIO:OVERVIEW_COUNTS:END -->
 | Jurisdictions | USDC E.D. Cal., USDC N.D. Cal., San Joaquin Sup. Ct., Alameda Sup. Ct., Sacramento Sup. Ct., Santa Clara Sup. Ct. |
 | Housing Status | **Homeless since July 2, 2026** — direct consequence of retaliatory inter-county parole transfer (Stockton → Santa Clara) imposed immediately after filing Matter 15 (Newanforbi v. CDCR, et al.); transfer caused loss of Stockton family housing; Matters 3, 9, and 19 are also potential retaliatory predicate acts |
 | Representation | Pro Se / In Propria Persona — all 31 matters self-litigated; estimated equivalent private-counsel cost: $756,084–$1,251,376 |
+<!-- PORTFOLIO:OVERVIEW_EXPOSURE:START -->
 | Aggregate Exposure (Conservative) | ~$1,161,000+ |
 | Aggregate Exposure (Moderate) | ~$2,957,000+ |
 | Aggregate Exposure (Aggressive) | ~$6,579,000+ |
+<!-- PORTFOLIO:OVERVIEW_EXPOSURE:END -->
 | Last Updated | August 1, 2026 |
 
-*Of the 16 dismissed/closed/abandoned matters: seven (Matters 3, 4, 14, 15, 16, 23, 30) were voluntarily abandoned due to real, credible safety threats — Matter 15 (the portfolio's largest single exposure) most recently, by voluntary dismissal with prejudice as to all defendants filed July 24, 2026; six federal companion suits (Matters 6, 11, 13, 17, 18, 21) were voluntarily dismissed — five with prejudice, together, on June 29, 2026 — once the stronger surviving vehicles (the Matter 19 habeas track and Matter 28's Monell/RICO case) made the parallel federal claims redundant; and three (Matters 5, 9, 10) closed on procedural/exhaustion grounds rather than the merits, with Matter 5's discovery record carried forward into Matter 28. See [All Matters](#all-matters) below for the full disposition table.*
+<!-- PORTFOLIO:CLOSED_COUNT_NOTE:START -->
+*Of the 16 dismissed/closed/abandoned matters, 7 carry an ABANDONED / NOT PURSUING disposition (voluntarily withdrawn, including for safety-driven reasons). See [All Matters](#all-matters) below for the full disposition table. Matter 30 remains pending/pre-complaint in the Active table when its record is not archived.*
+<!-- PORTFOLIO:CLOSED_COUNT_NOTE:END -->
 
 ---
 
@@ -117,86 +123,112 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 
 ### Active / Open
 
+<!-- PORTFOLIO:ACTIVE_MATTERS:START -->
 | # | Caption | Case No. | Court | Type | Status |
 |---|---|---|---|---|---|
-| 1 | Newanforbi v. CHP et al. | 2:25-cv-01460-DC-CSK | USDC E.D. Cal. | Federal | Adverse F&R Apr. 20, 2026 (MTD recommended GRANTED WOLA — 4th/14th Amend., QI); District Judge DC adoption pending; Matter 2 (Alameda) active if adopted |
-| 2 | Newanforbi v. Meza-Gonzalez et al. | 26CV168913 | Alameda Sup. Ct. | State | STAYED pending Matter 1 District Judge ruling |
-| 7 | Newanforbi v. Candelaria | 2:26-cv-00983-DC-CSK | USDC E.D. Cal. | Federal | Adverse F&R Jun. 15, 2026 (IFP denied; FAC dismissed WOLA — quasi-judicial immunity, 11th Amend.); District Judge DC adoption pending |
-| 8 | Newanforbi v. Candelaria, et al. | 26WM000135 | Sacramento Sup. Ct. | State | Fee Waiver Hearing held July 17, 2026, Dept. 10C |
-| 12 | Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. | STK-CV-UF-2026-0001094 | San Joaquin Sup. Ct. | State | Default entered against Diamond; Alpine served July 1, 2026, no response; CMC Aug. 12, 2026 |
-| 19 | Newanforbi v. Macomber | C2604791 | Santa Clara Sup. Ct. | State | Habeas — seeks unconditional parole discharge; Order Extending Time July 2, 2026 (Hon. Robert Hawk); court deadline to rule: Aug. 1, 2026 |
-| 20 | Newanforbi v. CHP, et al. | 26CV191136 | Alameda Sup. Ct. | State | Demurrer opposition filed July 13, 2026; hearing Aug. 28, 2026, Dept. 25; Individual Respondents' joinders/demurrers filed July 30, 2026, stipulated to be heard same date |
-| 24 | Newanforbi v. Serrato | 4:26-cv-05953-ASK | USDC N.D. Cal. | Federal | Filed June 17, 2026; ISC Order issued; CMC Sept. 15, 2026 |
-| 25 | Newanforbi v. Federal Express Corporation | STK-CV-UWT-2026-0009118 | San Joaquin Sup. Ct. | State | Filed July 15, 2026; demand response deadline July 26 (5:00 PM PT); Dept. 10B, Hon. Blanca Banuelos; CMC Jan. 14, 2027; SERVED July 24, 2026 (Ct Corporation System / Jaqueline Mejia) |
-| 26 | Newanforbi v. United Parcel Service, Inc. | STK-CV-UWT-2026-0009113 | San Joaquin Sup. Ct. | State | Filed July 15, 2026; demand response deadline July 26 (5:00 PM PT); limitations period preserved (16 days to spare); Dept. 11B, Hon. Robert T. Waters; CMC Jan. 13, 2027; SERVED July 22, 2026 (Josh Swindell, Authorized Agent) |
-| 27 | Newanforbi v. Randstad US, LLC et al. | 26CV199902 | Alameda Sup. Ct. | State | Filed July 20, 2026, Hon. Karin Schwartz, Dept. 20; RK Logistics denied the demand July 21, 2026 through Garcia & Gurney, ALC — grounds rebutted; Randstad has not responded, demand deadline Aug. 2, 2026; SERVED July 30, 2026 (Josh Swindell) — responsive pleading due Aug. 31, 2026 |
-| 28 | Newanforbi v. Shannon Smith, LCSW, CEO, et al. | 3:26-cv-07504 | USDC N.D. Cal. | Federal | Case filed July 20, 2026, Hon. Lisa J. Cisneros; Initial CMC Oct. 22, 2026; §1983 + Bane Act + RICO |
-| 29 | Newanforbi v. Amazon.com Services, LLC et al. | TBD | Alameda Sup. Ct. (anticipated) | State | Pre-complaint — BGC pending (Accurate Background LLC, shortcode 45996); adverse action anticipated; PC §290.46(j) + FCRA + ICRAA; Lerma precedent (same defendants, settled Sept. 2023) establishes willfulness |
-| 31 | Newanforbi v. First Advantage LLC | TBD | San Joaquin Sup. Ct. (anticipated) | State | Identified via portfolio gap analysis Jul. 30, 2026 — not yet filed, no demand letter sent; FCRA §1681b(b)/§1681e(b) + ICRAA + Negligence Per Se + UCL §17200 against the background-check vendor for Matters 25 and 26 |
+| 1 | Newanforbi v. CHP et al. | 2:25-cv-01460-DC-CSK | USDC E.D. Cal. | Federal | Filed 05/27/2025; Magistrate Judge issued Findings & Recommendations RECOMMENDING DISMISSAL (Apr. 20, 2026) |
+| 2 | Newanforbi v. Meza-Gonzalez et al. | 26CV168913 | Alameda Sup. Ct. | State | STAYED — Stipulation for Stay filed Apr. 14, 2026; U-Visa Certification Motion briefed (Opp. June 5, 2026; Reply June 8, 2026) and heard June 18, 2026 at 2:30 p.m. (Dept. 518) |
+| 7 | Newanforbi v. Candelaria | 2:26-cv-00983-DC-CSK | USDC E.D. Cal. | Federal | Active — FAC filed Apr. 27, 2026; Magistrate Judge Chi Soo Kim issued Findings & Recommendations (ECF No. 6, Jun. 15, 2026) recommending IFP denial and dismissal WITHOUT LEAVE TO… |
+| 12 | Brendan Ngwa Nforbi v. Diamond Truck Sales, Inc. | STK-CV-UF-2026-0001094 | San Joaquin Sup. Ct. | State | Active — Default ENTERED against Diamond Truck Sales, Inc.; default prove-up hearing requested at/after CMC |
+| 19 | Newanforbi v. Macomber | C2604791 | Santa Clara Sup. Ct. | State | Active — Order Extending Time to Rule issued July 2, 2026; court has until August 1, 2026 to rule (Cal. Rules of Court, rule 4.551(i)) |
+| 20 | Newanforbi v. California Highway Patrol, et al. | 26CV191136 | Alameda Sup. Ct. | State | Active — Petition filed 05/29/2026; AG Demurrer (CHP) filed; Opposition to Demurrer filed 07/13/2026; CHP Demurrer Hearing: 08/28/2026, 9:00 a.m., Dept. 25 — Hon. Jenna M. Whitman. |
+| 24 | Newanforbi v. Serrato | 4:26-cv-05953-ASK | USDC N.D. Cal. | Federal | Active — Complaint filed June 17, 2026; Case No. 4:26-cv-05953-ASK; assigned to Magistrate Judge Ajay S. Krishnan; ISC Order issued June 17, 2026; CMC scheduled September 15, 2026 |
+| 25 | Newanforbi v. Federal Express Corporation | STK-CV-UWT-2026-0009118 | San Joaquin Sup. Ct. | State | Filed July 15, 2026; assigned to Dept. 10B, Hon. Blanca Banuelos; CMC January 14, 2027, 8:45 AM; service deadline September 13, 2026 (60 days, CRC 3.110). |
+| 26 | Newanforbi v. United Parcel Service, Inc. | STK-CV-UWT-2026-0009113 | San Joaquin Sup. Ct. | State | Filed July 15, 2026; limitations period preserved — 16 days to spare (2-year cutoff: July 31, 2026); assigned to Dept. 11B, Hon. Robert T. Waters; CMC January 13, 2027, 8:30 AM |
+| 27 | Newanforbi v. Randstad, et al. | 26CV199902 | Alameda Sup. Ct. | State | Employment TERMINATED July 15, 2026. Pre-Filing Demand Letters sent to both Randstad and RK Logistics July 20, 2026 |
+| 28 | Newanforbi v. Shannon Smith, LCSW, CEO, et al. | 3:26-cv-07504 | USDC N.D. Cal. | Federal | Case Filed July 20, 2026 — Hon. Lisa J. Cisneros. Order filed July 23, 2026 required: (1) correct district IFP form by Aug. 13, 2026 |
+| 29 | Newanforbi v. Amazon.com Services, LLC | 26CV201554 | Alameda Sup. Ct. (Hayward Hall of Justice, Dept. 520) | State | CASE FILED July 28, 2026 — the same day Plaintiff's confirmed training shift (Jul. 28–29, 2026) was to begin. |
+| 30 | Newanforbi v. Moua, et al. | TBD | USDC N.D. Cal. | Federal | Pre-complaint — 26-page verified Complaint v9 prepared naming Moua and DOES 1-10 only, anticipated filing September 16, 2026 (USDC N.D. |
+| 31 | Newanforbi v. First Advantage LLC | TBD | San Joaquin Sup. Ct. (anticipated) | State | IDENTIFIED VIA PORTFOLIO GAP ANALYSIS (Jul. 30, 2026) — NOT YET FILED; no demand letter sent; no complaint drafted. |
+<!-- PORTFOLIO:ACTIVE_MATTERS:END -->
 
 ### Settled
 
+<!-- PORTFOLIO:SETTLED_MATTERS:START -->
 | # | Caption | Case No. | Court | Outcome |
 |---|---|---|---|---|
-| 22 | Newanforbi v. Pilot Travel Centers LLC | STK-CV-UWT-2026-0007649 | San Joaquin Sup. Ct. | SETTLED July 11, 2026 — negotiated resolution pro se in under seven weeks from filing; settlement terms confidential |
+| 22 | Newanforbi v. Pilot Travel Centers LLC | STK-CV-UWT-2026-0007649 | San Joaquin Sup. Ct. | SETTLED — July 14, 2026 (pro se; DocuSigned by both parties; resolved in under seven weeks from filing, before service completed) |
+<!-- PORTFOLIO:SETTLED_MATTERS:END -->
 
 ### Dismissed / Closed / Archived
 
 *Matters marked **ABANDONED** were voluntarily withdrawn due to real, credible safety threats.*
 
+<!-- PORTFOLIO:CLOSED_MATTERS:START -->
 | # | Caption | Case No. | Court | Disposition |
 |---|---|---|---|---|
-| 3 | Newanforbi v. Derrick et al. | 2:26-cv-00004-DJC-JDP | USDC E.D. Cal. | **ABANDONED** as to Derrick and Noguchi — voluntarily dismissed without prejudice July 22, 2026; Palacios's MTD (Doc 24) remains under submission and Palacios's claims proceed on all counts of the operative FAC, unaffected |
-| 4 | Newanforbi v. Derrick et al. | TBD | San Joaquin Sup. Ct. | **ABANDONED** — Voluntarily Dismissed (state-tort mirror of Matter 3) |
-| 5 | Newanforbi v. Palacios et al. | STK-CV-UF-2026-0001032 | San Joaquin Sup. Ct. | DISMISSED — Demurrer granted without leave to amend July 15, 2026 (exhaustion grounds); 542-page HOPE discovery carried into Matter 28 |
-| 6 | Newanforbi v. HOPE et al. | 2:26-cv-00195-TLN-AC | USDC E.D. Cal. | VOLUNTARILY DISMISSED WITHOUT PREJUDICE May 21, 2026; refiling preserved |
-| 9 | Newanforbi v. Macomber | 26WM000028 | Sacramento Sup. Ct. | DISMISSED — Demurrer Sustained WOLA May 29, 2026 (writ of mandate; habeas corpus is the correct vehicle; substantive claim live in Matter 19) |
-| 10 | Newanforbi v. Macomber | C2602632 | Santa Clara Sup. Ct. | CLOSED — Petition denied without prejudice Apr. 27, 2026 (exhaustion; PC §3008(d)(2) certification required) |
-| 11 | Newanforbi v. Macomber | TBD | USDC E.D. Cal. | DISMISSED WITH PREJUDICE June 29, 2026 (FRCP 41(a)(1)(A)(i)) |
-| 13 | Newanforbi v. Urrea et al. | 2:26-cv-00190-DC-SCR | USDC E.D. Cal. | DISMISSED WITH PREJUDICE June 29, 2026 (FRCP 41(a)(1)(A)(i)) |
-| 14 | Newanforbi v. Urrea et al. | TBD | San Joaquin Sup. Ct. | **ABANDONED** — Voluntarily Dismissed |
-| 15 | Newanforbi v. CDCR, et al. | STK-CV-UPI-2026-5417 | San Joaquin Sup. Ct. | **ABANDONED** — Voluntary Dismissal With Prejudice filed July 24, 2026 as to all defendants (CDCR, Dodd, Noguchi); was the portfolio's largest single-matter exposure |
-| 16 | Newanforbi v. Rojo | TBD | San Joaquin Sup. Ct. | **ABANDONED** — Voluntarily Dismissed |
-| 17 | Newanforbi v. Maloney et al. | 2:26-cv-00194-DAD-SCR | USDC E.D. Cal. | DISMISSED WITH PREJUDICE June 29, 2026 (FRCP 41(a)(1)(A)(i)) |
-| 18 | Newanforbi v. Barocio | 2:26-cv-00191-DJC-CSK | USDC E.D. Cal. | DISMISSED WITH PREJUDICE June 29, 2026 (FRCP 41(a)(1)(A)(i)) |
-| 21 | Newanforbi v. Rojo, et al. | 2:26-cv-00193-DC-CKD | USDC E.D. Cal. | DISMISSED WITH PREJUDICE June 29, 2026 (FRCP 41(a)(1)(A)(i)) |
-| 23 | Newanforbi v. Macy's Inc. et al. | TBD | San Joaquin Sup. Ct. | **ABANDONED** — Voluntarily Dismissed |
-| 30 | Newanforbi v. Moua, et al. | TBD (N.D. Cal., San Jose Div.) | USDC N.D. Cal. | **PENDING** — Government Claims Act claim filed July 18, 2026; filing contingent on parole discharge before the GCA suit deadline (~March 1, 2027) |
+| 3 | Newanforbi v. Derrick et al. | 2:26-cv-00004-DJC-JDP | USDC E.D. Cal. | **ABANDONED** — Order filed July 24, 2026 (Mag. Peterson): Palacios's MTD (Doc 24) GRANTED — failed all four Ninth Circuit state-actor tests |
+| 4 | Newanforbi v. Derrick et al. | TBD | San Joaquin Sup. Ct. | NOT PURSUING — Voluntarily Dismissed |
+| 5 | Newanforbi v. Palacios et al. | STK-CV-UF-2026-0001032 | San Joaquin Sup. Ct. | DISMISSED — San Joaquin Superior Court (Hon. George J. |
+| 6 | Newanforbi v. HOPE et al. | 2:26-cv-00195-TLN-AC | USDC E.D. Cal. | DISMISSED WITHOUT PREJUDICE — Notice of Voluntary Dismissal filed May 21, 2026; Minute Order entered June 1, 2026 (FRCP 41(a)(1)(A)(i); case closed; refiling preserved |
+| 8 | Newanforbi v. Candelaria, et al. | 26WM000135 | Sacramento Sup. Ct. | NOT PURSUING — fee-payment deadline (~Jul. 27, 2026) lapsed without payment or a revised FW-001 |
+| 9 | Newanforbi v. Macomber | 26WM000028 | Sacramento Sup. Ct. | **DENIED** — Closed — Demurrer Hearing 05/29/2026, Dept. 13A |
+| 10 | Newanforbi v. Macomber | C2602632 | Santa Clara Sup. Ct. | **DENIED** — CLOSED — Order Denying Petition Without Prejudice (April 27, 2026) |
+| 11 | Newanforbi v. Macomber | TBD (USDC E.D. Cal.) | USDC E.D. Cal. | DISMISSED WITH PREJUDICE — Notice of Voluntary Dismissal filed June 29, 2026 (FRCP 41(a)(1)(A)(i)); self-executing |
+| 13 | Newanforbi v. Urrea et al. | 2:26-cv-00190-DC-SCR | USDC E.D. Cal. | DISMISSED WITH PREJUDICE — Notice of Voluntary Dismissal filed June 29, 2026 (FRCP 41(a)(1)(A)(i)); self-executing |
+| 14 | Newanforbi v. Urrea et al. | TBD (San Joaquin Sup. Ct.) | San Joaquin Sup. Ct. | NOT PURSUING — Voluntarily Dismissed |
+| 15 | Newanforbi v. California Department of Corrections and Rehabilitation, et al. | STK-CV-UPI-2026-5417 | San Joaquin Sup. Ct. | ABANDONED — Voluntary Dismissal With Prejudice filed July 24, 2026, as to all defendants (CDCR, Keely Dodd, and Gary Noguchi), due to a real, credible safety threat. |
+| 16 | Newanforbi v. Rojo | TBD (San Joaquin Sup. Ct.) | San Joaquin Sup. Ct. | NOT PURSUING — Voluntarily Dismissed |
+| 17 | Newanforbi v. Maloney et al. | 2:26-cv-00194-DAD-SCR | USDC E.D. Cal. | DISMISSED WITH PREJUDICE — Notice of Voluntary Dismissal filed June 29, 2026 (FRCP 41(a)(1)(A)(i)); self-executing |
+| 18 | Newanforbi v. Barocio | 2:26-cv-00191-DJC-CSK (PC) | USDC E.D. Cal. | DISMISSED WITH PREJUDICE — Notice of Voluntary Dismissal filed June 29, 2026 (FRCP 41(a)(1)(A)(i)); self-executing |
+| 21 | Newanforbi v. Rojo et al. | 2:26-cv-00193-DC-CKD | USDC E.D. Cal. | DISMISSED WITH PREJUDICE — Notice of Voluntary Dismissal filed June 29, 2026 (FRCP 41(a)(1)(A)(i)); self-executing |
+| 23 | Newanforbi v. Macy's Inc. et al. | TBD | San Joaquin Sup. Ct. | NOT PURSUING — Voluntarily Dismissed. The anticipated registry-based adverse action never occurred: Macy's honored the offer, and Plaintiff worked the position from May 28, 2026… |
+<!-- PORTFOLIO:CLOSED_MATTERS:END -->
 
 ---
 
 ## Upcoming Deadlines
 
+*Generated from `timeline` entries with `upcoming: true`.*
+
+<!-- PORTFOLIO:UPCOMING_DEADLINES:START -->
 | Date | Matter | Event |
 |---|---|---|
-| July 22, 2026 | 26 | SERVED — UPS Summons & Complaint served 12:51 PM on Josh Swindell, Authorized Agent (Sacramento Co. Sheriff) |
-| July 24, 2026 | 15 | ABANDONED — Voluntary Dismissal With Prejudice filed as to all defendants (CDCR, Dodd, Noguchi), due to a real, credible safety threat |
-| July 24, 2026 | 25 | SERVED — FedEx Summons & Complaint served 9:00 AM on Ct Corporation System (Jaqueline Mejia, CA Authorized Employee) (LA Co. Sheriff, File No. 2026075280) |
-| July 26, 2026 | 25, 26 | Demand letter response deadline — FedEx ($85,000; STK-CV-UWT-2026-0009118) and UPS ($85,000; STK-CV-UWT-2026-0009113); 5:00 PM PT |
-| July 31, 2026 | 12 | Alpine Truck Sales, Inc. response deadline (CCP §412.20(a)(3); 30 days from July 1, 2026 personal service) |
-| Aug. 1, 2026 | 19 | Court deadline to rule — Santa Clara Sup. Ct. habeas (C2604791, Hon. Robert Hawk; per Order Extending Time July 2, 2026) |
-| Jul. 30, 2026 | 27 | SERVED — Randstad US, LLC and The RK Logistics Group, Inc. Summons & Complaint served 1:34 PM on Josh Swindell, Authorized Agent (Sacramento Co. Sheriff, File No. 2026026857) |
-| Aug. 2, 2026 | 27 | Response deadline — Pre-filing demand to Randstad US, LLC (5:00 PM PT); RK Logistics already denied July 21, 2026 through Garcia & Gurney, ALC; both defendants already SERVED July 30, 2026 |
-| Aug. 12, 2026 | 12 | Case Management Conference / default prove-up entry point — 8:30 AM, Dept. 11B, Hon. Robert T. Waters (San Joaquin Sup. Ct.); EJ-001, EJ-130, EJ-125, and MC-012 pre-drafted and ready to complete same day/next business day if judgment enters |
-| Aug. 21, 2026 | 20 | AG reply deadline — 5 court days before Aug. 28 demurrer hearing (CRC 3.1320(b)) |
-| Aug. 26, 2026 | 27 | Meet-and-confer deadline (computed) — if either defendant intends to demur (CCP §430.41(a)(2); 5 days before Aug. 31 responsive-pleading deadline) |
-| Aug. 28, 2026 | 20 | Demurrer Hearing — 9:00 AM, Dept. 25, Alameda Sup. Ct. (Hon. Jenna M. Whitman) |
-| Aug. 31, 2026 | 27 | Responsive pleading deadline (computed) — 30 days from July 30, 2026 service (CCP §412.20(a)(3); Aug. 29 Saturday rolled to Monday per CCP §12a) |
-| Sep. 2, 2026 | 20 | Case Management Conference (continued from July 15) — Dept. 25, Alameda Sup. Ct. |
-| Sep. 13, 2026 | 25, 26 | Proof-of-service filing deadline — FedEx and UPS (60 days from July 15, 2026 filing; CRC 3.110); both defendants already SERVED (UPS July 22, FedEx July 24) |
-| Sep. 18, 2026 | 27 | Proof-of-service filing deadline — Randstad / RK Logistics (60 days from July 20, 2026 filing; CRC 3.110); both defendants already SERVED July 30, 2026 |
-| Sep. 15, 2026 | 24 | Case Management Conference — USDC N.D. Cal. (4:26-cv-05953-ASK) |
-| Dec. 14, 2026 | 26 | Meet-and-confer deadline — 30 days before Jan. 13, 2027 CMC (CRC 3.724; STK-CV-UWT-2026-0009113) |
-| Dec. 15, 2026 | 25 | Meet-and-confer deadline — 30 days before Jan. 14, 2027 CMC (CRC 3.724; STK-CV-UWT-2026-0009118) |
-| Dec. 29, 2026 | 26 | Case Management Statement due — JC Form CM-110; 15 days before Jan. 13, 2027 CMC (CRC 3.725; STK-CV-UWT-2026-0009113) |
-| Dec. 30, 2026 | 25 | Case Management Statement due — JC Form CM-110; 15 days before Jan. 14, 2027 CMC (CRC 3.725; STK-CV-UWT-2026-0009118) |
-| Jan. 13, 2027 | 26 | Case Management Conference — 8:30 AM, Dept. 11B, Hon. Robert T. Waters, San Joaquin Sup. Ct. (STK-CV-UWT-2026-0009113) |
-| Jan. 14, 2027 | 25 | Case Management Conference — 8:45 AM, Dept. 10B, Hon. Blanca Banuelos, San Joaquin Sup. Ct. (STK-CV-UWT-2026-0009118) |
+| Jul. 30, 2026 | 26 | Anticipated arrival/filing — POS-010 Proof of Service of Summons mailed Jul. 28, 2026, expected to reach the clerk and be filed on or about this date, well ahead of the Sep. 13, 2026 CRC 3.110 deadline — Newanforbi v. |
+| Jul. 31, 2026 | 12 | Alpine Truck Sales, Inc. response deadline (CCP §412.20(a)(3) — 30 days from July 1, 2026 personal service); no meet-and-confer outreach received as of July 20, 2026 |
+| Aug. 1, 2026 | 19 | Deadline for Santa Clara Superior Court to rule on Petition for Writ of Habeas Corpus — Case C2604791, Hon. Robert Hawk; extended from earlier date per Order Extending Time (filed Jul. 2, 2026, Cal. |
+| Aug. 1, 2026 | 12 | Alpine Truck Sales, Inc. Request for Entry of Default and Court Judgment (CIV-100) and supporting Declaration — pre-drafted, execution date set for the day after Alpine's response deadline lapses |
+| Aug. 2, 2026 | 27 | Response deadline (5:00 PM PT) — Pre-Filing Demand Letters to Randstad US, LLC and RK Logistics Group, Inc.; Newanforbi v. Randstad US, LLC et al. (No. 26CV199902, Alameda Sup. Ct.) already on file |
+| Aug. 3, 2026 | 28 | Response deadline — Motion for Protective Order, Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504) |
+| Aug. 7, 2026 | 3 | Deadline to file amended complaint (14 days from Jul. 24, 2026 order, Doc 31) — Newanforbi v. Derrick et al. (2:26-cv-00004-DJC-JDP); if not filed, action proceeds solely on Equal Protection claim against Derrick |
+| Aug. 10, 2026 | 28 | Reply deadline — Motion for Protective Order, Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504) |
+| Aug. 12, 2026 | 12 | Case Management Conference — Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094), 8:30 AM, Dept. 11B, Hon. Robert T. Waters |
+| Aug. 12, 2026 | 30 | Macy's LOA preferred return date — BNN's preferred date to return to Captain Selling & Support role at Macy's Stockton Sherwood |
+| Aug. 14, 2026 | 26 | Meet-and-confer target date (computed) — Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113) |
+| Aug. 19, 2026 | 7,8 | Gov. claim deadline — Candelaria state tort Bane Act damages (6 months from Feb. 19, 2026 accrual; claim must be filed with DGS) |
+| Aug. 19, 2026 | 25 | Meet-and-confer deadline (computed) — Newanforbi v. Federal Express Corporation (STK-CV-UWT-2026-0009118) |
+| Aug. 21, 2026 | 20 | AG reply deadline (computed) — Respondents' Reply to Petitioner's Opposition to Demurrer due 5 court days before Aug. 28, 2026 hearing per CRC 3.1320(b) — Newanforbi v. California Highway Patrol et al. (26CV191136) |
+| Aug. 21, 2026 | 26 | Responsive pleading deadline (computed) — Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113); 30 days from the Jul. 22, 2026 service date (CCP §412.20(a)(3)) |
+| Aug. 24, 2026 | 25 | Responsive pleading deadline (computed) — Newanforbi v. Federal Express Corporation (STK-CV-UWT-2026-0009118); 30 days from the Jul. 24, 2026 service date (CCP §412.20(a)(3)) |
+| Aug. 25, 2026 | 24 | Deadline — ADR Certification (ADR L.R. 3) and Rule 26(f) meet-and-confer (initial disclosures, early settlement, ADR process selection, discovery plan) — Newanforbi v. Serrato (4:26-cv-05953-ASK) |
+| Aug. 26, 2026 | 27 | Meet-and-confer deadline (computed) — Newanforbi v. Randstad US, LLC et al. (26CV199902) |
+| Aug. 28, 2026 | 20 | Demurrer Hearing — Newanforbi v. California Highway Patrol et al. (26CV191136), 9:00 a.m., Dept. 25, Rene C. Davidson Courthouse, Oakland; Hon. Jenna M. Whitman |
+| Aug. 31, 2026 | 27 | Responsive pleading deadline (computed) — Newanforbi v. Randstad US, LLC et al. (26CV199902); 30 days from the Jul. 30, 2026 service date (CCP §412.20(a)(3)) |
+| Sep. 1, 2026 | 30 | Anticipated deemed-rejection date (computed) — Government Claims Act claim, Newanforbi v. Moua, et al. (Matter 30) |
+| Sep. 2, 2026 | 20 | Case Management Conference (continued from Jul. 15, 2026) — Newanforbi v. California Highway Patrol, et al. (Case No. 26CV191136), Dept. 25, Rene C. Davidson Courthouse, Oakland, Alameda County; Hon. Jenna M. Whitman |
+| Sep. 8, 2026 | 24 | Deadline — Initial disclosures (FRCP 26(a)(1)) and Joint Case Management Statement — Newanforbi v. Serrato (4:26-cv-05953-ASK) |
+| Sep. 13, 2026 | 25,26 | Service deadline — Newanforbi v. Federal Express Corporation (STK-CV-UWT-2026-0009118) and Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113); 60 days from July 15, 2026 filing (CRC 3.110) |
+| Sep. 15, 2026 | 24 | Initial Case Management Conference — 1:30 PM via Zoom (cand.uscourts.gov/ask); Hon. Ajay S. Krishnan — Newanforbi v. Serrato (4:26-cv-05953-ASK) |
+| Sep. 16, 2026 | 30 | Anticipated filing date (computed) — Complaint v9 (Moua and DOES 1-10), Newanforbi v. Moua, et al. (Matter 30); 15 days after the anticipated Sep. 1, 2026 deemed rejection |
+| Sep. 18, 2026 | 27 | Proof-of-service filing deadline — Newanforbi v. Randstad US, LLC et al. (26CV199902); 60 days from July 20, 2026 filing (CRC 3.110(b)); both defendants already SERVED Jul. 30, 2026 |
+| Sep. 26, 2026 | 29 | Service/proof-of-service deadline (computed) — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554); 60 days from the Jul. 28, 2026 filing (CRC 3.110(b)) |
+| Oct. 15, 2026 | 28 | Case Management Statement due — Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504), USDC N.D. Cal. |
+| Oct. 22, 2026 | 28 | Initial Case Management Conference — Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504), 1:30 PM, Hon. Lisa J. Cisneros, San Francisco (videoconference only) |
+| Dec. 14, 2026 | 26 | Meet-and-confer deadline — Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113); 30 calendar days before Jan. 13, 2027 CMC (CRC 3.724) |
+| Dec. 15, 2026 | 25 | Meet-and-confer deadline — Newanforbi v. Federal Express Corporation (STK-CV-UWT-2026-0009118); 30 calendar days before Jan. 14, 2027 CMC (CRC 3.724) |
+| Dec. 29, 2026 | 26 | Case Management Conference Statement due — Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113); JC Form CM-110, mandatory; 15 days before Jan. 13, 2027 CMC (CRC 3.725) |
+| Dec. 30, 2026 | 25 | Case Management Conference Statement due — Newanforbi v. Federal Express Corporation (STK-CV-UWT-2026-0009118); JC Form CM-110, mandatory; 15 days before Jan. 14, 2027 CMC (CRC 3.725) |
+| Jan. 6, 2027 | 29 | Case Management Conference — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554), 10:00 AM, Dept. 520, Hon. Jamilah Jefferson, Hayward Hall of Justice, 24405 Amador Street, Hayward, CA 94544 |
+| Jan. 13, 2027 | 26 | Case Management Conference — Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113), 8:30 AM, Dept. 11B, Hon. Robert T. Waters, San Joaquin Superior Court, 180 E Weber Ave, Stockton, CA 95202 |
+| Jan. 14, 2027 | 25 | Case Management Conference — Newanforbi v. Federal Express Corporation (STK-CV-UWT-2026-0009118), 8:45 AM, Dept. 10B, Hon. Blanca Banuelos, San Joaquin Superior Court, 180 E Weber Ave, Stockton, CA 95202 |
+| Mar. 1, 2027 | 30 | OUTER STATUTE OF LIMITATIONS (computed) — Government Claims Act six-month suit-filing window for the Bane Act and IIED state-law claims, Newanforbi v. Moua, et al. (Matter 30) |
+<!-- PORTFOLIO:UPCOMING_DEADLINES:END -->
 
 ---
 
 ## Damages Summary
 
+<!-- PORTFOLIO:DAMAGES_SUMMARY:START -->
 | Category | Matters | Conservative | Moderate | Aggressive |
 |---|---|---|---|---|
 | Lost Wages / Economic Harm | 1, 2, 7, 22 | $20,000 | $130,000 | $334,000 |
@@ -204,17 +236,18 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | Emotional Distress | 1, 2, 5, 7, 22, 24 | $0 | $20,000 | $115,000 |
 | Bane Act / Treble | 1, 2 | $15,000 | $50,000 | $70,000 |
 | Punitive Damages | 1, 2, 7, 22, 24 | $30,000 | $120,000 | $450,000 |
-| Consumer Fraud (Matter 12) | 12 | $79,000 | $110,000 | $200,000 |
+| Consumer Fraud | 12 | $78,672 | $110,072 | $200,272 |
 | Attorneys' Fees | 1, 7, 22, 24 | $28,000 | $45,000 | $70,000 |
-| PC §290.46(j) + Wrongful Termination | 22 | $220,000 | $525,000 | $1,000,000 |
-| §1983 — U Visa Certification Denial & Retaliation | 24 | $75,000 | $200,000 | $450,000 |
-| PC §290.46(j) Failure to Hire — FedEx / UPS | 25, 26 | $75,000 | $180,000 | $420,000 |
-| PC §290.46(j) — Wrongful Termination / Failure to Employ — Randstad / RK Logistics | 27 | $180,000 | $437,000 | $835,000 |
-| §1983 Monell + Individual + Bane Act + RICO — Shannon Smith / HOPE | 28 | $249,000 | $666,000 | $1,510,000 |
-| PC §290.46(j) Failure to Hire — Amazon | 29 | $30,000 | $75,000 | $180,000 |
-| §1983 Retaliation, Due Process, Bane Act & IIED — Moua | 30 | $90,000 | $225,000 | $525,000 |
-| FCRA / ICRAA Vendor Liability — First Advantage LLC | 31 | $30,000 | $89,000 | $205,000 |
-| **Portfolio Total (pre-deduplication)** | | **$1,161,000** | **$2,957,000** | **$6,579,000** |
+| PC §290.46(j) Violation + Wrongful Termination (Matter 22) | 22 | $220,000 | $525,000 | $1,000,000 |
+| 42 USC §1983 — Arbitrary U Visa Certification Denial & Retaliation (Matter 24) | 24 | $75,000 | $200,000 | $450,000 |
+| PC §290.46(j) Failure to Hire — FedEx / UPS (Matters 25, 26) | 25, 26 | $75,000 | $180,000 | $420,000 |
+| PC §290.46(j) — Wrongful Termination / Failure to Employ — Randstad / RK Logistics (Matter 27) | 27 | $180,000 | $437,000 | $835,000 |
+| §1983 Monell / Individual + Bane Act + RICO — Shannon Smith / HOPE (Matter 28) | 28 | $249,000 | $666,000 | $1,510,000 |
+| PC §290.46(j) Failure to Hire — Amazon (Matter 29) | 29 | $30,000 | $75,000 | $180,000 |
+| §1983 Retaliation, Due Process, Bane Act & IIED — Moua (Matter 30) | 30 | $90,000 | $225,000 | $525,000 |
+| FCRA / ICRAA Vendor Liability — First Advantage LLC (Matter 31) | 31 | $30,000 | $89,000 | $205,000 |
+| **Portfolio Total (pre-deduplication)** | | **$1,160,672** | **$2,957,072** | **$6,579,272** |
+<!-- PORTFOLIO:DAMAGES_SUMMARY:END -->
 
 *Note: The portfolio total reflects independent per-defendant exposure across all matters before deduplication of shared economic events (e.g., the same CDL wage-loss period underlying Matters 1, 2, 7, 15). Per-matter settlement negotiations treat each defendant independently.*
 
@@ -275,7 +308,7 @@ Plaintiff is representing himself pro se across all 31 matters. The figures belo
 - **Fonts:** Cormorant Garamond (headings), DM Sans (UI)
 - **Styling:** `internal/src/styles/app.css` + component styles
 - **Matter data:** one JSON file per matter under `internal/src/data/matters/`
-- **Documents:** `internal/public/documents/` (PDFs via Git LFS; shared exhibits under `_shared/`)
+- **Documents:** `internal/public/documents/` (PDFs via Git LFS; shared exhibits under `_shared/`, blank Judicial Council templates under `_form-library/`)
 
 ## Local Development
 
@@ -291,7 +324,8 @@ Useful scripts:
 
 ```bash
 npm run sync:summaries        # rebuild light matter summaries for the shell bundle
-npm run validate              # summaries freshness + schema/doc/cross-module checks
+npm run generate:readme       # regenerate marked README tables from portfolio data
+npm run validate              # summaries + README freshness + schema/doc/cross-module checks
 npm run scaffold:matter -- 32 "Newanforbi v. Example"
 ```
 
