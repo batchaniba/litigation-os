@@ -1,16 +1,17 @@
-import { useMemo, useState } from "react";
-import { PORTFOLIO } from "../data";
+import { lazy, Suspense, useMemo, useState } from "react";
+import { timeline } from "../data/timeline";
 import { GOLD } from "../constants";
 import { getPDTMidnight, parseEventDatePDT } from "../utils/dateUtils";
 import { useTheme } from "../ThemeContext";
-import { CalendarTab } from "./CalendarTab";
+
+const CalendarTab = lazy(() => import("./CalendarTab").then((module) => ({ default: module.CalendarTab })));
 
 export const TimelineTab = ({ showPastEvents, setShowPastEvents }) => {
   const theme = useTheme();
   const [view, setView] = useState("list");
   const cutoff = useMemo(() => getPDTMidnight(), []);
   const { pastEvents, recentEvents } = useMemo(() => {
-    const sorted = [...PORTFOLIO.timeline].sort((a, b) => parseEventDatePDT(a.date) - parseEventDatePDT(b.date));
+    const sorted = [...timeline].sort((a, b) => parseEventDatePDT(a.date) - parseEventDatePDT(b.date));
     return {
       pastEvents: sorted.filter(t => parseEventDatePDT(t.date) < cutoff),
       recentEvents: sorted.filter(t => parseEventDatePDT(t.date) >= cutoff),
@@ -77,7 +78,7 @@ export const TimelineTab = ({ showPastEvents, setShowPastEvents }) => {
           {recentEvents.map((t, i) => renderEvent(t, i))}
         </div>
       ) : (
-        <CalendarTab />
+        <Suspense fallback={<div className="route-loading" role="status" aria-label="Loading calendar" />}><CalendarTab /></Suspense>
       )}
     </div>
   );

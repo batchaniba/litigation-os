@@ -1,14 +1,16 @@
 import { useState } from "react";
-import { PORTFOLIO } from "../data";
+import { damages_table } from "../data/damages";
+import { lawyer_fees, lawyer_fees_summary } from "../data/lawyerFees";
 import { GOLD } from "../constants";
 import { useTheme } from "../ThemeContext";
+import { formatCurrency } from "../utils/formatters";
 
-const fmt = (n) => "$" + Math.round(n).toLocaleString();
+const fmt = (n) => formatCurrency(Math.round(n));
 const VIEWS = ["low", "mid", "high"];
 const VIEW_LABEL = { low: "Conservative", mid: "Mid-Point", high: "High-End" };
 
-const summary = PORTFOLIO.lawyer_fees_summary;
-const PORTFOLIO_DAMAGES_TOTALS = PORTFOLIO.damages_table.reduce(
+const summary = lawyer_fees_summary;
+const PORTFOLIO_DAMAGES_TOTALS = damages_table.reduce(
   (acc, d) => {
     acc.conservative += d.conservative;
     acc.moderate += d.moderate;
@@ -18,7 +20,7 @@ const PORTFOLIO_DAMAGES_TOTALS = PORTFOLIO.damages_table.reduce(
   { conservative: 0, moderate: 0, aggressive: 0 }
 );
 
-const MAX_MATTER_COST = Math.max(...PORTFOLIO.lawyer_fees.map((m) => m.cost.high));
+const MAX_MATTER_COST = Math.max(...lawyer_fees.map((m) => m.cost.high));
 
 const thStyle = (theme) => ({
   fontFamily: "'DM Sans', sans-serif", fontSize: 10, fontWeight: 700,
@@ -98,7 +100,7 @@ export const CostOfCounselTab = () => {
   const [view, setView] = useState("mid");
   const [expandedMatter, setExpandedMatter] = useState(null);
 
-  const sortedMatters = [...PORTFOLIO.lawyer_fees].sort((a, b) => b.cost[view] - a.cost[view]);
+  const sortedMatters = [...lawyer_fees].sort((a, b) => b.cost[view] - a.cost[view]);
   const total = summary.totalEstimatedCost[view];
   const totalHours = summary.totalEstimatedHours[view];
 

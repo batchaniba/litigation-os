@@ -1,4 +1,4 @@
-import { PORTFOLIO } from "../data";
+import { theories } from "../data/theories";
 import { GOLD } from "../constants";
 import { useTheme } from "../ThemeContext";
 
@@ -8,7 +8,7 @@ export const TheoriesTab = () => {
     <div>
       <h2 style={{ fontSize: 24, fontWeight: 700, color: theme.heading, marginBottom: 24 }}>Thematic Legal Theories</h2>
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))", gap: 16 }}>
-        {PORTFOLIO.theories.map(t => (
+        {theories.map(t => (
           <div key={t.id} style={{ background: theme.cardBg, borderRadius: 10, padding: 24, border: `1px solid ${theme.cardBorder}`, display: "flex", flexDirection: "column", gap: 12, transition: "border-color 0.3s" }}>
             <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
               <span style={{ fontSize: 28 }}>{t.icon}</span>
