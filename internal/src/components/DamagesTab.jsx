@@ -1,12 +1,14 @@
 import { useState } from "react";
-import { PORTFOLIO } from "../data";
+import { cases } from "../data/matters";
+import { damages_table, matter_damages } from "../data/damages";
 import { GOLD } from "../constants";
 import { useTheme } from "../ThemeContext";
+import { formatCurrency } from "../utils/formatters";
 
-const fmt = (n) => "$" + n.toLocaleString();
+const fmt = (n) => formatCurrency(n);
 const VIEWS = ["conservative", "moderate", "aggressive"];
 
-const PORTFOLIO_TOTALS = PORTFOLIO.damages_table.reduce(
+const PORTFOLIO_TOTALS = damages_table.reduce(
   (acc, d) => {
     acc.conservative += d.conservative;
     acc.moderate += d.moderate;
@@ -16,12 +18,12 @@ const PORTFOLIO_TOTALS = PORTFOLIO.damages_table.reduce(
   { conservative: 0, moderate: 0, aggressive: 0 }
 );
 
-const MAX_PORTFOLIO_AGGRESSIVE = PORTFOLIO.damages_table.reduce(
+const MAX_PORTFOLIO_AGGRESSIVE = damages_table.reduce(
   (m, x) => Math.max(m, x.aggressive), 0
 );
 
-const ARCHIVED_MATTER_NUMS = new Set(PORTFOLIO.cases.filter(c => c.archived).map(c => c.number));
-const ACTIVE_MATTER_DAMAGES = PORTFOLIO.matter_damages.filter(m => !ARCHIVED_MATTER_NUMS.has(m.number));
+const ARCHIVED_MATTER_NUMS = new Set(cases.filter(c => c.archived).map(c => c.number));
+const ACTIVE_MATTER_DAMAGES = matter_damages.filter(m => !ARCHIVED_MATTER_NUMS.has(m.number));
 
 const MATTER_TOTALS = ACTIVE_MATTER_DAMAGES.reduce(
   (acc, m) => {
@@ -255,7 +257,7 @@ export const DamagesTab = ({ damagesView, setDamagesView }) => {
           </div>
 
           <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-            {PORTFOLIO.damages_table.map((d, i) => {
+            {damages_table.map((d, i) => {
               const val = d[damagesView];
               const pct = (val / MAX_PORTFOLIO_AGGRESSIVE) * 100;
               return (

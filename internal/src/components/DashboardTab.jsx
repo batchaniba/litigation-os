@@ -1,20 +1,21 @@
-import { PORTFOLIO } from "../data";
+import { cases } from "../data/matters";
+import { damages_table } from "../data/damages";
+import { jurisdictions } from "../data/portfolioMeta";
 import { GOLD, BORDER_BLUE } from "../constants";
 import { useTheme } from "../ThemeContext";
+import { formatCurrency } from "../utils/formatters";
 
 const FILED_GREEN = "#34D399";
 const UPCOMING_AMBER = "#FBBF24";
 
-const formatCurrency = (n) => "$" + n.toLocaleString();
-
-const totalMatters = PORTFOLIO.cases.length;
-const activeMatters = PORTFOLIO.cases.filter(c => !c.archived).length;
+const totalMatters = cases.length;
+const activeMatters = cases.filter(c => !c.archived).length;
 const clusterCounts = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 };
 const clusterNumberLists = { 1: [], 2: [], 3: [], 4: [], 5: [] };
 const courtCounts = {};
 let federalCount = 0;
 let stateCount = 0;
-for (const c of PORTFOLIO.cases) {
+for (const c of cases) {
   if (!c.archived) {
     if (c.type === "Federal") federalCount++;
     else if (c.type === "State") stateCount++;
@@ -47,7 +48,7 @@ const clusterMattersStr = {
 };
 
 const moderateExposure = formatCurrency(
-  PORTFOLIO.damages_table.reduce((s, r) => s + r.moderate, 0)
+  damages_table.reduce((s, r) => s + r.moderate, 0)
 );
 
 export const CLUSTERS = [
@@ -76,7 +77,7 @@ export const DashboardTab = ({ upcomingEvents, setClusterFilter, setActiveTab })
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 16, marginBottom: 28 }}>
         {[
           { label: "Active Matters", value: activeMatters, sub: `${federalCount} Federal · ${stateCount} State · ${totalMatters} total` },
-          { label: "Jurisdictions", value: PORTFOLIO.jurisdictions.length, sub: "Courts across CA" },
+          { label: "Jurisdictions", value: jurisdictions.length, sub: "Courts across CA" },
           { label: "Aggregate Exposure", value: moderateExposure, sub: "Moderate estimate" },
           { label: "Next Deadline", value: upcomingEvents[0]?.date || "—", sub: upcomingEvents[0]?.event?.slice(0, 35) || "" }
         ].map((s, i) => (
@@ -190,7 +191,7 @@ export const DashboardTab = ({ upcomingEvents, setClusterFilter, setActiveTab })
       <div style={{ background: theme.cardBg, borderRadius: 10, padding: 24, border: `1px solid ${theme.cardBorder}` }}>
         <h3 style={{ fontSize: 18, fontWeight: 700, color: GOLD, margin: "0 0 16px", fontFamily: "'DM Sans', sans-serif" }}>Jurisdictional Distribution</h3>
         <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
-          {PORTFOLIO.jurisdictions.map(j => (
+          {jurisdictions.map(j => (
             <div key={j} style={{ background: theme.navySubtleBg, borderRadius: 8, padding: "12px 18px", border: `1px solid ${BORDER_BLUE}30`, flex: "1 1 180px" }}>
               <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: theme.mutedText, marginBottom: 4 }}>{j}</div>
               <div style={{ fontSize: 24, fontWeight: 700, color: theme.heading }}>{courtCounts[j] || 0}</div>

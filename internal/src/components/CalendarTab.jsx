@@ -1,5 +1,6 @@
 import { useState, useMemo } from "react";
-import { PORTFOLIO } from "../data";
+import { timeline } from "../data/timeline";
+import { cases } from "../data/matters";
 import { GOLD } from "../constants";
 import { getPDTMidnight } from "../utils/dateUtils";
 import { groupEventsByDay, buildMonthGrid, dayKey, parseMatterNumbers } from "../utils/calendarUtils";
@@ -20,7 +21,7 @@ export const CalendarTab = () => {
   const [viewMonth, setViewMonth] = useState(today.getUTCMonth());
   const [selectedKey, setSelectedKey] = useState(null);
 
-  const { byDay, ungrounded } = useMemo(() => groupEventsByDay(PORTFOLIO.timeline), []);
+  const { byDay, ungrounded } = useMemo(() => groupEventsByDay(timeline), []);
   const cells = useMemo(() => buildMonthGrid(viewYear, viewMonth), [viewYear, viewMonth]);
 
   const goToMonth = (delta) => {
@@ -36,7 +37,7 @@ export const CalendarTab = () => {
     const { all, numbers, label } = parseMatterNumbers(mattersStr);
     if (all || numbers.length === 0) return [{ label }];
     return numbers.map(n => {
-      const c = PORTFOLIO.cases.find(cs => cs.number === n);
+      const c = cases.find(cs => cs.number === n);
       return { label: `Matter ${n}`, caption: c?.caption };
     });
   };

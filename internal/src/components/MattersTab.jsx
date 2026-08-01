@@ -1,9 +1,11 @@
 import { useState } from "react";
-import { PORTFOLIO } from "../data";
+import { Link } from "react-router-dom";
+import { cases } from "../data/matters";
 import { GOLD, BORDER_BLUE } from "../constants";
 import { StatusBadge, ClusterBadge, TypeBadge, ArchiveBadge } from "./Badges";
 import { ServiceTracker } from "./ServiceTracker";
 import { useTheme } from "../ThemeContext";
+import { formatMatterPath } from "../utils/formatters";
 
 const MatterCard = ({ matter: c, isOpen, onToggle }) => {
   const theme = useTheme();
@@ -116,6 +118,12 @@ const MatterCard = ({ matter: c, isOpen, onToggle }) => {
           </div>
 
           {c.serviceTracking && <ServiceTracker serviceTracking={c.serviceTracking} />}
+
+          <div style={{ marginTop: 20 }}>
+            <Link to={formatMatterPath(c.number)} style={{ color: GOLD, fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 700, textDecoration: "none" }}>
+              Open dedicated matter page →
+            </Link>
+          </div>
         </div>
       )}
     </div>
@@ -125,7 +133,7 @@ const MatterCard = ({ matter: c, isOpen, onToggle }) => {
 export const MattersTab = ({ filteredCases, statusFilter, setStatusFilter, clusterFilter, setClusterFilter, typeFilter, setTypeFilter, searchQuery, setSearchQuery }) => {
   const theme = useTheme();
   const [expandedMatter, setExpandedMatter] = useState(null);
-  const activeCount = PORTFOLIO.cases.filter(c => !c.archived).length;
+  const activeCount = cases.filter(c => !c.archived).length;
 
   return (
     <div>
@@ -167,7 +175,7 @@ export const MattersTab = ({ filteredCases, statusFilter, setStatusFilter, clust
             fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 600, cursor: "pointer"
           }}>{t ?? "All"}</button>
         ))}
-        <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: theme.subtleText, marginLeft: "auto" }}>{filteredCases.length} of {PORTFOLIO.cases.length}</span>
+        <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: theme.subtleText, marginLeft: "auto" }}>{filteredCases.length} of {cases.length}</span>
       </div>
 
       <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, fontStyle: "italic", color: theme.subtleText, marginBottom: 16 }}>

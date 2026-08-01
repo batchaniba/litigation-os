@@ -3,9 +3,11 @@ import { PORTFOLIO } from "../data";
 import { GOLD } from "../constants";
 import { useTheme } from "../ThemeContext";
 import { getPDTMidnight } from "../utils/dateUtils";
+import { formatCurrency } from "../utils/formatters";
+import { HorizontalBarChart, VerticalBarChart, RangeChart } from "./charts/PortfolioCharts";
 import { CLUSTERS } from "./DashboardTab";
 
-const fmt = (n) => "$" + Math.round(n).toLocaleString();
+const fmt = (n) => formatCurrency(Math.round(n));
 const MONO = "'Courier New', ui-monospace, monospace";
 const SANS = "'DM Sans', sans-serif";
 const GREEN = "#34D399";
@@ -353,12 +355,12 @@ export const CensusTab = ({ setActiveTab, setClusterFilter, setStatusFilter, set
           intro={`${statusCounts["Abandoned"] || 0} matters closed without a decision on the merits, several for safety reasons; ${liveMatters} remain live. Subject matter splits into five recognizable families of dispute.`} />
 
         <ChartCard theme={theme} title={`Matters by current status (n=${totalMatters})`} note={`Sorted by count. Click a bar to open Matters. “Live” carries no procedural badge.`} style={{ marginBottom: 16 }}>
-          <HBar theme={theme} data={statusRows} leftPad={150} barH={20} gap={9} ariaLabel="Matters by status" onRowClick={() => goToMatters()} />
+          <HorizontalBarChart theme={theme} data={statusRows} leftPad={150} barH={20} gap={9} ariaLabel="Matters by status" onRowClick={() => goToMatters()} />
           <TableToggle theme={theme} headers={["Status", "Matters"]} rows={statusRows.map(r => ({ label: r.label, value: r.count }))} />
         </ChartCard>
 
         <ChartCard theme={theme} title={`Matters by subject-matter cluster (n=${totalMatters})`} note="Five recurring fact patterns account for the entire docket. Click a bar to open Matters.">
-          <HBar theme={theme} data={clusterRows} leftPad={215} barH={22} gap={11} ariaLabel="Matters by subject cluster" onRowClick={(d) => goToMatters({ cluster: d.n })} />
+          <HorizontalBarChart theme={theme} data={clusterRows} leftPad={215} barH={22} gap={11} ariaLabel="Matters by subject cluster" onRowClick={(d) => goToMatters({ cluster: d.n })} />
           <TableToggle theme={theme} headers={["Cluster", "Matters"]} rows={clusterRows.map(r => ({ label: r.label, value: r.count }))} />
         </ChartCard>
       </section>
@@ -379,8 +381,8 @@ export const CensusTab = ({ setActiveTab, setClusterFilter, setStatusFilter, set
               }}>{l}</button>
             ))}
           </div>
-          <VBar theme={theme} data={monthly} todayIndex={todayMonthIdx} ariaLabel={`Timeline ${velocityMode === "filing" ? "filings" : "events"} by month, 2026`}
-            onColClick={(d, i) => { setShowPastEvents?.(todayMonthIdx === null || i <= todayMonthIdx); setActiveTab("Timeline"); }} />
+          <VerticalBarChart theme={theme} data={monthly} todayIndex={todayMonthIdx} ariaLabel={`Timeline ${velocityMode === "filing" ? "filings" : "events"} by month, 2026`}
+            onColumnClick={(d, i) => { setShowPastEvents?.(todayMonthIdx === null || i <= todayMonthIdx); setActiveTab("Timeline"); }} />
         </ChartCard>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 12, marginTop: 16 }}>
           <div style={{ background: theme.cardBg, border: `1px solid ${theme.cardBorder}`, borderLeft: `3px solid ${GOLD}`, borderRadius: 4, padding: "12px 14px" }}>
@@ -399,7 +401,7 @@ export const CensusTab = ({ setActiveTab, setClusterFilter, setStatusFilter, set
         <ExhibitHeading theme={theme} exhibit="Exhibit D — Legal Theories" title={`${PORTFOLIO.census.distinctTheories} theories, unevenly leaned on`}
           intro="Negligence and 14th Amendment due process carry the most weight, but the pattern below is really two overlapping playbooks — one built on Bane Act/civil-rights claims against state actors, the other a template built around a single California statute (more in Exhibit E)." />
         <ChartCard theme={theme} title="Most-asserted causes of action, by matter count" note={`${totalCauses} causes of action pled across ${totalMatters} matters — top ${PORTFOLIO.census.topTheories.length} shown`}>
-          <HBar theme={theme} data={PORTFOLIO.census.topTheories.map(t => ({ label: t.label, value: t.count, color: GOLD }))} leftPad={210} barH={17} gap={7} ariaLabel="Most asserted causes of action" />
+          <HorizontalBarChart theme={theme} data={PORTFOLIO.census.topTheories.map(t => ({ label: t.label, value: t.count, color: GOLD }))} leftPad={210} barH={17} gap={7} ariaLabel="Most asserted causes of action" />
           <p style={{ fontFamily: SANS, fontSize: 11, color: theme.subtleText, margin: "12px 0 0" }}>Plus 12 additional theories asserted 1&ndash;4 times each (RICO, Monell liability, habeas corpus, FCRA, writ of mandate, and others).</p>
         </ChartCard>
       </section>
@@ -459,7 +461,7 @@ export const CensusTab = ({ setActiveTab, setClusterFilter, setStatusFilter, set
           intro="The portfolio's own de-duplicated model — which strips out shared economic events counted more than once across related matters — puts total exposure in the range below. One matter has already converted to cash." />
 
         <ChartCard theme={theme} title="Portfolio-wide damages exposure, de-duplicated" note="Conservative / moderate / aggressive tiers, computed once across all matters to avoid double-counting shared claims. Click a tier to open Damages.">
-          <HBar theme={theme} leftPad={110} barH={28} gap={13} valueFmt={v => fmt(v) + (v === exposure.aggressive ? "+" : "")} ariaLabel="Portfolio damages exposure by tier"
+          <HorizontalBarChart theme={theme} leftPad={110} barH={28} gap={13} valueFmt={v => fmt(v) + (v === exposure.aggressive ? "+" : "")} ariaLabel="Portfolio damages exposure by tier"
             data={["conservative", "moderate", "aggressive"].map((k, i) => ({ label: k[0].toUpperCase() + k.slice(1), value: exposure[k], color: GOLD, opacity: 0.55 + i * 0.225, key: k }))}
             onRowClick={(d) => { setDamagesView?.(d.key); setActiveTab("Damages"); }} />
         </ChartCard>
@@ -482,7 +484,7 @@ export const CensusTab = ({ setActiveTab, setClusterFilter, setStatusFilter, set
           <div style={{ fontFamily: SANS, fontSize: 11.5, color: theme.subtleText, marginBottom: 16 }}>
             ~{feeSummary.totalEstimatedHours.low.toLocaleString()}&ndash;{feeSummary.totalEstimatedHours.high.toLocaleString()} hours of attorney work, delivered pro se
           </div>
-          <Dumbbell theme={theme} rows={feeClusters.map(c => ({ label: c.label, low: c.costLow, high: c.costHigh }))} valueFmt={fmt} />
+          <RangeChart theme={theme} rows={feeClusters.map(c => ({ label: c.label, low: c.costLow, high: c.costHigh }))} valueFmt={fmt} />
           <div style={{ display: "flex", justifyContent: "flex-end", marginTop: 8 }}>
             <button onClick={() => setActiveTab("Cost of Counsel")} style={{
               background: "none", border: `1px solid ${theme.cardBorder}`, borderRadius: 6, padding: "6px 12px",

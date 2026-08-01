@@ -1,0 +1,54 @@
+:root {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  color-scheme: dark;
+  --font-sans: "DM Sans", sans-serif;
+  --gold: #c8a84b;
+  --page-max: 1200px;
+  --radius-card: 10px;
+  --space-page: 24px;
+}
+
+* { box-sizing: border-box; }
+html { min-width: 320px; }
+body { margin: 0; min-width: 320px; min-height: 100vh; background: #0f1a2e; }
+button, input { font: inherit; }
+a { color: inherit; }
+
+.app-container { width: min(100%, var(--page-max)); margin-inline: auto; padding-inline: var(--space-page); }
+.app-main { padding-top: 24px; padding-bottom: 60px; }
+.app-header { border-bottom: 2px solid var(--gold); }
+.app-header-row { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-block: 18px; flex-wrap: wrap; }
+.app-brand { display: flex; align-items: center; gap: 20px; min-width: 260px; }
+.app-logo { width: auto; height: 116px; object-fit: contain; }
+.app-kicker { color: var(--gold); font-family: var(--font-sans); font-size: 10px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; }
+.app-title { margin: 4px 0 0; font-size: 20px; line-height: 1.15; }
+.app-nav { display: flex; justify-content: flex-end; gap: 6px; flex-wrap: wrap; flex: 1; }
+.app-nav-link { border: 1px solid transparent; border-radius: 6px; padding: 8px 13px; font-family: var(--font-sans); font-size: 12px; font-weight: 600; letter-spacing: .35px; text-decoration: none; transition: background .2s, border-color .2s, color .2s; }
+.app-nav-link.active { border-color: var(--gold); color: var(--gold); background: rgb(200 168 75 / 9%); }
+.theme-toggle { border: 1px solid rgb(200 168 75 / 30%); border-radius: 6px; background: transparent; color: var(--gold); cursor: pointer; line-height: 1; padding: 7px 9px; }
+.deadline-banner { border-bottom: 1px solid rgb(200 168 75 / 18%); }
+.deadline-row { min-height: 54px; display: flex; align-items: center; justify-content: center; gap: 22px; flex-wrap: wrap; position: relative; }
+.deadline-label { color: var(--gold); font-family: var(--font-sans); font-size: 10px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; }
+.deadline-value { font-family: var(--font-sans); font-size: 13px; }
+.deadline-toggle { position: absolute; right: 24px; border-radius: 5px; background: transparent; cursor: pointer; padding: 4px 10px; font-family: var(--font-sans); font-size: 10px; font-weight: 600; text-transform: uppercase; }
+.app-footer { border-top: 1px solid; font-family: var(--font-sans); font-size: 11px; padding-block: 16px; }
+.route-loading, .empty-state, .error-state { display: grid; place-items: center; min-height: 240px; padding: 32px; text-align: center; font-family: var(--font-sans); }
+.route-loading::before { content: ""; width: 24px; height: 24px; border: 2px solid rgb(200 168 75 / 25%); border-top-color: var(--gold); border-radius: 50%; animation: spin .8s linear infinite; }
+.back-link { color: var(--gold); font-family: var(--font-sans); font-size: 13px; font-weight: 700; text-decoration: none; }
+.detail-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.detail-section { margin-top: 22px; }
+.detail-label { color: var(--gold); font-family: var(--font-sans); font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px; }
+.detail-copy { font-family: var(--font-sans); font-size: 13px; line-height: 1.65; margin: 0; }
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+@media (max-width: 760px) {
+  :root { --space-page: 16px; }
+  .app-header-row, .app-brand { align-items: flex-start; }
+  .app-logo { height: 82px; }
+  .app-nav { justify-content: flex-start; flex-basis: 100%; overflow-x: auto; flex-wrap: nowrap; padding-bottom: 4px; }
+  .app-nav-link { white-space: nowrap; }
+  .deadline-row { justify-content: flex-start; padding-right: 70px; }
+  .deadline-toggle { right: 16px; }
+  .detail-grid { grid-template-columns: 1fr; }
+}
