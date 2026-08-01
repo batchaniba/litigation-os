@@ -290,7 +290,8 @@ Open http://localhost:5173/
 Useful scripts:
 
 ```bash
-npm run validate              # schema, doc paths, cross-module coverage
+npm run sync:summaries        # rebuild light matter summaries for the shell bundle
+npm run validate              # summaries freshness + schema/doc/cross-module checks
 npm run scaffold:matter -- 32 "Newanforbi v. Example"
 ```
 

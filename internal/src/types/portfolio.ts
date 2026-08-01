@@ -11,10 +11,14 @@ export interface ServiceRecord {
   name: string;
   served: boolean;
   date?: string;
+  dateServed?: string;
+  title?: string;
+  location?: string;
   method?: string;
 }
 
-export interface Matter {
+/** Light matter record shipped in the shell bundle (no heavy prose). */
+export interface MatterSummary {
   number: number;
   caption: string;
   case_no: string;
@@ -26,17 +30,22 @@ export interface Matter {
   cluster: number;
   type: MatterType | string;
   defendants: string;
-  key_facts: string;
-  procedural_status: string;
-  damages: string;
-  risk: string;
   causes: string[];
-  evidence: string[];
+  evidenceCount: number;
   documents?: PortfolioDocument[];
   serviceTracking?: ServiceRecord[];
   archived?: boolean;
   badge?: string;
   note?: string;
+}
+
+/** Full matter record lazy-loaded from NN.json on expand/detail. */
+export interface Matter extends MatterSummary {
+  key_facts: string;
+  procedural_status: string;
+  damages: string;
+  risk: string;
+  evidence: string[];
 }
 
 export interface TimelineEvent {

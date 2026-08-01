@@ -11,7 +11,7 @@ export const MATTERS_DIR = path.resolve(__dirname, "../src/data/matters");
 export function loadMatters() {
   const files = fs
     .readdirSync(MATTERS_DIR)
-    .filter((name) => name.endsWith(".json"))
+    .filter((name) => /^\d{2}\.json$/.test(name))
     .sort();
 
   const cases = files.map((name) => {

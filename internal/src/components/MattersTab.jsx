@@ -5,11 +5,15 @@ import { GOLD, BORDER_BLUE } from "../constants";
 import { StatusBadge, ClusterBadge, TypeBadge, ArchiveBadge } from "./Badges";
 import { ServiceTracker } from "./ServiceTracker";
 import { useTheme } from "../ThemeContext";
+import { useMatter } from "../hooks/useMatter";
 import { formatMatterPath } from "../utils/formatters";
 import { SavedViews } from "./matters/SavedViews";
 
-const MatterCard = ({ matter: c, isOpen, onToggle }) => {
+const MatterCard = ({ matter: summary, isOpen, onToggle }) => {
   const theme = useTheme();
+  const { matter: full, status } = useMatter(isOpen ? summary.number : null);
+  const c = full ?? summary;
+  const proseLoading = isOpen && status === "loading";
   return (
     <div style={{ position: "relative", background: theme.cardBg, borderRadius: 10, border: isOpen ? `1px solid ${GOLD}40` : `1px solid ${theme.cardBorder}`, overflow: "hidden", transition: "border-color 0.3s" }}>
       {c.status && c.status.startsWith("SETTLED") && (
@@ -89,6 +93,10 @@ const MatterCard = ({ matter: c, isOpen, onToggle }) => {
             </div>
           </div>
 
+          {proseLoading ? (
+            <div style={{ marginTop: 18, fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: theme.subtleText }}>Loading full matter record…</div>
+          ) : (
+            <>
           <div style={{ marginTop: 18 }}>
             <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 10, color: GOLD, fontWeight: 700, letterSpacing: 2, textTransform: "uppercase", marginBottom: 8 }}>Key Facts</div>
             <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: theme.mutedText, lineHeight: 1.7, margin: 0 }}>{c.key_facts}</p>
@@ -112,11 +120,13 @@ const MatterCard = ({ matter: c, isOpen, onToggle }) => {
           <div style={{ marginTop: 18 }}>
             <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 10, color: GOLD, fontWeight: 700, letterSpacing: 2, textTransform: "uppercase", marginBottom: 8 }}>Key Evidence</div>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
-              {c.evidence.map((ev, i) => (
+              {(c.evidence ?? []).map((ev, i) => (
                 <span key={i} style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, padding: "4px 10px", borderRadius: 4, background: theme.clusterPillBg, color: theme.clusterPillColor, border: `1px solid ${theme.clusterPillBorder}` }}>{ev}</span>
               ))}
             </div>
           </div>
+            </>
+          )}
 
           {c.serviceTracking && <ServiceTracker serviceTracking={c.serviceTracking} />}
 

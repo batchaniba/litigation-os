@@ -148,11 +148,9 @@ for (const m of cases) {
 
 // JSON files on disk that are not loadable matter records
 for (const name of fs.readdirSync(MATTERS_DIR)) {
-  if (!name.endsWith(".json")) continue;
-  const n = Number(name.replace(/\.json$/, ""));
-  if (Number.isNaN(n) || !seenMatterNumbers.has(n)) {
-    // loadMatters already parsed all json; flag orphans / bad names
-    if (Number.isNaN(n)) fail(`matters/${name}: filename must be NN.json (zero-padded matter number)`);
+  if (!name.endsWith(".json") || name === "summaries.json") continue;
+  if (!/^\d{2}\.json$/.test(name)) {
+    fail(`matters/${name}: filename must be NN.json (zero-padded matter number)`);
   }
 }
 
