@@ -6,6 +6,7 @@ import { StatusBadge, ClusterBadge, TypeBadge, ArchiveBadge } from "./Badges";
 import { ServiceTracker } from "./ServiceTracker";
 import { useTheme } from "../ThemeContext";
 import { formatMatterPath } from "../utils/formatters";
+import { SavedViews } from "./matters/SavedViews";
 
 const MatterCard = ({ matter: c, isOpen, onToggle }) => {
   const theme = useTheme();
@@ -130,7 +131,7 @@ const MatterCard = ({ matter: c, isOpen, onToggle }) => {
   );
 };
 
-export const MattersTab = ({ filteredCases, statusFilter, setStatusFilter, clusterFilter, setClusterFilter, typeFilter, setTypeFilter, searchQuery, setSearchQuery }) => {
+export const MattersTab = ({ filteredCases, statusFilter, setStatusFilter, clusterFilter, setClusterFilter, typeFilter, setTypeFilter, searchQuery, setSearchQuery, sortKey, setSortKey }) => {
   const theme = useTheme();
   const [expandedMatter, setExpandedMatter] = useState(null);
   const activeCount = cases.filter(c => !c.archived).length;
@@ -146,14 +147,14 @@ export const MattersTab = ({ filteredCases, statusFilter, setStatusFilter, clust
           aria-label="Search matters by caption, case number, or keywords"
           style={{ flex: "1 1 200px", padding: "10px 16px", borderRadius: 8, border: `1px solid ${theme.cardBorder}`, background: theme.inputBg, color: theme.inputColor, fontFamily: "'DM Sans', sans-serif", fontSize: 13, outline: "none" }}
         />
-        {["active", "all"].map(s => (
+        {["active", "upcoming", "archived", "all"].map(s => (
           <button key={s} onClick={() => setStatusFilter(s)} aria-pressed={statusFilter === s} style={{
             padding: "8px 14px", borderRadius: 6,
             border: statusFilter === s ? `1px solid ${GOLD}` : `1px solid ${theme.filterInactiveBorder}`,
             background: statusFilter === s ? `${GOLD}18` : theme.filterInactiveBg,
             color: statusFilter === s ? GOLD : theme.filterInactiveColor,
             fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 600, cursor: "pointer"
-          }}>{s === "active" ? `Active (${activeCount})` : "All"}</button>
+          }}>{s === "active" ? `Active (${activeCount})` : s === "upcoming" ? "Upcoming" : s === "archived" ? "Archived" : "All"}</button>
         ))}
         <span style={{ color: theme.subtleText, fontFamily: "'DM Sans', sans-serif", fontSize: 12 }}>|</span>
         {[null, 1, 2, 3, 4, 5].map(c => (
@@ -178,6 +179,18 @@ export const MattersTab = ({ filteredCases, statusFilter, setStatusFilter, clust
         <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: theme.subtleText, marginLeft: "auto" }}>{filteredCases.length} of {cases.length}</span>
       </div>
 
+      <div className="matter-view-controls">
+        <SavedViews
+          current={{ status: statusFilter, cluster: clusterFilter, type: typeFilter, query: searchQuery, sort: sortKey }}
+          onApply={(view) => { setStatusFilter(view.status); setClusterFilter(view.cluster); setTypeFilter(view.type); setSearchQuery(view.query); setSortKey(view.sort); }}
+        />
+        <label className="sort-control" style={{ color: theme.subtleText }}>Sort by
+          <select value={sortKey} onChange={(event) => setSortKey(event.target.value)} style={{ background: theme.inputBg, borderColor: theme.cardBorder, color: theme.inputColor }}>
+            <option value="number">Matter number</option><option value="filed">Newest filing</option><option value="deadline">Next deadline</option><option value="exposure">Moderate exposure</option><option value="court">Court</option><option value="status">Status</option>
+          </select>
+        </label>
+      </div>
+
       <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, fontStyle: "italic", color: theme.subtleText, marginBottom: 16 }}>
         Matters marked <strong style={{ color: "#6b7280", fontStyle: "normal" }}>ABANDONED</strong> were voluntarily abandoned due to real, credible safety threats.
         Matters marked ⏳ <strong style={{ color: "#eab308", fontStyle: "normal" }}>PENDING</strong> are prepared but not yet filed, contingent on external timing.
@@ -189,7 +202,7 @@ export const MattersTab = ({ filteredCases, statusFilter, setStatusFilter, clust
           <div style={{ padding: "40px 24px", textAlign: "center", fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: theme.subtleText }}>
             No matters match your current filters.{" "}
             <button
-              onClick={() => { setStatusFilter("active"); setClusterFilter(null); setTypeFilter(null); setSearchQuery(""); }}
+              onClick={() => { setStatusFilter("active"); setClusterFilter(null); setTypeFilter(null); setSearchQuery(""); setSortKey("number"); }}
               style={{ background: "none", border: "none", color: GOLD, cursor: "pointer", fontFamily: "'DM Sans', sans-serif", fontSize: 14, textDecoration: "underline", padding: 0 }}
             >
               Clear all filters
