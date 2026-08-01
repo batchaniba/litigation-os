@@ -6,9 +6,8 @@ import { useDeadlineClock } from "../../hooks/useDeadlineClock";
 import { PortfolioUIContext, type PortfolioUIValue } from "../../context/PortfolioUIContext";
 import { getPDTMidnight, parseEventDatePDT } from "../../utils/dateUtils";
 import { DeadlineBanner } from "./DeadlineBanner";
-import { AppTopbar } from "./AppTopbar";
 import { Breadcrumbs } from "./Breadcrumbs";
-import { PortfolioSidebar } from "./PortfolioSidebar";
+import { PortfolioHeader } from "./PortfolioHeader";
 import { RouteLoading } from "../ui/AsyncState";
 
 const GlobalSearchDialog = lazy(() => import("../search/GlobalSearchDialog"));
@@ -18,7 +17,6 @@ export function ShellLayout() {
   const [damagesView, setDamagesView] = useState("moderate");
   const [showPastEvents, setShowPastEvents] = useState(false);
   const [showClock, setShowClock] = useState(false);
-  const [navigationOpen, setNavigationOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const location = useLocation();
   const mainRef = useRef<HTMLElement>(null);
@@ -44,7 +42,6 @@ export function ShellLayout() {
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "auto" });
-    setNavigationOpen(false);
     mainRef.current?.focus({ preventScroll: true });
   }, [location.pathname]);
 
@@ -54,7 +51,6 @@ export function ShellLayout() {
       const isTyping = /INPUT|TEXTAREA|SELECT/.test(target.tagName) || target.isContentEditable;
       if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "k") { event.preventDefault(); openSearch(); }
       if (!isTyping && event.key === "/") { event.preventDefault(); openSearch(); }
-      if (event.key === "Escape") setNavigationOpen(false);
     };
     document.addEventListener("keydown", shortcuts);
     return () => document.removeEventListener("keydown", shortcuts);
@@ -71,10 +67,8 @@ export function ShellLayout() {
       <PortfolioUIContext.Provider value={ui}>
         <div className="app-shell" style={{ minHeight: "100vh", background: theme.bg, color: theme.text }}>
           <a className="skip-link" href="#main-content">Skip to content</a>
-          <PortfolioSidebar darkMode={darkMode} open={navigationOpen} onNavigate={() => setNavigationOpen(false)} theme={theme} />
-          {navigationOpen && <button className="sidebar-scrim" onClick={() => setNavigationOpen(false)} aria-label="Close navigation" />}
           <div className="app-workspace">
-            <AppTopbar darkMode={darkMode} onMenu={() => setNavigationOpen(true)} onSearch={openSearch} onToggleTheme={() => setDarkMode((value) => !value)} theme={theme} />
+            <PortfolioHeader darkMode={darkMode} onToggleTheme={() => setDarkMode((value) => !value)} theme={theme} />
             <DeadlineBanner timeLeft={timeLeft} showClock={showClock} onToggle={() => setShowClock((value) => !value)} theme={theme} />
             <div className="app-container"><Breadcrumbs theme={theme} /></div>
             <main id="main-content" ref={mainRef} tabIndex={-1} className="app-container app-main"><Outlet /></main>
