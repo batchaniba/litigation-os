@@ -6,9 +6,9 @@ Each defendant packet (Diamond / Alpine) is self-contained and print-ready:
   2. Defendant's Proof of Service cover
   3. CIV-100 (clean fill from blank Judicial Council form; signed)
   4. CIV-110 Request for Dismissal of Does 1–20 (signed; fee-waiver decl.)
-  5. Declaration ISO Default Judgment (Aug 4; no punitive; signed)
-  6. Exhibits 1–10
-  7. JUD-100 proposed judgment (no punitive; $53,671.20)
+  5. JUD-100 proposed judgment (no punitive; $53,671.20)
+  6. Declaration ISO Default Judgment (Aug 4; no punitive; signed)
+  7. Exhibits 1–10
 
 Amounts (punitive omitted):
   Demand $49,368.65 + Interest $4,302.55 + Costs $0.00 = $53,671.20
@@ -572,9 +572,9 @@ def assemble(
     out.insert_pdf(src, from_page=ranges["pos"][0], to_page=ranges["pos"][1] - 1)
     out.insert_pdf(civ100)
     out.insert_pdf(civ110)
+    out.insert_pdf(jud100)
     out.insert_pdf(decl)
     out.insert_pdf(src, from_page=ranges["exhibits"][0], to_page=ranges["exhibits"][1] - 1)
-    out.insert_pdf(jud100)
 
     tmp = out_path.with_suffix(".tmp.pdf")
     out.save(tmp, garbage=4, deflate=True)
