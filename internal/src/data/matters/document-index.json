@@ -771,12 +771,17 @@
   },
   {
     "matter": 12,
-    "label": "FullCourt Enterprise — Civil ROA Summary",
+    "label": "FullCourt Enterprise — Civil ROA Summary (earlier print; superseded by Aug. 1, 2026 ROA below)",
     "path": "/documents/matter-12/FullCourt Enterprise - Civil ROA Summary.pdf"
   },
   {
     "matter": 12,
-    "label": "DTS Default Judgment Packet",
+    "label": "FullCourt Enterprise — Civil ROA Summary (printed Aug. 1, 2026, 5:40 PM) — shows June 15, 2026 Request for Default against Diamond and Alpine Not Entered (CIV-100 Notice to Filing Party); Alpine POS filed July 15; CM-110 filed July 27; July 31 mailed renewed default packets not yet posted",
+    "path": "/documents/matter-12/FullCourt Enterprise - Civil ROA Summary (as of Aug 1 2026).pdf"
+  },
+  {
+    "matter": 12,
+    "label": "DTS Default Judgment Packet — original June 15, 2026 CIV-100/Declaration/exhibits against Diamond (and naming Alpine); ROA: Request for Default … Not Entered; clerk issued Notice to Filing Party",
     "path": "/documents/matter-12/DTS Default Judgment Packet.pdf"
   },
   {
@@ -791,17 +796,17 @@
   },
   {
     "matter": 12,
-    "label": "Alpine Default Judgment Packet — complete filing record: CIV-100 Request for Entry of Default/Court Judgment, Declaration, and Exhibits 1–10 with covers (pre-drafted, execution date Aug. 1, 2026) — FLAGGED: case number field reads STK-CV-UF-2026-1094, missing the leading zeros in the actual case number STK-CV-UF-2026-0001094; correct before filing",
+    "label": "Alpine Default Judgment Packet — pre-correction draft (case number STK-CV-UF-2026-1094 missing leading zeros); superseded by the corrected packet mailed July 31, 2026",
     "path": "/documents/matter-12/Alpine Default Judgment Packet (Pre-Drafted, Execution Date Aug 1 2026).pdf"
   },
   {
     "matter": 12,
-    "label": "[Proposed] Judgment (JUD-100) — corrected: case number fixed to STK-CV-UF-2026-0001094 and Alpine Truck Sales, Inc. added to Item 5a \"against defendant\" (the original draft named only Diamond in the operative parties field; Alpine's joint-and-several liability appeared only in freeform Item 8 text, which risked the abstract/writ not treating Alpine as a named judgment debtor). Ready to submit at the Aug. 12 CMC.",
+    "label": "[Proposed] Judgment (JUD-100) — corrected: case number STK-CV-UF-2026-0001094; Alpine added to Item 5a; included in the July 31, 2026 mailed default packets / for use at Aug. 12 CMC prove-up",
     "path": "/documents/matter-12/1094 JUD100 [Proposed] Judgment (Corrected -- case number, Alpine added to Item 5a, ready to submit).pdf"
   },
   {
     "matter": 12,
-    "label": "Alpine Default Judgment Packet — corrected: complete filing record (CIV-100 Request for Entry of Default/Court Judgment, Declaration, and Exhibits 1–10 with covers) with the case number fixed to STK-CV-UF-2026-0001094 on all 3 CIV-100 pages (the Declaration and exhibit cover pages already had it right). Exhibit boundaries also reorganized: Exhibit 1 (Vehicle Sale) now holds the Retail Buyer's Order, Texas Sales and Use Tax Exemption Certification, CDTFA-106 Use Tax Clearance Request, Buyer's Tag Receipt, and both Powers of Attorney (Dakota Financial and Diamond Truck Sales); Exhibit 2 (DMV Fees) now holds only the DMV Report of Deposit of Fees and the DMV Generated Fees printout. Ready to file Aug. 1, 2026 once Alpine's response deadline lapses.",
+    "label": "Alpine Default Judgment Packet — corrected case number STK-CV-UF-2026-0001094; CIV-100, Declaration, Exhibits 1–10; Plaintiff printed, signed, and mailed July 31, 2026 with POS and required default-judgment docs (companion Diamond renewed packet mailed same day); awaiting ROA posting as of Aug. 1, 2026 printout",
     "path": "/documents/matter-12/1094 Alpine Default Judgment Packet (Corrected Case Number, Ready to File Aug 1 2026).pdf"
   },
   {
@@ -811,7 +816,7 @@
   },
   {
     "matter": 12,
-    "label": "CM-110 Case Management Statement, incl. Attachment 4b Declaration in Support of Default Judgment (filed July 20, 2026)",
+    "label": "CM-110 Case Management Statement, incl. Attachment 4b Declaration in Support of Default Judgment (filed; ROA 07/27/2026) — note: Item 3(b)(3) asserted default entered against Diamond, but the June 15 CIV-100 was Not Entered on the ROA; renewed packets mailed July 31, 2026",
     "path": "/documents/matter-12/CM110 Case Management Statement (Jul 20 2026).pdf"
   },
   {
