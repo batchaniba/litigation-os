@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import { Link, useParams } from "react-router-dom";
-import { StatusBadge, ClusterBadge, TypeBadge, ArchiveBadge } from "../components/Badges";
+import { StatusBadge, ClusterBadge, TypeBadge, ArchiveBadge, ProceedingBadge, PhaseBadge } from "../components/Badges";
 import { EmptyState, RouteLoading } from "../components/ui/AsyncState";
 import { ServiceTracker } from "../components/ServiceTracker";
 import { MatterSummary } from "../components/matters/MatterSummary";
@@ -56,6 +56,8 @@ export function MatterDetailPage() {
         <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginTop: 14 }}>
           <ClusterBadge cluster={matter.cluster} />
           <TypeBadge type={matter.type} />
+          <ProceedingBadge proceeding={matter.proceeding} />
+          <PhaseBadge phase={matter.phase} />
           <StatusBadge status={matter.status} lifecycle={matter.lifecycle} />
           {isArchivedMatter(matter) && <ArchiveBadge />}
         </div>

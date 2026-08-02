@@ -6,6 +6,8 @@
   "claims": "IIED, Bane Act, Intentional/Negligent Econ. Interference, Negligent Supervision, NIED",
   "status": "NOT PURSUING — Voluntarily Dismissed",
   "lifecycle": "abandoned",
+  "proceeding": "state_civil",
+  "phase": "terminal",
   "filed": "May 29, 2026",
   "judge": "TBD",
   "cluster": 2,

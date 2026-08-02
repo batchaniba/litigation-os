@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { cases } from "../data/matters";
 import { GOLD, BORDER_BLUE } from "../constants";
-import { StatusBadge, ClusterBadge, TypeBadge, ArchiveBadge } from "./Badges";
+import { StatusBadge, ClusterBadge, TypeBadge, ArchiveBadge, ProceedingBadge, PhaseBadge } from "./Badges";
 import { ServiceTracker } from "./ServiceTracker";
 import { useTheme } from "../ThemeContext";
 import { useMatter } from "../hooks/useMatter";
@@ -61,6 +61,8 @@ const MatterCard = ({ matter: summary, isOpen, onToggle }) => {
           <div style={{ display: "flex", gap: 8, alignItems: "center", flexWrap: "wrap" }}>
             <ClusterBadge cluster={c.cluster} />
             <TypeBadge type={c.type} />
+            <ProceedingBadge proceeding={c.proceeding} />
+            <PhaseBadge phase={c.phase} />
             <StatusBadge status={c.status} lifecycle={c.lifecycle} />
             {isArchivedMatter(c) && <ArchiveBadge />}
           </div>

@@ -6,6 +6,8 @@
   "claims": "42 USC 1983: Procedural Due Process — Structural Bias, Denial of Neutral Decisionmaker, Deprivation Without Due Process",
   "status": "Active — FAC filed Apr. 27, 2026; Magistrate Judge Chi Soo Kim issued Findings & Recommendations (ECF No. 6, Jun. 15, 2026) recommending IFP denial and dismissal WITHOUT LEAVE TO AMEND; Plaintiff filed Objections (Jun. 18, 2026) and a Notice of Supplemental Authority citing the favorable Serrato ruling (electronically filed Jul. 9, 2026, per the court-stamped copy — corrects the Jul. 7, 2026 date previously on record); District Judge's ruling on the F&R remains PENDING as of this writing",
   "lifecycle": "active",
+  "proceeding": "federal_civil",
+  "phase": "fr_pending",
   "filed": "April 27, 2026",
   "judge": "Hon. Dena M. Coggins (referred to Magistrate Judge Chi Soo Kim) — same district/magistrate pair as Matter 1, per the shared \"DC-CSK\" case-number suffix",
   "cluster": 1,

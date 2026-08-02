@@ -6,6 +6,8 @@
   "claims": "42 USC 1983: Civil Rights",
   "status": "DISMISSED WITH PREJUDICE — Notice of Voluntary Dismissal filed June 29, 2026 (FRCP 41(a)(1)(A)(i)); self-executing",
   "lifecycle": "dismissed",
+  "proceeding": "federal_civil",
+  "phase": "terminal",
   "filed": "January 22, 2026",
   "judge": "Hon. Dale A. Drozd / Mag. Riordan",
   "cluster": 2,

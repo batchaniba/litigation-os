@@ -5,6 +5,7 @@ import { useTheme } from "../ThemeContext";
 import { getPDTMidnight } from "../utils/dateUtils";
 import { formatCurrency } from "../utils/formatters";
 import { isArchivedMatter, isLiveLifecycle, lifecycleLabel } from "../utils/matterLifecycle";
+import { phaseLabel, proceedingLabel } from "../utils/matterProceeding";
 import { HorizontalBarChart, VerticalBarChart, RangeChart } from "./charts/PortfolioCharts";
 import { CLUSTERS } from "./DashboardTab";
 
@@ -25,7 +26,9 @@ const statusLabelOf = (c) => {
   if (c.lifecycle === "abandoned") return "Abandoned";
   if (c.lifecycle === "dismissed") return "Dismissed";
   if (c.lifecycle === "closed") return c.badge === "DENIED" ? "Denied" : "Closed";
-  if (c.lifecycle === "pre_filing" || c.badge === "PENDING") return "Pending";
+  if (c.lifecycle === "pre_filing" || c.phase === "pre_filing" || c.badge === "PENDING") return "Pending";
+  // Live matters: prefer procedural phase over generic "Live"
+  if (c.phase && c.phase !== "terminal") return phaseLabel(c.phase);
   if (c.badge && BADGE_LABEL[c.badge]) return BADGE_LABEL[c.badge];
   if (c.lifecycle) return lifecycleLabel(c.lifecycle);
   return "Live";
@@ -66,16 +69,40 @@ const STATUS_COLOR = {
   "Settled": GREEN,
   "Active": GREEN,
   "Served": "#0d9488",
+  "Service": "#0d9488",
+  "Responsive deadline": "#0d9488",
   "Timely": "#0284c7",
   "Default judgment sought": "#16a34a",
+  "Default / prove-up": "#16a34a",
   "Denied": "#6b7280",
   "Closed": "#6b7280",
   "Dismissed": "#dc2626",
   "Abandoned": "#94A3B8",
   "Pending": "#eab308",
   "Pre-filing": "#eab308",
+  "Stayed": "#FBBF24",
+  "Demurrer": "#F472B6",
+  "F&R pending": "#F472B6",
+  "Under submission": "#A78BFA",
+  "Case management": "#60A5FA",
+  "IFP / screening": GOLD,
   "Live": GOLD,
 };
+
+const PROCEEDING_COLOR = {
+  "Federal civil": "#38BDF8",
+  "State civil": "#FB923C",
+  "Mandate / writ": "#A78BFA",
+  "Habeas": "#34D399",
+};
+const proceedingCounts = {};
+for (const c of PORTFOLIO.cases) {
+  const label = c.proceeding ? proceedingLabel(c.proceeding) : "Unknown";
+  proceedingCounts[label] = (proceedingCounts[label] || 0) + 1;
+}
+const proceedingRows = Object.entries(proceedingCounts)
+  .map(([label, count]) => ({ label, count, value: count, color: PROCEEDING_COLOR[label] || GOLD }))
+  .sort((a, b) => b.count - a.count);
 const statusCounts = {};
 for (const c of PORTFOLIO.cases) {
   const label = statusLabelOf(c);
@@ -358,9 +385,14 @@ export const CensusTab = ({ setActiveTab, setClusterFilter, setStatusFilter, set
         <ExhibitHeading theme={theme} exhibit="Exhibit B — Docket Status" title="Where each matter stands, and what it's about"
           intro={`${statusCounts["Abandoned"] || 0} matters closed without a decision on the merits, several for safety reasons; ${liveMatters} remain live. Subject matter splits into five recognizable families of dispute.`} />
 
-        <ChartCard theme={theme} title={`Matters by current status (n=${totalMatters})`} note={`Sorted by count. Click a bar to open Matters. “Live” carries no procedural badge.`} style={{ marginBottom: 16 }}>
-          <HorizontalBarChart theme={theme} data={statusRows} leftPad={150} barH={20} gap={9} ariaLabel="Matters by status" onRowClick={() => goToMatters()} />
-          <TableToggle theme={theme} headers={["Status", "Matters"]} rows={statusRows.map(r => ({ label: r.label, value: r.count }))} />
+        <ChartCard theme={theme} title={`Matters by procedural phase (n=${totalMatters})`} note="Live matters show structured phase (demurrer, F&R pending, responsive deadline, etc.); terminal matters show disposition." style={{ marginBottom: 16 }}>
+          <HorizontalBarChart theme={theme} data={statusRows} leftPad={170} barH={20} gap={9} ariaLabel="Matters by procedural phase" onRowClick={() => goToMatters()} />
+          <TableToggle theme={theme} headers={["Phase / disposition", "Matters"]} rows={statusRows.map(r => ({ label: r.label, value: r.count }))} />
+        </ChartCard>
+
+        <ChartCard theme={theme} title={`Matters by proceeding type (n=${totalMatters})`} note="State civil, federal civil, mandate/writ, and habeas each have their own phase vocabulary." style={{ marginBottom: 16 }}>
+          <HorizontalBarChart theme={theme} data={proceedingRows} leftPad={140} barH={22} gap={11} ariaLabel="Matters by proceeding type" onRowClick={() => goToMatters()} />
+          <TableToggle theme={theme} headers={["Proceeding", "Matters"]} rows={proceedingRows.map(r => ({ label: r.label, value: r.count }))} />
         </ChartCard>
 
         <ChartCard theme={theme} title={`Matters by subject-matter cluster (n=${totalMatters})`} note="Five recurring fact patterns account for the entire docket. Click a bar to open Matters.">

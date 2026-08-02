@@ -6,6 +6,8 @@
   "claims": "PC §290.46(j) Violation, Wrongful Termination, FCRA, ICRAA, UCL §17200, IIED, NIED",
   "status": "SETTLED — July 14, 2026 (pro se; DocuSigned by both parties; resolved in under seven weeks from filing, before service completed)",
   "lifecycle": "settled",
+  "proceeding": "state_civil",
+  "phase": "terminal",
   "filed": "May 29, 2026",
   "judge": "TBD",
   "cluster": 3,

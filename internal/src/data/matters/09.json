@@ -6,6 +6,8 @@
   "claims": "Writ of Mandate (CCP §1085)",
   "status": "Closed — Demurrer Hearing 05/29/2026, Dept. 13A",
   "lifecycle": "closed",
+  "proceeding": "mandate",
+  "phase": "terminal",
   "filed": "January 30, 2026",
   "judge": "Hon. James P. Arguelles",
   "cluster": 4,

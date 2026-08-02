@@ -6,6 +6,8 @@
   "claims": "Habeas Corpus (PC §3008(d)(2); 15 CCR §3574) — Treatment Termination",
   "status": "CLOSED — Order Denying Petition Without Prejudice (April 27, 2026)",
   "lifecycle": "closed",
+  "proceeding": "habeas",
+  "phase": "terminal",
   "filed": "February 23, 2026",
   "judge": "Hon. Robert Hawk",
   "cluster": 4,

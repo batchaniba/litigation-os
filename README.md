@@ -307,7 +307,10 @@ Plaintiff is representing himself pro se across all 31 matters. The figures belo
 - **Deployment:** Vercel (primary) + GitHub Pages (mirror)
 - **Fonts:** Cormorant Garamond (headings), DM Sans (UI)
 - **Styling:** `internal/src/styles/app.css` + component styles
-- **Matter data:** one JSON file per matter under `internal/src/data/matters/` (shell uses `summaries.json`; full records lazy-load). Each matter has a structured `lifecycle` (`active` | `pre_filing` | `settled` | `dismissed` | `abandoned` | `closed`) — prefer that over parsing the prose `status` field.
+- **Matter data:** one JSON file per matter under `internal/src/data/matters/` (shell uses `summaries.json`; full records lazy-load). Structured fields (prefer over parsing prose `status`):
+  - `lifecycle` — disposition: `active` | `pre_filing` | `settled` | `dismissed` | `abandoned` | `closed`
+  - `proceeding` — track: `state_civil` | `federal_civil` | `mandate` | `habeas`
+  - `phase` — current stage on that track (e.g. `demurrer`, `fr_pending`, `under_submission`, `responsive_deadline`; `terminal` when disposed)
 - **Timeline:** `internal/src/data/timeline.json` (full log) + generated `upcoming.json` for the shell deadline clock
 - **Documents:** `internal/public/documents/` (PDFs via Git LFS; shared exhibits under `_shared/`, blank Judicial Council templates under `_form-library/`)
 

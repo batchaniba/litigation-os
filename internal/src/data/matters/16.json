@@ -6,6 +6,8 @@
   "claims": "Bane Act, IIED, Negligence",
   "status": "NOT PURSUING — Voluntarily Dismissed",
   "lifecycle": "abandoned",
+  "proceeding": "state_civil",
+  "phase": "terminal",
   "filed": "July 7, 2026",
   "judge": "TBD",
   "cluster": 2,

@@ -6,6 +6,8 @@
   "claims": "Writ of Mandate, False Imprisonment, Bane Act, IIED, Negligent Supervision",
   "status": "NOT PURSUING — Voluntarily Dismissed",
   "lifecycle": "abandoned",
+  "proceeding": "mandate",
+  "phase": "terminal",
   "filed": "June 30, 2026",
   "judge": "TBD",
   "cluster": 2,
