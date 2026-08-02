@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import { Link, useParams } from "react-router-dom";
-import { StatusBadge, ClusterBadge, TypeBadge, ArchiveBadge } from "../components/Badges";
+import { StatusBadge, ClusterBadge, TypeBadge, ArchiveBadge, ProceedingBadge, PhaseBadge } from "../components/Badges";
 import { EmptyState, RouteLoading } from "../components/ui/AsyncState";
 import { ServiceTracker } from "../components/ServiceTracker";
 import { MatterSummary } from "../components/matters/MatterSummary";
@@ -13,6 +13,7 @@ import { withBase } from "../utils/paths";
 import { groupDocuments } from "../utils/documentGroups";
 import { matterActivity } from "../utils/matterTimeline";
 import { downloadMatterSummary, matterMarkdown } from "../utils/exportMatter";
+import { isArchivedMatter } from "../utils/matterLifecycle";
 
 function DetailSection({ label, children }: { label: string; children: ReactNode }) {
   return <section className="detail-section"><div className="detail-label">{label}</div>{children}</section>;
@@ -55,8 +56,10 @@ export function MatterDetailPage() {
         <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginTop: 14 }}>
           <ClusterBadge cluster={matter.cluster} />
           <TypeBadge type={matter.type} />
-          <StatusBadge status={matter.status} />
-          {matter.archived && <ArchiveBadge />}
+          <ProceedingBadge proceeding={matter.proceeding} />
+          <PhaseBadge phase={matter.phase} />
+          <StatusBadge status={matter.status} lifecycle={matter.lifecycle} />
+          {isArchivedMatter(matter) && <ArchiveBadge />}
         </div>
       </header>
 

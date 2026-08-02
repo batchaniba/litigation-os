@@ -52,10 +52,14 @@ const stub = {
   court: "TBD",
   claims: "TBD",
   status: "Pre-complaint / drafting",
+  lifecycle: "pre_filing",
+  proceeding: "state_civil",
+  phase: "pre_filing",
   filed: "Not yet filed",
   judge: "TBD",
   cluster: 0,
   type: "State",
+  archived: false,
   defendants: "TBD",
   causes: [],
   key_facts: "",
@@ -80,6 +84,7 @@ console.log(`Created ${path.relative(REPO_ROOT, jsonPath)}`);
 console.log(`Created ${path.relative(REPO_ROOT, docsDir)}/`);
 console.log(`
 Next checklist for Matter ${number}:
+  [ ] Set lifecycle, proceeding (state_civil|federal_civil|mandate|habeas), and phase (track-specific; terminal when disposed)
   [ ] Fill key_facts, procedural_status, damages, risk, causes in ${fileName}
   [ ] Add timeline.json entries (mark upcoming deadlines with upcoming: true)
   [ ] Run npm run sync:upcoming after timeline edits

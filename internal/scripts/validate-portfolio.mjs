@@ -14,6 +14,12 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { loadMatters, MATTERS_DIR } from "./load-matters.mjs";
+import { MATTER_LIFECYCLES, archivedFromLifecycle } from "./matter-lifecycle.mjs";
+import {
+  MATTER_PHASES,
+  MATTER_PROCEEDINGS,
+  isPhaseAllowed,
+} from "./matter-proceeding.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(__dirname, "..", "..");
@@ -58,6 +64,9 @@ const REQUIRED_MATTER_FIELDS = [
   ["court", "string"],
   ["claims", "string"],
   ["status", "string"],
+  ["lifecycle", "string"],
+  ["proceeding", "string"],
+  ["phase", "string"],
   ["filed", "string"],
   ["judge", "string"],
   ["cluster", "number"],
@@ -68,6 +77,10 @@ const REQUIRED_MATTER_FIELDS = [
   ["damages", "string"],
   ["risk", "string"],
 ];
+const LIFECYCLE_SET = new Set(MATTER_LIFECYCLES);
+const PROCEEDING_SET = new Set(MATTER_PROCEEDINGS);
+const PHASE_SET = new Set(MATTER_PHASES);
+const TERMINAL_LIFECYCLES = new Set(["settled", "dismissed", "abandoned", "closed"]);
 
 const seenMatterNumbers = new Set();
 const referencedDocPaths = new Set();
@@ -96,6 +109,40 @@ for (const m of cases) {
     } else if (typeof m[field] !== type) {
       fail(`${tag}: field "${field}" should be ${type}, got ${typeof m[field]}`);
     }
+  }
+
+  if (typeof m.lifecycle === "string" && !LIFECYCLE_SET.has(m.lifecycle)) {
+    fail(`${tag}: lifecycle "${m.lifecycle}" must be one of ${MATTER_LIFECYCLES.join(", ")}`);
+  } else if (LIFECYCLE_SET.has(m.lifecycle)) {
+    const expectedArchived = archivedFromLifecycle(m.lifecycle);
+    if ("archived" in m && Boolean(m.archived) !== expectedArchived) {
+      fail(
+        `${tag}: archived=${Boolean(m.archived)} conflicts with lifecycle="${m.lifecycle}" ` +
+          `(expected archived=${expectedArchived})`,
+      );
+    }
+  }
+
+  if (typeof m.proceeding === "string" && !PROCEEDING_SET.has(m.proceeding)) {
+    fail(`${tag}: proceeding "${m.proceeding}" must be one of ${MATTER_PROCEEDINGS.join(", ")}`);
+  }
+  if (typeof m.phase === "string" && !PHASE_SET.has(m.phase)) {
+    fail(`${tag}: phase "${m.phase}" must be one of ${MATTER_PHASES.join(", ")}`);
+  }
+  if (PROCEEDING_SET.has(m.proceeding) && PHASE_SET.has(m.phase) && !isPhaseAllowed(m.proceeding, m.phase)) {
+    fail(`${tag}: phase "${m.phase}" is not allowed for proceeding "${m.proceeding}"`);
+  }
+  if (TERMINAL_LIFECYCLES.has(m.lifecycle) && m.phase !== "terminal") {
+    fail(`${tag}: lifecycle "${m.lifecycle}" requires phase "terminal" (got "${m.phase}")`);
+  }
+  if (m.lifecycle === "pre_filing" && m.phase !== "pre_filing") {
+    fail(`${tag}: lifecycle "pre_filing" requires phase "pre_filing" (got "${m.phase}")`);
+  }
+  if (m.lifecycle === "active" && m.phase === "terminal") {
+    fail(`${tag}: lifecycle "active" cannot use phase "terminal"`);
+  }
+  if (m.lifecycle === "active" && m.phase === "pre_filing") {
+    fail(`${tag}: lifecycle "active" should not use phase "pre_filing" (use lifecycle pre_filing)`);
   }
 
   if (m.causes !== undefined && !Array.isArray(m.causes)) {

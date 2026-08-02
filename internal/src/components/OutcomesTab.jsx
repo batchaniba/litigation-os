@@ -3,6 +3,7 @@ import { GOLD } from "../constants";
 import { useTheme } from "../ThemeContext";
 import { cases } from "../data/matters";
 import { outcomes } from "../data/outcomes";
+import { isLiveLifecycle } from "../utils/matterLifecycle";
 
 const fmt = (n) => "$" + n.toLocaleString();
 
@@ -29,7 +30,7 @@ const demandDeadlineRange = earliestDeadline.getTime() === latestDeadline.getTim
   ? fmtDate(earliestDeadline)
   : `${fmtDate(earliestDeadline)} – ${fmtDate(latestDeadline)}`;
 const totalMatterCount = cases.length;
-const activeMatterCount = cases.filter(c => !c.archived).length;
+const activeMatterCount = cases.filter(c => isLiveLifecycle(c.lifecycle) || (!c.lifecycle && !c.archived)).length;
 
 function StatTile({ label, amount, prefix = "", color, sub, confidential = false, theme, href, linkLabel }) {
   const Tag = href ? "a" : "div";

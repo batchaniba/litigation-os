@@ -2,11 +2,12 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { cases } from "../data/matters";
 import { GOLD, BORDER_BLUE } from "../constants";
-import { StatusBadge, ClusterBadge, TypeBadge, ArchiveBadge } from "./Badges";
+import { StatusBadge, ClusterBadge, TypeBadge, ArchiveBadge, ProceedingBadge, PhaseBadge } from "./Badges";
 import { ServiceTracker } from "./ServiceTracker";
 import { useTheme } from "../ThemeContext";
 import { useMatter } from "../hooks/useMatter";
 import { formatMatterPath } from "../utils/formatters";
+import { isArchivedMatter } from "../utils/matterLifecycle";
 import { SavedViews } from "./matters/SavedViews";
 
 const MatterCard = ({ matter: summary, isOpen, onToggle }) => {
@@ -14,24 +15,28 @@ const MatterCard = ({ matter: summary, isOpen, onToggle }) => {
   const { matter: full, status } = useMatter(isOpen ? summary.number : null);
   const c = full ?? summary;
   const proseLoading = isOpen && status === "loading";
+  const showSettled = c.lifecycle === "settled" || c.status?.startsWith("SETTLED");
+  const showDismissed = !showSettled && (c.lifecycle === "dismissed" || c.badge === "DISMISSED");
+  const showAbandoned = !showSettled && !showDismissed && (c.lifecycle === "abandoned" || c.badge === "ABANDONED");
+  const showPending = !showSettled && (c.lifecycle === "pre_filing" || c.badge === "PENDING");
   return (
     <div style={{ position: "relative", background: theme.cardBg, borderRadius: 10, border: isOpen ? `1px solid ${GOLD}40` : `1px solid ${theme.cardBorder}`, overflow: "hidden", transition: "border-color 0.3s" }}>
-      {c.status && c.status.startsWith("SETTLED") && (
+      {showSettled && (
         <div aria-label="Settled" style={{ position: "absolute", top: 14, right: -28, width: 110, background: "#16a34a", color: "#fff", fontSize: 10, fontFamily: "'DM Sans', sans-serif", fontWeight: 800, letterSpacing: 2, textTransform: "uppercase", textAlign: "center", padding: "5px 0", transform: "rotate(45deg)", boxShadow: "0 2px 8px rgba(0,0,0,0.35)", pointerEvents: "none", zIndex: 10 }}>SETTLED</div>
       )}
       {c.badge === "DEFAULT" && (
         <div aria-label="Default" style={{ position: "absolute", top: 14, right: -28, width: 110, background: "#16a34a", color: "#fff", fontSize: 10, fontFamily: "'DM Sans', sans-serif", fontWeight: 800, letterSpacing: 2, textTransform: "uppercase", textAlign: "center", padding: "5px 0", transform: "rotate(45deg)", boxShadow: "0 2px 8px rgba(0,0,0,0.35)", pointerEvents: "none", zIndex: 10 }}>DEFAULT</div>
       )}
-      {c.badge === "DISMISSED" && (
+      {showDismissed && (
         <div aria-label="Dismissed" style={{ position: "absolute", top: 14, right: -28, width: 110, background: "#dc2626", color: "#fff", fontSize: 10, fontFamily: "'DM Sans', sans-serif", fontWeight: 800, letterSpacing: 2, textTransform: "uppercase", textAlign: "center", padding: "5px 0", transform: "rotate(45deg)", boxShadow: "0 2px 8px rgba(0,0,0,0.35)", pointerEvents: "none", zIndex: 10 }}>DISMISSED</div>
       )}
-      {c.badge === "ABANDONED" && (
+      {showAbandoned && (
         <div aria-label="Abandoned" style={{ position: "absolute", top: 14, right: -28, width: 110, background: "#FFFFFF", color: "#1a1a1a", border: "1px solid #00000022", fontSize: 10, fontFamily: "'DM Sans', sans-serif", fontWeight: 800, letterSpacing: 2, textTransform: "uppercase", textAlign: "center", padding: "5px 0", transform: "rotate(45deg)", boxShadow: "0 2px 8px rgba(0,0,0,0.35)", pointerEvents: "none", zIndex: 10 }}>ABANDONED</div>
       )}
       {c.badge === "DENIED" && (
         <div aria-label="Denied" style={{ position: "absolute", top: 14, right: -28, width: 110, background: "#6b7280", color: "#fff", fontSize: 10, fontFamily: "'DM Sans', sans-serif", fontWeight: 800, letterSpacing: 2, textTransform: "uppercase", textAlign: "center", padding: "5px 0", transform: "rotate(45deg)", boxShadow: "0 2px 8px rgba(0,0,0,0.35)", pointerEvents: "none", zIndex: 10 }}>DENIED</div>
       )}
-      {c.badge === "PENDING" && (
+      {showPending && (
         <div aria-label="Pending" style={{ position: "absolute", top: 14, right: -28, width: 110, background: "#eab308", color: "#1a1a1a", fontSize: 10, fontFamily: "'DM Sans', sans-serif", fontWeight: 800, letterSpacing: 2, textTransform: "uppercase", textAlign: "center", padding: "5px 0", transform: "rotate(45deg)", boxShadow: "0 2px 8px rgba(0,0,0,0.35)", pointerEvents: "none", zIndex: 10 }}>PENDING</div>
       )}
       {c.badge === "TIMELY" && (
@@ -56,12 +61,14 @@ const MatterCard = ({ matter: summary, isOpen, onToggle }) => {
           <div style={{ display: "flex", gap: 8, alignItems: "center", flexWrap: "wrap" }}>
             <ClusterBadge cluster={c.cluster} />
             <TypeBadge type={c.type} />
-            <StatusBadge status={c.status} />
-            {c.archived && <ArchiveBadge />}
+            <ProceedingBadge proceeding={c.proceeding} />
+            <PhaseBadge phase={c.phase} />
+            <StatusBadge status={c.status} lifecycle={c.lifecycle} />
+            {isArchivedMatter(c) && <ArchiveBadge />}
           </div>
           {c.note && (
             <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 600, fontStyle: "italic", color: theme.secondaryText, whiteSpace: "nowrap" }}>
-              {c.badge === "PENDING" ? "⏳" : "📌"} {c.note}
+              {showPending ? "⏳" : "📌"} {c.note}
             </div>
           )}
         </div>
@@ -144,7 +151,7 @@ const MatterCard = ({ matter: summary, isOpen, onToggle }) => {
 export const MattersTab = ({ filteredCases, statusFilter, setStatusFilter, clusterFilter, setClusterFilter, typeFilter, setTypeFilter, searchQuery, setSearchQuery, sortKey, setSortKey }) => {
   const theme = useTheme();
   const [expandedMatter, setExpandedMatter] = useState(null);
-  const activeCount = cases.filter(c => !c.archived).length;
+  const activeCount = cases.filter(c => !isArchivedMatter(c)).length;
 
   return (
     <div>

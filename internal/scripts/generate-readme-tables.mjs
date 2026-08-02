@@ -20,6 +20,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { loadMatters } from "./load-matters.mjs";
+import { lifecycleLabel, readmeBucket } from "./matter-lifecycle.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(__dirname, "..", "..");
@@ -84,23 +85,19 @@ function truncate(text, max) {
 
 function shortStatus(matter, { closed = false } = {}) {
   const raw = (matter.status || "").replace(/\s+/g, " ").trim();
-  const badge = (matter.badge || "").trim();
-  if (closed && badge) {
+  if (closed && matter.lifecycle && matter.lifecycle !== "closed") {
+    const label = lifecycleLabel(matter.lifecycle).toUpperCase();
     const upper = raw.toUpperCase();
-    if (upper.startsWith(badge.toUpperCase()) || upper.startsWith("NOT PURSUING") || upper.startsWith("ABANDONED")) {
+    if (upper.startsWith(label) || upper.startsWith("NOT PURSUING") || upper.startsWith("ABANDONED") || upper.startsWith("DISMISSED")) {
       return escapeCell(truncate(raw, 180));
     }
-    return escapeCell(`**${badge}** — ${truncate(raw, 150)}`);
+    return escapeCell(`**${label}** — ${truncate(raw, 150)}`);
   }
   return escapeCell(truncate(raw, 180));
 }
 
 function bucket(matter) {
-  if (/^SETTLED\b/i.test(matter.status || "") || /^SETTLED$/i.test(matter.badge || "")) {
-    return "settled";
-  }
-  if (matter.archived) return "closed";
-  return "active";
+  return readmeBucket(matter.lifecycle);
 }
 
 function parsePortfolioDate(dateStr) {
@@ -223,11 +220,14 @@ const damagesTable = [
   `| **Portfolio Total (pre-deduplication)** | | **${money(cons)}** | **${money(mod)}** | **${money(agg)}** |`,
 ].join("\n");
 
-const abandoned = closed.filter((m) => /ABANDONED/i.test(m.badge || "") || /ABANDONED|NOT PURSUING/i.test(m.status || ""));
+const abandoned = closed.filter((m) => m.lifecycle === "abandoned");
+const dismissed = closed.filter((m) => m.lifecycle === "dismissed");
+const otherClosed = closed.filter((m) => m.lifecycle === "closed");
 const closedCountNote =
-  `*Of the ${closed.length} dismissed/closed/abandoned matters, ${abandoned.length} carry an ABANDONED / NOT PURSUING disposition ` +
-  `(voluntarily withdrawn, including for safety-driven reasons). See [All Matters](#all-matters) below for the full disposition table. ` +
-  `Matter 30 remains pending/pre-complaint in the Active table when its record is not archived.*`;
+  `*Of the ${closed.length} dismissed/closed/abandoned matters: ${abandoned.length} abandoned, ` +
+  `${dismissed.length} dismissed, ${otherClosed.length} otherwise closed ` +
+  `(structured \`lifecycle\` on each matter JSON). See [All Matters](#all-matters) below for the full disposition table. ` +
+  `Pre-filing matters stay in the Active table.*`;
 
 let readme = fs.readFileSync(README, "utf8");
 const replacements = {

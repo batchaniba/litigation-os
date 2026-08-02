@@ -5,6 +5,9 @@
   "court": "San Joaquin Sup. Ct.",
   "claims": "Fraudulent Concealment, Intentional Misrepresentation, Negligent Misrepresentation, Breach of Contract, UCL §17200, Rescission & Restitution, Declaratory Relief",
   "status": "Active — Default ENTERED against Diamond Truck Sales, Inc.; default prove-up hearing requested at/after CMC; Alpine Truck Sales, Inc. served July 1, 2026, response deadline July 31, 2026, no appearance; Alpine Request for Entry of Default/Court Judgment and Declaration pre-drafted, execution date August 1, 2026, ready to file once Alpine's deadline lapses; CM-110 Case Management Statement filed July 20, 2026; CMC 08/12/2026, 8:30 AM, Dept. 11B",
+  "lifecycle": "active",
+  "proceeding": "state_civil",
+  "phase": "default",
   "badge": "DEFAULT",
   "filed": "February 13, 2026",
   "judge": "Hon. Robert T. Waters",
@@ -195,5 +198,6 @@
       "label": "Bank of Stockton — DFPI Regulated Entity Listing (Jul. 29, 2026) — confirms Bank of Stockton as DFPI License No. 45, HQ at 301 East Miner Avenue, Stockton, CA 95202; supporting context only, not a substitute for the central-locations registry above",
       "path": "/documents/matter-12/Bank of Stockton - DFPI Regulated Entity Listing (Jul 29 2026).pdf"
     }
-  ]
+  ],
+  "archived": false
 }

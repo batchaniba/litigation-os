@@ -4,6 +4,7 @@ import { damages_table, matter_damages } from "../data/damages";
 import { GOLD } from "../constants";
 import { useTheme } from "../ThemeContext";
 import { formatCurrency } from "../utils/formatters";
+import { isArchivedMatter } from "../utils/matterLifecycle";
 
 const fmt = (n) => formatCurrency(n);
 const VIEWS = ["conservative", "moderate", "aggressive"];
@@ -22,7 +23,7 @@ const MAX_PORTFOLIO_AGGRESSIVE = damages_table.reduce(
   (m, x) => Math.max(m, x.aggressive), 0
 );
 
-const ARCHIVED_MATTER_NUMS = new Set(cases.filter(c => c.archived).map(c => c.number));
+const ARCHIVED_MATTER_NUMS = new Set(cases.filter(c => isArchivedMatter(c)).map(c => c.number));
 const ACTIVE_MATTER_DAMAGES = matter_damages.filter(m => !ARCHIVED_MATTER_NUMS.has(m.number));
 
 const MATTER_TOTALS = ACTIVE_MATTER_DAMAGES.reduce(

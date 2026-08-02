@@ -29,7 +29,7 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 | Last Updated | August 1, 2026 |
 
 <!-- PORTFOLIO:CLOSED_COUNT_NOTE:START -->
-*Of the 16 dismissed/closed/abandoned matters, 7 carry an ABANDONED / NOT PURSUING disposition (voluntarily withdrawn, including for safety-driven reasons). See [All Matters](#all-matters) below for the full disposition table. Matter 30 remains pending/pre-complaint in the Active table when its record is not archived.*
+*Of the 16 dismissed/closed/abandoned matters: 7 abandoned, 7 dismissed, 2 otherwise closed (structured `lifecycle` on each matter JSON). See [All Matters](#all-matters) below for the full disposition table. Pre-filing matters stay in the Active table.*
 <!-- PORTFOLIO:CLOSED_COUNT_NOTE:END -->
 
 ---
@@ -162,8 +162,8 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | 5 | Newanforbi v. Palacios et al. | STK-CV-UF-2026-0001032 | San Joaquin Sup. Ct. | DISMISSED — San Joaquin Superior Court (Hon. George J. |
 | 6 | Newanforbi v. HOPE et al. | 2:26-cv-00195-TLN-AC | USDC E.D. Cal. | DISMISSED WITHOUT PREJUDICE — Notice of Voluntary Dismissal filed May 21, 2026; Minute Order entered June 1, 2026 (FRCP 41(a)(1)(A)(i); case closed; refiling preserved |
 | 8 | Newanforbi v. Candelaria, et al. | 26WM000135 | Sacramento Sup. Ct. | NOT PURSUING — fee-payment deadline (~Jul. 27, 2026) lapsed without payment or a revised FW-001 |
-| 9 | Newanforbi v. Macomber | 26WM000028 | Sacramento Sup. Ct. | **DENIED** — Closed — Demurrer Hearing 05/29/2026, Dept. 13A |
-| 10 | Newanforbi v. Macomber | C2602632 | Santa Clara Sup. Ct. | **DENIED** — CLOSED — Order Denying Petition Without Prejudice (April 27, 2026) |
+| 9 | Newanforbi v. Macomber | 26WM000028 | Sacramento Sup. Ct. | Closed — Demurrer Hearing 05/29/2026, Dept. 13A |
+| 10 | Newanforbi v. Macomber | C2602632 | Santa Clara Sup. Ct. | CLOSED — Order Denying Petition Without Prejudice (April 27, 2026) |
 | 11 | Newanforbi v. Macomber | TBD (USDC E.D. Cal.) | USDC E.D. Cal. | DISMISSED WITH PREJUDICE — Notice of Voluntary Dismissal filed June 29, 2026 (FRCP 41(a)(1)(A)(i)); self-executing |
 | 13 | Newanforbi v. Urrea et al. | 2:26-cv-00190-DC-SCR | USDC E.D. Cal. | DISMISSED WITH PREJUDICE — Notice of Voluntary Dismissal filed June 29, 2026 (FRCP 41(a)(1)(A)(i)); self-executing |
 | 14 | Newanforbi v. Urrea et al. | TBD (San Joaquin Sup. Ct.) | San Joaquin Sup. Ct. | NOT PURSUING — Voluntarily Dismissed |
@@ -307,7 +307,10 @@ Plaintiff is representing himself pro se across all 31 matters. The figures belo
 - **Deployment:** Vercel (primary) + GitHub Pages (mirror)
 - **Fonts:** Cormorant Garamond (headings), DM Sans (UI)
 - **Styling:** `internal/src/styles/app.css` + component styles
-- **Matter data:** one JSON file per matter under `internal/src/data/matters/` (shell uses `summaries.json`; full records lazy-load)
+- **Matter data:** one JSON file per matter under `internal/src/data/matters/` (shell uses `summaries.json`; full records lazy-load). Structured fields (prefer over parsing prose `status`):
+  - `lifecycle` — disposition: `active` | `pre_filing` | `settled` | `dismissed` | `abandoned` | `closed`
+  - `proceeding` — track: `state_civil` | `federal_civil` | `mandate` | `habeas`
+  - `phase` — current stage on that track (e.g. `demurrer`, `fr_pending`, `under_submission`, `responsive_deadline`; `terminal` when disposed)
 - **Timeline:** `internal/src/data/timeline.json` (full log) + generated `upcoming.json` for the shell deadline clock
 - **Documents:** `internal/public/documents/` (PDFs via Git LFS; shared exhibits under `_shared/`, blank Judicial Council templates under `_form-library/`)
 

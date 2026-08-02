@@ -4,6 +4,7 @@ import { matter_damages } from "../data/damages";
 import upcoming from "../data/upcoming.json";
 import type { MatterSummary, TimelineEvent } from "../types/portfolio";
 import { parseEventDatePDT } from "../utils/dateUtils";
+import { isArchivedMatter } from "../utils/matterLifecycle";
 
 export type MatterSortKey = "number" | "filed" | "deadline" | "exposure" | "court" | "status";
 export interface MatterFilterState { status: string; cluster: number | null; type: string | null; query: string; sort: MatterSortKey }
@@ -30,8 +31,8 @@ export const useCaseFilters = (initial: Partial<MatterFilterState> = {}) => {
   const [sortKey, setSortKey] = useState<MatterSortKey>(initial.sort ?? "number");
 
   const filteredCases = useMemo(() => (cases as MatterSummary[]).filter((matter) => {
-    if (statusFilter === "active" && matter.archived) return false;
-    if (statusFilter === "archived" && !matter.archived) return false;
+    if (statusFilter === "active" && isArchivedMatter(matter)) return false;
+    if (statusFilter === "archived" && !isArchivedMatter(matter)) return false;
     if (statusFilter === "upcoming" && !nextDeadlineByMatter.has(matter.number)) return false;
     if (clusterFilter && matter.cluster !== clusterFilter) return false;
     if (typeFilter && matter.type !== typeFilter) return false;
