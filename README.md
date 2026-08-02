@@ -310,13 +310,12 @@ Plaintiff is representing himself pro se across all 31 matters. The figures belo
   - `proceeding` — track: `state_civil` | `federal_civil` | `mandate` | `habeas`
   - `phase` — current stage on that track (e.g. `demurrer`, `fr_pending`, `under_submission`, `responsive_deadline`; `terminal` when disposed)
 - **Timeline:** `internal/src/data/timeline.json` (full log) + generated `upcoming.json` for the shell deadline clock
-- **Documents:** `internal/public/documents/` (PDFs via Git LFS; shared exhibits under `_shared/`, blank Judicial Council templates under `_form-library/`)
+- **Documents:** `internal/public/documents/` (shared exhibits under `_shared/`, blank Judicial Council templates under `_form-library/`)
 
 ## Local Development
 
 ```bash
 npm install
-git lfs pull   # if document PDFs show as pointer files
 npm run dev
 ```
 
@@ -341,9 +340,9 @@ npm run preview # preview the production build locally
 
 ## Deployment
 
-**Vercel** builds and deploys automatically on every push to `main` — no extra config, served from the domain root. Enable Git LFS for the Vercel project so document PDFs are present at build time.
+**Vercel** builds and deploys automatically on every push to `main` — no extra config, served from the domain root.
 
-**GitHub Pages** deploys via `.github/workflows/deploy-gh-pages.yml` on every push to `main` (typecheck + validate + build; LFS checkout enabled). Because GitHub Pages serves this repo as a project site under a subpath (`/interactive-litigation-portfolio/`) rather than a domain root, `vite.config.js` conditionally sets `base` from a `GITHUB_PAGES` env var the workflow sets at build time — Vercel builds leave it unset and get `base: '/'` as before. One-time setup: in the repo's **Settings → Pages**, set **Source** to **GitHub Actions**.
+**GitHub Pages** deploys via `.github/workflows/deploy-gh-pages.yml` on every push to `main` (typecheck + validate + build). Because GitHub Pages serves this repo as a project site under a subpath (`/interactive-litigation-portfolio/`) rather than a domain root, `vite.config.js` conditionally sets `base` from a `GITHUB_PAGES` env var the workflow sets at build time — Vercel builds leave it unset and get `base: '/'` as before. One-time setup: in the repo's **Settings → Pages**, set **Source** to **GitHub Actions**.
 
 ---
 
