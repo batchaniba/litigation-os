@@ -1,8 +1,16 @@
+@font-face {
+  font-family: "Cloister Black";
+  src: url("../assets/fonts/CloisterBlack.woff2") format("woff2");
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   font-family: "Cormorant Garamond", Georgia, serif;
   color-scheme: dark;
   --font-sans: "DM Sans", sans-serif;
-  --font-blackletter: "Pirata One", "Old English Text MT", "Cloister Black", serif;
+  --font-blackletter: "Cloister Black", "Old English Text MT", "CloisterBlack", serif;
   --gold: #c8a84b;
   --page-max: 1200px;
   --radius-card: 10px;
@@ -29,6 +37,7 @@ a { color: inherit; }
 .legacy-brand-logo { height: 220px; width: auto; object-fit: contain; flex-shrink: 0; }
 .legacy-versus {
   display: none;
+  align-items: flex-end;
   color: var(--gold);
   font-family: var(--font-blackletter);
   font-size: clamp(4.75rem, 20vw, 6.75rem);
@@ -38,6 +47,14 @@ a { color: inherit; }
   text-align: center;
   user-select: none;
   pointer-events: none;
+}
+.legacy-versus-letter { display: inline-block; line-height: 0.8; }
+.legacy-versus-dot {
+  display: inline-block;
+  margin-left: 0.02em;
+  font-size: 0.42em;
+  line-height: 1;
+  transform: translateY(-0.15em);
 }
 .legacy-header-main { flex: 1; display: flex; align-items: flex-end; justify-content: space-between; padding-left: 40px; min-width: 0; gap: 24px; }
 .legacy-westlaw { min-width: 0; }
@@ -191,12 +208,12 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
     justify-self: start;
   }
   .legacy-versus {
-    display: block;
+    display: inline-flex;
     grid-column: 2;
     grid-row: 1;
     align-self: center;
     justify-self: center;
-    transform: translateY(2px);
+    transform: translate(-14px, 2px);
   }
   .legacy-header-main {
     display: contents;
@@ -266,7 +283,7 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
 
 @media (max-width: 520px) {
   .legacy-brand-logo { height: 96px; max-width: min(34vw, 128px); }
-  .legacy-versus { font-size: clamp(4rem, 24vw, 5.5rem); }
+  .legacy-versus { font-size: clamp(4rem, 24vw, 5.5rem); transform: translate(-18px, 2px); }
   .legacy-header-inner { gap: 6px 8px; }
   .legacy-opposing-counsel { gap: 6px; }
   .firm-link .firm-logo { height: 36px !important; max-width: min(48vw, 140px); }

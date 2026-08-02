@@ -43,7 +43,10 @@ export function PortfolioHeader({
           alt="Newanforbi — In Propria Persona"
         />
 
-        <span className="legacy-versus" aria-hidden="true">V.</span>
+        <span className="legacy-versus" aria-hidden="true">
+          <span className="legacy-versus-letter">V</span>
+          <span className="legacy-versus-dot">.</span>
+        </span>
         <span className="sr-only">versus</span>
 
         <div className="legacy-header-main">
