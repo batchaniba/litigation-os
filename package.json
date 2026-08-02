@@ -1,22 +1,13 @@
 {
-  "name": "interactive-litigation-portfolio",
+  "name": "equity2bitcoin",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
-    "typecheck": "tsc --noEmit",
-    "sync:summaries": "node internal/scripts/sync-matter-summaries.mjs",
-    "sync:upcoming": "node internal/scripts/sync-upcoming.mjs",
-    "generate:readme": "node internal/scripts/generate-readme-tables.mjs",
-    "validate": "node internal/scripts/sync-matter-summaries.mjs --check && node internal/scripts/sync-upcoming.mjs --check && node internal/scripts/generate-readme-tables.mjs --check && node internal/scripts/validate-portfolio.mjs",
-    "scaffold:matter": "node internal/scripts/scaffold-matter.mjs",
-    "prebuild": "npm run sync:summaries && npm run sync:upcoming",
-    "index:build": "python3 internal/scripts/build-document-index.py",
-    "index:search": "python3 internal/scripts/search-documents.py",
-    "extract:matter1": "node internal/scripts/extract-matter-pdfs.mjs"
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "react": "^18.3.1",
