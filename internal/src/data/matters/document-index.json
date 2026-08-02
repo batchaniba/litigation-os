@@ -851,12 +851,12 @@
   },
   {
     "matter": 12,
-    "label": "Alpine Default Judgment Packet — corrected per clerk rejection / separate CIV-100 as to Alpine only (CIV-100; Declaration ISO executed Aug. 1, 2026; POS-010; Exhibits 1–10; JUD-100; joint-and-several with Diamond); mailed July 31, 2026 with Diamond packet (USPS tracking 9505 5114 6005 6212 9832 68); filename notes pending valid re-service — confirm clerk is not still disputing Alpine POS; source: commit/64305d0",
-    "path": "/documents/matter-12/1094 Alpine Default Judgment Packet (Corrected per Clerk Rejection -- Pending Valid Re-Service, Execution Date Aug 3 2026).pdf"
+    "label": "Alpine Default Judgment Packet — corrected filing-ready packet as to Alpine only (POS-010; CIV-100 with item 2 monetary fields completed and costs waived on item 7f; Declaration ISO executed August 3, 2026; Exhibits 1–10; JUD-100; joint-and-several with Diamond; signed). Alpine personally served July 1, 2026 (Levying Officer File No. 2026002577); response deadline July 31, 2026.",
+    "path": "/documents/matter-12/1094 Alpine Default Judgment Packet (Corrected per Clerk Rejection, Ready to File Aug 3 2026).pdf"
   },
   {
     "matter": 12,
-    "label": "Diamond Default Judgment Packet — corrected per clerk rejection / separate CIV-100 as to Diamond only (CIV-100 requesting court judgment; Declaration ISO; MC-010; Exhibits 1–10; JUD-100); mailed July 31, 2026 with Alpine packet (USPS tracking 9505 5114 6005 6212 9832 68); source: github.com/newanforbi/interactive-litigation-portfolio/commit/64305d0",
+    "label": "Diamond Default Judgment Packet — corrected filing-ready packet as to Diamond only (POS-010; CIV-100 with item 2 monetary fields completed and costs waived on item 7f; Declaration ISO executed August 3, 2026; Exhibits 1–10; JUD-100; signed). Companion-document list no longer claims MC-010 or a separate nonmilitary declaration.",
     "path": "/documents/matter-12/1094 Diamond Default Judgment Packet (Corrected per Clerk Rejection, Ready to File Aug 3 2026).pdf"
   },
   {
