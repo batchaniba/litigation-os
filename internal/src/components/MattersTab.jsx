@@ -178,14 +178,17 @@ export const MattersTab = ({ filteredCases, statusFilter, setStatusFilter, clust
       {/* Filters */}
       <div className="matters-filters">
         <div className="matters-filters-toolbar">
-          <input
-            value={searchQuery}
-            onChange={e => setSearchQuery(e.target.value)}
-            placeholder="Search matters…"
-            aria-label="Search matters by caption, case number, or keywords"
-            className="matters-search-input"
-            style={{ border: `1px solid ${theme.cardBorder}`, background: theme.inputBg, color: theme.inputColor }}
-          />
+          <div className="matters-search-row">
+            <input
+              value={searchQuery}
+              onChange={e => setSearchQuery(e.target.value)}
+              placeholder="Search matters…"
+              aria-label="Search matters by caption, case number, or keywords"
+              className="matters-search-input"
+              style={{ border: `1px solid ${theme.cardBorder}`, background: theme.inputBg, color: theme.inputColor }}
+            />
+            <span className="matters-search-endcap" aria-hidden="true" />
+          </div>
           <button
             type="button"
             className="matters-filters-toggle"
