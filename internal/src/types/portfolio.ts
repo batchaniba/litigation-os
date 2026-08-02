@@ -1,6 +1,15 @@
 export type MatterType = "Federal" | "State";
 export type MatterVisibility = "active" | "archived";
 
+/** Structured docket posture — prefer this over parsing the prose `status` field. */
+export type MatterLifecycle =
+  | "active"
+  | "pre_filing"
+  | "settled"
+  | "dismissed"
+  | "abandoned"
+  | "closed";
+
 export interface PortfolioDocument {
   label: string;
   path: string;
@@ -25,6 +34,7 @@ export interface MatterSummary {
   court: string;
   claims: string;
   status: string;
+  lifecycle: MatterLifecycle;
   filed: string;
   judge: string;
   cluster: number;
@@ -34,6 +44,7 @@ export interface MatterSummary {
   evidenceCount: number;
   documentCount: number;
   serviceTracking?: ServiceRecord[];
+  /** Derived from lifecycle (terminal dispositions). Prefer `lifecycle` / helpers. */
   archived?: boolean;
   badge?: string;
   note?: string;

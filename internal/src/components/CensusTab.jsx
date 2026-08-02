@@ -4,6 +4,7 @@ import { GOLD } from "../constants";
 import { useTheme } from "../ThemeContext";
 import { getPDTMidnight } from "../utils/dateUtils";
 import { formatCurrency } from "../utils/formatters";
+import { isArchivedMatter, isLiveLifecycle, lifecycleLabel } from "../utils/matterLifecycle";
 import { HorizontalBarChart, VerticalBarChart, RangeChart } from "./charts/PortfolioCharts";
 import { CLUSTERS } from "./DashboardTab";
 
@@ -12,21 +13,21 @@ const MONO = "'Courier New', ui-monospace, monospace";
 const SANS = "'DM Sans', sans-serif";
 const GREEN = "#34D399";
 
-// ---- Status badge → label, reusing the exact ribbon labels MattersTab uses ----
+// Procedural overlay badges (not lifecycle) — keep census chart compatible with Matters ribbons.
 const BADGE_LABEL = {
   DEFAULT: "Default judgment sought",
-  DISMISSED: "Dismissed",
-  ABANDONED: "Abandoned",
   DENIED: "Denied",
-  PENDING: "Pending",
   TIMELY: "Timely",
   SERVED: "Served",
 };
-// Settlement isn't tracked as a `badge` field — matters.js marks it with a
-// "SETTLED" prefix on `status` instead (the same signal MattersTab's ribbon uses).
 const statusLabelOf = (c) => {
-  if (c.status?.startsWith("SETTLED")) return "Settled";
-  if (c.badge) return BADGE_LABEL[c.badge] || c.badge;
+  if (c.lifecycle === "settled" || c.status?.startsWith("SETTLED")) return "Settled";
+  if (c.lifecycle === "abandoned") return "Abandoned";
+  if (c.lifecycle === "dismissed") return "Dismissed";
+  if (c.lifecycle === "closed") return c.badge === "DENIED" ? "Denied" : "Closed";
+  if (c.lifecycle === "pre_filing" || c.badge === "PENDING") return "Pending";
+  if (c.badge && BADGE_LABEL[c.badge]) return BADGE_LABEL[c.badge];
+  if (c.lifecycle) return lifecycleLabel(c.lifecycle);
   return "Live";
 };
 
@@ -42,8 +43,8 @@ const monthYearOf = (dateStr) => {
 
 // ---- Live-computed aggregates (module scope — same pattern as DashboardTab) ----
 const totalMatters = PORTFOLIO.cases.length;
-const liveMatters = PORTFOLIO.cases.filter(c => !c.archived).length;
-const archivedMatters = totalMatters - liveMatters;
+const liveMatters = PORTFOLIO.cases.filter(c => isLiveLifecycle(c.lifecycle) || (!c.lifecycle && !c.archived)).length;
+const archivedMatters = PORTFOLIO.cases.filter(c => isArchivedMatter(c)).length;
 // Strip "TBD — anticipated X" placeholder text (Matter 30) down to the actual
 // court name, so an anticipated filing doesn't inflate the distinct-court count.
 const courtName = (c) => c.replace(/^TBD\s*—\s*anticipated\s*/i, "").trim();
@@ -63,13 +64,16 @@ const totalCauses = PORTFOLIO.cases.reduce((s, c) => s + (c.causes?.length || 0)
 // back through the cluster palette below so every bar still gets a distinct hue.
 const STATUS_COLOR = {
   "Settled": GREEN,
+  "Active": GREEN,
   "Served": "#0d9488",
   "Timely": "#0284c7",
   "Default judgment sought": "#16a34a",
   "Denied": "#6b7280",
+  "Closed": "#6b7280",
   "Dismissed": "#dc2626",
   "Abandoned": "#94A3B8",
   "Pending": "#eab308",
+  "Pre-filing": "#eab308",
   "Live": GOLD,
 };
 const statusCounts = {};

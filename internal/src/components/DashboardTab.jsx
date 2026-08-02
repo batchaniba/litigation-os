@@ -4,19 +4,20 @@ import { jurisdictions } from "../data/portfolioMeta";
 import { GOLD, BORDER_BLUE } from "../constants";
 import { useTheme } from "../ThemeContext";
 import { formatCurrency } from "../utils/formatters";
+import { isArchivedMatter, isLiveLifecycle } from "../utils/matterLifecycle";
 
 const FILED_GREEN = "#34D399";
 const UPCOMING_AMBER = "#FBBF24";
 
 const totalMatters = cases.length;
-const activeMatters = cases.filter(c => !c.archived).length;
+const activeMatters = cases.filter(c => isLiveLifecycle(c.lifecycle) || (!c.lifecycle && !c.archived)).length;
 const clusterCounts = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 };
 const clusterNumberLists = { 1: [], 2: [], 3: [], 4: [], 5: [] };
 const courtCounts = {};
 let federalCount = 0;
 let stateCount = 0;
 for (const c of cases) {
-  if (!c.archived) {
+  if (!isArchivedMatter(c)) {
     if (c.type === "Federal") federalCount++;
     else if (c.type === "State") stateCount++;
   }

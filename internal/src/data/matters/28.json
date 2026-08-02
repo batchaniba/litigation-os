@@ -5,6 +5,7 @@
   "court": "USDC N.D. Cal.",
   "claims": "42 U.S.C. §1983 (Monell + Individual Capacity); Bane Act (Cal. Civ. Code §52.1); Fraud / Negligent Misrepresentation; RICO (18 U.S.C. §1962(c)-(d))",
   "status": "Case Filed July 20, 2026 — Hon. Lisa J. Cisneros. Order filed July 23, 2026 required: (1) correct district IFP form by Aug. 13, 2026 — MOOTED July 24, 2026 by Plaintiff's direct payment of the $405 federal civil filing fee (Pay.gov, Case No. DCAN326CV007504); (2) the state court's demurrer decision by Aug. 13, 2026 for preclusion analysis — SATISFIED July 27, 2026, 17 days early, via Notice of Payment of Filing Fee and Filing of State Court Decision (Exs. A-C: signed Order, Tentative Ruling, and Minute Order from Matter 5). Motion for Protective Order DENIED WITHOUT PREJUDICE. Initial Case Management Conference set Oct. 22, 2026",
+  "lifecycle": "active",
   "filed": "Case Filed July 20, 2026 (complaint docketed July 21, 2026)",
   "judge": "Hon. Lisa J. Cisneros",
   "cluster": 2,
@@ -135,5 +136,6 @@
       "label": "Collateral Notes / Communications (Matter 5 discovery)",
       "path": "/documents/matter-28/HOPE Discovery (Matter 5)/Collateral_NotesComm_139199_pdf.pdf"
     }
-  ]
+  ],
+  "archived": false
 }

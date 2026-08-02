@@ -5,6 +5,7 @@
   "court": "Alameda Sup. Ct.",
   "claims": "False Imprisonment, Battery, Bane Act",
   "status": "STAYED — Stipulation for Stay filed Apr. 14, 2026; U-Visa Certification Motion briefed (Opp. June 5, 2026; Reply June 8, 2026) and heard June 18, 2026 at 2:30 p.m. (Dept. 518); no ruling on the motion has been reported since the hearing — follow up with the clerk's office to confirm whether an order has issued",
+  "lifecycle": "active",
   "filed": "February 4, 2026",
   "judge": "Hon. Marc Fickes",
   "cluster": 1,
@@ -93,5 +94,6 @@
       "label": "Notice of Change of Address (filed July 7, 2026)",
       "path": "/documents/matter-02/Notice of Change of Address (July 7, 2026).pdf"
     }
-  ]
+  ],
+  "archived": false
 }

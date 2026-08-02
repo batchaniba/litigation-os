@@ -5,6 +5,7 @@
   "court": "USDC E.D. Cal.",
   "claims": "42 USC 1983: 1A Retaliation, 14A Equal Protection, Due Process",
   "status": "Order filed July 24, 2026 (Mag. Peterson): Palacios's MTD (Doc 24) GRANTED — failed all four Ninth Circuit state-actor tests; court flagged a misquoted Rawson v. Recovery Innovations citation in Plaintiff's opposition and issued a Rule 11(b)(2) reminder. Derrick/Noguchi's MTQ/MTD (Doc 9) GRANTED IN PART (claims dismissed) / DENIED IN PART (quash denied as moot given their waiver of service). 1A retaliation and substantive due process claims DISMISSED as to all defendants; FAC DISMISSED WITH LEAVE TO AMEND within 14 days (by August 7, 2026) — if no amendment is filed, the action proceeds solely on the Equal Protection claim against Derrick. This is in apparent, unresolved tension with Plaintiff's July 22, 2026 Notice of Voluntary Dismissal, which purported to self-execute the dismissal of both Derrick and Noguchi two days before this order; the order does not address that filing.",
+  "lifecycle": "abandoned",
   "filed": "January 5, 2026",
   "judge": "Hon. Daniel J. Calabretta / Mag. Peterson",
   "cluster": 2,

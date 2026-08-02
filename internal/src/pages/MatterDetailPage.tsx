@@ -13,6 +13,7 @@ import { withBase } from "../utils/paths";
 import { groupDocuments } from "../utils/documentGroups";
 import { matterActivity } from "../utils/matterTimeline";
 import { downloadMatterSummary, matterMarkdown } from "../utils/exportMatter";
+import { isArchivedMatter } from "../utils/matterLifecycle";
 
 function DetailSection({ label, children }: { label: string; children: ReactNode }) {
   return <section className="detail-section"><div className="detail-label">{label}</div>{children}</section>;
@@ -55,8 +56,8 @@ export function MatterDetailPage() {
         <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginTop: 14 }}>
           <ClusterBadge cluster={matter.cluster} />
           <TypeBadge type={matter.type} />
-          <StatusBadge status={matter.status} />
-          {matter.archived && <ArchiveBadge />}
+          <StatusBadge status={matter.status} lifecycle={matter.lifecycle} />
+          {isArchivedMatter(matter) && <ArchiveBadge />}
         </div>
       </header>
 

@@ -14,6 +14,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { loadMatters, MATTERS_DIR } from "./load-matters.mjs";
+import { MATTER_LIFECYCLES, archivedFromLifecycle } from "./matter-lifecycle.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(__dirname, "..", "..");
@@ -58,6 +59,7 @@ const REQUIRED_MATTER_FIELDS = [
   ["court", "string"],
   ["claims", "string"],
   ["status", "string"],
+  ["lifecycle", "string"],
   ["filed", "string"],
   ["judge", "string"],
   ["cluster", "number"],
@@ -68,6 +70,7 @@ const REQUIRED_MATTER_FIELDS = [
   ["damages", "string"],
   ["risk", "string"],
 ];
+const LIFECYCLE_SET = new Set(MATTER_LIFECYCLES);
 
 const seenMatterNumbers = new Set();
 const referencedDocPaths = new Set();
@@ -95,6 +98,18 @@ for (const m of cases) {
       fail(`${tag}: missing required field "${field}"`);
     } else if (typeof m[field] !== type) {
       fail(`${tag}: field "${field}" should be ${type}, got ${typeof m[field]}`);
+    }
+  }
+
+  if (typeof m.lifecycle === "string" && !LIFECYCLE_SET.has(m.lifecycle)) {
+    fail(`${tag}: lifecycle "${m.lifecycle}" must be one of ${MATTER_LIFECYCLES.join(", ")}`);
+  } else if (LIFECYCLE_SET.has(m.lifecycle)) {
+    const expectedArchived = archivedFromLifecycle(m.lifecycle);
+    if ("archived" in m && Boolean(m.archived) !== expectedArchived) {
+      fail(
+        `${tag}: archived=${Boolean(m.archived)} conflicts with lifecycle="${m.lifecycle}" ` +
+          `(expected archived=${expectedArchived})`,
+      );
     }
   }
 
