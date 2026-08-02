@@ -1,3 +1,5 @@
+import { CALENDLY, isCalendlyConfigured } from "../config/site";
+
 export type LeadPayload = {
   source: "equity-iq" | "orientation-form";
   name?: string;
@@ -41,22 +43,26 @@ export async function submitLead(payload: LeadPayload): Promise<{ ok: boolean; m
     return { ok: res.ok, mode: "webhook" };
   }
 
-  // Local-ready fallback so the site is usable before Zapier/HubSpot is wired.
   console.info("[Equity2Bitcoin lead]", payload);
   return { ok: true, mode: "local" };
 }
 
 export function getCalendlyUrl(): string {
-  return (import.meta.env.VITE_CALENDLY_URL as string | undefined)?.trim() || "";
+  const url = CALENDLY.orientationUrl;
+  return isCalendlyConfigured(url) ? url : "";
 }
 
 export function calendlyUrlWithPrefill(base: string, draft: Partial<LeadPayload>): string {
   if (!base) return "";
   const url = new URL(base);
+  url.searchParams.set("hide_gdpr_banner", "1");
   if (draft.name) url.searchParams.set("name", draft.name);
   if (draft.email) url.searchParams.set("email", draft.email);
   if (draft.quizBand) {
-    url.searchParams.set("a1", `Equity IQ: ${draft.quizBand}${draft.quizScore != null ? ` (${draft.quizScore})` : ""}`);
+    url.searchParams.set(
+      "a1",
+      `Equity IQ: ${draft.quizBand}${draft.quizScore != null ? ` (${draft.quizScore})` : ""}`,
+    );
   }
   return url.toString();
 }

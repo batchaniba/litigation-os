@@ -5,11 +5,10 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 
 const links = [
   { href: `${base}/#how-it-works`, label: "How it works" },
-  { href: `${base}/#equity-iq`, label: "Equity IQ" },
-  { href: `${base}/#fees`, label: "Fees" },
+  { to: "/calculator", label: "Calculator" },
+  { to: "/fit", label: "Is this for you" },
   { href: `${base}/#faq`, label: "FAQ" },
 ];
-
 
 export function SiteHeader() {
   const [scrolled, setScrolled] = useState(false);
@@ -50,11 +49,17 @@ export function SiteHeader() {
         </button>
 
         <nav id="site-nav" className={`nav-links${open ? " is-open" : ""}`} aria-label="Primary">
-          {links.map((link) => (
-            <a key={link.href} href={link.href} onClick={() => setOpen(false)}>
-              {link.label}
-            </a>
-          ))}
+          {links.map((link) =>
+            "to" in link && link.to ? (
+              <NavLink key={link.to} to={link.to} onClick={() => setOpen(false)}>
+                {link.label}
+              </NavLink>
+            ) : (
+              <a key={link.href} href={link.href} onClick={() => setOpen(false)}>
+                {link.label}
+              </a>
+            ),
+          )}
           <NavLink to="/book" className="btn btn-primary nav-cta" onClick={() => setOpen(false)}>
             Book orientation
           </NavLink>

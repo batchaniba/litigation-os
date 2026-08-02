@@ -3,8 +3,11 @@ import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import { SiteFooter } from "./components/SiteFooter";
 import { SiteHeader } from "./components/SiteHeader";
 import { BookPage } from "./pages/BookPage";
+import { CalculatorPage } from "./pages/CalculatorPage";
+import { FitPage } from "./pages/FitPage";
 import { HomePage } from "./pages/HomePage";
 import { DisclosuresPage, PrivacyPage, TermsPage } from "./pages/LegalPages";
+import { WhyBitcoinPage } from "./pages/WhyBitcoinPage";
 
 function ScrollToHash() {
   const { pathname, hash } = useLocation();
@@ -31,6 +34,9 @@ export default function App() {
       <ScrollToHash />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/calculator" element={<CalculatorPage />} />
+        <Route path="/fit" element={<FitPage />} />
+        <Route path="/why-bitcoin" element={<WhyBitcoinPage />} />
         <Route path="/book" element={<BookPage />} />
         <Route path="/terms" element={<TermsPage />} />
         <Route path="/privacy" element={<PrivacyPage />} />

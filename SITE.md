@@ -15,16 +15,28 @@ Copy `web/.env.example` to `web/.env` (or set Vercel env vars):
 
 | Variable | Purpose |
 |---|---|
-| `VITE_CALENDLY_URL` | Calendly event URL — enables inline booking embed |
+| `VITE_CALENDLY_URL` | Calendly orientation event URL — enables inline booking embed |
+| `VITE_CALENDLY_REVIEW_URL` | Optional Milestone 1 review event |
 | `VITE_LEAD_WEBHOOK_URL` | Optional Zapier/Make/HubSpot webhook for quiz + form leads |
 
-Without Calendly configured, `/book` shows a request form and stores a lead draft in `sessionStorage` (and posts to the webhook if set).
+Tunables (fee rate, BTC reference price, calculator defaults) live in `web/src/config/site.ts`.
+
+Without Calendly configured, `/book` shows a request form after the acknowledgment gate (and posts to the webhook if set).
 
 ## Funnel
 
-1. Hero wake-up → Equity IQ quiz  
-2. Quiz score saved to session → Book orientation  
-3. Calendly (or fallback form) → Milestone Agreement offline/DocuSign  
+1. Hero wake-up → Equity IQ quiz **or** `/calculator`  
+2. `/fit` self-qualification + volatility honesty  
+3. Quiz/calc → `/book` acknowledgment gate → Calendly / form  
+4. Milestone Agreement offline/DocuSign  
+
+## Substance integrated from Claude’s branch
+
+Kept (functional, not stylistic): LTV-aware tappable equity math, fee-before-BTC netting, carry-cost display, fit page, Why Bitcoin cycles without price targets, booking acknowledgment gate, `LEGAL-REVIEW.md`, equity unit tests.
+
+## Legal
+
+See [`LEGAL-REVIEW.md`](./LEGAL-REVIEW.md) before pointing a live consumer domain at this site.
 
 ## Note on this branch
 

@@ -43,30 +43,66 @@ export const PHASES = [
   },
 ] as const;
 
+export const VOLATILITY_STATEMENT =
+  "Bitcoin is highly volatile. Drawdowns of 50% happen regularly. Declines of 80% or more have occurred in every market cycle to date. Any strategy that borrows against your home to acquire it places a fixed, secured obligation against an asset that can lose most of its value — and your home is the collateral. Nothing on this site should be read as a prediction that Bitcoin will rise.";
+
+export const GOOD_FIT = [
+  "You own your home and have meaningful equity beyond the cushion lenders typically require you to keep.",
+  "You can comfortably service an additional monthly payment from current income — without counting on Bitcoin going up.",
+  "You have a long horizon and will not need this capital back within four to six years.",
+  "You want to understand the mechanics yourself rather than hand decisions to someone else.",
+  "You already know Bitcoin can fall 50%+ and have decided that is a risk you can live with.",
+];
+
+export const POOR_FIT = [
+  "You would need to sell Bitcoin to make the loan payment.",
+  "Your income is unstable, or the new payment would stretch your monthly budget.",
+  "You might need the equity soon for renovation, tuition, medical costs, or near-term retirement.",
+  "You are behind on your mortgage, or your equity cushion is already thin.",
+  "You want someone to tell you Bitcoin will go up. We will not.",
+  "A 50–80% drawdown would cause you real financial or personal distress.",
+];
+
 export const FAQS = [
   {
+    q: "What exactly am I paying for?",
+    a: "Education, documentation support, and milestone verification across five phases. You are not paying for a loan, for Bitcoin, or for advice about whether to buy it.",
+  },
+  {
     q: "Do you handle my loan proceeds or Bitcoin?",
-    a: "No. Equity2Bitcoin never takes custody of funds, Bitcoin, or loan instruments. You work with licensed lenders and execute Bitcoin purchases and custody decisions independently.",
+    a: "No. Never. You apply to a licensed lender directly. You buy Bitcoin yourself. You hold your own keys. Nothing passes through us.",
   },
   {
-    q: "Is this investment advice?",
-    a: "No. We provide structured education and milestone consulting. We do not make personalized investment recommendations, manage portfolios, or advise on whether Bitcoin is appropriate for your situation.",
+    q: "Do you arrange the loan?",
+    a: "No. We are not mortgage brokers or loan originators. We teach what lenders look for and help you assemble a complete package. Choosing the lender and accepting terms are yours.",
   },
   {
-    q: "When do I pay?",
-    a: "Only after Phase 3 — verified loan approval or funding. The fee is 30% of the equity extracted. Phases 1, 2, 4, and 5 carry no fee.",
+    q: "How much is the fee, and when do I pay?",
+    a: "30% of the equity you extract, charged once at Phase 3 — after verified loan approval and funding. Phases 1, 2, 4, and 5 carry no fee. On a $200,000 draw the fee is $60,000.",
+  },
+  {
+    q: "So less than I borrow actually reaches Bitcoin?",
+    a: "Correct — and this is the most important thing to understand before going further. If you draw $200,000, the fee is $60,000 and $140,000 reaches Bitcoin, but you owe payments on the full $200,000. The calculator shows that subtraction explicitly.",
   },
   {
     q: "What if my loan is denied?",
-    a: "There is no success fee without verified extraction. You still keep the educational work product from earlier phases.",
+    a: "There is no success fee without verified extraction. Phases 1 and 2 are free, so a denial costs you time, not a milestone invoice.",
   },
   {
-    q: "Who is this for?",
-    a: "Primarily homeowners roughly ages 35–60 with meaningful tappable equity who want a disciplined, compliance-aware path to learn how equity extraction and Bitcoin ownership can fit together — without giving up control.",
+    q: "What happens if Bitcoin falls after I buy?",
+    a: "You still owe your lender every dollar, on schedule, and your home secures it. This strategy is only appropriate if you can service the loan from income regardless of what Bitcoin does.",
   },
   {
-    q: "Is Bitcoin volatile? What about rate risk on a HELOC?",
-    a: "Yes on both counts. Volatility and borrowing costs are real. Our process emphasizes education, timing awareness, and sober risk acknowledgment — never guarantees of return.",
+    q: "Could I lose my home?",
+    a: "A HELOC or cash-out refinance is secured by your home. If you cannot make payments, the lender has recourse against the property, up to and including foreclosure. That deserves stating plainly because proceeds are going into a volatile asset.",
+  },
+  {
+    q: "Are returns guaranteed or projected?",
+    a: "Neither. We do not publish return projections. Historical cycle material describes what happened, not what will. Past performance says nothing reliable about the future.",
+  },
+  {
+    q: "Are you a registered investment adviser?",
+    a: "No. We do not manage assets or make personalized recommendations about whether Bitcoin belongs in your portfolio. Our services are educational. For tailored advice, speak with a licensed fiduciary.",
   },
 ] as const;
 
@@ -147,7 +183,7 @@ export function scoreQuiz(answers: QuizAnswers): {
       band: "priority",
       label: "Strong fit for an orientation",
       summary:
-        "Your equity position, timeline, and curiosity suggest a high-signal conversation. Book a free orientation and we will walk the milestone path with clear compliance boundaries.",
+        "Your equity position, timeline, and curiosity suggest a high-signal conversation. Book a free orientation and we will walk the milestone path with clear compliance boundaries — including whether this is wrong for you.",
     };
   }
   if (score >= 11) {
@@ -166,15 +202,37 @@ export function scoreQuiz(answers: QuizAnswers): {
     band: "explore",
     label: "Keep learning — then revisit",
     summary:
-      "You may still benefit from the free orientation, especially if equity access or Bitcoin literacy is early-stage. Grab the blueprint and book when timing feels right.",
+      "You may still benefit from the free orientation, especially if equity access or Bitcoin literacy is early-stage. Run the calculator and book when timing feels right.",
   };
 }
 
-export const CASE_STEPS = [
-  { label: "Home value", value: "$700,000" },
-  { label: "Remaining mortgage", value: "$400,000" },
-  { label: "Extractable equity (example)", value: "$300,000" },
-  { label: "Phases 1–2 education & prep", value: "$0" },
-  { label: "Phase 3 success fee (30%)", value: "$90,000" },
-  { label: "Phases 4–5 Bitcoin education & close", value: "$0" },
+export const BTC_CYCLES = [
+  {
+    halving: "November 2012",
+    reward: "50 → 25 BTC",
+    peak: "Late 2013",
+    move: "Roughly $12 to roughly $1,100",
+    drawdown: "Followed by an ~85% decline into 2015",
+  },
+  {
+    halving: "July 2016",
+    reward: "25 → 12.5 BTC",
+    peak: "December 2017",
+    move: "Roughly $650 to nearly $20,000",
+    drawdown: "Followed by an ~84% decline into 2018",
+  },
+  {
+    halving: "May 2020",
+    reward: "12.5 → 6.25 BTC",
+    peak: "November 2021",
+    move: "Roughly $8,500 to above $67,000",
+    drawdown: "Followed by a ~77% decline into 2022",
+  },
+  {
+    halving: "April 2024",
+    reward: "6.25 → 3.125 BTC",
+    peak: "Ongoing",
+    move: "Outcome not yet known",
+    drawdown: "Unknown — the cycle has not completed",
+  },
 ] as const;
