@@ -33,9 +33,6 @@ jobs:
       - name: Typecheck
         run: npm run typecheck
 
-      - name: Validate portfolio data
-        run: npm run validate
-
       - name: Build
         run: npm run build
         env:

@@ -1,12 +1,15 @@
 import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+
 const links = [
-  { href: "/#how-it-works", label: "How it works" },
-  { href: "/#equity-iq", label: "Equity IQ" },
-  { href: "/#fees", label: "Fees" },
-  { href: "/#faq", label: "FAQ" },
+  { href: `${base}/#how-it-works`, label: "How it works" },
+  { href: `${base}/#equity-iq`, label: "Equity IQ" },
+  { href: `${base}/#fees`, label: "Fees" },
+  { href: `${base}/#faq`, label: "FAQ" },
 ];
+
 
 export function SiteHeader() {
   const [scrolled, setScrolled] = useState(false);

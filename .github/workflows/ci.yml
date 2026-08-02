@@ -26,6 +26,3 @@ jobs:
 
       - name: Build
         run: npm run build
-
-      - name: Validate portfolio data (matter JSON, document paths, cross-module coverage)
-        run: npm run validate

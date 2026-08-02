@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { BRAND } from "../data/content";
 
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+
 export function SiteFooter() {
   return (
     <footer className="site-footer">
@@ -15,9 +17,9 @@ export function SiteFooter() {
           </div>
           <div className="footer-col">
             <h4>Explore</h4>
-            <a href="/#how-it-works">How it works</a>
-            <a href="/#equity-iq">Equity IQ</a>
-            <a href="/#fees">Fee model</a>
+            <a href={`${base}/#how-it-works`}>How it works</a>
+            <a href={`${base}/#equity-iq`}>Equity IQ</a>
+            <a href={`${base}/#fees`}>Fee model</a>
             <Link to="/book">Book orientation</Link>
           </div>
           <div className="footer-col">
