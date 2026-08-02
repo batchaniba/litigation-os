@@ -391,10 +391,13 @@ def fill_jud100(defendant_short: str, defendant_against: str, other_text: str) -
     # Page 2: judgment by THE COURT (exact — "the court" also appears in item 3).
     check_by_label(doc, "THE COURT", exact=True)
 
-    # Item 5a for plaintiff / against defendant
-    check_by_label(doc, "for plaintiff")
+    # Item 5a for plaintiff / against defendant (only 5a — never 5b).
+    check_by_label(doc, "for plaintiff", exact=True)
     set_text_exact(doc, "Lia[0].FillText20[0]", PLAINTIFF_PRINT)
     set_text_exact(doc, "Lia[0].FillText21[0]", defendant_against)
+    # Item 5b must stay blank/unchecked when no 5b defendant is named.
+    check_by_label(doc, "for defendant", on=False, exact=True)
+    set_text_exact(doc, "Lib[0].FillText13[0]", "")
 
     # Item 6a amounts — no "Other"/punitive
     check_by_label(doc, "Defendant named in item 5a above must")
@@ -467,15 +470,17 @@ def fill_jud100(defendant_short: str, defendant_against: str, other_text: str) -
                 "plaintiff's testimony and other evidence",
                 "plaintiff to receive nothing from defendant",
                 "defendant named in item 5b to recover",
-                "for defendant",
                 "for cross-complainant",
                 "for cross-defendant",
             )
         )
+        or (w.field_label or "").strip() == "for defendant"
         or (
             (w.field_label or "").strip() == "Other"
             and "item8" not in (w.field_name or "").lower()
-        ),
+        )
+        or (w.field_name or "").endswith("List5[0].Lib[0].CheckBox34[0]")
+        or (w.field_name or "").endswith("List6[0].Lib[0].CBChoice41[0]"),
     )
     # Re-assert the intended checks after force_off.
     check_by_label(doc, "By Court", exact=True)
@@ -484,7 +489,7 @@ def fill_jud100(defendant_short: str, defendant_against: str, other_text: str) -
     check_by_label(doc, "Court Judgment (Code of Civil Procedure Section 585(b)")
     check_by_label(doc, "plaintiff's written declaration")
     check_by_label(doc, "THE COURT", exact=True)
-    check_by_label(doc, "for plaintiff")
+    check_by_label(doc, "for plaintiff", exact=True)
     check_by_label(doc, "Defendant named in item 5a above must")
     for page in doc:
         for w in page.widgets() or []:
@@ -496,6 +501,19 @@ def fill_jud100(defendant_short: str, defendant_against: str, other_text: str) -
                     w.update()
             if name.endswith("RB2Choices87[0]"):
                 w.field_value = w.on_state()
+                w.update()
+
+    # Final guard: Item 5b / 6b off, 5b name blank — only 5a carries the debtor.
+    check_by_label(doc, "for defendant", on=False, exact=True)
+    check_by_label(doc, "Plaintiff to receive nothing from defendant", on=False)
+    set_text_exact(doc, "Lib[0].FillText13[0]", "")
+    for page in doc:
+        for w in page.widgets() or []:
+            name = w.field_name or ""
+            if name.endswith("List5[0].Lib[0].CheckBox34[0]") or name.endswith(
+                "List6[0].Lib[0].CBChoice41[0]"
+            ):
+                w.field_value = "Off"
                 w.update()
 
     doc.bake(annots=True, widgets=True)
