@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """Regenerate Matter 12 Diamond/Alpine default-judgment declarations.
 
-Fixes applied relative to the July 31 mailed packets:
-- Diamond: waive costs (no MC-010); companion list uses CIV-100 item 8 for
-  nonmilitary status; re-execute August 3, 2026; keep $4,302.55 interest as a
-  conservative fixed amount through June 15, 2026.
-- Alpine: Stanislaus County Sheriff (matching filed POS-010); Usmani spelling;
-  costs waived consistently; companion list includes CIV-100 / item 8 / JUD-100;
-  re-execute August 3, 2026; retain valid July 1, 2026 service.
+Aug 4, 2026 compensatory-only filing (punitive damages omitted):
+- Diamond: waive costs (no MC-010); CIV-100 item 8 for nonmilitary status;
+  execution August 4, 2026; keep $4,302.55 interest through June 15, 2026;
+  total monetary judgment $53,671.20 (no punitive).
+- Alpine: Stanislaus County Sheriff (filed POS-010); Mustaqem Usmani as person
+  served; Osmani family ownership language per FAC; costs waived; execution
+  August 4, 2026; same $53,671.20 joint-and-several compensatory total.
 """
 
 from __future__ import annotations
@@ -34,8 +34,9 @@ OUT_DIR = os.environ.get(
 )
 COURT_LINE2 = "COUNTY OF SAN JOAQUIN"
 CASE_NO = "STK-CV-UF-2026-0001094"
-EXEC_DATE = "August 3, 2026"
-EXEC_DATE_SHORT = "August 3, 2026"
+EXEC_DATE = "August 4, 2026"
+EXEC_DATE_SHORT = "August 4, 2026"
+JUDGMENT_TOTAL = "$53,671.20"
 
 
 def party_block(d: PleadingPaper) -> None:
@@ -104,7 +105,7 @@ def sign_block(d: PleadingPaper) -> None:
 def build_diamond() -> str:
     out_path = os.path.join(
         OUT_DIR,
-        "_build_Diamond_Declaration_ISO_Default_Judgment_Aug3_2026.pdf",
+        "_build_Diamond_Declaration_ISO_Default_Judgment_Aug4_2026.pdf",
     )
     d = PleadingPaper(
         out_path,
@@ -153,13 +154,17 @@ def build_diamond() -> str:
     )
     d.write_wrapped(
         "2. This Declaration is submitted together with the following companion "
-        "documents constituting my prove-up package: (a) Plaintiff's Request for "
-        "Entry of Default Judgment (Form CIV-100), including the Declaration of "
-        "Nonmilitary Status at CIV-100 item 8; (b) Plaintiff's [Proposed] "
-        "Judgment by Court After Default (Form JUD-100); and (c) the documentary "
-        "exhibits referenced herein and listed in the Index of Exhibits below. "
-        "Plaintiff waives costs of suit on CIV-100 item 7f; no Memorandum of "
-        "Costs (Form MC-010) is filed with this packet."
+        "documents constituting my prove-up package: (a) the Court's Notice to "
+        "Filing Party on the prior default submission (returned with this "
+        "resubmission as directed); (b) Plaintiff's Request for Entry of Default "
+        "Judgment (Form CIV-100), including the Declaration of Nonmilitary Status "
+        "at CIV-100 item 8; (c) Plaintiff's Request for Dismissal of Does 1 "
+        "through 20 (Form CIV-110); (d) Plaintiff's [Proposed] Judgment by Court "
+        "After Default (Form JUD-100); and (e) the documentary exhibits "
+        "referenced herein and listed in the Index of Exhibits below. Plaintiff "
+        "waives costs of suit on CIV-100 item 7f; no Memorandum of Costs (Form "
+        "MC-010) is filed with this packet. Plaintiff seeks compensatory relief "
+        "only and does not request punitive damages in this filing."
     )
 
     d.write_line("II.  PROCEDURAL POSTURE", bold=True)
@@ -470,61 +475,32 @@ def build_diamond() -> str:
         "Civil Code section 3287, subdivision (a)."
     )
 
-    d.write_line("IX.  PUNITIVE DAMAGES", bold=True)
+    d.write_line("IX.  COSTS", bold=True)
     d.write_wrapped(
-        "29. The FAC pleads, and Diamond's default admits, that Diamond's conduct "
-        "was intentional, malicious, fraudulent, and oppressive within the meaning "
-        "of Civil Code section 3294. (FAC, paragraph 47.) Punitive damages are "
-        "accordingly available on the First Cause of Action (Fraudulent "
-        "Concealment) and the Second Cause of Action (Intentional "
-        "Misrepresentation), and the well-pleaded factual allegations supporting "
-        "that conduct are now deemed established for purposes of this prove-up."
-    )
-    d.write_wrapped(
-        "30. I respectfully request that the Court award punitive damages in an "
-        "amount the Court finds just, reasonable, and constitutionally appropriate "
-        "under <<i:State Farm Mut. Auto. Ins. Co. v. Campbell>> (2003) 538 U.S. "
-        "408, and in no event less than $25,000.00. That figure is supported by "
-        "Diamond's admitted fraudulent concealment and intentional "
-        "misrepresentation, the multi-jurisdictional commercial scale of Diamond's "
-        "operations alleged in FAC paragraph 7, and the post-filing rebrand from "
-        "Diamond Truck Sales, Inc. to Alpine Truck Sales, Inc. alleged in the FAC "
-        "as a badge of consciousness of liability and fraudulent intent. The "
-        "requested $25,000.00 figure is also well below a 1:1 ratio with the "
-        "compensatory damages requested in this Declaration, and is well within "
-        "the single-digit constitutional ceiling articulated by the United States "
-        "Supreme Court."
-    )
-
-    d.write_line("X.  COSTS", bold=True)
-    d.write_wrapped(
-        "31. Plaintiff has an approved court fee waiver in this action. Consistent "
+        "29. Plaintiff has an approved court fee waiver in this action. Consistent "
         "with CIV-100 item 7f, Plaintiff waives costs and disbursements in "
         "connection with this request for court judgment. No Memorandum of Costs "
         "(Form MC-010) is submitted, and no costs amount is included in the "
         "judgment total requested below."
     )
 
-    d.write_line("XI.  SUMMARY OF JUDGMENT REQUESTED", bold=True)
+    d.write_line("X.  SUMMARY OF JUDGMENT REQUESTED", bold=True)
     d.write_wrapped(
-        "32. Based on the foregoing, I respectfully request entry of Default "
+        "30. Based on the foregoing, I respectfully request entry of Default "
         "Judgment by the Court against Defendant Diamond Truck Sales, Inc. in the "
-        "amount of $53,671.20 in compensatory relief, plus punitive damages of not "
-        "less than $25,000.00 -- for a total monetary judgment of not less than "
-        "$78,671.20, with costs waived -- together with the non-monetary findings "
-        "and declarations specified in Section VII above. The components of the "
-        "requested judgment are as follows:"
+        "compensatory amount of $53,671.20, with costs waived, together with the "
+        "non-monetary findings and declarations specified in Section VII above. "
+        "Plaintiff does not seek punitive damages in this filing. The components "
+        "of the requested judgment are as follows:"
     )
     money_row(d, "$20,218.65", "Documented out-of-pocket losses (Section IV; Exhs. 1-3, 6-9)")
     money_row(d, "$5,750.00", "Undocumented out-of-pocket, by sworn testimony (Section V; Exhs. 8, 10)")
     money_row(d, "$23,400.00", "Lost commercial income, conservative (Section VI; Exhs. 4-5)")
     money_row(d, "$4,302.55", "Prejudgment interest through 06/15/2026 (Section VIII)")
-    money_row(d, "$53,671.20", "SUBTOTAL -- COMPENSATORY")
-    money_row(d, "$25,000.00", "Punitive damages (Section IX) -- not less than")
-    money_row(d, "$78,671.20", "TOTAL MONETARY JUDGMENT REQUESTED -- not less than")
-    money_row(d, "$0.00", "Costs of suit (Section X; waived on CIV-100 item 7f)")
+    money_row(d, "$53,671.20", "TOTAL MONETARY JUDGMENT REQUESTED")
+    money_row(d, "$0.00", "Costs of suit (Section IX; waived on CIV-100 item 7f)")
     d.write_wrapped(
-        "33. The amounts requested are within the scope of the prayer for relief in "
+        "31. The amounts requested are within the scope of the prayer for relief in "
         "the FAC and do not exceed the dollar-amount notice given to Diamond by the "
         "body of the FAC, as required by Code of Civil Procedure section 580 and "
         "<<i:Greenup v. Rodman>> (1986) 42 Cal.3d 822. Specifically: the "
@@ -535,7 +511,7 @@ def build_diamond() -> str:
         "figures I request here."
     )
     d.write_wrapped(
-        "34. To the extent any of the figures stated in this Declaration differ from "
+        "32. To the extent any of the figures stated in this Declaration differ from "
         "the preliminary estimates pleaded in the FAC, this Declaration provides the "
         "more precise and current calculation based on the documentary records and "
         "sworn testimony assembled for prove-up. I seek only those amounts that are "
@@ -544,7 +520,7 @@ def build_diamond() -> str:
         "Declaration are at or below the amounts pleaded in the FAC."
     )
 
-    d.write_line("XII.  INDEX OF EXHIBITS", bold=True)
+    d.write_line("XI.  INDEX OF EXHIBITS", bold=True)
     exhibits = [
         "Exhibit 1. Retail Buyer's Order dated April 4, 2023 (Diamond Truck Sales, Inc.; Customer: Brendan Ngwa Nforbi; Vehicle: 2014 Volvo VNL, VIN 4V4NC9EH6EN142206).",
         "Exhibit 2. California Department of Motor Vehicles \"Generated Fees\" printout dated May 8, 2023, reflecting Total Fees Due of $3,442.00, together with the corresponding DMV Report of Deposit of Fees and Application materials.",
@@ -560,7 +536,7 @@ def build_diamond() -> str:
     for ex in exhibits:
         d.write_wrapped(ex, first_indent=0)
 
-    d.write_line("XIII.  EXECUTION", bold=True)
+    d.write_line("XII.  EXECUTION", bold=True)
     sign_block(d)
     d.save()
     print(f"Generated: {out_path}")
@@ -570,7 +546,7 @@ def build_diamond() -> str:
 def build_alpine() -> str:
     out_path = os.path.join(
         OUT_DIR,
-        "_build_Alpine_Declaration_ISO_Default_Judgment_Aug3_2026.pdf",
+        "_build_Alpine_Declaration_ISO_Default_Judgment_Aug4_2026.pdf",
     )
     d = PleadingPaper(
         out_path,
@@ -621,16 +597,21 @@ def build_alpine() -> str:
     )
     d.write_wrapped(
         "2. This Declaration is submitted together with the following companion "
-        "documents constituting my prove-up package as to Alpine: (a) Plaintiff's "
-        "Request for Entry of Default and Court Judgment (Form CIV-100), including "
-        "the Declaration of Nonmilitary Status at CIV-100 item 8; (b) this "
-        "Declaration; (c) Plaintiff's [Proposed] Judgment by Court After Default "
-        "(Form JUD-100); and (d) the exhibits attached hereto, which are the same "
+        "documents constituting my prove-up package as to Alpine: (a) the Court's "
+        "Notice to Filing Party on the prior default submission (returned with this "
+        "resubmission as directed); (b) Plaintiff's Request for Entry of Default "
+        "and Court Judgment (Form CIV-100), including the Declaration of "
+        "Nonmilitary Status at CIV-100 item 8; (c) Plaintiff's Request for "
+        "Dismissal of Does 1 through 20 (Form CIV-110); (d) this Declaration; "
+        "(e) Plaintiff's [Proposed] Judgment by Court After Default (Form "
+        "JUD-100); and (f) the exhibits attached hereto, which are the same "
         "documentary exhibits previously submitted in support of the default "
         "judgment prove-up against co-defendant Diamond Truck Sales, Inc. "
         "(\"Diamond\"), attached again here so that this filing is complete and "
         "self-contained as to Alpine. Plaintiff waives costs of suit on CIV-100 "
-        "item 7f; no Memorandum of Costs (Form MC-010) is filed with this packet."
+        "item 7f; no Memorandum of Costs (Form MC-010) is filed with this packet. "
+        "Plaintiff seeks compensatory relief only and does not request punitive "
+        "damages in this filing."
     )
 
     d.write_line("II. PROCEDURAL POSTURE", bold=True)
@@ -668,7 +649,7 @@ def build_alpine() -> str:
         "267, 281.) The well-pleaded allegations include, without limitation: that "
         "Diamond rebranded to Alpine during the pendency of this action; that "
         "Alpine has operated from the same locations as Diamond, including 1201 S "
-        "Soderquist Road, Turlock, California, under the same Usmani family "
+        "Soderquist Road, Turlock, California, under the same Osmani family "
         "ownership and management; and that Alpine is therefore liable for "
         "Diamond's obligations in this action as its successor in interest, mere "
         "continuation, de facto merger, and/or alter ego, and/or by reason of a "
@@ -720,30 +701,20 @@ def build_alpine() -> str:
         "calculated lost commercial income of $23,400.00 (18 weeks x $1,300/week); "
         "and prejudgment interest under Civil Code section 3287(a) (7%, "
         "approximately 3.04 years through June 15, 2026) of $4,302.55 -- for a "
-        "compensatory subtotal of $53,671.20."
+        "total compensatory judgment of $53,671.20. Plaintiff does not seek "
+        "punitive damages in this filing."
     )
     d.write_wrapped(
-        "11. Plaintiff additionally requests punitive damages of $25,000.00 under "
-        "Civil Code section 3294, based on the well-pleaded and, as to Diamond, "
-        "now-admitted allegations that Diamond's concealment of the DEF/SCR "
-        "emissions defect was intentional, malicious, fraudulent, and oppressive. "
-        "Because Alpine's liability for this sum is derivative of Diamond's own "
-        "default and admitted misconduct, Plaintiff requests that the same punitive "
-        "damages figure be included in the judgment against Alpine on the same "
-        "joint and several basis, not as a separate punitive award against Alpine "
-        "for independent conduct of its own."
-    )
-    d.write_wrapped(
-        "12. The resulting total default judgment amount requested -- as against "
+        "11. The resulting total default judgment amount requested -- as against "
         "Diamond, and, jointly and severally on the same sum, as against Alpine -- "
-        "is not less than $78,671.20. Consistent with CIV-100 item 7f and "
-        "Plaintiff's approved fee waiver, costs of suit are waived; no costs amount "
-        "is included in the judgment total."
+        "is $53,671.20. Consistent with CIV-100 item 7f and Plaintiff's approved "
+        "fee waiver, costs of suit are waived; no costs amount is included in the "
+        "judgment total."
     )
 
     d.write_line("V. INDEX OF EXHIBITS", bold=True)
     d.write_wrapped(
-        "13. The following exhibits, previously submitted in support of the default "
+        "12. The following exhibits, previously submitted in support of the default "
         "judgment prove-up against Diamond, are attached hereto as Exhibits 1 "
         "through 10 and incorporated herein by reference:"
     )
@@ -764,11 +735,11 @@ def build_alpine() -> str:
 
     d.write_line("VI. CONCLUSION", bold=True)
     d.write_wrapped(
-        "14. For the foregoing reasons, Plaintiff respectfully requests that the "
+        "13. For the foregoing reasons, Plaintiff respectfully requests that the "
         "Court enter default judgment against Defendant ALPINE TRUCK SALES, INC. "
-        "in the amount of not less than $78,671.20, jointly and severally with the "
-        "default judgment sought against Diamond Truck Sales, Inc., with costs of "
-        "suit waived."
+        "in the amount of $53,671.20, jointly and severally with the default "
+        "judgment sought against Diamond Truck Sales, Inc., with costs of suit "
+        "waived."
     )
     sign_block(d)
     d.save()
