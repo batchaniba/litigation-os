@@ -284,7 +284,7 @@
     "case_no": "STK-CV-UF-2026-0001094",
     "court": "San Joaquin Sup. Ct.",
     "claims": "Fraudulent Concealment, Intentional Misrepresentation, Negligent Misrepresentation, Breach of Contract, UCL §17200, Rescission & Restitution, Declaratory Relief",
-    "status": "Active — Default ENTERED against Diamond Truck Sales, Inc.; default prove-up hearing requested at/after CMC; Alpine Truck Sales, Inc. served July 1, 2026, response deadline July 31, 2026, no appearance; Alpine Request for Entry of Default/Court Judgment and Declaration pre-drafted, execution date August 1, 2026, ready to file once Alpine's deadline lapses; CM-110 Case Management Statement filed July 20, 2026; CMC 08/12/2026, 8:30 AM, Dept. 11B",
+    "status": "Active — June 15, 2026 CIV-100 against Diamond and Alpine docketed Not Entered; complete corrected default packets for Diamond and Alpine (separate CIV-100s) mailed July 31, 2026 via USPS Priority Mail (tracking 9505 5114 6005 6212 9832 68; expected delivery 08/03/2026) — see commit/packet PDFs corrected per clerk rejection; clerk stated by phone that the 08/12/2026 CMC will be converted to a default prove-up hearing; Dept. 11B, Hon. Robert T. Waters, 8:30 AM",
     "lifecycle": "active",
     "proceeding": "state_civil",
     "phase": "default",
@@ -305,7 +305,7 @@
     ],
     "archived": false,
     "evidenceCount": 12,
-    "documentCount": 39
+    "documentCount": 45
   },
   {
     "number": 13,

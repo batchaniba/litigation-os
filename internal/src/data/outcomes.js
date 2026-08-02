@@ -38,7 +38,7 @@ export const outcomes = {
       amount: 78000,
       defendants: "Diamond Truck Sales, Inc.; Alpine Truck Sales, Inc.",
       claims: "Consumer Fraud / Defective Vehicle",
-      notes: "Diamond Truck Sales, Inc. in default since April 10, 2026 (no response after March 11 service). Alpine Truck Sales, Inc. response deadline July 31, 2026; no contact or meet-and-confer outreach received. Default judgment prove-up CMC: August 12, 2026, 8:30 AM, Dept. 11B, Hon. Robert T. Waters, San Joaquin Superior Court. Request for Default Judgment pre-drafted and ready.",
+      notes: "June 15, 2026 CIV-100 seeking default against Diamond and Alpine was docketed Not Entered (Alpine not yet served; Notice to Filing Party). Alpine personally served July 1, 2026; response deadline July 31, 2026 — no appearance. Plaintiff mailed complete renewed default judgment packets for both Diamond and Alpine on July 31, 2026 via USPS Priority Mail to Stockton court (tracking 9505 5114 6005 6212 9832 68; expected delivery 08/03/2026); as of Aug. 1, 2026 ROA printout those mailings had not yet posted. Clerk stated by phone that the August 12, 2026 CMC (8:30 AM, Dept. 11B, Hon. Robert T. Waters) will be converted to a default prove-up hearing.",
     },
   ],
   active_demands: [
