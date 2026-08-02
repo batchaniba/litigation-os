@@ -21,8 +21,11 @@ SIGNATURE_IMG = Path(__file__).resolve().parent / "assets" / "newanforbi-pen-sig
 # Page-4 right-hand "Sign your name" line (PyMuPDF top-origin coords).
 # Sized large so the pen stroke reads clearly on the Judicial Council form.
 SIG_PAGE_INDEX = 3
-SIG_WIDTH = 280.0
-SIG_RECT = fitz.Rect(300.0, 560.0, 300.0 + SIG_WIDTH, 560.0 + SIG_WIDTH * (101.0 / 369.0))
+SIG_WIDTH = 120.0
+# Sit on the right-hand signature line above "Sign your name".
+SIG_HEIGHT = SIG_WIDTH * (101.0 / 369.0)
+SIG_BASELINE = 645.0  # just above the "Sign your name" label
+SIG_RECT = fitz.Rect(360.0, SIG_BASELINE - SIG_HEIGHT, 360.0 + SIG_WIDTH, SIG_BASELINE)
 
 CASE_NUMBER = "STK-CV-UF-2026-0001094"
 COUNTY = "Stanislaus"
