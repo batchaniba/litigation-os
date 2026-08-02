@@ -7,7 +7,6 @@ import { ROUTES } from "./routes";
 
 const DashboardTab = lazy(() => import("./components/DashboardTab").then((m) => ({ default: m.DashboardTab })));
 const CensusRoute = lazy(() => import("./pages/CensusRoute"));
-const CalendarTab = lazy(() => import("./components/CalendarTab").then((m) => ({ default: m.CalendarTab })));
 const MattersRoute = lazy(() => import("./pages/MattersRoute"));
 const TimelineTab = lazy(() => import("./components/TimelineTab").then((m) => ({ default: m.TimelineTab })));
 const DamagesTab = lazy(() => import("./components/DamagesTab").then((m) => ({ default: m.DamagesTab })));
@@ -41,7 +40,7 @@ export default function App() {
         <Route element={<ShellLayout />}>
           <Route index element={<DashboardRoute />} />
           <Route path="census" element={<CensusRoute />} />
-          <Route path="calendar" element={<CalendarTab />} />
+          <Route path="calendar" element={<Navigate to={ROUTES.timeline} replace />} />
           <Route path="matters" element={<MattersRoute />} />
           <Route path="matters/:matterNumber" element={<MatterDetailPage />} />
           <Route path="timeline" element={<TimelineRoute />} />

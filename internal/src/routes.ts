@@ -1,7 +1,6 @@
 export const ROUTES = {
   dashboard: "/",
   census: "/census",
-  calendar: "/calendar",
   matters: "/matters",
   timeline: "/timeline",
   damages: "/damages",
@@ -16,7 +15,6 @@ export const NAV_ITEMS = [
   { label: "Dashboard", path: ROUTES.dashboard, end: true, icon: "⌂", group: "Overview" },
   { label: "Matters", path: ROUTES.matters, end: false, icon: "§", group: "Casework" },
   { label: "Timeline", path: ROUTES.timeline, end: false, icon: "↦", group: "Casework" },
-  { label: "Calendar", path: ROUTES.calendar, end: false, icon: "□", group: "Casework" },
   { label: "Damages", path: ROUTES.damages, end: false, icon: "$", group: "Analysis" },
   { label: "Theories", path: ROUTES.theories, end: false, icon: "¶", group: "Analysis" },
   { label: "Cost of Counsel", path: ROUTES.costOfCounsel, end: false, icon: "◈", group: "Analysis" },
