@@ -781,6 +781,11 @@
   },
   {
     "matter": 12,
+    "label": "FullCourt Enterprise — Civil ROA Summary (printed Aug. 2, 2026) — includes Alpine POS filed July 15 (served July 1, 2026); included after POS in each Aug 4 compensatory default packet",
+    "path": "/documents/matter-12/FullCourt Enterprise - Civil ROA Summary (as of Aug 2 2026).pdf"
+  },
+  {
+    "matter": 12,
     "label": "DTS Default Judgment Packet — original June 15, 2026 CIV-100/Declaration/exhibits against Diamond (and naming Alpine); ROA: Request for Default … Not Entered; clerk issued Notice to Filing Party",
     "path": "/documents/matter-12/DTS Default Judgment Packet.pdf"
   },
@@ -861,12 +866,12 @@
   },
   {
     "matter": 12,
-    "label": "Diamond Default Judgment Packet — Aug 4, 2026 compensatory-only filing packet (Notice to Filing Party; POS; clean CIV-100 item 2 = $53,671.20; JUD-100; CIV-110 dismiss Does 1–20 without prejudice; Declaration ISO executed August 4, 2026; Exhibits 1–10; signed; no punitive)",
+    "label": "Diamond Default Judgment Packet — Aug 4, 2026 compensatory-only filing packet (Notice to Filing Party; POS; Civil ROA Summary; clean CIV-100 item 2 = $53,671.20; JUD-100; CIV-110 dismiss Does 1–20 without prejudice; Declaration ISO executed August 4, 2026; Exhibits 1–10; signed; no punitive)",
     "path": "/documents/matter-12/1094 Diamond Default Judgment Packet (Compensatory Only, Ready to File Aug 4 2026).pdf"
   },
   {
     "matter": 12,
-    "label": "Alpine Default Judgment Packet — Aug 4, 2026 compensatory-only filing packet (Notice to Filing Party; POS; clean CIV-100 item 2 = $53,671.20; JUD-100 joint-and-several; CIV-110 dismiss Does 1–20 without prejudice; Declaration ISO executed August 4, 2026; Exhibits 1–10; signed; no punitive). Alpine served July 1, 2026 (Levying Officer File No. 2026002577).",
+    "label": "Alpine Default Judgment Packet — Aug 4, 2026 compensatory-only filing packet (Notice to Filing Party; POS; Civil ROA Summary; clean CIV-100 item 2 = $53,671.20; JUD-100 joint-and-several; CIV-110 dismiss Does 1–20 without prejudice; Declaration ISO executed August 4, 2026; Exhibits 1–10; signed; no punitive). Alpine served July 1, 2026 (Levying Officer File No. 2026002577).",
     "path": "/documents/matter-12/1094 Alpine Default Judgment Packet (Compensatory Only, Ready to File Aug 4 2026).pdf"
   },
   {
