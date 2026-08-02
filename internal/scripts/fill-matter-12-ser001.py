@@ -10,12 +10,19 @@ from __future__ import annotations
 
 from pathlib import Path
 
+import fitz
 from pypdf import PdfReader, PdfWriter
 from pypdf.generic import NameObject
 
 ROOT = Path(__file__).resolve().parents[2]
 TEMPLATE = ROOT / "internal/public/documents/_form-library/ser001-blank-template.pdf"
 OUT_DIR = ROOT / "internal/public/documents/matter-12"
+SIGNATURE_IMG = Path(__file__).resolve().parent / "assets" / "newanforbi-pen-signature.png"
+# Page-4 right-hand "Sign your name" line (PyMuPDF top-origin coords).
+# Sized large so the pen stroke reads clearly on the Judicial Council form.
+SIG_PAGE_INDEX = 3
+SIG_WIDTH = 280.0
+SIG_RECT = fitz.Rect(300.0, 560.0, 300.0 + SIG_WIDTH, 560.0 + SIG_WIDTH * (101.0 / 369.0))
 
 CASE_NUMBER = "STK-CV-UF-2026-0001094"
 COUNTY = "Stanislaus"
@@ -191,7 +198,21 @@ def fill_one(defendant: dict) -> Path:
             pass
     with open(out_path, "wb") as fh:
         writer.write(fh)
+    affix_signature(out_path)
     return out_path
+
+
+def affix_signature(path: Path) -> None:
+    """Stamp pen signature large on page 4's right-hand signature line."""
+    if not SIGNATURE_IMG.is_file():
+        raise SystemExit(f"Missing signature image: {SIGNATURE_IMG}")
+    doc = fitz.open(path)
+    try:
+        page = doc[SIG_PAGE_INDEX]
+        page.insert_image(SIG_RECT, filename=str(SIGNATURE_IMG), keep_proportion=True)
+        doc.saveIncr()
+    finally:
+        doc.close()
 
 
 def verify(path: Path) -> None:
@@ -205,6 +226,13 @@ def verify(path: Path) -> None:
     for key in (F["county"], F["entity_name"], F["addr"], F["addr_city"], F["sig_date"], F["type_papers"]):
         if key in filled:
             print(f"  {key.split('.')[-1]}: {filled[key]!r}")
+    # Confirm an image XObject landed on the signature page.
+    doc = fitz.open(path)
+    try:
+        xobjects = doc[SIG_PAGE_INDEX].get_images(full=True)
+        print(f"  page-4 images: {len(xobjects)} (signature stamped)")
+    finally:
+        doc.close()
 
 
 def main() -> None:
