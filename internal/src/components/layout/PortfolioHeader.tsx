@@ -43,6 +43,9 @@ export function PortfolioHeader({
           alt="Newanforbi — In Propria Persona"
         />
 
+        <span className="legacy-versus" aria-hidden="true">V.</span>
+        <span className="sr-only">versus</span>
+
         <div className="legacy-header-main">
           <div className="legacy-westlaw">
             <div style={{ fontSize: 9, fontFamily: "'DM Sans', sans-serif", fontWeight: 700, letterSpacing: 3, color: GOLD, textTransform: "uppercase", marginBottom: 6 }}>
