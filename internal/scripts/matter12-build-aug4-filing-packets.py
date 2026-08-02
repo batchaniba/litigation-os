@@ -332,7 +332,8 @@ def fill_civ100(defendant_name: str, mail_name: str) -> fitz.Document:
     check_by_label(doc, "Costs and disbursements are waived")
 
     # Stamp pen signatures (right of printed-name fields)
-    stamp_sig(doc[0], fitz.Rect(355, 655, 520, 688))
+    # Page 1 signature: smaller and slightly higher so it clears the label below.
+    stamp_sig(doc[0], fitz.Rect(415, 658, 500, 680))
     stamp_sig(doc[1], fitz.Rect(355, 415, 520, 450))
     stamp_sig(doc[1], fitz.Rect(355, 610, 520, 645))
     stamp_sig(doc[2], fitz.Rect(355, 665, 520, 700))
