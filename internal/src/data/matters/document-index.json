@@ -826,6 +826,16 @@
   },
   {
     "matter": 12,
+    "label": "SER-001 Request for Sheriff to Serve Court Papers — Diamond Truck Sales, Inc. (filled Aug. 3, 2026; Stanislaus County Sheriff Civil Division; serve CCP §425.115 Notice at 1201 S Soderquist Road, Turlock; fee waiver; unsigned — sign before delivery to Sheriff)",
+    "path": "/documents/matter-12/SER-001 Request for Sheriff to Serve Court Papers - Diamond Truck Sales (Stanislaus, Aug 3 2026).pdf"
+  },
+  {
+    "matter": 12,
+    "label": "SER-001 Request for Sheriff to Serve Court Papers — Alpine Truck Sales, Inc. (filled Aug. 3, 2026; Stanislaus County Sheriff Civil Division; serve CCP §425.115 Notice at 1201 S Soderquist Road, Turlock — prior Alpine service Levying Officer File No. 2026002577; fee waiver; unsigned — sign before delivery to Sheriff)",
+    "path": "/documents/matter-12/SER-001 Request for Sheriff to Serve Court Papers - Alpine Truck Sales (Stanislaus, Aug 3 2026).pdf"
+  },
+  {
+    "matter": 12,
     "label": "Alpine Default Judgment Packet — corrected per clerk rejection / separate CIV-100 as to Alpine only (CIV-100; Declaration ISO executed Aug. 1, 2026; POS-010; Exhibits 1–10; JUD-100; joint-and-several with Diamond); mailed July 31, 2026 with Diamond packet (USPS tracking 9505 5114 6005 6212 9832 68); filename notes pending valid re-service — confirm clerk is not still disputing Alpine POS; source: commit/64305d0",
     "path": "/documents/matter-12/1094 Alpine Default Judgment Packet (Corrected per Clerk Rejection -- Pending Valid Re-Service, Execution Date Aug 3 2026).pdf"
   },
