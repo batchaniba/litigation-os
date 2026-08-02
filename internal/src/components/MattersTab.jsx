@@ -148,52 +148,78 @@ const MatterCard = ({ matter: summary, isOpen, onToggle }) => {
   );
 };
 
+const CLUSTER_LABELS = {
+  1: "CHP",
+  2: "Parole/HOPE",
+  3: "Employment",
+  4: "Writs",
+  5: "Consumer Fraud",
+};
+
 export const MattersTab = ({ filteredCases, statusFilter, setStatusFilter, clusterFilter, setClusterFilter, typeFilter, setTypeFilter, searchQuery, setSearchQuery, sortKey, setSortKey }) => {
   const theme = useTheme();
   const [expandedMatter, setExpandedMatter] = useState(null);
+  const [filtersOpen, setFiltersOpen] = useState(false);
   const activeCount = cases.filter(c => !isArchivedMatter(c)).length;
+  const statusLabel = statusFilter === "active" ? `Active (${activeCount})` : statusFilter === "upcoming" ? "Upcoming" : statusFilter === "archived" ? "Archived" : "All";
+  const clusterLabel = clusterFilter == null ? "All clusters" : CLUSTER_LABELS[clusterFilter];
+  const typeLabel = typeFilter ?? "All courts";
+  const filterSummary = `${statusLabel} · ${clusterLabel} · ${typeLabel}`;
+  const chipStyle = (active) => ({
+    padding: "8px 14px", borderRadius: 6,
+    border: active ? `1px solid ${GOLD}` : `1px solid ${theme.filterInactiveBorder}`,
+    background: active ? `${GOLD}18` : theme.filterInactiveBg,
+    color: active ? GOLD : theme.filterInactiveColor,
+    fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 600, cursor: "pointer",
+  });
 
   return (
     <div>
       {/* Filters */}
-      <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginBottom: 20, alignItems: "center" }}>
-        <input
-          value={searchQuery}
-          onChange={e => setSearchQuery(e.target.value)}
-          placeholder="Search matters…"
-          aria-label="Search matters by caption, case number, or keywords"
-          style={{ flex: "1 1 200px", padding: "10px 16px", borderRadius: 8, border: `1px solid ${theme.cardBorder}`, background: theme.inputBg, color: theme.inputColor, fontFamily: "'DM Sans', sans-serif", fontSize: 13, outline: "none" }}
-        />
-        {["active", "upcoming", "archived", "all"].map(s => (
-          <button key={s} onClick={() => setStatusFilter(s)} aria-pressed={statusFilter === s} style={{
-            padding: "8px 14px", borderRadius: 6,
-            border: statusFilter === s ? `1px solid ${GOLD}` : `1px solid ${theme.filterInactiveBorder}`,
-            background: statusFilter === s ? `${GOLD}18` : theme.filterInactiveBg,
-            color: statusFilter === s ? GOLD : theme.filterInactiveColor,
-            fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 600, cursor: "pointer"
-          }}>{s === "active" ? `Active (${activeCount})` : s === "upcoming" ? "Upcoming" : s === "archived" ? "Archived" : "All"}</button>
-        ))}
-        <span style={{ color: theme.subtleText, fontFamily: "'DM Sans', sans-serif", fontSize: 12 }}>|</span>
-        {[null, 1, 2, 3, 4, 5].map(c => (
-          <button key={c ?? "all"} onClick={() => setClusterFilter(c)} style={{
-            padding: "8px 14px", borderRadius: 6,
-            border: clusterFilter === c ? `1px solid ${GOLD}` : `1px solid ${theme.filterInactiveBorder}`,
-            background: clusterFilter === c ? `${GOLD}18` : theme.filterInactiveBg,
-            color: clusterFilter === c ? GOLD : theme.filterInactiveColor,
-            fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 600, cursor: "pointer"
-          }}>{c === null ? "All" : c === 1 ? "CHP" : c === 2 ? "Parole/HOPE" : c === 3 ? "Employment" : c === 4 ? "Writs" : "Consumer Fraud"}</button>
-        ))}
-        <span style={{ color: theme.subtleText, fontFamily: "'DM Sans', sans-serif", fontSize: 12 }}>|</span>
-        {[null, "Federal", "State"].map(t => (
-          <button key={t ?? "all"} onClick={() => setTypeFilter(t)} style={{
-            padding: "8px 14px", borderRadius: 6,
-            border: typeFilter === t ? `1px solid ${GOLD}` : `1px solid ${theme.filterInactiveBorder}`,
-            background: typeFilter === t ? `${GOLD}18` : theme.filterInactiveBg,
-            color: typeFilter === t ? GOLD : theme.filterInactiveColor,
-            fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 600, cursor: "pointer"
-          }}>{t ?? "All"}</button>
-        ))}
-        <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: theme.subtleText, marginLeft: "auto" }}>{filteredCases.length} of {cases.length}</span>
+      <div className="matters-filters">
+        <div className="matters-filters-toolbar">
+          <input
+            value={searchQuery}
+            onChange={e => setSearchQuery(e.target.value)}
+            placeholder="Search matters…"
+            aria-label="Search matters by caption, case number, or keywords"
+            className="matters-search-input"
+            style={{ border: `1px solid ${theme.cardBorder}`, background: theme.inputBg, color: theme.inputColor }}
+          />
+          <button
+            type="button"
+            className="matters-filters-toggle"
+            aria-expanded={filtersOpen}
+            aria-controls="matters-filter-chips"
+            onClick={() => setFiltersOpen((open) => !open)}
+            style={{ border: `1px solid ${GOLD}55`, background: `${GOLD}12`, color: GOLD }}
+          >
+            <span aria-hidden="true">{filtersOpen ? "▴" : "▾"}</span>
+            <span className="matters-filters-toggle-label">{filtersOpen ? "Hide filters" : "Filters"}</span>
+            <span className="matters-filters-toggle-summary">{filterSummary}</span>
+            <span className="matters-filters-count">{filteredCases.length} of {cases.length}</span>
+          </button>
+        </div>
+        <div id="matters-filter-chips" className={`matters-filter-chips${filtersOpen ? " is-open" : ""}`}>
+          {["active", "upcoming", "archived", "all"].map(s => (
+            <button key={s} onClick={() => setStatusFilter(s)} aria-pressed={statusFilter === s} style={chipStyle(statusFilter === s)}>
+              {s === "active" ? `Active (${activeCount})` : s === "upcoming" ? "Upcoming" : s === "archived" ? "Archived" : "All"}
+            </button>
+          ))}
+          <span className="matters-filter-sep" style={{ color: theme.subtleText }}>|</span>
+          {[null, 1, 2, 3, 4, 5].map(c => (
+            <button key={c ?? "all"} onClick={() => setClusterFilter(c)} aria-pressed={clusterFilter === c} style={chipStyle(clusterFilter === c)}>
+              {c === null ? "All" : CLUSTER_LABELS[c]}
+            </button>
+          ))}
+          <span className="matters-filter-sep" style={{ color: theme.subtleText }}>|</span>
+          {[null, "Federal", "State"].map(t => (
+            <button key={t ?? "all"} onClick={() => setTypeFilter(t)} aria-pressed={typeFilter === t} style={chipStyle(typeFilter === t)}>
+              {t ?? "All"}
+            </button>
+          ))}
+          <span className="matters-filter-result-count" style={{ color: theme.subtleText }}>{filteredCases.length} of {cases.length}</span>
+        </div>
       </div>
 
       <div className="matter-view-controls">
