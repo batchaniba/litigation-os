@@ -26,14 +26,19 @@ import fitz
 
 ROOT = Path(__file__).resolve().parents[2]
 SCRIPT_DIR = Path(__file__).resolve().parent
+sys.path.insert(0, str(SCRIPT_DIR))
+from signature_stamp import (  # noqa: E402
+    SIGNATURE_PATH,
+    stamp_on_pdf_line,
+)
+
 OUT_DIR = ROOT / "internal/public/documents/matter-12"
 BUILD_DIR = Path("/tmp/m12build")
 FORMS_DIR = Path("/tmp/m12forms")
 UPLOADS = Path("/home/ubuntu/.cursor/projects/workspace/uploads")
 
-# Portfolio-wide canonical signature (see signature_stamp.py).
-SIGNATURE_IMG = ROOT / "internal/assets/signature/brendan-newanforbi-signature.png"
-SIG_ASPECT = 360.0 / 1450.0  # native 1450×360
+# Portfolio universal signature (internal/assets/signature/…).
+SIGNATURE_IMG = Path(SIGNATURE_PATH)
 NOTICE_PDF = UPLOADS / "Notice_to_Filing_Party_e500.pdf"
 BLANK_CIV100 = FORMS_DIR / "civ100.pdf"
 BLANK_JUD100 = FORMS_DIR / "jud100.pdf"
@@ -178,12 +183,8 @@ def check_radio_choice(doc: fitz.Document, name_contains: str, on_value) -> int:
 
 
 def stamp_sig(page: fitz.Page, x0: float, x1: float, y_line: float) -> None:
-    """Stamp the universal signature sitting on y_line between x0 and x1."""
-    width = x1 - x0
-    height = width * SIG_ASPECT
-    rect = fitz.Rect(x0, y_line - height, x1, y_line)
-    page.draw_rect(rect, color=(1, 1, 1), fill=(1, 1, 1), width=0)
-    page.insert_image(rect, filename=str(SIGNATURE_IMG), keep_proportion=True)
+    """Stamp the portfolio universal signature on the form line."""
+    stamp_on_pdf_line(page, x0, x1, y_line, path=str(SIGNATURE_IMG))
 
 
 def force_off(doc: fitz.Document, pred) -> int:

@@ -1,14 +1,14 @@
-# De facto portfolio signature (for now): lifted from Doc 9's Notice
-# signature block (Matter 28, Case 3:26-cv-07504-LJC, p.3), transparent
-# background. Reuse this path when a generated filing needs a signature
-# affixed rather than a typed name.
+# Portfolio universal signature: brendan-newanforbi-signature.png
+# (1450×360, transparent background). Use this for all generated filings
+# that need a signature affixed rather than a typed name. Do not use the
+# older cropped pen asset under internal/scripts/assets/.
 from pathlib import Path
 
 _REPO_ROOT = Path(__file__).resolve().parents[2]
 SIGNATURE_PATH = str(
     _REPO_ROOT / "internal/assets/signature/brendan-newanforbi-signature.png"
 )
-SIGNATURE_ASPECT = 360.0 / 1450.0  # height / width, native crop is 1450x360
+SIGNATURE_ASPECT = 360.0 / 1450.0  # height / width
 SIGNATURE_NATIVE_PX = (1450, 360)
 
 
