@@ -284,7 +284,7 @@
     "case_no": "STK-CV-UF-2026-0001094",
     "court": "San Joaquin Sup. Ct.",
     "claims": "Fraudulent Concealment, Intentional Misrepresentation, Negligent Misrepresentation, Breach of Contract, UCL §17200, Rescission & Restitution, Declaratory Relief",
-    "status": "Active — June 15, 2026 CIV-100 against Diamond and Alpine docketed Not Entered (Alpine not yet served); renewed complete default packets for both mailed July 31, 2026 via USPS Priority Mail (tracking 9505 5114 6005 6212 9832 68; expected delivery 08/03/2026); clerk stated by phone that the 08/12/2026 CMC will be converted to a default prove-up hearing; Dept. 11B, Hon. Robert T. Waters, 8:30 AM",
+    "status": "Active — June 15, 2026 CIV-100 against Diamond and Alpine docketed Not Entered; complete corrected default packets for Diamond and Alpine (separate CIV-100s) mailed July 31, 2026 via USPS Priority Mail (tracking 9505 5114 6005 6212 9832 68; expected delivery 08/03/2026) — see commit/packet PDFs corrected per clerk rejection; clerk stated by phone that the 08/12/2026 CMC will be converted to a default prove-up hearing; Dept. 11B, Hon. Robert T. Waters, 8:30 AM",
     "lifecycle": "active",
     "proceeding": "state_civil",
     "phase": "default",
@@ -305,7 +305,7 @@
     ],
     "archived": false,
     "evidenceCount": 12,
-    "documentCount": 41
+    "documentCount": 43
   },
   {
     "number": 13,

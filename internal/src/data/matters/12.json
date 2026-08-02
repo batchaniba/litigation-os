@@ -4,7 +4,7 @@
   "case_no": "STK-CV-UF-2026-0001094",
   "court": "San Joaquin Sup. Ct.",
   "claims": "Fraudulent Concealment, Intentional Misrepresentation, Negligent Misrepresentation, Breach of Contract, UCL §17200, Rescission & Restitution, Declaratory Relief",
-  "status": "Active — June 15, 2026 CIV-100 against Diamond and Alpine docketed Not Entered (Alpine not yet served); renewed complete default packets for both mailed July 31, 2026 via USPS Priority Mail (tracking 9505 5114 6005 6212 9832 68; expected delivery 08/03/2026); clerk stated by phone that the 08/12/2026 CMC will be converted to a default prove-up hearing; Dept. 11B, Hon. Robert T. Waters, 8:30 AM",
+  "status": "Active — June 15, 2026 CIV-100 against Diamond and Alpine docketed Not Entered; complete corrected default packets for Diamond and Alpine (separate CIV-100s) mailed July 31, 2026 via USPS Priority Mail (tracking 9505 5114 6005 6212 9832 68; expected delivery 08/03/2026) — see commit/packet PDFs corrected per clerk rejection; clerk stated by phone that the 08/12/2026 CMC will be converted to a default prove-up hearing; Dept. 11B, Hon. Robert T. Waters, 8:30 AM",
   "lifecycle": "active",
   "proceeding": "state_civil",
   "phase": "default",
@@ -130,13 +130,23 @@
       "path": "/documents/matter-12/1094 JUD100 [Proposed] Judgment (Corrected -- case number, Alpine added to Item 5a, ready to submit).pdf"
     },
     {
-      "label": "Alpine Default Judgment Packet — corrected case number STK-CV-UF-2026-0001094; CIV-100, Declaration, Exhibits 1–10; printed/signed and mailed July 31, 2026 with Diamond renewed packet via USPS Priority Mail to Stockton court (tracking 9505 5114 6005 6212 9832 68; expected delivery 08/03/2026); awaiting ROA posting as of Aug. 1, 2026 printout",
+      "label": "Alpine Default Judgment Packet — case-number correction draft; superseded by the corrected-per-clerk-rejection Alpine packet mailed July 31, 2026 (commit/64305d0)",
       "path": "/documents/matter-12/1094 Alpine Default Judgment Packet (Corrected Case Number, Ready to File Aug 1 2026).pdf",
       "filed": false
     },
     {
       "label": "USPS eReceipt — Priority Mail Flat Rate Envelope mailed July 31, 2026, 12:50 PM from Milpitas (450 S Abel St) to Stockton, CA 95202; tracking 9505 5114 6005 6212 9832 68; $12.90; expected delivery Mon 08/03/2026 — mailing of complete renewed Diamond and Alpine default judgment packets",
       "path": "/documents/matter-12/USPS eReceipt - Priority Mail Default Packets to Stockton Court (Jul 31 2026, Tracking 9505511460056212983268).pdf",
+      "filed": false
+    },
+    {
+      "label": "Alpine Default Judgment Packet — corrected per clerk rejection / separate CIV-100 as to Alpine only (CIV-100; Declaration ISO executed Aug. 1, 2026; POS-010; Exhibits 1–10; JUD-100; joint-and-several with Diamond); mailed July 31, 2026 with Diamond packet (USPS tracking 9505 5114 6005 6212 9832 68); filename notes pending valid re-service — confirm clerk is not still disputing Alpine POS; source: commit/64305d0",
+      "path": "/documents/matter-12/1094 Alpine Default Judgment Packet (Corrected per Clerk Rejection -- Pending Valid Re-Service, Execution Date Aug 3 2026).pdf",
+      "filed": false
+    },
+    {
+      "label": "Diamond Default Judgment Packet — corrected per clerk rejection / separate CIV-100 as to Diamond only (CIV-100 requesting court judgment; Declaration ISO; MC-010; Exhibits 1–10; JUD-100); mailed July 31, 2026 with Alpine packet (USPS tracking 9505 5114 6005 6212 9832 68); source: github.com/newanforbi/interactive-litigation-portfolio/commit/64305d0",
+      "path": "/documents/matter-12/1094 Diamond Default Judgment Packet (Corrected per Clerk Rejection, Ready to File Aug 3 2026).pdf",
       "filed": false
     },
     {
