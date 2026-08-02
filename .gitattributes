@@ -1,4 +1,0 @@
-# Large litigation PDFs via Git LFS (keeps the git object store leaner;
-# CI/deploy checkouts must enable LFS — see .github/workflows).
-internal/public/documents/**/*.pdf filter=lfs diff=lfs merge=lfs -text
-internal/public/documents/**/*.PDF filter=lfs diff=lfs merge=lfs -text
