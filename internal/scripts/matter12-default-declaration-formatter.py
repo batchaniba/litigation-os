@@ -203,7 +203,7 @@ def diamond_content() -> list[tuple[str, str]]:
         ),
         (
             "PARA",
-            "5. Upon the Clerk's entry of Diamond's default, the well-pleaded factual "
+            "5. Upon entry of Diamond's default, the well-pleaded factual "
             "allegations of the FAC concerning liability are deemed admitted. "
             "(<<i:Steven M. Garber & Assocs. v. Eskandarian>> (2007) 150 Cal.App.4th "
             "813, 823; <<i:Kim v. Westmoore Partners, Inc.>> (2011) 201 Cal.App.4th "
@@ -220,7 +220,7 @@ def diamond_content() -> list[tuple[str, str]]:
             "PARA",
             "6. This Declaration addresses only the amount and proof of damages. I "
             "have made no effort to relitigate liability, which will be deemed "
-            "established upon the Clerk's entry of Diamond's default.",
+            "established upon entry of Diamond's default.",
         ),
         ("HEADER", "III.  THE TRANSACTION AND THE FAILURE"),
         (
@@ -618,7 +618,7 @@ def alpine_content() -> list[tuple[str, str]]:
         ),
         (
             "PARA",
-            "6. Because Alpine has defaulted, the well-pleaded factual allegations of "
+            "6. Upon entry of Alpine's default, the well-pleaded factual allegations of "
             "the FAC concerning Alpine's liability are deemed admitted. "
             "(<<i:Steven M. Garber & Assocs. v. Eskandarian>> (2007) 150 Cal.App.4th "
             "813, 823; <<i:Kim v. Westmoore Partners, Inc.>> (2011) 201 Cal.App.4th "
@@ -634,9 +634,10 @@ def alpine_content() -> list[tuple[str, str]]:
         (
             "PARA",
             "7. This Declaration addresses only the amount and proof of damages as "
-            "against Alpine. I have made no effort to relitigate liability, which is "
-            "deemed established by the default, nor to relitigate the underlying fraud "
-            "and misrepresentation claims against Diamond, which were proved up "
+            "against Alpine. I have made no effort to relitigate liability, which will "
+            "be deemed established upon entry of Alpine's default, nor to relitigate "
+            "the underlying fraud and misrepresentation claims against Diamond, which "
+            "were proved up "
             "separately -- and on the same exhibits reattached hereto -- in the default "
             "judgment package previously submitted as to Diamond.",
         ),
