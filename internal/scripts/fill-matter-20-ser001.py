@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
 """Fill four Matter 20 SER-001 forms (one per named respondent).
 
-Service target matches the July 31, 2026 Proof of Service on the Opposition
-to Individual Respondents' Demurrers: Alameda County Sheriff Civil Section
-mail service on Deputy AG Vanessa Ing at the SF AG office, under Petitioner's
-fee waiver (Gov. Code §26721). SER-001 requires a separate form per person/
-entity served.
+- Serrato / Paul / Dutra: serve at CHP Dublin Area duty station
+  (4999 Gleason Drive, Dublin — Alameda County); SER-001s go to
+  Alameda County Sheriff Civil Division.
+- CHP (entity): serve at CHP Headquarters in Sacramento
+  (601 North 7th Street); SER-001 goes to Sacramento County Sheriff.
+- Courtesy copy of the Opposition already emailed to DAG Vanessa Ing.
 """
 
 from __future__ import annotations
 
-import shutil
 from pathlib import Path
 
 from pypdf import PdfReader, PdfWriter
@@ -21,22 +21,27 @@ TEMPLATE = ROOT / "internal/public/documents/_form-library/ser001-blank-template
 OUT_DIR = ROOT / "internal/public/documents/matter-20"
 
 CASE_NUMBER = "26CV191136"
-COUNTY = "Alameda"
 YOUR_NAME = "Brendan Ngehsi Newanforbi"
 CASE_NAME = "Newanforbi v. California Highway Patrol, et al."
-ADDRESS = "1090 S Milpitas Blvd, Unit #304"
-CITY = "Milpitas"
+# Caption / POS address used on the Opposition packet
+ADDRESS = "1455 Cat Tail Drive"
+CITY = "Stockton"
 STATE = "CA"
-ZIP = "95035"
+ZIP = "95204"
 PHONE = "(209) 801-4442"
 EMAIL = "bnn.cdl@gmail.com"
 
-AG_ADDRESS = "455 Golden Gate Avenue, Suite 11000"
-AG_CITY = "San Francisco"
-AG_STATE = "CA"
-AG_ZIP = "94102-7004"
-AG_AGENT = "Vanessa Ing, Deputy Attorney General"
-SERVE_TIME = "Mail — business hours"
+# Petition ¶: CHP Dublin Area Office
+DUBLIN_ADDRESS = "4999 Gleason Drive"
+DUBLIN_CITY = "Dublin"
+DUBLIN_ZIP = "94568"
+
+# CHP Headquarters (Sacramento) — same track as prior CHP entity service
+SAC_ADDRESS = "601 North 7th Street"
+SAC_CITY = "Sacramento"
+SAC_ZIP = "95811"
+
+SERVE_TIME = "8:00 a.m.–5:00 p.m. (business hours)"
 
 TYPE_PAPERS = "Opposition to Demurrers and Joinders (subsequent papers)"
 LIST_FORMS = (
@@ -44,10 +49,15 @@ LIST_FORMS = (
     "Joinders to Respondent CHP's Demurrer; Memorandum of Points and Authorities "
     "(dated July 31, 2026)"
 )
-# hearingDate widget is ~202pt wide — keep short
 HEARING_DATE = "08/28/2026, 9:00 a.m., Dept. 25"
 DEADLINE_DATE = "08/21/2026 (before hearing)"
 SIG_DATE = "July 31, 2026"
+
+COURTESY = (
+    "Courtesy copy of the Opposition already emailed to counsel of record "
+    "(DAG Vanessa Ing). Fee waiver granted — no sheriff service fee "
+    "(Gov. Code §26721)."
+)
 
 # Fully-qualified AcroForm names on the Judicial Council SER-001 (Rev. Jan 1, 2026)
 F = {
@@ -75,7 +85,6 @@ F = {
     "addr_city": "SER-001[0].Page3[0].List4[0].Li4[0].City[0]",
     "addr_state": "SER-001[0].Page3[0].List4[0].Li4[0].State[0]",
     "addr_zip": "SER-001[0].Page3[0].List4[0].Li4[0].Zip[0]",
-    "home": "SER-001[0].Page3[0].List4[0].Li4[0].addDef[0]",
     "business": "SER-001[0].Page3[0].List4[0].Li4[0].addDef[1]",
     "serve_time": "SER-001[0].Page3[0].List4[0].Li4[0].serveTime[0]",
     "gate": "SER-001[0].Page3[0].List4[0].Li4[0].gateCode[0]",
@@ -96,10 +105,10 @@ F = {
 }
 
 
-def base_fields(other_info: str) -> dict[str, object]:
+def base_fields(respondent: dict) -> dict[str, object]:
     return {
         F["case1"]: CASE_NUMBER,
-        F["county"]: COUNTY,
+        F["county"]: respondent["county"],
         F["yourname"]: YOUR_NAME,
         F["casename"]: CASE_NAME,
         F["address"]: ADDRESS,
@@ -109,14 +118,13 @@ def base_fields(other_info: str) -> dict[str, object]:
         F["phone"]: PHONE,
         F["email"]: EMAIL,
         F["case2"]: CASE_NUMBER,
-        F["addr"]: AG_ADDRESS,
-        F["addr_city"]: AG_CITY,
-        F["addr_state"]: AG_STATE,
-        F["addr_zip"]: AG_ZIP,
+        F["addr"]: respondent["serve_address"],
+        F["addr_city"]: respondent["serve_city"],
+        F["addr_state"]: "CA",
+        F["addr_zip"]: respondent["serve_zip"],
         F["business"]: NameObject("/2"),
         F["serve_time"]: SERVE_TIME,
-        # gateCode widget is ~362pt — keep short; detail goes in item 5f
-        F["gate"]: "MAIL on counsel; fee waiver (Gov. Code §26721)",
+        F["gate"]: respondent["gate"],
         F["type_papers"]: TYPE_PAPERS,
         F["list_forms"]: LIST_FORMS,
         F["hearing_yes"]: NameObject("/3"),
@@ -126,7 +134,7 @@ def base_fields(other_info: str) -> dict[str, object]:
         F["deadline_date"]: DEADLINE_DATE,
         F["alt_no"]: NameObject("/2"),
         F["oth_yes"]: NameObject("/2"),
-        F["oth_text"]: other_info,
+        F["oth_text"]: respondent["other"],
         F["case4"]: CASE_NUMBER,
         F["sig_date"]: SIG_DATE,
         F["type_name"]: YOUR_NAME,
@@ -142,17 +150,21 @@ RESPONDENTS = [
             "California Highway Patrol (Jul 31 2026).pdf"
         ),
         "kind": "entity",
+        "county": "Sacramento",
+        "serve_address": SAC_ADDRESS,
+        "serve_city": SAC_CITY,
+        "serve_zip": SAC_ZIP,
+        "gate": "CHP Headquarters — person authorized to accept service",
         "entity_name": "California Highway Patrol (state agency)",
-        "entity_person": "Vanessa Ing, Deputy Attorney General",
-        "entity_agent": AG_AGENT,
+        "entity_person": "Person authorized to accept service",
+        "entity_agent": "",
         "other": (
-            "Request MAIL service (not personal) under Petitioner's court fee waiver "
-            "(Gov. Code §26721) via Alameda County Sheriff Civil Section, "
-            "1225 Fallon Street, #104, Oakland, CA 94612. "
-            "Serve counsel of record for Respondent California Highway Patrol: "
-            "Vanessa Ing, DAG, Office of the Attorney General, at the address in item 4. "
-            "Separate SER-001s are submitted for co-respondents Serrato, Paul, and Dutra "
-            "(same counsel/address)."
+            "Serve Respondent California Highway Patrol at CHP Headquarters "
+            "(item 4). Mail/deliver this SER-001 and service packet to the "
+            "Sacramento County Sheriff's Office (Civil). "
+            f"{COURTESY} Separate SER-001s for Individual Respondents Serrato, "
+            "Paul, and Dutra go to Alameda County Sheriff Civil for service at "
+            "CHP Dublin Area (4999 Gleason Drive)."
         ),
     },
     {
@@ -162,16 +174,20 @@ RESPONDENTS = [
             "G Serrato (Jul 31 2026).pdf"
         ),
         "kind": "person",
+        "county": "Alameda",
+        "serve_address": DUBLIN_ADDRESS,
+        "serve_city": DUBLIN_CITY,
+        "serve_zip": DUBLIN_ZIP,
+        "gate": "CHP Dublin Area Office — official duty station",
         "person_name": "G. Serrato (Gerardo Serrato)",
-        "nicknames": "Capt./Cmdr., CHP Dublin — via counsel of record",
+        "nicknames": "Capt./Commander, CHP Dublin Area",
         "other": (
-            "Request MAIL service (not personal) under Petitioner's court fee waiver "
-            "(Gov. Code §26721) via Alameda County Sheriff Civil Section, "
-            "1225 Fallon Street, #104, Oakland, CA 94612. "
-            "Serve counsel of record for Respondent G. Serrato (Gerardo Serrato): "
-            "Vanessa Ing, DAG, Office of the Attorney General, at the address in item 4. "
-            "Separate SER-001s are submitted for co-respondents CHP, Paul, and Dutra "
-            "(same counsel/address)."
+            "Serve at Respondent's official duty station: CHP Dublin Area Office "
+            "(item 4). Mail/deliver this SER-001 and service packet to Alameda "
+            "County Sheriff Civil Division, 1225 Fallon Street, #104, Oakland, "
+            f"CA 94612. {COURTESY} Separate SER-001s submitted for Paul and Dutra "
+            "(same Dublin address); CHP entity SER-001 goes to Sacramento County "
+            "Sheriff for service at CHP Headquarters."
         ),
     },
     {
@@ -181,16 +197,20 @@ RESPONDENTS = [
             "Gary Paul (Jul 31 2026).pdf"
         ),
         "kind": "person",
+        "county": "Alameda",
+        "serve_address": DUBLIN_ADDRESS,
+        "serve_city": DUBLIN_CITY,
+        "serve_zip": DUBLIN_ZIP,
+        "gate": "CHP Dublin Area Office — official duty station",
         "person_name": "Gary Paul",
-        "nicknames": "Lt., CHP Dublin — via counsel of record",
+        "nicknames": "Lieutenant, CHP Dublin Area",
         "other": (
-            "Request MAIL service (not personal) under Petitioner's court fee waiver "
-            "(Gov. Code §26721) via Alameda County Sheriff Civil Section, "
-            "1225 Fallon Street, #104, Oakland, CA 94612. "
-            "Serve counsel of record for Respondent Gary Paul: "
-            "Vanessa Ing, DAG, Office of the Attorney General, at the address in item 4. "
-            "Separate SER-001s are submitted for co-respondents CHP, Serrato, and Dutra "
-            "(same counsel/address)."
+            "Serve at Respondent's official duty station: CHP Dublin Area Office "
+            "(item 4). Mail/deliver this SER-001 and service packet to Alameda "
+            "County Sheriff Civil Division, 1225 Fallon Street, #104, Oakland, "
+            f"CA 94612. {COURTESY} Separate SER-001s submitted for Serrato and "
+            "Dutra (same Dublin address); CHP entity SER-001 goes to Sacramento "
+            "County Sheriff for service at CHP Headquarters."
         ),
     },
     {
@@ -200,28 +220,33 @@ RESPONDENTS = [
             "Eric Dutra (Jul 31 2026).pdf"
         ),
         "kind": "person",
+        "county": "Alameda",
+        "serve_address": DUBLIN_ADDRESS,
+        "serve_city": DUBLIN_CITY,
+        "serve_zip": DUBLIN_ZIP,
+        "gate": "CHP Dublin Area Office — official duty station",
         "person_name": "Eric Dutra",
-        "nicknames": "Sgt., CHP Dublin — via counsel of record",
+        "nicknames": "Sergeant, CHP Dublin Area",
         "other": (
-            "Request MAIL service (not personal) under Petitioner's court fee waiver "
-            "(Gov. Code §26721) via Alameda County Sheriff Civil Section, "
-            "1225 Fallon Street, #104, Oakland, CA 94612. "
-            "Serve counsel of record for Respondent Eric Dutra: "
-            "Vanessa Ing, DAG, Office of the Attorney General, at the address in item 4. "
-            "Separate SER-001s are submitted for co-respondents CHP, Serrato, and Paul "
-            "(same counsel/address)."
+            "Serve at Respondent's official duty station: CHP Dublin Area Office "
+            "(item 4). Mail/deliver this SER-001 and service packet to Alameda "
+            "County Sheriff Civil Division, 1225 Fallon Street, #104, Oakland, "
+            f"CA 94612. {COURTESY} Separate SER-001s submitted for Serrato and "
+            "Paul (same Dublin address); CHP entity SER-001 goes to Sacramento "
+            "County Sheriff for service at CHP Headquarters."
         ),
     },
 ]
 
 
 def fields_for(respondent: dict) -> dict[str, object]:
-    fields = base_fields(respondent["other"])
+    fields = base_fields(respondent)
     if respondent["kind"] == "entity":
         fields[F["serve_entity"]] = NameObject("/2")
         fields[F["entity_name"]] = respondent["entity_name"]
         fields[F["entity_person"]] = respondent["entity_person"]
-        fields[F["entity_agent"]] = respondent["entity_agent"]
+        if respondent.get("entity_agent"):
+            fields[F["entity_agent"]] = respondent["entity_agent"]
     else:
         fields[F["serve_person"]] = NameObject("/1")
         fields[F["person_name"]] = respondent["person_name"]
@@ -237,7 +262,6 @@ def fill_one(respondent: dict) -> Path:
     writer = PdfWriter()
     writer.append(reader)
     writer.update_page_form_field_values(None, fields_for(respondent))
-    # Keep fields visible/editable for review & wet/e-signature
     if writer.get_fields():
         try:
             writer.set_need_appearances_writer(True)
@@ -258,12 +282,13 @@ def verify(path: Path) -> None:
     print(f"{path.name}: {len(filled)} filled fields")
     for key in (
         F["county"],
-        F["yourname"],
+        F["address"],
+        F["city"],
         F["person_name"],
         F["entity_name"],
         F["addr"],
-        F["hearing_date"],
-        F["sig_date"],
+        F["addr_city"],
+        F["gate"],
     ):
         short = key.split(".")[-1]
         if key in filled:
@@ -274,7 +299,6 @@ def main() -> None:
     if not TEMPLATE.is_file():
         raise SystemExit(f"Missing template: {TEMPLATE}")
     OUT_DIR.mkdir(parents=True, exist_ok=True)
-    # Touch template size sanity (reject LFS pointer)
     if TEMPLATE.stat().st_size < 10_000:
         raise SystemExit(f"Template looks like an LFS pointer ({TEMPLATE.stat().st_size} bytes)")
     for respondent in RESPONDENTS:
