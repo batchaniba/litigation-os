@@ -806,8 +806,13 @@
   },
   {
     "matter": 12,
-    "label": "Alpine Default Judgment Packet — corrected case number STK-CV-UF-2026-0001094; CIV-100, Declaration, Exhibits 1–10; Plaintiff printed, signed, and mailed July 31, 2026 with POS and required default-judgment docs (companion Diamond renewed packet mailed same day); awaiting ROA posting as of Aug. 1, 2026 printout",
+    "label": "Alpine Default Judgment Packet — corrected case number STK-CV-UF-2026-0001094; CIV-100, Declaration, Exhibits 1–10; printed/signed and mailed July 31, 2026 with Diamond renewed packet via USPS Priority Mail to Stockton court (tracking 9505 5114 6005 6212 9832 68; expected delivery 08/03/2026); awaiting ROA posting as of Aug. 1, 2026 printout",
     "path": "/documents/matter-12/1094 Alpine Default Judgment Packet (Corrected Case Number, Ready to File Aug 1 2026).pdf"
+  },
+  {
+    "matter": 12,
+    "label": "USPS eReceipt — Priority Mail Flat Rate Envelope mailed July 31, 2026, 12:50 PM from Milpitas (450 S Abel St) to Stockton, CA 95202; tracking 9505 5114 6005 6212 9832 68; $12.90; expected delivery Mon 08/03/2026 — mailing of complete renewed Diamond and Alpine default judgment packets",
+    "path": "/documents/matter-12/USPS eReceipt - Priority Mail Default Packets to Stockton Court (Jul 31 2026, Tracking 9505511460056212983268).pdf"
   },
   {
     "matter": 12,
