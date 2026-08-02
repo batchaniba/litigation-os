@@ -23,10 +23,13 @@ from pleading_paper import (  # noqa: E402
     PleadingPaper,
 )
 
-SIGNATURE_IMG = os.path.join(SCRIPT_DIR, "assets", "newanforbi-pen-signature.png")
-SIG_IMG_W_PX, SIG_IMG_H_PX = 369, 101
-# Slightly tighter than the default 155pt so the pen mark sits on the line.
-SIG_WIDTH = 120
+REPO_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, "..", ".."))
+# Portfolio-wide canonical signature (see signature_stamp.py).
+SIGNATURE_IMG = os.path.join(
+    REPO_ROOT, "internal/assets/signature/brendan-newanforbi-signature.png"
+)
+SIG_IMG_W_PX, SIG_IMG_H_PX = 1450, 360
+SIG_WIDTH = 140  # native aspect ≈ 0.248 → ~35pt tall on the underscore line
 
 OUT_DIR = os.environ.get("MATTER12_DECL_OUT_DIR", "/tmp/m12build")
 COURT_LINE2 = "COUNTY OF SAN JOAQUIN"

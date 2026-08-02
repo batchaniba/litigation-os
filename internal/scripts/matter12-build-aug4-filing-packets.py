@@ -31,7 +31,9 @@ BUILD_DIR = Path("/tmp/m12build")
 FORMS_DIR = Path("/tmp/m12forms")
 UPLOADS = Path("/home/ubuntu/.cursor/projects/workspace/uploads")
 
-SIGNATURE_IMG = SCRIPT_DIR / "assets" / "newanforbi-pen-signature.png"
+# Portfolio-wide canonical signature (see signature_stamp.py).
+SIGNATURE_IMG = ROOT / "internal/assets/signature/brendan-newanforbi-signature.png"
+SIG_ASPECT = 360.0 / 1450.0  # native 1450×360
 NOTICE_PDF = UPLOADS / "Notice_to_Filing_Party_e500.pdf"
 BLANK_CIV100 = FORMS_DIR / "civ100.pdf"
 BLANK_JUD100 = FORMS_DIR / "jud100.pdf"
@@ -175,7 +177,11 @@ def check_radio_choice(doc: fitz.Document, name_contains: str, on_value) -> int:
     return n
 
 
-def stamp_sig(page: fitz.Page, rect: fitz.Rect) -> None:
+def stamp_sig(page: fitz.Page, x0: float, x1: float, y_line: float) -> None:
+    """Stamp the universal signature sitting on y_line between x0 and x1."""
+    width = x1 - x0
+    height = width * SIG_ASPECT
+    rect = fitz.Rect(x0, y_line - height, x1, y_line)
     page.draw_rect(rect, color=(1, 1, 1), fill=(1, 1, 1), width=0)
     page.insert_image(rect, filename=str(SIGNATURE_IMG), keep_proportion=True)
 
@@ -332,11 +338,11 @@ def fill_civ100(defendant_name: str, mail_name: str) -> fitz.Document:
     check_by_label(doc, "Costs and disbursements are waived")
 
     # Stamp pen signatures (right of printed-name fields)
-    # Page 1 signature: smaller and slightly higher so it clears the label below.
-    stamp_sig(doc[0], fitz.Rect(415, 658, 500, 680))
-    stamp_sig(doc[1], fitz.Rect(355, 415, 520, 450))
-    stamp_sig(doc[1], fitz.Rect(355, 610, 520, 645))
-    stamp_sig(doc[2], fitz.Rect(355, 665, 520, 700))
+    # Universal signature on each CIV-100 signature line (width ~110 → ~27pt tall).
+    stamp_sig(doc[0], 400, 510, 680)  # p1 plaintiff signature
+    stamp_sig(doc[1], 400, 510, 448)  # p2 items 4–6 declarant
+    stamp_sig(doc[1], 400, 510, 645)  # p2 item 7 declarant
+    stamp_sig(doc[2], 400, 510, 698)  # p3 item 8 declarant
 
     doc.bake(annots=True, widgets=True)
     return doc
@@ -493,7 +499,8 @@ def fill_civ110() -> fitz.Document:
                 w.field_value = w.on_state()
                 w.update()
 
-    stamp_sig(doc[0], fitz.Rect(320, 440, 500, 485))
+    # Item 2 signature: right of printed name, on the line above "(SIGNATURE)".
+    stamp_sig(doc[0], 430, 530, 469)  # ~100pt wide → ~25pt tall
 
     # Page 2 — Declaration Concerning Waived Court Fees
     set_text_exact(doc, "Item1[0].FillText109[0]", PLAINTIFF_PRINT)
@@ -509,7 +516,8 @@ def fill_civ110() -> fitz.Document:
     set_text_exact(doc, "PoP[0].DateTimeField1[0]", DATE_SHORT)
     set_text_exact(doc, "PoP[0].YourName2[0]", PLAINTIFF)
     check_radio_choice(doc, "PoP[0].CheckBox4A[", 2)  # party making declaration
-    stamp_sig(doc[1], fitz.Rect(320, 340, 500, 385))
+    # Page 2 signature: on the line above "(SIGNATURE)".
+    stamp_sig(doc[1], 430, 530, 370)
 
     doc.bake(annots=True, widgets=True)
     return doc
