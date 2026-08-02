@@ -195,10 +195,11 @@ def diamond_content() -> list[tuple[str, str]]:
             "4. The FAC was personally served on Diamond on May 12, 2026, and the "
             "Proof of Service was filed with this Court on May 18, 2026. Diamond's "
             "deadline to respond to the FAC expired on June 11, 2026. Diamond filed "
-            "no responsive pleading, demurrer, or other appearance. I have submitted "
-            "a Request for Entry of Default (Form CIV-100) against Diamond, and the "
-            "Court has entered, or will shortly enter, Diamond's default as reflected "
-            "in the Court's file.",
+            "no responsive pleading, demurrer, or other appearance. Plaintiff has "
+            "requested entry of Diamond's default by Request for Entry of Default "
+            "(Form CIV-100) submitted with this packet; the prior June 15, 2026 "
+            "request was Not Entered, and no default against Diamond appears of "
+            "record as of the execution of this Declaration.",
         ),
         (
             "PARA",
@@ -212,9 +213,8 @@ def diamond_content() -> list[tuple[str, str]]:
             "in its Diesel Exhaust Fluid (\"DEF\") and Selective Catalytic Reduction "
             "(\"SCR\") emissions systems; that the defect rendered the truck "
             "non-compliant with California emissions law and unsafe for highway "
-            "operation; that Diamond had pre-sale knowledge of the defect and "
-            "concealed it; and that Diamond's conduct was intentional, malicious, "
-            "fraudulent, and oppressive within the meaning of Civil Code section 3294.",
+            "operation; and that Diamond had pre-sale knowledge of the defect and "
+            "concealed it.",
         ),
         (
             "PARA",
@@ -611,10 +611,10 @@ def alpine_content() -> list[tuple[str, str]]:
             "5. Alpine's deadline to respond to the FAC expired thirty (30) days after "
             "service, on July 31, 2026. Alpine filed no responsive pleading, demurrer, "
             "or other appearance, and no meet-and-confer contact was received from "
-            "Alpine at any time before or after that deadline. I have submitted a "
-            "Request for Entry of Default (Form CIV-100) against Alpine, and the Court "
-            "has entered, or will shortly enter, Alpine's default as reflected in the "
-            "Court's file.",
+            "Alpine at any time before or after that deadline. Plaintiff has requested "
+            "entry of Alpine's default by Request for Entry of Default (Form CIV-100) "
+            "submitted with this packet; no default against Alpine appears of record "
+            "as of the execution of this Declaration.",
         ),
         (
             "PARA",

@@ -5,8 +5,8 @@ Each defendant packet (Diamond / Alpine) is self-contained and print-ready:
   1. Notice to Filing Party (014b) — returned with resubmission
   2. Defendant's Proof of Service cover
   3. CIV-100 (clean fill from blank Judicial Council form; signed)
-  4. CIV-110 Request for Dismissal of Does 1–20 (signed; fee-waiver decl.)
-  5. JUD-100 proposed judgment (no punitive; $53,671.20)
+  4. JUD-100 proposed judgment (no punitive; $53,671.20)
+  5. CIV-110 Request for Dismissal of Does 1–20 (signed; fee-waiver decl.)
   6. Declaration ISO Default Judgment (Aug 4; no punitive; signed)
   7. Exhibits 1–10
 
@@ -288,6 +288,11 @@ def fill_civ100(defendant_name: str, mail_name: str) -> fitz.Document:
     set_text_exact(doc, "Declaration1[0].sigDate[0]", DATE_SHORT)
     set_text_exact(doc, "Declaration1[0].sigName[0]", PLAINTIFF)
 
+    # Item 5 — CCP §585.5: all three "is not" (Unruh / Rees-Levering / §395(b)).
+    check_radio_choice(doc, "P2Li5a[0].Contract_cb[", 2)
+    check_radio_choice(doc, "P2Li5b[0].ConditionalContract_cb[", 2)
+    check_radio_choice(doc, "P2Li5c[0].Obligaition_cb[", 2)
+
     # Item 7f costs waived
     check_by_label(doc, "Costs and disbursements are waived")
     set_text_exact(doc, "Declaration2[0].sigDate[0]", DATE_SHORT)
@@ -322,8 +327,11 @@ def fill_civ100(defendant_name: str, mail_name: str) -> fitz.Document:
         )
         or (w.field_label or "").strip() in ("is", "did", "incarcerated", "other"),
     )
-    # Re-assert the "is not" / "did not" / business-entity choices after force_off.
+    # Re-assert the "is not" / "did not" / business-entity / 7f choices after force_off.
     check_radio_choice(doc, "UDAsst[", 2)
+    check_radio_choice(doc, "P2Li5a[0].Contract_cb[", 2)
+    check_radio_choice(doc, "P2Li5b[0].ConditionalContract_cb[", 2)
+    check_radio_choice(doc, "P2Li5c[0].Obligaition_cb[", 2)
     for page in doc:
         for w in page.widgets() or []:
             lab = (w.field_label or "").lower()
@@ -369,22 +377,17 @@ def fill_jud100(defendant_short: str, defendant_against: str, other_text: str) -
     set_text_exact(doc, "CourtInfo[0].CityZip[0]", COURT["cityzip"])
     set_text_exact(doc, "CourtInfo[0].Branch[0]", COURT["branch"])
 
-    # Form title: By Court + By Default
-    check_by_label(doc, "By Court")
-    for page in doc:
-        for w in page.widgets() or []:
-            lab = (w.field_label or "").strip()
-            if lab == "By Default":
-                w.field_value = w.on_state()
-                w.update()
+    # Form title: By Court + By Default (never After Court Trial — default prove-up).
+    check_by_label(doc, "By Court", exact=True)
+    check_by_label(doc, "By Default", exact=True)
 
     # Item 1 BY DEFAULT + court judgment on declaration
-    check_by_label(doc, "BY DEFAULT")
+    check_by_label(doc, "BY DEFAULT", exact=True)
     check_by_label(doc, "Court Judgment (Code of Civil Procedure Section 585(b)")
     check_by_label(doc, "plaintiff's written declaration")
 
-    # Page 2: judgment by THE COURT
-    check_by_label(doc, "THE COURT")
+    # Page 2: judgment by THE COURT (exact — "the court" also appears in item 3).
+    check_by_label(doc, "THE COURT", exact=True)
 
     # Item 5a for plaintiff / against defendant
     check_by_label(doc, "for plaintiff")
@@ -446,6 +449,51 @@ def fill_jud100(defendant_short: str, defendant_against: str, other_text: str) -
                 )
             ):
                 w.field_value = ""
+                w.update()
+
+    # Force Off incompatible / unused judgment paths before bake.
+    force_off(
+        doc,
+        lambda w: any(
+            s in (w.field_label or "").lower()
+            for s in (
+                "by clerk",
+                "after court trial",
+                "defendant did not appear at trial",
+                "on stipulation",
+                "clerk's judgment",
+                "plaintiff's testimony and other evidence",
+                "plaintiff to receive nothing from defendant",
+                "defendant named in item 5b to recover",
+                "for defendant",
+                "for cross-complainant",
+                "for cross-defendant",
+            )
+        )
+        or (
+            (w.field_label or "").strip() == "Other"
+            and "item8" not in (w.field_name or "").lower()
+        ),
+    )
+    # Re-assert the intended checks after force_off.
+    check_by_label(doc, "By Court", exact=True)
+    check_by_label(doc, "By Default", exact=True)
+    check_by_label(doc, "BY DEFAULT", exact=True)
+    check_by_label(doc, "Court Judgment (Code of Civil Procedure Section 585(b)")
+    check_by_label(doc, "plaintiff's written declaration")
+    check_by_label(doc, "THE COURT", exact=True)
+    check_by_label(doc, "for plaintiff")
+    check_by_label(doc, "Defendant named in item 5a above must")
+    for page in doc:
+        for w in page.widgets() or []:
+            name = w.field_name or ""
+            lab = (w.field_label or "").lower()
+            if "List6[0].Lia[0].Table1[0]" in name and w.field_type_string == "CheckBox":
+                if lab.strip() in ("damages", "costs") or "prejudgment interest" in lab:
+                    w.field_value = w.on_state()
+                    w.update()
+            if name.endswith("RB2Choices87[0]"):
+                w.field_value = w.on_state()
                 w.update()
 
     doc.bake(annots=True, widgets=True)
@@ -571,8 +619,8 @@ def assemble(
     out.insert_pdf(notice)
     out.insert_pdf(src, from_page=ranges["pos"][0], to_page=ranges["pos"][1] - 1)
     out.insert_pdf(civ100)
-    out.insert_pdf(civ110)
     out.insert_pdf(jud100)
+    out.insert_pdf(civ110)
     out.insert_pdf(decl)
     out.insert_pdf(src, from_page=ranges["exhibits"][0], to_page=ranges["exhibits"][1] - 1)
 
@@ -651,9 +699,10 @@ def main() -> None:
         "Diamond Truck Sales, Inc.",
         "Diamond Truck Sales, Inc., a California corporation",
         (
-            "April 4, 2023 purchase rescinded; any as-is disclaimer unenforceable. "
-            "Alpine Truck Sales, Inc. is jointly and severally liable as Diamond's "
-            "successor/alter ego (companion proposed judgment of same date)."
+            "April 4, 2023 purchase rescinded; as-is disclaimer unenforceable. "
+            "Alpine Truck Sales, Inc. is jointly and severally liable with Diamond "
+            "Truck Sales, Inc. as its successor, mere continuation, alter ego, "
+            "and/or fraudulent transferee."
         ),
     )
     alpine_jud = fill_jud100(
@@ -661,8 +710,8 @@ def main() -> None:
         "Alpine Truck Sales, Inc., a California corporation",
         (
             "Alpine Truck Sales, Inc. is jointly and severally liable with Diamond "
-            "Truck Sales, Inc. as successor, mere continuation, alter ego, and/or "
-            "fraudulent transferee; April 4, 2023 purchase rescinded; as-is "
+            "Truck Sales, Inc. as Diamond's successor, mere continuation, alter ego, "
+            "and/or fraudulent transferee. April 4, 2023 purchase rescinded; as-is "
             "disclaimer unenforceable."
         ),
     )
