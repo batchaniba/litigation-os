@@ -836,6 +836,21 @@
   },
   {
     "matter": 12,
+    "label": "FW-003 Order on Court Fee Waiver — copy for Stanislaus Sheriff service packets (supports fee-waived sheriff service; printing fees may still apply)",
+    "path": "/documents/matter-12/1094 FW003 Order on Court Fee Waiver (for Stanislaus Sheriff Service Packets).pdf"
+  },
+  {
+    "matter": 12,
+    "label": "Stanislaus Sheriff service packet — Diamond Truck Sales, Inc. (SER-001 + FW-003 + CCP §425.115 Notice; Aug. 3, 2026; email/deliver to Civil Division)",
+    "path": "/documents/matter-12/Stanislaus Sheriff Service Packet - Diamond Truck Sales (SER-001, FW-003, CCP 425.115) (Aug 3 2026).pdf"
+  },
+  {
+    "matter": 12,
+    "label": "Stanislaus Sheriff service packet — Alpine Truck Sales, Inc. (SER-001 + FW-003 + CCP §425.115 Notice; Aug. 3, 2026; email/deliver to Civil Division)",
+    "path": "/documents/matter-12/Stanislaus Sheriff Service Packet - Alpine Truck Sales (SER-001, FW-003, CCP 425.115) (Aug 3 2026).pdf"
+  },
+  {
+    "matter": 12,
     "label": "Alpine Default Judgment Packet — corrected per clerk rejection / separate CIV-100 as to Alpine only (CIV-100; Declaration ISO executed Aug. 1, 2026; POS-010; Exhibits 1–10; JUD-100; joint-and-several with Diamond); mailed July 31, 2026 with Diamond packet (USPS tracking 9505 5114 6005 6212 9832 68); filename notes pending valid re-service — confirm clerk is not still disputing Alpine POS; source: commit/64305d0",
     "path": "/documents/matter-12/1094 Alpine Default Judgment Packet (Corrected per Clerk Rejection -- Pending Valid Re-Service, Execution Date Aug 3 2026).pdf"
   },
