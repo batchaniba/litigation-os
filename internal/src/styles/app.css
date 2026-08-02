@@ -138,15 +138,52 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
 
 @media (max-width: 760px) {
   :root { --space-page: 16px; }
-  .legacy-header-inner { align-items: flex-start; padding: 16px; gap: 16px; }
-  .legacy-brand-logo { height: 112px; max-width: min(42vw, 160px); }
-  .legacy-header-main { flex: 1 1 100%; padding-left: 0; align-items: flex-start; gap: 16px; }
-  .legacy-opposing-counsel { align-items: flex-start; width: 100%; gap: 14px; }
-  .legacy-counsel-names { text-align: left; font-size: 11px; line-height: 1.55; }
-  .firm-link { flex-direction: row-reverse; justify-content: flex-end; width: 100%; }
-  .firm-external-hint { opacity: .75; transform: none; }
-  .legacy-garcia-logo { object-position: left center; }
-  .legacy-header-controls { width: 100%; align-items: stretch; gap: 10px; }
+  .legacy-header-inner {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: center;
+    padding: 16px;
+    gap: 10px 14px;
+  }
+  .legacy-brand-logo {
+    grid-column: 1;
+    grid-row: 1;
+    height: 112px;
+    max-width: min(42vw, 160px);
+    align-self: center;
+  }
+  .legacy-header-main {
+    display: contents;
+    padding-left: 0;
+  }
+  .legacy-westlaw,
+  .legacy-counsel-names {
+    display: none;
+  }
+  .legacy-opposing-counsel {
+    grid-column: 2;
+    grid-row: 1;
+    align-items: flex-end;
+    justify-self: end;
+    width: auto;
+    min-width: 0;
+    gap: 8px;
+  }
+  .legacy-header-controls {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    width: 100%;
+    align-items: stretch;
+    gap: 10px;
+  }
+  .firm-link {
+    justify-content: flex-end;
+    align-items: center;
+    width: auto;
+  }
+  .firm-link .firm-logo { height: 44px !important; width: auto; max-width: min(46vw, 168px); }
+  .legacy-garcia-logo { height: 36px !important; object-position: right center; }
+  .legacy-dag-logo { width: 44px !important; height: 44px !important; max-width: none; }
   .legacy-header-actions { width: 100%; justify-content: stretch; gap: 10px; }
   .legacy-search-trigger { min-width: 0; flex: 1; }
   .legacy-theme-toggle { flex-shrink: 0; }
@@ -177,9 +214,12 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
 }
 
 @media (max-width: 520px) {
-  .legacy-header-main { display: block; }
-  .legacy-brand-logo { height: 96px; }
-  .legacy-opposing-counsel { margin-top: 18px; }
+  .legacy-brand-logo { height: 96px; max-width: min(40vw, 140px); }
+  .legacy-header-inner { gap: 8px 10px; }
+  .legacy-opposing-counsel { gap: 6px; }
+  .firm-link .firm-logo { height: 36px !important; max-width: min(48vw, 140px); }
+  .legacy-garcia-logo { height: 30px !important; }
+  .legacy-dag-logo { width: 36px !important; height: 36px !important; }
   .legacy-clock-units { transform: scale(.88); transform-origin: left center; }
   .legacy-deadline-description { width: 100%; }
   .legacy-search-trigger { gap: 10px; padding-inline: 12px; }
