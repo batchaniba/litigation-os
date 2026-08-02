@@ -4,11 +4,12 @@
 Each defendant packet (Diamond / Alpine) is self-contained and print-ready:
   1. Notice to Filing Party (014b) — returned with resubmission
   2. Defendant's Proof of Service cover
-  3. CIV-100 (clean fill from blank Judicial Council form; signed)
-  4. JUD-100 proposed judgment (no punitive; $53,671.20)
-  5. CIV-110 Request for Dismissal of Does 1–20 (signed; fee-waiver decl.)
-  6. Declaration ISO Default Judgment (Aug 4; no punitive; signed)
-  7. Exhibits 1–10
+  3. Civil ROA Summary (FullCourt; shows Alpine POS filed / service of record)
+  4. CIV-100 (clean fill from blank Judicial Council form; signed)
+  5. JUD-100 proposed judgment (no punitive; $53,671.20)
+  6. CIV-110 Request for Dismissal of Does 1–20 (signed; fee-waiver decl.)
+  7. Declaration ISO Default Judgment (Aug 4; no punitive; signed)
+  8. Exhibits 1–10
 
 Amounts (punitive omitted):
   Demand $49,368.65 + Interest $4,302.55 + Costs $0.00 = $53,671.20
@@ -40,6 +41,7 @@ UPLOADS = Path("/home/ubuntu/.cursor/projects/workspace/uploads")
 # Portfolio universal signature (internal/assets/signature/…).
 SIGNATURE_IMG = Path(SIGNATURE_PATH)
 NOTICE_PDF = UPLOADS / "Notice_to_Filing_Party_e500.pdf"
+ROA_PDF = OUT_DIR / "FullCourt Enterprise - Civil ROA Summary (as of Aug 2 2026).pdf"
 BLANK_CIV100 = FORMS_DIR / "civ100.pdf"
 BLANK_JUD100 = FORMS_DIR / "jud100.pdf"
 BLANK_CIV110 = FORMS_DIR / "civ110.pdf"
@@ -613,11 +615,13 @@ def assemble(
 ) -> None:
     src = fitz.open(src_path)
     notice = fitz.open(NOTICE_PDF)
+    roa = fitz.open(ROA_PDF)
     decl = fitz.open(decl_path)
 
     out = fitz.open()
     out.insert_pdf(notice)
     out.insert_pdf(src, from_page=ranges["pos"][0], to_page=ranges["pos"][1] - 1)
+    out.insert_pdf(roa)
     out.insert_pdf(civ100)
     out.insert_pdf(jud100)
     out.insert_pdf(civ110)
@@ -629,6 +633,7 @@ def assemble(
     out.close()
     src.close()
     notice.close()
+    roa.close()
     decl.close()
     shutil.move(str(tmp), str(out_path))
     print(f"Wrote {out_path.name} ({fitz.open(out_path).page_count} pages)")
@@ -639,6 +644,8 @@ def verify(path: Path) -> None:
     full = "\n".join(page.get_text() for page in doc)
     checks = {
         "has_notice": "NOTICE TO FILING PARTY" in full,
+        "has_roa": "ROA Summary" in full or "CIVIL ROA SUMMARY" in full,
+        "roa_alpine_served": "Alpine Truck Sales" in full and "07/01/2026" in full,
         "demand_49368": DEMAND in full,
         "interest": INTEREST in full,
         "total_53671": TOTAL in full,
@@ -660,9 +667,9 @@ def verify(path: Path) -> None:
     print(f"Verify {path.name}:")
     for k, ok in checks.items():
         print(f"  {'OK' if ok else 'FAIL'}: {k}")
-    # Spot-check CIV-100 page (after notice+pos = index 2)
-    if doc.page_count > 2:
-        civ_txt = doc[2].get_text()
+    # Spot-check CIV-100 page (after notice + POS + 3-page ROA = index 5)
+    if doc.page_count > 5:
+        civ_txt = doc[5].get_text()
         print(f"  CIV-100 contains 1a date {FAC_FILED}: {FAC_FILED in civ_txt}")
         print(f"  CIV-100 contains demand: {DEMAND in civ_txt}")
     print(f"  pages={doc.page_count}")
@@ -674,6 +681,8 @@ def main() -> None:
         raise SystemExit(f"Missing signature image: {SIGNATURE_IMG}")
     if not NOTICE_PDF.is_file():
         raise SystemExit(f"Missing Notice to Filing Party: {NOTICE_PDF}")
+    if not ROA_PDF.is_file():
+        raise SystemExit(f"Missing Civil ROA Summary: {ROA_PDF}")
     if not DIAMOND_SRC.is_file() or not ALPINE_SRC.is_file():
         raise SystemExit("Missing pre-fix packet backups in /tmp/m12build")
 
