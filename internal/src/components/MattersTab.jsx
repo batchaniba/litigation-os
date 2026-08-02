@@ -53,12 +53,12 @@ const MatterCard = ({ matter: summary, isOpen, onToggle }) => {
         style={{ width: "100%", padding: "16px 22px", cursor: "pointer", display: "flex", alignItems: "center", gap: 16, flexWrap: "wrap", background: "transparent", border: "none", textAlign: "left", color: "inherit", font: "inherit", lineHeight: "inherit", margin: 0 }}
       >
         <div style={{ width: 36, height: 36, borderRadius: 8, background: theme.navySubtleBg, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "'DM Sans', sans-serif", fontSize: 14, fontWeight: 700, color: GOLD, flexShrink: 0 }}>{c.number}</div>
-        <div style={{ flex: 1, minWidth: 200 }}>
+        <div style={{ flex: "1 1 180px", minWidth: 0 }}>
           <div style={{ fontSize: 16, fontWeight: 700, color: theme.heading, marginBottom: 3 }}>{c.caption}</div>
           <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: theme.subtleText }}>{c.case_no} · {c.court}</div>
         </div>
-        <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 6 }}>
-          <div style={{ display: "flex", gap: 8, alignItems: "center", flexWrap: "wrap" }}>
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 6, flex: "1 1 160px", minWidth: 0 }}>
+          <div style={{ display: "flex", gap: 8, alignItems: "center", flexWrap: "wrap", justifyContent: "flex-end" }}>
             <ClusterBadge cluster={c.cluster} />
             <TypeBadge type={c.type} />
             <ProceedingBadge proceeding={c.proceeding} />
@@ -67,7 +67,7 @@ const MatterCard = ({ matter: summary, isOpen, onToggle }) => {
             {isArchivedMatter(c) && <ArchiveBadge />}
           </div>
           {c.note && (
-            <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 600, fontStyle: "italic", color: theme.secondaryText, whiteSpace: "nowrap" }}>
+            <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 600, fontStyle: "italic", color: theme.secondaryText, textAlign: "right" }}>
               {showPending ? "⏳" : "📌"} {c.note}
             </div>
           )}
@@ -78,7 +78,7 @@ const MatterCard = ({ matter: summary, isOpen, onToggle }) => {
       {/* Expanded detail */}
       {isOpen && (
         <div id={`matter-detail-${c.number}`} style={{ padding: "0 22px 22px", borderTop: `1px solid ${theme.cardBorder}` }}>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20, paddingTop: 18 }}>
+          <div className="grid-2" style={{ paddingTop: 18 }}>
             <div>
               <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 10, color: GOLD, fontWeight: 700, letterSpacing: 2, textTransform: "uppercase", marginBottom: 8 }}>Defendants</div>
               <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: theme.secondaryText, lineHeight: 1.6, margin: 0 }}>{c.defendants}</p>
@@ -109,7 +109,7 @@ const MatterCard = ({ matter: summary, isOpen, onToggle }) => {
             <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: theme.mutedText, lineHeight: 1.7, margin: 0 }}>{c.key_facts}</p>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20, marginTop: 18 }}>
+          <div className="grid-2" style={{ marginTop: 18 }}>
             <div>
               <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 10, color: GOLD, fontWeight: 700, letterSpacing: 2, textTransform: "uppercase", marginBottom: 8 }}>Procedural Status</div>
               <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: theme.mutedText, lineHeight: 1.6, margin: 0 }}>{c.procedural_status}</p>

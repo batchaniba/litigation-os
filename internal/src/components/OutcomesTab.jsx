@@ -166,9 +166,7 @@ function OutcomeCard({ item, color, statusLabel, theme }) {
           padding: "0 24px 24px",
           borderTop: `1px solid ${theme.cardBorder}`,
         }}>
-          <div style={{
-            display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20, paddingTop: 18,
-          }}>
+          <div className="grid-2" style={{ paddingTop: 18 }}>
             <div>
               <Label>Claims</Label>
               <p style={bodyText(theme)}>{item.claims}</p>
@@ -442,9 +440,7 @@ function DemandCard({ item, theme }) {
 
       {open && (
         <div style={{ padding: "0 24px 24px", borderTop: `1px solid ${theme.cardBorder}` }}>
-          <div style={{
-            display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20, paddingTop: 18,
-          }}>
+          <div className="grid-2" style={{ paddingTop: 18 }}>
             <div>
               <Label>Demand Sent</Label>
               <p style={bodyText(theme)}>{item.sent_date}</p>

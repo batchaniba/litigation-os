@@ -165,7 +165,7 @@ function MatterCard({ m, view, expanded, onToggle, theme }) {
           </div>
 
           {/* Risk + settlement notes */}
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, marginTop: 14 }}>
+          <div className="grid-2" style={{ gap: 10, marginTop: 14 }}>
             <div style={{ background: theme.deepBg, borderRadius: 6, padding: "10px 12px" }}>
               <div style={{
                 fontFamily: "'DM Sans', sans-serif", fontSize: 9, fontWeight: 700,
@@ -280,7 +280,7 @@ export const DamagesTab = ({ damagesView, setDamagesView }) => {
             })}
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 14, marginTop: 24 }}>
+          <div className="grid-3" style={{ marginTop: 24 }}>
             {VIEWS.map(v => {
               const total = PORTFOLIO_TOTALS[v];
               const isActive = v === damagesView;
@@ -329,7 +329,7 @@ export const DamagesTab = ({ damagesView, setDamagesView }) => {
           </div>
 
           {/* Tier comparison strip */}
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 10, marginBottom: 20 }}>
+          <div className="grid-3" style={{ gap: 10, marginBottom: 20 }}>
             {VIEWS.map(v => {
               const total = MATTER_TOTALS[v];
               const isActive = v === damagesView;

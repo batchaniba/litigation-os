@@ -67,14 +67,14 @@ export const CalendarTab = () => {
       </div>
 
       {/* Weekday header row */}
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(7, 1fr)", marginBottom: 4 }}>
+      <div className="calendar-grid" style={{ marginBottom: 4, gap: 0 }}>
         {WEEKDAYS.map(w => (
           <div key={w} style={{ textAlign: "center", fontFamily: "'DM Sans', sans-serif", fontSize: 10, fontWeight: 700, color: theme.subtleText, letterSpacing: 1, textTransform: "uppercase", padding: "4px 0" }}>{w}</div>
         ))}
       </div>
 
       {/* 6x7 day grid */}
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(7, 1fr)", gap: 4, marginBottom: 24 }}>
+      <div className="calendar-grid" style={{ marginBottom: 24 }}>
         {cells.map(cell => {
           const events = byDay.get(cell.key) || [];
           const isToday = cell.key === todayKey;
@@ -90,8 +90,9 @@ export const CalendarTab = () => {
               aria-label={`${MONTH_NAMES[cell.date.getUTCMonth()]} ${cell.date.getUTCDate()}, ${cell.date.getUTCFullYear()}${events.length ? `, ${events.length} event(s)` : ""}`}
               onClick={() => { if (events.length > 0) setSelectedKey(cell.key); }}
               onKeyDown={e => { if ((e.key === "Enter" || e.key === " ") && events.length > 0) { e.preventDefault(); setSelectedKey(cell.key); } }}
+              className="calendar-cell"
               style={{
-                minHeight: 84, padding: "6px 8px", borderRadius: 6, cursor: events.length > 0 ? "pointer" : "default",
+                padding: "6px 8px", borderRadius: 6, cursor: events.length > 0 ? "pointer" : "default",
                 opacity: cell.inMonth ? 1 : 0.4,
                 background: isSelected ? `${GOLD}15` : theme.cardBg,
                 border: isToday ? `2px solid ${GOLD}` : `1px solid ${theme.cardBorder}`,
