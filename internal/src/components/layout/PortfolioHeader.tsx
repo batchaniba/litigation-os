@@ -1,4 +1,5 @@
-import { NavLink } from "react-router-dom";
+import { useEffect, useId, useState } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 import { BODY_GRAY, GOLD } from "../../constants";
 import { NAV_ITEMS } from "../../routes";
 import { withBase } from "../../utils/paths";
@@ -14,6 +15,25 @@ export function PortfolioHeader({
   onToggleTheme: () => void;
   theme: any;
 }) {
+  const location = useLocation();
+  const navId = useId();
+  const [menuOpen, setMenuOpen] = useState(false);
+  const activeLabel = NAV_ITEMS.find((item) =>
+    item.end ? location.pathname === item.path : location.pathname === item.path || location.pathname.startsWith(`${item.path}/`)
+  )?.label ?? "Dashboard";
+
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [location.pathname]);
+
+  useEffect(() => {
+    const onResize = () => {
+      if (window.matchMedia("(min-width: 761px)").matches) setMenuOpen(false);
+    };
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
+  }, []);
+
   return (
     <header className="legacy-header" style={{ background: theme.headerBg, borderBottom: `2px solid ${GOLD}` }}>
       <div className="legacy-header-inner">
@@ -89,7 +109,17 @@ export function PortfolioHeader({
               {darkMode ? "☀" : "🌙"}
             </button>
           </div>
-          <nav className="legacy-navigation" aria-label="Portfolio sections">
+          <button
+            type="button"
+            className="legacy-nav-menu-toggle"
+            aria-expanded={menuOpen}
+            aria-controls={navId}
+            onClick={() => setMenuOpen((open) => !open)}
+          >
+            <span aria-hidden="true">{menuOpen ? "▴" : "▾"}</span>
+            <span>{menuOpen ? "Hide sections" : `Sections · ${activeLabel}`}</span>
+          </button>
+          <nav id={navId} className={`legacy-navigation${menuOpen ? " is-open" : ""}`} aria-label="Portfolio sections">
             {NAV_ITEMS.map((item) => (
               <NavLink
                 key={item.path}

@@ -140,7 +140,7 @@ export const CostOfCounselTab = () => {
         </div>
       </div>
 
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 14, marginBottom: 24 }}>
+      <div className="grid-3" style={{ marginBottom: 24 }}>
         {VIEWS.map((v) => {
           const t = summary.totalEstimatedCost[v];
           const isActive = v === view;

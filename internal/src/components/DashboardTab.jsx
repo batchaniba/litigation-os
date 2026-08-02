@@ -75,7 +75,7 @@ export const DashboardTab = ({ upcomingEvents, setClusterFilter, setActiveTab })
   return (
     <div>
       {/* Stats Row */}
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 16, marginBottom: 28 }}>
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 200px), 1fr))", gap: 16, marginBottom: 28 }}>
         {[
           { label: "Active Matters", value: activeMatters, sub: `${federalCount} Federal · ${stateCount} State · ${totalMatters} total` },
           { label: "Jurisdictions", value: jurisdictions.length, sub: "Courts across CA" },
@@ -92,7 +92,7 @@ export const DashboardTab = ({ upcomingEvents, setClusterFilter, setActiveTab })
       </div>
 
       {/* Two-column: Upcoming + Clusters */}
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20, marginBottom: 28 }}>
+      <div className="grid-2" style={{ marginBottom: 28 }}>
         {/* Upcoming */}
         <div style={{ background: theme.cardBg, borderRadius: 10, padding: 24, border: `1px solid ${theme.cardBorder}` }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, color: GOLD, margin: "0 0 16px", fontFamily: "'DM Sans', sans-serif", letterSpacing: 0.5 }}>Upcoming Deadlines</h3>

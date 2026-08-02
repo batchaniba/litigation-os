@@ -368,7 +368,7 @@ export const CensusTab = ({ setActiveTab, setClusterFilter, setStatusFilter, set
       <section style={sectionStyle}>
         <ExhibitHeading theme={theme} exhibit="Exhibit A — Scale" title="Thirty matters. One name on every caption."
           intro="Every case below lists the same plaintiff, appearing without counsel. Read together, the docket is less a single lawsuit than a standing legal practice run out of one person's own record-keeping." />
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 1, background: theme.cardBorder, border: `1px solid ${theme.cardBorder}`, borderRadius: 6, overflow: "hidden" }}>
+        <div className="grid-cards" style={{ gap: 1, background: theme.cardBorder, border: `1px solid ${theme.cardBorder}`, borderRadius: 6, overflow: "hidden" }}>
           <StatTile theme={theme} label="Matters Tracked" value={totalMatters} sub={`${liveMatters} live · ${archivedMatters} closed/archived`} />
           <StatTile theme={theme} label="Active Filing Span" value={filingSpanLabel} sub="earliest → latest complaint" />
           <StatTile theme={theme} label="Court Systems" value={distinctCourts} sub={`${PORTFOLIO.jurisdictions.length} jurisdictions listed`} />
@@ -420,7 +420,7 @@ export const CensusTab = ({ setActiveTab, setClusterFilter, setStatusFilter, set
           <VerticalBarChart theme={theme} data={monthly} todayIndex={todayMonthIdx} ariaLabel={`Timeline ${velocityMode === "filing" ? "filings" : "events"} by month, 2026`}
             onColumnClick={(d, i) => { setShowPastEvents?.(todayMonthIdx === null || i <= todayMonthIdx); setActiveTab("Timeline"); }} />
         </ChartCard>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 12, marginTop: 16 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 200px), 1fr))", gap: 12, marginTop: 16 }}>
           <div style={{ background: theme.cardBg, border: `1px solid ${theme.cardBorder}`, borderLeft: `3px solid ${GOLD}`, borderRadius: 4, padding: "12px 14px" }}>
             <div style={{ fontFamily: MONO, fontSize: 18, fontWeight: 700, color: theme.heading }}>~3.0 / mo</div>
             <div style={{ fontFamily: SANS, fontSize: 11.5, color: theme.subtleText, marginTop: 3 }}>New matters filed in 2026's peak filing window — about one every 10 days</div>
@@ -502,7 +502,7 @@ export const CensusTab = ({ setActiveTab, setClusterFilter, setStatusFilter, set
             onRowClick={(d) => { setDamagesView?.(d.key); setActiveTab("Damages"); }} />
         </ChartCard>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 14, margin: "16px 0" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 220px), 1fr))", gap: 14, margin: "16px 0" }}>
           <div style={{ background: theme.cardBg, border: `1px solid ${theme.cardBorder}`, borderLeft: `3px solid ${GREEN}`, borderRadius: 4, padding: "14px 16px" }}>
             <div style={{ fontFamily: MONO, fontSize: 20, fontWeight: 700, color: theme.heading }}>{fmt(settledTotal)}</div>
             <div style={{ fontFamily: SANS, fontSize: 11.5, color: theme.subtleText, marginTop: 3 }}>Realized — {settledDeals.length} settlement{settledDeals.length !== 1 ? "s" : ""} to date</div>
