@@ -708,10 +708,9 @@ def main() -> None:
         "Diamond Truck Sales, Inc.",
         "Diamond Truck Sales, Inc., a California corporation",
         (
-            "April 4, 2023 purchase rescinded; as-is disclaimer unenforceable. "
-            "Alpine Truck Sales, Inc. is jointly and severally liable with Diamond "
-            "Truck Sales, Inc. as its successor, mere continuation, alter ego, "
-            "and/or fraudulent transferee."
+            "The April 4, 2023 purchase transaction between Plaintiff and Diamond "
+            "Truck Sales, Inc. is rescinded, and the contractual \"as-is\" disclaimer "
+            "is unenforceable."
         ),
     )
     alpine_jud = fill_jud100(

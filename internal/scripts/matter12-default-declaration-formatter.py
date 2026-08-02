@@ -203,8 +203,8 @@ def diamond_content() -> list[tuple[str, str]]:
         ),
         (
             "PARA",
-            "5. Because Diamond has defaulted, the well-pleaded factual allegations of "
-            "the FAC concerning liability are deemed admitted. "
+            "5. Upon the Clerk's entry of Diamond's default, the well-pleaded factual "
+            "allegations of the FAC concerning liability are deemed admitted. "
             "(<<i:Steven M. Garber & Assocs. v. Eskandarian>> (2007) 150 Cal.App.4th "
             "813, 823; <<i:Kim v. Westmoore Partners, Inc.>> (2011) 201 Cal.App.4th "
             "267, 281.) The well-pleaded allegations include, without limitation: that "
@@ -219,8 +219,8 @@ def diamond_content() -> list[tuple[str, str]]:
         (
             "PARA",
             "6. This Declaration addresses only the amount and proof of damages. I "
-            "have made no effort to relitigate liability, which is deemed established "
-            "by the default.",
+            "have made no effort to relitigate liability, which will be deemed "
+            "established upon the Clerk's entry of Diamond's default.",
         ),
         ("HEADER", "III.  THE TRANSACTION AND THE FAILURE"),
         (
