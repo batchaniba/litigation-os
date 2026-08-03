@@ -2,8 +2,8 @@
 """Assemble Matter 20 Alameda Sheriff Civil service packets.
 
 Each packet (one per Individual Respondent) is ordered:
-  SER-001 (5) → FW-001 Request to Waive Court Fees (2) → Opposition + MPA (12)
-= 19 pages.
+  SER-001 (5) → FW-003 Order on Court Fee Waiver (4) → Opposition + MPA (12)
+= 21 pages.
 
 Destination: Alameda County Sheriff Civil Division, for service at
 CHP Dublin Area duty station (4999 Gleason Drive, Dublin, CA 94568).
@@ -18,7 +18,7 @@ from pypdf import PdfReader, PdfWriter
 ROOT = Path(__file__).resolve().parents[2]
 DOC_DIR = ROOT / "internal/public/documents/matter-20"
 
-FEE_WAIVER = DOC_DIR / "Request to Waive Court Fees.pdf"
+FEE_WAIVER = DOC_DIR / "FW-003 Order on Court Fee Waiver - GRANTED (Jun 3 2026).pdf"
 OPPOSITION = DOC_DIR / "Opposition-to-Individual-Respondents-Demurrers.pdf"
 
 RESPONDENTS = [
@@ -27,21 +27,21 @@ RESPONDENTS = [
         "ser": DOC_DIR
         / "SER-001 Request for Sheriff to Serve Court Papers - G Serrato (Jul 31 2026).pdf",
         "out": DOC_DIR
-        / "Alameda Sheriff Service Packet - G Serrato (SER-001, Fee Waiver, Opposition-MPA) (Aug 3 2026).pdf",
+        / "Alameda Sheriff Service Packet - G Serrato (SER-001, FW-003, Opposition-MPA) (Aug 3 2026).pdf",
     },
     {
         "key": "Paul",
         "ser": DOC_DIR
         / "SER-001 Request for Sheriff to Serve Court Papers - Gary Paul (Jul 31 2026).pdf",
         "out": DOC_DIR
-        / "Alameda Sheriff Service Packet - Gary Paul (SER-001, Fee Waiver, Opposition-MPA) (Aug 3 2026).pdf",
+        / "Alameda Sheriff Service Packet - Gary Paul (SER-001, FW-003, Opposition-MPA) (Aug 3 2026).pdf",
     },
     {
         "key": "Dutra",
         "ser": DOC_DIR
         / "SER-001 Request for Sheriff to Serve Court Papers - Eric Dutra (Jul 31 2026).pdf",
         "out": DOC_DIR
-        / "Alameda Sheriff Service Packet - Eric Dutra (SER-001, Fee Waiver, Opposition-MPA) (Aug 3 2026).pdf",
+        / "Alameda Sheriff Service Packet - Eric Dutra (SER-001, FW-003, Opposition-MPA) (Aug 3 2026).pdf",
     },
 ]
 
@@ -75,7 +75,7 @@ def main() -> None:
         n_ser, n_fw, n_opp, total = assemble(item["ser"], item["out"])
         print(
             f"{item['key']}: {total} pp "
-            f"(SER-001 {n_ser} + FW-001 {n_fw} + Opposition/MPA {n_opp}) "
+            f"(SER-001 {n_ser} + FW-003 {n_fw} + Opposition/MPA {n_opp}) "
             f"→ {item['out'].name}"
         )
 
