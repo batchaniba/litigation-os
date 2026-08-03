@@ -1502,8 +1502,28 @@
     "type": "milestone"
   },
   {
+    "date": "Jul. 31, 2026",
+    "event": "Amazon.com Services, LLC served — per Sacramento County Sheriff's Civil File Details (File No. 2026027206, Case Manager C. Saelee; printed Aug. 3, 2026), Summons & Complaint SERVED 12:56 PM on Amazon.com Services, LLC, a Delaware limited liability company, accepted by Rebecca Vang, Authorized Agent; both defendants now served — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554)",
+    "matters": "29",
+    "type": "milestone"
+  },
+  {
     "date": "Sep. 26, 2026",
     "event": "Service/proof-of-service deadline (computed) — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554); 60 days from the Jul. 28, 2026 filing (CRC 3.110(b)); Sept. 26 falls on a Saturday, so CCP §12a rolls the practical deadline to Monday, Sept. 28, 2026",
+    "matters": "29",
+    "type": "deadline",
+    "upcoming": true
+  },
+  {
+    "date": "Aug. 26, 2026",
+    "event": "Meet-and-confer deadline (computed) — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554); CCP §430.41(a)(2) requires meet-and-confer at least 5 calendar days before the Aug. 31, 2026 responsive-pleading deadline, if either defendant intends to demur; otherwise that defendant must file a declaration for the automatic 30-day extension",
+    "matters": "29",
+    "type": "deadline",
+    "upcoming": true
+  },
+  {
+    "date": "Aug. 31, 2026",
+    "event": "Responsive pleading deadline (computed) — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554); 30 days from the Jul. 31, 2026 service date on both defendants (CCP §412.20(a)(3)); the raw 30-day count lands on Sunday, Aug. 30, extended to Monday, Aug. 31, 2026 per CCP §12a",
     "matters": "29",
     "type": "deadline",
     "upcoming": true
