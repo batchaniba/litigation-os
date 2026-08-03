@@ -223,6 +223,7 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | Aug. 10, 2026 | 28 | Reply deadline — Motion for Protective Order, Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504) |
 | Aug. 12, 2026 | 12 | Default prove-up hearing (CMC converted per clerk phone statement) — Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094), 8:30 AM, Dept. 11B, Hon. Robert T. Waters; June 15 CIV-100 Not Entered |
 | Aug. 14, 2026 | 26 | Meet-and-confer target date (computed) — Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113) |
+| Aug. 18, 2026 | 29 | Fee waiver hearing — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554), 11:30 AM, Department FHO, Hayward Hall of Justice, 24405 Amador Street, Hayward, CA 94544, before Hon. Jamilah A. Jefferson |
 | Aug. 19, 2026 | 7,8 | Gov. claim deadline — Candelaria state tort Bane Act damages (6 months from Feb. 19, 2026 accrual; claim must be filed with DGS) |
 | Aug. 19, 2026 | 25 | Meet-and-confer deadline (computed) — Newanforbi v. Federal Express Corporation (STK-CV-UWT-2026-0009118) |
 | Aug. 21, 2026 | 20 | AG reply deadline (computed) — Respondents' Reply to Petitioner's Opposition to Demurrer due 5 court days before Aug. 28, 2026 hearing per CRC 3.1320(b) — Newanforbi v. California Highway Patrol et al. (26CV191136) |

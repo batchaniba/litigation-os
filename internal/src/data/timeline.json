@@ -1508,10 +1508,23 @@
     "type": "milestone"
   },
   {
+    "date": "Aug. 3, 2026",
+    "event": "FW-003 Order on Court Fee Waiver received — NOT GRANTED: the court checked box 4c(1), 'needs more information,' rather than granting the request outright as in Matters 25, 26, and 27; signed Jul. 31, 2026 by Hon. Jamilah A. Jefferson, electronically served/mailed from Hayward Aug. 3, 2026, 11:12 AM PDT; stated ground: 'No income or source of any money or benefit provided; unclear how Plaintiff is living; or whether any money is paid to any source for any reason each month' — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554)",
+    "matters": "29",
+    "type": "milestone"
+  },
+  {
     "date": "Sep. 26, 2026",
     "event": "Service/proof-of-service deadline (computed) — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554); 60 days from the Jul. 28, 2026 filing (CRC 3.110(b)); Sept. 26 falls on a Saturday, so CCP §12a rolls the practical deadline to Monday, Sept. 28, 2026",
     "matters": "29",
     "type": "deadline",
+    "upcoming": true
+  },
+  {
+    "date": "Aug. 18, 2026",
+    "event": "Fee waiver hearing — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554), 11:30 AM, Department FHO, Hayward Hall of Justice, 24405 Amador Street, Hayward, CA 94544, before Hon. Jamilah A. Jefferson; Plaintiff must appear with proof of his financial circumstances (income, living situation) or the fee waiver will be denied outright and Plaintiff will have 10 days to pay the filing fees in full",
+    "matters": "29",
+    "type": "hearing",
     "upcoming": true
   },
   {
