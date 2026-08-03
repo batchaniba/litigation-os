@@ -104,6 +104,11 @@
       "filed": true
     },
     {
+      "label": "FW-003 Order on Court Fee Waiver — GRANTED (Alameda Sup. Ct.; clerk electronic service Jun. 3, 2026, 10:45 AM PDT)",
+      "path": "/documents/matter-20/FW-003 Order on Court Fee Waiver - GRANTED (Jun 3 2026).pdf",
+      "filed": true
+    },
+    {
       "label": "Receipt (June 3, 2026)",
       "path": "/documents/matter-20/RECEIPT.pdf",
       "filed": true
@@ -246,6 +251,21 @@
     {
       "label": "SER-001 Request for Sheriff to Serve Court Papers — Eric Dutra (filled Jul. 31, 2026; Alameda County Sheriff Civil; serve at CHP Dublin Area duty station, 4999 Gleason Drive; fee waiver; unsigned — sign before mailing to Sheriff)",
       "path": "/documents/matter-20/SER-001 Request for Sheriff to Serve Court Papers - Eric Dutra (Jul 31 2026).pdf",
+      "filed": false
+    },
+    {
+      "label": "Alameda Sheriff service packet — G. Serrato / Gerardo Serrato (SER-001 + FW-003 Order on Court Fee Waiver + Opposition/MPA; Aug. 3, 2026; mail/deliver to Alameda County Sheriff Civil for service at CHP Dublin Area, 4999 Gleason Drive; sign SER-001 before sending)",
+      "path": "/documents/matter-20/Alameda Sheriff Service Packet - G Serrato (SER-001, FW-003, Opposition-MPA) (Aug 3 2026).pdf",
+      "filed": false
+    },
+    {
+      "label": "Alameda Sheriff service packet — Gary Paul (SER-001 + FW-003 Order on Court Fee Waiver + Opposition/MPA; Aug. 3, 2026; mail/deliver to Alameda County Sheriff Civil for service at CHP Dublin Area, 4999 Gleason Drive; sign SER-001 before sending)",
+      "path": "/documents/matter-20/Alameda Sheriff Service Packet - Gary Paul (SER-001, FW-003, Opposition-MPA) (Aug 3 2026).pdf",
+      "filed": false
+    },
+    {
+      "label": "Alameda Sheriff service packet — Eric Dutra (SER-001 + FW-003 Order on Court Fee Waiver + Opposition/MPA; Aug. 3, 2026; mail/deliver to Alameda County Sheriff Civil for service at CHP Dublin Area, 4999 Gleason Drive; sign SER-001 before sending)",
+      "path": "/documents/matter-20/Alameda Sheriff Service Packet - Eric Dutra (SER-001, FW-003, Opposition-MPA) (Aug 3 2026).pdf",
       "filed": false
     }
   ],
