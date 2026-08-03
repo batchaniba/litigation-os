@@ -164,10 +164,11 @@ def main() -> None:
     fill_pdf(CM_SRC, CM_OUT, cm_fields())
 
     # Signature stamps on the signature lines (not the typed-name fields).
-    # CIV-110 p1 item 2 (~y 468); CIV-110 p2 declaration (~y 368); CM-200 p1 (~y 702)
-    stamp_signature(CIV_OUT, 0, 330, 540, 468)
-    stamp_signature(CIV_OUT, 1, 330, 540, 368)
-    stamp_signature(CM_OUT, 0, 330, 540, 702)
+    # ~75pt wide → ~19pt tall; bottom sits 2pt above the rule so ink
+    # does not cover "(SIGNATURE)" and clears the left arrow glyph.
+    stamp_signature(CIV_OUT, 0, 455, 530, 467)
+    stamp_signature(CIV_OUT, 1, 455, 530, 368)
+    stamp_signature(CM_OUT, 0, 455, 530, 700)
 
     print(f"Wrote {CIV_OUT.name}")
     print(f"Wrote {CM_OUT.name}")
