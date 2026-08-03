@@ -1644,11 +1644,17 @@
     "type": "event"
   },
   {
-    "date": "Aug. 12, 2026",
-    "event": "Macy's LOA preferred return date — BNN's preferred date to return to Captain Selling & Support role at Macy's Stockton Sherwood; contingent on resolution of Santa Clara GPS Unit reporting obligations that made Stockton employment impossible",
+    "date": "Jul. 31, 2026",
+    "event": "Macy's employment formally terminated by resignation — BNN texted Macy's manager Lety Villarreal at 10:42 AM resigning effective immediately, stating 'My parole supervision was abruptly transferred to Santa Clara County which is where I reside now, and making the commute is, well, impossible for me right now'; Lety accepted the resignation at 10:45 AM, 'It was a pleasure working with you... Good luck take care.' Converts the open-ended LOA (preferred return date Aug. 12, 2026, now moot) into a dated, written, self-attributed job loss tying the termination directly to the retaliatory transfer",
     "matters": "30",
-    "type": "deadline",
-    "upcoming": true
+    "type": "milestone"
+  },
+  {
+    "date": "Aug. 12, 2026",
+    "event": "SUPERSEDED — Macy's LOA preferred return date is now moot: BNN formally resigned from Macy's effective July 31, 2026, citing the Santa Clara parole transfer and commute; he did not return to the Captain Selling & Support role",
+    "matters": "30",
+    "type": "event",
+    "upcoming": false
   },
   {
     "date": "Jul. 18, 2026",
