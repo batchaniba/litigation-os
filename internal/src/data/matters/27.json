@@ -4,7 +4,7 @@
   "case_no": "26CV199902",
   "court": "Alameda Sup. Ct.",
   "claims": "PC §290.46(j)(2)(E) Violation, Wrongful Termination in Violation of Public Policy, ICRAA, Invasion of Privacy, Negligence Per Se (Evid. Code §669), UCL §17200",
-  "status": "Employment TERMINATED July 15, 2026. Pre-Filing Demand Letters sent to both Randstad and RK Logistics July 20, 2026 — $85,000 settlement demand each, response deadline 5:00 PM PT August 2, 2026. Verified Complaint for Damages e-filed July 20, 2026 via One Legal (Reference No. 28788633) — Complaint, Civil Case Cover Sheet, and Request to Waive Court Fees all ACCEPTED; case number 26CV199902 assigned, Hon. Karin Schwartz, Dept. 20. The accompanying Summons was REJECTED by the clerk (defendant name on the Summons did not match the Complaint caption's full corporate designations); corrected, resubmitted, and ELECTRONICALLY FILED/ACCEPTED July 21, 2026. SER-001 Requests for Sheriff to Serve Court Papers executed July 24, 2026 for both defendants (service deadline Aug. 7, 2026). Sacramento County Sheriff Civil Bureau e-filing order O26005291 (Filing Packet FP26007154, Levy Officer File 2026026857) ACCEPTED July 27, 2026. SERVED July 30, 2026, 1:34 PM on both Randstad US, LLC, a Delaware limited liability company, and The RK Logistics Group, Inc., a California corporation — each accepted by Josh Swindell, Authorized Agent (1 attempt each; $50.00 fee each, $100.00 applied) — per Sacramento County Sheriff's Civil File Details (File No. 2026026857, Case Manager G. Her; printed Aug. 1, 2026); well ahead of the Aug. 7, 2026 SER-001 deadline and the Rule 3.110(b) proof-of-service deadline of September 18, 2026. Note the Sheriff's Civil File itself shows Closed as of 07/31/2026, reflecting only that the sheriff's service assignment is complete — the underlying court action remains active before Hon. Karin Schwartz, Dept. 20; CMC set for December 17, 2026. COMPUTED: responsive pleading due August 31, 2026 (30 days from service, CCP §412.20(a)(3); August 29 falls on a Saturday, extended to Monday per CCP §12a); if either defendant elects to demur, CCP §430.41(a)(2) meet-and-confer must occur at least 5 days earlier — by August 26, 2026 — or that defendant must file a declaration for the automatic 30-day extension.",
+  "status": "Employment TERMINATED July 15, 2026. Pre-Filing Demand Letters sent to both Randstad and RK Logistics July 20, 2026 — $85,000 settlement demand each, response deadline 5:00 PM PT August 2, 2026. Verified Complaint for Damages e-filed July 20, 2026 via One Legal (Reference No. 28788633) — Complaint, Civil Case Cover Sheet, and Request to Waive Court Fees all ACCEPTED; case number 26CV199902 assigned, Hon. Karin Schwartz, Dept. 20. The accompanying Summons was REJECTED by the clerk (defendant name on the Summons did not match the Complaint caption's full corporate designations); corrected, resubmitted, and ELECTRONICALLY FILED/ACCEPTED July 21, 2026. SER-001 Requests for Sheriff to Serve Court Papers executed July 24, 2026 for both defendants (service deadline Aug. 7, 2026). Sacramento County Sheriff Civil Bureau e-filing order O26005291 (Filing Packet FP26007154, Levy Officer File 2026026857) ACCEPTED July 27, 2026. SERVED July 30, 2026, 1:34 PM on both Randstad US, LLC, a Delaware limited liability company, and The RK Logistics Group, Inc., a California corporation — each accepted by Josh Swindell, Authorized Agent (1 attempt each; $50.00 fee each, $100.00 applied) — per Sacramento County Sheriff's Civil File Details (File No. 2026026857, Case Manager G. Her; printed Aug. 1, 2026); well ahead of the Aug. 7, 2026 SER-001 deadline and the Rule 3.110(b) proof-of-service deadline of September 18, 2026. Note the Sheriff's Civil File itself shows Closed as of 07/31/2026, reflecting only that the sheriff's service assignment is complete — the underlying court action remains active before Hon. Karin Schwartz, Dept. 20; CMC set for December 17, 2026. COMPUTED: responsive pleading due August 31, 2026 (30 days from service, CCP §412.20(a)(3); August 29 falls on a Saturday, extended to Monday per CCP §12a); if either defendant elects to demur, CCP §430.41(a)(2) meet-and-confer must occur at least 5 days earlier — by August 26, 2026 — or that defendant must file a declaration for the automatic 30-day extension. PUNITIVE-DAMAGES NOTICES DRAFTED, NOT YET SERVED: separate CCP §425.115 Notices of Amount of Punitive Damages Sought ($25,000.00 placeholder each — confirm before serving) were drafted Aug. 4, 2026 for Randstad and RK Logistics, prompted by the same gap that forced a corrective filing in Matter 12 (Diamond/Alpine) — a default judgment cannot include punitive damages under Civ. Code §3294 unless each defendant was individually served with this statutory notice before default is taken, and pleading punitives in the complaint alone does not satisfy §425.115. Neither defendant was served with a §425.115 notice alongside the original summons and complaint. ACTION ITEM: personally serve each notice on its named defendant (Sheriff or process server — certified mail is unavailable under §425.115(f) until that defendant makes a general appearance) before the August 31, 2026 responsive-pleading deadline passes, so punitive damages remain available if either defendant defaults.",
   "lifecycle": "active",
   "proceeding": "state_civil",
   "phase": "responsive_deadline",
@@ -150,7 +150,7 @@
       "path": "/documents/matter-27/Randstad Request to Waive Court Fees.pdf"
     },
     {
-      "label": "Order on Court Fee Waiver (Superior Court)",
+      "label": "FW-003 Order on Court Fee Waiver — GRANTED (filed Jul. 20, 2026, Alameda Sup. Ct., Deputy Clerk A. Gospel)",
       "path": "/documents/matter-27/Randstad Order on Court Fee Waiver (Superior Court).pdf"
     },
     {
@@ -196,6 +196,22 @@
     {
       "label": "Sacramento County Sheriff Civil File Status — SERVED Jul. 30, 2026, 1:34 PM on both Randstad US, LLC and The RK Logistics Group, Inc. (Josh Swindell, Authorized Agent); File No. 2026026857 (printed Aug. 1, 2026)",
       "path": "/documents/matter-27/Sacramento County Sheriff Civil File Status - Service Confirmed (Aug 1 2026).pdf"
+    },
+    {
+      "label": "Notice of Amount of Punitive Damages Sought (CCP §425.115) — Randstad US, LLC ($25,000.00 placeholder; drafted Aug. 4, 2026; NOT YET SERVED — must be personally served before default is taken)",
+      "path": "/documents/matter-27/Notice of Amount of Punitive Damages Sought (CCP 425.115) - Randstad US LLC (Aug 4 2026).pdf"
+    },
+    {
+      "label": "Notice of Amount of Punitive Damages Sought (CCP §425.115) — The RK Logistics Group, Inc. ($25,000.00 placeholder; drafted Aug. 4, 2026; NOT YET SERVED — must be personally served before default is taken)",
+      "path": "/documents/matter-27/Notice of Amount of Punitive Damages Sought (CCP 425.115) - RK Logistics Group Inc (Aug 4 2026).pdf"
+    },
+    {
+      "label": "SER-001 Request for Sheriff to Serve Court Papers — Randstad US, LLC, c/o CSC - Lawyers Incorporating Service, Sacramento County (drafted Aug. 4, 2026, to transmit the CCP §425.115 Notice; FW-003 fee waiver GRANTED Jul. 20, 2026, no sheriff fee; NOT YET SUBMITTED)",
+      "path": "/documents/matter-27/SER-001 Request for Sheriff to Serve Court Papers - Randstad US LLC (CCP 425.115 Notice) (Aug 4 2026).pdf"
+    },
+    {
+      "label": "SER-001 Request for Sheriff to Serve Court Papers — The RK Logistics Group, Inc., c/o CSC - Lawyers Incorporating Service, Sacramento County (drafted Aug. 4, 2026, to transmit the CCP §425.115 Notice; FW-003 fee waiver GRANTED Jul. 20, 2026, no sheriff fee; NOT YET SUBMITTED)",
+      "path": "/documents/matter-27/SER-001 Request for Sheriff to Serve Court Papers - RK Logistics Group Inc (CCP 425.115 Notice) (Aug 4 2026).pdf"
     }
   ],
   "archived": false
