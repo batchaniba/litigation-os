@@ -2,9 +2,32 @@
 
 # Interactive Litigation Portfolio
 
-An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi**, Pro Se / In Propria Persona. The portfolio tracks 31 civil matters across federal and California state courts, providing a structured view of case status, procedural history, damages exposure, and overarching legal theories. **Live site:** https://interactive-litigation-portfolio.vercel.app · 
+An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi**, Pro Se / In Propria Persona. The portfolio tracks 31 civil matters across federal and California state courts, providing a structured view of case status, procedural history, damages exposure, and overarching legal theories.
+
+**Live site:** [interactive-litigation-portfolio.vercel.app](https://interactive-litigation-portfolio.vercel.app)
 
 <br clear="left" />
+
+## Contents
+
+- [Overview](#overview)
+- [Case Clusters](#case-clusters)
+  - [1 — CHP Traffic Stop, DUI Arrest & DMV APS Challenge](#cluster-1--chp-traffic-stop-dui-arrest--dmv-aps-challenge-matters-1-2-7-8-20-24)
+  - [2 — Parole Retaliation, HOPE Abuse & Policy 19-03](#cluster-2--parole-retaliation-hope-abuse--policy-19-03-matters-36-11-1318-21-28-30)
+  - [3 — Consumer Fraud / Defective Vehicle](#cluster-3--consumer-fraud--defective-vehicle-matter-12)
+  - [4 — Administrative Writs & Habeas Corpus](#cluster-4--administrative-writs--habeas-corpus-matters-9-10-19)
+  - [5 — Employment / Statutory Violation](#cluster-5--employment--statutory-violation-matters-22-25-26-27-29-31)
+- [All Matters](#all-matters)
+- [Upcoming Deadlines](#upcoming-deadlines)
+- [Damages Summary](#damages-summary)
+- [Attorney Fees Analysis](#attorney-fees-analysis)
+- [Legal Theories](#legal-theories)
+- [Tech Stack](#tech-stack)
+- [Local Development](#local-development)
+- [Build](#build)
+- [Deployment](#deployment)
+
+---
 
 ## Overview
 
@@ -12,15 +35,13 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 |---|---|
 | Plaintiff | Brendan Ngehsi Newanforbi |
 | Representation | Pro Se / In Propria Persona |
+| Jurisdictions | USDC E.D. Cal., USDC N.D. Cal., San Joaquin Sup. Ct., Alameda Sup. Ct., Sacramento Sup. Ct., Santa Clara Sup. Ct. |
 <!-- PORTFOLIO:OVERVIEW_COUNTS:START -->
 | Total Matters | 31 |
 | Active / Open | 14 |
 | Settled | 1 (Matter 22 — Newanforbi v. Pilot Travel Centers LLC, July 14, 2026) |
 | Dismissed / Closed / Abandoned | 16 |
 <!-- PORTFOLIO:OVERVIEW_COUNTS:END -->
-| Jurisdictions | USDC E.D. Cal., USDC N.D. Cal., San Joaquin Sup. Ct., Alameda Sup. Ct., Sacramento Sup. Ct., Santa Clara Sup. Ct. |
-| Housing Status | **Homeless since July 2, 2026** — direct consequence of retaliatory inter-county parole transfer (Stockton → Santa Clara) imposed immediately after filing Matter 15 (Newanforbi v. CDCR, et al.); transfer caused loss of Stockton family housing; Matters 3, 9, and 19 are also potential retaliatory predicate acts |
-| Representation | Pro Se / In Propria Persona — all 31 matters self-litigated; estimated equivalent private-counsel cost: $756,084–$1,251,376 |
 <!-- PORTFOLIO:OVERVIEW_EXPOSURE:START -->
 | Aggregate Exposure (Conservative) | ~$1,161,000+ |
 | Aggregate Exposure (Moderate) | ~$2,957,000+ |
@@ -31,6 +52,12 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 <!-- PORTFOLIO:CLOSED_COUNT_NOTE:START -->
 *Of the 16 dismissed/closed/abandoned matters: 7 abandoned, 7 dismissed, 2 otherwise closed (structured `lifecycle` on each matter JSON). See [All Matters](#all-matters) below for the full disposition table. Pre-filing matters stay in the Active table.*
 <!-- PORTFOLIO:CLOSED_COUNT_NOTE:END -->
+
+> **Housing status:** Homeless since July 2, 2026 — a direct consequence of a retaliatory inter-county parole transfer (Stockton → Santa Clara) imposed immediately after filing Matter 15 (*Newanforbi v. CDCR, et al.*). The transfer caused loss of Stockton family housing; Matters 3, 9, and 19 are also potential retaliatory predicate acts.
+>
+> **Cost of self-representation:** All 31 matters are self-litigated. Estimated equivalent private-counsel cost: **$756,084–$1,251,376** (see [Attorney Fees Analysis](#attorney-fees-analysis)).
+
+[↑ Contents](#contents)
 
 ---
 
@@ -117,6 +144,8 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 - **Matter 29** (Newanforbi v. Amazon.com Services, LLC and Accurate Background LLC) — anticipated Alameda Superior Court; PC §290.46(j) / FCRA / ICRAA / IIED failure to hire. Application submitted; pre-hire appointment attended July 7, 2026 (Fremont, CA); Accurate Background LLC (shortcode 45996) BGC submitted July 7, 2026; BGC pending 10+ days as of July 17, 2026; adverse action anticipated. Sixth PC §290.46(j) matter in portfolio; complaint not yet filed. **Critical precedent: Lerma v. Amazon.com Services, LLC et al., No. 8:22-cv-01727 (C.D. Cal., settled Sept. 29, 2023)** — putative class action against the same two defendants (Amazon + Accurate Background) on the same PC §290.46(j) registry theory; Amazon's post-settlement continuation of the identical practice in 2026 establishes willfulness under Civ. Code §3294.
 - **Matter 31** (Newanforbi v. First Advantage LLC) — anticipated San Joaquin Superior Court; FCRA §1681b(b) / FCRA §1681e(b) / ICRAA / Negligence Per Se / UCL §17200. **Identified July 30, 2026 via a portfolio-wide gap analysis**, not yet filed and no demand letter sent. First Advantage LLC is the background-check vendor that generated and transmitted the registry-flagged reports and every pre-adverse/adverse notice underlying both Matter 25 (FedEx, March 2025) and Matter 26 (UPS, July 2024) — the same role Accurate Background LLC plays in Matter 29 and HireRight played in the abandoned Matter 23 — yet First Advantage itself was never joined as a defendant in either matter. This vendor-liability theory is additive to, not duplicative of, Matters 25/26: it targets First Advantage's own furnishing conduct rather than the employers' use of the reports, and deliberately excludes the emotional-distress/lost-opportunity damages already claimed there to avoid double-counting.
 
+[↑ Contents](#contents)
+
 ---
 
 ## All Matters
@@ -175,6 +204,8 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | 23 | Newanforbi v. Macy's Inc. et al. | TBD | San Joaquin Sup. Ct. | NOT PURSUING — Voluntarily Dismissed. The anticipated registry-based adverse action never occurred: Macy's honored the offer, and Plaintiff worked the position from May 28, 2026… |
 <!-- PORTFOLIO:CLOSED_MATTERS:END -->
 
+[↑ Contents](#contents)
+
 ---
 
 ## Upcoming Deadlines
@@ -222,6 +253,8 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | Mar. 1, 2027 | 30 | OUTER STATUTE OF LIMITATIONS (computed) — Government Claims Act six-month suit-filing window for the Bane Act and IIED state-law claims, Newanforbi v. Moua, et al. (Matter 30) |
 <!-- PORTFOLIO:UPCOMING_DEADLINES:END -->
 
+[↑ Contents](#contents)
+
 ---
 
 ## Damages Summary
@@ -253,6 +286,8 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 
 *Matters 3 (Derrick), 5 (Palacios), and 15 (CDCR/Dodd/Noguchi) have been excluded/reduced above following their abandonment or dismissal. Matter 3's Lost Income, Emotional Distress, Punitive, and Fees components; Matter 5's Lost CDL Wages, Bane Act/Treble, Punitive, and Fees components; and Matter 15's Lost CDL Wages, Liberty Deprivation, Emotional Distress, and Punitive components were all subtracted from their matching rows. Two gaps are worth flagging: Matter 5's own damages breakdown has no dedicated Emotional Distress line item, so that row still carries its unquantified share; and Matter 15's Out-of-Pocket Compliance Costs ($20K/$40K/$60K) and Retaliatory Transfer Losses ($15K/$30K/$64K) components never had a matching category row at all, so removing Matter 15 pulls more out of the Per-Matter total than out of this table. The Emotional Distress row's conservative estimate would have gone negative after Matter 15's subtraction (already reduced by Matter 3's share); it's floored at $0 rather than shown negative. Matter 30 (Moua) is included above at full value — it is pending, not abandoned; see the Cluster 2 notes.*
 
+[↑ Contents](#contents)
+
 ---
 
 ## Attorney Fees Analysis
@@ -269,6 +304,8 @@ Plaintiff is representing himself pro se across all 31 matters. The figures belo
 | **Estimated Hours** | | **2,700.3 hrs** | **3,577.3 hrs** | **4,469.2 hrs** |
 
 *Plaintiff has litigated all 30 matters pro se, absorbing the full economic equivalent of the above without compensation. Fee-shifting statutes (42 U.S.C. §1988, PC §290.46(j)(4)(A), RICO 18 U.S.C. §1964(c), FCRA, ICRAA) apply across the majority of active matters — mandatory fee recovery upon prevailing substantially offsets or eliminates the above costs.*
+
+[↑ Contents](#contents)
 
 ---
 
@@ -295,6 +332,8 @@ Plaintiff is representing himself pro se across all 31 matters. The figures belo
 10. **PC §290.46(j)(2)(E) Pattern Across Five Employers** — Matter 22 (Pilot, settled), Matter 25 (FedEx), Matter 26 (UPS), Matter 27 (Randstad/RK Logistics), Matter 29 (Amazon). Each case's willfulness finding supports punitive damages in the others. Matter 22's settlement confirms the statutory claim is viable; Matter 27's InfoMart report is the strongest evidence set (Plaintiff holds the actual BGC report; Billing Code "RK LOGISTICS" documents the end-client's criteria configuration); Matter 29's Accurate Background SMS (shortcode 45996) establishes the BGC vendor relationship and consent. **Matter 29 carries a uniquely powerful willfulness predicate:** *Lerma v. Amazon.com Services, LLC et al.*, No. 8:22-cv-01727 (C.D. Cal., filed Sept. 2022, settled Sept. 29, 2023) — a putative class action in which Amazon and Accurate Background LLC were co-defendants on the identical PC §290.46(j) registry-for-employment theory — Amazon's post-settlement continuation of the same BGC practice in July 2026 eliminates any good-faith defense and satisfies the "conscious disregard" standard for punitive damages under Cal. Civ. Code §3294 as to both defendants. **Matter 27's July 21, 2026 denial letter tests this theory directly:** RK Logistics, through Garcia & Gurney, ALC, argued (1) Randstad — not RK Logistics — was the employer, and (2) the adverse decision was MVR-based rather than registry-based. Neither ground disturbs the pattern: the employer-status argument reaches only the Tameny claim (not the other five causes of action) and is undercut by RK Logistics' own Transportation Manager's written rejection email; the MVR-based defense cites a commercial (Class A) disqualification that does not apply to the non-commercial Class C position at issue, and predates Plaintiff's Class C license reissue by three weeks. Randstad's own FCRA waiting-period violation is untouched by either defense and remains unanswered.
 
 11. **Consumer Reporting Agency Liability for Registry-Flagged Reports (Matter 31)** — First Advantage LLC generated and transmitted the registry-flagged background reports and every pre-adverse/adverse notice underlying both Matter 25 (FedEx, March 2025) and Matter 26 (UPS, July 2024) — an identical notice template and cadence, eight months apart, for two different employers — yet was never itself joined as a defendant in either matter, unlike the comparable vendors elsewhere in the same cluster (Accurate Background, Matter 29; HireRight, the abandoned Matter 23). This theory targets the vendor's own furnishing conduct under FCRA §§1681b(b) and 1681e(b) and ICRAA, rather than the employers' use of the reports, and is pled as additive to — not duplicative of — Matters 25 and 26.
+
+[↑ Contents](#contents)
 
 ---
 
