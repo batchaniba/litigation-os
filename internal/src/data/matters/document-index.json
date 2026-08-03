@@ -1490,6 +1490,11 @@
     "path": "/documents/matter-25/LA County Sheriff Civil File Status - Service Confirmed (Jul 25 2026).pdf"
   },
   {
+    "matter": 25,
+    "label": "Notice of Amount of Punitive Damages Sought (CCP §425.115) — Federal Express Corporation ($25,000.00 placeholder; drafted Aug. 4, 2026; NOT YET SERVED — must be personally served before default is taken)",
+    "path": "/documents/matter-25/Notice of Amount of Punitive Damages Sought (CCP 425.115) - Federal Express Corporation (Aug 4 2026).pdf"
+  },
+  {
     "matter": 26,
     "label": "Complaint for Damages (drafted/verified July 15, 2026)",
     "path": "/documents/matter-26/Newanforbi v UPS Complaint.pdf"
@@ -1563,6 +1568,11 @@
     "matter": 26,
     "label": "POS-010 Proof of Service of Summons, signed (Levying Officer File No. 2026026041; executed Jul. 23, 2026 by Sheriff's Authorized Agent Jim Cooper) — mailed to San Joaquin Superior Court Jul. 28, 2026, expected to arrive/file on or about Jul. 30, 2026",
     "path": "/documents/matter-26/POS-010 Proof of Service of Summons - United Parcel Service (Jul 23 2026).pdf"
+  },
+  {
+    "matter": 26,
+    "label": "Notice of Amount of Punitive Damages Sought (CCP §425.115) — United Parcel Service, Inc. ($25,000.00 placeholder; drafted Aug. 4, 2026; NOT YET SERVED — must be personally served before default is taken)",
+    "path": "/documents/matter-26/Notice of Amount of Punitive Damages Sought (CCP 425.115) - United Parcel Service Inc (Aug 4 2026).pdf"
   },
   {
     "matter": 27,
@@ -1733,6 +1743,16 @@
     "matter": 27,
     "label": "Sacramento County Sheriff Civil File Status — SERVED Jul. 30, 2026, 1:34 PM on both Randstad US, LLC and The RK Logistics Group, Inc. (Josh Swindell, Authorized Agent); File No. 2026026857 (printed Aug. 1, 2026)",
     "path": "/documents/matter-27/Sacramento County Sheriff Civil File Status - Service Confirmed (Aug 1 2026).pdf"
+  },
+  {
+    "matter": 27,
+    "label": "Notice of Amount of Punitive Damages Sought (CCP §425.115) — Randstad US, LLC ($25,000.00 placeholder; drafted Aug. 4, 2026; NOT YET SERVED — must be personally served before default is taken)",
+    "path": "/documents/matter-27/Notice of Amount of Punitive Damages Sought (CCP 425.115) - Randstad US LLC (Aug 4 2026).pdf"
+  },
+  {
+    "matter": 27,
+    "label": "Notice of Amount of Punitive Damages Sought (CCP §425.115) — The RK Logistics Group, Inc. ($25,000.00 placeholder; drafted Aug. 4, 2026; NOT YET SERVED — must be personally served before default is taken)",
+    "path": "/documents/matter-27/Notice of Amount of Punitive Damages Sought (CCP 425.115) - RK Logistics Group Inc (Aug 4 2026).pdf"
   },
   {
     "matter": 28,
@@ -2153,6 +2173,16 @@
     "matter": 29,
     "label": "Sacramento County Sheriff Civil File Status — SERVED Jul. 31, 2026, 12:56 PM on Amazon.com Services, LLC (Rebecca Vang, Authorized Agent); File No. 2026027206, Case Manager C. Saelee (printed Aug. 3, 2026)",
     "path": "/documents/matter-29/Sacramento County Sheriff Civil File Status - Amazon.com Services LLC Service Confirmed (Aug 3 2026).pdf"
+  },
+  {
+    "matter": 29,
+    "label": "Notice of Amount of Punitive Damages Sought (CCP §425.115) — Amazon.com Services, LLC ($25,000.00 placeholder; drafted Aug. 4, 2026; NOT YET SERVED — must be personally served before default is taken)",
+    "path": "/documents/matter-29/Notice of Amount of Punitive Damages Sought (CCP 425.115) - Amazon.com Services LLC (Aug 4 2026).pdf"
+  },
+  {
+    "matter": 29,
+    "label": "Notice of Amount of Punitive Damages Sought (CCP §425.115) — Accurate Background LLC ($25,000.00 placeholder; drafted Aug. 4, 2026; NOT YET SERVED — must be personally served before default is taken)",
+    "path": "/documents/matter-29/Notice of Amount of Punitive Damages Sought (CCP 425.115) - Accurate Background LLC (Aug 4 2026).pdf"
   },
   {
     "matter": 30,
