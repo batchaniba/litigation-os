@@ -217,6 +217,20 @@
     "upcoming": true
   },
   {
+    "date": "Aug. 26, 2026",
+    "event": "Meet-and-confer deadline (computed) — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554); CCP §430.41(a)(2) requires meet-and-confer at least 5 calendar days before the Aug. 31, 2026 responsive-pleading deadline, if either defendant intends to demur; otherwise that defendant must file a declaration for the automatic 30-day extension",
+    "matters": "29",
+    "type": "deadline",
+    "upcoming": true
+  },
+  {
+    "date": "Aug. 31, 2026",
+    "event": "Responsive pleading deadline (computed) — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554); 30 days from the Jul. 31, 2026 service date on both defendants (CCP §412.20(a)(3)); the raw 30-day count lands on Sunday, Aug. 30, extended to Monday, Aug. 31, 2026 per CCP §12a",
+    "matters": "29",
+    "type": "deadline",
+    "upcoming": true
+  },
+  {
     "date": "Jan. 6, 2027",
     "event": "Case Management Conference — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554), 10:00 AM, Dept. 520, Hon. Jamilah Jefferson, Hayward Hall of Justice, 24405 Amador Street, Hayward, CA 94544",
     "matters": "29",
