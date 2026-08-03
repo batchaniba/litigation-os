@@ -85,6 +85,26 @@
     {
       "label": "Invoice and Signed Proof of Service — Pilot Travel Centers",
       "path": "/documents/matter-22/Invoice and Signed Proof of Service - Pilot Travel Centers.pdf"
+    },
+    {
+      "label": "Confidential Settlement Agreement and Release — fully signed (DocuSign; employee Jul. 13, 2026 / employer Jul. 14, 2026); $35,000; requires CIV-110 dismissal with prejudice within 5 business days of payment receipt",
+      "path": "/documents/matter-22/Confidential Settlement Agreement and Release - Pilot (Signed Jul 14 2026).pdf",
+      "filed": false
+    },
+    {
+      "label": "Email — Yarbrough settlement confirmation and request to enter dismissal with prejudice (Jul. 14, 2026)",
+      "path": "/documents/matter-22/Email - Yarbrough Settlement Confirmation and Dismissal Request (Jul 14 2026).pdf",
+      "filed": false
+    },
+    {
+      "label": "CM-200 Notice of Settlement of Entire Case — unconditional; settlement date Jul. 14, 2026; executed Aug. 3, 2026 (CRC 3.1385)",
+      "path": "/documents/matter-22/CM-200 Notice of Settlement of Entire Case (Pilot, Executed Aug 3 2026).pdf",
+      "filed": false
+    },
+    {
+      "label": "CIV-110 Request for Dismissal — entire action with prejudice; executed Aug. 3, 2026; fee-waiver declaration item 2c ($10k+) checked, item 3 No pending repayment of waived-fee lien (Gov. Code §68637)",
+      "path": "/documents/matter-22/CIV-110 Request for Dismissal - Entire Action With Prejudice (Pilot, Executed Aug 3 2026).pdf",
+      "filed": false
     }
   ],
   "archived": false
