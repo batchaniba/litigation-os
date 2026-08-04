@@ -1260,6 +1260,25 @@
     "type": "deadline"
   },
   {
+    "date": "Aug. 3, 2026",
+    "event": "SER-001 requests transmitting the CCP §425.115 Notices of Amount of Punitive Damages Sought submitted to Sacramento County Sheriff Civil Bureau e-filing (5:56 PM) — E-Filing Order #O26005511, bundling Filing Packet #FP26007495 (Randstad US, LLC and The RK Logistics Group, Inc., 26CV199902) and Filing Packet #FP26007496 (United Parcel Service, Inc., STK-CV-UWT-2026-0009113); status SUBMITTED, under review, $0.00 (Waiver - Recoverable) — Newanforbi v. Randstad US, LLC, et al.",
+    "matters": "27,26",
+    "type": "filing"
+  },
+  {
+    "date": "Aug. 4, 2026",
+    "event": "SER-001 request transmitting the CCP §425.115 Notice of Amount of Punitive Damages Sought for Federal Express Corporation emailed to LASD Civil Process Bureau (csdwebmail@lasd.org) at 8:00 AM — SER-001, Notice, and granted FW-003 order attached; no confirmation received as of this writing — Newanforbi v. Federal Express Corporation (STK-CV-UWT-2026-0009118)",
+    "matters": "25",
+    "type": "filing"
+  },
+  {
+    "date": "Aug. 12, 2026",
+    "event": "Outer bound for Sacramento County Sheriff Civil Bureau to process E-Filing Order #O26005511 (CCP §425.115 Notices for Randstad US, LLC, The RK Logistics Group, Inc., and United Parcel Service, Inc.) — Sheriff advises allowing up to 7 business days from the Aug. 3, 2026 submission; this office has historically accepted SER-001 submissions same-day, so acceptance is expected well before this date",
+    "matters": "26,27",
+    "type": "deadline",
+    "upcoming": true
+  },
+  {
     "date": "Jul. 15, 2026",
     "event": "DISMISSED — San Joaquin Superior Court (Hon. George J. Abdallah, Jr.) GRANTS Demurrer to FAC WITHOUT LEAVE TO AMEND — Newanforbi v. Palacios et al. (STK-CV-UF-2026-0001032); exhaustion grounds; tentative confirmed after oral argument; state court action disposed. Dismissal resolves the state-court protective order's scope restriction and supplies the predicate facts for the NDCA complaint against HOPE (Matter 28).",
     "matters": "5",
