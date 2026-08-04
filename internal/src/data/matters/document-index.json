@@ -876,6 +876,11 @@
   },
   {
     "matter": 12,
+    "label": "USPS eReceipt — Priority Mail Flat Rate Envelope to Stockton, CA 95202, tracking 9505 5114 6003 6215 9407 65 (11:22 AM, $12.90, est. delivery Aug. 5, 2026), Milpitas Post Office, Aug. 3, 2026 — Diamond/Alpine default judgment packet with SASE enclosed for return of processed copies",
+    "path": "/documents/matter-12/Gmail - USPS eReceipt - Default Judgment Packet with SASE Postage (Aug 3 2026).pdf"
+  },
+  {
+    "matter": 12,
     "label": "CIV-110 Request for Dismissal of Does 1–20 without prejudice (executed August 4, 2026; also in each Aug 4 packet)",
     "path": "/documents/matter-12/1094 CIV-110 Request for Dismissal of Does 1-20 (Without Prejudice, Executed Aug 4 2026).pdf"
   },
@@ -1266,18 +1271,23 @@
   },
   {
     "matter": 20,
-    "label": "Alameda Sheriff service packet — G. Serrato / Gerardo Serrato (SER-001 + FW-003 Order on Court Fee Waiver + Opposition/MPA; Aug. 3, 2026; mail/deliver to Alameda County Sheriff Civil for service at CHP Dublin Area, 4999 Gleason Drive; sign SER-001 before sending)",
+    "label": "Alameda Sheriff service packet — G. Serrato / Gerardo Serrato (SER-001 + FW-003 Order on Court Fee Waiver + Opposition/MPA; Aug. 3, 2026; MAILED to Alameda County Sheriff Civil for service at CHP Dublin Area, 4999 Gleason Drive)",
     "path": "/documents/matter-20/Alameda Sheriff Service Packet - G Serrato (SER-001, FW-003, Opposition-MPA) (Aug 3 2026).pdf"
   },
   {
     "matter": 20,
-    "label": "Alameda Sheriff service packet — Gary Paul (SER-001 + FW-003 Order on Court Fee Waiver + Opposition/MPA; Aug. 3, 2026; mail/deliver to Alameda County Sheriff Civil for service at CHP Dublin Area, 4999 Gleason Drive; sign SER-001 before sending)",
+    "label": "Alameda Sheriff service packet — Gary Paul (SER-001 + FW-003 Order on Court Fee Waiver + Opposition/MPA; Aug. 3, 2026; MAILED to Alameda County Sheriff Civil for service at CHP Dublin Area, 4999 Gleason Drive)",
     "path": "/documents/matter-20/Alameda Sheriff Service Packet - Gary Paul (SER-001, FW-003, Opposition-MPA) (Aug 3 2026).pdf"
   },
   {
     "matter": 20,
-    "label": "Alameda Sheriff service packet — Eric Dutra (SER-001 + FW-003 Order on Court Fee Waiver + Opposition/MPA; Aug. 3, 2026; mail/deliver to Alameda County Sheriff Civil for service at CHP Dublin Area, 4999 Gleason Drive; sign SER-001 before sending)",
+    "label": "Alameda Sheriff service packet — Eric Dutra (SER-001 + FW-003 Order on Court Fee Waiver + Opposition/MPA; Aug. 3, 2026; MAILED to Alameda County Sheriff Civil for service at CHP Dublin Area, 4999 Gleason Drive)",
     "path": "/documents/matter-20/Alameda Sheriff Service Packet - Eric Dutra (SER-001, FW-003, Opposition-MPA) (Aug 3 2026).pdf"
+  },
+  {
+    "matter": 20,
+    "label": "USPS eReceipt — Large Envelope + First-Class postage to Oakland, CA 94612 (11:18 AM, $7.13, weight 12.3 oz), Milpitas Post Office, Aug. 3, 2026 — combined Serrato/Paul/Dutra Alameda Sheriff service packet mailing",
+    "path": "/documents/matter-20/Gmail - USPS eReceipt - Alameda Sheriff Service Packet Postage (Aug 3 2026).pdf"
   },
   {
     "matter": 21,
@@ -1336,13 +1346,23 @@
   },
   {
     "matter": 22,
-    "label": "CM-200 Notice of Settlement of Entire Case — unconditional; settlement date Jul. 14, 2026; executed Aug. 3, 2026 (CRC 3.1385)",
+    "label": "CM-200 Notice of Settlement of Entire Case — unconditional; settlement date Jul. 14, 2026; executed Aug. 3, 2026 (CRC 3.1385); transmitted to Sarah Thompson for first-class mail service on Pilot c/o Jon Yarbrough same day; signed proof of service outstanding",
     "path": "/documents/matter-22/CM-200 Notice of Settlement of Entire Case (Pilot, Executed Aug 3 2026).pdf"
   },
   {
     "matter": 22,
-    "label": "CIV-110 Request for Dismissal — entire action with prejudice; executed Aug. 3, 2026; fee-waiver declaration item 2c ($10k+) checked, item 3 No pending repayment of waived-fee lien (Gov. Code §68637)",
+    "label": "Gmail — Mail Service Request to Sarah Thompson re CM-200 Notice of Settlement (Aug. 3, 2026, 1:07 PM; confirmed 2:26 PM) — Pilot Travel Centers LLC c/o Jon Yarbrough, 5508 Lonas Drive, Knoxville, TN 37909",
+    "path": "/documents/matter-22/Gmail - Mail Service Request to Sarah Thompson re CM-200 Notice of Settlement (Aug 3 2026).pdf"
+  },
+  {
+    "matter": 22,
+    "label": "CIV-110 Request for Dismissal — entire action with prejudice; executed Aug. 3, 2026; fee-waiver declaration item 2c ($10k+) checked (Gov. Code §68637); mailed to the court with $435.00 waived-fee repayment attached",
     "path": "/documents/matter-22/CIV-110 Request for Dismissal - Entire Action With Prejudice (Pilot, Executed Aug 3 2026).pdf"
+  },
+  {
+    "matter": 22,
+    "label": "USPS eReceipt — Money Order Serial #55201761577 ($435.00, purchased 12:53 PM) and First-Class postage (12:54 PM), Milpitas Post Office, Aug. 3, 2026 — CIV-110 waived-fee repayment mailing",
+    "path": "/documents/matter-22/Gmail - USPS eReceipt - CIV-110 Money Order and Postage (Aug 3 2026).pdf"
   },
   {
     "matter": 23,
@@ -1496,8 +1516,13 @@
   },
   {
     "matter": 25,
-    "label": "SER-001 Request for Sheriff to Serve Court Papers — Federal Express Corporation, c/o Ct Corporation System, Los Angeles County (drafted Aug. 4, 2026, to transmit the CCP §425.115 Notice; FW-003 fee waiver GRANTED, no sheriff fee; NOT YET SUBMITTED)",
+    "label": "SER-001 Request for Sheriff to Serve Court Papers — Federal Express Corporation, c/o Ct Corporation System, Los Angeles County (drafted Aug. 4, 2026, to transmit the CCP §425.115 Notice; FW-003 fee waiver GRANTED, no sheriff fee; EMAILED to LASD Civil Process Aug. 4, 2026)",
     "path": "/documents/matter-25/SER-001 Request for Sheriff to Serve Court Papers - Federal Express Corporation (CCP 425.115 Notice) (Aug 4 2026).pdf"
+  },
+  {
+    "matter": 25,
+    "label": "Gmail — SER-001 Service Request Emailed to LASD Civil Process Bureau (csdwebmail@lasd.org), Aug. 4, 2026, 8:00 AM — SER-001, CCP §425.115 Notice, and FW-003 grant order attached; no LASD confirmation received as of this writing",
+    "path": "/documents/matter-25/Gmail - SER-001 Service Request Emailed to LASD Civil Process (Aug 4 2026) - CCP 425.115 Notice.pdf"
   },
   {
     "matter": 26,
@@ -1581,8 +1606,13 @@
   },
   {
     "matter": 26,
-    "label": "SER-001 Request for Sheriff to Serve Court Papers — United Parcel Service, Inc., c/o CSC - Lawyers Incorporating Service, Sacramento County (drafted Aug. 4, 2026, to transmit the CCP §425.115 Notice; FW-003 fee waiver GRANTED, no sheriff fee; NOT YET SUBMITTED)",
+    "label": "SER-001 Request for Sheriff to Serve Court Papers — United Parcel Service, Inc., c/o CSC - Lawyers Incorporating Service, Sacramento County (drafted Aug. 4, 2026, to transmit the CCP §425.115 Notice; FW-003 fee waiver GRANTED, no sheriff fee; SUBMITTED Aug. 3, 2026)",
     "path": "/documents/matter-26/SER-001 Request for Sheriff to Serve Court Papers - United Parcel Service Inc (CCP 425.115 Notice) (Aug 4 2026).pdf"
+  },
+  {
+    "matter": 26,
+    "label": "Sacramento County Sheriff E-Filing Order #O26005511 (SUBMITTED, Aug. 3, 2026, 5:56 PM) — United Parcel Service, Inc. CCP §425.115 Notice; Filing Packet #FP26007496; $0.00 (Waiver - Recoverable); under review, allow up to 7 business days",
+    "path": "/documents/matter-26/Sacramento County Sheriff E-Filing Order O26005511 (SUBMITTED, Aug 3 2026) - CCP 425.115 Notice.pdf"
   },
   {
     "matter": 27,
@@ -1766,13 +1796,18 @@
   },
   {
     "matter": 27,
-    "label": "SER-001 Request for Sheriff to Serve Court Papers — Randstad US, LLC, c/o CSC - Lawyers Incorporating Service, Sacramento County (drafted Aug. 4, 2026, to transmit the CCP §425.115 Notice; FW-003 fee waiver GRANTED Jul. 20, 2026, no sheriff fee; NOT YET SUBMITTED)",
+    "label": "SER-001 Request for Sheriff to Serve Court Papers — Randstad US, LLC, c/o CSC - Lawyers Incorporating Service, Sacramento County (drafted Aug. 4, 2026, to transmit the CCP §425.115 Notice; FW-003 fee waiver GRANTED Jul. 20, 2026, no sheriff fee; SUBMITTED Aug. 3, 2026)",
     "path": "/documents/matter-27/SER-001 Request for Sheriff to Serve Court Papers - Randstad US LLC (CCP 425.115 Notice) (Aug 4 2026).pdf"
   },
   {
     "matter": 27,
-    "label": "SER-001 Request for Sheriff to Serve Court Papers — The RK Logistics Group, Inc., c/o CSC - Lawyers Incorporating Service, Sacramento County (drafted Aug. 4, 2026, to transmit the CCP §425.115 Notice; FW-003 fee waiver GRANTED Jul. 20, 2026, no sheriff fee; NOT YET SUBMITTED)",
+    "label": "SER-001 Request for Sheriff to Serve Court Papers — The RK Logistics Group, Inc., c/o CSC - Lawyers Incorporating Service, Sacramento County (drafted Aug. 4, 2026, to transmit the CCP §425.115 Notice; FW-003 fee waiver GRANTED Jul. 20, 2026, no sheriff fee; SUBMITTED Aug. 3, 2026)",
     "path": "/documents/matter-27/SER-001 Request for Sheriff to Serve Court Papers - RK Logistics Group Inc (CCP 425.115 Notice) (Aug 4 2026).pdf"
+  },
+  {
+    "matter": 27,
+    "label": "Sacramento County Sheriff E-Filing Order #O26005511 (SUBMITTED, Aug. 3, 2026, 5:56 PM) — Randstad US, LLC / The RK Logistics Group, Inc. CCP §425.115 Notices; Filing Packet #FP26007495, case 26CV199902; $0.00 (Waiver - Recoverable); under review, allow up to 7 business days",
+    "path": "/documents/matter-27/Sacramento County Sheriff E-Filing Order O26005511 (SUBMITTED, Aug 3 2026) - CCP 425.115 Notices.pdf"
   },
   {
     "matter": 28,
@@ -2221,8 +2256,13 @@
   },
   {
     "matter": 29,
-    "label": "Letter to Court Clerk — $435.00 filing fee paid in full by money order, requesting the FW-001 fee waiver request be treated as withdrawn/moot and the Aug. 18, 2026 hearing taken off calendar (executed Aug. 3, 2026; NOT YET MAILED)",
+    "label": "Letter to Court Clerk — $435.00 filing fee paid in full by money order, requesting the FW-001 fee waiver request be treated as withdrawn/moot and the Aug. 18, 2026 hearing taken off calendar (executed and MAILED Aug. 3, 2026)",
     "path": "/documents/matter-29/Letter to Court Clerk - Filing Fee Paid in Full, Fee Waiver Hearing Moot (Aug 3 2026).pdf"
+  },
+  {
+    "matter": 29,
+    "label": "USPS eReceipt — Money Order Serial #55300687696 ($435.00, purchased 4:29 PM) and First-Class Large Envelope postage to Hayward, CA 94544 (4:38 PM, est. delivery Aug. 6, 2026), Milpitas Post Office, Aug. 3, 2026",
+    "path": "/documents/matter-29/Gmail - USPS eReceipt - Filing Fee Money Order and Postage (Aug 3 2026).pdf"
   },
   {
     "matter": 30,
