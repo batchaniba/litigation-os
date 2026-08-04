@@ -876,6 +876,11 @@
   },
   {
     "matter": 12,
+    "label": "USPS eReceipt — Priority Mail Flat Rate Envelope to Stockton, CA 95202, tracking 9505 5114 6003 6215 9407 65 (11:22 AM, $12.90, est. delivery Aug. 5, 2026), Milpitas Post Office, Aug. 3, 2026 — Diamond/Alpine default judgment packet with SASE enclosed for return of processed copies",
+    "path": "/documents/matter-12/Gmail - USPS eReceipt - Default Judgment Packet with SASE Postage (Aug 3 2026).pdf"
+  },
+  {
+    "matter": 12,
     "label": "CIV-110 Request for Dismissal of Does 1–20 without prejudice (executed August 4, 2026; also in each Aug 4 packet)",
     "path": "/documents/matter-12/1094 CIV-110 Request for Dismissal of Does 1-20 (Without Prejudice, Executed Aug 4 2026).pdf"
   },
@@ -1266,18 +1271,23 @@
   },
   {
     "matter": 20,
-    "label": "Alameda Sheriff service packet — G. Serrato / Gerardo Serrato (SER-001 + FW-003 Order on Court Fee Waiver + Opposition/MPA; Aug. 3, 2026; mail/deliver to Alameda County Sheriff Civil for service at CHP Dublin Area, 4999 Gleason Drive; sign SER-001 before sending)",
+    "label": "Alameda Sheriff service packet — G. Serrato / Gerardo Serrato (SER-001 + FW-003 Order on Court Fee Waiver + Opposition/MPA; Aug. 3, 2026; MAILED to Alameda County Sheriff Civil for service at CHP Dublin Area, 4999 Gleason Drive)",
     "path": "/documents/matter-20/Alameda Sheriff Service Packet - G Serrato (SER-001, FW-003, Opposition-MPA) (Aug 3 2026).pdf"
   },
   {
     "matter": 20,
-    "label": "Alameda Sheriff service packet — Gary Paul (SER-001 + FW-003 Order on Court Fee Waiver + Opposition/MPA; Aug. 3, 2026; mail/deliver to Alameda County Sheriff Civil for service at CHP Dublin Area, 4999 Gleason Drive; sign SER-001 before sending)",
+    "label": "Alameda Sheriff service packet — Gary Paul (SER-001 + FW-003 Order on Court Fee Waiver + Opposition/MPA; Aug. 3, 2026; MAILED to Alameda County Sheriff Civil for service at CHP Dublin Area, 4999 Gleason Drive)",
     "path": "/documents/matter-20/Alameda Sheriff Service Packet - Gary Paul (SER-001, FW-003, Opposition-MPA) (Aug 3 2026).pdf"
   },
   {
     "matter": 20,
-    "label": "Alameda Sheriff service packet — Eric Dutra (SER-001 + FW-003 Order on Court Fee Waiver + Opposition/MPA; Aug. 3, 2026; mail/deliver to Alameda County Sheriff Civil for service at CHP Dublin Area, 4999 Gleason Drive; sign SER-001 before sending)",
+    "label": "Alameda Sheriff service packet — Eric Dutra (SER-001 + FW-003 Order on Court Fee Waiver + Opposition/MPA; Aug. 3, 2026; MAILED to Alameda County Sheriff Civil for service at CHP Dublin Area, 4999 Gleason Drive)",
     "path": "/documents/matter-20/Alameda Sheriff Service Packet - Eric Dutra (SER-001, FW-003, Opposition-MPA) (Aug 3 2026).pdf"
+  },
+  {
+    "matter": 20,
+    "label": "USPS eReceipt — Large Envelope + First-Class postage to Oakland, CA 94612 (11:18 AM, $7.13, weight 12.3 oz), Milpitas Post Office, Aug. 3, 2026 — combined Serrato/Paul/Dutra Alameda Sheriff service packet mailing",
+    "path": "/documents/matter-20/Gmail - USPS eReceipt - Alameda Sheriff Service Packet Postage (Aug 3 2026).pdf"
   },
   {
     "matter": 21,
