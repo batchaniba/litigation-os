@@ -221,6 +221,7 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | Aug. 3, 2026 | 28 | Response deadline — Motion for Protective Order, Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504) |
 | Aug. 7, 2026 | 3 | Deadline to file amended complaint (14 days from Jul. 24, 2026 order, Doc 31) — Newanforbi v. Derrick et al. (2:26-cv-00004-DJC-JDP); if not filed, action proceeds solely on Equal Protection claim against Derrick |
 | Aug. 10, 2026 | 28 | Reply deadline — Motion for Protective Order, Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504) |
+| Aug. 12, 2026 | 26,27 | Outer bound for Sacramento County Sheriff Civil Bureau to process E-Filing Order #O26005511 (CCP §425.115 Notices for Randstad US, LLC, The RK Logistics Group, Inc., and United Parcel Service, Inc.) |
 | Aug. 12, 2026 | 12 | Default prove-up hearing (CMC converted per clerk phone statement) — Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094), 8:30 AM, Dept. 11B, Hon. Robert T. Waters; June 15 CIV-100 Not Entered |
 | Aug. 14, 2026 | 26 | Meet-and-confer target date (computed) — Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113) |
 | Aug. 18, 2026 | 29 | Fee waiver hearing — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554), 11:30 AM, Department FHO, Hayward Hall of Justice, 24405 Amador Street, Hayward, CA 94544, before Hon. Jamilah A. Jefferson |

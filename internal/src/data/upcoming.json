@@ -168,6 +168,13 @@
     "upcoming": true
   },
   {
+    "date": "Aug. 12, 2026",
+    "event": "Outer bound for Sacramento County Sheriff Civil Bureau to process E-Filing Order #O26005511 (CCP §425.115 Notices for Randstad US, LLC, The RK Logistics Group, Inc., and United Parcel Service, Inc.) — Sheriff advises allowing up to 7 business days from the Aug. 3, 2026 submission; this office has historically accepted SER-001 submissions same-day, so acceptance is expected well before this date",
+    "matters": "26,27",
+    "type": "deadline",
+    "upcoming": true
+  },
+  {
     "date": "Aug. 3, 2026",
     "event": "Response deadline — Motion for Protective Order, Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504)",
     "matters": "28",

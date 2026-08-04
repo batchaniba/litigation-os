@@ -1496,8 +1496,13 @@
   },
   {
     "matter": 25,
-    "label": "SER-001 Request for Sheriff to Serve Court Papers — Federal Express Corporation, c/o Ct Corporation System, Los Angeles County (drafted Aug. 4, 2026, to transmit the CCP §425.115 Notice; FW-003 fee waiver GRANTED, no sheriff fee; NOT YET SUBMITTED)",
+    "label": "SER-001 Request for Sheriff to Serve Court Papers — Federal Express Corporation, c/o Ct Corporation System, Los Angeles County (drafted Aug. 4, 2026, to transmit the CCP §425.115 Notice; FW-003 fee waiver GRANTED, no sheriff fee; EMAILED to LASD Civil Process Aug. 4, 2026)",
     "path": "/documents/matter-25/SER-001 Request for Sheriff to Serve Court Papers - Federal Express Corporation (CCP 425.115 Notice) (Aug 4 2026).pdf"
+  },
+  {
+    "matter": 25,
+    "label": "Gmail — SER-001 Service Request Emailed to LASD Civil Process Bureau (csdwebmail@lasd.org), Aug. 4, 2026, 8:00 AM — SER-001, CCP §425.115 Notice, and FW-003 grant order attached; no LASD confirmation received as of this writing",
+    "path": "/documents/matter-25/Gmail - SER-001 Service Request Emailed to LASD Civil Process (Aug 4 2026) - CCP 425.115 Notice.pdf"
   },
   {
     "matter": 26,
@@ -1581,8 +1586,13 @@
   },
   {
     "matter": 26,
-    "label": "SER-001 Request for Sheriff to Serve Court Papers — United Parcel Service, Inc., c/o CSC - Lawyers Incorporating Service, Sacramento County (drafted Aug. 4, 2026, to transmit the CCP §425.115 Notice; FW-003 fee waiver GRANTED, no sheriff fee; NOT YET SUBMITTED)",
+    "label": "SER-001 Request for Sheriff to Serve Court Papers — United Parcel Service, Inc., c/o CSC - Lawyers Incorporating Service, Sacramento County (drafted Aug. 4, 2026, to transmit the CCP §425.115 Notice; FW-003 fee waiver GRANTED, no sheriff fee; SUBMITTED Aug. 3, 2026)",
     "path": "/documents/matter-26/SER-001 Request for Sheriff to Serve Court Papers - United Parcel Service Inc (CCP 425.115 Notice) (Aug 4 2026).pdf"
+  },
+  {
+    "matter": 26,
+    "label": "Sacramento County Sheriff E-Filing Order #O26005511 (SUBMITTED, Aug. 3, 2026, 5:56 PM) — United Parcel Service, Inc. CCP §425.115 Notice; Filing Packet #FP26007496; $0.00 (Waiver - Recoverable); under review, allow up to 7 business days",
+    "path": "/documents/matter-26/Sacramento County Sheriff E-Filing Order O26005511 (SUBMITTED, Aug 3 2026) - CCP 425.115 Notice.pdf"
   },
   {
     "matter": 27,
@@ -1766,13 +1776,18 @@
   },
   {
     "matter": 27,
-    "label": "SER-001 Request for Sheriff to Serve Court Papers — Randstad US, LLC, c/o CSC - Lawyers Incorporating Service, Sacramento County (drafted Aug. 4, 2026, to transmit the CCP §425.115 Notice; FW-003 fee waiver GRANTED Jul. 20, 2026, no sheriff fee; NOT YET SUBMITTED)",
+    "label": "SER-001 Request for Sheriff to Serve Court Papers — Randstad US, LLC, c/o CSC - Lawyers Incorporating Service, Sacramento County (drafted Aug. 4, 2026, to transmit the CCP §425.115 Notice; FW-003 fee waiver GRANTED Jul. 20, 2026, no sheriff fee; SUBMITTED Aug. 3, 2026)",
     "path": "/documents/matter-27/SER-001 Request for Sheriff to Serve Court Papers - Randstad US LLC (CCP 425.115 Notice) (Aug 4 2026).pdf"
   },
   {
     "matter": 27,
-    "label": "SER-001 Request for Sheriff to Serve Court Papers — The RK Logistics Group, Inc., c/o CSC - Lawyers Incorporating Service, Sacramento County (drafted Aug. 4, 2026, to transmit the CCP §425.115 Notice; FW-003 fee waiver GRANTED Jul. 20, 2026, no sheriff fee; NOT YET SUBMITTED)",
+    "label": "SER-001 Request for Sheriff to Serve Court Papers — The RK Logistics Group, Inc., c/o CSC - Lawyers Incorporating Service, Sacramento County (drafted Aug. 4, 2026, to transmit the CCP §425.115 Notice; FW-003 fee waiver GRANTED Jul. 20, 2026, no sheriff fee; SUBMITTED Aug. 3, 2026)",
     "path": "/documents/matter-27/SER-001 Request for Sheriff to Serve Court Papers - RK Logistics Group Inc (CCP 425.115 Notice) (Aug 4 2026).pdf"
+  },
+  {
+    "matter": 27,
+    "label": "Sacramento County Sheriff E-Filing Order #O26005511 (SUBMITTED, Aug. 3, 2026, 5:56 PM) — Randstad US, LLC / The RK Logistics Group, Inc. CCP §425.115 Notices; Filing Packet #FP26007495, case 26CV199902; $0.00 (Waiver - Recoverable); under review, allow up to 7 business days",
+    "path": "/documents/matter-27/Sacramento County Sheriff E-Filing Order O26005511 (SUBMITTED, Aug 3 2026) - CCP 425.115 Notices.pdf"
   },
   {
     "matter": 28,
