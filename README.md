@@ -215,11 +215,6 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 <!-- PORTFOLIO:UPCOMING_DEADLINES:START -->
 | Date | Matter | Event |
 |---|---|---|
-| Jul. 30, 2026 | 26 | Anticipated arrival/filing — POS-010 Proof of Service of Summons mailed Jul. 28, 2026, expected to reach the clerk and be filed on or about this date, well ahead of the Sep. 13, 2026 CRC 3.110 deadline — Newanforbi v. |
-| Aug. 1, 2026 | 19 | Deadline for Santa Clara Superior Court to rule on Petition for Writ of Habeas Corpus — Case C2604791, Hon. Robert Hawk; extended from earlier date per Order Extending Time (filed Jul. 2, 2026, Cal. |
-| Aug. 2, 2026 | 27 | Response deadline (5:00 PM PT) — Pre-Filing Demand Letters to Randstad US, LLC and RK Logistics Group, Inc.; Newanforbi v. Randstad US, LLC et al. (No. 26CV199902, Alameda Sup. Ct.) already on file |
-| Aug. 3, 2026 | 28 | Response deadline — Motion for Protective Order, Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504) |
-| Aug. 4, 2026 | 12 | PLANNED — courtesy copies of the renewed default judgment packets mailed directly to Diamond Truck Sales, Inc. and Alpine Truck Sales, Inc. |
 | Aug. 7, 2026 | 3 | Deadline to file amended complaint (14 days from Jul. 24, 2026 order, Doc 31) — Newanforbi v. Derrick et al. (2:26-cv-00004-DJC-JDP); if not filed, action proceeds solely on Equal Protection claim against Derrick |
 | Aug. 10, 2026 | 28 | Reply deadline — Motion for Protective Order, Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504) |
 | Aug. 12, 2026 | 26,27 | Outer bound for Sacramento County Sheriff Civil Bureau to process E-Filing Order #O26005511 (CCP §425.115 Notices for Randstad US, LLC, The RK Logistics Group, Inc., and United Parcel Service, Inc.) |

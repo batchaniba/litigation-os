@@ -72,8 +72,8 @@ export const CalendarTab = () => {
           return (
             <div
               key={cell.key}
-              role="button"
-              tabIndex={0}
+              role={events.length > 0 ? "button" : undefined}
+              tabIndex={events.length > 0 ? 0 : undefined}
               aria-current={isToday ? "date" : undefined}
               aria-label={`${MONTH_NAMES[cell.date.getUTCMonth()]} ${cell.date.getUTCDate()}, ${cell.date.getUTCFullYear()}${events.length ? `, ${events.length} event(s)` : ""}`}
               onClick={() => { if (events.length > 0) setSelectedKey(cell.key); }}
