@@ -108,10 +108,12 @@ const PHASE_SET = new Set(MATTER_PHASES);
 const TERMINAL_LIFECYCLES = new Set(["settled", "dismissed", "abandoned", "closed"]);
 
 const seenMatterNumbers = new Set();
+const matterRecords = new Map();
 const referencedDocPaths = new Set();
 let missingFiledCount = 0;
 
 for (const m of cases) {
+  matterRecords.set(m.number, m);
   const source = m.__sourceFile ?? "?.json";
   const tag = `Matter ${m.number ?? "<no number>"} (${m.caption ?? "<no caption>"}) [${source}]`;
   const expectedName = `${String(m.number).padStart(2, "0")}.json`;
@@ -260,6 +262,86 @@ for (const [i, t] of timeline.entries()) {
       fail(`${tag}: past event is still marked upcoming (today is ${today} in ${DEADLINE_TIME_ZONE})`);
     }
   }
+}
+
+// ---------- cross-matter defendant references ----------
+// If an archived matter shares a named defendant with an active matter, the
+// active matter record should mention that related matter number somewhere in
+// its prose (defendants, key_facts, procedural_status, or related_actions).
+
+function relatedActionsText(m) {
+  return [m.defendants, m.key_facts, m.procedural_status, m.damages, m.risk, m.caption].join(" ");
+}
+
+const GENERIC_DEFENDANT_WORDS = new Set([
+  "state", "california", "county", "city", "officer", "sergeant", "deputy",
+  "individual", "capacity", "official", "does", "inc", "llc", "corporation",
+  "company", "services", "department", "program", "united", "district",
+  "court", "superior", "director", "hearing", "dmv", "motor", "vehicle",
+  "division", "board", "commission", "secretary", "warden", "sheriff",
+  "police", "chief", "manager", "supervisor", "administrator", "agent",
+  "parole", "probation", "corrections", "rehabilitation", "department",
+  "bureau", "agency", "commissioner", "governor", "attorney", "general",
+  "plaintiff", "defendant", "petitioner", "respondent", "doe", "does",
+  "john", "jane", "richard", "roe", "unknown", "named", "unnamed",
+  "successor", "predecessor", "assigns", "employees", "agents",
+  "representatives", "successors", "predecessors", "all", "other",
+  "persons", "entities", "acting", "capacity", "official", "individual",
+]);
+
+function defendantTokens(defs) {
+  const text = typeof defs === "string" ? defs : "";
+  const tokens = new Set();
+  for (const chunk of text.split(/;|\band\b/)) {
+    const trimmed = chunk.trim().replace(/^[\s.,]+|[\s.,]+$/g, "");
+    // Prefer multi-word proper names (e.g. "Centerline Drivers", "FedEx Corporation")
+    // and fall back to capitalized last names.
+    const multi = trimmed.match(/[A-Z][a-zA-Z&]+(?:\s+[A-Z][a-zA-Z&]+)+/g) ?? [];
+    for (const phrase of multi) {
+      const words = phrase.split(/\s+/).filter((w) => !GENERIC_DEFENDANT_WORDS.has(w.toLowerCase()));
+      if (words.length) tokens.add(words.join(" "));
+    }
+    const singles = trimmed.match(/[A-Z][a-zA-Z\-']{2,}/g) ?? [];
+    for (const w of singles) {
+      const low = w.toLowerCase();
+      if (w.length < 4 || GENERIC_DEFENDANT_WORDS.has(low)) continue;
+      tokens.add(w);
+    }
+  }
+  return tokens;
+}
+
+const activeMatters = [...matterRecords.values()].filter((m) => m.lifecycle === "active");
+const archivedMatters = [...matterRecords.values()].filter((m) => m.lifecycle !== "active");
+const activeDefMap = new Map(activeMatters.map((m) => [m.number, defendantTokens(m.defendants)]));
+const archivedDefMap = new Map(archivedMatters.map((m) => [m.number, defendantTokens(m.defendants)]));
+
+for (const a of activeMatters) {
+  const aTokens = activeDefMap.get(a.number) ?? new Set();
+  for (const arc of archivedMatters) {
+    const arcTokens = archivedDefMap.get(arc.number) ?? new Set();
+    const shared = [...aTokens].filter((t) => arcTokens.has(t));
+    if (shared.length === 0) continue;
+    const haystack = relatedActionsText(a);
+    if (!new RegExp(`\\bMatter ${String(arc.number).padStart(2, "0")}\\b`).test(haystack) &&
+        !new RegExp(`\\b${arc.number}\\b`).test(haystack)) {
+      warn(
+        `Matter ${a.number} shares defendant(s) "${shared.join(", ")}" with archived Matter ${arc.number} ` +
+        `but does not reference it in defendants/key_facts/procedural_status/damages/risk/caption. ` +
+        `Consider adding a cross-reference to the cross-matter risk index.`,
+      );
+    }
+  }
+}
+
+// ---------- timeline source citations ----------
+// Timeline events should cite a source PDF so the record is verifiable.
+const timelineWithoutSource = timeline.filter((t) => !t.source || typeof t.source !== "string" || !t.source.trim());
+if (timelineWithoutSource.length) {
+  warn(
+    `${timelineWithoutSource.length}/${timeline.length} timeline events lack a "source" PDF citation. ` +
+    `Add source paths as the audit pipeline is extended to each event.`,
+  );
 }
 
 // ---------- damages / lawyer fees coverage ----------
