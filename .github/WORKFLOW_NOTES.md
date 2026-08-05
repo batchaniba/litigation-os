@@ -198,3 +198,4 @@ Developer commits → GitHub
 3. **README tables are generated, not edited** — Use `npm run generate:readme` to keep docs in sync with source of truth (matter JSON + timeline).
 4. **GitHub Pages needs GITHUB_PAGES=true** — Without it, all routes fail because the base path is wrong.
 5. **Tests catch regressions** — Router basename bugs are easy to introduce; tests prevent them.
+Copilot cloud agent access test - safe to delete this line.
