@@ -85,6 +85,8 @@ export interface MatterSummary {
   archived?: boolean;
   badge?: string;
   note?: string;
+  /** Known insurance policy limits for a named defendant, e.g. "$1M / $5M". */
+  policy_limits?: string;
 }
 
 /** Full matter record lazy-loaded from NN.json on expand/detail. */

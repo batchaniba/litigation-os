@@ -64,6 +64,18 @@ export const ProceedingBadge = ({ proceeding }) => {
   );
 };
 
+export const PolicyLimitsBadge = ({ limits }) => {
+  if (!limits) return null;
+  return (
+    <span
+      title={`Known insurance policy limits: ${limits} (per incident / aggregate)`}
+      style={{ fontSize: 10, padding: "2px 8px", borderRadius: 4, color: "#34D399", border: "1px solid #34D39940", fontWeight: 700, letterSpacing: 0.4 }}
+    >
+      🏷️ {limits}
+    </span>
+  );
+};
+
 export const PhaseBadge = ({ phase }) => {
   if (!phase || phase === "terminal") return null;
   const style = PHASE_STYLE[phase] || { color: "#94A3B8", border: "#94A3B840" };
