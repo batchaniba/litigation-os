@@ -25,6 +25,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(__dirname, "..", "..");
 const PUBLIC_ROOT = path.join(REPO_ROOT, "internal", "public");
 const DOCUMENTS_ROOT = path.join(PUBLIC_ROOT, "documents");
+const DEADLINE_TIME_ZONE = "America/Los_Angeles";
 
 const errors = [];
 const warnings = [];
@@ -34,6 +35,29 @@ function fail(msg) {
 }
 function warn(msg) {
   warnings.push(msg);
+}
+
+function todayInTimeZone(timeZone) {
+  const parts = new Intl.DateTimeFormat("en-CA", {
+    timeZone,
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).formatToParts(new Date());
+  const value = Object.fromEntries(parts.map(({ type, value }) => [type, value]));
+  return `${value.year}-${value.month}-${value.day}`;
+}
+
+function timelineDateKey(value) {
+  const match = value.match(/^([A-Z][a-z]{2})\.\s+(\d{1,2}),\s+(\d{4})$/);
+  if (!match) return null;
+  const months = new Map([
+    ["Jan", "01"], ["Feb", "02"], ["Mar", "03"], ["Apr", "04"],
+    ["May", "05"], ["Jun", "06"], ["Jul", "07"], ["Aug", "08"],
+    ["Sep", "09"], ["Oct", "10"], ["Nov", "11"], ["Dec", "12"],
+  ]);
+  const month = months.get(match[1]);
+  return month ? `${match[3]}-${month}-${match[2].padStart(2, "0")}` : null;
 }
 
 function walkFiles(dir) {
@@ -206,6 +230,7 @@ for (const name of fs.readdirSync(MATTERS_DIR)) {
 
 // ---------- timeline.json ----------
 
+const today = todayInTimeZone(DEADLINE_TIME_ZONE);
 for (const [i, t] of timeline.entries()) {
   const tag = `timeline[${i}] (${t.date ?? "<no date>"})`;
   if (typeof t.date !== "string" || !t.date.trim()) fail(`${tag}: missing/empty "date"`);
@@ -225,6 +250,14 @@ for (const [i, t] of timeline.entries()) {
   }
   if ("upcoming" in t && typeof t.upcoming !== "boolean") {
     fail(`${tag}: "upcoming" should be boolean when present`);
+  }
+  if (t.upcoming === true) {
+    const dateKey = typeof t.date === "string" ? timelineDateKey(t.date) : null;
+    if (!dateKey) {
+      fail(`${tag}: upcoming event date must use the format "Mon. D, YYYY"`);
+    } else if (dateKey < today) {
+      fail(`${tag}: past event is still marked upcoming (today is ${today} in ${DEADLINE_TIME_ZONE})`);
+    }
   }
 }
 
