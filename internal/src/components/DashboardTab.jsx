@@ -1,8 +1,6 @@
 import { cases } from "../data/matters";
 import { damages_table } from "../data/damages";
 import { jurisdictions } from "../data/portfolioMeta";
-import { GOLD, BORDER_BLUE } from "../constants";
-import { useTheme } from "../ThemeContext";
 import { formatCurrency } from "../utils/formatters";
 import { isArchivedMatter, isLiveLifecycle } from "../utils/matterLifecycle";
 
@@ -71,87 +69,83 @@ const PERTINENT_FILINGS = [
 ];
 
 export const DashboardTab = ({ upcomingEvents, setClusterFilter, setActiveTab }) => {
-  const theme = useTheme();
   return (
-    <div>
+    <div className="dashboard-view">
       {/* Stats Row */}
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 200px), 1fr))", gap: 16, marginBottom: 28 }}>
+      <div className="dashboard-stats">
         {[
           { label: "Active Matters", value: activeMatters, sub: `${federalCount} Federal · ${stateCount} State · ${totalMatters} total` },
           { label: "Jurisdictions", value: jurisdictions.length, sub: "Courts across CA" },
           { label: "Aggregate Exposure", value: moderateExposure, sub: "Moderate estimate" },
           { label: "Next Deadline", value: upcomingEvents[0]?.date || "—", sub: upcomingEvents[0]?.event?.slice(0, 35) || "" }
         ].map((s, i) => (
-          <div key={i} style={{ background: theme.cardBg, borderRadius: 10, padding: "20px 22px", border: `1px solid ${theme.cardBorder}`, position: "relative", overflow: "hidden" }}>
-            <div style={{ position: "absolute", top: 0, left: 0, width: 3, height: "100%", background: GOLD, borderRadius: "10px 0 0 10px" }} />
-            <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: theme.subtleText, fontWeight: 600, letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 8 }}>{s.label}</div>
-            <div style={{ fontSize: 28, fontWeight: 700, color: theme.heading }}>{s.value}</div>
-            <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: theme.subtleText, marginTop: 4 }}>{s.sub}</div>
+          <div key={i} className="dashboard-stat-card">
+            <div className="dashboard-stat-label">{s.label}</div>
+            <div className="dashboard-stat-value">{s.value}</div>
+            <div className="dashboard-stat-sub">{s.sub}</div>
           </div>
         ))}
       </div>
 
       {/* Two-column: Upcoming + Clusters */}
-      <div className="grid-2" style={{ marginBottom: 28 }}>
+      <div className="grid-2 dashboard-primary-grid">
         {/* Upcoming */}
-        <div style={{ background: theme.cardBg, borderRadius: 10, padding: 24, border: `1px solid ${theme.cardBorder}` }}>
-          <h3 style={{ fontSize: 18, fontWeight: 700, color: GOLD, margin: "0 0 16px", fontFamily: "'DM Sans', sans-serif", letterSpacing: 0.5 }}>Upcoming Deadlines</h3>
-          <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+        <section className="dashboard-panel">
+          <h3 className="dashboard-heading">Upcoming Deadlines</h3>
+          <div className="dashboard-deadlines">
             {upcomingEvents.map((e, i) => (
-              <div key={i} style={{ display: "flex", gap: 14, alignItems: "flex-start" }}>
-                <div style={{ minWidth: 90, fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 700, color: "#F472B6", paddingTop: 2 }}>{e.date}</div>
+              <div key={i} className="dashboard-deadline">
+                <div className="dashboard-deadline-date">{e.date}</div>
                 <div>
-                  <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: theme.secondaryText }}>{e.event}</div>
-                  <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: theme.subtleText, marginTop: 2 }}>Matter {e.matters}</div>
+                  <div className="dashboard-deadline-event">{e.event}</div>
+                  <div className="dashboard-deadline-matter">Matter {e.matters}</div>
                 </div>
               </div>
             ))}
           </div>
-        </div>
+        </section>
 
         {/* Cluster Breakdown */}
-        <div style={{ background: theme.cardBg, borderRadius: 10, padding: 24, border: `1px solid ${theme.cardBorder}` }}>
-          <h3 style={{ fontSize: 18, fontWeight: 700, color: GOLD, margin: "0 0 16px", fontFamily: "'DM Sans', sans-serif", letterSpacing: 0.5 }}>Case Clusters</h3>
+        <section className="dashboard-panel">
+          <h3 className="dashboard-heading">Case Clusters</h3>
           {CLUSTERS.map(cl => (
-            <div
+            <button
               key={cl.n}
-              role="button"
-              tabIndex={0}
-              style={{ marginBottom: 16, cursor: "pointer" }}
+              className="dashboard-cluster"
+              type="button"
               onClick={() => { setClusterFilter(cl.n); setActiveTab("Matters"); }}
-              onKeyDown={e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setClusterFilter(cl.n); setActiveTab("Matters"); } }}
               aria-label={`Filter matters by cluster: ${cl.label}`}
             >
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 4 }}>
-                <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, color: theme.secondaryText }}>{cl.label}</span>
-                <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: cl.color, fontWeight: 700 }}>{clusterCounts[cl.n]} matters</span>
+              <div className="dashboard-cluster-header">
+                <span>{cl.label}</span>
+                <span style={{ color: cl.color }}>{clusterCounts[cl.n]} matters</span>
               </div>
-              <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 10, color: theme.subtleText, marginBottom: 6 }}>Matters {clusterMattersStr[cl.n]}</div>
-              <div style={{ height: 6, background: theme.barTrack, borderRadius: 3, overflow: "hidden" }}>
-                <div style={{ height: "100%", width: `${(clusterCounts[cl.n] / totalMatters) * 100}%`, background: cl.color, borderRadius: 3, transition: "width 0.6s ease" }} />
+              <div className="dashboard-cluster-meta">Matters {clusterMattersStr[cl.n]}</div>
+              <div className="dashboard-cluster-track">
+                <div className="dashboard-cluster-bar" style={{ width: `${(clusterCounts[cl.n] / totalMatters) * 100}%`, background: cl.color }} />
               </div>
-            </div>
+            </button>
           ))}
-          <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: theme.subtleText, marginTop: 12, fontStyle: "italic" }}>Click a cluster to filter matters →</div>
+          <div className="dashboard-cluster-hint">Click a cluster to filter matters →</div>
 
           {/* Pertinent Filings */}
-          <div style={{ marginTop: 24, borderTop: `1px solid ${theme.cardBorder}`, paddingTop: 16 }}>
-            <h4 style={{ fontSize: 13, fontWeight: 700, color: GOLD, margin: "0 0 12px", fontFamily: "'DM Sans', sans-serif", letterSpacing: 0.5, textTransform: "uppercase" }}>Pertinent Filings</h4>
-            <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+          <div className="dashboard-filings">
+            <h4 className="dashboard-subheading">Pertinent Filings</h4>
+            <div className="dashboard-filing-list">
               {PERTINENT_FILINGS.map((f, i) => {
                 const dateColor = f.dateStatus === "upcoming" ? UPCOMING_AMBER : FILED_GREEN;
                 return (
-                  <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "8px 12px", background: theme.deepBg, borderRadius: 6, border: `1px solid ${BORDER_BLUE}25`, gap: 12 }}>
-                    <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 600, color: theme.secondaryText }}>
+                  <div key={i} className="dashboard-filing">
+                    <span className="dashboard-filing-title">
                       {f.title}
                       {f.note && (
-                        <span style={{ display: "block", fontSize: 10, fontWeight: 500, color: theme.subtleText, marginTop: 1 }}>{f.note}</span>
+                        <span className="dashboard-filing-note">{f.note}</span>
                       )}
                     </span>
-                    <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 3, flexShrink: 0 }}>
-                      <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, fontWeight: 700, color: theme.badgeNumColor, background: theme.badgeNumBg, borderRadius: 4, padding: "2px 8px" }}>Matter {f.matter}</span>
+                    <div className="dashboard-filing-meta">
+                      <span className="dashboard-matter-badge">Matter {f.matter}</span>
                       {f.date && (
-                        <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9.5, fontWeight: 600, color: dateColor, whiteSpace: "nowrap" }}>{f.date}</span>
+                        <span className="dashboard-filing-date" style={{ color: dateColor }}>{f.date}</span>
                       )}
                     </div>
                   </div>
@@ -159,16 +153,16 @@ export const DashboardTab = ({ upcomingEvents, setClusterFilter, setActiveTab })
               })}
             </div>
           </div>
-        </div>
+        </section>
       </div>
 
       {/* Milestone: First Settlement */}
-      <div style={{ background: `linear-gradient(135deg, ${GOLD}15, ${GOLD}08)`, borderRadius: 10, padding: 24, border: `2px solid ${GOLD}40`, marginBottom: 16 }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-          <div style={{ fontSize: 32, lineHeight: 1 }}>💰</div>
+      <div className="dashboard-milestone">
+        <div className="dashboard-milestone-inner">
+          <div className="dashboard-milestone-icon">💰</div>
           <div>
-            <h3 style={{ fontSize: 18, fontWeight: 700, color: GOLD, margin: "0 0 6px", fontFamily: "'DM Sans', sans-serif", letterSpacing: 0.5 }}>First Case to Settle</h3>
-            <p style={{ margin: 0, fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: theme.secondaryText, lineHeight: 1.4 }}>
+            <h3 className="dashboard-heading compact">First Case to Settle</h3>
+            <p className="dashboard-milestone-copy">
               Matter 22 became the first matter in this portfolio to reach a negotiated settlement — resolved pro se, without counsel, in under seven weeks from filing.
             </p>
           </div>
@@ -176,12 +170,12 @@ export const DashboardTab = ({ upcomingEvents, setClusterFilter, setActiveTab })
       </div>
 
       {/* Milestone: First Interstate Case */}
-      <div style={{ background: `linear-gradient(135deg, ${GOLD}15, ${GOLD}08)`, borderRadius: 10, padding: 24, border: `2px solid ${GOLD}40`, marginBottom: 28 }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-          <div style={{ fontSize: 32, lineHeight: 1 }}>🌎</div>
+      <div className="dashboard-milestone dashboard-milestone-last">
+        <div className="dashboard-milestone-inner">
+          <div className="dashboard-milestone-icon">🌎</div>
           <div>
-            <h3 style={{ fontSize: 18, fontWeight: 700, color: GOLD, margin: "0 0 6px", fontFamily: "'DM Sans', sans-serif", letterSpacing: 0.5 }}>First Interstate Reaching Case</h3>
-            <p style={{ margin: 0, fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: theme.secondaryText, lineHeight: 1.4 }}>
+            <h3 className="dashboard-heading compact">First Interstate Reaching Case</h3>
+            <p className="dashboard-milestone-copy">
               Matter 22 represents the first litigation matter with interstate service of process. Demand letter sent via Certified Mail to corporate headquarters in Tennessee.
             </p>
           </div>
@@ -189,17 +183,17 @@ export const DashboardTab = ({ upcomingEvents, setClusterFilter, setActiveTab })
       </div>
 
       {/* Courts Overview */}
-      <div style={{ background: theme.cardBg, borderRadius: 10, padding: 24, border: `1px solid ${theme.cardBorder}` }}>
-        <h3 style={{ fontSize: 18, fontWeight: 700, color: GOLD, margin: "0 0 16px", fontFamily: "'DM Sans', sans-serif" }}>Jurisdictional Distribution</h3>
-        <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
+      <section className="dashboard-panel">
+        <h3 className="dashboard-heading">Jurisdictional Distribution</h3>
+        <div className="dashboard-jurisdictions">
           {jurisdictions.map(j => (
-            <div key={j} style={{ background: theme.navySubtleBg, borderRadius: 8, padding: "12px 18px", border: `1px solid ${BORDER_BLUE}30`, flex: "1 1 180px" }}>
-              <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: theme.mutedText, marginBottom: 4 }}>{j}</div>
-              <div style={{ fontSize: 24, fontWeight: 700, color: theme.heading }}>{courtCounts[j] || 0}</div>
+            <div key={j} className="dashboard-jurisdiction">
+              <div className="dashboard-jurisdiction-name">{j}</div>
+              <div className="dashboard-jurisdiction-count">{courtCounts[j] || 0}</div>
             </div>
           ))}
         </div>
-      </div>
+      </section>
     </div>
   );
 };
