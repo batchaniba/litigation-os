@@ -66,14 +66,14 @@ export function ShellLayout() {
   return (
     <ThemeContext.Provider value={theme}>
       <PortfolioUIContext.Provider value={ui}>
-        <div className="app-shell" style={{ minHeight: "100vh", background: theme.bg, color: theme.text }}>
+        <div className={`app-shell${darkMode ? "" : " light"}`} style={{ minHeight: "100vh", background: "var(--bg)", color: "var(--text)" }}>
           <a className="skip-link" href="#main-content">Skip to content</a>
           <div className="app-workspace">
-            <PortfolioHeader darkMode={darkMode} onSearch={openSearch} onToggleTheme={() => setDarkMode((value) => !value)} theme={theme} />
-            <DeadlineBanner timeLeft={timeLeft} showClock={showClock} onToggle={() => setShowClock((value) => !value)} theme={theme} />
-            <div className="app-container"><Breadcrumbs theme={theme} /></div>
+            <PortfolioHeader darkMode={darkMode} onSearch={openSearch} onToggleTheme={() => setDarkMode((value) => !value)} />
+            <DeadlineBanner timeLeft={timeLeft} showClock={showClock} onToggle={() => setShowClock((value) => !value)} />
+            <div className="app-container"><Breadcrumbs /></div>
             <main id="main-content" ref={mainRef} tabIndex={-1} className="app-container app-main"><Outlet /></main>
-            <footer className="app-footer" style={{ borderColor: theme.footerBorder, color: theme.footerText }}><div className="app-container">Interactive Litigation Portfolio</div></footer>
+            <footer className="app-footer" style={{ borderColor: "var(--footer-border)", color: "var(--footer-text)" }}><div className="app-container">Interactive Litigation Portfolio</div></footer>
           </div>
           {searchOpen && <Suspense fallback={<RouteLoading label="Loading search" />}><GlobalSearchDialog onClose={closeSearch} /></Suspense>}
         </div>

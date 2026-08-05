@@ -1,6 +1,6 @@
 import { useEffect, useId, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
-import { BODY_GRAY, GOLD } from "../../constants";
+import { GOLD } from "../../constants";
 import { NAV_ITEMS } from "../../routes";
 import { withBase } from "../../utils/paths";
 
@@ -8,12 +8,10 @@ export function PortfolioHeader({
   darkMode,
   onSearch,
   onToggleTheme,
-  theme,
 }: {
   darkMode: boolean;
   onSearch: () => void;
   onToggleTheme: () => void;
-  theme: any;
 }) {
   const location = useLocation();
   const navId = useId();
@@ -35,7 +33,7 @@ export function PortfolioHeader({
   }, []);
 
   return (
-    <header className="legacy-header" style={{ background: theme.headerBg, borderBottom: `2px solid ${GOLD}` }}>
+    <header className="legacy-header" style={{ background: "var(--header-bg)", borderBottom: `2px solid ${GOLD}` }}>
       <div className="legacy-header-inner">
         <img
           className="legacy-brand-logo"
@@ -51,19 +49,17 @@ export function PortfolioHeader({
 
         <div className="legacy-header-main">
           <div className="legacy-westlaw">
-            <div style={{ fontSize: 9, fontFamily: "'DM Sans', sans-serif", fontWeight: 700, letterSpacing: 3, color: GOLD, textTransform: "uppercase", marginBottom: 6 }}>
-              📚 Westlaw-Indexed
-            </div>
-            <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, fontStyle: "italic", color: BODY_GRAY, lineHeight: 1.6, marginBottom: 6, maxWidth: 380 }}>
+            <div className="legacy-westlaw-label">📚 Westlaw-Indexed</div>
+            <div className="legacy-westlaw-quote">
               “In this regard, it appears from a search of Westlaw that Plaintiff filed two other lawsuits in federal court that have resulted in opinions available on Westlaw.”
             </div>
-            <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 10, fontWeight: 700, color: GOLD, letterSpacing: 0.5, marginBottom: 4 }}>
+            <div className="legacy-westlaw-cite">
               2026 WL 1067541 · 2026 WL 1389969
             </div>
-            <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9, color: BODY_GRAY, opacity: 0.8, lineHeight: 1.5 }}>
+            <div className="legacy-westlaw-attribution">
               — Blaze Van Dine, Esq. · Sims, Lawrence &amp; Broghammer
             </div>
-            <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9, color: BODY_GRAY, opacity: 0.6 }}>
+            <div className="legacy-westlaw-source">
               Palacios Demurrer (Matter 5)
             </div>
           </div>
@@ -106,7 +102,7 @@ export function PortfolioHeader({
             <button
               className="legacy-search-trigger"
               onClick={onSearch}
-              style={{ background: theme.inputBg, borderColor: theme.cardBorder, color: theme.subtleText }}
+              style={{ background: "var(--input-bg)", borderColor: "var(--card-border)", color: "var(--subtle-text)" }}
               aria-keyshortcuts="Control+K Meta+K /"
             >
               <span>Search the portfolio</span><kbd>⌘ K</kbd>
@@ -133,9 +129,9 @@ export function PortfolioHeader({
                 end={item.end}
                 className="legacy-nav-link"
                 style={({ isActive }) => ({
-                  border: isActive ? theme.tabActive.border : theme.tabInactive.border,
-                  background: isActive ? theme.tabActive.bg : theme.tabInactive.bg,
-                  color: isActive ? theme.tabActive.color : theme.tabInactive.color,
+                  border: isActive ? "var(--tab-active-border)" : "var(--tab-inactive-border)",
+                  background: isActive ? "var(--tab-active-bg)" : "var(--tab-inactive-bg)",
+                  color: isActive ? "var(--tab-active-color)" : "var(--tab-inactive-color)",
                 })}
               >
                 {item.label}
