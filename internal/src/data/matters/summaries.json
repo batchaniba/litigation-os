@@ -346,12 +346,17 @@
     "type": "State",
     "archived": true,
     "badge": "ABANDONED",
-    "defendants": "Glenn Urrea, Parole Agent (individually); Gary Noguchi (#7284), Unit Supervisor (individually); Keely Dodd (#6462), Parole Administrator (individually); State of California / CDCR; DOES 1-10",
+    "defendants": "Glenn Urrea, Parole Agent (individually and officially); Gary Noguchi (#7284), Unit Supervisor (individually and officially); Jeff Macomber, Secretary of CDCR (official capacity); Bryan Bishop, Director of CDCR Division of Adult Parole Operations (official capacity); California Department of Corrections and Rehabilitation; DOES 1-10",
     "causes": [
+      "Writ of Mandate (CCP §1085)",
+      "Declaratory Relief (CCP §1060)",
+      "Injunctive Relief",
+      "Violation of California Constitution Article I, §13",
+      "Violation of California Constitution Article I, §7",
+      "Tom Bane Civil Rights Act (Civ. Code §52.1)",
       "False Imprisonment",
-      "Bane Act (Civ. Code §52.1)",
-      "IIED",
-      "Negligent Supervision (against CDCR)"
+      "Intentional Infliction of Emotional Distress",
+      "Negligent Violation of Mandatory Duty (Gov. Code §815.6)"
     ],
     "evidenceCount": 7,
     "documentCount": 1
@@ -404,7 +409,7 @@
       "Intentional Infliction of Emotional Distress",
       "Negligence"
     ],
-    "evidenceCount": 4,
+    "evidenceCount": 7,
     "documentCount": 1
   },
   {
