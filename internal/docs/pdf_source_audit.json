@@ -1,0 +1,81 @@
+{
+ "generated_for": "tier1-active-matters",
+ "matters": [
+  1,
+  2,
+  7,
+  12,
+  19,
+  20,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29
+ ],
+ "documents_read": 61,
+ "findings": [
+  {
+   "matter": 7,
+   "field": "judge",
+   "severity": "unverified",
+   "json_value": "Hon. Dena M. Coggins",
+   "pdf_value": "(not stated)",
+   "note": "no Tier 1 document names the assigned judge ('Coggins'); judicial assignment postdates the filings held for this matter",
+   "sources": [
+    "Notice of Supplemental Authority - Serrato Order - ELECTRONICALLY FILED Jul 9 2026.pdf",
+    "Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
+    "Notice of Supplemental Authority - Serrato Order - July 7 2026.pdf"
+   ]
+  },
+  {
+   "matter": 19,
+   "field": "case_no",
+   "severity": "unverified",
+   "json_value": "C2604791",
+   "pdf_value": "(none found)",
+   "note": "case number is not printed in any Tier 1 document (court-assigned after filing); other case numbers appearing in these documents are listed",
+   "sources": [
+    "Petition for Writ of Habeas Corpus (filed Apr. 3, 2026).pdf"
+   ]
+  },
+  {
+   "matter": 19,
+   "field": "judge",
+   "severity": "unverified",
+   "json_value": "Hon. Robert Hawk",
+   "pdf_value": "(not stated)",
+   "note": "no Tier 1 document names the assigned judge ('Hawk'); judicial assignment postdates the filings held for this matter",
+   "sources": [
+    "Petition for Writ of Habeas Corpus (filed Apr. 3, 2026).pdf"
+   ]
+  },
+  {
+   "matter": 24,
+   "field": "judge",
+   "severity": "unverified",
+   "json_value": "Hon. Ajay S. Krishnan",
+   "pdf_value": "(not stated)",
+   "note": "no Tier 1 document names the assigned judge ('Krishnan'); judicial assignment postdates the filings held for this matter",
+   "sources": [
+    "Complaint.pdf",
+    "Nd Cal Proposed Summons.pdf"
+   ]
+  },
+  {
+   "matter": 28,
+   "field": "judge",
+   "severity": "unverified",
+   "json_value": "Hon. Lisa J. Cisneros",
+   "pdf_value": "(not stated)",
+   "note": "no Tier 1 document names the assigned judge ('Cisneros'); judicial assignment postdates the filings held for this matter",
+   "sources": [
+    "Complaint v2 Newanforbi v HOPE NDCA.pdf",
+    "Exhibit A Stipulated Protective Order.pdf",
+    "Motion Protective Order NDCA.pdf",
+    "Stipulated Protective Order SIGNED.pdf"
+   ]
+  }
+ ]
+}
