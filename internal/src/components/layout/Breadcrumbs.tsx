@@ -3,7 +3,7 @@ import { NAV_ITEMS, ROUTES } from "../../routes";
 
 const titleForSegment = (segment: string) => segment.replaceAll("-", " ").replace(/\b\w/g, (letter) => letter.toUpperCase());
 
-export function Breadcrumbs({ theme }: { theme: any }) {
+export function Breadcrumbs() {
   const { pathname } = useLocation();
   if (pathname === ROUTES.dashboard) return null;
   const segments = pathname.split("/").filter(Boolean);
@@ -14,7 +14,7 @@ export function Breadcrumbs({ theme }: { theme: any }) {
     return { path, label };
   });
   return (
-    <nav className="breadcrumbs" aria-label="Breadcrumb" style={{ color: theme.subtleText }}>
+    <nav className="breadcrumbs" aria-label="Breadcrumb" style={{ color: "var(--subtle-text)" }}>
       <Link to={ROUTES.dashboard}>Home</Link>
       {crumbs.map((crumb, index) => <span key={crumb.path}><span aria-hidden="true">/</span>{index === crumbs.length - 1 ? <span aria-current="page">{crumb.label}</span> : <Link to={crumb.path}>{crumb.label}</Link>}</span>)}
     </nav>

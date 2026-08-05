@@ -1,152 +1,10 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import { cases } from "../data/matters";
-import { GOLD, BORDER_BLUE } from "../constants";
-import { StatusBadge, ClusterBadge, TypeBadge, ArchiveBadge, ProceedingBadge, PhaseBadge } from "./Badges";
-import { ServiceTracker } from "./ServiceTracker";
+import { GOLD } from "../constants";
 import { useTheme } from "../ThemeContext";
-import { useMatter } from "../hooks/useMatter";
-import { formatMatterPath } from "../utils/formatters";
 import { isArchivedMatter } from "../utils/matterLifecycle";
 import { SavedViews } from "./matters/SavedViews";
-
-const MatterCard = ({ matter: summary, isOpen, onToggle }) => {
-  const theme = useTheme();
-  const { matter: full, status } = useMatter(isOpen ? summary.number : null);
-  const c = full ?? summary;
-  const proseLoading = isOpen && status === "loading";
-  const showSettled = c.lifecycle === "settled" || c.status?.startsWith("SETTLED");
-  const showDismissed = !showSettled && (c.lifecycle === "dismissed" || c.badge === "DISMISSED");
-  const showAbandoned = !showSettled && !showDismissed && (c.lifecycle === "abandoned" || c.badge === "ABANDONED");
-  const showPending = !showSettled && (c.lifecycle === "pre_filing" || c.badge === "PENDING");
-  return (
-    <div style={{ position: "relative", background: theme.cardBg, borderRadius: 10, border: isOpen ? `1px solid ${GOLD}40` : `1px solid ${theme.cardBorder}`, overflow: "hidden", transition: "border-color 0.3s" }}>
-      {showSettled && (
-        <div aria-label="Settled" style={{ position: "absolute", top: 14, right: -28, width: 110, background: "#16a34a", color: "#fff", fontSize: 10, fontFamily: "'DM Sans', sans-serif", fontWeight: 800, letterSpacing: 2, textTransform: "uppercase", textAlign: "center", padding: "5px 0", transform: "rotate(45deg)", boxShadow: "0 2px 8px rgba(0,0,0,0.35)", pointerEvents: "none", zIndex: 10 }}>SETTLED</div>
-      )}
-      {c.badge === "DEFAULT" && (
-        <div aria-label="Default" style={{ position: "absolute", top: 14, right: -28, width: 110, background: "#16a34a", color: "#fff", fontSize: 10, fontFamily: "'DM Sans', sans-serif", fontWeight: 800, letterSpacing: 2, textTransform: "uppercase", textAlign: "center", padding: "5px 0", transform: "rotate(45deg)", boxShadow: "0 2px 8px rgba(0,0,0,0.35)", pointerEvents: "none", zIndex: 10 }}>DEFAULT</div>
-      )}
-      {showDismissed && (
-        <div aria-label="Dismissed" style={{ position: "absolute", top: 14, right: -28, width: 110, background: "#dc2626", color: "#fff", fontSize: 10, fontFamily: "'DM Sans', sans-serif", fontWeight: 800, letterSpacing: 2, textTransform: "uppercase", textAlign: "center", padding: "5px 0", transform: "rotate(45deg)", boxShadow: "0 2px 8px rgba(0,0,0,0.35)", pointerEvents: "none", zIndex: 10 }}>DISMISSED</div>
-      )}
-      {showAbandoned && (
-        <div aria-label="Abandoned" style={{ position: "absolute", top: 14, right: -28, width: 110, background: "#FFFFFF", color: "#1a1a1a", border: "1px solid #00000022", fontSize: 10, fontFamily: "'DM Sans', sans-serif", fontWeight: 800, letterSpacing: 2, textTransform: "uppercase", textAlign: "center", padding: "5px 0", transform: "rotate(45deg)", boxShadow: "0 2px 8px rgba(0,0,0,0.35)", pointerEvents: "none", zIndex: 10 }}>ABANDONED</div>
-      )}
-      {c.badge === "DENIED" && (
-        <div aria-label="Denied" style={{ position: "absolute", top: 14, right: -28, width: 110, background: "#6b7280", color: "#fff", fontSize: 10, fontFamily: "'DM Sans', sans-serif", fontWeight: 800, letterSpacing: 2, textTransform: "uppercase", textAlign: "center", padding: "5px 0", transform: "rotate(45deg)", boxShadow: "0 2px 8px rgba(0,0,0,0.35)", pointerEvents: "none", zIndex: 10 }}>DENIED</div>
-      )}
-      {showPending && (
-        <div aria-label="Pending" style={{ position: "absolute", top: 14, right: -28, width: 110, background: "#eab308", color: "#1a1a1a", fontSize: 10, fontFamily: "'DM Sans', sans-serif", fontWeight: 800, letterSpacing: 2, textTransform: "uppercase", textAlign: "center", padding: "5px 0", transform: "rotate(45deg)", boxShadow: "0 2px 8px rgba(0,0,0,0.35)", pointerEvents: "none", zIndex: 10 }}>PENDING</div>
-      )}
-      {c.badge === "TIMELY" && (
-        <div aria-label="Timely filed" style={{ position: "absolute", top: 14, right: -28, width: 110, background: "#0284c7", color: "#fff", fontSize: 10, fontFamily: "'DM Sans', sans-serif", fontWeight: 800, letterSpacing: 2, textTransform: "uppercase", textAlign: "center", padding: "5px 0", transform: "rotate(45deg)", boxShadow: "0 2px 8px rgba(0,0,0,0.35)", pointerEvents: "none", zIndex: 10 }}>TIMELY</div>
-      )}
-      {c.badge === "SERVED" && (
-        <div aria-label="Served" style={{ position: "absolute", top: 14, right: -28, width: 110, background: "#0d9488", color: "#fff", fontSize: 10, fontFamily: "'DM Sans', sans-serif", fontWeight: 800, letterSpacing: 2, textTransform: "uppercase", textAlign: "center", padding: "5px 0", transform: "rotate(45deg)", boxShadow: "0 2px 8px rgba(0,0,0,0.35)", pointerEvents: "none", zIndex: 10 }}>SERVED</div>
-      )}
-      {/* Header row */}
-      <button
-        onClick={onToggle}
-        aria-expanded={isOpen}
-        aria-controls={`matter-detail-${c.number}`}
-        style={{ width: "100%", padding: "16px 22px", cursor: "pointer", display: "flex", alignItems: "center", gap: 16, flexWrap: "wrap", background: "transparent", border: "none", textAlign: "left", color: "inherit", font: "inherit", lineHeight: "inherit", margin: 0 }}
-      >
-        <div style={{ width: 36, height: 36, borderRadius: 8, background: theme.navySubtleBg, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "'DM Sans', sans-serif", fontSize: 14, fontWeight: 700, color: GOLD, flexShrink: 0 }}>{c.number}</div>
-        <div style={{ flex: "1 1 180px", minWidth: 0 }}>
-          <div style={{ fontSize: 16, fontWeight: 700, color: theme.heading, marginBottom: 3 }}>{c.caption}</div>
-          <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: theme.subtleText }}>{c.case_no} · {c.court}</div>
-        </div>
-        <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 6, flex: "1 1 160px", minWidth: 0 }}>
-          <div style={{ display: "flex", gap: 8, alignItems: "center", flexWrap: "wrap", justifyContent: "flex-end" }}>
-            <ClusterBadge cluster={c.cluster} />
-            <TypeBadge type={c.type} />
-            <ProceedingBadge proceeding={c.proceeding} />
-            <PhaseBadge phase={c.phase} />
-            <StatusBadge status={c.status} lifecycle={c.lifecycle} />
-            {isArchivedMatter(c) && <ArchiveBadge />}
-          </div>
-          {c.note && (
-            <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 600, fontStyle: "italic", color: theme.secondaryText, textAlign: "right" }}>
-              {showPending ? "⏳" : "📌"} {c.note}
-            </div>
-          )}
-        </div>
-        <div aria-hidden="true" style={{ color: theme.subtleText, fontSize: 18, transition: "transform 0.3s", transform: isOpen ? "rotate(180deg)" : "rotate(0)" }}>▾</div>
-      </button>
-
-      {/* Expanded detail */}
-      {isOpen && (
-        <div id={`matter-detail-${c.number}`} style={{ padding: "0 22px 22px", borderTop: `1px solid ${theme.cardBorder}` }}>
-          <div className="grid-2" style={{ paddingTop: 18 }}>
-            <div>
-              <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 10, color: GOLD, fontWeight: 700, letterSpacing: 2, textTransform: "uppercase", marginBottom: 8 }}>Defendants</div>
-              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: theme.secondaryText, lineHeight: 1.6, margin: 0 }}>{c.defendants}</p>
-            </div>
-            <div>
-              <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 10, color: GOLD, fontWeight: 700, letterSpacing: 2, textTransform: "uppercase", marginBottom: 8 }}>Judge</div>
-              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: theme.secondaryText, margin: "0 0 12px" }}>{c.judge}</p>
-              <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 10, color: GOLD, fontWeight: 700, letterSpacing: 2, textTransform: "uppercase", marginBottom: 8 }}>Filed</div>
-              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: theme.secondaryText, margin: 0 }}>{c.filed}</p>
-            </div>
-          </div>
-
-          <div style={{ marginTop: 18 }}>
-            <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 10, color: GOLD, fontWeight: 700, letterSpacing: 2, textTransform: "uppercase", marginBottom: 8 }}>Causes of Action</div>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
-              {c.causes.map((ca, i) => (
-                <span key={i} style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, padding: "4px 10px", borderRadius: 4, background: theme.navySubtleBg, color: theme.secondaryText, border: `1px solid ${BORDER_BLUE}30` }}>{ca}</span>
-              ))}
-            </div>
-          </div>
-
-          {proseLoading ? (
-            <div style={{ marginTop: 18, fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: theme.subtleText }}>Loading full matter record…</div>
-          ) : (
-            <>
-          <div style={{ marginTop: 18 }}>
-            <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 10, color: GOLD, fontWeight: 700, letterSpacing: 2, textTransform: "uppercase", marginBottom: 8 }}>Key Facts</div>
-            <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: theme.mutedText, lineHeight: 1.7, margin: 0 }}>{c.key_facts}</p>
-          </div>
-
-          <div className="grid-2" style={{ marginTop: 18 }}>
-            <div>
-              <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 10, color: GOLD, fontWeight: 700, letterSpacing: 2, textTransform: "uppercase", marginBottom: 8 }}>Procedural Status</div>
-              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: theme.mutedText, lineHeight: 1.6, margin: 0 }}>{c.procedural_status}</p>
-            </div>
-            <div>
-              <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 10, color: GOLD, fontWeight: 700, letterSpacing: 2, textTransform: "uppercase", marginBottom: 8 }}>Estimated Damages</div>
-              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 15, color: "#34D399", fontWeight: 700, margin: "0 0 12px" }}>{c.damages}</p>
-              {c.risk && <>
-                <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 10, color: GOLD, fontWeight: 700, letterSpacing: 2, textTransform: "uppercase", marginBottom: 8 }}>Risk / Defense Notes</div>
-                <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: "#F59E0B", lineHeight: 1.6, margin: 0 }}>{c.risk}</p>
-              </>}
-            </div>
-          </div>
-
-          <div style={{ marginTop: 18 }}>
-            <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 10, color: GOLD, fontWeight: 700, letterSpacing: 2, textTransform: "uppercase", marginBottom: 8 }}>Key Evidence</div>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
-              {(c.evidence ?? []).map((ev, i) => (
-                <span key={i} style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, padding: "4px 10px", borderRadius: 4, background: theme.clusterPillBg, color: theme.clusterPillColor, border: `1px solid ${theme.clusterPillBorder}` }}>{ev}</span>
-              ))}
-            </div>
-          </div>
-            </>
-          )}
-
-          {c.serviceTracking && <ServiceTracker serviceTracking={c.serviceTracking} />}
-
-          <div style={{ marginTop: 20 }}>
-            <Link to={formatMatterPath(c.number)} style={{ color: GOLD, fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 700, textDecoration: "none" }}>
-              Open dedicated matter page →
-            </Link>
-          </div>
-        </div>
-      )}
-    </div>
-  );
-};
+import { MatterCard } from "./matters/MatterCard";
 
 const CLUSTER_LABELS = {
   1: "CHP",
@@ -157,7 +15,6 @@ const CLUSTER_LABELS = {
 };
 
 export const MattersTab = ({ filteredCases, statusFilter, setStatusFilter, clusterFilter, setClusterFilter, typeFilter, setTypeFilter, searchQuery, setSearchQuery, sortKey, setSortKey }) => {
-  const theme = useTheme();
   const [expandedMatter, setExpandedMatter] = useState(null);
   const [filtersOpen, setFiltersOpen] = useState(false);
   const activeCount = cases.filter(c => !isArchivedMatter(c)).length;
@@ -167,9 +24,9 @@ export const MattersTab = ({ filteredCases, statusFilter, setStatusFilter, clust
   const filterSummary = `${statusLabel} · ${clusterLabel} · ${typeLabel}`;
   const chipStyle = (active) => ({
     padding: "8px 14px", borderRadius: 6,
-    border: active ? `1px solid ${GOLD}` : `1px solid ${theme.filterInactiveBorder}`,
-    background: active ? `${GOLD}18` : theme.filterInactiveBg,
-    color: active ? GOLD : theme.filterInactiveColor,
+    border: active ? `1px solid ${GOLD}` : "1px solid var(--filter-inactive-border)",
+    background: active ? `${GOLD}18` : "var(--filter-inactive-bg)",
+    color: active ? GOLD : "var(--filter-inactive-color)",
     fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 600, cursor: "pointer",
   });
 
@@ -185,7 +42,7 @@ export const MattersTab = ({ filteredCases, statusFilter, setStatusFilter, clust
               placeholder="Search matters…"
               aria-label="Search matters by caption, case number, or keywords"
               className="matters-search-input"
-              style={{ border: `1px solid ${theme.cardBorder}`, background: theme.inputBg, color: theme.inputColor }}
+              style={{ border: "1px solid var(--card-border)", background: "var(--input-bg)", color: "var(--input-color)" }}
             />
             <span className="matters-search-endcap" aria-hidden="true" />
           </div>
@@ -209,19 +66,19 @@ export const MattersTab = ({ filteredCases, statusFilter, setStatusFilter, clust
               {s === "active" ? `Active (${activeCount})` : s === "upcoming" ? "Upcoming" : s === "archived" ? "Archived" : "All"}
             </button>
           ))}
-          <span className="matters-filter-sep" style={{ color: theme.subtleText }}>|</span>
+          <span className="matters-filter-sep" style={{ color: "var(--subtle-text)" }}>|</span>
           {[null, 1, 2, 3, 4, 5].map(c => (
             <button key={c ?? "all"} onClick={() => setClusterFilter(c)} aria-pressed={clusterFilter === c} style={chipStyle(clusterFilter === c)}>
               {c === null ? "All" : CLUSTER_LABELS[c]}
             </button>
           ))}
-          <span className="matters-filter-sep" style={{ color: theme.subtleText }}>|</span>
+          <span className="matters-filter-sep" style={{ color: "var(--subtle-text)" }}>|</span>
           {[null, "Federal", "State"].map(t => (
             <button key={t ?? "all"} onClick={() => setTypeFilter(t)} aria-pressed={typeFilter === t} style={chipStyle(typeFilter === t)}>
               {t ?? "All"}
             </button>
           ))}
-          <span className="matters-filter-result-count" style={{ color: theme.subtleText }}>{filteredCases.length} of {cases.length}</span>
+          <span className="matters-filter-result-count" style={{ color: "var(--subtle-text)" }}>{filteredCases.length} of {cases.length}</span>
         </div>
       </div>
 
@@ -230,26 +87,26 @@ export const MattersTab = ({ filteredCases, statusFilter, setStatusFilter, clust
           current={{ status: statusFilter, cluster: clusterFilter, type: typeFilter, query: searchQuery, sort: sortKey }}
           onApply={(view) => { setStatusFilter(view.status); setClusterFilter(view.cluster); setTypeFilter(view.type); setSearchQuery(view.query); setSortKey(view.sort); }}
         />
-        <label className="sort-control" style={{ color: theme.subtleText }}>Sort by
-          <select value={sortKey} onChange={(event) => setSortKey(event.target.value)} style={{ background: theme.inputBg, borderColor: theme.cardBorder, color: theme.inputColor }}>
+        <label className="sort-control" style={{ color: "var(--subtle-text)" }}>Sort by
+          <select value={sortKey} onChange={(event) => setSortKey(event.target.value)} style={{ background: "var(--input-bg)", borderColor: "var(--card-border)", color: "var(--input-color)" }}>
             <option value="number">Matter number</option><option value="filed">Newest filing</option><option value="deadline">Next deadline</option><option value="exposure">Moderate exposure</option><option value="court">Court</option><option value="status">Status</option>
           </select>
         </label>
       </div>
 
-      <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, fontStyle: "italic", color: theme.subtleText, marginBottom: 16 }}>
-        Matters marked <strong style={{ color: "#6b7280", fontStyle: "normal" }}>ABANDONED</strong> were voluntarily abandoned due to real, credible safety threats.
-        Matters marked ⏳ <strong style={{ color: "#eab308", fontStyle: "normal" }}>PENDING</strong> are prepared but not yet filed, contingent on external timing.
+      <div className="matters-legend">
+        Matters marked <strong className="matters-legend-abandoned">ABANDONED</strong> were voluntarily abandoned due to real, credible safety threats.
+        Matters marked ⏳ <strong className="matters-legend-pending">PENDING</strong> are prepared but not yet filed, contingent on external timing.
       </div>
 
       {/* Matter Cards */}
-      <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+      <div className="matter-card-list">
         {filteredCases.length === 0 ? (
-          <div style={{ padding: "40px 24px", textAlign: "center", fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: theme.subtleText }}>
+          <div className="matters-empty-state">
             No matters match your current filters.{" "}
             <button
               onClick={() => { setStatusFilter("active"); setClusterFilter(null); setTypeFilter(null); setSearchQuery(""); setSortKey("number"); }}
-              style={{ background: "none", border: "none", color: GOLD, cursor: "pointer", fontFamily: "'DM Sans', sans-serif", fontSize: 14, textDecoration: "underline", padding: 0 }}
+              className="matters-clear-filters"
             >
               Clear all filters
             </button>

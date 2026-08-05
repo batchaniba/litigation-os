@@ -1,6 +1,6 @@
-export function DeadlineBanner({ timeLeft, showClock, onToggle, theme }: { timeLeft: any; showClock: boolean; onToggle: () => void; theme: any }) {
+export function DeadlineBanner({ timeLeft, showClock, onToggle }: { timeLeft: any; showClock: boolean; onToggle: () => void }) {
   return (
-    <section className="legacy-deadline-banner" style={{ background: theme.bannerBg, borderBottom: `1px solid ${timeLeft.urgent ? "#EF444440" : "#C8A84B30"}` }} aria-label="Next portfolio deadline">
+    <section className="legacy-deadline-banner" style={{ background: "var(--banner-bg)", borderBottom: `1px solid ${timeLeft.urgent ? "#EF444440" : "#C8A84B30"}` }} aria-label="Next portfolio deadline">
       <div className="legacy-deadline-row">
         <div className="legacy-deadline-label">⚖ Deadline Clock</div>
         <div className="sr-only" aria-live="polite" aria-atomic="true">
@@ -12,7 +12,7 @@ export function DeadlineBanner({ timeLeft, showClock, onToggle, theme }: { timeL
               <div key={label} className="legacy-clock-unit-wrap">
                 {index > 0 && <span className="legacy-clock-colon">:</span>}
                 <div className="legacy-clock-unit">
-                  <div className={`legacy-clock-value${timeLeft.frozen ? " frozen" : ""}`} style={{ color: timeLeft.frozen || timeLeft.urgent ? "#EF4444" : "white" }}>{String(value).padStart(2, "0")}</div>
+                  <div className={`legacy-clock-value${timeLeft.frozen ? " frozen" : ""}`} style={{ color: timeLeft.frozen || timeLeft.urgent ? "#EF4444" : "var(--clock-value-color, white)" }}>{String(value).padStart(2, "0")}</div>
                   <div className="legacy-clock-caption">{label}</div>
                 </div>
               </div>
@@ -20,7 +20,7 @@ export function DeadlineBanner({ timeLeft, showClock, onToggle, theme }: { timeL
           </div>
           <div className="legacy-deadline-description">{timeLeft.label}</div>
         </div>}
-        <button className="legacy-deadline-toggle" onClick={onToggle} aria-expanded={showClock} aria-controls="deadline-clock-display" style={{ border: theme.clockBtn.border, color: theme.clockBtn.color }}>
+        <button className="legacy-deadline-toggle" onClick={onToggle} aria-expanded={showClock} aria-controls="deadline-clock-display" style={{ border: "var(--clock-btn-border)", color: "var(--clock-btn-color)" }}>
           {showClock ? "Hide" : "Show"}
         </button>
       </div>
