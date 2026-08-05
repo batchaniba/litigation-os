@@ -66,7 +66,7 @@ export function ShellLayout() {
   return (
     <ThemeContext.Provider value={theme}>
       <PortfolioUIContext.Provider value={ui}>
-        <div className={`app-shell${darkMode ? "" : " light"}`} style={{ minHeight: "100vh", background: "var(--bg)", color: "var(--text)" }}>
+        <div className={`app-shell${darkMode ? "" : " light"}`} style={{ background: "var(--bg)", color: "var(--text)" }}>
           <a className="skip-link" href="#main-content">Skip to content</a>
           <div className="app-workspace">
             <PortfolioHeader darkMode={darkMode} onSearch={openSearch} onToggleTheme={() => setDarkMode((value) => !value)} />
