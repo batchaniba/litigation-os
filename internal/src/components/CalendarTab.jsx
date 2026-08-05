@@ -4,7 +4,6 @@ import { cases } from "../data/matters";
 import { GOLD } from "../constants";
 import { getPDTMidnight } from "../utils/dateUtils";
 import { groupEventsByDay, buildMonthGrid, dayKey, parseMatterNumbers } from "../utils/calendarUtils";
-import { useTheme } from "../ThemeContext";
 import { Modal } from "./Modal";
 
 const TYPE_COLORS = { filing: "#34D399", hearing: "#F472B6", ruling: "#60A5FA", event: "#94A3B8", milestone: GOLD, deadline: "#EF4444" };
@@ -13,7 +12,6 @@ const MONTH_NAMES = ["January", "February", "March", "April", "May", "June", "Ju
 const MAX_VISIBLE_PER_CELL = 3;
 
 export const CalendarTab = () => {
-  const theme = useTheme();
   const today = useMemo(() => getPDTMidnight(), []);
   const todayKey = useMemo(() => dayKey(today), [today]);
 
@@ -42,39 +40,29 @@ export const CalendarTab = () => {
     });
   };
 
-  const navBtnStyle = {
-    width: 32, height: 32, borderRadius: 6, border: `1px solid ${theme.cardBorder}`,
-    background: theme.cardBg, color: theme.secondaryText, fontSize: 16, cursor: "pointer",
-    display: "flex", alignItems: "center", justifyContent: "center", lineHeight: 1,
-  };
-
   return (
-    <div>
+    <div className="calendar-view">
       {/* Month nav header */}
-      <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 16 }}>
-        <button onClick={() => goToMonth(-1)} aria-label="Previous month" style={navBtnStyle}>‹</button>
-        <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 16, fontWeight: 700, color: theme.heading }}>
+      <div className="calendar-toolbar">
+        <button onClick={() => goToMonth(-1)} aria-label="Previous month" className="calendar-nav-button">‹</button>
+        <div className="calendar-month-title">
           {MONTH_NAMES[viewMonth]} {viewYear}
         </div>
-        <div style={{ display: "flex", gap: 8 }}>
-          <button onClick={goToday} style={{
-            padding: "0 14px", height: 32, borderRadius: 6, border: `1px solid ${GOLD}66`,
-            background: `${GOLD}18`, color: GOLD, fontFamily: "'DM Sans', sans-serif",
-            fontSize: 12, fontWeight: 700, cursor: "pointer", letterSpacing: 0.3,
-          }}>Today</button>
-          <button onClick={() => goToMonth(1)} aria-label="Next month" style={navBtnStyle}>›</button>
+        <div className="calendar-toolbar-actions">
+          <button onClick={goToday} className="calendar-today-button">Today</button>
+          <button onClick={() => goToMonth(1)} aria-label="Next month" className="calendar-nav-button">›</button>
         </div>
       </div>
 
       {/* Weekday header row */}
-      <div className="calendar-grid" style={{ marginBottom: 4, gap: 0 }}>
+      <div className="calendar-grid calendar-weekdays">
         {WEEKDAYS.map(w => (
-          <div key={w} style={{ textAlign: "center", fontFamily: "'DM Sans', sans-serif", fontSize: 10, fontWeight: 700, color: theme.subtleText, letterSpacing: 1, textTransform: "uppercase", padding: "4px 0" }}>{w}</div>
+          <div key={w}>{w}</div>
         ))}
       </div>
 
       {/* 6x7 day grid */}
-      <div className="calendar-grid" style={{ marginBottom: 24 }}>
+      <div className="calendar-grid calendar-days">
         {cells.map(cell => {
           const events = byDay.get(cell.key) || [];
           const isToday = cell.key === todayKey;
@@ -90,24 +78,21 @@ export const CalendarTab = () => {
               aria-label={`${MONTH_NAMES[cell.date.getUTCMonth()]} ${cell.date.getUTCDate()}, ${cell.date.getUTCFullYear()}${events.length ? `, ${events.length} event(s)` : ""}`}
               onClick={() => { if (events.length > 0) setSelectedKey(cell.key); }}
               onKeyDown={e => { if ((e.key === "Enter" || e.key === " ") && events.length > 0) { e.preventDefault(); setSelectedKey(cell.key); } }}
-              className="calendar-cell"
+              className={`calendar-cell${isToday ? " is-today" : ""}${isSelected ? " is-selected" : ""}${cell.inMonth ? "" : " is-outside"}${events.length ? " has-events" : ""}`}
               style={{
-                padding: "6px 8px", borderRadius: 6, cursor: events.length > 0 ? "pointer" : "default",
-                opacity: cell.inMonth ? 1 : 0.4,
-                background: isSelected ? `${GOLD}15` : theme.cardBg,
-                border: isToday ? `2px solid ${GOLD}` : `1px solid ${theme.cardBorder}`,
+                cursor: events.length > 0 ? "pointer" : "default",
               }}
             >
-              <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: isToday ? 700 : 500, color: isToday ? GOLD : theme.secondaryText }}>
+              <div className="calendar-day-number">
                 {cell.date.getUTCDate()}
               </div>
-              <div style={{ display: "flex", flexWrap: "wrap", gap: 3, marginTop: 4 }}>
+              <div className="calendar-event-dots">
                 {visible.map((e, i) => (
-                  <span key={i} title={e.event} style={{ width: 6, height: 6, borderRadius: "50%", background: TYPE_COLORS[e.type] || "#94A3B8" }} />
+                  <span key={i} title={e.event} style={{ background: TYPE_COLORS[e.type] || "#94A3B8" }} />
                 ))}
               </div>
               {overflow > 0 && (
-                <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9, color: theme.subtleText, marginTop: 2 }}>+{overflow} more</div>
+                <div className="calendar-overflow">+{overflow} more</div>
               )}
             </div>
           );
@@ -115,11 +100,11 @@ export const CalendarTab = () => {
       </div>
 
       {/* Type legend */}
-      <div style={{ display: "flex", gap: 16, flexWrap: "wrap", marginBottom: 24 }}>
+      <div className="calendar-legend">
         {Object.entries(TYPE_COLORS).map(([type, color]) => (
-          <div key={type} style={{ display: "flex", alignItems: "center", gap: 6 }}>
-            <span style={{ width: 8, height: 8, borderRadius: "50%", background: color }} />
-            <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: theme.subtleText, textTransform: "capitalize" }}>{type}</span>
+          <div key={type} className="calendar-legend-item">
+            <span className="calendar-legend-dot" style={{ background: color }} />
+            <span>{type}</span>
           </div>
         ))}
       </div>
@@ -131,12 +116,12 @@ export const CalendarTab = () => {
         title={selectedKey ? `${selectedKey}${selectedKey === todayKey ? " (Today)" : ""}` : ""}
       >
         {selectedEvents.map((e, i) => (
-          <div key={i} style={{ marginBottom: i === selectedEvents.length - 1 ? 0 : 14 }}>
-            <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 10, fontWeight: 700, color: TYPE_COLORS[e.type] || theme.subtleText, textTransform: "uppercase", letterSpacing: 1 }}>{e.type}</span>
-            <p style={{ margin: "4px 0", fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: theme.secondaryText, lineHeight: 1.5 }}>{e.event}</p>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
+          <div key={i} className="calendar-modal-event">
+            <span className="calendar-event-type" style={{ color: TYPE_COLORS[e.type] }}>{e.type}</span>
+            <p>{e.event}</p>
+            <div className="calendar-matter-pills">
               {resolveMatters(e.matters).map((m, j) => (
-                <span key={j} style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: theme.badgeNumColor, background: theme.badgeNumBg, borderRadius: 4, padding: "2px 8px" }}>
+                <span key={j}>
                   {m.label}{m.caption ? ` — ${m.caption}` : ""}
                 </span>
               ))}
@@ -147,17 +132,17 @@ export const CalendarTab = () => {
 
       {/* Ungroundable-date events */}
       {ungrounded.length > 0 && (
-        <div style={{ background: theme.cardBg, borderRadius: 10, padding: 20, border: `1px solid ${theme.cardBorder}` }}>
-          <h3 style={{ fontSize: 13, fontWeight: 700, color: theme.subtleText, margin: "0 0 12px", fontFamily: "'DM Sans', sans-serif", textTransform: "uppercase", letterSpacing: 1 }}>
+        <section className="calendar-undated">
+          <h3>
             Approximate / Undated Events ({ungrounded.length})
           </h3>
           {ungrounded.map((e, i) => (
-            <div key={i} style={{ marginBottom: 10 }}>
-              <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, fontWeight: 700, color: TYPE_COLORS[e.type] || theme.subtleText }}>{e.date}</span>
-              <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: theme.secondaryText, marginLeft: 8 }}>{e.event}</span>
+            <div key={i} className="calendar-undated-event">
+              <span style={{ color: TYPE_COLORS[e.type] }}>{e.date}</span>
+              <span>{e.event}</span>
             </div>
           ))}
-        </div>
+        </section>
       )}
     </div>
   );
