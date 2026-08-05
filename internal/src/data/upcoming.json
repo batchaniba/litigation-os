@@ -28,13 +28,6 @@
     "upcoming": true
   },
   {
-    "date": "Aug. 1, 2026",
-    "event": "Deadline for Santa Clara Superior Court to rule on Petition for Writ of Habeas Corpus — Case C2604791, Hon. Robert Hawk; extended from earlier date per Order Extending Time (filed Jul. 2, 2026, Cal. Rules of Court, rule 4.551(i))",
-    "matters": "19",
-    "type": "deadline",
-    "upcoming": true
-  },
-  {
     "date": "Sep. 2, 2026",
     "event": "Case Management Conference (continued from Jul. 15, 2026) — Newanforbi v. California Highway Patrol, et al. (Case No. 26CV191136), Dept. 25, Rene C. Davidson Courthouse, Oakland, Alameda County; Hon. Jenna M. Whitman",
     "matters": "20",
@@ -53,13 +46,6 @@
     "event": "Demurrer Hearing — Newanforbi v. California Highway Patrol et al. (26CV191136), 9:00 a.m., Dept. 25, Rene C. Davidson Courthouse, Oakland; Hon. Jenna M. Whitman; AG's Demurrer to Petition for Writ of Mandate, reserved for this date; the Individual Respondents' Demurrers and Joinders (currently reserved for Oct. 16/23, 2026) will be heard the same day if the pending Joint Stipulation is entered; Trial Date: Not set",
     "matters": "20",
     "type": "hearing",
-    "upcoming": true
-  },
-  {
-    "date": "Jul. 30, 2026",
-    "event": "Anticipated arrival/filing — POS-010 Proof of Service of Summons mailed Jul. 28, 2026, expected to reach the clerk and be filed on or about this date, well ahead of the Sep. 13, 2026 CRC 3.110 deadline — Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113)",
-    "matters": "26",
-    "type": "deadline",
     "upcoming": true
   },
   {
@@ -147,13 +133,6 @@
     "upcoming": true
   },
   {
-    "date": "Aug. 2, 2026",
-    "event": "Response deadline (5:00 PM PT) — Pre-Filing Demand Letters to Randstad US, LLC and RK Logistics Group, Inc.; Newanforbi v. Randstad US, LLC et al. (No. 26CV199902, Alameda Sup. Ct.) already on file; both defendants SERVED Jul. 30, 2026 — demand deadline now overlaps the post-service responsive window rather than gating service",
-    "matters": "27",
-    "type": "deadline",
-    "upcoming": true
-  },
-  {
     "date": "Aug. 26, 2026",
     "event": "Meet-and-confer deadline (computed) — Newanforbi v. Randstad US, LLC et al. (26CV199902); CCP §430.41(a)(2) requires meet-and-confer at least 5 calendar days before the Aug. 31, 2026 responsive-pleading deadline, if either defendant intends to demur; otherwise that defendant must file a declaration for the automatic 30-day extension",
     "matters": "27",
@@ -171,20 +150,6 @@
     "date": "Aug. 12, 2026",
     "event": "Outer bound for Sacramento County Sheriff Civil Bureau to process E-Filing Order #O26005511 (CCP §425.115 Notices for Randstad US, LLC, The RK Logistics Group, Inc., and United Parcel Service, Inc.) — Sheriff advises allowing up to 7 business days from the Aug. 3, 2026 submission; this office has historically accepted SER-001 submissions same-day, so acceptance is expected well before this date",
     "matters": "26,27",
-    "type": "deadline",
-    "upcoming": true
-  },
-  {
-    "date": "Aug. 4, 2026",
-    "event": "PLANNED — courtesy copies of the renewed default judgment packets mailed directly to Diamond Truck Sales, Inc. and Alpine Truck Sales, Inc.; not legally required (neither defendant has appeared or is represented), given as professional courtesy ahead of the Aug. 12, 2026 default prove-up hearing — Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094)",
-    "matters": "12",
-    "type": "filing",
-    "upcoming": true
-  },
-  {
-    "date": "Aug. 3, 2026",
-    "event": "Response deadline — Motion for Protective Order, Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504)",
-    "matters": "28",
     "type": "deadline",
     "upcoming": true
   },
