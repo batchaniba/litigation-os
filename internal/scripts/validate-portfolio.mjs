@@ -11,6 +11,7 @@
 //        npm run validate
 // ==========================================================
 import fs from "node:fs";
+import crypto from "node:crypto";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { loadMatters, MATTERS_DIR } from "./load-matters.mjs";
@@ -337,6 +338,26 @@ if (orphans.length) {
     warn(`  …and ${orphans.length - preview.length} more`);
   }
 }
+
+// ---------- byte-identical duplicate documents (fail) ----------
+// Two copies of the same filing inside one matter folder make the record
+// ambiguous: half the links point at one copy, half at the other. Keep a
+// single copy and reference that one.
+const byDigest = new Map();
+for (const full of onDiskDocs) {
+  if (full.startsWith(formLibraryPrefix + path.sep) || full === formLibraryPrefix) continue;
+  const digest = crypto.createHash("sha1").update(fs.readFileSync(full)).digest("hex");
+  const key = `${path.dirname(full)}::${digest}`;
+  if (!byDigest.has(key)) byDigest.set(key, []);
+  byDigest.get(key).push(path.relative(PUBLIC_ROOT, full));
+}
+for (const copies of byDigest.values()) {
+  if (copies.length > 1) {
+    fail(`byte-identical duplicate document(s) in one matter folder: ${copies.join(" == ")}`);
+  }
+}
+
+
 
 // ---------- report ----------
 
