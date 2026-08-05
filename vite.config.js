@@ -8,4 +8,23 @@ export default defineConfig({
   plugins: [react()],
   publicDir: 'internal/public',
   base: process.env.GITHUB_PAGES === 'true' ? '/interactive-litigation-portfolio/' : '/',
+  test: {
+    environment: 'jsdom',
+    setupFiles: ['./internal/src/test/setup.js'],
+    coverage: {
+      provider: 'v8',
+      reporter: ['text', 'json-summary'],
+      include: [
+        'internal/src/components/Modal.jsx',
+        'internal/src/utils/calendarUtils.js',
+        'internal/src/utils/matterLifecycle.ts',
+      ],
+      thresholds: {
+        lines: 80,
+        functions: 80,
+        statements: 80,
+        branches: 75,
+      },
+    },
+  },
 })
