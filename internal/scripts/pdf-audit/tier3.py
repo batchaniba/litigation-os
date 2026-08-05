@@ -29,6 +29,9 @@ import os
 import re
 import sys
 import unicodedata
+import sys as _sys2
+_sys2.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
+import checks  # shared, corrected check helpers
 from datetime import date
 
 DOCS = os.path.join(_REPO, "internal", "public", "documents")
@@ -83,7 +86,9 @@ def extract_one(path):
     out = os.path.join(CACHE, key_for(path) + ".json")
     if os.path.exists(out):
         rec = json.load(open(out))
-        if rec.get("chars", 0) >= 200 or rec.get("ocr"):
+        if "body_chars" not in rec:
+            rec["body_chars"] = len(checks.substantive_text(" ".join(rec.get("pages") or [])))
+        if rec["body_chars"] >= 200 or rec.get("ocr"):
             return rec
     else:
         rec = None
@@ -104,8 +109,11 @@ def extract_one(path):
             "error": err,
             "chars": sum(len(p) for p in pages),
         }
+    rec["body_chars"] = len(checks.substantive_text(" ".join(rec.get("pages") or [])))
 
-    if rec["chars"] < 200 and not rec.get("ocr"):
+    # a scanned brief can extract as nothing but its per-page electronic file
+    # stamp, so gate OCR on the body text rather than the raw character count
+    if rec["body_chars"] < 200 and not rec.get("ocr"):
         try:
             import pypdfium2 as pdfium
             import pytesseract
@@ -117,6 +125,7 @@ def extract_one(path):
             rec["pages"] = pages
             rec["ocr"] = True
             rec["chars"] = sum(len(p) for p in pages)
+            rec["body_chars"] = len(checks.substantive_text(" ".join(pages)))
         except Exception as e:
             rec["ocr"] = False
             rec["error"] = (rec.get("error") or "") + f" ocr: {e}"
@@ -250,16 +259,7 @@ def cmd_audit():
     for m in ACTIVE:
         data = records.get(m, {})
         defs = norm(data.get("defendants", ""))
-        keys = set()
-        for chunk in re.split(r";|\band\b", defs):
-            chunk = chunk.strip(" .,")
-            words = [w for w in re.findall(r"[A-Za-z][A-Za-z\-']{3,}", chunk)
-                     if w.lower() not in ("state", "california", "county", "city",
-                                          "officer", "sergeant", "deputy", "individual",
-                                          "capacity", "official", "does", "inc", "llc",
-                                          "corporation", "company", "services", "department")]
-            if words:
-                keys.add(max(words, key=len))
+        keys = checks.party_keys(defs)
         active_defendants[m] = keys
 
     read = 0
@@ -300,22 +300,15 @@ def cmd_audit():
         # ---- orphans -------------------------------------------------
         for f in sorted(on_disk):
             rel = "/documents/" + os.path.relpath(f, DOCS)
+            if not checks.is_auditable_file(f):
+                continue
             if os.path.basename(f) not in referenced and rel not in indexed_paths:
                 add(m, "orphan", "low", os.path.basename(f),
                     "file present in the matter folder but not referenced by the record "
                     "or the document index")
 
         # ---- text-driven checks --------------------------------------
-        timeline_dates = set()
-        for ev in timeline:
-            refs = ev.get("matters") or ev.get("matter_refs") or []
-            if isinstance(refs, (int, str)):
-                refs = [refs]
-            nums = {int(re.sub(r"\D", "", str(r)) or 0) for r in refs}
-            if m in nums or m == ev.get("matter"):
-                d = ev.get("date")
-                if isinstance(d, str) and re.match(r"\d{4}-\d{2}-\d{2}", d):
-                    timeline_dates.add(d[:10])
+        timeline_dates = checks.timeline_dates_for(timeline, m)
 
         for rec in index.get(str(m), []):
             read += 1
@@ -327,29 +320,25 @@ def cmd_audit():
             fname = rec["file"]
             rel = rec["rel"]
 
-            if len(text) < 120:
-                add(m, "unreadable", "medium", fname,
-                    "no usable text after extraction and OCR; content cannot be verified")
+            unreadable = checks.unreadable_detail(text, checks.squash_ref(records.get(m, {}).get("case_no")))
+            if unreadable:
+                add(m, "unreadable", "medium", fname, unreadable)
                 continue
 
             sq = squash(text)
 
             # misfiled: carries another matter's case number and not its own
             own = case_nos.get(m)
-            if own and own not in sq:
-                foreign = [f"matter {o:02d} ({norm(records[o].get('case_no'))})"
-                           for o, c in case_nos.items() if o != m and c in sq]
-                if foreign:
-                    add(m, "misfiled", "high", fname,
-                        "text carries only another matter's case number: " + "; ".join(foreign))
+            foreign_cases = {o: (c, norm(records[o].get("case_no")))
+                             for o, c in case_nos.items() if o != m}
+            detail = checks.misfiled_detail(sq, text, own, foreign_cases)
+            if detail:
+                add(m, "misfiled", "high", fname, detail)
 
             # mislabeled: filename claims a type the text does not support
-            low = fname.lower()
-            for label, marker in DOC_TYPE_MARKERS:
-                if label in low and not re.search(marker, text, re.I):
-                    add(m, "mislabeled", "medium", fname,
-                        f"filename says '{label}' but the text has no matching marker")
-                    break
+            detail = checks.mislabel_detail(fname, text)
+            if detail:
+                add(m, "mislabeled", "medium", fname, detail)
 
             # cross_ref: archived filing names an active-matter defendant or case number
             for am, keys in active_defendants.items():
@@ -360,21 +349,8 @@ def cmd_audit():
                     break
 
             # deadlines: future hearing/trial dates in the text vs the timeline
-            for mt in DATE_RX.finditer(text):
-                at = mt.start()
-                window = text[max(0, at - 140): at + 60]
-                if not HEARING_RX.search(window):
-                    continue
-                try:
-                    d = parse_date(mt)
-                except ValueError:
-                    continue
-                if d < date(2026, 1, 1):
-                    continue
-                if d.isoformat() not in timeline_dates:
-                    add(m, "deadline", "medium", fname,
-                        f"filing sets a {HEARING_RX.search(window).group(1).lower()} "
-                        f"on {d.isoformat()} that the timeline does not carry")
+            for _iso, _kind, detail in checks.deadline_details(text, fname, timeline_dates):
+                add(m, "deadline", "medium", fname, detail)
 
     by_check = {}
     for f in findings:
