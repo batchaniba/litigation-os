@@ -1,0 +1,4195 @@
+{
+ "generated_for": "cross-matter-risk-index",
+ "active_matters": [
+  1,
+  2,
+  7,
+  12,
+  19,
+  20,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29
+ ],
+ "archived_matters": [
+  3,
+  4,
+  5,
+  6,
+  8,
+  9,
+  10,
+  11,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  21,
+  22,
+  23,
+  30,
+  31
+ ],
+ "contradiction_findings": [
+  {
+   "id": 1,
+   "title": "Finding 1",
+   "severity": "high",
+   "matters": [
+    1,
+    1,
+    7,
+    8,
+    20,
+    1,
+    7,
+    8,
+    20,
+    1,
+    18,
+    20,
+    24
+   ],
+   "body": "**1. \"Arrest\" vs. \"detention only\" \u2014 argued both ways, each time picking whichever position serves the forum.** (Matters 1, 7, 8, 20) Matter 1's federal Complaint pleads that CHP's \"detention\" recharacterization is \"factually and legally incorrect,\" and that handcuffing, transport, and chemical-test advisements are \"all indicia of a full custodial arrest\" under *Dunaway v. New York*. Matters 7, 8, and 20 take the opposite position \u2014 that the same Detention Certificate is dispositive proof the event \"ceased to be an arrest as a matter of law,\" calling it \"legally equivalent to a judicial finding that no crime was committed.\" > Matter 1 Complaint \u00b618: *\"Plaintiff asserts that this characterization is factually and legally incorrect. He was subjected to handcuffing, placed in the back of a patrol vehicle, transported under guard, and read chemical test advisements \u2014 all indicia of a full custodial arrest within the meaning of *Dunaway v. New York*, 442 U.S. 200 (1979).\"* > > Matter 20 Petition (\u00a7B heading): *\"The Detention Certificate and Statutory Nullification of the Arrest ... By operation of law, the event ceased to be an arrest more than two months before the January 24, 2025 APS hearing.\"* These are irreconcilable sworn positions on the same historical fact, each adopted only when convenient. Classic impeachment/judicial-estoppel material.",
+   "type": "sworn_contradiction"
+  },
+  {
+   "id": 2,
+   "title": "Finding 2",
+   "severity": "high",
+   "matters": [
+    2,
+    7,
+    20,
+    7,
+    30,
+    1,
+    20,
+    5,
+    3,
+    7,
+    3,
+    30,
+    1,
+    20,
+    33,
+    5,
+    3
+   ],
+   "body": "**2. Employment start date conflict.** (Matters 7, 20) Matter 7 repeatedly and specifically pleads employment with Centerline began \"October 30, 2024 \u2014 just two days before\" the Nov. 1 encounter. Matter 20's verified petition instead states wages are documented on \"twenty-six consecutive weekly pay stubs covering the pay periods from May 5, 2024 through January 3, 2025\" \u2014 over five months earlier than the claimed start date. > Matter 7 FAC \u00b63: *\"He had commenced his employment with Centerline Drivers, LLC on October 30, 2024\u2014just two days before the November 1, 2024 CHP encounter.\"* > > Matter 20 Petition \u00b633: *\"...reflected on twenty-six consecutive weekly pay stubs covering the pay periods from May 5, 2024 through January 3, 2025.\"* Both cannot be true as pled.",
+   "type": "sworn_contradiction"
+  },
+  {
+   "id": 3,
+   "title": "Finding 3",
+   "severity": "high",
+   "matters": [
+    3,
+    5,
+    6,
+    6,
+    19,
+    9,
+    17,
+    10,
+    10,
+    5,
+    5,
+    6,
+    7,
+    9,
+    6,
+    6,
+    10
+   ],
+   "body": "**3. HOPE's per-parolee revenue figure changed between two of the litigant's own sworn complaints.** (Matters 5, 6) Matter 6's original Complaint (verified Jan. 19, 2026) computes \"$9,690 annually\" from a single contract, with shown math. Its FAC (verified Feb. 17, 2026, one month later) drops the math and asserts \"$10,600 annually\" from three contracts. The $10,600 figure is then repeated in Matter 5's FAC. No document produced in discovery supports either number \u2014 `matters.js`'s own notes for Matter 5 already flag it as \"a discovery-compulsion target.\" > Matter 6 original Complaint p.7: *\"...generates approximately $9,690 annually in group and CTM fees alone.\"* > > Matter 6 FAC p.6: *\"...generates approximately $10,600 per year in baseline fees alone.\"*",
+   "type": "sworn_contradiction"
+  },
+  {
+   "id": 4,
+   "title": "Finding 4",
+   "severity": "high",
+   "matters": [
+    4,
+    3,
+    5,
+    3,
+    5,
+    20
+   ],
+   "body": "**4. Grace-period revocation date is off by six weeks against the litigant's own produced evidence.** (Matters 3, 5) Matter 3's FAC pleads the revocation happened \"in or about early April 2025.\" HOPE's own business records (Bates HOPE_000190, cited in Matter 5's case notes) date the same event to February 20, 2025. Already flagged internally as unreconciled.",
+   "type": "sworn_contradiction"
+  },
+  {
+   "id": 5,
+   "title": "Finding 5",
+   "severity": "high",
+   "matters": [
+    5,
+    15,
+    9,
+    15,
+    19,
+    15,
+    9,
+    19,
+    9,
+    4,
+    4,
+    6,
+    5,
+    9,
+    4,
+    6,
+    5,
+    15
+   ],
+   "body": "**5. The \"Eagan\" misidentification \u2014 the central theory of Matter 15 \u2014 was quoted without the error in two earlier, still-pending filings.** (Matters 9, 15, 19) Matter 15's entire liability theory turns on CDCR Form 1502-DR misidentifying the litigant as a different parolee, \"Eagan,\" in the Unit Supervisor Comments \u2014 offered as proof no individualized review occurred. But Matter 9's verified FAC and Matter 19's signed habeas petition, both filed months earlier and quoting the *same* underlying document, silently substitute \"Newanforbi\" for \"Eagan\" in their own body text, even though the actual attached exhibit in both says \"Eagan.\" > Matter 9 FAC \u00b64 (as pled): *\"Newanforbi has only completed approximately 4 years of the required 6.5 years of supervision.\"* > > Matter 9's own attached Exhibit A (actual document text): *\"Eagan has only completed approximately 4 years of the required 6.5 years of supervision.\"* Opposing counsel can argue either that the quote was altered from a verified exhibit in two separate courts, or that the \"Eagan\" defect wasn't actually apparent/material to the litigant when he read the same document twice before \u2014 undermining Matter 15's claim that the misidentification is \"facially obvious.\"",
+   "type": "sworn_contradiction"
+  },
+  {
+   "id": 6,
+   "title": "Finding 6",
+   "severity": "high",
+   "matters": [
+    6,
+    24,
+    24,
+    20,
+    2,
+    24,
+    12,
+    20,
+    20,
+    2,
+    18,
+    24
+   ],
+   "body": "**6. Matter 24 swears, under penalty of perjury, that no related action names the same defendant or challenges the same decision \u2014 which is false.** (Matters 24, 20, 2) Matter 24's verified federal complaint (signed June 12, 2026) lists only two related actions and affirmatively states: *\"Neither related action asserts any claim against Captain Serrato. Neither related action challenges the April 20, 2026 denial of the U Visa certification request... This action raises no claims that duplicate or overlap with the related actions.\"* This is contradicted by the portfolio's own data: Matter 20 (filed three weeks earlier) already names \"G. Serrato, Captain and Commander CHP Dublin Area\" and seeks a writ compelling the identical U-visa certification \u2014 and is never mentioned. Matter 2, which *is* listed, has a fully-briefed U-Visa Certification Motion with a hearing the very next day (June 18, 2026) that Matter 24's disclosure never mentions. This is a duplicative-litigation / candor-to-the-court exposure, not a wording issue \u2014 the kind of thing that gets a case dismissed or sanctioned if a defendant notices.",
+   "type": "sworn_contradiction"
+  },
+  {
+   "id": 7,
+   "title": "Finding 7",
+   "severity": "medium",
+   "matters": [
+    7,
+    1,
+    7,
+    20,
+    1,
+    7,
+    69,
+    33,
+    35,
+    20,
+    2,
+    7,
+    20
+   ],
+   "body": "**7. Three non-reconciling lost-wage totals for the identical CDL suspension period.** (Matters 1, 7, 20) \u2014 Matter 1 gives a vague range (\"$175,000\u2013$450,000+\"); Matter 7 computes $69,368/year from a flat $33.35/hr rate; Matter 20 states \"$900\u2013$2,800/week\" pay stubs totaling \"approximately $112,000.\" None reconcile, and the wage methodology itself differs between Matter 7 and 20 despite both citing the same Centerline employment.",
+   "type": "sworn_contradiction"
+  },
+  {
+   "id": 8,
+   "title": "Finding 8",
+   "severity": "medium",
+   "matters": [
+    8,
+    1,
+    7,
+    20,
+    1,
+    7,
+    20
+   ],
+   "body": "**8. The pre-stop \"impairment cue\" explanation changed between filings.** (Matters 1, 7, 20) \u2014 Matter 1 attributes roadside rest to \"a long night of social activity,\" never mentioning any medical condition. Matters 7 and 20 drop that explanation entirely and introduce, for the first time, that the litigant \"is pre-diabetic\" \u2014 a condition said to mimic intoxication signs. Not mutually exclusive, but the complete disappearance of one narrative in favor of a new one in the more legally aggressive filings reads as tailoring.",
+   "type": "sworn_contradiction"
+  },
+  {
+   "id": 9,
+   "title": "Finding 9",
+   "severity": "medium",
+   "matters": [
+    9,
+    3,
+    6,
+    3,
+    6
+   ],
+   "body": "**9. Agent Derrick is portrayed as an actively engaged retaliator in one federal case and as procedurally derelict/absent in another.** (Matters 3, 6) \u2014 Matter 3 describes Derrick personally threatening the litigant, revoking his grace period, and escalating supervision. Matter 6's original complaint instead says \"Agent Derrick failed to initiate CTMs or complete Form 3043 ... directly causing the procedural void.\" Not strictly irreconcilable, but the two portraits are in tension.",
+   "type": "sworn_contradiction"
+  },
+  {
+   "id": 10,
+   "title": "Finding 10",
+   "severity": "medium",
+   "matters": [
+    10,
+    14,
+    15,
+    16,
+    19,
+    21,
+    14,
+    15,
+    19,
+    16,
+    21
+   ],
+   "body": "**10. Gary Noguchi holds two different job titles depending on which line of cases you read.** (Matters 14, 15, 16, 19, 21) \u2014 \"Unit Supervisor\" in the Urrea/discharge-review line (Matter 14's real complaint; `matters.js` text for 15/19); \"Supervising Parole Agent ... with final authority over parole travel approvals\" in the Rojo/travel-request line (Matters 16 and 21's real complaints). Likely the same role described informally two ways, but it's a sworn, verified statement about a recurring named defendant, and the specific authority held can matter for supervisory-liability theories.",
+   "type": "sworn_contradiction"
+  },
+  {
+   "id": 11,
+   "title": "Finding 11",
+   "severity": "low",
+   "matters": [
+    11,
+    12,
+    54,
+    1,
+    8,
+    12,
+    55,
+    7
+   ],
+   "body": "**11.** One-minute discrepancy in the sworn stop time \u2014 12:54 a.m. (Matters 1, 8) vs. 12:55 a.m. (Matter 7) \u2014 trivial alone, but later filings anchor legal arguments to precise dashcam timestamps down to the second.",
+   "type": "sworn_contradiction"
+  },
+  {
+   "id": 12,
+   "title": "Finding 12",
+   "severity": "low",
+   "matters": [
+    12,
+    7,
+    32,
+    0,
+    55,
+    37,
+    0,
+    56,
+    9,
+    1
+   ],
+   "body": "**12.** Matter 7's FAC labels a 32-second dashcam gap (00:55:37 to 00:56:09) as \"approximately fourteen seconds\" \u2014 an internally consistent but objectively wrong arithmetic statement repeated in Matter 1's narrative too.",
+   "type": "sworn_contradiction"
+  },
+  {
+   "id": 13,
+   "title": "Finding 13",
+   "severity": "low",
+   "matters": [
+    13,
+    16,
+    21,
+    15,
+    19,
+    16,
+    14,
+    2
+   ],
+   "body": "**13.** Both the Rojo travel-denial storyline (Matters 16/21) and the unrelated Dodd/Noguchi discharge-review storyline (Matter 15) hinge on the same date, November 19, 2025, for two different events. Not a contradiction, but very likely the root cause of the Matter 16 recordkeeping error below (finding #14) \u2014 worth double-checking no future filing conflates the two. --- ## Part 2 \u2014 Portfolio recordkeeping errors (`src/data/matters.js`) These are errors in the app's own case-tracking summaries, not in the sworn court filings. Lower litigation risk, but worth fixing so the portfolio doesn't misinform future drafting.",
+   "type": "sworn_contradiction"
+  },
+  {
+   "id": 14,
+   "title": "Finding 14",
+   "severity": "high",
+   "matters": [
+    14,
+    16,
+    16,
+    19,
+    21,
+    16,
+    21,
+    16
+   ],
+   "body": "**14. Matter 16's summary describes a completely different incident than what was actually filed.** `matters.js` says Matter 16 is about \"Agent Rojo assum[ing] AOR on Nov. 19, 2025 and withhold[ing the] finalized Discharge Review Report\" \u2014 but the real, filed complaint is the state-law mirror of Matter 21's Reno church-travel-denial dispute (same dates, same text quotes, same narrative). The two real complaints (16 and 21) agree with each other; only the app's summary of Matter 16 is wrong.",
+   "type": "recordkeeping"
+  },
+  {
+   "id": 15,
+   "title": "Finding 15",
+   "severity": "high",
+   "matters": [
+    15,
+    14,
+    14
+   ],
+   "body": "**15. Matter 14's defendant list is wrong.** `matters.js` lists Keely Dodd as a Matter 14 defendant; she appears nowhere in the actual filed complaint. The real fourth defendant, Bryan Bishop (DAPO Director, sued officially), is omitted entirely from `matters.js`.",
+   "type": "recordkeeping"
+  },
+  {
+   "id": 16,
+   "title": "Finding 16",
+   "severity": "medium",
+   "matters": [
+    16,
+    15,
+    11
+   ],
+   "body": "**16. Jury vs. bench trial \u2014 stale.** The last pre-filing draft demanded a jury trial; the actual court-stamped operative complaint (Matter 15, file-stamped June 11, 2026) elects a bench trial instead. `matters.js` still says \"jury trial demanded.\"",
+   "type": "recordkeeping"
+  },
+  {
+   "id": 17,
+   "title": "Finding 17",
+   "severity": "medium",
+   "matters": [
+    17,
+    9,
+    1,
+    9,
+    15,
+    19
+   ],
+   "body": "**17. Discharge-review date \u2014 stale and internally unreconciled.** Matter 9's own pleading text says \"December 1, 2025\" throughout; `matters.js`'s Matter 9 summary says \"November 2025 Discharge Review.\" (Matter 15 separately anchors to November 19, 2025, using a different field on the same physical form \u2014 reconcilable, but never explained in any of the pleadings.)",
+   "type": "recordkeeping"
+  },
+  {
+   "id": 18,
+   "title": "Finding 18",
+   "severity": "medium",
+   "matters": [
+    18,
+    12
+   ],
+   "body": "**18. Matter 12's summary overstates what's actually pled.** `matters.js` states as settled fact that the prior owner \"expressly disclosed\" the truck's defect to Diamond and that an out-of-service order existed. Both the original complaint and the FAC (filed three months apart) plead these same two facts only \"on information and belief,\" explicitly flagged as unconfirmed.",
+   "type": "recordkeeping"
+  },
+  {
+   "id": 19,
+   "title": "Finding 19",
+   "severity": "low",
+   "matters": [
+    19,
+    14,
+    4,
+    9,
+    3,
+    4,
+    11,
+    13,
+    17,
+    18,
+    4,
+    3,
+    4,
+    4,
+    22,
+    23,
+    46,
+    22,
+    23,
+    23,
+    1,
+    24,
+    6,
+    2,
+    1,
+    11,
+    18,
+    24
+   ],
+   "body": "**19. Matter 14's causes-of-action list undercounts the real complaint.** `matters.js` lists 4 causes; the actual filed complaint pleads 9, including a Writ of Mandate and two California Constitution claims omitted from the summary entirely. --- ## Part 3 \u2014 Documentation gaps (no pleadings uploaded) Matters 4, 11, 13, 17, and 18 have no PDFs in `public/documents/`, so they could only be checked against `matters.js`'s own text, not against a primary source. None of the five showed an obvious internal inconsistency in that text, but none can be verified either \u2014 flagged as a gap, not a finding. If any of these are ever refiled, their complaints should be checked directly against the sibling matters they mirror (especially Matter 4 against Matter 3's FAC, given the grace-period date issue at finding #4). --- ## Part 4 \u2014 Clean result **Matters 22 and 23** (Pilot Travel Centers / Macy's) were checked specifically for whether the shared PC \u00a7290.46(j) legal theory was described consistently across an adjudicated matter and a never-filed one. No inconsistency found \u2014 the statutory framing, the FCRA/ICRAA/UCL/Tameny theory stack, and the \"sophisticated employer received an explicit statutory warning\" narrative are identical in both, and the factual differences between them (Matter 22: hired then terminated; Matter 23: offer only, never started) are exactly what should differ between two independent events. `matters.js`'s hedged, anticipatory language for Matter 23 accurately reflects that no complaint was ever filed. --- ## Priority ranking If only two things get fixed, they should be: 1. **Matter 24's related-actions disclosure** (finding #6) \u2014 this is the one finding with real procedural downside (dismissal, sanctions, candor-to-the-court exposure) rather than just impeachment risk, and it's fixable by amending the complaint's Related Actions section before it's relied on. 2. **The arrest-vs-detention contradiction** (finding #1) \u2014 the most exploitable factual conflict, spanning four matters and two forums; worth deciding on one consistent position going forward even if some pending filings can't be un-said. --- *Report prepared: July 11, 2026* *Methodology: five parallel document-reading analysis passes across 18 of 24 matters' primary pleadings (complaints, FACs, petitions, declarations), cross-referenced against `src/data/matters.js` case-tracking summaries. Matters without uploaded pleadings were checked against summary text only and flagged as documentation gaps.*",
+   "type": "recordkeeping"
+  }
+ ],
+ "related_matters": {
+  "1": {
+   "shared_defendants": [
+    {
+     "matter": 2,
+     "names": [
+      "CHP",
+      "Jose",
+      "Melano",
+      "Meza-Gonzalez",
+      "Santiago"
+     ]
+    },
+    {
+     "matter": 20,
+     "names": [
+      "CHP"
+     ]
+    }
+   ],
+   "shared_cluster": [
+    2,
+    7,
+    8,
+    20,
+    24
+   ],
+   "shared_fact_group": []
+  },
+  "2": {
+   "shared_defendants": [
+    {
+     "matter": 1,
+     "names": [
+      "CHP",
+      "Jose",
+      "Melano",
+      "Meza-Gonzalez",
+      "Santiago"
+     ]
+    },
+    {
+     "matter": 20,
+     "names": [
+      "CHP"
+     ]
+    }
+   ],
+   "shared_cluster": [
+    1,
+    7,
+    8,
+    20,
+    24
+   ],
+   "shared_fact_group": []
+  },
+  "7": {
+   "shared_defendants": [
+    {
+     "matter": 5,
+     "names": [
+      "Director"
+     ]
+    },
+    {
+     "matter": 8,
+     "names": [
+      "Candelaria",
+      "DMV",
+      "Diana",
+      "Hearing"
+     ]
+    },
+    {
+     "matter": 14,
+     "names": [
+      "Director"
+     ]
+    }
+   ],
+   "shared_cluster": [
+    1,
+    2,
+    8,
+    20,
+    24
+   ],
+   "shared_fact_group": []
+  },
+  "8": {
+   "shared_defendants": [
+    {
+     "matter": 7,
+     "names": [
+      "Candelaria",
+      "DMV",
+      "Diana",
+      "Hearing"
+     ]
+    }
+   ],
+   "shared_cluster": [
+    1,
+    2,
+    7,
+    20,
+    24
+   ],
+   "shared_fact_group": []
+  },
+  "20": {
+   "shared_defendants": [
+    {
+     "matter": 1,
+     "names": [
+      "CHP"
+     ]
+    },
+    {
+     "matter": 2,
+     "names": [
+      "CHP"
+     ]
+    },
+    {
+     "matter": 3,
+     "names": [
+      "Gary"
+     ]
+    },
+    {
+     "matter": 4,
+     "names": [
+      "Gary"
+     ]
+    },
+    {
+     "matter": 14,
+     "names": [
+      "Gary"
+     ]
+    },
+    {
+     "matter": 15,
+     "names": [
+      "Gary"
+     ]
+    },
+    {
+     "matter": 21,
+     "names": [
+      "Gary"
+     ]
+    },
+    {
+     "matter": 24,
+     "names": [
+      "Area",
+      "Captain",
+      "Commander",
+      "Dublin",
+      "Highway",
+      "Patrol",
+      "Serrato"
+     ]
+    },
+    {
+     "matter": 30,
+     "names": [
+      "Gary"
+     ]
+    }
+   ],
+   "shared_cluster": [
+    1,
+    2,
+    7,
+    8,
+    24
+   ],
+   "shared_fact_group": []
+  },
+  "24": {
+   "shared_defendants": [
+    {
+     "matter": 20,
+     "names": [
+      "Area",
+      "Captain",
+      "Commander",
+      "Dublin",
+      "Highway",
+      "Patrol",
+      "Serrato"
+     ]
+    }
+   ],
+   "shared_cluster": [
+    1,
+    2,
+    7,
+    8,
+    20
+   ],
+   "shared_fact_group": []
+  },
+  "3": {
+   "shared_defendants": [
+    {
+     "matter": 4,
+     "names": [
+      "Andrew",
+      "Derrick",
+      "Gary",
+      "Noguchi"
+     ]
+    },
+    {
+     "matter": 5,
+     "names": [
+      "Katie",
+      "Palacios"
+     ]
+    },
+    {
+     "matter": 6,
+     "names": [
+      "Derrick",
+      "Noguchi",
+      "Palacios"
+     ]
+    },
+    {
+     "matter": 13,
+     "names": [
+      "Noguchi"
+     ]
+    },
+    {
+     "matter": 14,
+     "names": [
+      "Gary",
+      "Noguchi"
+     ]
+    },
+    {
+     "matter": 15,
+     "names": [
+      "Andrew",
+      "Derrick",
+      "Gary",
+      "Noguchi"
+     ]
+    },
+    {
+     "matter": 20,
+     "names": [
+      "Gary"
+     ]
+    },
+    {
+     "matter": 21,
+     "names": [
+      "Gary",
+      "Noguchi"
+     ]
+    },
+    {
+     "matter": 30,
+     "names": [
+      "Andrew",
+      "Derrick",
+      "Gary",
+      "Jul",
+      "Noguchi"
+     ]
+    }
+   ],
+   "shared_cluster": [
+    4,
+    5,
+    6,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    21,
+    28,
+    30
+   ],
+   "shared_fact_group": []
+  },
+  "4": {
+   "shared_defendants": [
+    {
+     "matter": 3,
+     "names": [
+      "Andrew",
+      "Derrick",
+      "Gary",
+      "Noguchi"
+     ]
+    },
+    {
+     "matter": 6,
+     "names": [
+      "CDCR",
+      "Derrick",
+      "Noguchi"
+     ]
+    },
+    {
+     "matter": 9,
+     "names": [
+      "CDCR"
+     ]
+    },
+    {
+     "matter": 10,
+     "names": [
+      "CDCR"
+     ]
+    },
+    {
+     "matter": 11,
+     "names": [
+      "CDCR"
+     ]
+    },
+    {
+     "matter": 13,
+     "names": [
+      "Noguchi"
+     ]
+    },
+    {
+     "matter": 14,
+     "names": [
+      "CDCR",
+      "Gary",
+      "Noguchi"
+     ]
+    },
+    {
+     "matter": 15,
+     "names": [
+      "Andrew",
+      "CDCR",
+      "Derrick",
+      "Gary",
+      "Noguchi"
+     ]
+    },
+    {
+     "matter": 16,
+     "names": [
+      "CDCR"
+     ]
+    },
+    {
+     "matter": 19,
+     "names": [
+      "CDCR"
+     ]
+    },
+    {
+     "matter": 20,
+     "names": [
+      "Gary"
+     ]
+    },
+    {
+     "matter": 21,
+     "names": [
+      "CDCR",
+      "Gary",
+      "Noguchi"
+     ]
+    },
+    {
+     "matter": 30,
+     "names": [
+      "Andrew",
+      "CDCR",
+      "Derrick",
+      "Gary",
+      "Noguchi"
+     ]
+    }
+   ],
+   "shared_cluster": [
+    3,
+    5,
+    6,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    21,
+    28,
+    30
+   ],
+   "shared_fact_group": []
+  },
+  "5": {
+   "shared_defendants": [
+    {
+     "matter": 3,
+     "names": [
+      "Katie",
+      "Palacios"
+     ]
+    },
+    {
+     "matter": 6,
+     "names": [
+      "HOPE",
+      "Palacios",
+      "Psychotherapy"
+     ]
+    },
+    {
+     "matter": 7,
+     "names": [
+      "Director"
+     ]
+    },
+    {
+     "matter": 14,
+     "names": [
+      "Director"
+     ]
+    },
+    {
+     "matter": 15,
+     "names": [
+      "Civ",
+      "Code"
+     ]
+    },
+    {
+     "matter": 28,
+     "names": [
+      "HOPE",
+      "Psychotherapy"
+     ]
+    }
+   ],
+   "shared_cluster": [
+    3,
+    4,
+    6,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    21,
+    28,
+    30
+   ],
+   "shared_fact_group": []
+  },
+  "6": {
+   "shared_defendants": [
+    {
+     "matter": 3,
+     "names": [
+      "Derrick",
+      "Noguchi",
+      "Palacios"
+     ]
+    },
+    {
+     "matter": 4,
+     "names": [
+      "CDCR",
+      "Derrick",
+      "Noguchi"
+     ]
+    },
+    {
+     "matter": 5,
+     "names": [
+      "HOPE",
+      "Palacios",
+      "Psychotherapy"
+     ]
+    },
+    {
+     "matter": 9,
+     "names": [
+      "CDCR",
+      "Jeff",
+      "Macomber",
+      "Secretary"
+     ]
+    },
+    {
+     "matter": 10,
+     "names": [
+      "CDCR",
+      "Macomber",
+      "Secretary"
+     ]
+    },
+    {
+     "matter": 11,
+     "names": [
+      "CDCR",
+      "Jeff",
+      "Macomber",
+      "Secretary"
+     ]
+    },
+    {
+     "matter": 13,
+     "names": [
+      "Jeff",
+      "Macomber",
+      "Noguchi"
+     ]
+    },
+    {
+     "matter": 14,
+     "names": [
+      "Bishop",
+      "CDCR",
+      "Jeff",
+      "Macomber",
+      "Noguchi",
+      "Secretary"
+     ]
+    },
+    {
+     "matter": 15,
+     "names": [
+      "CDCR",
+      "Derrick",
+      "Dodd",
+      "Moua",
+      "Noguchi",
+      "Rojo"
+     ]
+    },
+    {
+     "matter": 16,
+     "names": [
+      "CDCR",
+      "Rojo"
+     ]
+    },
+    {
+     "matter": 17,
+     "names": [
+      "Jeff",
+      "Macomber"
+     ]
+    },
+    {
+     "matter": 19,
+     "names": [
+      "CDCR",
+      "Dodd",
+      "Macomber",
+      "Secretary"
+     ]
+    },
+    {
+     "matter": 21,
+     "names": [
+      "CDCR",
+      "Jeff",
+      "Macomber",
+      "Noguchi",
+      "Rojo",
+      "Secretary"
+     ]
+    },
+    {
+     "matter": 28,
+     "names": [
+      "HOPE",
+      "Psychotherapy"
+     ]
+    },
+    {
+     "matter": 30,
+     "names": [
+      "CDCR",
+      "Derrick",
+      "FAC",
+      "Moua",
+      "Noguchi",
+      "Rojo"
+     ]
+    }
+   ],
+   "shared_cluster": [
+    3,
+    4,
+    5,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    21,
+    28,
+    30
+   ],
+   "shared_fact_group": []
+  },
+  "11": {
+   "shared_defendants": [
+    {
+     "matter": 4,
+     "names": [
+      "CDCR"
+     ]
+    },
+    {
+     "matter": 6,
+     "names": [
+      "CDCR",
+      "Jeff",
+      "Macomber",
+      "Secretary"
+     ]
+    },
+    {
+     "matter": 9,
+     "names": [
+      "CDCR",
+      "Jeff",
+      "Macomber",
+      "Secretary"
+     ]
+    },
+    {
+     "matter": 10,
+     "names": [
+      "CDCR",
+      "Macomber",
+      "Secretary"
+     ]
+    },
+    {
+     "matter": 13,
+     "names": [
+      "Jeff",
+      "Macomber"
+     ]
+    },
+    {
+     "matter": 14,
+     "names": [
+      "CDCR",
+      "Jeff",
+      "Macomber",
+      "Secretary"
+     ]
+    },
+    {
+     "matter": 15,
+     "names": [
+      "CDCR"
+     ]
+    },
+    {
+     "matter": 16,
+     "names": [
+      "CDCR"
+     ]
+    },
+    {
+     "matter": 17,
+     "names": [
+      "Jeff",
+      "Macomber"
+     ]
+    },
+    {
+     "matter": 19,
+     "names": [
+      "CDCR",
+      "Macomber",
+      "Secretary"
+     ]
+    },
+    {
+     "matter": 21,
+     "names": [
+      "CDCR",
+      "Jeff",
+      "Macomber",
+      "Secretary"
+     ]
+    },
+    {
+     "matter": 30,
+     "names": [
+      "CDCR"
+     ]
+    }
+   ],
+   "shared_cluster": [
+    3,
+    4,
+    5,
+    6,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    21,
+    28,
+    30
+   ],
+   "shared_fact_group": []
+  },
+  "13": {
+   "shared_defendants": [
+    {
+     "matter": 3,
+     "names": [
+      "Noguchi"
+     ]
+    },
+    {
+     "matter": 4,
+     "names": [
+      "Noguchi"
+     ]
+    },
+    {
+     "matter": 6,
+     "names": [
+      "Jeff",
+      "Macomber",
+      "Noguchi"
+     ]
+    },
+    {
+     "matter": 9,
+     "names": [
+      "Jeff",
+      "Macomber"
+     ]
+    },
+    {
+     "matter": 10,
+     "names": [
+      "Macomber"
+     ]
+    },
+    {
+     "matter": 11,
+     "names": [
+      "Jeff",
+      "Macomber"
+     ]
+    },
+    {
+     "matter": 14,
+     "names": [
+      "Agent",
+      "Jeff",
+      "Macomber",
+      "Noguchi",
+      "Urrea"
+     ]
+    },
+    {
+     "matter": 15,
+     "names": [
+      "Agent",
+      "Noguchi"
+     ]
+    },
+    {
+     "matter": 16,
+     "names": [
+      "Agent"
+     ]
+    },
+    {
+     "matter": 17,
+     "names": [
+      "Jeff",
+      "Macomber"
+     ]
+    },
+    {
+     "matter": 19,
+     "names": [
+      "Macomber"
+     ]
+    },
+    {
+     "matter": 21,
+     "names": [
+      "Agent",
+      "Jeff",
+      "Macomber",
+      "Noguchi"
+     ]
+    },
+    {
+     "matter": 30,
+     "names": [
+      "Agent",
+      "Noguchi"
+     ]
+    }
+   ],
+   "shared_cluster": [
+    3,
+    4,
+    5,
+    6,
+    11,
+    14,
+    15,
+    16,
+    17,
+    18,
+    21,
+    28,
+    30
+   ],
+   "shared_fact_group": []
+  },
+  "14": {
+   "shared_defendants": [
+    {
+     "matter": 3,
+     "names": [
+      "Gary",
+      "Noguchi"
+     ]
+    },
+    {
+     "matter": 4,
+     "names": [
+      "CDCR",
+      "Gary",
+      "Noguchi"
+     ]
+    },
+    {
+     "matter": 5,
+     "names": [
+      "Director"
+     ]
+    },
+    {
+     "matter": 6,
+     "names": [
+      "Bishop",
+      "CDCR",
+      "Jeff",
+      "Macomber",
+      "Noguchi",
+      "Secretary"
+     ]
+    },
+    {
+     "matter": 7,
+     "names": [
+      "Director"
+     ]
+    },
+    {
+     "matter": 9,
+     "names": [
+      "CDCR",
+      "Jeff",
+      "Macomber",
+      "Secretary"
+     ]
+    },
+    {
+     "matter": 10,
+     "names": [
+      "CDCR",
+      "Macomber",
+      "Secretary"
+     ]
+    },
+    {
+     "matter": 11,
+     "names": [
+      "CDCR",
+      "Jeff",
+      "Macomber",
+      "Secretary"
+     ]
+    },
+    {
+     "matter": 13,
+     "names": [
+      "Agent",
+      "Jeff",
+      "Macomber",
+      "Noguchi",
+      "Urrea"
+     ]
+    },
+    {
+     "matter": 15,
+     "names": [
+      "Agent",
+      "CDCR",
+      "Gary",
+      "Noguchi",
+      "Parole",
+      "Supervisor",
+      "Unit"
+     ]
+    },
+    {
+     "matter": 16,
+     "names": [
+      "Agent",
+      "CDCR",
+      "Parole"
+     ]
+    },
+    {
+     "matter": 17,
+     "names": [
+      "Jeff",
+      "Macomber"
+     ]
+    },
+    {
+     "matter": 19,
+     "names": [
+      "CDCR",
+      "Macomber",
+      "Parole",
+      "Secretary"
+     ]
+    },
+    {
+     "matter": 20,
+     "names": [
+      "Gary"
+     ]
+    },
+    {
+     "matter": 21,
+     "names": [
+      "Agent",
+      "CDCR",
+      "Gary",
+      "Jeff",
+      "Macomber",
+      "Noguchi",
+      "Parole",
+      "Secretary"
+     ]
+    },
+    {
+     "matter": 30,
+     "names": [
+      "Agent",
+      "CDCR",
+      "Gary",
+      "Noguchi",
+      "Parole",
+      "Supervisor",
+      "Unit"
+     ]
+    }
+   ],
+   "shared_cluster": [
+    3,
+    4,
+    5,
+    6,
+    11,
+    13,
+    15,
+    16,
+    17,
+    18,
+    21,
+    28,
+    30
+   ],
+   "shared_fact_group": []
+  },
+  "15": {
+   "shared_defendants": [
+    {
+     "matter": 3,
+     "names": [
+      "Andrew",
+      "Derrick",
+      "Gary",
+      "Noguchi"
+     ]
+    },
+    {
+     "matter": 4,
+     "names": [
+      "Andrew",
+      "CDCR",
+      "Derrick",
+      "Gary",
+      "Noguchi"
+     ]
+    },
+    {
+     "matter": 5,
+     "names": [
+      "Civ",
+      "Code"
+     ]
+    },
+    {
+     "matter": 6,
+     "names": [
+      "CDCR",
+      "Derrick",
+      "Dodd",
+      "Moua",
+      "Noguchi",
+      "Rojo"
+     ]
+    },
+    {
+     "matter": 9,
+     "names": [
+      "CDCR"
+     ]
+    },
+    {
+     "matter": 10,
+     "names": [
+      "CDCR"
+     ]
+    },
+    {
+     "matter": 11,
+     "names": [
+      "CDCR"
+     ]
+    },
+    {
+     "matter": 13,
+     "names": [
+      "Agent",
+      "Noguchi"
+     ]
+    },
+    {
+     "matter": 14,
+     "names": [
+      "Agent",
+      "CDCR",
+      "Gary",
+      "Noguchi",
+      "Parole",
+      "Supervisor",
+      "Unit"
+     ]
+    },
+    {
+     "matter": 16,
+     "names": [
+      "Agent",
+      "CDCR",
+      "Joseelyn",
+      "Parole",
+      "Rojo"
+     ]
+    },
+    {
+     "matter": 19,
+     "names": [
+      "Administrator",
+      "CDCR",
+      "Dodd",
+      "Keely",
+      "Parole"
+     ]
+    },
+    {
+     "matter": 20,
+     "names": [
+      "Gary"
+     ]
+    },
+    {
+     "matter": 21,
+     "names": [
+      "Agent",
+      "CDCR",
+      "Gary",
+      "Joseelyn",
+      "Noguchi",
+      "Parole",
+      "Rojo"
+     ]
+    },
+    {
+     "matter": 30,
+     "names": [
+      "Agent",
+      "Andrew",
+      "CDCR",
+      "Derrick",
+      "Gary",
+      "Joseelyn",
+      "Long",
+      "Moua",
+      "Noguchi",
+      "Parole",
+      "Rojo",
+      "Sacramento",
+      "Supervisor",
+      "Unit"
+     ]
+    }
+   ],
+   "shared_cluster": [
+    3,
+    4,
+    5,
+    6,
+    11,
+    13,
+    14,
+    16,
+    17,
+    18,
+    21,
+    28,
+    30
+   ],
+   "shared_fact_group": []
+  },
+  "16": {
+   "shared_defendants": [
+    {
+     "matter": 4,
+     "names": [
+      "CDCR"
+     ]
+    },
+    {
+     "matter": 6,
+     "names": [
+      "CDCR",
+      "Rojo"
+     ]
+    },
+    {
+     "matter": 9,
+     "names": [
+      "CDCR"
+     ]
+    },
+    {
+     "matter": 10,
+     "names": [
+      "CDCR"
+     ]
+    },
+    {
+     "matter": 11,
+     "names": [
+      "CDCR"
+     ]
+    },
+    {
+     "matter": 13,
+     "names": [
+      "Agent"
+     ]
+    },
+    {
+     "matter": 14,
+     "names": [
+      "Agent",
+      "CDCR",
+      "Parole"
+     ]
+    },
+    {
+     "matter": 15,
+     "names": [
+      "Agent",
+      "CDCR",
+      "Joseelyn",
+      "Parole",
+      "Rojo"
+     ]
+    },
+    {
+     "matter": 19,
+     "names": [
+      "CDCR",
+      "Parole"
+     ]
+    },
+    {
+     "matter": 21,
+     "names": [
+      "Agent",
+      "CDCR",
+      "Joseelyn",
+      "Parole",
+      "Rojo"
+     ]
+    },
+    {
+     "matter": 30,
+     "names": [
+      "Agent",
+      "CDCR",
+      "Joseelyn",
+      "Parole",
+      "Rojo"
+     ]
+    }
+   ],
+   "shared_cluster": [
+    3,
+    4,
+    5,
+    6,
+    11,
+    13,
+    14,
+    15,
+    17,
+    18,
+    21,
+    28,
+    30
+   ],
+   "shared_fact_group": []
+  },
+  "17": {
+   "shared_defendants": [
+    {
+     "matter": 6,
+     "names": [
+      "Jeff",
+      "Macomber"
+     ]
+    },
+    {
+     "matter": 9,
+     "names": [
+      "Jeff",
+      "Macomber"
+     ]
+    },
+    {
+     "matter": 10,
+     "names": [
+      "Macomber"
+     ]
+    },
+    {
+     "matter": 11,
+     "names": [
+      "Jeff",
+      "Macomber"
+     ]
+    },
+    {
+     "matter": 13,
+     "names": [
+      "Jeff",
+      "Macomber"
+     ]
+    },
+    {
+     "matter": 14,
+     "names": [
+      "Jeff",
+      "Macomber"
+     ]
+    },
+    {
+     "matter": 19,
+     "names": [
+      "Macomber"
+     ]
+    },
+    {
+     "matter": 21,
+     "names": [
+      "Jeff",
+      "Macomber"
+     ]
+    }
+   ],
+   "shared_cluster": [
+    3,
+    4,
+    5,
+    6,
+    11,
+    13,
+    14,
+    15,
+    16,
+    18,
+    21,
+    28,
+    30
+   ],
+   "shared_fact_group": []
+  },
+  "18": {
+   "shared_defendants": [],
+   "shared_cluster": [
+    3,
+    4,
+    5,
+    6,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17,
+    21,
+    28,
+    30
+   ],
+   "shared_fact_group": []
+  },
+  "21": {
+   "shared_defendants": [
+    {
+     "matter": 3,
+     "names": [
+      "Gary",
+      "Noguchi"
+     ]
+    },
+    {
+     "matter": 4,
+     "names": [
+      "CDCR",
+      "Gary",
+      "Noguchi"
+     ]
+    },
+    {
+     "matter": 6,
+     "names": [
+      "CDCR",
+      "Jeff",
+      "Macomber",
+      "Noguchi",
+      "Rojo",
+      "Secretary"
+     ]
+    },
+    {
+     "matter": 9,
+     "names": [
+      "CDCR",
+      "Jeff",
+      "Macomber",
+      "Secretary"
+     ]
+    },
+    {
+     "matter": 10,
+     "names": [
+      "CDCR",
+      "Macomber",
+      "Secretary"
+     ]
+    },
+    {
+     "matter": 11,
+     "names": [
+      "CDCR",
+      "Jeff",
+      "Macomber",
+      "Secretary"
+     ]
+    },
+    {
+     "matter": 13,
+     "names": [
+      "Agent",
+      "Jeff",
+      "Macomber",
+      "Noguchi"
+     ]
+    },
+    {
+     "matter": 14,
+     "names": [
+      "Agent",
+      "CDCR",
+      "Gary",
+      "Jeff",
+      "Macomber",
+      "Noguchi",
+      "Parole",
+      "Secretary"
+     ]
+    },
+    {
+     "matter": 15,
+     "names": [
+      "Agent",
+      "CDCR",
+      "Gary",
+      "Joseelyn",
+      "Noguchi",
+      "Parole",
+      "Rojo"
+     ]
+    },
+    {
+     "matter": 16,
+     "names": [
+      "Agent",
+      "CDCR",
+      "Joseelyn",
+      "Parole",
+      "Rojo"
+     ]
+    },
+    {
+     "matter": 17,
+     "names": [
+      "Jeff",
+      "Macomber"
+     ]
+    },
+    {
+     "matter": 19,
+     "names": [
+      "CDCR",
+      "Macomber",
+      "Parole",
+      "Secretary"
+     ]
+    },
+    {
+     "matter": 20,
+     "names": [
+      "Gary"
+     ]
+    },
+    {
+     "matter": 30,
+     "names": [
+      "Agent",
+      "CDCR",
+      "Gary",
+      "Joseelyn",
+      "Noguchi",
+      "Parole",
+      "Rojo"
+     ]
+    }
+   ],
+   "shared_cluster": [
+    3,
+    4,
+    5,
+    6,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    28,
+    30
+   ],
+   "shared_fact_group": []
+  },
+  "28": {
+   "shared_defendants": [
+    {
+     "matter": 5,
+     "names": [
+      "HOPE",
+      "Psychotherapy"
+     ]
+    },
+    {
+     "matter": 6,
+     "names": [
+      "HOPE",
+      "Psychotherapy"
+     ]
+    }
+   ],
+   "shared_cluster": [
+    3,
+    4,
+    5,
+    6,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    21,
+    30
+   ],
+   "shared_fact_group": []
+  },
+  "30": {
+   "shared_defendants": [
+    {
+     "matter": 3,
+     "names": [
+      "Andrew",
+      "Derrick",
+      "Gary",
+      "Jul",
+      "Noguchi"
+     ]
+    },
+    {
+     "matter": 4,
+     "names": [
+      "Andrew",
+      "CDCR",
+      "Derrick",
+      "Gary",
+      "Noguchi"
+     ]
+    },
+    {
+     "matter": 6,
+     "names": [
+      "CDCR",
+      "Derrick",
+      "FAC",
+      "Moua",
+      "Noguchi",
+      "Rojo"
+     ]
+    },
+    {
+     "matter": 9,
+     "names": [
+      "CDCR"
+     ]
+    },
+    {
+     "matter": 10,
+     "names": [
+      "CDCR"
+     ]
+    },
+    {
+     "matter": 11,
+     "names": [
+      "CDCR"
+     ]
+    },
+    {
+     "matter": 13,
+     "names": [
+      "Agent",
+      "Noguchi"
+     ]
+    },
+    {
+     "matter": 14,
+     "names": [
+      "Agent",
+      "CDCR",
+      "Gary",
+      "Noguchi",
+      "Parole",
+      "Supervisor",
+      "Unit"
+     ]
+    },
+    {
+     "matter": 15,
+     "names": [
+      "Agent",
+      "Andrew",
+      "CDCR",
+      "Derrick",
+      "Gary",
+      "Joseelyn",
+      "Long",
+      "Moua",
+      "Noguchi",
+      "Parole",
+      "Rojo",
+      "Sacramento",
+      "Supervisor",
+      "Unit"
+     ]
+    },
+    {
+     "matter": 16,
+     "names": [
+      "Agent",
+      "CDCR",
+      "Joseelyn",
+      "Parole",
+      "Rojo"
+     ]
+    },
+    {
+     "matter": 19,
+     "names": [
+      "CDCR",
+      "Parole"
+     ]
+    },
+    {
+     "matter": 20,
+     "names": [
+      "Gary"
+     ]
+    },
+    {
+     "matter": 21,
+     "names": [
+      "Agent",
+      "CDCR",
+      "Gary",
+      "Joseelyn",
+      "Noguchi",
+      "Parole",
+      "Rojo"
+     ]
+    }
+   ],
+   "shared_cluster": [
+    3,
+    4,
+    5,
+    6,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    21,
+    28
+   ],
+   "shared_fact_group": []
+  },
+  "9": {
+   "shared_defendants": [
+    {
+     "matter": 4,
+     "names": [
+      "CDCR"
+     ]
+    },
+    {
+     "matter": 6,
+     "names": [
+      "CDCR",
+      "Jeff",
+      "Macomber",
+      "Secretary"
+     ]
+    },
+    {
+     "matter": 10,
+     "names": [
+      "CDCR",
+      "Macomber",
+      "Secretary"
+     ]
+    },
+    {
+     "matter": 11,
+     "names": [
+      "CDCR",
+      "Jeff",
+      "Macomber",
+      "Secretary"
+     ]
+    },
+    {
+     "matter": 13,
+     "names": [
+      "Jeff",
+      "Macomber"
+     ]
+    },
+    {
+     "matter": 14,
+     "names": [
+      "CDCR",
+      "Jeff",
+      "Macomber",
+      "Secretary"
+     ]
+    },
+    {
+     "matter": 15,
+     "names": [
+      "CDCR"
+     ]
+    },
+    {
+     "matter": 16,
+     "names": [
+      "CDCR"
+     ]
+    },
+    {
+     "matter": 17,
+     "names": [
+      "Jeff",
+      "Macomber"
+     ]
+    },
+    {
+     "matter": 19,
+     "names": [
+      "CDCR",
+      "Macomber",
+      "Secretary"
+     ]
+    },
+    {
+     "matter": 21,
+     "names": [
+      "CDCR",
+      "Jeff",
+      "Macomber",
+      "Secretary"
+     ]
+    },
+    {
+     "matter": 30,
+     "names": [
+      "CDCR"
+     ]
+    }
+   ],
+   "shared_cluster": [
+    10,
+    19
+   ],
+   "shared_fact_group": []
+  },
+  "10": {
+   "shared_defendants": [
+    {
+     "matter": 4,
+     "names": [
+      "CDCR"
+     ]
+    },
+    {
+     "matter": 6,
+     "names": [
+      "CDCR",
+      "Macomber",
+      "Secretary"
+     ]
+    },
+    {
+     "matter": 9,
+     "names": [
+      "CDCR",
+      "Macomber",
+      "Secretary"
+     ]
+    },
+    {
+     "matter": 11,
+     "names": [
+      "CDCR",
+      "Macomber",
+      "Secretary"
+     ]
+    },
+    {
+     "matter": 13,
+     "names": [
+      "Macomber"
+     ]
+    },
+    {
+     "matter": 14,
+     "names": [
+      "CDCR",
+      "Macomber",
+      "Secretary"
+     ]
+    },
+    {
+     "matter": 15,
+     "names": [
+      "CDCR"
+     ]
+    },
+    {
+     "matter": 16,
+     "names": [
+      "CDCR"
+     ]
+    },
+    {
+     "matter": 17,
+     "names": [
+      "Macomber"
+     ]
+    },
+    {
+     "matter": 19,
+     "names": [
+      "CDCR",
+      "Jeffrey",
+      "Macomber",
+      "Secretary"
+     ]
+    },
+    {
+     "matter": 21,
+     "names": [
+      "CDCR",
+      "Macomber",
+      "Secretary"
+     ]
+    },
+    {
+     "matter": 30,
+     "names": [
+      "CDCR"
+     ]
+    }
+   ],
+   "shared_cluster": [
+    9,
+    19
+   ],
+   "shared_fact_group": []
+  },
+  "19": {
+   "shared_defendants": [
+    {
+     "matter": 4,
+     "names": [
+      "CDCR"
+     ]
+    },
+    {
+     "matter": 6,
+     "names": [
+      "CDCR",
+      "Dodd",
+      "Macomber",
+      "Secretary"
+     ]
+    },
+    {
+     "matter": 9,
+     "names": [
+      "CDCR",
+      "Macomber",
+      "Secretary"
+     ]
+    },
+    {
+     "matter": 10,
+     "names": [
+      "CDCR",
+      "Jeffrey",
+      "Macomber",
+      "Secretary"
+     ]
+    },
+    {
+     "matter": 11,
+     "names": [
+      "CDCR",
+      "Macomber",
+      "Secretary"
+     ]
+    },
+    {
+     "matter": 13,
+     "names": [
+      "Macomber"
+     ]
+    },
+    {
+     "matter": 14,
+     "names": [
+      "CDCR",
+      "Macomber",
+      "Parole",
+      "Secretary"
+     ]
+    },
+    {
+     "matter": 15,
+     "names": [
+      "Administrator",
+      "CDCR",
+      "Dodd",
+      "Keely",
+      "Parole"
+     ]
+    },
+    {
+     "matter": 16,
+     "names": [
+      "CDCR",
+      "Parole"
+     ]
+    },
+    {
+     "matter": 17,
+     "names": [
+      "Macomber"
+     ]
+    },
+    {
+     "matter": 21,
+     "names": [
+      "CDCR",
+      "Macomber",
+      "Parole",
+      "Secretary"
+     ]
+    },
+    {
+     "matter": 30,
+     "names": [
+      "CDCR",
+      "Parole"
+     ]
+    }
+   ],
+   "shared_cluster": [
+    9,
+    10
+   ],
+   "shared_fact_group": []
+  },
+  "22": {
+   "shared_defendants": [
+    {
+     "matter": 23,
+     "names": [
+      "Delaware"
+     ]
+    }
+   ],
+   "shared_cluster": [
+    23,
+    25,
+    26,
+    27,
+    29,
+    31
+   ],
+   "shared_fact_group": []
+  },
+  "23": {
+   "shared_defendants": [
+    {
+     "matter": 22,
+     "names": [
+      "Delaware"
+     ]
+    }
+   ],
+   "shared_cluster": [
+    22,
+    25,
+    26,
+    27,
+    29,
+    31
+   ],
+   "shared_fact_group": []
+  },
+  "25": {
+   "shared_defendants": [],
+   "shared_cluster": [
+    22,
+    23,
+    26,
+    27,
+    29,
+    31
+   ],
+   "shared_fact_group": []
+  },
+  "26": {
+   "shared_defendants": [],
+   "shared_cluster": [
+    22,
+    23,
+    25,
+    27,
+    29,
+    31
+   ],
+   "shared_fact_group": []
+  },
+  "27": {
+   "shared_defendants": [],
+   "shared_cluster": [
+    22,
+    23,
+    25,
+    26,
+    29,
+    31
+   ],
+   "shared_fact_group": []
+  },
+  "29": {
+   "shared_defendants": [],
+   "shared_cluster": [
+    22,
+    23,
+    25,
+    26,
+    27,
+    31
+   ],
+   "shared_fact_group": []
+  },
+  "31": {
+   "shared_defendants": [],
+   "shared_cluster": [
+    22,
+    23,
+    25,
+    26,
+    27,
+    29
+   ],
+   "shared_fact_group": []
+  }
+ },
+ "active_exposure": {
+  "1": [
+   0,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   11,
+   12,
+   13,
+   14,
+   15,
+   17,
+   18,
+   19,
+   20,
+   22,
+   23,
+   24,
+   30,
+   32,
+   33,
+   35,
+   37,
+   46,
+   54,
+   55,
+   56,
+   69
+  ],
+  "2": [
+   1,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   23,
+   24,
+   30,
+   33,
+   35,
+   46,
+   69
+  ],
+  "7": [
+   0,
+   1,
+   2,
+   3,
+   5,
+   6,
+   8,
+   9,
+   10,
+   11,
+   12,
+   14,
+   17,
+   18,
+   19,
+   20,
+   24,
+   30,
+   32,
+   33,
+   35,
+   37,
+   54,
+   55,
+   56,
+   69
+  ],
+  "12": [
+   0,
+   1,
+   2,
+   6,
+   7,
+   8,
+   9,
+   11,
+   18,
+   20,
+   24,
+   32,
+   37,
+   54,
+   55,
+   56
+  ],
+  "19": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   9,
+   10,
+   11,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   21,
+   22,
+   23,
+   24,
+   30,
+   46
+  ],
+  "20": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   12,
+   14,
+   15,
+   18,
+   21,
+   24,
+   30,
+   33,
+   35,
+   69
+  ],
+  "24": [
+   1,
+   2,
+   3,
+   4,
+   6,
+   7,
+   8,
+   9,
+   11,
+   12,
+   13,
+   14,
+   17,
+   18,
+   19,
+   20,
+   22,
+   23,
+   46
+  ],
+  "25": [
+   22,
+   23,
+   26,
+   27,
+   29,
+   31
+  ],
+  "26": [
+   22,
+   23,
+   25,
+   27,
+   29,
+   31
+  ],
+  "27": [
+   22,
+   23,
+   25,
+   26,
+   29,
+   31
+  ],
+  "28": [
+   3,
+   4,
+   5,
+   6,
+   11,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   21,
+   30
+  ],
+  "29": [
+   22,
+   23,
+   25,
+   26,
+   27,
+   31
+  ]
+ },
+ "archived_to_active_signals": [
+  {
+   "matter": 3,
+   "file": "2.Newanforbi v. Derrick.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 03 filing '2.Newanforbi v. Derrick.pdf' names active matter 19 defendant(s): CDCR"
+  },
+  {
+   "matter": 3,
+   "file": "2.Newanforbi v. Derrick.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 25,
+   "detail": "archived matter 03 filing '2.Newanforbi v. Derrick.pdf' names active matter 25 defendant(s): FedEx"
+  },
+  {
+   "matter": 3,
+   "file": "2.Newanforbi v. Derrick.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 03 filing '2.Newanforbi v. Derrick.pdf' names active matter 28 defendant(s): HOPE, Noguchi, Palacios"
+  },
+  {
+   "matter": 3,
+   "file": "28 Notice of Related Cases.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 03 filing '28 Notice of Related Cases.pdf' names active matter 28 defendant(s): HOPE, Noguchi, Palacios"
+  },
+  {
+   "matter": 3,
+   "file": "8_Jscott.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 03 filing '8_Jscott.pdf' names active matter 19 defendant(s): CDCR"
+  },
+  {
+   "matter": 3,
+   "file": "8_MTQ.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 03 filing '8_MTQ.pdf' names active matter 19 defendant(s): CDCR"
+  },
+  {
+   "matter": 3,
+   "file": "8_MTQ.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 25,
+   "detail": "archived matter 03 filing '8_MTQ.pdf' names active matter 25 defendant(s): FedEx"
+  },
+  {
+   "matter": 3,
+   "file": "8_MTQ.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 03 filing '8_MTQ.pdf' names active matter 28 defendant(s): HOPE, Noguchi, Palacios"
+  },
+  {
+   "matter": 3,
+   "file": "8_OpM4L.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 03 filing '8_OpM4L.pdf' names active matter 28 defendant(s): Noguchi"
+  },
+  {
+   "matter": 3,
+   "file": "8_reply.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 03 filing '8_reply.pdf' names active matter 28 defendant(s): Noguchi"
+  },
+  {
+   "matter": 3,
+   "file": "LIVE 1.8.5 NEXTGEN CM-ECF - U.S. District Court for Eastern California.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 03 filing 'LIVE 1.8.5 NEXTGEN CM-ECF - U.S. District Court for Eastern California.pdf' names active matter 28 defendant(s): Noguchi, Palacios"
+  },
+  {
+   "matter": 3,
+   "file": "Notice of Appearance Blaze.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 03 filing 'Notice of Appearance Blaze.pdf' names active matter 28 defendant(s): HOPE, Noguchi, Palacios"
+  },
+  {
+   "matter": 3,
+   "file": "Notice of Change of Address (July 7, 2026).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 03 filing 'Notice of Change of Address (July 7, 2026).pdf' names active matter 19 defendant(s): CDCR"
+  },
+  {
+   "matter": 3,
+   "file": "Notice of Change of Address (July 7, 2026).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 03 filing 'Notice of Change of Address (July 7, 2026).pdf' names active matter 28 defendant(s): HOPE, Noguchi, Palacios"
+  },
+  {
+   "matter": 3,
+   "file": "Notice of Voluntary Dismissal - Derrick and Noguchi (Jul 22 2026).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 03 filing 'Notice of Voluntary Dismissal - Derrick and Noguchi (Jul 22 2026).pdf' names active matter 28 defendant(s): Noguchi, Palacios"
+  },
+  {
+   "matter": 3,
+   "file": "SLB MTD.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 03 filing 'SLB MTD.pdf' names active matter 19 defendant(s): Board of Parole"
+  },
+  {
+   "matter": 3,
+   "file": "SLB MTD.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 25,
+   "detail": "archived matter 03 filing 'SLB MTD.pdf' names active matter 25 defendant(s): FedEx"
+  },
+  {
+   "matter": 3,
+   "file": "SLB MTD.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 03 filing 'SLB MTD.pdf' names active matter 28 defendant(s): HOPE, Noguchi, Palacios"
+  },
+  {
+   "matter": 3,
+   "file": "SLBStipulation.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 03 filing 'SLBStipulation.pdf' names active matter 28 defendant(s): HOPE, Noguchi, Palacios"
+  },
+  {
+   "matter": 3,
+   "file": "SummonsReturnedExecuted.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 03 filing 'SummonsReturnedExecuted.pdf' names active matter 28 defendant(s): Palacios"
+  },
+  {
+   "matter": 5,
+   "file": "BBS Complaint Palacios LMFT 44555.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 05 filing 'BBS Complaint Palacios LMFT 44555.pdf' names active matter 19 defendant(s): CDCR"
+  },
+  {
+   "matter": 5,
+   "file": "BBS Complaint Palacios LMFT 44555.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 05 filing 'BBS Complaint Palacios LMFT 44555.pdf' names active matter 28 defendant(s): CASOMB, HOPE, Noguchi, Palacios"
+  },
+  {
+   "matter": 5,
+   "file": "BBS Complaint Palacios LMFT 44555.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 29,
+   "detail": "archived matter 05 filing 'BBS Complaint Palacios LMFT 44555.pdf' names active matter 29 defendant(s): Housing"
+  },
+  {
+   "matter": 5,
+   "file": "CASOMB Complaint - HOPE Program.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 05 filing 'CASOMB Complaint - HOPE Program.pdf' names active matter 19 defendant(s): CDCR"
+  },
+  {
+   "matter": 5,
+   "file": "CASOMB Complaint - HOPE Program.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 20,
+   "detail": "archived matter 05 filing 'CASOMB Complaint - HOPE Program.pdf' names active matter 20 defendant(s): Certification"
+  },
+  {
+   "matter": 5,
+   "file": "CASOMB Complaint - HOPE Program.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 24,
+   "detail": "archived matter 05 filing 'CASOMB Complaint - HOPE Program.pdf' names active matter 24 defendant(s): Certification"
+  },
+  {
+   "matter": 5,
+   "file": "CASOMB Complaint - HOPE Program.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 05 filing 'CASOMB Complaint - HOPE Program.pdf' names active matter 28 defendant(s): CASOMB, HOPE, Noguchi, Palacios"
+  },
+  {
+   "matter": 5,
+   "file": "CASOMB Complaint Continuation Sheet .pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 05 filing 'CASOMB Complaint Continuation Sheet .pdf' names active matter 19 defendant(s): CDCR"
+  },
+  {
+   "matter": 5,
+   "file": "CASOMB Complaint Continuation Sheet .pdf",
+   "type": "active_defendant_name",
+   "target_matter": 20,
+   "detail": "archived matter 05 filing 'CASOMB Complaint Continuation Sheet .pdf' names active matter 20 defendant(s): Certification"
+  },
+  {
+   "matter": 5,
+   "file": "CASOMB Complaint Continuation Sheet .pdf",
+   "type": "active_defendant_name",
+   "target_matter": 24,
+   "detail": "archived matter 05 filing 'CASOMB Complaint Continuation Sheet .pdf' names active matter 24 defendant(s): Certification"
+  },
+  {
+   "matter": 5,
+   "file": "CASOMB Complaint Continuation Sheet .pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 05 filing 'CASOMB Complaint Continuation Sheet .pdf' names active matter 28 defendant(s): CASOMB, HOPE, Noguchi, Palacios"
+  },
+  {
+   "matter": 5,
+   "file": "DISC001_SEC_4a2 HOPE1.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 05 filing 'DISC001_SEC_4a2 HOPE1.pdf' names active matter 19 defendant(s): CDCR"
+  },
+  {
+   "matter": 5,
+   "file": "DISC001_SEC_4a2 HOPE1.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 05 filing 'DISC001_SEC_4a2 HOPE1.pdf' names active matter 28 defendant(s): HOPE, Palacios"
+  },
+  {
+   "matter": 5,
+   "file": "DISC001_SEC_4a2 Palacios .pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 05 filing 'DISC001_SEC_4a2 Palacios .pdf' names active matter 19 defendant(s): CDCR"
+  },
+  {
+   "matter": 5,
+   "file": "DISC001_SEC_4a2 Palacios .pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 05 filing 'DISC001_SEC_4a2 Palacios .pdf' names active matter 28 defendant(s): CASOMB, HOPE, Palacios"
+  },
+  {
+   "matter": 5,
+   "file": "DRFT HOPE resp plntf RFA1.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 05 filing 'DRFT HOPE resp plntf RFA1.pdf' names active matter 19 defendant(s): CDCR"
+  },
+  {
+   "matter": 5,
+   "file": "DRFT HOPE resp plntf RFA1.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 05 filing 'DRFT HOPE resp plntf RFA1.pdf' names active matter 28 defendant(s): CASOMB, HOPE, Palacios"
+  },
+  {
+   "matter": 5,
+   "file": "Declaration Pal ISO Opposition.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 7,
+   "detail": "archived matter 05 filing 'Declaration Pal ISO Opposition.pdf' names active matter 07 defendant(s): Centerline"
+  },
+  {
+   "matter": 5,
+   "file": "Declaration Pal ISO Opposition.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 05 filing 'Declaration Pal ISO Opposition.pdf' names active matter 19 defendant(s): CDCR"
+  },
+  {
+   "matter": 5,
+   "file": "Declaration Pal ISO Opposition.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 05 filing 'Declaration Pal ISO Opposition.pdf' names active matter 28 defendant(s): CASOMB, HOPE, Palacios"
+  },
+  {
+   "matter": 5,
+   "file": "Demurrer-(NEWpal) (052226)).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 05 filing 'Demurrer-(NEWpal) (052226)).pdf' names active matter 19 defendant(s): CDCR"
+  },
+  {
+   "matter": 5,
+   "file": "Demurrer-(NEWpal) (052226)).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 05 filing 'Demurrer-(NEWpal) (052226)).pdf' names active matter 28 defendant(s): HOPE, Noguchi, Palacios"
+  },
+  {
+   "matter": 5,
+   "file": "Demurrer-Decl (NEWpal) (052226)).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 25,
+   "detail": "archived matter 05 filing 'Demurrer-Decl (NEWpal) (052226)).pdf' names active matter 25 defendant(s): Federal Express"
+  },
+  {
+   "matter": 5,
+   "file": "Demurrer-Decl (NEWpal) (052226)).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 05 filing 'Demurrer-Decl (NEWpal) (052226)).pdf' names active matter 28 defendant(s): HOPE, Palacios"
+  },
+  {
+   "matter": 5,
+   "file": "Demurrer-PO (NEWpal) (052226)).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 25,
+   "detail": "archived matter 05 filing 'Demurrer-PO (NEWpal) (052226)).pdf' names active matter 25 defendant(s): Federal Express"
+  },
+  {
+   "matter": 5,
+   "file": "Demurrer-PO (NEWpal) (052226)).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 05 filing 'Demurrer-PO (NEWpal) (052226)).pdf' names active matter 28 defendant(s): HOPE, Palacios"
+  },
+  {
+   "matter": 5,
+   "file": "Demurrer-RJN (NEWpal) (052226)).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 05 filing 'Demurrer-RJN (NEWpal) (052226)).pdf' names active matter 28 defendant(s): HOPE, Palacios"
+  },
+  {
+   "matter": 5,
+   "file": "Demurrer-Reply (NEWpal) (070726).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 05 filing 'Demurrer-Reply (NEWpal) (070726).pdf' names active matter 19 defendant(s): Board of Parole, CDCR"
+  },
+  {
+   "matter": 5,
+   "file": "Demurrer-Reply (NEWpal) (070726).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 25,
+   "detail": "archived matter 05 filing 'Demurrer-Reply (NEWpal) (070726).pdf' names active matter 25 defendant(s): Federal Express"
+  },
+  {
+   "matter": 5,
+   "file": "Demurrer-Reply (NEWpal) (070726).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 05 filing 'Demurrer-Reply (NEWpal) (070726).pdf' names active matter 28 defendant(s): CASOMB, HOPE, Palacios"
+  },
+  {
+   "matter": 5,
+   "file": "Demurrer-Reply Decl (NEWpal) (070726).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 25,
+   "detail": "archived matter 05 filing 'Demurrer-Reply Decl (NEWpal) (070726).pdf' names active matter 25 defendant(s): Federal Express"
+  },
+  {
+   "matter": 5,
+   "file": "Demurrer-Reply Decl (NEWpal) (070726).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 05 filing 'Demurrer-Reply Decl (NEWpal) (070726).pdf' names active matter 28 defendant(s): HOPE, Palacios"
+  },
+  {
+   "matter": 5,
+   "file": "Evidentiary Pal Objections to Defendants RJN.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 05 filing 'Evidentiary Pal Objections to Defendants RJN.pdf' names active matter 19 defendant(s): CDCR"
+  },
+  {
+   "matter": 5,
+   "file": "Evidentiary Pal Objections to Defendants RJN.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 05 filing 'Evidentiary Pal Objections to Defendants RJN.pdf' names active matter 28 defendant(s): HOPE, Palacios"
+  },
+  {
+   "matter": 5,
+   "file": "FAC_STK-CV-UF-2026-1032.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 7,
+   "detail": "archived matter 05 filing 'FAC_STK-CV-UF-2026-1032.pdf' names active matter 07 defendant(s): Centerline"
+  },
+  {
+   "matter": 5,
+   "file": "FAC_STK-CV-UF-2026-1032.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 05 filing 'FAC_STK-CV-UF-2026-1032.pdf' names active matter 19 defendant(s): CDCR"
+  },
+  {
+   "matter": 5,
+   "file": "FAC_STK-CV-UF-2026-1032.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 05 filing 'FAC_STK-CV-UF-2026-1032.pdf' names active matter 28 defendant(s): CASOMB, HOPE, Noguchi, Palacios"
+  },
+  {
+   "matter": 5,
+   "file": "Fee Waiver - Newanforbi v. Palacios, et al..pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 05 filing 'Fee Waiver - Newanforbi v. Palacios, et al..pdf' names active matter 28 defendant(s): Palacios"
+  },
+  {
+   "matter": 5,
+   "file": "HOPE resp plntf FROGS1 (NEWpal) (061526).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 05 filing 'HOPE resp plntf FROGS1 (NEWpal) (061526).pdf' names active matter 19 defendant(s): CDCR"
+  },
+  {
+   "matter": 5,
+   "file": "HOPE resp plntf FROGS1 (NEWpal) (061526).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 20,
+   "detail": "archived matter 05 filing 'HOPE resp plntf FROGS1 (NEWpal) (061526).pdf' names active matter 20 defendant(s): Certification"
+  },
+  {
+   "matter": 5,
+   "file": "HOPE resp plntf FROGS1 (NEWpal) (061526).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 24,
+   "detail": "archived matter 05 filing 'HOPE resp plntf FROGS1 (NEWpal) (061526).pdf' names active matter 24 defendant(s): Certification"
+  },
+  {
+   "matter": 5,
+   "file": "HOPE resp plntf FROGS1 (NEWpal) (061526).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 05 filing 'HOPE resp plntf FROGS1 (NEWpal) (061526).pdf' names active matter 28 defendant(s): CASOMB, HOPE, Noguchi, Palacios"
+  },
+  {
+   "matter": 5,
+   "file": "HOPE resp plntf RFP1 (newpal) (061526).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 05 filing 'HOPE resp plntf RFP1 (newpal) (061526).pdf' names active matter 19 defendant(s): CDCR"
+  },
+  {
+   "matter": 5,
+   "file": "HOPE resp plntf RFP1 (newpal) (061526).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 05 filing 'HOPE resp plntf RFP1 (newpal) (061526).pdf' names active matter 28 defendant(s): CASOMB, HOPE, Noguchi, Palacios"
+  },
+  {
+   "matter": 5,
+   "file": "HOPE resp plntf SROGS1 (NEWpal) (061526).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 05 filing 'HOPE resp plntf SROGS1 (NEWpal) (061526).pdf' names active matter 19 defendant(s): CDCR"
+  },
+  {
+   "matter": 5,
+   "file": "HOPE resp plntf SROGS1 (NEWpal) (061526).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 05 filing 'HOPE resp plntf SROGS1 (NEWpal) (061526).pdf' names active matter 28 defendant(s): HOPE, Palacios"
+  },
+  {
+   "matter": 5,
+   "file": "Meet and Confer Letter 061626.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 05 filing 'Meet and Confer Letter 061626.pdf' names active matter 19 defendant(s): CDCR"
+  },
+  {
+   "matter": 5,
+   "file": "Meet and Confer Letter 061626.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 05 filing 'Meet and Confer Letter 061626.pdf' names active matter 28 defendant(s): HOPE, Palacios"
+  },
+  {
+   "matter": 5,
+   "file": "Notice of Change of Address (July 7, 2026).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 05 filing 'Notice of Change of Address (July 7, 2026).pdf' names active matter 28 defendant(s): HOPE, Palacios"
+  },
+  {
+   "matter": 5,
+   "file": "Opposition to Demurrer Pal.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 05 filing 'Opposition to Demurrer Pal.pdf' names active matter 19 defendant(s): Macomber, CDCR"
+  },
+  {
+   "matter": 5,
+   "file": "Opposition to Demurrer Pal.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 05 filing 'Opposition to Demurrer Pal.pdf' names active matter 28 defendant(s): CASOMB, HOPE, Palacios"
+  },
+  {
+   "matter": 5,
+   "file": "Order Sustaining Demurrer to FAC WOLA - Jul 15 2026.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 25,
+   "detail": "archived matter 05 filing 'Order Sustaining Demurrer to FAC WOLA - Jul 15 2026.pdf' names active matter 25 defendant(s): Federal Express"
+  },
+  {
+   "matter": 5,
+   "file": "Order Sustaining Demurrer to FAC WOLA - Jul 15 2026.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 05 filing 'Order Sustaining Demurrer to FAC WOLA - Jul 15 2026.pdf' names active matter 28 defendant(s): HOPE, Palacios"
+  },
+  {
+   "matter": 5,
+   "file": "PALACIOS resp plntf FROGS1 (NEWpal) (061526).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 05 filing 'PALACIOS resp plntf FROGS1 (NEWpal) (061526).pdf' names active matter 19 defendant(s): CDCR"
+  },
+  {
+   "matter": 5,
+   "file": "PALACIOS resp plntf FROGS1 (NEWpal) (061526).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 05 filing 'PALACIOS resp plntf FROGS1 (NEWpal) (061526).pdf' names active matter 28 defendant(s): HOPE, Noguchi, Palacios"
+  },
+  {
+   "matter": 5,
+   "file": "PALACIOS resp plntf RFA1 (NEWpal) (060826).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 05 filing 'PALACIOS resp plntf RFA1 (NEWpal) (060826).pdf' names active matter 19 defendant(s): CDCR"
+  },
+  {
+   "matter": 5,
+   "file": "PALACIOS resp plntf RFA1 (NEWpal) (060826).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 05 filing 'PALACIOS resp plntf RFA1 (NEWpal) (060826).pdf' names active matter 28 defendant(s): HOPE, Palacios"
+  },
+  {
+   "matter": 5,
+   "file": "PALACIOS resp plntf RFP1 (NEWpal) (061526).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 05 filing 'PALACIOS resp plntf RFP1 (NEWpal) (061526).pdf' names active matter 19 defendant(s): CDCR"
+  },
+  {
+   "matter": 5,
+   "file": "PALACIOS resp plntf RFP1 (NEWpal) (061526).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 05 filing 'PALACIOS resp plntf RFP1 (NEWpal) (061526).pdf' names active matter 28 defendant(s): HOPE, Noguchi, Palacios"
+  },
+  {
+   "matter": 5,
+   "file": "PALACIOS resp plntf SROGS1 (NEWpal) (061226).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 05 filing 'PALACIOS resp plntf SROGS1 (NEWpal) (061226).pdf' names active matter 19 defendant(s): CDCR"
+  },
+  {
+   "matter": 5,
+   "file": "PALACIOS resp plntf SROGS1 (NEWpal) (061226).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 05 filing 'PALACIOS resp plntf SROGS1 (NEWpal) (061226).pdf' names active matter 28 defendant(s): HOPE, Noguchi, Palacios"
+  },
+  {
+   "matter": 5,
+   "file": "Plaintiff's Notice of Intent to Appear and Argue Tentative Ruling (July 13, 2026).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 05 filing 'Plaintiff's Notice of Intent to Appear and Argue Tentative Ruling (July 13, 2026).pdf' names active matter 28 defendant(s): HOPE"
+  },
+  {
+   "matter": 5,
+   "file": "RFA to Pl (NEWpal) (061826).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 05 filing 'RFA to Pl (NEWpal) (061826).pdf' names active matter 19 defendant(s): CDCR"
+  },
+  {
+   "matter": 5,
+   "file": "RFA to Pl (NEWpal) (061826).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 25,
+   "detail": "archived matter 05 filing 'RFA to Pl (NEWpal) (061826).pdf' names active matter 25 defendant(s): Federal Express"
+  },
+  {
+   "matter": 5,
+   "file": "RFA to Pl (NEWpal) (061826).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 05 filing 'RFA to Pl (NEWpal) (061826).pdf' names active matter 28 defendant(s): HOPE, Palacios"
+  },
+  {
+   "matter": 5,
+   "file": "RFP to Pl (NEWpal) (061826).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 05 filing 'RFP to Pl (NEWpal) (061826).pdf' names active matter 19 defendant(s): CDCR"
+  },
+  {
+   "matter": 5,
+   "file": "RFP to Pl (NEWpal) (061826).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 25,
+   "detail": "archived matter 05 filing 'RFP to Pl (NEWpal) (061826).pdf' names active matter 25 defendant(s): Federal Express"
+  },
+  {
+   "matter": 5,
+   "file": "RFP to Pl (NEWpal) (061826).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 05 filing 'RFP to Pl (NEWpal) (061826).pdf' names active matter 28 defendant(s): HOPE, Palacios"
+  },
+  {
+   "matter": 5,
+   "file": "RJN Pal ISO Opposition.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 05 filing 'RJN Pal ISO Opposition.pdf' names active matter 19 defendant(s): Macomber, CDCR"
+  },
+  {
+   "matter": 5,
+   "file": "RJN Pal ISO Opposition.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 05 filing 'RJN Pal ISO Opposition.pdf' names active matter 28 defendant(s): CASOMB, HOPE, Palacios"
+  },
+  {
+   "matter": 5,
+   "file": "SROG Set Two HOPE NEWpal .pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 05 filing 'SROG Set Two HOPE NEWpal .pdf' names active matter 19 defendant(s): CDCR"
+  },
+  {
+   "matter": 5,
+   "file": "SROG Set Two HOPE NEWpal .pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 05 filing 'SROG Set Two HOPE NEWpal .pdf' names active matter 28 defendant(s): CASOMB, HOPE, Noguchi, Palacios"
+  },
+  {
+   "matter": 5,
+   "file": "SROG Set Two PALACIOS NEWpal .pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 05 filing 'SROG Set Two PALACIOS NEWpal .pdf' names active matter 19 defendant(s): CDCR"
+  },
+  {
+   "matter": 5,
+   "file": "SROG Set Two PALACIOS NEWpal .pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 05 filing 'SROG Set Two PALACIOS NEWpal .pdf' names active matter 28 defendant(s): HOPE, Noguchi, Palacios"
+  },
+  {
+   "matter": 5,
+   "file": "SROGS to Pl (NEWpal) (061826).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 25,
+   "detail": "archived matter 05 filing 'SROGS to Pl (NEWpal) (061826).pdf' names active matter 25 defendant(s): Federal Express"
+  },
+  {
+   "matter": 5,
+   "file": "SROGS to Pl (NEWpal) (061826).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 05 filing 'SROGS to Pl (NEWpal) (061826).pdf' names active matter 28 defendant(s): HOPE, Palacios"
+  },
+  {
+   "matter": 5,
+   "file": "Stipulated Protective Order SIGNED.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 20,
+   "detail": "archived matter 05 filing 'Stipulated Protective Order SIGNED.pdf' names active matter 20 defendant(s): Certification"
+  },
+  {
+   "matter": 5,
+   "file": "Stipulated Protective Order SIGNED.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 24,
+   "detail": "archived matter 05 filing 'Stipulated Protective Order SIGNED.pdf' names active matter 24 defendant(s): Certification"
+  },
+  {
+   "matter": 5,
+   "file": "Stipulated Protective Order SIGNED.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 05 filing 'Stipulated Protective Order SIGNED.pdf' names active matter 28 defendant(s): HOPE, Palacios"
+  },
+  {
+   "matter": 5,
+   "file": "Summons + Complaint - Newanforbi v. Palacios, et al. .pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 05 filing 'Summons + Complaint - Newanforbi v. Palacios, et al. .pdf' names active matter 19 defendant(s): CDCR"
+  },
+  {
+   "matter": 5,
+   "file": "Summons + Complaint - Newanforbi v. Palacios, et al. .pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 05 filing 'Summons + Complaint - Newanforbi v. Palacios, et al. .pdf' names active matter 28 defendant(s): HOPE, Palacios"
+  },
+  {
+   "matter": 5,
+   "file": "Tentative Ruling on Demurrer (posted July 13, 2026, hearing July 15, 2026).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 05 filing 'Tentative Ruling on Demurrer (posted July 13, 2026, hearing July 15, 2026).pdf' names active matter 28 defendant(s): HOPE"
+  },
+  {
+   "matter": 5,
+   "file": "Tentative Ruling on Demurrer RTF - Jul 10 2026.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 05 filing 'Tentative Ruling on Demurrer RTF - Jul 10 2026.pdf' names active matter 28 defendant(s): HOPE, Palacios"
+  },
+  {
+   "matter": 6,
+   "file": "5. Notice of Related Cases.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 06 filing '5. Notice of Related Cases.pdf' names active matter 19 defendant(s): Macomber"
+  },
+  {
+   "matter": 6,
+   "file": "5. Notice of Related Cases.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 06 filing '5. Notice of Related Cases.pdf' names active matter 28 defendant(s): CASOMB, HOPE, Palacios"
+  },
+  {
+   "matter": 6,
+   "file": "Notice of Voluntary Dismissal Newanforbi v HOPE.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 06 filing 'Notice of Voluntary Dismissal Newanforbi v HOPE.pdf' names active matter 19 defendant(s): Macomber"
+  },
+  {
+   "matter": 6,
+   "file": "Notice of Voluntary Dismissal Newanforbi v HOPE.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 06 filing 'Notice of Voluntary Dismissal Newanforbi v HOPE.pdf' names active matter 28 defendant(s): CASOMB, HOPE"
+  },
+  {
+   "matter": 8,
+   "file": "Civil Case Cover Sheet CM-010 (electronically filed May 18 2026).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 1,
+   "detail": "archived matter 08 filing 'Civil Case Cover Sheet CM-010 (electronically filed May 18 2026).pdf' names active matter 01 defendant(s): Candelaria"
+  },
+  {
+   "matter": 8,
+   "file": "Civil Case Cover Sheet CM-010 (electronically filed May 18 2026).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 7,
+   "detail": "archived matter 08 filing 'Civil Case Cover Sheet CM-010 (electronically filed May 18 2026).pdf' names active matter 07 defendant(s): Candelaria"
+  },
+  {
+   "matter": 8,
+   "file": "Civil Case Cover Sheet CM-010 (electronically filed May 18 2026).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 20,
+   "detail": "archived matter 08 filing 'Civil Case Cover Sheet CM-010 (electronically filed May 18 2026).pdf' names active matter 20 defendant(s): Candelaria"
+  },
+  {
+   "matter": 8,
+   "file": "Court Minutes (Jul 17 2026) and Civil Case Cover Sheet CM-010 pp.2-3.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 1,
+   "detail": "archived matter 08 filing 'Court Minutes (Jul 17 2026) and Civil Case Cover Sheet CM-010 pp.2-3.pdf' names active matter 01 defendant(s): Candelaria"
+  },
+  {
+   "matter": 8,
+   "file": "Court Minutes (Jul 17 2026) and Civil Case Cover Sheet CM-010 pp.2-3.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 7,
+   "detail": "archived matter 08 filing 'Court Minutes (Jul 17 2026) and Civil Case Cover Sheet CM-010 pp.2-3.pdf' names active matter 07 defendant(s): Candelaria"
+  },
+  {
+   "matter": 8,
+   "file": "Court Minutes (Jul 17 2026) and Civil Case Cover Sheet CM-010 pp.2-3.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 20,
+   "detail": "archived matter 08 filing 'Court Minutes (Jul 17 2026) and Civil Case Cover Sheet CM-010 pp.2-3.pdf' names active matter 20 defendant(s): Candelaria, Certification"
+  },
+  {
+   "matter": 8,
+   "file": "Court Minutes (Jul 17 2026) and Civil Case Cover Sheet CM-010 pp.2-3.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 24,
+   "detail": "archived matter 08 filing 'Court Minutes (Jul 17 2026) and Civil Case Cover Sheet CM-010 pp.2-3.pdf' names active matter 24 defendant(s): Certification"
+  },
+  {
+   "matter": 8,
+   "file": "Court Minutes - Fee Waiver Hearing DENIED, Non-Appearance (Jul 17 2026).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 1,
+   "detail": "archived matter 08 filing 'Court Minutes - Fee Waiver Hearing DENIED, Non-Appearance (Jul 17 2026).pdf' names active matter 01 defendant(s): Candelaria"
+  },
+  {
+   "matter": 8,
+   "file": "Court Minutes - Fee Waiver Hearing DENIED, Non-Appearance (Jul 17 2026).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 7,
+   "detail": "archived matter 08 filing 'Court Minutes - Fee Waiver Hearing DENIED, Non-Appearance (Jul 17 2026).pdf' names active matter 07 defendant(s): Candelaria"
+  },
+  {
+   "matter": 8,
+   "file": "Court Minutes - Fee Waiver Hearing DENIED, Non-Appearance (Jul 17 2026).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 20,
+   "detail": "archived matter 08 filing 'Court Minutes - Fee Waiver Hearing DENIED, Non-Appearance (Jul 17 2026).pdf' names active matter 20 defendant(s): Candelaria"
+  },
+  {
+   "matter": 8,
+   "file": "Newanforbi v. Candelaria Mandamus.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 1,
+   "detail": "archived matter 08 filing 'Newanforbi v. Candelaria Mandamus.pdf' names active matter 01 defendant(s): Candelaria, Highway Patrol, CHP"
+  },
+  {
+   "matter": 8,
+   "file": "Newanforbi v. Candelaria Mandamus.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 2,
+   "detail": "archived matter 08 filing 'Newanforbi v. Candelaria Mandamus.pdf' names active matter 02 defendant(s): CHP, Highway Patrol"
+  },
+  {
+   "matter": 8,
+   "file": "Newanforbi v. Candelaria Mandamus.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 7,
+   "detail": "archived matter 08 filing 'Newanforbi v. Candelaria Mandamus.pdf' names active matter 07 defendant(s): Candelaria, Highway Patrol, CHP"
+  },
+  {
+   "matter": 8,
+   "file": "Newanforbi v. Candelaria Mandamus.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 20,
+   "detail": "archived matter 08 filing 'Newanforbi v. Candelaria Mandamus.pdf' names active matter 20 defendant(s): Candelaria, CHP"
+  },
+  {
+   "matter": 8,
+   "file": "Newanforbi v. Candelaria Mandamus.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 24,
+   "detail": "archived matter 08 filing 'Newanforbi v. Candelaria Mandamus.pdf' names active matter 24 defendant(s): CHP"
+  },
+  {
+   "matter": 8,
+   "file": "Notice of Change of Address (July 7, 2026).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 1,
+   "detail": "archived matter 08 filing 'Notice of Change of Address (July 7, 2026).pdf' names active matter 01 defendant(s): Candelaria"
+  },
+  {
+   "matter": 8,
+   "file": "Notice of Change of Address (July 7, 2026).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 7,
+   "detail": "archived matter 08 filing 'Notice of Change of Address (July 7, 2026).pdf' names active matter 07 defendant(s): Candelaria"
+  },
+  {
+   "matter": 8,
+   "file": "Notice of Change of Address (July 7, 2026).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 20,
+   "detail": "archived matter 08 filing 'Notice of Change of Address (July 7, 2026).pdf' names active matter 20 defendant(s): Candelaria"
+  },
+  {
+   "matter": 8,
+   "file": "Order on Court Fee Waiver After Hearing - FW-008 (Jul 17 2026).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 1,
+   "detail": "archived matter 08 filing 'Order on Court Fee Waiver After Hearing - FW-008 (Jul 17 2026).pdf' names active matter 01 defendant(s): Candelaria"
+  },
+  {
+   "matter": 8,
+   "file": "Order on Court Fee Waiver After Hearing - FW-008 (Jul 17 2026).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 7,
+   "detail": "archived matter 08 filing 'Order on Court Fee Waiver After Hearing - FW-008 (Jul 17 2026).pdf' names active matter 07 defendant(s): Candelaria"
+  },
+  {
+   "matter": 8,
+   "file": "Order on Court Fee Waiver After Hearing - FW-008 (Jul 17 2026).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 20,
+   "detail": "archived matter 08 filing 'Order on Court Fee Waiver After Hearing - FW-008 (Jul 17 2026).pdf' names active matter 20 defendant(s): Candelaria"
+  },
+  {
+   "matter": 9,
+   "file": "26WM000028_Reply_to_Opp.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 09 filing '26WM000028_Reply_to_Opp.pdf' names active matter 19 defendant(s): Macomber, CDCR"
+  },
+  {
+   "matter": 9,
+   "file": "31626-43188-NTCHNG_69ce9f1e7ab52 2.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 1,
+   "detail": "archived matter 09 filing '31626-43188-NTCHNG_69ce9f1e7ab52 2.pdf' names active matter 01 defendant(s): Highway Patrol"
+  },
+  {
+   "matter": 9,
+   "file": "31626-43188-NTCHNG_69ce9f1e7ab52 2.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 2,
+   "detail": "archived matter 09 filing '31626-43188-NTCHNG_69ce9f1e7ab52 2.pdf' names active matter 02 defendant(s): Highway Patrol"
+  },
+  {
+   "matter": 9,
+   "file": "31626-43188-NTCHNG_69ce9f1e7ab52 2.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 7,
+   "detail": "archived matter 09 filing '31626-43188-NTCHNG_69ce9f1e7ab52 2.pdf' names active matter 07 defendant(s): Highway Patrol"
+  },
+  {
+   "matter": 9,
+   "file": "31626-43188-NTCHNG_69ce9f1e7ab52 2.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 09 filing '31626-43188-NTCHNG_69ce9f1e7ab52 2.pdf' names active matter 19 defendant(s): Macomber, Board of Parole, CDCR"
+  },
+  {
+   "matter": 9,
+   "file": "Amended Notice of Hearing on Petition for Writ of Mandate.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 1,
+   "detail": "archived matter 09 filing 'Amended Notice of Hearing on Petition for Writ of Mandate.pdf' names active matter 01 defendant(s): Highway Patrol"
+  },
+  {
+   "matter": 9,
+   "file": "Amended Notice of Hearing on Petition for Writ of Mandate.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 2,
+   "detail": "archived matter 09 filing 'Amended Notice of Hearing on Petition for Writ of Mandate.pdf' names active matter 02 defendant(s): Highway Patrol"
+  },
+  {
+   "matter": 9,
+   "file": "Amended Notice of Hearing on Petition for Writ of Mandate.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 7,
+   "detail": "archived matter 09 filing 'Amended Notice of Hearing on Petition for Writ of Mandate.pdf' names active matter 07 defendant(s): Highway Patrol"
+  },
+  {
+   "matter": 9,
+   "file": "Amended Notice of Hearing on Petition for Writ of Mandate.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 09 filing 'Amended Notice of Hearing on Petition for Writ of Mandate.pdf' names active matter 19 defendant(s): Macomber, Board of Parole, CDCR"
+  },
+  {
+   "matter": 9,
+   "file": "CU_26WM000028_e91359ab-2598-4573-a45a-fa7893fc4cb07.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 09 filing 'CU_26WM000028_e91359ab-2598-4573-a45a-fa7893fc4cb07.pdf' names active matter 19 defendant(s): Macomber, CDCR"
+  },
+  {
+   "matter": 9,
+   "file": "WOM FAC.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 1,
+   "detail": "archived matter 09 filing 'WOM FAC.pdf' names active matter 01 defendant(s): Highway Patrol"
+  },
+  {
+   "matter": 9,
+   "file": "WOM FAC.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 2,
+   "detail": "archived matter 09 filing 'WOM FAC.pdf' names active matter 02 defendant(s): Highway Patrol"
+  },
+  {
+   "matter": 9,
+   "file": "WOM FAC.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 7,
+   "detail": "archived matter 09 filing 'WOM FAC.pdf' names active matter 07 defendant(s): Highway Patrol"
+  },
+  {
+   "matter": 9,
+   "file": "WOM FAC.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 09 filing 'WOM FAC.pdf' names active matter 19 defendant(s): Macomber, Board of Parole, CDCR"
+  },
+  {
+   "matter": 9,
+   "file": "WOM-Case Assignment.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 09 filing 'WOM-Case Assignment.pdf' names active matter 19 defendant(s): Macomber"
+  },
+  {
+   "matter": 9,
+   "file": "WOM-Fee Waiver.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 09 filing 'WOM-Fee Waiver.pdf' names active matter 19 defendant(s): Macomber"
+  },
+  {
+   "matter": 9,
+   "file": "WOM-efile.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 09 filing 'WOM-efile.pdf' names active matter 19 defendant(s): Macomber"
+  },
+  {
+   "matter": 9,
+   "file": "WOM_Opening Brief.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 09 filing 'WOM_Opening Brief.pdf' names active matter 19 defendant(s): Macomber, CDCR"
+  },
+  {
+   "matter": 9,
+   "file": "WOM_Opening Brief.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 09 filing 'WOM_Opening Brief.pdf' names active matter 28 defendant(s): CASOMB, HOPE"
+  },
+  {
+   "matter": 10,
+   "file": "Notice of Change of Address (July 7, 2026).pdf",
+   "type": "active_case_number",
+   "target_matter": 19,
+   "detail": "archived matter 10 filing 'Notice of Change of Address (July 7, 2026).pdf' mentions active matter 19 case number"
+  },
+  {
+   "matter": 10,
+   "file": "Notice of Change of Address (July 7, 2026).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 10 filing 'Notice of Change of Address (July 7, 2026).pdf' names active matter 19 defendant(s): Macomber, CDCR"
+  },
+  {
+   "matter": 14,
+   "file": "Newanforbi v Urrea.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 1,
+   "detail": "archived matter 14 filing 'Newanforbi v Urrea.pdf' names active matter 01 defendant(s): Highway Patrol, CHP"
+  },
+  {
+   "matter": 14,
+   "file": "Newanforbi v Urrea.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 2,
+   "detail": "archived matter 14 filing 'Newanforbi v Urrea.pdf' names active matter 02 defendant(s): CHP, Highway Patrol"
+  },
+  {
+   "matter": 14,
+   "file": "Newanforbi v Urrea.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 7,
+   "detail": "archived matter 14 filing 'Newanforbi v Urrea.pdf' names active matter 07 defendant(s): Centerline, Highway Patrol, CHP"
+  },
+  {
+   "matter": 14,
+   "file": "Newanforbi v Urrea.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 14 filing 'Newanforbi v Urrea.pdf' names active matter 19 defendant(s): Macomber, CDCR"
+  },
+  {
+   "matter": 14,
+   "file": "Newanforbi v Urrea.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 20,
+   "detail": "archived matter 14 filing 'Newanforbi v Urrea.pdf' names active matter 20 defendant(s): CHP"
+  },
+  {
+   "matter": 14,
+   "file": "Newanforbi v Urrea.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 24,
+   "detail": "archived matter 14 filing 'Newanforbi v Urrea.pdf' names active matter 24 defendant(s): CHP"
+  },
+  {
+   "matter": 14,
+   "file": "Newanforbi v Urrea.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 14 filing 'Newanforbi v Urrea.pdf' names active matter 28 defendant(s): Noguchi"
+  },
+  {
+   "matter": 14,
+   "file": "Newanforbi v Urrea.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 29,
+   "detail": "archived matter 14 filing 'Newanforbi v Urrea.pdf' names active matter 29 defendant(s): Housing"
+  },
+  {
+   "matter": 15,
+   "file": "5417 CM010 Civil Case Cover Sheet.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 20,
+   "detail": "archived matter 15 filing '5417 CM010 Civil Case Cover Sheet.pdf' names active matter 20 defendant(s): Certification"
+  },
+  {
+   "matter": 15,
+   "file": "5417 CM010 Civil Case Cover Sheet.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 24,
+   "detail": "archived matter 15 filing '5417 CM010 Civil Case Cover Sheet.pdf' names active matter 24 defendant(s): Certification"
+  },
+  {
+   "matter": 15,
+   "file": "5417 Clerk s Certificate of Service by Mail.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 20,
+   "detail": "archived matter 15 filing '5417 Clerk s Certificate of Service by Mail.pdf' names active matter 20 defendant(s): Certification"
+  },
+  {
+   "matter": 15,
+   "file": "5417 Clerk s Certificate of Service by Mail.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 24,
+   "detail": "archived matter 15 filing '5417 Clerk s Certificate of Service by Mail.pdf' names active matter 24 defendant(s): Certification"
+  },
+  {
+   "matter": 15,
+   "file": "5417 Complaint.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 15 filing '5417 Complaint.pdf' names active matter 19 defendant(s): Macomber, CDCR"
+  },
+  {
+   "matter": 15,
+   "file": "5417 Complaint.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 15 filing '5417 Complaint.pdf' names active matter 28 defendant(s): Noguchi"
+  },
+  {
+   "matter": 15,
+   "file": "5417 SUM100 Summons - Civil.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 15 filing '5417 SUM100 Summons - Civil.pdf' names active matter 28 defendant(s): Noguchi"
+  },
+  {
+   "matter": 15,
+   "file": "CCP 430.41 Meet and Confer Calendar Invite (Gronna, Jul. 17, 2026).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 15 filing 'CCP 430.41 Meet and Confer Calendar Invite (Gronna, Jul. 17, 2026).pdf' names active matter 19 defendant(s): CDCR"
+  },
+  {
+   "matter": 15,
+   "file": "DODD.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 15 filing 'DODD.pdf' names active matter 19 defendant(s): Macomber, Board of Parole, CDCR"
+  },
+  {
+   "matter": 15,
+   "file": "DODD.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 15 filing 'DODD.pdf' names active matter 28 defendant(s): Noguchi"
+  },
+  {
+   "matter": 15,
+   "file": "Dodd.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 15 filing 'Dodd.pdf' names active matter 19 defendant(s): Macomber, Board of Parole, CDCR"
+  },
+  {
+   "matter": 15,
+   "file": "Dodd.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 15 filing 'Dodd.pdf' names active matter 28 defendant(s): Noguchi"
+  },
+  {
+   "matter": 15,
+   "file": "Newanforbi v Dodd RECALIBRATED.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 7,
+   "detail": "archived matter 15 filing 'Newanforbi v Dodd RECALIBRATED.pdf' names active matter 07 defendant(s): Centerline"
+  },
+  {
+   "matter": 15,
+   "file": "Newanforbi v Dodd RECALIBRATED.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 15 filing 'Newanforbi v Dodd RECALIBRATED.pdf' names active matter 19 defendant(s): Macomber, CDCR"
+  },
+  {
+   "matter": 15,
+   "file": "Newanforbi v Dodd RECALIBRATED.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 15 filing 'Newanforbi v Dodd RECALIBRATED.pdf' names active matter 28 defendant(s): HOPE, Noguchi"
+  },
+  {
+   "matter": 15,
+   "file": "Newanforbi v. CDCR, et al.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 7,
+   "detail": "archived matter 15 filing 'Newanforbi v. CDCR, et al.pdf' names active matter 07 defendant(s): Centerline"
+  },
+  {
+   "matter": 15,
+   "file": "Newanforbi v. CDCR, et al.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 15 filing 'Newanforbi v. CDCR, et al.pdf' names active matter 19 defendant(s): Macomber, CDCR"
+  },
+  {
+   "matter": 15,
+   "file": "Newanforbi v. CDCR, et al.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 15 filing 'Newanforbi v. CDCR, et al.pdf' names active matter 28 defendant(s): HOPE, Noguchi"
+  },
+  {
+   "matter": 15,
+   "file": "Newanforbi v. Dodd, et al..pdf",
+   "type": "active_defendant_name",
+   "target_matter": 7,
+   "detail": "archived matter 15 filing 'Newanforbi v. Dodd, et al..pdf' names active matter 07 defendant(s): Centerline"
+  },
+  {
+   "matter": 15,
+   "file": "Newanforbi v. Dodd, et al..pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 15 filing 'Newanforbi v. Dodd, et al..pdf' names active matter 19 defendant(s): Board of Parole, CDCR"
+  },
+  {
+   "matter": 15,
+   "file": "Newanforbi v. Dodd, et al..pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 15 filing 'Newanforbi v. Dodd, et al..pdf' names active matter 28 defendant(s): HOPE, Noguchi"
+  },
+  {
+   "matter": 15,
+   "file": "Newanforbi v. Dodd, et al.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 7,
+   "detail": "archived matter 15 filing 'Newanforbi v. Dodd, et al.pdf' names active matter 07 defendant(s): Centerline"
+  },
+  {
+   "matter": 15,
+   "file": "Newanforbi v. Dodd, et al.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 15 filing 'Newanforbi v. Dodd, et al.pdf' names active matter 19 defendant(s): Macomber, Board of Parole, CDCR"
+  },
+  {
+   "matter": 15,
+   "file": "Newanforbi v. Dodd, et al.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 15 filing 'Newanforbi v. Dodd, et al.pdf' names active matter 28 defendant(s): HOPE, Noguchi"
+  },
+  {
+   "matter": 15,
+   "file": "Newanforbi v. Dodd.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 15 filing 'Newanforbi v. Dodd.pdf' names active matter 19 defendant(s): Macomber, Board of Parole, CDCR"
+  },
+  {
+   "matter": 15,
+   "file": "Newanforbi v. Dodd.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 15 filing 'Newanforbi v. Dodd.pdf' names active matter 28 defendant(s): Noguchi"
+  },
+  {
+   "matter": 15,
+   "file": "Notice of Change of Address (July 7, 2026).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 15 filing 'Notice of Change of Address (July 7, 2026).pdf' names active matter 19 defendant(s): CDCR"
+  },
+  {
+   "matter": 15,
+   "file": "Notice of Change of Address (July 7, 2026).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 15 filing 'Notice of Change of Address (July 7, 2026).pdf' names active matter 28 defendant(s): Noguchi"
+  },
+  {
+   "matter": 15,
+   "file": "Print_GCP_INTAKE_FORM.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 15 filing 'Print_GCP_INTAKE_FORM.pdf' names active matter 19 defendant(s): Macomber, CDCR"
+  },
+  {
+   "matter": 15,
+   "file": "Print_GCP_INTAKE_FORM.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 15 filing 'Print_GCP_INTAKE_FORM.pdf' names active matter 28 defendant(s): HOPE, Noguchi"
+  },
+  {
+   "matter": 15,
+   "file": "Request for Extension of Time in Newanforbi v. CDCR, Case No. STK-CV-UPI-2026-54.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 15 filing 'Request for Extension of Time in Newanforbi v. CDCR, Case No. STK-CV-UPI-2026-54.pdf' names active matter 19 defendant(s): CDCR"
+  },
+  {
+   "matter": 16,
+   "file": "Newanforbi v. Rojo.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 16 filing 'Newanforbi v. Rojo.pdf' names active matter 19 defendant(s): Macomber, CDCR"
+  },
+  {
+   "matter": 16,
+   "file": "Newanforbi v. Rojo.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 16 filing 'Newanforbi v. Rojo.pdf' names active matter 28 defendant(s): Noguchi"
+  },
+  {
+   "matter": 22,
+   "file": "Confidential Settlement Agreement and Release - Pilot (Signed Jul 14 2026).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 29,
+   "detail": "archived matter 22 filing 'Confidential Settlement Agreement and Release - Pilot (Signed Jul 14 2026).pdf' names active matter 29 defendant(s): Fair Employment, Housing"
+  },
+  {
+   "matter": 22,
+   "file": "Demand Letter Newanforbi v Pilot Travel Centers.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 20,
+   "detail": "archived matter 22 filing 'Demand Letter Newanforbi v Pilot Travel Centers.pdf' names active matter 20 defendant(s): Certification"
+  },
+  {
+   "matter": 22,
+   "file": "Demand Letter Newanforbi v Pilot Travel Centers.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 24,
+   "detail": "archived matter 22 filing 'Demand Letter Newanforbi v Pilot Travel Centers.pdf' names active matter 24 defendant(s): Certification"
+  },
+  {
+   "matter": 22,
+   "file": "Post-adverse action notice - Pilot Travel Centers LLC 2.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 29,
+   "detail": "archived matter 22 filing 'Post-adverse action notice - Pilot Travel Centers LLC 2.pdf' names active matter 29 defendant(s): DFEH, Housing"
+  },
+  {
+   "matter": 23,
+   "file": "HireRight Report to Macy's Corporate Services (Pre-Employment - BGC). Subject- C 2.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 27,
+   "detail": "archived matter 23 filing 'HireRight Report to Macy's Corporate Services (Pre-Employment - BGC). Subject- C 2.pdf' names active matter 27 defendant(s): Macy"
+  },
+  {
+   "matter": 23,
+   "file": "Job Offer-Selling and Support Captain, Stockton Sherwood - Full Time.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 27,
+   "detail": "archived matter 23 filing 'Job Offer-Selling and Support Captain, Stockton Sherwood - Full Time.pdf' names active matter 27 defendant(s): Macy"
+  },
+  {
+   "matter": 30,
+   "file": "CASOMB Complaint Submission \u2013 HOPE Psychotherapy, Inc. 2.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 30 filing 'CASOMB Complaint Submission \u2013 HOPE Psychotherapy, Inc. 2.pdf' names active matter 19 defendant(s): CDCR"
+  },
+  {
+   "matter": 30,
+   "file": "CASOMB Complaint Submission \u2013 HOPE Psychotherapy, Inc. 2.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 30 filing 'CASOMB Complaint Submission \u2013 HOPE Psychotherapy, Inc. 2.pdf' names active matter 28 defendant(s): CASOMB, HOPE"
+  },
+  {
+   "matter": 30,
+   "file": "CASOMB Complaint Submission \u2013 HOPE Psychotherapy, Inc. 3.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 30 filing 'CASOMB Complaint Submission \u2013 HOPE Psychotherapy, Inc. 3.pdf' names active matter 19 defendant(s): CDCR"
+  },
+  {
+   "matter": 30,
+   "file": "CASOMB Complaint Submission \u2013 HOPE Psychotherapy, Inc. 3.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 30 filing 'CASOMB Complaint Submission \u2013 HOPE Psychotherapy, Inc. 3.pdf' names active matter 28 defendant(s): CASOMB, HOPE, Palacios"
+  },
+  {
+   "matter": 30,
+   "file": "CASOMB Complaint Submission \u2013 HOPE Psychotherapy, Inc. 4.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 30 filing 'CASOMB Complaint Submission \u2013 HOPE Psychotherapy, Inc. 4.pdf' names active matter 19 defendant(s): CDCR"
+  },
+  {
+   "matter": 30,
+   "file": "CASOMB Complaint Submission \u2013 HOPE Psychotherapy, Inc. 4.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 30 filing 'CASOMB Complaint Submission \u2013 HOPE Psychotherapy, Inc. 4.pdf' names active matter 28 defendant(s): CASOMB, HOPE"
+  },
+  {
+   "matter": 30,
+   "file": "Complaint v9 Newanforbi v Moua NDCAL.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 30 filing 'Complaint v9 Newanforbi v Moua NDCAL.pdf' names active matter 19 defendant(s): CDCR"
+  },
+  {
+   "matter": 30,
+   "file": "Complaint v9 Newanforbi v Moua NDCAL.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 27,
+   "detail": "archived matter 30 filing 'Complaint v9 Newanforbi v Moua NDCAL.pdf' names active matter 27 defendant(s): Macy"
+  },
+  {
+   "matter": 30,
+   "file": "Complaint v9 Newanforbi v Moua NDCAL.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 30 filing 'Complaint v9 Newanforbi v Moua NDCAL.pdf' names active matter 28 defendant(s): CASOMB, HOPE, Noguchi"
+  },
+  {
+   "matter": 30,
+   "file": "Complaint v9 Newanforbi v Moua NDCAL.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 29,
+   "detail": "archived matter 30 filing 'Complaint v9 Newanforbi v Moua NDCAL.pdf' names active matter 29 defendant(s): Housing"
+  },
+  {
+   "matter": 30,
+   "file": "Job Offer-Selling and Support Captain, Stockton Sherwood - Full Time.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 27,
+   "detail": "archived matter 30 filing 'Job Offer-Selling and Support Captain, Stockton Sherwood - Full Time.pdf' names active matter 27 defendant(s): Macy"
+  },
+  {
+   "matter": 30,
+   "file": "My Schedule.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 27,
+   "detail": "archived matter 30 filing 'My Schedule.pdf' names active matter 27 defendant(s): Macy"
+  },
+  {
+   "matter": 30,
+   "file": "Newanforbi v. CDCR, et al 3.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 19,
+   "detail": "archived matter 30 filing 'Newanforbi v. CDCR, et al 3.pdf' names active matter 19 defendant(s): Macomber, CDCR"
+  },
+  {
+   "matter": 30,
+   "file": "Newanforbi v. CDCR, et al 3.pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 30 filing 'Newanforbi v. CDCR, et al 3.pdf' names active matter 28 defendant(s): Noguchi"
+  },
+  {
+   "matter": 30,
+   "file": "Proof of Service of Summons - Gary Noguchi (served Jul 7 2026).pdf",
+   "type": "active_defendant_name",
+   "target_matter": 28,
+   "detail": "archived matter 30 filing 'Proof of Service of Summons - Gary Noguchi (served Jul 7 2026).pdf' names active matter 28 defendant(s): Noguchi"
+  }
+ ],
+ "active_risk_score": {
+  "1": 25,
+  "2": 15,
+  "7": 31,
+  "12": 7,
+  "19": 78,
+  "20": 30,
+  "24": 17,
+  "25": 11,
+  "26": 0,
+  "27": 5,
+  "28": 72,
+  "29": 5
+ }
+}

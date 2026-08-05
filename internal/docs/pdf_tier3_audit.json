@@ -1,0 +1,1253 @@
+{
+ "generated_for": "tier3-archived-matter-sweep",
+ "matters": [
+  3,
+  4,
+  5,
+  6,
+  8,
+  9,
+  10,
+  11,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  21,
+  22,
+  23,
+  30,
+  31
+ ],
+ "documents_read": 133,
+ "counts": {
+  "orphan": 7,
+  "cross_ref": 104,
+  "deadline": 47,
+  "mislabeled": 6,
+  "misfiled": 8,
+  "unreadable": 2
+ },
+ "findings": [
+  {
+   "matter": 3,
+   "check": "orphan",
+   "severity": "low",
+   "subject": "LIVE 1.8.5 NEXTGEN CM-ECF - U.S. District Court for Eastern California.pdf",
+   "detail": "file present in the matter folder but not referenced by the record or the document index"
+  },
+  {
+   "matter": 3,
+   "check": "orphan",
+   "severity": "low",
+   "subject": "Re-service_Derrick_et_al.pdf",
+   "detail": "file present in the matter folder but not referenced by the record or the document index"
+  },
+  {
+   "matter": 3,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "2.Newanforbi v. Derrick.pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Director"
+  },
+  {
+   "matter": 3,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "28 Notice of Related Cases.pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Director"
+  },
+  {
+   "matter": 3,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "8_Jscott.pdf",
+   "detail": "archived filing mentions active matter 26 defendant(s): Service"
+  },
+  {
+   "matter": 3,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "8_MTQ.pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Director"
+  },
+  {
+   "matter": 3,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "8_MTQ.pdf",
+   "detail": "filing sets a trial on 2026-01-05 that the timeline does not carry"
+  },
+  {
+   "matter": 3,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "8_MTQ.pdf",
+   "detail": "filing sets a hearing on 2026-03-19 that the timeline does not carry"
+  },
+  {
+   "matter": 3,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "8_OpM4L.pdf",
+   "detail": "archived filing mentions active matter 25 defendant(s): Federal"
+  },
+  {
+   "matter": 3,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "8_OpM4L.pdf",
+   "detail": "filing sets a trial on 2026-01-05 that the timeline does not carry"
+  },
+  {
+   "matter": 3,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "8_reply.pdf",
+   "detail": "archived filing mentions active matter 25 defendant(s): Federal"
+  },
+  {
+   "matter": 3,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "8_reply.pdf",
+   "detail": "filing sets a trial on 2026-01-05 that the timeline does not carry"
+  },
+  {
+   "matter": 3,
+   "check": "mislabeled",
+   "severity": "medium",
+   "subject": "GoodFaithDeclaration.pdf",
+   "detail": "filename says 'declaration' but the text has no matching marker"
+  },
+  {
+   "matter": 3,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "LIVE 1.8.5 NEXTGEN CM-ECF - U.S. District Court for Eastern California.pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Director"
+  },
+  {
+   "matter": 3,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Notice of Appearance Blaze.pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Director"
+  },
+  {
+   "matter": 3,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Notice of Change of Address (July 7, 2026).pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Director"
+  },
+  {
+   "matter": 3,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Notice of Voluntary Dismissal - Derrick and Noguchi (Jul 22 2026).pdf",
+   "detail": "archived filing mentions active matter 25 defendant(s): Federal"
+  },
+  {
+   "matter": 3,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "SLB MTD.pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Director"
+  },
+  {
+   "matter": 3,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "SLB MTD.pdf",
+   "detail": "filing sets a trial on 2026-01-05 that the timeline does not carry"
+  },
+  {
+   "matter": 3,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "SLB MTD.pdf",
+   "detail": "filing sets a trial on 2026-01-12 that the timeline does not carry"
+  },
+  {
+   "matter": 3,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "SLB MTD.pdf",
+   "detail": "filing sets a hearing on 2026-05-28 that the timeline does not carry"
+  },
+  {
+   "matter": 3,
+   "check": "mislabeled",
+   "severity": "medium",
+   "subject": "SLB Opposition to MTD.pdf",
+   "detail": "filename says 'opposition' but the text has no matching marker"
+  },
+  {
+   "matter": 3,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "SLBStipulation.pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Director"
+  },
+  {
+   "matter": 3,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "SLBStipulation.pdf",
+   "detail": "filing sets a trial on 2026-01-05 that the timeline does not carry"
+  },
+  {
+   "matter": 3,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "SummonsReturnedExecuted.pdf",
+   "detail": "archived filing mentions active matter 26 defendant(s): Service"
+  },
+  {
+   "matter": 5,
+   "check": "orphan",
+   "severity": "low",
+   "subject": "Tentative Ruling on Demurrer RTF - Jul 10 2026.pdf",
+   "detail": "file present in the matter folder but not referenced by the record or the document index"
+  },
+  {
+   "matter": 5,
+   "check": "misfiled",
+   "severity": "high",
+   "subject": "BBS Complaint Palacios LMFT 44555.pdf",
+   "detail": "text carries only another matter's case number: matter 03 (2:26-cv-00004-DJC-JDP)"
+  },
+  {
+   "matter": 5,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "BBS Complaint Palacios LMFT 44555.pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Director"
+  },
+  {
+   "matter": 5,
+   "check": "misfiled",
+   "severity": "high",
+   "subject": "CASOMB Complaint - HOPE Program.pdf",
+   "detail": "text carries only another matter's case number: matter 03 (2:26-cv-00004-DJC-JDP)"
+  },
+  {
+   "matter": 5,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "CASOMB Complaint - HOPE Program.pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Director"
+  },
+  {
+   "matter": 5,
+   "check": "misfiled",
+   "severity": "high",
+   "subject": "CASOMB Complaint Continuation Sheet .pdf",
+   "detail": "text carries only another matter's case number: matter 03 (2:26-cv-00004-DJC-JDP)"
+  },
+  {
+   "matter": 5,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "CASOMB Complaint Continuation Sheet .pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Director"
+  },
+  {
+   "matter": 5,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "DISC001_SEC_4a2 HOPE1.pdf",
+   "detail": "archived filing mentions active matter 25 defendant(s): inclusive"
+  },
+  {
+   "matter": 5,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "DISC001_SEC_4a2 HOPE1.pdf",
+   "detail": "filing sets a cmc on 2026-10-13 that the timeline does not carry"
+  },
+  {
+   "matter": 5,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "DISC001_SEC_4a2 Palacios .pdf",
+   "detail": "archived filing mentions active matter 25 defendant(s): inclusive"
+  },
+  {
+   "matter": 5,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "DISC001_SEC_4a2 Palacios .pdf",
+   "detail": "filing sets a cmc on 2026-10-13 that the timeline does not carry"
+  },
+  {
+   "matter": 5,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "DRFT HOPE resp plntf RFA1.pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Director"
+  },
+  {
+   "matter": 5,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "DRFT HOPE resp plntf RFA1.pdf",
+   "detail": "filing sets a trial on 2026-02-10 that the timeline does not carry"
+  },
+  {
+   "matter": 5,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Declaration Pal ISO Opposition.pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Director"
+  },
+  {
+   "matter": 5,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "Declaration Pal ISO Opposition.pdf",
+   "detail": "filing sets a trial on 2026-02-10 that the timeline does not carry"
+  },
+  {
+   "matter": 5,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Demurrer-(NEWpal) (052226)).pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Director"
+  },
+  {
+   "matter": 5,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "Demurrer-(NEWpal) (052226)).pdf",
+   "detail": "filing sets a trial on 2026-02-10 that the timeline does not carry"
+  },
+  {
+   "matter": 5,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "Demurrer-(NEWpal) (052226)).pdf",
+   "detail": "filing sets a hearing on 2026-05-22 that the timeline does not carry"
+  },
+  {
+   "matter": 5,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Demurrer-Decl (NEWpal) (052226)).pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Director"
+  },
+  {
+   "matter": 5,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "Demurrer-Decl (NEWpal) (052226)).pdf",
+   "detail": "filing sets a trial on 2026-02-10 that the timeline does not carry"
+  },
+  {
+   "matter": 5,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Demurrer-PO (NEWpal) (052226)).pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Director"
+  },
+  {
+   "matter": 5,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "Demurrer-PO (NEWpal) (052226)).pdf",
+   "detail": "filing sets a trial on 2026-02-10 that the timeline does not carry"
+  },
+  {
+   "matter": 5,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Demurrer-RJN (NEWpal) (052226)).pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Director"
+  },
+  {
+   "matter": 5,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "Demurrer-RJN (NEWpal) (052226)).pdf",
+   "detail": "filing sets a trial on 2026-02-10 that the timeline does not carry"
+  },
+  {
+   "matter": 5,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Demurrer-Reply (NEWpal) (070726).pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Director"
+  },
+  {
+   "matter": 5,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "Demurrer-Reply (NEWpal) (070726).pdf",
+   "detail": "filing sets a trial on 2026-02-10 that the timeline does not carry"
+  },
+  {
+   "matter": 5,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Demurrer-Reply Decl (NEWpal) (070726).pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Director"
+  },
+  {
+   "matter": 5,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "Demurrer-Reply Decl (NEWpal) (070726).pdf",
+   "detail": "filing sets a trial on 2026-02-10 that the timeline does not carry"
+  },
+  {
+   "matter": 5,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Evidentiary Pal Objections to Defendants RJN.pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Director"
+  },
+  {
+   "matter": 5,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "Evidentiary Pal Objections to Defendants RJN.pdf",
+   "detail": "filing sets a trial on 2026-02-10 that the timeline does not carry"
+  },
+  {
+   "matter": 5,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "Evidentiary Pal Objections to Defendants RJN.pdf",
+   "detail": "filing sets a trial on 2026-04-22 that the timeline does not carry"
+  },
+  {
+   "matter": 5,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "FAC_STK-CV-UF-2026-1032.pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Director"
+  },
+  {
+   "matter": 5,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Fee Waiver - Newanforbi v. Palacios, et al..pdf",
+   "detail": "archived filing mentions active matter 26 defendant(s): Service"
+  },
+  {
+   "matter": 5,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "HOPE resp plntf FROGS1 (NEWpal) (061526).pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Director"
+  },
+  {
+   "matter": 5,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "HOPE resp plntf FROGS1 (NEWpal) (061526).pdf",
+   "detail": "filing sets a trial on 2026-02-10 that the timeline does not carry"
+  },
+  {
+   "matter": 5,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "HOPE resp plntf RFP1 (newpal) (061526).pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Director"
+  },
+  {
+   "matter": 5,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "HOPE resp plntf RFP1 (newpal) (061526).pdf",
+   "detail": "filing sets a trial on 2026-02-10 that the timeline does not carry"
+  },
+  {
+   "matter": 5,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "HOPE resp plntf SROGS1 (NEWpal) (061526).pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Director"
+  },
+  {
+   "matter": 5,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "HOPE resp plntf SROGS1 (NEWpal) (061526).pdf",
+   "detail": "filing sets a trial on 2026-02-10 that the timeline does not carry"
+  },
+  {
+   "matter": 5,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Meet and Confer Letter 061626.pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Director"
+  },
+  {
+   "matter": 5,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Notice of Change of Address (July 7, 2026).pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Director"
+  },
+  {
+   "matter": 5,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Opposition to Demurrer Pal.pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Director"
+  },
+  {
+   "matter": 5,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "Opposition to Demurrer Pal.pdf",
+   "detail": "filing sets a trial on 2026-02-10 that the timeline does not carry"
+  },
+  {
+   "matter": 5,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "Opposition to Demurrer Pal.pdf",
+   "detail": "filing sets a trial on 2026-04-22 that the timeline does not carry"
+  },
+  {
+   "matter": 5,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "Opposition to Demurrer Pal.pdf",
+   "detail": "filing sets a hearing on 2026-05-22 that the timeline does not carry"
+  },
+  {
+   "matter": 5,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Order Sustaining Demurrer to FAC WOLA - Jul 15 2026.pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Director"
+  },
+  {
+   "matter": 5,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "Order Sustaining Demurrer to FAC WOLA - Jul 15 2026.pdf",
+   "detail": "filing sets a trial on 2026-02-10 that the timeline does not carry"
+  },
+  {
+   "matter": 5,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "PALACIOS resp plntf FROGS1 (NEWpal) (061526).pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Director"
+  },
+  {
+   "matter": 5,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "PALACIOS resp plntf RFA1 (NEWpal) (060826).pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Director"
+  },
+  {
+   "matter": 5,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "PALACIOS resp plntf RFP1 (NEWpal) (061526).pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Director"
+  },
+  {
+   "matter": 5,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "PALACIOS resp plntf SROGS1 (NEWpal) (061226).pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Director"
+  },
+  {
+   "matter": 5,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "Plaintiff's Notice of Intent to Appear and Argue Tentative Ruling (July 13, 2026).pdf",
+   "detail": "filing sets a hearing on 2026-07-15 that the timeline does not carry"
+  },
+  {
+   "matter": 5,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "RFA to Pl (NEWpal) (061826).pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Director"
+  },
+  {
+   "matter": 5,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "RFP to Pl (NEWpal) (061826).pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Director"
+  },
+  {
+   "matter": 5,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "RJN Pal ISO Opposition.pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Director"
+  },
+  {
+   "matter": 5,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "RJN Pal ISO Opposition.pdf",
+   "detail": "filing sets a trial on 2026-02-10 that the timeline does not carry"
+  },
+  {
+   "matter": 5,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "RJN Pal ISO Opposition.pdf",
+   "detail": "filing sets a hearing on 2026-05-22 that the timeline does not carry"
+  },
+  {
+   "matter": 5,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "SROG Set Two HOPE NEWpal .pdf",
+   "detail": "archived filing mentions active matter 25 defendant(s): inclusive"
+  },
+  {
+   "matter": 5,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "SROG Set Two HOPE NEWpal .pdf",
+   "detail": "filing sets a cmc on 2026-10-13 that the timeline does not carry"
+  },
+  {
+   "matter": 5,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "SROG Set Two PALACIOS NEWpal .pdf",
+   "detail": "archived filing mentions active matter 25 defendant(s): inclusive"
+  },
+  {
+   "matter": 5,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "SROG Set Two PALACIOS NEWpal .pdf",
+   "detail": "filing sets a cmc on 2026-10-13 that the timeline does not carry"
+  },
+  {
+   "matter": 5,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "SROGS to Pl (NEWpal) (061826).pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Director"
+  },
+  {
+   "matter": 5,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Stipulated Protective Order SIGNED.pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Director"
+  },
+  {
+   "matter": 5,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Summons + Complaint - Newanforbi v. Palacios, et al. .pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Director"
+  },
+  {
+   "matter": 5,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Tentative Ruling on Demurrer RTF - Jul 10 2026.pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Director"
+  },
+  {
+   "matter": 6,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "5. Notice of Related Cases.pdf",
+   "detail": "archived filing mentions active matter 19 defendant(s): Secretary"
+  },
+  {
+   "matter": 6,
+   "check": "mislabeled",
+   "severity": "medium",
+   "subject": "Complaint.pdf",
+   "detail": "filename says 'complaint' but the text has no matching marker"
+  },
+  {
+   "matter": 6,
+   "check": "mislabeled",
+   "severity": "medium",
+   "subject": "HOPE Federal Complaint.pdf",
+   "detail": "filename says 'complaint' but the text has no matching marker"
+  },
+  {
+   "matter": 6,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Notice of Voluntary Dismissal Newanforbi v HOPE.pdf",
+   "detail": "archived filing mentions active matter 19 defendant(s): Secretary"
+  },
+  {
+   "matter": 8,
+   "check": "mislabeled",
+   "severity": "medium",
+   "subject": "Civil Case Cover Sheet CM-010 (electronically filed May 18 2026).pdf",
+   "detail": "filename says 'civil case cover sheet' but the text has no matching marker"
+  },
+  {
+   "matter": 8,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Civil Case Cover Sheet CM-010 (electronically filed May 18 2026).pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Candelaria"
+  },
+  {
+   "matter": 8,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Court Minutes (Jul 17 2026) and Civil Case Cover Sheet CM-010 pp.2-3.pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Candelaria"
+  },
+  {
+   "matter": 8,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Court Minutes - Fee Waiver Hearing DENIED, Non-Appearance (Jul 17 2026).pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Candelaria"
+  },
+  {
+   "matter": 8,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Newanforbi v. Candelaria Mandamus.pdf",
+   "detail": "archived filing mentions active matter 01 defendant(s): Melano, Meza-Gonzalez"
+  },
+  {
+   "matter": 8,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Notice of Change of Address (July 7, 2026).pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Candelaria"
+  },
+  {
+   "matter": 8,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Order on Court Fee Waiver After Hearing - FW-008 (Jul 17 2026).pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Candelaria"
+  },
+  {
+   "matter": 8,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "Order on Court Fee Waiver After Hearing - FW-008 (Jul 17 2026).pdf",
+   "detail": "filing sets a hearing on 2026-07-17 that the timeline does not carry"
+  },
+  {
+   "matter": 9,
+   "check": "orphan",
+   "severity": "low",
+   "subject": "31626-43188-NTCHNG_69ce9f1e7ab52 2.pdf",
+   "detail": "file present in the matter folder but not referenced by the record or the document index"
+  },
+  {
+   "matter": 9,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "26WM000028_Reply_to_Opp.pdf",
+   "detail": "archived filing mentions active matter 19 defendant(s): Secretary"
+  },
+  {
+   "matter": 9,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "31626-43188-NTCHNG_69ce9f1e7ab52 2.pdf",
+   "detail": "archived filing mentions active matter 19 defendant(s): Secretary"
+  },
+  {
+   "matter": 9,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "31626-43188-NTCHNG_69ce9f1e7ab52 2.pdf",
+   "detail": "filing sets a hearing on 2026-01-30 that the timeline does not carry"
+  },
+  {
+   "matter": 9,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "31626-43188-NTCHNG_69ce9f1e7ab52 2.pdf",
+   "detail": "filing sets a hearing on 2026-02-02 that the timeline does not carry"
+  },
+  {
+   "matter": 9,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "31626-43188-NTCHNG_69ce9f1e7ab52 2.pdf",
+   "detail": "filing sets a hearing on 2026-03-27 that the timeline does not carry"
+  },
+  {
+   "matter": 9,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "31626-43188-NTCHNG_69ce9f1e7ab52 2.pdf",
+   "detail": "filing sets a hearing on 2026-03-10 that the timeline does not carry"
+  },
+  {
+   "matter": 9,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "31626-43188-NTCHNG_69ce9f1e7ab52 2.pdf",
+   "detail": "filing sets a hearing on 2026-05-29 that the timeline does not carry"
+  },
+  {
+   "matter": 9,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "31626-43188-NTCHNG_69ce9f1e7ab52 2.pdf",
+   "detail": "filing sets a hearing on 2026-04-20 that the timeline does not carry"
+  },
+  {
+   "matter": 9,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Amended Notice of Hearing on Petition for Writ of Mandate.pdf",
+   "detail": "archived filing mentions active matter 19 defendant(s): Secretary"
+  },
+  {
+   "matter": 9,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "Amended Notice of Hearing on Petition for Writ of Mandate.pdf",
+   "detail": "filing sets a hearing on 2026-01-30 that the timeline does not carry"
+  },
+  {
+   "matter": 9,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "Amended Notice of Hearing on Petition for Writ of Mandate.pdf",
+   "detail": "filing sets a hearing on 2026-02-02 that the timeline does not carry"
+  },
+  {
+   "matter": 9,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "Amended Notice of Hearing on Petition for Writ of Mandate.pdf",
+   "detail": "filing sets a hearing on 2026-03-27 that the timeline does not carry"
+  },
+  {
+   "matter": 9,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "Amended Notice of Hearing on Petition for Writ of Mandate.pdf",
+   "detail": "filing sets a hearing on 2026-03-10 that the timeline does not carry"
+  },
+  {
+   "matter": 9,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "Amended Notice of Hearing on Petition for Writ of Mandate.pdf",
+   "detail": "filing sets a hearing on 2026-05-29 that the timeline does not carry"
+  },
+  {
+   "matter": 9,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "Amended Notice of Hearing on Petition for Writ of Mandate.pdf",
+   "detail": "filing sets a hearing on 2026-04-20 that the timeline does not carry"
+  },
+  {
+   "matter": 9,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "CU_26WM000028_e91359ab-2598-4573-a45a-fa7893fc4cb07.pdf",
+   "detail": "archived filing mentions active matter 19 defendant(s): Secretary"
+  },
+  {
+   "matter": 9,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "WOM FAC.pdf",
+   "detail": "archived filing mentions active matter 19 defendant(s): Secretary"
+  },
+  {
+   "matter": 9,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "WOM-efile.pdf",
+   "detail": "archived filing mentions active matter 26 defendant(s): Service"
+  },
+  {
+   "matter": 9,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "WOM_Opening Brief.pdf",
+   "detail": "archived filing mentions active matter 19 defendant(s): Secretary"
+  },
+  {
+   "matter": 9,
+   "check": "deadline",
+   "severity": "medium",
+   "subject": "WOM_Opening Brief.pdf",
+   "detail": "filing sets a hearing on 2026-03-27 that the timeline does not carry"
+  },
+  {
+   "matter": 10,
+   "check": "misfiled",
+   "severity": "high",
+   "subject": "Notice of Change of Address (July 7, 2026).pdf",
+   "detail": "text carries only another matter's case number: matter 19 (C2604791)"
+  },
+  {
+   "matter": 10,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Notice of Change of Address (July 7, 2026).pdf",
+   "detail": "archived filing mentions active matter 19 defendant(s): Secretary"
+  },
+  {
+   "matter": 10,
+   "check": "unreadable",
+   "severity": "medium",
+   "subject": "ORDER_DENYING_PETITION_C2602632.pdf",
+   "detail": "no usable text after extraction and OCR; content cannot be verified"
+  },
+  {
+   "matter": 14,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Newanforbi v Urrea.pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Director"
+  },
+  {
+   "matter": 15,
+   "check": "orphan",
+   "severity": "low",
+   "subject": "DODD.pdf",
+   "detail": "file present in the matter folder but not referenced by the record or the document index"
+  },
+  {
+   "matter": 15,
+   "check": "orphan",
+   "severity": "low",
+   "subject": "Newanforbi v. Dodd, et al.pdf",
+   "detail": "file present in the matter folder but not referenced by the record or the document index"
+  },
+  {
+   "matter": 15,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "5417 CM010 Civil Case Cover Sheet.pdf",
+   "detail": "archived filing mentions active matter 25 defendant(s): Federal"
+  },
+  {
+   "matter": 15,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "5417 Clerk s Certificate of Service by Mail.pdf",
+   "detail": "archived filing mentions active matter 26 defendant(s): Service"
+  },
+  {
+   "matter": 15,
+   "check": "misfiled",
+   "severity": "high",
+   "subject": "5417 Complaint.pdf",
+   "detail": "text carries only another matter's case number: matter 09 (26WM000028)"
+  },
+  {
+   "matter": 15,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "5417 Complaint.pdf",
+   "detail": "archived filing mentions active matter 19 defendant(s): Administrator"
+  },
+  {
+   "matter": 15,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "5417 Notice of Case Assignment Scheduling Information.pdf",
+   "detail": "archived filing mentions active matter 26 defendant(s): Service"
+  },
+  {
+   "matter": 15,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "5417 SUM100 Summons - Civil.pdf",
+   "detail": "archived filing mentions active matter 25 defendant(s): inclusive"
+  },
+  {
+   "matter": 15,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "DODD.pdf",
+   "detail": "archived filing mentions active matter 19 defendant(s): Administrator"
+  },
+  {
+   "matter": 15,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Dodd.pdf",
+   "detail": "archived filing mentions active matter 19 defendant(s): Administrator"
+  },
+  {
+   "matter": 15,
+   "check": "misfiled",
+   "severity": "high",
+   "subject": "Newanforbi v Dodd RECALIBRATED.pdf",
+   "detail": "text carries only another matter's case number: matter 09 (26WM000028)"
+  },
+  {
+   "matter": 15,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Newanforbi v Dodd RECALIBRATED.pdf",
+   "detail": "archived filing mentions active matter 19 defendant(s): Administrator"
+  },
+  {
+   "matter": 15,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Newanforbi v. CDCR FW003 Order on Court Fee Waiver.pdf",
+   "detail": "archived filing mentions active matter 26 defendant(s): Service"
+  },
+  {
+   "matter": 15,
+   "check": "misfiled",
+   "severity": "high",
+   "subject": "Newanforbi v. CDCR, et al.pdf",
+   "detail": "text carries only another matter's case number: matter 09 (26WM000028)"
+  },
+  {
+   "matter": 15,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Newanforbi v. CDCR, et al.pdf",
+   "detail": "archived filing mentions active matter 19 defendant(s): Administrator"
+  },
+  {
+   "matter": 15,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Newanforbi v. Dodd, et al..pdf",
+   "detail": "archived filing mentions active matter 12 defendant(s): operating"
+  },
+  {
+   "matter": 15,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Newanforbi v. Dodd, et al.pdf",
+   "detail": "archived filing mentions active matter 12 defendant(s): operating"
+  },
+  {
+   "matter": 15,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Newanforbi v. Dodd.pdf",
+   "detail": "archived filing mentions active matter 19 defendant(s): Administrator"
+  },
+  {
+   "matter": 15,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Notice of Change of Address (July 7, 2026).pdf",
+   "detail": "archived filing mentions active matter 25 defendant(s): inclusive"
+  },
+  {
+   "matter": 15,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Print_GCP_INTAKE_FORM.pdf",
+   "detail": "archived filing mentions active matter 25 defendant(s): Federal"
+  },
+  {
+   "matter": 15,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Proof of Service of Summons - CDCR (served June 22, 2026; filed June 29, 2026).pdf",
+   "detail": "archived filing mentions active matter 26 defendant(s): Service"
+  },
+  {
+   "matter": 15,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Proof of Service of Summons - Keely Dodd (served June 22, 2026; filed June 29, 2026).pdf",
+   "detail": "archived filing mentions active matter 26 defendant(s): Service"
+  },
+  {
+   "matter": 16,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Newanforbi v. Rojo.pdf",
+   "detail": "archived filing mentions active matter 19 defendant(s): Secretary"
+  },
+  {
+   "matter": 21,
+   "check": "mislabeled",
+   "severity": "medium",
+   "subject": "Complaint.pdf",
+   "detail": "filename says 'complaint' but the text has no matching marker"
+  },
+  {
+   "matter": 22,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "CM-200 Notice of Settlement of Entire Case (Pilot, Executed Aug 3 2026).pdf",
+   "detail": "archived filing mentions active matter 26 defendant(s): Service"
+  },
+  {
+   "matter": 22,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Confidential Settlement Agreement and Release - Pilot (Signed Jul 14 2026).pdf",
+   "detail": "archived filing mentions active matter 25 defendant(s): inclusive, Federal"
+  },
+  {
+   "matter": 22,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Demand Letter Newanforbi v Pilot Travel Centers.pdf",
+   "detail": "archived filing mentions active matter 19 defendant(s): Secretary"
+  },
+  {
+   "matter": 22,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Email - Yarbrough Settlement Confirmation and Dismissal Request (Jul 14 2026).pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Director"
+  },
+  {
+   "matter": 22,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Filing Receipt Service of Process on Pilot.pdf",
+   "detail": "archived filing mentions active matter 26 defendant(s): Service"
+  },
+  {
+   "matter": 22,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Gmail - Mail Service Request to Sarah Thompson re CM-200 Notice of Settlement (Aug 3 2026).pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Director"
+  },
+  {
+   "matter": 22,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Gmail - USPS eReceipt - CIV-110 Money Order and Postage (Aug 3 2026).pdf",
+   "detail": "archived filing mentions active matter 26 defendant(s): Service"
+  },
+  {
+   "matter": 22,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Invoice and Signed Proof of Service - Pilot Travel Centers.pdf",
+   "detail": "archived filing mentions active matter 26 defendant(s): Service"
+  },
+  {
+   "matter": 22,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Newanforbi v. Pilot Travel Centers LLC.pdf",
+   "detail": "archived filing mentions active matter 12 defendant(s): operating"
+  },
+  {
+   "matter": 22,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Nforbi Release (v.2).docx.pdf",
+   "detail": "archived filing mentions active matter 25 defendant(s): Federal"
+  },
+  {
+   "matter": 22,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Notice of Change of Address (July 7, 2026).pdf",
+   "detail": "archived filing mentions active matter 25 defendant(s): inclusive"
+  },
+  {
+   "matter": 22,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "offer_letter_2025-12-10.pdf",
+   "detail": "archived filing mentions active matter 25 defendant(s): Federal"
+  },
+  {
+   "matter": 23,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "HireRight Report to Macy's Corporate Services (Pre-Employment - BGC). Subject- C 2.pdf",
+   "detail": "archived filing mentions active matter 26 defendant(s): Service"
+  },
+  {
+   "matter": 23,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Job Offer-Selling and Support Captain, Stockton Sherwood - Full Time.pdf",
+   "detail": "archived filing mentions active matter 25 defendant(s): Federal"
+  },
+  {
+   "matter": 30,
+   "check": "orphan",
+   "severity": "low",
+   "subject": "CASOMB Complaint Submission \u2013 HOPE Psychotherapy, Inc..pdf",
+   "detail": "file present in the matter folder but not referenced by the record or the document index"
+  },
+  {
+   "matter": 30,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "CASOMB Complaint Submission \u2013 HOPE Psychotherapy, Inc. 3.pdf",
+   "detail": "archived filing mentions active matter 07 defendant(s): Director"
+  },
+  {
+   "matter": 30,
+   "check": "unreadable",
+   "severity": "medium",
+   "subject": "CASOMB Complaint Submission \u2013 HOPE Psychotherapy, Inc..pdf",
+   "detail": "no usable text after extraction and OCR; content cannot be verified"
+  },
+  {
+   "matter": 30,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Complaint v9 Newanforbi v Moua NDCAL.pdf",
+   "detail": "archived filing mentions active matter 24 defendant(s): capacities"
+  },
+  {
+   "matter": 30,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Job Offer-Selling and Support Captain, Stockton Sherwood - Full Time.pdf",
+   "detail": "archived filing mentions active matter 25 defendant(s): Federal"
+  },
+  {
+   "matter": 30,
+   "check": "misfiled",
+   "severity": "high",
+   "subject": "Newanforbi v. CDCR, et al 3.pdf",
+   "detail": "text carries only another matter's case number: matter 09 (26WM000028)"
+  },
+  {
+   "matter": 30,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Newanforbi v. CDCR, et al 3.pdf",
+   "detail": "archived filing mentions active matter 19 defendant(s): Administrator"
+  },
+  {
+   "matter": 30,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Proof of Service of Summons - Gary Noguchi (served Jul 7 2026).pdf",
+   "detail": "archived filing mentions active matter 26 defendant(s): Service"
+  },
+  {
+   "matter": 30,
+   "check": "cross_ref",
+   "severity": "low",
+   "subject": "Proof of Service of Summons - Joseelyn Rojo (served Jul 14 2026).pdf",
+   "detail": "archived filing mentions active matter 26 defendant(s): Service"
+  }
+ ]
+}
