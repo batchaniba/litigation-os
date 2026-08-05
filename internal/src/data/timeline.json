@@ -1751,5 +1751,51 @@
     "matters": "30",
     "type": "deadline",
     "upcoming": true
+  },
+  {
+    "date": "Oct. 13, 2026",
+    "event": "Case Management Conference, Newanforbi v. Palacios, et al. (Matter 5) — Hon. George J. Abdallah, Dept. 10A, 8:45 a.m.; setting confirmed on the caption of the served Set Two discovery (SROG/DISC001) to HOPE Program and Palacios",
+    "matters": "5",
+    "type": "deadline",
+    "upcoming": true,
+    "source": "/documents/matter-05/SROG Set Two HOPE NEWpal .pdf"
+  },
+  {
+    "date": "Oct. 16, 2026",
+    "event": "Hearing on CHP demurrer and the individual respondents' joinders/demurrers to the Petition for Writ of Mandate, Newanforbi v. California Highway Patrol, et al. (Matter 20) — Dept. 25; date stated in the Serrato and Paul notices of joinder and demurrer",
+    "matters": "20",
+    "type": "deadline",
+    "upcoming": true,
+    "source": "/documents/matter-20/Serrato Notice of Joinder and Demurrer.pdf"
+  },
+  {
+    "date": "Oct. 23, 2026",
+    "event": "Continued hearing on the Dutra joinder and demurrer to the Petition for Writ of Mandate, Newanforbi v. California Highway Patrol, et al. (Matter 20) — Dept. 25; second hearing date reflected in the proposed order granting the joinders",
+    "matters": "20",
+    "type": "deadline",
+    "upcoming": true,
+    "source": "/documents/matter-20/Dutra Notice of Joinder and Demurrer.pdf"
+  },
+  {
+    "date": "Dec. 17, 2026",
+    "event": "Case Management Conference, Newanforbi v. Randstad US LLC and RK Logistics Group, Inc. (Matter 27) — Hon. Karin Schwartz, Dept. 20, 3:00 p.m.; setting stated in the CCP §425.115 punitive-damages notices served Aug. 4, 2026",
+    "matters": "27",
+    "type": "deadline",
+    "upcoming": true,
+    "source": "/documents/matter-27/Notice of Amount of Punitive Damages Sought (CCP 425.115) - Randstad US LLC (Aug 4 2026).pdf"
+  },
+  {
+    "date": "Jan. 16, 2026",
+    "event": "Original noticed hearing date on Defendants' Motion to Dismiss the Complaint with Motion to Strike, Newanforbi v. State of California, et al. (Matter 1) — Hon. Dena Coggins, Courtroom 10, 1:30 p.m.; date stated on the caption of the CHP motion",
+    "matters": "1",
+    "type": "hearing",
+    "source": "/documents/matter-01/CHP Motion To Dismiss.pdf"
+  },
+  {
+    "date": "Jan. 27, 2026",
+    "event": "Hearing on Defendants' Motion to Dismiss, Newanforbi v. State of California, et al. (Matter 1) — 10:00 a.m.; date carried on the captions of both Plaintiff's opposition and the CHP reply, superseding the original Jan. 16, 2026 setting",
+    "matters": "1",
+    "type": "hearing",
+    "source": "/documents/matter-01/Reply - CHP.pdf"
   }
 ]
