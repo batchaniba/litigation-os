@@ -18,6 +18,7 @@ export default function GlobalSearchDialog({ onClose }: { onClose: () => void })
   const debouncedQuery = useDebounce(query, 200);
   const [activeIndex, setActiveIndex] = useState(-1);
   const inputRef = useRef<HTMLInputElement>(null);
+  const dialogRef = useRef<HTMLElement>(null);
   const resultRefs = useRef<Array<HTMLAnchorElement | null>>([]);
   const captionByMatter = useMemo(() => new Map(cases.map((matter) => [matter.number, matter.caption])), []);
 
@@ -25,7 +26,16 @@ export default function GlobalSearchDialog({ onClose }: { onClose: () => void })
     inputRef.current?.focus();
     const previousOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
-    const close = (event: KeyboardEvent) => { if (event.key === "Escape") onClose(); };
+    const close = (event: KeyboardEvent) => {
+      if (event.key === "Escape") onClose();
+      if (event.key !== "Tab") return;
+      const focusable = Array.from(dialogRef.current?.querySelectorAll<HTMLElement>('a[href], button:not([disabled]), input:not([disabled]), [tabindex]:not([tabindex="-1"])') ?? []);
+      if (!focusable.length) return;
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+      if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+    };
     document.addEventListener("keydown", close);
     return () => {
       document.body.style.overflow = previousOverflow;
@@ -77,7 +87,7 @@ export default function GlobalSearchDialog({ onClose }: { onClose: () => void })
 
   return (
     <div className="search-backdrop" role="presentation" onMouseDown={(event) => { if (event.target === event.currentTarget) onClose(); }}>
-      <section className="search-dialog" role="dialog" aria-modal="true" aria-labelledby="search-title" style={{ background: "var(--card-bg)", borderColor: "var(--card-border)" }}>
+      <section ref={dialogRef} className="search-dialog" role="dialog" aria-modal="true" aria-labelledby="search-title" style={{ background: "var(--card-bg)", borderColor: "var(--card-border)" }}>
         <h2 id="search-title" className="sr-only">Search litigation portfolio</h2>
         <div className="search-input-row" style={{ borderColor: "var(--card-border)" }}>
           <span aria-hidden="true">⌕</span>
@@ -88,13 +98,16 @@ export default function GlobalSearchDialog({ onClose }: { onClose: () => void })
             onKeyDown={handleSearchKeys}
             placeholder="Search matters, parties, case numbers, causes, events, or documents…"
             aria-label="Search portfolio"
+            role="combobox"
+            aria-autocomplete="list"
+            aria-expanded={results.length > 0}
             aria-controls="portfolio-search-results"
             aria-activedescendant={activeIndex >= 0 ? `search-result-${activeIndex}` : undefined}
             style={{ color: "var(--text)" }}
           />
           <button onClick={onClose} aria-label="Close search">Esc</button>
         </div>
-        <div id="portfolio-search-results" className="search-results" aria-live="polite">
+        <div id="portfolio-search-results" className="search-results" role="listbox" aria-label="Search results" aria-live="polite">
           {query.trim().length < 2 && <p style={{ color: "var(--subtle-text)" }}>Enter at least two characters. Press ↑ or ↓ to review results and Enter to open.</p>}
           {query.trim().length >= 2 && results.length === 0 && !isSearching && <p style={{ color: "var(--subtle-text)" }}>No portfolio records match “{query}”.</p>}
           {isSearching && <p className="search-debouncing" style={{ color: "var(--subtle-text)" }}>Searching…</p>}
@@ -104,7 +117,7 @@ export default function GlobalSearchDialog({ onClose }: { onClose: () => void })
               {group.items.map((result) => {
                 const index = results.indexOf(result);
                 const content = <><span className={`search-result-type type-${result.type.toLowerCase()}`}>{result.type}</span><span><strong style={{ color: "var(--heading)" }}>{result.title}</strong><small style={{ color: "var(--subtle-text)" }}>{result.detail}</small></span></>;
-                const shared = { id: `search-result-${index}`, ref: (node: HTMLAnchorElement | null) => { resultRefs.current[index] = node; }, className: `search-result${index === activeIndex ? " active" : ""}`, onMouseEnter: () => setActiveIndex(index), onClick: onClose };
+                const shared = { id: `search-result-${index}`, role: "option", "aria-selected": index === activeIndex, ref: (node: HTMLAnchorElement | null) => { resultRefs.current[index] = node; }, className: `search-result${index === activeIndex ? " active" : ""}`, onMouseEnter: () => setActiveIndex(index), onClick: onClose };
                 return result.href ? <a key={result.id} {...shared} href={result.href} target="_blank" rel="noreferrer">{content}</a> : <Link key={result.id} {...shared} to={result.matter ? formatMatterPath(result.matter) : "/timeline"}>{content}</Link>;
               })}
             </div>
