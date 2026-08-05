@@ -13,7 +13,7 @@
     "sync:summaries": "node internal/scripts/sync-matter-summaries.mjs",
     "sync:upcoming": "node internal/scripts/sync-upcoming.mjs",
     "generate:readme": "node internal/scripts/generate-readme-tables.mjs",
-    "validate": "node internal/scripts/sync-matter-summaries.mjs --check && node internal/scripts/sync-upcoming.mjs --check && node internal/scripts/generate-readme-tables.mjs --check && node internal/scripts/validate-portfolio.mjs",
+    "validate": "node internal/scripts/sync-matter-summaries.mjs --check && node internal/scripts/sync-upcoming.mjs --check && node internal/scripts/generate-readme-tables.mjs --check && node internal/scripts/validate-portfolio.mjs && npm run test:coverage",
     "scaffold:matter": "node internal/scripts/scaffold-matter.mjs",
     "prebuild": "npm run sync:summaries && npm run sync:upcoming",
     "index:build": "python3 internal/scripts/build-document-index.py",
