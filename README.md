@@ -342,8 +342,10 @@ Plaintiff is representing himself pro se across all 31 matters. The figures belo
 
 ## Tech Stack
 
+- **Languages:** TypeScript + JavaScript (the app, mid-migration to TS — new modules should be `.ts`/`.tsx`), CSS, Python 3.11 (the document-automation scripts), YAML (CI workflows)
 - **Framework:** React 18
 - **Build tool:** Vite 6
+- **Linting:** ESLint 9 flat config (`eslint.config.js`) for JS/TS, ruff (`pyproject.toml`) for Python — both enforced in CI
 - **Deployment:** Vercel (primary) + GitHub Pages (mirror)
 - **Fonts:** Cormorant Garamond (headings), DM Sans (UI)
 - **Styling:** `internal/src/styles/app.css` + component styles
@@ -369,9 +371,25 @@ Useful scripts:
 npm run sync:summaries        # rebuild light matter summaries + document search index
 npm run sync:upcoming         # rebuild upcoming.json from timeline.json for the shell
 npm run generate:readme       # regenerate marked README tables from portfolio data
-npm run validate              # summaries + upcoming + README freshness + schema/doc checks
+npm run lint                  # ESLint over internal/src + internal/scripts
+npm run lint:fix              # ...and auto-fix what is safely fixable
+npm run validate              # lint + summaries + upcoming + README freshness + schema/doc checks
 npm run scaffold:matter -- 32 "Newanforbi v. Example"
 ```
+
+### Python document scripts
+
+The PDF/Word generators and auditors under `internal/scripts/` are run directly
+and are independent of the web app — install their dependencies only when you
+need them:
+
+```bash
+python3 -m pip install -r requirements.txt   # reportlab, pypdf, pymupdf, …
+ruff check .                                 # lint (same rules CI enforces)
+```
+
+OCR (`internal/scripts/pdf-audit/ocr.py`) additionally needs the `tesseract`
+binary on `PATH`.
 
 ## Build
 

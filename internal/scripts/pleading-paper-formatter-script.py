@@ -8,8 +8,7 @@ import os, sys
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(SCRIPT_DIR, "lib"))
 from pleading_paper import (
-    PleadingPaper, CONTENT_LEFT, CONTENT_RIGHT, CONTENT_WIDTH,
-    PAGE_W, PAGE_H, FONT_SIZE, COURT_LINE1,
+    PleadingPaper, CONTENT_LEFT, COURT_LINE1,
 )
 
 DOC_TITLE_FOOTER = "COMPLAINT -- NEWANFORBI v. RANDSTAD US, LLC ET AL."

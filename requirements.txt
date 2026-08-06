@@ -1,0 +1,27 @@
+# Python dependencies for the document-automation scripts in internal/scripts/.
+# Not needed to build or run the web app — install only when generating,
+# filling, or auditing PDFs:
+#
+#   python3 -m pip install -r requirements.txt
+#
+# Lower bounds rather than exact pins: these are standalone scripts run on
+# demand, not a deployed service, so they should track security fixes in the
+# PDF libraries rather than freeze to a single tested revision.
+
+# Pleading-paper generation and form filling (reportlab draws, pypdf merges).
+reportlab>=4.0
+pypdf>=4.0
+
+# Text and layout extraction for the pdf-audit tier scripts.
+pymupdf>=1.24          # imported as `fitz`
+pdfplumber>=0.11
+pypdfium2>=4.25
+
+# OCR fallback for scanned exhibits (internal/scripts/pdf-audit/ocr.py).
+# Requires the tesseract binary on PATH as well:
+#   Debian/Ubuntu  apt-get install tesseract-ocr
+#   macOS          brew install tesseract
+pytesseract>=0.3.10
+
+# Word-format output for the letter/declaration formatters.
+python-docx>=1.1       # imported as `docx`

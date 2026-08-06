@@ -21,6 +21,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Lint
+        run: npm run lint
+
       - name: Typecheck
         run: npm run typecheck
 
@@ -29,3 +32,27 @@ jobs:
 
       - name: Validate portfolio data (matter JSON, document paths, cross-module coverage)
         run: npm run validate
+
+  python-scripts:
+    name: Python document scripts
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # Lint and syntax-check only. The PDF libraries in requirements.txt are
+      # heavy (and pytesseract needs a system binary), and nothing in CI runs
+      # the generators, so installing them here would cost minutes for no
+      # additional signal.
+      # Pinned so a new ruff release cannot turn a green branch red on its own;
+      # bump deliberately after running `ruff check .` locally.
+      - name: Lint (ruff)
+        run: pipx run ruff==0.16.1 check .
+
+      - name: Syntax check
+        run: python -m compileall -q internal/scripts

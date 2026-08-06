@@ -25,10 +25,9 @@
 import os, sys, re
 
 try:
-    import reportlab
+    import reportlab  # noqa: F401  # availability probe; the real imports follow below
 except ImportError:
     os.system(f"{sys.executable} -m pip install reportlab")
-    import reportlab
 
 from reportlab.lib.pagesizes import letter
 from reportlab.lib.units import inch

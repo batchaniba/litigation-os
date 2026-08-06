@@ -1,5 +1,7 @@
 node_modules
 dist
+coverage
+.ruff_cache
 .DS_Store
 Next_Chapter_Application_Essay.pdf
 Next_Chapter_Resume.pdf

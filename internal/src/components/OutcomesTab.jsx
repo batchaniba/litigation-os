@@ -468,7 +468,7 @@ function DemandCard({ item, theme }) {
   );
 }
 
-function SectionHeading({ label, color, count, theme }) {
+function SectionHeading({ label, color, count }) {
   return (
     <div style={{
       display: "flex", alignItems: "center", gap: 12, marginBottom: 14,
