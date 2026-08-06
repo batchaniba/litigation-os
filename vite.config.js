@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react'
 // while Vercel serves it from the domain root. The GH Pages workflow sets
 // GITHUB_PAGES=true at build time; Vercel builds leave it unset.
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react({ jsxRuntime: 'automatic' })],
   publicDir: 'internal/public',
   base: process.env.GITHUB_PAGES === 'true' ? '/interactive-litigation-portfolio/' : '/',
   test: {
@@ -18,6 +18,7 @@ export default defineConfig({
         'internal/src/components/Modal.jsx',
         'internal/src/utils/calendarUtils.js',
         'internal/src/utils/matterLifecycle.ts',
+        'internal/src/utils/deadlineMath/**/*.{ts,js}',
       ],
       thresholds: {
         lines: 80,

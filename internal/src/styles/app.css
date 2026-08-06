@@ -185,6 +185,7 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
 .detail-section { margin-top: 22px; }
 .detail-label { color: var(--gold); font-family: var(--font-sans); font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px; }
 .detail-copy { font-family: var(--font-sans); font-size: 13px; line-height: 1.65; margin: 0; }
+.tab-title { font-size: 24px; font-weight: 700; color: var(--heading); margin: 0 0 10px; }
 
 .collapsible-prose { display: grid; gap: 6px; justify-items: start; }
 .collapsible-prose .is-clamped { display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; }
@@ -844,4 +845,85 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
   .xm-legend-item { grid-template-columns: 1fr; gap: 4px; }
   .xm-matter-chip, .xm-matter-link { min-height: 44px; display: flex; align-items: center; }
   .xm-matter-link { flex-direction: column; align-items: flex-start; justify-content: center; }
+}
+
+/* ---------- Deadline math calculator ---------- */
+.dl-tab-header { margin-bottom: 28px; max-width: 72ch; }
+.dl-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px 20px;
+  margin-bottom: 28px;
+  padding: 18px 20px;
+  border: 1px solid rgb(148 163 184 / 22%);
+  border-radius: 10px;
+  background:
+    radial-gradient(120% 80% at 0% 0%, rgb(200 168 75 / 10%), transparent 55%),
+    var(--card-bg, #162034);
+}
+.dl-field { display: flex; flex-direction: column; gap: 6px; }
+.dl-field:first-child { grid-column: 1 / -1; }
+.dl-label {
+  font-size: 11px; letter-spacing: .1em; text-transform: uppercase; font-weight: 700;
+  color: var(--muted-text);
+}
+.dl-input {
+  min-height: 44px; padding: 10px 12px; border-radius: 8px;
+  border: 1px solid var(--card-border, #1a2a49);
+  background: var(--input-bg, #162034); color: var(--input-color, inherit);
+  font-family: var(--font-sans); font-size: 14px;
+}
+.dl-help { font-size: 12px; color: var(--subtle-text); line-height: 1.45; }
+.dl-error {
+  padding: 12px 14px; border-radius: 8px; margin-bottom: 20px;
+  border: 1px solid rgb(248 113 113 / 45%); background: rgb(248 113 113 / 12%);
+  color: #fecaca; font-size: 13px;
+}
+.dl-results-head { margin-bottom: 14px; }
+.dl-results-title { font-size: 20px; margin: 0 0 4px; }
+.dl-deadline-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px; }
+.dl-deadline {
+  border: 1px solid rgb(148 163 184 / 22%);
+  border-left: 3px solid var(--gold, #c8a84b);
+  border-radius: 10px;
+  padding: 16px 18px;
+  background: var(--card-bg, #162034);
+  animation: dl-rise .45s ease both;
+}
+@keyframes dl-rise {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.dl-deadline-top { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; flex-wrap: wrap; }
+.dl-deadline-label { font-size: 13px; font-weight: 600; margin-bottom: 4px; }
+.dl-deadline-date { font-size: 26px; font-weight: 700; letter-spacing: .01em; line-height: 1.1; }
+.dl-rolled {
+  font-size: 10px; letter-spacing: .08em; text-transform: uppercase; font-weight: 700;
+  padding: 4px 8px; border-radius: 6px;
+  border: 1px solid rgb(251 191 36 / 45%); background: rgb(251 191 36 / 14%); color: #fbbf24;
+}
+.dl-deadline-explain { margin: 10px 0 0; font-size: 13px; line-height: 1.55; color: var(--secondary-text); }
+.dl-cites { list-style: none; margin: 10px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.dl-cites a {
+  font-size: 11px; font-weight: 700; text-decoration: none;
+  padding: 4px 8px; border-radius: 6px;
+  border: 1px solid rgb(200 168 75 / 40%); color: var(--gold, #c8a84b);
+}
+.dl-cites a:hover { background: rgb(200 168 75 / 12%); }
+.dl-sources { margin-top: 36px; max-width: 80ch; }
+.dl-subhead {
+  margin: 0 0 10px; font-size: 11px; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--muted-text); font-weight: 700;
+}
+.dl-source-list { margin: 0; padding-left: 18px; font-size: 13px; line-height: 1.6; color: var(--secondary-text); }
+.dl-source-list a { color: var(--gold, #c8a84b); }
+.dl-source-note { color: var(--subtle-text); }
+.dl-disclaimer {
+  margin-top: 16px; font-size: 12px; line-height: 1.55; color: var(--subtle-text);
+  border-top: 1px dashed rgb(148 163 184 / 28%); padding-top: 12px;
+}
+
+@media (max-width: 760px) {
+  .dl-form { grid-template-columns: 1fr; }
+  .dl-deadline-date { font-size: 22px; }
 }
