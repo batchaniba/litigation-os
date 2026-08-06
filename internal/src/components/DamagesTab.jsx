@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { cases } from "../data/matters";
 import { damages_table, matter_damages } from "../data/damages";
+import { coverageForMatter } from "../data/coverage";
 import { GOLD } from "../constants";
 import { useTheme } from "../ThemeContext";
 import { formatCurrency } from "../utils/formatters";
@@ -53,6 +54,7 @@ function MatterCard({ m, view, expanded, onToggle, theme }) {
   const total = m[view];
   const pct = (total / MAX_MATTER_AGGRESSIVE) * 100;
   const rc = riskColor(m.risk);
+  const coverage = coverageForMatter(m.number);
 
   return (
     <div style={{
@@ -93,6 +95,21 @@ function MatterCard({ m, view, expanded, onToggle, theme }) {
                 fontFamily: "'DM Sans', sans-serif", fontSize: 10,
                 color: theme.subtleText
               }}>{m.status}</span>
+              {coverage && (
+                <>
+                  <span style={{ color: theme.subtleText, fontSize: 10 }}>·</span>
+                  <span
+                    title={`${coverage.carrier} Policy No. ${coverage.policyNo} — ${coverage.insureds.join(" and ")}`}
+                    style={{
+                      fontFamily: "'DM Sans', sans-serif", fontSize: 10, fontWeight: 700,
+                      color: "#34D399", border: "1px solid #34D39940",
+                      padding: "1px 7px", borderRadius: 4, letterSpacing: 0.3
+                    }}
+                  >
+                    🏛️ {coverage.limitsShort} insured
+                  </span>
+                </>
+              )}
             </div>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 12, flexShrink: 0 }}>

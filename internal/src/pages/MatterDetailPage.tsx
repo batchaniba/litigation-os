@@ -5,6 +5,8 @@ import { EmptyState, RouteLoading } from "../components/ui/AsyncState";
 import { ServiceTracker } from "../components/ServiceTracker";
 import { MatterSummary } from "../components/matters/MatterSummary";
 import { CrossMatterPanel } from "../components/matters/CrossMatterPanel";
+import { CoverageTower } from "../components/CoverageTower";
+import { coverageForMatter } from "../data/coverage";
 import { getMatterSummary } from "../data/matters";
 import { useMatter } from "../hooks/useMatter";
 import { ROUTES } from "../routes";
@@ -38,6 +40,7 @@ export function MatterDetailPage() {
 
   const activity = matterActivity(matter.number);
   const documentGroups = groupDocuments(matter.documents);
+  const coverage = coverageForMatter(matter.number);
 
   return (
     <article>
@@ -62,6 +65,12 @@ export function MatterDetailPage() {
       </header>
 
       <MatterSummary matter={matter} next={activity.next} recent={activity.recent} />
+
+      {coverage && (
+        <DetailSection label="Insurance coverage on file">
+          <CoverageTower record={coverage} variant="panel" linkToMatter={false} />
+        </DetailSection>
+      )}
 
       <CrossMatterPanel matter={matter.number} />
 

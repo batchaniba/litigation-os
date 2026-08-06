@@ -64,14 +64,20 @@ export const ProceedingBadge = ({ proceeding }) => {
   );
 };
 
-export const PolicyLimitsBadge = ({ limits }) => {
+export const PolicyLimitsBadge = ({ limits, coverage }) => {
   if (!limits) return null;
+  // Filled rather than outlined: policy limits are the one figure on a card a
+  // carrier has already agreed to pay up to, so they should not read as just
+  // another metadata chip.
+  const title = coverage
+    ? `Insured exposure: ${limits} (per incident / aggregate) — ${coverage.carrier} Policy No. ${coverage.policyNo}, covering ${coverage.insureds.join(" and ")}`
+    : `Known insurance policy limits: ${limits} (per incident / aggregate)`;
   return (
     <span
-      title={`Known insurance policy limits: ${limits} (per incident / aggregate)`}
-      style={{ fontSize: 10, padding: "2px 8px", borderRadius: 4, color: "#34D399", border: "1px solid #34D39940", fontWeight: 700, letterSpacing: 0.4 }}
+      title={title}
+      style={{ fontSize: 10, padding: "2px 8px", borderRadius: 4, color: "#34D399", border: "1px solid #34D39966", background: "rgba(52,211,153,0.12)", fontWeight: 700, letterSpacing: 0.4, whiteSpace: "nowrap" }}
     >
-      🏷️ {limits}
+      🏛️ {limits} insured
     </span>
   );
 };

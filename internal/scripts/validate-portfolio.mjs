@@ -79,6 +79,7 @@ const timeline = JSON.parse(
 const { matter_damages } = await import(pathToFileURL(path.join(REPO_ROOT, "internal/src/data/damages.js")).href);
 const { lawyer_fees } = await import(pathToFileURL(path.join(REPO_ROOT, "internal/src/data/lawyerFees.js")).href);
 const { outcomes } = await import(pathToFileURL(path.join(REPO_ROOT, "internal/src/data/outcomes.js")).href);
+const { insurance_coverage } = await import(pathToFileURL(path.join(REPO_ROOT, "internal/src/data/coverage.js")).href);
 
 // ---------- matter JSON records ----------
 
@@ -355,6 +356,56 @@ for (const n of seenMatterNumbers) {
   }
   if (!feeNumbers.has(n)) {
     warn(`Matter ${n}: no entry in lawyerFees.js lawyer_fees[]`);
+  }
+}
+
+// ---------- insurance coverage ----------
+// coverage.js is the source of truth for policy limits; the matter JSON carries
+// a display string for its badge. These are rendered in different places, so a
+// mismatch would silently show two different numbers for the same policy.
+
+const coverageNumbers = new Set();
+for (const record of insurance_coverage ?? []) {
+  const { matter: n, limitsShort, perIncident, aggregate, policyNo, carrier, insureds } = record;
+
+  if (coverageNumbers.has(n)) {
+    fail(`coverage.js: duplicate entry for matter ${n}`);
+  }
+  coverageNumbers.add(n);
+
+  const matterRecord = matterRecords.get(n);
+  if (!matterRecord) {
+    fail(`coverage.js: entry for matter ${n}, which has no matter JSON record`);
+    continue;
+  }
+  if (matterRecord.policy_limits !== limitsShort) {
+    fail(
+      `coverage.js matter ${n}: limitsShort "${limitsShort}" does not match ` +
+        `${matterRecord.__sourceFile} policy_limits "${matterRecord.policy_limits ?? "(unset)"}"`,
+    );
+  }
+  if (!(Number.isFinite(perIncident) && perIncident > 0)) {
+    fail(`coverage.js matter ${n}: perIncident must be a positive number`);
+  }
+  if (!(Number.isFinite(aggregate) && aggregate > 0)) {
+    fail(`coverage.js matter ${n}: aggregate must be a positive number`);
+  }
+  if (Number.isFinite(perIncident) && Number.isFinite(aggregate) && perIncident > aggregate) {
+    fail(`coverage.js matter ${n}: perIncident (${perIncident}) exceeds aggregate (${aggregate})`);
+  }
+  if (!policyNo || !carrier) {
+    fail(`coverage.js matter ${n}: carrier and policyNo are required`);
+  }
+  if (!Array.isArray(insureds) || insureds.length === 0) {
+    fail(`coverage.js matter ${n}: at least one insured must be named`);
+  }
+}
+
+// A matter carrying policy_limits with no coverage.js record renders the small
+// badge but never the tower — the leverage figure would be nearly invisible.
+for (const m of matterRecords.values()) {
+  if (m.policy_limits && !coverageNumbers.has(m.number)) {
+    fail(`Matter ${m.number}: has policy_limits but no coverage.js record — add one so it renders portfolio-wide`);
   }
 }
 

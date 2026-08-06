@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
 import { cases } from "../data/matters";
 import { damages_table } from "../data/damages";
 import { jurisdictions } from "../data/portfolioMeta";
+import { headline_coverage, formatLimit } from "../data/coverage";
 import { formatCurrency } from "../utils/formatters";
 import { isArchivedMatter, isLiveLifecycle } from "../utils/matterLifecycle";
 
@@ -85,6 +87,22 @@ export const DashboardTab = ({ upcomingEvents, setClusterFilter, setActiveTab })
             <div className="dashboard-stat-sub">{s.sub}</div>
           </div>
         ))}
+        {headline_coverage && (
+          <Link
+            to={`/matters/${headline_coverage.matter}`}
+            className="dashboard-stat-card dashboard-stat-card-coverage"
+            title={`${headline_coverage.carrier} Policy No. ${headline_coverage.policyNo} — ${headline_coverage.insureds.join(" and ")}`}
+          >
+            <div className="dashboard-stat-label">Insured Exposure</div>
+            <div className="dashboard-stat-value">
+              {formatLimit(headline_coverage.perIncident)} <span className="dashboard-stat-slash">/</span>{" "}
+              {formatLimit(headline_coverage.aggregate)}
+            </div>
+            <div className="dashboard-stat-sub">
+              {headline_coverage.insureds.join(" · ")} — Matter {headline_coverage.matter}
+            </div>
+          </Link>
+        )}
       </div>
 
       {/* Two-column: Upcoming + Clusters */}
