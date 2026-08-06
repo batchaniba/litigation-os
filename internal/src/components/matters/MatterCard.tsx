@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { GOLD, BORDER_BLUE } from "../../constants";
-import { StatusBadge, ClusterBadge, TypeBadge, ArchiveBadge, ProceedingBadge, PhaseBadge } from "../Badges";
+import { StatusBadge, ClusterBadge, TypeBadge, ArchiveBadge, ProceedingBadge, PhaseBadge, PolicyLimitsBadge } from "../Badges";
 import { ServiceTracker } from "../ServiceTracker";
 import { useMatter } from "../../hooks/useMatter";
 import { formatMatterPath } from "../../utils/formatters";
@@ -109,6 +109,7 @@ export function MatterCard({ matter: summary, isOpen, onToggle }: MatterCardProp
             <ProceedingBadge proceeding={c.proceeding} />
             <PhaseBadge phase={c.phase} />
             <StatusBadge status={c.status} lifecycle={c.lifecycle} />
+            <PolicyLimitsBadge limits={c.policy_limits} />
             {isArchivedMatter(c) && <ArchiveBadge />}
           </div>
           {c.note && (
