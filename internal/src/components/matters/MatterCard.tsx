@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { GOLD, BORDER_BLUE } from "../../constants";
 import { StatusBadge, ClusterBadge, TypeBadge, ArchiveBadge, ProceedingBadge, PhaseBadge, PolicyLimitsBadge } from "../Badges";
 import { ServiceTracker } from "../ServiceTracker";
+import { CollapsibleProse } from "../ui/CollapsibleProse";
 import { coverageForMatter } from "../../data/coverage";
 import { useMatter } from "../../hooks/useMatter";
 import { formatMatterPath } from "../../utils/formatters";
@@ -154,20 +155,20 @@ export function MatterCard({ matter: summary, isOpen, onToggle }: MatterCardProp
             <>
               <div style={{ marginTop: 18 }}>
                 <div className="detail-label">Key Facts</div>
-                <p className="detail-copy" style={{ color: "var(--muted-text)", lineHeight: 1.7 }}>{c.key_facts}</p>
+                <CollapsibleProse text={c.key_facts} label="key facts" style={{ color: "var(--muted-text)", lineHeight: 1.7 }} />
               </div>
 
               <div className="grid-2" style={{ marginTop: 18 }}>
                 <div>
                   <div className="detail-label">Procedural Status</div>
-                  <p className="detail-copy" style={{ color: "var(--muted-text)", lineHeight: 1.6 }}>{c.procedural_status}</p>
+                  <CollapsibleProse text={c.procedural_status} label="procedural status" style={{ color: "var(--muted-text)", lineHeight: 1.6 }} />
                 </div>
                 <div>
                   <div className="detail-label">Estimated Damages</div>
                   <p className="detail-copy" style={{ color: "#34D399", fontSize: 15, fontWeight: 700, margin: "0 0 12px" }}>{c.damages}</p>
                   {c.risk && <>
                     <div className="detail-label">Risk / Defense Notes</div>
-                    <p className="detail-copy" style={{ color: "#F59E0B", lineHeight: 1.6, margin: 0 }}>{c.risk}</p>
+                    <CollapsibleProse text={c.risk} label="risk notes" style={{ color: "#F59E0B", lineHeight: 1.6 }} />
                   </>}
                 </div>
               </div>
