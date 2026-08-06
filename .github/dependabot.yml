@@ -6,15 +6,15 @@ updates:
   # - rebase-strategy: auto — Dependabot rebases when a PR conflicts after
   #   pushes to main (default, made explicit so it cannot drift).
   # - Groups collapse routine minor/patch noise into a few weekly PRs.
-  # - Majors that need a deliberate migration stay ignored until unblocked
-  #   (React 19, and any package that would regress the current toolchain).
+  # - Majors stay ungrouped (one PR each) so they can be recreated cleanly
+  #   from current main after large merges.
   # - open-pull-requests-limit keeps the queue short so stale branches are
   #   less likely to pile up against active feature work.
   - package-ecosystem: npm
     directory: "/"
     schedule:
       interval: weekly
-    open-pull-requests-limit: 3
+    open-pull-requests-limit: 8
     rebase-strategy: auto
     groups:
       dev-tooling:
