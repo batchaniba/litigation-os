@@ -15,6 +15,7 @@ const CostOfCounselTab = lazy(() => import("./components/CostOfCounselTab").then
 const OutcomesTab = lazy(() => import("./components/OutcomesTab").then((m) => ({ default: m.OutcomesTab })));
 const JudicialOpinionsTab = lazy(() => import("./components/JudicialOpinionsTab").then((m) => ({ default: m.JudicialOpinionsTab })));
 const NotableQuotesTab = lazy(() => import("./components/NotableQuotesTab").then((m) => ({ default: m.NotableQuotesTab })));
+const CrossMatterTab = lazy(() => import("./components/CrossMatterTab").then((m) => ({ default: m.CrossMatterTab })));
 const MatterDetailPage = lazy(() => import("./pages/MatterDetailPage").then((m) => ({ default: m.MatterDetailPage })));
 
 function DashboardRoute() {
@@ -43,6 +44,7 @@ export default function App() {
           <Route path="calendar" element={<Navigate to={ROUTES.timeline} replace />} />
           <Route path="matters" element={<MattersRoute />} />
           <Route path="matters/:matterNumber" element={<MatterDetailPage />} />
+          <Route path="cross-matter" element={<CrossMatterTab />} />
           <Route path="timeline" element={<TimelineRoute />} />
           <Route path="damages" element={<DamagesRoute />} />
           <Route path="theories" element={<TheoriesTab />} />

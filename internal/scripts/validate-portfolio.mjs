@@ -441,6 +441,147 @@ for (const copies of byDigest.values()) {
 
 
 
+
+// ---------- cross-matter graph ----------
+
+const crossMatter = JSON.parse(
+  fs.readFileSync(path.join(REPO_ROOT, "internal/src/data/crossMatter.json"), "utf8"),
+);
+
+{
+  const declaredKinds = new Set(Object.keys(crossMatter.linkKinds ?? {}));
+  if (declaredKinds.size === 0) errors.push("crossMatter.json declares no link kinds.");
+  for (const [kind, meta] of Object.entries(crossMatter.linkKinds ?? {})) {
+    if (!meta?.label) errors.push(`crossMatter link kind ${kind} is missing a label.`);
+    if (!meta?.description) errors.push(`crossMatter link kind ${kind} is missing a description.`);
+  }
+
+  const caseNumbers = new Set(cases.map((c) => c.number));
+  const clusterIds = new Set();
+
+  for (const cluster of crossMatter.clusters ?? []) {
+    if (clusterIds.has(cluster.id)) errors.push(`crossMatter cluster id ${cluster.id} is duplicated.`);
+    clusterIds.add(cluster.id);
+    if (!cluster.label) errors.push(`crossMatter cluster ${cluster.id} is missing a label.`);
+    if (!cluster.thesis || cluster.thesis.length < 80) {
+      errors.push(`crossMatter cluster ${cluster.id} needs a substantive thesis.`);
+    }
+    if ((cluster.matters ?? []).length < 2) {
+      errors.push(`crossMatter cluster ${cluster.id} must reference at least two matters.`);
+    }
+
+    const inCluster = new Set(cluster.matters ?? []);
+    for (const number of cluster.matters ?? []) {
+      if (!caseNumbers.has(number)) {
+        errors.push(`crossMatter cluster ${cluster.id} references unknown matter ${number}.`);
+      }
+    }
+
+    const linkIds = new Set();
+    const linked = new Set();
+    const validDirections = new Set(["mutual", "from_depends_on_to", "to_cites_from"]);
+    const validSeverities = new Set(["high", "medium", "low"]);
+
+    for (const link of cluster.links ?? []) {
+      if (linkIds.has(link.id)) errors.push(`crossMatter link id ${link.id} is duplicated.`);
+      linkIds.add(link.id);
+      for (const endpoint of [link.from, link.to]) {
+        if (!inCluster.has(endpoint)) {
+          errors.push(`crossMatter link ${link.id} references matter ${endpoint} outside its cluster.`);
+        }
+      }
+      if (link.from === link.to) errors.push(`crossMatter link ${link.id} links a matter to itself.`);
+      if (!validDirections.has(link.direction)) {
+        errors.push(`crossMatter link ${link.id} has invalid direction "${link.direction}".`);
+      }
+      if (!validSeverities.has(link.severity)) {
+        errors.push(`crossMatter link ${link.id} has invalid severity "${link.severity}".`);
+      }
+      if (!(link.kinds ?? []).length) errors.push(`crossMatter link ${link.id} declares no kinds.`);
+      for (const kind of link.kinds ?? []) {
+        if (!declaredKinds.has(kind)) {
+          errors.push(`crossMatter link ${link.id} uses undeclared kind "${kind}".`);
+        }
+      }
+      if (!link.significance || link.significance.length < 60) {
+        errors.push(`crossMatter link ${link.id} needs a substantive significance note.`);
+      }
+      if (!(link.sources ?? []).length) {
+        errors.push(`crossMatter link ${link.id} cites no source filing.`);
+      }
+      linked.add(link.from);
+      linked.add(link.to);
+    }
+
+    for (const number of cluster.matters ?? []) {
+      if (!linked.has(number)) {
+        errors.push(`crossMatter cluster ${cluster.id} lists matter ${number} with no documented link.`);
+      }
+    }
+
+    const exposureIds = new Set();
+    for (const exposure of cluster.exposures ?? []) {
+      if (exposureIds.has(exposure.id)) {
+        errors.push(`crossMatter exposure id ${exposure.id} is duplicated.`);
+      }
+      exposureIds.add(exposure.id);
+      if (!exposure.remedy || exposure.remedy.length < 20) {
+        errors.push(`crossMatter exposure ${exposure.id} has no actionable remedy.`);
+      }
+      if (!exposure.detail || exposure.detail.length < 60) {
+        errors.push(`crossMatter exposure ${exposure.id} needs a substantive detail note.`);
+      }
+      if (!["open", "monitoring", "resolved"].includes(exposure.status)) {
+        errors.push(`crossMatter exposure ${exposure.id} has invalid status "${exposure.status}".`);
+      }
+      if (!validSeverities.has(exposure.severity)) {
+        errors.push(`crossMatter exposure ${exposure.id} has invalid severity "${exposure.severity}".`);
+      }
+      if (!(exposure.matters ?? []).length) {
+        errors.push(`crossMatter exposure ${exposure.id} references no matters.`);
+      }
+      for (const number of exposure.matters ?? []) {
+        if (!inCluster.has(number)) {
+          errors.push(`crossMatter exposure ${exposure.id} references matter ${number} outside its cluster.`);
+        }
+      }
+    }
+
+    for (const item of cluster.foundation ?? []) {
+      if (!item.label || !item.detail) {
+        errors.push(`crossMatter foundation item ${item.id} needs a label and detail.`);
+      }
+      if ((item.matters ?? []).length < 2) {
+        warnings.push(`crossMatter foundation item ${item.id} is shared by fewer than two matters.`);
+      }
+      for (const number of item.matters ?? []) {
+        if (!inCluster.has(number)) {
+          errors.push(`crossMatter foundation item ${item.id} references matter ${number} outside its cluster.`);
+        }
+      }
+      if (item.document_path) {
+        const full = path.join(REPO_ROOT, item.document_path.replace(/^\/+/, ""));
+        if (!fs.existsSync(full)) {
+          errors.push(`crossMatter foundation item ${item.id} cites a missing file ${item.document_path}.`);
+        }
+      }
+    }
+
+    for (const party of cluster.parties ?? []) {
+      if (!party.name || !party.role) errors.push(`crossMatter cluster ${cluster.id} has a party missing name or role.`);
+      const touches = [...(party.defendantIn ?? []), ...(party.factualIn ?? [])];
+      if (!touches.length) {
+        errors.push(`crossMatter party ${party.name} touches no matter in cluster ${cluster.id}.`);
+      }
+      for (const number of touches) {
+        if (!inCluster.has(number)) {
+          errors.push(`crossMatter party ${party.name} references matter ${number} outside its cluster.`);
+        }
+      }
+    }
+  }
+}
+
 // ---------- report ----------
 
 console.log(
@@ -449,7 +590,9 @@ console.log(
     `${(matter_damages ?? []).length} damages rows, ` +
     `${(lawyer_fees ?? []).length} lawyer-fee rows, ` +
     `${(outcomes.judicial_opinions ?? []).length} judicial opinions, ` +
-    `${onDiskDocs.length} files under documents/.`,
+    `${onDiskDocs.length} files under documents/, ` +
+    `${(crossMatter.clusters ?? []).length} cross-matter cluster(s) with ` +
+    `${(crossMatter.clusters ?? []).reduce((sum, c) => sum + (c.links ?? []).length, 0)} links.`,
 );
 
 if (warnings.length) {

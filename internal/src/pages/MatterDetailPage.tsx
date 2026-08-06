@@ -4,6 +4,7 @@ import { StatusBadge, ClusterBadge, TypeBadge, ArchiveBadge, ProceedingBadge, Ph
 import { EmptyState, RouteLoading } from "../components/ui/AsyncState";
 import { ServiceTracker } from "../components/ServiceTracker";
 import { MatterSummary } from "../components/matters/MatterSummary";
+import { CrossMatterPanel } from "../components/matters/CrossMatterPanel";
 import { getMatterSummary } from "../data/matters";
 import { useMatter } from "../hooks/useMatter";
 import { ROUTES } from "../routes";
@@ -42,7 +43,7 @@ export function MatterDetailPage() {
     <article>
       <Link className="back-link" to={ROUTES.matters}>← All matters</Link>
       <div className="matter-actions print-hidden">
-        <a href="#matter-details">Details</a><a href="#matter-documents">Documents</a>
+        <a href="#matter-details">Details</a><a href="#matter-cross">Cross-matter</a><a href="#matter-documents">Documents</a>
         <button onClick={() => window.print()}>Print summary</button>
         <button onClick={() => downloadMatterSummary(matter, matterMarkdown(matter, activity.next, activity.recent))}>Export Markdown</button>
       </div>
@@ -61,6 +62,8 @@ export function MatterDetailPage() {
       </header>
 
       <MatterSummary matter={matter} next={activity.next} recent={activity.recent} />
+
+      <CrossMatterPanel matter={matter.number} />
 
       <div id="matter-details" className="detail-grid">
         <DetailSection label="Defendants"><p className="detail-copy detail-copy-secondary">{matter.defendants}</p></DetailSection>

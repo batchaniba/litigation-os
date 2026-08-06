@@ -112,3 +112,75 @@ export interface TimelineEvent {
   matters: string;
   upcoming?: boolean;
 }
+
+export type CrossMatterDirection = "mutual" | "from_depends_on_to" | "to_cites_from";
+
+export type CrossMatterSeverity = "high" | "medium" | "low";
+
+export interface CrossMatterLink {
+  id: string;
+  from: number;
+  to: number;
+  direction: CrossMatterDirection;
+  severity: CrossMatterSeverity;
+  kinds: string[];
+  significance: string;
+  sources: string[];
+}
+
+export interface CrossMatterExposure {
+  id: string;
+  label: string;
+  severity: CrossMatterSeverity;
+  status: "open" | "monitoring" | "resolved";
+  matters: number[];
+  detail: string;
+  remedy: string;
+}
+
+export interface CrossMatterFoundation {
+  id: string;
+  label: string;
+  matters: number[];
+  detail: string;
+  document_path?: string;
+}
+
+export interface CrossMatterParty {
+  name: string;
+  role: string;
+  defendantIn: number[];
+  factualIn: number[];
+}
+
+export interface CrossMatterKind {
+  label: string;
+  description: string;
+}
+
+export interface CrossMatterCluster {
+  id: string;
+  label: string;
+  matters: number[];
+  thesis: string;
+  links: CrossMatterLink[];
+  exposures: CrossMatterExposure[];
+  foundation: CrossMatterFoundation[];
+  parties: CrossMatterParty[];
+}
+
+export interface CrossMatterGraph {
+  linkKinds: Record<string, CrossMatterKind>;
+  clusters: CrossMatterCluster[];
+}
+
+/** A peer matter as seen from the perspective of one matter. */
+export interface RelatedMatter {
+  number: number;
+  link: CrossMatterLink;
+  kinds: string[];
+  relationship: string;
+  significance: string;
+  severity: CrossMatterSeverity;
+  sources: string[];
+}
