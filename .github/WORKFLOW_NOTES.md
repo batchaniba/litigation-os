@@ -75,13 +75,24 @@ Runs on every push to any branch:
 
 ```
 1. Checkout
-2. Setup Node 20
+2. Setup Node 22
 3. npm ci (install dependencies)
 4. npm run typecheck (TypeScript check)
 5. npm run validate (CRITICAL: data integrity gate)
 6. npm run test (Vitest suite)
 7. npm run build (vite build)
 ```
+
+### Dependabot (`.github/dependabot.yml`)
+
+Configured for parallel human + bot work:
+
+- **`rebase-strategy: auto`** on npm, github-actions, and pip — when a Dependabot PR conflicts with `main`, Dependabot rebases it instead of leaving it `DIRTY`.
+- **Grouped minor/patch** updates (dev tooling, build tooling, React ecosystem, Actions, pip) so routine bumps arrive as a few weekly PRs rather than a dozen stale branches.
+- **React 19 majors ignored** until an intentional migration; remove the `ignore` entries in `dependabot.yml` when ready.
+- **`open-pull-requests-limit: 3`** per ecosystem keeps the queue short while feature work is landing.
+
+If a Dependabot PR still looks stuck after a large `main` merge, comment `@dependabot recreate` on that PR (or close it) so the next run opens a fresh branch from current `main`. `@dependabot rebase` is enough when the only issue is a content conflict.
 
 **Why this order?**
 - Typecheck first (fast, catches syntax errors early)
