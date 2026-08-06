@@ -1,9 +1,18 @@
 import { useState } from "react";
 import { damages_table } from "../data/damages";
 import { lawyer_fees, lawyer_fees_summary } from "../data/lawyerFees";
+import { getMatterSummary } from "../data/matters";
 import { GOLD } from "../constants";
 import { useTheme } from "../ThemeContext";
 import { formatCurrency } from "../utils/formatters";
+import { effectiveStatusLabel } from "../utils/statusLabel";
+
+// lawyer_fees[].status is a hand-maintained copy that drifts from the matter
+// record. Prefer the derived label, which is capped and self-updates.
+const statusFor = (m) => {
+  const summary = getMatterSummary(m.number);
+  return summary ? effectiveStatusLabel(summary) : m.status;
+};
 
 const fmt = (n) => formatCurrency(Math.round(n));
 const VIEWS = ["low", "mid", "high"];
@@ -81,7 +90,7 @@ function FeeMatterCard({ m, view, expanded, onToggle, theme }) {
       {expanded && (
         <div style={{ borderTop: `1px solid ${theme.cardBorder}`, padding: "16px 20px 20px" }}>
           <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: GOLD, marginBottom: 10, letterSpacing: 0.5 }}>{m.type}</div>
-          <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: theme.subtleText, marginBottom: 12 }}>{m.status}</div>
+          <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: theme.subtleText, marginBottom: 12 }}>{statusFor(m)}</div>
           <div style={{ background: theme.deepBg, borderRadius: 6, padding: "10px 12px" }}>
             <div style={{
               fontFamily: "'DM Sans', sans-serif", fontSize: 9, fontWeight: 700,

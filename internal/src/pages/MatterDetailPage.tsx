@@ -4,6 +4,7 @@ import { StatusBadge, ClusterBadge, TypeBadge, ArchiveBadge, ProceedingBadge, Ph
 import { EmptyState, RouteLoading } from "../components/ui/AsyncState";
 import { ServiceTracker } from "../components/ServiceTracker";
 import { MatterSummary } from "../components/matters/MatterSummary";
+import { CollapsibleProse } from "../components/ui/CollapsibleProse";
 import { CrossMatterPanel } from "../components/matters/CrossMatterPanel";
 import { CoverageTower } from "../components/CoverageTower";
 import { coverageForMatter } from "../data/coverage";
@@ -80,10 +81,10 @@ export function MatterDetailPage() {
         <DetailSection label="Court assignment"><p className="detail-copy detail-copy-secondary">{matter.judge}<br />Filed: {matter.filed}</p></DetailSection>
       </div>
       <DetailSection label="Claims"><p className="detail-copy detail-copy-secondary">{matter.claims}</p></DetailSection>
-      <DetailSection label="Key facts"><p className="detail-copy detail-copy-muted">{matter.key_facts}</p></DetailSection>
+      <DetailSection label="Key facts"><CollapsibleProse text={matter.key_facts} label="key facts" className="detail-copy-muted" lines={6} /></DetailSection>
       <div className="detail-grid">
-        <DetailSection label="Procedural status"><p className="detail-copy detail-copy-muted">{matter.procedural_status}</p></DetailSection>
-        <DetailSection label="Estimated damages and risk"><p className="detail-copy matter-detail-damages">{matter.damages}</p><p className="detail-copy matter-detail-risk">{matter.risk}</p></DetailSection>
+        <DetailSection label="Procedural status"><CollapsibleProse text={matter.procedural_status} label="procedural status" className="detail-copy-muted" lines={6} /></DetailSection>
+        <DetailSection label="Estimated damages and risk"><p className="detail-copy matter-detail-damages">{matter.damages}</p><CollapsibleProse text={matter.risk} label="risk notes" className="matter-detail-risk" lines={6} /></DetailSection>
       </div>
       <DetailSection label="Causes of action">
         <div className="matter-detail-pills">{matter.causes.map((cause) => <span key={cause} className="matter-detail-pill cause">{cause}</span>)}</div>

@@ -1,11 +1,19 @@
 import { useState } from "react";
-import { cases } from "../data/matters";
+import { cases, getMatterSummary } from "../data/matters";
 import { damages_table, matter_damages } from "../data/damages";
 import { coverageForMatter } from "../data/coverage";
 import { GOLD } from "../constants";
 import { useTheme } from "../ThemeContext";
 import { formatCurrency } from "../utils/formatters";
 import { isArchivedMatter } from "../utils/matterLifecycle";
+import { effectiveStatusLabel } from "../utils/statusLabel";
+
+// matter_damages[].status is a hand-maintained copy that drifts from the matter
+// record. Prefer the derived label, which is capped and self-updates.
+const statusFor = (m) => {
+  const summary = getMatterSummary(m.number);
+  return summary ? effectiveStatusLabel(summary) : m.status;
+};
 
 const fmt = (n) => formatCurrency(n);
 const VIEWS = ["conservative", "moderate", "aggressive"];
@@ -94,7 +102,7 @@ function MatterCard({ m, view, expanded, onToggle, theme }) {
               <span style={{
                 fontFamily: "'DM Sans', sans-serif", fontSize: 10,
                 color: theme.subtleText
-              }}>{m.status}</span>
+              }}>{statusFor(m)}</span>
               {coverage && (
                 <>
                   <span style={{ color: theme.subtleText, fontSize: 10 }}>·</span>

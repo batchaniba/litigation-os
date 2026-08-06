@@ -27,6 +27,7 @@ import {
   effectiveStatusLabel,
   isRedundantStatusLabelOverride,
 } from "./status-label.mjs";
+import { PROSE_HINTS, proseBudgetIssues } from "./prose-budget.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(__dirname, "..", "..");
@@ -142,6 +143,19 @@ for (const m of cases) {
       fail(`${tag}: missing required field "${field}"`);
     } else if (typeof m[field] !== type) {
       fail(`${tag}: field "${field}" should be ${type}, got ${typeof m[field]}`);
+    }
+  }
+
+  // Free-prose length budgets. Over-target is advisory (trimming legal prose is
+  // an editorial call); over-ceiling is a hard regression and fails below.
+  for (const issue of proseBudgetIssues(m)) {
+    if (issue.level === "over-ceiling") {
+      fail(
+        `${tag}: ${issue.field} is ${issue.words} words, ceiling ${issue.ceiling} — prose may not get ` +
+          `longer than the recorded worst case; ${PROSE_HINTS[issue.field]}`,
+      );
+    } else {
+      warn(`${tag}: ${issue.field} is ${issue.words} words, target ${issue.target} — ${PROSE_HINTS[issue.field]}`);
     }
   }
 
