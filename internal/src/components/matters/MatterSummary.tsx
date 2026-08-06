@@ -1,28 +1,11 @@
 import type { Matter, TimelineEvent } from "../../types/portfolio";
 import { effectiveStatusLabel } from "../../utils/statusLabel";
 
-function SummaryItem({
-  label,
-  value,
-  accent,
-  empty,
-}: {
-  label: string;
-  value: string;
-  accent?: boolean;
-  empty?: boolean;
-}) {
-  const classes = ["matter-summary-value"];
-  if (accent) classes.push("accent");
-  if (empty) classes.push("is-empty");
+function SummaryItem({ label, value, accent }: { label: string; value: string; accent?: boolean }) {
   return (
     <div className="matter-summary-item">
       <div className="detail-label">{label}</div>
-      {/* title carries the untruncated text — cells are line-clamped so one long
-          value can't blow out the height of the whole strip. */}
-      <div className={classes.join(" ")} title={empty ? undefined : value}>
-        {value}
-      </div>
+      <div className={accent ? "matter-summary-value accent" : "matter-summary-value"}>{value}</div>
     </div>
   );
 }
@@ -32,22 +15,9 @@ export function MatterSummary({ matter, next, recent }: { matter: Matter; next?:
   return (
     <section className="matter-summary" aria-label="Matter at a glance">
       <SummaryItem label="Status" value={statusLabel} accent />
-      <SummaryItem
-        label="Next action"
-        value={next?.event ?? "None scheduled"}
-        empty={!next}
-      />
-      <SummaryItem
-        label="Deadline"
-        value={next?.date ?? "—"}
-        accent={Boolean(next)}
-        empty={!next}
-      />
-      <SummaryItem
-        label="Recent development"
-        value={recent ? `${recent.date} — ${recent.event}` : "None recorded"}
-        empty={!recent}
-      />
+      <SummaryItem label="Next action" value={next?.event ?? "No upcoming action recorded"} />
+      <SummaryItem label="Deadline" value={next?.date ?? "None recorded"} accent={Boolean(next)} />
+      <SummaryItem label="Recent development" value={recent ? `${recent.date} — ${recent.event}` : "No recent development recorded"} />
     </section>
   );
 }
