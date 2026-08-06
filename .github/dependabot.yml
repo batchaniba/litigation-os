@@ -1,13 +1,21 @@
 version: 2
 updates:
-  # App and tooling dependencies. Grouped so routine patch bumps arrive as one
-  # reviewable PR a week rather than a dozen; majors stay separate because they
-  # are the ones that actually need reading.
+  # App and tooling dependencies.
+  #
+  # Conflict hygiene while humans work in parallel on main:
+  # - rebase-strategy: auto — Dependabot rebases when a PR conflicts after
+  #   pushes to main (default, made explicit so it cannot drift).
+  # - Groups collapse routine minor/patch noise into a few weekly PRs.
+  # - Majors that need a deliberate migration stay ignored until unblocked
+  #   (React 19, and any package that would regress the current toolchain).
+  # - open-pull-requests-limit keeps the queue short so stale branches are
+  #   less likely to pile up against active feature work.
   - package-ecosystem: npm
     directory: "/"
     schedule:
       interval: weekly
-    open-pull-requests-limit: 5
+    open-pull-requests-limit: 3
+    rebase-strategy: auto
     groups:
       dev-tooling:
         patterns:
@@ -17,6 +25,8 @@ updates:
           - "vitest"
           - "@vitest/*"
           - "@testing-library/*"
+          - "jsdom"
+          - "globals"
         update-types:
           - minor
           - patch
@@ -28,6 +38,27 @@ updates:
         update-types:
           - minor
           - patch
+      react-ecosystem:
+        patterns:
+          - "react"
+          - "react-dom"
+          - "react-router*"
+          - "@types/react"
+          - "@types/react-dom"
+        update-types:
+          - minor
+          - patch
+    ignore:
+      # React 19 is a product migration (types, testing-library peers, router),
+      # not a drive-by Dependabot bump. Remove these ignores when ready.
+      - dependency-name: "react"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "react-dom"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "@types/react"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "@types/react-dom"
+        update-types: ["version-update:semver-major"]
 
   # Keeps actions/checkout, setup-node, setup-python, and the Pages actions
   # current — these are the workflow's only unpinned third-party code.
@@ -35,9 +66,26 @@ updates:
     directory: "/"
     schedule:
       interval: weekly
+    open-pull-requests-limit: 3
+    rebase-strategy: auto
+    groups:
+      github-actions:
+        patterns:
+          - "*"
+        update-types:
+          - minor
+          - patch
 
   - package-ecosystem: pip
     directory: "/"
     schedule:
       interval: monthly
     open-pull-requests-limit: 3
+    rebase-strategy: auto
+    groups:
+      python-deps:
+        patterns:
+          - "*"
+        update-types:
+          - minor
+          - patch

@@ -15,7 +15,8 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v7
         with:
-          node-version: 20
+          # Match local/dev and jsdom 30+ engines (^22.22 || ^24 || >=26).
+          node-version: 22
           cache: npm
 
       - name: Install dependencies
