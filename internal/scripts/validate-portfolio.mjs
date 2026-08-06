@@ -15,12 +15,18 @@ import crypto from "node:crypto";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { loadMatters, MATTERS_DIR } from "./load-matters.mjs";
-import { MATTER_LIFECYCLES, archivedFromLifecycle } from "./matter-lifecycle.mjs";
+import { MATTER_LIFECYCLES, archivedFromLifecycle, isTerminalLifecycle } from "./matter-lifecycle.mjs";
 import {
   MATTER_PHASES,
   MATTER_PROCEEDINGS,
   isPhaseAllowed,
 } from "./matter-proceeding.mjs";
+import {
+  STATUS_LABEL_MAX,
+  deriveStatusLabel,
+  effectiveStatusLabel,
+  isRedundantStatusLabelOverride,
+} from "./status-label.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(__dirname, "..", "..");
@@ -90,7 +96,6 @@ const REQUIRED_MATTER_FIELDS = [
   ["court", "string"],
   ["claims", "string"],
   ["status", "string"],
-  ["status_label", "string"],
   ["lifecycle", "string"],
   ["proceeding", "string"],
   ["phase", "string"],
@@ -104,9 +109,6 @@ const REQUIRED_MATTER_FIELDS = [
   ["damages", "string"],
   ["risk", "string"],
 ];
-/** Max length for status_label — the widest fixed slot it renders into. */
-const STATUS_LABEL_MAX = 60;
-
 const LIFECYCLE_SET = new Set(MATTER_LIFECYCLES);
 const PROCEEDING_SET = new Set(MATTER_PROCEEDINGS);
 const PHASE_SET = new Set(MATTER_PHASES);
@@ -143,21 +145,58 @@ for (const m of cases) {
     }
   }
 
-  // status_label feeds badges, the at-a-glance strip, search results and the
-  // README table — all fixed-width slots. The cap is what stops it drifting
-  // back into a narrative the way `status` did.
-  if (typeof m.status_label === "string") {
-    const label = m.status_label.trim();
-    if (!label) {
-      fail(`${tag}: status_label must not be empty`);
-    } else if (label.length > STATUS_LABEL_MAX) {
-      fail(`${tag}: status_label is ${label.length} chars, max ${STATUS_LABEL_MAX} — put the detail in "status"`);
+  // status_label is an optional hand override. When omitted, badges/strip/README
+  // derive a label from phase + the next posture-ranked timeline event.
+  if ("status_label" in m) {
+    if (typeof m.status_label !== "string") {
+      fail(`${tag}: status_label must be a string when present`);
+    } else {
+      const label = m.status_label.trim();
+      if (!label) {
+        fail(`${tag}: status_label must not be empty when present — omit the field to use derivation`);
+      } else if (label.length > STATUS_LABEL_MAX) {
+        fail(`${tag}: status_label is ${label.length} chars, max ${STATUS_LABEL_MAX} — put the detail in "status"`);
+      }
+      if (/\n/.test(m.status_label)) {
+        fail(`${tag}: status_label must be a single line`);
+      }
+      if (typeof m.status === "string" && m.status.trim().length < label.length) {
+        warn(`${tag}: status narrative is shorter than status_label — one of the two is probably stale`);
+      }
     }
-    if (/\n/.test(m.status_label)) {
-      fail(`${tag}: status_label must be a single line`);
+  }
+
+  // Effective label (override or derived) must always fit the fixed-width slots.
+  {
+    const matterEvents = timeline.filter((event) =>
+      String(event.matters ?? "")
+        .split(",")
+        .map((value) => Number(value.trim()))
+        .includes(m.number),
+    );
+    const effective = effectiveStatusLabel(m, matterEvents);
+    if (!effective || effective.length > STATUS_LABEL_MAX) {
+      fail(`${tag}: effective status label is ${effective?.length ?? 0} chars, max ${STATUS_LABEL_MAX}`);
     }
-    if (typeof m.status === "string" && m.status.trim().length < label.length) {
-      warn(`${tag}: status narrative is shorter than status_label — one of the two is probably stale`);
+    if (isRedundantStatusLabelOverride(m, matterEvents)) {
+      warn(
+        `${tag}: status_label override restates the derived label ("${effective}") — omit status_label to let it self-update`,
+      );
+    }
+    const needsDispositionOverride =
+      isTerminalLifecycle(m.lifecycle) || m.lifecycle === "settled";
+    if (needsDispositionOverride && !m.status_label?.trim()) {
+      warn(
+        `${tag}: ${m.lifecycle} matter has no status_label override — derived label is only "${deriveStatusLabel(m, matterEvents)}"; add an override for disposition nuance`,
+      );
+    }
+    if (needsDispositionOverride) {
+      const leftoverUpcoming = matterEvents.filter((event) => event.upcoming);
+      if (leftoverUpcoming.length) {
+        warn(
+          `${tag}: ${m.lifecycle} matter still has ${leftoverUpcoming.length} upcoming timeline flag(s) — clear upcoming on stale events so derivation/readers aren't misled`,
+        );
+      }
     }
   }
 

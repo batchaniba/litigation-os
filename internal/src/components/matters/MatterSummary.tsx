@@ -1,4 +1,5 @@
 import type { Matter, TimelineEvent } from "../../types/portfolio";
+import { effectiveStatusLabel } from "../../utils/statusLabel";
 
 function SummaryItem({
   label,
@@ -27,9 +28,10 @@ function SummaryItem({
 }
 
 export function MatterSummary({ matter, next, recent }: { matter: Matter; next?: TimelineEvent; recent?: TimelineEvent }) {
+  const statusLabel = effectiveStatusLabel(matter, { next, recent });
   return (
     <section className="matter-summary" aria-label="Matter at a glance">
-      <SummaryItem label="Status" value={matter.status_label} accent />
+      <SummaryItem label="Status" value={statusLabel} accent />
       <SummaryItem
         label="Next action"
         value={next?.event ?? "None scheduled"}

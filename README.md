@@ -158,17 +158,17 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | 1 | Newanforbi v. CHP et al. | 2:25-cv-01460-DC-CSK | USDC E.D. Cal. | Federal | F&R pending — objections filed, District Judge review |
 | 2 | Newanforbi v. Meza-Gonzalez et al. | 26CV168913 | Alameda Sup. Ct. | State | Stayed — U-Visa motion heard Jun. 18, 2026, no ruling |
 | 7 | Newanforbi v. Candelaria | 2:26-cv-00983-DC-CSK | USDC E.D. Cal. | Federal | F&R pending — objections filed, District Judge review |
-| 12 | Brendan Ngwa Nforbi v. Diamond Truck Sales, Inc. | STK-CV-UF-2026-0001094 | San Joaquin Sup. Ct. | State | Default prove-up — CMC Aug. 12, 2026, Dept. 11B |
+| 12 | Brendan Ngwa Nforbi v. Diamond Truck Sales, Inc. | STK-CV-UF-2026-0001094 | San Joaquin Sup. Ct. | State | Default prove-up — Aug. 12, 2026 |
 | 19 | Newanforbi v. Macomber | C2604791 | Santa Clara Sup. Ct. | State | Under submission — ruling due Aug. 1, 2026 |
-| 20 | Newanforbi v. California Highway Patrol, et al. | 26CV191136 | Alameda Sup. Ct. | State | Demurrer hearing Aug. 28, 2026, Dept. 25 |
-| 24 | Newanforbi v. Serrato | 4:26-cv-05953-ASK | USDC N.D. Cal. | Federal | CMC Sep. 15, 2026 — Mag. Judge Krishnan |
+| 20 | Newanforbi v. California Highway Patrol, et al. | 26CV191136 | Alameda Sup. Ct. | State | Served Jun. 30, 2026 — Demurrer hearing Aug. 28, 2026 |
+| 24 | Newanforbi v. Serrato | 4:26-cv-05953-ASK | USDC N.D. Cal. | Federal | Served Jul. 1, 2026 — CMC Sep. 15, 2026 |
 | 25 | Newanforbi v. Federal Express Corporation | STK-CV-UWT-2026-0009118 | San Joaquin Sup. Ct. | State | Served Jul. 24, 2026 — CMC Jan. 14, 2027 |
-| 26 | Newanforbi v. United Parcel Service, Inc. | STK-CV-UWT-2026-0009113 | San Joaquin Sup. Ct. | State | Served Jul. 22, 2026 — CMC Jan. 13, 2027 |
-| 27 | Newanforbi v. Randstad, et al. | 26CV199902 | Alameda Sup. Ct. | State | Served Jul. 30, 2026 — response due Aug. 31, 2026 |
-| 28 | Newanforbi v. Shannon Smith, LCSW, CEO, et al. | 3:26-cv-07504 | USDC N.D. Cal. | Federal | Filed Jul. 20, 2026 — initial CMC Oct. 22, 2026 |
+| 26 | Newanforbi v. United Parcel Service, Inc. | STK-CV-UWT-2026-0009113 | San Joaquin Sup. Ct. | State | CMC — Jan. 13, 2027 |
+| 27 | Newanforbi v. Randstad, et al. | 26CV199902 | Alameda Sup. Ct. | State | Served Jul. 30, 2026 — Response due Aug. 31, 2026 |
+| 28 | Newanforbi v. Shannon Smith, LCSW, CEO, et al. | 3:26-cv-07504 | USDC N.D. Cal. | Federal | Filed Jul. 20, 2026 — CMC Oct. 22, 2026 |
 | 29 | Newanforbi v. Amazon.com Services, LLC | 26CV201554 | Alameda Sup. Ct. (Hayward Hall of Justice, Dept. 520) | State | Filed Jul. 28, 2026 — service in progress |
 | 30 | Newanforbi v. Moua, et al. | TBD | USDC N.D. Cal. | Federal | Pre-filing — anticipated filing Sep. 16, 2026 |
-| 31 | Newanforbi v. First Advantage LLC | TBD | San Joaquin Sup. Ct. (anticipated) | State | Pre-filing — not yet drafted or served |
+| 31 | Newanforbi v. First Advantage LLC | TBD | San Joaquin Sup. Ct. (anticipated) | State | Pre-filing |
 <!-- PORTFOLIO:ACTIVE_MATTERS:END -->
 
 ### Settled
