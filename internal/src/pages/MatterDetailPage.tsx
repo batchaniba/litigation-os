@@ -16,20 +16,22 @@ import { groupDocuments } from "../utils/documentGroups";
 import { matterActivity } from "../utils/matterTimeline";
 import { downloadMatterSummary, matterMarkdown } from "../utils/exportMatter";
 import { isArchivedMatter } from "../utils/matterLifecycle";
+import { effectiveStatusLabel } from "../utils/statusLabel";
 
 function DetailSection({ label, children }: { label: string; children: ReactNode }) {
   return <section className="detail-section"><div className="detail-label">{label}</div>{children}</section>;
 }
 
-/** The strip shows `status_label`; the narrative only earns its own section when
- *  it actually says more than the label already did. For matters that resolved
- *  in one line ("Abandoned — voluntarily dismissed") the two are the same fact,
- *  and printing both just reads as a stutter. */
+/** The strip shows the effective status label; the narrative only earns its own
+ *  section when it actually says more than the label already did. For matters
+ *  that resolved in one line ("Abandoned — voluntarily dismissed") the two are
+ *  the same fact, and printing both just reads as a stutter. */
 const STATUS_NARRATIVE_MARGIN = 40;
 
 function hasStatusNarrative(matter: Matter): boolean {
   const narrative = matter.status?.trim() ?? "";
-  return narrative.length > matter.status_label.length + STATUS_NARRATIVE_MARGIN;
+  const label = effectiveStatusLabel(matter);
+  return narrative.length > label.length + STATUS_NARRATIVE_MARGIN;
 }
 
 export function MatterDetailPage() {
@@ -71,7 +73,7 @@ export function MatterDetailPage() {
           <TypeBadge type={matter.type} />
           <ProceedingBadge proceeding={matter.proceeding} />
           <PhaseBadge phase={matter.phase} />
-          <StatusBadge status={matter.status_label} lifecycle={matter.lifecycle} />
+          <StatusBadge status={effectiveStatusLabel(matter, activity)} lifecycle={matter.lifecycle} />
           {isArchivedMatter(matter) && <ArchiveBadge />}
         </div>
       </header>

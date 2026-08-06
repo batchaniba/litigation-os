@@ -1,8 +1,6 @@
 import { GOLD } from "../constants";
 import { phaseLabel, proceedingLabel } from "../utils/matterProceeding";
-
-/** Mirrors STATUS_LABEL_MAX in internal/scripts/validate-portfolio.mjs. */
-const STATUS_LABEL_MAX = 60;
+import { STATUS_LABEL_MAX } from "../utils/statusLabel";
 
 const LIFECYCLE_STYLE = {
   active: { color: "#34D399", bg: "rgba(52,211,153,0.12)" },

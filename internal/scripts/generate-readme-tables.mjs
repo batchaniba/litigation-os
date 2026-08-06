@@ -21,6 +21,7 @@ import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { loadMatters } from "./load-matters.mjs";
 import { lifecycleLabel, readmeBucket } from "./matter-lifecycle.mjs";
+import { effectiveStatusLabel } from "./status-label.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(__dirname, "..", "..");
@@ -83,10 +84,14 @@ function truncate(text, max) {
   return `${(word > 40 ? cut.slice(0, word) : cut).trim()}…`;
 }
 
-// A table cell wants the short posture, which is exactly what status_label is —
-// so no truncation here. The narrative `status` stays out of the README tables.
+/** Populated after timeline.json loads — maps matter number → events. */
+const eventsByMatter = new Map();
+
+// A table cell wants the short posture label (hand override or derived from
+// phase + next posture event). The narrative `status` stays out of README tables.
 function shortStatus(matter, { closed = false } = {}) {
-  const label = (matter.status_label || "").replace(/\s+/g, " ").trim();
+  const events = eventsByMatter.get(matter.number) ?? [];
+  const label = effectiveStatusLabel(matter, events).replace(/\s+/g, " ").trim();
   if (closed && matter.lifecycle && matter.lifecycle !== "closed") {
     const lifecycle = lifecycleLabel(matter.lifecycle).toUpperCase();
     if (!label.toUpperCase().startsWith(lifecycle)) {
@@ -132,6 +137,14 @@ const cases = loadMatters();
 const timeline = JSON.parse(
   fs.readFileSync(path.join(REPO_ROOT, "internal/src/data/timeline.json"), "utf8"),
 );
+for (const event of timeline) {
+  for (const raw of String(event.matters ?? "").split(",")) {
+    const matter = Number(raw.trim());
+    if (!matter) continue;
+    if (!eventsByMatter.has(matter)) eventsByMatter.set(matter, []);
+    eventsByMatter.get(matter).push(event);
+  }
+}
 const { damages_table } = await import(pathToFileURL(path.join(REPO_ROOT, "internal/src/data/damages.js")).href);
 
 const active = cases.filter((m) => bucket(m) === "active");

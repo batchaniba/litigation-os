@@ -71,10 +71,11 @@ export interface MatterSummary {
   /** Full procedural narrative. Grows over the life of the matter — render it
    *  in a prose section, never in a badge or a fixed-width cell. */
   status: string;
-  /** Short current posture (<= 60 chars) for badges, the summary strip, search
-   *  results, and the README table. Kept in sync with `status` by hand; the
-   *  length cap is enforced in validate-portfolio. */
-  status_label: string;
+  /** Optional hand override for the short posture label (<= 60 chars). When
+   *  omitted, the UI derives a label from `phase` + the next posture-ranked
+   *  timeline event via `effectiveStatusLabel`. Keep an override for terminal
+   *  disposition nuance and other cases derivation can't see. */
+  status_label?: string;
   lifecycle: MatterLifecycle;
   proceeding: MatterProceeding;
   phase: MatterPhase;

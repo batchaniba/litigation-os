@@ -6,6 +6,7 @@ import { coverageForMatter } from "../../data/coverage";
 import { useMatter } from "../../hooks/useMatter";
 import { formatMatterPath } from "../../utils/formatters";
 import { isArchivedMatter } from "../../utils/matterLifecycle";
+import { effectiveStatusLabel } from "../../utils/statusLabel";
 import type { MatterSummary, Matter } from "../../types/portfolio";
 
 interface MatterCardProps {
@@ -109,7 +110,7 @@ export function MatterCard({ matter: summary, isOpen, onToggle }: MatterCardProp
             <TypeBadge type={c.type} />
             <ProceedingBadge proceeding={c.proceeding} />
             <PhaseBadge phase={c.phase} />
-            <StatusBadge status={c.status_label} lifecycle={c.lifecycle} />
+            <StatusBadge status={effectiveStatusLabel(c)} lifecycle={c.lifecycle} />
             <PolicyLimitsBadge limits={c.policy_limits} coverage={coverageForMatter(c.number)} />
             {isArchivedMatter(c) && <ArchiveBadge />}
           </div>
