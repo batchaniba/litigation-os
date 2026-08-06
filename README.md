@@ -354,6 +354,27 @@ Plaintiff is representing himself pro se across all 31 matters. The figures belo
 - **Timeline:** `internal/src/data/timeline.json` (full log) + generated `upcoming.json` for the shell deadline clock
 - **Documents:** `internal/public/documents/` (shared exhibits under `_shared/`, blank Judicial Council templates under `_form-library/`)
 
+### Prose length budgets
+
+The free-prose matter fields carry word budgets, defined in `internal/src/utils/proseBudget.ts` and mirrored for scripts in `internal/scripts/prose-budget.mjs`:
+
+| Field | Target | Enforcement |
+| --- | --- | --- |
+| `key_facts` | 350 words | warning over target, test failure over ceiling |
+| `procedural_status` | 400 words | warning over target, test failure over ceiling |
+| `risk` | 150 words | warning over target, test failure over ceiling |
+| `status` | 60 words | warning over target, test failure over ceiling |
+| `status_label` | 60 **characters** | validator error (`STATUS_LABEL_MAX`) |
+
+Targets are advisory — `npm run validate` warns but still exits zero, because trimming legal prose is an editorial decision. Ceilings are a ratchet pinned just above the current worst record and enforced by `proseBudget.test.js`, so prose can only get shorter. **When you trim a matter, lower its field's ceiling to match the new worst case.**
+
+Two rules keep prose inside budget:
+
+1. **Dated docket entries belong in `timeline.json`, not in `procedural_status`.** The timeline already carries them and feeds the derived status labels, badges, and deadline clock. Prose that restates the timeline is the largest single source of length.
+2. **Don't duplicate `status` across modules.** `matter_damages[]` and `lawyer_fees[]` each used to carry their own hand-maintained `status` copy; both now render `effectiveStatusLabel()` from the matter record instead, so there is one source of truth.
+
+On screen, prose over ~320 characters renders through `CollapsibleProse`, which clamps to a few lines with a "Show full …" toggle. Nothing is truncated in the DOM — print, find-in-page, and the Markdown export still see the whole record.
+
 ## Local Development
 
 ```bash

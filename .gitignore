@@ -1,5 +1,6 @@
 node_modules
 dist
+coverage
 .DS_Store
 Next_Chapter_Application_Essay.pdf
 Next_Chapter_Resume.pdf
