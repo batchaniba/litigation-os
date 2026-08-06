@@ -8,9 +8,6 @@ export default defineConfig({
   plugins: [react({ jsxRuntime: 'automatic' })],
   publicDir: 'internal/public',
   base: process.env.GITHUB_PAGES === 'true' ? '/interactive-litigation-portfolio/' : '/',
-  esbuild: {
-    jsx: 'automatic',
-  },
   test: {
     environment: 'jsdom',
     setupFiles: ['./internal/src/test/setup.js'],
