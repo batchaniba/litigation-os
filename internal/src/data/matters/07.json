@@ -5,6 +5,7 @@
   "court": "USDC E.D. Cal.",
   "claims": "42 USC 1983: Procedural Due Process — Structural Bias, Denial of Neutral Decisionmaker, Deprivation Without Due Process",
   "status": "Active — FAC filed Apr. 27, 2026; Magistrate Judge Chi Soo Kim issued Findings & Recommendations (ECF No. 6, Jun. 15, 2026) recommending IFP denial and dismissal WITHOUT LEAVE TO AMEND; Plaintiff filed Objections (Jun. 18, 2026) and a Notice of Supplemental Authority citing the favorable Serrato ruling (electronically filed Jul. 9, 2026, per the court-stamped copy — corrects the Jul. 7, 2026 date previously on record); District Judge's ruling on the F&R remains PENDING as of this writing",
+  "status_label": "F&R pending — objections filed, District Judge review",
   "lifecycle": "active",
   "proceeding": "federal_civil",
   "phase": "fr_pending",

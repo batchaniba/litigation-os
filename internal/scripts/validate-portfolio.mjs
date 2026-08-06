@@ -79,6 +79,7 @@ const timeline = JSON.parse(
 const { matter_damages } = await import(pathToFileURL(path.join(REPO_ROOT, "internal/src/data/damages.js")).href);
 const { lawyer_fees } = await import(pathToFileURL(path.join(REPO_ROOT, "internal/src/data/lawyerFees.js")).href);
 const { outcomes } = await import(pathToFileURL(path.join(REPO_ROOT, "internal/src/data/outcomes.js")).href);
+const { insurance_coverage } = await import(pathToFileURL(path.join(REPO_ROOT, "internal/src/data/coverage.js")).href);
 
 // ---------- matter JSON records ----------
 
@@ -89,6 +90,7 @@ const REQUIRED_MATTER_FIELDS = [
   ["court", "string"],
   ["claims", "string"],
   ["status", "string"],
+  ["status_label", "string"],
   ["lifecycle", "string"],
   ["proceeding", "string"],
   ["phase", "string"],
@@ -102,6 +104,9 @@ const REQUIRED_MATTER_FIELDS = [
   ["damages", "string"],
   ["risk", "string"],
 ];
+/** Max length for status_label — the widest fixed slot it renders into. */
+const STATUS_LABEL_MAX = 60;
+
 const LIFECYCLE_SET = new Set(MATTER_LIFECYCLES);
 const PROCEEDING_SET = new Set(MATTER_PROCEEDINGS);
 const PHASE_SET = new Set(MATTER_PHASES);
@@ -135,6 +140,24 @@ for (const m of cases) {
       fail(`${tag}: missing required field "${field}"`);
     } else if (typeof m[field] !== type) {
       fail(`${tag}: field "${field}" should be ${type}, got ${typeof m[field]}`);
+    }
+  }
+
+  // status_label feeds badges, the at-a-glance strip, search results and the
+  // README table — all fixed-width slots. The cap is what stops it drifting
+  // back into a narrative the way `status` did.
+  if (typeof m.status_label === "string") {
+    const label = m.status_label.trim();
+    if (!label) {
+      fail(`${tag}: status_label must not be empty`);
+    } else if (label.length > STATUS_LABEL_MAX) {
+      fail(`${tag}: status_label is ${label.length} chars, max ${STATUS_LABEL_MAX} — put the detail in "status"`);
+    }
+    if (/\n/.test(m.status_label)) {
+      fail(`${tag}: status_label must be a single line`);
+    }
+    if (typeof m.status === "string" && m.status.trim().length < label.length) {
+      warn(`${tag}: status narrative is shorter than status_label — one of the two is probably stale`);
     }
   }
 
@@ -355,6 +378,56 @@ for (const n of seenMatterNumbers) {
   }
   if (!feeNumbers.has(n)) {
     warn(`Matter ${n}: no entry in lawyerFees.js lawyer_fees[]`);
+  }
+}
+
+// ---------- insurance coverage ----------
+// coverage.js is the source of truth for policy limits; the matter JSON carries
+// a display string for its badge. These are rendered in different places, so a
+// mismatch would silently show two different numbers for the same policy.
+
+const coverageNumbers = new Set();
+for (const record of insurance_coverage ?? []) {
+  const { matter: n, limitsShort, perIncident, aggregate, policyNo, carrier, insureds } = record;
+
+  if (coverageNumbers.has(n)) {
+    fail(`coverage.js: duplicate entry for matter ${n}`);
+  }
+  coverageNumbers.add(n);
+
+  const matterRecord = matterRecords.get(n);
+  if (!matterRecord) {
+    fail(`coverage.js: entry for matter ${n}, which has no matter JSON record`);
+    continue;
+  }
+  if (matterRecord.policy_limits !== limitsShort) {
+    fail(
+      `coverage.js matter ${n}: limitsShort "${limitsShort}" does not match ` +
+        `${matterRecord.__sourceFile} policy_limits "${matterRecord.policy_limits ?? "(unset)"}"`,
+    );
+  }
+  if (!(Number.isFinite(perIncident) && perIncident > 0)) {
+    fail(`coverage.js matter ${n}: perIncident must be a positive number`);
+  }
+  if (!(Number.isFinite(aggregate) && aggregate > 0)) {
+    fail(`coverage.js matter ${n}: aggregate must be a positive number`);
+  }
+  if (Number.isFinite(perIncident) && Number.isFinite(aggregate) && perIncident > aggregate) {
+    fail(`coverage.js matter ${n}: perIncident (${perIncident}) exceeds aggregate (${aggregate})`);
+  }
+  if (!policyNo || !carrier) {
+    fail(`coverage.js matter ${n}: carrier and policyNo are required`);
+  }
+  if (!Array.isArray(insureds) || insureds.length === 0) {
+    fail(`coverage.js matter ${n}: at least one insured must be named`);
+  }
+}
+
+// A matter carrying policy_limits with no coverage.js record renders the small
+// badge but never the tower — the leverage figure would be nearly invisible.
+for (const m of matterRecords.values()) {
+  if (m.policy_limits && !coverageNumbers.has(m.number)) {
+    fail(`Matter ${m.number}: has policy_limits but no coverage.js record — add one so it renders portfolio-wide`);
   }
 }
 

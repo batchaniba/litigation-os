@@ -5,6 +5,7 @@
   "court": "San Joaquin Sup. Ct.",
   "claims": "IIED, Bane Act, Intentional/Negligent Econ. Interference, Negligent Supervision, NIED",
   "status": "NOT PURSUING — Voluntarily Dismissed",
+  "status_label": "Abandoned — voluntarily dismissed",
   "lifecycle": "abandoned",
   "proceeding": "state_civil",
   "phase": "terminal",

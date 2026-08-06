@@ -5,6 +5,7 @@
   "court": "San Joaquin Sup. Ct.",
   "claims": "Writ of Mandate, False Imprisonment, Bane Act, IIED, Negligent Supervision",
   "status": "NOT PURSUING — Voluntarily Dismissed",
+  "status_label": "Abandoned — voluntarily dismissed",
   "lifecycle": "abandoned",
   "proceeding": "mandate",
   "phase": "terminal",

@@ -5,6 +5,7 @@
   "court": "USDC N.D. Cal.",
   "claims": "42 USC 1983: Fourteenth Amendment (Substantive & Procedural Due Process), First Amendment (Retaliation); Declaratory Relief",
   "status": "Active — Complaint filed June 17, 2026; Case No. 4:26-cv-05953-ASK; assigned to Magistrate Judge Ajay S. Krishnan; ISC Order issued June 17, 2026; CMC scheduled September 15, 2026; Jury Trial Demanded. U.S. Marshal service on Defendant Serrato requested (USM-285, Doc. 7, filed Jun. 29, 2026); USMS acknowledged receipt of the process package Jul. 1, 2026 (USM-285, Doc. 14, filed Jul. 21, 2026) — the certification-of-service portion of both USM-285 forms remains unexecuted (no box checked, no server signature/date), so personal service on Serrato is NOT YET confirmed on the docket as of this writing.",
+  "status_label": "CMC Sep. 15, 2026 — Mag. Judge Krishnan",
   "lifecycle": "active",
   "proceeding": "federal_civil",
   "phase": "cmc",

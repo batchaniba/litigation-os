@@ -1,6 +1,9 @@
 import { GOLD } from "../constants";
 import { phaseLabel, proceedingLabel } from "../utils/matterProceeding";
 
+/** Mirrors STATUS_LABEL_MAX in internal/scripts/validate-portfolio.mjs. */
+const STATUS_LABEL_MAX = 60;
+
 const LIFECYCLE_STYLE = {
   active: { color: "#34D399", bg: "rgba(52,211,153,0.12)" },
   pre_filing: { color: GOLD, bg: "rgba(200,168,75,0.12)" },
@@ -38,7 +41,12 @@ export const StatusBadge = ({ status, lifecycle }) => {
     if (status.includes("DISMISSED")) { color = "#F87171"; bg = "rgba(248,113,113,0.12)"; }
   }
   const label = typeof status === "string" ? status : "";
-  return <span style={{ fontSize: 11, padding: "3px 10px", borderRadius: 20, color, background: bg, fontWeight: 600, whiteSpace: "nowrap", letterSpacing: 0.3 }}>{label.length > 40 ? label.slice(0, 38) + "…" : label}</span>;
+  // Fed `status_label`, which validate-portfolio caps at STATUS_LABEL_MAX (60),
+  // so the badge renders it whole. The slice is a backstop for an unvalidated
+  // caller, not the normal path — it used to fire on every matter because this
+  // badge was being handed the full procedural narrative.
+  const display = label.length > STATUS_LABEL_MAX ? `${label.slice(0, STATUS_LABEL_MAX - 1)}…` : label;
+  return <span title={label !== display ? label : undefined} style={{ fontSize: 11, padding: "3px 10px", borderRadius: 20, color, background: bg, fontWeight: 600, whiteSpace: "nowrap", letterSpacing: 0.3 }}>{display}</span>;
 };
 
 export const ClusterBadge = ({ cluster }) => {
@@ -64,14 +72,20 @@ export const ProceedingBadge = ({ proceeding }) => {
   );
 };
 
-export const PolicyLimitsBadge = ({ limits }) => {
+export const PolicyLimitsBadge = ({ limits, coverage }) => {
   if (!limits) return null;
+  // Filled rather than outlined: policy limits are the one figure on a card a
+  // carrier has already agreed to pay up to, so they should not read as just
+  // another metadata chip.
+  const title = coverage
+    ? `Insured exposure: ${limits} (per incident / aggregate) — ${coverage.carrier} Policy No. ${coverage.policyNo}, covering ${coverage.insureds.join(" and ")}`
+    : `Known insurance policy limits: ${limits} (per incident / aggregate)`;
   return (
     <span
-      title={`Known insurance policy limits: ${limits} (per incident / aggregate)`}
-      style={{ fontSize: 10, padding: "2px 8px", borderRadius: 4, color: "#34D399", border: "1px solid #34D39940", fontWeight: 700, letterSpacing: 0.4 }}
+      title={title}
+      style={{ fontSize: 10, padding: "2px 8px", borderRadius: 4, color: "#34D399", border: "1px solid #34D39966", background: "rgba(52,211,153,0.12)", fontWeight: 700, letterSpacing: 0.4, whiteSpace: "nowrap" }}
     >
-      🏷️ {limits}
+      🏛️ {limits} insured
     </span>
   );
 };

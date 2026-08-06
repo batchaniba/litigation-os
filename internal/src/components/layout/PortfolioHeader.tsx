@@ -3,6 +3,8 @@ import { NavLink, useLocation } from "react-router-dom";
 import { GOLD } from "../../constants";
 import { NAV_ITEMS } from "../../routes";
 import { withBase } from "../../utils/paths";
+import { CoverageTower } from "../CoverageTower";
+import { headline_coverage } from "../../data/coverage";
 
 export function PortfolioHeader({
   darkMode,
@@ -63,6 +65,8 @@ export function PortfolioHeader({
               Palacios Demurrer (Matter 5)
             </div>
           </div>
+
+          {headline_coverage && <CoverageTower record={headline_coverage} variant="header" />}
 
           <div className="legacy-opposing-counsel">
             <a href="https://www.sims-law.net/" target="_blank" rel="noopener noreferrer" title="Visit Sims, Lawrence & Broghammer (sims-law.net) ↗" className="firm-link">

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { GOLD, BORDER_BLUE } from "../../constants";
 import { StatusBadge, ClusterBadge, TypeBadge, ArchiveBadge, ProceedingBadge, PhaseBadge, PolicyLimitsBadge } from "../Badges";
 import { ServiceTracker } from "../ServiceTracker";
+import { coverageForMatter } from "../../data/coverage";
 import { useMatter } from "../../hooks/useMatter";
 import { formatMatterPath } from "../../utils/formatters";
 import { isArchivedMatter } from "../../utils/matterLifecycle";
@@ -108,8 +109,8 @@ export function MatterCard({ matter: summary, isOpen, onToggle }: MatterCardProp
             <TypeBadge type={c.type} />
             <ProceedingBadge proceeding={c.proceeding} />
             <PhaseBadge phase={c.phase} />
-            <StatusBadge status={c.status} lifecycle={c.lifecycle} />
-            <PolicyLimitsBadge limits={c.policy_limits} />
+            <StatusBadge status={c.status_label} lifecycle={c.lifecycle} />
+            <PolicyLimitsBadge limits={c.policy_limits} coverage={coverageForMatter(c.number)} />
             {isArchivedMatter(c) && <ArchiveBadge />}
           </div>
           {c.note && (

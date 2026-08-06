@@ -5,6 +5,7 @@
   "court": "USDC E.D. Cal.",
   "claims": "42 U.S.C. § 1983: Procedural Due Process — Three Counts: (I) Damages against HOPE; (II) Injunctive/Declaratory Relief against HOPE & Macomber; (III) Delegation Without Safeguards against both",
   "status": "DISMISSED WITHOUT PREJUDICE — Notice of Voluntary Dismissal filed May 21, 2026; Minute Order entered June 1, 2026 (FRCP 41(a)(1)(A)(i); case closed; refiling preserved; ECF No. 5 Notice of Related Cases was not an answer or MSJ)",
+  "status_label": "Dismissed without prejudice — Jun. 1, 2026",
   "lifecycle": "dismissed",
   "proceeding": "federal_civil",
   "phase": "terminal",

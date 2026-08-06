@@ -38,14 +38,14 @@ export const useCaseFilters = (initial: Partial<MatterFilterState> = {}) => {
     if (typeFilter && matter.type !== typeFilter) return false;
     if (!searchQuery) return true;
     const query = searchQuery.toLowerCase();
-    return [matter.caption, matter.case_no, matter.court, matter.claims, matter.defendants, matter.status, ...(matter.causes ?? [])]
+    return [matter.caption, matter.case_no, matter.court, matter.claims, matter.defendants, matter.status, matter.status_label, ...(matter.causes ?? [])]
       .some((value) => value?.toLowerCase().includes(query));
   }).sort((a, b) => {
     if (sortKey === "filed") return filedTimestamp(b.filed) - filedTimestamp(a.filed);
     if (sortKey === "deadline") return (nextDeadlineByMatter.get(a.number) ?? Infinity) - (nextDeadlineByMatter.get(b.number) ?? Infinity);
     if (sortKey === "exposure") return (exposureByMatter.get(b.number) ?? 0) - (exposureByMatter.get(a.number) ?? 0);
     if (sortKey === "court") return a.court.localeCompare(b.court);
-    if (sortKey === "status") return a.status.localeCompare(b.status);
+    if (sortKey === "status") return a.status_label.localeCompare(b.status_label);
     return a.number - b.number;
   }), [statusFilter, clusterFilter, typeFilter, searchQuery, sortKey]);
 
