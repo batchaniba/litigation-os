@@ -48,17 +48,8 @@ updates:
         update-types:
           - minor
           - patch
-    ignore:
-      # React 19 is a product migration (types, testing-library peers, router),
-      # not a drive-by Dependabot bump. Remove these ignores when ready.
-      - dependency-name: "react"
-        update-types: ["version-update:semver-major"]
-      - dependency-name: "react-dom"
-        update-types: ["version-update:semver-major"]
-      - dependency-name: "@types/react"
-        update-types: ["version-update:semver-major"]
-      - dependency-name: "@types/react-dom"
-        update-types: ["version-update:semver-major"]
+      # Majors stay ungrouped so each landing (React 19, plugin-react 6, jsdom 30)
+      # is its own reviewable PR after @dependabot recreate.
 
   # Keeps actions/checkout, setup-node, setup-python, and the Pages actions
   # current — these are the workflow's only unpinned third-party code.
