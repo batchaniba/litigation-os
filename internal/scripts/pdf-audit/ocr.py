@@ -3,7 +3,7 @@ import os as _os
 _REPO = _os.path.abspath(_os.path.join(_os.path.dirname(__file__), "..", "..", ".."))
 _CACHE_DIR = _os.environ.get("PDF_AUDIT_CACHE", _os.path.join(_REPO, ".cache", "pdf-audit"))
 _os.makedirs(_CACHE_DIR, exist_ok=True)
-import json, os, hashlib
+import json, os
 import pypdfium2 as pdfium
 import pytesseract
 

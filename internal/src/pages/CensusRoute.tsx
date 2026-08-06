@@ -27,7 +27,6 @@ export default function CensusRoute() {
       setClusterFilter={(cluster: number | null) => { pending.current.cluster = cluster; }}
       setStatusFilter={(status: string) => { pending.current.status = status; }}
       setSearchQuery={(search: string) => { pending.current.search = search; }}
-      damagesView={ui.damagesView}
       setDamagesView={ui.setDamagesView}
       setShowPastEvents={ui.setShowPastEvents}
     />

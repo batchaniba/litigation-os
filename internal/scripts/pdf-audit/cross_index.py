@@ -11,10 +11,10 @@ Outputs:
   internal/docs/cross_matter_risk_index.json
   internal/docs/CROSS_MATTER_RISK_INDEX.md
 """
+import hashlib
 import json
 import os
 import re
-import sys
 import unicodedata
 from collections import defaultdict
 
@@ -162,10 +162,7 @@ def archived_cross_refs(records, active_numbers):
                 if not f.lower().endswith(".pdf"):
                     continue
                 full = os.path.join(root, f)
-                key = hashlib.sha1(full.encode()).hexdigest()[:16] if 'hashlib' in dir() else None
-                if not key:
-                    import hashlib
-                    key = hashlib.sha1(full.encode()).hexdigest()[:16]
+                key = hashlib.sha1(full.encode()).hexdigest()[:16]
                 cache = os.path.join(CACHE, key + ".json")
                 if not os.path.exists(cache):
                     continue
@@ -306,7 +303,7 @@ def main():
 
     open(os.path.join(_REPO, "internal", "docs", "CROSS_MATTER_RISK_INDEX.md"), "w").write("\n".join(lines))
     print(f"indexed {len(findings)} findings, {len(signals)} cross-reference signals")
-    print(f"wrote cross_matter_risk_index.json and CROSS_MATTER_RISK_INDEX.md")
+    print("wrote cross_matter_risk_index.json and CROSS_MATTER_RISK_INDEX.md")
 
 
 if __name__ == "__main__":

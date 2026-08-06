@@ -111,14 +111,12 @@ for (const c of PORTFOLIO.cases) {
 const statusRows = Object.entries(statusCounts)
   .map(([label, count]) => ({ label, count, value: count, color: STATUS_COLOR[label] || GOLD }))
   .sort((a, b) => b.count - a.count);
-const maxStatus = Math.max(...statusRows.map(r => r.count));
 
 const clusterCounts = {};
 for (const c of PORTFOLIO.cases) clusterCounts[c.cluster] = (clusterCounts[c.cluster] || 0) + 1;
 const clusterRows = CLUSTERS
   .map(cl => ({ ...cl, count: clusterCounts[cl.n] || 0, value: clusterCounts[cl.n] || 0 }))
   .sort((a, b) => b.count - a.count);
-const maxCluster = Math.max(...clusterRows.map(r => r.count));
 
 const monthlyAll = Array(12).fill(0);
 const monthlyFilings = Array(12).fill(0);
@@ -151,7 +149,6 @@ const demandsResponded = PORTFOLIO.outcomes.active_demands.filter(
 
 const feeSummary = PORTFOLIO.lawyer_fees_summary;
 const feeClusters = Object.values(feeSummary.byCluster).sort((a, b) => b.costHigh - a.costHigh);
-const maxFeeCost = Math.max(...feeClusters.map(c => c.costHigh));
 
 const casesByNumber = Object.fromEntries(PORTFOLIO.cases.map(c => [c.number, c]));
 
@@ -168,7 +165,7 @@ const tdStyle = (theme) => ({
 // ---------------------------------------------------------------------------
 // Small building blocks — masthead label, section heading, stat tile, charts
 // ---------------------------------------------------------------------------
-function Eyebrow({ children, theme }) {
+function Eyebrow({ children }) {
   return (
     <div style={{ fontFamily: SANS, fontSize: 10.5, letterSpacing: "0.16em", textTransform: "uppercase", color: GOLD, fontWeight: 700, marginBottom: 6 }}>
       {children}
@@ -227,109 +224,7 @@ function TableToggle({ theme, headers, rows }) {
   );
 }
 
-// Horizontal bar chart, rendered as SVG so labels/values line up precisely.
-function HBar({ data, theme, barH = 20, gap = 9, leftPad = 190, valueFmt, ariaLabel, onRowClick }) {
-  const width = 760, rightPad = 56, topPad = 4;
-  const max = Math.max(...data.map(d => d.value), 1);
-  const plotW = width - leftPad - rightPad;
-  const H = topPad * 2 + data.length * (barH + gap) - gap;
-  const fmtVal = valueFmt || (v => v);
-  return (
-    <svg viewBox={`0 0 ${width} ${H}`} width="100%" height={H} role="img" aria-label={ariaLabel}>
-      {data.map((d, i) => {
-        const y = topPad + i * (barH + gap);
-        const w = Math.max(2, (d.value / max) * plotW);
-        const clickable = !!onRowClick;
-        return (
-          <g
-            key={d.label}
-            style={clickable ? { cursor: "pointer" } : undefined}
-            role={clickable ? "button" : undefined}
-            tabIndex={clickable ? 0 : undefined}
-            onClick={clickable ? () => onRowClick(d) : undefined}
-            onKeyDown={clickable ? (e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onRowClick(d); } }) : undefined}
-          >
-            <text x={leftPad - 10} y={y + barH * 0.68} textAnchor="end" fontFamily={SANS} fontSize={11.5} fill={theme.subtleText}>{d.label}</text>
-            <rect x={leftPad} y={y} width={plotW} height={barH} fill={theme.barTrack} />
-            <rect x={leftPad} y={y} width={w} height={barH} fill={d.color} opacity={clickable ? 1 : 0.92}>
-              <title>{d.label}: {fmtVal(d.value)}</title>
-            </rect>
-            <text x={leftPad + w + 8} y={y + barH * 0.68} fontFamily={MONO} fontSize={11.5} fontWeight={700} fill={theme.heading}>{fmtVal(d.value)}</text>
-          </g>
-        );
-      })}
-    </svg>
-  );
-}
-
-// Vertical column chart for the monthly timeline-activity series.
-function VBar({ data, theme, height = 160, todayIndex, onColClick, ariaLabel }) {
-  const width = 760, leftPad = 4, rightPad = 4, topPad = 20, botPad = 22;
-  const plotW = width - leftPad - rightPad;
-  const plotH = height - topPad - botPad;
-  const max = Math.max(...data.map(d => d.value), 1);
-  const n = data.length, gap = 8;
-  const barW = (plotW - gap * (n - 1)) / n;
-  return (
-    <svg viewBox={`0 0 ${width} ${height}`} width="100%" height={height} role="img" aria-label={ariaLabel}>
-      <line x1={leftPad} x2={leftPad + plotW} y1={topPad + plotH} y2={topPad + plotH} stroke={theme.cardBorder} strokeWidth={1} />
-      {data.map((d, i) => {
-        const x = leftPad + i * (barW + gap);
-        const h = Math.max((d.value / max) * plotH, d.value > 0 ? 4 : 1);
-        const y = topPad + plotH - h;
-        const isToday = i === todayIndex;
-        const clickable = !!onColClick;
-        return (
-          <g
-            key={d.label}
-            style={clickable ? { cursor: "pointer" } : undefined}
-            role={clickable ? "button" : undefined}
-            tabIndex={clickable ? 0 : undefined}
-            onClick={clickable ? () => onColClick(d, i) : undefined}
-            onKeyDown={clickable ? (e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onColClick(d, i); } }) : undefined}
-          >
-            {d.value > 0 && (
-              <text x={x + barW / 2} y={y - 6} textAnchor="middle" fontFamily={MONO} fontSize={10.5} fontWeight={700} fill={theme.subtleText}>{d.value}</text>
-            )}
-            <rect x={x} y={y} width={barW} height={h} rx={2} fill={isToday ? GOLD : GREEN} opacity={d.opacity ?? 1}>
-              <title>{d.label}: {d.value} {ariaLabel?.includes("filing") ? "filings" : "events"}</title>
-            </rect>
-            <text x={x + barW / 2} y={topPad + plotH + 16} textAnchor="middle" fontFamily={SANS} fontSize={10.5} fontWeight={isToday ? 700 : 500} fill={isToday ? GOLD : theme.subtleText}>{d.label}</text>
-          </g>
-        );
-      })}
-    </svg>
-  );
-}
-
-// Paired low/high dot-and-line ("dumbbell") chart for the fee-value ranges.
-function Dumbbell({ rows, theme, valueFmt }) {
-  const width = 760, leftPad = 190, rightPad = 90, rowH = 32, topPad = 6;
-  const max = Math.max(...rows.map(r => r.high), 1);
-  const plotW = width - leftPad - rightPad;
-  const H = topPad * 2 + rows.length * rowH;
-  const fmtVal = valueFmt || (v => v);
-  return (
-    <svg viewBox={`0 0 ${width} ${H}`} width="100%" height={H} role="img" aria-label="Attorney-fee value avoided, by cluster, low to high">
-      {rows.map((r, i) => {
-        const y = topPad + i * rowH + rowH / 2;
-        const x1 = leftPad + (r.low / max) * plotW;
-        const x2 = leftPad + (r.high / max) * plotW;
-        return (
-          <g key={r.label}>
-            <text x={leftPad - 10} y={y + 4} textAnchor="end" fontFamily={SANS} fontSize={11.5} fill={theme.subtleText}>{r.label}</text>
-            <line x1={x1} x2={x2} y1={y} y2={y} stroke={theme.subtleText} strokeWidth={2} />
-            <circle cx={x1} cy={y} r={5} fill={GOLD}><title>{r.label} low: {fmtVal(r.low)}</title></circle>
-            <circle cx={x2} cy={y} r={5} fill={GREEN}><title>{r.label} high: {fmtVal(r.high)}</title></circle>
-            <text x={x2 + 9} y={y + 4} fontFamily={MONO} fontSize={11} fontWeight={700} fill={theme.heading}>{fmtVal(r.low)}–{fmtVal(r.high)}</text>
-          </g>
-        );
-      })}
-    </svg>
-  );
-}
-
-export const CensusTab = ({ setActiveTab, setClusterFilter, setStatusFilter, setSearchQuery, damagesView, setDamagesView, setShowPastEvents }) => {
+export const CensusTab = ({ setActiveTab, setClusterFilter, setStatusFilter, setSearchQuery, setDamagesView, setShowPastEvents }) => {
   const theme = useTheme();
   const [velocityMode, setVelocityMode] = useState("all");
   const monthly = (velocityMode === "all" ? monthlyAll : monthlyFilings).map((v, i) => ({ label: MONTHS[i], value: v }));

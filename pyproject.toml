@@ -1,0 +1,20 @@
+# Config only — the document-automation scripts under internal/scripts are run
+# directly (`python3 internal/scripts/<name>.py`), not installed as a package.
+# Runtime dependencies live in requirements.txt.
+
+[tool.ruff]
+target-version = "py311"
+line-length = 120
+extend-exclude = ["node_modules", "dist", ".cache", "internal/public"]
+
+[tool.ruff.lint]
+# Default ruff selection (pyflakes + the pycodestyle subset), minus three rules
+# that flag deliberate idioms in these scripts rather than defects:
+#   E401/E402 — several scripts must extend sys.path before importing their
+#               sibling helpers (lib/pleading_paper.py, signature_stamp.py).
+#   E701      — single-line guard clauses (`if not x: return`) are the house
+#               style throughout the PDF-assembly scripts.
+# F (pyflakes) stays on in full: it catches undefined names and unused imports,
+# which are real bugs rather than formatting preferences.
+select = ["E4", "E7", "E9", "F"]
+ignore = ["E401", "E402", "E701"]

@@ -284,7 +284,7 @@ def cmd_audit():
             if not os.path.exists(disk):
                 ci = {os.path.basename(f).lower(): f for f in on_disk}.get(os.path.basename(p).lower())
                 add(m, "link", "high", p,
-                    f"referenced file is missing from the repo"
+                    "referenced file is missing from the repo"
                     + (f"; closest match on disk: '{os.path.basename(ci)}'" if ci else ""))
 
         # ---- duplicates ----------------------------------------------

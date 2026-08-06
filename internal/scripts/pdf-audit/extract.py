@@ -6,7 +6,7 @@ import os as _os
 _REPO = _os.path.abspath(_os.path.join(_os.path.dirname(__file__), "..", "..", ".."))
 _CACHE_DIR = _os.environ.get("PDF_AUDIT_CACHE", _os.path.join(_REPO, ".cache", "pdf-audit"))
 _os.makedirs(_CACHE_DIR, exist_ok=True)
-import json, os, re, sys, hashlib
+import json, os, re, hashlib
 import pdfplumber
 
 DOCS = _os.path.join(_REPO, "internal", "public", "documents")

@@ -37,7 +37,7 @@ const thStyle = (theme) => ({
   padding: "0 8px 8px 0", whiteSpace: "nowrap",
 });
 
-const tdStyle = (theme) => ({
+const tdStyle = () => ({
   fontFamily: "'DM Sans', sans-serif", fontSize: 12,
   padding: "6px 8px 6px 0",
 });
@@ -235,20 +235,20 @@ export const CostOfCounselTab = () => {
             <tbody>
               {sortedMatters.map((m, i) => (
                 <tr key={m.number}>
-                  <td style={{ ...tdStyle(theme), color: theme.subtleText }}>{i + 1}</td>
-                  <td style={{ ...tdStyle(theme), color: theme.secondaryText }}>
+                  <td style={{ ...tdStyle(), color: theme.subtleText }}>{i + 1}</td>
+                  <td style={{ ...tdStyle(), color: theme.secondaryText }}>
                     <span style={{ color: GOLD, fontWeight: 700, marginRight: 8 }}>M{m.number}</span>{m.caption}
                   </td>
-                  <td style={{ ...tdStyle(theme), textAlign: "right", color: "#94A3B8" }}>{m.totalPagesReal}</td>
-                  <td style={{ ...tdStyle(theme), textAlign: "right", color: "#94A3B8" }}>{m.hours[view].toFixed(1)}</td>
-                  <td style={{ ...tdStyle(theme), textAlign: "right", color: "#34D399", fontWeight: 700 }}>{fmt(m.cost[view])}</td>
+                  <td style={{ ...tdStyle(), textAlign: "right", color: "#94A3B8" }}>{m.totalPagesReal}</td>
+                  <td style={{ ...tdStyle(), textAlign: "right", color: "#94A3B8" }}>{m.hours[view].toFixed(1)}</td>
+                  <td style={{ ...tdStyle(), textAlign: "right", color: "#34D399", fontWeight: 700 }}>{fmt(m.cost[view])}</td>
                 </tr>
               ))}
               <tr>
-                <td colSpan={2} style={{ ...tdStyle(theme), borderTop: `1px solid ${theme.cardBorder}`, fontWeight: 700, color: theme.secondaryText, paddingTop: 10 }}>Total</td>
-                <td style={{ ...tdStyle(theme), borderTop: `1px solid ${theme.cardBorder}`, textAlign: "right", fontWeight: 700, color: "#94A3B8", paddingTop: 10 }}>{summary.totalPagesReal.toLocaleString()}</td>
-                <td style={{ ...tdStyle(theme), borderTop: `1px solid ${theme.cardBorder}`, textAlign: "right", fontWeight: 700, color: "#94A3B8", paddingTop: 10 }}>{totalHours.toFixed(0)}</td>
-                <td style={{ ...tdStyle(theme), borderTop: `1px solid ${theme.cardBorder}`, textAlign: "right", fontWeight: 700, color: "#34D399", paddingTop: 10 }}>{fmt(total)}</td>
+                <td colSpan={2} style={{ ...tdStyle(), borderTop: `1px solid ${theme.cardBorder}`, fontWeight: 700, color: theme.secondaryText, paddingTop: 10 }}>Total</td>
+                <td style={{ ...tdStyle(), borderTop: `1px solid ${theme.cardBorder}`, textAlign: "right", fontWeight: 700, color: "#94A3B8", paddingTop: 10 }}>{summary.totalPagesReal.toLocaleString()}</td>
+                <td style={{ ...tdStyle(), borderTop: `1px solid ${theme.cardBorder}`, textAlign: "right", fontWeight: 700, color: "#94A3B8", paddingTop: 10 }}>{totalHours.toFixed(0)}</td>
+                <td style={{ ...tdStyle(), borderTop: `1px solid ${theme.cardBorder}`, textAlign: "right", fontWeight: 700, color: "#34D399", paddingTop: 10 }}>{fmt(total)}</td>
               </tr>
             </tbody>
           </table>

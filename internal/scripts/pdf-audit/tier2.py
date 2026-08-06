@@ -28,7 +28,7 @@ import os
 import re
 import sys
 import unicodedata
-from datetime import date, datetime
+from datetime import date
 
 sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
 import checks  # shared, corrected check helpers
@@ -248,7 +248,7 @@ def cmd_audit():
             if not os.path.exists(disk):
                 ci = {f.lower(): f for f in on_disk}.get(os.path.basename(p).lower())
                 add(m, "link", "high", p,
-                    f"referenced file is missing from the repo"
+                    "referenced file is missing from the repo"
                     + (f"; closest match on disk: '{ci}'" if ci else ""))
 
         # ---- duplicates ----------------------------------------------

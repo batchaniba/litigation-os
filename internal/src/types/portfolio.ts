@@ -112,6 +112,30 @@ export interface DocumentIndexEntry {
   path: string;
 }
 
+/** The subset of ThemeContext tokens the SVG charts read. Declared narrowly
+ *  rather than as the whole theme: the full THEMES.dark / THEMES.light objects
+ *  satisfy this structurally, and the charts should not couple to tokens they
+ *  never paint with. */
+export interface ChartTheme {
+  heading: string;
+  subtleText: string;
+  cardBorder: string;
+  barTrack: string;
+}
+
+/** Countdown state produced by `useDeadlineClock`, re-rendered once a second.
+ *  `frozen` marks the hold period where the clock shows a fixed past deadline
+ *  instead of counting. */
+export interface DeadlineClockState {
+  label: string;
+  days: number;
+  hours: number;
+  mins: number;
+  secs: number;
+  urgent: boolean;
+  frozen?: boolean;
+}
+
 export interface TimelineEvent {
   date: string;
   event: string;

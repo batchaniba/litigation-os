@@ -1,4 +1,5 @@
-export function DeadlineBanner({ timeLeft, showClock, onToggle }: { timeLeft: any; showClock: boolean; onToggle: () => void }) {
+import type { DeadlineClockState } from "../../types/portfolio";
+export function DeadlineBanner({ timeLeft, showClock, onToggle }: { timeLeft: DeadlineClockState; showClock: boolean; onToggle: () => void }) {
   return (
     <section className="legacy-deadline-banner" style={{ background: "var(--banner-bg)", borderBottom: `1px solid ${timeLeft.urgent ? "#EF444440" : "#C8A84B30"}` }} aria-label="Next portfolio deadline">
       <div className="legacy-deadline-row">
