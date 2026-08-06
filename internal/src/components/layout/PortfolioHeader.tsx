@@ -18,13 +18,17 @@ export function PortfolioHeader({
   const location = useLocation();
   const navId = useId();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [menuPath, setMenuPath] = useState(location.pathname);
   const activeLabel = NAV_ITEMS.find((item) =>
     item.end ? location.pathname === item.path : location.pathname === item.path || location.pathname.startsWith(`${item.path}/`)
   )?.label ?? "Dashboard";
 
-  useEffect(() => {
-    setMenuOpen(false);
-  }, [location.pathname]);
+  // Close the mobile section menu on navigation without an effect round-trip
+  // (eslint-plugin-react-hooks@7 set-state-in-effect).
+  if (menuPath !== location.pathname) {
+    setMenuPath(location.pathname);
+    if (menuOpen) setMenuOpen(false);
+  }
 
   useEffect(() => {
     const onResize = () => {

@@ -18,6 +18,7 @@ export default function GlobalSearchDialog({ onClose }: { onClose: () => void })
   const [query, setQuery] = useState("");
   const debouncedQuery = useDebounce(query, 200);
   const [activeIndex, setActiveIndex] = useState(-1);
+  const [indexedLength, setIndexedLength] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);
   const dialogRef = useRef<HTMLElement>(null);
   const resultRefs = useRef<Array<HTMLAnchorElement | null>>([]);
@@ -76,7 +77,10 @@ export default function GlobalSearchDialog({ onClose }: { onClose: () => void })
       .filter((group) => group.items.length);
   }, [results]);
 
-  useEffect(() => { setActiveIndex(results.length ? 0 : -1); }, [results.length]);
+  if (indexedLength !== results.length) {
+    setIndexedLength(results.length);
+    setActiveIndex(results.length ? 0 : -1);
+  }
 
   const handleSearchKeys = (event: ReactKeyboardEvent<HTMLInputElement>) => {
     if (!results.length) return;

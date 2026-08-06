@@ -4,40 +4,52 @@ import type { Matter } from "../types/portfolio";
 
 export type MatterLoadStatus = "idle" | "loading" | "ready" | "error";
 
+type MatterState = {
+  matter: Matter | null;
+  status: MatterLoadStatus;
+  error: string | null;
+  /** Matter number this state was last keyed to; null when idle/cleared. */
+  requestKey: number | null;
+};
+
+const IDLE: MatterState = { matter: null, status: "idle", error: null, requestKey: null };
+
 export function useMatter(number: number | null | undefined) {
-  const [matter, setMatter] = useState<Matter | null>(null);
-  const [status, setStatus] = useState<MatterLoadStatus>("idle");
-  const [error, setError] = useState<string | null>(null);
+  const requestKey =
+    number == null || Number.isNaN(Number(number)) ? null : Number(number);
+  const [state, setState] = useState<MatterState>(IDLE);
+
+  // Reset / mark loading during render when the requested matter changes
+  // (eslint-plugin-react-hooks@7 set-state-in-effect).
+  if (requestKey == null && state.requestKey !== null) {
+    setState(IDLE);
+  } else if (requestKey != null && state.requestKey !== requestKey) {
+    setState({ matter: null, status: "loading", error: null, requestKey });
+  }
 
   useEffect(() => {
-    if (number == null || Number.isNaN(Number(number))) {
-      setMatter(null);
-      setStatus("idle");
-      setError(null);
-      return;
-    }
+    if (requestKey == null) return;
 
     let cancelled = false;
-    setStatus("loading");
-    setError(null);
-
-    loadMatter(Number(number))
+    loadMatter(requestKey)
       .then((record) => {
         if (cancelled) return;
-        setMatter(record);
-        setStatus("ready");
+        setState({ matter: record, status: "ready", error: null, requestKey });
       })
       .catch((err: unknown) => {
         if (cancelled) return;
-        setMatter(null);
-        setStatus("error");
-        setError(err instanceof Error ? err.message : "Failed to load matter");
+        setState({
+          matter: null,
+          status: "error",
+          error: err instanceof Error ? err.message : "Failed to load matter",
+          requestKey,
+        });
       });
 
     return () => {
       cancelled = true;
     };
-  }, [number]);
+  }, [requestKey]);
 
-  return { matter, status, error };
+  return { matter: state.matter, status: state.status, error: state.error };
 }
