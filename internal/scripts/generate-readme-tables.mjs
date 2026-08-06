@@ -83,17 +83,17 @@ function truncate(text, max) {
   return `${(word > 40 ? cut.slice(0, word) : cut).trim()}…`;
 }
 
+// A table cell wants the short posture, which is exactly what status_label is —
+// so no truncation here. The narrative `status` stays out of the README tables.
 function shortStatus(matter, { closed = false } = {}) {
-  const raw = (matter.status || "").replace(/\s+/g, " ").trim();
+  const label = (matter.status_label || "").replace(/\s+/g, " ").trim();
   if (closed && matter.lifecycle && matter.lifecycle !== "closed") {
-    const label = lifecycleLabel(matter.lifecycle).toUpperCase();
-    const upper = raw.toUpperCase();
-    if (upper.startsWith(label) || upper.startsWith("NOT PURSUING") || upper.startsWith("ABANDONED") || upper.startsWith("DISMISSED")) {
-      return escapeCell(truncate(raw, 180));
+    const lifecycle = lifecycleLabel(matter.lifecycle).toUpperCase();
+    if (!label.toUpperCase().startsWith(lifecycle)) {
+      return escapeCell(`**${lifecycle}** — ${label}`);
     }
-    return escapeCell(`**${label}** — ${truncate(raw, 150)}`);
   }
-  return escapeCell(truncate(raw, 180));
+  return escapeCell(label);
 }
 
 function bucket(matter) {

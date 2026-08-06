@@ -155,20 +155,20 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 <!-- PORTFOLIO:ACTIVE_MATTERS:START -->
 | # | Caption | Case No. | Court | Type | Status |
 |---|---|---|---|---|---|
-| 1 | Newanforbi v. CHP et al. | 2:25-cv-01460-DC-CSK | USDC E.D. Cal. | Federal | Filed 05/27/2025; Magistrate Judge issued Findings & Recommendations RECOMMENDING DISMISSAL (Apr. 20, 2026) |
-| 2 | Newanforbi v. Meza-Gonzalez et al. | 26CV168913 | Alameda Sup. Ct. | State | STAYED — Stipulation for Stay filed Apr. 14, 2026; U-Visa Certification Motion briefed (Opp. June 5, 2026; Reply June 8, 2026) and heard June 18, 2026 at 2:30 p.m. (Dept. 518) |
-| 7 | Newanforbi v. Candelaria | 2:26-cv-00983-DC-CSK | USDC E.D. Cal. | Federal | Active — FAC filed Apr. 27, 2026; Magistrate Judge Chi Soo Kim issued Findings & Recommendations (ECF No. 6, Jun. 15, 2026) recommending IFP denial and dismissal WITHOUT LEAVE TO… |
-| 12 | Brendan Ngwa Nforbi v. Diamond Truck Sales, Inc. | STK-CV-UF-2026-0001094 | San Joaquin Sup. Ct. | State | Active — June 15, 2026 CIV-100 against Diamond and Alpine docketed Not Entered |
-| 19 | Newanforbi v. Macomber | C2604791 | Santa Clara Sup. Ct. | State | Active — Order Extending Time to Rule issued July 2, 2026; court has until August 1, 2026 to rule (Cal. Rules of Court, rule 4.551(i)) |
-| 20 | Newanforbi v. California Highway Patrol, et al. | 26CV191136 | Alameda Sup. Ct. | State | Active — Petition filed 05/29/2026; AG Demurrer (CHP) filed; Opposition to Demurrer filed 07/13/2026; CHP Demurrer Hearing: 08/28/2026, 9:00 a.m., Dept. 25 — Hon. Jenna M. Whitman. |
-| 24 | Newanforbi v. Serrato | 4:26-cv-05953-ASK | USDC N.D. Cal. | Federal | Active — Complaint filed June 17, 2026; Case No. 4:26-cv-05953-ASK; assigned to Magistrate Judge Ajay S. Krishnan; ISC Order issued June 17, 2026; CMC scheduled September 15, 2026 |
-| 25 | Newanforbi v. Federal Express Corporation | STK-CV-UWT-2026-0009118 | San Joaquin Sup. Ct. | State | Filed July 15, 2026; assigned to Dept. 10B, Hon. Blanca Banuelos; CMC January 14, 2027, 8:45 AM; service deadline September 13, 2026 (60 days, CRC 3.110). |
-| 26 | Newanforbi v. United Parcel Service, Inc. | STK-CV-UWT-2026-0009113 | San Joaquin Sup. Ct. | State | Filed July 15, 2026; limitations period preserved — 16 days to spare (2-year cutoff: July 31, 2026); assigned to Dept. 11B, Hon. Robert T. Waters; CMC January 13, 2027, 8:30 AM |
-| 27 | Newanforbi v. Randstad, et al. | 26CV199902 | Alameda Sup. Ct. | State | Employment TERMINATED July 15, 2026. Pre-Filing Demand Letters sent to both Randstad and RK Logistics July 20, 2026 |
-| 28 | Newanforbi v. Shannon Smith, LCSW, CEO, et al. | 3:26-cv-07504 | USDC N.D. Cal. | Federal | Case Filed July 20, 2026 — Hon. Lisa J. Cisneros. Order filed July 23, 2026 required: (1) correct district IFP form by Aug. 13, 2026 |
-| 29 | Newanforbi v. Amazon.com Services, LLC | 26CV201554 | Alameda Sup. Ct. (Hayward Hall of Justice, Dept. 520) | State | CASE FILED July 28, 2026 — the same day Plaintiff's confirmed training shift (Jul. 28–29, 2026) was to begin. |
-| 30 | Newanforbi v. Moua, et al. | TBD | USDC N.D. Cal. | Federal | Pre-complaint — 26-page verified Complaint v9 prepared naming Moua and DOES 1-10 only, anticipated filing September 16, 2026 (USDC N.D. |
-| 31 | Newanforbi v. First Advantage LLC | TBD | San Joaquin Sup. Ct. (anticipated) | State | IDENTIFIED VIA PORTFOLIO GAP ANALYSIS (Jul. 30, 2026) — NOT YET FILED; no demand letter sent; no complaint drafted. |
+| 1 | Newanforbi v. CHP et al. | 2:25-cv-01460-DC-CSK | USDC E.D. Cal. | Federal | F&R pending — objections filed, District Judge review |
+| 2 | Newanforbi v. Meza-Gonzalez et al. | 26CV168913 | Alameda Sup. Ct. | State | Stayed — U-Visa motion heard Jun. 18, 2026, no ruling |
+| 7 | Newanforbi v. Candelaria | 2:26-cv-00983-DC-CSK | USDC E.D. Cal. | Federal | F&R pending — objections filed, District Judge review |
+| 12 | Brendan Ngwa Nforbi v. Diamond Truck Sales, Inc. | STK-CV-UF-2026-0001094 | San Joaquin Sup. Ct. | State | Default prove-up — CMC Aug. 12, 2026, Dept. 11B |
+| 19 | Newanforbi v. Macomber | C2604791 | Santa Clara Sup. Ct. | State | Under submission — ruling due Aug. 1, 2026 |
+| 20 | Newanforbi v. California Highway Patrol, et al. | 26CV191136 | Alameda Sup. Ct. | State | Demurrer hearing Aug. 28, 2026, Dept. 25 |
+| 24 | Newanforbi v. Serrato | 4:26-cv-05953-ASK | USDC N.D. Cal. | Federal | CMC Sep. 15, 2026 — Mag. Judge Krishnan |
+| 25 | Newanforbi v. Federal Express Corporation | STK-CV-UWT-2026-0009118 | San Joaquin Sup. Ct. | State | Served Jul. 24, 2026 — CMC Jan. 14, 2027 |
+| 26 | Newanforbi v. United Parcel Service, Inc. | STK-CV-UWT-2026-0009113 | San Joaquin Sup. Ct. | State | Served Jul. 22, 2026 — CMC Jan. 13, 2027 |
+| 27 | Newanforbi v. Randstad, et al. | 26CV199902 | Alameda Sup. Ct. | State | Served Jul. 30, 2026 — response due Aug. 31, 2026 |
+| 28 | Newanforbi v. Shannon Smith, LCSW, CEO, et al. | 3:26-cv-07504 | USDC N.D. Cal. | Federal | Filed Jul. 20, 2026 — initial CMC Oct. 22, 2026 |
+| 29 | Newanforbi v. Amazon.com Services, LLC | 26CV201554 | Alameda Sup. Ct. (Hayward Hall of Justice, Dept. 520) | State | Filed Jul. 28, 2026 — service in progress |
+| 30 | Newanforbi v. Moua, et al. | TBD | USDC N.D. Cal. | Federal | Pre-filing — anticipated filing Sep. 16, 2026 |
+| 31 | Newanforbi v. First Advantage LLC | TBD | San Joaquin Sup. Ct. (anticipated) | State | Pre-filing — not yet drafted or served |
 <!-- PORTFOLIO:ACTIVE_MATTERS:END -->
 
 ### Settled
@@ -176,7 +176,7 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 <!-- PORTFOLIO:SETTLED_MATTERS:START -->
 | # | Caption | Case No. | Court | Outcome |
 |---|---|---|---|---|
-| 22 | Newanforbi v. Pilot Travel Centers LLC | STK-CV-UWT-2026-0007649 | San Joaquin Sup. Ct. | SETTLED — July 14, 2026 (pro se; DocuSigned by both parties; resolved in under seven weeks from filing, before service completed). |
+| 22 | Newanforbi v. Pilot Travel Centers LLC | STK-CV-UWT-2026-0007649 | San Joaquin Sup. Ct. | Settled Jul. 14, 2026 — dismissal mailed Aug. 3, 2026 |
 <!-- PORTFOLIO:SETTLED_MATTERS:END -->
 
 ### Dismissed / Closed / Archived
@@ -186,22 +186,22 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 <!-- PORTFOLIO:CLOSED_MATTERS:START -->
 | # | Caption | Case No. | Court | Disposition |
 |---|---|---|---|---|
-| 3 | Newanforbi v. Derrick et al. | 2:26-cv-00004-DJC-JDP | USDC E.D. Cal. | **ABANDONED** — Order filed July 24, 2026 (Mag. Peterson): Palacios's MTD (Doc 24) GRANTED — failed all four Ninth Circuit state-actor tests |
-| 4 | Newanforbi v. Derrick et al. | TBD | San Joaquin Sup. Ct. | NOT PURSUING — Voluntarily Dismissed |
-| 5 | Newanforbi v. Palacios et al. | STK-CV-UF-2026-0001032 | San Joaquin Sup. Ct. | DISMISSED — San Joaquin Superior Court (Hon. George J. |
-| 6 | Newanforbi v. HOPE et al. | 2:26-cv-00195-TLN-AC | USDC E.D. Cal. | DISMISSED WITHOUT PREJUDICE — Notice of Voluntary Dismissal filed May 21, 2026; Minute Order entered June 1, 2026 (FRCP 41(a)(1)(A)(i); case closed; refiling preserved |
-| 8 | Newanforbi v. Candelaria, et al. | 26WM000135 | Sacramento Sup. Ct. | NOT PURSUING — fee-payment deadline (~Jul. 27, 2026) lapsed without payment or a revised FW-001 |
-| 9 | Newanforbi v. Macomber | 26WM000028 | Sacramento Sup. Ct. | Closed — Demurrer Hearing 05/29/2026, Dept. 13A |
-| 10 | Newanforbi v. Macomber | C2602632 | Santa Clara Sup. Ct. | CLOSED — Order Denying Petition Without Prejudice (April 27, 2026) |
-| 11 | Newanforbi v. Macomber | TBD (USDC E.D. Cal.) | USDC E.D. Cal. | DISMISSED WITH PREJUDICE — Notice of Voluntary Dismissal filed June 29, 2026 (FRCP 41(a)(1)(A)(i)); self-executing |
-| 13 | Newanforbi v. Urrea et al. | 2:26-cv-00190-DC-SCR | USDC E.D. Cal. | DISMISSED WITH PREJUDICE — Notice of Voluntary Dismissal filed June 29, 2026 (FRCP 41(a)(1)(A)(i)); self-executing |
-| 14 | Newanforbi v. Urrea et al. | TBD (San Joaquin Sup. Ct.) | San Joaquin Sup. Ct. | NOT PURSUING — Voluntarily Dismissed |
-| 15 | Newanforbi v. California Department of Corrections and Rehabilitation, et al. | STK-CV-UPI-2026-5417 | San Joaquin Sup. Ct. | ABANDONED — Voluntary Dismissal With Prejudice filed July 24, 2026, as to all defendants (CDCR, Keely Dodd, and Gary Noguchi), due to a real, credible safety threat. |
-| 16 | Newanforbi v. Rojo | TBD (San Joaquin Sup. Ct.) | San Joaquin Sup. Ct. | NOT PURSUING — Voluntarily Dismissed |
-| 17 | Newanforbi v. Maloney et al. | 2:26-cv-00194-DAD-SCR | USDC E.D. Cal. | DISMISSED WITH PREJUDICE — Notice of Voluntary Dismissal filed June 29, 2026 (FRCP 41(a)(1)(A)(i)); self-executing |
-| 18 | Newanforbi v. Barocio | 2:26-cv-00191-DJC-CSK (PC) | USDC E.D. Cal. | DISMISSED WITH PREJUDICE — Notice of Voluntary Dismissal filed June 29, 2026 (FRCP 41(a)(1)(A)(i)); self-executing |
-| 21 | Newanforbi v. Rojo et al. | 2:26-cv-00193-DC-CKD | USDC E.D. Cal. | DISMISSED WITH PREJUDICE — Notice of Voluntary Dismissal filed June 29, 2026 (FRCP 41(a)(1)(A)(i)); self-executing |
-| 23 | Newanforbi v. Macy's Inc. et al. | TBD | San Joaquin Sup. Ct. | NOT PURSUING — Voluntarily Dismissed. The anticipated registry-based adverse action never occurred: Macy's honored the offer, and Plaintiff worked the position from May 28, 2026… |
+| 3 | Newanforbi v. Derrick et al. | 2:26-cv-00004-DJC-JDP | USDC E.D. Cal. | Abandoned — MTD granted, FAC leave to amend Jul. 24, 2026 |
+| 4 | Newanforbi v. Derrick et al. | TBD | San Joaquin Sup. Ct. | Abandoned — voluntarily dismissed |
+| 5 | Newanforbi v. Palacios et al. | STK-CV-UF-2026-0001032 | San Joaquin Sup. Ct. | Dismissed — demurrer sustained w/o leave Jul. 15, 2026 |
+| 6 | Newanforbi v. HOPE et al. | 2:26-cv-00195-TLN-AC | USDC E.D. Cal. | Dismissed without prejudice — Jun. 1, 2026 |
+| 8 | Newanforbi v. Candelaria, et al. | 26WM000135 | Sacramento Sup. Ct. | Abandoned — fee-payment deadline lapsed Jul. 27, 2026 |
+| 9 | Newanforbi v. Macomber | 26WM000028 | Sacramento Sup. Ct. | Closed — demurrer sustained May 29, 2026 |
+| 10 | Newanforbi v. Macomber | C2602632 | Santa Clara Sup. Ct. | Closed — petition denied w/o prejudice Apr. 27, 2026 |
+| 11 | Newanforbi v. Macomber | TBD (USDC E.D. Cal.) | USDC E.D. Cal. | Dismissed with prejudice — Jun. 29, 2026 |
+| 13 | Newanforbi v. Urrea et al. | 2:26-cv-00190-DC-SCR | USDC E.D. Cal. | Dismissed with prejudice — Jun. 29, 2026 |
+| 14 | Newanforbi v. Urrea et al. | TBD (San Joaquin Sup. Ct.) | San Joaquin Sup. Ct. | Abandoned — voluntarily dismissed |
+| 15 | Newanforbi v. California Department of Corrections and Rehabilitation, et al. | STK-CV-UPI-2026-5417 | San Joaquin Sup. Ct. | Abandoned — dismissed with prejudice Jul. 24, 2026 |
+| 16 | Newanforbi v. Rojo | TBD (San Joaquin Sup. Ct.) | San Joaquin Sup. Ct. | Abandoned — voluntarily dismissed |
+| 17 | Newanforbi v. Maloney et al. | 2:26-cv-00194-DAD-SCR | USDC E.D. Cal. | Dismissed with prejudice — Jun. 29, 2026 |
+| 18 | Newanforbi v. Barocio | 2:26-cv-00191-DJC-CSK (PC) | USDC E.D. Cal. | Dismissed with prejudice — Jun. 29, 2026 |
+| 21 | Newanforbi v. Rojo et al. | 2:26-cv-00193-DC-CKD | USDC E.D. Cal. | Dismissed with prejudice — Jun. 29, 2026 |
+| 23 | Newanforbi v. Macy's Inc. et al. | TBD | San Joaquin Sup. Ct. | Abandoned — no adverse action occurred |
 <!-- PORTFOLIO:CLOSED_MATTERS:END -->
 
 [↑ Contents](#contents)

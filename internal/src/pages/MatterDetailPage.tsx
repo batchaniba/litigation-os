@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { Link, useParams } from "react-router-dom";
+import type { Matter } from "../types/portfolio";
 import { StatusBadge, ClusterBadge, TypeBadge, ArchiveBadge, ProceedingBadge, PhaseBadge } from "../components/Badges";
 import { EmptyState, RouteLoading } from "../components/ui/AsyncState";
 import { ServiceTracker } from "../components/ServiceTracker";
@@ -18,6 +19,17 @@ import { isArchivedMatter } from "../utils/matterLifecycle";
 
 function DetailSection({ label, children }: { label: string; children: ReactNode }) {
   return <section className="detail-section"><div className="detail-label">{label}</div>{children}</section>;
+}
+
+/** The strip shows `status_label`; the narrative only earns its own section when
+ *  it actually says more than the label already did. For matters that resolved
+ *  in one line ("Abandoned — voluntarily dismissed") the two are the same fact,
+ *  and printing both just reads as a stutter. */
+const STATUS_NARRATIVE_MARGIN = 40;
+
+function hasStatusNarrative(matter: Matter): boolean {
+  const narrative = matter.status?.trim() ?? "";
+  return narrative.length > matter.status_label.length + STATUS_NARRATIVE_MARGIN;
 }
 
 export function MatterDetailPage() {
@@ -59,12 +71,18 @@ export function MatterDetailPage() {
           <TypeBadge type={matter.type} />
           <ProceedingBadge proceeding={matter.proceeding} />
           <PhaseBadge phase={matter.phase} />
-          <StatusBadge status={matter.status} lifecycle={matter.lifecycle} />
+          <StatusBadge status={matter.status_label} lifecycle={matter.lifecycle} />
           {isArchivedMatter(matter) && <ArchiveBadge />}
         </div>
       </header>
 
       <MatterSummary matter={matter} next={activity.next} recent={activity.recent} />
+
+      {hasStatusNarrative(matter) && (
+        <DetailSection label="Current status">
+          <p className="detail-copy detail-copy-muted">{matter.status}</p>
+        </DetailSection>
+      )}
 
       {coverage && (
         <DetailSection label="Insurance coverage on file">

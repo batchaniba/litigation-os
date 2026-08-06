@@ -68,7 +68,13 @@ export interface MatterSummary {
   case_no: string;
   court: string;
   claims: string;
+  /** Full procedural narrative. Grows over the life of the matter — render it
+   *  in a prose section, never in a badge or a fixed-width cell. */
   status: string;
+  /** Short current posture (<= 60 chars) for badges, the summary strip, search
+   *  results, and the README table. Kept in sync with `status` by hand; the
+   *  length cap is enforced in validate-portfolio. */
+  status_label: string;
   lifecycle: MatterLifecycle;
   proceeding: MatterProceeding;
   phase: MatterPhase;

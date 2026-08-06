@@ -90,6 +90,7 @@ const REQUIRED_MATTER_FIELDS = [
   ["court", "string"],
   ["claims", "string"],
   ["status", "string"],
+  ["status_label", "string"],
   ["lifecycle", "string"],
   ["proceeding", "string"],
   ["phase", "string"],
@@ -103,6 +104,9 @@ const REQUIRED_MATTER_FIELDS = [
   ["damages", "string"],
   ["risk", "string"],
 ];
+/** Max length for status_label — the widest fixed slot it renders into. */
+const STATUS_LABEL_MAX = 60;
+
 const LIFECYCLE_SET = new Set(MATTER_LIFECYCLES);
 const PROCEEDING_SET = new Set(MATTER_PROCEEDINGS);
 const PHASE_SET = new Set(MATTER_PHASES);
@@ -136,6 +140,24 @@ for (const m of cases) {
       fail(`${tag}: missing required field "${field}"`);
     } else if (typeof m[field] !== type) {
       fail(`${tag}: field "${field}" should be ${type}, got ${typeof m[field]}`);
+    }
+  }
+
+  // status_label feeds badges, the at-a-glance strip, search results and the
+  // README table — all fixed-width slots. The cap is what stops it drifting
+  // back into a narrative the way `status` did.
+  if (typeof m.status_label === "string") {
+    const label = m.status_label.trim();
+    if (!label) {
+      fail(`${tag}: status_label must not be empty`);
+    } else if (label.length > STATUS_LABEL_MAX) {
+      fail(`${tag}: status_label is ${label.length} chars, max ${STATUS_LABEL_MAX} — put the detail in "status"`);
+    }
+    if (/\n/.test(m.status_label)) {
+      fail(`${tag}: status_label must be a single line`);
+    }
+    if (typeof m.status === "string" && m.status.trim().length < label.length) {
+      warn(`${tag}: status narrative is shorter than status_label — one of the two is probably stale`);
     }
   }
 

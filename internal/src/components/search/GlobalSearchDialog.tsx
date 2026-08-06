@@ -48,8 +48,8 @@ export default function GlobalSearchDialog({ onClose }: { onClose: () => void })
     if (needle.length < 2) return [];
     const found: Result[] = [];
     for (const matter of cases) {
-      const fields = [matter.caption, matter.case_no, matter.court, matter.defendants, matter.claims, ...(matter.causes ?? [])];
-      if (fields.some((field) => field?.toLowerCase().includes(needle))) found.push({ id: `matter-${matter.number}`, type: "Matter", title: `Matter ${matter.number} · ${matter.caption}`, detail: `${matter.case_no} · ${matter.status}`, matter: matter.number });
+      const fields = [matter.caption, matter.case_no, matter.court, matter.defendants, matter.claims, matter.status_label, ...(matter.causes ?? [])];
+      if (fields.some((field) => field?.toLowerCase().includes(needle))) found.push({ id: `matter-${matter.number}`, type: "Matter", title: `Matter ${matter.number} · ${matter.caption}`, detail: `${matter.case_no} · ${matter.status_label}`, matter: matter.number });
     }
     for (const document of documentIndex as DocumentIndexEntry[]) {
       if (document.label.toLowerCase().includes(needle) || document.path.toLowerCase().includes(needle)) {

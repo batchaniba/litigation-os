@@ -401,11 +401,17 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
 .sort-control { display: flex; align-items: center; gap: 8px; white-space: nowrap; font-family: var(--font-sans); font-size: 10px; text-transform: uppercase; }
 .matter-actions { display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex-wrap: wrap; margin-top: -24px; }
 .matter-actions a { color: var(--gold); font-family: var(--font-sans); font-size: 10px; font-weight: 700; text-decoration: none; }
-.matter-summary { display: grid; grid-template-columns: .8fr 1.4fr .7fr 1.4fr; gap: 0; margin: 0 0 26px; overflow: hidden; border: 1px solid var(--card-border); border-radius: 10px; background: var(--card-bg); }
+/* At-a-glance strip. Status and Deadline are short by contract (status_label is
+   length-capped; deadline is a date), so they get the narrow columns; Next
+   action and Recent development carry sentences. Every cell is line-clamped so
+   an over-long value degrades into an ellipsis instead of stretching the row. */
+.matter-summary { display: grid; grid-template-columns: 1fr 1.3fr .7fr 1.3fr; gap: 0; margin: 0 0 26px; overflow: hidden; border: 1px solid var(--card-border); border-radius: 10px; background: var(--card-bg); }
 .matter-summary-item { min-width: 0; padding: 14px 16px; border-right: 1px solid rgb(148 163 184 / 15%); font-family: var(--font-sans); font-size: 11px; line-height: 1.5; }
 .matter-summary-item:last-child { border-right: 0; }
-.matter-summary-value { color: var(--secondary-text); }
+.matter-summary-value { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 4; line-clamp: 4; overflow: hidden; color: var(--secondary-text); overflow-wrap: anywhere; }
 .matter-summary-value.accent { color: var(--gold); }
+/* Nothing recorded is not news: recede rather than spend a gold cell on it. */
+.matter-summary-value.is-empty { color: var(--subtle-text); font-style: italic; opacity: .75; }
 .document-group { border: 1px solid; border-radius: 8px; margin-bottom: 8px; overflow: hidden; }
 .document-group > summary { display: flex; justify-content: space-between; gap: 16px; cursor: pointer; padding: 10px 12px; color: var(--gold); font-family: var(--font-sans); font-size: 11px; font-weight: 700; }
 .document-list { display: grid; gap: 1px; border-top: 1px solid rgb(148 163 184 / 12%); }

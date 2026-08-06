@@ -109,7 +109,7 @@ export function MatterCard({ matter: summary, isOpen, onToggle }: MatterCardProp
             <TypeBadge type={c.type} />
             <ProceedingBadge proceeding={c.proceeding} />
             <PhaseBadge phase={c.phase} />
-            <StatusBadge status={c.status} lifecycle={c.lifecycle} />
+            <StatusBadge status={c.status_label} lifecycle={c.lifecycle} />
             <PolicyLimitsBadge limits={c.policy_limits} coverage={coverageForMatter(c.number)} />
             {isArchivedMatter(c) && <ArchiveBadge />}
           </div>
