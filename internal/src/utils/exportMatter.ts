@@ -1,4 +1,41 @@
 import type { Matter, TimelineEvent } from "../types/portfolio";
+import { clusterForMatter, exposuresForMatter, linkKindLabel, relatedMatters } from "./crossMatter";
+
+export function crossMatterSection(matter: Matter): string {
+  const cluster = clusterForMatter(matter.number);
+  if (!cluster) return "";
+  const peers = relatedMatters(matter.number);
+  const exposures = exposuresForMatter(matter.number);
+  return `
+## Cross-matter significance
+
+**Cluster:** ${cluster.label}
+
+${peers
+    .map(
+      (peer) =>
+        `### Matter ${peer.number} — ${peer.relationship}\n\n- **Relationship:** ${peer.kinds
+          .map(linkKindLabel)
+          .join("; ")}\n- **Severity:** ${peer.severity}\n\n${peer.significance}\n\nSources:\n${peer.sources
+          .map((source) => `- ${source}`)
+          .join("\n")}`,
+    )
+    .join("\n\n")}
+
+### Open cross-matter exposure
+
+${
+    exposures.length
+      ? exposures
+          .map(
+            (exposure) =>
+              `- **${exposure.label}** (${exposure.severity}, ${exposure.status}) — ${exposure.detail}\n  - Remedy: ${exposure.remedy}`,
+          )
+          .join("\n")
+      : "None recorded."
+  }
+`;
+}
 
 export function matterMarkdown(matter: Matter, next?: TimelineEvent, recent?: TimelineEvent) {
   return `# Matter ${matter.number}: ${matter.caption}
@@ -40,7 +77,7 @@ ${matter.risk}
 ## Documents
 
 ${(matter.documents ?? []).map((document) => `- ${document.label}`).join("\n") || "No documents linked."}
-`;
+${crossMatterSection(matter)}`;
 }
 
 export function downloadMatterSummary(matter: Matter, content: string) {
