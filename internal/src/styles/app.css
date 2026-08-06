@@ -313,9 +313,11 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
 .sort-control { display: flex; align-items: center; gap: 8px; white-space: nowrap; font-family: var(--font-sans); font-size: 10px; text-transform: uppercase; }
 .matter-actions { display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex-wrap: wrap; margin-top: -24px; }
 .matter-actions a { color: var(--gold); font-family: var(--font-sans); font-size: 10px; font-weight: 700; text-decoration: none; }
-.matter-summary { display: grid; grid-template-columns: .8fr 1.4fr .7fr 1.4fr; gap: 0; border: 1px solid; border-radius: 10px; margin: 0 0 26px; overflow: hidden; }
+.matter-summary { display: grid; grid-template-columns: .8fr 1.4fr .7fr 1.4fr; gap: 0; margin: 0 0 26px; overflow: hidden; border: 1px solid var(--card-border); border-radius: 10px; background: var(--card-bg); }
 .matter-summary-item { min-width: 0; padding: 14px 16px; border-right: 1px solid rgb(148 163 184 / 15%); font-family: var(--font-sans); font-size: 11px; line-height: 1.5; }
 .matter-summary-item:last-child { border-right: 0; }
+.matter-summary-value { color: var(--secondary-text); }
+.matter-summary-value.accent { color: var(--gold); }
 .document-group { border: 1px solid; border-radius: 8px; margin-bottom: 8px; overflow: hidden; }
 .document-group > summary { display: flex; justify-content: space-between; gap: 16px; cursor: pointer; padding: 10px 12px; color: var(--gold); font-family: var(--font-sans); font-size: 11px; font-weight: 700; }
 .document-list { display: grid; gap: 1px; border-top: 1px solid rgb(148 163 184 / 12%); }
@@ -383,6 +385,19 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
 .document-group { background: var(--card-bg); border-color: var(--card-border); }
 .document-list a { color: var(--secondary-text); }
 .document-type { color: var(--gold); }
+
+/* Service tracker (matter detail) */
+.service-tracker { margin-top: 18px; }
+.service-tracker-list { display: flex; flex-direction: column; gap: 8px; }
+.service-tracker-row { display: flex; align-items: center; gap: 12px; padding: 10px 12px; border: 1px solid var(--card-border); border-radius: 6px; background: var(--navy-subtle-bg); }
+.service-tracker-check { display: flex; flex-shrink: 0; align-items: center; justify-content: center; width: 20px; height: 20px; border: 2px solid var(--card-border); border-radius: 4px; color: #10b981; font-size: 14px; font-weight: 700; }
+.service-tracker-row.is-served .service-tracker-check { border-color: #10b981; background: rgb(16 185 129 / 9%); }
+.service-tracker-body { flex: 1; min-width: 0; }
+.service-tracker-name { margin-bottom: 2px; color: var(--heading); font-family: var(--font-sans); font-size: 13px; font-weight: 600; }
+.service-tracker-meta { color: var(--subtle-text); font-family: var(--font-sans); font-size: 11px; }
+.service-tracker-date { margin-top: 2px; color: #10b981; font-family: var(--font-sans); font-size: 10px; }
+.service-tracker-status { flex-shrink: 0; padding: 4px 8px; border-radius: 4px; background: var(--card-border); color: #9ca3af; font-family: var(--font-sans); font-size: 11px; font-weight: 600; }
+.service-tracker-row.is-served .service-tracker-status { background: rgb(16 185 129 / 8%); color: #10b981; }
 
 /* Calendar and modal */
 .calendar-toolbar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }

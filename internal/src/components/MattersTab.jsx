@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { cases } from "../data/matters";
 import { GOLD } from "../constants";
-import { useTheme } from "../ThemeContext";
 import { isArchivedMatter } from "../utils/matterLifecycle";
 import { SavedViews } from "./matters/SavedViews";
 import { MatterCard } from "./matters/MatterCard";
