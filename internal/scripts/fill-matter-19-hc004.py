@@ -45,11 +45,10 @@ PACKET_OUT = OUT_DIR / (
 
 # Party / caption
 NAME = "Brendan Ngehsi Newanforbi"
-NAME_CAPS = "BRENDAN NGEHSI NEWANFORBI"
-STREET = "1090 S Milpitas Blvd, Unit #304"
-CITY = "Milpitas"
+STREET = "1455 Cat Tail Drive"
+CITY = "Stockton"
 STATE = "CA"
-ZIP = "95035"
+ZIP = "95204"
 PHONE = "(209) 801-4442"
 EMAIL = "bnn.cdl@gmail.com"
 ATTY_FOR = "Petitioner in pro per"
@@ -98,7 +97,7 @@ GRAY = Color(0.5, 0.5, 0.5)
 def fields() -> dict[str, str]:
     return {
         F["case"]: CASE_NUMBER,
-        F["name"]: NAME_CAPS,
+        F["name"]: NAME,
         F["street"]: STREET,
         F["city"]: CITY,
         F["state"]: STATE,
@@ -107,8 +106,8 @@ def fields() -> dict[str, str]:
         F["email"]: EMAIL,
         F["atty_for"]: ATTY_FOR,
         F["county"]: COUNTY,
-        F["in_re"]: NAME_CAPS,
-        F["def_name"]: NAME_CAPS,
+        F["in_re"]: NAME,
+        F["def_name"]: NAME,
         F["dob"]: DOB,
         F["cdc"]: CDC_NO,
         F["pet_name"]: NAME,
