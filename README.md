@@ -37,8 +37,8 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 | Representation | Pro Se / In Propria Persona |
 | Jurisdictions | USDC E.D. Cal., USDC N.D. Cal., San Joaquin Sup. Ct., Alameda Sup. Ct., Sacramento Sup. Ct., Santa Clara Sup. Ct. |
 <!-- PORTFOLIO:OVERVIEW_COUNTS:START -->
-| Total Matters | 32 |
-| Active / Open | 15 |
+| Total Matters | 33 |
+| Active / Open | 16 |
 | Settled | 1 (Matter 22 — Newanforbi v. Pilot Travel Centers LLC, July 14, 2026) |
 | Dismissed / Closed / Abandoned | 16 |
 <!-- PORTFOLIO:OVERVIEW_COUNTS:END -->
@@ -171,6 +171,7 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | 30 | Newanforbi v. Moua, et al. | TBD | USDC N.D. Cal. | Federal | Pre-filing — anticipated filing Sep. 16, 2026 |
 | 31 | Newanforbi v. First Advantage LLC | TBD | San Joaquin Sup. Ct. (anticipated) | State | Pre-filing |
 | 32 | Nforbi v. Meza-Gonzalez, et al. | TBD | USDC N.D. Cal. (San Francisco / Oakland Div. — Civil L.R. 3-2(c)-(d)); complaint drafted Aug. 7, 2026, not yet filed | Federal | N.D. Cal. §1983 intake packet ready to file |
+| 33 | Nforbi v. Candelaria & Gordon | TBD | USDC N.D. Cal. (San Francisco / Oakland Div. — Civil L.R. 3-2(c)-(d)); complaint drafted Aug. 7, 2026, not yet filed | Federal | N.D. Cal. §1983 intake packet ready to file |
 <!-- PORTFOLIO:ACTIVE_MATTERS:END -->
 
 ### Settled

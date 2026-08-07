@@ -183,6 +183,7 @@
       "Count III — 42 U.S.C. § 1983 Injunctive Relief (Ex parte Young): (a) vacate Feb 11 2025 APS Decision Case 34739340; (b) immediate CDL reinstatement free of suspension penalties; (c) prohibit $125 reissue fee and SR-22 requirement; (d) require neutral decisionmaker for any new hearing (against Gordon, official capacity)"
     ],
     "archived": false,
+    "note": "N.D. Cal. counterpart drafted Aug. 7, 2026 under the Ngwa Nforbi caption as Matter 33 (Nforbi v. Candelaria & Gordon) — same two defendants, same Feb. 11, 2025 APS decision, not yet filed. Do not plead this matter's damages a second time under Matter 33 without reconciling the totals.",
     "evidenceCount": 17,
     "documentCount": 19
   },
@@ -935,5 +936,34 @@
     "archived": false,
     "evidenceCount": 9,
     "documentCount": 98
+  },
+  {
+    "number": 33,
+    "caption": "Nforbi v. Candelaria & Gordon",
+    "case_no": "TBD",
+    "court": "USDC N.D. Cal. (San Francisco / Oakland Div. — Civil L.R. 3-2(c)-(d)); complaint drafted Aug. 7, 2026, not yet filed",
+    "claims": "42 U.S.C. § 1983 against DMV Driver Safety Hearing Officer Diana Candelaria in her individual capacity (damages), and 28 U.S.C. §§ 2201, 2202 / Ex parte Young against DMV Director Steve Gordon in his official capacity (declaratory and injunctive relief) — Fourteenth Amendment procedural due process: structural bias, denial of a fair hearing, and clear absence of statutory jurisdiction in the APS license-suspension hearing",
+    "status": "PRE-FILING — Complaint for Damages and for Declaratory and Injunctive Relief (42 U.S.C. § 1983; 28 U.S.C. §§ 2201, 2202; Ex parte Young; three counts against Candelaria, two against Gordon; jury demand) drafted Aug. 7, 2026 for the N.D. Cal.; JS 44 civil cover sheet, two AO 440 summonses (Candelaria, Gordon), and the Consent to Magistrate Judge Jurisdiction form are filled and ready to file",
+    "status_label": "N.D. Cal. §1983 intake packet ready to file",
+    "lifecycle": "pre_filing",
+    "proceeding": "federal_civil",
+    "phase": "pre_filing",
+    "note": "N.D. Cal. counterpart to Matter 7 (Newanforbi v. Candelaria, E.D. Cal., 2:26-cv-00983-DC-CSK) — the same relationship Matter 32 has to Matters 1/2/20/24 for the CHP officers. Same plaintiff, same two DMV defendants (Candelaria individually, Gordon officially), new caption, new district. Matter 8 (Sacramento Sup. Ct. writ of mandate against Candelaria) is unrelated and abandoned; do not confuse the three. Do not plead the Matter 7 damages figures a second time here without reconciling the totals.",
+    "badge": "PENDING",
+    "filed": "Not yet filed — complaint and intake packet dated Aug. 7, 2026",
+    "judge": "TBD",
+    "cluster": 1,
+    "type": "Federal",
+    "defendants": "Diana Candelaria, DMV Driver Safety Hearing Officer, individual capacity; Steve Gordon, Director of the California DMV, official capacity only (Ex parte Young); DOES 1-10",
+    "causes": [
+      "Count I — Fourteenth Amendment Procedural Due Process, Structural Bias (§ 1983; against Candelaria, individual capacity) — DMV's dual investigator/advocate/adjudicator role, condemned in Cal. DUI Lawyers Ass'n v. DMV, Knudsen v. DMV, and Clarke v. Gordon",
+      "Count II — Fourteenth Amendment Procedural Due Process, Denial of a Fair Hearing (§ 1983; against Candelaria, individual capacity) — ratified the fabricated DS-367 without engaging the Detention Certificate, dashcam evidence, or Mercer v. DMV",
+      "Count III — Fourteenth Amendment Procedural Due Process, Clear Absence of Statutory Jurisdiction (§ 1983; against Candelaria, individual capacity) — Stump v. Sparkman; APS refusal framework's 'lawfully arrested' predicate (Veh. Code § 13353(a)(1)) destroyed by the § 851.6 Detention Certificate before the hearing",
+      "Count IV — Declaratory Relief (§ 1983; 28 U.S.C. §§ 2201, 2202; against Gordon, official capacity, Ex parte Young) — DMV's dual-role APS framework and its treatment of the Detention Certificate violate the Fourteenth Amendment",
+      "Count V — Injunctive Relief (§ 1983; against Gordon, official capacity, Ex parte Young) — vacatur of the suspension, the $125 reissue fee, and the three-year SR-22 mandate; structural reform of the APS hearing process"
+    ],
+    "archived": false,
+    "evidenceCount": 5,
+    "documentCount": 6
   }
 ]

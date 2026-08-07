@@ -1,0 +1,70 @@
+{
+  "number": 33,
+  "caption": "Nforbi v. Candelaria & Gordon",
+  "case_no": "TBD",
+  "court": "USDC N.D. Cal. (San Francisco / Oakland Div. — Civil L.R. 3-2(c)-(d)); complaint drafted Aug. 7, 2026, not yet filed",
+  "claims": "42 U.S.C. § 1983 against DMV Driver Safety Hearing Officer Diana Candelaria in her individual capacity (damages), and 28 U.S.C. §§ 2201, 2202 / Ex parte Young against DMV Director Steve Gordon in his official capacity (declaratory and injunctive relief) — Fourteenth Amendment procedural due process: structural bias, denial of a fair hearing, and clear absence of statutory jurisdiction in the APS license-suspension hearing",
+  "status": "PRE-FILING — Complaint for Damages and for Declaratory and Injunctive Relief (42 U.S.C. § 1983; 28 U.S.C. §§ 2201, 2202; Ex parte Young; three counts against Candelaria, two against Gordon; jury demand) drafted Aug. 7, 2026 for the N.D. Cal.; JS 44 civil cover sheet, two AO 440 summonses (Candelaria, Gordon), and the Consent to Magistrate Judge Jurisdiction form are filled and ready to file",
+  "status_label": "N.D. Cal. §1983 intake packet ready to file",
+  "lifecycle": "pre_filing",
+  "proceeding": "federal_civil",
+  "phase": "pre_filing",
+  "note": "N.D. Cal. counterpart to Matter 7 (Newanforbi v. Candelaria, E.D. Cal., 2:26-cv-00983-DC-CSK) — the same relationship Matter 32 has to Matters 1/2/20/24 for the CHP officers. Same plaintiff, same two DMV defendants (Candelaria individually, Gordon officially), new caption, new district. Matter 8 (Sacramento Sup. Ct. writ of mandate against Candelaria) is unrelated and abandoned; do not confuse the three. Do not plead the Matter 7 damages figures a second time here without reconciling the totals.",
+  "badge": "PENDING",
+  "filed": "Not yet filed — complaint and intake packet dated Aug. 7, 2026",
+  "judge": "TBD",
+  "cluster": 1,
+  "type": "Federal",
+  "defendants": "Diana Candelaria, DMV Driver Safety Hearing Officer, individual capacity; Steve Gordon, Director of the California DMV, official capacity only (Ex parte Young); DOES 1-10",
+  "causes": [
+    "Count I — Fourteenth Amendment Procedural Due Process, Structural Bias (§ 1983; against Candelaria, individual capacity) — DMV's dual investigator/advocate/adjudicator role, condemned in Cal. DUI Lawyers Ass'n v. DMV, Knudsen v. DMV, and Clarke v. Gordon",
+    "Count II — Fourteenth Amendment Procedural Due Process, Denial of a Fair Hearing (§ 1983; against Candelaria, individual capacity) — ratified the fabricated DS-367 without engaging the Detention Certificate, dashcam evidence, or Mercer v. DMV",
+    "Count III — Fourteenth Amendment Procedural Due Process, Clear Absence of Statutory Jurisdiction (§ 1983; against Candelaria, individual capacity) — Stump v. Sparkman; APS refusal framework's 'lawfully arrested' predicate (Veh. Code § 13353(a)(1)) destroyed by the § 851.6 Detention Certificate before the hearing",
+    "Count IV — Declaratory Relief (§ 1983; 28 U.S.C. §§ 2201, 2202; against Gordon, official capacity, Ex parte Young) — DMV's dual-role APS framework and its treatment of the Detention Certificate violate the Fourteenth Amendment",
+    "Count V — Injunctive Relief (§ 1983; against Gordon, official capacity, Ex parte Young) — vacatur of the suspension, the $125 reissue fee, and the three-year SR-22 mandate; structural reform of the APS hearing process"
+  ],
+  "key_facts": "Companion action to Matter 7 (same Feb. 11, 2025 APS Decision, APS Case No. 34739340, suspending Plaintiff's Class A CDL for one year), refiled in the N.D. Cal. under the Ngwa Nforbi name form rather than the Newanforbi caption Matter 7 uses. Candelaria, a DMV Driver Safety Hearing Officer, presided over the January 24, 2025 Microsoft Teams APS hearing and issued the February 11, 2025 written decision sustaining the suspension, the $125 reissue fee, and a three-year SR-22 requirement running through approximately February 2028. The decision rested on the same DS-367 and CHP Arrest-Investigation Report (CHP Case No. RJ68845) pleaded as fabricated in the companion Nforbi v. Meza-Gonzalez & Melano action (Matter 32) — Candelaria's decision never engages the CHP's own November 5, 2024 Penal Code § 851.6 Detention Certificate reclassifying the encounter as 'a detention only, not an arrest.' Gordon, DMV Director, is sued only in his official capacity for prospective relief; Clarke v. Gordon, 104 Cal.App.5th 1267 (2024), named him personally four months before this hearing.",
+  "procedural_status": "On August 7, 2026 a Complaint for Damages and for Declaratory and Injunctive Relief under 42 U.S.C. § 1983, 28 U.S.C. §§ 2201-2202, and Ex parte Young was drafted under the Ngwa Nforbi v. Candelaria & Gordon caption for the Northern District of California, together with the supporting intake packet: JS 44 civil cover sheet (nature of suit 440, federal question, jury demand, related case 4:26-cv-05953-ASK), AO 440 summonses for Candelaria and Gordon (service at the DMV's Legal Affairs Division, Sacramento headquarters — the complaint gives no office address for Candelaria, whose hearing was conducted remotely), and a Consent to Magistrate Judge Jurisdiction form (CONSENT checked). Nothing has been filed: no case number has issued, the civil action number and clerk signature blocks on both summonses are blank, the JS 44 and consent form signature lines are blank for Plaintiff's wet signature, and the consent form's case-number field is blank pending assignment (due within 14 days of case initiation).",
+  "damages": "Prayer against Candelaria: compensatory damages not less than $150,000 (lost wages, lost employment, the $125 reissue fee, SR-22 premiums paid and continuing, out-of-pocket and reputational/emotional-distress damages) and punitive damages not less than $100,000 — a $250,000 floor used on the JS 44 demand line. Against Gordon: declaratory judgment and injunctive relief only (vacatur of the suspension, the reissue fee, and the SR-22 mandate; structural reform), no damages. These figures overlap the CDL-suspension damages already pleaded in Matter 7 for the same underlying decision; do not aggregate the two without reconciling.",
+  "risk": "Same core risk as Matter 32: this is a second N.D. Cal. filing over facts already pending in Matter 7 (E.D. Cal., F&R stage) and referenced in the Serrato action (4:26-cv-05953-ASK) and the Meza-Gonzalez complaint (Matter 32) — filing here while Matter 7 remains live invites claim-splitting and issue-preclusion arguments from the AG, and a Civil L.R. 3-12 relation motion to the Serrato docket should accompany any filing. Quasi-judicial immunity is the central substantive risk for Candelaria: the complaint pleads investigative/advocacy conduct and a clear-absence-of-jurisdiction theory under Stump v. Sparkman specifically to defeat it, but that is a live, contested question, not a settled one. Eleventh Amendment immunity is pled around via Ex parte Young for Gordon (official capacity, prospective relief only) — do not add damages against Gordon.",
+  "evidence": [
+    "Complaint for Damages and for Declaratory and Injunctive Relief (Aug. 7, 2026, N.D. Cal., not yet filed) — matter-33 root",
+    "DMV Notification of Findings and Decision, APS Case No. 34739340 (Feb. 11, 2025) — see Matter 7 evidence for the underlying document",
+    "DMV Notice of Hearing Appointment (Form DS 2304) — 'The Hearing Officer will develop the facts and render a final decision on your matter'",
+    "CHP Penal Code § 851.6 Detention Certificate (Nov. 5, 2024, CHP Case No. RJ68845) — see Matter 32 evidence",
+    "Cal. DUI Lawyers Ass'n v. DMV, 77 Cal.App.5th 517 (2022); Knudsen v. DMV, 101 Cal.App.5th 186 (2024); Clarke v. Gordon, 104 Cal.App.5th 1267 (2024) — structural-bias authority, Gordon named personally in Clarke"
+  ],
+  "documents": [
+    {
+      "label": "Complaint for Damages and for Declaratory and Injunctive Relief (42 U.S.C. § 1983; 28 U.S.C. §§ 2201, 2202; Ex parte Young; five counts; jury demand) — Nforbi v. Candelaria & Gordon, N.D. Cal. (drafted Aug. 7, 2026, not yet filed)",
+      "path": "/documents/matter-33/Complaint Nforbi v Candelaria and Gordon NDCal.pdf",
+      "filed": false
+    },
+    {
+      "label": "JS 44 Civil Cover Sheet — N.D. Cal. (filled Aug. 7, 2026; NOS 440, federal question, jury demand, related case 4:26-cv-05953-ASK; signature line left blank for Plaintiff's wet signature; 'FOR OFFICE USE ONLY' strip left for the clerk)",
+      "path": "/documents/matter-33/JS 44 Civil Cover Sheet - Nforbi v. Candelaria & Gordon (N.D. Cal.) (Aug 7 2026).pdf",
+      "filed": false
+    },
+    {
+      "label": "AO 440 Summons — Diana Candelaria (filled Aug. 7, 2026; serve at DMV Legal Affairs Division, Sacramento HQ — the complaint gives no office address for her; civil action number and clerk signature left blank for issuance)",
+      "path": "/documents/matter-33/AO 440 Summons - Diana Candelaria (N.D. Cal.) (Aug 7 2026).pdf",
+      "filed": false
+    },
+    {
+      "label": "AO 440 Summons — Steve Gordon (filled Aug. 7, 2026; serve at DMV Legal Affairs Division, Sacramento HQ, official capacity; civil action number and clerk signature left blank for issuance)",
+      "path": "/documents/matter-33/AO 440 Summons - Steve Gordon (N.D. Cal.) (Aug 7 2026).pdf",
+      "filed": false
+    },
+    {
+      "label": "Consent to Magistrate Judge Jurisdiction — N.D. Cal. (28 U.S.C. § 636(c); CONSENT box checked, dated Aug. 7, 2026; signature line left blank for Plaintiff's wet signature; case number blank pending assignment, due within 14 days of case initiation)",
+      "path": "/documents/matter-33/Consent to Magistrate Judge Jurisdiction - Nforbi v. Candelaria & Gordon (N.D. Cal.) (Aug 7 2026).pdf",
+      "filed": false
+    },
+    {
+      "label": "N.D. Cal. Intake Packet — print copy (JS 44 + both AO 440 summonses + Consent form, 7 pp., field values flattened into the page content for printing)",
+      "path": "/documents/matter-33/N.D. Cal. Intake Packet (print copy) - Nforbi v. Candelaria & Gordon (Aug 7 2026).pdf",
+      "filed": false
+    }
+  ],
+  "archived": false
+}
