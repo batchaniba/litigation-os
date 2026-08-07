@@ -287,20 +287,29 @@ export const lawyer_fees = [
   },
   {
     number: 32, caption: "Ngwa Nforbi v. Meza-Gonzalez, et al", caseNumber: "TBD",
-    court: "TBD (CHP-cluster PDF home; Matter 2 is the filed Alameda Meza-Gonzalez action)", type: "State — Nov. 1, 2024 CHP cluster document store",
-    status: "Opened Aug. 7, 2026 — owns incident evidence plus all PDFs relocated from Matters 1, 2, 7, 20, and 24; no independent complaint filed",
-    documentsCount: 92, totalPagesReal: 933,
+    court: "TBD (CHP-cluster PDF home for Matters 1/2/20/24; Matter 2 is the filed Alameda Meza-Gonzalez action)", type: "State — Nov. 1, 2024 CHP cluster document store",
+    status: "Opened Aug. 7, 2026 — owns PDFs relocated from Matters 1, 2, 20, and 24; Nov. 1 / Candelaria APS set moved to Matter 33; no independent complaint filed",
+    documentsCount: 73, totalPagesReal: 731,
+    hours: { low: 0, high: 0, mid: 0 },
+    cost: { low: 0, high: 0, mid: 0 },
+    notes: "Owns 73 PDFs / 731 pages (pypdf) under matter-32/from-01|02|20|24/. Drafting/review hours for those filings remain attributed to source Matters 1, 2, 20, and 24. The previously billed 47-page Nov. 1 incident evidence set and Matter 7 Candelaria PDFs were relocated to Matter 33 on August 7, 2026 — that evidence-compilation fee line transferred with them. Matter 32's fee line is $0 to avoid double-counting."
+  },
+  {
+    number: 33, caption: "Newanforbi v. Candelaria (DMV APS / Nov. 1, 2024)", caseNumber: "TBD",
+    court: "TBD (Candelaria / DMV APS PDF home; Matter 7 is the live federal action; Matter 8 abandoned)", type: "Federal — Candelaria / DMV APS document store",
+    status: "Opened Aug. 7, 2026 — owns Nov. 1 / APS incident evidence, Matter 7 Candelaria PDFs, Matter 8 mandamus PDFs, and the June 15, 2026 Candelaria F&R; no independent complaint filed",
+    documentsCount: 26, totalPagesReal: 312,
     hours: { low: 18, high: 40, mid: 29 },
     cost: { low: 5040, high: 11200, mid: 8120 },
-    notes: "Owns 92 PDFs / 933 pages (pypdf): 6 incident-evidence files at matter-32/ root (47 pages) plus 86 filings relocated into matter-32/from-01|02|07|20|24/. Drafting/review hours for the relocated filings remain attributed to source Matters 1, 2, 7, 20, and 24 — re-billing those pages here would double-count. Matter 32's fee line covers only the previously unowned 47-page incident evidence set at evidence-compilation rates."
+    notes: "Owns 26 PDFs / 312 pages (pypdf): 7 Nov. 1 / APS incident files under matter-33/incident/ (48 pages including Centerline wage reference), 12 Matter 7 Candelaria federal PDFs under from-07/, 6 Matter 8 mandamus PDFs under from-08/, and the 10-page June 15, 2026 Candelaria F&R under opinions/. Drafting/review hours for from-07 and from-08 filings remain attributed to Matters 7 and 8 — re-billing those pages here would double-count. Matter 33's fee line covers the previously unowned Nov. 1 / APS incident evidence set at evidence-compilation rates (transferred from Matter 32)."
   },
 ];
 
 export const lawyer_fees_summary = {
   analysisDate: "2026-08-07",
-  totalMatters: 32,
-  totalDocumentsAnalyzed: 314,
-  totalPagesReal: 3691,
+  totalMatters: 33,
+  totalDocumentsAnalyzed: 315,
+  totalPagesReal: 3701,
   methodology: {
     blendedHourlyRate: 280,
     rateRange: { seniorPartner: [350, 450], midAssociate: [250, 350], paralegal: [150, 200] },
@@ -309,7 +318,7 @@ export const lawyer_fees_summary = {
   totalEstimatedHours: { low: 2774.3, high: 4598.2, mid: 3678.75 },
   totalEstimatedCost: { low: 776804, high: 1287496, mid: 1030050 },
   byCluster: {
-    cluster1: { label: "CHP / DUI / DMV", matters: [1, 2, 7, 8, 20, 24, 32], costLow: 139636, costMid: 185332, costHigh: 231028 },
+    cluster1: { label: "CHP / DUI / DMV", matters: [1, 2, 7, 8, 20, 24, 32, 33], costLow: 139636, costMid: 185332, costHigh: 231028 },
     cluster2: { label: "Parole Retaliation / HOPE", matters: [3, 4, 5, 6, 11, 13, 14, 15, 16, 17, 18, 21, 28, 30], costLow: 459312, costMid: 602392, costHigh: 749672 },
     cluster3: { label: "Consumer Fraud / Employment", matters: [12, 22, 23, 25, 26, 27, 29, 31], costLow: 136836, costMid: 185290, costHigh: 233660 },
     cluster4: { label: "Administrative Writs & Habeas", matters: [9, 10, 19], costLow: 41020, costMid: 57050, costHigh: 73080 },

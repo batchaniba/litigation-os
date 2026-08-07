@@ -18,7 +18,7 @@ import {
 } from "./crossMatter";
 import { getMatterSummary } from "../data/matters";
 
-const CLUSTER_MATTERS = [1, 2, 7, 20, 24, 32];
+const CLUSTER_MATTERS = [1, 2, 7, 20, 24, 32, 33];
 
 describe("cross-matter graph integrity", () => {
   it("defines at least one cluster", () => {
@@ -114,9 +114,9 @@ describe("clusterForMatter", () => {
 });
 
 describe("relatedMatters", () => {
-  it("ties Matter 1 to the five other cluster matters", () => {
-    // High-severity peers first (2, 7, 20, 32), then medium (24)
-    expect(relatedMatterNumbers(1)).toEqual([2, 7, 20, 32, 24]);
+  it("ties Matter 1 to the six other cluster matters", () => {
+    // High-severity peers first (2, 7, 20, 32, 33), then medium (24)
+    expect(relatedMatterNumbers(1)).toEqual([2, 7, 20, 32, 33, 24]);
   });
 
   it("never returns the matter itself", () => {
