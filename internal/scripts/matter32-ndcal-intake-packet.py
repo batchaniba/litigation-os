@@ -10,9 +10,10 @@ Companion filings to the August 7, 2026 Complaint for Damages (42 U.S.C.
 - Consent or Declination to Magistrate Judge Jurisdiction (N.D. Cal., 10/2020)
 
 Every value traces to the complaint: caption and parties from the caption
-block and ¶¶ 12-15, plaintiff's address from the caption, the CHP Dublin
-duty station from ¶¶ 13-14, jurisdiction from ¶ 9, and the related Serrato
-action from ¶¶ 50-52.
+block and ¶¶ 12-15, plaintiff's address from the caption, jurisdiction from
+¶ 9, and the related Serrato action from ¶¶ 50-52. The one exception is the
+service address on each summons, which is the officer's current duty station
+rather than the November 2024 Dublin assignment pleaded at ¶¶ 13-14.
 
 Left deliberately blank, because the court fills them in: the civil action
 number on both summonses, the clerk's date/signature block, the case number
@@ -58,8 +59,16 @@ DEFENDANTS_SHORT = (
     "each in his individual capacity; and DOES 1-10"
 )
 
-# CHP Dublin Area duty station — Complaint ¶¶ 13-14.
-CHP_DUBLIN = ["California Highway Patrol, Dublin Area", "4999 Gleason Drive", "Dublin, CA 94568"]
+# Current duty stations, per Plaintiff. These are not the CHP Dublin Area
+# office the Complaint pleads at ¶¶ 13-14 — Dublin is where both officers
+# were assigned on November 1, 2024; each has since moved to a different
+# Area office, and a summons has to reach the officer where he is now.
+CHP_MODESTO = ["California Highway Patrol, Modesto Area", "4030 Kiernan Avenue", "Modesto, CA 95356"]
+CHP_SOUTH_SACRAMENTO = [
+    "California Highway Patrol, South Sacramento Area",
+    "6 Massie Court",
+    "Sacramento, CA 95823",
+]
 
 SIGNATURE = f"/s/ {PLAINTIFF_MIXED}"
 FILING_DATE = "08/07/2026"
@@ -76,13 +85,13 @@ DEFENDANTS_TO_SERVE = [
     {
         "slug": "Santiago Meza-Gonzalez",
         "filename": "AO 440 Summons - Santiago Meza-Gonzalez (N.D. Cal.) (Aug 7 2026).pdf",
-        "address": ["Officer Santiago Meza-Gonzalez (Badge #023295)", *CHP_DUBLIN],
+        "address": ["Officer Santiago Meza-Gonzalez (Badge #023295)", *CHP_MODESTO],
         "proof_of_service_name": "Officer Santiago Meza-Gonzalez, California Highway Patrol",
     },
     {
         "slug": "Jose Melano",
         "filename": "AO 440 Summons - Jose Melano (N.D. Cal.) (Aug 7 2026).pdf",
-        "address": ["Officer Jose Melano (Badge #023054)", *CHP_DUBLIN],
+        "address": ["Officer Jose Melano (Badge #023054)", *CHP_SOUTH_SACRAMENTO],
         "proof_of_service_name": "Officer Jose Melano, California Highway Patrol",
     },
 ]
