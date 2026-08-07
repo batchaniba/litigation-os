@@ -27,7 +27,15 @@ import io
 from pathlib import Path
 
 from pypdf import PdfReader, PdfWriter
-from pypdf.generic import NameObject, TextStringObject
+from pypdf.generic import (
+    ArrayObject,
+    DecodedStreamObject,
+    DictionaryObject,
+    FloatObject,
+    NameObject,
+    NumberObject,
+    TextStringObject,
+)
 
 ROOT = Path(__file__).resolve().parents[2]
 FORMS = ROOT / "internal/public/documents/_form-library"
@@ -70,7 +78,7 @@ CHP_SOUTH_SACRAMENTO = [
     "Sacramento, CA 95823",
 ]
 
-SIGNATURE = f"/s/ {PLAINTIFF_MIXED}"
+# Both signature lines are left empty; Plaintiff signs by hand.
 FILING_DATE = "08/07/2026"
 CONSENT_DATE = "August 7"
 CONSENT_YEAR = "26"
@@ -139,7 +147,7 @@ JS44_FIELDS: dict[str, object] = {
     f"{JS}.S8judge[0]": RELATED_JUDGE,
     f"{JS}.S8docket[0]": RELATED_DOCKET,
     f"{JS}.date[0]": FILING_DATE,
-    f"{JS}.sig[0]": SIGNATURE,
+    # sig[0] stays empty — Plaintiff signs the cover sheet by hand.
 }
 
 # The caption boxes hold more text than fits at the template's 10 pt default:
@@ -164,21 +172,71 @@ CONSENT_FIELDS: dict[str, object] = {
     "ProSe": "PRO SE",
 }
 
+# The signature-block fields on the consent form are short widgets sitting on
+# top of printed rules, and a generated appearance drops the text a line-height
+# too high — "August 7" floats above its rule and the year reads as a
+# superscript on the preprinted "20". Every rule on that row shares a text
+# baseline at y=227 (the printed "DATE:", "20" and "NAME:" all sit on it), and
+# the "PRO SE" rule at y=161, so each value is drawn at that exact baseline in
+# the form's own Times face instead.
+CONSENT_BASELINES = {
+    "DATE": 227.0,
+    "YEAR": 227.0,
+    "NAME": 227.0,
+    "ProSe": 161.2,
+}
+
 # ------------------------------------------------------------------ plumbing
 
 
 def fill(template: Path, out_path: Path, fields: dict[str, object], page_index: int = 0,
-         font_overrides: dict[str, str] | None = None) -> Path:
+         font_overrides: dict[str, str] | None = None,
+         baselines: dict[str, float] | None = None) -> Path:
     reader = PdfReader(str(template))
     writer = PdfWriter()
     writer.append(reader)
     writer.update_page_form_field_values(writer.pages[page_index], fields)
     for name, da in (font_overrides or {}).items():
         set_default_appearance(writer, name, da)
-    writer.set_need_appearances_writer(True)
+    for name, baseline in (baselines or {}).items():
+        draw_on_baseline(writer, name, str(fields[name]), baseline)
+    # A hand-placed appearance only survives if the viewer is not told to
+    # rebuild every field itself, so /NeedAppearances goes off once we have
+    # drawn the values ourselves.
+    writer.set_need_appearances_writer(not baselines)
     with open(out_path, "wb") as fh:
         writer.write(fh)
     return out_path
+
+
+def draw_on_baseline(writer: PdfWriter, field_name: str, text: str, baseline: float,
+                     font: str = "/TiRo", size: float = 12.0, left_pad: float = 2.0) -> None:
+    """Replace a field's appearance with one drawn at an absolute page baseline."""
+    fonts = writer._root_object["/AcroForm"]["/DR"]["/Font"]
+    escaped = text.replace("\\", r"\\").replace("(", r"\(").replace(")", r"\)")
+    for page in writer.pages:
+        for annot in page.get("/Annots") or []:
+            obj = annot.get_object()
+            if str(obj.get("/T")) != field_name:
+                continue
+            x0, y0, x1, y1 = (float(v) for v in obj["/Rect"])
+            stream = DecodedStreamObject()
+            stream.set_data(
+                f"/Tx BMC q BT {font} {size} Tf 0 g "
+                f"{left_pad} {baseline - y0} Td ({escaped}) Tj ET Q EMC".encode("latin-1")
+            )
+            stream[NameObject("/Type")] = NameObject("/XObject")
+            stream[NameObject("/Subtype")] = NameObject("/Form")
+            stream[NameObject("/FormType")] = NumberObject(1)
+            stream[NameObject("/BBox")] = ArrayObject(
+                [FloatObject(0), FloatObject(0), FloatObject(x1 - x0), FloatObject(y1 - y0)]
+            )
+            resources = DictionaryObject()
+            resources[NameObject("/Font")] = fonts
+            stream[NameObject("/Resources")] = resources
+            appearance = DictionaryObject()
+            appearance[NameObject("/N")] = writer._add_object(stream)
+            obj[NameObject("/AP")] = appearance
 
 
 def set_default_appearance(writer: PdfWriter, qualified_name: str, da: str) -> None:
@@ -267,7 +325,8 @@ def main() -> None:
         fill(JS44_TEMPLATE, OUT_DIR / JS44_NAME, JS44_FIELDS,
              font_overrides=JS44_FONT_OVERRIDES),
         *[fill_summons(defendant) for defendant in DEFENDANTS_TO_SERVE],
-        fill(CONSENT_TEMPLATE, OUT_DIR / CONSENT_NAME, CONSENT_FIELDS),
+        fill(CONSENT_TEMPLATE, OUT_DIR / CONSENT_NAME, CONSENT_FIELDS,
+             baselines=CONSENT_BASELINES),
     ]
     for path in outputs:
         report(path)
