@@ -184,9 +184,9 @@ def build_exhibit_cover(out: Path) -> None:
     )
     _center(c, f"Case No. {CASE_NUMBER}", 710, "Helvetica", 8, white)
 
-    # EXHIBIT above giant letter — match Matter 12 exhibit-10 spacing.
-    _center(c, "EXHIBIT", 510, "Helvetica", 18, black)
-    _center(c, "A", 320, "Helvetica-Bold", 130, black)
+    # EXHIBIT above giant letter — keep number clear of the description rule.
+    _center(c, "EXHIBIT", 530, "Helvetica", 18, black)
+    _center(c, "A", 370, "Helvetica-Bold", 130, black)
 
     # Rule above description (Matter 12: y_top 452 → bottom-origin 340)
     c.setStrokeColor(black)
