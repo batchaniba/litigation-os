@@ -160,6 +160,16 @@ JS44_FONT_OVERRIDES = {
 # AO 440 district dropdown — must match the /Opt string byte for byte.
 AO440_DISTRICT = "        Northern District of California"
 
+# The template's "Plaintiff address" box starts 8.3 pt above the top of
+# "whose name and address are:" (that sentence sits at y=289.6-300.5) and
+# ends 1.6 pt above "If you fail to respond..." (y=216.1) below it — so the
+# name block rendered flush against both neighbors, with "Brendan Ngwa
+# Nforbi" crowding the sentence above it. Shrink the box to y=219-286,
+# clearing both lines by a few points, and drop the font to 9 pt so five
+# lines still fit comfortably in the smaller box.
+AO440_PLAINTIFF_ADDRESS_RECT = (219.0, 286.0)  # (bottom, top); left/right unchanged
+AO440_FONT_OVERRIDES = {"Plaintiff address": "/Helv 9.00 Tf 0 g"}
+
 CONSENT_FIELDS: dict[str, object] = {
     "Plaintiff Name(s)": PLAINTIFF,
     "Defendant Name(s)": "SANTIAGO MEZA-GONZALEZ, et al.",
@@ -249,6 +259,19 @@ def set_default_appearance(writer: PdfWriter, qualified_name: str, da: str) -> N
                 obj[NameObject("/DA")] = TextStringObject(da)
 
 
+def set_field_rect(writer: PdfWriter, field_name: str, bottom: float, top: float) -> None:
+    """Move a field's top/bottom edges, keeping its left/right edges as-is."""
+    for page in writer.pages:
+        for annot in page.get("/Annots") or []:
+            obj = annot.get_object()
+            if str(obj.get("/T")) != field_name:
+                continue
+            x0, _, x1, _ = (float(v) for v in obj["/Rect"])
+            obj[NameObject("/Rect")] = ArrayObject(
+                [FloatObject(x0), FloatObject(bottom), FloatObject(x1), FloatObject(top)]
+            )
+
+
 def fill_summons(defendant: dict) -> Path:
     fields: dict[str, object] = {
         "Dist.Info": AO440_DISTRICT,
@@ -257,12 +280,22 @@ def fill_summons(defendant: dict) -> Path:
         # "Civil action number", "Date_Today" and "Deputy Clerk Signature"
         # are the clerk's to complete when the summons issues.
         "Defendant address": "\n".join(defendant["address"]),
+        # Phone and e-mail share one line — see AO440_PLAINTIFF_ADDRESS_RECT
+        # above for why this box only has room for five lines, not six.
         "Plaintiff address": "\n".join(
             [PLAINTIFF_MIXED, "Plaintiff, In Pro Per", PLAINTIFF_ADDRESS,
-             PLAINTIFF_CITY_LINE, f"Telephone: {PHONE}", f"E-mail: {EMAIL}"]
+             PLAINTIFF_CITY_LINE, f"Telephone: {PHONE} — E-mail: {EMAIL}"]
         ),
     }
-    out_path = fill(AO440_TEMPLATE, OUT_DIR / defendant["filename"], fields)
+    out_path = fill(AO440_TEMPLATE, OUT_DIR / defendant["filename"], fields,
+                     font_overrides=AO440_FONT_OVERRIDES)
+    reader = PdfReader(str(out_path))
+    writer = PdfWriter()
+    writer.append(reader)
+    set_field_rect(writer, "Plaintiff address", *AO440_PLAINTIFF_ADDRESS_RECT)
+    writer.set_need_appearances_writer(True)
+    with open(out_path, "wb") as fh:
+        writer.write(fh)
     # Page 2 is the proof of service; only the "summons for" line is known
     # in advance. The server completes the rest after service.
     reader = PdfReader(str(out_path))
