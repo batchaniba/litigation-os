@@ -125,6 +125,11 @@
     "path": "/documents/matter-32/from-01/08_Return_of_Service.pdf"
   },
   {
+    "matter": 1,
+    "label": "Notice of Voluntary Dismissal Without Prejudice (draft — execution date Aug. 7, 2026) — FRCP 41(a)(1)(A)(i); entire action; not yet e-filed",
+    "path": "/documents/matter-32/from-01/Notice of Voluntary Dismissal Without Prejudice (Aug 7 2026).pdf"
+  },
+  {
     "matter": 2,
     "label": "Complaint for Damages (filed Feb. 4, 2026)",
     "path": "/documents/matter-32/from-02/Newanforbi v. Meza Gonzalez et al.pdf"
@@ -2638,6 +2643,11 @@
     "matter": 32,
     "label": "[M1] Reply — CHP (Jan. 5, 2026)",
     "path": "/documents/matter-32/from-01/Reply - CHP.pdf"
+  },
+  {
+    "matter": 32,
+    "label": "[M1] Notice of Voluntary Dismissal Without Prejudice (draft — execution date Aug. 7, 2026) — FRCP 41(a)(1)(A)(i)",
+    "path": "/documents/matter-32/from-01/Notice of Voluntary Dismissal Without Prejudice (Aug 7 2026).pdf"
   },
   {
     "matter": 32,
