@@ -152,17 +152,24 @@ def fill_hc004(out: Path) -> None:
         # real and baked into every renderer once one appears -- e.g.
         # proper-case "Ngehsi" clipped the g even though PyMuPDF, Chromium,
         # and every other engine agreed on the (wrong) result, because it was
-        # flattened into the page content, not a viewer quirk.
+        # flattened into the page content, not a viewer quirk. Calling
+        # widget.update() regenerates the appearance through PyMuPDF's layout
+        # engine instead of trusting pypdf's, which alone eliminates the clip
+        # at any font size -- confirmed by rendering every descender-bearing
+        # field in this form at the template's own 9pt with only this call
+        # added: full, uncut glyphs.
         #
-        # It's not a box-too-small-for-the-font problem -- confirmed by
-        # rendering every descender-bearing field in this form (name, email,
-        # attorney-for, in re, defendant) at the template's own 9pt with only
-        # this call added: all five come out with full, uncut glyphs. The fix
-        # is regenerating the appearance through PyMuPDF's layout engine
-        # instead of trusting pypdf's, not shrinking the font -- so this
-        # preserves the template's designed size instead of picking a smaller
-        # one.
+        # 8.67pt on top of that is a deliberate small margin below the
+        # template's 9pt, on the fields whose box is actually only ~9pt tall
+        # (rect.height <= 9.1 -- excludes In re/CaseNumber/CDCNo, which have
+        # taller boxes, and the declaration-paragraph fields petName/
+        # petCounty/petFileDate at 12-14pt, which were never part of the bug
+        # and would otherwise get swept in and shrunk for no reason by a
+        # blanket ">= 9pt" condition). Belt-and-suspenders on top of the
+        # widget.update() fix, not a substitute for it.
         if widget.field_type_string == "Text":
+            if widget.rect.height <= 9.1:
+                widget.text_fontsize = 8.67
             widget.update()
     doc.bake()
     tmp = out.with_suffix(".baked.pdf")
