@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState, type KeyboardEvent as ReactKeyboardEvent } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import { cases } from "../../data/matters";
 import documentIndex from "../../data/matters/document-index.json";
 import { timeline } from "../../data/timeline";

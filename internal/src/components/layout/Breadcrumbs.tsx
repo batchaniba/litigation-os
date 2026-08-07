@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router";
 import { NAV_ITEMS, ROUTES } from "../../routes";
 
 const titleForSegment = (segment: string) => segment.replaceAll("-", " ").replace(/\b\w/g, (letter) => letter.toUpperCase());

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import { formatLimit } from "../data/coverage";
 
 export interface CoverageRecord {
