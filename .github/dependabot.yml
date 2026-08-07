@@ -52,10 +52,14 @@ updates:
         patterns:
           - "vitest"
           - "@vitest/*"
+      # react-router joined this group at v8: it dropped the react-router-dom
+      # shim and now peers react/react-dom directly (>=19.2.7 as of 8.3.0), so a
+      # router major that outruns the React majors cannot install cleanly.
       react-stack:
         patterns:
           - "react"
           - "react-dom"
+          - "react-router*"
           - "@types/react"
           - "@types/react-dom"
     ignore:

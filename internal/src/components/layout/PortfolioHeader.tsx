@@ -1,5 +1,5 @@
 import { useEffect, useId, useState } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router";
 import { GOLD } from "../../constants";
 import { NAV_ITEMS } from "../../routes";
 import { withBase } from "../../utils/paths";

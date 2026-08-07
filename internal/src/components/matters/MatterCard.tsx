@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import { GOLD, BORDER_BLUE } from "../../constants";
 import { StatusBadge, ClusterBadge, TypeBadge, ArchiveBadge, ProceedingBadge, PhaseBadge, PolicyLimitsBadge } from "../Badges";
 import { ServiceTracker } from "../ServiceTracker";

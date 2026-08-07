@@ -1,4 +1,4 @@
-import { useSearchParams } from "react-router-dom";
+import { useSearchParams } from "react-router";
 import { MattersTab } from "../components/MattersTab";
 import { useCaseFilters, type MatterSortKey } from "../hooks/useCaseFilters";
 

@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams } from "react-router";
 import { StatusBadge, ClusterBadge, TypeBadge, ArchiveBadge, ProceedingBadge, PhaseBadge } from "../components/Badges";
 import { EmptyState, RouteLoading } from "../components/ui/AsyncState";
 import { ServiceTracker } from "../components/ServiceTracker";
