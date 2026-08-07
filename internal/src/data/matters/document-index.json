@@ -67,32 +67,32 @@
   {
     "matter": 1,
     "label": "CHP Arrest Report",
-    "path": "/documents/_shared/chp-nov1-2024/Arrest Report.pdf"
+    "path": "/documents/matter-32/Arrest Report.pdf"
   },
   {
     "matter": 1,
     "label": "CHP Officer's Statement — Chemical Test Admonition (DS 367) (Nov. 1, 2024)",
-    "path": "/documents/_shared/chp-nov1-2024/ds367 ngwanforbi f7953179.pdf"
+    "path": "/documents/matter-32/ds367 ngwanforbi f7953179.pdf"
   },
   {
     "matter": 1,
     "label": "DMV Driver Record — Discovery Production (Dec. 4, 2024)",
-    "path": "/documents/_shared/chp-nov1-2024/DAD 2024-12-04.pdf"
+    "path": "/documents/matter-32/DAD 2024-12-04.pdf"
   },
   {
     "matter": 1,
     "label": "DMV Notification of Discovery — APS Hearing Packet (Dec. 4, 2024)",
-    "path": "/documents/_shared/chp-nov1-2024/DS2044 Notification of Discovery 34739340.pdf"
+    "path": "/documents/matter-32/DS2044 Notification of Discovery 34739340.pdf"
   },
   {
     "matter": 1,
     "label": "CHP Video Transcript (Exhibit A)",
-    "path": "/documents/_shared/chp-nov1-2024/Exhibit_A_CHP_Video_Transcript.pdf"
+    "path": "/documents/matter-32/Exhibit_A_CHP_Video_Transcript.pdf"
   },
   {
     "matter": 1,
     "label": "Discovery Response",
-    "path": "/documents/_shared/chp-nov1-2024/Discovery-Response.pdf"
+    "path": "/documents/matter-32/Discovery-Response.pdf"
   },
   {
     "matter": 1,
@@ -162,32 +162,32 @@
   {
     "matter": 2,
     "label": "CHP Arrest Report",
-    "path": "/documents/_shared/chp-nov1-2024/Arrest Report.pdf"
+    "path": "/documents/matter-32/Arrest Report.pdf"
   },
   {
     "matter": 2,
     "label": "CHP Officer's Statement — Chemical Test Admonition (DS 367) (Nov. 1, 2024)",
-    "path": "/documents/_shared/chp-nov1-2024/ds367 ngwanforbi f7953179.pdf"
+    "path": "/documents/matter-32/ds367 ngwanforbi f7953179.pdf"
   },
   {
     "matter": 2,
     "label": "DMV Driver Record — Discovery Production (Dec. 4, 2024)",
-    "path": "/documents/_shared/chp-nov1-2024/DAD 2024-12-04.pdf"
+    "path": "/documents/matter-32/DAD 2024-12-04.pdf"
   },
   {
     "matter": 2,
     "label": "DMV Notification of Discovery — APS Hearing Packet (Dec. 4, 2024)",
-    "path": "/documents/_shared/chp-nov1-2024/DS2044 Notification of Discovery 34739340.pdf"
+    "path": "/documents/matter-32/DS2044 Notification of Discovery 34739340.pdf"
   },
   {
     "matter": 2,
     "label": "CHP Video Transcript (Exhibit A)",
-    "path": "/documents/_shared/chp-nov1-2024/Exhibit_A_CHP_Video_Transcript.pdf"
+    "path": "/documents/matter-32/Exhibit_A_CHP_Video_Transcript.pdf"
   },
   {
     "matter": 2,
     "label": "Discovery Response",
-    "path": "/documents/_shared/chp-nov1-2024/Discovery-Response.pdf"
+    "path": "/documents/matter-32/Discovery-Response.pdf"
   },
   {
     "matter": 2,
@@ -552,7 +552,7 @@
   {
     "matter": 7,
     "label": "CHP Arrest-Investigation Report (CHP Form 202, RJ68845, File No. 202400898)",
-    "path": "/documents/_shared/chp-nov1-2024/Arrest Report.pdf"
+    "path": "/documents/matter-32/Arrest Report.pdf"
   },
   {
     "matter": 7,
@@ -562,22 +562,22 @@
   {
     "matter": 7,
     "label": "DMV APS Notice / Notice of Stay / Temporary License (December 4, 2024)",
-    "path": "/documents/_shared/chp-nov1-2024/DAD 2024-12-04.pdf"
+    "path": "/documents/matter-32/DAD 2024-12-04.pdf"
   },
   {
     "matter": 7,
     "label": "DS2044 — Notification of Discovery (APS Case 34739340)",
-    "path": "/documents/_shared/chp-nov1-2024/DS2044 Notification of Discovery 34739340.pdf"
+    "path": "/documents/matter-32/DS2044 Notification of Discovery 34739340.pdf"
   },
   {
     "matter": 7,
     "label": "Plaintiff's Notice of Response to Request for Discovery — Personal Statement (December 9, 2024)",
-    "path": "/documents/_shared/chp-nov1-2024/Discovery-Response.pdf"
+    "path": "/documents/matter-32/Discovery-Response.pdf"
   },
   {
     "matter": 7,
     "label": "DS-367 — Chemical Test Refusal Form (Officer Meza-Gonzalez, Badge #023295, License F7953179)",
-    "path": "/documents/_shared/chp-nov1-2024/ds367 ngwanforbi f7953179.pdf"
+    "path": "/documents/matter-32/ds367 ngwanforbi f7953179.pdf"
   },
   {
     "matter": 7,
@@ -2478,5 +2478,35 @@
     "matter": 31,
     "label": "First Advantage Adverse Employment Action Notice re: FedEx application (Mar. 19, 2025) — cross-referenced from Matter 25",
     "path": "/documents/matter-25/FedEx Adverse Employment Action Notice.pdf"
+  },
+  {
+    "matter": 32,
+    "label": "CHP Arrest Report (Case RJ68845)",
+    "path": "/documents/matter-32/Arrest Report.pdf"
+  },
+  {
+    "matter": 32,
+    "label": "CHP Officer's Statement — Chemical Test Admonition (DS 367) (Nov. 1, 2024)",
+    "path": "/documents/matter-32/ds367 ngwanforbi f7953179.pdf"
+  },
+  {
+    "matter": 32,
+    "label": "CHP Video Transcript (Exhibit A)",
+    "path": "/documents/matter-32/Exhibit_A_CHP_Video_Transcript.pdf"
+  },
+  {
+    "matter": 32,
+    "label": "DMV Driver Record — Discovery Production (Dec. 4, 2024)",
+    "path": "/documents/matter-32/DAD 2024-12-04.pdf"
+  },
+  {
+    "matter": 32,
+    "label": "DMV Notification of Discovery — APS Hearing Packet (Dec. 4, 2024)",
+    "path": "/documents/matter-32/DS2044 Notification of Discovery 34739340.pdf"
+  },
+  {
+    "matter": 32,
+    "label": "CHP Discovery Response",
+    "path": "/documents/matter-32/Discovery-Response.pdf"
   }
 ]

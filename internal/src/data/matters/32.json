@@ -1,0 +1,69 @@
+{
+  "number": 32,
+  "caption": "Ngwa Nforbi v. Meza-Gonzalez, et al",
+  "case_no": "TBD",
+  "court": "TBD (same-incident companion to Matter 2 / Alameda Sup. Ct.)",
+  "claims": "November 1, 2024 CHP incident evidence set — False Imprisonment / Battery / Bane Act theories under the Ngwa Nforbi name form",
+  "status": "OPENED Aug. 7, 2026 — canonical home for the November 1, 2024 CHP incident PDFs formerly held under documents/_shared/chp-nov1-2024/; no independent complaint filed yet under this caption; operative filed tort action remains Matter 2 (Newanforbi v. Meza-Gonzalez et al., Alameda Sup. Ct. 26CV168913, stayed)",
+  "status_label": "Evidence home — Nov. 1, 2024 CHP PDFs",
+  "lifecycle": "pre_filing",
+  "proceeding": "state_civil",
+  "phase": "pre_filing",
+  "note": "Houses the shared Nov. 1, 2024 CHP incident evidence under the Ngwa Nforbi caption that appears on the DS-367; Matters 1, 2, and 7 cross-reference these PDFs",
+  "badge": "PENDING",
+  "filed": "Not yet filed",
+  "judge": "TBD",
+  "cluster": 1,
+  "type": "State",
+  "defendants": "Santiago Meza-Gonzalez (#023295); Jose Melano (#023054); State of California / CHP; DOES 1–10 (same defendant set as Matter 2 — caption uses the Ngwa Nforbi name form reflected on the DS-367 Officer's Statement)",
+  "causes": [
+    "False Imprisonment (same-incident theory as Matter 2 — not separately filed under this caption)",
+    "Battery (same-incident theory as Matter 2 — not separately filed under this caption)",
+    "Bane Act, Civ. Code § 52.1 (same-incident theory as Matter 2 — not separately filed under this caption)"
+  ],
+  "key_facts": "On November 1, 2024 at approximately 12:54 a.m., CHP Officers Santiago Meza-Gonzalez (#023295) and Jose Melano (#023054) contacted Plaintiff on the eastbound I-580 dirt shoulder near Isabel Avenue, Livermore (CHP Case No. RJ68845; CAD No. 241101GG0064). The 62-minute dashcam recording (00:54:36–01:57:10) and the contemporaneous DS-367 Officer's Statement (captioned to 'ngwanforbi' / License F7953179) are the core proof that the arrest report's alcohol-odor, slurred-speech, and beverage-present observations are fabricated. Dublin CHP later issued a Penal Code § 849(b)(1) / § 851.6 Detention Certificate reclassifying the event as a detention only. This matter consolidates those incident PDFs — Arrest Report, DS-367, dashcam transcript (Exhibit A), DMV DAD / DS-2044 discovery packet, and CHP Discovery Response — under the Ngwa Nforbi v. Meza-Gonzalez caption. They previously lived in documents/_shared/chp-nov1-2024/ and were cross-listed on Matters 1, 2, and 7.",
+  "procedural_status": "Opened August 7, 2026 as Matter 32 to give the November 1, 2024 CHP incident evidence set a dedicated matter home under the Ngwa Nforbi name form used on the DS-367. No complaint, summons, or fee waiver has been filed under this caption. The parallel state tort action already on file is Matter 2 (Newanforbi v. Meza-Gonzalez et al., Alameda Superior Court No. 26CV168913), which remains stayed pending final resolution of federal Matter 1. Matters 1, 2, and 7 continue to list these PDFs by path as cross-referenced evidence; Matter 32 is the owning folder. Any future filing under this caption would need an independent case number and would have to be coordinated with Matter 2 to avoid duplicative damages and inconsistent pleadings.",
+  "damages": "None separately demanded under this caption. Operative damages for the November 1, 2024 encounter remain those pleaded in Matter 1 (federal §1983) and Matter 2 (state false imprisonment / battery / Bane Act). This matter's role is documentary — it owns the incident PDFs so the portfolio has a single canonical path for the Ngwa Nforbi–captioned evidence set rather than a _shared/ folder.",
+  "risk": "Low as an evidence-home entry. The principal risk is caption confusion with Matter 2 (Newanforbi v. Meza-Gonzalez): the same officers and the same incident, different name-form on the caption. Do not plead or demand overlapping damages under Matter 32 without expressly reserving or dismissing the Matter 2 claim set. Path churn for Matters 1/2/7 is already resolved by pointing their documents[] entries at /documents/matter-32/.",
+  "evidence": [
+    "CHP Arrest-Investigation Report (Case RJ68845, Officer Meza-Gonzalez)",
+    "CHP Officer's Statement — Chemical Test Admonition (DS-367) — filename uses ngwanforbi / License F7953179 (Nov. 1, 2024)",
+    "CHP Video Transcript (Exhibit A) — dashcam 00:54:36–01:57:10",
+    "DMV Driver Record — Discovery Production (DAD, Dec. 4, 2024)",
+    "DMV Notification of Discovery — APS Hearing Packet (DS-2044, APS Case 34739340)",
+    "CHP Discovery Response"
+  ],
+  "documents": [
+    {
+      "label": "CHP Arrest Report (Case RJ68845)",
+      "path": "/documents/matter-32/Arrest Report.pdf",
+      "filed": false
+    },
+    {
+      "label": "CHP Officer's Statement — Chemical Test Admonition (DS 367) (Nov. 1, 2024)",
+      "path": "/documents/matter-32/ds367 ngwanforbi f7953179.pdf",
+      "filed": false
+    },
+    {
+      "label": "CHP Video Transcript (Exhibit A)",
+      "path": "/documents/matter-32/Exhibit_A_CHP_Video_Transcript.pdf",
+      "filed": false
+    },
+    {
+      "label": "DMV Driver Record — Discovery Production (Dec. 4, 2024)",
+      "path": "/documents/matter-32/DAD 2024-12-04.pdf",
+      "filed": false
+    },
+    {
+      "label": "DMV Notification of Discovery — APS Hearing Packet (Dec. 4, 2024)",
+      "path": "/documents/matter-32/DS2044 Notification of Discovery 34739340.pdf",
+      "filed": false
+    },
+    {
+      "label": "CHP Discovery Response",
+      "path": "/documents/matter-32/Discovery-Response.pdf",
+      "filed": false
+    }
+  ],
+  "archived": false
+}

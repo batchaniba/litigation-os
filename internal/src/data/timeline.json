@@ -1,5 +1,11 @@
 [
   {
+    "date": "Aug. 7, 2026",
+    "event": "Opened Matter 32 (Ngwa Nforbi v. Meza-Gonzalez, et al) as the canonical home for the November 1, 2024 CHP incident PDFs formerly held under documents/_shared/chp-nov1-2024/; Arrest Report, DS-367, dashcam transcript, DMV DAD/DS-2044 packet, and CHP Discovery Response relocated to documents/matter-32/ and cross-referenced from Matters 1, 2, and 7",
+    "matters": "32",
+    "type": "milestone"
+  },
+  {
     "date": "Jul. 30, 2026",
     "event": "Portfolio-wide gap analysis identifies First Advantage LLC — the background-check vendor that generated the registry-flagged reports underlying both Matter 25 (FedEx) and Matter 26 (UPS) — as a party with independent FCRA/ICRAA vendor-liability exposure never itself named as a defendant; opened as Matter 31, pre-complaint, no demand letter sent",
     "matters": "31",

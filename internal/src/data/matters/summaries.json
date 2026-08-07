@@ -905,5 +905,32 @@
     "archived": false,
     "evidenceCount": 10,
     "documentCount": 4
+  },
+  {
+    "number": 32,
+    "caption": "Ngwa Nforbi v. Meza-Gonzalez, et al",
+    "case_no": "TBD",
+    "court": "TBD (same-incident companion to Matter 2 / Alameda Sup. Ct.)",
+    "claims": "November 1, 2024 CHP incident evidence set — False Imprisonment / Battery / Bane Act theories under the Ngwa Nforbi name form",
+    "status": "OPENED Aug. 7, 2026 — canonical home for the November 1, 2024 CHP incident PDFs formerly held under documents/_shared/chp-nov1-2024/; no independent complaint filed yet under this caption; operative filed tort action remains Matter 2 (Newanforbi v. Meza-Gonzalez et al., Alameda Sup. Ct. 26CV168913, stayed)",
+    "status_label": "Evidence home — Nov. 1, 2024 CHP PDFs",
+    "lifecycle": "pre_filing",
+    "proceeding": "state_civil",
+    "phase": "pre_filing",
+    "note": "Houses the shared Nov. 1, 2024 CHP incident evidence under the Ngwa Nforbi caption that appears on the DS-367; Matters 1, 2, and 7 cross-reference these PDFs",
+    "badge": "PENDING",
+    "filed": "Not yet filed",
+    "judge": "TBD",
+    "cluster": 1,
+    "type": "State",
+    "defendants": "Santiago Meza-Gonzalez (#023295); Jose Melano (#023054); State of California / CHP; DOES 1–10 (same defendant set as Matter 2 — caption uses the Ngwa Nforbi name form reflected on the DS-367 Officer's Statement)",
+    "causes": [
+      "False Imprisonment (same-incident theory as Matter 2 — not separately filed under this caption)",
+      "Battery (same-incident theory as Matter 2 — not separately filed under this caption)",
+      "Bane Act, Civ. Code § 52.1 (same-incident theory as Matter 2 — not separately filed under this caption)"
+    ],
+    "archived": false,
+    "evidenceCount": 6,
+    "documentCount": 6
   }
 ]
