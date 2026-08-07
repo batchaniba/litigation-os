@@ -287,12 +287,12 @@ export const lawyer_fees = [
   },
   {
     number: 32, caption: "Ngwa Nforbi v. Meza-Gonzalez, et al", caseNumber: "TBD",
-    court: "TBD (evidence home; Matter 2 is the filed Alameda action)", type: "State — Nov. 1, 2024 CHP incident evidence set",
-    status: "Opened Aug. 7, 2026 — owns the six PDFs relocated from documents/_shared/chp-nov1-2024/; no independent complaint filed",
-    documentsCount: 6, totalPagesReal: 47,
+    court: "TBD (CHP-cluster PDF home; Matter 2 is the filed Alameda Meza-Gonzalez action)", type: "State — Nov. 1, 2024 CHP cluster document store",
+    status: "Opened Aug. 7, 2026 — owns incident evidence plus all PDFs relocated from Matters 1, 2, 7, 20, and 24; no independent complaint filed",
+    documentsCount: 92, totalPagesReal: 933,
     hours: { low: 18, high: 40, mid: 29 },
     cost: { low: 5040, high: 11200, mid: 8120 },
-    notes: "Ground-truth page counts (pypdf): Arrest Report 5; DS-367 6; Exhibit A dashcam transcript 19; DAD 4; DS-2044 8; Discovery-Response 5 = 47 pages. Previously lived under _shared/chp-nov1-2024 and were cross-listed on Matters 1/2/7 without a dedicated owning matter; Matter 2's fee note expressly excluded this shared discovery/evidence set from its heavy drivers. Billed here at evidence-compilation rates only — no complaint, motion practice, or service work under this caption."
+    notes: "Owns 92 PDFs / 933 pages (pypdf): 6 incident-evidence files at matter-32/ root (47 pages) plus 86 filings relocated into matter-32/from-01|02|07|20|24/. Drafting/review hours for the relocated filings remain attributed to source Matters 1, 2, 7, 20, and 24 — re-billing those pages here would double-count. Matter 32's fee line covers only the previously unowned 47-page incident evidence set at evidence-compilation rates."
   },
 ];
 

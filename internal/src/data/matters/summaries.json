@@ -912,12 +912,12 @@
     "case_no": "TBD",
     "court": "TBD (same-incident companion to Matter 2 / Alameda Sup. Ct.)",
     "claims": "November 1, 2024 CHP incident evidence set — False Imprisonment / Battery / Bane Act theories under the Ngwa Nforbi name form",
-    "status": "OPENED Aug. 7, 2026 — canonical home for the November 1, 2024 CHP incident PDFs formerly held under documents/_shared/chp-nov1-2024/; no independent complaint filed yet under this caption; operative filed tort action remains Matter 2 (Newanforbi v. Meza-Gonzalez et al., Alameda Sup. Ct. 26CV168913, stayed)",
-    "status_label": "Evidence home — Nov. 1, 2024 CHP PDFs",
+    "status": "OPENED Aug. 7, 2026 — owns the November 1, 2024 CHP incident evidence set and, as of the same day, all PDFs formerly stored under Matters 1, 2, 7, 20, and 24 (relocated to documents/matter-32/from-NN/); those matters retain their docket records and cross-reference these paths; no independent complaint filed under this caption",
+    "status_label": "CHP cluster PDF home (M1/2/7/20/24)",
     "lifecycle": "pre_filing",
     "proceeding": "state_civil",
     "phase": "pre_filing",
-    "note": "Houses the shared Nov. 1, 2024 CHP incident evidence under the Ngwa Nforbi caption that appears on the DS-367; Matters 1, 2, and 7 cross-reference these PDFs",
+    "note": "Canonical document store for the CHP November 2024 cluster: incident evidence at matter-32/ root; filings from Matters 1, 2, 7, 20, and 24 under matter-32/from-NN/. Source matters keep documents[] entries pointing here.",
     "badge": "PENDING",
     "filed": "Not yet filed",
     "judge": "TBD",
@@ -930,7 +930,7 @@
       "Bane Act, Civ. Code § 52.1 (same-incident theory as Matter 2 — not separately filed under this caption)"
     ],
     "archived": false,
-    "evidenceCount": 6,
-    "documentCount": 6
+    "evidenceCount": 9,
+    "documentCount": 92
   }
 ]

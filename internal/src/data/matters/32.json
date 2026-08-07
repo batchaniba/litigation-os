@@ -3,35 +3,38 @@
   "caption": "Ngwa Nforbi v. Meza-Gonzalez, et al",
   "case_no": "TBD",
   "court": "TBD (same-incident companion to Matter 2 / Alameda Sup. Ct.)",
-  "claims": "November 1, 2024 CHP incident evidence set — False Imprisonment / Battery / Bane Act theories under the Ngwa Nforbi name form",
-  "status": "OPENED Aug. 7, 2026 — canonical home for the November 1, 2024 CHP incident PDFs formerly held under documents/_shared/chp-nov1-2024/; no independent complaint filed yet under this caption; operative filed tort action remains Matter 2 (Newanforbi v. Meza-Gonzalez et al., Alameda Sup. Ct. 26CV168913, stayed)",
-  "status_label": "Evidence home — Nov. 1, 2024 CHP PDFs",
+  "claims": "November 1, 2024 CHP incident evidence set \u2014 False Imprisonment / Battery / Bane Act theories under the Ngwa Nforbi name form",
+  "status": "OPENED Aug. 7, 2026 \u2014 owns the November 1, 2024 CHP incident evidence set and, as of the same day, all PDFs formerly stored under Matters 1, 2, 7, 20, and 24 (relocated to documents/matter-32/from-NN/); those matters retain their docket records and cross-reference these paths; no independent complaint filed under this caption",
+  "status_label": "CHP cluster PDF home (M1/2/7/20/24)",
   "lifecycle": "pre_filing",
   "proceeding": "state_civil",
   "phase": "pre_filing",
-  "note": "Houses the shared Nov. 1, 2024 CHP incident evidence under the Ngwa Nforbi caption that appears on the DS-367; Matters 1, 2, and 7 cross-reference these PDFs",
+  "note": "Canonical document store for the CHP November 2024 cluster: incident evidence at matter-32/ root; filings from Matters 1, 2, 7, 20, and 24 under matter-32/from-NN/. Source matters keep documents[] entries pointing here.",
   "badge": "PENDING",
   "filed": "Not yet filed",
   "judge": "TBD",
   "cluster": 1,
   "type": "State",
-  "defendants": "Santiago Meza-Gonzalez (#023295); Jose Melano (#023054); State of California / CHP; DOES 1–10 (same defendant set as Matter 2 — caption uses the Ngwa Nforbi name form reflected on the DS-367 Officer's Statement)",
+  "defendants": "Santiago Meza-Gonzalez (#023295); Jose Melano (#023054); State of California / CHP; DOES 1\u201310 (same defendant set as Matter 2 \u2014 caption uses the Ngwa Nforbi name form reflected on the DS-367 Officer's Statement)",
   "causes": [
-    "False Imprisonment (same-incident theory as Matter 2 — not separately filed under this caption)",
-    "Battery (same-incident theory as Matter 2 — not separately filed under this caption)",
-    "Bane Act, Civ. Code § 52.1 (same-incident theory as Matter 2 — not separately filed under this caption)"
+    "False Imprisonment (same-incident theory as Matter 2 \u2014 not separately filed under this caption)",
+    "Battery (same-incident theory as Matter 2 \u2014 not separately filed under this caption)",
+    "Bane Act, Civ. Code \u00a7 52.1 (same-incident theory as Matter 2 \u2014 not separately filed under this caption)"
   ],
-  "key_facts": "On November 1, 2024 at approximately 12:54 a.m., CHP Officers Santiago Meza-Gonzalez (#023295) and Jose Melano (#023054) contacted Plaintiff on the eastbound I-580 dirt shoulder near Isabel Avenue, Livermore (CHP Case No. RJ68845; CAD No. 241101GG0064). The 62-minute dashcam recording (00:54:36–01:57:10) and the contemporaneous DS-367 Officer's Statement (captioned to 'ngwanforbi' / License F7953179) are the core proof that the arrest report's alcohol-odor, slurred-speech, and beverage-present observations are fabricated. Dublin CHP later issued a Penal Code § 849(b)(1) / § 851.6 Detention Certificate reclassifying the event as a detention only. This matter consolidates those incident PDFs — Arrest Report, DS-367, dashcam transcript (Exhibit A), DMV DAD / DS-2044 discovery packet, and CHP Discovery Response — under the Ngwa Nforbi v. Meza-Gonzalez caption. They previously lived in documents/_shared/chp-nov1-2024/ and were cross-listed on Matters 1, 2, and 7.",
-  "procedural_status": "Opened August 7, 2026 as Matter 32 to give the November 1, 2024 CHP incident evidence set a dedicated matter home under the Ngwa Nforbi name form used on the DS-367. No complaint, summons, or fee waiver has been filed under this caption. The parallel state tort action already on file is Matter 2 (Newanforbi v. Meza-Gonzalez et al., Alameda Superior Court No. 26CV168913), which remains stayed pending final resolution of federal Matter 1. Matters 1, 2, and 7 continue to list these PDFs by path as cross-referenced evidence; Matter 32 is the owning folder. Any future filing under this caption would need an independent case number and would have to be coordinated with Matter 2 to avoid duplicative damages and inconsistent pleadings.",
-  "damages": "None separately demanded under this caption. Operative damages for the November 1, 2024 encounter remain those pleaded in Matter 1 (federal §1983) and Matter 2 (state false imprisonment / battery / Bane Act). This matter's role is documentary — it owns the incident PDFs so the portfolio has a single canonical path for the Ngwa Nforbi–captioned evidence set rather than a _shared/ folder.",
-  "risk": "Low as an evidence-home entry. The principal risk is caption confusion with Matter 2 (Newanforbi v. Meza-Gonzalez): the same officers and the same incident, different name-form on the caption. Do not plead or demand overlapping damages under Matter 32 without expressly reserving or dismissing the Matter 2 claim set. Path churn for Matters 1/2/7 is already resolved by pointing their documents[] entries at /documents/matter-32/.",
+  "key_facts": "On November 1, 2024 at approximately 12:54 a.m., CHP Officers Santiago Meza-Gonzalez (#023295) and Jose Melano (#023054) contacted Plaintiff on the eastbound I-580 dirt shoulder near Isabel Avenue, Livermore (CHP Case No. RJ68845; CAD No. 241101GG0064). This matter is the portfolio document home for that encounter: the DS-367 / Arrest Report / dashcam transcript / DMV discovery set at the matter-32 root, plus every PDF filing from the five live CHP-cluster dockets (Matters 1, 2, 7, 20, and 24) stored under from-01 through from-24. Operative litigation captions and case numbers remain on those source matters; Matter 32 consolidates the PDF store under the Ngwa Nforbi v. Meza-Gonzalez caption.",
+  "procedural_status": "Opened August 7, 2026 as Matter 32. Initially received the shared November 1, 2024 CHP incident PDFs (formerly documents/_shared/chp-nov1-2024/). Same day, all PDFs from Matters 1 (federal CHP \u00a71983), 2 (Alameda Meza-Gonzalez tort \u2014 stayed), 7 (Candelaria federal), 20 (Alameda CHP writ / U-visa), and 24 (Serrato N.D. Cal.) were relocated into documents/matter-32/from-01|02|07|20|24/. Non-PDF working files (.docx) remain in their original matter folders. Matters 1, 2, 7, 20, and 24 remain live docket records and cross-reference the relocated paths; Matter 32 is the owning folder. No complaint has been filed under the Ngwa Nforbi v. Meza-Gonzalez caption itself.",
+  "damages": "None separately demanded under this caption. Operative damages remain those pleaded in Matters 1, 2, 7, 20, and 24. Matter 32 is documentary ownership of the CHP-cluster PDF set.",
+  "risk": "Low as a document-home entry. Caption confusion with Matter 2 remains the principal risk. Do not plead overlapping damages under Matter 32. Source-matter scripts that write into documents/matter-20/ (SER-001 / sheriff packets) must target documents/matter-32/from-20/ going forward.",
   "evidence": [
-    "CHP Arrest-Investigation Report (Case RJ68845, Officer Meza-Gonzalez)",
-    "CHP Officer's Statement — Chemical Test Admonition (DS-367) — filename uses ngwanforbi / License F7953179 (Nov. 1, 2024)",
-    "CHP Video Transcript (Exhibit A) — dashcam 00:54:36–01:57:10",
-    "DMV Driver Record — Discovery Production (DAD, Dec. 4, 2024)",
-    "DMV Notification of Discovery — APS Hearing Packet (DS-2044, APS Case 34739340)",
-    "CHP Discovery Response"
+    "CHP Arrest-Investigation Report (Case RJ68845) \u2014 matter-32 root",
+    "DS-367 Officer's Statement (ngwanforbi / F7953179) \u2014 matter-32 root",
+    "CHP Video Transcript Exhibit A \u2014 matter-32 root",
+    "DMV DAD / DS-2044 discovery packet \u2014 matter-32 root",
+    "Matter 1 federal CHP docket PDFs \u2014 matter-32/from-01/",
+    "Matter 2 Alameda Meza-Gonzalez docket PDFs \u2014 matter-32/from-02/",
+    "Matter 7 Candelaria docket PDFs \u2014 matter-32/from-07/",
+    "Matter 20 CHP writ / U-visa docket PDFs \u2014 matter-32/from-20/",
+    "Matter 24 Serrato N.D. Cal. docket PDFs \u2014 matter-32/from-24/"
   ],
   "documents": [
     {
@@ -40,7 +43,7 @@
       "filed": false
     },
     {
-      "label": "CHP Officer's Statement — Chemical Test Admonition (DS 367) (Nov. 1, 2024)",
+      "label": "CHP Officer's Statement \u2014 Chemical Test Admonition (DS 367) (Nov. 1, 2024)",
       "path": "/documents/matter-32/ds367 ngwanforbi f7953179.pdf",
       "filed": false
     },
@@ -50,18 +53,448 @@
       "filed": false
     },
     {
-      "label": "DMV Driver Record — Discovery Production (Dec. 4, 2024)",
+      "label": "DMV Driver Record \u2014 Discovery Production (Dec. 4, 2024)",
       "path": "/documents/matter-32/DAD 2024-12-04.pdf",
       "filed": false
     },
     {
-      "label": "DMV Notification of Discovery — APS Hearing Packet (Dec. 4, 2024)",
+      "label": "DMV Notification of Discovery \u2014 APS Hearing Packet (Dec. 4, 2024)",
       "path": "/documents/matter-32/DS2044 Notification of Discovery 34739340.pdf",
       "filed": false
     },
     {
       "label": "CHP Discovery Response",
       "path": "/documents/matter-32/Discovery-Response.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M1] Complaint (May 27, 2025)",
+      "path": "/documents/matter-32/from-01/0.Newanforbi v. CHP.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M1] Lawsuit Cover Sheet (E.D. Cal., May 27, 2025)",
+      "path": "/documents/matter-32/from-01/01_Lawsuit_Cover_Sheet.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M1] Initial Scheduling Order (Oct. 28, 2025)",
+      "path": "/documents/matter-32/from-01/02_Initial_Scheduling_Order.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M1] Magistrate Judge Consent \u2014 Court Information Letter",
+      "path": "/documents/matter-32/from-01/03_Magistrate_Judge_Consent.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M1] Notice of Availability of a Magistrate Judge (Oct. 28, 2025)",
+      "path": "/documents/matter-32/from-01/04_Magistrate_Judge_Availabilty.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M1] Consent / Decline of Magistrate Judge Jurisdiction (form)",
+      "path": "/documents/matter-32/from-01/05_Magistrate_Judge_Consent_Decline_Sheet.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M1] Notice of Electronic Filing \u2014 Civil Case Opened (Oct. 28, 2025)",
+      "path": "/documents/matter-32/from-01/06_Notice_of_E-Filing_1.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M1] Summons in a Civil Case (issued Oct. 28, 2025)",
+      "path": "/documents/matter-32/from-01/07_Summons_Sheet.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M1] Return of Service \u2014 proof of service on CHP defendants",
+      "path": "/documents/matter-32/from-01/08_Return_of_Service.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M1] Notice of Electronic Filing \u2014 Summons Issued (Oct. 28, 2025)",
+      "path": "/documents/matter-32/from-01/09_Notice_of_E-Filing_2.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M1] Filing Fee Receipt (Oct. 28, 2025)",
+      "path": "/documents/matter-32/from-01/10_Filing_Fee_Receipt.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M1] Civil Cover Sheet (JS 44) (May 21, 2025)",
+      "path": "/documents/matter-32/from-01/18_Civil_Cover_Sheet.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M1] CHP Motion to Dismiss (Dec. 10, 2025)",
+      "path": "/documents/matter-32/from-01/CHP Motion To Dismiss.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M1] Centerline Wage Reference",
+      "path": "/documents/matter-32/from-01/Centerline Wage Reference.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M1] Notice of Change of Address (filed July 7, 2026)",
+      "path": "/documents/matter-32/from-01/Notice of Change of Address (July 7, 2026).pdf",
+      "filed": false
+    },
+    {
+      "label": "[M1] Notice of Supplemental Authority \u2014 Serrato Order (Jul. 7, 2026)",
+      "path": "/documents/matter-32/from-01/Notice of Supplemental Authority - Serrato Order - July 7 2026.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M1] Plaintiff's Objections to Findings & Recommendations (Apr. 21, 2026)",
+      "path": "/documents/matter-32/from-01/Objections to FR - April 21 2026.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M1] Opposition to Motion to Dismiss (Dec. 22, 2025)",
+      "path": "/documents/matter-32/from-01/Opposition for Motion to Dismiss.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M1] Reply \u2014 CHP (Jan. 5, 2026)",
+      "path": "/documents/matter-32/from-01/Reply - CHP.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M2] Ex Parte Application for Extension of Time to Serve Pleading (filed Mar. 20, 2026) \u2014 extension to May 4, 2026",
+      "path": "/documents/matter-32/from-02/Ex Parte Application for Extension of Time to Serve Pleading and Orders.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M2] Request to Waive Court Fees \u2014 FW-001 (filed Feb. 4, 2026)",
+      "path": "/documents/matter-32/from-02/FW-001 Approved Fee Waiver.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M2] Complaint for Damages (filed Feb. 4, 2026)",
+      "path": "/documents/matter-32/from-02/Newanforbi v. Meza Gonzalez et al.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M2] Notice of Case Assignment \u2014 Dept. 518, Hon. Mark Fickes (Case No. 26CV168913)",
+      "path": "/documents/matter-32/from-02/Notice of Case Assignment.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M2] Notice of Case Management Conference (CMC scheduled Jul. 6, 2026, Dept. 518)",
+      "path": "/documents/matter-32/from-02/Notice of Case Management Conference.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M2] Notice of Change of Address (filed July 7, 2026)",
+      "path": "/documents/matter-32/from-02/Notice of Change of Address (July 7, 2026).pdf",
+      "filed": false
+    },
+    {
+      "label": "[M2] Notice of E-Filing Confirmation (filed Feb. 4, 2026) \u2014 Complaint & Fee Waiver Accepted",
+      "path": "/documents/matter-32/from-02/Notice of E-Filing Confirmation.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M2] Defendants' Opposition to Plaintiff's Motion for U-Visa Certification (filed June 5, 2026)",
+      "path": "/documents/matter-32/from-02/Opposition to Motion for U-visa certification.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M2] Receipt \u2014 Ex Parte Application Filing Fee, Waived (Mar. 20, 2026)",
+      "path": "/documents/matter-32/from-02/RECEIPT.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M2] Plaintiff's Reply in Support of Motion for U-Visa Certification (filed June 8, 2026)",
+      "path": "/documents/matter-32/from-02/Reply ISO UVisa Cert 10pg.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M7] CHP Dashcam Transcript (00:54:36\u201301:57:10, CAD No. 241101GG0064)",
+      "path": "/documents/matter-32/from-07/CHP Transcript.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M7] DMV Administrative Per Se Decision (Case 34739340, February 11, 2025, Hearing Officer Diana Candelaria)",
+      "path": "/documents/matter-32/from-07/DMV Decision.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M7] Exhibit A Cover \u2014 DMV APS Decision (Case 34739340)",
+      "path": "/documents/matter-32/from-07/Exhibit A Cover DMV Decision.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M7] Exhibit B Cover \u2014 Dairyland SR-22 Insurance",
+      "path": "/documents/matter-32/from-07/Exhibit B Cover Dairyland SR22.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M7] Exhibit C Cover \u2014 CHP Dashcam Transcript",
+      "path": "/documents/matter-32/from-07/Exhibit C Cover CHP Dashcam Transcript.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M7] First Amended Complaint (Apr. 27, 2026)",
+      "path": "/documents/matter-32/from-07/FAC Candelaria.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M7] Original Complaint \u2014 Newanforbi v. Candelaria",
+      "path": "/documents/matter-32/from-07/Newanforbi v. Candelaria.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M7] Notice of Change of Address (filed July 7, 2026)",
+      "path": "/documents/matter-32/from-07/Notice of Change of Address (July 7, 2026).pdf",
+      "filed": false
+    },
+    {
+      "label": "[M7] Notice of Supplemental Authority \u2014 Serrato Order, ELECTRONICALLY FILED (Document 9, Jul. 9, 2026)",
+      "path": "/documents/matter-32/from-07/Notice of Supplemental Authority - Serrato Order - ELECTRONICALLY FILED Jul 9 2026.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M7] Notice of Supplemental Authority \u2014 Serrato Order, draft (superseded by the electronically filed version below)",
+      "path": "/documents/matter-32/from-07/Notice of Supplemental Authority - Serrato Order - July 7 2026.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M7] Objections to Findings & Recommendations (BOLSTERED 3)",
+      "path": "/documents/matter-32/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M7] Supplemental Declaration (Newanforbi v. Candelaria, FAC)",
+      "path": "/documents/matter-32/from-07/Supplemental Declaration Newanforbi v Candelaria.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M20] Verified Petition for Writ of Mandate (filed May 29, 2026)",
+      "path": "/documents/matter-32/from-20/0.Newanforbi v. CHP - Writ of Mandate.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M20] Declaration of Vanessa Ing Re: Meet and Confer on Individual Respondents' Demurrers (executed July 29, 2026)",
+      "path": "/documents/matter-32/from-20/AG Decl. Vanessa Ing - Meet and Confer (Individual Respondents).pdf",
+      "filed": false
+    },
+    {
+      "label": "[M20] Declaration of Vanessa Ing Re: Meet and Confer",
+      "path": "/documents/matter-32/from-20/AG Decl. Vanessa Ing - Meet and Confer.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M20] AG Demurrer to Petition (Deputy AG Vanessa Ing)",
+      "path": "/documents/matter-32/from-20/AG Demurrer to Petition.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M20] AG MPA in Support of Demurrer",
+      "path": "/documents/matter-32/from-20/AG MPA ISO Demurrer.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M20] AG Proposed Order on Demurrer",
+      "path": "/documents/matter-32/from-20/AG Proposed Order on Demurrer.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M20] Alameda Sheriff service packet \u2014 Eric Dutra (SER-001 + FW-003 Order on Court Fee Waiver + Opposition/MPA; Aug. 3, 2026; MAILED to Alameda County Sheriff Civil for service at CHP Dublin Area, 4999 Gleason Drive)",
+      "path": "/documents/matter-32/from-20/Alameda Sheriff Service Packet - Eric Dutra (SER-001, FW-003, Opposition-MPA) (Aug 3 2026).pdf",
+      "filed": false
+    },
+    {
+      "label": "[M20] Alameda Sheriff service packet \u2014 G. Serrato / Gerardo Serrato (SER-001 + FW-003 Order on Court Fee Waiver + Opposition/MPA; Aug. 3, 2026; MAILED to Alameda County Sheriff Civil for service at CHP Dublin Area, 4999 Gleason Drive)",
+      "path": "/documents/matter-32/from-20/Alameda Sheriff Service Packet - G Serrato (SER-001, FW-003, Opposition-MPA) (Aug 3 2026).pdf",
+      "filed": false
+    },
+    {
+      "label": "[M20] Alameda Sheriff service packet \u2014 Gary Paul (SER-001 + FW-003 Order on Court Fee Waiver + Opposition/MPA; Aug. 3, 2026; MAILED to Alameda County Sheriff Civil for service at CHP Dublin Area, 4999 Gleason Drive)",
+      "path": "/documents/matter-32/from-20/Alameda Sheriff Service Packet - Gary Paul (SER-001, FW-003, Opposition-MPA) (Aug 3 2026).pdf",
+      "filed": false
+    },
+    {
+      "label": "[M20] Case Management Statement (CM-110) (filed June 30, 2026)",
+      "path": "/documents/matter-32/from-20/Case Management Statement (CM-110) (filed June 30, 2026).pdf",
+      "filed": false
+    },
+    {
+      "label": "[M20] Declaration of Petitioner ISO Opposition",
+      "path": "/documents/matter-32/from-20/Declaration of Petitioner ISO Opposition.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M20] Memorandum of Points and Authorities ISO Eric Dutra's Joinder and Demurrer (filed July 30, 2026)",
+      "path": "/documents/matter-32/from-20/Dutra MPA ISO Joinder and Demurrer.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M20] Respondent Eric Dutra's Notice of Joinder; Notice of Demurrer and Demurrer to Petition; Notice of Hearing (filed July 30, 2026)",
+      "path": "/documents/matter-32/from-20/Dutra Notice of Joinder and Demurrer.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M20] FW-003 Order on Court Fee Waiver \u2014 GRANTED (Alameda Sup. Ct.; clerk electronic service Jun. 3, 2026, 10:45 AM PDT)",
+      "path": "/documents/matter-32/from-20/FW-003 Order on Court Fee Waiver - GRANTED (Jun 3 2026).pdf",
+      "filed": false
+    },
+    {
+      "label": "[M20] Filing Receipt \u2014 One Legal (May 29, 2026)",
+      "path": "/documents/matter-32/from-20/Filing Receipt - One Legal.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M20] USPS eReceipt \u2014 Large Envelope + First-Class postage to Oakland, CA 94612 (11:18 AM, $7.13, weight 12.3 oz), Milpitas Post Office, Aug. 3, 2026 \u2014 combined Serrato/Paul/Dutra Alameda Sheriff service packet mailing",
+      "path": "/documents/matter-32/from-20/Gmail - USPS eReceipt - Alameda Sheriff Service Packet Postage (Aug 3 2026).pdf",
+      "filed": false
+    },
+    {
+      "label": "[M20] Joint Stipulation to Advance Dates of Hearings on Demurrers of Individual Respondents; [Proposed] Order (filed July 30, 2026)",
+      "path": "/documents/matter-32/from-20/Joint Stipulation to Advance Hearing Dates - Individual Respondents; Proposed Order.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M20] Notice of Case Management Conference (June 3, 2026)",
+      "path": "/documents/matter-32/from-20/Notice of Case Management Conference.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M20] Notice of Change of Address (filed July 7, 2026)",
+      "path": "/documents/matter-32/from-20/Notice of Change of Address (July 7, 2026).pdf",
+      "filed": false
+    },
+    {
+      "label": "[M20] Notice of E-Filing Confirmation (June 3, 2026)",
+      "path": "/documents/matter-32/from-20/Notice of E-Filing Confirmation.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M20] Opposition to Demurrer (filed July 13, 2026)",
+      "path": "/documents/matter-32/from-20/Opposition to Demurrer.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M20] Opposition to Individual Respondents' Demurrers and Joinders; MPA \u2014 signed and dated July 31, 2026; courtesy copy emailed to DAG Vanessa Ing; SER-001 sheriff service packets prepared for CHP (Sacramento Sheriff \u2192 CHP HQ) and Serrato/Paul/Dutra (Alameda Sheriff Civil \u2192 CHP Dublin duty station) under fee waiver (rebuts Serrato/Paul/Dutra's 'not a certifying official' argument under PC \u00a7679.10(b) by leading with Pet. \u00b6\u00b614-16's express 'is a certifying official' allegations and citing Exhibits 11/13 for the assignment letter and Paul's email; incorporates the July 13, 2026 Opposition to CHP's Demurrer by reference for the joinder-based arguments)",
+      "path": "/documents/matter-32/from-20/Opposition-to-Individual-Respondents-Demurrers.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M20] Memorandum of Points and Authorities ISO Gary Paul's Joinder and Demurrer (filed July 30, 2026)",
+      "path": "/documents/matter-32/from-20/Paul MPA ISO Joinder and Demurrer.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M20] Respondent Gary Paul's Notice of Joinder; Notice of Demurrer and Demurrer to Petition; Notice of Hearing (filed July 30, 2026)",
+      "path": "/documents/matter-32/from-20/Paul Notice of Joinder and Demurrer.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M20] Petition for Writ of Mandate \u2014 Filed Copy (June 3, 2026)",
+      "path": "/documents/matter-32/from-20/Petition for Writ of Mandate.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M20] Proof of Service \u2014 Opposition to Demurrer",
+      "path": "/documents/matter-32/from-20/Proof of Service - Opposition to Demurrer.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M20] [Proposed] Order Granting Joinders of Individual Respondents; Sustaining Demurrers to Petition (submitted by Individual Respondents, unsigned, July 30, 2026)",
+      "path": "/documents/matter-32/from-20/Proposed Order Granting Joinders; Sustaining Demurrers - Individual Respondents.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M20] Proposed Order Overruling Demurrer",
+      "path": "/documents/matter-32/from-20/Proposed Order Overruling Demurrer.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M20] Receipt (June 3, 2026)",
+      "path": "/documents/matter-32/from-20/RECEIPT.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M20] Request for Judicial Notice with Exhibits",
+      "path": "/documents/matter-32/from-20/Request for Judicial Notice with Exhibits.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M20] Request to Waive Court Fees (June 3, 2026)",
+      "path": "/documents/matter-32/from-20/Request to Waive Court Fees.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M20] SER-001 Request for Sheriff to Serve Court Papers \u2014 California Highway Patrol (filled Jul. 31, 2026; Sacramento County Sheriff; serve at CHP Headquarters, 601 N. 7th St., Sacramento; fee waiver; unsigned \u2014 sign before delivery to Sheriff)",
+      "path": "/documents/matter-32/from-20/SER-001 Request for Sheriff to Serve Court Papers - California Highway Patrol (Jul 31 2026).pdf",
+      "filed": false
+    },
+    {
+      "label": "[M20] SER-001 Request for Sheriff to Serve Court Papers \u2014 Eric Dutra (filled Jul. 31, 2026; Alameda County Sheriff Civil; serve at CHP Dublin Area duty station, 4999 Gleason Drive; fee waiver; unsigned \u2014 sign before mailing to Sheriff)",
+      "path": "/documents/matter-32/from-20/SER-001 Request for Sheriff to Serve Court Papers - Eric Dutra (Jul 31 2026).pdf",
+      "filed": false
+    },
+    {
+      "label": "[M20] SER-001 Request for Sheriff to Serve Court Papers \u2014 G. Serrato / Gerardo Serrato (filled Jul. 31, 2026; Alameda County Sheriff Civil; serve at CHP Dublin Area duty station, 4999 Gleason Drive; fee waiver; unsigned \u2014 sign before mailing to Sheriff)",
+      "path": "/documents/matter-32/from-20/SER-001 Request for Sheriff to Serve Court Papers - G Serrato (Jul 31 2026).pdf",
+      "filed": false
+    },
+    {
+      "label": "[M20] SER-001 Request for Sheriff to Serve Court Papers \u2014 Gary Paul (filled Jul. 31, 2026; Alameda County Sheriff Civil; serve at CHP Dublin Area duty station, 4999 Gleason Drive; fee waiver; unsigned \u2014 sign before mailing to Sheriff)",
+      "path": "/documents/matter-32/from-20/SER-001 Request for Sheriff to Serve Court Papers - Gary Paul (Jul 31 2026).pdf",
+      "filed": false
+    },
+    {
+      "label": "[M20] Memorandum of Points and Authorities ISO Gerardo Serrato's Joinder and Demurrer (filed July 30, 2026)",
+      "path": "/documents/matter-32/from-20/Serrato MPA ISO Joinder and Demurrer.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M20] Respondent Gerardo Serrato's Notice of Joinder; Notice of Demurrer and Demurrer to Petition; Notice of Hearing (filed July 30, 2026)",
+      "path": "/documents/matter-32/from-20/Serrato Notice of Joinder and Demurrer.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M20] Summons on Petition (issued June 3, 2026)",
+      "path": "/documents/matter-32/from-20/Summons on Petition.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M20] Tentative Ruling re: Case Management \u2014 CMC Continued to Sept. 2, 2026 (Hon. Jenna Whitman, July 12, 2026)",
+      "path": "/documents/matter-32/from-20/Tentative Ruling on CMC Continuance - Hon. Jenna Whitman (July 12, 2026).pdf",
+      "filed": false
+    },
+    {
+      "label": "[M24] Filed Complaint (Doc. 1) and ISC Order Setting CMC & ADR Deadlines (Doc. 4) \u2014 Case No. 4:26-cv-05953-ASK, Filed June 17, 2026",
+      "path": "/documents/matter-32/from-24/1 2.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M24] Complaint for Damages, Declaratory Relief, and Injunctive Relief \u2014 Draft (42 U.S.C. \u00a7 1983; 4 Causes of Action)",
+      "path": "/documents/matter-32/from-24/Complaint.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M24] ISC Order and Magistrate Judge Consent/Declination Form \u2014 N.D. Cal. (Case No. 4:26-cv-05953-ASK)",
+      "path": "/documents/matter-32/from-24/ND Cal ISC and Magistrate Consent form.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M24] In Forma Pauperis (IFP) Application \u2014 N.D. Cal.",
+      "path": "/documents/matter-32/from-24/Nd Cal IFP Application.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M24] Proposed Summons \u2014 N.D. Cal. (Captain G. Serrato)",
+      "path": "/documents/matter-32/from-24/Nd Cal Proposed Summons.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M24] Notice of Change of Address (filed July 7, 2026)",
+      "path": "/documents/matter-32/from-24/Notice of Change of Address (July 7, 2026).pdf",
       "filed": false
     }
   ],

@@ -18,7 +18,7 @@ from pypdf.generic import NameObject
 
 ROOT = Path(__file__).resolve().parents[2]
 TEMPLATE = ROOT / "internal/public/documents/_form-library/ser001-blank-template.pdf"
-OUT_DIR = ROOT / "internal/public/documents/matter-20"
+OUT_DIR = ROOT / "internal/public/documents/matter-32/from-20"
 
 CASE_NUMBER = "26CV191136"
 YOUR_NAME = "Brendan Ngehsi Newanforbi"
