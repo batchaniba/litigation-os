@@ -170,7 +170,7 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | 29 | Newanforbi v. Amazon.com Services, LLC | 26CV201554 | Alameda Sup. Ct. (Hayward Hall of Justice, Dept. 520) | State | Filed Jul. 28, 2026 — service in progress |
 | 30 | Newanforbi v. Moua, et al. | TBD | USDC N.D. Cal. | Federal | Pre-filing — anticipated filing Sep. 16, 2026 |
 | 31 | Newanforbi v. First Advantage LLC | TBD | San Joaquin Sup. Ct. (anticipated) | State | Pre-filing |
-| 32 | Ngwa Nforbi v. Meza-Gonzalez, et al | TBD | TBD (same-incident companion to Matter 2 / Alameda Sup. Ct.) | State | CHP cluster PDF home (M1/2/7/20/24) |
+| 32 | Nforbi v. Meza-Gonzalez, et al. | TBD | USDC N.D. Cal. (San Francisco / Oakland Div. — Civil L.R. 3-2(c)-(d)); complaint drafted Aug. 7, 2026, not yet filed | Federal | N.D. Cal. §1983 intake packet ready to file |
 <!-- PORTFOLIO:ACTIVE_MATTERS:END -->
 
 ### Settled
