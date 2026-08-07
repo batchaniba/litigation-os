@@ -482,7 +482,7 @@
     "case_no": "C2604791",
     "court": "Santa Clara Sup. Ct.",
     "claims": "Habeas Corpus — Immediate Discharge from Parole (Pen. Code §1473; PC §§3000, 3001, 3008(d)(2); 15 CCR §3574)",
-    "status": "Active — the August 1, 2026 deadline for Judge Robert Hawk to rule, set by the July 2, 2026 Order Extending Time (Cal. Rules of Court, rule 4.551(i)), lapsed without a ruling; as of August 7, 2026 the petition remains pending and under submission, undenied and undismissed. HC-004 Notice and Request for Ruling packet (rule 4.551(a)(3)(B)) prepared August 7, 2026 — ready to file.",
+    "status": "Active — the August 1, 2026 deadline for Judge Robert Hawk to rule, set by the July 2, 2026 Order Extending Time (Cal. Rules of Court, rule 4.551(i)), lapsed without a ruling; as of August 7, 2026 the petition remains pending and under submission, undenied and undismissed. HC-004 Notice and Request for Ruling (Cal. Rules of Court, rule 4.551(a)(3)(B)) prepared August 7, 2026 — ready to file, with Exhibit A (unstamped Petition for Writ of Habeas Corpus, 67 pp.).",
     "status_label": "HC-004 ready to file — ruling overdue since Aug. 1, 2026",
     "lifecycle": "active",
     "proceeding": "habeas",
@@ -501,7 +501,7 @@
     ],
     "archived": false,
     "evidenceCount": 11,
-    "documentCount": 4
+    "documentCount": 6
   },
   {
     "number": 20,

@@ -1126,7 +1126,17 @@
   },
   {
     "matter": 19,
-    "label": "HC-004 Notice and Request for Ruling Packet (with Exhibit A — unstamped Petition, 69 pp.) — ready to file Aug. 7, 2026",
+    "label": "HC-004 Notice and Request for Ruling (executed Aug. 7, 2026) — ready to file",
+    "path": "/documents/matter-19/HC-004 Notice and Request for Ruling (Habeas Corpus, Executed Aug 7 2026).pdf"
+  },
+  {
+    "matter": 19,
+    "label": "Exhibit A Cover — Petition for Writ of Habeas Corpus (HC-004 Attachment)",
+    "path": "/documents/matter-19/Exhibit A Cover — Petition for Writ of Habeas Corpus (HC-004 Attachment).pdf"
+  },
+  {
+    "matter": 19,
+    "label": "HC-004 Packet (HC-004 + Exhibit A cover + unstamped Petition, 69 pp.) — ready to file Aug. 7, 2026",
     "path": "/documents/matter-19/HC-004 Notice and Request for Ruling Packet (with Exhibit A — Unstamped Petition) (Ready to File Aug 7 2026).pdf"
   },
   {
