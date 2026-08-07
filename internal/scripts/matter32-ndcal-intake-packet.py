@@ -160,7 +160,7 @@ CONSENT_FIELDS: dict[str, object] = {
     "DATE": CONSENT_DATE,
     "YEAR": CONSENT_YEAR,
     "NAME": PLAINTIFF_MIXED,
-    "sig": SIGNATURE,
+    # "sig" stays empty — Plaintiff signs this one by hand.
     "ProSe": "PRO SE",
 }
 
