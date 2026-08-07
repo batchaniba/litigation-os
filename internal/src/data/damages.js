@@ -13,7 +13,8 @@ export const damages_table = [
     { category: "§1983 Monell / Individual + Bane Act + RICO — Shannon Smith / HOPE (Matter 28)", matters: "28", conservative: 249000, moderate: 666000, aggressive: 1510000 },
     { category: "PC §290.46(j) Failure to Hire — Amazon (Matter 29)", matters: "29", conservative: 30000, moderate: 75000, aggressive: 180000 },
     { category: "§1983 Retaliation, Due Process, Bane Act & IIED — Moua (Matter 30)", matters: "30", conservative: 90000, moderate: 225000, aggressive: 525000 },
-    { category: "FCRA / ICRAA Vendor Liability — First Advantage LLC (Matter 31)", matters: "31", conservative: 30000, moderate: 89000, aggressive: 205000 }
+    { category: "FCRA / ICRAA Vendor Liability — First Advantage LLC (Matter 31)", matters: "31", conservative: 30000, moderate: 89000, aggressive: 205000 },
+    { category: "Nov. 1, 2024 CHP Incident Evidence Home — Ngwa Nforbi v. Meza-Gonzalez (Matter 32)", matters: "32", conservative: 0, moderate: 0, aggressive: 0 }
 ];
 // Matters 3, 5, and 15 are excluded/reduced above (abandoned/dismissed Jul. 2026):
 // - Matter 3 (Derrick, ABANDONED): its Lost Income, Emotional Distress, Punitive, and Fees
@@ -309,6 +310,19 @@ export const matter_damages = [
             { label: "FCRA §1681e(b) Reasonable-Procedures Failure — Actual Damages (failure to exclude/flag categorically prohibited registry information despite First Advantage's own statutory disclaimer already printed on its notices)", conservative: 0, moderate: 15000, aggressive: 40000 },
             { label: "Punitive Damages (Civ. Code §3294 / ICRAA willfulness — same vendor, two separate adverse actions eight months apart, evidencing a systemic practice rather than an isolated error)", conservative: 0, moderate: 20000, aggressive: 60000 },
             { label: "Attorney Fees (ICRAA Civ. Code §1786.50(a)(2) mandatory fee-shifting + FCRA §1681n/o)", conservative: 8000, moderate: 20000, aggressive: 45000 }
+        ]
+    },
+    {
+        number: 32,
+        caption: "Ngwa Nforbi v. Meza-Gonzalez, et al",
+        court: "TBD (evidence home; Matter 2 is the filed Alameda action)",
+        claims: "Nov. 1, 2024 CHP incident evidence consolidation under Ngwa Nforbi caption",
+        status: "Opened Aug. 7, 2026 — owns relocated chp-nov1-2024 PDFs; no independent complaint filed",
+        risk: "Caption-confusion risk with Matter 2 only — do not plead overlapping damages under this matter number",
+        settlement_note: "Deliberately $0 — operative damages for this encounter remain in Matters 1 and 2; Matter 32 is documentary ownership of the shared incident PDF set",
+        conservative: 0, moderate: 0, aggressive: 0,
+        components: [
+            { label: "Reserved to Matters 1 and 2 (no independent demand under this caption)", conservative: 0, moderate: 0, aggressive: 0 }
         ]
     }
 ];

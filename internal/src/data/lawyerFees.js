@@ -285,22 +285,31 @@ export const lawyer_fees = [
     cost: { low: 9800, high: 21840, mid: 15820 },
     notes: "No new PDFs — the evidentiary basis (First Advantage's pre-adverse/adverse notices for both the UPS and FedEx sequences) is already measured and billed under Matters 26 and 25 respectively; counting those pages again here would double-count real work already priced elsewhere. Estimated instead from matters.js status text as a single-defendant vendor-liability complaint of moderate complexity: five causes of action (two FCRA provisions, ICRAA, negligence per se, UCL) drafted from an existing fact pattern rather than fresh investigation, roughly comparable in scope to Matter 8's single-document writ estimate. No motion practice, discovery, or service costs included since nothing has been filed."
   },
+  {
+    number: 32, caption: "Ngwa Nforbi v. Meza-Gonzalez, et al", caseNumber: "TBD",
+    court: "TBD (CHP-cluster PDF home; Matter 2 is the filed Alameda Meza-Gonzalez action)", type: "State — Nov. 1, 2024 CHP cluster document store",
+    status: "Opened Aug. 7, 2026 — owns incident evidence plus all PDFs relocated from Matters 1, 2, 7, 20, and 24; no independent complaint filed",
+    documentsCount: 92, totalPagesReal: 933,
+    hours: { low: 18, high: 40, mid: 29 },
+    cost: { low: 5040, high: 11200, mid: 8120 },
+    notes: "Owns 92 PDFs / 933 pages (pypdf): 6 incident-evidence files at matter-32/ root (47 pages) plus 86 filings relocated into matter-32/from-01|02|07|20|24/. Drafting/review hours for the relocated filings remain attributed to source Matters 1, 2, 7, 20, and 24 — re-billing those pages here would double-count. Matter 32's fee line covers only the previously unowned 47-page incident evidence set at evidence-compilation rates."
+  },
 ];
 
 export const lawyer_fees_summary = {
-  analysisDate: "2026-07-30",
-  totalMatters: 31,
-  totalDocumentsAnalyzed: 308,
-  totalPagesReal: 3644,
+  analysisDate: "2026-08-07",
+  totalMatters: 32,
+  totalDocumentsAnalyzed: 314,
+  totalPagesReal: 3691,
   methodology: {
     blendedHourlyRate: 280,
     rateRange: { seniorPartner: [350, 450], midAssociate: [250, 350], paralegal: [150, 200] },
     note: "Every PDF in public/documents/matter-XX/ was measured with pdfinfo for real page counts (poppler-utils), then classified by document type (complaint, motion/opposition/reply, discovery, writ/habeas, declaration, administrative, evidence) and priced using the hours-per-page/per-document conversions in docs/LAWYER_FEES_CALCULATOR.md. Opposing counsel's filings are billed only at a light review rate, never at drafting rate. Matters with no uploaded PDFs are estimated conservatively from matters.js status text.",
   },
-  totalEstimatedHours: { low: 2756.3, high: 4558.2, mid: 3649.75 },
-  totalEstimatedCost: { low: 771764, high: 1276296, mid: 1021930 },
+  totalEstimatedHours: { low: 2774.3, high: 4598.2, mid: 3678.75 },
+  totalEstimatedCost: { low: 776804, high: 1287496, mid: 1030050 },
   byCluster: {
-    cluster1: { label: "CHP / DUI / DMV", matters: [1, 2, 7, 8, 20, 24], costLow: 134596, costMid: 177212, costHigh: 219828 },
+    cluster1: { label: "CHP / DUI / DMV", matters: [1, 2, 7, 8, 20, 24, 32], costLow: 139636, costMid: 185332, costHigh: 231028 },
     cluster2: { label: "Parole Retaliation / HOPE", matters: [3, 4, 5, 6, 11, 13, 14, 15, 16, 17, 18, 21, 28, 30], costLow: 459312, costMid: 602392, costHigh: 749672 },
     cluster3: { label: "Consumer Fraud / Employment", matters: [12, 22, 23, 25, 26, 27, 29, 31], costLow: 136836, costMid: 185290, costHigh: 233660 },
     cluster4: { label: "Administrative Writs & Habeas", matters: [9, 10, 19], costLow: 41020, costMid: 57050, costHigh: 73080 },

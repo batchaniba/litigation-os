@@ -41,9 +41,35 @@
     {
       "id": "chp-nov2024",
       "label": "CHP November 1, 2024 Encounter & U Visa Certification",
-      "matters": [1, 2, 7, 20, 24],
-      "thesis": "Five live dockets in four courts run off one 62-minute traffic-shoulder encounter. The same dashcam, the same Penal Code § 849(b)(1) Detention Certificate, and the same April 20, 2026 certification denial are the operative proof in every one of them. That concentration is the portfolio's greatest source of leverage and its greatest source of exposure: a favorable finding on the shared record propagates across all five, and an adverse or inconsistent one does the same.",
+      "matters": [1, 2, 7, 20, 24, 32],
+      "thesis": "Five live dockets in four courts — plus Matter 32 as the canonical evidence home under the Ngwa Nforbi caption — run off one 62-minute traffic-shoulder encounter. The same dashcam, the same Penal Code § 849(b)(1) Detention Certificate, and the same April 20, 2026 certification denial are the operative proof across the cluster. That concentration is the portfolio's greatest source of leverage and its greatest source of exposure: a favorable finding on the shared record propagates across every member, and an adverse or inconsistent one does the same.",
       "links": [
+        {
+          "id": "32-same-incident-1",
+          "from": 32,
+          "to": 1,
+          "direction": "mutual",
+          "severity": "high",
+          "kinds": ["same_incident"],
+          "significance": "Matter 32 owns the November 1, 2024 CHP incident PDFs (Arrest Report, DS-367, dashcam transcript, DMV discovery packet, CHP Discovery Response) that Matter 1 relies on as Exhibit-level proof of the fabricated arrest report. Path ownership moved from documents/_shared/chp-nov1-2024/ to documents/matter-32/ on August 7, 2026; Matter 1 continues to cross-reference those files.",
+          "sources": [
+            "Matter 32 — CHP Arrest Report; DS-367; Exhibit A dashcam transcript",
+            "Matter 1 — Complaint and Opposition to Motion to Dismiss"
+          ]
+        },
+        {
+          "id": "32-same-incident-2",
+          "from": 32,
+          "to": 2,
+          "direction": "mutual",
+          "severity": "high",
+          "kinds": ["same_incident"],
+          "significance": "Matter 32 is captioned Ngwa Nforbi v. Meza-Gonzalez, et al — the same officers and the same November 1, 2024 encounter as Matter 2 (Newanforbi v. Meza-Gonzalez et al., Alameda Sup. Ct. 26CV168913), under the Ngwa Nforbi name form that appears on the DS-367. Matter 2 remains the filed, stayed tort action; Matter 32 holds the incident PDF set and does not plead a separate damages demand.",
+          "sources": [
+            "Matter 32 — DS-367 (ngwanforbi / F7953179); Arrest Report",
+            "Matter 2 — Complaint for Damages (filed Feb. 4, 2026)"
+          ]
+        },
         {
           "id": "2-stayed-on-1",
           "from": 2,
@@ -230,8 +256,8 @@
           "label": "The dispositive dashcam is not authenticated of record in every docket that relies on it",
           "severity": "medium",
           "status": "open",
-          "matters": [1, 2, 7, 20],
-          "detail": "The 62-minute recording is the proof that no alcohol odor was verbalized and that handcuffing preceded the parole-status disclosure. Four dockets argue from it, but it is not lodged and authenticated in each one, so an adverse evidentiary ruling in the docket where it is weakest would be cited against the others.",
+          "matters": [1, 2, 7, 20, 32],
+          "detail": "The 62-minute recording is the proof that no alcohol odor was verbalized and that handcuffing preceded the parole-status disclosure. Multiple dockets argue from it, and Matter 32 now owns the transcript PDF, but the recording itself is not lodged and authenticated in each live docket, so an adverse evidentiary ruling in the docket where it is weakest would be cited against the others.",
           "remedy": "Lodge the recording with a declaration authenticating the timestamps in every matter that relies on it, and cite the same timestamp ranges consistently across filings."
         },
         {
@@ -248,32 +274,32 @@
         {
           "id": "encounter",
           "label": "The encounter itself",
-          "matters": [1, 2, 7, 20, 24],
+          "matters": [1, 2, 7, 20, 24, 32],
           "detail": "November 1, 2024, approximately 00:54–01:57 a.m., eastbound I-580 dirt shoulder ~0.3 miles west of Isabel Avenue, Livermore. CHP Case No. RJ68845; CAD No. 241101GG0064. Officers Santiago Meza-Gonzalez (#023295) and Jose Melano (#023054)."
         },
         {
           "id": "dashcam",
           "label": "62-minute dashcam recording",
-          "matters": [1, 2, 7, 20, 24],
-          "detail": "00:54:36–01:57:10. Establishes that no officer verbalized an alcohol odor, that the only liquid found was identified on tape as urine ('Is it water? No this is piss'), and that handcuffing at 01:11:16 preceded the 01:11:42 dispatch disclosure of parole status."
+          "matters": [1, 2, 7, 20, 24, 32],
+          "detail": "00:54:36–01:57:10. Establishes that no officer verbalized an alcohol odor, that the only liquid found was identified on tape as urine ('Is it water? No this is piss'), and that handcuffing at 01:11:16 preceded the 01:11:42 dispatch disclosure of parole status. Transcript PDF owned by Matter 32."
         },
         {
           "id": "detention-certificate",
           "label": "PC § 849(b)(1) Detention Certificate",
-          "matters": [1, 2, 7, 20, 24],
+          "matters": [1, 2, 7, 20, 24, 32],
           "detail": "Issued by Dublin CHP November 5, 2024 (Dublin CHP-01991, CHP File No. 202400898), reclassifying the event as 'a detention only, not an arrest' for 'insufficient grounds for making a criminal complaint.'"
         },
         {
           "id": "da-declination",
           "label": "Alameda County DA declination",
-          "matters": [1, 2, 7, 20, 24],
-          "detail": "No charges filed, corroborating the absence of probable cause relied on across all five matters."
+          "matters": [1, 2, 7, 20, 24, 32],
+          "detail": "No charges filed, corroborating the absence of probable cause relied on across the cluster."
         },
         {
           "id": "cdl-suspension",
           "label": "One-year Class A CDL suspension",
-          "matters": [1, 2, 7, 20],
-          "detail": "DS-367 chemical-refusal designation → APS Case 34739340 → suspension February 20, 2025 – February 19, 2026, plus $125 reissue fee and three-year SR-22. The single economic loss claimed in four of the five matters."
+          "matters": [1, 2, 7, 20, 32],
+          "detail": "DS-367 chemical-refusal designation → APS Case 34739340 → suspension February 20, 2025 – February 19, 2026, plus $125 reissue fee and three-year SR-22. The single economic loss claimed in the damages-bearing cluster matters; Matter 32 holds the DS-367 and DMV discovery PDFs but does not separately demand this loss."
         },
         {
           "id": "krishnan-order",
@@ -292,19 +318,19 @@
         {
           "name": "Officer Santiago Meza-Gonzalez (#023295)",
           "role": "Arresting officer; DS-367 issuer",
-          "defendantIn": [1, 2],
+          "defendantIn": [1, 2, 32],
           "factualIn": [7, 20, 24]
         },
         {
           "name": "Officer Jose Melano (#023054)",
           "role": "Conducted the warrantless interior search",
-          "defendantIn": [1, 2],
+          "defendantIn": [1, 2, 32],
           "factualIn": [7, 20, 24]
         },
         {
           "name": "State of California / CHP",
           "role": "Employer; certifying agency",
-          "defendantIn": [1, 2, 20],
+          "defendantIn": [1, 2, 20, 32],
           "factualIn": [7, 24]
         },
         {

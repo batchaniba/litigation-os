@@ -15,7 +15,7 @@
  * When you trim a matter, lower the ceiling to match the new worst case.
  *
  * Dated docket entries do not belong in `procedural_status` — they belong in
- * timeline.json, which already carries them (292 events across 31 matters) and
+ * timeline.json, which already carries them (297 events across 32 matters) and
  * feeds the derived status labels. Prose that restates the timeline is the
  * single largest source of length here.
  */
