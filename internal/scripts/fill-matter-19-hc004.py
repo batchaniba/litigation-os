@@ -145,21 +145,24 @@ def fill_hc004(out: Path) -> None:
         ):
             page.delete_widget(widget)
             continue
-        # HC-004's caption-block fields (name/street/city/email/attorney-for/
-        # defendant/etc.) are boxed at a fixed 9pt height with a fixed 9pt DA
-        # font size -- a 9pt Helvetica line (ascent+descent) runs taller than
-        # 9pt, so any descender (g/j/p/q/y) gets clipped flat at the box's
-        # bottom edge once baked to static content. That's invisible for an
-        # all-caps value (no descenders) but real and baked into every
-        # renderer once one appears -- e.g. proper-case "Ngehsi" clipped the
-        # g's descender even though PyMuPDF, Chromium, and every other
-        # engine agreed on the (wrong) result, because it was flattened
-        # into the page content, not a viewer quirk.
-        # Fontsize 0 is the PDF-spec "auto" convention: let the box's own
-        # height (and width) pick the largest size that actually fits,
-        # instead of trusting the template's fixed value.
-        if widget.field_type_string == "Text" and (widget.text_fontsize or 0) >= 9:
-            widget.text_fontsize = 0
+        # pypdf's own default appearance stream for a filled text field
+        # positions the baseline too low in the box: any descender (g/j/p/q/y)
+        # gets clipped flat at the box's bottom edge once flattened to static
+        # content. That's invisible for an all-caps value (no descenders) but
+        # real and baked into every renderer once one appears -- e.g.
+        # proper-case "Ngehsi" clipped the g even though PyMuPDF, Chromium,
+        # and every other engine agreed on the (wrong) result, because it was
+        # flattened into the page content, not a viewer quirk.
+        #
+        # It's not a box-too-small-for-the-font problem -- confirmed by
+        # rendering every descender-bearing field in this form (name, email,
+        # attorney-for, in re, defendant) at the template's own 9pt with only
+        # this call added: all five come out with full, uncut glyphs. The fix
+        # is regenerating the appearance through PyMuPDF's layout engine
+        # instead of trusting pypdf's, not shrinking the font -- so this
+        # preserves the template's designed size instead of picking a smaller
+        # one.
+        if widget.field_type_string == "Text":
             widget.update()
     doc.bake()
     tmp = out.with_suffix(".baked.pdf")
