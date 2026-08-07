@@ -383,6 +383,13 @@ def build_notice(matter: dict, defendant: dict) -> str:
     d.blank_line()
     d.blank_line()
 
+    # Keep the whole closing block on one page: Dated line, "Respectfully
+    # submitted," the signature line, and the two name lines under it. Without
+    # this the two-defendant Matter 27 notices broke after the signature line
+    # and orphaned "BRENDAN NGEHSI NEWANFORBI / Plaintiff, In Pro Per" onto a
+    # page of their own, separated from the line they sign.
+    d.ensure_space(8)
+
     d.write_line(f"Dated: {EXEC_DATE}", bold=False)
     d.blank_line()
     d.write_line("Respectfully submitted,", right=True, right_margin_offset=20)
