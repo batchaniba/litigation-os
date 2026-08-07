@@ -94,21 +94,47 @@ SIG_Y_LINE = 556.3
 GRAY = Color(0.5, 0.5, 0.5)
 
 
+# Every caption-block field is drawn directly as static page content instead
+# of going through the AcroForm fill pipeline. pypdf's default appearance
+# stream for a filled text field clips descenders (g/j/p/q/y) at the box's
+# bottom edge once flattened -- neither calling widget.update() (regenerates
+# through PyMuPDF's own layout engine) nor a smaller font size closed that out
+# reliably. Drawing the text ourselves sidesteps the appearance-stream
+# pipeline for these fields entirely, the same way the exhibit cover's text
+# -- never routed through a form field -- never had this problem.
+HARDCODED_VALUES = {
+    "name": NAME,
+    "street": STREET,
+    "city": CITY,
+    "state": STATE,
+    "zip": ZIP,
+    "phone": PHONE,
+    "email": EMAIL,
+    "atty_for": ATTY_FOR,
+    "county": COUNTY,
+    "in_re": NAME,
+    "def_name": NAME,
+    "dob": DOB,
+}
+HARDCODED_FIELD_NAMES = {F[key]: value for key, value in HARDCODED_VALUES.items()}
+
+# Helvetica AFM metrics (nearly identical to the template's ArialMT at this
+# scale) -- used to hand-place the baseline so a full ascender-to-descender
+# line fits inside the field's own box with margin on both sides, verified
+# against rendered pixels rather than assumed.
+HC_FONT = "helv"
+HC_FONT_SIZE = 8.67
+_ASCENT_RATIO = 0.718
+_DESCENT_RATIO = 0.207
+_LEFT_PAD = 2.0
+# Bias the slack toward the bottom margin: descenders were the actual
+# clipping failure mode observed, ascenders/cap-height never clipped.
+_TOP_BIAS = 0.35
+
+
 def fields() -> dict[str, str]:
     return {
         F["case"]: CASE_NUMBER,
-        F["name"]: NAME,
-        F["street"]: STREET,
-        F["city"]: CITY,
-        F["state"]: STATE,
-        F["zip"]: ZIP,
-        F["phone"]: PHONE,
-        F["email"]: EMAIL,
-        F["atty_for"]: ATTY_FOR,
-        F["county"]: COUNTY,
-        F["in_re"]: NAME,
-        F["def_name"]: NAME,
-        F["dob"]: DOB,
         F["cdc"]: CDC_NO,
         F["pet_name"]: NAME,
         F["pet_county"]: COUNTY_SHORT,
@@ -145,31 +171,26 @@ def fill_hc004(out: Path) -> None:
         ):
             page.delete_widget(widget)
             continue
-        # pypdf's own default appearance stream for a filled text field
-        # positions the baseline too low in the box: any descender (g/j/p/q/y)
-        # gets clipped flat at the box's bottom edge once flattened to static
-        # content. That's invisible for an all-caps value (no descenders) but
-        # real and baked into every renderer once one appears -- e.g.
-        # proper-case "Ngehsi" clipped the g even though PyMuPDF, Chromium,
-        # and every other engine agreed on the (wrong) result, because it was
-        # flattened into the page content, not a viewer quirk. Calling
-        # widget.update() regenerates the appearance through PyMuPDF's layout
-        # engine instead of trusting pypdf's, which alone eliminates the clip
-        # at any font size -- confirmed by rendering every descender-bearing
-        # field in this form at the template's own 9pt with only this call
-        # added: full, uncut glyphs.
-        #
-        # 8.67pt on top of that is a deliberate small margin below the
-        # template's 9pt, on the fields whose box is actually only ~9pt tall
-        # (rect.height <= 9.1 -- excludes In re/CaseNumber/CDCNo, which have
-        # taller boxes, and the declaration-paragraph fields petName/
-        # petCounty/petFileDate at 12-14pt, which were never part of the bug
-        # and would otherwise get swept in and shrunk for no reason by a
-        # blanket ">= 9pt" condition). Belt-and-suspenders on top of the
-        # widget.update() fix, not a substitute for it.
+        if name in HARDCODED_FIELD_NAMES:
+            rect = widget.rect
+            page.delete_widget(widget)
+            slack = rect.height - (_ASCENT_RATIO + _DESCENT_RATIO) * HC_FONT_SIZE
+            top_margin = slack * _TOP_BIAS
+            baseline_y = rect.y0 + top_margin + _ASCENT_RATIO * HC_FONT_SIZE
+            page.insert_text(
+                (rect.x0 + _LEFT_PAD, baseline_y),
+                HARDCODED_FIELD_NAMES[name],
+                fontname=HC_FONT,
+                fontsize=HC_FONT_SIZE,
+                color=(0, 0, 0),
+            )
+            continue
+        # The remaining text fields (CaseNumber, CDCNo, petName/petCounty/
+        # petFileDate, sigDate, sigName) sit in taller boxes and were never
+        # part of the descender-clipping bug; still route them through
+        # widget.update() (PyMuPDF's own layout engine) rather than trusting
+        # pypdf's default appearance stream, for consistency.
         if widget.field_type_string == "Text":
-            if widget.rect.height <= 9.1:
-                widget.text_fontsize = 8.67
             widget.update()
     doc.bake()
     tmp = out.with_suffix(".baked.pdf")
