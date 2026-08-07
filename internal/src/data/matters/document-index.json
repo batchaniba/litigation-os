@@ -1556,13 +1556,23 @@
   },
   {
     "matter": 25,
-    "label": "Notice of Amount of Punitive Damages Sought (CCP §425.115) — Federal Express Corporation ($25,000.00 placeholder; drafted Aug. 4, 2026; NOT YET SERVED — must be personally served before default is taken)",
+    "label": "Notice of Amount of Punitive Damages Sought (CCP §425.115) — Federal Express Corporation ($25,000.00; drafted Aug. 4, 2026) — SUPERSEDED by the August 7, 2026 Amended Notice ($250,000.00); retained as the record of the original statement",
     "path": "/documents/matter-25/Notice of Amount of Punitive Damages Sought (CCP 425.115) - Federal Express Corporation (Aug 4 2026).pdf"
   },
   {
     "matter": 25,
-    "label": "SER-001 Request for Sheriff to Serve Court Papers — Federal Express Corporation, c/o Ct Corporation System, Los Angeles County (drafted Aug. 4, 2026, to transmit the CCP §425.115 Notice; FW-003 fee waiver GRANTED, no sheriff fee; EMAILED to LASD Civil Process Aug. 4, 2026)",
+    "label": "AMENDED Notice of Amount of Punitive Damages Sought (CCP §425.115) — Federal Express Corporation ($250,000.00; executed Aug. 7, 2026) — supersedes the Aug. 4, 2026 $25,000.00 Notice in full; NOT YET SERVED — must be personally served before default is taken (CCP §425.115(f)(2))",
+    "path": "/documents/matter-25/Amended Notice of Amount of Punitive Damages Sought (CCP 425.115) - Federal Express Corporation (Aug 7 2026).pdf"
+  },
+  {
+    "matter": 25,
+    "label": "SER-001 Request for Sheriff to Serve Court Papers — Federal Express Corporation, c/o Ct Corporation System, Los Angeles County (Aug. 4, 2026; EMAILED to LASD Civil Process Aug. 4, 2026) — SUPERSEDED by the August 7, 2026 SER-001 transmitting the Amended Notice",
     "path": "/documents/matter-25/SER-001 Request for Sheriff to Serve Court Papers - Federal Express Corporation (CCP 425.115 Notice) (Aug 4 2026).pdf"
+  },
+  {
+    "matter": 25,
+    "label": "SER-001 Request for Sheriff to Serve Court Papers — Federal Express Corporation, c/o Ct Corporation System, Los Angeles County (executed Aug. 7, 2026, to transmit the AMENDED CCP §425.115 Notice; supersedes the Aug. 4, 2026 request; FW-003 fee waiver GRANTED, no sheriff fee) — NOT YET SUBMITTED",
+    "path": "/documents/matter-25/SER-001 Request for Sheriff to Serve Court Papers - Federal Express Corporation (Amended CCP 425.115 Notice) (Aug 7 2026).pdf"
   },
   {
     "matter": 25,
@@ -1646,13 +1656,23 @@
   },
   {
     "matter": 26,
-    "label": "Notice of Amount of Punitive Damages Sought (CCP §425.115) — United Parcel Service, Inc. ($25,000.00 placeholder; drafted Aug. 4, 2026; NOT YET SERVED — must be personally served before default is taken)",
+    "label": "Notice of Amount of Punitive Damages Sought (CCP §425.115) — United Parcel Service, Inc. ($25,000.00; drafted Aug. 4, 2026) — SUPERSEDED by the August 7, 2026 Amended Notice ($250,000.00); retained as the record of the original statement",
     "path": "/documents/matter-26/Notice of Amount of Punitive Damages Sought (CCP 425.115) - United Parcel Service Inc (Aug 4 2026).pdf"
   },
   {
     "matter": 26,
-    "label": "SER-001 Request for Sheriff to Serve Court Papers — United Parcel Service, Inc., c/o CSC - Lawyers Incorporating Service, Sacramento County (drafted Aug. 4, 2026, to transmit the CCP §425.115 Notice; FW-003 fee waiver GRANTED, no sheriff fee; SUBMITTED Aug. 3, 2026)",
+    "label": "AMENDED Notice of Amount of Punitive Damages Sought (CCP §425.115) — United Parcel Service, Inc. ($250,000.00; executed Aug. 7, 2026) — supersedes the Aug. 4, 2026 $25,000.00 Notice in full; NOT YET SERVED — must be personally served before default is taken (CCP §425.115(f)(2))",
+    "path": "/documents/matter-26/Amended Notice of Amount of Punitive Damages Sought (CCP 425.115) - United Parcel Service Inc (Aug 7 2026).pdf"
+  },
+  {
+    "matter": 26,
+    "label": "SER-001 Request for Sheriff to Serve Court Papers — United Parcel Service, Inc., c/o CSC - Lawyers Incorporating Service, Sacramento County (Aug. 4, 2026; SUBMITTED Aug. 3, 2026) — SUPERSEDED by the August 7, 2026 SER-001 transmitting the Amended Notice",
     "path": "/documents/matter-26/SER-001 Request for Sheriff to Serve Court Papers - United Parcel Service Inc (CCP 425.115 Notice) (Aug 4 2026).pdf"
+  },
+  {
+    "matter": 26,
+    "label": "SER-001 Request for Sheriff to Serve Court Papers — United Parcel Service, Inc., c/o CSC - Lawyers Incorporating Service, Sacramento County (executed Aug. 7, 2026, to transmit the AMENDED CCP §425.115 Notice; supersedes the Aug. 3-4, 2026 request; FW-003 fee waiver GRANTED, no sheriff fee) — NOT YET SUBMITTED",
+    "path": "/documents/matter-26/SER-001 Request for Sheriff to Serve Court Papers - United Parcel Service Inc (Amended CCP 425.115 Notice) (Aug 7 2026).pdf"
   },
   {
     "matter": 26,
@@ -1831,23 +1851,43 @@
   },
   {
     "matter": 27,
-    "label": "Notice of Amount of Punitive Damages Sought (CCP §425.115) — Randstad US, LLC ($25,000.00 placeholder; drafted Aug. 4, 2026; NOT YET SERVED — must be personally served before default is taken)",
+    "label": "Notice of Amount of Punitive Damages Sought (CCP §425.115) — Randstad US, LLC ($25,000.00; drafted Aug. 4, 2026) — SUPERSEDED by the August 7, 2026 Amended Notice ($500,000.00); retained as the record of the original statement",
     "path": "/documents/matter-27/Notice of Amount of Punitive Damages Sought (CCP 425.115) - Randstad US LLC (Aug 4 2026).pdf"
   },
   {
     "matter": 27,
-    "label": "Notice of Amount of Punitive Damages Sought (CCP §425.115) — The RK Logistics Group, Inc. ($25,000.00 placeholder; drafted Aug. 4, 2026; NOT YET SERVED — must be personally served before default is taken)",
+    "label": "AMENDED Notice of Amount of Punitive Damages Sought (CCP §425.115) — Randstad US, LLC ($500,000.00; executed Aug. 7, 2026) — supersedes the Aug. 4, 2026 $25,000.00 Notice in full; NOT YET SERVED — must be personally served before default is taken (CCP §425.115(f)(2))",
+    "path": "/documents/matter-27/Amended Notice of Amount of Punitive Damages Sought (CCP 425.115) - Randstad US LLC (Aug 7 2026).pdf"
+  },
+  {
+    "matter": 27,
+    "label": "Notice of Amount of Punitive Damages Sought (CCP §425.115) — The RK Logistics Group, Inc. ($25,000.00; drafted Aug. 4, 2026) — SUPERSEDED by the August 7, 2026 Amended Notice ($500,000.00); retained as the record of the original statement",
     "path": "/documents/matter-27/Notice of Amount of Punitive Damages Sought (CCP 425.115) - RK Logistics Group Inc (Aug 4 2026).pdf"
   },
   {
     "matter": 27,
-    "label": "SER-001 Request for Sheriff to Serve Court Papers — Randstad US, LLC, c/o CSC - Lawyers Incorporating Service, Sacramento County (drafted Aug. 4, 2026, to transmit the CCP §425.115 Notice; FW-003 fee waiver GRANTED Jul. 20, 2026, no sheriff fee; SUBMITTED Aug. 3, 2026)",
+    "label": "AMENDED Notice of Amount of Punitive Damages Sought (CCP §425.115) — The RK Logistics Group, Inc. ($500,000.00; executed Aug. 7, 2026) — supersedes the Aug. 4, 2026 $25,000.00 Notice in full; NOT YET SERVED — must be personally served before default is taken (CCP §425.115(f)(2))",
+    "path": "/documents/matter-27/Amended Notice of Amount of Punitive Damages Sought (CCP 425.115) - RK Logistics Group Inc (Aug 7 2026).pdf"
+  },
+  {
+    "matter": 27,
+    "label": "SER-001 Request for Sheriff to Serve Court Papers — Randstad US, LLC, c/o CSC - Lawyers Incorporating Service, Sacramento County (Aug. 4, 2026) — SUPERSEDED by the August 7, 2026 SER-001 transmitting the Amended Notice",
     "path": "/documents/matter-27/SER-001 Request for Sheriff to Serve Court Papers - Randstad US LLC (CCP 425.115 Notice) (Aug 4 2026).pdf"
   },
   {
     "matter": 27,
-    "label": "SER-001 Request for Sheriff to Serve Court Papers — The RK Logistics Group, Inc., c/o CSC - Lawyers Incorporating Service, Sacramento County (drafted Aug. 4, 2026, to transmit the CCP §425.115 Notice; FW-003 fee waiver GRANTED Jul. 20, 2026, no sheriff fee; SUBMITTED Aug. 3, 2026)",
+    "label": "SER-001 Request for Sheriff to Serve Court Papers — Randstad US, LLC, c/o CSC - Lawyers Incorporating Service, Sacramento County (executed Aug. 7, 2026, to transmit the AMENDED CCP §425.115 Notice; supersedes the Aug. 4, 2026 request; FW-003 fee waiver GRANTED, no sheriff fee) — NOT YET SUBMITTED",
+    "path": "/documents/matter-27/SER-001 Request for Sheriff to Serve Court Papers - Randstad US LLC (Amended CCP 425.115 Notice) (Aug 7 2026).pdf"
+  },
+  {
+    "matter": 27,
+    "label": "SER-001 Request for Sheriff to Serve Court Papers — The RK Logistics Group, Inc., c/o CSC - Lawyers Incorporating Service, Sacramento County (Aug. 4, 2026) — SUPERSEDED by the August 7, 2026 SER-001 transmitting the Amended Notice",
     "path": "/documents/matter-27/SER-001 Request for Sheriff to Serve Court Papers - RK Logistics Group Inc (CCP 425.115 Notice) (Aug 4 2026).pdf"
+  },
+  {
+    "matter": 27,
+    "label": "SER-001 Request for Sheriff to Serve Court Papers — The RK Logistics Group, Inc., c/o CSC - Lawyers Incorporating Service, Sacramento County (executed Aug. 7, 2026, to transmit the AMENDED CCP §425.115 Notice; supersedes the Aug. 4, 2026 request; FW-003 fee waiver GRANTED, no sheriff fee) — NOT YET SUBMITTED",
+    "path": "/documents/matter-27/SER-001 Request for Sheriff to Serve Court Papers - RK Logistics Group Inc (Amended CCP 425.115 Notice) (Aug 7 2026).pdf"
   },
   {
     "matter": 27,
@@ -2281,23 +2321,43 @@
   },
   {
     "matter": 29,
-    "label": "Notice of Amount of Punitive Damages Sought (CCP §425.115) — Amazon.com Services, LLC ($25,000.00 placeholder; drafted Aug. 4, 2026; NOT YET SERVED — must be personally served before default is taken)",
+    "label": "Notice of Amount of Punitive Damages Sought (CCP §425.115) — Amazon.com Services, LLC ($25,000.00; drafted Aug. 4, 2026) — SUPERSEDED, NEVER SERVED; replaced by the August 7, 2026 Notice at $250,000.00. Do not serve this version.",
     "path": "/documents/matter-29/Notice of Amount of Punitive Damages Sought (CCP 425.115) - Amazon.com Services LLC (Aug 4 2026).pdf"
   },
   {
     "matter": 29,
-    "label": "Notice of Amount of Punitive Damages Sought (CCP §425.115) — Accurate Background LLC ($25,000.00 placeholder; drafted Aug. 4, 2026; NOT YET SERVED — must be personally served before default is taken)",
+    "label": "Notice of Amount of Punitive Damages Sought (CCP §425.115) — Amazon.com Services, LLC ($250,000.00; executed Aug. 7, 2026) — operative version, replaces the unserved Aug. 4, 2026 draft; NOT YET SERVED — must be personally served before default is taken (CCP §425.115(f)(2))",
+    "path": "/documents/matter-29/Notice of Amount of Punitive Damages Sought (CCP 425.115) - Amazon.com Services LLC (Aug 7 2026).pdf"
+  },
+  {
+    "matter": 29,
+    "label": "Notice of Amount of Punitive Damages Sought (CCP §425.115) — Accurate Background LLC ($25,000.00; drafted Aug. 4, 2026) — SUPERSEDED, NEVER SERVED; replaced by the August 7, 2026 Notice at $100,000.00. Do not serve this version.",
     "path": "/documents/matter-29/Notice of Amount of Punitive Damages Sought (CCP 425.115) - Accurate Background LLC (Aug 4 2026).pdf"
   },
   {
     "matter": 29,
-    "label": "SER-001 Request for Sheriff to Serve Court Papers — Amazon.com Services, LLC, c/o CSC - Lawyers Incorporating Service, Sacramento County (drafted Aug. 4, 2026, to transmit the CCP §425.115 Notice; fee waiver NOT granted — standard sheriff fee applies absent a granted waiver by submission; NOT YET SUBMITTED)",
+    "label": "Notice of Amount of Punitive Damages Sought (CCP §425.115) — Accurate Background LLC ($100,000.00; executed Aug. 7, 2026) — operative version, replaces the unserved Aug. 4, 2026 draft; NOT YET SERVED — must be personally served before default is taken (CCP §425.115(f)(2))",
+    "path": "/documents/matter-29/Notice of Amount of Punitive Damages Sought (CCP 425.115) - Accurate Background LLC (Aug 7 2026).pdf"
+  },
+  {
+    "matter": 29,
+    "label": "SER-001 Request for Sheriff to Serve Court Papers — Amazon.com Services, LLC, c/o CSC - Lawyers Incorporating Service, Sacramento County (Aug. 4, 2026) — SUPERSEDED, NEVER SUBMITTED; replaced by the August 7, 2026 SER-001. Do not submit this version.",
     "path": "/documents/matter-29/SER-001 Request for Sheriff to Serve Court Papers - Amazon.com Services LLC (CCP 425.115 Notice) (Aug 4 2026).pdf"
   },
   {
     "matter": 29,
-    "label": "SER-001 Request for Sheriff to Serve Court Papers — Accurate Background LLC, c/o CT Corporation System, Los Angeles County (drafted Aug. 4, 2026, to transmit the CCP §425.115 Notice; alternative to Sarah Thompson private process server; NOT YET SUBMITTED)",
+    "label": "SER-001 Request for Sheriff to Serve Court Papers — Amazon.com Services, LLC, c/o CSC - Lawyers Incorporating Service, Sacramento County (executed Aug. 7, 2026, to transmit the $250,000.00 CCP §425.115 Notice; fee waiver PENDING — Aug. 18, 2026 hearing, standard fee applies absent a grant) — NOT YET SUBMITTED",
+    "path": "/documents/matter-29/SER-001 Request for Sheriff to Serve Court Papers - Amazon.com Services LLC (CCP 425.115 Notice) (Aug 7 2026).pdf"
+  },
+  {
+    "matter": 29,
+    "label": "SER-001 Request for Sheriff to Serve Court Papers — Accurate Background LLC, c/o CT Corporation System, Los Angeles County (Aug. 4, 2026) — SUPERSEDED, NEVER SUBMITTED; replaced by the August 7, 2026 SER-001. Do not submit this version.",
     "path": "/documents/matter-29/SER-001 Request for Sheriff to Serve Court Papers - Accurate Background LLC (CCP 425.115 Notice) (Aug 4 2026).pdf"
+  },
+  {
+    "matter": 29,
+    "label": "SER-001 Request for Sheriff to Serve Court Papers — Accurate Background LLC, c/o CT Corporation System, Los Angeles County (executed Aug. 7, 2026, to transmit the $100,000.00 CCP §425.115 Notice; private process server remains the faster alternative; fee waiver PENDING) — NOT YET SUBMITTED",
+    "path": "/documents/matter-29/SER-001 Request for Sheriff to Serve Court Papers - Accurate Background LLC (CCP 425.115 Notice) (Aug 7 2026).pdf"
   },
   {
     "matter": 29,
