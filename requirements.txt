@@ -14,7 +14,7 @@ pypdf>=6.14.2
 
 # Text and layout extraction for the pdf-audit tier scripts.
 pymupdf>=1.28.0          # imported as `fitz`
-pdfplumber>=0.11
+pdfplumber>=0.11.10
 pypdfium2>=5.12.1
 
 # OCR fallback for scanned exhibits (internal/scripts/pdf-audit/ocr.py).

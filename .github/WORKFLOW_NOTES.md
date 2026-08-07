@@ -89,10 +89,11 @@ Configured for parallel human + bot work:
 
 - **`rebase-strategy: auto`** on npm, github-actions, and pip — when a Dependabot PR conflicts with `main`, Dependabot rebases it instead of leaving it `DIRTY`.
 - **Grouped minor/patch** updates (dev tooling, build tooling, React ecosystem, Actions, pip) so routine bumps arrive as a few weekly PRs rather than a dozen stale branches.
-- **Majors stay ungrouped** (React 19, `@vitejs/plugin-react` 6, jsdom 30, etc.) so each is its own reviewable PR.
-- **`open-pull-requests-limit: 8`** (npm) / **3** (Actions, pip) — npm keeps room for ungrouped majors (React, plugin-react, jsdom) alongside grouped minor/patch PRs.
+- **Peer-locked majors are grouped** (`react-majors`, `vitest-majors`) so Dependabot cannot open half-upgrades that fail `npm ci`.
+- **TypeScript majors ignored** until `typescript-eslint` supports TS 7+.
+- **`open-pull-requests-limit: 8`** (npm) / **3** (Actions, pip).
 
-If a Dependabot PR still looks stuck after a large `main` merge, comment `@dependabot recreate` on that PR (or close it) so the next run opens a fresh branch from current `main`. `@dependabot rebase` is enough when the only issue is a content conflict. To revive a closed Dependabot PR: reopen it, then comment `@dependabot recreate`.
+If a Dependabot PR still looks stuck after a large `main` merge, comment `@dependabot recreate` on that PR (you need push access). `@dependabot rebase` is enough when the only issue is a content conflict.
 
 **Why this order?**
 - Typecheck first (fast, catches syntax errors early)

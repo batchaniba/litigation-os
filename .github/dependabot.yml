@@ -6,8 +6,9 @@ updates:
   # - rebase-strategy: auto — Dependabot rebases when a PR conflicts after
   #   pushes to main (default, made explicit so it cannot drift).
   # - Groups collapse routine minor/patch noise into a few weekly PRs.
-  # - Majors stay ungrouped (one PR each) so they can be recreated cleanly
-  #   from current main after large merges.
+  # - Peer-locked majors (React stack, Vitest stack) are grouped so Dependabot
+  #   cannot open half-upgrades that fail npm ci.
+  # - TypeScript majors ignored until typescript-eslint supports TS 7+.
   # - open-pull-requests-limit keeps the queue short so stale branches are
   #   less likely to pile up against active feature work.
   - package-ecosystem: npm
@@ -22,8 +23,6 @@ updates:
           - "eslint*"
           - "@eslint/*"
           - "typescript-eslint"
-          - "vitest"
-          - "@vitest/*"
           - "@testing-library/*"
           - "jsdom"
           - "globals"
@@ -48,8 +47,21 @@ updates:
         update-types:
           - minor
           - patch
-      # Majors stay ungrouped so each landing (React 19, plugin-react 6, jsdom 30)
-      # is its own reviewable PR after @dependabot recreate.
+      # Keep peer-locked majors together (prevents #457/#459 and #458 splits).
+      vitest-stack:
+        patterns:
+          - "vitest"
+          - "@vitest/*"
+      react-stack:
+        patterns:
+          - "react"
+          - "react-dom"
+          - "@types/react"
+          - "@types/react-dom"
+    ignore:
+      # typescript-eslint@8 peers typescript <6.1; TS 7 cannot install cleanly yet.
+      - dependency-name: "typescript"
+        update-types: ["version-update:semver-major"]
 
   # Keeps actions/checkout, setup-node, setup-python, and the Pages actions
   # current — these are the workflow's only unpinned third-party code.
