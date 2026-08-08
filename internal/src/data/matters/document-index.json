@@ -1125,6 +1125,11 @@
     "path": "/documents/matter-19/Notice of Change of Address (July 7, 2026).pdf"
   },
   {
+    "matter": 19,
+    "label": "HC-004 Notice and Request for Ruling Packet (with Exhibit A — unstamped Petition, 69 pp.) — ready to file Aug. 7, 2026",
+    "path": "/documents/matter-19/HC-004 Notice and Request for Ruling Packet (with Exhibit A — Unstamped Petition) (Ready to File Aug 7 2026).pdf"
+  },
+  {
     "matter": 20,
     "label": "Verified Petition for Writ of Mandate (filed May 29, 2026)",
     "path": "/documents/matter-32/from-20/0.Newanforbi v. CHP - Writ of Mandate.pdf"
@@ -2385,6 +2390,11 @@
     "path": "/documents/matter-29/IMG_7434.png"
   },
   {
+    "matter": 29,
+    "label": "POS-010 Proof of Service of Summons — Accurate Background LLC (served Jul. 31, 2026, 11:00 AM on CT Corporation / Jaqueline Mejia; declaration dated Aug. 5, 2026)",
+    "path": "/documents/matter-29/Proof of Service Accurate Background.pdf"
+  },
+  {
     "matter": 30,
     "label": "Newanforbi v. Derrick et al. FAC (Case 2:26-cv-00004-DJC-JDP, E.D. Cal., filed Jan. 12, 2026) — triggering protected activity",
     "path": "/documents/matter-03/8_fed_derrickFAC.pdf"
@@ -2478,6 +2488,31 @@
     "matter": 31,
     "label": "First Advantage Adverse Employment Action Notice re: FedEx application (Mar. 19, 2025) — cross-referenced from Matter 25",
     "path": "/documents/matter-25/FedEx Adverse Employment Action Notice.pdf"
+  },
+  {
+    "matter": 32,
+    "label": "N.D. Cal. Complaint (operative v3) — Nforbi v. Meza-Gonzalez & Melano (filed Aug. 7, 2026, 4:05 p.m. PT)",
+    "path": "/documents/matter-32/ndcal/Complaint Nforbi v Meza-Gonzalez and Melano NDCal 3 Operative.pdf"
+  },
+  {
+    "matter": 32,
+    "label": "N.D. Cal. Intake Packet (print copy) — JS-44, AO 440×2, MJ consent (filed Aug. 7, 2026, 4:05 p.m. PT with complaint)",
+    "path": "/documents/matter-32/ndcal/N.D. Cal. Intake Packet (print copy) - Nforbi v. Meza-Gonzalez (Aug 7 2026).pdf"
+  },
+  {
+    "matter": 32,
+    "label": "N.D. Cal. Complaint (draft v1, long-form, superseded) — Nforbi v. Meza-Gonzalez & Melano",
+    "path": "/documents/matter-32/ndcal/Complaint Nforbi v Meza-Gonzalez and Melano NDCal.pdf"
+  },
+  {
+    "matter": 32,
+    "label": "N.D. Cal. Complaint (draft v2, five claims, superseded) — Nforbi v. Meza-Gonzalez & Melano",
+    "path": "/documents/matter-32/ndcal/Complaint Nforbi v Meza-Gonzalez and Melano NDCal 2.pdf"
+  },
+  {
+    "matter": 32,
+    "label": "Centerline Wage Reference — damages support for N.D. Cal. complaint (>$214,000)",
+    "path": "/documents/matter-32/ndcal/Wage Reference.pdf"
   },
   {
     "matter": 32,
@@ -2938,6 +2973,26 @@
     "matter": 32,
     "label": "[M24] Notice of Change of Address (filed July 7, 2026)",
     "path": "/documents/matter-32/from-24/Notice of Change of Address (July 7, 2026).pdf"
+  },
+  {
+    "matter": 33,
+    "label": "N.D. Cal. Complaint (operative v3) — Nforbi v. Candelaria & Gordon (filed Aug. 7, 2026, 4:05 p.m. PT)",
+    "path": "/documents/matter-33/ndcal/Complaint Nforbi v Candelaria and Gordon NDCal 3 Operative.pdf"
+  },
+  {
+    "matter": 33,
+    "label": "N.D. Cal. Intake Packet (print copy) — JS-44, AO 440×2, MJ consent (filed Aug. 7, 2026, 4:05 p.m. PT with complaint)",
+    "path": "/documents/matter-33/ndcal/N.D. Cal. Intake Packet (print copy) - Nforbi v. Candelaria & Gordon (Aug 7 2026).pdf"
+  },
+  {
+    "matter": 33,
+    "label": "N.D. Cal. Complaint (draft v1, superseded) — Nforbi v. Candelaria & Gordon",
+    "path": "/documents/matter-33/ndcal/Complaint Nforbi v Candelaria and Gordon NDCal.pdf"
+  },
+  {
+    "matter": 33,
+    "label": "N.D. Cal. Complaint (short draft v2, superseded) — Nforbi v. Candelaria & Gordon",
+    "path": "/documents/matter-33/ndcal/Complaint Nforbi v Candelaria and Gordon NDCal 2.pdf"
   },
   {
     "matter": 33,

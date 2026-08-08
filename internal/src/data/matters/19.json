@@ -4,8 +4,8 @@
   "case_no": "C2604791",
   "court": "Santa Clara Sup. Ct.",
   "claims": "Habeas Corpus — Immediate Discharge from Parole (Pen. Code §1473; PC §§3000, 3001, 3008(d)(2); 15 CCR §3574)",
-  "status": "Active — the August 1, 2026 deadline for Judge Robert Hawk to rule, set by the July 2, 2026 Order Extending Time (Cal. Rules of Court, rule 4.551(i)), lapsed without a ruling; as of August 7, 2026 the petition remains pending and under submission, undenied and undismissed.",
-  "status_label": "Under submission — ruling overdue since Aug. 1, 2026",
+  "status": "Active — the August 1, 2026 deadline for Judge Robert Hawk to rule, set by the July 2, 2026 Order Extending Time (Cal. Rules of Court, rule 4.551(i)), lapsed without a ruling; as of August 7, 2026 the petition remains pending and under submission, undenied and undismissed. HC-004 Notice and Request for Ruling packet (rule 4.551(a)(3)(B)) prepared August 7, 2026 — ready to file.",
+  "status_label": "HC-004 ready to file — ruling overdue since Aug. 1, 2026",
   "lifecycle": "active",
   "proceeding": "habeas",
   "phase": "under_submission",
@@ -50,6 +50,11 @@
     {
       "label": "Notice of Change of Address (filed July 7, 2026)",
       "path": "/documents/matter-19/Notice of Change of Address (July 7, 2026).pdf"
+    },
+    {
+      "label": "HC-004 Notice and Request for Ruling Packet (with Exhibit A — unstamped Petition, 69 pp.) — ready to file Aug. 7, 2026",
+      "path": "/documents/matter-19/HC-004 Notice and Request for Ruling Packet (with Exhibit A — Unstamped Petition) (Ready to File Aug 7 2026).pdf",
+      "filed": false
     }
   ],
   "archived": false

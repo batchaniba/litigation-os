@@ -161,7 +161,7 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | 2 | Newanforbi v. Meza-Gonzalez et al. | 26CV168913 | Alameda Sup. Ct. | State | Stayed — U-Visa motion heard Jun. 18, 2026, no ruling |
 | 7 | Newanforbi v. Candelaria | 2:26-cv-00983-DC-CSK | USDC E.D. Cal. | Federal | F&R pending — objections filed, District Judge review |
 | 12 | Brendan Ngwa Nforbi v. Diamond Truck Sales, Inc. | STK-CV-UF-2026-0001094 | San Joaquin Sup. Ct. | State | Default prove-up — Aug. 12, 2026 |
-| 19 | Newanforbi v. Macomber | C2604791 | Santa Clara Sup. Ct. | State | Under submission — ruling overdue since Aug. 1, 2026 |
+| 19 | Newanforbi v. Macomber | C2604791 | Santa Clara Sup. Ct. | State | HC-004 ready to file — ruling overdue since Aug. 1, 2026 |
 | 20 | Newanforbi v. California Highway Patrol, et al. | 26CV191136 | Alameda Sup. Ct. | State | Served Jun. 30, 2026 — Demurrer hearing Aug. 28, 2026 |
 | 24 | Newanforbi v. Serrato | 4:26-cv-05953-ASK | USDC N.D. Cal. | Federal | Served Jul. 1, 2026 — CMC Sep. 15, 2026 |
 | 25 | Newanforbi v. Federal Express Corporation | STK-CV-UWT-2026-0009118 | San Joaquin Sup. Ct. | State | Served Jul. 24, 2026 — CMC Jan. 14, 2027 |
@@ -171,8 +171,8 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | 29 | Newanforbi v. Amazon.com Services, LLC | 26CV201554 | Alameda Sup. Ct. (Hayward Hall of Justice, Dept. 520) | State | Filed Jul. 28, 2026 — service in progress |
 | 30 | Newanforbi v. Moua, et al. | TBD | USDC N.D. Cal. | Federal | Pre-filing — anticipated filing Sep. 16, 2026 |
 | 31 | Newanforbi v. First Advantage LLC | TBD | San Joaquin Sup. Ct. (anticipated) | State | Pre-filing |
-| 32 | Ngwa Nforbi v. Meza-Gonzalez, et al | TBD | TBD (same-incident companion to Matter 2 / Alameda Sup. Ct.) | State | CHP docket PDF home (M1/2/20/24) |
-| 33 | Newanforbi v. Candelaria (DMV APS / Nov. 1, 2024) | TBD (document home — live dockets: Matter 7 / 2:26-cv-00983-DC-CSK; Matter 8 / 26WM000135 abandoned) | TBD (evidence home for Candelaria / DMV APS cluster) | Federal | Candelaria / DMV APS PDF home |
+| 32 | Ngwa Nforbi v. Meza-Gonzalez, et al | TBD (filed N.D. Cal. Aug. 7, 2026, 4:05 p.m. PT — case number assignment pending) | USDC N.D. Cal. (filed Aug. 7, 2026, 4:05 p.m. PT; related Serrato 4:26-cv-05953-ASK) | Federal | Filed N.D. Cal. Aug. 7, 2026 @ 4:05 p.m. |
+| 33 | Newanforbi v. Candelaria (DMV APS / Nov. 1, 2024) | TBD (filed N.D. Cal. Aug. 7, 2026, 4:05 p.m. PT — case number assignment pending; prior E.D. Cal. Matter 7: 2:26-cv-00983-DC-CSK) | USDC N.D. Cal. (filed Aug. 7, 2026, 4:05 p.m. PT; companion to Matter 7 E.D. Cal. 2:26-cv-00983 — voluntarily dismissed w/o prejudice per operative complaint) | Federal | Filed N.D. Cal. Aug. 7, 2026 @ 4:05 p.m. |
 <!-- PORTFOLIO:ACTIVE_MATTERS:END -->
 
 ### Settled
