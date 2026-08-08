@@ -45,6 +45,25 @@ export type MatterPhase =
   | "fr_pending"
   | "district_review";
 
+/** Canonical document metadata — path is the stable id. */
+export interface DocumentRegistryEntry {
+  path: string;
+  label: string;
+  /** Matter folder that owns the file on disk (`matter-NN`), when applicable. */
+  ownerMatter?: number | null;
+}
+
+/**
+ * Matter membership ref. `path` joins the shared registry; `label` is kept only
+ * when it intentionally differs from the registry canonical label.
+ */
+export interface MatterDocumentRef {
+  path: string;
+  label?: string;
+  filed?: boolean;
+}
+
+/** Resolved document for UI (registry label + matter overrides). */
 export interface PortfolioDocument {
   label: string;
   path: string;
@@ -103,6 +122,7 @@ export interface Matter extends MatterSummary {
   damages: string;
   risk: string;
   evidence: string[];
+  /** Resolved for UI by `loadMatter` (raw NN.json may omit redundant labels). */
   documents?: PortfolioDocument[];
 }
 
