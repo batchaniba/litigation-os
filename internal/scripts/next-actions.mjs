@@ -39,7 +39,12 @@ if (!Number.isFinite(horizonDays) && !showAll) {
   console.error("--days must be a number");
   process.exit(1);
 }
-const matterFilter = flagValue("--matter") ? Number(flagValue("--matter")) : null;
+const matterRaw = flagValue("--matter");
+const matterFilter = matterRaw === null ? null : Number(matterRaw);
+if (matterRaw !== null && !Number.isFinite(matterFilter)) {
+  console.error("--matter must be a number");
+  process.exit(1);
+}
 
 for (const file of [TIMELINE, SUMMARIES]) {
   if (!fs.existsSync(file)) {
@@ -62,8 +67,12 @@ const visible = queue.items.filter(
 const undated = queue.undated.filter((item) => matchesFilter(item) && matchesActor(item));
 const gaps = matterFilter === null ? queue.gaps : queue.gaps.filter((g) => g.number === matterFilter);
 
+const retired = (queue.retired ?? []).filter((item) => matchesFilter(item));
+
 if (asJson) {
-  console.log(JSON.stringify({ today, horizonDays, items: visible, undated, gaps }, null, 2));
+  console.log(
+    JSON.stringify({ today, horizonDays, items: visible, undated, retired, gaps }, null, 2),
+  );
   process.exit(0);
 }
 
@@ -127,6 +136,12 @@ if (gaps.length > 0) {
     console.log(`  M${gap.number} — ${gap.caption}${gap.case_no ? ` (${gap.case_no})` : ""}`);
     if (gap.status_label) console.log(`    ${gap.status_label}`);
   }
+}
+
+if (retired.length > 0) {
+  console.log(
+    `\nSkipped ${retired.length} upcoming flag(s) on archived/closed matters — clear upcoming in timeline.json.`,
+  );
 }
 
 console.log(

@@ -74,7 +74,9 @@ matter's own record at `internal/src/data/matters/NN.json` for context.
 If a past-due item is actually complete, the fix is in the data, not the script:
 drop `"upcoming": true` from that entry in `internal/src/data/timeline.json`, then
 run `npm run sync:upcoming && npm run generate:readme` so the SPA bundle and the
-README table follow. Offer that when a past-due row is stale.
+README table follow. Offer that when a past-due row is stale. The monitor also
+skips upcoming flags that only touch archived/closed matters (and prints a count
+of those skips) — clear those flags too so validate-portfolio stays green.
 
 To pin an actor instead of relying on inference, add `"actor": "you" | "opposing"
 | "agency"` to the timeline entry. The script prefers the explicit value and

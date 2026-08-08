@@ -52,7 +52,8 @@
       20
     ],
     "type": "deadline",
-    "upcoming": true
+    "upcoming": true,
+    "actor": "opposing"
   },
   {
     "date": "Aug. 28, 2026",
@@ -70,7 +71,8 @@
       26
     ],
     "type": "deadline",
-    "upcoming": true
+    "upcoming": true,
+    "actor": "opposing"
   },
   {
     "date": "Aug. 19, 2026",
@@ -79,7 +81,8 @@
       25
     ],
     "type": "deadline",
-    "upcoming": true
+    "upcoming": true,
+    "actor": "opposing"
   },
   {
     "date": "Aug. 21, 2026",
@@ -88,7 +91,8 @@
       26
     ],
     "type": "deadline",
-    "upcoming": true
+    "upcoming": true,
+    "actor": "opposing"
   },
   {
     "date": "Aug. 24, 2026",
@@ -97,7 +101,8 @@
       25
     ],
     "type": "deadline",
-    "upcoming": true
+    "upcoming": true,
+    "actor": "opposing"
   },
   {
     "date": "Sep. 13, 2026",
@@ -179,7 +184,8 @@
       27
     ],
     "type": "deadline",
-    "upcoming": true
+    "upcoming": true,
+    "actor": "opposing"
   },
   {
     "date": "Aug. 31, 2026",
@@ -188,7 +194,8 @@
       27
     ],
     "type": "deadline",
-    "upcoming": true
+    "upcoming": true,
+    "actor": "opposing"
   },
   {
     "date": "Aug. 12, 2026",
@@ -198,16 +205,8 @@
       27
     ],
     "type": "deadline",
-    "upcoming": true
-  },
-  {
-    "date": "Aug. 10, 2026",
-    "event": "Reply deadline — Motion for Protective Order, Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504)",
-    "matters": [
-      28
-    ],
-    "type": "deadline",
-    "upcoming": true
+    "upcoming": true,
+    "actor": "agency"
   },
   {
     "date": "Oct. 15, 2026",
@@ -225,15 +224,6 @@
       28
     ],
     "type": "hearing",
-    "upcoming": true
-  },
-  {
-    "date": "Aug. 7, 2026",
-    "event": "Deadline to file amended complaint (14 days from Jul. 24, 2026 order, Doc 31) — Newanforbi v. Derrick et al. (2:26-cv-00004-DJC-JDP); if not filed, action proceeds solely on Equal Protection claim against Derrick",
-    "matters": [
-      3
-    ],
-    "type": "deadline",
     "upcoming": true
   },
   {
@@ -270,7 +260,8 @@
       29
     ],
     "type": "deadline",
-    "upcoming": true
+    "upcoming": true,
+    "actor": "opposing"
   },
   {
     "date": "Aug. 31, 2026",
@@ -279,7 +270,8 @@
       29
     ],
     "type": "deadline",
-    "upcoming": true
+    "upcoming": true,
+    "actor": "opposing"
   },
   {
     "date": "Jan. 6, 2027",
@@ -297,7 +289,8 @@
       30
     ],
     "type": "deadline",
-    "upcoming": true
+    "upcoming": true,
+    "actor": "agency"
   },
   {
     "date": "Sep. 16, 2026",
@@ -316,16 +309,6 @@
     ],
     "type": "deadline",
     "upcoming": true
-  },
-  {
-    "date": "Oct. 13, 2026",
-    "event": "Case Management Conference, Newanforbi v. Palacios, et al. (Matter 5) — Hon. George J. Abdallah, Dept. 10A, 8:45 a.m.; setting confirmed on the caption of the served Set Two discovery (SROG/DISC001) to HOPE Program and Palacios",
-    "matters": [
-      5
-    ],
-    "type": "deadline",
-    "upcoming": true,
-    "source": "/documents/matter-05/SROG Set Two HOPE NEWpal .pdf"
   },
   {
     "date": "Oct. 16, 2026",
