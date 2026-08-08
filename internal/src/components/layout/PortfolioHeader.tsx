@@ -43,8 +43,11 @@ export function PortfolioHeader({
       <div className="legacy-header-inner">
         <img
           className="legacy-brand-logo"
-          src={withBase(darkMode ? "/logo-dark.png" : "/logo-light.png")}
+          src={withBase(darkMode ? "/logo-dark.webp" : "/logo-light.webp")}
           alt="Newanforbi — In Propria Persona"
+          width={440}
+          height={440}
+          fetchPriority="high"
         />
 
         <span className="legacy-versus" aria-hidden="true">
@@ -79,14 +82,14 @@ export function PortfolioHeader({
                 <div>Blaze Van Dine</div>
                 <div className="firm-external-hint">Visit site ↗</div>
               </div>
-              <img className="firm-logo" src={withBase(darkMode ? "/branding/slb-dark.png" : "/branding/slb-light.png")} alt="Sims, Lawrence & Broghammer" style={{ height: darkMode ? 62 : 42, width: "auto" }} />
+              <img className="firm-logo" src={withBase(darkMode ? "/branding/slb-dark.webp" : "/branding/slb-light.webp")} alt="Sims, Lawrence & Broghammer" width={darkMode ? 236 : 232} height={darkMode ? 124 : 84} decoding="async" style={{ height: darkMode ? 62 : 42, width: "auto" }} />
             </a>
             <a href="https://www.garciagurney.com/" target="_blank" rel="noopener noreferrer" title="Visit Garcia & Gurney, A Law Corporation (garciagurney.com) ↗" className="firm-link">
               <div className="legacy-counsel-names">
                 <div>Melinda Garcia</div>
                 <div className="firm-external-hint">Visit site ↗</div>
               </div>
-              <img className="firm-logo legacy-garcia-logo" src={withBase(darkMode ? "/branding/garcia-gurney-dark.png" : "/branding/garcia-gurney.png")} alt="Garcia & Gurney, A Law Corporation" />
+              <img className="firm-logo legacy-garcia-logo" src={withBase(darkMode ? "/branding/garcia-gurney-dark.webp" : "/branding/garcia-gurney.webp")} alt="Garcia & Gurney, A Law Corporation" width={260} height={88} decoding="async" />
             </a>
             <a href="https://oag.ca.gov/dag-recruitment" target="_blank" rel="noopener noreferrer" title="Visit California Attorney General's Office — Deputy Attorney General recruitment (oag.ca.gov) ↗" className="firm-link">
               <div className="legacy-counsel-names">
@@ -100,7 +103,7 @@ export function PortfolioHeader({
                 ].map((name) => <div key={name}>{name}</div>)}
                 <div className="firm-external-hint">Visit site ↗</div>
               </div>
-              <img className="firm-logo legacy-dag-logo" src={withBase(darkMode ? "/branding/dag-dark.jpg" : "/branding/dag-light.jpg")} alt="California Department of Justice, Office of the Attorney General" />
+              <img className="firm-logo legacy-dag-logo" src={withBase(darkMode ? "/branding/dag-dark.webp" : "/branding/dag-light.webp")} alt="California Department of Justice, Office of the Attorney General" width={128} height={128} decoding="async" />
             </a>
           </div>
         </div>

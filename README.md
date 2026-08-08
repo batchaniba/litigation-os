@@ -1,4 +1,4 @@
-<img src="internal/public/logo-light.png" alt="Newanforbi — In Propria Persona" width="180" align="left" />
+<img src="internal/public/logo-light.webp" alt="Newanforbi — In Propria Persona" width="180" align="left" />
 
 # Interactive Litigation Portfolio
 
