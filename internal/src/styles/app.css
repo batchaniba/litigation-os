@@ -667,6 +667,18 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
   .matter-page .document-group { border-color: #9ca3af; background: none !important; }
   .matter-page .document-group > summary,
   .matter-page .document-type { color: #374151 !important; }
+  /* Force every disclosure open on paper. A printed matter must not be missing
+     its foundation and parties, nor document groups 2..n, just because they are
+     collapsed on screen. */
+  .matter-page details > summary { list-style: none; }
+  .matter-page details > summary::-webkit-details-marker { display: none; }
+  .matter-page details > *:not(summary) {
+    display: block !important;
+    content-visibility: visible !important;
+  }
+  .xm-reference > summary { display: none !important; }
+  .matter-page .xm-peer, .matter-page .xm-exposure { break-inside: avoid; }
+  .matter-page .xm-severity, .matter-page .xm-sources li::before { color: #374151 !important; }
 }
 
 @media (max-width: 1180px) {
@@ -916,17 +928,32 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
 .xm-sev-high { border-left-color: var(--sev-high); }
 .xm-sev-medium { border-left-color: var(--gold); }
 .xm-sev-low { border-left-color: var(--sev-low); }
-.xm-peer-head, .xm-exposure-head, .xm-chain-head {
+.xm-exposure-head, .xm-chain-head {
   display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: baseline; justify-content: space-between;
 }
+/* The relationship is a caption for the title, not a second column. Left as a
+   space-between row it opened a ~250px void between the two at full width. */
+.xm-peer-head { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; }
 .xm-peer-title, .xm-exposure-label, .xm-chain-route { font-weight: 700; font-size: 14px; }
+.xm-severity {
+  margin-right: 6px; font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+}
+.xm-severity-high { color: var(--sev-high); }
+.xm-severity-medium { color: var(--gold); }
+.xm-severity-low { color: var(--muted-text); }
 /* Meta lines are UI chrome, not prose — the serif belongs to the captions and
    the body copy, not to four different treatments inside one card. */
 .xm-relationship { font-family: var(--font-sans); font-size: 12px; color: var(--subtle-text); }
 .xm-kinds { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; }
-.xm-sources { list-style: none; margin: 8px 0 0; padding: 0; font-family: var(--font-sans); font-size: 11px; color: var(--subtle-text); }
-.xm-sources li { padding-left: 12px; position: relative; }
-.xm-sources li::before { content: "§"; position: absolute; left: 0; opacity: .6; }
+/* Footnote apparatus: it needs to read as a citation block under the argument,
+   not as faint text crushed against the last paragraph. */
+.xm-sources {
+  list-style: none; margin: 12px 0 0; padding: 10px 0 0; max-width: 72ch;
+  border-top: 1px solid rgb(148 163 184 / 14%);
+  font-family: var(--font-sans); font-size: 11px; line-height: 1.6; color: var(--muted-text);
+}
+.xm-sources li { padding-left: 14px; position: relative; }
+.xm-sources li::before { content: "§"; position: absolute; left: 0; color: var(--gold); opacity: .75; }
 .xm-remedy { margin-top: 6px; font-size: 13px; }
 .xm-status {
   font-size: 10px; letter-spacing: .08em; text-transform: uppercase; font-weight: 700;
@@ -936,9 +963,16 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
 .xm-status-monitoring { border-color: var(--gold); background: rgb(200 168 75 / 12%); color: var(--gold); }
 .xm-status-resolved { border-color: var(--sev-ok); background: var(--sev-ok-bg); color: var(--sev-ok); }
 .xm-exposure-matters { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+/* These are Links, and until now they were indistinguishable from .xm-kind,
+   which is a static label. Gold is what a link looks like everywhere else here. */
 .xm-matter-chip {
-  font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 999px;
-  border: 1px solid rgb(148 163 184 / 35%); text-decoration: none;
+  font-family: var(--font-sans); font-size: 11px; font-weight: 600; padding: 4px 10px;
+  border-radius: 999px; border: 1px solid rgb(200 168 75 / 35%);
+  color: var(--gold); text-decoration: none;
+  transition: background .15s ease, border-color .15s ease;
+}
+.xm-matter-chip:hover, .xm-matter-chip:focus-visible {
+  border-color: var(--gold); background: rgb(200 168 75 / 12%);
 }
 .xm-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
 .xm-foundation-list li, .xm-party-list li {
@@ -952,6 +986,39 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
 .xm-legend { margin: 0; }
 .xm-legend-item { display: grid; grid-template-columns: 210px 1fr; gap: 12px; padding: 8px 0; align-items: start; }
 .xm-legend-item dd { margin: 0; }
+
+/* Cross-matter inside a matter page.
+   On the Cross-Matter tab these items sit straight on the page, so the full
+   card border is right. Inside .matter-page they sit in a .matter-panel that
+   already draws a border, a radius and 24px of padding — a second box on top
+   of that is inset and nothing else, ten times over. Here they become
+   left-ruled list items, keeping only the severity bar. */
+.matter-page .xm-peer, .matter-page .xm-exposure {
+  border-width: 0 0 0 3px; border-radius: 0;
+  margin-bottom: 0; padding: 18px 0 18px 16px;
+}
+.matter-page .xm-peer + .xm-peer, .matter-page .xm-exposure + .xm-exposure {
+  border-top: 1px solid rgb(148 163 184 / 14%);
+}
+/* Prose ran at ~128 characters per line at full width. */
+.matter-page .xm-peer .detail-copy,
+.matter-page .xm-exposure .detail-copy,
+.matter-page .xm-cluster-line { max-width: 72ch; }
+.matter-page .xm-peer-list, .matter-page .xm-exposure-list { margin-top: -4px; }
+
+/* Foundation and parties are reference material, not the argument, so they
+   collapse behind the same disclosure the document groups use. */
+.xm-reference { margin-top: 22px; }
+.xm-reference > summary {
+  display: flex; justify-content: space-between; gap: 16px; align-items: center;
+  cursor: pointer; padding: 10px 12px;
+  border: 1px solid var(--card-border); border-radius: 8px; background: var(--deep-bg);
+  color: var(--gold); font-family: var(--font-sans); font-size: 11px; font-weight: 700;
+  letter-spacing: .08em; text-transform: uppercase;
+}
+.xm-reference > summary:hover { border-color: rgb(200 168 75 / 40%); }
+.xm-reference[open] > summary { margin-bottom: 4px; }
+.xm-reference .xm-subhead:first-of-type { margin-top: 18px; }
 
 @media (max-width: 760px) {
   .xm-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
