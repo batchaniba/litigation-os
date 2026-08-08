@@ -137,12 +137,16 @@ export interface DeadlineClockState {
   frozen?: boolean;
 }
 
+/** Matter joins: concrete numbers, or portfolio-wide sentinel `"All"`. */
+export type TimelineMatters = number[] | "All";
+
 export interface TimelineEvent {
   date: string;
   event: string;
   type: string;
-  matters: string;
+  matters: TimelineMatters;
   upcoming?: boolean;
+  source?: string;
 }
 
 export type CrossMatterDirection = "mutual" | "from_depends_on_to" | "to_cites_from";

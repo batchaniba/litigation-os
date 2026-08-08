@@ -23,6 +23,7 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 import { loadMatters } from "./load-matters.mjs";
 import { lifecycleLabel, readmeBucket } from "./matter-lifecycle.mjs";
 import { effectiveStatusLabel } from "./status-label.mjs";
+import { formatMatterRefs, parseMatterRefs } from "../src/utils/matterRefs.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(__dirname, "..", "..");
@@ -139,8 +140,7 @@ const timeline = JSON.parse(
   fs.readFileSync(path.join(REPO_ROOT, "internal/src/data/timeline.json"), "utf8"),
 );
 for (const event of timeline) {
-  for (const raw of String(event.matters ?? "").split(",")) {
-    const matter = Number(raw.trim());
+  for (const matter of parseMatterRefs(event.matters).numbers) {
     if (!matter) continue;
     if (!eventsByMatter.has(matter)) eventsByMatter.set(matter, []);
     eventsByMatter.get(matter).push(event);
@@ -228,7 +228,7 @@ const deadlinesTable = [
   `| Date | Matter | Event |`,
   `|---|---|---|`,
   ...upcoming.map(
-    (t) => `| ${escapeCell(t.date)} | ${escapeCell(t.matters)} | ${escapeCell(truncate(t.event, 220))} |`,
+    (t) => `| ${escapeCell(t.date)} | ${escapeCell(formatMatterRefs(t.matters))} | ${escapeCell(truncate(t.event, 220))} |`,
   ),
 ].join("\n");
 
@@ -237,7 +237,7 @@ const damagesTable = [
   `|---|---|---|---|---|`,
   ...damages_table.map(
     (r) =>
-      `| ${escapeCell(r.category)} | ${escapeCell(r.matters)} | ${money(r.conservative)} | ${money(r.moderate)} | ${money(r.aggressive)} |`,
+      `| ${escapeCell(r.category)} | ${escapeCell(formatMatterRefs(r.matters))} | ${money(r.conservative)} | ${money(r.moderate)} | ${money(r.aggressive)} |`,
   ),
   `| **Portfolio Total (pre-deduplication)** | | **${money(cons)}** | **${money(mod)}** | **${money(agg)}** |`,
 ].join("\n");

@@ -5,23 +5,23 @@ import { withMatterIdentity } from "./matterIdentity.js";
 // on matter_damages rows. `claims` here is a short damages-tab label and may
 // differ from the matter JSON claims string by design.
 export const damages_table = [
-    { category: "Lost Wages / Economic Harm", matters: "1, 2, 7, 22", conservative: 20000, moderate: 130000, aggressive: 334000 },
-    { category: "False Imprisonment", matters: "1, 2", conservative: 40000, moderate: 85000, aggressive: 215000 },
-    { category: "Emotional Distress", matters: "1, 2, 5, 7, 22, 24", conservative: 0, moderate: 20000, aggressive: 115000 },
-    { category: "Bane Act / Treble", matters: "1, 2", conservative: 15000, moderate: 50000, aggressive: 70000 },
-    { category: "Punitive Damages", matters: "1, 2, 7, 22, 24", conservative: 30000, moderate: 120000, aggressive: 450000 },
-    { category: "Consumer Fraud", matters: "12", conservative: 78672, moderate: 110072, aggressive: 200272 },
-    { category: "Attorneys' Fees", matters: "1, 7, 22, 24", conservative: 28000, moderate: 45000, aggressive: 70000 },
-    { category: "PC §290.46(j) Violation + Wrongful Termination (Matter 22)", matters: "22", conservative: 220000, moderate: 525000, aggressive: 1000000 },
-    { category: "42 USC §1983 — Arbitrary U Visa Certification Denial & Retaliation (Matter 24)", matters: "24", conservative: 75000, moderate: 200000, aggressive: 450000 },
-    { category: "PC §290.46(j) Failure to Hire — FedEx / UPS (Matters 25, 26)", matters: "25, 26", conservative: 75000, moderate: 180000, aggressive: 420000 },
-    { category: "PC §290.46(j) — Wrongful Termination / Failure to Employ — Randstad / RK Logistics (Matter 27)", matters: "27", conservative: 180000, moderate: 437000, aggressive: 835000 },
-    { category: "§1983 Monell / Individual + Bane Act + RICO — Shannon Smith / HOPE (Matter 28)", matters: "28", conservative: 249000, moderate: 666000, aggressive: 1510000 },
-    { category: "PC §290.46(j) Failure to Hire — Amazon (Matter 29)", matters: "29", conservative: 30000, moderate: 75000, aggressive: 180000 },
-    { category: "§1983 Retaliation, Due Process, Bane Act & IIED — Moua (Matter 30)", matters: "30", conservative: 90000, moderate: 225000, aggressive: 525000 },
-    { category: "FCRA / ICRAA Vendor Liability — First Advantage LLC (Matter 31)", matters: "31", conservative: 30000, moderate: 89000, aggressive: 205000 },
-    { category: "N.D. Cal. §1983 Meza-Gonzalez (Matter 32) — pleaded >$214k; $0 here to avoid double-count w/ M1/M2", matters: "32", conservative: 0, moderate: 0, aggressive: 0 },
-    { category: "N.D. Cal. §1983 Ngwa Nforbi v. Candelaria, et al (Matter 33) — pleaded >$214k; $0 here to avoid double-count w/ M7", matters: "33", conservative: 0, moderate: 0, aggressive: 0 }
+    { category: "Lost Wages / Economic Harm", matters: [1, 2, 7, 22], conservative: 20000, moderate: 130000, aggressive: 334000 },
+    { category: "False Imprisonment", matters: [1, 2], conservative: 40000, moderate: 85000, aggressive: 215000 },
+    { category: "Emotional Distress", matters: [1, 2, 5, 7, 22, 24], conservative: 0, moderate: 20000, aggressive: 115000 },
+    { category: "Bane Act / Treble", matters: [1, 2], conservative: 15000, moderate: 50000, aggressive: 70000 },
+    { category: "Punitive Damages", matters: [1, 2, 7, 22, 24], conservative: 30000, moderate: 120000, aggressive: 450000 },
+    { category: "Consumer Fraud", matters: [12], conservative: 78672, moderate: 110072, aggressive: 200272 },
+    { category: "Attorneys' Fees", matters: [1, 7, 22, 24], conservative: 28000, moderate: 45000, aggressive: 70000 },
+    { category: "PC §290.46(j) Violation + Wrongful Termination (Matter 22)", matters: [22], conservative: 220000, moderate: 525000, aggressive: 1000000 },
+    { category: "42 USC §1983 — Arbitrary U Visa Certification Denial & Retaliation (Matter 24)", matters: [24], conservative: 75000, moderate: 200000, aggressive: 450000 },
+    { category: "PC §290.46(j) Failure to Hire — FedEx / UPS (Matters 25, 26)", matters: [25, 26], conservative: 75000, moderate: 180000, aggressive: 420000 },
+    { category: "PC §290.46(j) — Wrongful Termination / Failure to Employ — Randstad / RK Logistics (Matter 27)", matters: [27], conservative: 180000, moderate: 437000, aggressive: 835000 },
+    { category: "§1983 Monell / Individual + Bane Act + RICO — Shannon Smith / HOPE (Matter 28)", matters: [28], conservative: 249000, moderate: 666000, aggressive: 1510000 },
+    { category: "PC §290.46(j) Failure to Hire — Amazon (Matter 29)", matters: [29], conservative: 30000, moderate: 75000, aggressive: 180000 },
+    { category: "§1983 Retaliation, Due Process, Bane Act & IIED — Moua (Matter 30)", matters: [30], conservative: 90000, moderate: 225000, aggressive: 525000 },
+    { category: "FCRA / ICRAA Vendor Liability — First Advantage LLC (Matter 31)", matters: [31], conservative: 30000, moderate: 89000, aggressive: 205000 },
+    { category: "N.D. Cal. §1983 Meza-Gonzalez (Matter 32) — pleaded >$214k; $0 here to avoid double-count w/ M1/M2", matters: [32], conservative: 0, moderate: 0, aggressive: 0 },
+    { category: "N.D. Cal. §1983 Ngwa Nforbi v. Candelaria, et al (Matter 33) — pleaded >$214k; $0 here to avoid double-count w/ M7", matters: [33], conservative: 0, moderate: 0, aggressive: 0 }
 ];
 // Matters 3, 5, and 15 are excluded/reduced above (abandoned/dismissed Jul. 2026):
 // - Matter 3 (Derrick, ABANDONED): its Lost Income, Emotional Distress, Punitive, and Fees
