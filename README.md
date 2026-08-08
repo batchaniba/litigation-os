@@ -31,23 +31,21 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 
 ## Overview
 
+<!-- PORTFOLIO:OVERVIEW_TABLE:START -->
 | Field | Detail |
 |---|---|
 | Plaintiff | Brendan Ngehsi Newanforbi |
 | Representation | Pro Se / In Propria Persona |
 | Jurisdictions | USDC E.D. Cal., USDC N.D. Cal., San Joaquin Sup. Ct., Alameda Sup. Ct., Sacramento Sup. Ct., Santa Clara Sup. Ct. |
-<!-- PORTFOLIO:OVERVIEW_COUNTS:START -->
 | Total Matters | 33 |
 | Active / Open | 16 |
 | Settled | 1 (Matter 22 — Newanforbi v. Pilot Travel Centers LLC, July 14, 2026) |
 | Dismissed / Closed / Abandoned | 16 |
-<!-- PORTFOLIO:OVERVIEW_COUNTS:END -->
-<!-- PORTFOLIO:OVERVIEW_EXPOSURE:START -->
 | Aggregate Exposure (Conservative) | ~$1,161,000+ |
 | Aggregate Exposure (Moderate) | ~$2,957,000+ |
 | Aggregate Exposure (Aggressive) | ~$6,579,000+ |
-<!-- PORTFOLIO:OVERVIEW_EXPOSURE:END -->
-| Last Updated | August 1, 2026 |
+| Last Updated | August 8, 2026 |
+<!-- PORTFOLIO:OVERVIEW_TABLE:END -->
 
 <!-- PORTFOLIO:CLOSED_COUNT_NOTE:START -->
 *Of the 16 dismissed/closed/abandoned matters: 7 abandoned, 7 dismissed, 2 otherwise closed (structured `lifecycle` on each matter JSON). See [All Matters](#all-matters) below for the full disposition table. Pre-filing matters stay in the Active table.*
