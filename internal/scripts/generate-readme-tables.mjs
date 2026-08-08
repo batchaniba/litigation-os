@@ -148,7 +148,7 @@ for (const event of timeline) {
 }
 const { damages_table } = await import(pathToFileURL(path.join(REPO_ROOT, "internal/src/data/damages.js")).href);
 const { lawyer_fees_summary: feeSummary, lawyer_fees: feeRows } = await import(
-  pathToFileURL(path.join(REPO_ROOT, "internal/src/data/lawyerFees.js")).href,
+  pathToFileURL(path.join(REPO_ROOT, "internal/src/data/lawyerFees.js")).href
 );
 
 const active = cases.filter((m) => bucket(m) === "active");
