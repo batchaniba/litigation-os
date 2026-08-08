@@ -1,9 +1,10 @@
 import { timeline } from "../data/timeline";
 import type { TimelineEvent } from "../types/portfolio";
 import { getPDTMidnight, parseEventDatePDT } from "./dateUtils";
+import { matterRefsInclude } from "./matterRefs.js";
 
 export function eventsForMatter(matterNumber: number): TimelineEvent[] {
-  return timeline.filter((event) => event.matters.split(",").map((value) => Number(value.trim())).includes(matterNumber));
+  return timeline.filter((event) => matterRefsInclude(event.matters, matterNumber));
 }
 
 export function matterActivity(matterNumber: number) {

@@ -2,252 +2,327 @@
   {
     "date": "Aug. 19, 2026",
     "event": "Gov. claim deadline — Candelaria state tort Bane Act damages (6 months from Feb. 19, 2026 accrual; claim must be filed with DGS)",
-    "matters": "7,8",
+    "matters": [
+      7,
+      8
+    ],
     "type": "filing",
     "upcoming": true
   },
   {
     "date": "Aug. 25, 2026",
     "event": "Deadline — ADR Certification (ADR L.R. 3) and Rule 26(f) meet-and-confer (initial disclosures, early settlement, ADR process selection, discovery plan) — Newanforbi v. Serrato (4:26-cv-05953-ASK)",
-    "matters": "24",
+    "matters": [
+      24
+    ],
     "type": "deadline",
     "upcoming": true
   },
   {
     "date": "Sep. 8, 2026",
     "event": "Deadline — Initial disclosures (FRCP 26(a)(1)) and Joint Case Management Statement — Newanforbi v. Serrato (4:26-cv-05953-ASK)",
-    "matters": "24",
+    "matters": [
+      24
+    ],
     "type": "deadline",
     "upcoming": true
   },
   {
     "date": "Sep. 15, 2026",
     "event": "Initial Case Management Conference — 1:30 PM via Zoom (cand.uscourts.gov/ask); Hon. Ajay S. Krishnan — Newanforbi v. Serrato (4:26-cv-05953-ASK)",
-    "matters": "24",
+    "matters": [
+      24
+    ],
     "type": "hearing",
     "upcoming": true
   },
   {
     "date": "Sep. 2, 2026",
     "event": "Case Management Conference (continued from Jul. 15, 2026) — Newanforbi v. California Highway Patrol, et al. (Case No. 26CV191136), Dept. 25, Rene C. Davidson Courthouse, Oakland, Alameda County; Hon. Jenna M. Whitman",
-    "matters": "20",
+    "matters": [
+      20
+    ],
     "type": "hearing",
     "upcoming": true
   },
   {
     "date": "Aug. 21, 2026",
     "event": "AG reply deadline (computed) — Respondents' Reply to Petitioner's Opposition to Demurrer due 5 court days before Aug. 28, 2026 hearing per CRC 3.1320(b) — Newanforbi v. California Highway Patrol et al. (26CV191136)",
-    "matters": "20",
+    "matters": [
+      20
+    ],
     "type": "deadline",
     "upcoming": true
   },
   {
     "date": "Aug. 28, 2026",
     "event": "Demurrer Hearing — Newanforbi v. California Highway Patrol et al. (26CV191136), 9:00 a.m., Dept. 25, Rene C. Davidson Courthouse, Oakland; Hon. Jenna M. Whitman; AG's Demurrer to Petition for Writ of Mandate, reserved for this date; the Individual Respondents' Demurrers and Joinders (currently reserved for Oct. 16/23, 2026) will be heard the same day if the pending Joint Stipulation is entered; Trial Date: Not set",
-    "matters": "20",
+    "matters": [
+      20
+    ],
     "type": "hearing",
     "upcoming": true
   },
   {
     "date": "Aug. 14, 2026",
     "event": "Meet-and-confer target date (computed) — Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113); CCP §430.41(a)(2) requires meet-and-confer at least 5 calendar days before the Aug. 21, 2026 responsive-pleading deadline; the raw 5-day count lands on Sunday, Aug. 16, so meet-and-confer should be completed by this date if UPS intends to demur",
-    "matters": "26",
+    "matters": [
+      26
+    ],
     "type": "deadline",
     "upcoming": true
   },
   {
     "date": "Aug. 19, 2026",
     "event": "Meet-and-confer deadline (computed) — Newanforbi v. Federal Express Corporation (STK-CV-UWT-2026-0009118); CCP §430.41(a)(2) requires meet-and-confer at least 5 calendar days before the Aug. 24, 2026 responsive-pleading deadline, if FedEx intends to demur; otherwise FedEx must file a declaration for the automatic 30-day extension",
-    "matters": "25",
+    "matters": [
+      25
+    ],
     "type": "deadline",
     "upcoming": true
   },
   {
     "date": "Aug. 21, 2026",
     "event": "Responsive pleading deadline (computed) — Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113); 30 days from the Jul. 22, 2026 service date (CCP §412.20(a)(3))",
-    "matters": "26",
+    "matters": [
+      26
+    ],
     "type": "deadline",
     "upcoming": true
   },
   {
     "date": "Aug. 24, 2026",
     "event": "Responsive pleading deadline (computed) — Newanforbi v. Federal Express Corporation (STK-CV-UWT-2026-0009118); 30 days from the Jul. 24, 2026 service date (CCP §412.20(a)(3)); the raw 30-day count lands on Sunday, Aug. 23, extended to Monday per CCP §12a",
-    "matters": "25",
+    "matters": [
+      25
+    ],
     "type": "deadline",
     "upcoming": true
   },
   {
     "date": "Sep. 13, 2026",
     "event": "Service deadline — Newanforbi v. Federal Express Corporation (STK-CV-UWT-2026-0009118) and Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113); 60 days from July 15, 2026 filing (CRC 3.110); proofs of service must be filed with court",
-    "matters": "25,26",
+    "matters": [
+      25,
+      26
+    ],
     "type": "deadline",
     "upcoming": true
   },
   {
     "date": "Sep. 18, 2026",
     "event": "Proof-of-service filing deadline — Newanforbi v. Randstad US, LLC et al. (26CV199902); 60 days from July 20, 2026 filing (CRC 3.110(b)); both defendants already SERVED Jul. 30, 2026",
-    "matters": "27",
+    "matters": [
+      27
+    ],
     "type": "deadline",
     "upcoming": true
   },
   {
     "date": "Dec. 14, 2026",
     "event": "Meet-and-confer deadline — Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113); 30 calendar days before Jan. 13, 2027 CMC (CRC 3.724)",
-    "matters": "26",
+    "matters": [
+      26
+    ],
     "type": "deadline",
     "upcoming": true
   },
   {
     "date": "Dec. 15, 2026",
     "event": "Meet-and-confer deadline — Newanforbi v. Federal Express Corporation (STK-CV-UWT-2026-0009118); 30 calendar days before Jan. 14, 2027 CMC (CRC 3.724)",
-    "matters": "25",
+    "matters": [
+      25
+    ],
     "type": "deadline",
     "upcoming": true
   },
   {
     "date": "Dec. 29, 2026",
     "event": "Case Management Conference Statement due — Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113); JC Form CM-110, mandatory; 15 days before Jan. 13, 2027 CMC (CRC 3.725)",
-    "matters": "26",
+    "matters": [
+      26
+    ],
     "type": "deadline",
     "upcoming": true
   },
   {
     "date": "Dec. 30, 2026",
     "event": "Case Management Conference Statement due — Newanforbi v. Federal Express Corporation (STK-CV-UWT-2026-0009118); JC Form CM-110, mandatory; 15 days before Jan. 14, 2027 CMC (CRC 3.725)",
-    "matters": "25",
+    "matters": [
+      25
+    ],
     "type": "deadline",
     "upcoming": true
   },
   {
     "date": "Jan. 13, 2027",
     "event": "Case Management Conference — Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113), 8:30 AM, Dept. 11B, Hon. Robert T. Waters, San Joaquin Superior Court, 180 E Weber Ave, Stockton, CA 95202",
-    "matters": "26",
+    "matters": [
+      26
+    ],
     "type": "hearing",
     "upcoming": true
   },
   {
     "date": "Jan. 14, 2027",
     "event": "Case Management Conference — Newanforbi v. Federal Express Corporation (STK-CV-UWT-2026-0009118), 8:45 AM, Dept. 10B, Hon. Blanca Banuelos, San Joaquin Superior Court, 180 E Weber Ave, Stockton, CA 95202",
-    "matters": "25",
+    "matters": [
+      25
+    ],
     "type": "hearing",
     "upcoming": true
   },
   {
     "date": "Aug. 26, 2026",
     "event": "Meet-and-confer deadline (computed) — Newanforbi v. Randstad US, LLC et al. (26CV199902); CCP §430.41(a)(2) requires meet-and-confer at least 5 calendar days before the Aug. 31, 2026 responsive-pleading deadline, if either defendant intends to demur; otherwise that defendant must file a declaration for the automatic 30-day extension",
-    "matters": "27",
+    "matters": [
+      27
+    ],
     "type": "deadline",
     "upcoming": true
   },
   {
     "date": "Aug. 31, 2026",
     "event": "Responsive pleading deadline (computed) — Newanforbi v. Randstad US, LLC et al. (26CV199902); 30 days from the Jul. 30, 2026 service date (CCP §412.20(a)(3)); the raw 30-day count lands on Saturday, Aug. 29, extended to Monday per CCP §12a",
-    "matters": "27",
+    "matters": [
+      27
+    ],
     "type": "deadline",
     "upcoming": true
   },
   {
     "date": "Aug. 12, 2026",
     "event": "Outer bound for Sacramento County Sheriff Civil Bureau to process E-Filing Order #O26005511 (CCP §425.115 Notices for Randstad US, LLC, The RK Logistics Group, Inc., and United Parcel Service, Inc.) — Sheriff advises allowing up to 7 business days from the Aug. 3, 2026 submission; this office has historically accepted SER-001 submissions same-day, so acceptance is expected well before this date",
-    "matters": "26,27",
+    "matters": [
+      26,
+      27
+    ],
     "type": "deadline",
     "upcoming": true
   },
   {
     "date": "Aug. 10, 2026",
     "event": "Reply deadline — Motion for Protective Order, Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504)",
-    "matters": "28",
+    "matters": [
+      28
+    ],
     "type": "deadline",
     "upcoming": true
   },
   {
     "date": "Oct. 15, 2026",
     "event": "Case Management Statement due — Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504), USDC N.D. Cal.",
-    "matters": "28",
+    "matters": [
+      28
+    ],
     "type": "deadline",
     "upcoming": true
   },
   {
     "date": "Oct. 22, 2026",
     "event": "Initial Case Management Conference — Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504), 1:30 PM, Hon. Lisa J. Cisneros, San Francisco (videoconference only)",
-    "matters": "28",
+    "matters": [
+      28
+    ],
     "type": "hearing",
     "upcoming": true
   },
   {
     "date": "Aug. 7, 2026",
     "event": "Deadline to file amended complaint (14 days from Jul. 24, 2026 order, Doc 31) — Newanforbi v. Derrick et al. (2:26-cv-00004-DJC-JDP); if not filed, action proceeds solely on Equal Protection claim against Derrick",
-    "matters": "3",
+    "matters": [
+      3
+    ],
     "type": "deadline",
     "upcoming": true
   },
   {
     "date": "Aug. 12, 2026",
     "event": "Default prove-up hearing (CMC converted per clerk phone statement) — Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094), 8:30 AM, Dept. 11B, Hon. Robert T. Waters; June 15 CIV-100 Not Entered; renewed Diamond and Alpine default packets mailed July 31, 2026 (USPS tracking 9505 5114 6005 6212 9832 68; expected delivery 08/03/2026)",
-    "matters": "12",
+    "matters": [
+      12
+    ],
     "type": "hearing",
     "upcoming": true
   },
   {
     "date": "Sep. 26, 2026",
     "event": "Service/proof-of-service deadline (computed) — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554); 60 days from the Jul. 28, 2026 filing (CRC 3.110(b)); Sept. 26 falls on a Saturday, so CCP §12a rolls the practical deadline to Monday, Sept. 28, 2026",
-    "matters": "29",
+    "matters": [
+      29
+    ],
     "type": "deadline",
     "upcoming": true
   },
   {
     "date": "Aug. 18, 2026",
     "event": "Fee waiver hearing — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554), 11:30 AM, Department FHO, Hayward Hall of Justice, 24405 Amador Street, Hayward, CA 94544, before Hon. Jamilah A. Jefferson; PLAN: mooted by mailed payment in full ($435.00) — see Aug. 3, 2026 letter; FALLBACK if payment not confirmed received/applied beforehand: Plaintiff must appear with proof of his financial circumstances (income, living situation) or the fee waiver will be denied outright and Plaintiff will have 10 days to pay the filing fees in full",
-    "matters": "29",
+    "matters": [
+      29
+    ],
     "type": "hearing",
     "upcoming": true
   },
   {
     "date": "Aug. 26, 2026",
     "event": "Meet-and-confer deadline (computed) — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554); CCP §430.41(a)(2) requires meet-and-confer at least 5 calendar days before the Aug. 31, 2026 responsive-pleading deadline, if either defendant intends to demur; otherwise that defendant must file a declaration for the automatic 30-day extension",
-    "matters": "29",
+    "matters": [
+      29
+    ],
     "type": "deadline",
     "upcoming": true
   },
   {
     "date": "Aug. 31, 2026",
     "event": "Responsive pleading deadline (computed) — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554); 30 days from the Jul. 31, 2026 service date on both defendants (CCP §412.20(a)(3)); the raw 30-day count lands on Sunday, Aug. 30, extended to Monday, Aug. 31, 2026 per CCP §12a",
-    "matters": "29",
+    "matters": [
+      29
+    ],
     "type": "deadline",
     "upcoming": true
   },
   {
     "date": "Jan. 6, 2027",
     "event": "Case Management Conference — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554), 10:00 AM, Dept. 520, Hon. Jamilah Jefferson, Hayward Hall of Justice, 24405 Amador Street, Hayward, CA 94544",
-    "matters": "29",
+    "matters": [
+      29
+    ],
     "type": "hearing",
     "upcoming": true
   },
   {
     "date": "Sep. 1, 2026",
     "event": "Anticipated deemed-rejection date (computed) — Government Claims Act claim, Newanforbi v. Moua, et al. (Matter 30); 45 days from the Jul. 18, 2026 filing without written notice of rejection triggers deemed rejection by operation of law under Gov. Code §912.4(c), starting the state-law suit-filing clock",
-    "matters": "30",
+    "matters": [
+      30
+    ],
     "type": "deadline",
     "upcoming": true
   },
   {
     "date": "Sep. 16, 2026",
     "event": "Anticipated filing date (computed) — Complaint v9 (Moua and DOES 1-10), Newanforbi v. Moua, et al. (Matter 30); 15 days after the anticipated Sep. 1, 2026 deemed rejection; within the 2-year §1983 personal-injury limitations period and the Gov. Code §945.6(a)(2) window for state-law claims",
-    "matters": "30",
+    "matters": [
+      30
+    ],
     "type": "deadline",
     "upcoming": true
   },
   {
     "date": "Mar. 1, 2027",
     "event": "OUTER STATUTE OF LIMITATIONS (computed) — Government Claims Act six-month suit-filing window for the Bane Act and IIED state-law claims, Newanforbi v. Moua, et al. (Matter 30); runs from the anticipated Sep. 1, 2026 deemed rejection under Gov. Code §945.6(a)(1). The §1983 federal claims are not subject to GCA presentment and remain viable beyond this date on the longer two-year personal-injury limitations period, but this is the hard cutoff for the state-law claims if the matter is not filed sooner",
-    "matters": "30",
+    "matters": [
+      30
+    ],
     "type": "deadline",
     "upcoming": true
   },
   {
     "date": "Oct. 13, 2026",
     "event": "Case Management Conference, Newanforbi v. Palacios, et al. (Matter 5) — Hon. George J. Abdallah, Dept. 10A, 8:45 a.m.; setting confirmed on the caption of the served Set Two discovery (SROG/DISC001) to HOPE Program and Palacios",
-    "matters": "5",
+    "matters": [
+      5
+    ],
     "type": "deadline",
     "upcoming": true,
     "source": "/documents/matter-05/SROG Set Two HOPE NEWpal .pdf"
@@ -255,7 +330,9 @@
   {
     "date": "Oct. 16, 2026",
     "event": "Hearing on CHP demurrer and the individual respondents' joinders/demurrers to the Petition for Writ of Mandate, Newanforbi v. California Highway Patrol, et al. (Matter 20) — Dept. 25; date stated in the Serrato and Paul notices of joinder and demurrer",
-    "matters": "20",
+    "matters": [
+      20
+    ],
     "type": "deadline",
     "upcoming": true,
     "source": "/documents/matter-32/from-20/Serrato Notice of Joinder and Demurrer.pdf"
@@ -263,7 +340,9 @@
   {
     "date": "Oct. 23, 2026",
     "event": "Continued hearing on the Dutra joinder and demurrer to the Petition for Writ of Mandate, Newanforbi v. California Highway Patrol, et al. (Matter 20) — Dept. 25; second hearing date reflected in the proposed order granting the joinders",
-    "matters": "20",
+    "matters": [
+      20
+    ],
     "type": "deadline",
     "upcoming": true,
     "source": "/documents/matter-32/from-20/Dutra Notice of Joinder and Demurrer.pdf"
@@ -271,7 +350,9 @@
   {
     "date": "Dec. 17, 2026",
     "event": "Case Management Conference, Newanforbi v. Randstad US LLC and RK Logistics Group, Inc. (Matter 27) — Hon. Karin Schwartz, Dept. 20, 3:00 p.m.; setting stated in the CCP §425.115 punitive-damages notices served Aug. 4, 2026",
-    "matters": "27",
+    "matters": [
+      27
+    ],
     "type": "deadline",
     "upcoming": true,
     "source": "/documents/matter-27/Notice of Amount of Punitive Damages Sought (CCP 425.115) - Randstad US LLC (Aug 4 2026).pdf"

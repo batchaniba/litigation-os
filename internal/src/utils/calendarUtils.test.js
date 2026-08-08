@@ -40,12 +40,23 @@ describe('calendar utilities', () => {
     expect(parseMatterNumbers('9, 6, bad, 15')).toEqual({
       all: false,
       numbers: [9, 6, 15],
-      label: '9, 6, bad, 15',
+      label: '9, 6, 15',
+    });
+    expect(parseMatterNumbers([9, 6, 15])).toEqual({
+      all: false,
+      numbers: [9, 6, 15],
+      label: '9, 6, 15',
     });
     expect(parseMatterNumbers('All CDCR')).toEqual({
       all: true,
       numbers: [],
       label: 'All CDCR',
     });
+    expect(parseMatterNumbers('All')).toEqual({
+      all: true,
+      numbers: [],
+      label: 'All',
+    });
   });
 });
+

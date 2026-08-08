@@ -27,8 +27,9 @@ import {
   effectiveStatusLabel,
   isRedundantStatusLabelOverride,
 } from "./status-label.mjs";
-import { PROSE_HINTS, proseBudgetIssues } from "./prose-budget.mjs";
+import { PROSE_HINTS, docketLogIssues, proseBudgetIssues } from "./prose-budget.mjs";
 import { loadRegistry, registryByPath } from "./lib/document-registry.mjs";
+import { matterRefsInclude, parseMatterRefs } from "../src/utils/matterRefs.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(__dirname, "..", "..");
@@ -84,7 +85,7 @@ const cases = loadMatters();
 const timeline = JSON.parse(
   fs.readFileSync(path.join(REPO_ROOT, "internal/src/data/timeline.json"), "utf8"),
 );
-const { matter_damages } = await import(pathToFileURL(path.join(REPO_ROOT, "internal/src/data/damages.js")).href);
+const { damages_table, matter_damages } = await import(pathToFileURL(path.join(REPO_ROOT, "internal/src/data/damages.js")).href);
 const { lawyer_fees } = await import(pathToFileURL(path.join(REPO_ROOT, "internal/src/data/lawyerFees.js")).href);
 const { outcomes } = await import(pathToFileURL(path.join(REPO_ROOT, "internal/src/data/outcomes.js")).href);
 const { insurance_coverage } = await import(pathToFileURL(path.join(REPO_ROOT, "internal/src/data/coverage.js")).href);
@@ -165,6 +166,16 @@ for (const m of cases) {
     }
   }
 
+  // Docket-log heuristic: status / procedural_status that still read like a
+  // filing chronology (dense dates, SERVED/COMPUTED markers, caps heads).
+  // Advisory — legal nuance sometimes needs dates; timeline.json owns the log.
+  for (const issue of docketLogIssues(m)) {
+    warn(
+      `${tag}: ${issue.field} looks like a docket log (${issue.hits.join(", ")}; ${issue.words}w) — ` +
+        `dated beats belong in timeline.json; keep narrative judgment in prose`,
+    );
+  }
+
   // status_label is an optional hand override. When omitted, badges/strip/README
   // derive a label from phase + the next posture-ranked timeline event.
   if ("status_label" in m) {
@@ -189,10 +200,7 @@ for (const m of cases) {
   // Effective label (override or derived) must always fit the fixed-width slots.
   {
     const matterEvents = timeline.filter((event) =>
-      String(event.matters ?? "")
-        .split(",")
-        .map((value) => Number(value.trim()))
-        .includes(m.number),
+      matterRefsInclude(event.matters, m.number),
     );
     const effective = effectiveStatusLabel(m, matterEvents);
     if (!effective || effective.length > STATUS_LABEL_MAX) {
@@ -335,15 +343,20 @@ for (const [i, t] of timeline.entries()) {
   if (typeof t.date !== "string" || !t.date.trim()) fail(`${tag}: missing/empty "date"`);
   if (typeof t.event !== "string" || !t.event.trim()) fail(`${tag}: missing/empty "event"`);
   if (typeof t.type !== "string" || !t.type.trim()) fail(`${tag}: missing/empty "type"`);
-  if (typeof t.matters !== "string") {
-    fail(`${tag}: "matters" should be a string, got ${typeof t.matters}`);
-  } else if (t.matters !== "All") {
-    for (const raw of t.matters.split(",")) {
-      const n = Number(raw.trim());
-      if (Number.isNaN(n)) {
-        fail(`${tag}: "matters" contains non-numeric entry "${raw.trim()}"`);
-      } else if (!seenMatterNumbers.has(n)) {
-        fail(`${tag}: references matter ${n}, which does not exist in matter JSON records`);
+  {
+    const parsed = parseMatterRefs(t.matters);
+    const isAll = t.matters === "All" || (parsed.all && parsed.label === "All");
+    const isNumberList = Array.isArray(t.matters);
+    if (!isAll && !isNumberList) {
+      fail(`${tag}: "matters" should be number[] or "All", got ${JSON.stringify(t.matters)}`);
+    } else if (!isAll) {
+      if (!parsed.numbers.length) {
+        fail(`${tag}: "matters" array is empty`);
+      }
+      for (const n of parsed.numbers) {
+        if (!seenMatterNumbers.has(n)) {
+          fail(`${tag}: references matter ${n}, which does not exist in matter JSON records`);
+        }
       }
     }
   }
@@ -507,6 +520,19 @@ for (const m of matterRecords.values()) {
 for (const d of matter_damages ?? []) {
   if (!seenMatterNumbers.has(d.number)) {
     fail(`damages.js matter_damages: references matter ${d.number}, which has no JSON record`);
+  }
+}
+for (const [i, row] of (damages_table ?? []).entries()) {
+  if (!Array.isArray(row.matters) || !row.matters.length) {
+    fail(`damages.js damages_table[${i}]: "matters" must be a non-empty number[]`);
+    continue;
+  }
+  for (const n of row.matters) {
+    if (!Number.isInteger(n) || n < 1) {
+      fail(`damages.js damages_table[${i}]: invalid matter number ${JSON.stringify(n)}`);
+    } else if (!seenMatterNumbers.has(n)) {
+      fail(`damages.js damages_table[${i}]: references matter ${n}, which has no JSON record`);
+    }
   }
 }
 for (const f of lawyer_fees ?? []) {
