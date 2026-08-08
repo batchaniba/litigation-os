@@ -5,6 +5,7 @@ import upcoming from "../data/upcoming.json";
 import type { MatterSummary, TimelineEvent } from "../types/portfolio";
 import { parseEventDatePDT } from "../utils/dateUtils";
 import { isArchivedMatter } from "../utils/matterLifecycle";
+import { parseMatterRefs } from "../utils/matterRefs.js";
 import { effectiveStatusLabel } from "../utils/statusLabel";
 
 export type MatterSortKey = "number" | "filed" | "deadline" | "exposure" | "court" | "status";
@@ -13,8 +14,7 @@ export interface MatterFilterState { status: string; cluster: number | null; typ
 const nextDeadlineByMatter = new Map<number, number>();
 for (const event of upcoming as TimelineEvent[]) {
   const timestamp = +parseEventDatePDT(event.date);
-  for (const raw of event.matters.split(",")) {
-    const matter = Number(raw.trim());
+  for (const matter of parseMatterRefs(event.matters).numbers) {
     if (matter && (!nextDeadlineByMatter.has(matter) || timestamp < nextDeadlineByMatter.get(matter)!)) nextDeadlineByMatter.set(matter, timestamp);
   }
 }
@@ -39,7 +39,7 @@ export const useCaseFilters = (initial: Partial<MatterFilterState> = {}) => {
     if (typeFilter && matter.type !== typeFilter) return false;
     if (!searchQuery) return true;
     const query = searchQuery.toLowerCase();
-    return [matter.caption, matter.case_no, matter.court, matter.claims, matter.defendants, matter.status, effectiveStatusLabel(matter), ...(matter.causes ?? [])]
+    return [matter.caption, matter.case_no, matter.court, matter.claims, matter.defendants, effectiveStatusLabel(matter), ...(matter.causes ?? [])]
       .some((value) => value?.toLowerCase().includes(query));
   }).sort((a, b) => {
     if (sortKey === "filed") return filedTimestamp(b.filed) - filedTimestamp(a.filed);

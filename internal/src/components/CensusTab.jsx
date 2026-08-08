@@ -22,7 +22,7 @@ const BADGE_LABEL = {
   SERVED: "Served",
 };
 const statusLabelOf = (c) => {
-  if (c.lifecycle === "settled" || c.status?.startsWith("SETTLED")) return "Settled";
+  if (c.lifecycle === "settled") return "Settled";
   if (c.lifecycle === "abandoned") return "Abandoned";
   if (c.lifecycle === "dismissed") return "Dismissed";
   if (c.lifecycle === "closed") return c.badge === "DENIED" ? "Denied" : "Closed";

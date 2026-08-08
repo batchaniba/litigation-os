@@ -39,104 +39,86 @@
   ],
   "documents": [
     {
-      "label": "Complaint (May 27, 2025)",
       "path": "/documents/matter-32/from-01/0.Newanforbi v. CHP.pdf"
     },
     {
-      "label": "Civil Cover Sheet (JS 44) (May 21, 2025)",
       "path": "/documents/matter-32/from-01/18_Civil_Cover_Sheet.pdf"
     },
     {
-      "label": "Summons in a Civil Case (issued Oct. 28, 2025)",
       "path": "/documents/matter-32/from-01/07_Summons_Sheet.pdf"
     },
     {
-      "label": "Notice of Electronic Filing — Civil Case Opened (Oct. 28, 2025)",
       "path": "/documents/matter-32/from-01/06_Notice_of_E-Filing_1.pdf"
     },
     {
-      "label": "Notice of Electronic Filing — Summons Issued (Oct. 28, 2025)",
       "path": "/documents/matter-32/from-01/09_Notice_of_E-Filing_2.pdf"
     },
     {
-      "label": "Filing Fee Receipt (Oct. 28, 2025)",
       "path": "/documents/matter-32/from-01/10_Filing_Fee_Receipt.pdf"
     },
     {
-      "label": "Magistrate Judge Consent — Court Information Letter",
       "path": "/documents/matter-32/from-01/03_Magistrate_Judge_Consent.pdf"
     },
     {
-      "label": "Notice of Availability of a Magistrate Judge (Oct. 28, 2025)",
       "path": "/documents/matter-32/from-01/04_Magistrate_Judge_Availabilty.pdf"
     },
     {
-      "label": "Consent / Decline of Magistrate Judge Jurisdiction (form)",
       "path": "/documents/matter-32/from-01/05_Magistrate_Judge_Consent_Decline_Sheet.pdf"
     },
     {
-      "label": "CHP Motion to Dismiss (Dec. 10, 2025)",
       "path": "/documents/matter-32/from-01/CHP Motion To Dismiss.pdf"
     },
     {
-      "label": "Opposition to Motion to Dismiss (Dec. 22, 2025)",
       "path": "/documents/matter-32/from-01/Opposition for Motion to Dismiss.pdf"
     },
     {
-      "label": "Reply — CHP (Jan. 5, 2026)",
       "path": "/documents/matter-32/from-01/Reply - CHP.pdf"
     },
     {
-      "label": "Initial Scheduling Order (Oct. 28, 2025)",
       "path": "/documents/matter-32/from-01/02_Initial_Scheduling_Order.pdf"
     },
     {
-      "label": "CHP Arrest Report",
-      "path": "/documents/matter-32/Arrest Report.pdf"
+      "path": "/documents/matter-33/incident/Arrest Report.pdf",
+      "label": "CHP Arrest Report"
     },
     {
-      "label": "CHP Officer's Statement — Chemical Test Admonition (DS 367) (Nov. 1, 2024)",
-      "path": "/documents/matter-32/ds367 ngwanforbi f7953179.pdf"
+      "path": "/documents/matter-33/incident/ds367 ngwanforbi f7953179.pdf"
     },
     {
-      "label": "DMV Driver Record — Discovery Production (Dec. 4, 2024)",
-      "path": "/documents/matter-32/DAD 2024-12-04.pdf"
+      "path": "/documents/matter-33/incident/DAD 2024-12-04.pdf"
     },
     {
-      "label": "DMV Notification of Discovery — APS Hearing Packet (Dec. 4, 2024)",
-      "path": "/documents/matter-32/DS2044 Notification of Discovery 34739340.pdf"
+      "path": "/documents/matter-33/incident/DS2044 Notification of Discovery 34739340.pdf"
     },
     {
-      "label": "CHP Video Transcript (Exhibit A)",
-      "path": "/documents/matter-32/Exhibit_A_CHP_Video_Transcript.pdf"
+      "path": "/documents/matter-33/incident/Exhibit_A_CHP_Video_Transcript.pdf"
     },
     {
-      "label": "Discovery Response",
-      "path": "/documents/matter-32/Discovery-Response.pdf"
+      "path": "/documents/matter-33/incident/Discovery-Response.pdf",
+      "label": "Discovery Response"
     },
     {
-      "label": "Centerline Wage Reference",
-      "path": "/documents/matter-32/from-01/Centerline Wage Reference.pdf"
+      "path": "/documents/matter-33/incident/Centerline Wage Reference.pdf"
     },
     {
-      "label": "Notice of Change of Address (filed July 7, 2026)",
       "path": "/documents/matter-32/from-01/Notice of Change of Address (July 7, 2026).pdf"
     },
     {
-      "label": "Plaintiff's Objections to Findings & Recommendations (Apr. 21, 2026)",
       "path": "/documents/matter-32/from-01/Objections to FR - April 21 2026.pdf"
     },
     {
-      "label": "Notice of Supplemental Authority — Serrato Order (Jul. 7, 2026)",
       "path": "/documents/matter-32/from-01/Notice of Supplemental Authority - Serrato Order - July 7 2026.pdf"
     },
     {
-      "label": "Lawsuit Cover Sheet (E.D. Cal., May 27, 2025)",
       "path": "/documents/matter-32/from-01/01_Lawsuit_Cover_Sheet.pdf"
     },
     {
-      "label": "Return of Service — proof of service on CHP defendants",
       "path": "/documents/matter-32/from-01/08_Return_of_Service.pdf"
+    },
+    {
+      "path": "/documents/matter-32/from-01/Notice of Voluntary Dismissal Without Prejudice (Aug 7 2026).pdf",
+      "label": "Notice of Voluntary Dismissal Without Prejudice (draft — execution date Aug. 7, 2026) — FRCP 41(a)(1)(A)(i); entire action; not yet e-filed",
+      "filed": false
     }
   ],
   "archived": false

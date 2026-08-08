@@ -10,14 +10,10 @@ import {
   postureEventScore,
 } from "./statusLabel";
 import type { TimelineEvent } from "../types/portfolio";
+import { matterRefsInclude } from "./matterRefs.js";
 
 function eventsFor(matterNumber: number): TimelineEvent[] {
-  return timeline.filter((event) =>
-    event.matters
-      .split(",")
-      .map((value) => Number(value.trim()))
-      .includes(matterNumber),
-  );
+  return timeline.filter((event) => matterRefsInclude(event.matters, matterNumber));
 }
 
 describe("statusLabel derivation", () => {
@@ -82,14 +78,14 @@ describe("statusLabel derivation", () => {
       date: "Aug. 28, 2026",
       event: "Demurrer Hearing — Matter 20",
       type: "hearing",
-      matters: "20",
+      matters: [20],
       upcoming: true,
     } as TimelineEvent;
     const chore = {
       date: "Aug. 21, 2026",
       event: "Meet-and-confer deadline — Matter 20",
       type: "deadline",
-      matters: "20",
+      matters: [20],
       upcoming: true,
     } as TimelineEvent;
     expect(postureEventScore(hearing, "demurrer")).toBeGreaterThan(postureEventScore(chore, "demurrer"));

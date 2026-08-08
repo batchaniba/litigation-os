@@ -5,19 +5,17 @@
 // carries a short `policy_limits` string for its badge; validate-portfolio
 // cross-checks that string against `limitsShort` here so the two can't drift.
 //
-// Why this matters enough to be its own module: policy limits are the only
-// figure in the portfolio that is *collectable on sight*. Damages estimates
-// are argued; a policy tower is a number the carrier has already agreed to
-// pay up to. It anchors every settlement conversation, so it belongs in the
-// shell bundle where the header can reach it without loading a matter file.
+// Matter identity (caption / case_no / court) is joined from summaries at read
+// time — do not duplicate those fields here.
 // ==========================================================
+import { withMatterIdentity } from "./matterIdentity.js";
 
 /**
  * @typedef {Object} CoverageRecord
  * @property {number} matter        Portfolio matter number.
- * @property {string} caption       Matter caption.
- * @property {string} caseNo        Case number.
- * @property {string} court         Court shorthand.
+ * @property {string} [caption]     Joined from matter JSON at read time.
+ * @property {string} [caseNo]      Joined from matter JSON at read time.
+ * @property {string} [court]       Joined from matter JSON at read time.
  * @property {string} carrier       Insurance carrier.
  * @property {string} policyNo      Policy number as produced in discovery.
  * @property {number} perIncident   Per-incident limit, in dollars.
@@ -28,13 +26,10 @@
  * @property {string} leverage      Why the number matters, in one sentence.
  */
 
-/** @type {CoverageRecord[]} */
+/** @type {Omit<CoverageRecord, "caption"|"caseNo"|"court">[]} */
 export const insurance_coverage = [
   {
     matter: 28,
-    caption: "Newanforbi v. Shannon Smith, LCSW, CEO, et al.",
-    caseNo: "3:26-cv-07504",
-    court: "USDC N.D. Cal.",
     carrier: "Philadelphia Indemnity",
     policyNo: "067968",
     perIncident: 1_000_000,
@@ -47,15 +42,30 @@ export const insurance_coverage = [
   },
 ];
 
+function enrich(record) {
+  if (!record) return undefined;
+  const joined = withMatterIdentity(record, { numberKey: "matter" });
+  return {
+    ...joined,
+    caseNo: joined.caseNo,
+  };
+}
+
+const coverageByMatter = new Map(
+  insurance_coverage.map((record) => [record.matter, enrich(record)]),
+);
+
 /** Coverage record for a matter, or undefined when none is on file. */
 export function coverageForMatter(number) {
-  return insurance_coverage.find((record) => record.matter === Number(number));
+  return coverageByMatter.get(Number(number));
 }
 
 /** The record to feature in portfolio-wide chrome (largest aggregate tower). */
-export const headline_coverage = insurance_coverage.reduce(
-  (largest, record) => (!largest || record.aggregate > largest.aggregate ? record : largest),
-  null,
+export const headline_coverage = enrich(
+  insurance_coverage.reduce(
+    (largest, record) => (!largest || record.aggregate > largest.aggregate ? record : largest),
+    null,
+  ),
 );
 
 /** Compact dollar label: 1_000_000 -> "$1M". */

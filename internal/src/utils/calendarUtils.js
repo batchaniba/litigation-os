@@ -48,10 +48,4 @@ export const groupEventsByDay = (timeline) => {
   return { byDay, ungrounded };
 };
 
-// "9,6,5,11,15" -> [9,6,5,11,15]; "20" -> [20]; "All"/"All CDCR" -> all:true.
-export const parseMatterNumbers = (mattersStr) => {
-  const trimmed = (mattersStr || "").trim();
-  if (/^all\b/i.test(trimmed)) return { all: true, numbers: [], label: trimmed };
-  const numbers = trimmed.split(",").map(s => parseInt(s.trim(), 10)).filter(n => !isNaN(n));
-  return { all: false, numbers, label: trimmed };
-};
+export { parseMatterRefs as parseMatterNumbers, formatMatterRefs, matterRefsInclude } from "./matterRefs.js";

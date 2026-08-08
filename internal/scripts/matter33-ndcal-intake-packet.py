@@ -49,11 +49,11 @@ from pypdf.generic import (
 
 ROOT = Path(__file__).resolve().parents[2]
 FORMS = ROOT / "internal/public/documents/_form-library"
-OUT_DIR = ROOT / "internal/public/documents/matter-33"
+OUT_DIR = ROOT / "internal/public/documents/matter-33/ndcal"
 
 JS44_TEMPLATE = FORMS / "js44-civil-cover-sheet-blank-template.pdf"
-AO440_TEMPLATE = FORMS / "ao440-summons-blank-template.pdf"
-CONSENT_TEMPLATE = FORMS / "ndcal-magistrate-consent-declination-blank-template.pdf"
+AO440_TEMPLATE = FORMS / "ao440-blank-template.pdf"
+CONSENT_TEMPLATE = FORMS / "ndcal-mj-consent-declination-blank-template.pdf"
 
 # ---------------------------------------------------------------- case facts
 

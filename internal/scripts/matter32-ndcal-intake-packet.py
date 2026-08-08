@@ -2,7 +2,7 @@
 """Fill the N.D. Cal. intake packet for Ngwa Nforbi v. Meza-Gonzalez (Matter 32).
 
 Companion filings to the August 7, 2026 Complaint for Damages (42 U.S.C.
-§ 1983) at documents/matter-32/:
+§ 1983) at documents/matter-32/ndcal/:
 
 - JS 44 Civil Cover Sheet (Rev. 03/24)
 - AO 440 Summons in a Civil Action — one per served Defendant
@@ -39,11 +39,11 @@ from pypdf.generic import (
 
 ROOT = Path(__file__).resolve().parents[2]
 FORMS = ROOT / "internal/public/documents/_form-library"
-OUT_DIR = ROOT / "internal/public/documents/matter-32"
+OUT_DIR = ROOT / "internal/public/documents/matter-32/ndcal"
 
 JS44_TEMPLATE = FORMS / "js44-civil-cover-sheet-blank-template.pdf"
-AO440_TEMPLATE = FORMS / "ao440-summons-blank-template.pdf"
-CONSENT_TEMPLATE = FORMS / "ndcal-magistrate-consent-declination-blank-template.pdf"
+AO440_TEMPLATE = FORMS / "ao440-blank-template.pdf"
+CONSENT_TEMPLATE = FORMS / "ndcal-mj-consent-declination-blank-template.pdf"
 
 # ---------------------------------------------------------------- case facts
 

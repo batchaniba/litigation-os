@@ -5,14 +5,14 @@ import { coverageForMatter } from "../data/coverage";
 import { GOLD } from "../constants";
 import { useTheme } from "../ThemeContext";
 import { formatCurrency } from "../utils/formatters";
+import { formatMatterRefs } from "../utils/matterRefs.js";
 import { isArchivedMatter } from "../utils/matterLifecycle";
 import { effectiveStatusLabel } from "../utils/statusLabel";
 
-// matter_damages[].status is a hand-maintained copy that drifts from the matter
-// record. Prefer the derived label, which is capped and self-updates.
+// Prefer the derived posture label over any leftover analytic status prose.
 const statusFor = (m) => {
   const summary = getMatterSummary(m.number);
-  return summary ? effectiveStatusLabel(summary) : m.status;
+  return summary ? effectiveStatusLabel(summary) : `Matter ${m.number}`;
 };
 
 const fmt = (n) => formatCurrency(n);
@@ -291,7 +291,7 @@ export const DamagesTab = ({ damagesView, setDamagesView }) => {
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 8 }}>
                     <div>
                       <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, fontWeight: 600, color: theme.secondaryText }}>{d.category}</span>
-                      <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: theme.subtleText, marginLeft: 10 }}>Matters {d.matters}</span>
+                      <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: theme.subtleText, marginLeft: 10 }}>Matters {formatMatterRefs(d.matters)}</span>
                     </div>
                     <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 16, fontWeight: 700, color: "#34D399" }}>
                       {fmt(val)}{damagesView === "aggressive" && "+"}

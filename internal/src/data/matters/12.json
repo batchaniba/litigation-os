@@ -4,7 +4,8 @@
   "case_no": "STK-CV-UF-2026-0001094",
   "court": "San Joaquin Sup. Ct.",
   "claims": "Fraudulent Concealment, Intentional Misrepresentation, Negligent Misrepresentation, Breach of Contract, UCL §17200, Rescission & Restitution, Declaratory Relief",
-  "status": "Active — June 15, 2026 CIV-100 against Diamond and Alpine docketed Not Entered; complete corrected default packets for Diamond and Alpine (separate CIV-100s) mailed July 31, 2026 via USPS Priority Mail (tracking 9505 5114 6005 6212 9832 68; expected delivery 08/03/2026) — see commit/packet PDFs corrected per clerk rejection; clerk stated by phone that the 08/12/2026 CMC will be converted to a default prove-up hearing; Dept. 11B, Hon. Robert T. Waters, 8:30 AM. PLANNED — COURTESY COPIES TO DEFENDANTS AUGUST 4, 2026: Plaintiff intends to mail courtesy copies of the renewed default judgment packets (already mailed to the court Jul. 31, 2026) directly to Diamond Truck Sales, Inc. and Alpine Truck Sales, Inc. Neither defendant has appeared or is represented by counsel, so this is not a required service — a professional courtesy giving both defendants notice of the pending default judgment request before the Aug. 12, 2026 prove-up. Not legally required and does not restart any deadline or waive default. SUPPLEMENTAL MAILING TO THE COURT — AUGUST 3, 2026: per USPS eReceipt (Milpitas Post Office), a second tracked Priority Mail Flat Rate Envelope (tracking 9505 5114 6003 6215 9407 65, $12.90, mailed 11:22 AM PT, est. delivery Aug. 5, 2026) was sent to the San Joaquin Superior Court in Stockton, distinct from the Jul. 31, 2026 mailing (tracking 9505 5114 6005 6212 9832 68), containing the default judgment packet(s) together with a self-addressed stamped envelope (SASE) requesting the clerk return processed/file-stamped copies. Exact scope (Diamond, Alpine, or both) not fully specified as of this writing; likely the Aug. 4, 2026 compensatory-only packets listed below, sent a day ahead of that label.",
+  "status": "Active — June 15 CIV-100 against Diamond and Alpine docketed Not Entered (Alpine then unserved). Corrected default packets for both defendants mailed July 31, 2026; clerk indicated the Aug. 12, 2026 CMC (Dept. 11B, Hon. Robert T. Waters) will convert to a default prove-up.",
+  "status_label": "Default packets mailed — prove-up Aug. 12, 2026",
   "lifecycle": "active",
   "proceeding": "state_civil",
   "phase": "default",
@@ -24,7 +25,7 @@
     "Declaratory Relief (Count 7)"
   ],
   "key_facts": "On April 4, 2023, Plaintiff purchased a 2014 Volvo VNL diesel semi-truck (VIN: 4V4NC9EH6EN142206) from Diamond for $26,900.00 (total charges $27,092.75) with >$12,000 down payment and remaining balance financed by third-party lender. At time of sale, truck suffered a severe DEF/emissions system defect affecting the selective catalytic reduction (SCR) system, rendering it non-compliant with California emissions regulations and unsafe for highway operation. The pleadings allege on information and belief that Diamond concealed and failed to disclose: (1) the emissions defect; (2) the truck's regulatory non-compliance; (3) a prior owner's written or verbal disclosure of the DEF system failure and engine derate condition before resale; and (4) a California enforcement agency out-of-service designation. The prior-owner disclosure and enforcement designation remain unconfirmed and subject to investigation and discovery. Shortly after purchase while operating under Lease-On Owner Operator Agreement, truck experienced catastrophic emissions failure, entered 'limp mode,' emitted excessive black smoke, became incapable of exceeding approximately 35 mph, rendering it commercially unusable and unsafe. Plaintiff unable to mitigate by renting/purchasing replacement vehicle due to capital exhaustion. Per the Declaration in Support of Default Judgment (Attachment 4b to the July 20, 2026 CM-110 Case Management Statement), documented out-of-pocket losses total $20,218.65: deposit (Retail Buyer's Order) $12,345.10; GAP Addendum enrollment $1,895.00; CA DMV fees $3,442.00 (billed, outstanding, penalties accruing); Brannon Tire (emergency tire/road service) $1,197.34; Mobile Will's Truck/Auto Repair Shop $740.00; Golden Empire Towing, Inc. $562.50; Western Truck Center (lamp/parts) $36.71. Additional undocumented out-of-pocket losses (sworn testimony, no receipt) total $5,750.00: Commercial Towing (CVC §22852 storage release) $750.00; Almaraz Diesel (DEF/SCR diagnostic and repair) $5,000.00. Lost commercial income for the default prove-up is conservatively calculated at $23,400.00 (18 weeks × $1,300/week) — a deliberately conservative sworn figure distinct from the broader >$46,800 projected lost-income theory pursued against both defendants at trial. Prejudgment interest under Civ. Code §3287(a) (7%, ~3.04 years) adds $4,302.55, for a compensatory subtotal of $53,671.20, plus $25,000.00 in punitive damages under Civ. Code §3294 — a default judgment prove-up total of not less than $78,671.20 plus costs of suit, sought against Diamond alone.",
-  "procedural_status": "Filed 02/13/2026 (pro se, fee waiver approved). Summons issued. Diamond Truck Sales Inc. served 03/11/2026 via POS-010; response due 04/10/2026; no response filed. Diamond re-served with the Amended Summons/First Amended Complaint 05/12/2026; no response filed. Request for Entry of Default and Default Court Judgment (CIV-100) submitted 06/15/2026 at 9:00 A.M. naming both Diamond and Alpine — ROA CODEDEFAULT: Not Entered (Alpine had not yet been served; clerk issued CIV-100 Notice to Filing Party). Alpine Truck Sales, Inc. personally served July 1, 2026 at 9:00 AM — Mustagem Usmani (Manager), 1201 S Soderquist Road, Turlock, CA 95380; served by San Joaquin County Sheriff Deputy T. Caldwell under CCP §416.10 (corporation); documents served: Amended Summons, First Amended Complaint, Notice of Case Assignment and Notice of Hearing; POS-010 signed July 2, 2026 by Sheriff's Authorized Agent Jeff Dirkse (Levying Officer File No. 2026002577; $50 fee waived). Alpine response deadline: July 31, 2026 (CCP §412.20(a)(3)). On July 31, 2026 at 12:50 PM — after Alpine's July 31 response deadline under CCP §412.20(a)(3) — Plaintiff printed, signed, and mailed complete renewed default judgment packets for both Diamond Truck Sales, Inc. and Alpine Truck Sales, Inc. from the Milpitas USPS (450 S Abel St) via Priority Mail Flat Rate Envelope to Stockton, CA 95202 (San Joaquin Superior Court), USPS tracking 9505 5114 6005 6212 9832 68, postage $12.90, expected delivery Monday 08/03/2026 (USPS eReceipt email). Packets included the applicable POS-010 and all required default-judgment papers (CIV-100 Request for Entry of Default/Court Judgment, supporting Declaration, exhibits, and [Proposed] Judgment), seeking default judgment against each on a joint-and-several basis in an amount not less than $78,671.20 (Alpine on a successor-in-interest/alter ego/mere-continuation theory). As of the Aug. 1, 2026 5:40 PM FullCourt ROA printout, those July 31 mailings had not yet posted (last default-related ROA line remains the June 15 Not Entered entry) — consistent with expected delivery 08/03/2026 and clerk processing lag. No meet-and-confer outreach received from any defendant as of July 20, 2026 (meet-and-confer inapplicable per CM-110 — neither defendant has appeared). Renewed default judgment packets for Diamond and Alpine mailed July 31, 2026; awaiting ROA posting and clerk entry. Case assigned to Hon. Robert T. Waters, Department 11B for all purposes including trial. Case Management Statement (CM-110) filed July 20, 2026 (ROA 07/27/2026): stated default entered against Diamond (incorrect as to the ROA — June 15 request was Not Entered) and requests the Court conduct a default prove-up hearing against Diamond at or in connection with the CMC; discovery complete; case exempt from judicial arbitration/civil mediation because both defendants are in default or have not appeared (no opposing party available for ADR); 1-day jury trial estimate. Case Management Conference: 08/12/2026, 8:30 AM, Dept. 11B — clerk stated by phone that the CMC will be converted to a default prove-up hearing (bring renewed Diamond/Alpine packets and be prepared to proceed on affidavit under CCP §585(d) / CRC 3.1800). Jury trial demanded. POST-JUDGMENT COLLECTION PREP (as of July 29, 2026 — no judgment entered yet): EJ-001 (Abstract of Judgment), EJ-130 (Writ of Execution), AT-138/EJ-125 (Debtor Examination), and MC-012 (Memorandum of Costs) are pre-drafted with the fixed case/party/court facts filled in, ready to complete the same day or next business day once judgment actually enters — judgment-dependent fields (entry date, amount, hearing dates) are intentionally left blank rather than assumed. Alpine's joint-and-several liability runs through its own pre-drafted default judgment packet (CIV-100, execution date Aug. 1, 2026) — not a CCP §187 motion to amend the judgment to add an alter ego. §187 amendment is the wrong vehicle here: it exists to add an alter ego who was never a named party, and courts generally decline to use it where the underlying judgment was entered by default (no participation by the added party to satisfy due process). Alpine is already a named, personally-served defendant pursuing its own default judgment, so no §187 motion is needed or appropriate. DEFAULT JUDGMENT PACKET REVIEW (Jul. 29, 2026): (1) CASE NUMBER ERROR — Diamond's original CIV-100 (submitted 6/15/26; Not Entered) and the pre-correction Alpine draft both showed case number \"STK-CV-UF-2026-1094\" (missing the leading zeros of the actual \"STK-CV-UF-2026-0001094\") in every field where it appears; same defect was in the [Proposed] Judgment (JUD-100), now corrected in the file above. Diamond's CIV-100/Declaration were already submitted with this error — confirm with the clerk that the case was docketed correctly, since editing this record copy doesn't change what's already on file with the court;  The corrected Alpine packet (case number fixed to STK-CV-UF-2026-0001094) was among the complete packets Plaintiff mailed July 31, 2026 for both defendants. (2) JUD-100 STRUCTURAL GAP — original draft's Item 5a (\"against defendant (names)\") named only Diamond; Alpine's joint-and-several liability appeared solely in freeform Item 8 text, which the abstract of judgment (EJ-001) and writ (EJ-130) are not built to read — corrected version above adds Alpine to Item 5a and the DEFENDANT caption. (3) OSMANI vs. USMANI — Alpine's own Declaration ISO Default Judgment (¶6) cites \"the same Osmani family ownership and management\" as evidentiary support for the alter-ego/successor theory, but the only individual named anywhere in the service record is Usmani (spelled both \"Mustagem\" and \"Mustaqem\" across filings) — never \"Osmani.\" This is a sworn statement supporting Alpine's liability that doesn't match the record; confirm and correct before it's relied on further. (4) STANDING QUESTION — the Lease-On Owner Operator Agreement underlying the $23,400 lost-income claim (Exhibit 4) is contractually between Gobbato Builders, LLC and \"Altamont Freight LLC\" (a separate registered business entity, per its own W-9 and Amazon Relay driver roster, at a different Modesto address), not personally Brendan Ngwa Nforbi — the Declaration frames the loss as his personally. Unlikely to be caught in an uncontested default prove-up, but worth resolving (e.g., confirming sole-member/alter-ego status) before this is relied on in a contested posture. (5) DMV fee vs. use-tax exemption — the $3,442 DMV fee claimed in full as damages includes ~$2,421 in CA use/city-use tax that a CDTFA exemption request (in the same exhibit set) sought to avoid on the ground the truck \"was purchased outside of California\"; the Declaration doesn't disclose whether that exemption was ever granted, which could reduce the true out-of-pocket DMV obligation.",
+  "procedural_status": "Filed Feb. 13, 2026 (STK-CV-UF-2026-0001094). Diamond served / re-served; Alpine personally served July 1, 2026 (response deadline July 31). Renewed default judgment packets for both mailed July 31, 2026 seeking ≥$78,671.20 joint-and-several. CM-110 filed July 20, 2026; Aug. 12 CMC expected to convert to prove-up. Post-judgment collection forms are pre-drafted pending entry. Open diligence items (not docket chronology): confirm case-number zeros on the earlier Diamond CIV-100 with the clerk; Osmani vs. Usmani naming inconsistency in Alpine's alter-ego declaration; Gobbato/Altamont standing on the lost-income lease; DMV fee vs. use-tax exemption status. Dated service/mailing beats live in timeline.json.",
   "damages": "$53,671.20 (Aug 4, 2026 compensatory-only default prove-up): $20,218.65 documented out-of-pocket, $5,750.00 undocumented sworn losses, $23,400.00 conservative lost commercial income (18 wks × $1,300/wk), $4,302.55 prejudgment interest (Civ. Code §3287(a), 7%); costs waived; punitive damages omitted from this filing. Broader case-level range still extends higher if full trial-theory lost income (>$46,800) or later punitive/§425.115 notice is pursued; also includes disgorgement/restitution under UCL §17200 and postjudgment interest.",
   "risk": "Strong case: Diamond's fraud/concealment clearly pleaded; the alleged prior-owner disclosure could establish knowledge if confirmed; catastrophic defect objectively documented; damages quantifiable. Default judgment risk eliminated if Diamond responds before or at CMC. Punitive damages exposure substantial given willful conduct post-disclosure knowledge.",
   "evidence": [
@@ -43,266 +44,205 @@
   ],
   "documents": [
     {
-      "label": "Original Complaint (Feb. 13, 2026)",
       "path": "/documents/matter-12/1094 Complaint.pdf"
     },
     {
-      "label": "Amended Complaint",
       "path": "/documents/matter-12/1094 Amended Complaint.pdf"
     },
     {
-      "label": "Summons — Civil",
       "path": "/documents/matter-12/1094 SUM100 Summons - Civil.pdf"
     },
     {
-      "label": "Summons — Civil 2",
       "path": "/documents/matter-12/1094 SUM100 Summons - Civil 2.pdf"
     },
     {
-      "label": "AMENDED Summons — Civil",
       "path": "/documents/matter-12/1094 SUM100 AMENDED Summons - Civil.pdf"
     },
     {
-      "label": "Civil Case Cover Sheet (CM-010)",
       "path": "/documents/matter-12/1094 CM010 Civil Case Cover Sheet.pdf"
     },
     {
-      "label": "Order on Court Fee Waiver (FW-003)",
       "path": "/documents/matter-12/1094 FW003 Order on Court Fee Waiver.pdf"
     },
     {
-      "label": "Notice of Case Assignment Scheduling Information",
       "path": "/documents/matter-12/1094 Notice of Case Assignment Scheduling Information.pdf"
     },
     {
-      "label": "Proof of Service of Summons",
       "path": "/documents/matter-12/1094 POS010 Proof of Service of Summons.pdf"
     },
     {
-      "label": "Proof of Service of Summons 2",
       "path": "/documents/matter-12/1094 POS010 Proof of Service of Summons 2.pdf"
     },
     {
-      "label": "Proof of Service of Summons 3",
       "path": "/documents/matter-12/1094 POS010 Proof of Service of Summons 3.pdf"
     },
     {
-      "label": "Proof of Service of Summons 4",
       "path": "/documents/matter-12/1094 POS010 Proof of Service of Summons 4.pdf"
     },
     {
-      "label": "Proof of Service of Summons 5",
       "path": "/documents/matter-12/1094 POS010 Proof of Service of Summons 5.pdf"
     },
     {
-      "label": "FullCourt Enterprise — Civil Case",
       "path": "/documents/matter-12/FullCourt Enterprise - Civil Case.pdf"
     },
     {
-      "label": "FullCourt Enterprise — Civil ROA Summary (earlier print; superseded by Aug. 1, 2026 ROA below)",
       "path": "/documents/matter-12/FullCourt Enterprise - Civil ROA Summary.pdf"
     },
     {
-      "label": "FullCourt Enterprise — Civil ROA Summary (printed Aug. 1, 2026, 5:40 PM) — shows June 15, 2026 Request for Default against Diamond and Alpine Not Entered (CIV-100 Notice to Filing Party); Alpine POS filed July 15; CM-110 filed July 27; July 31 mailed renewed default packets not yet posted",
       "path": "/documents/matter-12/FullCourt Enterprise - Civil ROA Summary (as of Aug 1 2026).pdf",
       "filed": false
     },
     {
-      "label": "FullCourt Enterprise — Civil ROA Summary (printed Aug. 2, 2026) — includes Alpine POS filed July 15 (served July 1, 2026); included after POS in each Aug 4 compensatory default packet",
       "path": "/documents/matter-12/FullCourt Enterprise - Civil ROA Summary (as of Aug 2 2026).pdf",
       "filed": false
     },
     {
-      "label": "DTS Default Judgment Packet — original June 15, 2026 CIV-100/Declaration/exhibits against Diamond (and naming Alpine); ROA: Request for Default … Not Entered; clerk issued Notice to Filing Party",
       "path": "/documents/matter-12/DTS Default Judgment Packet.pdf",
       "filed": true
     },
     {
-      "label": "Proof of Service of Summons — Alpine Truck Sales, Inc. (photo, served July 1, 2026; POS-010 signed July 2, 2026)",
       "path": "/documents/matter-12/1094 POS010 Proof of Service of Summons - Alpine (July 1, 2026).jpeg"
     },
     {
-      "label": "POS-010 Proof of Service of Summons — Alpine Truck Sales, Inc. (formal filed copy; Levying Officer File No. 2026002577)",
       "path": "/documents/matter-12/POS010 Proof of Service - Alpine Truck Sales (Levying Officer File No. 2026002577).pdf"
     },
     {
-      "label": "Alpine Default Judgment Packet — pre-correction draft (case number STK-CV-UF-2026-1094 missing leading zeros); superseded by the corrected packet mailed July 31, 2026",
       "path": "/documents/matter-12/Alpine Default Judgment Packet (Pre-Drafted, Execution Date Aug 1 2026).pdf",
       "filed": false
     },
     {
-      "label": "[Proposed] Judgment (JUD-100) — corrected: case number STK-CV-UF-2026-0001094; Alpine added to Item 5a; included in the July 31, 2026 mailed default packets / for use at Aug. 12 CMC prove-up",
       "path": "/documents/matter-12/1094 JUD100 [Proposed] Judgment (Corrected -- case number, Alpine added to Item 5a, ready to submit).pdf"
     },
     {
-      "label": "Alpine Default Judgment Packet — case-number correction draft; superseded by the corrected-per-clerk-rejection Alpine packet mailed July 31, 2026 (commit/64305d0)",
       "path": "/documents/matter-12/1094 Alpine Default Judgment Packet (Corrected Case Number, Ready to File Aug 1 2026).pdf",
       "filed": false
     },
     {
-      "label": "USPS eReceipt — Priority Mail Flat Rate Envelope mailed July 31, 2026, 12:50 PM from Milpitas (450 S Abel St) to Stockton, CA 95202; tracking 9505 5114 6005 6212 9832 68; $12.90; expected delivery Mon 08/03/2026 — mailing of complete renewed Diamond and Alpine default judgment packets",
       "path": "/documents/matter-12/USPS eReceipt - Priority Mail Default Packets to Stockton Court (Jul 31 2026, Tracking 9505511460056212983268).pdf",
       "filed": false
     },
     {
-      "label": "Notice of Amount of Punitive Damages Sought (CCP §425.115) — Diamond Truck Sales, Inc. ($25,000); execution date August 3, 2026 — serve before default is taken; proof of service required",
       "path": "/documents/matter-12/1094 Notice of Amount of Punitive Damages Sought (CCP 425.115) - Diamond Truck Sales (Aug 3 2026).pdf",
       "filed": false
     },
     {
-      "label": "Notice of Amount of Punitive Damages Sought (CCP §425.115) — Alpine Truck Sales, Inc. ($25,000); execution date August 3, 2026 — serve before default is taken; proof of service required",
       "path": "/documents/matter-12/1094 Notice of Amount of Punitive Damages Sought (CCP 425.115) - Alpine Truck Sales (Aug 3 2026).pdf",
       "filed": false
     },
     {
-      "label": "SER-001 Request for Sheriff to Serve Court Papers — Diamond Truck Sales, Inc. (filled and signed Aug. 3, 2026; Stanislaus County Sheriff Civil Division; serve CCP §425.115 Notice at 1201 S Soderquist Road, Turlock; fee waiver)",
       "path": "/documents/matter-12/SER-001 Request for Sheriff to Serve Court Papers - Diamond Truck Sales (Stanislaus, Aug 3 2026).pdf",
       "filed": false
     },
     {
-      "label": "SER-001 Request for Sheriff to Serve Court Papers — Alpine Truck Sales, Inc. (filled and signed Aug. 3, 2026; Stanislaus County Sheriff Civil Division; serve CCP §425.115 Notice at 1201 S Soderquist Road, Turlock — prior Alpine service Levying Officer File No. 2026002577; fee waiver)",
       "path": "/documents/matter-12/SER-001 Request for Sheriff to Serve Court Papers - Alpine Truck Sales (Stanislaus, Aug 3 2026).pdf",
       "filed": false
     },
     {
-      "label": "FW-003 Order on Court Fee Waiver — copy for Stanislaus Sheriff service packets (supports fee-waived sheriff service; printing fees may still apply)",
       "path": "/documents/matter-12/1094 FW003 Order on Court Fee Waiver (for Stanislaus Sheriff Service Packets).pdf",
       "filed": true
     },
     {
-      "label": "Stanislaus Sheriff service packet — Diamond Truck Sales, Inc. (SER-001 + FW-003 + CCP §425.115 Notice; Aug. 3, 2026; email/deliver to Civil Division)",
       "path": "/documents/matter-12/Stanislaus Sheriff Service Packet - Diamond Truck Sales (SER-001, FW-003, CCP 425.115) (Aug 3 2026).pdf",
       "filed": false
     },
     {
-      "label": "Stanislaus Sheriff service packet — Alpine Truck Sales, Inc. (SER-001 + FW-003 + CCP §425.115 Notice; Aug. 3, 2026; email/deliver to Civil Division)",
       "path": "/documents/matter-12/Stanislaus Sheriff Service Packet - Alpine Truck Sales (SER-001, FW-003, CCP 425.115) (Aug 3 2026).pdf",
       "filed": false
     },
     {
-      "label": "Alpine Default Judgment Packet — Aug 3 draft (superseded by Aug 4 compensatory-only packet)",
       "path": "/documents/matter-12/1094 Alpine Default Judgment Packet (Corrected per Clerk Rejection, Ready to File Aug 3 2026).pdf",
       "filed": false
     },
     {
-      "label": "Diamond Default Judgment Packet — Aug 3 draft (superseded by Aug 4 compensatory-only packet)",
       "path": "/documents/matter-12/1094 Diamond Default Judgment Packet (Corrected per Clerk Rejection, Ready to File Aug 3 2026).pdf",
       "filed": false
     },
     {
-      "label": "Diamond Default Judgment Packet — Aug 4, 2026 compensatory-only filing packet (Notice to Filing Party; POS; Civil ROA Summary; clean CIV-100 = $53,671.20; JUD-100; CIV-110 dismiss Does; Declaration ISO Aug 4; Exhibits 1–10; signed; no punitive)",
       "path": "/documents/matter-12/1094 Diamond Default Judgment Packet (Compensatory Only, Ready to File Aug 4 2026).pdf",
       "filed": false
     },
     {
-      "label": "Alpine Default Judgment Packet — Aug 4, 2026 compensatory-only filing packet (Notice to Filing Party; POS; Civil ROA Summary; clean CIV-100 = $53,671.20; JUD-100 joint-and-several; CIV-110 dismiss Does; Declaration ISO Aug 4; Exhibits 1–10; signed; no punitive)",
       "path": "/documents/matter-12/1094 Alpine Default Judgment Packet (Compensatory Only, Ready to File Aug 4 2026).pdf",
       "filed": false
     },
     {
-      "label": "USPS eReceipt — Priority Mail Flat Rate Envelope to Stockton, CA 95202, tracking 9505 5114 6003 6215 9407 65 (11:22 AM, $12.90, est. delivery Aug. 5, 2026), Milpitas Post Office, Aug. 3, 2026 — Diamond/Alpine default judgment packet with SASE enclosed for return of processed copies",
       "path": "/documents/matter-12/Gmail - USPS eReceipt - Default Judgment Packet with SASE Postage (Aug 3 2026).pdf"
     },
     {
-      "label": "CIV-110 Request for Dismissal of Does 1–20 without prejudice (executed August 4, 2026; also in each Aug 4 packet)",
       "path": "/documents/matter-12/1094 CIV-110 Request for Dismissal of Does 1-20 (Without Prejudice, Executed Aug 4 2026).pdf",
       "filed": false
     },
     {
-      "label": "Notice of Change of Address (filed July 7, 2026)",
       "path": "/documents/matter-12/Notice of Change of Address (July 7, 2026).pdf"
     },
     {
-      "label": "CM-110 Case Management Statement, incl. Attachment 4b Declaration in Support of Default Judgment (filed; ROA 07/27/2026) — note: Item 3(b)(3) asserted default entered against Diamond, but the June 15 CIV-100 was Not Entered on the ROA; renewed packets mailed July 31, 2026; clerk later stated by phone that the 08/12/2026 CMC will be converted to a prove-up hearing",
       "path": "/documents/matter-12/CM110 Case Management Statement (Jul 20 2026).pdf",
       "filed": true
     },
     {
-      "label": "EJ-001 Abstract of Judgment — draft, party/court caption filled; judgment date and amount left blank pending Aug. 12 CMC outcome",
       "path": "/documents/matter-12/1094 EJ001 Abstract of Judgment (Draft, Pending Judgment Entry).pdf"
     },
     {
-      "label": "EJ-001 Abstract of Judgment — blank form",
       "path": "/documents/matter-12/1094 EJ001 Abstract of Judgment (Blank Form).pdf"
     },
     {
-      "label": "AT-138/EJ-125 Application and Order for Appearance and Examination — draft, ready to file once a judgment debtor and hearing date are confirmed. Corrected: Item 8 (\"This court is not the court in which the money judgment is entered\") was erroneously checked; San Joaquin Superior Court is the entering court, so that box is now unchecked.",
       "path": "/documents/matter-12/1094 AT138-EJ125 Application and Order for Appearance and Examination (Draft, Pending Judgment Entry).pdf"
     },
     {
-      "label": "AT-138/EJ-125 Application and Order for Appearance and Examination — blank form",
       "path": "/documents/matter-12/1094 AT138-EJ125 Application and Order for Appearance and Examination (Blank Form).pdf"
     },
     {
-      "label": "EJ-130 Writ of Execution — draft, party/court caption filled; judgment amount/date left blank pending Aug. 12 CMC outcome",
       "path": "/documents/matter-12/1094 EJ130 Writ of Execution (Draft, Pending Judgment Entry).pdf"
     },
     {
-      "label": "EJ-130 Writ of Execution — blank form",
       "path": "/documents/matter-12/1094 EJ130 Writ of Execution (Blank Form).pdf"
     },
     {
-      "label": "EJ-160 Claim of Exemption — blank form, kept only as a reference copy (this is the judgment debtor's own form, returned to the levying officer, not filed by the creditor)",
       "path": "/documents/matter-12/1094 EJ160 Claim of Exemption (Blank Form, Debtor-Filed Reference Copy).pdf"
     },
     {
-      "label": "MC-012 Memorandum of Costs After Judgment — draft, caption filled; cost/interest line items intentionally left blank until actually incurred post-judgment",
       "path": "/documents/matter-12/1094 MC012 Memorandum of Costs After Judgment (Draft, Pending Judgment Entry).pdf"
     },
     {
-      "label": "MC-012 Memorandum of Costs After Judgment — blank form",
       "path": "/documents/matter-12/1094 MC012 Memorandum of Costs After Judgment (Blank Form).pdf"
     },
     {
-      "label": "AT-167/EJ-152 Memorandum of Garnishee — Diamond Truck Sales, Inc. / Bank of Stockton, Golden State Branch, 134 S Golden State Blvd, Turlock, CA 95380 — caption pre-filled, garnishee items 3–9 left blank for the bank to complete under penalty of perjury within 10 days of levy; branch address confirmed as a valid service location — see DFPI central-locations finding below",
       "path": "/documents/matter-12/1094 AT167-EJ152 Memorandum of Garnishee - Diamond Truck Sales - Bank of Stockton (Draft, Pending Levy).pdf"
     },
     {
-      "label": "AT-167/EJ-152 Memorandum of Garnishee — Diamond Truck Sales, Inc. / JPMorgan Chase Bank, N.A., Countryside Dr. Branch, 2951 Countryside Dr, Turlock, CA 95380 — caption pre-filled, garnishee items 3–9 left blank; branch address confirmed as a valid service location — see DFPI central-locations finding below",
       "path": "/documents/matter-12/1094 AT167-EJ152 Memorandum of Garnishee - Diamond Truck Sales - JPMorgan Chase (Draft, Pending Levy).pdf"
     },
     {
-      "label": "AT-167/EJ-152 Memorandum of Garnishee — Alpine Truck Sales, Inc. / Bank of Stockton, Golden State Branch, 134 S Golden State Blvd, Turlock, CA 95380 — caption pre-filled, garnishee items 3–9 left blank for the bank to complete; branch address confirmed as a valid service location — see DFPI central-locations finding below",
       "path": "/documents/matter-12/1094 AT167-EJ152 Memorandum of Garnishee - Alpine Truck Sales - Bank of Stockton (Draft, Pending Levy).pdf"
     },
     {
-      "label": "AT-167/EJ-152 Memorandum of Garnishee — Alpine Truck Sales, Inc. / JPMorgan Chase Bank, N.A., Countryside Dr. Branch, 2951 Countryside Dr, Turlock, CA 95380 — caption pre-filled, garnishee items 3–9 left blank; branch address confirmed as a valid service location — see DFPI central-locations finding below",
       "path": "/documents/matter-12/1094 AT167-EJ152 Memorandum of Garnishee - Alpine Truck Sales - JPMorgan Chase (Draft, Pending Levy).pdf"
     },
     {
-      "label": "AT-167/EJ-152 Memorandum of Garnishee — blank form",
       "path": "/documents/matter-12/1094 AT167-EJ152 Memorandum of Garnishee (Blank Form).pdf"
     },
     {
-      "label": "DFPI Central Locations for Service of Legal Process (statewide registry, downloaded Jul. 29, 2026) — searched in full; neither JPMorgan Chase Bank, N.A. nor Bank of Stockton has a designation on file, so under CCP §684.115's default rule every California branch of each bank is a valid service location",
       "path": "/documents/matter-12/DFPI Central Locations for Service of Legal Process (downloaded Jul 29 2026 - no Chase or Bank of Stockton entry).xlsx"
     },
     {
-      "label": "Bank of Stockton — DFPI Regulated Entity Listing (Jul. 29, 2026) — confirms Bank of Stockton as DFPI License No. 45, HQ at 301 East Miner Avenue, Stockton, CA 95202; supporting context only, not a substitute for the central-locations registry above",
       "path": "/documents/matter-12/Bank of Stockton - DFPI Regulated Entity Listing (Jul 29 2026).pdf"
     },
     {
-      "label": "CIV-100 Request for Entry of Default or Default Judgment (as submitted)",
       "path": "/documents/matter-12/014a CIV100 Request for Entry of Default or Default Judgment.pdf"
     },
     {
-      "label": "Notice to Filing Party — clerk rejection of the default request",
       "path": "/documents/matter-12/014b Notice to Filing Party.pdf"
     },
     {
-      "label": "POS-010 Proof of Service of Summons (filing 015)",
       "path": "/documents/matter-12/015 POS010 Proof of Service of Summons.pdf"
     },
     {
-      "label": "POS-010 Proof of Service of Summons (filing 016)",
       "path": "/documents/matter-12/016 POS010 Proof of Service of Summons.pdf"
     },
     {
-      "label": "CM-110 Case Management Statement (filing 017)",
       "path": "/documents/matter-12/017 CM110 Case Management Statement.pdf"
     },
     {
-      "label": "Request for Sheriff Service + Fee Waiver / credit-card authorization — Diamond Truck Sales",
       "path": "/documents/matter-12/018 Request for Sheriff Service + Fee Waiver : CC Auth — Ngwa Nforbi v. Diamond Truc.pdf"
     }
   ],

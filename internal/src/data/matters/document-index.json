@@ -67,37 +67,37 @@
   {
     "matter": 1,
     "label": "CHP Arrest Report",
-    "path": "/documents/matter-32/Arrest Report.pdf"
+    "path": "/documents/matter-33/incident/Arrest Report.pdf"
   },
   {
     "matter": 1,
     "label": "CHP Officer's Statement — Chemical Test Admonition (DS 367) (Nov. 1, 2024)",
-    "path": "/documents/matter-32/ds367 ngwanforbi f7953179.pdf"
+    "path": "/documents/matter-33/incident/ds367 ngwanforbi f7953179.pdf"
   },
   {
     "matter": 1,
     "label": "DMV Driver Record — Discovery Production (Dec. 4, 2024)",
-    "path": "/documents/matter-32/DAD 2024-12-04.pdf"
+    "path": "/documents/matter-33/incident/DAD 2024-12-04.pdf"
   },
   {
     "matter": 1,
     "label": "DMV Notification of Discovery — APS Hearing Packet (Dec. 4, 2024)",
-    "path": "/documents/matter-32/DS2044 Notification of Discovery 34739340.pdf"
+    "path": "/documents/matter-33/incident/DS2044 Notification of Discovery 34739340.pdf"
   },
   {
     "matter": 1,
     "label": "CHP Video Transcript (Exhibit A)",
-    "path": "/documents/matter-32/Exhibit_A_CHP_Video_Transcript.pdf"
+    "path": "/documents/matter-33/incident/Exhibit_A_CHP_Video_Transcript.pdf"
   },
   {
     "matter": 1,
     "label": "Discovery Response",
-    "path": "/documents/matter-32/Discovery-Response.pdf"
+    "path": "/documents/matter-33/incident/Discovery-Response.pdf"
   },
   {
     "matter": 1,
     "label": "Centerline Wage Reference",
-    "path": "/documents/matter-32/from-01/Centerline Wage Reference.pdf"
+    "path": "/documents/matter-33/incident/Centerline Wage Reference.pdf"
   },
   {
     "matter": 1,
@@ -123,6 +123,11 @@
     "matter": 1,
     "label": "Return of Service — proof of service on CHP defendants",
     "path": "/documents/matter-32/from-01/08_Return_of_Service.pdf"
+  },
+  {
+    "matter": 1,
+    "label": "Notice of Voluntary Dismissal Without Prejudice (draft — execution date Aug. 7, 2026) — FRCP 41(a)(1)(A)(i); entire action; not yet e-filed",
+    "path": "/documents/matter-32/from-01/Notice of Voluntary Dismissal Without Prejudice (Aug 7 2026).pdf"
   },
   {
     "matter": 2,
@@ -162,32 +167,32 @@
   {
     "matter": 2,
     "label": "CHP Arrest Report",
-    "path": "/documents/matter-32/Arrest Report.pdf"
+    "path": "/documents/matter-33/incident/Arrest Report.pdf"
   },
   {
     "matter": 2,
     "label": "CHP Officer's Statement — Chemical Test Admonition (DS 367) (Nov. 1, 2024)",
-    "path": "/documents/matter-32/ds367 ngwanforbi f7953179.pdf"
+    "path": "/documents/matter-33/incident/ds367 ngwanforbi f7953179.pdf"
   },
   {
     "matter": 2,
     "label": "DMV Driver Record — Discovery Production (Dec. 4, 2024)",
-    "path": "/documents/matter-32/DAD 2024-12-04.pdf"
+    "path": "/documents/matter-33/incident/DAD 2024-12-04.pdf"
   },
   {
     "matter": 2,
     "label": "DMV Notification of Discovery — APS Hearing Packet (Dec. 4, 2024)",
-    "path": "/documents/matter-32/DS2044 Notification of Discovery 34739340.pdf"
+    "path": "/documents/matter-33/incident/DS2044 Notification of Discovery 34739340.pdf"
   },
   {
     "matter": 2,
     "label": "CHP Video Transcript (Exhibit A)",
-    "path": "/documents/matter-32/Exhibit_A_CHP_Video_Transcript.pdf"
+    "path": "/documents/matter-33/incident/Exhibit_A_CHP_Video_Transcript.pdf"
   },
   {
     "matter": 2,
     "label": "Discovery Response",
-    "path": "/documents/matter-32/Discovery-Response.pdf"
+    "path": "/documents/matter-33/incident/Discovery-Response.pdf"
   },
   {
     "matter": 2,
@@ -537,7 +542,7 @@
   {
     "matter": 7,
     "label": "First Amended Complaint (Apr. 27, 2026)",
-    "path": "/documents/matter-32/from-07/FAC Candelaria.pdf"
+    "path": "/documents/matter-33/from-07/FAC Candelaria.pdf"
   },
   {
     "matter": 7,
@@ -547,117 +552,117 @@
   {
     "matter": 7,
     "label": "Original Complaint — Newanforbi v. Candelaria",
-    "path": "/documents/matter-32/from-07/Newanforbi v. Candelaria.pdf"
+    "path": "/documents/matter-33/from-07/Newanforbi v. Candelaria.pdf"
   },
   {
     "matter": 7,
     "label": "CHP Arrest-Investigation Report (CHP Form 202, RJ68845, File No. 202400898)",
-    "path": "/documents/matter-32/Arrest Report.pdf"
+    "path": "/documents/matter-33/incident/Arrest Report.pdf"
   },
   {
     "matter": 7,
     "label": "CHP Dashcam Transcript (00:54:36–01:57:10, CAD No. 241101GG0064)",
-    "path": "/documents/matter-32/from-07/CHP Transcript.pdf"
+    "path": "/documents/matter-33/from-07/CHP Transcript.pdf"
   },
   {
     "matter": 7,
     "label": "DMV APS Notice / Notice of Stay / Temporary License (December 4, 2024)",
-    "path": "/documents/matter-32/DAD 2024-12-04.pdf"
+    "path": "/documents/matter-33/incident/DAD 2024-12-04.pdf"
   },
   {
     "matter": 7,
     "label": "DS2044 — Notification of Discovery (APS Case 34739340)",
-    "path": "/documents/matter-32/DS2044 Notification of Discovery 34739340.pdf"
+    "path": "/documents/matter-33/incident/DS2044 Notification of Discovery 34739340.pdf"
   },
   {
     "matter": 7,
     "label": "Plaintiff's Notice of Response to Request for Discovery — Personal Statement (December 9, 2024)",
-    "path": "/documents/matter-32/Discovery-Response.pdf"
+    "path": "/documents/matter-33/incident/Discovery-Response.pdf"
   },
   {
     "matter": 7,
     "label": "DS-367 — Chemical Test Refusal Form (Officer Meza-Gonzalez, Badge #023295, License F7953179)",
-    "path": "/documents/matter-32/ds367 ngwanforbi f7953179.pdf"
+    "path": "/documents/matter-33/incident/ds367 ngwanforbi f7953179.pdf"
   },
   {
     "matter": 7,
     "label": "Exhibit A Cover — DMV APS Decision (Case 34739340)",
-    "path": "/documents/matter-32/from-07/Exhibit A Cover DMV Decision.pdf"
+    "path": "/documents/matter-33/from-07/Exhibit A Cover DMV Decision.pdf"
   },
   {
     "matter": 7,
     "label": "Exhibit B Cover — Dairyland SR-22 Insurance",
-    "path": "/documents/matter-32/from-07/Exhibit B Cover Dairyland SR22.pdf"
+    "path": "/documents/matter-33/from-07/Exhibit B Cover Dairyland SR22.pdf"
   },
   {
     "matter": 7,
     "label": "Exhibit C Cover — CHP Dashcam Transcript",
-    "path": "/documents/matter-32/from-07/Exhibit C Cover CHP Dashcam Transcript.pdf"
+    "path": "/documents/matter-33/from-07/Exhibit C Cover CHP Dashcam Transcript.pdf"
   },
   {
     "matter": 7,
     "label": "Magistrate Judge's Findings & Recommendations — IFP Denial and Dismissal Without Leave to Amend (ECF No. 6, Jun. 15, 2026)",
-    "path": "/documents/opinions/Newanforbi v Candelaria - USDC EDCal - FR Recommending Dismissal Jun 15 2026.pdf"
+    "path": "/documents/matter-33/opinions/Newanforbi v Candelaria - USDC EDCal - FR Recommending Dismissal Jun 15 2026.pdf"
   },
   {
     "matter": 7,
     "label": "DMV Administrative Per Se Decision (Case 34739340, February 11, 2025, Hearing Officer Diana Candelaria)",
-    "path": "/documents/matter-32/from-07/DMV Decision.pdf"
+    "path": "/documents/matter-33/from-07/DMV Decision.pdf"
   },
   {
     "matter": 7,
     "label": "Supplemental Declaration (Newanforbi v. Candelaria, FAC)",
-    "path": "/documents/matter-32/from-07/Supplemental Declaration Newanforbi v Candelaria.pdf"
+    "path": "/documents/matter-33/from-07/Supplemental Declaration Newanforbi v Candelaria.pdf"
   },
   {
     "matter": 7,
     "label": "Objections to Findings & Recommendations (BOLSTERED 3)",
-    "path": "/documents/matter-32/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf"
+    "path": "/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf"
   },
   {
     "matter": 7,
     "label": "Notice of Supplemental Authority — Serrato Order, draft (superseded by the electronically filed version below)",
-    "path": "/documents/matter-32/from-07/Notice of Supplemental Authority - Serrato Order - July 7 2026.pdf"
+    "path": "/documents/matter-33/from-07/Notice of Supplemental Authority - Serrato Order - July 7 2026.pdf"
   },
   {
     "matter": 7,
     "label": "Notice of Supplemental Authority — Serrato Order, ELECTRONICALLY FILED (Document 9, Jul. 9, 2026)",
-    "path": "/documents/matter-32/from-07/Notice of Supplemental Authority - Serrato Order - ELECTRONICALLY FILED Jul 9 2026.pdf"
+    "path": "/documents/matter-33/from-07/Notice of Supplemental Authority - Serrato Order - ELECTRONICALLY FILED Jul 9 2026.pdf"
   },
   {
     "matter": 7,
     "label": "Notice of Change of Address (filed July 7, 2026)",
-    "path": "/documents/matter-32/from-07/Notice of Change of Address (July 7, 2026).pdf"
+    "path": "/documents/matter-33/from-07/Notice of Change of Address (July 7, 2026).pdf"
   },
   {
     "matter": 8,
     "label": "Verified Petition for Writ of Administrative Mandate (May 18, 2026)",
-    "path": "/documents/matter-08/Newanforbi v. Candelaria Mandamus.pdf"
+    "path": "/documents/matter-33/from-08/Newanforbi v. Candelaria Mandamus.pdf"
   },
   {
     "matter": 8,
     "label": "Civil Case Cover Sheet CM-010, electronically filed (May 18, 2026)",
-    "path": "/documents/matter-08/Civil Case Cover Sheet CM-010 (electronically filed May 18 2026).pdf"
+    "path": "/documents/matter-33/from-08/Civil Case Cover Sheet CM-010 (electronically filed May 18 2026).pdf"
   },
   {
     "matter": 8,
     "label": "Order on Court Fee Waiver After Hearing — FW-008, denied for non-appearance (Jul. 17, 2026)",
-    "path": "/documents/matter-08/Order on Court Fee Waiver After Hearing - FW-008 (Jul 17 2026).pdf"
+    "path": "/documents/matter-33/from-08/Order on Court Fee Waiver After Hearing - FW-008 (Jul 17 2026).pdf"
   },
   {
     "matter": 8,
     "label": "Court Minutes — Fee Waiver Hearing DENIED, non-appearance (Jul. 17, 2026)",
-    "path": "/documents/matter-08/Court Minutes - Fee Waiver Hearing DENIED, Non-Appearance (Jul 17 2026).pdf"
+    "path": "/documents/matter-33/from-08/Court Minutes - Fee Waiver Hearing DENIED, Non-Appearance (Jul 17 2026).pdf"
   },
   {
     "matter": 8,
     "label": "Court Minutes (Jul. 17, 2026) and Civil Case Cover Sheet CM-010, pp. 2-3",
-    "path": "/documents/matter-08/Court Minutes (Jul 17 2026) and Civil Case Cover Sheet CM-010 pp.2-3.pdf"
+    "path": "/documents/matter-33/from-08/Court Minutes (Jul 17 2026) and Civil Case Cover Sheet CM-010 pp.2-3.pdf"
   },
   {
     "matter": 8,
     "label": "Notice of Change of Address (filed July 7, 2026)",
-    "path": "/documents/matter-08/Notice of Change of Address (July 7, 2026).pdf"
+    "path": "/documents/matter-33/from-08/Notice of Change of Address (July 7, 2026).pdf"
   },
   {
     "matter": 9,
@@ -2400,6 +2405,11 @@
     "path": "/documents/matter-29/IMG_7434.png"
   },
   {
+    "matter": 29,
+    "label": "POS-010 Proof of Service of Summons — Accurate Background LLC (served Jul. 31, 2026, 11:00 AM on CT Corporation / Jaqueline Mejia; declaration dated Aug. 5, 2026)",
+    "path": "/documents/matter-29/Proof of Service Accurate Background.pdf"
+  },
+  {
     "matter": 30,
     "label": "Newanforbi v. Derrick et al. FAC (Case 2:26-cv-00004-DJC-JDP, E.D. Cal., filed Jan. 12, 2026) — triggering protected activity",
     "path": "/documents/matter-03/8_fed_derrickFAC.pdf"
@@ -2496,63 +2506,78 @@
   },
   {
     "matter": 32,
-    "label": "Complaint for Damages (42 U.S.C. § 1983; six causes of action; jury demand) — Ngwa Nforbi v. Meza-Gonzalez and Melano, N.D. Cal. (drafted Aug. 7, 2026, not yet filed)",
-    "path": "/documents/matter-32/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf"
+    "label": "Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 3 Operative",
+    "path": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 3 Operative.pdf"
   },
   {
     "matter": 32,
-    "label": "JS 44 Civil Cover Sheet — N.D. Cal. (filled Aug. 7, 2026; NOS 440, federal question, jury demand, related case 4:26-cv-05953-ASK; signature line left blank for Plaintiff's wet signature; 'FOR OFFICE USE ONLY' strip left for the clerk)",
-    "path": "/documents/matter-32/JS 44 Civil Cover Sheet - Ngwa Nforbi v. Meza-Gonzalez (N.D. Cal.) (Aug 7 2026).pdf"
+    "label": "N.D. Cal. Intake Packet (print copy) - Ngwa Nforbi v. Meza-Gonzalez (Aug 7 2026)",
+    "path": "/documents/matter-32/ndcal/N.D. Cal. Intake Packet (print copy) - Ngwa Nforbi v. Meza-Gonzalez (Aug 7 2026).pdf"
   },
   {
     "matter": 32,
-    "label": "AO 440 Summons — Santiago Meza-Gonzalez (filled Aug. 7, 2026; serve at his current duty station, CHP Modesto Area, 4030 Kiernan Ave., Modesto — not the Dublin assignment pleaded at Compl. ¶ 13; civil action number and clerk signature left blank for issuance; plaintiff's name/address block repositioned to clear the surrounding text)",
-    "path": "/documents/matter-32/AO 440 Summons - Santiago Meza-Gonzalez (N.D. Cal.) (Aug 7 2026).pdf"
+    "label": "JS 44 Civil Cover Sheet - Ngwa Nforbi v. Meza-Gonzalez (N.D. Cal.) (Aug 7 2026)",
+    "path": "/documents/matter-32/ndcal/JS 44 Civil Cover Sheet - Ngwa Nforbi v. Meza-Gonzalez (N.D. Cal.) (Aug 7 2026).pdf"
   },
   {
     "matter": 32,
-    "label": "AO 440 Summons — Jose Melano (filled Aug. 7, 2026; serve at his current duty station, CHP South Sacramento Area, 6 Massie Ct., Sacramento — not the Dublin assignment pleaded at Compl. ¶ 14; civil action number and clerk signature left blank for issuance; plaintiff's name/address block repositioned to clear the surrounding text)",
-    "path": "/documents/matter-32/AO 440 Summons - Jose Melano (N.D. Cal.) (Aug 7 2026).pdf"
+    "label": "AO 440 Summons - Santiago Meza-Gonzalez (N.D. Cal.) (Aug 7 2026)",
+    "path": "/documents/matter-32/ndcal/AO 440 Summons - Santiago Meza-Gonzalez (N.D. Cal.) (Aug 7 2026).pdf"
   },
   {
     "matter": 32,
-    "label": "Consent to Magistrate Judge Jurisdiction — N.D. Cal. (28 U.S.C. § 636(c); CONSENT box checked, dated Aug. 7, 2026; signature line left blank for Plaintiff's wet signature; case number blank pending assignment, due within 14 days of case initiation)",
-    "path": "/documents/matter-32/Consent to Magistrate Judge Jurisdiction - Ngwa Nforbi v. Meza-Gonzalez (N.D. Cal.) (Aug 7 2026).pdf"
+    "label": "AO 440 Summons - Jose Melano (N.D. Cal.) (Aug 7 2026)",
+    "path": "/documents/matter-32/ndcal/AO 440 Summons - Jose Melano (N.D. Cal.) (Aug 7 2026).pdf"
   },
   {
     "matter": 32,
-    "label": "N.D. Cal. Intake Packet — print copy (JS 44 + both AO 440 summonses + Consent form, 7 pp., field values flattened into the page content for printing)",
-    "path": "/documents/matter-32/N.D. Cal. Intake Packet (print copy) - Ngwa Nforbi v. Meza-Gonzalez (Aug 7 2026).pdf"
+    "label": "Consent to Magistrate Judge Jurisdiction - Ngwa Nforbi v. Meza-Gonzalez (N.D. Cal.) (Aug 7 2026)",
+    "path": "/documents/matter-32/ndcal/Consent to Magistrate Judge Jurisdiction - Ngwa Nforbi v. Meza-Gonzalez (N.D. Cal.) (Aug 7 2026).pdf"
+  },
+  {
+    "matter": 32,
+    "label": "Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal",
+    "path": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf"
+  },
+  {
+    "matter": 32,
+    "label": "Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 2",
+    "path": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 2.pdf"
+  },
+  {
+    "matter": 32,
+    "label": "Centerline Wage Reference — damages support for N.D. Cal. complaint (>$214,000)",
+    "path": "/documents/matter-32/ndcal/Wage Reference.pdf"
   },
   {
     "matter": 32,
     "label": "CHP Arrest Report (Case RJ68845)",
-    "path": "/documents/matter-32/Arrest Report.pdf"
+    "path": "/documents/matter-33/incident/Arrest Report.pdf"
   },
   {
     "matter": 32,
     "label": "CHP Officer's Statement — Chemical Test Admonition (DS 367) (Nov. 1, 2024)",
-    "path": "/documents/matter-32/ds367 ngwanforbi f7953179.pdf"
+    "path": "/documents/matter-33/incident/ds367 ngwanforbi f7953179.pdf"
   },
   {
     "matter": 32,
     "label": "CHP Video Transcript (Exhibit A)",
-    "path": "/documents/matter-32/Exhibit_A_CHP_Video_Transcript.pdf"
+    "path": "/documents/matter-33/incident/Exhibit_A_CHP_Video_Transcript.pdf"
   },
   {
     "matter": 32,
     "label": "DMV Driver Record — Discovery Production (Dec. 4, 2024)",
-    "path": "/documents/matter-32/DAD 2024-12-04.pdf"
+    "path": "/documents/matter-33/incident/DAD 2024-12-04.pdf"
   },
   {
     "matter": 32,
     "label": "DMV Notification of Discovery — APS Hearing Packet (Dec. 4, 2024)",
-    "path": "/documents/matter-32/DS2044 Notification of Discovery 34739340.pdf"
+    "path": "/documents/matter-33/incident/DS2044 Notification of Discovery 34739340.pdf"
   },
   {
     "matter": 32,
     "label": "CHP Discovery Response",
-    "path": "/documents/matter-32/Discovery-Response.pdf"
+    "path": "/documents/matter-33/incident/Discovery-Response.pdf"
   },
   {
     "matter": 32,
@@ -2622,7 +2647,7 @@
   {
     "matter": 32,
     "label": "[M1] Centerline Wage Reference",
-    "path": "/documents/matter-32/from-01/Centerline Wage Reference.pdf"
+    "path": "/documents/matter-33/incident/Centerline Wage Reference.pdf"
   },
   {
     "matter": 32,
@@ -2648,6 +2673,11 @@
     "matter": 32,
     "label": "[M1] Reply — CHP (Jan. 5, 2026)",
     "path": "/documents/matter-32/from-01/Reply - CHP.pdf"
+  },
+  {
+    "matter": 32,
+    "label": "[M1] Notice of Voluntary Dismissal Without Prejudice (draft — execution date Aug. 7, 2026) — FRCP 41(a)(1)(A)(i)",
+    "path": "/documents/matter-32/from-01/Notice of Voluntary Dismissal Without Prejudice (Aug 7 2026).pdf"
   },
   {
     "matter": 32,
@@ -2702,62 +2732,62 @@
   {
     "matter": 32,
     "label": "[M7] CHP Dashcam Transcript (00:54:36–01:57:10, CAD No. 241101GG0064)",
-    "path": "/documents/matter-32/from-07/CHP Transcript.pdf"
+    "path": "/documents/matter-33/from-07/CHP Transcript.pdf"
   },
   {
     "matter": 32,
     "label": "[M7] DMV Administrative Per Se Decision (Case 34739340, February 11, 2025, Hearing Officer Diana Candelaria)",
-    "path": "/documents/matter-32/from-07/DMV Decision.pdf"
+    "path": "/documents/matter-33/from-07/DMV Decision.pdf"
   },
   {
     "matter": 32,
     "label": "[M7] Exhibit A Cover — DMV APS Decision (Case 34739340)",
-    "path": "/documents/matter-32/from-07/Exhibit A Cover DMV Decision.pdf"
+    "path": "/documents/matter-33/from-07/Exhibit A Cover DMV Decision.pdf"
   },
   {
     "matter": 32,
     "label": "[M7] Exhibit B Cover — Dairyland SR-22 Insurance",
-    "path": "/documents/matter-32/from-07/Exhibit B Cover Dairyland SR22.pdf"
+    "path": "/documents/matter-33/from-07/Exhibit B Cover Dairyland SR22.pdf"
   },
   {
     "matter": 32,
     "label": "[M7] Exhibit C Cover — CHP Dashcam Transcript",
-    "path": "/documents/matter-32/from-07/Exhibit C Cover CHP Dashcam Transcript.pdf"
+    "path": "/documents/matter-33/from-07/Exhibit C Cover CHP Dashcam Transcript.pdf"
   },
   {
     "matter": 32,
     "label": "[M7] First Amended Complaint (Apr. 27, 2026)",
-    "path": "/documents/matter-32/from-07/FAC Candelaria.pdf"
+    "path": "/documents/matter-33/from-07/FAC Candelaria.pdf"
   },
   {
     "matter": 32,
     "label": "[M7] Original Complaint — Newanforbi v. Candelaria",
-    "path": "/documents/matter-32/from-07/Newanforbi v. Candelaria.pdf"
+    "path": "/documents/matter-33/from-07/Newanforbi v. Candelaria.pdf"
   },
   {
     "matter": 32,
     "label": "[M7] Notice of Change of Address (filed July 7, 2026)",
-    "path": "/documents/matter-32/from-07/Notice of Change of Address (July 7, 2026).pdf"
+    "path": "/documents/matter-33/from-07/Notice of Change of Address (July 7, 2026).pdf"
   },
   {
     "matter": 32,
     "label": "[M7] Notice of Supplemental Authority — Serrato Order, ELECTRONICALLY FILED (Document 9, Jul. 9, 2026)",
-    "path": "/documents/matter-32/from-07/Notice of Supplemental Authority - Serrato Order - ELECTRONICALLY FILED Jul 9 2026.pdf"
+    "path": "/documents/matter-33/from-07/Notice of Supplemental Authority - Serrato Order - ELECTRONICALLY FILED Jul 9 2026.pdf"
   },
   {
     "matter": 32,
     "label": "[M7] Notice of Supplemental Authority — Serrato Order, draft (superseded by the electronically filed version below)",
-    "path": "/documents/matter-32/from-07/Notice of Supplemental Authority - Serrato Order - July 7 2026.pdf"
+    "path": "/documents/matter-33/from-07/Notice of Supplemental Authority - Serrato Order - July 7 2026.pdf"
   },
   {
     "matter": 32,
     "label": "[M7] Objections to Findings & Recommendations (BOLSTERED 3)",
-    "path": "/documents/matter-32/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf"
+    "path": "/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf"
   },
   {
     "matter": 32,
     "label": "[M7] Supplemental Declaration (Newanforbi v. Candelaria, FAC)",
-    "path": "/documents/matter-32/from-07/Supplemental Declaration Newanforbi v Candelaria.pdf"
+    "path": "/documents/matter-33/from-07/Supplemental Declaration Newanforbi v Candelaria.pdf"
   },
   {
     "matter": 32,
@@ -2986,32 +3016,172 @@
   },
   {
     "matter": 33,
-    "label": "Complaint for Damages and for Declaratory and Injunctive Relief (42 U.S.C. § 1983; 28 U.S.C. §§ 2201, 2202; Ex parte Young; five counts; jury demand) — Ngwa Nforbi v. Candelaria & Gordon, N.D. Cal. (drafted Aug. 7, 2026, not yet filed)",
-    "path": "/documents/matter-33/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal.pdf"
+    "label": "Complaint Ngwa Nforbi v Candelaria and Gordon NDCal 3 Operative",
+    "path": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal 3 Operative.pdf"
   },
   {
     "matter": 33,
-    "label": "JS 44 Civil Cover Sheet — N.D. Cal. (filled Aug. 7, 2026; NOS 440, federal question, jury demand, related case 4:26-cv-05953-ASK; signature line left blank for Plaintiff's wet signature; 'FOR OFFICE USE ONLY' strip left for the clerk)",
-    "path": "/documents/matter-33/JS 44 Civil Cover Sheet - Ngwa Nforbi v. Candelaria & Gordon (N.D. Cal.) (Aug 7 2026).pdf"
+    "label": "N.D. Cal. Intake Packet (print copy) - Ngwa Nforbi v. Candelaria & Gordon (Aug 7 2026)",
+    "path": "/documents/matter-33/ndcal/N.D. Cal. Intake Packet (print copy) - Ngwa Nforbi v. Candelaria & Gordon (Aug 7 2026).pdf"
   },
   {
     "matter": 33,
-    "label": "AO 440 Summons — Diana Candelaria (filled Aug. 7, 2026; serve at DMV Legal Affairs Division, Sacramento HQ — the complaint gives no office address for her; civil action number and clerk signature left blank for issuance)",
-    "path": "/documents/matter-33/AO 440 Summons - Diana Candelaria (N.D. Cal.) (Aug 7 2026).pdf"
+    "label": "JS 44 Civil Cover Sheet - Ngwa Nforbi v. Candelaria & Gordon (N.D. Cal.) (Aug 7 2026)",
+    "path": "/documents/matter-33/ndcal/JS 44 Civil Cover Sheet - Ngwa Nforbi v. Candelaria & Gordon (N.D. Cal.) (Aug 7 2026).pdf"
   },
   {
     "matter": 33,
-    "label": "AO 440 Summons — Steve Gordon (filled Aug. 7, 2026; serve at DMV Legal Affairs Division, Sacramento HQ, official capacity; civil action number and clerk signature left blank for issuance)",
-    "path": "/documents/matter-33/AO 440 Summons - Steve Gordon (N.D. Cal.) (Aug 7 2026).pdf"
+    "label": "AO 440 Summons - Diana Candelaria (N.D. Cal.) (Aug 7 2026)",
+    "path": "/documents/matter-33/ndcal/AO 440 Summons - Diana Candelaria (N.D. Cal.) (Aug 7 2026).pdf"
   },
   {
     "matter": 33,
-    "label": "Consent to Magistrate Judge Jurisdiction — N.D. Cal. (28 U.S.C. § 636(c); CONSENT box checked, dated Aug. 7, 2026; signature line left blank for Plaintiff's wet signature; case number blank pending assignment, due within 14 days of case initiation)",
-    "path": "/documents/matter-33/Consent to Magistrate Judge Jurisdiction - Ngwa Nforbi v. Candelaria & Gordon (N.D. Cal.) (Aug 7 2026).pdf"
+    "label": "AO 440 Summons - Steve Gordon (N.D. Cal.) (Aug 7 2026)",
+    "path": "/documents/matter-33/ndcal/AO 440 Summons - Steve Gordon (N.D. Cal.) (Aug 7 2026).pdf"
   },
   {
     "matter": 33,
-    "label": "N.D. Cal. Intake Packet — print copy (JS 44 + both AO 440 summonses + Consent form, 7 pp., field values flattened into the page content for printing)",
-    "path": "/documents/matter-33/N.D. Cal. Intake Packet (print copy) - Ngwa Nforbi v. Candelaria & Gordon (Aug 7 2026).pdf"
+    "label": "Consent to Magistrate Judge Jurisdiction - Ngwa Nforbi v. Candelaria & Gordon (N.D. Cal.) (Aug 7 2026)",
+    "path": "/documents/matter-33/ndcal/Consent to Magistrate Judge Jurisdiction - Ngwa Nforbi v. Candelaria & Gordon (N.D. Cal.) (Aug 7 2026).pdf"
+  },
+  {
+    "matter": 33,
+    "label": "Complaint Ngwa Nforbi v Candelaria and Gordon NDCal",
+    "path": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal.pdf"
+  },
+  {
+    "matter": 33,
+    "label": "Complaint Ngwa Nforbi v Candelaria and Gordon NDCal 2",
+    "path": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal 2.pdf"
+  },
+  {
+    "matter": 33,
+    "label": "CHP Arrest Report (Case RJ68845)",
+    "path": "/documents/matter-33/incident/Arrest Report.pdf"
+  },
+  {
+    "matter": 33,
+    "label": "[M1] Centerline Wage Reference",
+    "path": "/documents/matter-33/incident/Centerline Wage Reference.pdf"
+  },
+  {
+    "matter": 33,
+    "label": "DMV Driver Record — Discovery Production (Dec. 4, 2024)",
+    "path": "/documents/matter-33/incident/DAD 2024-12-04.pdf"
+  },
+  {
+    "matter": 33,
+    "label": "DMV Notification of Discovery — APS Hearing Packet (Dec. 4, 2024)",
+    "path": "/documents/matter-33/incident/DS2044 Notification of Discovery 34739340.pdf"
+  },
+  {
+    "matter": 33,
+    "label": "CHP Discovery Response",
+    "path": "/documents/matter-33/incident/Discovery-Response.pdf"
+  },
+  {
+    "matter": 33,
+    "label": "CHP Video Transcript (Exhibit A)",
+    "path": "/documents/matter-33/incident/Exhibit_A_CHP_Video_Transcript.pdf"
+  },
+  {
+    "matter": 33,
+    "label": "CHP Officer's Statement — Chemical Test Admonition (DS 367) (Nov. 1, 2024)",
+    "path": "/documents/matter-33/incident/ds367 ngwanforbi f7953179.pdf"
+  },
+  {
+    "matter": 33,
+    "label": "[M7] CHP Dashcam Transcript (00:54:36–01:57:10, CAD No. 241101GG0064)",
+    "path": "/documents/matter-33/from-07/CHP Transcript.pdf"
+  },
+  {
+    "matter": 33,
+    "label": "[M7] DMV Administrative Per Se Decision (Case 34739340, February 11, 2025, Hearing Officer Diana Candelaria)",
+    "path": "/documents/matter-33/from-07/DMV Decision.pdf"
+  },
+  {
+    "matter": 33,
+    "label": "[M7] Exhibit A Cover — DMV APS Decision (Case 34739340)",
+    "path": "/documents/matter-33/from-07/Exhibit A Cover DMV Decision.pdf"
+  },
+  {
+    "matter": 33,
+    "label": "[M7] Exhibit B Cover — Dairyland SR-22 Insurance",
+    "path": "/documents/matter-33/from-07/Exhibit B Cover Dairyland SR22.pdf"
+  },
+  {
+    "matter": 33,
+    "label": "[M7] Exhibit C Cover — CHP Dashcam Transcript",
+    "path": "/documents/matter-33/from-07/Exhibit C Cover CHP Dashcam Transcript.pdf"
+  },
+  {
+    "matter": 33,
+    "label": "[M7] First Amended Complaint (Apr. 27, 2026)",
+    "path": "/documents/matter-33/from-07/FAC Candelaria.pdf"
+  },
+  {
+    "matter": 33,
+    "label": "[M7] Original Complaint — Newanforbi v. Candelaria",
+    "path": "/documents/matter-33/from-07/Newanforbi v. Candelaria.pdf"
+  },
+  {
+    "matter": 33,
+    "label": "[M7] Notice of Change of Address (filed July 7, 2026)",
+    "path": "/documents/matter-33/from-07/Notice of Change of Address (July 7, 2026).pdf"
+  },
+  {
+    "matter": 33,
+    "label": "[M7] Notice of Supplemental Authority — Serrato Order, ELECTRONICALLY FILED (Document 9, Jul. 9, 2026)",
+    "path": "/documents/matter-33/from-07/Notice of Supplemental Authority - Serrato Order - ELECTRONICALLY FILED Jul 9 2026.pdf"
+  },
+  {
+    "matter": 33,
+    "label": "[M7] Notice of Supplemental Authority — Serrato Order, draft (superseded by the electronically filed version below)",
+    "path": "/documents/matter-33/from-07/Notice of Supplemental Authority - Serrato Order - July 7 2026.pdf"
+  },
+  {
+    "matter": 33,
+    "label": "[M7] Objections to Findings & Recommendations (BOLSTERED 3)",
+    "path": "/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf"
+  },
+  {
+    "matter": 33,
+    "label": "[M7] Supplemental Declaration (Newanforbi v. Candelaria, FAC)",
+    "path": "/documents/matter-33/from-07/Supplemental Declaration Newanforbi v Candelaria.pdf"
+  },
+  {
+    "matter": 33,
+    "label": "[M8] Civil Case Cover Sheet CM-010, electronically filed (May 18, 2026)",
+    "path": "/documents/matter-33/from-08/Civil Case Cover Sheet CM-010 (electronically filed May 18 2026).pdf"
+  },
+  {
+    "matter": 33,
+    "label": "[M8] Court Minutes (Jul. 17, 2026) and Civil Case Cover Sheet CM-010, pp. 2-3",
+    "path": "/documents/matter-33/from-08/Court Minutes (Jul 17 2026) and Civil Case Cover Sheet CM-010 pp.2-3.pdf"
+  },
+  {
+    "matter": 33,
+    "label": "[M8] Court Minutes — Fee Waiver Hearing DENIED, non-appearance (Jul. 17, 2026)",
+    "path": "/documents/matter-33/from-08/Court Minutes - Fee Waiver Hearing DENIED, Non-Appearance (Jul 17 2026).pdf"
+  },
+  {
+    "matter": 33,
+    "label": "[M8] Verified Petition for Writ of Administrative Mandate (May 18, 2026)",
+    "path": "/documents/matter-33/from-08/Newanforbi v. Candelaria Mandamus.pdf"
+  },
+  {
+    "matter": 33,
+    "label": "[M8] Notice of Change of Address (filed July 7, 2026)",
+    "path": "/documents/matter-33/from-08/Notice of Change of Address (July 7, 2026).pdf"
+  },
+  {
+    "matter": 33,
+    "label": "[M8] Order on Court Fee Waiver After Hearing — FW-008, denied for non-appearance (Jul. 17, 2026)",
+    "path": "/documents/matter-33/from-08/Order on Court Fee Waiver After Hearing - FW-008 (Jul 17 2026).pdf"
+  },
+  {
+    "matter": 33,
+    "label": "Magistrate Judge's Findings & Recommendations — IFP Denial and Dismissal Without Leave to Amend (ECF No. 6, Jun. 15, 2026)",
+    "path": "/documents/matter-33/opinions/Newanforbi v Candelaria - USDC EDCal - FR Recommending Dismissal Jun 15 2026.pdf"
   }
 ]
