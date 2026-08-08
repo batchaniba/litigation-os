@@ -181,7 +181,6 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
 .route-loading, .empty-state, .error-state { display: grid; place-items: center; min-height: 240px; padding: 32px; text-align: center; font-family: var(--font-sans); }
 .route-loading::before { content: ""; width: 24px; height: 24px; border: 2px solid rgb(200 168 75 / 25%); border-top-color: var(--gold); border-radius: 50%; animation: spin .8s linear infinite; }
 .back-link { color: var(--gold); font-family: var(--font-sans); font-size: 13px; font-weight: 700; text-decoration: none; }
-.detail-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
 .detail-section { margin-top: 22px; }
 .detail-label { color: var(--gold); font-family: var(--font-sans); font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px; }
 .detail-copy { font-family: var(--font-sans); font-size: 13px; line-height: 1.65; margin: 0; }
@@ -415,8 +414,7 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
 .save-view-form button, .matter-actions button { border: 1px solid rgb(200 168 75 / 35%); border-radius: 6px; background: rgb(200 168 75 / 10%); color: var(--gold); cursor: pointer; padding: 7px 10px; font-family: var(--font-sans); font-size: 10px; font-weight: 700; }
 .save-view-form button:disabled { cursor: not-allowed; opacity: .4; }
 .sort-control { display: flex; align-items: center; gap: 8px; white-space: nowrap; font-family: var(--font-sans); font-size: 10px; text-transform: uppercase; }
-.matter-actions { display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex-wrap: wrap; margin-top: -24px; }
-.matter-actions a { color: var(--gold); font-family: var(--font-sans); font-size: 10px; font-weight: 700; text-decoration: none; }
+.matter-actions { display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex-wrap: wrap; }
 .matter-summary { display: grid; grid-template-columns: .8fr 1.4fr .7fr 1.4fr; gap: 0; margin: 0 0 26px; overflow: hidden; border: 1px solid var(--card-border); border-radius: 10px; background: var(--card-bg); }
 .matter-summary-item { min-width: 0; padding: 14px 16px; border-right: 1px solid rgb(148 163 184 / 15%); font-family: var(--font-sans); font-size: 11px; line-height: 1.5; }
 .matter-summary-item:last-child { border-right: 0; }
@@ -481,7 +479,6 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
 .dashboard-jurisdiction-count { color: var(--heading); font-family: "Cormorant Garamond", Georgia, serif; font-size: 24px; font-weight: 700; }
 
 /* Matter detail */
-.matter-detail-header { margin: 22px 0; padding-bottom: 20px; border-bottom: 1px solid var(--card-border); }
 .matter-detail-title { margin: 0 0 8px; color: var(--heading); font-size: 32px; }
 .detail-copy-secondary { color: var(--secondary-text); }
 .detail-copy-muted { color: var(--muted-text); }
@@ -497,6 +494,49 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
 .document-group { background: var(--card-bg); border-color: var(--card-border); }
 .document-list a { color: var(--secondary-text); }
 .document-type { color: var(--gold); }
+
+/* Matter detail page shell.
+   The page used to be a flat run of labelled prose sitting straight on the
+   background — the only page in the app that wasn't panelled. Everything below
+   is scoped to .matter-page so the shared .detail-* classes keep behaving as
+   they do on the matters list, the cross-matter tab and the deadline
+   calculator, which all use them too. */
+.matter-page { display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 0 32px; align-items: start; }
+.matter-page-back { grid-column: 1 / -1; justify-self: start; margin-bottom: 20px; }
+.matter-page-main { display: flex; flex-direction: column; gap: 20px; min-width: 0; }
+
+.matter-rail { position: sticky; top: 20px; }
+.matter-rail .detail-label { padding-left: 12px; }
+.matter-rail ul { display: flex; flex-direction: column; gap: 2px; margin: 0; padding: 0; list-style: none; }
+.matter-rail a { display: block; padding: 7px 10px; border-left: 2px solid var(--card-border); color: var(--muted-text); font-family: var(--font-sans); font-size: 12px; font-weight: 600; text-decoration: none; transition: color .15s ease, border-color .15s ease, background .15s ease; }
+.matter-rail a:hover, .matter-rail a:focus-visible { border-left-color: var(--gold); background: rgb(200 168 75 / 8%); color: var(--gold); }
+
+/* Same card recipe as .dashboard-stat-card / .dashboard-panel. */
+.matter-hero, .matter-page .matter-panel, .matter-page .xm-panel { overflow: hidden; padding: 24px; border: 1px solid var(--card-border); border-radius: var(--radius-card); background: var(--card-bg); scroll-margin-top: 20px; }
+
+.matter-hero { padding-bottom: 0; }
+.matter-hero-top { display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 20px; }
+/* Long captions would otherwise claim the whole row on their max-content width
+   and bump the actions onto a line of their own. */
+.matter-hero-identity { flex: 1 1 340px; min-width: 0; }
+.matter-hero-top .matter-actions { flex: 0 0 auto; }
+/* The at-a-glance strip becomes the hero's footer rather than a second box
+   stacked under it saying closely related things. */
+.matter-hero .matter-summary { margin: 22px -24px 0; border-width: 1px 0 0; border-radius: 0; background: var(--deep-bg); }
+.matter-page .matter-detail-title { margin: 0 0 8px; font-size: 30px; line-height: 1.15; }
+.matter-page .matter-detail-badges { margin-top: 16px; }
+
+.matter-panel-title, .matter-page .xm-panel > .detail-label { position: relative; margin: 0; padding-left: 12px; color: var(--heading); font-family: var(--font-sans); font-size: 15px; font-weight: 700; letter-spacing: .4px; text-transform: none; }
+.matter-panel-title::before, .matter-page .xm-panel > .detail-label::before { content: ""; position: absolute; inset: 2px auto 2px 0; width: 3px; border-radius: 2px; background: var(--gold); }
+
+.matter-facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0 24px; }
+.matter-page .detail-section { margin-top: 20px; }
+.matter-page .detail-copy { font-size: 14px; }
+.matter-page .detail-label { font-size: 11px; letter-spacing: 1.6px; }
+/* Cards are spaced by the main column's flex gap, so they carry no margin of
+   their own. Must stay after the .detail-section rule above — .xm-panel is also
+   a .detail-section, and the two selectors have equal specificity. */
+.matter-page-main > .matter-hero, .matter-page-main > .matter-panel, .matter-page-main > .xm-panel { margin: 0; }
 
 /* Service tracker (matter detail) */
 .service-tracker { margin-top: 18px; }
@@ -572,6 +612,49 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
   .coverage-tower-panel .coverage-tower-source { color: #374151 !important; }
   .coverage-tower-panel .coverage-tower-bar { border: 0.5pt solid #6b7280; background: white !important; }
   .coverage-tower-panel .coverage-tower-bar-fill { background: #111827 !important; }
+
+  /* A printed matter page is a document taken into a conference, not a web
+     page: drop the rail and the card chrome and let the sections flow. */
+  .matter-page { display: block; }
+  .matter-page-back { display: none; }
+  .matter-hero, .matter-page .matter-panel, .matter-page .xm-panel {
+    overflow: visible;
+    break-inside: avoid;
+    margin: 0 0 18px !important;
+    padding: 0;
+    border: 0;
+    background: none !important;
+  }
+  .matter-hero .matter-summary { margin: 16px 0 0; border: 1pt solid #9ca3af; background: none !important; }
+  .matter-hero .matter-summary-item { border-right-color: #9ca3af; }
+
+  /* The theme tokens are all light-on-dark, and `color` on #main-content can't
+     reach descendants that declare their own. Everything that carries a colour
+     of its own has to be restated for paper. */
+  .matter-page .matter-detail-title,
+  .matter-page .detail-copy,
+  .matter-page .matter-summary-value,
+  .matter-page .matter-summary-value.accent,
+  .matter-page .xm-peer-title,
+  .matter-page .xm-exposure-label,
+  .matter-page .xm-foundation-label,
+  .matter-page .xm-party-name,
+  .matter-page .document-list a { color: #111827 !important; }
+  .matter-page .detail-label,
+  .matter-panel-title,
+  .matter-page .xm-panel > .detail-label,
+  .matter-page .xm-subhead,
+  .matter-page .xm-relationship,
+  .matter-page .xm-sources { color: #374151 !important; }
+  /* Damages and risk stay distinguishable on paper without the neon. */
+  .matter-page .matter-detail-damages { color: #065f46 !important; }
+  .matter-page .matter-detail-risk { color: #92400e !important; }
+  .matter-page .matter-detail-pill,
+  .matter-page .xm-kind,
+  .matter-page .xm-matter-chip { border: 0.5pt solid #9ca3af !important; background: none !important; color: #111827 !important; }
+  .matter-page .document-group { border-color: #9ca3af; background: none !important; }
+  .matter-page .document-group > summary,
+  .matter-page .document-type { color: #374151 !important; }
 }
 
 @media (max-width: 1180px) {
@@ -587,6 +670,17 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
 
 @media (max-width: 980px) {
   main table { display: block; max-width: 100%; overflow-x: auto; }
+
+  /* The rail stops being a rail: it turns into a scrollable chip row above the
+     hero, so the section jumps survive on a tablet or phone. */
+  .matter-page { display: block; }
+  .matter-page-back { display: inline-block; }
+  .matter-rail { position: static; margin-bottom: 16px; }
+  .matter-rail .detail-label { padding-left: 0; }
+  .matter-rail ul { flex-direction: row; gap: 8px; overflow-x: auto; padding-bottom: 4px; }
+  .matter-rail a { flex: 0 0 auto; padding: 6px 12px; border: 1px solid var(--card-border); border-radius: 999px; white-space: nowrap; }
+  .matter-rail a:hover, .matter-rail a:focus-visible { border-color: var(--gold); }
+
   .matter-summary { grid-template-columns: 1fr 1fr; }
   .matter-summary-item:nth-child(2) { border-right: 0; }
   .matter-summary-item { border-bottom: 1px solid rgb(148 163 184 / 15%); }
@@ -695,7 +789,7 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
   .legacy-deadline-row { justify-content: flex-start; padding: 10px 76px 10px 16px; gap: 14px; }
   .legacy-deadline-display { justify-content: flex-start; gap: 14px; width: 100%; }
   .legacy-deadline-description { text-align: left; }
-  .detail-grid, .grid-2, .grid-3 { grid-template-columns: 1fr; }
+  .grid-2, .grid-3 { grid-template-columns: 1fr; }
   .calendar-cell { min-height: 56px; padding: 4px !important; }
   .calendar-nav-button, .calendar-today-button { min-width: 44px; min-height: 44px; }
   .legacy-deadline-toggle { min-width: 56px; min-height: 44px; }
@@ -734,7 +828,10 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
   .matter-view-controls { flex-direction: column; }
   .saved-views, .sort-control { width: 100%; }
   .sort-control { justify-content: space-between; }
-  .matter-actions { justify-content: flex-start; margin-top: 12px; }
+  .matter-actions { justify-content: flex-start; }
+  .matter-hero, .matter-page .matter-panel, .matter-page .xm-panel { padding: 18px; }
+  .matter-hero .matter-summary { margin: 18px -18px 0; }
+  .matter-page .matter-detail-title { font-size: 25px; }
   .matter-summary { grid-template-columns: 1fr; }
   .matter-summary-item, .matter-summary-item:nth-child(2), .matter-summary-item:nth-last-child(-n+2) { border-right: 0; border-bottom: 1px solid rgb(148 163 184 / 15%); }
   .matter-summary-item:last-child { border-bottom: 0; }
