@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import { CollapsibleProse } from "../ui/CollapsibleProse";
 import { getMatterSummary } from "../../data/matters";
 import { ROUTES } from "../../routes";
 import {
@@ -42,7 +43,10 @@ export function CrossMatterPanel({ matter }: CrossMatterPanelProps) {
                   Matter {peer.number}
                   {summary ? ` — ${summary.caption}` : ""}
                 </Link>
-                <span className="xm-relationship">{peer.relationship}</span>
+                <span className="xm-relationship">
+                  <span className={`xm-severity xm-severity-${peer.severity}`}>{peer.severity}</span>
+                  {peer.relationship}
+                </span>
               </div>
               <div className="xm-kinds">
                 {peer.kinds.map((kind) => (
@@ -51,11 +55,16 @@ export function CrossMatterPanel({ matter }: CrossMatterPanelProps) {
                   </span>
                 ))}
               </div>
-              {peer.significance.split("\n\n").map((paragraph) => (
-                <p key={paragraph.slice(0, 32)} className="detail-copy detail-copy-muted">
-                  {paragraph}
-                </p>
-              ))}
+              {/* Same clamp the matter's own key facts get. Cross-matter prose
+                  should not out-rank the matter it sits on. pre-line keeps the
+                  paragraph breaks that the old split produced. */}
+              <CollapsibleProse
+                text={peer.significance}
+                label={`significance for Matter ${peer.number}`}
+                className="detail-copy-muted"
+                style={{ whiteSpace: "pre-line" }}
+                lines={5}
+              />
               <ul className="xm-sources">
                 {peer.sources.map((source) => (
                   <li key={source}>{source}</li>
@@ -93,37 +102,43 @@ export function CrossMatterPanel({ matter }: CrossMatterPanelProps) {
         </>
       )}
 
-      <div className="xm-grid">
-        <div>
-          <div className="xm-subhead">Shared evidentiary foundation</div>
-          <ul className="xm-foundation-list">
-            {foundation.map((item) => (
-              <li key={item.id}>
-                <span className="xm-foundation-label">{item.label}</span>
-                <span className="xm-foundation-count">
-                  {item.matters.length} matter{item.matters.length === 1 ? "" : "s"}
-                </span>
-                <p className="detail-copy detail-copy-muted">{item.detail}</p>
-              </li>
-            ))}
-          </ul>
+      <details className="xm-reference">
+        <summary>
+          <span>Shared foundation and overlapping parties</span>
+          <span>{foundation.length + parties.length}</span>
+        </summary>
+        <div className="xm-grid">
+          <div>
+            <div className="xm-subhead">Shared evidentiary foundation</div>
+            <ul className="xm-foundation-list">
+              {foundation.map((item) => (
+                <li key={item.id}>
+                  <span className="xm-foundation-label">{item.label}</span>
+                  <span className="xm-foundation-count">
+                    {item.matters.length} matter{item.matters.length === 1 ? "" : "s"}
+                  </span>
+                  <p className="detail-copy detail-copy-muted">{item.detail}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <div className="xm-subhead">Overlapping parties</div>
+            <ul className="xm-party-list">
+              {parties.map((party) => (
+                <li key={party.name}>
+                  <span className="xm-party-name">{party.name}</span>
+                  <p className="detail-copy detail-copy-muted">{party.role}</p>
+                  <p className="detail-copy detail-copy-subtle">
+                    Defendant in: {party.defendantIn.length ? party.defendantIn.join(", ") : "none"} ·
+                    Factual role in: {party.factualIn.length ? party.factualIn.join(", ") : "none"}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
-        <div>
-          <div className="xm-subhead">Overlapping parties</div>
-          <ul className="xm-party-list">
-            {parties.map((party) => (
-              <li key={party.name}>
-                <span className="xm-party-name">{party.name}</span>
-                <p className="detail-copy detail-copy-muted">{party.role}</p>
-                <p className="detail-copy detail-copy-subtle">
-                  Defendant in: {party.defendantIn.length ? party.defendantIn.join(", ") : "none"} ·
-                  Factual role in: {party.factualIn.length ? party.factualIn.join(", ") : "none"}
-                </p>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
+      </details>
     </section>
   );
 }
