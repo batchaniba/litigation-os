@@ -169,11 +169,11 @@ export const lawyer_fees = [
   {
     number: 19, caption: "Newanforbi v. Macomber", caseNumber: "C2604791",
     court: "Santa Clara Sup. Ct.", type: "Habeas Corpus — Immediate Discharge from Parole (Pen. Code §1473; PC §§3000, 3001, 3008(d)(2); 15 CCR §3574)",
-    status: "Active — Filed 04/03/2026; OSC anticipated 06/05/2026",
-    documentsCount: 3, totalPagesReal: 70,
-    hours: { low: 41, high: 73, mid: 57 },
-    cost: { low: 11480, high: 20440, mid: 15960 },
-    notes: "Companion matter to Matters 9, 10, and 11 (same administrative record); targets the parole term itself rather than treatment compulsion. The 67-page petition is unusually dense for a habeas filing (5 causes of action, 6 exhibits, extensive regulatory/case-law analysis re: In re Gadlin, In re Leman, ACSOL v. Macomber), justifying the top of the 40-70 hr specialized-habeas range. True-up increment: Notice of Change of Address present on disk but not previously counted, billed at a flat administrative rate."
+    status: "Active — Filed 04/03/2026; Aug. 1 ruling deadline lapsed; HC-004 ready to file Aug. 7, 2026",
+    documentsCount: 4, totalPagesReal: 72,
+    hours: { low: 43, high: 77, mid: 60 },
+    cost: { low: 12040, high: 21560, mid: 16800 },
+    notes: "Companion matter to Matters 9, 10, and 11 (same administrative record); targets the parole term itself rather than treatment compulsion. The 67-page petition is unusually dense for a habeas filing (5 causes of action, 6 exhibits, extensive regulatory/case-law analysis re: In re Gadlin, In re Leman, ACSOL v. Macomber), justifying the top of the 40-70 hr specialized-habeas range. True-up: Notice of Change of Address (admin) plus HC-004 Notice and Request for Ruling packet prepared Aug. 7, 2026 — only the HC-004 cover pages are new billable work (petition pages inside the packet are the same 67 pp. already counted; billed at flat administrative/form-fill rate, not habeas redraft)."
   },
   {
     number: 20, caption: "Newanforbi v. California Highway Patrol, et al.", caseNumber: "26CV191136",
@@ -257,13 +257,13 @@ export const lawyer_fees = [
     notes: "Seven documents totaling 77 real pages (corrected from a 53-page estimate — several documents ran longer than originally guessed): 24-page federal complaint (the dominant cost driver — novel theory development across RICO, §1983 Monell, individual-capacity §1983, Bane Act, and fraud/negligent misrepresentation in a single pleading; hours are elevated accordingly); 10-page Motion for Protective Order; 6-page supporting Declaration (billed per-document, not per-page, per methodology); state court Stipulated Protective Order as Exhibit A (12 pages); 12-page Proposed NDCA Protective Order; 11-page signed state Stipulated PO; 2-page PACER docket sheet confirming case filing and docket activity, billed at a nominal administrative-monitoring rate. Hours reflect drafting a complex multi-theory federal complaint from scratch leveraging 542 pages of discovery already produced in the dismissed state case, plus preparation of the contemporaneous protective-order motion package — now correctly priced against the actual, longer motion and proposed-order page counts. Fee-shifting under §1988 and RICO makes attorney fee recovery highly probable if Plaintiff prevails."
   },
   {
-    number: 29, caption: "Newanforbi v. Amazon.com Services, LLC", caseNumber: "TBD — e-filed Jul. 28, 2026, awaiting court acceptance/case number assignment",
-    court: "Alameda County Superior Court, Oakland Civil",
+    number: 29, caption: "Newanforbi v. Amazon.com Services, LLC", caseNumber: "26CV201554",
+    court: "Alameda County Superior Court, Hayward Hall of Justice",
     type: "State — PC §290.46(j) / FCRA / ICRAA / Failure to Hire",
-    status: "CASE FILED July 28, 2026 — e-filed via One Legal (Confirmation #35236062); court acceptance and case number assignment pending",
-    documentsCount: 16, totalPagesReal: 54,
-    hours: { low: 76, high: 127, mid: 101.5 },
-    cost: { low: 21280, high: 35560, mid: 28420 },
+    status: "CASE FILED July 28, 2026 — Case No. 26CV201554; Accurate Background POS-010 received (service Jul. 31; declaration Aug. 5, 2026)",
+    documentsCount: 17, totalPagesReal: 56,
+    hours: { low: 76.5, high: 128, mid: 102.25 },
+    cost: { low: 21420, high: 35840, mid: 28630 },
     notes: "Substantial increment now that the complaint has actually been e-filed. Five new documents since the pre-filing estimate (16 total, 54 real pages, +35 pages): the 27-page Verified Complaint (7 causes of action) is the dominant new cost driver, billed at the standard 2–3 hr/page major-pleading rate ($54–81 hrs alone); the 3-page CM-010 Civil Case Cover Sheet, 1-page SUM-100 Summons, 2-page FW-001 Request to Waive Court Fees, and 2-page One Legal Order Receipt (eFiling Confirmation #35236062, Filing Order #28857032) are billed as light administrative/procedural tasks (0.5–2 hr/doc), consistent with how the equivalent e-filing packet was priced in Matter 27. Prior 11-document, 19-page pre-filing base (Amazon Simple Hire Checklists, BGC-status emails, Equifax reminder, and application/appointment screenshots) carries forward unchanged. Court acceptance, case number assignment, and service (two defendants — Amazon.com Services, LLC via CSC – Lawyers Incorporating Service in Sacramento County, and Accurate Background LLC via CT Corporation System in Los Angeles County, per the Lerma docket) will each add a further increment; two draft SER-001 Sheriff service request forms have been prepared but not yet executed or filed, so they are not yet counted here. Fee-shifting under PC §290.46(j)(4)(A), FCRA, and ICRAA applies upon prevailing."
   },
   {
@@ -286,41 +286,41 @@ export const lawyer_fees = [
     notes: "No new PDFs — the evidentiary basis (First Advantage's pre-adverse/adverse notices for both the UPS and FedEx sequences) is already measured and billed under Matters 26 and 25 respectively; counting those pages again here would double-count real work already priced elsewhere. Estimated instead from matters.js status text as a single-defendant vendor-liability complaint of moderate complexity: five causes of action (two FCRA provisions, ICRAA, negligence per se, UCL) drafted from an existing fact pattern rather than fresh investigation, roughly comparable in scope to Matter 8's single-document writ estimate. No motion practice, discovery, or service costs included since nothing has been filed."
   },
   {
-    number: 32, caption: "Ngwa Nforbi v. Meza-Gonzalez, et al", caseNumber: "TBD",
-    court: "TBD (CHP-cluster PDF home for Matters 1/2/20/24; Matter 2 is the filed Alameda Meza-Gonzalez action)", type: "State — Nov. 1, 2024 CHP cluster document store",
-    status: "Opened Aug. 7, 2026 — owns PDFs relocated from Matters 1, 2, 20, and 24; Nov. 1 / Candelaria APS set moved to Matter 33; no independent complaint filed",
-    documentsCount: 73, totalPagesReal: 731,
-    hours: { low: 0, high: 0, mid: 0 },
-    cost: { low: 0, high: 0, mid: 0 },
-    notes: "Owns 73 PDFs / 731 pages (pypdf) under matter-32/from-01|02|20|24/. Drafting/review hours for those filings remain attributed to source Matters 1, 2, 20, and 24. The previously billed 47-page Nov. 1 incident evidence set and Matter 7 Candelaria PDFs were relocated to Matter 33 on August 7, 2026 — that evidence-compilation fee line transferred with them. Matter 32's fee line is $0 to avoid double-counting."
+    number: 32, caption: "Ngwa Nforbi v. Meza-Gonzalez, et al", caseNumber: "TBD (N.D. Cal. ready to file)",
+    court: "USDC N.D. Cal. (also CHP-cluster PDF home for Matters 1/2/20/24)", type: "Federal — § 1983 (N.D. Cal.) + Nov. 1, 2024 CHP cluster document store",
+    status: "N.D. Cal. complaint ready to file Aug. 7, 2026 — operative v3 + intake packet; also owns PDFs from Matters 1/2/20/24",
+    documentsCount: 78, totalPagesReal: 808,
+    hours: { low: 48, high: 72, mid: 60 },
+    cost: { low: 13440, high: 20160, mid: 16800 },
+    notes: "NEW billable work is the Aug. 7, 2026 N.D. Cal. filing set under ndcal/ (77 pages): operative Complaint v3 (20 pp) at major-pleading 2.0–2.5 hr/page, plus revision credit for superseded drafts v1/v2 (not full rebill of 49 draft pages), plus intake packet / wage-exhibit admin (2–4 hrs). Relocated from-01|02|20|24/ PDFs (731 pp) remain attributed to source Matters 1, 2, 20, and 24 at $0 here to avoid double-counting. Nov. 1 / Candelaria APS evidence lives in Matter 33."
   },
   {
-    number: 33, caption: "Newanforbi v. Candelaria (DMV APS / Nov. 1, 2024)", caseNumber: "TBD",
-    court: "TBD (Candelaria / DMV APS PDF home; Matter 7 is the live federal action; Matter 8 abandoned)", type: "Federal — Candelaria / DMV APS document store",
-    status: "Opened Aug. 7, 2026 — owns Nov. 1 / APS incident evidence, Matter 7 Candelaria PDFs, Matter 8 mandamus PDFs, and the June 15, 2026 Candelaria F&R; no independent complaint filed",
-    documentsCount: 26, totalPagesReal: 312,
-    hours: { low: 18, high: 40, mid: 29 },
-    cost: { low: 5040, high: 11200, mid: 8120 },
-    notes: "Owns 26 PDFs / 312 pages (pypdf): 7 Nov. 1 / APS incident files under matter-33/incident/ (48 pages including Centerline wage reference), 12 Matter 7 Candelaria federal PDFs under from-07/, 6 Matter 8 mandamus PDFs under from-08/, and the 10-page June 15, 2026 Candelaria F&R under opinions/. Drafting/review hours for from-07 and from-08 filings remain attributed to Matters 7 and 8 — re-billing those pages here would double-count. Matter 33's fee line covers the previously unowned Nov. 1 / APS incident evidence set at evidence-compilation rates (transferred from Matter 32)."
+    number: 33, caption: "Newanforbi v. Candelaria (DMV APS / Nov. 1, 2024)", caseNumber: "TBD (N.D. Cal. ready to file; prior E.D. Cal. 2:26-cv-00983)",
+    court: "USDC N.D. Cal. (also Candelaria / DMV APS PDF home; Matter 7 prior E.D. Cal.; Matter 8 abandoned)", type: "Federal — § 1983 APS / N.D. Cal. refile + document store",
+    status: "N.D. Cal. complaint ready to file Aug. 7, 2026 — operative v3 + intake packet; owns Nov. 1 / APS evidence and Matter 7/8 PDFs",
+    documentsCount: 30, totalPagesReal: 428,
+    hours: { low: 50, high: 94, mid: 72 },
+    cost: { low: 14000, high: 26320, mid: 20160 },
+    notes: "Combines (a) previously transferred Nov. 1 / APS incident evidence-compilation line (18–40 hrs mid 29) with (b) NEW Aug. 7, 2026 N.D. Cal. refile set under ndcal/ (116 pages): operative Complaint v3 (47 pp) billed below full 2–3 hr/page because it substantially reuses Matter 7 theory/work product (adaptation/venue rewrite ~30–50 hrs mid 40) plus intake admin (2–4 hrs). Drafting hours for from-07 / from-08 historical PDFs remain on Matters 7 and 8 — not re-billed here."
   },
 ];
 
 export const lawyer_fees_summary = {
-  analysisDate: "2026-08-07",
+  analysisDate: "2026-08-08",
   totalMatters: 33,
-  totalDocumentsAnalyzed: 315,
-  totalPagesReal: 3701,
+  totalDocumentsAnalyzed: 326,
+  totalPagesReal: 3898,
   methodology: {
     blendedHourlyRate: 280,
     rateRange: { seniorPartner: [350, 450], midAssociate: [250, 350], paralegal: [150, 200] },
-    note: "Every PDF in public/documents/matter-XX/ was measured with pdfinfo for real page counts (poppler-utils), then classified by document type (complaint, motion/opposition/reply, discovery, writ/habeas, declaration, administrative, evidence) and priced using the hours-per-page/per-document conversions in docs/LAWYER_FEES_CALCULATOR.md. Opposing counsel's filings are billed only at a light review rate, never at drafting rate. Matters with no uploaded PDFs are estimated conservatively from matters.js status text.",
+    note: "Every PDF in public/documents/matter-XX/ was measured with pdfinfo for real page counts (poppler-utils), then classified by document type (complaint, motion/opposition/reply, discovery, writ/habeas, declaration, administrative, evidence) and priced using the hours-per-page/per-document conversions in docs/LAWYER_FEES_CALCULATOR.md. Opposing counsel's filings are billed only at a light review rate, never at drafting rate. Matters with no uploaded PDFs are estimated conservatively from matters.js status text. Aug. 8, 2026 true-up: root N.D. Cal. Meza/Candelaria complaint+intake uploads fed into Matters 32/33; HC-004 packet into Matter 19; Accurate Background POS into Matter 29.",
   },
-  totalEstimatedHours: { low: 2774.3, high: 4598.2, mid: 3678.75 },
-  totalEstimatedCost: { low: 776804, high: 1287496, mid: 1030050 },
+  totalEstimatedHours: { low: 2856.8, high: 4729.2, mid: 3785.5 },
+  totalEstimatedCost: { low: 799904, high: 1324176, mid: 1059940 },
   byCluster: {
-    cluster1: { label: "CHP / DUI / DMV", matters: [1, 2, 7, 8, 20, 24, 32, 33], costLow: 139636, costMid: 185332, costHigh: 231028 },
+    cluster1: { label: "CHP / DUI / DMV", matters: [1, 2, 7, 8, 20, 24, 32, 33], costLow: 162036, costMid: 214172, costHigh: 266308 },
     cluster2: { label: "Parole Retaliation / HOPE", matters: [3, 4, 5, 6, 11, 13, 14, 15, 16, 17, 18, 21, 28, 30], costLow: 459312, costMid: 602392, costHigh: 749672 },
-    cluster3: { label: "Consumer Fraud / Employment", matters: [12, 22, 23, 25, 26, 27, 29, 31], costLow: 136836, costMid: 185290, costHigh: 233660 },
-    cluster4: { label: "Administrative Writs & Habeas", matters: [9, 10, 19], costLow: 41020, costMid: 57050, costHigh: 73080 },
+    cluster3: { label: "Consumer Fraud / Employment", matters: [12, 22, 23, 25, 26, 27, 29, 31], costLow: 136976, costMid: 185500, costHigh: 233940 },
+    cluster4: { label: "Administrative Writs & Habeas", matters: [9, 10, 19], costLow: 41580, costMid: 57890, costHigh: 74200 },
   },
 };
