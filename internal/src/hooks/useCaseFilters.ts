@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { useDebounce } from "./useDebounce";
 import { cases } from "../data/matters";
 import { matter_damages } from "../data/damages";
 import upcoming from "../data/upcoming.json";
@@ -30,6 +31,9 @@ export const useCaseFilters = (initial: Partial<MatterFilterState> = {}) => {
   const [typeFilter, setTypeFilter] = useState<string | null>(initial.type ?? null);
   const [searchQuery, setSearchQuery] = useState(initial.query ?? "");
   const [sortKey, setSortKey] = useState<MatterSortKey>(initial.sort ?? "number");
+  // The input stays immediate; only the filter pass waits, so typing never blocks
+  // on re-filtering and re-deriving status labels for the whole portfolio.
+  const debouncedQuery = useDebounce(searchQuery, 200);
 
   const filteredCases = useMemo(() => (cases as MatterSummary[]).filter((matter) => {
     if (statusFilter === "active" && isArchivedMatter(matter)) return false;
@@ -37,8 +41,8 @@ export const useCaseFilters = (initial: Partial<MatterFilterState> = {}) => {
     if (statusFilter === "upcoming" && !nextDeadlineByMatter.has(matter.number)) return false;
     if (clusterFilter && matter.cluster !== clusterFilter) return false;
     if (typeFilter && matter.type !== typeFilter) return false;
-    if (!searchQuery) return true;
-    const query = searchQuery.toLowerCase();
+    if (!debouncedQuery) return true;
+    const query = debouncedQuery.toLowerCase();
     return [matter.caption, matter.case_no, matter.court, matter.claims, matter.defendants, effectiveStatusLabel(matter), ...(matter.causes ?? [])]
       .some((value) => value?.toLowerCase().includes(query));
   }).sort((a, b) => {
@@ -48,7 +52,7 @@ export const useCaseFilters = (initial: Partial<MatterFilterState> = {}) => {
     if (sortKey === "court") return a.court.localeCompare(b.court);
     if (sortKey === "status") return effectiveStatusLabel(a).localeCompare(effectiveStatusLabel(b));
     return a.number - b.number;
-  }), [statusFilter, clusterFilter, typeFilter, searchQuery, sortKey]);
+  }), [statusFilter, clusterFilter, typeFilter, debouncedQuery, sortKey]);
 
   return {
     statusFilter, setStatusFilter, clusterFilter, setClusterFilter,
