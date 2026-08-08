@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fill the N.D. Cal. intake packet for Nforbi v. Meza-Gonzalez (Matter 32).
+"""Fill the N.D. Cal. intake packet for Ngwa Nforbi v. Meza-Gonzalez (Matter 32).
 
 Companion filings to the August 7, 2026 Complaint for Damages (42 U.S.C.
 § 1983) at documents/matter-32/:
@@ -104,14 +104,14 @@ DEFENDANTS_TO_SERVE = [
     },
 ]
 
-JS44_NAME = "JS 44 Civil Cover Sheet - Nforbi v. Meza-Gonzalez (N.D. Cal.) (Aug 7 2026).pdf"
+JS44_NAME = "JS 44 Civil Cover Sheet - Ngwa Nforbi v. Meza-Gonzalez (N.D. Cal.) (Aug 7 2026).pdf"
 CONSENT_NAME = (
     "Consent to Magistrate Judge Jurisdiction - "
-    "Nforbi v. Meza-Gonzalez (N.D. Cal.) (Aug 7 2026).pdf"
+    "Ngwa Nforbi v. Meza-Gonzalez (N.D. Cal.) (Aug 7 2026).pdf"
 )
 PACKET_NAME = (
     "N.D. Cal. Intake Packet (print copy) - "
-    "Nforbi v. Meza-Gonzalez (Aug 7 2026).pdf"
+    "Ngwa Nforbi v. Meza-Gonzalez (Aug 7 2026).pdf"
 )
 
 # ------------------------------------------------------------ field mappings

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fill the N.D. Cal. intake packet for Nforbi v. Candelaria & Gordon (Matter 33).
+"""Fill the N.D. Cal. intake packet for Ngwa Nforbi v. Candelaria & Gordon (Matter 33).
 
 Companion filings to the August 7, 2026 Complaint for Damages and for
 Declaratory and Injunctive Relief (42 U.S.C. § 1983; 28 U.S.C. §§ 2201, 2202;
@@ -116,14 +116,14 @@ DEFENDANTS_TO_SERVE = [
     },
 ]
 
-JS44_NAME = "JS 44 Civil Cover Sheet - Nforbi v. Candelaria & Gordon (N.D. Cal.) (Aug 7 2026).pdf"
+JS44_NAME = "JS 44 Civil Cover Sheet - Ngwa Nforbi v. Candelaria & Gordon (N.D. Cal.) (Aug 7 2026).pdf"
 CONSENT_NAME = (
     "Consent to Magistrate Judge Jurisdiction - "
-    "Nforbi v. Candelaria & Gordon (N.D. Cal.) (Aug 7 2026).pdf"
+    "Ngwa Nforbi v. Candelaria & Gordon (N.D. Cal.) (Aug 7 2026).pdf"
 )
 PACKET_NAME = (
     "N.D. Cal. Intake Packet (print copy) - "
-    "Nforbi v. Candelaria & Gordon (Aug 7 2026).pdf"
+    "Ngwa Nforbi v. Candelaria & Gordon (Aug 7 2026).pdf"
 )
 
 # ------------------------------------------------------------ field mappings
