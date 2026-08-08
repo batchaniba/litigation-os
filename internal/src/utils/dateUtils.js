@@ -41,9 +41,17 @@ const pacificOffsetAt = (date) => {
 // PST offset first, then re-anchors using the offset actually in force that day.
 // Midnight itself is never skipped or repeated by a US transition (both happen
 // at 2 a.m.), so one correction pass is always enough.
+const midnights = new Map();
+
 const pacificMidnight = (year, month, day) => {
-  const guess = new Date(Date.UTC(year, month - 1, day, 8, 0, 0));
-  return new Date(Date.UTC(year, month - 1, day, pacificOffsetAt(guess), 0, 0));
+  const key = year * 10000 + month * 100 + day;
+  let timestamp = midnights.get(key);
+  if (timestamp === undefined) {
+    const guess = new Date(Date.UTC(year, month - 1, day, 8, 0, 0));
+    timestamp = Date.UTC(year, month - 1, day, pacificOffsetAt(guess), 0, 0);
+    midnights.set(key, timestamp);
+  }
+  return new Date(timestamp);
 };
 
 /** Midnight Pacific on the day `date` falls on in Pacific time. */
@@ -52,6 +60,11 @@ export const getPDTMidnight = (date = new Date()) => {
   return pacificMidnight(f.year, f.month, f.day);
 };
 
+// The portfolio has ~300 distinct date strings and the status-label path parses
+// the same ones repeatedly, so results are memoised by input. Only the timestamp
+// is cached; each call gets its own Date, so a caller cannot poison the entry.
+const parsedDates = new Map();
+
 /**
  * Parse a timeline date string (e.g. "Mar. 27, 2026") as midnight Pacific time.
  * Strips a leading "~" (approximate date marker) before parsing. Returns an
@@ -59,9 +72,15 @@ export const getPDTMidnight = (date = new Date()) => {
  * Number.isFinite of the timestamp.
  */
 export const parseEventDatePDT = (dateStr) => {
+  const cached = parsedDates.get(dateStr);
+  if (cached !== undefined) return new Date(cached);
+
   const parsed = new Date(dateStr.replace(/^~/, "").replace(/\./g, ""));
-  if (Number.isNaN(parsed.getTime())) return parsed;
   // Read back the local fields the platform parsed, then re-anchor them to
   // Pacific midnight — the string carried a calendar day, not an instant.
-  return pacificMidnight(parsed.getFullYear(), parsed.getMonth() + 1, parsed.getDate());
+  const result = Number.isNaN(parsed.getTime())
+    ? parsed
+    : pacificMidnight(parsed.getFullYear(), parsed.getMonth() + 1, parsed.getDate());
+  parsedDates.set(dateStr, result.getTime());
+  return result;
 };
