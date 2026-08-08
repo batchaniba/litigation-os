@@ -1,6 +1,14 @@
 [
   {
     "date": "Aug. 7, 2026",
+    "event": "Drafted Notice of Voluntary Dismissal Without Prejudice for Matter 1 (Newanforbi v. CHP et al., 2:25-cv-01460-DC-CSK) under Fed. R. Civ. P. 41(a)(1)(A)(i) — entire action; self-executing upon filing; MTD under Rule 12(b)(6) does not cut off the right to dismiss; execution date Aug. 7, 2026; not yet e-filed",
+    "matters": "1",
+    "type": "filing",
+    "source": "/documents/matter-32/from-01/Notice of Voluntary Dismissal Without Prejudice (Aug 7 2026).pdf",
+    "upcoming": false
+  },
+  {
+    "date": "Aug. 7, 2026",
     "event": "Opened Matter 33 (Newanforbi v. Candelaria (DMV APS / Nov. 1, 2024)) as the document home for Candelaria / DMV APS materials tied to the November 1, 2024 CHP incident and the January 24, 2025 APS hearing; relocated 26 PDFs (~312 pages) into matter-33/incident/, from-07/, from-08/, and opinions/ (from Matter 32 root and from-07/, Matter 08, and documents/opinions/)",
     "matters": "33, 32, 7, 8",
     "type": "milestone"
