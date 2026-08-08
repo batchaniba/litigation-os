@@ -4,10 +4,10 @@
 
 export const PROSE_BUDGETS = {
   key_facts: { target: 350, ceiling: 1650 },
-  // Ratcheted down after Matter 22/25/26/27/29 docket-log trim (Aug 2026).
-  procedural_status: { target: 400, ceiling: 1640 },
+  // Ratcheted down after round-2 docket-log trim (Matters 3/5–8/12/20/24/28/30).
+  procedural_status: { target: 400, ceiling: 650 },
   risk: { target: 150, ceiling: 660 },
-  status: { target: 60, ceiling: 290 },
+  status: { target: 60, ceiling: 100 },
 };
 
 export const PROSE_FIELDS = Object.keys(PROSE_BUDGETS);
