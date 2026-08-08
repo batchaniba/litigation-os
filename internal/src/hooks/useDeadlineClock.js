@@ -7,17 +7,24 @@ const FREEZE_UNTIL_TS = +CLOCK_FREEZE_UNTIL;
 const FROZEN_STATE = { label: "Palacios Federal Default — 03/28/2026", days: 0, hours: 0, mins: 0, secs: 0, urgent: false, frozen: true };
 const NO_EVENTS_STATE = { label: "No upcoming deadlines", days: 0, hours: 0, mins: 0, secs: 0, urgent: false };
 
+// Seconds only matter while the countdown is on screen. When it is collapsed the
+// only thing read off this state is `urgent` (it tints the banner border), so a
+// minute is plenty and the app is not re-rendering once a second for digits
+// nobody can see.
+const VISIBLE_INTERVAL_MS = 1000;
+const HIDDEN_INTERVAL_MS = 60000;
+
 const sameState = (a, b) =>
   a.label === b.label && a.days === b.days && a.hours === b.hours &&
   a.mins === b.mins && a.secs === b.secs && a.urgent === b.urgent && !!a.frozen === !!b.frozen;
 
-export const useDeadlineClock = (upcomingEvents) => {
+export const useDeadlineClock = (upcomingEvents, visible = true) => {
   const [timeLeft, setTimeLeft] = useState({ label: "", days: 0, hours: 0, mins: 0, secs: 0, urgent: false, frozen: false });
 
   useEffect(() => {
     // Precompute event-derived values once per upcomingEvents change.
     const ev = upcomingEvents[0];
-    const eventLabel = ev ? ev.date + " \u2014 " + ev.event.slice(0, 55) : null;
+    const eventLabel = ev ? ev.date + " — " + ev.event.slice(0, 55) : null;
     const eventTargetTs = ev ? parseEventDatePDT(ev.date).getTime() + 17 * 3600 * 1000 : null;
 
     let cancelled = false;
@@ -59,12 +66,12 @@ export const useDeadlineClock = (upcomingEvents) => {
     };
 
     tick();
-    id = setInterval(tick, 1000);
+    id = setInterval(tick, visible ? VISIBLE_INTERVAL_MS : HIDDEN_INTERVAL_MS);
     return () => {
       cancelled = true;
       clearInterval(id);
     };
-  }, [upcomingEvents]);
+  }, [upcomingEvents, visible]);
 
   return timeLeft;
 };

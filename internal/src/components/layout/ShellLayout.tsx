@@ -2,7 +2,6 @@ import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } fro
 import { Outlet, useLocation } from "react-router";
 import upcoming from "../../data/upcoming.json";
 import { ThemeContext, THEMES } from "../../ThemeContext";
-import { useDeadlineClock } from "../../hooks/useDeadlineClock";
 import { PortfolioUIContext, type PortfolioUIValue } from "../../context/PortfolioUIContext";
 import type { TimelineEvent } from "../../types/portfolio";
 import { getPDTMidnight, parseEventDatePDT } from "../../utils/dateUtils";
@@ -17,7 +16,6 @@ export function ShellLayout() {
   const [darkMode, setDarkMode] = useState(true);
   const [damagesView, setDamagesView] = useState("moderate");
   const [showPastEvents, setShowPastEvents] = useState(false);
-  const [showClock, setShowClock] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const location = useLocation();
   const mainRef = useRef<HTMLElement>(null);
@@ -39,8 +37,6 @@ export function ShellLayout() {
       .filter((event) => parseEventDatePDT(event.date) >= today)
       .sort((a, b) => +parseEventDatePDT(a.date) - +parseEventDatePDT(b.date));
   }, []);
-  const timeLeft = useDeadlineClock(upcomingEvents);
-
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "auto" });
     mainRef.current?.focus({ preventScroll: true });
@@ -60,8 +56,8 @@ export function ShellLayout() {
   const ui = useMemo<PortfolioUIValue>(() => ({
     darkMode, setDarkMode,
     damagesView, setDamagesView, showPastEvents, setShowPastEvents,
-    showClock, setShowClock, upcomingEvents, timeLeft,
-  }), [darkMode, damagesView, showPastEvents, showClock, upcomingEvents, timeLeft]);
+    upcomingEvents,
+  }), [darkMode, damagesView, showPastEvents, upcomingEvents]);
 
   return (
     <ThemeContext.Provider value={theme}>
@@ -70,7 +66,7 @@ export function ShellLayout() {
           <a className="skip-link" href="#main-content">Skip to content</a>
           <div className="app-workspace">
             <PortfolioHeader darkMode={darkMode} onSearch={openSearch} onToggleTheme={() => setDarkMode((value) => !value)} />
-            <DeadlineBanner timeLeft={timeLeft} showClock={showClock} onToggle={() => setShowClock((value) => !value)} />
+            <DeadlineBanner upcomingEvents={upcomingEvents} />
             <div className="app-container"><Breadcrumbs /></div>
             <main id="main-content" ref={mainRef} tabIndex={-1} className="app-container app-main"><Outlet /></main>
             <footer className="app-footer" style={{ borderColor: "var(--footer-border)", color: "var(--footer-text)" }}><div className="app-container">Interactive Litigation Portfolio</div></footer>

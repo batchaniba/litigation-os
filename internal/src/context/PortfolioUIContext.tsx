@@ -9,10 +9,7 @@ export interface PortfolioUIValue {
   setDamagesView: Dispatch<SetStateAction<string>>;
   showPastEvents: boolean;
   setShowPastEvents: Dispatch<SetStateAction<boolean>>;
-  showClock: boolean;
-  setShowClock: Dispatch<SetStateAction<boolean>>;
   upcomingEvents: TimelineEvent[];
-  timeLeft: { label: string; days: number; hours: number; mins: number; secs: number; urgent: boolean; frozen: boolean };
 }
 
 export const PortfolioUIContext = createContext<PortfolioUIValue | null>(null);
