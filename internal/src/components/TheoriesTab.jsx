@@ -1,6 +1,7 @@
 import { theories } from "../data/theories";
 import { GOLD } from "../constants";
 import { useTheme } from "../ThemeContext";
+import { formatMatterRefs } from "../utils/matterRefs.js";
 
 export const TheoriesTab = () => {
   const theme = useTheme();
@@ -14,7 +15,7 @@ export const TheoriesTab = () => {
               <span style={{ fontSize: 28 }}>{t.icon}</span>
               <div>
                 <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, fontWeight: 700, color: theme.heading, lineHeight: 1.3 }}>{t.title}</div>
-                <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: GOLD, marginTop: 2 }}>Matters {t.matters}</div>
+                <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: GOLD, marginTop: 2 }}>Matters {formatMatterRefs(t.matters)}</div>
               </div>
             </div>
             <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: theme.mutedText, lineHeight: 1.7, margin: 0 }}>{t.desc}</p>

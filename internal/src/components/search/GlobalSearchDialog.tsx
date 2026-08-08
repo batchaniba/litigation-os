@@ -6,6 +6,7 @@ import { timeline } from "../../data/timeline";
 import { useDebounce } from "../../hooks/useDebounce";
 import type { DocumentIndexEntry } from "../../types/portfolio";
 import { formatMatterPath } from "../../utils/formatters";
+import { formatMatterRefs, parseMatterRefs } from "../../utils/matterRefs.js";
 import { withBase } from "../../utils/paths";
 import { effectiveStatusLabel } from "../../utils/statusLabel";
 
@@ -66,7 +67,8 @@ export default function GlobalSearchDialog({ onClose }: { onClose: () => void })
       }
     }
     for (const [index, event] of timeline.entries()) {
-      if (`${event.event} ${event.date} ${event.type} ${event.matters}`.toLowerCase().includes(needle)) found.push({ id: `event-${index}`, type: "Event", title: event.event, detail: `${event.date} · Matter ${event.matters}`, matter: Number(event.matters.split(",")[0]) || undefined });
+      const mattersLabel = formatMatterRefs(event.matters);
+      if (`${event.event} ${event.date} ${event.type} ${mattersLabel}`.toLowerCase().includes(needle)) found.push({ id: `event-${index}`, type: "Event", title: event.event, detail: `${event.date} · Matter ${mattersLabel}`, matter: parseMatterRefs(event.matters).numbers[0] });
     }
     return found.slice(0, 40);
   }, [captionByMatter, debouncedQuery]);
