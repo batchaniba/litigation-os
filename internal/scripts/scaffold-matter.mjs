@@ -91,6 +91,6 @@ Next checklist for Matter ${number}:
   [ ] Add damages.js matter_damages[] row (number + analytics only — no caption/court/status copy)
   [ ] Add lawyerFees.js lawyer_fees[] row (number + fee analytics only — identity joins from matter JSON)
   [ ] Update README matter inventory / deadlines if this matter is active
-  [ ] Drop PDFs into ${path.relative(REPO_ROOT, docsDir)} and list them in documents[]
-  [ ] npm run sync:summaries && npm run validate
+  [ ] Drop PDFs into ${path.relative(REPO_ROOT, docsDir)} and list them in documents[] (path + optional filed/label override)
+  [ ] npm run sync:registry && npm run sync:summaries && npm run validate
 `);

@@ -28,6 +28,7 @@ import {
   isRedundantStatusLabelOverride,
 } from "./status-label.mjs";
 import { PROSE_HINTS, docketLogIssues, proseBudgetIssues } from "./prose-budget.mjs";
+import { loadRegistry, registryByPath } from "./lib/document-registry.mjs";
 import { matterRefsInclude, parseMatterRefs } from "../src/utils/matterRefs.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -120,6 +121,11 @@ const seenMatterNumbers = new Set();
 const matterRecords = new Map();
 const referencedDocPaths = new Set();
 let missingFiledCount = 0;
+const documentRegistry = loadRegistry();
+const documentRegistryByPath = registryByPath(documentRegistry);
+if (!documentRegistry.documents.length) {
+  fail("document registry is empty — run npm run sync:registry");
+}
 
 for (const m of cases) {
   matterRecords.set(m.number, m);
@@ -280,14 +286,28 @@ for (const m of cases) {
     } else {
       for (const [i, d] of m.documents.entries()) {
         const dtag = `${tag}, documents[${i}]`;
-        if (typeof d.label !== "string" || !d.label.trim()) {
-          fail(`${dtag}: missing/empty "label"`);
-        }
         if (typeof d.path !== "string" || !d.path.trim()) {
           fail(`${dtag}: missing/empty "path"`);
         } else {
           if (!d.path.startsWith("/documents/")) {
             fail(`${dtag}: path "${d.path}" should start with "/documents/"`);
+          }
+          const registryEntry = documentRegistryByPath.get(d.path);
+          if (!registryEntry) {
+            fail(
+              `${dtag}: path not in document registry — add via npm run sync:registry: ${d.path}`,
+            );
+          } else if (
+            typeof d.label === "string" &&
+            d.label.trim() &&
+            d.label.trim() === registryEntry.label
+          ) {
+            fail(
+              `${dtag}: redundant label equals registry canonical — omit "label" override`,
+            );
+          }
+          if (d.label !== undefined && (typeof d.label !== "string" || !d.label.trim())) {
+            fail(`${dtag}: "label" override must be a non-empty string when present`);
           }
           const onDisk = path.join(PUBLIC_ROOT, d.path);
           if (!fs.existsSync(onDisk)) {
