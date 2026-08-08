@@ -4,6 +4,7 @@
 //
 // Full prose (key_facts, procedural_status, damages, risk, evidence)
 // and document lists stay in NN.json (lazy-loaded on expand/detail).
+// Document labels resolve through documents/registry.json (path is the id).
 // A slim document-index.json is generated for global search.
 //
 // Usage:
