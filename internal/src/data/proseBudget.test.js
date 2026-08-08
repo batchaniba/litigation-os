@@ -3,6 +3,8 @@ import {
   PROSE_BUDGETS,
   PROSE_FIELDS,
   PROSE_HINTS,
+  docketLogIssues,
+  docketLogSignals,
   proseBudgetIssues,
   wordCount,
 } from "../utils/proseBudget";
@@ -62,5 +64,20 @@ describe("prose length budgets", () => {
     expect(scriptModule.PROSE_FIELDS).toEqual(PROSE_FIELDS);
     expect(scriptModule.PROSE_HINTS).toEqual(PROSE_HINTS);
     expect(scriptModule.wordCount("  one   two ")).toBe(wordCount("  one   two "));
+    expect(typeof scriptModule.docketLogIssues).toBe("function");
+    expect(typeof scriptModule.docketLogSignals).toBe("function");
+  });
+
+  it("flags dense docket-log prose and ignores short posture sentences", () => {
+    const log =
+      "SERVED July 24, 2026 on FedEx. COMPUTED: responsive pleading due August 24, 2026. " +
+      "PUNITIVE AMOUNT REVISED — AUGUST 7, 2026: notice executed. SERVICE CONFIRMED July 31, 2026. " +
+      "FILING — JULY 28, 2026 completed. ACTION ITEM: serve amended notice before August 31, 2026.";
+    expect(docketLogSignals(log).score).toBeGreaterThanOrEqual(2);
+    expect(docketLogIssues({ status: log, procedural_status: "Short posture." })).toHaveLength(1);
+
+    const posture =
+      "Filed July 15, 2026. Served July 24, 2026; responsive pleading due Aug. 24, 2026.";
+    expect(docketLogSignals(posture).score).toBeLessThan(2);
   });
 });
