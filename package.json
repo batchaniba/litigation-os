@@ -18,6 +18,7 @@
     "sync:summaries": "node internal/scripts/sync-matter-summaries.mjs",
     "sync:registry": "node internal/scripts/sync-document-registry.mjs",
     "sync:upcoming": "node internal/scripts/sync-upcoming.mjs",
+    "next": "node internal/scripts/next-actions.mjs",
     "generate:readme": "node internal/scripts/generate-readme-tables.mjs",
     "validate": "npm run lint && node internal/scripts/sync-document-registry.mjs --check && node internal/scripts/sync-matter-summaries.mjs --check && node internal/scripts/sync-upcoming.mjs --check && node internal/scripts/generate-readme-tables.mjs --check && node internal/scripts/validate-portfolio.mjs && npm run test:coverage",
     "scaffold:matter": "node internal/scripts/scaffold-matter.mjs",

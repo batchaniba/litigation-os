@@ -397,6 +397,7 @@ Open http://localhost:5173/
 Useful scripts:
 
 ```bash
+npm run next                  # ranked "what's next to do" queue (see below)
 npm run sync:summaries        # rebuild light matter summaries + document search index
 npm run sync:upcoming         # rebuild upcoming.json from timeline.json for the shell
 npm run generate:readme       # regenerate marked README tables from portfolio data
@@ -405,6 +406,38 @@ npm run lint:fix              # ...and auto-fix what is safely fixable
 npm run validate              # lint + summaries + upcoming + README freshness + schema/doc checks
 npm run scaffold:matter -- 34 "Newanforbi v. Example"
 ```
+
+### Next-actions monitor
+
+`npm run next` answers "what's next on the list for me to do?" from the data
+rather than from the generated README table above. It reads every `timeline.json`
+entry still flagged `upcoming: true`, resolves matter captions from
+`matters/summaries.json`, and ranks the result: past-due first, then the next 3
+days, this week, and the rest of the horizon. Nothing is written to disk, so the
+output cannot go stale the way a synced file can.
+
+```bash
+npm run next                  # 30-day horizon
+npm run next -- --days 7      # tighter window
+npm run next -- --all         # every upcoming entry, no horizon
+npm run next -- --mine        # drop opposing-party and court/agency clocks
+npm run next -- --matter 20   # one matter
+npm run next -- --json        # same ranking, machine-readable
+```
+
+Within each urgency band, this litigant's own obligations sort ahead of dates
+that run against someone else — an AG reply deadline is a date to watch, not a
+task. That ownership is inferred from the event text and labelled
+`inferred — verify`; pin it by adding `"actor": "you" | "opposing" | "agency"` to
+the timeline entry, and the script uses the explicit value instead.
+
+Two sections follow the bands: upcoming entries whose date can't be placed on one
+calendar day (month-only or ranged), and active matters with no dated next step
+at all — the coverage gap that a deadline table can't show you.
+
+Claude Code sessions in this repo pick this up automatically through the
+`whats-next` skill in `.claude/skills/`, so asking "what's next?" — or any
+variation of it — runs the monitor instead of reading dates off the README.
 
 ### Python document scripts
 
