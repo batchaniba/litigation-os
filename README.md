@@ -219,11 +219,11 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 |---|---|---|
 | Aug. 7, 2026 | 3 | Deadline to file amended complaint (14 days from Jul. 24, 2026 order, Doc 31) — Newanforbi v. Derrick et al. (2:26-cv-00004-DJC-JDP); if not filed, action proceeds solely on Equal Protection claim against Derrick |
 | Aug. 10, 2026 | 28 | Reply deadline — Motion for Protective Order, Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504) |
-| Aug. 12, 2026 | 26,27 | Outer bound for Sacramento County Sheriff Civil Bureau to process E-Filing Order #O26005511 (CCP §425.115 Notices for Randstad US, LLC, The RK Logistics Group, Inc., and United Parcel Service, Inc.) |
+| Aug. 12, 2026 | 26, 27 | Outer bound for Sacramento County Sheriff Civil Bureau to process E-Filing Order #O26005511 (CCP §425.115 Notices for Randstad US, LLC, The RK Logistics Group, Inc., and United Parcel Service, Inc.) |
 | Aug. 12, 2026 | 12 | Default prove-up hearing (CMC converted per clerk phone statement) — Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094), 8:30 AM, Dept. 11B, Hon. Robert T. Waters; June 15 CIV-100 Not Entered |
 | Aug. 14, 2026 | 26 | Meet-and-confer target date (computed) — Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113) |
 | Aug. 18, 2026 | 29 | Fee waiver hearing — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554), 11:30 AM, Department FHO, Hayward Hall of Justice, 24405 Amador Street, Hayward, CA 94544, before Hon. Jamilah A. Jefferson |
-| Aug. 19, 2026 | 7,8 | Gov. claim deadline — Candelaria state tort Bane Act damages (6 months from Feb. 19, 2026 accrual; claim must be filed with DGS) |
+| Aug. 19, 2026 | 7, 8 | Gov. claim deadline — Candelaria state tort Bane Act damages (6 months from Feb. 19, 2026 accrual; claim must be filed with DGS) |
 | Aug. 19, 2026 | 25 | Meet-and-confer deadline (computed) — Newanforbi v. Federal Express Corporation (STK-CV-UWT-2026-0009118) |
 | Aug. 21, 2026 | 20 | AG reply deadline (computed) — Respondents' Reply to Petitioner's Opposition to Demurrer due 5 court days before Aug. 28, 2026 hearing per CRC 3.1320(b) — Newanforbi v. California Highway Patrol et al. (26CV191136) |
 | Aug. 21, 2026 | 26 | Responsive pleading deadline (computed) — Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113); 30 days from the Jul. 22, 2026 service date (CCP §412.20(a)(3)) |
@@ -237,7 +237,7 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | Sep. 1, 2026 | 30 | Anticipated deemed-rejection date (computed) — Government Claims Act claim, Newanforbi v. Moua, et al. (Matter 30) |
 | Sep. 2, 2026 | 20 | Case Management Conference (continued from Jul. 15, 2026) — Newanforbi v. California Highway Patrol, et al. (Case No. 26CV191136), Dept. 25, Rene C. Davidson Courthouse, Oakland, Alameda County; Hon. Jenna M. Whitman |
 | Sep. 8, 2026 | 24 | Deadline — Initial disclosures (FRCP 26(a)(1)) and Joint Case Management Statement — Newanforbi v. Serrato (4:26-cv-05953-ASK) |
-| Sep. 13, 2026 | 25,26 | Service deadline — Newanforbi v. Federal Express Corporation (STK-CV-UWT-2026-0009118) and Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113); 60 days from July 15, 2026 filing (CRC 3.110) |
+| Sep. 13, 2026 | 25, 26 | Service deadline — Newanforbi v. Federal Express Corporation (STK-CV-UWT-2026-0009118) and Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113); 60 days from July 15, 2026 filing (CRC 3.110) |
 | Sep. 15, 2026 | 24 | Initial Case Management Conference — 1:30 PM via Zoom (cand.uscourts.gov/ask); Hon. Ajay S. Krishnan — Newanforbi v. Serrato (4:26-cv-05953-ASK) |
 | Sep. 16, 2026 | 30 | Anticipated filing date (computed) — Complaint v9 (Moua and DOES 1-10), Newanforbi v. Moua, et al. (Matter 30); 15 days after the anticipated Sep. 1, 2026 deemed rejection |
 | Sep. 18, 2026 | 27 | Proof-of-service filing deadline — Newanforbi v. Randstad US, LLC et al. (26CV199902); 60 days from July 20, 2026 filing (CRC 3.110(b)); both defendants already SERVED Jul. 30, 2026 |

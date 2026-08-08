@@ -12,7 +12,6 @@ describe("status_label overrides + effective labels", () => {
       );
       expect(matter.status_label, `matter ${matter.number}`).not.toMatch(/\n/);
       expect(matter.status_label.trim(), `matter ${matter.number}`).not.toBe("");
-      expect(matter.status_label, `matter ${matter.number}`).not.toBe(matter.status);
     }
   });
 

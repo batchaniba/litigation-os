@@ -2,6 +2,7 @@ import { lazy, Suspense, useMemo, useState } from "react";
 import { timeline } from "../data/timeline";
 import { GOLD } from "../constants";
 import { getPDTMidnight, parseEventDatePDT } from "../utils/dateUtils";
+import { formatMatterRefs } from "../utils/matterRefs.js";
 import { useTheme } from "../ThemeContext";
 
 const CalendarTab = lazy(() => import("./CalendarTab").then((module) => ({ default: module.CalendarTab })));
@@ -34,7 +35,7 @@ export const TimelineTab = ({ showPastEvents, setShowPastEvents }) => {
             <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 10, color: theme.subtleText, textTransform: "uppercase", letterSpacing: 1, fontWeight: 600 }}>{t.type}</span>
           </div>
           <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: theme.secondaryText, margin: "6px 0 0", lineHeight: 1.5 }}>{t.event}</p>
-          <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: theme.subtleText, marginTop: 4 }}>Matter {t.matters}</div>
+          <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: theme.subtleText, marginTop: 4 }}>Matter {formatMatterRefs(t.matters)}</div>
         </div>
       </div>
     );
