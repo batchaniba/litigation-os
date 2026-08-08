@@ -61,6 +61,13 @@
   --aggregate-card-text: white;
   --damages-active-bg: #1a2a49;
   --damages-inactive-bg: #162034;
+  /* Severity / status. The only colours in the cross-matter section that carry
+     meaning, so they are the only ones it is allowed to use. */
+  --sev-high: #f87171;
+  --sev-high-bg: rgb(248 113 113 / 16%);
+  --sev-ok: #34d399;
+  --sev-ok-bg: rgb(52 211 153 / 14%);
+  --sev-low: rgb(148 163 184 / 45%);
 }
 
 .app-shell.light {
@@ -104,6 +111,11 @@
   --aggregate-card-text: #0f172a;
   --damages-active-bg: #eef2f9;
   --damages-inactive-bg: #ffffff;
+  --sev-high: #dc2626;
+  --sev-high-bg: rgb(220 38 38 / 9%);
+  --sev-ok: #059669;
+  --sev-ok-bg: rgb(5 150 105 / 9%);
+  --sev-low: rgb(100 116 139 / 40%);
 }
 
 * { box-sizing: border-box; }
@@ -854,8 +866,8 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
 .xm-thesis { max-width: 78ch; }
 .xm-cluster-line { margin-bottom: 12px; }
 .xm-subhead {
-  margin: 28px 0 10px; font-size: 11px; letter-spacing: .12em; text-transform: uppercase;
-  color: var(--muted, rgb(148 163 184)); font-weight: 700;
+  margin: 28px 0 10px; font-family: var(--font-sans); font-size: 11px; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--muted-text); font-weight: 700;
 }
 .xm-stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 18px; }
 .xm-stat {
@@ -882,31 +894,37 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
 .xm-matter-court { font-size: 11px; opacity: .6; }
 .xm-degree { display: inline-block; margin-top: 6px; font-size: 11px; opacity: .6; }
 
+/* Link kinds are self-labelling everywhere they render — the peer cards, the
+   matrix cells and the legend all print linkKindLabel inside the chip — so the
+   five hues these used to carry (sky / indigo / amber / emerald / red) were
+   decoration. Stacked three to a card they were the loudest thing on the page,
+   and they collided with the severity scale, which reuses red and amber to mean
+   something else entirely. Neutral chips; colour is reserved for severity. */
 .xm-kind {
-  display: inline-block; padding: 3px 8px; border-radius: 999px; font-size: 11px; font-weight: 600;
-  border: 1px solid rgb(148 163 184 / 35%); white-space: nowrap;
+  display: inline-block; padding: 3px 8px; border-radius: 999px; font-family: var(--font-sans);
+  font-size: 11px; font-weight: 600; white-space: nowrap;
+  border: 1px solid rgb(148 163 184 / 28%); color: var(--muted-text);
 }
-.xm-kind-same_incident, .xm-kind-shared_predicate { background: rgb(56 189 248 / 14%); border-color: rgb(56 189 248 / 45%); }
-.xm-kind-same_denial_challenged, .xm-kind-parallel_track { background: rgb(129 140 248 / 14%); border-color: rgb(129 140 248 / 45%); }
-.xm-kind-stay_dependency, .xm-kind-authority_dependency { background: rgb(251 191 36 / 16%); border-color: rgb(251 191 36 / 50%); }
-.xm-kind-persuasive_authority { background: rgb(52 211 153 / 14%); border-color: rgb(52 211 153 / 45%); }
-.xm-kind-damages_overlap, .xm-kind-disclosure_gap { background: rgb(248 113 113 / 16%); border-color: rgb(248 113 113 / 50%); }
 
 .xm-peer-list, .xm-exposure-list, .xm-foundation-list, .xm-party-list, .xm-chain { list-style: none; margin: 0; padding: 0; }
 .xm-peer, .xm-exposure, .xm-chain-item {
   border: 1px solid rgb(148 163 184 / 20%); border-left-width: 3px; border-radius: 10px;
   padding: 14px 16px; margin-bottom: 12px;
 }
-.xm-sev-high { border-left-color: rgb(248 113 113 / 80%); }
-.xm-sev-medium { border-left-color: rgb(251 191 36 / 80%); }
-.xm-sev-low { border-left-color: rgb(52 211 153 / 80%); }
+/* Medium takes the brand gold rather than a near-miss amber, and low takes no
+   colour at all — leaving red to mean one thing on the page. */
+.xm-sev-high { border-left-color: var(--sev-high); }
+.xm-sev-medium { border-left-color: var(--gold); }
+.xm-sev-low { border-left-color: var(--sev-low); }
 .xm-peer-head, .xm-exposure-head, .xm-chain-head {
   display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: baseline; justify-content: space-between;
 }
 .xm-peer-title, .xm-exposure-label, .xm-chain-route { font-weight: 700; font-size: 14px; }
-.xm-relationship { font-size: 12px; opacity: .7; font-style: italic; }
+/* Meta lines are UI chrome, not prose — the serif belongs to the captions and
+   the body copy, not to four different treatments inside one card. */
+.xm-relationship { font-family: var(--font-sans); font-size: 12px; color: var(--subtle-text); }
 .xm-kinds { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; }
-.xm-sources { list-style: none; margin: 8px 0 0; padding: 0; font-size: 11px; opacity: .65; }
+.xm-sources { list-style: none; margin: 8px 0 0; padding: 0; font-family: var(--font-sans); font-size: 11px; color: var(--subtle-text); }
 .xm-sources li { padding-left: 12px; position: relative; }
 .xm-sources li::before { content: "§"; position: absolute; left: 0; opacity: .6; }
 .xm-remedy { margin-top: 6px; font-size: 13px; }
@@ -914,9 +932,9 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
   font-size: 10px; letter-spacing: .08em; text-transform: uppercase; font-weight: 700;
   padding: 2px 8px; border-radius: 999px; border: 1px solid rgb(148 163 184 / 40%);
 }
-.xm-status-open { background: rgb(248 113 113 / 16%); }
-.xm-status-monitoring { background: rgb(251 191 36 / 16%); }
-.xm-status-resolved { background: rgb(52 211 153 / 16%); }
+.xm-status-open { border-color: var(--sev-high); background: var(--sev-high-bg); color: var(--sev-high); }
+.xm-status-monitoring { border-color: var(--gold); background: rgb(200 168 75 / 12%); color: var(--gold); }
+.xm-status-resolved { border-color: var(--sev-ok); background: var(--sev-ok-bg); color: var(--sev-ok); }
 .xm-exposure-matters { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
 .xm-matter-chip {
   font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 999px;
