@@ -15,7 +15,7 @@ export const damages_table = [
     { category: "§1983 Retaliation, Due Process, Bane Act & IIED — Moua (Matter 30)", matters: "30", conservative: 90000, moderate: 225000, aggressive: 525000 },
     { category: "FCRA / ICRAA Vendor Liability — First Advantage LLC (Matter 31)", matters: "31", conservative: 30000, moderate: 89000, aggressive: 205000 },
     { category: "N.D. Cal. §1983 Meza-Gonzalez (Matter 32) — pleaded >$214k; $0 here to avoid double-count w/ M1/M2", matters: "32", conservative: 0, moderate: 0, aggressive: 0 },
-    { category: "N.D. Cal. §1983 Candelaria/Gordon (Matter 33) — pleaded >$214k; $0 here to avoid double-count w/ M7", matters: "33", conservative: 0, moderate: 0, aggressive: 0 }
+    { category: "N.D. Cal. §1983 Ngwa Nforbi v. Candelaria, et al (Matter 33) — pleaded >$214k; $0 here to avoid double-count w/ M7", matters: "33", conservative: 0, moderate: 0, aggressive: 0 }
 ];
 // Matters 3, 5, and 15 are excluded/reduced above (abandoned/dismissed Jul. 2026):
 // - Matter 3 (Derrick, ABANDONED): its Lost Income, Emotional Distress, Punitive, and Fees
@@ -328,7 +328,7 @@ export const matter_damages = [
     },
     {
         number: 33,
-        caption: "Newanforbi v. Candelaria (DMV APS / Nov. 1, 2024)",
+        caption: "Ngwa Nforbi v. Candelaria, et al",
         court: "USDC N.D. Cal. (filed Aug. 7, 2026; case number pending)",
         claims: "§1983 APS structural bias / fair hearing / vacatur vs Candelaria & Gordon",
         status: "CASE FILED Aug. 7, 2026, 4:05 p.m. PT — N.D. Cal. operative v3; case number pending",
