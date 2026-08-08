@@ -27,7 +27,7 @@ import {
   effectiveStatusLabel,
   isRedundantStatusLabelOverride,
 } from "./status-label.mjs";
-import { PROSE_HINTS, proseBudgetIssues } from "./prose-budget.mjs";
+import { PROSE_HINTS, docketLogIssues, proseBudgetIssues } from "./prose-budget.mjs";
 import { matterRefsInclude, parseMatterRefs } from "../src/utils/matterRefs.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -158,6 +158,16 @@ for (const m of cases) {
     } else {
       warn(`${tag}: ${issue.field} is ${issue.words} words, target ${issue.target} — ${PROSE_HINTS[issue.field]}`);
     }
+  }
+
+  // Docket-log heuristic: status / procedural_status that still read like a
+  // filing chronology (dense dates, SERVED/COMPUTED markers, caps heads).
+  // Advisory — legal nuance sometimes needs dates; timeline.json owns the log.
+  for (const issue of docketLogIssues(m)) {
+    warn(
+      `${tag}: ${issue.field} looks like a docket log (${issue.hits.join(", ")}; ${issue.words}w) — ` +
+        `dated beats belong in timeline.json; keep narrative judgment in prose`,
+    );
   }
 
   // status_label is an optional hand override. When omitted, badges/strip/README

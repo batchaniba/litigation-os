@@ -284,6 +284,7 @@
     "case_no": "STK-CV-UF-2026-0001094",
     "court": "San Joaquin Sup. Ct.",
     "claims": "Fraudulent Concealment, Intentional Misrepresentation, Negligent Misrepresentation, Breach of Contract, UCL §17200, Rescission & Restitution, Declaratory Relief",
+    "status_label": "Default packets mailed — prove-up Aug. 12, 2026",
     "lifecycle": "active",
     "proceeding": "state_civil",
     "phase": "default",
@@ -490,6 +491,7 @@
     "case_no": "26CV191136",
     "court": "Alameda Sup. Ct.",
     "claims": "Writ of Mandate (CCP §1085; PC §679.10) — U Visa Certification; Declaratory Relief (CCP §1060)",
+    "status_label": "Demurrer hearing Aug. 28, 2026 — CMC continued to Sep. 2",
     "lifecycle": "active",
     "proceeding": "mandate",
     "phase": "demurrer",
@@ -635,6 +637,7 @@
     "case_no": "4:26-cv-05953-ASK",
     "court": "USDC N.D. Cal.",
     "claims": "42 USC 1983: Fourteenth Amendment (Substantive & Procedural Due Process), First Amendment (Retaliation); Declaratory Relief",
+    "status_label": "CMC Sep. 15, 2026 — USMS service not yet certified",
     "lifecycle": "active",
     "proceeding": "federal_civil",
     "phase": "cmc",
@@ -677,6 +680,7 @@
       "Unlawful Business Practices (Bus. & Prof. Code § 17200 et seq.)"
     ],
     "archived": false,
+    "status_label": "Served Jul. 24, 2026 — response due Aug. 24",
     "evidenceCount": 8,
     "documentCount": 26
   },
@@ -704,6 +708,7 @@
       "Unlawful Business Practices (Bus. & Prof. Code § 17200 et seq.)"
     ],
     "archived": false,
+    "status_label": "Served Jul. 22, 2026 — response due Aug. 21",
     "evidenceCount": 7,
     "documentCount": 20
   },
@@ -747,6 +752,7 @@
       "Unlawful Business Practices (Bus. & Prof. Code § 17200 et seq.)"
     ],
     "archived": false,
+    "status_label": "Served Jul. 30, 2026 — response due Aug. 31",
     "evidenceCount": 16,
     "documentCount": 44
   },
@@ -756,6 +762,7 @@
     "case_no": "3:26-cv-07504",
     "court": "USDC N.D. Cal.",
     "claims": "42 U.S.C. §1983 (Monell + Individual Capacity); Bane Act (Cal. Civ. Code §52.1); Fraud / Negligent Misrepresentation; RICO (18 U.S.C. §1962(c)-(d))",
+    "status_label": "Fee paid — CMC Oct. 22, 2026; SPO denied w/o prejudice",
     "lifecycle": "active",
     "proceeding": "federal_civil",
     "phase": "screening_ifp",
@@ -827,6 +834,7 @@
     "case_no": "TBD",
     "court": "USDC N.D. Cal.",
     "claims": "42 U.S.C. §1983 First Amendment Retaliation, §1983 Fourteenth Amendment Due Process, Bane Act Cal. Civ. Code §52.1, IIED",
+    "status_label": "Pre-filing — GCA claim pending; Moua-only complaint ready",
     "lifecycle": "pre_filing",
     "proceeding": "federal_civil",
     "phase": "pre_filing",

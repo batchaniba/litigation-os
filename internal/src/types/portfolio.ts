@@ -100,6 +100,7 @@ export interface Matter extends MatterSummary {
    *  in the shell summary bundle. */
   status: string;
   key_facts: string;
+  /** Procedural judgment / posture context — chronology lives in timeline.json. */
   procedural_status: string;
   damages: string;
   risk: string;
