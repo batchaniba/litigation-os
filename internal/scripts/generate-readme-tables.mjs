@@ -160,22 +160,27 @@ const settledLabel = settled.length
       .join("; ")
   : "none";
 
-const overviewCounts = [
-  `| Total Matters | ${cases.length} |`,
-  `| Active / Open | ${active.length} |`,
-  `| Settled | ${settled.length}${settled.length ? ` (Matter ${settledLabel})` : ""} |`,
-  `| Dismissed / Closed / Abandoned | ${closed.length} |`,
-].join("\n");
-
 const cons = damages_table.reduce((s, r) => s + (r.conservative || 0), 0);
 const mod = damages_table.reduce((s, r) => s + (r.moderate || 0), 0);
 const agg = damages_table.reduce((s, r) => s + (r.aggressive || 0), 0);
 
 const roundK = (n) => Math.round(Number(n) / 1000) * 1000;
-const overviewExposure = [
+
+// One contiguous GFM table — HTML comments between rows break GitHub rendering.
+const overviewTable = [
+  `| Field | Detail |`,
+  `|---|---|`,
+  `| Plaintiff | Brendan Ngehsi Newanforbi |`,
+  `| Representation | Pro Se / In Propria Persona |`,
+  `| Jurisdictions | USDC E.D. Cal., USDC N.D. Cal., San Joaquin Sup. Ct., Alameda Sup. Ct., Sacramento Sup. Ct., Santa Clara Sup. Ct. |`,
+  `| Total Matters | ${cases.length} |`,
+  `| Active / Open | ${active.length} |`,
+  `| Settled | ${settled.length}${settled.length ? ` (Matter ${settledLabel})` : ""} |`,
+  `| Dismissed / Closed / Abandoned | ${closed.length} |`,
   `| Aggregate Exposure (Conservative) | ~${money(roundK(cons))}+ |`,
   `| Aggregate Exposure (Moderate) | ~${money(roundK(mod))}+ |`,
   `| Aggregate Exposure (Aggressive) | ~${money(roundK(agg))}+ |`,
+  `| Last Updated | August 8, 2026 |`,
 ].join("\n");
 
 const activeTable = [
@@ -244,8 +249,7 @@ const closedCountNote =
 
 let readme = fs.readFileSync(README, "utf8");
 const replacements = {
-  OVERVIEW_COUNTS: overviewCounts,
-  OVERVIEW_EXPOSURE: overviewExposure,
+  OVERVIEW_TABLE: overviewTable,
   CLOSED_COUNT_NOTE: closedCountNote,
   ACTIVE_MATTERS: activeTable,
   SETTLED_MATTERS: settledTable,
