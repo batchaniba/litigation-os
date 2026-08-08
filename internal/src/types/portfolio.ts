@@ -68,9 +68,6 @@ export interface MatterSummary {
   case_no: string;
   court: string;
   claims: string;
-  /** Full procedural narrative. Grows over the life of the matter — render it
-   *  in a prose section, never in a badge or a fixed-width cell. */
-  status: string;
   /** Optional hand override for the short posture label (<= 60 chars). When
    *  omitted, the UI derives a label from `phase` + the next posture-ranked
    *  timeline event via `effectiveStatusLabel`. Keep an override for terminal
@@ -98,6 +95,10 @@ export interface MatterSummary {
 
 /** Full matter record lazy-loaded from NN.json on expand/detail. */
 export interface Matter extends MatterSummary {
+  /** Full procedural narrative. Grows over the life of the matter — render it
+   *  in a prose section, never in a badge or a fixed-width cell. Not shipped
+   *  in the shell summary bundle. */
+  status: string;
   key_facts: string;
   procedural_status: string;
   damages: string;

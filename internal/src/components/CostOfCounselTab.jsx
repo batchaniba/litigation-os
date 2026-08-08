@@ -7,11 +7,10 @@ import { useTheme } from "../ThemeContext";
 import { formatCurrency } from "../utils/formatters";
 import { effectiveStatusLabel } from "../utils/statusLabel";
 
-// lawyer_fees[].status is a hand-maintained copy that drifts from the matter
-// record. Prefer the derived label, which is capped and self-updates.
+// Prefer the derived posture label — fee rows no longer carry a status copy.
 const statusFor = (m) => {
   const summary = getMatterSummary(m.number);
-  return summary ? effectiveStatusLabel(summary) : m.status;
+  return summary ? effectiveStatusLabel(summary) : `Matter ${m.number}`;
 };
 
 const fmt = (n) => formatCurrency(Math.round(n));

@@ -8,11 +8,10 @@ import { formatCurrency } from "../utils/formatters";
 import { isArchivedMatter } from "../utils/matterLifecycle";
 import { effectiveStatusLabel } from "../utils/statusLabel";
 
-// matter_damages[].status is a hand-maintained copy that drifts from the matter
-// record. Prefer the derived label, which is capped and self-updates.
+// Prefer the derived posture label over any leftover analytic status prose.
 const statusFor = (m) => {
   const summary = getMatterSummary(m.number);
-  return summary ? effectiveStatusLabel(summary) : m.status;
+  return summary ? effectiveStatusLabel(summary) : `Matter ${m.number}`;
 };
 
 const fmt = (n) => formatCurrency(n);

@@ -88,8 +88,8 @@ Next checklist for Matter ${number}:
   [ ] Fill key_facts, procedural_status, damages, risk, causes in ${fileName}
   [ ] Add timeline.json entries (mark upcoming deadlines with upcoming: true)
   [ ] Run npm run sync:upcoming after timeline edits
-  [ ] Add damages.js matter_damages[] row (and damages_table category if needed)
-  [ ] Add lawyerFees.js lawyer_fees[] row
+  [ ] Add damages.js matter_damages[] row (number + analytics only — no caption/court/status copy)
+  [ ] Add lawyerFees.js lawyer_fees[] row (number + fee analytics only — identity joins from matter JSON)
   [ ] Update README matter inventory / deadlines if this matter is active
   [ ] Drop PDFs into ${path.relative(REPO_ROOT, docsDir)} and list them in documents[]
   [ ] npm run sync:summaries && npm run validate

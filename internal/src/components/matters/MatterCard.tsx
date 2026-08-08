@@ -61,7 +61,7 @@ function StatusRibbon({ variant }: { variant: RibbonVariant }) {
 }
 
 function resolveRibbonVariant(c: MatterSummary & { badge?: string }): RibbonVariant | null {
-  if (c.lifecycle === "settled" || c.status?.startsWith("SETTLED")) return "settled";
+  if (c.lifecycle === "settled") return "settled";
   if (c.badge === "DEFAULT") return "default";
   if (c.lifecycle === "dismissed" || c.badge === "DISMISSED") return "dismissed";
   if (c.lifecycle === "abandoned" || c.badge === "ABANDONED") return "abandoned";
