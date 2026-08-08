@@ -286,18 +286,18 @@ export const lawyer_fees = [
     notes: "No new PDFs — the evidentiary basis (First Advantage's pre-adverse/adverse notices for both the UPS and FedEx sequences) is already measured and billed under Matters 26 and 25 respectively; counting those pages again here would double-count real work already priced elsewhere. Estimated instead from matters.js status text as a single-defendant vendor-liability complaint of moderate complexity: five causes of action (two FCRA provisions, ICRAA, negligence per se, UCL) drafted from an existing fact pattern rather than fresh investigation, roughly comparable in scope to Matter 8's single-document writ estimate. No motion practice, discovery, or service costs included since nothing has been filed."
   },
   {
-    number: 32, caption: "Ngwa Nforbi v. Meza-Gonzalez, et al", caseNumber: "TBD (N.D. Cal. ready to file)",
+    number: 32, caption: "Ngwa Nforbi v. Meza-Gonzalez, et al", caseNumber: "TBD (filed N.D. Cal. Aug. 7, 2026, 4:05 p.m. PT)",
     court: "USDC N.D. Cal. (also CHP-cluster PDF home for Matters 1/2/20/24)", type: "Federal — § 1983 (N.D. Cal.) + Nov. 1, 2024 CHP cluster document store",
-    status: "N.D. Cal. complaint ready to file Aug. 7, 2026 — operative v3 + intake packet; also owns PDFs from Matters 1/2/20/24",
+    status: "CASE FILED Aug. 7, 2026, 4:05 p.m. PT — N.D. Cal. operative v3 + intake packet; case number pending; also owns PDFs from Matters 1/2/20/24",
     documentsCount: 78, totalPagesReal: 808,
     hours: { low: 48, high: 72, mid: 60 },
     cost: { low: 13440, high: 20160, mid: 16800 },
     notes: "NEW billable work is the Aug. 7, 2026 N.D. Cal. filing set under ndcal/ (77 pages): operative Complaint v3 (20 pp) at major-pleading 2.0–2.5 hr/page, plus revision credit for superseded drafts v1/v2 (not full rebill of 49 draft pages), plus intake packet / wage-exhibit admin (2–4 hrs). Relocated from-01|02|20|24/ PDFs (731 pp) remain attributed to source Matters 1, 2, 20, and 24 at $0 here to avoid double-counting. Nov. 1 / Candelaria APS evidence lives in Matter 33."
   },
   {
-    number: 33, caption: "Newanforbi v. Candelaria (DMV APS / Nov. 1, 2024)", caseNumber: "TBD (N.D. Cal. ready to file; prior E.D. Cal. 2:26-cv-00983)",
+    number: 33, caption: "Newanforbi v. Candelaria (DMV APS / Nov. 1, 2024)", caseNumber: "TBD (filed N.D. Cal. Aug. 7, 2026, 4:05 p.m. PT; prior E.D. Cal. 2:26-cv-00983)",
     court: "USDC N.D. Cal. (also Candelaria / DMV APS PDF home; Matter 7 prior E.D. Cal.; Matter 8 abandoned)", type: "Federal — § 1983 APS / N.D. Cal. refile + document store",
-    status: "N.D. Cal. complaint ready to file Aug. 7, 2026 — operative v3 + intake packet; owns Nov. 1 / APS evidence and Matter 7/8 PDFs",
+    status: "CASE FILED Aug. 7, 2026, 4:05 p.m. PT — N.D. Cal. operative v3 + intake packet; case number pending; owns Nov. 1 / APS evidence and Matter 7/8 PDFs",
     documentsCount: 30, totalPagesReal: 428,
     hours: { low: 50, high: 94, mid: 72 },
     cost: { low: 14000, high: 26320, mid: 20160 },

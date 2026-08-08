@@ -171,8 +171,8 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | 29 | Newanforbi v. Amazon.com Services, LLC | 26CV201554 | Alameda Sup. Ct. (Hayward Hall of Justice, Dept. 520) | State | Filed Jul. 28, 2026 — service in progress |
 | 30 | Newanforbi v. Moua, et al. | TBD | USDC N.D. Cal. | Federal | Pre-filing — anticipated filing Sep. 16, 2026 |
 | 31 | Newanforbi v. First Advantage LLC | TBD | San Joaquin Sup. Ct. (anticipated) | State | Pre-filing |
-| 32 | Ngwa Nforbi v. Meza-Gonzalez, et al | TBD (N.D. Cal. intake prepared Aug. 7, 2026; not yet filed) | USDC N.D. Cal. (ready to file; related Serrato 4:26-cv-05953-ASK) | Federal | N.D. Cal. complaint ready to file — Meza-Gonzalez & Melano |
-| 33 | Newanforbi v. Candelaria (DMV APS / Nov. 1, 2024) | TBD (N.D. Cal. intake prepared Aug. 7, 2026; not yet filed; prior E.D. Cal. Matter 7: 2:26-cv-00983-DC-CSK) | USDC N.D. Cal. (ready to file; companion to Matter 7 E.D. Cal. 2:26-cv-00983 — voluntarily dismissed w/o prejudice per operative complaint) | Federal | N.D. Cal. complaint ready to file — Candelaria & Gordon |
+| 32 | Ngwa Nforbi v. Meza-Gonzalez, et al | TBD (filed N.D. Cal. Aug. 7, 2026, 4:05 p.m. PT — case number assignment pending) | USDC N.D. Cal. (filed Aug. 7, 2026, 4:05 p.m. PT; related Serrato 4:26-cv-05953-ASK) | Federal | Filed N.D. Cal. Aug. 7, 2026, 4:05 p.m. — awaiting case… |
+| 33 | Newanforbi v. Candelaria (DMV APS / Nov. 1, 2024) | TBD (filed N.D. Cal. Aug. 7, 2026, 4:05 p.m. PT — case number assignment pending; prior E.D. Cal. Matter 7: 2:26-cv-00983-DC-CSK) | USDC N.D. Cal. (filed Aug. 7, 2026, 4:05 p.m. PT; companion to Matter 7 E.D. Cal. 2:26-cv-00983 — voluntarily dismissed w/o prejudice per operative complaint) | Federal | Filed N.D. Cal. Aug. 7, 2026, 4:05 p.m. — awaiting case… |
 <!-- PORTFOLIO:ACTIVE_MATTERS:END -->
 
 ### Settled
