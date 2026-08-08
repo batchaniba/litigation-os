@@ -295,7 +295,7 @@ export const lawyer_fees = [
     notes: "NEW billable work is the Aug. 7, 2026 N.D. Cal. filing set under ndcal/ (77 pages): operative Complaint v3 (20 pp) at major-pleading 2.0–2.5 hr/page, plus revision credit for superseded drafts v1/v2 (not full rebill of 49 draft pages), plus intake packet / wage-exhibit admin (2–4 hrs). Relocated from-01|02|20|24/ PDFs (731 pp) remain attributed to source Matters 1, 2, 20, and 24 at $0 here to avoid double-counting. Nov. 1 / Candelaria APS evidence lives in Matter 33."
   },
   {
-    number: 33, caption: "Newanforbi v. Candelaria (DMV APS / Nov. 1, 2024)", caseNumber: "TBD (filed N.D. Cal. Aug. 7, 2026, 4:05 p.m. PT; prior E.D. Cal. 2:26-cv-00983)",
+    number: 33, caption: "Ngwa Nforbi v. Candelaria, et al", caseNumber: "TBD (filed N.D. Cal. Aug. 7, 2026, 4:05 p.m. PT; prior E.D. Cal. 2:26-cv-00983)",
     court: "USDC N.D. Cal. (also Candelaria / DMV APS PDF home; Matter 7 prior E.D. Cal.; Matter 8 abandoned)", type: "Federal — § 1983 APS / N.D. Cal. refile + document store",
     status: "CASE FILED Aug. 7, 2026, 4:05 p.m. PT — N.D. Cal. operative v3 + intake packet; case number pending; owns Nov. 1 / APS evidence and Matter 7/8 PDFs",
     documentsCount: 30, totalPagesReal: 428,

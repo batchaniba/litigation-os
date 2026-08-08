@@ -72,7 +72,7 @@ Arising from a November 1, 2024 CHP encounter on I-580. Officers arrested Plaint
 - **Matter 20** (Alameda Sup. Ct.): State Writ of Mandate against CHP; demurrer opposition filed July 13, 2026; CHP demurrer hearing Aug. 28, 2026. Individual Respondents Serrato, Paul, and Dutra filed joinders/demurrers July 30, 2026 and stipulated to advance their Oct. 16/23 hearing dates to Aug. 28 (stipulation not yet entered).
 - **Matter 24** (USDC N.D. Cal.): §1983 against San Mateo Sheriff Deputy Serrato for arbitrary U Visa certification denial and retaliation; IFP granted June 29, 2026 (Krishnan screening order, now cited across the cluster); CMC September 15, 2026. Listed as related case on the Matter 32/33 JS-44s.
 - **Matter 32** (USDC N.D. Cal.): **CASE FILED August 7, 2026, 4:05 p.m. PT** — *Ngwa Nforbi v. Meza-Gonzalez & Melano*, §1983 (six causes: unlawful entry/search/arrest, Franks/judicial deception, fabrication, First Amendment retaliation); compensatory damages >$214,000 pleaded; case number assignment pending. Also owns the Meza-Gonzalez / CHP-cluster docket PDFs from Matters 1, 2, 20, and 24 under `matter-32/from-01|02|20|24/` and the new N.D. Cal. filing set under `matter-32/ndcal/`.
-- **Matter 33** (USDC N.D. Cal.): **CASE FILED August 7, 2026, 4:05 p.m. PT** — *Nforbi v. Candelaria & Gordon*, §1983 APS structural-bias / fair-hearing / vacatur (five causes); compensatory damages >$214,000 and JS-44 demand $250,000 min.; case number assignment pending. Also owns the Nov. 1 / APS incident evidence (`matter-33/incident/`), Matter 7 PDFs (`from-07/`), Matter 8 PDFs (`from-08/`), the June 15, 2026 Candelaria F&R (`opinions/`), and the N.D. Cal. filing set under `matter-33/ndcal/`.
+- **Matter 33** (USDC N.D. Cal.): **CASE FILED August 7, 2026, 4:05 p.m. PT** — *Ngwa Nforbi v. Candelaria, et al*, §1983 APS structural-bias / fair-hearing / vacatur (five causes); compensatory damages >$214,000 and JS-44 demand $250,000 min.; case number assignment pending. Also owns the Nov. 1 / APS incident evidence (`matter-33/incident/`), Matter 7 PDFs (`from-07/`), Matter 8 PDFs (`from-08/`), the June 15, 2026 Candelaria F&R (`opinions/`), and the N.D. Cal. filing set under `matter-33/ndcal/`.
 
 ### Cluster 2 — Parole Retaliation, HOPE Abuse & Policy 19-03 (Matters 3–6, 11, 13–18, 21, 28, 30)
 
@@ -170,7 +170,7 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | 30 | Newanforbi v. Moua, et al. | TBD | USDC N.D. Cal. | Federal | Pre-filing — anticipated filing Sep. 16, 2026 |
 | 31 | Newanforbi v. First Advantage LLC | TBD | San Joaquin Sup. Ct. (anticipated) | State | Pre-filing |
 | 32 | Ngwa Nforbi v. Meza-Gonzalez, et al | TBD (filed N.D. Cal. Aug. 7, 2026, 4:05 p.m. PT — case number assignment pending) | USDC N.D. Cal. (filed Aug. 7, 2026, 4:05 p.m. PT; related Serrato 4:26-cv-05953-ASK) | Federal | Filed N.D. Cal. Aug. 7, 2026 @ 4:05 p.m. |
-| 33 | Newanforbi v. Candelaria (DMV APS / Nov. 1, 2024) | TBD (filed N.D. Cal. Aug. 7, 2026, 4:05 p.m. PT — case number assignment pending; prior E.D. Cal. Matter 7: 2:26-cv-00983-DC-CSK) | USDC N.D. Cal. (filed Aug. 7, 2026, 4:05 p.m. PT; companion to Matter 7 E.D. Cal. 2:26-cv-00983 — voluntarily dismissed w/o prejudice per operative complaint) | Federal | Filed N.D. Cal. Aug. 7, 2026 @ 4:05 p.m. |
+| 33 | Ngwa Nforbi v. Candelaria, et al | TBD (filed N.D. Cal. Aug. 7, 2026, 4:05 p.m. PT — case number assignment pending; prior E.D. Cal. Matter 7: 2:26-cv-00983-DC-CSK) | USDC N.D. Cal. (filed Aug. 7, 2026, 4:05 p.m. PT; companion to Matter 7 E.D. Cal. 2:26-cv-00983 — voluntarily dismissed w/o prejudice per operative complaint) | Federal | Filed N.D. Cal. Aug. 7, 2026 @ 4:05 p.m. |
 <!-- PORTFOLIO:ACTIVE_MATTERS:END -->
 
 ### Settled
@@ -283,7 +283,7 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | §1983 Retaliation, Due Process, Bane Act & IIED — Moua (Matter 30) | 30 | $90,000 | $225,000 | $525,000 |
 | FCRA / ICRAA Vendor Liability — First Advantage LLC (Matter 31) | 31 | $30,000 | $89,000 | $205,000 |
 | N.D. Cal. §1983 Meza-Gonzalez (Matter 32) — pleaded >$214k; $0 here to avoid double-count w/ M1/M2 | 32 | $0 | $0 | $0 |
-| N.D. Cal. §1983 Candelaria/Gordon (Matter 33) — pleaded >$214k; $0 here to avoid double-count w/ M7 | 33 | $0 | $0 | $0 |
+| N.D. Cal. §1983 Ngwa Nforbi v. Candelaria, et al (Matter 33) — pleaded >$214k; $0 here to avoid double-count w/ M7 | 33 | $0 | $0 | $0 |
 | **Portfolio Total (pre-deduplication)** | | **$1,160,672** | **$2,957,072** | **$6,579,272** |
 <!-- PORTFOLIO:DAMAGES_SUMMARY:END -->
 
