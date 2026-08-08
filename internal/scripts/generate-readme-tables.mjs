@@ -6,6 +6,7 @@
 //   - internal/src/data/matters/NN.json  (matter tables + counts)
 //   - internal/src/data/timeline.json    (upcoming deadlines)
 //   - internal/src/data/damages.js       (damages summary + aggregates)
+//   - internal/src/data/lawyerFees.js    (attorney-fees cluster table)
 //
 // Markers (HTML comments) in README.md delimit regenerable blocks:
 //   <!-- PORTFOLIO:<NAME>:START -->
