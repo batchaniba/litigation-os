@@ -1,5 +1,5 @@
 import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { Outlet, useLocation } from "react-router";
+import { Link, Outlet, useLocation } from "react-router";
 import upcoming from "../../data/upcoming.json";
 import { ThemeContext, THEMES } from "../../ThemeContext";
 import { PortfolioUIContext, type PortfolioUIValue } from "../../context/PortfolioUIContext";
@@ -8,7 +8,9 @@ import { getPDTMidnight, parseEventDatePDT } from "../../utils/dateUtils";
 import { DeadlineBanner } from "./DeadlineBanner";
 import { Breadcrumbs } from "./Breadcrumbs";
 import { PortfolioHeader } from "./PortfolioHeader";
-import { RouteLoading } from "../ui/AsyncState";
+import { EmptyState, RouteLoading } from "../ui/AsyncState";
+import { ErrorBoundary } from "../ui/ErrorBoundary";
+import { ROUTES } from "../../routes";
 
 const GlobalSearchDialog = lazy(() => import("../search/GlobalSearchDialog"));
 
@@ -68,7 +70,23 @@ export function ShellLayout() {
             <PortfolioHeader darkMode={darkMode} onSearch={openSearch} onToggleTheme={() => setDarkMode((value) => !value)} />
             <DeadlineBanner upcomingEvents={upcomingEvents} />
             <div className="app-container"><Breadcrumbs /></div>
-            <main id="main-content" ref={mainRef} tabIndex={-1} className="app-container app-main"><Outlet /></main>
+            <main id="main-content" ref={mainRef} tabIndex={-1} className="app-container app-main">
+              {/* Keyed on the path so navigating away from a broken section clears
+                  the error. The outer boundary in main.tsx sits above the router
+                  and can only offer a reload; this one keeps the chrome alive. */}
+              <ErrorBoundary
+                resetKey={location.pathname}
+                fallback={(error) => (
+                  <EmptyState
+                    title="This section could not be displayed."
+                    detail={error.message}
+                    action={<Link className="back-link" to={ROUTES.dashboard}>Back to the dashboard</Link>}
+                  />
+                )}
+              >
+                <Outlet />
+              </ErrorBoundary>
+            </main>
             <footer className="app-footer" style={{ borderColor: "var(--footer-border)", color: "var(--footer-text)" }}><div className="app-container">Interactive Litigation Portfolio</div></footer>
           </div>
           {searchOpen && <Suspense fallback={<RouteLoading label="Loading search" />}><GlobalSearchDialog onClose={closeSearch} /></Suspense>}
