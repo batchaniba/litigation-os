@@ -6,6 +6,7 @@
 //   - internal/src/data/matters/NN.json  (matter tables + counts)
 //   - internal/src/data/timeline.json    (upcoming deadlines)
 //   - internal/src/data/damages.js       (damages summary + aggregates)
+//   - internal/src/data/lawyerFees.js    (attorney-fees cluster table)
 //
 // Markers (HTML comments) in README.md delimit regenerable blocks:
 //   <!-- PORTFOLIO:<NAME>:START -->
@@ -146,6 +147,9 @@ for (const event of timeline) {
   }
 }
 const { damages_table } = await import(pathToFileURL(path.join(REPO_ROOT, "internal/src/data/damages.js")).href);
+const { lawyer_fees_summary: feeSummary, lawyer_fees: feeRows } = await import(
+  pathToFileURL(path.join(REPO_ROOT, "internal/src/data/lawyerFees.js")).href,
+);
 
 const active = cases.filter((m) => bucket(m) === "active");
 const settled = cases.filter((m) => bucket(m) === "settled");
@@ -247,6 +251,37 @@ const closedCountNote =
   `(structured \`lifecycle\` on each matter JSON). See [All Matters](#all-matters) below for the full disposition table. ` +
   `Pre-filing matters stay in the Active table.*`;
 
+const feeByNumber = new Map((feeRows || []).map((row) => [row.number, row]));
+const m32 = feeByNumber.get(32);
+const m33 = feeByNumber.get(33);
+const feeDate = feeSummary.analysisDate || "2026-08-08";
+const [fy, fm, fd] = String(feeDate).split("-").map(Number);
+const feeDateLabel = new Date(Date.UTC(fy, fm - 1, fd)).toLocaleDateString("en-US", {
+  month: "long",
+  day: "numeric",
+  year: "numeric",
+  timeZone: "UTC",
+});
+const clusterOrder = ["cluster1", "cluster2", "cluster3", "cluster4"];
+const feeClusterRows = clusterOrder
+  .map((key) => feeSummary.byCluster[key])
+  .filter(Boolean)
+  .map(
+    (c) =>
+      `| ${escapeCell(c.label)} | ${escapeCell(c.matters.join(", "))} | ${money(c.costLow)} | ${money(c.costMid)} | ${money(c.costHigh)} |`,
+  );
+const attorneyFeesBlock = [
+  `Plaintiff is representing himself pro se across all ${feeSummary.totalMatters} matters. The figures below represent what he would have been required to spend on private counsel to litigate this portfolio — costs he has absorbed entirely through self-representation. Based on real page counts extracted from ${feeSummary.totalDocumentsAnalyzed} documents / ${feeSummary.totalPagesReal.toLocaleString("en-US")} pages across matters with uploaded filings (Matter 32: ${m32?.documentsCount ?? "—"} PDFs / ${m32?.totalPagesReal?.toLocaleString("en-US") ?? "—"} pages — N.D. Cal. ndcal/ filing billed; from-01|02|20|24/ stay attributed to source matters; Matter 33: ${m33?.documentsCount ?? "—"} PDFs / ${m33?.totalPagesReal?.toLocaleString("en-US") ?? "—"} pages — N.D. Cal. refile + Nov. 1 / APS evidence; from-07/from-08 drafting stays on Matters 7/8; Matter 31 has no uploaded PDFs of its own), classified by document type and priced at a blended rate of **$${feeSummary.methodology.blendedHourlyRate}/hour** (senior partner $${feeSummary.methodology.rateRange.seniorPartner[0]}–$${feeSummary.methodology.rateRange.seniorPartner[1]} / mid-associate $${feeSummary.methodology.rateRange.midAssociate[0]}–$${feeSummary.methodology.rateRange.midAssociate[1]} / paralegal $${feeSummary.methodology.rateRange.paralegal[0]}–$${feeSummary.methodology.rateRange.paralegal[1]}). Opposing-party filings billed at light review rate only. Fee analysis date: ${feeDateLabel}.`,
+  ``,
+  `| Cluster | Matters | Low | Mid | High |`,
+  `|---|---|---|---|---|`,
+  ...feeClusterRows,
+  `| **Portfolio Total** | **${feeSummary.totalMatters} matters** | **${money(feeSummary.totalEstimatedCost.low)}** | **${money(feeSummary.totalEstimatedCost.mid)}** | **${money(feeSummary.totalEstimatedCost.high)}** |`,
+  `| **Estimated Hours** | | **${feeSummary.totalEstimatedHours.low.toLocaleString("en-US")} hrs** | **${feeSummary.totalEstimatedHours.mid.toLocaleString("en-US")} hrs** | **${feeSummary.totalEstimatedHours.high.toLocaleString("en-US")} hrs** |`,
+  ``,
+  `*Plaintiff has litigated all ${feeSummary.totalMatters} matters pro se, absorbing the full economic equivalent of the above without compensation. Fee-shifting statutes (42 U.S.C. §1988, PC §290.46(j)(4)(A), RICO 18 U.S.C. §1964(c), FCRA, ICRAA) apply across the majority of active matters — mandatory fee recovery upon prevailing substantially offsets or eliminates the above costs.*`,
+].join("\n");
+
 let readme = fs.readFileSync(README, "utf8");
 const replacements = {
   OVERVIEW_TABLE: overviewTable,
@@ -256,6 +291,7 @@ const replacements = {
   CLOSED_MATTERS: closedTable,
   UPCOMING_DEADLINES: deadlinesTable,
   DAMAGES_SUMMARY: damagesTable,
+  ATTORNEY_FEES: attorneyFeesBlock,
 };
 
 for (const [name, body] of Object.entries(replacements)) {

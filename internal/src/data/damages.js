@@ -14,8 +14,8 @@ export const damages_table = [
     { category: "PC §290.46(j) Failure to Hire — Amazon (Matter 29)", matters: "29", conservative: 30000, moderate: 75000, aggressive: 180000 },
     { category: "§1983 Retaliation, Due Process, Bane Act & IIED — Moua (Matter 30)", matters: "30", conservative: 90000, moderate: 225000, aggressive: 525000 },
     { category: "FCRA / ICRAA Vendor Liability — First Advantage LLC (Matter 31)", matters: "31", conservative: 30000, moderate: 89000, aggressive: 205000 },
-    { category: "Nov. 1, 2024 CHP Incident Evidence Home — Ngwa Nforbi v. Meza-Gonzalez (Matter 32)", matters: "32", conservative: 0, moderate: 0, aggressive: 0 },
-    { category: "Candelaria / DMV APS Document Home — Newanforbi v. Candelaria (Matter 33)", matters: "33", conservative: 0, moderate: 0, aggressive: 0 }
+    { category: "N.D. Cal. §1983 Meza-Gonzalez (Matter 32) — pleaded >$214k; $0 here to avoid double-count w/ M1/M2", matters: "32", conservative: 0, moderate: 0, aggressive: 0 },
+    { category: "N.D. Cal. §1983 Candelaria/Gordon (Matter 33) — pleaded >$214k; $0 here to avoid double-count w/ M7", matters: "33", conservative: 0, moderate: 0, aggressive: 0 }
 ];
 // Matters 3, 5, and 15 are excluded/reduced above (abandoned/dismissed Jul. 2026):
 // - Matter 3 (Derrick, ABANDONED): its Lost Income, Emotional Distress, Punitive, and Fees
@@ -316,27 +316,27 @@ export const matter_damages = [
     {
         number: 32,
         caption: "Ngwa Nforbi v. Meza-Gonzalez, et al",
-        court: "TBD (evidence home; Matter 2 is the filed Alameda action)",
-        claims: "Nov. 1, 2024 CHP incident evidence consolidation under Ngwa Nforbi caption",
-        status: "Opened Aug. 7, 2026 — owns relocated chp-nov1-2024 PDFs; no independent complaint filed",
-        risk: "Caption-confusion risk with Matter 2 only — do not plead overlapping damages under this matter number",
-        settlement_note: "Deliberately $0 — operative damages for this encounter remain in Matters 1 and 2; Matter 32 is documentary ownership of the shared incident PDF set",
+        court: "USDC N.D. Cal. (filed Aug. 7, 2026; case number pending)",
+        claims: "§1983 — six causes (unlawful entry/search/arrest, Franks, fabrication, 1A retaliation)",
+        status: "CASE FILED Aug. 7, 2026, 4:05 p.m. PT — N.D. Cal. operative v3; case number pending",
+        risk: "Overlaps Matter 2 (state) and Matter 24 (related N.D. Cal.) — manage claim-splitting; do not double-count CDL wages with Matters 1/2",
+        settlement_note: "Operative complaint pleads >$214,000 compensatory. Portfolio row stays $0 so the shared Nov. 1 / CDL wage-loss period is not double-counted against Matters 1 and 2; use Matter 32's pleaded figure in N.D. Cal. negotiations.",
         conservative: 0, moderate: 0, aggressive: 0,
         components: [
-            { label: "Reserved to Matters 1 and 2 (no independent demand under this caption)", conservative: 0, moderate: 0, aggressive: 0 }
+            { label: "Reserved — pleaded >$214k in N.D. Cal.; portfolio $0 avoids double-count with Matters 1/2", conservative: 0, moderate: 0, aggressive: 0 }
         ]
     },
     {
         number: 33,
         caption: "Newanforbi v. Candelaria (DMV APS / Nov. 1, 2024)",
-        court: "TBD (document home; Matters 7 and 8 are the live/abandoned dockets)",
-        claims: "Candelaria / DMV APS PDF consolidation for the Nov. 1, 2024 incident and APS hearing",
-        status: "Opened Aug. 7, 2026 — owns Candelaria/DMV APS PDFs from Matters 7, 8, 32, and opinions/; no independent complaint filed",
-        risk: "Document-home only — do not plead overlapping damages under this matter number; operative damages remain in Matter 7",
-        settlement_note: "Deliberately $0 — operative damages for the APS / structural-bias track remain in Matter 7; Matter 33 is documentary ownership of the Candelaria / Nov. 1 APS PDF set",
+        court: "USDC N.D. Cal. (filed Aug. 7, 2026; case number pending)",
+        claims: "§1983 APS structural bias / fair hearing / vacatur vs Candelaria & Gordon",
+        status: "CASE FILED Aug. 7, 2026, 4:05 p.m. PT — N.D. Cal. operative v3; case number pending",
+        risk: "Refile after alleged Matter 7 voluntary dismissal — confirm E.D. Cal. docket; coordinate with Matter 32 and Serrato related-case notice",
+        settlement_note: "Operative complaint pleads >$214,000 compensatory / $250,000 JS-44 min. Portfolio row stays $0 so the APS / CDL wage-loss period is not double-counted against Matter 7; use Matter 33's pleaded figure in N.D. Cal. negotiations.",
         conservative: 0, moderate: 0, aggressive: 0,
         components: [
-            { label: "Reserved to Matter 7 (no independent demand under this caption)", conservative: 0, moderate: 0, aggressive: 0 }
+            { label: "Reserved — pleaded >$214k in N.D. Cal.; portfolio $0 avoids double-count with Matter 7", conservative: 0, moderate: 0, aggressive: 0 }
         ]
     }
 ];

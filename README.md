@@ -2,7 +2,7 @@
 
 # Interactive Litigation Portfolio
 
-An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi**, Pro Se / In Propria Persona. The portfolio tracks 31 civil matters across federal and California state courts, providing a structured view of case status, procedural history, damages exposure, and overarching legal theories.
+An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi**, Pro Se / In Propria Persona. The portfolio tracks 33 civil matters across federal and California state courts, providing a structured view of case status, procedural history, damages exposure, and overarching legal theories.
 
 **Live site:** [interactive-litigation-portfolio.vercel.app](https://interactive-litigation-portfolio.vercel.app)
 
@@ -12,7 +12,7 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 
 - [Overview](#overview)
 - [Case Clusters](#case-clusters)
-  - [1 — CHP Traffic Stop, DUI Arrest & DMV APS Challenge](#cluster-1--chp-traffic-stop-dui-arrest--dmv-aps-challenge-matters-1-2-7-8-20-24)
+  - [1 — CHP Traffic Stop, DUI Arrest & DMV APS Challenge](#cluster-1--chp-traffic-stop-dui-arrest--dmv-aps-challenge-matters-1-2-7-8-20-24-32-33)
   - [2 — Parole Retaliation, HOPE Abuse & Policy 19-03](#cluster-2--parole-retaliation-hope-abuse--policy-19-03-matters-36-11-1318-21-28-30)
   - [3 — Consumer Fraud / Defective Vehicle](#cluster-3--consumer-fraud--defective-vehicle-matter-12)
   - [4 — Administrative Writs & Habeas Corpus](#cluster-4--administrative-writs--habeas-corpus-matters-9-10-19)
@@ -53,7 +53,7 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 
 > **Housing status:** Homeless since July 2, 2026 — a direct consequence of a retaliatory inter-county parole transfer (Stockton → Santa Clara) imposed immediately after filing Matter 15 (*Newanforbi v. CDCR, et al.*). The transfer caused loss of Stockton family housing; Matters 3, 9, and 19 are also potential retaliatory predicate acts.
 >
-> **Cost of self-representation:** All 33 matters are self-litigated. Estimated equivalent private-counsel cost: **$776,804–$1,287,496** (see [Attorney Fees Analysis](#attorney-fees-analysis)).
+> **Cost of self-representation:** All 33 matters are self-litigated. Estimated equivalent private-counsel cost: **$799,904–$1,324,176** (see [Attorney Fees Analysis](#attorney-fees-analysis)).
 
 [↑ Contents](#contents)
 
@@ -61,16 +61,18 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 
 ## Case Clusters
 
-### Cluster 1 — CHP Traffic Stop, DUI Arrest & DMV APS Challenge (Matters 1, 2, 7, 8, 20, 24)
+### Cluster 1 — CHP Traffic Stop, DUI Arrest & DMV APS Challenge (Matters 1, 2, 7, 8, 20, 24, 32, 33)
 
-Arising from a November 1, 2024 CHP encounter on I-580. Officers arrested Plaintiff after he declined an optional PAS test, despite dashcam footage contradicting the DUI report's fabricated observations. No charges were filed; a 5-day parole hold followed. The cluster spans six matters:
+Arising from a November 1, 2024 CHP encounter on I-580. Officers arrested Plaintiff after he declined an optional PAS test, despite dashcam footage contradicting the DUI report's fabricated observations. No charges were filed; a PC §849(b)(1) Detention Certificate followed on November 5, 2024; a 5-day parole hold and a one-year Class A CDL suspension (APS Case 34739340) followed. The cluster now spans eight matters — six historical dockets plus two N.D. Cal. filings opened August 7, 2026:
 
-- **Matter 1** (USDC E.D. Cal.): Federal §1983 against CHP officers; adverse F&R issued April 20, 2026 (Magistrate CSK recommends MTD GRANTED WOLA — 4th/14th Amendment, qualified immunity); District Judge DC adoption pending. If adopted, Matter 2 (Alameda, stayed) becomes the primary vehicle.
+- **Matter 1** (USDC E.D. Cal.): Federal §1983 against CHP officers; adverse F&R issued April 20, 2026 (Magistrate CSK recommends MTD GRANTED WOLA — 4th/14th Amendment, qualified immunity); District Judge DC adoption pending. If adopted, Matter 2 (Alameda, stayed) and the new Matter 32 N.D. Cal. filing become the primary vehicles.
 - **Matter 2** (Alameda Sup. Ct.): Parallel state tort action (False Imprisonment, Battery, Bane Act); STAYED pending Matter 1 District Judge ruling.
-- **Matter 7** (USDC E.D. Cal.): Federal §1983 against DMV Hearing Officer Candelaria and DMV Director Gordon; adverse F&R issued June 15, 2026 (Magistrate CSK: IFP denied as frivolous; FAC dismissed WOLA — quasi-judicial immunity for Candelaria, 11th Amendment / standing failure for Gordon); District Judge DC adoption pending.
-- **Matter 8** (Sacramento Sup. Ct.): State Writ of Administrative Mandate challenging the same void APS decision; Fee Waiver Hearing held July 17, 2026, Dept. 10C.
-- **Matter 20** (Alameda Sup. Ct.): State Writ of Mandate against CHP; demurrer opposition filed July 13, 2026; CHP demurrer hearing Aug. 28, 2026. Individual Respondents Serrato, Paul, and Dutra filed their own joinders/demurrers July 30, 2026 and stipulated to advance their Oct. 16/23 hearing dates to Aug. 28 as well (stipulation not yet entered).
-- **Matter 24** (USDC N.D. Cal.): §1983 against San Mateo Sheriff Deputy Serrato for arbitrary U Visa certification denial and retaliation; filed June 17, 2026; CMC September 15, 2026.
+- **Matter 7** (USDC E.D. Cal.): Federal §1983 against DMV Hearing Officer Candelaria and DMV Director Gordon; adverse F&R issued June 15, 2026 (Magistrate CSK: IFP denied as frivolous; FAC dismissed WOLA). Portfolio record still shows F&R pending on objections; Matter 33's operative N.D. Cal. complaint alleges Matter 7 was voluntarily dismissed without prejudice — confirm the E.D. Cal. docket before treating either posture as controlling.
+- **Matter 8** (Sacramento Sup. Ct.): State Writ of Administrative Mandate challenging the same void APS decision — **ABANDONED** after the July 17, 2026 fee-waiver hearing (non-appearance) and the ~July 27, 2026 fee-payment deadline lapsed. PDFs live under Matter 33 (`matter-33/from-08/`).
+- **Matter 20** (Alameda Sup. Ct.): State Writ of Mandate against CHP; demurrer opposition filed July 13, 2026; CHP demurrer hearing Aug. 28, 2026. Individual Respondents Serrato, Paul, and Dutra filed joinders/demurrers July 30, 2026 and stipulated to advance their Oct. 16/23 hearing dates to Aug. 28 (stipulation not yet entered).
+- **Matter 24** (USDC N.D. Cal.): §1983 against San Mateo Sheriff Deputy Serrato for arbitrary U Visa certification denial and retaliation; IFP granted June 29, 2026 (Krishnan screening order, now cited across the cluster); CMC September 15, 2026. Listed as related case on the Matter 32/33 JS-44s.
+- **Matter 32** (USDC N.D. Cal.): **CASE FILED August 7, 2026, 4:05 p.m. PT** — *Ngwa Nforbi v. Meza-Gonzalez & Melano*, §1983 (six causes: unlawful entry/search/arrest, Franks/judicial deception, fabrication, First Amendment retaliation); compensatory damages >$214,000 pleaded; case number assignment pending. Also owns the Meza-Gonzalez / CHP-cluster docket PDFs from Matters 1, 2, 20, and 24 under `matter-32/from-01|02|20|24/` and the new N.D. Cal. filing set under `matter-32/ndcal/`.
+- **Matter 33** (USDC N.D. Cal.): **CASE FILED August 7, 2026, 4:05 p.m. PT** — *Nforbi v. Candelaria & Gordon*, §1983 APS structural-bias / fair-hearing / vacatur (five causes); compensatory damages >$214,000 and JS-44 demand $250,000 min.; case number assignment pending. Also owns the Nov. 1 / APS incident evidence (`matter-33/incident/`), Matter 7 PDFs (`from-07/`), Matter 8 PDFs (`from-08/`), the June 15, 2026 Candelaria F&R (`opinions/`), and the N.D. Cal. filing set under `matter-33/ndcal/`.
 
 ### Cluster 2 — Parole Retaliation, HOPE Abuse & Policy 19-03 (Matters 3–6, 11, 13–18, 21, 28, 30)
 
@@ -129,20 +131,18 @@ Three equitable proceedings seeking court orders directing CDCR to act — no to
 
 - **Matter 9** (Sacramento Sup. Ct., 26WM000028): Writ of Mandate — **CLOSED**. Demurrer sustained without leave to amend May 29, 2026 (Hon. James P. Arguelles, Dept. 13A): CDCR has no duty under Pen. Code §3008 to conduct an individualized EDC assessment where §3000(b)(2)(B) mandates a 10-year parole term; habeas corpus is the correct vehicle. The substantive claim is live in Matter 19.
 - **Matter 10** (Santa Clara Sup. Ct., C2602632): Habeas Corpus — **CLOSED**. Petition denied without prejudice April 27, 2026 (exhaustion; PC §3008(d)(2) certification required).
-- **Matter 19** (Santa Clara Sup. Ct., C2604791): Habeas Corpus — **ACTIVE**. Seeks immediate and unconditional discharge from parole; filed April 3, 2026; Order Extending Time issued July 2, 2026 (Hon. Robert Hawk) setting a ruling deadline of August 1, 2026. **That deadline lapsed without a ruling** — as of August 7, 2026 Judge Hawk has not ruled and no further extension order has issued. The petition remains pending and under submission; it has not been denied, dismissed, or set for an Order to Show Cause.
+- **Matter 19** (Santa Clara Sup. Ct., C2604791): Habeas Corpus — **ACTIVE**. Seeks immediate and unconditional discharge from parole; filed April 3, 2026; Order Extending Time issued July 2, 2026 (Hon. Robert Hawk) setting a ruling deadline of August 1, 2026. **That deadline lapsed without a ruling** — as of August 7, 2026 Judge Hawk has not ruled and no further extension order has issued. The petition remains pending and under submission; it has not been denied, dismissed, or set for an Order to Show Cause. An HC-004 request-for-ruling packet was prepared August 7, 2026 and is ready to file.
 
 ### Cluster 5 — Employment / Statutory Violation (Matters 22, 25, 26, 27, 29, 31)
 
-Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibition on using sex offender registry information for employment purposes — against separate employers across a 30-month window, plus a sixth matter (31) asserting vendor-side FCRA/ICRAA liability against the background-check company that supplied two of those registry-flagged reports.
+Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibition on using sex offender registry information for employment purposes — against separate employers across a 30-month window, plus a sixth matter (31) asserting vendor-side FCRA/ICRAA liability against the background-check company that supplied two of those registry-flagged reports. (Matters 32 and 33 are CHP / DMV APS filings — see Cluster 1.)
 
-- **Matter 22** (Newanforbi v. Pilot Travel Centers LLC) — **SETTLED July 11, 2026** — San Joaquin Superior Court (STK-CV-UWT-2026-0007649). Wrongful termination; Defendant's own Post-Adverse Action Notice admitted registry as sole termination basis. Resolved pro se in under seven weeks from filing, before service was completed. First portfolio settlement.
-- **Matter 25** (Newanforbi v. Federal Express Corporation) — San Joaquin Superior Court (STK-CV-UWT-2026-0009118); PC §290.46(j) failure to hire; First Advantage BGC ran March 2025; final adverse action March 19, 2025; complaint filed July 15, 2026; assigned to Dept. 10B, Hon. Blanca Banuelos; CMC January 14, 2027. LA County Sheriff's Department confirmed acceptance of the SER-001 service request July 21, 2026 (File No. 2026075280, fee waiver applied). **SERVED July 24, 2026** on Ct Corporation System (Jaqueline Mejia, CA Authorized Employee), per the Sheriff's Civil File Status.
-- **Matter 26** (Newanforbi v. United Parcel Service, Inc.) — San Joaquin Superior Court (STK-CV-UWT-2026-0009113); PC §290.46(j) failure to hire; First Advantage BGC ran July 2024; final adverse action July 31, 2024; complaint filed July 15, 2026 — **2-year limitations period preserved (filed 16 days ahead of the July 31, 2026 cutoff)**; UPS filed first (lower case number); assigned to Dept. 11B, Hon. Robert T. Waters; CMC January 13, 2027. **SERVED July 22, 2026** on Josh Swindell, Authorized Agent, per the Sacramento County Sheriff's Civil File Status (the sheriff's civil file itself shows Closed as of July 23, 2026, reflecting only completion of the service assignment — the underlying action remains active).
-- **Matter 27** (Newanforbi v. Randstad US, LLC and RK Logistics Group, Inc.) — Alameda Superior Court, Case No. **26CV199902**, Hon. Karin Schwartz, Dept. 20; PC §290.46(j) / FCRA / ICRAA / Tameny wrongful termination. Rehired July 7, 2026; InfoMart BGC (Order No. 15780719) shows Billing Code "RK LOGISTICS" and Status "NEEDS APPROVAL, PER CLIENT CRITERIA" with registry as the sole adverse flag; Randstad terminated employment July 15, 2026, two business days after the FCRA pre-adverse notice — short of the 5-business-day waiting period. Verified Complaint e-filed July 20, 2026 via One Legal; Complaint, Civil Case Cover Sheet, and Fee Waiver accepted; corrected Summons ELECTRONICALLY FILED/ACCEPTED July 21, 2026. Pre-filing demand letters ($85,000 each) sent to both defendants the same day. **On July 21, 2026, RK Logistics denied the demand through counsel Garcia & Gurney, ALC (Melinda Garcia, Esq.)**, arguing (1) Randstad, not RK Logistics, was the employer, and (2) the rejection was MVR-based, not registry-based. Neither ground reaches Randstad, which has not responded; the employer-status argument is also undercut by RK Logistics' own Transportation Manager's written rejection email, and the MVR defense cites a commercial (Class A) disqualification inapplicable to the non-commercial Class C position at issue. **SERVED July 30, 2026, 1:34 PM** on both defendants (Josh Swindell, Authorized Agent) per the Sacramento County Sheriff's Civil File Status (File No. 2026026857; sheriff civil file Closed as of July 31, 2026 reflecting only completion of the service assignment — the underlying action remains active); responsive pleading due August 31, 2026.
-- **Matter 29** (Newanforbi v. Amazon.com Services, LLC and Accurate Background LLC) — anticipated Alameda Superior Court; PC §290.46(j) / FCRA / ICRAA / IIED failure to hire. Application submitted; pre-hire appointment attended July 7, 2026 (Fremont, CA); Accurate Background LLC (shortcode 45996) BGC submitted July 7, 2026; BGC pending 10+ days as of July 17, 2026; adverse action anticipated. Sixth PC §290.46(j) matter in portfolio; complaint not yet filed. **Critical precedent: Lerma v. Amazon.com Services, LLC et al., No. 8:22-cv-01727 (C.D. Cal., settled Sept. 29, 2023)** — putative class action against the same two defendants (Amazon + Accurate Background) on the same PC §290.46(j) registry theory; Amazon's post-settlement continuation of the identical practice in 2026 establishes willfulness under Civ. Code §3294.
-- **Matter 31** (Newanforbi v. First Advantage LLC) — anticipated San Joaquin Superior Court; FCRA §1681b(b) / FCRA §1681e(b) / ICRAA / Negligence Per Se / UCL §17200. **Identified July 30, 2026 via a portfolio-wide gap analysis**, not yet filed and no demand letter sent. First Advantage LLC is the background-check vendor that generated and transmitted the registry-flagged reports and every pre-adverse/adverse notice underlying both Matter 25 (FedEx, March 2025) and Matter 26 (UPS, July 2024) — the same role Accurate Background LLC plays in Matter 29 and HireRight played in the abandoned Matter 23 — yet First Advantage itself was never joined as a defendant in either matter. This vendor-liability theory is additive to, not duplicative of, Matters 25/26: it targets First Advantage's own furnishing conduct rather than the employers' use of the reports, and deliberately excludes the emotional-distress/lost-opportunity damages already claimed there to avoid double-counting.
-- **Matter 32** (Ngwa Nforbi v. Meza-Gonzalez, et al) — PDF home for the Meza-Gonzalez / CHP-cluster docket filings from Matters 1, 2, 20, and 24 under `documents/matter-32/from-01|02|20|24/`. Opened August 7, 2026; no independent complaint filed under this caption. Source matters remain live docket records and cross-reference these paths. Damages deliberately $0 under this matter number to avoid double-counting.
-- **Matter 33** (Newanforbi v. Candelaria (DMV APS / Nov. 1, 2024)) — canonical PDF home for Candelaria / DMV APS materials tied to the November 1, 2024 CHP incident and the January 24, 2025 APS hearing. Holds the Nov. 1 incident evidence set (`matter-33/incident/`), Matter 7 Candelaria federal PDFs (`from-07/`), Matter 8 mandamus PDFs (`from-08/`), and the June 15, 2026 Candelaria F&R (`opinions/`). Opened August 7, 2026; no independent complaint filed under this caption. Matters 7 and 8 remain the live/abandoned docket records and cross-reference these paths. Damages deliberately $0 under this matter number to avoid double-counting.
+- **Matter 22** (Newanforbi v. Pilot Travel Centers LLC) — **SETTLED July 14, 2026** — San Joaquin Superior Court (STK-CV-UWT-2026-0007649). Wrongful termination; Defendant's own Post-Adverse Action Notice admitted registry as sole termination basis. Resolved pro se in under seven weeks from filing, before service was completed. First portfolio settlement. Closing out August 2026: CM-200 Notice of Settlement / CIV-110 request for dismissal mailed August 3, 2026; POS completed August 5, 2026.
+- **Matter 25** (Newanforbi v. Federal Express Corporation) — San Joaquin Superior Court (STK-CV-UWT-2026-0009118); PC §290.46(j) failure to hire; First Advantage BGC ran March 2025; final adverse action March 19, 2025; complaint filed July 15, 2026; assigned to Dept. 10B, Hon. Blanca Banuelos; CMC January 14, 2027. **SERVED July 24, 2026** on Ct Corporation System; responsive pleading due August 24, 2026.
+- **Matter 26** (Newanforbi v. United Parcel Service, Inc.) — San Joaquin Superior Court (STK-CV-UWT-2026-0009113); PC §290.46(j) failure to hire; First Advantage BGC ran July 2024; final adverse action July 31, 2024; complaint filed July 15, 2026 — **2-year limitations period preserved (filed 16 days ahead of the July 31, 2026 cutoff)**; assigned to Dept. 11B, Hon. Robert T. Waters; CMC January 13, 2027. **SERVED July 22, 2026**; responsive pleading due August 21, 2026.
+- **Matter 27** (Newanforbi v. Randstad US, LLC and RK Logistics Group, Inc.) — Alameda Superior Court, Case No. **26CV199902**, Hon. Karin Schwartz, Dept. 20; PC §290.46(j) / FCRA / ICRAA / Tameny wrongful termination. Rehired July 7, 2026; InfoMart BGC shows Billing Code "RK LOGISTICS" with registry as the sole adverse flag; Randstad terminated July 15, 2026, two business days after the FCRA pre-adverse notice. Verified Complaint e-filed July 20, 2026. **On July 21, 2026, RK Logistics denied the $85,000 demand through counsel Garcia & Gurney, ALC**, arguing (1) Randstad was the employer and (2) the rejection was MVR-based — neither ground reaches Randstad, and the MVR defense cites a commercial Class A disqualification inapplicable to the Class C position. **SERVED July 30, 2026** on both defendants; responsive pleading due August 31, 2026.
+- **Matter 29** (Newanforbi v. Amazon.com Services, LLC and Accurate Background LLC) — Alameda Superior Court, Case No. **26CV201554**, Hon. Jamilah Jefferson, Dept. 520; PC §290.46(j) / Fair Chance Act (Gov. Code §12952) / FCRA / ICRAA / UCL / IIED. **CASE FILED July 28, 2026**; **BOTH DEFENDANTS SERVED July 31, 2026** (Amazon via Sacramento County Sheriff; Accurate Background via private process server). Responsive pleading due August 31, 2026. Fee-waiver hearing set August 18, 2026 (Dept. FHO) — Plaintiff paid the $435 filing fee August 3, 2026 and requested the hearing be taken off calendar as moot. CCP §425.115 punitive-damages notices drafted August 7, 2026 ($250,000 Amazon / $100,000 Accurate Background), not yet served. **Lerma posture (corrected):** in *Lerma v. Amazon.com Services, LLC et al.*, No. 8:22-cv-01727 (C.D. Cal.), the PC §290.46(j) claim was **dismissed at the pleading stage (May 26, 2023)**; the case later settled (Sept. 29, 2023) on a surviving Fair Chance Act claim against Amazon only — useful Fair Chance / notice precedent, not a settled Megan's Law judgment against these defendants.
+- **Matter 31** (Newanforbi v. First Advantage LLC) — anticipated San Joaquin Superior Court; FCRA §1681b(b) / FCRA §1681e(b) / ICRAA / Negligence Per Se / UCL §17200. **Identified July 30, 2026 via portfolio gap analysis**; not yet filed and no demand letter sent. First Advantage generated the registry-flagged reports underlying Matters 25 and 26 — additive vendor liability, not a duplicate of the employer-side claims.
 
 [↑ Contents](#contents)
 
@@ -166,7 +166,7 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | 26 | Newanforbi v. United Parcel Service, Inc. | STK-CV-UWT-2026-0009113 | San Joaquin Sup. Ct. | State | CMC — Jan. 13, 2027 |
 | 27 | Newanforbi v. Randstad, et al. | 26CV199902 | Alameda Sup. Ct. | State | Served Jul. 30, 2026 — Response due Aug. 31, 2026 |
 | 28 | Newanforbi v. Shannon Smith, LCSW, CEO, et al. | 3:26-cv-07504 | USDC N.D. Cal. | Federal | Filed Jul. 20, 2026 — CMC Oct. 22, 2026 |
-| 29 | Newanforbi v. Amazon.com Services, LLC | 26CV201554 | Alameda Sup. Ct. (Hayward Hall of Justice, Dept. 520) | State | Filed Jul. 28, 2026 — service in progress |
+| 29 | Newanforbi v. Amazon.com Services, LLC | 26CV201554 | Alameda Sup. Ct. (Hayward Hall of Justice, Dept. 520) | State | Served Jul. 31, 2026 — response due Aug. 31 |
 | 30 | Newanforbi v. Moua, et al. | TBD | USDC N.D. Cal. | Federal | Pre-filing — anticipated filing Sep. 16, 2026 |
 | 31 | Newanforbi v. First Advantage LLC | TBD | San Joaquin Sup. Ct. (anticipated) | State | Pre-filing |
 | 32 | Ngwa Nforbi v. Meza-Gonzalez, et al | TBD (filed N.D. Cal. Aug. 7, 2026, 4:05 p.m. PT — case number assignment pending) | USDC N.D. Cal. (filed Aug. 7, 2026, 4:05 p.m. PT; related Serrato 4:26-cv-05953-ASK) | Federal | Filed N.D. Cal. Aug. 7, 2026 @ 4:05 p.m. |
@@ -282,14 +282,14 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | PC §290.46(j) Failure to Hire — Amazon (Matter 29) | 29 | $30,000 | $75,000 | $180,000 |
 | §1983 Retaliation, Due Process, Bane Act & IIED — Moua (Matter 30) | 30 | $90,000 | $225,000 | $525,000 |
 | FCRA / ICRAA Vendor Liability — First Advantage LLC (Matter 31) | 31 | $30,000 | $89,000 | $205,000 |
-| Nov. 1, 2024 CHP Incident Evidence Home — Ngwa Nforbi v. Meza-Gonzalez (Matter 32) | 32 | $0 | $0 | $0 |
-| Candelaria / DMV APS Document Home — Newanforbi v. Candelaria (Matter 33) | 33 | $0 | $0 | $0 |
+| N.D. Cal. §1983 Meza-Gonzalez (Matter 32) — pleaded >$214k; $0 here to avoid double-count w/ M1/M2 | 32 | $0 | $0 | $0 |
+| N.D. Cal. §1983 Candelaria/Gordon (Matter 33) — pleaded >$214k; $0 here to avoid double-count w/ M7 | 33 | $0 | $0 | $0 |
 | **Portfolio Total (pre-deduplication)** | | **$1,160,672** | **$2,957,072** | **$6,579,272** |
 <!-- PORTFOLIO:DAMAGES_SUMMARY:END -->
 
 *Note: The portfolio total reflects independent per-defendant exposure across all matters before deduplication of shared economic events (e.g., the same CDL wage-loss period underlying Matters 1, 2, 7, 15). Per-matter settlement negotiations treat each defendant independently.*
 
-*Matter 22 (Pilot) settled July 11, 2026 — terms confidential per settlement agreement.*
+*Matter 22 (Pilot) settled July 14, 2026 — terms confidential per settlement agreement. Matters 32 and 33 plead compensatory damages exceeding $214,000 in their N.D. Cal. complaints; the $0 rows above keep the portfolio damages table from double-counting the same Nov. 1 / APS economic loss already modeled in Matters 1, 2, and 7.*
 
 *Matters 3 (Derrick), 5 (Palacios), and 15 (CDCR/Dodd/Noguchi) have been excluded/reduced above following their abandonment or dismissal. Matter 3's Lost Income, Emotional Distress, Punitive, and Fees components; Matter 5's Lost CDL Wages, Bane Act/Treble, Punitive, and Fees components; and Matter 15's Lost CDL Wages, Liberty Deprivation, Emotional Distress, and Punitive components were all subtracted from their matching rows. Two gaps are worth flagging: Matter 5's own damages breakdown has no dedicated Emotional Distress line item, so that row still carries its unquantified share; and Matter 15's Out-of-Pocket Compliance Costs ($20K/$40K/$60K) and Retaliatory Transfer Losses ($15K/$30K/$64K) components never had a matching category row at all, so removing Matter 15 pulls more out of the Per-Matter total than out of this table. The Emotional Distress row's conservative estimate would have gone negative after Matter 15's subtraction (already reduced by Matter 3's share); it's floored at $0 rather than shown negative. Matter 30 (Moua) is included above at full value — it is pending, not abandoned; see the Cluster 2 notes.*
 
@@ -299,18 +299,20 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 
 ## Attorney Fees Analysis
 
-Plaintiff is representing himself pro se across all 33 matters. The figures below represent what he would have been required to spend on private counsel to litigate this portfolio — costs he has absorbed entirely through self-representation. Based on real page counts extracted from documents across the matters with uploaded filings (Matter 33 owns 26 PDFs / 312 pages as the Candelaria / DMV APS document store and bills the previously unowned Nov. 1 incident evidence set at evidence-compilation rates — from-07/from-08 drafting stays attributed to Matters 7/8; Matter 32 owns 73 PDFs / 731 pages under from-01|02|20|24/ at $0 to avoid double-counting; Matter 31 has no uploaded PDFs of its own), classified by document type and priced at a blended rate of **$280/hour** (senior partner $350–$450 / mid-associate $250–$350 / paralegal $150–$200). Opposing-party filings billed at light review rate only.
+<!-- PORTFOLIO:ATTORNEY_FEES:START -->
+Plaintiff is representing himself pro se across all 33 matters. The figures below represent what he would have been required to spend on private counsel to litigate this portfolio — costs he has absorbed entirely through self-representation. Based on real page counts extracted from 326 documents / 3,898 pages across matters with uploaded filings (Matter 32: 78 PDFs / 808 pages — N.D. Cal. ndcal/ filing billed; from-01|02|20|24/ stay attributed to source matters; Matter 33: 30 PDFs / 428 pages — N.D. Cal. refile + Nov. 1 / APS evidence; from-07/from-08 drafting stays on Matters 7/8; Matter 31 has no uploaded PDFs of its own), classified by document type and priced at a blended rate of **$280/hour** (senior partner $350–$450 / mid-associate $250–$350 / paralegal $150–$200). Opposing-party filings billed at light review rate only. Fee analysis date: August 8, 2026.
 
 | Cluster | Matters | Low | Mid | High |
 |---|---|---|---|---|
-| CHP / DUI / DMV | 1, 2, 7, 8, 20, 24, 32 | $139,636 | $185,332 | $231,028 |
+| CHP / DUI / DMV | 1, 2, 7, 8, 20, 24, 32, 33 | $162,036 | $214,172 | $266,308 |
 | Parole Retaliation / HOPE | 3, 4, 5, 6, 11, 13, 14, 15, 16, 17, 18, 21, 28, 30 | $459,312 | $602,392 | $749,672 |
-| Consumer Fraud / Employment | 12, 22, 23, 25, 26, 27, 29, 31 | $121,156 | $164,990 | $208,740 |
-| Administrative Writs & Habeas | 9, 10, 19 | $41,020 | $57,050 | $73,080 |
-| **Portfolio Total** | **33 matters** | **$776,804** | **$1,030,050** | **$1,287,496** |
-| **Estimated Hours** | | **2,774.3 hrs** | **3,678.75 hrs** | **4,598.2 hrs** |
+| Consumer Fraud / Employment | 12, 22, 23, 25, 26, 27, 29, 31 | $136,976 | $185,500 | $233,940 |
+| Administrative Writs & Habeas | 9, 10, 19 | $41,580 | $57,890 | $74,200 |
+| **Portfolio Total** | **33 matters** | **$799,904** | **$1,059,940** | **$1,324,176** |
+| **Estimated Hours** | | **2,856.8 hrs** | **3,785.5 hrs** | **4,729.2 hrs** |
 
-*Plaintiff has litigated all 30 matters pro se, absorbing the full economic equivalent of the above without compensation. Fee-shifting statutes (42 U.S.C. §1988, PC §290.46(j)(4)(A), RICO 18 U.S.C. §1964(c), FCRA, ICRAA) apply across the majority of active matters — mandatory fee recovery upon prevailing substantially offsets or eliminates the above costs.*
+*Plaintiff has litigated all 33 matters pro se, absorbing the full economic equivalent of the above without compensation. Fee-shifting statutes (42 U.S.C. §1988, PC §290.46(j)(4)(A), RICO 18 U.S.C. §1964(c), FCRA, ICRAA) apply across the majority of active matters — mandatory fee recovery upon prevailing substantially offsets or eliminates the above costs.*
+<!-- PORTFOLIO:ATTORNEY_FEES:END -->
 
 [↑ Contents](#contents)
 
@@ -336,9 +338,11 @@ Plaintiff is representing himself pro se across all 33 matters. The figures belo
 
 9. **Policy 19-03 as Ultra Vires Action** — Policy 19-03 is affirmatively contradictory to 15 CCR § 3574 (effective April 2025). Regulations have the force of statute (*Tidewater Marine*). *Mathews v. Eldridge* balancing confirms a due process violation.
 
-10. **PC §290.46(j)(2)(E) Pattern Across Five Employers** — Matter 22 (Pilot, settled), Matter 25 (FedEx), Matter 26 (UPS), Matter 27 (Randstad/RK Logistics), Matter 29 (Amazon). Each case's willfulness finding supports punitive damages in the others. Matter 22's settlement confirms the statutory claim is viable; Matter 27's InfoMart report is the strongest evidence set (Plaintiff holds the actual BGC report; Billing Code "RK LOGISTICS" documents the end-client's criteria configuration); Matter 29's Accurate Background SMS (shortcode 45996) establishes the BGC vendor relationship and consent. **Matter 29 carries a uniquely powerful willfulness predicate:** *Lerma v. Amazon.com Services, LLC et al.*, No. 8:22-cv-01727 (C.D. Cal., filed Sept. 2022, settled Sept. 29, 2023) — a putative class action in which Amazon and Accurate Background LLC were co-defendants on the identical PC §290.46(j) registry-for-employment theory — Amazon's post-settlement continuation of the same BGC practice in July 2026 eliminates any good-faith defense and satisfies the "conscious disregard" standard for punitive damages under Cal. Civ. Code §3294 as to both defendants. **Matter 27's July 21, 2026 denial letter tests this theory directly:** RK Logistics, through Garcia & Gurney, ALC, argued (1) Randstad — not RK Logistics — was the employer, and (2) the adverse decision was MVR-based rather than registry-based. Neither ground disturbs the pattern: the employer-status argument reaches only the Tameny claim (not the other five causes of action) and is undercut by RK Logistics' own Transportation Manager's written rejection email; the MVR-based defense cites a commercial (Class A) disqualification that does not apply to the non-commercial Class C position at issue, and predates Plaintiff's Class C license reissue by three weeks. Randstad's own FCRA waiting-period violation is untouched by either defense and remains unanswered.
+10. **PC §290.46(j)(2)(E) Pattern Across Five Employers** — Matter 22 (Pilot, settled July 14, 2026), Matter 25 (FedEx, served), Matter 26 (UPS, served), Matter 27 (Randstad/RK Logistics, served), Matter 29 (Amazon + Accurate Background, filed July 28, 2026 / both served July 31, 2026). Matter 22's settlement confirms the statutory claim is viable; Matter 27's InfoMart report (Billing Code "RK LOGISTICS") is the strongest single evidence set; Matter 29 adds a Fair Chance Act (Gov. Code §12952) count alongside §290.46(j). **Lerma corrected:** in *Lerma v. Amazon.com Services, LLC et al.*, No. 8:22-cv-01727 (C.D. Cal.), the PC §290.46(j) claim was dismissed at the pleading stage (May 26, 2023); the Sept. 29, 2023 settlement resolved a surviving Fair Chance Act claim against Amazon only — useful notice / Fair Chance precedent, not a settled Megan's Law judgment against Amazon or Accurate Background. **Matter 27's July 21, 2026 denial letter** (Garcia & Gurney, ALC) argued Randstad-was-the-employer and MVR-based rejection; neither ground reaches Randstad's unanswered FCRA waiting-period violation, and the MVR defense cites a commercial Class A disqualification inapplicable to the Class C position.
 
 11. **Consumer Reporting Agency Liability for Registry-Flagged Reports (Matter 31)** — First Advantage LLC generated and transmitted the registry-flagged background reports and every pre-adverse/adverse notice underlying both Matter 25 (FedEx, March 2025) and Matter 26 (UPS, July 2024) — an identical notice template and cadence, eight months apart, for two different employers — yet was never itself joined as a defendant in either matter, unlike the comparable vendors elsewhere in the same cluster (Accurate Background, Matter 29; HireRight, the abandoned Matter 23). This theory targets the vendor's own furnishing conduct under FCRA §§1681b(b) and 1681e(b) and ICRAA, rather than the employers' use of the reports, and is pled as additive to — not duplicative of — Matters 25 and 26.
+
+12. **N.D. Cal. Refile of the Nov. 1 / APS Cluster (Matters 32 & 33)** — Filed the same day (August 7, 2026, 4:05 p.m. PT) under related-case notices to Serrato (Matter 24). Matter 32 brings six §1983 counts against the arresting CHP officers under the Ngwa Nforbi name form on the DS-367; Matter 33 brings the APS structural-bias / vacatur theory against Candelaria and Gordon after an alleged voluntary dismissal without prejudice of the E.D. Cal. Matter 7 action. Both plead compensatory damages exceeding $214,000. Portfolio damages rows for 32/33 remain $0 so the shared CDL wage-loss period is not triple-counted against Matters 1, 2, and 7.
 
 [↑ Contents](#contents)
 
@@ -347,8 +351,8 @@ Plaintiff is representing himself pro se across all 33 matters. The figures belo
 ## Tech Stack
 
 - **Languages:** TypeScript + JavaScript (the app, mid-migration to TS — new modules should be `.ts`/`.tsx`), CSS, Python 3.11 (the document-automation scripts), YAML (CI workflows)
-- **Framework:** React 18
-- **Build tool:** Vite 6
+- **Framework:** React 19
+- **Build tool:** Vite 8
 - **Linting:** ESLint 9 flat config (`eslint.config.js`) for JS/TS, ruff (`pyproject.toml`) for Python — both enforced in CI
 - **Deployment:** Vercel (primary) + GitHub Pages (mirror)
 - **Fonts:** Cormorant Garamond (headings), DM Sans (UI)
@@ -358,7 +362,7 @@ Plaintiff is representing himself pro se across all 33 matters. The figures belo
   - `proceeding` — track: `state_civil` | `federal_civil` | `mandate` | `habeas`
   - `phase` — current stage on that track (e.g. `demurrer`, `fr_pending`, `under_submission`, `responsive_deadline`; `terminal` when disposed)
 - **Timeline:** `internal/src/data/timeline.json` (full log) + generated `upcoming.json` for the shell deadline clock
-- **Documents:** `internal/public/documents/` (CHP-cluster docket PDFs under `matter-32/from-01|02|20|24/`; Candelaria / DMV APS PDFs under `matter-33/incident|from-07|from-08|opinions/`; blank Judicial Council templates under `_form-library/`)
+- **Documents:** `internal/public/documents/` (Matter 32: `from-01|02|20|24/` + N.D. Cal. filing under `ndcal/`; Matter 33: `incident|from-07|from-08|opinions/` + N.D. Cal. filing under `ndcal/`; blank Judicial Council templates under `_form-library/`)
 
 ### Prose length budgets
 
@@ -399,7 +403,7 @@ npm run generate:readme       # regenerate marked README tables from portfolio d
 npm run lint                  # ESLint over internal/src + internal/scripts
 npm run lint:fix              # ...and auto-fix what is safely fixable
 npm run validate              # lint + summaries + upcoming + README freshness + schema/doc checks
-npm run scaffold:matter -- 32 "Newanforbi v. Example"
+npm run scaffold:matter -- 34 "Newanforbi v. Example"
 ```
 
 ### Python document scripts
