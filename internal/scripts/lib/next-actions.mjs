@@ -69,6 +69,11 @@ const OPPOSING_PATTERNS = [
   /\bresponsive pleading deadline\b/i,
   /\bdefendants?'? (?:reply|response|answer|responsive)\b/i,
   /\bopposition deadline\b.*\brespondents?\b/i,
+  // CCP §430.41 demurrer meet-and-confer runs against the defendant who
+  // intends to demur — not a task on this litigant's desk.
+  /\bCCP\s*§?\s*430\.41\b/i,
+  /\bif\s+(?:\w+\s+)+intends?\s+to\s+demur\b/i,
+  /\bif\s+either\s+defendant\s+intends?\s+to\s+demur\b/i,
 ];
 const AGENCY_PATTERNS = [
   /\bouter bound for\b/i,
@@ -76,6 +81,8 @@ const AGENCY_PATTERNS = [
   /\bdeemed[- ]rejection\b/i,
   /\banticipated deemed\b/i,
 ];
+
+const ACTIVE_LIFECYCLES = new Set(["active", "pre_filing"]);
 
 export const ACTORS = ["you", "opposing", "agency", "unknown"];
 
@@ -100,8 +107,24 @@ export function inferAction(entry) {
   if (entry?.type === "hearing" || /\b(?:hearing|conference)\b/i.test(text)) return "appear";
   if (/\bmeet[-\s]and[-\s]confer\b/i.test(text)) return "meet & confer";
   if (/\b(?:proof[-\s]of[-\s]service|service deadline|serve)\b/i.test(text)) return "serve";
+  // "Reply deadline" / "Opposition due" are filing tasks; match before the
+  // generic prepare fallback (and ahead of bare "due", which also hits file).
+  if (/\b(?:reply|opposition)\b/i.test(text) && /\b(?:deadline|due)\b/i.test(text)) {
+    return "file";
+  }
   if (/\b(?:file|filing|due|disclosures|statement|notice|claim)\b/i.test(text)) return "file";
   return "prepare";
+}
+
+/** True when at least one linked matter is still live (active / pre-filing). */
+export function touchesActiveMatter(matters, byNumber) {
+  if (!matters.length) return true;
+  return matters.some((n) => {
+    const m = byNumber.get(n);
+    if (!m) return true;
+    if (m.archived) return false;
+    return ACTIVE_LIFECYCLES.has(m.lifecycle);
+  });
 }
 
 /** Urgency band. Overdue first, then a 3/7/30-day ladder. */
@@ -139,6 +162,7 @@ export function buildQueue(timeline, summaries, options = {}) {
 
   const items = [];
   const undated = [];
+  const retired = [];
 
   for (const entry of timeline ?? []) {
     if (entry?.upcoming !== true) continue;
@@ -156,6 +180,14 @@ export function buildQueue(timeline, summaries, options = {}) {
       action: inferAction(entry),
       ...inferActor(entry),
     };
+
+    // Abandoned / dismissed / closed matters still carrying upcoming: true are
+    // data debt for validate-portfolio — not tasks. Keep them out of the queue
+    // so a lapsed leave-to-amend on an abandoned case never leads PAST DUE.
+    if (!touchesActiveMatter(matters, byNumber)) {
+      retired.push(shared);
+      continue;
+    }
 
     // Ungroundable dates ("Dec. 2026", "Jul. 9-10, 2026") can't be ranked, but
     // dropping them silently would hide real obligations.
@@ -190,7 +222,7 @@ export function buildQueue(timeline, summaries, options = {}) {
     }))
     .sort((a, b) => a.number - b.number);
 
-  return { today, horizonDays, items, undated, gaps };
+  return { today, horizonDays, items, undated, retired, gaps };
 }
 
 /** The short answer: overdue + everything inside the horizon that is yours. */

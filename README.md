@@ -426,10 +426,12 @@ npm run next -- --json        # same ranking, machine-readable
 ```
 
 Within each urgency band, this litigant's own obligations sort ahead of dates
-that run against someone else — an AG reply deadline is a date to watch, not a
-task. That ownership is inferred from the event text and labelled
-`inferred — verify`; pin it by adding `"actor": "you" | "opposing" | "agency"` to
-the timeline entry, and the script uses the explicit value instead.
+that run against someone else — an AG reply deadline or a CCP §430.41 demurrer
+meet-and-confer is a date to watch, not a task. That ownership is inferred from
+the event text and labelled `inferred — verify`; pin it by adding
+`"actor": "you" | "opposing" | "agency"` to the timeline entry, and the script
+uses the explicit value instead. Upcoming flags that only touch archived or
+closed matters are skipped (with a count) rather than ranked as PAST DUE.
 
 Two sections follow the bands: upcoming entries whose date can't be placed on one
 calendar day (month-only or ranged), and active matters with no dated next step

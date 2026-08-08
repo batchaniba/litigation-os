@@ -5,6 +5,7 @@ import {
   daysBetween,
   inferAction,
   inferActor,
+  touchesActiveMatter,
   urgencyFor,
   yourQueue,
 } from "../../scripts/lib/next-actions.mjs";
@@ -71,6 +72,25 @@ describe("inferActor", () => {
       .toBe("opposing");
   });
 
+  it("flags CCP §430.41 demurrer meet-and-confer as opposing", () => {
+    expect(
+      inferActor(
+        entry({
+          event:
+            "Meet-and-confer deadline (computed) — CCP §430.41(a)(2); if FedEx intends to demur",
+        }),
+      ).actor,
+    ).toBe("opposing");
+    expect(
+      inferActor(
+        entry({
+          event:
+            "Meet-and-confer target date — if either defendant intends to demur",
+        }),
+      ).actor,
+    ).toBe("opposing");
+  });
+
   it("flags court and agency clocks", () => {
     expect(inferActor(entry({ event: "Outer bound for Sheriff Civil Bureau to process order" })).actor)
       .toBe("agency");
@@ -81,6 +101,17 @@ describe("inferActor", () => {
   it("defaults to the litigant's own docket", () => {
     expect(inferActor(entry()).actor).toBe("you");
   });
+
+  it("keeps joint CMC meet-and-confer on this litigant's desk", () => {
+    expect(
+      inferActor(
+        entry({
+          event:
+            "Meet-and-confer deadline — 30 calendar days before Jan. 13, 2027 CMC (CRC 3.724)",
+        }),
+      ).actor,
+    ).toBe("you");
+  });
 });
 
 describe("inferAction", () => {
@@ -89,7 +120,8 @@ describe("inferAction", () => {
     expect(inferAction(entry({ event: "Meet-and-confer deadline (computed)" }))).toBe("meet & confer");
     expect(inferAction(entry({ event: "Proof-of-service filing deadline" }))).toBe("serve");
     expect(inferAction(entry({ event: "Deadline to file amended complaint" }))).toBe("file");
-    expect(inferAction(entry({ event: "Reply — Motion for Protective Order" }))).toBe("prepare");
+    expect(inferAction(entry({ event: "Reply deadline — Motion for Protective Order" }))).toBe("file");
+    expect(inferAction(entry({ event: "Opposition due — Demurrer" }))).toBe("file");
   });
 });
 
@@ -104,21 +136,50 @@ describe("urgencyFor", () => {
   });
 });
 
+describe("touchesActiveMatter", () => {
+  const byNumber = new Map([
+    [3, { number: 3, lifecycle: "abandoned", archived: true }],
+    [24, { number: 24, lifecycle: "active", archived: false }],
+    [31, { number: 31, lifecycle: "pre_filing", archived: false }],
+  ]);
+
+  it("is true when any linked matter is still live", () => {
+    expect(touchesActiveMatter([3, 24], byNumber)).toBe(true);
+    expect(touchesActiveMatter([31], byNumber)).toBe(true);
+  });
+
+  it("is false when every linked matter is archived or terminal", () => {
+    expect(touchesActiveMatter([3], byNumber)).toBe(false);
+  });
+});
+
 describe("buildQueue", () => {
   const fixtureSummaries = [
-    { number: 3, caption: "Newanforbi v. Derrick", case_no: "2:26-cv-00004", lifecycle: "active" },
+    { number: 3, caption: "Newanforbi v. Derrick", case_no: "2:26-cv-00004", lifecycle: "abandoned", archived: true },
     { number: 20, caption: "Newanforbi v. CHP", case_no: "26CV191136", lifecycle: "active" },
     { number: 24, caption: "Newanforbi v. Serrato", case_no: "4:26-cv-05953", lifecycle: "active" },
+    { number: 26, caption: "Newanforbi v. UPS", lifecycle: "active" },
     { number: 31, caption: "Newanforbi v. First Advantage", lifecycle: "active" },
-    { number: 9, caption: "Closed matter", lifecycle: "dismissed" },
+    { number: 9, caption: "Closed matter", lifecycle: "dismissed", archived: true },
   ];
   const fixtureTimeline = [
     entry({ date: "Aug. 7, 2026", event: "Deadline to file amended complaint", matters: [3] }),
-    entry({ date: "Aug. 21, 2026", event: "AG reply deadline (computed)", matters: [20] }),
+    entry({ date: "Aug. 14, 2026", event: "Deadline — file opposition brief", matters: [20] }),
+    entry({
+      date: "Aug. 21, 2026",
+      event: "AG reply deadline (computed)",
+      matters: [20],
+    }),
+    entry({
+      date: "Aug. 19, 2026",
+      event:
+        "Meet-and-confer deadline (computed) — CCP §430.41(a)(2); if UPS intends to demur",
+      matters: [26],
+    }),
     entry({ date: "Aug. 25, 2026", event: "Deadline — ADR certification", matters: [24] }),
     entry({ date: "Dec. 2026", event: "Trial setting window", matters: [20] }),
     entry({ date: "Mar. 1, 2027", event: "OUTER STATUTE OF LIMITATIONS", matters: [24] }),
-    entry({ date: "Jun. 1, 2026", event: "Already-logged filing", matters: [3], upcoming: false }),
+    entry({ date: "Jun. 1, 2026", event: "Already-logged filing", matters: [20], upcoming: false }),
   ];
   const queue = buildQueue(fixtureTimeline, fixtureSummaries, { today: TODAY, horizonDays: 30 });
 
@@ -126,10 +187,16 @@ describe("buildQueue", () => {
     expect(queue.items.some((i) => i.event === "Already-logged filing")).toBe(false);
   });
 
+  it("parks upcoming flags that only touch archived matters", () => {
+    expect(queue.retired.map((i) => i.event)).toEqual(["Deadline to file amended complaint"]);
+    expect(queue.items.some((i) => i.matters.includes(3))).toBe(false);
+  });
+
   it("puts past-due items first and counts the days negatively", () => {
-    expect(queue.items[0].event).toBe("Deadline to file amended complaint");
-    expect(queue.items[0].urgency).toBe("overdue");
-    expect(queue.items[0].daysOut).toBe(-1);
+    // With the abandoned Matter 3 entry retired, the opposition brief is first.
+    expect(queue.items[0].event).toBe("Deadline — file opposition brief");
+    expect(queue.items[0].urgency).toBe("soon");
+    expect(queue.items[0].daysOut).toBe(6);
   });
 
   it("ranks the litigant's own obligations above other parties' clocks in the same band", () => {
@@ -137,6 +204,12 @@ describe("buildQueue", () => {
     const agReply = queue.items.findIndex((i) => i.event === "AG reply deadline (computed)");
     // ADR is the later date but it is the litigant's to do, so it sorts first.
     expect(adr).toBeLessThan(agReply);
+  });
+
+  it("does not treat defendant §430.41 meet-and-confer as this litigant's task", () => {
+    const mnc = queue.items.find((i) => i.matters.includes(26));
+    expect(mnc.actor).toBe("opposing");
+    expect(yourQueue(queue).some((i) => i.matters.includes(26))).toBe(false);
   });
 
   it("keeps ungroundable dates instead of dropping them", () => {
@@ -149,7 +222,7 @@ describe("buildQueue", () => {
   });
 
   it("resolves matter labels from the summaries", () => {
-    expect(queue.items[0].matterLabels).toEqual(["3 — Newanforbi v. Derrick (2:26-cv-00004)"]);
+    expect(queue.items[0].matterLabels).toEqual(["20 — Newanforbi v. CHP (26CV191136)"]);
   });
 
   it("reports active matters with nothing scheduled and ignores closed ones", () => {
@@ -159,7 +232,7 @@ describe("buildQueue", () => {
   it("yourQueue drops other parties' clocks and beyond-horizon items", () => {
     const mine = yourQueue(queue);
     expect(mine.map((i) => i.event)).toEqual([
-      "Deadline to file amended complaint",
+      "Deadline — file opposition brief",
       "Deadline — ADR certification",
     ]);
   });
@@ -170,11 +243,19 @@ describe("buildQueue against the real portfolio data", () => {
 
   it("covers every timeline entry flagged upcoming", () => {
     const flagged = timeline.filter((t) => t.upcoming === true).length;
-    expect(queue.items.length + queue.undated.length).toBe(flagged);
+    expect(queue.items.length + queue.undated.length + queue.retired.length).toBe(flagged);
   });
 
-  it("grounds every upcoming date on a single calendar day", () => {
+  it("grounds every live upcoming date on a single calendar day", () => {
     expect(queue.undated).toEqual([]);
+  });
+
+  it("does not surface archived-only upcoming flags in the ranked queue", () => {
+    expect(queue.retired).toEqual([]);
+    expect(queue.items.every((i) => i.matters.some((n) => {
+      const m = summaries.find((s) => Number(s.number) === n);
+      return m && !m.archived && (m.lifecycle === "active" || m.lifecycle === "pre_filing");
+    }))).toBe(true);
   });
 
   it("resolves every referenced matter number to a caption", () => {
@@ -186,5 +267,10 @@ describe("buildQueue against the real portfolio data", () => {
     const order = ["overdue", "critical", "soon", "upcoming", "later"];
     const ranks = queue.items.map((i) => order.indexOf(i.urgency));
     expect(ranks).toEqual([...ranks].sort((a, b) => a - b));
+  });
+
+  it("keeps §430.41 meet-and-confer out of yourQueue", () => {
+    const mine = yourQueue(queue);
+    expect(mine.some((i) => /430\.41|intends to demur/i.test(i.event))).toBe(false);
   });
 });
