@@ -3,13 +3,13 @@
   "caption": "Ngwa Nforbi v. Meza-Gonzalez, et al",
   "case_no": "TBD",
   "court": "TBD (same-incident companion to Matter 2 / Alameda Sup. Ct.)",
-  "claims": "November 1, 2024 CHP incident evidence set \u2014 False Imprisonment / Battery / Bane Act theories under the Ngwa Nforbi name form",
-  "status": "OPENED Aug. 7, 2026 \u2014 owns the November 1, 2024 CHP incident evidence set and, as of the same day, all PDFs formerly stored under Matters 1, 2, 7, 20, and 24 (relocated to documents/matter-32/from-NN/); those matters retain their docket records and cross-reference these paths; no independent complaint filed under this caption",
-  "status_label": "CHP cluster PDF home (M1/2/7/20/24)",
+  "claims": "November 1, 2024 CHP cluster document store under the Ngwa Nforbi name form \u2014 False Imprisonment / Battery / Bane Act theories tracked in Matter 2; incident/APS evidence in Matter 33",
+  "status": "OPENED Aug. 7, 2026 \u2014 owns Matter 1/2/20/24 PDFs under matter-32/from-NN/; Nov. 1 APS evidence and Matter 7 Candelaria PDFs live in Matter 33; no independent complaint filed under this caption",
+  "status_label": "CHP docket PDF home (M1/2/20/24)",
   "lifecycle": "pre_filing",
   "proceeding": "state_civil",
   "phase": "pre_filing",
-  "note": "Canonical document store for the CHP November 2024 cluster: incident evidence at matter-32/ root; filings from Matters 1, 2, 7, 20, and 24 under matter-32/from-NN/. Source matters keep documents[] entries pointing here.",
+  "note": "Document store for Matters 1, 2, 20, and 24 under matter-32/from-NN/. Nov. 1, 2024 incident evidence and Matter 7 Candelaria PDFs live in Matter 33; this matter cross-references those paths. Source matters keep documents[] pointing here or at Matter 33.",
   "badge": "PENDING",
   "filed": "Not yet filed",
   "judge": "TBD",
@@ -21,50 +21,47 @@
     "Battery (same-incident theory as Matter 2 \u2014 not separately filed under this caption)",
     "Bane Act, Civ. Code \u00a7 52.1 (same-incident theory as Matter 2 \u2014 not separately filed under this caption)"
   ],
-  "key_facts": "On November 1, 2024 at approximately 12:54 a.m., CHP Officers Santiago Meza-Gonzalez (#023295) and Jose Melano (#023054) contacted Plaintiff on the eastbound I-580 dirt shoulder near Isabel Avenue, Livermore (CHP Case No. RJ68845; CAD No. 241101GG0064). This matter is the portfolio document home for that encounter: the DS-367 / Arrest Report / dashcam transcript / DMV discovery set at the matter-32 root, plus every PDF filing from the five live CHP-cluster dockets (Matters 1, 2, 7, 20, and 24) stored under from-01 through from-24. Operative litigation captions and case numbers remain on those source matters; Matter 32 consolidates the PDF store under the Ngwa Nforbi v. Meza-Gonzalez caption.",
-  "procedural_status": "Opened August 7, 2026 as Matter 32. Initially received the shared November 1, 2024 CHP incident PDFs (formerly documents/_shared/chp-nov1-2024/). Same day, all PDFs from Matters 1 (federal CHP \u00a71983), 2 (Alameda Meza-Gonzalez tort \u2014 stayed), 7 (Candelaria federal), 20 (Alameda CHP writ / U-visa), and 24 (Serrato N.D. Cal.) were relocated into documents/matter-32/from-01|02|07|20|24/. Non-PDF working files (.docx) remain in their original matter folders. Matters 1, 2, 7, 20, and 24 remain live docket records and cross-reference the relocated paths; Matter 32 is the owning folder. No complaint has been filed under the Ngwa Nforbi v. Meza-Gonzalez caption itself.",
-  "damages": "None separately demanded under this caption. Operative damages remain those pleaded in Matters 1, 2, 7, 20, and 24. Matter 32 is documentary ownership of the CHP-cluster PDF set.",
-  "risk": "Low as a document-home entry. Caption confusion with Matter 2 remains the principal risk. Do not plead overlapping damages under Matter 32. Source-matter scripts that write into documents/matter-20/ (SER-001 / sheriff packets) must target documents/matter-32/from-20/ going forward.",
+  "key_facts": "On November 1, 2024 at approximately 12:54 a.m., CHP Officers Santiago Meza-Gonzalez (#023295) and Jose Melano (#023054) contacted Plaintiff on the eastbound I-580 dirt shoulder near Isabel Avenue, Livermore (CHP Case No. RJ68845; CAD No. 241101GG0064). Matter 32 is the portfolio document home for the Meza-Gonzalez / CHP-cluster docket PDFs from Matters 1, 2, 20, and 24 (stored under from-01 through from-24). The underlying Nov. 1 incident / DMV APS evidence set and the Candelaria federal filings were moved into Matter 33 on August 7, 2026; Matter 32 cross-references those paths under the Ngwa Nforbi v. Meza-Gonzalez caption. Operative litigation captions and case numbers remain on the source matters.",
+  "procedural_status": "Opened August 7, 2026 as Matter 32. Initially received the shared November 1, 2024 CHP incident PDFs (formerly documents/_shared/chp-nov1-2024/) and, the same day, all PDFs from Matters 1, 2, 7, 20, and 24 under documents/matter-32/from-01|02|07|20|24/. Later on August 7, 2026, the Nov. 1 / APS incident set and all Matter 7 Candelaria PDFs were relocated into Matter 33 (matter-33/incident/ and matter-33/from-07/); Matter 8's Candelaria mandamus PDFs and the June 15, 2026 Candelaria F&R moved into Matter 33 as well. Matter 32 retains from-01, from-02, from-20, and from-24 and cross-references the Matter 33 paths. Non-PDF working files (.docx) remain in their original matter folders. No complaint has been filed under the Ngwa Nforbi v. Meza-Gonzalez caption itself.",
+  "damages": "None separately demanded under this caption. Operative damages remain those pleaded in Matters 1, 2, 20, and 24 (and Matter 7 for the Candelaria track, whose PDFs now live in Matter 33). Matter 32 is documentary ownership of the Meza-Gonzalez / CHP-cluster PDF set from Matters 1/2/20/24.",
+  "risk": "Low as a document-home entry. Caption confusion with Matter 2 remains the principal risk. Do not plead overlapping damages under Matter 32. Candelaria / DMV APS PDF ownership is Matter 33. Source-matter scripts that write into documents/matter-20/ (SER-001 / sheriff packets) must target documents/matter-32/from-20/ going forward.",
   "evidence": [
-    "CHP Arrest-Investigation Report (Case RJ68845) \u2014 matter-32 root",
-    "DS-367 Officer's Statement (ngwanforbi / F7953179) \u2014 matter-32 root",
-    "CHP Video Transcript Exhibit A \u2014 matter-32 root",
-    "DMV DAD / DS-2044 discovery packet \u2014 matter-32 root",
     "Matter 1 federal CHP docket PDFs \u2014 matter-32/from-01/",
     "Matter 2 Alameda Meza-Gonzalez docket PDFs \u2014 matter-32/from-02/",
-    "Matter 7 Candelaria docket PDFs \u2014 matter-32/from-07/",
     "Matter 20 CHP writ / U-visa docket PDFs \u2014 matter-32/from-20/",
-    "Matter 24 Serrato N.D. Cal. docket PDFs \u2014 matter-32/from-24/"
+    "Matter 24 Serrato N.D. Cal. docket PDFs \u2014 matter-32/from-24/",
+    "Nov. 1, 2024 CHP / DMV APS incident evidence \u2014 cross-ref Matter 33 (matter-33/incident/)",
+    "Matter 7 Candelaria federal PDFs \u2014 cross-ref Matter 33 (matter-33/from-07/)"
   ],
   "documents": [
     {
       "label": "CHP Arrest Report (Case RJ68845)",
-      "path": "/documents/matter-32/Arrest Report.pdf",
+      "path": "/documents/matter-33/incident/Arrest Report.pdf",
       "filed": false
     },
     {
       "label": "CHP Officer's Statement \u2014 Chemical Test Admonition (DS 367) (Nov. 1, 2024)",
-      "path": "/documents/matter-32/ds367 ngwanforbi f7953179.pdf",
+      "path": "/documents/matter-33/incident/ds367 ngwanforbi f7953179.pdf",
       "filed": false
     },
     {
       "label": "CHP Video Transcript (Exhibit A)",
-      "path": "/documents/matter-32/Exhibit_A_CHP_Video_Transcript.pdf",
+      "path": "/documents/matter-33/incident/Exhibit_A_CHP_Video_Transcript.pdf",
       "filed": false
     },
     {
       "label": "DMV Driver Record \u2014 Discovery Production (Dec. 4, 2024)",
-      "path": "/documents/matter-32/DAD 2024-12-04.pdf",
+      "path": "/documents/matter-33/incident/DAD 2024-12-04.pdf",
       "filed": false
     },
     {
       "label": "DMV Notification of Discovery \u2014 APS Hearing Packet (Dec. 4, 2024)",
-      "path": "/documents/matter-32/DS2044 Notification of Discovery 34739340.pdf",
+      "path": "/documents/matter-33/incident/DS2044 Notification of Discovery 34739340.pdf",
       "filed": false
     },
     {
       "label": "CHP Discovery Response",
-      "path": "/documents/matter-32/Discovery-Response.pdf",
+      "path": "/documents/matter-33/incident/Discovery-Response.pdf",
       "filed": false
     },
     {
@@ -134,7 +131,7 @@
     },
     {
       "label": "[M1] Centerline Wage Reference",
-      "path": "/documents/matter-32/from-01/Centerline Wage Reference.pdf",
+      "path": "/documents/matter-33/incident/Centerline Wage Reference.pdf",
       "filed": false
     },
     {
@@ -214,62 +211,62 @@
     },
     {
       "label": "[M7] CHP Dashcam Transcript (00:54:36\u201301:57:10, CAD No. 241101GG0064)",
-      "path": "/documents/matter-32/from-07/CHP Transcript.pdf",
+      "path": "/documents/matter-33/from-07/CHP Transcript.pdf",
       "filed": false
     },
     {
       "label": "[M7] DMV Administrative Per Se Decision (Case 34739340, February 11, 2025, Hearing Officer Diana Candelaria)",
-      "path": "/documents/matter-32/from-07/DMV Decision.pdf",
+      "path": "/documents/matter-33/from-07/DMV Decision.pdf",
       "filed": false
     },
     {
       "label": "[M7] Exhibit A Cover \u2014 DMV APS Decision (Case 34739340)",
-      "path": "/documents/matter-32/from-07/Exhibit A Cover DMV Decision.pdf",
+      "path": "/documents/matter-33/from-07/Exhibit A Cover DMV Decision.pdf",
       "filed": false
     },
     {
       "label": "[M7] Exhibit B Cover \u2014 Dairyland SR-22 Insurance",
-      "path": "/documents/matter-32/from-07/Exhibit B Cover Dairyland SR22.pdf",
+      "path": "/documents/matter-33/from-07/Exhibit B Cover Dairyland SR22.pdf",
       "filed": false
     },
     {
       "label": "[M7] Exhibit C Cover \u2014 CHP Dashcam Transcript",
-      "path": "/documents/matter-32/from-07/Exhibit C Cover CHP Dashcam Transcript.pdf",
+      "path": "/documents/matter-33/from-07/Exhibit C Cover CHP Dashcam Transcript.pdf",
       "filed": false
     },
     {
       "label": "[M7] First Amended Complaint (Apr. 27, 2026)",
-      "path": "/documents/matter-32/from-07/FAC Candelaria.pdf",
+      "path": "/documents/matter-33/from-07/FAC Candelaria.pdf",
       "filed": false
     },
     {
       "label": "[M7] Original Complaint \u2014 Newanforbi v. Candelaria",
-      "path": "/documents/matter-32/from-07/Newanforbi v. Candelaria.pdf",
+      "path": "/documents/matter-33/from-07/Newanforbi v. Candelaria.pdf",
       "filed": false
     },
     {
       "label": "[M7] Notice of Change of Address (filed July 7, 2026)",
-      "path": "/documents/matter-32/from-07/Notice of Change of Address (July 7, 2026).pdf",
+      "path": "/documents/matter-33/from-07/Notice of Change of Address (July 7, 2026).pdf",
       "filed": false
     },
     {
       "label": "[M7] Notice of Supplemental Authority \u2014 Serrato Order, ELECTRONICALLY FILED (Document 9, Jul. 9, 2026)",
-      "path": "/documents/matter-32/from-07/Notice of Supplemental Authority - Serrato Order - ELECTRONICALLY FILED Jul 9 2026.pdf",
+      "path": "/documents/matter-33/from-07/Notice of Supplemental Authority - Serrato Order - ELECTRONICALLY FILED Jul 9 2026.pdf",
       "filed": false
     },
     {
       "label": "[M7] Notice of Supplemental Authority \u2014 Serrato Order, draft (superseded by the electronically filed version below)",
-      "path": "/documents/matter-32/from-07/Notice of Supplemental Authority - Serrato Order - July 7 2026.pdf",
+      "path": "/documents/matter-33/from-07/Notice of Supplemental Authority - Serrato Order - July 7 2026.pdf",
       "filed": false
     },
     {
       "label": "[M7] Objections to Findings & Recommendations (BOLSTERED 3)",
-      "path": "/documents/matter-32/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
+      "path": "/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
       "filed": false
     },
     {
       "label": "[M7] Supplemental Declaration (Newanforbi v. Candelaria, FAC)",
-      "path": "/documents/matter-32/from-07/Supplemental Declaration Newanforbi v Candelaria.pdf",
+      "path": "/documents/matter-33/from-07/Supplemental Declaration Newanforbi v Candelaria.pdf",
       "filed": false
     },
     {

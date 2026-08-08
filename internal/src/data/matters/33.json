@@ -1,0 +1,171 @@
+{
+  "number": 33,
+  "caption": "Newanforbi v. Candelaria (DMV APS / Nov. 1, 2024)",
+  "case_no": "TBD (document home \u2014 live dockets: Matter 7 / 2:26-cv-00983-DC-CSK; Matter 8 / 26WM000135 abandoned)",
+  "court": "TBD (evidence home for Candelaria / DMV APS cluster)",
+  "claims": "Document store for Nov. 1, 2024 CHP incident evidence, DMV APS Case 34739340 hearing record, and Candelaria litigation filings (Matters 7 and 8)",
+  "status": "OPENED Aug. 7, 2026 \u2014 canonical home for (1) Nov. 1, 2024 CHP incident / DMV APS hearing evidence formerly at matter-32 root, (2) all Matter 7 Candelaria federal PDFs formerly under matter-32/from-07/, (3) all Matter 8 Candelaria mandamus PDFs formerly under matter-08/, and (4) the June 15, 2026 Candelaria F&R opinion; no independent complaint filed under this caption",
+  "status_label": "Candelaria / DMV APS PDF home",
+  "lifecycle": "pre_filing",
+  "proceeding": "federal_civil",
+  "phase": "pre_filing",
+  "note": "Owns the Candelaria/DMV APS document set; Matters 7 and 8 remain the live (and abandoned) docket records and cross-reference these paths",
+  "badge": "PENDING",
+  "filed": "Not yet filed",
+  "judge": "TBD",
+  "cluster": 1,
+  "type": "Federal",
+  "defendants": "Diana Candelaria (DMV Hearing Officer); Steve Gordon / California DMV (Matter 7 official-capacity); California Department of Motor Vehicles (Matter 8) \u2014 caption tracks the Candelaria APS / structural-bias cluster, not a new pleading",
+  "causes": [
+    "42 U.S.C. \u00a7 1983 procedural due process \u2014 structural bias / dual-role APS adjudicator (Matter 7 theory)",
+    "Writ of administrative mandate \u2014 set aside void APS Decision Case 34739340 (Matter 8 theory; abandoned)"
+  ],
+  "key_facts": "On November 1, 2024, CHP Officers Meza-Gonzalez and Melano contacted Plaintiff on the I-580 East shoulder in Livermore (CHP Case RJ68845). The DS-367 chemical-test-refusal designation and Arrest Report triggered DMV APS Case 34739340. After a January 24, 2025 Microsoft Teams hearing, Hearing Officer Diana Candelaria issued a February 11, 2025 Decision sustaining a one-year Class A CDL suspension (Feb. 20, 2025 \u2013 Feb. 19, 2026) without addressing the November 5, 2024 PC \u00a7 849(b)(1) Detention Certificate. Matter 7 (federal \u00a71983, 2:26-cv-00983-DC-CSK) and Matter 8 (state mandate, 26WM000135, abandoned) litigate that APS outcome. This matter consolidates the underlying incident/APS evidence and both Candelaria docket PDF sets under one owning folder.",
+  "procedural_status": "Opened August 7, 2026 as Matter 33. Received: (a) six Nov. 1, 2024 / APS discovery PDFs plus Centerline wage reference into matter-33/incident/; (b) twelve Matter 7 Candelaria federal PDFs into matter-33/from-07/; (c) six Matter 8 mandamus PDFs into matter-33/from-08/; (d) the June 15, 2026 Candelaria F&R into matter-33/opinions/. Matters 1, 2, 7, 8, and 32 cross-reference these paths. No complaint has been filed under this Matter 33 caption \u2014 it is a document-home entry for the Candelaria / DMV APS slice of the CHP cluster.",
+  "damages": "None separately demanded under this caption. Operative damages remain those pleaded in Matter 7 (and formerly Matter 8's equitable track). Matter 33 is documentary ownership only.",
+  "risk": "Low as a document-home entry. Do not plead overlapping damages under Matter 33. Path updates for Matters 1/2/7/8/32 and outcomes.js already point at /documents/matter-33/.",
+  "evidence": [
+    "CHP Arrest Report (RJ68845) \u2014 incident/",
+    "DS-367 Officer's Statement (ngwanforbi / F7953179) \u2014 incident/",
+    "CHP dashcam transcript Exhibit A \u2014 incident/",
+    "DMV DAD / DS-2044 APS discovery packet (Case 34739340) \u2014 incident/",
+    "Plaintiff's Dec. 9, 2024 Personal Statement / Discovery Response \u2014 incident/",
+    "Centerline Drivers wage reference (CDL lost-wage proof) \u2014 incident/",
+    "Matter 7 Candelaria federal docket PDFs \u2014 from-07/",
+    "Matter 8 Candelaria mandamus PDFs \u2014 from-08/",
+    "June 15, 2026 Candelaria F&R \u2014 opinions/"
+  ],
+  "documents": [
+    {
+      "label": "CHP Arrest Report (Case RJ68845)",
+      "path": "/documents/matter-33/incident/Arrest Report.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M1] Centerline Wage Reference",
+      "path": "/documents/matter-33/incident/Centerline Wage Reference.pdf",
+      "filed": false
+    },
+    {
+      "label": "DMV Driver Record \u2014 Discovery Production (Dec. 4, 2024)",
+      "path": "/documents/matter-33/incident/DAD 2024-12-04.pdf",
+      "filed": false
+    },
+    {
+      "label": "DMV Notification of Discovery \u2014 APS Hearing Packet (Dec. 4, 2024)",
+      "path": "/documents/matter-33/incident/DS2044 Notification of Discovery 34739340.pdf",
+      "filed": false
+    },
+    {
+      "label": "CHP Discovery Response",
+      "path": "/documents/matter-33/incident/Discovery-Response.pdf",
+      "filed": false
+    },
+    {
+      "label": "CHP Video Transcript (Exhibit A)",
+      "path": "/documents/matter-33/incident/Exhibit_A_CHP_Video_Transcript.pdf",
+      "filed": false
+    },
+    {
+      "label": "CHP Officer's Statement \u2014 Chemical Test Admonition (DS 367) (Nov. 1, 2024)",
+      "path": "/documents/matter-33/incident/ds367 ngwanforbi f7953179.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M7] CHP Dashcam Transcript (00:54:36\u201301:57:10, CAD No. 241101GG0064)",
+      "path": "/documents/matter-33/from-07/CHP Transcript.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M7] DMV Administrative Per Se Decision (Case 34739340, February 11, 2025, Hearing Officer Diana Candelaria)",
+      "path": "/documents/matter-33/from-07/DMV Decision.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M7] Exhibit A Cover \u2014 DMV APS Decision (Case 34739340)",
+      "path": "/documents/matter-33/from-07/Exhibit A Cover DMV Decision.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M7] Exhibit B Cover \u2014 Dairyland SR-22 Insurance",
+      "path": "/documents/matter-33/from-07/Exhibit B Cover Dairyland SR22.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M7] Exhibit C Cover \u2014 CHP Dashcam Transcript",
+      "path": "/documents/matter-33/from-07/Exhibit C Cover CHP Dashcam Transcript.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M7] First Amended Complaint (Apr. 27, 2026)",
+      "path": "/documents/matter-33/from-07/FAC Candelaria.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M7] Original Complaint \u2014 Newanforbi v. Candelaria",
+      "path": "/documents/matter-33/from-07/Newanforbi v. Candelaria.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M7] Notice of Change of Address (filed July 7, 2026)",
+      "path": "/documents/matter-33/from-07/Notice of Change of Address (July 7, 2026).pdf",
+      "filed": false
+    },
+    {
+      "label": "[M7] Notice of Supplemental Authority \u2014 Serrato Order, ELECTRONICALLY FILED (Document 9, Jul. 9, 2026)",
+      "path": "/documents/matter-33/from-07/Notice of Supplemental Authority - Serrato Order - ELECTRONICALLY FILED Jul 9 2026.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M7] Notice of Supplemental Authority \u2014 Serrato Order, draft (superseded by the electronically filed version below)",
+      "path": "/documents/matter-33/from-07/Notice of Supplemental Authority - Serrato Order - July 7 2026.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M7] Objections to Findings & Recommendations (BOLSTERED 3)",
+      "path": "/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M7] Supplemental Declaration (Newanforbi v. Candelaria, FAC)",
+      "path": "/documents/matter-33/from-07/Supplemental Declaration Newanforbi v Candelaria.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M8] Civil Case Cover Sheet CM-010, electronically filed (May 18, 2026)",
+      "path": "/documents/matter-33/from-08/Civil Case Cover Sheet CM-010 (electronically filed May 18 2026).pdf",
+      "filed": false
+    },
+    {
+      "label": "[M8] Court Minutes (Jul. 17, 2026) and Civil Case Cover Sheet CM-010, pp. 2-3",
+      "path": "/documents/matter-33/from-08/Court Minutes (Jul 17 2026) and Civil Case Cover Sheet CM-010 pp.2-3.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M8] Court Minutes \u2014 Fee Waiver Hearing DENIED, non-appearance (Jul. 17, 2026)",
+      "path": "/documents/matter-33/from-08/Court Minutes - Fee Waiver Hearing DENIED, Non-Appearance (Jul 17 2026).pdf",
+      "filed": false
+    },
+    {
+      "label": "[M8] Verified Petition for Writ of Administrative Mandate (May 18, 2026)",
+      "path": "/documents/matter-33/from-08/Newanforbi v. Candelaria Mandamus.pdf",
+      "filed": false
+    },
+    {
+      "label": "[M8] Notice of Change of Address (filed July 7, 2026)",
+      "path": "/documents/matter-33/from-08/Notice of Change of Address (July 7, 2026).pdf",
+      "filed": false
+    },
+    {
+      "label": "[M8] Order on Court Fee Waiver After Hearing \u2014 FW-008, denied for non-appearance (Jul. 17, 2026)",
+      "path": "/documents/matter-33/from-08/Order on Court Fee Waiver After Hearing - FW-008 (Jul 17 2026).pdf",
+      "filed": false
+    },
+    {
+      "label": "Magistrate Judge's Findings & Recommendations \u2014 IFP Denial and Dismissal Without Leave to Amend (ECF No. 6, Jun. 15, 2026)",
+      "path": "/documents/matter-33/opinions/Newanforbi v Candelaria - USDC EDCal - FR Recommending Dismissal Jun 15 2026.pdf",
+      "filed": false
+    }
+  ],
+  "archived": false
+}
