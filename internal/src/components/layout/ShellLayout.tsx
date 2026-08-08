@@ -2,6 +2,7 @@ import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } fro
 import { Link, Outlet, useLocation } from "react-router";
 import upcoming from "../../data/upcoming.json";
 import { ThemeContext, THEMES } from "../../ThemeContext";
+import { useThemePreference } from "../../hooks/useThemePreference";
 import { PortfolioUIContext, type PortfolioUIValue } from "../../context/PortfolioUIContext";
 import type { TimelineEvent } from "../../types/portfolio";
 import { getPDTMidnight, parseEventDatePDT } from "../../utils/dateUtils";
@@ -15,7 +16,7 @@ import { ROUTES } from "../../routes";
 const GlobalSearchDialog = lazy(() => import("../search/GlobalSearchDialog"));
 
 export function ShellLayout() {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useThemePreference();
   const [damagesView, setDamagesView] = useState("moderate");
   const [showPastEvents, setShowPastEvents] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
@@ -59,7 +60,9 @@ export function ShellLayout() {
     darkMode, setDarkMode,
     damagesView, setDamagesView, showPastEvents, setShowPastEvents,
     upcomingEvents,
-  }), [darkMode, damagesView, showPastEvents, upcomingEvents]);
+    // setDarkMode comes from a custom hook, so the linter cannot see that it is a
+    // stable useState setter; listing it costs nothing and keeps the rule honest.
+  }), [darkMode, setDarkMode, damagesView, showPastEvents, upcomingEvents]);
 
   return (
     <ThemeContext.Provider value={theme}>

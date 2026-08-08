@@ -15,6 +15,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   </head>
   <body>
+    <!-- Resolve the theme before first paint, otherwise a light-mode visitor gets
+         a flash of the dark shell on every load. Must stay in step with
+         preferredDarkMode() in internal/src/hooks/useThemePreference.ts. -->
+    <script>
+      (function () {
+        var dark = true;
+        try {
+          var stored = localStorage.getItem("newanforbi.theme.v1");
+          dark = stored === "dark" || stored === "light"
+            ? stored === "dark"
+            : !window.matchMedia("(prefers-color-scheme: light)").matches;
+        } catch (error) { /* blocked storage — keep the dark default */ }
+        document.documentElement.dataset.theme = dark ? "dark" : "light";
+      })();
+    </script>
     <div id="root"></div>
     <script type="module" src="/internal/src/main.tsx"></script>
   </body>

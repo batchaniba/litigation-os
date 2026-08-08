@@ -120,7 +120,10 @@
 
 * { box-sizing: border-box; }
 html { min-width: 320px; }
+/* Painted by the inline script in index.html before React mounts, so the shell
+   never flashes the wrong ground. .app-shell owns the palette from then on. */
 body { margin: 0; min-width: 320px; min-height: 100vh; min-height: 100dvh; background: #0f1a2e; }
+html[data-theme="light"] body { background: #f0f4f8; }
 button, input { font: inherit; }
 a { color: inherit; }
 
@@ -1108,4 +1111,20 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
 @media (max-width: 760px) {
   .dl-form { grid-template-columns: 1fr; }
   .dl-deadline-date { font-size: 22px; }
+}
+
+/* ── Reduced motion ──────────────────────────────────────────────────────────
+   Three animations ran unconditionally, two of them infinite: clockPulse on the
+   frozen countdown, spin on the route and search spinners, and dl-rise on the
+   deadline result. Spinners keep their shape (they are role="status", so the
+   label still announces); they simply stop rotating. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
 }
