@@ -13,23 +13,31 @@ describe("useThemePreference", () => {
   });
   afterEach(() => vi.unstubAllGlobals());
 
-  it("defaults to dark when nothing is stored and the OS has no light preference", () => {
+  it("defaults to dark when nothing is stored", () => {
     expect(preferredDarkMode()).toBe(true);
   });
 
-  it("follows the OS when nothing is stored", () => {
+  it("stays dark even when the OS prefers light", () => {
     mockPrefersLight(true);
-    expect(preferredDarkMode()).toBe(false);
+    expect(preferredDarkMode()).toBe(true);
   });
 
-  it("prefers an explicit stored choice over the OS", () => {
-    mockPrefersLight(true);
-    localStorage.setItem(THEME_STORAGE_KEY, "dark");
-    expect(preferredDarkMode()).toBe(true);
-
+  it("honors an explicit stored light choice over the dark default", () => {
     mockPrefersLight(false);
     localStorage.setItem(THEME_STORAGE_KEY, "light");
     expect(preferredDarkMode()).toBe(false);
+  });
+
+  it("honors an explicit stored dark choice", () => {
+    mockPrefersLight(true);
+    localStorage.setItem(THEME_STORAGE_KEY, "dark");
+    expect(preferredDarkMode()).toBe(true);
+  });
+
+  it("ignores the retired v1 storage key so an OS-sticky light does not return", () => {
+    mockPrefersLight(true);
+    localStorage.setItem("newanforbi.theme.v1", "light");
+    expect(preferredDarkMode()).toBe(true);
   });
 
   it("persists a toggle and survives a remount", () => {
