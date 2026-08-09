@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import { cases } from "../data/matters";
+import { CLUSTERS } from "../data/clusters";
 import { damages_table } from "../data/damages";
 import { jurisdictions } from "../data/portfolioMeta";
 import { headline_coverage, formatLimit } from "../data/coverage";
@@ -51,14 +52,6 @@ const clusterMattersStr = {
 const moderateExposure = formatCurrency(
   damages_table.reduce((s, r) => s + r.moderate, 0)
 );
-
-export const CLUSTERS = [
-  { n: 1, label: "CHP Traffic Stop, DUI Arrest & DMV", color: "#60A5FA" },
-  { n: 2, label: "Parole Retaliation, HOPE Abuse & Policy 19-03", color: "#A78BFA" },
-  { n: 3, label: "Employment Violations", color: "#FBBF24" },
-  { n: 4, label: "Administrative Writs & Habeas Corpus", color: "#34D399" },
-  { n: 5, label: "Consumer Fraud / Defective Vehicle", color: "#F97316" },
-];
 
 const PERTINENT_FILINGS = [
   { title: "Newanforbi v. Serrato et al.", matter: 24, date: "Filed Jun 17, 2026", dateStatus: "filed" },

@@ -1,4 +1,4 @@
-// Prefixes a root-absolute public asset path (e.g. "/logo-dark.png") with
+// Prefixes a root-absolute public asset path (e.g. "/logo-dark.webp") with
 // Vite's configured base path, so links and images resolve correctly both
 // on Vercel (served from "/") and GitHub Pages (served from a project
 // subpath, e.g. "/interactive-litigation-portfolio/").

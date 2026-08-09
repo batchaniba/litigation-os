@@ -1,21 +1,19 @@
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import { cases } from "../data/matters";
+import { CLUSTER_LABELS } from "../data/clusters";
 import { GOLD } from "../constants";
 import { isArchivedMatter } from "../utils/matterLifecycle";
 import { SavedViews } from "./matters/SavedViews";
 import { MatterCard } from "./matters/MatterCard";
 
-const CLUSTER_LABELS = {
-  1: "CHP",
-  2: "Parole/HOPE",
-  3: "Employment",
-  4: "Writs",
-  5: "Consumer Fraud",
-};
-
 export const MattersTab = ({ filteredCases, statusFilter, setStatusFilter, clusterFilter, setClusterFilter, typeFilter, setTypeFilter, searchQuery, setSearchQuery, sortKey, setSortKey }) => {
   const [expandedMatter, setExpandedMatter] = useState(null);
   const [filtersOpen, setFiltersOpen] = useState(false);
+  // One identity shared by every card, so memoised cards that did not change
+  // state stay put when a sibling expands.
+  const toggleMatter = useCallback((number) => {
+    setExpandedMatter((open) => (open === number ? null : number));
+  }, []);
   const activeCount = cases.filter(c => !isArchivedMatter(c)).length;
   const statusLabel = statusFilter === "active" ? `Active (${activeCount})` : statusFilter === "upcoming" ? "Upcoming" : statusFilter === "archived" ? "Archived" : "All";
   const clusterLabel = clusterFilter == null ? "All clusters" : CLUSTER_LABELS[clusterFilter];
@@ -116,7 +114,7 @@ export const MattersTab = ({ filteredCases, statusFilter, setStatusFilter, clust
               key={c.number}
               matter={c}
               isOpen={expandedMatter === c.number}
-              onToggle={() => setExpandedMatter(expandedMatter === c.number ? null : c.number)}
+              onToggle={toggleMatter}
             />
           ))
         )}

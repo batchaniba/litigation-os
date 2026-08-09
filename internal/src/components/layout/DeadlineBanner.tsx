@@ -1,5 +1,14 @@
-import type { DeadlineClockState } from "../../types/portfolio";
-export function DeadlineBanner({ timeLeft, showClock, onToggle }: { timeLeft: DeadlineClockState; showClock: boolean; onToggle: () => void }) {
+import { useState } from "react";
+import { useDeadlineClock } from "../../hooks/useDeadlineClock";
+import type { TimelineEvent } from "../../types/portfolio";
+
+/** Owns the countdown outright — both the disclosure state and the ticking clock.
+ *  Nothing outside this banner reads either, and keeping them here means a tick
+ *  re-renders one small section rather than the whole shell and its active route. */
+export function DeadlineBanner({ upcomingEvents }: { upcomingEvents: TimelineEvent[] }) {
+  const [showClock, setShowClock] = useState(false);
+  const timeLeft = useDeadlineClock(upcomingEvents, showClock);
+
   return (
     <section className="legacy-deadline-banner" style={{ background: "var(--banner-bg)", borderBottom: `1px solid ${timeLeft.urgent ? "#EF444440" : "#C8A84B30"}` }} aria-label="Next portfolio deadline">
       <div className="legacy-deadline-row">
@@ -21,7 +30,7 @@ export function DeadlineBanner({ timeLeft, showClock, onToggle }: { timeLeft: De
           </div>
           <div className="legacy-deadline-description">{timeLeft.label}</div>
         </div>}
-        <button className="legacy-deadline-toggle" onClick={onToggle} aria-expanded={showClock} aria-controls="deadline-clock-display" style={{ border: "var(--clock-btn-border)", color: "var(--clock-btn-color)" }}>
+        <button className="legacy-deadline-toggle" onClick={() => setShowClock((value) => !value)} aria-expanded={showClock} aria-controls="deadline-clock-display" style={{ border: "var(--clock-btn-border)", color: "var(--clock-btn-color)" }}>
           {showClock ? "Hide" : "Show"}
         </button>
       </div>
