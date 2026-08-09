@@ -2643,5 +2643,25 @@
     "type": "deadline",
     "upcoming": true,
     "actor": "opposing"
+  },
+  {
+    "date": "Jul. 15, 2026",
+    "event": "First Amended Complaint (Doc. 10) filed — corrects the original Complaint's related-action disclosure (¶¶11-12) to include Newanforbi v. California Highway Patrol, et al. (Alameda Sup. Ct. No. 26CV191136, Matter 20), inadvertently omitted; causes of action and factual allegations unchanged — Newanforbi v. Serrato (4:26-cv-05953-ASK)",
+    "matters": [
+      24
+    ],
+    "type": "filing",
+    "source": "/documents/matter-24/First Amended Complaint (Doc 10, Filed Jul 15 2026).pdf",
+    "filed": true
+  },
+  {
+    "date": "Jul. 15, 2026",
+    "event": "Notice of Errata re First Amended Complaint (Doc. 12) filed — explains the related-action disclosure correction and confirms it does not alter the FAC's factual allegations or legal theories; requests the June 29 IFP/screening order (Doc. 5) remain in effect — Newanforbi v. Serrato (4:26-cv-05953-ASK)",
+    "matters": [
+      24
+    ],
+    "type": "filing",
+    "source": "/documents/matter-24/Notice of Errata re First Amended Complaint (Doc 12, Filed Jul 15 2026).pdf",
+    "filed": true
   }
 ]

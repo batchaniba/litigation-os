@@ -305,13 +305,13 @@
           "from": 24,
           "to": 20,
           "direction": "mutual",
-          "severity": "high",
+          "severity": "low",
           "kinds": [
             "disclosure_gap"
           ],
-          "significance": "Matter 24's related-case disclosure omits Matter 20, even though Matter 20 identifies Matter 24 as the related federal action and both challenge the same April 20, 2026 certification denial. The asymmetry is the kind of omission opposing counsel can present as a candor problem rather than an oversight.",
+          "significance": "Cured. Matter 24's original Complaint (Dkt. 1) omitted Matter 20 from its related-case disclosure \u2014 the kind of asymmetry opposing counsel could have presented as a candor problem \u2014 but Plaintiff caught it independently and self-corrected via a First Amended Complaint and a concurrent Notice of Errata (Dkt. 10, 12; both filed Jul. 15, 2026) before either matter's counsel raised it. The errata states the correction does not alter the FAC's factual allegations or legal theories.",
           "sources": [
-            "Matter 24 \u2014 Certification of Interested Entities / related-case statement",
+            "Matter 24 \u2014 First Amended Complaint (Doc 10, Filed Jul 15 2026); Notice of Errata re First Amended Complaint (Doc 12, Filed Jul 15 2026)",
             "Matter 20 \u2014 Complaint, related-action allegations"
           ]
         }
@@ -361,13 +361,13 @@
           "id": "related-case-disclosure",
           "label": "Related-case disclosure is asymmetric between Matters 24 and 20",
           "severity": "high",
-          "status": "open",
+          "status": "resolved",
           "matters": [
             24,
             20
           ],
-          "detail": "Matter 20 names Matter 24 as the related federal action; Matter 24's disclosure does not name Matter 20. Both challenge the same April 20, 2026 certification denial on the same record, so the omission is visible from the face of the two dockets.",
-          "remedy": "File an amended or supplemental related-case statement in Matter 24 identifying Matter 20, before any defendant raises the omission."
+          "detail": "Matter 20 named Matter 24 as the related federal action; Matter 24's original Complaint (Dkt. 1) did not name Matter 20. Plaintiff caught the omission independently and filed a First Amended Complaint with a concurrent Notice of Errata (Dkt. 10, 12; both Jul. 15, 2026) supplying the correction before any defendant raised it.",
+          "remedy": "Done — First Amended Complaint and Notice of Errata filed Jul. 15, 2026 (Matter 24, Docs. 10 and 12)."
         },
         {
           "id": "dashcam-disclosure",
