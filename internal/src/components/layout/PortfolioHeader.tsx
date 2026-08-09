@@ -2,6 +2,7 @@ import { useEffect, useId, useState } from "react";
 import { NavLink, useLocation } from "react-router";
 import { GOLD } from "../../constants";
 import { NAV_ITEMS } from "../../routes";
+import { prefetchRoute, prefetchSearch } from "../../routePrefetch";
 import { withBase } from "../../utils/paths";
 import { CoverageTower } from "../CoverageTower";
 import { headline_coverage } from "../../data/coverage";
@@ -113,6 +114,8 @@ export function PortfolioHeader({
             <button
               className="legacy-search-trigger"
               onClick={onSearch}
+              onPointerEnter={prefetchSearch}
+              onFocus={prefetchSearch}
               style={{ background: "var(--input-bg)", borderColor: "var(--card-border)", color: "var(--subtle-text)" }}
               aria-keyshortcuts="Control+K Meta+K /"
             >
@@ -139,6 +142,8 @@ export function PortfolioHeader({
                 to={item.path}
                 end={item.end}
                 className="legacy-nav-link"
+                onPointerEnter={() => prefetchRoute(item.path)}
+                onFocus={() => prefetchRoute(item.path)}
                 style={({ isActive }) => ({
                   border: isActive ? "var(--tab-active-border)" : "var(--tab-inactive-border)",
                   background: isActive ? "var(--tab-active-bg)" : "var(--tab-inactive-bg)",
