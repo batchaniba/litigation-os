@@ -37,8 +37,11 @@ PUBLIC = ROOT / "public"
 TARGETS = [
     ("logo-dark.png", "logo-dark.webp", (220, 220)),
     ("logo-light.png", "logo-light.webp", (220, 220)),
-    ("slb-dark.png", "branding/slb-dark.webp", (None, 62)),
-    ("slb-light.png", "branding/slb-light.webp", (None, 42)),
+    # Same CSS box for both themes (see .legacy-slb-logo) so the header does
+    # not reflow when the theme toggle swaps the file. Light artwork letterboxes
+    # inside the taller dark-mode aspect via object-fit: contain.
+    ("slb-dark.png", "branding/slb-dark.webp", (118, 62)),
+    ("slb-light.png", "branding/slb-light.webp", (118, 62)),
     ("garcia-gurney-dark.png", "branding/garcia-gurney-dark.webp", (130, 44)),
     ("garcia-gurney.png", "branding/garcia-gurney.webp", (130, 44)),
     ("dag-dark.jpg", "branding/dag-dark.webp", (64, 64)),

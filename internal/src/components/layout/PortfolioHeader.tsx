@@ -83,7 +83,7 @@ export function PortfolioHeader({
                 <div>Blaze Van Dine</div>
                 <div className="firm-external-hint">Visit site ↗</div>
               </div>
-              <img className="firm-logo" src={withBase(darkMode ? "/branding/slb-dark.webp" : "/branding/slb-light.webp")} alt="Sims, Lawrence & Broghammer" width={darkMode ? 236 : 232} height={darkMode ? 124 : 84} decoding="async" style={{ height: darkMode ? 62 : 42, width: "auto" }} />
+              <img className="firm-logo legacy-slb-logo" src={withBase(darkMode ? "/branding/slb-dark.webp" : "/branding/slb-light.webp")} alt="Sims, Lawrence & Broghammer" width={236} height={124} decoding="async" />
             </a>
             <a href="https://www.garciagurney.com/" target="_blank" rel="noopener noreferrer" title="Visit Garcia & Gurney, A Law Corporation (garciagurney.com) ↗" className="firm-link">
               <div className="legacy-counsel-names">
