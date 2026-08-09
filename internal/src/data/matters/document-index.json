@@ -1446,18 +1446,33 @@
   },
   {
     "matter": 24,
-    "label": "Complaint for Damages, Declaratory Relief, and Injunctive Relief — Draft (42 U.S.C. § 1983; 4 Causes of Action)",
-    "path": "/documents/matter-32/from-24/Complaint.pdf"
+    "label": "Complaint (Doc 1, Filed Jun 17 2026)",
+    "path": "/documents/matter-24/Complaint (Doc 1, Filed Jun 17 2026).pdf"
   },
   {
     "matter": 24,
-    "label": "Filed Complaint (Doc. 1) and ISC Order Setting CMC & ADR Deadlines (Doc. 4) — Case No. 4:26-cv-05953-ASK, Filed June 17, 2026",
+    "label": "Filed Complaint (Doc. 1), earlier scan — Case No. 4:26-cv-05953-ASK, Filed June 17, 2026 (superseded by the cleaner copy in matter-24/)",
     "path": "/documents/matter-32/from-24/1 2.pdf"
+  },
+  {
+    "matter": 24,
+    "label": "Order Setting Initial CMC and ADR Deadlines (Doc 4, Filed Jun 17 2026)",
+    "path": "/documents/matter-24/Order Setting Initial CMC and ADR Deadlines (Doc 4, Filed Jun 17 2026).pdf"
   },
   {
     "matter": 24,
     "label": "ISC Order and Magistrate Judge Consent/Declination Form — N.D. Cal. (Case No. 4:26-cv-05953-ASK)",
     "path": "/documents/matter-32/from-24/ND Cal ISC and Magistrate Consent form.pdf"
+  },
+  {
+    "matter": 24,
+    "label": "Summons Issued (Doc 6, Filed Jun 29 2026)",
+    "path": "/documents/matter-24/Summons Issued (Doc 6, Filed Jun 29 2026).pdf"
+  },
+  {
+    "matter": 24,
+    "label": "Consent to Magistrate Judge Jurisdiction (Doc 8, Filed Jun 29 2026)",
+    "path": "/documents/matter-24/Consent to Magistrate Judge Jurisdiction (Doc 8, Filed Jun 29 2026).pdf"
   },
   {
     "matter": 24,
@@ -1468,6 +1483,16 @@
     "matter": 24,
     "label": "Proposed Summons — N.D. Cal. (Captain G. Serrato)",
     "path": "/documents/matter-32/from-24/Nd Cal Proposed Summons.pdf"
+  },
+  {
+    "matter": 24,
+    "label": "First Amended Complaint (Doc 10, Filed Jul 15 2026)",
+    "path": "/documents/matter-24/First Amended Complaint (Doc 10, Filed Jul 15 2026).pdf"
+  },
+  {
+    "matter": 24,
+    "label": "Notice of Errata re First Amended Complaint (Doc 12, Filed Jul 15 2026)",
+    "path": "/documents/matter-24/Notice of Errata re First Amended Complaint (Doc 12, Filed Jul 15 2026).pdf"
   },
   {
     "matter": 24,
@@ -3021,13 +3046,8 @@
   },
   {
     "matter": 32,
-    "label": "[M24] Filed Complaint (Doc. 1) and ISC Order Setting CMC & ADR Deadlines (Doc. 4) — Case No. 4:26-cv-05953-ASK, Filed June 17, 2026",
+    "label": "[M24] Filed Complaint (Doc. 1), earlier scan — Case No. 4:26-cv-05953-ASK, Filed June 17, 2026 (superseded by the cleaner copy in matter-24/)",
     "path": "/documents/matter-32/from-24/1 2.pdf"
-  },
-  {
-    "matter": 32,
-    "label": "[M24] Complaint for Damages, Declaratory Relief, and Injunctive Relief — Draft (42 U.S.C. § 1983; 4 Causes of Action)",
-    "path": "/documents/matter-32/from-24/Complaint.pdf"
   },
   {
     "matter": 32,

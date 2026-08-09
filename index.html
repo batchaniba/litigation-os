@@ -23,9 +23,8 @@
          Dark is the default theme, so that is the variant worth preloading.
          The boot script below rewrites the href if the visitor has stored light. -->
     <link id="theme-logo-preload" rel="preload" as="image" type="image/webp" href="/logo-dark.webp" fetchpriority="high" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- Cormorant Garamond, DM Sans and Cloister Black are self-hosted and
+         declared in internal/src/styles/app.css — no third-party font origin. -->
   </head>
   <body>
     <!-- Resolve the theme before first paint. Must stay in step with
