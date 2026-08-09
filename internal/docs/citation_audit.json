@@ -1,8 +1,8 @@
 {
   "analysisDate": "2026-07-12",
   "totalMatters": 24,
-  "totalCitationsChecked": 147,
-  "methodology": "Five parallel analysis passes pulled every case citation (and key quoted statutory/regulatory text) from the litigant's motion practice and citation-bearing complaints, then verified each against free legal databases (CourtListener, Justia, Google Scholar, Casetext) for existence, accurate quotation, and current good-law status.",
+  "totalCitationsChecked": 154,
+  "methodology": "Five parallel analysis passes pulled every case citation (and key quoted statutory/regulatory text) from the litigant's motion practice and citation-bearing complaints, then verified each against free legal databases (CourtListener, Justia, Google Scholar, Casetext) for existence, accurate quotation, and current good-law status. | Round 2 (Aug. 9, 2026): qualified-immunity research filed into Matter 28. Verified with WebSearch against primary sources (govinfo.gov, cdn.ca9.uscourts.gov, kscourts.gov) and free databases, after confirming the method both finds real cases and fails to find the known-fabricated In re Leman. Direct fetches of CourtListener, case.law and Justia are blocked by this environment's egress proxy, so statuses rest on search-returned summaries plus primary-source URLs rather than full opinion text; nothing is marked VERIFIED from recollection alone.",
   "groups": [
     {
       "group": "A",
@@ -580,7 +580,7 @@
       "matter": 5,
       "document": "Opposition to Demurrer Pal.pdf; FAC_STK-CV-UF-2026-1032.pdf",
       "case_name": "N/A -- regulatory text, not a case",
-      "citation": "15 Cal. Code Regs. \u00a7 3574(f)(1), quoted as: \"[t]reatment completion and parole discharge are legally separate decisions\"",
+      "citation": "15 Cal. Code Regs. § 3574(f)(1), quoted as: \"[t]reatment completion and parole discharge are legally separate decisions\"",
       "quote_or_holding_claimed": "Plaintiff repeatedly quotes this exact language as the text of 15 CCR 3574(f)(1), effective April 17, 2025. Defense counsel's Reply (Demurrer-Reply (NEWpal)(070726).pdf, p.2) accuses Plaintiff of AI hallucination, stating flatly: 'That language...is not found anywhere in 15 C.C.R. Section 3574 -- or within any statute for that matter.'",
       "status": "MISCITED",
       "notes": "IMPORTANT -- this is the citation underlying the 'AI hallucination' accusation. Independent research indicates the underlying SUBSTANCE is real, not hallucinated: CDCR's own 'NCR 25-01' regulatory notice (Jan. 3, 2025), issued specifically to implement the ACSOL v. Macomber settlement, amended 15 CCR 3574 to add language stating that review of sex-offender program completion is 'independent of whether the supervised person should be discharged from parole' -- i.e., the same substantive concept Plaintiff paraphrases. However, based on available search-engine-indexed summaries of the regulation, this language appears to sit at subsection (e), not (f)(1) as Plaintiff repeatedly cites, and I could not confirm the precise verbatim wording ('legally separate decisions') versus a close paraphrase, because the CDCR regulation PDF and Cornell LII/Justia regulation pages could not be fetched directly (both blocked by network policy in this environment). Net assessment: Plaintiff's citation is likely MISCITED as to the specific subsection letter/number and possibly imprecise as to exact wording, but it is NOT a fabrication/hallucination as opposing counsel flatly asserts -- the concept and its regulatory source are real and traceable to a real 2025 CDCR rulemaking. Also note an unresolved side-conflict: defense counsel's own reply cites a different version of the same regulation ('15 C.C.R. Section 3574(d) (Oct. 14, 2024)') with yet different wording, suggesting both sides may be citing different snapshots of an evolving regulation (Oct. 2024 draft vs. an April/March 2025 final version) rather than either side inventing text outright. Recommend Plaintiff verify the current subsection lettering and obtain the official published text of 15 CCR 3574 as currently in force to correct the pinpoint cite before further briefing."
@@ -1031,9 +1031,9 @@
       "document": "public/documents/matter-14/Newanforbi v Urrea.pdf",
       "case_name": "Friends of the Trinity River v. North Coast Regional Water Quality Control Bd.",
       "citation": "(2010) 184 Cal.App.4th 1466",
-      "quote_or_holding_claimed": "\"Code of Civil Procedure \u00a7 1085 authorizes the issuance of a writ of mandate to compel the performance of an act that the law specifically enjoins as a duty resulting from a public office.\" (para. 57)",
+      "quote_or_holding_claimed": "\"Code of Civil Procedure § 1085 authorizes the issuance of a writ of mandate to compel the performance of an act that the law specifically enjoins as a duty resulting from a public office.\" (para. 57)",
       "status": "NOT_FOUND",
-      "notes": "Could not locate any case by this name at this citation, or at all, across CourtListener, Justia, Leagle, Casetext-indexed search, and general web search. Volume 184 Cal.App.4th exists but no matching case at/near page 1466 titled 'Friends of the Trinity River v. North Coast Regional Water Quality Control Bd.' turned up. The subject matter mismatch is also a red flag: a water-quality-board CEQA/administrative case would be an unusual and non-standard authority for the generic, black-letter CCP \u00a7 1085 mandate-relief proposition being cited (courts more commonly cite cases like AIDS Healthcare Foundation v. L.A. County or Pomona Police Officers' Assn. v. City of Pomona for this boilerplate). This citation appears to be fabricated or badly garbled and should be pulled or replaced before filing anything that relies on it."
+      "notes": "Could not locate any case by this name at this citation, or at all, across CourtListener, Justia, Leagle, Casetext-indexed search, and general web search. Volume 184 Cal.App.4th exists but no matching case at/near page 1466 titled 'Friends of the Trinity River v. North Coast Regional Water Quality Control Bd.' turned up. The subject matter mismatch is also a red flag: a water-quality-board CEQA/administrative case would be an unusual and non-standard authority for the generic, black-letter CCP § 1085 mandate-relief proposition being cited (courts more commonly cite cases like AIDS Healthcare Foundation v. L.A. County or Pomona Police Officers' Assn. v. City of Pomona for this boilerplate). This citation appears to be fabricated or badly garbled and should be pulled or replaced before filing anything that relies on it."
     },
     {
       "group": "D",
@@ -1061,9 +1061,9 @@
       "document": "public/documents/matter-14/Newanforbi v Urrea.pdf",
       "case_name": "Caldwell v. Montoya",
       "citation": "(1995) 10 Cal.4th 972",
-      "quote_or_holding_claimed": "Cited (para. 92, and again para. 69 of Matter 16 filing) for the proposition that Government Code \u00a7 820.2 discretionary-act immunity 'does not shield officials who act outside the scope of their legal authority,' i.e., that the duties breached here were ministerial, not discretionary.",
+      "quote_or_holding_claimed": "Cited (para. 92, and again para. 69 of Matter 16 filing) for the proposition that Government Code § 820.2 discretionary-act immunity 'does not shield officials who act outside the scope of their legal authority,' i.e., that the duties breached here were ministerial, not discretionary.",
       "status": "MISCITED",
-      "notes": "The case exists at the correct citation and is good law, but Caldwell v. Montoya does not actually stand for the proposition cited. Caldwell held the opposite direction on its facts -- that discretionary-act immunity under \u00a7 820.2 DID protect school board members' 'basic policy' decision even where plaintiff alleged the decision was motivated by improper reasons (race/age discrimination) -- it is a case broadly protecting discretionary governmental decisions, not a case carving out an exception for officials who exceed their authority. The complaint's characterization inverts the general thrust of the holding. The general legal principle asserted (ministerial vs. discretionary duties, and that \u00a7 820.2 does not immunize purely ministerial acts) is a correct statement of California law, but Caldwell is not the strongest or most accurate case to cite for it -- a more fitting authority would address the discretionary/ministerial distinction directly (e.g., Johnson v. State of California or Ramirez v. City of Gardena)."
+      "notes": "The case exists at the correct citation and is good law, but Caldwell v. Montoya does not actually stand for the proposition cited. Caldwell held the opposite direction on its facts -- that discretionary-act immunity under § 820.2 DID protect school board members' 'basic policy' decision even where plaintiff alleged the decision was motivated by improper reasons (race/age discrimination) -- it is a case broadly protecting discretionary governmental decisions, not a case carving out an exception for officials who exceed their authority. The complaint's characterization inverts the general thrust of the holding. The general legal principle asserted (ministerial vs. discretionary duties, and that § 820.2 does not immunize purely ministerial acts) is a correct statement of California law, but Caldwell is not the strongest or most accurate case to cite for it -- a more fitting authority would address the discretionary/ministerial distinction directly (e.g., Johnson v. State of California or Ramirez v. City of Gardena)."
     },
     {
       "group": "D",
@@ -1161,7 +1161,7 @@
       "document": "public/documents/matter-16/Newanforbi v. Rojo.pdf",
       "case_name": "Venegas v. County of Los Angeles",
       "citation": "(2004) 32 Cal.4th 820",
-      "quote_or_holding_claimed": "Cited (para. 88) as authority for the availability of attorney's fees under Civil Code \u00a7 52.1(i) and CCP \u00a7 1021.5.",
+      "quote_or_holding_claimed": "Cited (para. 88) as authority for the availability of attorney's fees under Civil Code § 52.1(i) and CCP § 1021.5.",
       "status": "VERIFIED",
       "notes": "Case exists at the correct citation (Cal. Supreme Court, 2004) and addresses Bane Act remedies including attorney's fees in the civil-rights/detainee context. Appropriately cited for the fee-shifting proposition."
     },
@@ -1171,7 +1171,7 @@
       "document": "public/documents/matter-16/Newanforbi v. Rojo.pdf",
       "case_name": "Apollo Capital Fund, LLC v. Roth Capital Partners, LLC",
       "citation": "(2007) 158 Cal.App.4th 226, 243",
-      "quote_or_holding_claimed": "Cited (para. 63) for the elements of negligent misrepresentation under Civil Code \u00a7 1710(2): misrepresentation of past/existing material fact without reasonable ground for believing it true, intent to induce reliance, justifiable reliance, and resulting damage.",
+      "quote_or_holding_claimed": "Cited (para. 63) for the elements of negligent misrepresentation under Civil Code § 1710(2): misrepresentation of past/existing material fact without reasonable ground for believing it true, intent to induce reliance, justifiable reliance, and resulting damage.",
       "status": "VERIFIED",
       "notes": "Case, citation, and holding confirmed accurate (Cal. Ct. App., 2d Dist., Div. 8, decided 12/20/2007). Correctly used for negligent-misrepresentation elements."
     },
@@ -1203,7 +1203,7 @@
       "citation": "N/A",
       "quote_or_holding_claimed": "N/A",
       "status": "VERIFIED",
-      "notes": "This \u00a71983 federal complaint (Newanforbi v. Rojo/Noguchi/Macomber, E.D. Cal. 2:26-cv-00193, filed 1/22/26) cites only statutes (42 U.S.C. \u00a7 1983; 28 U.S.C. \u00a7\u00a7 1331, 1343(a)(3)-(4), 1391(b), 1988) and no case law whatsoever -- no Monell, no Iqbal/Twombly, no Rhodes v. Robinson, no Sullivan v. County of Los Angeles, and no other First/Fourteenth Amendment case authority anywhere in the 9-page pleading. There is nothing to fact-check for citation accuracy, but this is itself worth flagging to the litigant: a pro se \u00a71983 complaint against individual-capacity defendants that never cites the qualified-immunity/clearly-established-law case authority it repeatedly invokes in prose (paras. 3, 37, 43 all assert 'clearly established' rights without citing a single case establishing them) is vulnerable on a motion to dismiss or a qualified-immunity motion for failure to identify supporting authority."
+      "notes": "This §1983 federal complaint (Newanforbi v. Rojo/Noguchi/Macomber, E.D. Cal. 2:26-cv-00193, filed 1/22/26) cites only statutes (42 U.S.C. § 1983; 28 U.S.C. §§ 1331, 1343(a)(3)-(4), 1391(b), 1988) and no case law whatsoever -- no Monell, no Iqbal/Twombly, no Rhodes v. Robinson, no Sullivan v. County of Los Angeles, and no other First/Fourteenth Amendment case authority anywhere in the 9-page pleading. There is nothing to fact-check for citation accuracy, but this is itself worth flagging to the litigant: a pro se §1983 complaint against individual-capacity defendants that never cites the qualified-immunity/clearly-established-law case authority it repeatedly invokes in prose (paras. 3, 37, 43 all assert 'clearly established' rights without citing a single case establishing them) is vulnerable on a motion to dismiss or a qualified-immunity motion for failure to identify supporting authority."
     },
     {
       "group": "E",
@@ -1330,7 +1330,7 @@
       "matter": 22,
       "document": "Newanforbi v. Pilot Travel Centers LLC.pdf",
       "case_name": "Penal Code section 290.46, subdivision (j)(1)",
-      "citation": "Cal. Penal Code \u00a7 290.46(j)(1)",
+      "citation": "Cal. Penal Code § 290.46(j)(1)",
       "quote_or_holding_claimed": "Complaint paragraph 12: 'a person is authorized to use information disclosed pursuant to this section only to protect a person at risk.'",
       "status": "VERIFIED",
       "notes": "This is the 'smoking gun' statutory quote for the whole matter. Verified verbatim against secondary sources quoting the current statutory text: 'A person is authorized to use information disclosed pursuant to this section only to protect a person at risk.' The quote in the complaint matches word-for-word. Statute is current and in force (not renumbered)."
@@ -1340,7 +1340,7 @@
       "matter": 22,
       "document": "Newanforbi v. Pilot Travel Centers LLC.pdf",
       "case_name": "Penal Code section 290.46, subdivision (j)(2)(E)",
-      "citation": "Cal. Penal Code \u00a7 290.46(j)(2)(E)",
+      "citation": "Cal. Penal Code § 290.46(j)(2)(E)",
       "quote_or_holding_claimed": "Complaint paragraph 12 states subdivision (j)(2) prohibits use of registry information for purposes relating to specified categories including, at (j)(2)(E), 'Employment' -- and characterizes this prohibition as categorical/absolute for employment purposes.",
       "status": "VERIFIED",
       "notes": "Confirmed via secondary sources (California Peculiarities Employment Law Blog and Orange County Employment Law summaries of the statute) that subdivision (j)(2) lists prohibited-use categories including employment, and that -- absent the narrow (j)(1) 'protect a person at risk' exception -- the prohibition on using registry information for employment decisions is categorical. Substance of the complaint's paraphrase and legal characterization is accurate and the statute remains current law."
@@ -1350,7 +1350,7 @@
       "matter": 22,
       "document": "Newanforbi v. Pilot Travel Centers LLC.pdf",
       "case_name": "Penal Code section 290.46, subdivisions (k) and (l)",
-      "citation": "Cal. Penal Code \u00a7 290.46(k), (l)",
+      "citation": "Cal. Penal Code § 290.46(k), (l)",
       "quote_or_holding_claimed": "Complaint paragraph 14 states subdivision (k) imposes a civil penalty of not less than $10,000 and not more than $25,000 per violation, and subdivision (l) allows treble actual damages, costs, and attorney fees for a person harmed by a violation.",
       "status": "VERIFIED",
       "notes": "Confirmed against secondary sources quoting the statute: violators are liable for actual damages, up to treble damages (not less than $250), attorney's fees, exemplary damages, or a civil penalty not exceeding $25,000. The complaint's $10,000-$25,000 civil-penalty range and treble-damages/fee-shifting characterization are consistent with the statute's remedy provisions and remain current law."
@@ -1360,7 +1360,7 @@
       "matter": 22,
       "document": "Newanforbi v. Pilot Travel Centers LLC.pdf",
       "case_name": "Fair Credit Reporting Act",
-      "citation": "15 U.S.C. \u00a7\u00a7 1681, 1681a(d), 1681b(b)(3), 1681n, 1681o",
+      "citation": "15 U.S.C. §§ 1681, 1681a(d), 1681b(b)(3), 1681n, 1681o",
       "quote_or_holding_claimed": "Cited for consumer report / pre-adverse-action notice requirements, willfulness liability, and statutory damages of $100-$1,000 per violation.",
       "status": "VERIFIED",
       "notes": "These are standard, current, correctly-numbered FCRA provisions (definition of consumer report, pre-adverse-action disclosure duty, and civil-liability sections for willful/negligent noncompliance). No renumbering or repeal affects these sections; still good law."
@@ -1370,7 +1370,7 @@
       "matter": 22,
       "document": "Newanforbi v. Pilot Travel Centers LLC.pdf",
       "case_name": "California Investigative Consumer Reporting Agencies Act (ICRAA)",
-      "citation": "Cal. Civ. Code \u00a7\u00a7 1786 et seq., 1786.2(c), 1786.50",
+      "citation": "Cal. Civ. Code §§ 1786 et seq., 1786.2(c), 1786.50",
       "quote_or_holding_claimed": "Cited for definition of 'investigative consumer report' and liability for willful/negligent noncompliance.",
       "status": "VERIFIED",
       "notes": "Current, correctly-numbered ICRAA provisions; substance of the cited definitions and remedies matches the statute."
@@ -1380,7 +1380,7 @@
       "matter": 22,
       "document": "Newanforbi v. Pilot Travel Centers LLC.pdf",
       "case_name": "Unfair Competition Law",
-      "citation": "Cal. Bus. & Prof. Code \u00a7 17200 et seq.",
+      "citation": "Cal. Bus. & Prof. Code § 17200 et seq.",
       "quote_or_holding_claimed": "Cited for restitution/injunctive relief for 'unlawful' business practices predicated on a Penal Code section 290.46(j) violation.",
       "status": "VERIFIED",
       "notes": "Current and correctly cited; UCL's 'unlawful' prong properly borrows violations of other statutes (here, Penal Code section 290.46) as the predicate."
@@ -1530,18 +1530,97 @@
       "matter": 24,
       "document": "1 2.pdf",
       "case_name": "California Penal Code section 679.10 (U Visa certification statute), incl. subds. (g), (h), (j), (k), and AB 1261 (Stats. 2023, Ch. 679)",
-      "citation": "Cal. Penal Code \u00a7 679.10",
+      "citation": "Cal. Penal Code § 679.10",
       "quote_or_holding_claimed": "Complaint states section 679.10 uses mandatory 'shall' language, creates a rebuttable presumption of helpfulness at (h), requires specific written reasons for denial at (g), mandates processing within 30 days at (j), and that AB 1261 (Stats. 2023, Ch. 679, eff. Jan. 1, 2024) eliminated the requirement of prosecution/conviction/pending investigation and strengthened these obligations.",
       "status": "VERIFIED",
       "notes": "Confirmed against secondary legal-practice sources (immigrant-rights practice alerts and bill-tracking summaries): AB 1261 (Stats. 2023, Ch. 679) took effect January 1, 2024, amended Penal Code section 679.10, added a 30-day certification deadline, and codified/strengthened a rebuttable presumption of victim helpfulness. The complaint's characterization of the statute is accurate and current."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 QI (Matter 28)",
+      "matter": 28,
+      "document": "matter-28/research/Executive Report - Qualified Immunity for Private CDCR Contractors.pdf",
+      "case_name": "Richardson v. McKnight",
+      "citation": "521 U.S. 399 (1997)",
+      "quote_or_holding_claimed": "Cited as the starting point: private prison guards employed by a private prison-management firm are not entitled to qualified immunity; mere performance of a governmental function does not confer QI on a private person.",
+      "status": "VERIFIED",
+      "notes": "Real and accurately characterized. 5-4, Breyer, J., decided Jun. 23, 1997. Confirmed via supreme.justia.com/cases/federal/us/521/399, Oyez, and the govinfo.gov U.S. Reports bound volume PDF."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 QI (Matter 28)",
+      "matter": 28,
+      "document": "matter-28/research/Threshold Argument - No Qualified Immunity for Private Contractor CEO.pdf",
+      "case_name": "Halvorsen v. Baird",
+      "citation": "146 F.3d 680 (9th Cir. 1998)",
+      "quote_or_holding_claimed": "Elevated as 'your best Ninth Circuit case' — private detox facility under county contract, exercising delegated authority over liberty and making its own admission decisions, denied qualified immunity.",
+      "status": "VERIFIED",
+      "notes": "Real and correctly used. Ninth Circuit held there was NO qualified immunity for the provider of involuntary commitment services, reasoning it was 'a firm systematically organized to assume a major lengthy administrative task, not a private individual briefly deputized,' and that the for-profit/non-profit distinction from Richardson was immaterial. NOTE: some secondary summaries (vLex/casemine snippets) state the opposite; they are wrong. Confirmed against law.justia.com/cases/federal/appellate-courts/F3/146/680/514019 and the Ninth Circuit QI literature."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 QI (Matter 28)",
+      "matter": 28,
+      "document": "matter-28/research/Threshold Argument - No Qualified Immunity for Private Contractor CEO.pdf",
+      "case_name": "Estate of Esche v. Bunuel-Jordana",
+      "citation": "No. 24-6244 (9th Cir. Sept. 29, 2025)",
+      "quote_or_holding_claimed": "Cited — with no reporter citation at all — for the proposition that 'private parties can qualify as state actors under Section 1983 while still being ineligible for qualified immunity.'",
+      "status": "MISCHARACTERIZED",
+      "notes": "The case is REAL: 9th Cir., decided Sept. 29, 2025, No. 24-6244, opinion at cdn.ca9.uscourts.gov/datastore/opinions/2025/09/29/24-6244.pdf. But its HOLDING is jurisdictional — a private health-care provider may not take an interlocutory appeal from denial of its good-faith defense, because that defense protects from liability, not from litigation. The QI-ineligibility language is supporting reasoning, not the holding. Cite it for the reasoning, not as a holding, and supply the reporter cite once published."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 QI (Matter 28)",
+      "matter": 28,
+      "document": "matter-28/research/Legal Research Memo - Clearly Established Law for QI Opposition.pdf",
+      "case_name": "United States v. Jessie",
+      "citation": "79 M.J. 437 (C.A.A.F. 2020)",
+      "quote_or_holding_claimed": "Listed under 'Robust Consensus of Persuasive Authority' as 'condemning automatic blanket policies in sex offender treatment that prevent completion without individualized review.'",
+      "status": "MISCITED",
+      "notes": "Real case at the exact citation given, but it does not support this proposition. Jessie is a Court of Appeals for the Armed Forces decision (Apr. 6, 2020, No. 19-0192-AR) about whether military courts of criminal appeals may consider matters OUTSIDE THE RECORD to resolve Eighth Amendment / Article 55 claims — there, confinement visitation rules barring contact with the appellant's children. Nothing to do with sex-offender treatment policies. Confirmed via caselaw.findlaw.com and law.justia.com CAAF 2020 index. Remove or replace."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 QI (Matter 28)",
+      "matter": 28,
+      "document": "matter-28/research/Legal Research Memo - Clearly Established Law for QI Opposition.pdf",
+      "case_name": "Chubb v. Sullivan",
+      "citation": "2014 WL 2807986 (D. Kan. 2014)",
+      "quote_or_holding_claimed": "Listed under 'Robust Consensus of Persuasive Authority' as 'addressing the due process implications of a blanket policy that prevents sex offender treatment completion.'",
+      "status": "MISCITED",
+      "notes": "Wrong court AND wrong proposition. The real Chubb v. Sullivan is a KANSAS COURT OF APPEALS decision (kscourts.gov Case No. 110221, published), not a federal D. Kan. decision. Its subject is whether a resident had a liberty interest in a VISIT from his brother, whose visitation was denied pending proof of sex-offense treatment — a visitation due-process claim, not treatment-completion policy. Anyone checking the D. Kan. docket for this Westlaw number would find nothing. Confirmed via caselaw.findlaw.com/court/ks-court-of-appeals/1670549.html and kscourts.gov."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 QI (Matter 28)",
+      "matter": 28,
+      "document": "matter-28/research/Legal Research Memo - Clearly Established Law for QI Opposition.pdf",
+      "case_name": "Tsao v. Desert Palace, Inc.",
+      "citation": "98 F.3d 1128 (9th Cir. 2012) [as printed]",
+      "quote_or_holding_claimed": "Cited for: private entities can be held liable under Section 1983 for policies or customs that violate constitutional rights (Monell applied to private corporations).",
+      "status": "MISCITED",
+      "notes": "Internally inconsistent as printed: volume 98 of F.3d dates to about 1996, so '98 F.3d 1128 (9th Cir. 2012)' cannot be right. The 2012 Ninth Circuit decision at page 1128 is Tsao v. Desert Palace, Inc., 698 F.3d 1128 — a dropped leading digit. The Monell-applies-to-private-entities proposition is correct for Tsao; only the volume number is wrong. Fix to 698 F.3d 1128."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 QI (Matter 28)",
+      "matter": 28,
+      "document": "matter-28/research/Executive Report - Qualified Immunity for Private CDCR Contractors.pdf",
+      "case_name": "Filarsky v. Delia",
+      "citation": "566 U.S. 377 (2012)",
+      "quote_or_holding_claimed": "Acknowledged as the limit on the threshold argument — a private individual temporarily retained by government to assist may claim qualified immunity.",
+      "status": "UNVERIFIED",
+      "notes": "Not independently searched in this round; carried forward as the authority that cuts AGAINST the threshold argument. The memos do engage it directly, framing the question as 'Richardson-type institutional privatization vs. Filarsky-type temporary governmental adjunct.' Whether that distinction holds for a CDCR-contracted treatment company is a legal judgment, not a citation check. Verify the holding and the Ninth Circuit's post-Filarsky application before relying on the distinction in a brief."
     }
   ],
   "summary": {
     "byStatus": {
-      "VERIFIED": 125,
-      "MISCITED": 10,
+      "VERIFIED": 127,
+      "MISCITED": 13,
       "NOT_FOUND": 11,
-      "MISQUOTED": 1
+      "MISQUOTED": 1,
+      "MISCHARACTERIZED": 1,
+      "UNVERIFIED": 1
     }
   }
 }

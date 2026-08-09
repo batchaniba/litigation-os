@@ -14,13 +14,13 @@ numbers, so a citation in a draft can be traced to a source page rather than tru
 
 | | |
 |---|---|
-| PDFs scanned | 560 |
-| Pages | 5,793 |
-| Readable | 484 |
+| PDFs scanned | 571 |
+| Pages | 5,890 |
+| Readable | 495 |
 | **No text layer (not searched)** | **74** |
 | Unreadable | 2 |
-| Distinct citations | 2,635 |
-| Total occurrences | 9,259 |
+| Distinct citations | 2,862 |
+| Total occurrences | 9,852 |
 
 A PDF with no text layer yields no citations. That is **not** the same as containing
 none — those documents are unsearched until OCR'd.
@@ -29,18 +29,19 @@ none — those documents are unsearched until OCR'd.
 
 | Kind | Distinct |
 |---|---|
-| `case_name` | 739 |
-| `authority` | 660 |
-| `case_reporter` | 594 |
+| `case_name` | 806 |
+| `authority` | 741 |
+| `case_reporter` | 628 |
 | `statute_state` | 233 |
-| `section_shorthand` | 142 |
-| `rule_local` | 85 |
+| `section_shorthand` | 144 |
+| `rule_local` | 86 |
 | `rule_federal` | 71 |
 | `rule_state` | 45 |
-| `statute_federal` | 40 |
+| `statute_federal` | 42 |
+| `case_westlaw` | 39 |
 | `regulation_state` | 12 |
 | `regulation_federal` | 8 |
-| `constitutional` | 6 |
+| `constitutional` | 7 |
 
 `authority` rows join a case name to its reporter cite and year — the form a drafter
 writes. `case_name` and `case_reporter` are the unjoined fragments, kept because many
@@ -56,25 +57,25 @@ folder-derived attribution reported zero for Matters 1, 2, 7 and 20.
 |---|---|---|
 | 1 | Newanforbi v. CHP et al. | 123 |
 | 2 | Newanforbi v. Meza-Gonzalez et al. | 84 |
-| 7 | Newanforbi v. Candelaria | 269 |
+| 7 | Newanforbi v. Candelaria | 284 |
 | 12 | Brendan Ngwa Nforbi v. Diamond Truck Sales,  | 82 |
 | 19 | Newanforbi v. Macomber | 101 |
 | 20 | Newanforbi v. California Highway Patrol, et  | 241 |
-| 24 | Newanforbi v. Serrato | 69 |
+| 24 | Newanforbi v. Serrato | 68 |
 | 25 | Newanforbi v. Federal Express Corporation | 34 |
 | 26 | Newanforbi v. United Parcel Service, Inc. | 35 |
 | 27 | Newanforbi v. Randstad, et al. | 49 |
-| 28 | Newanforbi v. Shannon Smith, LCSW, CEO, et a | 38 |
-| 29 | Newanforbi v. Amazon.com Services, LLC | 604 |
+| 28 | Newanforbi v. Shannon Smith, LCSW, CEO, et a | 207 |
+| 29 | Newanforbi v. Amazon.com Services, LLC | 641 |
 | 30 | Newanforbi v. Moua, et al. | 100 |
 | 31 | Newanforbi v. First Advantage LLC | 0 |
-| 32 | Ngwa Nforbi v. Meza-Gonzalez, et al | 705 |
-| 33 | Ngwa Nforbi v. Candelaria, et al | 365 |
+| 32 | Ngwa Nforbi v. Meza-Gonzalez, et al | 700 |
+| 33 | Ngwa Nforbi v. Candelaria, et al | 379 |
 
 ## Highest-exposure citations
 
-491 of 660 paired authorities do not appear in the July audit. Of those,
-**123 are asserted only in Plaintiff's own filings**, with no court order or
+564 of 741 paired authorities do not appear in the July audit. Of those,
+**137 are asserted only in Plaintiff's own filings**, with no court order or
 opposing brief in the corpus citing them back. Unverified *and* uncorroborated is where a
 fabricated or miscited authority survives undetected — the queue worth working first.
 
@@ -88,6 +89,7 @@ fabricated or miscited authority survives undetected — the queue worth working
 | 6 | See Tameny v. Atlantic Richfield Co, 27 Cal. 3d 167 (1980) | 25, 26, 27 |
 | 6 | Vlandis v. Kline, 412 U.S. 441 (1973) | 33 |
 | 5 | Chism v. Washington State, 661 F. 3d 380 | 32 |
+| 5 | Foucha v. Louisiana, 504 U.S. 71 (1992) | 28 |
 | 5 | Payton v. New York, 445 U.S. 573 (1980) | 32 |
 | 4 | Collins v. Virginia, 584 U.S. 586 (2018) | 32 |
 | 4 | Costanich v. Dep't of Social, 627 F. 3d 1101 | 32 |
@@ -99,29 +101,28 @@ fabricated or miscited authority survives undetected — the queue worth working
 | 3 | AIDS Healthcare Foundation v. Los Angeles County Dept, 197 Cal.App. 4t | 9 |
 | 3 | Ballentine v. Tucker, 28 F. 4th 54 | 32 |
 | 3 | Beck v. Ohio, 379 U.S. 89 (1964) | 32 |
+| 3 | Burrell v. Jackson, 2003 WL 23545858 | 7, 32, 33 |
 | 3 | City of Moorpark v. Superior Court, 18 Cal. 4th 1143 (1998) | 25, 26 |
 | 3 | Due Process Clause. Greenholtz v. Inmates of Nebraska Penal, 442 U.S.  | 9 |
 | 3 | Gantt v. Sentry Insurance, 1 Cal. 4th 1083 (1992) | 27 |
 | 3 | Home v. Dep’t of Health Care Services, 204 Cal.App. 4th 676 (2012) | 9 |
 | 3 | In re Stevens, 119 Cal.App. 4th 1228 (2004) | 5, 15 |
+| 3 | Neal v. Shimoda, 131 F. 3d 818 | 28 |
 | 3 | Scenic Community v. County of L.A, 11 Cal. 3d 506 (1974) | 9 |
 | 3 | See California Highway Patrol v. Superior Court, 158 Cal.App. 4th 726  | 9 |
 | 3 | See JKH Enterprises, Inc. v. Dept. of Industrial Relations, 142 Cal.Ap | 9 |
 | 3 | See Rodriguez v. Solis, 1 Cal.App. 4th 495 (1991) | 9 |
 | 3 | Spencer v. Peters, 857 F. 3d 789 | 30 |
 | 3 | Thornton v. Brown, 757 F. 3d 834 | 30 |
+| 3 | Under the Mathews v. Eldridge, 424 U.S. 319 (1976) | 24, 32 |
 | 3 | United States Supreme Court Greenholtz v. Inmates of Nebraska Penal, 4 | 9 |
 | 2 | Armondo v. Dep't of Motor Vehicles, 15 Cal.App. 4th 1174 (1993) | 33 |
 | 2 | Ashelman v. Pope, 793 F. 2d 1072 | 33 |
 | 2 | Bd. of Educ. v. Loudermill, 470 U.S. 532 (1985) | 33 |
-| 2 | Burrell v. Jackson, 96 F. App'x 892 | 33 |
 | 2 | Carey v. Piphus, 435 U.S. 247 (1978) | 33 |
 | 2 | Cervantes v. City of San Diego, 5 F. 3d 1273 | 29 |
-| 2 | Daniels-Hall v. Nat’l Educ. Ass’n, 629 F. 3d 992 | 29 |
-| 2 | Epstein v. Washington Energy Co, 83 F. 3d 1136 | 29 |
-| 2 | Guzman v. Polaris Industries Inc, 49 F. 4th 1308 (2022) | 29 |
 
-_123 total; full list in the JSON._
+_137 total; full list in the JSON._
 
 ## Known-bad citations from the July audit — current locations
 
