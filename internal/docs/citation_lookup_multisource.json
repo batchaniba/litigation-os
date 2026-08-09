@@ -1,0 +1,761 @@
+{
+  "generatedBy": "internal/scripts/lookup-citations.py",
+  "generatedDate": "2026-08-09",
+  "reachability": {
+    "courtlistener_search": "ok (unauthenticated /api/rest/v4/search/)",
+    "case_law_api": "html docs only \u2014 JSON API not usable without auth/migration",
+    "case_law_static": "ok (CasesMetadata.json + html/{file_name}.html)",
+    "justia": "blocked (Cloudflare 403) in this environment",
+    "google_scholar": "unreliable (often 403)",
+    "courtlistener_citation_lookup": "requires API token (401)"
+  },
+  "resultCount": 20,
+  "results": [
+    {
+      "query": "Richardson v. McKnight, 521 U.S. 399 (1997)",
+      "case_name_guess": "Richardson v. McKnight",
+      "reporter_pin": "521 U.S. 399",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Richardson v. McKnight",
+      "matched_citations": [
+        "138 L. Ed. 2d 540",
+        "117 S. Ct. 2100",
+        "521 U.S. 399",
+        "1997 U.S. LEXIS 3866"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/118137/richardson-v-mcknight/",
+          "case_name": "Richardson v. McKnight",
+          "citations": [
+            "138 L. Ed. 2d 540",
+            "117 S. Ct. 2100",
+            "521 U.S. 399",
+            "1997 U.S. LEXIS 3866"
+          ],
+          "notes": "Search q='\"521 U.S. 399\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/us/521/html/0399-01.html",
+          "case_name": "Richardson v. McKnight",
+          "citations": [
+            "521 U.S. 399",
+            "138 L. Ed. 2d 540",
+            "117 S. Ct. 2100",
+            "1997 U.S. LEXIS 3866",
+            "SCDB 1996-084"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "In re Leman, 66 Cal.App.5th 200",
+      "case_name_guess": "In re Leman",
+      "reporter_pin": "66 Cal. App. 5th 200",
+      "wl_pin": null,
+      "consensus": "NOT_FOUND",
+      "matched_name": "",
+      "matched_citations": [],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": false,
+          "url": "https://www.courtlistener.com/api/rest/v4/search/",
+          "case_name": "",
+          "citations": [],
+          "notes": "No cite/name match in queries ['\"66 Cal. App. 5th 200\"', '\"66 Cal.App. 5th 200\"', '\"In re Leman\"']",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": false,
+          "url": "https://static.case.law/cal-app-5th/66/CasesMetadata.json",
+          "case_name": "",
+          "citations": [],
+          "notes": "Volume metadata unavailable for cal-app-5th/66",
+          "http_status": 404
+        }
+      ]
+    },
+    {
+      "query": "In re Hudson, 1 Cal.App. 4th 1 (2006)",
+      "case_name_guess": "In re Hudson",
+      "reporter_pin": "1 Cal. App. 4th 1",
+      "wl_pin": null,
+      "consensus": "CAPTION_MISMATCH",
+      "matched_name": "Weidenfeller v. Star & Garter",
+      "matched_citations": [
+        "1 Cal. App. 4th 1",
+        "2 Cal. Rptr. 2d 14"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/2275438/weidenfeller-v-star-garter/",
+          "case_name": "Weidenfeller v. Star & Garter",
+          "citations": [
+            "1 Cal. App. 4th 1",
+            "2 Cal. Rptr. 2d 14"
+          ],
+          "notes": "Search q='\"1 Cal. App. 4th 1\"'; cite_match=True; wl_match=False; name_match=False",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/cal-app-4th/1/html/0001-01.html",
+          "case_name": "Weidenfeller v. Star & Garter",
+          "citations": [
+            "1 Cal. App. 4th 1"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json; caption mismatch vs query name ('In re Hudson' vs 'Weidenfeller v. Star & Garter')",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "In re Hudson, 143 Cal.App.4th 1 (2006)",
+      "case_name_guess": "In re Hudson",
+      "reporter_pin": "143 Cal. App. 4th 1",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "In Re Hudson",
+      "matched_citations": [
+        "49 Cal. Rptr. 3d 74",
+        "143 Cal. App. 4th 1",
+        "2006 Cal. Daily Op. Serv. 8901",
+        "2006 Daily Journal DAR 12747",
+        "2006 Cal. App. LEXIS 1440"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/2249888/in-re-hudson/",
+          "case_name": "In Re Hudson",
+          "citations": [
+            "49 Cal. Rptr. 3d 74",
+            "143 Cal. App. 4th 1",
+            "2006 Cal. Daily Op. Serv. 8901",
+            "2006 Daily Journal DAR 12747",
+            "2006 Cal. App. LEXIS 1440"
+          ],
+          "notes": "Search q='\"143 Cal. App. 4th 1\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/cal-app-4th/143/html/0001-01.html",
+          "case_name": "In re Hudson",
+          "citations": [
+            "143 Cal. App. 4th 1"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Burrell v. Jackson, 2003 WL 23545858",
+      "case_name_guess": "Burrell v. Jackson",
+      "reporter_pin": null,
+      "wl_pin": "23545858",
+      "consensus": "NOT_FOUND",
+      "matched_name": "",
+      "matched_citations": [],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": false,
+          "url": "https://www.courtlistener.com/api/rest/v4/search/",
+          "case_name": "",
+          "citations": [],
+          "notes": "No cite/name match in queries ['23545858', 'WL 23545858']",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": false,
+          "url": "",
+          "case_name": "",
+          "citations": [],
+          "notes": "No supported reporter pin to resolve on static.case.law",
+          "http_status": null
+        }
+      ]
+    },
+    {
+      "query": "Swift v. Christian, 384 F. 3d 1184",
+      "case_name_guess": "Swift v. Christian",
+      "reporter_pin": "384 F.3d 1184",
+      "wl_pin": null,
+      "consensus": "CAPTION_MISMATCH",
+      "matched_name": "Michael T. Swift v. State of California Department of Corrections Keith Tandy, and Steve Christian Maritza Rodriguez",
+      "matched_citations": [
+        "384 F.3d 1184",
+        "2004 U.S. App. LEXIS 20769",
+        "2004 WL 2220973"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/787920/michael-t-swift-v-state-of-california-department-of-corrections-keith/",
+          "case_name": "Michael T. Swift v. State of California Department of Corrections Keith Tandy, and Steve Christian Maritza Rodriguez",
+          "citations": [
+            "384 F.3d 1184",
+            "2004 U.S. App. LEXIS 20769",
+            "2004 WL 2220973"
+          ],
+          "notes": "Search q='\"384 F.3d 1184\"'; cite_match=True; wl_match=False; name_match=False",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/f3d/384/html/1184-01.html",
+          "case_name": "Swift v. California",
+          "citations": [
+            "384 F.3d 1184"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json; caption mismatch vs query name ('Swift v. Christian' vs 'Swift v. California')",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Swift v. California, 384 F.3d 1184",
+      "case_name_guess": "Swift v. California",
+      "reporter_pin": "384 F.3d 1184",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Swift v. California",
+      "matched_citations": [
+        "384 F.3d 1184"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/787920/michael-t-swift-v-state-of-california-department-of-corrections-keith/",
+          "case_name": "Michael T. Swift v. State of California Department of Corrections Keith Tandy, and Steve Christian Maritza Rodriguez",
+          "citations": [
+            "384 F.3d 1184",
+            "2004 U.S. App. LEXIS 20769",
+            "2004 WL 2220973"
+          ],
+          "notes": "Search q='\"384 F.3d 1184\"'; cite_match=True; wl_match=False; name_match=False",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/f3d/384/html/1184-01.html",
+          "case_name": "Swift v. California",
+          "citations": [
+            "384 F.3d 1184"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Soranno's Gasco, Inc. v. Morgan Hill Unified, 874 F. 2d 1310",
+      "case_name_guess": "Soranno's Gasco, Inc. v. Morgan Hill Unified",
+      "reporter_pin": "874 F.2d 1310",
+      "wl_pin": null,
+      "consensus": "CAPTION_MISMATCH",
+      "matched_name": "Soranno's Gasco, Inc. v. Morgan",
+      "matched_citations": [
+        "874 F.2d 1310",
+        "1989 WL 49315"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/8978008/sorannos-gasco-inc-v-morgan/",
+          "case_name": "Soranno's Gasco, Inc. v. Morgan",
+          "citations": [
+            "874 F.2d 1310",
+            "1989 WL 49315"
+          ],
+          "notes": "Search q='\"874 F.2d 1310\"'; cite_match=True; wl_match=False; name_match=False",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/f2d/874/html/1310-01.html",
+          "case_name": "Soranno's Gasco, Inc. v. Morgan",
+          "citations": [
+            "874 F.2d 1310"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json; caption mismatch vs query name (\"Soranno's Gasco, Inc. v. Morgan Hill Unified\" vs \"Soranno's Gasco, Inc. v. Morgan\")",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Soranno's Gasco, Inc. v. Morgan, 874 F.2d 1310",
+      "case_name_guess": "Soranno's Gasco, Inc. v. Morgan",
+      "reporter_pin": "874 F.2d 1310",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Soranno's Gasco, Inc. v. Morgan",
+      "matched_citations": [
+        "874 F.2d 1310",
+        "1989 WL 49315"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/8978008/sorannos-gasco-inc-v-morgan/",
+          "case_name": "Soranno's Gasco, Inc. v. Morgan",
+          "citations": [
+            "874 F.2d 1310",
+            "1989 WL 49315"
+          ],
+          "notes": "Search q='\"874 F.2d 1310\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/f2d/874/html/1310-01.html",
+          "case_name": "Soranno's Gasco, Inc. v. Morgan",
+          "citations": [
+            "874 F.2d 1310"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Lockley v. Law Office, 91 Cal.App. 4th 401 (2001)",
+      "case_name_guess": "Lockley v. Law Office",
+      "reporter_pin": "91 Cal. App. 4th 401",
+      "wl_pin": null,
+      "consensus": "NOT_FOUND",
+      "matched_name": "",
+      "matched_citations": [],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": false,
+          "url": "https://www.courtlistener.com/api/rest/v4/search/",
+          "case_name": "",
+          "citations": [],
+          "notes": "No cite/name match in queries ['\"91 Cal. App. 4th 401\"', '\"91 Cal.App. 4th 401\"', '\"Lockley v. Law Office\"']",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": false,
+          "url": "https://static.case.law/cal-app-4th/91/CasesMetadata.json",
+          "case_name": "",
+          "citations": [],
+          "notes": "No case with first_page=401 in CAP volume cal-app-4th/91",
+          "http_status": null
+        }
+      ]
+    },
+    {
+      "query": "Lockley v. Law Office of Cantrell, 91 Cal.App.4th 875 (2001)",
+      "case_name_guess": "Lockley v. Law Office of Cantrell",
+      "reporter_pin": "91 Cal. App. 4th 875",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Lockley v. Law Office of Cantrell, Green, Pekich, Cruz & McCort",
+      "matched_citations": [
+        "110 Cal. Rptr. 2d 877",
+        "91 Cal. App. 4th 875",
+        "66 Cal. Comp. Cases 1061",
+        "2001 Daily Journal DAR 8963",
+        "2001 Cal. Daily Op. Serv. 7309",
+        "2001 Cal. App. LEXIS 655"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/2261415/lockley-v-law-office-of-cantrell-green-pekich-cruz-mccort/",
+          "case_name": "Lockley v. Law Office of Cantrell, Green, Pekich, Cruz & McCort",
+          "citations": [
+            "110 Cal. Rptr. 2d 877",
+            "91 Cal. App. 4th 875",
+            "66 Cal. Comp. Cases 1061",
+            "2001 Daily Journal DAR 8963",
+            "2001 Cal. Daily Op. Serv. 7309",
+            "2001 Cal. App. LEXIS 655"
+          ],
+          "notes": "Search q='\"91 Cal. App. 4th 875\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/cal-app-4th/91/html/0875-01.html",
+          "case_name": "Lockley v. Law Office of Cantrell, Green, Pekich, Cruz & McCort",
+          "citations": [
+            "91 Cal. App. 4th 875"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "California, Ltd. v. Dry Creek Joint Elementary Sch. Dist, 50 Cal.App. 4th 1",
+      "case_name_guess": "California, Ltd. v. Dry Creek Joint Elementary Sch. Dist",
+      "reporter_pin": "50 Cal. App. 4th 1",
+      "wl_pin": null,
+      "consensus": "NOT_FOUND",
+      "matched_name": "",
+      "matched_citations": [],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": false,
+          "url": "https://www.courtlistener.com/api/rest/v4/search/",
+          "case_name": "",
+          "citations": [],
+          "notes": "No cite/name match in queries ['\"50 Cal. App. 4th 1\"', '\"50 Cal.App. 4th 1\"', '\"California, Ltd. v. Dry Creek Joint Elementary Sch. Dist\"']",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": false,
+          "url": "https://static.case.law/cal-app-4th/50/CasesMetadata.json",
+          "case_name": "",
+          "citations": [],
+          "notes": "No case with first_page=1 in CAP volume cal-app-4th/50",
+          "http_status": null
+        }
+      ]
+    },
+    {
+      "query": "Western/California, Ltd. v. Dry Creek, 50 Cal.App.4th 1461",
+      "case_name_guess": "Western/California, Ltd. v. Dry Creek",
+      "reporter_pin": "50 Cal. App. 4th 1461",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Western/California, Ltd. v. Dry Creek Joint Elementary School District",
+      "matched_citations": [
+        "50 Cal. App. 4th 1461",
+        "58 Cal. Rptr. 2d 220",
+        "96 Cal. Daily Op. Serv. 8413",
+        "96 Daily Journal DAR 13883",
+        "1996 Cal. App. LEXIS 1076"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/2292476/westerncalifornia-ltd-v-dry-creek-joint-elementary-school-district/",
+          "case_name": "Western/California, Ltd. v. Dry Creek Joint Elementary School District",
+          "citations": [
+            "50 Cal. App. 4th 1461",
+            "58 Cal. Rptr. 2d 220",
+            "96 Cal. Daily Op. Serv. 8413",
+            "96 Daily Journal DAR 13883",
+            "1996 Cal. App. LEXIS 1076"
+          ],
+          "notes": "Search q='\"50 Cal. App. 4th 1461\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/cal-app-4th/50/html/1461-01.html",
+          "case_name": "Western/California, Ltd. v. Dry Creek Joint Elementary School District",
+          "citations": [
+            "50 Cal. App. 4th 1461"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Home v. Dep't of Health Care Services, 204 Cal.App. 4th 676 (2012)",
+      "case_name_guess": "Home v. Dep't of Health Care Services",
+      "reporter_pin": "204 Cal. App. 4th 676",
+      "wl_pin": null,
+      "consensus": "CAPTION_MISMATCH",
+      "matched_name": "California Ass'n for Health Services at Home v. State Department of Health Care Services",
+      "matched_citations": [
+        "204 Cal. App. 4th 676",
+        "138 Cal. Rptr. 3d 889",
+        "2012 Cal. App. LEXIS 347"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/5810956/california-assn-for-health-services-at-home-v-state-department-of-health/",
+          "case_name": "California Ass'n for Health Services at Home v. State Department of Health Care Services",
+          "citations": [
+            "204 Cal. App. 4th 676",
+            "138 Cal. Rptr. 3d 889",
+            "2012 Cal. App. LEXIS 347"
+          ],
+          "notes": "Search q='\"204 Cal. App. 4th 676\"'; cite_match=True; wl_match=False; name_match=False",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/cal-app-4th/204/html/0676-01.html",
+          "case_name": "California Ass'n for Health Services at Home v. State Department of Health Care Services",
+          "citations": [
+            "204 Cal. App. 4th 676"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json; caption mismatch vs query name (\"Home v. Dep't of Health Care Services\" vs \"California Ass'n for Health Services at Home v. State Department of Health Care Services\")",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "California Ass'n for Health Services at Home v. State Department of Health Care Services, 204 Cal.App.4th 676 (2012)",
+      "case_name_guess": "California Ass'n for Health Services at Home v. State Department of Health Care Services",
+      "reporter_pin": "204 Cal. App. 4th 676",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "California Ass'n for Health Services at Home v. State Department of Health Care Services",
+      "matched_citations": [
+        "204 Cal. App. 4th 676",
+        "138 Cal. Rptr. 3d 889",
+        "2012 Cal. App. LEXIS 347"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/5810956/california-assn-for-health-services-at-home-v-state-department-of-health/",
+          "case_name": "California Ass'n for Health Services at Home v. State Department of Health Care Services",
+          "citations": [
+            "204 Cal. App. 4th 676",
+            "138 Cal. Rptr. 3d 889",
+            "2012 Cal. App. LEXIS 347"
+          ],
+          "notes": "Search q='\"204 Cal. App. 4th 676\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/cal-app-4th/204/html/0676-01.html",
+          "case_name": "California Ass'n for Health Services at Home v. State Department of Health Care Services",
+          "citations": [
+            "204 Cal. App. 4th 676"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Unicorn Glob., Inc. v. Hillo Am., Inc, 2021 WL 1034838",
+      "case_name_guess": "Unicorn Glob., Inc. v. Hillo Am., Inc",
+      "reporter_pin": null,
+      "wl_pin": "1034838",
+      "consensus": "NOT_FOUND",
+      "matched_name": "",
+      "matched_citations": [],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": false,
+          "url": "https://www.courtlistener.com/api/rest/v4/search/",
+          "case_name": "",
+          "citations": [],
+          "notes": "No cite/name match in queries ['1034838', 'WL 1034838']",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": false,
+          "url": "",
+          "case_name": "",
+          "citations": [],
+          "notes": "No supported reporter pin to resolve on static.case.law",
+          "http_status": null
+        }
+      ]
+    },
+    {
+      "query": "Los Angeles Cath. Worker v. Los Angeles Downtown Indus. Dist. Bus, 2015 WL 13650018",
+      "case_name_guess": "Los Angeles Cath. Worker v. Los Angeles Downtown Indus. Dist. Bus",
+      "reporter_pin": null,
+      "wl_pin": "13650018",
+      "consensus": "NOT_FOUND",
+      "matched_name": "",
+      "matched_citations": [],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": false,
+          "url": "https://www.courtlistener.com/api/rest/v4/search/",
+          "case_name": "",
+          "citations": [],
+          "notes": "No cite/name match in queries ['13650018', 'WL 13650018']",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": false,
+          "url": "",
+          "case_name": "",
+          "citations": [],
+          "notes": "No supported reporter pin to resolve on static.case.law",
+          "http_status": null
+        }
+      ]
+    },
+    {
+      "query": "California Highway Patrol v. Superior Court, 158 Cal.App. 4th 726 (2008)",
+      "case_name_guess": "California Highway Patrol v. Superior Court",
+      "reporter_pin": "158 Cal. App. 4th 726",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Department of California Highway Patrol v. Superior Court",
+      "matched_citations": [
+        "70 Cal. Rptr. 3d 280",
+        "158 Cal. App. 4th 726",
+        "2008 Cal. App. LEXIS 7"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/2244860/department-of-california-highway-patrol-v-superior-court/",
+          "case_name": "Department of California Highway Patrol v. Superior Court",
+          "citations": [
+            "70 Cal. Rptr. 3d 280",
+            "158 Cal. App. 4th 726",
+            "2008 Cal. App. LEXIS 7"
+          ],
+          "notes": "Search q='\"158 Cal. App. 4th 726\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/cal-app-4th/158/html/0726-01.html",
+          "case_name": "Department of California Highway Patrol v. Superior Court",
+          "citations": [
+            "158 Cal. App. 4th 726"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "People v. Rizo, 22 Cal. 4th 681 (2000)",
+      "case_name_guess": "People v. Rizo",
+      "reporter_pin": "22 Cal. 4th 681",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "People v. Rizo",
+      "matched_citations": [
+        "996 P.2d 27",
+        "94 Cal. Rptr. 2d 375",
+        "22 Cal. 4th 681",
+        "22 Cal. 681",
+        "2000 Daily Journal DAR 3489",
+        "2000 Cal. Daily Op. Serv. 2594",
+        "2000 Cal. LEXIS 2070"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/1316085/people-v-rizo/",
+          "case_name": "People v. Rizo",
+          "citations": [
+            "996 P.2d 27",
+            "94 Cal. Rptr. 2d 375",
+            "22 Cal. 4th 681",
+            "22 Cal. 681",
+            "2000 Daily Journal DAR 3489",
+            "2000 Cal. Daily Op. Serv. 2594",
+            "2000 Cal. LEXIS 2070"
+          ],
+          "notes": "Search q='\"22 Cal. 4th 681\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/cal-4th/22/html/0681-01.html",
+          "case_name": "People v. Rizo",
+          "citations": [
+            "22 Cal. 4th 681"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Stump v. Sparkman, 435 U.S. 349 (1978)",
+      "case_name_guess": "Stump v. Sparkman",
+      "reporter_pin": "435 U.S. 349",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Stump v. Sparkman",
+      "matched_citations": [
+        "55 L. Ed. 2d 331",
+        "98 S. Ct. 1099",
+        "435 U.S. 349",
+        "1978 U.S. LEXIS 74"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/109820/stump-v-sparkman/",
+          "case_name": "Stump v. Sparkman",
+          "citations": [
+            "55 L. Ed. 2d 331",
+            "98 S. Ct. 1099",
+            "435 U.S. 349",
+            "1978 U.S. LEXIS 74"
+          ],
+          "notes": "Search q='\"Stump v. Sparkman\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/us/435/html/0349-01.html",
+          "case_name": "Stump v. Sparkman",
+          "citations": [
+            "435 U.S. 349",
+            "55 L. Ed. 2d 331",
+            "98 S. Ct. 1099",
+            "1978 U.S. LEXIS 74",
+            "SCDB 1977-056"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    }
+  ]
+}

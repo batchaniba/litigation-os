@@ -16,14 +16,18 @@ export default defineConfig({
       reporter: ['text', 'json-summary'],
       include: [
         'internal/src/components/Modal.jsx',
-        'internal/src/utils/calendarUtils.js',
-        'internal/src/utils/matterLifecycle.ts',
-        'internal/src/utils/deadlineMath/**/*.{ts,js}',
+        'internal/src/hooks/**/*.{ts,js}',
+        'internal/src/utils/**/*.{ts,js}',
       ],
       exclude: [
         // Type-only module; Vitest 4 / v8 attributes it as 0% and skews averages.
         'internal/src/utils/deadlineMath/types.ts',
+        '**/*.test.{ts,js}',
       ],
+      // Thresholds are unchanged, but they now apply across every hook and util
+      // rather than four hand-picked files — 846 statements instead of 270. The
+      // suites for statusLabel, crossMatter, matterRefs and proseBudget already
+      // existed and ran; they simply were not counted.
       thresholds: {
         lines: 80,
         functions: 80,

@@ -1,5 +1,7 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useCallback } from "react";
 import { Navigate, Route, Routes, useNavigate } from "react-router";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import { ShellLayout } from "./components/layout/ShellLayout";
 import { RouteLoading } from "./components/ui/AsyncState";
 import { usePortfolioUI } from "./context/PortfolioUIContext";
@@ -19,10 +21,14 @@ const CrossMatterTab = lazy(() => import("./components/CrossMatterTab").then((m)
 const DeadlineCalculatorTab = lazy(() => import("./components/DeadlineCalculatorTab").then((m) => ({ default: m.DeadlineCalculatorTab })));
 const MatterDetailPage = lazy(() => import("./pages/MatterDetailPage").then((m) => ({ default: m.MatterDetailPage })));
 
+const noop = () => undefined;
+
 function DashboardRoute() {
   const ui = usePortfolioUI();
   const navigate = useNavigate();
-  return <DashboardTab upcomingEvents={ui.upcomingEvents} setClusterFilter={(cluster: number) => navigate(`${ROUTES.matters}?cluster=${cluster}`)} setActiveTab={() => undefined} />;
+  // Stable identities so DashboardTab can bail out on unrelated shell re-renders.
+  const setClusterFilter = useCallback((cluster: number) => navigate(`${ROUTES.matters}?cluster=${cluster}`), [navigate]);
+  return <DashboardTab upcomingEvents={ui.upcomingEvents} setClusterFilter={setClusterFilter} setActiveTab={noop} />;
 }
 
 function TimelineRoute() {
@@ -37,26 +43,30 @@ function DamagesRoute() {
 
 export default function App() {
   return (
-    <Suspense fallback={<RouteLoading label="Loading portfolio section" />}>
-      <Routes>
-        <Route element={<ShellLayout />}>
-          <Route index element={<DashboardRoute />} />
-          <Route path="census" element={<CensusRoute />} />
-          <Route path="calendar" element={<Navigate to={ROUTES.timeline} replace />} />
-          <Route path="matters" element={<MattersRoute />} />
-          <Route path="matters/:matterNumber" element={<MatterDetailPage />} />
-          <Route path="cross-matter" element={<CrossMatterTab />} />
-          <Route path="timeline" element={<TimelineRoute />} />
-          <Route path="deadlines" element={<DeadlineCalculatorTab />} />
-          <Route path="damages" element={<DamagesRoute />} />
-          <Route path="theories" element={<TheoriesTab />} />
-          <Route path="cost-of-counsel" element={<CostOfCounselTab />} />
-          <Route path="outcomes" element={<OutcomesTab />} />
-          <Route path="judicial-opinions" element={<JudicialOpinionsTab />} />
-          <Route path="notable-quotes" element={<NotableQuotesTab />} />
-          <Route path="*" element={<Navigate to={ROUTES.dashboard} replace />} />
-        </Route>
-      </Routes>
-    </Suspense>
+    <>
+      <Suspense fallback={<RouteLoading label="Loading portfolio section" />}>
+        <Routes>
+          <Route element={<ShellLayout />}>
+            <Route index element={<DashboardRoute />} />
+            <Route path="census" element={<CensusRoute />} />
+            <Route path="calendar" element={<Navigate to={ROUTES.timeline} replace />} />
+            <Route path="matters" element={<MattersRoute />} />
+            <Route path="matters/:matterNumber" element={<MatterDetailPage />} />
+            <Route path="cross-matter" element={<CrossMatterTab />} />
+            <Route path="timeline" element={<TimelineRoute />} />
+            <Route path="deadlines" element={<DeadlineCalculatorTab />} />
+            <Route path="damages" element={<DamagesRoute />} />
+            <Route path="theories" element={<TheoriesTab />} />
+            <Route path="cost-of-counsel" element={<CostOfCounselTab />} />
+            <Route path="outcomes" element={<OutcomesTab />} />
+            <Route path="judicial-opinions" element={<JudicialOpinionsTab />} />
+            <Route path="notable-quotes" element={<NotableQuotesTab />} />
+            <Route path="*" element={<Navigate to={ROUTES.dashboard} replace />} />
+          </Route>
+        </Routes>
+      </Suspense>
+      <Analytics />
+      <SpeedInsights />
+    </>
   );
 }

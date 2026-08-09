@@ -1580,12 +1580,12 @@
   },
   {
     "date": "Sep. 18, 2026",
-    "event": "Proof-of-service filing deadline — Newanforbi v. Randstad US, LLC et al. (26CV199902); 60 days from July 20, 2026 filing (CRC 3.110(b)); both defendants already SERVED Jul. 30, 2026",
+    "event": "Proof-of-service filing deadline — Newanforbi v. Randstad US, LLC et al. (26CV199902); 60 days from July 20, 2026 filing (CRC 3.110(b)) — SATISFIED: POS-010 proofs for both defendants e-filed and accepted Aug. 7, 2026 (One Legal ref. 28958443)",
     "matters": [
       27
     ],
     "type": "deadline",
-    "upcoming": true
+    "upcoming": false
   },
   {
     "date": "Dec. 14, 2026",
@@ -1828,13 +1828,13 @@
     "source": "/documents/matter-29/Notice of Amount of Punitive Damages Sought (CCP 425.115) - Amazon.com Services LLC (Aug 7 2026).pdf"
   },
   {
-    "date": "Aug. 7, 2026",
-    "event": "Notice of Payment of Filing Fee; Withdrawal of Request to Waive Court Fees as Moot executed for Newanforbi v. Amazon.com Services, LLC (Matter 29) — records payment in full of the $435.00 first-paper fee (Gov. Code §70611(a)) by USPS money order Serial #55300687696, purchased Aug. 3, 2026 at 4:29 PM PT (Milpitas, $2.65 fee, $437.65 total) and mailed First-Class at 4:38 PM to the Clerk, Dept. FHO, Hayward Hall of Justice; withdraws the FW-001 and requests the Aug. 18, 2026 fee-waiver hearing be taken off calendar. Carries a declaration under penalty of perjury distinguishing this money order from Serial #55201761577, a second $435.00 money order purchased the same day for the Matter 22 (Pilot) Gov. Code §68637 waived-fee repayment. Not yet filed",
+    "date": "Aug. 6, 2026",
+    "event": "Notice of Payment of Filing Fee; Withdrawal of Request to Waive Court Fees as Moot e-filed and ACCEPTED for Newanforbi v. Amazon.com Services, LLC (Matter 29) — records payment in full of the $435.00 first-paper fee (Gov. Code §70611(a)) by USPS money order Serial #55300687696 (purchased Aug. 3, 2026 at Milpitas) and withdraws the FW-001 / requests the Aug. 18, 2026 fee-waiver hearing be taken off calendar. One Legal ref. 28953227; submission 26AA00209562; court received Aug. 6, 2026 at 9:43 p.m.; notice generated Aug. 7, 2026",
     "matters": [
       29
     ],
     "type": "filing",
-    "source": "/documents/matter-29/Notice of Payment of Filing Fee and Withdrawal of Fee Waiver Request as Moot (Aug 7 2026).pdf"
+    "source": "/documents/matter-29/Notice of Confirmation of Electronic Filing - Fee Payment and Punitive Notices Accepted (Aug 6 2026).pdf"
   },
   {
     "date": "Aug. 12, 2026",
@@ -2251,12 +2251,12 @@
   },
   {
     "date": "Aug. 18, 2026",
-    "event": "Fee waiver hearing — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554), 11:30 AM, Department FHO, Hayward Hall of Justice, 24405 Amador Street, Hayward, CA 94544, before Hon. Jamilah A. Jefferson; PLAN: mooted by mailed payment in full ($435.00) — see Aug. 3, 2026 letter; FALLBACK if payment not confirmed received/applied beforehand: Plaintiff must appear with proof of his financial circumstances (income, living situation) or the fee waiver will be denied outright and Plaintiff will have 10 days to pay the filing fees in full",
+    "event": "Fee waiver hearing — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554), 11:30 AM, Department FHO — MOOTED: Notice of Payment / FW-001 withdrawal e-filed and accepted Aug. 6, 2026 (One Legal 26AA00209562); appear only if the clerk has not yet posted the $435 fee to the docket",
     "matters": [
       29
     ],
     "type": "hearing",
-    "upcoming": true
+    "upcoming": false
   },
   {
     "date": "Aug. 26, 2026",
@@ -2565,5 +2565,103 @@
       29
     ],
     "type": "filing"
+  },
+  {
+    "date": "Jul. 22, 2026",
+    "event": "USMS service attempt on Captain G. Serrato at CHP Dublin Area (4999 Gleason Drive) at 4:00 p.m. — remarks on USM-285: 'SUBJECT DOES NOT WORK @ GIVEN ADDRESS ANYMORE' — Newanforbi v. Serrato (4:26-cv-05953-ASK)",
+    "matters": [
+      24
+    ],
+    "type": "event",
+    "source": "/documents/matter-24/USM-285 Process Receipt and Return - Service Executed on Serrato (Doc 15, Filed Aug 6 2026).pdf"
+  },
+  {
+    "date": "Aug. 5, 2026",
+    "event": "SERVICE COMPLETE — U.S. Marshals Service personally served Captain G. Serrato at CHP Dublin Area, 4999 Gleason Drive, Dublin, CA 94568, at 10:20 a.m., via Kim Schoonmaker, Office Assistant (USM-285; 1 DUSM / 2 hours / 15 mi) — Newanforbi v. Serrato (4:26-cv-05953-ASK)",
+    "matters": [
+      24
+    ],
+    "type": "service",
+    "source": "/documents/matter-24/USM-285 Process Receipt and Return - Service Executed on Serrato (Doc 15, Filed Aug 6 2026).pdf"
+  },
+  {
+    "date": "Aug. 6, 2026",
+    "event": "USM-285 Process Receipt and Return (Doc. 15) FILED — memorializes Aug. 5, 2026 completed personal service on Captain G. Serrato — Newanforbi v. Serrato (4:26-cv-05953-ASK)",
+    "matters": [
+      24
+    ],
+    "type": "filing",
+    "source": "/documents/matter-24/USM-285 Process Receipt and Return - Service Executed on Serrato (Doc 15, Filed Aug 6 2026).pdf",
+    "filed": true
+  },
+  {
+    "date": "Aug. 6, 2026",
+    "event": "DISMISSAL ENTERED — CIV-110 Request for Dismissal (entire action with prejudice) filed and entered as requested at 11:21 a.m. (Clerk Stephanie Bohrer; conformed copy on file). Settled action closed; CRC 3.1385 Aug. 28 dismissal deadline satisfied early — Newanforbi v. Pilot Travel Centers LLC (STK-CV-UWT-2026-0007649)",
+    "matters": [
+      22
+    ],
+    "type": "milestone",
+    "source": "/documents/matter-22/CIV-110 Request for Dismissal - Entire Action With Prejudice (Pilot, CONFORMED, Dismissal Entered Aug 6 2026).pdf",
+    "filed": true
+  },
+  {
+    "date": "Aug. 6, 2026",
+    "event": "Amended Notices of Amount of Punitive Damages Sought (CCP §425.115 — $500,000 each as to Randstad US, LLC and The RK Logistics Group, Inc.) e-filed and ACCEPTED (One Legal ref. 28953283; submission 26AA00209578; court received Aug. 6, 2026 at 10:04 p.m.) — personal service on defendants still required before default — Newanforbi v. Randstad US, LLC et al. (26CV199902)",
+    "matters": [
+      27
+    ],
+    "type": "filing",
+    "source": "/documents/matter-27/Notice of Confirmation of Electronic Filing - Amended Punitive Damages Notices Accepted (Aug 6 2026).pdf",
+    "filed": true
+  },
+  {
+    "date": "Aug. 6, 2026",
+    "event": "Notices of Amount of Punitive Damages Sought (CCP §425.115 — $250,000 Amazon.com Services, LLC / $100,000 Accurate Background LLC) e-filed and ACCEPTED together with the Notice of Payment of Filing Fee (One Legal ref. 28953227; three 'Notice of (name extension)' documents accepted) — personal service on defendants still required before default — Newanforbi v. Amazon.com Services, LLC et al. (26CV201554)",
+    "matters": [
+      29
+    ],
+    "type": "filing",
+    "source": "/documents/matter-29/Notice of Confirmation of Electronic Filing - Fee Payment and Punitive Notices Accepted (Aug 6 2026).pdf",
+    "filed": true
+  },
+  {
+    "date": "Aug. 7, 2026",
+    "event": "POS-010 Proofs of Service of Summons (Randstad US, LLC and The RK Logistics Group, Inc.) e-filed and ACCEPTED (One Legal ref. 28958443; submission 26AA00209977; court received Aug. 7, 2026 at 11:24 a.m.) — Newanforbi v. Randstad US, LLC et al. (26CV199902)",
+    "matters": [
+      27
+    ],
+    "type": "filing",
+    "source": "/documents/matter-27/Notice of Confirmation of Electronic Filing - POS-010 Proofs of Service Accepted (Aug 7 2026).pdf",
+    "filed": true
+  },
+  {
+    "date": "Aug. 26, 2026",
+    "event": "Responsive pleading deadline (computed) — Newanforbi v. Serrato (4:26-cv-05953-ASK); 21 days from the Aug. 5, 2026 USMS personal service date (FRCP 12(a)(1)(A))",
+    "matters": [
+      24
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "opposing"
+  },
+  {
+    "date": "Jul. 15, 2026",
+    "event": "First Amended Complaint (Doc. 10) filed — corrects the original Complaint's related-action disclosure (¶¶11-12) to include Newanforbi v. California Highway Patrol, et al. (Alameda Sup. Ct. No. 26CV191136, Matter 20), inadvertently omitted; causes of action and factual allegations unchanged — Newanforbi v. Serrato (4:26-cv-05953-ASK)",
+    "matters": [
+      24
+    ],
+    "type": "filing",
+    "source": "/documents/matter-24/First Amended Complaint (Doc 10, Filed Jul 15 2026).pdf",
+    "filed": true
+  },
+  {
+    "date": "Jul. 15, 2026",
+    "event": "Notice of Errata re First Amended Complaint (Doc. 12) filed — explains the related-action disclosure correction and confirms it does not alter the FAC's factual allegations or legal theories; requests the June 29 IFP/screening order (Doc. 5) remain in effect — Newanforbi v. Serrato (4:26-cv-05953-ASK)",
+    "matters": [
+      24
+    ],
+    "type": "filing",
+    "source": "/documents/matter-24/Notice of Errata re First Amended Complaint (Doc 12, Filed Jul 15 2026).pdf",
+    "filed": true
   }
 ]

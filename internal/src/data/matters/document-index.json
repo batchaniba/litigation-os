@@ -1421,13 +1421,18 @@
   },
   {
     "matter": 22,
-    "label": "CIV-110 Request for Dismissal — entire action with prejudice; executed Aug. 3, 2026; fee-waiver declaration item 2c ($10k+) checked (Gov. Code §68637); mailed to the court with $435.00 waived-fee repayment attached",
+    "label": "CIV-110 Request for Dismissal — executed Aug. 3, 2026 (the filing that the court entered Aug. 6)",
     "path": "/documents/matter-22/CIV-110 Request for Dismissal - Entire Action With Prejudice (Pilot, Executed Aug 3 2026).pdf"
   },
   {
     "matter": 22,
     "label": "USPS eReceipt — Money Order Serial #55201761577 ($435.00, purchased 12:53 PM) and First-Class postage (12:54 PM), Milpitas Post Office, Aug. 3, 2026 — CIV-110 waived-fee repayment mailing",
     "path": "/documents/matter-22/Gmail - USPS eReceipt - CIV-110 Money Order and Postage (Aug 3 2026).pdf"
+  },
+  {
+    "matter": 22,
+    "label": "CIV-110 Request for Dismissal - Entire Action With Prejudice (Pilot, CONFORMED, Dismissal Entered Aug 6 2026)",
+    "path": "/documents/matter-22/CIV-110 Request for Dismissal - Entire Action With Prejudice (Pilot, CONFORMED, Dismissal Entered Aug 6 2026).pdf"
   },
   {
     "matter": 23,
@@ -1441,18 +1446,33 @@
   },
   {
     "matter": 24,
-    "label": "Complaint for Damages, Declaratory Relief, and Injunctive Relief — Draft (42 U.S.C. § 1983; 4 Causes of Action)",
-    "path": "/documents/matter-32/from-24/Complaint.pdf"
+    "label": "Complaint (Doc 1, Filed Jun 17 2026)",
+    "path": "/documents/matter-24/Complaint (Doc 1, Filed Jun 17 2026).pdf"
   },
   {
     "matter": 24,
-    "label": "Filed Complaint (Doc. 1) and ISC Order Setting CMC & ADR Deadlines (Doc. 4) — Case No. 4:26-cv-05953-ASK, Filed June 17, 2026",
+    "label": "Filed Complaint (Doc. 1), earlier scan — Case No. 4:26-cv-05953-ASK, Filed June 17, 2026 (superseded by the cleaner copy in matter-24/)",
     "path": "/documents/matter-32/from-24/1 2.pdf"
+  },
+  {
+    "matter": 24,
+    "label": "Order Setting Initial CMC and ADR Deadlines (Doc 4, Filed Jun 17 2026)",
+    "path": "/documents/matter-24/Order Setting Initial CMC and ADR Deadlines (Doc 4, Filed Jun 17 2026).pdf"
   },
   {
     "matter": 24,
     "label": "ISC Order and Magistrate Judge Consent/Declination Form — N.D. Cal. (Case No. 4:26-cv-05953-ASK)",
     "path": "/documents/matter-32/from-24/ND Cal ISC and Magistrate Consent form.pdf"
+  },
+  {
+    "matter": 24,
+    "label": "Summons Issued (Doc 6, Filed Jun 29 2026)",
+    "path": "/documents/matter-24/Summons Issued (Doc 6, Filed Jun 29 2026).pdf"
+  },
+  {
+    "matter": 24,
+    "label": "Consent to Magistrate Judge Jurisdiction (Doc 8, Filed Jun 29 2026)",
+    "path": "/documents/matter-24/Consent to Magistrate Judge Jurisdiction (Doc 8, Filed Jun 29 2026).pdf"
   },
   {
     "matter": 24,
@@ -1466,8 +1486,23 @@
   },
   {
     "matter": 24,
+    "label": "First Amended Complaint (Doc 10, Filed Jul 15 2026)",
+    "path": "/documents/matter-24/First Amended Complaint (Doc 10, Filed Jul 15 2026).pdf"
+  },
+  {
+    "matter": 24,
+    "label": "Notice of Errata re First Amended Complaint (Doc 12, Filed Jul 15 2026)",
+    "path": "/documents/matter-24/Notice of Errata re First Amended Complaint (Doc 12, Filed Jul 15 2026).pdf"
+  },
+  {
+    "matter": 24,
     "label": "Notice of Change of Address (filed July 7, 2026)",
     "path": "/documents/matter-32/from-24/Notice of Change of Address (July 7, 2026).pdf"
+  },
+  {
+    "matter": 24,
+    "label": "USM-285 Process Receipt and Return - Service Executed on Serrato (Doc 15, Filed Aug 6 2026)",
+    "path": "/documents/matter-24/USM-285 Process Receipt and Return - Service Executed on Serrato (Doc 15, Filed Aug 6 2026).pdf"
   },
   {
     "matter": 25,
@@ -1920,6 +1955,26 @@
     "path": "/documents/matter-27/FW-001 Request to Waive Court Fees - Randstad US LLC.pdf"
   },
   {
+    "matter": 27,
+    "label": "POS-010 Proof of Service of Summons - Randstad US LLC (Served Jul 30 2026, Levying Officer 2026026857)",
+    "path": "/documents/matter-27/POS-010 Proof of Service of Summons - Randstad US LLC (Served Jul 30 2026, Levying Officer 2026026857).pdf"
+  },
+  {
+    "matter": 27,
+    "label": "POS-010 Proof of Service of Summons - RK Logistics Group Inc (Served Jul 30 2026, Levying Officer 2026026857)",
+    "path": "/documents/matter-27/POS-010 Proof of Service of Summons - RK Logistics Group Inc (Served Jul 30 2026, Levying Officer 2026026857).pdf"
+  },
+  {
+    "matter": 27,
+    "label": "Notice of Confirmation of Electronic Filing - Amended Punitive Damages Notices Accepted (Aug 6 2026)",
+    "path": "/documents/matter-27/Notice of Confirmation of Electronic Filing - Amended Punitive Damages Notices Accepted (Aug 6 2026).pdf"
+  },
+  {
+    "matter": 27,
+    "label": "Notice of Confirmation of Electronic Filing - POS-010 Proofs of Service Accepted (Aug 7 2026)",
+    "path": "/documents/matter-27/Notice of Confirmation of Electronic Filing - POS-010 Proofs of Service Accepted (Aug 7 2026).pdf"
+  },
+  {
     "matter": 28,
     "label": "Complaint v2 — draft (mailed Jul. 16, 2026; superseded by the as-filed version below)",
     "path": "/documents/matter-28/Complaint v2 Newanforbi v HOPE NDCA.pdf"
@@ -1943,6 +1998,16 @@
     "matter": 28,
     "label": "Proposed Protective Order — NDCA (Jul. 16, 2026)",
     "path": "/documents/matter-28/Proposed Protective Order NDCA.pdf"
+  },
+  {
+    "matter": 28,
+    "label": "Renewed Motion for Protective Order — cite-corrected draft (strips Dunford; re-pins Condit quote to Foltz; not yet filed)",
+    "path": "/documents/matter-28/Renewed Motion Protective Order NDCA (cite-corrected draft).pdf"
+  },
+  {
+    "matter": 28,
+    "label": "Proposed Protective Order — cite-corrected draft (Foltz-only cross-use WHEREAS; not yet filed)",
+    "path": "/documents/matter-28/Proposed Protective Order NDCA (cite-corrected draft).pdf"
   },
   {
     "matter": 28,
@@ -2038,6 +2103,36 @@
     "matter": 28,
     "label": "Collateral Notes / Communications (Matter 5 discovery)",
     "path": "/documents/matter-28/HOPE Discovery (Matter 5)/Collateral_NotesComm_139199_pdf.pdf"
+  },
+  {
+    "matter": 28,
+    "label": "Executive Report — Qualified immunity for private CDCR contractors (research work product, not a filing)",
+    "path": "/documents/matter-28/research/Executive Report - Qualified Immunity for Private CDCR Contractors.pdf"
+  },
+  {
+    "matter": 28,
+    "label": "Threshold Argument — No qualified immunity for a private-contractor CEO (research work product, not a filing)",
+    "path": "/documents/matter-28/research/Threshold Argument - No Qualified Immunity for Private Contractor CEO.pdf"
+  },
+  {
+    "matter": 28,
+    "label": "Supplemental Research Memo — Threshold argument against QI for private contractors (research work product, not a filing)",
+    "path": "/documents/matter-28/research/Supplemental Research Memo - Threshold Argument Against QI for Private Contractors.pdf"
+  },
+  {
+    "matter": 28,
+    "label": "Legal Research Memo — Clearly established law for a QI opposition (research work product, not a filing)",
+    "path": "/documents/matter-28/research/Legal Research Memo - Clearly Established Law for QI Opposition.pdf"
+  },
+  {
+    "matter": 28,
+    "label": "Research Note — Strongest clearly established right to invoke (research work product, not a filing)",
+    "path": "/documents/matter-28/research/Research Note - Strongest Clearly Established Right to Invoke.pdf"
+  },
+  {
+    "matter": 28,
+    "label": "Research Prompt — Clearly established law for QI (research work product, not a filing)",
+    "path": "/documents/matter-28/research/Research Prompt - Clearly Established Law for QI.pdf"
   },
   {
     "matter": 29,
@@ -2408,6 +2503,11 @@
     "matter": 29,
     "label": "POS-010 Proof of Service of Summons — Accurate Background LLC (served Jul. 31, 2026, 11:00 AM on CT Corporation / Jaqueline Mejia; declaration dated Aug. 5, 2026)",
     "path": "/documents/matter-29/Proof of Service Accurate Background.pdf"
+  },
+  {
+    "matter": 29,
+    "label": "Notice of Confirmation of Electronic Filing - Fee Payment and Punitive Notices Accepted (Aug 6 2026)",
+    "path": "/documents/matter-29/Notice of Confirmation of Electronic Filing - Fee Payment and Punitive Notices Accepted (Aug 6 2026).pdf"
   },
   {
     "matter": 30,
@@ -2986,13 +3086,8 @@
   },
   {
     "matter": 32,
-    "label": "[M24] Filed Complaint (Doc. 1) and ISC Order Setting CMC & ADR Deadlines (Doc. 4) — Case No. 4:26-cv-05953-ASK, Filed June 17, 2026",
+    "label": "[M24] Filed Complaint (Doc. 1), earlier scan — Case No. 4:26-cv-05953-ASK, Filed June 17, 2026 (superseded by the cleaner copy in matter-24/)",
     "path": "/documents/matter-32/from-24/1 2.pdf"
-  },
-  {
-    "matter": 32,
-    "label": "[M24] Complaint for Damages, Declaratory Relief, and Injunctive Relief — Draft (42 U.S.C. § 1983; 4 Causes of Action)",
-    "path": "/documents/matter-32/from-24/Complaint.pdf"
   },
   {
     "matter": 32,

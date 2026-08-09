@@ -822,8 +822,13 @@
       "ownerMatter": 21
     },
     {
+      "path": "/documents/matter-22/CIV-110 Request for Dismissal - Entire Action With Prejudice (Pilot, CONFORMED, Dismissal Entered Aug 6 2026).pdf",
+      "label": "CIV-110 Request for Dismissal - Entire Action With Prejudice (Pilot, CONFORMED, Dismissal Entered Aug 6 2026)",
+      "ownerMatter": 22
+    },
+    {
       "path": "/documents/matter-22/CIV-110 Request for Dismissal - Entire Action With Prejudice (Pilot, Executed Aug 3 2026).pdf",
-      "label": "CIV-110 Request for Dismissal — entire action with prejudice; executed Aug. 3, 2026; fee-waiver declaration item 2c ($10k+) checked (Gov. Code §68637); mailed to the court with $435.00 waived-fee repayment attached",
+      "label": "CIV-110 Request for Dismissal — executed Aug. 3, 2026 (the filing that the court entered Aug. 6)",
       "ownerMatter": 22
     },
     {
@@ -905,6 +910,41 @@
       "path": "/documents/matter-23/Job Offer-Selling and Support Captain, Stockton Sherwood - Full Time.pdf",
       "label": "Job Offer Letter (May 28, 2026)",
       "ownerMatter": 23
+    },
+    {
+      "path": "/documents/matter-24/Complaint (Doc 1, Filed Jun 17 2026).pdf",
+      "label": "Complaint (Doc 1, Filed Jun 17 2026)",
+      "ownerMatter": 24
+    },
+    {
+      "path": "/documents/matter-24/Consent to Magistrate Judge Jurisdiction (Doc 8, Filed Jun 29 2026).pdf",
+      "label": "Consent to Magistrate Judge Jurisdiction (Doc 8, Filed Jun 29 2026)",
+      "ownerMatter": 24
+    },
+    {
+      "path": "/documents/matter-24/First Amended Complaint (Doc 10, Filed Jul 15 2026).pdf",
+      "label": "First Amended Complaint (Doc 10, Filed Jul 15 2026)",
+      "ownerMatter": 24
+    },
+    {
+      "path": "/documents/matter-24/Notice of Errata re First Amended Complaint (Doc 12, Filed Jul 15 2026).pdf",
+      "label": "Notice of Errata re First Amended Complaint (Doc 12, Filed Jul 15 2026)",
+      "ownerMatter": 24
+    },
+    {
+      "path": "/documents/matter-24/Order Setting Initial CMC and ADR Deadlines (Doc 4, Filed Jun 17 2026).pdf",
+      "label": "Order Setting Initial CMC and ADR Deadlines (Doc 4, Filed Jun 17 2026)",
+      "ownerMatter": 24
+    },
+    {
+      "path": "/documents/matter-24/Summons Issued (Doc 6, Filed Jun 29 2026).pdf",
+      "label": "Summons Issued (Doc 6, Filed Jun 29 2026)",
+      "ownerMatter": 24
+    },
+    {
+      "path": "/documents/matter-24/USM-285 Process Receipt and Return - Service Executed on Serrato (Doc 15, Filed Aug 6 2026).pdf",
+      "label": "USM-285 Process Receipt and Return - Service Executed on Serrato (Doc 15, Filed Aug 6 2026)",
+      "ownerMatter": 24
     },
     {
       "path": "/documents/matter-25/Amended Notice of Amount of Punitive Damages Sought (CCP 425.115) - Federal Express Corporation (Aug 7 2026).pdf",
@@ -1222,8 +1262,28 @@
       "ownerMatter": 27
     },
     {
+      "path": "/documents/matter-27/Notice of Confirmation of Electronic Filing - Amended Punitive Damages Notices Accepted (Aug 6 2026).pdf",
+      "label": "Notice of Confirmation of Electronic Filing - Amended Punitive Damages Notices Accepted (Aug 6 2026)",
+      "ownerMatter": 27
+    },
+    {
+      "path": "/documents/matter-27/Notice of Confirmation of Electronic Filing - POS-010 Proofs of Service Accepted (Aug 7 2026).pdf",
+      "label": "Notice of Confirmation of Electronic Filing - POS-010 Proofs of Service Accepted (Aug 7 2026)",
+      "ownerMatter": 27
+    },
+    {
       "path": "/documents/matter-27/Notice to Consumer for Employment Purposes.pdf",
       "label": "InfoMart Notice to Consumer for Employment Purposes — FCRA Pre-Adverse Notice (Jul. 13, 2026)",
+      "ownerMatter": 27
+    },
+    {
+      "path": "/documents/matter-27/POS-010 Proof of Service of Summons - Randstad US LLC (Served Jul 30 2026, Levying Officer 2026026857).pdf",
+      "label": "POS-010 Proof of Service of Summons - Randstad US LLC (Served Jul 30 2026, Levying Officer 2026026857)",
+      "ownerMatter": 27
+    },
+    {
+      "path": "/documents/matter-27/POS-010 Proof of Service of Summons - RK Logistics Group Inc (Served Jul 30 2026, Levying Officer 2026026857).pdf",
+      "label": "POS-010 Proof of Service of Summons - RK Logistics Group Inc (Served Jul 30 2026, Levying Officer 2026026857)",
       "ownerMatter": 27
     },
     {
@@ -1452,8 +1512,48 @@
       "ownerMatter": 28
     },
     {
+      "path": "/documents/matter-28/Proposed Protective Order NDCA (cite-corrected draft).pdf",
+      "label": "Proposed Protective Order — cite-corrected draft (Foltz-only cross-use WHEREAS; not yet filed)",
+      "ownerMatter": 28
+    },
+    {
       "path": "/documents/matter-28/Proposed Protective Order NDCA.pdf",
       "label": "Proposed Protective Order — NDCA (Jul. 16, 2026)",
+      "ownerMatter": 28
+    },
+    {
+      "path": "/documents/matter-28/Renewed Motion Protective Order NDCA (cite-corrected draft).pdf",
+      "label": "Renewed Motion for Protective Order — cite-corrected draft (strips Dunford; re-pins Condit quote to Foltz; not yet filed)",
+      "ownerMatter": 28
+    },
+    {
+      "path": "/documents/matter-28/research/Executive Report - Qualified Immunity for Private CDCR Contractors.pdf",
+      "label": "Executive Report — Qualified immunity for private CDCR contractors (research work product, not a filing)",
+      "ownerMatter": 28
+    },
+    {
+      "path": "/documents/matter-28/research/Legal Research Memo - Clearly Established Law for QI Opposition.pdf",
+      "label": "Legal Research Memo — Clearly established law for a QI opposition (research work product, not a filing)",
+      "ownerMatter": 28
+    },
+    {
+      "path": "/documents/matter-28/research/Research Note - Strongest Clearly Established Right to Invoke.pdf",
+      "label": "Research Note — Strongest clearly established right to invoke (research work product, not a filing)",
+      "ownerMatter": 28
+    },
+    {
+      "path": "/documents/matter-28/research/Research Prompt - Clearly Established Law for QI.pdf",
+      "label": "Research Prompt — Clearly established law for QI (research work product, not a filing)",
+      "ownerMatter": 28
+    },
+    {
+      "path": "/documents/matter-28/research/Supplemental Research Memo - Threshold Argument Against QI for Private Contractors.pdf",
+      "label": "Supplemental Research Memo — Threshold argument against QI for private contractors (research work product, not a filing)",
+      "ownerMatter": 28
+    },
+    {
+      "path": "/documents/matter-28/research/Threshold Argument - No Qualified Immunity for Private Contractor CEO.pdf",
+      "label": "Threshold Argument — No qualified immunity for a private-contractor CEO (research work product, not a filing)",
       "ownerMatter": 28
     },
     {
@@ -1739,6 +1839,11 @@
     {
       "path": "/documents/matter-29/Notice of Confirmation of Electronic Filing - Case No. 26CV201554, all documents ACCEPTED (Jul 29 2026).pdf",
       "label": "Notice of Confirmation of Electronic Filing — Case No. 26CV201554; Complaint, Civil Case Cover Sheet, Summons, and Request to Waive Court Fees all ACCEPTED (Submission No. 26AA00198620, Jul. 29, 2026)",
+      "ownerMatter": 29
+    },
+    {
+      "path": "/documents/matter-29/Notice of Confirmation of Electronic Filing - Fee Payment and Punitive Notices Accepted (Aug 6 2026).pdf",
+      "label": "Notice of Confirmation of Electronic Filing - Fee Payment and Punitive Notices Accepted (Aug 6 2026)",
       "ownerMatter": 29
     },
     {
@@ -2243,12 +2348,7 @@
     },
     {
       "path": "/documents/matter-32/from-24/1 2.pdf",
-      "label": "Filed Complaint (Doc. 1) and ISC Order Setting CMC & ADR Deadlines (Doc. 4) — Case No. 4:26-cv-05953-ASK, Filed June 17, 2026",
-      "ownerMatter": 32
-    },
-    {
-      "path": "/documents/matter-32/from-24/Complaint.pdf",
-      "label": "Complaint for Damages, Declaratory Relief, and Injunctive Relief — Draft (42 U.S.C. § 1983; 4 Causes of Action)",
+      "label": "Filed Complaint (Doc. 1), earlier scan — Case No. 4:26-cv-05953-ASK, Filed June 17, 2026 (superseded by the cleaner copy in matter-24/)",
       "ownerMatter": 32
     },
     {

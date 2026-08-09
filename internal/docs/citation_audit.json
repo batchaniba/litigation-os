@@ -1,8 +1,8 @@
 {
   "analysisDate": "2026-07-12",
   "totalMatters": 24,
-  "totalCitationsChecked": 147,
-  "methodology": "Five parallel analysis passes pulled every case citation (and key quoted statutory/regulatory text) from the litigant's motion practice and citation-bearing complaints, then verified each against free legal databases (CourtListener, Justia, Google Scholar, Casetext) for existence, accurate quotation, and current good-law status.",
+  "totalCitationsChecked": 191,
+  "methodology": "Five parallel analysis passes pulled every case citation (and key quoted statutory/regulatory text) from the litigant's motion practice and citation-bearing complaints, then verified each against free legal databases (CourtListener, Justia, Google Scholar, Casetext) for existence, accurate quotation, and current good-law status. | Round 2 (Aug. 9, 2026): qualified-immunity research filed into Matter 28. Verified with WebSearch against primary sources (govinfo.gov, cdn.ca9.uscourts.gov, kscourts.gov) and free databases, after confirming the method both finds real cases and fails to find the known-fabricated In re Leman. Direct fetches of CourtListener, case.law and Justia are blocked by this environment's egress proxy, so statuses rest on search-returned summaries plus primary-source URLs rather than full opinion text; nothing is marked VERIFIED from recollection alone. | Round 3 (Aug. 9, 2026): thorough Matter 28 pass \u2014 filed complaint, protective-order motion, and remaining QI research authorities. Same WebSearch method with positive (Richardson) and negative (In re Leman) controls reconfirmed. Priority: filed-document cites first, then suspicious research cites (unpublished/WL-only/thin propositions), then load-bearing QI and SOTP authorities. Direct CourtListener/case.law/Justia fetches still egress-blocked; statuses rest on search-returned summaries plus primary-source URLs (govinfo, ca9 CDN, supremecourt.gov).",
   "groups": [
     {
       "group": "A",
@@ -62,6 +62,14 @@
         24
       ],
       "citationsChecked": 33
+    },
+    {
+      "group": "F",
+      "label": "Matter 28 \u2014 Newanforbi v. Shannon Smith / HOPE (N.D. Cal.)",
+      "matters": [
+        28
+      ],
+      "citationsChecked": 44
     }
   ],
   "citations": [
@@ -1534,14 +1542,499 @@
       "quote_or_holding_claimed": "Complaint states section 679.10 uses mandatory 'shall' language, creates a rebuttable presumption of helpfulness at (h), requires specific written reasons for denial at (g), mandates processing within 30 days at (j), and that AB 1261 (Stats. 2023, Ch. 679, eff. Jan. 1, 2024) eliminated the requirement of prosecution/conviction/pending investigation and strengthened these obligations.",
       "status": "VERIFIED",
       "notes": "Confirmed against secondary legal-practice sources (immigrant-rights practice alerts and bill-tracking summaries): AB 1261 (Stats. 2023, Ch. 679) took effect January 1, 2024, amended Penal Code section 679.10, added a 30-day certification deadline, and codified/strengthened a rebuttable presumption of victim helpfulness. The complaint's characterization of the statute is accurate and current."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 QI (Matter 28)",
+      "matter": 28,
+      "document": "matter-28/research/Executive Report - Qualified Immunity for Private CDCR Contractors.pdf",
+      "case_name": "Richardson v. McKnight",
+      "citation": "521 U.S. 399 (1997)",
+      "quote_or_holding_claimed": "Cited as the starting point: private prison guards employed by a private prison-management firm are not entitled to qualified immunity; mere performance of a governmental function does not confer QI on a private person.",
+      "status": "VERIFIED",
+      "notes": "Real and accurately characterized. 5-4, Breyer, J., decided Jun. 23, 1997. Confirmed via supreme.justia.com/cases/federal/us/521/399, Oyez, and the govinfo.gov U.S. Reports bound volume PDF."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 QI (Matter 28)",
+      "matter": 28,
+      "document": "matter-28/research/Threshold Argument - No Qualified Immunity for Private Contractor CEO.pdf",
+      "case_name": "Halvorsen v. Baird",
+      "citation": "146 F.3d 680 (9th Cir. 1998)",
+      "quote_or_holding_claimed": "Elevated as 'your best Ninth Circuit case' \u2014 private detox facility under county contract, exercising delegated authority over liberty and making its own admission decisions, denied qualified immunity.",
+      "status": "VERIFIED",
+      "notes": "Real and correctly used. Ninth Circuit held there was NO qualified immunity for the provider of involuntary commitment services, reasoning it was 'a firm systematically organized to assume a major lengthy administrative task, not a private individual briefly deputized,' and that the for-profit/non-profit distinction from Richardson was immaterial. NOTE: some secondary summaries (vLex/casemine snippets) state the opposite; they are wrong. Confirmed against law.justia.com/cases/federal/appellate-courts/F3/146/680/514019 and the Ninth Circuit QI literature."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 QI (Matter 28)",
+      "matter": 28,
+      "document": "matter-28/research/Threshold Argument - No Qualified Immunity for Private Contractor CEO.pdf",
+      "case_name": "Estate of Esche v. Bunuel-Jordana",
+      "citation": "No. 24-6244 (9th Cir. Sept. 29, 2025)",
+      "quote_or_holding_claimed": "Cited \u2014 with no reporter citation at all \u2014 for the proposition that 'private parties can qualify as state actors under Section 1983 while still being ineligible for qualified immunity.'",
+      "status": "MISCHARACTERIZED",
+      "notes": "The case is REAL: 9th Cir., decided Sept. 29, 2025, No. 24-6244, opinion at cdn.ca9.uscourts.gov/datastore/opinions/2025/09/29/24-6244.pdf. But its HOLDING is jurisdictional \u2014 a private health-care provider may not take an interlocutory appeal from denial of its good-faith defense, because that defense protects from liability, not from litigation. The QI-ineligibility language is supporting reasoning, not the holding. Cite it for the reasoning, not as a holding, and supply the reporter cite once published."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 QI (Matter 28)",
+      "matter": 28,
+      "document": "matter-28/research/Legal Research Memo - Clearly Established Law for QI Opposition.pdf",
+      "case_name": "United States v. Jessie",
+      "citation": "79 M.J. 437 (C.A.A.F. 2020)",
+      "quote_or_holding_claimed": "Listed under 'Robust Consensus of Persuasive Authority' as 'condemning automatic blanket policies in sex offender treatment that prevent completion without individualized review.'",
+      "status": "MISCITED",
+      "notes": "Real case at the exact citation given, but it does not support this proposition. Jessie is a Court of Appeals for the Armed Forces decision (Apr. 6, 2020, No. 19-0192-AR) about whether military courts of criminal appeals may consider matters OUTSIDE THE RECORD to resolve Eighth Amendment / Article 55 claims \u2014 there, confinement visitation rules barring contact with the appellant's children. Nothing to do with sex-offender treatment policies. Confirmed via caselaw.findlaw.com and law.justia.com CAAF 2020 index. Remove or replace."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 QI (Matter 28)",
+      "matter": 28,
+      "document": "matter-28/research/Legal Research Memo - Clearly Established Law for QI Opposition.pdf",
+      "case_name": "Chubb v. Sullivan",
+      "citation": "2014 WL 2807986 (D. Kan. 2014)",
+      "quote_or_holding_claimed": "Listed under 'Robust Consensus of Persuasive Authority' as 'addressing the due process implications of a blanket policy that prevents sex offender treatment completion.'",
+      "status": "MISCITED",
+      "notes": "Wrong court AND wrong proposition. The real Chubb v. Sullivan is a KANSAS COURT OF APPEALS decision (kscourts.gov Case No. 110221, published), not a federal D. Kan. decision. Its subject is whether a resident had a liberty interest in a VISIT from his brother, whose visitation was denied pending proof of sex-offense treatment \u2014 a visitation due-process claim, not treatment-completion policy. Anyone checking the D. Kan. docket for this Westlaw number would find nothing. Confirmed via caselaw.findlaw.com/court/ks-court-of-appeals/1670549.html and kscourts.gov."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 QI (Matter 28)",
+      "matter": 28,
+      "document": "matter-28/research/Legal Research Memo - Clearly Established Law for QI Opposition.pdf",
+      "case_name": "Tsao v. Desert Palace, Inc.",
+      "citation": "98 F.3d 1128 (9th Cir. 2012) [as printed]",
+      "quote_or_holding_claimed": "Cited for: private entities can be held liable under Section 1983 for policies or customs that violate constitutional rights (Monell applied to private corporations).",
+      "status": "MISCITED",
+      "notes": "Internally inconsistent as printed: volume 98 of F.3d dates to about 1996, so '98 F.3d 1128 (9th Cir. 2012)' cannot be right. The 2012 Ninth Circuit decision at page 1128 is Tsao v. Desert Palace, Inc., 698 F.3d 1128 \u2014 a dropped leading digit. The Monell-applies-to-private-entities proposition is correct for Tsao; only the volume number is wrong. Fix to 698 F.3d 1128."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 QI (Matter 28)",
+      "matter": 28,
+      "document": "matter-28/research/Executive Report - Qualified Immunity for Private CDCR Contractors.pdf",
+      "case_name": "Filarsky v. Delia",
+      "citation": "566 U.S. 377 (2012)",
+      "quote_or_holding_claimed": "Acknowledged as the limit on the threshold argument \u2014 a private individual temporarily retained by government to assist may claim qualified immunity.",
+      "status": "VERIFIED",
+      "notes": "Real and accurately characterized as the limit on the threshold argument. 566 U.S. 377 (2012), Roberts, C.J., unanimous: a private individual temporarily retained by government to carry out its work may seek qualified immunity under \u00a7 1983. Confirmed via supreme.justia.com/cases/federal/us/566/377 and Cornell LII. The memos correctly frame the open question as Richardson-type institutional privatization vs. Filarsky-type temporary governmental adjunct; that application judgment is beyond a cite-check."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 Round 3 M28 thorough",
+      "matter": 28,
+      "document": "matter-28/Complaint_Newanforbi_v_Smith_NDCA (as filed, served on SLB Jul 22 2026).pdf",
+      "case_name": "Patsy v. Board of Regents",
+      "citation": "457 U.S. 496 (1982)",
+      "quote_or_holding_claimed": "No administrative exhaustion is required for Plaintiff's Section 1983 claims. Patsy v. Board of Regents, 457 U.S. 496, 516 (1982).",
+      "status": "VERIFIED",
+      "notes": "Real and correctly used. Exhaustion of state administrative remedies is not a prerequisite to a \u00a7 1983 action. Confirmed via govinfo.gov U.S. Reports PDF and Cornell LII."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 Round 3 M28 thorough",
+      "matter": 28,
+      "document": "matter-28/Complaint_Newanforbi_v_Smith_NDCA (as filed, served on SLB Jul 22 2026).pdf",
+      "case_name": "West v. Atkins",
+      "citation": "487 U.S. 42 (1988)",
+      "quote_or_holding_claimed": "A private entity that contracts with the state to provide services to persons in state custody acts under color of state law when the services are a traditional and exclusive public function.",
+      "status": "VERIFIED",
+      "notes": "Real and accurately characterized. West held a private physician under contract to provide medical care to prisoners acts under color of state law for \u00a7 1983. Confirmed via supreme.justia.com and standard \u00a7 1983 literature. Same use appears in the research memos."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 Round 3 M28 thorough",
+      "matter": 28,
+      "document": "matter-28/Complaint_Newanforbi_v_Smith_NDCA (as filed, served on SLB Jul 22 2026).pdf",
+      "case_name": "County of Sacramento v. Lewis",
+      "citation": "523 U.S. 833 (1998)",
+      "quote_or_holding_claimed": "Deprivations (employment, HOPE attendance forcing missed work, denial of parole discharge) 'shock the conscience' under County of Sacramento v. Lewis.",
+      "status": "VERIFIED",
+      "notes": "Real; citation and year correct. Lewis is the modern source of the substantive-due-process 'shocks the conscience' standard (high-speed police pursuit facts). The complaint correctly invokes that standard; whether HOPE's retention policy meets it is an application question, not a cite error. Confirmed via LOC U.S. Reports PDF and Justia."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 Round 3 M28 thorough",
+      "matter": 28,
+      "document": "matter-28/Motion Protective Order NDCA.pdf",
+      "case_name": "Dunford v. Rovi Corp.",
+      "citation": "2015 WL 13752958 (N.D. Cal. 2015)",
+      "quote_or_holding_claimed": "Quoted for: Federal Rules 'create no automatic prohibition against using discovery obtained in one litigation in another litigation.' Attributed to this District at *2.",
+      "status": "NOT_FOUND",
+      "notes": "No decision titled Dunford v. Rovi Corp. turns up at 2015 WL 13752958 or under that caption in N.D. Cal. Searches surface only Netflix, Inc. v. Rovi Corp., 114 F. Supp. 3d 927 (N.D. Cal. 2015) \u2014 a patent \u00a7 101 case with nothing about discovery cross-use. Appears in the FILED protective-order motion and proposed order. Remove or replace (the cross-use proposition is correctly stated in Foltz, which the motion already cites)."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 Round 3 M28 thorough",
+      "matter": 28,
+      "document": "matter-28/Motion Protective Order NDCA.pdf",
+      "case_name": "Condit v. Dunne",
+      "citation": "225 F.R.D. 100 (S.D.N.Y. 2004)",
+      "quote_or_holding_claimed": "Quoted at 105 for: 'Allowing the fruits of one litigation to facilitate preparation in other cases advances the interests of judicial economy by avoiding the wasteful duplication of discovery.'",
+      "status": "MISCITED",
+      "notes": "Real case at that exact reporter cite, but wrong proposition and wrong quote attribution. Condit v. Dunne, 225 F.R.D. 100, is a Gary Condit / Dominick Dunne defamation discovery ruling about the scope of questioning into sexual relationships and finances \u2014 nothing about collateral use of discovery. The 'fruits of one litigation' sentence is from Foltz v. State Farm, 331 F.3d 1122, 1131 (9th Cir. 2003) (citing Beckman), which the same motion already cites for good cause. Swap the attribution to Foltz. Confirmed via hallapproved.com Condit text and casetext Foltz opinion."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 Round 3 M28 thorough",
+      "matter": 28,
+      "document": "matter-28/Motion Protective Order NDCA.pdf",
+      "case_name": "Foltz v. State Farm Mut. Auto. Ins. Co.",
+      "citation": "331 F.3d 1122 (9th Cir. 2003)",
+      "quote_or_holding_claimed": "Good cause exists when 'specific prejudice or harm will result' from the absence of a protective order (cited at 1130).",
+      "status": "VERIFIED",
+      "notes": "Real and correctly used for the Rule 26(c) good-cause / specific-prejudice standard. Also the true source of the 'fruits of one litigation' language the motion misattributes to Condit (331 F.3d at 1131). Confirmed via law.justia.com/cases/federal/appellate-courts/F3/331/1122."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 Round 3 M28 thorough",
+      "matter": 28,
+      "document": "matter-28/Motion Protective Order NDCA.pdf",
+      "case_name": "Phillips ex rel. Estates of Byrd v. General Motors Corp.",
+      "citation": "307 F.3d 1206 (9th Cir. 2002)",
+      "quote_or_holding_claimed": "Party seeking protective order bears burden of demonstrating good cause (cited at 1210-11).",
+      "status": "VERIFIED",
+      "notes": "Real and correctly used. Phillips holds the party seeking Rule 26(c) protection must show specific prejudice or harm. Confirmed via casetext and FindLaw."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 Round 3 M28 thorough",
+      "matter": 28,
+      "document": "matter-28/research/Research Note - Strongest Clearly Established Right to Invoke.pdf",
+      "case_name": "Collins v. Moore",
+      "citation": "81 F.3d 167 (9th Cir. 1996)",
+      "quote_or_holding_claimed": "Listed as unpublished table decision: prisoner's due process claim based on sex-offender classification and denial of work privileges analyzed under Sandin v. Conner.",
+      "status": "NOT_FOUND",
+      "notes": "No Ninth Circuit decision titled Collins v. Moore sits at 81 F.3d 167. That table page hosts unrelated unpublished dispositions (e.g., Feigel v. Ministers Life; AB Avnet EMG v. Sierra Semiconductor; In re Evans) \u2014 none about sex-offender classification. Remove. Confirmed via vLex / midpage indexes for 81 F.3d 167."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 Round 3 M28 thorough",
+      "matter": 28,
+      "document": "matter-28/research/Legal Research Memo - Clearly Established Law for QI Opposition.pdf",
+      "case_name": "Chavez v. Robinson",
+      "citation": "12 F.4th 978 (9th Cir. 2021)",
+      "quote_or_holding_claimed": "Holding: discusses due process implications of an SOTP discharge that results in re-incarceration. QI relevance: 'The court reversed a dismissal on QI grounds.'",
+      "status": "MISCHARACTERIZED",
+      "notes": "Real at 12 F.4th 978 / No. 18-36083, but the disposition is the opposite of what the memo claims: the Ninth Circuit AFFIRMED dismissal of the \u00a7 1983 claims. Holding: no Fifth Amendment \u00a7 1983 damages claim without use of a compelled statement in a criminal proceeding (Chavez v. Martinez). QI discussion notes close questions but does not reverse on QI. Confirmed via cdn.ca9.uscourts.gov opinion PDF and CourtListener. Do not cite as a QI-denial win."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 Round 3 M28 thorough",
+      "matter": 28,
+      "document": "matter-28/research/Research Note - Strongest Clearly Established Right to Invoke.pdf",
+      "case_name": "United States v. Johnson",
+      "citation": "2012 WL 5279672 (9th Cir. 2012) [as printed]; also No. 11-30256",
+      "quote_or_holding_claimed": "Published opinion upholding sex-offender assessment condition; emphasized \u00a7 3583(d) 'no greater deprivation of liberty than is reasonably necessary.'",
+      "status": "MISCITED",
+      "notes": "Real case \u2014 United States v. Johnson, 697 F.3d 1249 (9th Cir. 2012), No. 11-30256 \u2014 but the Westlaw number is wrong. Correct WL is 2012 WL 5328597, not 2012 WL 5279672. Holding roughly accurate (assessment, not treatment, upheld; distinguishes heavier liberty restraints). Fix the WL number / prefer the F.3d cite. Confirmed via FindLaw and midpage."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 Round 3 M28 thorough",
+      "matter": 28,
+      "document": "matter-28/research/Legal Research Memo - Clearly Established Law for QI Opposition.pdf",
+      "case_name": "Johnson v. City of Grants Pass",
+      "citation": "50 F.4th 787 (9th Cir. 2022)",
+      "quote_or_holding_claimed": "Cited for recognition that procedures which are 'merely nominal and illusory' do not satisfy due process.",
+      "status": "MISCITED",
+      "notes": "Real case at that cite (homeless camping / Eighth Amendment; later reviewed by SCOTUS as City of Grants Pass v. Johnson), but it does not support a due-process 'nominal and illusory procedures' proposition. Searches for that language against this opinion return nothing on point. Wrong doctrinal hook \u2014 remove or replace with a real procedural-due-process illusory-hearing authority."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 Round 3 M28 thorough",
+      "matter": 28,
+      "document": "matter-28/research/Legal Research Memo - Clearly Established Law for QI Opposition.pdf",
+      "case_name": "Neal v. Shimoda",
+      "citation": "131 F.3d 818 (9th Cir. 1997)",
+      "quote_or_holding_claimed": "Labeling an inmate as a sex offender and requiring SOTP participation as a parole-eligibility precondition implicates a liberty interest requiring Wolff process.",
+      "status": "VERIFIED",
+      "notes": "Real and accurately characterized \u2014 foundational Ninth Circuit SOTP/liberty-interest case. Confirmed via law.resource.org F.3d text and vLex."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 Round 3 M28 thorough",
+      "matter": 28,
+      "document": "matter-28/research/Research Note - Strongest Clearly Established Right to Invoke.pdf",
+      "case_name": "Morrissey v. Brewer",
+      "citation": "408 U.S. 471 (1972)",
+      "quote_or_holding_claimed": "Parole revocation deprives a liberty interest and triggers due process.",
+      "status": "VERIFIED",
+      "notes": "Real, canonical. Citation and holding correctly stated."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 Round 3 M28 thorough",
+      "matter": 28,
+      "document": "matter-28/research/Legal Research Memo - Clearly Established Law for QI Opposition.pdf",
+      "case_name": "Foucha v. Louisiana",
+      "citation": "504 U.S. 71 (1992)",
+      "quote_or_holding_claimed": "Continued confinement of an insanity acquittee requires periodic, individualized justification.",
+      "status": "VERIFIED",
+      "notes": "Real and accurately characterized as requiring ongoing individualized justification for continued confinement. Confirmed via standard Supreme Court sources."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 Round 3 M28 thorough",
+      "matter": 28,
+      "document": "matter-28/research/Research Note - Strongest Clearly Established Right to Invoke.pdf",
+      "case_name": "Vitek v. Jones",
+      "citation": "445 U.S. 480 (1980)",
+      "quote_or_holding_claimed": "Involuntary transfer of a prisoner to a mental hospital implicates a liberty interest requiring due process.",
+      "status": "VERIFIED",
+      "notes": "Real and correctly used for the principle that significant changes in the nature of confinement/treatment trigger due process."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 Round 3 M28 thorough",
+      "matter": 28,
+      "document": "matter-28/research/Executive Report - Qualified Immunity for Private CDCR Contractors.pdf",
+      "case_name": "Wyatt v. Cole",
+      "citation": "504 U.S. 158 (1992)",
+      "quote_or_holding_claimed": "Central Supreme Court precedent on private defendants and qualified immunity \u2014 private parties invoking state replevin/garnishment not entitled to QI.",
+      "status": "VERIFIED",
+      "notes": "Real and correctly placed as the starting point before Richardson. Confirmed via U.S. Reports."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 Round 3 M28 thorough",
+      "matter": 28,
+      "document": "matter-28/research/Threshold Argument - No Qualified Immunity for Private Contractor CEO.pdf",
+      "case_name": "Jensen v. Lane County",
+      "citation": "222 F.3d 570 (9th Cir. 2000)",
+      "quote_or_holding_claimed": "Private psychiatrist contracting with county for civil-commitment evaluations \u2014 state-actor / QI analysis in the private mental-health contractor setting.",
+      "status": "VERIFIED",
+      "notes": "Real at 222 F.3d 570. Used appropriately in the threshold QI / private mental-health contractor cluster. Confirmed via Ninth Circuit secondary indexes and Clement's citation of Jensen."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 Round 3 M28 thorough",
+      "matter": 28,
+      "document": "matter-28/research/Executive Report - Qualified Immunity for Private CDCR Contractors.pdf",
+      "case_name": "Clement v. City of Glendale",
+      "citation": "518 F.3d 1090 (9th Cir. 2008)",
+      "quote_or_holding_claimed": "Private towing company that impounded vehicles at police direction could not assert qualified immunity (good-faith defense available instead).",
+      "status": "VERIFIED",
+      "notes": "Real and accurately characterized. QI unavailable to the private tower; good-faith defense applied on the facts. Confirmed via CourtListener Harvard PDF and hallapproved.com."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 Round 3 M28 thorough",
+      "matter": 28,
+      "document": "matter-28/research/Executive Report - Qualified Immunity for Private CDCR Contractors.pdf",
+      "case_name": "Danielson v. Inslee",
+      "citation": "945 F.3d 1096 (9th Cir. 2019)",
+      "quote_or_holding_claimed": "Cited for the proposition that private parties sued under \u00a7 1983 cannot claim qualified immunity (good-faith defense may remain).",
+      "status": "VERIFIED",
+      "notes": "Real. Danielson expressly reiterates that private parties cannot claim QI and may instead invoke a good-faith defense to retrospective monetary liability. Confirmed via cdn.ca9.uscourts.gov/datastore/opinions/2019/12/26/18-36087.pdf."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 Round 3 M28 thorough",
+      "matter": 28,
+      "document": "matter-28/research/Threshold Argument - No Qualified Immunity for Private Contractor CEO.pdf",
+      "case_name": "Ace Beverage Co. v. Lockheed Info. Mgmt. Servs.",
+      "citation": "144 F.3d 1218 (9th Cir. 1998)",
+      "quote_or_holding_claimed": "Private corporation performing administrative government functions (parking-ticket processing) not entitled to qualified immunity after Richardson.",
+      "status": "VERIFIED",
+      "notes": "Real and correctly used. Ace Beverage held Lockheed, a private contractor systematically organized to perform a governmental task under limited supervision, could not assert QI. Confirmed via exa.ai opinion text and cetient case page."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 Round 3 M28 thorough",
+      "matter": 28,
+      "document": "matter-28/research/Executive Report - Qualified Immunity for Private CDCR Contractors.pdf",
+      "case_name": "Franklin v. Fox",
+      "citation": "312 F.3d 423 (9th Cir. 2002)",
+      "quote_or_holding_claimed": "Cited for private parties not receiving qualified immunity / good-faith framework.",
+      "status": "VERIFIED",
+      "notes": "Real. Franklin confirms private individuals are not entitled to QI under Wyatt, while noting a possible good-faith defense; on the facts the private defendant was not a state actor. Accurate enough for the threshold cluster. Confirmed via exa.ai opinion text."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 Round 3 M28 thorough",
+      "matter": 28,
+      "document": "matter-28/research/Executive Report - Qualified Immunity for Private CDCR Contractors.pdf",
+      "case_name": "Minneci v. Pollard",
+      "citation": "565 U.S. 118 (2012)",
+      "quote_or_holding_claimed": "Court denied a Bivens remedy against private prison employees (state tort remedies adequate) \u2014 used as context for privatization / private-contractor liability landscape.",
+      "status": "VERIFIED",
+      "notes": "Real. Minneci is a Bivens (not QI) case; the memo's use as landscape/context rather than a QI holding is acceptable. Confirmed via Supreme Court sources."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 Round 3 M28 thorough",
+      "matter": 28,
+      "document": "matter-28/research/Research Note - Strongest Clearly Established Right to Invoke.pdf",
+      "case_name": "United States v. Williams",
+      "citation": "356 F.3d 1045 (9th Cir. 2004)",
+      "quote_or_holding_claimed": "Imposing involuntary antipsychotic medication as a supervised-release condition requires special on-the-record individualized findings.",
+      "status": "VERIFIED",
+      "notes": "Real and correctly characterized as requiring heightened individualized findings for liberty-burdening treatment conditions. Confirmed via standard Ninth Circuit supervised-release literature."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 Round 3 M28 thorough",
+      "matter": 28,
+      "document": "matter-28/research/Research Note - Strongest Clearly Established Right to Invoke.pdf",
+      "case_name": "United States v. Weber",
+      "citation": "451 F.3d 552 (9th Cir. 2006)",
+      "quote_or_holding_claimed": "Penile plethysmograph as supervised-release condition requires Williams-style individualized findings.",
+      "status": "VERIFIED",
+      "notes": "Real; extends Williams individualized-findings requirement to invasive testing. Accurate."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 Round 3 M28 thorough",
+      "matter": 28,
+      "document": "matter-28/research/Research Note - Strongest Clearly Established Right to Invoke.pdf",
+      "case_name": "United States v. Cope",
+      "citation": "527 F.3d 944 (9th Cir. 2008)",
+      "quote_or_holding_claimed": "Reads Williams broadly: specialized treatment/medication conditions implicating significant liberty interests require special findings.",
+      "status": "VERIFIED",
+      "notes": "Real; correctly placed in the Williams/Weber line."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 Round 3 M28 thorough",
+      "matter": 28,
+      "document": "matter-28/research/Research Note - Strongest Clearly Established Right to Invoke.pdf",
+      "case_name": "Luca v. Administration of Offender Services Bureau",
+      "citation": "15 F.3d 1086 (9th Cir. 1994)",
+      "quote_or_holding_claimed": "Listed under cases that cut against: prisoner had no protected liberty interest in a particular sex-offense treatment rating or transfer eligibility (unpublished).",
+      "status": "VERIFIED",
+      "notes": "Real unpublished table decision at 15 F.3d 1086; holding matches the memo's adverse-use characterization (no liberty interest because regulations did not mandate a particular outcome). Nonprecedential under 9th Cir. R. 36-3. Confirmed via Prison Legal News summary and exa.ai opinion snippet."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 Round 3 M28 thorough",
+      "matter": 28,
+      "document": "matter-28/research/Research Note - Strongest Clearly Established Right to Invoke.pdf",
+      "case_name": "Biggs v. Terhune",
+      "citation": "334 F.3d 910 (9th Cir. 2003)",
+      "quote_or_holding_claimed": "Parole board decision must be supported by 'some evidence' of current dangerousness; continued reliance on unchanging factors alone could raise due process concerns.",
+      "status": "VERIFIED",
+      "notes": "Real. Affirmed denial on the commitment offense but warned in dicta that continued sole reliance on unchanging factors could eventually violate due process. Memo's characterization is fair. Confirmed via CCAP summary and opinion text. Note: later cabined by Swarthout / subsequent Ninth Circuit habeas cases \u2014 still good for the proposition stated."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 Round 3 M28 thorough",
+      "matter": 28,
+      "document": "matter-28/research/Legal Research Memo - Clearly Established Law for QI Opposition.pdf",
+      "case_name": "United States v. Sanchez-Gomez",
+      "citation": "859 F.3d 649 (9th Cir. 2017) (en banc), vacated 138 S. Ct. 1532 (2018)",
+      "quote_or_holding_claimed": "En banc held blanket courtroom-shackling policy without individualized assessment violates due process; memo notes vacated for mootness.",
+      "status": "VERIFIED",
+      "notes": "Real; memo correctly flags the Supreme Court vacatur for mootness (584 U.S. ___, 138 S. Ct. 1532 (2018)). Usable only as persuasive reasoning, not binding precedent \u2014 the memo already hedges that. Confirmed via supremecourt.gov opinion PDF."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 Round 3 M28 thorough",
+      "matter": 28,
+      "document": "matter-28/research/Legal Research Memo - Clearly Established Law for QI Opposition.pdf",
+      "case_name": "Serrano v. Francis",
+      "citation": "345 F.3d 1071 (9th Cir. 2003)",
+      "quote_or_holding_claimed": "Prison officials violated clearly established law by applying a blanket policy denying inmates in administrative segregation the right to call witnesses.",
+      "status": "VERIFIED",
+      "notes": "Real; blanket denial of live witnesses in disciplinary hearings is impermissible (case-by-case required). Slight overclaim: the panel granted the officer QI on the due-process claim while finding a violation \u2014 so 'violated clearly established law' overstates the QI holding. Still usable for the blanket-policy-is-impermissible rule. Confirmed via exa.ai / syfert opinion text."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 Round 3 M28 thorough",
+      "matter": 28,
+      "document": "matter-28/research/Legal Research Memo - Clearly Established Law for QI Opposition.pdf",
+      "case_name": "Edmo v. Corizon, Inc.",
+      "citation": "935 F.3d 757 (9th Cir. 2019)",
+      "quote_or_holding_claimed": "A blanket policy denying gender-confirmation surgery to all inmates without individualized assessment of medical necessity violates the Eighth Amendment.",
+      "status": "MISCHARACTERIZED",
+      "notes": "Real at 935 F.3d 757, but the Ninth Circuit's affirmance is expressly individualized to Edmo's medical record, not a holding that a categorical 'blanket policy' is per se unconstitutional. The district court mentioned a de facto Corizon/IDOC practice; the circuit opinion emphasizes case-specific deliberate indifference. Use for individualized medical necessity, not as anti-blanket-policy precedent. Confirmed via cdn.ca9.uscourts.gov opinion PDF."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 Round 3 M28 thorough",
+      "matter": 28,
+      "document": "matter-28/research/Legal Research Memo - Clearly Established Law for QI Opposition.pdf",
+      "case_name": "Tsao v. Desert Palace, Inc.",
+      "citation": "698 F.3d 1128 (9th Cir. 2012)",
+      "quote_or_holding_claimed": "Private entities can be held liable under \u00a7 1983 for policies or customs that violate constitutional rights (Monell applied to private corporations).",
+      "status": "VERIFIED",
+      "notes": "Real at 698 F.3d 1128; Monell-applies-to-private-entities proposition correct. (Round 2 already flagged a separate '98 F.3d 1128' printing error in another occurrence \u2014 this occurrence has the correct volume.)"
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 Round 3 M28 thorough",
+      "matter": 28,
+      "document": "matter-28/research/Research Note - Strongest Clearly Established Right to Invoke.pdf",
+      "case_name": "Sandin v. Conner",
+      "citation": "515 U.S. 472 (1995)",
+      "quote_or_holding_claimed": "Listed as cutting against: prisoner liberty interest in avoiding administrative segregation only if atypical and significant hardship.",
+      "status": "VERIFIED",
+      "notes": "Real; correctly listed as adverse authority defining the atypical-and-significant-hardship threshold."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 Round 3 M28 thorough",
+      "matter": 28,
+      "document": "matter-28/research/Research Note - Strongest Clearly Established Right to Invoke.pdf",
+      "case_name": "Swarthout v. Cooke",
+      "citation": "562 U.S. 216 (2011)",
+      "quote_or_holding_claimed": "Listed as cutting against: in parole context Constitution requires only minimal due process.",
+      "status": "VERIFIED",
+      "notes": "Real; correctly flagged as limiting federal parole due-process review to minimal procedures once a state-created liberty interest exists."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 Round 3 M28 thorough",
+      "matter": 28,
+      "document": "matter-28/research/Research Prompt - Clearly Established Law for QI.pdf",
+      "case_name": "City of Escondido v. Emmons",
+      "citation": "139 S. Ct. 500 (2019)",
+      "quote_or_holding_claimed": "Right must be defined with specificity for QI; existing precedent must place the question beyond debate (with al-Kidd).",
+      "status": "VERIFIED",
+      "notes": "Real; correctly used for QI specificity / beyond-debate framing."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 Round 3 M28 thorough",
+      "matter": 28,
+      "document": "matter-28/research/Research Note - Strongest Clearly Established Right to Invoke.pdf",
+      "case_name": "Greenholtz v. Inmates of Nebraska Penal & Correctional Complex",
+      "citation": "442 U.S. 1 (1979)",
+      "quote_or_holding_claimed": "Parole statute creating a mere expectation of release does not create a liberty interest.",
+      "status": "VERIFIED",
+      "notes": "Real; correctly listed among authorities that can cut against a liberty-interest claim in parole discharge."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 Round 3 M28 thorough",
+      "matter": 28,
+      "document": "matter-28/research/Research Note - Strongest Clearly Established Right to Invoke.pdf",
+      "case_name": "Washington v. Harper",
+      "citation": "494 U.S. 210 (1990)",
+      "quote_or_holding_claimed": "Inmate has a significant liberty interest in avoiding unwanted administration of antipsychotic drugs.",
+      "status": "VERIFIED",
+      "notes": "Real and correctly characterized."
+    },
+    {
+      "group": "F",
+      "round": "2026-08-09 Round 3 M28 thorough",
+      "matter": 28,
+      "document": "matter-28/research/Research Note - Strongest Clearly Established Right to Invoke.pdf",
+      "case_name": "Carver v. Lehman",
+      "citation": "558 F.3d 869 (9th Cir. 2008)",
+      "quote_or_holding_claimed": "Washington state law creates a liberty interest in early release into community custody.",
+      "status": "VERIFIED",
+      "notes": "Real; state-created liberty interest analysis correctly summarized."
     }
   ],
   "summary": {
     "byStatus": {
-      "VERIFIED": 125,
-      "MISCITED": 10,
-      "NOT_FOUND": 11,
-      "MISQUOTED": 1
+      "VERIFIED": 158,
+      "MISCITED": 16,
+      "NOT_FOUND": 13,
+      "MISQUOTED": 1,
+      "MISCHARACTERIZED": 3
     }
   }
 }

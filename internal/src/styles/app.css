@@ -1,3 +1,32 @@
+/* All three faces are self-hosted. Cormorant Garamond and DM Sans used to come
+   from fonts.googleapis.com via a render-blocking <link>, which cost a DNS +
+   TLS + CSS round trip to one third-party origin and then a second hop to
+   fonts.gstatic.com for the files — all in front of first paint. Bundled here
+   they resolve on the connection that already delivered this stylesheet.
+
+   Both are variable fonts spanning the 400–700 the portfolio uses, so one file
+   per family covers every weight. Latin subset only: the entire codebase
+   contains exactly one non-ASCII letter ("à", inside U+0000-00FF), and the
+   punctuation it leans on — em dash, section sign, en dash, middle dot — is
+   all within the range below. */
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("../assets/fonts/CormorantGaramond-latin.woff2") format("woff2");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("../assets/fonts/DMSans-latin.woff2") format("woff2");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 @font-face {
   font-family: "Cloister Black";
   src: url("../assets/fonts/CloisterBlack.woff2") format("woff2");
@@ -120,7 +149,10 @@
 
 * { box-sizing: border-box; }
 html { min-width: 320px; }
+/* Painted by the inline script in index.html before React mounts, so the shell
+   never flashes the wrong ground. .app-shell owns the palette from then on. */
 body { margin: 0; min-width: 320px; min-height: 100vh; min-height: 100dvh; background: #0f1a2e; }
+html[data-theme="light"] body { background: #f0f4f8; }
 button, input { font: inherit; }
 a { color: inherit; }
 
@@ -166,12 +198,18 @@ a { color: inherit; }
 .firm-external-hint { opacity: 0; transform: translateY(-2px); transition: opacity .15s ease, transform .15s ease; color: var(--gold); font-size: 8px; font-weight: 700; letter-spacing: .5px; line-height: 1.5; text-transform: uppercase; }
 .firm-link:hover .firm-external-hint { opacity: 1; transform: translateY(0); }
 .legacy-counsel-names { color: #495467; text-align: right; font-family: var(--font-sans); font-size: 10px; font-weight: 600; line-height: 1.5; }
-/* The source asset has almost no internal padding (ink fills ~99% of its
-   canvas width), unlike the SLB mark, which bakes in padding and a card
-   background. Equal-looking boxes render very unequal ink, so this box is
-   sized to the rendered wordmark, not to match SLB's box dimensions. */
-.legacy-garcia-logo { width: 100px; height: 34px; object-fit: contain; object-position: right center; }
-.legacy-dag-logo { width: 64px; height: 64px; object-fit: cover; border-radius: 50%; }
+/* Fixed boxes for every theme — dark/light artwork may differ in aspect ratio,
+   but the header must not reflow when the theme toggle swaps the src.
+   Garcia's box is intentionally narrower than its ~5.88:1 asset ratio: at the
+   natural width (259px) it renders over twice as wide as the SLB mark next to
+   it. object-fit: contain already letterboxes any box that doesn't match the
+   asset's ratio — same mechanism this rule relies on for SLB and DAG — so
+   this box is sized to the rendered wordmark (~100px, matching SLB's ~98px
+   ink) rather than to the asset's full aspect ratio. */
+.firm-logo { flex-shrink: 0; display: block; object-fit: contain; object-position: right center; }
+.legacy-slb-logo { width: 118px; height: 62px; }
+.legacy-garcia-logo { width: 100px; height: 34px; }
+.legacy-dag-logo { width: 64px; height: 64px; object-fit: cover; border-radius: 50%; object-position: center; }
 .legacy-header-controls { display: flex; flex: 1 1 100%; flex-direction: column; align-items: stretch; gap: 8px; }
 .legacy-header-actions { display: flex; align-items: center; justify-content: flex-end; gap: var(--header-action-gap); }
 .legacy-search-trigger { display: flex; align-items: center; justify-content: space-between; gap: 18px; min-width: 240px; min-height: var(--header-theme-size); border: 1px solid; border-radius: 8px; padding: 6px 10px 6px 13px; cursor: pointer; font-family: var(--font-sans); font-size: 12px; text-align: left; }
@@ -180,7 +218,11 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
 .legacy-nav-menu-toggle { display: none; align-items: center; justify-content: center; gap: 8px; min-height: 38px; padding: 8px 12px; border: 1px solid rgb(200 168 75 / 35%); border-radius: 8px; background: rgb(200 168 75 / 8%); color: var(--gold); font-family: var(--font-sans); font-size: 12px; font-weight: 700; letter-spacing: .4px; cursor: pointer; }
 .legacy-nav-menu-toggle[aria-expanded="true"] { background: rgb(200 168 75 / 16%); }
 .legacy-navigation { display: flex; gap: 4px; flex-wrap: nowrap; width: 100%; }
-.legacy-nav-link { flex: 1 1 0; min-width: 0; text-align: center; padding: 9px 4px; border-radius: 6px; font-family: var(--font-sans); font-size: 13px; font-weight: 600; letter-spacing: .2px; white-space: nowrap; text-decoration: none; cursor: pointer; transition: all .2s; }
+/* flex-basis auto rather than 0: with 1 1 0 every link got an identical 1/11th
+   share, so "Judicial Opinions" was allotted 99px for 116px of text and lost
+   its tail while "Damages" sat in whitespace. Sizing from content lets the long
+   labels take the room they need and shares the remainder proportionally. */
+.legacy-nav-link { flex: 1 1 auto; min-width: 0; text-align: center; padding: 9px 4px; border-radius: 6px; font-family: var(--font-sans); font-size: 13px; font-weight: 600; letter-spacing: .2px; white-space: nowrap; text-decoration: none; cursor: pointer; transition: all .2s; }
 .legacy-deadline-row { max-width: 1200px; margin: 0 auto; padding: 10px 24px; display: flex; align-items: center; justify-content: center; gap: 28px; flex-wrap: wrap; position: relative; }
 .legacy-deadline-label { color: var(--gold); font-family: var(--font-sans); font-size: 10px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; white-space: nowrap; }
 .legacy-deadline-display { display: flex; align-items: center; justify-content: center; gap: 28px; flex-wrap: wrap; }
@@ -715,8 +757,11 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
   .matter-summary-item:nth-last-child(-n+2) { border-bottom: 0; }
 }
 
-@media (max-width: 760px) {
-  :root { --space-page: 16px; }
+/* Everything the header needs to stop being a desktop row. This used to start
+   at 760px, which left 761-980px with no treatment at all: .legacy-opposing-counsel
+   is flex-shrink: 0, so the header row could not compress and dragged the whole
+   page ~177px wider than the viewport on tablets and small laptops. */
+@media (max-width: 980px) {
   .legacy-header-inner {
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
@@ -788,18 +833,15 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
     align-items: center;
     width: auto;
   }
-  .firm-link .firm-logo { height: 44px !important; width: auto; max-width: min(46vw, 168px); }
-  /* Both properties need !important to beat the shared rule below, but height
-     also needs to match its specificity (two classes) — .legacy-garcia-logo
-     alone is one class and loses to .firm-link .firm-logo on a tied
-     !important even with a later source position. */
-  .firm-link .legacy-garcia-logo { width: 100px !important; height: 28px !important; object-position: right center; }
-  .legacy-dag-logo { width: 44px !important; height: 44px !important; max-width: none; }
+  .legacy-slb-logo { width: 84px; height: 44px; }
+  /* Same box-narrower-than-asset-ratio letterbox as the desktop rule, scaled
+     down by the same ~0.71 factor SLB's own box shrinks by at this breakpoint. */
+  .legacy-garcia-logo { width: 72px; height: 24px; }
+  .legacy-dag-logo { width: 44px; height: 44px; }
   :root { --header-action-gap: 10px; }
   .legacy-header-actions { width: 100%; justify-content: stretch; }
   .legacy-search-trigger { min-width: 0; min-height: 44px; flex: 1; }
   .legacy-theme-toggle { min-width: 44px; min-height: 44px; flex-shrink: 0; }
-  .matters-search-endcap { display: block; }
   .legacy-nav-menu-toggle { display: inline-flex; width: 100%; min-height: 44px; }
   .legacy-navigation {
     display: none;
@@ -818,6 +860,11 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
     font-size: 12px;
     line-height: 1.25;
   }
+}
+
+@media (max-width: 760px) {
+  :root { --space-page: 16px; }
+  .matters-search-endcap { display: block; }
   .legacy-deadline-row { justify-content: flex-start; padding: 10px 76px 10px 16px; gap: 14px; }
   .legacy-deadline-display { justify-content: flex-start; gap: 14px; width: 100%; }
   .legacy-deadline-description { text-align: left; }
@@ -847,16 +894,9 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
   .legacy-versus { font-size: clamp(4rem, 24vw, 5.5rem); transform: translate(-18px, 2px); }
   .legacy-header-inner { gap: 6px 8px; }
   .legacy-opposing-counsel { gap: 6px; }
-  .firm-link .firm-logo { height: 36px !important; max-width: min(48vw, 140px); }
-  /* Width doesn't need repeating: the ≤760px rule's width:100px!important
-     still matches here (both blocks are active below 520px) and nothing
-     later overrides it. Height does need repeating, at matching specificity
-     (.firm-link .legacy-garcia-logo, not just .legacy-garcia-logo) — the
-     generic .firm-link .firm-logo rule at this breakpoint is also
-     two-class-!important and comes right before this, so anything weaker
-     loses to it regardless of being later in the file. */
-  .firm-link .legacy-garcia-logo { height: 23px !important; }
-  .legacy-dag-logo { width: 36px !important; height: 36px !important; }
+  .legacy-slb-logo { width: 68px; height: 36px; }
+  .legacy-garcia-logo { width: 58px; height: 20px; }
+  .legacy-dag-logo { width: 36px; height: 36px; }
   .legacy-clock-units { transform: scale(.88); transform-origin: left center; }
   .legacy-deadline-description { width: 100%; }
   .legacy-search-trigger { gap: 10px; padding-inline: 12px; }
@@ -878,9 +918,15 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
   .calendar-cell { min-height: 48px; }
 }
 
-@media (min-width: 761px) {
+/* Paired with the 980px header block above — the section menu is the mobile
+   affordance, so it must stay available for the whole range where the header
+   is collapsed. */
+@media (min-width: 981px) {
   .legacy-nav-menu-toggle { display: none !important; }
   .legacy-navigation { display: flex !important; }
+}
+
+@media (min-width: 761px) {
   .matters-filters-toggle { display: none !important; }
   .matters-filter-chips { display: flex !important; }
   .saved-views { display: block; }
@@ -1123,4 +1169,20 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
 @media (max-width: 760px) {
   .dl-form { grid-template-columns: 1fr; }
   .dl-deadline-date { font-size: 22px; }
+}
+
+/* ── Reduced motion ──────────────────────────────────────────────────────────
+   Three animations ran unconditionally, two of them infinite: clockPulse on the
+   frozen countdown, spin on the route and search spinners, and dl-rise on the
+   deadline result. Spinners keep their shape (they are role="status", so the
+   label still announces); they simply stop rotating. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
 }

@@ -151,6 +151,15 @@ const { lawyer_fees_summary: feeSummary, lawyer_fees: feeRows } = await import(
   pathToFileURL(path.join(REPO_ROOT, "internal/src/data/lawyerFees.js")).href
 );
 
+const citationVerificationPath = path.join(
+  REPO_ROOT,
+  "internal/docs/citation_verification.json",
+);
+let citationVerification = null;
+if (fs.existsSync(citationVerificationPath)) {
+  citationVerification = JSON.parse(fs.readFileSync(citationVerificationPath, "utf8"));
+}
+
 const active = cases.filter((m) => bucket(m) === "active");
 const settled = cases.filter((m) => bucket(m) === "settled");
 const closed = cases.filter((m) => bucket(m) === "closed");
@@ -282,6 +291,38 @@ const attorneyFeesBlock = [
   `*Plaintiff has litigated all ${feeSummary.totalMatters} matters pro se, absorbing the full economic equivalent of the above without compensation. Fee-shifting statutes (42 U.S.C. §1988, PC §290.46(j)(4)(A), RICO 18 U.S.C. §1964(c), FCRA, ICRAA) apply across the majority of active matters — mandatory fee recovery upon prevailing substantially offsets or eliminates the above costs.*`,
 ].join("\n");
 
+const statusOrder = [
+  "VERIFIED",
+  "MISCITED",
+  "MISCHARACTERIZED",
+  "MISQUOTED",
+  "NOT_FOUND",
+  "UNVERIFIED",
+];
+const statusCounts = citationVerification?.statusCounts || {};
+const citationScoreboard = citationVerification
+  ? [
+      `| Status | Count |`,
+      `|---|---|`,
+      ...statusOrder
+        .filter((k) => statusCounts[k] != null)
+        .map((k) => `| ${k} | ${statusCounts[k]} |`),
+      ...Object.keys(statusCounts)
+        .filter((k) => !statusOrder.includes(k))
+        .sort()
+        .map((k) => `| ${k} | ${statusCounts[k]} |`),
+      ``,
+      `Paired authorities: **${citationVerification.corpusAuthorities ?? "—"}**. ` +
+        `P0 (plaintiff-only UNVERIFIED): **${citationVerification.queue?.plaintiffOnlyUnverified ?? "—"}**. ` +
+        `P1 (plaintiff-only bad status): **${citationVerification.queue?.plaintiffOnlyBad ?? "—"}**. ` +
+        `Ledger date: ${citationVerification.generatedDate || "—"}.`,
+    ].join("\n")
+  : [
+      `| Status | Count |`,
+      `|---|---|`,
+      `| _(run \`npm run citations:verify\`)_ | — |`,
+    ].join("\n");
+
 let readme = fs.readFileSync(README, "utf8");
 const replacements = {
   OVERVIEW_TABLE: overviewTable,
@@ -292,6 +333,7 @@ const replacements = {
   UPCOMING_DEADLINES: deadlinesTable,
   DAMAGES_SUMMARY: damagesTable,
   ATTORNEY_FEES: attorneyFeesBlock,
+  CITATION_SCOREBOARD: citationScoreboard,
 };
 
 for (const [name, body] of Object.entries(replacements)) {
@@ -305,7 +347,11 @@ if (checkOnly) {
     process.exit(1);
   }
   console.log(
-    `OK — README portfolio tables are current (${active.length} active, ${settled.length} settled, ${closed.length} closed, ${upcoming.length} upcoming).`,
+    `OK — README portfolio tables are current (${active.length} active, ${settled.length} settled, ${closed.length} closed, ${upcoming.length} upcoming` +
+      (citationVerification
+        ? `, ${citationVerification.corpusAuthorities} citation authorities`
+        : "") +
+      ").",
   );
   process.exit(0);
 }

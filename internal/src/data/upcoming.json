@@ -115,15 +115,6 @@
     "upcoming": true
   },
   {
-    "date": "Sep. 18, 2026",
-    "event": "Proof-of-service filing deadline — Newanforbi v. Randstad US, LLC et al. (26CV199902); 60 days from July 20, 2026 filing (CRC 3.110(b)); both defendants already SERVED Jul. 30, 2026",
-    "matters": [
-      27
-    ],
-    "type": "deadline",
-    "upcoming": true
-  },
-  {
     "date": "Dec. 14, 2026",
     "event": "Meet-and-confer deadline — Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113); 30 calendar days before Jan. 13, 2027 CMC (CRC 3.724)",
     "matters": [
@@ -245,15 +236,6 @@
     "upcoming": true
   },
   {
-    "date": "Aug. 18, 2026",
-    "event": "Fee waiver hearing — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554), 11:30 AM, Department FHO, Hayward Hall of Justice, 24405 Amador Street, Hayward, CA 94544, before Hon. Jamilah A. Jefferson; PLAN: mooted by mailed payment in full ($435.00) — see Aug. 3, 2026 letter; FALLBACK if payment not confirmed received/applied beforehand: Plaintiff must appear with proof of his financial circumstances (income, living situation) or the fee waiver will be denied outright and Plaintiff will have 10 days to pay the filing fees in full",
-    "matters": [
-      29
-    ],
-    "type": "hearing",
-    "upcoming": true
-  },
-  {
     "date": "Aug. 26, 2026",
     "event": "Meet-and-confer deadline (computed) — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554); CCP §430.41(a)(2) requires meet-and-confer at least 5 calendar days before the Aug. 31, 2026 responsive-pleading deadline, if either defendant intends to demur; otherwise that defendant must file a declaration for the automatic 30-day extension",
     "matters": [
@@ -339,5 +321,15 @@
     "type": "deadline",
     "upcoming": true,
     "source": "/documents/matter-27/Notice of Amount of Punitive Damages Sought (CCP 425.115) - Randstad US LLC (Aug 4 2026).pdf"
+  },
+  {
+    "date": "Aug. 26, 2026",
+    "event": "Responsive pleading deadline (computed) — Newanforbi v. Serrato (4:26-cv-05953-ASK); 21 days from the Aug. 5, 2026 USMS personal service date (FRCP 12(a)(1)(A))",
+    "matters": [
+      24
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "opposing"
   }
 ]
