@@ -173,7 +173,7 @@ a { color: inherit; }
    but the header must not reflow when the theme toggle swaps the src. */
 .firm-logo { flex-shrink: 0; display: block; object-fit: contain; object-position: right center; }
 .legacy-slb-logo { width: 118px; height: 62px; }
-.legacy-garcia-logo { width: 130px; height: 44px; }
+.legacy-garcia-logo { width: 259px; height: 44px; }
 .legacy-dag-logo { width: 64px; height: 64px; object-fit: cover; border-radius: 50%; object-position: center; }
 .legacy-header-controls { display: flex; flex: 1 1 100%; flex-direction: column; align-items: stretch; gap: 8px; }
 .legacy-header-actions { display: flex; align-items: center; justify-content: flex-end; gap: var(--header-action-gap); }
@@ -792,7 +792,7 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
     width: auto;
   }
   .legacy-slb-logo { width: 84px; height: 44px; }
-  .legacy-garcia-logo { width: 106px; height: 36px; }
+  .legacy-garcia-logo { width: 212px; height: 36px; }
   .legacy-dag-logo { width: 44px; height: 44px; }
   :root { --header-action-gap: 10px; }
   .legacy-header-actions { width: 100%; justify-content: stretch; }
@@ -847,7 +847,7 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
   .legacy-header-inner { gap: 6px 8px; }
   .legacy-opposing-counsel { gap: 6px; }
   .legacy-slb-logo { width: 68px; height: 36px; }
-  .legacy-garcia-logo { width: 88px; height: 30px; }
+  .legacy-garcia-logo { width: 177px; height: 30px; }
   .legacy-dag-logo { width: 36px; height: 36px; }
   .legacy-clock-units { transform: scale(.88); transform-origin: left center; }
   .legacy-deadline-description { width: 100%; }
