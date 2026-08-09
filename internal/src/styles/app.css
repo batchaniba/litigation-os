@@ -212,7 +212,11 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
 .legacy-nav-menu-toggle { display: none; align-items: center; justify-content: center; gap: 8px; min-height: 38px; padding: 8px 12px; border: 1px solid rgb(200 168 75 / 35%); border-radius: 8px; background: rgb(200 168 75 / 8%); color: var(--gold); font-family: var(--font-sans); font-size: 12px; font-weight: 700; letter-spacing: .4px; cursor: pointer; }
 .legacy-nav-menu-toggle[aria-expanded="true"] { background: rgb(200 168 75 / 16%); }
 .legacy-navigation { display: flex; gap: 4px; flex-wrap: nowrap; width: 100%; }
-.legacy-nav-link { flex: 1 1 0; min-width: 0; text-align: center; padding: 9px 4px; border-radius: 6px; font-family: var(--font-sans); font-size: 13px; font-weight: 600; letter-spacing: .2px; white-space: nowrap; text-decoration: none; cursor: pointer; transition: all .2s; }
+/* flex-basis auto rather than 0: with 1 1 0 every link got an identical 1/11th
+   share, so "Judicial Opinions" was allotted 99px for 116px of text and lost
+   its tail while "Damages" sat in whitespace. Sizing from content lets the long
+   labels take the room they need and shares the remainder proportionally. */
+.legacy-nav-link { flex: 1 1 auto; min-width: 0; text-align: center; padding: 9px 4px; border-radius: 6px; font-family: var(--font-sans); font-size: 13px; font-weight: 600; letter-spacing: .2px; white-space: nowrap; text-decoration: none; cursor: pointer; transition: all .2s; }
 .legacy-deadline-row { max-width: 1200px; margin: 0 auto; padding: 10px 24px; display: flex; align-items: center; justify-content: center; gap: 28px; flex-wrap: wrap; position: relative; }
 .legacy-deadline-label { color: var(--gold); font-family: var(--font-sans); font-size: 10px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; white-space: nowrap; }
 .legacy-deadline-display { display: flex; align-items: center; justify-content: center; gap: 28px; flex-wrap: wrap; }
