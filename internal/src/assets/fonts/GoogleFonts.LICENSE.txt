@@ -1,0 +1,18 @@
+Cormorant Garamond and DM Sans
+SIL Open Font License, Version 1.1 — https://openfontlicense.org
+
+Cormorant Garamond — Copyright (c) Catharsis Fonts (Christian Thalmann).
+  https://fonts.google.com/specimen/Cormorant+Garamond
+DM Sans — Copyright (c) Colophon Foundry, Jonny Pinhorn, Indian Type Foundry.
+  https://fonts.google.com/specimen/DM+Sans
+
+Both files are the latin subset of the variable (weight 400-700) build, fetched
+from fonts.gstatic.com and committed so the app does not depend on a
+third-party origin at render time. Regenerate by re-requesting the Google Fonts
+CSS2 API with a modern browser User-Agent and taking the `/* latin */` src URL:
+
+  curl -H "User-Agent: Mozilla/5.0 ... Chrome/120.0.0.0 ..." \
+    "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap"
+
+The OFL permits bundling and redistribution provided the fonts are not sold on
+their own and this notice travels with them.
