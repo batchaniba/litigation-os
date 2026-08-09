@@ -11,13 +11,13 @@ The campaign is entering a phase where claims are cognizable and motions to dism
 | Status | Count |
 |---|---|
 | UNVERIFIED | 423 |
-| VERIFIED | 280 |
-| MISCITED | 26 |
+| VERIFIED | 278 |
+| MISCITED | 28 |
 | MISCHARACTERIZED | 6 |
 | NOT_FOUND | 6 |
 
 **Plaintiff-only + still UNVERIFIED (P0 queue): 0**  
-**Plaintiff-only + bad status (P1): 25**
+**Plaintiff-only + bad status (P1): 27**
 
 ## Method controls
 
@@ -112,11 +112,13 @@ _Round 4: no matching absolute-immunity hearing-officer decision at that WL numb
 | 2 | MISCITED | Soranno's Gasco, Inc. v. Morgan Hill Unified, 874 F. 2d 1310 | 24, 32 |
 | 2 | MISCITED | Swift v. Christian, 384 F. 3d 1184 | 30 |
 | 2 | MISCITED | Unicorn Glob., Inc. v. Hillo Am., Inc, 2021 WL 1034838 | 29 |
+| 1 | MISCITED | Accurate and Amazon. Los Angeles Cath. Worker v. Los Angeles Downtown  | 29 |
 | 1 | MISCITED | Ashcroft v. Iqbal, 556 U.S. 662 | 29 |
 | 1 | MISCITED | Cases Ashcroft v. Iqbal, 556 U.S. 662 | 29 |
 | 1 | MISCITED | Chubb v. Sullivan, 2014 WL 2807986 | 28 |
 | 1 | MISCITED | Jessie v. United States, 79 M.J. 437 | 28 |
 | 1 | MISCITED | Lockley v. Law Office, 91 Cal.App. 4th 401 (2001) | 20, 32 |
+| 1 | MISCITED | Los Angeles Cath. Worker v. Los Angeles Downtown Indus. Dist. Bus, 201 | 29 |
 | 1 | MISCITED | See Johnson v. City of Grants Pass, 50 F. 4th 787 | 28 |
 | 1 | MISCITED | See Rodriguez v. United States, 575 U.S. 348 (2015) | 32 |
 | 1 | MISCITED | Soranno’s Gasco, Inc. v. Morgan Hill Uniifed Sch. Dist, 874 F. 2d 1310 | 24 |
@@ -132,7 +134,7 @@ _0 total in JSON `priorityQueue`._
 
 ## Round overlay
 
-Loaded round: **2026-08-09 Round 4 — portfolio P0 (batches A–D; plaintiff-only queue cleared)** — 177 results
+Loaded round: **2026-08-09 Round 4 — portfolio P0 (batches A–D; LACW WL correction)** — 177 results
 
 Method note: WebSearch against primary-source URLs after positive control (Richardson v. McKnight, 521 U.S. 399 — hit govinfo.gov U.S. Reports PDF) and negative control (In re Leman, 66 Cal.App.5th 200 — no matching decision; only Lemanuel C. / Marriage of Lemen noise). CourtListener/case.law/Justia direct fetches remain egress-blocked. Statuses rest on search-returned summaries plus primary URLs. Characterization flags applied when index sample context attributes a proposition the opinion does not support. Batch D closed the remaining plaintiff-only UNVERIFIED queue.
 

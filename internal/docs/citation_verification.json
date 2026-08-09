@@ -9,17 +9,17 @@
   "corpusAuthorities": 741,
   "statusCounts": {
     "UNVERIFIED": 423,
-    "VERIFIED": 280,
-    "MISCITED": 26,
+    "VERIFIED": 278,
+    "MISCITED": 28,
     "MISCHARACTERIZED": 6,
     "NOT_FOUND": 6
   },
   "queue": {
     "plaintiffOnlyUnverified": 0,
-    "plaintiffOnlyBad": 25
+    "plaintiffOnlyBad": 27
   },
   "rounds": {
-    "loaded": "2026-08-09 Round 4 \u2014 portfolio P0 (batches A\u2013D; plaintiff-only queue cleared)",
+    "loaded": "2026-08-09 Round 4 \u2014 portfolio P0 (batches A\u2013D; LACW WL correction)",
     "resultCount": 177,
     "method": "WebSearch against primary-source URLs after positive control (Richardson v. McKnight, 521 U.S. 399 \u2014 hit govinfo.gov U.S. Reports PDF) and negative control (In re Leman, 66 Cal.App.5th 200 \u2014 no matching decision; only Lemanuel C. / Marriage of Lemen noise). CourtListener/case.law/Justia direct fetches remain egress-blocked. Statuses rest on search-returned summaries plus primary URLs. Characterization flags applied when index sample context attributes a proposition the opinion does not support. Batch D closed the remaining plaintiff-only UNVERIFIED queue."
   },
@@ -1286,7 +1286,7 @@
       "plaintiffOnly": true,
       "status": "MISCITED",
       "statusSource": "round",
-      "notes": "Party pairing is wrong for this WL pin. Open-web / Casetext association places 2021 WL 1034838 with Unicorn Global, Inc. v. Golabs, Inc. (N.D. Tex. hoverboard patent litigation), not Hillo America. A real Unicorn Global v. Hillo America, Inc. action exists at C.D. Cal. No. 2:19-cv-03028 (Apr. 29, 2020 standing order), but do not cite it as 2021 WL 1034838. Fix: use correct caption for the WL pin, or cite Hillo by docket/case number after confirming the intended opinion.",
+      "notes": "Party/WL pairing is unsafe. Open-web / Casetext association places 2021 WL 1034838 with Unicorn Global, Inc. v. Golabs, Inc. (N.D. Tex.), not Hillo America. A real Unicorn Global v. Hillo America, Inc. action exists at C.D. Cal. No. 2:19-cv-03028 (Apr. 29, 2020 standing order / 2021 consent judgment), but do not cite it as 2021 WL 1034838. Fix: use correct caption for the WL pin, or cite Hillo by docket number after confirming the intended opinion.",
       "sampleContext": "..................................................... 15 Sugar Co-op v. Archer-Daniels-Midland Co., 2012 WL 3101659, at *5 (C.D. Cal. 2012) .............. 14 Unicorn Glob., Inc. v. Hillo Am., Inc., No. LACV1903028, 2021 WL 1034838, at *1 (C.D. Cal. Feb. 12, 2021) ................",
       "locations": [
         {
@@ -1298,6 +1298,31 @@
         {
           "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
           "page": 19,
+          "role": "plaintiff_filing",
+          "matter": 29
+        }
+      ],
+      "priority": "P1_plaintiff_only_bad"
+    },
+    {
+      "citation": "Accurate and Amazon. Los Angeles Cath. Worker v. Los Angeles Downtown Indus. Dist. Bus, 2015 WL 13650018",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        29
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "MISCITED",
+      "statusSource": "round",
+      "notes": "Garbled index pairing plus wrong WL pin. Real case is Los Angeles Catholic Worker v. Los Angeles Downtown Industrial District Business Improvement District, No. CV 14-7344 PSG (AJWx), C.D. Cal. Correct Westlaw cite reported as 2015 WL 13649801 (Jan. 13, 2015), not 2015 WL 13650018. 'Accurate and Amazon' prefix is OCR/index noise from an unrelated matter.",
+      "sampleContext": "Suite 2450 Los Angeles, CA 90071 Website to deny Plaintiff employment. FAC \u00b6 29. Accordingly, Plaintiff has properly pled an agency relationship between Accurate and Amazon. Los Angeles Cath. Worker v. Los Angeles Downtown Indus. Dist. Bus. Improvement Dist., No. CV147344PSGAJWX,",
+      "locations": [
+        {
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
+          "page": 18,
           "role": "plaintiff_filing",
           "matter": 29
         }
@@ -1426,6 +1451,31 @@
           "page": 3,
           "role": "plaintiff_filing",
           "matter": 20
+        }
+      ],
+      "priority": "P1_plaintiff_only_bad"
+    },
+    {
+      "citation": "Los Angeles Cath. Worker v. Los Angeles Downtown Indus. Dist. Bus, 2015 WL 13650018",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        29
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "MISCITED",
+      "statusSource": "round",
+      "notes": "Real case/docket correct (CV 14-7344 PSG (AJWx), C.D. Cal.), but Westlaw number is wrong: correct pin reported as 2015 WL 13649801 (Jan. 13, 2015), not 2015 WL 13650018. Prefer docket citation.",
+      "sampleContext": "........................... 8, 9 Lee v. City of Los Angeles, 250 F.3d 668, 688 (9th Cir. 2001) ............................................................ 8 Los Angeles Cath. Worker v. Los Angeles Downtown Indus. Dist. Bus. Improvement Dist., No. CV147344PSGAJWX, 2015 WL 1365001",
+      "locations": [
+        {
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
+          "page": 3,
+          "role": "plaintiff_filing",
+          "matter": 29
         }
       ],
       "priority": "P1_plaintiff_only_bad"
@@ -8810,31 +8860,6 @@
       "priority": "P2_joined"
     },
     {
-      "citation": "Accurate and Amazon. Los Angeles Cath. Worker v. Los Angeles Downtown Indus. Dist. Bus, 2015 WL 13650018",
-      "kind": "authority",
-      "occurrenceCount": 1,
-      "matters": [
-        29
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "VERIFIED",
-      "statusSource": "round",
-      "notes": "OCR-garbled index string; real case is Los Angeles Catholic Worker v. Los Angeles Downtown Industrial District Business Improvement District, C.D. Cal. No. 2:14-cv-07344-PSG. Case existence confirmed via complaint / settlement / docket materials. Prefer docket citation; confirm the 2015 WL 13650018 pin against Westlaw before reuse (open web did not surface a clean primary page for that exact WL number).",
-      "sampleContext": "Suite 2450 Los Angeles, CA 90071 Website to deny Plaintiff employment. FAC \u00b6 29. Accordingly, Plaintiff has properly pled an agency relationship between Accurate and Amazon. Los Angeles Cath. Worker v. Los Angeles Downtown Indus. Dist. Bus. Improvement Dist., No. CV147344PSGAJWX,",
-      "locations": [
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
-          "page": 18,
-          "role": "plaintiff_filing",
-          "matter": 29
-        }
-      ],
-      "priority": "P2_joined"
-    },
-    {
       "citation": "Armondo v. Dep't of Motor Vehicles, 15 Cal. App. 4th 1174 (1993)",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -10274,31 +10299,6 @@
           "page": 3,
           "role": "court_order",
           "matter": 7
-        }
-      ],
-      "priority": "P2_joined"
-    },
-    {
-      "citation": "Los Angeles Cath. Worker v. Los Angeles Downtown Indus. Dist. Bus, 2015 WL 13650018",
-      "kind": "authority",
-      "occurrenceCount": 1,
-      "matters": [
-        29
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "VERIFIED",
-      "statusSource": "round",
-      "notes": "Real L.A. Catholic Worker v. L.A. Downtown Industrial District BID, C.D. Cal. No. 2:14-cv-07344-PSG (homeless-property seizure litigation). Confirm 2015 WL 13650018 on Westlaw before reuse; prefer docket citation in new filings.",
-      "sampleContext": "........................... 8, 9 Lee v. City of Los Angeles, 250 F.3d 668, 688 (9th Cir. 2001) ............................................................ 8 Los Angeles Cath. Worker v. Los Angeles Downtown Indus. Dist. Bus. Improvement Dist., No. CV147344PSGAJWX, 2015 WL 1365001",
-      "locations": [
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
-          "page": 3,
-          "role": "plaintiff_filing",
-          "matter": 29
         }
       ],
       "priority": "P2_joined"
