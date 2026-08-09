@@ -571,8 +571,8 @@
     "case_no": "STK-CV-UWT-2026-0007649",
     "court": "San Joaquin Sup. Ct.",
     "claims": "PC §290.46(j) Violation, Wrongful Termination, FCRA, ICRAA, UCL §17200, IIED, NIED",
-    "status_label": "Settled Jul. 14, 2026 — dismissal mailed Aug. 3, 2026",
-    "lifecycle": "settled",
+    "status_label": "Dismissed with prejudice Aug. 6, 2026",
+    "lifecycle": "dismissed",
     "proceeding": "state_civil",
     "phase": "terminal",
     "filed": "May 29, 2026",
@@ -599,9 +599,9 @@
       "Intentional Infliction of Emotional Distress",
       "Negligent Infliction of Emotional Distress"
     ],
-    "archived": false,
+    "archived": true,
     "evidenceCount": 15,
-    "documentCount": 15
+    "documentCount": 16
   },
   {
     "number": 23,
@@ -638,10 +638,10 @@
     "case_no": "4:26-cv-05953-ASK",
     "court": "USDC N.D. Cal.",
     "claims": "42 USC 1983: Fourteenth Amendment (Substantive & Procedural Due Process), First Amendment (Retaliation); Declaratory Relief",
-    "status_label": "CMC Sep. 15, 2026 — USMS service not yet certified",
+    "status_label": "Served Aug. 5, 2026 — answer due Aug. 26; CMC Sep. 15",
     "lifecycle": "active",
     "proceeding": "federal_civil",
-    "phase": "cmc",
+    "phase": "responsive_deadline",
     "filed": "June 17, 2026",
     "judge": "Hon. Ajay S. Krishnan, U.S. Magistrate Judge (N.D. Cal.)",
     "cluster": 1,
@@ -654,8 +654,18 @@
       "Count IV — Declaratory Relief (28 U.S.C. §§ 2201-2202) — Declaring Denial Unconstitutional and Plaintiff's Entitlement to Certification"
     ],
     "archived": false,
+    "badge": "SERVED",
+    "serviceTracking": [
+      {
+        "name": "Captain G. Serrato",
+        "title": "Defendant (served via Kim Schoonmaker, Office Assistant, CHP Dublin Area)",
+        "location": "4999 Gleason Drive, Dublin, CA 94568",
+        "served": true,
+        "dateServed": "August 5, 2026 at 10:20 a.m. (USMS; Doc. 15 filed Aug. 6, 2026)"
+      }
+    ],
     "evidenceCount": 12,
-    "documentCount": 6
+    "documentCount": 7
   },
   {
     "number": 25,
@@ -753,9 +763,9 @@
       "Unlawful Business Practices (Bus. & Prof. Code § 17200 et seq.)"
     ],
     "archived": false,
-    "status_label": "Served Jul. 30, 2026 — response due Aug. 31",
+    "status_label": "POS filed Aug. 7 — response due Aug. 31",
     "evidenceCount": 16,
-    "documentCount": 44
+    "documentCount": 48
   },
   {
     "number": 28,
@@ -790,7 +800,7 @@
     "case_no": "26CV201554",
     "court": "Alameda Sup. Ct. (Hayward Hall of Justice, Dept. 520)",
     "claims": "PC §290.46(j)(2)(E) Violation, Fair Chance Act (Gov. Code §12952), FCRA, ICRAA, Invasion of Privacy, UCL §17200, IIED",
-    "status_label": "Served Jul. 31, 2026 — response due Aug. 31",
+    "status_label": "Fee paid / notices e-filed Aug. 6 — response due Aug. 31",
     "lifecycle": "active",
     "proceeding": "state_civil",
     "phase": "responsive_deadline",
@@ -827,7 +837,7 @@
     ],
     "archived": false,
     "evidenceCount": 24,
-    "documentCount": 74
+    "documentCount": 75
   },
   {
     "number": 30,
