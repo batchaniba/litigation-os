@@ -166,7 +166,11 @@ a { color: inherit; }
 .firm-external-hint { opacity: 0; transform: translateY(-2px); transition: opacity .15s ease, transform .15s ease; color: var(--gold); font-size: 8px; font-weight: 700; letter-spacing: .5px; line-height: 1.5; text-transform: uppercase; }
 .firm-link:hover .firm-external-hint { opacity: 1; transform: translateY(0); }
 .legacy-counsel-names { color: #495467; text-align: right; font-family: var(--font-sans); font-size: 10px; font-weight: 600; line-height: 1.5; }
-.legacy-garcia-logo { width: 130px; height: 44px; object-fit: contain; object-position: right center; }
+/* The source asset has almost no internal padding (ink fills ~99% of its
+   canvas width), unlike the SLB mark, which bakes in padding and a card
+   background. Equal-looking boxes render very unequal ink, so this box is
+   sized to the rendered wordmark, not to match SLB's box dimensions. */
+.legacy-garcia-logo { width: 100px; height: 34px; object-fit: contain; object-position: right center; }
 .legacy-dag-logo { width: 64px; height: 64px; object-fit: cover; border-radius: 50%; }
 .legacy-header-controls { display: flex; flex: 1 1 100%; flex-direction: column; align-items: stretch; gap: 8px; }
 .legacy-header-actions { display: flex; align-items: center; justify-content: flex-end; gap: var(--header-action-gap); }
@@ -785,7 +789,11 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
     width: auto;
   }
   .firm-link .firm-logo { height: 44px !important; width: auto; max-width: min(46vw, 168px); }
-  .legacy-garcia-logo { height: 36px !important; object-position: right center; }
+  /* Both properties need !important to beat the shared rule below, but height
+     also needs to match its specificity (two classes) — .legacy-garcia-logo
+     alone is one class and loses to .firm-link .firm-logo on a tied
+     !important even with a later source position. */
+  .firm-link .legacy-garcia-logo { width: 100px !important; height: 28px !important; object-position: right center; }
   .legacy-dag-logo { width: 44px !important; height: 44px !important; max-width: none; }
   :root { --header-action-gap: 10px; }
   .legacy-header-actions { width: 100%; justify-content: stretch; }
@@ -840,7 +848,14 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
   .legacy-header-inner { gap: 6px 8px; }
   .legacy-opposing-counsel { gap: 6px; }
   .firm-link .firm-logo { height: 36px !important; max-width: min(48vw, 140px); }
-  .legacy-garcia-logo { height: 30px !important; }
+  /* Width doesn't need repeating: the ≤760px rule's width:100px!important
+     still matches here (both blocks are active below 520px) and nothing
+     later overrides it. Height does need repeating, at matching specificity
+     (.firm-link .legacy-garcia-logo, not just .legacy-garcia-logo) — the
+     generic .firm-link .firm-logo rule at this breakpoint is also
+     two-class-!important and comes right before this, so anything weaker
+     loses to it regardless of being later in the file. */
+  .firm-link .legacy-garcia-logo { height: 23px !important; }
   .legacy-dag-logo { width: 36px !important; height: 36px !important; }
   .legacy-clock-units { transform: scale(.88); transform-origin: left center; }
   .legacy-deadline-description { width: 100%; }
