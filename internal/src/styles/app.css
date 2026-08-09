@@ -169,8 +169,12 @@ a { color: inherit; }
 .firm-external-hint { opacity: 0; transform: translateY(-2px); transition: opacity .15s ease, transform .15s ease; color: var(--gold); font-size: 8px; font-weight: 700; letter-spacing: .5px; line-height: 1.5; text-transform: uppercase; }
 .firm-link:hover .firm-external-hint { opacity: 1; transform: translateY(0); }
 .legacy-counsel-names { color: #495467; text-align: right; font-family: var(--font-sans); font-size: 10px; font-weight: 600; line-height: 1.5; }
-.legacy-garcia-logo { width: 130px; height: 44px; object-fit: contain; object-position: right center; }
-.legacy-dag-logo { width: 64px; height: 64px; object-fit: cover; border-radius: 50%; }
+/* Fixed boxes for every theme — dark/light artwork may differ in aspect ratio,
+   but the header must not reflow when the theme toggle swaps the src. */
+.firm-logo { flex-shrink: 0; display: block; object-fit: contain; object-position: right center; }
+.legacy-slb-logo { width: 118px; height: 62px; }
+.legacy-garcia-logo { width: 130px; height: 44px; }
+.legacy-dag-logo { width: 64px; height: 64px; object-fit: cover; border-radius: 50%; object-position: center; }
 .legacy-header-controls { display: flex; flex: 1 1 100%; flex-direction: column; align-items: stretch; gap: 8px; }
 .legacy-header-actions { display: flex; align-items: center; justify-content: flex-end; gap: var(--header-action-gap); }
 .legacy-search-trigger { display: flex; align-items: center; justify-content: space-between; gap: 18px; min-width: 240px; min-height: var(--header-theme-size); border: 1px solid; border-radius: 8px; padding: 6px 10px 6px 13px; cursor: pointer; font-family: var(--font-sans); font-size: 12px; text-align: left; }
@@ -787,9 +791,9 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
     align-items: center;
     width: auto;
   }
-  .firm-link .firm-logo { height: 44px !important; width: auto; max-width: min(46vw, 168px); }
-  .legacy-garcia-logo { height: 36px !important; object-position: right center; }
-  .legacy-dag-logo { width: 44px !important; height: 44px !important; max-width: none; }
+  .legacy-slb-logo { width: 84px; height: 44px; }
+  .legacy-garcia-logo { width: 106px; height: 36px; }
+  .legacy-dag-logo { width: 44px; height: 44px; }
   :root { --header-action-gap: 10px; }
   .legacy-header-actions { width: 100%; justify-content: stretch; }
   .legacy-search-trigger { min-width: 0; min-height: 44px; flex: 1; }
@@ -842,9 +846,9 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
   .legacy-versus { font-size: clamp(4rem, 24vw, 5.5rem); transform: translate(-18px, 2px); }
   .legacy-header-inner { gap: 6px 8px; }
   .legacy-opposing-counsel { gap: 6px; }
-  .firm-link .firm-logo { height: 36px !important; max-width: min(48vw, 140px); }
-  .legacy-garcia-logo { height: 30px !important; }
-  .legacy-dag-logo { width: 36px !important; height: 36px !important; }
+  .legacy-slb-logo { width: 68px; height: 36px; }
+  .legacy-garcia-logo { width: 88px; height: 30px; }
+  .legacy-dag-logo { width: 36px; height: 36px; }
   .legacy-clock-units { transform: scale(.88); transform-origin: left center; }
   .legacy-deadline-description { width: 100%; }
   .legacy-search-trigger { gap: 10px; padding-inline: 12px; }
