@@ -1,5 +1,6 @@
 import { lazy, Suspense, useCallback } from "react";
 import { Navigate, Route, Routes, useNavigate } from "react-router";
+import { Analytics } from "@vercel/analytics/react";
 import { ShellLayout } from "./components/layout/ShellLayout";
 import { RouteLoading } from "./components/ui/AsyncState";
 import { usePortfolioUI } from "./context/PortfolioUIContext";
@@ -41,26 +42,29 @@ function DamagesRoute() {
 
 export default function App() {
   return (
-    <Suspense fallback={<RouteLoading label="Loading portfolio section" />}>
-      <Routes>
-        <Route element={<ShellLayout />}>
-          <Route index element={<DashboardRoute />} />
-          <Route path="census" element={<CensusRoute />} />
-          <Route path="calendar" element={<Navigate to={ROUTES.timeline} replace />} />
-          <Route path="matters" element={<MattersRoute />} />
-          <Route path="matters/:matterNumber" element={<MatterDetailPage />} />
-          <Route path="cross-matter" element={<CrossMatterTab />} />
-          <Route path="timeline" element={<TimelineRoute />} />
-          <Route path="deadlines" element={<DeadlineCalculatorTab />} />
-          <Route path="damages" element={<DamagesRoute />} />
-          <Route path="theories" element={<TheoriesTab />} />
-          <Route path="cost-of-counsel" element={<CostOfCounselTab />} />
-          <Route path="outcomes" element={<OutcomesTab />} />
-          <Route path="judicial-opinions" element={<JudicialOpinionsTab />} />
-          <Route path="notable-quotes" element={<NotableQuotesTab />} />
-          <Route path="*" element={<Navigate to={ROUTES.dashboard} replace />} />
-        </Route>
-      </Routes>
-    </Suspense>
+    <>
+      <Suspense fallback={<RouteLoading label="Loading portfolio section" />}>
+        <Routes>
+          <Route element={<ShellLayout />}>
+            <Route index element={<DashboardRoute />} />
+            <Route path="census" element={<CensusRoute />} />
+            <Route path="calendar" element={<Navigate to={ROUTES.timeline} replace />} />
+            <Route path="matters" element={<MattersRoute />} />
+            <Route path="matters/:matterNumber" element={<MatterDetailPage />} />
+            <Route path="cross-matter" element={<CrossMatterTab />} />
+            <Route path="timeline" element={<TimelineRoute />} />
+            <Route path="deadlines" element={<DeadlineCalculatorTab />} />
+            <Route path="damages" element={<DamagesRoute />} />
+            <Route path="theories" element={<TheoriesTab />} />
+            <Route path="cost-of-counsel" element={<CostOfCounselTab />} />
+            <Route path="outcomes" element={<OutcomesTab />} />
+            <Route path="judicial-opinions" element={<JudicialOpinionsTab />} />
+            <Route path="notable-quotes" element={<NotableQuotesTab />} />
+            <Route path="*" element={<Navigate to={ROUTES.dashboard} replace />} />
+          </Route>
+        </Routes>
+      </Suspense>
+      <Analytics />
+    </>
   );
 }
