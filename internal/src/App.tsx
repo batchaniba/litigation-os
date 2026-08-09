@@ -1,6 +1,7 @@
 import { lazy, Suspense, useCallback } from "react";
 import { Navigate, Route, Routes, useNavigate } from "react-router";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import { ShellLayout } from "./components/layout/ShellLayout";
 import { RouteLoading } from "./components/ui/AsyncState";
 import { usePortfolioUI } from "./context/PortfolioUIContext";
@@ -65,6 +66,7 @@ export default function App() {
         </Routes>
       </Suspense>
       <Analytics />
+      <SpeedInsights />
     </>
   );
 }
