@@ -100,5 +100,47 @@ Everything else — roughly 125 of 147 citations, including the load-bearing DMV
 
 ---
 
-*Report prepared: July 12, 2026*
-*Methodology: five parallel citation-extraction and web-verification passes across the litigant's motion practice (complaints, FACs, oppositions, replies, demurrers, writ briefs, habeas petitions) in 18 of 24 matters with uploaded pleadings, cross-verified against CourtListener, Justia, Google Scholar, Casetext, and official California statutory text.*
+## Round 2 — Matter 28 QI research (Aug. 9, 2026)
+
+See PR #491. Six QI research PDFs filed into `matter-28/research/`. Four problems in that batch: *Jessie* (real, wrong proposition), *Chubb* (wrong court and proposition), *Estate of Esche* (real, holding is jurisdictional), and *Tsao* printed as `98 F.3d 1128` (missing digit; correct is `698 F.3d 1128`). *Halvorsen* and *Richardson* verified; *Filarsky* left unverified pending a later pass.
+
+---
+
+## Round 3 — Matter 28 thorough pass (Aug. 9, 2026)
+
+Expanded Matter 28 from the 7 Round-2 entries to **44 audited citations**, covering the filed complaint, the protective-order motion, and the remaining QI / clearly-established-law research authorities. Method: WebSearch against primary-source URLs after reconfirming positive (*Richardson*) and negative (*In re Leman*) controls. CourtListener / case.law / Justia direct fetches remain egress-blocked.
+
+### Highest-priority — errors in *filed* Matter 28 papers
+
+1. **`Dunford v. Rovi Corp., 2015 WL 13752958 (N.D. Cal. 2015)`** — Motion for Protective Order. **NOT_FOUND.** No such decision. N.D. Cal. 2015 Rovi litigation is *Netflix v. Rovi*, a patent case. The cross-use proposition is correctly stated in *Foltz*, which the motion already cites — drop *Dunford*.
+2. **`Condit v. Dunne, 225 F.R.D. 100, 105 (S.D.N.Y. 2004)`** — same motion. **MISCITED.** Real case, wrong quote. The "fruits of one litigation" sentence is from *Foltz*, 331 F.3d at 1131, not *Condit* (a defamation discovery ruling about sexual-relationship questioning). Re-attribute to *Foltz*.
+
+Filed complaint cites (*Patsy*, *West*, *Lewis*) check out.
+
+### Research-memo problems found this round
+
+| Citation | Status | Problem |
+|---|---|---|
+| `Collins v. Moore, 81 F.3d 167 (9th Cir. 1996)` | NOT_FOUND | Table page hosts unrelated unpublished dispositions; no *Collins v. Moore* sex-offender case there. |
+| `Chavez v. Robinson, 12 F.4th 978 (9th Cir. 2021)` | MISCHARACTERIZED | Real, but the Ninth Circuit *affirmed* dismissal — it did not "reverse a dismissal on QI grounds." |
+| `United States v. Johnson, 2012 WL 5279672` | MISCITED | Real as 697 F.3d 1249 / No. 11-30256; correct WL is **2012 WL 5328597**. |
+| `Johnson v. City of Grants Pass, 50 F.4th 787` | MISCITED | Real Eighth Amendment camping case; does not support a due-process "nominal and illusory procedures" proposition. |
+| `Edmo v. Corizon, Inc., 935 F.3d 757` | MISCHARACTERIZED | Real, but the circuit holding is individualized deliberate indifference, not a per se anti-blanket-policy rule. |
+
+### What checked out
+
+Load-bearing threshold and clearly-established authorities verified this round include *Neal v. Shimoda*, *Morrissey*, *Foucha*, *Vitek*, *Wyatt*, *Jensen*, *Clement*, *Danielson*, *Ace Beverage*, *Franklin v. Fox*, *Williams* / *Weber* / *Cope*, *Sanchez-Gomez* (correctly flagged as vacated), *Biggs*, *Luca* (adverse, unpublished), *Foltz*, *Phillips*, and *Filarsky* (upgraded from Round 2's UNVERIFIED).
+
+**Matter 28 scorecard after Round 3:** 44 checked — 33 VERIFIED, 6 MISCITED, 2 NOT_FOUND, 3 MISCHARACTERIZED.
+
+### Fix-before-next-filing (Matter 28)
+
+1. **Strip *Dunford* and re-attribute the Condit quote to *Foltz* in the protective-order motion** before it is relied on at a hearing.
+2. **Do not brief *Chavez v. Robinson* as a QI-denial reversal** — it affirmed dismissal.
+3. **Remove *Collins v. Moore* and *Jessie* / *Chubb*** from any opposition draft built off these memos.
+4. **Correct *Tsao* to 698 F.3d and *Johnson* to 697 F.3d / 2012 WL 5328597.**
+
+---
+
+*Report prepared: July 12, 2026; Round 2/3 Matter 28 additions Aug. 9, 2026*
+*Methodology: five parallel citation-extraction and web-verification passes across the litigant's motion practice (complaints, FACs, oppositions, replies, demurrers, writ briefs, habeas petitions) in 18 of 24 matters with uploaded pleadings, cross-verified against CourtListener, Justia, Google Scholar, Casetext, and official California statutory text. Round 2–3 Matter 28 work used WebSearch against primary-source URLs after positive/negative method controls, because this environment's egress proxy blocks direct CourtListener / case.law / Justia fetches.*
