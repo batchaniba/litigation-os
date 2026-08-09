@@ -751,8 +751,11 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
   .matter-summary-item:nth-last-child(-n+2) { border-bottom: 0; }
 }
 
-@media (max-width: 760px) {
-  :root { --space-page: 16px; }
+/* Everything the header needs to stop being a desktop row. This used to start
+   at 760px, which left 761-980px with no treatment at all: .legacy-opposing-counsel
+   is flex-shrink: 0, so the header row could not compress and dragged the whole
+   page ~177px wider than the viewport on tablets and small laptops. */
+@media (max-width: 980px) {
   .legacy-header-inner {
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
@@ -831,7 +834,6 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
   .legacy-header-actions { width: 100%; justify-content: stretch; }
   .legacy-search-trigger { min-width: 0; min-height: 44px; flex: 1; }
   .legacy-theme-toggle { min-width: 44px; min-height: 44px; flex-shrink: 0; }
-  .matters-search-endcap { display: block; }
   .legacy-nav-menu-toggle { display: inline-flex; width: 100%; min-height: 44px; }
   .legacy-navigation {
     display: none;
@@ -850,6 +852,11 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
     font-size: 12px;
     line-height: 1.25;
   }
+}
+
+@media (max-width: 760px) {
+  :root { --space-page: 16px; }
+  .matters-search-endcap { display: block; }
   .legacy-deadline-row { justify-content: flex-start; padding: 10px 76px 10px 16px; gap: 14px; }
   .legacy-deadline-display { justify-content: flex-start; gap: 14px; width: 100%; }
   .legacy-deadline-description { text-align: left; }
@@ -903,9 +910,15 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
   .calendar-cell { min-height: 48px; }
 }
 
-@media (min-width: 761px) {
+/* Paired with the 980px header block above — the section menu is the mobile
+   affordance, so it must stay available for the whole range where the header
+   is collapsed. */
+@media (min-width: 981px) {
   .legacy-nav-menu-toggle { display: none !important; }
   .legacy-navigation { display: flex !important; }
+}
+
+@media (min-width: 761px) {
   .matters-filters-toggle { display: none !important; }
   .matters-filter-chips { display: flex !important; }
   .saved-views { display: block; }

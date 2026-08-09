@@ -33,7 +33,9 @@ export function PortfolioHeader({
 
   useEffect(() => {
     const onResize = () => {
-      if (window.matchMedia("(min-width: 761px)").matches) setMenuOpen(false);
+      // Must track the header's collapse breakpoint in app.css (min-width: 981px),
+      // or the menu closes itself at widths where it is still the only nav.
+      if (window.matchMedia("(min-width: 981px)").matches) setMenuOpen(false);
     };
     window.addEventListener("resize", onResize);
     return () => window.removeEventListener("resize", onResize);
