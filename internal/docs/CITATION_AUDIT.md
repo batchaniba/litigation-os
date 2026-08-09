@@ -18,7 +18,9 @@ Five parallel analysis passes read the actual motion-practice PDFs (not case sum
 | D — Individual-defendant pairs | 13, 14, 16, 17, 18, 21 | 22 |
 | E — Employment/consumer/U-visa | 12, 22, 23, 24 | 33 |
 
-**Total: 147 citations checked — 125 VERIFIED, 10 MISCITED, 11 NOT_FOUND, 1 MISQUOTED.**
+**July baseline: 147 citations checked — 125 VERIFIED, 10 MISCITED, 11 NOT_FOUND, 1 MISQUOTED.**
+
+**Current portfolio audit (after Matter 28 Rounds 2–3): 191 citations — 158 VERIFIED, 16 MISCITED, 13 NOT_FOUND, 3 MISCHARACTERIZED, 1 MISQUOTED.** Matter 28 alone accounts for 44 of those.
 
 Several NOT_FOUND entries are documentation gaps (no pleading uploaded for that matter), not citation errors — those are broken out separately below. After removing gaps, the real problem count is smaller but still consequential.
 
