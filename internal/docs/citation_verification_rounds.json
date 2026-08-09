@@ -1,0 +1,507 @@
+{
+  "round": "2026-08-09 Round 4 \u2014 portfolio P0 plaintiff-only queue (existence + reporter form; characterization where context clearly mismatches)",
+  "method": "WebSearch against primary-source URLs after positive control (Richardson v. McKnight, 521 U.S. 399 \u2014 hit govinfo.gov U.S. Reports PDF) and negative control (In re Leman, 66 Cal.App.5th 200 \u2014 no matching decision; only Lemanuel C. / Marriage of Lemen noise). CourtListener/case.law/Justia direct fetches remain egress-blocked. Statuses rest on search-returned summaries plus primary URLs. Characterization flags applied when index sample context attributes a proposition the opinion does not support.",
+  "controls": {
+    "positive": {
+      "citation": "Richardson v. McKnight, 521 U.S. 399 (1997)",
+      "result": "PASS",
+      "sources": [
+        "https://www.govinfo.gov/content/pkg/USREPORTS-521/pdf/USREPORTS-521-399.pdf",
+        "https://supreme.justia.com/cases/federal/us/521/399/"
+      ]
+    },
+    "negative": {
+      "citation": "In re Leman, 66 Cal.App.5th 200",
+      "result": "PASS (not found)",
+      "notes": "No decision at that cite; search surfaces In re Lemanuel C. and In re Marriage of Lemen instead."
+    }
+  },
+  "results": [
+    {
+      "citation": "Mercer v. DMV, 53 Cal. 3d 753 (1991)",
+      "status": "VERIFIED",
+      "notes": "Real as Mercer v. Department of Motor Vehicles, 53 Cal.3d 753 (1991). Volitional vehicle movement / lawful DUI arrest for implied-consent refusal. Matches DUI/DMV briefing use.",
+      "sources": [
+        "https://scocal.stanford.edu/opinion/mercer-v-department-motor-vehicles-31352"
+      ]
+    },
+    {
+      "citation": "Tidewater Marine Western, Inc. v. Bradshaw, 14 Cal. 4th 557 (1996)",
+      "status": "VERIFIED",
+      "notes": "Real at 14 Cal.4th 557. APA / underground-regulation holding is load-bearing for agency-rule challenges; confirm the briefed proposition is the APA point, not a freestanding 'agency may not add requirements' paraphrase without the APA frame.",
+      "sources": [
+        "https://scocal.stanford.edu/opinion/tidewater-marine-western-inc-v-bradshaw-31783"
+      ]
+    },
+    {
+      "citation": "California Highway Patrol v. Superior Court, 158 Cal.App. 4th 726 (2008)",
+      "status": "MISCHARACTERIZED",
+      "notes": "Real at 158 Cal.App.4th 726 (Department of the California Highway Patrol v. Superior Court) \u2014 motorcycle-helmet 'fix-it' ticket / correctable-offense dispute. Index context attributes a California administrative-law 'taint' doctrine. That proposition is not this case. Do not brief as taint authority.",
+      "sources": [
+        "https://www.syfert.com/california/cases/158-cal-app-4th-726/department-of-california-highway-patrol-v-superior-court"
+      ]
+    },
+    {
+      "citation": "People v. Rizo, 22 Cal. 4th 681 (2000)",
+      "status": "MISCHARACTERIZED",
+      "notes": "Real at 22 Cal.4th 681 \u2014 Penal Code \u00a7 113 / Proposition 187 false-documents / factual-impossibility case. Index context attributes a surplusage / 'up to' statutory-construction holding. Wrong proposition. Do not brief Rizo for surplusage.",
+      "sources": [
+        "https://scocal.stanford.edu/opinion/people-v-rizo-32111"
+      ]
+    },
+    {
+      "citation": "Stump v. Sparkman, 435 U.S. 349 (1978)",
+      "status": "VERIFIED",
+      "notes": "Canonical absolute judicial immunity decision. Matches immunity briefing.",
+      "sources": [
+        "https://supreme.justia.com/cases/federal/us/435/349/"
+      ]
+    },
+    {
+      "citation": "Pomona Police Officers' Ass'n v. City of Pomona, 58 Cal.App. 4th 578 (1997)",
+      "status": "MISCHARACTERIZED",
+      "notes": "Real at 58 Cal.App.4th 578 \u2014 PERS retirement-conversion option / mandate for economic benefits. Index context uses it for 'agency exercises discretion under an unlawful standard' mandate doctrine. That is not Pomona's holding. Replace with a true mandate/abuse-of-discretion authority.",
+      "sources": [
+        "https://app.midpage.ai/document/pomona-police-officers-ass-n-2272474"
+      ]
+    },
+    {
+      "citation": "Pomona Police Officers\u2019 Ass\u2019n v. City of Pomona, 58 Cal.App. 4th 578 (1997)",
+      "status": "MISCHARACTERIZED",
+      "notes": "Duplicate index row (curly apostrophe). Same problem as straight-apostrophe Pomona entry.",
+      "sources": [
+        "https://app.midpage.ai/document/pomona-police-officers-ass-n-2272474"
+      ]
+    },
+    {
+      "citation": "Lungren v. Deukmejian, 45 Cal. 3d 727 (1988)",
+      "status": "VERIFIED",
+      "notes": "Real at 45 Cal.3d 727 \u2014 constitutional confirmation of gubernatorial nominee. Existence OK; if briefed solely for surplusage canons, pin to the construction discussion carefully or prefer a cleaner surplusage case.",
+      "sources": [
+        "https://scocal.stanford.edu/opinion/lungren-v-deukmejian-31008"
+      ]
+    },
+    {
+      "citation": "Kavanaugh v. West Sonoma County Union High School, 29 Cal. 4th 911 (2003)",
+      "status": "VERIFIED",
+      "notes": "Real as Kavanaugh v. West Sonoma County Union High School Dist., 29 Cal.4th 911 (2003).",
+      "sources": [
+        "https://scocal.stanford.edu/opinion/kavanaugh-v-west-sonoma-county-union-high-school-dist-32304"
+      ]
+    },
+    {
+      "citation": "AIDS Healthcare Foundation v. L.A. County Dept, 197 Cal.App. 4th 693 (2011)",
+      "status": "VERIFIED",
+      "notes": "Real as AIDS Healthcare Foundation v. Los Angeles County Department of Public Health, 197 Cal.App.4th 693 (2011).",
+      "sources": [
+        "https://case-law.vlex.com/vid/aids-healthcare-found-v-886149977"
+      ]
+    },
+    {
+      "citation": "AIDS Healthcare Foundation v. Los Angeles County Dept, 197 Cal.App. 4th 693 (2011)",
+      "status": "VERIFIED",
+      "notes": "Duplicate fuller-caption index row; same case as AIDS Healthcare Foundation v. L.A. County Dept.",
+      "sources": [
+        "https://case-law.vlex.com/vid/aids-healthcare-found-v-886149977"
+      ]
+    },
+    {
+      "citation": "Devereaux v. Abbey, 263 F. 3d 1070",
+      "status": "VERIFIED",
+      "notes": "Real at 263 F.3d 1070 (9th Cir. 2001) (en banc). Add year (2001). Fabricated-evidence due-process right recognized; plaintiff lost on the facts.",
+      "sources": [
+        "https://law.resource.org/pub/us/case/reporter/F3/263/263.F3d.1070.97-35781.html"
+      ]
+    },
+    {
+      "citation": "Forrester v. White, 484 U.S. 219 (1988)",
+      "status": "VERIFIED",
+      "notes": "Real \u2014 absolute immunity is function-based; employment decisions by judges are not judicial acts. Matches functional-immunity briefing.",
+      "sources": [
+        "https://www.govinfo.gov/content/pkg/USREPORTS-484/pdf/USREPORTS-484-219.pdf"
+      ]
+    },
+    {
+      "citation": "Home v. Dep't of Health Care Services, 204 Cal.App. 4th 676 (2012)",
+      "status": "MISCITED",
+      "notes": "Reporter pin 204 Cal.App.4th 676 is real, but the case name is wrong. Correct: California Ass'n for Health Services at Home v. State Department of Health Care Services, 204 Cal.App.4th 676 (2012).",
+      "sources": [
+        "https://app.midpage.ai/case/california-ass-n-for-health-5666416"
+      ]
+    },
+    {
+      "citation": "Home v. Dep\u2019t of Health Care Services, 204 Cal.App. 4th 676 (2012)",
+      "status": "MISCITED",
+      "notes": "Duplicate curly-apostrophe row; same miscaption as Home v. Dep't of Health Care Services.",
+      "sources": [
+        "https://app.midpage.ai/case/california-ass-n-for-health-5666416"
+      ]
+    },
+    {
+      "citation": "Hotel & Motel Ass'n v. Industrial Welfare Comm'n, 25 Cal. 3d 200 (1979)",
+      "status": "VERIFIED",
+      "notes": "Real as California Hotel & Motel Assn. v. Industrial Welfare Com., 25 Cal.3d 200 (1979).",
+      "sources": [
+        "https://scocal.stanford.edu/opinion/california-hotel-motel-assn-v-industrial-welfare-com-30541"
+      ]
+    },
+    {
+      "citation": "In re Hudson, 1 Cal.App. 4th 1 (2006)",
+      "status": "MISCITED",
+      "notes": "Real case is In re Hudson, 143 Cal.App.4th 1 (2006) \u2014 computer/Internet parole condition. Printed volume '1' is wrong (should be 143). Also check proposition: Hudson is not a general rehabilitation/treatment-completion authority.",
+      "sources": [
+        "https://case-law.vlex.com/vid/in-re-hudson-no-893167175"
+      ]
+    },
+    {
+      "citation": "In re Muszalski, 52 Cal.App. 3d 500 (1975)",
+      "status": "VERIFIED",
+      "notes": "Real at 52 Cal.App.3d 500 \u2014 habeas / exhaustion in parole context.",
+      "sources": [
+        "https://www.syfert.com/california/cases/52-cal-app-3d-500/in-re-muszalski"
+      ]
+    },
+    {
+      "citation": "Morris v. Williams, 67 Cal. 2d 733 (1967)",
+      "status": "VERIFIED",
+      "notes": "Real at 67 Cal.2d 733 \u2014 agency regulation inconsistent with statute.",
+      "sources": [
+        "https://scocal.stanford.edu/opinion/morris-v-williams-32900"
+      ]
+    },
+    {
+      "citation": "People v. Superior Court, 25 Cal. 4th 703 (2001)",
+      "status": "MISCITED",
+      "notes": "Already flagged in July audit as People v. Superior Court (Laff), 25 Cal.4th 703 \u2014 real case, wrong proposition for ministerial-duty / mandate use in Matter 9. Keep MISCITED.",
+      "sources": [
+        "citation_audit.json July 12 entry"
+      ]
+    },
+    {
+      "citation": "Rodriguez v. Solis, 1 Cal.App. 4th 495 (1991)",
+      "status": "VERIFIED",
+      "notes": "Real at 1 Cal.App.4th 495 \u2014 mandate / discretion principles.",
+      "sources": [
+        "https://case-law.vlex.com/vid/rodriguez-v-solis-no-891978747"
+      ]
+    },
+    {
+      "citation": "See Tameny v. Atlantic Richfield Co, 27 Cal. 3d 167 (1980)",
+      "status": "VERIFIED",
+      "notes": "Real at Tameny v. Atlantic Richfield Co., 27 Cal.3d 167 (1980). Index 'See ' prefix is stylistic; authority is sound for Tameny wrongful-termination / public-policy claims.",
+      "sources": [
+        "https://scocal.stanford.edu/opinion/tameny-v-atlantic-richfield-co-28166"
+      ]
+    },
+    {
+      "citation": "Vlandis v. Kline, 412 U.S. 441 (1973)",
+      "status": "VERIFIED",
+      "notes": "Real \u2014 irrebuttable presumptions / due process.",
+      "sources": [
+        "https://www.law.cornell.edu/supremecourt/text/412/441"
+      ]
+    },
+    {
+      "citation": "Brown v. Illinois, 422 U.S. 590 (1975)",
+      "status": "VERIFIED",
+      "notes": "Real \u2014 attenuation / fruit of unlawful arrest.",
+      "sources": [
+        "https://supreme.justia.com/cases/federal/us/422/590/"
+      ]
+    },
+    {
+      "citation": "Brown v. Texas, 443 U.S. 47 (1979)",
+      "status": "VERIFIED",
+      "notes": "Real \u2014 stop requires reasonable suspicion.",
+      "sources": [
+        "https://www.law.cornell.edu/supremecourt/text/443/47"
+      ]
+    },
+    {
+      "citation": "Chism v. Washington State, 661 F. 3d 380",
+      "status": "VERIFIED",
+      "notes": "Real at 661 F.3d 380 (9th Cir. 2011). Add year.",
+      "sources": [
+        "https://app.midpage.ai/document/chism-v-washington-state-616836"
+      ]
+    },
+    {
+      "citation": "Florida v. Royer, 460 U.S. 491 (1983)",
+      "status": "VERIFIED",
+      "notes": "Real \u2014 scope of Terry stop / consent.",
+      "sources": [
+        "https://www.law.cornell.edu/supremecourt/text/460/491"
+      ]
+    },
+    {
+      "citation": "JKH Enterprises, Inc. v. Dept. of Industrial Relations, 142 Cal.App. 4th 1046 (2006)",
+      "status": "VERIFIED",
+      "notes": "Real at 142 Cal.App.4th 1046.",
+      "sources": [
+        "https://www.dir.ca.gov/dlse/JKH_Pub_Dec.pdf"
+      ]
+    },
+    {
+      "citation": "McDonnell v. DMV, 45 Cal.App. 3d 653 (1975)",
+      "status": "VERIFIED",
+      "notes": "Real as McDonnell v. Department of Motor Vehicles, 45 Cal.App.3d 653 (1975).",
+      "sources": [
+        "https://law.justia.com/cases/california/court-of-appeal/3d/45/653.html"
+      ]
+    },
+    {
+      "citation": "Mosquito & Vector Control Dist. v. Cal. PERB, 35 Cal. 4th 1072 (2005)",
+      "status": "VERIFIED",
+      "notes": "Real as Coachella Valley Mosquito & Vector Control District v. California PERB, 35 Cal.4th 1072 (2005).",
+      "sources": [
+        "https://scocal.stanford.edu/opinion/coachella-valley-etc-v-perb-33535"
+      ]
+    },
+    {
+      "citation": "Payton v. New York, 445 U.S. 573 (1980)",
+      "status": "VERIFIED",
+      "notes": "Real \u2014 warrantless home entry to arrest.",
+      "sources": [
+        "https://www.law.cornell.edu/supremecourt/text/445/573"
+      ]
+    },
+    {
+      "citation": "People v. Medina, 6 Cal. 3d 484 (1972)",
+      "status": "VERIFIED",
+      "notes": "Real at 6 Cal.3d 484.",
+      "sources": [
+        "https://scocal.stanford.edu/opinion/people-v-medina-22887"
+      ]
+    },
+    {
+      "citation": "People v. Torres, 173 Cal.App. 4th 977 (2009)",
+      "status": "VERIFIED",
+      "notes": "Real at 173 Cal.App.4th 977.",
+      "sources": [
+        "https://law.justia.com/cases/california/court-of-appeal/2009/d052887/"
+      ]
+    },
+    {
+      "citation": "Swift v. California, 384 F. 3d 1184",
+      "status": "VERIFIED",
+      "notes": "Real at 384 F.3d 1184 (9th Cir. 2004). Add year. Parole officers lack absolute immunity for investigative/arrest functions distinct from grant/deny/revoke.",
+      "sources": [
+        "https://hallapproved.com/us/cases/ca9/2004/787920/"
+      ]
+    },
+    {
+      "citation": "Swift v. Christian, 384 F. 3d 1184",
+      "status": "MISCITED",
+      "notes": "Same opinion as Swift v. California, 384 F.3d 1184 (9th Cir. 2004); 'Christian' is a defendant parole officer, not the case caption. Cite as Swift v. California.",
+      "sources": [
+        "https://hallapproved.com/us/cases/ca9/2004/787920/"
+      ]
+    },
+    {
+      "citation": "Caperton v. A.T. Massey Coal Co, 556 U.S. 868 (2009)",
+      "status": "VERIFIED",
+      "notes": "Real \u2014 judicial bias / due process.",
+      "sources": [
+        "https://supreme.justia.com/cases/federal/us/556/868/"
+      ]
+    },
+    {
+      "citation": "Collins v. Virginia, 584 U.S. 586 (2018)",
+      "status": "VERIFIED",
+      "notes": "Real \u2014 automobile exception / curtilage.",
+      "sources": [
+        "https://www.law.cornell.edu/supremecourt/text/16-1027"
+      ]
+    },
+    {
+      "citation": "Costanich v. Dep't of Social, 627 F. 3d 1101",
+      "status": "VERIFIED",
+      "notes": "Real as Costanich v. Department of Social and Health Services, 627 F.3d 1101 (9th Cir. 2010). Add year.",
+      "sources": [
+        "https://hallapproved.com/us/cases/ca9/2010/180346/"
+      ]
+    },
+    {
+      "citation": "Franks v. Delaware, 438 U.S. 154 (1978)",
+      "status": "VERIFIED",
+      "notes": "Real \u2014 false statements in warrant affidavits.",
+      "sources": [
+        "https://www.law.cornell.edu/supremecourt/text/438/154"
+      ]
+    },
+    {
+      "citation": "Galbraith v. County of Santa Clara, 307 F. 3d 1119",
+      "status": "VERIFIED",
+      "notes": "Real at 307 F.3d 1119 (9th Cir. 2002). Add year.",
+      "sources": [
+        "https://syfert.com/federal/circuits/cases/307-f-3d-1119/galbraith-v-county-of-santa-clara"
+      ]
+    },
+    {
+      "citation": "In re Murchison, 349 U.S. 133 (1955)",
+      "status": "VERIFIED",
+      "notes": "Real \u2014 neutral decisionmaker / due process.",
+      "sources": [
+        "https://www.law.cornell.edu/supremecourt/text/349/133"
+      ]
+    },
+    {
+      "citation": "Music v. Dep't of Motor Vehicles, 221 Cal.App. 3d 841 (1990)",
+      "status": "VERIFIED",
+      "notes": "Real as Music v. Department of Motor Vehicles, 221 Cal.App.3d 841 (1990).",
+      "sources": [
+        "https://law.justia.com/cases/california/court-of-appeal/3d/221/841.html"
+      ]
+    },
+    {
+      "citation": "See Hill v. National Collegiate Athletic Assn, 7 Cal. 4th 1 (1994)",
+      "status": "VERIFIED",
+      "notes": "Real at Hill v. National Collegiate Athletic Assn., 7 Cal.4th 1 (1994) \u2014 California constitutional privacy.",
+      "sources": [
+        "https://scocal.stanford.edu/opinion/hill-v-national-collegiate-athletic-assn-31368"
+      ]
+    },
+    {
+      "citation": "Ballentine v. Tucker, 28 F. 4th 54",
+      "status": "VERIFIED",
+      "notes": "Real at 28 F.4th 54 (9th Cir. 2022). Add year.",
+      "sources": [
+        "https://cdn.ca9.uscourts.gov/datastore/opinions/2022/03/08/20-16805.pdf"
+      ]
+    },
+    {
+      "citation": "Beck v. Ohio, 379 U.S. 89 (1964)",
+      "status": "VERIFIED",
+      "notes": "Real \u2014 probable cause for arrest.",
+      "sources": [
+        "https://www.law.cornell.edu/supremecourt/text/379/89"
+      ]
+    },
+    {
+      "citation": "Burrell v. Jackson, 2003 WL 23545858",
+      "status": "NOT_FOUND",
+      "notes": "No decision matching Burrell v. Jackson, 2003 WL 23545858 for absolute immunity of a hearing officer. Do not brief. Use Forrester / Stump / Swift / Miller v. Gammie functional-immunity line instead.",
+      "sources": []
+    },
+    {
+      "citation": "City of Moorpark v. Superior Court, 18 Cal. 4th 1143 (1998)",
+      "status": "VERIFIED",
+      "notes": "Real at 18 Cal.4th 1143 (Dillon).",
+      "sources": [
+        "https://scocal.stanford.edu/opinion/city-moorpark-v-superior-court-dillon-31891"
+      ]
+    },
+    {
+      "citation": "England v. Louisiana State Bd, 375 U.S. 411 (1964)",
+      "status": "VERIFIED",
+      "notes": "Real as England v. Louisiana State Board of Medical Examiners, 375 U.S. 411 (1964) \u2014 England reservation.",
+      "sources": [
+        "https://www.law.cornell.edu/supremecourt/text/375/411"
+      ]
+    },
+    {
+      "citation": "Gantt v. Sentry Insurance, 1 Cal. 4th 1083 (1992)",
+      "status": "VERIFIED",
+      "notes": "Real at 1 Cal.4th 1083 \u2014 Tameny public-policy wrongful termination elements.",
+      "sources": [
+        "https://scocal.stanford.edu/opinion/gantt-v-sentry-insurance-31288"
+      ]
+    },
+    {
+      "citation": "In re Stevens, 119 Cal.App. 4th 1228 (2004)",
+      "status": "VERIFIED",
+      "notes": "Real at 119 Cal.App.4th 1228 \u2014 parole computer/Internet conditions.",
+      "sources": [
+        "https://www.syfert.com/california/cases/119-cal-app-4th-1228/in-re-stevens"
+      ]
+    },
+    {
+      "citation": "Thornton v. Brown, 757 F. 3d 834",
+      "status": "VERIFIED",
+      "notes": "Real at 757 F.3d 834 (9th Cir. 2014). Add year. Parole officer \u00a7 1983 liability / retaliation.",
+      "sources": [
+        "https://case-law.vlex.com/vid/thornton-v-brown-no-895518368"
+      ]
+    },
+    {
+      "citation": "Spencer v. Peters, 857 F. 3d 789",
+      "status": "VERIFIED",
+      "notes": "Real at 857 F.3d 789 (9th Cir. 2017). Add year.",
+      "sources": [
+        "https://cdn.ca9.uscourts.gov/datastore/opinions/2017/05/18/14-35689.pdf"
+      ]
+    },
+    {
+      "citation": "Accardi v. Shaughnessy, 347 U.S. 260 (1954)",
+      "status": "VERIFIED",
+      "notes": "Real as United States ex rel. Accardi v. Shaughnessy, 347 U.S. 260 (1954) \u2014 agencies must follow their own regulations.",
+      "sources": [
+        "https://www.law.cornell.edu/supremecourt/text/347/260"
+      ]
+    },
+    {
+      "citation": "Board of Pardons v. Allen, 482 U.S. 369 (1987)",
+      "status": "VERIFIED",
+      "notes": "Real \u2014 liberty interest in parole when statute uses mandatory language.",
+      "sources": [
+        "https://www.law.cornell.edu/supremecourt/text/482/369"
+      ]
+    },
+    {
+      "citation": "Bd. of Educ. v. Loudermill, 470 U.S. 532 (1985)",
+      "status": "VERIFIED",
+      "notes": "Real as Cleveland Board of Education v. Loudermill, 470 U.S. 532 (1985).",
+      "sources": [
+        "https://www.law.cornell.edu/supremecourt/text/470/532"
+      ]
+    },
+    {
+      "citation": "Carey v. Piphus, 435 U.S. 247 (1978)",
+      "status": "VERIFIED",
+      "notes": "Real \u2014 nominal damages for due-process violations.",
+      "sources": [
+        "https://supreme.justia.com/cases/federal/us/435/247/"
+      ]
+    },
+    {
+      "citation": "Verizon Md. Inc. v. Public Serv. Comm'n, 535 U.S. 635 (2002)",
+      "status": "VERIFIED",
+      "notes": "Real \u2014 Ex parte Young prospective relief against state officers.",
+      "sources": [
+        "https://www.law.cornell.edu/supremecourt/text/535/635"
+      ]
+    },
+    {
+      "citation": "See California Highway Patrol v. Superior Court, 158 Cal.App. 4th 726 (2008)",
+      "status": "MISCHARACTERIZED",
+      "notes": "Same case/problem as California Highway Patrol v. Superior Court \u2014 'See ' prefix only.",
+      "sources": [
+        "https://www.syfert.com/california/cases/158-cal-app-4th-726/department-of-california-highway-patrol-v-superior-court"
+      ]
+    },
+    {
+      "citation": "See JKH Enterprises, Inc. v. Dept. of Industrial Relations, 142 Cal.App. 4th 1046 (2006)",
+      "status": "VERIFIED",
+      "notes": "Same as JKH Enterprises; 'See ' prefix only.",
+      "sources": [
+        "https://www.dir.ca.gov/dlse/JKH_Pub_Dec.pdf"
+      ]
+    },
+    {
+      "citation": "See Rodriguez v. Solis, 1 Cal.App. 4th 495 (1991)",
+      "status": "VERIFIED",
+      "notes": "Same as Rodriguez v. Solis; 'See ' prefix only.",
+      "sources": [
+        "https://case-law.vlex.com/vid/rodriguez-v-solis-no-891978747"
+      ]
+    },
+    {
+      "citation": "Mathews v. Eldridge, 424 U.S. 319 (1976)",
+      "status": "VERIFIED",
+      "notes": "Canonical due-process balancing test. Real at 424 U.S. 319. (July audit had a placeholder N/A row that must not join.)",
+      "sources": [
+        "https://supreme.justia.com/cases/federal/us/424/319/"
+      ]
+    }
+  ]
+}
