@@ -1,17 +1,10 @@
 import { useCallback, useState } from "react";
 import { cases } from "../data/matters";
+import { CLUSTER_LABELS } from "../data/clusters";
 import { GOLD } from "../constants";
 import { isArchivedMatter } from "../utils/matterLifecycle";
 import { SavedViews } from "./matters/SavedViews";
 import { MatterCard } from "./matters/MatterCard";
-
-const CLUSTER_LABELS = {
-  1: "CHP",
-  2: "Parole/HOPE",
-  3: "Employment",
-  4: "Writs",
-  5: "Consumer Fraud",
-};
 
 export const MattersTab = ({ filteredCases, statusFilter, setStatusFilter, clusterFilter, setClusterFilter, typeFilter, setTypeFilter, searchQuery, setSearchQuery, sortKey, setSortKey }) => {
   const [expandedMatter, setExpandedMatter] = useState(null);
