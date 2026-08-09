@@ -10,14 +10,14 @@ The campaign is entering a phase where claims are cognizable and motions to dism
 
 | Status | Count |
 |---|---|
-| UNVERIFIED | 460 |
-| VERIFIED | 244 |
-| MISCITED | 25 |
+| UNVERIFIED | 423 |
+| VERIFIED | 280 |
+| MISCITED | 26 |
 | MISCHARACTERIZED | 6 |
 | NOT_FOUND | 6 |
 
-**Plaintiff-only + still UNVERIFIED (P0 queue): 37**  
-**Plaintiff-only + bad status (P1): 24**
+**Plaintiff-only + still UNVERIFIED (P0 queue): 0**  
+**Plaintiff-only + bad status (P1): 25**
 
 ## Method controls
 
@@ -111,6 +111,7 @@ _Round 4: no matching absolute-immunity hearing-officer decision at that WL numb
 | 2 | MISCITED | California, Ltd. v. Dry Creek Joint Elementary Sch. Dist, 50 Cal.App.  | 20, 32 |
 | 2 | MISCITED | Soranno's Gasco, Inc. v. Morgan Hill Unified, 874 F. 2d 1310 | 24, 32 |
 | 2 | MISCITED | Swift v. Christian, 384 F. 3d 1184 | 30 |
+| 2 | MISCITED | Unicorn Glob., Inc. v. Hillo Am., Inc, 2021 WL 1034838 | 29 |
 | 1 | MISCITED | Ashcroft v. Iqbal, 556 U.S. 662 | 29 |
 | 1 | MISCITED | Cases Ashcroft v. Iqbal, 556 U.S. 662 | 29 |
 | 1 | MISCITED | Chubb v. Sullivan, 2014 WL 2807986 | 28 |
@@ -126,51 +127,14 @@ Asserted only in Plaintiff's filings; no court order or opposing brief in the co
 
 | Uses | Authority | Matters | Sample page |
 |---|---|---|---|
-| 2 | Pearson v. Callahan, 555 U.S. 223 (2009) | 1, 32 | p.3 |
-| 2 | People v. Woodell, 17 Cal. 4th 448 (1998) | 5 | p.3 |
-| 2 | Ross v. Creel Printing, 100 Cal.App. 4th 736 (2002) | 5 | p.5 |
-| 2 | SN Sands Corp. v. City and County, 167 Cal.App. 4th 185 (2008) | 20, 32 | p.8 |
-| 2 | See Saleeby v. State Bar, 39 Cal. 3d 547 (1985) | 20, 32 | p.8 |
-| 2 | Sonner v. Premier Nutrition Corporation, 49 F. 4th 1300 (2022) | 29 | p.3 |
-| 2 | Sugar Co-op v. Archer-Daniels-Midland Co, 2012 WL 3101659 | 29 | p.3 |
-| 2 | Under United States v. Knights, 534 U.S. 112 (2001) | 19 | p.15 |
-| 2 | Unicorn Glob., Inc. v. Hillo Am., Inc, 2021 WL 1034838 | 29 | p.3 |
-| 1 | Accurate and Amazon. Los Angeles Cath. Worker v. Los Angeles Downtown  | 29 | p.18 |
-| 1 | Bd. of Educ. v. Doyle, 429 U.S. 274 (1977) | 30 | p.11 |
-| 1 | Bill Johnson's Restaurants, Inc. v. NLRB, 461 U.S. 731 (1983) | 30 | p.15 |
-| 1 | Bolkiah v. Superior Ct, 74 Cal. App. 4th 984 (1999) | 3 | p.2 |
-| 1 | California DUI Lawyers Ass'n v. Department of Motor Vehicles, 77 Cal.  | 7, 32, 33 | p.4 |
-| 1 | California Motor Transport Co. v. Trucking Unlimited, 404 U.S. 508 (19 | 30 | p.16 |
-| 1 | California v. Acevedo, 500 U.S. 565 (1991) | 32 | p.20 |
-| 1 | California v. Carney, 471 U.S. 386 (1985) | 32 | p.19 |
-| 1 | E. & J. Gallo Winery v. Encana Energy Servs., Inc, 2005 WL 2435900 | 29 | p.4 |
-| 1 | Griffin v. Green Tree Servicing, LLC, 166 F. Supp. 3d 1030 | 29 | p.5 |
-| 1 | Helm v. Alderwoods Group, Inc, 696 F. Supp. 2d 1057 | 29 | p.4 |
-| 1 | Herr v. Nestle U.S.A., Inc, 109 Cal.App. 4th 779 | 29 | p.23 |
-| 1 | Jones v. Sutter Health, 499 F. Supp. 3d 704 | 29 | p.2 |
-| 1 | L'Garde, Inc. v. Raytheon Space, 805 F. Supp. 2d 932 | 29 | p.11 |
-| 1 | Los Angeles Cath. Worker v. Los Angeles Downtown Indus. Dist. Bus, 201 | 29 | p.3 |
-| 1 | MGIC Indem. Corp. v. Weisman, 803 F. 2d 500 | 29 | p.4 |
-| 1 | Mack v. South Bay Beer Distribs, 798 F. 2d 1279 | 29 | p.2 |
-| 1 | Milhouse v. Carlson, 652 F. 2d 371 | 30 | p.6 |
-| 1 | Mir v. Little Co, 844 F. 2d 646 | 29 | p.4 |
-| 1 | Moser v. Benefytt, Inc, 8 F. 4th 872 | 3 | p.3 |
-| 1 | Neilson v. Union Bank, 290 F. Supp. 2d 1101 | 29 | p.4 |
-| 1 | Taylor v. Sturgell, 553 U.S. 880 (2008) | 7, 32, 33 | p.14 |
-| 1 | United States Small Bus. Admin. v. Bensal, 853 F. 3d 992 | 29 | p.4 |
-| 1 | United States v. Reyna-Tapia, 328 F. 3d 1114 | 7, 32, 33 | p.1 |
-| 1 | United States v. Wilson, 631 F. 2d 118 | 29 | p.4 |
-| 1 | Villiarimo v. Aloha Island Air, Inc, 281 F. 3d 1054 | 30 | p.11 |
-| 1 | Weston v. Motiu, 2025 WL 2916303 | 3 | p.3 |
-| 1 | Zahrey v. Coffey, 221 F. 3d 342 | 30 | p.18 |
 
-_37 total in JSON `priorityQueue`._
+_0 total in JSON `priorityQueue`._
 
 ## Round overlay
 
-Loaded round: **2026-08-09 Round 4 — portfolio P0 (batches A–C; continuing)** — 140 results
+Loaded round: **2026-08-09 Round 4 — portfolio P0 (batches A–D; plaintiff-only queue cleared)** — 177 results
 
-Method note: WebSearch against primary-source URLs after positive control (Richardson v. McKnight, 521 U.S. 399 — hit govinfo.gov U.S. Reports PDF) and negative control (In re Leman, 66 Cal.App.5th 200 — no matching decision; only Lemanuel C. / Marriage of Lemen noise). CourtListener/case.law/Justia direct fetches remain egress-blocked. Statuses rest on search-returned summaries plus primary URLs. Characterization flags applied when index sample context attributes a proposition the opinion does not support.
+Method note: WebSearch against primary-source URLs after positive control (Richardson v. McKnight, 521 U.S. 399 — hit govinfo.gov U.S. Reports PDF) and negative control (In re Leman, 66 Cal.App.5th 200 — no matching decision; only Lemanuel C. / Marriage of Lemen noise). CourtListener/case.law/Justia direct fetches remain egress-blocked. Statuses rest on search-returned summaries plus primary URLs. Characterization flags applied when index sample context attributes a proposition the opinion does not support. Batch D closed the remaining plaintiff-only UNVERIFIED queue.
 
 ## Regenerating
 ```

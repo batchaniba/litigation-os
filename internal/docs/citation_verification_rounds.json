@@ -1,6 +1,6 @@
 {
-  "round": "2026-08-09 Round 4 \u2014 portfolio P0 (batches A\u2013C; continuing)",
-  "method": "WebSearch against primary-source URLs after positive control (Richardson v. McKnight, 521 U.S. 399 \u2014 hit govinfo.gov U.S. Reports PDF) and negative control (In re Leman, 66 Cal.App.5th 200 \u2014 no matching decision; only Lemanuel C. / Marriage of Lemen noise). CourtListener/case.law/Justia direct fetches remain egress-blocked. Statuses rest on search-returned summaries plus primary URLs. Characterization flags applied when index sample context attributes a proposition the opinion does not support.",
+  "round": "2026-08-09 Round 4 — portfolio P0 (batches A–D; plaintiff-only queue cleared)",
+  "method": "WebSearch against primary-source URLs after positive control (Richardson v. McKnight, 521 U.S. 399 — hit govinfo.gov U.S. Reports PDF) and negative control (In re Leman, 66 Cal.App.5th 200 — no matching decision; only Lemanuel C. / Marriage of Lemen noise). CourtListener/case.law/Justia direct fetches remain egress-blocked. Statuses rest on search-returned summaries plus primary URLs. Characterization flags applied when index sample context attributes a proposition the opinion does not support. Batch D closed the remaining plaintiff-only UNVERIFIED queue.",
   "controls": {
     "positive": {
       "citation": "Richardson v. McKnight, 521 U.S. 399 (1997)",
@@ -36,7 +36,7 @@
     {
       "citation": "California Highway Patrol v. Superior Court, 158 Cal.App. 4th 726 (2008)",
       "status": "MISCHARACTERIZED",
-      "notes": "Real at 158 Cal.App.4th 726 (Department of the California Highway Patrol v. Superior Court) \u2014 motorcycle-helmet 'fix-it' ticket / correctable-offense dispute. Index context attributes a California administrative-law 'taint' doctrine. That proposition is not this case. Do not brief as taint authority.",
+      "notes": "Real at 158 Cal.App.4th 726 (Department of the California Highway Patrol v. Superior Court) — motorcycle-helmet 'fix-it' ticket / correctable-offense dispute. Index context attributes a California administrative-law 'taint' doctrine. That proposition is not this case. Do not brief as taint authority.",
       "sources": [
         "https://www.syfert.com/california/cases/158-cal-app-4th-726/department-of-california-highway-patrol-v-superior-court"
       ]
@@ -44,7 +44,7 @@
     {
       "citation": "People v. Rizo, 22 Cal. 4th 681 (2000)",
       "status": "MISCHARACTERIZED",
-      "notes": "Real at 22 Cal.4th 681 \u2014 Penal Code \u00a7 113 / Proposition 187 false-documents / factual-impossibility case. Index context attributes a surplusage / 'up to' statutory-construction holding. Wrong proposition. Do not brief Rizo for surplusage.",
+      "notes": "Real at 22 Cal.4th 681 — Penal Code § 113 / Proposition 187 false-documents / factual-impossibility case. Index context attributes a surplusage / 'up to' statutory-construction holding. Wrong proposition. Do not brief Rizo for surplusage.",
       "sources": [
         "https://scocal.stanford.edu/opinion/people-v-rizo-32111"
       ]
@@ -60,13 +60,13 @@
     {
       "citation": "Pomona Police Officers' Ass'n v. City of Pomona, 58 Cal.App. 4th 578 (1997)",
       "status": "MISCHARACTERIZED",
-      "notes": "Real at 58 Cal.App.4th 578 \u2014 PERS retirement-conversion option / mandate for economic benefits. Index context uses it for 'agency exercises discretion under an unlawful standard' mandate doctrine. That is not Pomona's holding. Replace with a true mandate/abuse-of-discretion authority.",
+      "notes": "Real at 58 Cal.App.4th 578 — PERS retirement-conversion option / mandate for economic benefits. Index context uses it for 'agency exercises discretion under an unlawful standard' mandate doctrine. That is not Pomona's holding. Replace with a true mandate/abuse-of-discretion authority.",
       "sources": [
         "https://app.midpage.ai/document/pomona-police-officers-ass-n-2272474"
       ]
     },
     {
-      "citation": "Pomona Police Officers\u2019 Ass\u2019n v. City of Pomona, 58 Cal.App. 4th 578 (1997)",
+      "citation": "Pomona Police Officers’ Ass’n v. City of Pomona, 58 Cal.App. 4th 578 (1997)",
       "status": "MISCHARACTERIZED",
       "notes": "Duplicate index row (curly apostrophe). Same problem as straight-apostrophe Pomona entry.",
       "sources": [
@@ -76,7 +76,7 @@
     {
       "citation": "Lungren v. Deukmejian, 45 Cal. 3d 727 (1988)",
       "status": "VERIFIED",
-      "notes": "Real at 45 Cal.3d 727 \u2014 constitutional confirmation of gubernatorial nominee. Existence OK; if briefed solely for surplusage canons, pin to the construction discussion carefully or prefer a cleaner surplusage case.",
+      "notes": "Real at 45 Cal.3d 727 — constitutional confirmation of gubernatorial nominee. Existence OK; if briefed solely for surplusage canons, pin to the construction discussion carefully or prefer a cleaner surplusage case.",
       "sources": [
         "https://scocal.stanford.edu/opinion/lungren-v-deukmejian-31008"
       ]
@@ -116,7 +116,7 @@
     {
       "citation": "Forrester v. White, 484 U.S. 219 (1988)",
       "status": "VERIFIED",
-      "notes": "Real \u2014 absolute immunity is function-based; employment decisions by judges are not judicial acts. Matches functional-immunity briefing.",
+      "notes": "Real — absolute immunity is function-based; employment decisions by judges are not judicial acts. Matches functional-immunity briefing.",
       "sources": [
         "https://www.govinfo.gov/content/pkg/USREPORTS-484/pdf/USREPORTS-484-219.pdf"
       ]
@@ -130,7 +130,7 @@
       ]
     },
     {
-      "citation": "Home v. Dep\u2019t of Health Care Services, 204 Cal.App. 4th 676 (2012)",
+      "citation": "Home v. Dep’t of Health Care Services, 204 Cal.App. 4th 676 (2012)",
       "status": "MISCITED",
       "notes": "Duplicate curly-apostrophe row; same miscaption as Home v. Dep't of Health Care Services.",
       "sources": [
@@ -148,7 +148,7 @@
     {
       "citation": "In re Hudson, 1 Cal.App. 4th 1 (2006)",
       "status": "MISCITED",
-      "notes": "Real case is In re Hudson, 143 Cal.App.4th 1 (2006) \u2014 computer/Internet parole condition. Printed volume '1' is wrong (should be 143). Also check proposition: Hudson is not a general rehabilitation/treatment-completion authority.",
+      "notes": "Real case is In re Hudson, 143 Cal.App.4th 1 (2006) — computer/Internet parole condition. Printed volume '1' is wrong (should be 143). Also check proposition: Hudson is not a general rehabilitation/treatment-completion authority.",
       "sources": [
         "https://case-law.vlex.com/vid/in-re-hudson-no-893167175"
       ]
@@ -156,7 +156,7 @@
     {
       "citation": "In re Muszalski, 52 Cal.App. 3d 500 (1975)",
       "status": "VERIFIED",
-      "notes": "Real at 52 Cal.App.3d 500 \u2014 habeas / exhaustion in parole context.",
+      "notes": "Real at 52 Cal.App.3d 500 — habeas / exhaustion in parole context.",
       "sources": [
         "https://www.syfert.com/california/cases/52-cal-app-3d-500/in-re-muszalski"
       ]
@@ -164,7 +164,7 @@
     {
       "citation": "Morris v. Williams, 67 Cal. 2d 733 (1967)",
       "status": "VERIFIED",
-      "notes": "Real at 67 Cal.2d 733 \u2014 agency regulation inconsistent with statute.",
+      "notes": "Real at 67 Cal.2d 733 — agency regulation inconsistent with statute.",
       "sources": [
         "https://scocal.stanford.edu/opinion/morris-v-williams-32900"
       ]
@@ -172,7 +172,7 @@
     {
       "citation": "People v. Superior Court, 25 Cal. 4th 703 (2001)",
       "status": "MISCITED",
-      "notes": "Already flagged in July audit as People v. Superior Court (Laff), 25 Cal.4th 703 \u2014 real case, wrong proposition for ministerial-duty / mandate use in Matter 9. Keep MISCITED.",
+      "notes": "Already flagged in July audit as People v. Superior Court (Laff), 25 Cal.4th 703 — real case, wrong proposition for ministerial-duty / mandate use in Matter 9. Keep MISCITED.",
       "sources": [
         "citation_audit.json July 12 entry"
       ]
@@ -180,7 +180,7 @@
     {
       "citation": "Rodriguez v. Solis, 1 Cal.App. 4th 495 (1991)",
       "status": "VERIFIED",
-      "notes": "Real at 1 Cal.App.4th 495 \u2014 mandate / discretion principles.",
+      "notes": "Real at 1 Cal.App.4th 495 — mandate / discretion principles.",
       "sources": [
         "https://case-law.vlex.com/vid/rodriguez-v-solis-no-891978747"
       ]
@@ -196,7 +196,7 @@
     {
       "citation": "Vlandis v. Kline, 412 U.S. 441 (1973)",
       "status": "VERIFIED",
-      "notes": "Real \u2014 irrebuttable presumptions / due process.",
+      "notes": "Real — irrebuttable presumptions / due process.",
       "sources": [
         "https://www.law.cornell.edu/supremecourt/text/412/441"
       ]
@@ -204,7 +204,7 @@
     {
       "citation": "Brown v. Illinois, 422 U.S. 590 (1975)",
       "status": "VERIFIED",
-      "notes": "Real \u2014 attenuation / fruit of unlawful arrest.",
+      "notes": "Real — attenuation / fruit of unlawful arrest.",
       "sources": [
         "https://supreme.justia.com/cases/federal/us/422/590/"
       ]
@@ -212,7 +212,7 @@
     {
       "citation": "Brown v. Texas, 443 U.S. 47 (1979)",
       "status": "VERIFIED",
-      "notes": "Real \u2014 stop requires reasonable suspicion.",
+      "notes": "Real — stop requires reasonable suspicion.",
       "sources": [
         "https://www.law.cornell.edu/supremecourt/text/443/47"
       ]
@@ -228,7 +228,7 @@
     {
       "citation": "Florida v. Royer, 460 U.S. 491 (1983)",
       "status": "VERIFIED",
-      "notes": "Real \u2014 scope of Terry stop / consent.",
+      "notes": "Real — scope of Terry stop / consent.",
       "sources": [
         "https://www.law.cornell.edu/supremecourt/text/460/491"
       ]
@@ -260,7 +260,7 @@
     {
       "citation": "Payton v. New York, 445 U.S. 573 (1980)",
       "status": "VERIFIED",
-      "notes": "Real \u2014 warrantless home entry to arrest.",
+      "notes": "Real — warrantless home entry to arrest.",
       "sources": [
         "https://www.law.cornell.edu/supremecourt/text/445/573"
       ]
@@ -300,7 +300,7 @@
     {
       "citation": "Caperton v. A.T. Massey Coal Co, 556 U.S. 868 (2009)",
       "status": "VERIFIED",
-      "notes": "Real \u2014 judicial bias / due process.",
+      "notes": "Real — judicial bias / due process.",
       "sources": [
         "https://supreme.justia.com/cases/federal/us/556/868/"
       ]
@@ -308,7 +308,7 @@
     {
       "citation": "Collins v. Virginia, 584 U.S. 586 (2018)",
       "status": "VERIFIED",
-      "notes": "Real \u2014 automobile exception / curtilage.",
+      "notes": "Real — automobile exception / curtilage.",
       "sources": [
         "https://www.law.cornell.edu/supremecourt/text/16-1027"
       ]
@@ -324,7 +324,7 @@
     {
       "citation": "Franks v. Delaware, 438 U.S. 154 (1978)",
       "status": "VERIFIED",
-      "notes": "Real \u2014 false statements in warrant affidavits.",
+      "notes": "Real — false statements in warrant affidavits.",
       "sources": [
         "https://www.law.cornell.edu/supremecourt/text/438/154"
       ]
@@ -340,7 +340,7 @@
     {
       "citation": "In re Murchison, 349 U.S. 133 (1955)",
       "status": "VERIFIED",
-      "notes": "Real \u2014 neutral decisionmaker / due process.",
+      "notes": "Real — neutral decisionmaker / due process.",
       "sources": [
         "https://www.law.cornell.edu/supremecourt/text/349/133"
       ]
@@ -356,7 +356,7 @@
     {
       "citation": "See Hill v. National Collegiate Athletic Assn, 7 Cal. 4th 1 (1994)",
       "status": "VERIFIED",
-      "notes": "Real at Hill v. National Collegiate Athletic Assn., 7 Cal.4th 1 (1994) \u2014 California constitutional privacy.",
+      "notes": "Real at Hill v. National Collegiate Athletic Assn., 7 Cal.4th 1 (1994) — California constitutional privacy.",
       "sources": [
         "https://scocal.stanford.edu/opinion/hill-v-national-collegiate-athletic-assn-31368"
       ]
@@ -372,7 +372,7 @@
     {
       "citation": "Beck v. Ohio, 379 U.S. 89 (1964)",
       "status": "VERIFIED",
-      "notes": "Real \u2014 probable cause for arrest.",
+      "notes": "Real — probable cause for arrest.",
       "sources": [
         "https://www.law.cornell.edu/supremecourt/text/379/89"
       ]
@@ -394,7 +394,7 @@
     {
       "citation": "England v. Louisiana State Bd, 375 U.S. 411 (1964)",
       "status": "VERIFIED",
-      "notes": "Real as England v. Louisiana State Board of Medical Examiners, 375 U.S. 411 (1964) \u2014 England reservation.",
+      "notes": "Real as England v. Louisiana State Board of Medical Examiners, 375 U.S. 411 (1964) — England reservation.",
       "sources": [
         "https://www.law.cornell.edu/supremecourt/text/375/411"
       ]
@@ -402,7 +402,7 @@
     {
       "citation": "Gantt v. Sentry Insurance, 1 Cal. 4th 1083 (1992)",
       "status": "VERIFIED",
-      "notes": "Real at 1 Cal.4th 1083 \u2014 Tameny public-policy wrongful termination elements.",
+      "notes": "Real at 1 Cal.4th 1083 — Tameny public-policy wrongful termination elements.",
       "sources": [
         "https://scocal.stanford.edu/opinion/gantt-v-sentry-insurance-31288"
       ]
@@ -410,7 +410,7 @@
     {
       "citation": "In re Stevens, 119 Cal.App. 4th 1228 (2004)",
       "status": "VERIFIED",
-      "notes": "Real at 119 Cal.App.4th 1228 \u2014 parole computer/Internet conditions.",
+      "notes": "Real at 119 Cal.App.4th 1228 — parole computer/Internet conditions.",
       "sources": [
         "https://www.syfert.com/california/cases/119-cal-app-4th-1228/in-re-stevens"
       ]
@@ -418,7 +418,7 @@
     {
       "citation": "Thornton v. Brown, 757 F. 3d 834",
       "status": "VERIFIED",
-      "notes": "Real at 757 F.3d 834 (9th Cir. 2014). Add year. Parole officer \u00a7 1983 liability / retaliation.",
+      "notes": "Real at 757 F.3d 834 (9th Cir. 2014). Add year. Parole officer § 1983 liability / retaliation.",
       "sources": [
         "https://case-law.vlex.com/vid/thornton-v-brown-no-895518368"
       ]
@@ -434,7 +434,7 @@
     {
       "citation": "Accardi v. Shaughnessy, 347 U.S. 260 (1954)",
       "status": "VERIFIED",
-      "notes": "Real as United States ex rel. Accardi v. Shaughnessy, 347 U.S. 260 (1954) \u2014 agencies must follow their own regulations.",
+      "notes": "Real as United States ex rel. Accardi v. Shaughnessy, 347 U.S. 260 (1954) — agencies must follow their own regulations.",
       "sources": [
         "https://www.law.cornell.edu/supremecourt/text/347/260"
       ]
@@ -442,7 +442,7 @@
     {
       "citation": "Board of Pardons v. Allen, 482 U.S. 369 (1987)",
       "status": "VERIFIED",
-      "notes": "Real \u2014 liberty interest in parole when statute uses mandatory language.",
+      "notes": "Real — liberty interest in parole when statute uses mandatory language.",
       "sources": [
         "https://www.law.cornell.edu/supremecourt/text/482/369"
       ]
@@ -458,7 +458,7 @@
     {
       "citation": "Carey v. Piphus, 435 U.S. 247 (1978)",
       "status": "VERIFIED",
-      "notes": "Real \u2014 nominal damages for due-process violations.",
+      "notes": "Real — nominal damages for due-process violations.",
       "sources": [
         "https://supreme.justia.com/cases/federal/us/435/247/"
       ]
@@ -466,7 +466,7 @@
     {
       "citation": "Verizon Md. Inc. v. Public Serv. Comm'n, 535 U.S. 635 (2002)",
       "status": "VERIFIED",
-      "notes": "Real \u2014 Ex parte Young prospective relief against state officers.",
+      "notes": "Real — Ex parte Young prospective relief against state officers.",
       "sources": [
         "https://www.law.cornell.edu/supremecourt/text/535/635"
       ]
@@ -474,7 +474,7 @@
     {
       "citation": "See California Highway Patrol v. Superior Court, 158 Cal.App. 4th 726 (2008)",
       "status": "MISCHARACTERIZED",
-      "notes": "Same case/problem as California Highway Patrol v. Superior Court \u2014 'See ' prefix only.",
+      "notes": "Same case/problem as California Highway Patrol v. Superior Court — 'See ' prefix only.",
       "sources": [
         "https://www.syfert.com/california/cases/158-cal-app-4th-726/department-of-california-highway-patrol-v-superior-court"
       ]
@@ -538,7 +538,7 @@
     {
       "citation": "California, Ltd. v. Dry Creek Joint Elementary Sch. Dist, 50 Cal.App. 4th 1",
       "status": "MISCITED",
-      "notes": "Correct: Western/California, Ltd. v. Dry Creek Joint Elementary School Dist., 50 Cal.App.4th 1461 (1996) \u2014 not page 1; party name omits Western/.",
+      "notes": "Correct: Western/California, Ltd. v. Dry Creek Joint Elementary School Dist., 50 Cal.App.4th 1461 (1996) — not page 1; party name omits Western/.",
       "sources": [
         "https://law.justia.com/cases/california/court-of-appeal/4th/50/1461.html"
       ]
@@ -560,7 +560,7 @@
       ]
     },
     {
-      "citation": "Daniels-Hall v. Nat\u2019l Educ. Ass\u2019n, 629 F. 3d 992",
+      "citation": "Daniels-Hall v. Nat’l Educ. Ass’n, 629 F. 3d 992",
       "status": "VERIFIED",
       "notes": "Real at 629 F.3d 992 (9th Cir. 2010). Add year.",
       "sources": [
@@ -594,7 +594,7 @@
     {
       "citation": "Illinois v. Caballes, 543 U.S. 405 (2005)",
       "status": "VERIFIED",
-      "notes": "Real \u2014 dog sniff during lawful traffic stop.",
+      "notes": "Real — dog sniff during lawful traffic stop.",
       "sources": [
         "https://www.law.cornell.edu/supremecourt/text/543/405"
       ]
@@ -730,7 +730,7 @@
     {
       "citation": "Cleavinger v. Saxner, 474 U.S. 193 (1985)",
       "status": "VERIFIED",
-      "notes": "Real \u2014 absolute immunity for prison discipline committee members performing adjudicative functions.",
+      "notes": "Real — absolute immunity for prison discipline committee members performing adjudicative functions.",
       "sources": [
         "https://www.law.cornell.edu/supremecourt/text/474/193"
       ]
@@ -792,9 +792,9 @@
       ]
     },
     {
-      "citation": "Soranno\u2019s Gasco, Inc. v. Morgan Hill Uniifed Sch. Dist, 874 F. 2d 1310",
+      "citation": "Soranno’s Gasco, Inc. v. Morgan Hill Uniifed Sch. Dist, 874 F. 2d 1310",
       "status": "MISCITED",
-      "notes": "874 F.2d 1310 is Soranno's Gasco, Inc. v. Morgan (9th Cir. 1989) against Stanislaus County air-pollution officials \u2014 not Morgan Hill Unified. Also misspells Unified.",
+      "notes": "874 F.2d 1310 is Soranno's Gasco, Inc. v. Morgan (9th Cir. 1989) against Stanislaus County air-pollution officials — not Morgan Hill Unified. Also misspells Unified.",
       "sources": [
         "https://openjurist.org/874/f2d/1310"
       ]
@@ -802,7 +802,7 @@
     {
       "citation": "Soranno's Gasco, Inc. v. Morgan Hill Unified, 874 F. 2d 1310",
       "status": "MISCITED",
-      "notes": "Same problem \u2014 correct caption is Soranno's Gasco, Inc. v. Morgan, 874 F.2d 1310 (9th Cir. 1989).",
+      "notes": "Same problem — correct caption is Soranno's Gasco, Inc. v. Morgan, 874 F.2d 1310 (9th Cir. 1989).",
       "sources": [
         "https://openjurist.org/874/f2d/1310"
       ]
@@ -842,7 +842,7 @@
     {
       "citation": "Exxon Mobil Corp. v. Saudi Basic Indus. Corp, 544 U.S. 280 (2005)",
       "status": "VERIFIED",
-      "notes": "Real \u2014 Rooker-Feldman.",
+      "notes": "Real — Rooker-Feldman.",
       "sources": [
         "https://www.law.cornell.edu/supremecourt/text/544/280"
       ]
@@ -880,7 +880,7 @@
       ]
     },
     {
-      "citation": "Garity v. APWU Nat\u2019l Lab. Org, 828 F. 3d 848",
+      "citation": "Garity v. APWU Nat’l Lab. Org, 828 F. 3d 848",
       "status": "VERIFIED",
       "notes": "Real at 828 F.3d 848 (9th Cir. 2016). Add year.",
       "sources": [
@@ -898,7 +898,7 @@
     {
       "citation": "Heck v. Humphrey, 512 U.S. 477 (1994)",
       "status": "VERIFIED",
-      "notes": "Real \u2014 Heck bar.",
+      "notes": "Real — Heck bar.",
       "sources": [
         "https://supreme.justia.com/cases/federal/us/512/477/"
       ]
@@ -906,7 +906,7 @@
     {
       "citation": "Hunter v. Bryant, 502 U.S. 224 (1991)",
       "status": "VERIFIED",
-      "notes": "Real \u2014 qualified immunity / probable cause.",
+      "notes": "Real — qualified immunity / probable cause.",
       "sources": [
         "https://caselaw.findlaw.com/court/us-supreme-court/502/224.html"
       ]
@@ -922,7 +922,7 @@
     {
       "citation": "Jessie v. United States, 79 M.J. 437",
       "status": "MISCITED",
-      "notes": "Real decision is United States v. Jessie, 79 M.J. 437 (C.A.A.F. 2020) \u2014 caption inverted here. Also Matter 28 flagged wrong proposition for SOTP blanket policies.",
+      "notes": "Real decision is United States v. Jessie, 79 M.J. 437 (C.A.A.F. 2020) — caption inverted here. Also Matter 28 flagged wrong proposition for SOTP blanket policies.",
       "sources": [
         "https://www.armfor.uscourts.gov/newcaaf/opinions/2019OctTerm/190192.pdf"
       ]
@@ -938,7 +938,7 @@
     {
       "citation": "Kentucky v. King, 563 U.S. 452 (2011)",
       "status": "VERIFIED",
-      "notes": "Real \u2014 exigent circumstances / police-created exigency.",
+      "notes": "Real — exigent circumstances / police-created exigency.",
       "sources": [
         "https://supreme.justia.com/cases/federal/us/563/452/"
       ]
@@ -970,7 +970,7 @@
     {
       "citation": "Lockley v. Law Office, 91 Cal.App. 4th 401 (2001)",
       "status": "MISCITED",
-      "notes": "Wrong page \u2014 correct is Lockley v. Law Office of Cantrell, Green, Pekich, Cruz & McCort, 91 Cal.App.4th 875 (2001).",
+      "notes": "Wrong page — correct is Lockley v. Law Office of Cantrell, Green, Pekich, Cruz & McCort, 91 Cal.App.4th 875 (2001).",
       "sources": [
         "https://www.syfert.com/california/cases/91-cal-app-4th-875/lockley-v-law-office-of-cantrell-green-pekich-cruz-mccort"
       ]
@@ -986,7 +986,7 @@
     {
       "citation": "New York v. Class, 475 U.S. 106 (1986)",
       "status": "VERIFIED",
-      "notes": "Real \u2014 VIN inspection / search.",
+      "notes": "Real — VIN inspection / search.",
       "sources": [
         "https://supreme.justia.com/cases/federal/us/475/106/"
       ]
@@ -994,7 +994,7 @@
     {
       "citation": "Paul v. Davis, 424 U.S. 693 (1976)",
       "status": "VERIFIED",
-      "notes": "Real \u2014 reputation alone not liberty/property interest.",
+      "notes": "Real — reputation alone not liberty/property interest.",
       "sources": [
         "https://supreme.justia.com/cases/federal/us/424/693/"
       ]
@@ -1018,7 +1018,7 @@
     {
       "citation": "Camara v. Municipal Court, 387 U.S. 523 (1967)",
       "status": "VERIFIED",
-      "notes": "Real \u2014 administrative search warrants.",
+      "notes": "Real — administrative search warrants.",
       "sources": [
         "https://supreme.justia.com/cases/federal/us/387/523/"
       ]
@@ -1034,7 +1034,7 @@
     {
       "citation": "Florida v. Wells, 495 U.S. 1 (1990)",
       "status": "VERIFIED",
-      "notes": "Real \u2014 inventory search standardized criteria.",
+      "notes": "Real — inventory search standardized criteria.",
       "sources": [
         "https://www.law.cornell.edu/supremecourt/text/495/1"
       ]
@@ -1050,7 +1050,7 @@
     {
       "citation": "Missouri v. McNeely, 569 U.S. 141 (2013)",
       "status": "VERIFIED",
-      "notes": "Real \u2014 no per se blood-draw exigency.",
+      "notes": "Real — no per se blood-draw exigency.",
       "sources": [
         "https://supreme.justia.com/cases/federal/us/569/141/"
       ]
@@ -1102,13 +1102,13 @@
     {
       "citation": "Hagan v. Khoja, 139 S. Ct. 2615 (2019)",
       "status": "VERIFIED",
-      "notes": "Real as a certiorari denial (not a merits opinion) \u2014 Hagan v. Khoja, 139 S.Ct. 2615 (2019). Do not cite as merits authority.",
+      "notes": "Real as a certiorari denial (not a merits opinion) — Hagan v. Khoja, 139 S.Ct. 2615 (2019). Do not cite as merits authority.",
       "sources": [
         "https://www.supremecourt.gov/docket/docketfiles/html/public/18-1010.html"
       ]
     },
     {
-      "citation": "Sav. & Loan Ass\u2019n v. Solimino, 501 U.S. 104 (1991)",
+      "citation": "Sav. & Loan Ass’n v. Solimino, 501 U.S. 104 (1991)",
       "status": "VERIFIED",
       "notes": "Real as Astoria Federal Savings & Loan Ass'n v. Solimino, 501 U.S. 104 (1991).",
       "sources": [
@@ -1118,7 +1118,7 @@
     {
       "citation": "Edmo v. Corizon, Inc, 935 F. 3d 757",
       "status": "VERIFIED",
-      "notes": "Real at 935 F.3d 757 (9th Cir. 2019). Matter 28 already flags MISCHARACTERIZED if used as per se anti-blanket-policy holding \u2014 existence OK.",
+      "notes": "Real at 935 F.3d 757 (9th Cir. 2019). Matter 28 already flags MISCHARACTERIZED if used as per se anti-blanket-policy holding — existence OK.",
       "sources": [
         "https://cdn.ca9.uscourts.gov/datastore/opinions/2019/08/23/19-35017.pdf"
       ]
@@ -1129,6 +1129,328 @@
       "notes": "Real at 698 F.3d 1128 (9th Cir. 2012). Add year. Correct form (not 98 F.3d).",
       "sources": [
         "https://cdn.ca9.uscourts.gov/datastore/opinions/2012/10/03/10-16377.pdf"
+      ]
+    },
+    {
+      "citation": "Pearson v. Callahan, 555 U.S. 223 (2009)",
+      "status": "VERIFIED",
+      "notes": "Canonical SCOTUS qualified-immunity decision; Saucier sequencing no longer mandatory. Matches QI briefing.",
+      "sources": [
+        "https://tile.loc.gov/storage-services/service/ll/usrep/usrep555/usrep555223/usrep555223.pdf",
+        "https://www.law.cornell.edu/supct/html/07-751.ZO.html"
+      ]
+    },
+    {
+      "citation": "People v. Woodell, 17 Cal. 4th 448 (1998)",
+      "status": "VERIFIED",
+      "notes": "Real at 17 Cal.4th 448 — prior-conviction / record-of-conviction (appellate opinion) holding. Existence OK; confirm proposition before reuse outside Three Strikes / prior-conviction context.",
+      "sources": [
+        "https://scocal.stanford.edu/opinion/people-v-woodell-31932"
+      ]
+    },
+    {
+      "citation": "Ross v. Creel Printing, 100 Cal.App. 4th 736 (2002)",
+      "status": "VERIFIED",
+      "notes": "Full caption Ross v. Creel Printing & Publishing Co., 100 Cal.App.4th 736 (2002) — IIED / bad-check collection letter. Truncated caption OK.",
+      "sources": [
+        "https://case-law.vlex.com/vid/ross-v-creel-printing-886001603",
+        "https://app.midpage.ai/document/ross-v-creel-printing-publishing-2256066"
+      ]
+    },
+    {
+      "citation": "SN Sands Corp. v. City and County, 167 Cal.App. 4th 185 (2008)",
+      "status": "VERIFIED",
+      "notes": "Full caption SN Sands Corp. v. City and County of San Francisco, 167 Cal.App.4th 185 (2008) — SF Charter $10M board-approval jurisdiction / mandate. Truncated defendant OK.",
+      "sources": [
+        "https://www.syfert.com/california/cases/167-cal-app-4th-185/sn-sands-corp-v-city-and-county-of-san-francisco",
+        "https://app.midpage.ai/document/sn-sands-corp-v-city-2260069"
+      ]
+    },
+    {
+      "citation": "See Saleeby v. State Bar, 39 Cal. 3d 547 (1985)",
+      "status": "VERIFIED",
+      "notes": "Real at 39 Cal.3d 547 — Client Security Fund due-process / mandamus review. Leading 'See' prefix stripped by join key.",
+      "sources": [
+        "https://scocal.stanford.edu/opinion/saleeby-v-state-bar-30731"
+      ]
+    },
+    {
+      "citation": "Sonner v. Premier Nutrition Corporation, 49 F. 4th 1300 (2022)",
+      "status": "VERIFIED",
+      "notes": "Real at 49 F.4th 1300 (9th Cir. 2022) — Anti-Injunction Act / relitigation exception after Sonner I. Distinct from 971 F.3d 834 (Sonner I equitable-remedy holding); pin the right Sonner opinion to the proposition briefed.",
+      "sources": [
+        "https://cdn.ca9.uscourts.gov/datastore/opinions/2022/09/29/21-15526.pdf"
+      ]
+    },
+    {
+      "citation": "Sugar Co-op v. Archer-Daniels-Midland Co, 2012 WL 3101659",
+      "status": "VERIFIED",
+      "notes": "Real as Western Sugar Cooperative v. Archer-Daniels-Midland Co., No. CV 11-3473, 2012 WL 3101659 (C.D. Cal. July 31, 2012). Caption truncated to 'Sugar Co-op' but WL pin and ADM defendant match. Prefer full Western Sugar caption in new filings.",
+      "sources": [
+        "https://tushnet.blogspot.com/2012/08/pleading-agency-and-vicarious-liability.html",
+        "https://storage.courtlistener.com/recap/gov.uscourts.cacd.776893/gov.uscourts.cacd.776893.63.0.pdf"
+      ]
+    },
+    {
+      "citation": "Under United States v. Knights, 534 U.S. 112 (2001)",
+      "status": "VERIFIED",
+      "notes": "Canonical probation-search / reasonable-suspicion SCOTUS decision. Leading 'Under' is citation prose, not part of the case name.",
+      "sources": [
+        "https://www.govinfo.gov/content/pkg/USREPORTS-534/pdf/USREPORTS-534-112.pdf",
+        "https://www.law.cornell.edu/supremecourt/text/00-1260"
+      ]
+    },
+    {
+      "citation": "Unicorn Glob., Inc. v. Hillo Am., Inc, 2021 WL 1034838",
+      "status": "MISCITED",
+      "notes": "Party pairing is wrong for this WL pin. Open-web / Casetext association places 2021 WL 1034838 with Unicorn Global, Inc. v. Golabs, Inc. (N.D. Tex. hoverboard patent litigation), not Hillo America. A real Unicorn Global v. Hillo America, Inc. action exists at C.D. Cal. No. 2:19-cv-03028 (Apr. 29, 2020 standing order), but do not cite it as 2021 WL 1034838. Fix: use correct caption for the WL pin, or cite Hillo by docket/case number after confirming the intended opinion.",
+      "sources": [
+        "https://casetext.com/case/unicorn-glob-inc-v-golabs-inc",
+        "https://www.courtlistener.com/docket/14964585/unicorn-global-inc-v-hillo-america-inc/",
+        "https://storage.courtlistener.com/recap/gov.uscourts.cacd.743541/gov.uscourts.cacd.743541.80.0.pdf"
+      ]
+    },
+    {
+      "citation": "Accurate and Amazon. Los Angeles Cath. Worker v. Los Angeles Downtown Indus. Dist. Bus, 2015 WL 13650018",
+      "status": "VERIFIED",
+      "notes": "OCR-garbled index string; real case is Los Angeles Catholic Worker v. Los Angeles Downtown Industrial District Business Improvement District, C.D. Cal. No. 2:14-cv-07344-PSG. Case existence confirmed via complaint / settlement / docket materials. Prefer docket citation; confirm the 2015 WL 13650018 pin against Westlaw before reuse (open web did not surface a clean primary page for that exact WL number).",
+      "sources": [
+        "https://storage.courtlistener.com/recap/gov.uscourts.cacd.599642/gov.uscourts.cacd.599642.1.0.pdf",
+        "https://lafla.org/wp-content/uploads/2016/06/Los-Angeles-Catholic-Worker-et-al-v-LA-Downtown-Industrial-District-Business-Improvement-District-et-al.pdf"
+      ]
+    },
+    {
+      "citation": "Bd. of Educ. v. Doyle, 429 U.S. 274 (1977)",
+      "status": "VERIFIED",
+      "notes": "Real as Mt. Healthy City School District Board of Education v. Doyle, 429 U.S. 274 (1977) — mixed-motive / same-decision causation. Short 'Bd. of Educ. v. Doyle' form is recognizable; prefer Mt. Healthy caption in new filings.",
+      "sources": [
+        "https://www.govinfo.gov/content/pkg/USREPORTS-429/pdf/USREPORTS-429-274.pdf",
+        "https://www.law.cornell.edu/supremecourt/text/429/274"
+      ]
+    },
+    {
+      "citation": "Bill Johnson's Restaurants, Inc. v. NLRB, 461 U.S. 731 (1983)",
+      "status": "VERIFIED",
+      "notes": "Canonical SCOTUS decision on NLRB authority to halt retaliatory state-court suits lacking a reasonable basis. Matches petitioning / sham-litigation adjacent briefing.",
+      "sources": [
+        "https://www.law.cornell.edu/supremecourt/text/461/731",
+        "https://supreme.justia.com/cases/federal/us/461/731/"
+      ]
+    },
+    {
+      "citation": "Bolkiah v. Superior Ct, 74 Cal. App. 4th 984 (1999)",
+      "status": "VERIFIED",
+      "notes": "Real as Bolkiah v. Superior Court, 74 Cal.App.4th 984 (1999) — FSIA / service-of-process. Truncated 'Superior Ct' OK.",
+      "sources": [
+        "https://caselaw.findlaw.com/court/ca-court-of-appeal/1223884.html",
+        "https://app.midpage.ai/document/bolkiah-v-superior-court-2248770"
+      ]
+    },
+    {
+      "citation": "California DUI Lawyers Ass'n v. Department of Motor Vehicles, 77 Cal. App. 5th 517 (2022)",
+      "status": "VERIFIED",
+      "notes": "Real at 77 Cal.App.5th 517 — DMV APS hearing dual advocate/adjudicator due-process holding. Load-bearing for DMV structural-bias briefing.",
+      "sources": [
+        "https://www.courts.ca.gov/opinions/archive/B305604.PDF",
+        "https://caselaw.findlaw.com/court/ca-court-of-appeal/2169054.html"
+      ]
+    },
+    {
+      "citation": "California Motor Transport Co. v. Trucking Unlimited, 404 U.S. 508 (1972)",
+      "status": "VERIFIED",
+      "notes": "Canonical SCOTUS Noerr-Pennington sham-petitioning / antitrust access case.",
+      "sources": [
+        "https://www.law.cornell.edu/supremecourt/text/404/508",
+        "https://tile.loc.gov/storage-services/service/ll/usrep/usrep404/usrep404508/usrep404508.pdf"
+      ]
+    },
+    {
+      "citation": "California v. Acevedo, 500 U.S. 565 (1991)",
+      "status": "VERIFIED",
+      "notes": "Automobile-exception container-search SCOTUS decision.",
+      "sources": [
+        "https://www.govinfo.gov/content/pkg/USREPORTS-500/pdf/USREPORTS-500-565.pdf",
+        "https://www.law.cornell.edu/supremecourt/text/500/565"
+      ]
+    },
+    {
+      "citation": "California v. Carney, 471 U.S. 386 (1985)",
+      "status": "VERIFIED",
+      "notes": "Automobile exception applies to readily mobile motor homes. Confirmed.",
+      "sources": [
+        "https://www.law.cornell.edu/supremecourt/text/471/386",
+        "https://supreme.justia.com/cases/federal/us/471/386/"
+      ]
+    },
+    {
+      "citation": "E. & J. Gallo Winery v. Encana Energy Servs., Inc, 2005 WL 2435900",
+      "status": "VERIFIED",
+      "notes": "Real E.D. Cal. memorandum order, 2005 WL 2435900 (filed-rate / summary-judgment denial); also reported in related posture at 388 F. Supp. 2d 1148. WL pin confirmed via later Ninth Circuit discussion.",
+      "sources": [
+        "https://casetext.com/case/winery-v-encana",
+        "https://syfert.com/federal/district/cases/388-f-supp-2d-1148/e-j-gallo-winery-v-encana-energy-services-inc"
+      ]
+    },
+    {
+      "citation": "Griffin v. Green Tree Servicing, LLC, 166 F. Supp. 3d 1030",
+      "status": "VERIFIED",
+      "notes": "Real at 166 F. Supp. 3d 1030 (C.D. Cal. 2015) — mortgage / promissory-estoppel MTD grant.",
+      "sources": [
+        "https://app.midpage.ai/document/griffin-v-green-tree-servicing-7236687",
+        "https://case-law.vlex.com/vid/griffin-v-green-tree-885176899"
+      ]
+    },
+    {
+      "citation": "Helm v. Alderwoods Group, Inc, 696 F. Supp. 2d 1057",
+      "status": "VERIFIED",
+      "notes": "Real at 696 F. Supp. 2d 1057 (N.D. Cal. 2009) — wage-and-hour class / MTD & sanctions rulings. Also 2009 WL 2337529.",
+      "sources": [
+        "https://www.ecases.us/case/cand/c699641/helm-v-alderwoods-group-inc"
+      ]
+    },
+    {
+      "citation": "Herr v. Nestle U.S.A., Inc, 109 Cal.App. 4th 779",
+      "status": "VERIFIED",
+      "notes": "Real at 109 Cal.App.4th 779 (2003) — FEHA age discrimination / UCL injunctive relief.",
+      "sources": [
+        "https://syfert.com/california/cases/109-cal-app-4th-779/herr-v-nestle-usa-inc",
+        "https://case-law.vlex.com/vid/herr-v-nestle-u-892807048"
+      ]
+    },
+    {
+      "citation": "Jones v. Sutter Health, 499 F. Supp. 3d 704",
+      "status": "VERIFIED",
+      "notes": "Full caption United States ex rel. Jones v. Sutter Health, 499 F. Supp. 3d 704 (N.D. Cal. 2020) — FCA public-disclosure bar / FOIA. Short 'Jones v. Sutter Health' OK for existence; prefer ex rel. form.",
+      "sources": [
+        "https://pubkgroup.com/wp-content/uploads/2020/11/FCA-Jones-v.-Sutter-Health.pdf",
+        "https://case-law.vlex.com/vid/united-states-v-sutter-895425138"
+      ]
+    },
+    {
+      "citation": "L'Garde, Inc. v. Raytheon Space, 805 F. Supp. 2d 932",
+      "status": "VERIFIED",
+      "notes": "Real as L'Garde, Inc. v. Raytheon Space & Airborne Systems, 805 F. Supp. 2d 932 (C.D. Cal. 2011) — diversity / remand / Rule 9(b). Truncated defendant OK.",
+      "sources": [
+        "https://hallapproved.com/ca/cases/federal/district/2011/2169149/",
+        "https://www.ecases.us/case/cacd/c739273/lgarde-inc-v-raytheon-space-airborne-systems"
+      ]
+    },
+    {
+      "citation": "Los Angeles Cath. Worker v. Los Angeles Downtown Indus. Dist. Bus, 2015 WL 13650018",
+      "status": "VERIFIED",
+      "notes": "Real L.A. Catholic Worker v. L.A. Downtown Industrial District BID, C.D. Cal. No. 2:14-cv-07344-PSG (homeless-property seizure litigation). Confirm 2015 WL 13650018 on Westlaw before reuse; prefer docket citation in new filings.",
+      "sources": [
+        "https://storage.courtlistener.com/recap/gov.uscourts.cacd.599642/gov.uscourts.cacd.599642.1.0.pdf",
+        "https://storage.courtlistener.com/recap/gov.uscourts.cacd.599642.131.0.pdf"
+      ]
+    },
+    {
+      "citation": "MGIC Indem. Corp. v. Weisman, 803 F. 2d 500",
+      "status": "VERIFIED",
+      "notes": "Real at 803 F.2d 500 (9th Cir. 1986) — often cited for judicial notice of public records on a 12(b)(6) motion (via Mack).",
+      "sources": [
+        "https://www.studicata.com/case-briefs/case/mgic-indem-co-v-weisman",
+        "https://www.cetient.com/case/mgic-indemnity-corporation-v-lawrence-i-weisman-thomas-p-dunn-ln-478039"
+      ]
+    },
+    {
+      "citation": "Mack v. South Bay Beer Distribs, 798 F. 2d 1279",
+      "status": "VERIFIED",
+      "notes": "Real at 798 F.2d 1279 (9th Cir. 1986) — ADEA / collateral estoppel from unreviewed unemployment board findings; also the judicial-notice line later quoted in MGIC.",
+      "sources": [
+        "https://law.justia.com/cases/federal/appellate-courts/F2/798/1279/444705/",
+        "https://www.courtlistener.com/opinion/474911/henry-g-mack-v-south-bay-beer-distributors-inc-dba-bay-beer/"
+      ]
+    },
+    {
+      "citation": "Milhouse v. Carlson, 652 F. 2d 371",
+      "status": "VERIFIED",
+      "notes": "Real at 652 F.2d 371 (3d Cir. 1981) — prisoner access-to-courts / retaliation; liberal construction of pro se complaints.",
+      "sources": [
+        "https://law.justia.com/cases/federal/appellate-courts/F2/652/371/56700/"
+      ]
+    },
+    {
+      "citation": "Mir v. Little Co, 844 F. 2d 646",
+      "status": "VERIFIED",
+      "notes": "Full caption Mir v. Little Co. of Mary Hospital, 844 F.2d 646 (9th Cir. 1988) — physician antitrust / claim-preclusion / limitations. Truncation OK.",
+      "sources": [
+        "https://case-law.vlex.com/vid/mir-v-little-co-891882773"
+      ]
+    },
+    {
+      "citation": "Moser v. Benefytt, Inc, 8 F. 4th 872",
+      "status": "VERIFIED",
+      "notes": "Real at 8 F.4th 872 (9th Cir. 2021) — personal jurisdiction over absent class members / Bristol-Myers waiver timing.",
+      "sources": [
+        "https://cdn.ca9.uscourts.gov/datastore/opinions/2021/08/10/19-56224.pdf"
+      ]
+    },
+    {
+      "citation": "Neilson v. Union Bank, 290 F. Supp. 2d 1101",
+      "status": "VERIFIED",
+      "notes": "Real as Neilson v. Union Bank of California, N.A., 290 F. Supp. 2d 1101 (C.D. Cal. 2003) — Ponzi / aiding-abetting / alter ego pleading.",
+      "sources": [
+        "https://law.justia.com/cases/federal/district-courts/FSupp2/290/1101/2326612/"
+      ]
+    },
+    {
+      "citation": "Taylor v. Sturgell, 553 U.S. 880 (2008)",
+      "status": "VERIFIED",
+      "notes": "Canonical SCOTUS nonparty-preclusion / virtual-representation rejection. Matches preclusion briefing.",
+      "sources": [
+        "https://www.law.cornell.edu/supremecourt/text/07-371",
+        "https://supreme.justia.com/cases/federal/us/553/880/"
+      ]
+    },
+    {
+      "citation": "United States Small Bus. Admin. v. Bensal, 853 F. 3d 992",
+      "status": "VERIFIED",
+      "notes": "Real at 853 F.3d 992 (9th Cir. 2017) — FDCPA preempts California inheritance-disclaimer shield.",
+      "sources": [
+        "https://case-law.vlex.com/vid/u-s-small-bus-891363120"
+      ]
+    },
+    {
+      "citation": "United States v. Reyna-Tapia, 328 F. 3d 1114",
+      "status": "VERIFIED",
+      "notes": "Real at 328 F.3d 1114 (9th Cir. 2003) (en banc) — magistrate judges may conduct Rule 11 felony plea colloquies with consent; de novo review only on objection. Often cited for magistrate-report review standard.",
+      "sources": [
+        "https://app.midpage.ai/document/united-states-v-jose-francisco-781951",
+        "https://hallapproved.com/us/cases/ca9/2003/781951/"
+      ]
+    },
+    {
+      "citation": "United States v. Wilson, 631 F. 2d 118",
+      "status": "VERIFIED",
+      "notes": "Real at 631 F.2d 118 (9th Cir. 1980) — bail-jumping willfulness; notice + nonappearance alone insufficient. Confirm the briefed proposition matches this opinion (not a different Wilson).",
+      "sources": [
+        "https://app.midpage.ai/document/united-states-v-john-paul-382290"
+      ]
+    },
+    {
+      "citation": "Villiarimo v. Aloha Island Air, Inc, 281 F. 3d 1054",
+      "status": "VERIFIED",
+      "notes": "Real at 281 F.3d 1054 (9th Cir. 2002) — Title VII / retaliation causation / temporal proximity; also common for 'self-serving' declaration summary-judgment language. Pin the proposition carefully.",
+      "sources": [
+        "https://law.justia.com/cases/federal/appellate-courts/F3/281/1054/633158/"
+      ]
+    },
+    {
+      "citation": "Weston v. Motiu, 2025 WL 2916303",
+      "status": "VERIFIED",
+      "notes": "Real recent E.D. Cal. prisoner civil-rights order in De'Andre Ivison Weston v. Joana Motiu (service / FRCP 12(b)(4)–(5); Oct. 2025 magistrate order associated with 2025 WL 2916303). Thin primary-source footprint outside commercial databases — confirm pin on Westlaw before load-bearing use; do not overclaim holding.",
+      "sources": [
+        "https://exa.ai/library/legal/opinion/bjwb0b50pmp2cb1crf21y7bn",
+        "https://exa.ai/library/legal/opinion/6ythd76993n05n0knhz854td"
+      ]
+    },
+    {
+      "citation": "Zahrey v. Coffey, 221 F. 3d 342",
+      "status": "VERIFIED",
+      "notes": "Real at 221 F.3d 342 (2d Cir. 2000) — fabricated evidence / liberty deprivation; prosecutor investigative-capacity qualified immunity. Matches fabrication briefing.",
+      "sources": [
+        "https://case-law.vlex.com/vid/zahrey-v-coffey-plaintiff-892967133"
       ]
     }
   ]
