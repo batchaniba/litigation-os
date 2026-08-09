@@ -23,6 +23,7 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 - [Attorney Fees Analysis](#attorney-fees-analysis)
 - [Legal Theories](#legal-theories)
 - [Tech Stack](#tech-stack)
+- [Citation Verification](#citation-verification)
 - [Local Development](#local-development)
 - [Build](#build)
 - [Deployment](#deployment)
@@ -381,6 +382,41 @@ Two rules keep prose inside budget:
 
 On screen, prose over ~320 characters renders through `CollapsibleProse`, which clamps to a few lines with a "Show full …" toggle. Nothing is truncated in the DOM — print, find-in-page, and the Markdown export still see the whole record.
 
+## Citation Verification
+
+Authority quality is a liability surface: claims are cognizable and motions to dismiss are more likely to be denied. Locating a cite in a PDF is not enough — every load-bearing authority must **exist** and support the proposition claimed. The portfolio runs a four-stage funnel; `npm run validate` enforces the known-bad gate.
+
+| Stage | Command | Output |
+|---|---|---|
+| 1. Index | `npm run citations:index` | `internal/docs/citation_index.json` / `CITATION_INDEX.md` — every cite keyed to page + filing role |
+| 2. Lookup | `npm run citations:lookup:matter -- --matter N` | CourtListener + CAP `static.case.law` existence probe → `citation_lookup_matterNN.json` |
+| 3. Overlay | edit `citation_verification_rounds.json` | Fold lookup consensus into statuses (existence `FOUND` can clear `UNVERIFIED`; proposition `MISCITED` / `MISCHARACTERIZED` stays) |
+| 4. Ledger + gate | `npm run citations:verify` then `citations:check` | `citation_verification.json` / `CITATION_VERIFICATION.md`; CI fails on **new** fabricated cites in plaintiff filings |
+
+Controls (reconfirm when batching): *Richardson v. McKnight*, 521 U.S. 399 must resolve; *In re Leman*, 66 Cal.App.5th 200 must not. Justia is Cloudflare-blocked here; Google Scholar is unreliable; prefer CourtListener search + CAP static metadata/HTML.
+
+### Scoreboard (paired authorities)
+
+<!-- PORTFOLIO:CITATION_SCOREBOARD:START -->
+| Status | Count |
+|---|---|
+| VERIFIED | 285 |
+| MISCITED | 29 |
+| MISCHARACTERIZED | 6 |
+| NOT_FOUND | 6 |
+| UNVERIFIED | 415 |
+
+Paired authorities: **741**. P0 (plaintiff-only UNVERIFIED): **0**. P1 (plaintiff-only bad status): **27**. Ledger date: 2026-08-09.
+<!-- PORTFOLIO:CITATION_SCOREBOARD:END -->
+
+Priority queues from the ledger: **P0** = plaintiff-only + still `UNVERIFIED` (`npm run citations:queue`); **P1** = plaintiff-only + bad status (fix before the next brief). Pre-existing fabricated hits are debt-tracked in `citation_known_bad_debt.json` so CI stays green while corrected drafts replace them.
+
+Full reports: [`CITATION_INDEX.md`](internal/docs/CITATION_INDEX.md) · [`CITATION_AUDIT.md`](internal/docs/CITATION_AUDIT.md) · [`CITATION_VERIFICATION.md`](internal/docs/CITATION_VERIFICATION.md) · Matter 28 safe list [`MATTER_28_SAFE_CITE_LIST.md`](internal/docs/MATTER_28_SAFE_CITE_LIST.md). Claude Code sessions pick this up through the `citation-verify` skill in `.claude/skills/`.
+
+[↑ Contents](#contents)
+
+---
+
 ## Local Development
 
 ```bash
@@ -399,7 +435,12 @@ npm run sync:upcoming         # rebuild upcoming.json from timeline.json for the
 npm run generate:readme       # regenerate marked README tables from portfolio data
 npm run lint                  # ESLint over internal/src + internal/scripts
 npm run lint:fix              # ...and auto-fix what is safely fixable
-npm run validate              # lint + summaries + upcoming + README freshness + schema/doc checks
+npm run validate              # lint + summaries + upcoming + README + schema + citations:check + tests
+npm run citations:index       # rebuild page-keyed citation index from PDFs
+npm run citations:verify      # rebuild verification ledger
+npm run citations:check       # known-bad gate (also run by validate)
+npm run citations:queue       # print P0 plaintiff-only UNVERIFIED queue
+npm run citations:lookup:matter -- --matter 20   # CourtListener + CAP probe for one matter
 npm run scaffold:matter -- 34 "Newanforbi v. Example"
 ```
 

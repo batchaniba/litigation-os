@@ -144,7 +144,25 @@ Load-bearing threshold and clearly-established authorities verified this round i
 
 Page-keyed safe-cite / do-not-use list for the six research PDFs: `internal/docs/MATTER_28_SAFE_CITE_LIST.md` (rebuild with `python3 internal/scripts/build-matter28-safe-cite-list.py`).
 
+## Round 4 — Portfolio verification ledger (Aug. 9, 2026)
+
+Builds on PR #490's page-keyed index. Joins this audit onto every paired `authority` row, overlays WebSearch Round-4 results, and gates `npm run validate` so **new** introductions of known-fabricated cites into plaintiff filings fail CI (`citation_known_bad_debt.json` tracks pre-existing filed locations).
+
+- Ledger: `internal/docs/CITATION_VERIFICATION.md` / `citation_verification.json`
+- Generator: `python3 internal/scripts/verify-citations.py` (`--check`, `--queue`)
+- Round overlay: `internal/docs/citation_verification_rounds.json`
+
+Round 4 cleared the top of the plaintiff-only UNVERIFIED queue and surfaced new problems outside Matter 28, including *In re Hudson* printed as `1 Cal.App.4th 1` (correct **143**), *Burrell v. Jackson*, 2003 WL 23545858 (**NOT_FOUND**), and mischaracterized uses of *CHP v. Superior Court*, *People v. Rizo*, and *Pomona Police Officers' Ass'n* in Matter 9 mandate briefing.
+
+## Round 5 / 5b — Multi-source funnel institutionalized (Aug. 9, 2026)
+
+Direct probes via `internal/scripts/lookup-citations.py` (CourtListener `/api/rest/v4/search/` + CAP `static.case.law`). Portfolio commands: `npm run citations:lookup`, `citations:lookup:matter -- --matter N`, `citations:verify`, `citations:check`. README memorializes the funnel under **Citation Verification**; Claude skill at `.claude/skills/citation-verify/`.
+
+- Round 5: controls + high-risk pins → `citation_lookup_multisource.json`
+- Round 5b: all Matter 28 authorities → `citation_lookup_matter28.json` (Matter 28 UNVERIFIED → 0)
+- Justia remains Cloudflare-blocked; Scholar unreliable; CAP JSON API / CL citation-lookup need auth
+
 ---
 
-*Report prepared: July 12, 2026; Round 2/3 Matter 28 additions Aug. 9, 2026*
-*Methodology: five parallel citation-extraction and web-verification passes across the litigant's motion practice (complaints, FACs, oppositions, replies, demurrers, writ briefs, habeas petitions) in 18 of 24 matters with uploaded pleadings, cross-verified against CourtListener, Justia, Google Scholar, Casetext, and official California statutory text. Round 2–3 Matter 28 work used WebSearch against primary-source URLs after positive/negative method controls, because this environment's egress proxy blocks direct CourtListener / case.law / Justia fetches.*
+*Report prepared: July 12, 2026; Round 2/3 Matter 28 additions Aug. 9, 2026; Round 5/5b multisource Aug. 9, 2026*
+*Methodology: five parallel citation-extraction and web-verification passes across the litigant's motion practice (complaints, FACs, oppositions, replies, demurrers, writ briefs, habeas petitions) in 18 of 24 matters with uploaded pleadings, cross-verified against CourtListener, Justia, Google Scholar, Casetext, and official California statutory text. Round 2–4 used WebSearch against primary-source URLs after positive/negative method controls. Round 5+ adds direct CourtListener search + CAP static.case.law metadata/HTML where reachable.*
