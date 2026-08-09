@@ -74,8 +74,8 @@ folder-derived attribution reported zero for Matters 1, 2, 7 and 20.
 
 ## Highest-exposure citations
 
-564 of 741 paired authorities do not appear in the July audit. Of those,
-**137 are asserted only in Plaintiff's own filings**, with no court order or
+536 of 741 paired authorities do not appear in the July audit. Of those,
+**132 are asserted only in Plaintiff's own filings**, with no court order or
 opposing brief in the corpus citing them back. Unverified *and* uncorroborated is where a
 fabricated or miscited authority survives undetected — the queue worth working first.
 
@@ -89,7 +89,6 @@ fabricated or miscited authority survives undetected — the queue worth working
 | 6 | See Tameny v. Atlantic Richfield Co, 27 Cal. 3d 167 (1980) | 25, 26, 27 |
 | 6 | Vlandis v. Kline, 412 U.S. 441 (1973) | 33 |
 | 5 | Chism v. Washington State, 661 F. 3d 380 | 32 |
-| 5 | Foucha v. Louisiana, 504 U.S. 71 (1992) | 28 |
 | 5 | Payton v. New York, 445 U.S. 573 (1980) | 32 |
 | 4 | Collins v. Virginia, 584 U.S. 586 (2018) | 32 |
 | 4 | Costanich v. Dep't of Social, 627 F. 3d 1101 | 32 |
@@ -107,7 +106,6 @@ fabricated or miscited authority survives undetected — the queue worth working
 | 3 | Gantt v. Sentry Insurance, 1 Cal. 4th 1083 (1992) | 27 |
 | 3 | Home v. Dep’t of Health Care Services, 204 Cal.App. 4th 676 (2012) | 9 |
 | 3 | In re Stevens, 119 Cal.App. 4th 1228 (2004) | 5, 15 |
-| 3 | Neal v. Shimoda, 131 F. 3d 818 | 28 |
 | 3 | Scenic Community v. County of L.A, 11 Cal. 3d 506 (1974) | 9 |
 | 3 | See California Highway Patrol v. Superior Court, 158 Cal.App. 4th 726  | 9 |
 | 3 | See JKH Enterprises, Inc. v. Dept. of Industrial Relations, 142 Cal.Ap | 9 |
@@ -121,8 +119,10 @@ fabricated or miscited authority survives undetected — the queue worth working
 | 2 | Bd. of Educ. v. Loudermill, 470 U.S. 532 (1985) | 33 |
 | 2 | Carey v. Piphus, 435 U.S. 247 (1978) | 33 |
 | 2 | Cervantes v. City of San Diego, 5 F. 3d 1273 | 29 |
+| 2 | Daniels-Hall v. Nat’l Educ. Ass’n, 629 F. 3d 992 | 29 |
+| 2 | Epstein v. Washington Energy Co, 83 F. 3d 1136 | 29 |
 
-_137 total; full list in the JSON._
+_132 total; full list in the JSON._
 
 ## Known-bad citations from the July audit — current locations
 
