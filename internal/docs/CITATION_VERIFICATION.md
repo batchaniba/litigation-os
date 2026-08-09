@@ -1,6 +1,6 @@
 # Citation Verification Ledger
 
-Generated 2026-08-09 by `verify-citations.py`. Joins the PR #490 citation index to the July / Matter-28 citation audit, then overlays Round 4+ WebSearch results.
+Generated 2026-08-09 by `verify-citations.py`. Joins the PR #490 citation index to the July / Matter-28 citation audit, then overlays Round 4+ verification results (WebSearch + CourtListener/CAP multisource confirmation).
 
 ## Why this exists
 
@@ -23,7 +23,14 @@ The campaign is entering a phase where claims are cognizable and motions to dism
 
 - Positive: Richardson v. McKnight, 521 U.S. 399 (1997) — must be findable
 - Negative: In re Leman, 66 Cal.App.5th 200 — must NOT be findable
-- Direct CourtListener / case.law / Justia fetches are egress-blocked; statuses rest on WebSearch summaries + primary-source URLs.
+- Multi-source reachability (this environment):
+  - `courtlistener_search`: ok (unauthenticated /api/rest/v4/search/)
+  - `case_law_api`: html docs only — JSON API not usable without auth/migration
+  - `case_law_static`: ok (CasesMetadata.json + html/{file_name}.html)
+  - `justia`: blocked (Cloudflare 403) in this environment
+  - `google_scholar`: unreliable (often 403)
+  - `courtlistener_citation_lookup`: requires API token (401)
+- Confirmation artifact: `citation_lookup_multisource.json` (20 probes on 2026-08-09).
 
 ## Known fabricated / hard NOT_FOUND — live locations
 
@@ -134,9 +141,9 @@ _0 total in JSON `priorityQueue`._
 
 ## Round overlay
 
-Loaded round: **2026-08-09 Round 4 — portfolio P0 (batches A–D; LACW WL correction)** — 177 results
+Loaded round: **2026-08-09 Round 4 — portfolio P0 (batches A–D; LACW WL correction); Round 5 multisource confirmation (CourtListener + CAP static)** — 177 results
 
-Method note: WebSearch against primary-source URLs after positive control (Richardson v. McKnight, 521 U.S. 399 — hit govinfo.gov U.S. Reports PDF) and negative control (In re Leman, 66 Cal.App.5th 200 — no matching decision; only Lemanuel C. / Marriage of Lemen noise). CourtListener/case.law/Justia direct fetches remain egress-blocked. Statuses rest on search-returned summaries plus primary URLs. Characterization flags applied when index sample context attributes a proposition the opinion does not support. Batch D closed the remaining plaintiff-only UNVERIFIED queue.
+Method note: Round 4: WebSearch against primary-source URLs after positive control (Richardson v. McKnight, 521 U.S. 399) and negative control (In re Leman, 66 Cal.App.5th 200). Round 5: reconfirmed controls + high-risk pins via CourtListener /api/rest/v4/search/ and CAP static.case.law CasesMetadata/HTML (lookup-citations.py → citation_lookup_multisource.json). Justia is Cloudflare-blocked in this environment; Google Scholar is unreliable (often 403); api.case.law JSON and CourtListener citation-lookup require auth. CAP Cal.App.5th bulk coverage currently only volumes 1–11, so the Leman negative control rests on CourtListener (no hit) plus missing CAP volume 66. Characterization flags still require opinion-text review.
 
 ## Regenerating
 ```
@@ -144,6 +151,7 @@ Method note: WebSearch against primary-source URLs after positive control (Richa
 python3 internal/scripts/verify-citations.py
 python3 internal/scripts/verify-citations.py --check
 python3 internal/scripts/verify-citations.py --queue
+python3 internal/scripts/lookup-citations.py --batch all
 ```
 
 ## Known-bad debt gate

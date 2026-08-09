@@ -10,13 +10,15 @@ Writes:
   internal/docs/CITATION_VERIFICATION.md
 
 Also reads (optional overlays):
-  internal/docs/citation_verification_rounds.json  — Round 4+ WebSearch results
+  internal/docs/citation_verification_rounds.json  — Round 4+ results (+ Round 5 multisource note)
   internal/docs/citation_known_bad_debt.json       — tracked locations of known fabrications
+  internal/docs/citation_lookup_multisource.json   — CourtListener + CAP static.case.law probes
 
 Usage:
   python3 internal/scripts/verify-citations.py           # rebuild artifacts
   python3 internal/scripts/verify-citations.py --check   # fail on new known-bad hits
   python3 internal/scripts/verify-citations.py --queue   # print plaintiff-only unaudited queue
+  python3 internal/scripts/lookup-citations.py --batch all   # multi-source existence probe
 """
 
 from __future__ import annotations
@@ -35,6 +37,7 @@ INDEX_PATH = DOCS / "citation_index.json"
 AUDIT_PATH = DOCS / "citation_audit.json"
 ROUNDS_PATH = DOCS / "citation_verification_rounds.json"
 DEBT_PATH = DOCS / "citation_known_bad_debt.json"
+MULTISOURCE_PATH = DOCS / "citation_lookup_multisource.json"
 SUMMARIES_PATH = ROOT / "src/data/matters/summaries.json"
 OUT_JSON = DOCS / "citation_verification.json"
 OUT_MD = DOCS / "CITATION_VERIFICATION.md"
@@ -213,6 +216,7 @@ def build_verification():
     audit = load_json(AUDIT_PATH, {"citations": [], "summary": {}})
     rounds = load_json(ROUNDS_PATH, {"round": None, "method": "", "results": []})
     debt = load_json(DEBT_PATH, {"entries": []})
+    multisource = load_json(MULTISOURCE_PATH, None)
     summaries = load_json(SUMMARIES_PATH, [])
 
     by_name, by_reporter = build_audit_indexes(audit.get("citations") or [])
@@ -309,13 +313,40 @@ def build_verification():
         "methodology": (
             "Join citation_audit.json onto citation_index.json authority rows; "
             "overlay Round 4+ results from citation_verification_rounds.json. "
-            "WebSearch against primary-source URLs with positive control "
-            "(Richardson v. McKnight) and negative control (In re Leman). "
-            "CourtListener/case.law/Justia direct fetches remain egress-blocked."
+            "Existence checks use WebSearch plus direct CourtListener search API "
+            "and CAP static.case.law CasesMetadata/HTML (see lookup-citations.py / "
+            "citation_lookup_multisource.json). Positive control: Richardson v. "
+            "McKnight. Negative control: In re Leman. Justia is Cloudflare-blocked "
+            "here; Google Scholar is unreliable (often 403); CAP JSON API and "
+            "CourtListener citation-lookup require auth."
         ),
         "controls": {
             "positive": "Richardson v. McKnight, 521 U.S. 399 (1997) — must be findable",
             "negative": "In re Leman, 66 Cal.App.5th 200 — must NOT be findable",
+        },
+        "multisource": {
+            "artifact": "citation_lookup_multisource.json" if multisource else None,
+            "generatedDate": (multisource or {}).get("generatedDate"),
+            "resultCount": (multisource or {}).get("resultCount"),
+            "reachability": (multisource or {}).get("reachability"),
+            "consensusCounts": (
+                {
+                    c: sum(
+                        1
+                        for r in (multisource or {}).get("results") or []
+                        if r.get("consensus") == c
+                    )
+                    for c in (
+                        "FOUND",
+                        "CAPTION_MISMATCH",
+                        "NOT_FOUND",
+                        "PARTIAL",
+                        "UNKNOWN",
+                    )
+                }
+                if multisource
+                else None
+            ),
         },
         "corpusAuthorities": len(rows),
         "statusCounts": dict(status_counts),
@@ -344,7 +375,8 @@ def build_verification():
     w(
         f"Generated {out['generatedDate']} by `verify-citations.py`. "
         "Joins the PR #490 citation index to the July / Matter-28 citation audit, "
-        "then overlays Round 4+ WebSearch results.\n"
+        "then overlays Round 4+ verification results "
+        "(WebSearch + CourtListener/CAP multisource confirmation).\n"
     )
     w("## Why this exists\n")
     w(
@@ -364,10 +396,20 @@ def build_verification():
     w("## Method controls\n")
     w(f"- Positive: {out['controls']['positive']}")
     w(f"- Negative: {out['controls']['negative']}")
-    w(
-        "- Direct CourtListener / case.law / Justia fetches are egress-blocked; "
-        "statuses rest on WebSearch summaries + primary-source URLs.\n"
-    )
+    if multisource and multisource.get("reachability"):
+        w("- Multi-source reachability (this environment):")
+        for k, v in multisource["reachability"].items():
+            w(f"  - `{k}`: {v}")
+        w(
+            f"- Confirmation artifact: `citation_lookup_multisource.json` "
+            f"({multisource.get('resultCount', 0)} probes on "
+            f"{multisource.get('generatedDate', '?')}).\n"
+        )
+    else:
+        w(
+            "- Run `python3 internal/scripts/lookup-citations.py --batch all` "
+            "to probe CourtListener + CAP static.case.law.\n"
+        )
     w("## Known fabricated / hard NOT_FOUND — live locations\n")
     for fab in fabricated_live:
         w(
@@ -420,7 +462,8 @@ def build_verification():
     w("## Regenerating\n```\n")
     w("python3 internal/scripts/verify-citations.py")
     w("python3 internal/scripts/verify-citations.py --check")
-    w("python3 internal/scripts/verify-citations.py --queue\n```\n")
+    w("python3 internal/scripts/verify-citations.py --queue")
+    w("python3 internal/scripts/lookup-citations.py --batch all\n```\n")
     w("## Known-bad debt gate\n")
     w(
         "`--check` fails if a known-fabricated pattern appears in a `plaintiff_filing` "

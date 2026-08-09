@@ -1,10 +1,30 @@
 {
   "generatedBy": "internal/scripts/verify-citations.py",
   "generatedDate": "2026-08-09",
-  "methodology": "Join citation_audit.json onto citation_index.json authority rows; overlay Round 4+ results from citation_verification_rounds.json. WebSearch against primary-source URLs with positive control (Richardson v. McKnight) and negative control (In re Leman). CourtListener/case.law/Justia direct fetches remain egress-blocked.",
+  "methodology": "Join citation_audit.json onto citation_index.json authority rows; overlay Round 4+ results from citation_verification_rounds.json. Existence checks use WebSearch plus direct CourtListener search API and CAP static.case.law CasesMetadata/HTML (see lookup-citations.py / citation_lookup_multisource.json). Positive control: Richardson v. McKnight. Negative control: In re Leman. Justia is Cloudflare-blocked here; Google Scholar is unreliable (often 403); CAP JSON API and CourtListener citation-lookup require auth.",
   "controls": {
     "positive": "Richardson v. McKnight, 521 U.S. 399 (1997) \u2014 must be findable",
     "negative": "In re Leman, 66 Cal.App.5th 200 \u2014 must NOT be findable"
+  },
+  "multisource": {
+    "artifact": "citation_lookup_multisource.json",
+    "generatedDate": "2026-08-09",
+    "resultCount": 20,
+    "reachability": {
+      "courtlistener_search": "ok (unauthenticated /api/rest/v4/search/)",
+      "case_law_api": "html docs only \u2014 JSON API not usable without auth/migration",
+      "case_law_static": "ok (CasesMetadata.json + html/{file_name}.html)",
+      "justia": "blocked (Cloudflare 403) in this environment",
+      "google_scholar": "unreliable (often 403)",
+      "courtlistener_citation_lookup": "requires API token (401)"
+    },
+    "consensusCounts": {
+      "FOUND": 10,
+      "CAPTION_MISMATCH": 4,
+      "NOT_FOUND": 6,
+      "PARTIAL": 0,
+      "UNKNOWN": 0
+    }
   },
   "corpusAuthorities": 741,
   "statusCounts": {
@@ -19,9 +39,9 @@
     "plaintiffOnlyBad": 27
   },
   "rounds": {
-    "loaded": "2026-08-09 Round 4 \u2014 portfolio P0 (batches A\u2013D; LACW WL correction)",
+    "loaded": "2026-08-09 Round 4 \u2014 portfolio P0 (batches A\u2013D; LACW WL correction); Round 5 multisource confirmation (CourtListener + CAP static)",
     "resultCount": 177,
-    "method": "WebSearch against primary-source URLs after positive control (Richardson v. McKnight, 521 U.S. 399 \u2014 hit govinfo.gov U.S. Reports PDF) and negative control (In re Leman, 66 Cal.App.5th 200 \u2014 no matching decision; only Lemanuel C. / Marriage of Lemen noise). CourtListener/case.law/Justia direct fetches remain egress-blocked. Statuses rest on search-returned summaries plus primary URLs. Characterization flags applied when index sample context attributes a proposition the opinion does not support. Batch D closed the remaining plaintiff-only UNVERIFIED queue."
+    "method": "Round 4: WebSearch against primary-source URLs after positive control (Richardson v. McKnight, 521 U.S. 399) and negative control (In re Leman, 66 Cal.App.5th 200). Round 5: reconfirmed controls + high-risk pins via CourtListener /api/rest/v4/search/ and CAP static.case.law CasesMetadata/HTML (lookup-citations.py \u2192 citation_lookup_multisource.json). Justia is Cloudflare-blocked in this environment; Google Scholar is unreliable (often 403); api.case.law JSON and CourtListener citation-lookup require auth. CAP Cal.App.5th bulk coverage currently only volumes 1\u201311, so the Leman negative control rests on CourtListener (no hit) plus missing CAP volume 66. Characterization flags still require opinion-text review."
   },
   "knownFabricated": [
     {
@@ -556,7 +576,7 @@
       "plaintiffOnly": true,
       "status": "MISCHARACTERIZED",
       "statusSource": "round",
-      "notes": "Real at 22 Cal.4th 681 \u2014 Penal Code \u00a7 113 / Proposition 187 false-documents / factual-impossibility case. Index context attributes a surplusage / 'up to' statutory-construction holding. Wrong proposition. Do not brief Rizo for surplusage.",
+      "notes": "Real at 22 Cal.4th 681 \u2014 Penal Code \u00a7 113 / Proposition 187 false-documents / factual-impossibility case. Index context attributes a surplusage / 'up to' statutory-construction holding. Wrong proposition. Do not brief Rizo for surplusage. Round 5 multisource (FOUND): CourtListener + CAP static.case.law \u2192 People v. Rizo.",
       "sampleContext": "Page 6 of 9 words \u201cup to\u201d surplusage, violating the canon of statutory construction that every word in a statute must be given effect. People v. Rizo (2000) 22 Cal.4th 681, 685. 26. By defining \u201ccompletion\u201d as impossible before discharge and applying automatic term-based bars, CD",
       "locations": [
         {
@@ -761,7 +781,7 @@
       "plaintiffOnly": true,
       "status": "MISCITED",
       "statusSource": "round",
-      "notes": "Duplicate curly-apostrophe row; same miscaption as Home v. Dep't of Health Care Services.",
+      "notes": "Duplicate curly-apostrophe row; same miscaption as Home v. Dep't of Health Care Services. Round 5 multisource (CAPTION_MISMATCH): CourtListener + CAP static.case.law \u2192 California Ass'n for Health Services at Home v. State Department of Health Care Services.",
       "sampleContext": "t of the respondent; and (2) a clear, present, and beneficial right in the petitioner to the performance of that duty. California Ass'n for Health Services at Home v. Dep't of Health Care Services (2012) 204 Cal.App.4th 676, 683. While the ultimate decision to discharge a parolee",
       "locations": [
         {
@@ -819,7 +839,7 @@
       "plaintiffOnly": true,
       "status": "MISCITED",
       "statusSource": "round",
-      "notes": "Real case is In re Hudson, 143 Cal.App.4th 1 (2006) \u2014 computer/Internet parole condition. Printed volume '1' is wrong (should be 143). Also check proposition: Hudson is not a general rehabilitation/treatment-completion authority.",
+      "notes": "Real case is In re Hudson, 143 Cal.App.4th 1 (2006) \u2014 computer/Internet parole condition. Printed volume '1' is wrong (should be 143). Also check proposition: Hudson is not a general rehabilitation/treatment-completion authority. Round 5 multisource (CAPTION_MISMATCH): CourtListener + CAP static.case.law \u2192 Weidenfeller v. Star & Garter.",
       "sampleContext": "onstructive individuals\"', '\"to end criminal careers through the rehabilitation of those 20 convicted of crime\"', and to [help them] become self-supporting.\" In re Hudson (2006) 14 2 1 Cal.App.4th 1, at p. 9, citing In re Stevens (2004) 119 Cal.App.4th 1228 at 1233. A condition o",
       "locations": [
         {
@@ -1038,7 +1058,7 @@
       "plaintiffOnly": true,
       "status": "NOT_FOUND",
       "statusSource": "round",
-      "notes": "No decision matching Burrell v. Jackson, 2003 WL 23545858 for absolute immunity of a hearing officer. Do not brief. Use Forrester / Stump / Swift / Miller v. Gammie functional-immunity line instead.",
+      "notes": "No decision matching Burrell v. Jackson, 2003 WL 23545858 for absolute immunity of a hearing officer. Do not brief. Use Forrester / Stump / Swift / Miller v. Gammie functional-immunity line instead. Round 5 multisource (NOT_FOUND): CourtListener + CAP static.case.law.",
       "sampleContext": "y Hearing Officer' and the general nature of her duties, without conducting the required functional analysis. F&R at 5-7. The Findings and Recommendations cite Burrell v. Jackson, 2003 WL 23545858 (E.D. Va. 2003), and Baker v. Bzydra, 2019 WL 6619348 (D. Conn. 2019), both out-of-",
       "locations": [
         {
@@ -1114,7 +1134,7 @@
       "plaintiffOnly": true,
       "status": "MISCITED",
       "statusSource": "round",
-      "notes": "Duplicate curly-apostrophe row; same miscaption as Home v. Dep't of Health Care Services.",
+      "notes": "Duplicate curly-apostrophe row; same miscaption as Home v. Dep't of Health Care Services. Round 5 multisource (CAPTION_MISMATCH): CourtListener + CAP static.case.law \u2192 California Ass'n for Health Services at Home v. State Department of Health Care Services.",
       "sampleContext": "t of the respondent\u2026 and (2) a clear, present and beneficial right in the petitioner to the performance of that duty.\u201d California Ass\u2019n for Health Services at Home v. Dep\u2019t of Health Care Services (2012) 204 Cal.App.4th 676, 683. 21. A ministerial duty arises when the law special",
       "locations": [
         {
@@ -1191,7 +1211,7 @@
       "plaintiffOnly": true,
       "status": "MISCITED",
       "statusSource": "round",
-      "notes": "Correct: Western/California, Ltd. v. Dry Creek Joint Elementary School Dist., 50 Cal.App.4th 1461 (1996) \u2014 not page 1; party name omits Western/.",
+      "notes": "Correct: Western/California, Ltd. v. Dry Creek Joint Elementary School Dist., 50 Cal.App.4th 1461 (1996) \u2014 not page 1; party name omits Western/. Round 5 multisource (NOT_FOUND): CourtListener + CAP static.case.law.",
       "sampleContext": "or without reasonable or rational basis as a matter of law]; SN Sands Corp. v. City and County of San Francisco (2008) 167 Cal.App.4th 185, 189 [same]; Western/California, Ltd. v. Dry Creek Joint Elementary Sch. Dist. (1996) 50 Cal.App.4th 1461, 1496-1497 [same]; Bunnett v. Regen",
       "locations": [
         {
@@ -1224,7 +1244,7 @@
       "plaintiffOnly": true,
       "status": "MISCITED",
       "statusSource": "round",
-      "notes": "Same problem \u2014 correct caption is Soranno's Gasco, Inc. v. Morgan, 874 F.2d 1310 (9th Cir. 1989).",
+      "notes": "Same problem \u2014 correct caption is Soranno's Gasco, Inc. v. Morgan, 874 F.2d 1310 (9th Cir. 1989). Round 5 multisource (CAPTION_MISMATCH): CourtListener + CAP static.case.law \u2192 Soranno's Gasco, Inc. v. Morgan.",
       "sampleContext": "government 13 officials, and participating in oversight processes such as POST investigations. Borough of 14 Duryea v. Guarnieri, 564 U.S. 379, 387 (2011); Soranno's Gasco, Inc. v. Morgan Hill Unified 15 Sch. Dist., 874 F.2d 1310, 1314 (9th Cir. 1989). To state a retaliation clai",
       "locations": [
         {
@@ -1255,7 +1275,7 @@
       "plaintiffOnly": true,
       "status": "MISCITED",
       "statusSource": "round",
-      "notes": "Same opinion as Swift v. California, 384 F.3d 1184 (9th Cir. 2004); 'Christian' is a defendant parole officer, not the case caption. Cite as Swift v. California.",
+      "notes": "Same opinion as Swift v. California, 384 F.3d 1184 (9th Cir. 2004); 'Christian' is a defendant parole officer, not the case caption. Cite as Swift v. California. Round 5 multisource (CAPTION_MISMATCH): CourtListener + CAP static.case.law \u2192 Michael T. Swift v. State of California Department of Corrections Keith Tandy, and Steve Christian Maritza Rodriguez.",
       "sampleContext": "ile parole officers may be absolutely immune from suit arising from the 'imposition of parole conditions' under a theory of quasi-judicial absolute immunity -- Swift v. Christian, 384 F.3d 1184, 1189 (9th Cir. 2004);",
       "locations": [
         {
@@ -1286,7 +1306,7 @@
       "plaintiffOnly": true,
       "status": "MISCITED",
       "statusSource": "round",
-      "notes": "Party/WL pairing is unsafe. Open-web / Casetext association places 2021 WL 1034838 with Unicorn Global, Inc. v. Golabs, Inc. (N.D. Tex.), not Hillo America. A real Unicorn Global v. Hillo America, Inc. action exists at C.D. Cal. No. 2:19-cv-03028 (Apr. 29, 2020 standing order / 2021 consent judgment), but do not cite it as 2021 WL 1034838. Fix: use correct caption for the WL pin, or cite Hillo by docket number after confirming the intended opinion.",
+      "notes": "Party/WL pairing is unsafe. Open-web / Casetext association places 2021 WL 1034838 with Unicorn Global, Inc. v. Golabs, Inc. (N.D. Tex.), not Hillo America. A real Unicorn Global v. Hillo America, Inc. action exists at C.D. Cal. No. 2:19-cv-03028 (Apr. 29, 2020 standing order / 2021 consent judgment), but do not cite it as 2021 WL 1034838. Fix: use correct caption for the WL pin, or cite Hillo by docket number after confirming the intended opinion. Round 5 multisource (NOT_FOUND): CourtListener + CAP static.case.law.",
       "sampleContext": "..................................................... 15 Sugar Co-op v. Archer-Daniels-Midland Co., 2012 WL 3101659, at *5 (C.D. Cal. 2012) .............. 14 Unicorn Glob., Inc. v. Hillo Am., Inc., No. LACV1903028, 2021 WL 1034838, at *1 (C.D. Cal. Feb. 12, 2021) ................",
       "locations": [
         {
@@ -1317,7 +1337,7 @@
       "plaintiffOnly": true,
       "status": "MISCITED",
       "statusSource": "round",
-      "notes": "Garbled index pairing plus wrong WL pin. Real case is Los Angeles Catholic Worker v. Los Angeles Downtown Industrial District Business Improvement District, No. CV 14-7344 PSG (AJWx), C.D. Cal. Correct Westlaw cite reported as 2015 WL 13649801 (Jan. 13, 2015), not 2015 WL 13650018. 'Accurate and Amazon' prefix is OCR/index noise from an unrelated matter.",
+      "notes": "Garbled index pairing plus wrong WL pin. Real case is Los Angeles Catholic Worker v. Los Angeles Downtown Industrial District Business Improvement District, No. CV 14-7344 PSG (AJWx), C.D. Cal. Correct Westlaw cite reported as 2015 WL 13649801 (Jan. 13, 2015), not 2015 WL 13650018. 'Accurate and Amazon' prefix is OCR/index noise from an unrelated matter. Round 5 multisource (NOT_FOUND): CourtListener + CAP static.case.law.",
       "sampleContext": "Suite 2450 Los Angeles, CA 90071 Website to deny Plaintiff employment. FAC \u00b6 29. Accordingly, Plaintiff has properly pled an agency relationship between Accurate and Amazon. Los Angeles Cath. Worker v. Los Angeles Downtown Indus. Dist. Bus. Improvement Dist., No. CV147344PSGAJWX,",
       "locations": [
         {
@@ -1443,7 +1463,7 @@
       "plaintiffOnly": true,
       "status": "MISCITED",
       "statusSource": "round",
-      "notes": "Wrong page \u2014 correct is Lockley v. Law Office of Cantrell, Green, Pekich, Cruz & McCort, 91 Cal.App.4th 875 (2001).",
+      "notes": "Wrong page \u2014 correct is Lockley v. Law Office of Cantrell, Green, Pekich, Cruz & McCort, 91 Cal.App.4th 875 (2001). Round 5 multisource (NOT_FOUND): CourtListener + CAP static.case.law.",
       "sampleContext": "CE \u2014 NEWANFORBI v. CHP, ET AL. (26CV191136) court of this state or any court of record of the United States.\" (People v. Preslie (1977) 70 Cal.App.3d 486, 493; Lockley v. Law Office of Cantrell, Green, Pekich, Cruz & McCort (2001) 91 Cal.App.4th 401, 406.) Evidence Code section 4",
       "locations": [
         {
@@ -1468,7 +1488,7 @@
       "plaintiffOnly": true,
       "status": "MISCITED",
       "statusSource": "round",
-      "notes": "Real case/docket correct (CV 14-7344 PSG (AJWx), C.D. Cal.), but Westlaw number is wrong: correct pin reported as 2015 WL 13649801 (Jan. 13, 2015), not 2015 WL 13650018. Prefer docket citation.",
+      "notes": "Real case/docket correct (CV 14-7344 PSG (AJWx), C.D. Cal.), but Westlaw number is wrong: correct pin reported as 2015 WL 13649801 (Jan. 13, 2015), not 2015 WL 13650018. Prefer docket citation. Round 5 multisource (NOT_FOUND): CourtListener + CAP static.case.law.",
       "sampleContext": "........................... 8, 9 Lee v. City of Los Angeles, 250 F.3d 668, 688 (9th Cir. 2001) ............................................................ 8 Los Angeles Cath. Worker v. Los Angeles Downtown Indus. Dist. Bus. Improvement Dist., No. CV147344PSGAJWX, 2015 WL 1365001",
       "locations": [
         {
@@ -1543,7 +1563,7 @@
       "plaintiffOnly": true,
       "status": "MISCITED",
       "statusSource": "round",
-      "notes": "874 F.2d 1310 is Soranno's Gasco, Inc. v. Morgan (9th Cir. 1989) against Stanislaus County air-pollution officials \u2014 not Morgan Hill Unified. Also misspells Unified.",
+      "notes": "874 F.2d 1310 is Soranno's Gasco, Inc. v. Morgan (9th Cir. 1989) against Stanislaus County air-pollution officials \u2014 not Morgan Hill Unified. Also misspells Unified. Round 5 multisource (CAPTION_MISMATCH): CourtListener + CAP static.case.law \u2192 Soranno's Gasco, Inc. v. Morgan.",
       "sampleContext": "s against government officials, and participating in oversight processes such as POST investigations. Borough of Duryea v. Guarnieri, 564 U.S. 379, 387 (2011); Soranno\u2019s Gasco, Inc. v. Morgan Hill Uniifed Sch. Dist., 874 F.2d 1310, 1314 (9th Cir. 1989). To state a retaliation cla",
       "locations": [
         {
@@ -2273,7 +2293,7 @@
       "plaintiffOnly": true,
       "status": "VERIFIED",
       "statusSource": "round",
-      "notes": "Canonical absolute judicial immunity decision. Matches immunity briefing.",
+      "notes": "Canonical absolute judicial immunity decision. Matches immunity briefing. Round 5 multisource (FOUND): CourtListener + CAP static.case.law \u2192 Stump v. Sparkman.",
       "sampleContext": "er on the face of the complaint. Mireles v. Waco, 502 U.S. 9, 11-12 (1991) (immunity does not extend to actions taken in the complete absence of jurisdiction); Stump v. Sparkman, 435 U.S. 349, 356-57 (1978) (same).",
       "locations": [
         {
@@ -6429,7 +6449,7 @@
       "plaintiffOnly": false,
       "status": "MISCITED",
       "statusSource": "round",
-      "notes": "Wrong page \u2014 correct is Lockley v. Law Office of Cantrell, Green, Pekich, Cruz & McCort, 91 Cal.App.4th 875 (2001).",
+      "notes": "Wrong page \u2014 correct is Lockley v. Law Office of Cantrell, Green, Pekich, Cruz & McCort, 91 Cal.App.4th 875 (2001). Round 5 multisource (NOT_FOUND): CourtListener + CAP static.case.law.",
       "sampleContext": "ural posture \u2014 but the court may not take judicial notice of the truth of disputed hearsay statements or factual findings contained within the record. (Accord, Lockley v. Law Office of Cantrell, Green, Pekich, Cruz & McCort (2001) 91 Cal.App.4th 875, 882; Aaronoff v. Martinez-Sen",
       "locations": [
         {
@@ -8591,7 +8611,7 @@
       "plaintiffOnly": false,
       "status": "VERIFIED",
       "statusSource": "round",
-      "notes": "Canonical absolute judicial immunity decision. Matches immunity briefing.",
+      "notes": "Canonical absolute judicial immunity decision. Matches immunity briefing. Round 5 multisource (FOUND): CourtListener + CAP static.case.law \u2192 Stump v. Sparkman.",
       "sampleContext": ". Defendant Candelaria nevertheless convened the hearing and sustained the suspension, exercising adjudicative power over a subject matter that did not exist. (See Stump v. Sparkman, 435 U.S. 349, 356\u2013357 (1978).)",
       "locations": [
         {
@@ -10846,7 +10866,7 @@
       "plaintiffOnly": false,
       "status": "NOT_FOUND",
       "statusSource": "round",
-      "notes": "No decision matching Burrell v. Jackson, 2003 WL 23545858 for absolute immunity of a hearing officer. Do not brief. Use Forrester / Stump / Swift / Miller v. Gammie functional-immunity line instead.",
+      "notes": "No decision matching Burrell v. Jackson, 2003 WL 23545858 for absolute immunity of a hearing officer. Do not brief. Use Forrester / Stump / Swift / Miller v. Gammie functional-immunity line instead. Round 5 multisource (NOT_FOUND): CourtListener + CAP static.case.law.",
       "sampleContext": "actions were taken in the course of her official duties, which are essentially judicial in nature. Accordingly, Defendant Candelaria is immune from suit. See Burrell v. Jackson, 2003 WL 23545858, at *4 (E.D. Va. Apr. 21, 2003) (finding DMV hearing officer immune from suit arising",
       "locations": [
         {

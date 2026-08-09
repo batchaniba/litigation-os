@@ -27,6 +27,7 @@
     "index:search": "python3 internal/scripts/search-documents.py",
     "citations:verify": "python3 internal/scripts/verify-citations.py",
     "citations:check": "python3 internal/scripts/verify-citations.py --check",
+    "citations:lookup": "python3 internal/scripts/lookup-citations.py --batch all",
     "extract:matter1": "node internal/scripts/extract-matter-pdfs.mjs"
   },
   "dependencies": {
