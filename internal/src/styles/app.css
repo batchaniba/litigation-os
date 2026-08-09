@@ -199,10 +199,17 @@ a { color: inherit; }
 .firm-link:hover .firm-external-hint { opacity: 1; transform: translateY(0); }
 .legacy-counsel-names { color: #495467; text-align: right; font-family: var(--font-sans); font-size: 10px; font-weight: 600; line-height: 1.5; }
 /* Fixed boxes for every theme — dark/light artwork may differ in aspect ratio,
-   but the header must not reflow when the theme toggle swaps the src. */
+   but the header must not reflow when the theme toggle swaps the src.
+   Garcia's box is intentionally narrower than its ~5.88:1 asset ratio: at the
+   natural width (259px) it renders over twice as wide as the SLB mark next to
+   it. object-fit: contain already letterboxes any box that doesn't match the
+   asset's ratio — same mechanism this rule relies on for SLB and DAG — so
+   this box is sized to the rendered wordmark (~115px, ~15% past SLB's ~98px
+   ink, per feedback that exact parity read as too small) rather than to the
+   asset's full aspect ratio. */
 .firm-logo { flex-shrink: 0; display: block; object-fit: contain; object-position: right center; }
 .legacy-slb-logo { width: 118px; height: 62px; }
-.legacy-garcia-logo { width: 259px; height: 44px; }
+.legacy-garcia-logo { width: 115px; height: 39px; }
 .legacy-dag-logo { width: 64px; height: 64px; object-fit: cover; border-radius: 50%; object-position: center; }
 .legacy-header-controls { display: flex; flex: 1 1 100%; flex-direction: column; align-items: stretch; gap: 8px; }
 .legacy-header-actions { display: flex; align-items: center; justify-content: flex-end; gap: var(--header-action-gap); }
@@ -828,7 +835,9 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
     width: auto;
   }
   .legacy-slb-logo { width: 84px; height: 44px; }
-  .legacy-garcia-logo { width: 212px; height: 36px; }
+  /* Same box-narrower-than-asset-ratio letterbox as the desktop rule, scaled
+     down by the same ~0.71 factor SLB's own box shrinks by at this breakpoint. */
+  .legacy-garcia-logo { width: 83px; height: 28px; }
   .legacy-dag-logo { width: 44px; height: 44px; }
   :root { --header-action-gap: 10px; }
   .legacy-header-actions { width: 100%; justify-content: stretch; }
@@ -887,7 +896,7 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
   .legacy-header-inner { gap: 6px 8px; }
   .legacy-opposing-counsel { gap: 6px; }
   .legacy-slb-logo { width: 68px; height: 36px; }
-  .legacy-garcia-logo { width: 177px; height: 30px; }
+  .legacy-garcia-logo { width: 67px; height: 23px; }
   .legacy-dag-logo { width: 36px; height: 36px; }
   .legacy-clock-units { transform: scale(.88); transform-origin: left center; }
   .legacy-deadline-description { width: 100%; }
