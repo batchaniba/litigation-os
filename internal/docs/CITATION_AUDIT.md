@@ -137,10 +137,12 @@ Load-bearing threshold and clearly-established authorities verified this round i
 
 ### Fix-before-next-filing (Matter 28)
 
-1. **Strip *Dunford* and re-attribute the Condit quote to *Foltz* in the protective-order motion** before it is relied on at a hearing.
+1. **Strip *Dunford* and re-attribute the Condit quote to *Foltz* in the protective-order motion** before it is relied on at a hearing. **Done in draft:** `Renewed Motion Protective Order NDCA (cite-corrected draft).pdf` and `Proposed Protective Order NDCA (cite-corrected draft).pdf` (not yet filed; Doc 7 denied the original without prejudice). Generator: `internal/scripts/matter28-renewed-protective-order.py`.
 2. **Do not brief *Chavez v. Robinson* as a QI-denial reversal** — it affirmed dismissal.
 3. **Remove *Collins v. Moore* and *Jessie* / *Chubb*** from any opposition draft built off these memos.
 4. **Correct *Tsao* to 698 F.3d and *Johnson* to 697 F.3d / 2012 WL 5328597.**
+
+Page-keyed safe-cite / do-not-use list for the six research PDFs: `internal/docs/MATTER_28_SAFE_CITE_LIST.md` (rebuild with `python3 internal/scripts/build-matter28-safe-cite-list.py`).
 
 ---
 
