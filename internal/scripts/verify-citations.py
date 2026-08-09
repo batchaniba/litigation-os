@@ -38,6 +38,7 @@ AUDIT_PATH = DOCS / "citation_audit.json"
 ROUNDS_PATH = DOCS / "citation_verification_rounds.json"
 DEBT_PATH = DOCS / "citation_known_bad_debt.json"
 MULTISOURCE_PATH = DOCS / "citation_lookup_multisource.json"
+MATTER28_LOOKUP_PATH = DOCS / "citation_lookup_matter28.json"
 SUMMARIES_PATH = ROOT / "src/data/matters/summaries.json"
 OUT_JSON = DOCS / "citation_verification.json"
 OUT_MD = DOCS / "CITATION_VERIFICATION.md"
@@ -217,6 +218,7 @@ def build_verification():
     rounds = load_json(ROUNDS_PATH, {"round": None, "method": "", "results": []})
     debt = load_json(DEBT_PATH, {"entries": []})
     multisource = load_json(MULTISOURCE_PATH, None)
+    matter28_lookup = load_json(MATTER28_LOOKUP_PATH, None)
     summaries = load_json(SUMMARIES_PATH, [])
 
     by_name, by_reporter = build_audit_indexes(audit.get("citations") or [])
@@ -347,6 +349,31 @@ def build_verification():
                 if multisource
                 else None
             ),
+            "matter28": {
+                "artifact": "citation_lookup_matter28.json",
+                "generatedDate": (matter28_lookup or {}).get("generatedDate"),
+                "resultCount": (matter28_lookup or {}).get("resultCount"),
+                "consensusCounts": (
+                    {
+                        c: sum(
+                            1
+                            for r in (matter28_lookup or {}).get("results") or []
+                            if r.get("consensus") == c
+                        )
+                        for c in (
+                            "FOUND",
+                            "CAPTION_MISMATCH",
+                            "NOT_FOUND",
+                            "PARTIAL",
+                            "UNKNOWN",
+                        )
+                    }
+                    if matter28_lookup
+                    else None
+                ),
+            }
+            if matter28_lookup
+            else None,
         },
         "corpusAuthorities": len(rows),
         "statusCounts": dict(status_counts),
@@ -403,8 +430,16 @@ def build_verification():
         w(
             f"- Confirmation artifact: `citation_lookup_multisource.json` "
             f"({multisource.get('resultCount', 0)} probes on "
-            f"{multisource.get('generatedDate', '?')}).\n"
+            f"{multisource.get('generatedDate', '?')})."
         )
+        if matter28_lookup:
+            w(
+                f"- Matter 28 funnel: `citation_lookup_matter28.json` "
+                f"({matter28_lookup.get('resultCount', 0)} probes on "
+                f"{matter28_lookup.get('generatedDate', '?')}).\n"
+            )
+        else:
+            w("")
     else:
         w(
             "- Run `python3 internal/scripts/lookup-citations.py --batch all` "
@@ -463,7 +498,8 @@ def build_verification():
     w("python3 internal/scripts/verify-citations.py")
     w("python3 internal/scripts/verify-citations.py --check")
     w("python3 internal/scripts/verify-citations.py --queue")
-    w("python3 internal/scripts/lookup-citations.py --batch all\n```\n")
+    w("python3 internal/scripts/lookup-citations.py --batch all")
+    w("python3 internal/scripts/lookup-citations.py --matter 28\n```\n")
     w("## Known-bad debt gate\n")
     w(
         "`--check` fails if a known-fabricated pattern appears in a `plaintiff_filing` "

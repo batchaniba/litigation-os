@@ -28,6 +28,7 @@
     "citations:verify": "python3 internal/scripts/verify-citations.py",
     "citations:check": "python3 internal/scripts/verify-citations.py --check",
     "citations:lookup": "python3 internal/scripts/lookup-citations.py --batch all",
+    "citations:lookup:matter28": "python3 internal/scripts/lookup-citations.py --matter 28",
     "extract:matter1": "node internal/scripts/extract-matter-pdfs.mjs"
   },
   "dependencies": {

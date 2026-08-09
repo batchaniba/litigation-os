@@ -1,6 +1,6 @@
 {
-  "round": "2026-08-09 Round 4 \u2014 portfolio P0 (batches A\u2013D; LACW WL correction); Round 5 multisource confirmation (CourtListener + CAP static)",
-  "method": "Round 4: WebSearch against primary-source URLs after positive control (Richardson v. McKnight, 521 U.S. 399) and negative control (In re Leman, 66 Cal.App.5th 200). Round 5: reconfirmed controls + high-risk pins via CourtListener /api/rest/v4/search/ and CAP static.case.law CasesMetadata/HTML (lookup-citations.py \u2192 citation_lookup_multisource.json). Justia is Cloudflare-blocked in this environment; Google Scholar is unreliable (often 403); api.case.law JSON and CourtListener citation-lookup require auth. CAP Cal.App.5th bulk coverage currently only volumes 1\u201311, so the Leman negative control rests on CourtListener (no hit) plus missing CAP volume 66. Characterization flags still require opinion-text review.",
+  "round": "2026-08-09 Round 4 \u2014 portfolio P0 (batches A\u2013D; LACW WL correction); Round 5 multisource (CourtListener + CAP); Round 5b Matter 28 full funnel",
+  "method": "Round 4: WebSearch after Richardson(+) / Leman(\u2212) controls. Round 5: CourtListener /api/rest/v4/search/ + CAP static.case.law for controls/high-risk. Round 5b: all Matter 28 indexed authorities through lookup-citations.py --matter 28 (\u2192 citation_lookup_matter28.json). Justia Cloudflare-blocked; Scholar unreliable; api.case.law JSON and CL citation-lookup need auth. Existence FOUND does not clear prior MISCHARACTERIZED/MISCITED proposition problems. Table-page F.3d pins can host multiple dispositions \u2014 do not treat first CL hit as unique.",
   "controls": {
     "positive": {
       "citation": "Richardson v. McKnight, 521 U.S. 399 (1997)",
@@ -715,9 +715,11 @@
     {
       "citation": "Neal v. Shimoda, 131 F. 3d 818",
       "status": "VERIFIED",
-      "notes": "Real at 131 F.3d 818 (9th Cir. 1997). Add year.",
+      "notes": "Real at 131 F.3d 818 (9th Cir. 1997). Add year. Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Neal v. Shimoda.",
       "sources": [
-        "https://law.resource.org/pub/us/case/reporter/F3/131/131.F3d.818.95-16790.95-16564.html"
+        "https://law.resource.org/pub/us/case/reporter/F3/131/131.F3d.818.95-16790.95-16564.html",
+        "https://www.courtlistener.com/opinion/7056623/neal-v-shimoda/",
+        "https://static.case.law/f3d/131/html/0818-01.html"
       ]
     },
     {
@@ -943,7 +945,7 @@
     {
       "citation": "Jessie v. United States, 79 M.J. 437",
       "status": "MISCITED",
-      "notes": "Real decision is United States v. Jessie, 79 M.J. 437 (C.A.A.F. 2020) \u2014 caption inverted here. Also Matter 28 flagged wrong proposition for SOTP blanket policies.",
+      "notes": "Real decision is United States v. Jessie, 79 M.J. 437 (C.A.A.F. 2020) \u2014 caption inverted here. Also Matter 28 flagged wrong proposition for SOTP blanket policies. Round 5 Matter 28 multisource: no CourtListener/CAP hit for this pin/caption (consistent with prior MISCITED / wrong-WL / inverted-caption problems).",
       "sources": [
         "https://www.armfor.uscourts.gov/newcaaf/opinions/2019OctTerm/190192.pdf"
       ]
@@ -1139,17 +1141,21 @@
     {
       "citation": "Edmo v. Corizon, Inc, 935 F. 3d 757",
       "status": "VERIFIED",
-      "notes": "Real at 935 F.3d 757 (9th Cir. 2019). Matter 28 already flags MISCHARACTERIZED if used as per se anti-blanket-policy holding \u2014 existence OK.",
+      "notes": "Real at 935 F.3d 757 (9th Cir. 2019). Matter 28 already flags MISCHARACTERIZED if used as per se anti-blanket-policy holding \u2014 existence OK. Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Edmo v. Corizon, Inc..",
       "sources": [
-        "https://cdn.ca9.uscourts.gov/datastore/opinions/2019/08/23/19-35017.pdf"
+        "https://cdn.ca9.uscourts.gov/datastore/opinions/2019/08/23/19-35017.pdf",
+        "https://www.courtlistener.com/opinion/4655519/adree-edmo-v-corizon-inc/",
+        "https://static.case.law/f3d/935/html/0757-01.html"
       ]
     },
     {
       "citation": "Tsao v. Desert Palace, Inc, 698 F. 3d 1128",
       "status": "VERIFIED",
-      "notes": "Real at 698 F.3d 1128 (9th Cir. 2012). Add year. Correct form (not 98 F.3d).",
+      "notes": "Real at 698 F.3d 1128 (9th Cir. 2012). Add year. Correct form (not 98 F.3d). Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Tsao v. Desert Palace, Inc..",
       "sources": [
-        "https://cdn.ca9.uscourts.gov/datastore/opinions/2012/10/03/10-16377.pdf"
+        "https://cdn.ca9.uscourts.gov/datastore/opinions/2012/10/03/10-16377.pdf",
+        "https://www.courtlistener.com/opinion/810771/laurie-tsao-v-desert-palace-inc/",
+        "https://static.case.law/f3d/698/html/1128-01.html"
       ]
     },
     {
@@ -1473,6 +1479,434 @@
       "sources": [
         "https://case-law.vlex.com/vid/zahrey-v-coffey-plaintiff-892967133"
       ]
+    },
+    {
+      "citation": "Morrissey v. Brewer, 408 U.S. 471 (1972)",
+      "status": "VERIFIED",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Morrissey v. Brewer.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/108606/morrissey-v-brewer/",
+        "https://static.case.law/us/408/html/0471-01.html"
+      ]
+    },
+    {
+      "citation": "Richardson v. McKnight, 521 U.S. 399 (1997)",
+      "status": "VERIFIED",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Richardson v. McKnight.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/118137/richardson-v-mcknight/",
+        "https://static.case.law/us/521/html/0399-01.html"
+      ]
+    },
+    {
+      "citation": "Filarsky v. Delia, 566 U.S. 377 (2012)",
+      "status": "VERIFIED",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Filarsky v. Delia.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/798512/filarsky-v-delia/",
+        "https://static.case.law/us/566/html/0377-01.html"
+      ]
+    },
+    {
+      "citation": "Foucha v. Louisiana, 504 U.S. 71 (1992)",
+      "status": "VERIFIED",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Foucha v. Louisiana.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/112731/foucha-v-louisiana/",
+        "https://static.case.law/us/504/html/0071-01.html"
+      ]
+    },
+    {
+      "citation": "Patsy v. Board of Regents, 457 U.S. 496 (1982)",
+      "status": "VERIFIED",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Patsy v. Board of Regents of Fla..",
+      "sources": [
+        "https://www.courtlistener.com/opinion/110753/patsy-v-board-of-regents-of-fla/",
+        "https://static.case.law/us/457/html/0496-01.html"
+      ]
+    },
+    {
+      "citation": "Halvorsen v. Baird, 146 F. 3d 680",
+      "status": "VERIFIED",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Halvorsen v. Baird.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/7065767/halvorsen-v-baird/",
+        "https://static.case.law/f3d/146/html/0680-01.html"
+      ]
+    },
+    {
+      "citation": "Jensen v. Lane County, 222 F. 3d 570",
+      "status": "VERIFIED",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Jensen v. Lane County.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/769892/jensen-v-lane-county/",
+        "https://static.case.law/f3d/222/html/0570-01.html"
+      ]
+    },
+    {
+      "citation": "Vitek v. Jones, 445 U.S. 480 (1980)",
+      "status": "VERIFIED",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Vitek v. Jones.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/110231/vitek-v-jones/",
+        "https://static.case.law/us/445/html/0480-01.html"
+      ]
+    },
+    {
+      "citation": "West v. Atkins, 487 U.S. 42 (1988)",
+      "status": "VERIFIED",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 West v. Atkins.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/112116/west-v-atkins/",
+        "https://static.case.law/us/487/html/0042-01.html"
+      ]
+    },
+    {
+      "citation": "Wyatt v. Cole, 504 U.S. 158 (1992)",
+      "status": "VERIFIED",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Wyatt v. Cole.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/112733/wyatt-v-cole/",
+        "https://static.case.law/us/504/html/0158-01.html"
+      ]
+    },
+    {
+      "citation": "Chavez v. Robinson, 12 F. 4th 978",
+      "status": "MISCHARACTERIZED",
+      "notes": "Round 5 Matter 28 multisource: 12 F.4th 978 exists (Daniel Chavez v. David Robinson). Prior MISCHARACTERIZED stands \u2014 existence OK, proposition not.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/5296812/daniel-chavez-v-david-robinson/"
+      ]
+    },
+    {
+      "citation": "County of Sacramento v. Lewis, 523 U.S. 833 (1998)",
+      "status": "VERIFIED",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 County of Sacramento v. Lewis.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/118214/county-of-sacramento-v-lewis/",
+        "https://static.case.law/us/523/html/0833-01.html"
+      ]
+    },
+    {
+      "citation": "Dunford v. Rovi Corp, 2015 WL 13752958",
+      "status": "NOT_FOUND",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed NOT_FOUND on CourtListener + CAP.",
+      "sources": []
+    },
+    {
+      "citation": "Foltz v. State Farm Mut. Auto. Ins. Co, 331 F. 3d 1122",
+      "status": "VERIFIED",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Foltz v. State Farm Mutual Automobile Insurance.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/8437506/foltz-v-state-farm-mutual-automobile-insurance/",
+        "https://static.case.law/f3d/331/html/1122-01.html"
+      ]
+    },
+    {
+      "citation": "Greenholtz v. Inmates of Nebraska Penal, 442 U.S. 1 (1979)",
+      "status": "VERIFIED",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Greenholtz v. Inmates of the Nebraska Penal & Correctional Complex.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/110085/greenholtz-v-inmates-of-the-nebraska-penal-correctional-complex/",
+        "https://static.case.law/us/442/html/0001-01.html"
+      ]
+    },
+    {
+      "citation": "In Richardson v. McKnight, 521 U.S. 399 (1997)",
+      "status": "VERIFIED",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Richardson v. McKnight.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/118137/richardson-v-mcknight/",
+        "https://static.case.law/us/521/html/0399-01.html"
+      ]
+    },
+    {
+      "citation": "Richardson v. McKnight, 117 S.Ct. 2100",
+      "status": "VERIFIED",
+      "notes": "Round 5 Matter 28 multisource: PARTIAL \u2192 Richardson v. McKnight.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/118137/richardson-v-mcknight/"
+      ]
+    },
+    {
+      "citation": "Under West v. Atkins, 487 U.S. 42 (1988)",
+      "status": "VERIFIED",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 West v. Atkins.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/112116/west-v-atkins/",
+        "https://static.case.law/us/487/html/0042-01.html"
+      ]
+    },
+    {
+      "citation": "Biggs v. Terhune, 334 F. 3d 910",
+      "status": "VERIFIED",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Biggs v. Terhune.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/782570/jeffrey-j-biggs-v-cal-a-terhune-director-of-wbsjfm-cdc-california/",
+        "https://static.case.law/f3d/334/html/0910-01.html"
+      ]
+    },
+    {
+      "citation": "CLEMENT v. GLENDALE, 518 F. 3d 1090",
+      "status": "VERIFIED",
+      "notes": "Round 5 Matter 28 multisource: 518 F.3d 1090 is Clement v. City of Glendale (abbreviated index caption). Existence OK.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/1402512/clement-v-city-of-glendale/",
+        "https://static.case.law/f3d/518/html/1090-01.html"
+      ]
+    },
+    {
+      "citation": "Carver v. Lehman, 558 F. 3d 869",
+      "status": "VERIFIED",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Carver v. Lehman.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/1354177/carver-v-lehman/",
+        "https://static.case.law/f3d/558/html/0869-01.html"
+      ]
+    },
+    {
+      "citation": "Chubb v. Sullivan, 2014 WL 2807986",
+      "status": "MISCITED",
+      "notes": "Round 5 Matter 28 multisource: no CourtListener/CAP hit for this pin/caption (consistent with prior MISCITED / wrong-WL / inverted-caption problems).",
+      "sources": []
+    },
+    {
+      "citation": "City of Escondido v. Emmons, 139 S. Ct. 500 (2019)",
+      "status": "VERIFIED",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 City of Escondido v. Emmons.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/4579240/city-of-escondido-v-emmons/",
+        "https://static.case.law/s-ct/139/html/0500-01.html"
+      ]
+    },
+    {
+      "citation": "Collins v. Moore, 81 F. 3d 167",
+      "status": "NOT_FOUND",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed NOT_FOUND on CourtListener + CAP.",
+      "sources": []
+    },
+    {
+      "citation": "Condit v. Dunne, 225 F.R.D. 100",
+      "status": "MISCITED",
+      "notes": "Round 5 Matter 28 multisource: pin/caption resolves (FOUND \u2192 Condit v. Dunne), but prior MISCITED stands (proposition/characterization problem, not existence).",
+      "sources": [
+        "https://www.courtlistener.com/opinion/8755939/condit-v-dunne/",
+        "https://static.case.law/frd/225/html/0100-01.html"
+      ]
+    },
+    {
+      "citation": "Estates of Byrd v. General Motors Corp, 307 F. 3d 1206",
+      "status": "MISCITED",
+      "notes": "Round 5 Matter 28 multisource: 307 F.3d 1206 resolves to Phillips v. General Motors Corp., not Estates of Byrd v. General Motors Corp. Wrong caption at this pin.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/7108823/phillips-v-general-motors-corp/",
+        "https://static.case.law/f3d/307/html/1206-01.html"
+      ]
+    },
+    {
+      "citation": "Holding Key Fact Ace Beverage Co. v. Lockheed Info. Mgmt. Servs, 144 F. 3d 1218",
+      "status": "VERIFIED",
+      "notes": "Round 5 Matter 28 multisource: 144 F.3d 1218 is Ace Beverage Co. v. Lockheed Information Management Services. Index prefix 'Holding Key Fact' is OCR/context noise.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/754610/98-cal-daily-op-serv-3815-98-daily-journal-dar-5289-ace-beverage/",
+        "https://static.case.law/f3d/144/html/1218-01.html"
+      ]
+    },
+    {
+      "citation": "In Clement v. City of Glendale, 518 F. 3d 1090",
+      "status": "VERIFIED",
+      "notes": "Round 5 Matter 28 multisource: FOUND on CourtListener/CAP as 'Clement v. City of Glendale'. Existence confirmed; load-bearing uses still need proposition check against opinion text.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/1402512/clement-v-city-of-glendale/",
+        "https://static.case.law/f3d/518/html/1090-01.html"
+      ]
+    },
+    {
+      "citation": "In Danielson v. Inslee, 945 F. 3d 1096",
+      "status": "VERIFIED",
+      "notes": "Round 5 Matter 28 multisource: 945 F.3d 1096 is Danielson v. Inslee (CL caption Dale Danielson v. Jay Inslee). Existence OK.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/4690496/dale-danielson-v-jay-inslee/"
+      ]
+    },
+    {
+      "citation": "In Dunford v. Rovi Corp, 2015 WL 13752958",
+      "status": "NOT_FOUND",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed NOT_FOUND on CourtListener + CAP.",
+      "sources": []
+    },
+    {
+      "citation": "In Filarsky v. Delia, 566 U.S. 377 (2012)",
+      "status": "VERIFIED",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Filarsky v. Delia.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/798512/filarsky-v-delia/",
+        "https://static.case.law/us/566/html/0377-01.html"
+      ]
+    },
+    {
+      "citation": "In Franklin v. Fox, 312 F. 3d 423",
+      "status": "VERIFIED",
+      "notes": "Round 5 Matter 28 multisource: FOUND on CourtListener/CAP as 'Franklin v. Fox'. Existence confirmed; load-bearing uses still need proposition check against opinion text.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/780047/george-thomas-franklin-v-jim-fox-martin-murray-robert-morse-bryan/",
+        "https://static.case.law/f3d/312/html/0423-01.html"
+      ]
+    },
+    {
+      "citation": "In Jensen v. Lane County, 222 F. 3d 570",
+      "status": "VERIFIED",
+      "notes": "Round 5 Matter 28 multisource: FOUND on CourtListener/CAP as 'Jensen v. Lane County'. Existence confirmed; load-bearing uses still need proposition check against opinion text.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/769892/jensen-v-lane-county/",
+        "https://static.case.law/f3d/222/html/0570-01.html"
+      ]
+    },
+    {
+      "citation": "In Minneci v. Pollard, 565 U.S. 118 (2012)",
+      "status": "VERIFIED",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Minneci v. Pollard.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/620567/minneci-v-pollard/",
+        "https://static.case.law/us/565/html/0118-01.html"
+      ]
+    },
+    {
+      "citation": "In Richardson v. McKnight, 521 US 399 (1997)",
+      "status": "VERIFIED",
+      "notes": "Round 5 Matter 28 multisource: FOUND on CourtListener/CAP as 'Richardson v. McKnight'. Existence confirmed; load-bearing uses still need proposition check against opinion text.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/118137/richardson-v-mcknight/",
+        "https://static.case.law/us/521/html/0399-01.html"
+      ]
+    },
+    {
+      "citation": "In Wyatt v. Cole, 504 U.S. 158 (1992)",
+      "status": "VERIFIED",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Wyatt v. Cole.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/112733/wyatt-v-cole/",
+        "https://static.case.law/us/504/html/0158-01.html"
+      ]
+    },
+    {
+      "citation": "JENSEN v. LANE COUNTY, 222 F. 3d 570",
+      "status": "VERIFIED",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Jensen v. Lane County.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/769892/jensen-v-lane-county/",
+        "https://static.case.law/f3d/222/html/0570-01.html"
+      ]
+    },
+    {
+      "citation": "Luca v. Administration of Offender Services Bureau, 15 F. 3d 1086",
+      "status": "VERIFIED",
+      "notes": "Round 5 Matter 28 multisource: 15 F.3d 1086 is a table page hosting multiple dispositions; CL's first hit is unrelated. Prior audit treated Luca as an unpublished table decision at this pin \u2014 keep VERIFIED but prefer a better cite if one exists; do not treat the table page as unique.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/662035/josefina-lagarto-snovelle-v-immigration-and-natura/"
+      ]
+    },
+    {
+      "citation": "Sandin v. Conner, 515 U.S. 472 (1995)",
+      "status": "VERIFIED",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Sandin v. Conner.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/117957/sandin-v-conner/",
+        "https://static.case.law/us/515/html/0472-01.html"
+      ]
+    },
+    {
+      "citation": "See Condit v. Dunne, 225 F.R.D. 100",
+      "status": "MISCITED",
+      "notes": "Round 5 Matter 28 multisource: pin/caption resolves (FOUND \u2192 Condit v. Dunne), but prior MISCITED stands (proposition/characterization problem, not existence).",
+      "sources": [
+        "https://www.courtlistener.com/opinion/8755939/condit-v-dunne/",
+        "https://static.case.law/frd/225/html/0100-01.html"
+      ]
+    },
+    {
+      "citation": "See Johnson v. City of Grants Pass, 50 F. 4th 787",
+      "status": "MISCITED",
+      "notes": "Round 5 Matter 28 multisource: no CourtListener/CAP hit for this pin/caption (consistent with prior MISCITED / wrong-WL / inverted-caption problems).",
+      "sources": []
+    },
+    {
+      "citation": "Serrano v. Francis, 345 F. 3d 1071",
+      "status": "VERIFIED",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Serrano v. Francis.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/783788/onofre-t-serrano-v-sw-francis/",
+        "https://static.case.law/f3d/345/html/1071-01.html"
+      ]
+    },
+    {
+      "citation": "Swarthout v. Cooke, 562 U.S. 216 (2011)",
+      "status": "VERIFIED",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Swarthout v. Cooke.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/183477/swarthout-v-cooke/",
+        "https://static.case.law/us/562/html/0216-01.html"
+      ]
+    },
+    {
+      "citation": "United States v. Cope, 527 F. 3d 944",
+      "status": "VERIFIED",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 United States v. Cope.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/1458125/united-states-v-cope/",
+        "https://static.case.law/f3d/527/html/0944-01.html"
+      ]
+    },
+    {
+      "citation": "United States v. Johnson, 2012 WL 5279672",
+      "status": "MISCITED",
+      "notes": "Round 5 Matter 28 multisource: no CourtListener/CAP hit for this pin/caption (consistent with prior MISCITED / wrong-WL / inverted-caption problems).",
+      "sources": []
+    },
+    {
+      "citation": "United States v. Sanchez-Gomez, 859 F. 3d 649",
+      "status": "VERIFIED",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 United States v. Rene Sanchez-Gomez.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/4395849/united-states-v-rene-sanchez-gomez/",
+        "https://static.case.law/f3d/859/html/0649-01.html"
+      ]
+    },
+    {
+      "citation": "United States v. Weber, 451 F. 3d 552",
+      "status": "VERIFIED",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 United States v. Weber.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/794683/united-states-v-matthew-henry-weber/",
+        "https://static.case.law/f3d/451/html/0552-01.html"
+      ]
+    },
+    {
+      "citation": "United States v. Williams, 356 F. 3d 1045",
+      "status": "VERIFIED",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 United States v. Williams.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/784955/united-states-v-daniel-r-williams/",
+        "https://static.case.law/f3d/356/html/1045-01.html"
+      ]
+    },
+    {
+      "citation": "WYATT v. COLE, 994 F. 2d 1113",
+      "status": "VERIFIED",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Wyatt v. Cole.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/608099/howard-l-wyatt-v-bill-cole-john-robbins-ii/",
+        "https://static.case.law/f2d/994/html/1113-01.html"
+      ]
+    },
+    {
+      "citation": "Washington v. Harper, 494 U.S. 210 (1990)",
+      "status": "VERIFIED",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Washington v. Harper.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/112381/washington-v-harper/",
+        "https://static.case.law/us/494/html/0210-01.html"
+      ]
     }
   ],
   "multisourceConfirmation": {
@@ -1659,5 +2093,33 @@
         ]
       }
     ]
+  },
+  "matter28Multisource": {
+    "date": "2026-08-09",
+    "artifact": "internal/docs/citation_lookup_matter28.json",
+    "script": "internal/scripts/lookup-citations.py --matter 28",
+    "probeCount": 54,
+    "consensusCounts": {
+      "FOUND": 40,
+      "CAPTION_MISMATCH": 6,
+      "NOT_FOUND": 7,
+      "PARTIAL": 1,
+      "UNKNOWN": 0
+    },
+    "statusChanges": {
+      "upgradedToVerified": [
+        "CLEMENT v. GLENDALE, 518 F. 3d 1090",
+        "Holding Key Fact Ace Beverage Co. v. Lockheed Info. Mgmt. Servs, 144 F. 3d 1218",
+        "In Clement v. City of Glendale, 518 F. 3d 1090",
+        "In Danielson v. Inslee, 945 F. 3d 1096",
+        "In Franklin v. Fox, 312 F. 3d 423",
+        "In Jensen v. Lane County, 222 F. 3d 570",
+        "In Richardson v. McKnight, 521 US 399 (1997)"
+      ],
+      "setToMiscited": [
+        "Estates of Byrd v. General Motors Corp, 307 F. 3d 1206"
+      ],
+      "setToNotFound": []
+    }
   }
 }

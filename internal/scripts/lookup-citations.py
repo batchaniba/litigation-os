@@ -15,6 +15,8 @@ Usage:
   python3 internal/scripts/lookup-citations.py --cite "521 U.S. 399"
   python3 internal/scripts/lookup-citations.py --batch controls
   python3 internal/scripts/lookup-citations.py --batch high-risk
+  python3 internal/scripts/lookup-citations.py --matter 28
+  python3 internal/scripts/lookup-citations.py --cites-file /tmp/cites.json
 """
 
 from __future__ import annotations
@@ -41,12 +43,14 @@ CAP_STATIC = "https://static.case.law"
 
 # reporter slug on static.case.law → regex capturing (volume, page)
 REPORTER_MAP = [
-    (r"(\d+)\s+U\.S\.\s+(\d+)", "us", "U.S."),
+    (r"(\d+)\s+U\.?\s*S\.?\s+(\d+)", "us", "U.S."),
+    (r"(\d+)\s+F\.\s*R\.\s*D\.\s+(\d+)", "frd", "F.R.D."),
     (r"(\d+)\s+F\.\s*2d\s+(\d+)", "f2d", "F.2d"),
     (r"(\d+)\s+F\.\s*3d\s+(\d+)", "f3d", "F.3d"),
     (r"(\d+)\s+F\.\s*4th\s+(\d+)", "f4th", "F.4th"),
     (r"(\d+)\s+F\.\s*Supp\.\s*2d\s+(\d+)", "f-supp-2d", "F. Supp. 2d"),
     (r"(\d+)\s+F\.\s*Supp\.\s*3d\s+(\d+)", "f-supp-3d", "F. Supp. 3d"),
+    (r"(\d+)\s+M\.?\s*J\.?\s+(\d+)", "mj", "M.J."),
     (r"(\d+)\s+Cal\.\s*App\.\s*5th\s+(\d+)", "cal-app-5th", "Cal. App. 5th"),
     (r"(\d+)\s+Cal\.\s*App\.\s*4th\s+(\d+)", "cal-app-4th", "Cal. App. 4th"),
     (r"(\d+)\s+Cal\.\s*App\.\s*3d\s+(\d+)", "cal-app-3d", "Cal. App. 3d"),
@@ -138,11 +142,18 @@ def parse_reporter(citation: str):
 
 
 def guess_name(citation: str) -> str:
-    m = NAME_RE.search(citation.strip())
+    c = citation.strip()
+    c = re.sub(
+        r"^(?:See|Under|In|Holding\s+Key\s+Fact)\s+",
+        "",
+        c,
+        flags=re.I,
+    )
+    m = NAME_RE.search(c)
     if m:
         return m.group(1).strip()
     # fallback: text before first digit run
-    m2 = re.match(r"^(?:See\s+)?([^0-9]+)", citation.strip(), re.I)
+    m2 = re.match(r"^([^0-9]+)", c)
     return (m2.group(1).strip(" ,") if m2 else citation)[:80]
 
 
@@ -610,6 +621,19 @@ HIGH_RISK = [
 ]
 
 
+def cites_from_matter(matter: int) -> list[str]:
+    index_path = DOCS / "citation_index.json"
+    index = json.loads(index_path.read_text())
+    out = []
+    for c in index.get("citations") or []:
+        if c.get("kind") != "authority":
+            continue
+        matters = {int(m) for m in (c.get("matters") or []) if str(m).isdigit()}
+        if matter in matters:
+            out.append(c["citation"])
+    return out
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--cite", action="append", default=[], help="Citation string (repeatable)")
@@ -619,11 +643,23 @@ def main(argv: list[str] | None = None) -> int:
         help="Built-in confirmation batches",
     )
     ap.add_argument(
+        "--matter",
+        type=int,
+        action="append",
+        default=[],
+        help="Load authority citations for matter N from citation_index.json (repeatable)",
+    )
+    ap.add_argument(
+        "--cites-file",
+        type=Path,
+        help="JSON file: array of citation strings, or {cites:[...]}",
+    )
+    ap.add_argument(
         "--probe-blocked",
         action="store_true",
         help="Also probe Justia + Google Scholar (usually 403)",
     )
-    ap.add_argument("--out", type=Path, default=OUT_PATH)
+    ap.add_argument("--out", type=Path, default=None)
     ap.add_argument("--quiet", action="store_true")
     args = ap.parse_args(argv)
 
@@ -632,8 +668,23 @@ def main(argv: list[str] | None = None) -> int:
         cites.extend(CONTROLS)
     if args.batch in ("high-risk", "all"):
         cites.extend(HIGH_RISK)
+    for m in args.matter:
+        cites.extend(cites_from_matter(m))
+    if args.cites_file:
+        payload = json.loads(args.cites_file.read_text())
+        if isinstance(payload, list):
+            cites.extend(payload)
+        else:
+            cites.extend(payload.get("cites") or payload.get("citations") or [])
     if not cites:
         cites = CONTROLS + HIGH_RISK
+
+    out_path = args.out
+    if out_path is None:
+        if len(args.matter) == 1 and not args.batch and not args.cite and not args.cites_file:
+            out_path = DOCS / f"citation_lookup_matter{args.matter[0]:02d}.json"
+        else:
+            out_path = OUT_PATH
 
     # de-dupe preserving order
     seen = set()
@@ -662,6 +713,7 @@ def main(argv: list[str] | None = None) -> int:
     out = {
         "generatedBy": "internal/scripts/lookup-citations.py",
         "generatedDate": date.today().isoformat(),
+        "matters": args.matter or None,
         "reachability": reachability,
         "resultCount": len(results),
         "results": [
@@ -680,11 +732,11 @@ def main(argv: list[str] | None = None) -> int:
             for r in results
         ],
     }
-    args.out.parent.mkdir(parents=True, exist_ok=True)
-    args.out.write_text(json.dumps(out, indent=2) + "\n")
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    out_path.write_text(json.dumps(out, indent=2) + "\n")
     if not args.quiet:
         print(json.dumps({
-            "wrote": str(args.out),
+            "wrote": str(out_path),
             "counts": {
                 c: sum(1 for r in results if r.consensus == c)
                 for c in ("FOUND", "CAPTION_MISMATCH", "NOT_FOUND", "PARTIAL", "UNKNOWN")

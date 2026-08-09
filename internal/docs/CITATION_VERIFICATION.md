@@ -10,9 +10,9 @@ The campaign is entering a phase where claims are cognizable and motions to dism
 
 | Status | Count |
 |---|---|
-| UNVERIFIED | 423 |
-| VERIFIED | 278 |
-| MISCITED | 28 |
+| UNVERIFIED | 415 |
+| VERIFIED | 285 |
+| MISCITED | 29 |
 | MISCHARACTERIZED | 6 |
 | NOT_FOUND | 6 |
 
@@ -31,6 +31,7 @@ The campaign is entering a phase where claims are cognizable and motions to dism
   - `google_scholar`: unreliable (often 403)
   - `courtlistener_citation_lookup`: requires API token (401)
 - Confirmation artifact: `citation_lookup_multisource.json` (20 probes on 2026-08-09).
+- Matter 28 funnel: `citation_lookup_matter28.json` (54 probes on 2026-08-09).
 
 ## Known fabricated / hard NOT_FOUND — live locations
 
@@ -141,9 +142,9 @@ _0 total in JSON `priorityQueue`._
 
 ## Round overlay
 
-Loaded round: **2026-08-09 Round 4 — portfolio P0 (batches A–D; LACW WL correction); Round 5 multisource confirmation (CourtListener + CAP static)** — 177 results
+Loaded round: **2026-08-09 Round 4 — portfolio P0 (batches A–D; LACW WL correction); Round 5 multisource (CourtListener + CAP); Round 5b Matter 28 full funnel** — 227 results
 
-Method note: Round 4: WebSearch against primary-source URLs after positive control (Richardson v. McKnight, 521 U.S. 399) and negative control (In re Leman, 66 Cal.App.5th 200). Round 5: reconfirmed controls + high-risk pins via CourtListener /api/rest/v4/search/ and CAP static.case.law CasesMetadata/HTML (lookup-citations.py → citation_lookup_multisource.json). Justia is Cloudflare-blocked in this environment; Google Scholar is unreliable (often 403); api.case.law JSON and CourtListener citation-lookup require auth. CAP Cal.App.5th bulk coverage currently only volumes 1–11, so the Leman negative control rests on CourtListener (no hit) plus missing CAP volume 66. Characterization flags still require opinion-text review.
+Method note: Round 4: WebSearch after Richardson(+) / Leman(−) controls. Round 5: CourtListener /api/rest/v4/search/ + CAP static.case.law for controls/high-risk. Round 5b: all Matter 28 indexed authorities through lookup-citations.py --matter 28 (→ citation_lookup_matter28.json). Justia Cloudflare-blocked; Scholar unreliable; api.case.law JSON and CL citation-lookup need auth. Existence FOUND does not clear prior MISCHARACTERIZED/MISCITED proposition problems. Table-page F.3d pins can host multiple dispositions — do not treat first CL hit as unique.
 
 ## Regenerating
 ```
@@ -152,6 +153,7 @@ python3 internal/scripts/verify-citations.py
 python3 internal/scripts/verify-citations.py --check
 python3 internal/scripts/verify-citations.py --queue
 python3 internal/scripts/lookup-citations.py --batch all
+python3 internal/scripts/lookup-citations.py --matter 28
 ```
 
 ## Known-bad debt gate

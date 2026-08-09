@@ -24,13 +24,25 @@
       "NOT_FOUND": 6,
       "PARTIAL": 0,
       "UNKNOWN": 0
+    },
+    "matter28": {
+      "artifact": "citation_lookup_matter28.json",
+      "generatedDate": "2026-08-09",
+      "resultCount": 54,
+      "consensusCounts": {
+        "FOUND": 40,
+        "CAPTION_MISMATCH": 6,
+        "NOT_FOUND": 7,
+        "PARTIAL": 1,
+        "UNKNOWN": 0
+      }
     }
   },
   "corpusAuthorities": 741,
   "statusCounts": {
-    "UNVERIFIED": 423,
-    "VERIFIED": 278,
-    "MISCITED": 28,
+    "UNVERIFIED": 415,
+    "VERIFIED": 285,
+    "MISCITED": 29,
     "MISCHARACTERIZED": 6,
     "NOT_FOUND": 6
   },
@@ -39,9 +51,9 @@
     "plaintiffOnlyBad": 27
   },
   "rounds": {
-    "loaded": "2026-08-09 Round 4 \u2014 portfolio P0 (batches A\u2013D; LACW WL correction); Round 5 multisource confirmation (CourtListener + CAP static)",
-    "resultCount": 177,
-    "method": "Round 4: WebSearch against primary-source URLs after positive control (Richardson v. McKnight, 521 U.S. 399) and negative control (In re Leman, 66 Cal.App.5th 200). Round 5: reconfirmed controls + high-risk pins via CourtListener /api/rest/v4/search/ and CAP static.case.law CasesMetadata/HTML (lookup-citations.py \u2192 citation_lookup_multisource.json). Justia is Cloudflare-blocked in this environment; Google Scholar is unreliable (often 403); api.case.law JSON and CourtListener citation-lookup require auth. CAP Cal.App.5th bulk coverage currently only volumes 1\u201311, so the Leman negative control rests on CourtListener (no hit) plus missing CAP volume 66. Characterization flags still require opinion-text review."
+    "loaded": "2026-08-09 Round 4 \u2014 portfolio P0 (batches A\u2013D; LACW WL correction); Round 5 multisource (CourtListener + CAP); Round 5b Matter 28 full funnel",
+    "resultCount": 227,
+    "method": "Round 4: WebSearch after Richardson(+) / Leman(\u2212) controls. Round 5: CourtListener /api/rest/v4/search/ + CAP static.case.law for controls/high-risk. Round 5b: all Matter 28 indexed authorities through lookup-citations.py --matter 28 (\u2192 citation_lookup_matter28.json). Justia Cloudflare-blocked; Scholar unreliable; api.case.law JSON and CL citation-lookup need auth. Existence FOUND does not clear prior MISCHARACTERIZED/MISCITED proposition problems. Table-page F.3d pins can host multiple dispositions \u2014 do not treat first CL hit as unique."
   },
   "knownFabricated": [
     {
@@ -1411,8 +1423,8 @@
       ],
       "plaintiffOnly": true,
       "status": "MISCITED",
-      "statusSource": "audit",
-      "notes": "Wrong court AND wrong proposition. The real Chubb v. Sullivan is a KANSAS COURT OF APPEALS decision (kscourts.gov Case No. 110221, published), not a federal D. Kan. decision. Its subject is whether a resident had a liberty interest in a VISIT from his brother, whose visitation was denied pending proof of sex-offense treatment \u2014 a visitation due-process claim, not treatment-completion policy. Anyon",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: no CourtListener/CAP hit for this pin/caption (consistent with prior MISCITED / wrong-WL / inverted-caption problems).",
       "sampleContext": "0) (citing Lacy v. United States): Condemning \"automatic blanket policies\" in sex offender treatment that prevent completion without individualized review. \u2022 Chubb v. Sullivan, 2014 WL 2807986 (D. Kan. 2014): Addressing the due process implications of a blanket policy that preven",
       "locations": [
         {
@@ -1437,7 +1449,7 @@
       "plaintiffOnly": true,
       "status": "MISCITED",
       "statusSource": "round",
-      "notes": "Real decision is United States v. Jessie, 79 M.J. 437 (C.A.A.F. 2020) \u2014 caption inverted here. Also Matter 28 flagged wrong proposition for SOTP blanket policies.",
+      "notes": "Real decision is United States v. Jessie, 79 M.J. 437 (C.A.A.F. 2020) \u2014 caption inverted here. Also Matter 28 flagged wrong proposition for SOTP blanket policies. Round 5 Matter 28 multisource: no CourtListener/CAP hit for this pin/caption (consistent with prior MISCITED / wrong-WL / inverted-caption problems).",
       "sampleContext": "porations). \u2022 Relevance: The \"blanket policy\" itself is the basis for corporate/individual-capacity liability. III. Robust Consensus of Persuasive Authority \u2022 Jessie v. United States, 79 M.J. 437 (C.A.A.F. 2020) (citing Lacy v. United States): Condemning \"automatic blanket polici",
       "locations": [
         {
@@ -1512,8 +1524,8 @@
       ],
       "plaintiffOnly": true,
       "status": "MISCITED",
-      "statusSource": "audit",
-      "notes": "Real case at that cite (homeless camping / Eighth Amendment; later reviewed by SCOTUS as City of Grants Pass v. Johnson), but it does not support a due-process 'nominal and illusory procedures' proposition. Searches for that language against this opinion return nothing on point. Wrong doctrinal hook \u2014 remove or replace with a real procedural-due-process illusory-hearing authority.",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: no CourtListener/CAP hit for this pin/caption (consistent with prior MISCITED / wrong-WL / inverted-caption problems).",
       "sampleContext": "of \"Illusory Pathways\" The Ninth Circuit has recognized in other contexts that procedures which are \"merely nominal and illusory\" do not satisfy due process. (See Johnson v. City of Grants Pass, 50 F.4th 787 (9th Cir. 2022)). A graduation pathway that clinicians are \"prohibited f",
       "locations": [
         {
@@ -2855,8 +2867,8 @@
       ],
       "plaintiffOnly": true,
       "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Real, canonical. Citation and holding correctly stated.",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Morrissey v. Brewer.",
       "sampleContext": "ole is release from prison, before the completion of sentence, on the condition that the prisoner abide by certain rules during the balance of the sentence.\u201d (Morrissey v. Brewer, 408 U.S. 471, 477 (1972).) Therefore, the government may impose restrictions on parolees\u2019 rights tha",
       "locations": [
         {
@@ -2922,8 +2934,8 @@
       ],
       "plaintiffOnly": false,
       "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Real and accurately characterized. 5-4, Breyer, J., decided Jun. 23, 1997. Confirmed via supreme.justia.com/cases/federal/us/521/399, Oyez, and the govinfo.gov U.S. Reports bound volume PDF.",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Richardson v. McKnight.",
       "sampleContext": "d (2) policy rationales. [ 1][^2] The central Supreme Court precedents on private defendants and qualified immunity are Wyatt v. Cole, 504 U.S. 158 (1992), and Richardson v. McKnight, 521 U.S. 399 (1997), followed by Filarsky v. Delia, 566 U.S. 377 (2012). [ 1][^2] These cases co",
       "locations": [
         {
@@ -3361,8 +3373,8 @@
       ],
       "plaintiffOnly": false,
       "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Real and accurately characterized as the limit on the threshold argument. 566 U.S. 377 (2012), Roberts, C.J., unanimous: a private individual temporarily retained by government to carry out its work may seek qualified immunity under \u00a7 1983. Confirmed via supreme.justia.com/cases/federal/us/566/377 and Cornell LII. The memos correctly frame the open question as Richardson-type institutional privati",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Filarsky v. Delia.",
       "sampleContext": "rt precedents on private defendants and qualified immunity are Wyatt v. Cole, 504 U.S. 158 (1992), and Richardson v. McKnight, 521 U.S. 399 (1997), followed by Filarsky v. Delia, 566 U.S. 377 (2012). [ 1][^2] These cases collectively establish that many private actors who perform",
       "locations": [
         {
@@ -4181,8 +4193,8 @@
       ],
       "plaintiffOnly": true,
       "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Real and accurately characterized as requiring ongoing individualized justification for continued confinement. Confirmed via standard Supreme Court sources.",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Foucha v. Louisiana.",
       "sampleContext": "unds, indicating that the procedural rights surrounding SOTP participation and its impact on liberty are a fertile ground for \"clearly established\" claims. \u2022 Foucha v. Louisiana, 504 U.S. 71 (1992). \u2022 Holding: Continued confinement of an insanity acquittee requires periodic, indi",
       "locations": [
         {
@@ -4544,8 +4556,8 @@
       ],
       "plaintiffOnly": true,
       "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Real and correctly used. Exhaustion of state administrative remedies is not a prerequisite to a \u00a7 1983 action. Confirmed via govinfo.gov U.S. Reports PDF and Cornell LII.",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Patsy v. Board of Regents of Fla..",
       "sampleContext": "DAMAGES AND INJUNCTIVE RELIEF \u2014 NEWANFORBI v. HOPE PSYCHOTHERAPY, INC. ET AL. 10. No administrative exhaustion is required for Plaintiff's Section 1983 claims. Patsy v. Board of Regents, 457 U.S. 496, 516 (1982). III. PARTIES 11. Plaintiff BRENDAN NGEHSI NEWANFORBI is a natural p",
       "locations": [
         {
@@ -5257,8 +5269,8 @@
       ],
       "plaintiffOnly": false,
       "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Real and correctly used. Ninth Circuit held there was NO qualified immunity for the provider of involuntary commitment services, reasoning it was 'a firm systematically organized to assume a major lengthy administrative task, not a private individual briefly deputized,' and that the for-profit/non-profit distinction from Richardson was immaterial. NOTE: some secondary summaries (vLex/casemine snip",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Halvorsen v. Baird.",
       "sampleContext": "looks substantially more like the Richardson side. \u2e3b 3. Halvorsen may actually be your best Ninth Circuit case This is the case I would elevate considerably: Halvorsen v. Baird, 146 F.3d 680 (9th Cir. 1998) It is unusually close conceptually. Police took a person to a private det",
       "locations": [
         {
@@ -5344,8 +5356,8 @@
       ],
       "plaintiffOnly": false,
       "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Real at 222 F.3d 570. Used appropriately in the threshold QI / private mental-health contractor cluster. Confirmed via Ninth Circuit secondary indexes and Clement's citation of Jensen.",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Jensen v. Lane County.",
       "sampleContext": "dependence with the [private party] that it was a joint participant in the enterprise.\u201d (Jackson v. Metropolitan Edison Co. (1974) 419 U.S. 345, 357\u2013358; see Jensen v. Lane County (9th Cir. 2000) 222 F.3d 570, 574 [referring to a dual \u201cclose nexus/joint action test\u201d].) Finally, u",
       "locations": [
         {
@@ -5746,8 +5758,8 @@
       ],
       "plaintiffOnly": false,
       "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Real and correctly used for the principle that significant changes in the nature of confinement/treatment trigger due process.",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Vitek v. Jones.",
       "sampleContext": "ess. For QI, you can rely on its clearly established requirement of ongoing, individualized justification for continued confinement-like restraints.[7][8] ### Vitek v. Jones, 445 U.S. 480 (1980) - **Citation and holding:** 445 U.S. 480 (1980). The Court held that involuntary tran",
       "locations": [
         {
@@ -5790,8 +5802,8 @@
       ],
       "plaintiffOnly": true,
       "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Real and accurately characterized. West held a private physician under contract to provide medical care to prisoners acts under color of state law for \u00a7 1983. Confirmed via supreme.justia.com and standard \u00a7 1983 literature. Same use appears in the research memos.",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 West v. Atkins.",
       "sampleContext": "3. Private Contractors as State Actors \u2022 West v. Atkins, 487 U.S. 42 (1988). \u2022 Holding: A private physician under contract with the state to provide medical services to prisoners acts \"under color of state law\" for",
       "locations": [
         {
@@ -5833,8 +5845,8 @@
       ],
       "plaintiffOnly": false,
       "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Real and correctly placed as the starting point before Richardson. Confirmed via U.S. Reports.",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Wyatt v. Cole.",
       "sampleContext": "lable based on (1) common-law history and (2) policy rationales. [ 1][^2] The central Supreme Court precedents on private defendants and qualified immunity are Wyatt v. Cole, 504 U.S. 158 (1992), and Richardson v. McKnight, 521 U.S. 399 (1997), followed by Filarsky v. Delia, 566 ",
       "locations": [
         {
@@ -6101,8 +6113,8 @@
       ],
       "plaintiffOnly": false,
       "status": "MISCHARACTERIZED",
-      "statusSource": "audit",
-      "notes": "Real at 12 F.4th 978 / No. 18-36083, but the disposition is the opposite of what the memo claims: the Ninth Circuit AFFIRMED dismissal of the \u00a7 1983 claims. Holding: no Fifth Amendment \u00a7 1983 damages claim without use of a compelled statement in a criminal proceeding (Chavez v. Martinez). QI discussion notes close questions but does not reverse on QI. Confirmed via cdn.ca9.uscourts.gov opinion PDF",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: 12 F.4th 978 exists (Daniel Chavez v. David Robinson). Prior MISCHARACTERIZED stands \u2014 existence OK, proposition not.",
       "sampleContext": "nalogy: If due process is required to start the condition, it must be required to continue or end it, especially when the pathway to completion is illusory. \u2022 Chavez v. Robinson, 12 F.4th 978 (9th Cir. 2021). \u2022 Holding: Discusses the due process implications of a \"discharge\" from",
       "locations": [
         {
@@ -6605,7 +6617,7 @@
       "plaintiffOnly": true,
       "status": "VERIFIED",
       "statusSource": "round",
-      "notes": "Real at 131 F.3d 818 (9th Cir. 1997). Add year.",
+      "notes": "Real at 131 F.3d 818 (9th Cir. 1997). Add year. Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Neal v. Shimoda.",
       "sampleContext": "lication of a \"blanket policy\" to override a procedural right is a violation of clearly established law. 2. Due Process in Sex Offender Treatment and Parole \u2022 Neal v. Shimoda, 131 F.3d 818 (9th Cir. 1997). \u2022 Holding: Labeling an inmate as a sex offender and requiring participatio",
       "locations": [
         {
@@ -7371,8 +7383,8 @@
       ],
       "plaintiffOnly": true,
       "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Quote confirmed accurate and is the case's central holding; page 847 confirmed as the location (footnote-8 attribution could not be independently confirmed but is immaterial since the quote and page are correct).",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 County of Sacramento v. Lewis.",
       "sampleContext": "8 procedures and ascertainable standards, a decision-maker's arbitrary and capricious refusal to 9 apply those standards violates substantive due process. County of Sacramento v. Lewis, 523 U.S. 10 833, 845-46 (1998); Shanks v. Dressel, 540 F.3d 1082, 1087 (9th Cir. 2008). 11 12 ",
       "locations": [
         {
@@ -7402,8 +7414,8 @@
       ],
       "plaintiffOnly": true,
       "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Quote confirmed accurate and is the case's central holding; page 847 confirmed as the location (footnote-8 attribution could not be independently confirmed but is immaterial since the quote and page are correct).",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 County of Sacramento v. Lewis.",
       "sampleContext": "oyment opportunities; (c) mandatory HOPE attendance forcing him to miss work; and (d) denial of parole discharge. These deprivations shock the conscience under County of Sacramento v. Lewis, 523 U.S. 833 (1998), because HOPE knowingly fabricated treatment-status evidence to prolo",
       "locations": [
         {
@@ -7496,8 +7508,8 @@
       ],
       "plaintiffOnly": false,
       "status": "NOT_FOUND",
-      "statusSource": "audit",
-      "notes": "No decision titled Dunford v. Rovi Corp. turns up at 2015 WL 13752958 or under that caption in N.D. Cal. Searches surface only Netflix, Inc. v. Rovi Corp., 114 F. Supp. 3d 927 (N.D. Cal. 2015) \u2014 a patent \u00a7 101 case with nothing about discovery cross-use. Appears in the FILED protective-order motion and proposed order. Remove or replace (the cross-use proposition is correctly stated in Foltz, which",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed NOT_FOUND on CourtListener + CAP.",
       "sampleContext": "ed litigation, the Federal Rules of Civil Procedure \"create no automatic prohibition against using discovery obtained in one litigation in another litigation.\" Dunford v. Rovi Corp., 2015 WL 13752958, at *2 (N.D. Cal. 2015). Courts routinely permit such use where the materials ar",
       "locations": [
         {
@@ -7559,8 +7571,8 @@
       ],
       "plaintiffOnly": false,
       "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Real and correctly used for the Rule 26(c) good-cause / specific-prejudice standard. Also the true source of the 'fruits of one litigation' language the motion misattributes to Condit (331 F.3d at 1131). Confirmed via law.justia.com/cases/federal/appellate-courts/F3/331/1122.",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Foltz v. State Farm Mutual Automobile Insurance.",
       "sampleContext": "l Motors Corp., 307 F.3d 1206, 1210-11 (9th Cir. 2002). Good cause exists when \"specific prejudice or harm will result\" from the absence of a protective order. Foltz v. State Farm Mut. Auto. Ins. Co., 331 F.3d 1122, 1130 (9th Cir. 2003). With respect to the use of discovery mater",
       "locations": [
         {
@@ -7625,8 +7637,8 @@
       ],
       "plaintiffOnly": true,
       "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Real; correctly listed among authorities that can cut against a liberty-interest claim in parole discharge.",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Greenholtz v. Inmates of the Nebraska Penal & Correctional Complex.",
       "sampleContext": "t the blanket policy that makes completion impossible, effectively extending parole supervision indefinitely. That is an atypical and significant hardship. 2. Greenholtz v. Inmates of Nebraska Penal & Correctional Complex, 442 U.S. 1 (1979) Holding: A parole statute that creates ",
       "locations": [
         {
@@ -7881,8 +7893,8 @@
       ],
       "plaintiffOnly": false,
       "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Real and accurately characterized. 5-4, Breyer, J., decided Jun. 23, 1997. Confirmed via supreme.justia.com/cases/federal/us/521/399, Oyez, and the govinfo.gov U.S. Reports bound volume PDF.",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Richardson v. McKnight.",
       "sampleContext": "s before analyzing clearly established law. [ 4] That inquiry is central to your threshold argument against a private CEO of a for-profit treatment contractor. In Richardson v. McKnight, 521 U.S. 399 (1997), Tennessee contracted with a private, multistate, for-profit prison manag",
       "locations": [
         {
@@ -8415,8 +8427,8 @@
       ],
       "plaintiffOnly": false,
       "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Real and accurately characterized. 5-4, Breyer, J., decided Jun. 23, 1997. Confirmed via supreme.justia.com/cases/federal/us/521/399, Oyez, and the govinfo.gov U.S. Reports bound volume PDF.",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: PARTIAL \u2192 Richardson v. McKnight.",
       "sampleContext": "YATT v. COLE on CaseMine. 10. Danielson v. Inslee - The Supreme Court has held that private parties sued under 42 U.S.C. \u00a7 1983 cannot claim qualified i... 11. Richardson v. McKnight, 117 S.Ct. 2100, 138 L.Ed.2d ... - The court held that, because they worked for a private company",
       "locations": [
         {
@@ -8828,8 +8840,8 @@
       ],
       "plaintiffOnly": true,
       "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Both real, foundational Section 1983 state-action cases; citations accurate and used for their standard doctrinal purpose.",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 West v. Atkins.",
       "sampleContext": "each separately stated to Plaintiff, in substance, that \"HOPE controls\" and that \"without sex-offender completion there will be no discharge from parole.\" 19. Under West v. Atkins, 487 U.S. 42, 54 (1988), a private entity that contracts with the state to provide services to perso",
       "locations": [
         {
@@ -8992,8 +9004,8 @@
       ],
       "plaintiffOnly": false,
       "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Real. Affirmed denial on the commitment offense but warned in dicta that continued sole reliance on unchanging factors could eventually violate due process. Memo's characterization is fair. Confirmed via CCAP summary and opinion text. Note: later cabined by Swarthout / subsequent Ninth Circuit habeas cases \u2014 still good for the proposition stated.",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Biggs v. Terhune.",
       "sampleContext": "vileges was analyzed under Sandin v. Conner. Relevance: Confirms that sex offender classification and resulting restrictions can implicate due process. --- 4. Biggs v. Terhune, 334 F.3d 910 (9th Cir. 2003) Holding: A parole board's decision must be supported by \"some evidence\" of",
       "locations": [
         {
@@ -9101,6 +9113,31 @@
           "page": 15,
           "role": "plaintiff_filing",
           "matter": 30
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "CLEMENT v. GLENDALE, 518 F. 3d 1090",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        28
+      ],
+      "roles": [
+        "other"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: 518 F.3d 1090 is Clement v. City of Glendale (abbreviated index caption). Existence OK.",
+      "sampleContext": "cts immunity from liability for mental health ... - The Ninth Circuit held that a private psychiatrist who contracted with county officials to evaluate ... 21. CLEMENT v. GLENDALE, 518 F.3d 1090 | 9th Cir., Judgment, Law, casemine.com - Get free access to the complete judgment in",
+      "locations": [
+        {
+          "document": "/documents/matter-28/research/Executive Report - Qualified Immunity for Private CDCR Contractors.pdf",
+          "page": 10,
+          "role": "other",
+          "matter": 28
         }
       ],
       "priority": "P2_joined"
@@ -9244,8 +9281,8 @@
       ],
       "plaintiffOnly": false,
       "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Real; state-created liberty interest analysis correctly summarized.",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Carver v. Lehman.",
       "sampleContext": "e: Reinforces the principle that parole decisions require individualized consideration and that the parolee has a right to participate in that process. --- 6. Carver v. Lehman, 558 F.3d 869 (9th Cir. 2008) Holding: Washington state law creates a liberty interest in early release ",
       "locations": [
         {
@@ -9321,8 +9358,8 @@
       ],
       "plaintiffOnly": false,
       "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Real; correctly used for QI specificity / beyond-debate framing.",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 City of Escondido v. Emmons.",
       "sampleContext": "at the time of the violation. Under Ashcroft v. al-Kidd, 563 U.S. 731 (2011), existing precedent must place the constitutional question \u201cbeyond debate.\u201d Under City of Escondido v. Emmons, 139 S. Ct. 500 (2019), the right must be defined with specificity, not at a high level of ge",
       "locations": [
         {
@@ -9371,8 +9408,8 @@
       ],
       "plaintiffOnly": false,
       "status": "NOT_FOUND",
-      "statusSource": "audit",
-      "notes": "No Ninth Circuit decision titled Collins v. Moore sits at 81 F.3d 167. That table page hosts unrelated unpublished dispositions (e.g., Feigel v. Ministers Life; AB Avnet EMG v. Sierra Semiconductor; In re Evans) \u2014 none about sex-offender classification. Remove. Confirmed via vLex / midpage indexes for 81 F.3d 167.",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed NOT_FOUND on CourtListener + CAP.",
       "sampleContext": "ablished law. Your conduct period is 2019-2025, well after Neal. Thus, Neal can be cited as clearly established law for purposes of qualified immunity. --- 3. Collins v. Moore, 81 F.3d 167 (9th Cir. 1996) (unpublished table decision, but relevant) Holding: A prisoner's due proces",
       "locations": [
         {
@@ -9396,8 +9433,8 @@
       ],
       "plaintiffOnly": false,
       "status": "MISCITED",
-      "statusSource": "audit",
-      "notes": "Real case at that exact reporter cite, but wrong proposition and wrong quote attribution. Condit v. Dunne, 225 F.R.D. 100, is a Gary Condit / Dominick Dunne defamation discovery ruling about the scope of questioning into sexual relationships and finances \u2014 nothing about collateral use of discovery. The 'fruits of one litigation' sentence is from Foltz v. State Farm, 331 F.3d 1122, 1131 (9th Cir. 2",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: pin/caption resolves (FOUND \u2192 Condit v. Dunne), but prior MISCITED stands (proposition/characterization problem, not existence).",
       "sampleContext": "nd WHEREAS federal courts strongly favor allowing the use of discovery materials obtained in related litigation to avoid wasteful duplication of discovery (see Condit v. Dunne, 225 F.R.D. 100, 105 (S.D.N.Y. 2004); Dunford v. Rovi Corp., 2015 WL 13752958 (N.D. Cal. 2015)), and Pla",
       "locations": [
         {
@@ -9497,7 +9534,7 @@
       "plaintiffOnly": true,
       "status": "VERIFIED",
       "statusSource": "round",
-      "notes": "Real at 935 F.3d 757 (9th Cir. 2019). Matter 28 already flags MISCHARACTERIZED if used as per se anti-blanket-policy holding \u2014 existence OK.",
+      "notes": "Real at 935 F.3d 757 (9th Cir. 2019). Matter 28 already flags MISCHARACTERIZED if used as per se anti-blanket-policy holding \u2014 existence OK. Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Edmo v. Corizon, Inc..",
       "sampleContext": "icy for courtroom safety requires individualized assessment, a blanket policy for treatment completion (affecting years of liberty) a fortiori requires it. \u2022 Edmo v. Corizon, Inc., 935 F.3d 757 (9th Cir. 2019). \u2022 Holding: A blanket policy that denies a specific medical treatment ",
       "locations": [
         {
@@ -9530,6 +9567,31 @@
           "page": 13,
           "role": "other",
           "matter": 16
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Estates of Byrd v. General Motors Corp, 307 F. 3d 1206",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        28
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "MISCITED",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: 307 F.3d 1206 resolves to Phillips v. General Motors Corp., not Estates of Byrd v. General Motors Corp. Wrong caption at this pin.",
+      "sampleContext": "E ORDER \u2014 NEWANFORBI v. SMITH, ET AL. burden or expense.\" The party seeking the protective order bears the burden of demonstrating good cause. Phillips ex rel. Estates of Byrd v. General Motors Corp., 307 F.3d 1206, 1210-11 (9th Cir. 2002). Good cause exists when \"specific prejud",
+      "locations": [
+        {
+          "document": "/documents/matter-28/Motion Protective Order NDCA.pdf",
+          "page": 5,
+          "role": "court_order",
+          "matter": 28
         }
       ],
       "priority": "P2_joined"
@@ -9891,6 +9953,31 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Holding Key Fact Ace Beverage Co. v. Lockheed Info. Mgmt. Servs, 144 F. 3d 1218",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        28
+      ],
+      "roles": [
+        "other"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: 144 F.3d 1218 is Ace Beverage Co. v. Lockheed Information Management Services. Index prefix 'Holding Key Fact' is OCR/context noise.",
+      "sampleContext": "ore Filarsky, the Ninth Circuit consistently held that private parties acting under color of state law were categorically barred from qualified immunity. Case Holding Key Fact Ace Beverage Co. v. Lockheed Info. Mgmt. Servs., 144 F.3d 1218 (9th Cir. 1998) Private contractor proces",
+      "locations": [
+        {
+          "document": "/documents/matter-28/research/Threshold Argument - No Qualified Immunity for Private Contractor CEO.pdf",
+          "page": 14,
+          "role": "other",
+          "matter": 28
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "Hope v. Pelzer, 536 U.S. 730",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -9969,6 +10056,56 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "In Clement v. City of Glendale, 518 F. 3d 1090",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        28
+      ],
+      "roles": [
+        "other"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: FOUND on CourtListener/CAP as 'Clement v. City of Glendale'. Existence confirmed; load-bearing uses still need proposition check against opinion text.",
+      "sampleContext": "In Clement v. City of Glendale, 518 F.3d 1090 (9th Cir. 2008), the Ninth Circuit held that a private towing company that impounded vehicles at police direction could not assert qualified imm",
+      "locations": [
+        {
+          "document": "/documents/matter-28/research/Executive Report - Qualified Immunity for Private CDCR Contractors.pdf",
+          "page": 6,
+          "role": "other",
+          "matter": 28
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "In Danielson v. Inslee, 945 F. 3d 1096",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        28
+      ],
+      "roles": [
+        "other"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: 945 F.3d 1096 is Danielson v. Inslee (CL caption Dale Danielson v. Jay Inslee). Existence OK.",
+      "sampleContext": "^7] These authorities are directly comparable to your defendant, whose company operates mandated treatment services for parolees under contract with CDCR. [ 7] In Danielson v. Inslee, 945 F.3d 1096 (9th Cir. 2019), the Ninth Circuit held that private parties may invoke an affirma",
+      "locations": [
+        {
+          "document": "/documents/matter-28/research/Executive Report - Qualified Immunity for Private CDCR Contractors.pdf",
+          "page": 7,
+          "role": "other",
+          "matter": 28
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "In Dunford v. Rovi Corp, 2015 WL 13752958",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -9980,8 +10117,8 @@
       ],
       "plaintiffOnly": false,
       "status": "NOT_FOUND",
-      "statusSource": "audit",
-      "notes": "No decision titled Dunford v. Rovi Corp. turns up at 2015 WL 13752958 or under that caption in N.D. Cal. Searches surface only Netflix, Inc. v. Rovi Corp., 114 F. Supp. 3d 927 (N.D. Cal. 2015) \u2014 a patent \u00a7 101 case with nothing about discovery cross-use. Appears in the FILED protective-order motion and proposed order. Remove or replace (the cross-use proposition is correctly stated in Foltz, which",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed NOT_FOUND on CourtListener + CAP.",
       "sampleContext": "ruits of one litigation to facilitate preparation in other cases advances the interests of judicial economy by avoiding the wasteful duplication of discovery.\" In Dunford v. Rovi Corp., 2015 WL 13752958, at *2 (N.D. Cal. 2015), this District confirmed that the Federal Rules \"crea",
       "locations": [
         {
@@ -10005,13 +10142,63 @@
       ],
       "plaintiffOnly": false,
       "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Real and accurately characterized as the limit on the threshold argument. 566 U.S. 377 (2012), Roberts, C.J., unanimous: a private individual temporarily retained by government to carry out its work may seek qualified immunity under \u00a7 1983. Confirmed via supreme.justia.com/cases/federal/us/566/377 and Cornell LII. The memos correctly frame the open question as Richardson-type institutional privati",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Filarsky v. Delia.",
       "sampleContext": "In Filarsky v. Delia, 566 U.S. 377 (2012), a private attorney was temporarily retained by a California city to conduct an internal investigation of a suspected firefighter miscondu",
       "locations": [
         {
           "document": "/documents/matter-28/research/Executive Report - Qualified Immunity for Private CDCR Contractors.pdf",
           "page": 4,
+          "role": "other",
+          "matter": 28
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "In Franklin v. Fox, 312 F. 3d 423",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        28
+      ],
+      "roles": [
+        "other"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: FOUND on CourtListener/CAP as 'Franklin v. Fox'. Existence confirmed; load-bearing uses still need proposition check against opinion text.",
+      "sampleContext": "Clement explicitly cites Wyatt for the proposition that private parties do not receive qualified immunity and channels them into a good-faith framework. [ 21] In Franklin v. Fox, 312 F.3d 423 (9th Cir. 2002), the Ninth Circuit reiterated that private individuals, even when acting",
+      "locations": [
+        {
+          "document": "/documents/matter-28/research/Executive Report - Qualified Immunity for Private CDCR Contractors.pdf",
+          "page": 6,
+          "role": "other",
+          "matter": 28
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "In Jensen v. Lane County, 222 F. 3d 570",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        28
+      ],
+      "roles": [
+        "other"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: FOUND on CourtListener/CAP as 'Jensen v. Lane County'. Existence confirmed; load-bearing uses still need proposition check against opinion text.",
+      "sampleContext": "equires courts to apply the history-and-policy test, which in your fact pattern points strongly toward denial of qualified immunity under Richardson. [ 7][^18] In Jensen v. Lane County, 222 F.3d 570 (9th Cir. 2000), a private psychiatrist contracted with county officials to evalu",
+      "locations": [
+        {
+          "document": "/documents/matter-28/research/Executive Report - Qualified Immunity for Private CDCR Contractors.pdf",
+          "page": 5,
           "role": "other",
           "matter": 28
         }
@@ -10030,13 +10217,38 @@
       ],
       "plaintiffOnly": false,
       "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Real. Minneci is a Bivens (not QI) case; the memo's use as landscape/context rather than a QI holding is acceptable. Confirmed via Supreme Court sources.",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Minneci v. Pollard.",
       "sampleContext": "tions under close state control), the prevailing approach treats systematically organized, profit-driven contractors as ineligible for qualified immunity. [ 7] In Minneci v. Pollard, 565 U.S. 118 (2012), the Court denied a Bivens remedy against private prison employees where stat",
       "locations": [
         {
           "document": "/documents/matter-28/research/Executive Report - Qualified Immunity for Private CDCR Contractors.pdf",
           "page": 8,
+          "role": "other",
+          "matter": 28
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "In Richardson v. McKnight, 521 US 399 (1997)",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        28
+      ],
+      "roles": [
+        "other"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: FOUND on CourtListener/CAP as 'Richardson v. McKnight'. Existence confirmed; load-bearing uses still need proposition check against opinion text.",
+      "sampleContext": "tutional Liability on the Privatization ... - by PH Morris \u00b7 1999 \u00b7 Cited by 15 \u2014 ng the issue before them as whether privately-employed prison gu... 15. [PDF] In Richardson v. McKnight, 521 US 399, 408 (1997), a bare majority ... 16. Minneci v. Pollard (10-1104) | Supreme Court ",
+      "locations": [
+        {
+          "document": "/documents/matter-28/research/Executive Report - Qualified Immunity for Private CDCR Contractors.pdf",
+          "page": 10,
           "role": "other",
           "matter": 28
         }
@@ -10055,8 +10267,8 @@
       ],
       "plaintiffOnly": false,
       "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Real and correctly placed as the starting point before Richardson. Confirmed via U.S. Reports.",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Wyatt v. Cole.",
       "sampleContext": "firms running major delegated functions\u2014are not entitled to qualified immunity, even though they act under color of state law for liability purposes. [ 1][^2] In Wyatt v. Cole, 504 U.S. 158 (1992), the Court held that qualified immunity \"as enunciated in Harlow\" is not available ",
       "locations": [
         {
@@ -10105,8 +10317,8 @@
       ],
       "plaintiffOnly": false,
       "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Real at 222 F.3d 570. Used appropriately in the threshold QI / private mental-health contractor cluster. Confirmed via Ninth Circuit secondary indexes and Clement's citation of Jensen.",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Jensen v. Lane County.",
       "sampleContext": "lified immunity from suit, as enunciated by this Court with respect to government officials, is n... 3. United States Court of Appeals for the Ninth Circuit 4. JENSEN v. LANE COUNTY, 222 F.3d 570 | 9th Cir., Judgment, Law, casemine.com - Get free access to the complete judgment i",
       "locations": [
         {
@@ -10335,8 +10547,8 @@
       ],
       "plaintiffOnly": false,
       "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Real unpublished table decision at 15 F.3d 1086; holding matches the memo's adverse-use characterization (no liberty interest because regulations did not mandate a particular outcome). Nonprecedential under 9th Cir. R. 36-3. Confirmed via Prison Legal News summary and exa.ai opinion snippet.",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: 15 F.3d 1086 is a table page hosting multiple dispositions; CL's first hit is unrelated. Prior audit treated Luca as an unpublished table decision at this pin \u2014 keep VERIFIED but prefer a better cite if one exists; do not treat the table page as unique.",
       "sampleContext": "vidualized assessment. Your claim is that no individualized assessment occurred at all because of a categorical policy, not that the assessment was flawed. 4. Luca v. Administration of Offender Services Bureau, 15 F.3d 1086 (9th Cir. 1994) (unpublished) Holding: A prisoner did no",
       "locations": [
         {
@@ -10789,8 +11001,8 @@
       ],
       "plaintiffOnly": false,
       "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Real; correctly listed as adverse authority defining the atypical-and-significant-hardship threshold.",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Sandin v. Conner.",
       "sampleContext": "at the policy was unlawful (relevant to the subjective knowledge prong, not the clearly- established-law prong). --- IV. Cases That Cut Against the Argument 1. Sandin v. Conner, 515 U.S. 472 (1995) Holding: A prisoner does not have a liberty interest in avoiding administrative se",
       "locations": [
         {
@@ -10940,8 +11152,8 @@
       ],
       "plaintiffOnly": false,
       "status": "MISCITED",
-      "statusSource": "audit",
-      "notes": "Real case at that exact reporter cite, but wrong proposition and wrong quote attribution. Condit v. Dunne, 225 F.R.D. 100, is a Gary Condit / Dominick Dunne defamation discovery ruling about the scope of questioning into sexual relationships and finances \u2014 nothing about collateral use of discovery. The 'fruits of one litigation' sentence is from Foltz v. State Farm, 331 F.3d 1122, 1131 (9th Cir. 2",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: pin/caption resolves (FOUND \u2192 Condit v. Dunne), but prior MISCITED stands (proposition/characterization problem, not existence).",
       "sampleContext": "it such use where the materials are relevant and the producing party's legitimate confidentiality interests are preserved under an equivalent protective order. See Condit v. Dunne, 225 F.R.D. 100, 105 (S.D.N.Y. 2004) (\"Allowing the fruits of one litigation to facilitate preparati",
       "locations": [
         {
@@ -11373,8 +11585,8 @@
       ],
       "plaintiffOnly": true,
       "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Real; blanket denial of live witnesses in disciplinary hearings is impermissible (case-by-case required). Slight overclaim: the panel granted the officer QI on the due-process claim while finding a violation \u2014 so 'violated clearly established law' overstates the QI holding. Still usable for the blanket-policy-is-impermissible rule. Confirmed via exa.ai / syfert opinion text.",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Serrano v. Francis.",
       "sampleContext": "f progress is the mirror image of a blanket policy that no one \"receives\" treatment. Both substitute corporate policy for individualized clinical judgment. \u2022 Serrano v. Francis, 345 F.3d 1071 (9th Cir. 2003). \u2022 Holding: Prison officials violated clearly established law by applyin",
       "locations": [
         {
@@ -11449,8 +11661,8 @@
       ],
       "plaintiffOnly": false,
       "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Real; correctly flagged as limiting federal parole due-process review to minimal procedures once a state-created liberty interest exists.",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Swarthout v. Cooke.",
       "sampleContext": "role discharge itself, but in not being subjected to arbitrary, categorical rules that prevent completion of a condition of release \u2014 a different interest. 3. Swarthout v. Cooke, 562 U.S. 216 (2011)",
       "locations": [
         {
@@ -11527,7 +11739,7 @@
       "plaintiffOnly": true,
       "status": "VERIFIED",
       "statusSource": "round",
-      "notes": "Real at 698 F.3d 1128 (9th Cir. 2012). Add year. Correct form (not 98 F.3d).",
+      "notes": "Real at 698 F.3d 1128 (9th Cir. 2012). Add year. Correct form (not 98 F.3d). Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Tsao v. Desert Palace, Inc..",
       "sampleContext": "color of state law\" for \u00a71983 purposes. \u2022 Relevance: The CEO of a private company contracted by CDCR to provide mandatory parole treatment is a state actor. \u2022 Tsao v. Desert Palace, Inc., 698 F.3d 1128 (9th Cir. 2012). \u2022 Holding: Private entities can be held liable under \u00a71983 fo",
       "locations": [
         {
@@ -11628,8 +11840,8 @@
       ],
       "plaintiffOnly": false,
       "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Real; correctly placed in the Williams/Weber line.",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 United States v. Cope.",
       "sampleContext": "ver to recognize completion, regardless of an individual\u2019s progress or risk, violates this tailoring requirement more clearly than Weber\u2019s own facts.[15] ### United States v. Cope, 527 F.3d 944 (9th Cir. 2008) - **Citation and holding:** 527 F.3d 944 (9th Cir. 2008). Cope reads W",
       "locations": [
         {
@@ -11653,8 +11865,8 @@
       ],
       "plaintiffOnly": false,
       "status": "MISCITED",
-      "statusSource": "audit",
-      "notes": "Real case \u2014 United States v. Johnson, 697 F.3d 1249 (9th Cir. 2012), No. 11-30256 \u2014 but the Westlaw number is wrong. Correct WL is 2012 WL 5328597, not 2012 WL 5279672. Holding roughly accurate (assessment, not treatment, upheld; distinguishes heavier liberty restraints). Fix the WL number / prefer the F.3d cite. Confirmed via FindLaw and midpage.",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: no CourtListener/CAP hit for this pin/caption (consistent with prior MISCITED / wrong-WL / inverted-caption problems).",
       "sampleContext": "dualized findings that it is necessary and proportionate.[14][13] ### United States v. Johnson, 2012 (Ninth Cir. published opinion) - **Citation and holding:** United States v. Johnson, 11-30256 (9th Cir. 2012) (published), available at 2012 WL 5279672. The court upheld a conditi",
       "locations": [
         {
@@ -11705,8 +11917,8 @@
       ],
       "plaintiffOnly": true,
       "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Real; memo correctly flags the Supreme Court vacatur for mootness (584 U.S. ___, 138 S. Ct. 1532 (2018)). Usable only as persuasive reasoning, not binding precedent \u2014 the memo already hedges that. Confirmed via supremecourt.gov opinion PDF.",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 United States v. Rene Sanchez-Gomez.",
       "sampleContext": "ons and blanket policies. II. Key Authority: Ninth Circuit and Supreme Court 1. The Requirement for Individualized Assessment (Anti-Blanket Policy Doctrine) \u2022 United States v. Sanchez-Gomez, 859 F.3d 649 (9th Cir. 2017) (en banc), vacated on other grounds, 138 S. Ct. 1532 (2018).",
       "locations": [
         {
@@ -11730,8 +11942,8 @@
       ],
       "plaintiffOnly": false,
       "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Real; extends Williams individualized-findings requirement to invasive testing. Accurate.",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 United States v. Weber.",
       "sampleContext": "y or proportionality, contrary to Williams\u2019s requirement that such conditions involve \u201cno greater deprivation of liberty than is reasonably necessary.\u201d[3] ### United States v. Weber, 451 F.3d 552 (9th Cir. 2006) - **Citation and holding:** 451 F.3d 552 (9th Cir. 2006). The Ninth ",
       "locations": [
         {
@@ -11755,8 +11967,8 @@
       ],
       "plaintiffOnly": false,
       "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Real and correctly characterized as requiring heightened individualized findings for liberty-burdening treatment conditions. Confirmed via standard Ninth Circuit supervised-release literature.",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 United States v. Williams.",
       "sampleContext": "ments before classification and treatment conditions that alter parole eligibility.[4] *** ## Ninth Circuit: Conditions of Supervised Release and Treatment ### United States v. Williams, 356 F.3d 1045 (9th Cir. 2004) - **Citation and holding:** 356 F.3d 1045 (9th Cir. 2004). The ",
       "locations": [
         {
@@ -11907,8 +12119,8 @@
       ],
       "plaintiffOnly": false,
       "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Real and correctly placed as the starting point before Richardson. Confirmed via U.S. Reports.",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Wyatt v. Cole.",
       "sampleContext": "9. WYATT v. COLE | 994 F.2d 1113 | 5th Cir. | Judgment | Law - Get free access to the complete judgment in WYATT v. COLE on CaseMine. 10. Danielson v. Inslee - The Supreme Cour",
       "locations": [
         {
@@ -11932,8 +12144,8 @@
       ],
       "plaintiffOnly": false,
       "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Real and correctly characterized.",
+      "statusSource": "round",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Washington v. Harper.",
       "sampleContext": "its. Caveat: Foucha is a substantive due process case, but its individualized-assessment rationale has been applied in procedural due process contexts. --- 4. Washington v. Harper, 494 U.S. 210 (1990)",
       "locations": [
         {
@@ -20030,31 +20242,6 @@
       "priority": "P3_unverified_corroborated"
     },
     {
-      "citation": "CLEMENT v. GLENDALE, 518 F. 3d 1090",
-      "kind": "authority",
-      "occurrenceCount": 1,
-      "matters": [
-        28
-      ],
-      "roles": [
-        "other"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "cts immunity from liability for mental health ... - The Ninth Circuit held that a private psychiatrist who contracted with county officials to evaluate ... 21. CLEMENT v. GLENDALE, 518 F.3d 1090 | 9th Cir., Judgment, Law, casemine.com - Get free access to the complete judgment in",
-      "locations": [
-        {
-          "document": "/documents/matter-28/research/Executive Report - Qualified Immunity for Private CDCR Contractors.pdf",
-          "page": 10,
-          "role": "other",
-          "matter": 28
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
       "citation": "CV Amalgamated LLC v. City of Chula Vista, 82 Cal.App. 5th 265 (2022)",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -20915,31 +21102,6 @@
       "priority": "P3_unverified_corroborated"
     },
     {
-      "citation": "Estates of Byrd v. General Motors Corp, 307 F. 3d 1206",
-      "kind": "authority",
-      "occurrenceCount": 1,
-      "matters": [
-        28
-      ],
-      "roles": [
-        "court_order"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "E ORDER \u2014 NEWANFORBI v. SMITH, ET AL. burden or expense.\" The party seeking the protective order bears the burden of demonstrating good cause. Phillips ex rel. Estates of Byrd v. General Motors Corp., 307 F.3d 1206, 1210-11 (9th Cir. 2002). Good cause exists when \"specific prejud",
-      "locations": [
-        {
-          "document": "/documents/matter-28/Motion Protective Order NDCA.pdf",
-          "page": 5,
-          "role": "court_order",
-          "matter": 28
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
       "citation": "Evartt v. Superior Court, 89 Cal.App. 3d 795 (1979)",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -21461,31 +21623,6 @@
       "priority": "P3_unverified_corroborated"
     },
     {
-      "citation": "Holding Key Fact Ace Beverage Co. v. Lockheed Info. Mgmt. Servs, 144 F. 3d 1218",
-      "kind": "authority",
-      "occurrenceCount": 1,
-      "matters": [
-        28
-      ],
-      "roles": [
-        "other"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "ore Filarsky, the Ninth Circuit consistently held that private parties acting under color of state law were categorically barred from qualified immunity. Case Holding Key Fact Ace Beverage Co. v. Lockheed Info. Mgmt. Servs., 144 F.3d 1218 (9th Cir. 1998) Private contractor proces",
-      "locations": [
-        {
-          "document": "/documents/matter-28/research/Threshold Argument - No Qualified Immunity for Private Contractor CEO.pdf",
-          "page": 14,
-          "role": "other",
-          "matter": 28
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
       "citation": "Hulsey v. Koehler, 218 Cal.App. 3d 1150 (1990)",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -21538,106 +21675,6 @@
       "priority": "P3_unverified_corroborated"
     },
     {
-      "citation": "In Clement v. City of Glendale, 518 F. 3d 1090",
-      "kind": "authority",
-      "occurrenceCount": 1,
-      "matters": [
-        28
-      ],
-      "roles": [
-        "other"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "In Clement v. City of Glendale, 518 F.3d 1090 (9th Cir. 2008), the Ninth Circuit held that a private towing company that impounded vehicles at police direction could not assert qualified imm",
-      "locations": [
-        {
-          "document": "/documents/matter-28/research/Executive Report - Qualified Immunity for Private CDCR Contractors.pdf",
-          "page": 6,
-          "role": "other",
-          "matter": 28
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
-      "citation": "In Danielson v. Inslee, 945 F. 3d 1096",
-      "kind": "authority",
-      "occurrenceCount": 1,
-      "matters": [
-        28
-      ],
-      "roles": [
-        "other"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "^7] These authorities are directly comparable to your defendant, whose company operates mandated treatment services for parolees under contract with CDCR. [ 7] In Danielson v. Inslee, 945 F.3d 1096 (9th Cir. 2019), the Ninth Circuit held that private parties may invoke an affirma",
-      "locations": [
-        {
-          "document": "/documents/matter-28/research/Executive Report - Qualified Immunity for Private CDCR Contractors.pdf",
-          "page": 7,
-          "role": "other",
-          "matter": 28
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
-      "citation": "In Franklin v. Fox, 312 F. 3d 423",
-      "kind": "authority",
-      "occurrenceCount": 1,
-      "matters": [
-        28
-      ],
-      "roles": [
-        "other"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "Clement explicitly cites Wyatt for the proposition that private parties do not receive qualified immunity and channels them into a good-faith framework. [ 21] In Franklin v. Fox, 312 F.3d 423 (9th Cir. 2002), the Ninth Circuit reiterated that private individuals, even when acting",
-      "locations": [
-        {
-          "document": "/documents/matter-28/research/Executive Report - Qualified Immunity for Private CDCR Contractors.pdf",
-          "page": 6,
-          "role": "other",
-          "matter": 28
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
-      "citation": "In Jensen v. Lane County, 222 F. 3d 570",
-      "kind": "authority",
-      "occurrenceCount": 1,
-      "matters": [
-        28
-      ],
-      "roles": [
-        "other"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "equires courts to apply the history-and-policy test, which in your fact pattern points strongly toward denial of qualified immunity under Richardson. [ 7][^18] In Jensen v. Lane County, 222 F.3d 570 (9th Cir. 2000), a private psychiatrist contracted with county officials to evalu",
-      "locations": [
-        {
-          "document": "/documents/matter-28/research/Executive Report - Qualified Immunity for Private CDCR Contractors.pdf",
-          "page": 5,
-          "role": "other",
-          "matter": 28
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
       "citation": "In Knudsen v. DMV, 101 Cal.App. 5th 186",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -21660,31 +21697,6 @@
           "page": 18,
           "role": "other",
           "matter": 7
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
-      "citation": "In Richardson v. McKnight, 521 US 399 (1997)",
-      "kind": "authority",
-      "occurrenceCount": 1,
-      "matters": [
-        28
-      ],
-      "roles": [
-        "other"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "tutional Liability on the Privatization ... - by PH Morris \u00b7 1999 \u00b7 Cited by 15 \u2014 ng the issue before them as whether privately-employed prison gu... 15. [PDF] In Richardson v. McKnight, 521 US 399, 408 (1997), a bare majority ... 16. Minneci v. Pollard (10-1104) | Supreme Court ",
-      "locations": [
-        {
-          "document": "/documents/matter-28/research/Executive Report - Qualified Immunity for Private CDCR Contractors.pdf",
-          "page": 10,
-          "role": "other",
-          "matter": 28
         }
       ],
       "priority": "P3_unverified_corroborated"
