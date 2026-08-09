@@ -90,7 +90,7 @@ export function PortfolioHeader({
                 <div>Melinda Garcia</div>
                 <div className="firm-external-hint">Visit site ↗</div>
               </div>
-              <img className="firm-logo legacy-garcia-logo" src={withBase(darkMode ? "/branding/garcia-gurney-dark.webp" : "/branding/garcia-gurney.webp")} alt="Garcia & Gurney, A Law Corporation" width={260} height={88} decoding="async" />
+              <img className="firm-logo legacy-garcia-logo" src={withBase(darkMode ? "/branding/garcia-gurney-dark.webp" : "/branding/garcia-gurney.webp")} alt="Garcia & Gurney, A Law Corporation" width={518} height={88} decoding="async" />
             </a>
             <a href="https://oag.ca.gov/dag-recruitment" target="_blank" rel="noopener noreferrer" title="Visit California Attorney General's Office — Deputy Attorney General recruitment (oag.ca.gov) ↗" className="firm-link">
               <div className="legacy-counsel-names">

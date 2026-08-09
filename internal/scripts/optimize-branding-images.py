@@ -42,8 +42,10 @@ TARGETS = [
     # inside the taller dark-mode aspect via object-fit: contain.
     ("slb-dark.png", "branding/slb-dark.webp", (118, 62)),
     ("slb-light.png", "branding/slb-light.webp", (118, 62)),
-    ("garcia-gurney-dark.png", "branding/garcia-gurney-dark.webp", (130, 44)),
-    ("garcia-gurney.png", "branding/garcia-gurney.webp", (130, 44)),
+    # Source wordmark is ~5.88:1. Pinning both axes (130×44) used to stretch it
+    # vertically; height-only keeps the natural aspect (≈259×44 CSS).
+    ("garcia-gurney-dark.png", "branding/garcia-gurney-dark.webp", (None, 44)),
+    ("garcia-gurney.png", "branding/garcia-gurney.webp", (None, 44)),
     ("dag-dark.jpg", "branding/dag-dark.webp", (64, 64)),
     ("dag-light.jpg", "branding/dag-light.webp", (64, 64)),
 ]
@@ -53,11 +55,31 @@ QUALITY = 82
 
 
 def encode(source: Path, css_size: tuple) -> bytes:
+    """Resize for a CSS box without distorting the artwork.
+
+    - (None, h): scale to height, width follows the source aspect.
+    - (w, h): fit inside the box (object-fit: contain), letterboxing with
+      transparent padding so a mismatched aspect never gets stretched.
+    """
     image = Image.open(source).convert("RGBA")
     css_width, css_height = css_size
-    height = css_height * SCALE
-    width = css_width * SCALE if css_width else round(image.width * height / image.height)
-    resized = image.resize((width, height), Image.LANCZOS)
+    box_h = css_height * SCALE
+    if css_width is None:
+        box_w = round(image.width * box_h / image.height)
+        resized = image.resize((box_w, box_h), Image.LANCZOS)
+    else:
+        box_w = css_width * SCALE
+        scale = min(box_w / image.width, box_h / image.height)
+        fitted = image.resize(
+            (max(1, round(image.width * scale)), max(1, round(image.height * scale))),
+            Image.LANCZOS,
+        )
+        resized = Image.new("RGBA", (box_w, box_h), (0, 0, 0, 0))
+        resized.paste(
+            fitted,
+            ((box_w - fitted.width) // 2, (box_h - fitted.height) // 2),
+            fitted,
+        )
     buffer = BytesIO()
     resized.save(buffer, "WEBP", quality=QUALITY, method=6)
     return buffer.getvalue()
