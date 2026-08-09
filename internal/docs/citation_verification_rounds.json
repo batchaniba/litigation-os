@@ -1,5 +1,5 @@
 {
-  "round": "2026-08-09 Round 4 \u2014 portfolio P0 (batches A\u2013B; continuing)",
+  "round": "2026-08-09 Round 4 \u2014 portfolio P0 (batches A\u2013C; continuing)",
   "method": "WebSearch against primary-source URLs after positive control (Richardson v. McKnight, 521 U.S. 399 \u2014 hit govinfo.gov U.S. Reports PDF) and negative control (In re Leman, 66 Cal.App.5th 200 \u2014 no matching decision; only Lemanuel C. / Marriage of Lemen noise). CourtListener/case.law/Justia direct fetches remain egress-blocked. Statuses rest on search-returned summaries plus primary URLs. Characterization flags applied when index sample context attributes a proposition the opinion does not support.",
   "controls": {
     "positive": {
@@ -741,6 +741,394 @@
       "notes": "Real at 627 F.3d 338 (9th Cir. 2010). Add year.",
       "sources": [
         "https://case-law.vlex.com/vid/hebbe-v-pliler-no-892677717"
+      ]
+    },
+    {
+      "citation": "See Shoyoye v. County of Los Angeles, 203 Cal.App. 4th 947 (2012)",
+      "status": "VERIFIED",
+      "notes": "Real at 203 Cal.App.4th 947 (2012).",
+      "sources": [
+        "https://www.leagle.com/decision/incaco20120223033"
+      ]
+    },
+    {
+      "citation": "Shoyoye v. County of Los Angeles, 203 Cal.App. 4th 947 (2012)",
+      "status": "VERIFIED",
+      "notes": "Real at 203 Cal.App.4th 947 (2012).",
+      "sources": [
+        "https://www.leagle.com/decision/incaco20120223033"
+      ]
+    },
+    {
+      "citation": "See Sosinsky v. Grant, 6 Cal.App. 4th 1548 (1992)",
+      "status": "VERIFIED",
+      "notes": "Real at 6 Cal.App.4th 1548 (1992).",
+      "sources": [
+        "https://law.justia.com/cases/california/court-of-appeal/4th/6/1548.html"
+      ]
+    },
+    {
+      "citation": "Sosinsky v. Grant, 6 Cal.App. 4th 1548 (1992)",
+      "status": "VERIFIED",
+      "notes": "Real at 6 Cal.App.4th 1548 (1992).",
+      "sources": [
+        "https://law.justia.com/cases/california/court-of-appeal/4th/6/1548.html"
+      ]
+    },
+    {
+      "citation": "Under Sosinsky v. Grant, 6 Cal.App. 4th 1548 (1992)",
+      "status": "VERIFIED",
+      "notes": "Same Sosinsky; 'Under ' prefix only.",
+      "sources": [
+        "https://law.justia.com/cases/california/court-of-appeal/4th/6/1548.html"
+      ]
+    },
+    {
+      "citation": "See Swift v. California Department, 116 Cal.App. 4th 1365 (2004)",
+      "status": "VERIFIED",
+      "notes": "Real as Swift v. Department of Corrections, 116 Cal.App.4th 1365 (2004).",
+      "sources": [
+        "https://hallapproved.com/ca/cases/appeals/2004/2276631/"
+      ]
+    },
+    {
+      "citation": "Soranno\u2019s Gasco, Inc. v. Morgan Hill Uniifed Sch. Dist, 874 F. 2d 1310",
+      "status": "MISCITED",
+      "notes": "874 F.2d 1310 is Soranno's Gasco, Inc. v. Morgan (9th Cir. 1989) against Stanislaus County air-pollution officials \u2014 not Morgan Hill Unified. Also misspells Unified.",
+      "sources": [
+        "https://openjurist.org/874/f2d/1310"
+      ]
+    },
+    {
+      "citation": "Soranno's Gasco, Inc. v. Morgan Hill Unified, 874 F. 2d 1310",
+      "status": "MISCITED",
+      "notes": "Same problem \u2014 correct caption is Soranno's Gasco, Inc. v. Morgan, 874 F.2d 1310 (9th Cir. 1989).",
+      "sources": [
+        "https://openjurist.org/874/f2d/1310"
+      ]
+    },
+    {
+      "citation": "Stevens v. Superior Court, 75 Cal.App. 4th 594 (1999)",
+      "status": "VERIFIED",
+      "notes": "Real at 75 Cal.App.4th 594 (1999).",
+      "sources": [
+        "https://law.justia.com/cases/california/court-of-appeal/4th/75/594.html"
+      ]
+    },
+    {
+      "citation": "Citizens for Sensible Planning v. City of Stockton, 48 Cal. 4th 481 (2010)",
+      "status": "VERIFIED",
+      "notes": "Real as Stockton Citizens for Sensible Planning v. City of Stockton, 48 Cal.4th 481 (2010). Prefer full caption.",
+      "sources": [
+        "https://scocal.stanford.edu/opinion/stockton-citizens-sensible-planning-v-city-stockton-33841"
+      ]
+    },
+    {
+      "citation": "Clark County Sch. Dist. v. Breeden, 532 U.S. 268 (2001)",
+      "status": "VERIFIED",
+      "notes": "Real at 532 U.S. 268 (2001).",
+      "sources": [
+        "https://supreme.justia.com/cases/federal/us/532/268/case.pdf"
+      ]
+    },
+    {
+      "citation": "Cornell v. City & County, 17 Cal.App. 5th 766 (2017)",
+      "status": "VERIFIED",
+      "notes": "Real as Cornell v. City and County of San Francisco, 17 Cal.App.5th 766 (2017).",
+      "sources": [
+        "https://caselaw.findlaw.com/court/ca-court-of-appeal/1880377.html"
+      ]
+    },
+    {
+      "citation": "Exxon Mobil Corp. v. Saudi Basic Indus. Corp, 544 U.S. 280 (2005)",
+      "status": "VERIFIED",
+      "notes": "Real \u2014 Rooker-Feldman.",
+      "sources": [
+        "https://www.law.cornell.edu/supremecourt/text/544/280"
+      ]
+    },
+    {
+      "citation": "Franklin v. Murphy, 745 F. 2d 1221",
+      "status": "VERIFIED",
+      "notes": "Real at 745 F.2d 1221 (9th Cir. 1984). Add year.",
+      "sources": [
+        "https://law.justia.com/cases/federal/appellate-courts/F2/745/1221/128729/"
+      ]
+    },
+    {
+      "citation": "Fremont Indem. Co. v. Fremont General Corp, 148 Cal.App. 4th 97 (2007)",
+      "status": "VERIFIED",
+      "notes": "Real at 148 Cal.App.4th 97 (2007).",
+      "sources": [
+        "https://caselaw.findlaw.com/court/ca-court-of-appeal/1073927.html"
+      ]
+    },
+    {
+      "citation": "Friends of Mammoth v. Town of Mammoth Lakes Redevelopment Agency, 82 Cal.App. 4th 511 (2000)",
+      "status": "VERIFIED",
+      "notes": "Real at 82 Cal.App.4th 511 (2000).",
+      "sources": [
+        "https://case-law.vlex.com/vid/friends-of-mammoth-v-885507874"
+      ]
+    },
+    {
+      "citation": "Friends of Shingle Springs Interchange, Inc. v. County of El Dorado, 200 Cal.App. 4th 1470 (2011)",
+      "status": "VERIFIED",
+      "notes": "Real at 200 Cal.App.4th 1470 (2011).",
+      "sources": [
+        "https://hallapproved.com/ca/cases/appeals/2011/5810704/"
+      ]
+    },
+    {
+      "citation": "Garity v. APWU Nat\u2019l Lab. Org, 828 F. 3d 848",
+      "status": "VERIFIED",
+      "notes": "Real at 828 F.3d 848 (9th Cir. 2016). Add year.",
+      "sources": [
+        "https://case-law.vlex.com/vid/garity-v-apwu-nat-885722475"
+      ]
+    },
+    {
+      "citation": "Gilliam v. L.A. Municipal Court, 97 Cal.App. 3d 704 (1979)",
+      "status": "VERIFIED",
+      "notes": "Real at 97 Cal.App.3d 704 (1979).",
+      "sources": [
+        "https://law.justia.com/cases/california/court-of-appeal/3d/97/704.html"
+      ]
+    },
+    {
+      "citation": "Heck v. Humphrey, 512 U.S. 477 (1994)",
+      "status": "VERIFIED",
+      "notes": "Real \u2014 Heck bar.",
+      "sources": [
+        "https://supreme.justia.com/cases/federal/us/512/477/"
+      ]
+    },
+    {
+      "citation": "Hunter v. Bryant, 502 U.S. 224 (1991)",
+      "status": "VERIFIED",
+      "notes": "Real \u2014 qualified immunity / probable cause.",
+      "sources": [
+        "https://caselaw.findlaw.com/court/us-supreme-court/502/224.html"
+      ]
+    },
+    {
+      "citation": "In re Arias, 42 Cal. 3d 667 (1986)",
+      "status": "VERIFIED",
+      "notes": "Real at 42 Cal.3d 667 (1986).",
+      "sources": [
+        "https://scocal.stanford.edu/opinion/re-arias-23467"
+      ]
+    },
+    {
+      "citation": "Jessie v. United States, 79 M.J. 437",
+      "status": "MISCITED",
+      "notes": "Real decision is United States v. Jessie, 79 M.J. 437 (C.A.A.F. 2020) \u2014 caption inverted here. Also Matter 28 flagged wrong proposition for SOTP blanket policies.",
+      "sources": [
+        "https://www.armfor.uscourts.gov/newcaaf/opinions/2019OctTerm/190192.pdf"
+      ]
+    },
+    {
+      "citation": "Jones v. Kmart Corp, 17 Cal. 4th 329 (1998)",
+      "status": "VERIFIED",
+      "notes": "Real at 17 Cal.4th 329 (1998).",
+      "sources": [
+        "https://scocal.stanford.edu/opinion/jones-v-kmart-corp-31908"
+      ]
+    },
+    {
+      "citation": "Kentucky v. King, 563 U.S. 452 (2011)",
+      "status": "VERIFIED",
+      "notes": "Real \u2014 exigent circumstances / police-created exigency.",
+      "sources": [
+        "https://supreme.justia.com/cases/federal/us/563/452/"
+      ]
+    },
+    {
+      "citation": "See Kentucky v. King, 563 U.S. 452 (2011)",
+      "status": "VERIFIED",
+      "notes": "Same Kentucky v. King.",
+      "sources": [
+        "https://supreme.justia.com/cases/federal/us/563/452/"
+      ]
+    },
+    {
+      "citation": "Knudsen v. Department of Motor Vehicles, 101 Cal. App. 5th 186 (2024)",
+      "status": "VERIFIED",
+      "notes": "Real at 101 Cal.App.5th 186 (2024).",
+      "sources": [
+        "https://law.justia.com/cases/california/court-of-appeal/2024/f085992.html"
+      ]
+    },
+    {
+      "citation": "Kougasian v. TMSL, Inc, 359 F. 3d 1136",
+      "status": "VERIFIED",
+      "notes": "Real at 359 F.3d 1136 (9th Cir. 2004). Add year.",
+      "sources": [
+        "https://law.resource.org/pub/us/case/reporter/F3/359/359.F3d.1136.02-56781.html"
+      ]
+    },
+    {
+      "citation": "Lockley v. Law Office, 91 Cal.App. 4th 401 (2001)",
+      "status": "MISCITED",
+      "notes": "Wrong page \u2014 correct is Lockley v. Law Office of Cantrell, Green, Pekich, Cruz & McCort, 91 Cal.App.4th 875 (2001).",
+      "sources": [
+        "https://www.syfert.com/california/cases/91-cal-app-4th-875/lockley-v-law-office-of-cantrell-green-pekich-cruz-mccort"
+      ]
+    },
+    {
+      "citation": "McKell v. Washington Mut., Inc, 142 Cal. App. 4th 1457 (2006)",
+      "status": "VERIFIED",
+      "notes": "Real at 142 Cal.App.4th 1457 (2006).",
+      "sources": [
+        "https://caselaw.findlaw.com/court/ca-court-of-appeal/1479030.html"
+      ]
+    },
+    {
+      "citation": "New York v. Class, 475 U.S. 106 (1986)",
+      "status": "VERIFIED",
+      "notes": "Real \u2014 VIN inspection / search.",
+      "sources": [
+        "https://supreme.justia.com/cases/federal/us/475/106/"
+      ]
+    },
+    {
+      "citation": "Paul v. Davis, 424 U.S. 693 (1976)",
+      "status": "VERIFIED",
+      "notes": "Real \u2014 reputation alone not liberty/property interest.",
+      "sources": [
+        "https://supreme.justia.com/cases/federal/us/424/693/"
+      ]
+    },
+    {
+      "citation": "People v. Preslie, 70 Cal.App. 3d 486 (1977)",
+      "status": "VERIFIED",
+      "notes": "Real at 70 Cal.App.3d 486 (1977).",
+      "sources": [
+        "https://syfert.com/california/cases/70-cal-app-3d-486/people-v-preslie"
+      ]
+    },
+    {
+      "citation": "Potter v. Firestone Tire, 6 Cal. 4th 965 (1993)",
+      "status": "VERIFIED",
+      "notes": "Real as Potter v. Firestone Tire & Rubber Co., 6 Cal.4th 965 (1993).",
+      "sources": [
+        "https://scocal.stanford.edu/opinion/potter-v-firestone-tire-rubber-co-31377"
+      ]
+    },
+    {
+      "citation": "Camara v. Municipal Court, 387 U.S. 523 (1967)",
+      "status": "VERIFIED",
+      "notes": "Real \u2014 administrative search warrants.",
+      "sources": [
+        "https://supreme.justia.com/cases/federal/us/387/523/"
+      ]
+    },
+    {
+      "citation": "See Camara v. Municipal Court, 387 U.S. 523 (1967)",
+      "status": "VERIFIED",
+      "notes": "Same Camara.",
+      "sources": [
+        "https://supreme.justia.com/cases/federal/us/387/523/"
+      ]
+    },
+    {
+      "citation": "Florida v. Wells, 495 U.S. 1 (1990)",
+      "status": "VERIFIED",
+      "notes": "Real \u2014 inventory search standardized criteria.",
+      "sources": [
+        "https://www.law.cornell.edu/supremecourt/text/495/1"
+      ]
+    },
+    {
+      "citation": "See Florida v. Wells, 495 U.S. 1 (1990)",
+      "status": "VERIFIED",
+      "notes": "Same Wells.",
+      "sources": [
+        "https://www.law.cornell.edu/supremecourt/text/495/1"
+      ]
+    },
+    {
+      "citation": "Missouri v. McNeely, 569 U.S. 141 (2013)",
+      "status": "VERIFIED",
+      "notes": "Real \u2014 no per se blood-draw exigency.",
+      "sources": [
+        "https://supreme.justia.com/cases/federal/us/569/141/"
+      ]
+    },
+    {
+      "citation": "See Missouri v. McNeely, 569 U.S. 141 (2013)",
+      "status": "VERIFIED",
+      "notes": "Same McNeely.",
+      "sources": [
+        "https://supreme.justia.com/cases/federal/us/569/141/"
+      ]
+    },
+    {
+      "citation": "Rosenberg v. Renal Advantage, Inc, 2013 WL 3205426",
+      "status": "VERIFIED",
+      "notes": "Real S.D. Cal. 2013 WL 3205426 (class-cert denial). Unpublished; use carefully.",
+      "sources": []
+    },
+    {
+      "citation": "Stewart v. San Luis Ambulance, Inc, 2015 WL 12681650",
+      "status": "VERIFIED",
+      "notes": "Real C.D. Cal. 2015 WL 12681650. Unpublished; use carefully.",
+      "sources": []
+    },
+    {
+      "citation": "O'Day v. McDonnell Douglas Helicopter Co, 79 F. 3d 756",
+      "status": "VERIFIED",
+      "notes": "Real at 79 F.3d 756 (9th Cir. 1996). Add year.",
+      "sources": [
+        "https://openjurist.org/79/f3d/756/oday-v-mcdonnell-douglas-helicopter-company"
+      ]
+    },
+    {
+      "citation": "Orion Tire Corp. v. Goodyear Tire, 268 F. 3d 1133",
+      "status": "VERIFIED",
+      "notes": "Real at 268 F.3d 1133 (9th Cir. 2001). Add year.",
+      "sources": [
+        "https://syfert.com/federal/circuits/cases/268-f-3d-1133/orion-tire-corporation-v-goodyear-tire-rubber-company-inc"
+      ]
+    },
+    {
+      "citation": "Pinard v. Clatskanie Sch. Dist, 467 F. 3d 755",
+      "status": "VERIFIED",
+      "notes": "Real at 467 F.3d 755 (9th Cir. 2006). Add year.",
+      "sources": [
+        "https://caselaw.findlaw.com/court/us-9th-circuit/1000952.html"
+      ]
+    },
+    {
+      "citation": "Hagan v. Khoja, 139 S. Ct. 2615 (2019)",
+      "status": "VERIFIED",
+      "notes": "Real as a certiorari denial (not a merits opinion) \u2014 Hagan v. Khoja, 139 S.Ct. 2615 (2019). Do not cite as merits authority.",
+      "sources": [
+        "https://www.supremecourt.gov/docket/docketfiles/html/public/18-1010.html"
+      ]
+    },
+    {
+      "citation": "Sav. & Loan Ass\u2019n v. Solimino, 501 U.S. 104 (1991)",
+      "status": "VERIFIED",
+      "notes": "Real as Astoria Federal Savings & Loan Ass'n v. Solimino, 501 U.S. 104 (1991).",
+      "sources": [
+        "https://supreme.justia.com/cases/federal/us/501/104/"
+      ]
+    },
+    {
+      "citation": "Edmo v. Corizon, Inc, 935 F. 3d 757",
+      "status": "VERIFIED",
+      "notes": "Real at 935 F.3d 757 (9th Cir. 2019). Matter 28 already flags MISCHARACTERIZED if used as per se anti-blanket-policy holding \u2014 existence OK.",
+      "sources": [
+        "https://cdn.ca9.uscourts.gov/datastore/opinions/2019/08/23/19-35017.pdf"
+      ]
+    },
+    {
+      "citation": "Tsao v. Desert Palace, Inc, 698 F. 3d 1128",
+      "status": "VERIFIED",
+      "notes": "Real at 698 F.3d 1128 (9th Cir. 2012). Add year. Correct form (not 98 F.3d).",
+      "sources": [
+        "https://cdn.ca9.uscourts.gov/datastore/opinions/2012/10/03/10-16377.pdf"
       ]
     }
   ]

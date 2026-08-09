@@ -10,14 +10,14 @@ The campaign is entering a phase where claims are cognizable and motions to dism
 
 | Status | Count |
 |---|---|
-| UNVERIFIED | 510 |
-| VERIFIED | 199 |
-| MISCITED | 20 |
+| UNVERIFIED | 460 |
+| VERIFIED | 244 |
+| MISCITED | 25 |
 | MISCHARACTERIZED | 6 |
 | NOT_FOUND | 6 |
 
-**Plaintiff-only + still UNVERIFIED (P0 queue): 82**  
-**Plaintiff-only + bad status (P1): 20**
+**Plaintiff-only + still UNVERIFIED (P0 queue): 37**  
+**Plaintiff-only + bad status (P1): 24**
 
 ## Method controls
 
@@ -109,12 +109,16 @@ _Round 4: no matching absolute-immunity hearing-officer decision at that WL numb
 | 3 | MISCITED | Home v. Dep’t of Health Care Services, 204 Cal.App. 4th 676 (2012) | 9 |
 | 3 | MISCHARACTERIZED | See California Highway Patrol v. Superior Court, 158 Cal.App. 4th 726  | 9 |
 | 2 | MISCITED | California, Ltd. v. Dry Creek Joint Elementary Sch. Dist, 50 Cal.App.  | 20, 32 |
+| 2 | MISCITED | Soranno's Gasco, Inc. v. Morgan Hill Unified, 874 F. 2d 1310 | 24, 32 |
 | 2 | MISCITED | Swift v. Christian, 384 F. 3d 1184 | 30 |
 | 1 | MISCITED | Ashcroft v. Iqbal, 556 U.S. 662 | 29 |
 | 1 | MISCITED | Cases Ashcroft v. Iqbal, 556 U.S. 662 | 29 |
 | 1 | MISCITED | Chubb v. Sullivan, 2014 WL 2807986 | 28 |
+| 1 | MISCITED | Jessie v. United States, 79 M.J. 437 | 28 |
+| 1 | MISCITED | Lockley v. Law Office, 91 Cal.App. 4th 401 (2001) | 20, 32 |
 | 1 | MISCITED | See Johnson v. City of Grants Pass, 50 F. 4th 787 | 28 |
 | 1 | MISCITED | See Rodriguez v. United States, 575 U.S. 348 (2015) | 32 |
+| 1 | MISCITED | Soranno’s Gasco, Inc. v. Morgan Hill Uniifed Sch. Dist, 874 F. 2d 1310 | 24 |
 
 ## P0 — Plaintiff-only UNVERIFIED queue (work this next)
 
@@ -122,17 +126,12 @@ Asserted only in Plaintiff's filings; no court order or opposing brief in the co
 
 | Uses | Authority | Matters | Sample page |
 |---|---|---|---|
-| 2 | O'Day v. McDonnell Douglas Helicopter Co, 79 F. 3d 756 | 29 | p.3 |
-| 2 | Orion Tire Corp. v. Goodyear Tire, 268 F. 3d 1133 | 29 | p.3 |
 | 2 | Pearson v. Callahan, 555 U.S. 223 (2009) | 1, 32 | p.3 |
 | 2 | People v. Woodell, 17 Cal. 4th 448 (1998) | 5 | p.3 |
-| 2 | Rosenberg v. Renal Advantage, Inc, 2013 WL 3205426 | 29 | p.3 |
 | 2 | Ross v. Creel Printing, 100 Cal.App. 4th 736 (2002) | 5 | p.5 |
 | 2 | SN Sands Corp. v. City and County, 167 Cal.App. 4th 185 (2008) | 20, 32 | p.8 |
 | 2 | See Saleeby v. State Bar, 39 Cal. 3d 547 (1985) | 20, 32 | p.8 |
 | 2 | Sonner v. Premier Nutrition Corporation, 49 F. 4th 1300 (2022) | 29 | p.3 |
-| 2 | Soranno's Gasco, Inc. v. Morgan Hill Unified, 874 F. 2d 1310 | 24, 32 | p.14 |
-| 2 | Stewart v. San Luis Ambulance, Inc, 2015 WL 12681650 | 29 | p.3 |
 | 2 | Sugar Co-op v. Archer-Daniels-Midland Co, 2012 WL 3101659 | 29 | p.3 |
 | 2 | Under United States v. Knights, 534 U.S. 112 (2001) | 19 | p.15 |
 | 2 | Unicorn Glob., Inc. v. Hillo Am., Inc, 2021 WL 1034838 | 29 | p.3 |
@@ -144,70 +143,32 @@ Asserted only in Plaintiff's filings; no court order or opposing brief in the co
 | 1 | California Motor Transport Co. v. Trucking Unlimited, 404 U.S. 508 (19 | 30 | p.16 |
 | 1 | California v. Acevedo, 500 U.S. 565 (1991) | 32 | p.20 |
 | 1 | California v. Carney, 471 U.S. 386 (1985) | 32 | p.19 |
-| 1 | Camara v. Municipal Court, 387 U.S. 523 (1967) | 32 | p.18 |
-| 1 | Citizens for Sensible Planning v. City of Stockton, 48 Cal. 4th 481 (2 | 5 | p.5 |
-| 1 | Clark County Sch. Dist. v. Breeden, 532 U.S. 268 (2001) | 30 | p.11 |
-| 1 | Cornell v. City & County, 17 Cal.App. 5th 766 (2017) | 30 | p.20 |
 | 1 | E. & J. Gallo Winery v. Encana Energy Servs., Inc, 2005 WL 2435900 | 29 | p.4 |
-| 1 | Edmo v. Corizon, Inc, 935 F. 3d 757 | 28 | p.1 |
-| 1 | Exxon Mobil Corp. v. Saudi Basic Indus. Corp, 544 U.S. 280 (2005) | 7, 32, 33 | p.16 |
-| 1 | Franklin v. Murphy, 745 F. 2d 1221 | 7, 32, 33 | p.11 |
-| 1 | Fremont Indem. Co. v. Fremont General Corp, 148 Cal.App. 4th 97 (2007) | 5 | p.2 |
-| 1 | Friends of Mammoth v. Town of Mammoth Lakes Redevelopment Agency, 82 C | 5 | p.3 |
-| 1 | Friends of Shingle Springs Interchange, Inc. v. County of El Dorado, 2 | 5 | p.7 |
-| 1 | Garity v. APWU Nat’l Lab. Org, 828 F. 3d 848 | 1, 32 | p.3 |
-| 1 | Gilliam v. L.A. Municipal Court, 97 Cal.App. 3d 704 (1979) | 9 | p.4 |
 | 1 | Griffin v. Green Tree Servicing, LLC, 166 F. Supp. 3d 1030 | 29 | p.5 |
-| 1 | Hagan v. Khoja, 139 S. Ct. 2615 (2019) | 29 | p.13 |
-| 1 | Heck v. Humphrey, 512 U.S. 477 (1994) | 30 | p.13 |
 | 1 | Helm v. Alderwoods Group, Inc, 696 F. Supp. 2d 1057 | 29 | p.4 |
 | 1 | Herr v. Nestle U.S.A., Inc, 109 Cal.App. 4th 779 | 29 | p.23 |
-| 1 | Hunter v. Bryant, 502 U.S. 224 (1991) | 1, 32 | p.6 |
-| 1 | In re Arias, 42 Cal. 3d 667 (1986) | 9 | p.4 |
-| 1 | Jessie v. United States, 79 M.J. 437 | 28 | p.3 |
-| 1 | Jones v. Kmart Corp, 17 Cal. 4th 329 (1998) | 30 | p.20 |
 | 1 | Jones v. Sutter Health, 499 F. Supp. 3d 704 | 29 | p.2 |
-| 1 | Kentucky v. King, 563 U.S. 452 (2011) | 32 | p.19 |
-| 1 | Knudsen v. Department of Motor Vehicles, 101 Cal. App. 5th 186 (2024) | 7, 32, 33 | p.4 |
-| 1 | Kougasian v. TMSL, Inc, 359 F. 3d 1136 | 7, 32, 33 | p.16 |
 | 1 | L'Garde, Inc. v. Raytheon Space, 805 F. Supp. 2d 932 | 29 | p.11 |
-| 1 | Lockley v. Law Office, 91 Cal.App. 4th 401 (2001) | 20, 32 | p.3 |
 | 1 | Los Angeles Cath. Worker v. Los Angeles Downtown Indus. Dist. Bus, 201 | 29 | p.3 |
 | 1 | MGIC Indem. Corp. v. Weisman, 803 F. 2d 500 | 29 | p.4 |
 | 1 | Mack v. South Bay Beer Distribs, 798 F. 2d 1279 | 29 | p.2 |
-| 1 | McKell v. Washington Mut., Inc, 142 Cal. App. 4th 1457 (2006) | 29 | p.3 |
 | 1 | Milhouse v. Carlson, 652 F. 2d 371 | 30 | p.6 |
 | 1 | Mir v. Little Co, 844 F. 2d 646 | 29 | p.4 |
 | 1 | Moser v. Benefytt, Inc, 8 F. 4th 872 | 3 | p.3 |
 | 1 | Neilson v. Union Bank, 290 F. Supp. 2d 1101 | 29 | p.4 |
-| 1 | New York v. Class, 475 U.S. 106 (1986) | 32 | p.19 |
-| 1 | Paul v. Davis, 424 U.S. 693 (1976) | 30 | p.18 |
-| 1 | People v. Preslie, 70 Cal.App. 3d 486 (1977) | 20, 32 | p.3 |
-| 1 | Pinard v. Clatskanie Sch. Dist, 467 F. 3d 755 | 24 | p.15 |
-| 1 | Potter v. Firestone Tire, 6 Cal. 4th 965 (1993) | 30 | p.22 |
-| 1 | Sav. & Loan Ass’n v. Solimino, 501 U.S. 104 (1991) | 29 | p.2 |
-| 1 | See Camara v. Municipal Court, 387 U.S. 523 (1967) | 32 | p.26 |
-| 1 | See Florida v. Wells, 495 U.S. 1 (1990) | 32 | p.21 |
-| 1 | See Kentucky v. King, 563 U.S. 452 (2011) | 32 | p.9 |
-| 1 | See Missouri v. McNeely, 569 U.S. 141 (2013) | 32 | p.24 |
-| 1 | See Shoyoye v. County of Los Angeles, 203 Cal.App. 4th 947 (2012) | 30 | p.20 |
-| 1 | See Sosinsky v. Grant, 6 Cal.App. 4th 1548 (1992) | 5 | p.7 |
-| 1 | See Swift v. California Department, 116 Cal.App. 4th 1365 (2004) | 30 | p.5 |
-| 1 | Soranno’s Gasco, Inc. v. Morgan Hill Uniifed Sch. Dist, 874 F. 2d 1310 | 24 | p.15 |
-| 1 | Stevens v. Superior Court, 75 Cal.App. 4th 594 (1999) | 5 | p.7 |
 | 1 | Taylor v. Sturgell, 553 U.S. 880 (2008) | 7, 32, 33 | p.14 |
-| 1 | Tsao v. Desert Palace, Inc, 698 F. 3d 1128 | 28 | p.3 |
-| 1 | Under Sosinsky v. Grant, 6 Cal.App. 4th 1548 (1992) | 5 | p.1 |
 | 1 | United States Small Bus. Admin. v. Bensal, 853 F. 3d 992 | 29 | p.4 |
 | 1 | United States v. Reyna-Tapia, 328 F. 3d 1114 | 7, 32, 33 | p.1 |
 | 1 | United States v. Wilson, 631 F. 2d 118 | 29 | p.4 |
 | 1 | Villiarimo v. Aloha Island Air, Inc, 281 F. 3d 1054 | 30 | p.11 |
+| 1 | Weston v. Motiu, 2025 WL 2916303 | 3 | p.3 |
+| 1 | Zahrey v. Coffey, 221 F. 3d 342 | 30 | p.18 |
 
-_82 total in JSON `priorityQueue`._
+_37 total in JSON `priorityQueue`._
 
 ## Round overlay
 
-Loaded round: **2026-08-09 Round 4 — portfolio P0 (batches A–B; continuing)** — 91 results
+Loaded round: **2026-08-09 Round 4 — portfolio P0 (batches A–C; continuing)** — 140 results
 
 Method note: WebSearch against primary-source URLs after positive control (Richardson v. McKnight, 521 U.S. 399 — hit govinfo.gov U.S. Reports PDF) and negative control (In re Leman, 66 Cal.App.5th 200 — no matching decision; only Lemanuel C. / Marriage of Lemen noise). CourtListener/case.law/Justia direct fetches remain egress-blocked. Statuses rest on search-returned summaries plus primary URLs. Characterization flags applied when index sample context attributes a proposition the opinion does not support.
 
