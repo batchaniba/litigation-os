@@ -8,19 +8,19 @@
   },
   "corpusAuthorities": 741,
   "statusCounts": {
-    "UNVERIFIED": 540,
-    "VERIFIED": 170,
-    "MISCITED": 19,
+    "UNVERIFIED": 510,
+    "VERIFIED": 199,
+    "MISCITED": 20,
     "MISCHARACTERIZED": 6,
     "NOT_FOUND": 6
   },
   "queue": {
-    "plaintiffOnlyUnverified": 107,
-    "plaintiffOnlyBad": 19
+    "plaintiffOnlyUnverified": 82,
+    "plaintiffOnlyBad": 20
   },
   "rounds": {
-    "loaded": "2026-08-09 Round 4 \u2014 portfolio P0 plaintiff-only queue (existence + reporter form; characterization where context clearly mismatches)",
-    "resultCount": 61,
+    "loaded": "2026-08-09 Round 4 \u2014 portfolio P0 (batches A\u2013B; continuing)",
+    "resultCount": 91,
     "method": "WebSearch against primary-source URLs after positive control (Richardson v. McKnight, 521 U.S. 399 \u2014 hit govinfo.gov U.S. Reports PDF) and negative control (In re Leman, 66 Cal.App.5th 200 \u2014 no matching decision; only Lemanuel C. / Marriage of Lemen noise). CourtListener/case.law/Justia direct fetches remain egress-blocked. Statuses rest on search-returned summaries plus primary URLs. Characterization flags applied when index sample context attributes a proposition the opinion does not support."
   },
   "knownFabricated": [
@@ -473,674 +473,6 @@
   },
   "authorities": [
     {
-      "citation": "Scenic Community v. County of L.A, 11 Cal. 3d 506 (1974)",
-      "kind": "authority",
-      "occurrenceCount": 3,
-      "matters": [
-        9
-      ],
-      "roles": [
-        "other",
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "9 Morris v. Williams (1967) 67 Cal.2d 733 13, 14 People v. Rizo (2000) 22 Cal.4th 681 10 Lungren v. Deukmejian (1988) 45 Cal.3d 727 10 Topanga Ass'n for a Scenic Community v. County of L.A. (1974) 11 Cal.3d 506 17 California Courts of Appeal In re Leman (2021) 66 Cal.App.5th 200 ",
-      "locations": [
-        {
-          "document": "/documents/matter-09/31626-43188-NTCHNG_69ce9f1e7ab52 2.pdf",
-          "page": 61,
-          "role": "other",
-          "matter": 9
-        },
-        {
-          "document": "/documents/matter-09/Amended Notice of Hearing on Petition for Writ of Mandate.pdf",
-          "page": 62,
-          "role": "plaintiff_filing",
-          "matter": 9
-        },
-        {
-          "document": "/documents/matter-09/WOM_Opening Brief.pdf",
-          "page": 19,
-          "role": "plaintiff_filing",
-          "matter": 9
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "Armondo v. Dep't of Motor Vehicles, 15 Cal.App. 4th 1174 (1993)",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        33
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "of adjudicative power over the refusal suspension was in the clear absence of jurisdiction, not merely in excess of it. 110. To the extent Defendant relies on Armondo v. Dep't of Motor Vehicles, 15 Cal.App.4th 1174 (1993), for the proposition that a section 849(b) release does no",
-      "locations": [
-        {
-          "document": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal 3 Operative.pdf",
-          "page": 37,
-          "role": "plaintiff_filing",
-          "matter": 33
-        },
-        {
-          "document": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal.pdf",
-          "page": 37,
-          "role": "plaintiff_filing",
-          "matter": 33
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "Ashelman v. Pope, 793 F. 2d 1072",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        33
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "d by title. 128. Absolute immunity does not extend to acts undertaken in the clear absence of all jurisdiction. Stump v. Sparkman, 435 U.S. 349, 356-57 (1978); Ashelman v. Pope, 793 F.2d 1072, 1075-76 (9th Cir. 1986) (en banc). Defendant Candelaria's exercise of adjudicative powe",
-      "locations": [
-        {
-          "document": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal 3 Operative.pdf",
-          "page": 43,
-          "role": "plaintiff_filing",
-          "matter": 33
-        },
-        {
-          "document": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal.pdf",
-          "page": 43,
-          "role": "plaintiff_filing",
-          "matter": 33
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "Bunnett v. Regents of University, 35 Cal.App. 4th 843 (1995)",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        20,
-        32
-      ],
-      "roles": [
-        "other",
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "ancisco (2008) 167 Cal.App.4th 185, 189 [same]; Western/California, Ltd. v. Dry Creek Joint Elementary Sch. Dist. (1996) 50 Cal.App.4th 1461, 1496-1497 [same]; Bunnett v. Regents of University of California (1995) 35 Cal.App.4th 843, 848.) 21. An agency decision that ignores the ",
-      "locations": [
-        {
-          "document": "/documents/matter-32/from-20/0.Newanforbi v. CHP - Writ of Mandate.pdf",
-          "page": 8,
-          "role": "other",
-          "matter": 20
-        },
-        {
-          "document": "/documents/matter-32/from-20/Petition for Writ of Mandate.pdf",
-          "page": 8,
-          "role": "plaintiff_filing",
-          "matter": 20
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "California, Ltd. v. Dry Creek Joint Elementary Sch. Dist, 50 Cal.App. 4th 1461 (1996)",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        20,
-        32
-      ],
-      "roles": [
-        "other",
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "or without reasonable or rational basis as a matter of law]; SN Sands Corp. v. City and County of San Francisco (2008) 167 Cal.App.4th 185, 189 [same]; Western/California, Ltd. v. Dry Creek Joint Elementary Sch. Dist. (1996) 50 Cal.App.4th 1461, 1496-1497 [same]; Bunnett v. Regen",
-      "locations": [
-        {
-          "document": "/documents/matter-32/from-20/0.Newanforbi v. CHP - Writ of Mandate.pdf",
-          "page": 8,
-          "role": "other",
-          "matter": 20
-        },
-        {
-          "document": "/documents/matter-32/from-20/Petition for Writ of Mandate.pdf",
-          "page": 8,
-          "role": "plaintiff_filing",
-          "matter": 20
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "Carloss v. County of Alameda, 242 Cal.App. 4th 116 (2015)",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        20,
-        32
-      ],
-      "roles": [
-        "other",
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "ional mandamus, court determines whether agency action was arbitrary, capricious, or without evidentiary support, and whether it failed to conform to the law]; Carloss v. County of Alameda (2015) 242 Cal.App.4th 116 [decision is abuse of discretion if arbitrary, capricious, entir",
-      "locations": [
-        {
-          "document": "/documents/matter-32/from-20/0.Newanforbi v. CHP - Writ of Mandate.pdf",
-          "page": 8,
-          "role": "other",
-          "matter": 20
-        },
-        {
-          "document": "/documents/matter-32/from-20/Petition for Writ of Mandate.pdf",
-          "page": 8,
-          "role": "plaintiff_filing",
-          "matter": 20
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "Cervantes v. City of San Diego, 5 F. 3d 1273",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        29
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "........................... 8 Bell Atl. Corp. v. Twombly, 550 U.S. 544, 556 (2007) ........................................................................ 8 Cervantes v. City of San Diego, 5 F.3d 1273, 1274 (9th Cir.1993) ..................................................... 8 E",
-      "locations": [
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
-          "page": 3,
-          "role": "plaintiff_filing",
-          "matter": 29
-        },
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
-          "page": 12,
-          "role": "plaintiff_filing",
-          "matter": 29
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "Daniels-Hall v. Nat\u2019l Educ. Ass\u2019n, 629 F. 3d 992",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        29
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "dicial notice of loan requirements reported on U.S. Small Business Administration\u2019s website because \u201cit was made publicly available by government entities\u201d); Daniels-Hall v. Nat\u2019l Educ. Ass\u2019n, 629 F.3d 992, 998-99 (9th Cir. 2010) (taking judicial notice of vendor lists on school ",
-      "locations": [
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 24-2 - Amazon's Request for Judicial Notice (Dec 15, 2022).pdf",
-          "page": 4,
-          "role": "plaintiff_filing",
-          "matter": 29
-        },
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
-          "page": 11,
-          "role": "plaintiff_filing",
-          "matter": 29
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "Epstein v. Washington Energy Co, 83 F. 3d 1136",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        29
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": ".................................. 8 Cervantes v. City of San Diego, 5 F.3d 1273, 1274 (9th Cir.1993) ..................................................... 8 Epstein v. Washington Energy Co., 83 F.3d 1136, 1140 (9th Cir. 1996) ............................................ 8 Guzman",
-      "locations": [
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
-          "page": 3,
-          "role": "plaintiff_filing",
-          "matter": 29
-        },
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
-          "page": 12,
-          "role": "plaintiff_filing",
-          "matter": 29
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "Guzman v. Polaris Industries Inc, 49 F. 4th 1308 (2022)",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        29
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "....................................... 8 Epstein v. Washington Energy Co., 83 F.3d 1136, 1140 (9th Cir. 1996) ............................................ 8 Guzman v. Polaris Industries Inc., 49 F.4th 1308, 1313-15 (2022) .................................................. 18 Jus",
-      "locations": [
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
-          "page": 3,
-          "role": "plaintiff_filing",
-          "matter": 29
-        },
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
-          "page": 22,
-          "role": "plaintiff_filing",
-          "matter": 29
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "Holt v. Kelly, 20 Cal. 3d 560 (1978)",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        20,
-        32
-      ],
-      "roles": [
-        "other",
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "r v. Ventura County Community College Dist. (1983) 147 Cal.App.3d 1071, 1080-1081 [claims for relief other than damages not subject to Government Claims Act]; Holt v. Kelly (1978) 20 Cal.3d 560, 565.) B. There Is No Administrative Exhaustion Requirement 66. Penal Code section 679",
-      "locations": [
-        {
-          "document": "/documents/matter-32/from-20/0.Newanforbi v. CHP - Writ of Mandate.pdf",
-          "page": 25,
-          "role": "other",
-          "matter": 20
-        },
-        {
-          "document": "/documents/matter-32/from-20/Petition for Writ of Mandate.pdf",
-          "page": 25,
-          "role": "plaintiff_filing",
-          "matter": 20
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "Illinois v. Caballes, 543 U.S. 405 (2005)",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        32
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "etention is dispelled, the detention must terminate. See Rodriguez v. United States, 575 U.S. 348, 355 (2015) (mission of a stop controls its lawful duration); Illinois v. Caballes, 543 U.S. 405, 407 (2005). At timestamp 00:59:07, the mission of Defendants' encounter with Plainti",
-      "locations": [
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
-          "page": 10,
-          "role": "plaintiff_filing",
-          "matter": 32
-        },
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
-          "page": 28,
-          "role": "plaintiff_filing",
-          "matter": 32
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "In re Clark, 5 Cal. 4th 750 (1993)",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        19
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "RE NEWANFORBI authority (15 CCR \u00a7 3574, effective April 17, 2025) that was not in effect when the prior petition was filed; and (4) seek different relief. (See In re Clark (1993) 5 Cal.4th 750, 767\u2013774.) IV. STATEMENT OF FACTS A. Conviction and Parole Release 8. On or about Janua",
-      "locations": [
-        {
-          "document": "/documents/matter-19/HC-004 Notice and Request for Ruling Packet (with Exhibit A \u2014 Unstamped Petition) (Ready to File Aug 7 2026).pdf",
-          "page": 6,
-          "role": "plaintiff_filing",
-          "matter": 19
-        },
-        {
-          "document": "/documents/matter-19/Petition for Writ of Habeas Corpus (filed Apr. 3, 2026).pdf",
-          "page": 4,
-          "role": "plaintiff_filing",
-          "matter": 19
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "In re Marzec, 25 Cal. 2d 794 (1945)",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        19
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "d or restrained of his or her liberty.\u201d Parole constitutes a form of custody and restraint subject to habeas challenge. (In re Sturm (1974) 11 Cal.3d 258, 265; In re Marzec (1945) 25 Cal.2d 794, 796.) 2. Venue is proper in Santa Clara County because Petitioner\u2019s underlying convic",
-      "locations": [
-        {
-          "document": "/documents/matter-19/HC-004 Notice and Request for Ruling Packet (with Exhibit A \u2014 Unstamped Petition) (Ready to File Aug 7 2026).pdf",
-          "page": 4,
-          "role": "plaintiff_filing",
-          "matter": 19
-        },
-        {
-          "document": "/documents/matter-19/Petition for Writ of Habeas Corpus (filed Apr. 3, 2026).pdf",
-          "page": 2,
-          "role": "plaintiff_filing",
-          "matter": 19
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "In re Sturm, 11 Cal. 3d 258 (1974)",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        19
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "ef for any person \u201cunlawfully imprisoned or restrained of his or her liberty.\u201d Parole constitutes a form of custody and restraint subject to habeas challenge. (In re Sturm (1974) 11 Cal.3d 258, 265; In re Marzec (1945) 25 Cal.2d 794, 796.) 2. Venue is proper in Santa Clara County",
-      "locations": [
-        {
-          "document": "/documents/matter-19/HC-004 Notice and Request for Ruling Packet (with Exhibit A \u2014 Unstamped Petition) (Ready to File Aug 7 2026).pdf",
-          "page": 4,
-          "role": "plaintiff_filing",
-          "matter": 19
-        },
-        {
-          "document": "/documents/matter-19/Petition for Writ of Habeas Corpus (filed Apr. 3, 2026).pdf",
-          "page": 2,
-          "role": "plaintiff_filing",
-          "matter": 19
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "Joslin v. H.A.S. Ins. Brokerage, 184 Cal.App. 3d 369 (1986)",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        5
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "10, 919; Day v. Sharp (1975) 50 Cal.App.3d 904, 914.) Judicial notice may not be used to convert a demurrer into a summary-judgment-style evidentiary hearing. (Joslin v. H.A.S. Ins. Brokerage (1986) 184 Cal.App.3d 369, 374.) Nor may it be used to prove character, propensity, or c",
-      "locations": [
-        {
-          "document": "/documents/matter-05/Evidentiary Pal Objections to Defendants RJN.pdf",
-          "page": 2,
-          "role": "plaintiff_filing",
-          "matter": 5
-        },
-        {
-          "document": "/documents/matter-05/RJN Pal ISO Opposition.pdf",
-          "page": 10,
-          "role": "plaintiff_filing",
-          "matter": 5
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "Lopez v. Smith, 203 F. 3d 1122",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        7,
-        32,
-        33
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "e to amend only when futility is clear on the face of the complaint. Hebbe v. Pliler, 627 F.3d 338, 342 (9th Cir. 2010) (pro se pleadings construed liberally); Lopez v. Smith, 203 F.3d 1122, 1130 (9th Cir. 2000) (en banc) (leave to amend mandatory absent clear futility); Neitzke ",
-      "locations": [
-        {
-          "document": "/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
-          "page": 2,
-          "role": "plaintiff_filing",
-          "matter": 7
-        },
-        {
-          "document": "/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
-          "page": 12,
-          "role": "plaintiff_filing",
-          "matter": 7
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "Love v. United States, 915 F. 2d 1242",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        29
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "v. Los Angeles Downtown Indus. Dist. Bus. Improvement Dist., No. CV147344PSGAJWX, 2015 WL 13650018, at *3 (C.D. Cal. Jan. 13, 2015) ...................... 14 Love v. United States, 915 F.2d 1242, 1245 (9th Cir.1988) ................................................................",
-      "locations": [
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
-          "page": 3,
-          "role": "plaintiff_filing",
-          "matter": 29
-        },
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
-          "page": 12,
-          "role": "plaintiff_filing",
-          "matter": 29
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "Mangini v. R.J. Reynolds Tobacco Co, 7 Cal. 4th 1057 (1994)",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        5
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "of bad faith \u2014 each of which constitutes impermissible character evidence under Evidence Code section 1101(a) and impermissible argumentative inference under Mangini v. R. J. Reynolds Tobacco Co. (1994) 7 Cal.4th 1057, 1063; and (iv) to contradict any well-pleaded allegation of t",
-      "locations": [
-        {
-          "document": "/documents/matter-05/Evidentiary Pal Objections to Defendants RJN.pdf",
-          "page": 2,
-          "role": "plaintiff_filing",
-          "matter": 5
-        },
-        {
-          "document": "/documents/matter-05/RJN Pal ISO Opposition.pdf",
-          "page": 7,
-          "role": "plaintiff_filing",
-          "matter": 5
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "Miller v. Gammie, 335 F. 3d 889",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        33
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "-- NGWA NFORBI v. CANDELARIA & GORDON (N.D. Cal.) advocates are not entitled to absolute immunity. Swift v. California, 384 F.3d 1184, 1191-92 (9th Cir. 2004); Miller v. Gammie, 335 F.3d 889, 897 (9th Cir. 2003) (en banc). 126. Defendant Candelaria performed functions traditional",
-      "locations": [
-        {
-          "document": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal 3 Operative.pdf",
-          "page": 43,
-          "role": "plaintiff_filing",
-          "matter": 33
-        },
-        {
-          "document": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal.pdf",
-          "page": 42,
-          "role": "plaintiff_filing",
-          "matter": 33
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "Nanty v. Barrows Co, 660 F. 2d 1327",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        29
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": ".......................................... 16 McKell v. Washington Mut., Inc., 142 Cal. App. 4th 1457, 1473\u201374 (2006) .................................... 17 Nanty v. Barrows Co., 660 F.2d 1327, 1333 (9th Cir. 1981) ............................................................. 19",
-      "locations": [
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
-          "page": 3,
-          "role": "plaintiff_filing",
-          "matter": 29
-        },
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
-          "page": 22,
-          "role": "plaintiff_filing",
-          "matter": 29
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
       "citation": "O'Day v. McDonnell Douglas Helicopter Co, 79 F. 3d 756",
       "kind": "authority",
       "occurrenceCount": 2,
@@ -1394,37 +726,6 @@
       "priority": "P0_plaintiff_only_unverified"
     },
     {
-      "citation": "Silva v. Di Vittorio, 658 F. 3d 1090",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        30
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "agent, Andrew Derrick. Filing the Derrick FAC constitutes protected First Amendment petition activity. Milhouse v. Carlson, 652 F.2d 371, 374 (3d Cir. 1981); Silva v. Di Vittorio, 658 F.3d 1090, 1104 (9th Cir. 2011).",
-      "locations": [
-        {
-          "document": "/documents/matter-30/Complaint v9 Newanforbi v Moua NDCAL.pdf",
-          "page": 6,
-          "role": "plaintiff_filing",
-          "matter": 30
-        },
-        {
-          "document": "/documents/matter-30/Complaint v9 Newanforbi v Moua NDCAL.pdf",
-          "page": 15,
-          "role": "plaintiff_filing",
-          "matter": 30
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
       "citation": "Sonner v. Premier Nutrition Corporation, 49 F. 4th 1300 (2022)",
       "kind": "authority",
       "occurrenceCount": 2,
@@ -1663,31 +964,6 @@
       "priority": "P0_plaintiff_only_unverified"
     },
     {
-      "citation": "Bias v. Moynihan, 508 F. 3d 1212",
-      "kind": "authority",
-      "occurrenceCount": 1,
-      "matters": [
-        29
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "f any federal or state court.\u201d); Mir v. Little Co. of Mary Hosp., 844 F.2d 646, 649 (9th Cir. 1988) (judicial notice taken of complaints in related actions); Bias v. Moynihan, 508 F.3d 1212, 1225 (9th Cir. 2007) (district court \u201cmay take notice of proceedings in other courts, bot",
-      "locations": [
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 24-2 - Amazon's Request for Judicial Notice (Dec 15, 2022).pdf",
-          "page": 4,
-          "role": "plaintiff_filing",
-          "matter": 29
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
       "citation": "Bill Johnson's Restaurants, Inc. v. NLRB, 461 U.S. 731 (1983)",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -1733,31 +1009,6 @@
           "page": 2,
           "role": "plaintiff_filing",
           "matter": 3
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "Brodheim v. Cry, 584 F. 3d 1262",
-      "kind": "authority",
-      "occurrenceCount": 1,
-      "matters": [
-        30
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "ction that would chill a person of ordinary firmness from continuing to engage in protected activity. Rhodes v. Robinson, 408 F.3d 559, 567-68 (9th Cir. 2005); Brodheim v. Cry, 584 F.3d 1262, 1270 (9th Cir. 2009). 44. Moua had actual or constructive knowledge of the Derrick lawsu",
-      "locations": [
-        {
-          "document": "/documents/matter-30/Complaint v9 Newanforbi v Moua NDCAL.pdf",
-          "page": 15,
-          "role": "plaintiff_filing",
-          "matter": 30
         }
       ],
       "priority": "P0_plaintiff_only_unverified"
@@ -1958,31 +1209,6 @@
         {
           "document": "/documents/matter-30/Complaint v9 Newanforbi v Moua NDCAL.pdf",
           "page": 20,
-          "role": "plaintiff_filing",
-          "matter": 30
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "Coszalter v. City of Salem, 320 F. 3d 968",
-      "kind": "authority",
-      "occurrenceCount": 1,
-      "matters": [
-        30
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "ently establishes causation. Pratt v. Rowland, 65 F.3d 802, 807-08 (9th Cir. 1995); Villiarimo v. Aloha Island Air, Inc., 281 F.3d 1054, 1065 (9th Cir. 2002); Coszalter v. City of Salem, 320 F.3d 968, 977 (9th Cir. 2003); see also Clark County Sch. Dist. v. Breeden, 532 U.S. 268,",
-      "locations": [
-        {
-          "document": "/documents/matter-30/Complaint v9 Newanforbi v Moua NDCAL.pdf",
-          "page": 11,
           "role": "plaintiff_filing",
           "matter": 30
         }
@@ -4110,6 +3336,39 @@
       "priority": "P1_plaintiff_only_bad"
     },
     {
+      "citation": "California, Ltd. v. Dry Creek Joint Elementary Sch. Dist, 50 Cal.App. 4th 1461 (1996)",
+      "kind": "authority",
+      "occurrenceCount": 2,
+      "matters": [
+        20,
+        32
+      ],
+      "roles": [
+        "other",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "MISCITED",
+      "statusSource": "round",
+      "notes": "Correct: Western/California, Ltd. v. Dry Creek Joint Elementary School Dist., 50 Cal.App.4th 1461 (1996) \u2014 not page 1; party name omits Western/.",
+      "sampleContext": "or without reasonable or rational basis as a matter of law]; SN Sands Corp. v. City and County of San Francisco (2008) 167 Cal.App.4th 185, 189 [same]; Western/California, Ltd. v. Dry Creek Joint Elementary Sch. Dist. (1996) 50 Cal.App.4th 1461, 1496-1497 [same]; Bunnett v. Regen",
+      "locations": [
+        {
+          "document": "/documents/matter-32/from-20/0.Newanforbi v. CHP - Writ of Mandate.pdf",
+          "page": 8,
+          "role": "other",
+          "matter": 20
+        },
+        {
+          "document": "/documents/matter-32/from-20/Petition for Writ of Mandate.pdf",
+          "page": 8,
+          "role": "plaintiff_filing",
+          "matter": 20
+        }
+      ],
+      "priority": "P1_plaintiff_only_bad"
+    },
+    {
       "citation": "Swift v. Christian, 384 F. 3d 1184",
       "kind": "authority",
       "occurrenceCount": 2,
@@ -5668,6 +4927,71 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Cleavinger v. Saxner, 474 U.S. 193 (1985)",
+      "kind": "authority",
+      "occurrenceCount": 7,
+      "matters": [
+        7,
+        32,
+        33
+      ],
+      "roles": [
+        "court_order",
+        "other",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real \u2014 absolute immunity for prison discipline committee members performing adjudicative functions.",
+      "sampleContext": "cts only \"judicial\" functions, and only when performed by an official with structural judicial independence. (Forrester v. White, 484 U.S. 219, 227\u2013230 (1988); Cleavinger v. Saxner, 474 U.S. 193, 202 (1985).) Defendant Candelaria's conduct\u2014ignoring exculpatory evidence, ratifying",
+      "locations": [
+        {
+          "document": "/documents/matter-33/from-07/FAC Candelaria.pdf",
+          "page": 24,
+          "role": "other",
+          "matter": 7
+        },
+        {
+          "document": "/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
+          "page": 4,
+          "role": "plaintiff_filing",
+          "matter": 7
+        },
+        {
+          "document": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal 3 Operative.pdf",
+          "page": 33,
+          "role": "plaintiff_filing",
+          "matter": 33
+        },
+        {
+          "document": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal 3 Operative.pdf",
+          "page": 42,
+          "role": "plaintiff_filing",
+          "matter": 33
+        },
+        {
+          "document": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal.pdf",
+          "page": 33,
+          "role": "plaintiff_filing",
+          "matter": 33
+        },
+        {
+          "document": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal.pdf",
+          "page": 42,
+          "role": "plaintiff_filing",
+          "matter": 33
+        },
+        {
+          "document": "/documents/matter-33/opinions/Newanforbi v Candelaria - USDC EDCal - FR Recommending Dismissal Jun 15 2026.pdf",
+          "page": 5,
+          "role": "court_order",
+          "matter": 7
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "Kavanaugh v. West Sonoma County Union High School, 29 Cal. 4th 911 (2003)",
       "kind": "authority",
       "occurrenceCount": 7,
@@ -6385,8 +5709,8 @@
       ],
       "plaintiffOnly": true,
       "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Case exists at correct citation and does state that a protected property interest arises only where a statute compels a result upon satisfaction of non-discretionary criteria -- consistent with the point cited. Good law, still cited in the Ninth Circuit.",
+      "statusSource": "round",
+      "notes": "Real at 540 F.3d 1082 (9th Cir. 2008). Add year.",
       "sampleContext": "rbitrary and capricious refusal to 9 apply those standards violates substantive due process. County of Sacramento v. Lewis, 523 U.S. 10 833, 845-46 (1998); Shanks v. Dressel, 540 F.3d 1082, 1087 (9th Cir. 2008). 11 12 35. California Penal Code section 679.10 creates a comprehensi",
       "locations": [
         {
@@ -8101,8 +7425,8 @@
       ],
       "plaintiffOnly": true,
       "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Real case; quoted language matches the case's well-known holding on qualified immunity in the retaliation context.",
+      "statusSource": "round",
+      "notes": "Real at 65 F.3d 802 (9th Cir. 1995). Add year.",
       "sampleContext": "y transfers is clearly established. Devereaux v. Abbey, 263 F.3d 1070, 1074-75 (9th Cir. 2001) (en banc); Spencer v. Peters, 857 F.3d 789, 798 (9th Cir. 2017); Pratt v. Rowland, 65 F.3d 802, 806 (9th Cir. 1995). IV. FACTUAL ALLEGATIONS A. The HOPE Program, CASOMB Complaint, and T",
       "locations": [
         {
@@ -9151,8 +8475,8 @@
       ],
       "plaintiffOnly": true,
       "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Real and accurately characterized \u2014 foundational Ninth Circuit SOTP/liberty-interest case. Confirmed via law.resource.org F.3d text and vLex.",
+      "statusSource": "round",
+      "notes": "Real at 131 F.3d 818 (9th Cir. 1997). Add year.",
       "sampleContext": "lication of a \"blanket policy\" to override a procedural right is a violation of clearly established law. 2. Due Process in Sex Offender Treatment and Parole \u2022 Neal v. Shimoda, 131 F.3d 818 (9th Cir. 1997). \u2022 Holding: Labeling an inmate as a sex offender and requiring participatio",
       "locations": [
         {
@@ -9211,6 +8535,44 @@
           "page": 13,
           "role": "other",
           "matter": 24
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Scenic Community v. County of L.A, 11 Cal. 3d 506 (1974)",
+      "kind": "authority",
+      "occurrenceCount": 3,
+      "matters": [
+        9
+      ],
+      "roles": [
+        "other",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real as Topanga Assn. for a Scenic Community v. County of Los Angeles, 11 Cal.3d 506 (1974).",
+      "sampleContext": "9 Morris v. Williams (1967) 67 Cal.2d 733 13, 14 People v. Rizo (2000) 22 Cal.4th 681 10 Lungren v. Deukmejian (1988) 45 Cal.3d 727 10 Topanga Ass'n for a Scenic Community v. County of L.A. (1974) 11 Cal.3d 506 17 California Courts of Appeal In re Leman (2021) 66 Cal.App.5th 200 ",
+      "locations": [
+        {
+          "document": "/documents/matter-09/31626-43188-NTCHNG_69ce9f1e7ab52 2.pdf",
+          "page": 61,
+          "role": "other",
+          "matter": 9
+        },
+        {
+          "document": "/documents/matter-09/Amended Notice of Hearing on Petition for Writ of Mandate.pdf",
+          "page": 62,
+          "role": "plaintiff_filing",
+          "matter": 9
+        },
+        {
+          "document": "/documents/matter-09/WOM_Opening Brief.pdf",
+          "page": 19,
+          "role": "plaintiff_filing",
+          "matter": 9
         }
       ],
       "priority": "P2_joined"
@@ -9548,6 +8910,37 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Armondo v. Dep't of Motor Vehicles, 15 Cal.App. 4th 1174 (1993)",
+      "kind": "authority",
+      "occurrenceCount": 2,
+      "matters": [
+        33
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real at 15 Cal.App.4th 1174 (1993).",
+      "sampleContext": "of adjudicative power over the refusal suspension was in the clear absence of jurisdiction, not merely in excess of it. 110. To the extent Defendant relies on Armondo v. Dep't of Motor Vehicles, 15 Cal.App.4th 1174 (1993), for the proposition that a section 849(b) release does no",
+      "locations": [
+        {
+          "document": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal 3 Operative.pdf",
+          "page": 37,
+          "role": "plaintiff_filing",
+          "matter": 33
+        },
+        {
+          "document": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal.pdf",
+          "page": 37,
+          "role": "plaintiff_filing",
+          "matter": 33
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "Ashcroft v. Iqbal, 556 U.S. 678 (2009)",
       "kind": "authority",
       "occurrenceCount": 2,
@@ -9576,6 +8969,37 @@
           "page": 3,
           "role": "court_order",
           "matter": null
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Ashelman v. Pope, 793 F. 2d 1072",
+      "kind": "authority",
+      "occurrenceCount": 2,
+      "matters": [
+        33
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real at 793 F.2d 1072 (9th Cir. 1986). Add year.",
+      "sampleContext": "d by title. 128. Absolute immunity does not extend to acts undertaken in the clear absence of all jurisdiction. Stump v. Sparkman, 435 U.S. 349, 356-57 (1978); Ashelman v. Pope, 793 F.2d 1072, 1075-76 (9th Cir. 1986) (en banc). Defendant Candelaria's exercise of adjudicative powe",
+      "locations": [
+        {
+          "document": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal 3 Operative.pdf",
+          "page": 43,
+          "role": "plaintiff_filing",
+          "matter": 33
+        },
+        {
+          "document": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal.pdf",
+          "page": 43,
+          "role": "plaintiff_filing",
+          "matter": 33
         }
       ],
       "priority": "P2_joined"
@@ -9643,6 +9067,39 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Bunnett v. Regents of University, 35 Cal.App. 4th 843 (1995)",
+      "kind": "authority",
+      "occurrenceCount": 2,
+      "matters": [
+        20,
+        32
+      ],
+      "roles": [
+        "other",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real as Bunnett v. Regents of University of California, 35 Cal.App.4th 843 (1995).",
+      "sampleContext": "ancisco (2008) 167 Cal.App.4th 185, 189 [same]; Western/California, Ltd. v. Dry Creek Joint Elementary Sch. Dist. (1996) 50 Cal.App.4th 1461, 1496-1497 [same]; Bunnett v. Regents of University of California (1995) 35 Cal.App.4th 843, 848.) 21. An agency decision that ignores the ",
+      "locations": [
+        {
+          "document": "/documents/matter-32/from-20/0.Newanforbi v. CHP - Writ of Mandate.pdf",
+          "page": 8,
+          "role": "other",
+          "matter": 20
+        },
+        {
+          "document": "/documents/matter-32/from-20/Petition for Writ of Mandate.pdf",
+          "page": 8,
+          "role": "plaintiff_filing",
+          "matter": 20
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "Carey v. Piphus, 435 U.S. 247 (1978)",
       "kind": "authority",
       "occurrenceCount": 2,
@@ -9669,6 +9126,70 @@
           "page": 27,
           "role": "plaintiff_filing",
           "matter": 33
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Carloss v. County of Alameda, 242 Cal.App. 4th 116 (2015)",
+      "kind": "authority",
+      "occurrenceCount": 2,
+      "matters": [
+        20,
+        32
+      ],
+      "roles": [
+        "other",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real at 242 Cal.App.4th 116 (2015).",
+      "sampleContext": "ional mandamus, court determines whether agency action was arbitrary, capricious, or without evidentiary support, and whether it failed to conform to the law]; Carloss v. County of Alameda (2015) 242 Cal.App.4th 116 [decision is abuse of discretion if arbitrary, capricious, entir",
+      "locations": [
+        {
+          "document": "/documents/matter-32/from-20/0.Newanforbi v. CHP - Writ of Mandate.pdf",
+          "page": 8,
+          "role": "other",
+          "matter": 20
+        },
+        {
+          "document": "/documents/matter-32/from-20/Petition for Writ of Mandate.pdf",
+          "page": 8,
+          "role": "plaintiff_filing",
+          "matter": 20
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Cervantes v. City of San Diego, 5 F. 3d 1273",
+      "kind": "authority",
+      "occurrenceCount": 2,
+      "matters": [
+        29
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real at 5 F.3d 1273 (9th Cir. 1993). Add year.",
+      "sampleContext": "........................... 8 Bell Atl. Corp. v. Twombly, 550 U.S. 544, 556 (2007) ........................................................................ 8 Cervantes v. City of San Diego, 5 F.3d 1273, 1274 (9th Cir.1993) ..................................................... 8 E",
+      "locations": [
+        {
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
+          "page": 3,
+          "role": "plaintiff_filing",
+          "matter": 29
+        },
+        {
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
+          "page": 12,
+          "role": "plaintiff_filing",
+          "matter": 29
         }
       ],
       "priority": "P2_joined"
@@ -9772,6 +9293,37 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Daniels-Hall v. Nat\u2019l Educ. Ass\u2019n, 629 F. 3d 992",
+      "kind": "authority",
+      "occurrenceCount": 2,
+      "matters": [
+        29
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real at 629 F.3d 992 (9th Cir. 2010). Add year.",
+      "sampleContext": "dicial notice of loan requirements reported on U.S. Small Business Administration\u2019s website because \u201cit was made publicly available by government entities\u201d); Daniels-Hall v. Nat\u2019l Educ. Ass\u2019n, 629 F.3d 992, 998-99 (9th Cir. 2010) (taking judicial notice of vendor lists on school ",
+      "locations": [
+        {
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 24-2 - Amazon's Request for Judicial Notice (Dec 15, 2022).pdf",
+          "page": 4,
+          "role": "plaintiff_filing",
+          "matter": 29
+        },
+        {
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
+          "page": 11,
+          "role": "plaintiff_filing",
+          "matter": 29
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "Dunaway v. New York, 442 U.S. 200 (1979)",
       "kind": "authority",
       "occurrenceCount": 2,
@@ -9830,6 +9382,37 @@
           "page": 2,
           "role": "court_order",
           "matter": 28
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Epstein v. Washington Energy Co, 83 F. 3d 1136",
+      "kind": "authority",
+      "occurrenceCount": 2,
+      "matters": [
+        29
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real at 83 F.3d 1136 (9th Cir. 1996). Add year.",
+      "sampleContext": ".................................. 8 Cervantes v. City of San Diego, 5 F.3d 1273, 1274 (9th Cir.1993) ..................................................... 8 Epstein v. Washington Energy Co., 83 F.3d 1136, 1140 (9th Cir. 1996) ............................................ 8 Guzman",
+      "locations": [
+        {
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
+          "page": 3,
+          "role": "plaintiff_filing",
+          "matter": 29
+        },
+        {
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
+          "page": 12,
+          "role": "plaintiff_filing",
+          "matter": 29
         }
       ],
       "priority": "P2_joined"
@@ -9933,6 +9516,68 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Guzman v. Polaris Industries Inc, 49 F. 4th 1308",
+      "kind": "authority",
+      "occurrenceCount": 2,
+      "matters": [
+        29
+      ],
+      "roles": [
+        "opposing_filing"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real at 49 F.4th 1308 (9th Cir. 2022).",
+      "sampleContext": "............ 7 In re Ferrero Litigation, 794 F.Supp.2d 1107 .............................................................................................. 9 Guzman v. Polaris Industries Inc., 49 F.4th 1308 (9th Cir. 2022) ..........................................................",
+      "locations": [
+        {
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 27 - Amazon's Reply ISO Motion to Dismiss (Feb 2, 2023).pdf",
+          "page": 3,
+          "role": "opposing_filing",
+          "matter": 29
+        },
+        {
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 27 - Amazon's Reply ISO Motion to Dismiss (Feb 2, 2023).pdf",
+          "page": 11,
+          "role": "opposing_filing",
+          "matter": 29
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Guzman v. Polaris Industries Inc, 49 F. 4th 1308 (2022)",
+      "kind": "authority",
+      "occurrenceCount": 2,
+      "matters": [
+        29
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real at 49 F.4th 1308 (9th Cir. 2022).",
+      "sampleContext": "....................................... 8 Epstein v. Washington Energy Co., 83 F.3d 1136, 1140 (9th Cir. 1996) ............................................ 8 Guzman v. Polaris Industries Inc., 49 F.4th 1308, 1313-15 (2022) .................................................. 18 Jus",
+      "locations": [
+        {
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
+          "page": 3,
+          "role": "plaintiff_filing",
+          "matter": 29
+        },
+        {
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
+          "page": 22,
+          "role": "plaintiff_filing",
+          "matter": 29
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "Hartman v. Moore, 541 U.S. 250 (2006)",
       "kind": "authority",
       "occurrenceCount": 2,
@@ -9998,6 +9643,104 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Hebbe v. Pliler, 627 F. 3d 338",
+      "kind": "authority",
+      "occurrenceCount": 2,
+      "matters": [
+        7,
+        32,
+        33
+      ],
+      "roles": [
+        "court_order",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real at 627 F.3d 338 (9th Cir. 2010). Add year.",
+      "sampleContext": "construe the pleadings of a pro se litigant liberally, and (3) deny dismissal without leave to amend only when futility is clear on the face of the complaint. Hebbe v. Pliler, 627 F.3d 338, 342 (9th Cir. 2010) (pro se pleadings construed liberally); Lopez v. Smith, 203 F.3d 1122,",
+      "locations": [
+        {
+          "document": "/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
+          "page": 2,
+          "role": "plaintiff_filing",
+          "matter": 7
+        },
+        {
+          "document": "/documents/matter-33/opinions/Newanforbi v Candelaria - USDC EDCal - FR Recommending Dismissal Jun 15 2026.pdf",
+          "page": 3,
+          "role": "court_order",
+          "matter": 7
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Holt v. Kelly, 20 Cal. 3d 560 (1978)",
+      "kind": "authority",
+      "occurrenceCount": 2,
+      "matters": [
+        20,
+        32
+      ],
+      "roles": [
+        "other",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real at 20 Cal.3d 560 (1978).",
+      "sampleContext": "r v. Ventura County Community College Dist. (1983) 147 Cal.App.3d 1071, 1080-1081 [claims for relief other than damages not subject to Government Claims Act]; Holt v. Kelly (1978) 20 Cal.3d 560, 565.) B. There Is No Administrative Exhaustion Requirement 66. Penal Code section 679",
+      "locations": [
+        {
+          "document": "/documents/matter-32/from-20/0.Newanforbi v. CHP - Writ of Mandate.pdf",
+          "page": 25,
+          "role": "other",
+          "matter": 20
+        },
+        {
+          "document": "/documents/matter-32/from-20/Petition for Writ of Mandate.pdf",
+          "page": 25,
+          "role": "plaintiff_filing",
+          "matter": 20
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Illinois v. Caballes, 543 U.S. 405 (2005)",
+      "kind": "authority",
+      "occurrenceCount": 2,
+      "matters": [
+        32
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real \u2014 dog sniff during lawful traffic stop.",
+      "sampleContext": "etention is dispelled, the detention must terminate. See Rodriguez v. United States, 575 U.S. 348, 355 (2015) (mission of a stop controls its lawful duration); Illinois v. Caballes, 543 U.S. 405, 407 (2005). At timestamp 00:59:07, the mission of Defendants' encounter with Plainti",
+      "locations": [
+        {
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
+          "page": 10,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
+          "page": 28,
+          "role": "plaintiff_filing",
+          "matter": 32
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "In Richardson v. McKnight, 521 U.S. 399 (1997)",
       "kind": "authority",
       "occurrenceCount": 2,
@@ -10024,6 +9767,37 @@
           "page": 1,
           "role": "other",
           "matter": 28
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "In re Clark, 5 Cal. 4th 750 (1993)",
+      "kind": "authority",
+      "occurrenceCount": 2,
+      "matters": [
+        19
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real at 5 Cal.4th 750 (1993).",
+      "sampleContext": "RE NEWANFORBI authority (15 CCR \u00a7 3574, effective April 17, 2025) that was not in effect when the prior petition was filed; and (4) seek different relief. (See In re Clark (1993) 5 Cal.4th 750, 767\u2013774.) IV. STATEMENT OF FACTS A. Conviction and Parole Release 8. On or about Janua",
+      "locations": [
+        {
+          "document": "/documents/matter-19/HC-004 Notice and Request for Ruling Packet (with Exhibit A \u2014 Unstamped Petition) (Ready to File Aug 7 2026).pdf",
+          "page": 6,
+          "role": "plaintiff_filing",
+          "matter": 19
+        },
+        {
+          "document": "/documents/matter-19/Petition for Writ of Habeas Corpus (filed Apr. 3, 2026).pdf",
+          "page": 4,
+          "role": "plaintiff_filing",
+          "matter": 19
         }
       ],
       "priority": "P2_joined"
@@ -10061,6 +9835,37 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "In re Marzec, 25 Cal. 2d 794 (1945)",
+      "kind": "authority",
+      "occurrenceCount": 2,
+      "matters": [
+        19
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real at 25 Cal.2d 794 (1945).",
+      "sampleContext": "d or restrained of his or her liberty.\u201d Parole constitutes a form of custody and restraint subject to habeas challenge. (In re Sturm (1974) 11 Cal.3d 258, 265; In re Marzec (1945) 25 Cal.2d 794, 796.) 2. Venue is proper in Santa Clara County because Petitioner\u2019s underlying convic",
+      "locations": [
+        {
+          "document": "/documents/matter-19/HC-004 Notice and Request for Ruling Packet (with Exhibit A \u2014 Unstamped Petition) (Ready to File Aug 7 2026).pdf",
+          "page": 4,
+          "role": "plaintiff_filing",
+          "matter": 19
+        },
+        {
+          "document": "/documents/matter-19/Petition for Writ of Habeas Corpus (filed Apr. 3, 2026).pdf",
+          "page": 2,
+          "role": "plaintiff_filing",
+          "matter": 19
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "In re Ricardo P, 7 Cal. 5th 1113 (2019)",
       "kind": "authority",
       "occurrenceCount": 2,
@@ -10087,6 +9892,163 @@
           "page": 7,
           "role": "other",
           "matter": 14
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "In re Sturm, 11 Cal. 3d 258 (1974)",
+      "kind": "authority",
+      "occurrenceCount": 2,
+      "matters": [
+        19
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real at 11 Cal.3d 258 (1974).",
+      "sampleContext": "ef for any person \u201cunlawfully imprisoned or restrained of his or her liberty.\u201d Parole constitutes a form of custody and restraint subject to habeas challenge. (In re Sturm (1974) 11 Cal.3d 258, 265; In re Marzec (1945) 25 Cal.2d 794, 796.) 2. Venue is proper in Santa Clara County",
+      "locations": [
+        {
+          "document": "/documents/matter-19/HC-004 Notice and Request for Ruling Packet (with Exhibit A \u2014 Unstamped Petition) (Ready to File Aug 7 2026).pdf",
+          "page": 4,
+          "role": "plaintiff_filing",
+          "matter": 19
+        },
+        {
+          "document": "/documents/matter-19/Petition for Writ of Habeas Corpus (filed Apr. 3, 2026).pdf",
+          "page": 2,
+          "role": "plaintiff_filing",
+          "matter": 19
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Joslin v. H.A.S. Ins. Brokerage, 184 Cal.App. 3d 369 (1986)",
+      "kind": "authority",
+      "occurrenceCount": 2,
+      "matters": [
+        5
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real at 184 Cal.App.3d 369 (1986).",
+      "sampleContext": "10, 919; Day v. Sharp (1975) 50 Cal.App.3d 904, 914.) Judicial notice may not be used to convert a demurrer into a summary-judgment-style evidentiary hearing. (Joslin v. H.A.S. Ins. Brokerage (1986) 184 Cal.App.3d 369, 374.) Nor may it be used to prove character, propensity, or c",
+      "locations": [
+        {
+          "document": "/documents/matter-05/Evidentiary Pal Objections to Defendants RJN.pdf",
+          "page": 2,
+          "role": "plaintiff_filing",
+          "matter": 5
+        },
+        {
+          "document": "/documents/matter-05/RJN Pal ISO Opposition.pdf",
+          "page": 10,
+          "role": "plaintiff_filing",
+          "matter": 5
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Lopez v. Smith, 203 F. 3d 1122",
+      "kind": "authority",
+      "occurrenceCount": 2,
+      "matters": [
+        7,
+        32,
+        33
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real at 203 F.3d 1122 (9th Cir. 2000) (en banc). Add year.",
+      "sampleContext": "e to amend only when futility is clear on the face of the complaint. Hebbe v. Pliler, 627 F.3d 338, 342 (9th Cir. 2010) (pro se pleadings construed liberally); Lopez v. Smith, 203 F.3d 1122, 1130 (9th Cir. 2000) (en banc) (leave to amend mandatory absent clear futility); Neitzke ",
+      "locations": [
+        {
+          "document": "/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
+          "page": 2,
+          "role": "plaintiff_filing",
+          "matter": 7
+        },
+        {
+          "document": "/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
+          "page": 12,
+          "role": "plaintiff_filing",
+          "matter": 7
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Love v. United States, 915 F. 2d 1242",
+      "kind": "authority",
+      "occurrenceCount": 2,
+      "matters": [
+        29
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real at 915 F.2d 1242 (9th Cir. 1990). Add year.",
+      "sampleContext": "v. Los Angeles Downtown Indus. Dist. Bus. Improvement Dist., No. CV147344PSGAJWX, 2015 WL 13650018, at *3 (C.D. Cal. Jan. 13, 2015) ...................... 14 Love v. United States, 915 F.2d 1242, 1245 (9th Cir.1988) ................................................................",
+      "locations": [
+        {
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
+          "page": 3,
+          "role": "plaintiff_filing",
+          "matter": 29
+        },
+        {
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
+          "page": 12,
+          "role": "plaintiff_filing",
+          "matter": 29
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Mangini v. R.J. Reynolds Tobacco Co, 7 Cal. 4th 1057 (1994)",
+      "kind": "authority",
+      "occurrenceCount": 2,
+      "matters": [
+        5
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real at 7 Cal.4th 1057 (1994).",
+      "sampleContext": "of bad faith \u2014 each of which constitutes impermissible character evidence under Evidence Code section 1101(a) and impermissible argumentative inference under Mangini v. R. J. Reynolds Tobacco Co. (1994) 7 Cal.4th 1057, 1063; and (iv) to contradict any well-pleaded allegation of t",
+      "locations": [
+        {
+          "document": "/documents/matter-05/Evidentiary Pal Objections to Defendants RJN.pdf",
+          "page": 2,
+          "role": "plaintiff_filing",
+          "matter": 5
+        },
+        {
+          "document": "/documents/matter-05/RJN Pal ISO Opposition.pdf",
+          "page": 7,
+          "role": "plaintiff_filing",
+          "matter": 5
         }
       ],
       "priority": "P2_joined"
@@ -10121,6 +10083,68 @@
           "page": 7,
           "role": "plaintiff_filing",
           "matter": 7
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Miller v. Gammie, 335 F. 3d 889",
+      "kind": "authority",
+      "occurrenceCount": 2,
+      "matters": [
+        33
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real at 335 F.3d 889 (9th Cir. 2003) (en banc). Add year. Functional absolute-immunity approach.",
+      "sampleContext": "-- NGWA NFORBI v. CANDELARIA & GORDON (N.D. Cal.) advocates are not entitled to absolute immunity. Swift v. California, 384 F.3d 1184, 1191-92 (9th Cir. 2004); Miller v. Gammie, 335 F.3d 889, 897 (9th Cir. 2003) (en banc). 126. Defendant Candelaria performed functions traditional",
+      "locations": [
+        {
+          "document": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal 3 Operative.pdf",
+          "page": 43,
+          "role": "plaintiff_filing",
+          "matter": 33
+        },
+        {
+          "document": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal.pdf",
+          "page": 42,
+          "role": "plaintiff_filing",
+          "matter": 33
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Nanty v. Barrows Co, 660 F. 2d 1327",
+      "kind": "authority",
+      "occurrenceCount": 2,
+      "matters": [
+        29
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real at 660 F.2d 1327 (9th Cir. 1981). Add year.",
+      "sampleContext": ".......................................... 16 McKell v. Washington Mut., Inc., 142 Cal. App. 4th 1457, 1473\u201374 (2006) .................................... 17 Nanty v. Barrows Co., 660 F.2d 1327, 1333 (9th Cir. 1981) ............................................................. 19",
+      "locations": [
+        {
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
+          "page": 3,
+          "role": "plaintiff_filing",
+          "matter": 29
+        },
+        {
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
+          "page": 22,
+          "role": "plaintiff_filing",
+          "matter": 29
         }
       ],
       "priority": "P2_joined"
@@ -10224,6 +10248,37 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Silva v. Di Vittorio, 658 F. 3d 1090",
+      "kind": "authority",
+      "occurrenceCount": 2,
+      "matters": [
+        30
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real at 658 F.3d 1090 (9th Cir. 2011). Add year.",
+      "sampleContext": "agent, Andrew Derrick. Filing the Derrick FAC constitutes protected First Amendment petition activity. Milhouse v. Carlson, 652 F.2d 371, 374 (3d Cir. 1981); Silva v. Di Vittorio, 658 F.3d 1090, 1104 (9th Cir. 2011).",
+      "locations": [
+        {
+          "document": "/documents/matter-30/Complaint v9 Newanforbi v Moua NDCAL.pdf",
+          "page": 6,
+          "role": "plaintiff_filing",
+          "matter": 30
+        },
+        {
+          "document": "/documents/matter-30/Complaint v9 Newanforbi v Moua NDCAL.pdf",
+          "page": 15,
+          "role": "plaintiff_filing",
+          "matter": 30
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "Under West v. Atkins, 487 U.S. 42 (1988)",
       "kind": "authority",
       "occurrenceCount": 2,
@@ -10287,6 +10342,32 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Armondo v. Dep't of Motor Vehicles, 15 Cal. App. 4th 1174 (1993)",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        7,
+        33
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real at 15 Cal.App.4th 1174 (1993).",
+      "sampleContext": "pursuant to California Penal Code \u00a7 849(b). FAC \u00b6\u00b6 23-26, 28, 49. California courts have squarely foreclosed this argument based on a \u201cdisappearing arrest.\u201d Armondo v. Dep't of Motor Vehicles, 15 Cal. App. 4th 1174, 1179 (1993) (\u201cWe hold an arrest, valid when made, remains a vali",
+      "locations": [
+        {
+          "document": "/documents/matter-33/opinions/Newanforbi v Candelaria - USDC EDCal - FR Recommending Dismissal Jun 15 2026.pdf",
+          "page": 6,
+          "role": "court_order",
+          "matter": 7
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "B.B. v. County of Los Angeles, 10 Cal. 5th 1 (2020)",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -10307,6 +10388,31 @@
           "page": 15,
           "role": "other",
           "matter": 16
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Bias v. Moynihan, 508 F. 3d 1212",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        29
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real at 508 F.3d 1212 (9th Cir. 2007). Add year.",
+      "sampleContext": "f any federal or state court.\u201d); Mir v. Little Co. of Mary Hosp., 844 F.2d 646, 649 (9th Cir. 1988) (judicial notice taken of complaints in related actions); Bias v. Moynihan, 508 F.3d 1212, 1225 (9th Cir. 2007) (district court \u201cmay take notice of proceedings in other courts, bot",
+      "locations": [
+        {
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 24-2 - Amazon's Request for Judicial Notice (Dec 15, 2022).pdf",
+          "page": 4,
+          "role": "plaintiff_filing",
+          "matter": 29
         }
       ],
       "priority": "P2_joined"
@@ -10357,6 +10463,31 @@
           "page": 15,
           "role": "plaintiff_filing",
           "matter": 24
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Brodheim v. Cry, 584 F. 3d 1262",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        30
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real at 584 F.3d 1262 (9th Cir. 2009). Add year.",
+      "sampleContext": "ction that would chill a person of ordinary firmness from continuing to engage in protected activity. Rhodes v. Robinson, 408 F.3d 559, 567-68 (9th Cir. 2005); Brodheim v. Cry, 584 F.3d 1262, 1270 (9th Cir. 2009). 44. Moua had actual or constructive knowledge of the Derrick lawsu",
+      "locations": [
+        {
+          "document": "/documents/matter-30/Complaint v9 Newanforbi v Moua NDCAL.pdf",
+          "page": 15,
+          "role": "plaintiff_filing",
+          "matter": 30
         }
       ],
       "priority": "P2_joined"
@@ -10484,6 +10615,31 @@
           "page": 2,
           "role": "court_order",
           "matter": 28
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Coszalter v. City of Salem, 320 F. 3d 968",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        30
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real at 320 F.3d 968 (9th Cir. 2003). Add year.",
+      "sampleContext": "ently establishes causation. Pratt v. Rowland, 65 F.3d 802, 807-08 (9th Cir. 1995); Villiarimo v. Aloha Island Air, Inc., 281 F.3d 1054, 1065 (9th Cir. 2002); Coszalter v. City of Salem, 320 F.3d 968, 977 (9th Cir. 2003); see also Clark County Sch. Dist. v. Breeden, 532 U.S. 268,",
+      "locations": [
+        {
+          "document": "/documents/matter-30/Complaint v9 Newanforbi v Moua NDCAL.pdf",
+          "page": 11,
+          "role": "plaintiff_filing",
+          "matter": 30
         }
       ],
       "priority": "P2_joined"
@@ -10762,6 +10918,32 @@
           "page": 6,
           "role": "other",
           "matter": 14
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Lopez v. Smith, 203 F. 3d 1122 (2000)",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        7,
+        33
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real at 203 F.3d 1122 (9th Cir. 2000) (en banc). Add year.",
+      "sampleContext": "s to state a claim on which relief may be granted,\u201d or \u201cseeks monetary relief against a defendant who is immune from such relief.\u201d 28 U.S.C. \u00a7 1915(e)(2)(B); Lopez v. Smith, 203 F.3d 1122, 1126-27 (2000) (en banc). A claim is legally frivolous when it lacks an arguable basis eith",
+      "locations": [
+        {
+          "document": "/documents/matter-33/opinions/Newanforbi v Candelaria - USDC EDCal - FR Recommending Dismissal Jun 15 2026.pdf",
+          "page": 3,
+          "role": "court_order",
+          "matter": 7
         }
       ],
       "priority": "P2_joined"
@@ -12367,71 +12549,6 @@
           "page": 7,
           "role": "plaintiff_filing",
           "matter": 20
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
-      "citation": "Cleavinger v. Saxner, 474 U.S. 193 (1985)",
-      "kind": "authority",
-      "occurrenceCount": 7,
-      "matters": [
-        7,
-        32,
-        33
-      ],
-      "roles": [
-        "court_order",
-        "other",
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "cts only \"judicial\" functions, and only when performed by an official with structural judicial independence. (Forrester v. White, 484 U.S. 219, 227\u2013230 (1988); Cleavinger v. Saxner, 474 U.S. 193, 202 (1985).) Defendant Candelaria's conduct\u2014ignoring exculpatory evidence, ratifying",
-      "locations": [
-        {
-          "document": "/documents/matter-33/from-07/FAC Candelaria.pdf",
-          "page": 24,
-          "role": "other",
-          "matter": 7
-        },
-        {
-          "document": "/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
-          "page": 4,
-          "role": "plaintiff_filing",
-          "matter": 7
-        },
-        {
-          "document": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal 3 Operative.pdf",
-          "page": 33,
-          "role": "plaintiff_filing",
-          "matter": 33
-        },
-        {
-          "document": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal 3 Operative.pdf",
-          "page": 42,
-          "role": "plaintiff_filing",
-          "matter": 33
-        },
-        {
-          "document": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal.pdf",
-          "page": 33,
-          "role": "plaintiff_filing",
-          "matter": 33
-        },
-        {
-          "document": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal.pdf",
-          "page": 42,
-          "role": "plaintiff_filing",
-          "matter": 33
-        },
-        {
-          "document": "/documents/matter-33/opinions/Newanforbi v Candelaria - USDC EDCal - FR Recommending Dismissal Jun 15 2026.pdf",
-          "page": 5,
-          "role": "court_order",
-          "matter": 7
         }
       ],
       "priority": "P3_unverified_corroborated"
@@ -16101,37 +16218,6 @@
       "priority": "P3_unverified_corroborated"
     },
     {
-      "citation": "Guzman v. Polaris Industries Inc, 49 F. 4th 1308",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        29
-      ],
-      "roles": [
-        "opposing_filing"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "............ 7 In re Ferrero Litigation, 794 F.Supp.2d 1107 .............................................................................................. 9 Guzman v. Polaris Industries Inc., 49 F.4th 1308 (9th Cir. 2022) ..........................................................",
-      "locations": [
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 27 - Amazon's Reply ISO Motion to Dismiss (Feb 2, 2023).pdf",
-          "page": 3,
-          "role": "opposing_filing",
-          "matter": 29
-        },
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 27 - Amazon's Reply ISO Motion to Dismiss (Feb 2, 2023).pdf",
-          "page": 11,
-          "role": "opposing_filing",
-          "matter": 29
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
       "citation": "Hadley v. Kellogg Sales Co, 243 F.Supp. 3d 1074",
       "kind": "authority",
       "occurrenceCount": 2,
@@ -16221,40 +16307,6 @@
           "page": 27,
           "role": "opposing_filing",
           "matter": 29
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
-      "citation": "Hebbe v. Pliler, 627 F. 3d 338",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        7,
-        32,
-        33
-      ],
-      "roles": [
-        "court_order",
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "construe the pleadings of a pro se litigant liberally, and (3) deny dismissal without leave to amend only when futility is clear on the face of the complaint. Hebbe v. Pliler, 627 F.3d 338, 342 (9th Cir. 2010) (pro se pleadings construed liberally); Lopez v. Smith, 203 F.3d 1122,",
-      "locations": [
-        {
-          "document": "/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
-          "page": 2,
-          "role": "plaintiff_filing",
-          "matter": 7
-        },
-        {
-          "document": "/documents/matter-33/opinions/Newanforbi v Candelaria - USDC EDCal - FR Recommending Dismissal Jun 15 2026.pdf",
-          "page": 3,
-          "role": "court_order",
-          "matter": 7
         }
       ],
       "priority": "P3_unverified_corroborated"
@@ -19255,32 +19307,6 @@
       "priority": "P3_unverified_corroborated"
     },
     {
-      "citation": "Armondo v. Dep't of Motor Vehicles, 15 Cal. App. 4th 1174 (1993)",
-      "kind": "authority",
-      "occurrenceCount": 1,
-      "matters": [
-        7,
-        33
-      ],
-      "roles": [
-        "court_order"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "pursuant to California Penal Code \u00a7 849(b). FAC \u00b6\u00b6 23-26, 28, 49. California courts have squarely foreclosed this argument based on a \u201cdisappearing arrest.\u201d Armondo v. Dep't of Motor Vehicles, 15 Cal. App. 4th 1174, 1179 (1993) (\u201cWe hold an arrest, valid when made, remains a vali",
-      "locations": [
-        {
-          "document": "/documents/matter-33/opinions/Newanforbi v Candelaria - USDC EDCal - FR Recommending Dismissal Jun 15 2026.pdf",
-          "page": 6,
-          "role": "court_order",
-          "matter": 7
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
       "citation": "Asgari v. City of Los Angeles, 15 Cal. 4th 744 (1997)",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -22273,32 +22299,6 @@
       "priority": "P3_unverified_corroborated"
     },
     {
-      "citation": "Lopez v. Smith, 203 F. 3d 1122 (2000)",
-      "kind": "authority",
-      "occurrenceCount": 1,
-      "matters": [
-        7,
-        33
-      ],
-      "roles": [
-        "court_order"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "s to state a claim on which relief may be granted,\u201d or \u201cseeks monetary relief against a defendant who is immune from such relief.\u201d 28 U.S.C. \u00a7 1915(e)(2)(B); Lopez v. Smith, 203 F.3d 1122, 1126-27 (2000) (en banc). A claim is legally frivolous when it lacks an arguable basis eith",
-      "locations": [
-        {
-          "document": "/documents/matter-33/opinions/Newanforbi v Candelaria - USDC EDCal - FR Recommending Dismissal Jun 15 2026.pdf",
-          "page": 3,
-          "role": "court_order",
-          "matter": 7
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
       "citation": "Loux v. Rhay, 375 F. 2d 55",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -24992,674 +24992,6 @@
   ],
   "priorityQueue": [
     {
-      "citation": "Scenic Community v. County of L.A, 11 Cal. 3d 506 (1974)",
-      "kind": "authority",
-      "occurrenceCount": 3,
-      "matters": [
-        9
-      ],
-      "roles": [
-        "other",
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "9 Morris v. Williams (1967) 67 Cal.2d 733 13, 14 People v. Rizo (2000) 22 Cal.4th 681 10 Lungren v. Deukmejian (1988) 45 Cal.3d 727 10 Topanga Ass'n for a Scenic Community v. County of L.A. (1974) 11 Cal.3d 506 17 California Courts of Appeal In re Leman (2021) 66 Cal.App.5th 200 ",
-      "locations": [
-        {
-          "document": "/documents/matter-09/31626-43188-NTCHNG_69ce9f1e7ab52 2.pdf",
-          "page": 61,
-          "role": "other",
-          "matter": 9
-        },
-        {
-          "document": "/documents/matter-09/Amended Notice of Hearing on Petition for Writ of Mandate.pdf",
-          "page": 62,
-          "role": "plaintiff_filing",
-          "matter": 9
-        },
-        {
-          "document": "/documents/matter-09/WOM_Opening Brief.pdf",
-          "page": 19,
-          "role": "plaintiff_filing",
-          "matter": 9
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "Armondo v. Dep't of Motor Vehicles, 15 Cal.App. 4th 1174 (1993)",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        33
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "of adjudicative power over the refusal suspension was in the clear absence of jurisdiction, not merely in excess of it. 110. To the extent Defendant relies on Armondo v. Dep't of Motor Vehicles, 15 Cal.App.4th 1174 (1993), for the proposition that a section 849(b) release does no",
-      "locations": [
-        {
-          "document": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal 3 Operative.pdf",
-          "page": 37,
-          "role": "plaintiff_filing",
-          "matter": 33
-        },
-        {
-          "document": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal.pdf",
-          "page": 37,
-          "role": "plaintiff_filing",
-          "matter": 33
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "Ashelman v. Pope, 793 F. 2d 1072",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        33
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "d by title. 128. Absolute immunity does not extend to acts undertaken in the clear absence of all jurisdiction. Stump v. Sparkman, 435 U.S. 349, 356-57 (1978); Ashelman v. Pope, 793 F.2d 1072, 1075-76 (9th Cir. 1986) (en banc). Defendant Candelaria's exercise of adjudicative powe",
-      "locations": [
-        {
-          "document": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal 3 Operative.pdf",
-          "page": 43,
-          "role": "plaintiff_filing",
-          "matter": 33
-        },
-        {
-          "document": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal.pdf",
-          "page": 43,
-          "role": "plaintiff_filing",
-          "matter": 33
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "Bunnett v. Regents of University, 35 Cal.App. 4th 843 (1995)",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        20,
-        32
-      ],
-      "roles": [
-        "other",
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "ancisco (2008) 167 Cal.App.4th 185, 189 [same]; Western/California, Ltd. v. Dry Creek Joint Elementary Sch. Dist. (1996) 50 Cal.App.4th 1461, 1496-1497 [same]; Bunnett v. Regents of University of California (1995) 35 Cal.App.4th 843, 848.) 21. An agency decision that ignores the ",
-      "locations": [
-        {
-          "document": "/documents/matter-32/from-20/0.Newanforbi v. CHP - Writ of Mandate.pdf",
-          "page": 8,
-          "role": "other",
-          "matter": 20
-        },
-        {
-          "document": "/documents/matter-32/from-20/Petition for Writ of Mandate.pdf",
-          "page": 8,
-          "role": "plaintiff_filing",
-          "matter": 20
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "California, Ltd. v. Dry Creek Joint Elementary Sch. Dist, 50 Cal.App. 4th 1461 (1996)",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        20,
-        32
-      ],
-      "roles": [
-        "other",
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "or without reasonable or rational basis as a matter of law]; SN Sands Corp. v. City and County of San Francisco (2008) 167 Cal.App.4th 185, 189 [same]; Western/California, Ltd. v. Dry Creek Joint Elementary Sch. Dist. (1996) 50 Cal.App.4th 1461, 1496-1497 [same]; Bunnett v. Regen",
-      "locations": [
-        {
-          "document": "/documents/matter-32/from-20/0.Newanforbi v. CHP - Writ of Mandate.pdf",
-          "page": 8,
-          "role": "other",
-          "matter": 20
-        },
-        {
-          "document": "/documents/matter-32/from-20/Petition for Writ of Mandate.pdf",
-          "page": 8,
-          "role": "plaintiff_filing",
-          "matter": 20
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "Carloss v. County of Alameda, 242 Cal.App. 4th 116 (2015)",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        20,
-        32
-      ],
-      "roles": [
-        "other",
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "ional mandamus, court determines whether agency action was arbitrary, capricious, or without evidentiary support, and whether it failed to conform to the law]; Carloss v. County of Alameda (2015) 242 Cal.App.4th 116 [decision is abuse of discretion if arbitrary, capricious, entir",
-      "locations": [
-        {
-          "document": "/documents/matter-32/from-20/0.Newanforbi v. CHP - Writ of Mandate.pdf",
-          "page": 8,
-          "role": "other",
-          "matter": 20
-        },
-        {
-          "document": "/documents/matter-32/from-20/Petition for Writ of Mandate.pdf",
-          "page": 8,
-          "role": "plaintiff_filing",
-          "matter": 20
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "Cervantes v. City of San Diego, 5 F. 3d 1273",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        29
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "........................... 8 Bell Atl. Corp. v. Twombly, 550 U.S. 544, 556 (2007) ........................................................................ 8 Cervantes v. City of San Diego, 5 F.3d 1273, 1274 (9th Cir.1993) ..................................................... 8 E",
-      "locations": [
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
-          "page": 3,
-          "role": "plaintiff_filing",
-          "matter": 29
-        },
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
-          "page": 12,
-          "role": "plaintiff_filing",
-          "matter": 29
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "Daniels-Hall v. Nat\u2019l Educ. Ass\u2019n, 629 F. 3d 992",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        29
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "dicial notice of loan requirements reported on U.S. Small Business Administration\u2019s website because \u201cit was made publicly available by government entities\u201d); Daniels-Hall v. Nat\u2019l Educ. Ass\u2019n, 629 F.3d 992, 998-99 (9th Cir. 2010) (taking judicial notice of vendor lists on school ",
-      "locations": [
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 24-2 - Amazon's Request for Judicial Notice (Dec 15, 2022).pdf",
-          "page": 4,
-          "role": "plaintiff_filing",
-          "matter": 29
-        },
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
-          "page": 11,
-          "role": "plaintiff_filing",
-          "matter": 29
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "Epstein v. Washington Energy Co, 83 F. 3d 1136",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        29
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": ".................................. 8 Cervantes v. City of San Diego, 5 F.3d 1273, 1274 (9th Cir.1993) ..................................................... 8 Epstein v. Washington Energy Co., 83 F.3d 1136, 1140 (9th Cir. 1996) ............................................ 8 Guzman",
-      "locations": [
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
-          "page": 3,
-          "role": "plaintiff_filing",
-          "matter": 29
-        },
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
-          "page": 12,
-          "role": "plaintiff_filing",
-          "matter": 29
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "Guzman v. Polaris Industries Inc, 49 F. 4th 1308 (2022)",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        29
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "....................................... 8 Epstein v. Washington Energy Co., 83 F.3d 1136, 1140 (9th Cir. 1996) ............................................ 8 Guzman v. Polaris Industries Inc., 49 F.4th 1308, 1313-15 (2022) .................................................. 18 Jus",
-      "locations": [
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
-          "page": 3,
-          "role": "plaintiff_filing",
-          "matter": 29
-        },
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
-          "page": 22,
-          "role": "plaintiff_filing",
-          "matter": 29
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "Holt v. Kelly, 20 Cal. 3d 560 (1978)",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        20,
-        32
-      ],
-      "roles": [
-        "other",
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "r v. Ventura County Community College Dist. (1983) 147 Cal.App.3d 1071, 1080-1081 [claims for relief other than damages not subject to Government Claims Act]; Holt v. Kelly (1978) 20 Cal.3d 560, 565.) B. There Is No Administrative Exhaustion Requirement 66. Penal Code section 679",
-      "locations": [
-        {
-          "document": "/documents/matter-32/from-20/0.Newanforbi v. CHP - Writ of Mandate.pdf",
-          "page": 25,
-          "role": "other",
-          "matter": 20
-        },
-        {
-          "document": "/documents/matter-32/from-20/Petition for Writ of Mandate.pdf",
-          "page": 25,
-          "role": "plaintiff_filing",
-          "matter": 20
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "Illinois v. Caballes, 543 U.S. 405 (2005)",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        32
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "etention is dispelled, the detention must terminate. See Rodriguez v. United States, 575 U.S. 348, 355 (2015) (mission of a stop controls its lawful duration); Illinois v. Caballes, 543 U.S. 405, 407 (2005). At timestamp 00:59:07, the mission of Defendants' encounter with Plainti",
-      "locations": [
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
-          "page": 10,
-          "role": "plaintiff_filing",
-          "matter": 32
-        },
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
-          "page": 28,
-          "role": "plaintiff_filing",
-          "matter": 32
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "In re Clark, 5 Cal. 4th 750 (1993)",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        19
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "RE NEWANFORBI authority (15 CCR \u00a7 3574, effective April 17, 2025) that was not in effect when the prior petition was filed; and (4) seek different relief. (See In re Clark (1993) 5 Cal.4th 750, 767\u2013774.) IV. STATEMENT OF FACTS A. Conviction and Parole Release 8. On or about Janua",
-      "locations": [
-        {
-          "document": "/documents/matter-19/HC-004 Notice and Request for Ruling Packet (with Exhibit A \u2014 Unstamped Petition) (Ready to File Aug 7 2026).pdf",
-          "page": 6,
-          "role": "plaintiff_filing",
-          "matter": 19
-        },
-        {
-          "document": "/documents/matter-19/Petition for Writ of Habeas Corpus (filed Apr. 3, 2026).pdf",
-          "page": 4,
-          "role": "plaintiff_filing",
-          "matter": 19
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "In re Marzec, 25 Cal. 2d 794 (1945)",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        19
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "d or restrained of his or her liberty.\u201d Parole constitutes a form of custody and restraint subject to habeas challenge. (In re Sturm (1974) 11 Cal.3d 258, 265; In re Marzec (1945) 25 Cal.2d 794, 796.) 2. Venue is proper in Santa Clara County because Petitioner\u2019s underlying convic",
-      "locations": [
-        {
-          "document": "/documents/matter-19/HC-004 Notice and Request for Ruling Packet (with Exhibit A \u2014 Unstamped Petition) (Ready to File Aug 7 2026).pdf",
-          "page": 4,
-          "role": "plaintiff_filing",
-          "matter": 19
-        },
-        {
-          "document": "/documents/matter-19/Petition for Writ of Habeas Corpus (filed Apr. 3, 2026).pdf",
-          "page": 2,
-          "role": "plaintiff_filing",
-          "matter": 19
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "In re Sturm, 11 Cal. 3d 258 (1974)",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        19
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "ef for any person \u201cunlawfully imprisoned or restrained of his or her liberty.\u201d Parole constitutes a form of custody and restraint subject to habeas challenge. (In re Sturm (1974) 11 Cal.3d 258, 265; In re Marzec (1945) 25 Cal.2d 794, 796.) 2. Venue is proper in Santa Clara County",
-      "locations": [
-        {
-          "document": "/documents/matter-19/HC-004 Notice and Request for Ruling Packet (with Exhibit A \u2014 Unstamped Petition) (Ready to File Aug 7 2026).pdf",
-          "page": 4,
-          "role": "plaintiff_filing",
-          "matter": 19
-        },
-        {
-          "document": "/documents/matter-19/Petition for Writ of Habeas Corpus (filed Apr. 3, 2026).pdf",
-          "page": 2,
-          "role": "plaintiff_filing",
-          "matter": 19
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "Joslin v. H.A.S. Ins. Brokerage, 184 Cal.App. 3d 369 (1986)",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        5
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "10, 919; Day v. Sharp (1975) 50 Cal.App.3d 904, 914.) Judicial notice may not be used to convert a demurrer into a summary-judgment-style evidentiary hearing. (Joslin v. H.A.S. Ins. Brokerage (1986) 184 Cal.App.3d 369, 374.) Nor may it be used to prove character, propensity, or c",
-      "locations": [
-        {
-          "document": "/documents/matter-05/Evidentiary Pal Objections to Defendants RJN.pdf",
-          "page": 2,
-          "role": "plaintiff_filing",
-          "matter": 5
-        },
-        {
-          "document": "/documents/matter-05/RJN Pal ISO Opposition.pdf",
-          "page": 10,
-          "role": "plaintiff_filing",
-          "matter": 5
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "Lopez v. Smith, 203 F. 3d 1122",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        7,
-        32,
-        33
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "e to amend only when futility is clear on the face of the complaint. Hebbe v. Pliler, 627 F.3d 338, 342 (9th Cir. 2010) (pro se pleadings construed liberally); Lopez v. Smith, 203 F.3d 1122, 1130 (9th Cir. 2000) (en banc) (leave to amend mandatory absent clear futility); Neitzke ",
-      "locations": [
-        {
-          "document": "/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
-          "page": 2,
-          "role": "plaintiff_filing",
-          "matter": 7
-        },
-        {
-          "document": "/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
-          "page": 12,
-          "role": "plaintiff_filing",
-          "matter": 7
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "Love v. United States, 915 F. 2d 1242",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        29
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "v. Los Angeles Downtown Indus. Dist. Bus. Improvement Dist., No. CV147344PSGAJWX, 2015 WL 13650018, at *3 (C.D. Cal. Jan. 13, 2015) ...................... 14 Love v. United States, 915 F.2d 1242, 1245 (9th Cir.1988) ................................................................",
-      "locations": [
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
-          "page": 3,
-          "role": "plaintiff_filing",
-          "matter": 29
-        },
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
-          "page": 12,
-          "role": "plaintiff_filing",
-          "matter": 29
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "Mangini v. R.J. Reynolds Tobacco Co, 7 Cal. 4th 1057 (1994)",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        5
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "of bad faith \u2014 each of which constitutes impermissible character evidence under Evidence Code section 1101(a) and impermissible argumentative inference under Mangini v. R. J. Reynolds Tobacco Co. (1994) 7 Cal.4th 1057, 1063; and (iv) to contradict any well-pleaded allegation of t",
-      "locations": [
-        {
-          "document": "/documents/matter-05/Evidentiary Pal Objections to Defendants RJN.pdf",
-          "page": 2,
-          "role": "plaintiff_filing",
-          "matter": 5
-        },
-        {
-          "document": "/documents/matter-05/RJN Pal ISO Opposition.pdf",
-          "page": 7,
-          "role": "plaintiff_filing",
-          "matter": 5
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "Miller v. Gammie, 335 F. 3d 889",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        33
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "-- NGWA NFORBI v. CANDELARIA & GORDON (N.D. Cal.) advocates are not entitled to absolute immunity. Swift v. California, 384 F.3d 1184, 1191-92 (9th Cir. 2004); Miller v. Gammie, 335 F.3d 889, 897 (9th Cir. 2003) (en banc). 126. Defendant Candelaria performed functions traditional",
-      "locations": [
-        {
-          "document": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal 3 Operative.pdf",
-          "page": 43,
-          "role": "plaintiff_filing",
-          "matter": 33
-        },
-        {
-          "document": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal.pdf",
-          "page": 42,
-          "role": "plaintiff_filing",
-          "matter": 33
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "Nanty v. Barrows Co, 660 F. 2d 1327",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        29
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": ".......................................... 16 McKell v. Washington Mut., Inc., 142 Cal. App. 4th 1457, 1473\u201374 (2006) .................................... 17 Nanty v. Barrows Co., 660 F.2d 1327, 1333 (9th Cir. 1981) ............................................................. 19",
-      "locations": [
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
-          "page": 3,
-          "role": "plaintiff_filing",
-          "matter": 29
-        },
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
-          "page": 22,
-          "role": "plaintiff_filing",
-          "matter": 29
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
       "citation": "O'Day v. McDonnell Douglas Helicopter Co, 79 F. 3d 756",
       "kind": "authority",
       "occurrenceCount": 2,
@@ -25913,37 +25245,6 @@
       "priority": "P0_plaintiff_only_unverified"
     },
     {
-      "citation": "Silva v. Di Vittorio, 658 F. 3d 1090",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        30
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "agent, Andrew Derrick. Filing the Derrick FAC constitutes protected First Amendment petition activity. Milhouse v. Carlson, 652 F.2d 371, 374 (3d Cir. 1981); Silva v. Di Vittorio, 658 F.3d 1090, 1104 (9th Cir. 2011).",
-      "locations": [
-        {
-          "document": "/documents/matter-30/Complaint v9 Newanforbi v Moua NDCAL.pdf",
-          "page": 6,
-          "role": "plaintiff_filing",
-          "matter": 30
-        },
-        {
-          "document": "/documents/matter-30/Complaint v9 Newanforbi v Moua NDCAL.pdf",
-          "page": 15,
-          "role": "plaintiff_filing",
-          "matter": 30
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
       "citation": "Sonner v. Premier Nutrition Corporation, 49 F. 4th 1300 (2022)",
       "kind": "authority",
       "occurrenceCount": 2,
@@ -26182,31 +25483,6 @@
       "priority": "P0_plaintiff_only_unverified"
     },
     {
-      "citation": "Bias v. Moynihan, 508 F. 3d 1212",
-      "kind": "authority",
-      "occurrenceCount": 1,
-      "matters": [
-        29
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "f any federal or state court.\u201d); Mir v. Little Co. of Mary Hosp., 844 F.2d 646, 649 (9th Cir. 1988) (judicial notice taken of complaints in related actions); Bias v. Moynihan, 508 F.3d 1212, 1225 (9th Cir. 2007) (district court \u201cmay take notice of proceedings in other courts, bot",
-      "locations": [
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 24-2 - Amazon's Request for Judicial Notice (Dec 15, 2022).pdf",
-          "page": 4,
-          "role": "plaintiff_filing",
-          "matter": 29
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
       "citation": "Bill Johnson's Restaurants, Inc. v. NLRB, 461 U.S. 731 (1983)",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -26252,31 +25528,6 @@
           "page": 2,
           "role": "plaintiff_filing",
           "matter": 3
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "Brodheim v. Cry, 584 F. 3d 1262",
-      "kind": "authority",
-      "occurrenceCount": 1,
-      "matters": [
-        30
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "ction that would chill a person of ordinary firmness from continuing to engage in protected activity. Rhodes v. Robinson, 408 F.3d 559, 567-68 (9th Cir. 2005); Brodheim v. Cry, 584 F.3d 1262, 1270 (9th Cir. 2009). 44. Moua had actual or constructive knowledge of the Derrick lawsu",
-      "locations": [
-        {
-          "document": "/documents/matter-30/Complaint v9 Newanforbi v Moua NDCAL.pdf",
-          "page": 15,
-          "role": "plaintiff_filing",
-          "matter": 30
         }
       ],
       "priority": "P0_plaintiff_only_unverified"
@@ -26477,31 +25728,6 @@
         {
           "document": "/documents/matter-30/Complaint v9 Newanforbi v Moua NDCAL.pdf",
           "page": 20,
-          "role": "plaintiff_filing",
-          "matter": 30
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "Coszalter v. City of Salem, 320 F. 3d 968",
-      "kind": "authority",
-      "occurrenceCount": 1,
-      "matters": [
-        30
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "ently establishes causation. Pratt v. Rowland, 65 F.3d 802, 807-08 (9th Cir. 1995); Villiarimo v. Aloha Island Air, Inc., 281 F.3d 1054, 1065 (9th Cir. 2002); Coszalter v. City of Salem, 320 F.3d 968, 977 (9th Cir. 2003); see also Clark County Sch. Dist. v. Breeden, 532 U.S. 268,",
-      "locations": [
-        {
-          "document": "/documents/matter-30/Complaint v9 Newanforbi v Moua NDCAL.pdf",
-          "page": 11,
           "role": "plaintiff_filing",
           "matter": 30
         }

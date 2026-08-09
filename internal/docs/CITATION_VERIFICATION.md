@@ -10,14 +10,14 @@ The campaign is entering a phase where claims are cognizable and motions to dism
 
 | Status | Count |
 |---|---|
-| UNVERIFIED | 540 |
-| VERIFIED | 170 |
-| MISCITED | 19 |
+| UNVERIFIED | 510 |
+| VERIFIED | 199 |
+| MISCITED | 20 |
 | MISCHARACTERIZED | 6 |
 | NOT_FOUND | 6 |
 
-**Plaintiff-only + still UNVERIFIED (P0 queue): 107**  
-**Plaintiff-only + bad status (P1): 19**
+**Plaintiff-only + still UNVERIFIED (P0 queue): 82**  
+**Plaintiff-only + bad status (P1): 20**
 
 ## Method controls
 
@@ -108,6 +108,7 @@ _Round 4: no matching absolute-immunity hearing-officer decision at that WL numb
 | 3 | MISCITED | County of Contra Costa v. State of California, 177 Cal.App. 3d 62 (198 | 9 |
 | 3 | MISCITED | Home v. Dep’t of Health Care Services, 204 Cal.App. 4th 676 (2012) | 9 |
 | 3 | MISCHARACTERIZED | See California Highway Patrol v. Superior Court, 158 Cal.App. 4th 726  | 9 |
+| 2 | MISCITED | California, Ltd. v. Dry Creek Joint Elementary Sch. Dist, 50 Cal.App.  | 20, 32 |
 | 2 | MISCITED | Swift v. Christian, 384 F. 3d 1184 | 30 |
 | 1 | MISCITED | Ashcroft v. Iqbal, 556 U.S. 662 | 29 |
 | 1 | MISCITED | Cases Ashcroft v. Iqbal, 556 U.S. 662 | 29 |
@@ -121,27 +122,6 @@ Asserted only in Plaintiff's filings; no court order or opposing brief in the co
 
 | Uses | Authority | Matters | Sample page |
 |---|---|---|---|
-| 3 | Scenic Community v. County of L.A, 11 Cal. 3d 506 (1974) | 9 | p.61 |
-| 2 | Armondo v. Dep't of Motor Vehicles, 15 Cal.App. 4th 1174 (1993) | 33 | p.37 |
-| 2 | Ashelman v. Pope, 793 F. 2d 1072 | 33 | p.43 |
-| 2 | Bunnett v. Regents of University, 35 Cal.App. 4th 843 (1995) | 20, 32 | p.8 |
-| 2 | California, Ltd. v. Dry Creek Joint Elementary Sch. Dist, 50 Cal.App.  | 20, 32 | p.8 |
-| 2 | Carloss v. County of Alameda, 242 Cal.App. 4th 116 (2015) | 20, 32 | p.8 |
-| 2 | Cervantes v. City of San Diego, 5 F. 3d 1273 | 29 | p.3 |
-| 2 | Daniels-Hall v. Nat’l Educ. Ass’n, 629 F. 3d 992 | 29 | p.4 |
-| 2 | Epstein v. Washington Energy Co, 83 F. 3d 1136 | 29 | p.3 |
-| 2 | Guzman v. Polaris Industries Inc, 49 F. 4th 1308 (2022) | 29 | p.3 |
-| 2 | Holt v. Kelly, 20 Cal. 3d 560 (1978) | 20, 32 | p.25 |
-| 2 | Illinois v. Caballes, 543 U.S. 405 (2005) | 32 | p.10 |
-| 2 | In re Clark, 5 Cal. 4th 750 (1993) | 19 | p.6 |
-| 2 | In re Marzec, 25 Cal. 2d 794 (1945) | 19 | p.4 |
-| 2 | In re Sturm, 11 Cal. 3d 258 (1974) | 19 | p.4 |
-| 2 | Joslin v. H.A.S. Ins. Brokerage, 184 Cal.App. 3d 369 (1986) | 5 | p.2 |
-| 2 | Lopez v. Smith, 203 F. 3d 1122 | 7, 32, 33 | p.2 |
-| 2 | Love v. United States, 915 F. 2d 1242 | 29 | p.3 |
-| 2 | Mangini v. R.J. Reynolds Tobacco Co, 7 Cal. 4th 1057 (1994) | 5 | p.2 |
-| 2 | Miller v. Gammie, 335 F. 3d 889 | 33 | p.43 |
-| 2 | Nanty v. Barrows Co, 660 F. 2d 1327 | 29 | p.3 |
 | 2 | O'Day v. McDonnell Douglas Helicopter Co, 79 F. 3d 756 | 29 | p.3 |
 | 2 | Orion Tire Corp. v. Goodyear Tire, 268 F. 3d 1133 | 29 | p.3 |
 | 2 | Pearson v. Callahan, 555 U.S. 223 (2009) | 1, 32 | p.3 |
@@ -150,7 +130,6 @@ Asserted only in Plaintiff's filings; no court order or opposing brief in the co
 | 2 | Ross v. Creel Printing, 100 Cal.App. 4th 736 (2002) | 5 | p.5 |
 | 2 | SN Sands Corp. v. City and County, 167 Cal.App. 4th 185 (2008) | 20, 32 | p.8 |
 | 2 | See Saleeby v. State Bar, 39 Cal. 3d 547 (1985) | 20, 32 | p.8 |
-| 2 | Silva v. Di Vittorio, 658 F. 3d 1090 | 30 | p.6 |
 | 2 | Sonner v. Premier Nutrition Corporation, 49 F. 4th 1300 (2022) | 29 | p.3 |
 | 2 | Soranno's Gasco, Inc. v. Morgan Hill Unified, 874 F. 2d 1310 | 24, 32 | p.14 |
 | 2 | Stewart v. San Luis Ambulance, Inc, 2015 WL 12681650 | 29 | p.3 |
@@ -159,10 +138,8 @@ Asserted only in Plaintiff's filings; no court order or opposing brief in the co
 | 2 | Unicorn Glob., Inc. v. Hillo Am., Inc, 2021 WL 1034838 | 29 | p.3 |
 | 1 | Accurate and Amazon. Los Angeles Cath. Worker v. Los Angeles Downtown  | 29 | p.18 |
 | 1 | Bd. of Educ. v. Doyle, 429 U.S. 274 (1977) | 30 | p.11 |
-| 1 | Bias v. Moynihan, 508 F. 3d 1212 | 29 | p.4 |
 | 1 | Bill Johnson's Restaurants, Inc. v. NLRB, 461 U.S. 731 (1983) | 30 | p.15 |
 | 1 | Bolkiah v. Superior Ct, 74 Cal. App. 4th 984 (1999) | 3 | p.2 |
-| 1 | Brodheim v. Cry, 584 F. 3d 1262 | 30 | p.15 |
 | 1 | California DUI Lawyers Ass'n v. Department of Motor Vehicles, 77 Cal.  | 7, 32, 33 | p.4 |
 | 1 | California Motor Transport Co. v. Trucking Unlimited, 404 U.S. 508 (19 | 30 | p.16 |
 | 1 | California v. Acevedo, 500 U.S. 565 (1991) | 32 | p.20 |
@@ -171,7 +148,6 @@ Asserted only in Plaintiff's filings; no court order or opposing brief in the co
 | 1 | Citizens for Sensible Planning v. City of Stockton, 48 Cal. 4th 481 (2 | 5 | p.5 |
 | 1 | Clark County Sch. Dist. v. Breeden, 532 U.S. 268 (2001) | 30 | p.11 |
 | 1 | Cornell v. City & County, 17 Cal.App. 5th 766 (2017) | 30 | p.20 |
-| 1 | Coszalter v. City of Salem, 320 F. 3d 968 | 30 | p.11 |
 | 1 | E. & J. Gallo Winery v. Encana Energy Servs., Inc, 2005 WL 2435900 | 29 | p.4 |
 | 1 | Edmo v. Corizon, Inc, 935 F. 3d 757 | 28 | p.1 |
 | 1 | Exxon Mobil Corp. v. Saudi Basic Indus. Corp, 544 U.S. 280 (2005) | 7, 32, 33 | p.16 |
@@ -201,12 +177,37 @@ Asserted only in Plaintiff's filings; no court order or opposing brief in the co
 | 1 | Mack v. South Bay Beer Distribs, 798 F. 2d 1279 | 29 | p.2 |
 | 1 | McKell v. Washington Mut., Inc, 142 Cal. App. 4th 1457 (2006) | 29 | p.3 |
 | 1 | Milhouse v. Carlson, 652 F. 2d 371 | 30 | p.6 |
+| 1 | Mir v. Little Co, 844 F. 2d 646 | 29 | p.4 |
+| 1 | Moser v. Benefytt, Inc, 8 F. 4th 872 | 3 | p.3 |
+| 1 | Neilson v. Union Bank, 290 F. Supp. 2d 1101 | 29 | p.4 |
+| 1 | New York v. Class, 475 U.S. 106 (1986) | 32 | p.19 |
+| 1 | Paul v. Davis, 424 U.S. 693 (1976) | 30 | p.18 |
+| 1 | People v. Preslie, 70 Cal.App. 3d 486 (1977) | 20, 32 | p.3 |
+| 1 | Pinard v. Clatskanie Sch. Dist, 467 F. 3d 755 | 24 | p.15 |
+| 1 | Potter v. Firestone Tire, 6 Cal. 4th 965 (1993) | 30 | p.22 |
+| 1 | Sav. & Loan Ass’n v. Solimino, 501 U.S. 104 (1991) | 29 | p.2 |
+| 1 | See Camara v. Municipal Court, 387 U.S. 523 (1967) | 32 | p.26 |
+| 1 | See Florida v. Wells, 495 U.S. 1 (1990) | 32 | p.21 |
+| 1 | See Kentucky v. King, 563 U.S. 452 (2011) | 32 | p.9 |
+| 1 | See Missouri v. McNeely, 569 U.S. 141 (2013) | 32 | p.24 |
+| 1 | See Shoyoye v. County of Los Angeles, 203 Cal.App. 4th 947 (2012) | 30 | p.20 |
+| 1 | See Sosinsky v. Grant, 6 Cal.App. 4th 1548 (1992) | 5 | p.7 |
+| 1 | See Swift v. California Department, 116 Cal.App. 4th 1365 (2004) | 30 | p.5 |
+| 1 | Soranno’s Gasco, Inc. v. Morgan Hill Uniifed Sch. Dist, 874 F. 2d 1310 | 24 | p.15 |
+| 1 | Stevens v. Superior Court, 75 Cal.App. 4th 594 (1999) | 5 | p.7 |
+| 1 | Taylor v. Sturgell, 553 U.S. 880 (2008) | 7, 32, 33 | p.14 |
+| 1 | Tsao v. Desert Palace, Inc, 698 F. 3d 1128 | 28 | p.3 |
+| 1 | Under Sosinsky v. Grant, 6 Cal.App. 4th 1548 (1992) | 5 | p.1 |
+| 1 | United States Small Bus. Admin. v. Bensal, 853 F. 3d 992 | 29 | p.4 |
+| 1 | United States v. Reyna-Tapia, 328 F. 3d 1114 | 7, 32, 33 | p.1 |
+| 1 | United States v. Wilson, 631 F. 2d 118 | 29 | p.4 |
+| 1 | Villiarimo v. Aloha Island Air, Inc, 281 F. 3d 1054 | 30 | p.11 |
 
-_107 total in JSON `priorityQueue`._
+_82 total in JSON `priorityQueue`._
 
 ## Round overlay
 
-Loaded round: **2026-08-09 Round 4 — portfolio P0 plaintiff-only queue (existence + reporter form; characterization where context clearly mismatches)** — 61 results
+Loaded round: **2026-08-09 Round 4 — portfolio P0 (batches A–B; continuing)** — 91 results
 
 Method note: WebSearch against primary-source URLs after positive control (Richardson v. McKnight, 521 U.S. 399 — hit govinfo.gov U.S. Reports PDF) and negative control (In re Leman, 66 Cal.App.5th 200 — no matching decision; only Lemanuel C. / Marriage of Lemen noise). CourtListener/case.law/Justia direct fetches remain egress-blocked. Statuses rest on search-returned summaries plus primary URLs. Characterization flags applied when index sample context attributes a proposition the opinion does not support.
 
