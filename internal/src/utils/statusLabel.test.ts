@@ -61,7 +61,7 @@ describe("statusLabel derivation", () => {
     const matter = cases.find((item) => item.number === 22)!;
     expect(matter.status_label).toBeTruthy();
     expect(effectiveStatusLabel(matter, { events: eventsFor(22) })).toBe(matter.status_label);
-    expect(deriveStatusLabel(matter, { events: eventsFor(22) })).toBe("Settled");
+    expect(deriveStatusLabel(matter, { events: eventsFor(22) })).toBe("Dismissed");
   });
 
   it("produces an effective label ≤ 60 chars for every matter", () => {

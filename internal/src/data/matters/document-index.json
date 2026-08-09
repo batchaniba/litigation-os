@@ -1421,13 +1421,18 @@
   },
   {
     "matter": 22,
-    "label": "CIV-110 Request for Dismissal — entire action with prejudice; executed Aug. 3, 2026; fee-waiver declaration item 2c ($10k+) checked (Gov. Code §68637); mailed to the court with $435.00 waived-fee repayment attached",
+    "label": "CIV-110 Request for Dismissal — executed Aug. 3, 2026 (the filing that the court entered Aug. 6)",
     "path": "/documents/matter-22/CIV-110 Request for Dismissal - Entire Action With Prejudice (Pilot, Executed Aug 3 2026).pdf"
   },
   {
     "matter": 22,
     "label": "USPS eReceipt — Money Order Serial #55201761577 ($435.00, purchased 12:53 PM) and First-Class postage (12:54 PM), Milpitas Post Office, Aug. 3, 2026 — CIV-110 waived-fee repayment mailing",
     "path": "/documents/matter-22/Gmail - USPS eReceipt - CIV-110 Money Order and Postage (Aug 3 2026).pdf"
+  },
+  {
+    "matter": 22,
+    "label": "CIV-110 Request for Dismissal - Entire Action With Prejudice (Pilot, CONFORMED, Dismissal Entered Aug 6 2026)",
+    "path": "/documents/matter-22/CIV-110 Request for Dismissal - Entire Action With Prejudice (Pilot, CONFORMED, Dismissal Entered Aug 6 2026).pdf"
   },
   {
     "matter": 23,
@@ -1468,6 +1473,11 @@
     "matter": 24,
     "label": "Notice of Change of Address (filed July 7, 2026)",
     "path": "/documents/matter-32/from-24/Notice of Change of Address (July 7, 2026).pdf"
+  },
+  {
+    "matter": 24,
+    "label": "USM-285 Process Receipt and Return - Service Executed on Serrato (Doc 15, Filed Aug 6 2026)",
+    "path": "/documents/matter-24/USM-285 Process Receipt and Return - Service Executed on Serrato (Doc 15, Filed Aug 6 2026).pdf"
   },
   {
     "matter": 25,
@@ -1918,6 +1928,26 @@
     "matter": 27,
     "label": "FW-001 Request to Waive Court Fees — Newanforbi v. Randstad US, LLC et al. (Alameda Sup. Ct., 1225 Fallon Street, Oakland; form caption confirms this matter, recovered from the matter-29 folder where it had been misfiled)",
     "path": "/documents/matter-27/FW-001 Request to Waive Court Fees - Randstad US LLC.pdf"
+  },
+  {
+    "matter": 27,
+    "label": "POS-010 Proof of Service of Summons - Randstad US LLC (Served Jul 30 2026, Levying Officer 2026026857)",
+    "path": "/documents/matter-27/POS-010 Proof of Service of Summons - Randstad US LLC (Served Jul 30 2026, Levying Officer 2026026857).pdf"
+  },
+  {
+    "matter": 27,
+    "label": "POS-010 Proof of Service of Summons - RK Logistics Group Inc (Served Jul 30 2026, Levying Officer 2026026857)",
+    "path": "/documents/matter-27/POS-010 Proof of Service of Summons - RK Logistics Group Inc (Served Jul 30 2026, Levying Officer 2026026857).pdf"
+  },
+  {
+    "matter": 27,
+    "label": "Notice of Confirmation of Electronic Filing - Amended Punitive Damages Notices Accepted (Aug 6 2026)",
+    "path": "/documents/matter-27/Notice of Confirmation of Electronic Filing - Amended Punitive Damages Notices Accepted (Aug 6 2026).pdf"
+  },
+  {
+    "matter": 27,
+    "label": "Notice of Confirmation of Electronic Filing - POS-010 Proofs of Service Accepted (Aug 7 2026)",
+    "path": "/documents/matter-27/Notice of Confirmation of Electronic Filing - POS-010 Proofs of Service Accepted (Aug 7 2026).pdf"
   },
   {
     "matter": 28,
@@ -2408,6 +2438,11 @@
     "matter": 29,
     "label": "POS-010 Proof of Service of Summons — Accurate Background LLC (served Jul. 31, 2026, 11:00 AM on CT Corporation / Jaqueline Mejia; declaration dated Aug. 5, 2026)",
     "path": "/documents/matter-29/Proof of Service Accurate Background.pdf"
+  },
+  {
+    "matter": 29,
+    "label": "Notice of Confirmation of Electronic Filing - Fee Payment and Punitive Notices Accepted (Aug 6 2026)",
+    "path": "/documents/matter-29/Notice of Confirmation of Electronic Filing - Fee Payment and Punitive Notices Accepted (Aug 6 2026).pdf"
   },
   {
     "matter": 30,
