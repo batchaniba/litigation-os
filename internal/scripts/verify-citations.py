@@ -24,7 +24,6 @@ Usage:
 from __future__ import annotations
 
 import json
-import os
 import re
 import sys
 from collections import Counter, defaultdict
@@ -39,7 +38,6 @@ ROUNDS_PATH = DOCS / "citation_verification_rounds.json"
 DEBT_PATH = DOCS / "citation_known_bad_debt.json"
 MULTISOURCE_PATH = DOCS / "citation_lookup_multisource.json"
 MATTER28_LOOKUP_PATH = DOCS / "citation_lookup_matter28.json"
-SUMMARIES_PATH = ROOT / "src/data/matters/summaries.json"
 OUT_JSON = DOCS / "citation_verification.json"
 OUT_MD = DOCS / "CITATION_VERIFICATION.md"
 
@@ -219,7 +217,6 @@ def build_verification():
     debt = load_json(DEBT_PATH, {"entries": []})
     multisource = load_json(MULTISOURCE_PATH, None)
     matter28_lookup = load_json(MATTER28_LOOKUP_PATH, None)
-    summaries = load_json(SUMMARIES_PATH, [])
 
     by_name, by_reporter = build_audit_indexes(audit.get("citations") or [])
     round_by_key = {
@@ -395,7 +392,6 @@ def build_verification():
     }
 
     # Markdown report
-    caption = {m["number"]: m.get("caption", "") for m in summaries}
     md = []
     w = md.append
     w("# Citation Verification Ledger\n")

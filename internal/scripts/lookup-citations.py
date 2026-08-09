@@ -323,20 +323,7 @@ def lookup_cap(citation: str, name_guess: str) -> SourceHit:
             notes=f"Volume metadata unavailable for {rep['slug']}/{rep['volume']}",
         )
     page = str(rep["page"])
-    page_hits = [
-        c
-        for c in meta
-        if str(c.get("first_page")) == page
-        or (
-            c.get("first_page") is not None
-            and c.get("last_page") is not None
-            and str(c.get("first_page")).isdigit()
-            and str(c.get("last_page")).isdigit()
-            and int(c["first_page"]) <= int(page) <= int(c["last_page"])
-            and str(c.get("first_page")) == page
-        )
-    ]
-    # Prefer exact first_page match
+    # Prefer exact first_page match (table pages may host multiple dispositions).
     exact = [c for c in meta if str(c.get("first_page")) == page]
     chosen = None
     if exact:

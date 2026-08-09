@@ -10,6 +10,10 @@ across 24 matters and found two that appear fabricated. That audit sampled motio
 practice and identified documents by filename. This one is exhaustive and records page
 numbers, so a citation in a draft can be traced to a source page rather than trusted.
 
+**Verification layer:** `CITATION_VERIFICATION.md` joins this index to the audit + Round
+overlays and gates CI. Existence probes: `npm run citations:lookup:matter -- --matter N`
+(CourtListener + CAP). See README → Citation Verification.
+
 ## Corpus
 
 | | |
