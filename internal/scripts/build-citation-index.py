@@ -70,8 +70,17 @@ REPORTERS = [
     r"Cal\.?\s?Rptr\.?(?:\s?2d|\s?3d)?",
     r"P\.?\s?(?:2d|3d)",
     r"Cal\.?\s?App\.?\s?Supp\.?",
+    # Military Justice -- the QI research cites United States v. Jessie,
+    # 79 M.J. 437 (C.A.A.F. 2020), which went uncaptured until this was added.
+    r"M\.?\s?J\.?",
 ]
 REPORTER_ALT = "|".join(REPORTERS)
+
+# Westlaw-only cites (2014 WL 2807986) name unpublished decisions, which are the
+# hardest for a reader to check and therefore the likeliest place for a bad cite
+# to sit unnoticed. Reporter-shaped patterns miss them entirely -- the volume is
+# a year and the "page" is a docket-style number.
+WESTLAW_CITE = re.compile(r"\b(?:19|20)\d{2}\s+WL\s+\d{4,}")
 
 PATTERNS = [
     # 42 U.S.C. § 1983 / 28 U.S.C. §§ 2201-2202
@@ -104,6 +113,7 @@ PATTERNS = [
     ("rule_state",
      r"\b(?:California\s+Rules?\s+of\s+Court|Cal\.?\s?Rules?\s+of\s+Court|CRC)[^\n]{0,10}"
      r"\s*(?:rule\s*)?[\d.]+[A-Za-z0-9()\-–.]*"),
+    ("case_westlaw", WESTLAW_CITE.pattern),
     ("constitutional",
      r"\b(?:First|Second|Third|Fourth|Fifth|Sixth|Seventh|Eighth|Ninth|Tenth|Eleventh|Fourteenth)\s+Amendment"),
 ]
@@ -330,7 +340,8 @@ def extract_pages(path):
 # "Name (year) <reporter cite>". Cataloguing the name and the reporter numbers
 # as separate rows makes the index useless for drafting -- you cannot check
 # "424 U.S. 319" without knowing it is meant to be Mathews v. Eldridge.
-REPORTER_RX = re.compile(rf"\b\d{{1,4}}\s+(?:{REPORTER_ALT})\s+\d{{1,4}}")
+REPORTER_RX = re.compile(
+    rf"\b\d{{1,4}}\s+(?:{REPORTER_ALT})\s+\d{{1,4}}|{WESTLAW_CITE.pattern}")
 YEAR_RX = re.compile(r"\((?:19|20)\d{2}\)")
 PAIR_WINDOW = 140
 
