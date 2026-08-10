@@ -239,6 +239,7 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | Oct. 16, 2026 | 20 | Hearing on CHP demurrer and the individual respondents' joinders/demurrers to the Petition for Writ of Mandate, Newanforbi v. California Highway Patrol, et al. (Matter 20) — Dept. 25 |
 | Oct. 22, 2026 | 28 | Initial Case Management Conference — Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504), 1:30 PM, Hon. Lisa J. Cisneros, San Francisco (videoconference only) |
 | Oct. 23, 2026 | 20 | Continued hearing on the Dutra joinder and demurrer to the Petition for Writ of Mandate, Newanforbi v. California Highway Patrol, et al. (Matter 20) — Dept. 25 |
+| Nov. 1, 2026 | 1 | CCP §335.1 two-year statute of limitations (computed) for the Fourth Amendment stop/search/arrest claim in Matter 1 (Newanforbi v. |
 | Dec. 14, 2026 | 26 | Meet-and-confer deadline — Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113); 30 calendar days before Jan. 13, 2027 CMC (CRC 3.724) |
 | Dec. 15, 2026 | 25 | Meet-and-confer deadline — Newanforbi v. Federal Express Corporation (STK-CV-UWT-2026-0009118); 30 calendar days before Jan. 14, 2027 CMC (CRC 3.724) |
 | Dec. 17, 2026 | 27 | Case Management Conference, Newanforbi v. Randstad US LLC and RK Logistics Group, Inc. (Matter 27) — Hon. Karin Schwartz, Dept. 20, 3:00 p.m. |
@@ -401,7 +402,7 @@ Controls (reconfirm when batching): *Richardson v. McKnight*, 521 U.S. 399 must 
 | NOT_FOUND | 6 |
 | UNVERIFIED | 415 |
 
-Paired authorities: **741**. P0 (plaintiff-only UNVERIFIED): **0**. P1 (plaintiff-only bad status): **27**. Ledger date: 2026-08-09.
+Paired authorities: **741**. P0 (plaintiff-only UNVERIFIED): **0**. P1 (plaintiff-only bad status): **27**. Ledger date: 2026-08-10.
 <!-- PORTFOLIO:CITATION_SCOREBOARD:END -->
 
 Priority queues from the ledger: **P0** = plaintiff-only + still `UNVERIFIED` (`npm run citations:queue`); **P1** = plaintiff-only + bad status (fix before the next brief). Pre-existing fabricated hits are debt-tracked in `citation_known_bad_debt.json` so CI stays green while corrected drafts replace them.
