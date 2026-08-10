@@ -571,8 +571,8 @@
     "case_no": "STK-CV-UWT-2026-0007649",
     "court": "San Joaquin Sup. Ct.",
     "claims": "PC §290.46(j) Violation, Wrongful Termination, FCRA, ICRAA, UCL §17200, IIED, NIED",
-    "status_label": "Dismissed with prejudice Aug. 6, 2026",
-    "lifecycle": "dismissed",
+    "status_label": "Settled Jul. 14, 2026 ($35,000)",
+    "lifecycle": "settled",
     "proceeding": "state_civil",
     "phase": "terminal",
     "filed": "May 29, 2026",
@@ -599,7 +599,7 @@
       "Intentional Infliction of Emotional Distress",
       "Negligent Infliction of Emotional Distress"
     ],
-    "archived": true,
+    "archived": false,
     "evidenceCount": 15,
     "documentCount": 16
   },

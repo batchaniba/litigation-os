@@ -39,9 +39,9 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 | Representation | Pro Se / In Propria Persona |
 | Jurisdictions | USDC E.D. Cal., USDC N.D. Cal., San Joaquin Sup. Ct., Alameda Sup. Ct., Sacramento Sup. Ct., Santa Clara Sup. Ct. |
 | Total Matters | 33 |
-| Active / Open | 16 |
-| — of which Settled | 0 |
-| Dismissed / Closed / Abandoned | 17 |
+| Active / Open | 17 |
+| — of which Settled | 1 (Matter 22 — Newanforbi v. Pilot Travel Centers LLC, Jul. 14, 2026) |
+| Dismissed / Closed / Abandoned | 16 |
 | Aggregate Exposure (Conservative) | ~$1,161,000+ |
 | Aggregate Exposure (Moderate) | ~$2,957,000+ |
 | Aggregate Exposure (Aggressive) | ~$6,579,000+ |
@@ -49,7 +49,7 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 <!-- PORTFOLIO:OVERVIEW_TABLE:END -->
 
 <!-- PORTFOLIO:CLOSED_COUNT_NOTE:START -->
-*Of the 17 dismissed/closed/abandoned matters: 7 abandoned, 8 dismissed, 2 otherwise closed (structured `lifecycle` on each matter JSON). See [All Matters](#all-matters) below for the full disposition table. Pre-filing matters stay in the Active table.*
+*Of the 16 dismissed/closed/abandoned matters: 7 abandoned, 7 dismissed, 2 otherwise closed (structured `lifecycle` on each matter JSON). See [All Matters](#all-matters) below for the full disposition table. Pre-filing matters stay in the Active table.*
 <!-- PORTFOLIO:CLOSED_COUNT_NOTE:END -->
 
 > **Housing status:** Homeless since July 2, 2026 — a direct consequence of a retaliatory inter-county parole transfer (Stockton → Santa Clara) imposed immediately after filing Matter 15 (*Newanforbi v. CDCR, et al.*). The transfer caused loss of Stockton family housing; Matters 3, 9, and 19 are also potential retaliatory predicate acts.
@@ -162,6 +162,7 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | 12 | Brendan Ngwa Nforbi v. Diamond Truck Sales, Inc. | STK-CV-UF-2026-0001094 | San Joaquin Sup. Ct. | State | Default packets mailed — prove-up Aug. 12, 2026 |
 | 19 | Newanforbi v. Macomber | C2604791 | Santa Clara Sup. Ct. | State | HC-004 ready to file — ruling overdue since Aug. 1, 2026 |
 | 20 | Newanforbi v. California Highway Patrol, et al. | 26CV191136 | Alameda Sup. Ct. | State | Demurrer hearing Aug. 28, 2026 — CMC continued to Sep. 2 |
+| 22 | Newanforbi v. Pilot Travel Centers LLC | STK-CV-UWT-2026-0007649 | San Joaquin Sup. Ct. | State | Settled Jul. 14, 2026 ($35,000) |
 | 24 | Newanforbi v. Serrato | 4:26-cv-05953-ASK | USDC N.D. Cal. | Federal | Served Aug. 5, 2026 — answer due Aug. 26; CMC Sep. 15 |
 | 25 | Newanforbi v. Federal Express Corporation | STK-CV-UWT-2026-0009118 | San Joaquin Sup. Ct. | State | Served Jul. 24, 2026 — response due Aug. 24 |
 | 26 | Newanforbi v. United Parcel Service, Inc. | STK-CV-UWT-2026-0009113 | San Joaquin Sup. Ct. | State | Served Jul. 22, 2026 — response due Aug. 21 |
@@ -198,7 +199,6 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | 17 | Newanforbi v. Maloney et al. | 2:26-cv-00194-DAD-SCR | USDC E.D. Cal. | Dismissed with prejudice — Jun. 29, 2026 |
 | 18 | Newanforbi v. Barocio | 2:26-cv-00191-DJC-CSK (PC) | USDC E.D. Cal. | Dismissed with prejudice — Jun. 29, 2026 |
 | 21 | Newanforbi v. Rojo et al. | 2:26-cv-00193-DC-CKD | USDC E.D. Cal. | Dismissed with prejudice — Jun. 29, 2026 |
-| 22 | Newanforbi v. Pilot Travel Centers LLC | STK-CV-UWT-2026-0007649 | San Joaquin Sup. Ct. | Dismissed with prejudice Aug. 6, 2026 |
 | 23 | Newanforbi v. Macy's Inc. et al. | TBD | San Joaquin Sup. Ct. | Abandoned — no adverse action occurred |
 <!-- PORTFOLIO:CLOSED_MATTERS:END -->
 
