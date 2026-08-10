@@ -73,6 +73,18 @@ describe("statusLabel derivation", () => {
     }
   });
 
+  it("does not let a contingent SOL deadline make a waiting phase look scheduled", () => {
+    const matter = cases.find((item) => item.number === 1)!;
+    const solDeadline = {
+      date: "Nov. 1, 2026",
+      event: "CCP §335.1 two-year statute of limitations (computed) — Matter 1",
+      type: "deadline",
+      matters: [1],
+      upcoming: true,
+    } as TimelineEvent;
+    expect(deriveStatusLabel(matter, { events: [...eventsFor(1), solDeadline] })).toBe("F&R pending");
+  });
+
   it("scores meet-and-confer below posture hearings", () => {
     const hearing = {
       date: "Aug. 28, 2026",
