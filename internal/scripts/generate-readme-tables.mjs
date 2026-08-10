@@ -21,7 +21,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { loadMatters } from "./load-matters.mjs";
-import { lifecycleLabel, readmeBucket } from "./matter-lifecycle.mjs";
+import { isSettledLifecycle, lifecycleLabel, readmeBucket } from "./matter-lifecycle.mjs";
 import { effectiveStatusLabel } from "./status-label.mjs";
 import { formatMatterRefs, parseMatterRefs } from "../src/utils/matterRefs.js";
 
@@ -160,9 +160,14 @@ if (fs.existsSync(citationVerificationPath)) {
   citationVerification = JSON.parse(fs.readFileSync(citationVerificationPath, "utf8"));
 }
 
+// Active/Open now includes settled matters -- still on the docket, same as
+// isOpenLifecycle. "settled" here is a separate, non-exclusive annotation
+// (a matter can be both open and settled at once), not a third partition
+// member, so it's tracked apart from bucket() and doesn't double-count
+// against Total Matters below.
 const active = cases.filter((m) => bucket(m) === "active");
-const settled = cases.filter((m) => bucket(m) === "settled");
 const closed = cases.filter((m) => bucket(m) === "closed");
+const settled = cases.filter((m) => isSettledLifecycle(m.lifecycle));
 
 const settledLabel = settled.length
   ? settled
@@ -188,7 +193,7 @@ const overviewTable = [
   `| Jurisdictions | USDC E.D. Cal., USDC N.D. Cal., San Joaquin Sup. Ct., Alameda Sup. Ct., Sacramento Sup. Ct., Santa Clara Sup. Ct. |`,
   `| Total Matters | ${cases.length} |`,
   `| Active / Open | ${active.length} |`,
-  `| Settled | ${settled.length}${settled.length ? ` (Matter ${settledLabel})` : ""} |`,
+  `| — of which Settled | ${settled.length}${settled.length ? ` (Matter ${settledLabel})` : ""} |`,
   `| Dismissed / Closed / Abandoned | ${closed.length} |`,
   `| Aggregate Exposure (Conservative) | ~${money(roundK(cons))}+ |`,
   `| Aggregate Exposure (Moderate) | ~${money(roundK(mod))}+ |`,
@@ -202,15 +207,6 @@ const activeTable = [
   ...active.map(
     (m) =>
       `| ${m.number} | ${escapeCell(m.caption)} | ${escapeCell(m.case_no)} | ${escapeCell(m.court)} | ${escapeCell(m.type)} | ${shortStatus(m)} |`,
-  ),
-].join("\n");
-
-const settledTable = [
-  `| # | Caption | Case No. | Court | Outcome |`,
-  `|---|---|---|---|---|`,
-  ...settled.map(
-    (m) =>
-      `| ${m.number} | ${escapeCell(m.caption)} | ${escapeCell(m.case_no)} | ${escapeCell(m.court)} | ${shortStatus(m)} |`,
   ),
 ].join("\n");
 
@@ -328,7 +324,6 @@ const replacements = {
   OVERVIEW_TABLE: overviewTable,
   CLOSED_COUNT_NOTE: closedCountNote,
   ACTIVE_MATTERS: activeTable,
-  SETTLED_MATTERS: settledTable,
   CLOSED_MATTERS: closedTable,
   UPCOMING_DEADLINES: deadlinesTable,
   DAMAGES_SUMMARY: damagesTable,
@@ -347,7 +342,7 @@ if (checkOnly) {
     process.exit(1);
   }
   console.log(
-    `OK — README portfolio tables are current (${active.length} active, ${settled.length} settled, ${closed.length} closed, ${upcoming.length} upcoming` +
+    `OK — README portfolio tables are current (${active.length} active/open, incl. ${settled.length} settled, ${closed.length} closed, ${upcoming.length} upcoming` +
       (citationVerification
         ? `, ${citationVerification.corpusAuthorities} citation authorities`
         : "") +
@@ -359,5 +354,5 @@ if (checkOnly) {
 fs.writeFileSync(README, readme);
 console.log(
   `Updated ${path.relative(REPO_ROOT, README)} ` +
-    `(${active.length} active / ${settled.length} settled / ${closed.length} closed / ${upcoming.length} upcoming).`,
+    `(${active.length} active/open, incl. ${settled.length} settled / ${closed.length} closed / ${upcoming.length} upcoming).`,
 );

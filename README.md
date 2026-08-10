@@ -40,7 +40,7 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 | Jurisdictions | USDC E.D. Cal., USDC N.D. Cal., San Joaquin Sup. Ct., Alameda Sup. Ct., Sacramento Sup. Ct., Santa Clara Sup. Ct. |
 | Total Matters | 33 |
 | Active / Open | 16 |
-| Settled | 0 |
+| — of which Settled | 0 |
 | Dismissed / Closed / Abandoned | 17 |
 | Aggregate Exposure (Conservative) | ~$1,161,000+ |
 | Aggregate Exposure (Moderate) | ~$2,957,000+ |
@@ -174,12 +174,7 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | 33 | Ngwa Nforbi v. Candelaria, et al | TBD (filed N.D. Cal. Aug. 7, 2026, 4:05 p.m. PT — case number assignment pending; prior E.D. Cal. Matter 7: 2:26-cv-00983-DC-CSK) | USDC N.D. Cal. (filed Aug. 7, 2026, 4:05 p.m. PT; companion to Matter 7 E.D. Cal. 2:26-cv-00983 — voluntarily dismissed w/o prejudice per operative complaint) | Federal | Filed N.D. Cal. Aug. 7, 2026 @ 4:05 p.m. |
 <!-- PORTFOLIO:ACTIVE_MATTERS:END -->
 
-### Settled
-
-<!-- PORTFOLIO:SETTLED_MATTERS:START -->
-| # | Caption | Case No. | Court | Outcome |
-|---|---|---|---|---|
-<!-- PORTFOLIO:SETTLED_MATTERS:END -->
+*Settled matters stay in the table above until dismissal is entered — a settlement resolves the merits, but the matter is still open on the docket. Their Status column reads "Settled" (see the Overview count above for which ones).*
 
 ### Dismissed / Closed / Archived
 
