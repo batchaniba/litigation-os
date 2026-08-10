@@ -1,5 +1,14 @@
 [
   {
+    "date": "Nov. 1, 2026",
+    "event": "CCP §335.1 two-year statute of limitations (computed) for the Fourth Amendment stop/search/arrest claim in Matter 1 (Newanforbi v. CHP et al., 2:25-cv-01460-DC-CSK), running from the Nov. 1, 2024 incident under §1983's two-year borrowed period. Not currently a live risk — the May 27, 2025 filing has tolled this clock — but a voluntary dismissal does not carry the original filing date forward, so this date becomes controlling the instant the drafted Aug. 7, 2026 Notice of Voluntary Dismissal (or any other dismissal) is filed. Also falls on a Sunday; do not assume CCP §12a's next-court-day extension applies in federal court. Tracked per internal/docs/MATTER_01_FORUM_TRANSFER_ANALYSIS.md, which identifies this as a portfolio gap regardless of whether the dismiss-and-refile plan or a §1404(a)/§1406(a) transfer motion is pursued.",
+    "matters": [
+      1
+    ],
+    "type": "deadline",
+    "upcoming": true
+  },
+  {
     "date": "Aug. 19, 2026",
     "event": "Gov. claim deadline — Candelaria state tort Bane Act damages (6 months from Feb. 19, 2026 accrual; claim must be filed with DGS)",
     "matters": [
