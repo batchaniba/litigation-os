@@ -9,7 +9,7 @@ import { GOLD } from "../constants";
 import { useTheme } from "../ThemeContext";
 import { getPDTMidnight } from "../utils/dateUtils";
 import { formatCurrency } from "../utils/formatters";
-import { isArchivedMatter, isLiveLifecycle, lifecycleLabel } from "../utils/matterLifecycle";
+import { isArchivedMatter, isOpenLifecycle, lifecycleLabel } from "../utils/matterLifecycle";
 import { phaseLabel, proceedingLabel } from "../utils/matterProceeding";
 import { HorizontalBarChart, VerticalBarChart, RangeChart } from "./charts/PortfolioCharts";
 import { CLUSTERS } from "../data/clusters";
@@ -51,7 +51,7 @@ const monthYearOf = (dateStr) => {
 
 // ---- Live-computed aggregates (module scope — same pattern as DashboardTab) ----
 const totalMatters = cases.length;
-const liveMatters = cases.filter(c => isLiveLifecycle(c.lifecycle) || (!c.lifecycle && !c.archived)).length;
+const liveMatters = cases.filter(c => isOpenLifecycle(c.lifecycle) || (!c.lifecycle && !c.archived)).length;
 const archivedMatters = cases.filter(c => isArchivedMatter(c)).length;
 // Strip "TBD — anticipated X" placeholder text (Matter 30) down to the actual
 // court name, so an anticipated filing doesn't inflate the distinct-court count.
