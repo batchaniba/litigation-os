@@ -5,7 +5,7 @@
 # REQUEST FOR DISMISSAL WITHOUT PREJUDICE
 # Cal. Code Civ. Proc. § 581(b)(1), (c)
 #
-# Execution / service date: August 12, 2026
+# Execution / service date: August 11, 2026
 # FILED_STATUS: False until actually filed with the Clerk.
 #
 # IMPORTANT DRAFTING NOTE: California superior courts ordinarily require
@@ -33,8 +33,8 @@ from pleading_paper import PleadingPaper  # noqa: E402
 
 FILED_STATUS = False  # flip to True once actually filed with the Clerk
 
-EXECUTION_DATE = "August 12, 2026"
-EXECUTION_DATE_SHORT = "Aug. 12, 2026"
+EXECUTION_DATE = "August 11, 2026"
+EXECUTION_DATE_SHORT = "Aug. 11, 2026"
 
 REPO_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, "..", ".."))
 OUTPUT_PATH = os.path.join(
@@ -44,7 +44,7 @@ OUTPUT_PATH = os.path.join(
     "documents",
     "matter-32",
     "from-02",
-    "Request for Dismissal Without Prejudice (Draft, Aug 12 2026).pdf",
+    "Request for Dismissal Without Prejudice (Draft, Aug 11 2026).pdf",
 )
 
 DOC_TITLE_FOOTER = (
