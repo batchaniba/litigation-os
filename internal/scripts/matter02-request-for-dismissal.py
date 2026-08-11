@@ -115,7 +115,7 @@ def build():
         "Plaintiff is entitled to this dismissal without leave of court because no "
         "Defendant has filed an answer or a cross-complaint in this action. (Code Civ. "
         "Proc., § 581, subd. (b)(1) [plaintiff may dismiss with a written request to the "
-        "clerk where no answer or cross-complaint has been filed]; <<i:id.>>, subd. (c) "
+        "clerk where no answer or cross-complaint has been filed]; <<i:id.,>> subd. (c) "
         "[plaintiff may dismiss an entire complaint at any time before the actual "
         "commencement of trial, upon written request to the clerk].) No trial date has "
         "been set, and no Defendant has served or filed an answer, demurrer, or other "
