@@ -1,5 +1,14 @@
 [
   {
+    "date": "Aug. 11, 2026",
+    "event": "PORTFOLIO MILESTONE — PR #500: cleaned Aug. 12 hearing hand-up default judgment packets finalized for Diamond Truck Sales, Inc. and Alpine Truck Sales, Inc. — compensatory-only $53,671.20 each (punitives omitted), CIV-100 6b(2) corrected to the named corporate defendant, Alpine 1c/1d conformed to the full amended-summons alter-ego caption, all signature lines left blank for wet signature; print-ready for the Dept. 11B prove-up (github.com/newanforbi/interactive-litigation-portfolio/pull/500, tag milestone/pr-500-53k-proveup) — Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094)",
+    "matters": [
+      12
+    ],
+    "type": "milestone",
+    "upcoming": false
+  },
+  {
     "date": "Aug. 7, 2026",
     "event": "Drafted Notice of Voluntary Dismissal Without Prejudice for Matter 1 (Newanforbi v. CHP et al., 2:25-cv-01460-DC-CSK) under Fed. R. Civ. P. 41(a)(1)(A)(i) — entire action; self-executing upon filing; MTD under Rule 12(b)(6) does not cut off the right to dismiss; execution date Aug. 7, 2026; not yet e-filed",
     "matters": [
