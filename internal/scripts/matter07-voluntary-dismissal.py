@@ -5,7 +5,7 @@
 # NOTICE OF VOLUNTARY DISMISSAL WITHOUT PREJUDICE
 # Fed. R. Civ. P. 41(a)(1)(A)(i)
 #
-# Execution / service date: August 11, 2026
+# Execution / service date: August 12, 2026
 # FILED_STATUS: False until actually e-filed via CM/ECF.
 #
 # Context: neither Defendant has been served with process or has
@@ -27,8 +27,8 @@ from pleading_paper import PleadingPaper  # noqa: E402
 
 FILED_STATUS = False  # flip to True once e-filed and served
 
-EXECUTION_DATE = "August 11, 2026"
-EXECUTION_DATE_SHORT = "Aug. 11, 2026"
+EXECUTION_DATE = "August 12, 2026"
+EXECUTION_DATE_SHORT = "Aug. 12, 2026"
 
 REPO_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, "..", ".."))
 OUTPUT_PATH = os.path.join(
@@ -38,7 +38,7 @@ OUTPUT_PATH = os.path.join(
     "documents",
     "matter-33",
     "from-07",
-    "Notice of Voluntary Dismissal Without Prejudice (Aug 11 2026).pdf",
+    "Notice of Voluntary Dismissal Without Prejudice (Aug 12 2026).pdf",
 )
 
 DOC_TITLE_FOOTER = (
