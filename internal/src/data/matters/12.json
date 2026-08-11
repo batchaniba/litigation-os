@@ -4,8 +4,8 @@
   "case_no": "STK-CV-UF-2026-0001094",
   "court": "San Joaquin Sup. Ct.",
   "claims": "Fraudulent Concealment, Intentional Misrepresentation, Negligent Misrepresentation, Breach of Contract, UCL §17200, Rescission & Restitution, Declaratory Relief",
-  "status": "Active — June 15 CIV-100 against Diamond and Alpine docketed Not Entered (Alpine then unserved). Corrected default packets for both defendants mailed July 31, 2026; clerk indicated the Aug. 12, 2026 CMC (Dept. 11B, Hon. Robert T. Waters) will convert to a default prove-up.",
-  "status_label": "Default packets mailed — prove-up Aug. 12, 2026",
+  "status": "Active — June 15 CIV-100 Not Entered; renewed packets mailed July 31 and Aug 3–4 (compensatory-only). Cleaned Aug 12 hearing hand-up packets prepared for Dept. 11B prove-up (Hon. Robert T. Waters) seeking $53,671.20 each, no punitives.",
+  "status_label": "Prove-up Aug. 12, 2026 — hand-up packets ready",
   "lifecycle": "active",
   "proceeding": "state_civil",
   "phase": "default",
@@ -163,6 +163,18 @@
     },
     {
       "path": "/documents/matter-12/1094 Alpine Default Judgment Packet (Compensatory Only, Ready to File Aug 4 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-12/1094 Diamond Default Judgment Packet (Compensatory Only, Hearing Hand-Up Aug 12 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-12/1094 Alpine Default Judgment Packet (Compensatory Only, Hearing Hand-Up Aug 12 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-12/1094 CIV-110 Request for Dismissal of Does 1-20 (Without Prejudice, Executed Aug 12 2026).pdf",
       "filed": false
     },
     {

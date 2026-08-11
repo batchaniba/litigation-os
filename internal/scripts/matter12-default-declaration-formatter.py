@@ -38,7 +38,10 @@ SIG_WIDTH = 140  # aspect ≈ 0.248 → ~35pt tall on the underscore line
 OUT_DIR = os.environ.get("MATTER12_DECL_OUT_DIR", "/tmp/m12build")
 COURT_LINE2 = "COUNTY OF SAN JOAQUIN"
 CASE_NO = "STK-CV-UF-2026-0001094"
-EXEC_DATE = "August 4, 2026"
+# Override with MATTER12_EXEC_DATE (e.g. "August 12, 2026") for hearing hand-ups.
+EXEC_DATE = os.environ.get("MATTER12_EXEC_DATE", "August 4, 2026")
+# Output filename stem tag; default keeps Aug-4 build names for back-compat.
+DECL_TAG = os.environ.get("MATTER12_DECL_TAG", "Aug4_2026")
 
 
 def party_block(d: PleadingPaper) -> None:
@@ -726,7 +729,7 @@ def alpine_content() -> list[tuple[str, str]]:
 def build_diamond() -> str:
     out_path = os.path.join(
         OUT_DIR,
-        "_build_Diamond_Declaration_ISO_Default_Judgment_Aug4_2026.pdf",
+        f"_build_Diamond_Declaration_ISO_Default_Judgment_{DECL_TAG}.pdf",
     )
     d = PleadingPaper(
         out_path,
@@ -760,7 +763,7 @@ def build_diamond() -> str:
 def build_alpine() -> str:
     out_path = os.path.join(
         OUT_DIR,
-        "_build_Alpine_Declaration_ISO_Default_Judgment_Aug4_2026.pdf",
+        f"_build_Alpine_Declaration_ISO_Default_Judgment_{DECL_TAG}.pdf",
     )
     d = PleadingPaper(
         out_path,
