@@ -83,12 +83,14 @@ def build():
         ("Complaint Filed: May 27, 2025", False, False),
     ]
     d.draw_caption_block(left, right, caption_size=10, tight_lh=11, boxed=True)
+    d.blank_line()
 
     d.write_wrapped(
         "TO THE CLERK OF THE COURT, ALL PARTIES, AND THEIR COUNSEL OF RECORD:",
         bold=True,
         first_indent=0,
     )
+    d.blank_line()
 
     d.write_wrapped(
         "PLEASE TAKE NOTICE that, pursuant to Rule 41(a)(1)(A)(i) of the Federal Rules of "
@@ -98,6 +100,7 @@ def build():
         "CALIFORNIA HIGHWAY PATROL; OFFICER SANTIAGO MEZA-GONZALEZ (#023295); and "
         "OFFICER MELANO (#023054)."
     )
+    d.blank_line()
 
     d.write_wrapped(
         "Plaintiff is entitled to dismiss this action as a matter of right because no "
@@ -115,6 +118,7 @@ def build():
         "2026 Objections thereto, and Plaintiff's July 7, 2026 Notice of Supplemental "
         "Authority likewise do not constitute an answer or a motion for summary judgment."
     )
+    d.blank_line()
 
     d.write_wrapped(
         "Because this is the first voluntary dismissal by Plaintiff of any action based "

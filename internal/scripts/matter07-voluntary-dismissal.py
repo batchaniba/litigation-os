@@ -88,12 +88,14 @@ def build():
         ("FAC Filed: April 29, 2026", False, False),
     ]
     d.draw_caption_block(left, right, caption_size=10, tight_lh=11, boxed=True)
+    d.blank_line()
 
     d.write_wrapped(
         "TO THE CLERK OF THE COURT, ALL PARTIES, AND THEIR COUNSEL OF RECORD, IF ANY:",
         bold=True,
         first_indent=0,
     )
+    d.blank_line()
 
     d.write_wrapped(
         "PLEASE TAKE NOTICE that, pursuant to Rule 41(a)(1)(A)(i) of the Federal Rules of "
@@ -103,6 +105,7 @@ def build():
         "individual capacity, and STEVE GORDON, Director of the California Department of "
         "Motor Vehicles, in his official capacity."
     )
+    d.blank_line()
 
     d.write_wrapped(
         "Plaintiff is entitled to dismiss this action as a matter of right because no "
@@ -127,6 +130,7 @@ def build():
         "<<i:Miller v. Terramite Corp.>>, 114 F. App'x 536, 539 (4th Cir. 2004) [same rule "
         "applies a fortiori where the defendant has not yet been served].)"
     )
+    d.blank_line()
 
     d.write_wrapped(
         "This is Plaintiff's first dismissal of any action based on or including the claims "
