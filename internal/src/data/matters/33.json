@@ -1,21 +1,21 @@
 {
   "number": 33,
-  "caption": "Ngwa Nforbi v. Candelaria, et al",
-  "case_no": "TBD (filed N.D. Cal. Aug. 7, 2026, 4:05 p.m. PT — case number assignment pending; prior E.D. Cal. Matter 7: 2:26-cv-00983-DC-CSK)",
-  "court": "USDC N.D. Cal. (filed Aug. 7, 2026, 4:05 p.m. PT; companion to Matter 7 E.D. Cal. 2:26-cv-00983 — voluntarily dismissed w/o prejudice per operative complaint)",
-  "claims": "42 U.S.C. § 1983 — APS structural bias / fair hearing / clear absence of jurisdiction; declaratory and injunctive relief (vacatur of APS 34739340) — N.D. Cal. operative complaint dated Aug. 7, 2026; also Candelaria / DMV APS PDF home for Matters 7/8",
-  "status": "CASE FILED August 7, 2026, 4:05 p.m. PT — N.D. Cal. Complaint (operative v3) and intake packet filed under caption Ngwa Nforbi v. Candelaria, et al (§ 1983 APS structural-bias / vacatur; damages >$214,000 / $250,000 JS-44 min.). Operative pleading alleges prior E.D. Cal. Matter 7 was voluntarily dismissed without prejudice. Case number assignment pending. Also owns Nov. 1 / APS incident evidence, Matter 7/8 docket PDFs, and the June 15, 2026 F&R.",
-  "status_label": "Filed N.D. Cal. Aug. 7, 2026 @ 4:05 p.m.",
+  "caption": "Nforbi v. Candelaria et al.",
+  "case_no": "3:26-cv-08272-LJC",
+  "court": "USDC N.D. Cal. (San Francisco Div.)",
+  "claims": "42 U.S.C. § 1983 — APS structural bias / fair hearing / clear absence of jurisdiction; declaratory and injunctive relief (vacatur of APS 34739340) — Dkt. 1 complaint, docketed Aug. 10, 2026; also Candelaria / DMV APS PDF home for Matters 7/8",
+  "status": "Docketed Aug. 10, 2026 as N.D. Cal. No. 3:26-cv-08272-LJC before Magistrate Judge Lisa J. Cisneros. Complaint, both summonses, and Plaintiff's consent to magistrate jurisdiction are on file (Dkts. 1–3); Dkt. 4 sets the initial conference for Nov. 12, 2026. Neither defendant is served — Rule 4(m) runs to Nov. 8, 2026.",
+  "status_label": "Service due Nov. 8, 2026; CMC Nov. 12",
   "lifecycle": "active",
   "proceeding": "federal_civil",
-  "phase": "pleadings",
-  "note": "N.D. Cal. § 1983 refile filed under this caption (ndcal/) on August 7, 2026 at 4:05 p.m. PT, after alleged voluntary dismissal of Matter 7 E.D. Cal. Also owns the Candelaria/DMV APS document set; Matters 7 and 8 remain historical docket records and cross-reference these paths.",
+  "phase": "service",
+  "note": "N.D. Cal. § 1983 refile docketed Aug. 10, 2026 as No. 3:26-cv-08272-LJC (ndcal/), after alleged voluntary dismissal of Matter 7 E.D. Cal. Also owns the Candelaria/DMV APS document set; Matters 7 and 8 remain historical docket records and cross-reference these paths.",
   "badge": "ACTIVE",
-  "filed": "August 7, 2026, 4:05 p.m. PT",
-  "judge": "TBD",
+  "filed": "August 10, 2026 (docketed; complaint signed Aug. 7, 2026)",
+  "judge": "Hon. Lisa J. Cisneros (Magistrate Judge)",
   "cluster": 1,
   "type": "Federal",
-  "defendants": "Diana Candelaria (DMV Hearing Officer), individually; Steve Gordon, Director, California DMV, in his official capacity; and DOES 1–10 — N.D. Cal. operative complaint (Aug. 7, 2026). Matter 7 (E.D. Cal.) and Matter 8 (state mandate, abandoned) are the prior Candelaria tracks.",
+  "defendants": "Diana Candelaria (DMV Driver Safety Hearing Officer), individually; Steve Gordon, Director, California DMV, in his official capacity; and DOES 1–10 — Dkt. 1 complaint. Matter 7 (E.D. Cal.) and Matter 8 (state mandate, abandoned) are the prior Candelaria tracks.",
   "causes": [
     "42 U.S.C. § 1983 — Structural bias / dual-role APS adjudicator (procedural due process)",
     "42 U.S.C. § 1983 — Fair hearing violations (procedural due process)",
@@ -23,11 +23,15 @@
     "Declaratory relief — 28 U.S.C. §§ 2201–2202 (vacatur of APS Decision 34739340)",
     "Injunctive / Ex parte Young relief vs. DMV Director Gordon (official capacity)"
   ],
-  "key_facts": "On November 1, 2024, CHP Officers Meza-Gonzalez and Melano contacted Plaintiff on the I-580 East shoulder in Livermore (CHP Case RJ68845). The DS-367 chemical-test-refusal designation and Arrest Report triggered DMV APS Case 34739340. After a January 24, 2025 Microsoft Teams hearing, Hearing Officer Diana Candelaria issued a February 11, 2025 Decision sustaining a one-year Class A CDL suspension (Feb. 20, 2025 – Feb. 19, 2026) without addressing the November 5, 2024 PC § 849(b)(1) Detention Certificate. Matter 7 (federal §1983, 2:26-cv-00983-DC-CSK) and Matter 8 (state mandate, 26WM000135, abandoned) litigate that APS outcome. This matter consolidates the underlying incident/APS evidence and both Candelaria docket PDF sets under one owning folder. On August 7, 2026, Plaintiff prepared an operative N.D. Cal. Complaint (v3, 47 pp.) and print intake packet against Candelaria (individual) and Gordon (official capacity), expressly alleging that the prior E.D. Cal. Matter 7 action arising from the same Nov. 1, 2024 incident was voluntarily dismissed without prejudice. Drafts v1 (47 pp.) and v2 (15 pp. short-form) retained.",
-  "procedural_status": "Opened August 7, 2026 as Matter 33. Received: (a) six Nov. 1, 2024 / APS discovery PDFs plus Centerline wage reference into matter-33/incident/; (b) twelve Matter 7 Candelaria federal PDFs into matter-33/from-07/; (c) six Matter 8 mandamus PDFs into matter-33/from-08/; (d) the June 15, 2026 Candelaria F&R into matter-33/opinions/. Matters 1, 2, 7, 8, and 32 cross-reference these paths. No complaint has been filed under this Matter 33 caption — it is a document-home entry for the Candelaria / DMV APS slice of the CHP cluster. FILED August 7, 2026, 4:05 p.m. PT: N.D. Cal. Complaint (operative v3) and intake packet (JS-44 demanding $250,000 min.; AO 440 summonses for Candelaria and Gordon at DMV Legal Affairs, Sacramento; MJ consent/declination) were filed; case number assignment pending. Related case listed on JS-44: Serrato 4:26-cv-05953-ASK.",
-  "damages": "N.D. Cal. operative complaint (v3) seeks compensatory damages exceeding $214,000, punitive damages of at least $100,000, JS-44 demand alignment $250,000 (min.), vacatur of APS Case 34739340, SR-22 relief, CDL-record expungement, and structural APS reform. Matter 33 also remains documentary owner of the Matter 7/8 PDF sets (no separate damages under the document-home role).",
-  "risk": "N.D. Cal. refile after Matter 7 E.D. Cal. voluntary dismissal — confirm dismissal is on the E.D. Cal. docket before filing; watch claim-preclusion / forum-shopping arguments; coordinate with Matter 32 Meza-Gonzalez N.D. Cal. companion and Serrato related-case notice. Path updates for Matters 1/2/7/8/32 already point at /documents/matter-33/ for the historical PDF set.",
+  "key_facts": "On November 1, 2024, CHP Officers Meza-Gonzalez and Melano contacted Plaintiff on the I-580 East shoulder in Livermore (CHP Case RJ68845). The DS-367 chemical-test-refusal designation and Arrest Report triggered DMV APS Case 34739340. After a January 24, 2025 Microsoft Teams hearing, Hearing Officer Diana Candelaria issued a February 11, 2025 Decision sustaining a one-year Class A CDL suspension (Feb. 20, 2025 – Feb. 19, 2026) without addressing the November 5, 2024 PC § 849(b)(1) Detention Certificate. Matter 7 (federal §1983, 2:26-cv-00983-DC-CSK) and Matter 8 (state mandate, 26WM000135, abandoned) litigate that APS outcome. This matter consolidates the underlying incident/APS evidence and both Candelaria docket PDF sets under one owning folder. Plaintiff signed an operative N.D. Cal. Complaint (v3, 47 pp.) and print intake packet against Candelaria (individual) and Gordon (official capacity) on Aug. 7, 2026, expressly alleging that the prior E.D. Cal. Matter 7 action arising from the same Nov. 1, 2024 incident was voluntarily dismissed without prejudice. The court docketed it as Dkt. 1 on Aug. 10, 2026. Drafts v1 (47 pp.) and v2 (15 pp. short-form) retained.",
+  "procedural_status": "Opened August 7, 2026 as Matter 33 to hold the Candelaria / DMV APS slice of the CHP cluster: six Nov. 1 incident and APS discovery PDFs plus the Centerline wage reference in matter-33/incident/; twelve Matter 7 federal PDFs in matter-33/from-07/; six Matter 8 mandamus PDFs in matter-33/from-08/; and the June 15, 2026 Candelaria F&R in matter-33/opinions/. Matters 1, 2, 7, 8 and 32 cross-reference those paths. The N.D. Cal. complaint was signed Aug. 7 and docketed Aug. 10, 2026 as No. 3:26-cv-08272-LJC, assigned to Magistrate Judge Lisa J. Cisneros in San Francisco; the clerk's intake stamp shows the San Jose office. Four documents are on the docket: complaint (Dkt. 1), summonses as to both defendants (Dkt. 2), Plaintiff's magistrate-jurisdiction election consenting under 28 U.S.C. § 636(c) (Dkt. 3), and the court's order setting the initial case management conference and ADR deadlines (Dkt. 4). Both summonses are addressed to the defendants care of the DMV Legal Affairs Division, Mail Station C128, 2415 First Avenue, Sacramento, CA 95818. Open items: the Civil L.R. 3-15 certification of conflicts and interested entities was due with Plaintiff's first appearance and is not on the docket; Dkt. 4 requires that order and the Civil L.R. 4-2 supplementary material to be served with the complaint; the § 636(c) consent binds only Plaintiff until both defendants consent, and a single declination reassigns the case to a district judge; and the complaint's representation that Matter 7 was voluntarily dismissed without prejudice still needs confirming on the E.D. Cal. docket. Related case listed on the JS-44: Serrato 4:26-cv-05953-ASK. Dated deadlines live in timeline.json.",
+  "damages": "The Dkt. 1 complaint seeks compensatory damages exceeding $214,000, punitive damages of at least $100,000, JS-44 demand alignment $250,000 (min.), vacatur of APS Case 34739340, SR-22 relief, CDL-record expungement, and structural APS reform. Matter 33 also remains documentary owner of the Matter 7/8 PDF sets (no separate damages under the document-home role).",
+  "risk": "Refiled in N.D. Cal. after the alleged Matter 7 E.D. Cal. voluntary dismissal — confirm that dismissal is actually on the E.D. Cal. docket, since Dkt. 1 represents it to this court; watch claim-preclusion and forum-shopping arguments. Service is the near-term exposure: nothing is served, Rule 4(m) expires Nov. 8, 2026 (four days before the initial conference), and both defendants must be reached through DMV Legal Affairs in Sacramento. Consenting to magistrate jurisdiction gives up the district-judge review layer that produced the Matter 7 objections track, and is ineffective unless both defendants also consent. Dkt. 1 also carries a known-fabricated authority at page 43: Burrell v. Jackson, 2003 WL 23545858, which the citation ledger records as NOT_FOUND. It is cited as out-of-circuit authority being distinguished rather than as support, and the companion cite in the same sentence (Baker v. Bzdyra, 2019 WL 6619348, misspelled 'Bzydra' in the pleading) is real and correctly characterized — but a nonexistent case cannot be distinguished, and the defendants will brief quasi-judicial immunity straight at that passage. It was tracked as draft debt and is now live in a federal filing, so it needs an errata or an amended complaint before the responsive deadline. Coordinate with the Matter 32 Meza-Gonzalez N.D. Cal. companion, whose case number is still unrecorded in the portfolio, and the Serrato related-case notice. Path updates for Matters 1/2/7/8/32 already point at /documents/matter-33/ for the historical PDF set.",
   "evidence": [
+    "Complaint as docketed — Dkt. 1 (Aug. 10, 2026) — ndcal/",
+    "Summonses issued as to Candelaria and Gordon — Dkt. 2 (Aug. 10, 2026) — ndcal/",
+    "Consent to Magistrate Judge Jurisdiction, consent elected — Dkt. 3 (Aug. 10, 2026) — ndcal/",
+    "Order Setting Initial Case Management Conference and ADR Deadlines — Dkt. 4 (Aug. 10, 2026) — ndcal/",
     "N.D. Cal. Complaint v3 Operative (Aug. 7, 2026) — ndcal/",
     "N.D. Cal. Intake Packet (JS-44, AO 440×2, MJ form) — ndcal/",
     "CHP Arrest Report (RJ68845) — incident/",
@@ -41,6 +45,22 @@
     "June 15, 2026 Candelaria F&R — opinions/"
   ],
   "documents": [
+    {
+      "path": "/documents/matter-33/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+      "filed": true
+    },
+    {
+      "path": "/documents/matter-33/ndcal/Dkt 02 - Summons Issued - Candelaria and Gordon (Aug 10 2026).pdf",
+      "filed": true
+    },
+    {
+      "path": "/documents/matter-33/ndcal/Dkt 03 - Consent to Magistrate Judge Jurisdiction - CONSENT (Aug 10 2026).pdf",
+      "filed": true
+    },
+    {
+      "path": "/documents/matter-33/ndcal/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026).pdf",
+      "filed": true
+    },
     {
       "path": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal 3 Operative.pdf",
       "filed": true

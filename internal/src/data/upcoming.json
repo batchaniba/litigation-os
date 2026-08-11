@@ -1,5 +1,47 @@
 [
   {
+    "date": "Oct. 22, 2026",
+    "event": "Deadline to file ADR Certification (ADR L.R. 3) and to meet and confer regarding initial disclosures, early settlement, ADR process selection, and a discovery plan (Fed. R. Civ. P. 26(f)) — Nforbi v. Candelaria et al. (3:26-cv-08272-LJC), per the Dkt. 4 Order Setting Initial Case Management Conference and ADR Deadlines. Both defendants must be served and appearing for a meaningful Rule 26(f) conference, so this date is downstream of the Nov. 8, 2026 Rule 4(m) service deadline",
+    "matters": [
+      33
+    ],
+    "type": "deadline",
+    "source": "/documents/matter-33/ndcal/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026).pdf",
+    "upcoming": true,
+    "actor": "you"
+  },
+  {
+    "date": "Nov. 5, 2026",
+    "event": "Deadline to make initial disclosures (Fed. R. Civ. P. 26(a)(1)) and to file the Joint Case Management Statement (Standing Order for All Judges of the Northern District of California) — Nforbi v. Candelaria et al. (3:26-cv-08272-LJC), per the Dkt. 4 order; one week before the initial case management conference",
+    "matters": [
+      33
+    ],
+    "type": "deadline",
+    "source": "/documents/matter-33/ndcal/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026).pdf",
+    "upcoming": true,
+    "actor": "you"
+  },
+  {
+    "date": "Nov. 8, 2026",
+    "event": "Fed. R. Civ. P. 4(m) service deadline (computed) — 90 days from the Aug. 10, 2026 docketing of Nforbi v. Candelaria et al. (3:26-cv-08272-LJC) to serve Diana Candelaria and Steve Gordon. Summonses issued as Dkt. 2 on Aug. 10, 2026; neither defendant is served. Note that Dkt. 4 also requires the scheduling order itself and the Civil L.R. 4-2 supplementary material to be served together with the complaint. Falls on a Sunday and four days before the Nov. 12, 2026 initial conference, so the practical cutoff is earlier",
+    "matters": [
+      33
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you"
+  },
+  {
+    "date": "Nov. 12, 2026",
+    "event": "Initial Case Management Conference, 1:30 p.m. by Zoom (cand.uscourts.gov/ljc) before Magistrate Judge Lisa J. Cisneros — Nforbi v. Candelaria et al. (3:26-cv-08272-LJC), set by the Dkt. 4 order. If this date moves, the Oct. 22 and Nov. 5, 2026 deadlines shift with it unless the court orders otherwise",
+    "matters": [
+      33
+    ],
+    "type": "hearing",
+    "source": "/documents/matter-33/ndcal/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026).pdf",
+    "upcoming": true
+  },
+  {
     "date": "Nov. 1, 2026",
     "event": "CCP §335.1 two-year statute of limitations (computed) for the Fourth Amendment stop/search/arrest claim in Matter 1 (Newanforbi v. CHP et al., 2:25-cv-01460-DC-CSK), running from the Nov. 1, 2024 incident under §1983's two-year borrowed period. Not currently a live risk — the May 27, 2025 filing has tolled this clock — but a voluntary dismissal does not carry the original filing date forward, so this date becomes controlling the instant the drafted Aug. 7, 2026 Notice of Voluntary Dismissal (or any other dismissal) is filed. Also falls on a Sunday; do not assume CCP §12a's next-court-day extension applies in federal court. Tracked per internal/docs/MATTER_01_FORUM_TRANSFER_ANALYSIS.md, which identifies this as a portfolio gap regardless of whether the dismiss-and-refile plan or a §1404(a)/§1406(a) transfer motion is pursued.",
     "matters": [
