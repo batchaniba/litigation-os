@@ -1,0 +1,181 @@
+{
+  "analysisDate": "2026-08-11",
+  "matter": 12,
+  "caption": "Brendan Ngwa Nforbi v. Diamond Truck Sales, Inc. et al.",
+  "caseNumber": "STK-CV-UF-2026-0001094",
+  "court": "San Joaquin Sup. Ct., Dept. 11B (Hon. Robert T. Waters)",
+  "report": "internal/docs/MATTER_12_POST_JUDGMENT_READINESS.md",
+  "scope": "Status of every document required after entry of default and default judgment. Field counts are AcroForm /V values read from the PDFs in internal/public/documents/matter-12/.",
+  "methodology": "Read each post-judgment PDF's AcroForm field values with pypdf to measure real completeness; diffed each filled draft against its blank-form counterpart in internal/docs/document_index.jsonl; cross-checked the FullCourt ROA summary (as of Aug 2 2026), the clerk's Notice to Filing Party (Jul 30 2026), the Jul 20 2026 CM-110, and the Aug 3 2026 SER-001 packets; verified each statutory clock against the current California codes.",
+  "gate": {
+    "defaultEntered": false,
+    "evidence": [
+      "ROA carries one DEFAULT-coded event: 06/15/2026 Request for Default against Diamond and Alpine -- Not Entered.",
+      "No later ROA event enters default against either defendant.",
+      "Aug. 12, 2026 setting is still docketed SHSET as a Case Management Conference; conversion to prove-up rests on a clerk phone statement, not an order.",
+      "Clerk's Notice to Filing Party dated 07/30/2026 states default cannot be entered."
+    ],
+    "clerkRejectionGrounds": [
+      { "ground": "CIV-100 items 1A, 1B, 1C blank/incomplete", "curedByPr500": true },
+      { "ground": "Item 6 on page 2 of the Default is not a named Defendant", "curedByPr500": true },
+      { "ground": "Proof of service as to Alpine invalid (not served as sued); no proof of service as to Diamond", "curedByPr500": false, "note": "No re-service of either defendant is recorded after Jul. 30, 2026. ROA does show two Diamond POS filed 03/17/2026 (served 03/10 and 03/11/2026, one flagged possible duplicate), so the objection most likely targets the Amended Summons / First Amended Complaint." },
+      { "ground": "Documents missing if a court judgment is requested", "curedByPr500": true }
+    ]
+  },
+  "findings": [
+    {
+      "id": "M12-PJ-01",
+      "priority": "P0",
+      "title": "Filed CM-110 tells the court default was entered; the docket does not support it",
+      "detail": "The Case Management Statement filed Jul. 20, 2026 (docketed 07/27/2026) states 'Diamond Truck Sales, Inc. - served 05/12/2026; default entered.' and 'Default entered against Diamond; prove-up anticipated at or after this CMC.' No ROA event entered default.",
+      "risk": "A default judgment resting on the premise that default was already entered is exposed under CCP 473(d).",
+      "action": "Correct on the record at or before the Aug. 12 hearing. Only a filing can fix a filed document.",
+      "documents": ["/documents/matter-12/CM110 Case Management Statement (Jul 20 2026).pdf"]
+    },
+    {
+      "id": "M12-PJ-02",
+      "priority": "P0",
+      "title": "timeline.json asserted default entered on May 12, 2026",
+      "detail": "The May 12, 2026 milestone read 'DEFAULT ENTERED against Diamond Truck Sales, Inc.' -- contradicted by the ROA and by matters/12.json's own status field.",
+      "action": "Corrected in this branch to match the ROA.",
+      "resolved": true
+    },
+    {
+      "id": "M12-PJ-03",
+      "priority": "P1",
+      "title": "Writ of Execution is directed to San Joaquin County; all known assets are in Stanislaus County",
+      "detail": "EJ-130 item 1 reads 'San Joaquin'. Both defendants operate at 1201 S Soderquist Road, Turlock (Stanislaus). The Bank of Stockton branch identified in the garnishee drafts is 134 S Golden State Blvd, Turlock (Stanislaus). Prior service went through the Stanislaus Sheriff.",
+      "authority": "CCP 699.510(a) -- writ shall be directed to the levying officer in the county where the levy is to be made; a separate writ shall be issued for each county; no new writ for a county for 180 days unless the prior writ is returned.",
+      "action": "Issue the writ for Stanislaus County. Add San Joaquin only if assets are found there.",
+      "documents": ["/documents/matter-12/1094 EJ130 Writ of Execution (Draft, Pending Judgment Entry).pdf"]
+    },
+    {
+      "id": "M12-PJ-04",
+      "priority": "P1",
+      "title": "No JL-1 Notice of Judgment Lien anywhere in the portfolio",
+      "detail": "A JL-1 filed with the Secretary of State creates a lien on the debtors' business personal property -- equipment, inventory, accounts receivable. Both debtors are truck dealerships whose inventory is the asset.",
+      "authority": "CCP 697.510, 697.530. Must be received by the Secretary of State within 10 days of the notice date; lien runs five years, continuable.",
+      "action": "Prepare JL-1 now so it can be filed inside the 10-day window once the judgment is entered.",
+      "missing": true
+    },
+    {
+      "id": "M12-PJ-05",
+      "priority": "P1",
+      "title": "One AT-138/EJ-125 examination order prepared for two judgment debtors, naming the wrong sheriff",
+      "detail": "Debtor field reads '[TBD -- insert judgment debtor name(s) once Aug. 12 judgment enters]'; item 2 date/time/room/dept is blank; the designated server is 'registered process server or San Joaquin County Sheriff' but service must occur in Turlock (Stanislaus).",
+      "authority": "CCP 708.110 (personal service at least 30 days before the examination); 708.150 (corporate examinee -- order served on an officer, director, or managing agent); 708.160(a)-(b) (San Joaquin is the proper court; Turlock is well inside the 150-mile limit, so no 708.160(d) application is needed).",
+      "action": "Prepare a separate order per debtor, obtain hearing dates from the clerk, and route service through the Stanislaus Sheriff (fresh SER-001 + FW-003) or a registered process server with 30 days' lead time.",
+      "documents": ["/documents/matter-12/1094 AT138-EJ125 Application and Order for Appearance and Examination (Draft, Pending Judgment Entry).pdf"]
+    },
+    {
+      "id": "M12-PJ-06",
+      "priority": "P2",
+      "title": "Diamond's 'unknown' address is already in the portfolio in text form",
+      "detail": "EJ-001 item 1a and EJ-130 item 4 both carry '[TBD -- confirm last known CA business address from original POS-010, served 3/11/26]'. The POS-010s are scanned images, but the Diamond SER-001 executed Aug. 3, 2026 gives 1201 S Soderquist Road, Turlock, CA 95380 -- the same address as Alpine.",
+      "action": "Populate both forms; confirm against the scanned POS-010 and the Secretary of State record before the abstract is recorded.",
+      "documents": [
+        "/documents/matter-12/1094 EJ001 Abstract of Judgment (Draft, Pending Judgment Entry).pdf",
+        "/documents/matter-12/1094 EJ130 Writ of Execution (Draft, Pending Judgment Entry).pdf",
+        "/documents/matter-12/SER-001 Request for Sheriff to Serve Court Papers - Diamond Truck Sales (Stanislaus, Aug 3 2026).pdf"
+      ]
+    },
+    {
+      "id": "M12-PJ-07",
+      "priority": "P2",
+      "title": "Four AT-167/EJ-152 Memoranda of Garnishee are misclassified as creditor drafts",
+      "detail": "AT-167/EJ-152 is completed under penalty of perjury by the garnishee bank and returned to the levying officer within 10 days of service of the writ and notice of levy (CCP 701.030). It is not a creditor filing.",
+      "action": "Relabel as garnishee reference copies, matching the EJ-160 convention already used in this folder. Watch for non-return after a levy -- 701.030 makes a non-responding garnishee liable for the costs of obtaining the information.",
+      "documents": [
+        "/documents/matter-12/1094 AT167-EJ152 Memorandum of Garnishee - Diamond Truck Sales - Bank of Stockton (Draft, Pending Levy).pdf",
+        "/documents/matter-12/1094 AT167-EJ152 Memorandum of Garnishee - Diamond Truck Sales - JPMorgan Chase (Draft, Pending Levy).pdf",
+        "/documents/matter-12/1094 AT167-EJ152 Memorandum of Garnishee - Alpine Truck Sales - Bank of Stockton (Draft, Pending Levy).pdf",
+        "/documents/matter-12/1094 AT167-EJ152 Memorandum of Garnishee - Alpine Truck Sales - JPMorgan Chase (Draft, Pending Levy).pdf"
+      ]
+    },
+    {
+      "id": "M12-PJ-08",
+      "priority": "P2",
+      "title": "The manager served for both corporations appears under four spellings",
+      "detail": "'Mustaqem Usmani' (SER-001, both defendants, Aug. 3 2026); 'Mustagem Usmani' (EJ-001 draft item 16); 'Osmani family ownership' (CM-110 filed Jul. 20 2026). matters/12.json already flags Osmani vs. Usmani as open diligence.",
+      "risk": "Name accuracy governs whether a JL-1 is found by a searcher, whether an examination order binds the person served, and whether a recorded abstract attaches to the right owner's property.",
+      "action": "Pin the spelling from the Secretary of State corporate record and the returned POS-010 before lodging the abstract, the JL-1, or an examination order."
+    },
+    {
+      "id": "M12-PJ-09",
+      "priority": "P2",
+      "title": "No CIV-130 Notice of Entry of Judgment, and the plaintiff cannot serve it himself",
+      "detail": "CCP 664.5(a) applies to contested actions where the prevailing party is represented by counsel; neither defendant appeared and Plaintiff is in pro per, so there is likely no statutory duty. Serving it anyway fixes the CRC 8.104 date and documents the debtors' notice before a levy. The form's proof of service must be executed by a non-party at least 18 years old.",
+      "action": "Prepare CIV-130 and line up a third-party mailer.",
+      "missing": true
+    },
+    {
+      "id": "M12-PJ-10",
+      "priority": "P2",
+      "title": "Fee waiver becomes a lien on any recovery of $10,000 or more",
+      "detail": "FW-003 was granted 02/13/2026. The CIV-100's own Declaration Concerning Waived Court Fees states that where a party whose fees were waived recovers $10,000 or more, the court has a lien on the judgment for the waived fees (Gov. Code 68637). The $53,671.20 request clears that threshold several times over.",
+      "action": "Complete the waived-fee declaration on the hand-up packets rather than leaving the court to raise it."
+    },
+    {
+      "id": "M12-PJ-11",
+      "priority": "P3",
+      "title": "EJ-130 Attachment 4 referenced but never prepared",
+      "detail": "The writ draft reads '... -- see Attachment 4 (to be prepared)'.",
+      "missing": true
+    },
+    {
+      "id": "M12-PJ-12",
+      "priority": "P3",
+      "title": "No EJ-100 Acknowledgment of Satisfaction staged",
+      "detail": "Required immediately once the money judgment is satisfied (CCP 724.030). On written demand, failure to comply within 15 days exposes the creditor to actual damages, a $100 forfeiture, and the debtor's attorney fees (CCP 724.050).",
+      "missing": true
+    },
+    {
+      "id": "M12-PJ-13",
+      "priority": "P3",
+      "title": "No real-property search for either defendant",
+      "detail": "Recording -- not issuance -- of the abstract is what creates a real-property lien, so the recording county cannot be chosen without a search. Relatedly, the Jul. 29 2026 DFPI download shows no central-service location for either JPMorgan Chase or Bank of Stockton, so a bank levy must be served at a branch, which makes the writ-county question in M12-PJ-03 decisive."
+    }
+  ],
+  "inventory": [
+    { "form": "CIV-100 §1", "document": "Aug 12 hand-up packets (Diamond, Alpine)", "fieldsFilled": null, "fieldsTotal": null, "state": "ready-to-hand-up", "note": "Twice rejected on service grounds" },
+    { "form": "JUD-100", "document": "In each packet; standalone 'ready to submit' copy", "fieldsFilled": null, "fieldsTotal": null, "state": "correctly-blank", "note": "Money items completed and signed by the court" },
+    { "form": "CIV-110", "document": "Dismissal of Does 1-20 (Executed Aug 12 2026)", "fieldsFilled": null, "fieldsTotal": null, "state": "ready", "note": "Needed so the judgment disposes of all parties" },
+    { "form": "EJ-001", "document": "Abstract of Judgment (Draft, Pending Judgment Entry)", "fieldsFilled": 29, "fieldsTotal": 145, "state": "blocked", "blockers": ["M12-PJ-06", "M12-PJ-08"], "note": "Item 6 total and item 8a entry date blank. Joint and several -- item 6 takes $53,671.20, not the sum." },
+    { "form": "EJ-130", "document": "Writ of Execution (Draft, Pending Judgment Entry)", "fieldsFilled": 36, "fieldsTotal": 180, "state": "defective", "blockers": ["M12-PJ-03", "M12-PJ-06", "M12-PJ-11"] },
+    { "form": "MC-012", "document": "Memorandum of Costs After Judgment (Draft)", "fieldsFilled": 18, "fieldsTotal": 93, "state": "correctly-premature", "note": "Caption only; costs after judgment accrue post-entry and must be reported within 2 years each (CCP 685.070)" },
+    { "form": "AT-138/EJ-125", "document": "Application and Order for Appearance and Examination (Draft)", "fieldsFilled": 29, "fieldsTotal": 103, "state": "defective", "blockers": ["M12-PJ-05"] },
+    { "form": "AT-167/EJ-152", "document": "Memorandum of Garnishee x 4 (Draft, Pending Levy)", "fieldsFilled": null, "fieldsTotal": null, "state": "misclassified", "blockers": ["M12-PJ-07"] },
+    { "form": "EJ-160", "document": "Claim of Exemption (Blank Form, Debtor-Filed Reference Copy)", "fieldsFilled": null, "fieldsTotal": null, "state": "correct-as-is", "note": "Debtor-filed; nothing to do" },
+    { "form": "MC-010", "document": null, "state": "deliberately-omitted", "note": "Costs of suit waived on CIV-100 item 7f per the FW-003 fee waiver. Not a gap. Does not waive post-judgment enforcement costs, which run through MC-012." },
+    { "form": "JL-1", "document": null, "state": "missing", "blockers": ["M12-PJ-04"] },
+    { "form": "CIV-130", "document": null, "state": "missing", "blockers": ["M12-PJ-09"] },
+    { "form": "EJ-100", "document": null, "state": "missing", "blockers": ["M12-PJ-12"] },
+    { "form": "EJ-130 Attachment 4", "document": null, "state": "missing", "blockers": ["M12-PJ-11"] }
+  ],
+  "clocksStartingAtEntry": [
+    { "clock": "Postjudgment interest, 10% per annum", "authority": "CCP 685.010(a)(1)", "note": "The reduced 5% rate requires a natural-person debtor; both debtors are corporations and the claim is fraud-based, so 10% applies." },
+    { "clock": "JL-1 must be received by the Secretary of State within 10 days of the notice date", "authority": "CCP 697.510", "note": "Lien then runs five years, continuable." },
+    { "clock": "Costs after judgment reported within 2 years of being incurred", "authority": "CCP 685.070" },
+    { "clock": "Examination order personally served at least 30 days before the hearing", "authority": "CCP 708.110" },
+    { "clock": "Relief from default: 6 months; CCP 473.5 relief up to 2 years", "authority": "CCP 473(b), 473.5", "note": "Enforcement inside this window carries set-aside risk." }
+  ],
+  "compensatoryOnlyConsequence": {
+    "election": "PR #500 omitted punitive damages; $53,671.20 compensatory per defendant, joint and several.",
+    "consequence": "Retires the Aug. 3, 2026 CCP 425.115 notices ($25,000 per defendant). A default judgment is final, and punitive damages cannot be sought on the same claims afterward.",
+    "posture": "Flagged as a consequence of a decision already made, not a recommendation to revisit it."
+  },
+  "punchList": [
+    { "step": 1, "preJudgment": true, "action": "Correct the default-entry representation from the Jul. 20 CM-110 at or before the Aug. 12 hearing", "finding": "M12-PJ-01" },
+    { "step": 2, "preJudgment": true, "action": "Resolve the clerk's service objection as to Alpine ('not served as sued') and as to Diamond on the amended pleading", "finding": "M12-PJ-02" },
+    { "step": 3, "action": "Get default entered, then judgment entered; obtain a conformed JUD-100 and the exact entry date" },
+    { "step": 4, "action": "Serve CIV-130 through a non-party", "finding": "M12-PJ-09" },
+    { "step": 5, "action": "Complete the Gov. Code 68637 waived-fee declaration", "finding": "M12-PJ-10" },
+    { "step": 6, "action": "Finish EJ-001 (Diamond address, item 6 = $53,671.20, item 8a = entry date, manager name), apply to the clerk for issuance, record where real property is found", "finding": "M12-PJ-06" },
+    { "step": 7, "action": "File JL-1 with the Secretary of State inside the 10-day receipt window", "finding": "M12-PJ-04" },
+    { "step": 8, "action": "Issue EJ-130 for Stanislaus County with Attachment 4 prepared", "finding": "M12-PJ-03" },
+    { "step": 9, "action": "Prepare a separate AT-138/EJ-125 per debtor, obtain hearing dates, arrange Stanislaus Sheriff or process-server personal service 30+ days out", "finding": "M12-PJ-05" },
+    { "step": 10, "action": "Relabel the four AT-167/EJ-152 drafts as garnishee reference copies", "finding": "M12-PJ-07" },
+    { "step": 11, "action": "Log enforcement costs to MC-012 as incurred, within two years each" },
+    { "step": 12, "action": "Stage EJ-100 against satisfaction", "finding": "M12-PJ-12" }
+  ]
+}
