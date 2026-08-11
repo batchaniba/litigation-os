@@ -95,12 +95,14 @@ def build():
         ("Stipulation filed Apr. 14, 2026", False, False),
     ]
     d.draw_caption_block(left, right, caption_size=10, tight_lh=11, boxed=True)
+    d.blank_line()
 
     d.write_wrapped(
         "TO THE CLERK OF THE COURT, ALL PARTIES, AND THEIR COUNSEL OF RECORD:",
         bold=True,
         first_indent=0,
     )
+    d.blank_line()
 
     d.write_wrapped(
         "PLEASE TAKE NOTICE that, pursuant to Code of Civil Procedure section 581, "
@@ -110,6 +112,7 @@ def build():
         "MEZA-GONZALEZ; JOSE MELANO; STATE OF CALIFORNIA / CALIFORNIA HIGHWAY PATROL; and "
         "DOES 1 through 10."
     )
+    d.blank_line()
 
     d.write_wrapped(
         "Plaintiff is entitled to this dismissal without leave of court because no "
@@ -123,6 +126,7 @@ def build():
         "Office on April 2, 2026 was never briefed and its filing was superseded by the "
         "April 14, 2026 stipulated stay, before any responsive pleading was filed."
     )
+    d.blank_line()
 
     d.write_wrapped(
         "On April 14, 2026, the parties stipulated, and the Court ordered, that this "
@@ -136,6 +140,7 @@ def build():
         "prejudice, and this Request is filed notwithstanding the stay because it "
         "terminates, rather than advances, the stayed proceedings."
     )
+    d.blank_line()
 
     d.write_wrapped(
         "Plaintiff further gives notice that entry of this dismissal will moot Plaintiff's "
