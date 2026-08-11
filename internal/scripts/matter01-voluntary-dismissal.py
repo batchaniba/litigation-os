@@ -133,7 +133,7 @@ def build():
     d.blank_line()
     d.write_line(f"Dated: {EXECUTION_DATE}")
     d.write_line("Respectfully submitted,", italic=True)
-    d.write_line("/s/ Brendan Ngehsi Newanforbi", bold=True)
+    d.write_line("___________________________________")
     d.write_line("BRENDAN NGEHSI NEWANFORBI", bold=True)
     d.write_line("Plaintiff, In Pro Per")
     d.write_line("1455 Cat Tail Drive, Stockton, CA 95204")
@@ -164,7 +164,7 @@ def build():
     d.write_line("cc: Adriana Zagal, Legal Secretary — Adriana.Zagal@doj.ca.gov")
     d.blank_line()
     d.write_line(f"Executed on {EXECUTION_DATE}, at Stockton, California.")
-    d.write_line("/s/ Brendan Ngehsi Newanforbi", bold=True)
+    d.write_line("___________________________________")
     d.write_line("BRENDAN NGEHSI NEWANFORBI", bold=True)
     d.write_line("Plaintiff, In Pro Per")
 
