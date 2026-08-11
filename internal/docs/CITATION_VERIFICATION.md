@@ -1,6 +1,6 @@
 # Citation Verification Ledger
 
-Generated 2026-08-10 by `verify-citations.py`. Joins the PR #490 citation index to the July / Matter-28 citation audit, then overlays Round 4+ verification results (WebSearch + CourtListener/CAP multisource confirmation).
+Generated 2026-08-11 by `verify-citations.py`. Joins the PR #490 citation index to the July / Matter-28 citation audit, then overlays Round 4+ verification results (WebSearch + CourtListener/CAP multisource confirmation).
 
 ## Why this exists
 
@@ -10,13 +10,13 @@ The campaign is entering a phase where claims are cognizable and motions to dism
 
 | Status | Count |
 |---|---|
-| UNVERIFIED | 415 |
-| VERIFIED | 285 |
+| UNVERIFIED | 419 |
+| VERIFIED | 287 |
 | MISCITED | 29 |
 | MISCHARACTERIZED | 6 |
 | NOT_FOUND | 6 |
 
-**Plaintiff-only + still UNVERIFIED (P0 queue): 0**  
+**Plaintiff-only + still UNVERIFIED (P0 queue): 4**  
 **Plaintiff-only + bad status (P1): 27**
 
 ## Method controls
@@ -81,7 +81,7 @@ _Matter 28 Round 3: table page hosts unrelated dispositions._
 - M28 `/documents/matter-28/research/Research Note - Strongest Clearly Established Right to Invoke.pdf` p.16 — other
 - M28 `/documents/matter-28/research/Research Note - Strongest Clearly Established Right to Invoke.pdf` p.16 — other
 
-### Burrell v. Jackson, 2003 WL 23545858 — 14 hits (10 in plaintiff filings)
+### Burrell v. Jackson, 2003 WL 23545858 — 17 hits (13 in plaintiff filings)
 
 _Round 4: no matching absolute-immunity hearing-officer decision at that WL number._
 
@@ -89,15 +89,15 @@ _Round 4: no matching absolute-immunity hearing-officer decision at that WL numb
 - M7 `/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf` p.15 — plaintiff_filing
 - M33 `/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal 3 Operative.pdf` p.43 — plaintiff_filing
 - M33 `/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal.pdf` p.43 — plaintiff_filing
+- M33 `/documents/matter-33/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf` p.43 — plaintiff_filing
 - M7 `/documents/matter-33/opinions/Newanforbi v Candelaria - USDC EDCal - FR Recommending Dismissal Jun 15 2026.pdf` p.6 — court_order
 - M7 `/documents/matter-33/opinions/Newanforbi v Candelaria - USDC EDCal - FR Recommending Dismissal Jun 15 2026.pdf` p.10 — court_order
 - M7 `/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf` p.4 — plaintiff_filing
 - M33 `/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal 3 Operative.pdf` p.43 — plaintiff_filing
 - M33 `/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal.pdf` p.43 — plaintiff_filing
+- M33 `/documents/matter-33/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf` p.43 — plaintiff_filing
 - M7 `/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf` p.4 — plaintiff_filing
-- M33 `/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal 3 Operative.pdf` p.43 — plaintiff_filing
-- M33 `/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal.pdf` p.43 — plaintiff_filing
-- …and 2 more
+- …and 5 more
 
 ## P1 — Plaintiff-only authorities with bad audit/round status
 
@@ -112,7 +112,7 @@ _Round 4: no matching absolute-immunity hearing-officer decision at that WL numb
 | 6 | MISCITED | People v. Superior Court, 25 Cal. 4th 703 (2001) | 9 |
 | 6 | MISCHARACTERIZED | Pomona Police Officers’ Ass’n v. City of Pomona, 58 Cal.App. 4th 578 ( | 9 |
 | 5 | MISCITED | Rodriguez v. United States, 575 U.S. 348 (2015) | 1, 32 |
-| 3 | NOT_FOUND | Burrell v. Jackson, 2003 WL 23545858 | 7, 32, 33 |
+| 4 | NOT_FOUND | Burrell v. Jackson, 2003 WL 23545858 | 7, 32, 33 |
 | 3 | MISCITED | County of Contra Costa v. State of California, 177 Cal.App. 3d 62 (198 | 9 |
 | 3 | MISCITED | Home v. Dep’t of Health Care Services, 204 Cal.App. 4th 676 (2012) | 9 |
 | 3 | MISCHARACTERIZED | See California Highway Patrol v. Superior Court, 158 Cal.App. 4th 726  | 9 |
@@ -137,12 +137,16 @@ Asserted only in Plaintiff's filings; no court order or opposing brief in the co
 
 | Uses | Authority | Matters | Sample page |
 |---|---|---|---|
+| 3 | Califomia DUI Lawyers Ass'n v. DMV, 77 Cal.App. 5th 517 (2022) | 33 | p.4 |
+| 1 | ICnudsen v. DMV, 101 Cal.App. 5th 186 (2024) | 33 | p.23 |
+| 1 | Kjiudsen v. DMV, 101 Cal.App. 5th 186 (2024) | 33 | p.32 |
+| 1 | Swift v. Califomia, 384 F. 3d 1184 | 33 | p.42 |
 
-_0 total in JSON `priorityQueue`._
+_4 total in JSON `priorityQueue`._
 
 ## Round overlay
 
-Loaded round: **2026-08-09 Round 4 — portfolio P0 (batches A–D; LACW WL correction); Round 5 multisource (CourtListener + CAP); Round 5b Matter 28 full funnel** — 227 results
+Loaded round: **2026-08-09 Round 4 — portfolio P0 (batches A–D; LACW WL correction); Round 5 multisource (CourtListener + CAP); Round 5b Matter 28 full funnel; Round 6 spot-check of the Matter 33 conformed complaint (3:26-cv-08272-LJC, Dkt. 1) page-43 immunity sentence** — 228 results
 
 Method note: Round 4: WebSearch after Richardson(+) / Leman(−) controls. Round 5: CourtListener /api/rest/v4/search/ + CAP static.case.law for controls/high-risk. Round 5b: all Matter 28 indexed authorities through lookup-citations.py --matter 28 (→ citation_lookup_matter28.json). Justia Cloudflare-blocked; Scholar unreliable; api.case.law JSON and CL citation-lookup need auth. Existence FOUND does not clear prior MISCHARACTERIZED/MISCITED proposition problems. Table-page F.3d pins can host multiple dispositions — do not treat first CL hit as unique.
 

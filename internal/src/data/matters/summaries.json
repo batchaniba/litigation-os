@@ -176,7 +176,7 @@
       "Count III — 42 U.S.C. § 1983 Injunctive Relief (Ex parte Young): (a) vacate Feb 11 2025 APS Decision Case 34739340; (b) immediate CDL reinstatement free of suspension penalties; (c) prohibit $125 reissue fee and SR-22 requirement; (d) require neutral decisionmaker for any new hearing (against Gordon, official capacity)"
     ],
     "archived": false,
-    "note": "N.D. Cal. counterpart drafted Aug. 7, 2026 under the Ngwa Nforbi caption as Matter 33 (Ngwa Nforbi v. Candelaria & Gordon) — same two defendants, same Feb. 11, 2025 APS decision, not yet filed. Do not plead this matter's damages a second time under Matter 33 without reconciling the totals.",
+    "note": "N.D. Cal. counterpart now docketed as Matter 33 (Nforbi v. Candelaria et al., No. 3:26-cv-08272-LJC, docketed Aug. 10, 2026 before Magistrate Judge Lisa J. Cisneros) — same two defendants, same Feb. 11, 2025 APS decision. The Matter 33 complaint represents to the N.D. Cal. that this action was voluntarily dismissed without prejudice; confirm that against this docket. Do not plead this matter's damages a second time under Matter 33 without reconciling the totals.",
     "evidenceCount": 17,
     "documentCount": 19
   },
@@ -925,21 +925,21 @@
   },
   {
     "number": 33,
-    "caption": "Ngwa Nforbi v. Candelaria, et al",
-    "case_no": "TBD (filed N.D. Cal. Aug. 7, 2026, 4:05 p.m. PT — case number assignment pending; prior E.D. Cal. Matter 7: 2:26-cv-00983-DC-CSK)",
-    "court": "USDC N.D. Cal. (filed Aug. 7, 2026, 4:05 p.m. PT; companion to Matter 7 E.D. Cal. 2:26-cv-00983 — voluntarily dismissed w/o prejudice per operative complaint)",
-    "claims": "42 U.S.C. § 1983 — APS structural bias / fair hearing / clear absence of jurisdiction; declaratory and injunctive relief (vacatur of APS 34739340) — N.D. Cal. operative complaint dated Aug. 7, 2026; also Candelaria / DMV APS PDF home for Matters 7/8",
-    "status_label": "Filed N.D. Cal. Aug. 7, 2026 @ 4:05 p.m.",
+    "caption": "Nforbi v. Candelaria et al.",
+    "case_no": "3:26-cv-08272-LJC",
+    "court": "USDC N.D. Cal. (San Francisco Div.)",
+    "claims": "42 U.S.C. § 1983 — APS structural bias / fair hearing / clear absence of jurisdiction; declaratory and injunctive relief (vacatur of APS 34739340) — Dkt. 1 complaint, docketed Aug. 10, 2026; also Candelaria / DMV APS PDF home for Matters 7/8",
+    "status_label": "Service due Nov. 8, 2026; CMC Nov. 12",
     "lifecycle": "active",
     "proceeding": "federal_civil",
-    "phase": "pleadings",
-    "note": "N.D. Cal. § 1983 refile filed under this caption (ndcal/) on August 7, 2026 at 4:05 p.m. PT, after alleged voluntary dismissal of Matter 7 E.D. Cal. Also owns the Candelaria/DMV APS document set; Matters 7 and 8 remain historical docket records and cross-reference these paths.",
+    "phase": "service",
+    "note": "N.D. Cal. § 1983 refile docketed Aug. 10, 2026 as No. 3:26-cv-08272-LJC (ndcal/), after alleged voluntary dismissal of Matter 7 E.D. Cal. Also owns the Candelaria/DMV APS document set; Matters 7 and 8 remain historical docket records and cross-reference these paths.",
     "badge": "ACTIVE",
-    "filed": "August 7, 2026, 4:05 p.m. PT",
-    "judge": "TBD",
+    "filed": "August 10, 2026 (docketed; complaint signed Aug. 7, 2026)",
+    "judge": "Hon. Lisa J. Cisneros (Magistrate Judge)",
     "cluster": 1,
     "type": "Federal",
-    "defendants": "Diana Candelaria (DMV Hearing Officer), individually; Steve Gordon, Director, California DMV, in his official capacity; and DOES 1–10 — N.D. Cal. operative complaint (Aug. 7, 2026). Matter 7 (E.D. Cal.) and Matter 8 (state mandate, abandoned) are the prior Candelaria tracks.",
+    "defendants": "Diana Candelaria (DMV Driver Safety Hearing Officer), individually; Steve Gordon, Director, California DMV, in his official capacity; and DOES 1–10 — Dkt. 1 complaint. Matter 7 (E.D. Cal.) and Matter 8 (state mandate, abandoned) are the prior Candelaria tracks.",
     "causes": [
       "42 U.S.C. § 1983 — Structural bias / dual-role APS adjudicator (procedural due process)",
       "42 U.S.C. § 1983 — Fair hearing violations (procedural due process)",
@@ -948,7 +948,7 @@
       "Injunctive / Ex parte Young relief vs. DMV Director Gordon (official capacity)"
     ],
     "archived": false,
-    "evidenceCount": 11,
-    "documentCount": 34
+    "evidenceCount": 15,
+    "documentCount": 38
   }
 ]

@@ -1,5 +1,5 @@
 {
-  "round": "2026-08-09 Round 4 \u2014 portfolio P0 (batches A\u2013D; LACW WL correction); Round 5 multisource (CourtListener + CAP); Round 5b Matter 28 full funnel",
+  "round": "2026-08-09 Round 4 \u2014 portfolio P0 (batches A\u2013D; LACW WL correction); Round 5 multisource (CourtListener + CAP); Round 5b Matter 28 full funnel; Round 6 spot-check of the Matter 33 conformed complaint (3:26-cv-08272-LJC, Dkt. 1) page-43 immunity sentence",
   "method": "Round 4: WebSearch after Richardson(+) / Leman(\u2212) controls. Round 5: CourtListener /api/rest/v4/search/ + CAP static.case.law for controls/high-risk. Round 5b: all Matter 28 indexed authorities through lookup-citations.py --matter 28 (\u2192 citation_lookup_matter28.json). Justia Cloudflare-blocked; Scholar unreliable; api.case.law JSON and CL citation-lookup need auth. Existence FOUND does not clear prior MISCHARACTERIZED/MISCITED proposition problems. Table-page F.3d pins can host multiple dispositions \u2014 do not treat first CL hit as unique.",
   "controls": {
     "positive": {
@@ -20,6 +20,15 @@
     }
   },
   "results": [
+    {
+      "citation": "Baker v. Bzydra, 2019 WL 6619348",
+      "status": "VERIFIED",
+      "notes": "Real and correctly characterized, but the party name is misspelled in our filing: the decision is Baker v. Bzdyra, No. 3:18-cv-01792, 2019 WL 6619348 (D. Conn. Dec. 5, 2019) — defendant Michael Bzdyra, Connecticut DMV Commissioner. Holds DMV hearing officer James Quinn absolutely immune for acts within his hearing-officer capacity even if taken in bad faith, and the DMV presenter/prosecutor immune under Butz v. Economou. That supports the Matter 33 complaint's use of it at Dkt. 1 p.43 as adverse out-of-circuit authority to be distinguished. Other courts also render the name 'Bzydra' when citing it (Reus v. Arthur (N.D.N.Y. 2020); Cerame v. Lamont (D. Conn. 2022)), so the spelling is not itself a fabrication signal. Contrast the companion cite in the same sentence, Burrell v. Jackson, 2003 WL 23545858, which remains NOT_FOUND.",
+      "sources": [
+        "https://ecf.ctd.uscourts.gov/cgi-bin/show_public_doc?2018cv1792-29=",
+        "https://storage.courtlistener.com/recap/gov.uscourts.ctd.146729/gov.uscourts.ctd.146729.23.0.pdf"
+      ]
+    },
     {
       "citation": "Mercer v. DMV, 53 Cal. 3d 753 (1991)",
       "status": "VERIFIED",

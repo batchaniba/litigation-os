@@ -10,21 +10,17 @@ across 24 matters and found two that appear fabricated. That audit sampled motio
 practice and identified documents by filename. This one is exhaustive and records page
 numbers, so a citation in a draft can be traced to a source page rather than trusted.
 
-**Verification layer:** `CITATION_VERIFICATION.md` joins this index to the audit + Round
-overlays and gates CI. Existence probes: `npm run citations:lookup:matter -- --matter N`
-(CourtListener + CAP). See README → Citation Verification.
-
 ## Corpus
 
 | | |
 |---|---|
-| PDFs scanned | 571 |
-| Pages | 5,890 |
-| Readable | 495 |
+| PDFs scanned | 580 |
+| Pages | 6,077 |
+| Readable | 504 |
 | **No text layer (not searched)** | **74** |
 | Unreadable | 2 |
-| Distinct citations | 2,862 |
-| Total occurrences | 9,852 |
+| Distinct citations | 2,885 |
+| Total occurrences | 10,254 |
 
 A PDF with no text layer yields no citations. That is **not** the same as containing
 none — those documents are unsearched until OCR'd.
@@ -33,15 +29,15 @@ none — those documents are unsearched until OCR'd.
 
 | Kind | Distinct |
 |---|---|
-| `case_name` | 806 |
-| `authority` | 741 |
-| `case_reporter` | 628 |
+| `case_name` | 814 |
+| `authority` | 747 |
+| `case_reporter` | 629 |
 | `statute_state` | 233 |
-| `section_shorthand` | 144 |
-| `rule_local` | 86 |
+| `section_shorthand` | 146 |
+| `rule_local` | 89 |
 | `rule_federal` | 71 |
+| `statute_federal` | 45 |
 | `rule_state` | 45 |
-| `statute_federal` | 42 |
 | `case_westlaw` | 39 |
 | `regulation_state` | 12 |
 | `regulation_federal` | 8 |
@@ -69,47 +65,53 @@ folder-derived attribution reported zero for Matters 1, 2, 7 and 20.
 | 25 | Newanforbi v. Federal Express Corporation | 34 |
 | 26 | Newanforbi v. United Parcel Service, Inc. | 35 |
 | 27 | Newanforbi v. Randstad, et al. | 49 |
-| 28 | Newanforbi v. Shannon Smith, LCSW, CEO, et a | 207 |
+| 28 | Newanforbi v. Shannon Smith, LCSW, CEO, et a | 211 |
 | 29 | Newanforbi v. Amazon.com Services, LLC | 641 |
 | 30 | Newanforbi v. Moua, et al. | 100 |
 | 31 | Newanforbi v. First Advantage LLC | 0 |
 | 32 | Ngwa Nforbi v. Meza-Gonzalez, et al | 700 |
-| 33 | Ngwa Nforbi v. Candelaria, et al | 379 |
+| 33 | Nforbi v. Candelaria et al. | 400 |
 
 ## Highest-exposure citations
 
-536 of 741 paired authorities do not appear in the July audit. Of those,
-**132 are asserted only in Plaintiff's own filings**, with no court order or
+542 of 747 paired authorities do not appear in the July audit. Of those,
+**137 are asserted only in Plaintiff's own filings**, with no court order or
 opposing brief in the corpus citing them back. Unverified *and* uncorroborated is where a
 fabricated or miscited authority survives undetected — the queue worth working first.
 
 | Uses | Authority | Matters |
 |---|---|---|
-| 25 | Mercer v. DMV, 53 Cal. 3d 753 (1991) | 7, 8, 32, 33 |
+| 30 | Mercer v. DMV, 53 Cal. 3d 753 (1991) | 7, 8, 32, 33 |
+| 9 | Vlandis v. Kline, 412 U.S. 441 (1973) | 33 |
 | 6 | Devereaux v. Abbey, 263 F. 3d 1070 | 30, 32 |
 | 6 | Home v. Dep't of Health Care Services, 204 Cal.App. 4th 676 (2012) | 9 |
 | 6 | In re Hudson, 1 Cal.App. 4th 1 (2006) | 5, 15, 19 |
+| 6 | In re Murchison, 349 U.S. 133 (1955) | 33 |
 | 6 | In re Muszalski, 52 Cal.App. 3d 500 (1975) | 5, 15, 19 |
+| 6 | Music v. Dep't of Motor Vehicles, 221 Cal.App. 3d 841 (1990) | 33 |
 | 6 | See Tameny v. Atlantic Richfield Co, 27 Cal. 3d 167 (1980) | 25, 26, 27 |
-| 6 | Vlandis v. Kline, 412 U.S. 441 (1973) | 33 |
 | 5 | Chism v. Washington State, 661 F. 3d 380 | 32 |
 | 5 | Payton v. New York, 445 U.S. 573 (1980) | 32 |
+| 4 | Burrell v. Jackson, 2003 WL 23545858 | 7, 32, 33 |
 | 4 | Collins v. Virginia, 584 U.S. 586 (2018) | 32 |
 | 4 | Costanich v. Dep't of Social, 627 F. 3d 1101 | 32 |
 | 4 | Franks v. Delaware, 438 U.S. 154 (1978) | 32 |
 | 4 | Galbraith v. County of Santa Clara, 307 F. 3d 1119 | 32 |
-| 4 | In re Murchison, 349 U.S. 133 (1955) | 33 |
-| 4 | Music v. Dep't of Motor Vehicles, 221 Cal.App. 3d 841 (1990) | 33 |
 | 4 | See Hill v. National Collegiate Athletic Assn, 7 Cal. 4th 1 (1994) | 5, 27 |
 | 3 | AIDS Healthcare Foundation v. Los Angeles County Dept, 197 Cal.App. 4t | 9 |
+| 3 | Armondo v. Dep't of Motor Vehicles, 15 Cal.App. 4th 1174 (1993) | 33 |
+| 3 | Ashelman v. Pope, 793 F. 2d 1072 | 33 |
 | 3 | Ballentine v. Tucker, 28 F. 4th 54 | 32 |
+| 3 | Bd. of Educ. v. Loudermill, 470 U.S. 532 (1985) | 33 |
 | 3 | Beck v. Ohio, 379 U.S. 89 (1964) | 32 |
-| 3 | Burrell v. Jackson, 2003 WL 23545858 | 7, 32, 33 |
+| 3 | Califomia DUI Lawyers Ass'n v. DMV, 77 Cal.App. 5th 517 (2022) | 33 |
+| 3 | Carey v. Piphus, 435 U.S. 247 (1978) | 33 |
 | 3 | City of Moorpark v. Superior Court, 18 Cal. 4th 1143 (1998) | 25, 26 |
 | 3 | Due Process Clause. Greenholtz v. Inmates of Nebraska Penal, 442 U.S.  | 9 |
 | 3 | Gantt v. Sentry Insurance, 1 Cal. 4th 1083 (1992) | 27 |
 | 3 | Home v. Dep’t of Health Care Services, 204 Cal.App. 4th 676 (2012) | 9 |
 | 3 | In re Stevens, 119 Cal.App. 4th 1228 (2004) | 5, 15 |
+| 3 | Miller v. Gammie, 335 F. 3d 889 | 33 |
 | 3 | Scenic Community v. County of L.A, 11 Cal. 3d 506 (1974) | 9 |
 | 3 | See California Highway Patrol v. Superior Court, 158 Cal.App. 4th 726  | 9 |
 | 3 | See JKH Enterprises, Inc. v. Dept. of Industrial Relations, 142 Cal.Ap | 9 |
@@ -118,15 +120,9 @@ fabricated or miscited authority survives undetected — the queue worth working
 | 3 | Thornton v. Brown, 757 F. 3d 834 | 30 |
 | 3 | Under the Mathews v. Eldridge, 424 U.S. 319 (1976) | 24, 32 |
 | 3 | United States Supreme Court Greenholtz v. Inmates of Nebraska Penal, 4 | 9 |
-| 2 | Armondo v. Dep't of Motor Vehicles, 15 Cal.App. 4th 1174 (1993) | 33 |
-| 2 | Ashelman v. Pope, 793 F. 2d 1072 | 33 |
-| 2 | Bd. of Educ. v. Loudermill, 470 U.S. 532 (1985) | 33 |
-| 2 | Carey v. Piphus, 435 U.S. 247 (1978) | 33 |
 | 2 | Cervantes v. City of San Diego, 5 F. 3d 1273 | 29 |
-| 2 | Daniels-Hall v. Nat’l Educ. Ass’n, 629 F. 3d 992 | 29 |
-| 2 | Epstein v. Washington Energy Co, 83 F. 3d 1136 | 29 |
 
-_132 total; full list in the JSON._
+_137 total; full list in the JSON._
 
 ## Known-bad citations from the July audit — current locations
 

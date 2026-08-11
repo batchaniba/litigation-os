@@ -172,7 +172,7 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | 30 | Newanforbi v. Moua, et al. | TBD | USDC N.D. Cal. | Federal | Pre-filing — GCA claim pending; Moua-only complaint ready |
 | 31 | Newanforbi v. First Advantage LLC | TBD | San Joaquin Sup. Ct. (anticipated) | State | Pre-filing |
 | 32 | Ngwa Nforbi v. Meza-Gonzalez, et al | TBD (filed N.D. Cal. Aug. 7, 2026, 4:05 p.m. PT — case number assignment pending) | USDC N.D. Cal. (filed Aug. 7, 2026, 4:05 p.m. PT; related Serrato 4:26-cv-05953-ASK) | Federal | Filed N.D. Cal. Aug. 7, 2026 @ 4:05 p.m. |
-| 33 | Ngwa Nforbi v. Candelaria, et al | TBD (filed N.D. Cal. Aug. 7, 2026, 4:05 p.m. PT — case number assignment pending; prior E.D. Cal. Matter 7: 2:26-cv-00983-DC-CSK) | USDC N.D. Cal. (filed Aug. 7, 2026, 4:05 p.m. PT; companion to Matter 7 E.D. Cal. 2:26-cv-00983 — voluntarily dismissed w/o prejudice per operative complaint) | Federal | Filed N.D. Cal. Aug. 7, 2026 @ 4:05 p.m. |
+| 33 | Nforbi v. Candelaria et al. | 3:26-cv-08272-LJC | USDC N.D. Cal. (San Francisco Div.) | Federal | Service due Nov. 8, 2026; CMC Nov. 12 |
 <!-- PORTFOLIO:ACTIVE_MATTERS:END -->
 
 *Settled matters stay in the table above until dismissal is entered — a settlement resolves the merits, but the matter is still open on the docket. Their Status column reads "Settled" (see the Overview count above for which ones).*
@@ -237,9 +237,13 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | Sep. 26, 2026 | 29 | Service/proof-of-service deadline (computed) — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554); 60 days from the Jul. 28, 2026 filing (CRC 3.110(b)) |
 | Oct. 15, 2026 | 28 | Case Management Statement due — Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504), USDC N.D. Cal. |
 | Oct. 16, 2026 | 20 | Hearing on CHP demurrer and the individual respondents' joinders/demurrers to the Petition for Writ of Mandate, Newanforbi v. California Highway Patrol, et al. (Matter 20) — Dept. 25 |
+| Oct. 22, 2026 | 33 | Deadline to file ADR Certification (ADR L.R. 3) and to meet and confer regarding initial disclosures, early settlement, ADR process selection, and a discovery plan (Fed. R. Civ. P. 26(f)) — Nforbi v. |
 | Oct. 22, 2026 | 28 | Initial Case Management Conference — Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504), 1:30 PM, Hon. Lisa J. Cisneros, San Francisco (videoconference only) |
 | Oct. 23, 2026 | 20 | Continued hearing on the Dutra joinder and demurrer to the Petition for Writ of Mandate, Newanforbi v. California Highway Patrol, et al. (Matter 20) — Dept. 25 |
 | Nov. 1, 2026 | 1 | CCP §335.1 two-year statute of limitations (computed) for the Fourth Amendment stop/search/arrest claim in Matter 1 (Newanforbi v. |
+| Nov. 5, 2026 | 33 | Deadline to make initial disclosures (Fed. R. Civ. P. 26(a)(1)) and to file the Joint Case Management Statement (Standing Order for All Judges of the Northern District of California) — Nforbi v. |
+| Nov. 8, 2026 | 33 | Fed. R. Civ. P. 4(m) service deadline (computed) — 90 days from the Aug. 10, 2026 docketing of Nforbi v. Candelaria et al. (3:26-cv-08272-LJC) to serve Diana Candelaria and Steve Gordon. |
+| Nov. 12, 2026 | 33 | Initial Case Management Conference, 1:30 p.m. by Zoom (cand.uscourts.gov/ljc) before Magistrate Judge Lisa J. Cisneros — Nforbi v. Candelaria et al. (3:26-cv-08272-LJC), set by the Dkt. 4 order. |
 | Dec. 14, 2026 | 26 | Meet-and-confer deadline — Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113); 30 calendar days before Jan. 13, 2027 CMC (CRC 3.724) |
 | Dec. 15, 2026 | 25 | Meet-and-confer deadline — Newanforbi v. Federal Express Corporation (STK-CV-UWT-2026-0009118); 30 calendar days before Jan. 14, 2027 CMC (CRC 3.724) |
 | Dec. 17, 2026 | 27 | Case Management Conference, Newanforbi v. Randstad US LLC and RK Logistics Group, Inc. (Matter 27) — Hon. Karin Schwartz, Dept. 20, 3:00 p.m. |
@@ -276,7 +280,7 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | §1983 Retaliation, Due Process, Bane Act & IIED — Moua (Matter 30) | 30 | $90,000 | $225,000 | $525,000 |
 | FCRA / ICRAA Vendor Liability — First Advantage LLC (Matter 31) | 31 | $30,000 | $89,000 | $205,000 |
 | N.D. Cal. §1983 Meza-Gonzalez (Matter 32) — pleaded >$214k; $0 here to avoid double-count w/ M1/M2 | 32 | $0 | $0 | $0 |
-| N.D. Cal. §1983 Ngwa Nforbi v. Candelaria, et al (Matter 33) — pleaded >$214k; $0 here to avoid double-count w/ M7 | 33 | $0 | $0 | $0 |
+| N.D. Cal. §1983 Nforbi v. Candelaria et al. (Matter 33, 3:26-cv-08272-LJC) — pleaded >$214k; $0 here to avoid double-count w/ M7 | 33 | $0 | $0 | $0 |
 | **Portfolio Total (pre-deduplication)** | | **$1,160,672** | **$2,957,072** | **$6,579,272** |
 <!-- PORTFOLIO:DAMAGES_SUMMARY:END -->
 
@@ -396,13 +400,13 @@ Controls (reconfirm when batching): *Richardson v. McKnight*, 521 U.S. 399 must 
 <!-- PORTFOLIO:CITATION_SCOREBOARD:START -->
 | Status | Count |
 |---|---|
-| VERIFIED | 285 |
+| VERIFIED | 287 |
 | MISCITED | 29 |
 | MISCHARACTERIZED | 6 |
 | NOT_FOUND | 6 |
-| UNVERIFIED | 415 |
+| UNVERIFIED | 419 |
 
-Paired authorities: **741**. P0 (plaintiff-only UNVERIFIED): **0**. P1 (plaintiff-only bad status): **27**. Ledger date: 2026-08-10.
+Paired authorities: **747**. P0 (plaintiff-only UNVERIFIED): **4**. P1 (plaintiff-only bad status): **27**. Ledger date: 2026-08-11.
 <!-- PORTFOLIO:CITATION_SCOREBOARD:END -->
 
 Priority queues from the ledger: **P0** = plaintiff-only + still `UNVERIFIED` (`npm run citations:queue`); **P1** = plaintiff-only + bad status (fix before the next brief). Pre-existing fabricated hits are debt-tracked in `citation_known_bad_debt.json` so CI stays green while corrected drafts replace them.

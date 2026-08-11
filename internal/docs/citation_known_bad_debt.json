@@ -85,6 +85,15 @@
     {
       "id": "burrell-jackson",
       "label": "Burrell v. Jackson, 2003 WL 23545858",
+      "document": "/documents/matter-33/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+      "page": 43,
+      "role": "plaintiff_filing",
+      "matter": 33,
+      "reason": "Same page-43 sentence already tracked at the operative draft path — this is the conformed copy the court docketed as Dkt. 1 on Aug. 10, 2026, so the debt is now carried in a live federal filing rather than a draft. Cited as adverse out-of-circuit authority being distinguished, not as support, but it still needs correcting by errata or amended complaint. PRIORITY: remediate rather than carry."
+    },
+    {
+      "id": "burrell-jackson",
+      "label": "Burrell v. Jackson, 2003 WL 23545858",
       "document": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal.pdf",
       "page": 43,
       "role": "plaintiff_filing",
