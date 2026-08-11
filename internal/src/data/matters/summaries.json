@@ -45,7 +45,7 @@
     ],
     "archived": false,
     "evidenceCount": 7,
-    "documentCount": 16
+    "documentCount": 17
   },
   {
     "number": 3,
@@ -178,7 +178,7 @@
     "archived": false,
     "note": "N.D. Cal. counterpart now docketed as Matter 33 (Nforbi v. Candelaria et al., No. 3:26-cv-08272-LJC, docketed Aug. 10, 2026 before Magistrate Judge Lisa J. Cisneros) — same two defendants, same Feb. 11, 2025 APS decision. The Matter 33 complaint represents to the N.D. Cal. that this action was voluntarily dismissed without prejudice; confirm that against this docket. Do not plead this matter's damages a second time under Matter 33 without reconciling the totals.",
     "evidenceCount": 17,
-    "documentCount": 19
+    "documentCount": 20
   },
   {
     "number": 8,
@@ -921,7 +921,7 @@
     ],
     "archived": false,
     "evidenceCount": 9,
-    "documentCount": 101
+    "documentCount": 103
   },
   {
     "number": 33,
@@ -949,6 +949,6 @@
     ],
     "archived": false,
     "evidenceCount": 15,
-    "documentCount": 38
+    "documentCount": 39
   }
 ]
