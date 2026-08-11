@@ -285,7 +285,7 @@
     "case_no": "STK-CV-UF-2026-0001094",
     "court": "San Joaquin Sup. Ct.",
     "claims": "Fraudulent Concealment, Intentional Misrepresentation, Negligent Misrepresentation, Breach of Contract, UCL §17200, Rescission & Restitution, Declaratory Relief",
-    "status_label": "Default packets mailed — prove-up Aug. 12, 2026",
+    "status_label": "Prove-up Aug. 12, 2026 — hand-up packets ready",
     "lifecycle": "active",
     "proceeding": "state_civil",
     "phase": "default",
@@ -306,7 +306,7 @@
     ],
     "archived": false,
     "evidenceCount": 12,
-    "documentCount": 61
+    "documentCount": 64
   },
   {
     "number": 13,
