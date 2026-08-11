@@ -35,6 +35,9 @@ SIGNATURE_IMG = SIGNATURE_PATH
 SIG_IMG_W_PX, SIG_IMG_H_PX = SIGNATURE_NATIVE_PX
 SIG_WIDTH = 140  # aspect ≈ 0.248 → ~35pt tall on the underscore line
 
+# Set MATTER12_NO_SIGNATURE=1 to leave signature lines blank for wet signing.
+NO_SIGNATURE = os.environ.get("MATTER12_NO_SIGNATURE", "") == "1"
+
 OUT_DIR = os.environ.get("MATTER12_DECL_OUT_DIR", "/tmp/m12build")
 COURT_LINE2 = "COUNTY OF SAN JOAQUIN"
 CASE_NO = "STK-CV-UF-2026-0001094"
@@ -106,7 +109,7 @@ def render_content(d: PleadingPaper, content: list[tuple[str, str]]) -> None:
         elif c_type == "SIGNATURE":
             d.ensure_space(8)
             for line in text.split("\n"):
-                if line.startswith("_") and os.path.isfile(SIGNATURE_IMG):
+                if line.startswith("_") and not NO_SIGNATURE and os.path.isfile(SIGNATURE_IMG):
                     d.draw_signature_image(
                         SIGNATURE_IMG,
                         SIG_IMG_W_PX,

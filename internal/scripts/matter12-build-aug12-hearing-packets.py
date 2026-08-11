@@ -8,6 +8,7 @@ defects from the Aug 3/4 submissions:
   - CIV-100 item 5 parent checkbox checked with the three "is not" answers
   - Item 2 money filled; punitive omitted; costs waived
   - All execution / mailing dates = August 12, 2026
+  - Signature lines left BLANK for wet signature at the hearing
 
 Packet order (each defendant):
   1. Notice to Filing Party (014b)
@@ -201,8 +202,14 @@ def check_radio_choice(doc: fitz.Document, name_contains: str, on_value) -> int:
     return n
 
 
+# Wet-signature build: leave every signature line blank for hand signing.
+WET_SIGNATURE = True
+
+
 def stamp_sig(page: fitz.Page, x0: float, x1: float, y_line: float) -> None:
     """Stamp the portfolio universal signature on the form line."""
+    if WET_SIGNATURE:
+        return
     stamp_on_pdf_line(page, x0, x1, y_line, path=str(SIGNATURE_IMG))
 
 
@@ -636,6 +643,8 @@ def run_declarations() -> tuple[Path, Path]:
     env["MATTER12_DECL_OUT_DIR"] = str(BUILD_DIR)
     env["MATTER12_EXEC_DATE"] = DATE_LONG
     env["MATTER12_DECL_TAG"] = "Aug12_2026"
+    if WET_SIGNATURE:
+        env["MATTER12_NO_SIGNATURE"] = "1"
     subprocess.check_call(
         [sys.executable, str(SCRIPT_DIR / "matter12-default-declaration-formatter.py")],
         env=env,
@@ -697,6 +706,14 @@ def assemble(
     print(f"Wrote {out_path.name} ({fitz.open(out_path).page_count} pages)")
 
 
+def _first_exhibit_page(doc: fitz.Document) -> int:
+    for i in range(5, doc.page_count):
+        text = doc[i].get_text() or ""
+        if "EXHIBIT" in text and "SAN JOAQUIN COUNTY SUPERIOR COURT" in text:
+            return i
+    return doc.page_count
+
+
 def verify(path: Path) -> None:
     doc = fitz.open(path)
     full = "\n".join(page.get_text() for page in doc)
@@ -714,7 +731,14 @@ def verify(path: Path) -> None:
         "no_aug4_exec": "August 4, 2026" not in full and "08/04/2026" not in full,
         "has_civ110": "REQUEST FOR DISMISSAL" in full and "Does 1 through 20" in full,
         "costs_waived": "waived" in full.lower(),
-        "signed_images": any(len(page.get_images()) > 0 for page in doc),
+        # Wet-signature build: CIV-100 / JUD-100 / CIV-110 / declaration pages
+        # must carry no stamped signature image (exhibit scans excluded; the
+        # blank Judicial Council forms embed a tiny 15x28 ornament — ignore it).
+        "form_pages_unsigned": not any(
+            img[2] > 100
+            for i in range(5, _first_exhibit_page(doc))
+            for img in doc[i].get_images()
+        ),
         "no_usmani_mail_ghost": "Mustagem Usmani" not in full and "Sonderquist" not in full,
         "item5_parent": "Declaration under Code Civ. Proc., § 585.5" in full,
     }
