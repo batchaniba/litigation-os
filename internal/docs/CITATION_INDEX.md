@@ -14,13 +14,13 @@ numbers, so a citation in a draft can be traced to a source page rather than tru
 
 | | |
 |---|---|
-| PDFs scanned | 580 |
-| Pages | 6,077 |
-| Readable | 504 |
+| PDFs scanned | 584 |
+| Pages | 6,208 |
+| Readable | 508 |
 | **No text layer (not searched)** | **74** |
 | Unreadable | 2 |
-| Distinct citations | 2,885 |
-| Total occurrences | 10,254 |
+| Distinct citations | 2,910 |
+| Total occurrences | 10,866 |
 
 A PDF with no text layer yields no citations. That is **not** the same as containing
 none — those documents are unsearched until OCR'd.
@@ -29,9 +29,9 @@ none — those documents are unsearched until OCR'd.
 
 | Kind | Distinct |
 |---|---|
-| `case_name` | 814 |
-| `authority` | 747 |
-| `case_reporter` | 629 |
+| `case_name` | 824 |
+| `authority` | 755 |
+| `case_reporter` | 636 |
 | `statute_state` | 233 |
 | `section_shorthand` | 146 |
 | `rule_local` | 89 |
@@ -69,43 +69,44 @@ folder-derived attribution reported zero for Matters 1, 2, 7 and 20.
 | 29 | Newanforbi v. Amazon.com Services, LLC | 641 |
 | 30 | Newanforbi v. Moua, et al. | 100 |
 | 31 | Newanforbi v. First Advantage LLC | 0 |
-| 32 | Ngwa Nforbi v. Meza-Gonzalez, et al | 700 |
-| 33 | Nforbi v. Candelaria et al. | 400 |
+| 32 | Ngwa Nforbi v. Meza-Gonzalez, et al | 719 |
+| 33 | Nforbi v. Candelaria et al. | 407 |
 
 ## Highest-exposure citations
 
-542 of 747 paired authorities do not appear in the July audit. Of those,
+550 of 755 paired authorities do not appear in the July audit. Of those,
 **137 are asserted only in Plaintiff's own filings**, with no court order or
 opposing brief in the corpus citing them back. Unverified *and* uncorroborated is where a
 fabricated or miscited authority survives undetected — the queue worth working first.
 
 | Uses | Authority | Matters |
 |---|---|---|
-| 30 | Mercer v. DMV, 53 Cal. 3d 753 (1991) | 7, 8, 32, 33 |
+| 38 | Mercer v. DMV, 53 Cal. 3d 753 (1991) | 7, 8, 32, 33 |
+| 10 | In re Murchison, 349 U.S. 133 (1955) | 33 |
 | 9 | Vlandis v. Kline, 412 U.S. 441 (1973) | 33 |
-| 6 | Devereaux v. Abbey, 263 F. 3d 1070 | 30, 32 |
+| 8 | Devereaux v. Abbey, 263 F. 3d 1070 | 30, 32 |
+| 8 | Music v. Dep't of Motor Vehicles, 221 Cal.App. 3d 841 (1990) | 33 |
+| 6 | Chism v. Washington State, 661 F. 3d 380 | 32 |
+| 6 | Costanich v. Dep't of Social, 627 F. 3d 1101 | 32 |
+| 6 | Franks v. Delaware, 438 U.S. 154 (1978) | 32 |
+| 6 | Galbraith v. County of Santa Clara, 307 F. 3d 1119 | 32 |
 | 6 | Home v. Dep't of Health Care Services, 204 Cal.App. 4th 676 (2012) | 9 |
 | 6 | In re Hudson, 1 Cal.App. 4th 1 (2006) | 5, 15, 19 |
-| 6 | In re Murchison, 349 U.S. 133 (1955) | 33 |
 | 6 | In re Muszalski, 52 Cal.App. 3d 500 (1975) | 5, 15, 19 |
-| 6 | Music v. Dep't of Motor Vehicles, 221 Cal.App. 3d 841 (1990) | 33 |
 | 6 | See Tameny v. Atlantic Richfield Co, 27 Cal. 3d 167 (1980) | 25, 26, 27 |
-| 5 | Chism v. Washington State, 661 F. 3d 380 | 32 |
+| 5 | Armondo v. Dep't of Motor Vehicles, 15 Cal.App. 4th 1174 (1993) | 33 |
+| 5 | Ballentine v. Tucker, 28 F. 4th 54 | 32 |
+| 5 | Bd. of Educ. v. Loudermill, 470 U.S. 532 (1985) | 33 |
+| 5 | Beck v. Ohio, 379 U.S. 89 (1964) | 32 |
+| 5 | Carey v. Piphus, 435 U.S. 247 (1978) | 33 |
 | 5 | Payton v. New York, 445 U.S. 573 (1980) | 32 |
 | 4 | Burrell v. Jackson, 2003 WL 23545858 | 7, 32, 33 |
 | 4 | Collins v. Virginia, 584 U.S. 586 (2018) | 32 |
-| 4 | Costanich v. Dep't of Social, 627 F. 3d 1101 | 32 |
-| 4 | Franks v. Delaware, 438 U.S. 154 (1978) | 32 |
-| 4 | Galbraith v. County of Santa Clara, 307 F. 3d 1119 | 32 |
 | 4 | See Hill v. National Collegiate Athletic Assn, 7 Cal. 4th 1 (1994) | 5, 27 |
 | 3 | AIDS Healthcare Foundation v. Los Angeles County Dept, 197 Cal.App. 4t | 9 |
-| 3 | Armondo v. Dep't of Motor Vehicles, 15 Cal.App. 4th 1174 (1993) | 33 |
 | 3 | Ashelman v. Pope, 793 F. 2d 1072 | 33 |
-| 3 | Ballentine v. Tucker, 28 F. 4th 54 | 32 |
-| 3 | Bd. of Educ. v. Loudermill, 470 U.S. 532 (1985) | 33 |
-| 3 | Beck v. Ohio, 379 U.S. 89 (1964) | 32 |
 | 3 | Califomia DUI Lawyers Ass'n v. DMV, 77 Cal.App. 5th 517 (2022) | 33 |
-| 3 | Carey v. Piphus, 435 U.S. 247 (1978) | 33 |
+| 3 | Camara v. Municipal Court, 387 U.S. 523 (1967) | 32 |
 | 3 | City of Moorpark v. Superior Court, 18 Cal. 4th 1143 (1998) | 25, 26 |
 | 3 | Due Process Clause. Greenholtz v. Inmates of Nebraska Penal, 442 U.S.  | 9 |
 | 3 | Gantt v. Sentry Insurance, 1 Cal. 4th 1083 (1992) | 27 |
@@ -120,7 +121,6 @@ fabricated or miscited authority survives undetected — the queue worth working
 | 3 | Thornton v. Brown, 757 F. 3d 834 | 30 |
 | 3 | Under the Mathews v. Eldridge, 424 U.S. 319 (1976) | 24, 32 |
 | 3 | United States Supreme Court Greenholtz v. Inmates of Nebraska Penal, 4 | 9 |
-| 2 | Cervantes v. City of San Diego, 5 F. 3d 1273 | 29 |
 
 _137 total; full list in the JSON._
 
