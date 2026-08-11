@@ -184,7 +184,7 @@ def build():
     d.write_line("Haiyang.Li@doj.ca.gov")
     d.write_line("cc: Adriana Zagal, Legal Secretary — Adriana.Zagal@doj.ca.gov")
     d.blank_line()
-    d.write_line(f"Executed on {EXECUTION_DATE}, at Stockton, California.")
+    d.write_line(f"Executed on {EXECUTION_DATE}, at Milpitas, California.")
     d.write_line("/s/ Brendan Ngehsi Newanforbi", bold=True)
     d.write_line("BRENDAN NGEHSI NEWANFORBI", bold=True)
     d.write_line("Plaintiff, In Pro Per")
