@@ -157,8 +157,7 @@ MATTER32_HEARING = (
     "(Initial Case Management Conference, Dkt. 4)"
 )
 MATTER32_DEADLINE = (
-    "11/08/2026 (Fed. R. Civ. P. 4(m), computed — 90 days from the Aug. 10, "
-    "2026 docketing of 3:26-cv-08271-PHK)"
+    "08/21/2026 (requested; Rule 4(m) deadline 11/08/2026)"
 )
 MATTER32_FORMS = (
     "AO 440 Summons issued to Jose Melano (Dkt. 3, Aug. 10, 2026); "
@@ -174,8 +173,7 @@ MATTER33_HEARING = (
     "Judge Lisa J. Cisneros (Initial Case Management Conference, Dkt. 4)"
 )
 MATTER33_DEADLINE = (
-    "11/08/2026 (Fed. R. Civ. P. 4(m), computed — 90 days from the Aug. 10, "
-    "2026 docketing of 3:26-cv-08272-LJC)"
+    "08/21/2026 (requested; Rule 4(m) deadline 11/08/2026)"
 )
 MATTER33_FORMS_TEMPLATE = (
     "AO 440 Summons issued to {who} (Dkt. 2, Aug. 10, 2026); Complaint "
