@@ -5,7 +5,7 @@
 # NOTICE OF VOLUNTARY DISMISSAL WITHOUT PREJUDICE
 # Fed. R. Civ. P. 41(a)(1)(A)(i)
 #
-# Execution / service date: August 12, 2026
+# Execution / service date: August 11, 2026
 # FILED_STATUS: False until actually e-filed via CM/ECF.
 #
 # Context: neither Defendant has been served with process or has
@@ -27,8 +27,8 @@ from pleading_paper import PleadingPaper  # noqa: E402
 
 FILED_STATUS = False  # flip to True once e-filed and served
 
-EXECUTION_DATE = "August 12, 2026"
-EXECUTION_DATE_SHORT = "Aug. 12, 2026"
+EXECUTION_DATE = "August 11, 2026"
+EXECUTION_DATE_SHORT = "Aug. 11, 2026"
 
 REPO_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, "..", ".."))
 OUTPUT_PATH = os.path.join(
@@ -38,7 +38,7 @@ OUTPUT_PATH = os.path.join(
     "documents",
     "matter-33",
     "from-07",
-    "Notice of Voluntary Dismissal Without Prejudice (Aug 12 2026).pdf",
+    "Notice of Voluntary Dismissal Without Prejudice (Aug 11 2026).pdf",
 )
 
 DOC_TITLE_FOOTER = (
@@ -88,12 +88,14 @@ def build():
         ("FAC Filed: April 29, 2026", False, False),
     ]
     d.draw_caption_block(left, right, caption_size=10, tight_lh=11, boxed=True)
+    d.blank_line()
 
     d.write_wrapped(
         "TO THE CLERK OF THE COURT, ALL PARTIES, AND THEIR COUNSEL OF RECORD, IF ANY:",
         bold=True,
         first_indent=0,
     )
+    d.blank_line()
 
     d.write_wrapped(
         "PLEASE TAKE NOTICE that, pursuant to Rule 41(a)(1)(A)(i) of the Federal Rules of "
@@ -103,6 +105,7 @@ def build():
         "individual capacity, and STEVE GORDON, Director of the California Department of "
         "Motor Vehicles, in his official capacity."
     )
+    d.blank_line()
 
     d.write_wrapped(
         "Plaintiff is entitled to dismiss this action as a matter of right because no "
@@ -127,6 +130,7 @@ def build():
         "<<i:Miller v. Terramite Corp.>>, 114 F. App'x 536, 539 (4th Cir. 2004) [same rule "
         "applies a fortiori where the defendant has not yet been served].)"
     )
+    d.blank_line()
 
     d.write_wrapped(
         "This is Plaintiff's first dismissal of any action based on or including the claims "
@@ -153,7 +157,7 @@ def build():
     d.blank_line()
     d.write_line(f"Dated: {EXECUTION_DATE}")
     d.write_line("Respectfully submitted,", italic=True)
-    d.write_line("/s/ Brendan Ngehsi Newanforbi", bold=True)
+    d.write_line("___________________________________")
     d.write_line("BRENDAN NGEHSI NEWANFORBI", bold=True)
     d.write_line("Plaintiff, In Pro Per")
     d.write_line("1455 Cat Tail Drive, Stockton, CA 95204")
@@ -178,7 +182,7 @@ def build():
     )
     d.blank_line()
     d.write_line(f"Executed on {EXECUTION_DATE}, at Stockton, California.")
-    d.write_line("/s/ Brendan Ngehsi Newanforbi", bold=True)
+    d.write_line("___________________________________")
     d.write_line("BRENDAN NGEHSI NEWANFORBI", bold=True)
     d.write_line("Plaintiff, In Pro Per")
 

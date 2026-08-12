@@ -5,7 +5,7 @@
 # NOTICE OF VOLUNTARY DISMISSAL WITHOUT PREJUDICE
 # Fed. R. Civ. P. 41(a)(1)(A)(i)
 #
-# Execution / service date: August 12, 2026 (refreshed from the Aug. 7,
+# Execution / service date: August 11, 2026 (refreshed from the Aug. 7,
 # 2026 draft, which was never e-filed; redated given the companion N.D.
 # Cal. complaint against these same defendants already filed Aug. 7,
 # 2026 under Matter 32/ndcal, which makes prompt dismissal here more
@@ -22,8 +22,8 @@ from pleading_paper import PleadingPaper  # noqa: E402
 
 FILED_STATUS = False  # flip to True once e-filed and served
 
-EXECUTION_DATE = "August 12, 2026"
-EXECUTION_DATE_SHORT = "Aug. 12, 2026"
+EXECUTION_DATE = "August 11, 2026"
+EXECUTION_DATE_SHORT = "Aug. 11, 2026"
 
 REPO_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, "..", ".."))
 OUTPUT_PATH = os.path.join(
@@ -33,7 +33,7 @@ OUTPUT_PATH = os.path.join(
     "documents",
     "matter-32",
     "from-01",
-    "Notice of Voluntary Dismissal Without Prejudice (Aug 12 2026).pdf",
+    "Notice of Voluntary Dismissal Without Prejudice (Aug 11 2026).pdf",
 )
 
 DOC_TITLE_FOOTER = (
@@ -83,12 +83,14 @@ def build():
         ("Complaint Filed: May 27, 2025", False, False),
     ]
     d.draw_caption_block(left, right, caption_size=10, tight_lh=11, boxed=True)
+    d.blank_line()
 
     d.write_wrapped(
         "TO THE CLERK OF THE COURT, ALL PARTIES, AND THEIR COUNSEL OF RECORD:",
         bold=True,
         first_indent=0,
     )
+    d.blank_line()
 
     d.write_wrapped(
         "PLEASE TAKE NOTICE that, pursuant to Rule 41(a)(1)(A)(i) of the Federal Rules of "
@@ -98,6 +100,7 @@ def build():
         "CALIFORNIA HIGHWAY PATROL; OFFICER SANTIAGO MEZA-GONZALEZ (#023295); and "
         "OFFICER MELANO (#023054)."
     )
+    d.blank_line()
 
     d.write_wrapped(
         "Plaintiff is entitled to dismiss this action as a matter of right because no "
@@ -115,6 +118,7 @@ def build():
         "2026 Objections thereto, and Plaintiff's July 7, 2026 Notice of Supplemental "
         "Authority likewise do not constitute an answer or a motion for summary judgment."
     )
+    d.blank_line()
 
     d.write_wrapped(
         "Because this is the first voluntary dismissal by Plaintiff of any action based "
@@ -133,7 +137,7 @@ def build():
     d.blank_line()
     d.write_line(f"Dated: {EXECUTION_DATE}")
     d.write_line("Respectfully submitted,", italic=True)
-    d.write_line("/s/ Brendan Ngehsi Newanforbi", bold=True)
+    d.write_line("___________________________________")
     d.write_line("BRENDAN NGEHSI NEWANFORBI", bold=True)
     d.write_line("Plaintiff, In Pro Per")
     d.write_line("1455 Cat Tail Drive, Stockton, CA 95204")
@@ -164,7 +168,7 @@ def build():
     d.write_line("cc: Adriana Zagal, Legal Secretary — Adriana.Zagal@doj.ca.gov")
     d.blank_line()
     d.write_line(f"Executed on {EXECUTION_DATE}, at Stockton, California.")
-    d.write_line("/s/ Brendan Ngehsi Newanforbi", bold=True)
+    d.write_line("___________________________________")
     d.write_line("BRENDAN NGEHSI NEWANFORBI", bold=True)
     d.write_line("Plaintiff, In Pro Per")
 

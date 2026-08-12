@@ -5,7 +5,7 @@
 # REQUEST FOR DISMISSAL WITHOUT PREJUDICE
 # Cal. Code Civ. Proc. § 581(b)(1), (c)
 #
-# Execution / service date: August 12, 2026
+# Execution / service date: August 11, 2026
 # FILED_STATUS: False until actually filed with the Clerk.
 #
 # IMPORTANT DRAFTING NOTE: California superior courts ordinarily require
@@ -33,8 +33,8 @@ from pleading_paper import PleadingPaper  # noqa: E402
 
 FILED_STATUS = False  # flip to True once actually filed with the Clerk
 
-EXECUTION_DATE = "August 12, 2026"
-EXECUTION_DATE_SHORT = "Aug. 12, 2026"
+EXECUTION_DATE = "August 11, 2026"
+EXECUTION_DATE_SHORT = "Aug. 11, 2026"
 
 REPO_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, "..", ".."))
 OUTPUT_PATH = os.path.join(
@@ -44,7 +44,7 @@ OUTPUT_PATH = os.path.join(
     "documents",
     "matter-32",
     "from-02",
-    "Request for Dismissal Without Prejudice (Draft, Aug 12 2026).pdf",
+    "Request for Dismissal Without Prejudice (Draft, Aug 11 2026).pdf",
 )
 
 DOC_TITLE_FOOTER = (
@@ -95,12 +95,14 @@ def build():
         ("Stipulation filed Apr. 14, 2026", False, False),
     ]
     d.draw_caption_block(left, right, caption_size=10, tight_lh=11, boxed=True)
+    d.blank_line()
 
     d.write_wrapped(
         "TO THE CLERK OF THE COURT, ALL PARTIES, AND THEIR COUNSEL OF RECORD:",
         bold=True,
         first_indent=0,
     )
+    d.blank_line()
 
     d.write_wrapped(
         "PLEASE TAKE NOTICE that, pursuant to Code of Civil Procedure section 581, "
@@ -110,12 +112,13 @@ def build():
         "MEZA-GONZALEZ; JOSE MELANO; STATE OF CALIFORNIA / CALIFORNIA HIGHWAY PATROL; and "
         "DOES 1 through 10."
     )
+    d.blank_line()
 
     d.write_wrapped(
         "Plaintiff is entitled to this dismissal without leave of court because no "
         "Defendant has filed an answer or a cross-complaint in this action. (Code Civ. "
         "Proc., § 581, subd. (b)(1) [plaintiff may dismiss with a written request to the "
-        "clerk where no answer or cross-complaint has been filed]; <<i:id.>>, subd. (c) "
+        "clerk where no answer or cross-complaint has been filed]; <<i:id.,>> subd. (c) "
         "[plaintiff may dismiss an entire complaint at any time before the actual "
         "commencement of trial, upon written request to the clerk].) No trial date has "
         "been set, and no Defendant has served or filed an answer, demurrer, or other "
@@ -123,6 +126,7 @@ def build():
         "Office on April 2, 2026 was never briefed and its filing was superseded by the "
         "April 14, 2026 stipulated stay, before any responsive pleading was filed."
     )
+    d.blank_line()
 
     d.write_wrapped(
         "On April 14, 2026, the parties stipulated, and the Court ordered, that this "
@@ -136,6 +140,7 @@ def build():
         "prejudice, and this Request is filed notwithstanding the stay because it "
         "terminates, rather than advances, the stayed proceedings."
     )
+    d.blank_line()
 
     d.write_wrapped(
         "Plaintiff further gives notice that entry of this dismissal will moot Plaintiff's "
@@ -184,7 +189,7 @@ def build():
     d.write_line("Haiyang.Li@doj.ca.gov")
     d.write_line("cc: Adriana Zagal, Legal Secretary — Adriana.Zagal@doj.ca.gov")
     d.blank_line()
-    d.write_line(f"Executed on {EXECUTION_DATE}, at Stockton, California.")
+    d.write_line(f"Executed on {EXECUTION_DATE}, at Milpitas, California.")
     d.write_line("/s/ Brendan Ngehsi Newanforbi", bold=True)
     d.write_line("BRENDAN NGEHSI NEWANFORBI", bold=True)
     d.write_line("Plaintiff, In Pro Per")
