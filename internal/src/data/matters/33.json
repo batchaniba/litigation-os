@@ -35,6 +35,7 @@
     "Order Setting Initial Case Management Conference and ADR Deadlines — Dkt. 4 (Aug. 10, 2026) — ndcal/",
     "N.D. Cal. Complaint v3 Operative (Aug. 7, 2026) — ndcal/",
     "N.D. Cal. Intake Packet (JS-44, AO 440×2, MJ form) — ndcal/",
+    "SER-001 Requests for Sheriff to Serve Court Papers — Diana Candelaria and Steve Gordon (Sacramento County Sheriff; DMV Legal Affairs Division; filled Aug. 12, 2026, unsigned) — ndcal/",
     "CHP Arrest Report (RJ68845) — incident/",
     "DS-367 Officer's Statement (ngwanforbi / F7953179) — incident/",
     "CHP dashcam transcript Exhibit A — incident/",
@@ -69,6 +70,14 @@
     {
       "path": "/documents/matter-33/ndcal/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026).pdf",
       "filed": true
+    },
+    {
+      "path": "/documents/matter-33/ndcal/SER-001 Request for Sheriff to Serve Court Papers - Diana Candelaria (Sacramento, Aug 12 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-33/ndcal/SER-001 Request for Sheriff to Serve Court Papers - Steve Gordon (Sacramento, Aug 12 2026).pdf",
+      "filed": false
     },
     {
       "path": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal 3 Operative.pdf",
