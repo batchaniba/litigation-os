@@ -62,11 +62,28 @@ GATE = "California Highway Patrol, Modesto Area — official duty station"
 
 SERVE_TIME = "8:00 a.m.–5:00 p.m. (business hours)"
 TYPE_PAPERS = "Summons and Complaint (Fed. R. Civ. P. 4)"
+
+# Page count for the enclosed papers (Meza-Gonzalez's own Dkt. 3 summons
+# page only — Melano's page of that same 2-page docket entry goes with his
+# separate Sacramento packet, not here).
+PAGE_BREAKDOWN = (
+    ("Complaint (Dkt. 1, Aug. 10, 2026)", 31),
+    ("Dkt. 1-1 Civil Filing Fee Receipt", 1),
+    ("Dkt. 1-2 JS-CAND 44 Civil Cover Sheet", 1),
+    ("Dkt. 3 Summons (Meza-Gonzalez page only)", 1),
+    ("Dkt. 4 Order Setting Initial CMC/ADR Deadlines", 2),
+)
+PAGE_COUNT = sum(n for _, n in PAGE_BREAKDOWN)  # 36
+PRICE_PER_PAGE = 1.25
+PRINT_FEE = PAGE_COUNT * PRICE_PER_PAGE  # $45.00
+CARD_PROCESSING_FEE = 1.75  # per the Department's fee table, $0.01-$50.00 bracket
+CARD_TOTAL = PRINT_FEE + CARD_PROCESSING_FEE  # $46.75
+
 LIST_FORMS = (
-    "AO 440 Summons issued to Santiago Meza-Gonzalez (Dkt. 3, Aug. 10, 2026); "
-    "Complaint (Dkt. 1, Aug. 10, 2026); Dkt. 1-1 Civil Filing Fee Receipt; "
-    "Dkt. 1-2 JS-CAND 44 Civil Cover Sheet; Dkt. 4 Order Setting Initial "
-    "Case Management Conference and ADR Deadlines"
+    "AO 440 Summons issued to Santiago Meza-Gonzalez (Dkt. 3, p. 2 of 2, "
+    "Aug. 10, 2026); Complaint (Dkt. 1, Aug. 10, 2026); Dkt. 1-1 Civil "
+    "Filing Fee Receipt; Dkt. 1-2 JS-CAND 44 Civil Cover Sheet; Dkt. 4 "
+    f"Order Setting Initial CMC/ADR Deadlines — {PAGE_COUNT} pp. total"
 )
 HEARING_DATE = (
     "12/02/2026, 11:00 a.m., Courtroom F, 450 Golden Gate Ave., San Francisco "
@@ -83,10 +100,16 @@ OTHER = (
     "the CHP Dublin Area station pleaded in the Complaint for the Nov. 1, "
     "2024 incident, which is in Alameda County. No California state-court "
     "fee waiver applies to this federal action (filing fee paid, not "
-    "waived); enclose the Stanislaus County Sheriff's civil service fee "
-    "per its published fee schedule with this request. Co-Defendant Jose "
-    "Melano is served under a separate SER-001 at CHP South Sacramento "
-    "Area (Sacramento County Sheriff), outside this Stanislaus request."
+    "waived); the Department's civil service fee per its published "
+    f"schedule also applies. Enclosed papers total {PAGE_COUNT} pp. "
+    f"(printing at $1.25/side/page = ${PRINT_FEE:.2f}). A signed Credit "
+    f"Card Authorization for ${PRINT_FEE:.2f} (plus the Department's "
+    f"${CARD_PROCESSING_FEE:.2f} card processing fee — ${CARD_TOTAL:.2f} "
+    "total if charged) is enclosed to cover printing; mail this SER-001 "
+    "and enclosures to Stanislaus County Sheriff – Civil Division, P.O. "
+    "Box 3288, Modesto, CA 95353. Co-Defendant Jose Melano is served "
+    "under a separate SER-001 at CHP South Sacramento Area (Sacramento "
+    "County Sheriff), outside this Stanislaus request."
 )
 
 FILENAME = (
