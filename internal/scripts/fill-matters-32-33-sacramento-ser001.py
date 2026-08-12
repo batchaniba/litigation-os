@@ -21,13 +21,27 @@ civil service fee must accompany each request.
 
 from __future__ import annotations
 
+import sys
 from pathlib import Path
 
+import fitz
 from pypdf import PdfReader, PdfWriter
 from pypdf.generic import NameObject
 
+SCRIPT_DIR = Path(__file__).resolve().parent
+sys.path.insert(0, str(SCRIPT_DIR))
+from signature_stamp import SIGNATURE_ASPECT, SIGNATURE_PATH  # noqa: E402
+
 ROOT = Path(__file__).resolve().parents[2]
 TEMPLATE = ROOT / "internal/public/documents/_form-library/ser001-blank-template.pdf"
+
+# Page-4 right-hand "Sign your name" line (PyMuPDF top-origin coords) —
+# same placement used for the Matter 12 and Matters 25/26/27/29 SER-001s.
+SIG_PAGE_INDEX = 3
+SIG_WIDTH = 120.0
+SIG_HEIGHT = SIG_WIDTH * SIGNATURE_ASPECT
+SIG_BASELINE = 645.0
+SIG_RECT = fitz.Rect(360.0, SIG_BASELINE - SIG_HEIGHT, 360.0 + SIG_WIDTH, SIG_BASELINE)
 
 YOUR_NAME = "Brendan Ngwa Nforbi"
 ADDRESS = "1455 Cat Tail Drive"
@@ -265,7 +279,21 @@ def fill_one(respondent: dict) -> Path:
             pass
     with open(out_path, "wb") as fh:
         writer.write(fh)
+    affix_signature(out_path)
     return out_path
+
+
+def affix_signature(path: Path) -> None:
+    """Stamp the portfolio's canonical e-signature on page 4's signature line."""
+    if not Path(SIGNATURE_PATH).is_file():
+        raise SystemExit(f"Missing signature image: {SIGNATURE_PATH}")
+    doc = fitz.open(path)
+    try:
+        page = doc[SIG_PAGE_INDEX]
+        page.insert_image(SIG_RECT, filename=SIGNATURE_PATH, keep_proportion=True)
+        doc.saveIncr()
+    finally:
+        doc.close()
 
 
 def verify(path: Path) -> None:
@@ -280,6 +308,12 @@ def verify(path: Path) -> None:
         short = key.split(".")[-1]
         if key in filled:
             print(f"  {short}: {filled[key]!r}")
+    doc = fitz.open(path)
+    try:
+        images = doc[SIG_PAGE_INDEX].get_images(full=True)
+        print(f"  page-4 images: {len(images)} (signature stamped)")
+    finally:
+        doc.close()
 
 
 def main() -> None:
