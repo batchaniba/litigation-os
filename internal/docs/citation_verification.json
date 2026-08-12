@@ -1,6 +1,6 @@
 {
   "generatedBy": "internal/scripts/verify-citations.py",
-  "generatedDate": "2026-08-11",
+  "generatedDate": "2026-08-12",
   "methodology": "Join citation_audit.json onto citation_index.json authority rows; overlay Round 4+ results from citation_verification_rounds.json. Existence checks use WebSearch plus direct CourtListener search API and CAP static.case.law CasesMetadata/HTML (see lookup-citations.py / citation_lookup_multisource.json). Positive control: Richardson v. McKnight. Negative control: In re Leman. Justia is Cloudflare-blocked here; Google Scholar is unreliable (often 403); CAP JSON API and CourtListener citation-lookup require auth.",
   "controls": {
     "positive": "Richardson v. McKnight, 521 U.S. 399 (1997) \u2014 must be findable",

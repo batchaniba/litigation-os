@@ -50,7 +50,7 @@ CAPTION_LEFT = [
 ]
 
 CAPTION_RIGHT = [
-    ('Case No. __________________', False, False),
+    ('Case No. 3:26-cv-08271-PHK', False, False),
     ('', False, False),
     ('FIRST AMENDED COMPLAINT', True, False),
     ('FOR DAMAGES', True, False),
