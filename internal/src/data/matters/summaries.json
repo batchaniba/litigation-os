@@ -285,11 +285,11 @@
     "case_no": "STK-CV-UF-2026-0001094",
     "court": "San Joaquin Sup. Ct.",
     "claims": "Fraudulent Concealment, Intentional Misrepresentation, Negligent Misrepresentation, Breach of Contract, UCL §17200, Rescission & Restitution, Declaratory Relief",
-    "status_label": "Prove-up Aug. 12, 2026 — hand-up packets ready",
+    "status_label": "Defense appeared, disputes service — CMC Dec. 11, 2026",
     "lifecycle": "active",
     "proceeding": "state_civil",
-    "phase": "default",
-    "badge": "DEFAULT",
+    "phase": "service",
+    "badge": "ACTIVE",
     "filed": "February 13, 2026",
     "judge": "Hon. Robert T. Waters",
     "cluster": 5,
@@ -306,7 +306,7 @@
     ],
     "archived": false,
     "evidenceCount": 12,
-    "documentCount": 64
+    "documentCount": 65
   },
   {
     "number": 13,
