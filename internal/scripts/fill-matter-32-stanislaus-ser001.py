@@ -92,7 +92,7 @@ HEARING_DATE = (
 DEADLINE_DATE = (
     "08/21/2026 (requested; Rule 4(m) deadline 11/08/2026)"
 )
-SIG_DATE = "August 12, 2026"
+SIG_DATE = "8/13/2026"
 
 OTHER = (
     "Serve at Respondent's current duty station (CHP Modesto Area) — not "
@@ -113,7 +113,7 @@ OTHER = (
 
 FILENAME = (
     "SER-001 Request for Sheriff to Serve Court Papers - "
-    "Santiago Meza-Gonzalez (Stanislaus, Aug 12 2026).pdf"
+    "Santiago Meza-Gonzalez (Stanislaus, Aug 13 2026).pdf"
 )
 
 # Fully-qualified AcroForm names on the Judicial Council SER-001 (Rev. Jan 1, 2026)

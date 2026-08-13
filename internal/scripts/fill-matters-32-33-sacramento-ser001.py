@@ -53,7 +53,7 @@ EMAIL = "bnn.cdl@gmail.com"
 
 SERVE_TIME = "8:00 a.m.–5:00 p.m. (business hours)"
 TYPE_PAPERS = "Summons and Complaint (Fed. R. Civ. P. 4)"
-SIG_DATE = "August 12, 2026"
+SIG_DATE = "8/13/2026"
 
 DMV_LEGAL_AFFAIRS_GATE = (
     "California DMV, Legal Affairs Division, Mail Station C128, "
@@ -187,7 +187,7 @@ RESPONDENTS = [
         "out_dir": ROOT / "internal/public/documents/matter-32/ndcal",
         "filename": (
             "SER-001 Request for Sheriff to Serve Court Papers - "
-            "Jose Melano (Sacramento, Aug 12 2026).pdf"
+            "Jose Melano (Sacramento, Aug 13 2026).pdf"
         ),
         "case_number": MATTER32_CASE,
         "case_name": MATTER32_NAME,
@@ -213,7 +213,7 @@ RESPONDENTS = [
         "out_dir": ROOT / "internal/public/documents/matter-33/ndcal",
         "filename": (
             "SER-001 Request for Sheriff to Serve Court Papers - "
-            "Diana Candelaria (Sacramento, Aug 12 2026).pdf"
+            "Diana Candelaria (Sacramento, Aug 13 2026).pdf"
         ),
         "case_number": MATTER33_CASE,
         "case_name": MATTER33_NAME,
@@ -239,7 +239,7 @@ RESPONDENTS = [
         "out_dir": ROOT / "internal/public/documents/matter-33/ndcal",
         "filename": (
             "SER-001 Request for Sheriff to Serve Court Papers - "
-            "Steve Gordon (Sacramento, Aug 12 2026).pdf"
+            "Steve Gordon (Sacramento, Aug 13 2026).pdf"
         ),
         "case_number": MATTER33_CASE,
         "case_name": MATTER33_NAME,
