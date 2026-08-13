@@ -33,9 +33,23 @@ describe("statusLabel derivation", () => {
   });
 
   it("derives default prove-up and CMC dates from upcoming hearings", () => {
-    expect(deriveStatusLabel(cases.find((item) => item.number === 12)!, { events: eventsFor(12) })).toBe(
-      "Default prove-up — Aug. 12, 2026",
-    );
+    // Matter 12's own prove-up hearing is real portfolio data, so it stops being
+    // "upcoming" the moment its date passes — asserting its live-derived label
+    // here would make this test rot every time the hearing date does. Use a
+    // synthetic future hearing instead to pin down the "default" phase + hearing
+    // → "Default prove-up — <date>" behavior on its own.
+    const proveUp = {
+      date: "Dec. 1, 2099",
+      event: "Default prove-up hearing — Matter 12",
+      type: "hearing",
+      matters: [12],
+      upcoming: true,
+    } as TimelineEvent;
+    expect(
+      deriveStatusLabel(cases.find((item) => item.number === 12)!, {
+        events: [...eventsFor(12), proveUp],
+      }),
+    ).toBe("Default prove-up — Dec. 1, 2099");
     expect(deriveStatusLabel(cases.find((item) => item.number === 24)!, { events: eventsFor(24) })).toContain(
       "CMC Sep. 15, 2026",
     );
