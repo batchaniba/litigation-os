@@ -950,5 +950,35 @@
     "archived": false,
     "evidenceCount": 17,
     "documentCount": 43
+  },
+  {
+    "number": 34,
+    "caption": "Newanforbi v. Counseling and Psychotherapy Center, Inc., et al.",
+    "case_no": "TBD",
+    "court": "USDC N.D. Cal. (San Jose Div.) / Santa Clara Sup. Ct.",
+    "claims": "42 U.S.C. §1983 (Monell & Individual Capacity), Bane Act (Cal. Civ. Code §52.1), Fraud / Negligent Misrepresentation, RICO (18 U.S.C. §1962(c)-(d)), UCL (Bus. & Prof. Code §17200), Negligence Per Se",
+    "status_label": "Pre-filing — intake & compliance monitoring",
+    "lifecycle": "pre_filing",
+    "proceeding": "federal_civil",
+    "phase": "pre_filing",
+    "badge": "PENDING",
+    "filed": "Not yet filed (pre-filing / intake stage)",
+    "judge": "TBD",
+    "cluster": 2,
+    "type": "Federal",
+    "archived": false,
+    "defendants": "The Counseling and Psychotherapy Center, Inc. (d/b/a CPC / CPC America; Massachusetts professional corporation / California foreign corporation; CASOMB-certified sex offender treatment program provider, San Jose / Santa Clara County location; 7100 Hayvenhurst Ave, Unit #100, Van Nuys, CA 91406; Needham, MA HQ); Dennis McNamara, CEO and Founder (individually); Kellie McNamara, President/COO (individually); Maria Piccillo, Clinical Director / Chief Clinical Officer (individually); and DOES 1-10",
+    "causes": [
+      "Count 1 — 42 U.S.C. §1983 (Monell / Institutional Liability against CPC): delegation of public function under West v. Atkins; unconstitutional policy, custom, or practice of indefinite containment-model retention",
+      "Count 2 — 42 U.S.C. §1983 (Individual Capacity against Executive / Clinical Officers): supervisory and individual liability for unconstitutional retention directives, retaliatory adverse reporting, and due process deprivations",
+      "Count 3 — Tom Bane Civil Rights Act, Cal. Civ. Code §52.1: coercive interference with constitutional and statutory rights under Pen. Code §3008(d)(2) and 15 CCR §3574(f)(1)",
+      "Count 4 — Fraud and Intentional / Negligent Misrepresentation: intake representations of individualized clinical graduation criteria vs. concealed blanket retention policies",
+      "Count 5 — Negligence and Negligence Per Se: duty of care under Giraldo; violation of mandatory statutory and regulatory standards governing sex offender treatment completion",
+      "Count 6 — Intentional Interference with Prospective Economic Advantage: disruption of Class A CDL commercial driving employment and refusal of reasonable scheduling accommodations",
+      "Count 7 — Unfair Competition Law, Cal. Bus. & Prof. Code §17200: unlawful and unfair business practices regarding fee-for-service client billing and retention models; restitution of client-paid fees",
+      "Count 8 — Declaratory and Injunctive Relief: judicial declaration that blanket non-completion policies violate California law; permanent injunction requiring individualized CASOMB assessment"
+    ],
+    "evidenceCount": 10,
+    "documentCount": 0
   }
 ]
