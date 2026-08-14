@@ -568,14 +568,31 @@ const lawyer_fees_raw = [
       mid: 20160
     },
     notes: "Combines (a) previously transferred Nov. 1 / APS incident evidence-compilation line (18–40 hrs mid 29) with (b) NEW Aug. 7, 2026 N.D. Cal. refile set under ndcal/ (116 pages): operative Complaint v3 (47 pp) billed below full 2–3 hr/page because it substantially reuses Matter 7 theory/work product (adaptation/venue rewrite ~30–50 hrs mid 40) plus intake admin (2–4 hrs). Drafting hours for from-07 / from-08 historical PDFs remain on Matters 7 and 8 — not re-billed here."
+  },
+  {
+    number: 34,
+    type: "Federal — 42 U.S.C. §1983 (Monell + Individual); Bane Act Cal. Civ. Code §52.1; Fraud; UCL §17200",
+    documentsCount: 0,
+    totalPagesReal: 0,
+    hours: {
+      low: 15,
+      high: 40,
+      mid: 27.5
+    },
+    cost: {
+      low: 4200,
+      high: 11200,
+      mid: 7700
+    },
+    notes: "Pre-filing intake and compliance-audit stage. No documents on disk yet (0 real pages). Estimated work encompasses initial client intake review, CASOMB provider verification and regulatory analysis under 15 CCR §3574, treatment contract analysis, and adaptation of the Matter 28 / Matter 5 pleading framework for Santa Clara County / CPC corporate defendants. Fee-shifting under 42 U.S.C. §1988 and Cal. Civ. Code §52.1(i) applies upon prevailing."
   }
 ];
 
 export const lawyer_fees = lawyer_fees_raw.map((row) => withMatterIdentity(row));
 
 export const lawyer_fees_summary = {
-  analysisDate: "2026-08-08",
-  totalMatters: 33,
+  analysisDate: "2026-08-14",
+  totalMatters: 34,
   totalDocumentsAnalyzed: 326,
   totalPagesReal: 3898,
   methodology: {
@@ -583,11 +600,11 @@ export const lawyer_fees_summary = {
     rateRange: { seniorPartner: [350, 450], midAssociate: [250, 350], paralegal: [150, 200] },
     note: "Every PDF in public/documents/matter-XX/ was measured with pdfinfo for real page counts (poppler-utils), then classified by document type (complaint, motion/opposition/reply, discovery, writ/habeas, declaration, administrative, evidence) and priced using the hours-per-page/per-document conversions in docs/LAWYER_FEES_CALCULATOR.md. Opposing counsel's filings are billed only at a light review rate, never at drafting rate. Matters with no uploaded PDFs are estimated conservatively from matters.js status text. Aug. 8, 2026 true-up: root N.D. Cal. Meza/Candelaria complaint+intake uploads fed into Matters 32/33; HC-004 packet into Matter 19; Accurate Background POS into Matter 29.",
   },
-  totalEstimatedHours: { low: 2856.8, high: 4729.2, mid: 3785.5 },
-  totalEstimatedCost: { low: 799904, high: 1324176, mid: 1059940 },
+  totalEstimatedHours: { low: 2871.8, high: 4769.2, mid: 3813.0 },
+  totalEstimatedCost: { low: 804104, high: 1335376, mid: 1067640 },
   byCluster: {
     cluster1: { label: "CHP / DUI / DMV", matters: [1, 2, 7, 8, 20, 24, 32, 33], costLow: 162036, costMid: 214172, costHigh: 266308 },
-    cluster2: { label: "Parole Retaliation / HOPE", matters: [3, 4, 5, 6, 11, 13, 14, 15, 16, 17, 18, 21, 28, 30], costLow: 459312, costMid: 602392, costHigh: 749672 },
+    cluster2: { label: "Parole Retaliation / HOPE", matters: [3, 4, 5, 6, 11, 13, 14, 15, 16, 17, 18, 21, 28, 30, 34], costLow: 463512, costMid: 610092, costHigh: 760872 },
     cluster3: { label: "Consumer Fraud / Employment", matters: [12, 22, 23, 25, 26, 27, 29, 31], costLow: 136976, costMid: 185500, costHigh: 233940 },
     cluster4: { label: "Administrative Writs & Habeas", matters: [9, 10, 19], costLow: 41580, costMid: 57890, costHigh: 74200 },
   },

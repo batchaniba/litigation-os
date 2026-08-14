@@ -16,6 +16,8 @@ export type StatusLabelActivity = {
   recent?: TimelineEvent;
   /** All timeline events for the matter (past + upcoming). Optional; loaded on demand. */
   events?: TimelineEvent[];
+  /** Reference timestamp (PDT epoch ms) for upcoming/past boundary. Defaults to getPDTMidnight(). */
+  now?: number;
 };
 
 const PHASE_SHORT: Partial<Record<MatterPhase, string>> = {
@@ -201,7 +203,7 @@ function phaseFallback(phase: MatterPhase | undefined, lifecycle: MatterLifecycl
  */
 export function deriveStatusLabel(matter: MatterLike, activity: StatusLabelActivity = {}): string {
   const events = activity.events ?? eventsForMatter(matter.number);
-  const now = +getPDTMidnight();
+  const now = activity.now ?? +getPDTMidnight();
   const posture = pickPostureEvent(events, matter.phase, now);
   const lifecycle = matter.lifecycle;
   const phase = matter.phase;

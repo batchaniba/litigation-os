@@ -21,7 +21,8 @@ export const damages_table = [
     { category: "§1983 Retaliation, Due Process, Bane Act & IIED — Moua (Matter 30)", matters: [30], conservative: 90000, moderate: 225000, aggressive: 525000 },
     { category: "FCRA / ICRAA Vendor Liability — First Advantage LLC (Matter 31)", matters: [31], conservative: 30000, moderate: 89000, aggressive: 205000 },
     { category: "N.D. Cal. §1983 Meza-Gonzalez (Matter 32) — pleaded >$214k; $0 here to avoid double-count w/ M1/M2", matters: [32], conservative: 0, moderate: 0, aggressive: 0 },
-    { category: "N.D. Cal. §1983 Nforbi v. Candelaria et al. (Matter 33, 3:26-cv-08272-LJC) — pleaded >$214k; $0 here to avoid double-count w/ M7", matters: [33], conservative: 0, moderate: 0, aggressive: 0 }
+    { category: "N.D. Cal. §1983 Nforbi v. Candelaria et al. (Matter 33, 3:26-cv-08272-LJC) — pleaded >$214k; $0 here to avoid double-count w/ M7", matters: [33], conservative: 0, moderate: 0, aggressive: 0 },
+    { category: "§1983 Monell / Individual + Bane Act — Counseling & Psychotherapy Center (Matter 34)", matters: [34], conservative: 0, moderate: 0, aggressive: 0 }
 ];
 // Matters 3, 5, and 15 are excluded/reduced above (abandoned/dismissed Jul. 2026):
 // - Matter 3 (Derrick, ABANDONED): its Lost Income, Emotional Distress, Punitive, and Fees
@@ -741,6 +742,23 @@ const matter_damages_raw = [
     components: [
       {
         label: "Reserved — pleaded >$214k in N.D. Cal.; portfolio $0 avoids double-count with Matter 7",
+        conservative: 0,
+        moderate: 0,
+        aggressive: 0
+      }
+    ]
+  },
+  {
+    number: 34,
+    claims: "42 U.S.C. §1983 Monell + Individual; Bane Act §52.1; Fraud/Misrepresentation; UCL §17200",
+    risk: "Pre-filing / intake stage: state-actor status established under West v. Atkins; liability contingent on discovery of CPC treatment agreements, intake orientation representations, and whether CPC maintains an unlawful blanket-retention policy analogous to In re Dwyer",
+    settlement_note: "Prospective companion/successor to Matter 28 following July 2, 2026 Santa Clara transfer. Pre-filing valuation contingent on intake documentation and treatment progress reporting. Avoid double-counting prior CDL wage losses with Matter 28/Matter 5.",
+    conservative: 0,
+    moderate: 0,
+    aggressive: 0,
+    components: [
+      {
+        label: "Reserved — pre-filing intake / compliance monitoring stage; valuation contingent on intake disclosures and treatment progress reporting",
         conservative: 0,
         moderate: 0,
         aggressive: 0
