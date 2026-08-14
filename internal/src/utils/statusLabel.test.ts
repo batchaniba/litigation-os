@@ -11,7 +11,6 @@ import {
 } from "./statusLabel";
 import type { TimelineEvent } from "../types/portfolio";
 import { matterRefsInclude } from "./matterRefs.js";
-import { parseEventDatePDT } from "./dateUtils";
 
 function eventsFor(matterNumber: number): TimelineEvent[] {
   return timeline.filter((event) => matterRefsInclude(event.matters, matterNumber));
@@ -34,20 +33,20 @@ describe("statusLabel derivation", () => {
   });
 
   it("derives default prove-up and CMC dates from upcoming hearings", () => {
-    const proveUpHearing: TimelineEvent = {
-      date: "Aug. 12, 2026",
-      event:
-        "Default prove-up hearing (CMC converted per clerk phone statement) — Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094)",
+    // Real portfolio data (both the matter's phase and its timeline events) keeps
+    // moving, so pinning this to Matter 12's live record would make the test rot
+    // every time its posture changes. Use a fully synthetic matter + event to
+    // isolate the "default" phase + hearing → "Default prove-up — <date>"
+    // behavior on its own.
+    const defaultMatter = { ...cases.find((item) => item.number === 12)!, phase: "default" as const };
+    const proveUp = {
+      date: "Dec. 1, 2099",
+      event: "Default prove-up hearing — Matter 12",
       type: "hearing",
       matters: [12],
       upcoming: true,
-    };
-    expect(
-      deriveStatusLabel(cases.find((item) => item.number === 12)!, {
-        events: [proveUpHearing],
-        now: +parseEventDatePDT("Aug. 10, 2026"),
-      }),
-    ).toBe("Default prove-up — Aug. 12, 2026");
+    } as TimelineEvent;
+    expect(deriveStatusLabel(defaultMatter, { events: [proveUp] })).toBe("Default prove-up — Dec. 1, 2099");
     expect(deriveStatusLabel(cases.find((item) => item.number === 24)!, { events: eventsFor(24) })).toContain(
       "CMC Sep. 15, 2026",
     );

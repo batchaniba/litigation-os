@@ -1970,7 +1970,7 @@
     "source": "/documents/matter-29/Notice of Confirmation of Electronic Filing - Fee Payment and Punitive Notices Accepted (Aug 6 2026).pdf"
   },
   {
-    "date": "Aug. 11, 2026",
+    "date": "Aug. 12, 2026",
     "event": "Outer bound for Sacramento County Sheriff Civil Bureau to process E-Filing Order #O26005511 (CCP §425.115 Notices for Randstad US, LLC, The RK Logistics Group, Inc., and United Parcel Service, Inc.) — Sheriff advises allowing up to 7 business days from the Aug. 3, 2026 submission; this office has historically accepted SER-001 submissions same-day, so acceptance is expected well before this date",
     "matters": [
       26,
@@ -2181,13 +2181,24 @@
     "upcoming": false
   },
   {
-    "date": "Aug. 11, 2026",
-    "event": "Default prove-up hearing (CMC converted per clerk phone statement) — Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094), 8:30 AM, Dept. 11B, Hon. Robert T. Waters; June 15 CIV-100 Not Entered; renewed Diamond and Alpine default packets mailed July 31, 2026 (USPS tracking 9505 5114 6005 6212 9832 68; expected delivery 08/03/2026)",
+    "date": "Aug. 12, 2026",
+    "event": "Case Management Conference held — Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094), 8:30 AM, Dept. 11B, Hon. Robert T. Waters. Did not convert to a default prove-up: Diamond and Alpine appeared through retained counsel (Gulomjon Azimov) for the first time, who challenged the Proof of Service as invalid and said service was improper. No default entered. Parties exchanged contact information in open court and will meet and confer on service; court ordered the case at issue by the next hearing. Further CMC set for Dec. 11, 2026; parties waived notice",
     "matters": [
       12
     ],
     "type": "hearing",
+    "source": "/documents/matter-12/Minute Order - Case Management Conference (Aug 12 2026).pdf",
     "upcoming": false
+  },
+  {
+    "date": "Dec. 11, 2026",
+    "event": "Further Case Management Conference, 8:30 AM, Dept. 11B, Hon. Robert T. Waters — Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094), set at the Aug. 12, 2026 CMC after defense counsel disputed service; parties waived notice",
+    "matters": [
+      12
+    ],
+    "type": "hearing",
+    "source": "/documents/matter-12/Minute Order - Case Management Conference (Aug 12 2026).pdf",
+    "upcoming": true
   },
   {
     "date": "Sep. 21, 2022",
