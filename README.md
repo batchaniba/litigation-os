@@ -38,8 +38,8 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 | Plaintiff | Brendan Ngehsi Newanforbi |
 | Representation | Pro Se / In Propria Persona |
 | Jurisdictions | USDC E.D. Cal., USDC N.D. Cal., San Joaquin Sup. Ct., Alameda Sup. Ct., Sacramento Sup. Ct., Santa Clara Sup. Ct. |
-| Total Matters | 33 |
-| Active / Open | 17 |
+| Total Matters | 34 |
+| Active / Open | 18 |
 | — of which Settled | 1 (Matter 22 — Newanforbi v. Pilot Travel Centers LLC, Jul. 14, 2026) |
 | Dismissed / Closed / Abandoned | 16 |
 | Aggregate Exposure (Conservative) | ~$1,161,000+ |
@@ -173,6 +173,7 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | 31 | Newanforbi v. First Advantage LLC | TBD | San Joaquin Sup. Ct. (anticipated) | State | Pre-filing |
 | 32 | Ngwa Nforbi v. Meza-Gonzalez, et al | 3:26-cv-08271-PHK | USDC N.D. Cal. (docketed Aug. 10, 2026; related Serrato 4:26-cv-05953-ASK and Candelaria 3:26-cv-08272-LJC) | Federal | Docketed Aug. 10, 2026; CMC Dec. 2, 2026 |
 | 33 | Nforbi v. Candelaria et al. | 3:26-cv-08272-LJC | USDC N.D. Cal. (San Francisco Div.) | Federal | Service due Nov. 8, 2026; CMC Nov. 12 |
+| 34 | Newanforbi v. Counseling and Psychotherapy Center, Inc., et al. | TBD | USDC N.D. Cal. (San Jose Div.) / Santa Clara Sup. Ct. | Federal | Pre-filing — intake & compliance monitoring |
 <!-- PORTFOLIO:ACTIVE_MATTERS:END -->
 
 *Settled matters stay in the table above until dismissal is entered — a settlement resolves the merits, but the matter is still open on the docket. Their Status column reads "Settled" (see the Overview count above for which ones).*
@@ -280,6 +281,7 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | FCRA / ICRAA Vendor Liability — First Advantage LLC (Matter 31) | 31 | $30,000 | $89,000 | $205,000 |
 | N.D. Cal. §1983 Meza-Gonzalez (Matter 32) — pleaded >$214k; $0 here to avoid double-count w/ M1/M2 | 32 | $0 | $0 | $0 |
 | N.D. Cal. §1983 Nforbi v. Candelaria et al. (Matter 33, 3:26-cv-08272-LJC) — pleaded >$214k; $0 here to avoid double-count w/ M7 | 33 | $0 | $0 | $0 |
+| §1983 Monell / Individual + Bane Act — Counseling & Psychotherapy Center (Matter 34) | 34 | $0 | $0 | $0 |
 | **Portfolio Total (pre-deduplication)** | | **$1,160,672** | **$2,957,072** | **$6,579,272** |
 <!-- PORTFOLIO:DAMAGES_SUMMARY:END -->
 
@@ -296,18 +298,18 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 ## Attorney Fees Analysis
 
 <!-- PORTFOLIO:ATTORNEY_FEES:START -->
-Plaintiff is representing himself pro se across all 33 matters. The figures below represent what he would have been required to spend on private counsel to litigate this portfolio — costs he has absorbed entirely through self-representation. Based on real page counts extracted from 326 documents / 3,898 pages across matters with uploaded filings (Matter 32: 78 PDFs / 808 pages — N.D. Cal. ndcal/ filing billed; from-01|02|20|24/ stay attributed to source matters; Matter 33: 30 PDFs / 428 pages — N.D. Cal. refile + Nov. 1 / APS evidence; from-07/from-08 drafting stays on Matters 7/8; Matter 31 has no uploaded PDFs of its own), classified by document type and priced at a blended rate of **$280/hour** (senior partner $350–$450 / mid-associate $250–$350 / paralegal $150–$200). Opposing-party filings billed at light review rate only. Fee analysis date: August 8, 2026.
+Plaintiff is representing himself pro se across all 34 matters. The figures below represent what he would have been required to spend on private counsel to litigate this portfolio — costs he has absorbed entirely through self-representation. Based on real page counts extracted from 326 documents / 3,898 pages across matters with uploaded filings (Matter 32: 78 PDFs / 808 pages — N.D. Cal. ndcal/ filing billed; from-01|02|20|24/ stay attributed to source matters; Matter 33: 30 PDFs / 428 pages — N.D. Cal. refile + Nov. 1 / APS evidence; from-07/from-08 drafting stays on Matters 7/8; Matter 31 has no uploaded PDFs of its own), classified by document type and priced at a blended rate of **$280/hour** (senior partner $350–$450 / mid-associate $250–$350 / paralegal $150–$200). Opposing-party filings billed at light review rate only. Fee analysis date: August 14, 2026.
 
 | Cluster | Matters | Low | Mid | High |
 |---|---|---|---|---|
 | CHP / DUI / DMV | 1, 2, 7, 8, 20, 24, 32, 33 | $162,036 | $214,172 | $266,308 |
-| Parole Retaliation / HOPE | 3, 4, 5, 6, 11, 13, 14, 15, 16, 17, 18, 21, 28, 30 | $459,312 | $602,392 | $749,672 |
+| Parole Retaliation / HOPE | 3, 4, 5, 6, 11, 13, 14, 15, 16, 17, 18, 21, 28, 30, 34 | $463,512 | $610,092 | $760,872 |
 | Consumer Fraud / Employment | 12, 22, 23, 25, 26, 27, 29, 31 | $136,976 | $185,500 | $233,940 |
 | Administrative Writs & Habeas | 9, 10, 19 | $41,580 | $57,890 | $74,200 |
-| **Portfolio Total** | **33 matters** | **$799,904** | **$1,059,940** | **$1,324,176** |
-| **Estimated Hours** | | **2,856.8 hrs** | **3,785.5 hrs** | **4,729.2 hrs** |
+| **Portfolio Total** | **34 matters** | **$804,104** | **$1,067,640** | **$1,335,376** |
+| **Estimated Hours** | | **2,871.8 hrs** | **3,813 hrs** | **4,769.2 hrs** |
 
-*Plaintiff has litigated all 33 matters pro se, absorbing the full economic equivalent of the above without compensation. Fee-shifting statutes (42 U.S.C. §1988, PC §290.46(j)(4)(A), RICO 18 U.S.C. §1964(c), FCRA, ICRAA) apply across the majority of active matters — mandatory fee recovery upon prevailing substantially offsets or eliminates the above costs.*
+*Plaintiff has litigated all 34 matters pro se, absorbing the full economic equivalent of the above without compensation. Fee-shifting statutes (42 U.S.C. §1988, PC §290.46(j)(4)(A), RICO 18 U.S.C. §1964(c), FCRA, ICRAA) apply across the majority of active matters — mandatory fee recovery upon prevailing substantially offsets or eliminates the above costs.*
 <!-- PORTFOLIO:ATTORNEY_FEES:END -->
 
 [↑ Contents](#contents)
@@ -405,7 +407,7 @@ Controls (reconfirm when batching): *Richardson v. McKnight*, 521 U.S. 399 must 
 | NOT_FOUND | 6 |
 | UNVERIFIED | 426 |
 
-Paired authorities: **755**. P0 (plaintiff-only UNVERIFIED): **4**. P1 (plaintiff-only bad status): **27**. Ledger date: 2026-08-12.
+Paired authorities: **755**. P0 (plaintiff-only UNVERIFIED): **4**. P1 (plaintiff-only bad status): **27**. Ledger date: 2026-08-14.
 <!-- PORTFOLIO:CITATION_SCOREBOARD:END -->
 
 Priority queues from the ledger: **P0** = plaintiff-only + still `UNVERIFIED` (`npm run citations:queue`); **P1** = plaintiff-only + bad status (fix before the next brief). Pre-existing fabricated hits are debt-tracked in `citation_known_bad_debt.json` so CI stays green while corrected drafts replace them.

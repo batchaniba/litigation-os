@@ -1,6 +1,6 @@
 export const theories = [
     { id: 1, title: "First Amendment Retaliation as the Catalyst", matters: [3, 4], icon: "🗣️", desc: "Derrick's 'no freedom of speech' statement triggered the cascade. Satisfies Rhodes v. Robinson chilling effect test." },
-    { id: 2, title: "HOPE Program Structural Incentive Misalignment", matters: [6, 5], icon: "💰", desc: "Fee-for-service billing (~$9,690/yr per parolee) with no completion bonus creates perverse retention incentive. Condemned in Dwyer and Macomber." },
+    { id: 2, title: "HOPE Program Structural Incentive Misalignment", matters: [5, 6, 28, 34], icon: "💰", desc: "Fee-for-service billing (~$9,690/yr per parolee) with no completion bonus creates perverse retention incentive. Condemned in Dwyer and Macomber." },
     { id: 3, title: "Race-Based Disparate Treatment", matters: [3, 4], icon: "⚖️", desc: "Sworn declarations from white comparator (favorable treatment) and Black parolee (hostile treatment) under same agent. CHP encounter adds additional dimension." },
     { id: 4, title: "Compounding Constitutional Harms", matters: "All", icon: "🔗", desc: "Retaliation → unemployment → retention basis → continued custody → prevented employment. Each matter reinforces others." },
     { id: 5, title: "Post-Notice Continuation (Punitive Damages)", matters: "All CDCR", icon: "⚠️", desc: "Defendants continued conduct after Dwyer (2023), Macomber (2023), and April 2025 amendments. Demonstrates conscious disregard under Civ. Code 3294." },
