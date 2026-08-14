@@ -11,6 +11,7 @@ import {
 } from "./statusLabel";
 import type { TimelineEvent } from "../types/portfolio";
 import { matterRefsInclude } from "./matterRefs.js";
+import { parseEventDatePDT } from "./dateUtils";
 
 function eventsFor(matterNumber: number): TimelineEvent[] {
   return timeline.filter((event) => matterRefsInclude(event.matters, matterNumber));
@@ -33,9 +34,20 @@ describe("statusLabel derivation", () => {
   });
 
   it("derives default prove-up and CMC dates from upcoming hearings", () => {
-    expect(deriveStatusLabel(cases.find((item) => item.number === 12)!, { events: eventsFor(12) })).toBe(
-      "Default prove-up — Aug. 12, 2026",
-    );
+    const proveUpHearing: TimelineEvent = {
+      date: "Aug. 12, 2026",
+      event:
+        "Default prove-up hearing (CMC converted per clerk phone statement) — Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094)",
+      type: "hearing",
+      matters: [12],
+      upcoming: true,
+    };
+    expect(
+      deriveStatusLabel(cases.find((item) => item.number === 12)!, {
+        events: [proveUpHearing],
+        now: +parseEventDatePDT("Aug. 10, 2026"),
+      }),
+    ).toBe("Default prove-up — Aug. 12, 2026");
     expect(deriveStatusLabel(cases.find((item) => item.number === 24)!, { events: eventsFor(24) })).toContain(
       "CMC Sep. 15, 2026",
     );
