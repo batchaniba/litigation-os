@@ -69,7 +69,7 @@ folder-derived attribution reported zero for Matters 1, 2, 7 and 20.
 | 29 | Newanforbi v. Amazon.com Services, LLC | 641 |
 | 30 | Newanforbi v. Moua, et al. | 100 |
 | 31 | Newanforbi v. First Advantage LLC | 0 |
-| 32 | Ngwa Nforbi v. Meza-Gonzalez, et al | 719 |
+| 32 | Nforbi v. Meza-Gonzalez, et al | 719 |
 | 33 | Nforbi v. Candelaria et al. | 407 |
 
 ## Highest-exposure citations
