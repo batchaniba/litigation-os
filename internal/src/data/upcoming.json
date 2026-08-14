@@ -258,6 +258,16 @@
     "upcoming": true
   },
   {
+    "date": "Dec. 11, 2026",
+    "event": "Further Case Management Conference, 8:30 AM, Dept. 11B, Hon. Robert T. Waters — Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094), set at the Aug. 12, 2026 CMC after defense counsel disputed service; parties waived notice",
+    "matters": [
+      12
+    ],
+    "type": "hearing",
+    "source": "/documents/matter-12/Minute Order - Case Management Conference (Aug 12 2026).pdf",
+    "upcoming": true
+  },
+  {
     "date": "Sep. 26, 2026",
     "event": "Service/proof-of-service deadline (computed) — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554); 60 days from the Jul. 28, 2026 filing (CRC 3.110(b)); Sept. 26 falls on a Saturday, so CCP §12a rolls the practical deadline to Monday, Sept. 28, 2026",
     "matters": [
