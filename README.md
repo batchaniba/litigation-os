@@ -168,8 +168,8 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | 29 | Newanforbi v. Amazon.com Services, LLC | 26CV201554 | Alameda Sup. Ct. (Hayward Hall of Justice, Dept. 520) | State | Fee paid / notices e-filed Aug. 6 — response due Aug. 31 |
 | 30 | Newanforbi v. Moua, et al. | TBD | USDC N.D. Cal. | Federal | Pre-filing — GCA claim pending; Moua-only complaint ready |
 | 31 | Newanforbi v. First Advantage LLC | TBD | San Joaquin Sup. Ct. (anticipated) | State | Pre-filing |
-| 32 | Nforbi v. Meza-Gonzalez, et al | 3:26-cv-08271-PHK | USDC N.D. Cal. (docketed Aug. 10, 2026; related Serrato 4:26-cv-05953-ASK and Candelaria 3:26-cv-08272-LJC) | Federal | Docketed Aug. 10, 2026; CMC Dec. 2, 2026 |
-| 33 | Nforbi v. Candelaria et al. | 3:26-cv-08272-LJC | USDC N.D. Cal. (San Francisco Div.) | Federal | Service due Nov. 8, 2026; CMC Nov. 12 |
+| 32 | Nforbi v. Meza-Gonzalez, et al | 3:26-cv-08271-PHK | USDC N.D. Cal. (docketed Aug. 10, 2026; related Serrato 4:26-cv-05953-ASK and Candelaria 3:26-cv-08272-LJC) | Federal | Served Aug. 14, 2026 — response due Sep. 4; CMC Dec. 2 |
+| 33 | Nforbi v. Candelaria et al. | 3:26-cv-08272-LJC | USDC N.D. Cal. (San Francisco Div.) | Federal | Served Aug. 14, 2026 — response due Sep. 4; CMC Nov. 12 |
 | 34 | Newanforbi v. Counseling and Psychotherapy Center, Inc., et al. | TBD | USDC N.D. Cal. (San Jose Div.) / Santa Clara Sup. Ct. | Federal | Pre-filing — intake & compliance monitoring |
 <!-- PORTFOLIO:ACTIVE_MATTERS:END -->
 
@@ -229,6 +229,8 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | Aug. 31, 2026 | 29 | Responsive pleading deadline (computed) — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554); 30 days from the Jul. 31, 2026 service date on both defendants (CCP §412.20(a)(3)) |
 | Sep. 1, 2026 | 30 | Anticipated deemed-rejection date (computed) — Government Claims Act claim, Newanforbi v. Moua, et al. (Matter 30) |
 | Sep. 2, 2026 | 20 | Case Management Conference (continued from Jul. 15, 2026) — Newanforbi v. California Highway Patrol, et al. (Case No. 26CV191136), Dept. 25, Rene C. Davidson Courthouse, Oakland, Alameda County; Hon. Jenna M. Whitman |
+| Sep. 4, 2026 | 32 | Responsive pleading deadline (computed) — Santiago Meza-Gonzalez and Jose Melano, Nforbi v. Meza-Gonzalez, et al. (3:26-cv-08271-PHK, N.D. Cal.) |
+| Sep. 4, 2026 | 33 | Responsive pleading deadline (computed) — Diana Candelaria and Steve Gordon, Nforbi v. Candelaria et al. (3:26-cv-08272-LJC, N.D. Cal.); 21 days from the Aug. 14, 2026 personal service date (FRCP 12(a)(1)(A)(i)). |
 | Sep. 8, 2026 | 24 | Deadline — Initial disclosures (FRCP 26(a)(1)) and Joint Case Management Statement — Newanforbi v. Serrato (4:26-cv-05953-ASK) |
 | Sep. 13, 2026 | 25, 26 | Service deadline — Newanforbi v. Federal Express Corporation (STK-CV-UWT-2026-0009118) and Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113); 60 days from July 15, 2026 filing (CRC 3.110) |
 | Sep. 15, 2026 | 24 | Initial Case Management Conference — 1:30 PM via Zoom (cand.uscourts.gov/ask); Hon. Ajay S. Krishnan — Newanforbi v. Serrato (4:26-cv-05953-ASK) |
@@ -241,8 +243,10 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | Oct. 23, 2026 | 20 | Continued hearing on the Dutra joinder and demurrer to the Petition for Writ of Mandate, Newanforbi v. California Highway Patrol, et al. (Matter 20) — Dept. 25 |
 | Nov. 1, 2026 | 1, 2, 32 | CCP §335.1 two-year statute of limitations (computed) backstop, running from the Nov. 1, 2024 incident. (1) Matter 1's Fourth Amendment §1983 claim (borrowed two-year period): Matter 1 was voluntarily dismissed without… |
 | Nov. 5, 2026 | 33 | Deadline to make initial disclosures (Fed. R. Civ. P. 26(a)(1)) and to file the Joint Case Management Statement (Standing Order for All Judges of the Northern District of California) — Nforbi v. |
-| Nov. 8, 2026 | 33 | Fed. R. Civ. P. 4(m) service deadline (computed) — 90 days from the Aug. 10, 2026 docketing of Nforbi v. Candelaria et al. (3:26-cv-08272-LJC) to serve Diana Candelaria and Steve Gordon. |
 | Nov. 12, 2026 | 33 | Initial Case Management Conference, 1:30 p.m. by Zoom (cand.uscourts.gov/ljc) before Magistrate Judge Lisa J. Cisneros — Nforbi v. Candelaria et al. (3:26-cv-08272-LJC), set by the Dkt. 4 order. |
+| Nov. 12, 2026 | 32 | Deadline to file ADR Certification (ADR L.R. 3) and to meet and confer regarding initial disclosures, early settlement, ADR process selection, and a discovery plan (Fed. R. Civ. P. 26(f)) — Nforbi v. |
+| Nov. 25, 2026 | 32 | Deadline to make initial disclosures (Fed. R. Civ. P. 26(a)(1)) and to file the Joint Case Management Statement (Standing Order for All Judges of the Northern District of California) — Nforbi v. |
+| Dec. 2, 2026 | 32 | Initial Case Management Conference, 11:00 a.m., Courtroom F, 450 Golden Gate Ave., San Francisco, before Magistrate Judge Peter H. Kang — Nforbi v. Meza-Gonzalez, et al. (3:26-cv-08271-PHK), set by the Dkt. 4 order. |
 | Dec. 11, 2026 | 12 | Further Case Management Conference, 8:30 AM, Dept. 11B, Hon. Robert T. Waters — Ngwa Nforbi v. |
 | Dec. 14, 2026 | 26 | Meet-and-confer deadline — Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113); 30 calendar days before Jan. 13, 2027 CMC (CRC 3.724) |
 | Dec. 15, 2026 | 25 | Meet-and-confer deadline — Newanforbi v. Federal Express Corporation (STK-CV-UWT-2026-0009118); 30 calendar days before Jan. 14, 2027 CMC (CRC 3.724) |
