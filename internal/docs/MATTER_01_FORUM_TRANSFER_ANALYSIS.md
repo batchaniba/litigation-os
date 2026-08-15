@@ -1,3 +1,34 @@
+> **UPDATE — Aug. 15, 2026.** The dismiss-and-refile path this memo recommended
+> *against* was the one taken: Notices/Requests of Voluntary Dismissal Without
+> Prejudice for Matters 1, 2, and 7 were filed today (executed Aug. 11, 2026),
+> after Matters 32 and 33 had already been docketed in the N.D. Cal. on Aug. 10,
+> 2026. The §1404(a)/§1406(a) transfer motion urged in §2 below was not filed.
+> Two items this memo said had to be resolved **before** any notice was filed do
+> not show as resolved anywhere in this record:
+>
+> 1. **§3.2 two-dismissal rule (the more serious open item).** Matter 13
+>    (*Newanforbi v. Urrea*) was already dismissed by Rule 41(a)(1)(A)(i) notice
+>    on June 29, 2026, pleading the same five-day parole hold that Matter 1's
+>    complaint also pleads as a damages element. If a court finds Matter 1's
+>    claim "based on or including" that same detention, Rule 41(a)(1)(B) makes
+>    *today's* Matter 1 notice operate as an adjudication on the merits —
+>    i.e., WITH prejudice — regardless of how the notice is labeled or what
+>    Matter 32 assumes. That would hand the State a res judicata defense against
+>    Matter 32's refiled claims. This needs an answer, and needs it fast, given
+>    Matter 32 is already on file. See §3.2 below for the full analysis.
+> 2. **§3.1 stay/demurrer sequencing.** Moot in one sense — Matter 2 itself was
+>    also dismissed today rather than left stayed — but confirm the Alameda
+>    court treats today's Matter 2 dismissal as the operative event rather than
+>    reviving DAG Li's CCP §430.10(c) demurrer against a since-dismissed action.
+>
+> The November 1, 2026 CCP §335.1 backstop discussed in §1.3 is satisfied for
+> Matter 1's federal claim (Matter 32 was filed Aug. 10, before today's
+> dismissal). It is **not** satisfied for Matter 2's state-law claims — see the
+> Nov. 1, 2026 timeline.json entry and the flag on Matter 2's own record.
+>
+> The rest of this memo is preserved as the pre-filing analysis; it was not
+> updated to reflect the above.
+
 # Matter 1 — Dismiss-and-Refile vs. Transfer to N.D. Cal.
 
 **Question presented:** Once District Judge Coggins rules on the pending F&R in
