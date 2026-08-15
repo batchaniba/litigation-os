@@ -62,7 +62,18 @@ describe("statusLabel derivation", () => {
   });
 
   it("keeps waiting phases from collapsing to an old Filed/Served date", () => {
-    expect(deriveStatusLabel(cases.find((item) => item.number === 1)!, { events: eventsFor(1) })).toBe("F&R pending");
+    // Synthetic fixture — Matter 1 itself was voluntarily dismissed (terminal
+    // lifecycle) Aug. 15, 2026, so it can no longer stand in for a live
+    // "F&R pending" matter without this test rotting on every posture change.
+    const frPendingMatter = { number: 1, lifecycle: "active" as const, phase: "fr_pending" as const };
+    const filedEvent = {
+      date: "May. 27, 2025",
+      event: "Complaint filed",
+      type: "filing",
+      matters: [1],
+      upcoming: false,
+    } as TimelineEvent;
+    expect(deriveStatusLabel(frPendingMatter, { events: [filedEvent] })).toBe("F&R pending");
     expect(deriveStatusLabel(cases.find((item) => item.number === 19)!, { events: eventsFor(19) })).toBe(
       "Under submission",
     );
@@ -85,7 +96,16 @@ describe("statusLabel derivation", () => {
   });
 
   it("does not let a contingent SOL deadline make a waiting phase look scheduled", () => {
-    const matter = cases.find((item) => item.number === 1)!;
+    // Synthetic fixture for the same reason as above — Matter 1 is now
+    // dismissed/terminal and can't exercise the "waiting phase" branch.
+    const matter = { number: 1, lifecycle: "active" as const, phase: "fr_pending" as const };
+    const filedEvent = {
+      date: "May. 27, 2025",
+      event: "Complaint filed",
+      type: "filing",
+      matters: [1],
+      upcoming: false,
+    } as TimelineEvent;
     const solDeadline = {
       date: "Nov. 1, 2026",
       event: "CCP §335.1 two-year statute of limitations (computed) — Matter 1",
@@ -93,7 +113,7 @@ describe("statusLabel derivation", () => {
       matters: [1],
       upcoming: true,
     } as TimelineEvent;
-    expect(deriveStatusLabel(matter, { events: [...eventsFor(1), solDeadline] })).toBe("F&R pending");
+    expect(deriveStatusLabel(matter, { events: [filedEvent, solDeadline] })).toBe("F&R pending");
   });
 
   it("scores meet-and-confer below posture hearings", () => {
