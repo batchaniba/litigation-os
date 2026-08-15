@@ -39,9 +39,9 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 | Representation | Pro Se / In Propria Persona |
 | Jurisdictions | USDC E.D. Cal., USDC N.D. Cal., San Joaquin Sup. Ct., Alameda Sup. Ct., Sacramento Sup. Ct., Santa Clara Sup. Ct. |
 | Total Matters | 34 |
-| Active / Open | 18 |
+| Active / Open | 15 |
 | — of which Settled | 1 (Matter 22 — Newanforbi v. Pilot Travel Centers LLC, Jul. 14, 2026) |
-| Dismissed / Closed / Abandoned | 16 |
+| Dismissed / Closed / Abandoned | 19 |
 | Aggregate Exposure (Conservative) | ~$1,161,000+ |
 | Aggregate Exposure (Moderate) | ~$2,957,000+ |
 | Aggregate Exposure (Aggressive) | ~$6,579,000+ |
@@ -49,7 +49,7 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 <!-- PORTFOLIO:OVERVIEW_TABLE:END -->
 
 <!-- PORTFOLIO:CLOSED_COUNT_NOTE:START -->
-*Of the 16 dismissed/closed/abandoned matters: 7 abandoned, 7 dismissed, 2 otherwise closed (structured `lifecycle` on each matter JSON). See [All Matters](#all-matters) below for the full disposition table. Pre-filing matters stay in the Active table.*
+*Of the 19 dismissed/closed/abandoned matters: 7 abandoned, 10 dismissed, 2 otherwise closed (structured `lifecycle` on each matter JSON). See [All Matters](#all-matters) below for the full disposition table. Pre-filing matters stay in the Active table.*
 <!-- PORTFOLIO:CLOSED_COUNT_NOTE:END -->
 
 > **Housing status:** Homeless since July 2, 2026 — a direct consequence of a retaliatory inter-county parole transfer (Stockton → Santa Clara) imposed immediately after filing Matter 15 (*Newanforbi v. CDCR, et al.*). The transfer caused loss of Stockton family housing; Matters 3, 9, and 19 are also potential retaliatory predicate acts.
@@ -156,9 +156,6 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 <!-- PORTFOLIO:ACTIVE_MATTERS:START -->
 | # | Caption | Case No. | Court | Type | Status |
 |---|---|---|---|---|---|
-| 1 | Newanforbi v. CHP et al. | 2:25-cv-01460-DC-CSK | USDC E.D. Cal. | Federal | F&R pending — objections filed, District Judge review |
-| 2 | Newanforbi v. Meza-Gonzalez et al. | 26CV168913 | Alameda Sup. Ct. | State | Stayed — U-Visa motion heard Jun. 18, 2026, no ruling |
-| 7 | Newanforbi v. Candelaria | 2:26-cv-00983-DC-CSK | USDC E.D. Cal. | Federal | F&R pending — objections filed, District Judge review |
 | 12 | Brendan Ngwa Nforbi v. Diamond Truck Sales, Inc. | STK-CV-UF-2026-0001094 | San Joaquin Sup. Ct. | State | Defense appeared, disputes service — CMC Dec. 11, 2026 |
 | 19 | Newanforbi v. Macomber | C2604791 | Santa Clara Sup. Ct. | State | HC-004 ready to file — ruling overdue since Aug. 1, 2026 |
 | 20 | Newanforbi v. California Highway Patrol, et al. | 26CV191136 | Alameda Sup. Ct. | State | Demurrer hearing Aug. 28, 2026 — CMC continued to Sep. 2 |
@@ -185,10 +182,13 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 <!-- PORTFOLIO:CLOSED_MATTERS:START -->
 | # | Caption | Case No. | Court | Disposition |
 |---|---|---|---|---|
+| 1 | Newanforbi v. CHP et al. | 2:25-cv-01460-DC-CSK | USDC E.D. Cal. | Dismissed w/o prejudice — Aug. 15; refiled as Matter 32 |
+| 2 | Newanforbi v. Meza-Gonzalez et al. | 26CV168913 | Alameda Sup. Ct. | Dismissed w/o prejudice — Aug. 15, 2026 |
 | 3 | Newanforbi v. Derrick et al. | 2:26-cv-00004-DJC-JDP | USDC E.D. Cal. | Abandoned — MTD granted, FAC leave to amend Jul. 24, 2026 |
 | 4 | Newanforbi v. Derrick et al. | TBD | San Joaquin Sup. Ct. | Abandoned — voluntarily dismissed |
 | 5 | Newanforbi v. Palacios et al. | STK-CV-UF-2026-0001032 | San Joaquin Sup. Ct. | Dismissed — demurrer sustained w/o leave Jul. 15, 2026 |
 | 6 | Newanforbi v. HOPE et al. | 2:26-cv-00195-TLN-AC | USDC E.D. Cal. | Dismissed without prejudice — Jun. 1, 2026 |
+| 7 | Newanforbi v. Candelaria | 2:26-cv-00983-DC-CSK | USDC E.D. Cal. | Dismissed w/o prejudice — Aug. 15; refiled as Matter 33 |
 | 8 | Newanforbi v. Candelaria, et al. | 26WM000135 | Sacramento Sup. Ct. | Abandoned — fee-payment deadline lapsed Jul. 27, 2026 |
 | 9 | Newanforbi v. Macomber | 26WM000028 | Sacramento Sup. Ct. | Closed — demurrer sustained May 29, 2026 |
 | 10 | Newanforbi v. Macomber | C2602632 | Santa Clara Sup. Ct. | Closed — petition denied w/o prejudice Apr. 27, 2026 |
@@ -215,7 +215,7 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | Date | Matter | Event |
 |---|---|---|
 | Aug. 14, 2026 | 26 | Meet-and-confer target date (computed) — Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113) |
-| Aug. 19, 2026 | 7, 8 | Gov. claim deadline — Candelaria state tort Bane Act damages (6 months from Feb. 19, 2026 accrual; claim must be filed with DGS) |
+| Aug. 19, 2026 | 7, 8, 33 | Gov. claim deadline — Candelaria state tort Bane Act damages (6 months from Feb. 19, 2026 accrual; claim must be filed with DGS). Independent of Matter 7's federal case status (dismissed Aug. 15, 2026) |
 | Aug. 19, 2026 | 25 | Meet-and-confer deadline (computed) — Newanforbi v. Federal Express Corporation (STK-CV-UWT-2026-0009118) |
 | Aug. 21, 2026 | 20 | AG reply deadline (computed) — Respondents' Reply to Petitioner's Opposition to Demurrer due 5 court days before Aug. 28, 2026 hearing per CRC 3.1320(b) — Newanforbi v. California Highway Patrol et al. (26CV191136) |
 | Aug. 21, 2026 | 26 | Responsive pleading deadline (computed) — Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113); 30 days from the Jul. 22, 2026 service date (CCP §412.20(a)(3)) |
@@ -239,7 +239,7 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | Oct. 22, 2026 | 33 | Deadline to file ADR Certification (ADR L.R. 3) and to meet and confer regarding initial disclosures, early settlement, ADR process selection, and a discovery plan (Fed. R. Civ. P. 26(f)) — Nforbi v. |
 | Oct. 22, 2026 | 28 | Initial Case Management Conference — Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504), 1:30 PM, Hon. Lisa J. Cisneros, San Francisco (videoconference only) |
 | Oct. 23, 2026 | 20 | Continued hearing on the Dutra joinder and demurrer to the Petition for Writ of Mandate, Newanforbi v. California Highway Patrol, et al. (Matter 20) — Dept. 25 |
-| Nov. 1, 2026 | 1 | CCP §335.1 two-year statute of limitations (computed) for the Fourth Amendment stop/search/arrest claim in Matter 1 (Newanforbi v. |
+| Nov. 1, 2026 | 1, 2, 32 | CCP §335.1 two-year statute of limitations (computed) backstop, running from the Nov. 1, 2024 incident. (1) Matter 1's Fourth Amendment §1983 claim (borrowed two-year period): Matter 1 was voluntarily dismissed without… |
 | Nov. 5, 2026 | 33 | Deadline to make initial disclosures (Fed. R. Civ. P. 26(a)(1)) and to file the Joint Case Management Statement (Standing Order for All Judges of the Northern District of California) — Nforbi v. |
 | Nov. 8, 2026 | 33 | Fed. R. Civ. P. 4(m) service deadline (computed) — 90 days from the Aug. 10, 2026 docketing of Nforbi v. Candelaria et al. (3:26-cv-08272-LJC) to serve Diana Candelaria and Steve Gordon. |
 | Nov. 12, 2026 | 33 | Initial Case Management Conference, 1:30 p.m. by Zoom (cand.uscourts.gov/ljc) before Magistrate Judge Lisa J. Cisneros — Nforbi v. Candelaria et al. (3:26-cv-08272-LJC), set by the Dkt. 4 order. |
@@ -407,7 +407,7 @@ Controls (reconfirm when batching): *Richardson v. McKnight*, 521 U.S. 399 must 
 | NOT_FOUND | 6 |
 | UNVERIFIED | 426 |
 
-Paired authorities: **755**. P0 (plaintiff-only UNVERIFIED): **4**. P1 (plaintiff-only bad status): **27**. Ledger date: 2026-08-14.
+Paired authorities: **755**. P0 (plaintiff-only UNVERIFIED): **4**. P1 (plaintiff-only bad status): **27**. Ledger date: 2026-08-15.
 <!-- PORTFOLIO:CITATION_SCOREBOARD:END -->
 
 Priority queues from the ledger: **P0** = plaintiff-only + still `UNVERIFIED` (`npm run citations:queue`); **P1** = plaintiff-only + bad status (fix before the next brief). Pre-existing fabricated hits are debt-tracked in `citation_known_bad_debt.json` so CI stays green while corrected drafts replace them.
