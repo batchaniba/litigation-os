@@ -116,7 +116,7 @@
   },
   {
     "date": "Oct. 22, 2026",
-    "event": "Deadline to file ADR Certification (ADR L.R. 3) and to meet and confer regarding initial disclosures, early settlement, ADR process selection, and a discovery plan (Fed. R. Civ. P. 26(f)) — Nforbi v. Candelaria et al. (3:26-cv-08272-LJC), per the Dkt. 4 Order Setting Initial Case Management Conference and ADR Deadlines. Both defendants must be served and appearing for a meaningful Rule 26(f) conference, so this date is downstream of the Nov. 8, 2026 Rule 4(m) service deadline",
+    "event": "Deadline to file ADR Certification (ADR L.R. 3) and to meet and confer regarding initial disclosures, early settlement, ADR process selection, and a discovery plan (Fed. R. Civ. P. 26(f)) — Nforbi v. Candelaria et al. (3:26-cv-08272-LJC), per the Dkt. 4 Order Setting Initial Case Management Conference and ADR Deadlines. Both defendants were personally served Aug. 14, 2026, well ahead of this date, so a meaningful Rule 26(f) conference is achievable on schedule",
     "matters": [
       33
     ],
@@ -138,12 +138,12 @@
   },
   {
     "date": "Nov. 8, 2026",
-    "event": "Fed. R. Civ. P. 4(m) service deadline (computed) — 90 days from the Aug. 10, 2026 docketing of Nforbi v. Candelaria et al. (3:26-cv-08272-LJC) to serve Diana Candelaria and Steve Gordon. Summonses issued as Dkt. 2 on Aug. 10, 2026; neither defendant is served. Note that Dkt. 4 also requires the scheduling order itself and the Civil L.R. 4-2 supplementary material to be served together with the complaint. Falls on a Sunday and four days before the Nov. 12, 2026 initial conference, so the practical cutoff is earlier",
+    "event": "Fed. R. Civ. P. 4(m) service deadline (computed) — 90 days from the Aug. 10, 2026 docketing of Nforbi v. Candelaria et al. (3:26-cv-08272-LJC) to serve Diana Candelaria and Steve Gordon. SATISFIED — both defendants were personally served Aug. 14, 2026 (Dkt. 2 summonses via Sacramento County Sheriff at DMV Legal Affairs Division), well within the Rule 4(m) window. Retained for reference only; no action required",
     "matters": [
       33
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "you"
   },
   {
@@ -154,6 +154,76 @@
     ],
     "type": "hearing",
     "source": "/documents/matter-33/ndcal/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026).pdf",
+    "upcoming": true
+  },
+  {
+    "date": "Aug. 14, 2026",
+    "event": "SERVED — Santiago Meza-Gonzalez and Jose Melano personally served with the Dkt. 1 Complaint, Dkt. 3 Summonses, and Dkt. 4 Order Setting Initial CMC and ADR Deadlines, Nforbi v. Meza-Gonzalez, et al. (3:26-cv-08271-PHK, N.D. Cal.), via the Stanislaus County Sheriff (Meza-Gonzalez, CHP Modesto Area) and Sacramento County Sheriff (Melano, CHP South Sacramento Area), per the SER-001 requests e-signed Aug. 13, 2026. Rule 4(m) (Nov. 8, 2026) satisfied. Answer or Rule 12 motion due Sep. 4, 2026 (FRCP 12(a)(1)(A)(i), 21 days).",
+    "matters": [
+      32
+    ],
+    "type": "filing",
+    "upcoming": false
+  },
+  {
+    "date": "Aug. 14, 2026",
+    "event": "SERVED — Diana Candelaria and Steve Gordon personally served with the Dkt. 1 Complaint, Dkt. 2 Summonses, and Dkt. 4 Order Setting Initial CMC and ADR Deadlines, Nforbi v. Candelaria et al. (3:26-cv-08272-LJC, N.D. Cal.), via the Sacramento County Sheriff at the DMV Legal Affairs Division, per the SER-001 requests e-signed Aug. 13, 2026. Rule 4(m) (Nov. 8, 2026) satisfied. Answer or Rule 12 motion due Sep. 4, 2026 (FRCP 12(a)(1)(A)(i), 21 days).",
+    "matters": [
+      33
+    ],
+    "type": "filing",
+    "upcoming": false
+  },
+  {
+    "date": "Sep. 4, 2026",
+    "event": "Responsive pleading deadline (computed) — Santiago Meza-Gonzalez and Jose Melano, Nforbi v. Meza-Gonzalez, et al. (3:26-cv-08271-PHK, N.D. Cal.); 21 days from the Aug. 14, 2026 personal service date (FRCP 12(a)(1)(A)(i)). Falls on a Friday; no weekend/holiday extension applies.",
+    "matters": [
+      32
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "opposing"
+  },
+  {
+    "date": "Sep. 4, 2026",
+    "event": "Responsive pleading deadline (computed) — Diana Candelaria and Steve Gordon, Nforbi v. Candelaria et al. (3:26-cv-08272-LJC, N.D. Cal.); 21 days from the Aug. 14, 2026 personal service date (FRCP 12(a)(1)(A)(i)). Falls on a Friday; no weekend/holiday extension applies.",
+    "matters": [
+      33
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "opposing"
+  },
+  {
+    "date": "Nov. 12, 2026",
+    "event": "Deadline to file ADR Certification (ADR L.R. 3) and to meet and confer regarding initial disclosures, early settlement, ADR process selection, and a discovery plan (Fed. R. Civ. P. 26(f)) — Nforbi v. Meza-Gonzalez, et al. (3:26-cv-08271-PHK), per the Dkt. 4 Order Setting Initial Case Management Conference and ADR Deadlines. Both defendants served Aug. 14, 2026, well ahead of this date.",
+    "matters": [
+      32
+    ],
+    "type": "deadline",
+    "source": "/documents/matter-32/ndcal/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026).pdf",
+    "upcoming": true,
+    "actor": "you"
+  },
+  {
+    "date": "Nov. 25, 2026",
+    "event": "Deadline to make initial disclosures (Fed. R. Civ. P. 26(a)(1)) and to file the Joint Case Management Statement (Standing Order for All Judges of the Northern District of California) — Nforbi v. Meza-Gonzalez, et al. (3:26-cv-08271-PHK), per the Dkt. 4 order; one week before the initial case management conference",
+    "matters": [
+      32
+    ],
+    "type": "deadline",
+    "source": "/documents/matter-32/ndcal/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026).pdf",
+    "upcoming": true,
+    "actor": "you"
+  },
+  {
+    "date": "Dec. 2, 2026",
+    "event": "Initial Case Management Conference, 11:00 a.m., Courtroom F, 450 Golden Gate Ave., San Francisco, before Magistrate Judge Peter H. Kang — Nforbi v. Meza-Gonzalez, et al. (3:26-cv-08271-PHK), set by the Dkt. 4 order. If this date moves, the Nov. 12 and Nov. 25, 2026 deadlines shift with it unless the court orders otherwise",
+    "matters": [
+      32
+    ],
+    "type": "hearing",
+    "source": "/documents/matter-32/ndcal/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026).pdf",
     "upcoming": true
   },
   {
