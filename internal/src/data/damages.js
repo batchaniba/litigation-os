@@ -40,6 +40,16 @@ export const damages_table = [
 //   contingent on Plaintiff's parole discharge timing (see matters.js status field). Its dedicated
 //   row above was restored accordingly; it had previously been removed here on a mistaken
 //   "abandoned" premise that the litigant has since corrected.
+// - Matters 1, 2, and 7 (CHP cluster) were voluntarily dismissed without prejudice Aug. 15, 2026.
+//   Unlike Matters 3/5/15 above, Matters 1's and 7's claims were refiled as successor N.D. Cal.
+//   dockets (Matter 32 and Matter 33, respectively) rather than extinguished, so their category-row
+//   dollar contributions are intentionally NOT subtracted here — Matter 32/33 already carry $0
+//   placeholder rows below specifically to avoid double-counting against 1/7. Matter 2's claims
+//   (False Imprisonment / Battery / Bane Act rows) have NO successor docket as of this writing —
+//   see Matter 2's own flagged risk and the "matter2-state-claims-gap" crossMatter.json exposure —
+//   and remain included here pending confirmation of whether they were abandoned; if so confirmed,
+//   subtract Matter 2's share of the False Imprisonment, Bane Act/Treble, and Emotional Distress
+//   rows following the pattern above.
 
 // Per-matter bottoms-up breakdown — individual case ceilings before deduplication
 // Portfolio view above avoids double-counting shared economic events (e.g., same CDL
@@ -49,8 +59,8 @@ const matter_damages_raw = [
   {
     number: 1,
     claims: "4th / 14th Amend. §1983 — officers individually",
-    risk: "Significant QI risk — MTD pending; Monell/punitive conceded in opposition",
-    settlement_note: "Package with Matter 2; CHP/State through AG; EPLI carrier drives resolution",
+    risk: "DISMISSED without prejudice Aug. 15, 2026 (mooted the pending MTD/F&R); claims refiled in Matter 32. Historical QI risk note: Monell/punitive conceded in opposition.",
+    settlement_note: "Superseded by Matter 32 (N.D. Cal.) — use Matter 32 for live settlement packaging; CHP/State through AG; EPLI carrier drives resolution",
     conservative: 100000,
     moderate: 225000,
     aggressive: 425000,
@@ -90,8 +100,8 @@ const matter_damages_raw = [
   {
     number: 2,
     claims: "False Imprisonment, Battery, Bane Act",
-    risk: "Favorable — no QI in state court; U-Visa certification motion adds leverage",
-    settlement_note: "Package with Matter 1; state tort claims survive federal outcome regardless",
+    risk: "DISMISSED without prejudice Aug. 15, 2026 — no successor docket. Matter 32 (N.D. Cal.) does not plead these state-law theories or name State of California/CHP; confirm intentional abandonment or amend/refile before the Nov. 1, 2026 CCP §335.1 backstop.",
+    settlement_note: "No live vehicle as of Aug. 15, 2026 dismissal — do not package with Matter 32 without first amending it (28 U.S.C. §1367) or refiling in state court to carry these claims forward",
     conservative: 100000,
     moderate: 175000,
     aggressive: 350000,
@@ -201,8 +211,8 @@ const matter_damages_raw = [
   {
     number: 7,
     claims: "14th Amend. Structural Bias §1983 — DMV APS",
-    risk: "Favorable — QI rebutted by 6 independent clearly-established-law findings; structural error = no prejudice showing required",
-    settlement_note: "DMV Director Gordon (official capacity) creates policy-change settlement pressure; Candelaria personally signed void decision",
+    risk: "DISMISSED without prejudice Aug. 15, 2026 (mooted the pending F&R/Objections); claims refiled in Matter 33. Historical QI note: rebutted by 6 independent clearly-established-law findings; structural error = no prejudice showing required.",
+    settlement_note: "Superseded by Matter 33 (N.D. Cal.) — use Matter 33 for live settlement packaging; DMV Director Gordon (official capacity) creates policy-change settlement pressure; Candelaria personally signed void decision",
     conservative: 275000,
     moderate: 475000,
     aggressive: 700000,
@@ -717,7 +727,7 @@ const matter_damages_raw = [
   {
     number: 32,
     claims: "§1983 — six causes (unlawful entry/search/arrest, Franks, fabrication, 1A retaliation)",
-    risk: "Overlaps Matter 2 (state) and Matter 24 (related N.D. Cal.) — manage claim-splitting; do not double-count CDL wages with Matters 1/2",
+    risk: "Matters 1 and 2 confirmed dismissed Aug. 15, 2026 — this is now the live vehicle for Matter 1's federal claims. [FLAGGED: Matter 2's state-law claims (False Imprisonment, Battery, Bane Act) and the State/CHP defendant are NOT pled here and have no other successor — confirm intentional abandonment or amend before Nov. 1, 2026.] Also watch potential FRCP 41(a)(1)(B) two-dismissal exposure from Matter 13's prior notice dismissal of the overlapping five-day-hold claim — see internal/docs/MATTER_01_FORUM_TRANSFER_ANALYSIS.md §3.2. Overlaps Matter 24 (related N.D. Cal.) — manage claim-splitting.",
     settlement_note: "Operative complaint pleads >$214,000 compensatory. Portfolio row stays $0 so the shared Nov. 1 / CDL wage-loss period is not double-counted against Matters 1 and 2; use Matter 32's pleaded figure in N.D. Cal. negotiations.",
     conservative: 0,
     moderate: 0,
@@ -734,7 +744,7 @@ const matter_damages_raw = [
   {
     number: 33,
     claims: "§1983 APS structural bias / fair hearing / vacatur vs Candelaria & Gordon",
-    risk: "Refile after alleged Matter 7 voluntary dismissal — confirm E.D. Cal. docket; coordinate with Matter 32 and Serrato related-case notice",
+    risk: "Matter 7 confirmed dismissed Aug. 15, 2026 — this is now the live vehicle for those claims. Coordinate with Matter 32 and Serrato related-case notice.",
     settlement_note: "Operative complaint pleads >$214,000 compensatory / $250,000 JS-44 min. Portfolio row stays $0 so the APS / CDL wage-loss period is not double-counted against Matter 7; use Matter 33's pleaded figure in N.D. Cal. negotiations.",
     conservative: 0,
     moderate: 0,
