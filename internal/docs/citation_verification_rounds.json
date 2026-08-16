@@ -1,6 +1,6 @@
 {
-  "round": "2026-08-09 Round 4 — portfolio P0 (batches A–D; LACW WL correction); Round 5 multisource (CourtListener + CAP); Round 5b Matter 28 full funnel; Round 6 spot-check of the Matter 33 conformed complaint (3:26-cv-08272-LJC, Dkt. 1) page-43 immunity sentence; Round 7 authorities cited in the Serrato IFP screening order (Matter 24, Dkt. 5) after OCR made that scan searchable",
-  "method": "Round 4: WebSearch after Richardson(+) / Leman(−) controls. Round 5: CourtListener /api/rest/v4/search/ + CAP static.case.law for controls/high-risk. Round 5b: all Matter 28 indexed authorities through lookup-citations.py --matter 28 (→ citation_lookup_matter28.json). Justia Cloudflare-blocked; Scholar unreliable; api.case.law JSON and CL citation-lookup need auth. Existence FOUND does not clear prior MISCHARACTERIZED/MISCITED proposition problems. Table-page F.3d pins can host multiple dispositions — do not treat first CL hit as unique. Round 7: the June 29, 2026 Serrato IFP/screening order was an image-only scan contributing nothing to the index until internal/scripts/ocr-text-layer.py added a text layer; its authorities were then probed through lookup-citations.py (→ citation_lookup_serrato_order.json) behind the same Richardson(+) / Leman(−) controls. These are a court's own citations, so they carry role court_order and never enter the plaintiff-only P0/P1 queues.",
+  "round": "2026-08-09 Round 4 — portfolio P0 (batches A–D; LACW WL correction); Round 5 multisource (CourtListener + CAP); Round 5b Matter 28 full funnel; Round 6 spot-check of the Matter 33 conformed complaint (3:26-cv-08272-LJC, Dkt. 1) page-43 immunity sentence; Round 7 authorities cited in the Serrato IFP screening order (Matter 24, Dkt. 5) after OCR made that scan searchable; Round 8 — OCR tranche (16 plaintiff filings + court orders: Matters 5/12/15/25/26/33, Barocio opinion)",
+  "method": "Round 4: WebSearch after Richardson(+) / Leman(−) controls. Round 5: CourtListener /api/rest/v4/search/ + CAP static.case.law for controls/high-risk. Round 5b: all Matter 28 indexed authorities through lookup-citations.py --matter 28 (→ citation_lookup_matter28.json). Justia Cloudflare-blocked; Scholar unreliable; api.case.law JSON and CL citation-lookup need auth. Existence FOUND does not clear prior MISCHARACTERIZED/MISCITED proposition problems. Table-page F.3d pins can host multiple dispositions — do not treat first CL hit as unique. Round 7: the June 29, 2026 Serrato IFP/screening order was an image-only scan contributing nothing to the index until internal/scripts/ocr-text-layer.py added a text layer; its authorities were then probed through lookup-citations.py (→ citation_lookup_serrato_order.json) behind the same Richardson(+) / Leman(−) controls. These are a court's own citations, so they carry role court_order and never enter the plaintiff-only P0/P1 queues. Round 8: after ocr-text-layer.py on the 16-document plaintiff_filing/court_order tranche, probed new P0 Matter 12/15 authorities (citation_lookup_matter12_p0.json) and Barocio screening-order authorities (citation_lookup_barocio_order.json). McCorkle manually confirmed on CourtListener when CAP lacked cal2d/70.",
   "controls": {
     "positive": {
       "citation": "Richardson v. McKnight, 521 U.S. 399 (1997)",
@@ -1956,6 +1956,216 @@
       "citation": "Castillo v. Marshall, 207 F.3d 15",
       "status": "UNVERIFIED",
       "notes": "DOES NOT RESOLVE, and the discrepancy is in the order rather than in the OCR — the scan reads 'See Castillo v. Marshall, 207 F.3d 15, 15 (9th Cir. 1997)' at 600 dpi. CourtListener indexes no opinion captioned Castillo v. Marshall and returns nothing for '207 F.3d 15'; CAP finds no case beginning at page 15 of f3d/207. The volume and year are also inconsistent with each other, since 207 F.3d dates to 2000 rather than 1997. Left UNVERIFIED rather than NOT_FOUND: CourtListener and CAP cover 1997 Ninth Circuit unpublished table dispositions unevenly, and NOT_FOUND in this ledger means a confirmed fabrication. This is the court's own citation in a screening order, carries role court_order, and is not plaintiff citation debt — but it is the one authority in Dkt. 5 that cannot be confirmed, so do not repeat it in a portfolio filing without independent confirmation."
+    },
+    {
+      "citation": "Aryeh v. Canon Business Solutions, Inc, 55 Cal. 4th 1185 (2013)",
+      "status": "VERIFIED",
+      "notes": "Round 8: FOUND on CourtListener/CAP for complaint OCR tranche (Aryeh v. Canon Business Solutions, Inc.). Existence only."
+    },
+    {
+      "citation": "Marks v. Minnesota Mining, 187 Cal.App. 3d 1429 (1986)",
+      "status": "VERIFIED",
+      "notes": "Round 8: FOUND on CourtListener/CAP for complaint OCR tranche (Marks v. Minnesota Mining & Manufacturing Co.). Existence only."
+    },
+    {
+      "citation": "McCorkle v. City of Los Angeles, 70 Cal. 2d 252 (1969)",
+      "status": "VERIFIED",
+      "notes": "Round 8: automated probe returned UNKNOWN (CAP has no cal2d/70 volume), but CourtListener resolves McCorkle v. City of Los Angeles at 70 Cal. 2d 252. Existence only. Surfaced from Matter 15 complaint OCR."
+    },
+    {
+      "citation": "See Bily v. Arthur Young, 3 Cal. 4th 370 (1992)",
+      "status": "VERIFIED",
+      "notes": "Round 8: FOUND on CourtListener/CAP for complaint OCR tranche (Bily v. Arthur Young & Co.). Existence only."
+    },
+    {
+      "citation": "See Cel-Tech Communications, Inc. v. Los Angeles Cellular Telephone Co, 20 Cal. 4th 163 (1999)",
+      "status": "VERIFIED",
+      "notes": "Round 8: FOUND on CourtListener/CAP for complaint OCR tranche (Cel-Tech Communications, Inc. v. Los Angeles Cellular Telephone Co.). Existence only."
+    },
+    {
+      "citation": "See Fox v. Ethicon Endo-Surgery, Inc, 35 Cal. 4th 797 (2005)",
+      "status": "VERIFIED",
+      "notes": "Round 8: FOUND on CourtListener/CAP for complaint OCR tranche (Fox v. Ethicon Endo-Surgery, Inc.). Existence only."
+    },
+    {
+      "citation": "See LiMandri v. Judkins, 52 Cal.App. 4th 326 (1997)",
+      "status": "VERIFIED",
+      "notes": "Round 8: FOUND on CourtListener/CAP for complaint OCR tranche (LiMandri v. Judkins). Existence only."
+    },
+    {
+      "citation": "See Sullivan v. County of Los Angeles, 12 Cal. 3d 710 (1974)",
+      "status": "VERIFIED",
+      "notes": "Round 8: FOUND on CourtListener/CAP for complaint OCR tranche (Sullivan v. County of Los Angeles). Existence only."
+    },
+    {
+      "citation": "Sullivan v. County of Los Angeles, 12 Cal. 3d 710 (1974)",
+      "status": "VERIFIED",
+      "notes": "Round 8: FOUND on CourtListener/CAP for complaint OCR tranche (Sullivan v. County of Los Angeles). Existence only."
+    },
+    {
+      "citation": "Ashcroft v. Iqbal, 556 U.S. 662 (2009)",
+      "status": "VERIFIED",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Ashcroft v. Iqbal). Existence only — court_order role."
+    },
+    {
+      "citation": "Bell Atlantic Corp. v. Twombly, 550 U.S. 544 (2007)",
+      "status": "VERIFIED",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Bell Atlantic Corp. v. Twombly). Existence only — court_order role."
+    },
+    {
+      "citation": "Bruce v. YIst, 351 F. 3d 1283",
+      "status": "VERIFIED",
+      "notes": "Round 8: pin resolves as Bruce v. Ylst — CAPTION_MISMATCH is party-name expansion only. Existence only; court_order."
+    },
+    {
+      "citation": "City of Cleburne Texas v. Cleburne Living Center, 473 U.S. 432 (1985)",
+      "status": "VERIFIED",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (City of Cleburne v. Cleburne Living Center, Inc.). Existence only — court_order role."
+    },
+    {
+      "citation": "Conley v. Gibson, 355 U.S. 41 (1957)",
+      "status": "VERIFIED",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Conley v. Gibson). Existence only — court_order role."
+    },
+    {
+      "citation": "Davis v. Scherer, 468 U.S. 183 (1984)",
+      "status": "VERIFIED",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Davis v. Scherer). Existence only — court_order role."
+    },
+    {
+      "citation": "Engquist v. Oregon Department, 553 U.S. 591 (2008)",
+      "status": "VERIFIED",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Engquist v. Oregon Department of Agriculture). Existence only — court_order role."
+    },
+    {
+      "citation": "Erickson v. Pardus, 551 U.S. 89 (2007)",
+      "status": "VERIFIED",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Erickson v. Pardus). Existence only — court_order role."
+    },
+    {
+      "citation": "Frazier v. Dubois, 922 F. 2d 560",
+      "status": "VERIFIED",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Frazier v. Dubois). Existence only — court_order role."
+    },
+    {
+      "citation": "Ivey v. Bd. of Regents, 673 F. 2d 266",
+      "status": "VERIFIED",
+      "notes": "Round 8: pin resolves as Ivey v. Board of Regents — CAPTION_MISMATCH is party-name expansion only. Existence only; court_order."
+    },
+    {
+      "citation": "Johnson v. Duffy, 588 F. 2d 740",
+      "status": "VERIFIED",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Johnson v. Duffy). Existence only — court_order role."
+    },
+    {
+      "citation": "Jones v. Cmty. Redev. Agency, 733 F. 2d 646",
+      "status": "VERIFIED",
+      "notes": "Round 8: pin resolves as Jones v. Community Redevelopment Agency of Los AngeLes — CAPTION_MISMATCH is party-name expansion only. Existence only; court_order."
+    },
+    {
+      "citation": "Jones v. Williams, 297 F. 3d 930",
+      "status": "VERIFIED",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Jones v. Williams). Existence only — court_order role."
+    },
+    {
+      "citation": "Lee v. City of Los Angeles, 250 F. 3d 668",
+      "status": "VERIFIED",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Lee v. City of Los Angeles). Existence only — court_order role."
+    },
+    {
+      "citation": "May v. Enomoto, 633 F. 2d 164",
+      "status": "VERIFIED",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (May v. Enomoto). Existence only — court_order role."
+    },
+    {
+      "citation": "McCollum v. Ca. Dep't, 647 F. 3d 870",
+      "status": "VERIFIED",
+      "notes": "Round 8: pin resolves as McCollum v. California Department of Corrections & Rehabilitation — CAPTION_MISMATCH is party-name expansion only. Existence only; court_order."
+    },
+    {
+      "citation": "Neitzke v. Williams, 490 U.S. 319 (1989)",
+      "status": "VERIFIED",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Neitzke v. Williams). Existence only — court_order role."
+    },
+    {
+      "citation": "Ramirez v. Galaza, 334 F. 3d 850",
+      "status": "VERIFIED",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Ramirez v. Galaza). Existence only — court_order role."
+    },
+    {
+      "citation": "Rhodes v. Robinson, 408 F. 3d 559",
+      "status": "VERIFIED",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Rhodes v. Robinson). Existence only — court_order role."
+    },
+    {
+      "citation": "Rizzo v. Goode, 423 U.S. 362 (1976)",
+      "status": "VERIFIED",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Rizzo v. Goode). Existence only — court_order role."
+    },
+    {
+      "citation": "Scheuer v. Rhodes, 416 U.S. 232 (1974)",
+      "status": "VERIFIED",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Scheuer v. Rhodes). Existence only — court_order role."
+    },
+    {
+      "citation": "SeaRiver Maritime Financial Holdings, Inc. v. Mineta, 309 F. 3d 662",
+      "status": "VERIFIED",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (SeaRiver Maritime Financial Holdings Inc. v. Mineta). Existence only — court_order role."
+    },
+    {
+      "citation": "See Hansen v. Black, 885 F. 2d 642",
+      "status": "VERIFIED",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Hansen v. Black). Existence only — court_order role."
+    },
+    {
+      "citation": "See Jackson v. Arizona, 885 F. 2d 639",
+      "status": "VERIFIED",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Jackson v. Arizona). Existence only — court_order role."
+    },
+    {
+      "citation": "See Pratt v. Rowland, 65 F. 3d 802",
+      "status": "VERIFIED",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Pratt v. Rowland). Existence only — court_order role."
+    },
+    {
+      "citation": "See Ramirez v. Cnty. of San Bernardino, 806 F. 3d 1002",
+      "status": "VERIFIED",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Ramirez v. County of San Bernardino). Existence only — court_order role."
+    },
+    {
+      "citation": "See West v. Atkins, 487 U.S. 42 (1988)",
+      "status": "VERIFIED",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (West v. Atkins). Existence only — court_order role."
+    },
+    {
+      "citation": "Starr v. Baca, 652 F. 3d 1202",
+      "status": "VERIFIED",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Starr v. Baca). Existence only — court_order role."
+    },
+    {
+      "citation": "Thornton v. City of St. Helens, 425 F. 3d 1158",
+      "status": "VERIFIED",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Thornton v. City of St. Helens). Existence only — court_order role."
+    },
+    {
+      "citation": "Village of Willowbrook v. Olech, 528 U.S. 562 (2000)",
+      "status": "VERIFIED",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Village of Willowbrook v. Olech). Existence only — court_order role."
+    },
+    {
+      "citation": "Watison v. Carter, 668 F. 3d 1108",
+      "status": "VERIFIED",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Watison v. Carter). Existence only — court_order role."
+    },
+    {
+      "citation": "Wilkinson v. Austin, 545 U.S. 209 (2005)",
+      "status": "VERIFIED",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Wilkinson v. Austin). Existence only — court_order role."
+    },
+    {
+      "citation": "Wood v. Yordy, 753 F. 3d 899",
+      "status": "VERIFIED",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Wood v. Yordy). Existence only — court_order role."
     }
   ],
   "multisourceConfirmation": {
@@ -2193,5 +2403,15 @@
       "Castillo v. Marshall, 207 F.3d 15",
       "United States v. Biao, 2011 WL 607087"
     ]
+  },
+  "ocrTrancheMultisource": {
+    "date": "2026-08-16",
+    "documentsOcr": 16,
+    "pagesOcr": 134,
+    "artifacts": [
+      "internal/docs/citation_lookup_matter12_p0.json",
+      "internal/docs/citation_lookup_barocio_order.json"
+    ],
+    "note": "16 plaintiff_filing + court_order PDFs OCR'd; no_text_layer count 73→57; known-bad gate stayed green."
   }
 }
