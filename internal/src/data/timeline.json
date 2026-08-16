@@ -1518,18 +1518,26 @@
   },
   {
     "date": "Jul. 7, 2026",
-    "event": "Notices of Change of Address filed in all 12 active matters (California Rules of Court, rule 2.200; Local Rule 182(f) in federal actions), reflecting Plaintiff's relocation from 1455 Cat Tail Drive, Stockton, CA 95204 to 1090 S Milpitas Blvd, Unit #304, Milpitas, CA 95035 — consistent with the July 2, 2026 retaliatory transfer of parole supervision to Santa Clara County",
+    "event": "Notices of Change of Address filed (California Rules of Court, rule 2.200; Local Rule 182(f) in federal actions), reflecting Plaintiff's relocation from 1455 Cat Tail Drive, Stockton, CA 95204 to 1090 S Milpitas Blvd, Unit #304, Milpitas, CA 95035 — consistent with the July 2, 2026 retaliatory transfer of parole supervision to Santa Clara County. CORRECTED: this entry previously read that the notices went out in all 12 active matters and that Milpitas was the resulting address of record. Only four copies of this July 7 version are in the document set (Matters 2, 8, 19, and 20); the rest carry the superseding July 10, 2026 notice that moved the address back to Stockton. See the Jul. 10, 2026 entry — 1455 Cat Tail Drive is the operative address.",
+    "matters": [
+      2,
+      8,
+      19,
+      20
+    ],
+    "type": "filing"
+  },
+  {
+    "date": "Jul. 10, 2026",
+    "event": "Second round of Notices of Change of Address (each dated July 10, 2026) — Plaintiff's address of record moved BACK from 1090 S Milpitas Blvd, Unit #304, Milpitas, CA 95035 to 1455 Cat Tail Drive, Stockton, CA 95204, effective immediately; telephone (209) 801-4442 and bnn.cdl@gmail.com unchanged. 1455 Cat Tail Drive is the operative address — it is the address stated in every CCP §425.115 notice executed Aug. 4–7, 2026, and the 'Mail To' address on the LASD filing receipt for the Matter 25 service request (File No. 2026080266, accepted Aug. 4, 2026). Copies of this July 10 version are on file in Matters 1, 3, 5, 7, 10, 12, 15, 22, and 24. [FLAGGED: no July 10 notice appears in the document set for Matters 2, 8, 19, or 20 — in those four the most recent notice on file is the July 7 version pointing to Milpitas, so the address of record there may still be Milpitas. Matter 19 (Santa Clara habeas C2604791, ruling overdue since Aug. 1, 2026) and Matter 20 (Alameda writ 26CV191136, Aug. 28, 2026 demurrer hearing) are both active and receive court mail at the address of record; confirm the docket and file a corrective notice where needed.] All 13 PDFs are stored under the identical filename \"Notice of Change of Address (July 7, 2026).pdf\" regardless of which version they contain, which is how the July 10 round went unrecorded.",
     "matters": [
       1,
-      2,
       3,
       5,
       7,
-      8,
+      10,
       12,
       15,
-      19,
-      20,
       22,
       24
     ],
