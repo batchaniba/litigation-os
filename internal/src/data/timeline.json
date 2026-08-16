@@ -1774,7 +1774,7 @@
       26
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "opposing"
   },
   {
