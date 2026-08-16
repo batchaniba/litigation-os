@@ -161,16 +161,6 @@
     "upcoming": true
   },
   {
-    "date": "Aug. 14, 2026",
-    "event": "Meet-and-confer target date (computed) — Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113); CCP §430.41(a)(2) requires meet-and-confer at least 5 calendar days before the Aug. 21, 2026 responsive-pleading deadline; the raw 5-day count lands on Sunday, Aug. 16, so meet-and-confer should be completed by this date if UPS intends to demur",
-    "matters": [
-      26
-    ],
-    "type": "deadline",
-    "upcoming": true,
-    "actor": "opposing"
-  },
-  {
     "date": "Aug. 19, 2026",
     "event": "Meet-and-confer deadline (computed) — Newanforbi v. Federal Express Corporation (STK-CV-UWT-2026-0009118); CCP §430.41(a)(2) requires meet-and-confer at least 5 calendar days before the Aug. 24, 2026 responsive-pleading deadline, if FedEx intends to demur; otherwise FedEx must file a declaration for the automatic 30-day extension",
     "matters": [

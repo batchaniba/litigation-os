@@ -214,7 +214,6 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 <!-- PORTFOLIO:UPCOMING_DEADLINES:START -->
 | Date | Matter | Event |
 |---|---|---|
-| Aug. 14, 2026 | 26 | Meet-and-confer target date (computed) — Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113) |
 | Aug. 19, 2026 | 7, 8, 33 | Gov. claim deadline — Candelaria state tort Bane Act damages (6 months from Feb. 19, 2026 accrual; claim must be filed with DGS). Independent of Matter 7's federal case status (dismissed Aug. 15, 2026) |
 | Aug. 19, 2026 | 25 | Meet-and-confer deadline (computed) — Newanforbi v. Federal Express Corporation (STK-CV-UWT-2026-0009118) |
 | Aug. 21, 2026 | 20 | AG reply deadline (computed) — Respondents' Reply to Petitioner's Opposition to Demurrer due 5 court days before Aug. 28, 2026 hearing per CRC 3.1320(b) — Newanforbi v. California Highway Patrol et al. (26CV191136) |
@@ -405,13 +404,13 @@ Controls (reconfirm when batching): *Richardson v. McKnight*, 521 U.S. 399 must 
 <!-- PORTFOLIO:CITATION_SCOREBOARD:START -->
 | Status | Count |
 |---|---|
-| VERIFIED | 288 |
+| VERIFIED | 302 |
 | MISCITED | 29 |
 | MISCHARACTERIZED | 6 |
 | NOT_FOUND | 6 |
-| UNVERIFIED | 426 |
+| UNVERIFIED | 431 |
 
-Paired authorities: **755**. P0 (plaintiff-only UNVERIFIED): **4**. P1 (plaintiff-only bad status): **27**. Ledger date: 2026-08-15.
+Paired authorities: **774**. P0 (plaintiff-only UNVERIFIED): **8**. P1 (plaintiff-only bad status): **27**. Ledger date: 2026-08-16.
 <!-- PORTFOLIO:CITATION_SCOREBOARD:END -->
 
 Priority queues from the ledger: **P0** = plaintiff-only + still `UNVERIFIED` (`npm run citations:queue`); **P1** = plaintiff-only + bad status (fix before the next brief). Pre-existing fabricated hits are debt-tracked in `citation_known_bad_debt.json` so CI stays green while corrected drafts replace them.
