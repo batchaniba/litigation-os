@@ -1,6 +1,6 @@
 {
   "generatedBy": "internal/scripts/verify-citations.py",
-  "generatedDate": "2026-08-15",
+  "generatedDate": "2026-08-16",
   "methodology": "Join citation_audit.json onto citation_index.json authority rows; overlay Round 4+ results from citation_verification_rounds.json. Existence checks use WebSearch plus direct CourtListener search API and CAP static.case.law CasesMetadata/HTML (see lookup-citations.py / citation_lookup_multisource.json). Positive control: Richardson v. McKnight. Negative control: In re Leman. Justia is Cloudflare-blocked here; Google Scholar is unreliable (often 403); CAP JSON API and CourtListener citation-lookup require auth.",
   "controls": {
     "positive": "Richardson v. McKnight, 521 U.S. 399 (1997) \u2014 must be findable",
@@ -38,22 +38,22 @@
       }
     }
   },
-  "corpusAuthorities": 755,
+  "corpusAuthorities": 774,
   "statusCounts": {
-    "UNVERIFIED": 426,
-    "VERIFIED": 288,
+    "UNVERIFIED": 431,
+    "VERIFIED": 302,
     "MISCITED": 29,
     "MISCHARACTERIZED": 6,
     "NOT_FOUND": 6
   },
   "queue": {
-    "plaintiffOnlyUnverified": 4,
+    "plaintiffOnlyUnverified": 8,
     "plaintiffOnlyBad": 27
   },
   "rounds": {
-    "loaded": "2026-08-09 Round 4 \u2014 portfolio P0 (batches A\u2013D; LACW WL correction); Round 5 multisource (CourtListener + CAP); Round 5b Matter 28 full funnel; Round 6 spot-check of the Matter 33 conformed complaint (3:26-cv-08272-LJC, Dkt. 1) page-43 immunity sentence",
-    "resultCount": 228,
-    "method": "Round 4: WebSearch after Richardson(+) / Leman(\u2212) controls. Round 5: CourtListener /api/rest/v4/search/ + CAP static.case.law for controls/high-risk. Round 5b: all Matter 28 indexed authorities through lookup-citations.py --matter 28 (\u2192 citation_lookup_matter28.json). Justia Cloudflare-blocked; Scholar unreliable; api.case.law JSON and CL citation-lookup need auth. Existence FOUND does not clear prior MISCHARACTERIZED/MISCITED proposition problems. Table-page F.3d pins can host multiple dispositions \u2014 do not treat first CL hit as unique."
+    "loaded": "2026-08-09 Round 4 \u2014 portfolio P0 (batches A\u2013D; LACW WL correction); Round 5 multisource (CourtListener + CAP); Round 5b Matter 28 full funnel; Round 6 spot-check of the Matter 33 conformed complaint (3:26-cv-08272-LJC, Dkt. 1) page-43 immunity sentence; Round 7 authorities cited in the Serrato IFP screening order (Matter 24, Dkt. 5) after OCR made that scan searchable",
+    "resultCount": 236,
+    "method": "Round 4: WebSearch after Richardson(+) / Leman(\u2212) controls. Round 5: CourtListener /api/rest/v4/search/ + CAP static.case.law for controls/high-risk. Round 5b: all Matter 28 indexed authorities through lookup-citations.py --matter 28 (\u2192 citation_lookup_matter28.json). Justia Cloudflare-blocked; Scholar unreliable; api.case.law JSON and CL citation-lookup need auth. Existence FOUND does not clear prior MISCHARACTERIZED/MISCITED proposition problems. Table-page F.3d pins can host multiple dispositions \u2014 do not treat first CL hit as unique. Round 7: the June 29, 2026 Serrato IFP/screening order was an image-only scan contributing nothing to the index until internal/scripts/ocr-text-layer.py added a text layer; its authorities were then probed through lookup-citations.py (\u2192 citation_lookup_serrato_order.json) behind the same Richardson(+) / Leman(\u2212) controls. These are a court's own citations, so they carry role court_order and never enter the plaintiff-only P0/P1 queues."
   },
   "knownFabricated": [
     {
@@ -572,6 +572,81 @@
       "priority": "P0_plaintiff_only_unverified"
     },
     {
+      "citation": "Califomia v. Carney, 471 U.S. 386 (1985)",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        32
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "UNVERIFIED",
+      "statusSource": "none",
+      "notes": "",
+      "sampleContext": "iners 17 within it, are constitutionally protected areas within the meaning of the Fourth Amendment. See 18 Collins V. Virginia, 584 U.S. 586, 592-93 (2018); Califomia v. Carney, 471 U.S. 386, 390-93 19 (1985); New York v. Class, 475 U.S. 106, 114-15 (1986) 20 21 60. At timestamp",
+      "locations": [
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+          "page": 19,
+          "role": "plaintiff_filing",
+          "matter": 32
+        }
+      ],
+      "priority": "P0_plaintiff_only_unverified"
+    },
+    {
+      "citation": "Devenpeck v. Alford, 3 U.S. 146 (2004)",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        32
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "UNVERIFIED",
+      "statusSource": "none",
+      "notes": "",
+      "sampleContext": ".3d 406, 432 (9th Cir. 2010). Probable cause must exist at the time of the arrest and 2 cannot be manufactured after the fact through fabricated observations. Devenpeck v. Alford, 543 3 U.S. 146, 152(2004) 4 5 70. At the moment Officer Meza-Gonzalez arrested Plaintiff - at dashca",
+      "locations": [
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+          "page": 22,
+          "role": "plaintiff_filing",
+          "matter": 32
+        }
+      ],
+      "priority": "P0_plaintiff_only_unverified"
+    },
+    {
+      "citation": "Galbraith v. County of, 307 F. 3d 1119",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        32
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "UNVERIFIED",
+      "statusSource": "none",
+      "notes": "",
+      "sampleContext": "rial facts, would not support probable cause. Franks v. Delaware, 438 U.S. 154, 155-56 17 (1978); Chism v. Washington State, 661 F.3d 380, 386 (9th Cir. 2011); Galbraith v. County of 18 Santa Clara, 307 F.3d 1119, 1126 (9th Cir. 2002) 19 20 76. Defendant Meza-Gonzalez executed un",
+      "locations": [
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+          "page": 23,
+          "role": "plaintiff_filing",
+          "matter": 32
+        }
+      ],
+      "priority": "P0_plaintiff_only_unverified"
+    },
+    {
       "citation": "ICnudsen v. DMV, 101 Cal.App. 5th 186 (2024)",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -617,6 +692,31 @@
           "page": 32,
           "role": "plaintiff_filing",
           "matter": 33
+        }
+      ],
+      "priority": "P0_plaintiff_only_unverified"
+    },
+    {
+      "citation": "See Camara v. Municipal, 387 U.S. 523 (1967)",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        32
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "UNVERIFIED",
+      "statusSource": "none",
+      "notes": "",
+      "sampleContext": "exercise of a statutory right to refuse a search or investigative procedure that is 20 expressly non-mandatory constitutes constitutionally protected conduct. See Camara v. Municipal 21 Court, 387 U.S. 523, 528-33 (1967). Plaintiffs refusal of the PAS test \u2014 a test that Officer 2",
+      "locations": [
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+          "page": 26,
+          "role": "plaintiff_filing",
+          "matter": 32
         }
       ],
       "priority": "P0_plaintiff_only_unverified"
@@ -922,6 +1022,68 @@
       "priority": "P1_plaintiff_only_bad"
     },
     {
+      "citation": "Rodriguez v. United States, 575 U.S. 348 (2015)",
+      "kind": "authority",
+      "occurrenceCount": 7,
+      "matters": [
+        1,
+        32
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "MISCITED",
+      "statusSource": "audit",
+      "notes": "Case is real and holding is accurately stated, but the litigant omitted the reporter citation entirely (just says 'In Rodriguez v. United States, the Supreme Court held...'). Minor completeness defect, not a substantive error -- easy fix.",
+      "sampleContext": "on. The right at issue has been clearly established for decades: officers may not prolong a stop or conduct a warrantless search/arrest without probable cause. Rodriguez v. United States, 575 U.S. 348 (2015) (prolonged stops); Dunaway v. New York, 442 U.S. 200 (1979); Arizona v. ",
+      "locations": [
+        {
+          "document": "/documents/matter-32/from-01/Objections to FR - April 21 2026.pdf",
+          "page": 3,
+          "role": "plaintiff_filing",
+          "matter": 1
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 2.pdf",
+          "page": 16,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 3 Operative.pdf",
+          "page": 17,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
+          "page": 21,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
+          "page": 28,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+          "page": 21,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+          "page": 28,
+          "role": "plaintiff_filing",
+          "matter": 32
+        }
+      ],
+      "priority": "P1_plaintiff_only_bad"
+    },
+    {
       "citation": "Home v. Dep't of Health Care Services, 204 Cal.App. 4th 676 (2012)",
       "kind": "authority",
       "occurrenceCount": 6,
@@ -1148,56 +1310,6 @@
       "priority": "P1_plaintiff_only_bad"
     },
     {
-      "citation": "Rodriguez v. United States, 575 U.S. 348 (2015)",
-      "kind": "authority",
-      "occurrenceCount": 5,
-      "matters": [
-        1,
-        32
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "MISCITED",
-      "statusSource": "audit",
-      "notes": "Case is real and holding is accurately stated, but the litigant omitted the reporter citation entirely (just says 'In Rodriguez v. United States, the Supreme Court held...'). Minor completeness defect, not a substantive error -- easy fix.",
-      "sampleContext": "on. The right at issue has been clearly established for decades: officers may not prolong a stop or conduct a warrantless search/arrest without probable cause. Rodriguez v. United States, 575 U.S. 348 (2015) (prolonged stops); Dunaway v. New York, 442 U.S. 200 (1979); Arizona v. ",
-      "locations": [
-        {
-          "document": "/documents/matter-32/from-01/Objections to FR - April 21 2026.pdf",
-          "page": 3,
-          "role": "plaintiff_filing",
-          "matter": 1
-        },
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 2.pdf",
-          "page": 16,
-          "role": "plaintiff_filing",
-          "matter": 32
-        },
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 3 Operative.pdf",
-          "page": 17,
-          "role": "plaintiff_filing",
-          "matter": 32
-        },
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
-          "page": 21,
-          "role": "plaintiff_filing",
-          "matter": 32
-        },
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
-          "page": 28,
-          "role": "plaintiff_filing",
-          "matter": 32
-        }
-      ],
-      "priority": "P1_plaintiff_only_bad"
-    },
-    {
       "citation": "Burrell v. Jackson, 2003 WL 23545858",
       "kind": "authority",
       "occurrenceCount": 4,
@@ -1385,6 +1497,37 @@
           "page": 8,
           "role": "plaintiff_filing",
           "matter": 20
+        }
+      ],
+      "priority": "P1_plaintiff_only_bad"
+    },
+    {
+      "citation": "See Rodriguez v. United States, 575 U.S. 348 (2015)",
+      "kind": "authority",
+      "occurrenceCount": 2,
+      "matters": [
+        32
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "MISCITED",
+      "statusSource": "audit",
+      "notes": "Case is real and holding is accurately stated, but the litigant omitted the reporter citation entirely (just says 'In Rodriguez v. United States, the Supreme Court held...'). Minor completeness defect, not a substantive error -- easy fix.",
+      "sampleContext": "and stated so aloud to his partner. 30. Under the Fourth Amendment, once the sole articulable basis for a detention is dispelled, the detention must terminate. See Rodriguez v. United States, 575 U.S. 348, 355 (2015) (mission of a stop controls its lawful duration); Illinois v. C",
+      "locations": [
+        {
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
+          "page": 10,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+          "page": 10,
+          "role": "plaintiff_filing",
+          "matter": 32
         }
       ],
       "priority": "P1_plaintiff_only_bad"
@@ -1681,31 +1824,6 @@
           "page": 3,
           "role": "plaintiff_filing",
           "matter": 28
-        }
-      ],
-      "priority": "P1_plaintiff_only_bad"
-    },
-    {
-      "citation": "See Rodriguez v. United States, 575 U.S. 348 (2015)",
-      "kind": "authority",
-      "occurrenceCount": 1,
-      "matters": [
-        32
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "MISCITED",
-      "statusSource": "audit",
-      "notes": "Case is real and holding is accurately stated, but the litigant omitted the reporter citation entirely (just says 'In Rodriguez v. United States, the Supreme Court held...'). Minor completeness defect, not a substantive error -- easy fix.",
-      "sampleContext": "and stated so aloud to his partner. 30. Under the Fourth Amendment, once the sole articulable basis for a detention is dispelled, the detention must terminate. See Rodriguez v. United States, 575 U.S. 348, 355 (2015) (mission of a stop controls its lawful duration); Illinois v. C",
-      "locations": [
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
-          "page": 10,
-          "role": "plaintiff_filing",
-          "matter": 32
         }
       ],
       "priority": "P1_plaintiff_only_bad"
@@ -3069,6 +3187,75 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Devereaux v. Abbey, 263 F. 3d 1070",
+      "kind": "authority",
+      "occurrenceCount": 10,
+      "matters": [
+        30,
+        32
+      ],
+      "roles": [
+        "other",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real at 263 F.3d 1070 (9th Cir. 2001) (en banc). Add year (2001). Fabricated-evidence due-process right recognized; plaintiff lost on the facts.",
+      "sampleContext": "ry discretion. Thornton v. Brown, 757 F.3d 834 (9th Cir. 2013). The right to be free from fabricated evidence and retaliatory transfers is clearly established. Devereaux v. Abbey, 263 F.3d 1070, 1074-75 (9th Cir. 2001) (en banc); Spencer v. Peters, 857 F.3d 789, 798 (9th Cir. 201",
+      "locations": [
+        {
+          "document": "/documents/matter-30/Complaint v9 Newanforbi v Moua NDCAL.pdf",
+          "page": 5,
+          "role": "plaintiff_filing",
+          "matter": 30
+        },
+        {
+          "document": "/documents/matter-30/Complaint v9 Newanforbi v Moua NDCAL.pdf",
+          "page": 10,
+          "role": "plaintiff_filing",
+          "matter": 30
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 2.pdf",
+          "page": 12,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 3 Operative.pdf",
+          "page": 13,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
+          "page": 24,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
+          "page": 28,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+          "page": 24,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+          "page": 28,
+          "role": "plaintiff_filing",
+          "matter": 32
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "Hughes v. Pair, 46 Cal. 4th 1035 (2009)",
       "kind": "authority",
       "occurrenceCount": 10,
@@ -3352,6 +3539,144 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Chism v. Washington State, 661 F. 3d 380",
+      "kind": "authority",
+      "occurrenceCount": 9,
+      "matters": [
+        32
+      ],
+      "roles": [
+        "other",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real at 661 F.3d 380 (9th Cir. 2011). Add year.",
+      "sampleContext": "stripped of the false statements and supplemented with the omitted facts -- would not support probable cause. Franks v. Delaware, 438 U.S. 154, 155-56 (1978); Chism v. Washington State, 661 F.3d 380, 386 (9th Cir. 2011). 39. Defendant Meza-Gonzalez executed under penalty of perju",
+      "locations": [
+        {
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 2.pdf",
+          "page": 11,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 3 Operative.pdf",
+          "page": 12,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
+          "page": 14,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
+          "page": 23,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
+          "page": 28,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+          "page": 14,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+          "page": 23,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+          "page": 28,
+          "role": "plaintiff_filing",
+          "matter": 32
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Hope v. Pelzer, 536 U.S. 730 (2002)",
+      "kind": "authority",
+      "occurrenceCount": 9,
+      "matters": [
+        24,
+        32,
+        33
+      ],
+      "roles": [
+        "other",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "audit",
+      "notes": "Real case; the 'obvious clarity' / novel-circumstances principle at ~741 is accurately paraphrased (quoting United States v. Lanier).",
+      "sampleContext": "utional rights. An official can be on notice that his conduct violates established law even in 27 novel factual circumstances where the violation is obvious. Hope v. Pelzer, 536 U.S. 730, 741 28 (2002). Page 17 COMPLAINT - NEWANFORBI v. SERRATO (N.D. Cal.) Case 4:26-cv-05953-ASK ",
+      "locations": [
+        {
+          "document": "/documents/matter-24/Complaint (Doc 1, Filed Jun 17 2026).pdf",
+          "page": 17,
+          "role": "plaintiff_filing",
+          "matter": 24
+        },
+        {
+          "document": "/documents/matter-32/from-24/1 2.pdf",
+          "page": 17,
+          "role": "other",
+          "matter": 24
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
+          "page": 29,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+          "page": 29,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal 3 Operative.pdf",
+          "page": 44,
+          "role": "plaintiff_filing",
+          "matter": 33
+        },
+        {
+          "document": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal.pdf",
+          "page": 44,
+          "role": "plaintiff_filing",
+          "matter": 33
+        },
+        {
+          "document": "/documents/matter-33/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+          "page": 44,
+          "role": "plaintiff_filing",
+          "matter": 33
+        },
+        {
+          "document": "/documents/matter-33/ndcal/FAC Ngwa Nforbi v Candelaria and Gordon NDCal (as submitted Aug 10 2026, superseded).pdf",
+          "page": 41,
+          "role": "other",
+          "matter": 33
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "Vlandis v. Kline, 412 U.S. 441 (1973)",
       "kind": "authority",
       "occurrenceCount": 9,
@@ -3490,11 +3815,10 @@
       "priority": "P2_joined"
     },
     {
-      "citation": "Devereaux v. Abbey, 263 F. 3d 1070",
+      "citation": "Costanich v. Dep't of Social, 627 F. 3d 1101",
       "kind": "authority",
       "occurrenceCount": 8,
       "matters": [
-        30,
         32
       ],
       "roles": [
@@ -3504,21 +3828,9 @@
       "plaintiffOnly": true,
       "status": "VERIFIED",
       "statusSource": "round",
-      "notes": "Real at 263 F.3d 1070 (9th Cir. 2001) (en banc). Add year (2001). Fabricated-evidence due-process right recognized; plaintiff lost on the facts.",
-      "sampleContext": "ry discretion. Thornton v. Brown, 757 F.3d 834 (9th Cir. 2013). The right to be free from fabricated evidence and retaliatory transfers is clearly established. Devereaux v. Abbey, 263 F.3d 1070, 1074-75 (9th Cir. 2001) (en banc); Spencer v. Peters, 857 F.3d 789, 798 (9th Cir. 201",
+      "notes": "Real as Costanich v. Department of Social and Health Services, 627 F.3d 1101 (9th Cir. 2010). Add year.",
+      "sampleContext": "operty. Devereaux v. Abbey, 263 F.3d 1070, 1076 (9th Cir. 2001) (en banc). Qualified immunity is not available to officers who deliberately fabricate evidence. Costanich v. Dep't of Social & Health Servs., 627 F.3d 1101,",
       "locations": [
-        {
-          "document": "/documents/matter-30/Complaint v9 Newanforbi v Moua NDCAL.pdf",
-          "page": 5,
-          "role": "plaintiff_filing",
-          "matter": 30
-        },
-        {
-          "document": "/documents/matter-30/Complaint v9 Newanforbi v Moua NDCAL.pdf",
-          "page": 10,
-          "role": "plaintiff_filing",
-          "matter": 30
-        },
         {
           "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 2.pdf",
           "page": 12,
@@ -3527,18 +3839,30 @@
         },
         {
           "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 3 Operative.pdf",
-          "page": 13,
+          "page": 14,
           "role": "plaintiff_filing",
           "matter": 32
         },
         {
           "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
-          "page": 24,
+          "page": 25,
           "role": "plaintiff_filing",
           "matter": 32
         },
         {
           "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
+          "page": 28,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+          "page": 25,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
           "page": 28,
           "role": "plaintiff_filing",
           "matter": 32
@@ -3630,13 +3954,11 @@
       "priority": "P2_joined"
     },
     {
-      "citation": "Hope v. Pelzer, 536 U.S. 730 (2002)",
+      "citation": "Franks v. Delaware, 438 U.S. 154 (1978)",
       "kind": "authority",
       "occurrenceCount": 8,
       "matters": [
-        24,
-        32,
-        33
+        32
       ],
       "roles": [
         "other",
@@ -3644,57 +3966,57 @@
       ],
       "plaintiffOnly": true,
       "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Real case; the 'obvious clarity' / novel-circumstances principle at ~741 is accurately paraphrased (quoting United States v. Lanier).",
-      "sampleContext": "utional rights. An official can be on notice that his conduct violates established law even in 27 novel factual circumstances where the violation is obvious. Hope v. Pelzer, 536 U.S. 730, 741 28 (2002). Page 17 COMPLAINT - NEWANFORBI v. SERRATO (N.D. Cal.) Case 4:26-cv-05953-ASK ",
+      "statusSource": "round",
+      "notes": "Real \u2014 false statements in warrant affidavits.",
+      "sampleContext": "r that omit material facts, if the application -- stripped of the false statements and supplemented with the omitted facts -- would not support probable cause. Franks v. Delaware, 438 U.S. 154, 155-56 (1978); Chism v. Washington State, 661 F.3d 380, 386 (9th Cir. 2011). 39. Defen",
       "locations": [
         {
-          "document": "/documents/matter-24/Complaint (Doc 1, Filed Jun 17 2026).pdf",
-          "page": 17,
-          "role": "plaintiff_filing",
-          "matter": 24
-        },
-        {
-          "document": "/documents/matter-32/from-24/1 2.pdf",
-          "page": 17,
-          "role": "other",
-          "matter": 24
-        },
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
-          "page": 29,
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 2.pdf",
+          "page": 11,
           "role": "plaintiff_filing",
           "matter": 32
         },
         {
-          "document": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal 3 Operative.pdf",
-          "page": 44,
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 3 Operative.pdf",
+          "page": 12,
           "role": "plaintiff_filing",
-          "matter": 33
+          "matter": 32
         },
         {
-          "document": "/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal.pdf",
-          "page": 44,
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
+          "page": 23,
           "role": "plaintiff_filing",
-          "matter": 33
+          "matter": 32
         },
         {
-          "document": "/documents/matter-33/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
-          "page": 44,
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
+          "page": 28,
           "role": "plaintiff_filing",
-          "matter": 33
+          "matter": 32
         },
         {
-          "document": "/documents/matter-33/ndcal/FAC Ngwa Nforbi v Candelaria and Gordon NDCal (as submitted Aug 10 2026, superseded).pdf",
-          "page": 41,
+          "document": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+          "page": 23,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+          "page": 28,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/FAC Ngwa Nforbi v Meza-Gonzalez and Melano NDCal (Aug 11 2026).pdf",
+          "page": 12,
           "role": "other",
-          "matter": 33
+          "matter": 32
         },
         {
-          "document": "/documents/matter-33/ndcal/FAC Ngwa Nforbi v Candelaria and Gordon NDCal 3-26-cv-08272-LJC (Aug 11 2026).pdf",
-          "page": 41,
+          "document": "/documents/matter-32/ndcal/FAC Ngwa Nforbi v Meza-Gonzalez and Melano NDCal (as submitted Aug 10 2026, superseded).pdf",
+          "page": 12,
           "role": "other",
-          "matter": 33
+          "matter": 32
         }
       ],
       "priority": "P2_joined"
@@ -4043,6 +4365,75 @@
           "page": 15,
           "role": "other",
           "matter": 33
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Nieves v. Bartlett, 587 U.S. 391 (2019)",
+      "kind": "authority",
+      "occurrenceCount": 8,
+      "matters": [
+        24,
+        32
+      ],
+      "roles": [
+        "other",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "audit",
+      "notes": "Case exists at correct citation (2019, probable-cause-and-retaliatory-arrest case). The general proposition cited is consistent with the case's reasoning about pretext, though the precise page 406 quote was not independently confirmed word-for-word; the doctrine attributed to it is accurate. Good law.",
+      "sampleContext": "standard. The absence of any legitimate justification supports the inference that the stated reason was pretextual and the actual motivation was retaliatory. Nieves v. Bartlett, 587 U.S. 391,406 (2019) (absence of legitimate basis strengthens inference of retaliatory motive). e. ",
+      "locations": [
+        {
+          "document": "/documents/matter-24/Complaint (Doc 1, Filed Jun 17 2026).pdf",
+          "page": 16,
+          "role": "plaintiff_filing",
+          "matter": 24
+        },
+        {
+          "document": "/documents/matter-24/First Amended Complaint (Doc 10, Filed Jul 15 2026).pdf",
+          "page": 16,
+          "role": "plaintiff_filing",
+          "matter": 24
+        },
+        {
+          "document": "/documents/matter-32/from-24/1 2.pdf",
+          "page": 16,
+          "role": "other",
+          "matter": 24
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 3 Operative.pdf",
+          "page": 18,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
+          "page": 28,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+          "page": 28,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/FAC Ngwa Nforbi v Meza-Gonzalez and Melano NDCal (Aug 11 2026).pdf",
+          "page": 19,
+          "role": "other",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/FAC Ngwa Nforbi v Meza-Gonzalez and Melano NDCal (as submitted Aug 10 2026, superseded).pdf",
+          "page": 19,
+          "role": "other",
+          "matter": 32
         }
       ],
       "priority": "P2_joined"
@@ -4663,63 +5054,61 @@
       "priority": "P2_joined"
     },
     {
-      "citation": "Nieves v. Bartlett, 587 U.S. 391 (2019)",
+      "citation": "Payton v. New York, 445 U.S. 573 (1980)",
       "kind": "authority",
       "occurrenceCount": 7,
       "matters": [
-        24,
         32
       ],
       "roles": [
-        "other",
         "plaintiff_filing"
       ],
       "plaintiffOnly": true,
       "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Case exists at correct citation (2019, probable-cause-and-retaliatory-arrest case). The general proposition cited is consistent with the case's reasoning about pretext, though the precise page 406 quote was not independently confirmed word-for-word; the doctrine attributed to it is accurate. Good law.",
-      "sampleContext": "standard. The absence of any legitimate justification supports the inference that the stated reason was pretextual and the actual motivation was retaliatory. Nieves v. Bartlett, 587 U.S. 391,406 (2019) (absence of legitimate basis strengthens inference of retaliatory motive). e. ",
+      "statusSource": "round",
+      "notes": "Real \u2014 warrantless home entry to arrest.",
+      "sampleContext": "paragraphs 1 through 36. 54. A warrantless entry into a constitutionally protected area is presumptively unreasonable absent consent or a recognized exception. Payton v. New York, 445 U.S. 573, 585-90 (1980); Collins v. Virginia, 584 U.S. 586, 592-93 (2018). The interior of a pas",
       "locations": [
         {
-          "document": "/documents/matter-24/Complaint (Doc 1, Filed Jun 17 2026).pdf",
-          "page": 16,
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 2.pdf",
+          "page": 15,
           "role": "plaintiff_filing",
-          "matter": 24
-        },
-        {
-          "document": "/documents/matter-24/First Amended Complaint (Doc 10, Filed Jul 15 2026).pdf",
-          "page": 16,
-          "role": "plaintiff_filing",
-          "matter": 24
-        },
-        {
-          "document": "/documents/matter-32/from-24/1 2.pdf",
-          "page": 16,
-          "role": "other",
-          "matter": 24
+          "matter": 32
         },
         {
           "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 3 Operative.pdf",
-          "page": 18,
+          "page": 16,
           "role": "plaintiff_filing",
           "matter": 32
         },
         {
           "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
-          "page": 28,
+          "page": 9,
           "role": "plaintiff_filing",
           "matter": 32
         },
         {
-          "document": "/documents/matter-32/ndcal/FAC Ngwa Nforbi v Meza-Gonzalez and Melano NDCal (Aug 11 2026).pdf",
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
           "page": 19,
-          "role": "other",
+          "role": "plaintiff_filing",
           "matter": 32
         },
         {
-          "document": "/documents/matter-32/ndcal/FAC Ngwa Nforbi v Meza-Gonzalez and Melano NDCal (as submitted Aug 10 2026, superseded).pdf",
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
+          "page": 27,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+          "page": 9,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
           "page": 19,
-          "role": "other",
+          "role": "plaintiff_filing",
           "matter": 32
         }
       ],
@@ -4847,7 +5236,7 @@
       "priority": "P2_joined"
     },
     {
-      "citation": "Chism v. Washington State, 661 F. 3d 380",
+      "citation": "Beck v. Ohio, 379 U.S. 89 (1964)",
       "kind": "authority",
       "occurrenceCount": 6,
       "matters": [
@@ -4860,30 +5249,18 @@
       "plaintiffOnly": true,
       "status": "VERIFIED",
       "statusSource": "round",
-      "notes": "Real at 661 F.3d 380 (9th Cir. 2011). Add year.",
-      "sampleContext": "stripped of the false statements and supplemented with the omitted facts -- would not support probable cause. Franks v. Delaware, 438 U.S. 154, 155-56 (1978); Chism v. Washington State, 661 F.3d 380, 386 (9th Cir. 2011). 39. Defendant Meza-Gonzalez executed under penalty of perju",
+      "notes": "Real \u2014 probable cause for arrest.",
+      "sampleContext": "gation that the arrest lacked probable cause. 51. The right to be free from arrest without probable cause was clearly established well before November 1, 2024. Beck v. Ohio, 379 U.S. 89 (1964); Devenpeck, 543 U.S. at 152. 52. As a direct and proximate result, Plaintiff was subjec",
       "locations": [
         {
           "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 2.pdf",
-          "page": 11,
-          "role": "plaintiff_filing",
-          "matter": 32
-        },
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 3 Operative.pdf",
-          "page": 12,
-          "role": "plaintiff_filing",
-          "matter": 32
-        },
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
           "page": 14,
           "role": "plaintiff_filing",
           "matter": 32
         },
         {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
-          "page": 23,
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 3 Operative.pdf",
+          "page": 15,
           "role": "plaintiff_filing",
           "matter": 32
         },
@@ -4894,8 +5271,20 @@
           "matter": 32
         },
         {
+          "document": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+          "page": 28,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/FAC Ngwa Nforbi v Meza-Gonzalez and Melano NDCal (Aug 11 2026).pdf",
+          "page": 16,
+          "role": "other",
+          "matter": 32
+        },
+        {
           "document": "/documents/matter-32/ndcal/FAC Ngwa Nforbi v Meza-Gonzalez and Melano NDCal (as submitted Aug 10 2026, superseded).pdf",
-          "page": 12,
+          "page": 16,
           "role": "other",
           "matter": 32
         }
@@ -4903,57 +5292,60 @@
       "priority": "P2_joined"
     },
     {
-      "citation": "Costanich v. Dep't of Social, 627 F. 3d 1101",
+      "citation": "Bell Atl. Corp. v. Twombly, 550 U.S. 544 (2007)",
       "kind": "authority",
       "occurrenceCount": 6,
       "matters": [
+        1,
+        3,
+        29,
         32
       ],
       "roles": [
-        "other",
+        "court_order",
         "plaintiff_filing"
       ],
-      "plaintiffOnly": true,
+      "plaintiffOnly": false,
       "status": "VERIFIED",
       "statusSource": "round",
-      "notes": "Real as Costanich v. Department of Social and Health Services, 627 F.3d 1101 (9th Cir. 2010). Add year.",
-      "sampleContext": "operty. Devereaux v. Abbey, 263 F.3d 1070, 1076 (9th Cir. 2001) (en banc). Qualified immunity is not available to officers who deliberately fabricate evidence. Costanich v. Dep't of Social & Health Servs., 627 F.3d 1101,",
+      "notes": "Resolves at 550 U.S. 544 (2007) under the full caption 'Bell Atlantic Corp. v. Twombly' on both CourtListener and CAP; the abbreviated reporting name is why the probe returned PARTIAL rather than an exact caption match. Existence only.",
+      "sampleContext": "Suite 2450 Los Angeles, CA 90071 Cases Ashcroft v. Iqbal, 556 U.S. 662, 129 S.Ct. 1937, 173 L.Ed.2d 868 (2009) ......................................... 8 Bell Atl. Corp. v. Twombly, 550 U.S. 544, 556 (2007) ........................................................................",
       "locations": [
         {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 2.pdf",
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
+          "page": 3,
+          "role": "plaintiff_filing",
+          "matter": 29
+        },
+        {
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
           "page": 12,
           "role": "plaintiff_filing",
-          "matter": 32
+          "matter": 29
         },
         {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 3 Operative.pdf",
-          "page": 14,
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 36 - ORDER GRANTING Motions to Dismiss - Megan's Law, FCRA, UCL Claims Dismissed (May 26, 2023).pdf",
+          "page": 3,
+          "role": "court_order",
+          "matter": 29
+        },
+        {
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 36 - ORDER GRANTING Motions to Dismiss - Megan's Law, FCRA, UCL Claims Dismissed (May 26, 2023).pdf",
+          "page": 5,
+          "role": "court_order",
+          "matter": 29
+        },
+        {
+          "document": "/documents/matter-32/from-01/Objections to FR - April 21 2026.pdf",
+          "page": 2,
           "role": "plaintiff_filing",
-          "matter": 32
+          "matter": 1
         },
         {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
-          "page": 25,
-          "role": "plaintiff_filing",
-          "matter": 32
-        },
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
-          "page": 28,
-          "role": "plaintiff_filing",
-          "matter": 32
-        },
-        {
-          "document": "/documents/matter-32/ndcal/FAC Ngwa Nforbi v Meza-Gonzalez and Melano NDCal (Aug 11 2026).pdf",
-          "page": 14,
-          "role": "other",
-          "matter": 32
-        },
-        {
-          "document": "/documents/matter-32/ndcal/FAC Ngwa Nforbi v Meza-Gonzalez and Melano NDCal (as submitted Aug 10 2026, superseded).pdf",
-          "page": 14,
-          "role": "other",
-          "matter": 32
+          "document": "/documents/opinions/Newanforbi v Derrick - USDC EDCal - MTD Order Jul 24 2026.pdf",
+          "page": 4,
+          "role": "court_order",
+          "matter": 3
         }
       ],
       "priority": "P2_joined"
@@ -5059,62 +5451,6 @@
           "page": 11,
           "role": "court_order",
           "matter": 29
-        }
-      ],
-      "priority": "P2_joined"
-    },
-    {
-      "citation": "Franks v. Delaware, 438 U.S. 154 (1978)",
-      "kind": "authority",
-      "occurrenceCount": 6,
-      "matters": [
-        32
-      ],
-      "roles": [
-        "other",
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "VERIFIED",
-      "statusSource": "round",
-      "notes": "Real \u2014 false statements in warrant affidavits.",
-      "sampleContext": "r that omit material facts, if the application -- stripped of the false statements and supplemented with the omitted facts -- would not support probable cause. Franks v. Delaware, 438 U.S. 154, 155-56 (1978); Chism v. Washington State, 661 F.3d 380, 386 (9th Cir. 2011). 39. Defen",
-      "locations": [
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 2.pdf",
-          "page": 11,
-          "role": "plaintiff_filing",
-          "matter": 32
-        },
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 3 Operative.pdf",
-          "page": 12,
-          "role": "plaintiff_filing",
-          "matter": 32
-        },
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
-          "page": 23,
-          "role": "plaintiff_filing",
-          "matter": 32
-        },
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
-          "page": 28,
-          "role": "plaintiff_filing",
-          "matter": 32
-        },
-        {
-          "document": "/documents/matter-32/ndcal/FAC Ngwa Nforbi v Meza-Gonzalez and Melano NDCal (Aug 11 2026).pdf",
-          "page": 12,
-          "role": "other",
-          "matter": 32
-        },
-        {
-          "document": "/documents/matter-32/ndcal/FAC Ngwa Nforbi v Meza-Gonzalez and Melano NDCal (as submitted Aug 10 2026, superseded).pdf",
-          "page": 12,
-          "role": "other",
-          "matter": 32
         }
       ],
       "priority": "P2_joined"
@@ -5833,56 +6169,6 @@
       "priority": "P2_joined"
     },
     {
-      "citation": "Beck v. Ohio, 379 U.S. 89 (1964)",
-      "kind": "authority",
-      "occurrenceCount": 5,
-      "matters": [
-        32
-      ],
-      "roles": [
-        "other",
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "VERIFIED",
-      "statusSource": "round",
-      "notes": "Real \u2014 probable cause for arrest.",
-      "sampleContext": "gation that the arrest lacked probable cause. 51. The right to be free from arrest without probable cause was clearly established well before November 1, 2024. Beck v. Ohio, 379 U.S. 89 (1964); Devenpeck, 543 U.S. at 152. 52. As a direct and proximate result, Plaintiff was subjec",
-      "locations": [
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 2.pdf",
-          "page": 14,
-          "role": "plaintiff_filing",
-          "matter": 32
-        },
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 3 Operative.pdf",
-          "page": 15,
-          "role": "plaintiff_filing",
-          "matter": 32
-        },
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
-          "page": 28,
-          "role": "plaintiff_filing",
-          "matter": 32
-        },
-        {
-          "document": "/documents/matter-32/ndcal/FAC Ngwa Nforbi v Meza-Gonzalez and Melano NDCal (Aug 11 2026).pdf",
-          "page": 16,
-          "role": "other",
-          "matter": 32
-        },
-        {
-          "document": "/documents/matter-32/ndcal/FAC Ngwa Nforbi v Meza-Gonzalez and Melano NDCal (as submitted Aug 10 2026, superseded).pdf",
-          "page": 16,
-          "role": "other",
-          "matter": 32
-        }
-      ],
-      "priority": "P2_joined"
-    },
-    {
       "citation": "Carey v. Piphus, 435 U.S. 247 (1978)",
       "kind": "authority",
       "occurrenceCount": 5,
@@ -5928,6 +6214,55 @@
           "page": 28,
           "role": "other",
           "matter": 33
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Collins v. Virginia, 584 U.S. 586 (2018)",
+      "kind": "authority",
+      "occurrenceCount": 5,
+      "matters": [
+        32
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real \u2014 automobile exception / curtilage.",
+      "sampleContext": "into a constitutionally protected area is presumptively unreasonable absent consent or a recognized exception. Payton v. New York, 445 U.S. 573, 585-90 (1980); Collins v. Virginia, 584 U.S. 586, 592-93 (2018). The interior of a passenger vehicle is a constitutionally protected ar",
+      "locations": [
+        {
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 2.pdf",
+          "page": 15,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 3 Operative.pdf",
+          "page": 16,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
+          "page": 9,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
+          "page": 27,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+          "page": 27,
+          "role": "plaintiff_filing",
+          "matter": 32
         }
       ],
       "priority": "P2_joined"
@@ -6189,55 +6524,6 @@
       "priority": "P2_joined"
     },
     {
-      "citation": "Payton v. New York, 445 U.S. 573 (1980)",
-      "kind": "authority",
-      "occurrenceCount": 5,
-      "matters": [
-        32
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "VERIFIED",
-      "statusSource": "round",
-      "notes": "Real \u2014 warrantless home entry to arrest.",
-      "sampleContext": "paragraphs 1 through 36. 54. A warrantless entry into a constitutionally protected area is presumptively unreasonable absent consent or a recognized exception. Payton v. New York, 445 U.S. 573, 585-90 (1980); Collins v. Virginia, 584 U.S. 586, 592-93 (2018). The interior of a pas",
-      "locations": [
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 2.pdf",
-          "page": 15,
-          "role": "plaintiff_filing",
-          "matter": 32
-        },
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 3 Operative.pdf",
-          "page": 16,
-          "role": "plaintiff_filing",
-          "matter": 32
-        },
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
-          "page": 9,
-          "role": "plaintiff_filing",
-          "matter": 32
-        },
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
-          "page": 19,
-          "role": "plaintiff_filing",
-          "matter": 32
-        },
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
-          "page": 27,
-          "role": "plaintiff_filing",
-          "matter": 32
-        }
-      ],
-      "priority": "P2_joined"
-    },
-    {
       "citation": "Caldwell v. Montoya, 10 Cal. 4th 972 (1995)",
       "kind": "authority",
       "occurrenceCount": 4,
@@ -6278,6 +6564,49 @@
           "page": 23,
           "role": "other",
           "matter": 16
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Caniglia v. Strom, 593 U.S. 194 (2021)",
+      "kind": "authority",
+      "occurrenceCount": 4,
+      "matters": [
+        32
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "audit",
+      "notes": "Real, correctly cited 2021 SCOTUS case rejecting a freestanding community-caretaking exception; holding accurately paraphrased.",
+      "sampleContext": "ncy. Even if a welfare rationale had been present, the community caretaking exception does not authorize warrantless entry absent an imminent threat to safety. Caniglia v. Strom, 593 U.S. 194, 197-99 (2021). 56. The right to be free from warrantless entry into a vehicle absent co",
+      "locations": [
+        {
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 2.pdf",
+          "page": 15,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 3 Operative.pdf",
+          "page": 16,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
+          "page": 27,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+          "page": 27,
+          "role": "plaintiff_filing",
+          "matter": 32
         }
       ],
       "priority": "P2_joined"
@@ -6329,49 +6658,6 @@
       "priority": "P2_joined"
     },
     {
-      "citation": "Collins v. Virginia, 584 U.S. 586 (2018)",
-      "kind": "authority",
-      "occurrenceCount": 4,
-      "matters": [
-        32
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "VERIFIED",
-      "statusSource": "round",
-      "notes": "Real \u2014 automobile exception / curtilage.",
-      "sampleContext": "into a constitutionally protected area is presumptively unreasonable absent consent or a recognized exception. Payton v. New York, 445 U.S. 573, 585-90 (1980); Collins v. Virginia, 584 U.S. 586, 592-93 (2018). The interior of a passenger vehicle is a constitutionally protected ar",
-      "locations": [
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 2.pdf",
-          "page": 15,
-          "role": "plaintiff_filing",
-          "matter": 32
-        },
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 3 Operative.pdf",
-          "page": 16,
-          "role": "plaintiff_filing",
-          "matter": 32
-        },
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
-          "page": 9,
-          "role": "plaintiff_filing",
-          "matter": 32
-        },
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
-          "page": 27,
-          "role": "plaintiff_filing",
-          "matter": 32
-        }
-      ],
-      "priority": "P2_joined"
-    },
-    {
       "citation": "Halvorsen v. Baird, 146 F. 3d 680",
       "kind": "authority",
       "occurrenceCount": 4,
@@ -6410,6 +6696,49 @@
           "page": 14,
           "role": "other",
           "matter": 28
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Illinois v. Caballes, 543 U.S. 405 (2005)",
+      "kind": "authority",
+      "occurrenceCount": 4,
+      "matters": [
+        32
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real \u2014 dog sniff during lawful traffic stop.",
+      "sampleContext": "etention is dispelled, the detention must terminate. See Rodriguez v. United States, 575 U.S. 348, 355 (2015) (mission of a stop controls its lawful duration); Illinois v. Caballes, 543 U.S. 405, 407 (2005). At timestamp 00:59:07, the mission of Defendants' encounter with Plainti",
+      "locations": [
+        {
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
+          "page": 10,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
+          "page": 28,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+          "page": 10,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+          "page": 28,
+          "role": "plaintiff_filing",
+          "matter": 32
         }
       ],
       "priority": "P2_joined"
@@ -6454,6 +6783,47 @@
           "page": 14,
           "role": "other",
           "matter": 28
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Lopez v. Smith, 203 F. 3d 1122",
+      "kind": "authority",
+      "occurrenceCount": 4,
+      "matters": [
+        7,
+        24,
+        32,
+        33
+      ],
+      "roles": [
+        "court_order",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real at 203 F.3d 1122 (9th Cir. 2000) (en banc). Add year.",
+      "sampleContext": "e to amend only when futility is clear on the face of the complaint. Hebbe v. Pliler, 627 F.3d 338, 342 (9th Cir. 2010) (pro se pleadings construed liberally); Lopez v. Smith, 203 F.3d 1122, 1130 (9th Cir. 2000) (en banc) (leave to amend mandatory absent clear futility); Neitzke ",
+      "locations": [
+        {
+          "document": "/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
+          "page": 2,
+          "role": "plaintiff_filing",
+          "matter": 7
+        },
+        {
+          "document": "/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
+          "page": 12,
+          "role": "plaintiff_filing",
+          "matter": 7
+        },
+        {
+          "document": "/documents/opinions/Newanforbi v Serrato - USDC NDCal - IFP Granted Complaint Sufficient Jun 29 2026.pdf",
+          "page": 2,
+          "role": "court_order",
+          "matter": 24
         }
       ],
       "priority": "P2_joined"
@@ -7090,43 +7460,6 @@
       "priority": "P2_joined"
     },
     {
-      "citation": "Caniglia v. Strom, 593 U.S. 194 (2021)",
-      "kind": "authority",
-      "occurrenceCount": 3,
-      "matters": [
-        32
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Real, correctly cited 2021 SCOTUS case rejecting a freestanding community-caretaking exception; holding accurately paraphrased.",
-      "sampleContext": "ncy. Even if a welfare rationale had been present, the community caretaking exception does not authorize warrantless entry absent an imminent threat to safety. Caniglia v. Strom, 593 U.S. 194, 197-99 (2021). 56. The right to be free from warrantless entry into a vehicle absent co",
-      "locations": [
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 2.pdf",
-          "page": 15,
-          "role": "plaintiff_filing",
-          "matter": 32
-        },
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 3 Operative.pdf",
-          "page": 16,
-          "role": "plaintiff_filing",
-          "matter": 32
-        },
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
-          "page": 27,
-          "role": "plaintiff_filing",
-          "matter": 32
-        }
-      ],
-      "priority": "P2_joined"
-    },
-    {
       "citation": "Chavez v. Robinson, 12 F. 4th 978",
       "kind": "authority",
       "occurrenceCount": 3,
@@ -7398,6 +7731,47 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Hebbe v. Pliler, 627 F. 3d 338",
+      "kind": "authority",
+      "occurrenceCount": 3,
+      "matters": [
+        7,
+        24,
+        32,
+        33
+      ],
+      "roles": [
+        "court_order",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real at 627 F.3d 338 (9th Cir. 2010). Add year.",
+      "sampleContext": "construe the pleadings of a pro se litigant liberally, and (3) deny dismissal without leave to amend only when futility is clear on the face of the complaint. Hebbe v. Pliler, 627 F.3d 338, 342 (9th Cir. 2010) (pro se pleadings construed liberally); Lopez v. Smith, 203 F.3d 1122,",
+      "locations": [
+        {
+          "document": "/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
+          "page": 2,
+          "role": "plaintiff_filing",
+          "matter": 7
+        },
+        {
+          "document": "/documents/matter-33/opinions/Newanforbi v Candelaria - USDC EDCal - FR Recommending Dismissal Jun 15 2026.pdf",
+          "page": 3,
+          "role": "court_order",
+          "matter": 7
+        },
+        {
+          "document": "/documents/opinions/Newanforbi v Serrato - USDC NDCal - IFP Granted Complaint Sufficient Jun 29 2026.pdf",
+          "page": 2,
+          "role": "court_order",
+          "matter": 24
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "In re Stevens, 119 Cal.App. 4th 1228 (2004)",
       "kind": "authority",
       "occurrenceCount": 3,
@@ -7663,6 +8037,44 @@
           "page": 15,
           "role": "other",
           "matter": 28
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Pearson v. Callahan, 555 U.S. 223 (2009)",
+      "kind": "authority",
+      "occurrenceCount": 3,
+      "matters": [
+        1,
+        32
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Canonical SCOTUS qualified-immunity decision; Saucier sequencing no longer mandatory. Matches QI briefing.",
+      "sampleContext": "at 7). Qualified immunity is an affirmative defense that is rarely resolved at the 12(b)(6) stage when the complaint alleges a clear constitutional violation. Pearson v. Callahan, 555 U.S. 223, 236 (2009). Plaintiff\u2019s allegations \u2014 a welfare check escalated, on nothing more than ",
+      "locations": [
+        {
+          "document": "/documents/matter-32/from-01/Objections to FR - April 21 2026.pdf",
+          "page": 3,
+          "role": "plaintiff_filing",
+          "matter": 1
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
+          "page": 27,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+          "page": 27,
+          "role": "plaintiff_filing",
+          "matter": 32
         }
       ],
       "priority": "P2_joined"
@@ -8455,6 +8867,41 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Franklin v. Murphy, 745 F. 2d 1221",
+      "kind": "authority",
+      "occurrenceCount": 2,
+      "matters": [
+        7,
+        24,
+        32,
+        33
+      ],
+      "roles": [
+        "court_order",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real at 745 F.2d 1221 (9th Cir. 1984). Add year.",
+      "sampleContext": "by definition, an arguable basis in law. The Ninth Circuit has cautioned that the frivolousness standard 'is intended to address only the most extreme cases.' Franklin v. Murphy, 745 F.2d 1221, 1228 (9th Cir. 1984). This case, involving detailed factual allegations, dashcam audio",
+      "locations": [
+        {
+          "document": "/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
+          "page": 11,
+          "role": "plaintiff_filing",
+          "matter": 7
+        },
+        {
+          "document": "/documents/opinions/Newanforbi v Serrato - USDC NDCal - IFP Granted Complaint Sufficient Jun 29 2026.pdf",
+          "page": 2,
+          "role": "court_order",
+          "matter": 24
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "Goldberg v. Kelly, 391 U.S. 254 (1970)",
       "kind": "authority",
       "occurrenceCount": 2,
@@ -8583,6 +9030,37 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Harlow v. Fitzgerald, 457 U.S. 800 (1982)",
+      "kind": "authority",
+      "occurrenceCount": 2,
+      "matters": [
+        32
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "audit",
+      "notes": "Direct quote confirmed accurate and correctly pinpoint-cited to page 818.",
+      "sampleContext": "nment officials only where their conduct does not violate clearly established statutory or constitutional rights of which a reasonable person would have known. Harlow v. Fitzgerald, 457 U.S. 800, 818 (1982); Pearson v. Callahan, 555 U.S. 223, 231 (2009). Each right alleged to hav",
+      "locations": [
+        {
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
+          "page": 27,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+          "page": 27,
+          "role": "plaintiff_filing",
+          "matter": 32
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "Hartman v. Moore, 541 U.S. 250 (2006)",
       "kind": "authority",
       "occurrenceCount": 2,
@@ -8648,40 +9126,6 @@
       "priority": "P2_joined"
     },
     {
-      "citation": "Hebbe v. Pliler, 627 F. 3d 338",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        7,
-        32,
-        33
-      ],
-      "roles": [
-        "court_order",
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": false,
-      "status": "VERIFIED",
-      "statusSource": "round",
-      "notes": "Real at 627 F.3d 338 (9th Cir. 2010). Add year.",
-      "sampleContext": "construe the pleadings of a pro se litigant liberally, and (3) deny dismissal without leave to amend only when futility is clear on the face of the complaint. Hebbe v. Pliler, 627 F.3d 338, 342 (9th Cir. 2010) (pro se pleadings construed liberally); Lopez v. Smith, 203 F.3d 1122,",
-      "locations": [
-        {
-          "document": "/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
-          "page": 2,
-          "role": "plaintiff_filing",
-          "matter": 7
-        },
-        {
-          "document": "/documents/matter-33/opinions/Newanforbi v Candelaria - USDC EDCal - FR Recommending Dismissal Jun 15 2026.pdf",
-          "page": 3,
-          "role": "court_order",
-          "matter": 7
-        }
-      ],
-      "priority": "P2_joined"
-    },
-    {
       "citation": "Holt v. Kelly, 20 Cal. 3d 560 (1978)",
       "kind": "authority",
       "occurrenceCount": 2,
@@ -8710,37 +9154,6 @@
           "page": 25,
           "role": "plaintiff_filing",
           "matter": 20
-        }
-      ],
-      "priority": "P2_joined"
-    },
-    {
-      "citation": "Illinois v. Caballes, 543 U.S. 405 (2005)",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        32
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "VERIFIED",
-      "statusSource": "round",
-      "notes": "Real \u2014 dog sniff during lawful traffic stop.",
-      "sampleContext": "etention is dispelled, the detention must terminate. See Rodriguez v. United States, 575 U.S. 348, 355 (2015) (mission of a stop controls its lawful duration); Illinois v. Caballes, 543 U.S. 405, 407 (2005). At timestamp 00:59:07, the mission of Defendants' encounter with Plainti",
-      "locations": [
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
-          "page": 10,
-          "role": "plaintiff_filing",
-          "matter": 32
-        },
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
-          "page": 28,
-          "role": "plaintiff_filing",
-          "matter": 32
         }
       ],
       "priority": "P2_joined"
@@ -8964,13 +9377,11 @@
       "priority": "P2_joined"
     },
     {
-      "citation": "Lopez v. Smith, 203 F. 3d 1122",
+      "citation": "Kentucky v. King, 563 U.S. 452 (2011)",
       "kind": "authority",
       "occurrenceCount": 2,
       "matters": [
-        7,
-        32,
-        33
+        32
       ],
       "roles": [
         "plaintiff_filing"
@@ -8978,20 +9389,20 @@
       "plaintiffOnly": true,
       "status": "VERIFIED",
       "statusSource": "round",
-      "notes": "Real at 203 F.3d 1122 (9th Cir. 2000) (en banc). Add year.",
-      "sampleContext": "e to amend only when futility is clear on the face of the complaint. Hebbe v. Pliler, 627 F.3d 338, 342 (9th Cir. 2010) (pro se pleadings construed liberally); Lopez v. Smith, 203 F.3d 1122, 1130 (9th Cir. 2000) (en banc) (leave to amend mandatory absent clear futility); Neitzke ",
+      "notes": "Same Kentucky v. King.",
+      "sampleContext": "area is presumptively unreasonable and violates the Fourth Amendment absent consent or a recognized exception. Payton v. New York, 445 U.S. 573, 585-90 (1980); Kentucky v. King, 563 U.S. 452, 459 (2011). 59. The interior of a passenger automobile, and the closed compartments and ",
       "locations": [
         {
-          "document": "/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
-          "page": 2,
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
+          "page": 19,
           "role": "plaintiff_filing",
-          "matter": 7
+          "matter": 32
         },
         {
-          "document": "/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
-          "page": 12,
+          "document": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+          "page": 19,
           "role": "plaintiff_filing",
-          "matter": 7
+          "matter": 32
         }
       ],
       "priority": "P2_joined"
@@ -9124,6 +9535,37 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "New York v. Class, 475 U.S. 106 (1986)",
+      "kind": "authority",
+      "occurrenceCount": 2,
+      "matters": [
+        32
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real \u2014 VIN inspection / search.",
+      "sampleContext": "cted areas within the meaning of the Fourth Amendment. See Collins v. Virginia, 584 U.S. 586, 592-93 (2018); California v. Carney, 471 U.S. 386, 390-93 (1985); New York v. Class, 475 U.S. 106, 114-15 (1986). 60. At timestamp 00:56:43 on the dashcam recording, Defendant Melano ope",
+      "locations": [
+        {
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
+          "page": 19,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+          "page": 19,
+          "role": "plaintiff_filing",
+          "matter": 32
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "O'Day v. McDonnell Douglas Helicopter Co, 79 F. 3d 756",
       "kind": "authority",
       "occurrenceCount": 2,
@@ -9181,38 +9623,6 @@
           "page": 23,
           "role": "plaintiff_filing",
           "matter": 29
-        }
-      ],
-      "priority": "P2_joined"
-    },
-    {
-      "citation": "Pearson v. Callahan, 555 U.S. 223 (2009)",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        1,
-        32
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "VERIFIED",
-      "statusSource": "round",
-      "notes": "Canonical SCOTUS qualified-immunity decision; Saucier sequencing no longer mandatory. Matches QI briefing.",
-      "sampleContext": "at 7). Qualified immunity is an affirmative defense that is rarely resolved at the 12(b)(6) stage when the complaint alleges a clear constitutional violation. Pearson v. Callahan, 555 U.S. 223, 236 (2009). Plaintiff\u2019s allegations \u2014 a welfare check escalated, on nothing more than ",
-      "locations": [
-        {
-          "document": "/documents/matter-32/from-01/Objections to FR - April 21 2026.pdf",
-          "page": 3,
-          "role": "plaintiff_filing",
-          "matter": 1
-        },
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
-          "page": 27,
-          "role": "plaintiff_filing",
-          "matter": 32
         }
       ],
       "priority": "P2_joined"
@@ -9375,6 +9785,99 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "See Caniglia v. Strom, 593 U.S. 194 (2021)",
+      "kind": "authority",
+      "occurrenceCount": 2,
+      "matters": [
+        32
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "audit",
+      "notes": "Real, correctly cited 2021 SCOTUS case rejecting a freestanding community-caretaking exception; holding accurately paraphrased.",
+      "sampleContext": "munity caretaking exception does not authorize warrantless entry of a private vehicle absent an imminent, articulable threat to public safety not present here. See Caniglia v. Strom, 593 U.S. 194, 197-99 (2021) (community caretaking is not a standalone doctrine authorizing warran",
+      "locations": [
+        {
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
+          "page": 20,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+          "page": 20,
+          "role": "plaintiff_filing",
+          "matter": 32
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "See Franks v. Delaware, 438 U.S. 154 (1978)",
+      "kind": "authority",
+      "occurrenceCount": 2,
+      "matters": [
+        32
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real \u2014 false statements in warrant affidavits.",
+      "sampleContext": "v) refusal of a voluntary test. Those facts do not add up to probable cause under any Fourth Amendment standard. 43. This is a paradigmatic Franks/Chism claim. See Franks v. Delaware, 438 U.S. 154, 155-56 (1978); Chism v. Washington State, 661 F.3d 380, 386 (9th Cir. 2011) (civil",
+      "locations": [
+        {
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
+          "page": 14,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+          "page": 14,
+          "role": "plaintiff_filing",
+          "matter": 32
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "See Kentucky v. King, 563 U.S. 452 (2011)",
+      "kind": "authority",
+      "occurrenceCount": 2,
+      "matters": [
+        32
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Same Kentucky v. King.",
+      "sampleContext": "This entry into a constitutionally protected area occurred without consent, without a warrant, and without any recognized exception to the warrant requirement. See Kentucky v. King, 563 U.S. 452, 459 (2011) (warrantless entry \"generally unreasonable\"); Collins v. Virginia, 584 U.",
+      "locations": [
+        {
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
+          "page": 9,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+          "page": 9,
+          "role": "plaintiff_filing",
+          "matter": 32
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "See Loehr v. Ventura County Community College Dist, 147 Cal.App. 3d 1071 (1983)",
       "kind": "authority",
       "occurrenceCount": 2,
@@ -9434,6 +9937,37 @@
           "page": 15,
           "role": "other",
           "matter": 33
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "See Nieves v. Bartlett, 587 U.S. 391 (2019)",
+      "kind": "authority",
+      "occurrenceCount": 2,
+      "matters": [
+        32
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "audit",
+      "notes": "Case exists at correct citation (2019, probable-cause-and-retaliatory-arrest case). The general proposition cited is consistent with the case's reasoning about pretext, though the precise page 406 quote was not independently confirmed word-for-word; the doctrine attributed to it is accurate. Good law.",
+      "sampleContext": "ctivity; (ii) the defendant took an adverse action against him; and (iii) the protected activity was a substantial or motivating factor for the adverse action. See Nieves v. Bartlett, 587 U.S. 391, 398-99 (2019); Ballentine v. Tucker, 28 F.4th 54, 62 (9th Cir. 2022). 88. The exer",
+      "locations": [
+        {
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
+          "page": 26,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+          "page": 26,
+          "role": "plaintiff_filing",
+          "matter": 32
         }
       ],
       "priority": "P2_joined"
@@ -9807,6 +10341,31 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Ballentine v. Tucker, 17 F. 4th 54",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        32
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real at 28 F.4th 54 (9th Cir. 2022). Add year.",
+      "sampleContext": "t him; and (iii) the protected activity was a substantial or motivating factor for the 16 adverse action. See Nieves v. Bartlett, 587 U.S. 391, 398-99 (2019); Ballentine v. Tucker, 28 17 F.4th 54, 62 (9th Cir. 2022) 18 19 88. The exercise of a statutory right to refuse a search o",
+      "locations": [
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+          "page": 26,
+          "role": "plaintiff_filing",
+          "matter": 32
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "Bd. of Educ. v. Doyle, 429 U.S. 274 (1977)",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -9827,6 +10386,31 @@
           "page": 11,
           "role": "plaintiff_filing",
           "matter": 30
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Bell Atl. Corp. v. Twombly, 550 U.S. 544",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        3
+      ],
+      "roles": [
+        "other"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Resolves at 550 U.S. 544 (2007) under the full caption 'Bell Atlantic Corp. v. Twombly' on both CourtListener and CAP; the abbreviated reporting name is why the probe returned PARTIAL rather than an exact caption match. Existence only.",
+      "sampleContext": "plaintiff to plead each claim with sufficient specificity to \u201cgive the defendant fair notice of what the . . . claim is and the grounds upon which it rests.\u201d Bell Atl. Corp. v. Twombly, 550 U.S. 544, 555, 127 S. Ct. 1955, 167 L. Ed. 2d 929 (2007) (internal quotations omitted). A ",
+      "locations": [
+        {
+          "document": "/documents/matter-03/SLB MTD.pdf",
+          "page": 5,
+          "role": "other",
+          "matter": 3
         }
       ],
       "priority": "P2_joined"
@@ -10059,6 +10643,31 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "California v. Acevedo, 500 U.S. 565",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        32
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Automobile-exception container-search SCOTUS decision.",
+      "sampleContext": "nt consent, exigent circumstances, or the 25 automobile exception grounded in independent probable cause. See Arizona v. Gant, 556 U.S 26 332, 343-44 (2009); California v. Acevedo, 500 U.S. 565, 580 (I99I) 27 28 65. Following Defendant Melano's warrantless entry, both Defendants ",
+      "locations": [
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+          "page": 20,
+          "role": "plaintiff_filing",
+          "matter": 32
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "California v. Acevedo, 500 U.S. 565 (1991)",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -10261,6 +10870,31 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Collins v. Virginia, 17 U.S. 586 (2018)",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        32
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real \u2014 automobile exception / curtilage.",
+      "sampleContext": "nd without any recognized exception to the warrant requirement. See Kentucky v. King, 16 563 U.S. 452,459 (2011) (warrantless entry \"generally unreasonable\"); Collins v. Virginia, 584 17 U.S. 586, 592 (2018) (automobile exception does not authorize entry into constitutionally 18 ",
+      "locations": [
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+          "page": 9,
+          "role": "plaintiff_filing",
+          "matter": 32
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "Condit v. Dunne, 225 F.R.D. 100",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -10331,6 +10965,31 @@
           "page": 11,
           "role": "plaintiff_filing",
           "matter": 30
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Dunaway v. New, 442 U.S. 200 (1979)",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        32
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "audit",
+      "notes": "Real, canonical Fourth Amendment case; citation and year correct; holding accurately characterized. Confirmed still good law (foundational, never overruled).",
+      "sampleContext": "right to be free from arrest without probable cause was clearly established more 6 than half a century before this incident. Beck v. Ohio, 379 U.S. 89 (1964); Dunaway v. New 7 York, 442 U.S. 200,208-16 (1979); Devenpeck v. Alford, 543 U.S. 146 (2004). And it is beyond 8 debate th",
+      "locations": [
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+          "page": 28,
+          "role": "plaintiff_filing",
+          "matter": 32
         }
       ],
       "priority": "P2_joined"
@@ -10431,33 +11090,6 @@
         {
           "document": "/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
           "page": 16,
-          "role": "plaintiff_filing",
-          "matter": 7
-        }
-      ],
-      "priority": "P2_joined"
-    },
-    {
-      "citation": "Franklin v. Murphy, 745 F. 2d 1221",
-      "kind": "authority",
-      "occurrenceCount": 1,
-      "matters": [
-        7,
-        32,
-        33
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "VERIFIED",
-      "statusSource": "round",
-      "notes": "Real at 745 F.2d 1221 (9th Cir. 1984). Add year.",
-      "sampleContext": "by definition, an arguable basis in law. The Ninth Circuit has cautioned that the frivolousness standard 'is intended to address only the most extreme cases.' Franklin v. Murphy, 745 F.2d 1221, 1228 (9th Cir. 1984). This case, involving detailed factual allegations, dashcam audio",
-      "locations": [
-        {
-          "document": "/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
-          "page": 11,
           "role": "plaintiff_filing",
           "matter": 7
         }
@@ -10692,26 +11324,26 @@
       "priority": "P2_joined"
     },
     {
-      "citation": "Harlow v. Fitzgerald, 457 U.S. 800 (1982)",
+      "citation": "Hansen v. Blue Cross, 891 F. 2d 1384",
       "kind": "authority",
       "occurrenceCount": 1,
       "matters": [
-        32
+        24
       ],
       "roles": [
-        "plaintiff_filing"
+        "court_order"
       ],
-      "plaintiffOnly": true,
+      "plaintiffOnly": false,
       "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Direct quote confirmed accurate and correctly pinpoint-cited to page 818.",
-      "sampleContext": "nment officials only where their conduct does not violate clearly established statutory or constitutional rights of which a reasonable person would have known. Harlow v. Fitzgerald, 457 U.S. 800, 818 (1982); Pearson v. Callahan, 555 U.S. 223, 231 (2009). Each right alleged to hav",
+      "statusSource": "round",
+      "notes": "FOUND on CourtListener and CAP at 891 F.2d 1384 (9th Cir. 1989). Full caption is Hansen v. Blue Cross of California; the index key truncates at the reporter. Existence only.",
+      "sampleContext": "the United States.\" Jd. at \u00a7 1331. A cause of action \"arises under federal law only when the plaintiff's well-pleaded complaint raises issues of federal law.\" Hansen v. Blue Cross of Cal., 891 F.2d 1384, 1386 (9th Cir. 1989): A district court has diversity jurisdiction \"where the",
       "locations": [
         {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
-          "page": 27,
-          "role": "plaintiff_filing",
-          "matter": 32
+          "document": "/documents/opinions/Newanforbi v Serrato - USDC NDCal - IFP Granted Complaint Sufficient Jun 29 2026.pdf",
+          "page": 3,
+          "role": "court_order",
+          "matter": 24
         }
       ],
       "priority": "P2_joined"
@@ -11220,31 +11852,6 @@
       "priority": "P2_joined"
     },
     {
-      "citation": "Kentucky v. King, 563 U.S. 452 (2011)",
-      "kind": "authority",
-      "occurrenceCount": 1,
-      "matters": [
-        32
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "VERIFIED",
-      "statusSource": "round",
-      "notes": "Same Kentucky v. King.",
-      "sampleContext": "area is presumptively unreasonable and violates the Fourth Amendment absent consent or a recognized exception. Payton v. New York, 445 U.S. 573, 585-90 (1980); Kentucky v. King, 563 U.S. 452, 459 (2011). 59. The interior of a passenger automobile, and the closed compartments and ",
-      "locations": [
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
-          "page": 19,
-          "role": "plaintiff_filing",
-          "matter": 32
-        }
-      ],
-      "priority": "P2_joined"
-    },
-    {
       "citation": "Knudsen v. Department of Motor Vehicles, 101 Cal. App. 5th 186 (2024)",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -11652,31 +12259,6 @@
       "priority": "P2_joined"
     },
     {
-      "citation": "New York v. Class, 475 U.S. 106 (1986)",
-      "kind": "authority",
-      "occurrenceCount": 1,
-      "matters": [
-        32
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "VERIFIED",
-      "statusSource": "round",
-      "notes": "Real \u2014 VIN inspection / search.",
-      "sampleContext": "cted areas within the meaning of the Fourth Amendment. See Collins v. Virginia, 584 U.S. 586, 592-93 (2018); California v. Carney, 471 U.S. 386, 390-93 (1985); New York v. Class, 475 U.S. 106, 114-15 (1986). 60. At timestamp 00:56:43 on the dashcam recording, Defendant Melano ope",
-      "locations": [
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
-          "page": 19,
-          "role": "plaintiff_filing",
-          "matter": 32
-        }
-      ],
-      "priority": "P2_joined"
-    },
-    {
       "citation": "Ordonez Orosco v. Napolitano, 598 F. 3d 222",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -11698,6 +12280,31 @@
           "page": 2,
           "role": "plaintiff_filing",
           "matter": 2
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Orosco v. Napolitano, 598 F. 3d 222",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        24
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "FOUND on CourtListener and CAP at 598 F.3d 222 (5th Cir. 2010). Note the order cites it as '(Sth Cir.2010)', an OCR-level rendering of 5th Cir. Existence only.",
+      "sampleContext": "cation to qualify for U Nonimmigrant status is discretionary.\" United States v. Biao, No. 98CR2812-BTM, 2011 WL 607087, at *1 (S.D. Cal. Feb. 11, 2011) (citing Orosco v. Napolitano, 598 F.3d 222, 226 (Sth Cir.2010)).",
+      "locations": [
+        {
+          "document": "/documents/opinions/Newanforbi v Serrato - USDC NDCal - IFP Granted Complaint Sufficient Jun 29 2026.pdf",
+          "page": 3,
+          "role": "court_order",
+          "matter": 24
         }
       ],
       "priority": "P2_joined"
@@ -11728,6 +12335,31 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Payton v. New York, 445 U.S. 26 (1980)",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        32
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real \u2014 warrantless home entry to arrest.",
+      "sampleContext": "24 93. The right to be free from warrantless entry into a private vehicle absent consent, 25 exigency, or an applicable exception was clearly established by Payton v. New York, 445 U.S. 26 573 (1980); Collins v. Virginia, 584 U.S. 586 (2018); and Caniglia v. Strom, 593 U.S. 194 2",
+      "locations": [
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+          "page": 27,
+          "role": "plaintiff_filing",
+          "matter": 32
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "People v. Preslie, 70 Cal.App. 3d 486 (1977)",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -11749,6 +12381,31 @@
           "page": 3,
           "role": "plaintiff_filing",
           "matter": 20
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Perez Perez v. Wolf, 943 F. 3d 853",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        24
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Resolves at 943 F.3d 853 (9th Cir. 2019). CourtListener reports the fuller caption 'Pedro Perez Perez v. Chad Wolf', the same decision \u2014 the probe's CAPTION_MISMATCH is the party-name expansion. Existence only.",
+      "sampleContext": "orbi's complaint states a claim. \"Congress created U nonimmigrant status as part of the Victims of Trafficking and Violence Protection Act of 2000 ('VT VPA').\" Perez Perez v. Wolf, 943 F.3d 853, 856 (9th Cir. To be eligible for a U visa, a petitioner must establish that he or she",
+      "locations": [
+        {
+          "document": "/documents/opinions/Newanforbi v Serrato - USDC NDCal - IFP Granted Complaint Sufficient Jun 29 2026.pdf",
+          "page": 3,
+          "role": "court_order",
+          "matter": 24
         }
       ],
       "priority": "P2_joined"
@@ -11829,6 +12486,31 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Pratt v. Sumner, 807 F. 2d 817",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        24
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "FOUND on CourtListener and CAP static.case.law at 807 F.2d 817 (9th Cir. 1987). Existence only. Note the order itself prints the year as '(9th Cir. 19987)' \u2014 a typo in Dkt. 5, confirmed against the scan at 600 dpi rather than an OCR artifact. Cited for the proposition that a complaint should be dismissed as frivolous on \u00a7 1915 review where subject matter jurisdiction is lacking.",
+      "sampleContext": "rivolous under \u00a7 1915 where the Court lacks subject matter jurisdiction. See Castillo v. Marshall, 207 F.3d 15, 15 (9th Cir. 1997) (citation omitted); see also Pratt v. Sumner, 807 F.2d 817, 819 (9th Cir. 19987) (recognizing the general proposition that a complaint should be dism",
+      "locations": [
+        {
+          "document": "/documents/opinions/Newanforbi v Serrato - USDC NDCal - IFP Granted Complaint Sufficient Jun 29 2026.pdf",
+          "page": 2,
+          "role": "court_order",
+          "matter": 24
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "Sandin v. Conner, 515 U.S. 472 (1995)",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -11879,6 +12561,31 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "See Arizona v. Gant, 556 U.S 26 (2009)",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        32
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "audit",
+      "notes": "Real, correctly cited; Gant is about vehicle searches incident to arrest, consistent with the point made.",
+      "sampleContext": "awfully parked passenger vehicle is unreasonable absent consent, exigent circumstances, or the 25 automobile exception grounded in independent probable cause. See Arizona v. Gant, 556 U.S 26 332, 343-44 (2009); California v. Acevedo, 500 U.S. 565, 580 (I99I) 27 28 65. Following D",
+      "locations": [
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+          "page": 20,
+          "role": "plaintiff_filing",
+          "matter": 32
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "See Arizona v. Gant, 556 U.S. 332 (2009)",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -11899,6 +12606,31 @@
           "page": 20,
           "role": "plaintiff_filing",
           "matter": 32
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "See Bell Atl. Corp. v. Twombly, 550 U.S. 544 (2007)",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        24
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Resolves at 550 U.S. 544 (2007) under the full caption 'Bell Atlantic Corp. v. Twombly' on both CourtListener and CAP; the abbreviated reporting name is why the probe returned PARTIAL rather than an exact caption match. Existence only.",
+      "sampleContext": "(b)(6). Lopez v. Smith, 203 F.3d 1122, 1126-27 (9th Cir. 2000). The complaint, therefore, must allege facts that plausibly establish the defendant's liability. See Bell Atl. Corp. v. Twombly, 550 U.S. 544, 555-57 (2007). When the complaint has been filed by an unrepresented plain",
+      "locations": [
+        {
+          "document": "/documents/opinions/Newanforbi v Serrato - USDC NDCal - IFP Granted Complaint Sufficient Jun 29 2026.pdf",
+          "page": 2,
+          "role": "court_order",
+          "matter": 24
         }
       ],
       "priority": "P2_joined"
@@ -11948,31 +12680,6 @@
         {
           "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
           "page": 26,
-          "role": "plaintiff_filing",
-          "matter": 32
-        }
-      ],
-      "priority": "P2_joined"
-    },
-    {
-      "citation": "See Caniglia v. Strom, 593 U.S. 194 (2021)",
-      "kind": "authority",
-      "occurrenceCount": 1,
-      "matters": [
-        32
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Real, correctly cited 2021 SCOTUS case rejecting a freestanding community-caretaking exception; holding accurately paraphrased.",
-      "sampleContext": "munity caretaking exception does not authorize warrantless entry of a private vehicle absent an imminent, articulable threat to public safety not present here. See Caniglia v. Strom, 593 U.S. 194, 197-99 (2021) (community caretaking is not a standalone doctrine authorizing warran",
-      "locations": [
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
-          "page": 20,
           "role": "plaintiff_filing",
           "matter": 32
         }
@@ -12056,31 +12763,6 @@
       "priority": "P2_joined"
     },
     {
-      "citation": "See Franks v. Delaware, 438 U.S. 154 (1978)",
-      "kind": "authority",
-      "occurrenceCount": 1,
-      "matters": [
-        32
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "VERIFIED",
-      "statusSource": "round",
-      "notes": "Real \u2014 false statements in warrant affidavits.",
-      "sampleContext": "v) refusal of a voluntary test. Those facts do not add up to probable cause under any Fourth Amendment standard. 43. This is a paradigmatic Franks/Chism claim. See Franks v. Delaware, 438 U.S. 154, 155-56 (1978); Chism v. Washington State, 661 F.3d 380, 386 (9th Cir. 2011) (civil",
-      "locations": [
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
-          "page": 14,
-          "role": "plaintiff_filing",
-          "matter": 32
-        }
-      ],
-      "priority": "P2_joined"
-    },
-    {
       "citation": "See Fulton v. City of Philadelphia, 593 U.S. 522 (2021)",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -12127,31 +12809,6 @@
           "page": 9,
           "role": "opposing_filing",
           "matter": 1
-        }
-      ],
-      "priority": "P2_joined"
-    },
-    {
-      "citation": "See Kentucky v. King, 563 U.S. 452 (2011)",
-      "kind": "authority",
-      "occurrenceCount": 1,
-      "matters": [
-        32
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "VERIFIED",
-      "statusSource": "round",
-      "notes": "Same Kentucky v. King.",
-      "sampleContext": "This entry into a constitutionally protected area occurred without consent, without a warrant, and without any recognized exception to the warrant requirement. See Kentucky v. King, 563 U.S. 452, 459 (2011) (warrantless entry \"generally unreasonable\"); Collins v. Virginia, 584 U.",
-      "locations": [
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
-          "page": 9,
-          "role": "plaintiff_filing",
-          "matter": 32
         }
       ],
       "priority": "P2_joined"
@@ -12204,31 +12861,6 @@
           "page": 13,
           "role": "other",
           "matter": 7
-        }
-      ],
-      "priority": "P2_joined"
-    },
-    {
-      "citation": "See Nieves v. Bartlett, 587 U.S. 391 (2019)",
-      "kind": "authority",
-      "occurrenceCount": 1,
-      "matters": [
-        32
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Case exists at correct citation (2019, probable-cause-and-retaliatory-arrest case). The general proposition cited is consistent with the case's reasoning about pretext, though the precise page 406 quote was not independently confirmed word-for-word; the doctrine attributed to it is accurate. Good law.",
-      "sampleContext": "ctivity; (ii) the defendant took an adverse action against him; and (iii) the protected activity was a substantial or motivating factor for the adverse action. See Nieves v. Bartlett, 587 U.S. 391, 398-99 (2019); Ballentine v. Tucker, 28 F.4th 54, 62 (9th Cir. 2022). 88. The exer",
-      "locations": [
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
-          "page": 26,
-          "role": "plaintiff_filing",
-          "matter": 32
         }
       ],
       "priority": "P2_joined"
@@ -12840,6 +13472,31 @@
           "page": 4,
           "role": "plaintiff_filing",
           "matter": 29
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Valdez v. Allstate Ins. Co, 372 F. 3d 1115",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        24
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Resolves at 372 F.3d 1115 (9th Cir. 2004). CourtListener reports the fuller caption 'Leticia Valdez v. Allstate Insurance Company', which is the same decision \u2014 the probe's CAPTION_MISMATCH reflects the party-name expansion, not a different case. Existence only.",
+      "sampleContext": "Case 4:26-cv-05953-ASK Document5 Filed 06/29/26 Page 3of5 562 U.S. 428, 434 (2011); Valdez v. Allstate Ins. Co., 372 F.3d 1115, 1116 (9th Cir. 2004) (noting that district courts are \"obligated to consider sua sponte whether [they] have subject matter jurisdiction\"). Ther",
+      "locations": [
+        {
+          "document": "/documents/opinions/Newanforbi v Serrato - USDC NDCal - IFP Granted Complaint Sufficient Jun 29 2026.pdf",
+          "page": 3,
+          "role": "court_order",
+          "matter": 24
         }
       ],
       "priority": "P2_joined"
@@ -13718,6 +14375,77 @@
       "priority": "P3_unverified_corroborated"
     },
     {
+      "citation": "Devenpeck v. Alford, 543 U.S. 146 (2004)",
+      "kind": "authority",
+      "occurrenceCount": 9,
+      "matters": [
+        1,
+        32
+      ],
+      "roles": [
+        "court_order",
+        "opposing_filing",
+        "other",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": false,
+      "status": "UNVERIFIED",
+      "statusSource": "none",
+      "notes": "",
+      "sampleContext": "] by a law officer is reasonable under the Fourth Amendment where there is probable cause to believe that a criminal offense has been or is being committed.\u201d Devenpeck v. Alford, 543 U.S. 146, 152 (2004) (citations omitted). Probable cause exists when a prudent person would have ",
+      "locations": [
+        {
+          "document": "/documents/matter-32/from-01/CHP Motion To Dismiss.pdf",
+          "page": 5,
+          "role": "opposing_filing",
+          "matter": 1
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 2.pdf",
+          "page": 14,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 3 Operative.pdf",
+          "page": 15,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
+          "page": 22,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
+          "page": 28,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+          "page": 28,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/FAC Ngwa Nforbi v Meza-Gonzalez and Melano NDCal (Aug 11 2026).pdf",
+          "page": 15,
+          "role": "other",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/FAC Ngwa Nforbi v Meza-Gonzalez and Melano NDCal (as submitted Aug 10 2026, superseded).pdf",
+          "page": 15,
+          "role": "other",
+          "matter": 32
+        }
+      ],
+      "priority": "P3_unverified_corroborated"
+    },
+    {
       "citation": "Garber & Assocs. v. Eskandarian, 150 Cal.App. 4th 813 (2007)",
       "kind": "authority",
       "occurrenceCount": 9,
@@ -13780,77 +14508,6 @@
           "page": 6,
           "role": "court_order",
           "matter": 12
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
-      "citation": "Devenpeck v. Alford, 543 U.S. 146 (2004)",
-      "kind": "authority",
-      "occurrenceCount": 8,
-      "matters": [
-        1,
-        32
-      ],
-      "roles": [
-        "court_order",
-        "opposing_filing",
-        "other",
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "] by a law officer is reasonable under the Fourth Amendment where there is probable cause to believe that a criminal offense has been or is being committed.\u201d Devenpeck v. Alford, 543 U.S. 146, 152 (2004) (citations omitted). Probable cause exists when a prudent person would have ",
-      "locations": [
-        {
-          "document": "/documents/matter-32/from-01/CHP Motion To Dismiss.pdf",
-          "page": 5,
-          "role": "opposing_filing",
-          "matter": 1
-        },
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 2.pdf",
-          "page": 14,
-          "role": "plaintiff_filing",
-          "matter": 32
-        },
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 3 Operative.pdf",
-          "page": 15,
-          "role": "plaintiff_filing",
-          "matter": 32
-        },
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
-          "page": 22,
-          "role": "plaintiff_filing",
-          "matter": 32
-        },
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
-          "page": 28,
-          "role": "plaintiff_filing",
-          "matter": 32
-        },
-        {
-          "document": "/documents/matter-32/ndcal/FAC Ngwa Nforbi v Meza-Gonzalez and Melano NDCal (Aug 11 2026).pdf",
-          "page": 15,
-          "role": "other",
-          "matter": 32
-        },
-        {
-          "document": "/documents/matter-32/ndcal/FAC Ngwa Nforbi v Meza-Gonzalez and Melano NDCal (as submitted Aug 10 2026, superseded).pdf",
-          "page": 15,
-          "role": "other",
-          "matter": 32
-        },
-        {
-          "document": "/documents/opinions/Newanforbi v California CHP - USDC EDCal - FR Recommending Dismissal Apr 20 2026.pdf",
-          "page": 5,
-          "role": "court_order",
-          "matter": null
         }
       ],
       "priority": "P3_unverified_corroborated"
@@ -14114,65 +14771,6 @@
           "page": 28,
           "role": "other",
           "matter": 15
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
-      "citation": "Bell Atl. Corp. v. Twombly, 550 U.S. 544 (2007)",
-      "kind": "authority",
-      "occurrenceCount": 6,
-      "matters": [
-        1,
-        3,
-        29,
-        32
-      ],
-      "roles": [
-        "court_order",
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "Suite 2450 Los Angeles, CA 90071 Cases Ashcroft v. Iqbal, 556 U.S. 662, 129 S.Ct. 1937, 173 L.Ed.2d 868 (2009) ......................................... 8 Bell Atl. Corp. v. Twombly, 550 U.S. 544, 556 (2007) ........................................................................",
-      "locations": [
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
-          "page": 3,
-          "role": "plaintiff_filing",
-          "matter": 29
-        },
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
-          "page": 12,
-          "role": "plaintiff_filing",
-          "matter": 29
-        },
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 36 - ORDER GRANTING Motions to Dismiss - Megan's Law, FCRA, UCL Claims Dismissed (May 26, 2023).pdf",
-          "page": 3,
-          "role": "court_order",
-          "matter": 29
-        },
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 36 - ORDER GRANTING Motions to Dismiss - Megan's Law, FCRA, UCL Claims Dismissed (May 26, 2023).pdf",
-          "page": 5,
-          "role": "court_order",
-          "matter": 29
-        },
-        {
-          "document": "/documents/matter-32/from-01/Objections to FR - April 21 2026.pdf",
-          "page": 2,
-          "role": "plaintiff_filing",
-          "matter": 1
-        },
-        {
-          "document": "/documents/opinions/Newanforbi v Derrick - USDC EDCal - MTD Order Jul 24 2026.pdf",
-          "page": 4,
-          "role": "court_order",
-          "matter": 3
         }
       ],
       "priority": "P3_unverified_corroborated"
@@ -16286,6 +16884,47 @@
       "priority": "P3_unverified_corroborated"
     },
     {
+      "citation": "See Commercial Space Mgmt. Co. v. Boeing Co, 193 F. 3d 1074",
+      "kind": "authority",
+      "occurrenceCount": 3,
+      "matters": [
+        1,
+        6,
+        7,
+        32,
+        33
+      ],
+      "roles": [
+        "other"
+      ],
+      "plaintiffOnly": false,
+      "status": "UNVERIFIED",
+      "statusSource": "none",
+      "notes": "",
+      "sampleContext": "s without prejudice and does not operate as an adjudication on the merits. (Fed. R. Civ. P. 41(a)(1)(B).) No court order is required to effect this dismissal. (See Commercial Space Mgmt. Co. v. Boeing Co., 193 F.3d 1074, 1077-78 (9th Cir. 1999) [Rule 41(a)(1) notice of dismissal ",
+      "locations": [
+        {
+          "document": "/documents/matter-06/Notice of Voluntary Dismissal Newanforbi v HOPE.pdf",
+          "page": 2,
+          "role": "other",
+          "matter": 6
+        },
+        {
+          "document": "/documents/matter-32/from-01/Notice of Voluntary Dismissal Without Prejudice (Aug 11 2026).pdf",
+          "page": 2,
+          "role": "other",
+          "matter": 1
+        },
+        {
+          "document": "/documents/matter-33/from-07/Notice of Voluntary Dismissal Without Prejudice (Aug 11 2026).pdf",
+          "page": 2,
+          "role": "other",
+          "matter": 7
+        }
+      ],
+      "priority": "P3_unverified_corroborated"
+    },
+    {
       "citation": "See Haggis v. City of Los Angeles, 22 Cal. 4th 490 (2000)",
       "kind": "authority",
       "occurrenceCount": 3,
@@ -16318,6 +16957,47 @@
           "page": 11,
           "role": "other",
           "matter": 15
+        }
+      ],
+      "priority": "P3_unverified_corroborated"
+    },
+    {
+      "citation": "See Hamilton v. Shearson-Lehman American Express, Inc, 813 F. 2d 1532",
+      "kind": "authority",
+      "occurrenceCount": 3,
+      "matters": [
+        1,
+        6,
+        7,
+        32,
+        33
+      ],
+      "roles": [
+        "other"
+      ],
+      "plaintiffOnly": false,
+      "status": "UNVERIFIED",
+      "statusSource": "none",
+      "notes": "",
+      "sampleContext": "026 by Defendant HOPE PSYCHOTHERAPY, INC. (ECF No. 5), which is neither an answer nor a motion for summary judgment within the meaning of Rule 41(a)(1)(A)(i). (See Hamilton v. Shearson-Lehman American Express, Inc., 813 F.2d 1532, 1534-35 (9th Cir. 1987) [right to dismiss under R",
+      "locations": [
+        {
+          "document": "/documents/matter-06/Notice of Voluntary Dismissal Newanforbi v HOPE.pdf",
+          "page": 2,
+          "role": "other",
+          "matter": 6
+        },
+        {
+          "document": "/documents/matter-32/from-01/Notice of Voluntary Dismissal Without Prejudice (Aug 11 2026).pdf",
+          "page": 1,
+          "role": "other",
+          "matter": 1
+        },
+        {
+          "document": "/documents/matter-33/from-07/Notice of Voluntary Dismissal Without Prejudice (Aug 11 2026).pdf",
+          "page": 2,
+          "role": "other",
+          "matter": 7
         }
       ],
       "priority": "P3_unverified_corroborated"
@@ -17001,6 +17681,40 @@
           "page": 12,
           "role": "opposing_filing",
           "matter": 20
+        }
+      ],
+      "priority": "P3_unverified_corroborated"
+    },
+    {
+      "citation": "Concha v. London, 62 F. 3d 1493",
+      "kind": "authority",
+      "occurrenceCount": 2,
+      "matters": [
+        1,
+        7,
+        32,
+        33
+      ],
+      "roles": [
+        "other"
+      ],
+      "plaintiffOnly": false,
+      "status": "UNVERIFIED",
+      "statusSource": "none",
+      "notes": "",
+      "sampleContext": "STATE OF CALIFORNIA ET AL. (2:25-cv-01460-DC-CSK) dismiss under Rule 41(a)(1) is absolute until the defendant serves an answer or motion for summary judgment]; Concha v. London, 62 F.3d 1493, 1506 (9th Cir. 1995) [Rule 12(b)(6) motion does not terminate the plaintiff's absolute r",
+      "locations": [
+        {
+          "document": "/documents/matter-32/from-01/Notice of Voluntary Dismissal Without Prejudice (Aug 11 2026).pdf",
+          "page": 2,
+          "role": "other",
+          "matter": 1
+        },
+        {
+          "document": "/documents/matter-33/from-07/Notice of Voluntary Dismissal Without Prejudice (Aug 11 2026).pdf",
+          "page": 2,
+          "role": "other",
+          "matter": 7
         }
       ],
       "priority": "P3_unverified_corroborated"
@@ -19374,72 +20088,6 @@
       "priority": "P3_unverified_corroborated"
     },
     {
-      "citation": "See Commercial Space Mgmt. Co. v. Boeing Co, 193 F. 3d 1074",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        1,
-        6,
-        32
-      ],
-      "roles": [
-        "other"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "s without prejudice and does not operate as an adjudication on the merits. (Fed. R. Civ. P. 41(a)(1)(B).) No court order is required to effect this dismissal. (See Commercial Space Mgmt. Co. v. Boeing Co., 193 F.3d 1074, 1077-78 (9th Cir. 1999) [Rule 41(a)(1) notice of dismissal ",
-      "locations": [
-        {
-          "document": "/documents/matter-06/Notice of Voluntary Dismissal Newanforbi v HOPE.pdf",
-          "page": 2,
-          "role": "other",
-          "matter": 6
-        },
-        {
-          "document": "/documents/matter-32/from-01/Notice of Voluntary Dismissal Without Prejudice (Aug 7 2026).pdf",
-          "page": 2,
-          "role": "other",
-          "matter": 1
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
-      "citation": "See Hamilton v. Shearson-Lehman American Express, Inc, 813 F. 2d 1532",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        1,
-        6,
-        32
-      ],
-      "roles": [
-        "other"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "026 by Defendant HOPE PSYCHOTHERAPY, INC. (ECF No. 5), which is neither an answer nor a motion for summary judgment within the meaning of Rule 41(a)(1)(A)(i). (See Hamilton v. Shearson-Lehman American Express, Inc., 813 F.2d 1532, 1534-35 (9th Cir. 1987) [right to dismiss under R",
-      "locations": [
-        {
-          "document": "/documents/matter-06/Notice of Voluntary Dismissal Newanforbi v HOPE.pdf",
-          "page": 2,
-          "role": "other",
-          "matter": 6
-        },
-        {
-          "document": "/documents/matter-32/from-01/Notice of Voluntary Dismissal Without Prejudice (Aug 7 2026).pdf",
-          "page": 1,
-          "role": "other",
-          "matter": 1
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
       "citation": "See Kamakana v. City and County, 447 F. 3d 1172",
       "kind": "authority",
       "occurrenceCount": 2,
@@ -20964,31 +21612,6 @@
       "priority": "P3_unverified_corroborated"
     },
     {
-      "citation": "Bell Atl. Corp. v. Twombly, 550 U.S. 544",
-      "kind": "authority",
-      "occurrenceCount": 1,
-      "matters": [
-        3
-      ],
-      "roles": [
-        "other"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "plaintiff to plead each claim with sufficient specificity to \u201cgive the defendant fair notice of what the . . . claim is and the grounds upon which it rests.\u201d Bell Atl. Corp. v. Twombly, 550 U.S. 544, 555, 127 S. Ct. 1955, 167 L. Ed. 2d 929 (2007) (internal quotations omitted). A ",
-      "locations": [
-        {
-          "document": "/documents/matter-03/SLB MTD.pdf",
-          "page": 5,
-          "role": "other",
-          "matter": 3
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
       "citation": "Bell v. Atlantic Corp, 550 U.S. 544 (2007)",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -21768,32 +22391,6 @@
           "page": 6,
           "role": "court_order",
           "matter": 3
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
-      "citation": "Concha v. London, 62 F. 3d 1493",
-      "kind": "authority",
-      "occurrenceCount": 1,
-      "matters": [
-        1,
-        32
-      ],
-      "roles": [
-        "other"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "813 F.2d 1532, 1534-35 (9th Cir. 1987) [right to dismiss under Rule 41(a)(1) is absolute until the defendant serves an answer or motion for summary judgment]; Concha v. London, 62 F.3d 1493, 1506 (9th Cir. 1995) [Rule 12(b)(6) motion does not terminate the plaintiff's absolute ri",
-      "locations": [
-        {
-          "document": "/documents/matter-32/from-01/Notice of Voluntary Dismissal Without Prejudice (Aug 7 2026).pdf",
-          "page": 1,
-          "role": "other",
-          "matter": 1
         }
       ],
       "priority": "P3_unverified_corroborated"
@@ -23908,6 +24505,33 @@
       "priority": "P3_unverified_corroborated"
     },
     {
+      "citation": "Miller v. Terramite Corp, 114 F. App'x 536",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        7,
+        32,
+        33
+      ],
+      "roles": [
+        "other"
+      ],
+      "plaintiffOnly": false,
+      "status": "UNVERIFIED",
+      "statusSource": "none",
+      "notes": "",
+      "sampleContext": "ntil the defendant serves an answer or motion for summary judgment]; Concha v. London, 62 F.3d 1493, 1506 (9th Cir. 1995) [same, as to a Rule 12(b)(6) motion]; Miller v. Terramite Corp., 114 F. App'x 536, 539 (4th Cir. 2004) [same rule applies a fortiori where the defendant has n",
+      "locations": [
+        {
+          "document": "/documents/matter-33/from-07/Notice of Voluntary Dismissal Without Prejudice (Aug 11 2026).pdf",
+          "page": 2,
+          "role": "other",
+          "matter": 7
+        }
+      ],
+      "priority": "P3_unverified_corroborated"
+    },
+    {
       "citation": "Minetti v. Port of Seattle, 152 F. 3d 1113",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -24737,6 +25361,31 @@
           "page": 10,
           "role": "other",
           "matter": 2
+        }
+      ],
+      "priority": "P3_unverified_corroborated"
+    },
+    {
+      "citation": "See Castillo v. Marshall, 207 F. 3d 15",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        24
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "UNVERIFIED",
+      "statusSource": "round",
+      "notes": "DOES NOT RESOLVE, and the discrepancy is in the order rather than in the OCR \u2014 the scan reads 'See Castillo v. Marshall, 207 F.3d 15, 15 (9th Cir. 1997)' at 600 dpi. CourtListener indexes no opinion captioned Castillo v. Marshall and returns nothing for '207 F.3d 15'; CAP finds no case beginning at page 15 of f3d/207. The volume and year are also inconsistent with each other, since 207 F.3d dates to 2000 rather than 1997. Left UNVERIFIED rather than NOT_FOUND: CourtListener and CAP cover 1997 Ninth Circuit unpublished table dispositions unevenly, and NOT_FOUND in this ledger means a confirmed fabrication. This is the court's own citation in a screening order, carries role court_order, and is not plaintiff citation debt \u2014 but it is the one authority in Dkt. 5 that cannot be confirmed, so do not repeat it in a portfolio filing without independent confirmation.",
+      "sampleContext": "st a defendant who is immune from such relief. 28 U.S.C. \u00a7 1915(e)(2). A complaint is frivolous under \u00a7 1915 where the Court lacks subject matter jurisdiction. See Castillo v. Marshall, 207 F.3d 15, 15 (9th Cir. 1997) (citation omitted); see also Pratt v. Sumner, 807 F.2d 817, 81",
+      "locations": [
+        {
+          "document": "/documents/opinions/Newanforbi v Serrato - USDC NDCal - IFP Granted Complaint Sufficient Jun 29 2026.pdf",
+          "page": 2,
+          "role": "court_order",
+          "matter": 24
         }
       ],
       "priority": "P3_unverified_corroborated"
@@ -25668,6 +26317,31 @@
       "priority": "P3_unverified_corroborated"
     },
     {
+      "citation": "United States v. Biao, 2011 WL 607087",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        24
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "UNVERIFIED",
+      "statusSource": "round",
+      "notes": "Not resolvable with the sources available here: a Westlaw-only pin has no reporter volume for CAP static.case.law, and CourtListener's unauthenticated search returns nothing for the WL number. Probe consensus UNKNOWN, which is a tooling limit rather than evidence either way. Cited by the court for the discretionary nature of U-visa certification, alongside Orosco v. Napolitano, which does resolve.",
+      "sampleContext": "ctivity.\" Jd. at 863 (cleaned up). Law enforcement's \"decision of whether or not to issue certification to qualify for U Nonimmigrant status is discretionary.\" United States v. Biao, No. 98CR2812-BTM, 2011 WL 607087, at *1 (S.D. Cal. Feb. 11, 2011) (citing Orosco v. Napolitano, 5",
+      "locations": [
+        {
+          "document": "/documents/opinions/Newanforbi v Serrato - USDC NDCal - IFP Granted Complaint Sufficient Jun 29 2026.pdf",
+          "page": 3,
+          "role": "court_order",
+          "matter": 24
+        }
+      ],
+      "priority": "P3_unverified_corroborated"
+    },
+    {
       "citation": "United States v. Gourde, 440 F. 3d 1065",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -26185,6 +26859,81 @@
       "priority": "P0_plaintiff_only_unverified"
     },
     {
+      "citation": "Califomia v. Carney, 471 U.S. 386 (1985)",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        32
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "UNVERIFIED",
+      "statusSource": "none",
+      "notes": "",
+      "sampleContext": "iners 17 within it, are constitutionally protected areas within the meaning of the Fourth Amendment. See 18 Collins V. Virginia, 584 U.S. 586, 592-93 (2018); Califomia v. Carney, 471 U.S. 386, 390-93 19 (1985); New York v. Class, 475 U.S. 106, 114-15 (1986) 20 21 60. At timestamp",
+      "locations": [
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+          "page": 19,
+          "role": "plaintiff_filing",
+          "matter": 32
+        }
+      ],
+      "priority": "P0_plaintiff_only_unverified"
+    },
+    {
+      "citation": "Devenpeck v. Alford, 3 U.S. 146 (2004)",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        32
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "UNVERIFIED",
+      "statusSource": "none",
+      "notes": "",
+      "sampleContext": ".3d 406, 432 (9th Cir. 2010). Probable cause must exist at the time of the arrest and 2 cannot be manufactured after the fact through fabricated observations. Devenpeck v. Alford, 543 3 U.S. 146, 152(2004) 4 5 70. At the moment Officer Meza-Gonzalez arrested Plaintiff - at dashca",
+      "locations": [
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+          "page": 22,
+          "role": "plaintiff_filing",
+          "matter": 32
+        }
+      ],
+      "priority": "P0_plaintiff_only_unverified"
+    },
+    {
+      "citation": "Galbraith v. County of, 307 F. 3d 1119",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        32
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "UNVERIFIED",
+      "statusSource": "none",
+      "notes": "",
+      "sampleContext": "rial facts, would not support probable cause. Franks v. Delaware, 438 U.S. 154, 155-56 17 (1978); Chism v. Washington State, 661 F.3d 380, 386 (9th Cir. 2011); Galbraith v. County of 18 Santa Clara, 307 F.3d 1119, 1126 (9th Cir. 2002) 19 20 76. Defendant Meza-Gonzalez executed un",
+      "locations": [
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+          "page": 23,
+          "role": "plaintiff_filing",
+          "matter": 32
+        }
+      ],
+      "priority": "P0_plaintiff_only_unverified"
+    },
+    {
       "citation": "ICnudsen v. DMV, 101 Cal.App. 5th 186 (2024)",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -26230,6 +26979,31 @@
           "page": 32,
           "role": "plaintiff_filing",
           "matter": 33
+        }
+      ],
+      "priority": "P0_plaintiff_only_unverified"
+    },
+    {
+      "citation": "See Camara v. Municipal, 387 U.S. 523 (1967)",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        32
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "UNVERIFIED",
+      "statusSource": "none",
+      "notes": "",
+      "sampleContext": "exercise of a statutory right to refuse a search or investigative procedure that is 20 expressly non-mandatory constitutes constitutionally protected conduct. See Camara v. Municipal 21 Court, 387 U.S. 523, 528-33 (1967). Plaintiffs refusal of the PAS test \u2014 a test that Officer 2",
+      "locations": [
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
+          "page": 26,
+          "role": "plaintiff_filing",
+          "matter": 32
         }
       ],
       "priority": "P0_plaintiff_only_unverified"
