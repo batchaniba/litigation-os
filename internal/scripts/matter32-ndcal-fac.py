@@ -2,9 +2,11 @@
 # NGWA NFORBI v. MEZA-GONZALEZ and MELANO -- FIRST AMENDED COMPLAINT
 # USDC N.D. Cal. (Matter 32)
 #
-# Source of record for this filing. The PDF under
-# internal/public/documents/matter-32/ndcal/ is generated from this
-# script -- edit the CONTENT below and re-run, never hand-patch the PDF.
+# Generates a FAC draft PDF. The portfolio-operative pleading is the
+# user-supplied unsigned copy:
+#   FAC Nforbi v Meza-Gonzalez and Melano NDCal - OPERATIVE UNSIGNED (Aug 12 2026).pdf
+# Do not overwrite that file. This script's default output is the superseded
+# Aug. 11 draft.
 #
 #   python3 internal/scripts/matter32-ndcal-fac.py [OUT_PDF]
 # ==========================================================
