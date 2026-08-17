@@ -2501,7 +2501,7 @@
   },
   {
     "matter": 29,
-    "label": "SER-001 Request for Sheriff to Serve Court Papers — Amazon.com Services, LLC, c/o CSC - Lawyers Incorporating Service, Sacramento County (executed Aug. 7, 2026, to transmit the $250,000.00 CCP §425.115 Notice; fee waiver PENDING — Aug. 18, 2026 hearing, standard fee applies absent a grant) — NOT YET SUBMITTED",
+    "label": "SER-001 Request for Sheriff to Serve Court Papers — Amazon.com Services, LLC, c/o CSC - Lawyers Incorporating Service, Sacramento County (executed Aug. 7, 2026, to transmit the $250,000.00 CCP §425.115 Notice) — SUPERSEDED by the August 17, 2026 SER-001. Do not submit this version.",
     "path": "/documents/matter-29/SER-001 Request for Sheriff to Serve Court Papers - Amazon.com Services LLC (CCP 425.115 Notice) (Aug 7 2026).pdf"
   },
   {
@@ -2511,8 +2511,18 @@
   },
   {
     "matter": 29,
-    "label": "SER-001 Request for Sheriff to Serve Court Papers — Accurate Background LLC, c/o CT Corporation System, Los Angeles County (executed Aug. 7, 2026, to transmit the $100,000.00 CCP §425.115 Notice; private process server remains the faster alternative; fee waiver PENDING) — NOT YET SUBMITTED",
+    "label": "SER-001 Request for Sheriff to Serve Court Papers — Accurate Background LLC, c/o CT Corporation System, Los Angeles County (executed Aug. 7, 2026, to transmit the $100,000.00 CCP §425.115 Notice) — SUPERSEDED by the August 17, 2026 SER-001. Do not submit this version.",
     "path": "/documents/matter-29/SER-001 Request for Sheriff to Serve Court Papers - Accurate Background LLC (CCP 425.115 Notice) (Aug 7 2026).pdf"
+  },
+  {
+    "matter": 29,
+    "label": "SER-001 Request for Sheriff to Serve Court Papers — Amazon.com Services, LLC, c/o CSC - Lawyers Incorporating Service, Sacramento County (executed/e-signed Aug. 17, 2026, to transmit the $250,000.00 CCP §425.115 Notice dated Aug. 7, 2026; supersedes the unsubmitted Aug. 7 SER-001; $435 first-paper fee paid, fee waiver withdrawn as moot — standard sheriff service fee applies) — NOT YET SUBMITTED",
+    "path": "/documents/matter-29/SER-001 Request for Sheriff to Serve Court Papers - Amazon.com Services LLC (CCP 425.115 Notice) (Aug 17 2026).pdf"
+  },
+  {
+    "matter": 29,
+    "label": "SER-001 Request for Sheriff to Serve Court Papers — Accurate Background LLC, c/o CT Corporation System, Los Angeles County (executed/e-signed Aug. 17, 2026, to transmit the $100,000.00 CCP §425.115 Notice dated Aug. 7, 2026; supersedes the unsubmitted Aug. 7 SER-001; private process server remains the faster alternative; $435 first-paper fee paid, fee waiver withdrawn as moot — standard sheriff service fee applies) — NOT YET SUBMITTED",
+    "path": "/documents/matter-29/SER-001 Request for Sheriff to Serve Court Papers - Accurate Background LLC (CCP 425.115 Notice) (Aug 17 2026).pdf"
   },
   {
     "matter": 29,
