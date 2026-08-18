@@ -74,6 +74,17 @@
     "actor": "opposing"
   },
   {
+    "date": "Aug. 18, 2026",
+    "event": "Amended Notices of Amount of Punitive Damages Sought (CCP §425.115) re-executed and e-signed for Federal Express Corporation (STK-CV-UWT-2026-0009118, $250,000.00) and United Parcel Service, Inc. (STK-CV-UWT-2026-0009113, $250,000.00), replacing the August 17, 2026 signed amended notices of the same amount. Each still supersedes the August 4, 2026 $25,000.00 notice in full. Not yet filed with San Joaquin Superior Court, and personal service has not been effected. As to UPS, the notice is additionally moot after the Aug. 20, 2026 removal — Newanforbi v. Federal Express Corporation / Newanforbi v. United Parcel Service, Inc.",
+    "matters": [
+      25,
+      26
+    ],
+    "type": "filing",
+    "source": "/documents/matter-25/Amended Notice of Amount of Punitive Damages Sought (CCP 425.115) - Federal Express Corporation (Aug 18 2026).pdf",
+    "upcoming": false
+  },
+  {
     "date": "Aug. 17, 2026",
     "event": "OPERATIVE FAC TEXTS IDENTIFIED — Plaintiff supplied the unsigned First Amended Complaints that are the portfolio-operative pleadings to lodge. Matter 32 (3:26-cv-08271-PHK): 21 pp., executed Aug. 12, 2026, caption carries Hon. Peter H. Kang; signature line blank; not clerk-stamped. Matter 33 (3:26-cv-08272-LJC): 44 pp., executed Aug. 11, 2026, caption carries Hon. Lisa J. Cisneros; Burrell v. Jackson omitted; signature line blank; not clerk-stamped. Neither FAC is on the docket. Dkt. 1 in each case remains the court pleading of record. Rule 15(a)(1)(A) amendment-as-of-course after the Aug. 14, 2026 personal service runs to Sep. 4, 2026.",
     "matters": [
@@ -3093,7 +3104,7 @@
   },
   {
     "date": "Aug. 20, 2026",
-    "event": "CCP §425.115 PROGRAM MOOT AS TO UPS — the Aug. 17, 2026 amended Notice of Amount of Punitive Damages Sought ($250,000.00) against United Parcel Service, Inc. and the Sacramento County Sheriff e-filing order O26005511 covering it are dead letters on removal. Section 425.115 is a state pleading device with no federal analogue; in USDC E.D. Cal. the ceiling on relief is governed by Fed. R. Civ. P. 54(c). Do not spend the Sheriff service fee on the UPS notice. The parallel notices as to Matter 25 (Federal Express Corporation) and Matter 27 (Randstad US, LLC; The RK Logistics Group, Inc.) are unaffected while those actions remain in state court.",
+    "event": "CCP §425.115 PROGRAM MOOT AS TO UPS — the Aug. 18, 2026 amended Notice of Amount of Punitive Damages Sought ($250,000.00) against United Parcel Service, Inc. and the Sacramento County Sheriff e-filing order O26005511 covering it are dead letters on removal. Section 425.115 is a state pleading device with no federal analogue; in USDC E.D. Cal. the ceiling on relief is governed by Fed. R. Civ. P. 54(c). Do not spend the Sheriff service fee on the UPS notice. The parallel notices as to Matter 25 (Federal Express Corporation) and Matter 27 (Randstad US, LLC; The RK Logistics Group, Inc.) are unaffected while those actions remain in state court.",
     "matters": [
       26
     ],
