@@ -214,13 +214,13 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 <!-- PORTFOLIO:UPCOMING_DEADLINES:START -->
 | Date | Matter | Event |
 |---|---|---|
-| Aug. 19, 2026 | 27 | Confirm the 15-day extension in writing to Randstad's counsel (cwilliams@kcozlaw.com), as his Aug. 18, 2026 email requests — self-imposed next-day target, not a court deadline. |
+| Aug. 19, 2026 | 27 | Transmit the executed confirmation of the 15-day extension to Randstad's counsel (cwilliams@kcozlaw.com), as his Aug. 18, 2026 email requests — self-imposed next-day target, not a court deadline. |
 | Aug. 19, 2026 | 7, 8, 33 | Gov. claim deadline — Candelaria state tort Bane Act damages (6 months from Feb. 19, 2026 accrual; claim must be filed with DGS). Independent of Matter 7's federal case status (dismissed Aug. 15, 2026) |
 | Aug. 19, 2026 | 25 | Meet-and-confer deadline (computed) — Newanforbi v. Federal Express Corporation (STK-CV-UWT-2026-0009118) |
 | Aug. 21, 2026 | 20 | AG reply deadline (computed) — Respondents' Reply to Petitioner's Opposition to Demurrer due 5 court days before Aug. 28, 2026 hearing per CRC 3.1320(b) — Newanforbi v. California Highway Patrol et al. (26CV191136) |
 | Aug. 21, 2026 | 26 | Responsive pleading deadline (computed) — Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113); 30 days from the Jul. 22, 2026 service date (CCP §412.20(a)(3)) |
 | Aug. 24, 2026 | 25 | Responsive pleading deadline (computed) — Newanforbi v. Federal Express Corporation (STK-CV-UWT-2026-0009118); 30 days from the Jul. 24, 2026 service date (CCP §412.20(a)(3)) |
-| Aug. 25, 2026 | 27 | Target date to transmit the opening settlement demand to Randstad's counsel — and, at Plaintiff's option, a global demand covering The RK Logistics Group, Inc. |
+| Aug. 25, 2026 | 27 | Outer target to transmit the opening settlement demand to Randstad's counsel — drafted and executed Aug. 18, 2026 at $250,000.00 as to Randstad alone, with a Sept. 8, 2026 response deadline built into the letter. |
 | Aug. 25, 2026 | 24 | Deadline — ADR Certification (ADR L.R. 3) and Rule 26(f) meet-and-confer (initial disclosures, early settlement, ADR process selection, discovery plan) — Newanforbi v. Serrato (4:26-cv-05953-ASK) |
 | Aug. 26, 2026 | 27 | Meet-and-confer deadline (computed) as to The RK Logistics Group, Inc. — Newanforbi v. Randstad US, LLC et al. (26CV199902) |
 | Aug. 26, 2026 | 29 | Meet-and-confer deadline (computed) — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554) |
@@ -414,7 +414,7 @@ Controls (reconfirm when batching): *Richardson v. McKnight*, 521 U.S. 399 must 
 | NOT_FOUND | 6 |
 | UNVERIFIED | 429 |
 
-Paired authorities: **820**. P0 (plaintiff-only UNVERIFIED): **8**. P1 (plaintiff-only bad status): **27**. Ledger date: 2026-08-18.
+Paired authorities: **820**. P0 (plaintiff-only UNVERIFIED): **8**. P1 (plaintiff-only bad status): **27**. Ledger date: 2026-08-17.
 <!-- PORTFOLIO:CITATION_SCOREBOARD:END -->
 
 Priority queues from the ledger: **P0** = plaintiff-only + still `UNVERIFIED` (`npm run citations:queue`); **P1** = plaintiff-only + bad status (fix before the next brief). Pre-existing fabricated hits are debt-tracked in `citation_known_bad_debt.json` so CI stays green while corrected drafts replace them.

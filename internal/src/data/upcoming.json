@@ -1,23 +1,25 @@
 [
   {
     "date": "Aug. 19, 2026",
-    "event": "Confirm the 15-day extension in writing to Randstad's counsel (cwilliams@kcozlaw.com), as his Aug. 18, 2026 email requests — self-imposed next-day target, not a court deadline. The written confirmation should carry its scope on its face: Randstad US, LLC alone; time to plead runs through and including Sept. 15, 2026; nothing further implied; no waiver of Plaintiff's right to seek entry of default after that date; and no extension as to The RK Logistics Group, Inc., whose Aug. 31, 2026 date is unchanged.",
+    "event": "Transmit the executed confirmation of the 15-day extension to Randstad's counsel (cwilliams@kcozlaw.com), as his Aug. 18, 2026 email requests — self-imposed next-day target, not a court deadline. The letter is drafted and executed; only transmission remains. It carries its scope on its face: Randstad US, LLC alone; time to plead runs through and including Sept. 15, 2026; nothing further implied; no waiver of Plaintiff's right to seek entry of default after that date; and no extension as to The RK Logistics Group, Inc., whose Aug. 31, 2026 date is unchanged.",
     "matters": [
       27
     ],
     "type": "deadline",
     "upcoming": true,
-    "actor": "you"
+    "actor": "you",
+    "source": "/documents/matter-27/Letter Confirming 15-Day Extension of Randstad's Time to Respond (Aug 18 2026).pdf"
   },
   {
     "date": "Aug. 25, 2026",
-    "event": "Target date to transmit the opening settlement demand to Randstad's counsel — and, at Plaintiff's option, a global demand covering The RK Logistics Group, Inc. — requested in the Aug. 18, 2026 Kabat Chapman & Ozmer email. Self-imposed, not a court deadline. Sending on or before this date leaves Randstad three weeks to evaluate ahead of its extended Sept. 15 date and reaches RK Logistics, which has no extension, while its own Aug. 31 clock is still running. The July 20, 2026 pre-filing demand was $85,000 per defendant, made before service, before the CCP §425.115 punitive-damages notices ($500,000 each), and before Randstad retained outside employment-defense counsel — the opening number should be set against the current posture, not repeated from July.",
+    "event": "Outer target to transmit the opening settlement demand to Randstad's counsel — drafted and executed Aug. 18, 2026 at $250,000.00 as to Randstad alone, with a Sept. 8, 2026 response deadline built into the letter. Self-imposed, not a court deadline; the letter is ready to send with the extension confirmation and gains nothing from waiting. Sending it leaves Randstad three weeks to evaluate ahead of its extended Sept. 15 date, while RK Logistics — which has no extension — runs out its own Aug. 31 clock. A global number covering both defendants is offered separately on request rather than by dividing the Randstad demand.",
     "matters": [
       27
     ],
     "type": "deadline",
     "upcoming": true,
-    "actor": "you"
+    "actor": "you",
+    "source": "/documents/matter-27/Opening Settlement Demand - Randstad US LLC (Aug 18 2026).pdf"
   },
   {
     "date": "Sep. 10, 2026",

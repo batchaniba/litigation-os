@@ -1,6 +1,28 @@
 [
   {
     "date": "Aug. 18, 2026",
+    "event": "Letter confirming the 15-day extension of Randstad's time to respond drafted and executed — addressed to Chadwick L. Williams (Kabat Chapman & Ozmer LLP) in reply to his 2:11 p.m. email. Confirms the extension through and including Sept. 15, 2026 and fixes its scope on the face of the document: Randstad US, LLC only; a single 15-day extension with no further extension implied; no waiver of any right, including entry of default after Sept. 15; RK Logistics unaffected and still due Aug. 31, 2026; and an offer to sign a stipulation and proposed order if Randstad prefers the extension on file. Also asks counsel to confirm authority to accept service and consent to electronic service under CCP §1010.6, and notes the accepted $500,000 CCP §425.115 notice as to Randstad. Not yet transmitted.",
+    "matters": [
+      27
+    ],
+    "type": "filing",
+    "source": "/documents/matter-27/Letter Confirming 15-Day Extension of Randstad's Time to Respond (Aug 18 2026).pdf",
+    "filed": false,
+    "upcoming": false
+  },
+  {
+    "date": "Aug. 18, 2026",
+    "event": "Opening settlement demand as to Randstad US, LLC drafted and executed — $250,000.00, Randstad only, in answer to the Aug. 18, 2026 request from its counsel. Five pages under Evid. Code §1152 / FRE 408 protection: current posture (filed, served, POS accepted, $500,000 §425.115 notice on file, CMC Dec. 17); the documentary record from the Jun. 30 Indeed application through the Jul. 15 termination; why neither of RK Logistics' defenses travels to Randstad (employer status, the Class A MVR theory, the two-business-day pre-adverse gap); non-monetary terms (policy guidance, rehire-eligible correction, neutral reference, amount-only confidentiality, no non-disparagement, release limited to Randstad); a global number offered separately rather than by allocating this one; and a response deadline of 5:00 p.m. PT Sept. 8, 2026, a week before Randstad's extended responsive date. Expressly withdraws the July 20, 2026 $85,000 pre-filing figure. Not yet transmitted.",
+    "matters": [
+      27
+    ],
+    "type": "filing",
+    "source": "/documents/matter-27/Opening Settlement Demand - Randstad US LLC (Aug 18 2026).pdf",
+    "filed": false,
+    "upcoming": false
+  },
+  {
+    "date": "Aug. 18, 2026",
     "event": "RANDSTAD APPEARS THROUGH COUNSEL — Chadwick L. Williams of Kabat Chapman & Ozmer LLP (1150 Spring Street NW, Suite 800, Atlanta, GA 30309; (404) 400-7306; cwilliams@kcozlaw.com) telephoned Plaintiff the afternoon of Aug. 18, 2026 and confirmed by email at 2:11 p.m. (copying a second recipient, 'Nathan') that Randstad US, LLC's responsive-pleading deadline is extended 15 days, through and including Sept. 15, 2026, asking Plaintiff to reply to confirm. The same email asks Plaintiff to send an opening settlement demand as to Randstad, plus a global demand against both defendants at Plaintiff's option. First contact from Randstad counsel — no answer, demurrer, or CCP §430.41 meet-and-confer letter has been served, and no notice of appearance is yet on the docket. The extension was agreed orally on the call and rests on the parties' agreement, not a court order; no stipulation has been filed. The RK Logistics Group, Inc. (through Garcia & Gurney, ALC) is not covered by the extension and its Aug. 31, 2026 deadline is unchanged.",
     "matters": [
       27
@@ -11,23 +33,25 @@
   },
   {
     "date": "Aug. 19, 2026",
-    "event": "Confirm the 15-day extension in writing to Randstad's counsel (cwilliams@kcozlaw.com), as his Aug. 18, 2026 email requests — self-imposed next-day target, not a court deadline. The written confirmation should carry its scope on its face: Randstad US, LLC alone; time to plead runs through and including Sept. 15, 2026; nothing further implied; no waiver of Plaintiff's right to seek entry of default after that date; and no extension as to The RK Logistics Group, Inc., whose Aug. 31, 2026 date is unchanged.",
+    "event": "Transmit the executed confirmation of the 15-day extension to Randstad's counsel (cwilliams@kcozlaw.com), as his Aug. 18, 2026 email requests — self-imposed next-day target, not a court deadline. The letter is drafted and executed; only transmission remains. It carries its scope on its face: Randstad US, LLC alone; time to plead runs through and including Sept. 15, 2026; nothing further implied; no waiver of Plaintiff's right to seek entry of default after that date; and no extension as to The RK Logistics Group, Inc., whose Aug. 31, 2026 date is unchanged.",
     "matters": [
       27
     ],
     "type": "deadline",
     "upcoming": true,
-    "actor": "you"
+    "actor": "you",
+    "source": "/documents/matter-27/Letter Confirming 15-Day Extension of Randstad's Time to Respond (Aug 18 2026).pdf"
   },
   {
     "date": "Aug. 25, 2026",
-    "event": "Target date to transmit the opening settlement demand to Randstad's counsel — and, at Plaintiff's option, a global demand covering The RK Logistics Group, Inc. — requested in the Aug. 18, 2026 Kabat Chapman & Ozmer email. Self-imposed, not a court deadline. Sending on or before this date leaves Randstad three weeks to evaluate ahead of its extended Sept. 15 date and reaches RK Logistics, which has no extension, while its own Aug. 31 clock is still running. The July 20, 2026 pre-filing demand was $85,000 per defendant, made before service, before the CCP §425.115 punitive-damages notices ($500,000 each), and before Randstad retained outside employment-defense counsel — the opening number should be set against the current posture, not repeated from July.",
+    "event": "Outer target to transmit the opening settlement demand to Randstad's counsel — drafted and executed Aug. 18, 2026 at $250,000.00 as to Randstad alone, with a Sept. 8, 2026 response deadline built into the letter. Self-imposed, not a court deadline; the letter is ready to send with the extension confirmation and gains nothing from waiting. Sending it leaves Randstad three weeks to evaluate ahead of its extended Sept. 15 date, while RK Logistics — which has no extension — runs out its own Aug. 31 clock. A global number covering both defendants is offered separately on request rather than by dividing the Randstad demand.",
     "matters": [
       27
     ],
     "type": "deadline",
     "upcoming": true,
-    "actor": "you"
+    "actor": "you",
+    "source": "/documents/matter-27/Opening Settlement Demand - Randstad US LLC (Aug 18 2026).pdf"
   },
   {
     "date": "Sep. 10, 2026",
