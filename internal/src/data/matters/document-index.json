@@ -1161,13 +1161,18 @@
   },
   {
     "matter": 19,
-    "label": "Notice of Change of Address (dated July 7, 2026 — 1455 Cat Tail Drive, Stockton → 1090 S Milpitas Blvd, Milpitas). No July 10 reverse is on file in this matter. SUPERSEDED by the August 17, 2026 notice restoring 1455 Cat Tail Drive, Stockton, CA 95204",
+    "label": "Notice of Change of Address (dated July 7, 2026 — 1455 Cat Tail Drive, Stockton → 1090 S Milpitas Blvd, Milpitas). No July 10 reverse is on file in this matter. SUPERSEDED by the August 18, 2026 notice stating 1455 Cat Tail Drive, Stockton, CA 95204",
     "path": "/documents/matter-19/Notice of Change of Address (July 7, 2026).pdf"
   },
   {
     "matter": 19,
-    "label": "Notice of Change of Address (executed and e-signed Aug. 17, 2026) — restores 1455 Cat Tail Drive, Stockton, CA 95204 as address of record (CRC 2.200); former address 1090 S Milpitas Blvd, Unit #304, Milpitas; NOT YET FILED",
+    "label": "Notice of Change of Address (executed and e-signed Aug. 17, 2026) — SUPERSEDED by the August 18, 2026 notice. Do not file this version.",
     "path": "/documents/matter-19/Notice of Change of Address (Aug 17 2026).pdf"
+  },
+  {
+    "matter": 19,
+    "label": "Notice of Change of Address (executed and e-signed Aug. 18, 2026) — address of record 1455 Cat Tail Drive, Stockton, CA 95204 (CRC 2.200); NOT YET FILED",
+    "path": "/documents/matter-19/Notice of Change of Address (Aug 18 2026).pdf"
   },
   {
     "matter": 19,
