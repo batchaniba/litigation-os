@@ -6,8 +6,9 @@ Packet order:
   2. Exhibit A cover (Matter-12 default-packet style)
   3. Unstamped Petition for Writ of Habeas Corpus (67 pp)
 
-Execution / notice date: August 7, 2026.
+Execution / notice date: August 17, 2026.
 Petition filing date: April 3, 2026 (Case No. C2604791).
+Address of record on this form: 1455 Cat Tail Drive, Stockton, CA 95204.
 """
 
 from __future__ import annotations
@@ -32,7 +33,7 @@ PETITION = OUT_DIR / "Petition for Writ of Habeas Corpus (filed Apr. 3, 2026).pd
 
 HC004_OUT = OUT_DIR / (
     "HC-004 Notice and Request for Ruling "
-    "(Habeas Corpus, Executed Aug 7 2026).pdf"
+    "(Habeas Corpus, Executed Aug 17 2026).pdf"
 )
 COVER_OUT = OUT_DIR / (
     "Exhibit A Cover — Petition for Writ of Habeas Corpus "
@@ -40,7 +41,7 @@ COVER_OUT = OUT_DIR / (
 )
 PACKET_OUT = OUT_DIR / (
     "HC-004 Notice and Request for Ruling Packet "
-    "(with Exhibit A — Unstamped Petition) (Ready to File Aug 7 2026).pdf"
+    "(with Exhibit A — Unstamped Petition) (Ready to File Aug 17 2026).pdf"
 )
 
 # Party / caption
@@ -58,7 +59,7 @@ CASE_NUMBER = "C2604791"
 DOB = "09/16/1996"
 CDC_NO = "BF3571"
 PETITION_FILE_DATE = "April 3, 2026"
-SIG_DATE = "August 7, 2026"
+SIG_DATE = "August 17, 2026"
 
 # pypdf field names (XFA-style hierarchy on Judicial Council HC-004)
 F = {

@@ -326,7 +326,7 @@
   },
   {
     "matter": 3,
-    "label": "Notice of Change of Address (filed July 7, 2026)",
+    "label": "Notice of Change of Address (dated July 10, 2026 — 1090 S Milpitas Blvd, Milpitas → 1455 Cat Tail Drive, Stockton, CA 95204); operative address of record. Filed under the same filename as the superseded July 7, 2026 version",
     "path": "/documents/matter-03/Notice of Change of Address (July 7, 2026).pdf"
   },
   {
@@ -496,7 +496,7 @@
   },
   {
     "matter": 5,
-    "label": "Notice of Change of Address (filed July 7, 2026)",
+    "label": "Notice of Change of Address (dated July 10, 2026 — 1090 S Milpitas Blvd, Milpitas → 1455 Cat Tail Drive, Stockton, CA 95204); operative address of record. Filed under the same filename as the superseded July 7, 2026 version",
     "path": "/documents/matter-05/Notice of Change of Address (July 7, 2026).pdf"
   },
   {
@@ -721,7 +721,7 @@
   },
   {
     "matter": 10,
-    "label": "Notice of Change of Address (filed July 7, 2026)",
+    "label": "Notice of Change of Address (dated July 10, 2026 — 1090 S Milpitas Blvd, Milpitas → 1455 Cat Tail Drive, Stockton, CA 95204); operative address of record. Filed under the same filename as the superseded July 7, 2026 version",
     "path": "/documents/matter-10/Notice of Change of Address (July 7, 2026).pdf"
   },
   {
@@ -926,7 +926,7 @@
   },
   {
     "matter": 12,
-    "label": "Notice of Change of Address (filed July 7, 2026)",
+    "label": "Notice of Change of Address (dated July 10, 2026 — 1090 S Milpitas Blvd, Milpitas → 1455 Cat Tail Drive, Stockton, CA 95204); operative address of record. Filed under the same filename as the superseded July 7, 2026 version",
     "path": "/documents/matter-12/Notice of Change of Address (July 7, 2026).pdf"
   },
   {
@@ -1126,7 +1126,7 @@
   },
   {
     "matter": 15,
-    "label": "Notice of Change of Address (filed July 7, 2026)",
+    "label": "Notice of Change of Address (dated July 10, 2026 — 1090 S Milpitas Blvd, Milpitas → 1455 Cat Tail Drive, Stockton, CA 95204); operative address of record. Filed under the same filename as the superseded July 7, 2026 version",
     "path": "/documents/matter-15/Notice of Change of Address (July 7, 2026).pdf"
   },
   {
@@ -1145,6 +1145,11 @@
     "path": "/documents/matter-16/Newanforbi v. Rojo.pdf"
   },
   {
+    "matter": 18,
+    "label": "Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026",
+    "path": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf"
+  },
+  {
     "matter": 19,
     "label": "Petition for Writ of Habeas Corpus — Immediate Discharge from Parole (signed Mar. 31, 2026; filed Apr. 3, 2026)",
     "path": "/documents/matter-19/Petition for Writ of Habeas Corpus (filed Apr. 3, 2026).pdf"
@@ -1156,12 +1161,17 @@
   },
   {
     "matter": 19,
-    "label": "Notice of Change of Address (filed July 7, 2026)",
+    "label": "Notice of Change of Address (dated July 7, 2026 — 1455 Cat Tail Drive, Stockton → 1090 S Milpitas Blvd, Milpitas). No July 10 reverse is on file in this matter. SUPERSEDED by the August 17, 2026 notice restoring 1455 Cat Tail Drive, Stockton, CA 95204",
     "path": "/documents/matter-19/Notice of Change of Address (July 7, 2026).pdf"
   },
   {
     "matter": 19,
-    "label": "HC-004 Notice and Request for Ruling (executed Aug. 7, 2026) — ready to file",
+    "label": "Notice of Change of Address (executed and e-signed Aug. 17, 2026) — restores 1455 Cat Tail Drive, Stockton, CA 95204 as address of record (CRC 2.200); former address 1090 S Milpitas Blvd, Unit #304, Milpitas; NOT YET FILED",
+    "path": "/documents/matter-19/Notice of Change of Address (Aug 17 2026).pdf"
+  },
+  {
+    "matter": 19,
+    "label": "HC-004 Notice and Request for Ruling (executed Aug. 7, 2026) — SUPERSEDED by the August 17, 2026 HC-004. Do not file this version.",
     "path": "/documents/matter-19/HC-004 Notice and Request for Ruling (Habeas Corpus, Executed Aug 7 2026).pdf"
   },
   {
@@ -1171,8 +1181,18 @@
   },
   {
     "matter": 19,
-    "label": "HC-004 Packet (HC-004 + Exhibit A cover + unstamped Petition, 69 pp.) — ready to file Aug. 7, 2026",
+    "label": "HC-004 Packet (HC-004 + Exhibit A cover + unstamped Petition, 69 pp.) — ready to file Aug. 7, 2026 — SUPERSEDED by the August 17, 2026 packet. Do not file this version.",
     "path": "/documents/matter-19/HC-004 Notice and Request for Ruling Packet (with Exhibit A — Unstamped Petition) (Ready to File Aug 7 2026).pdf"
+  },
+  {
+    "matter": 19,
+    "label": "HC-004 Notice and Request for Ruling (executed and e-signed Aug. 17, 2026; address 1455 Cat Tail Drive, Stockton) — ready to file; requests ruling under CRC 4.551(a)(3)(B)",
+    "path": "/documents/matter-19/HC-004 Notice and Request for Ruling (Habeas Corpus, Executed Aug 17 2026).pdf"
+  },
+  {
+    "matter": 19,
+    "label": "HC-004 Packet (HC-004 + Exhibit A cover + unstamped Petition, 69 pp.) — ready to file Aug. 17, 2026",
+    "path": "/documents/matter-19/HC-004 Notice and Request for Ruling Packet (with Exhibit A — Unstamped Petition) (Ready to File Aug 17 2026).pdf"
   },
   {
     "matter": 20,
@@ -1406,7 +1426,7 @@
   },
   {
     "matter": 22,
-    "label": "Notice of Change of Address (filed July 7, 2026)",
+    "label": "Notice of Change of Address (dated July 10, 2026 — 1090 S Milpitas Blvd, Milpitas → 1455 Cat Tail Drive, Stockton, CA 95204); operative address of record. Filed under the same filename as the superseded July 7, 2026 version",
     "path": "/documents/matter-22/Notice of Change of Address (July 7, 2026).pdf"
   },
   {
@@ -1651,8 +1671,13 @@
   },
   {
     "matter": 25,
-    "label": "AMENDED Notice of Amount of Punitive Damages Sought (CCP §425.115) — Federal Express Corporation ($250,000.00; executed Aug. 7, 2026) — supersedes the Aug. 4, 2026 $25,000.00 Notice in full; NOT YET SERVED — must be personally served before default is taken (CCP §425.115(f)(2))",
+    "label": "AMENDED Notice of Amount of Punitive Damages Sought (CCP §425.115) — Federal Express Corporation ($250,000.00; generated Aug. 7, 2026, unsigned) — SUPERSEDED by the August 17, 2026 signed Amended Notice. Do not file or serve this version.",
     "path": "/documents/matter-25/Amended Notice of Amount of Punitive Damages Sought (CCP 425.115) - Federal Express Corporation (Aug 7 2026).pdf"
+  },
+  {
+    "matter": 25,
+    "label": "AMENDED Notice of Amount of Punitive Damages Sought (CCP §425.115) — Federal Express Corporation ($250,000.00; executed and e-signed Aug. 17, 2026) — supersedes the Aug. 4, 2026 $25,000.00 Notice and the unsigned Aug. 7 generated original; NOT YET FILED OR SERVED — must be personally served before default is taken (CCP §425.115(f), (g)(1))",
+    "path": "/documents/matter-25/Amended Notice of Amount of Punitive Damages Sought (CCP 425.115) - Federal Express Corporation (Aug 17 2026).pdf"
   },
   {
     "matter": 25,
@@ -1751,8 +1776,13 @@
   },
   {
     "matter": 26,
-    "label": "AMENDED Notice of Amount of Punitive Damages Sought (CCP §425.115) — United Parcel Service, Inc. ($250,000.00; executed Aug. 7, 2026) — supersedes the Aug. 4, 2026 $25,000.00 Notice in full; NOT YET SERVED — must be personally served before default is taken (CCP §425.115(f)(2))",
+    "label": "AMENDED Notice of Amount of Punitive Damages Sought (CCP §425.115) — United Parcel Service, Inc. ($250,000.00; generated Aug. 7, 2026, unsigned) — SUPERSEDED by the August 17, 2026 signed Amended Notice. Do not file or serve this version.",
     "path": "/documents/matter-26/Amended Notice of Amount of Punitive Damages Sought (CCP 425.115) - United Parcel Service Inc (Aug 7 2026).pdf"
+  },
+  {
+    "matter": 26,
+    "label": "AMENDED Notice of Amount of Punitive Damages Sought (CCP §425.115) — United Parcel Service, Inc. ($250,000.00; executed and e-signed Aug. 17, 2026) — supersedes the Aug. 4, 2026 $25,000.00 Notice and the unsigned Aug. 7 generated original; NOT YET FILED OR SERVED — must be personally served before default is taken (CCP §425.115(f), (g)(1))",
+    "path": "/documents/matter-26/Amended Notice of Amount of Punitive Damages Sought (CCP 425.115) - United Parcel Service Inc (Aug 17 2026).pdf"
   },
   {
     "matter": 26,
@@ -2496,7 +2526,7 @@
   },
   {
     "matter": 29,
-    "label": "SER-001 Request for Sheriff to Serve Court Papers — Amazon.com Services, LLC, c/o CSC - Lawyers Incorporating Service, Sacramento County (executed Aug. 7, 2026, to transmit the $250,000.00 CCP §425.115 Notice; fee waiver PENDING — Aug. 18, 2026 hearing, standard fee applies absent a grant) — NOT YET SUBMITTED",
+    "label": "SER-001 Request for Sheriff to Serve Court Papers — Amazon.com Services, LLC, c/o CSC - Lawyers Incorporating Service, Sacramento County (executed Aug. 7, 2026, to transmit the $250,000.00 CCP §425.115 Notice) — SUPERSEDED by the August 17, 2026 SER-001. Do not submit this version.",
     "path": "/documents/matter-29/SER-001 Request for Sheriff to Serve Court Papers - Amazon.com Services LLC (CCP 425.115 Notice) (Aug 7 2026).pdf"
   },
   {
@@ -2506,8 +2536,18 @@
   },
   {
     "matter": 29,
-    "label": "SER-001 Request for Sheriff to Serve Court Papers — Accurate Background LLC, c/o CT Corporation System, Los Angeles County (executed Aug. 7, 2026, to transmit the $100,000.00 CCP §425.115 Notice; private process server remains the faster alternative; fee waiver PENDING) — NOT YET SUBMITTED",
+    "label": "SER-001 Request for Sheriff to Serve Court Papers — Accurate Background LLC, c/o CT Corporation System, Los Angeles County (executed Aug. 7, 2026, to transmit the $100,000.00 CCP §425.115 Notice) — SUPERSEDED by the August 17, 2026 SER-001. Do not submit this version.",
     "path": "/documents/matter-29/SER-001 Request for Sheriff to Serve Court Papers - Accurate Background LLC (CCP 425.115 Notice) (Aug 7 2026).pdf"
+  },
+  {
+    "matter": 29,
+    "label": "SER-001 Request for Sheriff to Serve Court Papers — Amazon.com Services, LLC, c/o CSC - Lawyers Incorporating Service, Sacramento County (executed/e-signed Aug. 17, 2026, to transmit the $250,000.00 CCP §425.115 Notice dated Aug. 7, 2026; supersedes the unsubmitted Aug. 7 SER-001; $435 first-paper fee paid, fee waiver withdrawn as moot — standard sheriff service fee applies) — NOT YET SUBMITTED",
+    "path": "/documents/matter-29/SER-001 Request for Sheriff to Serve Court Papers - Amazon.com Services LLC (CCP 425.115 Notice) (Aug 17 2026).pdf"
+  },
+  {
+    "matter": 29,
+    "label": "SER-001 Request for Sheriff to Serve Court Papers — Accurate Background LLC, c/o CT Corporation System, Los Angeles County (executed/e-signed Aug. 17, 2026, to transmit the $100,000.00 CCP §425.115 Notice dated Aug. 7, 2026; supersedes the unsubmitted Aug. 7 SER-001; private process server remains the faster alternative; $435 first-paper fee paid, fee waiver withdrawn as moot — standard sheriff service fee applies) — NOT YET SUBMITTED",
+    "path": "/documents/matter-29/SER-001 Request for Sheriff to Serve Court Papers - Accurate Background LLC (CCP 425.115 Notice) (Aug 17 2026).pdf"
   },
   {
     "matter": 29,
@@ -2641,7 +2681,7 @@
   },
   {
     "matter": 32,
-    "label": "Dkt. 1 — Complaint (CONFORMED — clerk-stamped FILED Aug. 10, 2026) — the pleading of record; titled \"Complaint,\" not \"First Amended Complaint,\" despite the FAC drafts below",
+    "label": "Dkt. 1 — Complaint (CONFORMED — clerk-stamped FILED Aug. 10, 2026) — the court pleading of record until the Aug. 12 OPERATIVE UNSIGNED FAC is lodged",
     "path": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf"
   },
   {
@@ -2681,12 +2721,17 @@
   },
   {
     "matter": 32,
-    "label": "Corrected First Amended Complaint (draft — execution date Aug. 11, 2026; SR-22 dates and caption Case No. conformed) — not yet lodged; Dkt. 1 remains the pleading of record",
+    "label": "First Amended Complaint — OPERATIVE UNSIGNED (21 pp., executed Aug. 12, 2026; caption Case No. 3:26-cv-08271-PHK, Hon. Peter H. Kang). Signature line blank; not clerk-stamped. Dkt. 1 remains the court pleading of record until this FAC is lodged.",
+    "path": "/documents/matter-32/ndcal/FAC Nforbi v Meza-Gonzalez and Melano NDCal - OPERATIVE UNSIGNED (Aug 12 2026).pdf"
+  },
+  {
+    "matter": 32,
+    "label": "First Amended Complaint draft (22 pp., executed Aug. 11, 2026) — superseded by the Aug. 12 OPERATIVE UNSIGNED copy",
     "path": "/documents/matter-32/ndcal/FAC Ngwa Nforbi v Meza-Gonzalez and Melano NDCal (Aug 11 2026).pdf"
   },
   {
     "matter": 32,
-    "label": "First Amended Complaint draft, pre-correction (blank case number in caption) — this is Plaintiff's own draft, not the document actually filed as Dkt. 1; never lodged with the Court",
+    "label": "First Amended Complaint draft, pre-correction (blank case number; executed Aug. 10, 2026) — superseded; never lodged",
     "path": "/documents/matter-32/ndcal/FAC Ngwa Nforbi v Meza-Gonzalez and Melano NDCal (as submitted Aug 10 2026, superseded).pdf"
   },
   {
@@ -3206,17 +3251,22 @@
   },
   {
     "matter": 33,
-    "label": "First Amended Complaint — OPERATIVE (44 pp.; caption bears Case No. 3:26-cv-08272-LJC; executed Aug. 11, 2026; fabricated Burrell v. Jackson citation removed). Generated by internal/scripts/matter33-ndcal-fac.py. Not yet lodged.",
+    "label": "First Amended Complaint — OPERATIVE UNSIGNED (44 pp., executed Aug. 11, 2026; caption Case No. 3:26-cv-08272-LJC, Hon. Lisa J. Cisneros; fabricated Burrell v. Jackson citation removed). Signature line blank; not clerk-stamped. Dkt. 1 remains the court pleading of record until this FAC is lodged.",
+    "path": "/documents/matter-33/ndcal/FAC Nforbi v Candelaria and Gordon NDCal - OPERATIVE UNSIGNED (Aug 11 2026).pdf"
+  },
+  {
+    "matter": 33,
+    "label": "First Amended Complaint draft (44 pp., executed Aug. 11, 2026; generated by matter33-ndcal-fac.py) — superseded by the OPERATIVE UNSIGNED copy",
     "path": "/documents/matter-33/ndcal/FAC Ngwa Nforbi v Candelaria and Gordon NDCal 3-26-cv-08272-LJC (Aug 11 2026).pdf"
   },
   {
     "matter": 33,
-    "label": "First Amended Complaint as submitted (44 pp., executed Aug. 10, 2026, blank Case No.) — superseded by the Aug. 11 copy, which is identical except for the caption case number and the execution date",
+    "label": "First Amended Complaint as submitted (44 pp., executed Aug. 10, 2026, blank Case No.) — superseded; never lodged as Dkt. 1",
     "path": "/documents/matter-33/ndcal/FAC Ngwa Nforbi v Candelaria and Gordon NDCal (as submitted Aug 10 2026, superseded).pdf"
   },
   {
     "matter": 33,
-    "label": "Complaint as docketed — Dkt. 1; superseded by the First Amended Complaint",
+    "label": "Dkt. 1 — Complaint (CONFORMED — clerk-stamped FILED Aug. 10, 2026) — the court pleading of record until the Aug. 11 OPERATIVE UNSIGNED FAC is lodged",
     "path": "/documents/matter-33/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf"
   },
   {

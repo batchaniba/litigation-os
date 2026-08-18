@@ -1,6 +1,6 @@
 {
   "generatedBy": "internal/scripts/verify-citations.py",
-  "generatedDate": "2026-08-16",
+  "generatedDate": "2026-08-17",
   "methodology": "Join citation_audit.json onto citation_index.json authority rows; overlay Round 4+ results from citation_verification_rounds.json. Existence checks use WebSearch plus direct CourtListener search API and CAP static.case.law CasesMetadata/HTML (see lookup-citations.py / citation_lookup_multisource.json). Positive control: Richardson v. McKnight. Negative control: In re Leman. Justia is Cloudflare-blocked here; Google Scholar is unreliable (often 403); CAP JSON API and CourtListener citation-lookup require auth.",
   "controls": {
     "positive": "Richardson v. McKnight, 521 U.S. 399 (1997) \u2014 must be findable",
@@ -8,8 +8,8 @@
   },
   "multisource": {
     "artifact": "citation_lookup_multisource.json",
-    "generatedDate": "2026-08-09",
-    "resultCount": 20,
+    "generatedDate": "2026-08-16",
+    "resultCount": 1,
     "reachability": {
       "courtlistener_search": "ok (unauthenticated /api/rest/v4/search/)",
       "case_law_api": "html docs only \u2014 JSON API not usable without auth/migration",
@@ -19,11 +19,11 @@
       "courtlistener_citation_lookup": "requires API token (401)"
     },
     "consensusCounts": {
-      "FOUND": 10,
-      "CAPTION_MISMATCH": 4,
-      "NOT_FOUND": 6,
+      "FOUND": 0,
+      "CAPTION_MISMATCH": 0,
+      "NOT_FOUND": 0,
       "PARTIAL": 0,
-      "UNKNOWN": 0
+      "UNKNOWN": 1
     },
     "matter28": {
       "artifact": "citation_lookup_matter28.json",
@@ -38,22 +38,22 @@
       }
     }
   },
-  "corpusAuthorities": 774,
+  "corpusAuthorities": 820,
   "statusCounts": {
-    "UNVERIFIED": 431,
-    "VERIFIED": 302,
-    "MISCITED": 29,
+    "UNVERIFIED": 429,
+    "VERIFIED": 353,
     "MISCHARACTERIZED": 6,
-    "NOT_FOUND": 6
+    "NOT_FOUND": 6,
+    "MISCITED": 26
   },
   "queue": {
     "plaintiffOnlyUnverified": 8,
     "plaintiffOnlyBad": 27
   },
   "rounds": {
-    "loaded": "2026-08-09 Round 4 \u2014 portfolio P0 (batches A\u2013D; LACW WL correction); Round 5 multisource (CourtListener + CAP); Round 5b Matter 28 full funnel; Round 6 spot-check of the Matter 33 conformed complaint (3:26-cv-08272-LJC, Dkt. 1) page-43 immunity sentence; Round 7 authorities cited in the Serrato IFP screening order (Matter 24, Dkt. 5) after OCR made that scan searchable",
-    "resultCount": 236,
-    "method": "Round 4: WebSearch after Richardson(+) / Leman(\u2212) controls. Round 5: CourtListener /api/rest/v4/search/ + CAP static.case.law for controls/high-risk. Round 5b: all Matter 28 indexed authorities through lookup-citations.py --matter 28 (\u2192 citation_lookup_matter28.json). Justia Cloudflare-blocked; Scholar unreliable; api.case.law JSON and CL citation-lookup need auth. Existence FOUND does not clear prior MISCHARACTERIZED/MISCITED proposition problems. Table-page F.3d pins can host multiple dispositions \u2014 do not treat first CL hit as unique. Round 7: the June 29, 2026 Serrato IFP/screening order was an image-only scan contributing nothing to the index until internal/scripts/ocr-text-layer.py added a text layer; its authorities were then probed through lookup-citations.py (\u2192 citation_lookup_serrato_order.json) behind the same Richardson(+) / Leman(\u2212) controls. These are a court's own citations, so they carry role court_order and never enter the plaintiff-only P0/P1 queues."
+    "loaded": "2026-08-09 Round 4 \u2014 portfolio P0 (batches A\u2013D; LACW WL correction); Round 5 multisource (CourtListener + CAP); Round 5b Matter 28 full funnel; Round 6 spot-check of the Matter 33 conformed complaint (3:26-cv-08272-LJC, Dkt. 1) page-43 immunity sentence; Round 7 authorities cited in the Serrato IFP screening order (Matter 24, Dkt. 5) after OCR made that scan searchable; Round 8 \u2014 OCR tranche (16 plaintiff filings + court orders: Matters 5/12/15/25/26/33, Barocio opinion)",
+    "resultCount": 278,
+    "method": "Round 4: WebSearch after Richardson(+) / Leman(\u2212) controls. Round 5: CourtListener /api/rest/v4/search/ + CAP static.case.law for controls/high-risk. Round 5b: all Matter 28 indexed authorities through lookup-citations.py --matter 28 (\u2192 citation_lookup_matter28.json). Justia Cloudflare-blocked; Scholar unreliable; api.case.law JSON and CL citation-lookup need auth. Existence FOUND does not clear prior MISCHARACTERIZED/MISCITED proposition problems. Table-page F.3d pins can host multiple dispositions \u2014 do not treat first CL hit as unique. Round 7: the June 29, 2026 Serrato IFP/screening order was an image-only scan contributing nothing to the index until internal/scripts/ocr-text-layer.py added a text layer; its authorities were then probed through lookup-citations.py (\u2192 citation_lookup_serrato_order.json) behind the same Richardson(+) / Leman(\u2212) controls. These are a court's own citations, so they carry role court_order and never enter the plaintiff-only P0/P1 queues. Round 8: after ocr-text-layer.py on the 16-document plaintiff_filing/court_order tranche, probed new P0 Matter 12/15 authorities (citation_lookup_matter12_p0.json) and Barocio screening-order authorities (citation_lookup_barocio_order.json). McCorkle manually confirmed on CourtListener when CAP lacked cal2d/70."
   },
   "knownFabricated": [
     {
@@ -1310,6 +1310,58 @@
       "priority": "P1_plaintiff_only_bad"
     },
     {
+      "citation": "Caldwell v. Montoya, 10 Cal. 4th 972 (1995)",
+      "kind": "authority",
+      "occurrenceCount": 5,
+      "matters": [
+        14,
+        15,
+        16
+      ],
+      "roles": [
+        "other",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "MISCITED",
+      "statusSource": "audit",
+      "notes": "The case exists at the correct citation and is good law, but Caldwell v. Montoya does not actually stand for the proposition cited. Caldwell held the opposite direction on its facts -- that discretionary-act immunity under \u00a7 820.2 DID protect school board members' 'basic policy' decision even where plaintiff alleged the decision was motivated by improper reasons (race/age discrimination) -- it is ",
+      "sampleContext": "tention. Immunity for discretionary acts under California Government Code \u00a7 820.2 does not shield officials who act outside the scope of their legal authority. Caldwell v. Montoya (1995) 10 Cal.4th 972. 93. Plaintiff did not consent to the confinement. Plaintiff was confined from",
+      "locations": [
+        {
+          "document": "/documents/matter-14/Newanforbi v Urrea.pdf",
+          "page": 22,
+          "role": "other",
+          "matter": 14
+        },
+        {
+          "document": "/documents/matter-15/5417 Complaint.pdf",
+          "page": 16,
+          "role": "plaintiff_filing",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-15/Newanforbi v Dodd RECALIBRATED.pdf",
+          "page": 16,
+          "role": "other",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-15/Newanforbi v. CDCR, et al.pdf",
+          "page": 16,
+          "role": "other",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-16/Newanforbi v. Rojo.pdf",
+          "page": 23,
+          "role": "other",
+          "matter": 16
+        }
+      ],
+      "priority": "P1_plaintiff_only_bad"
+    },
+    {
       "citation": "Burrell v. Jackson, 2003 WL 23545858",
       "kind": "authority",
       "occurrenceCount": 4,
@@ -1646,31 +1698,6 @@
         {
           "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
           "page": 18,
-          "role": "plaintiff_filing",
-          "matter": 29
-        }
-      ],
-      "priority": "P1_plaintiff_only_bad"
-    },
-    {
-      "citation": "Ashcroft v. Iqbal, 556 U.S. 662",
-      "kind": "authority",
-      "occurrenceCount": 1,
-      "matters": [
-        29
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "MISCITED",
-      "statusSource": "audit",
-      "notes": "OPPOSING COUNSEL (CHP/AG), not the litigant. The real Iqbal passage discussing 'legal conclusions'/framework and conclusory-allegation doctrine appears around 556 U.S. at 678-679, not at pages 663-664 (which fall within the syllabus/introductory portion of the reporter). The quoted language is close to the real opinion's wording ('framework of a complaint' vs. \"complaint's framework\") but the pinc",
-      "sampleContext": "GAL STANDARD FOR MOTION TO DISMISS When deciding whether to grant a motion to dismiss, the court must accept as true all \u201cwell-pleaded factual allegations.\u201d Ashcroft v. Iqbal, 556 U.S. 662, 129 S.Ct. 1937, 173 L.Ed.2d 868 (2009). The court must also construe the alleged facts in ",
-      "locations": [
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
-          "page": 12,
           "role": "plaintiff_filing",
           "matter": 29
         }
@@ -2135,6 +2162,82 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Ashcroft v. Iqbal, 556 U.S. 662 (2009)",
+      "kind": "authority",
+      "occurrenceCount": 20,
+      "matters": [
+        1,
+        3,
+        7,
+        18,
+        29,
+        32,
+        33
+      ],
+      "roles": [
+        "court_order",
+        "opposing_filing",
+        "other",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Ashcroft v. Iqbal). Existence only \u2014 court_order role.",
+      "sampleContext": "tate a claim to relief that is plausible on its face,\u201d in order to survive a motion to dismiss. Wilhelm v. Rotman, 680 F.3d 1113, 1121 (9th Cir. 2012) (citing Ashcroft v. Iqbal, 556 U.S. 662, 678 (2009)). This plausibility standard \u201casks for more than a sheer possibility that a d",
+      "locations": [
+        {
+          "document": "/documents/matter-03/8_MTQ.pdf",
+          "page": 7,
+          "role": "other",
+          "matter": 3
+        },
+        {
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 23-1 - Accurate Background's Memorandum ISO Motion to Dismiss (Dec 15, 2022).pdf",
+          "page": 3,
+          "role": "opposing_filing",
+          "matter": 29
+        },
+        {
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 23-1 - Accurate Background's Memorandum ISO Motion to Dismiss (Dec 15, 2022).pdf",
+          "page": 11,
+          "role": "opposing_filing",
+          "matter": 29
+        },
+        {
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 24-1 - Amazon's Memorandum ISO Motion to Dismiss (Dec 15, 2022).pdf",
+          "page": 4,
+          "role": "opposing_filing",
+          "matter": 29
+        },
+        {
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 24-1 - Amazon's Memorandum ISO Motion to Dismiss (Dec 15, 2022).pdf",
+          "page": 11,
+          "role": "opposing_filing",
+          "matter": 29
+        },
+        {
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 27 - Amazon's Reply ISO Motion to Dismiss (Feb 2, 2023).pdf",
+          "page": 3,
+          "role": "opposing_filing",
+          "matter": 29
+        },
+        {
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 36 - ORDER GRANTING Motions to Dismiss - Megan's Law, FCRA, UCL Claims Dismissed (May 26, 2023).pdf",
+          "page": 3,
+          "role": "court_order",
+          "matter": 29
+        },
+        {
+          "document": "/documents/matter-32/from-01/CHP Motion To Dismiss.pdf",
+          "page": 4,
+          "role": "opposing_filing",
+          "matter": 1
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "Goldberg v. Kelly, 397 U.S. 254 (1970)",
       "kind": "authority",
       "occurrenceCount": 20,
@@ -2206,81 +2309,6 @@
       "priority": "P2_joined"
     },
     {
-      "citation": "Ashcroft v. Iqbal, 556 U.S. 662 (2009)",
-      "kind": "authority",
-      "occurrenceCount": 18,
-      "matters": [
-        1,
-        3,
-        7,
-        29,
-        32,
-        33
-      ],
-      "roles": [
-        "court_order",
-        "opposing_filing",
-        "other",
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": false,
-      "status": "MISCITED",
-      "statusSource": "audit",
-      "notes": "OPPOSING COUNSEL (CHP/AG), not the litigant. The real Iqbal passage discussing 'legal conclusions'/framework and conclusory-allegation doctrine appears around 556 U.S. at 678-679, not at pages 663-664 (which fall within the syllabus/introductory portion of the reporter). The quoted language is close to the real opinion's wording ('framework of a complaint' vs. \"complaint's framework\") but the pinc",
-      "sampleContext": "tate a claim to relief that is plausible on its face,\u201d in order to survive a motion to dismiss. Wilhelm v. Rotman, 680 F.3d 1113, 1121 (9th Cir. 2012) (citing Ashcroft v. Iqbal, 556 U.S. 662, 678 (2009)). This plausibility standard \u201casks for more than a sheer possibility that a d",
-      "locations": [
-        {
-          "document": "/documents/matter-03/8_MTQ.pdf",
-          "page": 7,
-          "role": "other",
-          "matter": 3
-        },
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 23-1 - Accurate Background's Memorandum ISO Motion to Dismiss (Dec 15, 2022).pdf",
-          "page": 3,
-          "role": "opposing_filing",
-          "matter": 29
-        },
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 23-1 - Accurate Background's Memorandum ISO Motion to Dismiss (Dec 15, 2022).pdf",
-          "page": 11,
-          "role": "opposing_filing",
-          "matter": 29
-        },
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 24-1 - Amazon's Memorandum ISO Motion to Dismiss (Dec 15, 2022).pdf",
-          "page": 4,
-          "role": "opposing_filing",
-          "matter": 29
-        },
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 24-1 - Amazon's Memorandum ISO Motion to Dismiss (Dec 15, 2022).pdf",
-          "page": 11,
-          "role": "opposing_filing",
-          "matter": 29
-        },
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 27 - Amazon's Reply ISO Motion to Dismiss (Feb 2, 2023).pdf",
-          "page": 3,
-          "role": "opposing_filing",
-          "matter": 29
-        },
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 36 - ORDER GRANTING Motions to Dismiss - Megan's Law, FCRA, UCL Claims Dismissed (May 26, 2023).pdf",
-          "page": 3,
-          "role": "court_order",
-          "matter": 29
-        },
-        {
-          "document": "/documents/matter-32/from-01/CHP Motion To Dismiss.pdf",
-          "page": 4,
-          "role": "opposing_filing",
-          "matter": 1
-        }
-      ],
-      "priority": "P2_joined"
-    },
-    {
       "citation": "In re Thompson, 172 Cal.App. 3d 256 (1985)",
       "kind": "authority",
       "occurrenceCount": 17,
@@ -2347,6 +2375,74 @@
           "page": 62,
           "role": "plaintiff_filing",
           "matter": 9
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Aryeh v. Canon Business Solutions, Inc, 55 Cal. 4th 1185 (2013)",
+      "kind": "authority",
+      "occurrenceCount": 15,
+      "matters": [
+        15
+      ],
+      "roles": [
+        "other",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: FOUND on CourtListener/CAP for complaint OCR tranche (Aryeh v. Canon Business Solutions, Inc.). Existence only.",
+      "sampleContext": "ot begin to run until that conduct ceases, and the plaintiff may recover for all injury occurring within the limitations period measured backward from filing. (Aryeh v. Canon Business Solutions, Inc. (2013) 55 Cal.4th 1185, 1197-1199; Watts v. Johnson (2018) 27 Cal.App.Sth 734.) ",
+      "locations": [
+        {
+          "document": "/documents/matter-15/5417 Complaint.pdf",
+          "page": 8,
+          "role": "plaintiff_filing",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-15/DODD.pdf",
+          "page": 10,
+          "role": "other",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-15/DODD.pdf",
+          "page": 20,
+          "role": "other",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-15/DODD.pdf",
+          "page": 21,
+          "role": "other",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-15/DODD.pdf",
+          "page": 24,
+          "role": "other",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-15/Dodd.pdf",
+          "page": 10,
+          "role": "other",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-15/Dodd.pdf",
+          "page": 20,
+          "role": "other",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-15/Dodd.pdf",
+          "page": 21,
+          "role": "other",
+          "matter": 15
         }
       ],
       "priority": "P2_joined"
@@ -2628,6 +2724,76 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Tidewater Marine Western, Inc. v. Bradshaw, 14 Cal. 4th 557 (1996)",
+      "kind": "authority",
+      "occurrenceCount": 14,
+      "matters": [
+        9,
+        15,
+        19
+      ],
+      "roles": [
+        "other",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real at 14 Cal.4th 557. APA / underground-regulation holding is load-bearing for agency-rule challenges; confirm the briefed proposition is the APA point, not a freestanding 'agency may not add requirements' paraphrase without the APA frame.",
+      "sampleContext": "Page 4 of 9 addition to statutory criteria. Tidewater Marine Western, Inc. v. Bradshaw (1996) 14 Cal.4th 557 (agency policies adding requirements not found in statute are invalid). 12. The Parolee Dynamic Profile evaluation demonstrates: (1) sta",
+      "locations": [
+        {
+          "document": "/documents/matter-09/31626-43188-NTCHNG_69ce9f1e7ab52 2.pdf",
+          "page": 8,
+          "role": "other",
+          "matter": 9
+        },
+        {
+          "document": "/documents/matter-09/31626-43188-NTCHNG_69ce9f1e7ab52 2.pdf",
+          "page": 55,
+          "role": "other",
+          "matter": 9
+        },
+        {
+          "document": "/documents/matter-09/31626-43188-NTCHNG_69ce9f1e7ab52 2.pdf",
+          "page": 61,
+          "role": "other",
+          "matter": 9
+        },
+        {
+          "document": "/documents/matter-09/Amended Notice of Hearing on Petition for Writ of Mandate.pdf",
+          "page": 9,
+          "role": "plaintiff_filing",
+          "matter": 9
+        },
+        {
+          "document": "/documents/matter-09/Amended Notice of Hearing on Petition for Writ of Mandate.pdf",
+          "page": 56,
+          "role": "plaintiff_filing",
+          "matter": 9
+        },
+        {
+          "document": "/documents/matter-09/Amended Notice of Hearing on Petition for Writ of Mandate.pdf",
+          "page": 62,
+          "role": "plaintiff_filing",
+          "matter": 9
+        },
+        {
+          "document": "/documents/matter-09/WOM FAC.pdf",
+          "page": 4,
+          "role": "other",
+          "matter": 9
+        },
+        {
+          "document": "/documents/matter-09/WOM_Opening Brief.pdf",
+          "page": 13,
+          "role": "plaintiff_filing",
+          "matter": 9
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "Smith v. Wade, 461 U.S. 30 (1983)",
       "kind": "authority",
       "occurrenceCount": 13,
@@ -2695,76 +2861,6 @@
           "page": 31,
           "role": "plaintiff_filing",
           "matter": 33
-        }
-      ],
-      "priority": "P2_joined"
-    },
-    {
-      "citation": "Tidewater Marine Western, Inc. v. Bradshaw, 14 Cal. 4th 557 (1996)",
-      "kind": "authority",
-      "occurrenceCount": 13,
-      "matters": [
-        9,
-        15,
-        19
-      ],
-      "roles": [
-        "other",
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "VERIFIED",
-      "statusSource": "round",
-      "notes": "Real at 14 Cal.4th 557. APA / underground-regulation holding is load-bearing for agency-rule challenges; confirm the briefed proposition is the APA point, not a freestanding 'agency may not add requirements' paraphrase without the APA frame.",
-      "sampleContext": "Page 4 of 9 addition to statutory criteria. Tidewater Marine Western, Inc. v. Bradshaw (1996) 14 Cal.4th 557 (agency policies adding requirements not found in statute are invalid). 12. The Parolee Dynamic Profile evaluation demonstrates: (1) sta",
-      "locations": [
-        {
-          "document": "/documents/matter-09/31626-43188-NTCHNG_69ce9f1e7ab52 2.pdf",
-          "page": 8,
-          "role": "other",
-          "matter": 9
-        },
-        {
-          "document": "/documents/matter-09/31626-43188-NTCHNG_69ce9f1e7ab52 2.pdf",
-          "page": 55,
-          "role": "other",
-          "matter": 9
-        },
-        {
-          "document": "/documents/matter-09/31626-43188-NTCHNG_69ce9f1e7ab52 2.pdf",
-          "page": 61,
-          "role": "other",
-          "matter": 9
-        },
-        {
-          "document": "/documents/matter-09/Amended Notice of Hearing on Petition for Writ of Mandate.pdf",
-          "page": 9,
-          "role": "plaintiff_filing",
-          "matter": 9
-        },
-        {
-          "document": "/documents/matter-09/Amended Notice of Hearing on Petition for Writ of Mandate.pdf",
-          "page": 56,
-          "role": "plaintiff_filing",
-          "matter": 9
-        },
-        {
-          "document": "/documents/matter-09/Amended Notice of Hearing on Petition for Writ of Mandate.pdf",
-          "page": 62,
-          "role": "plaintiff_filing",
-          "matter": 9
-        },
-        {
-          "document": "/documents/matter-09/WOM FAC.pdf",
-          "page": 4,
-          "role": "other",
-          "matter": 9
-        },
-        {
-          "document": "/documents/matter-09/WOM_Opening Brief.pdf",
-          "page": 13,
-          "role": "plaintiff_filing",
-          "matter": 9
         }
       ],
       "priority": "P2_joined"
@@ -3050,6 +3146,78 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Hughes v. Pair, 46 Cal. 4th 1035 (2009)",
+      "kind": "authority",
+      "occurrenceCount": 11,
+      "matters": [
+        5,
+        15,
+        16,
+        30
+      ],
+      "roles": [
+        "opposing_filing",
+        "other",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "audit",
+      "notes": "Case, citation, and holding confirmed accurate. Standard, still-good-law California Supreme Court statement of the IIED elements.",
+      "sampleContext": "geous conduct; (2) intent to cause or reckless disregard for the probability of causing emotional distress; (3) severe emotional distress; and (4) causation. ( Hughes v. Pair (2009) 46 Cal.4th 1035, 1050\u20131051.) Conduct is \"outrageous\" when it exceeds the bounds tolerated in a civ",
+      "locations": [
+        {
+          "document": "/documents/matter-05/Opposition to Demurrer Pal.pdf",
+          "page": 13,
+          "role": "opposing_filing",
+          "matter": 5
+        },
+        {
+          "document": "/documents/matter-15/5417 Complaint.pdf",
+          "page": 19,
+          "role": "plaintiff_filing",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-15/DODD.pdf",
+          "page": 30,
+          "role": "other",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-15/Dodd.pdf",
+          "page": 30,
+          "role": "other",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-15/Newanforbi v Dodd RECALIBRATED.pdf",
+          "page": 19,
+          "role": "other",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-15/Newanforbi v. CDCR, et al.pdf",
+          "page": 19,
+          "role": "other",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-15/Newanforbi v. Dodd, et al..pdf",
+          "page": 21,
+          "role": "other",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-15/Newanforbi v. Dodd, et al.pdf",
+          "page": 21,
+          "role": "other",
+          "matter": 15
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "In re Taylor, 60 Cal. 4th 1019 (2015)",
       "kind": "authority",
       "occurrenceCount": 11,
@@ -3251,78 +3419,6 @@
           "page": 28,
           "role": "plaintiff_filing",
           "matter": 32
-        }
-      ],
-      "priority": "P2_joined"
-    },
-    {
-      "citation": "Hughes v. Pair, 46 Cal. 4th 1035 (2009)",
-      "kind": "authority",
-      "occurrenceCount": 10,
-      "matters": [
-        5,
-        15,
-        16,
-        30
-      ],
-      "roles": [
-        "opposing_filing",
-        "other",
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": false,
-      "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Case, citation, and holding confirmed accurate. Standard, still-good-law California Supreme Court statement of the IIED elements.",
-      "sampleContext": "geous conduct; (2) intent to cause or reckless disregard for the probability of causing emotional distress; (3) severe emotional distress; and (4) causation. ( Hughes v. Pair (2009) 46 Cal.4th 1035, 1050\u20131051.) Conduct is \"outrageous\" when it exceeds the bounds tolerated in a civ",
-      "locations": [
-        {
-          "document": "/documents/matter-05/Opposition to Demurrer Pal.pdf",
-          "page": 13,
-          "role": "opposing_filing",
-          "matter": 5
-        },
-        {
-          "document": "/documents/matter-15/DODD.pdf",
-          "page": 30,
-          "role": "other",
-          "matter": 15
-        },
-        {
-          "document": "/documents/matter-15/Dodd.pdf",
-          "page": 30,
-          "role": "other",
-          "matter": 15
-        },
-        {
-          "document": "/documents/matter-15/Newanforbi v Dodd RECALIBRATED.pdf",
-          "page": 19,
-          "role": "other",
-          "matter": 15
-        },
-        {
-          "document": "/documents/matter-15/Newanforbi v. CDCR, et al.pdf",
-          "page": 19,
-          "role": "other",
-          "matter": 15
-        },
-        {
-          "document": "/documents/matter-15/Newanforbi v. Dodd, et al..pdf",
-          "page": 21,
-          "role": "other",
-          "matter": 15
-        },
-        {
-          "document": "/documents/matter-15/Newanforbi v. Dodd, et al.pdf",
-          "page": 21,
-          "role": "other",
-          "matter": 15
-        },
-        {
-          "document": "/documents/matter-15/Newanforbi v. Dodd.pdf",
-          "page": 30,
-          "role": "other",
-          "matter": 15
         }
       ],
       "priority": "P2_joined"
@@ -4091,6 +4187,76 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Kavanaugh v. West Sonoma County Union High School, 29 Cal. 4th 911 (2003)",
+      "kind": "authority",
+      "occurrenceCount": 8,
+      "matters": [
+        15,
+        20,
+        32
+      ],
+      "roles": [
+        "other",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real as Kavanaugh v. West Sonoma County Union High School Dist., 29 Cal.4th 911 (2003).",
+      "sampleContext": "(1969) 70 Cal.2d 252, 261 [classification of an act as discretionary does not immunize negligence in its performance after the discretionary decision to act]; Kavanaugh v. West Sonoma County Union High School Dist. (2003) 29 Cal.4th 911; Caldwell v. Montoya (1995) 10 Cal.4th 972.",
+      "locations": [
+        {
+          "document": "/documents/matter-15/5417 Complaint.pdf",
+          "page": 16,
+          "role": "plaintiff_filing",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-15/DODD.pdf",
+          "page": 12,
+          "role": "other",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-15/Dodd.pdf",
+          "page": 12,
+          "role": "other",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-15/Newanforbi v Dodd RECALIBRATED.pdf",
+          "page": 16,
+          "role": "other",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-15/Newanforbi v. CDCR, et al.pdf",
+          "page": 16,
+          "role": "other",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-15/Newanforbi v. Dodd.pdf",
+          "page": 12,
+          "role": "other",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-32/from-20/0.Newanforbi v. CHP - Writ of Mandate.pdf",
+          "page": 8,
+          "role": "other",
+          "matter": 20
+        },
+        {
+          "document": "/documents/matter-32/from-20/Petition for Writ of Mandate.pdf",
+          "page": 8,
+          "role": "plaintiff_filing",
+          "matter": 20
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "Lungren v. Deukmejian, 45 Cal. 3d 727 (1988)",
       "kind": "authority",
       "occurrenceCount": 8,
@@ -4719,6 +4885,74 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Sullivan v. County of Los Angeles, 12 Cal. 3d 710 (1974)",
+      "kind": "authority",
+      "occurrenceCount": 8,
+      "matters": [
+        15
+      ],
+      "roles": [
+        "other",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: FOUND on CourtListener/CAP for complaint OCR tranche (Sullivan v. County of Los Angeles). Existence only.",
+      "sampleContext": "force them in this manner. A custodial actor who enforces restraint under an order that on its face describes a different person loses any claim of privilege. (Sullivan v. County of Los Angeles (1974) 12 Cal.3d 710, 718-720.) Plaintiff does not contend his parole term is unlawful",
+      "locations": [
+        {
+          "document": "/documents/matter-15/5417 Complaint.pdf",
+          "page": 18,
+          "role": "plaintiff_filing",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-15/DODD.pdf",
+          "page": 28,
+          "role": "other",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-15/Dodd.pdf",
+          "page": 28,
+          "role": "other",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-15/Newanforbi v Dodd RECALIBRATED.pdf",
+          "page": 18,
+          "role": "other",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-15/Newanforbi v. CDCR, et al.pdf",
+          "page": 18,
+          "role": "other",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-15/Newanforbi v. Dodd, et al..pdf",
+          "page": 20,
+          "role": "other",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-15/Newanforbi v. Dodd, et al.pdf",
+          "page": 20,
+          "role": "other",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-15/Newanforbi v. Dodd.pdf",
+          "page": 28,
+          "role": "other",
+          "matter": 15
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "Terry v. Ohio, 392 U.S. 1 (1968)",
       "kind": "authority",
       "occurrenceCount": 8,
@@ -4861,6 +5095,73 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Bell Atlantic Corp. v. Twombly, 550 U.S. 544 (2007)",
+      "kind": "authority",
+      "occurrenceCount": 7,
+      "matters": [
+        1,
+        7,
+        18,
+        29,
+        32,
+        33
+      ],
+      "roles": [
+        "court_order",
+        "opposing_filing"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Bell Atlantic Corp. v. Twombly). Existence only \u2014 court_order role.",
+      "sampleContext": "................. 6 Barranco v. 3D Sys. Corp., 952 F.3d 1122 (9th Cir. 2020) ............................................................................ 10 Bell Atlantic Corp. v. Twombly, 550 U.S. 544 (2007) .......................................................................",
+      "locations": [
+        {
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 24-1 - Amazon's Memorandum ISO Motion to Dismiss (Dec 15, 2022).pdf",
+          "page": 4,
+          "role": "opposing_filing",
+          "matter": 29
+        },
+        {
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 24-1 - Amazon's Memorandum ISO Motion to Dismiss (Dec 15, 2022).pdf",
+          "page": 11,
+          "role": "opposing_filing",
+          "matter": 29
+        },
+        {
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 27 - Amazon's Reply ISO Motion to Dismiss (Feb 2, 2023).pdf",
+          "page": 11,
+          "role": "opposing_filing",
+          "matter": 29
+        },
+        {
+          "document": "/documents/matter-32/from-01/CHP Motion To Dismiss.pdf",
+          "page": 4,
+          "role": "opposing_filing",
+          "matter": 1
+        },
+        {
+          "document": "/documents/matter-33/opinions/Newanforbi v Candelaria - USDC EDCal - FR Recommending Dismissal Jun 15 2026.pdf",
+          "page": 3,
+          "role": "court_order",
+          "matter": 7
+        },
+        {
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 2,
+          "role": "court_order",
+          "matter": 18
+        },
+        {
+          "document": "/documents/opinions/Newanforbi v California CHP - USDC EDCal - FR Recommending Dismissal Apr 20 2026.pdf",
+          "page": 3,
+          "role": "court_order",
+          "matter": null
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "Bell v. Burson, 402 U.S. 535 (1971)",
       "kind": "authority",
       "occurrenceCount": 7,
@@ -4990,65 +5291,65 @@
       "priority": "P2_joined"
     },
     {
-      "citation": "Kavanaugh v. West Sonoma County Union High School, 29 Cal. 4th 911 (2003)",
+      "citation": "Galbraith v. County of Santa Clara, 307 F. 3d 1119",
       "kind": "authority",
       "occurrenceCount": 7,
       "matters": [
-        15,
-        20,
+        18,
         32
       ],
       "roles": [
+        "court_order",
         "other",
         "plaintiff_filing"
       ],
-      "plaintiffOnly": true,
+      "plaintiffOnly": false,
       "status": "VERIFIED",
       "statusSource": "round",
-      "notes": "Real as Kavanaugh v. West Sonoma County Union High School Dist., 29 Cal.4th 911 (2003).",
-      "sampleContext": "regulations use mandatory \"shall\" language, specify the precise conditions of discharge, and leave no room for policy judgment once those conditions are met. (Kavanaugh v. West Sonoma County Union High School Dist. (2003) 29 Cal.4th 911, 916 [discretionary immunity does not apply",
+      "notes": "Real at 307 F.3d 1119 (9th Cir. 2002). Add year.",
+      "sampleContext": "obtained through materially false or misleading statements was clearly established before November 1, 2024. Franks, 438 U.S. at 155-56; Chism, 661 F.3d at 386; Galbraith v. County of Santa Clara, 307 F.3d 1119, 1126 (9th Cir. 2002). 41. As a direct and proximate result, Plaintiff",
       "locations": [
         {
-          "document": "/documents/matter-15/DODD.pdf",
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 2.pdf",
           "page": 12,
-          "role": "other",
-          "matter": 15
-        },
-        {
-          "document": "/documents/matter-15/Dodd.pdf",
-          "page": 12,
-          "role": "other",
-          "matter": 15
-        },
-        {
-          "document": "/documents/matter-15/Newanforbi v Dodd RECALIBRATED.pdf",
-          "page": 16,
-          "role": "other",
-          "matter": 15
-        },
-        {
-          "document": "/documents/matter-15/Newanforbi v. CDCR, et al.pdf",
-          "page": 16,
-          "role": "other",
-          "matter": 15
-        },
-        {
-          "document": "/documents/matter-15/Newanforbi v. Dodd.pdf",
-          "page": 12,
-          "role": "other",
-          "matter": 15
-        },
-        {
-          "document": "/documents/matter-32/from-20/0.Newanforbi v. CHP - Writ of Mandate.pdf",
-          "page": 8,
-          "role": "other",
-          "matter": 20
-        },
-        {
-          "document": "/documents/matter-32/from-20/Petition for Writ of Mandate.pdf",
-          "page": 8,
           "role": "plaintiff_filing",
-          "matter": 20
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 3 Operative.pdf",
+          "page": 13,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
+          "page": 23,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
+          "page": 28,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/FAC Ngwa Nforbi v Meza-Gonzalez and Melano NDCal (Aug 11 2026).pdf",
+          "page": 13,
+          "role": "other",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/FAC Ngwa Nforbi v Meza-Gonzalez and Melano NDCal (as submitted Aug 10 2026, superseded).pdf",
+          "page": 13,
+          "role": "other",
+          "matter": 32
+        },
+        {
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 7,
+          "role": "court_order",
+          "matter": 18
         }
       ],
       "priority": "P2_joined"
@@ -5456,62 +5757,6 @@
       "priority": "P2_joined"
     },
     {
-      "citation": "Galbraith v. County of Santa Clara, 307 F. 3d 1119",
-      "kind": "authority",
-      "occurrenceCount": 6,
-      "matters": [
-        32
-      ],
-      "roles": [
-        "other",
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "VERIFIED",
-      "statusSource": "round",
-      "notes": "Real at 307 F.3d 1119 (9th Cir. 2002). Add year.",
-      "sampleContext": "obtained through materially false or misleading statements was clearly established before November 1, 2024. Franks, 438 U.S. at 155-56; Chism, 661 F.3d at 386; Galbraith v. County of Santa Clara, 307 F.3d 1119, 1126 (9th Cir. 2002). 41. As a direct and proximate result, Plaintiff",
-      "locations": [
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 2.pdf",
-          "page": 12,
-          "role": "plaintiff_filing",
-          "matter": 32
-        },
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal 3 Operative.pdf",
-          "page": 13,
-          "role": "plaintiff_filing",
-          "matter": 32
-        },
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
-          "page": 23,
-          "role": "plaintiff_filing",
-          "matter": 32
-        },
-        {
-          "document": "/documents/matter-32/ndcal/Complaint Ngwa Nforbi v Meza-Gonzalez and Melano NDCal.pdf",
-          "page": 28,
-          "role": "plaintiff_filing",
-          "matter": 32
-        },
-        {
-          "document": "/documents/matter-32/ndcal/FAC Ngwa Nforbi v Meza-Gonzalez and Melano NDCal (Aug 11 2026).pdf",
-          "page": 13,
-          "role": "other",
-          "matter": 32
-        },
-        {
-          "document": "/documents/matter-32/ndcal/FAC Ngwa Nforbi v Meza-Gonzalez and Melano NDCal (as submitted Aug 10 2026, superseded).pdf",
-          "page": 13,
-          "role": "other",
-          "matter": 32
-        }
-      ],
-      "priority": "P2_joined"
-    },
-    {
       "citation": "Hotel & Motel Ass'n v. Industrial Welfare Comm'n, 25 Cal. 3d 200 (1979)",
       "kind": "authority",
       "occurrenceCount": 6,
@@ -5735,6 +5980,66 @@
           "page": 19,
           "role": "plaintiff_filing",
           "matter": 9
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Neitzke v. Williams, 490 U.S. 319 (1989)",
+      "kind": "authority",
+      "occurrenceCount": 6,
+      "matters": [
+        1,
+        7,
+        18,
+        32,
+        33
+      ],
+      "roles": [
+        "court_order",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Neitzke v. Williams). Existence only \u2014 court_order role.",
+      "sampleContext": "no \"non-frivolous claim.\" The Serrato Order demonstrates that, at a minimum, the claims have \"an arguable basis . . . in law or in fact\" within the meaning of Neitzke v. Williams, 490 U.S. 319, 325 (1989). Third, the Serrato Order undermines the Findings and Recommendations' qual",
+      "locations": [
+        {
+          "document": "/documents/matter-32/from-01/Notice of Supplemental Authority - Serrato Order - July 7 2026.pdf",
+          "page": 2,
+          "role": "court_order",
+          "matter": 1
+        },
+        {
+          "document": "/documents/matter-33/from-07/Notice of Supplemental Authority - Serrato Order - July 7 2026.pdf",
+          "page": 3,
+          "role": "court_order",
+          "matter": 7
+        },
+        {
+          "document": "/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
+          "page": 2,
+          "role": "plaintiff_filing",
+          "matter": 7
+        },
+        {
+          "document": "/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
+          "page": 11,
+          "role": "plaintiff_filing",
+          "matter": 7
+        },
+        {
+          "document": "/documents/matter-33/opinions/Newanforbi v Candelaria - USDC EDCal - FR Recommending Dismissal Jun 15 2026.pdf",
+          "page": 3,
+          "role": "court_order",
+          "matter": 7
+        },
+        {
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 2,
+          "role": "court_order",
+          "matter": 18
         }
       ],
       "priority": "P2_joined"
@@ -6420,6 +6725,105 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Lee v. City of Los Angeles, 250 F. 3d 668",
+      "kind": "authority",
+      "occurrenceCount": 5,
+      "matters": [
+        18,
+        29
+      ],
+      "roles": [
+        "court_order",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Lee v. City of Los Angeles). Existence only \u2014 court_order role.",
+      "sampleContext": "...................................... 16 Khoja v. Orexigen Therapeutics, Inc., 899 F.3d 988, 998 (9th Cir. 2018) ...................................... 8, 9 Lee v. City of Los Angeles, 250 F.3d 668, 688 (9th Cir. 2001) ............................................................",
+      "locations": [
+        {
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
+          "page": 3,
+          "role": "plaintiff_filing",
+          "matter": 29
+        },
+        {
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
+          "page": 12,
+          "role": "plaintiff_filing",
+          "matter": 29
+        },
+        {
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
+          "page": 13,
+          "role": "plaintiff_filing",
+          "matter": 29
+        },
+        {
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 36 - ORDER GRANTING Motions to Dismiss - Megan's Law, FCRA, UCL Claims Dismissed (May 26, 2023).pdf",
+          "page": 5,
+          "role": "court_order",
+          "matter": 29
+        },
+        {
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 7,
+          "role": "court_order",
+          "matter": 18
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Lopez v. Smith, 203 F. 3d 1122",
+      "kind": "authority",
+      "occurrenceCount": 5,
+      "matters": [
+        7,
+        18,
+        24,
+        32,
+        33
+      ],
+      "roles": [
+        "court_order",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real at 203 F.3d 1122 (9th Cir. 2000) (en banc). Add year.",
+      "sampleContext": "e to amend only when futility is clear on the face of the complaint. Hebbe v. Pliler, 627 F.3d 338, 342 (9th Cir. 2010) (pro se pleadings construed liberally); Lopez v. Smith, 203 F.3d 1122, 1130 (9th Cir. 2000) (en banc) (leave to amend mandatory absent clear futility); Neitzke ",
+      "locations": [
+        {
+          "document": "/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
+          "page": 2,
+          "role": "plaintiff_filing",
+          "matter": 7
+        },
+        {
+          "document": "/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
+          "page": 12,
+          "role": "plaintiff_filing",
+          "matter": 7
+        },
+        {
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 2,
+          "role": "court_order",
+          "matter": 18
+        },
+        {
+          "document": "/documents/opinions/Newanforbi v Serrato - USDC NDCal - IFP Granted Complaint Sufficient Jun 29 2026.pdf",
+          "page": 2,
+          "role": "court_order",
+          "matter": 24
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "Mosquito & Vector Control Dist. v. Cal. PERB, 35 Cal. 4th 1072 (2005)",
       "kind": "authority",
       "occurrenceCount": 5,
@@ -6471,99 +6875,107 @@
       "priority": "P2_joined"
     },
     {
-      "citation": "Neitzke v. Williams, 490 U.S. 319 (1989)",
+      "citation": "Rhodes v. Robinson, 408 F. 3d 559",
       "kind": "authority",
       "occurrenceCount": 5,
       "matters": [
-        1,
-        7,
-        32,
-        33
+        3,
+        18,
+        30
       ],
       "roles": [
         "court_order",
+        "other",
         "plaintiff_filing"
       ],
       "plaintiffOnly": false,
       "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "All seven are real, well-known Ninth Circuit pro se / IFP-screening / frivolousness standard cases, correctly cited and accurately characterized.",
-      "sampleContext": "no \"non-frivolous claim.\" The Serrato Order demonstrates that, at a minimum, the claims have \"an arguable basis . . . in law or in fact\" within the meaning of Neitzke v. Williams, 490 U.S. 319, 325 (1989). Third, the Serrato Order undermines the Findings and Recommendations' qual",
+      "statusSource": "round",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Rhodes v. Robinson). Existence only \u2014 court_order role.",
+      "sampleContext": "\u2019s in Support Thereof; Decl. of Deputy Attorney General Erick J. Rhoan (2:26-cv-00004-DJC) action did not reasonably advance a legitimate correctional goal. Rhodes v. Robinson, 408 F.3d 559, 567-68 (9th Cir. 2005). 1. Plaintiff Does Not Plausibly Plead He Engaged in Protected Con",
       "locations": [
         {
-          "document": "/documents/matter-32/from-01/Notice of Supplemental Authority - Serrato Order - July 7 2026.pdf",
-          "page": 2,
-          "role": "court_order",
-          "matter": 1
+          "document": "/documents/matter-03/8_MTQ.pdf",
+          "page": 10,
+          "role": "other",
+          "matter": 3
         },
         {
-          "document": "/documents/matter-33/from-07/Notice of Supplemental Authority - Serrato Order - July 7 2026.pdf",
-          "page": 3,
-          "role": "court_order",
-          "matter": 7
+          "document": "/documents/matter-03/SLB MTD.pdf",
+          "page": 10,
+          "role": "other",
+          "matter": 3
         },
         {
-          "document": "/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
-          "page": 2,
+          "document": "/documents/matter-30/Complaint v9 Newanforbi v Moua NDCAL.pdf",
+          "page": 15,
           "role": "plaintiff_filing",
-          "matter": 7
+          "matter": 30
         },
         {
-          "document": "/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
-          "page": 11,
-          "role": "plaintiff_filing",
-          "matter": 7
-        },
-        {
-          "document": "/documents/matter-33/opinions/Newanforbi v Candelaria - USDC EDCal - FR Recommending Dismissal Jun 15 2026.pdf",
-          "page": 3,
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 5,
           "role": "court_order",
-          "matter": 7
+          "matter": 18
+        },
+        {
+          "document": "/documents/opinions/Newanforbi v Derrick - USDC EDCal - MTD Order Jul 24 2026.pdf",
+          "page": 8,
+          "role": "court_order",
+          "matter": 3
         }
       ],
       "priority": "P2_joined"
     },
     {
-      "citation": "Caldwell v. Montoya, 10 Cal. 4th 972 (1995)",
+      "citation": "Starr v. Baca, 652 F. 3d 1202",
       "kind": "authority",
-      "occurrenceCount": 4,
+      "occurrenceCount": 5,
       "matters": [
-        14,
-        15,
-        16
+        3,
+        18,
+        29
       ],
       "roles": [
+        "court_order",
+        "opposing_filing",
         "other"
       ],
       "plaintiffOnly": false,
-      "status": "MISCITED",
-      "statusSource": "audit",
-      "notes": "The case exists at the correct citation and is good law, but Caldwell v. Montoya does not actually stand for the proposition cited. Caldwell held the opposite direction on its facts -- that discretionary-act immunity under \u00a7 820.2 DID protect school board members' 'basic policy' decision even where plaintiff alleged the decision was motivated by improper reasons (race/age discrimination) -- it is ",
-      "sampleContext": "tention. Immunity for discretionary acts under California Government Code \u00a7 820.2 does not shield officials who act outside the scope of their legal authority. Caldwell v. Montoya (1995) 10 Cal.4th 972. 93. Plaintiff did not consent to the confinement. Plaintiff was confined from",
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Starr v. Baca). Existence only \u2014 court_order role.",
+      "sampleContext": "Ashcroft v. Iqbal, 556 U.S. at 676. Plaintiff must plead facts showing Defendant Noguchi\u2019s own culpable action or inaction in the constitutional deprivation. Starr v. Baca, 652 F.3d 1202, 1207-08 (9th Cir. 2011). Plausibility requires nonconclusory allegations that the supervisor",
       "locations": [
         {
-          "document": "/documents/matter-14/Newanforbi v Urrea.pdf",
-          "page": 22,
+          "document": "/documents/matter-03/8_MTQ.pdf",
+          "page": 11,
           "role": "other",
-          "matter": 14
+          "matter": 3
         },
         {
-          "document": "/documents/matter-15/Newanforbi v Dodd RECALIBRATED.pdf",
-          "page": 16,
-          "role": "other",
-          "matter": 15
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 24-1 - Amazon's Memorandum ISO Motion to Dismiss (Dec 15, 2022).pdf",
+          "page": 5,
+          "role": "opposing_filing",
+          "matter": 29
         },
         {
-          "document": "/documents/matter-15/Newanforbi v. CDCR, et al.pdf",
-          "page": 16,
-          "role": "other",
-          "matter": 15
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 24-1 - Amazon's Memorandum ISO Motion to Dismiss (Dec 15, 2022).pdf",
+          "page": 12,
+          "role": "opposing_filing",
+          "matter": 29
         },
         {
-          "document": "/documents/matter-16/Newanforbi v. Rojo.pdf",
-          "page": 23,
-          "role": "other",
-          "matter": 16
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 36 - ORDER GRANTING Motions to Dismiss - Megan's Law, FCRA, UCL Claims Dismissed (May 26, 2023).pdf",
+          "page": 3,
+          "role": "court_order",
+          "matter": 29
+        },
+        {
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 3,
+          "role": "court_order",
+          "matter": 18
         }
       ],
       "priority": "P2_joined"
@@ -6788,47 +7200,6 @@
       "priority": "P2_joined"
     },
     {
-      "citation": "Lopez v. Smith, 203 F. 3d 1122",
-      "kind": "authority",
-      "occurrenceCount": 4,
-      "matters": [
-        7,
-        24,
-        32,
-        33
-      ],
-      "roles": [
-        "court_order",
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": false,
-      "status": "VERIFIED",
-      "statusSource": "round",
-      "notes": "Real at 203 F.3d 1122 (9th Cir. 2000) (en banc). Add year.",
-      "sampleContext": "e to amend only when futility is clear on the face of the complaint. Hebbe v. Pliler, 627 F.3d 338, 342 (9th Cir. 2010) (pro se pleadings construed liberally); Lopez v. Smith, 203 F.3d 1122, 1130 (9th Cir. 2000) (en banc) (leave to amend mandatory absent clear futility); Neitzke ",
-      "locations": [
-        {
-          "document": "/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
-          "page": 2,
-          "role": "plaintiff_filing",
-          "matter": 7
-        },
-        {
-          "document": "/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
-          "page": 12,
-          "role": "plaintiff_filing",
-          "matter": 7
-        },
-        {
-          "document": "/documents/opinions/Newanforbi v Serrato - USDC NDCal - IFP Granted Complaint Sufficient Jun 29 2026.pdf",
-          "page": 2,
-          "role": "court_order",
-          "matter": 24
-        }
-      ],
-      "priority": "P2_joined"
-    },
-    {
       "citation": "People v. Sanders, 31 Cal. 4th 318 (2003)",
       "kind": "authority",
       "occurrenceCount": 4,
@@ -6887,7 +7258,7 @@
       "plaintiffOnly": true,
       "status": "VERIFIED",
       "statusSource": "round",
-      "notes": "Real at 65 F.3d 802 (9th Cir. 1995). Add year.",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Pratt v. Rowland). Existence only \u2014 court_order role.",
       "sampleContext": "y transfers is clearly established. Devereaux v. Abbey, 263 F.3d 1070, 1074-75 (9th Cir. 2001) (en banc); Spencer v. Peters, 857 F.3d 789, 798 (9th Cir. 2017); Pratt v. Rowland, 65 F.3d 802, 806 (9th Cir. 1995). IV. FACTUAL ALLEGATIONS A. The HOPE Program, CASOMB Complaint, and T",
       "locations": [
         {
@@ -6964,52 +7335,6 @@
       "priority": "P2_joined"
     },
     {
-      "citation": "Rhodes v. Robinson, 408 F. 3d 559",
-      "kind": "authority",
-      "occurrenceCount": 4,
-      "matters": [
-        3,
-        30
-      ],
-      "roles": [
-        "court_order",
-        "other",
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": false,
-      "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Real, well-known 9th Circuit prisoner-retaliation case; standard citation for this proposition.",
-      "sampleContext": "\u2019s in Support Thereof; Decl. of Deputy Attorney General Erick J. Rhoan (2:26-cv-00004-DJC) action did not reasonably advance a legitimate correctional goal. Rhodes v. Robinson, 408 F.3d 559, 567-68 (9th Cir. 2005). 1. Plaintiff Does Not Plausibly Plead He Engaged in Protected Con",
-      "locations": [
-        {
-          "document": "/documents/matter-03/8_MTQ.pdf",
-          "page": 10,
-          "role": "other",
-          "matter": 3
-        },
-        {
-          "document": "/documents/matter-03/SLB MTD.pdf",
-          "page": 10,
-          "role": "other",
-          "matter": 3
-        },
-        {
-          "document": "/documents/matter-30/Complaint v9 Newanforbi v Moua NDCAL.pdf",
-          "page": 15,
-          "role": "plaintiff_filing",
-          "matter": 30
-        },
-        {
-          "document": "/documents/opinions/Newanforbi v Derrick - USDC EDCal - MTD Order Jul 24 2026.pdf",
-          "page": 8,
-          "role": "court_order",
-          "matter": 3
-        }
-      ],
-      "priority": "P2_joined"
-    },
-    {
       "citation": "See Hill v. National Collegiate Athletic Assn, 7 Cal. 4th 1 (1994)",
       "kind": "authority",
       "occurrenceCount": 4,
@@ -7050,52 +7375,6 @@
           "page": 13,
           "role": "plaintiff_filing",
           "matter": 27
-        }
-      ],
-      "priority": "P2_joined"
-    },
-    {
-      "citation": "Starr v. Baca, 652 F. 3d 1202",
-      "kind": "authority",
-      "occurrenceCount": 4,
-      "matters": [
-        3,
-        29
-      ],
-      "roles": [
-        "court_order",
-        "opposing_filing",
-        "other"
-      ],
-      "plaintiffOnly": false,
-      "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Real, frequently cited 9th Circuit supervisory-liability case; quoted language matches known holding.",
-      "sampleContext": "Ashcroft v. Iqbal, 556 U.S. at 676. Plaintiff must plead facts showing Defendant Noguchi\u2019s own culpable action or inaction in the constitutional deprivation. Starr v. Baca, 652 F.3d 1202, 1207-08 (9th Cir. 2011). Plausibility requires nonconclusory allegations that the supervisor",
-      "locations": [
-        {
-          "document": "/documents/matter-03/8_MTQ.pdf",
-          "page": 11,
-          "role": "other",
-          "matter": 3
-        },
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 24-1 - Amazon's Memorandum ISO Motion to Dismiss (Dec 15, 2022).pdf",
-          "page": 5,
-          "role": "opposing_filing",
-          "matter": 29
-        },
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 24-1 - Amazon's Memorandum ISO Motion to Dismiss (Dec 15, 2022).pdf",
-          "page": 12,
-          "role": "opposing_filing",
-          "matter": 29
-        },
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 36 - ORDER GRANTING Motions to Dismiss - Megan's Law, FCRA, UCL Claims Dismissed (May 26, 2023).pdf",
-          "page": 3,
-          "role": "court_order",
-          "matter": 29
         }
       ],
       "priority": "P2_joined"
@@ -7201,7 +7480,7 @@
       "plaintiffOnly": true,
       "status": "VERIFIED",
       "statusSource": "round",
-      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 West v. Atkins.",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (West v. Atkins). Existence only \u2014 court_order role.",
       "sampleContext": "3. Private Contractors as State Actors \u2022 West v. Atkins, 487 U.S. 42 (1988). \u2022 Holding: A private physician under contract with the state to provide medical services to prisoners acts \"under color of state law\" for",
       "locations": [
         {
@@ -7653,6 +7932,48 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Franklin v. Murphy, 745 F. 2d 1221",
+      "kind": "authority",
+      "occurrenceCount": 3,
+      "matters": [
+        7,
+        18,
+        24,
+        32,
+        33
+      ],
+      "roles": [
+        "court_order",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real at 745 F.2d 1221 (9th Cir. 1984). Add year.",
+      "sampleContext": "by definition, an arguable basis in law. The Ninth Circuit has cautioned that the frivolousness standard 'is intended to address only the most extreme cases.' Franklin v. Murphy, 745 F.2d 1221, 1228 (9th Cir. 1984). This case, involving detailed factual allegations, dashcam audio",
+      "locations": [
+        {
+          "document": "/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
+          "page": 11,
+          "role": "plaintiff_filing",
+          "matter": 7
+        },
+        {
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 2,
+          "role": "court_order",
+          "matter": 18
+        },
+        {
+          "document": "/documents/opinions/Newanforbi v Serrato - USDC NDCal - IFP Granted Complaint Sufficient Jun 29 2026.pdf",
+          "page": 2,
+          "role": "court_order",
+          "matter": 24
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "Gantt v. Sentry Insurance, 1 Cal. 4th 1083 (1992)",
       "kind": "authority",
       "occurrenceCount": 3,
@@ -7884,6 +8205,44 @@
           "page": 6,
           "role": "plaintiff_filing",
           "matter": 5
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "McCorkle v. City of Los Angeles, 70 Cal. 2d 252 (1969)",
+      "kind": "authority",
+      "occurrenceCount": 3,
+      "matters": [
+        15
+      ],
+      "roles": [
+        "other",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: automated probe returned UNKNOWN (CAP has no cal2d/70 volume), but CourtListener resolves McCorkle v. City of Los Angeles at 70 Cal. 2d 252. Existence only. Surfaced from Matter 15 complaint OCR.",
+      "sampleContext": "ause Plaintiff's injury results not from any policy judgment to undertake the review but from Defendants' negligence in performing it after electing to do so. (McCorkle v. City of Los Angeles (1969) 70 Cal.2d 252, 261 [classification of an act as discretionary does not immunize n",
+      "locations": [
+        {
+          "document": "/documents/matter-15/5417 Complaint.pdf",
+          "page": 16,
+          "role": "plaintiff_filing",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-15/Newanforbi v Dodd RECALIBRATED.pdf",
+          "page": 16,
+          "role": "other",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-15/Newanforbi v. CDCR, et al.pdf",
+          "page": 16,
+          "role": "other",
+          "matter": 15
         }
       ],
       "priority": "P2_joined"
@@ -8233,6 +8592,44 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "See Sullivan v. County of Los Angeles, 12 Cal. 3d 710 (1974)",
+      "kind": "authority",
+      "occurrenceCount": 3,
+      "matters": [
+        15
+      ],
+      "roles": [
+        "other",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: FOUND on CourtListener/CAP for complaint OCR tranche (Sullivan v. County of Los Angeles). Existence only.",
+      "sampleContext": "clusive vehicle for those remedies is a civil action at law against the responsible employees and their employer under Government Code sections 815.2 and 820. (See Sullivan v. County of Los Angeles (1974) 12 Cal.3d 710, 718-720 [damages action for unlawful detention].) 22. Plaint",
+      "locations": [
+        {
+          "document": "/documents/matter-15/5417 Complaint.pdf",
+          "page": 9,
+          "role": "plaintiff_filing",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-15/Newanforbi v Dodd RECALIBRATED.pdf",
+          "page": 9,
+          "role": "other",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-15/Newanforbi v. CDCR, et al.pdf",
+          "page": 9,
+          "role": "other",
+          "matter": 15
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "Spencer v. Peters, 857 F. 3d 789",
       "kind": "authority",
       "occurrenceCount": 3,
@@ -8464,9 +8861,9 @@
         "plaintiff_filing"
       ],
       "plaintiffOnly": false,
-      "status": "MISCITED",
-      "statusSource": "audit",
-      "notes": "OPPOSING COUNSEL (CHP/AG), not the litigant. The real Iqbal passage discussing 'legal conclusions'/framework and conclusory-allegation doctrine appears around 556 U.S. at 678-679, not at pages 663-664 (which fall within the syllabus/introductory portion of the reporter). The quoted language is close to the real opinion's wording ('framework of a complaint' vs. \"complaint's framework\") but the pinc",
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Ashcroft v. Iqbal). Existence only \u2014 court_order role.",
       "sampleContext": "e error. At the Rule 12(b)(6) stage the Court must accept all well-pleaded factual allegations as true and draw all reasonable inferences in Plaintiff\u2019s favor. Ashcroft v. Iqbal, 556 U.S. 678, 678 (2009); Bell Atl. Corp. v. Twombly, 550 U.S. 544, 570 (2007). Pro se complaints rec",
       "locations": [
         {
@@ -8511,6 +8908,39 @@
           "page": 11,
           "role": "plaintiff_filing",
           "matter": 19
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Brodheim v. Cry, 584 F. 3d 1262",
+      "kind": "authority",
+      "occurrenceCount": 2,
+      "matters": [
+        18,
+        30
+      ],
+      "roles": [
+        "court_order",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Real at 584 F.3d 1262 (9th Cir. 2009). Add year.",
+      "sampleContext": "ction that would chill a person of ordinary firmness from continuing to engage in protected activity. Rhodes v. Robinson, 408 F.3d 559, 567-68 (9th Cir. 2005); Brodheim v. Cry, 584 F.3d 1262, 1270 (9th Cir. 2009). 44. Moua had actual or constructive knowledge of the Derrick lawsu",
+      "locations": [
+        {
+          "document": "/documents/matter-30/Complaint v9 Newanforbi v Moua NDCAL.pdf",
+          "page": 15,
+          "role": "plaintiff_filing",
+          "matter": 30
+        },
+        {
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 4,
+          "role": "court_order",
+          "matter": 18
         }
       ],
       "priority": "P2_joined"
@@ -8577,6 +9007,38 @@
           "page": 8,
           "role": "plaintiff_filing",
           "matter": 20
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Cel-Tech Communications, Inc. v. Los Angeles Cellular Telephone Co, 20 Cal. 4th 163 (1999)",
+      "kind": "authority",
+      "occurrenceCount": 2,
+      "matters": [
+        5
+      ],
+      "roles": [
+        "opposing_filing",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: FOUND on CourtListener/CAP for complaint OCR tranche (Cel-Tech Communications, Inc. v. Los Angeles Cellular Telephone Co.). Existence only.",
+      "sampleContext": "Eighth Cause of Action \u2014 Unfair Competition Law (Bus. & Prof. Code \u00a7 17200). The UCL prohibits any \"unlawful, unfair or fraudulent business act or practice.\" ( Cel-Tech Communications, Inc. v. Los Angeles Cellular Telephone Co. (1999) 20 Cal.4th 163, 180.) The FAC pleads all thre",
+      "locations": [
+        {
+          "document": "/documents/matter-05/Opposition to Demurrer Pal.pdf",
+          "page": 15,
+          "role": "opposing_filing",
+          "matter": 5
+        },
+        {
+          "document": "/documents/matter-05/RJN Pal ISO Opposition.pdf",
+          "page": 9,
+          "role": "plaintiff_filing",
+          "matter": 5
         }
       ],
       "priority": "P2_joined"
@@ -8862,41 +9324,6 @@
           "page": 4,
           "role": "court_order",
           "matter": 28
-        }
-      ],
-      "priority": "P2_joined"
-    },
-    {
-      "citation": "Franklin v. Murphy, 745 F. 2d 1221",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        7,
-        24,
-        32,
-        33
-      ],
-      "roles": [
-        "court_order",
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": false,
-      "status": "VERIFIED",
-      "statusSource": "round",
-      "notes": "Real at 745 F.2d 1221 (9th Cir. 1984). Add year.",
-      "sampleContext": "by definition, an arguable basis in law. The Ninth Circuit has cautioned that the frivolousness standard 'is intended to address only the most extreme cases.' Franklin v. Murphy, 745 F.2d 1221, 1228 (9th Cir. 1984). This case, involving detailed factual allegations, dashcam audio",
-      "locations": [
-        {
-          "document": "/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf",
-          "page": 11,
-          "role": "plaintiff_filing",
-          "matter": 7
-        },
-        {
-          "document": "/documents/opinions/Newanforbi v Serrato - USDC NDCal - IFP Granted Complaint Sufficient Jun 29 2026.pdf",
-          "page": 2,
-          "role": "court_order",
-          "matter": 24
         }
       ],
       "priority": "P2_joined"
@@ -9346,6 +9773,69 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Ivey v. Bd. of Regents, 673 F. 2d 266",
+      "kind": "authority",
+      "occurrenceCount": 2,
+      "matters": [
+        3,
+        18
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: pin resolves as Ivey v. Board of Regents \u2014 CAPTION_MISMATCH is party-name expansion only. Existence only; court_order.",
+      "sampleContext": "moto, 633 F.2d 164, 167 (9th Cir. 1980). Furthermore, vague and conclusory allegations of official participation in civil rights violations are not sufficient. Ivey v. Bd. of Regents, 673 F.2d 266, 268 (9th Cir. 1982). A district court must construe a pro se pleading \"liberally\" ",
+      "locations": [
+        {
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 9,
+          "role": "court_order",
+          "matter": 18
+        },
+        {
+          "document": "/documents/opinions/Newanforbi v Derrick - USDC EDCal - MTD Order Jul 24 2026.pdf",
+          "page": 5,
+          "role": "court_order",
+          "matter": 3
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Johnson v. Duffy, 588 F. 2d 740",
+      "kind": "authority",
+      "occurrenceCount": 2,
+      "matters": [
+        18
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Johnson v. Duffy). Existence only \u2014 court_order role.",
+      "sampleContext": "causal connection between the defendant's wrongful conduct and the alleged constitutional deprivation. See Hansen v. Black, 885 F.2d 642, 646 (9th Cir. 1989); Johnson v. Duffy, 588 F.2d 740, 743-44 (9th Cir. 1978). That 1s, plaintiff may not sue any official on the theory that th",
+      "locations": [
+        {
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 3,
+          "role": "court_order",
+          "matter": 18
+        },
+        {
+          "document": "/documents/opinions/Newanforbi v California CHP - USDC EDCal - FR Recommending Dismissal Apr 20 2026.pdf",
+          "page": 5,
+          "role": "court_order",
+          "matter": null
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "Joslin v. H.A.S. Ins. Brokerage, 184 Cal.App. 3d 369 (1986)",
       "kind": "authority",
       "occurrenceCount": 2,
@@ -9785,6 +10275,37 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "See Bily v. Arthur Young, 3 Cal. 4th 370 (1992)",
+      "kind": "authority",
+      "occurrenceCount": 2,
+      "matters": [
+        12
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: FOUND on CourtListener/CAP for complaint OCR tranche (Bily v. Arthur Young & Co.). Existence only.",
+      "sampleContext": "ial! truc merchant, in privity with Plaintiff, who Diamond knew would rely on the representations in deciding whether to purchase the Truck and at what price. (See Bily v. Arthur Young & Co. (1992) 3 Cal.4th 370; Civ. Code \u00a7\u00a7 1709, 1710, subd. (2).) Page 21 FIRST AMENDED COMPLAIN",
+      "locations": [
+        {
+          "document": "/documents/matter-12/1094 Amended Complaint.pdf",
+          "page": 21,
+          "role": "plaintiff_filing",
+          "matter": 12
+        },
+        {
+          "document": "/documents/matter-12/1094 Complaint.pdf",
+          "page": 9,
+          "role": "plaintiff_filing",
+          "matter": 12
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "See Caniglia v. Strom, 593 U.S. 194 (2021)",
       "kind": "authority",
       "occurrenceCount": 2,
@@ -9816,6 +10337,37 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "See Cel-Tech Communications, Inc. v. Los Angeles Cellular Telephone Co, 20 Cal. 4th 163 (1999)",
+      "kind": "authority",
+      "occurrenceCount": 2,
+      "matters": [
+        12
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: FOUND on CourtListener/CAP for complaint OCR tranche (Cel-Tech Communications, Inc. v. Los Angeles Cellular Telephone Co.). Existence only.",
+      "sampleContext": "e that Plaintiff could not lawfully operate. Diamond's conduct also offends established public policy and is immoral, unethical, oppressive, and unscrupulous. (See Cel-Tech Communications, Inc. v. Los Angeles Cellular Telephone Co, (1999) 20 Cal.4th 163.) Fraudulent Prong Page 27",
+      "locations": [
+        {
+          "document": "/documents/matter-12/1094 Amended Complaint.pdf",
+          "page": 27,
+          "role": "plaintiff_filing",
+          "matter": 12
+        },
+        {
+          "document": "/documents/matter-12/1094 Complaint.pdf",
+          "page": 10,
+          "role": "plaintiff_filing",
+          "matter": 12
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "See Franks v. Delaware, 438 U.S. 154 (1978)",
       "kind": "authority",
       "occurrenceCount": 2,
@@ -9842,6 +10394,37 @@
           "page": 14,
           "role": "plaintiff_filing",
           "matter": 32
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "See Hansen v. Black, 885 F. 2d 642",
+      "kind": "authority",
+      "occurrenceCount": 2,
+      "matters": [
+        18
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Hansen v. Black). Existence only \u2014 court_order role.",
+      "sampleContext": "sonal involvement in the constitutional deprivation or a causal connection between the defendant's wrongful conduct and the alleged constitutional deprivation. See Hansen v. Black, 885 F.2d 642, 646 (9th Cir. 1989); Johnson v. Duffy, 588 F.2d 740, 743-44 (9th Cir. 1978). That 1s,",
+      "locations": [
+        {
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 3,
+          "role": "court_order",
+          "matter": 18
+        },
+        {
+          "document": "/documents/opinions/Newanforbi v California CHP - USDC EDCal - FR Recommending Dismissal Apr 20 2026.pdf",
+          "page": 5,
+          "role": "court_order",
+          "matter": null
         }
       ],
       "priority": "P2_joined"
@@ -10316,6 +10899,31 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Ashcroft v. Iqbal, 556 U.S. 662",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        29
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Ashcroft v. Iqbal). Existence only \u2014 court_order role.",
+      "sampleContext": "GAL STANDARD FOR MOTION TO DISMISS When deciding whether to grant a motion to dismiss, the court must accept as true all \u201cwell-pleaded factual allegations.\u201d Ashcroft v. Iqbal, 556 U.S. 662, 129 S.Ct. 1937, 173 L.Ed.2d 868 (2009). The court must also construe the alleged facts in ",
+      "locations": [
+        {
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
+          "page": 12,
+          "role": "plaintiff_filing",
+          "matter": 29
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "B.B. v. County of Los Angeles, 10 Cal. 5th 1 (2020)",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -10416,6 +11024,31 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Bernson v. Browning-Ferris Industries, 7 Cal. 4th 926 (1994)",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        12
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "audit",
+      "notes": "Case exists at correct citation and supports the fraudulent-concealment tolling proposition cited. Good law.",
+      "sampleContext": "intiff invokes the discovery rule, the doctrine of fraudulent concealment, and equitable tolling. (See Fox v. Ethicon Endo-Surgery, Inc. (2005) 35 Cal.4th 797; Bernson v. Browning-Ferris Industries (1994) 7 Cal.4th 926; Aryeh v. Canon Business Solutions, Inc. (2013) 1 Cal.Sth 118",
+      "locations": [
+        {
+          "document": "/documents/matter-12/1094 Amended Complaint.pdf",
+          "page": 16,
+          "role": "plaintiff_filing",
+          "matter": 12
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "Bias v. Moynihan, 508 F. 3d 1212",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -10491,6 +11124,31 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Bily v. Arthur Young, 3 Cal. 4th 370 (1992)",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        5
+      ],
+      "roles": [
+        "opposing_filing"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: FOUND on CourtListener/CAP for complaint OCR tranche (Bily v. Arthur Young & Co.). Existence only.",
+      "sampleContext": "e speaker does not actually hold the opinion. (Hauter v. Zogarts (1975) 14 Cal.3d 104, 111\u2013112; Cohen v. S & S Construction Co. (1983) 151 Cal.App.3d 941, 946; Bily v. Arthur Young & Co. (1992) 3 Cal.4th 370, 408.) The FAC alleges that HOPE's purported clinical determinations are",
+      "locations": [
+        {
+          "document": "/documents/matter-05/Opposition to Demurrer Pal.pdf",
+          "page": 7,
+          "role": "opposing_filing",
+          "matter": 5
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "Bolkiah v. Superior Ct, 74 Cal. App. 4th 984 (1999)",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -10541,26 +11199,26 @@
       "priority": "P2_joined"
     },
     {
-      "citation": "Brodheim v. Cry, 584 F. 3d 1262",
+      "citation": "Bruce v. YIst, 351 F. 3d 1283",
       "kind": "authority",
       "occurrenceCount": 1,
       "matters": [
-        30
+        18
       ],
       "roles": [
-        "plaintiff_filing"
+        "court_order"
       ],
-      "plaintiffOnly": true,
+      "plaintiffOnly": false,
       "status": "VERIFIED",
       "statusSource": "round",
-      "notes": "Real at 584 F.3d 1262 (9th Cir. 2009). Add year.",
-      "sampleContext": "ction that would chill a person of ordinary firmness from continuing to engage in protected activity. Rhodes v. Robinson, 408 F.3d 559, 567-68 (9th Cir. 2005); Brodheim v. Cry, 584 F.3d 1262, 1270 (9th Cir. 2009). 44. Moua had actual or constructive knowledge of the Derrick lawsu",
+      "notes": "Round 8: pin resolves as Bruce v. Ylst \u2014 CAPTION_MISMATCH is party-name expansion only. Existence only; court_order.",
+      "sampleContext": "(9th Cir. 2005). A retaliatory motive may be shown by the timing of the allegedly retaliatory act or other circumstantial evidence, as well as direct evidence. Bruce v. YIst, 351 F.3d 1283, 1288- 89 (9th Cir. 2003); McCollum v. Ca. Dep't of Corr. And Rehab., 647 F.3d 870, 882 (9t",
       "locations": [
         {
-          "document": "/documents/matter-30/Complaint v9 Newanforbi v Moua NDCAL.pdf",
-          "page": 15,
-          "role": "plaintiff_filing",
-          "matter": 30
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 5,
+          "role": "court_order",
+          "matter": 18
         }
       ],
       "priority": "P2_joined"
@@ -10795,6 +11453,31 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "City of Cleburne Texas v. Cleburne Living Center, 473 U.S. 432 (1985)",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        18
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (City of Cleburne v. Cleburne Living Center, Inc.). Existence only \u2014 court_order role.",
+      "sampleContext": "n for the disparate treatment. (Id.) The Equal Protection Clause of the Fourteenth Amendment requires that persons who are similarly situated be treated alike. City of Cleburne Texas v. Cleburne Living Center, 473 U.S. 432, 439 (1985), abrogated on other grounds as explained in G",
+      "locations": [
+        {
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 7,
+          "role": "court_order",
+          "matter": 18
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "City of Escondido v. Emmons, 139 S. Ct. 500 (2019)",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -10840,6 +11523,31 @@
           "page": 11,
           "role": "plaintiff_filing",
           "matter": 30
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Cleveland v. Johnson, 209 Cal.App. 4th 1315 (2012)",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        12
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "audit",
+      "notes": "Case exists at correct citation and states the four traditional grounds for successor liability as paraphrased in the complaint. Good law.",
+      "sampleContext": "goodwill, and with no apparent payment of fair, arms-length consideration in connection with any asset transfer (See Ray v. Alad Corp. (1977) 19 Cal.3d 22, 28; Cleveland v. Johnson (2012) 209 Cal.App.4th 1315, 1326-1334); (c) De facto merger. The transition from Diamond to Alpine",
+      "locations": [
+        {
+          "document": "/documents/matter-12/1094 Amended Complaint.pdf",
+          "page": 5,
+          "role": "plaintiff_filing",
+          "matter": 12
         }
       ],
       "priority": "P2_joined"
@@ -10920,6 +11628,31 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Conley v. Gibson, 355 U.S. 41 (1957)",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        18
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Conley v. Gibson). Existence only \u2014 court_order role.",
+      "sampleContext": "o 'give the defendant fair notice of what the claim 1s and the grounds upon which it rests.'\" Bell Atlantic Corp. v. Twombly, 550 U.S. 544, 555 (2007) (quoting Conley v. Gibson, 355 U.S. 41, 47 (1957)). In order to survive dismissal for failure to state a claim, a complaint must ",
+      "locations": [
+        {
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 2,
+          "role": "court_order",
+          "matter": 18
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "Cornell v. City & County, 17 Cal.App. 5th 766 (2017)",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -10965,6 +11698,31 @@
           "page": 11,
           "role": "plaintiff_filing",
           "matter": 30
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Davis v. Scherer, 468 U.S. 183 (1984)",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        18
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Davis v. Scherer). Existence only \u2014 court_order role.",
+      "sampleContext": "51 U.S. at 93, and construe the pleading in the light most favorable to the plaintiff. Scheuer v. Rhodes, 416 U.S. 232, 236 (1974), overruled on other grounds, Davis v. Scherer, 468 U.S. 183 (1984). I. THE CIVIL RIGHTS ACT To state a claim under \u00a7 1983, a plaintiff must demonstra",
+      "locations": [
+        {
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 2,
+          "role": "court_order",
+          "matter": 18
         }
       ],
       "priority": "P2_joined"
@@ -11070,6 +11828,56 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Engquist v. Oregon Department, 553 U.S. 591 (2008)",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        18
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Engquist v. Oregon Department of Agriculture). Existence only \u2014 court_order role.",
+      "sampleContext": "from others similarly situated; and (3) there is no rational basis for the difference in treatment. Village of Willowbrook v. Olech, 528 U.S. 562, 564 (2000); Engquist v. Oregon Department of Agr., 553 U.S. 591, 601- 02 (2008); SeaRiver Maritime Financial Holdings, Inc. v. Mineta",
+      "locations": [
+        {
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 7,
+          "role": "court_order",
+          "matter": 18
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Erickson v. Pardus, 551 U.S. 89 (2007)",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        18
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Erickson v. Pardus). Existence only \u2014 court_order role.",
+      "sampleContext": "pecific facts are not necessary; the statement [of facts] need only \"give the defendant fair notice of what the claim 1s and the grounds upon which it rests.'\" Erickson v. Pardus, 551 U.S. 89, 93 (2007) (quoting Bell Atlantic, 550 U.S. at 555, citations and internal quotations ma",
+      "locations": [
+        {
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 2,
+          "role": "court_order",
+          "matter": 18
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "Exxon Mobil Corp. v. Saudi Basic Indus. Corp, 544 U.S. 280 (2005)",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -11092,6 +11900,31 @@
           "page": 16,
           "role": "plaintiff_filing",
           "matter": 7
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Frazier v. Dubois, 922 F. 2d 560",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        18
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Frazier v. Dubois). Existence only \u2014 court_order role.",
+      "sampleContext": "th Cir. 1995) (noting that plaintiff's \"sheer speculation\" that defendants had knowledge of his protected conduct was insufficient to show retaliatory intent); Frazier v. Dubois, 922 F.2d 560, 562 n.1 (10th Cir. 1990) (\"Mere allegations of constitutional retaliation will not suff",
+      "locations": [
+        {
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 5,
+          "role": "court_order",
+          "matter": 18
         }
       ],
       "priority": "P2_joined"
@@ -11319,6 +12152,31 @@
           "page": 13,
           "role": "plaintiff_filing",
           "matter": 29
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Hansen v. Black, 885 F. 2d 642",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        3
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Hansen v. Black). Existence only \u2014 court_order role.",
+      "sampleContext": "vement in the constitutional deprivation, or (2) a sufficient causal connection between the supervisor\u2019s wrongful conduct and the constitutional violation.\u201d Hansen v. Black, 885 F.2d 642, 646 (9th Cir. 1989). Plaintiff does not sufficiently allege a connection between Noguchi and",
+      "locations": [
+        {
+          "document": "/documents/opinions/Newanforbi v Derrick - USDC EDCal - MTD Order Jul 24 2026.pdf",
+          "page": 8,
+          "role": "court_order",
+          "matter": 3
         }
       ],
       "priority": "P2_joined"
@@ -11802,6 +12660,31 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Jones v. Cmty. Redev. Agency, 733 F. 2d 646",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        18
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: pin resolves as Jones v. Community Redevelopment Agency of Los AngeLes \u2014 CAPTION_MISMATCH is party-name expansion only. Existence only; court_order.",
+      "sampleContext": "(2). Although the Federal Rules adopt a flexible pleading policy, a complaint must give fair notice and state the elements of the claim plainly and succinctly. Jones v. Cmty. Redev. Agency, 733 F.2d 646, 649 (9th Cir. 1984). Plaintiff must allege with at least some degree of part",
+      "locations": [
+        {
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 8,
+          "role": "court_order",
+          "matter": 18
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "Jones v. Kmart Corp, 17 Cal. 4th 329 (1998)",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -11847,6 +12730,31 @@
           "page": 2,
           "role": "plaintiff_filing",
           "matter": 29
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Jones v. Williams, 297 F. 3d 930",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        18
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Jones v. Williams). Existence only \u2014 court_order role.",
+      "sampleContext": "ase 2:26-cv-00191-DJC-CSK Document7 Filed 05/18/26 Page 3of12 the color of state law. See West v. Atkins, 487 U.S. 42, 48 (1988): Jones v. Williams, 297 F.3d 930, 934 (9th Cir. 2002). An individual defendant 1s not lable on a crvil rights claim unless the facts establish the defe",
+      "locations": [
+        {
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 3,
+          "role": "court_order",
+          "matter": 18
         }
       ],
       "priority": "P2_joined"
@@ -12057,6 +12965,81 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Marks v. Minnesota Mining, 187 Cal.App. 3d 1429 (1986)",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        12
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: FOUND on CourtListener/CAP for complaint OCR tranche (Marks v. Minnesota Mining & Manufacturing Co.). Existence only.",
+      "sampleContext": "ted continuation of normal business operations; a cessation of ordinary business operations by Diamond; and a continuation of Diamond's business by Alpine (see Marks v. Minnesota Mining & Mfg. Co. (1986) 187 Cal.App.3d 1429, 1436); (d) Express or implied assumption. Alpine has ex",
+      "locations": [
+        {
+          "document": "/documents/matter-12/1094 Amended Complaint.pdf",
+          "page": 5,
+          "role": "plaintiff_filing",
+          "matter": 12
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "May v. Enomoto, 633 F. 2d 164",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        18
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (May v. Enomoto). Existence only \u2014 court_order role.",
+      "sampleContext": "y under 42 U.S.C. \u00a7 1983 unless there 1s some affirmative link or connection between a defendant's actions and the claimed deprivation. Rizzo, 423 U.S. at 371; May v. Enomoto, 633 F.2d 164, 167 (9th Cir. 1980). Furthermore, vague and conclusory allegations of official participati",
+      "locations": [
+        {
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 9,
+          "role": "court_order",
+          "matter": 18
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "McCollum v. Ca. Dep't, 647 F. 3d 870",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        18
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: pin resolves as McCollum v. California Department of Corrections & Rehabilitation \u2014 CAPTION_MISMATCH is party-name expansion only. Existence only; court_order.",
+      "sampleContext": "e timing of the allegedly retaliatory act or other circumstantial evidence, as well as direct evidence. Bruce v. YIst, 351 F.3d 1283, 1288- 89 (9th Cir. 2003); McCollum v. Ca. Dep't of Corr. And Rehab., 647 F.3d 870, 882 (9th Cir. 2011). Circumstantial evidence usually includes \"",
+      "locations": [
+        {
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 5,
+          "role": "court_order",
+          "matter": 18
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "McKell v. Washington Mut., Inc, 142 Cal. App. 4th 1457 (2006)",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -12077,6 +13060,31 @@
           "page": 3,
           "role": "plaintiff_filing",
           "matter": 29
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Mesler v. Bragg Management Co, 39 Cal. 3d 290 (1985)",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        12
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "audit",
+      "notes": "Case exists at correct citation; California Supreme Court alter-ego case, still cited as good law alongside Sonora Diamond.",
+      "sampleContext": "e existence would, under the circumstances, sanction fraud or promote injustice (see Sonora Diamond Corp. v. Superior Court (2000) 83 Cal.App.4th 523, 538-539; Mesler v. Bragg Management Co. (1985) 39 Cal.3d 290, 300). The bases for this allegation include: (i) the substantial ov",
+      "locations": [
+        {
+          "document": "/documents/matter-12/1094 Amended Complaint.pdf",
+          "page": 6,
+          "role": "plaintiff_filing",
+          "matter": 12
         }
       ],
       "priority": "P2_joined"
@@ -12511,6 +13519,56 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Ramirez v. Galaza, 334 F. 3d 850",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        18
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Ramirez v. Galaza). Existence only \u2014 court_order role.",
+      "sampleContext": "ocess under the law. Wilkinson v. Austin, 545 U.S. 209, 221 (2005). However, there is no stand-alone due process claim for the prison grievance process itself. Ramirez v. Galaza, 334 F.3d 850, 860 (9th Cir. 2003); Mann v. Adams, $55 F.2d 639, 640 (9th Cir. 1988). A prison officia",
+      "locations": [
+        {
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 8,
+          "role": "court_order",
+          "matter": 18
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Rizzo v. Goode, 423 U.S. 362 (1976)",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        18
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Rizzo v. Goode). Existence only \u2014 court_order role.",
+      "sampleContext": "on of plaintiff's constitutional nghts. See e.g., West, 487 U.S. at 48. Also, the complaint must allege in specific terms how each named defendant is involved. Rizzo v. Goode, 423 U.S. 362, 371 (1976). There can be no liability under 42 U.S.C. \u00a7 1983 unless there 1s some affirmat",
+      "locations": [
+        {
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 9,
+          "role": "court_order",
+          "matter": 18
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "Sandin v. Conner, 515 U.S. 472 (1995)",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -12556,6 +13614,56 @@
           "page": 2,
           "role": "plaintiff_filing",
           "matter": 29
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Scheuer v. Rhodes, 416 U.S. 232 (1974)",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        18
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Scheuer v. Rhodes). Existence only \u2014 court_order role.",
+      "sampleContext": "accept as true the allegations of the complaint in question, Erickson, 551 U.S. at 93, and construe the pleading in the light most favorable to the plaintiff. Scheuer v. Rhodes, 416 U.S. 232, 236 (1974), overruled on other grounds, Davis v. Scherer, 468 U.S. 183 (1984). I. THE CI",
+      "locations": [
+        {
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 2,
+          "role": "court_order",
+          "matter": 18
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "SeaRiver Maritime Financial Holdings, Inc. v. Mineta, 309 F. 3d 662",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        18
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (SeaRiver Maritime Financial Holdings Inc. v. Mineta). Existence only \u2014 court_order role.",
+      "sampleContext": "or the difference in treatment. Village of Willowbrook v. Olech, 528 U.S. 562, 564 (2000); Engquist v. Oregon Department of Agr., 553 U.S. 591, 601- 02 (2008); SeaRiver Maritime Financial Holdings, Inc. v. Mineta, 309 F.3d 662, 679 (9th Cir. Here, plaintiff's allegations are rais",
+      "locations": [
+        {
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 7,
+          "role": "court_order",
+          "matter": 18
         }
       ],
       "priority": "P2_joined"
@@ -12763,6 +13871,31 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "See Fox v. Ethicon Endo-Surgery, Inc, 35 Cal. 4th 797 (2005)",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        12
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: FOUND on CourtListener/CAP for complaint OCR tranche (Fox v. Ethicon Endo-Surgery, Inc.). Existence only.",
+      "sampleContext": "e extent any cause of action would otherwise be untimely, Plaintiff invokes the discovery rule, the doctrine of fraudulent concealment, and equitable tolling. (See Fox v. Ethicon Endo-Surgery, Inc. (2005) 35 Cal.4th 797; Bernson v. Browning-Ferris Industries (1994) 7 Cal.4th 926;",
+      "locations": [
+        {
+          "document": "/documents/matter-12/1094 Amended Complaint.pdf",
+          "page": 16,
+          "role": "plaintiff_filing",
+          "matter": 12
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "See Fulton v. City of Philadelphia, 593 U.S. 522 (2021)",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -12783,6 +13916,31 @@
           "page": 13,
           "role": "other",
           "matter": 16
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "See Jackson v. Arizona, 885 F. 2d 639",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        18
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Jackson v. Arizona). Existence only \u2014 court_order role.",
+      "sampleContext": "seless. Neitzke, 490) U.S. at 327. The critical inquiry is whether a constitutional claim, however inartfully pleaded, has an arguable legal and factual basis. See Jackson v. Arizona, 885 F.2d 639, 640 (9th Cir. 1989), superseded by statute as stated in Lopez v. Smith, 203 F.3d 1",
+      "locations": [
+        {
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 2,
+          "role": "court_order",
+          "matter": 18
         }
       ],
       "priority": "P2_joined"
@@ -12809,6 +13967,31 @@
           "page": 9,
           "role": "opposing_filing",
           "matter": 1
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "See LiMandri v. Judkins, 52 Cal.App. 4th 326 (1997)",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        12
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: FOUND on CourtListener/CAP for complaint OCR tranche (LiMandri v. Judkins). Existence only.",
+      "sampleContext": "conduct surrounding the sale. (See LiMandri v. Judkins (1997) 52 Cal.App.4th 326, 336-337; Warner Constr. Corp. v. City of Los Angeles (1970) 2 Cal.3d 285; Civ. Code \u00a7 1710, subd. (3).) 52. Diamond intentionally co",
+      "locations": [
+        {
+          "document": "/documents/matter-12/1094 Amended Complaint.pdf",
+          "page": 19,
+          "role": "plaintiff_filing",
+          "matter": 12
         }
       ],
       "priority": "P2_joined"
@@ -12918,6 +14101,81 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "See Pratt v. Rowland, 65 F. 3d 802",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        18
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Pratt v. Rowland). Existence only \u2014 court_order role.",
+      "sampleContext": "Plaintiff's speculation and conclusion that defendant K. Barocio's subsequent conduct was motivated by a desire to retaliate does not suffice to state a claim. See Pratt v. Rowland, 65 F.3d 802, 808 (9th Cir. 1995) (noting that plaintiff's \"sheer speculation\" that defendants had ",
+      "locations": [
+        {
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 5,
+          "role": "court_order",
+          "matter": 18
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "See Ramirez v. Cnty. of San Bernardino, 806 F. 3d 1002",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        18
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Ramirez v. County of San Bernardino). Existence only \u2014 court_order role.",
+      "sampleContext": "ase 2:26-cv-00191-DJC-CSK Document7 Filed 05/18/26 Page 10of12 because, as a general rule, an amended complaint supersedes the original complaint. See Ramirez v. Cnty. of San Bernardino, 806 F.3d 1002, 1008 (9th Cir. 2015) (\"an 'amended complaint supersedes the original, the latt",
+      "locations": [
+        {
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 10,
+          "role": "court_order",
+          "matter": 18
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "See Ray v. Alad Corp, 19 Cal. 3d 22 (1977)",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        12
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "audit",
+      "notes": "Case exists at correct citation; seminal California successor liability case discussing traditional exceptions (including mere continuation and inadequate consideration) as well as the product-line rule. Good law, still controlling.",
+      "sampleContext": ", customers, inventory, telephone numbers, and goodwill, and with no apparent payment of fair, arms-length consideration in connection with any asset transfer (See Ray v. Alad Corp. (1977) 19 Cal.3d 22, 28; Cleveland v. Johnson (2012) 209 Cal.App.4th 1315, 1326-1334); (c) De fact",
+      "locations": [
+        {
+          "document": "/documents/matter-12/1094 Amended Complaint.pdf",
+          "page": 5,
+          "role": "plaintiff_filing",
+          "matter": 12
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "See Shoyoye v. County of Los Angeles, 203 Cal.App. 4th 947 (2012)",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -13018,6 +14276,56 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "See Warner Constr. Corp. v. City of Los Angeles, 2 Cal. 3d 285 (1970)",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        12
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "audit",
+      "notes": "Case exists at correct citation. Holds that outside fiduciary relations, nondisclosure liability can arise where facts are known/accessible only to defendant and not reasonably discoverable by plaintiff -- matches the proposition cited. Still good law, frequently cited (see CACI No. 4501 origins).",
+      "sampleContext": "on at the time of sale. Diamond possessed superior knowledge of facts not accessible to Plaintiff through reasonable inspection or publicly available records. (See Warner Constr. Corp. v. City of Los Angeles (1970) 2 Cal.3d 285 [duty to disclose in sales transactions]; Civ. Code,",
+      "locations": [
+        {
+          "document": "/documents/matter-12/1094 Complaint.pdf",
+          "page": 7,
+          "role": "plaintiff_filing",
+          "matter": 12
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "See West v. Atkins, 487 U.S. 42 (1988)",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        18
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (West v. Atkins). Existence only \u2014 court_order role.",
+      "sampleContext": "ase 2:26-cv-00191-DJC-CSK Document7 Filed 05/18/26 Page 3of12 the color of state law. See West v. Atkins, 487 U.S. 42, 48 (1988): Jones v. Williams, 297 F.3d 930, 934 (9th Cir. 2002). An individual defendant 1s not lable on a crvil rights claim unless the facts es",
+      "locations": [
+        {
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 3,
+          "role": "court_order",
+          "matter": 18
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "See Withrow v. Larkin, 421 U.S. 35 (1975)",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -13091,6 +14399,31 @@
           "page": 13,
           "role": "other",
           "matter": 2
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Sonora Diamond Corp. v. Superior Court, 83 Cal.App. 4th 523 (2000)",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        12
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "audit",
+      "notes": "Case exists at correct citation; is the seminal modern statement of the alter-ego two-prong test, matching the complaint's paraphrase almost verbatim. Good law.",
+      "sampleContext": "do not in reality exist, and adherence to the fiction of separate corporate existence would, under the circumstances, sanction fraud or promote injustice (see Sonora Diamond Corp. v. Superior Court (2000) 83 Cal.App.4th 523, 538-539; Mesler v. Bragg Management Co. (1985) 39 Cal.3",
+      "locations": [
+        {
+          "document": "/documents/matter-12/1094 Amended Complaint.pdf",
+          "page": 6,
+          "role": "plaintiff_filing",
+          "matter": 12
         }
       ],
       "priority": "P2_joined"
@@ -13193,6 +14526,31 @@
           "page": 14,
           "role": "plaintiff_filing",
           "matter": 7
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Thornton v. City of St. Helens, 425 F. 3d 1158",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        18
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Thornton v. City of St. Helens). Existence only \u2014 court_order role.",
+      "sampleContext": "City of Los Angeles, 250 F.3d 668, 686 (9th Cir. 2001), implicitly abrogated in part on other grounds as explained in Galbraith, 307 F.3d at 1125-26;* see also Thornton v. City of St. Helens, 425 F.3d 1158, 1167 (9th Cir. 2005). Alternatively, if the challenged action did not inv",
+      "locations": [
+        {
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 7,
+          "role": "court_order",
+          "matter": 18
         }
       ],
       "priority": "P2_joined"
@@ -13579,6 +14937,31 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Village of Willowbrook v. Olech, 528 U.S. 562 (2000)",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        18
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Village of Willowbrook v. Olech). Existence only \u2014 court_order role.",
+      "sampleContext": "ss; (2) the plaintiff was intentionally treated differently from others similarly situated; and (3) there is no rational basis for the difference in treatment. Village of Willowbrook v. Olech, 528 U.S. 562, 564 (2000); Engquist v. Oregon Department of Agr., 553 U.S. 591, 601- 02 ",
+      "locations": [
+        {
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 7,
+          "role": "court_order",
+          "matter": 18
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "Villiarimo v. Aloha Island Air, Inc, 281 F. 3d 1054",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -13629,6 +15012,31 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Warner Constr. Corp. v. City of Los Angeles, 2 Cal. 3d 285 (1970)",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        12
+      ],
+      "roles": [
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "audit",
+      "notes": "Case exists at correct citation. Holds that outside fiduciary relations, nondisclosure liability can arise where facts are known/accessible only to defendant and not reasonably discoverable by plaintiff -- matches the proposition cited. Still good law, frequently cited (see CACI No. 4501 origins).",
+      "sampleContext": "conduct surrounding the sale. (See LiMandri v. Judkins (1997) 52 Cal.App.4th 326, 336-337; Warner Constr. Corp. v. City of Los Angeles (1970) 2 Cal.3d 285; Civ. Code \u00a7 1710, subd. (3).) 52. Diamond intentionally concealed and failed to disclose the Material Facts with the intent ",
+      "locations": [
+        {
+          "document": "/documents/matter-12/1094 Amended Complaint.pdf",
+          "page": 19,
+          "role": "plaintiff_filing",
+          "matter": 12
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "Washington v. Harper, 494 U.S. 210 (1990)",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -13654,6 +15062,31 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Watison v. Carter, 668 F. 3d 1108",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        18
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Watison v. Carter). Existence only \u2014 court_order role.",
+      "sampleContext": "at 8.) A. Retaliation Claims Prisoners have a First Amendment right to file grievances against prison officials and to be free from retaliation for doing so.\" Watison v. Carter, 668 F.3d 1108, 1114 (9th Cir. 2012) (citing Brodheim v. Cry, 584 F.3d 1262, 1269 (9th Cir. 2009)). A v",
+      "locations": [
+        {
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 4,
+          "role": "court_order",
+          "matter": 18
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "Weston v. Motiu, 2025 WL 2916303",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -13674,6 +15107,31 @@
           "page": 3,
           "role": "plaintiff_filing",
           "matter": 3
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Wilkinson v. Austin, 545 U.S. 209 (2005)",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        18
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Wilkinson v. Austin). Existence only \u2014 court_order role.",
+      "sampleContext": "merits of plaintiff's claim. (ECF No. | at 7.) The Due Process Clause protects plaintiff against the deprivation of liberty without due process under the law. Wilkinson v. Austin, 545 U.S. 209, 221 (2005). However, there is no stand-alone due process claim for the prison grievanc",
+      "locations": [
+        {
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 8,
+          "role": "court_order",
+          "matter": 18
         }
       ],
       "priority": "P2_joined"
@@ -13726,6 +15184,31 @@
           "page": 8,
           "role": "plaintiff_filing",
           "matter": 2
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Wood v. Yordy, 753 F. 3d 899",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        18
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Wood v. Yordy). Existence only \u2014 court_order role.",
+      "sampleContext": "g Allen v. ranon, 283 F.3d 1070, 1077 (9th Cir. 2002)) (quotation marks omitted). Mere speculation that a defendant acted out of retaliation is not sufficient. Wood v. Yordy, 753 F.3d 899, 904 (9th Cir. 2014) (citing cases). 1. Defendant K. Barocio Plaintiff's retaliation claim a",
+      "locations": [
+        {
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 5,
+          "role": "court_order",
+          "matter": 18
         }
       ],
       "priority": "P2_joined"
@@ -13962,73 +15445,6 @@
       "priority": "P3_unverified_corroborated"
     },
     {
-      "citation": "Aryeh v. Canon Business Solutions, Inc, 55 Cal. 4th 1185 (2013)",
-      "kind": "authority",
-      "occurrenceCount": 14,
-      "matters": [
-        15
-      ],
-      "roles": [
-        "other"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "andatory Duty (Gov. Code \u00a7 815.6): Two years from accrual under Code of Civil Procedure section 335.1, subject to the continuing-accrual doctrine recognized in Aryeh v. Canon Business Solutions, Inc. (2013) 55 Cal.4th 1185, 1197\u20131201. The November 19, 2025 approval is within two ",
-      "locations": [
-        {
-          "document": "/documents/matter-15/DODD.pdf",
-          "page": 10,
-          "role": "other",
-          "matter": 15
-        },
-        {
-          "document": "/documents/matter-15/DODD.pdf",
-          "page": 20,
-          "role": "other",
-          "matter": 15
-        },
-        {
-          "document": "/documents/matter-15/DODD.pdf",
-          "page": 21,
-          "role": "other",
-          "matter": 15
-        },
-        {
-          "document": "/documents/matter-15/DODD.pdf",
-          "page": 24,
-          "role": "other",
-          "matter": 15
-        },
-        {
-          "document": "/documents/matter-15/Dodd.pdf",
-          "page": 10,
-          "role": "other",
-          "matter": 15
-        },
-        {
-          "document": "/documents/matter-15/Dodd.pdf",
-          "page": 20,
-          "role": "other",
-          "matter": 15
-        },
-        {
-          "document": "/documents/matter-15/Dodd.pdf",
-          "page": 21,
-          "role": "other",
-          "matter": 15
-        },
-        {
-          "document": "/documents/matter-15/Dodd.pdf",
-          "page": 23,
-          "role": "other",
-          "matter": 15
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
       "citation": "Nacht & Lewis Architects, Inc. v. Superior Court, 47 Cal App 214 (1996)",
       "kind": "authority",
       "occurrenceCount": 14,
@@ -14235,6 +15651,77 @@
       "priority": "P3_unverified_corroborated"
     },
     {
+      "citation": "Alcorn v. Anbro Engineering, Inc, 2 Cal. 3d 493 (1970)",
+      "kind": "authority",
+      "occurrenceCount": 10,
+      "matters": [
+        5,
+        15,
+        16
+      ],
+      "roles": [
+        "opposing_filing",
+        "other",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": false,
+      "status": "UNVERIFIED",
+      "statusSource": "none",
+      "notes": "",
+      "sampleContext": "\u20131051.) Conduct is \"outrageous\" when it exceeds the bounds tolerated in a civilized community; the power disparity between the parties heightens the analysis. (Alcorn v. Anbro Engineering, Inc. (1970) 2 Cal.3d 493, 498\u2013499.) The FAC alleges (i) operation of a system-from-which-th",
+      "locations": [
+        {
+          "document": "/documents/matter-05/Opposition to Demurrer Pal.pdf",
+          "page": 13,
+          "role": "opposing_filing",
+          "matter": 5
+        },
+        {
+          "document": "/documents/matter-15/5417 Complaint.pdf",
+          "page": 19,
+          "role": "plaintiff_filing",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-15/DODD.pdf",
+          "page": 30,
+          "role": "other",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-15/Dodd.pdf",
+          "page": 30,
+          "role": "other",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-15/Newanforbi v Dodd RECALIBRATED.pdf",
+          "page": 19,
+          "role": "other",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-15/Newanforbi v. CDCR, et al.pdf",
+          "page": 19,
+          "role": "other",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-15/Newanforbi v. Dodd, et al..pdf",
+          "page": 22,
+          "role": "other",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-15/Newanforbi v. Dodd, et al.pdf",
+          "page": 22,
+          "role": "other",
+          "matter": 15
+        }
+      ],
+      "priority": "P3_unverified_corroborated"
+    },
+    {
       "citation": "O'Shea v. Littleton, 414 U.S. 488 (1974)",
       "kind": "authority",
       "occurrenceCount": 10,
@@ -14300,76 +15787,6 @@
           "page": 38,
           "role": "other",
           "matter": 33
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
-      "citation": "Alcorn v. Anbro Engineering, Inc, 2 Cal. 3d 493 (1970)",
-      "kind": "authority",
-      "occurrenceCount": 9,
-      "matters": [
-        5,
-        15,
-        16
-      ],
-      "roles": [
-        "opposing_filing",
-        "other"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "\u20131051.) Conduct is \"outrageous\" when it exceeds the bounds tolerated in a civilized community; the power disparity between the parties heightens the analysis. (Alcorn v. Anbro Engineering, Inc. (1970) 2 Cal.3d 493, 498\u2013499.) The FAC alleges (i) operation of a system-from-which-th",
-      "locations": [
-        {
-          "document": "/documents/matter-05/Opposition to Demurrer Pal.pdf",
-          "page": 13,
-          "role": "opposing_filing",
-          "matter": 5
-        },
-        {
-          "document": "/documents/matter-15/DODD.pdf",
-          "page": 30,
-          "role": "other",
-          "matter": 15
-        },
-        {
-          "document": "/documents/matter-15/Dodd.pdf",
-          "page": 30,
-          "role": "other",
-          "matter": 15
-        },
-        {
-          "document": "/documents/matter-15/Newanforbi v Dodd RECALIBRATED.pdf",
-          "page": 19,
-          "role": "other",
-          "matter": 15
-        },
-        {
-          "document": "/documents/matter-15/Newanforbi v. CDCR, et al.pdf",
-          "page": 19,
-          "role": "other",
-          "matter": 15
-        },
-        {
-          "document": "/documents/matter-15/Newanforbi v. Dodd, et al..pdf",
-          "page": 22,
-          "role": "other",
-          "matter": 15
-        },
-        {
-          "document": "/documents/matter-15/Newanforbi v. Dodd, et al.pdf",
-          "page": 22,
-          "role": "other",
-          "matter": 15
-        },
-        {
-          "document": "/documents/matter-15/Newanforbi v. Dodd.pdf",
-          "page": 30,
-          "role": "other",
-          "matter": 15
         }
       ],
       "priority": "P3_unverified_corroborated"
@@ -14446,6 +15863,76 @@
       "priority": "P3_unverified_corroborated"
     },
     {
+      "citation": "Fermino v. Fedco, Inc, 7 Cal. 4th 701 (1994)",
+      "kind": "authority",
+      "occurrenceCount": 9,
+      "matters": [
+        5,
+        15
+      ],
+      "roles": [
+        "opposing_filing",
+        "other",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": false,
+      "status": "UNVERIFIED",
+      "statusSource": "none",
+      "notes": "",
+      "sampleContext": "lse Imprisonment / Unlawful Restraint. The elements are (1) nonconsensual, intentional confinement; (2) without lawful privilege; (3) for an appreciable time. (Fermino v. Fedco, Inc. (1994) 7 Cal.4th 701, 715.) Confinement is not limited to physical custody; it includes any expre",
+      "locations": [
+        {
+          "document": "/documents/matter-05/Opposition to Demurrer Pal.pdf",
+          "page": 12,
+          "role": "opposing_filing",
+          "matter": 5
+        },
+        {
+          "document": "/documents/matter-15/5417 Complaint.pdf",
+          "page": 17,
+          "role": "plaintiff_filing",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-15/DODD.pdf",
+          "page": 27,
+          "role": "other",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-15/Dodd.pdf",
+          "page": 27,
+          "role": "other",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-15/Newanforbi v Dodd RECALIBRATED.pdf",
+          "page": 17,
+          "role": "other",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-15/Newanforbi v. CDCR, et al.pdf",
+          "page": 17,
+          "role": "other",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-15/Newanforbi v. Dodd, et al..pdf",
+          "page": 19,
+          "role": "other",
+          "matter": 15
+        },
+        {
+          "document": "/documents/matter-15/Newanforbi v. Dodd, et al.pdf",
+          "page": 19,
+          "role": "other",
+          "matter": 15
+        }
+      ],
+      "priority": "P3_unverified_corroborated"
+    },
+    {
       "citation": "Garber & Assocs. v. Eskandarian, 150 Cal.App. 4th 813 (2007)",
       "kind": "authority",
       "occurrenceCount": 9,
@@ -14508,75 +15995,6 @@
           "page": 6,
           "role": "court_order",
           "matter": 12
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
-      "citation": "Fermino v. Fedco, Inc, 7 Cal. 4th 701 (1994)",
-      "kind": "authority",
-      "occurrenceCount": 8,
-      "matters": [
-        5,
-        15
-      ],
-      "roles": [
-        "opposing_filing",
-        "other"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "lse Imprisonment / Unlawful Restraint. The elements are (1) nonconsensual, intentional confinement; (2) without lawful privilege; (3) for an appreciable time. (Fermino v. Fedco, Inc. (1994) 7 Cal.4th 701, 715.) Confinement is not limited to physical custody; it includes any expre",
-      "locations": [
-        {
-          "document": "/documents/matter-05/Opposition to Demurrer Pal.pdf",
-          "page": 12,
-          "role": "opposing_filing",
-          "matter": 5
-        },
-        {
-          "document": "/documents/matter-15/DODD.pdf",
-          "page": 27,
-          "role": "other",
-          "matter": 15
-        },
-        {
-          "document": "/documents/matter-15/Dodd.pdf",
-          "page": 27,
-          "role": "other",
-          "matter": 15
-        },
-        {
-          "document": "/documents/matter-15/Newanforbi v Dodd RECALIBRATED.pdf",
-          "page": 17,
-          "role": "other",
-          "matter": 15
-        },
-        {
-          "document": "/documents/matter-15/Newanforbi v. CDCR, et al.pdf",
-          "page": 17,
-          "role": "other",
-          "matter": 15
-        },
-        {
-          "document": "/documents/matter-15/Newanforbi v. Dodd, et al..pdf",
-          "page": 19,
-          "role": "other",
-          "matter": 15
-        },
-        {
-          "document": "/documents/matter-15/Newanforbi v. Dodd, et al.pdf",
-          "page": 19,
-          "role": "other",
-          "matter": 15
-        },
-        {
-          "document": "/documents/matter-15/Newanforbi v. Dodd.pdf",
-          "page": 27,
-          "role": "other",
-          "matter": 15
         }
       ],
       "priority": "P3_unverified_corroborated"
@@ -14710,127 +16128,6 @@
           "page": 10,
           "role": "opposing_filing",
           "matter": 29
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
-      "citation": "Sullivan v. County of Los Angeles, 12 Cal. 3d 710 (1974)",
-      "kind": "authority",
-      "occurrenceCount": 7,
-      "matters": [
-        15
-      ],
-      "roles": [
-        "other"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "arolee by name (\"Eagan\") and therefore does not document an individualized determination as to Plaintiff\u2014identity verification is a basic ministerial duty (see Sullivan v. County of Los Angeles (1974) 12 Cal.3d 710, 718; Gillan v. City of San Marino (2007) 147 Cal.App.4th 1033, 1",
-      "locations": [
-        {
-          "document": "/documents/matter-15/DODD.pdf",
-          "page": 28,
-          "role": "other",
-          "matter": 15
-        },
-        {
-          "document": "/documents/matter-15/Dodd.pdf",
-          "page": 28,
-          "role": "other",
-          "matter": 15
-        },
-        {
-          "document": "/documents/matter-15/Newanforbi v Dodd RECALIBRATED.pdf",
-          "page": 18,
-          "role": "other",
-          "matter": 15
-        },
-        {
-          "document": "/documents/matter-15/Newanforbi v. CDCR, et al.pdf",
-          "page": 18,
-          "role": "other",
-          "matter": 15
-        },
-        {
-          "document": "/documents/matter-15/Newanforbi v. Dodd, et al..pdf",
-          "page": 20,
-          "role": "other",
-          "matter": 15
-        },
-        {
-          "document": "/documents/matter-15/Newanforbi v. Dodd, et al.pdf",
-          "page": 20,
-          "role": "other",
-          "matter": 15
-        },
-        {
-          "document": "/documents/matter-15/Newanforbi v. Dodd.pdf",
-          "page": 28,
-          "role": "other",
-          "matter": 15
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
-      "citation": "Bell Atlantic Corp. v. Twombly, 550 U.S. 544 (2007)",
-      "kind": "authority",
-      "occurrenceCount": 6,
-      "matters": [
-        1,
-        7,
-        29,
-        32,
-        33
-      ],
-      "roles": [
-        "court_order",
-        "opposing_filing"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "................. 6 Barranco v. 3D Sys. Corp., 952 F.3d 1122 (9th Cir. 2020) ............................................................................ 10 Bell Atlantic Corp. v. Twombly, 550 U.S. 544 (2007) .......................................................................",
-      "locations": [
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 24-1 - Amazon's Memorandum ISO Motion to Dismiss (Dec 15, 2022).pdf",
-          "page": 4,
-          "role": "opposing_filing",
-          "matter": 29
-        },
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 24-1 - Amazon's Memorandum ISO Motion to Dismiss (Dec 15, 2022).pdf",
-          "page": 11,
-          "role": "opposing_filing",
-          "matter": 29
-        },
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 27 - Amazon's Reply ISO Motion to Dismiss (Feb 2, 2023).pdf",
-          "page": 11,
-          "role": "opposing_filing",
-          "matter": 29
-        },
-        {
-          "document": "/documents/matter-32/from-01/CHP Motion To Dismiss.pdf",
-          "page": 4,
-          "role": "opposing_filing",
-          "matter": 1
-        },
-        {
-          "document": "/documents/matter-33/opinions/Newanforbi v Candelaria - USDC EDCal - FR Recommending Dismissal Jun 15 2026.pdf",
-          "page": 3,
-          "role": "court_order",
-          "matter": 7
-        },
-        {
-          "document": "/documents/opinions/Newanforbi v California CHP - USDC EDCal - FR Recommending Dismissal Apr 20 2026.pdf",
-          "page": 3,
-          "role": "court_order",
-          "matter": null
         }
       ],
       "priority": "P3_unverified_corroborated"
@@ -15863,50 +17160,6 @@
         {
           "document": "/documents/matter-29/lerma-v-amazon/Dkt 36 - ORDER GRANTING Motions to Dismiss - Megan's Law, FCRA, UCL Claims Dismissed (May 26, 2023).pdf",
           "page": 6,
-          "role": "court_order",
-          "matter": 29
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
-      "citation": "Lee v. City of Los Angeles, 250 F. 3d 668",
-      "kind": "authority",
-      "occurrenceCount": 4,
-      "matters": [
-        29
-      ],
-      "roles": [
-        "court_order",
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "...................................... 16 Khoja v. Orexigen Therapeutics, Inc., 899 F.3d 988, 998 (9th Cir. 2018) ...................................... 8, 9 Lee v. City of Los Angeles, 250 F.3d 668, 688 (9th Cir. 2001) ............................................................",
-      "locations": [
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
-          "page": 3,
-          "role": "plaintiff_filing",
-          "matter": 29
-        },
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
-          "page": 12,
-          "role": "plaintiff_filing",
-          "matter": 29
-        },
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
-          "page": 13,
-          "role": "plaintiff_filing",
-          "matter": 29
-        },
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 36 - ORDER GRANTING Motions to Dismiss - Megan's Law, FCRA, UCL Claims Dismissed (May 26, 2023).pdf",
-          "page": 5,
           "role": "court_order",
           "matter": 29
         }
@@ -17458,38 +18711,6 @@
           "page": 8,
           "role": "opposing_filing",
           "matter": 20
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
-      "citation": "Cel-Tech Communications, Inc. v. Los Angeles Cellular Telephone Co, 20 Cal. 4th 163 (1999)",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        5
-      ],
-      "roles": [
-        "opposing_filing",
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "Eighth Cause of Action \u2014 Unfair Competition Law (Bus. & Prof. Code \u00a7 17200). The UCL prohibits any \"unlawful, unfair or fraudulent business act or practice.\" ( Cel-Tech Communications, Inc. v. Los Angeles Cellular Telephone Co. (1999) 20 Cal.4th 163, 180.) The FAC pleads all thre",
-      "locations": [
-        {
-          "document": "/documents/matter-05/Opposition to Demurrer Pal.pdf",
-          "page": 15,
-          "role": "opposing_filing",
-          "matter": 5
-        },
-        {
-          "document": "/documents/matter-05/RJN Pal ISO Opposition.pdf",
-          "page": 9,
-          "role": "plaintiff_filing",
-          "matter": 5
         }
       ],
       "priority": "P3_unverified_corroborated"
@@ -19300,37 +20521,6 @@
       "priority": "P3_unverified_corroborated"
     },
     {
-      "citation": "McCorkle v. City of Los Angeles, 70 Cal. 2d 252 (1969)",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        15
-      ],
-      "roles": [
-        "other"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "ause Plaintiff's injury results not from any policy judgment to undertake the review but from Defendants' negligence in performing it after electing to do so. (McCorkle v. City of Los Angeles (1969) 70 Cal.2d 252, 261 [classification of an act as discretionary does not immunize n",
-      "locations": [
-        {
-          "document": "/documents/matter-15/Newanforbi v Dodd RECALIBRATED.pdf",
-          "page": 16,
-          "role": "other",
-          "matter": 15
-        },
-        {
-          "document": "/documents/matter-15/Newanforbi v. CDCR, et al.pdf",
-          "page": 16,
-          "role": "other",
-          "matter": 15
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
       "citation": "Mendiondo v. Centinela Hosp. Med. Ctr, 521 F. 3d 1097",
       "kind": "authority",
       "occurrenceCount": 2,
@@ -20181,37 +21371,6 @@
       "priority": "P3_unverified_corroborated"
     },
     {
-      "citation": "See Sullivan v. County of Los Angeles, 12 Cal. 3d 710 (1974)",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        15
-      ],
-      "roles": [
-        "other"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "clusive vehicle for those remedies is a civil action at law against the responsible employees and their employer under Government Code sections 815.2 and 820. (See Sullivan v. County of Los Angeles (1974) 12 Cal.3d 710, 718-720 [damages action for unlawful detention].) 22. Plaint",
-      "locations": [
-        {
-          "document": "/documents/matter-15/Newanforbi v Dodd RECALIBRATED.pdf",
-          "page": 9,
-          "role": "other",
-          "matter": 15
-        },
-        {
-          "document": "/documents/matter-15/Newanforbi v. CDCR, et al.pdf",
-          "page": 9,
-          "role": "other",
-          "matter": 15
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
       "citation": "See Younger v. Berkeley City Council, 45 Cal.App. 3d 825 (1975)",
       "kind": "authority",
       "occurrenceCount": 2,
@@ -21056,6 +22215,39 @@
       "priority": "P3_unverified_corroborated"
     },
     {
+      "citation": "White v. Ultramar, Inc, 21 Cal. 4th 563 (1999)",
+      "kind": "authority",
+      "occurrenceCount": 2,
+      "matters": [
+        5,
+        12
+      ],
+      "roles": [
+        "opposing_filing",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": false,
+      "status": "UNVERIFIED",
+      "statusSource": "none",
+      "notes": "",
+      "sampleContext": "he clinic's clinical and administrative operations, including the CTM and progress-report process at issue. That is sufficient to plead managing-agent status. (White v. Ultramar, Inc. (1999) 21 Cal.4th 563, 576\u2013577.) And HOPE's continuation of the blanket retention policy after t",
+      "locations": [
+        {
+          "document": "/documents/matter-05/Opposition to Demurrer Pal.pdf",
+          "page": 17,
+          "role": "opposing_filing",
+          "matter": 5
+        },
+        {
+          "document": "/documents/matter-12/1094 Amended Complaint.pdf",
+          "page": 19,
+          "role": "plaintiff_filing",
+          "matter": 12
+        }
+      ],
+      "priority": "P3_unverified_corroborated"
+    },
+    {
       "citation": "Zetterberg v. State Dept, 43 Cal.App. 3d 657 (1974)",
       "kind": "authority",
       "occurrenceCount": 2,
@@ -21235,6 +22427,31 @@
           "page": 10,
           "role": "opposing_filing",
           "matter": 29
+        }
+      ],
+      "priority": "P3_unverified_corroborated"
+    },
+    {
+      "citation": "Allen v. Kernan, 2018 WL 2018096",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        18
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "UNVERIFIED",
+      "statusSource": "none",
+      "notes": "",
+      "sampleContext": "because \"denial of a erievance does not constitute an adverse action\"), report and recommendation adopted, 2015 WL 6163444 (E.D. Cal. Oct. 15, 2015)); see also Allen v. Kernan, 2018 WL 2018096, at *7 (S.D. Cal. Apr. 30, 2018) (same), aff'd, 771 F. App'x 407 (9th Cir. 2019). Thus,",
+      "locations": [
+        {
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 6,
+          "role": "court_order",
+          "matter": 18
         }
       ],
       "priority": "P3_unverified_corroborated"
@@ -21688,31 +22905,6 @@
       "priority": "P3_unverified_corroborated"
     },
     {
-      "citation": "Bily v. Arthur Young, 3 Cal. 4th 370 (1992)",
-      "kind": "authority",
-      "occurrenceCount": 1,
-      "matters": [
-        5
-      ],
-      "roles": [
-        "opposing_filing"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "e speaker does not actually hold the opinion. (Hauter v. Zogarts (1975) 14 Cal.3d 104, 111\u2013112; Cohen v. S & S Construction Co. (1983) 151 Cal.App.3d 941, 946; Bily v. Arthur Young & Co. (1992) 3 Cal.4th 370, 408.) The FAC alleges that HOPE's purported clinical determinations are",
-      "locations": [
-        {
-          "document": "/documents/matter-05/Opposition to Demurrer Pal.pdf",
-          "page": 7,
-          "role": "opposing_filing",
-          "matter": 5
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
       "citation": "Blum v. Yaretsky, 457 U.S. 991 (1982)",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -21733,6 +22925,31 @@
           "page": 7,
           "role": "court_order",
           "matter": 3
+        }
+      ],
+      "priority": "P3_unverified_corroborated"
+    },
+    {
+      "citation": "Bradway v. Rao, 2020 WL 8919180",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        18
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "UNVERIFIED",
+      "statusSource": "none",
+      "notes": "",
+      "sampleContext": "ution. Evans v. Skolnik 637 F. App'x 285, 288 (9th Cir. 2015). Thus, the denial of plaintiff's grievances cannot constitute a due process violation. See, e.g., Bradway v. Rao, 2020 WL 8919180, at *1 (E.D. Cal. July 15, 2020); Daniels v. Aguillera, 2018 WL 558658, at *1 (E.D. Cal.",
+      "locations": [
+        {
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 8,
+          "role": "court_order",
+          "matter": 18
         }
       ],
       "priority": "P3_unverified_corroborated"
@@ -22321,6 +23538,31 @@
       "priority": "P3_unverified_corroborated"
     },
     {
+      "citation": "Chacon v. Diaz, 2020 WL 7214292",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        18
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "UNVERIFIED",
+      "statusSource": "none",
+      "notes": "",
+      "sampleContext": "itutes an adverse action that 1s more than de minimis nor Is it sufficient to deter a prisoner of 'ordinary firmness' from further First Amendment activities.\" Chacon v. Diaz, 2020 WL 7214292, at *5 (C.D. Cal. Sept. 28, 2020) (quoting Dicey v. Hanks, 2015 WL 4879627, at *5 (E.D. ",
+      "locations": [
+        {
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 6,
+          "role": "court_order",
+          "matter": 18
+        }
+      ],
+      "priority": "P3_unverified_corroborated"
+    },
+    {
       "citation": "Cisneros v. U.D. Registry, Inc, 39 Cal.App. 4th 548",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -22419,6 +23661,31 @@
       "priority": "P3_unverified_corroborated"
     },
     {
+      "citation": "Cortez v. Klique Car Club, Inc, 2024 WL 988374",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        18
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "UNVERIFIED",
+      "statusSource": "none",
+      "notes": "",
+      "sampleContext": "ionally denied plaintiff the credits. Indeed, plaintiff alleges that defendant Barocio \"refused or failed to apply the PPC\" to plaintiff's record. * See, e.g., Cortez v. Klique Car Club, Inc., 2024 WL 988374, at *1 (C.D. Cal. Mar. 6, 2024). Galbraith was abrogated on other ground",
+      "locations": [
+        {
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 7,
+          "role": "court_order",
+          "matter": 18
+        }
+      ],
+      "priority": "P3_unverified_corroborated"
+    },
+    {
       "citation": "Cortez v. Purolator Air Filtration Prod. Co, 23 Cal. 4th 163 (2000)",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -22439,6 +23706,31 @@
           "page": 11,
           "role": "court_order",
           "matter": 29
+        }
+      ],
+      "priority": "P3_unverified_corroborated"
+    },
+    {
+      "citation": "Daniels v. Aguillera, 2018 WL 558658",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        18
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "UNVERIFIED",
+      "statusSource": "none",
+      "notes": "",
+      "sampleContext": "s, the denial of plaintiff's grievances cannot constitute a due process violation. See, e.g., Bradway v. Rao, 2020 WL 8919180, at *1 (E.D. Cal. July 15, 2020); Daniels v. Aguillera, 2018 WL 558658, at *1 (E.D. Cal. Jan. 24, 2018), report and recommendation adopted, 2018 WL 176331",
+      "locations": [
+        {
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 8,
+          "role": "court_order",
+          "matter": 18
         }
       ],
       "priority": "P3_unverified_corroborated"
@@ -22566,6 +23858,31 @@
           "page": 3,
           "role": "other",
           "matter": 5
+        }
+      ],
+      "priority": "P3_unverified_corroborated"
+    },
+    {
+      "citation": "Dicey v. Hanks, 2015 WL 4879627",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        18
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "UNVERIFIED",
+      "statusSource": "none",
+      "notes": "",
+      "sampleContext": "to deter a prisoner of 'ordinary firmness' from further First Amendment activities.\" Chacon v. Diaz, 2020 WL 7214292, at *5 (C.D. Cal. Sept. 28, 2020) (quoting Dicey v. Hanks, 2015 WL 4879627, at *5 (E.D. Cal. Aug. 14, 2015) (collecting cases and denying leave to amend because \"d",
+      "locations": [
+        {
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 6,
+          "role": "court_order",
+          "matter": 18
         }
       ],
       "priority": "P3_unverified_corroborated"
@@ -22818,6 +24135,31 @@
           "page": 8,
           "role": "opposing_filing",
           "matter": 5
+        }
+      ],
+      "priority": "P3_unverified_corroborated"
+    },
+    {
+      "citation": "Evans v. Skolnik, 637 F. App'x 285",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        18
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "UNVERIFIED",
+      "statusSource": "none",
+      "notes": "",
+      "sampleContext": "850, 860 (9th Cir. 2003); Mann v. Adams, $55 F.2d 639, 640 (9th Cir. 1988). A prison official's denial of a grievance does not itself violate the constitution. Evans v. Skolnik 637 F. App'x 285, 288 (9th Cir. 2015). Thus, the denial of plaintiff's grievances cannot constitute a d",
+      "locations": [
+        {
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 8,
+          "role": "court_order",
+          "matter": 18
         }
       ],
       "priority": "P3_unverified_corroborated"
@@ -23144,31 +24486,6 @@
       "priority": "P3_unverified_corroborated"
     },
     {
-      "citation": "Hansen v. Black, 885 F. 2d 642",
-      "kind": "authority",
-      "occurrenceCount": 1,
-      "matters": [
-        3
-      ],
-      "roles": [
-        "court_order"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "vement in the constitutional deprivation, or (2) a sufficient causal connection between the supervisor\u2019s wrongful conduct and the constitutional violation.\u201d Hansen v. Black, 885 F.2d 642, 646 (9th Cir. 1989). Plaintiff does not sufficiently allege a connection between Noguchi and",
-      "locations": [
-        {
-          "document": "/documents/opinions/Newanforbi v Derrick - USDC EDCal - MTD Order Jul 24 2026.pdf",
-          "page": 8,
-          "role": "court_order",
-          "matter": 3
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
       "citation": "Harris v. Cnty. of Orange, 682 F. 3d 1126",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -23339,6 +24656,31 @@
           "page": 1,
           "role": "court_order",
           "matter": 29
+        }
+      ],
+      "priority": "P3_unverified_corroborated"
+    },
+    {
+      "citation": "Higa v. Kobayashi, 2020 WL 2027290",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        18
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "UNVERIFIED",
+      "statusSource": "none",
+      "notes": "",
+      "sampleContext": "Cortez v. Klique Car Club, Inc., 2024 WL 988374, at *1 (C.D. Cal. Mar. 6, 2024). Galbraith was abrogated on other grounds by Twombly, 550 U.S. 544. See, e.g., Higa v. Kobayashi, 2020 WL 2027290, at *4 n.4 (D. Hawan Apr. 27, 2020).",
+      "locations": [
+        {
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 7,
+          "role": "court_order",
+          "matter": 18
         }
       ],
       "priority": "P3_unverified_corroborated"
@@ -23524,31 +24866,6 @@
       "priority": "P3_unverified_corroborated"
     },
     {
-      "citation": "Ivey v. Bd. of Regents, 673 F. 2d 266",
-      "kind": "authority",
-      "occurrenceCount": 1,
-      "matters": [
-        3
-      ],
-      "roles": [
-        "court_order"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 5 supply essential elements of the claim that were not initially pled.\u201d Ivey v. Bd. of Regents, 673 F.2d 266, 268 (9th Cir. 1982). Discussion The court discusses the following issues: (1) the claims against Palacios; (2) the F",
-      "locations": [
-        {
-          "document": "/documents/opinions/Newanforbi v Derrick - USDC EDCal - MTD Order Jul 24 2026.pdf",
-          "page": 5,
-          "role": "court_order",
-          "matter": 3
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
       "citation": "Jackson v. Metropolitan Edison Co, 419 U.S. 345 (1974)",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -23595,29 +24912,6 @@
           "page": 7,
           "role": "opposing_filing",
           "matter": 1
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
-      "citation": "Johnson v. Duffy, 588 F. 2d 740",
-      "kind": "authority",
-      "occurrenceCount": 1,
-      "matters": [],
-      "roles": [
-        "court_order"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "ausal connection between the defendant's wrongful conduct and the alleged constitutional deprivation. See Hansen v. Black, 885 F.2d 642, 645 (9th Cir. 1989); Johnson v. Duffy, 588 F.2d 740, 743-44 (9th Cir. 1978). As to any remaining non-Monell claims against Defendant CHP, a \u00a7 1",
-      "locations": [
-        {
-          "document": "/documents/opinions/Newanforbi v California CHP - USDC EDCal - FR Recommending Dismissal Apr 20 2026.pdf",
-          "page": 5,
-          "role": "court_order",
-          "matter": null
         }
       ],
       "priority": "P3_unverified_corroborated"
@@ -24224,6 +25518,31 @@
           "page": 6,
           "role": "other",
           "matter": 3
+        }
+      ],
+      "priority": "P3_unverified_corroborated"
+    },
+    {
+      "citation": "Mann v. Adams, 55 F. 2d 639",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        18
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "UNVERIFIED",
+      "statusSource": "none",
+      "notes": "",
+      "sampleContext": ", 221 (2005). However, there is no stand-alone due process claim for the prison grievance process itself. Ramirez v. Galaza, 334 F.3d 850, 860 (9th Cir. 2003); Mann v. Adams, $55 F.2d 639, 640 (9th Cir. 1988). A prison official's denial of a grievance does not itself violate the ",
+      "locations": [
+        {
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 8,
+          "role": "court_order",
+          "matter": 18
         }
       ],
       "priority": "P3_unverified_corroborated"
@@ -25543,29 +26862,6 @@
       "priority": "P3_unverified_corroborated"
     },
     {
-      "citation": "See Hansen v. Black, 885 F. 2d 642",
-      "kind": "authority",
-      "occurrenceCount": 1,
-      "matters": [],
-      "roles": [
-        "court_order"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "onal involvement in the constitutional deprivation or a causal connection between the defendant's wrongful conduct and the alleged constitutional deprivation. See Hansen v. Black, 885 F.2d 642, 645 (9th Cir. 1989); Johnson v. Duffy, 588 F.2d 740, 743-44 (9th Cir. 1978). As to any",
-      "locations": [
-        {
-          "document": "/documents/opinions/Newanforbi v California CHP - USDC EDCal - FR Recommending Dismissal Apr 20 2026.pdf",
-          "page": 5,
-          "role": "court_order",
-          "matter": null
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
       "citation": "See McKenna v. WhisperText, 2015 WL 5264750",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -26621,31 +27917,6 @@
       "priority": "P3_unverified_corroborated"
     },
     {
-      "citation": "White v. Ultramar, Inc, 21 Cal. 4th 563 (1999)",
-      "kind": "authority",
-      "occurrenceCount": 1,
-      "matters": [
-        5
-      ],
-      "roles": [
-        "opposing_filing"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "he clinic's clinical and administrative operations, including the CTM and progress-report process at issue. That is sufficient to plead managing-agent status. (White v. Ultramar, Inc. (1999) 21 Cal.4th 563, 576\u2013577.) And HOPE's continuation of the blanket retention policy after t",
-      "locations": [
-        {
-          "document": "/documents/matter-05/Opposition to Demurrer Pal.pdf",
-          "page": 17,
-          "role": "opposing_filing",
-          "matter": 5
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
       "citation": "Wilder v. Virginia Hosp. Ass'n, 496 U.S. 498 (1990)",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -26815,6 +28086,31 @@
           "page": 6,
           "role": "other",
           "matter": 3
+        }
+      ],
+      "priority": "P3_unverified_corroborated"
+    },
+    {
+      "citation": "Wright v. Shannon, 2010 WL 445203",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        18
+      ],
+      "roles": [
+        "court_order"
+      ],
+      "plaintiffOnly": false,
+      "status": "UNVERIFIED",
+      "statusSource": "none",
+      "notes": "",
+      "sampleContext": "ht to any particular grievance process, it is impossible for due process to have been violated by ignoring or failing to properly process prison grievances.\"); Wright v. Shannon, 2010 WL 445203, at *5 (E.D. Cal. 2010). Therefore, plaintiff cannot state a cognizable civil rights c",
+      "locations": [
+        {
+          "document": "/documents/opinions/Newanforbi v Barocio - USDC EDCal - Screening Order Dismissed WLA May 18 2026.pdf",
+          "page": 8,
+          "role": "court_order",
+          "matter": 18
         }
       ],
       "priority": "P3_unverified_corroborated"
