@@ -83,6 +83,13 @@ export function PortfolioHeader({
               </div>
               <img className="firm-logo legacy-kco-logo" src={withBase(darkMode ? "/branding/kco-dark.webp" : "/branding/kco-light.webp")} alt="Kabat Chapman & Ozmer LLP" width={230} height={73} decoding="async" />
             </a>
+            <a href="https://www.azimovlawfirm.com/" target="_blank" rel="noopener noreferrer" title="Visit Azimov Law Firm (azimovlawfirm.com) ↗" className="firm-link">
+              <div className="legacy-counsel-names">
+                <div>Gulomjon Azimov</div>
+                <div className="firm-external-hint">Visit site ↗</div>
+              </div>
+              <img className="firm-logo legacy-azimov-logo" src={withBase(darkMode ? "/branding/azimov-dark.webp" : "/branding/azimov-light.webp")} alt="Azimov Law Firm" width={128} height={128} decoding="async" />
+            </a>
             <a href="https://www.sims-law.net/" target="_blank" rel="noopener noreferrer" title="Visit Sims, Lawrence & Broghammer (sims-law.net) ↗" className="firm-link">
               <div className="legacy-counsel-names">
                 <div>Bryan Malone</div>
