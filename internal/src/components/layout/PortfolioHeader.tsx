@@ -4,8 +4,6 @@ import { GOLD } from "../../constants";
 import { NAV_ITEMS } from "../../routes";
 import { prefetchRoute, prefetchSearch } from "../../routePrefetch";
 import { withBase } from "../../utils/paths";
-import { CoverageTower } from "../CoverageTower";
-import { headline_coverage } from "../../data/coverage";
 
 export function PortfolioHeader({
   darkMode,
@@ -76,9 +74,15 @@ export function PortfolioHeader({
             </div>
           </div>
 
-          {headline_coverage && <CoverageTower record={headline_coverage} variant="header" />}
-
           <div className="legacy-opposing-counsel">
+            <a href="https://www.kcozlaw.com/" target="_blank" rel="noopener noreferrer" title="Visit Kabat Chapman & Ozmer LLP (kcozlaw.com) ↗" className="firm-link">
+              <div className="legacy-counsel-names">
+                <div>Chadwick L. Williams</div>
+                <div>Nathan D. Chapman</div>
+                <div className="firm-external-hint">Visit site ↗</div>
+              </div>
+              <img className="firm-logo legacy-kco-logo" src={withBase(darkMode ? "/branding/kco-dark.webp" : "/branding/kco-light.webp")} alt="Kabat Chapman & Ozmer LLP" width={230} height={73} decoding="async" />
+            </a>
             <a href="https://www.sims-law.net/" target="_blank" rel="noopener noreferrer" title="Visit Sims, Lawrence & Broghammer (sims-law.net) ↗" className="firm-link">
               <div className="legacy-counsel-names">
                 <div>Bryan Malone</div>

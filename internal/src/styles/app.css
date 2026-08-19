@@ -208,6 +208,7 @@ a { color: inherit; }
    ink, per feedback that exact parity read as too small) rather than to the
    asset's full aspect ratio. */
 .firm-logo { flex-shrink: 0; display: block; object-fit: contain; object-position: right center; }
+.legacy-kco-logo { width: 115px; height: 37px; }
 .legacy-slb-logo { width: 118px; height: 62px; }
 .legacy-garcia-logo { width: 115px; height: 39px; }
 .legacy-dag-logo { width: 64px; height: 64px; object-fit: cover; border-radius: 50%; object-position: center; }
@@ -834,6 +835,7 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
     align-items: center;
     width: auto;
   }
+  .legacy-kco-logo { width: 83px; height: 27px; }
   .legacy-slb-logo { width: 84px; height: 44px; }
   /* Same box-narrower-than-asset-ratio letterbox as the desktop rule, scaled
      down by the same ~0.71 factor SLB's own box shrinks by at this breakpoint. */
@@ -895,6 +897,7 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
   .legacy-versus { font-size: clamp(4rem, 24vw, 5.5rem); transform: translate(-18px, 2px); }
   .legacy-header-inner { gap: 6px 8px; }
   .legacy-opposing-counsel { gap: 6px; }
+  .legacy-kco-logo { width: 67px; height: 22px; }
   .legacy-slb-logo { width: 68px; height: 36px; }
   .legacy-garcia-logo { width: 67px; height: 23px; }
   .legacy-dag-logo { width: 36px; height: 36px; }
