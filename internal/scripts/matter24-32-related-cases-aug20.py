@@ -79,7 +79,8 @@ def _party_block(d: PleadingPaper, name: str, title: str = "Plaintiff, In Pro Pe
     d.write_attorney_block([
         (name, True),
         title,
-        "1455 Cat Tail Drive, Stockton, CA 95204",
+        "1455 Cat Tail Drive",
+        "Stockton, CA 95204",
         "Telephone: (209) 801-4442",
         "E-mail: bnn.cdl@gmail.com",
     ])

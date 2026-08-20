@@ -43,7 +43,7 @@ FOOTER = (
 
 
 def _sign(d: PleadingPaper, extra_lines: list[str] | None = None) -> None:
-    d.ensure_space(8 if extra_lines else 6)
+    d.ensure_space(6 + (len(extra_lines) if extra_lines else 0))
     d.write_line(f"Dated: {EXEC_DATE}")
     d.write_line("Respectfully submitted,", italic=True)
     d.blank_line()
@@ -78,7 +78,8 @@ def build() -> Path:
     d.write_attorney_block([
         ("BRENDAN NGEHSI NEWANFORBI", True),
         "Plaintiff, In Pro Per",
-        "1455 Cat Tail Drive, Stockton, CA 95204",
+        "1455 Cat Tail Drive",
+        "Stockton, CA 95204",
         "Tel: (209) 801-4442  E-mail: bnn.cdl@gmail.com",
     ])
 
@@ -172,7 +173,8 @@ def build() -> Path:
     _sign(
         d,
         extra_lines=[
-            "1455 Cat Tail Drive, Stockton, CA 95204",
+            "1455 Cat Tail Drive",
+            "Stockton, CA 95204",
             "(209) 801-4442  bnn.cdl@gmail.com",
         ],
     )
