@@ -1,5 +1,43 @@
 [
   {
+    "date": "Aug. 20, 2026",
+    "event": "FILING 1 DRAFTED AND SIGNED — Administrative Motion to Consider Whether Cases Should Be Related (Civil L.R. 3-12 and 7-11), Declaration ISO, and [Proposed] Order — Newanforbi v. Serrato (4:26-cv-05953-ASK). Asks Mag. Krishnan to relate Nforbi v. Meza-Gonzalez, No. 3:26-cv-08271-PHK, and reassign it here. Declaration records Serrato USMS personal service Aug. 5, 2026 (Doc. 15) and Meza-Gonzalez/Melano personal service Aug. 14, 2026; no defendant has appeared in either action, so no L.R. 7-12 stipulation is available. Not yet e-filed.",
+    "matters": [
+      24,
+      32
+    ],
+    "type": "filing",
+    "source": "/documents/matter-24/Administrative Motion to Consider Whether Cases Should Be Related (Aug 20 2026).pdf",
+    "filed": false,
+    "upcoming": false,
+    "actor": "you"
+  },
+  {
+    "date": "Aug. 20, 2026",
+    "event": "FILING 2 DRAFTED AND SIGNED — Notice of Filing of Administrative Motion to Consider Whether Cases Should Be Related (Civil L.R. 3-12(b)) in Nforbi v. Meza-Gonzalez, No. 3:26-cv-08271-PHK, with Exhibit A (copies of the Serrato motion, declaration, and proposed order). Caption uses the Ngwa Nforbi name form. File after Filing 1; not yet e-filed.",
+    "matters": [
+      32,
+      24
+    ],
+    "type": "filing",
+    "source": "/documents/matter-32/ndcal/Notice of Filing of Administrative Motion to Consider Whether Cases Should Be Related (Aug 20 2026).pdf",
+    "filed": false,
+    "upcoming": false,
+    "actor": "you"
+  },
+  {
+    "date": "Aug. 20, 2026",
+    "event": "FILING 3 DRAFTED AND SIGNED — Plaintiff's Notice of Voluntary Dismissal of Defendant Katie Palacios without prejudice (Fed. R. Civ. P. 41(a)(1)(A)(i)) in Newanforbi v. Derrick, No. 2:26-cv-00004-DJC-JDP. Follows the July 22 dismissal of Derrick and Noguchi; cites an August 13, 2026 Order to Show Cause (ECF No. 33). Confirm the OSC against the E.D. Cal. docket before e-filing. Not a Matter 5 paper.",
+    "matters": [
+      3
+    ],
+    "type": "filing",
+    "source": "/documents/matter-03/Notice of Voluntary Dismissal of Defendant Katie Palacios (Aug 20 2026).pdf",
+    "filed": false,
+    "upcoming": false,
+    "actor": "you"
+  },
+  {
     "date": "Aug. 18, 2026",
     "event": "Letter confirming the 15-day extension of Randstad's time to respond drafted and executed — addressed to Chadwick L. Williams (Kabat Chapman & Ozmer LLP) in reply to his 2:11 p.m. email. Confirms the extension through and including Sept. 15, 2026 and fixes its scope on the face of the document: Randstad US, LLC only; a single 15-day extension with no further extension implied; no waiver of any right, including entry of default after Sept. 15; RK Logistics unaffected and still due Aug. 31, 2026; and an offer to sign a stipulation and proposed order if Randstad prefers the extension on file. Also asks counsel to confirm authority to accept service and consent to electronic service under CCP §1010.6, and notes the accepted $500,000 CCP §425.115 notice as to Randstad. Not yet transmitted.",
     "matters": [
