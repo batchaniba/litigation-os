@@ -48,11 +48,13 @@ def build() -> Path:
             "(2:26-cv-00004-DJC-JDP)"
         ),
     )
-    d.write_line("BRENDAN NGEHSI NEWANFORBI", bold=True)
-    d.write_line("Plaintiff, Pro Se")
-    d.write_line("1455 Cat Tail Drive")
-    d.write_line("Stockton, CA 95204")
-    d.write_line("E-mail: bnn.cdl@gmail.com")
+    d.write_attorney_block([
+        ("BRENDAN NGEHSI NEWANFORBI", True),
+        "Plaintiff, Pro Se",
+        "1455 Cat Tail Drive",
+        "Stockton, CA 95204",
+        "E-mail: bnn.cdl@gmail.com",
+    ])
 
     d.write_line("UNITED STATES DISTRICT COURT", bold=True, center=True)
     d.write_line("FOR THE EASTERN DISTRICT OF CALIFORNIA", bold=True, center=True)

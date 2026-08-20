@@ -19,7 +19,8 @@
 #   )
 #
 #   d = PleadingPaper(out_path, doc_title_footer="MY DOCUMENT -- CASE NAME")
-#   ... build the document using d.write_line / d.write_wrapped / d.draw_caption_block ...
+#   ... build the document using d.write_line / d.write_attorney_block /
+#       d.write_wrapped / d.draw_caption_block ...
 #   d.save()
 # ==========================================================
 import os, sys, re
@@ -147,6 +148,30 @@ class PleadingPaper:
             c.setLineWidth(0.5)
             c.line(ux, y - 1.5, ux + tw, y - 1.5)
         self.current_line += 1
+
+    def write_attorney_block(self, lines, leading=15, size=12):
+        """Draw party-identification lines at condensed spacing (default
+        15 pt) instead of consuming one numbered pleading line per
+        address line. `lines` is a sequence of strings or (text, bold)
+        tuples. After drawing, current_line advances past the block so
+        the court caption can follow immediately."""
+        self._ensure_line()
+        start = self.current_line
+        y0 = self._line_y(start)
+        n = 0
+        for item in lines:
+            if isinstance(item, str):
+                text, bold = item, False
+            else:
+                text = item[0]
+                bold = bool(item[1]) if len(item) > 1 else False
+            fn = "Times-Bold" if bold else "Times-Roman"
+            self.c.setFont(fn, size)
+            self.c.drawString(CONTENT_LEFT, y0 - n * leading, text)
+            n += 1
+        block_height = n * leading if n else 0
+        consumed = (block_height + LINE_SPACING - 1) // LINE_SPACING if n else 0
+        self.current_line = start + consumed
 
     def blank_line(self):
         self._ensure_line()
