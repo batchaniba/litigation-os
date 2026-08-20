@@ -38,7 +38,7 @@
       27
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "you",
     "source": "/documents/matter-27/Letter Confirming 15-Day Extension of Randstad's Time to Respond (Aug 18 2026).pdf"
   },
@@ -1285,7 +1285,7 @@
       33
     ],
     "type": "filing",
-    "upcoming": true
+    "upcoming": false
   },
   {
     "date": "Jun. 7, 2026",
@@ -1909,18 +1909,19 @@
       25
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "opposing"
   },
   {
     "date": "Aug. 21, 2026",
-    "event": "Responsive pleading deadline (computed) — Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113); 30 days from the Jul. 22, 2026 service date (CCP §412.20(a)(3))",
+    "event": "SUPERSEDED BY REMOVAL — the Aug. 21, 2026 state responsive-pleading deadline in Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113) never ran. UPS removed the action to USDC E.D. Cal. on Aug. 20, 2026, one day early; on the filing of the §1446(d) notice with the San Joaquin clerk the Superior Court is divested. UPS's time to respond is now governed by Fed. R. Civ. P. 81(c)(2)(C) and runs to Aug. 27, 2026.",
     "matters": [
       26
     ],
     "type": "deadline",
-    "upcoming": true,
-    "actor": "opposing"
+    "upcoming": false,
+    "actor": "opposing",
+    "source": "/documents/matter-26/Notice of Removal to Federal Court - United Parcel Service Inc (E.D. Cal. 1-26-at-03195) (Aug 20 2026).pdf"
   },
   {
     "date": "Aug. 24, 2026",
@@ -1953,12 +1954,13 @@
   },
   {
     "date": "Dec. 14, 2026",
-    "event": "Meet-and-confer deadline — Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113); 30 calendar days before Jan. 13, 2027 CMC (CRC 3.724)",
+    "event": "VACATED BY REMOVAL (Aug. 20, 2026) — Meet-and-confer deadline — Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113); 30 calendar days before Jan. 13, 2027 CMC (CRC 3.724) This date fell off calendar when UPS removed the action to USDC E.D. Cal., No. 1:26-at-03195; federal scheduling will issue under Fed. R. Civ. P. 16 once a judge is assigned.",
     "matters": [
       26
     ],
     "type": "deadline",
-    "upcoming": true
+    "upcoming": false,
+    "source": "/documents/matter-26/Notice of Removal to Federal Court - United Parcel Service Inc (E.D. Cal. 1-26-at-03195) (Aug 20 2026).pdf"
   },
   {
     "date": "Dec. 15, 2026",
@@ -1971,12 +1973,13 @@
   },
   {
     "date": "Dec. 29, 2026",
-    "event": "Case Management Conference Statement due — Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113); JC Form CM-110, mandatory; 15 days before Jan. 13, 2027 CMC (CRC 3.725)",
+    "event": "VACATED BY REMOVAL (Aug. 20, 2026) — Case Management Conference Statement due — Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113); JC Form CM-110, mandatory; 15 days before Jan. 13, 2027 CMC (CRC 3.725) This date fell off calendar when UPS removed the action to USDC E.D. Cal., No. 1:26-at-03195; federal scheduling will issue under Fed. R. Civ. P. 16 once a judge is assigned.",
     "matters": [
       26
     ],
     "type": "deadline",
-    "upcoming": true
+    "upcoming": false,
+    "source": "/documents/matter-26/Notice of Removal to Federal Court - United Parcel Service Inc (E.D. Cal. 1-26-at-03195) (Aug 20 2026).pdf"
   },
   {
     "date": "Dec. 30, 2026",
@@ -1989,12 +1992,13 @@
   },
   {
     "date": "Jan. 13, 2027",
-    "event": "Case Management Conference — Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113), 8:30 AM, Dept. 11B, Hon. Robert T. Waters, San Joaquin Superior Court, 180 E Weber Ave, Stockton, CA 95202",
+    "event": "VACATED BY REMOVAL (Aug. 20, 2026) — Case Management Conference — Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113), 8:30 AM, Dept. 11B, Hon. Robert T. Waters, San Joaquin Superior Court, 180 E Weber Ave, Stockton, CA 95202 This date fell off calendar when UPS removed the action to USDC E.D. Cal., No. 1:26-at-03195; federal scheduling will issue under Fed. R. Civ. P. 16 once a judge is assigned.",
     "matters": [
       26
     ],
     "type": "hearing",
-    "upcoming": true
+    "upcoming": false,
+    "source": "/documents/matter-26/Notice of Removal to Federal Court - United Parcel Service Inc (E.D. Cal. 1-26-at-03195) (Aug 20 2026).pdf"
   },
   {
     "date": "Jan. 14, 2027",
@@ -3038,5 +3042,73 @@
     "type": "filing",
     "source": "/documents/matter-24/Notice of Errata re First Amended Complaint (Doc 12, Filed Jul 15 2026).pdf",
     "filed": true
+  },
+  {
+    "date": "Aug. 20, 2026",
+    "event": "REMOVED TO FEDERAL COURT — United Parcel Service, Inc. filed a Notice of Removal of Civil Action to Federal Court in USDC E.D. Cal., No. 1:26-at-03195, removing Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113) from San Joaquin Superior Court under 28 U.S.C. §§ 1332(a) and 1441(a)-(b). Filed on day 29 of the 30-day §1446(b)(1) window — timely. Defense counsel appeared: Vanessa W. Mott (SBN 184606) and Alyssa R. Daskas (SBN 359379), Martenson, Hasbrouck & Simon LLP, 600 Anton Boulevard, Suite 1250, Costa Mesa. Package: Doc. 1 (notice + Exh. 1 complaint, 27 pp.); Doc. 1-1 (JS 44 civil cover sheet); Doc. 1-2 (Decl. of Ashley Felsing, HRBP Director — UPS incorporated in Ohio, principal place of business Atlanta, Georgia); Doc. 1-3 (Rule 7.1 Notice of Interested Parties). UPS demands a jury (Fed. R. Civ. P. 38(b)). Amount in controversy pleaded at $60,144-$88,032 in lost wages ($21/hr x 16 hrs/wk), plus emotional distress, punitive damages, and future attorney's fees.",
+    "matters": [
+      26
+    ],
+    "type": "filing",
+    "source": "/documents/matter-26/Notice of Removal to Federal Court - United Parcel Service Inc (E.D. Cal. 1-26-at-03195) (Aug 20 2026).pdf"
+  },
+  {
+    "date": "Aug. 20, 2026",
+    "event": "DEFECTS NOTED IN UPS's REMOVAL PAPERS — (1) the action was filed under a '1:' case number, i.e. the Fresno Division, but San Joaquin County is a Sacramento Division county under E.D. Cal. L.R. 120(d); (2) Plaintiff's name is misspelled 'BRENDAN NGWANFORBI' on the notice caption and at ¶4, and the Rule 7.1 statement recites that misspelling as an a.k.a.; (3) the notice's caption page gives the state case number as STK-CV-UWT-2026-9113 rather than -0009113; (4) ¶20 refers to 'DOES 1-50' where the complaint names DOES 1 through 10; (5) ¶29 cites 'Exh. 1, pg. .' with the page left blank; (6) Exhibit 1 runs exactly 18 pages — the complaint alone — so the Summons, Civil Case Cover Sheet, Notice of CMC, Notice of Case Assignment and FW-003 order that ¶5 recites as served appear absent from the 28 U.S.C. §1446(a) attachments; (7) Rule 7.1 ¶2 states no publicly traded entity holds ten percent or more of United Parcel Service, Inc.; (8) ¶6 mischaracterizes the action as arising from Plaintiff's 'employment with UPS' — this is a failure-to-hire case and Plaintiff was never employed.",
+    "matters": [
+      26
+    ],
+    "type": "event",
+    "source": "/documents/matter-26/Notice of Removal to Federal Court - United Parcel Service Inc (E.D. Cal. 1-26-at-03195) (Aug 20 2026).pdf"
+  },
+  {
+    "date": "Aug. 24, 2026",
+    "event": "Target to file Plaintiff's Notice of Errata Correcting Misnomer and Request for Intradistrict Reassignment to the Sacramento Division (E.D. Cal. L.R. 120(d), (f)) — Newanforbi v. United Parcel Service, Inc., No. 1:26-at-03195. Self-imposed, not a court deadline; filing before UPS's Aug. 27 Rule 81(c)(2) response puts the correct name and the correct division on the docket before the case is assigned to a judge.",
+    "matters": [
+      26
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you"
+  },
+  {
+    "date": "Aug. 27, 2026",
+    "event": "UPS responsive pleading deadline (computed) — Newanforbi v. United Parcel Service, Inc., USDC E.D. Cal. No. 1:26-at-03195. Fed. R. Civ. P. 81(c)(2) fixes the longest of 21 days after receipt of the initial pleading, 21 days after service of the summons, or 7 days after the notice of removal is filed. Service was July 22, 2026, so the first two branches expired Aug. 12; the operative date is 7 days after the Aug. 20, 2026 removal. Expect a Fed. R. Civ. P. 12(b)(6) motion; the likely headline is that Tameny reaches wrongful discharge and does not extend to a refusal to hire.",
+    "matters": [
+      26
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "opposing"
+  },
+  {
+    "date": "Sep. 21, 2026",
+    "event": "28 U.S.C. §1447(c) remand window closes (computed) — Newanforbi v. United Parcel Service, Inc., USDC E.D. Cal. No. 1:26-at-03195. Thirty days from the Aug. 20, 2026 notice of removal lands on Saturday, Sep. 19, so the deadline rolls to Monday under Fed. R. Civ. P. 6(a)(1)(C). NO REMAND MOTION IS PLANNED: although UPS's own figures concede a conservative wage estimate of $60,144 — below $75,000 — Plaintiff's July 12, 2026 pre-filing demand of $85,000 is evidence of the amount in controversy under Cohn v. PetSmart, Inc., 281 F.3d 837, 840 (9th Cir. 2002), and the Penal Code §290.46(j)(4)(A) statutory floor stacks on top of it. Subject-matter objections survive this date in any event under §1447(c).",
+    "matters": [
+      26
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you"
+  },
+  {
+    "date": "Aug. 20, 2026",
+    "event": "CCP §425.115 PROGRAM MOOT AS TO UPS — the Aug. 17, 2026 amended Notice of Amount of Punitive Damages Sought ($250,000.00) against United Parcel Service, Inc. and the Sacramento County Sheriff e-filing order O26005511 covering it are dead letters on removal. Section 425.115 is a state pleading device with no federal analogue; in USDC E.D. Cal. the ceiling on relief is governed by Fed. R. Civ. P. 54(c). Do not spend the Sheriff service fee on the UPS notice. The parallel notices as to Matter 25 (Federal Express Corporation) and Matter 27 (Randstad US, LLC; The RK Logistics Group, Inc.) are unaffected while those actions remain in state court.",
+    "matters": [
+      26
+    ],
+    "type": "event",
+    "source": "/documents/matter-26/Notice of Removal to Federal Court - United Parcel Service Inc (E.D. Cal. 1-26-at-03195) (Aug 20 2026).pdf"
+  },
+  {
+    "date": "Aug. 24, 2026",
+    "event": "REMOVAL WATCH — Newanforbi v. Federal Express Corporation (Matter 25, STK-CV-UWT-2026-0009118) is the same claim set in the same court, served July 24, 2026, with a state responsive-pleading deadline of Aug. 24, 2026. Federal Express Corporation is a Delaware corporation with its principal place of business in Memphis, Tennessee, so the action is removable on the same diversity theory UPS used in Matter 26. Treat a mirror removal on or before Aug. 24, 2026 as the expected outcome and plan Matter 25 as a federal case.",
+    "matters": [
+      25,
+      26
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "opposing"
   }
 ]

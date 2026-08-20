@@ -1,16 +1,5 @@
 [
   {
-    "date": "Aug. 19, 2026",
-    "event": "Transmit the executed confirmation of the 15-day extension to Randstad's counsel (cwilliams@kcozlaw.com), as his Aug. 18, 2026 email requests — self-imposed next-day target, not a court deadline. The letter is drafted and executed; only transmission remains. It carries its scope on its face: Randstad US, LLC alone; time to plead runs through and including Sept. 15, 2026; nothing further implied; no waiver of Plaintiff's right to seek entry of default after that date; and no extension as to The RK Logistics Group, Inc., whose Aug. 31, 2026 date is unchanged.",
-    "matters": [
-      27
-    ],
-    "type": "deadline",
-    "upcoming": true,
-    "actor": "you",
-    "source": "/documents/matter-27/Letter Confirming 15-Day Extension of Randstad's Time to Respond (Aug 18 2026).pdf"
-  },
-  {
     "date": "Aug. 25, 2026",
     "event": "Outer target to transmit the opening settlement demand to Randstad's counsel — drafted and executed Aug. 18, 2026 at $250,000.00 as to Randstad alone, with a Sept. 8, 2026 response deadline built into the letter. Self-imposed, not a court deadline; the letter is ready to send with the extension confirmation and gains nothing from waiting. Sending it leaves Randstad three weeks to evaluate ahead of its extended Sept. 15 date, while RK Logistics — which has no extension — runs out its own Aug. 31 clock. A global number covering both defendants is offered separately on request rather than by dividing the Randstad demand.",
     "matters": [
@@ -137,17 +126,6 @@
     "upcoming": true
   },
   {
-    "date": "Aug. 19, 2026",
-    "event": "Gov. claim deadline — Candelaria state tort Bane Act damages (6 months from Feb. 19, 2026 accrual; claim must be filed with DGS). Independent of Matter 7's federal case status (dismissed Aug. 15, 2026) — this presentment deadline preserves the option of a separate state Bane Act suit; Matter 33 is the live docket now carrying the Candelaria/DMV APS claims forward.",
-    "matters": [
-      7,
-      8,
-      33
-    ],
-    "type": "filing",
-    "upcoming": true
-  },
-  {
     "date": "Aug. 25, 2026",
     "event": "Deadline — ADR Certification (ADR L.R. 3) and Rule 26(f) meet-and-confer (initial disclosures, early settlement, ADR process selection, discovery plan) — Newanforbi v. Serrato (4:26-cv-05953-ASK)",
     "matters": [
@@ -203,26 +181,6 @@
     "upcoming": true
   },
   {
-    "date": "Aug. 19, 2026",
-    "event": "Meet-and-confer deadline (computed) — Newanforbi v. Federal Express Corporation (STK-CV-UWT-2026-0009118); CCP §430.41(a)(2) requires meet-and-confer at least 5 calendar days before the Aug. 24, 2026 responsive-pleading deadline, if FedEx intends to demur; otherwise FedEx must file a declaration for the automatic 30-day extension",
-    "matters": [
-      25
-    ],
-    "type": "deadline",
-    "upcoming": true,
-    "actor": "opposing"
-  },
-  {
-    "date": "Aug. 21, 2026",
-    "event": "Responsive pleading deadline (computed) — Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113); 30 days from the Jul. 22, 2026 service date (CCP §412.20(a)(3))",
-    "matters": [
-      26
-    ],
-    "type": "deadline",
-    "upcoming": true,
-    "actor": "opposing"
-  },
-  {
     "date": "Aug. 24, 2026",
     "event": "Responsive pleading deadline (computed) — Newanforbi v. Federal Express Corporation (STK-CV-UWT-2026-0009118); 30 days from the Jul. 24, 2026 service date (CCP §412.20(a)(3)); the raw 30-day count lands on Sunday, Aug. 23, extended to Monday per CCP §12a",
     "matters": [
@@ -243,28 +201,10 @@
     "upcoming": true
   },
   {
-    "date": "Dec. 14, 2026",
-    "event": "Meet-and-confer deadline — Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113); 30 calendar days before Jan. 13, 2027 CMC (CRC 3.724)",
-    "matters": [
-      26
-    ],
-    "type": "deadline",
-    "upcoming": true
-  },
-  {
     "date": "Dec. 15, 2026",
     "event": "Meet-and-confer deadline — Newanforbi v. Federal Express Corporation (STK-CV-UWT-2026-0009118); 30 calendar days before Jan. 14, 2027 CMC (CRC 3.724)",
     "matters": [
       25
-    ],
-    "type": "deadline",
-    "upcoming": true
-  },
-  {
-    "date": "Dec. 29, 2026",
-    "event": "Case Management Conference Statement due — Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113); JC Form CM-110, mandatory; 15 days before Jan. 13, 2027 CMC (CRC 3.725)",
-    "matters": [
-      26
     ],
     "type": "deadline",
     "upcoming": true
@@ -276,15 +216,6 @@
       25
     ],
     "type": "deadline",
-    "upcoming": true
-  },
-  {
-    "date": "Jan. 13, 2027",
-    "event": "Case Management Conference — Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113), 8:30 AM, Dept. 11B, Hon. Robert T. Waters, San Joaquin Superior Court, 180 E Weber Ave, Stockton, CA 95202",
-    "matters": [
-      26
-    ],
-    "type": "hearing",
     "upcoming": true
   },
   {
@@ -445,6 +376,47 @@
     "event": "Responsive pleading deadline (computed) — Newanforbi v. Serrato (4:26-cv-05953-ASK); 21 days from the Aug. 5, 2026 USMS personal service date (FRCP 12(a)(1)(A))",
     "matters": [
       24
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "opposing"
+  },
+  {
+    "date": "Aug. 24, 2026",
+    "event": "Target to file Plaintiff's Notice of Errata Correcting Misnomer and Request for Intradistrict Reassignment to the Sacramento Division (E.D. Cal. L.R. 120(d), (f)) — Newanforbi v. United Parcel Service, Inc., No. 1:26-at-03195. Self-imposed, not a court deadline; filing before UPS's Aug. 27 Rule 81(c)(2) response puts the correct name and the correct division on the docket before the case is assigned to a judge.",
+    "matters": [
+      26
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you"
+  },
+  {
+    "date": "Aug. 27, 2026",
+    "event": "UPS responsive pleading deadline (computed) — Newanforbi v. United Parcel Service, Inc., USDC E.D. Cal. No. 1:26-at-03195. Fed. R. Civ. P. 81(c)(2) fixes the longest of 21 days after receipt of the initial pleading, 21 days after service of the summons, or 7 days after the notice of removal is filed. Service was July 22, 2026, so the first two branches expired Aug. 12; the operative date is 7 days after the Aug. 20, 2026 removal. Expect a Fed. R. Civ. P. 12(b)(6) motion; the likely headline is that Tameny reaches wrongful discharge and does not extend to a refusal to hire.",
+    "matters": [
+      26
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "opposing"
+  },
+  {
+    "date": "Sep. 21, 2026",
+    "event": "28 U.S.C. §1447(c) remand window closes (computed) — Newanforbi v. United Parcel Service, Inc., USDC E.D. Cal. No. 1:26-at-03195. Thirty days from the Aug. 20, 2026 notice of removal lands on Saturday, Sep. 19, so the deadline rolls to Monday under Fed. R. Civ. P. 6(a)(1)(C). NO REMAND MOTION IS PLANNED: although UPS's own figures concede a conservative wage estimate of $60,144 — below $75,000 — Plaintiff's July 12, 2026 pre-filing demand of $85,000 is evidence of the amount in controversy under Cohn v. PetSmart, Inc., 281 F.3d 837, 840 (9th Cir. 2002), and the Penal Code §290.46(j)(4)(A) statutory floor stacks on top of it. Subject-matter objections survive this date in any event under §1447(c).",
+    "matters": [
+      26
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you"
+  },
+  {
+    "date": "Aug. 24, 2026",
+    "event": "REMOVAL WATCH — Newanforbi v. Federal Express Corporation (Matter 25, STK-CV-UWT-2026-0009118) is the same claim set in the same court, served July 24, 2026, with a state responsive-pleading deadline of Aug. 24, 2026. Federal Express Corporation is a Delaware corporation with its principal place of business in Memphis, Tennessee, so the action is removable on the same diversity theory UPS used in Matter 26. Treat a mirror removal on or before Aug. 24, 2026 as the expected outcome and plan Matter 25 as a federal case.",
+    "matters": [
+      25,
+      26
     ],
     "type": "deadline",
     "upcoming": true,
