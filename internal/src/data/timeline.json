@@ -3175,5 +3175,14 @@
     "type": "deadline",
     "upcoming": true,
     "actor": "you"
+  },
+  {
+    "date": "Aug. 20, 2026",
+    "event": "USPS PACKAGE INTERCEPT REQUESTED — filed 9:35 PM re Newanforbi v. United Parcel Service, Inc. Order #o2568695706, tracking 4209 3721 1322 9505 5126 3057 6232 346293, request type Hold For Pickup, mail class Priority Mail, estimated total $32.24, status In Progress. Aim is to recall the Aug. 20, 2026 Notice of Errata mailed to the Fresno clerk before it can be processed under the dead 1:26-at-03195 number — that notice, and the Aug. 21 Amended Notice that would have superseded it, were both mooted the same day when the clerk assigned the removal to the Sacramento Division as 2:26-cv-02847-DAD-CKD with the correct docket caption; neither was ever filed. UNVERIFIED: the confirmation's Original Destination field reads 1455 Cat Tail Drive, Stockton (Plaintiff's own address) and Requested Destination reads 2500 Tulare St Ste 1501, Fresno — the reverse of what would be expected if this is the Fresno-bound envelope being recalled. Also unconfirmed against the certificate of service, which declared ordinary first-class mail (no tracking), against a mail class here of Priority. Confirm directly against usps.com/tracking that this order corresponds to the Fresno envelope before treating the notice as recalled. Per USPS, the request cannot be edited or canceled; the card is charged only if actual postage is at or under the $32.24 estimate, otherwise the difference is due in cash, check, or money order on delivery/pickup.",
+    "matters": [
+      26
+    ],
+    "type": "event",
+    "source": "/documents/matter-26/USPS Package Intercept Confirmation Email - Order o2568695706 (Aug 20 2026).pdf"
   }
 ]
