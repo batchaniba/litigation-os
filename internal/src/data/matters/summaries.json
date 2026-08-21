@@ -701,14 +701,14 @@
   {
     "number": 26,
     "caption": "Newanforbi v. United Parcel Service, Inc.",
-    "case_no": "1:26-at-03195",
-    "court": "USDC E.D. Cal. (filed in Fresno Div.)",
+    "case_no": "2:26-cv-02847-DAD-CKD",
+    "court": "USDC E.D. Cal. (Sacramento Div.)",
     "claims": "PC §290.46(j)(2)(E) Violation, Failure to Hire (Tameny), ICRAA, Invasion of Privacy, Negligence Per Se, UCL §17200",
     "lifecycle": "active",
     "proceeding": "federal_civil",
     "phase": "responsive_deadline",
     "filed": "July 15, 2026",
-    "judge": "Unassigned — pre-assignment removal docket",
+    "judge": "Hon. Dale A. Drozd, D.J.; Hon. Carolyn K. Delaney, M.J.",
     "cluster": 3,
     "type": "Federal",
     "badge": "REMOVED",
@@ -722,9 +722,9 @@
       "Unlawful Business Practices (Bus. & Prof. Code § 17200 et seq.)"
     ],
     "archived": false,
-    "status_label": "Removed to E.D. Cal. Aug. 20 — UPS response due Aug. 27",
+    "status_label": "E.D. Cal. Sacramento 2:26-cv-02847 — UPS due Aug. 27",
     "evidenceCount": 7,
-    "documentCount": 24
+    "documentCount": 29
   },
   {
     "number": 27,

@@ -411,5 +411,25 @@
     "type": "deadline",
     "upcoming": true,
     "actor": "opposing"
+  },
+  {
+    "date": "Sep. 21, 2026",
+    "event": "Consent to / Decline of Magistrate Judge jurisdiction — outer target, Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). The Initial Scheduling Order directs the parties to elect 'as soon as practicable' and to file within 30 days of service of process; in a removed action that trigger is ambiguous, so treat 30 days from the Aug. 20, 2026 order as the outer bound and file earlier. Worth real thought rather than a reflex decline: the order's own attachments describe E.D. Cal. congestion as 'crisis level,' with six district judgeships for forty years and weighted caseloads near twice the national average. Consent to M.J. Delaney likely buys a materially earlier and firmer trial date, with appeal still direct to the Ninth Circuit. Both sides must consent for it to take effect, and neither side is told of the other's election unless all consent.",
+    "matters": [
+      26
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you"
+  },
+  {
+    "date": "Aug. 27, 2026",
+    "event": "WATCH — if UPS responds by a Fed. R. Civ. P. 12 motion on its Rule 81(c)(2)(C) date, two clocks start immediately in Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD): opposition due 14 days after the motion is FILED under L.R. 230(c) (roughly Sep. 10, 2026), and one amendment as of right available within 21 days of SERVICE of the motion under Fed. R. Civ. P. 15(a)(1)(B) (roughly Sep. 17, 2026). The two run from different events and the opposition clock is the shorter. Under L.R. 230(c) a failure to oppose may be taken as consent to granting the motion. Amending as of right can moot a Rule 12(b)(6) motion outright — decide between opposing and amending in the first days, not the last.",
+    "matters": [
+      26
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you"
   }
 ]
