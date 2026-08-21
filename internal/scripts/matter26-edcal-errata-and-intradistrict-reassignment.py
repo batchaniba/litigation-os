@@ -22,7 +22,7 @@ Rendered on the shared California pleading-paper engine and signed with the
 portfolio universal signature.
 
     python3 internal/scripts/matter26-edcal-errata-and-intradistrict-reassignment.py \
-        [--date "August 21, 2026"] [OUT_PDF]
+        [--date "August 21, 2026"] [--mailed-from "Milpitas, California"] [OUT_PDF]
 """
 
 from __future__ import annotations
@@ -45,6 +45,12 @@ DEFAULT_OUT = (
 )
 
 DEFAULT_EXEC_DATE = "August 21, 2026"
+# Where the service copy is actually deposited with the USPS and where the
+# certificate is executed. This is not Plaintiff's address of record (1455 Cat
+# Tail Drive, Stockton, per the Aug. 17, 2026 change of address in Matter 19) --
+# a certificate of service states where the mailing happened, which need not be
+# the same place.
+DEFAULT_MAILED_FROM = "Milpitas, California"
 FOOTER = (
     "PLAINTIFF'S NOTICE OF ERRATA AND REQUEST FOR INTRADISTRICT REASSIGNMENT "
     "-- NEWANFORBI v. UNITED PARCEL SERVICE, INC."
@@ -226,7 +232,7 @@ def _signature(d, exec_date: str) -> None:
     d.write_line(SIGNOFF_ROLE, right=True, right_margin_offset=20)
 
 
-def _certificate_of_service(d, exec_date: str) -> None:
+def _certificate_of_service(d, exec_date: str, mailed_from: str) -> None:
     d.start_new_page()
     d.write_line("CERTIFICATE OF SERVICE", bold=True, center=True)
     d.blank_line()
@@ -236,7 +242,7 @@ def _certificate_of_service(d, exec_date: str) -> None:
         f"{exec_date}, I served the foregoing NOTICE OF ERRATA AND REQUEST FOR "
         "INTRADISTRICT REASSIGNMENT by placing a true and correct copy in a sealed envelope, "
         "with first-class postage fully prepaid, and depositing it with the United States "
-        "Postal Service at Stockton, California, addressed as follows:",
+        f"Postal Service at {mailed_from}, addressed as follows:",
         first_indent=36,
     )
     d.blank_line()
@@ -245,8 +251,8 @@ def _certificate_of_service(d, exec_date: str) -> None:
     d.blank_line()
     d.write_wrapped(
         "I declare under penalty of perjury under the laws of the United States of America "
-        f"that the foregoing is true and correct. Executed on {exec_date}, at Stockton, "
-        "California.",
+        f"that the foregoing is true and correct. Executed on {exec_date}, at "
+        f"{mailed_from}.",
         first_indent=36,
     )
     d.ensure_space(6)
@@ -259,7 +265,7 @@ def _certificate_of_service(d, exec_date: str) -> None:
     d.write_line(SIGNOFF_ROLE, right=True, right_margin_offset=20)
 
 
-def build(out: Path, exec_date: str) -> Path:
+def build(out: Path, exec_date: str, mailed_from: str) -> Path:
     if not Path(SIGNATURE_PATH).is_file():
         raise SystemExit(f"Missing universal signature: {SIGNATURE_PATH}")
     out.parent.mkdir(parents=True, exist_ok=True)
@@ -298,7 +304,7 @@ def build(out: Path, exec_date: str) -> Path:
             raise ValueError(f"unknown content kind {kind!r}")
 
     _signature(d, exec_date)
-    _certificate_of_service(d, exec_date)
+    _certificate_of_service(d, exec_date, mailed_from)
     d.save()
     return out
 
@@ -308,8 +314,11 @@ def main() -> None:
     ap.add_argument("out", nargs="?", default=str(DEFAULT_OUT))
     ap.add_argument("--date", default=DEFAULT_EXEC_DATE,
                     help="Execution / service date printed on the filing")
+    ap.add_argument("--mailed-from", default=DEFAULT_MAILED_FROM,
+                    help="City and state where the service copy is deposited with the "
+                         "USPS and where the certificate is executed")
     args = ap.parse_args()
-    path = build(Path(args.out).resolve(), args.date)
+    path = build(Path(args.out).resolve(), args.date, args.mailed_from)
     print(f"Generated: {path}")
 
 
