@@ -4,8 +4,8 @@
   "case_no": "2:26-cv-00004-DJC-JDP",
   "court": "USDC E.D. Cal.",
   "claims": "42 USC 1983: 1A Retaliation, 14A Equal Protection, Due Process",
-  "status": "Abandoned — Mag. Peterson's July 24, 2026 order granted Palacios's MTD and dismissed the FAC with leave to amend by Aug. 7, 2026 (else Equal Protection proceeds against Derrick only). That order sits in unresolved tension with Plaintiff's July 22 Rule 41(a)(1)(A)(i) dismissal of Derrick and Noguchi, which the order does not address.",
-  "status_label": "Abandoned — MTD granted, FAC leave to amend Jul. 24, 2026",
+  "status": "Abandoned — Mag. Peterson's July 24, 2026 order granted Palacios's MTD and dismissed the FAC with leave to amend by Aug. 7, 2026 (else Equal Protection proceeds against Derrick only). That order sits in unresolved tension with Plaintiff's July 22 Rule 41(a)(1)(A)(i) dismissal of Derrick and Noguchi. On Aug. 20, 2026 Plaintiff filed a Notice of Voluntary Dismissal of Defendant Katie Palacios under Rule 41(a)(1)(A)(i) (clerk-stamped), citing the Aug. 13, 2026 OSC (ECF No. 33).",
+  "status_label": "Abandoned — Palacios dismissed Aug. 20, 2026",
   "lifecycle": "abandoned",
   "proceeding": "federal_civil",
   "phase": "terminal",
@@ -15,8 +15,8 @@
   "type": "Federal",
   "archived": true,
   "badge": "ABANDONED",
-  "note": "Palacios's MTD GRANTED Jul. 24; FAC dismissed w/ leave to amend by Aug. 7. Jul. 22 dismissal of Derrick/Noguchi was valid as a matter of right (no answer/MSJ served) — Jul. 24 order doesn't address it.",
-  "defendants": "Andrew Derrick (#6910) — Notice of Voluntary Dismissal filed Jul. 22, 2026 (self-executing under Rule 41(a)(1)(A)(i)); Jul. 24, 2026 order nonetheless treats him as the sole remaining defendant if no amended complaint is filed — tension unresolved on the docket; Katie Palacios — MTD GRANTED Jul. 24, 2026 (failed all four state-actor tests); claims DISMISSED WITH LEAVE TO AMEND; Gary Noguchi (#7284) — Notice of Voluntary Dismissal filed Jul. 22, 2026 (self-executing); Jul. 24, 2026 order separately dismissed claims against him for failure to allege supervisory liability",
+  "note": "Palacios's MTD GRANTED Jul. 24; FAC dismissed w/ leave to amend by Aug. 7. Jul. 22 dismissal of Derrick/Noguchi was valid as a matter of right (no answer/MSJ served) — Jul. 24 order doesn't address it. Aug. 20, 2026 Notice of Voluntary Dismissal of Katie Palacios filed (Rule 41(a)(1)(A)(i)).",
+  "defendants": "Andrew Derrick (#6910) — Notice of Voluntary Dismissal filed Jul. 22, 2026 (self-executing under Rule 41(a)(1)(A)(i)); Jul. 24, 2026 order nonetheless treats him as the sole remaining defendant if no amended complaint is filed — tension unresolved on the docket; Katie Palacios — MTD GRANTED Jul. 24, 2026 (failed all four state-actor tests); claims DISMISSED WITH LEAVE TO AMEND; then Notice of Voluntary Dismissal filed Aug. 20, 2026 under Rule 41(a)(1)(A)(i); Gary Noguchi (#7284) — Notice of Voluntary Dismissal filed Jul. 22, 2026 (self-executing); Jul. 24, 2026 order separately dismissed claims against him for failure to allege supervisory liability",
   "causes": [
     "First Amendment Retaliation",
     "Equal Protection (race-based)",
@@ -111,6 +111,14 @@
     },
     {
       "path": "/documents/opinions/Newanforbi v Derrick - USDC EDCal - MTD Order Jul 24 2026.pdf"
+    },
+    {
+      "path": "/documents/matter-03/Notice of Voluntary Dismissal - Katie Palacios (Filed Aug 20 2026).pdf",
+      "filed": true
+    },
+    {
+      "path": "/documents/matter-03/DRAFT - Notice of Voluntary Dismissal - Katie Palacios (pre-filing).pdf",
+      "filed": false
     }
   ]
 }
