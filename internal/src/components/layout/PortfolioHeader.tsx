@@ -110,7 +110,7 @@ export function PortfolioHeader({
                 <div>Martenson, Hasbrouck &amp; Simon LLP</div>
                 <div className="firm-external-hint">Visit site ↗</div>
               </div>
-              <img className="firm-logo legacy-mhs-logo" src={withBase(darkMode ? "/branding/mhs-dark.webp" : "/branding/mhs-light.webp")} alt="Martenson, Hasbrouck & Simon LLP" width={1075} height={482} decoding="async" />
+              <img className="firm-logo legacy-mhs-logo" src={withBase(darkMode ? "/branding/mhs-dark.webp" : "/branding/mhs-light.webp")} alt="Martenson, Hasbrouck & Simon LLP" width={1004} height={208} decoding="async" />
             </a>
             <a href="https://oag.ca.gov/dag-recruitment" target="_blank" rel="noopener noreferrer" title="Visit California Attorney General's Office — Deputy Attorney General recruitment (oag.ca.gov) ↗" className="firm-link">
               <div className="legacy-counsel-names">

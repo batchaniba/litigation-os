@@ -48,10 +48,10 @@ TARGETS = [
     ("garcia-gurney.png", "branding/garcia-gurney.webp", (None, 44)),
     ("dag-dark.jpg", "branding/dag-dark.webp", (64, 64)),
     ("dag-light.jpg", "branding/dag-light.webp", (64, 64)),
-    # MHS homepage serif wordmark (~2.23:1 stacked name + practice tagline).
-    # Same fixed box for both themes so the header does not reflow on toggle.
-    ("mhs-dark.png", "branding/mhs-dark.webp", (112, 50)),
-    ("mhs-light.png", "branding/mhs-light.webp", (112, 50)),
+    # MHS wordmark (~4.8:1). Same fixed box for both themes so the header
+    # does not reflow on theme toggle; height-only keeps the natural aspect.
+    ("mhs-dark.png", "branding/mhs-dark.webp", (116, 24)),
+    ("mhs-light.png", "branding/mhs-light.webp", (116, 24)),
 ]
 
 SCALE = 2  # serve 2x so the artwork stays crisp on retina displays
