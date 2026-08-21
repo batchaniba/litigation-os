@@ -10,7 +10,9 @@ Two corrections, both cheap and both better made before a judge is assigned:
   1. Defendant's Notice of Removal captions Plaintiff "BRENDAN NGWANFORBI"
      and repeats the misspelling at paragraph 4, while its own declaration
      and Rule 7.1 statement caption the action correctly. The Rule 7.1
-     statement then recites the misspelling as an "also known as."
+     statement then recites the misspelling as an "also known as." Plaintiff appears
+     in this action as BRENDAN NGEHSI NEWANFORBI only; the notice claims no other
+     name variant.
   2. The removal was filed under a "1:" number -- the Fresno Division. San
      Joaquin County is a Sacramento Division county under E.D. Cal. L.R.
      120(d), and 28 U.S.C. 1441(a) allows removal only to the division
@@ -20,7 +22,7 @@ Rendered on the shared California pleading-paper engine and signed with the
 portfolio universal signature.
 
     python3 internal/scripts/matter26-edcal-errata-and-intradistrict-reassignment.py \
-        [--date "August 24, 2026"] [OUT_PDF]
+        [--date "August 21, 2026"] [OUT_PDF]
 """
 
 from __future__ import annotations
@@ -39,10 +41,10 @@ ROOT = SCRIPT_DIR.parents[1]
 DEFAULT_OUT = (
     ROOT
     / "internal/public/documents/matter-26"
-    / "Notice of Errata and Request for Intradistrict Reassignment (E.D. Cal. 1-26-at-03195) (Aug 24 2026).pdf"
+    / "Notice of Errata and Request for Intradistrict Reassignment (E.D. Cal. 1-26-at-03195) (Aug 21 2026).pdf"
 )
 
-DEFAULT_EXEC_DATE = "August 24, 2026"
+DEFAULT_EXEC_DATE = "August 21, 2026"
 FOOTER = (
     "PLAINTIFF'S NOTICE OF ERRATA AND REQUEST FOR INTRADISTRICT REASSIGNMENT "
     "-- NEWANFORBI v. UNITED PARCEL SERVICE, INC."
@@ -123,11 +125,10 @@ CONTENT = [
     ("PARA",
      "3. Paragraph 5(a) of the Notice of Interested Parties goes further and describes "
      "Plaintiff as \"Brendan Ngehsi Newanforbi, also known as Brendan Ngwanforbi.\" That is "
-     "not correct. \"Ngwanforbi\" is a typographical error, not an alias. For completeness "
-     "and candor to the Court, Plaintiff notes that he has appeared in certain other actions "
-     "under the name variant \"Brendan Ngwa Nforbi\"; the spelling in Defendant's caption "
-     "corresponds neither to that variant nor to the name under which this action was filed "
-     "and served."),
+     "not correct. \"Ngwanforbi\" is a typographical error, not an alias. Plaintiff has not "
+     "appeared in this action, or in the state-court action from which it was removed, under "
+     "any name other than BRENDAN NGEHSI NEWANFORBI, and respectfully asks that the docket "
+     "in this Court not carry an alias that does not exist."),
     ("PARA",
      "4. On removal, this Court takes the action as it stood in the state court, and the "
      "caption is the caption of the state-court action. The docket in this Court should "
