@@ -208,6 +208,8 @@ a { color: inherit; }
    ink, per feedback that exact parity read as too small) rather than to the
    asset's full aspect ratio. */
 .firm-logo { flex-shrink: 0; display: block; object-fit: contain; object-position: right center; }
+.legacy-kco-logo { width: 115px; height: 37px; }
+.legacy-azimov-logo { width: 52px; height: 52px; }
 .legacy-slb-logo { width: 118px; height: 62px; }
 .legacy-garcia-logo { width: 115px; height: 39px; }
 .legacy-mhs-logo { width: 116px; height: 24px; }
@@ -835,6 +837,8 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
     align-items: center;
     width: auto;
   }
+  .legacy-kco-logo { width: 83px; height: 27px; }
+  .legacy-azimov-logo { width: 38px; height: 38px; }
   .legacy-slb-logo { width: 84px; height: 44px; }
   /* Same box-narrower-than-asset-ratio letterbox as the desktop rule, scaled
      down by the same ~0.71 factor SLB's own box shrinks by at this breakpoint. */
@@ -893,13 +897,52 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
 }
 
 @media (max-width: 520px) {
-  .legacy-brand-logo { height: 96px; max-width: min(34vw, 128px); }
-  .legacy-versus { font-size: clamp(4rem, 24vw, 5.5rem); transform: translate(-18px, 2px); }
-  .legacy-header-inner { gap: 6px 8px; }
-  .legacy-opposing-counsel { gap: 6px; }
-  .legacy-slb-logo { width: 68px; height: 36px; }
-  .legacy-garcia-logo { width: 67px; height: 23px; }
-  .legacy-mhs-logo { width: 67px; height: 14px; }
+  .legacy-versus { display: none; }
+  .legacy-header-inner {
+    grid-template-columns: auto 1fr;
+    gap: 8px 12px;
+    padding: 14px 12px;
+  }
+  .legacy-brand-logo {
+    grid-column: 1;
+    grid-row: 1;
+    height: auto;
+    width: 100%;
+    max-width: 120px;
+    align-self: center;
+    justify-self: start;
+  }
+  .legacy-opposing-counsel {
+    grid-column: 2;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    justify-content: end;
+    justify-items: center;
+    align-items: center;
+    gap: 6px 8px;
+    width: 100%;
+  }
+  .legacy-opposing-counsel .firm-link {
+    justify-content: center;
+    flex-direction: column;
+    gap: 2px;
+  }
+  /* Left column: Kabat (row 1), Azimov (row 2), MHS (row 3) */
+  .legacy-opposing-counsel .firm-link:nth-child(1) { grid-column: 1; grid-row: 1; }
+  .legacy-opposing-counsel .firm-link:nth-child(2) { grid-column: 1; grid-row: 2; }
+  .legacy-opposing-counsel .firm-link:nth-child(5) { grid-column: 1; grid-row: 3; }
+  /* Right column: Garcia (row 1), SLB (row 2), DAG (row 3) */
+  .legacy-opposing-counsel .firm-link:nth-child(3) { grid-column: 2; grid-row: 2; }
+  .legacy-opposing-counsel .firm-link:nth-child(4) { grid-column: 2; grid-row: 1; }
+  .legacy-opposing-counsel .firm-link:nth-child(6) { grid-column: 2; grid-row: 3; }
+  .firm-logo { object-position: center; }
+  .legacy-kco-logo { width: 80px; height: 26px; }
+  .legacy-azimov-logo { width: 36px; height: 36px; }
+  .legacy-slb-logo { width: 72px; height: 38px; }
+  .legacy-garcia-logo { width: 72px; height: 24px; }
+  .legacy-mhs-logo { width: 72px; height: 15px; }
   .legacy-dag-logo { width: 36px; height: 36px; }
   .legacy-clock-units { transform: scale(.88); transform-origin: left center; }
   .legacy-deadline-description { width: 100%; }

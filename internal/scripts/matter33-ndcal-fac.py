@@ -2,9 +2,11 @@
 # NGWA NFORBI v. CANDELARIA and GORDON -- FIRST AMENDED COMPLAINT
 # USDC N.D. Cal. No. 3:26-cv-08272-LJC (Matter 33)
 #
-# Source of record for this filing. The PDF under
-# internal/public/documents/matter-33/ndcal/ is generated from this
-# script -- edit the CONTENT below and re-run, never hand-patch the PDF.
+# Generates a FAC draft PDF. The portfolio-operative pleading is the
+# user-supplied unsigned copy:
+#   FAC Nforbi v Candelaria and Gordon NDCal - OPERATIVE UNSIGNED (Aug 11 2026).pdf
+# Do not overwrite that file. This script's default output is the superseded
+# Aug. 11 script draft.
 #
 #   python3 internal/scripts/matter33-ndcal-fac.py [OUT_PDF]
 # ==========================================================

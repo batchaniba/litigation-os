@@ -14,13 +14,13 @@ numbers, so a citation in a draft can be traced to a source page rather than tru
 
 | | |
 |---|---|
-| PDFs scanned | 584 |
-| Pages | 6,208 |
-| Readable | 508 |
-| **No text layer (not searched)** | **74** |
+| PDFs scanned | 598 |
+| Pages | 6,275 |
+| Readable | 539 |
+| **No text layer (not searched)** | **57** |
 | Unreadable | 2 |
-| Distinct citations | 2,910 |
-| Total occurrences | 10,866 |
+| Distinct citations | 3,129 |
+| Total occurrences | 11,460 |
 
 A PDF with no text layer yields no citations. That is **not** the same as containing
 none — those documents are unsearched until OCR'd.
@@ -29,16 +29,16 @@ none — those documents are unsearched until OCR'd.
 
 | Kind | Distinct |
 |---|---|
-| `case_name` | 824 |
-| `authority` | 755 |
-| `case_reporter` | 636 |
-| `statute_state` | 233 |
-| `section_shorthand` | 146 |
-| `rule_local` | 89 |
-| `rule_federal` | 71 |
-| `statute_federal` | 45 |
-| `rule_state` | 45 |
-| `case_westlaw` | 39 |
+| `case_name` | 893 |
+| `authority` | 820 |
+| `case_reporter` | 683 |
+| `statute_state` | 238 |
+| `section_shorthand` | 154 |
+| `rule_local` | 92 |
+| `rule_federal` | 74 |
+| `statute_federal` | 51 |
+| `case_westlaw` | 50 |
+| `rule_state` | 47 |
 | `regulation_state` | 12 |
 | `regulation_federal` | 8 |
 | `constitutional` | 7 |
@@ -55,41 +55,40 @@ folder-derived attribution reported zero for Matters 1, 2, 7 and 20.
 
 | Matter | Caption | Distinct citations |
 |---|---|---|
-| 1 | Newanforbi v. CHP et al. | 123 |
-| 2 | Newanforbi v. Meza-Gonzalez et al. | 84 |
-| 7 | Newanforbi v. Candelaria | 284 |
-| 12 | Brendan Ngwa Nforbi v. Diamond Truck Sales,  | 82 |
+| 12 | Brendan Ngwa Nforbi v. Diamond Truck Sales,  | 136 |
 | 19 | Newanforbi v. Macomber | 101 |
 | 20 | Newanforbi v. California Highway Patrol, et  | 241 |
-| 24 | Newanforbi v. Serrato | 68 |
-| 25 | Newanforbi v. Federal Express Corporation | 34 |
-| 26 | Newanforbi v. United Parcel Service, Inc. | 35 |
+| 24 | Newanforbi v. Serrato | 113 |
+| 25 | Newanforbi v. Federal Express Corporation | 38 |
+| 26 | Newanforbi v. United Parcel Service, Inc. | 40 |
 | 27 | Newanforbi v. Randstad, et al. | 49 |
 | 28 | Newanforbi v. Shannon Smith, LCSW, CEO, et a | 211 |
 | 29 | Newanforbi v. Amazon.com Services, LLC | 641 |
 | 30 | Newanforbi v. Moua, et al. | 100 |
 | 31 | Newanforbi v. First Advantage LLC | 0 |
-| 32 | Nforbi v. Meza-Gonzalez, et al | 719 |
-| 33 | Nforbi v. Candelaria et al. | 407 |
+| 32 | Nforbi v. Meza-Gonzalez, et al | 756 |
+| 33 | Nforbi v. Candelaria et al. | 424 |
+| 34 | Newanforbi v. Counseling and Psychotherapy C | 0 |
 
 ## Highest-exposure citations
 
-550 of 755 paired authorities do not appear in the July audit. Of those,
-**137 are asserted only in Plaintiff's own filings**, with no court order or
+606 of 820 paired authorities do not appear in the July audit. Of those,
+**151 are asserted only in Plaintiff's own filings**, with no court order or
 opposing brief in the corpus citing them back. Unverified *and* uncorroborated is where a
 fabricated or miscited authority survives undetected — the queue worth working first.
 
 | Uses | Authority | Matters |
 |---|---|---|
 | 38 | Mercer v. DMV, 53 Cal. 3d 753 (1991) | 7, 8, 32, 33 |
+| 10 | Devereaux v. Abbey, 263 F. 3d 1070 | 30, 32 |
 | 10 | In re Murchison, 349 U.S. 133 (1955) | 33 |
+| 9 | Chism v. Washington State, 661 F. 3d 380 | 32 |
 | 9 | Vlandis v. Kline, 412 U.S. 441 (1973) | 33 |
-| 8 | Devereaux v. Abbey, 263 F. 3d 1070 | 30, 32 |
+| 8 | Costanich v. Dep't of Social, 627 F. 3d 1101 | 32 |
+| 8 | Franks v. Delaware, 438 U.S. 154 (1978) | 32 |
 | 8 | Music v. Dep't of Motor Vehicles, 221 Cal.App. 3d 841 (1990) | 33 |
-| 6 | Chism v. Washington State, 661 F. 3d 380 | 32 |
-| 6 | Costanich v. Dep't of Social, 627 F. 3d 1101 | 32 |
-| 6 | Franks v. Delaware, 438 U.S. 154 (1978) | 32 |
-| 6 | Galbraith v. County of Santa Clara, 307 F. 3d 1119 | 32 |
+| 7 | Payton v. New York, 445 U.S. 573 (1980) | 32 |
+| 6 | Beck v. Ohio, 379 U.S. 89 (1964) | 32 |
 | 6 | Home v. Dep't of Health Care Services, 204 Cal.App. 4th 676 (2012) | 9 |
 | 6 | In re Hudson, 1 Cal.App. 4th 1 (2006) | 5, 15, 19 |
 | 6 | In re Muszalski, 52 Cal.App. 3d 500 (1975) | 5, 15, 19 |
@@ -97,11 +96,10 @@ fabricated or miscited authority survives undetected — the queue worth working
 | 5 | Armondo v. Dep't of Motor Vehicles, 15 Cal.App. 4th 1174 (1993) | 33 |
 | 5 | Ballentine v. Tucker, 28 F. 4th 54 | 32 |
 | 5 | Bd. of Educ. v. Loudermill, 470 U.S. 532 (1985) | 33 |
-| 5 | Beck v. Ohio, 379 U.S. 89 (1964) | 32 |
 | 5 | Carey v. Piphus, 435 U.S. 247 (1978) | 33 |
-| 5 | Payton v. New York, 445 U.S. 573 (1980) | 32 |
+| 5 | Collins v. Virginia, 584 U.S. 586 (2018) | 32 |
 | 4 | Burrell v. Jackson, 2003 WL 23545858 | 7, 32, 33 |
-| 4 | Collins v. Virginia, 584 U.S. 586 (2018) | 32 |
+| 4 | Illinois v. Caballes, 543 U.S. 405 (2005) | 32 |
 | 4 | See Hill v. National Collegiate Athletic Assn, 7 Cal. 4th 1 (1994) | 5, 27 |
 | 3 | AIDS Healthcare Foundation v. Los Angeles County Dept, 197 Cal.App. 4t | 9 |
 | 3 | Ashelman v. Pope, 793 F. 2d 1072 | 33 |
@@ -113,16 +111,16 @@ fabricated or miscited authority survives undetected — the queue worth working
 | 3 | Home v. Dep’t of Health Care Services, 204 Cal.App. 4th 676 (2012) | 9 |
 | 3 | In re Stevens, 119 Cal.App. 4th 1228 (2004) | 5, 15 |
 | 3 | Miller v. Gammie, 335 F. 3d 889 | 33 |
+| 3 | Pearson v. Callahan, 555 U.S. 223 (2009) | 1, 32 |
 | 3 | Scenic Community v. County of L.A, 11 Cal. 3d 506 (1974) | 9 |
 | 3 | See California Highway Patrol v. Superior Court, 158 Cal.App. 4th 726  | 9 |
 | 3 | See JKH Enterprises, Inc. v. Dept. of Industrial Relations, 142 Cal.Ap | 9 |
 | 3 | See Rodriguez v. Solis, 1 Cal.App. 4th 495 (1991) | 9 |
+| 3 | See Sullivan v. County of Los Angeles, 12 Cal. 3d 710 (1974) | 15 |
 | 3 | Spencer v. Peters, 857 F. 3d 789 | 30 |
 | 3 | Thornton v. Brown, 757 F. 3d 834 | 30 |
-| 3 | Under the Mathews v. Eldridge, 424 U.S. 319 (1976) | 24, 32 |
-| 3 | United States Supreme Court Greenholtz v. Inmates of Nebraska Penal, 4 | 9 |
 
-_137 total; full list in the JSON._
+_151 total; full list in the JSON._
 
 ## Known-bad citations from the July audit — current locations
 
@@ -159,18 +157,11 @@ _137 total; full list in the JSON._
 
 ## Catalog gaps — unsearchable documents in active matters
 
-61 documents in active matters have no text layer. Until OCR'd, the index cannot
+48 documents in active matters have no text layer. Until OCR'd, the index cannot
 speak to what they cite. Court orders are the ones that matter.
 
 | Matter | Role | Pages | Document |
 |---|---|---|---|
-| 5 | court_order | 4 | Order Sustaining Demurrer to FAC WOLA - Jul 15 2026.pdf |
-| 7 | court_order | 5 | DMV Decision.pdf |
-| 12 | court_order | 3 | 014a CIV100 Request for Entry of Default or Default Judg |
-| 12 | court_order | 3 | 1094 FW003 Order on Court Fee Waiver (for Stanislaus She |
-| 12 | court_order | 3 | 1094 FW003 Order on Court Fee Waiver.pdf |
-| 25 | court_order | 4 | FW-003 Order on Court Fee Waiver - GRANTED (Jul 15 2026) |
-| 26 | court_order | 4 | FW-003 Order on Court Fee Waiver - GRANTED (Jul 15 2026) |
 | 1 | other | 5 | 0.Newanforbi v. CHP.pdf |
 | 1 | other | 1 | 01_Lawsuit_Cover_Sheet.pdf |
 | 1 | other | 3 | 02_Initial_Scheduling_Order.pdf |
@@ -188,8 +179,15 @@ speak to what they cite. Court orders are the ones that matter.
 | 1 | other | 5 | Discovery-Response.pdf |
 | 12 | service_admin | 1 | 015 POS010 Proof of Service of Summons.pdf |
 | 12 | service_admin | 1 | 016 POS010 Proof of Service of Summons.pdf |
+| 12 | other | 6 | 017 CM110 Case Management Statement.pdf |
+| 12 | service_admin | 3 | 1094 CM010 Civil Case Cover Sheet.pdf |
+| 12 | service_admin | 3 | 1094 POS010 Proof of Service of Summons 2.pdf |
+| 12 | service_admin | 1 | 1094 POS010 Proof of Service of Summons 3.pdf |
+| 12 | service_admin | 1 | 1094 POS010 Proof of Service of Summons 4.pdf |
+| 12 | service_admin | 1 | 1094 POS010 Proof of Service of Summons 5.pdf |
+| 12 | service_admin | 5 | 1094 POS010 Proof of Service of Summons.pdf |
 
-_61 total._
+_48 total._
 
 ## Regenerating
 ```

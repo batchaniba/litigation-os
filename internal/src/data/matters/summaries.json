@@ -461,7 +461,7 @@
       "Civil Rights Violation (42 USC 1983)"
     ],
     "evidenceCount": 1,
-    "documentCount": 0
+    "documentCount": 1
   },
   {
     "number": 19,
@@ -469,7 +469,7 @@
     "case_no": "C2604791",
     "court": "Santa Clara Sup. Ct.",
     "claims": "Habeas Corpus — Immediate Discharge from Parole (Pen. Code §1473; PC §§3000, 3001, 3008(d)(2); 15 CCR §3574)",
-    "status_label": "HC-004 ready to file — ruling overdue since Aug. 1, 2026",
+    "status_label": "HC-004 refreshed Aug. 17 — ruling overdue since Aug. 1, 2026",
     "lifecycle": "active",
     "proceeding": "habeas",
     "phase": "under_submission",
@@ -487,7 +487,7 @@
     ],
     "archived": false,
     "evidenceCount": 11,
-    "documentCount": 6
+    "documentCount": 9
   },
   {
     "number": 20,
@@ -668,7 +668,7 @@
       }
     ],
     "evidenceCount": 12,
-    "documentCount": 12
+    "documentCount": 13
   },
   {
     "number": 25,
@@ -696,22 +696,22 @@
     "archived": false,
     "status_label": "Served Jul. 24, 2026 — response due Aug. 24",
     "evidenceCount": 8,
-    "documentCount": 26
+    "documentCount": 27
   },
   {
     "number": 26,
     "caption": "Newanforbi v. United Parcel Service, Inc.",
-    "case_no": "STK-CV-UWT-2026-0009113",
-    "court": "San Joaquin Sup. Ct.",
+    "case_no": "2:26-cv-02847-DAD-CKD",
+    "court": "USDC E.D. Cal. (Sacramento Div.)",
     "claims": "PC §290.46(j)(2)(E) Violation, Failure to Hire (Tameny), ICRAA, Invasion of Privacy, Negligence Per Se, UCL §17200",
     "lifecycle": "active",
-    "proceeding": "state_civil",
+    "proceeding": "federal_civil",
     "phase": "responsive_deadline",
     "filed": "July 15, 2026",
-    "judge": "Hon. Robert T. Waters, Dept. 11B",
+    "judge": "Hon. Dale A. Drozd, D.J.; Hon. Carolyn K. Delaney, M.J.",
     "cluster": 3,
-    "type": "State",
-    "badge": "TIMELY",
+    "type": "Federal",
+    "badge": "REMOVED",
     "defendants": "United Parcel Service, Inc.; and DOES 1 through 10, inclusive",
     "causes": [
       "Violation of Cal. Penal Code § 290.46(j)(2)(E)",
@@ -722,9 +722,9 @@
       "Unlawful Business Practices (Bus. & Prof. Code § 17200 et seq.)"
     ],
     "archived": false,
-    "status_label": "Served Jul. 22, 2026 — response due Aug. 21",
+    "status_label": "E.D. Cal. Sacramento 2:26-cv-02847 — UPS due Aug. 27",
     "evidenceCount": 7,
-    "documentCount": 20
+    "documentCount": 31
   },
   {
     "number": 27,
@@ -766,9 +766,9 @@
       "Unlawful Business Practices (Bus. & Prof. Code § 17200 et seq.)"
     ],
     "archived": false,
-    "status_label": "POS filed Aug. 7 — response due Aug. 31",
-    "evidenceCount": 16,
-    "documentCount": 48
+    "status_label": "RK response Aug. 31 — Randstad extended to Sep. 15",
+    "evidenceCount": 18,
+    "documentCount": 50
   },
   {
     "number": 28,
@@ -840,7 +840,7 @@
     ],
     "archived": false,
     "evidenceCount": 24,
-    "documentCount": 75
+    "documentCount": 77
   },
   {
     "number": 30,
@@ -902,7 +902,7 @@
     "caption": "Nforbi v. Meza-Gonzalez, et al",
     "case_no": "3:26-cv-08271-PHK",
     "court": "USDC N.D. Cal. (docketed Aug. 10, 2026; related Serrato 4:26-cv-05953-ASK and Candelaria 3:26-cv-08272-LJC)",
-    "claims": "42 U.S.C. § 1983 — Fourth/Fourteenth/First Amendment (unlawful entry, search, arrest, Franks/judicial deception, fabrication, First Amendment retaliation) — Dkt. 1 Complaint is the pleading of record; a corrected First Amended Complaint is drafted but not yet lodged; also CHP-cluster PDF home for Matters 1/2/20/24",
+    "claims": "42 U.S.C. § 1983 — Fourth/Fourteenth/First Amendment (unlawful entry, search, arrest, Franks/judicial deception, fabrication, First Amendment retaliation) — Dkt. 1 is the court pleading of record; the unsigned Aug. 12 FAC is the text to lodge; also CHP-cluster PDF home for Matters 1/2/20/24",
     "status_label": "Served Aug. 14, 2026 — response due Sep. 4; CMC Dec. 2",
     "lifecycle": "active",
     "proceeding": "federal_civil",
@@ -940,14 +940,14 @@
     ],
     "archived": false,
     "evidenceCount": 13,
-    "documentCount": 113
+    "documentCount": 114
   },
   {
     "number": 33,
     "caption": "Nforbi v. Candelaria et al.",
     "case_no": "3:26-cv-08272-LJC",
     "court": "USDC N.D. Cal. (San Francisco Div.)",
-    "claims": "42 U.S.C. § 1983 — APS structural bias / fair hearing / clear absence of jurisdiction; declaratory and injunctive relief (vacatur of APS 34739340) — First Amended Complaint superseding Dkt. 1; also Candelaria / DMV APS PDF home for Matters 7/8",
+    "claims": "42 U.S.C. § 1983 — APS impartial-adjudicator / fair hearing; declaratory and injunctive relief (vacatur of APS 34739340) — Dkt. 1 is the court pleading of record; the unsigned Aug. 11 FAC is the text to lodge; also Candelaria / DMV APS PDF home for Matters 7/8",
     "status_label": "Served Aug. 14, 2026 — response due Sep. 4; CMC Nov. 12",
     "lifecycle": "active",
     "proceeding": "federal_civil",
@@ -976,15 +976,14 @@
       }
     ],
     "causes": [
-      "42 U.S.C. § 1983 — Structural bias / dual-role APS adjudicator (procedural due process)",
-      "42 U.S.C. § 1983 — Fair hearing violations (procedural due process)",
-      "42 U.S.C. § 1983 — Clear absence of APS jurisdiction",
+      "42 U.S.C. § 1983 — Denial of an impartial adjudicator (procedural due process)",
+      "42 U.S.C. § 1983 — Denial of a fair hearing (procedural due process)",
       "Declaratory relief — 28 U.S.C. §§ 2201–2202 (vacatur of APS Decision 34739340)",
       "Injunctive / Ex parte Young relief vs. DMV Director Gordon (official capacity)"
     ],
     "archived": false,
     "evidenceCount": 17,
-    "documentCount": 43
+    "documentCount": 44
   },
   {
     "number": 34,

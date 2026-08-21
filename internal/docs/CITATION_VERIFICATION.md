@@ -1,6 +1,6 @@
 # Citation Verification Ledger
 
-Generated 2026-08-15 by `verify-citations.py`. Joins the PR #490 citation index to the July / Matter-28 citation audit, then overlays Round 4+ verification results (WebSearch + CourtListener/CAP multisource confirmation).
+Generated 2026-08-20 by `verify-citations.py`. Joins the PR #490 citation index to the July / Matter-28 citation audit, then overlays Round 4+ verification results (WebSearch + CourtListener/CAP multisource confirmation).
 
 ## Why this exists
 
@@ -10,13 +10,13 @@ The campaign is entering a phase where claims are cognizable and motions to dism
 
 | Status | Count |
 |---|---|
-| UNVERIFIED | 426 |
-| VERIFIED | 288 |
-| MISCITED | 29 |
+| UNVERIFIED | 429 |
+| VERIFIED | 353 |
+| MISCITED | 26 |
 | MISCHARACTERIZED | 6 |
 | NOT_FOUND | 6 |
 
-**Plaintiff-only + still UNVERIFIED (P0 queue): 4**  
+**Plaintiff-only + still UNVERIFIED (P0 queue): 8**  
 **Plaintiff-only + bad status (P1): 27**
 
 ## Method controls
@@ -30,7 +30,7 @@ The campaign is entering a phase where claims are cognizable and motions to dism
   - `justia`: blocked (Cloudflare 403) in this environment
   - `google_scholar`: unreliable (often 403)
   - `courtlistener_citation_lookup`: requires API token (401)
-- Confirmation artifact: `citation_lookup_multisource.json` (20 probes on 2026-08-09).
+- Confirmation artifact: `citation_lookup_multisource.json` (1 probes on 2026-08-16).
 - Matter 28 funnel: `citation_lookup_matter28.json` (54 probes on 2026-08-09).
 
 ## Known fabricated / hard NOT_FOUND — live locations
@@ -107,28 +107,28 @@ _Round 4: no matching absolute-immunity hearing-officer decision at that WL numb
 | 11 | MISCHARACTERIZED | People v. Rizo, 22 Cal. 4th 681 (2000) | 9, 19 |
 | 9 | MISCHARACTERIZED | Pomona Police Officers' Ass'n v. City of Pomona, 58 Cal.App. 4th 578 ( | 9 |
 | 8 | NOT_FOUND | In re Leman, 66 Cal.App. 5th 200 (2021) | 9, 19 |
+| 7 | MISCITED | Rodriguez v. United States, 575 U.S. 348 (2015) | 1, 32 |
 | 6 | MISCITED | Home v. Dep't of Health Care Services, 204 Cal.App. 4th 676 (2012) | 9 |
 | 6 | MISCITED | In re Hudson, 1 Cal.App. 4th 1 (2006) | 5, 15, 19 |
 | 6 | MISCITED | People v. Superior Court, 25 Cal. 4th 703 (2001) | 9 |
 | 6 | MISCHARACTERIZED | Pomona Police Officers’ Ass’n v. City of Pomona, 58 Cal.App. 4th 578 ( | 9 |
-| 5 | MISCITED | Rodriguez v. United States, 575 U.S. 348 (2015) | 1, 32 |
+| 5 | MISCITED | Caldwell v. Montoya, 10 Cal. 4th 972 (1995) | 14, 15, 16 |
 | 4 | NOT_FOUND | Burrell v. Jackson, 2003 WL 23545858 | 7, 32, 33 |
 | 3 | MISCITED | County of Contra Costa v. State of California, 177 Cal.App. 3d 62 (198 | 9 |
 | 3 | MISCITED | Home v. Dep’t of Health Care Services, 204 Cal.App. 4th 676 (2012) | 9 |
 | 3 | MISCHARACTERIZED | See California Highway Patrol v. Superior Court, 158 Cal.App. 4th 726  | 9 |
 | 2 | MISCITED | California, Ltd. v. Dry Creek Joint Elementary Sch. Dist, 50 Cal.App.  | 20, 32 |
+| 2 | MISCITED | See Rodriguez v. United States, 575 U.S. 348 (2015) | 32 |
 | 2 | MISCITED | Soranno's Gasco, Inc. v. Morgan Hill Unified, 874 F. 2d 1310 | 24, 32 |
 | 2 | MISCITED | Swift v. Christian, 384 F. 3d 1184 | 30 |
 | 2 | MISCITED | Unicorn Glob., Inc. v. Hillo Am., Inc, 2021 WL 1034838 | 29 |
 | 1 | MISCITED | Accurate and Amazon. Los Angeles Cath. Worker v. Los Angeles Downtown  | 29 |
-| 1 | MISCITED | Ashcroft v. Iqbal, 556 U.S. 662 | 29 |
 | 1 | MISCITED | Cases Ashcroft v. Iqbal, 556 U.S. 662 | 29 |
 | 1 | MISCITED | Chubb v. Sullivan, 2014 WL 2807986 | 28 |
 | 1 | MISCITED | Jessie v. United States, 79 M.J. 437 | 28 |
 | 1 | MISCITED | Lockley v. Law Office, 91 Cal.App. 4th 401 (2001) | 20, 32 |
 | 1 | MISCITED | Los Angeles Cath. Worker v. Los Angeles Downtown Indus. Dist. Bus, 201 | 29 |
 | 1 | MISCITED | See Johnson v. City of Grants Pass, 50 F. 4th 787 | 28 |
-| 1 | MISCITED | See Rodriguez v. United States, 575 U.S. 348 (2015) | 32 |
 | 1 | MISCITED | Soranno’s Gasco, Inc. v. Morgan Hill Uniifed Sch. Dist, 874 F. 2d 1310 | 24 |
 
 ## P0 — Plaintiff-only UNVERIFIED queue (work this next)
@@ -138,17 +138,21 @@ Asserted only in Plaintiff's filings; no court order or opposing brief in the co
 | Uses | Authority | Matters | Sample page |
 |---|---|---|---|
 | 3 | Califomia DUI Lawyers Ass'n v. DMV, 77 Cal.App. 5th 517 (2022) | 33 | p.4 |
+| 1 | Califomia v. Carney, 471 U.S. 386 (1985) | 32 | p.19 |
+| 1 | Devenpeck v. Alford, 3 U.S. 146 (2004) | 32 | p.22 |
+| 1 | Galbraith v. County of, 307 F. 3d 1119 | 32 | p.23 |
 | 1 | ICnudsen v. DMV, 101 Cal.App. 5th 186 (2024) | 33 | p.23 |
 | 1 | Kjiudsen v. DMV, 101 Cal.App. 5th 186 (2024) | 33 | p.32 |
+| 1 | See Camara v. Municipal, 387 U.S. 523 (1967) | 32 | p.26 |
 | 1 | Swift v. Califomia, 384 F. 3d 1184 | 33 | p.42 |
 
-_4 total in JSON `priorityQueue`._
+_8 total in JSON `priorityQueue`._
 
 ## Round overlay
 
-Loaded round: **2026-08-09 Round 4 — portfolio P0 (batches A–D; LACW WL correction); Round 5 multisource (CourtListener + CAP); Round 5b Matter 28 full funnel; Round 6 spot-check of the Matter 33 conformed complaint (3:26-cv-08272-LJC, Dkt. 1) page-43 immunity sentence** — 228 results
+Loaded round: **2026-08-09 Round 4 — portfolio P0 (batches A–D; LACW WL correction); Round 5 multisource (CourtListener + CAP); Round 5b Matter 28 full funnel; Round 6 spot-check of the Matter 33 conformed complaint (3:26-cv-08272-LJC, Dkt. 1) page-43 immunity sentence; Round 7 authorities cited in the Serrato IFP screening order (Matter 24, Dkt. 5) after OCR made that scan searchable; Round 8 — OCR tranche (16 plaintiff filings + court orders: Matters 5/12/15/25/26/33, Barocio opinion)** — 278 results
 
-Method note: Round 4: WebSearch after Richardson(+) / Leman(−) controls. Round 5: CourtListener /api/rest/v4/search/ + CAP static.case.law for controls/high-risk. Round 5b: all Matter 28 indexed authorities through lookup-citations.py --matter 28 (→ citation_lookup_matter28.json). Justia Cloudflare-blocked; Scholar unreliable; api.case.law JSON and CL citation-lookup need auth. Existence FOUND does not clear prior MISCHARACTERIZED/MISCITED proposition problems. Table-page F.3d pins can host multiple dispositions — do not treat first CL hit as unique.
+Method note: Round 4: WebSearch after Richardson(+) / Leman(−) controls. Round 5: CourtListener /api/rest/v4/search/ + CAP static.case.law for controls/high-risk. Round 5b: all Matter 28 indexed authorities through lookup-citations.py --matter 28 (→ citation_lookup_matter28.json). Justia Cloudflare-blocked; Scholar unreliable; api.case.law JSON and CL citation-lookup need auth. Existence FOUND does not clear prior MISCHARACTERIZED/MISCITED proposition problems. Table-page F.3d pins can host multiple dispositions — do not treat first CL hit as unique. Round 7: the June 29, 2026 Serrato IFP/screening order was an image-only scan contributing nothing to the index until internal/scripts/ocr-text-layer.py added a text layer; its authorities were then probed through lookup-citations.py (→ citation_lookup_serrato_order.json) behind the same Richardson(+) / Leman(−) controls. These are a court's own citations, so they carry role court_order and never enter the plaintiff-only P0/P1 queues. Round 8: after ocr-text-layer.py on the 16-document plaintiff_filing/court_order tranche, probed new P0 Matter 12/15 authorities (citation_lookup_matter12_p0.json) and Barocio screening-order authorities (citation_lookup_barocio_order.json). McCorkle manually confirmed on CourtListener when CAP lacked cal2d/70.
 
 ## Regenerating
 ```
