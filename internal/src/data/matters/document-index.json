@@ -340,6 +340,16 @@
     "path": "/documents/opinions/Newanforbi v Derrick - USDC EDCal - MTD Order Jul 24 2026.pdf"
   },
   {
+    "matter": 3,
+    "label": "Notice of Voluntary Dismissal - Katie Palacios (Filed Aug 20 2026)",
+    "path": "/documents/matter-03/Notice of Voluntary Dismissal - Katie Palacios (Filed Aug 20 2026).pdf"
+  },
+  {
+    "matter": 3,
+    "label": "DRAFT - Notice of Voluntary Dismissal - Katie Palacios (pre-filing)",
+    "path": "/documents/matter-03/DRAFT - Notice of Voluntary Dismissal - Katie Palacios (pre-filing).pdf"
+  },
+  {
     "matter": 5,
     "label": "First Amended Complaint (filed Apr. 22, 2026)",
     "path": "/documents/matter-05/FAC_STK-CV-UF-2026-1032.pdf"
@@ -1400,6 +1410,16 @@
     "path": "/documents/matter-32/from-20/Gmail - USPS eReceipt - Alameda Sheriff Service Packet Postage (Aug 3 2026).pdf"
   },
   {
+    "matter": 20,
+    "label": "Reply ISO Demurrer - California Highway Patrol (hearing Aug 28 2026)",
+    "path": "/documents/matter-32/from-20/Reply ISO Demurrer - California Highway Patrol (hearing Aug 28 2026).pdf"
+  },
+  {
+    "matter": 20,
+    "label": "Reply ISO Demurrer - Serrato Paul Dutra and Notice of Joinder (hearing Sep 18 2026)",
+    "path": "/documents/matter-32/from-20/Reply ISO Demurrer - Serrato Paul Dutra and Notice of Joinder (hearing Sep 18 2026).pdf"
+  },
+  {
     "matter": 21,
     "label": "Complaint for Damages, Declaratory, and Injunctive Relief (Jan. 22, 2026)",
     "path": "/documents/matter-21/Complaint.pdf"
@@ -1558,6 +1578,26 @@
     "matter": 24,
     "label": "USM-285 Process Receipt and Return - Service Executed on Serrato (Doc 15, Filed Aug 6 2026)",
     "path": "/documents/matter-24/USM-285 Process Receipt and Return - Service Executed on Serrato (Doc 15, Filed Aug 6 2026).pdf"
+  },
+  {
+    "matter": 24,
+    "label": "Administrative Motion to Consider Whether Cases Should Be Related - Serrato and Meza-Gonzalez (Filed Aug 20 2026)",
+    "path": "/documents/matter-24/Administrative Motion to Consider Whether Cases Should Be Related - Serrato and Meza-Gonzalez (Filed Aug 20 2026).pdf"
+  },
+  {
+    "matter": 24,
+    "label": "DRAFT - Administrative Motion to Consider Whether Cases Should Be Related (pre-filing)",
+    "path": "/documents/matter-24/DRAFT - Administrative Motion to Consider Whether Cases Should Be Related (pre-filing).pdf"
+  },
+  {
+    "matter": 24,
+    "label": "DRAFT - Declaration ISO Administrative Motion to Relate Cases (pre-filing)",
+    "path": "/documents/matter-24/DRAFT - Declaration ISO Administrative Motion to Relate Cases (pre-filing).pdf"
+  },
+  {
+    "matter": 24,
+    "label": "DRAFT - Proposed Order Granting Administrative Motion to Relate Cases (pre-filing)",
+    "path": "/documents/matter-24/DRAFT - Proposed Order Granting Administrative Motion to Relate Cases (pre-filing).pdf"
   },
   {
     "matter": 25,
@@ -2771,6 +2811,21 @@
   },
   {
     "matter": 32,
+    "label": "Dkt 05 - First Amended Complaint (CONFORMED, Filed Aug 17 2026)",
+    "path": "/documents/matter-32/ndcal/Dkt 05 - First Amended Complaint (CONFORMED, Filed Aug 17 2026).pdf"
+  },
+  {
+    "matter": 32,
+    "label": "Dkt 05-1 - Proof of Service of Summons - Jose Melano (Filed Aug 17 2026)",
+    "path": "/documents/matter-32/ndcal/Dkt 05-1 - Proof of Service of Summons - Jose Melano (Filed Aug 17 2026).pdf"
+  },
+  {
+    "matter": 32,
+    "label": "Dkt 06 - First Amended Complaint (CONFORMED, Filed Aug 14 2026)",
+    "path": "/documents/matter-32/ndcal/Dkt 06 - First Amended Complaint (CONFORMED, Filed Aug 14 2026).pdf"
+  },
+  {
+    "matter": 32,
     "label": "SER-001 Request for Sheriff to Serve Court Papers — Jose Melano (filled and e-signed Aug. 13, 2026 with Plaintiff's canonical portfolio signature; Sacramento County Sheriff; serve at CHP South Sacramento Area duty station, 6 Massie Court; item 5d requested service date 08/21/2026, Fed. R. Civ. P. 4(m) deadline 11/08/2026 noted; no CA fee waiver — federal filing fee paid)",
     "path": "/documents/matter-32/ndcal/SER-001 Request for Sheriff to Serve Court Papers - Jose Melano (Sacramento, Aug 13 2026).pdf"
   },
@@ -3310,6 +3365,31 @@
     "path": "/documents/matter-32/from-24/Notice of Change of Address (July 7, 2026).pdf"
   },
   {
+    "matter": 32,
+    "label": "DRAFT - Notice of Filing of Administrative Motion to Relate Cases (Meza-Gonzalez)",
+    "path": "/documents/matter-32/ndcal/DRAFT - Notice of Filing of Administrative Motion to Relate Cases (Meza-Gonzalez).pdf"
+  },
+  {
+    "matter": 32,
+    "label": "DRAFT - Exhibit A Cover Page - Serrato Related-Cases Admin Motion",
+    "path": "/documents/matter-32/ndcal/DRAFT - Exhibit A Cover Page - Serrato Related-Cases Admin Motion.pdf"
+  },
+  {
+    "matter": 32,
+    "label": "Reply ISO Demurrer - California Highway Patrol (hearing Aug 28 2026)",
+    "path": "/documents/matter-32/from-20/Reply ISO Demurrer - California Highway Patrol (hearing Aug 28 2026).pdf"
+  },
+  {
+    "matter": 32,
+    "label": "Reply ISO Demurrer - Serrato Paul Dutra and Notice of Joinder (hearing Sep 18 2026)",
+    "path": "/documents/matter-32/from-20/Reply ISO Demurrer - Serrato Paul Dutra and Notice of Joinder (hearing Sep 18 2026).pdf"
+  },
+  {
+    "matter": 32,
+    "label": "Administrative Motion to Consider Whether Cases Should Be Related - Serrato and Meza-Gonzalez (Filed Aug 20 2026)",
+    "path": "/documents/matter-24/Administrative Motion to Consider Whether Cases Should Be Related - Serrato and Meza-Gonzalez (Filed Aug 20 2026).pdf"
+  },
+  {
     "matter": 33,
     "label": "First Amended Complaint — OPERATIVE UNSIGNED (44 pp., executed Aug. 11, 2026; caption Case No. 3:26-cv-08272-LJC, Hon. Lisa J. Cisneros; fabricated Burrell v. Jackson citation removed). Signature line blank; not clerk-stamped. Dkt. 1 remains the court pleading of record until this FAC is lodged.",
     "path": "/documents/matter-33/ndcal/FAC Nforbi v Candelaria and Gordon NDCal - OPERATIVE UNSIGNED (Aug 11 2026).pdf"
@@ -3343,6 +3423,16 @@
     "matter": 33,
     "label": "Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026)",
     "path": "/documents/matter-33/ndcal/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026).pdf"
+  },
+  {
+    "matter": 33,
+    "label": "Dkt 05 - First Amended Complaint (CONFORMED, Filed Aug 14 2026)",
+    "path": "/documents/matter-33/ndcal/Dkt 05 - First Amended Complaint (CONFORMED, Filed Aug 14 2026).pdf"
+  },
+  {
+    "matter": 33,
+    "label": "Dkt 06 - First Amended Complaint (CONFORMED, Filed Aug 17 2026)",
+    "path": "/documents/matter-33/ndcal/Dkt 06 - First Amended Complaint (CONFORMED, Filed Aug 17 2026).pdf"
   },
   {
     "matter": 33,

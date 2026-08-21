@@ -1,5 +1,96 @@
 [
   {
+    "date": "Aug. 14, 2026",
+    "event": "FILED — First Amended Complaint (Dkt. 6, CONFORMED) in Nforbi v. Meza-Gonzalez et al. (3:26-cv-08271-PHK, N.D. Cal.), 21 pp., dated Aug. 12, 2026; clerk-stamped Aug. 14, 2026. Superseded on the docket by the Aug. 17 Dkt. 5 FAC.",
+    "matters": [
+      32
+    ],
+    "type": "filing",
+    "source": "/documents/matter-32/ndcal/Dkt 06 - First Amended Complaint (CONFORMED, Filed Aug 14 2026).pdf",
+    "filed": true,
+    "upcoming": false
+  },
+  {
+    "date": "Aug. 14, 2026",
+    "event": "FILED — First Amended Complaint (Dkt. 5, CONFORMED) in Nforbi v. Candelaria et al. (3:26-cv-08272-LJC, N.D. Cal.), 46 pp.; clerk-stamped Aug. 14, 2026. Superseded on the docket by the Aug. 17 Dkt. 6 FAC.",
+    "matters": [
+      33
+    ],
+    "type": "filing",
+    "source": "/documents/matter-33/ndcal/Dkt 05 - First Amended Complaint (CONFORMED, Filed Aug 14 2026).pdf",
+    "filed": true,
+    "upcoming": false
+  },
+  {
+    "date": "Aug. 17, 2026",
+    "event": "FILED — First Amended Complaint (Dkt. 5, CONFORMED, OPERATIVE) in Nforbi v. Meza-Gonzalez et al. (3:26-cv-08271-PHK, N.D. Cal.), 21 pp., dated Aug. 17, 2026; clerk-stamped Aug. 17, 2026. Dkt. 5 is the court pleading of record. Melano AO 440 proof of service filed the same day as Dkt. 5-1.",
+    "matters": [
+      32
+    ],
+    "type": "filing",
+    "source": "/documents/matter-32/ndcal/Dkt 05 - First Amended Complaint (CONFORMED, Filed Aug 17 2026).pdf",
+    "filed": true,
+    "upcoming": false
+  },
+  {
+    "date": "Aug. 17, 2026",
+    "event": "FILED — First Amended Complaint (Dkt. 6, CONFORMED, OPERATIVE) in Nforbi v. Candelaria et al. (3:26-cv-08272-LJC, N.D. Cal.), 44 pp.; clerk-stamped Aug. 17, 2026. Dkt. 6 is the court pleading of record and omits the fabricated Burrell v. Jackson passage that Dkt. 1 carried at page 43.",
+    "matters": [
+      33
+    ],
+    "type": "filing",
+    "source": "/documents/matter-33/ndcal/Dkt 06 - First Amended Complaint (CONFORMED, Filed Aug 17 2026).pdf",
+    "filed": true,
+    "upcoming": false
+  },
+  {
+    "date": "Aug. 20, 2026",
+    "event": "FILED — Administrative Motion to Consider Whether Cases Should Be Related (Civil L.R. 3-12 and 7-11) in Newanforbi v. Serrato (4:26-cv-05953-ASK, N.D. Cal.), clerk-stamped Aug. 20, 2026, asking the Court to relate this action to Nforbi v. Meza-Gonzalez (3:26-cv-08271-PHK).",
+    "matters": [
+      24,
+      32
+    ],
+    "type": "filing",
+    "source": "/documents/matter-24/Administrative Motion to Consider Whether Cases Should Be Related - Serrato and Meza-Gonzalez (Filed Aug 20 2026).pdf",
+    "filed": true,
+    "upcoming": false
+  },
+  {
+    "date": "Aug. 20, 2026",
+    "event": "FILED — Plaintiff's Notice of Voluntary Dismissal of Defendant Katie Palacios pursuant to Fed. R. Civ. P. 41(a)(1)(A)(i) in Newanforbi v. Derrick et al. (2:26-cv-00004-DJC-JDP, E.D. Cal.), clerk-stamped Aug. 20, 2026, citing the Aug. 13, 2026 Order to Show Cause (ECF No. 33).",
+    "matters": [
+      3
+    ],
+    "type": "filing",
+    "source": "/documents/matter-03/Notice of Voluntary Dismissal - Katie Palacios (Filed Aug 20 2026).pdf",
+    "filed": true,
+    "upcoming": false
+  },
+  {
+    "date": "Aug. 21, 2026",
+    "event": "Received and lodged Respondent California Highway Patrol's Reply in Support of Demurrer to Petition for Writ of Mandate in Newanforbi v. CHP et al. (26CV191136, Alameda Sup. Ct.); hearing Aug. 28, 2026, Dept. 25, Hon. Jenna M. Whitman.",
+    "matters": [
+      20
+    ],
+    "type": "filing",
+    "source": "/documents/matter-32/from-20/Reply ISO Demurrer - California Highway Patrol (hearing Aug 28 2026).pdf",
+    "filed": true,
+    "upcoming": false,
+    "actor": "opposing"
+  },
+  {
+    "date": "Aug. 21, 2026",
+    "event": "Received and lodged Reply in Support of Demurrer by Respondents Gerardo Serrato, Gary Paul, and Eric Dutra, with Notice of Joinder to CHP's reply, in Newanforbi v. CHP et al. (26CV191136, Alameda Sup. Ct.); caption hearing Sep. 18, 2026.",
+    "matters": [
+      20
+    ],
+    "type": "filing",
+    "source": "/documents/matter-32/from-20/Reply ISO Demurrer - Serrato Paul Dutra and Notice of Joinder (hearing Sep 18 2026).pdf",
+    "filed": true,
+    "upcoming": false,
+    "actor": "opposing"
+  },
+  {
     "date": "Aug. 18, 2026",
     "event": "Letter confirming the 15-day extension of Randstad's time to respond drafted and executed — addressed to Chadwick L. Williams (Kabat Chapman & Ozmer LLP) in reply to his 2:11 p.m. email. Confirms the extension through and including Sept. 15, 2026 and fixes its scope on the face of the document: Randstad US, LLC only; a single 15-day extension with no further extension implied; no waiver of any right, including entry of default after Sept. 15; RK Logistics unaffected and still due Aug. 31, 2026; and an offer to sign a stipulation and proposed order if Randstad prefers the extension on file. Also asks counsel to confirm authority to accept service and consent to electronic service under CCP §1010.6, and notes the accepted $500,000 CCP §425.115 notice as to Randstad. Not yet transmitted.",
     "matters": [
@@ -75,7 +166,7 @@
   },
   {
     "date": "Aug. 17, 2026",
-    "event": "OPERATIVE FAC TEXTS IDENTIFIED — Plaintiff supplied the unsigned First Amended Complaints that are the portfolio-operative pleadings to lodge. Matter 32 (3:26-cv-08271-PHK): 21 pp., executed Aug. 12, 2026, caption carries Hon. Peter H. Kang; signature line blank; not clerk-stamped. Matter 33 (3:26-cv-08272-LJC): 44 pp., executed Aug. 11, 2026, caption carries Hon. Lisa J. Cisneros; Burrell v. Jackson omitted; signature line blank; not clerk-stamped. Neither FAC is on the docket. Dkt. 1 in each case remains the court pleading of record. Rule 15(a)(1)(A) amendment-as-of-course after the Aug. 14, 2026 personal service runs to Sep. 4, 2026.",
+    "event": "UNSIGNED FAC DRAFTS ARCHIVED — Plaintiff had identified unsigned First Amended Complaints as the portfolio drafts to lodge (Matter 32: 21 pp. dated Aug. 12; Matter 33: 44 pp. dated Aug. 11). Both were subsequently clerk-stamped and docketed (see Aug. 14 and Aug. 17 FAC filing entries). These unsigned copies are retained as superseded drafts only.",
     "matters": [
       32,
       33

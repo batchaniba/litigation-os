@@ -158,7 +158,7 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 |---|---|---|---|---|---|
 | 12 | Brendan Ngwa Nforbi v. Diamond Truck Sales, Inc. | STK-CV-UF-2026-0001094 | San Joaquin Sup. Ct. | State | Defense appeared, disputes service — CMC Dec. 11, 2026 |
 | 19 | Newanforbi v. Macomber | C2604791 | Santa Clara Sup. Ct. | State | HC-004 refreshed Aug. 17 — ruling overdue since Aug. 1, 2026 |
-| 20 | Newanforbi v. California Highway Patrol, et al. | 26CV191136 | Alameda Sup. Ct. | State | Demurrer hearing Aug. 28, 2026 — CMC continued to Sep. 2 |
+| 20 | Newanforbi v. California Highway Patrol, et al. | 26CV191136 | Alameda Sup. Ct. | State | CHP demurrer reply in; hearing Aug. 28 — CMC Sep. 2 |
 | 22 | Newanforbi v. Pilot Travel Centers LLC | STK-CV-UWT-2026-0007649 | San Joaquin Sup. Ct. | State | Settled Jul. 14, 2026 ($35,000) |
 | 24 | Newanforbi v. Serrato | 4:26-cv-05953-ASK | USDC N.D. Cal. | Federal | Served Aug. 5, 2026 — answer due Aug. 26; CMC Sep. 15 |
 | 25 | Newanforbi v. Federal Express Corporation | STK-CV-UWT-2026-0009118 | San Joaquin Sup. Ct. | State | Served Jul. 24, 2026 — response due Aug. 24 |
@@ -168,8 +168,8 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | 29 | Newanforbi v. Amazon.com Services, LLC | 26CV201554 | Alameda Sup. Ct. (Hayward Hall of Justice, Dept. 520) | State | Fee paid / notices e-filed Aug. 6 — response due Aug. 31 |
 | 30 | Newanforbi v. Moua, et al. | TBD | USDC N.D. Cal. | Federal | Pre-filing — GCA claim pending; Moua-only complaint ready |
 | 31 | Newanforbi v. First Advantage LLC | TBD | San Joaquin Sup. Ct. (anticipated) | State | Pre-filing |
-| 32 | Nforbi v. Meza-Gonzalez, et al | 3:26-cv-08271-PHK | USDC N.D. Cal. (docketed Aug. 10, 2026; related Serrato 4:26-cv-05953-ASK and Candelaria 3:26-cv-08272-LJC) | Federal | Served Aug. 14, 2026 — response due Sep. 4; CMC Dec. 2 |
-| 33 | Nforbi v. Candelaria et al. | 3:26-cv-08272-LJC | USDC N.D. Cal. (San Francisco Div.) | Federal | Served Aug. 14, 2026 — response due Sep. 4; CMC Nov. 12 |
+| 32 | Nforbi v. Meza-Gonzalez, et al | 3:26-cv-08271-PHK | USDC N.D. Cal. (docketed Aug. 10, 2026; related Serrato 4:26-cv-05953-ASK and Candelaria 3:26-cv-08272-LJC) | Federal | FAC filed Aug. 17 (Dkt. 5) — resp. due Sep. 4; CMC Dec. 2 |
+| 33 | Nforbi v. Candelaria et al. | 3:26-cv-08272-LJC | USDC N.D. Cal. (San Francisco Div.) | Federal | FAC filed Aug. 17 (Dkt. 6) — resp. due Sep. 4; CMC Nov. 12 |
 | 34 | Newanforbi v. Counseling and Psychotherapy Center, Inc., et al. | TBD | USDC N.D. Cal. (San Jose Div.) / Santa Clara Sup. Ct. | Federal | Pre-filing — intake & compliance monitoring |
 <!-- PORTFOLIO:ACTIVE_MATTERS:END -->
 
@@ -184,7 +184,7 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 |---|---|---|---|---|
 | 1 | Newanforbi v. CHP et al. | 2:25-cv-01460-DC-CSK | USDC E.D. Cal. | Dismissed w/o prejudice — Aug. 15; refiled as Matter 32 |
 | 2 | Newanforbi v. Meza-Gonzalez et al. | 26CV168913 | Alameda Sup. Ct. | Dismissed w/o prejudice — Aug. 15, 2026 |
-| 3 | Newanforbi v. Derrick et al. | 2:26-cv-00004-DJC-JDP | USDC E.D. Cal. | Abandoned — MTD granted, FAC leave to amend Jul. 24, 2026 |
+| 3 | Newanforbi v. Derrick et al. | 2:26-cv-00004-DJC-JDP | USDC E.D. Cal. | Abandoned — Palacios dismissed Aug. 20, 2026 |
 | 4 | Newanforbi v. Derrick et al. | TBD | San Joaquin Sup. Ct. | Abandoned — voluntarily dismissed |
 | 5 | Newanforbi v. Palacios et al. | STK-CV-UF-2026-0001032 | San Joaquin Sup. Ct. | Dismissed — demurrer sustained w/o leave Jul. 15, 2026 |
 | 6 | Newanforbi v. HOPE et al. | 2:26-cv-00195-TLN-AC | USDC E.D. Cal. | Dismissed without prejudice — Jun. 1, 2026 |

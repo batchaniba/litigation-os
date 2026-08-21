@@ -4,8 +4,8 @@
   "case_no": "26CV191136",
   "court": "Alameda Sup. Ct.",
   "claims": "Writ of Mandate (CCP §1085; PC §679.10) — U Visa Certification; Declaratory Relief (CCP §1060)",
-  "status": "Active — Petition filed May 29, 2026; Opposition to CHP demurrer filed July 13. Demurrer hearing Aug. 28, 2026 (Dept. 25, Hon. Jenna M. Whitman). Individual Respondents filed joinders/demurrers July 30 with a pending stipulation to advance their hearings to the same Aug. 28 date. CMC continued to Sep. 2, 2026.",
-  "status_label": "Demurrer hearing Aug. 28, 2026 — CMC continued to Sep. 2",
+  "status": "Active — Petition filed May 29, 2026; Opposition to CHP demurrer filed July 13. CHP Reply ISO Demurrer on file (hearing Aug. 28, 2026, Dept. 25, Hon. Jenna M. Whitman). Individual Respondents Serrato/Paul/Dutra Reply ISO Demurrer and Notice of Joinder on file (caption hearing Sep. 18, 2026). CMC continued to Sep. 2, 2026.",
+  "status_label": "CHP demurrer reply in; hearing Aug. 28 — CMC Sep. 2",
   "lifecycle": "active",
   "proceeding": "mandate",
   "phase": "demurrer",
@@ -231,6 +231,14 @@
     },
     {
       "path": "/documents/matter-32/from-20/Gmail - USPS eReceipt - Alameda Sheriff Service Packet Postage (Aug 3 2026).pdf"
+    },
+    {
+      "path": "/documents/matter-32/from-20/Reply ISO Demurrer - California Highway Patrol (hearing Aug 28 2026).pdf",
+      "filed": true
+    },
+    {
+      "path": "/documents/matter-32/from-20/Reply ISO Demurrer - Serrato Paul Dutra and Notice of Joinder (hearing Sep 18 2026).pdf",
+      "filed": true
     }
   ],
   "archived": false
