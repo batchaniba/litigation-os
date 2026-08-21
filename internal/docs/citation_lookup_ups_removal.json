@@ -1,0 +1,194 @@
+{
+  "generated": "2026-08-20",
+  "scope": "Authorities cited in Defendant United Parcel Service, Inc.'s Notice of Removal, USDC E.D. Cal. No. 1:26-at-03195 (Matter 26), filed Aug. 20, 2026. Opposing-counsel authorities: not part of the plaintiff-filing citation ledger and not subject to the citations:check CI gate, which scans plaintiff filings only.",
+  "method": "The standard funnel (npm run citations:lookup) could NOT run in this environment: the session's network egress policy returns HTTP 403 on CONNECT to both www.courtlistener.com and static.case.law, so lookup-citations.py returned NOT_FOUND for every cite INCLUDING the Richardson v. McKnight control. That is a source-reachability failure, not evidence about any citation. Existence was instead confirmed through WebSearch against Justia, FindLaw, CourtListener, vLex and the Ninth Circuit's own opinion server. Existence and reporter pin only — characterization against opinion text was not performed except where noted.",
+  "controls": {
+    "richardson_v_mcknight_521_US_399": "INCONCLUSIVE — sources unreachable (403 at proxy)",
+    "in_re_leman_66_CalApp5th_200": "INCONCLUSIVE — sources unreachable (403 at proxy)",
+    "note": "Neither control resolved, so the automated run is void. Manual results below."
+  },
+  "results": [
+    {
+      "citation": "574 U.S. 81, 135 S. Ct. 547 (2014)",
+      "caption": "Dart Cherokee Basin Operating Co., LLC v. Owens",
+      "court_year": "U.S. 2014",
+      "consensus": "VERIFIED",
+      "note": "Exists; pin and parallel cite correct. Holding matches UPS's use at para. 13 — a notice of removal need not include evidence of the amount in controversy unless the plaintiff or the court challenges the allegation. NOTE: the second clause is the operative one. Dart Cherokee does not insulate UPS's amount-in-controversy allegation once contested.",
+      "sources": [
+        "supreme.justia.com",
+        "case-law.vlex.com",
+        "law.cornell.edu"
+      ]
+    },
+    {
+      "citation": "797 F.2d 747, 749 (9th Cir. 1986)",
+      "caption": "Lew v. Moss",
+      "court_year": "9th Cir. 1986",
+      "consensus": "VERIFIED",
+      "note": "Exists; domicile framework as cited.",
+      "sources": [
+        "law.justia.com",
+        "case-law.vlex.com",
+        "law.resource.org"
+      ]
+    },
+    {
+      "citation": "265 F.3d 853, 857 (9th Cir. 2001)",
+      "caption": "Kanter v. Warner-Lambert Co.",
+      "court_year": "9th Cir. 2001",
+      "consensus": "VERIFIED",
+      "note": "Exists; the quoted 'permanent home ... intention to remain' language is Kanter's, citing Lew v. Moss.",
+      "sources": [
+        "courtlistener.com",
+        "openjurist.org",
+        "casemine.com"
+      ]
+    },
+    {
+      "citation": "115 F.2d 160, 162 (9th Cir. 1940)",
+      "caption": "Owens v. Huntling",
+      "court_year": "9th Cir. 1940",
+      "consensus": "VERIFIED",
+      "note": "Exists (decided Sept. 30, 1940); 'fixed habitation or abode in a particular place' language is the case's.",
+      "sources": [
+        "case-law.vlex.com",
+        "courtlistener.com"
+      ]
+    },
+    {
+      "citation": "130 S. Ct. 1181 (2010)",
+      "caption": "Hertz Corp. v. Friend",
+      "court_year": "U.S. 2010",
+      "consensus": "VERIFIED_PIN_UNCHECKED",
+      "note": "Exists; parallel cite is 559 U.S. 77. UPS omits the U.S. cite and pins the nerve-center holding to 'Id. at 1184-1185,' which falls in the opening pages of the opinion. The pin could not be checked — Leagle and Justia are both blocked at the proxy. Low stakes: the holding is correctly stated.",
+      "sources": [
+        "case-law.vlex.com",
+        "quimbee.com",
+        "en.wikipedia.org"
+      ]
+    },
+    {
+      "citation": "311 F.3d 966, 971 (9th Cir. 2002)",
+      "caption": "Soliman v. Philip Morris Inc.",
+      "court_year": "9th Cir. 2002",
+      "consensus": "VERIFIED_PARTLY_MISCHARACTERIZED",
+      "note": "Exists. Sound for UPS's para. 20 (Doe citizenship disregarded on removal) — though the governing text is 28 U.S.C. 1441(b)(1), which UPS also cites. NOT sound for para. 21: Soliman holds that a procedural defect existing at removal but cured before judgment does not warrant remand. It is not authority that a fictitious defendant's identity is 'only relevant at the time Plaintiff will seek leave to amend.' That framing omits 28 U.S.C. 1447(e), under which a court presented with post-removal joinder of a non-diverse defendant may deny joinder OR permit joinder and remand.",
+      "sources": [
+        "law.justia.com",
+        "caselaw.findlaw.com"
+      ]
+    },
+    {
+      "citation": "2025 WL 25549 (E.D. Cal. Jan. 3, 2025), No. 1:24-CV-01017-BAM",
+      "caption": "Ruelaz v. Leprino Foods Co.",
+      "court_year": "E.D. Cal. 2025",
+      "consensus": "UNVERIFIED",
+      "note": "Case and docket EXIST — Ruelaz v. Leprino Foods Company, E.D. Cal. No. 1:24-cv-01017-BAM (Mag. J. Barbara A. McAuliffe), filed 2024, with an early-January-2025 order indexed by commercial reporters. The Westlaw pin and, more importantly, UPS's quoted parenthetical -- 'courts may never consider allegations relating to Doe defendants when assessing diversity for removal purposes' -- could NOT be confirmed: every full-text host (casemine, justia, govinfo, courtlistener) is blocked at this session's egress proxy. The absolute 'never' is worth checking against the order before relying on or conceding the proposition. Unpublished district-court order; not binding.",
+      "sources": [
+        "dockets.justia.com",
+        "pacermonitor.com",
+        "unicourt.com"
+      ]
+    },
+    {
+      "citation": "888 F.3d 413, 416-18 (9th Cir. 2018)",
+      "caption": "Chavez v. JPMorgan Chase & Co.",
+      "court_year": "9th Cir. 2018",
+      "consensus": "VERIFIED",
+      "note": "Exists (No. 16-55957, decided Apr. 20, 2018). Holding as cited: the amount in controversy is not capped at pre-removal damages and includes all relief a court may grant on the operative complaint. UPS's caption spacing ('JP Morgan Chase &Co.') is a typo. NOTE the factual distance: Chavez had deposition testimony of a >$39,000 salary and nine intended further years of work; here there is no wage record at all because Plaintiff was never hired.",
+      "sources": [
+        "cdn.ca9.uscourts.gov",
+        "law.justia.com",
+        "courtlistener.com"
+      ]
+    },
+    {
+      "citation": "726 F.3d 1118, 1121-22 (9th Cir. 2013)",
+      "caption": "Urbino v. Orkin Services of California, Inc.",
+      "court_year": "9th Cir. 2013",
+      "consensus": "VERIFIED_CAPTION_TYPO",
+      "note": "Exists (No. 11-56944, decided Aug. 13, 2013). UPS writes 'Orkins Servs. Of Cal.'; the caption is Orkin Services of California. Substantively a PAGA non-aggregation case, cited here only for the preponderance standard it recites.",
+      "sources": [
+        "law.justia.com",
+        "caselaw.findlaw.com"
+      ]
+    },
+    {
+      "citation": "471 F. App'x 646, 648 (9th Cir. 2012)",
+      "caption": "Campbell v. Vitran Express, Inc.",
+      "court_year": "9th Cir. 2012",
+      "consensus": "VERIFIED",
+      "note": "Exists (No. 12-55052, decided Mar. 8, 2012). Unpublished memorandum disposition — under 9th Cir. R. 36-3 it is not precedent, a limitation UPS's citation does not note.",
+      "sources": [
+        "law.justia.com",
+        "classaction.org"
+      ]
+    },
+    {
+      "citation": "199 F. Supp. 2d 993, 1001 (C.D. Cal. 2002)",
+      "caption": "Kenneth Rothschild Trust v. Morgan Stanley Dean Witter",
+      "court_year": "C.D. Cal. 2002",
+      "consensus": "MISCITED_YEAR",
+      "note": "Case exists and the reporter pin is right, but it was decided MARCH 27, 2002 (No. CV 01-10816 MMM (MANx)). UPS's parenthetical reads '(C.D. Cal. 2022)' — a twenty-year error in the year. The quoted proposition (court assumes the complaint's allegations true and assumes a plaintiff's verdict on all claims) is the case's.",
+      "sources": [
+        "courtlistener.com",
+        "cacd.uscourts.gov",
+        "casemine.com"
+      ]
+    },
+    {
+      "citation": "142 F.3d 1150, 1155-56 (9th Cir. 1998)",
+      "caption": "Galt G/S v. JSS Scandinavia",
+      "court_year": "9th Cir. 1998",
+      "consensus": "VERIFIED_QUALIFIER_OMITTED",
+      "note": "Exists. The actual holding carries a qualifier UPS drops: fees count toward the amount in controversy 'where an underlying statute authorizes an award of attorneys' fees.' Here PC 290.46(j)(4)(A) and Civ. Code 1786.50 do authorize fees — but only to a party who can recover them, and a non-attorney proceeding pro se generally cannot.",
+      "sources": [
+        "courtlistener.com",
+        "openjurist.org",
+        "case-law.vlex.com"
+      ]
+    },
+    {
+      "citation": "840 F.3d 644, 648-49 (9th Cir. 2016)",
+      "caption": "Gonzales v. CarMax Auto Superstores, LLC",
+      "court_year": "9th Cir. 2016",
+      "consensus": "VERIFIED",
+      "note": "Exists; cited within Chavez as UPS represents.",
+      "sources": [
+        "syfert.com",
+        "courtlistener.com"
+      ]
+    },
+    {
+      "citation": "899 F.3d 785, 794 (9th Cir. 2018)",
+      "caption": "Fritsch v. Swift Transportation Co. of Arizona, LLC",
+      "court_year": "9th Cir. 2018",
+      "consensus": "VERIFIED_CUTS_BOTH_WAYS",
+      "note": "Exists (No. 18-55746, decided Aug. 8, 2018). UPS cites it for inclusion of future fees. The same opinion places the burden on the removing defendant to PROVE the amount of future fees by a preponderance of the evidence. UPS offers no rate, no hours, and no declaration — and Plaintiff is pro se. Fritsch is the strongest authority AGAINST UPS's fee component, not for it.",
+      "sources": [
+        "cdn.ca9.uscourts.gov",
+        "law.justia.com",
+        "case-law.vlex.com"
+      ]
+    }
+  ],
+  "plaintiff_side_authorities_added_to_matter_26": [
+    {
+      "citation": "281 F.3d 837, 840 (9th Cir. 2002)",
+      "caption": "Cohn v. PetSmart, Inc.",
+      "court_year": "9th Cir. 2002",
+      "consensus": "VERIFIED",
+      "note": "Exists. A settlement demand letter is relevant evidence of the amount in controversy where it appears to reflect a reasonable estimate of the claim. This is why a remand motion is not worth filing: Plaintiff's own July 12, 2026 pre-filing demand was $85,000.",
+      "sources": [
+        "law.justia.com",
+        "caselaw.findlaw.com",
+        "law.resource.org"
+      ]
+    }
+  ],
+  "open_items": [
+    "Ruelaz parenthetical — pull the Jan. 2025 order from PACER/CM-ECF and check the word 'never'.",
+    "Hertz pin 130 S. Ct. at 1184-85 — confirm against the opinion.",
+    "Re-run npm run citations:lookup from an environment whose egress policy allows courtlistener.com and static.case.law, so these land in the machine-readable ledger."
+  ]
+}

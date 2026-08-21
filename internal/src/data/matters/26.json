@@ -1,18 +1,18 @@
 {
   "number": 26,
   "caption": "Newanforbi v. United Parcel Service, Inc.",
-  "case_no": "STK-CV-UWT-2026-0009113",
-  "court": "San Joaquin Sup. Ct.",
+  "case_no": "2:26-cv-02847-DAD-CKD",
+  "court": "USDC E.D. Cal. (Sacramento Div.)",
   "claims": "PC §290.46(j)(2)(E) Violation, Failure to Hire (Tameny), ICRAA, Invasion of Privacy, Negligence Per Se, UCL §17200",
-  "status": "Filed July 15, 2026 — limitations preserved 16 days ahead of the July 31, 2026 cutoff (Dept. 11B, Hon. Robert T. Waters; CMC Jan. 13, 2027). Served July 22, 2026 on UPS via CSC; responsive pleading due Aug. 21, 2026. Amended CCP §425.115 notice ($250,000) executed and signed Aug. 17, 2026 — not yet filed or served.",
+  "status": "REMOVED AND ASSIGNED — UPS removed to USDC E.D. Cal. on Aug. 20, 2026 under 28 U.S.C. §§ 1332(a) and 1441(a)-(b). The clerk assigned it the same day to the SACRAMENTO Division as No. 2:26-cv-02847-DAD-CKD (PS), D.J. Dale A. Drozd and M.J. Carolyn K. Delaney on referral under L.R. 302(c)(21). The docket caption reads BRENDAN NGEHSI NEWANFORBI and an Initial Scheduling Order issued the same day. UPS's response is due Aug. 27, 2026 under Fed. R. Civ. P. 81(c)(2)(C). Both requests in Plaintiff's drafted notice were mooted before filing.",
   "lifecycle": "active",
-  "proceeding": "state_civil",
+  "proceeding": "federal_civil",
   "phase": "responsive_deadline",
   "filed": "July 15, 2026",
-  "judge": "Hon. Robert T. Waters, Dept. 11B",
+  "judge": "Hon. Dale A. Drozd, D.J.; Hon. Carolyn K. Delaney, M.J.",
   "cluster": 3,
-  "type": "State",
-  "badge": "TIMELY",
+  "type": "Federal",
+  "badge": "REMOVED",
   "defendants": "United Parcel Service, Inc.; and DOES 1 through 10, inclusive",
   "causes": [
     "Violation of Cal. Penal Code § 290.46(j)(2)(E)",
@@ -23,9 +23,9 @@
     "Unlawful Business Practices (Bus. & Prof. Code § 17200 et seq.)"
   ],
   "key_facts": "In or around mid-2024, Plaintiff applied for a position in UPS's delivery and logistics operations in California. As part of its standard pre-employment screening, UPS initiated a background check through First Advantage (fadv.com). On July 22, 2024 at 9:57 AM, Plaintiff received a 'Pre Adverse Action Notification regarding your application with UPS' from First Advantage (DoNotReply@fadv.com) directing him to review the report for 'UNITED PARCEL SERVICE' via a secure portal link. Reminder notices followed on July 23, 2024 (10:00 AM) and July 27, 2024 (10:00 AM). On July 31, 2024 at 9:57 AM — nine days after the original pre-adverse notice — Plaintiff received a 'Final Adverse Action Notification regarding your application with UPS,' confirming UPS had taken final adverse action, definitively denying him employment. UPS provided no written communication identifying any basis for the denial other than the background screening report; no other disqualifying information existed in Plaintiff's application. Plaintiff is a registrant on California's Megan's Law sex offender registry, and alleges on information and belief that the First Advantage report disclosed that status to UPS (together with a statutory disclaimer warning that the information could not lawfully be used for employment purposes) and that UPS used it as the basis for the denial, in violation of Penal Code § 290.46(j)(2)(E).",
-  "procedural_status": "Pre-filing demand July 12, 2026 ($85,000; deadline July 26). Complaint filed July 15, 2026 (STK-CV-UWT-2026-0009113); FW-003 granted. As with Matter 25, the First Advantage report is unavailable — registry use pled on information and belief. Served July 22, 2026 via Sacramento County Sheriff on Josh Swindell / CSC; POS-010 mailed to court July 28, 2026. Responsive pleading due Aug. 21, 2026 (meet-and-confer by ~Aug. 14 if demurrer). Amended §425.115 ($250,000) executed and signed Aug. 17, 2026, superseding the Aug. 4 $25,000 placeholder and the unsigned Aug. 7 generated original — not yet filed or served. Same-day/same-court filing as Matter 25; CRC 3.300 notice unlikely. Dated service/deadline beats live in timeline.json.",
+  "procedural_status": "Complaint filed July 15, 2026 (San Joaquin Sup. Ct. STK-CV-UWT-2026-0009113); FW-003 granted; served July 22, 2026 on UPS via Sacramento County Sheriff. REMOVED Aug. 20, 2026 and assigned the same day to USDC E.D. Cal., Sacramento Division, as No. 2:26-cv-02847-DAD-CKD (PS). Nature of suit coded 442 Civil Rights: Jobs; jurisdiction Diversity; jury demand Both. Docket as of Aug. 20, 2026: Dkt. 1 Notice of Removal (fee $405, receipt ACAEDC-13761260, with civil cover sheet, Felsing declaration, and Rule 7.1 statement); Dkt. 2 Civil New Case Documents / Initial Scheduling Order signed by M.J. Delaney, plus Dkt. 2-1 magistrate-consent materials, served on Plaintiff by mail; Dkt. 3 UPS certificate of service attesting service of the removal papers on Plaintiff by mail at 1455 Cat Tail Drive on Aug. 20, 2026. UPS's counsel of record is Vanessa W. Mott alone, at 5800 Armada Drive, Suite 101, Carlsbad — not the Costa Mesa address on the removal papers; Alyssa R. Daskas is not on the docket. UPS's certificate lists Plaintiff's email as 'Bnn.cdla@gmail.com', which is wrong (bnn.cdl@gmail.com); service was by mail so no prejudice, but correct it at the first opportunity. INITIAL SCHEDULING ORDER terms: because this is a removed action, footnote 1 puts the service obligation on UPS — it must serve the order and the consent form on Plaintiff and file a notice of that service; the 90-day Rule 4(m) service duty in paragraph 2 does not run against Plaintiff. If UPS responds by motion, it notices the hearing under L.R. 230(b) and Plaintiff's opposition is due 14 days after the motion is FILED (L.R. 230(c)) — failure to oppose may be taken as consent to granting it — while Fed. R. Civ. P. 15(a)(1)(B) allows one amendment as of right within 21 days of service of a Rule 12(b), (e) or (f) motion. If UPS answers, the parties confer under Rule 26 within 30 days and file a joint status report 7 days later. Consent/Decline of magistrate jurisdiction to be filed as soon as practicable. Neither Plaintiff's Aug. 20 Notice of Errata nor the Aug. 21 Amended Notice was filed — both were mooted by the Sacramento assignment and the correct docket caption. Dated deadline beats live in timeline.json.",
   "damages": "Statutory civil remedy under PC § 290.46(j)(4)(A): actual damages or $25,000, whichever is greater, plus attorney fees, for each unlawful use of registry information. CONSERVATIVE: ~$33,000 (statutory minimum plus modest emotional distress; no wage documentation on file, since Plaintiff never began working for UPS). MODERATE: ~$85,000 (statutory penalty, ICRAA punitive damages up to $5,000 for willful noncompliance, emotional distress, and partial fee-shifting). AGGRESSIVE: ~$200,000 (aggregation across all six causes of action plus Civil Code § 3294 punitive damages, if discovery yields the actual First Advantage report and confirms willful registry-based denial). As with Matter 25, there are no lost W-2 wages to claim — the primary economic recovery theory is the statutory penalty and lost opportunity/career-advancement damages.",
-  "risk": "Favorable on the law (PC § 290.46(j)(2)(E) is categorical and exception-free; negligence per se under Evid. Code § 669) but evidentiarily thinner than Matters 22/23 — UPS never issued a written admission naming the registry as the basis for denial, and the complaint pleads UPS's actual use of registry information 'on information and belief' throughout. The First Advantage notices establish the timeline (application → pre-adverse notice → two reminders → 9-day gap → final adverse action). The limitations risk has been eliminated: the July 15, 2026 filing preserved all time-sensitive claims 16 days before the July 31, 2026 two-year cutoff from the July 31, 2024 adverse action. Discovery (subpoena to First Advantage for the underlying report, or UPS's hiring file) would be needed to convert the information-and-belief pleading to a proven claim. On punitives: the Aug. 17 amended §425.115 ($250,000) sets a default ceiling only — any prove-up award still requires evidence of UPS's financial condition (Adams v. Murakami (1991) 54 Cal.3d 105).",
+  "risk": "Merits posture unchanged by removal — a federal court sitting in diversity applies the same California substantive law. PC §290.46(j)(2)(E) remains categorical and exception-free; negligence per se under Evid. Code §669. The evidentiary gap is unchanged and is still the case: UPS's actual use of registry information is pled on information and belief, and the First Advantage report is not in hand. REMAND: not worth filing. UPS's own amount-in-controversy math concedes the point is close — $21/hr x 16 hrs/wk x 179 weeks = $60,144, below the $75,000 threshold, and its ¶34 says a conservative estimate only 'nearly exceeds' it — and its future-attorney's-fee theory for a pro se plaintiff is unsupported by any evidence, contrary to Fritsch v. Swift Transp. Co. of Ariz., LLC, 899 F.3d 785, 794-95 (9th Cir. 2018). But Plaintiff's own July 12, 2026 pre-filing demand of $85,000 is admissible evidence of the amount in controversy under Cohn v. PetSmart, Inc., 281 F.3d 837, 840 (9th Cir. 2002), and the PC §290.46(j)(4)(A) statutory floor (greater of actual damages or $25,000 per unlawful use, plus fees) stacks on top of the $60,144 wage figure. A remand motion loses and costs a month. UPSIDE OF REMOVAL: Fed. R. Civ. P. 26(a)(1) initial disclosures and Rule 45 reach the First Advantage report without a demurrer cycle; UPS has demanded a jury; and a 15 U.S.C. §1681b(b)(3)(A) FCRA claim — already supported by the pre-adverse/final-adverse notices in evidence — is now natively at home here and carries real fee-shifting under §§1681n-1681o, which is the fee theory that actually works for a pro se plaintiff. DOWNSIDE: expect a Rule 12(b)(6) by Aug. 27, 2026 whose likely headline is that Tameny reaches wrongful discharge and does not extend to a refusal to hire — UPS's ¶6 already mischaracterizes this as a case 'arising from his employment with UPS,' which it is not. On punitives, the Aug. 17 §425.115 notice sets nothing in federal court; a punitive award still requires evidence of UPS's financial condition (Adams v. Murakami (1991) 54 Cal.3d 105).",
   "evidence": [
     "First Advantage Pre Adverse Action Notification, July 22, 2024, 9:57 AM — background screening report for 'UNITED PARCEL SERVICE'",
     "First Advantage reminder notice, July 23, 2024, 10:00 AM",
@@ -98,8 +98,38 @@
     },
     {
       "path": "/documents/matter-26/Sacramento County Sheriff E-Filing Order O26005511 (SUBMITTED, Aug 3 2026) - CCP 425.115 Notice.pdf"
+    },
+    {
+      "path": "/documents/matter-26/Notice of Removal to Federal Court - United Parcel Service Inc (E.D. Cal. 1-26-at-03195) (Aug 20 2026).pdf"
+    },
+    {
+      "path": "/documents/matter-26/Notice of Errata and Request for Intradistrict Reassignment (E.D. Cal. 1-26-at-03195) (Aug 20 2026).pdf"
+    },
+    {
+      "path": "/documents/matter-26/Amended Notice Regarding Caption and Request for Intradistrict Reassignment (E.D. Cal. 1-26-at-03195) (Aug 21 2026).pdf"
+    },
+    {
+      "path": "/documents/matter-26/PACER Docket Report - E.D. Cal. 2-26-cv-02847-DAD-CKD (Aug 20 2026).pdf"
+    },
+    {
+      "path": "/documents/matter-26/PACER History-Documents Report - E.D. Cal. 2-26-cv-02847-DAD-CKD (Aug 20 2026).pdf"
+    },
+    {
+      "path": "/documents/matter-26/Dkt 01 - Notice of Removal as Docketed, E.D. Cal. Sacramento (Aug 20 2026).pdf"
+    },
+    {
+      "path": "/documents/matter-26/Dkt 02 - Initial Scheduling Order and Magistrate Judge Consent Materials (Aug 20 2026).pdf"
+    },
+    {
+      "path": "/documents/matter-26/Dkt 03 - Certificate of Service of Removal Papers by UPS (Aug 20 2026).pdf"
+    },
+    {
+      "path": "/documents/matter-26/USPS Package Intercept - Order o2568695706 (Aug 20 2026).pdf"
+    },
+    {
+      "path": "/documents/matter-26/USPS Package Intercept Confirmation Email - Order o2568695706 (Aug 20 2026).pdf"
     }
   ],
   "archived": false,
-  "status_label": "Served Jul. 22, 2026 — response due Aug. 21"
+  "status_label": "E.D. Cal. Sacramento 2:26-cv-02847 — UPS due Aug. 27"
 }
