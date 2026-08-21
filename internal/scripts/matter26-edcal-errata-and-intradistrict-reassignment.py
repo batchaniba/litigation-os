@@ -175,12 +175,12 @@ CONTENT = [
      "will first ask Defendant whether it will stipulate."),
     ("PARA",
      "10. Reassignment also serves the convenience of the parties and of any witnesses. "
-     "Plaintiff resides in Stockton, in San Joaquin County -- a fact on which Defendant "
-     "itself relies to establish diversity of citizenship. See Notice of Removal, paragraphs "
-     "15-16; Felsing Decl., paragraph 6. The employment application at issue, the "
-     "adverse-action correspondence, and the entire state-court record originate in or "
-     "around San Joaquin County. Sacramento is roughly fifty miles from Stockton; Fresno is "
-     "roughly one hundred thirty."),
+     "This action arose in San Joaquin County: the Complaint was filed there, the Superior "
+     "Court in which the action was pending sits there, and the state-court record now "
+     "before this Court originates there. Sacramento County adjoins San Joaquin County; "
+     "Fresno lies roughly one hundred thirty miles to the south. Defendant identifies no "
+     "connection between this action and any county assigned to the Fresno Division, and "
+     "none appears on the face of its removal papers."),
 
     ("HEADER", "III.\nRELIEF REQUESTED"),
     ("PARA", "11. Plaintiff respectfully requests that the Court:"),
@@ -237,8 +237,7 @@ def _certificate_of_service(d, exec_date: str, mailed_from: str) -> None:
     d.write_line("CERTIFICATE OF SERVICE", bold=True, center=True)
     d.blank_line()
     d.write_wrapped(
-        "I am the Plaintiff in this action and am over the age of eighteen years. My address "
-        "is 1455 Cat Tail Drive, Stockton, California 95204. On "
+        "I am the Plaintiff in this action and am over the age of eighteen years. On "
         f"{exec_date}, I served the foregoing NOTICE OF ERRATA AND REQUEST FOR "
         "INTRADISTRICT REASSIGNMENT by placing a true and correct copy in a sealed envelope, "
         "with first-class postage fully prepaid, and depositing it with the United States "
