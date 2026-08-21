@@ -3063,7 +3063,7 @@
   },
   {
     "date": "Aug. 20, 2026",
-    "event": "EXECUTED — Plaintiff's Notice of Errata Correcting Misnomer, and Request for Intradistrict Reassignment to the Sacramento Division (E.D. Cal. L.R. 120(d), (f); 28 U.S.C. 1441(a)), Newanforbi v. United Parcel Service, Inc., USDC E.D. Cal. No. 1:26-at-03195. Six pages plus certificate of service on Martenson, Hasbrouck & Simon LLP. Two requests: that the Clerk correct the caption to BRENDAN NGEHSI NEWANFORBI — Defendant's removal papers caption 'NGWANFORBI' and its Rule 7.1 statement recites that misspelling as an a.k.a. — and that the action be reassigned from the Fresno Division to the Sacramento Division, San Joaquin County being a Sacramento Division county under L.R. 120(d), as Defendant's own paragraph 37 effectively concedes. Expressly reserves all 28 U.S.C. 1447(c) objections. Executed the same day UPS removed, and ahead of UPS's Aug. 27, 2026 Fed. R. Civ. P. 81(c)(2) response so the correct name and division are on the docket before a judge is assigned.",
+    "event": "SUPERSEDED — EXECUTED — Plaintiff's Notice of Errata Correcting Misnomer, and Request for Intradistrict Reassignment to the Sacramento Division (E.D. Cal. L.R. 120(d), (f); 28 U.S.C. 1441(a)), Newanforbi v. United Parcel Service, Inc., USDC E.D. Cal. No. 1:26-at-03195. Six pages plus certificate of service on Martenson, Hasbrouck & Simon LLP. Two requests: that the Clerk correct the caption to BRENDAN NGEHSI NEWANFORBI — Defendant's removal papers caption 'NGWANFORBI' and its Rule 7.1 statement recites that misspelling as an a.k.a. — and that the action be reassigned from the Fresno Division to the Sacramento Division, San Joaquin County being a Sacramento Division county under L.R. 120(d), as Defendant's own paragraph 37 effectively concedes. Expressly reserves all 28 U.S.C. 1447(c) objections. Executed the same day UPS removed, and ahead of UPS's Aug. 27, 2026 Fed. R. Civ. P. 81(c)(2) response so the correct name and division are on the docket before a judge is assigned. SUPERSEDED Aug. 21, 2026 by an Amended Notice: paragraph 3 of this version stated that 'Ngwanforbi' is a typographical error rather than an alias and that Plaintiff had appeared under no other name. That was incorrect — Ngwanforbi is a name Plaintiff has used, and Defendant's Rule 7.1 also-known-as recital is accurate. This version was already in the mail to the Fresno clerk when the error was caught.",
     "matters": [
       26
     ],
@@ -3110,5 +3110,14 @@
     "type": "deadline",
     "upcoming": true,
     "actor": "opposing"
+  },
+  {
+    "date": "Aug. 21, 2026",
+    "event": "EXECUTED — Plaintiff's AMENDED Notice Regarding Caption, and Request for Intradistrict Reassignment to the Sacramento Division, Newanforbi v. United Parcel Service, Inc., USDC E.D. Cal. No. 1:26-at-03195. Supersedes the Aug. 20, 2026 Notice of Errata in its entirety. Part I withdraws paragraph 3 of that notice in full, states that Plaintiff has used the name Brendan Ngwanforbi, and withdraws the objection to Defendant's Rule 7.1 also-known-as recital, which is accurate. The relief sought is unchanged: the caption of a removed action is the caption of the state-court action, and this action was filed and served as BRENDAN NGEHSI NEWANFORBI, so Part II rests on that ground alone rather than on the absence of other names. Part III (L.R. 120(d), (f) reassignment from Fresno to Sacramento) carries over unchanged. Six pages plus certificate of service on Martenson, Hasbrouck & Simon LLP; mailed from San Jose.",
+    "matters": [
+      26
+    ],
+    "type": "filing",
+    "source": "/documents/matter-26/Amended Notice Regarding Caption and Request for Intradistrict Reassignment (E.D. Cal. 1-26-at-03195) (Aug 21 2026).pdf"
   }
 ]
