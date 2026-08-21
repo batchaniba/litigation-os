@@ -212,6 +212,7 @@ a { color: inherit; }
 .legacy-azimov-logo { width: 52px; height: 52px; }
 .legacy-slb-logo { width: 118px; height: 62px; }
 .legacy-garcia-logo { width: 115px; height: 39px; }
+.legacy-mhs-logo { width: 116px; height: 24px; }
 .legacy-dag-logo { width: 64px; height: 64px; object-fit: cover; border-radius: 50%; object-position: center; }
 .legacy-header-controls { display: flex; flex: 1 1 100%; flex-direction: column; align-items: stretch; gap: 8px; }
 .legacy-header-actions { display: flex; align-items: center; justify-content: flex-end; gap: var(--header-action-gap); }
@@ -842,6 +843,7 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
   /* Same box-narrower-than-asset-ratio letterbox as the desktop rule, scaled
      down by the same ~0.71 factor SLB's own box shrinks by at this breakpoint. */
   .legacy-garcia-logo { width: 83px; height: 28px; }
+  .legacy-mhs-logo { width: 83px; height: 17px; }
   .legacy-dag-logo { width: 44px; height: 44px; }
   :root { --header-action-gap: 10px; }
   .legacy-header-actions { width: 100%; justify-content: stretch; }
@@ -927,18 +929,20 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
     flex-direction: column;
     gap: 2px;
   }
-  /* Left column: Kabat (row 1), Azimov (row 2) */
+  /* Left column: Kabat (row 1), Azimov (row 2), MHS (row 3) */
   .legacy-opposing-counsel .firm-link:nth-child(1) { grid-column: 1; grid-row: 1; }
   .legacy-opposing-counsel .firm-link:nth-child(2) { grid-column: 1; grid-row: 2; }
+  .legacy-opposing-counsel .firm-link:nth-child(5) { grid-column: 1; grid-row: 3; }
   /* Right column: Garcia (row 1), SLB (row 2), DAG (row 3) */
   .legacy-opposing-counsel .firm-link:nth-child(3) { grid-column: 2; grid-row: 2; }
   .legacy-opposing-counsel .firm-link:nth-child(4) { grid-column: 2; grid-row: 1; }
-  .legacy-opposing-counsel .firm-link:nth-child(5) { grid-column: 2; grid-row: 3; }
+  .legacy-opposing-counsel .firm-link:nth-child(6) { grid-column: 2; grid-row: 3; }
   .firm-logo { object-position: center; }
   .legacy-kco-logo { width: 80px; height: 26px; }
   .legacy-azimov-logo { width: 36px; height: 36px; }
   .legacy-slb-logo { width: 72px; height: 38px; }
   .legacy-garcia-logo { width: 72px; height: 24px; }
+  .legacy-mhs-logo { width: 72px; height: 15px; }
   .legacy-dag-logo { width: 36px; height: 36px; }
   .legacy-clock-units { transform: scale(.88); transform-origin: left center; }
   .legacy-deadline-description { width: 100%; }
