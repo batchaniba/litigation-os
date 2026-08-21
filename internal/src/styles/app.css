@@ -210,6 +210,7 @@ a { color: inherit; }
 .firm-logo { flex-shrink: 0; display: block; object-fit: contain; object-position: right center; }
 .legacy-slb-logo { width: 118px; height: 62px; }
 .legacy-garcia-logo { width: 115px; height: 39px; }
+.legacy-mhs-logo { width: 116px; height: 24px; }
 .legacy-dag-logo { width: 64px; height: 64px; object-fit: cover; border-radius: 50%; object-position: center; }
 .legacy-header-controls { display: flex; flex: 1 1 100%; flex-direction: column; align-items: stretch; gap: 8px; }
 .legacy-header-actions { display: flex; align-items: center; justify-content: flex-end; gap: var(--header-action-gap); }
@@ -838,6 +839,7 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
   /* Same box-narrower-than-asset-ratio letterbox as the desktop rule, scaled
      down by the same ~0.71 factor SLB's own box shrinks by at this breakpoint. */
   .legacy-garcia-logo { width: 83px; height: 28px; }
+  .legacy-mhs-logo { width: 83px; height: 17px; }
   .legacy-dag-logo { width: 44px; height: 44px; }
   :root { --header-action-gap: 10px; }
   .legacy-header-actions { width: 100%; justify-content: stretch; }
@@ -897,6 +899,7 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
   .legacy-opposing-counsel { gap: 6px; }
   .legacy-slb-logo { width: 68px; height: 36px; }
   .legacy-garcia-logo { width: 67px; height: 23px; }
+  .legacy-mhs-logo { width: 67px; height: 14px; }
   .legacy-dag-logo { width: 36px; height: 36px; }
   .legacy-clock-units { transform: scale(.88); transform-origin: left center; }
   .legacy-deadline-description { width: 100%; }

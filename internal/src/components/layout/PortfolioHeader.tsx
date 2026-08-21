@@ -94,6 +94,13 @@ export function PortfolioHeader({
               </div>
               <img className="firm-logo legacy-garcia-logo" src={withBase(darkMode ? "/branding/garcia-gurney-dark.webp" : "/branding/garcia-gurney.webp")} alt="Garcia & Gurney, A Law Corporation" width={518} height={88} decoding="async" />
             </a>
+            <a href="https://martensonlaw.com/" target="_blank" rel="noopener noreferrer" title="Visit Martenson, Hasbrouck & Simon LLP (martensonlaw.com) ↗" className="firm-link">
+              <div className="legacy-counsel-names">
+                <div>Martenson, Hasbrouck &amp; Simon LLP</div>
+                <div className="firm-external-hint">Visit site ↗</div>
+              </div>
+              <img className="firm-logo legacy-mhs-logo" src={withBase(darkMode ? "/branding/mhs-dark.webp" : "/branding/mhs-light.webp")} alt="Martenson, Hasbrouck & Simon LLP" width={1004} height={208} decoding="async" />
+            </a>
             <a href="https://oag.ca.gov/dag-recruitment" target="_blank" rel="noopener noreferrer" title="Visit California Attorney General's Office — Deputy Attorney General recruitment (oag.ca.gov) ↗" className="firm-link">
               <div className="legacy-counsel-names">
                 {[
