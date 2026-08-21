@@ -124,8 +124,8 @@ CONTENT = [
     ("PARA",
      "3. This action was filed in the Superior Court of the State of California for the "
      "County of San Joaquin on July 15, 2026, Case No. STK-CV-UWT-2026-0009113, under the "
-     "name BRENDAN NGEHSI NEWANFORBI. That is the name on the Summons, on the Complaint, "
-     "and on every paper served on Defendant in that action."),
+     "name BRENDAN NGEHSI NEWANFORBI. That is the name on the Summons (SUM-100) and on "
+     "the Complaint served on Defendant on July 22, 2026."),
     ("PARA",
      "4. On removal, this Court takes the action as it stood in the state court, and the "
      "caption of the removed action is the caption of the state-court action. Defendant's "
