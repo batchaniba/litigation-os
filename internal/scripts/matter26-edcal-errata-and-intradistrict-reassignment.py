@@ -22,7 +22,7 @@ Rendered on the shared California pleading-paper engine and signed with the
 portfolio universal signature.
 
     python3 internal/scripts/matter26-edcal-errata-and-intradistrict-reassignment.py \
-        [--date "August 21, 2026"] [--mailed-from "Milpitas, California"] [OUT_PDF]
+        [--date "August 20, 2026"] [--mailed-from "Milpitas, California"] [OUT_PDF]
 """
 
 from __future__ import annotations
@@ -41,10 +41,10 @@ ROOT = SCRIPT_DIR.parents[1]
 DEFAULT_OUT = (
     ROOT
     / "internal/public/documents/matter-26"
-    / "Notice of Errata and Request for Intradistrict Reassignment (E.D. Cal. 1-26-at-03195) (Aug 21 2026).pdf"
+    / "Notice of Errata and Request for Intradistrict Reassignment (E.D. Cal. 1-26-at-03195) (Aug 20 2026).pdf"
 )
 
-DEFAULT_EXEC_DATE = "August 21, 2026"
+DEFAULT_EXEC_DATE = "August 20, 2026"
 # Where the service copy is actually deposited with the USPS and where the
 # certificate is executed. This is not Plaintiff's address of record (1455 Cat
 # Tail Drive, Stockton, per the Aug. 17, 2026 change of address in Matter 19) --
