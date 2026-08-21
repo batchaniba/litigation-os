@@ -22,7 +22,7 @@ Rendered on the shared California pleading-paper engine and signed with the
 portfolio universal signature.
 
     python3 internal/scripts/matter26-edcal-errata-and-intradistrict-reassignment.py \
-        [--date "August 20, 2026"] [--mailed-from "Milpitas, California"] [OUT_PDF]
+        [--date "August 20, 2026"] [--mailed-from "San Jose, California"] [OUT_PDF]
 """
 
 from __future__ import annotations
@@ -50,7 +50,7 @@ DEFAULT_EXEC_DATE = "August 20, 2026"
 # Tail Drive, Stockton, per the Aug. 17, 2026 change of address in Matter 19) --
 # a certificate of service states where the mailing happened, which need not be
 # the same place.
-DEFAULT_MAILED_FROM = "Milpitas, California"
+DEFAULT_MAILED_FROM = "San Jose, California"
 FOOTER = (
     "PLAINTIFF'S NOTICE OF ERRATA AND REQUEST FOR INTRADISTRICT REASSIGNMENT "
     "-- NEWANFORBI v. UNITED PARCEL SERVICE, INC."
