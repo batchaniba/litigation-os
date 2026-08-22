@@ -365,7 +365,7 @@ Plaintiff is representing himself pro se across all 34 matters. The figures belo
   - `proceeding` — track: `state_civil` | `federal_civil` | `mandate` | `habeas`
   - `phase` — current stage on that track (e.g. `demurrer`, `fr_pending`, `under_submission`, `responsive_deadline`; `terminal` when disposed)
 - **Timeline:** `internal/src/data/timeline.json` (full log) + generated `upcoming.json` for the shell deadline clock
-- **Documents:** `internal/public/documents/` (Matter 32: `from-01|02|20|24/` + N.D. Cal. filing under `ndcal/`; Matter 33: `incident|from-07|from-08|opinions/` + N.D. Cal. filing under `ndcal/`; blank Judicial Council templates under `_form-library/`)
+- **Documents:** `internal/public/documents/` (Matter 32: `from-01|02|20|24/` + N.D. Cal. filing under `ndcal/`; Matter 33: `incident|from-07|from-08|opinions/` + N.D. Cal. filing under `ndcal/`; blank Judicial Council templates and the portfolio Proof of Service form under `_form-library/` (see `_form-library/README.md`))
 
 ### Prose length budgets
 

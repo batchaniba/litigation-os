@@ -3,19 +3,19 @@
   "caption": "Nforbi v. Candelaria et al.",
   "case_no": "3:26-cv-08272-LJC",
   "court": "USDC N.D. Cal. (San Francisco Div.)",
-  "claims": "42 U.S.C. § 1983 — APS impartial-adjudicator / fair hearing; declaratory and injunctive relief (vacatur of APS 34739340) — Dkt. 6 (FAC filed Aug. 17, 2026) is the court pleading of record; also Candelaria / DMV APS PDF home for Matters 7/8",
+  "claims": "42 U.S.C. \u00a7 1983 \u2014 APS impartial-adjudicator / fair hearing; declaratory and injunctive relief (vacatur of APS 34739340) \u2014 Dkt. 6 (FAC filed Aug. 17, 2026) is the court pleading of record; also Candelaria / DMV APS PDF home for Matters 7/8",
   "status": "Docketed as No. 3:26-cv-08272-LJC before Mag. Lisa J. Cisneros; CMC Nov. 12, 2026. Defendants served Aug. 14, 2026; response due Sep. 4, 2026. Operative FAC is Dkt. 6 (filed Aug. 17, 2026).",
-  "status_label": "FAC filed Aug. 17 (Dkt. 6) — resp. due Sep. 4; CMC Nov. 12",
+  "status_label": "FAC filed Aug. 17 (Dkt. 6) \u2014 resp. due Sep. 4; CMC Nov. 12",
   "lifecycle": "active",
   "proceeding": "federal_civil",
   "phase": "responsive_deadline",
-  "note": "N.D. Cal. § 1983 refile docketed Aug. 10, 2026 as No. 3:26-cv-08272-LJC (ndcal/), after voluntary dismissal of Matter 7 E.D. Cal. (confirmed filed Aug. 15, 2026). Also owns the Candelaria/DMV APS document set; Matters 7 and 8 remain historical docket records and cross-reference these paths.",
+  "note": "N.D. Cal. \u00a7 1983 refile docketed Aug. 10, 2026 as No. 3:26-cv-08272-LJC (ndcal/), after voluntary dismissal of Matter 7 E.D. Cal. (confirmed filed Aug. 15, 2026). Also owns the Candelaria/DMV APS document set; Matters 7 and 8 remain historical docket records and cross-reference these paths.",
   "badge": "FAC FILED",
   "filed": "August 10, 2026 (docketed; complaint signed Aug. 7, 2026)",
   "judge": "Hon. Lisa J. Cisneros (Magistrate Judge)",
   "cluster": 1,
   "type": "Federal",
-  "defendants": "Diana Candelaria (DMV Driver Safety Hearing Officer), individually; Steve Gordon, Director, California DMV, in his official capacity; and DOES 1–10 — Dkt. 1 complaint. Matter 7 (E.D. Cal.) and Matter 8 (state mandate, abandoned) are the prior Candelaria tracks.",
+  "defendants": "Diana Candelaria (DMV Driver Safety Hearing Officer), individually; Steve Gordon, Director, California DMV, in his official capacity; and DOES 1\u201310 \u2014 Dkt. 1 complaint. Matter 7 (E.D. Cal.) and Matter 8 (state mandate, abandoned) are the prior Candelaria tracks.",
   "serviceTracking": [
     {
       "name": "Diana Candelaria",
@@ -33,35 +33,39 @@
     }
   ],
   "causes": [
-    "42 U.S.C. § 1983 — Denial of an impartial adjudicator (procedural due process)",
-    "42 U.S.C. § 1983 — Denial of a fair hearing (procedural due process)",
-    "Declaratory relief — 28 U.S.C. §§ 2201–2202 (vacatur of APS Decision 34739340)",
+    "42 U.S.C. \u00a7 1983 \u2014 Denial of an impartial adjudicator (procedural due process)",
+    "42 U.S.C. \u00a7 1983 \u2014 Denial of a fair hearing (procedural due process)",
+    "Declaratory relief \u2014 28 U.S.C. \u00a7\u00a7 2201\u20132202 (vacatur of APS Decision 34739340)",
     "Injunctive / Ex parte Young relief vs. DMV Director Gordon (official capacity)"
   ],
-  "key_facts": "On November 1, 2024, CHP Officers Meza-Gonzalez and Melano contacted Plaintiff on the I-580 East shoulder in Livermore (CHP Case RJ68845). The DS-367 chemical-test-refusal designation and Arrest Report triggered DMV APS Case 34739340. After a January 24, 2025 Microsoft Teams hearing, Hearing Officer Diana Candelaria issued a February 11, 2025 Decision sustaining a one-year Class A CDL suspension (Feb. 20, 2025 – Feb. 19, 2026) without addressing the November 5, 2024 PC § 849(b)(1) Detention Certificate. Matter 7 (federal §1983, 2:26-cv-00983-DC-CSK) and Matter 8 (state mandate, 26WM000135, abandoned) litigate that APS outcome. This matter consolidates the underlying incident/APS evidence and both Candelaria docket PDF sets under one owning folder. Plaintiff signed an operative N.D. Cal. Complaint (v3, 47 pp.) and print intake packet against Candelaria (individual) and Gordon (official capacity) on Aug. 7, 2026, expressly alleging that the prior E.D. Cal. Matter 7 action arising from the same Nov. 1, 2024 incident was voluntarily dismissed without prejudice. The court docketed it as Dkt. 1 on Aug. 10, 2026. The court-stamped operative FAC is Dkt. 6 (filed Aug. 17, 2026, 44 pp.); Dkt. 5 (filed Aug. 14, 46 pp.) is the earlier stamped FAC. The unsigned Aug. 11 draft (Burrell v. Jackson removed) is retained as superseded. The FAC pleads that Plaintiff's SR-22 filing under Vehicle Code § 16430 became effective May 18, 2026 — a Dairyland/Viking non-owner policy at $281.28 per year — so the three-year maintenance period runs through approximately May 2029; Matter 32's ¶36(d) states the same end date for the same obligation. Drafts v1 (47 pp.) and v2 (15 pp. short-form) retained.",
-  "procedural_status": "Opened August 7, 2026 as Matter 33 to hold the Candelaria / DMV APS slice of the CHP cluster: six Nov. 1 incident and APS discovery PDFs plus the Centerline wage reference in matter-33/incident/; twelve Matter 7 federal PDFs in matter-33/from-07/; six Matter 8 mandamus PDFs in matter-33/from-08/; and the June 15, 2026 Candelaria F&R in matter-33/opinions/. Matters 1, 2, 7, 8 and 32 cross-reference those paths. The N.D. Cal. complaint was signed Aug. 7 and docketed Aug. 10, 2026 as No. 3:26-cv-08272-LJC, assigned to Magistrate Judge Lisa J. Cisneros in San Francisco; the clerk's intake stamp shows the San Jose office. Four documents are on the docket: complaint (Dkt. 1), summonses as to both defendants (Dkt. 2), Plaintiff's magistrate-jurisdiction election consenting under 28 U.S.C. § 636(c) (Dkt. 3), and the court's order setting the initial case management conference and ADR deadlines (Dkt. 4). Both summonses are addressed to the defendants care of the DMV Legal Affairs Division, Mail Station C128, 2415 First Avenue, Sacramento, CA 95818. Candelaria and Gordon were personally served there Aug. 14, 2026 via the Sacramento County Sheriff, satisfying Rule 4(m) (had run to Nov. 8, 2026) and setting the answer/Rule 12 motion deadline at Sep. 4, 2026 (FRCP 12(a)(1)(A)(i)). FAC filings: Dkt. 5 First Amended Complaint (CONFORMED, filed Aug. 14, 2026, 46 pp.) and Dkt. 6 First Amended Complaint (CONFORMED, filed Aug. 17, 2026, 44 pp.) — Dkt. 6 is the operative court pleading of record (Burrell v. Jackson omitted; SR-22 through approximately May 2029). The unsigned Aug. 11 draft and the Aug. 10 FAC are superseded. Open items: the Civil L.R. 3-15 certification of conflicts and interested entities was due with Plaintiff's first appearance and is not on the docket; Dkt. 4 requires that order and the Civil L.R. 4-2 supplementary material to be served with the operative pleading; the § 636(c) consent binds only Plaintiff until both defendants consent, and a single declination reassigns the case to a district judge; the FAC still identifies the related Meza-Gonzalez action by caption only, so its case number (3:26-cv-08271-PHK) must be inserted at ¶¶ 8, 14, 31 and 88. Related case listed on the JS-44: Serrato 4:26-cv-05953-ASK. Dated deadlines live in timeline.json.",
+  "key_facts": "On November 1, 2024, CHP Officers Meza-Gonzalez and Melano contacted Plaintiff on the I-580 East shoulder in Livermore (CHP Case RJ68845). The DS-367 chemical-test-refusal designation and Arrest Report triggered DMV APS Case 34739340. After a January 24, 2025 Microsoft Teams hearing, Hearing Officer Diana Candelaria issued a February 11, 2025 Decision sustaining a one-year Class A CDL suspension (Feb. 20, 2025 \u2013 Feb. 19, 2026) without addressing the November 5, 2024 PC \u00a7 849(b)(1) Detention Certificate. Matter 7 (federal \u00a71983, 2:26-cv-00983-DC-CSK) and Matter 8 (state mandate, 26WM000135, abandoned) litigate that APS outcome. This matter consolidates the underlying incident/APS evidence and both Candelaria docket PDF sets under one owning folder. Plaintiff signed an operative N.D. Cal. Complaint (v3, 47 pp.) and print intake packet against Candelaria (individual) and Gordon (official capacity) on Aug. 7, 2026, expressly alleging that the prior E.D. Cal. Matter 7 action arising from the same Nov. 1, 2024 incident was voluntarily dismissed without prejudice. The court docketed it as Dkt. 1 on Aug. 10, 2026. The court-stamped operative FAC is Dkt. 6 (filed Aug. 17, 2026, 44 pp.); Dkt. 5 (filed Aug. 14, 46 pp.) is the earlier stamped FAC. The unsigned Aug. 11 draft (Burrell v. Jackson removed) is retained as superseded. The FAC pleads that Plaintiff's SR-22 filing under Vehicle Code \u00a7 16430 became effective May 18, 2026 \u2014 a Dairyland/Viking non-owner policy at $281.28 per year \u2014 so the three-year maintenance period runs through approximately May 2029; Matter 32's \u00b636(d) states the same end date for the same obligation. Drafts v1 (47 pp.) and v2 (15 pp. short-form) retained.",
+  "procedural_status": "Opened August 7, 2026 as Matter 33 to hold the Candelaria / DMV APS slice of the CHP cluster: six Nov. 1 incident and APS discovery PDFs plus the Centerline wage reference in matter-33/incident/; twelve Matter 7 federal PDFs in matter-33/from-07/; six Matter 8 mandamus PDFs in matter-33/from-08/; and the June 15, 2026 Candelaria F&R in matter-33/opinions/. Matters 1, 2, 7, 8 and 32 cross-reference those paths. The N.D. Cal. complaint was signed Aug. 7 and docketed Aug. 10, 2026 as No. 3:26-cv-08272-LJC, assigned to Magistrate Judge Lisa J. Cisneros in San Francisco; the clerk's intake stamp shows the San Jose office. Four documents are on the docket: complaint (Dkt. 1), summonses as to both defendants (Dkt. 2), Plaintiff's magistrate-jurisdiction election consenting under 28 U.S.C. \u00a7 636(c) (Dkt. 3), and the court's order setting the initial case management conference and ADR deadlines (Dkt. 4). Both summonses are addressed to the defendants care of the DMV Legal Affairs Division, Mail Station C128, 2415 First Avenue, Sacramento, CA 95818. Candelaria and Gordon were personally served there Aug. 14, 2026 via the Sacramento County Sheriff, satisfying Rule 4(m) (had run to Nov. 8, 2026) and setting the answer/Rule 12 motion deadline at Sep. 4, 2026 (FRCP 12(a)(1)(A)(i)). FAC filings: Dkt. 5 First Amended Complaint (CONFORMED, filed Aug. 14, 2026, 46 pp.) and Dkt. 6 First Amended Complaint (CONFORMED, filed Aug. 17, 2026, 44 pp.) \u2014 Dkt. 6 is the operative court pleading of record (Burrell v. Jackson omitted; SR-22 through approximately May 2029). The unsigned Aug. 11 draft and the Aug. 10 FAC are superseded. Open items: the Civil L.R. 3-15 certification of conflicts and interested entities was due with Plaintiff's first appearance and is not on the docket; Dkt. 4 requires that order and the Civil L.R. 4-2 supplementary material to be served with the operative pleading; the \u00a7 636(c) consent binds only Plaintiff until both defendants consent, and a single declination reassigns the case to a district judge; the FAC still identifies the related Meza-Gonzalez action by caption only, so its case number (3:26-cv-08271-PHK) must be inserted at \u00b6\u00b6 8, 14, 31 and 88. Related case listed on the JS-44: Serrato 4:26-cv-05953-ASK. Dated deadlines live in timeline.json.",
   "damages": "The Dkt. 1 complaint seeks compensatory damages exceeding $214,000, punitive damages of at least $100,000, JS-44 demand alignment $250,000 (min.), vacatur of APS Case 34739340, SR-22 relief, CDL-record expungement, and structural APS reform. Matter 33 also remains documentary owner of the Matter 7/8 PDF sets (no separate damages under the document-home role).",
-  "risk": "Refiled in N.D. Cal. before the Matter 7 E.D. Cal. voluntary dismissal was actually filed; CONFIRMED Aug. 15, 2026 that the dismissal Dkt. 1 represented to this court is now on the E.D. Cal. docket. Watch claim-preclusion and forum-shopping arguments given the gap between the Aug. 10 refile and the Aug. 15 dismissal. Service is CONFIRMED complete: Candelaria and Gordon were personally served Aug. 14, 2026 through DMV Legal Affairs in Sacramento, satisfying Rule 4(m) (had run to Nov. 8, 2026) and starting the Sep. 4, 2026 answer/Rule 12 motion clock. Consenting to magistrate jurisdiction gives up the district-judge review layer that produced the Matter 7 objections track, and is ineffective unless both defendants also consent — watch for a declination in the Sep. 4 response. Dkt. 1 carries a known-fabricated authority at page 43: Burrell v. Jackson, 2003 WL 23545858, which the citation ledger records as NOT_FOUND. A nonexistent case cannot be distinguished, and the defendants would brief quasi-judicial immunity straight at that passage. The First Amended Complaint cures it — neither Burrell nor its companion cite (Baker v. Bzdyra, 2019 WL 6619348, misspelled 'Bzydra' in Dkt. 1) appears anywhere in the FAC. Dkt. 6 (filed Aug. 17, 2026) is now the pleading of record; retire the citation debt once downstream indexes catch up. Coordinate with the Matter 32 Meza-Gonzalez N.D. Cal. companion (No. 3:26-cv-08271-PHK, also served Aug. 14, 2026) and the Serrato related-case notice. Path updates for Matters 1/2/7/8/32 already point at /documents/matter-33/ for the historical PDF set.",
+  "risk": "Refiled in N.D. Cal. before the Matter 7 E.D. Cal. voluntary dismissal was actually filed; CONFIRMED Aug. 15, 2026 that the dismissal Dkt. 1 represented to this court is now on the E.D. Cal. docket. Watch claim-preclusion and forum-shopping arguments given the gap between the Aug. 10 refile and the Aug. 15 dismissal. Service is CONFIRMED complete: Candelaria and Gordon were personally served Aug. 14, 2026 through DMV Legal Affairs in Sacramento, satisfying Rule 4(m) (had run to Nov. 8, 2026) and starting the Sep. 4, 2026 answer/Rule 12 motion clock. Consenting to magistrate jurisdiction gives up the district-judge review layer that produced the Matter 7 objections track, and is ineffective unless both defendants also consent \u2014 watch for a declination in the Sep. 4 response. Dkt. 1 carries a known-fabricated authority at page 43: Burrell v. Jackson, 2003 WL 23545858, which the citation ledger records as NOT_FOUND. A nonexistent case cannot be distinguished, and the defendants would brief quasi-judicial immunity straight at that passage. The First Amended Complaint cures it \u2014 neither Burrell nor its companion cite (Baker v. Bzdyra, 2019 WL 6619348, misspelled 'Bzydra' in Dkt. 1) appears anywhere in the FAC. Dkt. 6 (filed Aug. 17, 2026) is now the pleading of record; retire the citation debt once downstream indexes catch up. Coordinate with the Matter 32 Meza-Gonzalez N.D. Cal. companion (No. 3:26-cv-08271-PHK, also served Aug. 14, 2026) and the Serrato related-case notice. Path updates for Matters 1/2/7/8/32 already point at /documents/matter-33/ for the historical PDF set.",
   "evidence": [
-    "First Amended Complaint — Dkt. 6 OPERATIVE (CONFORMED, Filed Aug. 17, 2026, 44 pp.) — ndcal/; Dkt. 5 (Aug. 14, 46 pp.) is the earlier stamped FAC",
-    "Complaint as docketed — Dkt. 1 (Aug. 10, 2026), superseded by the FAC — ndcal/",
-    "Summonses issued as to Candelaria and Gordon — Dkt. 2 (Aug. 10, 2026) — ndcal/",
-    "Consent to Magistrate Judge Jurisdiction, consent elected — Dkt. 3 (Aug. 10, 2026) — ndcal/",
-    "Order Setting Initial Case Management Conference and ADR Deadlines — Dkt. 4 (Aug. 10, 2026) — ndcal/",
-    "N.D. Cal. Complaint v3 Operative (Aug. 7, 2026) — ndcal/",
-    "N.D. Cal. Intake Packet (JS-44, AO 440×2, MJ form) — ndcal/",
-    "SER-001 Requests for Sheriff to Serve Court Papers — Diana Candelaria and Steve Gordon (Sacramento County Sheriff; DMV Legal Affairs Division; filled and e-signed Aug. 13, 2026) — ndcal/",
-    "CHP Arrest Report (RJ68845) — incident/",
-    "DS-367 Officer's Statement (ngwanforbi / F7953179) — incident/",
-    "CHP dashcam transcript Exhibit A — incident/",
-    "DMV DAD / DS-2044 APS discovery packet (Case 34739340) — incident/",
-    "Plaintiff's Dec. 9, 2024 Personal Statement / Discovery Response — incident/",
-    "Centerline Drivers wage reference (CDL lost-wage proof) — incident/",
-    "Matter 7 Candelaria federal docket PDFs — from-07/",
-    "Matter 8 Candelaria mandamus PDFs — from-08/",
-    "June 15, 2026 Candelaria F&R — opinions/"
+    "First Amended Complaint \u2014 Dkt. 6 OPERATIVE (CONFORMED, Filed Aug. 17, 2026, 44 pp.) \u2014 ndcal/; Dkt. 5 (Aug. 14, 46 pp.) is the earlier stamped FAC",
+    "Complaint as docketed \u2014 Dkt. 1 (Aug. 10, 2026), superseded by the FAC \u2014 ndcal/",
+    "Summonses issued as to Candelaria and Gordon \u2014 Dkt. 2 (Aug. 10, 2026) \u2014 ndcal/",
+    "Consent to Magistrate Judge Jurisdiction, consent elected \u2014 Dkt. 3 (Aug. 10, 2026) \u2014 ndcal/",
+    "Order Setting Initial Case Management Conference and ADR Deadlines \u2014 Dkt. 4 (Aug. 10, 2026) \u2014 ndcal/",
+    "N.D. Cal. Complaint v3 Operative (Aug. 7, 2026) \u2014 ndcal/",
+    "N.D. Cal. Intake Packet (JS-44, AO 440\u00d72, MJ form) \u2014 ndcal/",
+    "SER-001 Requests for Sheriff to Serve Court Papers \u2014 Diana Candelaria and Steve Gordon (Sacramento County Sheriff; DMV Legal Affairs Division; filled and e-signed Aug. 13, 2026) \u2014 ndcal/",
+    "CHP Arrest Report (RJ68845) \u2014 incident/",
+    "DS-367 Officer's Statement (ngwanforbi / F7953179) \u2014 incident/",
+    "CHP dashcam transcript Exhibit A \u2014 incident/",
+    "DMV DAD / DS-2044 APS discovery packet (Case 34739340) \u2014 incident/",
+    "Plaintiff's Dec. 9, 2024 Personal Statement / Discovery Response \u2014 incident/",
+    "Centerline Drivers wage reference (CDL lost-wage proof) \u2014 incident/",
+    "Matter 7 Candelaria federal docket PDFs \u2014 from-07/",
+    "Matter 8 Candelaria mandamus PDFs \u2014 from-08/",
+    "June 15, 2026 Candelaria F&R \u2014 opinions/"
   ],
   "documents": [
+    {
+      "path": "/documents/matter-33/ndcal/Proof of Service - FAC Dkt 06 Mailed to Candelaria and Gordon (Aug 21 2026).pdf",
+      "label": "Proof of Service \u2014 FAC Dkt. 6 mailed to Candelaria and Gordon (Aug. 21, 2026)"
+    },
     {
       "path": "/documents/matter-33/ndcal/FAC Nforbi v Candelaria and Gordon NDCal - OPERATIVE UNSIGNED (Aug 11 2026).pdf",
       "filed": false
@@ -169,7 +173,7 @@
     },
     {
       "path": "/documents/matter-33/from-07/CHP Transcript.pdf",
-      "label": "[M7] CHP Dashcam Transcript (00:54:36–01:57:10, CAD No. 241101GG0064)",
+      "label": "[M7] CHP Dashcam Transcript (00:54:36\u201301:57:10, CAD No. 241101GG0064)",
       "filed": false
     },
     {
@@ -179,17 +183,17 @@
     },
     {
       "path": "/documents/matter-33/from-07/Exhibit A Cover DMV Decision.pdf",
-      "label": "[M7] Exhibit A Cover — DMV APS Decision (Case 34739340)",
+      "label": "[M7] Exhibit A Cover \u2014 DMV APS Decision (Case 34739340)",
       "filed": false
     },
     {
       "path": "/documents/matter-33/from-07/Exhibit B Cover Dairyland SR22.pdf",
-      "label": "[M7] Exhibit B Cover — Dairyland SR-22 Insurance",
+      "label": "[M7] Exhibit B Cover \u2014 Dairyland SR-22 Insurance",
       "filed": false
     },
     {
       "path": "/documents/matter-33/from-07/Exhibit C Cover CHP Dashcam Transcript.pdf",
-      "label": "[M7] Exhibit C Cover — CHP Dashcam Transcript",
+      "label": "[M7] Exhibit C Cover \u2014 CHP Dashcam Transcript",
       "filed": false
     },
     {
@@ -199,7 +203,7 @@
     },
     {
       "path": "/documents/matter-33/from-07/Newanforbi v. Candelaria.pdf",
-      "label": "[M7] Original Complaint — Newanforbi v. Candelaria",
+      "label": "[M7] Original Complaint \u2014 Newanforbi v. Candelaria",
       "filed": false
     },
     {
@@ -209,12 +213,12 @@
     },
     {
       "path": "/documents/matter-33/from-07/Notice of Supplemental Authority - Serrato Order - ELECTRONICALLY FILED Jul 9 2026.pdf",
-      "label": "[M7] Notice of Supplemental Authority — Serrato Order, ELECTRONICALLY FILED (Document 9, Jul. 9, 2026)",
+      "label": "[M7] Notice of Supplemental Authority \u2014 Serrato Order, ELECTRONICALLY FILED (Document 9, Jul. 9, 2026)",
       "filed": false
     },
     {
       "path": "/documents/matter-33/from-07/Notice of Supplemental Authority - Serrato Order - July 7 2026.pdf",
-      "label": "[M7] Notice of Supplemental Authority — Serrato Order, draft (superseded by the electronically filed version below)",
+      "label": "[M7] Notice of Supplemental Authority \u2014 Serrato Order, draft (superseded by the electronically filed version below)",
       "filed": false
     },
     {
@@ -229,7 +233,7 @@
     },
     {
       "path": "/documents/matter-33/from-07/Notice of Voluntary Dismissal Without Prejudice (Aug 11 2026).pdf",
-      "label": "[M7] Notice of Voluntary Dismissal Without Prejudice (executed Aug. 11, 2026; e-filed Aug. 15, 2026) — FRCP 41(a)(1)(A)(i)",
+      "label": "[M7] Notice of Voluntary Dismissal Without Prejudice (executed Aug. 11, 2026; e-filed Aug. 15, 2026) \u2014 FRCP 41(a)(1)(A)(i)",
       "filed": true
     },
     {
@@ -244,7 +248,7 @@
     },
     {
       "path": "/documents/matter-33/from-08/Court Minutes - Fee Waiver Hearing DENIED, Non-Appearance (Jul 17 2026).pdf",
-      "label": "[M8] Court Minutes — Fee Waiver Hearing DENIED, non-appearance (Jul. 17, 2026)",
+      "label": "[M8] Court Minutes \u2014 Fee Waiver Hearing DENIED, non-appearance (Jul. 17, 2026)",
       "filed": false
     },
     {
@@ -259,7 +263,7 @@
     },
     {
       "path": "/documents/matter-33/from-08/Order on Court Fee Waiver After Hearing - FW-008 (Jul 17 2026).pdf",
-      "label": "[M8] Order on Court Fee Waiver After Hearing — FW-008, denied for non-appearance (Jul. 17, 2026)",
+      "label": "[M8] Order on Court Fee Waiver After Hearing \u2014 FW-008, denied for non-appearance (Jul. 17, 2026)",
       "filed": false
     },
     {
