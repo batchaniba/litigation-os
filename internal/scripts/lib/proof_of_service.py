@@ -37,8 +37,9 @@ PAGE_W, PAGE_H = letter  # 612 x 792
 
 BORDER_L = 44.0
 BORDER_R = 568.0
-BORDER_T = 48.0
-BORDER_B = 720.0
+# Top edge sits below the page head; bottom edge sits near the page foot.
+BORDER_T = 80.0
+BORDER_B = 770.0
 
 FS = 10.0
 LEADING = 14.0
@@ -134,7 +135,7 @@ def build_proof_of_service(path: Path | str, fields: ProofOfServiceFields) -> Pa
     c = canvas.Canvas(str(path), pagesize=letter)
     _draw_border(c)
 
-    y = PAGE_H - BORDER_T - 28
+    y = PAGE_H - BORDER_T - 44
 
     _center(c, "UNITED STATES DISTRICT COURT", y, "Times-Roman", FS)
     y -= LEADING
@@ -251,9 +252,26 @@ def build_proof_of_service(path: Path | str, fields: ProofOfServiceFields) -> Pa
             _hline(c, INNER_L + 12, INNER_R - 12, y)
             y -= LEADING * 1.35
 
-    decl_y = PAGE_H - BORDER_B + 78
-    if y < decl_y + 40:
-        decl_y = y - 36
+    # Footer: declaration, then clear air for the signature stamp, then the line.
+    sig_width = 140.0
+    sig_height = sig_width * SIGNATURE_ASPECT  # ~35 pt
+    gap_decl_to_sig = 40.0  # keep cursive loops clear of the declaration line
+    name_below = 16.0
+    footer_pad = 32.0  # clearance from typed name down to the bottom border
+    footer_block = (
+        FS  # declaration
+        + gap_decl_to_sig
+        + sig_height
+        + 4.0  # line sits just under the stamp
+        + name_below
+        + footer_pad
+    )
+    border_bottom_y = PAGE_H - BORDER_B
+    decl_y = border_bottom_y + footer_block - FS
+    # If body content ran low, keep a gap under the last body line.
+    min_decl_from_body = y - 32
+    if min_decl_from_body < decl_y:
+        decl_y = min_decl_from_body
 
     c.setFont("Times-Roman", FS)
     c.drawString(
@@ -262,26 +280,25 @@ def build_proof_of_service(path: Path | str, fields: ProofOfServiceFields) -> Pa
         "I declare under penalty of perjury that the foregoing is true and correct.",
     )
 
-    sig_y = decl_y - 36
+    # Signature image sits fully below the declaration; the line is under the image.
+    sig_line_y = decl_y - gap_decl_to_sig - sig_height
     sig_x0 = INNER_L + 160
     sig_x1 = INNER_R - 40
-    _hline(c, sig_x0, sig_x1, sig_y)
+    _hline(c, sig_x0, sig_x1, sig_line_y)
 
     name = fields.server_name or "(Name of Person Completing Service)"
     c.setFont("Times-Roman" if fields.server_name else "Times-Italic", FS)
     nw = c.stringWidth(name, c._fontname, FS)
-    c.drawString(sig_x0 + (sig_x1 - sig_x0 - nw) / 2.0, sig_y - 14, name)
+    c.drawString(sig_x0 + (sig_x1 - sig_x0 - nw) / 2.0, sig_line_y - name_below, name)
 
     if fields.stamp_signature and fields.server_name:
         try:
-            width = 150
-            height = width * SIGNATURE_ASPECT
             c.drawImage(
                 SIGNATURE_PATH,
                 sig_x0 + 10,
-                sig_y + 2,
-                width=width,
-                height=height,
+                sig_line_y,  # baseline of stamp = signature line
+                width=sig_width,
+                height=sig_height,
                 mask="auto",
                 preserveAspectRatio=True,
             )
