@@ -18,7 +18,7 @@ from pleading_paper import CONTENT_LEFT, PleadingPaper  # noqa: E402
 from signature_stamp import SIGNATURE_ASPECT, SIGNATURE_PATH  # noqa: E402
 
 MAIL_DATE = "August 21, 2026"
-EXEC_DATE = "August 22, 2026"
+EXEC_DATE = "August 24, 2026"
 EXEC_CITY = "San Jose, California"
 
 ROOT = SCRIPT_DIR.parent
