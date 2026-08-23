@@ -4,15 +4,11 @@
 Meza (3:26-cv-08271-PHK): Dkt. 5 (Aug. 17) is operative; Dkt. 6 (Aug. 14) superseded.
 Candelaria (3:26-cv-08272-LJC): Dkt. 6 (Aug. 17) is operative; Dkt. 5 (Aug. 14) superseded.
 
-Each PDF is the pleading-paper notice plus the portfolio Proof of Service form
-as the last page.
-
   python3 internal/scripts/matters32-33-notice-operative-fac.py
 """
 from __future__ import annotations
 
 import sys
-import tempfile
 from pathlib import Path
 
 import fitz
@@ -22,12 +18,10 @@ sys.path.insert(0, str(SCRIPT_DIR))
 sys.path.insert(0, str(SCRIPT_DIR / "lib"))
 
 from pleading_paper import CONTENT_LEFT, PleadingPaper  # noqa: E402
-from proof_of_service import ProofOfServiceFields, build_proof_of_service  # noqa: E402
 from signature_stamp import SIGNATURE_ASPECT, SIGNATURE_PATH  # noqa: E402
 
 ROOT = SCRIPT_DIR.parent
 EXEC_DATE = "August 24, 2026"
-MAIL_FROM = "San Jose, California"
 
 OUT_MEZA = (
     ROOT
@@ -64,13 +58,10 @@ def _header(d: PleadingPaper) -> None:
 
 
 def _sign_block(d: PleadingPaper) -> None:
-    d.ensure_space(10)
-    d.blank_line()
+    d.ensure_space(7)
     d.write_line(f"Dated: {EXEC_DATE}")
     d.write_line("Respectfully submitted,", italic=True)
-    # Extra blank lines so the stamped signature clears this text.
-    d.blank_line()
-    d.blank_line()
+    # One blank -- stamp seats on the rule below.
     d.blank_line()
     d.write_line("___________________________________")
     d.write_line("BRENDAN NGWA NFORBI", bold=True)
@@ -81,7 +72,6 @@ def _stamp_sig(path: Path) -> None:
     doc = fitz.open(str(path))
     line = None
     page = None
-    # Prefer the signature underscore on whatever page it landed on.
     for candidate in doc:
         hits = candidate.search_for("_______________________________")
         if hits:
@@ -91,24 +81,16 @@ def _stamp_sig(path: Path) -> None:
     if page is None or line is None:
         doc.close()
         raise RuntimeError(f"No signature line found in {path}")
-    width = 140
+    width = 135.0
     height = width * SIGNATURE_ASPECT
-    # Sit the stamp on the underscore (slight overlap); keep clear of text above.
-    rect = fitz.Rect(line.x0, line.y0 - height + 3, line.x0 + width, line.y0 + 3)
+    # Seat on the visible underscore stroke (near glyph baseline), not the tall
+    # text bbox top; otherwise the ink floats ~10pt above the rule.
+    y1 = line.y1 - 2.0
+    y0 = y1 - height
+    rect = fitz.Rect(line.x0, y0, line.x0 + width, y1)
     page.insert_image(rect, filename=SIGNATURE_PATH, keep_proportion=True)
     doc.saveIncr()
     doc.close()
-
-
-def _merge(notice: Path, pos: Path, out: Path) -> None:
-    dest = fitz.open(str(notice))
-    src = fitz.open(str(pos))
-    dest.insert_pdf(src)
-    src.close()
-    out.parent.mkdir(parents=True, exist_ok=True)
-    dest.save(str(out))
-    dest.close()
-    print(f"Wrote {out}")
 
 
 def build_meza_notice(path: Path) -> None:
@@ -270,81 +252,13 @@ def build_candelaria_notice(path: Path) -> None:
     _stamp_sig(path)
 
 
-def meza_pos_fields() -> ProofOfServiceFields:
-    return ProofOfServiceFields(
-        plaintiff_line="BRENDAN NGWA NFORBI",
-        plaintiff_role="Plaintiff",
-        defendant_lines=[
-            "SANTIAGO MEZA-GONZALEZ;",
-            "JOSE MELANO; and DOES 1-10",
-        ],
-        defendant_role="Defendants",
-        case_number="3:26-cv-08271-PHK",
-        title="PROOF OF SERVICE",
-        service_date=EXEC_DATE,
-        document_title="Notice Identifying Operative First Amended Complaint",
-        mailing_location=MAIL_FROM,
-        recipients=[
-            "Officer Jose Melano (CHP Badge #023054)",
-            "California Highway Patrol, South Sacramento Area",
-            "6 Massie Court",
-            "Sacramento, CA 95823",
-            "",
-            "(No Rule 5 mailing to Defendant Santiago Meza-Gonzalez --",
-            "process under Fed. R. Civ. P. 4 has not been completed.)",
-        ],
-        server_name="Brendan Ngwa Nforbi",
-        stamp_signature=True,
-    )
-
-
-def candelaria_pos_fields() -> ProofOfServiceFields:
-    return ProofOfServiceFields(
-        plaintiff_line="BRENDAN NGWA NFORBI",
-        plaintiff_role="Plaintiff",
-        defendant_lines=[
-            "DIANA CANDELARIA, individually;",
-            "STEVE GORDON, officially; and DOES 1-10",
-        ],
-        defendant_role="Defendants",
-        case_number="3:26-cv-08272-LJC",
-        title="PROOF OF SERVICE",
-        service_date=EXEC_DATE,
-        document_title="Notice Identifying Operative First Amended Complaint",
-        mailing_location=MAIL_FROM,
-        recipients=[
-            "Diana Candelaria, Driver Safety Hearing Officer",
-            "California Department of Motor Vehicles",
-            "Legal Affairs Division, Mail Station C128",
-            "2415 First Avenue",
-            "Sacramento, CA 95818",
-            "",
-            "Steve Gordon, Director",
-            "California Department of Motor Vehicles",
-            "Legal Affairs Division, Mail Station C128",
-            "2415 First Avenue",
-            "Sacramento, CA 95818",
-        ],
-        server_name="Brendan Ngwa Nforbi",
-        stamp_signature=True,
-    )
-
-
 def main() -> None:
-    with tempfile.TemporaryDirectory() as tmp:
-        tmp_path = Path(tmp)
-        meza_notice = tmp_path / "meza_notice.pdf"
-        cand_notice = tmp_path / "cand_notice.pdf"
-        meza_pos = tmp_path / "meza_pos.pdf"
-        cand_pos = tmp_path / "cand_pos.pdf"
-
-        build_meza_notice(meza_notice)
-        build_candelaria_notice(cand_notice)
-        build_proof_of_service(meza_pos, meza_pos_fields())
-        build_proof_of_service(cand_pos, candelaria_pos_fields())
-
-        _merge(meza_notice, meza_pos, OUT_MEZA)
-        _merge(cand_notice, cand_pos, OUT_CAND)
+    OUT_MEZA.parent.mkdir(parents=True, exist_ok=True)
+    OUT_CAND.parent.mkdir(parents=True, exist_ok=True)
+    build_meza_notice(OUT_MEZA)
+    print(f"Wrote {OUT_MEZA}")
+    build_candelaria_notice(OUT_CAND)
+    print(f"Wrote {OUT_CAND}")
 
 
 if __name__ == "__main__":
