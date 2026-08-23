@@ -26,18 +26,18 @@ from proof_of_service import ProofOfServiceFields, build_proof_of_service  # noq
 from signature_stamp import SIGNATURE_ASPECT, SIGNATURE_PATH  # noqa: E402
 
 ROOT = SCRIPT_DIR.parent
-EXEC_DATE = "August 23, 2026"
+EXEC_DATE = "August 24, 2026"
 MAIL_FROM = "San Jose, California"
 
 OUT_MEZA = (
     ROOT
     / "public/documents/matter-32/ndcal"
-    / "Notice Identifying Operative First Amended Complaint (Meza) (Aug 23 2026).pdf"
+    / "Notice Identifying Operative First Amended Complaint (Meza) (Aug 24 2026).pdf"
 )
 OUT_CAND = (
     ROOT
     / "public/documents/matter-33/ndcal"
-    / "Notice Identifying Operative First Amended Complaint (Candelaria) (Aug 23 2026).pdf"
+    / "Notice Identifying Operative First Amended Complaint (Candelaria) (Aug 24 2026).pdf"
 )
 
 ATTY = [
