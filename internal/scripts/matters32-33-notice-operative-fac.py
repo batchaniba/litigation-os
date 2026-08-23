@@ -76,15 +76,21 @@ def _sign_block(d: PleadingPaper) -> None:
 
 def _stamp_sig(path: Path) -> None:
     doc = fitz.open(str(path))
-    page = doc[0]
-    hits = page.search_for("_______________________________")
-    if hits:
-        line = hits[-1]
-        width = 150
-        height = width * SIGNATURE_ASPECT
-        rect = fitz.Rect(line.x0, line.y0 - height - 2, line.x0 + width, line.y0 - 2)
-    else:
-        rect = fitz.Rect(320, 620, 470, 655)
+    line = None
+    page = None
+    # Prefer the signature underscore on whatever page it landed on.
+    for candidate in doc:
+        hits = candidate.search_for("_______________________________")
+        if hits:
+            page = candidate
+            line = hits[-1]
+            break
+    if page is None or line is None:
+        doc.close()
+        raise RuntimeError(f"No signature line found in {path}")
+    width = 150
+    height = width * SIGNATURE_ASPECT
+    rect = fitz.Rect(line.x0, line.y0 - height - 2, line.x0 + width, line.y0 - 2)
     page.insert_image(rect, filename=SIGNATURE_PATH, keep_proportion=True)
     doc.saveIncr()
     doc.close()
