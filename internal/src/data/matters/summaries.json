@@ -55,7 +55,7 @@
     "case_no": "2:26-cv-00004-DJC-JDP",
     "court": "USDC E.D. Cal.",
     "claims": "42 USC 1983: 1A Retaliation, 14A Equal Protection, Due Process",
-    "status_label": "Abandoned — Palacios dismissed Aug. 20, 2026",
+    "status_label": "Abandoned — OSC discharge pending",
     "lifecycle": "abandoned",
     "proceeding": "federal_civil",
     "phase": "terminal",
@@ -768,7 +768,7 @@
     "archived": false,
     "status_label": "RK response Aug. 31 — Randstad extended to Sep. 15",
     "evidenceCount": 18,
-    "documentCount": 50
+    "documentCount": 51
   },
   {
     "number": 28,
