@@ -37,9 +37,9 @@ PAGE_W, PAGE_H = letter  # 612 x 792
 
 BORDER_L = 44.0
 BORDER_R = 568.0
-# Top edge sits below the page head; bottom edge sits near the page foot.
-BORDER_T = 80.0
-BORDER_B = 770.0
+# Top/bottom edges inset from the page margins (nudged up from the prior pass).
+BORDER_T = 70.0
+BORDER_B = 715.0
 
 FS = 10.0
 LEADING = 14.0
@@ -253,11 +253,11 @@ def build_proof_of_service(path: Path | str, fields: ProofOfServiceFields) -> Pa
             y -= LEADING * 1.35
 
     # Footer: declaration, then clear air for the signature stamp, then the line.
-    sig_width = 140.0
-    sig_height = sig_width * SIGNATURE_ASPECT  # ~35 pt
-    gap_decl_to_sig = 40.0  # keep cursive loops clear of the declaration line
-    name_below = 16.0
-    footer_pad = 32.0  # clearance from typed name down to the bottom border
+    sig_width = 145.0
+    sig_height = sig_width * SIGNATURE_ASPECT  # ~36 pt
+    gap_decl_to_sig = 32.0  # keep cursive loops clear of the declaration line
+    name_below = 14.0
+    footer_pad = 16.0  # clearance from typed name down to the bottom border
     footer_block = (
         FS  # declaration
         + gap_decl_to_sig
@@ -280,23 +280,32 @@ def build_proof_of_service(path: Path | str, fields: ProofOfServiceFields) -> Pa
         "I declare under penalty of perjury that the foregoing is true and correct.",
     )
 
-    # Signature image sits fully below the declaration; the line is under the image.
+    # Short signature line sized to the stamp; typed name may run wider below.
     sig_line_y = decl_y - gap_decl_to_sig - sig_height
-    sig_x0 = INNER_L + 160
-    sig_x1 = INNER_R - 40
+    line_pad = 4.0
+    sig_line_w = sig_width + 2 * line_pad
+    sig_x0 = INNER_R - 48 - sig_line_w
+    sig_x1 = sig_x0 + sig_line_w
     _hline(c, sig_x0, sig_x1, sig_line_y)
 
-    name = fields.server_name or "(Name of Person Completing Service)"
-    c.setFont("Times-Roman" if fields.server_name else "Times-Italic", FS)
-    nw = c.stringWidth(name, c._fontname, FS)
-    c.drawString(sig_x0 + (sig_x1 - sig_x0 - nw) / 2.0, sig_line_y - name_below, name)
+    if fields.server_name:
+        name_line = f"{fields.server_name}, In Propria Persona"
+        name_font = "Times-Roman"
+    else:
+        name_line = "(Name of Person Completing Service)"
+        name_font = "Times-Italic"
+    nw = c.stringWidth(name_line, name_font, FS)
+    c.setFont(name_font, FS)
+    # Center name under the short line; allow overhang past the rule.
+    c.drawString(sig_x0 + (sig_line_w - nw) / 2.0, sig_line_y - name_below, name_line)
 
     if fields.stamp_signature and fields.server_name:
         try:
+            # Sit the stamp on the line (slight overlap so ink rests on the rule).
             c.drawImage(
                 SIGNATURE_PATH,
-                sig_x0 + 10,
-                sig_line_y,  # baseline of stamp = signature line
+                sig_x0 + line_pad,
+                sig_line_y - 3.0,
                 width=sig_width,
                 height=sig_height,
                 mask="auto",
