@@ -64,10 +64,13 @@ def _header(d: PleadingPaper) -> None:
 
 
 def _sign_block(d: PleadingPaper) -> None:
-    d.ensure_space(8)
+    d.ensure_space(10)
     d.blank_line()
     d.write_line(f"Dated: {EXEC_DATE}")
     d.write_line("Respectfully submitted,", italic=True)
+    # Extra blank lines so the stamped signature clears this text.
+    d.blank_line()
+    d.blank_line()
     d.blank_line()
     d.write_line("___________________________________")
     d.write_line("BRENDAN NGWA NFORBI", bold=True)
@@ -88,9 +91,10 @@ def _stamp_sig(path: Path) -> None:
     if page is None or line is None:
         doc.close()
         raise RuntimeError(f"No signature line found in {path}")
-    width = 150
+    width = 140
     height = width * SIGNATURE_ASPECT
-    rect = fitz.Rect(line.x0, line.y0 - height - 2, line.x0 + width, line.y0 - 2)
+    # Sit the stamp on the underscore (slight overlap); keep clear of text above.
+    rect = fitz.Rect(line.x0, line.y0 - height + 3, line.x0 + width, line.y0 + 3)
     page.insert_image(rect, filename=SIGNATURE_PATH, keep_proportion=True)
     doc.saveIncr()
     doc.close()
