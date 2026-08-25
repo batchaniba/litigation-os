@@ -214,8 +214,6 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 <!-- PORTFOLIO:UPCOMING_DEADLINES:START -->
 | Date | Matter | Event |
 |---|---|---|
-| Aug. 24, 2026 | 25 | Responsive pleading deadline (computed) — Newanforbi v. Federal Express Corporation (STK-CV-UWT-2026-0009118); 30 days from the Jul. 24, 2026 service date (CCP §412.20(a)(3)) |
-| Aug. 24, 2026 | 25, 26 | REMOVAL WATCH — Newanforbi v. Federal Express Corporation (Matter 25, STK-CV-UWT-2026-0009118) is the same claim set in the same court, served July 24, 2026, with a state responsive-pleading deadline of Aug. 24, 2026. |
 | Aug. 25, 2026 | 24 | Deadline — ADR Certification (ADR L.R. 3) and Rule 26(f) meet-and-confer (initial disclosures, early settlement, ADR process selection, discovery plan) — Newanforbi v. Serrato (4:26-cv-05953-ASK) |
 | Aug. 26, 2026 | 27 | Meet-and-confer deadline (computed) as to The RK Logistics Group, Inc. — Newanforbi v. Randstad US, LLC et al. (26CV199902) |
 | Aug. 26, 2026 | 29 | Meet-and-confer deadline (computed) — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554) |
