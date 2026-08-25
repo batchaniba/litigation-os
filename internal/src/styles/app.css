@@ -305,7 +305,7 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
 
 /* Header Westlaw block — kept compact so the two-column firm grid has room */
 .legacy-westlaw-label { font-size: 8px; font-family: var(--font-sans); font-weight: 700; letter-spacing: 2.5px; color: var(--gold); text-transform: uppercase; margin-bottom: 4px; }
-.legacy-westlaw-quote { font-family: var(--font-sans); font-size: 10px; font-style: italic; color: #495467; line-height: 1.45; margin-bottom: 4px; max-width: 220px; }
+.legacy-westlaw-quote { font-family: var(--font-sans); font-size: 10px; font-style: italic; color: #495467; line-height: 1.45; margin-bottom: 4px; max-width: 260px; }
 .legacy-westlaw-cite { font-family: var(--font-sans); font-size: 9px; font-weight: 700; color: var(--gold); letter-spacing: 0.4px; margin-bottom: 2px; }
 .legacy-westlaw-attribution { font-family: var(--font-sans); font-size: 8px; color: #495467; opacity: 0.8; line-height: 1.4; }
 .legacy-westlaw-source { font-family: var(--font-sans); font-size: 8px; color: #495467; opacity: 0.6; }
@@ -752,7 +752,7 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
      yields width first, since the coverage figures stop being legible if the
      tower shrinks. */
   .legacy-header-main { gap: 14px; }
-  .legacy-westlaw-quote { max-width: 180px; font-size: 9px; }
+  .legacy-westlaw-quote { max-width: 200px; font-size: 9px; }
   .coverage-tower-header { width: 168px; padding: 8px 10px; }
   .coverage-tower-amount { font-size: 18px; }
   .coverage-tower-amount-aggregate { font-size: 21px; }
@@ -784,7 +784,9 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
 @media (max-width: 980px) {
   .legacy-header-inner {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    /* col 3 must size to the two-column firm grid — minmax(0, 1fr)
+       was collapsing it to 0px around 800–900px and clipping the logos. */
+    grid-template-columns: minmax(0, 1fr) auto max-content;
     align-items: center;
     padding: 16px;
     gap: 6px 8px;
@@ -823,8 +825,8 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
     justify-items: center;
     align-items: center;
     justify-self: end;
-    width: auto;
-    min-width: 0;
+    width: max-content;
+    min-width: max-content;
     gap: 6px 8px;
   }
   /* Left: Kabat, Azimov, MHS — right: Garcia, SLB, DAG */
