@@ -1,5 +1,15 @@
 [
   {
+    "date": "Aug. 25, 2026",
+    "event": "PRIVATE PROCESS SERVER BUNDLE prepared for Rule 4 re-service on Santiago Meza-Gonzalez (Matter 32, 3:26-cv-08271-PHK) \u2014 28-page packet: cover sheet; issued summons (Dkt. 3 Meza page); blank AO 440 Proof of Service return; operative FAC (Dkt. 5); Notice Identifying Operative FAC (Aug. 24); CMC/ADR Order (Dkt. 4). Service address: CHP Modesto Area, 4030 Kiernan Avenue, Modesto, CA 95356. No Stanislaus SER-001 / sheriff forms \u2014 private process server only. Melano already has summons POS on file (Dkt. 5-1); Meza Rule 4 remains incomplete.",
+    "matters": [
+      32
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "source": "/documents/matter-32/ndcal/Meza-Gonzalez Private Process Server Bundle (Aug 25 2026).pdf"
+  },
+  {
     "date": "Aug. 31, 2026",
     "event": "OPEN TASK \u2014 Serve the operative Aug. 17, 2026 Amended CCP \u00a7425.115 Notice ($250,000) on Federal Express Corporation (Matter 25) in the same manner as a summons before any default prove-up if FedEx misses the Aug. 24, 2026 responsive deadline. Notice is executed but not yet filed/served; without timely personal service, punitive damages are unavailable on default.",
     "matters": [
@@ -2090,7 +2100,7 @@
       25
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "opposing"
   },
   {
@@ -3268,7 +3278,7 @@
       26
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "opposing"
   },
   {
