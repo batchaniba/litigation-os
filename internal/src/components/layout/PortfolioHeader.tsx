@@ -92,7 +92,8 @@ export function PortfolioHeader({
             </a>
             <a href="https://martensonlaw.com/" target="_blank" rel="noopener noreferrer" title="Visit Martenson, Hasbrouck & Simon LLP (martensonlaw.com) ↗" className="firm-link">
               <div className="legacy-counsel-names">
-                <div>Martenson, Hasbrouck &amp; Simon LLP</div>
+                <div>Vanessa W. Mott</div>
+                <div>Alyssa R. Daskas</div>
                 <div className="firm-external-hint">Visit site ↗</div>
               </div>
               <img className="firm-logo legacy-mhs-logo" src={withBase(darkMode ? "/branding/mhs-dark.webp" : "/branding/mhs-light.webp")} alt="Martenson, Hasbrouck & Simon LLP" width={1004} height={208} decoding="async" />
