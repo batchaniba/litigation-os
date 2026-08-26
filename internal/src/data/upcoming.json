@@ -1,14 +1,47 @@
 [
   {
-    "date": "Aug. 26, 2026",
-    "event": "OPEN TASK — Upon Santa Clara clerk acceptance of Matter 35 e-filing and issuance of summons, serve Ross Stores, Inc. and Ross Dress for Less, Inc. via C T Corporation System (330 N. Brand Blvd., Suite 700, Glendale, CA 91203 — info. and belief). Do not serve DOEs until identified/amended. After service, demand Aug. 25, 2026 Sunnyvale Ross surveillance and LP stop/training materials. Watch One Legal / email for clerk acceptance and case-number assignment (Confirmation #35442871).",
+    "date": "Oct. 25, 2026",
+    "event": "OPEN TASK — Serve Ross Stores, Inc. and Ross Dress for Less, Inc. in Matter 35 (26CV501995) with the Verified Complaint, issued Summons, ADR Information Sheet, and clerk-stamped CV-5012 Civil Lawsuit Notice (via C T Corporation System, 330 N. Brand Blvd., Suite 700, Glendale, CA 91203 — info. and belief), then file POS-010. Santa Clara CV-5012 / local practice: serve within 60 days of filing (filed Aug. 26, 2026). Do not serve DOEs until identified/amended. After service, demand Aug. 25, 2026 Sunnyvale Ross surveillance and LP stop/training materials.",
     "matters": [
       35
     ],
     "type": "deadline",
     "upcoming": true,
     "actor": "you",
-    "source": "/documents/matter-35/One Legal Order Receipt - eFiling Confirmation 35442871 (Aug 26 2026).pdf"
+    "source": "/documents/matter-35/SUM-100 Summons (ISSUED, Filed Aug 26 2026) - 26CV501995.pdf"
+  },
+  {
+    "date": "Jan. 12, 2027",
+    "event": "OPEN TASK — Matter 35 (26CV501995) meet-and-confer with appearing parties at least 30 calendar days before the Feb. 11, 2027 CMC (Santa Clara Civil Lawsuit Notice / local CMC rules).",
+    "matters": [
+      35
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-35/CV-5012 Civil Lawsuit Notice (Clerk-Stamped) - 26CV501995.pdf"
+  },
+  {
+    "date": "Jan. 27, 2027",
+    "event": "OPEN TASK — File and serve Case Management Statement (CM-110) in Matter 35 (26CV501995) at least 15 calendar days before the Feb. 11, 2027 CMC.",
+    "matters": [
+      35
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-35/CV-5012 Civil Lawsuit Notice (Clerk-Stamped) - 26CV501995.pdf"
+  },
+  {
+    "date": "Feb. 11, 2027",
+    "event": "CASE MANAGEMENT CONFERENCE — Ngwa Nforbi v. Ross Stores, Inc., et al. (Matter 35, Santa Clara Sup. Ct. No. 26CV501995), Hon. Vince Parrett, Dept. 16 (stamp 02/11/27, 200P — confirm 2:00 p.m. / remote option under Local Civil Rule 8 on the portal). Appear; ADR stipulation (CV-5008) may cancel CMC if filed ≥30 days prior.",
+    "matters": [
+      35
+    ],
+    "type": "hearing",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-35/CV-5012 Civil Lawsuit Notice (Clerk-Stamped) - 26CV501995.pdf"
   },
   {
     "date": "Aug. 31, 2026",
