@@ -588,9 +588,9 @@ const lawyer_fees_raw = [
   },
   {
     number: 35,
-    type: "State — Unruh / False Imprisonment / IIED / UCL (Santa Clara Sup. Ct.)",
-    documentsCount: 1,
-    totalPagesReal: 35,
+    type: "State — Unruh / False Imprisonment / Negligent Training (Santa Clara Sup. Ct.)",
+    documentsCount: 2,
+    totalPagesReal: 28,
     hours: {
       low: 40,
       high: 70,
@@ -601,7 +601,7 @@ const lawyer_fees_raw = [
       high: 19600,
       mid: 15400
     },
-    notes: "Aug. 26, 2026 verified complaint (35 pp. pleading paper) billed as a major state pleading: fact investigation and corporate-entity research, Unruh / §490.5(f) / false-imprisonment theory development, and full drafting/revision of the improved verified complaint with universal signature. Fee-shifting under Civ. Code §52(a) and CCP §1021.5 applies upon prevailing. Filing/service packet work (summons, CM-010, fee waiver) not yet on disk."
+    notes: "Aug. 26, 2026 verified complaint v9 (~28 pp. pleading paper) billed as a major state pleading: fact investigation and corporate-entity research, Unruh / §490.5(f) / false-imprisonment theory development, and full drafting/revision of the tightened three-cause complaint with universal signature. Internal damages worksheet on disk but DO NOT FILE. Fee-shifting under Civ. Code §52(a) and CCP §1021.5 applies upon prevailing. Filing/service packet work (summons, CM-010, fee waiver) not yet on disk."
   }
 ];
 
