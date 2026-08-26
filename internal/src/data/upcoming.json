@@ -180,16 +180,6 @@
     "upcoming": true
   },
   {
-    "date": "Aug. 24, 2026",
-    "event": "Responsive pleading deadline (computed) — Newanforbi v. Federal Express Corporation (STK-CV-UWT-2026-0009118); 30 days from the Jul. 24, 2026 service date (CCP §412.20(a)(3)); the raw 30-day count lands on Sunday, Aug. 23, extended to Monday per CCP §12a",
-    "matters": [
-      25
-    ],
-    "type": "deadline",
-    "upcoming": true,
-    "actor": "opposing"
-  },
-  {
     "date": "Sep. 13, 2026",
     "event": "Service deadline — Newanforbi v. Federal Express Corporation (STK-CV-UWT-2026-0009118) and Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113); 60 days from July 15, 2026 filing (CRC 3.110); proofs of service must be filed with court",
     "matters": [
@@ -399,17 +389,6 @@
     "type": "deadline",
     "upcoming": true,
     "actor": "you"
-  },
-  {
-    "date": "Aug. 24, 2026",
-    "event": "REMOVAL WATCH — Newanforbi v. Federal Express Corporation (Matter 25, STK-CV-UWT-2026-0009118) is the same claim set in the same court, served July 24, 2026, with a state responsive-pleading deadline of Aug. 24, 2026. Federal Express Corporation is a Delaware corporation with its principal place of business in Memphis, Tennessee, so the action is removable on the same diversity theory UPS used in Matter 26. Treat a mirror removal on or before Aug. 24, 2026 as the expected outcome and plan Matter 25 as a federal case.",
-    "matters": [
-      25,
-      26
-    ],
-    "type": "deadline",
-    "upcoming": true,
-    "actor": "opposing"
   },
   {
     "date": "Sep. 21, 2026",
