@@ -23,7 +23,7 @@ export const damages_table = [
     { category: "N.D. Cal. §1983 Meza-Gonzalez (Matter 32) — pleaded >$214k; $0 here to avoid double-count w/ M1/M2", matters: [32], conservative: 0, moderate: 0, aggressive: 0 },
     { category: "N.D. Cal. §1983 Nforbi v. Candelaria et al. (Matter 33, 3:26-cv-08272-LJC) — pleaded >$214k; $0 here to avoid double-count w/ M7", matters: [33], conservative: 0, moderate: 0, aggressive: 0 },
     { category: "§1983 Monell / Individual + Bane Act — Counseling & Psychotherapy Center (Matter 34)", matters: [34], conservative: 0, moderate: 0, aggressive: 0 },
-    { category: "Unruh / False Imprisonment / IIED — Ross Stores (Matter 35)", matters: [35], conservative: 115000, moderate: 345000, aggressive: 1035000 }
+    { category: "Unruh / False Imprisonment / Negligent Training — Ross Stores (Matter 35)", matters: [35], conservative: 115000, moderate: 345000, aggressive: 1035000 }
 ];
 // Matters 3, 5, and 15 are excluded/reduced above (abandoned/dismissed Jul. 2026):
 // - Matter 3 (Derrick, ABANDONED): its Lost Income, Emotional Distress, Punitive, and Fees

@@ -150,7 +150,7 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 
 Standalone retail civil-rights matter arising from an August 25, 2026 consumer racial-profiling detention at the Ross Dress for Less in Sunnyvale:
 
-- **Matter 35** (Ngwa Nforbi v. Ross Stores, Inc., et al.) — Santa Clara Superior Court (pre-filing). On August 25, 2026, Plaintiff entered Ross holding a Celsius drink purchased minutes earlier at the adjacent Sprouts, browsed men's clothing without taking Ross merchandise, and was physically blocked at the exit by a white loss-prevention employee who questioned whether he had paid for the drink, admitted Ross sells Celsius only "sometimes," and asserted "I'm allowed to do that." Verified Complaint drafted August 26, 2026 asserting Unruh Civil Rights Act (Civ. Code §§51, 51.5, 52), False Imprisonment, IIED, Negligent Hiring/Training/Supervision, UCL §17200, and Declaratory Relief — not yet filed or served.
+- **Matter 35** (Ngwa Nforbi v. Ross Stores, Inc., et al.) — Santa Clara Superior Court, First Street. On August 25, 2026 (~9:00 p.m.), Plaintiff entered Ross holding a Celsius drink purchased minutes earlier at the adjacent Sprouts, browsed men's clothing without taking Ross merchandise, and was physically blocked at the exit by a white loss-prevention employee who questioned whether he had paid for the drink, admitted Ross sells Celsius only "sometimes," and asserted "I'm allowed to do that." **~5-hour turnaround:** Verified Complaint (v9) for Unruh (Civ. Code §§51, 51.5, 52), False Imprisonment, and Negligent Training and Supervision **e-filed and paid August 26, 2026 at 2:06 AM PT** via One Legal (Confirmation #35442871) — under court clerk review; case number pending; service after summons issues.
 
 [↑ Contents](#contents)
 
@@ -178,7 +178,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | 32 | Nforbi v. Meza-Gonzalez, et al | 3:26-cv-08271-PHK | USDC N.D. Cal. (docketed Aug. 10, 2026; related Serrato 4:26-cv-05953-ASK and Candelaria 3:26-cv-08272-LJC) | Federal | FAC filed Aug. 17 (Dkt. 5) — resp. due Sep. 4; CMC Dec. 2 |
 | 33 | Nforbi v. Candelaria et al. | 3:26-cv-08272-LJC | USDC N.D. Cal. (San Francisco Div.) | Federal | FAC filed Aug. 17 (Dkt. 6) — resp. due Sep. 4; CMC Nov. 12 |
 | 34 | Newanforbi v. Counseling and Psychotherapy Center, Inc., et al. | TBD | USDC N.D. Cal. (San Jose Div.) / Santa Clara Sup. Ct. | Federal | Pre-filing — intake & compliance monitoring |
-| 35 | Ngwa Nforbi v. Ross Stores, Inc., et al. | TBD | Santa Clara Sup. Ct. | State | Pre-filing — verified complaint ready |
+| 35 | Ngwa Nforbi v. Ross Stores, Inc., et al. | TBD (case number pending clerk acceptance) | Santa Clara Sup. Ct. (First Street / Downtown) | State | Filed in ~5 hrs — under clerk review |
 <!-- PORTFOLIO:ACTIVE_MATTERS:END -->
 
 *Settled matters stay in the table above until dismissal is entered — a settlement resolves the merits, but the matter is still open on the docket. Their Status column reads "Settled" (see the Overview count above for which ones).*
@@ -222,8 +222,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 <!-- PORTFOLIO:UPCOMING_DEADLINES:START -->
 | Date | Matter | Event |
 |---|---|---|
-| Aug. 25, 2026 | 24 | Deadline — ADR Certification (ADR L.R. 3) and Rule 26(f) meet-and-confer (initial disclosures, early settlement, ADR process selection, discovery plan) — Newanforbi v. Serrato (4:26-cv-05953-ASK) |
-| Aug. 26, 2026 | 35 | OPEN TASK — File and serve the Verified Complaint for Damages and Injunctive and Declaratory Relief, Ngwa Nforbi v. Ross Stores, Inc., et al. (Matter 35), in Santa Clara Superior Court (unlimited civil). |
+| Aug. 26, 2026 | 35 | OPEN TASK — Upon Santa Clara clerk acceptance of Matter 35 e-filing and issuance of summons, serve Ross Stores, Inc. and Ross Dress for Less, Inc. via C T Corporation System (330 N. |
 | Aug. 26, 2026 | 27 | Meet-and-confer deadline (computed) as to The RK Logistics Group, Inc. — Newanforbi v. Randstad US, LLC et al. (26CV199902) |
 | Aug. 26, 2026 | 29 | Meet-and-confer deadline (computed) — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554) |
 | Aug. 26, 2026 | 24 | Responsive pleading deadline (computed) — Newanforbi v. Serrato (4:26-cv-05953-ASK); 21 days from the Aug. 5, 2026 USMS personal service date (FRCP 12(a)(1)(A)) |
@@ -294,7 +293,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | N.D. Cal. §1983 Meza-Gonzalez (Matter 32) — pleaded >$214k; $0 here to avoid double-count w/ M1/M2 | 32 | $0 | $0 | $0 |
 | N.D. Cal. §1983 Nforbi v. Candelaria et al. (Matter 33, 3:26-cv-08272-LJC) — pleaded >$214k; $0 here to avoid double-count w/ M7 | 33 | $0 | $0 | $0 |
 | §1983 Monell / Individual + Bane Act — Counseling & Psychotherapy Center (Matter 34) | 34 | $0 | $0 | $0 |
-| Unruh / False Imprisonment / IIED — Ross Stores (Matter 35) | 35 | $115,000 | $345,000 | $1,035,000 |
+| Unruh / False Imprisonment / Negligent Training — Ross Stores (Matter 35) | 35 | $115,000 | $345,000 | $1,035,000 |
 | **Portfolio Total (pre-deduplication)** | | **$1,275,672** | **$3,302,072** | **$7,614,272** |
 <!-- PORTFOLIO:DAMAGES_SUMMARY:END -->
 
@@ -311,7 +310,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 ## Attorney Fees Analysis
 
 <!-- PORTFOLIO:ATTORNEY_FEES:START -->
-Plaintiff is representing himself pro se across all 35 matters. The figures below represent what he would have been required to spend on private counsel to litigate this portfolio — costs he has absorbed entirely through self-representation. Based on real page counts extracted from 327 documents / 3,933 pages across matters with uploaded filings (Matter 32: 78 PDFs / 808 pages — N.D. Cal. ndcal/ filing billed; from-01|02|20|24/ stay attributed to source matters; Matter 33: 30 PDFs / 428 pages — N.D. Cal. refile + Nov. 1 / APS evidence; from-07/from-08 drafting stays on Matters 7/8; Matter 31 has no uploaded PDFs of its own), classified by document type and priced at a blended rate of **$280/hour** (senior partner $350–$450 / mid-associate $250–$350 / paralegal $150–$200). Opposing-party filings billed at light review rate only. Fee analysis date: August 26, 2026.
+Plaintiff is representing himself pro se across all 35 matters. The figures below represent what he would have been required to spend on private counsel to litigate this portfolio — costs he has absorbed entirely through self-representation. Based on real page counts extracted from 331 documents / 3,942 pages across matters with uploaded filings (Matter 32: 78 PDFs / 808 pages — N.D. Cal. ndcal/ filing billed; from-01|02|20|24/ stay attributed to source matters; Matter 33: 30 PDFs / 428 pages — N.D. Cal. refile + Nov. 1 / APS evidence; from-07/from-08 drafting stays on Matters 7/8; Matter 31 has no uploaded PDFs of its own), classified by document type and priced at a blended rate of **$280/hour** (senior partner $350–$450 / mid-associate $250–$350 / paralegal $150–$200). Opposing-party filings billed at light review rate only. Fee analysis date: August 26, 2026.
 
 | Cluster | Matters | Low | Mid | High |
 |---|---|---|---|---|
@@ -319,8 +318,8 @@ Plaintiff is representing himself pro se across all 35 matters. The figures belo
 | Parole Retaliation / HOPE | 3, 4, 5, 6, 11, 13, 14, 15, 16, 17, 18, 21, 28, 30, 34 | $463,512 | $610,092 | $760,872 |
 | Consumer Fraud / Employment | 12, 22, 23, 25, 26, 27, 29, 31 | $136,976 | $185,500 | $233,940 |
 | Administrative Writs & Habeas | 9, 10, 19 | $41,580 | $57,890 | $74,200 |
-| **Portfolio Total** | **35 matters** | **$815,304** | **$1,083,040** | **$1,354,976** |
-| **Estimated Hours** | | **2,911.8 hrs** | **3,868 hrs** | **4,839.2 hrs** |
+| **Portfolio Total** | **35 matters** | **$816,984** | **$1,085,000** | **$1,357,216** |
+| **Estimated Hours** | | **2,917.8 hrs** | **3,875 hrs** | **4,847.2 hrs** |
 
 *Plaintiff has litigated all 35 matters pro se, absorbing the full economic equivalent of the above without compensation. Fee-shifting statutes (42 U.S.C. §1988, PC §290.46(j)(4)(A), RICO 18 U.S.C. §1964(c), FCRA, ICRAA) apply across the majority of active matters — mandatory fee recovery upon prevailing substantially offsets or eliminates the above costs.*
 <!-- PORTFOLIO:ATTORNEY_FEES:END -->
