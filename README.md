@@ -150,7 +150,7 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 
 Standalone retail civil-rights matter arising from an August 25, 2026 consumer racial-profiling detention at the Ross Dress for Less in Sunnyvale:
 
-- **Matter 35** (Ngwa Nforbi v. Ross Stores, Inc., et al.) — Santa Clara Superior Court (pre-filing). On August 25, 2026, Plaintiff entered Ross holding a Celsius drink purchased minutes earlier at the adjacent Sprouts, browsed men's clothing without taking Ross merchandise, and was physically blocked at the exit by a white loss-prevention employee who questioned whether he had paid for the drink, admitted Ross sells Celsius only "sometimes," and asserted "I'm allowed to do that." Verified Complaint drafted August 26, 2026 asserting Unruh Civil Rights Act (Civ. Code §§51, 51.5, 52), False Imprisonment, IIED, Negligent Hiring/Training/Supervision, UCL §17200, and Declaratory Relief — not yet filed or served.
+- **Matter 35** (Ngwa Nforbi v. Ross Stores, Inc., et al.) — Santa Clara Superior Court (pre-filing). On August 25, 2026, Plaintiff entered Ross holding a Celsius drink purchased minutes earlier at the adjacent Sprouts, browsed men's clothing without taking Ross merchandise, and was physically blocked at the exit by a white loss-prevention employee who questioned whether he had paid for the drink, admitted Ross sells Celsius only "sometimes," and asserted "I'm allowed to do that." Verified Complaint (v9) drafted August 26, 2026 asserting Unruh Civil Rights Act (Civ. Code §§51, 51.5, 52), False Imprisonment, and Negligent Training and Supervision — not yet filed or served.
 
 [↑ Contents](#contents)
 
@@ -223,7 +223,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | Date | Matter | Event |
 |---|---|---|
 | Aug. 25, 2026 | 24 | Deadline — ADR Certification (ADR L.R. 3) and Rule 26(f) meet-and-confer (initial disclosures, early settlement, ADR process selection, discovery plan) — Newanforbi v. Serrato (4:26-cv-05953-ASK) |
-| Aug. 26, 2026 | 35 | OPEN TASK — File and serve the Verified Complaint for Damages and Injunctive and Declaratory Relief, Ngwa Nforbi v. Ross Stores, Inc., et al. (Matter 35), in Santa Clara Superior Court (unlimited civil). |
+| Aug. 26, 2026 | 35 | OPEN TASK — File and serve the Verified Complaint for Damages and Injunctive Relief (v9), Ngwa Nforbi v. Ross Stores, Inc., et al. (Matter 35), in Santa Clara Superior Court (unlimited civil). |
 | Aug. 26, 2026 | 27 | Meet-and-confer deadline (computed) as to The RK Logistics Group, Inc. — Newanforbi v. Randstad US, LLC et al. (26CV199902) |
 | Aug. 26, 2026 | 29 | Meet-and-confer deadline (computed) — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554) |
 | Aug. 26, 2026 | 24 | Responsive pleading deadline (computed) — Newanforbi v. Serrato (4:26-cv-05953-ASK); 21 days from the Aug. 5, 2026 USMS personal service date (FRCP 12(a)(1)(A)) |
@@ -294,7 +294,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | N.D. Cal. §1983 Meza-Gonzalez (Matter 32) — pleaded >$214k; $0 here to avoid double-count w/ M1/M2 | 32 | $0 | $0 | $0 |
 | N.D. Cal. §1983 Nforbi v. Candelaria et al. (Matter 33, 3:26-cv-08272-LJC) — pleaded >$214k; $0 here to avoid double-count w/ M7 | 33 | $0 | $0 | $0 |
 | §1983 Monell / Individual + Bane Act — Counseling & Psychotherapy Center (Matter 34) | 34 | $0 | $0 | $0 |
-| Unruh / False Imprisonment / IIED — Ross Stores (Matter 35) | 35 | $115,000 | $345,000 | $1,035,000 |
+| Unruh / False Imprisonment / Negligent Training — Ross Stores (Matter 35) | 35 | $115,000 | $345,000 | $1,035,000 |
 | **Portfolio Total (pre-deduplication)** | | **$1,275,672** | **$3,302,072** | **$7,614,272** |
 <!-- PORTFOLIO:DAMAGES_SUMMARY:END -->
 
