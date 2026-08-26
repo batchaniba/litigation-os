@@ -1,18 +1,18 @@
 {
   "number": 25,
   "caption": "Newanforbi v. Federal Express Corporation",
-  "case_no": "STK-CV-UWT-2026-0009118",
-  "court": "San Joaquin Sup. Ct.",
+  "case_no": "2:26-cv-02881-DAD-SCR",
+  "court": "USDC E.D. Cal. (Sacramento Div.)",
   "claims": "PC §290.46(j)(2)(E) Violation, Failure to Hire (Tameny), ICRAA, Invasion of Privacy, Negligence Per Se, UCL §17200",
-  "status": "Filed July 15, 2026 (Dept. 10B, Hon. Blanca Banuelos; CMC Jan. 14, 2027). Served July 24, 2026 on FedEx via Ct Corporation System; responsive pleading due Aug. 24, 2026. Amended CCP §425.115 notice ($250,000) executed and signed Aug. 17, 2026 — not yet filed or served.",
+  "status": "REMOVED — FedEx removed Aug. 24, 2026 to E.D. Cal. No. 2:26-cv-02881-DAD-SCR (Drozd / Riordan) on diversity. Dkts. 1–3 on file; counsel Allison A. Kray. FRCP 81(c) response due Aug. 31, 2026. State §425.115 / Jan. 14 CMC moot.",
   "lifecycle": "active",
-  "proceeding": "state_civil",
+  "proceeding": "federal_civil",
   "phase": "responsive_deadline",
-  "filed": "July 15, 2026",
-  "judge": "Hon. Blanca Banuelos, Dept. 10B",
+  "filed": "July 15, 2026 (state); removed Aug. 24, 2026",
+  "judge": "Hon. Dale A. Drozd, D.J.; Hon. Sean C. Riordan, M.J.",
   "cluster": 3,
-  "type": "State",
-  "badge": "SERVED",
+  "type": "Federal",
+  "badge": "REMOVED",
   "defendants": "Federal Express Corporation; and DOES 1 through 10, inclusive",
   "causes": [
     "Violation of Cal. Penal Code § 290.46(j)(2)(E)",
@@ -23,9 +23,9 @@
     "Unlawful Business Practices (Bus. & Prof. Code § 17200 et seq.)"
   ],
   "key_facts": "On July 17, 2024, Plaintiff completed an online employment application with Federal Express Corporation ('FedEx') for a position in FedEx's delivery and package handling operations in California, confirmed by an automated email from 'Olivia from FedEx' (fedex@paradox.ai). As part of its standard pre-employment screening, FedEx — through a human-resources function identified as 'FEDEX GROUND HR' — initiated a background check through First Advantage (fadv.com). On March 10, 2025 at 1:44 PM, Plaintiff received a 'FedEx Pre-Adverse Employment Action Notice' from First Advantage (DoNotReply@fadv.com) directing him to review the pre-adverse action notification via a secure portal link. A duplicate pre-adverse notice bearing the same subject line was sent the next day, March 11, 2025 at 7:48 AM, to a second email address associated with Plaintiff (bnn.cdl@gmail.com) with a distinct portal key, followed by five further reminder notices dated March 11 (1:45 PM), March 12, March 13, March 14, and March 16, 2025 — an unusually persistent notice cadence. On March 19, 2025 at 1:47 PM — nine days after the original pre-adverse notice — Plaintiff received a 'FedEx Adverse Employment Action Notice' from First Advantage confirming FedEx had taken final adverse action, definitively denying him employment. FedEx provided no written communication identifying any basis for the denial other than the background screening report; no other disqualifying information existed in Plaintiff's application. Plaintiff is a registrant on California's Megan's Law sex offender registry, and alleges on information and belief that the First Advantage report disclosed that status to FedEx (together with a statutory disclaimer warning that the information could not lawfully be used for employment purposes) and that FedEx used it as the basis for the denial, in violation of Penal Code § 290.46(j)(2)(E).",
-  "procedural_status": "Pre-filing demand July 12, 2026 ($85,000; deadline July 26). Complaint filed July 15, 2026 (STK-CV-UWT-2026-0009118); FW-003 granted same day. Unlike Matters 22/23, Plaintiff lacks the First Advantage report (portal link expired) — registry use is pled on information and belief, corroborated by the adverse-action paper trail. Served July 24, 2026 via LA County Sheriff on Ct Corporation System; responsive pleading due Aug. 24, 2026 (meet-and-confer by Aug. 19 if demurrer). Amended §425.115 ($250,000) executed and signed Aug. 17, 2026, superseding the Aug. 4 $25,000 placeholder and the unsigned Aug. 7 generated original — not yet filed or served. Same-day filing with Matter 26 in adjacent departments; CRC 3.300 related-case notice unlikely (separate hiring transactions). Dated service/deadline beats live in timeline.json.",
+  "procedural_status": "Complaint filed July 15, 2026 (San Joaquin Sup. Ct. STK-CV-UWT-2026-0009118); FW-003 granted; served July 24, 2026 on FedEx via LA County Sheriff / Ct Corporation System. REMOVED Aug. 24, 2026 to USDC E.D. Cal., Sacramento Division, as No. 2:26-cv-02881-DAD-SCR (diversity under 28 U.S.C. §§ 1332, 1441, 1446). Docket: Dkt. 1 Petition and Notice of Removal (filed Aug. 24, 2026) with attachments Dkt. 1-1 Decl. of Allison A. Kray ISO removal + Exhibits 1–7 (state complaint, POS, etc.), Dkt. 1-2 Decl. of Gabriella Bow ISO removal, Dkt. 1-3 Decl. of Shahram A. Eslami ISO removal, and Dkt. 1-4 JS-44 Civil Cover Sheet; Dkt. 2 FRCP 7.1 Disclosure Statement identifying parent FedEx Corporation (filed Aug. 24); Dkt. 3 Magistrate Judge consent/decline materials (filed Aug. 25). Counsel of record: Allison A. Kray, Esq. (SBN 312544), Federal Express Corporation, 2601 Main Street, Suite 1100, Irvine, CA 92614 (allison.kray@fedex.com). FedEx's federal response due Aug. 31, 2026 under Fed. R. Civ. P. 81(c)(2)(C). State CMC (Jan. 14, 2027, Dept. 10B Banuelos) and the Aug. 17 amended CCP §425.115 ($250,000) are moot on removal — federal ceiling on relief is FRCP 54(c). COS uses wrong plaintiff email 'bnn.cdla@gmail.com' (correct bnn.cdl@gmail.com); correct at first opportunity. Watch for Rule 12(b)(6) / answer and any Initial Scheduling Order. Remand not recommended (mirror of Matter 26 analysis; $85k pre-filing demand + §290.46(j) statutory floor supports AIC). Dated deadline beats live in timeline.json.",
   "damages": "Statutory civil remedy under PC § 290.46(j)(4)(A): actual damages or $25,000, whichever is greater, plus attorney fees, for each unlawful use of registry information. CONSERVATIVE: ~$40,000 (statutory minimum plus modest emotional distress; no wage documentation on file to support a large lost-wages claim, since Plaintiff never began working for FedEx). MODERATE: ~$95,000 (statutory penalty, ICRAA punitive damages up to $5,000 for willful noncompliance, emotional distress, and partial fee-shifting). AGGRESSIVE: ~$220,000 (treble-adjacent aggregation across all six causes of action plus Civil Code § 3294 punitive damages, if discovery yields the actual First Advantage report and confirms willful registry-based denial). Note: because Plaintiff was never hired, there are no lost W-2 wages comparable to Matter 22 — the primary economic recovery theory is the PC § 290.46(j)(4)(A) statutory penalty and lost opportunity/career-advancement damages, not back pay from an existing job.",
-  "risk": "Favorable on the law (PC § 290.46(j)(2)(E) is a categorical, exception-free prohibition and negligence per se under Evid. Code § 669) but evidentiarily thinner than Matters 22/23: FedEx never issued a written admission comparable to Pilot's Post-Adverse Action Notice or Macy's' HireRight internal comments naming the registry as the basis for denial. The First Advantage notices establish the timeline (application → pre-adverse notice → 9-day gap → final adverse action) and FedEx's general practice of background screening through a vendor known to include statutory registry disclaimers, but the complaint pleads FedEx's actual use of registry information 'on information and belief' throughout. Discovery (a subpoena to First Advantage for the underlying report, or FedEx's hiring file) would be needed to convert this from a plausible to a proven claim. The five reminder notices sent to two different email addresses is useful circumstantial evidence that Plaintiff was a live, monitored applicant in FedEx's system at the time of denial. On punitives: the Aug. 17 amended §425.115 ($250,000) sets a default ceiling only — any prove-up award still requires evidence of FedEx's financial condition (Adams v. Murakami (1991) 54 Cal.3d 105).",
+  "risk": "Merits unchanged by removal — diversity court applies California law. PC §290.46(j)(2)(E) is categorical; evidentiary gap remains (registry use pled on information and belief; First Advantage report not in hand). Removal timely (served July 24; removed Aug. 24). Remand not recommended (mirror Matter 26; $85k demand + statutory floor supports AIC). Upside: FRCP 26 / Rule 45 reach First Advantage; native FCRA fee-shifting available. Expect Rule 12(b)(6) by ~Aug. 31 (Tameny failure-to-hire + I&B registry use). State §425.115 sets nothing federally — FRCP 54(c) / Adams v. Murakami control punitives.",
   "evidence": [
     "FedEx/Paradox.ai Application Confirmation Email, July 17, 2024, 4:57 PM — 'Federal Express Corporation Application Completed!'",
     "First Advantage Pre-Adverse Employment Action Notice, March 10, 2025, 1:44 PM — background screening report for 'FEDEX GROUND HR'",
@@ -34,9 +34,38 @@
     "First Advantage Adverse Employment Action Notice, March 19, 2025, 1:47 PM — confirming final denial nine days after pre-adverse notice",
     "California Penal Code § 290.46(j)(1) and (j)(2)(E) — statutory prohibition on registry information use for employment",
     "Fair Credit Reporting Act, 15 U.S.C. § 1681b(b)(3)(A) — pre-adverse action notice requirement",
-    "California Investigative Consumer Reporting Agencies Act, Civ. Code § 1786 et seq."
+    "California Investigative Consumer Reporting Agencies Act, Civ. Code § 1786 et seq.",
+    "FedEx Notice of Removal packet — E.D. Cal. No. 2:26-cv-02881-DAD-SCR (Dkt. 1 filed Aug. 24, 2026; diversity; counsel Allison A. Kray)"
   ],
   "documents": [
+    {
+      "path": "/documents/matter-25/Dkt 01 - Petition and Notice of Removal (Filed Aug 24 2026).pdf",
+      "filed": true
+    },
+    {
+      "path": "/documents/matter-25/Dkt 01-1 - Declaration of Allison A. Kray ISO Removal with Exhibits 1-7 (Filed Aug 24 2026).pdf",
+      "filed": true
+    },
+    {
+      "path": "/documents/matter-25/Dkt 01-2 - Declaration of Gabriella Bow ISO Removal (Filed Aug 24 2026).pdf",
+      "filed": true
+    },
+    {
+      "path": "/documents/matter-25/Dkt 01-3 - Declaration of Shahram A. Eslami ISO Removal (Filed Aug 24 2026).pdf",
+      "filed": true
+    },
+    {
+      "path": "/documents/matter-25/Dkt 01-4 - JS-44 Civil Cover Sheet (Filed Aug 24 2026).pdf",
+      "filed": true
+    },
+    {
+      "path": "/documents/matter-25/Dkt 02 - FedEx Disclosure Statement FRCP 7.1 (Filed Aug 24 2026).pdf",
+      "filed": true
+    },
+    {
+      "path": "/documents/matter-25/Dkt 03 - Magistrate Judge Consent Form Materials (Filed Aug 25 2026).pdf",
+      "filed": true
+    },
     {
       "path": "/documents/matter-25/Newanforbi v FedEx Complaint.pdf"
     },
@@ -120,5 +149,5 @@
     }
   ],
   "archived": false,
-  "status_label": "Served Jul. 24, 2026 — response due Aug. 24"
+  "status_label": "Removed — 2:26-cv-02881-DAD-SCR; resp. ~Aug 31"
 }

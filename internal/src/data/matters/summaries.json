@@ -673,17 +673,17 @@
   {
     "number": 25,
     "caption": "Newanforbi v. Federal Express Corporation",
-    "case_no": "STK-CV-UWT-2026-0009118",
-    "court": "San Joaquin Sup. Ct.",
+    "case_no": "2:26-cv-02881-DAD-SCR",
+    "court": "USDC E.D. Cal. (Sacramento Div.)",
     "claims": "PC §290.46(j)(2)(E) Violation, Failure to Hire (Tameny), ICRAA, Invasion of Privacy, Negligence Per Se, UCL §17200",
     "lifecycle": "active",
-    "proceeding": "state_civil",
+    "proceeding": "federal_civil",
     "phase": "responsive_deadline",
-    "filed": "July 15, 2026",
-    "judge": "Hon. Blanca Banuelos, Dept. 10B",
+    "filed": "July 15, 2026 (state); removed Aug. 24, 2026",
+    "judge": "Hon. Dale A. Drozd, D.J.; Hon. Sean C. Riordan, M.J.",
     "cluster": 3,
-    "type": "State",
-    "badge": "SERVED",
+    "type": "Federal",
+    "badge": "REMOVED",
     "defendants": "Federal Express Corporation; and DOES 1 through 10, inclusive",
     "causes": [
       "Violation of Cal. Penal Code § 290.46(j)(2)(E)",
@@ -694,9 +694,9 @@
       "Unlawful Business Practices (Bus. & Prof. Code § 17200 et seq.)"
     ],
     "archived": false,
-    "status_label": "Served Jul. 24, 2026 — response due Aug. 24",
-    "evidenceCount": 8,
-    "documentCount": 27
+    "status_label": "Removed — 2:26-cv-02881-DAD-SCR; resp. ~Aug 31",
+    "evidenceCount": 9,
+    "documentCount": 34
   },
   {
     "number": 26,
