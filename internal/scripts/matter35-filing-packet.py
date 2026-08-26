@@ -179,37 +179,31 @@ def build_cm010(out: Path) -> None:
     print(f"Wrote {out}")
 
 
-def _draw_wrapped(
-    page: fitz.Page,
-    rect: fitz.Rect,
-    text: str,
-    *,
-    fontsize: float = 8.5,
-    fontname: str = "times-roman",
-) -> None:
-    """White out a rect and draw wrapped text (AcroForm fields are too short)."""
-    page.draw_rect(rect, color=(1, 1, 1), fill=(1, 1, 1), width=0)
-    page.insert_textbox(
-        rect,
-        text,
-        fontsize=fontsize,
-        fontname=fontname,
-        align=fitz.TEXT_ALIGN_LEFT,
-        color=(0, 0, 0),
-    )
-
-
 def build_sum100(out: Path) -> None:
+    """Fill SUM-100 cleanly: native fields; no content-area whiteouts."""
     src = SUM100_SRC
     if not src.is_file():
         src = _first_existing([Path("/tmp/forms/sum100.pdf"), SUM100_SRC])
 
     P = "SUM-100[0].Page1[0]"
-    # Leave cramped multi-line areas empty in the AcroForm; draw them below.
+    defendants_lines = (
+        "ROSS STORES, INC., a Delaware corporation; ROSS DRESS FOR LESS, INC.,\n"
+        "a Virginia corporation; DOE 1; and DOES 2 through 20, inclusive"
+    )
+    court_line1 = "Superior Court of California,"
+    court_lines_2_3 = (
+        "County of Santa Clara -- Downtown\n"
+        "191 North First Street, San Jose, CA 95113"
+    )
+    # Slightly taller than the native field so County + 191 each get a full line,
+    # still above the attorney-info label (~ y 524). No whiteout.
+    court_addr_rect = fitz.Rect(36.1, 502.5, 362.0, 523.0)
+
     fields = {
-        f"{P}.Notice[0].FillText25[0]": "",
+        f"{P}.Notice[0].FillText25[0]": defendants_lines,
         f"{P}.Notice[0].FillText180[0]": PLAINTIFF_CAPS,
-        f"{P}.Info[0].FillText3[0]": "",
+        f"{P}.Info[0].FillText3[0]": court_line1,
+        # Drawn into the native address rect below (empty field avoids double ink).
         f"{P}.Info[0].FillText2[0]": "",
         f"{P}.Info[0].CaseNumber[0].FillText26[0]": "",
         f"{P}.Info[0].FillText30[0]": PLAINTIFF_INFO_LINE,
@@ -220,46 +214,48 @@ def build_sum100(out: Path) -> None:
     doc = fitz.open(str(out))
     page = doc[0]
 
-    # Keep plaintiff name in its form field (short enough).
     for w in page.widgets() or []:
-        if w.field_name == f"{P}.Notice[0].FillText180[0]":
+        name = w.field_name or ""
+        if name.endswith("FillText25[0]"):
+            w.field_flags = int(w.field_flags) | (1 << 12)
+            w.text_fontsize = 7.5
+            w.field_value = defendants_lines
+            w.update()
+        elif name.endswith("FillText180[0]"):
             w.field_value = PLAINTIFF_CAPS
             w.update()
-        elif w.field_name == f"{P}.Info[0].FillText30[0]":
-            w.field_value = PLAINTIFF_INFO_LINE
+        elif name.endswith("FillText3[0]"):
+            w.text_fontsize = 8
+            w.field_value = court_line1
             w.update()
-        elif w.field_name in {
-            f"{P}.Notice[0].FillText25[0]",
-            f"{P}.Info[0].FillText3[0]",
-            f"{P}.Info[0].FillText2[0]",
-        }:
+        elif name.endswith("FillText2[0]"):
             w.field_value = ""
             w.update()
+        elif name.endswith("FillText30[0]"):
+            w.text_fontsize = 7
+            w.field_value = PLAINTIFF_INFO_LINE
+            w.update()
 
-    # Defendants -- wrap so the last line is not clipped.
-    defendants_text = (
-        "ROSS STORES, INC., a Delaware corporation; "
-        "ROSS DRESS FOR LESS, INC., a Virginia corporation;\n"
-        "DOE 1; and DOES 2 through 20, inclusive"
-    )
-    _draw_wrapped(
-        page,
-        fitz.Rect(36.0, 112.0, 431.0, 142.0),
-        defendants_text,
-        fontsize=8.0,
+    # Two compact lines inside the native address field only (no whiteout).
+    page.insert_textbox(
+        court_addr_rect,
+        court_lines_2_3,
+        fontsize=6.5,
+        fontname="times-roman",
+        align=fitz.TEXT_ALIGN_LEFT,
+        color=(0, 0, 0),
     )
 
-    # Court -- break before "County of" and before "191 North".
-    court_text = (
-        "Superior Court of California,\n"
-        "County of Santa Clara -- Downtown\n"
-        "191 North First Street, San Jose, CA 95113"
-    )
-    _draw_wrapped(
-        page,
-        fitz.Rect(36.0, 485.0, 362.0, 522.0),
-        court_text,
-        fontsize=8.0,
+    for w in list(page.widgets() or []):
+        name = w.field_name or ""
+        if "Footer" in name or "CourtLink" in name:
+            page.delete_widget(w)
+    # Mask Print/Save/Clear chrome only (below form content).
+    page.draw_rect(
+        fitz.Rect(36.0, 762.0, 576.0, 792.0),
+        color=(1, 1, 1),
+        fill=(1, 1, 1),
+        width=0,
     )
 
     doc.saveIncr()
