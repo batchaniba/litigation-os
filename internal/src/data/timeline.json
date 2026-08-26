@@ -1,18 +1,29 @@
 [
   {
     "date": "Aug. 26, 2026",
-    "event": "OPEN TASK \u2014 File and serve the Verified Complaint for Damages and Injunctive Relief (v9), Ngwa Nforbi v. Ross Stores, Inc., et al. (Matter 35), in Santa Clara Superior Court (unlimited civil). Draft is complete (pleading-paper PDF with universal signature; Unruh, false imprisonment, negligent training/supervision). Next: e-file complaint + civil case cover sheet + fee waiver/fee, obtain summons, and serve Ross Stores, Inc. and Ross Dress for Less, Inc. via the California agent for service of process.",
+    "event": "OPEN TASK \u2014 Upon Santa Clara clerk acceptance of Matter 35 e-filing and issuance of summons, serve Ross Stores, Inc. and Ross Dress for Less, Inc. via C T Corporation System (330 N. Brand Blvd., Suite 700, Glendale, CA 91203 \u2014 info. and belief). Do not serve DOEs until identified/amended. After service, demand Aug. 25, 2026 Sunnyvale Ross surveillance and LP stop/training materials. Watch One Legal / email for clerk acceptance and case-number assignment (Confirmation #35442871).",
     "matters": [
       35
     ],
     "type": "deadline",
     "upcoming": true,
     "actor": "you",
-    "source": "/documents/matter-35/Verified Complaint - Ngwa Nforbi v Ross Stores Inc et al (Aug 26 2026).pdf"
+    "source": "/documents/matter-35/One Legal Order Receipt - eFiling Confirmation 35442871 (Aug 26 2026).pdf"
   },
   {
     "date": "Aug. 26, 2026",
-    "event": "EXECUTED \u2014 Matter 35 Santa Clara filing packet generated: CM-010 Civil Case Cover Sheet (Unlimited; Civil rights (08); 3 causes; monetary/injunctive/punitive as to DOE 1), SUM-100 Summons matching complaint caption, and blank CV-5012 Civil Lawsuit Notice for clerk issuance. Ready to e-file with the Verified Complaint (v9).",
+    "event": "EXECUTED \u2014 Matter 35 e-filed and paid via One Legal to Santa Clara Superior Court, First Street (Confirmation #35442871; Filing Order #29111713; Court Transaction #24948831; submitted 2:06 AM PT). Documents: Verified Complaint (Unlimited) 28 pp., Civil Case Cover Sheet 3 pp., Summons 1 p., Civil Lawsuit Notice 1 p. Status email: Under Court Clerk Review \u2014 case number pending. Initial Filing billed; filing date for accepted filings relates back to Aug. 26 submission.",
+    "matters": [
+      35
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "actor": "you",
+    "source": "/documents/matter-35/One Legal Order Receipt - eFiling Confirmation 35442871 (Aug 26 2026).pdf"
+  },
+  {
+    "date": "Aug. 26, 2026",
+    "event": "EXECUTED \u2014 Matter 35 Santa Clara filing packet generated: CM-010 Civil Case Cover Sheet (Unlimited; Civil rights (08); 3 causes; monetary/injunctive/punitive as to DOE 1), SUM-100 Summons matching complaint caption, and blank CV-5012 Civil Lawsuit Notice for clerk issuance. Packet subsequently e-filed with the Verified Complaint (v9).",
     "matters": [
       35
     ],
@@ -34,7 +45,7 @@
   },
   {
     "date": "Aug. 26, 2026",
-    "event": "EXECUTED \u2014 Verified Complaint for Damages and Injunctive Relief (v9) drafted and portfolio-rendered for Matter 35 (Ngwa Nforbi v. Ross Stores, Inc., et al.): Unruh Civil Rights Act, False Imprisonment, and Negligent Training and Supervision arising from the Aug. 25, 2026 Sunnyvale Ross shopping-while-Black detention (~28 pp. pleading paper). Not yet filed.",
+    "event": "EXECUTED \u2014 Verified Complaint for Damages and Injunctive Relief (v9) drafted and portfolio-rendered for Matter 35 (Ngwa Nforbi v. Ross Stores, Inc., et al.): Unruh Civil Rights Act, False Imprisonment, and Negligent Training and Supervision arising from the Aug. 25, 2026 Sunnyvale Ross shopping-while-Black detention (~28 pp. pleading paper). Subsequently e-filed Aug. 26, 2026 via One Legal (Confirmation #35442871).",
     "matters": [
       35
     ],
