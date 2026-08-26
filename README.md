@@ -150,7 +150,7 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 
 Standalone retail civil-rights matter arising from an August 25, 2026 consumer racial-profiling detention at the Ross Dress for Less in Sunnyvale:
 
-- **Matter 35** (Ngwa Nforbi v. Ross Stores, Inc., et al.) — Santa Clara Superior Court, First Street. On August 25, 2026 (~9:00 p.m.), Plaintiff entered Ross holding a Celsius drink purchased minutes earlier at the adjacent Sprouts, browsed men's clothing without taking Ross merchandise, and was physically blocked at the exit by a white loss-prevention employee who questioned whether he had paid for the drink, admitted Ross sells Celsius only "sometimes," and asserted "I'm allowed to do that." **~5.1-hour injury-to-suit** (Guinness World Records bid contemplated — not an awarded title): Verified Complaint (v9) for Unruh (Civ. Code §§51, 51.5, 52), False Imprisonment, and Negligent Training and Supervision **e-filed and paid August 26, 2026 at 2:06 AM PT** (before the planned 3:00 AM cutoff) via One Legal (Confirmation #35442871) — under court clerk review; case number pending; service after summons issues.
+- **Matter 35** (Ngwa Nforbi v. Ross Stores, Inc., et al.) — Santa Clara Superior Court, First Street. On August 25, 2026 (~9:00 p.m.), Plaintiff entered Ross holding a Celsius drink purchased minutes earlier at the adjacent Sprouts, browsed men's clothing without taking Ross merchandise, and was physically blocked at the exit by a white loss-prevention employee who questioned whether he had paid for the drink, admitted Ross sells Celsius only "sometimes," and asserted "I'm allowed to do that." **~5-hour turnaround:** Verified Complaint (v9) for Unruh (Civ. Code §§51, 51.5, 52), False Imprisonment, and Negligent Training and Supervision **e-filed and paid August 26, 2026 at 2:06 AM PT** via One Legal (Confirmation #35442871) — under court clerk review; case number pending; service after summons issues.
 
 [↑ Contents](#contents)
 
@@ -178,7 +178,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | 32 | Nforbi v. Meza-Gonzalez, et al | 3:26-cv-08271-PHK | USDC N.D. Cal. (docketed Aug. 10, 2026; related Serrato 4:26-cv-05953-ASK and Candelaria 3:26-cv-08272-LJC) | Federal | FAC filed Aug. 17 (Dkt. 5) — resp. due Sep. 4; CMC Dec. 2 |
 | 33 | Nforbi v. Candelaria et al. | 3:26-cv-08272-LJC | USDC N.D. Cal. (San Francisco Div.) | Federal | FAC filed Aug. 17 (Dkt. 6) — resp. due Sep. 4; CMC Nov. 12 |
 | 34 | Newanforbi v. Counseling and Psychotherapy Center, Inc., et al. | TBD | USDC N.D. Cal. (San Jose Div.) / Santa Clara Sup. Ct. | Federal | Pre-filing — intake & compliance monitoring |
-| 35 | Ngwa Nforbi v. Ross Stores, Inc., et al. | TBD (case number pending clerk acceptance) | Santa Clara Sup. Ct. (First Street / Downtown) | State | Filed ~5 hrs — Guinness bid |
+| 35 | Ngwa Nforbi v. Ross Stores, Inc., et al. | TBD (case number pending clerk acceptance) | Santa Clara Sup. Ct. (First Street / Downtown) | State | Filed in ~5 hrs — under clerk review |
 <!-- PORTFOLIO:ACTIVE_MATTERS:END -->
 
 *Settled matters stay in the table above until dismissal is entered — a settlement resolves the merits, but the matter is still open on the docket. Their Status column reads "Settled" (see the Overview count above for which ones).*

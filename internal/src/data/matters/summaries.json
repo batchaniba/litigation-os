@@ -1021,12 +1021,12 @@
     "case_no": "TBD (case number pending clerk acceptance)",
     "court": "Santa Clara Sup. Ct. (First Street / Downtown)",
     "claims": "Unruh Civil Rights Act (Civ. Code §§51, 51.5, 52); False Imprisonment; Negligent Training and Supervision",
-    "status_label": "Filed ~5 hrs — Guinness bid",
+    "status_label": "Filed in ~5 hrs — under clerk review",
     "lifecycle": "active",
     "proceeding": "state_civil",
     "phase": "service",
     "badge": "PENDING",
-    "filed": "E-filed Aug. 26, 2026, 2:06 AM PT via One Legal — before the planned 3:00 AM cutoff; ~5.1 hours after the Aug. 25 ~9:00 p.m. Sunnyvale Ross detention. Confirmation #35442871, Filing Order #29111713; Santa Clara — First Street; Civil Unlimited / Civil Rights. Under Court Clerk Review as of submission; acceptance and case-number assignment pending. Filing date for accepted filings will relate back to the Aug. 26 submission date. Guinness World Records bid (fastest injury-to-civil-suit filing) contemplated; not an awarded title.",
+    "filed": "E-filed Aug. 26, 2026, 2:06 AM PT via One Legal (~5 hours after the Aug. 25 ~9:00 p.m. Sunnyvale Ross detention). Confirmation #35442871, Filing Order #29111713; Santa Clara — First Street; Civil Unlimited / Civil Rights. Under Court Clerk Review as of submission; acceptance and case-number assignment pending. Filing date for accepted filings will relate back to the Aug. 26 submission date.",
     "judge": "TBD",
     "cluster": 6,
     "type": "State",
@@ -1051,7 +1051,7 @@
       "Second — False Imprisonment",
       "Third — Negligent Training and Supervision"
     ],
-    "evidenceCount": 10,
+    "evidenceCount": 9,
     "documentCount": 6
   }
 ]
