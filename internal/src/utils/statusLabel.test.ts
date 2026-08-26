@@ -54,7 +54,7 @@ describe("statusLabel derivation", () => {
 
   it("pairs served milestones with later CMC / response deadlines", () => {
     expect(deriveStatusLabel(cases.find((item) => item.number === 25)!, { events: eventsFor(25) })).toBe(
-      "Served Jul. 24, 2026 — CMC Jan. 14, 2027",
+      "Served Jul. 24, 2026 — Response due Aug. 31, 2026",
     );
     expect(deriveStatusLabel(cases.find((item) => item.number === 27)!, { events: eventsFor(27) })).toBe(
       "Served Jul. 30, 2026 — Response due Aug. 31, 2026",

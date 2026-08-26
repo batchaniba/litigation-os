@@ -1,25 +1,14 @@
 [
   {
     "date": "Aug. 31, 2026",
-    "event": "FEDERAL RESPONSE DEADLINE (computed) — Newanforbi v. Federal Express Corporation (Matter 25, E.D. Cal. No. 2:26-cv-02881-DAD-SCR); Fed. R. Civ. P. 81(c)(2)(C) — the later of 21 days after receipt of the initial pleading or 7 days after the notice of removal was filed (removal filed Aug. 24, 2026 → Aug. 31, 2026). Watch for answer or Rule 12 motion by Allison A. Kray.",
+    "event": "FedEx responsive pleading deadline (computed) — Newanforbi v. Federal Express Corporation (Matter 25, E.D. Cal. No. 2:26-cv-02881-DAD-SCR); Fed. R. Civ. P. 81(c)(2)(C) — the later of 21 days after receipt of the initial pleading or 7 days after the notice of removal was filed (removal filed Aug. 24, 2026 → Aug. 31, 2026). Watch for answer or Rule 12 motion by Allison A. Kray.",
     "matters": [
       25
     ],
     "type": "deadline",
     "upcoming": true,
     "actor": "opposing",
-    "source": "/documents/matter-25/Dkt 01 - Notice of Removal as Docketed, E.D. Cal. (Filed Aug 24 2026).pdf"
-  },
-  {
-    "date": "Aug. 26, 2026",
-    "event": "OPEN TASK — Calendar FedEx's Aug. 31, 2026 FRCP 81(c) response in Matter 25 (2:26-cv-02881-DAD-SCR); correct the COS email typo (bnn.cdla → bnn.cdl) at first appearance; decide magistrate consent/decline; do not serve the moot CCP §425.115 notice.",
-    "matters": [
-      25
-    ],
-    "type": "deadline",
-    "upcoming": true,
-    "actor": "you",
-    "source": "/documents/matter-25/Dkt 01 - Notice of Removal as Docketed, E.D. Cal. (Filed Aug 24 2026).pdf"
+    "source": "/documents/matter-25/Dkt 01 - Petition and Notice of Removal (Filed Aug 24 2026).pdf"
   },
   {
     "date": "Oct. 25, 2026",
