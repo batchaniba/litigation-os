@@ -1,4 +1,5 @@
-import type { Matter, MatterSummary } from "../../types/portfolio";
+import type { Matter, MatterDocumentRef, MatterSummary } from "../../types/portfolio";
+import { resolveDocuments } from "../documents";
 import summaries from "./summaries.json";
 
 // Light records for list/search/dashboard — keep the shell bundle small.
@@ -7,7 +8,7 @@ export const cases = summaries as MatterSummary[];
 // Full NN.json records are code-split and loaded on demand.
 const matterLoaders = import.meta.glob(["./*.json", "!./summaries.json", "!./document-index.json"]) as Record<
   string,
-  () => Promise<{ default: Matter }>
+  () => Promise<{ default: Matter & { documents?: MatterDocumentRef[] } }>
 >;
 
 export function matterFileKey(number: number): string {
@@ -20,13 +21,14 @@ export function loadMatter(number: number): Promise<Matter> {
     return Promise.reject(new Error(`No matter JSON for number ${number}`));
   }
   return loader().then((mod) => {
-    const matter = mod.default;
-    if (matter.evidenceCount == null) {
-      matter.evidenceCount = Array.isArray(matter.evidence) ? matter.evidence.length : 0;
-    }
-    if (matter.documentCount == null) {
-      matter.documentCount = Array.isArray(matter.documents) ? matter.documents.length : 0;
-    }
+    const raw = mod.default;
+    const documents = resolveDocuments(raw.documents);
+    const matter: Matter = {
+      ...raw,
+      documents,
+      evidenceCount: raw.evidenceCount ?? (Array.isArray(raw.evidence) ? raw.evidence.length : 0),
+      documentCount: raw.documentCount ?? documents.length,
+    };
     return matter;
   });
 }

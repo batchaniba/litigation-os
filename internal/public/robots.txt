@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# The document library is the primary record and is meant to be reachable, but
+# it is 400 MB of PDFs — crawlers should take the app first.
+Crawl-delay: 1

@@ -41,20 +41,123 @@
     {
       "id": "chp-nov2024",
       "label": "CHP November 1, 2024 Encounter & U Visa Certification",
-      "matters": [1, 2, 7, 20, 24],
-      "thesis": "Five live dockets in four courts run off one 62-minute traffic-shoulder encounter. The same dashcam, the same Penal Code § 849(b)(1) Detention Certificate, and the same April 20, 2026 certification denial are the operative proof in every one of them. That concentration is the portfolio's greatest source of leverage and its greatest source of exposure: a favorable finding on the shared record propagates across all five, and an adverse or inconsistent one does the same.",
+      "matters": [
+        1,
+        2,
+        7,
+        20,
+        24,
+        32,
+        33
+      ],
+      "thesis": "Five live dockets in four courts \u2014 plus Matter 32 as the Meza-Gonzalez / CHP-cluster PDF home and Matter 33 as the Candelaria / DMV APS PDF home \u2014 run off one 62-minute traffic-shoulder encounter. The same dashcam, the same Penal Code \u00a7 849(b)(1) Detention Certificate, and the same April 20, 2026 certification denial are the operative proof across the cluster. That concentration is the portfolio's greatest source of leverage and its greatest source of exposure: a favorable finding on the shared record propagates across every member, and an adverse or inconsistent one does the same.",
       "links": [
+        {
+          "id": "32-same-incident-1",
+          "from": 32,
+          "to": 1,
+          "direction": "mutual",
+          "severity": "high",
+          "kinds": [
+            "same_incident"
+          ],
+          "significance": "Matter 32 originally received the November 1, 2024 CHP incident PDFs that Matter 1 relies on as Exhibit-level proof of the fabricated arrest report; those files (Arrest Report, DS-367, dashcam transcript, DMV discovery packet, CHP Discovery Response) now live under Matter 33 (documents/matter-33/incident/) as of August 7, 2026. Matter 1 continues to cross-reference those paths; Matter 32 retains navigational cross-references and owns the Matter 1 docket PDFs under matter-32/from-01/.",
+          "sources": [
+            "Matter 33 \u2014 CHP Arrest Report; DS-367; Exhibit A dashcam transcript",
+            "Matter 32 \u2014 Matter 1 docket PDFs under from-01/",
+            "Matter 1 \u2014 Complaint and Opposition to Motion to Dismiss"
+          ]
+        },
+        {
+          "id": "32-same-incident-2",
+          "from": 32,
+          "to": 2,
+          "direction": "mutual",
+          "severity": "high",
+          "kinds": [
+            "same_incident"
+          ],
+          "significance": "Matter 32 is captioned Nforbi v. Meza-Gonzalez, et al \u2014 the same officers and the same November 1, 2024 encounter as Matter 2 (Newanforbi v. Meza-Gonzalez et al., Alameda Sup. Ct. 26CV168913), under the Ngwa Nforbi name form that appears on the DS-367. Matter 2 remains the filed, stayed tort action; Matter 32 holds the Matter 2 docket PDF set under from-02/ and does not plead a separate damages demand. The DS-367 and Arrest Report themselves now live in Matter 33.",
+          "sources": [
+            "Matter 33 \u2014 DS-367 (ngwanforbi / F7953179); Arrest Report",
+            "Matter 32 \u2014 Matter 2 docket PDFs under from-02/",
+            "Matter 2 \u2014 Complaint for Damages (filed Feb. 4, 2026)"
+          ]
+        },
+        {
+          "id": "33-same-incident-7",
+          "from": 33,
+          "to": 7,
+          "direction": "mutual",
+          "severity": "high",
+          "kinds": [
+            "same_incident"
+          ],
+          "significance": "Matter 33 is the document home for the Candelaria / DMV APS record set that Matter 7 litigates: the Nov. 1, 2024 incident evidence, the APS Case 34739340 hearing packet and Decision, the Matter 7 federal complaint/FAC/objections/NSA package, and the June 15, 2026 F&R. Matter 7 remains the live \u00a7 1983 docket (2:26-cv-00983-DC-CSK) and cross-references these paths under matter-33/from-07/, incident/, and opinions/.",
+          "sources": [
+            "Matter 33 \u2014 FAC Candelaria; DMV Decision; Nov. 1 incident PDFs; June 15, 2026 F&R",
+            "Matter 7 \u2014 First Amended Complaint; Objections to F&R"
+          ]
+        },
+        {
+          "id": "33-same-incident-32",
+          "from": 33,
+          "to": 32,
+          "direction": "mutual",
+          "severity": "high",
+          "kinds": [
+            "same_incident"
+          ],
+          "significance": "Matters 32 and 33 split documentary ownership of the November 1, 2024 CHP cluster: Matter 32 holds the Meza-Gonzalez / CHP docket PDFs from Matters 1, 2, 20, and 24; Matter 33 holds the Nov. 1 incident / DMV APS evidence and the Candelaria federal and mandamus PDF sets. Both are document-home entries with $0 damages under their own captions.",
+          "sources": [
+            "Matter 33 \u2014 matter-33/incident/, from-07/, from-08/, opinions/",
+            "Matter 32 \u2014 matter-32/from-01|02|20|24/"
+          ]
+        },
+        {
+          "id": "33-same-incident-1",
+          "from": 33,
+          "to": 1,
+          "direction": "mutual",
+          "severity": "high",
+          "kinds": [
+            "same_incident"
+          ],
+          "significance": "Matter 33 owns the November 1, 2024 CHP incident PDFs (Arrest Report, DS-367, dashcam transcript, DMV DAD/DS-2044 packet, Discovery Response, Centerline wage reference) that Matter 1 relies on as Exhibit-level proof. Path ownership moved from Matter 32 into Matter 33 on August 7, 2026; Matter 1 continues to cross-reference those files.",
+          "sources": [
+            "Matter 33 \u2014 CHP Arrest Report; DS-367; Exhibit A dashcam transcript",
+            "Matter 1 \u2014 Complaint and Opposition to Motion to Dismiss"
+          ]
+        },
+        {
+          "id": "33-same-incident-2",
+          "from": 33,
+          "to": 2,
+          "direction": "mutual",
+          "severity": "high",
+          "kinds": [
+            "same_incident"
+          ],
+          "significance": "Matter 33 holds the DS-367 / Arrest Report / dashcam / DMV APS discovery set for the same November 1, 2024 encounter litigated in Matter 2's stayed Alameda tort action. Matter 2 remains the filed damages vehicle; Matter 33 does not plead a separate demand.",
+          "sources": [
+            "Matter 33 \u2014 DS-367; Arrest Report; DMV APS discovery packet",
+            "Matter 2 \u2014 Complaint for Damages (filed Feb. 4, 2026)"
+          ]
+        },
         {
           "id": "2-stayed-on-1",
           "from": 2,
           "to": 1,
           "direction": "from_depends_on_to",
           "severity": "high",
-          "kinds": ["same_incident", "stay_dependency"],
-          "significance": "Matter 2 is stayed in its entirety by executed stipulation (filed April 14, 2026) pending final resolution of Matter 1. The negotiated definition of 'final resolution' reaches entry of final judgment or dispositive order plus expiration of any appeal period, with tolling of statutory deadlines during the stay — so Matter 1's pending Findings & Recommendations ruling controls not just Matter 2's merits posture but the date its clock restarts.",
+          "kinds": [
+            "same_incident",
+            "stay_dependency"
+          ],
+          "significance": "Matter 2 was stayed in its entirety by executed stipulation (filed April 14, 2026) pending final resolution of Matter 1. Both matters were voluntarily dismissed without prejudice on Aug. 15, 2026 rather than the stay ever being lifted by a ruling \u2014 mooting the stipulation's 'final resolution' definition (entry of final judgment or dispositive order plus expiration of any appeal period) before it was ever triggered.",
           "sources": [
-            "Matter 2 — Stipulation and Order to Stay Proceedings (filed Apr. 14, 2026)",
-            "Matter 1 — Findings & Recommendations (Apr. 20, 2026)"
+            "Matter 2 \u2014 Stipulation and Order to Stay Proceedings (filed Apr. 14, 2026)",
+            "Matter 1 \u2014 Findings & Recommendations (Apr. 20, 2026)"
           ]
         },
         {
@@ -63,11 +166,13 @@
           "to": 2,
           "direction": "mutual",
           "severity": "high",
-          "kinds": ["damages_overlap"],
+          "kinds": [
+            "damages_overlap"
+          ],
           "significance": "Matter 2's damages range contains no breakdown reserving or excluding the CDL lost-wage component claimed in Matter 1 for the identical suspension period.",
           "sources": [
-            "Matter 2 — Complaint, prayer for relief",
-            "Matter 1 — Complaint, damages allegations"
+            "Matter 2 \u2014 Complaint, prayer for relief",
+            "Matter 1 \u2014 Complaint, damages allegations"
           ]
         },
         {
@@ -76,11 +181,14 @@
           "to": 1,
           "direction": "from_depends_on_to",
           "severity": "high",
-          "kinds": ["shared_predicate", "authority_dependency"],
-          "significance": "Both matters sit before the same district/magistrate pair (the shared DC-CSK suffix). Magistrate Judge Kim's June 15, 2026 Findings & Recommendations in Matter 7 cited Matter 1's April 20, 2026 dismissal recommendation as supporting grounds, and Matter 7's own theory depends on the 'lawful arrest' predicate that the Detention Certificate repudiates. If the District Judge declines Matter 1's F&R on de novo review, the premise Magistrate Kim relied on in Matter 7 weakens with it. The relationship is one-directional: Matter 1's record shows no reciprocal citation to Matter 7.",
+          "kinds": [
+            "shared_predicate",
+            "authority_dependency"
+          ],
+          "significance": "Both matters sat before the same district/magistrate pair (the shared DC-CSK suffix). Magistrate Judge Kim's June 15, 2026 Findings & Recommendations in Matter 7 cited Matter 1's April 20, 2026 dismissal recommendation as supporting grounds, and Matter 7's own theory depends on the 'lawful arrest' predicate that the Detention Certificate repudiates. Both matters were voluntarily dismissed without prejudice Aug. 15, 2026 before the District Judge ruled on either F&R \u2014 so the dependency was mooted rather than resolved; neither F&R was ever adopted or rejected. The relationship was one-directional: Matter 1's record shows no reciprocal citation to Matter 7.",
           "sources": [
-            "Matter 7 — Findings & Recommendations (June 15, 2026)",
-            "Matter 1 — Findings & Recommendations (Apr. 20, 2026)"
+            "Matter 7 \u2014 Findings & Recommendations (June 15, 2026)",
+            "Matter 1 \u2014 Findings & Recommendations (Apr. 20, 2026)"
           ]
         },
         {
@@ -89,11 +197,13 @@
           "to": 7,
           "direction": "mutual",
           "severity": "high",
-          "kinds": ["damages_overlap"],
-          "significance": "The same February 20, 2025 – February 19, 2026 CDL suspension loss is claimed in both, unreserved.",
+          "kinds": [
+            "damages_overlap"
+          ],
+          "significance": "The same February 20, 2025 \u2013 February 19, 2026 CDL suspension loss is claimed in both, unreserved.",
           "sources": [
-            "Matter 7 — Complaint, damages allegations",
-            "Matter 1 — Complaint, damages allegations"
+            "Matter 7 \u2014 Complaint, damages allegations",
+            "Matter 1 \u2014 Complaint, damages allegations"
           ]
         },
         {
@@ -102,11 +212,13 @@
           "to": 20,
           "direction": "mutual",
           "severity": "high",
-          "kinds": ["damages_overlap"],
+          "kinds": [
+            "damages_overlap"
+          ],
           "significance": "Matter 20 claims approximately $112,000 in lost wages for the same one-year suspension window already claimed in Matter 1.",
           "sources": [
-            "Matter 20 — Complaint, damages allegations",
-            "Matter 1 — Complaint, damages allegations"
+            "Matter 20 \u2014 Complaint, damages allegations",
+            "Matter 1 \u2014 Complaint, damages allegations"
           ]
         },
         {
@@ -115,11 +227,14 @@
           "to": 1,
           "direction": "to_cites_from",
           "severity": "medium",
-          "kinds": ["persuasive_authority", "same_incident"],
-          "significance": "Matter 1 filed a Notice of Supplemental Authority on July 7, 2026 citing the Krishnan June 29, 2026 IFP order as persuasive authority against its own Findings & Recommendations — the argument being that a sister federal court screened a complaint on this same November 1, 2024 record and found it sufficient.",
+          "kinds": [
+            "persuasive_authority",
+            "same_incident"
+          ],
+          "significance": "Matter 1 filed a Notice of Supplemental Authority on July 7, 2026 citing the Krishnan June 29, 2026 IFP order as persuasive authority against its own Findings & Recommendations \u2014 the argument being that a sister federal court screened a complaint on this same November 1, 2024 record and found it sufficient.",
           "sources": [
-            "Matter 1 — Notice of Supplemental Authority (July 7, 2026)",
-            "Matter 24 — Order granting IFP (June 29, 2026)"
+            "Matter 1 \u2014 Notice of Supplemental Authority (July 7, 2026)",
+            "Matter 24 \u2014 Order granting IFP (June 29, 2026)"
           ]
         },
         {
@@ -128,11 +243,14 @@
           "to": 7,
           "direction": "to_cites_from",
           "severity": "medium",
-          "kinds": ["persuasive_authority", "same_incident"],
-          "significance": "The same Krishnan IFP screening order is cited in Matter 7 as persuasive authority that a complaint resting on this record survives § 1915(e)(2) screening.",
+          "kinds": [
+            "persuasive_authority",
+            "same_incident"
+          ],
+          "significance": "The same Krishnan IFP screening order is cited in Matter 7 as persuasive authority that a complaint resting on this record survives \u00a7 1915(e)(2) screening.",
           "sources": [
-            "Matter 7 — Notice of Supplemental Authority",
-            "Matter 24 — Order granting IFP (June 29, 2026)"
+            "Matter 7 \u2014 Notice of Supplemental Authority",
+            "Matter 24 \u2014 Order granting IFP (June 29, 2026)"
           ]
         },
         {
@@ -141,11 +259,14 @@
           "to": 20,
           "direction": "mutual",
           "severity": "medium",
-          "kinds": ["parallel_track", "same_denial_challenged"],
-          "significance": "Both state-court dockets sit in Alameda Superior Court on the same encounter and the same certifying-agency conduct, on separate tracks — one stayed, one active — which creates a live risk of inconsistent state rulings on the identical record.",
+          "kinds": [
+            "parallel_track",
+            "same_denial_challenged"
+          ],
+          "significance": "Both state-court dockets sit in Alameda Superior Court on the same encounter and the same certifying-agency conduct, on separate tracks \u2014 one stayed, one active \u2014 which creates a live risk of inconsistent state rulings on the identical record.",
           "sources": [
-            "Matter 2 — Complaint (Alameda Sup. Ct. 26CV168913)",
-            "Matter 20 — Complaint (Alameda Sup. Ct. 26CV191136)"
+            "Matter 2 \u2014 Complaint (Alameda Sup. Ct. 26CV168913)",
+            "Matter 20 \u2014 Complaint (Alameda Sup. Ct. 26CV191136)"
           ]
         },
         {
@@ -154,11 +275,14 @@
           "to": 24,
           "direction": "mutual",
           "severity": "high",
-          "kinds": ["same_denial_challenged", "parallel_track"],
-          "significance": "Both dockets challenge the April 20, 2026 U Visa certification denial arising from the same encounter — Matter 20 in state court, Matter 24 in federal court. Simultaneous challenges to one agency decision in two courts invite abstention, stay, or first-to-judgment arguments, and an adverse finding in either is available to the defense in the other.",
+          "kinds": [
+            "same_denial_challenged",
+            "parallel_track"
+          ],
+          "significance": "Both dockets challenge the April 20, 2026 U Visa certification denial arising from the same encounter \u2014 Matter 20 in state court, Matter 24 in federal court. Simultaneous challenges to one agency decision in two courts invite abstention, stay, or first-to-judgment arguments, and an adverse finding in either is available to the defense in the other.",
           "sources": [
-            "Matter 20 — Complaint, U Visa certification claims",
-            "Matter 24 — Complaint, U Visa certification claims"
+            "Matter 20 \u2014 Complaint, U Visa certification claims",
+            "Matter 24 \u2014 Complaint, U Visa certification claims"
           ]
         },
         {
@@ -167,11 +291,13 @@
           "to": 20,
           "direction": "to_cites_from",
           "severity": "medium",
-          "kinds": ["persuasive_authority"],
+          "kinds": [
+            "persuasive_authority"
+          ],
           "significance": "Matter 20 cites the Krishnan IFP order as the related federal action's screening determination on the same certification record.",
           "sources": [
-            "Matter 20 — filing citing the related federal action",
-            "Matter 24 — Order granting IFP (June 29, 2026)"
+            "Matter 20 \u2014 filing citing the related federal action",
+            "Matter 24 \u2014 Order granting IFP (June 29, 2026)"
           ]
         },
         {
@@ -179,59 +305,110 @@
           "from": 24,
           "to": 20,
           "direction": "mutual",
-          "severity": "high",
-          "kinds": ["disclosure_gap"],
-          "significance": "Matter 24's related-case disclosure omits Matter 20, even though Matter 20 identifies Matter 24 as the related federal action and both challenge the same April 20, 2026 certification denial. The asymmetry is the kind of omission opposing counsel can present as a candor problem rather than an oversight.",
+          "severity": "low",
+          "kinds": [
+            "disclosure_gap"
+          ],
+          "significance": "Cured. Matter 24's original Complaint (Dkt. 1) omitted Matter 20 from its related-case disclosure \u2014 the kind of asymmetry opposing counsel could have presented as a candor problem \u2014 but Plaintiff caught it independently and self-corrected via a First Amended Complaint and a concurrent Notice of Errata (Dkt. 10, 12; both filed Jul. 15, 2026) before either matter's counsel raised it. The errata states the correction does not alter the FAC's factual allegations or legal theories.",
           "sources": [
-            "Matter 24 — Certification of Interested Entities / related-case statement",
-            "Matter 20 — Complaint, related-action allegations"
+            "Matter 24 \u2014 First Amended Complaint (Doc 10, Filed Jul 15 2026); Notice of Errata re First Amended Complaint (Doc 12, Filed Jul 15 2026)",
+            "Matter 20 \u2014 Complaint, related-action allegations"
           ]
         }
       ],
       "exposures": [
         {
           "id": "cdl-double-recovery",
-          "label": "Unreserved CDL lost-wage claim in four dockets",
+          "label": "Unreserved CDL lost-wage claim, now split across dismissed and successor dockets",
           "severity": "high",
           "status": "open",
-          "matters": [1, 2, 7, 20],
-          "detail": "The one-year Class A CDL suspension loss is pleaded as damages in Matters 1, 2, 7, and 20 with no offset, reservation, or no-double-recovery language coordinating the four dockets. Archived Matter 8, by contrast, expressly reserved consequential damages to the federal action — which is both the model to follow and evidence that the omission elsewhere is an inconsistency rather than a strategy.",
-          "remedy": "Add reciprocal offset/no-double-recovery language to the damages allegations in all four matters, keying the primary recovery to one docket and reserving the rest."
+          "matters": [
+            1,
+            2,
+            7,
+            20,
+            32,
+            33
+          ],
+          "detail": "The one-year Class A CDL suspension loss was pleaded as damages in Matters 1, 2, 7, and 20 with no offset, reservation, or no-double-recovery language coordinating the dockets. Archived Matter 8, by contrast, expressly reserved consequential damages to the federal action \u2014 which is both the model to follow and evidence that the omission elsewhere is an inconsistency rather than a strategy. Matters 1, 2, and 7 were dismissed Aug. 15, 2026; Matters 32 and 33 already carry $0 placeholder rows in damages.js specifically to avoid double-counting against 1/2/7, but the underlying coordination problem persists \u2014 it just now runs between Matters 32, 33, and 20 instead.",
+          "remedy": "Add reciprocal offset/no-double-recovery language to the damages allegations across Matters 32, 33, and 20, keying the primary recovery to one docket and reserving the rest."
         },
         {
           "id": "authority-chain-fragility",
-          "label": "The four-matter chain rests on two unadopted recommendations and one screening order",
+          "label": "Matters 1 and 7's F&Rs were mooted by dismissal, not resolved on the merits",
           "severity": "medium",
           "status": "monitoring",
-          "matters": [1, 7, 20, 24],
-          "detail": "The Krishnan order now cited to three courts is a § 1915(e)(2) screening finding, not a merits ruling — it holds only that the complaint may proceed. Meanwhile both Matter 1's and Matter 7's Findings & Recommendations remain unresolved on Objections, and Matter 7's F&R leans on Matter 1's. So the chain's persuasive weight and its downside both concentrate in a single pending decision.",
-          "remedy": "Frame the Krishnan order as screening-stage only in future filings, and prepare the Matter 7 supplemental brief that follows immediately on whichever way the Matter 1 F&R ruling lands."
+          "matters": [
+            1,
+            7,
+            20,
+            24
+          ],
+          "detail": "Matters 1 and 7 were voluntarily dismissed without prejudice Aug. 15, 2026, before District Judge Coggins ruled on either Findings & Recommendations \u2014 so neither F&R was ever adopted, but neither was reversed either; the adverse recommendations simply never became final. The Krishnan order remains a \u00a7 1915(e)(2) screening finding, not a merits ruling, still cited in Matter 20. The live question shifts from \"how will Coggins rule\" to whether Matters 32 and 33's fresh N.D. Cal. complaints draw the same magistrate/district scrutiny the E.D. Cal. dockets did, this time without an adverse F&R already on file.",
+          "remedy": "Frame the Krishnan order as screening-stage only in future filings. Watch whether Matters 32/33 face renewed IFP screening or a motion to dismiss revisiting the same qualified-immunity ground the E.D. Cal. F&Rs relied on."
         },
         {
           "id": "matter2-clock",
           "label": "Matter 2's clock is keyed to Matter 1's appeal window",
           "severity": "medium",
-          "status": "monitoring",
-          "matters": [2, 1],
-          "detail": "'Final resolution' under the stipulation runs through expiration of any appeal period, so the Matter 2 restart date cannot be calendared from the F&R ruling alone. Tolling protects the statutory deadlines but not the practical risk of the stay outliving the evidence.",
-          "remedy": "Calendar a review trigger on entry of any Matter 1 dispositive order rather than a fixed date, and diary the appeal-window expiry from that entry."
+          "status": "resolved",
+          "matters": [
+            2,
+            1
+          ],
+          "detail": "Moot. Matter 2 was itself voluntarily dismissed without prejudice Aug. 15, 2026 rather than waiting out the stay, so there is no 'final resolution' date left to calendar and no risk of the stay outliving the evidence. The State/CHP defendant and the state-law claims that were exclusive to Matter 2 have no successor docket \u2014 see the two-dismissal-rule exposure and the timeline.json Nov. 1, 2026 entry for what replaces this risk.",
+          "remedy": "Done — superseded by the Aug. 15, 2026 dismissal. No further calendaring needed on this item; see the new state-law-claims-gap exposure instead."
+        },
+        {
+          "id": "two-dismissal-rule-risk",
+          "label": "Matter 1's Aug. 15, 2026 dismissal may trip FRCP 41(a)(1)(B)'s two-dismissal rule",
+          "severity": "high",
+          "status": "open",
+          "matters": [
+            1,
+            32
+          ],
+          "detail": "Matter 13 (Newanforbi v. Urrea, cluster 2 \u2014 not in this cluster's matter list) was already dismissed by Rule 41(a)(1)(A)(i) notice on June 29, 2026, pleading the same five-day parole hold that Matter 1's complaint also pleads as a damages element. FRCP 41(a)(1)(B) provides that a second notice dismissal of an action 'based on or including the same claim' operates as an adjudication on the merits \u2014 i.e., WITH prejudice \u2014 regardless of how the notice is labeled. If a court finds that overlap sufficient, today's Aug. 15, 2026 Matter 1 dismissal is a merits dismissal, and Matter 32 (already on file in the N.D. Cal. since Aug. 10, 2026, pleading the identical Nov. 1, 2024 stop/search/arrest and the same five-day-hold damages theory) would be exposed to a res judicata defense. This was flagged as needing resolution before any notice was filed (see internal/docs/MATTER_01_FORUM_TRANSFER_ANALYSIS.md \u00a73.2) and does not show as resolved in this record.",
+          "remedy": "Get a definitive answer — ideally from counsel, given the stakes \u2014 on whether Matter 13's claim and Matter 1's claim are 'the same claim' for Rule 41(a)(1)(B) purposes before relying on Matter 32 as a clean refiling. If they are, consider whether Matter 32's five-day-hold damages component needs to be dropped or reframed to avoid res judicata exposure to the rest of the complaint."
+        },
+        {
+          "id": "matter2-state-claims-gap",
+          "label": "Matter 2's state-law claims and the State/CHP defendant have no successor docket",
+          "severity": "high",
+          "status": "open",
+          "matters": [
+            2,
+            32
+          ],
+          "detail": "Matter 2's dismissal (Aug. 15, 2026) terminated the False Imprisonment, Battery, and Bane Act claims and the State of California/CHP defendant along with the rest of that action. Matter 32's N.D. Cal. complaint pleads only federal \u00a71983 claims against Meza-Gonzalez and Melano individually \u2014 it does not name the State/CHP or assert any state-law theory. Unless this was an intentional abandonment, roughly $100,000\u2013$300,000 of pleaded state-law exposure has no live vehicle, and the CCP \u00a7335.1 two-year backstop for those claims runs Nov. 1, 2026.",
+          "remedy": "Confirm intentionally abandoned, or amend Matter 32 to add the state-law claims and the State/CHP defendant under 28 U.S.C. \u00a71367 supplemental jurisdiction, or file a new state action \u2014 before Nov. 1, 2026."
         },
         {
           "id": "related-case-disclosure",
           "label": "Related-case disclosure is asymmetric between Matters 24 and 20",
           "severity": "high",
-          "status": "open",
-          "matters": [24, 20],
-          "detail": "Matter 20 names Matter 24 as the related federal action; Matter 24's disclosure does not name Matter 20. Both challenge the same April 20, 2026 certification denial on the same record, so the omission is visible from the face of the two dockets.",
-          "remedy": "File an amended or supplemental related-case statement in Matter 24 identifying Matter 20, before any defendant raises the omission."
+          "status": "resolved",
+          "matters": [
+            24,
+            20
+          ],
+          "detail": "Matter 20 named Matter 24 as the related federal action; Matter 24's original Complaint (Dkt. 1) did not name Matter 20. Plaintiff caught the omission independently and filed a First Amended Complaint with a concurrent Notice of Errata (Dkt. 10, 12; both Jul. 15, 2026) supplying the correction before any defendant raised it.",
+          "remedy": "Done — First Amended Complaint and Notice of Errata filed Jul. 15, 2026 (Matter 24, Docs. 10 and 12)."
         },
         {
           "id": "dashcam-disclosure",
           "label": "The dispositive dashcam is not authenticated of record in every docket that relies on it",
           "severity": "medium",
           "status": "open",
-          "matters": [1, 2, 7, 20],
-          "detail": "The 62-minute recording is the proof that no alcohol odor was verbalized and that handcuffing preceded the parole-status disclosure. Four dockets argue from it, but it is not lodged and authenticated in each one, so an adverse evidentiary ruling in the docket where it is weakest would be cited against the others.",
+          "matters": [
+            1,
+            2,
+            7,
+            20,
+            32,
+            33
+          ],
+          "detail": "The 62-minute recording is the proof that no alcohol odor was verbalized and that handcuffing preceded the parole-status disclosure. Multiple dockets argue from it, and Matter 33 now owns the transcript PDF, but the recording itself is not lodged and authenticated in each live docket, so an adverse evidentiary ruling in the docket where it is weakest would be cited against the others.",
           "remedy": "Lodge the recording with a declaration authenticating the timestamps in every matter that relies on it, and cite the same timestamp ranges consistently across filings."
         },
         {
@@ -239,7 +416,11 @@
           "label": "One agency decision is being litigated in two courts at once",
           "severity": "medium",
           "status": "monitoring",
-          "matters": [2, 20, 24],
+          "matters": [
+            2,
+            20,
+            24
+          ],
           "detail": "The certification denial and the underlying encounter are before both Alameda Superior Court and the Northern District. Whichever court rules first supplies preclusion or persuasive material to the other, and a narrow adverse finding in the faster forum would travel.",
           "remedy": "Decide now which forum is the intended lead on the certification question and shape the filings so the other track expressly preserves rather than relitigates it."
         }
@@ -248,43 +429,91 @@
         {
           "id": "encounter",
           "label": "The encounter itself",
-          "matters": [1, 2, 7, 20, 24],
-          "detail": "November 1, 2024, approximately 00:54–01:57 a.m., eastbound I-580 dirt shoulder ~0.3 miles west of Isabel Avenue, Livermore. CHP Case No. RJ68845; CAD No. 241101GG0064. Officers Santiago Meza-Gonzalez (#023295) and Jose Melano (#023054)."
+          "matters": [
+            1,
+            2,
+            7,
+            20,
+            24,
+            32,
+            33
+          ],
+          "detail": "November 1, 2024, approximately 00:54\u201301:57 a.m., eastbound I-580 dirt shoulder ~0.3 miles west of Isabel Avenue, Livermore. CHP Case No. RJ68845; CAD No. 241101GG0064. Officers Santiago Meza-Gonzalez (#023295) and Jose Melano (#023054)."
         },
         {
           "id": "dashcam",
           "label": "62-minute dashcam recording",
-          "matters": [1, 2, 7, 20, 24],
-          "detail": "00:54:36–01:57:10. Establishes that no officer verbalized an alcohol odor, that the only liquid found was identified on tape as urine ('Is it water? No this is piss'), and that handcuffing at 01:11:16 preceded the 01:11:42 dispatch disclosure of parole status."
+          "matters": [
+            1,
+            2,
+            7,
+            20,
+            24,
+            32,
+            33
+          ],
+          "detail": "00:54:36\u201301:57:10. Establishes that no officer verbalized an alcohol odor, that the only liquid found was identified on tape as urine ('Is it water? No this is piss'), and that handcuffing at 01:11:16 preceded the 01:11:42 dispatch disclosure of parole status. Transcript PDF owned by Matter 33."
         },
         {
           "id": "detention-certificate",
-          "label": "PC § 849(b)(1) Detention Certificate",
-          "matters": [1, 2, 7, 20, 24],
+          "label": "PC \u00a7 849(b)(1) Detention Certificate",
+          "matters": [
+            1,
+            2,
+            7,
+            20,
+            24,
+            32,
+            33
+          ],
           "detail": "Issued by Dublin CHP November 5, 2024 (Dublin CHP-01991, CHP File No. 202400898), reclassifying the event as 'a detention only, not an arrest' for 'insufficient grounds for making a criminal complaint.'"
         },
         {
           "id": "da-declination",
           "label": "Alameda County DA declination",
-          "matters": [1, 2, 7, 20, 24],
-          "detail": "No charges filed, corroborating the absence of probable cause relied on across all five matters."
+          "matters": [
+            1,
+            2,
+            7,
+            20,
+            24,
+            32,
+            33
+          ],
+          "detail": "No charges filed, corroborating the absence of probable cause relied on across the cluster."
         },
         {
           "id": "cdl-suspension",
           "label": "One-year Class A CDL suspension",
-          "matters": [1, 2, 7, 20],
-          "detail": "DS-367 chemical-refusal designation → APS Case 34739340 → suspension February 20, 2025 – February 19, 2026, plus $125 reissue fee and three-year SR-22. The single economic loss claimed in four of the five matters."
+          "matters": [
+            1,
+            2,
+            7,
+            20,
+            32,
+            33
+          ],
+          "detail": "DS-367 chemical-refusal designation \u2192 APS Case 34739340 \u2192 suspension February 20, 2025 \u2013 February 19, 2026, plus $125 reissue fee and three-year SR-22. The single economic loss claimed in the damages-bearing cluster matters; Matter 33 holds the DS-367 and DMV discovery PDFs but does not separately demand this loss."
         },
         {
           "id": "krishnan-order",
           "label": "Krishnan IFP screening order",
-          "matters": [1, 7, 20, 24],
-          "detail": "June 29, 2026 order in Matter 24 granting IFP and finding a complaint on this record sufficient under 28 U.S.C. § 1915(e)(2). Now filed as persuasive authority in Matters 1, 7, and 20."
+          "matters": [
+            1,
+            7,
+            20,
+            24
+          ],
+          "detail": "June 29, 2026 order in Matter 24 granting IFP and finding a complaint on this record sufficient under 28 U.S.C. \u00a7 1915(e)(2). Now filed as persuasive authority in Matters 1, 7, and 20."
         },
         {
           "id": "uvisa-denial",
           "label": "April 20, 2026 U Visa certification denial",
-          "matters": [2, 20, 24],
+          "matters": [
+            2,
+            20,
+            24
+          ],
           "detail": "The certifying agency's refusal to complete the Form I-918 Supplement B certification arising from the same encounter. The single agency action challenged in both Alameda Superior Court and the Northern District."
         }
       ],
@@ -292,32 +521,68 @@
         {
           "name": "Officer Santiago Meza-Gonzalez (#023295)",
           "role": "Arresting officer; DS-367 issuer",
-          "defendantIn": [1, 2],
-          "factualIn": [7, 20, 24]
+          "defendantIn": [
+            1,
+            2,
+            32
+          ],
+          "factualIn": [
+            7,
+            20,
+            24,
+            33
+          ]
         },
         {
           "name": "Officer Jose Melano (#023054)",
           "role": "Conducted the warrantless interior search",
-          "defendantIn": [1, 2],
-          "factualIn": [7, 20, 24]
+          "defendantIn": [
+            1,
+            2,
+            32
+          ],
+          "factualIn": [
+            7,
+            20,
+            24,
+            33
+          ]
         },
         {
           "name": "State of California / CHP",
           "role": "Employer; certifying agency",
-          "defendantIn": [1, 2, 20],
-          "factualIn": [7, 24]
+          "defendantIn": [
+            1,
+            2,
+            20,
+            32
+          ],
+          "factualIn": [
+            7,
+            24,
+            33
+          ]
         },
         {
           "name": "Diana Candelaria / Steve Gordon (DMV)",
-          "role": "APS hearing officer and DMV Director; sustained the suspension on the repudiated arrest predicate",
-          "defendantIn": [7],
-          "factualIn": [1, 20]
+          "role": "APS hearing officer and DMV Director; sustained the suspension on the repudiated arrest predicate; Matter 33 is the N.D. Cal. refile, Nforbi v. Candelaria et al., No. 3:26-cv-08272-LJC",
+          "defendantIn": [
+            7,
+            33
+          ],
+          "factualIn": [
+            1,
+            20
+          ]
         },
         {
           "name": "DAG Allen Haiyang Li",
           "role": "Deputy Attorney General appearing for the State on both the federal MTD and the state demurrer/stay",
           "defendantIn": [],
-          "factualIn": [1, 2]
+          "factualIn": [
+            1,
+            2
+          ]
         }
       ]
     }

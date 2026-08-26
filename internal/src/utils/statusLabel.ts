@@ -16,6 +16,8 @@ export type StatusLabelActivity = {
   recent?: TimelineEvent;
   /** All timeline events for the matter (past + upcoming). Optional; loaded on demand. */
   events?: TimelineEvent[];
+  /** Reference timestamp (PDT epoch ms) for upcoming/past boundary. Defaults to getPDTMidnight(). */
+  now?: number;
 };
 
 const PHASE_SHORT: Partial<Record<MatterPhase, string>> = {
@@ -201,7 +203,7 @@ function phaseFallback(phase: MatterPhase | undefined, lifecycle: MatterLifecycl
  */
 export function deriveStatusLabel(matter: MatterLike, activity: StatusLabelActivity = {}): string {
   const events = activity.events ?? eventsForMatter(matter.number);
-  const now = +getPDTMidnight();
+  const now = activity.now ?? +getPDTMidnight();
   const posture = pickPostureEvent(events, matter.phase, now);
   const lifecycle = matter.lifecycle;
   const phase = matter.phase;
@@ -226,10 +228,18 @@ export function deriveStatusLabel(matter: MatterLike, activity: StatusLabelActiv
     return "Pre-filing";
   }
 
+  // Waiting phases (awaiting a ruling/submission) should only surface a posture
+  // date when it's an actual calendared hearing tied to that ruling — an
+  // unrelated contingent deadline (e.g. a statute of limitations that only
+  // starts running if the case is later dismissed) shouldn't make a matter
+  // that's simply waiting on a judge look like it has something scheduled.
+  const usablePosture =
+    posture && phase && WAITING_PHASES.has(phase) && posture.type !== "hearing" ? undefined : posture;
+
   const milestone = recentMilestone(matter, events, now);
-  if (posture) {
-    const kind = postureKind(posture, phase);
-    const dated = `${kind} ${compactEventDate(posture.date)}`;
+  if (usablePosture) {
+    const kind = postureKind(usablePosture, phase);
+    const dated = `${kind} ${compactEventDate(usablePosture.date)}`;
     // Served/Filed + later CMC/hearing is the common early-litigation pattern.
     const canPairMilestone =
       Boolean(milestone) &&
@@ -244,7 +254,7 @@ export function deriveStatusLabel(matter: MatterLike, activity: StatusLabelActiv
     }
     // Prefer the posture event's own kind ("CMC", "Demurrer hearing") over the
     // broader phase word when we have a dated calendar event.
-    return clampStatusLabel(`${kind} — ${compactEventDate(posture.date)}`);
+    return clampStatusLabel(`${kind} — ${compactEventDate(usablePosture.date)}`);
   }
 
   // Waiting / under-submission without a live posture date: keep the phase words.

@@ -10,19 +10,27 @@ export const MATTER_LIFECYCLES = [
 ];
 
 const TERMINAL = new Set(["dismissed", "abandoned", "closed"]);
-const README_ACTIVE = new Set(["active", "pre_filing"]);
+// Still on the open docket -- settled included, same as isOpenLifecycle on
+// the TS side. The "Active / Open" README table is keyed off this, not off
+// "currently being litigated," so a settled-but-not-dismissed matter (e.g.
+// Matter 22) stays in it; isSettledLifecycle below drives its own "Settled"
+// summary line independently, so the row can be both.
+const README_ACTIVE = new Set(["active", "pre_filing", "settled"]);
 
 export function isTerminalLifecycle(lifecycle) {
   return TERMINAL.has(lifecycle);
+}
+
+export function isSettledLifecycle(lifecycle) {
+  return lifecycle === "settled";
 }
 
 export function archivedFromLifecycle(lifecycle) {
   return isTerminalLifecycle(lifecycle);
 }
 
-/** README Active / Settled / Closed buckets. */
+/** README Active/Open vs Closed buckets -- settled matters count as open. */
 export function readmeBucket(lifecycle) {
-  if (lifecycle === "settled") return "settled";
   if (README_ACTIVE.has(lifecycle)) return "active";
   return "closed";
 }

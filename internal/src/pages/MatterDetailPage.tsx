@@ -12,14 +12,46 @@ import { getMatterSummary } from "../data/matters";
 import { useMatter } from "../hooks/useMatter";
 import { ROUTES } from "../routes";
 import { withBase } from "../utils/paths";
+import { clusterForMatter } from "../utils/crossMatter";
 import { groupDocuments } from "../utils/documentGroups";
 import { matterActivity } from "../utils/matterTimeline";
 import { downloadMatterSummary, matterMarkdown } from "../utils/exportMatter";
 import { isArchivedMatter } from "../utils/matterLifecycle";
 import { effectiveStatusLabel } from "../utils/statusLabel";
 
-function DetailSection({ label, children }: { label: string; children: ReactNode }) {
-  return <section className="detail-section"><div className="detail-label">{label}</div>{children}</section>;
+interface RailSection {
+  id: string;
+  label: string;
+}
+
+function DetailSection({ id, label, children }: { id?: string; label: string; children: ReactNode }) {
+  return <section id={id} className="detail-section"><div className="detail-label">{label}</div>{children}</section>;
+}
+
+/** A titled card. Sections stay inside one of these so the page reads as grouped
+ *  panels rather than the flat run of labelled prose it used to be. */
+function PanelGroup({ id, title, children }: { id: string; title: string; children: ReactNode }) {
+  return (
+    <section id={id} className="matter-panel" aria-labelledby={`${id}-title`}>
+      <h2 id={`${id}-title`} className="matter-panel-title">{title}</h2>
+      {children}
+    </section>
+  );
+}
+
+/** Sticky "on this page" nav. Replaces the three anchor links that used to sit
+ *  above the title, and only lists sections this matter actually renders. */
+function MatterRail({ sections }: { sections: RailSection[] }) {
+  return (
+    <nav className="matter-rail print-hidden" aria-label="Matter sections">
+      <div className="detail-label">On this page</div>
+      <ul>
+        {sections.map((section) => (
+          <li key={section.id}><a href={`#${section.id}`}>{section.label}</a></li>
+        ))}
+      </ul>
+    </nav>
+  );
 }
 
 export function MatterDetailPage() {
@@ -43,65 +75,89 @@ export function MatterDetailPage() {
   const activity = matterActivity(matter.number);
   const documentGroups = groupDocuments(matter.documents);
   const coverage = coverageForMatter(matter.number);
+  // CrossMatterPanel renders null without a cluster, so the rail has to ask the
+  // same question before advertising a link to it.
+  const hasCrossMatter = Boolean(clusterForMatter(matter.number));
+
+  const sections: RailSection[] = [
+    { id: "matter-overview", label: "Overview" },
+    { id: "matter-details", label: "The matter" },
+    { id: "matter-exposure", label: "Exposure" },
+    ...(hasCrossMatter ? [{ id: "matter-cross", label: "Cross-matter" }] : []),
+    { id: "matter-record", label: "Record" },
+  ];
 
   return (
-    <article>
-      <Link className="back-link" to={ROUTES.matters}>← All matters</Link>
-      <div className="matter-actions print-hidden">
-        <a href="#matter-details">Details</a><a href="#matter-cross">Cross-matter</a><a href="#matter-documents">Documents</a>
-        <button onClick={() => window.print()}>Print summary</button>
-        <button onClick={() => downloadMatterSummary(matter, matterMarkdown(matter, activity.next, activity.recent))}>Export Markdown</button>
-      </div>
-      <header className="matter-detail-header">
-        <div className="detail-label">Matter {matter.number}</div>
-        <h1 className="matter-detail-title">{matter.caption}</h1>
-        <p className="detail-copy detail-copy-subtle">{matter.case_no} · {matter.court}</p>
-        <div className="matter-detail-badges">
-          <ClusterBadge cluster={matter.cluster} />
-          <TypeBadge type={matter.type} />
-          <ProceedingBadge proceeding={matter.proceeding} />
-          <PhaseBadge phase={matter.phase} />
-          <StatusBadge status={effectiveStatusLabel(matter, activity)} lifecycle={matter.lifecycle} />
-          {isArchivedMatter(matter) && <ArchiveBadge />}
-        </div>
-      </header>
+    <div className="matter-page">
+      <Link className="back-link matter-page-back" to={ROUTES.matters}>← All matters</Link>
+      <MatterRail sections={sections} />
 
-      <MatterSummary matter={matter} next={activity.next} recent={activity.recent} />
+      <article className="matter-page-main">
+        <header id="matter-overview" className="matter-hero">
+          <div className="matter-hero-top">
+            <div className="matter-hero-identity">
+              <div className="detail-label">Matter {matter.number}</div>
+              <h1 className="matter-detail-title">{matter.caption}</h1>
+              <p className="detail-copy detail-copy-subtle">{matter.case_no} · {matter.court}</p>
+            </div>
+            <div className="matter-actions print-hidden">
+              <button onClick={() => window.print()}>Print summary</button>
+              <button onClick={() => downloadMatterSummary(matter, matterMarkdown(matter, activity.next, activity.recent))}>Export Markdown</button>
+            </div>
+          </div>
+          <div className="matter-detail-badges">
+            <ClusterBadge cluster={matter.cluster} />
+            <TypeBadge type={matter.type} />
+            <ProceedingBadge proceeding={matter.proceeding} />
+            <PhaseBadge phase={matter.phase} />
+            <StatusBadge status={effectiveStatusLabel(matter, activity)} lifecycle={matter.lifecycle} />
+            {isArchivedMatter(matter) && <ArchiveBadge />}
+          </div>
+          <MatterSummary matter={matter} next={activity.next} recent={activity.recent} />
+        </header>
 
-      {coverage && (
-        <DetailSection label="Insurance coverage on file">
-          <CoverageTower record={coverage} variant="panel" linkToMatter={false} />
-        </DetailSection>
-      )}
+        <PanelGroup id="matter-details" title="The matter">
+          <div className="matter-facts">
+            <DetailSection label="Defendants"><p className="detail-copy detail-copy-secondary">{matter.defendants}</p></DetailSection>
+            <DetailSection label="Court assignment"><p className="detail-copy detail-copy-secondary">{matter.judge}<br />Filed: {matter.filed}</p></DetailSection>
+          </div>
+          <DetailSection label="Claims"><p className="detail-copy detail-copy-secondary">{matter.claims}</p></DetailSection>
+          <DetailSection label="Causes of action">
+            <div className="matter-detail-pills">{matter.causes.map((cause) => <span key={cause} className="matter-detail-pill cause">{cause}</span>)}</div>
+          </DetailSection>
+          <DetailSection label="Key evidence">
+            <div className="matter-detail-pills">{matter.evidence.map((evidence) => <span key={evidence} className="matter-detail-pill evidence">{evidence}</span>)}</div>
+          </DetailSection>
+          <DetailSection label="Key facts"><CollapsibleProse text={matter.key_facts} label="key facts" className="detail-copy-muted" lines={6} /></DetailSection>
+          <DetailSection label="Procedural status"><CollapsibleProse text={matter.procedural_status} label="procedural status" className="detail-copy-muted" lines={6} /></DetailSection>
+        </PanelGroup>
 
-      <CrossMatterPanel matter={matter.number} />
+        <PanelGroup id="matter-exposure" title="Exposure">
+          <DetailSection label="Estimated damages and risk">
+            <p className="detail-copy matter-detail-damages">{matter.damages}</p>
+            <CollapsibleProse text={matter.risk} label="risk notes" className="matter-detail-risk" lines={6} />
+          </DetailSection>
+          {coverage && (
+            <DetailSection label="Insurance coverage on file">
+              <CoverageTower record={coverage} variant="panel" linkToMatter={false} />
+            </DetailSection>
+          )}
+        </PanelGroup>
 
-      <div id="matter-details" className="detail-grid">
-        <DetailSection label="Defendants"><p className="detail-copy detail-copy-secondary">{matter.defendants}</p></DetailSection>
-        <DetailSection label="Court assignment"><p className="detail-copy detail-copy-secondary">{matter.judge}<br />Filed: {matter.filed}</p></DetailSection>
-      </div>
-      <DetailSection label="Claims"><p className="detail-copy detail-copy-secondary">{matter.claims}</p></DetailSection>
-      <DetailSection label="Key facts"><CollapsibleProse text={matter.key_facts} label="key facts" className="detail-copy-muted" lines={6} /></DetailSection>
-      <div className="detail-grid">
-        <DetailSection label="Procedural status"><CollapsibleProse text={matter.procedural_status} label="procedural status" className="detail-copy-muted" lines={6} /></DetailSection>
-        <DetailSection label="Estimated damages and risk"><p className="detail-copy matter-detail-damages">{matter.damages}</p><CollapsibleProse text={matter.risk} label="risk notes" className="matter-detail-risk" lines={6} /></DetailSection>
-      </div>
-      <DetailSection label="Causes of action">
-        <div className="matter-detail-pills">{matter.causes.map((cause) => <span key={cause} className="matter-detail-pill cause">{cause}</span>)}</div>
-      </DetailSection>
-      <DetailSection label="Key evidence">
-        <div className="matter-detail-pills">{matter.evidence.map((evidence) => <span key={evidence} className="matter-detail-pill evidence">{evidence}</span>)}</div>
-      </DetailSection>
-      {matter.serviceTracking && <ServiceTracker serviceTracking={matter.serviceTracking} />}
-      <DetailSection label={`Documents (${matter.documents?.length ?? 0})`}>
-        <div id="matter-documents" />
-        {documentGroups.length ? documentGroups.map(([group, documents], index) => (
-          <details key={group} className="document-group" open={index === 0}>
-            <summary><span>{group}</span><span>{documents.length}</span></summary>
-            <div className="document-list">{documents.map((document) => <a key={document.path} href={withBase(document.path)} target="_blank" rel="noreferrer"><span className="document-type">PDF</span><span>{document.label}</span></a>)}</div>
-          </details>
-        )) : <p className="detail-copy detail-copy-subtle">No documents are linked to this matter.</p>}
-      </DetailSection>
-    </article>
+        <CrossMatterPanel matter={matter.number} />
+
+        <PanelGroup id="matter-record" title="Record">
+          {matter.serviceTracking && <ServiceTracker serviceTracking={matter.serviceTracking} />}
+          <DetailSection id="matter-documents" label={`Documents (${matter.documents?.length ?? 0})`}>
+            {documentGroups.length ? documentGroups.map(([group, documents], index) => (
+              <details key={group} className="document-group" open={index === 0}>
+                <summary><span>{group}</span><span>{documents.length}</span></summary>
+                <div className="document-list">{documents.map((document) => <a key={document.path} href={withBase(document.path)} target="_blank" rel="noreferrer"><span className="document-type">PDF</span><span>{document.label}</span></a>)}</div>
+              </details>
+            )) : <p className="detail-copy detail-copy-subtle">No documents are linked to this matter.</p>}
+          </DetailSection>
+        </PanelGroup>
+      </article>
+    </div>
   );
 }

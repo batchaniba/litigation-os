@@ -1,16 +1,21 @@
 import { Link } from "react-router";
 import { cases } from "../data/matters";
+import { CLUSTERS } from "../data/clusters";
 import { damages_table } from "../data/damages";
 import { jurisdictions } from "../data/portfolioMeta";
 import { headline_coverage, formatLimit } from "../data/coverage";
 import { formatCurrency } from "../utils/formatters";
-import { isArchivedMatter, isLiveLifecycle } from "../utils/matterLifecycle";
+import { isArchivedMatter, isOpenLifecycle } from "../utils/matterLifecycle";
 
 const FILED_GREEN = "#34D399";
 const UPCOMING_AMBER = "#FBBF24";
 
 const totalMatters = cases.length;
-const activeMatters = cases.filter(c => isLiveLifecycle(c.lifecycle) || (!c.lifecycle && !c.archived)).length;
+// "Active Matters" is the open-docket count -- still on the docket, settled
+// included (isOpenLifecycle), not the narrower "currently being litigated"
+// set. A settled-but-not-yet-dismissed matter (e.g. Matter 22) still belongs
+// here; its card carries its own Settled ribbon/badge regardless.
+const activeMatters = cases.filter(c => isOpenLifecycle(c.lifecycle) || (!c.lifecycle && !c.archived)).length;
 const clusterCounts = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 };
 const clusterNumberLists = { 1: [], 2: [], 3: [], 4: [], 5: [] };
 const courtCounts = {};
@@ -51,14 +56,6 @@ const clusterMattersStr = {
 const moderateExposure = formatCurrency(
   damages_table.reduce((s, r) => s + r.moderate, 0)
 );
-
-export const CLUSTERS = [
-  { n: 1, label: "CHP Traffic Stop, DUI Arrest & DMV", color: "#60A5FA" },
-  { n: 2, label: "Parole Retaliation, HOPE Abuse & Policy 19-03", color: "#A78BFA" },
-  { n: 3, label: "Employment Violations", color: "#FBBF24" },
-  { n: 4, label: "Administrative Writs & Habeas Corpus", color: "#34D399" },
-  { n: 5, label: "Consumer Fraud / Defective Vehicle", color: "#F97316" },
-];
 
 const PERTINENT_FILINGS = [
   { title: "Newanforbi v. Serrato et al.", matter: 24, date: "Filed Jun 17, 2026", dateStatus: "filed" },

@@ -11,6 +11,17 @@ same county Sheriff Civil Division that handled the original summons/
 complaint service for that defendant, directed at the same registered
 agent address, so the notice is served before any default is taken.
 
+REVISED AUGUST 7, 2026 — AMOUNTS AND AMENDED NOTICES. The notices this
+batch transmits no longer carry the flat $25,000.00 placeholder of the
+August 4, 2026 batch; each is now set per defendant (see the amount
+rationale in the notice generator's header). Matters 25, 26, and 27 had
+already routed their August 4 notice to the Sheriff, so those four
+defendants are served an AMENDED notice that supersedes the earlier one
+— the SER-001s below are re-issued to transmit the amended document and
+supersede the corresponding August 4 service requests. Matter 29
+(Amazon / Accurate Background) had no notice served, so those two
+SER-001s transmit an original notice at the revised amount.
+
 Matter 29 (Amazon.com Services, LLC / Accurate Background LLC) is a
 special case: unlike Matters 25/26/27, the FW-003 fee waiver in that
 action was NOT granted -- the court found the request incomplete and
@@ -48,9 +59,21 @@ STATE = "CA"
 ZIP = "95204"
 PHONE = "(209) 801-4442"
 EMAIL = "bnn.cdl@gmail.com"
-SIG_DATE = "August 4, 2026"
+SIG_DATE = "August 7, 2026"
 
 TYPE_PAPERS = "Notice of Amount of Punitive Damages Sought (CCP §425.115)"
+TYPE_PAPERS_AMENDED = "Amended Notice of Amount of Punitive Damages Sought (CCP §425.115)"
+
+
+def list_forms(amount: str, amended: bool) -> str:
+    """Item 5b description of the paper being served."""
+    lead = "Amended Notice" if amended else "Notice"
+    return (
+        f"{lead} of Amount of Punitive Damages Sought "
+        f"(Code Civ. Proc. § 425.115; Civ. Code § 3294) — {amount} "
+        f"(dated August 7, 2026)"
+        + (" — supersedes the $25,000.00 Notice dated August 4, 2026" if amended else "")
+    )
 
 F = {
     "case1": "SER-001[0].Page1[0].CaptionRight[0].CaseNo[0].CaseNumber[0]",
@@ -90,7 +113,8 @@ F = {
 }
 
 
-def base_fields(case_number: str, case_name: str, other: str, deadline_date: str) -> dict[str, object]:
+def base_fields(case_number: str, case_name: str, other: str, deadline_date: str,
+                amended: bool) -> dict[str, object]:
     return {
         F["case1"]: case_number,
         F["yourname"]: YOUR_NAME,
@@ -104,7 +128,7 @@ def base_fields(case_number: str, case_name: str, other: str, deadline_date: str
         F["case2"]: case_number,
         F["business"]: NameObject("/2"),
         F["serve_time"]: "Business hours (9:00 a.m.–5:00 p.m.)",
-        F["type_papers"]: TYPE_PAPERS,
+        F["type_papers"]: TYPE_PAPERS_AMENDED if amended else TYPE_PAPERS,
         F["case3"]: case_number,
         F["deadline_yes"]: NameObject("/3"),
         F["deadline_date"]: deadline_date,
@@ -122,7 +146,9 @@ def base_fields(case_number: str, case_name: str, other: str, deadline_date: str
 DEFENDANTS = [
     {
         "matter": 25,
-        "filename": "SER-001 Request for Sheriff to Serve Court Papers - Federal Express Corporation (CCP 425.115 Notice) (Aug 4 2026).pdf",
+        "amount": "$250,000.00",
+        "amended": True,
+        "filename": "SER-001 Request for Sheriff to Serve Court Papers - Federal Express Corporation (Amended CCP 425.115 Notice) (Aug 7 2026).pdf",
         "county": "Los Angeles",
         "case_number": "STK-CV-UWT-2026-0009118",
         "case_name": "Newanforbi v. Federal Express Corporation",
@@ -132,26 +158,28 @@ DEFENDANTS = [
         "addr": "330 N Brand Blvd, Ste 700",
         "addr_city": "Glendale",
         "addr_zip": "91203",
-        "list_forms": (
-            "Notice of Amount of Punitive Damages Sought "
-            "(Code Civ. Proc. § 425.115; Civ. Code § 3294) — $25,000.00 "
-            "(dated August 4, 2026)"
-        ),
         "deadline_date": "09/13/2026 (CRC 3.110(b) proof-of-service deadline; serve before any default is taken)",
         "other": (
-            "Deliver this SER-001 and the attached Notice of Amount of Punitive "
-            "Damages Sought (CCP §425.115) to Los Angeles County Sheriff Civil "
-            "Division for personal service on Federal Express Corporation's "
+            "Deliver this SER-001 and the attached AMENDED Notice of Amount of "
+            "Punitive Damages Sought (CCP §425.115) to Los Angeles County Sheriff "
+            "Civil Division for personal service on Federal Express Corporation's "
             "registered agent at the address in item 4 — the same registered "
             "agent through which the Summons and Complaint were served July 24, "
-            "2026 (File No. 2026075280). Plaintiff has a court fee waiver in "
-            "this action (FW-003 GRANTED July 15, 2026) — no sheriff service "
-            "fee (Gov. Code §26721)."
+            "2026 (File No. 2026075280). THIS REQUEST SUPERSEDES the SER-001 "
+            "emailed to LASD Civil Process August 4, 2026, which transmitted a "
+            "$25,000.00 Notice; the attached Amended Notice states $250,000.00 "
+            "and replaces that earlier Notice in full. If the August 4 Notice "
+            "has not yet been served, serve the Amended Notice in its place; if "
+            "it has been served, serve the Amended Notice in addition. Plaintiff "
+            "has a court fee waiver in this action (FW-003 GRANTED July 15, "
+            "2026) — no sheriff service fee (Gov. Code §26721)."
         ),
     },
     {
         "matter": 26,
-        "filename": "SER-001 Request for Sheriff to Serve Court Papers - United Parcel Service Inc (CCP 425.115 Notice) (Aug 4 2026).pdf",
+        "amount": "$250,000.00",
+        "amended": True,
+        "filename": "SER-001 Request for Sheriff to Serve Court Papers - United Parcel Service Inc (Amended CCP 425.115 Notice) (Aug 7 2026).pdf",
         "county": "Sacramento",
         "case_number": "STK-CV-UWT-2026-0009113",
         "case_name": "Newanforbi v. United Parcel Service, Inc.",
@@ -161,26 +189,28 @@ DEFENDANTS = [
         "addr": "2710 Gateway Oaks Drive, Suite 150N",
         "addr_city": "Sacramento",
         "addr_zip": "95833",
-        "list_forms": (
-            "Notice of Amount of Punitive Damages Sought "
-            "(Code Civ. Proc. § 425.115; Civ. Code § 3294) — $25,000.00 "
-            "(dated August 4, 2026)"
-        ),
         "deadline_date": "09/13/2026 (CRC 3.110(b) proof-of-service deadline; serve before any default is taken)",
         "other": (
-            "Deliver this SER-001 and the attached Notice of Amount of Punitive "
-            "Damages Sought (CCP §425.115) to Sacramento County Sheriff Civil "
-            "Division for personal service on United Parcel Service, Inc.'s "
+            "Deliver this SER-001 and the attached AMENDED Notice of Amount of "
+            "Punitive Damages Sought (CCP §425.115) to Sacramento County Sheriff "
+            "Civil Division for personal service on United Parcel Service, Inc.'s "
             "registered agent at the address in item 4 — the same registered "
             "agent through which the Summons and Complaint were served July 22, "
-            "2026 (Case Manager M. Xiang). Plaintiff has a court fee waiver in "
-            "this action (FW-003 GRANTED July 15, 2026) — no sheriff service "
-            "fee (Gov. Code §26721)."
+            "2026 (Case Manager M. Xiang). THIS REQUEST SUPERSEDES the SER-001 "
+            "submitted August 3, 2026, which transmitted a $25,000.00 Notice; "
+            "the attached Amended Notice states $250,000.00 and replaces that "
+            "earlier Notice in full. If the August 4 Notice has not yet been "
+            "served, serve the Amended Notice in its place; if it has been "
+            "served, serve the Amended Notice in addition. Plaintiff has a court "
+            "fee waiver in this action (FW-003 GRANTED July 15, 2026) — no "
+            "sheriff service fee (Gov. Code §26721)."
         ),
     },
     {
         "matter": 27,
-        "filename": "SER-001 Request for Sheriff to Serve Court Papers - Randstad US LLC (CCP 425.115 Notice) (Aug 4 2026).pdf",
+        "amount": "$500,000.00",
+        "amended": True,
+        "filename": "SER-001 Request for Sheriff to Serve Court Papers - Randstad US LLC (Amended CCP 425.115 Notice) (Aug 7 2026).pdf",
         "county": "Sacramento",
         "case_number": "26CV199902",
         "case_name": "Newanforbi v. Randstad US, LLC, et al.",
@@ -190,27 +220,29 @@ DEFENDANTS = [
         "addr": "2710 Gateway Oaks Drive, Suite 150N",
         "addr_city": "Sacramento",
         "addr_zip": "95833",
-        "list_forms": (
-            "Notice of Amount of Punitive Damages Sought "
-            "(Code Civ. Proc. § 425.115; Civ. Code § 3294) — $25,000.00 "
-            "(dated August 4, 2026)"
-        ),
         "deadline_date": "09/18/2026 (CRC 3.110(b) proof-of-service deadline; serve before any default is taken)",
         "other": (
-            "Deliver this SER-001 and the attached Notice of Amount of Punitive "
-            "Damages Sought (CCP §425.115) to Sacramento County Sheriff Civil "
-            "Division for personal service on Randstad US, LLC's registered "
+            "Deliver this SER-001 and the attached AMENDED Notice of Amount of "
+            "Punitive Damages Sought (CCP §425.115) to Sacramento County Sheriff "
+            "Civil Division for personal service on Randstad US, LLC's registered "
             "agent at the address in item 4 — the same registered agent through "
             "which the Summons and Complaint were served July 30, 2026 (File "
-            "No. 2026026857). Plaintiff has a court fee waiver in this action "
-            "(FW-003 GRANTED July 20, 2026) — no sheriff service fee (Gov. "
-            "Code §26721). A separate SER-001 is submitted for co-defendant "
-            "The RK Logistics Group, Inc. (same address)."
+            "No. 2026026857). THIS REQUEST SUPERSEDES the SER-001 dated August "
+            "4, 2026, which transmitted a $25,000.00 Notice; the attached "
+            "Amended Notice states $500,000.00 and replaces that earlier Notice "
+            "in full. If the August 4 Notice has not yet been served, serve the "
+            "Amended Notice in its place; if it has been served, serve the "
+            "Amended Notice in addition. Plaintiff has a court fee waiver in "
+            "this action (FW-003 GRANTED July 20, 2026) — no sheriff service "
+            "fee (Gov. Code §26721). A separate SER-001 is submitted for "
+            "co-defendant The RK Logistics Group, Inc. (same address)."
         ),
     },
     {
         "matter": 27,
-        "filename": "SER-001 Request for Sheriff to Serve Court Papers - RK Logistics Group Inc (CCP 425.115 Notice) (Aug 4 2026).pdf",
+        "amount": "$500,000.00",
+        "amended": True,
+        "filename": "SER-001 Request for Sheriff to Serve Court Papers - RK Logistics Group Inc (Amended CCP 425.115 Notice) (Aug 7 2026).pdf",
         "county": "Sacramento",
         "case_number": "26CV199902",
         "case_name": "Newanforbi v. Randstad US, LLC, et al.",
@@ -220,27 +252,29 @@ DEFENDANTS = [
         "addr": "2710 Gateway Oaks Drive, Suite 150N",
         "addr_city": "Sacramento",
         "addr_zip": "95833",
-        "list_forms": (
-            "Notice of Amount of Punitive Damages Sought "
-            "(Code Civ. Proc. § 425.115; Civ. Code § 3294) — $25,000.00 "
-            "(dated August 4, 2026)"
-        ),
         "deadline_date": "09/18/2026 (CRC 3.110(b) proof-of-service deadline; serve before any default is taken)",
         "other": (
-            "Deliver this SER-001 and the attached Notice of Amount of Punitive "
-            "Damages Sought (CCP §425.115) to Sacramento County Sheriff Civil "
-            "Division for personal service on The RK Logistics Group, Inc.'s "
-            "registered agent at the address in item 4 — the same registered "
-            "agent through which the Summons and Complaint were served July 30, "
-            "2026 (File No. 2026026857). Plaintiff has a court fee waiver in "
-            "this action (FW-003 GRANTED July 20, 2026) — no sheriff service "
-            "fee (Gov. Code §26721). A separate SER-001 is submitted for "
-            "co-defendant Randstad US, LLC (same address)."
+            "Deliver this SER-001 and the attached AMENDED Notice of Amount of "
+            "Punitive Damages Sought (CCP §425.115) to Sacramento County Sheriff "
+            "Civil Division for personal service on The RK Logistics Group, "
+            "Inc.'s registered agent at the address in item 4 — the same "
+            "registered agent through which the Summons and Complaint were "
+            "served July 30, 2026 (File No. 2026026857). THIS REQUEST SUPERSEDES "
+            "the SER-001 dated August 4, 2026, which transmitted a $25,000.00 "
+            "Notice; the attached Amended Notice states $500,000.00 and replaces "
+            "that earlier Notice in full. If the August 4 Notice has not yet "
+            "been served, serve the Amended Notice in its place; if it has been "
+            "served, serve the Amended Notice in addition. Plaintiff has a court "
+            "fee waiver in this action (FW-003 GRANTED July 20, 2026) — no "
+            "sheriff service fee (Gov. Code §26721). A separate SER-001 is "
+            "submitted for co-defendant Randstad US, LLC (same address)."
         ),
     },
     {
         "matter": 29,
-        "filename": "SER-001 Request for Sheriff to Serve Court Papers - Amazon.com Services LLC (CCP 425.115 Notice) (Aug 4 2026).pdf",
+        "amount": "$250,000.00",
+        "amended": False,
+        "filename": "SER-001 Request for Sheriff to Serve Court Papers - Amazon.com Services LLC (CCP 425.115 Notice) (Aug 7 2026).pdf",
         "county": "Sacramento",
         "case_number": "26CV201554",
         "case_name": "Newanforbi v. Amazon.com Services, LLC, et al.",
@@ -250,11 +284,6 @@ DEFENDANTS = [
         "addr": "2710 Gateway Oaks Drive, Suite 150N",
         "addr_city": "Sacramento",
         "addr_zip": "95833",
-        "list_forms": (
-            "Notice of Amount of Punitive Damages Sought "
-            "(Code Civ. Proc. § 425.115; Civ. Code § 3294) — $25,000.00 "
-            "(dated August 4, 2026)"
-        ),
         "deadline_date": "09/28/2026 (CRC 3.110(b) proof-of-service deadline, as adjusted by CCP §12a; serve before any default is taken)",
         "other": (
             "Deliver this SER-001 and the attached Notice of Amount of Punitive "
@@ -276,7 +305,9 @@ DEFENDANTS = [
     },
     {
         "matter": 29,
-        "filename": "SER-001 Request for Sheriff to Serve Court Papers - Accurate Background LLC (CCP 425.115 Notice) (Aug 4 2026).pdf",
+        "amount": "$100,000.00",
+        "amended": False,
+        "filename": "SER-001 Request for Sheriff to Serve Court Papers - Accurate Background LLC (CCP 425.115 Notice) (Aug 7 2026).pdf",
         "county": "Los Angeles",
         "case_number": "26CV201554",
         "case_name": "Newanforbi v. Amazon.com Services, LLC, et al.",
@@ -286,11 +317,6 @@ DEFENDANTS = [
         "addr": "330 N Brand Blvd, Suite 700",
         "addr_city": "Glendale",
         "addr_zip": "91203",
-        "list_forms": (
-            "Notice of Amount of Punitive Damages Sought "
-            "(Code Civ. Proc. § 425.115; Civ. Code § 3294) — $25,000.00 "
-            "(dated August 4, 2026)"
-        ),
         "deadline_date": "09/28/2026 (CRC 3.110(b) proof-of-service deadline, as adjusted by CCP §12a; serve before any default is taken)",
         "other": (
             "Deliver this SER-001 and the attached Notice of Amount of Punitive "
@@ -313,7 +339,7 @@ DEFENDANTS = [
 
 
 def fields_for(d: dict) -> dict[str, object]:
-    fields = base_fields(d["case_number"], d["case_name"], d["other"], d["deadline_date"])
+    fields = base_fields(d["case_number"], d["case_name"], d["other"], d["deadline_date"], d["amended"])
     fields[F["county"]] = d["county"]
     fields[F["entity_name"]] = d["entity_name"]
     fields[F["entity_person"]] = d["entity_person"]
@@ -323,7 +349,7 @@ def fields_for(d: dict) -> dict[str, object]:
     fields[F["addr_state"]] = "CA"
     fields[F["addr_zip"]] = d["addr_zip"]
     fields[F["gate"]] = ""
-    fields[F["list_forms"]] = d["list_forms"]
+    fields[F["list_forms"]] = list_forms(d["amount"], d["amended"])
     return fields
 
 
@@ -382,11 +408,13 @@ def main() -> None:
         raise SystemExit(f"Bad/missing template: {TEMPLATE}")
     for d in DEFENDANTS:
         verify(fill_one(d), d)
-    print(f"Done — {len(DEFENDANTS)} SER-001 packets.")
+    amended = sum(1 for d in DEFENDANTS if d["amended"])
+    print(f"Done — {len(DEFENDANTS)} SER-001 packets ({amended} transmitting amended notices).")
     print("Attach each matching CCP 425.115 Notice PDF (already generated) to its")
     print("SER-001 before delivering to the county Sheriff Civil Division named on")
-    print("the form. Confirm the $25,000 punitive figure and Matter 29's pending")
-    print("fee-waiver status before submitting.")
+    print("the form. The Matter 25/26/27 requests supersede the Aug. 4, 2026 batch")
+    print("and must reach the Sheriff before any default is taken. Confirm Matter")
+    print("29's pending fee-waiver status before submitting those two.")
 
 
 if __name__ == "__main__":

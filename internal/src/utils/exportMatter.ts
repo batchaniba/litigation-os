@@ -107,5 +107,7 @@ export function downloadMatterSummary(matter: Matter, content: string) {
   anchor.href = url;
   anchor.download = `matter-${String(matter.number).padStart(2, "0")}-summary.md`;
   anchor.click();
-  URL.revokeObjectURL(url);
+  // Revoking on the same tick races the download in Safari and Firefox, which
+  // commit it asynchronously — Chrome is the outlier in tolerating it.
+  setTimeout(() => URL.revokeObjectURL(url), 0);
 }

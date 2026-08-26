@@ -16,7 +16,7 @@ from pathlib import Path
 from pypdf import PdfReader, PdfWriter
 
 ROOT = Path(__file__).resolve().parents[2]
-DOC_DIR = ROOT / "internal/public/documents/matter-20"
+DOC_DIR = ROOT / "internal/public/documents/matter-32/from-20"
 
 FEE_WAIVER = DOC_DIR / "FW-003 Order on Court Fee Waiver - GRANTED (Jun 3 2026).pdf"
 OPPOSITION = DOC_DIR / "Opposition-to-Individual-Respondents-Demurrers.pdf"

@@ -4,25 +4,27 @@
   "case_no": "2:25-cv-01460-DC-CSK",
   "court": "USDC E.D. Cal.",
   "claims": "42 USC 1983: 4A Search/Seizure, Due Process, Monell",
-  "status": "Filed 05/27/2025; Magistrate Judge issued Findings & Recommendations RECOMMENDING DISMISSAL (Apr. 20, 2026); Plaintiff filed Objections to the F&R (Apr. 21, 2026) and a Notice of Supplemental Authority citing the favorable Serrato ruling (Jul. 7, 2026); District Judge Coggins's ruling on the F&R remains PENDING as of this writing",
-  "status_label": "F&R pending — objections filed, District Judge review",
-  "lifecycle": "active",
+  "status": "DISMISSED WITHOUT PREJUDICE — Notice of Voluntary Dismissal filed Aug. 15, 2026 (FRCP 41(a)(1)(A)(i); self-executing — no Defendant had served an answer or motion for summary judgment, so dismissal by notice remained available as of right notwithstanding the pending MTD and F&R). Mooted the pending Apr. 20, 2026 F&R and Objections before District Judge Coggins ruled. Claims against Meza-Gonzalez and Melano refiled in N.D. Cal. as Matter 32 (No. 3:26-cv-08271-PHK, docketed Aug. 10, 2026, before this dismissal).",
+  "status_label": "Dismissed w/o prejudice — Aug. 15; refiled as Matter 32",
+  "lifecycle": "dismissed",
   "proceeding": "federal_civil",
-  "phase": "fr_pending",
+  "phase": "terminal",
   "filed": "May 27, 2025",
   "judge": "Hon. Dena M. Coggins",
   "cluster": 1,
   "type": "Federal",
   "defendants": "State of California / CHP; Officer Santiago Meza-Gonzalez (#023295); Officer Jose Melano (#023054)",
+  "archived": true,
+  "badge": "DISMISSED",
   "causes": [
     "Unreasonable Search and Seizure (4th Amend.)",
     "Violation of Due Process (14th Amend.)",
     "Monell Liability"
   ],
-  "key_facts": "On November 1, 2024 at approximately 12:54 AM, Plaintiff — a CDL commercial truck driver — was lawfully parked on the I-580 East shoulder in Livermore, CA, resting in a rental Tesla Model Y. CHP Officers Meza-Gonzalez (#023295) and Melano (#023054) approached under the pretext of a welfare check. Upon spotting a cup in the center console, one officer speculated 'I think it's booze' — pivoting to a DUI investigation with no articulable facts; the cup did not contain alcohol. Without consent or a warrant, Officer Melano searched the interior; the only item recovered was an empty container found during the search itself, not in plain view beforehand. Plaintiff showed no signs of impairment yet was handcuffed and transported for chemical testing. The CHP arrest report fabricated observations of slurred speech and alcohol odor directly contradicted by dashcam footage (Exhibit A); the Alameda County DA declined to file any charges. Post-arrest, Plaintiff was held five days on a parole violation hold without arraignment, confined with a menacing homicide suspect. The chemical refusal designation triggered a Class A CDL suspension through February 2026, causing over a year of lost commercial driving wages.",
-  "procedural_status": "Complaint filed pro se May 27, 2025. Summons issued October 28, 2025; service deadline January 26, 2026. Defendants moved to dismiss under Rule 12(b)(6) on December 10, 2025 (hearing January 16, 2026). Plaintiff's opposition (December 22, 2025) conceded dismissal of the State, official-capacity claims, Monell (Count III), punitive damages, and attorneys' fees — preserving Count I (4th Amendment) and Count II (14th Amendment) against both officers individually and requesting leave to amend. AG filed reply January 5, 2026, seeking full dismissal with prejudice. April 20, 2026: Magistrate Judge issued Findings & Recommendations (F&R) recommending the MTD be GRANTED and the action dismissed. April 21, 2026: Plaintiff filed Objections to the F&R, contesting the qualified-immunity/probable-cause analysis and requesting the District Judge decline the F&R or grant leave to amend (served on DAG Haiyang Li). July 7, 2026: Plaintiff filed a Notice of Supplemental Authority alerting the Court to Magistrate Judge Krishnan's June 29, 2026 order in the related Serrato matter (N.D. Cal.), which granted IFP and found a complaint arising from this same November 1, 2024 incident sufficient to survive §1915 screening — cited as persuasive authority against the F&R. As of this writing, District Judge Dena M. Coggins has not yet ruled on the F&R or the Objections; the matter remains pending on de novo review. Apr. 9, 2026: During the Matter 2 M&C call (state demurrer, CCP §430.41), Plaintiff raised 28 U.S.C. § 636(c) consent to Magistrate Judge jurisdiction for this federal matter (2:25-cv-01460-DC-CSK) as a means of expediting adjudication of the pending MTD. DAG Li stated the State typically prefers district judge adjudication but agreed to consult his clients; follow-up anticipated alongside the stipulated stay draft (~Apr. 20, 2026).",
-  "damages": "$175,000 – $450,000+ [FLAGGED: this CDL lost-wage component is also independently claimed, unreserved, in Matters 2, 7, and 20 for the same one-year suspension — unlike Matter 8, which expressly reserves consequential damages to the federal action; no offset/no-double-recovery language coordinates these four dockets]: 1+ year of lost CDL wages and reduced future earning capacity; compensation for 5-day unlawful parole hold without judicial review; emotional distress from wrongful arrest and dangerous jail conditions (confinement with menacing homicide suspect); recoverable civil rights costs.",
-  "risk": "Significant. Qualified immunity under Wesby/Kisela requires precedent 'squarely governing' these specific facts — none cited to date. Iqbal/Twombly risk is acute: critical facts defeating immunity (cup not in plain view; fabricated report) appeared first in the Opposition, leaving the Complaint facially thin. Plaintiff's concessions narrowed the case to individual-capacity claims on Counts I and II only, eliminating Monell. Leave to amend will likely be needed to overcome qualified immunity at the 12(b)(6) stage.",
+  "key_facts": "On November 1, 2024 at approximately 12:54 AM, Plaintiff — a CDL commercial truck driver — was lawfully parked on the I-580 East shoulder in Livermore, CA, resting in a rental Tesla Model Y. CHP Officers Meza-Gonzalez (#023295) and Melano (#023054) approached under the pretext of a welfare check. (Incident PDFs — Arrest Report, DS-367, dashcam transcript, DMV discovery packet — are owned by Matter 32 and cross-referenced below.) Upon spotting a cup in the center console, one officer speculated 'I think it's booze' — pivoting to a DUI investigation with no articulable facts; the cup did not contain alcohol. Without consent or a warrant, Officer Melano searched the interior; the only item recovered was an empty container found during the search itself, not in plain view beforehand. Plaintiff showed no signs of impairment yet was handcuffed and transported for chemical testing. The CHP arrest report fabricated observations of slurred speech and alcohol odor directly contradicted by dashcam footage (Exhibit A); the Alameda County DA declined to file any charges. Post-arrest, Plaintiff was held five days on a parole violation hold without arraignment, confined with a menacing homicide suspect. The chemical refusal designation triggered a Class A CDL suspension through February 2026, causing over a year of lost commercial driving wages.",
+  "procedural_status": "Complaint filed pro se May 27, 2025. Summons issued October 28, 2025; service deadline January 26, 2026. Defendants moved to dismiss under Rule 12(b)(6) on December 10, 2025 (hearing January 16, 2026). Plaintiff's opposition (December 22, 2025) conceded dismissal of the State, official-capacity claims, Monell (Count III), punitive damages, and attorneys' fees — preserving Count I (4th Amendment) and Count II (14th Amendment) against both officers individually and requesting leave to amend. AG filed reply January 5, 2026, seeking full dismissal with prejudice. April 20, 2026: Magistrate Judge issued Findings & Recommendations (F&R) recommending the MTD be GRANTED and the action dismissed. April 21, 2026: Plaintiff filed Objections to the F&R, contesting the qualified-immunity/probable-cause analysis and requesting the District Judge decline the F&R or grant leave to amend (served on DAG Haiyang Li). July 7, 2026: Plaintiff filed a Notice of Supplemental Authority alerting the Court to Magistrate Judge Krishnan's June 29, 2026 order in the related Serrato matter (N.D. Cal.), which granted IFP and found a complaint arising from this same November 1, 2024 incident sufficient to survive §1915 screening — cited as persuasive authority against the F&R. District Judge Dena M. Coggins never ruled on the F&R or the Objections. Apr. 9, 2026: During the Matter 2 M&C call (state demurrer, CCP §430.41), Plaintiff raised 28 U.S.C. § 636(c) consent to Magistrate Judge jurisdiction for this federal matter (2:25-cv-01460-DC-CSK) as a means of expediting adjudication of the pending MTD. DAG Li stated the State typically prefers district judge adjudication but agreed to consult his clients; follow-up anticipated alongside the stipulated stay draft (~Apr. 20, 2026). Aug. 15, 2026: Notice of Voluntary Dismissal Without Prejudice (executed Aug. 11, 2026) e-filed under FRCP 41(a)(1)(A)(i) — self-executing; no answer or MSJ had been filed, so the pending MTD/F&R did not foreclose dismissal by notice. Confirms, as of this filing, the representation Matter 32's Dkt. 1 (docketed Aug. 10, 2026) made to the N.D. Cal. that this action would be dismissed.",
+  "damages": "$175,000 – $450,000+ historical claim, now carried forward in Matter 32 rather than this (dismissed) docket [FLAGGED: this CDL lost-wage component is also independently claimed, unreserved, in Matters 2, 7, and 20 for the same one-year suspension — unlike Matter 8, which expressly reserves consequential damages to the federal action; no offset/no-double-recovery language coordinates these dockets]: 1+ year of lost CDL wages and reduced future earning capacity; compensation for 5-day unlawful parole hold without judicial review; emotional distress from wrongful arrest and dangerous jail conditions (confinement with menacing homicide suspect); recoverable civil rights costs.",
+  "risk": "Moot as to this docket — voluntarily dismissed without prejudice before the qualified-immunity/Iqbal-Twombly exposure below was ever adjudicated by the District Judge. Historical record: qualified immunity under Wesby/Kisela requires precedent 'squarely governing' these specific facts — none cited to date. Iqbal/Twombly risk was acute: critical facts defeating immunity (cup not in plain view; fabricated report) appeared first in the Opposition, leaving the Complaint facially thin. Plaintiff's concessions narrowed the case to individual-capacity claims on Counts I and II only, eliminating Monell. The refiled Matter 32 complaint has a chance to plead those facts up front rather than relying on the Opposition.",
   "evidence": [
     "CHP arrest report",
     "Chemical test advisements",
@@ -39,105 +41,86 @@
   ],
   "documents": [
     {
-      "label": "Complaint (May 27, 2025)",
-      "path": "/documents/matter-01/0.Newanforbi v. CHP.pdf"
+      "path": "/documents/matter-32/from-01/0.Newanforbi v. CHP.pdf"
     },
     {
-      "label": "Civil Cover Sheet (JS 44) (May 21, 2025)",
-      "path": "/documents/matter-01/18_Civil_Cover_Sheet.pdf"
+      "path": "/documents/matter-32/from-01/18_Civil_Cover_Sheet.pdf"
     },
     {
-      "label": "Summons in a Civil Case (issued Oct. 28, 2025)",
-      "path": "/documents/matter-01/07_Summons_Sheet.pdf"
+      "path": "/documents/matter-32/from-01/07_Summons_Sheet.pdf"
     },
     {
-      "label": "Notice of Electronic Filing — Civil Case Opened (Oct. 28, 2025)",
-      "path": "/documents/matter-01/06_Notice_of_E-Filing_1.pdf"
+      "path": "/documents/matter-32/from-01/06_Notice_of_E-Filing_1.pdf"
     },
     {
-      "label": "Notice of Electronic Filing — Summons Issued (Oct. 28, 2025)",
-      "path": "/documents/matter-01/09_Notice_of_E-Filing_2.pdf"
+      "path": "/documents/matter-32/from-01/09_Notice_of_E-Filing_2.pdf"
     },
     {
-      "label": "Filing Fee Receipt (Oct. 28, 2025)",
-      "path": "/documents/matter-01/10_Filing_Fee_Receipt.pdf"
+      "path": "/documents/matter-32/from-01/10_Filing_Fee_Receipt.pdf"
     },
     {
-      "label": "Magistrate Judge Consent — Court Information Letter",
-      "path": "/documents/matter-01/03_Magistrate_Judge_Consent.pdf"
+      "path": "/documents/matter-32/from-01/03_Magistrate_Judge_Consent.pdf"
     },
     {
-      "label": "Notice of Availability of a Magistrate Judge (Oct. 28, 2025)",
-      "path": "/documents/matter-01/04_Magistrate_Judge_Availabilty.pdf"
+      "path": "/documents/matter-32/from-01/04_Magistrate_Judge_Availabilty.pdf"
     },
     {
-      "label": "Consent / Decline of Magistrate Judge Jurisdiction (form)",
-      "path": "/documents/matter-01/05_Magistrate_Judge_Consent_Decline_Sheet.pdf"
+      "path": "/documents/matter-32/from-01/05_Magistrate_Judge_Consent_Decline_Sheet.pdf"
     },
     {
-      "label": "CHP Motion to Dismiss (Dec. 10, 2025)",
-      "path": "/documents/matter-01/CHP Motion To Dismiss.pdf"
+      "path": "/documents/matter-32/from-01/CHP Motion To Dismiss.pdf"
     },
     {
-      "label": "Opposition to Motion to Dismiss (Dec. 22, 2025)",
-      "path": "/documents/matter-01/Opposition for Motion to Dismiss.pdf"
+      "path": "/documents/matter-32/from-01/Opposition for Motion to Dismiss.pdf"
     },
     {
-      "label": "Reply — CHP (Jan. 5, 2026)",
-      "path": "/documents/matter-01/Reply - CHP.pdf"
+      "path": "/documents/matter-32/from-01/Reply - CHP.pdf"
     },
     {
-      "label": "Initial Scheduling Order (Oct. 28, 2025)",
-      "path": "/documents/matter-01/02_Initial_Scheduling_Order.pdf"
+      "path": "/documents/matter-32/from-01/02_Initial_Scheduling_Order.pdf"
     },
     {
-      "label": "CHP Arrest Report",
-      "path": "/documents/_shared/chp-nov1-2024/Arrest Report.pdf"
+      "path": "/documents/matter-33/incident/Arrest Report.pdf",
+      "label": "CHP Arrest Report"
     },
     {
-      "label": "CHP Officer's Statement — Chemical Test Admonition (DS 367) (Nov. 1, 2024)",
-      "path": "/documents/_shared/chp-nov1-2024/ds367 ngwanforbi f7953179.pdf"
+      "path": "/documents/matter-33/incident/ds367 ngwanforbi f7953179.pdf"
     },
     {
-      "label": "DMV Driver Record — Discovery Production (Dec. 4, 2024)",
-      "path": "/documents/_shared/chp-nov1-2024/DAD 2024-12-04.pdf"
+      "path": "/documents/matter-33/incident/DAD 2024-12-04.pdf"
     },
     {
-      "label": "DMV Notification of Discovery — APS Hearing Packet (Dec. 4, 2024)",
-      "path": "/documents/_shared/chp-nov1-2024/DS2044 Notification of Discovery 34739340.pdf"
+      "path": "/documents/matter-33/incident/DS2044 Notification of Discovery 34739340.pdf"
     },
     {
-      "label": "CHP Video Transcript (Exhibit A)",
-      "path": "/documents/_shared/chp-nov1-2024/Exhibit_A_CHP_Video_Transcript.pdf"
+      "path": "/documents/matter-33/incident/Exhibit_A_CHP_Video_Transcript.pdf"
     },
     {
-      "label": "Discovery Response",
-      "path": "/documents/_shared/chp-nov1-2024/Discovery-Response.pdf"
+      "path": "/documents/matter-33/incident/Discovery-Response.pdf",
+      "label": "Discovery Response"
     },
     {
-      "label": "Centerline Wage Reference",
-      "path": "/documents/matter-01/Centerline Wage Reference.pdf"
+      "path": "/documents/matter-33/incident/Centerline Wage Reference.pdf"
     },
     {
-      "label": "Notice of Change of Address (filed July 7, 2026)",
-      "path": "/documents/matter-01/Notice of Change of Address (July 7, 2026).pdf"
+      "path": "/documents/matter-32/from-01/Notice of Change of Address (July 7, 2026).pdf"
     },
     {
-      "label": "Plaintiff's Objections to Findings & Recommendations (Apr. 21, 2026)",
-      "path": "/documents/matter-01/Objections to FR - April 21 2026.pdf"
+      "path": "/documents/matter-32/from-01/Objections to FR - April 21 2026.pdf"
     },
     {
-      "label": "Notice of Supplemental Authority — Serrato Order (Jul. 7, 2026)",
-      "path": "/documents/matter-01/Notice of Supplemental Authority - Serrato Order - July 7 2026.pdf"
+      "path": "/documents/matter-32/from-01/Notice of Supplemental Authority - Serrato Order - July 7 2026.pdf"
     },
     {
-      "label": "Lawsuit Cover Sheet (E.D. Cal., May 27, 2025)",
-      "path": "/documents/matter-01/01_Lawsuit_Cover_Sheet.pdf"
+      "path": "/documents/matter-32/from-01/01_Lawsuit_Cover_Sheet.pdf"
     },
     {
-      "label": "Return of Service — proof of service on CHP defendants",
-      "path": "/documents/matter-01/08_Return_of_Service.pdf"
+      "path": "/documents/matter-32/from-01/08_Return_of_Service.pdf"
+    },
+    {
+      "path": "/documents/matter-32/from-01/Notice of Voluntary Dismissal Without Prejudice (Aug 11 2026).pdf",
+      "label": "Notice of Voluntary Dismissal Without Prejudice (executed Aug. 11, 2026; redated from the Aug. 7, 2026 draft; e-filed Aug. 15, 2026) — FRCP 41(a)(1)(A)(i); entire action",
+      "filed": true
     }
-  ],
-  "archived": false
+  ]
 }

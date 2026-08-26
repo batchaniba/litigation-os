@@ -2,8 +2,10 @@
 // ==========================================================
 // Build light matter summaries for the SPA shell bundle.
 //
-// Full prose (key_facts, procedural_status, damages, risk, evidence)
+// Full prose (status, key_facts, procedural_status, damages, risk, evidence)
 // and document lists stay in NN.json (lazy-loaded on expand/detail).
+// Document labels resolve through documents/registry.json (path is the id).
+// Shell badges use status_label / effectiveStatusLabel instead of status.
 // A slim document-index.json is generated for global search.
 //
 // Usage:
@@ -14,13 +16,19 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadMatters, MATTERS_DIR } from "./load-matters.mjs";
+import { loadRegistry, registryByPath, resolveDocumentRef } from "./lib/document-registry.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUT = path.join(MATTERS_DIR, "summaries.json");
 const DOC_INDEX = path.join(MATTERS_DIR, "document-index.json");
 const checkOnly = process.argv.includes("--check");
+const registry = loadRegistry();
+const registryPaths = registryByPath(registry);
 
 const HEAVY = new Set([
+  // Full procedural narrative — lazy-load with NN.json. Shell uses
+  // status_label / effectiveStatusLabel instead.
+  "status",
   "key_facts",
   "procedural_status",
   "damages",
@@ -45,11 +53,13 @@ function toDocIndex(matters) {
   const entries = [];
   for (const matter of matters) {
     for (const doc of matter.documents ?? []) {
-      if (!doc?.path || !doc?.label) continue;
+      if (!doc?.path) continue;
+      const resolved = resolveDocumentRef(doc, registryPaths);
+      if (!resolved?.label) continue;
       entries.push({
         matter: matter.number,
-        label: doc.label,
-        path: doc.path,
+        label: resolved.label,
+        path: resolved.path,
       });
     }
   }

@@ -4,7 +4,7 @@
   "case_no": "STK-CV-UF-2026-0001032",
   "court": "San Joaquin Sup. Ct.",
   "claims": "Fraud/Intentional Misrepresentation, Negligence (incl. Negligence Per Se), IIED, Intentional Interference w/ Prospective Econ. Adv., Bane Act (§52.1), Declaratory Relief, UCL (§17200)",
-  "status": "DISMISSED — San Joaquin Superior Court (Hon. George J. Abdallah, Jr.) confirmed the tentative ruling at the 07/15/2026, 9:00 a.m. hearing after oral argument and GRANTED Defendants' Demurrer to FAC WITHOUT LEAVE TO AMEND on failure-to-exhaust-administrative-remedies grounds; state court action disposed. $85,000 Global Settlement Offer REJECTED — SLB/Van Dine letter May 23, 2026; Document Production received and reviewed 07/09–10/2026 (Clinical Operational Manual, treatment manuals, employee handbook, homework/audit records, collateral notes, insurance policies). Dismissal supplies predicate facts for the NDCA complaint against HOPE (Matter 28).",
+  "status": "DISMISSED — demurrer to FAC sustained without leave to amend July 15, 2026 (Hon. George J. Abdallah, Jr.) on exhaustion grounds. $85,000 global demand rejected May 23, 2026. Dismissal supplies predicate facts for Matter 28 (NDCA HOPE complaint).",
   "status_label": "Dismissed — demurrer sustained w/o leave Jul. 15, 2026",
   "lifecycle": "dismissed",
   "proceeding": "state_civil",
@@ -26,7 +26,7 @@
     "Count 7 — UCL, Bus. & Prof. Code §17200 (against all defendants): blanket retention policy = unlawful business practice; false partial-homework reporting = unfair business practice; restitution of all fees wrongfully retained"
   ],
   "key_facts": "Matter 5 (FAC filed April 22, 2026) asserts seven state causes of action against HOPE Psychotherapy, Inc. and its Stockton site Director Katie Palacios (LMFT No. 44555, CASOMB-certified), sued individually and as a managing agent of HOPE under Civil Code §3294(b). The FAC drops False Imprisonment (original complaint) and adds Negligence Per Se, Declaratory Relief, and UCL §17200. The central theory is institutional fraud: HOPE represented at intake (March 5, 2021) — through materials, treatment contract, and verbal orientation — that it offered an individualized, achievable path to treatment completion, while concealing its blanket retention policy under which no parolee can ever complete treatment prior to parole discharge, regardless of clinical progress, compliance, or risk score. HOPE's own Executive Director of Clinical Training, Dr. Cristina Loree, admitted this policy under oath in In re Dwyer, No. SC-080355A (San Mateo County Super. Ct., Mar. 20, 2023) (Hill, J.), and the court found the policy 'vitiates the Legislature's directive' under Penal Code §3008(d)(2). HOPE continued applying the identical policy after Dwyer and after the April 17, 2025 effective date of 15 CCR §3574(f)(1), which requires treatment completion and parole discharge to be legally separate decisions. Financial incentive: each retained parolee generates ~$10,600/year in baseline group and CTM revenue; no fee for completion; discharge terminates the revenue. Key fraud incidents: (1) Clinician Pamela Akins, November 2022 group session: represented HOPE applied objective individualized criteria and Plaintiff had a meaningful path to completion; (2) January 2024 group session (clinician under Palacios's supervision): stated 'individuals are titrating and completing the HOPE program'; (3) June 2024 individual session: Palacios, through a clinician, falsely stated that no homework completed by Plaintiff had ever been found in HOPE's records — false, as Palacios herself admitted in an August 2025 video-recorded group session that HOPE routinely loses client homework packets; (4) CTM submissions via CDCR Form 3043 at each semi-annual CTM (February and August cycles, 2021–February 2026): Palacios submitted reports to Plaintiff's parole agents (Magana, Arestad, Acierto, Urrea, Long Moua #7472) and supervising agent Noguchi (#7284) characterizing Plaintiff as having 'partially completed homework packets,' 'partial participation,' 'not completed' treatment — all false, predetermined policy outputs rather than individualized clinical assessments. CDCR reliance: five separate parole agents each stated to Plaintiff in substance that 'HOPE controls — without sex-offender completion there will be no discharge from parole.' November 2025 Form 1502-DR incorporated HOPE's non-completion recommendation as the treatment-based predicate for 'Discharge Denied/No Action.' August 2025 CTM (retaliatory statements, Bane Act): Palacios stated in front of Agent Chow, Noguchi (#7284), and Derrick (#6910) that Plaintiff was 'disruptive during HOPE group sessions,' a 'ringleader,' his behavior 'abhorrent,' 'often disrespectful to [her] staff,' and characterized his polite demeanor at the CTM as an 'acting job'; added 'because when you start complaining then the other guys chime in.' FAC alleges these were retaliatory and defamatory, made to intimidate Plaintiff from complaining about treatment conditions. Economic harm: $32,447 lost in 2022 + $60,855 in 2023 + $16,106 in 2024 = $109,408 for 2022–2024, with continuing losses at ~$6,000/month, caused by mandatory HOPE attendance (GPS, curfew, geographic restrictions) incompatible with CDL long-haul work. Plaintiff forced to resign from United Road in January 2022; turned down dispatches for Keurig Dr Pepper, Tiger Lines LLC, US-1 Shorthaul, Lazer Spot Inc., and Centerline Drivers. Special relationship theory: HOPE was sole CASOMB-certified provider in Stockton region; CDCR delegated to HOPE exclusive authority over treatment-status determinations; HOPE knew its representations would be acted upon by CDCR; establishing duty of care under Giraldo v. Cal. Dep't of Corrections & Rehabilitation (2008) 168 Cal.App.4th 231. Discovery rule tolling: Plaintiff did not discover impossibility of completion until reviewing the Dwyer order in late 2025 — Dwyer was a San Mateo County habeas decision never provided to Plaintiff by HOPE or CDCR.",
-  "procedural_status": "Complaint filed February 10, 2026 in San Joaquin Superior Court (fee waiver approved). Palacios personally served February 24, 2026 (San Joaquin County Sheriff); POS-010 filed March 3, 2026. HOPE Psychotherapy Inc. served March 26, 2026 via executed NAR — service complete as to all defendants. Palacios's March 26 response deadline passed without appearance; parties stipulated to extend to April 27, 2026 (state case only). CCP §430.41(a) M&C email sent April 15, 2026 (9:09 AM) to Bryan Malone and Cynthia Lawrence (CC: Kim Schmitt, June Meinecke, Amber Krausse). April 22, 2026: First Amended Complaint filed (STK-CV-UF-2026-0001032), filed of right under CCP §472(a); stamped 2:55 PM, San Joaquin Superior Court. FAC filed April 22, 2026. May 12, 2026: Blaze Van Dine (SLB) emailed — taking over the matter for Bryan Malone; working on responses to Plaintiff's requests for production of documents, HIPAA, California Confidentiality of Medical Information Act, and California Patient Access to Health Record Act requests, which carry divergent response timelines; proposed unified production deadline of June 8, 2026 to focus on complete production. May 22, 2026: Discovery (Form DISC-001, Section 4a2) served on HOPE Psychotherapy, Inc. and Katie Palacios. Blaze Van Dine (SLB) filed Demurrer to FAC. Same day, Plaintiff filed and served: (1) Opposition to Demurrer to First Amended Complaint; (2) Declaration of Brendan Ngehsi Newanforbi in Support of Opposition to Demurrer; (3) Plaintiff's Request for Judicial Notice in Support of Opposition to Demurrer; (4) Plaintiff's Evidentiary Objections to Defendants' Request for Judicial Notice — all served on Defendants Katie Palacios and HOPE Psychotherapy, Inc. dba HOPE Program through SLB counsel at designated e-service address. Court confirmed Demurrer Hearing: July 15, 2026, 9:00 a.m. May 23, 2026: SLB (Van Dine) rejected the $85,000 global settlement demand (Matters 3, 5, 6) by letter — characterizes all three actions as without merit; argues demurrer demonstrates FAC fails to allege facts sufficient to state a claim and fails exhaustion requirements; states evidence will be overwhelming at trial; threatens vigorous defense and cross-matter discovery; advances a cross-case damages argument that Plaintiff's own sworn declaration in Newanforbi v. State of California (No. 2:25-cv-1460) pins economic damages (lost truck-driving employment) and emotional distress to the CHP DUI arrest, not to HOPE or Palacios. Note: SLB's letter also references Matter 6 (2:26-cv-0195) — which was voluntarily dismissed without prejudice on May 21, 2026 (two days before the letter); refiling preserved. June 8, 2026: Production of Discovery Deadline — Defendant Palacios filed Responses to Plaintiff's Requests for Admission, Set One (verified, signed, 30 requests); HOPE Psychotherapy filed draft responses (not yet formally served). Both responses follow a near-uniform pattern of boilerplate vagueness/overbreadth objections before answering, but the substantive answers underneath are directly relevant to the merits: Palacios ADMITS she held the Site Director/supervisory role, managed clinician Bernadette Tassone, attended every CTM concerning Plaintiff and never recommended him for a treatment-completion determination at any of them, made the 'disruptive,' 'ringleader,' and 'because when you start complaining then the other guys chime in' statements at the Aug. 2025 CTM, and offered Plaintiff no telehealth/evening/weekend accommodation for his CDL work — but DENIES making the 'abhorrent,' 'often disrespectful,' and 'acting job' statements also pled in the FAC, DENIES having personal authority to recommend/withhold/veto a completion determination, DENIES awareness of a HOPE policy retaining parolees for the full parole term, and DENIES that no parolee was ever recommended for completion before discharge (i.e., denies the blanket-retention framing in the abstract). HOPE's own (unserved draft) responses show the identical pattern: DENIES the blanket-retention-policy characterization and DENIES the aftercare phase is 'mandatory' while on active parole, yet ADMITS it recommended continued treatment and never a completion determination for Plaintiff at every CTM concerning him, and — most notably — ADMITS it did not modify its treatment-completion practices in any material respect after the April 17, 2025 effective date of 15 C.C.R. §3574(f)(1), the same regulatory amendment Defendants' own Reply later argued (July 7) was never properly quoted. This discovery record — obtained the same day as the RFP production discussed below, but independently of it — already supplied sworn, direct testimony on the exact Aug. 2025 CTM statements that item (7) below flags as absent from the documentary production. CMC before Hon. George J. Abdallah, Dept. 10A: October 13, 2026, 8:45 a.m. | July 7, 2026: Defendants filed Reply in Support of Demurrer (SLB/Van Dine) and supporting Declaration of Blaze Van Dine — lead argument: (A) alleged AI hallucination of 15 C.C.R. § 3574(f)(1) quoted language; (B) failure to exhaust administrative remedies under § 3723 / § 3480 et seq.; (C) no blanket retention policy established; (D) Palacios LMFT professional opinion insulates fraud allegations; (E) habeas prerequisite for liberty-condition money damages. Reply served by electronic service same day. Demurrer hearing imminent: July 15, 2026, 9:00 a.m., Dept. 10A. July 9–10, 2026: Defendants produced documents in response to Plaintiff's RFP (Set One) — HOPE's Clinical Operational Manual (Bates HOPE_000225–349), Maintenance Curriculum (350–434), Employee Handbook (435–485), Preparatory Treatment Manual (486–537), Clinical Director job description (538–542), Plaintiff's homework records and a March 2026 internal completion-tracking audit (Bates 105–224), collateral/contact notes (139–199), and HOPE's professional-liability/D&O insurance policies (Bates HOPE_000001–104). Review confirms: (1) the Clinical Operational Manual states verbatim (HOPE_000294) that '[t]he Aftercare Phase of treatment is designed to comply with state law requiring registered 290 offenders to maintain their connection with treatment for the duration of their term on community supervision,' and separately defines 'Discharge' to include simply 'Client completes their required parole/probation period' as a trigger distinct from clinical 'graduation' (HOPE_000318) — direct documentary support for the blanket-retention theory. (2) Graduation/completion determinations require an undefined 'team decision' and Clinical Director/supervisor approval on undefined criteria ('appropriate behavior,' 'measurable decrease in risk') — no numeric or otherwise objective threshold appears anywhere in the manual (HOPE_000294-295). (3) HOPE's CTM/attendance records use only 'present' or 'excused' categories — no 'partially completed' status exists anywhere in the produced manuals, meaning the 'partially completed' characterizations reported to CDCR do not track any defined internal HOPE status. (4) A March 2026 email chain shows CDCR Agent L. Moua confirming Plaintiff's March 31, 2026 absence was a 'technological error' on the dial-in line, yet HOPE was instructed to and did log it as a no-show (Bates HOPE_000142/194) — direct evidence supporting the false-reporting theory. (5) HOPE's internal March 2026 homework-completion tracking audit (Bates HOPE_000224) shows Block 1 of the Core Program 100% complete as of March 24, 2025, but substantial unfilled gaps elsewhere — 5 of 7 Preparatory modules and roughly 16 of 23 Block 2 modules show no completion date — a mixed record rather than a clean confirmation of full compliance. (6) Collateral notes document a custody gap from Nov. 1–12, 2024 (Bates HOPE_000184-186) coinciding with the CHP arrest underlying Matters 1 and 2, and date the grace-period revocation to Feb. 20, 2025 (Bates HOPE_000190) rather than April 2025 as pled in the FAC — a discrepancy that would have needed reconciling before further briefing, now moot: the case was dismissed WOLA on Jul. 15, 2026 and no further briefing in Matter 5 will occur; if the underlying fact matters to Matter 28, it should be re-checked there rather than assumed resolved. (7) No produced document cites PC §3008(d)(2) or 15 CCR §3574, no per-client billing/revenue figures were found (the insurance policies contain only coverage limits, not CDCR billing data), and none of the produced collateral notes reach the alleged August 2025 CTM statements ('disruptive,' 'ringleader,' etc.) — that material was not in this production and remains a target for follow-up discovery/motion to compel. (8) HOPE's insurance production confirms $1M/$5M professional liability coverage plus an undisclosed licensing-board-defense sublimit (Policy 067968, 2023–24) and $1M D&O/EPL coverage (2025–26) — relevant to collectability of judgment, not to liability. Note: the 12 underlying production PDFs were removed from this repository's public document store after review; the findings above (with Bates/page citations) are retained in this record, but the source files themselves are no longer hosted here. July 13, 2026: San Joaquin Superior Court posted its TENTATIVE RULING on the Demurrer: 'The court agrees with Defendants' analysis and the authorities cited in their Motion and Reply that exhaustion of administrative remedies herein is a jurisdictional requirement to the filing of Plaintiff's FAC. The court finds Plaintiff failed to meet this jurisdictional requirement prior to the filing of his FAC. Therefore, Defendants' Demurrer is GRANTED WITHOUT LEAVE TO AMEND' (Hon. George J. Abdallah, Jr.). Same day, Plaintiff emailed the court's civil courtroom clerk (Alicia Liechty, Dept. 10A) a Notice of Intent to Appear and Argue the tentative ruling at the July 15, 2026, 9:00 a.m. hearing, copying opposing counsel (Cynthia Lawrence, Bryan Malone, Blaze Van Dine, SLB@sims-law.net) to avoid any appearance of ex parte contact; the clerk confirmed receipt. Plaintiff's stated grounds for argument: (1) exhaustion of administrative remedies is not a jurisdictional bar to the private damages claims (fraud, negligence, IIED, Bane Act, UCL) against private defendants HOPE/Palacios, since this is a private damages action, not a writ challenging an administrative or parole decision; (2) 15 CCR §3574(e) expressly separates the Containment Team's review of treatment-program completion from parole discharge decisions, undermining the jurisdictional-exhaustion theory; (3) in the alternative, Plaintiff should be granted leave to amend if the Court is inclined to sustain the demurrer. Under California tentative-ruling procedure, this ruling is non-binding until confirmed at the hearing — Plaintiff has properly reserved his right to be heard. July 15, 2026: At the hearing, the Court heard oral argument and confirmed its tentative ruling, GRANTING Defendants' Demurrer to the FAC WITHOUT LEAVE TO AMEND on failure-to-exhaust-administrative-remedies grounds (Hon. George J. Abdallah, Jr.); the state court action is disposed. The dismissal resolves the state-court protective order's scope restriction and supplies the predicate facts underlying the NDCA complaint against HOPE (Matter 28).",
+  "procedural_status": "Complaint filed Feb. 10, 2026; FAC filed Apr. 22, 2026 (STK-CV-UF-2026-0001032). Demurrer briefed May–July 2026; hearing July 15, 2026. Court confirmed its tentative and granted the demurrer WOLA for failure to exhaust administrative remedies — disposing the state action. June 8 discovery (RFA responses + RFP production) supplied admissions and documentary support for the blanket-retention / CTM theories later carried into Matter 28; underlying production PDFs were removed from the public repository after review. $85,000 global settlement demand (Matters 3/5/6) rejected by SLB May 23, 2026. Detailed Bates findings and dated briefing beats live in timeline.json / Matter 28 risk.",
   "damages": "Compensatory: $109,408 documented CDL wage loss for 2022–2024 ($32,447 in 2022 + $60,855 in 2023 + $16,106 in 2024) plus ~$6,000/month continuing; costs of compliance with unlawful supervision conditions; non-economic damages for emotional distress, humiliation, anxiety, sleep disruption, and loss of liberty. Statutory: Civil Code §52.1 ($25,000 per Bane Act violation). Punitive: Civil Code §3294 — Palacios sued as managing agent enabling entity-level punitive damages against HOPE; conduct continued post-Dwyer (March 2023) and post-§3574 (April 2025). UCL restitution of all fees wrongfully retained by HOPE. Attorney's fees (Civ. Code §52.1(i); CCP §1021.5). Prejudgment and postjudgment interest.",
   "risk": "CRITICAL — July 13, 2026 tentative ruling threatens to end this case entirely: the court tentatively agrees with Defendants that failure to exhaust administrative remedies is a jurisdictional bar to the FAC and would GRANT the Demurrer WITHOUT LEAVE TO AMEND, which — if confirmed at the July 15 hearing — terminates all seven causes of action with no ability to replead. This is a tentative ruling only; Plaintiff has filed a timely notice of intent to appear and argue, and Plaintiff's strongest counter-argument (that exhaustion doctrine, designed for writs challenging administrative/parole decisions, does not apply to a private damages action against non-state-actor defendants HOPE/Palacios, reinforced by 15 CCR §3574(e)'s express separation of treatment-completion review from discharge decisions) was not addressed in the tentative's one-paragraph reasoning — a live opening for oral argument. If the tentative is confirmed, Plaintiff's fallback request for leave to amend becomes the only remaining avenue, and even that was denied in the tentative as posted. Below reflects the risk profile as it stood before this ruling; all of it is now contingent on surviving July 15. Markedly favorable risk profile: neither HOPE nor Palacios can invoke qualified immunity or sovereign immunity — both are private contractors. FAC strengthens the case on multiple axes: (1) Palacios sued as managing agent under §3294(b) enables corporate punitive damages against HOPE without requiring officer-level authorization separately; (2) Negligence Per Se under PC §3008(d)(2) and 15 CCR §3574(f)(1) shifts burden on breach element; (3) UCL §17200 claim adds restitution and injunctive relief with potential class-action reach for similarly situated parolees; (4) Declaratory Relief and permanent injunction provide equitable remedy independent of damages; (5) Discovery rule tolling addresses any limitations challenge — Dwyer was inaccessible to Plaintiff until late 2025. The August 2025 video-recorded admission by Palacios that HOPE routinely loses homework packets is near-dispositive on fraud scienter. HOPE's own Executive Director's sworn testimony in Dwyer establishes corporate knowledge of the unlawful policy from March 2023 forward. Continued application after Dwyer and after April 2025 regulatory amendments supports exemplary damages under §3294. HOPE is also exposed to state-actor liability under West v. Atkins in parallel federal Matter 6. Favorable findings in Matters 3, 5, or 6 create compounding collateral estoppel pressure across all proceedings. July 2026 document production materially advances and complicates the case. HOPE's own Clinical Operational Manual verbatim confirms the disputed 'Aftercare Phase' language tying continued treatment to the full term of community supervision, and separately defines a parole-term-expiration 'Discharge' distinct from clinical 'graduation' — direct documentary support undercutting any defense argument that completion was always individually achievable. HOPE's own records also show a no-show logged despite an acknowledged 'technological error,' and no formal 'partially completed' status category exists anywhere in HOPE's own tracking taxonomy, undermining the accuracy of HOPE's CTM reporting to CDCR. Countervailing considerations: HOPE's internal March 2026 homework audit shows genuine, unresolved completion gaps (not merely lost paperwork) in the Preparatory phase and Block 2 of the Core Program, which the defense will likely argue shows non-completion was substantively real rather than fabricated; a Feb. 20, 2025 collateral note timestamps the grace-period revocation roughly two months earlier than pled in the FAC, a discrepancy that should be reconciled; and an October 2023 third-party polygraph note records a 'significant response' to sensitive questions (which Plaintiff denied) that the defense may attempt to use, though it predates the retaliation-period allegations by nearly two years and is inconclusive on its face. The Preparatory Treatment Manual and Employee Handbook show HOPE does use objective, countable completion criteria for the initial Prep phase (≤2 excused absences, completed homework, presented assignments) — narrowing the 'wholly subjective system' characterization to the Maintenance/Core phases specifically, where graduation criteria remain genuinely undefined and team/CD-discretion-based. No document produced to date supports the ~$10,600/year per-client revenue figure or any CDCR billing/incentive structure — that evidence, if it exists, has not yet been produced and should be a discovery-compulsion target.",
   "evidence": [
@@ -50,151 +50,114 @@
   ],
   "documents": [
     {
-      "label": "First Amended Complaint (filed Apr. 22, 2026)",
       "path": "/documents/matter-05/FAC_STK-CV-UF-2026-1032.pdf"
     },
     {
-      "label": "BBS Complaint — Palacios LMFT 44555",
       "path": "/documents/matter-05/BBS Complaint Palacios LMFT 44555.pdf"
     },
     {
-      "label": "CASOMB Complaint — HOPE Program",
       "path": "/documents/matter-05/CASOMB Complaint - HOPE Program.pdf"
     },
     {
-      "label": "CASOMB Complaint Continuation Sheet",
       "path": "/documents/matter-05/CASOMB Complaint Continuation Sheet .pdf"
     },
     {
-      "label": "Fee Waiver (approved)",
       "path": "/documents/matter-05/Fee Waiver - Newanforbi v. Palacios, et al..pdf"
     },
     {
-      "label": "Original Summons + Complaint (Feb. 10, 2026)",
       "path": "/documents/matter-05/Summons + Complaint - Newanforbi v. Palacios, et al. .pdf"
     },
     {
-      "label": "Defendants' Demurrer to FAC — Van Dine/SLB (May 22, 2026)",
       "path": "/documents/matter-05/Demurrer-(NEWpal) (052226)).pdf"
     },
     {
-      "label": "Declaration ISO Demurrer — Van Dine/SLB (May 22, 2026)",
       "path": "/documents/matter-05/Demurrer-Decl (NEWpal) (052226)).pdf"
     },
     {
-      "label": "Points and Authorities ISO Demurrer — Van Dine/SLB (May 22, 2026)",
       "path": "/documents/matter-05/Demurrer-PO (NEWpal) (052226)).pdf"
     },
     {
-      "label": "Defendants' RJN ISO Demurrer — Van Dine/SLB (May 22, 2026)",
       "path": "/documents/matter-05/Demurrer-RJN (NEWpal) (052226)).pdf"
     },
     {
-      "label": "Plaintiff's Opposition to Demurrer to FAC (May 22, 2026)",
       "path": "/documents/matter-05/Opposition to Demurrer Pal.pdf"
     },
     {
-      "label": "Declaration of Brendan Ngehsi Newanforbi ISO Opposition (May 22, 2026)",
       "path": "/documents/matter-05/Declaration Pal ISO Opposition.pdf"
     },
     {
-      "label": "Plaintiff's RJN ISO Opposition to Demurrer (May 22, 2026)",
       "path": "/documents/matter-05/RJN Pal ISO Opposition.pdf"
     },
     {
-      "label": "Plaintiff's Evidentiary Objections to Defendants' RJN (May 22, 2026)",
       "path": "/documents/matter-05/Evidentiary Pal Objections to Defendants RJN.pdf"
     },
     {
-      "label": "Discovery — DISC-001 Sec. 4a2 to HOPE Psychotherapy (May 22, 2026)",
       "path": "/documents/matter-05/DISC001_SEC_4a2 HOPE1.pdf"
     },
     {
-      "label": "Discovery — DISC-001 Sec. 4a2 to Palacios (May 22, 2026)",
       "path": "/documents/matter-05/DISC001_SEC_4a2 Palacios .pdf"
     },
     {
-      "label": "Defendant Palacios' Responses to Plaintiff's Requests for Admission, Set One (filed June 8, 2026)",
       "path": "/documents/matter-05/PALACIOS resp plntf RFA1 (NEWpal) (060826).pdf"
     },
     {
-      "label": "HOPE Psychotherapy's Responses to Plaintiff's Requests for Admission, Set One — DRAFT (June 8, 2026)",
       "path": "/documents/matter-05/DRFT HOPE resp plntf RFA1.pdf"
     },
     {
-      "label": "Palacios' Responses to Form Interrogatories, Set One (June 15, 2026)",
       "path": "/documents/matter-05/PALACIOS resp plntf FROGS1 (NEWpal) (061526).pdf"
     },
     {
-      "label": "Palacios' Responses to Requests for Production, Set One (June 15, 2026)",
       "path": "/documents/matter-05/PALACIOS resp plntf RFP1 (NEWpal) (061526).pdf"
     },
     {
-      "label": "Palacios' Responses to Special Interrogatories, Set One (June 12, 2026)",
       "path": "/documents/matter-05/PALACIOS resp plntf SROGS1 (NEWpal) (061226).pdf"
     },
     {
-      "label": "HOPE's Responses to Form Interrogatories, Set One (June 15, 2026)",
       "path": "/documents/matter-05/HOPE resp plntf FROGS1 (NEWpal) (061526).pdf"
     },
     {
-      "label": "HOPE's Responses to Requests for Production, Set One (June 15, 2026)",
       "path": "/documents/matter-05/HOPE resp plntf RFP1 (newpal) (061526).pdf"
     },
     {
-      "label": "HOPE's Responses to Special Interrogatories, Set One (June 15, 2026)",
       "path": "/documents/matter-05/HOPE resp plntf SROGS1 (NEWpal) (061526).pdf"
     },
     {
-      "label": "Plaintiff's Requests for Admission to Defendants (June 18, 2026)",
       "path": "/documents/matter-05/RFA to Pl (NEWpal) (061826).pdf"
     },
     {
-      "label": "Plaintiff's Requests for Production to Defendants (June 18, 2026)",
       "path": "/documents/matter-05/RFP to Pl (NEWpal) (061826).pdf"
     },
     {
-      "label": "Plaintiff's Special Interrogatories to Defendants (June 18, 2026)",
       "path": "/documents/matter-05/SROGS to Pl (NEWpal) (061826).pdf"
     },
     {
-      "label": "Plaintiff's Special Interrogatories, Set Two to HOPE (June 2026)",
       "path": "/documents/matter-05/SROG Set Two HOPE NEWpal .pdf"
     },
     {
-      "label": "Plaintiff's Special Interrogatories, Set Two to Palacios (June 2026)",
       "path": "/documents/matter-05/SROG Set Two PALACIOS NEWpal .pdf"
     },
     {
-      "label": "Stipulated Protective Order (SIGNED June 13–14, 2026)",
       "path": "/documents/matter-05/Stipulated Protective Order SIGNED.pdf"
     },
     {
-      "label": "Meet and Confer Letter re: Deficient Discovery Responses (June 16, 2026)",
       "path": "/documents/matter-05/Meet and Confer Letter 061626.pdf"
     },
     {
-      "label": "Notice of Change of Address (filed July 7, 2026)",
       "path": "/documents/matter-05/Notice of Change of Address (July 7, 2026).pdf"
     },
     {
-      "label": "Defendants' Reply in Support of Demurrer to FAC — Van Dine/SLB (July 7, 2026)",
       "path": "/documents/matter-05/Demurrer-Reply (NEWpal) (070726).pdf"
     },
     {
-      "label": "Declaration of Blaze Van Dine ISO Defendants' Reply — SLB (July 7, 2026)",
       "path": "/documents/matter-05/Demurrer-Reply Decl (NEWpal) (070726).pdf"
     },
     {
-      "label": "Tentative Ruling on Demurrer — GRANTED WITHOUT LEAVE TO AMEND (posted July 13, 2026; hearing July 15, 2026)",
       "path": "/documents/matter-05/Tentative Ruling on Demurrer (posted July 13, 2026, hearing July 15, 2026).pdf"
     },
     {
-      "label": "Plaintiff's Notice of Intent to Appear and Argue Tentative Ruling (July 13, 2026)",
       "path": "/documents/matter-05/Plaintiff's Notice of Intent to Appear and Argue Tentative Ruling (July 13, 2026).pdf"
     },
     {
-      "label": "Order Sustaining Demurrer to FAC Without Leave to Amend — Hon. George J. Abdallah, Jr. (July 15, 2026, confirming tentative ruling; case disposed)",
       "path": "/documents/matter-05/Order Sustaining Demurrer to FAC WOLA - Jul 15 2026.pdf"
     }
   ]

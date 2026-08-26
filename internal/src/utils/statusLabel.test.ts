@@ -10,14 +10,10 @@ import {
   postureEventScore,
 } from "./statusLabel";
 import type { TimelineEvent } from "../types/portfolio";
+import { matterRefsInclude } from "./matterRefs.js";
 
 function eventsFor(matterNumber: number): TimelineEvent[] {
-  return timeline.filter((event) =>
-    event.matters
-      .split(",")
-      .map((value) => Number(value.trim()))
-      .includes(matterNumber),
-  );
+  return timeline.filter((event) => matterRefsInclude(event.matters, matterNumber));
 }
 
 describe("statusLabel derivation", () => {
@@ -37,9 +33,20 @@ describe("statusLabel derivation", () => {
   });
 
   it("derives default prove-up and CMC dates from upcoming hearings", () => {
-    expect(deriveStatusLabel(cases.find((item) => item.number === 12)!, { events: eventsFor(12) })).toBe(
-      "Default prove-up — Aug. 12, 2026",
-    );
+    // Real portfolio data (both the matter's phase and its timeline events) keeps
+    // moving, so pinning this to Matter 12's live record would make the test rot
+    // every time its posture changes. Use a fully synthetic matter + event to
+    // isolate the "default" phase + hearing → "Default prove-up — <date>"
+    // behavior on its own.
+    const defaultMatter = { ...cases.find((item) => item.number === 12)!, phase: "default" as const };
+    const proveUp = {
+      date: "Dec. 1, 2099",
+      event: "Default prove-up hearing — Matter 12",
+      type: "hearing",
+      matters: [12],
+      upcoming: true,
+    } as TimelineEvent;
+    expect(deriveStatusLabel(defaultMatter, { events: [proveUp] })).toBe("Default prove-up — Dec. 1, 2099");
     expect(deriveStatusLabel(cases.find((item) => item.number === 24)!, { events: eventsFor(24) })).toContain(
       "CMC Sep. 15, 2026",
     );
@@ -55,7 +62,18 @@ describe("statusLabel derivation", () => {
   });
 
   it("keeps waiting phases from collapsing to an old Filed/Served date", () => {
-    expect(deriveStatusLabel(cases.find((item) => item.number === 1)!, { events: eventsFor(1) })).toBe("F&R pending");
+    // Synthetic fixture — Matter 1 itself was voluntarily dismissed (terminal
+    // lifecycle) Aug. 15, 2026, so it can no longer stand in for a live
+    // "F&R pending" matter without this test rotting on every posture change.
+    const frPendingMatter = { number: 1, lifecycle: "active" as const, phase: "fr_pending" as const };
+    const filedEvent = {
+      date: "May. 27, 2025",
+      event: "Complaint filed",
+      type: "filing",
+      matters: [1],
+      upcoming: false,
+    } as TimelineEvent;
+    expect(deriveStatusLabel(frPendingMatter, { events: [filedEvent] })).toBe("F&R pending");
     expect(deriveStatusLabel(cases.find((item) => item.number === 19)!, { events: eventsFor(19) })).toBe(
       "Under submission",
     );
@@ -77,19 +95,40 @@ describe("statusLabel derivation", () => {
     }
   });
 
+  it("does not let a contingent SOL deadline make a waiting phase look scheduled", () => {
+    // Synthetic fixture for the same reason as above — Matter 1 is now
+    // dismissed/terminal and can't exercise the "waiting phase" branch.
+    const matter = { number: 1, lifecycle: "active" as const, phase: "fr_pending" as const };
+    const filedEvent = {
+      date: "May. 27, 2025",
+      event: "Complaint filed",
+      type: "filing",
+      matters: [1],
+      upcoming: false,
+    } as TimelineEvent;
+    const solDeadline = {
+      date: "Nov. 1, 2026",
+      event: "CCP §335.1 two-year statute of limitations (computed) — Matter 1",
+      type: "deadline",
+      matters: [1],
+      upcoming: true,
+    } as TimelineEvent;
+    expect(deriveStatusLabel(matter, { events: [filedEvent, solDeadline] })).toBe("F&R pending");
+  });
+
   it("scores meet-and-confer below posture hearings", () => {
     const hearing = {
       date: "Aug. 28, 2026",
       event: "Demurrer Hearing — Matter 20",
       type: "hearing",
-      matters: "20",
+      matters: [20],
       upcoming: true,
     } as TimelineEvent;
     const chore = {
       date: "Aug. 21, 2026",
       event: "Meet-and-confer deadline — Matter 20",
       type: "deadline",
-      matters: "20",
+      matters: [20],
       upcoming: true,
     } as TimelineEvent;
     expect(postureEventScore(hearing, "demurrer")).toBeGreaterThan(postureEventScore(chore, "demurrer"));

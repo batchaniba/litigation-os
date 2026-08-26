@@ -1,3 +1,32 @@
+/* All three faces are self-hosted. Cormorant Garamond and DM Sans used to come
+   from fonts.googleapis.com via a render-blocking <link>, which cost a DNS +
+   TLS + CSS round trip to one third-party origin and then a second hop to
+   fonts.gstatic.com for the files — all in front of first paint. Bundled here
+   they resolve on the connection that already delivered this stylesheet.
+
+   Both are variable fonts spanning the 400–700 the portfolio uses, so one file
+   per family covers every weight. Latin subset only: the entire codebase
+   contains exactly one non-ASCII letter ("à", inside U+0000-00FF), and the
+   punctuation it leans on — em dash, section sign, en dash, middle dot — is
+   all within the range below. */
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("../assets/fonts/CormorantGaramond-latin.woff2") format("woff2");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("../assets/fonts/DMSans-latin.woff2") format("woff2");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 @font-face {
   font-family: "Cloister Black";
   src: url("../assets/fonts/CloisterBlack.woff2") format("woff2");
@@ -61,6 +90,13 @@
   --aggregate-card-text: white;
   --damages-active-bg: #1a2a49;
   --damages-inactive-bg: #162034;
+  /* Severity / status. The only colours in the cross-matter section that carry
+     meaning, so they are the only ones it is allowed to use. */
+  --sev-high: #f87171;
+  --sev-high-bg: rgb(248 113 113 / 16%);
+  --sev-ok: #34d399;
+  --sev-ok-bg: rgb(52 211 153 / 14%);
+  --sev-low: rgb(148 163 184 / 45%);
 }
 
 .app-shell.light {
@@ -104,11 +140,19 @@
   --aggregate-card-text: #0f172a;
   --damages-active-bg: #eef2f9;
   --damages-inactive-bg: #ffffff;
+  --sev-high: #dc2626;
+  --sev-high-bg: rgb(220 38 38 / 9%);
+  --sev-ok: #059669;
+  --sev-ok-bg: rgb(5 150 105 / 9%);
+  --sev-low: rgb(100 116 139 / 40%);
 }
 
 * { box-sizing: border-box; }
 html { min-width: 320px; }
+/* Painted by the inline script in index.html before React mounts, so the shell
+   never flashes the wrong ground. .app-shell owns the palette from then on. */
 body { margin: 0; min-width: 320px; min-height: 100vh; min-height: 100dvh; background: #0f1a2e; }
+html[data-theme="light"] body { background: #f0f4f8; }
 button, input { font: inherit; }
 a { color: inherit; }
 
@@ -160,8 +204,22 @@ a { color: inherit; }
 .firm-external-hint { opacity: 0; transform: translateY(-2px); transition: opacity .15s ease, transform .15s ease; color: var(--gold); font-size: 8px; font-weight: 700; letter-spacing: .5px; line-height: 1.5; text-transform: uppercase; }
 .firm-link:hover .firm-external-hint { opacity: 1; transform: translateY(0); }
 .legacy-counsel-names { color: #495467; text-align: right; font-family: var(--font-sans); font-size: 10px; font-weight: 600; line-height: 1.5; }
-.legacy-garcia-logo { width: 130px; height: 44px; object-fit: contain; object-position: right center; }
-.legacy-dag-logo { width: 64px; height: 64px; object-fit: cover; border-radius: 50%; }
+/* Fixed boxes for every theme — dark/light artwork may differ in aspect ratio,
+   but the header must not reflow when the theme toggle swaps the src.
+   Garcia's box is intentionally narrower than its ~5.88:1 asset ratio: at the
+   natural width (259px) it renders over twice as wide as the SLB mark next to
+   it. object-fit: contain already letterboxes any box that doesn't match the
+   asset's ratio — same mechanism this rule relies on for SLB and DAG — so
+   this box is sized to the rendered wordmark (~115px, ~15% past SLB's ~98px
+   ink, per feedback that exact parity read as too small) rather than to the
+   asset's full aspect ratio. */
+.firm-logo { flex-shrink: 0; display: block; object-fit: contain; object-position: right center; }
+.legacy-kco-logo { width: 115px; height: 37px; }
+.legacy-azimov-logo { width: 52px; height: 52px; }
+.legacy-slb-logo { width: 118px; height: 62px; }
+.legacy-garcia-logo { width: 115px; height: 39px; }
+.legacy-mhs-logo { width: 116px; height: 24px; }
+.legacy-dag-logo { width: 64px; height: 64px; object-fit: cover; border-radius: 50%; object-position: center; }
 .legacy-header-controls { display: flex; flex: 1 1 100%; flex-direction: column; align-items: stretch; gap: 8px; }
 .legacy-header-actions { display: flex; align-items: center; justify-content: flex-end; gap: var(--header-action-gap); }
 .legacy-search-trigger { display: flex; align-items: center; justify-content: space-between; gap: 18px; min-width: 240px; min-height: var(--header-theme-size); border: 1px solid; border-radius: 8px; padding: 6px 10px 6px 13px; cursor: pointer; font-family: var(--font-sans); font-size: 12px; text-align: left; }
@@ -170,7 +228,11 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
 .legacy-nav-menu-toggle { display: none; align-items: center; justify-content: center; gap: 8px; min-height: 38px; padding: 8px 12px; border: 1px solid rgb(200 168 75 / 35%); border-radius: 8px; background: rgb(200 168 75 / 8%); color: var(--gold); font-family: var(--font-sans); font-size: 12px; font-weight: 700; letter-spacing: .4px; cursor: pointer; }
 .legacy-nav-menu-toggle[aria-expanded="true"] { background: rgb(200 168 75 / 16%); }
 .legacy-navigation { display: flex; gap: 4px; flex-wrap: nowrap; width: 100%; }
-.legacy-nav-link { flex: 1 1 0; min-width: 0; text-align: center; padding: 9px 4px; border-radius: 6px; font-family: var(--font-sans); font-size: 13px; font-weight: 600; letter-spacing: .2px; white-space: nowrap; text-decoration: none; cursor: pointer; transition: all .2s; }
+/* flex-basis auto rather than 0: with 1 1 0 every link got an identical 1/11th
+   share, so "Judicial Opinions" was allotted 99px for 116px of text and lost
+   its tail while "Damages" sat in whitespace. Sizing from content lets the long
+   labels take the room they need and shares the remainder proportionally. */
+.legacy-nav-link { flex: 1 1 auto; min-width: 0; text-align: center; padding: 9px 4px; border-radius: 6px; font-family: var(--font-sans); font-size: 13px; font-weight: 600; letter-spacing: .2px; white-space: nowrap; text-decoration: none; cursor: pointer; transition: all .2s; }
 .legacy-deadline-row { max-width: 1200px; margin: 0 auto; padding: 10px 24px; display: flex; align-items: center; justify-content: center; gap: 28px; flex-wrap: wrap; position: relative; }
 .legacy-deadline-label { color: var(--gold); font-family: var(--font-sans); font-size: 10px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; white-space: nowrap; }
 .legacy-deadline-display { display: flex; align-items: center; justify-content: center; gap: 28px; flex-wrap: wrap; }
@@ -187,7 +249,6 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
 .route-loading, .empty-state, .error-state { display: grid; place-items: center; min-height: 240px; padding: 32px; text-align: center; font-family: var(--font-sans); }
 .route-loading::before { content: ""; width: 24px; height: 24px; border: 2px solid rgb(200 168 75 / 25%); border-top-color: var(--gold); border-radius: 50%; animation: spin .8s linear infinite; }
 .back-link { color: var(--gold); font-family: var(--font-sans); font-size: 13px; font-weight: 700; text-decoration: none; }
-.detail-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
 .detail-section { margin-top: 22px; }
 .detail-label { color: var(--gold); font-family: var(--font-sans); font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px; }
 .detail-copy { font-family: var(--font-sans); font-size: 13px; line-height: 1.65; margin: 0; }
@@ -421,8 +482,7 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
 .save-view-form button, .matter-actions button { border: 1px solid rgb(200 168 75 / 35%); border-radius: 6px; background: rgb(200 168 75 / 10%); color: var(--gold); cursor: pointer; padding: 7px 10px; font-family: var(--font-sans); font-size: 10px; font-weight: 700; }
 .save-view-form button:disabled { cursor: not-allowed; opacity: .4; }
 .sort-control { display: flex; align-items: center; gap: 8px; white-space: nowrap; font-family: var(--font-sans); font-size: 10px; text-transform: uppercase; }
-.matter-actions { display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex-wrap: wrap; margin-top: -24px; }
-.matter-actions a { color: var(--gold); font-family: var(--font-sans); font-size: 10px; font-weight: 700; text-decoration: none; }
+.matter-actions { display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex-wrap: wrap; }
 .matter-summary { display: grid; grid-template-columns: .8fr 1.4fr .7fr 1.4fr; gap: 0; margin: 0 0 26px; overflow: hidden; border: 1px solid var(--card-border); border-radius: 10px; background: var(--card-bg); }
 .matter-summary-item { min-width: 0; padding: 14px 16px; border-right: 1px solid rgb(148 163 184 / 15%); font-family: var(--font-sans); font-size: 11px; line-height: 1.5; }
 .matter-summary-item:last-child { border-right: 0; }
@@ -487,7 +547,6 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
 .dashboard-jurisdiction-count { color: var(--heading); font-family: "Cormorant Garamond", Georgia, serif; font-size: 24px; font-weight: 700; }
 
 /* Matter detail */
-.matter-detail-header { margin: 22px 0; padding-bottom: 20px; border-bottom: 1px solid var(--card-border); }
 .matter-detail-title { margin: 0 0 8px; color: var(--heading); font-size: 32px; }
 .detail-copy-secondary { color: var(--secondary-text); }
 .detail-copy-muted { color: var(--muted-text); }
@@ -503,6 +562,49 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
 .document-group { background: var(--card-bg); border-color: var(--card-border); }
 .document-list a { color: var(--secondary-text); }
 .document-type { color: var(--gold); }
+
+/* Matter detail page shell.
+   The page used to be a flat run of labelled prose sitting straight on the
+   background — the only page in the app that wasn't panelled. Everything below
+   is scoped to .matter-page so the shared .detail-* classes keep behaving as
+   they do on the matters list, the cross-matter tab and the deadline
+   calculator, which all use them too. */
+.matter-page { display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 0 32px; align-items: start; }
+.matter-page-back { grid-column: 1 / -1; justify-self: start; margin-bottom: 20px; }
+.matter-page-main { display: flex; flex-direction: column; gap: 20px; min-width: 0; }
+
+.matter-rail { position: sticky; top: 20px; }
+.matter-rail .detail-label { padding-left: 12px; }
+.matter-rail ul { display: flex; flex-direction: column; gap: 2px; margin: 0; padding: 0; list-style: none; }
+.matter-rail a { display: block; padding: 7px 10px; border-left: 2px solid var(--card-border); color: var(--muted-text); font-family: var(--font-sans); font-size: 12px; font-weight: 600; text-decoration: none; transition: color .15s ease, border-color .15s ease, background .15s ease; }
+.matter-rail a:hover, .matter-rail a:focus-visible { border-left-color: var(--gold); background: rgb(200 168 75 / 8%); color: var(--gold); }
+
+/* Same card recipe as .dashboard-stat-card / .dashboard-panel. */
+.matter-hero, .matter-page .matter-panel, .matter-page .xm-panel { overflow: hidden; padding: 24px; border: 1px solid var(--card-border); border-radius: var(--radius-card); background: var(--card-bg); scroll-margin-top: 20px; }
+
+.matter-hero { padding-bottom: 0; }
+.matter-hero-top { display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 20px; }
+/* Long captions would otherwise claim the whole row on their max-content width
+   and bump the actions onto a line of their own. */
+.matter-hero-identity { flex: 1 1 340px; min-width: 0; }
+.matter-hero-top .matter-actions { flex: 0 0 auto; }
+/* The at-a-glance strip becomes the hero's footer rather than a second box
+   stacked under it saying closely related things. */
+.matter-hero .matter-summary { margin: 22px -24px 0; border-width: 1px 0 0; border-radius: 0; background: var(--deep-bg); }
+.matter-page .matter-detail-title { margin: 0 0 8px; font-size: 30px; line-height: 1.15; }
+.matter-page .matter-detail-badges { margin-top: 16px; }
+
+.matter-panel-title, .matter-page .xm-panel > .detail-label { position: relative; margin: 0; padding-left: 12px; color: var(--heading); font-family: var(--font-sans); font-size: 15px; font-weight: 700; letter-spacing: .4px; text-transform: none; }
+.matter-panel-title::before, .matter-page .xm-panel > .detail-label::before { content: ""; position: absolute; inset: 2px auto 2px 0; width: 3px; border-radius: 2px; background: var(--gold); }
+
+.matter-facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0 24px; }
+.matter-page .detail-section { margin-top: 20px; }
+.matter-page .detail-copy { font-size: 14px; }
+.matter-page .detail-label { font-size: 11px; letter-spacing: 1.6px; }
+/* Cards are spaced by the main column's flex gap, so they carry no margin of
+   their own. Must stay after the .detail-section rule above — .xm-panel is also
+   a .detail-section, and the two selectors have equal specificity. */
+.matter-page-main > .matter-hero, .matter-page-main > .matter-panel, .matter-page-main > .xm-panel { margin: 0; }
 
 /* Service tracker (matter detail) */
 .service-tracker { margin-top: 18px; }
@@ -578,6 +680,61 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
   .coverage-tower-panel .coverage-tower-source { color: #374151 !important; }
   .coverage-tower-panel .coverage-tower-bar { border: 0.5pt solid #6b7280; background: white !important; }
   .coverage-tower-panel .coverage-tower-bar-fill { background: #111827 !important; }
+
+  /* A printed matter page is a document taken into a conference, not a web
+     page: drop the rail and the card chrome and let the sections flow. */
+  .matter-page { display: block; }
+  .matter-page-back { display: none; }
+  .matter-hero, .matter-page .matter-panel, .matter-page .xm-panel {
+    overflow: visible;
+    break-inside: avoid;
+    margin: 0 0 18px !important;
+    padding: 0;
+    border: 0;
+    background: none !important;
+  }
+  .matter-hero .matter-summary { margin: 16px 0 0; border: 1pt solid #9ca3af; background: none !important; }
+  .matter-hero .matter-summary-item { border-right-color: #9ca3af; }
+
+  /* The theme tokens are all light-on-dark, and `color` on #main-content can't
+     reach descendants that declare their own. Everything that carries a colour
+     of its own has to be restated for paper. */
+  .matter-page .matter-detail-title,
+  .matter-page .detail-copy,
+  .matter-page .matter-summary-value,
+  .matter-page .matter-summary-value.accent,
+  .matter-page .xm-peer-title,
+  .matter-page .xm-exposure-label,
+  .matter-page .xm-foundation-label,
+  .matter-page .xm-party-name,
+  .matter-page .document-list a { color: #111827 !important; }
+  .matter-page .detail-label,
+  .matter-panel-title,
+  .matter-page .xm-panel > .detail-label,
+  .matter-page .xm-subhead,
+  .matter-page .xm-relationship,
+  .matter-page .xm-sources { color: #374151 !important; }
+  /* Damages and risk stay distinguishable on paper without the neon. */
+  .matter-page .matter-detail-damages { color: #065f46 !important; }
+  .matter-page .matter-detail-risk { color: #92400e !important; }
+  .matter-page .matter-detail-pill,
+  .matter-page .xm-kind,
+  .matter-page .xm-matter-chip { border: 0.5pt solid #9ca3af !important; background: none !important; color: #111827 !important; }
+  .matter-page .document-group { border-color: #9ca3af; background: none !important; }
+  .matter-page .document-group > summary,
+  .matter-page .document-type { color: #374151 !important; }
+  /* Force every disclosure open on paper. A printed matter must not be missing
+     its foundation and parties, nor document groups 2..n, just because they are
+     collapsed on screen. */
+  .matter-page details > summary { list-style: none; }
+  .matter-page details > summary::-webkit-details-marker { display: none; }
+  .matter-page details > *:not(summary) {
+    display: block !important;
+    content-visibility: visible !important;
+  }
+  .xm-reference > summary { display: none !important; }
+  .matter-page .xm-peer, .matter-page .xm-exposure { break-inside: avoid; }
+  .matter-page .xm-severity, .matter-page .xm-sources li::before { color: #374151 !important; }
 }
 
 @media (max-width: 1180px) {
@@ -593,14 +750,28 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
 
 @media (max-width: 980px) {
   main table { display: block; max-width: 100%; overflow-x: auto; }
+
+  /* The rail stops being a rail: it turns into a scrollable chip row above the
+     hero, so the section jumps survive on a tablet or phone. */
+  .matter-page { display: block; }
+  .matter-page-back { display: inline-block; }
+  .matter-rail { position: static; margin-bottom: 16px; }
+  .matter-rail .detail-label { padding-left: 0; }
+  .matter-rail ul { flex-direction: row; gap: 8px; overflow-x: auto; padding-bottom: 4px; }
+  .matter-rail a { flex: 0 0 auto; padding: 6px 12px; border: 1px solid var(--card-border); border-radius: 999px; white-space: nowrap; }
+  .matter-rail a:hover, .matter-rail a:focus-visible { border-color: var(--gold); }
+
   .matter-summary { grid-template-columns: 1fr 1fr; }
   .matter-summary-item:nth-child(2) { border-right: 0; }
   .matter-summary-item { border-bottom: 1px solid rgb(148 163 184 / 15%); }
   .matter-summary-item:nth-last-child(-n+2) { border-bottom: 0; }
 }
 
-@media (max-width: 760px) {
-  :root { --space-page: 16px; }
+/* Everything the header needs to stop being a desktop row. This used to start
+   at 760px, which left 761-980px with no treatment at all: .legacy-opposing-counsel
+   is flex-shrink: 0, so the header row could not compress and dragged the whole
+   page ~177px wider than the viewport on tablets and small laptops. */
+@media (max-width: 980px) {
   .legacy-header-inner {
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
@@ -672,14 +843,18 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
     align-items: center;
     width: auto;
   }
-  .firm-link .firm-logo { height: 44px !important; width: auto; max-width: min(46vw, 168px); }
-  .legacy-garcia-logo { height: 36px !important; object-position: right center; }
-  .legacy-dag-logo { width: 44px !important; height: 44px !important; max-width: none; }
+  .legacy-kco-logo { width: 83px; height: 27px; }
+  .legacy-azimov-logo { width: 38px; height: 38px; }
+  .legacy-slb-logo { width: 84px; height: 44px; }
+  /* Same box-narrower-than-asset-ratio letterbox as the desktop rule, scaled
+     down by the same ~0.71 factor SLB's own box shrinks by at this breakpoint. */
+  .legacy-garcia-logo { width: 83px; height: 28px; }
+  .legacy-mhs-logo { width: 83px; height: 17px; }
+  .legacy-dag-logo { width: 44px; height: 44px; }
   :root { --header-action-gap: 10px; }
   .legacy-header-actions { width: 100%; justify-content: stretch; }
   .legacy-search-trigger { min-width: 0; min-height: 44px; flex: 1; }
   .legacy-theme-toggle { min-width: 44px; min-height: 44px; flex-shrink: 0; }
-  .matters-search-endcap { display: block; }
   .legacy-nav-menu-toggle { display: inline-flex; width: 100%; min-height: 44px; }
   .legacy-navigation {
     display: none;
@@ -698,10 +873,15 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
     font-size: 12px;
     line-height: 1.25;
   }
+}
+
+@media (max-width: 760px) {
+  :root { --space-page: 16px; }
+  .matters-search-endcap { display: block; }
   .legacy-deadline-row { justify-content: flex-start; padding: 10px 76px 10px 16px; gap: 14px; }
   .legacy-deadline-display { justify-content: flex-start; gap: 14px; width: 100%; }
   .legacy-deadline-description { text-align: left; }
-  .detail-grid, .grid-2, .grid-3 { grid-template-columns: 1fr; }
+  .grid-2, .grid-3 { grid-template-columns: 1fr; }
   .calendar-cell { min-height: 56px; padding: 4px !important; }
   .calendar-nav-button, .calendar-today-button { min-width: 44px; min-height: 44px; }
   .legacy-deadline-toggle { min-width: 56px; min-height: 44px; }
@@ -723,13 +903,53 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
 }
 
 @media (max-width: 520px) {
-  .legacy-brand-logo { height: 96px; max-width: min(34vw, 128px); }
-  .legacy-versus { font-size: clamp(4rem, 24vw, 5.5rem); transform: translate(-18px, 2px); }
-  .legacy-header-inner { gap: 6px 8px; }
-  .legacy-opposing-counsel { gap: 6px; }
-  .firm-link .firm-logo { height: 36px !important; max-width: min(48vw, 140px); }
-  .legacy-garcia-logo { height: 30px !important; }
-  .legacy-dag-logo { width: 36px !important; height: 36px !important; }
+  .legacy-versus { display: none; }
+  .legacy-header-inner {
+    grid-template-columns: auto 1fr;
+    gap: 8px 12px;
+    padding: 14px 12px;
+  }
+  .legacy-brand-logo {
+    grid-column: 1;
+    grid-row: 1;
+    height: auto;
+    width: 100%;
+    max-width: 120px;
+    align-self: center;
+    justify-self: start;
+  }
+  .legacy-opposing-counsel {
+    grid-column: 2;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    justify-content: end;
+    justify-items: center;
+    align-items: center;
+    gap: 6px 8px;
+    width: 100%;
+  }
+  .legacy-opposing-counsel .firm-link {
+    justify-content: center;
+    flex-direction: column;
+    gap: 2px;
+  }
+  /* Left column: Kabat (row 1), Azimov (row 2), MHS (row 3) */
+  .legacy-opposing-counsel .firm-link:nth-child(1) { grid-column: 1; grid-row: 1; }
+  .legacy-opposing-counsel .firm-link:nth-child(2) { grid-column: 1; grid-row: 2; }
+  .legacy-opposing-counsel .firm-link:nth-child(5) { grid-column: 1; grid-row: 3; }
+  /* Right column: Garcia (row 1), SLB (row 2), DAG (row 3) */
+  .legacy-opposing-counsel .firm-link:nth-child(3) { grid-column: 2; grid-row: 2; }
+  .legacy-opposing-counsel .firm-link:nth-child(4) { grid-column: 2; grid-row: 1; }
+  .legacy-opposing-counsel .firm-link:nth-child(6) { grid-column: 2; grid-row: 3; }
+  .firm-logo { object-position: center; }
+  .legacy-kco-logo { width: 80px; height: 26px; }
+  .legacy-azimov-logo { width: 36px; height: 36px; }
+  .legacy-slb-logo { width: 72px; height: 38px; }
+  .legacy-garcia-logo { width: 72px; height: 24px; }
+  .legacy-mhs-logo { width: 72px; height: 15px; }
+  .legacy-dag-logo { width: 36px; height: 36px; }
   .legacy-clock-units { transform: scale(.88); transform-origin: left center; }
   .legacy-deadline-description { width: 100%; }
   .legacy-search-trigger { gap: 10px; padding-inline: 12px; }
@@ -740,7 +960,10 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
   .matter-view-controls { flex-direction: column; }
   .saved-views, .sort-control { width: 100%; }
   .sort-control { justify-content: space-between; }
-  .matter-actions { justify-content: flex-start; margin-top: 12px; }
+  .matter-actions { justify-content: flex-start; }
+  .matter-hero, .matter-page .matter-panel, .matter-page .xm-panel { padding: 18px; }
+  .matter-hero .matter-summary { margin: 18px -18px 0; }
+  .matter-page .matter-detail-title { font-size: 25px; }
   .matter-summary { grid-template-columns: 1fr; }
   .matter-summary-item, .matter-summary-item:nth-child(2), .matter-summary-item:nth-last-child(-n+2) { border-right: 0; border-bottom: 1px solid rgb(148 163 184 / 15%); }
   .matter-summary-item:last-child { border-bottom: 0; }
@@ -748,9 +971,15 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
   .calendar-cell { min-height: 48px; }
 }
 
-@media (min-width: 761px) {
+/* Paired with the 980px header block above — the section menu is the mobile
+   affordance, so it must stay available for the whole range where the header
+   is collapsed. */
+@media (min-width: 981px) {
   .legacy-nav-menu-toggle { display: none !important; }
   .legacy-navigation { display: flex !important; }
+}
+
+@media (min-width: 761px) {
   .matters-filters-toggle { display: none !important; }
   .matters-filter-chips { display: flex !important; }
   .saved-views { display: block; }
@@ -763,8 +992,8 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
 .xm-thesis { max-width: 78ch; }
 .xm-cluster-line { margin-bottom: 12px; }
 .xm-subhead {
-  margin: 28px 0 10px; font-size: 11px; letter-spacing: .12em; text-transform: uppercase;
-  color: var(--muted, rgb(148 163 184)); font-weight: 700;
+  margin: 28px 0 10px; font-family: var(--font-sans); font-size: 11px; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--muted-text); font-weight: 700;
 }
 .xm-stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 18px; }
 .xm-stat {
@@ -791,45 +1020,73 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
 .xm-matter-court { font-size: 11px; opacity: .6; }
 .xm-degree { display: inline-block; margin-top: 6px; font-size: 11px; opacity: .6; }
 
+/* Link kinds are self-labelling everywhere they render — the peer cards, the
+   matrix cells and the legend all print linkKindLabel inside the chip — so the
+   five hues these used to carry (sky / indigo / amber / emerald / red) were
+   decoration. Stacked three to a card they were the loudest thing on the page,
+   and they collided with the severity scale, which reuses red and amber to mean
+   something else entirely. Neutral chips; colour is reserved for severity. */
 .xm-kind {
-  display: inline-block; padding: 3px 8px; border-radius: 999px; font-size: 11px; font-weight: 600;
-  border: 1px solid rgb(148 163 184 / 35%); white-space: nowrap;
+  display: inline-block; padding: 3px 8px; border-radius: 999px; font-family: var(--font-sans);
+  font-size: 11px; font-weight: 600; white-space: nowrap;
+  border: 1px solid rgb(148 163 184 / 28%); color: var(--muted-text);
 }
-.xm-kind-same_incident, .xm-kind-shared_predicate { background: rgb(56 189 248 / 14%); border-color: rgb(56 189 248 / 45%); }
-.xm-kind-same_denial_challenged, .xm-kind-parallel_track { background: rgb(129 140 248 / 14%); border-color: rgb(129 140 248 / 45%); }
-.xm-kind-stay_dependency, .xm-kind-authority_dependency { background: rgb(251 191 36 / 16%); border-color: rgb(251 191 36 / 50%); }
-.xm-kind-persuasive_authority { background: rgb(52 211 153 / 14%); border-color: rgb(52 211 153 / 45%); }
-.xm-kind-damages_overlap, .xm-kind-disclosure_gap { background: rgb(248 113 113 / 16%); border-color: rgb(248 113 113 / 50%); }
 
 .xm-peer-list, .xm-exposure-list, .xm-foundation-list, .xm-party-list, .xm-chain { list-style: none; margin: 0; padding: 0; }
 .xm-peer, .xm-exposure, .xm-chain-item {
   border: 1px solid rgb(148 163 184 / 20%); border-left-width: 3px; border-radius: 10px;
   padding: 14px 16px; margin-bottom: 12px;
 }
-.xm-sev-high { border-left-color: rgb(248 113 113 / 80%); }
-.xm-sev-medium { border-left-color: rgb(251 191 36 / 80%); }
-.xm-sev-low { border-left-color: rgb(52 211 153 / 80%); }
-.xm-peer-head, .xm-exposure-head, .xm-chain-head {
+/* Medium takes the brand gold rather than a near-miss amber, and low takes no
+   colour at all — leaving red to mean one thing on the page. */
+.xm-sev-high { border-left-color: var(--sev-high); }
+.xm-sev-medium { border-left-color: var(--gold); }
+.xm-sev-low { border-left-color: var(--sev-low); }
+.xm-exposure-head, .xm-chain-head {
   display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: baseline; justify-content: space-between;
 }
+/* The relationship is a caption for the title, not a second column. Left as a
+   space-between row it opened a ~250px void between the two at full width. */
+.xm-peer-head { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; }
 .xm-peer-title, .xm-exposure-label, .xm-chain-route { font-weight: 700; font-size: 14px; }
-.xm-relationship { font-size: 12px; opacity: .7; font-style: italic; }
+.xm-severity {
+  margin-right: 6px; font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+}
+.xm-severity-high { color: var(--sev-high); }
+.xm-severity-medium { color: var(--gold); }
+.xm-severity-low { color: var(--muted-text); }
+/* Meta lines are UI chrome, not prose — the serif belongs to the captions and
+   the body copy, not to four different treatments inside one card. */
+.xm-relationship { font-family: var(--font-sans); font-size: 12px; color: var(--subtle-text); }
 .xm-kinds { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; }
-.xm-sources { list-style: none; margin: 8px 0 0; padding: 0; font-size: 11px; opacity: .65; }
-.xm-sources li { padding-left: 12px; position: relative; }
-.xm-sources li::before { content: "§"; position: absolute; left: 0; opacity: .6; }
+/* Footnote apparatus: it needs to read as a citation block under the argument,
+   not as faint text crushed against the last paragraph. */
+.xm-sources {
+  list-style: none; margin: 12px 0 0; padding: 10px 0 0; max-width: 72ch;
+  border-top: 1px solid rgb(148 163 184 / 14%);
+  font-family: var(--font-sans); font-size: 11px; line-height: 1.6; color: var(--muted-text);
+}
+.xm-sources li { padding-left: 14px; position: relative; }
+.xm-sources li::before { content: "§"; position: absolute; left: 0; color: var(--gold); opacity: .75; }
 .xm-remedy { margin-top: 6px; font-size: 13px; }
 .xm-status {
   font-size: 10px; letter-spacing: .08em; text-transform: uppercase; font-weight: 700;
   padding: 2px 8px; border-radius: 999px; border: 1px solid rgb(148 163 184 / 40%);
 }
-.xm-status-open { background: rgb(248 113 113 / 16%); }
-.xm-status-monitoring { background: rgb(251 191 36 / 16%); }
-.xm-status-resolved { background: rgb(52 211 153 / 16%); }
+.xm-status-open { border-color: var(--sev-high); background: var(--sev-high-bg); color: var(--sev-high); }
+.xm-status-monitoring { border-color: var(--gold); background: rgb(200 168 75 / 12%); color: var(--gold); }
+.xm-status-resolved { border-color: var(--sev-ok); background: var(--sev-ok-bg); color: var(--sev-ok); }
 .xm-exposure-matters { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+/* These are Links, and until now they were indistinguishable from .xm-kind,
+   which is a static label. Gold is what a link looks like everywhere else here. */
 .xm-matter-chip {
-  font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 999px;
-  border: 1px solid rgb(148 163 184 / 35%); text-decoration: none;
+  font-family: var(--font-sans); font-size: 11px; font-weight: 600; padding: 4px 10px;
+  border-radius: 999px; border: 1px solid rgb(200 168 75 / 35%);
+  color: var(--gold); text-decoration: none;
+  transition: background .15s ease, border-color .15s ease;
+}
+.xm-matter-chip:hover, .xm-matter-chip:focus-visible {
+  border-color: var(--gold); background: rgb(200 168 75 / 12%);
 }
 .xm-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
 .xm-foundation-list li, .xm-party-list li {
@@ -843,6 +1100,39 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
 .xm-legend { margin: 0; }
 .xm-legend-item { display: grid; grid-template-columns: 210px 1fr; gap: 12px; padding: 8px 0; align-items: start; }
 .xm-legend-item dd { margin: 0; }
+
+/* Cross-matter inside a matter page.
+   On the Cross-Matter tab these items sit straight on the page, so the full
+   card border is right. Inside .matter-page they sit in a .matter-panel that
+   already draws a border, a radius and 24px of padding — a second box on top
+   of that is inset and nothing else, ten times over. Here they become
+   left-ruled list items, keeping only the severity bar. */
+.matter-page .xm-peer, .matter-page .xm-exposure {
+  border-width: 0 0 0 3px; border-radius: 0;
+  margin-bottom: 0; padding: 18px 0 18px 16px;
+}
+.matter-page .xm-peer + .xm-peer, .matter-page .xm-exposure + .xm-exposure {
+  border-top: 1px solid rgb(148 163 184 / 14%);
+}
+/* Prose ran at ~128 characters per line at full width. */
+.matter-page .xm-peer .detail-copy,
+.matter-page .xm-exposure .detail-copy,
+.matter-page .xm-cluster-line { max-width: 72ch; }
+.matter-page .xm-peer-list, .matter-page .xm-exposure-list { margin-top: -4px; }
+
+/* Foundation and parties are reference material, not the argument, so they
+   collapse behind the same disclosure the document groups use. */
+.xm-reference { margin-top: 22px; }
+.xm-reference > summary {
+  display: flex; justify-content: space-between; gap: 16px; align-items: center;
+  cursor: pointer; padding: 10px 12px;
+  border: 1px solid var(--card-border); border-radius: 8px; background: var(--deep-bg);
+  color: var(--gold); font-family: var(--font-sans); font-size: 11px; font-weight: 700;
+  letter-spacing: .08em; text-transform: uppercase;
+}
+.xm-reference > summary:hover { border-color: rgb(200 168 75 / 40%); }
+.xm-reference[open] > summary { margin-bottom: 4px; }
+.xm-reference .xm-subhead:first-of-type { margin-top: 18px; }
 
 @media (max-width: 760px) {
   .xm-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -932,4 +1222,20 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
 @media (max-width: 760px) {
   .dl-form { grid-template-columns: 1fr; }
   .dl-deadline-date { font-size: 22px; }
+}
+
+/* ── Reduced motion ──────────────────────────────────────────────────────────
+   Three animations ran unconditionally, two of them infinite: clockPulse on the
+   frozen countdown, spin on the route and search spinners, and dl-rise on the
+   deadline result. Spinners keep their shape (they are role="status", so the
+   label still announces); they simply stop rotating. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
 }

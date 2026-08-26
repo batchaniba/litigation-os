@@ -6,6 +6,7 @@
 //   - internal/src/data/matters/NN.json  (matter tables + counts)
 //   - internal/src/data/timeline.json    (upcoming deadlines)
 //   - internal/src/data/damages.js       (damages summary + aggregates)
+//   - internal/src/data/lawyerFees.js    (attorney-fees cluster table)
 //
 // Markers (HTML comments) in README.md delimit regenerable blocks:
 //   <!-- PORTFOLIO:<NAME>:START -->
@@ -20,8 +21,9 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { loadMatters } from "./load-matters.mjs";
-import { lifecycleLabel, readmeBucket } from "./matter-lifecycle.mjs";
+import { isSettledLifecycle, lifecycleLabel, readmeBucket } from "./matter-lifecycle.mjs";
 import { effectiveStatusLabel } from "./status-label.mjs";
+import { formatMatterRefs, parseMatterRefs } from "../src/utils/matterRefs.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(__dirname, "..", "..");
@@ -138,18 +140,34 @@ const timeline = JSON.parse(
   fs.readFileSync(path.join(REPO_ROOT, "internal/src/data/timeline.json"), "utf8"),
 );
 for (const event of timeline) {
-  for (const raw of String(event.matters ?? "").split(",")) {
-    const matter = Number(raw.trim());
+  for (const matter of parseMatterRefs(event.matters).numbers) {
     if (!matter) continue;
     if (!eventsByMatter.has(matter)) eventsByMatter.set(matter, []);
     eventsByMatter.get(matter).push(event);
   }
 }
 const { damages_table } = await import(pathToFileURL(path.join(REPO_ROOT, "internal/src/data/damages.js")).href);
+const { lawyer_fees_summary: feeSummary, lawyer_fees: feeRows } = await import(
+  pathToFileURL(path.join(REPO_ROOT, "internal/src/data/lawyerFees.js")).href
+);
 
+const citationVerificationPath = path.join(
+  REPO_ROOT,
+  "internal/docs/citation_verification.json",
+);
+let citationVerification = null;
+if (fs.existsSync(citationVerificationPath)) {
+  citationVerification = JSON.parse(fs.readFileSync(citationVerificationPath, "utf8"));
+}
+
+// Active/Open now includes settled matters -- still on the docket, same as
+// isOpenLifecycle. "settled" here is a separate, non-exclusive annotation
+// (a matter can be both open and settled at once), not a third partition
+// member, so it's tracked apart from bucket() and doesn't double-count
+// against Total Matters below.
 const active = cases.filter((m) => bucket(m) === "active");
-const settled = cases.filter((m) => bucket(m) === "settled");
 const closed = cases.filter((m) => bucket(m) === "closed");
+const settled = cases.filter((m) => isSettledLifecycle(m.lifecycle));
 
 const settledLabel = settled.length
   ? settled
@@ -160,22 +178,27 @@ const settledLabel = settled.length
       .join("; ")
   : "none";
 
-const overviewCounts = [
-  `| Total Matters | ${cases.length} |`,
-  `| Active / Open | ${active.length} |`,
-  `| Settled | ${settled.length}${settled.length ? ` (Matter ${settledLabel})` : ""} |`,
-  `| Dismissed / Closed / Abandoned | ${closed.length} |`,
-].join("\n");
-
 const cons = damages_table.reduce((s, r) => s + (r.conservative || 0), 0);
 const mod = damages_table.reduce((s, r) => s + (r.moderate || 0), 0);
 const agg = damages_table.reduce((s, r) => s + (r.aggressive || 0), 0);
 
 const roundK = (n) => Math.round(Number(n) / 1000) * 1000;
-const overviewExposure = [
+
+// One contiguous GFM table — HTML comments between rows break GitHub rendering.
+const overviewTable = [
+  `| Field | Detail |`,
+  `|---|---|`,
+  `| Plaintiff | Brendan Ngehsi Newanforbi |`,
+  `| Representation | Pro Se / In Propria Persona |`,
+  `| Jurisdictions | USDC E.D. Cal., USDC N.D. Cal., San Joaquin Sup. Ct., Alameda Sup. Ct., Sacramento Sup. Ct., Santa Clara Sup. Ct. |`,
+  `| Total Matters | ${cases.length} |`,
+  `| Active / Open | ${active.length} |`,
+  `| — of which Settled | ${settled.length}${settled.length ? ` (Matter ${settledLabel})` : ""} |`,
+  `| Dismissed / Closed / Abandoned | ${closed.length} |`,
   `| Aggregate Exposure (Conservative) | ~${money(roundK(cons))}+ |`,
   `| Aggregate Exposure (Moderate) | ~${money(roundK(mod))}+ |`,
   `| Aggregate Exposure (Aggressive) | ~${money(roundK(agg))}+ |`,
+  `| Last Updated | August 8, 2026 |`,
 ].join("\n");
 
 const activeTable = [
@@ -184,15 +207,6 @@ const activeTable = [
   ...active.map(
     (m) =>
       `| ${m.number} | ${escapeCell(m.caption)} | ${escapeCell(m.case_no)} | ${escapeCell(m.court)} | ${escapeCell(m.type)} | ${shortStatus(m)} |`,
-  ),
-].join("\n");
-
-const settledTable = [
-  `| # | Caption | Case No. | Court | Outcome |`,
-  `|---|---|---|---|---|`,
-  ...settled.map(
-    (m) =>
-      `| ${m.number} | ${escapeCell(m.caption)} | ${escapeCell(m.case_no)} | ${escapeCell(m.court)} | ${shortStatus(m)} |`,
   ),
 ].join("\n");
 
@@ -219,7 +233,7 @@ const deadlinesTable = [
   `| Date | Matter | Event |`,
   `|---|---|---|`,
   ...upcoming.map(
-    (t) => `| ${escapeCell(t.date)} | ${escapeCell(t.matters)} | ${escapeCell(truncate(t.event, 220))} |`,
+    (t) => `| ${escapeCell(t.date)} | ${escapeCell(formatMatterRefs(t.matters))} | ${escapeCell(truncate(t.event, 220))} |`,
   ),
 ].join("\n");
 
@@ -228,7 +242,7 @@ const damagesTable = [
   `|---|---|---|---|---|`,
   ...damages_table.map(
     (r) =>
-      `| ${escapeCell(r.category)} | ${escapeCell(r.matters)} | ${money(r.conservative)} | ${money(r.moderate)} | ${money(r.aggressive)} |`,
+      `| ${escapeCell(r.category)} | ${escapeCell(formatMatterRefs(r.matters))} | ${money(r.conservative)} | ${money(r.moderate)} | ${money(r.aggressive)} |`,
   ),
   `| **Portfolio Total (pre-deduplication)** | | **${money(cons)}** | **${money(mod)}** | **${money(agg)}** |`,
 ].join("\n");
@@ -242,16 +256,79 @@ const closedCountNote =
   `(structured \`lifecycle\` on each matter JSON). See [All Matters](#all-matters) below for the full disposition table. ` +
   `Pre-filing matters stay in the Active table.*`;
 
+const feeByNumber = new Map((feeRows || []).map((row) => [row.number, row]));
+const m32 = feeByNumber.get(32);
+const m33 = feeByNumber.get(33);
+const feeDate = feeSummary.analysisDate || "2026-08-08";
+const [fy, fm, fd] = String(feeDate).split("-").map(Number);
+const feeDateLabel = new Date(Date.UTC(fy, fm - 1, fd)).toLocaleDateString("en-US", {
+  month: "long",
+  day: "numeric",
+  year: "numeric",
+  timeZone: "UTC",
+});
+const clusterOrder = ["cluster1", "cluster2", "cluster3", "cluster4"];
+const feeClusterRows = clusterOrder
+  .map((key) => feeSummary.byCluster[key])
+  .filter(Boolean)
+  .map(
+    (c) =>
+      `| ${escapeCell(c.label)} | ${escapeCell(c.matters.join(", "))} | ${money(c.costLow)} | ${money(c.costMid)} | ${money(c.costHigh)} |`,
+  );
+const attorneyFeesBlock = [
+  `Plaintiff is representing himself pro se across all ${feeSummary.totalMatters} matters. The figures below represent what he would have been required to spend on private counsel to litigate this portfolio — costs he has absorbed entirely through self-representation. Based on real page counts extracted from ${feeSummary.totalDocumentsAnalyzed} documents / ${feeSummary.totalPagesReal.toLocaleString("en-US")} pages across matters with uploaded filings (Matter 32: ${m32?.documentsCount ?? "—"} PDFs / ${m32?.totalPagesReal?.toLocaleString("en-US") ?? "—"} pages — N.D. Cal. ndcal/ filing billed; from-01|02|20|24/ stay attributed to source matters; Matter 33: ${m33?.documentsCount ?? "—"} PDFs / ${m33?.totalPagesReal?.toLocaleString("en-US") ?? "—"} pages — N.D. Cal. refile + Nov. 1 / APS evidence; from-07/from-08 drafting stays on Matters 7/8; Matter 31 has no uploaded PDFs of its own), classified by document type and priced at a blended rate of **$${feeSummary.methodology.blendedHourlyRate}/hour** (senior partner $${feeSummary.methodology.rateRange.seniorPartner[0]}–$${feeSummary.methodology.rateRange.seniorPartner[1]} / mid-associate $${feeSummary.methodology.rateRange.midAssociate[0]}–$${feeSummary.methodology.rateRange.midAssociate[1]} / paralegal $${feeSummary.methodology.rateRange.paralegal[0]}–$${feeSummary.methodology.rateRange.paralegal[1]}). Opposing-party filings billed at light review rate only. Fee analysis date: ${feeDateLabel}.`,
+  ``,
+  `| Cluster | Matters | Low | Mid | High |`,
+  `|---|---|---|---|---|`,
+  ...feeClusterRows,
+  `| **Portfolio Total** | **${feeSummary.totalMatters} matters** | **${money(feeSummary.totalEstimatedCost.low)}** | **${money(feeSummary.totalEstimatedCost.mid)}** | **${money(feeSummary.totalEstimatedCost.high)}** |`,
+  `| **Estimated Hours** | | **${feeSummary.totalEstimatedHours.low.toLocaleString("en-US")} hrs** | **${feeSummary.totalEstimatedHours.mid.toLocaleString("en-US")} hrs** | **${feeSummary.totalEstimatedHours.high.toLocaleString("en-US")} hrs** |`,
+  ``,
+  `*Plaintiff has litigated all ${feeSummary.totalMatters} matters pro se, absorbing the full economic equivalent of the above without compensation. Fee-shifting statutes (42 U.S.C. §1988, PC §290.46(j)(4)(A), RICO 18 U.S.C. §1964(c), FCRA, ICRAA) apply across the majority of active matters — mandatory fee recovery upon prevailing substantially offsets or eliminates the above costs.*`,
+].join("\n");
+
+const statusOrder = [
+  "VERIFIED",
+  "MISCITED",
+  "MISCHARACTERIZED",
+  "MISQUOTED",
+  "NOT_FOUND",
+  "UNVERIFIED",
+];
+const statusCounts = citationVerification?.statusCounts || {};
+const citationScoreboard = citationVerification
+  ? [
+      `| Status | Count |`,
+      `|---|---|`,
+      ...statusOrder
+        .filter((k) => statusCounts[k] != null)
+        .map((k) => `| ${k} | ${statusCounts[k]} |`),
+      ...Object.keys(statusCounts)
+        .filter((k) => !statusOrder.includes(k))
+        .sort()
+        .map((k) => `| ${k} | ${statusCounts[k]} |`),
+      ``,
+      `Paired authorities: **${citationVerification.corpusAuthorities ?? "—"}**. ` +
+        `P0 (plaintiff-only UNVERIFIED): **${citationVerification.queue?.plaintiffOnlyUnverified ?? "—"}**. ` +
+        `P1 (plaintiff-only bad status): **${citationVerification.queue?.plaintiffOnlyBad ?? "—"}**. ` +
+        `Ledger date: ${citationVerification.generatedDate || "—"}.`,
+    ].join("\n")
+  : [
+      `| Status | Count |`,
+      `|---|---|`,
+      `| _(run \`npm run citations:verify\`)_ | — |`,
+    ].join("\n");
+
 let readme = fs.readFileSync(README, "utf8");
 const replacements = {
-  OVERVIEW_COUNTS: overviewCounts,
-  OVERVIEW_EXPOSURE: overviewExposure,
+  OVERVIEW_TABLE: overviewTable,
   CLOSED_COUNT_NOTE: closedCountNote,
   ACTIVE_MATTERS: activeTable,
-  SETTLED_MATTERS: settledTable,
   CLOSED_MATTERS: closedTable,
   UPCOMING_DEADLINES: deadlinesTable,
   DAMAGES_SUMMARY: damagesTable,
+  ATTORNEY_FEES: attorneyFeesBlock,
+  CITATION_SCOREBOARD: citationScoreboard,
 };
 
 for (const [name, body] of Object.entries(replacements)) {
@@ -265,7 +342,11 @@ if (checkOnly) {
     process.exit(1);
   }
   console.log(
-    `OK — README portfolio tables are current (${active.length} active, ${settled.length} settled, ${closed.length} closed, ${upcoming.length} upcoming).`,
+    `OK — README portfolio tables are current (${active.length} active/open, incl. ${settled.length} settled, ${closed.length} closed, ${upcoming.length} upcoming` +
+      (citationVerification
+        ? `, ${citationVerification.corpusAuthorities} citation authorities`
+        : "") +
+      ").",
   );
   process.exit(0);
 }
@@ -273,5 +354,5 @@ if (checkOnly) {
 fs.writeFileSync(README, readme);
 console.log(
   `Updated ${path.relative(REPO_ROOT, README)} ` +
-    `(${active.length} active / ${settled.length} settled / ${closed.length} closed / ${upcoming.length} upcoming).`,
+    `(${active.length} active/open, incl. ${settled.length} settled / ${closed.length} closed / ${upcoming.length} upcoming).`,
 );

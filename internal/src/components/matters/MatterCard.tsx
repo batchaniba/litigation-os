@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { Link } from "react-router";
 import { GOLD, BORDER_BLUE } from "../../constants";
 import { StatusBadge, ClusterBadge, TypeBadge, ArchiveBadge, ProceedingBadge, PhaseBadge, PolicyLimitsBadge } from "../Badges";
@@ -13,7 +14,9 @@ import type { MatterSummary, Matter } from "../../types/portfolio";
 interface MatterCardProps {
   matter: MatterSummary;
   isOpen: boolean;
-  onToggle: () => void;
+  /** Receives the matter number so the list can hold one stable callback for
+   *  every card — an inline closure per card would defeat the memo below. */
+  onToggle: (matterNumber: number) => void;
 }
 
 type RibbonVariant = "settled" | "default" | "dismissed" | "abandoned" | "denied" | "pending" | "timely" | "served";
@@ -61,7 +64,7 @@ function StatusRibbon({ variant }: { variant: RibbonVariant }) {
 }
 
 function resolveRibbonVariant(c: MatterSummary & { badge?: string }): RibbonVariant | null {
-  if (c.lifecycle === "settled" || c.status?.startsWith("SETTLED")) return "settled";
+  if (c.lifecycle === "settled") return "settled";
   if (c.badge === "DEFAULT") return "default";
   if (c.lifecycle === "dismissed" || c.badge === "DISMISSED") return "dismissed";
   if (c.lifecycle === "abandoned" || c.badge === "ABANDONED") return "abandoned";
@@ -72,7 +75,7 @@ function resolveRibbonVariant(c: MatterSummary & { badge?: string }): RibbonVari
   return null;
 }
 
-export function MatterCard({ matter: summary, isOpen, onToggle }: MatterCardProps) {
+function MatterCardImpl({ matter: summary, isOpen, onToggle }: MatterCardProps) {
   const { matter: full, status } = useMatter(isOpen ? summary.number : null);
   const c = (full ?? summary) as Matter;
   const proseLoading = isOpen && status === "loading";
@@ -95,7 +98,7 @@ export function MatterCard({ matter: summary, isOpen, onToggle }: MatterCardProp
 
       {/* Header row */}
       <button
-        onClick={onToggle}
+        onClick={() => onToggle(c.number)}
         aria-expanded={isOpen}
         aria-controls={`matter-detail-${c.number}`}
         className="matter-card-header"
@@ -196,3 +199,7 @@ export function MatterCard({ matter: summary, isOpen, onToggle }: MatterCardProp
     </div>
   );
 }
+
+/** Expanding one card used to re-render all 33, each re-deriving its status
+ *  badge. Only the two cards whose isOpen actually flipped re-render now. */
+export const MatterCard = memo(MatterCardImpl);

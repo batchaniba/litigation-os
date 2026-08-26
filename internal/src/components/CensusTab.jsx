@@ -1,13 +1,18 @@
 import { useState } from "react";
-import { PORTFOLIO } from "../data";
+import { cases } from "../data/matters";
+import { timeline } from "../data/timeline";
+import { outcomes } from "../data/outcomes";
+import { lawyer_fees_summary } from "../data/lawyerFees";
+import { census } from "../data/census";
+import { jurisdictions } from "../data/portfolioMeta";
 import { GOLD } from "../constants";
 import { useTheme } from "../ThemeContext";
 import { getPDTMidnight } from "../utils/dateUtils";
 import { formatCurrency } from "../utils/formatters";
-import { isArchivedMatter, isLiveLifecycle, lifecycleLabel } from "../utils/matterLifecycle";
+import { isArchivedMatter, isOpenLifecycle, lifecycleLabel } from "../utils/matterLifecycle";
 import { phaseLabel, proceedingLabel } from "../utils/matterProceeding";
 import { HorizontalBarChart, VerticalBarChart, RangeChart } from "./charts/PortfolioCharts";
-import { CLUSTERS } from "./DashboardTab";
+import { CLUSTERS } from "../data/clusters";
 
 const fmt = (n) => formatCurrency(Math.round(n));
 const MONO = "'Courier New', ui-monospace, monospace";
@@ -22,7 +27,7 @@ const BADGE_LABEL = {
   SERVED: "Served",
 };
 const statusLabelOf = (c) => {
-  if (c.lifecycle === "settled" || c.status?.startsWith("SETTLED")) return "Settled";
+  if (c.lifecycle === "settled") return "Settled";
   if (c.lifecycle === "abandoned") return "Abandoned";
   if (c.lifecycle === "dismissed") return "Dismissed";
   if (c.lifecycle === "closed") return c.badge === "DENIED" ? "Denied" : "Closed";
@@ -45,23 +50,23 @@ const monthYearOf = (dateStr) => {
 };
 
 // ---- Live-computed aggregates (module scope — same pattern as DashboardTab) ----
-const totalMatters = PORTFOLIO.cases.length;
-const liveMatters = PORTFOLIO.cases.filter(c => isLiveLifecycle(c.lifecycle) || (!c.lifecycle && !c.archived)).length;
-const archivedMatters = PORTFOLIO.cases.filter(c => isArchivedMatter(c)).length;
+const totalMatters = cases.length;
+const liveMatters = cases.filter(c => isOpenLifecycle(c.lifecycle) || (!c.lifecycle && !c.archived)).length;
+const archivedMatters = cases.filter(c => isArchivedMatter(c)).length;
 // Strip "TBD — anticipated X" placeholder text (Matter 30) down to the actual
 // court name, so an anticipated filing doesn't inflate the distinct-court count.
 const courtName = (c) => c.replace(/^TBD\s*—\s*anticipated\s*/i, "").trim();
-const distinctCourts = new Set(PORTFOLIO.cases.map(c => courtName(c.court))).size;
+const distinctCourts = new Set(cases.map(c => courtName(c.court))).size;
 
 const judgeName = (j) => j.split(/[,/(]/)[0].trim();
 const distinctJudges = new Set(
-  PORTFOLIO.cases.filter(c => c.judge?.startsWith("Hon.")).map(c => judgeName(c.judge))
+  cases.filter(c => c.judge?.startsWith("Hon.")).map(c => judgeName(c.judge))
 ).size;
-const assignedMatters = PORTFOLIO.cases.filter(c => c.judge?.startsWith("Hon.")).length;
+const assignedMatters = cases.filter(c => c.judge?.startsWith("Hon.")).length;
 
-const totalDocuments = PORTFOLIO.cases.reduce((s, c) => s + (c.documentCount || 0), 0);
-const totalEvidence = PORTFOLIO.cases.reduce((s, c) => s + (c.evidenceCount ?? c.evidence?.length ?? 0), 0);
-const totalCauses = PORTFOLIO.cases.reduce((s, c) => s + (c.causes?.length || 0), 0);
+const totalDocuments = cases.reduce((s, c) => s + (c.documentCount || 0), 0);
+const totalEvidence = cases.reduce((s, c) => s + (c.evidenceCount ?? c.evidence?.length ?? 0), 0);
+const totalCauses = cases.reduce((s, c) => s + (c.causes?.length || 0), 0);
 
 // Status palette: reuse MattersTab's exact ribbon colors; anything else falls
 // back through the cluster palette below so every bar still gets a distinct hue.
@@ -96,7 +101,7 @@ const PROCEEDING_COLOR = {
   "Habeas": "#34D399",
 };
 const proceedingCounts = {};
-for (const c of PORTFOLIO.cases) {
+for (const c of cases) {
   const label = c.proceeding ? proceedingLabel(c.proceeding) : "Unknown";
   proceedingCounts[label] = (proceedingCounts[label] || 0) + 1;
 }
@@ -104,7 +109,7 @@ const proceedingRows = Object.entries(proceedingCounts)
   .map(([label, count]) => ({ label, count, value: count, color: PROCEEDING_COLOR[label] || GOLD }))
   .sort((a, b) => b.count - a.count);
 const statusCounts = {};
-for (const c of PORTFOLIO.cases) {
+for (const c of cases) {
   const label = statusLabelOf(c);
   statusCounts[label] = (statusCounts[label] || 0) + 1;
 }
@@ -113,7 +118,7 @@ const statusRows = Object.entries(statusCounts)
   .sort((a, b) => b.count - a.count);
 
 const clusterCounts = {};
-for (const c of PORTFOLIO.cases) clusterCounts[c.cluster] = (clusterCounts[c.cluster] || 0) + 1;
+for (const c of cases) clusterCounts[c.cluster] = (clusterCounts[c.cluster] || 0) + 1;
 const clusterRows = CLUSTERS
   .map(cl => ({ ...cl, count: clusterCounts[cl.n] || 0, value: clusterCounts[cl.n] || 0 }))
   .sort((a, b) => b.count - a.count);
@@ -121,7 +126,7 @@ const clusterRows = CLUSTERS
 const monthlyAll = Array(12).fill(0);
 const monthlyFilings = Array(12).fill(0);
 let filingSpanMin = null, filingSpanMax = null;
-for (const t of PORTFOLIO.timeline) {
+for (const t of timeline) {
   const my = monthYearOf(t.date);
   if (!my) continue;
   if (t.type === "filing") {
@@ -139,18 +144,18 @@ const filingSpanLabel = filingSpanMin !== null
   ? `${MONTHS[filingSpanMin % 12]} ${Math.floor(filingSpanMin / 12)} – ${MONTHS[filingSpanMax % 12]} ${Math.floor(filingSpanMax / 12)}`
   : "—";
 
-const exposure = PORTFOLIO.outcomes.portfolio_exposure;
-const settledDeals = PORTFOLIO.outcomes.realized.filter(r => r.type === "settlement");
+const exposure = outcomes.portfolio_exposure;
+const settledDeals = outcomes.realized.filter(r => r.type === "settlement");
 const settledTotal = settledDeals.reduce((s, r) => s + r.amount, 0);
-const demandsTotal = PORTFOLIO.outcomes.active_demands.reduce((s, d) => s + d.demand_amount, 0);
-const demandsResponded = PORTFOLIO.outcomes.active_demands.filter(
+const demandsTotal = outcomes.active_demands.reduce((s, d) => s + d.demand_amount, 0);
+const demandsResponded = outcomes.active_demands.filter(
   d => d.response_status !== "no response" && d.response_status !== "pending"
 ).length;
 
-const feeSummary = PORTFOLIO.lawyer_fees_summary;
+const feeSummary = lawyer_fees_summary;
 const feeClusters = Object.values(feeSummary.byCluster).sort((a, b) => b.costHigh - a.costHigh);
 
-const casesByNumber = Object.fromEntries(PORTFOLIO.cases.map(c => [c.number, c]));
+const casesByNumber = Object.fromEntries(cases.map(c => [c.number, c]));
 
 const thStyle = (theme) => ({
   fontFamily: SANS, fontSize: 10, fontWeight: 700,
@@ -254,7 +259,7 @@ export const CensusTab = ({ setActiveTab, setClusterFilter, setStatusFilter, set
           A statistical accounting of every civil and habeas matter tracked in this portfolio — scale, pace, legal theories, and financial exposure — filed, served, argued, and pressed by a single self-represented plaintiff. Click any bar, tile, or row to jump to the underlying matters.
         </p>
         <div style={{ marginTop: 14, fontFamily: MONO, fontSize: 11, color: theme.subtleText, display: "flex", gap: 18, flexWrap: "wrap" }}>
-          <span>CURATED FIGURES AS OF {PORTFOLIO.census.asOf.toUpperCase()}</span>
+          <span>CURATED FIGURES AS OF {census.asOf.toUpperCase()}</span>
           <span>EVERYTHING ELSE COMPUTED LIVE, ON EVERY LOAD</span>
         </div>
       </header>
@@ -266,12 +271,12 @@ export const CensusTab = ({ setActiveTab, setClusterFilter, setStatusFilter, set
         <div className="grid-cards" style={{ gap: 1, background: theme.cardBorder, border: `1px solid ${theme.cardBorder}`, borderRadius: 6, overflow: "hidden" }}>
           <StatTile theme={theme} label="Matters Tracked" value={totalMatters} sub={`${liveMatters} live · ${archivedMatters} closed/archived`} />
           <StatTile theme={theme} label="Active Filing Span" value={filingSpanLabel} sub="earliest → latest complaint" />
-          <StatTile theme={theme} label="Court Systems" value={distinctCourts} sub={`${PORTFOLIO.jurisdictions.length} jurisdictions listed`} />
+          <StatTile theme={theme} label="Court Systems" value={distinctCourts} sub={`${jurisdictions.length} jurisdictions listed`} />
           <StatTile theme={theme} label="Judicial Officers" value={distinctJudges} sub={`assigned in ${assignedMatters} of ${totalMatters}`} />
-          <StatTile theme={theme} label="Named Defendants" value={PORTFOLIO.census.namedDefendants} sub={`~${PORTFOLIO.census.namedInstitutions} institutions, DOES excluded`} />
-          <StatTile theme={theme} label="Causes of Action" value={totalCauses} sub={`${PORTFOLIO.census.distinctTheories} distinct theories`} />
+          <StatTile theme={theme} label="Named Defendants" value={census.namedDefendants} sub={`~${census.namedInstitutions} institutions, DOES excluded`} />
+          <StatTile theme={theme} label="Causes of Action" value={totalCauses} sub={`${census.distinctTheories} distinct theories`} />
           <StatTile theme={theme} label="Docs + Evidence" value={(totalDocuments + totalEvidence).toLocaleString()} sub={`${totalDocuments} docs · ${totalEvidence} evidence`} />
-          <StatTile theme={theme} label="Fee Waivers" value={PORTFOLIO.census.feeWaiversGranted} sub={`granted · ${PORTFOLIO.census.feeWaiversDenied} denied`} />
+          <StatTile theme={theme} label="Fee Waivers" value={census.feeWaiversGranted} sub={`granted · ${census.feeWaiversDenied} denied`} />
         </div>
       </section>
 
@@ -298,7 +303,7 @@ export const CensusTab = ({ setActiveTab, setClusterFilter, setStatusFilter, set
 
       {/* EXHIBIT C — VELOCITY */}
       <section style={{ ...sectionStyle, ...dividerStyle }}>
-        <ExhibitHeading theme={theme} exhibit="Exhibit C — Filing Velocity" title={`${PORTFOLIO.timeline.length} logged events, and a docket that keeps accelerating`}
+        <ExhibitHeading theme={theme} exhibit="Exhibit C — Filing Velocity" title={`${timeline.length} logged events, and a docket that keeps accelerating`}
           intro={`At its peak in 2026, a new matter was opened roughly every ten days. ${MONTHS[busiestMonthIdx]} 2026 alone produced ${monthlyAll[busiestMonthIdx]} timeline entries, the busiest month on record.`} />
         <ChartCard theme={theme} title="Timeline activity by month, 2026" note="Solid bars: happened. Faded bars: scheduled ahead of today. Click a bar to open Timeline.">
           <div style={{ display: "flex", gap: 6, marginBottom: 14 }}>
@@ -329,10 +334,10 @@ export const CensusTab = ({ setActiveTab, setClusterFilter, setStatusFilter, set
 
       {/* EXHIBIT D — LEGAL THEORIES */}
       <section style={{ ...sectionStyle, ...dividerStyle }}>
-        <ExhibitHeading theme={theme} exhibit="Exhibit D — Legal Theories" title={`${PORTFOLIO.census.distinctTheories} theories, unevenly leaned on`}
+        <ExhibitHeading theme={theme} exhibit="Exhibit D — Legal Theories" title={`${census.distinctTheories} theories, unevenly leaned on`}
           intro="Negligence and 14th Amendment due process carry the most weight, but the pattern below is really two overlapping playbooks — one built on Bane Act/civil-rights claims against state actors, the other a template built around a single California statute (more in Exhibit E)." />
-        <ChartCard theme={theme} title="Most-asserted causes of action, by matter count" note={`${totalCauses} causes of action pled across ${totalMatters} matters — top ${PORTFOLIO.census.topTheories.length} shown`}>
-          <HorizontalBarChart theme={theme} data={PORTFOLIO.census.topTheories.map(t => ({ label: t.label, value: t.count, color: GOLD }))} leftPad={210} barH={17} gap={7} ariaLabel="Most asserted causes of action" />
+        <ChartCard theme={theme} title="Most-asserted causes of action, by matter count" note={`${totalCauses} causes of action pled across ${totalMatters} matters — top ${census.topTheories.length} shown`}>
+          <HorizontalBarChart theme={theme} data={census.topTheories.map(t => ({ label: t.label, value: t.count, color: GOLD }))} leftPad={210} barH={17} gap={7} ariaLabel="Most asserted causes of action" />
           <p style={{ fontFamily: SANS, fontSize: 11, color: theme.subtleText, margin: "12px 0 0" }}>Plus 12 additional theories asserted 1&ndash;4 times each (RICO, Monell liability, habeas corpus, FCRA, writ of mandate, and others).</p>
         </ChartCard>
       </section>
@@ -353,7 +358,7 @@ export const CensusTab = ({ setActiveTab, setClusterFilter, setStatusFilter, set
                 </tr>
               </thead>
               <tbody>
-                {PORTFOLIO.census.registryBarEmployers.map(({ matter, vendor }) => {
+                {census.registryBarEmployers.map(({ matter, vendor }) => {
                   const c = casesByNumber[matter];
                   if (!c) return null;
                   const statusLabel = statusLabelOf(c);
@@ -404,7 +409,7 @@ export const CensusTab = ({ setActiveTab, setClusterFilter, setStatusFilter, set
           </div>
           <div style={{ background: theme.cardBg, border: `1px solid ${theme.cardBorder}`, borderLeft: `3px solid ${GOLD}`, borderRadius: 4, padding: "14px 16px" }}>
             <div style={{ fontFamily: MONO, fontSize: 20, fontWeight: 700, color: theme.heading }}>{fmt(demandsTotal)}</div>
-            <div style={{ fontFamily: SANS, fontSize: 11.5, color: theme.subtleText, marginTop: 3 }}>Outstanding demands — {demandsResponded} of {PORTFOLIO.outcomes.active_demands.length} defendants responded</div>
+            <div style={{ fontFamily: SANS, fontSize: 11.5, color: theme.subtleText, marginTop: 3 }}>Outstanding demands — {demandsResponded} of {outcomes.active_demands.length} defendants responded</div>
           </div>
         </div>
 

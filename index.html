@@ -4,14 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Newanforbi Litigation Portfolio</title>
+    <meta name="description" content="An interactive record of 33 pro se matters across six California and federal courts — dockets, deadlines, damages models, cross-matter links and the underlying filings." />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#0f1a2e" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#f0f4f8" media="(prefers-color-scheme: light)" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Newanforbi Litigation Portfolio" />
+    <meta property="og:description" content="An interactive record of 33 pro se matters across six California and federal courts — dockets, deadlines, damages models, cross-matter links and the underlying filings." />
+    <meta property="og:image" content="/logo-dark.webp" />
+    <meta name="twitter:card" content="summary" />
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" type="image/png" href="/favicon-192.png" sizes="192x192" />
     <link rel="apple-touch-icon" href="/favicon-192.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- Relative icon paths inside, so the one file works from the domain root
+         (Vercel) and the /interactive-litigation-portfolio/ subpath (Pages). -->
+    <link rel="manifest" href="/site.webmanifest" />
+    <!-- The masthead logo is the LCP element; start it before the bundle parses.
+         Dark is the default theme, so that is the variant worth preloading.
+         The boot script below rewrites the href if the visitor has stored light. -->
+    <link id="theme-logo-preload" rel="preload" as="image" type="image/webp" href="/logo-dark.webp" fetchpriority="high" />
+    <!-- Cormorant Garamond, DM Sans and Cloister Black are self-hosted and
+         declared in internal/src/styles/app.css — no third-party font origin. -->
   </head>
   <body>
+    <!-- Resolve the theme before first paint. Must stay in step with
+         preferredDarkMode() in internal/src/hooks/useThemePreference.ts:
+         explicit stored choice wins, otherwise dark — never the OS scheme. -->
+    <script>
+      (function () {
+        var dark = true;
+        try {
+          var stored = localStorage.getItem("newanforbi.theme.v2");
+          if (stored === "light") dark = false;
+          else if (stored === "dark") dark = true;
+        } catch (error) { /* blocked storage — keep the dark default */ }
+        document.documentElement.dataset.theme = dark ? "dark" : "light";
+        // Keep the LCP preload pointed at the logo this paint will use. Rewrite
+        // in place so a GitHub Pages base path baked into the href is preserved.
+        var preload = document.getElementById("theme-logo-preload");
+        if (preload) {
+          preload.href = preload.href.replace(
+            /logo-(dark|light)\.webp/,
+            dark ? "logo-dark.webp" : "logo-light.webp"
+          );
+        }
+      })();
+    </script>
     <div id="root"></div>
     <script type="module" src="/internal/src/main.tsx"></script>
   </body>
