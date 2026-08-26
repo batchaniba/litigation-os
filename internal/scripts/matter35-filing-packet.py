@@ -191,13 +191,12 @@ def build_sum100(out: Path) -> None:
         "a Virginia corporation; DOE 1; and DOES 2 through 20, inclusive"
     )
     court_line1 = "Superior Court of California,"
-    court_lines_2_3 = (
-        "County of Santa Clara -- Downtown\n"
-        "191 North First Street, San Jose, CA 95113"
-    )
-    # Slightly taller than the native field so County + 191 each get a full line,
-    # still above the attorney-info label (~ y 524). No whiteout.
-    court_addr_rect = fitz.Rect(36.1, 502.5, 362.0, 523.0)
+    court_line2 = "County of Santa Clara -- Downtown"
+    court_line3 = "191 North First Street, San Jose, CA 95113"
+    # Same left edge, Helvetica, and 8 pt as FillText3 ("Superior Court of California,").
+    court_x = 192.8
+    court_fontsize = 8.0
+    court_font = "helv"
 
     fields = {
         f"{P}.Notice[0].FillText25[0]": defendants_lines,
@@ -236,13 +235,20 @@ def build_sum100(out: Path) -> None:
             w.field_value = PLAINTIFF_INFO_LINE
             w.update()
 
-    # Two compact lines inside the native address field only (no whiteout).
-    page.insert_textbox(
-        court_addr_rect,
-        court_lines_2_3,
-        fontsize=6.5,
-        fontname="times-roman",
-        align=fitz.TEXT_ALIGN_LEFT,
+    # Two lines directly under "Superior Court of California," -- same x and font.
+    # Baselines stay above the attorney-info label (~ y 524).
+    page.insert_text(
+        (court_x, 506.0),
+        court_line2,
+        fontsize=court_fontsize,
+        fontname=court_font,
+        color=(0, 0, 0),
+    )
+    page.insert_text(
+        (court_x, 516.0),
+        court_line3,
+        fontsize=court_fontsize,
+        fontname=court_font,
         color=(0, 0, 0),
     )
 
