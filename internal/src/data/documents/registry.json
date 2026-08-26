@@ -2917,8 +2917,18 @@
       "ownerMatter": 35
     },
     {
+      "path": "/documents/matter-35/CM-010 Civil Case Cover Sheet (CONFORMED, Filed Aug 26 2026) - 26CV501995.pdf",
+      "label": "CM-010 Civil Case Cover Sheet (CONFORMED) — Case No. 26CV501995 (filed Aug. 26, 2026)",
+      "ownerMatter": 35
+    },
+    {
       "path": "/documents/matter-35/CV-5012 Civil Lawsuit Notice (blank for clerk) - Aug 26 2026.pdf",
-      "label": "CV-5012 Civil Lawsuit Notice (blank for clerk issuance) — e-filed Aug. 26, 2026",
+      "label": "CV-5012 Civil Lawsuit Notice (blank as submitted) — superseded by clerk-stamped notice for Case No. 26CV501995",
+      "ownerMatter": 35
+    },
+    {
+      "path": "/documents/matter-35/CV-5012 Civil Lawsuit Notice (Clerk-Stamped) - 26CV501995.pdf",
+      "label": "CV-5012 Civil Lawsuit Notice (clerk-stamped) — Case No. 26CV501995; Hon. Vince Parrett, Dept. 16; CMC Feb. 11, 2027",
       "ownerMatter": 35
     },
     {
@@ -2933,12 +2943,22 @@
     },
     {
       "path": "/documents/matter-35/SUM-100 Summons - Ngwa Nforbi v Ross Stores (Aug 26 2026).pdf",
-      "label": "SUM-100 Summons — Ngwa Nforbi v. Ross Stores, Inc., et al. (e-filed Aug. 26, 2026; issuance pending clerk)",
+      "label": "SUM-100 Summons — as submitted via One Legal (superseded by issued summons, Case No. 26CV501995)",
+      "ownerMatter": 35
+    },
+    {
+      "path": "/documents/matter-35/SUM-100 Summons (ISSUED, Filed Aug 26 2026) - 26CV501995.pdf",
+      "label": "SUM-100 Summons (ISSUED) — Case No. 26CV501995 (filed Aug. 26, 2026; Deputy M. Suarez)",
       "ownerMatter": 35
     },
     {
       "path": "/documents/matter-35/Verified Complaint - Ngwa Nforbi v Ross Stores Inc et al (Aug 26 2026).pdf",
-      "label": "Verified Complaint for Damages and Injunctive Relief (v9) — Ngwa Nforbi v. Ross Stores, Inc., et al. (Aug. 26, 2026; ~28 pp.; e-filed One Legal Confirmation #35442871 — under clerk review)",
+      "label": "Verified Complaint (v9) — as submitted via One Legal #35442871 (conformed filed copy is Case No. 26CV501995)",
+      "ownerMatter": 35
+    },
+    {
+      "path": "/documents/matter-35/Verified Complaint (CONFORMED, Filed Aug 26 2026) - 26CV501995.pdf",
+      "label": "Verified Complaint (CONFORMED) — Case No. 26CV501995 (filed Aug. 26, 2026; Env. #24948831)",
       "ownerMatter": 35
     },
     {

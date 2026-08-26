@@ -1018,16 +1018,16 @@
   {
     "number": 35,
     "caption": "Ngwa Nforbi v. Ross Stores, Inc., et al.",
-    "case_no": "TBD (case number pending clerk acceptance)",
-    "court": "Santa Clara Sup. Ct. (First Street / Downtown)",
+    "case_no": "26CV501995",
+    "court": "Santa Clara Sup. Ct. (Downtown / First Street)",
     "claims": "Unruh Civil Rights Act (Civ. Code §§51, 51.5, 52); False Imprisonment; Negligent Training and Supervision",
-    "status_label": "Filed in ~5 hrs — under clerk review",
+    "status_label": "Filed — 26CV501995; CMC Feb 11 2027 (Parrett)",
     "lifecycle": "active",
     "proceeding": "state_civil",
     "phase": "service",
-    "badge": "PENDING",
-    "filed": "E-filed Aug. 26, 2026, 2:06 AM PT via One Legal (~5 hours after the Aug. 25 ~9:00 p.m. Sunnyvale Ross detention). Confirmation #35442871, Filing Order #29111713; Santa Clara — First Street; Civil Unlimited / Civil Rights. Under Court Clerk Review as of submission; acceptance and case-number assignment pending. Filing date for accepted filings will relate back to the Aug. 26 submission date.",
-    "judge": "TBD",
+    "badge": "FILED",
+    "filed": "E-filed Aug. 26, 2026, 2:06 AM PT via One Legal (Confirmation #35442871; Filing Order #29111713; Court Env. #24948831). Clerk-accepted same day; case number 26CV501995 assigned; summons issued (Deputy M. Suarez).",
+    "judge": "Hon. Vince Parrett, Dept. 16 (Santa Clara Superior Court — Downtown)",
     "cluster": 6,
     "type": "State",
     "archived": false,
@@ -1037,13 +1037,17 @@
         "name": "Ross Stores, Inc.",
         "title": "Corporate Defendant (agent for service — C T Corporation System, info. and belief)",
         "location": "Glendale, CA (C T Corporation System)",
-        "served": false
+        "served": false,
+        "dateServed": null,
+        "note": "Serve Complaint + issued Summons + ADR Information Sheet + clerk-stamped CV-5012 by ~Oct. 25, 2026 (60 days from Aug. 26 filing); then file POS-010."
       },
       {
         "name": "Ross Dress for Less, Inc.",
         "title": "Corporate Defendant (agent for service — C T Corporation System, info. and belief)",
         "location": "Glendale, CA (C T Corporation System)",
-        "served": false
+        "served": false,
+        "dateServed": null,
+        "note": "Same service packet and deadline as Ross Stores, Inc."
       }
     ],
     "causes": [
@@ -1051,7 +1055,7 @@
       "Second — False Imprisonment",
       "Third — Negligent Training and Supervision"
     ],
-    "evidenceCount": 9,
-    "documentCount": 6
+    "evidenceCount": 10,
+    "documentCount": 10
   }
 ]

@@ -1,18 +1,62 @@
 [
   {
-    "date": "Aug. 26, 2026",
-    "event": "OPEN TASK \u2014 Upon Santa Clara clerk acceptance of Matter 35 e-filing and issuance of summons, serve Ross Stores, Inc. and Ross Dress for Less, Inc. via C T Corporation System (330 N. Brand Blvd., Suite 700, Glendale, CA 91203 \u2014 info. and belief). Do not serve DOEs until identified/amended. After service, demand Aug. 25, 2026 Sunnyvale Ross surveillance and LP stop/training materials. Watch One Legal / email for clerk acceptance and case-number assignment (Confirmation #35442871).",
+    "date": "Oct. 25, 2026",
+    "event": "OPEN TASK \u2014 Serve Ross Stores, Inc. and Ross Dress for Less, Inc. in Matter 35 (26CV501995) with the Verified Complaint, issued Summons, ADR Information Sheet, and clerk-stamped CV-5012 Civil Lawsuit Notice (via C T Corporation System, 330 N. Brand Blvd., Suite 700, Glendale, CA 91203 \u2014 info. and belief), then file POS-010. Santa Clara CV-5012 / local practice: serve within 60 days of filing (filed Aug. 26, 2026). Do not serve DOEs until identified/amended. After service, demand Aug. 25, 2026 Sunnyvale Ross surveillance and LP stop/training materials.",
     "matters": [
       35
     ],
     "type": "deadline",
     "upcoming": true,
     "actor": "you",
-    "source": "/documents/matter-35/One Legal Order Receipt - eFiling Confirmation 35442871 (Aug 26 2026).pdf"
+    "source": "/documents/matter-35/SUM-100 Summons (ISSUED, Filed Aug 26 2026) - 26CV501995.pdf"
+  },
+  {
+    "date": "Jan. 12, 2027",
+    "event": "OPEN TASK \u2014 Matter 35 (26CV501995) meet-and-confer with appearing parties at least 30 calendar days before the Feb. 11, 2027 CMC (Santa Clara Civil Lawsuit Notice / local CMC rules).",
+    "matters": [
+      35
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-35/CV-5012 Civil Lawsuit Notice (Clerk-Stamped) - 26CV501995.pdf"
+  },
+  {
+    "date": "Jan. 27, 2027",
+    "event": "OPEN TASK \u2014 File and serve Case Management Statement (CM-110) in Matter 35 (26CV501995) at least 15 calendar days before the Feb. 11, 2027 CMC.",
+    "matters": [
+      35
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-35/CV-5012 Civil Lawsuit Notice (Clerk-Stamped) - 26CV501995.pdf"
+  },
+  {
+    "date": "Feb. 11, 2027",
+    "event": "CASE MANAGEMENT CONFERENCE \u2014 Ngwa Nforbi v. Ross Stores, Inc., et al. (Matter 35, Santa Clara Sup. Ct. No. 26CV501995), Hon. Vince Parrett, Dept. 16 (stamp 02/11/27, 200P \u2014 confirm 2:00 p.m. / remote option under Local Civil Rule 8 on the portal). Appear; ADR stipulation (CV-5008) may cancel CMC if filed \u226530 days prior.",
+    "matters": [
+      35
+    ],
+    "type": "hearing",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-35/CV-5012 Civil Lawsuit Notice (Clerk-Stamped) - 26CV501995.pdf"
   },
   {
     "date": "Aug. 26, 2026",
-    "event": "EXECUTED \u2014 Matter 35 e-filed and paid via One Legal to Santa Clara Superior Court, First Street ~5 hours after the Aug. 25 ~9:00 p.m. Sunnyvale Ross detention (Confirmation #35442871; Filing Order #29111713; Court Transaction #24948831; submitted 2:06 AM PT Aug. 26). Documents: Verified Complaint (Unlimited) 28 pp., Civil Case Cover Sheet 3 pp., Summons 1 p., Civil Lawsuit Notice 1 p. Status email: Under Court Clerk Review \u2014 case number pending. Initial Filing billed; filing date for accepted filings relates back to Aug. 26 submission.",
+    "event": "EXECUTED \u2014 Santa Clara clerk accepted Matter 35 e-filing and assigned Case No. 26CV501995 (Env. #24948831; Reviewed By: M. Suarez). Hon. Vince Parrett, Dept. 16; first CMC Feb. 11, 2027. Court returned conformed Verified Complaint, CM-010, issued SUM-100, and clerk-stamped CV-5012.",
+    "matters": [
+      35
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "actor": "court",
+    "source": "/documents/matter-35/CV-5012 Civil Lawsuit Notice (Clerk-Stamped) - 26CV501995.pdf"
+  },
+  {
+    "date": "Aug. 26, 2026",
+    "event": "EXECUTED \u2014 Matter 35 e-filed and paid via One Legal to Santa Clara Superior Court, First Street ~5 hours after the Aug. 25 ~9:00 p.m. Sunnyvale Ross detention (Confirmation #35442871; Filing Order #29111713; Court Transaction #24948831; submitted 2:06 AM PT Aug. 26). Documents: Verified Complaint (Unlimited) 28 pp., Civil Case Cover Sheet 3 pp., Summons 1 p., Civil Lawsuit Notice 1 p. Later the same day the clerk accepted the filing and assigned Case No. 26CV501995.",
     "matters": [
       35
     ],
@@ -45,14 +89,14 @@
   },
   {
     "date": "Aug. 26, 2026",
-    "event": "EXECUTED \u2014 Verified Complaint for Damages and Injunctive Relief (v9) drafted and portfolio-rendered for Matter 35 (Ngwa Nforbi v. Ross Stores, Inc., et al.): Unruh Civil Rights Act, False Imprisonment, and Negligent Training and Supervision arising from the Aug. 25, 2026 Sunnyvale Ross shopping-while-Black detention (~28 pp. pleading paper). Subsequently e-filed Aug. 26, 2026 via One Legal (Confirmation #35442871).",
+    "event": "EXECUTED \u2014 Verified Complaint for Damages and Injunctive Relief (v9) drafted and portfolio-rendered for Matter 35 (Ngwa Nforbi v. Ross Stores, Inc., et al.): Unruh Civil Rights Act, False Imprisonment, and Negligent Training and Supervision arising from the Aug. 25, 2026 Sunnyvale Ross shopping-while-Black detention (~28 pp. pleading paper). E-filed Aug. 26, 2026 via One Legal (Confirmation #35442871); clerk-accepted as Case No. 26CV501995.",
     "matters": [
       35
     ],
     "type": "filing",
     "upcoming": false,
-    "filed": false,
-    "source": "/documents/matter-35/Verified Complaint - Ngwa Nforbi v Ross Stores Inc et al (Aug 26 2026).pdf"
+    "filed": true,
+    "source": "/documents/matter-35/Verified Complaint (CONFORMED, Filed Aug 26 2026) - 26CV501995.pdf"
   },
   {
     "date": "Aug. 25, 2026",
