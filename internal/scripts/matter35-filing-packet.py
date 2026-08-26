@@ -190,9 +190,11 @@ def build_sum100(out: Path) -> None:
         f"{P}.Notice[0].FillText25[0]": DEFENDANTS_NOTICE,
         # YOU ARE BEING SUED BY PLAINTIFF
         f"{P}.Notice[0].FillText180[0]": PLAINTIFF_CAPS,
-        # Court name / address (two short lines on the form)
-        f"{P}.Info[0].FillText3[0]": "Santa Clara Superior Court -- Downtown Branch",
-        f"{P}.Info[0].FillText2[0]": "191 North First Street, San Jose, CA 95113",
+        # Court name / address -- break before "County of" so the line does not clip
+        f"{P}.Info[0].FillText3[0]": "Superior Court of California,",
+        f"{P}.Info[0].FillText2[0]": (
+            "County of Santa Clara -- Downtown; 191 North First Street, San Jose, CA 95113"
+        ),
         # Case number left blank for clerk
         f"{P}.Info[0].CaseNumber[0].FillText26[0]": "",
         # Plaintiff without attorney
@@ -208,8 +210,10 @@ def build_sum100(out: Path) -> None:
     widget_values = {
         f"{P}.Notice[0].FillText25[0]": DEFENDANTS_NOTICE,
         f"{P}.Notice[0].FillText180[0]": PLAINTIFF_CAPS,
-        f"{P}.Info[0].FillText3[0]": "Santa Clara Superior Court -- Downtown Branch",
-        f"{P}.Info[0].FillText2[0]": "191 North First Street, San Jose, CA 95113",
+        f"{P}.Info[0].FillText3[0]": "Superior Court of California,",
+        f"{P}.Info[0].FillText2[0]": (
+            "County of Santa Clara -- Downtown; 191 North First Street, San Jose, CA 95113"
+        ),
         f"{P}.Info[0].FillText30[0]": PLAINTIFF_INFO_LINE,
     }
     for w in page.widgets() or []:
