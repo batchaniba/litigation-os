@@ -179,47 +179,89 @@ def build_cm010(out: Path) -> None:
     print(f"Wrote {out}")
 
 
+def _draw_wrapped(
+    page: fitz.Page,
+    rect: fitz.Rect,
+    text: str,
+    *,
+    fontsize: float = 8.5,
+    fontname: str = "times-roman",
+) -> None:
+    """White out a rect and draw wrapped text (AcroForm fields are too short)."""
+    page.draw_rect(rect, color=(1, 1, 1), fill=(1, 1, 1), width=0)
+    page.insert_textbox(
+        rect,
+        text,
+        fontsize=fontsize,
+        fontname=fontname,
+        align=fitz.TEXT_ALIGN_LEFT,
+        color=(0, 0, 0),
+    )
+
+
 def build_sum100(out: Path) -> None:
     src = SUM100_SRC
     if not src.is_file():
         src = _first_existing([Path("/tmp/forms/sum100.pdf"), SUM100_SRC])
 
     P = "SUM-100[0].Page1[0]"
+    # Leave cramped multi-line areas empty in the AcroForm; draw them below.
     fields = {
-        # NOTICE TO DEFENDANT
-        f"{P}.Notice[0].FillText25[0]": DEFENDANTS_NOTICE,
-        # YOU ARE BEING SUED BY PLAINTIFF
+        f"{P}.Notice[0].FillText25[0]": "",
         f"{P}.Notice[0].FillText180[0]": PLAINTIFF_CAPS,
-        # Court name / address -- break before "County of" so the line does not clip
-        f"{P}.Info[0].FillText3[0]": "Superior Court of California,",
-        f"{P}.Info[0].FillText2[0]": (
-            "County of Santa Clara -- Downtown; 191 North First Street, San Jose, CA 95113"
-        ),
-        # Case number left blank for clerk
+        f"{P}.Info[0].FillText3[0]": "",
+        f"{P}.Info[0].FillText2[0]": "",
         f"{P}.Info[0].CaseNumber[0].FillText26[0]": "",
-        # Plaintiff without attorney
         f"{P}.Info[0].FillText30[0]": PLAINTIFF_INFO_LINE,
-        # Date / clerk left blank for issuance
         f"{P}.Info[0].Sign1[0].FillText34[0]": "",
     }
     _fill_pypdf(src, out, fields)
 
-    # Reinforce XFA text via widget values (appearances).
     doc = fitz.open(str(out))
     page = doc[0]
-    widget_values = {
-        f"{P}.Notice[0].FillText25[0]": DEFENDANTS_NOTICE,
-        f"{P}.Notice[0].FillText180[0]": PLAINTIFF_CAPS,
-        f"{P}.Info[0].FillText3[0]": "Superior Court of California,",
-        f"{P}.Info[0].FillText2[0]": (
-            "County of Santa Clara -- Downtown; 191 North First Street, San Jose, CA 95113"
-        ),
-        f"{P}.Info[0].FillText30[0]": PLAINTIFF_INFO_LINE,
-    }
+
+    # Keep plaintiff name in its form field (short enough).
     for w in page.widgets() or []:
-        if w.field_name in widget_values:
-            w.field_value = widget_values[w.field_name]
+        if w.field_name == f"{P}.Notice[0].FillText180[0]":
+            w.field_value = PLAINTIFF_CAPS
             w.update()
+        elif w.field_name == f"{P}.Info[0].FillText30[0]":
+            w.field_value = PLAINTIFF_INFO_LINE
+            w.update()
+        elif w.field_name in {
+            f"{P}.Notice[0].FillText25[0]",
+            f"{P}.Info[0].FillText3[0]",
+            f"{P}.Info[0].FillText2[0]",
+        }:
+            w.field_value = ""
+            w.update()
+
+    # Defendants -- wrap so the last line is not clipped.
+    defendants_text = (
+        "ROSS STORES, INC., a Delaware corporation; "
+        "ROSS DRESS FOR LESS, INC., a Virginia corporation;\n"
+        "DOE 1; and DOES 2 through 20, inclusive"
+    )
+    _draw_wrapped(
+        page,
+        fitz.Rect(36.0, 112.0, 431.0, 142.0),
+        defendants_text,
+        fontsize=8.0,
+    )
+
+    # Court -- break before "County of" and before "191 North".
+    court_text = (
+        "Superior Court of California,\n"
+        "County of Santa Clara -- Downtown\n"
+        "191 North First Street, San Jose, CA 95113"
+    )
+    _draw_wrapped(
+        page,
+        fitz.Rect(36.0, 485.0, 362.0, 522.0),
+        court_text,
+        fontsize=8.0,
+    )
+
     doc.saveIncr()
     doc.close()
     print(f"Wrote {out}")
