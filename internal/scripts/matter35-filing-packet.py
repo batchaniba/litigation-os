@@ -53,7 +53,7 @@ CASE_NAME = "Ngwa Nforbi v. Ross Stores, Inc., et al."
 DEFENDANTS_NOTICE = (
     "ROSS STORES, INC., a Delaware corporation; "
     "ROSS DRESS FOR LESS, INC., a Virginia corporation; "
-    "DOE 1; and DOES 2 through 20, inclusive"
+    "DOE 1; and DOES 2 through 20, inclusive,"
 )
 
 COURT_COUNTY = "Santa Clara"
@@ -186,10 +186,12 @@ def build_sum100(out: Path) -> None:
         src = _first_existing([Path("/tmp/forms/sum100.pdf"), SUM100_SRC])
 
     P = "SUM-100[0].Page1[0]"
-    defendants_lines = (
-        "ROSS STORES, INC., a Delaware corporation; ROSS DRESS FOR LESS, INC.,\n"
-        "a Virginia corporation; DOE 1; and DOES 2 through 20, inclusive"
-    )
+    # Full complaint-caption defendant block. Drawn in the white space to the
+    # right of "NOTICE TO DEFENDANT:" (native FillText25 is too narrow/short).
+    defendants_caption = DEFENDANTS_NOTICE
+    # Right of NOTICE/AVISO labels (~ x 165), left of FOR COURT USE box (~ 431),
+    # down to just above YOU ARE BEING SUED (~ y 143).
+    defendants_rect = fitz.Rect(168.0, 90.5, 428.0, 141.0)
     court_line1 = "Superior Court of California,"
     court_line2 = "County of Santa Clara -- Downtown"
     court_line3 = "191 North First Street, San Jose, CA 95113"
@@ -199,7 +201,7 @@ def build_sum100(out: Path) -> None:
     court_font = "helv"
 
     fields = {
-        f"{P}.Notice[0].FillText25[0]": defendants_lines,
+        f"{P}.Notice[0].FillText25[0]": "",
         f"{P}.Notice[0].FillText180[0]": PLAINTIFF_CAPS,
         f"{P}.Info[0].FillText3[0]": court_line1,
         # Drawn into the native address rect below (empty field avoids double ink).
@@ -216,9 +218,7 @@ def build_sum100(out: Path) -> None:
     for w in page.widgets() or []:
         name = w.field_name or ""
         if name.endswith("FillText25[0]"):
-            w.field_flags = int(w.field_flags) | (1 << 12)
-            w.text_fontsize = 7.5
-            w.field_value = defendants_lines
+            w.field_value = ""
             w.update()
         elif name.endswith("FillText180[0]"):
             w.field_value = PLAINTIFF_CAPS
@@ -234,6 +234,31 @@ def build_sum100(out: Path) -> None:
             w.text_fontsize = 7
             w.field_value = PLAINTIFF_INFO_LINE
             w.update()
+
+    # Full caption in the NOTICE TO DEFENDANT white space (Helvetica, form style).
+    fontsize = 8.0
+    for trial in (8.0, 7.5, 7.0):
+        probe = fitz.open()
+        pp = probe.new_page(width=page.rect.width, height=page.rect.height)
+        rem = pp.insert_textbox(
+            defendants_rect,
+            defendants_caption,
+            fontsize=trial,
+            fontname="helv",
+            align=fitz.TEXT_ALIGN_LEFT,
+        )
+        probe.close()
+        if rem >= 0:
+            fontsize = trial
+            break
+    page.insert_textbox(
+        defendants_rect,
+        defendants_caption,
+        fontsize=fontsize,
+        fontname="helv",
+        align=fitz.TEXT_ALIGN_LEFT,
+        color=(0, 0, 0),
+    )
 
     # Two lines directly under "Superior Court of California," -- same x and font.
     # Baselines stay above the attorney-info label (~ y 524).
