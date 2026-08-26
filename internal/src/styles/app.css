@@ -215,10 +215,10 @@ a { color: inherit; }
    asset's full aspect ratio. */
 .firm-logo { flex-shrink: 0; display: block; object-fit: contain; object-position: right center; }
 .legacy-kco-logo { width: 115px; height: 37px; }
-.legacy-azimov-logo { width: 52px; height: 52px; }
+.legacy-azimov-logo { width: 52px; height: 52px; margin-right: 32px; position: relative; top: 10px; }
 .legacy-slb-logo { width: 118px; height: 62px; }
 .legacy-garcia-logo { width: 115px; height: 39px; }
-.legacy-mhs-logo { width: 116px; height: 24px; }
+.legacy-mhs-logo { width: 154px; height: 32px; margin-left: 10px; }
 .legacy-dag-logo { width: 64px; height: 64px; object-fit: cover; border-radius: 50%; object-position: center; }
 .legacy-header-controls { display: flex; flex: 1 1 100%; flex-direction: column; align-items: stretch; gap: 8px; }
 .legacy-header-actions { display: flex; align-items: center; justify-content: flex-end; gap: var(--header-action-gap); }
