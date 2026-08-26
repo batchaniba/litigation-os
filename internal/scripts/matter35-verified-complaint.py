@@ -1108,12 +1108,15 @@ CONTENT = [
 
 
 def _signature_block(d: PleadingPaper, exec_date: str, *, respectfully: bool) -> None:
-    d.ensure_space(10)
+    d.ensure_space(12)
     d.write_line(f"Dated: {exec_date}")
     d.blank_line()
     if respectfully:
         d.write_line("Respectfully submitted,", right=True, right_margin_offset=20)
         d.blank_line()
+    # Two blank pleading lines between the text above and the signature image.
+    d.blank_line()
+    d.blank_line()
     d.draw_signature_image(
         SIGNATURE_PATH, SIGNATURE_NATIVE_PX[0], SIGNATURE_NATIVE_PX[1], SIG_LINE
     )
@@ -1160,7 +1163,9 @@ def _verification(d: PleadingPaper, exec_date: str) -> None:
         "California.",
         first_indent=36,
     )
-    d.ensure_space(8)
+    d.ensure_space(10)
+    # Two blank pleading lines between the text above and the signature image.
+    d.blank_line()
     d.blank_line()
     d.draw_signature_image(
         SIGNATURE_PATH, SIGNATURE_NATIVE_PX[0], SIGNATURE_NATIVE_PX[1], SIG_LINE
