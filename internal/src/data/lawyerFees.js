@@ -585,27 +585,45 @@ const lawyer_fees_raw = [
       mid: 7700
     },
     notes: "Pre-filing intake and compliance-audit stage. No documents on disk yet (0 real pages). Estimated work encompasses initial client intake review, CASOMB provider verification and regulatory analysis under 15 CCR §3574, treatment contract analysis, and adaptation of the Matter 28 / Matter 5 pleading framework for Santa Clara County / CPC corporate defendants. Fee-shifting under 42 U.S.C. §1988 and Cal. Civ. Code §52.1(i) applies upon prevailing."
+  },
+  {
+    number: 35,
+    type: "State — Unruh / False Imprisonment / IIED / UCL (Santa Clara Sup. Ct.)",
+    documentsCount: 1,
+    totalPagesReal: 35,
+    hours: {
+      low: 40,
+      high: 70,
+      mid: 55
+    },
+    cost: {
+      low: 11200,
+      high: 19600,
+      mid: 15400
+    },
+    notes: "Aug. 26, 2026 verified complaint (35 pp. pleading paper) billed as a major state pleading: fact investigation and corporate-entity research, Unruh / §490.5(f) / false-imprisonment theory development, and full drafting/revision of the improved verified complaint with universal signature. Fee-shifting under Civ. Code §52(a) and CCP §1021.5 applies upon prevailing. Filing/service packet work (summons, CM-010, fee waiver) not yet on disk."
   }
 ];
 
 export const lawyer_fees = lawyer_fees_raw.map((row) => withMatterIdentity(row));
 
 export const lawyer_fees_summary = {
-  analysisDate: "2026-08-14",
-  totalMatters: 34,
-  totalDocumentsAnalyzed: 326,
-  totalPagesReal: 3898,
+  analysisDate: "2026-08-26",
+  totalMatters: 35,
+  totalDocumentsAnalyzed: 327,
+  totalPagesReal: 3933,
   methodology: {
     blendedHourlyRate: 280,
     rateRange: { seniorPartner: [350, 450], midAssociate: [250, 350], paralegal: [150, 200] },
-    note: "Every PDF in public/documents/matter-XX/ was measured with pdfinfo for real page counts (poppler-utils), then classified by document type (complaint, motion/opposition/reply, discovery, writ/habeas, declaration, administrative, evidence) and priced using the hours-per-page/per-document conversions in docs/LAWYER_FEES_CALCULATOR.md. Opposing counsel's filings are billed only at a light review rate, never at drafting rate. Matters with no uploaded PDFs are estimated conservatively from matters.js status text. Aug. 8, 2026 true-up: root N.D. Cal. Meza/Candelaria complaint+intake uploads fed into Matters 32/33; HC-004 packet into Matter 19; Accurate Background POS into Matter 29.",
+    note: "Every PDF in public/documents/matter-XX/ was measured with pdfinfo for real page counts (poppler-utils), then classified by document type (complaint, motion/opposition/reply, discovery, writ/habeas, declaration, administrative, evidence) and priced using the hours-per-page/per-document conversions in docs/LAWYER_FEES_CALCULATOR.md. Opposing counsel's filings are billed only at a light review rate, never at drafting rate. Matters with no uploaded PDFs are estimated conservatively from matters.js status text. Aug. 26, 2026 true-up: Matter 35 Unruh verified complaint (35 pp.) added as Cluster 6.",
   },
-  totalEstimatedHours: { low: 2871.8, high: 4769.2, mid: 3813.0 },
-  totalEstimatedCost: { low: 804104, high: 1335376, mid: 1067640 },
+  totalEstimatedHours: { low: 2911.8, high: 4839.2, mid: 3868.0 },
+  totalEstimatedCost: { low: 815304, high: 1354976, mid: 1083040 },
   byCluster: {
     cluster1: { label: "CHP / DUI / DMV", matters: [1, 2, 7, 8, 20, 24, 32, 33], costLow: 162036, costMid: 214172, costHigh: 266308 },
     cluster2: { label: "Parole Retaliation / HOPE", matters: [3, 4, 5, 6, 11, 13, 14, 15, 16, 17, 18, 21, 28, 30, 34], costLow: 463512, costMid: 610092, costHigh: 760872 },
     cluster3: { label: "Consumer Fraud / Employment", matters: [12, 22, 23, 25, 26, 27, 29, 31], costLow: 136976, costMid: 185500, costHigh: 233940 },
     cluster4: { label: "Administrative Writs & Habeas", matters: [9, 10, 19], costLow: 41580, costMid: 57890, costHigh: 74200 },
+    cluster6: { label: "Public Accommodation / Unruh", matters: [35], costLow: 11200, costMid: 15400, costHigh: 19600 },
   },
 };

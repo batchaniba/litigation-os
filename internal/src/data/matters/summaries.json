@@ -1014,5 +1014,33 @@
     ],
     "evidenceCount": 10,
     "documentCount": 0
+  },
+  {
+    "number": 35,
+    "caption": "Ngwa Nforbi v. Ross Stores, Inc., et al.",
+    "case_no": "TBD",
+    "court": "Santa Clara Sup. Ct.",
+    "claims": "Unruh Civil Rights Act (Civ. Code §§51, 51.5, 52); False Imprisonment; IIED; Negligent Hiring/Training/Retention/Supervision; UCL §17200; Declaratory Relief (CCP §1060)",
+    "status_label": "Pre-filing — verified complaint ready",
+    "lifecycle": "pre_filing",
+    "proceeding": "state_civil",
+    "phase": "pre_filing",
+    "badge": "PENDING",
+    "filed": "Not yet filed (verified complaint drafted Aug. 26, 2026)",
+    "judge": "TBD",
+    "cluster": 6,
+    "type": "State",
+    "archived": false,
+    "defendants": "Ross Stores, Inc. (Delaware corporation; CA SOS State ID 01642535; 5130 Hacienda Drive, Dublin, CA 94568); Ross Dress for Less, Inc. (Virginia corporation; CA Doc. No. 2642531; same Dublin HQ; owns/operates Sunnyvale Store); DOE 1 (white female loss-prevention employee ~55 who blocked Plaintiff's exit); DOE 2 (white female cashier who witnessed and prolonged the detention); and DOES 3 through 20, inclusive. Agent for service (info. and belief): C T Corporation System, 330 N. Brand Blvd., Suite 700, Glendale, CA 91203.",
+    "causes": [
+      "First — Violation of the Unruh Civil Rights Act (Civ. Code §§ 51, 51.5, 52)",
+      "Second — False Imprisonment",
+      "Third — Intentional Infliction of Emotional Distress",
+      "Fourth — Negligent Hiring, Training, Retention, and Supervision",
+      "Fifth — Unlawful and Unfair Business Practices (Bus. & Prof. Code § 17200)",
+      "Sixth — Declaratory Relief (CCP § 1060)"
+    ],
+    "evidenceCount": 7,
+    "documentCount": 1
   }
 ]

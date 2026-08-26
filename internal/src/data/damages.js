@@ -774,6 +774,35 @@ const matter_damages_raw = [
         aggressive: 0
       }
     ]
+  },
+  {
+    number: 35,
+    claims: "Unruh §§51/51.5/52; False Imprisonment; IIED; Negligent Supervision; UCL §17200; Declaratory Relief",
+    risk: "Intentional-discrimination proof is circumstantial; Ross will assert Pen. Code §490.5(f) merchant privilege — negated here by no observed theft, open-view outside beverage, and no Ross merchandise. Preserve receipt and demand store video early.",
+    settlement_note: "Standalone public-accommodation stop; no damages overlap with employment or CHP clusters. Statutory Unruh floor ($4,000/offense) plus treble/ED/punitive and fee-shifting drive settlement pressure once video and demographics are in discovery.",
+    conservative: 25000,
+    moderate: 75000,
+    aggressive: 250000,
+    components: [
+      {
+        label: "Unruh Civ. Code §52(a) — actual + up to treble / $4,000 statutory floor + fees",
+        conservative: 12000,
+        moderate: 35000,
+        aggressive: 100000
+      },
+      {
+        label: "False Imprisonment + IIED general damages (public racial accusation)",
+        conservative: 8000,
+        moderate: 25000,
+        aggressive: 75000
+      },
+      {
+        label: "Civ. Code §3294 punitive damages (managing-agent ratification pleaded)",
+        conservative: 5000,
+        moderate: 15000,
+        aggressive: 75000
+      }
+    ]
   }
 ];
 

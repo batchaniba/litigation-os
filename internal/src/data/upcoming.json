@@ -1,5 +1,16 @@
 [
   {
+    "date": "Aug. 26, 2026",
+    "event": "OPEN TASK — File and serve the Verified Complaint for Damages and Injunctive and Declaratory Relief, Ngwa Nforbi v. Ross Stores, Inc., et al. (Matter 35), in Santa Clara Superior Court (unlimited civil). Draft is complete (pleading-paper PDF with universal signature). Next: e-file complaint + civil case cover sheet + fee waiver/fee, obtain summons, and serve Ross Stores, Inc. and Ross Dress for Less, Inc. via the California agent for service of process.",
+    "matters": [
+      35
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-35/Verified Complaint - Ngwa Nforbi v Ross Stores Inc et al (Aug 26 2026).pdf"
+  },
+  {
     "date": "Aug. 31, 2026",
     "event": "OPEN TASK — Serve the operative Aug. 17, 2026 Amended CCP §425.115 Notice ($250,000) on Federal Express Corporation (Matter 25) in the same manner as a summons before any default prove-up if FedEx misses the Aug. 24, 2026 responsive deadline. Notice is executed but not yet filed/served; without timely personal service, punitive damages are unavailable on default.",
     "matters": [
