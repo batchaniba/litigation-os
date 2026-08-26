@@ -1,5 +1,47 @@
 [
   {
+    "date": "Aug. 26, 2026",
+    "event": "OPEN TASK — File and serve the Verified Complaint for Damages and Injunctive and Declaratory Relief, Ngwa Nforbi v. Ross Stores, Inc., et al. (Matter 35), in Santa Clara Superior Court (unlimited civil). Draft is complete (pleading-paper PDF with universal signature). Next: e-file complaint + civil case cover sheet + fee waiver/fee, obtain summons, and serve Ross Stores, Inc. and Ross Dress for Less, Inc. via the California agent for service of process.",
+    "matters": [
+      35
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-35/Verified Complaint - Ngwa Nforbi v Ross Stores Inc et al (Aug 26 2026).pdf"
+  },
+  {
+    "date": "Aug. 26, 2026",
+    "event": "EXECUTED — Internal Damages Worksheet for Matter 35 (Ngwa Nforbi v. Ross Stores, Inc., et al.): itemized actual damages $345,000; Unruh Civ. Code §52(a) treble ceiling $1,035,000; CM-010 / demand bottom line exceeds $1,000,000. DO NOT FILE — CCP §425.10(b) / Civ. Code §3294(e) bar pleading personal-injury and punitive amounts. Portfolio analytics updated to conservative $115,000 / moderate $345,000 / aggressive $1,035,000.",
+    "matters": [
+      35
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": false,
+    "source": "/documents/matter-35/Internal Damages Worksheet - Ngwa Nforbi v Ross Stores Inc et al (Aug 26 2026).pdf"
+  },
+  {
+    "date": "Aug. 26, 2026",
+    "event": "EXECUTED — Verified Complaint for Damages and Injunctive and Declaratory Relief drafted and portfolio-generated for Matter 35 (Ngwa Nforbi v. Ross Stores, Inc., et al.): Unruh Civil Rights Act, False Imprisonment, IIED, Negligent Hiring/Training/Supervision, UCL §17200, and Declaratory Relief arising from the Aug. 25, 2026 Sunnyvale Ross shopping-while-Black detention. Not yet filed.",
+    "matters": [
+      35
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": false,
+    "source": "/documents/matter-35/Verified Complaint - Ngwa Nforbi v Ross Stores Inc et al (Aug 26 2026).pdf"
+  },
+  {
+    "date": "Aug. 25, 2026",
+    "event": "INCIDENT — At approximately 8:45–9:00 p.m., Plaintiff purchased a Celsius drink at Sprouts (111 E. El Camino Real, Sunnyvale), entered the adjacent Ross Dress for Less (119 E. El Camino Real) holding the can in open view, browsed men's clothing without taking Ross merchandise, and was physically blocked at the exit by a white female loss-prevention employee (DOE 1) who asked whether he had paid for the drink, admitted Ross sells Celsius only \"sometimes,\" and asserted \"I'm allowed to do that.\" Cashier DOE 2 remained silent. Detention ~three minutes; no receipt requested, no search, no police, no Ross merchandise recovered. Matter 35.",
+    "matters": [
+      35
+    ],
+    "type": "incident",
+    "upcoming": false
+  },
+  {
     "date": "Aug. 31, 2026",
     "event": "OPEN TASK — Serve the operative Aug. 17, 2026 Amended CCP §425.115 Notice ($250,000) on Federal Express Corporation (Matter 25) in the same manner as a summons before any default prove-up if FedEx misses the Aug. 24, 2026 responsive deadline. Notice is executed but not yet filed/served; without timely personal service, punitive damages are unavailable on default.",
     "matters": [

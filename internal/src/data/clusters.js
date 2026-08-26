@@ -8,6 +8,7 @@ export const CLUSTERS = [
   { n: 3, label: "Employment Violations", color: "#FBBF24" },
   { n: 4, label: "Administrative Writs & Habeas Corpus", color: "#34D399" },
   { n: 5, label: "Consumer Fraud / Defective Vehicle", color: "#F97316" },
+  { n: 6, label: "Public Accommodation / Unruh", color: "#FB7185" },
 ];
 
 /** Short labels for the matters-list filter chips. */
@@ -17,4 +18,5 @@ export const CLUSTER_LABELS = {
   3: "Employment",
   4: "Writs",
   5: "Consumer Fraud",
+  6: "Unruh / Public Accom.",
 };
