@@ -48,6 +48,8 @@ build_proof_of_service(
 | `ndcal-mj-consent-declination-blank-template.pdf` | N.D. Cal. MJ consent |
 | `ser001-blank-template.pdf` | SER-001 sheriff service request |
 | `sum100-blank-template.pdf` | SUM-100 state summons |
+| `cm010-blank-template.pdf` | CM-010 civil case cover sheet |
+| `cv-5012-blank-template.pdf` | Santa Clara CV-5012 Civil Lawsuit Notice (blank for clerk) |
 | `hc004-blank-template.pdf` | HC-004 habeas |
 | `stanislaus-cc-authorization-blank-template.pdf` | Stanislaus CC auth |
 | `ndcal-proof-of-service-blank-template.pdf` | Alias of the POS blank (same bytes) |

@@ -150,7 +150,7 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 
 Standalone retail civil-rights matter arising from an August 25, 2026 consumer racial-profiling detention at the Ross Dress for Less in Sunnyvale:
 
-- **Matter 35** (Ngwa Nforbi v. Ross Stores, Inc., et al.) — Santa Clara Superior Court (pre-filing). On August 25, 2026, Plaintiff entered Ross holding a Celsius drink purchased minutes earlier at the adjacent Sprouts, browsed men's clothing without taking Ross merchandise, and was physically blocked at the exit by a white loss-prevention employee who questioned whether he had paid for the drink, admitted Ross sells Celsius only "sometimes," and asserted "I'm allowed to do that." Verified Complaint (v9) drafted August 26, 2026 asserting Unruh Civil Rights Act (Civ. Code §§51, 51.5, 52), False Imprisonment, and Negligent Training and Supervision — not yet filed or served.
+- **Matter 35** (Ngwa Nforbi v. Ross Stores, Inc., et al.) — Santa Clara Superior Court (pre-filing). On August 25, 2026, Plaintiff entered Ross holding a Celsius drink purchased minutes earlier at the adjacent Sprouts, browsed men's clothing without taking Ross merchandise, and was physically blocked at the exit by a white loss-prevention employee who questioned whether he had paid for the drink, admitted Ross sells Celsius only "sometimes," and asserted "I'm allowed to do that." Verified Complaint (v9) drafted August 26, 2026 asserting Unruh Civil Rights Act (Civ. Code §§51, 51.5, 52), False Imprisonment, and Negligent Training and Supervision — filing packet (CM-010, SUM-100, blank CV-5012) ready; not yet filed or served.
 
 [↑ Contents](#contents)
 
