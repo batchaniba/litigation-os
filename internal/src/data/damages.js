@@ -22,7 +22,8 @@ export const damages_table = [
     { category: "FCRA / ICRAA Vendor Liability — First Advantage LLC (Matter 31)", matters: [31], conservative: 30000, moderate: 89000, aggressive: 205000 },
     { category: "N.D. Cal. §1983 Meza-Gonzalez (Matter 32) — pleaded >$214k; $0 here to avoid double-count w/ M1/M2", matters: [32], conservative: 0, moderate: 0, aggressive: 0 },
     { category: "N.D. Cal. §1983 Nforbi v. Candelaria et al. (Matter 33, 3:26-cv-08272-LJC) — pleaded >$214k; $0 here to avoid double-count w/ M7", matters: [33], conservative: 0, moderate: 0, aggressive: 0 },
-    { category: "§1983 Monell / Individual + Bane Act — Counseling & Psychotherapy Center (Matter 34)", matters: [34], conservative: 0, moderate: 0, aggressive: 0 }
+    { category: "§1983 Monell / Individual + Bane Act — Counseling & Psychotherapy Center (Matter 34)", matters: [34], conservative: 0, moderate: 0, aggressive: 0 },
+    { category: "Unruh / False Imprisonment / IIED — Ross Stores (Matter 35)", matters: [35], conservative: 115000, moderate: 345000, aggressive: 1035000 }
 ];
 // Matters 3, 5, and 15 are excluded/reduced above (abandoned/dismissed Jul. 2026):
 // - Matter 3 (Derrick, ABANDONED): its Lost Income, Emotional Distress, Punitive, and Fees
@@ -778,29 +779,47 @@ const matter_damages_raw = [
   {
     number: 35,
     claims: "Unruh §§51/51.5/52; False Imprisonment; IIED; Negligent Supervision; UCL §17200; Declaratory Relief",
-    risk: "Intentional-discrimination proof is circumstantial; Ross will assert Pen. Code §490.5(f) merchant privilege — negated here by no observed theft, open-view outside beverage, and no Ross merchandise. Preserve receipt and demand store video early.",
-    settlement_note: "Standalone public-accommodation stop; no damages overlap with employment or CHP clusters. Statutory Unruh floor ($4,000/offense) plus treble/ED/punitive and fee-shifting drive settlement pressure once video and demographics are in discovery.",
-    conservative: 25000,
-    moderate: 75000,
-    aggressive: 250000,
+    risk: "Intentional-discrimination proof is circumstantial; Ross will assert Pen. Code §490.5(f) merchant privilege — negated here by no observed theft, open-view outside beverage, and no Ross merchandise. Preserve receipt and demand store video early. Item 4 (ongoing avoidance) is the weakest worksheet figure — advance only if prepared to substantiate (therapy notes / contemporaneous journal).",
+    settlement_note: "Internal Damages Worksheet (Aug. 26, 2026) is the valuation source — DO NOT FILE; CCP §425.10(b) / Civ. Code §3294(e) bar pleading ED/punitive amounts. Demand / CM-010 / mediation: actual $345,000; Unruh 3× ceiling $1,035,000; relief sought exceeds $1,000,000. Anchor on the civil-rights violation and statutory trebling, not the ~3-minute confinement.",
+    conservative: 115000,
+    moderate: 345000,
+    aggressive: 1035000,
     components: [
       {
-        label: "Unruh Civ. Code §52(a) — actual + up to treble / $4,000 statutory floor + fees",
-        conservative: 12000,
-        moderate: 35000,
-        aggressive: 100000
-      },
-      {
-        label: "False Imprisonment + IIED general damages (public racial accusation)",
-        conservative: 8000,
-        moderate: 25000,
+        label: "1. Public humiliation / embarrassment (front-of-store detention; Doe 2 + couple witnesses)",
+        conservative: 25000,
+        moderate: 75000,
         aggressive: 75000
       },
       {
-        label: "Civ. Code §3294 punitive damages (managing-agent ratification pleaded)",
-        conservative: 5000,
-        moderate: 15000,
-        aggressive: 75000
+        label: "2. Severe emotional distress (anxiety, shame, anger, sleep disturbance)",
+        conservative: 40000,
+        moderate: 125000,
+        aggressive: 125000
+      },
+      {
+        label: "3. Loss of dignity / injury to self-respect",
+        conservative: 20000,
+        moderate: 60000,
+        aggressive: 60000
+      },
+      {
+        label: "4. Ongoing retail avoidance anxiety (weakest worksheet item — substantiate or drop)",
+        conservative: 0,
+        moderate: 45000,
+        aggressive: 45000
+      },
+      {
+        label: "5. Equal-terms denial / liberty deprivation (~3-minute detention)",
+        conservative: 15000,
+        moderate: 40000,
+        aggressive: 40000
+      },
+      {
+        label: "6. Unruh Civ. Code §52(a) treble (up to 3× actual; $4,000 floor not additive to a larger trebled award)",
+        conservative: 15000,
+        moderate: 0,
+        aggressive: 690000
       }
     ]
   }

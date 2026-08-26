@@ -43,9 +43,9 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 | Active / Open | 16 |
 | — of which Settled | 1 (Matter 22 — Newanforbi v. Pilot Travel Centers LLC, Jul. 14, 2026) |
 | Dismissed / Closed / Abandoned | 19 |
-| Aggregate Exposure (Conservative) | ~$1,161,000+ |
-| Aggregate Exposure (Moderate) | ~$2,957,000+ |
-| Aggregate Exposure (Aggressive) | ~$6,579,000+ |
+| Aggregate Exposure (Conservative) | ~$1,276,000+ |
+| Aggregate Exposure (Moderate) | ~$3,302,000+ |
+| Aggregate Exposure (Aggressive) | ~$7,614,000+ |
 | Last Updated | August 8, 2026 |
 <!-- PORTFOLIO:OVERVIEW_TABLE:END -->
 
@@ -294,7 +294,8 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | N.D. Cal. §1983 Meza-Gonzalez (Matter 32) — pleaded >$214k; $0 here to avoid double-count w/ M1/M2 | 32 | $0 | $0 | $0 |
 | N.D. Cal. §1983 Nforbi v. Candelaria et al. (Matter 33, 3:26-cv-08272-LJC) — pleaded >$214k; $0 here to avoid double-count w/ M7 | 33 | $0 | $0 | $0 |
 | §1983 Monell / Individual + Bane Act — Counseling & Psychotherapy Center (Matter 34) | 34 | $0 | $0 | $0 |
-| **Portfolio Total (pre-deduplication)** | | **$1,160,672** | **$2,957,072** | **$6,579,272** |
+| Unruh / False Imprisonment / IIED — Ross Stores (Matter 35) | 35 | $115,000 | $345,000 | $1,035,000 |
+| **Portfolio Total (pre-deduplication)** | | **$1,275,672** | **$3,302,072** | **$7,614,272** |
 <!-- PORTFOLIO:DAMAGES_SUMMARY:END -->
 
 *Note: The portfolio total reflects independent per-defendant exposure across all matters before deduplication of shared economic events (e.g., the same CDL wage-loss period underlying Matters 1, 2, 7, 15). Per-matter settlement negotiations treat each defendant independently.*

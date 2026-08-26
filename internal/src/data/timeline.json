@@ -12,6 +12,17 @@
   },
   {
     "date": "Aug. 26, 2026",
+    "event": "EXECUTED — Internal Damages Worksheet for Matter 35 (Ngwa Nforbi v. Ross Stores, Inc., et al.): itemized actual damages $345,000; Unruh Civ. Code §52(a) treble ceiling $1,035,000; CM-010 / demand bottom line exceeds $1,000,000. DO NOT FILE — CCP §425.10(b) / Civ. Code §3294(e) bar pleading personal-injury and punitive amounts. Portfolio analytics updated to conservative $115,000 / moderate $345,000 / aggressive $1,035,000.",
+    "matters": [
+      35
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": false,
+    "source": "/documents/matter-35/Internal Damages Worksheet - Ngwa Nforbi v Ross Stores Inc et al (Aug 26 2026).pdf"
+  },
+  {
+    "date": "Aug. 26, 2026",
     "event": "EXECUTED — Verified Complaint for Damages and Injunctive and Declaratory Relief drafted and portfolio-generated for Matter 35 (Ngwa Nforbi v. Ross Stores, Inc., et al.): Unruh Civil Rights Act, False Imprisonment, IIED, Negligent Hiring/Training/Supervision, UCL §17200, and Declaratory Relief arising from the Aug. 25, 2026 Sunnyvale Ross shopping-while-Black detention. Not yet filed.",
     "matters": [
       35
