@@ -526,11 +526,11 @@ def build():
         doc,
         "Pretextual reasoning. The denial offered no engagement with any evidence, "
         "identified no deficient statutory element, and applied no statutory standard. "
-        "The absence of any evidence-based justification means the denial would not "
-        "have occurred but for retaliatory animus: on this pleaded record, no "
-        "legitimate, non-retaliatory ground for the boilerplate refusal appears. "
-        "Capp, 940 F.3d at 1055; Nieves v. Bartlett, 587 U.S. 391, 406 (2019). "
-        "(FAC ¶ 49(d).)",
+        "That absence of any evidence-based justification supports a plausible "
+        "inference that the denial would not have occurred but for retaliatory animus: "
+        "on this pleaded record, no legitimate, non-retaliatory ground for the "
+        "boilerplate refusal appears. Capp, 940 F.3d at 1055; Nieves v. Bartlett, "
+        "587 U.S. 391, 406 (2019). (FAC ¶ 49(d).)",
     )
     body(
         doc,
@@ -538,10 +538,10 @@ def build():
         "roles: supervisor of the accused officers and certifier of whether they "
         "committed qualifying crimes. (FAC ¶ 49(e).) Withrow v. Larkin, 421 U.S. 35, "
         "47 (1975). Defendant's observation that Plaintiff \"could have\" sought "
-        "certification from another entity (MTD at 11) confirms rather than cures the "
-        "conflict: Plaintiff needed certification from the detecting agency that held "
-        "the dashcam and Detention Certificate, and that agency's commander was "
-        "structurally compromised.",
+        "certification from another entity (MTD at 11) does not erase that conflict: "
+        "CHP was the detecting agency possessing the dashcam recording, the Detention "
+        "Certificate, and the underlying records, and that agency's commander was "
+        "structurally compromised as circumstantial evidence of retaliatory motive.",
     )
     body(
         doc,
