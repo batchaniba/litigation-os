@@ -14,14 +14,12 @@ and distinguishes those proceedings rather than disputing them.
 
 from __future__ import annotations
 
-import os
 from pathlib import Path
 
 from docx import Document
-from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_LINE_SPACING, WD_TAB_ALIGNMENT
+from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_LINE_SPACING
 from docx.oxml.ns import qn
-from docx.oxml import OxmlElement
-from docx.shared import Inches, Pt, Twips
+from docx.shared import Inches, Pt
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 REPO_ROOT = SCRIPT_DIR.parent.parent
