@@ -16,7 +16,7 @@ NORTHERN DISTRICT OF CALIFORNIA
 
 BRENDAN NGEHSI NEWANFORBI,
 
-		Plaintiff,
+Plaintiff,
 
 v.
 
@@ -26,7 +26,7 @@ and official capacities as Commander,
 
 Dublin Area, California Highway Patrol,
 
-		Defendant.
+Defendant.
 
 Case No. 4:26-cv-05953-ASK
 
@@ -46,21 +46,21 @@ II.	STANDARD OF REVIEW
 
 III.	ARGUMENT
 
-	A.	Defendant's Rule 12(f) Motions to Strike Are Improper Under Whittlestone
+A.	Defendant's Rule 12(f) Motions to Strike Are Improper Under Whittlestone
 
-	B.	The First Amendment Retaliation Claim Is Well-Pleaded
+B.	The First Amendment Retaliation Claim Is Well-Pleaded
 
-	C.	The Procedural Due Process Claim Is Well-Pleaded
+C.	The Procedural Due Process Claim Is Well-Pleaded
 
-	D.	The Substantive Due Process Claim Is Well-Pleaded
+D.	The Substantive Due Process Claim Is Well-Pleaded
 
-	E.	Declaratory and Injunctive Relief Are Proper
+E.	Declaratory and Injunctive Relief Are Proper
 
-	F.	The Related-Case Narrative Does Not Defeat the FAC
+F.	The Related-Case Narrative Does Not Defeat the FAC
 
-	G.	Qualified Immunity Does Not Apply
+G.	Qualified Immunity Does Not Apply
 
-	H.	Leave to Amend Must Be Granted
+H.	Leave to Amend Must Be Granted
 
 IV.	CONCLUSION
 
@@ -164,7 +164,7 @@ I. INTRODUCTION
 
 This Court has already screened Plaintiff's complaint under 28 U.S.C. § 1915 and held it sufficient. Accepting the pleaded facts as true, the Court found "plausible inferences that CHP officers falsely imprisoned [Plaintiff] in November 2024 based on fabricated evidence" and that "Defendant Serrato retaliated against him by wrongfully denying his certification request." (Dkt. No. 5 at 4.) Critically, the Court also held: "While Defendant Serrato had discretion to certify the request, he did not have discretion to retaliate against Mr. Newanforbi." (Id.) Plaintiff accepts that holding. He does not ask this Court to compel a Form I-918 Supplement B signature. He asks the Court to deny dismissal of claims that Serrato's April 20, 2026 denial was retaliatory and that the denial process failed constitutional and statutory minima.
 
-Two judicial determinations already confirm that Plaintiff is not entitled, in this Section 1983 action, to an order compelling a Form B signature. First, this Court expressly recognized Serrato's discretion to certify. (Dkt. No. 5 at 4.) Second, Judge Fickes denied Plaintiff's motion for judicial U-visa certification in Alameda Superior Court Case No. 26CV168913. Plaintiff accepts both determinations for purposes of the relief sought here: he does not ask this Court to force a Supplement B signature. That acceptance is limited to this federal pleading posture. It does not waive, and is not intended to waive, Petitioner's position in the pending Alameda writ proceeding (Case No. 26CV191136) that Penal Code section 679.10 imposes enforceable state-law duties-including mandatory processing, explanation, and related ministerial obligations-reviewable by mandate, with vacatur and remand for a new decision under the correct standards as the principal remedy. Defendant's motion, however, treats discretion as a license to retaliate and as a free pass for a boilerplate denial. That is the line Dkt. No. 5 drew, and Defendant never grapples with it. He asks the Court to reverse itself at Rule 12(b)(6) on the same pleading the Court already found adequate.
+Two judicial determinations already confirm that Plaintiff is not entitled, in this Section 1983 action, to an order compelling a Form B signature. First, this Court expressly recognized Serrato's discretion to certify. (Dkt. No. 5 at 4.) Second, Judge Fickes denied Plaintiff's motion for judicial U-visa certification in Alameda Superior Court Case No. 26CV168913. Plaintiff accepts both determinations for purposes of the relief sought here: he does not ask this Court to force a Supplement B signature. That acceptance is limited to this federal pleading posture. It does not waive, and is not intended to waive, Petitioner's position in the pending Alameda writ proceeding (Case No. 26CV191136) that Penal Code section 679.10 imposes enforceable state-law duties-including mandatory processing, explanation, and related ministerial obligations-reviewable by mandate, with vacatur and remand for a new decision under the correct standards as the principal remedy. Defendant's motion, however, treats discretion as a license to retaliate and as a free pass for a boilerplate denial. The Court's prior screening determination is highly persuasive here: Defendant now attacks essentially the same factual theory under the same Rule 12(b)(6) plausibility standard, and the Court has already identified a plausible retaliation inference on that theory. (Dkt. No. 5 at 3-4.)
 
 Accordingly, this opposition leads with the First Amendment retaliation claim-the claim this Court already found plausible and the claim least affected by certification discretion. Perry v. Sindermann, 408 U.S. 593, 597 (1972); Bd. of Cnty. Comm'rs v. Umbehr, 518 U.S. 668, 674 (1996); Ford v. City of Yakima, 706 F.3d 1188, 1193 (9th Cir. 2013). The due-process claims are preserved as secondary theories: not as a demand that Serrato must certify, but as claims that California Penal Code section 679.10 constrains how a denial may be reached and explained. Under federal law, the decision whether to sign remains discretionary. Perez Perez v. Wolf, 943 F.3d 853, 863 (9th Cir. 2019). Section 679.10 nonetheless uses mandatory language, creates a rebuttable presumption of helpfulness, requires a written explanation for denial, mandates timely processing, and prohibits treating the absence of charges or prosecution as dispositive. Those process constraints-not a right to a compelled yes-are what the due-process claims put at issue.
 
@@ -194,7 +194,7 @@ Punitive damages. The FAC alleges Defendant (a) denied certification despite pos
 
 Injunctive relief. The FAC alleges an ongoing deprivation of access to the U-visa process, continuing immigration uncertainty, inability to obtain employment authorization and removal protections, and dignitary injury from the unresolved denial. (FAC ¶¶ 39, 44, 51, Prayer ¶¶ E-F.) Those allegations speak directly to Winter's irreparable-harm and balance-of-equities inquiries. Winter v. Nat. Res. Def. Council, Inc., 555 U.S. 7, 20 (2008). Whether Plaintiff ultimately obtains an injunction is a merits question; it is not a basis to strike the prayer at the pleading stage.
 
-Attorney fees. Plaintiff does not contend he may recover fees for his own pro se work under Kay v. Ehrler, 499 U.S. 432, 438 (1991). The prayer should nonetheless be preserved as to any counsel retained or appointed during this litigation-a prospect this Court specifically facilitated by referring Plaintiff to the Federal Pro Bono Project. (Dkt. No. 5 at 5.) Striking the prayer now would gratuitously prejudice that contingency.
+Attorney fees. Plaintiff does not contend he may recover fees for his own pro se work under Kay v. Ehrler, 499 U.S. 432, 438 (1991). To the extent counsel is later retained or appointed-including through the Federal Pro Bono Project referral (Dkt. No. 5 at 5)-the prayer may matter. Either way, Rule 12(f) is not the vehicle to resolve that contingency now.
 
 B. The First Amendment Retaliation Claim Is Well-Pleaded.
 
@@ -218,21 +218,19 @@ This Court found these allegations plausible at screening: "While Defendant Serr
 
 C. The Procedural Due Process Claim Is Well-Pleaded.
 
-Even accepting Serrato's substantive discretion to deny certification, the manner of denial must still satisfy the process section 679.10 requires. Defendant argues the denial letter "lays out the reason behind the denial" and that "is all the procedural due process the law requires." (MTD at 9.) The FAC alleges otherwise.
+Even accepting Serrato's substantive discretion to deny certification, the manner of denial must still satisfy the process section 679.10 requires. Defendant argues the denial letter "lays out the reason behind the denial" and that "is all the procedural due process the law requires." (MTD at 9.) The FAC alleges otherwise. Procedural due process first requires a protected liberty or property interest. Bd. of Regents v. Roth, 408 U.S. 564, 577 (1972). Plaintiff does not claim a protected interest in the ultimate certification result. The interest alleged is narrower: section 679.10's mandatory criteria and denial procedures materially constrain official discretion and create a legitimate entitlement to a non-retaliatory, statutorily compliant decisional process-including a meaningful written explanation-even if not to a compelled Form B signature. (FAC ¶¶ 40-44.)
 
 Section 679.10, subdivision (i)(2), requires "a written explanation for the denial." Where the denial rests on non-cooperation, the explanation must include "specific details of any reasonable requests for cooperation and a detailed description of how the victim refused to cooperate." The first sentence is a stand-alone command applicable to every denial; the second supplements it for cooperation-based denials. To read the second as the only requirement would mean an agency could deny certification on the most common ground-a finding the applicant was not a crime victim-with no meaningful explanation at all. That is what AB 1261 was enacted to prevent. The Legislative Counsel's Digest describes the written-explanation duty without qualification: a certifying entity that does not certify "shall provide a written explanation for the denial of the certification." (Stats. 2023, ch. 679.)
 
 The FAC specifically alleges the five-sentence boilerplate was legally deficient because it: (a) did not address the dashcam evidence; (b) did not address the section 851.6 Detention Certificate; (c) did not identify which statutory element was unsatisfied; (d) did not acknowledge the rebuttable presumption of helpfulness; and (e) did not provide specific reasons as required by statute. (FAC ¶¶ 31, 37, 43.) A conclusory assertion that the incident "does not meet the standard"-without identifying the standard applied, the element found wanting, or any engagement with the agency's own exculpatory records-is not a "written explanation" in any meaningful sense. It is the form of denial AB 1261 was written to abolish.
 
-Under Mathews v. Eldridge, 424 U.S. 319, 335 (1976), the adequacy of process depends on the private interest at stake, the risk of erroneous deprivation, and the governmental interest. Here, the private interest is substantial: U-visa certification is the sole gateway to lawful immigration status and work authorization. The risk of erroneous deprivation is extreme: a five-sentence boilerplate engaging with no evidence. And the governmental interest in denying certification is minimal: the Supplement B is a factual certification, not a visa approval. (FAC ¶ 38.) These allegations state a plausible procedural due process claim. Goldberg v. Kelly, 397 U.S. 254, 262 (1970); Bd. of Regents v. Roth, 408 U.S. 564, 577 (1972).
+If that interest is protected, Mathews v. Eldridge, 424 U.S. 319, 335 (1976), confirms the process alleged here was inadequate: the private interest in access to the U-visa gateway is substantial; the risk of erroneous deprivation from a five-sentence boilerplate engaging with no evidence is extreme; and the governmental interest in withholding a reasoned explanation is minimal because the Supplement B is a factual certification, not a visa approval. (FAC ¶ 38.) Goldberg v. Kelly, 397 U.S. 254, 262 (1970). These allegations state a plausible procedural due process claim.
 
 D. The Substantive Due Process Claim Is Well-Pleaded.
 
-Plaintiff does not assert a federal right to U-visa certification. Nor does he argue that section 679.10 eliminates all discretion. He accepts this Court's holding that Serrato had discretion to certify for purposes of the compel-signature theory Defendant attributes to the FAC. (Dkt. No. 5 at 4.) That acceptance does not waive Plaintiff's separate state-mandate arguments under section 679.10. The claim here is narrower: where California has enacted a statute that (a) uses mandatory language ("shall"), (b) creates a rebuttable presumption of helpfulness, (c) requires specific written reasons for denial, (d) mandates processing within 30 days, and (e) expressly provides that investigation, charges, prosecution, or conviction are not required for certification, a certifying official who ignores those constraints and issues a boilerplate denial without engaging with the evidence in his own custody has acted arbitrarily.
+Plaintiff does not assert a federal right to U-visa certification. Nor does he argue that section 679.10 eliminates all discretion. To the extent FAC paragraph 35 can be read as alleging that section 679.10 eliminates all substantive certification discretion or that the official "must sign" whenever statutory elements are met, Plaintiff does not rely on that proposition here. The surviving constitutional theory concerns retaliatory motive and mandatory procedural constraints. He accepts this Court's holding that Serrato had discretion to certify for purposes of the compel-signature theory Defendant attributes to the FAC. (Dkt. No. 5 at 4.) That acceptance does not waive Plaintiff's separate state-mandate arguments under section 679.10. The claim here is narrower: where California has enacted a statute that (a) uses mandatory language ("shall"), (b) creates a rebuttable presumption of helpfulness, (c) requires specific written reasons for denial, (d) mandates processing within 30 days, and (e) expressly provides that investigation, charges, prosecution, or conviction are not required for certification, a certifying official who ignores those constraints and issues a boilerplate denial without engaging with the evidence in his own custody has acted arbitrarily.
 
-Under federal law, the decision to sign a certification is discretionary. Perez Perez v. Wolf, 943 F.3d 853, 863 (9th Cir. 2019). This Court quoted that principle at screening and still held the complaint sufficient. (Dkt. No. 5 at 3-4.) Federal discretion does not erase California's subsequent statutory constraints. Defendant's reliance on Catholic Charities CYO v. Chertoff, 622 F. Supp. 2d 865 (N.D. Cal. 2008), is misplaced: that case addressed the federal statute-which lacked mandatory language-and was decided seven years before section 679.10 and sixteen years before AB 1261.
-
-Shanks v. Dressel, 540 F.3d 1082, 1087 (9th Cir. 2008), establishes that where a statute constrains official discretion with ascertainable standards, arbitrary refusal to apply those standards violates due process. The question is not whether Defendant had discretion to deny certification. The question is whether he had discretion to deny it arbitrarily, without applying the statutory standards, without engaging with the evidence, and without providing the specific reasons the statute requires. He did not.
+Under federal law, the decision to sign a certification is discretionary. Perez Perez v. Wolf, 943 F.3d 853, 863 (9th Cir. 2019). This Court quoted that principle at screening and still held the complaint sufficient. (Dkt. No. 5 at 3-4.) Federal discretion does not erase California's subsequent statutory constraints. Defendant's reliance on Catholic Charities CYO v. Chertoff, 622 F. Supp. 2d 865 (N.D. Cal. 2008), is misplaced: that case addressed the federal statute-which lacked mandatory language-and was decided seven years before section 679.10 and sixteen years before AB 1261. The secondary substantive due process theory is preserved, but it is not the lead claim and does not depend on forcing a certification signature.
 
 Defendant's "civil tort" label rests on the absence of criminal charges. Section 679.10, subdivision (k)(1), expressly provides that investigation, charges, prosecution, or conviction "are not required" for certification. The FAC identifies enumerated qualifying criminal activity under 8 U.S.C. § 1101(a)(15)(U)(iii) and section 679.10(c)-false imprisonment, unlawful criminal restraint, felonious assault, perjury, and obstruction of justice. (FAC ¶ 21.) This Court already accepted those allegations as supporting a plausible inference of false imprisonment based on fabricated evidence. (Dkt. No. 5 at 4.) And Defendant's attack on the helpfulness presumption inverts subdivision (h): if no assistance was requested, the victim has not "refused or failed to provide" it. The FAC further alleges affirmative cooperation through complaints and production of the agency's own records. (FAC ¶¶ 23, 47.)
 
@@ -270,7 +268,7 @@ As the FAC discloses, the related actions involve different defendants, differen
 
 G. Qualified Immunity Does Not Apply.
 
-As a threshold matter, qualified immunity does not reach Plaintiff's official-capacity claims for prospective injunctive and declaratory relief. Defendant's own notice limits qualified immunity to his individual capacity. (MTD at 2, 14.) Plaintiff's Ex parte Young claims survive regardless of how the qualified-immunity question is resolved.
+As a threshold matter, qualified immunity does not reach Plaintiff's official-capacity claims for prospective injunctive and declaratory relief. Defendant's own notice limits qualified immunity to his individual capacity. (MTD at 2, 14.) Qualified immunity provides no defense to those official-capacity prospective claims.
 
 As to the individual-capacity claims, qualified immunity protects officials "from liability for civil damages insofar as their conduct does not violate clearly established statutory or constitutional rights of which a reasonable person would have known." Pearson v. Callahan, 555 U.S. 223, 231 (2009). Dismissal on qualified-immunity grounds at the 12(b)(6) stage is inappropriate "unless the court can determine from the complaint alone that qualified immunity applies." Keates v. Koile, 883 F.3d 1228, 1235 (9th Cir. 2018). It cannot do so here.
 
@@ -282,9 +280,9 @@ As set forth above, the FAC adequately alleges violations of substantive and pro
 
 The clearly established law is clearest on retaliation-and that is enough to defeat qualified immunity on the lead claim.
 
-First, the right to be free from First Amendment retaliation is clearly established. Borough of Duryea v. Guarnieri, 564 U.S. 379, 387 (2011); Hartman v. Moore, 547 U.S. 250, 256 (2006). Defendant's own authority confirms this: Ford v. City of Yakima, 706 F.3d at 1193, establishes the right to be free from retaliation in the very case Defendant cites for the elements of the claim. Capp, 940 F.3d at 1055, reversed dismissal of a retaliation claim on analogous pleading of retaliatory motive. Wesby's caution against defining clearly established law at too high a level of generality, 583 U.S. at 64, does not require a prior case about U-visa certification denials; it requires that the unlawfulness follow from established principles. Retaliating for protected petitioning by denying a statutory benefit within the official's control is not a close call-especially after this Court stated that Serrato "did not have discretion to retaliate." (Dkt. No. 5 at 4.)
+First, it was clearly established by April 2026 that a government official may not deny a discretionary benefit in retaliation for protected petitioning. Perry v. Sindermann, 408 U.S. 593, 597 (1972); Bd. of Cnty. Comm'rs v. Umbehr, 518 U.S. 668, 674 (1996); Borough of Duryea v. Guarnieri, 564 U.S. 379, 387 (2011); Hartman v. Moore, 547 U.S. 250, 256 (2006). The analogue here is concrete: denying a statutory certification benefit because the applicant filed complaints and litigation against officers under the official's supervision. Defendant's own authority confirms the elements: Ford v. City of Yakima, 706 F.3d at 1193. Capp, 940 F.3d at 1055, reversed dismissal of a retaliation claim on analogous pleading of retaliatory motive. Wesby's caution against defining clearly established law at too high a level of generality, 583 U.S. at 64, does not require a prior case about U-visa certifications; it requires that the unlawfulness follow from established principles. Retaliatory denial of a discretionary benefit for protected petitioning is not a close call-especially after this Court stated that Serrato "did not have discretion to retaliate." (Dkt. No. 5 at 4.)
 
-Second, as to the secondary due-process theories, Shanks v. Dressel, 540 F.3d 1082, 1087 (9th Cir. 2008), establishes the right to non-arbitrary decision-making by state officials exercising constrained statutory duties. Qualified immunity does not require factual identity; it requires fair notice at an appropriate level of generality. Hope v. Pelzer, 536 U.S. 730, 741 (2002). And section 679.10's specific written-explanation and non-dispositive-absence-of-charges requirements gave Defendant fair notice that a boilerplate denial ignoring the agency's own evidence would violate those constraints.
+Second, as to the secondary due-process theories, section 679.10's specific written-explanation and non-dispositive-absence-of-charges requirements gave Defendant fair notice that a boilerplate denial ignoring the agency's own evidence would violate those constraints. Hope v. Pelzer, 536 U.S. 730, 741 (2002). Those theories are preserved; they are not the lead clearly-established path.
 
 H. If Any Claim Is Dismissed, Leave to Amend Must Be Granted.
 

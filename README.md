@@ -222,9 +222,6 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 <!-- PORTFOLIO:UPCOMING_DEADLINES:START -->
 | Date | Matter | Event |
 |---|---|---|
-| Aug. 26, 2026 | 27 | Meet-and-confer deadline (computed) as to The RK Logistics Group, Inc. — Newanforbi v. Randstad US, LLC et al. (26CV199902) |
-| Aug. 26, 2026 | 29 | Meet-and-confer deadline (computed) — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554) |
-| Aug. 26, 2026 | 24 | Responsive pleading deadline (computed) — Newanforbi v. Serrato (4:26-cv-05953-ASK); 21 days from the Aug. 5, 2026 USMS personal service date (FRCP 12(a)(1)(A)) |
 | Aug. 27, 2026 | 26 | UPS responsive pleading deadline (computed) — Newanforbi v. United Parcel Service, Inc., USDC E.D. Cal. No. 1:26-at-03195. Fed. R. Civ. |
 | Aug. 27, 2026 | 26 | WATCH — if UPS responds by a Fed. R. Civ. P. 12 motion on its Rule 81(c)(2)(C) date, two clocks start immediately in Newanforbi v. |
 | Aug. 28, 2026 | 20 | Demurrer Hearing — Newanforbi v. California Highway Patrol et al. (26CV191136), 9:00 a.m., Dept. 25, Rene C. Davidson Courthouse, Oakland; Hon. Jenna M. Whitman |
