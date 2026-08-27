@@ -40,7 +40,7 @@
     {
       "id": "leman",
       "label": "In re Leman, 66 Cal.App.5th 200",
-      "document": "/documents/matter-19/HC-004 Notice and Request for Ruling Packet (with Exhibit A \u2014 Unstamped Petition) (Ready to File Aug 7 2026).pdf",
+      "document": "/documents/matter-19/HC-004 Notice and Request for Ruling Packet (with Exhibit A — Unstamped Petition) (Ready to File Aug 7 2026).pdf",
       "page": 11,
       "role": "plaintiff_filing",
       "matter": 19,
@@ -54,6 +54,15 @@
       "role": "plaintiff_filing",
       "matter": 19,
       "reason": "Pre-existing filed location tracked as remediation debt"
+    },
+    {
+      "id": "leman",
+      "label": "In re Leman, 66 Cal.App.5th 200",
+      "document": "/documents/matter-19/HC-004 Notice and Request for Ruling Packet (with Exhibit A — Unstamped Petition) (Ready to File Aug 17 2026).pdf",
+      "page": 11,
+      "role": "plaintiff_filing",
+      "matter": 19,
+      "reason": "Same pre-existing Leman hit as the Aug 7 HC-004 packet path — filename date rolled to Aug 17 without changing the fabricated cite on p.11"
     },
     {
       "id": "burrell-jackson",
@@ -89,7 +98,7 @@
       "page": 43,
       "role": "plaintiff_filing",
       "matter": 33,
-      "reason": "Same page-43 sentence already tracked at the operative draft path \u2014 this is the conformed copy the court docketed as Dkt. 1 on Aug. 10, 2026, so the debt is carried in a live federal filing rather than a draft. Cited as adverse out-of-circuit authority being distinguished, not as support. REMEDIATED: Dkt. 6 FAC (CONFORMED, Filed Aug. 17, 2026) at /documents/matter-33/ndcal/Dkt 06 - First Amended Complaint (CONFORMED, Filed Aug 17 2026).pdf is now the pleading of record and drops the passage entirely \u2014 retire this entry."
+      "reason": "Same page-43 sentence already tracked at the operative draft path — this is the conformed copy the court docketed as Dkt. 1 on Aug. 10, 2026, so the debt is carried in a live federal filing rather than a draft. Cited as adverse out-of-circuit authority being distinguished, not as support. REMEDIATED: Dkt. 6 FAC (CONFORMED, Filed Aug. 17, 2026) at /documents/matter-33/ndcal/Dkt 06 - First Amended Complaint (CONFORMED, Filed Aug 17 2026).pdf is now the pleading of record and drops the passage entirely — retire this entry."
     },
     {
       "id": "burrell-jackson",
@@ -99,6 +108,15 @@
       "role": "plaintiff_filing",
       "matter": 33,
       "reason": "Pre-existing filed location tracked as remediation debt"
+    },
+    {
+      "id": "burrell-jackson",
+      "label": "Burrell v. Jackson, 2003 WL 23545858",
+      "document": "/documents/matter-33/ndcal/Notice Identifying Operative First Amended Complaint (Candelaria) (Aug 24 2026).pdf",
+      "page": 1,
+      "role": "plaintiff_filing",
+      "matter": 33,
+      "reason": "Pre-existing Matter 33 Burrell fabrication referenced in the Aug 24 operative-FAC identification notice; tracked as debt pending retirement with superseded pleadings"
     }
   ]
 }

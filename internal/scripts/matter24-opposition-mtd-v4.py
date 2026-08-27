@@ -221,12 +221,10 @@ def build():
         "Bureerong v. Uvawas, 922 F. Supp. 1450 (C.D. Cal. 1996)",
         "Capp v. Cnty. of San Diego, 940 F.3d 1046 (9th Cir. 2019)",
         "Catholic Charities CYO v. Chertoff, 622 F. Supp. 2d 865 (N.D. Cal. 2008)",
-        "County of Sacramento v. Lewis, 523 U.S. 833 (1998)",
         "District of Columbia v. Wesby, 583 U.S. 48 (2018)",
         "Erickson v. Pardus, 551 U.S. 89 (2007)",
         "Ex parte Young, 209 U.S. 123 (1908)",
         "Ford v. City of Yakima, 706 F.3d 1188 (9th Cir. 2013)",
-        "Garity v. APWU Nat'l Lab. Org., 828 F.3d 848 (9th Cir. 2016)",
         "Goldberg v. Kelly, 397 U.S. 254 (1970)",
         "Hartman v. Moore, 547 U.S. 250 (2006)",
         "Hebbe v. Pliler, 627 F.3d 338 (9th Cir. 2010)",
@@ -241,11 +239,11 @@ def build():
         "Mt. Healthy City Sch. Dist. Bd. of Educ. v. Doyle, 429 U.S. 274 (1977)",
         "Navarro v. Block, 250 F.3d 729 (9th Cir. 2001)",
         "Nieves v. Bartlett, 587 U.S. 391 (2019)",
+        "Noll v. Carlson, 809 F.2d 1446 (9th Cir. 1987)",
         "Pearson v. Callahan, 555 U.S. 223 (2009)",
         "Perez Perez v. Wolf, 943 F.3d 853 (9th Cir. 2019)",
         "Perry v. Sindermann, 408 U.S. 593 (1972)",
         "Pratt v. Rowland, 65 F.3d 802 (9th Cir. 1995)",
-        "Shanks v. Dressel, 540 F.3d 1082 (9th Cir. 2008)",
         "Smith v. Wade, 461 U.S. 30 (1983)",
         "Whittlestone, Inc. v. Handi-Craft Co., 618 F.3d 970 (9th Cir. 2010)",
         "Wilkerson v. Butler, 229 F.R.D. 166 (E.D. Cal. 2005)",
@@ -370,7 +368,7 @@ def build():
         "construe the pleadings in the light most favorable to the nonmoving party.\" "
         "Knievel v. ESPN, 393 F.3d 1068, 1072 (9th Cir. 2005). Where competing "
         "inferences may be drawn from the same set of facts, the complaint survives-"
-        "\"even if it strikes a savvy judge that actual proof of those facts is "
+        "\"even if it strikes a savvy judge that actual proof of the facts alleged is "
         "improbable.\" Bell Atl. Corp. v. Twombly, 550 U.S. 544, 556 (2007).",
     )
     cite_body(
@@ -379,9 +377,12 @@ def build():
         "drafted by lawyers\" and must be construed liberally. ",
         "Erickson v. Pardus",
         ", 551 U.S. 89, 94 (2007); Hebbe v. Pliler, 627 F.3d 338, 342 (9th Cir. 2010). "
-        "Dismissal with prejudice is warranted only when \"it is absolutely clear that "
+        "Dismissal with prejudice is warranted only when it is \"absolutely clear that "
         "the deficiencies of the complaint could not be cured by amendment.\" Lopez v. "
-        "Smith, 203 F.3d 1122, 1130-31 (9th Cir. 2000) (en banc).",
+        "Smith, 203 F.3d 1122, 1137 (9th Cir. 2000) (en banc) (quoting Noll v. Carlson, "
+        "809 F.2d 1446, 1448 (9th Cir. 1987)). \"[T]he rule favoring liberality in "
+        "amendments to pleadings is particularly important for the pro se litigant.\" "
+        "Id. at 1131 (quoting Noll, 809 F.2d at 1448).",
     )
 
     # ---- III. ARGUMENT ----
@@ -402,17 +403,17 @@ def build():
         doc,
         "In ",
         "Whittlestone, Inc. v. Handi-Craft Co.",
-        ", 618 F.3d 970, 974-75 (9th Cir. 2010), the Ninth Circuit held that Rule 12(f) "
-        "authorizes striking only \"redundant, immaterial, impertinent, or scandalous\" "
-        "matter, and that a claim for damages \"cannot be stricken under Rule 12(f) on "
-        "the ground that such damages are precluded as a matter of law.\" Using Rule "
-        "12(f) to test the legal sufficiency of a prayer for relief \"creates a result "
-        "that is the functional equivalent of a Rule 12(b)(6) motion to dismiss,\" "
-        "improperly bypassing Rule 12(b)(6)'s procedural protections. Id. at 974. "
-        "Defendant's reliance on Bureerong v. Uvawas, 922 F. Supp. 1450 (C.D. Cal. "
-        "1996), and Wilkerson v. Butler, 229 F.R.D. 166 (E.D. Cal. 2005), is misplaced. "
-        "Both predate Whittlestone and are no longer good law on this point in the "
-        "Ninth Circuit.",
+        ", 618 F.3d 970 (9th Cir. 2010), the Ninth Circuit held that Rule 12(f) "
+        "\"does not authorize a district court to strike a claim for damages on the "
+        "ground that such damages are precluded as a matter of law.\" Id. at 971, "
+        "974-75. Rule 12(f) authorizes striking only \"redundant, immaterial, "
+        "impertinent, or scandalous\" matter. Id. at 973 (quoting Fed. R. Civ. P. "
+        "12(f)). Challenges that test the legal sufficiency of a damages prayer "
+        "\"are better suited for a Rule 12(b)(6) motion or a Rule 56 motion, not a "
+        "Rule 12(f) motion.\" Id. at 974. Defendant's reliance on Bureerong v. "
+        "Uvawas, 922 F. Supp. 1450 (C.D. Cal. 1996), and Wilkerson v. Butler, 229 "
+        "F.R.D. 166 (E.D. Cal. 2005), is misplaced. Both predate Whittlestone and "
+        "are no longer good law on this point in the Ninth Circuit.",
     )
     body(
         doc,
@@ -463,14 +464,17 @@ def build():
         "Plaintiff was not entitled to U-visa certification as a matter of law.\" "
         "(MTD at 2.) That gets the doctrine backwards-and ignores this Court's "
         "screening holding that Serrato's certification discretion does not include "
-        "discretion to retaliate. (Dkt. No. 5 at 4.) The Supreme Court has held that "
-        "government \"may not deny a benefit to a person on a basis that infringes his "
-        "constitutionally protected interests-even though he has no 'right' to a "
-        "valuable governmental benefit.\" Perry v. Sindermann, 408 U.S. 593, 597 "
-        "(1972); see also Bd. of Cnty. Comm'rs v. Umbehr, 518 U.S. 668, 674 (1996). "
-        "Discretionary benefits are precisely where retaliation doctrine operates. "
-        "Whether Plaintiff had a freestanding \"right\" to certification is irrelevant "
-        "to whether Defendant denied it in retaliation for protected activity.",
+        "discretion to retaliate. (Dkt. No. 5 at 4.) \"[E]ven though a person has no "
+        "'right' to a valuable governmental benefit and even though the government "
+        "may deny him the benefit for any number of reasons, there are some reasons "
+        "upon which the government may not rely. It may not deny a benefit to a "
+        "person on a basis that infringes his constitutionally protected "
+        "interests-especially, his interest in freedom of speech.\" Perry v. "
+        "Sindermann, 408 U.S. 593, 597 (1972); see also Bd. of Cnty. Comm'rs v. "
+        "Umbehr, 518 U.S. 668, 674 (1996). Discretionary benefits are precisely "
+        "where retaliation doctrine operates. Whether Plaintiff had a freestanding "
+        "\"right\" to certification is irrelevant to whether Defendant denied it in "
+        "retaliation for protected activity.",
     )
     cite_body(
         doc,
@@ -912,15 +916,16 @@ def build():
         "\"substantial experience with the legal process,\" has already amended once, "
         "and has pursued related litigation. (MTD at 16-17.) The standard does not "
         "turn on litigation history or amendment count; it turns on whether amendment "
-        "would be futile. \"[A] pro se litigant must be given leave to amend his or "
-        "her complaint unless it is absolutely clear that the deficiencies of the "
-        "complaint could not be cured by amendment.\" ",
-        "Garity v. APWU Nat'l Lab. Org.",
-        ", 828 F.3d 848, 854 (9th Cir. 2016). This Court granted leave to file the "
-        "First Amended Complaint. A single prior amendment does not establish "
-        "futility; the question is whether the deficiencies could be cured, not how "
-        "many times the complaint has been amended. Defendant has not demonstrated "
-        "futility.",
+        "would be futile. \"[T]he rule favoring liberality in amendments to pleadings "
+        "is particularly important for the pro se litigant.\" ",
+        "Lopez v. Smith",
+        ", 203 F.3d 1122, 1131 (9th Cir. 2000) (en banc). Leave should be granted "
+        "unless it is \"absolutely clear that the deficiencies of the complaint could "
+        "not be cured by amendment.\" Id. at 1137 (quoting Noll v. Carlson, 809 F.2d "
+        "1446, 1448 (9th Cir. 1987)). This Court granted leave to file the First "
+        "Amended Complaint. A single prior amendment does not establish futility; "
+        "the question is whether the deficiencies could be cured, not how many times "
+        "the complaint has been amended. Defendant has not demonstrated futility.",
     )
     body(
         doc,
