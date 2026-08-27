@@ -135,32 +135,6 @@ def _append(writer: PdfWriter, reader: PdfReader) -> None:
         writer.add_page(page)
 
 
-def _divider(label: str) -> PdfReader:
-    return _text_pages(
-        [
-            f"{label}",
-            "",
-            "Serve ONE complete set of the following documents on this defendant",
-            f"through {AGENT_NAME} at the address below (personal service on the agent).",
-            "",
-            f"Agent: {AGENT_NAME}",
-            f"Address: {AGENT_ADDR}",
-            f"         {AGENT_CITY}",
-            f"County:  {AGENT_COUNTY}",
-            "",
-            "Documents in this set:",
-            "  1. Verified Complaint (conformed / court-stamped)",
-            "  2. SUM-100 Summons (ISSUED)",
-            "  3. CV-5012 Civil Lawsuit Notice (clerk-stamped)",
-            "  4. CV-5003 ADR Information Sheet (Santa Clara Civil Division)",
-            "",
-            "After service: complete a separate POS-010 for THIS defendant only,",
-            "attach it behind this divider when you return proofs to Plaintiff, and",
-            "keep a copy for your file.",
-        ],
-        title="SERVICE SET DIVIDER",
-    )
-
 
 def cover_lines() -> list[str]:
     return [
@@ -312,32 +286,16 @@ def build() -> None:
         w.write(f)
     print("wrote", cover_path.name, f"({len(PdfReader(str(cover_path)).pages)} pp)")
 
-    # Combined packet
+    # Combined packet: court documents only (no cover / dividers / caption sheets).
+    # Instructions live in the separate cover sheet + email draft.
     packet = PdfWriter()
-    _append(packet, cover)
 
-    for d in DEFS:
-        _append(packet, _divider(d["label"]))
+    for _d in DEFS:
         for key in ("complaint", "summons", "cv5012", "adr"):
             _append(packet, PdfReader(str(DOCS[key])))
 
-    # Two blank POS-010s with caption stickers
-    for d in DEFS:
-        _append(
-            packet,
-            _text_pages(
-                [
-                    f"Complete this POS-010 for: **{d['name']} ONLY**",
-                    f"Case: {CAPTION}",
-                    f"Case No.: {CASE_NO}",
-                    f"Agent served: {AGENT_NAME}",
-                    f"Address: {AGENT_ADDR}, {AGENT_CITY}",
-                    "",
-                    "Blank Judicial Council POS-010 follows.",
-                ],
-                title="POS-010 CAPTION SHEET",
-            ),
-        )
+    # One blank POS-010 per defendant (no caption stickers)
+    for _d in DEFS:
         _append(packet, PdfReader(str(DOCS["pos"])))
 
     packet_path = OUT / (
