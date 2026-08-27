@@ -194,12 +194,12 @@ def build():
         "I.\tINTRODUCTION",
         "II.\tSTANDARD OF REVIEW",
         "III.\tARGUMENT",
-        "\tA.\tDefendant's Rule 12(f) Motions to Strike Are Procedurally Improper",
+        "\tA.\tDefendant's Rule 12(f) Motions to Strike Are Improper Under Whittlestone",
         "\tB.\tThe First Amendment Retaliation Claim Is Well-Pleaded",
         "\tC.\tThe Procedural Due Process Claim Is Well-Pleaded",
         "\tD.\tThe Substantive Due Process Claim Is Well-Pleaded",
         "\tE.\tDeclaratory and Injunctive Relief Are Proper",
-        "\tF.\tEven Accepting the Related-Case Narrative, It Does Not Defeat the FAC",
+        "\tF.\tThe Related-Case Narrative Does Not Defeat the FAC",
         "\tG.\tQualified Immunity Does Not Apply",
         "\tH.\tLeave to Amend Must Be Granted",
         "IV.\tCONCLUSION",
@@ -286,16 +286,23 @@ def build():
     )
     body(
         doc,
-        "Two judicial determinations already confirm that Plaintiff is not entitled to a "
-        "forced certification. First, this Court expressly recognized Serrato's "
-        "discretion to certify. (Dkt. No. 5 at 4.) Second, Judge Fickes denied "
-        "Plaintiff's motion for judicial U-visa certification in Alameda Superior Court "
-        "Case No. 26CV168913-confirming there is no freestanding right to compel a "
-        "Form B signature on these facts. Plaintiff accepts both determinations for "
-        "purposes of this opposition. Defendant's motion, however, treats discretion as "
-        "a license to retaliate and as a free pass for a boilerplate denial. That is the "
-        "line Dkt. No. 5 drew, and Defendant never grapples with it. He asks the Court "
-        "to reverse itself at Rule 12(b)(6) on the same pleading the Court already found "
+        "Two judicial determinations already confirm that Plaintiff is not entitled, in "
+        "this Section 1983 action, to an order compelling a Form B signature. First, "
+        "this Court expressly recognized Serrato's discretion to certify. (Dkt. No. 5 "
+        "at 4.) Second, Judge Fickes denied Plaintiff's motion for judicial U-visa "
+        "certification in Alameda Superior Court Case No. 26CV168913. Plaintiff "
+        "accepts both determinations for purposes of the relief sought here: he does "
+        "not ask this Court to force a Supplement B signature. That acceptance is "
+        "limited to this federal pleading posture. It does not waive, and is not "
+        "intended to waive, Petitioner's position in the pending Alameda writ "
+        "proceeding (Case No. 26CV191136) that Penal Code section 679.10 imposes "
+        "enforceable state-law duties-including mandatory processing, explanation, and "
+        "related ministerial obligations-reviewable by mandate, with vacatur and "
+        "remand for a new decision under the correct standards as the principal "
+        "remedy. Defendant's motion, however, treats discretion as a license to "
+        "retaliate and as a free pass for a boilerplate denial. That is the line "
+        "Dkt. No. 5 drew, and Defendant never grapples with it. He asks the Court to "
+        "reverse itself at Rule 12(b)(6) on the same pleading the Court already found "
         "adequate.",
     )
     body(
@@ -382,8 +389,7 @@ def build():
     # A. 12(f)
     subhead(
         doc,
-        "A. Defendant's Rule 12(f) Motions to Strike Are Procedurally Improper Under "
-        "Whittlestone.",
+        "A. Defendant's Rule 12(f) Motions to Strike Are Improper Under Whittlestone.",
     )
     body(
         doc,
@@ -549,8 +555,7 @@ def build():
     # C. PDP
     subhead(
         doc,
-        "C. The Procedural Due Process Claim Is Well-Pleaded Because the Denial Failed "
-        "to Satisfy the Statutory Requirements Defendant Himself Identifies.",
+        "C. The Procedural Due Process Claim Is Well-Pleaded.",
     )
     body(
         doc,
@@ -608,15 +613,17 @@ def build():
     # D. SDP (secondary; no compel-certification overclaim)
     subhead(
         doc,
-        "D. The Substantive Due Process Claim Is Well-Pleaded Because Section 679.10 "
-        "Constrains Arbitrary Denial-Not Because Plaintiff May Compel a Signature.",
+        "D. The Substantive Due Process Claim Is Well-Pleaded.",
     )
     body(
         doc,
         "Plaintiff does not assert a federal right to U-visa certification. Nor does he "
         "argue that section 679.10 eliminates all discretion. He accepts this Court's "
-        "holding that Serrato had discretion to certify. (Dkt. No. 5 at 4.) The claim "
-        "is narrower: where California has enacted a statute that (a) uses mandatory "
+        "holding that Serrato had discretion to certify for purposes of the "
+        "compel-signature theory Defendant attributes to the FAC. (Dkt. No. 5 at 4.) "
+        "That acceptance does not waive Plaintiff's separate state-mandate arguments "
+        "under section 679.10. The claim here is narrower: where California has enacted "
+        "a statute that (a) uses mandatory "
         "language (\"shall\"), (b) creates a rebuttable presumption of helpfulness, "
         "(c) requires specific written reasons for denial, (d) mandates processing "
         "within 30 days, and (e) expressly provides that investigation, charges, "
@@ -668,8 +675,7 @@ def build():
     # E. Declaratory / Injunctive
     subhead(
         doc,
-        "E. Declaratory and Injunctive Relief Are Proper as Forward-Looking Official-"
-        "Capacity Remedies.",
+        "E. Declaratory and Injunctive Relief Are Proper.",
     )
     body(
         doc,
@@ -677,12 +683,15 @@ def build():
         "remedy rather than a standalone cause of action. Declaratory relief is "
         "properly characterized as a form of relief. The relief sought, however, "
         "remains proper and should not be stricken. Plaintiff does not seek an order "
-        "compelling Defendant to sign the Supplement B. Consistent with this Court's "
-        "recognition of certification discretion, Plaintiff seeks vacatur of the "
-        "April 20, 2026 denial and a remand for a new decision that applies the "
-        "correct statutory standards, engages with the evidence, and is free of "
-        "retaliatory motive-leaving Defendant's substantive certification discretion "
-        "intact while correcting the constitutional defects.",
+        "compelling Defendant to sign the Supplement B in this action. Consistent with "
+        "this Court's recognition of certification discretion for Section 1983 "
+        "purposes, Plaintiff seeks vacatur of the April 20, 2026 denial and a remand "
+        "for a new decision that applies the correct statutory standards, engages with "
+        "the evidence, and is free of retaliatory motive-leaving Defendant's "
+        "substantive certification judgment intact while correcting the constitutional "
+        "defects. Nothing in that federal remedy request waives Petitioner's "
+        "state-law mandate claims in Case No. 26CV191136 concerning section 679.10's "
+        "enforceable processing and explanation duties.",
     )
     cite_body(
         doc,
@@ -714,8 +723,7 @@ def build():
     # F. Related cases - ACCEPT Fickes denial as true, distinguish
     subhead(
         doc,
-        "F. Even Accepting Defendant's Related-Case Narrative as True, It Does Not "
-        "Defeat the FAC.",
+        "F. The Related-Case Narrative Does Not Defeat the FAC.",
     )
     body(
         doc,

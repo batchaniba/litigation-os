@@ -59,6 +59,7 @@ FILED_STATUS = False
 
 SIG_IMG_W_PX, SIG_IMG_H_PX = SIGNATURE_NATIVE_PX
 SIG_WIDTH = 160
+SIG_RIGHT_OFFSET = 28
 
 ATTORNEY_BLOCK = [
     ("BRENDAN NGEHSI NEWANFORBI", "Times-Bold", 12),
@@ -67,6 +68,22 @@ ATTORNEY_BLOCK = [
     ("Stockton, CA 95204", "Times-Roman", 12),
     ("Telephone: (209) 801-4442", "Times-Roman", 12),
     ("E-mail: bnn.cdl@gmail.com", "Times-Roman", 12),
+]
+
+CAPTION_RIGHT = [
+    ("Case No. 4:26-cv-05953-ASK", False, False),
+    ("Action Filed: June 17, 2026", False, False),
+    ("", False, False),
+    ("PLAINTIFF'S OPPOSITION TO", True, False),
+    ("DEFENDANT'S MOTION TO", True, False),
+    ("DISMISS FIRST AMENDED", True, False),
+    ("COMPLAINT AND/OR MOTION", True, False),
+    ("TO STRIKE PORTIONS OF THE", True, False),
+    ("FIRST AMENDED COMPLAINT", True, False),
+    ("", False, False),
+    ("Date: September 16, 2026", False, False),
+    ("Time: 1:30 p.m.", False, False),
+    ("Judge: Mag. Ajay S. Krishnan", False, False),
 ]
 
 CAPTION_LEFT = [
@@ -82,23 +99,7 @@ CAPTION_LEFT = [
     ("California Highway Patrol,", True, False),
     ("", False, False),
     ("                          Defendant.", False, False),
-]
-
-CAPTION_RIGHT = [
-    ("Case No. 4:26-cv-05953-ASK", False, False),
-    ("", False, False),
-    ("PLAINTIFF'S OPPOSITION TO", True, False),
-    ("DEFENDANT'S MOTION TO", True, False),
-    ("DISMISS FIRST AMENDED", True, False),
-    ("COMPLAINT AND/OR MOTION", True, False),
-    ("TO STRIKE PORTIONS OF THE", True, False),
-    ("FIRST AMENDED COMPLAINT", True, False),
-    ("", False, False),
-    ("Date: September 16, 2026", False, False),
-    ("Time: 1:30 p.m.", False, False),
-    ("Judge: Mag. Ajay S. Krishnan", False, False),
-    ("", False, False),
-    ("Action Filed: June 17, 2026", False, False),
+    ("", False, False),  # pad so caption box clears the right-column last row
 ]
 
 # Longest-first so "Bd. of Cnty. Comm'rs v. Umbehr" beats shorter prefixes.
@@ -263,10 +264,9 @@ def render(out_path: Path, content: list[tuple[str, str]]) -> None:
             d.write_line(text, bold=True, center=True)
             d.blank_line()
         elif c_type == "SUBHEAD":
-            lines = text.split("\n")
-            d.ensure_space(len(lines) + 3)
-            for line in lines:
-                d.write_line(line, bold=True, center=False)
+            # Wrap long subheads so they never cross the right pleading border.
+            d.ensure_space(6)
+            d.write_wrapped(f"<<b:{text}>>", first_indent=0)
             d.blank_line()
         elif c_type == "PARA":
             d.write_wrapped(text, first_indent=36)
@@ -288,11 +288,11 @@ def render(out_path: Path, content: list[tuple[str, str]]) -> None:
                 SIG_IMG_H_PX,
                 line,
                 width=SIG_WIDTH,
-                right_margin_offset=20,
+                right_margin_offset=SIG_RIGHT_OFFSET,
             )
-            d.write_line(line, right=True, right_margin_offset=20)
+            d.write_line(line, right=True, right_margin_offset=SIG_RIGHT_OFFSET)
         else:
-            d.write_line(line, right=True, right_margin_offset=20)
+            d.write_line(line, right=True, right_margin_offset=SIG_RIGHT_OFFSET)
     d.blank_line()
 
     d.save()
