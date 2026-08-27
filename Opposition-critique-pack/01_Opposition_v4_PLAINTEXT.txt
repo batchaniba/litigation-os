@@ -16,7 +16,7 @@ NORTHERN DISTRICT OF CALIFORNIA
 
 BRENDAN NGEHSI NEWANFORBI,
 
-Plaintiff,
+		Plaintiff,
 
 v.
 
@@ -26,7 +26,7 @@ and official capacities as Commander,
 
 Dublin Area, California Highway Patrol,
 
-Defendant.
+		Defendant.
 
 Case No. 4:26-cv-05953-ASK
 
@@ -46,21 +46,21 @@ II.	STANDARD OF REVIEW
 
 III.	ARGUMENT
 
-A.	Defendant's Rule 12(f) Motions to Strike Are Improper Under Whittlestone
+	A.	Defendant's Rule 12(f) Motions to Strike Are Improper Under Whittlestone
 
-B.	The First Amendment Retaliation Claim Is Well-Pleaded
+	B.	The First Amendment Retaliation Claim Is Well-Pleaded
 
-C.	The Procedural Due Process Claim Is Well-Pleaded
+	C.	The Procedural Due Process Claim Is Well-Pleaded
 
-D.	The Substantive Due Process Claim Is Well-Pleaded
+	D.	The Substantive Due Process Claim Is Well-Pleaded
 
-E.	Declaratory and Injunctive Relief Are Proper
+	E.	Declaratory and Injunctive Relief Are Proper
 
-F.	The Related-Case Narrative Does Not Defeat the FAC
+	F.	The Related-Case Narrative Does Not Defeat the FAC
 
-G.	Qualified Immunity Does Not Apply
+	G.	Qualified Immunity Does Not Apply
 
-H.	Leave to Amend Must Be Granted
+	H.	Leave to Amend Must Be Granted
 
 IV.	CONCLUSION
 
@@ -210,9 +210,9 @@ Tight temporal proximity. POST forwarded the complaint on March 23. Serrato assi
 
 Concrete institutional incentive. Certifying the Supplement B would have required Serrato to attest under penalty of perjury that his subordinate officers committed qualifying criminal activity-while CHP was defending those same officers in two pending civil lawsuits. (FAC ¶ 49(c).) That incentive is not "Plaintiff's decision to sue"; it is Serrato's institutional interest in avoiding an official admission that would undermine those defenses.
 
-Pretextual reasoning. The denial offered no engagement with any evidence, identified no deficient statutory element, and applied no statutory standard. The absence of any evidence-based justification means the denial would not have occurred but for retaliatory animus: on this pleaded record, no legitimate, non-retaliatory ground for the boilerplate refusal appears. Capp, 940 F.3d at 1055; Nieves v. Bartlett, 587 U.S. 391, 406 (2019). (FAC ¶ 49(d).)
+Pretextual reasoning. The denial offered no engagement with any evidence, identified no deficient statutory element, and applied no statutory standard. That absence of any evidence-based justification supports a plausible inference that the denial would not have occurred but for retaliatory animus: on this pleaded record, no legitimate, non-retaliatory ground for the boilerplate refusal appears. Capp, 940 F.3d at 1055; Nieves v. Bartlett, 587 U.S. 391, 406 (2019). (FAC ¶ 49(d).)
 
-Structural conflict. Defendant simultaneously occupied two incompatible roles: supervisor of the accused officers and certifier of whether they committed qualifying crimes. (FAC ¶ 49(e).) Withrow v. Larkin, 421 U.S. 35, 47 (1975). Defendant's observation that Plaintiff "could have" sought certification from another entity (MTD at 11) confirms rather than cures the conflict: Plaintiff needed certification from the detecting agency that held the dashcam and Detention Certificate, and that agency's commander was structurally compromised.
+Structural conflict. Defendant simultaneously occupied two incompatible roles: supervisor of the accused officers and certifier of whether they committed qualifying crimes. (FAC ¶ 49(e).) Withrow v. Larkin, 421 U.S. 35, 47 (1975). Defendant's observation that Plaintiff "could have" sought certification from another entity (MTD at 11) does not erase that conflict: CHP was the detecting agency possessing the dashcam recording, the Detention Certificate, and the underlying records, and that agency's commander was structurally compromised as circumstantial evidence of retaliatory motive.
 
 This Court found these allegations plausible at screening: "While Defendant Serrato had discretion to certify the request, he did not have discretion to retaliate against Mr. Newanforbi." (Dkt. No. 5 at 4.) Defendant's motion simply asserts that each factor in isolation has an innocent explanation. That is a summary-judgment argument, not a Rule 12(b)(6) dismissal ground.
 
