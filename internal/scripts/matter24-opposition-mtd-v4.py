@@ -1,0 +1,1037 @@
+# -*- coding: utf-8 -*-
+#!/usr/bin/env python3
+"""
+Matter 24 - Plaintiff's Opposition to Serrato MTD / Motion to Strike (v4).
+
+Builds on v3 with critique fixes before filing:
+  - but-for causation throughout (Ford; drop Pinard from elements)
+  - restore Perry v. Sindermann / Umbehr against Notice ground 2
+  - TOA synced to body cites
+  - Section F sharpened (12(b)(6) forbids credibility inferences)
+  - Section H: neutralize "already amended once"; FAC PC cross-ref hedge
+
+  python3 internal/scripts/matter24-opposition-mtd-v4.py
+"""
+
+from __future__ import annotations
+
+from pathlib import Path
+
+from docx import Document
+from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_LINE_SPACING
+from docx.oxml.ns import qn
+from docx.shared import Inches, Pt
+
+SCRIPT_DIR = Path(__file__).resolve().parent
+REPO_ROOT = SCRIPT_DIR.parent.parent
+OUT_DOCX = REPO_ROOT / "Opposition to MTD v4.docx"
+OUT_MATTER24 = (
+    REPO_ROOT
+    / "internal"
+    / "public"
+    / "documents"
+    / "matter-24"
+    / "Opposition to Serrato MTD FAC and Strike v4 (Sep 2 2026).docx"
+)
+SIG_IMG = SCRIPT_DIR / "assets" / "newanforbi-pen-signature.png"
+
+FONT = "Times New Roman"
+SIZE = Pt(12)
+
+
+def set_run(run, *, bold=False, italic=False, size=SIZE):
+    run.font.name = FONT
+    run._element.rPr.rFonts.set(qn("w:eastAsia"), FONT)
+    run.font.size = size
+    run.bold = bold
+    run.italic = italic
+
+
+def add_para(
+    doc,
+    text="",
+    *,
+    bold=False,
+    italic=False,
+    center=False,
+    double=True,
+    space_after=0,
+    first_indent=None,
+    left_indent=None,
+):
+    p = doc.add_paragraph()
+    pf = p.paragraph_format
+    pf.space_before = Pt(0)
+    pf.space_after = Pt(space_after)
+    if double:
+        pf.line_spacing_rule = WD_LINE_SPACING.DOUBLE
+    else:
+        pf.line_spacing = 1.0
+        pf.line_spacing_rule = WD_LINE_SPACING.SINGLE
+    if center:
+        p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    if first_indent is not None:
+        pf.first_line_indent = first_indent
+    if left_indent is not None:
+        pf.left_indent = left_indent
+    if text:
+        run = p.add_run(text)
+        set_run(run, bold=bold, italic=italic)
+    return p
+
+
+def add_mixed(doc, parts, *, double=True, first_indent=None, left_indent=None, center=False):
+    """parts: list of (text, bold, italic)"""
+    p = add_para(
+        doc,
+        "",
+        double=double,
+        first_indent=first_indent,
+        left_indent=left_indent,
+        center=center,
+    )
+    for text, bold, italic in parts:
+        run = p.add_run(text)
+        set_run(run, bold=bold, italic=italic)
+    return p
+
+
+def add_footnote_para(doc, marker: str, text: str):
+    p = add_para(doc, "", double=True, first_indent=Inches(0.5))
+    run = p.add_run(marker)
+    set_run(run, bold=True, size=Pt(10))
+    run = p.add_run(" " + text)
+    set_run(run, size=Pt(10))
+    p.paragraph_format.line_spacing = 1.15
+    p.paragraph_format.line_spacing_rule = WD_LINE_SPACING.MULTIPLE
+    return p
+
+
+def heading(doc, text):
+    return add_para(doc, text, bold=True, center=False, double=True)
+
+
+def subhead(doc, text):
+    return add_para(doc, text, bold=True, double=True)
+
+
+def body(doc, text, *, indent=True):
+    return add_para(
+        doc,
+        text,
+        double=True,
+        first_indent=Inches(0.5) if indent else None,
+    )
+
+
+def cite_body(doc, lead, case_italic, rest):
+    """lead + italicized case + rest, first-line indented."""
+    return add_mixed(
+        doc,
+        [(lead, False, False), (case_italic, False, True), (rest, False, False)],
+        first_indent=Inches(0.5),
+    )
+
+
+def build():
+    doc = Document()
+    section = doc.sections[0]
+    section.page_width = Inches(8.5)
+    section.page_height = Inches(11)
+    for edge in ("left_margin", "right_margin", "top_margin", "bottom_margin"):
+        setattr(section, edge, Inches(1.0))
+
+    # ---- Caption block (single spaced) ----
+    for line, bold in [
+        ("BRENDAN NGEHSI NEWANFORBI", True),
+        ("Plaintiff, In Pro Per", False),
+        ("1455 Cat Tail Drive", False),
+        ("Stockton, CA 95204", False),
+        ("Telephone: (209) 801-4442", False),
+        ("E-mail: bnn.cdl@gmail.com", False),
+    ]:
+        add_para(doc, line, bold=bold, double=False)
+
+    add_para(doc, "", double=True)
+    add_para(doc, "UNITED STATES DISTRICT COURT", bold=True, center=True, double=True)
+    add_para(doc, "NORTHERN DISTRICT OF CALIFORNIA", bold=True, center=True, double=True)
+    add_para(doc, "", double=True)
+
+    for line, bold in [
+        ("BRENDAN NGEHSI NEWANFORBI,", True),
+        ("\t\tPlaintiff,", False),
+        ("v.", False),
+        ("CAPTAIN G. SERRATO, in his individual", False),
+        ("and official capacities as Commander,", False),
+        ("Dublin Area, California Highway Patrol,", False),
+        ("\t\tDefendant.", False),
+    ]:
+        add_para(doc, line, bold=bold, double=False)
+
+    add_para(doc, "", double=True)
+    add_para(doc, "Case No. 4:26-cv-05953-ASK", bold=True, double=False)
+    add_para(doc, "", double=True)
+    add_para(
+        doc,
+        "PLAINTIFF'S OPPOSITION TO DEFENDANT'S MOTION TO DISMISS FIRST AMENDED "
+        "COMPLAINT AND/OR MOTION TO STRIKE PORTIONS OF THE FIRST AMENDED COMPLAINT",
+        bold=True,
+        center=True,
+        double=False,
+    )
+    add_para(doc, "", double=True)
+    for line in [
+        "Date: September 16, 2026",
+        "Time: 1:30 p.m.",
+        "Judge: Magistrate Judge Honorable Ajay S. Krishnan",
+    ]:
+        add_para(doc, line, double=False)
+    add_para(doc, "", double=True)
+
+    # ---- TOC ----
+    add_para(doc, "TABLE OF CONTENTS", bold=True, center=True, double=True)
+    add_para(doc, "", double=True)
+    toc = [
+        "I.\tINTRODUCTION",
+        "II.\tSTANDARD OF REVIEW",
+        "III.\tARGUMENT",
+        "\tA.\tDefendant's Rule 12(f) Motions to Strike Are Procedurally Improper",
+        "\tB.\tThe Substantive Due Process Claim Is Well-Pleaded",
+        "\tC.\tThe Procedural Due Process Claim Is Well-Pleaded",
+        "\tD.\tThe First Amendment Retaliation Claim Is Well-Pleaded",
+        "\tE.\tDeclaratory and Injunctive Relief Are Proper",
+        "\tF.\tEven Accepting the Related-Case Narrative, It Does Not Defeat the FAC",
+        "\tG.\tQualified Immunity Does Not Apply",
+        "\tH.\tLeave to Amend Must Be Granted",
+        "IV.\tCONCLUSION",
+    ]
+    for line in toc:
+        add_para(doc, line, double=False)
+    add_para(doc, "", double=True)
+
+    # ---- TOA ----
+    add_para(doc, "TABLE OF AUTHORITIES", bold=True, center=True, double=True)
+    add_para(doc, "", double=True)
+    add_para(doc, "Cases", bold=True, italic=True, double=False)
+    cases = [
+        "Ashcroft v. Iqbal, 556 U.S. 662 (2009)",
+        "Bd. of Cnty. Comm'rs v. Umbehr, 518 U.S. 668 (1996)",
+        "Bd. of Regents v. Roth, 408 U.S. 564 (1972)",
+        "Bell Atl. Corp. v. Twombly, 550 U.S. 544 (2007)",
+        "Borough of Duryea v. Guarnieri, 564 U.S. 379 (2011)",
+        "Bureerong v. Uvawas, 922 F. Supp. 1450 (C.D. Cal. 1996)",
+        "Capp v. Cnty. of San Diego, 940 F.3d 1046 (9th Cir. 2019)",
+        "Catholic Charities CYO v. Chertoff, 622 F. Supp. 2d 865 (N.D. Cal. 2008)",
+        "County of Sacramento v. Lewis, 523 U.S. 833 (1998)",
+        "District of Columbia v. Wesby, 583 U.S. 48 (2018)",
+        "Erickson v. Pardus, 551 U.S. 89 (2007)",
+        "Ex parte Young, 209 U.S. 123 (1908)",
+        "Ford v. City of Yakima, 706 F.3d 1188 (9th Cir. 2013)",
+        "Garity v. APWU Nat'l Lab. Org., 828 F.3d 848 (9th Cir. 2016)",
+        "Goldberg v. Kelly, 397 U.S. 254 (1970)",
+        "Hartman v. Moore, 547 U.S. 250 (2006)",
+        "Hebbe v. Pliler, 627 F.3d 338 (9th Cir. 2010)",
+        "Hope v. Pelzer, 536 U.S. 730 (2002)",
+        "Kay v. Ehrler, 499 U.S. 432 (1991)",
+        "Keates v. Koile, 883 F.3d 1228 (9th Cir. 2018)",
+        "Khoja v. Orexigen Therapeutics, Inc., 899 F.3d 988 (9th Cir. 2018)",
+        "Knievel v. ESPN, 393 F.3d 1068 (9th Cir. 2005)",
+        "Lee v. City of Los Angeles, 250 F.3d 668 (9th Cir. 2001)",
+        "Lopez v. Smith, 203 F.3d 1122 (9th Cir. 2000) (en banc)",
+        "Mathews v. Eldridge, 424 U.S. 319 (1976)",
+        "Mt. Healthy City Sch. Dist. Bd. of Educ. v. Doyle, 429 U.S. 274 (1977)",
+        "Navarro v. Block, 250 F.3d 729 (9th Cir. 2001)",
+        "Nieves v. Bartlett, 587 U.S. 391 (2019)",
+        "Pearson v. Callahan, 555 U.S. 223 (2009)",
+        "Perez Perez v. Wolf, 943 F.3d 853 (9th Cir. 2019)",
+        "Perry v. Sindermann, 408 U.S. 593 (1972)",
+        "Pratt v. Rowland, 65 F.3d 802 (9th Cir. 1995)",
+        "Shanks v. Dressel, 540 F.3d 1082 (9th Cir. 2008)",
+        "Smith v. Wade, 461 U.S. 30 (1983)",
+        "Whittlestone, Inc. v. Handi-Craft Co., 618 F.3d 970 (9th Cir. 2010)",
+        "Wilkerson v. Butler, 229 F.R.D. 166 (E.D. Cal. 2005)",
+        "Winter v. Nat. Res. Def. Council, Inc., 555 U.S. 7 (2008)",
+        "Withrow v. Larkin, 421 U.S. 35 (1975)",
+    ]
+    for c in cases:
+        add_para(doc, c, double=False)
+    add_para(doc, "", double=False)
+    add_para(doc, "Statutes and Rules", bold=True, italic=True, double=False)
+    for s in [
+        "8 U.S.C. § 1101(a)(15)(U)(iii)",
+        "28 U.S.C. §§ 2201-2202",
+        "42 U.S.C. § 1983",
+        "42 U.S.C. § 1988",
+        "Cal. Penal Code § 679.10",
+        "Fed. R. Civ. P. 12(b)(6), 12(f)",
+        "N.D. Cal. Civil L.R. 7-2(a), 7-3(a)",
+    ]:
+        add_para(doc, s, double=False)
+    add_para(doc, "", double=True)
+
+    # ---- I. INTRODUCTION ----
+    heading(doc, "I. INTRODUCTION")
+    body(
+        doc,
+        "This Court has already screened Plaintiff's complaint under 28 U.S.C. § 1915 and "
+        "held it sufficient. Accepting the pleaded facts as true, the Court found "
+        "\"plausible inferences that CHP officers falsely imprisoned [Plaintiff] in "
+        "November 2024 based on fabricated evidence\" and that \"Defendant Serrato "
+        "retaliated against him by wrongfully denying his certification request.\" "
+        "(Dkt. No. 5 at 4.) The Court further held: \"While Defendant Serrato had "
+        "discretion to certify the request, he did not have discretion to retaliate "
+        "against Mr. Newanforbi.\" (Id.) Defendant's motion never grapples with that "
+        "holding. It asks the Court to reverse itself at Rule 12(b)(6) on the same "
+        "pleading the Court already found adequate.",
+    )
+    body(
+        doc,
+        "Defendant's central theory is that U-visa certification is entirely "
+        "discretionary, so no constitutional interest attaches. That argument "
+        "conflates two distinct legal regimes. Under federal law, the decision "
+        "whether to sign a certification is discretionary. But Plaintiff's claims "
+        "arise under California Penal Code section 679.10-a statute the Legislature "
+        "enacted, and substantially strengthened through AB 1261 (Stats. 2023, Ch. 679), "
+        "precisely because the federal discretionary framework had produced systemic "
+        "under-certification. Section 679.10 uses mandatory language (\"shall\"), "
+        "creates a rebuttable presumption of helpfulness, requires a written explanation "
+        "for denial, mandates processing within 30 days, and prohibits refusal for "
+        "enumerated impermissible reasons-including the absence of charges, "
+        "investigation, or prosecution. These constraints transform unfettered federal "
+        "discretion into a framework of constrained state-law duties. It is those duties "
+        "Plaintiff alleges Defendant violated.",
+    )
+    body(
+        doc,
+        "Defendant also moves under Rule 12(f) to strike Plaintiff's prayers for "
+        "declaratory relief, injunctive relief, attorney fees, and punitive damages. "
+        "The Ninth Circuit has held that Rule 12(f) does not authorize striking a claim "
+        "for damages on the ground that it is not recoverable as a matter of law. "
+        "Whittlestone, Inc. v. Handi-Craft Co., 618 F.3d 970, 974-75 (9th Cir. 2010). "
+        "Several of Defendant's grounds fail on that threshold alone.",
+    )
+    body(
+        doc,
+        "Finally, Defendant leans on related-case history-including Judge Fickes's "
+        "denial of a judicial U-visa certification motion in Alameda Superior Court "
+        "Case No. 26CV168913, Plaintiff's voluntary dismissals of earlier actions, and "
+        "an Eastern District report and recommendation-to argue retaliation is "
+        "implausible and leave to amend futile. Even accepting those facts as true, "
+        "they do not defeat this FAC. A different certifying official's decision on a "
+        "different request does not determine whether Captain Serrato's April 20, 2026 "
+        "denial-issued while supervising the accused officers and while those officers "
+        "were defendants in pending civil suits-complied with section 679.10 or was "
+        "free of retaliatory motive. This is the only action asserting Section 1983 "
+        "claims against Defendant Serrato in his individual capacity for that denial. "
+        "And this Court has already held those claims plausible.",
+    )
+    # footnote on notice
+    add_footnote_para(
+        doc,
+        "1",
+        "Plaintiff also notes that the motion was served on August 26, 2026 and noticed "
+        "for hearing on September 16, 2026-21 days' notice. Civil L.R. 7-2(a) requires "
+        "35 days. Plaintiff opposes on the merits without waiving any objection to the "
+        "deficient notice period. The opposition deadline under Civil L.R. 7-3(a) is "
+        "September 2, 2026.",
+    )
+
+    # ---- II. STANDARD ----
+    heading(doc, "II. STANDARD OF REVIEW")
+    cite_body(
+        doc,
+        "A motion to dismiss under Rule 12(b)(6) tests the legal sufficiency of the "
+        "complaint. ",
+        "Navarro v. Block",
+        ", 250 F.3d 729, 732 (9th Cir. 2001). To survive, a complaint must contain "
+        "\"sufficient factual matter, accepted as true, to 'state a claim to relief "
+        "that is plausible on its face.'\" Ashcroft v. Iqbal, 556 U.S. 662, 678 (2009). "
+        "The court must \"accept all factual allegations in the complaint as true and "
+        "construe the pleadings in the light most favorable to the nonmoving party.\" "
+        "Knievel v. ESPN, 393 F.3d 1068, 1072 (9th Cir. 2005). Where competing "
+        "inferences may be drawn from the same set of facts, the complaint survives-"
+        "\"even if it strikes a savvy judge that actual proof of those facts is "
+        "improbable.\" Bell Atl. Corp. v. Twombly, 550 U.S. 544, 556 (2007).",
+    )
+    cite_body(
+        doc,
+        "Pro se pleadings are held \"to less stringent standards than formal pleadings "
+        "drafted by lawyers\" and must be construed liberally. ",
+        "Erickson v. Pardus",
+        ", 551 U.S. 89, 94 (2007); Hebbe v. Pliler, 627 F.3d 338, 342 (9th Cir. 2010). "
+        "Dismissal with prejudice is warranted only when \"it is absolutely clear that "
+        "the deficiencies of the complaint could not be cured by amendment.\" Lopez v. "
+        "Smith, 203 F.3d 1122, 1130-31 (9th Cir. 2000) (en banc).",
+    )
+
+    # ---- III. ARGUMENT ----
+    heading(doc, "III. ARGUMENT")
+
+    # A. 12(f)
+    subhead(
+        doc,
+        "A. Defendant's Rule 12(f) Motions to Strike Are Procedurally Improper Under "
+        "Whittlestone.",
+    )
+    body(
+        doc,
+        "Defendant moves under Rule 12(f) to strike Plaintiff's fourth cause of action "
+        "and prayers for declaratory relief, injunctive relief, attorney fees, and "
+        "punitive damages. (MTD at 12-14.) Each motion fails at the threshold.",
+    )
+    cite_body(
+        doc,
+        "In ",
+        "Whittlestone, Inc. v. Handi-Craft Co.",
+        ", 618 F.3d 970, 974-75 (9th Cir. 2010), the Ninth Circuit held that Rule 12(f) "
+        "authorizes striking only \"redundant, immaterial, impertinent, or scandalous\" "
+        "matter, and that a claim for damages \"cannot be stricken under Rule 12(f) on "
+        "the ground that such damages are precluded as a matter of law.\" Using Rule "
+        "12(f) to test the legal sufficiency of a prayer for relief \"creates a result "
+        "that is the functional equivalent of a Rule 12(b)(6) motion to dismiss,\" "
+        "improperly bypassing Rule 12(b)(6)'s procedural protections. Id. at 974. "
+        "Defendant's reliance on Bureerong v. Uvawas, 922 F. Supp. 1450 (C.D. Cal. "
+        "1996), and Wilkerson v. Butler, 229 F.R.D. 166 (E.D. Cal. 2005), is misplaced. "
+        "Both predate Whittlestone and are no longer good law on this point in the "
+        "Ninth Circuit.",
+    )
+    body(
+        doc,
+        "To the extent the Court construes these arguments as part of the Rule 12(b)(6) "
+        "motion, they fail on the merits as well.",
+    )
+    body(
+        doc,
+        "Punitive damages. The FAC alleges Defendant (a) denied certification despite "
+        "possessing the dashcam recording and Detention Certificate proving fabricated "
+        "evidence, (b) issued a boilerplate denial engaging with no evidence, and (c) "
+        "did so amid a concrete institutional incentive to deny while supervising the "
+        "accused officers. (FAC ¶¶ 37, 49.) These allegations plausibly state \"reckless "
+        "or callous indifference to the federally protected rights of others.\" Smith v. "
+        "Wade, 461 U.S. 30, 56 (1983). That the FAC disclaims relitigating the officers' "
+        "underlying tort liability does not erase Serrato's own conduct: refusing to "
+        "engage with evidence in his own custody when performing a mandatory "
+        "certification function.",
+    )
+    body(
+        doc,
+        "Injunctive relief. The FAC alleges an ongoing deprivation of access to the "
+        "U-visa process, continuing immigration uncertainty, inability to obtain "
+        "employment authorization and removal protections, and dignitary injury from "
+        "the unresolved denial. (FAC ¶¶ 39, 44, 51, Prayer ¶¶ E-F.) Those allegations "
+        "speak directly to Winter's irreparable-harm and balance-of-equities inquiries. "
+        "Winter v. Nat. Res. Def. Council, Inc., 555 U.S. 7, 20 (2008). Whether "
+        "Plaintiff ultimately obtains an injunction is a merits question; it is not a "
+        "basis to strike the prayer at the pleading stage.",
+    )
+    body(
+        doc,
+        "Attorney fees. Plaintiff does not contend he may recover fees for his own "
+        "pro se work under Kay v. Ehrler, 499 U.S. 432, 438 (1991). The prayer should "
+        "nonetheless be preserved as to any counsel retained or appointed during this "
+        "litigation-a prospect this Court specifically facilitated by referring "
+        "Plaintiff to the Federal Pro Bono Project. (Dkt. No. 5 at 5.) Striking the "
+        "prayer now would gratuitously prejudice that contingency.",
+    )
+
+    # B. SDP
+    subhead(
+        doc,
+        "B. The Substantive Due Process Claim Is Well-Pleaded Because Section 679.10 "
+        "Creates Mandatory Duties That Constrain Defendant's Discretion.",
+    )
+    add_para(
+        doc,
+        "1. Defendant Conflates Federal Discretion with State Mandatory Duties.",
+        bold=True,
+        double=True,
+    )
+    body(
+        doc,
+        "Defendant argues Plaintiff has no substantive due process right to U-visa "
+        "certification because certification is \"discretionary.\" (MTD at 7.) That "
+        "conflates federal and state law.",
+    )
+    cite_body(
+        doc,
+        "Under federal law, the decision to sign a certification is discretionary. ",
+        "Perez Perez v. Wolf",
+        ", 943 F.3d 853, 863 (9th Cir. 2019). Defendant's citation to Perez Perez is "
+        "itself telling: this Court quoted the same decision in its screening order "
+        "and nonetheless held the complaint sufficient. (Dkt. No. 5 at 3-4.) Federal "
+        "discretion does not erase California's subsequent statutory constraints.",
+    )
+    body(
+        doc,
+        "The Legislature enacted section 679.10 in 2015 and substantially strengthened "
+        "it through AB 1261, effective January 1, 2024, precisely because the federal "
+        "discretionary framework had produced systemic under-certification. Section "
+        "679.10 uses mandatory language throughout: a certifying entity \"shall fully "
+        "complete and sign\" the certification (subd. (i)(1)); \"shall certify victim "
+        "helpfulness . . . when the victim was a victim of a qualifying criminal "
+        "activity and has been helpful, is being helpful or is likely to be helpful\" "
+        "(subd. (g)(1)); creates a \"rebuttable presumption\" of helpfulness (subd. (h)); "
+        "requires processing within 30 days (subd. (j)); requires a \"written explanation "
+        "for the denial\" (subd. (i)(2)); and provides that a current investigation, "
+        "filing of charges, prosecution, or conviction \"are not required\" for "
+        "certification (subd. (k)(1)). These mandatory constraints are the antithesis "
+        "of unfettered discretion.",
+    )
+    cite_body(
+        doc,
+        "Defendant's reliance on ",
+        "Catholic Charities CYO v. Chertoff",
+        ", 622 F. Supp. 2d 865 (N.D. Cal. 2008), is misplaced. Catholic Charities was "
+        "decided seven years before California enacted section 679.10 and sixteen years "
+        "before AB 1261. The court found no \"mandatory language with regard to actions "
+        "by law enforcement officials\" in the federal statute. Id. at 887. The "
+        "Legislature enacted section 679.10 to supply exactly the mandatory language "
+        "Catholic Charities found lacking. A pre-statute federal decision does not "
+        "defeat a claim that turns on the state statute's mandatory commands.",
+    )
+    cite_body(
+        doc,
+        "Plaintiff's substantive due process claim does not rest on a right to automatic "
+        "certification. It rests on a right to non-arbitrary decision-making within a "
+        "mandatory statutory framework-the kind of constrained discretion that creates "
+        "a legitimate claim of entitlement under the Fourteenth Amendment. ",
+        "Shanks v. Dressel",
+        ", 540 F.3d 1082, 1087 (9th Cir. 2008); County of Sacramento v. Lewis, 523 U.S. "
+        "833, 845-46 (1998). Even if Defendant retains fact-finding judgment on whether "
+        "the statutory elements are met, he does not retain discretion to ignore the "
+        "statute's mandatory procedures, to disregard the evidentiary record in his "
+        "own custody, or to deny certification under an unstated standard that "
+        "subdivision (k) forbids.",
+    )
+
+    add_para(
+        doc,
+        "2. The FAC Pleads Qualifying Criminal Activity-Not Merely a \"Civil Tort.\"",
+        bold=True,
+        double=True,
+    )
+    body(
+        doc,
+        "Defendant argues Plaintiff has alleged \"at most\" a \"civil tort.\" (MTD at 8, "
+        "11.) The FAC identifies enumerated qualifying criminal activity under 8 U.S.C. "
+        "§ 1101(a)(15)(U)(iii) and Penal Code section 679.10(c): false imprisonment, "
+        "unlawful criminal restraint, felonious assault, perjury, and obstruction of "
+        "justice. (FAC ¶ 21.) This Court already accepted those allegations as "
+        "supporting a plausible inference of false imprisonment based on fabricated "
+        "evidence. (Dkt. No. 5 at 4.)",
+    )
+    body(
+        doc,
+        "Defendant's \"civil tort\" label rests on the absence of criminal charges "
+        "against the officers. Section 679.10, subdivision (k)(1), expressly provides: "
+        "\"A current investigation, the filing of charges, an apprehension of the "
+        "suspect who committed the qualifying crime, closing of a case, and a "
+        "prosecution or conviction are not required for the victim to request and "
+        "obtain the Form I-918 Supplement B certification.\" The absence of charges is "
+        "statutorily irrelevant. Defendant's argument reads subdivision (k) out of the "
+        "statute-the same error this Court rejected at screening when it treated "
+        "false imprisonment based on fabricated evidence as qualifying criminal "
+        "activity notwithstanding the lack of a prosecution.",
+    )
+
+    add_para(
+        doc,
+        "3. The Presumption of Helpfulness Applies and Is Unrebutted.",
+        bold=True,
+        double=True,
+    )
+    body(
+        doc,
+        "Defendant argues the presumption of helpfulness is \"plainly not applicable\" "
+        "because no agency requested information and assistance from Plaintiff. "
+        "(MTD at 8.) That inverts the statute.",
+    )
+    body(
+        doc,
+        "The presumption attaches when \"the victim has not refused or failed to provide "
+        "information and assistance reasonably requested by law enforcement.\" (Pen. "
+        "Code, § 679.10, subd. (h).) If no information or assistance was requested, "
+        "then the victim has not \"refused or failed to provide\" it-and the presumption "
+        "is unrebutted. Defendant's reading would allow the certifying agency-which "
+        "here is also the agency whose officers committed the alleged qualifying "
+        "criminal activity-to defeat the presumption simply by never asking for help. "
+        "That places the agency in sole control of whether the presumption ever "
+        "operates and renders the provision a nullity.",
+    )
+    body(
+        doc,
+        "The FAC further alleges that Plaintiff affirmatively cooperated: he filed a "
+        "formal CHP complaint, a POST complaint, preserved and produced the dashcam "
+        "transcript, the CHP Report, and the Detention Certificate, and at no time "
+        "refused or failed to provide information reasonably requested. (FAC ¶¶ 23, "
+        "47.) Those allegations establish helpfulness under subdivision (g) even "
+        "without relying on the presumption.",
+    )
+
+    # C. PDP
+    subhead(
+        doc,
+        "C. The Procedural Due Process Claim Is Well-Pleaded Because the Denial Failed "
+        "to Satisfy the Statutory Requirements Defendant Himself Identifies.",
+    )
+    body(
+        doc,
+        "Defendant argues the denial letter \"lays out the reason behind the denial\" and "
+        "that \"is all the procedural due process the law requires.\" (MTD at 9.) The FAC "
+        "alleges otherwise.",
+    )
+    body(
+        doc,
+        "Section 679.10, subdivision (i)(2), requires \"a written explanation for the "
+        "denial.\" Where the denial rests on non-cooperation, the explanation must "
+        "include \"specific details of any reasonable requests for cooperation and a "
+        "detailed description of how the victim refused to cooperate.\" The first "
+        "sentence is a stand-alone command applicable to every denial; the second "
+        "supplements it for cooperation-based denials. To read the second as the only "
+        "requirement would mean an agency could deny certification on the most common "
+        "ground-a finding the applicant was not a crime victim-with no meaningful "
+        "explanation at all. That is what AB 1261 was enacted to prevent. The "
+        "Legislative Counsel's Digest describes the written-explanation duty without "
+        "qualification: a certifying entity that does not certify \"shall provide a "
+        "written explanation for the denial of the certification.\" (Stats. 2023, ch. "
+        "679.)",
+    )
+    body(
+        doc,
+        "The FAC specifically alleges the five-sentence boilerplate was legally "
+        "deficient because it: (a) did not address the dashcam evidence; (b) did not "
+        "address the section 851.6 Detention Certificate; (c) did not identify which "
+        "statutory element was unsatisfied; (d) did not acknowledge the rebuttable "
+        "presumption of helpfulness; and (e) did not provide specific reasons as "
+        "required by statute. (FAC ¶¶ 31, 37, 43.) A conclusory assertion that the "
+        "incident \"does not meet the standard\"-without identifying the standard "
+        "applied, the element found wanting, or any engagement with the agency's own "
+        "exculpatory records-is not a \"written explanation\" in any meaningful sense. "
+        "It is the form of denial AB 1261 was written to abolish.",
+    )
+    cite_body(
+        doc,
+        "Under ",
+        "Mathews v. Eldridge",
+        ", 424 U.S. 319, 335 (1976), the adequacy of process depends on the private "
+        "interest at stake, the risk of erroneous deprivation, and the governmental "
+        "interest. Here, the private interest is substantial: U-visa certification is "
+        "the sole gateway to lawful immigration status and work authorization. The "
+        "risk of erroneous deprivation is extreme: a five-sentence boilerplate "
+        "engaging with no evidence. And the governmental interest in denying "
+        "certification is minimal: the Supplement B is a factual certification, not a "
+        "visa approval. (FAC ¶ 38.) These allegations state a plausible procedural due "
+        "process claim. Goldberg v. Kelly, 397 U.S. 254, 262 (1970); Bd. of Regents v. "
+        "Roth, 408 U.S. 564, 577 (1972).",
+    )
+
+    # D. Retaliation
+    subhead(
+        doc,
+        "D. The First Amendment Retaliation Claim Is Well-Pleaded.",
+    )
+    body(
+        doc,
+        "Defendant's second ground in the Notice is that retaliation fails \"because "
+        "Plaintiff was not entitled to U-visa certification as a matter of law.\" "
+        "(MTD at 2.) That gets the doctrine backwards. The Supreme Court has held "
+        "that government \"may not deny a benefit to a person on a basis that "
+        "infringes his constitutionally protected interests-even though he has no "
+        "'right' to a valuable governmental benefit.\" Perry v. Sindermann, 408 U.S. "
+        "593, 597 (1972); see also Bd. of Cnty. Comm'rs v. Umbehr, 518 U.S. 668, 674 "
+        "(1996). Discretionary benefits are precisely where retaliation doctrine "
+        "operates. Whether Plaintiff had a freestanding \"right\" to certification is "
+        "irrelevant to whether Defendant denied it in retaliation for protected "
+        "activity.",
+    )
+    cite_body(
+        doc,
+        "To state a First Amendment retaliation claim, Plaintiff must allege that he "
+        "engaged in protected activity, that Defendant took adverse action that would "
+        "chill a person of ordinary firmness, and that Defendant's desire to chill "
+        "that speech was a but-for cause of the adverse action. ",
+        "Ford v. City of Yakima",
+        ", 706 F.3d 1188, 1193 (9th Cir. 2013). At the pleading stage, Plaintiff need "
+        "only allege facts making retaliatory but-for causation plausible-not prove "
+        "it, and not disprove every innocent explanation. Iqbal, 556 U.S. at 678; "
+        "Capp v. Cnty. of San Diego, 940 F.3d 1046, 1055 (9th Cir. 2019). The "
+        "Mt. Healthy burden-shift-under which the defendant may show it would have "
+        "taken the same action anyway-is an affirmative defense for summary judgment "
+        "or trial, not a pleading barrier. Mt. Healthy City Sch. Dist. Bd. of Educ. "
+        "v. Doyle, 429 U.S. 274, 287 (1977).",
+    )
+    body(
+        doc,
+        "The FAC more than satisfies Ford's but-for standard through five mutually "
+        "reinforcing allegations:",
+    )
+    body(
+        doc,
+        "Documented knowledge. Defendant's own March 26, 2026 letter expressly "
+        "acknowledges Plaintiff's citizen complaint and assigns an investigator. "
+        "(FAC ¶ 48.) This is a contemporaneous written admission-not an inference. "
+        "Defendant's response-that assigning an investigator is proper-misses the "
+        "point. The letter proves knowledge of protected activity before the denial. "
+        "Knowledge plus adverse action in close proximity is classic retaliation "
+        "circumstantial evidence.",
+    )
+    body(
+        doc,
+        "Tight temporal proximity. POST forwarded the complaint on March 23. Serrato "
+        "assigned an investigator on March 26. Plaintiff submitted the certification "
+        "request on April 9. Serrato denied it on April 20-eleven days later-without "
+        "substantive analysis. (FAC ¶ 49(b).) Pratt v. Rowland, 65 F.3d 802, 808 (9th "
+        "Cir. 1995). Defendant's \"prompt action reflects responsiveness\" theory is a "
+        "competing inference. Competing inferences must be resolved in Plaintiff's "
+        "favor at this stage. Twombly, 550 U.S. at 556.",
+    )
+    body(
+        doc,
+        "Concrete institutional incentive. Certifying the Supplement B would have "
+        "required Serrato to attest under penalty of perjury that his subordinate "
+        "officers committed qualifying criminal activity-while CHP was defending those "
+        "same officers in two pending civil lawsuits. (FAC ¶ 49(c).) That incentive is "
+        "not \"Plaintiff's decision to sue\"; it is Serrato's institutional interest in "
+        "avoiding an official admission that would undermine those defenses.",
+    )
+    body(
+        doc,
+        "Pretextual reasoning. The denial offered no engagement with any evidence, "
+        "identified no deficient statutory element, and applied no statutory standard. "
+        "The absence of any evidence-based justification means the denial would not "
+        "have occurred but for retaliatory animus: on this pleaded record, no "
+        "legitimate, non-retaliatory ground for the boilerplate refusal appears. "
+        "Capp, 940 F.3d at 1055; Nieves v. Bartlett, 587 U.S. 391, 406 (2019). "
+        "(FAC ¶ 49(d).)",
+    )
+    body(
+        doc,
+        "Structural conflict. Defendant simultaneously occupied two incompatible "
+        "roles: supervisor of the accused officers and certifier of whether they "
+        "committed qualifying crimes. (FAC ¶ 49(e).) Withrow v. Larkin, 421 U.S. 35, "
+        "47 (1975). Defendant's observation that Plaintiff \"could have\" sought "
+        "certification from another entity (MTD at 11) confirms rather than cures the "
+        "conflict: Plaintiff needed certification from the detecting agency that held "
+        "the dashcam and Detention Certificate, and that agency's commander was "
+        "structurally compromised.",
+    )
+    body(
+        doc,
+        "This Court found these allegations plausible at screening: \"While Defendant "
+        "Serrato had discretion to certify the request, he did not have discretion to "
+        "retaliate against Mr. Newanforbi.\" (Dkt. No. 5 at 4.) Defendant's motion "
+        "simply asserts that each factor in isolation has an innocent explanation. "
+        "That is a summary-judgment argument, not a Rule 12(b)(6) dismissal ground.",
+    )
+
+    # E. Declaratory / Injunctive
+    subhead(
+        doc,
+        "E. Declaratory and Injunctive Relief Are Proper as Forward-Looking Official-"
+        "Capacity Remedies.",
+    )
+    body(
+        doc,
+        "Plaintiff does not oppose treating the fourth cause of action as a prayer for "
+        "remedy rather than a standalone cause of action. Declaratory relief is "
+        "properly characterized as a form of relief. The relief sought, however, "
+        "remains proper and should not be stricken.",
+    )
+    cite_body(
+        doc,
+        "The FAC seeks prospective relief against Defendant in his official capacity: "
+        "a declaration that the April 20, 2026 denial violated constitutional "
+        "standards and that Plaintiff is entitled to a new certification decision "
+        "applying the correct standards to the evidence in CHP's possession, together "
+        "with corresponding injunctive relief. (FAC ¶¶ 53-54, Prayer ¶¶ E-F.) That is "
+        "prospective relief authorized by ",
+        "Ex parte Young",
+        ", 209 U.S. 123 (1908). It is not duplicative of the damages claims against "
+        "Defendant in his individual capacity.",
+    )
+    body(
+        doc,
+        "Defendant's authorities involve plaintiffs seeking declarations about "
+        "completed foreclosures or other purely past wrongs with no forward-looking "
+        "component. (MTD at 12.) Here an actual controversy remains live: Plaintiff's "
+        "certification remains denied; he still needs a lawful certification decision "
+        "to pursue U nonimmigrant status; and the parties dispute whether the April 20 "
+        "denial complied with constitutional and statutory standards. A new decision "
+        "on a correct legal standard is forward-looking relief, not a retrospective "
+        "damages substitute.",
+    )
+
+    # F. Related cases - ACCEPT Fickes denial as true, distinguish
+    subhead(
+        doc,
+        "F. Even Accepting Defendant's Related-Case Narrative as True, It Does Not "
+        "Defeat the FAC.",
+    )
+    body(
+        doc,
+        "Defendant argues that Judge Fickes's denial of Plaintiff's judicial U-visa "
+        "certification motion in Case No. 26CV168913, Plaintiff's voluntary dismissals "
+        "of earlier actions, and an Eastern District report and recommendation show "
+        "that retaliation is implausible and that leave to amend would be futile. "
+        "(MTD at 11, 16-17.) Plaintiff accepts those procedural facts for purposes of "
+        "this opposition. They still do not warrant dismissal.",
+    )
+    add_para(
+        doc,
+        "1. Extrinsic Materials Are Improper on a Bare Rule 12(b)(6) Record.",
+        bold=True,
+        double=True,
+    )
+    cite_body(
+        doc,
+        "On a Rule 12(b)(6) motion, the court generally may not consider materials "
+        "outside the pleadings. ",
+        "Lee v. City of Los Angeles",
+        ", 250 F.3d 668, 688-89 (9th Cir. 2001). Judicial notice may reach an order's "
+        "existence but not the truth of disputed matters recited within it, and may "
+        "not be used to supply missing elements or to resolve competing inferences "
+        "against the plaintiff. Khoja v. Orexigen Therapeutics, Inc., 899 F.3d 988, "
+        "998-1003 (9th Cir. 2018). Defendant submits no request for judicial notice, "
+        "no declaration, and no exhibits. Even if the Court takes notice that Judge "
+        "Fickes denied a certification motion and that other cases were dismissed, "
+        "those facts do not establish-much less conclusively establish-that Serrato's "
+        "April 20 denial was lawful or non-retaliatory. What Defendant actually asks "
+        "is that the Court draw adverse inferences about Plaintiff's credibility and "
+        "litigation motives from materials the Court cannot test on this record. That "
+        "is the functional equivalent of a credibility determination-exactly what "
+        "Rule 12(b)(6) forbids.",
+    )
+    add_para(
+        doc,
+        "2. Judge Fickes's Denial Does Not Resolve This Case.",
+        bold=True,
+        double=True,
+    )
+    body(
+        doc,
+        "Accepting that Judge Fickes denied Plaintiff's motion for judicial U-visa "
+        "certification on June 18, 2026, that denial does not defeat the FAC for at "
+        "least four independent reasons.",
+    )
+    body(
+        doc,
+        "First, different certifying official. Section 679.10 and 8 C.F.R. "
+        "§ 214.14(a)(2) authorize multiple categories of certifying officials, "
+        "including judges and law-enforcement supervisors. Judge Fickes's decision "
+        "concerned whether a superior-court judge should certify Form I-918 "
+        "Supplement B in a stayed civil tort action. This case concerns whether "
+        "Captain Serrato-Commander of the CHP Dublin Area, supervisor of the accused "
+        "officers, and the official who signed the April 20, 2026 denial-violated "
+        "Plaintiff's constitutional rights in performing that agency certification "
+        "function. One certifying official's denial does not immunize another's "
+        "allegedly retaliatory or arbitrary denial.",
+    )
+    body(
+        doc,
+        "Second, different legal question. The Fickes motion asked a state judge to "
+        "issue an affirmative certification. This action asks whether Serrato's "
+        "existing denial was unconstitutional-because it ignored mandatory statutory "
+        "procedures, disregarded the agency's own evidence, and was motivated by "
+        "retaliation for protected petitioning. A \"no\" on judicial certification is "
+        "not a \"yes\" on the lawfulness of Serrato's process or motive.",
+    )
+    body(
+        doc,
+        "Third, different record posture and conflict. Serrato decided the request "
+        "while personally supervising the accused officers, after acknowledging "
+        "Plaintiff's POST/citizen complaint, and while those officers were defendants "
+        "in pending civil suits. (FAC ¶¶ 48-49.) Judge Fickes did not occupy that "
+        "structural conflict. The retaliation and bias allegations that this Court "
+        "found plausible at screening are specific to Serrato.",
+    )
+    body(
+        doc,
+        "Fourth, no preclusion showing. Defendant has not pleaded or briefed claim "
+        "preclusion, issue preclusion, or Rooker-Feldman. He offers the Fickes denial "
+        "as atmosphere for a futility / \"serial litigation\" narrative. Atmosphere is "
+        "not a Rule 12(b)(6) defense. And Defendant cannot use another forum's "
+        "certification denial to contradict this Court's screening determination that "
+        "false imprisonment based on fabricated evidence is plausibly pleaded "
+        "qualifying criminal activity here. (Dkt. No. 5 at 4.)",
+    )
+    add_para(
+        doc,
+        "3. The Related Actions Are Not Duplicative of This One.",
+        bold=True,
+        double=True,
+    )
+    body(
+        doc,
+        "As the FAC discloses, the related actions involve different defendants, "
+        "different legal theories, and different forms of relief. (FAC ¶¶ 11-12.) The "
+        "Eastern District case concerned Fourth Amendment claims against the "
+        "arresting officers. The Alameda tort case concerned false imprisonment, "
+        "battery, and Bane Act theories against those officers and the State. The "
+        "Alameda writ case (Matter 20) seeks state-law mandamus against CHP in its "
+        "official capacity under Code of Civil Procedure section 1085. This case-the "
+        "only one asserting Section 1983 damages and Ex parte Young relief against "
+        "Defendant Serrato for his certification denial-is not duplicative. Voluntary "
+        "dismissals without prejudice of other dockets do not adjudicate the merits of "
+        "these claims.",
+    )
+
+    # G. QI
+    subhead(doc, "G. Qualified Immunity Does Not Apply.")
+    body(
+        doc,
+        "As a threshold matter, qualified immunity does not reach Plaintiff's "
+        "official-capacity claims for prospective injunctive and declaratory relief. "
+        "Defendant's own notice limits qualified immunity to his individual capacity. "
+        "(MTD at 2, 14.) Plaintiff's Ex parte Young claims survive regardless of how "
+        "the qualified-immunity question is resolved.",
+    )
+    cite_body(
+        doc,
+        "As to the individual-capacity claims, qualified immunity protects officials "
+        "\"from liability for civil damages insofar as their conduct does not violate "
+        "clearly established statutory or constitutional rights of which a reasonable "
+        "person would have known.\" ",
+        "Pearson v. Callahan",
+        ", 555 U.S. 223, 231 (2009). Dismissal on qualified-immunity grounds at the "
+        "12(b)(6) stage is inappropriate \"unless the court can determine from the "
+        "complaint alone that qualified immunity applies.\" Keates v. Koile, 883 F.3d "
+        "1228, 1235 (9th Cir. 2018). It cannot do so here.",
+    )
+    add_para(doc, "1. Defendant Violated Constitutional Rights.", bold=True, double=True)
+    body(
+        doc,
+        "As set forth above, the FAC adequately alleges violations of substantive and "
+        "procedural due process and First Amendment retaliation. This Court has "
+        "already found these allegations sufficient: the complaint \"supports the "
+        "plausible inferences that CHP officers falsely imprisoned him in November "
+        "2024 based on fabricated evidence\" and that \"Defendant Serrato retaliated "
+        "against him by wrongfully denying his certification request.\" (Dkt. No. 5 at "
+        "4.)",
+    )
+    add_para(doc, "2. The Unlawfulness Was Clearly Established.", bold=True, double=True)
+    body(
+        doc,
+        "The clearly established law flows from three independent sources.",
+    )
+    cite_body(
+        doc,
+        "First, ",
+        "Shanks v. Dressel",
+        ", 540 F.3d 1082, 1087 (9th Cir. 2008), establishes the right to non-arbitrary "
+        "decision-making by state officials exercising mandatory statutory duties. "
+        "Defendant dismisses Shanks because it involves zoning rather than U-visa "
+        "certification. (MTD at 15.) Qualified immunity does not require factual "
+        "identity; it requires fair notice at an appropriate level of generality. "
+        "Hope v. Pelzer, 536 U.S. 730, 741 (2002) (\"[o]fficials can still be on notice "
+        "that their conduct violates established law even in novel factual "
+        "circumstances\").",
+    )
+    cite_body(
+        doc,
+        "Second, the right to be free from First Amendment retaliation is clearly "
+        "established. ",
+        "Borough of Duryea v. Guarnieri",
+        ", 564 U.S. 379, 387 (2011); Hartman v. Moore, 547 U.S. 250, 256 (2006). "
+        "Defendant's own authority confirms this: Ford v. City of Yakima, 706 F.3d at "
+        "1193, establishes the right to be free from retaliation in the very case "
+        "Defendant cites for the elements of the claim. Capp, 940 F.3d at 1055, "
+        "reversed dismissal of a retaliation claim on analogous pleading of "
+        "retaliatory motive. Wesby's caution against defining clearly established law "
+        "at too high a level of generality, 583 U.S. at 64, does not require a prior "
+        "case about U-visa certification denials; it requires that the unlawfulness "
+        "follow from established principles. Retaliating for protected petitioning by "
+        "denying a statutory benefit within the official's control is not a close "
+        "call.",
+    )
+    body(
+        doc,
+        "Third, the specific mandatory requirements of section 679.10-mandatory "
+        "certification language, the rebuttable presumption, the written-explanation "
+        "requirement, and subdivision (k)'s prohibition on treating the absence of "
+        "charges or prosecution as dispositive-gave Defendant fair notice that a "
+        "boilerplate denial ignoring all evidence and all statutory standards would "
+        "violate Plaintiff's rights. When a statute provides explicit procedural "
+        "mandates, an official who ignores them entirely cannot claim the "
+        "unlawfulness of his conduct was not clearly established.",
+    )
+
+    # H. Leave
+    subhead(doc, "H. If Any Claim Is Dismissed, Leave to Amend Must Be Granted.")
+    cite_body(
+        doc,
+        "Defendant argues leave to amend should be denied because Plaintiff has "
+        "\"substantial experience with the legal process,\" has already amended once, "
+        "and has pursued related litigation. (MTD at 16-17.) The standard does not "
+        "turn on litigation history or amendment count; it turns on whether amendment "
+        "would be futile. \"[A] pro se litigant must be given leave to amend his or "
+        "her complaint unless it is absolutely clear that the deficiencies of the "
+        "complaint could not be cured by amendment.\" ",
+        "Garity v. APWU Nat'l Lab. Org.",
+        ", 828 F.3d 848, 854 (9th Cir. 2016). This Court granted leave to file the "
+        "First Amended Complaint. A single prior amendment does not establish "
+        "futility; the question is whether the deficiencies could be cured, not how "
+        "many times the complaint has been amended. Defendant has not demonstrated "
+        "futility.",
+    )
+    body(
+        doc,
+        "Even accepting Defendant's related-case narrative in full, it does not show "
+        "futility. The Eastern District report and recommendation addressed different "
+        "claims against different defendants and never became a final judgment-the "
+        "action was dismissed without prejudice. Judge Fickes's denial of a judicial "
+        "certification motion does not adjudicate Serrato's individual-capacity "
+        "liability for a retaliatory or arbitrary agency denial. The pending state "
+        "writ petition seeks mandamus against CHP under state law, not Section 1983 "
+        "damages against Serrato. And this Court has already held the operative "
+        "theory here plausible. (Dkt. No. 5 at 4.)",
+    )
+    body(
+        doc,
+        "To the extent Defendant quarrels with the FAC's illustrative California "
+        "Penal Code cross-references for the enumerated federal qualifying crimes "
+        "(FAC ¶ 21), any such pleading gap is curable by amendment and is not a "
+        "basis for dismissal with prejudice. The federal categories-false "
+        "imprisonment, unlawful criminal restraint, felonious assault, perjury, and "
+        "obstruction of justice-are pleaded under 8 U.S.C. § 1101(a)(15)(U)(iii) and "
+        "were accepted as plausible at screening. (Dkt. No. 5 at 4.) Denial of leave "
+        "to amend based on characterizations of other litigation-particularly where "
+        "this Court has already screened these claims as sufficient-would be an "
+        "abuse of discretion.",
+    )
+
+    # ---- IV. CONCLUSION ----
+    heading(doc, "IV. CONCLUSION")
+    body(
+        doc,
+        "Plaintiff respectfully requests that this Court: (1) deny Defendant's motion "
+        "to dismiss in its entirety; (2) deny Defendant's motions to strike; (3) "
+        "permit Plaintiff to treat the fourth cause of action as a prayer for "
+        "declaratory relief rather than a standalone claim; and (4) in the "
+        "alternative, grant leave to amend should the Court find any deficiency in "
+        "the current pleading.",
+    )
+    add_para(doc, "", double=True)
+    add_para(doc, "Dated: September 2, 2026", double=True)
+    add_para(doc, "", double=True)
+    add_para(doc, "Respectfully submitted,", double=True)
+    add_para(doc, "", double=True)
+
+    if SIG_IMG.exists():
+        p = add_para(doc, "", double=False)
+        run = p.add_run()
+        run.add_picture(str(SIG_IMG), width=Inches(1.8))
+
+    add_para(doc, "____________________________________", double=False)
+    add_para(doc, "BRENDAN NGEHSI NEWANFORBI", bold=True, double=False)
+    add_para(doc, "Plaintiff, In Pro Per", double=False)
+
+    OUT_DOCX.parent.mkdir(parents=True, exist_ok=True)
+    OUT_MATTER24.parent.mkdir(parents=True, exist_ok=True)
+    doc.save(str(OUT_DOCX))
+    doc.save(str(OUT_MATTER24))
+    print(f"Wrote {OUT_DOCX}")
+    print(f"Wrote {OUT_MATTER24}")
+
+
+if __name__ == "__main__":
+    build()
