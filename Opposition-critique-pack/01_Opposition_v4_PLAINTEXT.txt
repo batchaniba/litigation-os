@@ -16,7 +16,7 @@ NORTHERN DISTRICT OF CALIFORNIA
 
 BRENDAN NGEHSI NEWANFORBI,
 
-Plaintiff,
+		Plaintiff,
 
 v.
 
@@ -26,7 +26,7 @@ and official capacities as Commander,
 
 Dublin Area, California Highway Patrol,
 
-Defendant.
+		Defendant.
 
 Case No. 4:26-cv-05953-ASK
 
@@ -46,21 +46,21 @@ II.	STANDARD OF REVIEW
 
 III.	ARGUMENT
 
-A.	Defendant's Rule 12(f) Motions to Strike Are Procedurally Improper
+	A.	Defendant's Rule 12(f) Motions to Strike Are Procedurally Improper
 
-B.	The Substantive Due Process Claim Is Well-Pleaded
+	B.	The Substantive Due Process Claim Is Well-Pleaded
 
-C.	The Procedural Due Process Claim Is Well-Pleaded
+	C.	The Procedural Due Process Claim Is Well-Pleaded
 
-D.	The First Amendment Retaliation Claim Is Well-Pleaded
+	D.	The First Amendment Retaliation Claim Is Well-Pleaded
 
-E.	Declaratory and Injunctive Relief Are Proper
+	E.	Declaratory and Injunctive Relief Are Proper
 
-F.	Even Accepting the Related-Case Narrative, It Does Not Defeat the FAC
+	F.	Even Accepting the Related-Case Narrative, It Does Not Defeat the FAC
 
-G.	Qualified Immunity Does Not Apply
+	G.	Qualified Immunity Does Not Apply
 
-H.	Leave to Amend Must Be Granted
+	H.	Leave to Amend Must Be Granted
 
 IV.	CONCLUSION
 

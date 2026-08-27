@@ -3,12 +3,11 @@
 """
 Matter 24 - Plaintiff's Opposition to Serrato MTD / Motion to Strike (v4).
 
-Builds on v3 with critique fixes before filing:
-  - but-for causation throughout (Ford; drop Pinard from elements)
-  - restore Perry v. Sindermann / Umbehr against Notice ground 2
-  - TOA synced to body cites
-  - Section F sharpened (12(b)(6) forbids credibility inferences)
-  - Section H: neutralize "already amended once"; FAC PC cross-ref hedge
+Retaliation-first revision:
+  - Accept Krishnan Dkt. 5 + Fickes posture: Serrato retains certification discretion
+  - Lead merits with First Amendment retaliation (Ford / Perry / Umbehr)
+  - Keep PDP/SDP as secondary; no compel-certification ask in the Opp
+  - Whittlestone; Fickes distinguish; QI; leave-to-amend hedges
 
   python3 internal/scripts/matter24-opposition-mtd-v4.py
 """
@@ -196,9 +195,9 @@ def build():
         "II.\tSTANDARD OF REVIEW",
         "III.\tARGUMENT",
         "\tA.\tDefendant's Rule 12(f) Motions to Strike Are Procedurally Improper",
-        "\tB.\tThe Substantive Due Process Claim Is Well-Pleaded",
+        "\tB.\tThe First Amendment Retaliation Claim Is Well-Pleaded",
         "\tC.\tThe Procedural Due Process Claim Is Well-Pleaded",
-        "\tD.\tThe First Amendment Retaliation Claim Is Well-Pleaded",
+        "\tD.\tThe Substantive Due Process Claim Is Well-Pleaded",
         "\tE.\tDeclaratory and Injunctive Relief Are Proper",
         "\tF.\tEven Accepting the Related-Case Narrative, It Does Not Defeat the FAC",
         "\tG.\tQualified Immunity Does Not Apply",
@@ -278,28 +277,43 @@ def build():
         "\"plausible inferences that CHP officers falsely imprisoned [Plaintiff] in "
         "November 2024 based on fabricated evidence\" and that \"Defendant Serrato "
         "retaliated against him by wrongfully denying his certification request.\" "
-        "(Dkt. No. 5 at 4.) The Court further held: \"While Defendant Serrato had "
-        "discretion to certify the request, he did not have discretion to retaliate "
-        "against Mr. Newanforbi.\" (Id.) Defendant's motion never grapples with that "
-        "holding. It asks the Court to reverse itself at Rule 12(b)(6) on the same "
-        "pleading the Court already found adequate.",
+        "(Dkt. No. 5 at 4.) Critically, the Court also held: \"While Defendant Serrato "
+        "had discretion to certify the request, he did not have discretion to retaliate "
+        "against Mr. Newanforbi.\" (Id.) Plaintiff accepts that holding. He does not ask "
+        "this Court to compel a Form I-918 Supplement B signature. He asks the Court "
+        "to deny dismissal of claims that Serrato's April 20, 2026 denial was retaliatory "
+        "and that the denial process failed constitutional and statutory minima.",
     )
     body(
         doc,
-        "Defendant's central theory is that U-visa certification is entirely "
-        "discretionary, so no constitutional interest attaches. That argument "
-        "conflates two distinct legal regimes. Under federal law, the decision "
-        "whether to sign a certification is discretionary. But Plaintiff's claims "
-        "arise under California Penal Code section 679.10-a statute the Legislature "
-        "enacted, and substantially strengthened through AB 1261 (Stats. 2023, Ch. 679), "
-        "precisely because the federal discretionary framework had produced systemic "
-        "under-certification. Section 679.10 uses mandatory language (\"shall\"), "
-        "creates a rebuttable presumption of helpfulness, requires a written explanation "
-        "for denial, mandates processing within 30 days, and prohibits refusal for "
-        "enumerated impermissible reasons-including the absence of charges, "
-        "investigation, or prosecution. These constraints transform unfettered federal "
-        "discretion into a framework of constrained state-law duties. It is those duties "
-        "Plaintiff alleges Defendant violated.",
+        "Two judicial determinations already confirm that Plaintiff is not entitled to a "
+        "forced certification. First, this Court expressly recognized Serrato's "
+        "discretion to certify. (Dkt. No. 5 at 4.) Second, Judge Fickes denied "
+        "Plaintiff's motion for judicial U-visa certification in Alameda Superior Court "
+        "Case No. 26CV168913-confirming there is no freestanding right to compel a "
+        "Form B signature on these facts. Plaintiff accepts both determinations for "
+        "purposes of this opposition. Defendant's motion, however, treats discretion as "
+        "a license to retaliate and as a free pass for a boilerplate denial. That is the "
+        "line Dkt. No. 5 drew, and Defendant never grapples with it. He asks the Court "
+        "to reverse itself at Rule 12(b)(6) on the same pleading the Court already found "
+        "adequate.",
+    )
+    body(
+        doc,
+        "Accordingly, this opposition leads with the First Amendment retaliation claim-"
+        "the claim this Court already found plausible and the claim least affected by "
+        "certification discretion. Perry v. Sindermann, 408 U.S. 593, 597 (1972); "
+        "Bd. of Cnty. Comm'rs v. Umbehr, 518 U.S. 668, 674 (1996); Ford v. City of "
+        "Yakima, 706 F.3d 1188, 1193 (9th Cir. 2013). The due-process claims are "
+        "preserved as secondary theories: not as a demand that Serrato must certify, "
+        "but as claims that California Penal Code section 679.10 constrains how a "
+        "denial may be reached and explained. Under federal law, the decision whether "
+        "to sign remains discretionary. Perez Perez v. Wolf, 943 F.3d 853, 863 (9th "
+        "Cir. 2019). Section 679.10 nonetheless uses mandatory language, creates a "
+        "rebuttable presumption of helpfulness, requires a written explanation for "
+        "denial, mandates timely processing, and prohibits treating the absence of "
+        "charges or prosecution as dispositive. Those process constraints-not a right "
+        "to a compelled yes-are what the due-process claims put at issue.",
     )
     body(
         doc,
@@ -313,17 +327,15 @@ def build():
     body(
         doc,
         "Finally, Defendant leans on related-case history-including Judge Fickes's "
-        "denial of a judicial U-visa certification motion in Alameda Superior Court "
-        "Case No. 26CV168913, Plaintiff's voluntary dismissals of earlier actions, and "
-        "an Eastern District report and recommendation-to argue retaliation is "
-        "implausible and leave to amend futile. Even accepting those facts as true, "
-        "they do not defeat this FAC. A different certifying official's decision on a "
-        "different request does not determine whether Captain Serrato's April 20, 2026 "
-        "denial-issued while supervising the accused officers and while those officers "
-        "were defendants in pending civil suits-complied with section 679.10 or was "
-        "free of retaliatory motive. This is the only action asserting Section 1983 "
-        "claims against Defendant Serrato in his individual capacity for that denial. "
-        "And this Court has already held those claims plausible.",
+        "denial, Plaintiff's voluntary dismissals, and an Eastern District report and "
+        "recommendation-to argue retaliation is implausible and leave to amend futile. "
+        "Even accepting those facts as true, they do not defeat this FAC. A different "
+        "certifying official's decision on a different request does not determine "
+        "whether Captain Serrato's April 20, 2026 denial-issued while supervising the "
+        "accused officers and while those officers were defendants in pending civil "
+        "suits-was free of retaliatory motive. This is the only action asserting "
+        "Section 1983 claims against Defendant Serrato in his individual capacity for "
+        "that denial. And this Court has already held those claims plausible.",
     )
     # footnote on notice
     add_footnote_para(
@@ -410,8 +422,8 @@ def build():
         "or callous indifference to the federally protected rights of others.\" Smith v. "
         "Wade, 461 U.S. 30, 56 (1983). That the FAC disclaims relitigating the officers' "
         "underlying tort liability does not erase Serrato's own conduct: refusing to "
-        "engage with evidence in his own custody when performing a mandatory "
-        "certification function.",
+        "engage with evidence in his own custody when deciding a certification request "
+        "under section 679.10.",
     )
     body(
         doc,
@@ -434,215 +446,25 @@ def build():
         "prayer now would gratuitously prejudice that contingency.",
     )
 
-    # B. SDP
+    # B. Retaliation (lead merits claim)
     subhead(
         doc,
-        "B. The Substantive Due Process Claim Is Well-Pleaded Because Section 679.10 "
-        "Creates Mandatory Duties That Constrain Defendant's Discretion.",
-    )
-    add_para(
-        doc,
-        "1. Defendant Conflates Federal Discretion with State Mandatory Duties.",
-        bold=True,
-        double=True,
-    )
-    body(
-        doc,
-        "Defendant argues Plaintiff has no substantive due process right to U-visa "
-        "certification because certification is \"discretionary.\" (MTD at 7.) That "
-        "conflates federal and state law.",
-    )
-    cite_body(
-        doc,
-        "Under federal law, the decision to sign a certification is discretionary. ",
-        "Perez Perez v. Wolf",
-        ", 943 F.3d 853, 863 (9th Cir. 2019). Defendant's citation to Perez Perez is "
-        "itself telling: this Court quoted the same decision in its screening order "
-        "and nonetheless held the complaint sufficient. (Dkt. No. 5 at 3-4.) Federal "
-        "discretion does not erase California's subsequent statutory constraints.",
-    )
-    body(
-        doc,
-        "The Legislature enacted section 679.10 in 2015 and substantially strengthened "
-        "it through AB 1261, effective January 1, 2024, precisely because the federal "
-        "discretionary framework had produced systemic under-certification. Section "
-        "679.10 uses mandatory language throughout: a certifying entity \"shall fully "
-        "complete and sign\" the certification (subd. (i)(1)); \"shall certify victim "
-        "helpfulness . . . when the victim was a victim of a qualifying criminal "
-        "activity and has been helpful, is being helpful or is likely to be helpful\" "
-        "(subd. (g)(1)); creates a \"rebuttable presumption\" of helpfulness (subd. (h)); "
-        "requires processing within 30 days (subd. (j)); requires a \"written explanation "
-        "for the denial\" (subd. (i)(2)); and provides that a current investigation, "
-        "filing of charges, prosecution, or conviction \"are not required\" for "
-        "certification (subd. (k)(1)). These mandatory constraints are the antithesis "
-        "of unfettered discretion.",
-    )
-    cite_body(
-        doc,
-        "Defendant's reliance on ",
-        "Catholic Charities CYO v. Chertoff",
-        ", 622 F. Supp. 2d 865 (N.D. Cal. 2008), is misplaced. Catholic Charities was "
-        "decided seven years before California enacted section 679.10 and sixteen years "
-        "before AB 1261. The court found no \"mandatory language with regard to actions "
-        "by law enforcement officials\" in the federal statute. Id. at 887. The "
-        "Legislature enacted section 679.10 to supply exactly the mandatory language "
-        "Catholic Charities found lacking. A pre-statute federal decision does not "
-        "defeat a claim that turns on the state statute's mandatory commands.",
-    )
-    cite_body(
-        doc,
-        "Plaintiff's substantive due process claim does not rest on a right to automatic "
-        "certification. It rests on a right to non-arbitrary decision-making within a "
-        "mandatory statutory framework-the kind of constrained discretion that creates "
-        "a legitimate claim of entitlement under the Fourteenth Amendment. ",
-        "Shanks v. Dressel",
-        ", 540 F.3d 1082, 1087 (9th Cir. 2008); County of Sacramento v. Lewis, 523 U.S. "
-        "833, 845-46 (1998). Even if Defendant retains fact-finding judgment on whether "
-        "the statutory elements are met, he does not retain discretion to ignore the "
-        "statute's mandatory procedures, to disregard the evidentiary record in his "
-        "own custody, or to deny certification under an unstated standard that "
-        "subdivision (k) forbids.",
-    )
-
-    add_para(
-        doc,
-        "2. The FAC Pleads Qualifying Criminal Activity-Not Merely a \"Civil Tort.\"",
-        bold=True,
-        double=True,
-    )
-    body(
-        doc,
-        "Defendant argues Plaintiff has alleged \"at most\" a \"civil tort.\" (MTD at 8, "
-        "11.) The FAC identifies enumerated qualifying criminal activity under 8 U.S.C. "
-        "§ 1101(a)(15)(U)(iii) and Penal Code section 679.10(c): false imprisonment, "
-        "unlawful criminal restraint, felonious assault, perjury, and obstruction of "
-        "justice. (FAC ¶ 21.) This Court already accepted those allegations as "
-        "supporting a plausible inference of false imprisonment based on fabricated "
-        "evidence. (Dkt. No. 5 at 4.)",
-    )
-    body(
-        doc,
-        "Defendant's \"civil tort\" label rests on the absence of criminal charges "
-        "against the officers. Section 679.10, subdivision (k)(1), expressly provides: "
-        "\"A current investigation, the filing of charges, an apprehension of the "
-        "suspect who committed the qualifying crime, closing of a case, and a "
-        "prosecution or conviction are not required for the victim to request and "
-        "obtain the Form I-918 Supplement B certification.\" The absence of charges is "
-        "statutorily irrelevant. Defendant's argument reads subdivision (k) out of the "
-        "statute-the same error this Court rejected at screening when it treated "
-        "false imprisonment based on fabricated evidence as qualifying criminal "
-        "activity notwithstanding the lack of a prosecution.",
-    )
-
-    add_para(
-        doc,
-        "3. The Presumption of Helpfulness Applies and Is Unrebutted.",
-        bold=True,
-        double=True,
-    )
-    body(
-        doc,
-        "Defendant argues the presumption of helpfulness is \"plainly not applicable\" "
-        "because no agency requested information and assistance from Plaintiff. "
-        "(MTD at 8.) That inverts the statute.",
-    )
-    body(
-        doc,
-        "The presumption attaches when \"the victim has not refused or failed to provide "
-        "information and assistance reasonably requested by law enforcement.\" (Pen. "
-        "Code, § 679.10, subd. (h).) If no information or assistance was requested, "
-        "then the victim has not \"refused or failed to provide\" it-and the presumption "
-        "is unrebutted. Defendant's reading would allow the certifying agency-which "
-        "here is also the agency whose officers committed the alleged qualifying "
-        "criminal activity-to defeat the presumption simply by never asking for help. "
-        "That places the agency in sole control of whether the presumption ever "
-        "operates and renders the provision a nullity.",
-    )
-    body(
-        doc,
-        "The FAC further alleges that Plaintiff affirmatively cooperated: he filed a "
-        "formal CHP complaint, a POST complaint, preserved and produced the dashcam "
-        "transcript, the CHP Report, and the Detention Certificate, and at no time "
-        "refused or failed to provide information reasonably requested. (FAC ¶¶ 23, "
-        "47.) Those allegations establish helpfulness under subdivision (g) even "
-        "without relying on the presumption.",
-    )
-
-    # C. PDP
-    subhead(
-        doc,
-        "C. The Procedural Due Process Claim Is Well-Pleaded Because the Denial Failed "
-        "to Satisfy the Statutory Requirements Defendant Himself Identifies.",
-    )
-    body(
-        doc,
-        "Defendant argues the denial letter \"lays out the reason behind the denial\" and "
-        "that \"is all the procedural due process the law requires.\" (MTD at 9.) The FAC "
-        "alleges otherwise.",
-    )
-    body(
-        doc,
-        "Section 679.10, subdivision (i)(2), requires \"a written explanation for the "
-        "denial.\" Where the denial rests on non-cooperation, the explanation must "
-        "include \"specific details of any reasonable requests for cooperation and a "
-        "detailed description of how the victim refused to cooperate.\" The first "
-        "sentence is a stand-alone command applicable to every denial; the second "
-        "supplements it for cooperation-based denials. To read the second as the only "
-        "requirement would mean an agency could deny certification on the most common "
-        "ground-a finding the applicant was not a crime victim-with no meaningful "
-        "explanation at all. That is what AB 1261 was enacted to prevent. The "
-        "Legislative Counsel's Digest describes the written-explanation duty without "
-        "qualification: a certifying entity that does not certify \"shall provide a "
-        "written explanation for the denial of the certification.\" (Stats. 2023, ch. "
-        "679.)",
-    )
-    body(
-        doc,
-        "The FAC specifically alleges the five-sentence boilerplate was legally "
-        "deficient because it: (a) did not address the dashcam evidence; (b) did not "
-        "address the section 851.6 Detention Certificate; (c) did not identify which "
-        "statutory element was unsatisfied; (d) did not acknowledge the rebuttable "
-        "presumption of helpfulness; and (e) did not provide specific reasons as "
-        "required by statute. (FAC ¶¶ 31, 37, 43.) A conclusory assertion that the "
-        "incident \"does not meet the standard\"-without identifying the standard "
-        "applied, the element found wanting, or any engagement with the agency's own "
-        "exculpatory records-is not a \"written explanation\" in any meaningful sense. "
-        "It is the form of denial AB 1261 was written to abolish.",
-    )
-    cite_body(
-        doc,
-        "Under ",
-        "Mathews v. Eldridge",
-        ", 424 U.S. 319, 335 (1976), the adequacy of process depends on the private "
-        "interest at stake, the risk of erroneous deprivation, and the governmental "
-        "interest. Here, the private interest is substantial: U-visa certification is "
-        "the sole gateway to lawful immigration status and work authorization. The "
-        "risk of erroneous deprivation is extreme: a five-sentence boilerplate "
-        "engaging with no evidence. And the governmental interest in denying "
-        "certification is minimal: the Supplement B is a factual certification, not a "
-        "visa approval. (FAC ¶ 38.) These allegations state a plausible procedural due "
-        "process claim. Goldberg v. Kelly, 397 U.S. 254, 262 (1970); Bd. of Regents v. "
-        "Roth, 408 U.S. 564, 577 (1972).",
-    )
-
-    # D. Retaliation
-    subhead(
-        doc,
-        "D. The First Amendment Retaliation Claim Is Well-Pleaded.",
+        "B. The First Amendment Retaliation Claim Is Well-Pleaded.",
     )
     body(
         doc,
         "Defendant's second ground in the Notice is that retaliation fails \"because "
         "Plaintiff was not entitled to U-visa certification as a matter of law.\" "
-        "(MTD at 2.) That gets the doctrine backwards. The Supreme Court has held "
-        "that government \"may not deny a benefit to a person on a basis that "
-        "infringes his constitutionally protected interests-even though he has no "
-        "'right' to a valuable governmental benefit.\" Perry v. Sindermann, 408 U.S. "
-        "593, 597 (1972); see also Bd. of Cnty. Comm'rs v. Umbehr, 518 U.S. 668, 674 "
-        "(1996). Discretionary benefits are precisely where retaliation doctrine "
-        "operates. Whether Plaintiff had a freestanding \"right\" to certification is "
-        "irrelevant to whether Defendant denied it in retaliation for protected "
-        "activity.",
+        "(MTD at 2.) That gets the doctrine backwards-and ignores this Court's "
+        "screening holding that Serrato's certification discretion does not include "
+        "discretion to retaliate. (Dkt. No. 5 at 4.) The Supreme Court has held that "
+        "government \"may not deny a benefit to a person on a basis that infringes his "
+        "constitutionally protected interests-even though he has no 'right' to a "
+        "valuable governmental benefit.\" Perry v. Sindermann, 408 U.S. 593, 597 "
+        "(1972); see also Bd. of Cnty. Comm'rs v. Umbehr, 518 U.S. 668, 674 (1996). "
+        "Discretionary benefits are precisely where retaliation doctrine operates. "
+        "Whether Plaintiff had a freestanding \"right\" to certification is irrelevant "
+        "to whether Defendant denied it in retaliation for protected activity.",
     )
     cite_body(
         doc,
@@ -653,12 +475,12 @@ def build():
         "Ford v. City of Yakima",
         ", 706 F.3d 1188, 1193 (9th Cir. 2013). At the pleading stage, Plaintiff need "
         "only allege facts making retaliatory but-for causation plausible-not prove "
-        "it, and not disprove every innocent explanation. Iqbal, 556 U.S. at 678; "
-        "Capp v. Cnty. of San Diego, 940 F.3d 1046, 1055 (9th Cir. 2019). The "
-        "Mt. Healthy burden-shift-under which the defendant may show it would have "
-        "taken the same action anyway-is an affirmative defense for summary judgment "
-        "or trial, not a pleading barrier. Mt. Healthy City Sch. Dist. Bd. of Educ. "
-        "v. Doyle, 429 U.S. 274, 287 (1977).",
+        "it, and not disprove every innocent explanation. Ashcroft v. Iqbal, 556 U.S. "
+        "662, 678 (2009); Capp v. Cnty. of San Diego, 940 F.3d 1046, 1055 (9th Cir. "
+        "2019). The Mt. Healthy burden-shift-under which the defendant may show it "
+        "would have taken the same action anyway-is an affirmative defense for summary "
+        "judgment or trial, not a pleading barrier. Mt. Healthy City Sch. Dist. Bd. of "
+        "Educ. v. Doyle, 429 U.S. 274, 287 (1977).",
     )
     body(
         doc,
@@ -724,6 +546,125 @@ def build():
         "That is a summary-judgment argument, not a Rule 12(b)(6) dismissal ground.",
     )
 
+    # C. PDP
+    subhead(
+        doc,
+        "C. The Procedural Due Process Claim Is Well-Pleaded Because the Denial Failed "
+        "to Satisfy the Statutory Requirements Defendant Himself Identifies.",
+    )
+    body(
+        doc,
+        "Even accepting Serrato's substantive discretion to deny certification, the "
+        "manner of denial must still satisfy the process section 679.10 requires. "
+        "Defendant argues the denial letter \"lays out the reason behind the denial\" "
+        "and that \"is all the procedural due process the law requires.\" (MTD at 9.) "
+        "The FAC alleges otherwise.",
+    )
+    body(
+        doc,
+        "Section 679.10, subdivision (i)(2), requires \"a written explanation for the "
+        "denial.\" Where the denial rests on non-cooperation, the explanation must "
+        "include \"specific details of any reasonable requests for cooperation and a "
+        "detailed description of how the victim refused to cooperate.\" The first "
+        "sentence is a stand-alone command applicable to every denial; the second "
+        "supplements it for cooperation-based denials. To read the second as the only "
+        "requirement would mean an agency could deny certification on the most common "
+        "ground-a finding the applicant was not a crime victim-with no meaningful "
+        "explanation at all. That is what AB 1261 was enacted to prevent. The "
+        "Legislative Counsel's Digest describes the written-explanation duty without "
+        "qualification: a certifying entity that does not certify \"shall provide a "
+        "written explanation for the denial of the certification.\" (Stats. 2023, ch. "
+        "679.)",
+    )
+    body(
+        doc,
+        "The FAC specifically alleges the five-sentence boilerplate was legally "
+        "deficient because it: (a) did not address the dashcam evidence; (b) did not "
+        "address the section 851.6 Detention Certificate; (c) did not identify which "
+        "statutory element was unsatisfied; (d) did not acknowledge the rebuttable "
+        "presumption of helpfulness; and (e) did not provide specific reasons as "
+        "required by statute. (FAC ¶¶ 31, 37, 43.) A conclusory assertion that the "
+        "incident \"does not meet the standard\"-without identifying the standard "
+        "applied, the element found wanting, or any engagement with the agency's own "
+        "exculpatory records-is not a \"written explanation\" in any meaningful sense. "
+        "It is the form of denial AB 1261 was written to abolish.",
+    )
+    cite_body(
+        doc,
+        "Under ",
+        "Mathews v. Eldridge",
+        ", 424 U.S. 319, 335 (1976), the adequacy of process depends on the private "
+        "interest at stake, the risk of erroneous deprivation, and the governmental "
+        "interest. Here, the private interest is substantial: U-visa certification is "
+        "the sole gateway to lawful immigration status and work authorization. The "
+        "risk of erroneous deprivation is extreme: a five-sentence boilerplate "
+        "engaging with no evidence. And the governmental interest in denying "
+        "certification is minimal: the Supplement B is a factual certification, not a "
+        "visa approval. (FAC ¶ 38.) These allegations state a plausible procedural due "
+        "process claim. Goldberg v. Kelly, 397 U.S. 254, 262 (1970); Bd. of Regents v. "
+        "Roth, 408 U.S. 564, 577 (1972).",
+    )
+
+    # D. SDP (secondary; no compel-certification overclaim)
+    subhead(
+        doc,
+        "D. The Substantive Due Process Claim Is Well-Pleaded Because Section 679.10 "
+        "Constrains Arbitrary Denial-Not Because Plaintiff May Compel a Signature.",
+    )
+    body(
+        doc,
+        "Plaintiff does not assert a federal right to U-visa certification. Nor does he "
+        "argue that section 679.10 eliminates all discretion. He accepts this Court's "
+        "holding that Serrato had discretion to certify. (Dkt. No. 5 at 4.) The claim "
+        "is narrower: where California has enacted a statute that (a) uses mandatory "
+        "language (\"shall\"), (b) creates a rebuttable presumption of helpfulness, "
+        "(c) requires specific written reasons for denial, (d) mandates processing "
+        "within 30 days, and (e) expressly provides that investigation, charges, "
+        "prosecution, or conviction are not required for certification, a certifying "
+        "official who ignores those constraints and issues a boilerplate denial without "
+        "engaging with the evidence in his own custody has acted arbitrarily.",
+    )
+    cite_body(
+        doc,
+        "Under federal law, the decision to sign a certification is discretionary. ",
+        "Perez Perez v. Wolf",
+        ", 943 F.3d 853, 863 (9th Cir. 2019). This Court quoted that principle at "
+        "screening and still held the complaint sufficient. (Dkt. No. 5 at 3-4.) "
+        "Federal discretion does not erase California's subsequent statutory "
+        "constraints. Defendant's reliance on Catholic Charities CYO v. Chertoff, "
+        "622 F. Supp. 2d 865 (N.D. Cal. 2008), is misplaced: that case addressed the "
+        "federal statute-which lacked mandatory language-and was decided seven years "
+        "before section 679.10 and sixteen years before AB 1261.",
+    )
+    cite_body(
+        doc,
+        "",
+        "Shanks v. Dressel",
+        ", 540 F.3d 1082, 1087 (9th Cir. 2008), establishes that where a statute "
+        "constrains official discretion with ascertainable standards, arbitrary "
+        "refusal to apply those standards violates due process. The question is not "
+        "whether Defendant had discretion to deny certification. The question is "
+        "whether he had discretion to deny it arbitrarily, without applying the "
+        "statutory standards, without engaging with the evidence, and without "
+        "providing the specific reasons the statute requires. He did not.",
+    )
+    body(
+        doc,
+        "Defendant's \"civil tort\" label rests on the absence of criminal charges. "
+        "Section 679.10, subdivision (k)(1), expressly provides that investigation, "
+        "charges, prosecution, or conviction \"are not required\" for certification. "
+        "The FAC identifies enumerated qualifying criminal activity under 8 U.S.C. "
+        "§ 1101(a)(15)(U)(iii) and section 679.10(c)-false imprisonment, unlawful "
+        "criminal restraint, felonious assault, perjury, and obstruction of justice. "
+        "(FAC ¶ 21.) This Court already accepted those allegations as supporting a "
+        "plausible inference of false imprisonment based on fabricated evidence. "
+        "(Dkt. No. 5 at 4.) And Defendant's attack on the helpfulness presumption "
+        "inverts subdivision (h): if no assistance was requested, the victim has not "
+        "\"refused or failed to provide\" it. The FAC further alleges affirmative "
+        "cooperation through complaints and production of the agency's own records. "
+        "(FAC ¶¶ 23, 47.)",
+    )
+
     # E. Declaratory / Injunctive
     subhead(
         doc,
@@ -735,7 +676,13 @@ def build():
         "Plaintiff does not oppose treating the fourth cause of action as a prayer for "
         "remedy rather than a standalone cause of action. Declaratory relief is "
         "properly characterized as a form of relief. The relief sought, however, "
-        "remains proper and should not be stricken.",
+        "remains proper and should not be stricken. Plaintiff does not seek an order "
+        "compelling Defendant to sign the Supplement B. Consistent with this Court's "
+        "recognition of certification discretion, Plaintiff seeks vacatur of the "
+        "April 20, 2026 denial and a remand for a new decision that applies the "
+        "correct statutory standards, engages with the evidence, and is free of "
+        "retaliatory motive-leaving Defendant's substantive certification discretion "
+        "intact while correcting the constitutional defects.",
     )
     cite_body(
         doc,
@@ -743,8 +690,11 @@ def build():
         "a declaration that the April 20, 2026 denial violated constitutional "
         "standards and that Plaintiff is entitled to a new certification decision "
         "applying the correct standards to the evidence in CHP's possession, together "
-        "with corresponding injunctive relief. (FAC ¶¶ 53-54, Prayer ¶¶ E-F.) That is "
-        "prospective relief authorized by ",
+        "with corresponding injunctive relief. (FAC ¶¶ 53-54, Prayer ¶¶ E-F.) To the "
+        "extent any prayer language could be read more broadly, Plaintiff clarifies "
+        "that the operative request on this motion is process correction-vacatur and "
+        "redo-not a directed Form B signature. That is prospective relief authorized "
+        "by ",
         "Ex parte Young",
         ", 209 U.S. 123 (1908). It is not duplicative of the damages claims against "
         "Defendant in his individual capacity.",
@@ -830,10 +780,13 @@ def build():
         doc,
         "Second, different legal question. The Fickes motion asked a state judge to "
         "issue an affirmative certification. This action asks whether Serrato's "
-        "existing denial was unconstitutional-because it ignored mandatory statutory "
-        "procedures, disregarded the agency's own evidence, and was motivated by "
-        "retaliation for protected petitioning. A \"no\" on judicial certification is "
-        "not a \"yes\" on the lawfulness of Serrato's process or motive.",
+        "existing denial was unconstitutional-because it was motivated by retaliation "
+        "for protected petitioning and because the denial process ignored statutory "
+        "explanation and evidence-engagement requirements. A \"no\" on judicial "
+        "certification is not a \"yes\" on the lawfulness of Serrato's motive or "
+        "process. Even if Judge Fickes's denial was substantively correct, that would "
+        "not immunize Serrato's allegedly retaliatory or procedurally defective "
+        "denial. The constitutional violation is in the how, not just the what.",
     )
     body(
         doc,
@@ -911,24 +864,12 @@ def build():
     add_para(doc, "2. The Unlawfulness Was Clearly Established.", bold=True, double=True)
     body(
         doc,
-        "The clearly established law flows from three independent sources.",
+        "The clearly established law is clearest on retaliation-and that is enough to "
+        "defeat qualified immunity on the lead claim.",
     )
     cite_body(
         doc,
-        "First, ",
-        "Shanks v. Dressel",
-        ", 540 F.3d 1082, 1087 (9th Cir. 2008), establishes the right to non-arbitrary "
-        "decision-making by state officials exercising mandatory statutory duties. "
-        "Defendant dismisses Shanks because it involves zoning rather than U-visa "
-        "certification. (MTD at 15.) Qualified immunity does not require factual "
-        "identity; it requires fair notice at an appropriate level of generality. "
-        "Hope v. Pelzer, 536 U.S. 730, 741 (2002) (\"[o]fficials can still be on notice "
-        "that their conduct violates established law even in novel factual "
-        "circumstances\").",
-    )
-    cite_body(
-        doc,
-        "Second, the right to be free from First Amendment retaliation is clearly "
+        "First, the right to be free from First Amendment retaliation is clearly "
         "established. ",
         "Borough of Duryea v. Guarnieri",
         ", 564 U.S. 379, 387 (2011); Hartman v. Moore, 547 U.S. 250, 256 (2006). "
@@ -941,18 +882,21 @@ def build():
         "case about U-visa certification denials; it requires that the unlawfulness "
         "follow from established principles. Retaliating for protected petitioning by "
         "denying a statutory benefit within the official's control is not a close "
-        "call.",
+        "call-especially after this Court stated that Serrato \"did not have "
+        "discretion to retaliate.\" (Dkt. No. 5 at 4.)",
     )
-    body(
+    cite_body(
         doc,
-        "Third, the specific mandatory requirements of section 679.10-mandatory "
-        "certification language, the rebuttable presumption, the written-explanation "
-        "requirement, and subdivision (k)'s prohibition on treating the absence of "
-        "charges or prosecution as dispositive-gave Defendant fair notice that a "
-        "boilerplate denial ignoring all evidence and all statutory standards would "
-        "violate Plaintiff's rights. When a statute provides explicit procedural "
-        "mandates, an official who ignores them entirely cannot claim the "
-        "unlawfulness of his conduct was not clearly established.",
+        "Second, as to the secondary due-process theories, ",
+        "Shanks v. Dressel",
+        ", 540 F.3d 1082, 1087 (9th Cir. 2008), establishes the right to non-arbitrary "
+        "decision-making by state officials exercising constrained statutory duties. "
+        "Qualified immunity does not require factual identity; it requires fair notice "
+        "at an appropriate level of generality. Hope v. Pelzer, 536 U.S. 730, 741 "
+        "(2002). And section 679.10's specific written-explanation and "
+        "non-dispositive-absence-of-charges requirements gave Defendant fair notice "
+        "that a boilerplate denial ignoring the agency's own evidence would violate "
+        "those constraints.",
     )
 
     # H. Leave
@@ -1004,9 +948,11 @@ def build():
     body(
         doc,
         "Plaintiff respectfully requests that this Court: (1) deny Defendant's motion "
-        "to dismiss in its entirety; (2) deny Defendant's motions to strike; (3) "
-        "permit Plaintiff to treat the fourth cause of action as a prayer for "
-        "declaratory relief rather than a standalone claim; and (4) in the "
+        "to dismiss in its entirety, with particular emphasis on the First Amendment "
+        "retaliation claim already found plausible at screening; (2) deny Defendant's "
+        "motions to strike; (3) permit Plaintiff to treat the fourth cause of action "
+        "as a prayer for declaratory and injunctive process-correction relief rather "
+        "than a standalone claim or a compel-certification order; and (4) in the "
         "alternative, grant leave to amend should the Court find any deficiency in "
         "the current pleading.",
     )
