@@ -207,7 +207,7 @@ def cover_lines() -> list[str]:
         "Do NOT mail. Do NOT substitute-serve at the Dublin HQ unless you first",
         "confirm with Plaintiff in writing.",
         "",
-        f"## Deadline",
+        "## Deadline",
         f"Please attempt service promptly and complete service {SERVICE_DEADLINE}",
         "(CRC 3.110(b) - 60 days from the Aug. 26, 2026 filing). File / return",
         "proofs as soon as service is effected so Plaintiff can e-file POS-010.",
