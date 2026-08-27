@@ -31,6 +31,16 @@ OUT_ROOT = ROOT.parent / "Proof of Service by Email - Opposition to Serrato MTD 
 OUT_ARTIFACT = Path(
     "/opt/cursor/artifacts/serrato_opp_pos_email_20260827.pdf"
 )
+OPP_PLEADING = ROOT.parent / "Opposition to MTD v4 - Pleading Paper.pdf"
+OUT_UNIFIED_ROOT = (
+    ROOT.parent
+    / "Opposition to Serrato MTD with Proof of Service by Email (Aug 27 2026).pdf"
+)
+OUT_UNIFIED_MATTER = (
+    ROOT
+    / "public/documents/matter-24"
+    / "Opposition to Serrato MTD with Proof of Service by Email (Aug 27 2026).pdf"
+)
 
 PAGE_W, PAGE_H = letter
 LEFT = 72.0
@@ -200,11 +210,34 @@ def build(path: Path) -> None:
     print(f"Wrote {path} ({path.stat().st_size} bytes)")
 
 
+def merge_with_opposition(pos_path: Path) -> None:
+    """Append this POS behind the pleading-paper Opposition as one filing packet."""
+    try:
+        import pymupdf
+    except ImportError:
+        print("pymupdf unavailable - skipped unified Opp+POS merge")
+        return
+    if not OPP_PLEADING.is_file():
+        print(f"Missing Opposition pleading PDF: {OPP_PLEADING} - skipped merge")
+        return
+    merged = pymupdf.open()
+    for src in (OPP_PLEADING, pos_path):
+        doc = pymupdf.open(src)
+        merged.insert_pdf(doc)
+        doc.close()
+    for out in (OUT_UNIFIED_ROOT, OUT_UNIFIED_MATTER):
+        out.parent.mkdir(parents=True, exist_ok=True)
+        merged.save(out)
+        print(f"Wrote {out} ({out.stat().st_size} bytes, {merged.page_count} pages)")
+    merged.close()
+
+
 def main() -> None:
     if not Path(SIGNATURE_PATH).is_file():
         raise SystemExit(f"Missing signature: {SIGNATURE_PATH}")
     for out in (OUT_MATTER, OUT_ROOT, OUT_ARTIFACT):
         build(out)
+    merge_with_opposition(OUT_ROOT)
 
 
 if __name__ == "__main__":
