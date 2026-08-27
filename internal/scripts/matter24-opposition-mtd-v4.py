@@ -971,6 +971,7 @@ def build():
     add_para(doc, "", double=True)
     add_para(doc, "Respectfully submitted,", double=True)
     add_para(doc, "", double=True)
+    add_para(doc, "", double=True)
 
     if SIG_IMG.exists():
         p = add_para(doc, "", double=False)
