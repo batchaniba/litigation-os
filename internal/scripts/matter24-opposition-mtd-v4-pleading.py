@@ -230,7 +230,7 @@ def render(out_path: Path, content: list[tuple[str, str]]) -> None:
     out_path.parent.mkdir(parents=True, exist_ok=True)
     d = PleadingPaper(str(out_path), doc_title_footer=DOC_TITLE_FOOTER)
 
-    # Attorney block — same six lines, compressed spacing (portfolio pattern).
+    # Attorney block -- same six lines, compressed spacing (portfolio pattern).
     c = d.c
     atty_y = d._line_y(0)
     atty_lh = 15
