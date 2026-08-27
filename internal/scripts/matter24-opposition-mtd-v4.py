@@ -1011,7 +1011,7 @@ def build():
         "the current pleading.",
     )
     add_para(doc, "", double=True)
-    add_para(doc, "Dated: September 2, 2026", double=True)
+    add_para(doc, "Dated: August 27, 2026", double=True)
     add_para(doc, "", double=True)
     add_para(doc, "Respectfully submitted,", double=True)
     add_para(doc, "", double=True)

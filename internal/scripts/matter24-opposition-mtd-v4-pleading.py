@@ -23,7 +23,7 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPT_DIR / "lib"))
 sys.path.insert(0, str(SCRIPT_DIR))
 
-from pleading_paper import PleadingPaper  # noqa: E402
+from pleading_paper import CONTENT_LEFT, PleadingPaper  # noqa: E402
 from signature_stamp import (  # noqa: E402
     SIGNATURE_PATH,
     SIGNATURE_NATIVE_PX,
@@ -216,7 +216,7 @@ def classify_body(paras: list[str]) -> list[tuple[str, str]]:
 
 def signature_block() -> str:
     return (
-        "Dated: September 2, 2026\n"
+        "Dated: August 27, 2026\n"
         "\n"
         "Respectfully submitted,\n"
         "\n"
@@ -230,10 +230,14 @@ def render(out_path: Path, content: list[tuple[str, str]]) -> None:
     out_path.parent.mkdir(parents=True, exist_ok=True)
     d = PleadingPaper(str(out_path), doc_title_footer=DOC_TITLE_FOOTER)
 
-    # Attorney block
-    for text, font, size in ATTORNEY_BLOCK:
-        bold = font == "Times-Bold"
-        d.write_line(text, bold=bold, size=size)
+    # Attorney block — same six lines, compressed spacing (portfolio pattern).
+    c = d.c
+    atty_y = d._line_y(0)
+    atty_lh = 15
+    for i, (text, font, size) in enumerate(ATTORNEY_BLOCK):
+        c.setFont(font, size)
+        c.drawString(CONTENT_LEFT, atty_y - i * atty_lh, text)
+    d.current_line = 4
     d.blank_line()
 
     d.write_line(COURT_LINE1, bold=True, center=True)
