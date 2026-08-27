@@ -298,12 +298,15 @@ def build() -> None:
     for _d in DEFS:
         _append(packet, PdfReader(str(DOCS["pos"])))
 
-    packet_path = OUT / (
+    packet_path = OUT / "Ross_CT_Corp_Service_Packet_court_docs_only.pdf"
+    # Keep legacy filename in sync for older links
+    legacy_path = OUT / (
         "Private Process Server Packet - CT Corporation "
         "(Ross Stores Inc and Ross Dress for Less Inc) (Aug 27 2026).pdf"
     )
     with open(packet_path, "wb") as f:
         packet.write(f)
+    legacy_path.write_bytes(packet_path.read_bytes())
     pages = len(PdfReader(str(packet_path)).pages)
     print("wrote", packet_path.name, f"({pages} pp, {packet_path.stat().st_size // 1024} KB)")
 
@@ -318,7 +321,7 @@ def build() -> None:
     ART.mkdir(parents=True, exist_ok=True)
     for src, name in [
         (cover_path, "ross_ct_process_server_cover.pdf"),
-        (packet_path, "ross_ct_process_server_packet.pdf"),
+        (packet_path, "ross_ct_service_packet_court_docs_only.pdf"),
         (email_path, "ross_ct_process_server_email.txt"),
     ]:
         dest = ART / name
