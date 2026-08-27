@@ -1,5 +1,16 @@
 [
   {
+    "date": "Aug. 31, 2026",
+    "event": "FedEx responsive pleading deadline (computed) — Newanforbi v. Federal Express Corporation (Matter 25, E.D. Cal. No. 2:26-cv-02881-DAD-SCR); Fed. R. Civ. P. 81(c)(2)(C) — the later of 21 days after receipt of the initial pleading or 7 days after the notice of removal was filed (removal filed Aug. 24, 2026 → Aug. 31, 2026). Watch for answer or Rule 12 motion by Allison A. Kray.",
+    "matters": [
+      25
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "opposing",
+    "source": "/documents/matter-25/Dkt 01 - Petition and Notice of Removal (Filed Aug 24 2026).pdf"
+  },
+  {
     "date": "Oct. 25, 2026",
     "event": "OPEN TASK — Serve Ross Stores, Inc. and Ross Dress for Less, Inc. in Matter 35 (26CV501995) with the Verified Complaint, issued Summons, ADR Information Sheet, and clerk-stamped CV-5012 Civil Lawsuit Notice (via C T Corporation System, 330 N. Brand Blvd., Suite 700, Glendale, CA 91203 — info. and belief), then file POS-010. Santa Clara CV-5012 / local practice: serve within 60 days of filing (filed Aug. 26, 2026). Do not serve DOEs until identified/amended. After service, demand Aug. 25, 2026 Sunnyvale Ross surveillance and LP stop/training materials.",
     "matters": [
@@ -42,16 +53,6 @@
     "upcoming": true,
     "actor": "you",
     "source": "/documents/matter-35/CV-5012 Civil Lawsuit Notice (Clerk-Stamped) - 26CV501995.pdf"
-  },
-  {
-    "date": "Aug. 31, 2026",
-    "event": "OPEN TASK — Serve the operative Aug. 17, 2026 Amended CCP §425.115 Notice ($250,000) on Federal Express Corporation (Matter 25) in the same manner as a summons before any default prove-up if FedEx misses the Aug. 24, 2026 responsive deadline. Notice is executed but not yet filed/served; without timely personal service, punitive damages are unavailable on default.",
-    "matters": [
-      25
-    ],
-    "type": "deadline",
-    "upcoming": true,
-    "source": "/documents/matter-25/Amended Notice of Amount of Punitive Damages Sought (CCP 425.115) - Federal Express Corporation (Aug 17 2026).pdf"
   },
   {
     "date": "Sep. 12, 2026",
@@ -215,53 +216,6 @@
     "upcoming": true
   },
   {
-    "date": "Sep. 13, 2026",
-    "event": "Service deadline — Newanforbi v. Federal Express Corporation (STK-CV-UWT-2026-0009118) and Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113); 60 days from July 15, 2026 filing (CRC 3.110); proofs of service must be filed with court",
-    "matters": [
-      25,
-      26
-    ],
-    "type": "deadline",
-    "upcoming": true
-  },
-  {
-    "date": "Dec. 15, 2026",
-    "event": "Meet-and-confer deadline — Newanforbi v. Federal Express Corporation (STK-CV-UWT-2026-0009118); 30 calendar days before Jan. 14, 2027 CMC (CRC 3.724)",
-    "matters": [
-      25
-    ],
-    "type": "deadline",
-    "upcoming": true
-  },
-  {
-    "date": "Dec. 30, 2026",
-    "event": "Case Management Conference Statement due — Newanforbi v. Federal Express Corporation (STK-CV-UWT-2026-0009118); JC Form CM-110, mandatory; 15 days before Jan. 14, 2027 CMC (CRC 3.725)",
-    "matters": [
-      25
-    ],
-    "type": "deadline",
-    "upcoming": true
-  },
-  {
-    "date": "Jan. 14, 2027",
-    "event": "Case Management Conference — Newanforbi v. Federal Express Corporation (STK-CV-UWT-2026-0009118), 8:45 AM, Dept. 10B, Hon. Blanca Banuelos, San Joaquin Superior Court, 180 E Weber Ave, Stockton, CA 95202",
-    "matters": [
-      25
-    ],
-    "type": "hearing",
-    "upcoming": true
-  },
-  {
-    "date": "Aug. 26, 2026",
-    "event": "Meet-and-confer deadline (computed) as to The RK Logistics Group, Inc. — Newanforbi v. Randstad US, LLC et al. (26CV199902); CCP §430.41(a)(2) requires meet-and-confer at least 5 calendar days before the Aug. 31, 2026 responsive-pleading deadline, if RK Logistics intends to demur; otherwise it must file a declaration for the automatic 30-day extension. Randstad US, LLC is no longer on this clock — its response was extended to Sept. 15, 2026 by the parties' Aug. 18, 2026 agreement, moving its meet-and-confer date to Sept. 10, 2026.",
-    "matters": [
-      27
-    ],
-    "type": "deadline",
-    "upcoming": true,
-    "actor": "opposing"
-  },
-  {
     "date": "Aug. 31, 2026",
     "event": "Responsive pleading deadline (computed) — The RK Logistics Group, Inc. only, Newanforbi v. Randstad US, LLC et al. (26CV199902); 30 days from the Jul. 30, 2026 service date (CCP §412.20(a)(3)); the raw 30-day count lands on Saturday, Aug. 29, extended to Monday per CCP §12a. Randstad US, LLC's deadline was extended 15 days to Sept. 15, 2026 by agreement reached on the Aug. 18, 2026 call with its counsel, Chadwick L. Williams (Kabat Chapman & Ozmer LLP).",
     "matters": [
@@ -307,16 +261,6 @@
     ],
     "type": "deadline",
     "upcoming": true
-  },
-  {
-    "date": "Aug. 26, 2026",
-    "event": "Meet-and-confer deadline (computed) — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554); CCP §430.41(a)(2) requires meet-and-confer at least 5 calendar days before the Aug. 31, 2026 responsive-pleading deadline, if either defendant intends to demur; otherwise that defendant must file a declaration for the automatic 30-day extension",
-    "matters": [
-      29
-    ],
-    "type": "deadline",
-    "upcoming": true,
-    "actor": "opposing"
   },
   {
     "date": "Aug. 31, 2026",
@@ -394,16 +338,6 @@
     "type": "deadline",
     "upcoming": true,
     "source": "/documents/matter-27/Notice of Amount of Punitive Damages Sought (CCP 425.115) - Randstad US LLC (Aug 4 2026).pdf"
-  },
-  {
-    "date": "Aug. 26, 2026",
-    "event": "Responsive pleading deadline (computed) — Newanforbi v. Serrato (4:26-cv-05953-ASK); 21 days from the Aug. 5, 2026 USMS personal service date (FRCP 12(a)(1)(A))",
-    "matters": [
-      24
-    ],
-    "type": "deadline",
-    "upcoming": true,
-    "actor": "opposing"
   },
   {
     "date": "Aug. 27, 2026",
