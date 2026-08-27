@@ -2,7 +2,7 @@
 
 # Interactive Litigation Portfolio
 
-An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi**, Pro Se / In Propria Persona. The portfolio tracks 33 civil matters across federal and California state courts, providing a structured view of case status, procedural history, damages exposure, and overarching legal theories.
+An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi**, Pro Se / In Propria Persona. The portfolio tracks 35 civil matters across federal and California state courts, providing a structured view of case status, procedural history, damages exposure, and overarching legal theories.
 
 **Live site:** [interactive-litigation-portfolio.vercel.app](https://interactive-litigation-portfolio.vercel.app)
 
@@ -17,6 +17,7 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
   - [3 — Consumer Fraud / Defective Vehicle](#cluster-3--consumer-fraud--defective-vehicle-matter-12)
   - [4 — Administrative Writs & Habeas Corpus](#cluster-4--administrative-writs--habeas-corpus-matters-9-10-19)
   - [5 — Employment / Statutory Violation](#cluster-5--employment--statutory-violation-matters-22-25-26-27-29-31)
+  - [6 — Public Accommodation / Unruh](#cluster-6--public-accommodation--unruh-matter-35)
 - [All Matters](#all-matters)
 - [Upcoming Deadlines](#upcoming-deadlines)
 - [Damages Summary](#damages-summary)
@@ -38,13 +39,13 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 | Plaintiff | Brendan Ngehsi Newanforbi |
 | Representation | Pro Se / In Propria Persona |
 | Jurisdictions | USDC E.D. Cal., USDC N.D. Cal., San Joaquin Sup. Ct., Alameda Sup. Ct., Sacramento Sup. Ct., Santa Clara Sup. Ct. |
-| Total Matters | 34 |
-| Active / Open | 15 |
+| Total Matters | 35 |
+| Active / Open | 16 |
 | — of which Settled | 1 (Matter 22 — Newanforbi v. Pilot Travel Centers LLC, Jul. 14, 2026) |
 | Dismissed / Closed / Abandoned | 19 |
-| Aggregate Exposure (Conservative) | ~$1,161,000+ |
-| Aggregate Exposure (Moderate) | ~$2,957,000+ |
-| Aggregate Exposure (Aggressive) | ~$6,579,000+ |
+| Aggregate Exposure (Conservative) | ~$1,276,000+ |
+| Aggregate Exposure (Moderate) | ~$3,302,000+ |
+| Aggregate Exposure (Aggressive) | ~$7,614,000+ |
 | Last Updated | August 8, 2026 |
 <!-- PORTFOLIO:OVERVIEW_TABLE:END -->
 
@@ -54,7 +55,7 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 
 > **Housing status:** Homeless since July 2, 2026 — a direct consequence of a retaliatory inter-county parole transfer (Stockton → Santa Clara) imposed immediately after filing Matter 15 (*Newanforbi v. CDCR, et al.*). The transfer caused loss of Stockton family housing; Matters 3, 9, and 19 are also potential retaliatory predicate acts.
 >
-> **Cost of self-representation:** All 33 matters are self-litigated. Estimated equivalent private-counsel cost: **$799,904–$1,324,176** (see [Attorney Fees Analysis](#attorney-fees-analysis)).
+> **Cost of self-representation:** All 35 matters are self-litigated. Estimated equivalent private-counsel cost: **$815,304–$1,354,976** (see [Attorney Fees Analysis](#attorney-fees-analysis)).
 
 [↑ Contents](#contents)
 
@@ -145,6 +146,12 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 - **Matter 29** (Newanforbi v. Amazon.com Services, LLC and Accurate Background LLC) — Alameda Superior Court, Case No. **26CV201554**, Hon. Jamilah Jefferson, Dept. 520; PC §290.46(j) / Fair Chance Act (Gov. Code §12952) / FCRA / ICRAA / UCL / IIED. **CASE FILED July 28, 2026**; **BOTH DEFENDANTS SERVED July 31, 2026** (Amazon via Sacramento County Sheriff; Accurate Background via private process server). Responsive pleading due August 31, 2026. Fee-waiver hearing set August 18, 2026 (Dept. FHO) — Plaintiff paid the $435 filing fee August 3, 2026 and requested the hearing be taken off calendar as moot. CCP §425.115 punitive-damages notices drafted August 7, 2026 ($250,000 Amazon / $100,000 Accurate Background), not yet served. **Lerma posture (corrected):** in *Lerma v. Amazon.com Services, LLC et al.*, No. 8:22-cv-01727 (C.D. Cal.), the PC §290.46(j) claim was **dismissed at the pleading stage (May 26, 2023)**; the case later settled (Sept. 29, 2023) on a surviving Fair Chance Act claim against Amazon only — useful Fair Chance / notice precedent, not a settled Megan's Law judgment against these defendants.
 - **Matter 31** (Newanforbi v. First Advantage LLC) — anticipated San Joaquin Superior Court; FCRA §1681b(b) / FCRA §1681e(b) / ICRAA / Negligence Per Se / UCL §17200. **Identified July 30, 2026 via portfolio gap analysis**; not yet filed and no demand letter sent. First Advantage generated the registry-flagged reports underlying Matters 25 and 26 — additive vendor liability, not a duplicate of the employer-side claims.
 
+### Cluster 6 — Public Accommodation / Unruh (Matter 35)
+
+Standalone retail civil-rights matter arising from an August 25, 2026 consumer racial-profiling detention at the Ross Dress for Less in Sunnyvale:
+
+- **Matter 35** (Ngwa Nforbi v. Ross Stores, Inc., et al.) — Santa Clara Superior Court, First Street. On August 25, 2026 (~9:00 p.m.), Plaintiff entered Ross holding a Celsius drink purchased minutes earlier at the adjacent Sprouts, browsed men's clothing without taking Ross merchandise, and was physically blocked at the exit by a white loss-prevention employee who questioned whether he had paid for the drink, admitted Ross sells Celsius only "sometimes," and asserted "I'm allowed to do that." **~5-hour turnaround:** Verified Complaint (v9) for Unruh (Civ. Code §§51, 51.5, 52), False Imprisonment, and Negligent Training and Supervision **e-filed and paid August 26, 2026 at 2:06 AM PT** via One Legal (Confirmation #35442871) — under court clerk review; case number pending; service after summons issues.
+
 [↑ Contents](#contents)
 
 ---
@@ -161,7 +168,7 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | 20 | Newanforbi v. California Highway Patrol, et al. | 26CV191136 | Alameda Sup. Ct. | State | CHP demurrer reply in; hearing Aug. 28 — CMC Sep. 2 |
 | 22 | Newanforbi v. Pilot Travel Centers LLC | STK-CV-UWT-2026-0007649 | San Joaquin Sup. Ct. | State | Settled Jul. 14, 2026 ($35,000) |
 | 24 | Newanforbi v. Serrato | 4:26-cv-05953-ASK | USDC N.D. Cal. | Federal | Related to Meza — order Aug. 24; CMC Sep. 15 |
-| 25 | Newanforbi v. Federal Express Corporation | STK-CV-UWT-2026-0009118 | San Joaquin Sup. Ct. | State | Served Jul. 24, 2026 — response due Aug. 24 |
+| 25 | Newanforbi v. Federal Express Corporation | 2:26-cv-02881-DAD-SCR | USDC E.D. Cal. (Sacramento Div.) | Federal | Removed — 2:26-cv-02881-DAD-SCR; resp. ~Aug 31 |
 | 26 | Newanforbi v. United Parcel Service, Inc. | 2:26-cv-02847-DAD-CKD | USDC E.D. Cal. (Sacramento Div.) | Federal | E.D. Cal. Sacramento 2:26-cv-02847 — UPS due Aug. 27 |
 | 27 | Newanforbi v. Randstad, et al. | 26CV199902 | Alameda Sup. Ct. | State | RK response Aug. 31 — Randstad extended to Sep. 15 |
 | 28 | Newanforbi v. Shannon Smith, LCSW, CEO, et al. | 3:26-cv-07504 | USDC N.D. Cal. | Federal | Fee paid — CMC Oct. 22, 2026; SPO denied w/o prejudice |
@@ -171,6 +178,7 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | 32 | Nforbi v. Meza-Gonzalez, et al | 3:26-cv-08271-PHK | USDC N.D. Cal. (related to Serrato 4:26-cv-05953-ASK per Aug. 24, 2026 order; also related Candelaria 3:26-cv-08272-LJC) | Federal | Related to Serrato — reassigned to Krishnan |
 | 33 | Nforbi v. Candelaria et al. | 3:26-cv-08272-LJC | USDC N.D. Cal. (San Francisco Div.) | Federal | FAC filed Aug. 17 (Dkt. 6) — resp. due Sep. 4; CMC Nov. 12 |
 | 34 | Newanforbi v. Counseling and Psychotherapy Center, Inc., et al. | TBD | USDC N.D. Cal. (San Jose Div.) / Santa Clara Sup. Ct. | Federal | Pre-filing — intake & compliance monitoring |
+| 35 | Ngwa Nforbi v. Ross Stores, Inc., et al. | 26CV501995 | Santa Clara Sup. Ct. (Downtown / First Street) | State | Filed — 26CV501995; CMC Feb 11 2027 (Parrett) |
 <!-- PORTFOLIO:ACTIVE_MATTERS:END -->
 
 *Settled matters stay in the table above until dismissal is entered — a settlement resolves the merits, but the matter is still open on the docket. Their Status column reads "Settled" (see the Overview count above for which ones).*
@@ -214,14 +222,10 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 <!-- PORTFOLIO:UPCOMING_DEADLINES:START -->
 | Date | Matter | Event |
 |---|---|---|
-| Aug. 25, 2026 | 24 | Deadline — ADR Certification (ADR L.R. 3) and Rule 26(f) meet-and-confer (initial disclosures, early settlement, ADR process selection, discovery plan) — Newanforbi v. Serrato (4:26-cv-05953-ASK) |
-| Aug. 26, 2026 | 27 | Meet-and-confer deadline (computed) as to The RK Logistics Group, Inc. — Newanforbi v. Randstad US, LLC et al. (26CV199902) |
-| Aug. 26, 2026 | 29 | Meet-and-confer deadline (computed) — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554) |
-| Aug. 26, 2026 | 24 | Responsive pleading deadline (computed) — Newanforbi v. Serrato (4:26-cv-05953-ASK); 21 days from the Aug. 5, 2026 USMS personal service date (FRCP 12(a)(1)(A)) |
 | Aug. 27, 2026 | 26 | UPS responsive pleading deadline (computed) — Newanforbi v. United Parcel Service, Inc., USDC E.D. Cal. No. 1:26-at-03195. Fed. R. Civ. |
 | Aug. 27, 2026 | 26 | WATCH — if UPS responds by a Fed. R. Civ. P. 12 motion on its Rule 81(c)(2)(C) date, two clocks start immediately in Newanforbi v. |
 | Aug. 28, 2026 | 20 | Demurrer Hearing — Newanforbi v. California Highway Patrol et al. (26CV191136), 9:00 a.m., Dept. 25, Rene C. Davidson Courthouse, Oakland; Hon. Jenna M. Whitman |
-| Aug. 31, 2026 | 25 | OPEN TASK — Serve the operative Aug. 17, 2026 Amended CCP §425.115 Notice ($250,000) on Federal Express Corporation (Matter 25) in the same manner as a summons before any default prove-up if FedEx misses the Aug. 24,… |
+| Aug. 31, 2026 | 25 | FedEx responsive pleading deadline (computed) — Newanforbi v. Federal Express Corporation (Matter 25, E.D. Cal. No. 2:26-cv-02881-DAD-SCR); Fed. R. Civ. P. 81(c)(2)(C) |
 | Aug. 31, 2026 | 27 | Responsive pleading deadline (computed) — The RK Logistics Group, Inc. only, Newanforbi v. Randstad US, LLC et al. (26CV199902); 30 days from the Jul. 30, 2026 service date (CCP §412.20(a)(3)) |
 | Aug. 31, 2026 | 29 | Responsive pleading deadline (computed) — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554); 30 days from the Jul. 31, 2026 service date on both defendants (CCP §412.20(a)(3)) |
 | Sep. 1, 2026 | 30 | Anticipated deemed-rejection date (computed) — Government Claims Act claim, Newanforbi v. Moua, et al. (Matter 30) |
@@ -231,7 +235,6 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | Sep. 8, 2026 | 24 | Deadline — Initial disclosures (FRCP 26(a)(1)) and Joint Case Management Statement — Newanforbi v. Serrato (4:26-cv-05953-ASK) |
 | Sep. 10, 2026 | 27 | Meet-and-confer deadline (computed) as to Randstad US, LLC — Newanforbi v. Randstad US, LLC et al. (26CV199902) |
 | Sep. 12, 2026 | 27 | Outer bound — $85,000 global settlement offer payment window (Matter 27): 15 days from August 28, 2026. |
-| Sep. 13, 2026 | 25, 26 | Service deadline — Newanforbi v. Federal Express Corporation (STK-CV-UWT-2026-0009118) and Newanforbi v. United Parcel Service, Inc. (STK-CV-UWT-2026-0009113); 60 days from July 15, 2026 filing (CRC 3.110) |
 | Sep. 15, 2026 | 27 | Extended responsive-pleading deadline — Randstad US, LLC only, Newanforbi v. Randstad US, LLC et al. (26CV199902); 15 days past the Aug. 31, 2026 computed deadline, agreed on the Aug. 18, 2026 call with Chadwick L. |
 | Sep. 15, 2026 | 24 | Initial Case Management Conference — 1:30 PM via Zoom (cand.uscourts.gov/ask); Hon. Ajay S. Krishnan — Newanforbi v. Serrato (4:26-cv-05953-ASK) |
 | Sep. 16, 2026 | 30 | Anticipated filing date (computed) — Complaint v9 (Moua and DOES 1-10), Newanforbi v. Moua, et al. (Matter 30); 15 days after the anticipated Sep. 1, 2026 deemed rejection |
@@ -243,6 +246,7 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | Oct. 22, 2026 | 33 | Deadline to file ADR Certification (ADR L.R. 3) and to meet and confer regarding initial disclosures, early settlement, ADR process selection, and a discovery plan (Fed. R. Civ. P. 26(f)) — Nforbi v. |
 | Oct. 22, 2026 | 28 | Initial Case Management Conference — Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504), 1:30 PM, Hon. Lisa J. Cisneros, San Francisco (videoconference only) |
 | Oct. 23, 2026 | 20 | Continued hearing on the Dutra joinder and demurrer to the Petition for Writ of Mandate, Newanforbi v. California Highway Patrol, et al. (Matter 20) — Dept. 25 |
+| Oct. 25, 2026 | 35 | OPEN TASK — Serve Ross Stores, Inc. and Ross Dress for Less, Inc. in Matter 35 (26CV501995) with the Verified Complaint, issued Summons, ADR Information Sheet, and clerk-stamped CV-5012 Civil Lawsuit Notice (via C T… |
 | Nov. 1, 2026 | 1, 2, 32 | CCP §335.1 two-year statute of limitations (computed) backstop, running from the Nov. 1, 2024 incident. (1) Matter 1's Fourth Amendment §1983 claim (borrowed two-year period): Matter 1 was voluntarily dismissed without… |
 | Nov. 5, 2026 | 33 | Deadline to make initial disclosures (Fed. R. Civ. P. 26(a)(1)) and to file the Joint Case Management Statement (Standing Order for All Judges of the Northern District of California) — Nforbi v. |
 | Nov. 12, 2026 | 33 | Initial Case Management Conference, 1:30 p.m. by Zoom (cand.uscourts.gov/ljc) before Magistrate Judge Lisa J. Cisneros — Nforbi v. Candelaria et al. (3:26-cv-08272-LJC), set by the Dkt. 4 order. |
@@ -250,11 +254,11 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | Nov. 25, 2026 | 32 | Deadline to make initial disclosures (Fed. R. Civ. P. 26(a)(1)) and to file the Joint Case Management Statement (Standing Order for All Judges of the Northern District of California) — Nforbi v. |
 | Dec. 2, 2026 | 32 | Initial Case Management Conference, 11:00 a.m., Courtroom F, 450 Golden Gate Ave., San Francisco, before Magistrate Judge Peter H. Kang — Nforbi v. Meza-Gonzalez, et al. (3:26-cv-08271-PHK), set by the Dkt. 4 order. |
 | Dec. 11, 2026 | 12 | Further Case Management Conference, 8:30 AM, Dept. 11B, Hon. Robert T. Waters — Ngwa Nforbi v. |
-| Dec. 15, 2026 | 25 | Meet-and-confer deadline — Newanforbi v. Federal Express Corporation (STK-CV-UWT-2026-0009118); 30 calendar days before Jan. 14, 2027 CMC (CRC 3.724) |
 | Dec. 17, 2026 | 27 | Case Management Conference, Newanforbi v. Randstad US LLC and RK Logistics Group, Inc. (Matter 27) — Hon. Karin Schwartz, Dept. 20, 3:00 p.m. |
-| Dec. 30, 2026 | 25 | Case Management Conference Statement due — Newanforbi v. Federal Express Corporation (STK-CV-UWT-2026-0009118); JC Form CM-110, mandatory; 15 days before Jan. 14, 2027 CMC (CRC 3.725) |
 | Jan. 6, 2027 | 29 | Case Management Conference — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554), 10:00 AM, Dept. 520, Hon. Jamilah Jefferson, Hayward Hall of Justice, 24405 Amador Street, Hayward, CA 94544 |
-| Jan. 14, 2027 | 25 | Case Management Conference — Newanforbi v. Federal Express Corporation (STK-CV-UWT-2026-0009118), 8:45 AM, Dept. 10B, Hon. Blanca Banuelos, San Joaquin Superior Court, 180 E Weber Ave, Stockton, CA 95202 |
+| Jan. 12, 2027 | 35 | OPEN TASK — Matter 35 (26CV501995) meet-and-confer with appearing parties at least 30 calendar days before the Feb. 11, 2027 CMC (Santa Clara Civil Lawsuit Notice / local CMC rules). |
+| Jan. 27, 2027 | 35 | OPEN TASK — File and serve Case Management Statement (CM-110) in Matter 35 (26CV501995) at least 15 calendar days before the Feb. 11, 2027 CMC. |
+| Feb. 11, 2027 | 35 | CASE MANAGEMENT CONFERENCE — Ngwa Nforbi v. Ross Stores, Inc., et al. (Matter 35, Santa Clara Sup. Ct. No. 26CV501995), Hon. Vince Parrett, Dept. 16 (stamp 02/11/27, 200P |
 | Mar. 1, 2027 | 30 | OUTER STATUTE OF LIMITATIONS (computed) — Government Claims Act six-month suit-filing window for the Bane Act and IIED state-law claims, Newanforbi v. Moua, et al. (Matter 30) |
 <!-- PORTFOLIO:UPCOMING_DEADLINES:END -->
 
@@ -285,7 +289,8 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 | N.D. Cal. §1983 Meza-Gonzalez (Matter 32) — pleaded >$214k; $0 here to avoid double-count w/ M1/M2 | 32 | $0 | $0 | $0 |
 | N.D. Cal. §1983 Nforbi v. Candelaria et al. (Matter 33, 3:26-cv-08272-LJC) — pleaded >$214k; $0 here to avoid double-count w/ M7 | 33 | $0 | $0 | $0 |
 | §1983 Monell / Individual + Bane Act — Counseling & Psychotherapy Center (Matter 34) | 34 | $0 | $0 | $0 |
-| **Portfolio Total (pre-deduplication)** | | **$1,160,672** | **$2,957,072** | **$6,579,272** |
+| Unruh / False Imprisonment / Negligent Training — Ross Stores (Matter 35) | 35 | $115,000 | $345,000 | $1,035,000 |
+| **Portfolio Total (pre-deduplication)** | | **$1,275,672** | **$3,302,072** | **$7,614,272** |
 <!-- PORTFOLIO:DAMAGES_SUMMARY:END -->
 
 *Note: The portfolio total reflects independent per-defendant exposure across all matters before deduplication of shared economic events (e.g., the same CDL wage-loss period underlying Matters 1, 2, 7, 15). Per-matter settlement negotiations treat each defendant independently.*
@@ -301,7 +306,7 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 ## Attorney Fees Analysis
 
 <!-- PORTFOLIO:ATTORNEY_FEES:START -->
-Plaintiff is representing himself pro se across all 34 matters. The figures below represent what he would have been required to spend on private counsel to litigate this portfolio — costs he has absorbed entirely through self-representation. Based on real page counts extracted from 326 documents / 3,898 pages across matters with uploaded filings (Matter 32: 78 PDFs / 808 pages — N.D. Cal. ndcal/ filing billed; from-01|02|20|24/ stay attributed to source matters; Matter 33: 30 PDFs / 428 pages — N.D. Cal. refile + Nov. 1 / APS evidence; from-07/from-08 drafting stays on Matters 7/8; Matter 31 has no uploaded PDFs of its own), classified by document type and priced at a blended rate of **$280/hour** (senior partner $350–$450 / mid-associate $250–$350 / paralegal $150–$200). Opposing-party filings billed at light review rate only. Fee analysis date: August 14, 2026.
+Plaintiff is representing himself pro se across all 35 matters. The figures below represent what he would have been required to spend on private counsel to litigate this portfolio — costs he has absorbed entirely through self-representation. Based on real page counts extracted from 331 documents / 3,942 pages across matters with uploaded filings (Matter 32: 78 PDFs / 808 pages — N.D. Cal. ndcal/ filing billed; from-01|02|20|24/ stay attributed to source matters; Matter 33: 30 PDFs / 428 pages — N.D. Cal. refile + Nov. 1 / APS evidence; from-07/from-08 drafting stays on Matters 7/8; Matter 31 has no uploaded PDFs of its own), classified by document type and priced at a blended rate of **$280/hour** (senior partner $350–$450 / mid-associate $250–$350 / paralegal $150–$200). Opposing-party filings billed at light review rate only. Fee analysis date: August 26, 2026.
 
 | Cluster | Matters | Low | Mid | High |
 |---|---|---|---|---|
@@ -309,10 +314,10 @@ Plaintiff is representing himself pro se across all 34 matters. The figures belo
 | Parole Retaliation / HOPE | 3, 4, 5, 6, 11, 13, 14, 15, 16, 17, 18, 21, 28, 30, 34 | $463,512 | $610,092 | $760,872 |
 | Consumer Fraud / Employment | 12, 22, 23, 25, 26, 27, 29, 31 | $136,976 | $185,500 | $233,940 |
 | Administrative Writs & Habeas | 9, 10, 19 | $41,580 | $57,890 | $74,200 |
-| **Portfolio Total** | **34 matters** | **$804,104** | **$1,067,640** | **$1,335,376** |
-| **Estimated Hours** | | **2,871.8 hrs** | **3,813 hrs** | **4,769.2 hrs** |
+| **Portfolio Total** | **35 matters** | **$816,984** | **$1,085,000** | **$1,357,216** |
+| **Estimated Hours** | | **2,917.8 hrs** | **3,875 hrs** | **4,847.2 hrs** |
 
-*Plaintiff has litigated all 34 matters pro se, absorbing the full economic equivalent of the above without compensation. Fee-shifting statutes (42 U.S.C. §1988, PC §290.46(j)(4)(A), RICO 18 U.S.C. §1964(c), FCRA, ICRAA) apply across the majority of active matters — mandatory fee recovery upon prevailing substantially offsets or eliminates the above costs.*
+*Plaintiff has litigated all 35 matters pro se, absorbing the full economic equivalent of the above without compensation. Fee-shifting statutes (42 U.S.C. §1988, PC §290.46(j)(4)(A), RICO 18 U.S.C. §1964(c), FCRA, ICRAA) apply across the majority of active matters — mandatory fee recovery upon prevailing substantially offsets or eliminates the above costs.*
 <!-- PORTFOLIO:ATTORNEY_FEES:END -->
 
 [↑ Contents](#contents)
@@ -410,7 +415,7 @@ Controls (reconfirm when batching): *Richardson v. McKnight*, 521 U.S. 399 must 
 | NOT_FOUND | 6 |
 | UNVERIFIED | 429 |
 
-Paired authorities: **820**. P0 (plaintiff-only UNVERIFIED): **8**. P1 (plaintiff-only bad status): **27**. Ledger date: 2026-08-25.
+Paired authorities: **820**. P0 (plaintiff-only UNVERIFIED): **8**. P1 (plaintiff-only bad status): **27**. Ledger date: 2026-08-26.
 <!-- PORTFOLIO:CITATION_SCOREBOARD:END -->
 
 Priority queues from the ledger: **P0** = plaintiff-only + still `UNVERIFIED` (`npm run citations:queue`); **P1** = plaintiff-only + bad status (fix before the next brief). Pre-existing fabricated hits are debt-tracked in `citation_known_bad_debt.json` so CI stays green while corrected drafts replace them.

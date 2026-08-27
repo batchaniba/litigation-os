@@ -673,17 +673,17 @@
   {
     "number": 25,
     "caption": "Newanforbi v. Federal Express Corporation",
-    "case_no": "STK-CV-UWT-2026-0009118",
-    "court": "San Joaquin Sup. Ct.",
+    "case_no": "2:26-cv-02881-DAD-SCR",
+    "court": "USDC E.D. Cal. (Sacramento Div.)",
     "claims": "PC §290.46(j)(2)(E) Violation, Failure to Hire (Tameny), ICRAA, Invasion of Privacy, Negligence Per Se, UCL §17200",
     "lifecycle": "active",
-    "proceeding": "state_civil",
+    "proceeding": "federal_civil",
     "phase": "responsive_deadline",
-    "filed": "July 15, 2026",
-    "judge": "Hon. Blanca Banuelos, Dept. 10B",
+    "filed": "July 15, 2026 (state); removed Aug. 24, 2026",
+    "judge": "Hon. Dale A. Drozd, D.J.; Hon. Sean C. Riordan, M.J.",
     "cluster": 3,
-    "type": "State",
-    "badge": "SERVED",
+    "type": "Federal",
+    "badge": "REMOVED",
     "defendants": "Federal Express Corporation; and DOES 1 through 10, inclusive",
     "causes": [
       "Violation of Cal. Penal Code § 290.46(j)(2)(E)",
@@ -694,9 +694,9 @@
       "Unlawful Business Practices (Bus. & Prof. Code § 17200 et seq.)"
     ],
     "archived": false,
-    "status_label": "Served Jul. 24, 2026 — response due Aug. 24",
-    "evidenceCount": 8,
-    "documentCount": 27
+    "status_label": "Removed — 2:26-cv-02881-DAD-SCR; resp. ~Aug 31",
+    "evidenceCount": 9,
+    "documentCount": 34
   },
   {
     "number": 26,
@@ -1015,5 +1015,48 @@
     ],
     "evidenceCount": 10,
     "documentCount": 0
+  },
+  {
+    "number": 35,
+    "caption": "Ngwa Nforbi v. Ross Stores, Inc., et al.",
+    "case_no": "26CV501995",
+    "court": "Santa Clara Sup. Ct. (Downtown / First Street)",
+    "claims": "Unruh Civil Rights Act (Civ. Code §§51, 51.5, 52); False Imprisonment; Negligent Training and Supervision",
+    "status_label": "Filed — 26CV501995; CMC Feb 11 2027 (Parrett)",
+    "lifecycle": "active",
+    "proceeding": "state_civil",
+    "phase": "service",
+    "badge": "FILED",
+    "filed": "E-filed Aug. 26, 2026, 2:06 AM PT via One Legal (Confirmation #35442871; Filing Order #29111713; Court Env. #24948831). Clerk-accepted same day; case number 26CV501995 assigned; summons issued (Deputy M. Suarez).",
+    "judge": "Hon. Vince Parrett, Dept. 16 (Santa Clara Superior Court — Downtown)",
+    "cluster": 6,
+    "type": "State",
+    "archived": false,
+    "defendants": "Ross Stores, Inc. (Delaware corporation; CA SOS State ID 01642535; 5130 Hacienda Drive, Dublin, CA 94568); Ross Dress for Less, Inc. (Virginia corporation; CA Doc. No. 2642531; same Dublin HQ; owns/operates Sunnyvale Store); DOE 1 (white female loss-prevention employee ~55 who blocked Plaintiff's exit); and DOES 2 through 20, inclusive (cashier and other agents/employees whose true names are unknown). Agent for service (info. and belief): C T Corporation System, 330 N. Brand Blvd., Suite 700, Glendale, CA 91203.",
+    "serviceTracking": [
+      {
+        "name": "Ross Stores, Inc.",
+        "title": "Corporate Defendant (agent for service — C T Corporation System, info. and belief)",
+        "location": "Glendale, CA (C T Corporation System)",
+        "served": false,
+        "dateServed": null,
+        "note": "Serve Complaint + issued Summons + ADR Information Sheet + clerk-stamped CV-5012 by ~Oct. 25, 2026 (60 days from Aug. 26 filing); then file POS-010."
+      },
+      {
+        "name": "Ross Dress for Less, Inc.",
+        "title": "Corporate Defendant (agent for service — C T Corporation System, info. and belief)",
+        "location": "Glendale, CA (C T Corporation System)",
+        "served": false,
+        "dateServed": null,
+        "note": "Same service packet and deadline as Ross Stores, Inc."
+      }
+    ],
+    "causes": [
+      "First — Violation of the Unruh Civil Rights Act (Civ. Code §§ 51, 51.5, 52)",
+      "Second — False Imprisonment",
+      "Third — Negligent Training and Supervision"
+    ],
+    "evidenceCount": 10,
+    "documentCount": 10
   }
 ]

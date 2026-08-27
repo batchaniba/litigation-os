@@ -10,7 +10,7 @@ export default function MattersRoute() {
   const sort = params.get("sort");
   const sortKey = SORT_KEYS.find((key) => key === sort) ?? "number";
   const filters = useCaseFilters({
-    cluster: cluster >= 1 && cluster <= 5 ? cluster : null,
+    cluster: cluster >= 1 && cluster <= 6 ? cluster : null,
     status: params.get("status") ?? "active",
     type: params.get("type"),
     query: params.get("q") ?? "",
