@@ -5,7 +5,7 @@
     "case_no": "2:25-cv-01460-DC-CSK",
     "court": "USDC E.D. Cal.",
     "claims": "42 USC 1983: 4A Search/Seizure, Due Process, Monell",
-    "status_label": "Dismissed w/o prejudice — Aug. 15; refiled as Matter 32",
+    "status_label": "Dismissed w/o prejudice \u2014 Aug. 15; refiled as Matter 32",
     "lifecycle": "dismissed",
     "proceeding": "federal_civil",
     "phase": "terminal",
@@ -30,7 +30,7 @@
     "case_no": "26CV168913",
     "court": "Alameda Sup. Ct.",
     "claims": "False Imprisonment, Battery, Bane Act",
-    "status_label": "Dismissed w/o prejudice — Aug. 15, 2026",
+    "status_label": "Dismissed w/o prejudice \u2014 Aug. 15, 2026",
     "lifecycle": "dismissed",
     "proceeding": "state_civil",
     "phase": "terminal",
@@ -55,7 +55,7 @@
     "case_no": "2:26-cv-00004-DJC-JDP",
     "court": "USDC E.D. Cal.",
     "claims": "42 USC 1983: 1A Retaliation, 14A Equal Protection, Due Process",
-    "status_label": "Abandoned — OSC discharge pending",
+    "status_label": "Abandoned \u2014 OSC discharge pending",
     "lifecycle": "abandoned",
     "proceeding": "federal_civil",
     "phase": "terminal",
@@ -65,12 +65,12 @@
     "type": "Federal",
     "archived": true,
     "badge": "ABANDONED",
-    "note": "Palacios's MTD GRANTED Jul. 24; FAC dismissed w/ leave to amend by Aug. 7. Jul. 22 dismissal of Derrick/Noguchi was valid as a matter of right (no answer/MSJ served) — Jul. 24 order doesn't address it. Aug. 20, 2026 Notice of Voluntary Dismissal of Katie Palacios filed (Rule 41(a)(1)(A)(i)).",
-    "defendants": "Andrew Derrick (#6910) — Notice of Voluntary Dismissal filed Jul. 22, 2026 (self-executing under Rule 41(a)(1)(A)(i)); Jul. 24, 2026 order nonetheless treats him as the sole remaining defendant if no amended complaint is filed — tension unresolved on the docket; Katie Palacios — MTD GRANTED Jul. 24, 2026 (failed all four state-actor tests); claims DISMISSED WITH LEAVE TO AMEND; then Notice of Voluntary Dismissal filed Aug. 20, 2026 under Rule 41(a)(1)(A)(i); Gary Noguchi (#7284) — Notice of Voluntary Dismissal filed Jul. 22, 2026 (self-executing); Jul. 24, 2026 order separately dismissed claims against him for failure to allege supervisory liability",
+    "note": "Palacios's MTD GRANTED Jul. 24; FAC dismissed w/ leave to amend by Aug. 7. Jul. 22 dismissal of Derrick/Noguchi was valid as a matter of right (no answer/MSJ served) \u2014 Jul. 24 order doesn't address it. Aug. 20, 2026 Notice of Voluntary Dismissal of Katie Palacios filed (Rule 41(a)(1)(A)(i)).",
+    "defendants": "Andrew Derrick (#6910) \u2014 Notice of Voluntary Dismissal filed Jul. 22, 2026 (self-executing under Rule 41(a)(1)(A)(i)); Jul. 24, 2026 order nonetheless treats him as the sole remaining defendant if no amended complaint is filed \u2014 tension unresolved on the docket; Katie Palacios \u2014 MTD GRANTED Jul. 24, 2026 (failed all four state-actor tests); claims DISMISSED WITH LEAVE TO AMEND; then Notice of Voluntary Dismissal filed Aug. 20, 2026 under Rule 41(a)(1)(A)(i); Gary Noguchi (#7284) \u2014 Notice of Voluntary Dismissal filed Jul. 22, 2026 (self-executing); Jul. 24, 2026 order separately dismissed claims against him for failure to allege supervisory liability",
     "causes": [
       "First Amendment Retaliation",
       "Equal Protection (race-based)",
-      "Substantive Due Process — Arbitrary Abuse of Power"
+      "Substantive Due Process \u2014 Arbitrary Abuse of Power"
     ],
     "evidenceCount": 8,
     "documentCount": 27
@@ -81,7 +81,7 @@
     "case_no": "TBD",
     "court": "San Joaquin Sup. Ct.",
     "claims": "IIED, Bane Act, Intentional/Negligent Econ. Interference, Negligent Supervision, NIED",
-    "status_label": "Abandoned — voluntarily dismissed",
+    "status_label": "Abandoned \u2014 voluntarily dismissed",
     "lifecycle": "abandoned",
     "proceeding": "state_civil",
     "phase": "terminal",
@@ -94,7 +94,7 @@
     "defendants": "Andrew Jackson Derrick (individually); Gary Noguchi (individually); State of California / CDCR; DOES 1-20",
     "causes": [
       "IIED",
-      "Bane Act (Civ. Code §52.1)",
+      "Bane Act (Civ. Code \u00a752.1)",
       "Intentional Interference w/ Econ. Adv.",
       "Negligent Interference w/ Econ. Adv.",
       "Negligent Supervision",
@@ -108,8 +108,8 @@
     "caption": "Newanforbi v. Palacios et al.",
     "case_no": "STK-CV-UF-2026-0001032",
     "court": "San Joaquin Sup. Ct.",
-    "claims": "Fraud/Intentional Misrepresentation, Negligence (incl. Negligence Per Se), IIED, Intentional Interference w/ Prospective Econ. Adv., Bane Act (§52.1), Declaratory Relief, UCL (§17200)",
-    "status_label": "Dismissed — demurrer sustained w/o leave Jul. 15, 2026",
+    "claims": "Fraud/Intentional Misrepresentation, Negligence (incl. Negligence Per Se), IIED, Intentional Interference w/ Prospective Econ. Adv., Bane Act (\u00a752.1), Declaratory Relief, UCL (\u00a717200)",
+    "status_label": "Dismissed \u2014 demurrer sustained w/o leave Jul. 15, 2026",
     "lifecycle": "dismissed",
     "proceeding": "state_civil",
     "phase": "terminal",
@@ -119,15 +119,15 @@
     "cluster": 2,
     "type": "State",
     "archived": true,
-    "defendants": "HOPE Psychotherapy, Inc., d/b/a HOPE Program (California corporation); Katie Palacios, site Director / LMFT No. 44555 (individually and as managing agent under Civ. Code §3294(b)); DOES 1-10",
+    "defendants": "HOPE Psychotherapy, Inc., d/b/a HOPE Program (California corporation); Katie Palacios, site Director / LMFT No. 44555 (individually and as managing agent under Civ. Code \u00a73294(b)); DOES 1-10",
     "causes": [
-      "Count 1 — Fraud / Intentional Misrepresentation (against all defendants): intake misrepresentations (March 2021); Akins group representation (November 2022); January 2024 group representation; June 2024 false homework statement; CTM 'partial homework' submissions to CDCR (November 2022–February 2026)",
-      "Count 2 — Negligence, including Negligence Per Se (against all defendants): PC §3008(d)(2) and 15 CCR §3574(f)(1) violated; special relationship under Giraldo; failure to maintain accurate homework records; false reporting of partial completion to CDCR",
-      "Count 3 — IIED (against all defendants): continued post-Dwyer blanket retention; false 'not completed' characterizations to CDCR; June 2024 false homework denial; August 2025 retaliatory CTM statements ('disruptive,' 'ringleader,' 'abhorrent,' 'acting job')",
-      "Count 4 — Intentional Interference with Prospective Economic Advantage (against all defendants): disruption of CDL carrier relationships (United Road, Keurig Dr Pepper, Tiger Lines LLC, US-1 Shorthaul, Lazer Spot Inc., Centerline Drivers); $109,408 documented 2022-2024 losses",
-      "Count 5 — Bane Act, Civ. Code §52.1 (against all defendants): interference with PC §3008(d)(2) and 15 CCR §3574(f)(1) rights through coercion; Palacios's August 2025 intimidation; $25,000 statutory damages per violation",
-      "Count 6 — Declaratory Relief: judicial declaration that HOPE's blanket retention policy is unlawful; permanent injunction requiring individualized assessment per published CASOMB criteria",
-      "Count 7 — UCL, Bus. & Prof. Code §17200 (against all defendants): blanket retention policy = unlawful business practice; false partial-homework reporting = unfair business practice; restitution of all fees wrongfully retained"
+      "Count 1 \u2014 Fraud / Intentional Misrepresentation (against all defendants): intake misrepresentations (March 2021); Akins group representation (November 2022); January 2024 group representation; June 2024 false homework statement; CTM 'partial homework' submissions to CDCR (November 2022\u2013February 2026)",
+      "Count 2 \u2014 Negligence, including Negligence Per Se (against all defendants): PC \u00a73008(d)(2) and 15 CCR \u00a73574(f)(1) violated; special relationship under Giraldo; failure to maintain accurate homework records; false reporting of partial completion to CDCR",
+      "Count 3 \u2014 IIED (against all defendants): continued post-Dwyer blanket retention; false 'not completed' characterizations to CDCR; June 2024 false homework denial; August 2025 retaliatory CTM statements ('disruptive,' 'ringleader,' 'abhorrent,' 'acting job')",
+      "Count 4 \u2014 Intentional Interference with Prospective Economic Advantage (against all defendants): disruption of CDL carrier relationships (United Road, Keurig Dr Pepper, Tiger Lines LLC, US-1 Shorthaul, Lazer Spot Inc., Centerline Drivers); $109,408 documented 2022-2024 losses",
+      "Count 5 \u2014 Bane Act, Civ. Code \u00a752.1 (against all defendants): interference with PC \u00a73008(d)(2) and 15 CCR \u00a73574(f)(1) rights through coercion; Palacios's August 2025 intimidation; $25,000 statutory damages per violation",
+      "Count 6 \u2014 Declaratory Relief: judicial declaration that HOPE's blanket retention policy is unlawful; permanent injunction requiring individualized assessment per published CASOMB criteria",
+      "Count 7 \u2014 UCL, Bus. & Prof. Code \u00a717200 (against all defendants): blanket retention policy = unlawful business practice; false partial-homework reporting = unfair business practice; restitution of all fees wrongfully retained"
     ],
     "evidenceCount": 17,
     "documentCount": 37
@@ -137,8 +137,8 @@
     "caption": "Newanforbi v. HOPE et al.",
     "case_no": "2:26-cv-00195-TLN-AC",
     "court": "USDC E.D. Cal.",
-    "claims": "42 U.S.C. § 1983: Procedural Due Process — Three Counts: (I) Damages against HOPE; (II) Injunctive/Declaratory Relief against HOPE & Macomber; (III) Delegation Without Safeguards against both",
-    "status_label": "Dismissed without prejudice — Jun. 1, 2026",
+    "claims": "42 U.S.C. \u00a7 1983: Procedural Due Process \u2014 Three Counts: (I) Damages against HOPE; (II) Injunctive/Declaratory Relief against HOPE & Macomber; (III) Delegation Without Safeguards against both",
+    "status_label": "Dismissed without prejudice \u2014 Jun. 1, 2026",
     "lifecycle": "dismissed",
     "proceeding": "federal_civil",
     "phase": "terminal",
@@ -148,11 +148,11 @@
     "type": "Federal",
     "archived": true,
     "badge": "DISMISSED",
-    "defendants": "HOPE Psychotherapy, Inc. d/b/a HOPE PROGRAM (NPI 1992154603; for damages — Count I; injunctive/declaratory — Counts II–III); Jeff Macomber, Secretary CDCR (official capacity; injunctive/declaratory relief only — Counts II–III; Ex parte Young). [FAC narrowed from 9 original defendants — all individual CDCR defendants (Palacios, Bishop, Dodd, Moua, Noguchi, Derrick, Rojo) dropped in FAC filed Feb. 20, 2026.]",
+    "defendants": "HOPE Psychotherapy, Inc. d/b/a HOPE PROGRAM (NPI 1992154603; for damages \u2014 Count I; injunctive/declaratory \u2014 Counts II\u2013III); Jeff Macomber, Secretary CDCR (official capacity; injunctive/declaratory relief only \u2014 Counts II\u2013III; Ex parte Young). [FAC narrowed from 9 original defendants \u2014 all individual CDCR defendants (Palacios, Bishop, Dodd, Moua, Noguchi, Derrick, Rojo) dropped in FAC filed Feb. 20, 2026.]",
     "causes": [
-      "Count I — 42 U.S.C. § 1983 Damages: Procedural Due Process (14th Amend.) — HOPE denied Plaintiff meaningful opportunity to be heard before discharge review; HOPE fabricated '10-year parole term' ineligibility rule; eight documented facial defects in Form 1502-DR; financial conflict of interest — HOPE billed CDCR ~$10,600/year per retained parolee (against HOPE Psychotherapy, Inc. for compensatory, nominal, and punitive damages)",
-      "Count II — 42 U.S.C. § 1983 Declaratory & Injunctive Relief (Ex parte Young): (a) HOPE's blanket retention policy violates procedural due process — judicially condemned in In re Dwyer (San Mateo Super. Ct. Mar. 20, 2023) and ACSOL v. Macomber (L.A. Super. Ct. Dec. 13, 2023); (b) CDCR's discharge review framework violates Cal. Penal Code §§ 3001(a)(2) and 3008(d)(2) and 15 CCR § 3574 (against HOPE and Macomber, official capacity)",
-      "Count III — 42 U.S.C. § 1983 Delegation Without Safeguards: CDCR delegated discharge authority to a financially conflicted private vendor (HOPE) without adequate procedural safeguards — HOPE's financial interest in retention creates structural bias that taints the entire discharge review framework (against HOPE and Macomber, official capacity)"
+      "Count I \u2014 42 U.S.C. \u00a7 1983 Damages: Procedural Due Process (14th Amend.) \u2014 HOPE denied Plaintiff meaningful opportunity to be heard before discharge review; HOPE fabricated '10-year parole term' ineligibility rule; eight documented facial defects in Form 1502-DR; financial conflict of interest \u2014 HOPE billed CDCR ~$10,600/year per retained parolee (against HOPE Psychotherapy, Inc. for compensatory, nominal, and punitive damages)",
+      "Count II \u2014 42 U.S.C. \u00a7 1983 Declaratory & Injunctive Relief (Ex parte Young): (a) HOPE's blanket retention policy violates procedural due process \u2014 judicially condemned in In re Dwyer (San Mateo Super. Ct. Mar. 20, 2023) and ACSOL v. Macomber (L.A. Super. Ct. Dec. 13, 2023); (b) CDCR's discharge review framework violates Cal. Penal Code \u00a7\u00a7 3001(a)(2) and 3008(d)(2) and 15 CCR \u00a7 3574 (against HOPE and Macomber, official capacity)",
+      "Count III \u2014 42 U.S.C. \u00a7 1983 Delegation Without Safeguards: CDCR delegated discharge authority to a financially conflicted private vendor (HOPE) without adequate procedural safeguards \u2014 HOPE's financial interest in retention creates structural bias that taints the entire discharge review framework (against HOPE and Macomber, official capacity)"
     ],
     "evidenceCount": 14,
     "documentCount": 4
@@ -162,24 +162,24 @@
     "caption": "Newanforbi v. Candelaria",
     "case_no": "2:26-cv-00983-DC-CSK",
     "court": "USDC E.D. Cal.",
-    "claims": "42 USC 1983: Procedural Due Process — Structural Bias, Denial of Neutral Decisionmaker, Deprivation Without Due Process",
-    "status_label": "Dismissed w/o prejudice — Aug. 15; refiled as Matter 33",
+    "claims": "42 USC 1983: Procedural Due Process \u2014 Structural Bias, Denial of Neutral Decisionmaker, Deprivation Without Due Process",
+    "status_label": "Dismissed w/o prejudice \u2014 Aug. 15; refiled as Matter 33",
     "lifecycle": "dismissed",
     "proceeding": "federal_civil",
     "phase": "terminal",
     "filed": "April 27, 2026",
-    "judge": "Hon. Dena M. Coggins (referred to Magistrate Judge Chi Soo Kim) — same district/magistrate pair as Matter 1, per the shared \"DC-CSK\" case-number suffix",
+    "judge": "Hon. Dena M. Coggins (referred to Magistrate Judge Chi Soo Kim) \u2014 same district/magistrate pair as Matter 1, per the shared \"DC-CSK\" case-number suffix",
     "cluster": 1,
     "type": "Federal",
     "defendants": "Diana Candelaria, DMV Hearing Officer (individual capacity); Steve Gordon, Director of California DMV (official capacity)",
     "archived": true,
     "badge": "DISMISSED",
     "causes": [
-      "Count I — 42 U.S.C. § 1983 Damages: Procedural Due Process (14th Amend.) — structural bias; simultaneous prosecutor/adjudicator; irrebuttable presumption of official regularity (against Candelaria, individual capacity)",
-      "Count II — 42 U.S.C. § 1983 Declaratory Relief (28 U.S.C. §§ 2201–2202): (a) APS hearing violated Due Process — hearing officer served as DMV's prosecuting advocate and trier of fact; (b) DMV lacked statutory authority — 'lawful arrest' predicate required by VC §§ 13353 and 13353.2 destroyed by PC § 849(b)(1) Detention Certificate; (c) DMV's irrebuttable presumption of official regularity violates procedural due process (against Gordon, official capacity, Ex parte Young)",
-      "Count III — 42 U.S.C. § 1983 Injunctive Relief (Ex parte Young): (a) vacate Feb 11 2025 APS Decision Case 34739340; (b) immediate CDL reinstatement free of suspension penalties; (c) prohibit $125 reissue fee and SR-22 requirement; (d) require neutral decisionmaker for any new hearing (against Gordon, official capacity)"
+      "Count I \u2014 42 U.S.C. \u00a7 1983 Damages: Procedural Due Process (14th Amend.) \u2014 structural bias; simultaneous prosecutor/adjudicator; irrebuttable presumption of official regularity (against Candelaria, individual capacity)",
+      "Count II \u2014 42 U.S.C. \u00a7 1983 Declaratory Relief (28 U.S.C. \u00a7\u00a7 2201\u20132202): (a) APS hearing violated Due Process \u2014 hearing officer served as DMV's prosecuting advocate and trier of fact; (b) DMV lacked statutory authority \u2014 'lawful arrest' predicate required by VC \u00a7\u00a7 13353 and 13353.2 destroyed by PC \u00a7 849(b)(1) Detention Certificate; (c) DMV's irrebuttable presumption of official regularity violates procedural due process (against Gordon, official capacity, Ex parte Young)",
+      "Count III \u2014 42 U.S.C. \u00a7 1983 Injunctive Relief (Ex parte Young): (a) vacate Feb 11 2025 APS Decision Case 34739340; (b) immediate CDL reinstatement free of suspension penalties; (c) prohibit $125 reissue fee and SR-22 requirement; (d) require neutral decisionmaker for any new hearing (against Gordon, official capacity)"
     ],
-    "note": "N.D. Cal. counterpart now docketed as Matter 33 (Nforbi v. Candelaria et al., No. 3:26-cv-08272-LJC, docketed Aug. 10, 2026 before Magistrate Judge Lisa J. Cisneros) — same two defendants, same Feb. 11, 2025 APS decision. CONFIRMED: this action was voluntarily dismissed without prejudice Aug. 15, 2026, matching the representation Matter 33's complaint made to the N.D. Cal. Do not plead this matter's damages a second time under Matter 33 without reconciling the totals.",
+    "note": "N.D. Cal. counterpart now docketed as Matter 33 (Nforbi v. Candelaria et al., No. 3:26-cv-08272-LJC, docketed Aug. 10, 2026 before Magistrate Judge Lisa J. Cisneros) \u2014 same two defendants, same Feb. 11, 2025 APS decision. CONFIRMED: this action was voluntarily dismissed without prejudice Aug. 15, 2026, matching the representation Matter 33's complaint made to the N.D. Cal. Do not plead this matter's damages a second time under Matter 33 without reconciling the totals.",
     "evidenceCount": 17,
     "documentCount": 20
   },
@@ -188,12 +188,12 @@
     "caption": "Newanforbi v. Candelaria, et al.",
     "case_no": "26WM000135",
     "court": "Sacramento Sup. Ct.",
-    "claims": "Writ of Administrative Mandate (CCP §§1094.5, 473(d); Veh. Code §13559) — Set aside void APS Decision",
-    "status_label": "Abandoned — fee-payment deadline lapsed Jul. 27, 2026",
+    "claims": "Writ of Administrative Mandate (CCP \u00a7\u00a71094.5, 473(d); Veh. Code \u00a713559) \u2014 Set aside void APS Decision",
+    "status_label": "Abandoned \u2014 fee-payment deadline lapsed Jul. 27, 2026",
     "lifecycle": "abandoned",
     "proceeding": "mandate",
     "phase": "terminal",
-    "note": "Fee deadline lapsed ~Jul. 27, 2026 — not pursued further; Matter 7 remains the live vehicle for the same underlying theory. PDF set relocated to Matter 33 on August 7, 2026.",
+    "note": "Fee deadline lapsed ~Jul. 27, 2026 \u2014 not pursued further; Matter 7 remains the live vehicle for the same underlying theory. PDF set relocated to Matter 33 on August 7, 2026.",
     "filed": "May 18, 2026",
     "judge": "TBD (Dept. 10C)",
     "cluster": 1,
@@ -202,11 +202,11 @@
     "badge": "ABANDONED",
     "defendants": "Diana Candelaria, Driver Safety Hearing Officer, California DMV (official capacity); California Department of Motor Vehicles; Does 1-10",
     "causes": [
-      "Count I — Want of Statutory Predicate: No 'Lawful Arrest' (Veh. Code §13353(a)(1); CCP §1094.5(b)) — APS refusal suspension lacks 'lawful arrest' predicate; PC §849(b)(1) Detention Certificate (Nov. 5, 2024) irrevocably destroyed that predicate before the Jan. 24, 2025 hearing",
-      "Count II — Failure to Proceed in the Manner Required by Law (CCP §1094.5(b); Topanga Ass'n v. County of L.A., 11 Cal.3d 506) — Decision does not mention Detention Certificate; dismisses arguments as 'unpersuasive' without analysis; mischaracterizes record; never applies Mercer v. DMV or People v. Sanders",
-      "Count III — Findings Unsupported by the Weight of the Evidence (CCP §1094.5(c); Berlinghieri v. DMV, 33 Cal.3d 392) — Dashcam audio directly contradicts DS-367's 'strong distinct odor of alcohol'; only liquid identified on scene was urine; no objective signs of impairment on video; walk-and-turn abandoned by officers; no pass/fail FST standard",
-      "Count IV — Structural Bias — Unconstitutional Dual-Role Framework (U.S. Const. 14th Amend.; Cal. Const. art. I §7) — DMV hearing officer serves as both advocate and adjudicator; structural error under Knudsen v. DMV (no showing of actual prejudice required); framework condemned in Cal. DUI Lawyers Ass'n v. DMV, Knudsen, Clarke v. Gordon",
-      "Count V — Excess of Jurisdiction — Adjudication of a Non-Existent Subject Matter (CCP §1094.5(b)) — Decision void; rendered in clear absence of jurisdiction over subject matter that did not legally exist at time of hearing"
+      "Count I \u2014 Want of Statutory Predicate: No 'Lawful Arrest' (Veh. Code \u00a713353(a)(1); CCP \u00a71094.5(b)) \u2014 APS refusal suspension lacks 'lawful arrest' predicate; PC \u00a7849(b)(1) Detention Certificate (Nov. 5, 2024) irrevocably destroyed that predicate before the Jan. 24, 2025 hearing",
+      "Count II \u2014 Failure to Proceed in the Manner Required by Law (CCP \u00a71094.5(b); Topanga Ass'n v. County of L.A., 11 Cal.3d 506) \u2014 Decision does not mention Detention Certificate; dismisses arguments as 'unpersuasive' without analysis; mischaracterizes record; never applies Mercer v. DMV or People v. Sanders",
+      "Count III \u2014 Findings Unsupported by the Weight of the Evidence (CCP \u00a71094.5(c); Berlinghieri v. DMV, 33 Cal.3d 392) \u2014 Dashcam audio directly contradicts DS-367's 'strong distinct odor of alcohol'; only liquid identified on scene was urine; no objective signs of impairment on video; walk-and-turn abandoned by officers; no pass/fail FST standard",
+      "Count IV \u2014 Structural Bias \u2014 Unconstitutional Dual-Role Framework (U.S. Const. 14th Amend.; Cal. Const. art. I \u00a77) \u2014 DMV hearing officer serves as both advocate and adjudicator; structural error under Knudsen v. DMV (no showing of actual prejudice required); framework condemned in Cal. DUI Lawyers Ass'n v. DMV, Knudsen, Clarke v. Gordon",
+      "Count V \u2014 Excess of Jurisdiction \u2014 Adjudication of a Non-Existent Subject Matter (CCP \u00a71094.5(b)) \u2014 Decision void; rendered in clear absence of jurisdiction over subject matter that did not legally exist at time of hearing"
     ],
     "evidenceCount": 8,
     "documentCount": 6
@@ -216,8 +216,8 @@
     "caption": "Newanforbi v. Macomber",
     "case_no": "26WM000028",
     "court": "Sacramento Sup. Ct.",
-    "claims": "Writ of Mandate (CCP §1085)",
-    "status_label": "Closed — demurrer sustained May 29, 2026",
+    "claims": "Writ of Mandate (CCP \u00a71085)",
+    "status_label": "Closed \u2014 demurrer sustained May 29, 2026",
     "lifecycle": "closed",
     "proceeding": "mandate",
     "phase": "terminal",
@@ -229,7 +229,7 @@
     "badge": "DENIED",
     "defendants": "Jeff Macomber, Secretary of CDCR",
     "causes": [
-      "Writ of Mandate (CCP §1085) — Compel ministerial duty to conduct individualized discharge determination"
+      "Writ of Mandate (CCP \u00a71085) \u2014 Compel ministerial duty to conduct individualized discharge determination"
     ],
     "evidenceCount": 4,
     "documentCount": 8
@@ -239,8 +239,8 @@
     "caption": "Newanforbi v. Macomber",
     "case_no": "C2602632",
     "court": "Santa Clara Sup. Ct.",
-    "claims": "Habeas Corpus (PC §3008(d)(2); 15 CCR §3574) — Treatment Termination",
-    "status_label": "Closed — petition denied w/o prejudice Apr. 27, 2026",
+    "claims": "Habeas Corpus (PC \u00a73008(d)(2); 15 CCR \u00a73574) \u2014 Treatment Termination",
+    "status_label": "Closed \u2014 petition denied w/o prejudice Apr. 27, 2026",
     "lifecycle": "closed",
     "proceeding": "habeas",
     "phase": "terminal",
@@ -252,8 +252,8 @@
     "badge": "DENIED",
     "defendants": "Jeffrey Macomber, Secretary of CDCR (official capacity)",
     "causes": [
-      "PC §3008(d)(2)",
-      "15 CCR §3574",
+      "PC \u00a73008(d)(2)",
+      "15 CCR \u00a73574",
       "Challenge to compelled treatment as unlawful restraint"
     ],
     "evidenceCount": 4,
@@ -265,7 +265,7 @@
     "case_no": "TBD (USDC E.D. Cal.)",
     "court": "USDC E.D. Cal.",
     "claims": "42 USC 1983: Procedural Due Process (Policy 19-03)",
-    "status_label": "Dismissed with prejudice — Jun. 29, 2026",
+    "status_label": "Dismissed with prejudice \u2014 Jun. 29, 2026",
     "lifecycle": "dismissed",
     "proceeding": "federal_civil",
     "phase": "terminal",
@@ -277,7 +277,7 @@
     "badge": "DISMISSED",
     "defendants": "Jeff Macomber, Secretary of CDCR (official capacity only)",
     "causes": [
-      "Procedural Due Process (14th Amend.) — Policy 19-03 challenge; declaratory/injunctive relief under Ex parte Young"
+      "Procedural Due Process (14th Amend.) \u2014 Policy 19-03 challenge; declaratory/injunctive relief under Ex parte Young"
     ],
     "evidenceCount": 6,
     "documentCount": 0
@@ -287,8 +287,8 @@
     "caption": "Brendan Ngwa Nforbi v. Diamond Truck Sales, Inc.",
     "case_no": "STK-CV-UF-2026-0001094",
     "court": "San Joaquin Sup. Ct.",
-    "claims": "Fraudulent Concealment, Intentional Misrepresentation, Negligent Misrepresentation, Breach of Contract, UCL §17200, Rescission & Restitution, Declaratory Relief",
-    "status_label": "Defense appeared, disputes service — CMC Dec. 11, 2026",
+    "claims": "Fraudulent Concealment, Intentional Misrepresentation, Negligent Misrepresentation, Breach of Contract, UCL \u00a717200, Rescission & Restitution, Declaratory Relief",
+    "status_label": "Defense appeared, disputes service \u2014 CMC Dec. 11, 2026",
     "lifecycle": "active",
     "proceeding": "state_civil",
     "phase": "service",
@@ -303,7 +303,7 @@
       "Intentional Misrepresentation (Count 2)",
       "Negligent Misrepresentation (Count 3)",
       "Breach of Contract (Count 4)",
-      "Violation of Unfair Competition Law, B&P Code §17200 (Count 5)",
+      "Violation of Unfair Competition Law, B&P Code \u00a717200 (Count 5)",
       "Rescission and Restitution (Count 6)",
       "Declaratory Relief (Count 7)"
     ],
@@ -317,7 +317,7 @@
     "case_no": "2:26-cv-00190-DC-SCR",
     "court": "USDC E.D. Cal.",
     "claims": "42 USC 1983: Unconstitutional Detention (Halloween Curfew)",
-    "status_label": "Dismissed with prejudice — Jun. 29, 2026",
+    "status_label": "Dismissed with prejudice \u2014 Jun. 29, 2026",
     "lifecycle": "dismissed",
     "proceeding": "federal_civil",
     "phase": "terminal",
@@ -329,7 +329,7 @@
     "badge": "DISMISSED",
     "defendants": "Agent Urrea; Jeff Macomber; G. Noguchi",
     "causes": [
-      "4th & 14th Amendment Violations — Unconstitutional Detention"
+      "4th & 14th Amendment Violations \u2014 Unconstitutional Detention"
     ],
     "evidenceCount": 3,
     "documentCount": 0
@@ -340,7 +340,7 @@
     "case_no": "TBD (San Joaquin Sup. Ct.)",
     "court": "San Joaquin Sup. Ct.",
     "claims": "Writ of Mandate, False Imprisonment, Bane Act, IIED, Negligent Supervision",
-    "status_label": "Abandoned — voluntarily dismissed",
+    "status_label": "Abandoned \u2014 voluntarily dismissed",
     "lifecycle": "abandoned",
     "proceeding": "mandate",
     "phase": "terminal",
@@ -352,15 +352,15 @@
     "badge": "ABANDONED",
     "defendants": "Glenn Urrea, Parole Agent (individually and officially); Gary Noguchi (#7284), Unit Supervisor (individually and officially); Jeff Macomber, Secretary of CDCR (official capacity); Bryan Bishop, Director of CDCR Division of Adult Parole Operations (official capacity); California Department of Corrections and Rehabilitation; DOES 1-10",
     "causes": [
-      "Writ of Mandate (CCP §1085)",
-      "Declaratory Relief (CCP §1060)",
+      "Writ of Mandate (CCP \u00a71085)",
+      "Declaratory Relief (CCP \u00a71060)",
       "Injunctive Relief",
-      "Violation of California Constitution Article I, §13",
-      "Violation of California Constitution Article I, §7",
-      "Tom Bane Civil Rights Act (Civ. Code §52.1)",
+      "Violation of California Constitution Article I, \u00a713",
+      "Violation of California Constitution Article I, \u00a77",
+      "Tom Bane Civil Rights Act (Civ. Code \u00a752.1)",
       "False Imprisonment",
       "Intentional Infliction of Emotional Distress",
-      "Negligent Violation of Mandatory Duty (Gov. Code §815.6)"
+      "Negligent Violation of Mandatory Duty (Gov. Code \u00a7815.6)"
     ],
     "evidenceCount": 7,
     "documentCount": 1
@@ -371,7 +371,7 @@
     "case_no": "STK-CV-UPI-2026-5417",
     "court": "San Joaquin Sup. Ct.",
     "claims": "Negligence, False Imprisonment, IIED, Breach of Mandatory Duty",
-    "status_label": "Abandoned — dismissed with prejudice Jul. 24, 2026",
+    "status_label": "Abandoned \u2014 dismissed with prejudice Jul. 24, 2026",
     "lifecycle": "abandoned",
     "proceeding": "state_civil",
     "phase": "terminal",
@@ -381,12 +381,12 @@
     "type": "State",
     "archived": true,
     "badge": "ABANDONED",
-    "defendants": "Keely Dodd (#6462), Parole Administrator, DAPO Northern Region HQ Sacramento (individually); Gary Noguchi (#7284), Unit Supervisor (individually); Joseelyn Rojo, Parole Agent (individually); CDCR; DOES 1-20. Long Moua (#7472) authoring agent only — non-party; CDCR vicariously liable. Andrew Derrick (#6910) dropped from this action. Punitive damages sought against Dodd, Noguchi, and Rojo individually (Civ. Code §3294); NOT against CDCR (Gov. Code §818).",
+    "defendants": "Keely Dodd (#6462), Parole Administrator, DAPO Northern Region HQ Sacramento (individually); Gary Noguchi (#7284), Unit Supervisor (individually); Joseelyn Rojo, Parole Agent (individually); CDCR; DOES 1-20. Long Moua (#7472) authoring agent only \u2014 non-party; CDCR vicariously liable. Andrew Derrick (#6910) dropped from this action. Punitive damages sought against Dodd, Noguchi, and Rojo individually (Civ. Code \u00a73294); NOT against CDCR (Gov. Code \u00a7818).",
     "causes": [
-      "Count 1 — Negligence; Negligent Undertaking (Gov. Code §820(a)) against all defendants — voluntary election to conduct discharge review created ministerial duty of care; operational/clerical failures (wrong parolee name, obsolete form, fabricated rules, non-service) are not discretionary; §820.2 immunity inapplicable",
-      "Count 2 — False Imprisonment against all defendants — Nov. 19, 2025 void instrument (names 'Eagan') supplies no lawful privilege; continuing restraint (GPS, curfew, warrantless searches) accruing $100/day from Nov. 19, 2025",
-      "Count 3 — IIED against individual defendants (Dodd, Noguchi, Rojo) — extreme and outrageous to strip liberty through instrument adjudicating another person by name; at minimum reckless disregard; punitive damages under Civ. Code §3294",
-      "Count 4 — Breach of Mandatory Duty (Gov. Code §815.6) against CDCR — 15 CCR §§3720–3722 impose mandatory 'shall' duties on form, scoring, documentation, and service when review is conducted; Apr. 17, 2025 §3574 amendments reinforce individualized-process duties"
+      "Count 1 \u2014 Negligence; Negligent Undertaking (Gov. Code \u00a7820(a)) against all defendants \u2014 voluntary election to conduct discharge review created ministerial duty of care; operational/clerical failures (wrong parolee name, obsolete form, fabricated rules, non-service) are not discretionary; \u00a7820.2 immunity inapplicable",
+      "Count 2 \u2014 False Imprisonment against all defendants \u2014 Nov. 19, 2025 void instrument (names 'Eagan') supplies no lawful privilege; continuing restraint (GPS, curfew, warrantless searches) accruing $100/day from Nov. 19, 2025",
+      "Count 3 \u2014 IIED against individual defendants (Dodd, Noguchi, Rojo) \u2014 extreme and outrageous to strip liberty through instrument adjudicating another person by name; at minimum reckless disregard; punitive damages under Civ. Code \u00a73294",
+      "Count 4 \u2014 Breach of Mandatory Duty (Gov. Code \u00a7815.6) against CDCR \u2014 15 CCR \u00a7\u00a73720\u20133722 impose mandatory 'shall' duties on form, scoring, documentation, and service when review is conducted; Apr. 17, 2025 \u00a73574 amendments reinforce individualized-process duties"
     ],
     "evidenceCount": 13,
     "documentCount": 17
@@ -397,7 +397,7 @@
     "case_no": "TBD (San Joaquin Sup. Ct.)",
     "court": "San Joaquin Sup. Ct.",
     "claims": "Bane Act, IIED, Negligence",
-    "status_label": "Abandoned — voluntarily dismissed",
+    "status_label": "Abandoned \u2014 voluntarily dismissed",
     "lifecycle": "abandoned",
     "proceeding": "state_civil",
     "phase": "terminal",
@@ -409,7 +409,7 @@
     "badge": "ABANDONED",
     "defendants": "Joseelyn Rojo, Parole Agent, CDCR",
     "causes": [
-      "Bane Act (Civ. Code §52.1)",
+      "Bane Act (Civ. Code \u00a752.1)",
       "Intentional Infliction of Emotional Distress",
       "Negligence"
     ],
@@ -422,7 +422,7 @@
     "case_no": "2:26-cv-00194-DAD-SCR",
     "court": "USDC E.D. Cal.",
     "claims": "42 USC 1983: Civil Rights",
-    "status_label": "Dismissed with prejudice — Jun. 29, 2026",
+    "status_label": "Dismissed with prejudice \u2014 Jun. 29, 2026",
     "lifecycle": "dismissed",
     "proceeding": "federal_civil",
     "phase": "terminal",
@@ -446,7 +446,7 @@
     "case_no": "2:26-cv-00191-DJC-CSK (PC)",
     "court": "USDC E.D. Cal.",
     "claims": "42 USC 1983: Prisoner Civil Rights",
-    "status_label": "Dismissed with prejudice — Jun. 29, 2026",
+    "status_label": "Dismissed with prejudice \u2014 Jun. 29, 2026",
     "lifecycle": "dismissed",
     "proceeding": "federal_civil",
     "phase": "terminal",
@@ -468,8 +468,8 @@
     "caption": "Newanforbi v. Macomber",
     "case_no": "C2604791",
     "court": "Santa Clara Sup. Ct.",
-    "claims": "Habeas Corpus — Immediate Discharge from Parole (Pen. Code §1473; PC §§3000, 3001, 3008(d)(2); 15 CCR §3574)",
-    "status_label": "HC-004 refreshed Aug. 17 — ruling overdue since Aug. 1, 2026",
+    "claims": "Habeas Corpus \u2014 Immediate Discharge from Parole (Pen. Code \u00a71473; PC \u00a7\u00a73000, 3001, 3008(d)(2); 15 CCR \u00a73574)",
+    "status_label": "HC-004 refreshed Aug. 17 \u2014 ruling overdue since Aug. 1, 2026",
     "lifecycle": "active",
     "proceeding": "habeas",
     "phase": "under_submission",
@@ -479,11 +479,11 @@
     "type": "State",
     "defendants": "Keely Dodd, CDCR Parole Administrator (individual capacity); Jeffrey Macomber, Secretary of CDCR (official capacity)",
     "causes": [
-      "Habeas Corpus — Immediate and Unconditional Discharge from Parole (Pen. Code §1473)",
-      "CDCR Policy 19-03 is an invalid underground regulation (Gov. Code §11342.600; Tidewater Marine v. Bradshaw) and exceeds statutory authority under PC §3008(d)(2)",
-      "Use of obsolete Form 1502-DR instead of mandated Form 3043 violates 15 CCR §3574(f) (Accardi doctrine)",
-      "Substantive Due Process — no individualized finding of current dangerousness (In re Lawrence; In re Taylor)",
-      "Procedural Due Process — no notice, no hearing, no neutral decision-maker, no CTM meeting"
+      "Habeas Corpus \u2014 Immediate and Unconditional Discharge from Parole (Pen. Code \u00a71473)",
+      "CDCR Policy 19-03 is an invalid underground regulation (Gov. Code \u00a711342.600; Tidewater Marine v. Bradshaw) and exceeds statutory authority under PC \u00a73008(d)(2)",
+      "Use of obsolete Form 1502-DR instead of mandated Form 3043 violates 15 CCR \u00a73574(f) (Accardi doctrine)",
+      "Substantive Due Process \u2014 no individualized finding of current dangerousness (In re Lawrence; In re Taylor)",
+      "Procedural Due Process \u2014 no notice, no hearing, no neutral decision-maker, no CTM meeting"
     ],
     "archived": false,
     "evidenceCount": 11,
@@ -494,8 +494,8 @@
     "caption": "Newanforbi v. California Highway Patrol, et al.",
     "case_no": "26CV191136",
     "court": "Alameda Sup. Ct.",
-    "claims": "Writ of Mandate (CCP §1085; PC §679.10) — U Visa Certification; Declaratory Relief (CCP §1060)",
-    "status_label": "CHP demurrer reply in; hearing Aug. 28 — CMC Sep. 2",
+    "claims": "Writ of Mandate (CCP \u00a71085; PC \u00a7679.10) \u2014 U Visa Certification; Declaratory Relief (CCP \u00a71060)",
+    "status_label": "CHP demurrer reply in; hearing Aug. 28 \u2014 CMC Sep. 2",
     "lifecycle": "active",
     "proceeding": "mandate",
     "phase": "demurrer",
@@ -535,10 +535,10 @@
       }
     ],
     "causes": [
-      "Count I — Writ of Mandate (CCP §1085): Failure to Perform Mandatory Duty Under Penal Code §679.10(b) — compel certification of Form I-918 Supplement B",
-      "Count II — Writ of Mandate (CCP §1085): Failure to Perform Ministerial Duty Under PC §679.10(g) — reason-giving requirement for denials",
-      "Count III — Writ of Mandate (CCP §1085): Failure to Apply Rebuttable Presumption of Helpfulness Under PC §679.10(h)",
-      "Count IV — Declaratory Relief (CCP §1060): Facial Deficiency of April 20, 2026 Denial and Construction of PC §679.10"
+      "Count I \u2014 Writ of Mandate (CCP \u00a71085): Failure to Perform Mandatory Duty Under Penal Code \u00a7679.10(b) \u2014 compel certification of Form I-918 Supplement B",
+      "Count II \u2014 Writ of Mandate (CCP \u00a71085): Failure to Perform Ministerial Duty Under PC \u00a7679.10(g) \u2014 reason-giving requirement for denials",
+      "Count III \u2014 Writ of Mandate (CCP \u00a71085): Failure to Apply Rebuttable Presumption of Helpfulness Under PC \u00a7679.10(h)",
+      "Count IV \u2014 Declaratory Relief (CCP \u00a71060): Facial Deficiency of April 20, 2026 Denial and Construction of PC \u00a7679.10"
     ],
     "archived": false,
     "evidenceCount": 12,
@@ -550,7 +550,7 @@
     "case_no": "2:26-cv-00193-DC-CKD",
     "court": "USDC E.D. Cal.",
     "claims": "42 USC 1983: Free Exercise Clause (First Amendment), Due Process (Fourteenth Amendment)",
-    "status_label": "Dismissed with prejudice — Jun. 29, 2026",
+    "status_label": "Dismissed with prejudice \u2014 Jun. 29, 2026",
     "lifecycle": "dismissed",
     "proceeding": "federal_civil",
     "phase": "terminal",
@@ -562,8 +562,8 @@
     "badge": "DISMISSED",
     "defendants": "Joseelyn Rojo (Parole Agent, individually); Gary Noguchi (Supervising Parole Agent, individually); Jeff Macomber (Secretary CDCR, official capacity)",
     "causes": [
-      "Count I — Violation of Free Exercise Clause (First Amendment)",
-      "Count II — Violation of Due Process Clause (Fourteenth Amendment)"
+      "Count I \u2014 Violation of Free Exercise Clause (First Amendment)",
+      "Count II \u2014 Violation of Due Process Clause (Fourteenth Amendment)"
     ],
     "evidenceCount": 17,
     "documentCount": 1
@@ -573,7 +573,7 @@
     "caption": "Newanforbi v. Pilot Travel Centers LLC",
     "case_no": "STK-CV-UWT-2026-0007649",
     "court": "San Joaquin Sup. Ct.",
-    "claims": "PC §290.46(j) Violation, Wrongful Termination, FCRA, ICRAA, UCL §17200, IIED, NIED",
+    "claims": "PC \u00a7290.46(j) Violation, Wrongful Termination, FCRA, ICRAA, UCL \u00a717200, IIED, NIED",
     "status_label": "Settled Jul. 14, 2026 ($35,000)",
     "lifecycle": "settled",
     "proceeding": "state_civil",
@@ -582,7 +582,7 @@
     "judge": "TBD",
     "cluster": 3,
     "type": "State",
-    "note": "§290.46(j) theory originated via iterative Grok prompting — now the basis for 6 matters (22, 23, 25, 26, 27, 29), only 4 of which (22, 25, 26, 27) involve a confirmed adverse action — see Matter 23.",
+    "note": "\u00a7290.46(j) theory originated via iterative Grok prompting \u2014 now the basis for 6 matters (22, 23, 25, 26, 27, 29), only 4 of which (22, 25, 26, 27) involve a confirmed adverse action \u2014 see Matter 23.",
     "defendants": "Pilot Travel Centers LLC (Delaware LLC d/b/a Pilot Flying J, Knoxville, TN)",
     "serviceTracking": [
       {
@@ -594,11 +594,11 @@
       }
     ],
     "causes": [
-      "Violation of Penal Code Section 290.46(j) — Unlawful Use of Sex Offender Registry Information for Employment",
+      "Violation of Penal Code Section 290.46(j) \u2014 Unlawful Use of Sex Offender Registry Information for Employment",
       "Wrongful Termination in Violation of Public Policy (Tameny)",
-      "Violation of Fair Credit Reporting Act (15 U.S.C. §1681 et seq.)",
-      "Violation of California Investigative Consumer Reporting Agencies Act (Civ. Code §1786 et seq.)",
-      "Unfair Business Practices (Bus. & Prof. Code §17200)",
+      "Violation of Fair Credit Reporting Act (15 U.S.C. \u00a71681 et seq.)",
+      "Violation of California Investigative Consumer Reporting Agencies Act (Civ. Code \u00a71786 et seq.)",
+      "Unfair Business Practices (Bus. & Prof. Code \u00a717200)",
       "Intentional Infliction of Emotional Distress",
       "Negligent Infliction of Emotional Distress"
     ],
@@ -611,8 +611,8 @@
     "caption": "Newanforbi v. Macy's Inc. et al.",
     "case_no": "TBD",
     "court": "San Joaquin Sup. Ct.",
-    "claims": "PC §290.46(j) Violation, Wrongful Termination, FCRA, ICRAA, UCL §17200, IIED, NIED",
-    "status_label": "Abandoned — no adverse action occurred",
+    "claims": "PC \u00a7290.46(j) Violation, Wrongful Termination, FCRA, ICRAA, UCL \u00a717200, IIED, NIED",
+    "status_label": "Abandoned \u2014 no adverse action occurred",
     "lifecycle": "abandoned",
     "proceeding": "state_civil",
     "phase": "terminal",
@@ -624,11 +624,11 @@
     "badge": "ABANDONED",
     "defendants": "Macy's Inc. (Delaware corporation; parent entity); Macy's, Inc., an affiliate, subsidiary or division thereof (actual employer entity); HireRight, LLC (background screening vendor)",
     "causes": [
-      "Violation of Penal Code Section 290.46(j) — Unlawful Use of Sex Offender Registry Information for Employment",
+      "Violation of Penal Code Section 290.46(j) \u2014 Unlawful Use of Sex Offender Registry Information for Employment",
       "Wrongful Termination in Violation of Public Policy (Tameny)",
-      "Violation of Fair Credit Reporting Act (15 U.S.C. §1681 et seq.)",
-      "Violation of California Investigative Consumer Reporting Agencies Act (Civ. Code §1786 et seq.)",
-      "Unfair Business Practices (Bus. & Prof. Code §17200)",
+      "Violation of Fair Credit Reporting Act (15 U.S.C. \u00a71681 et seq.)",
+      "Violation of California Investigative Consumer Reporting Agencies Act (Civ. Code \u00a71786 et seq.)",
+      "Unfair Business Practices (Bus. & Prof. Code \u00a717200)",
       "Intentional Infliction of Emotional Distress",
       "Negligent Infliction of Emotional Distress"
     ],
@@ -641,7 +641,7 @@
     "case_no": "4:26-cv-05953-ASK",
     "court": "USDC N.D. Cal.",
     "claims": "42 USC 1983: Fourteenth Amendment (Substantive & Procedural Due Process), First Amendment (Retaliation); Declaratory Relief",
-    "status_label": "Served Aug. 5, 2026 — answer due Aug. 26; CMC Sep. 15",
+    "status_label": "MTD filed Aug. 26 \u2014 Opp due Sep. 2; hearing Sep. 16",
     "lifecycle": "active",
     "proceeding": "federal_civil",
     "phase": "responsive_deadline",
@@ -651,13 +651,13 @@
     "type": "Federal",
     "defendants": "Captain G. Serrato, Commander, Dublin Area, California Highway Patrol (individual and official capacities)",
     "causes": [
-      "Count I — 42 U.S.C. § 1983 Damages: Fourteenth Amendment -- Substantive Due Process — Arbitrary and Conscience-Shocking Denial of Mandatory U Visa Certification Duty",
-      "Count II — 42 U.S.C. § 1983 Damages: Fourteenth Amendment -- Procedural Due Process — Deprivation Without Constitutionally Adequate Process",
-      "Count III — 42 U.S.C. § 1983 Damages: First Amendment -- Retaliation for Protected Petitioning Activity",
-      "Count IV — Declaratory Relief (28 U.S.C. §§ 2201-2202) — Declaring Denial Unconstitutional and Plaintiff's Entitlement to Certification"
+      "Count I \u2014 42 U.S.C. \u00a7 1983 Damages: Fourteenth Amendment -- Substantive Due Process \u2014 Arbitrary and Conscience-Shocking Denial of Mandatory U Visa Certification Duty",
+      "Count II \u2014 42 U.S.C. \u00a7 1983 Damages: Fourteenth Amendment -- Procedural Due Process \u2014 Deprivation Without Constitutionally Adequate Process",
+      "Count III \u2014 42 U.S.C. \u00a7 1983 Damages: First Amendment -- Retaliation for Protected Petitioning Activity",
+      "Count IV \u2014 Declaratory Relief (28 U.S.C. \u00a7\u00a7 2201-2202) \u2014 Declaring Denial Unconstitutional and Plaintiff's Entitlement to Certification"
     ],
     "archived": false,
-    "badge": "SERVED",
+    "badge": "MTD PENDING",
     "serviceTracking": [
       {
         "name": "Captain G. Serrato",
@@ -668,14 +668,15 @@
       }
     ],
     "evidenceCount": 12,
-    "documentCount": 17
+    "documentCount": 17,
+    "status": "Active \u2014 FAC (Doc. 10) operative. USMS served Serrato Aug. 5, 2026 (Doc. 15). On Aug. 26, 2026 DAG Haiyang A. Li filed Defendant's Motion to Dismiss FAC and/or Motion to Strike under Rules 12(b)(6) and 12(f), noticed for hearing Sep. 16, 2026 at 1:30 p.m. before Mag. Krishnan (21 days' notice; Civil L.R. 7-2(a) requires 35). Opposition due Sep. 2, 2026 under Civil L.R. 7-3(a). Draft Opposition v3 prepared. CMC remains Sep. 15, 2026. Related-cases admin motion filed Aug. 20, 2026."
   },
   {
     "number": 25,
     "caption": "Newanforbi v. Federal Express Corporation",
     "case_no": "2:26-cv-02881-DAD-SCR",
     "court": "USDC E.D. Cal. (Sacramento Div.)",
-    "claims": "PC §290.46(j)(2)(E) Violation, Failure to Hire (Tameny), ICRAA, Invasion of Privacy, Negligence Per Se, UCL §17200",
+    "claims": "PC \u00a7290.46(j)(2)(E) Violation, Failure to Hire (Tameny), ICRAA, Invasion of Privacy, Negligence Per Se, UCL \u00a717200",
     "lifecycle": "active",
     "proceeding": "federal_civil",
     "phase": "responsive_deadline",
@@ -686,15 +687,15 @@
     "badge": "REMOVED",
     "defendants": "Federal Express Corporation; and DOES 1 through 10, inclusive",
     "causes": [
-      "Violation of Cal. Penal Code § 290.46(j)(2)(E)",
+      "Violation of Cal. Penal Code \u00a7 290.46(j)(2)(E)",
       "Failure to Hire in Violation of Public Policy (Tameny)",
-      "Violation of ICRAA (Cal. Civ. Code § 1786 et seq.)",
-      "Invasion of Privacy (Cal. Const., Art. I, § 1)",
+      "Violation of ICRAA (Cal. Civ. Code \u00a7 1786 et seq.)",
+      "Invasion of Privacy (Cal. Const., Art. I, \u00a7 1)",
       "Negligence Per Se",
-      "Unlawful Business Practices (Bus. & Prof. Code § 17200 et seq.)"
+      "Unlawful Business Practices (Bus. & Prof. Code \u00a7 17200 et seq.)"
     ],
     "archived": false,
-    "status_label": "Removed — 2:26-cv-02881-DAD-SCR; resp. ~Aug 31",
+    "status_label": "Removed \u2014 2:26-cv-02881-DAD-SCR; resp. ~Aug 31",
     "evidenceCount": 9,
     "documentCount": 34
   },
@@ -703,7 +704,7 @@
     "caption": "Newanforbi v. United Parcel Service, Inc.",
     "case_no": "2:26-cv-02847-DAD-CKD",
     "court": "USDC E.D. Cal. (Sacramento Div.)",
-    "claims": "PC §290.46(j)(2)(E) Violation, Failure to Hire (Tameny), ICRAA, Invasion of Privacy, Negligence Per Se, UCL §17200",
+    "claims": "PC \u00a7290.46(j)(2)(E) Violation, Failure to Hire (Tameny), ICRAA, Invasion of Privacy, Negligence Per Se, UCL \u00a717200",
     "lifecycle": "active",
     "proceeding": "federal_civil",
     "phase": "responsive_deadline",
@@ -714,15 +715,15 @@
     "badge": "REMOVED",
     "defendants": "United Parcel Service, Inc.; and DOES 1 through 10, inclusive",
     "causes": [
-      "Violation of Cal. Penal Code § 290.46(j)(2)(E)",
+      "Violation of Cal. Penal Code \u00a7 290.46(j)(2)(E)",
       "Failure to Hire in Violation of Public Policy (Tameny)",
-      "Violation of ICRAA (Cal. Civ. Code § 1786 et seq.)",
-      "Invasion of Privacy (Cal. Const., Art. I, § 1)",
+      "Violation of ICRAA (Cal. Civ. Code \u00a7 1786 et seq.)",
+      "Invasion of Privacy (Cal. Const., Art. I, \u00a7 1)",
       "Negligence Per Se",
-      "Unlawful Business Practices (Bus. & Prof. Code § 17200 et seq.)"
+      "Unlawful Business Practices (Bus. & Prof. Code \u00a7 17200 et seq.)"
     ],
     "archived": false,
-    "status_label": "E.D. Cal. Sacramento 2:26-cv-02847 — UPS due Aug. 27",
+    "status_label": "E.D. Cal. Sacramento 2:26-cv-02847 \u2014 UPS due Aug. 27",
     "evidenceCount": 7,
     "documentCount": 31
   },
@@ -731,7 +732,7 @@
     "caption": "Newanforbi v. Randstad, et al.",
     "case_no": "26CV199902",
     "court": "Alameda Sup. Ct.",
-    "claims": "PC §290.46(j)(2)(E) Violation, Wrongful Termination in Violation of Public Policy, ICRAA, Invasion of Privacy, Negligence Per Se (Evid. Code §669), UCL §17200",
+    "claims": "PC \u00a7290.46(j)(2)(E) Violation, Wrongful Termination in Violation of Public Policy, ICRAA, Invasion of Privacy, Negligence Per Se (Evid. Code \u00a7669), UCL \u00a717200",
     "lifecycle": "active",
     "proceeding": "state_civil",
     "phase": "responsive_deadline",
@@ -758,15 +759,15 @@
       }
     ],
     "causes": [
-      "Violation of Cal. Penal Code § 290.46(j)(2)(E)",
+      "Violation of Cal. Penal Code \u00a7 290.46(j)(2)(E)",
       "Wrongful Termination in Violation of Public Policy",
-      "Violation of ICRAA (Cal. Civ. Code § 1786 et seq.)",
-      "Invasion of Privacy (Cal. Const., Art. I, § 1)",
-      "Negligence Per Se (Evid. Code § 669)",
-      "Unlawful Business Practices (Bus. & Prof. Code § 17200 et seq.)"
+      "Violation of ICRAA (Cal. Civ. Code \u00a7 1786 et seq.)",
+      "Invasion of Privacy (Cal. Const., Art. I, \u00a7 1)",
+      "Negligence Per Se (Evid. Code \u00a7 669)",
+      "Unlawful Business Practices (Bus. & Prof. Code \u00a7 17200 et seq.)"
     ],
     "archived": false,
-    "status_label": "RK response Aug. 31 — Randstad extended to Sep. 15",
+    "status_label": "RK response Aug. 31 \u2014 Randstad extended to Sep. 15",
     "evidenceCount": 18,
     "documentCount": 51
   },
@@ -775,8 +776,8 @@
     "caption": "Newanforbi v. Shannon Smith, LCSW, CEO, et al.",
     "case_no": "3:26-cv-07504",
     "court": "USDC N.D. Cal.",
-    "claims": "42 U.S.C. §1983 (Monell + Individual Capacity); Bane Act (Cal. Civ. Code §52.1); Fraud / Negligent Misrepresentation; RICO (18 U.S.C. §1962(c)-(d))",
-    "status_label": "Fee paid — CMC Oct. 22, 2026; SPO denied w/o prejudice",
+    "claims": "42 U.S.C. \u00a71983 (Monell + Individual Capacity); Bane Act (Cal. Civ. Code \u00a752.1); Fraud / Negligent Misrepresentation; RICO (18 U.S.C. \u00a71962(c)-(d))",
+    "status_label": "Fee paid \u2014 CMC Oct. 22, 2026; SPO denied w/o prejudice",
     "lifecycle": "active",
     "proceeding": "federal_civil",
     "phase": "screening_ifp",
@@ -787,11 +788,11 @@
     "policy_limits": "$1M / $5M",
     "defendants": "HOPE Psychotherapy, Inc. (d/b/a HOPE Program), CASOMB-certified LCSW Professional Corporation (principal office: 1245 B Street, Hayward, CA 94541; 16 statewide locations); Shannon Smith, LCSW (CEO and Founder, individually)",
     "causes": [
-      "42 U.S.C. §1983 — Monell (HOPE)",
-      "42 U.S.C. §1983 — Individual Capacity (Shannon Smith)",
-      "Bane Act (Cal. Civ. Code §52.1)",
+      "42 U.S.C. \u00a71983 \u2014 Monell (HOPE)",
+      "42 U.S.C. \u00a71983 \u2014 Individual Capacity (Shannon Smith)",
+      "Bane Act (Cal. Civ. Code \u00a752.1)",
       "Fraud and Negligent Misrepresentation",
-      "RICO (18 U.S.C. §1962(c)-(d))"
+      "RICO (18 U.S.C. \u00a71962(c)-(d))"
     ],
     "archived": false,
     "evidenceCount": 15,
@@ -802,17 +803,17 @@
     "caption": "Newanforbi v. Amazon.com Services, LLC",
     "case_no": "26CV201554",
     "court": "Alameda Sup. Ct. (Hayward Hall of Justice, Dept. 520)",
-    "claims": "PC §290.46(j)(2)(E) Violation, Fair Chance Act (Gov. Code §12952), FCRA, ICRAA, Invasion of Privacy, UCL §17200, IIED",
-    "status_label": "Fee paid / notices e-filed Aug. 6 — response due Aug. 31",
+    "claims": "PC \u00a7290.46(j)(2)(E) Violation, Fair Chance Act (Gov. Code \u00a712952), FCRA, ICRAA, Invasion of Privacy, UCL \u00a717200, IIED",
+    "status_label": "Fee paid / notices e-filed Aug. 6 \u2014 response due Aug. 31",
     "lifecycle": "active",
     "proceeding": "state_civil",
     "phase": "responsive_deadline",
-    "filed": "E-filed July 28, 2026 via One Legal (Confirmation #35236062, Filing Order #28857032, submitted 7:19 AM PT); ACCEPTED — Case No. 26CV201554 assigned Jul. 29, 2026",
+    "filed": "E-filed July 28, 2026 via One Legal (Confirmation #35236062, Filing Order #28857032, submitted 7:19 AM PT); ACCEPTED \u2014 Case No. 26CV201554 assigned Jul. 29, 2026",
     "judge": "Hon. Jamilah Jefferson, Dept. 520 (Hayward Hall of Justice)",
     "cluster": 3,
     "type": "State",
     "badge": "SERVED",
-    "defendants": "Amazon.com Services, LLC (Amazon fulfillment and warehouse operations; principal employer entity for Amazon fulfillment center workers in California); Accurate Background LLC (consumer reporting agency; conducted the background check on Amazon's behalf under shortcode 45996; prior co-defendant with Amazon in Lerma v. Amazon.com Services, LLC et al., No. 8:22-cv-01727 (C.D. Cal.) — the PC §290.46(j) claim in that case was dismissed at the pleading stage in May 2023, not settled; the case ultimately settled in Sept. 2023 on a surviving Fair Chance Act claim against Amazon only, see key_facts); and DOES 1–10, inclusive",
+    "defendants": "Amazon.com Services, LLC (Amazon fulfillment and warehouse operations; principal employer entity for Amazon fulfillment center workers in California); Accurate Background LLC (consumer reporting agency; conducted the background check on Amazon's behalf under shortcode 45996; prior co-defendant with Amazon in Lerma v. Amazon.com Services, LLC et al., No. 8:22-cv-01727 (C.D. Cal.) \u2014 the PC \u00a7290.46(j) claim in that case was dismissed at the pleading stage in May 2023, not settled; the case ultimately settled in Sept. 2023 on a surviving Fair Chance Act claim against Amazon only, see key_facts); and DOES 1\u201310, inclusive",
     "serviceTracking": [
       {
         "name": "Amazon.com Services, LLC",
@@ -830,12 +831,12 @@
       }
     ],
     "causes": [
-      "Violation of Cal. Penal Code § 290.46(j)(2)(E) — categorical prohibition on registry information use for employment",
-      "Violation of California Fair Chance Act (Cal. Gov. Code § 12952) — failure to individually assess registry/conviction history against the specific duties of the job before denying employment",
-      "Violation of Fair Credit Reporting Act (15 U.S.C. §1681 et seq.)",
-      "Violation of ICRAA (Cal. Civ. Code § 1786 et seq.)",
-      "Invasion of Privacy (Cal. Const., Art. I, § 1)",
-      "Unlawful Business Practices (Bus. & Prof. Code § 17200 et seq.)",
+      "Violation of Cal. Penal Code \u00a7 290.46(j)(2)(E) \u2014 categorical prohibition on registry information use for employment",
+      "Violation of California Fair Chance Act (Cal. Gov. Code \u00a7 12952) \u2014 failure to individually assess registry/conviction history against the specific duties of the job before denying employment",
+      "Violation of Fair Credit Reporting Act (15 U.S.C. \u00a71681 et seq.)",
+      "Violation of ICRAA (Cal. Civ. Code \u00a7 1786 et seq.)",
+      "Invasion of Privacy (Cal. Const., Art. I, \u00a7 1)",
+      "Unlawful Business Practices (Bus. & Prof. Code \u00a7 17200 et seq.)",
       "Intentional Infliction of Emotional Distress"
     ],
     "archived": false,
@@ -847,24 +848,24 @@
     "caption": "Newanforbi v. Moua, et al.",
     "case_no": "TBD",
     "court": "USDC N.D. Cal.",
-    "claims": "42 U.S.C. §1983 First Amendment Retaliation, §1983 Fourteenth Amendment Due Process, Bane Act Cal. Civ. Code §52.1, IIED",
-    "status_label": "Pre-filing — GCA claim pending; Moua-only complaint ready",
+    "claims": "42 U.S.C. \u00a71983 First Amendment Retaliation, \u00a71983 Fourteenth Amendment Due Process, Bane Act Cal. Civ. Code \u00a752.1, IIED",
+    "status_label": "Pre-filing \u2014 GCA claim pending; Moua-only complaint ready",
     "lifecycle": "pre_filing",
     "proceeding": "federal_civil",
     "phase": "pre_filing",
-    "note": "NOT abandoned — if discharged from CDCR parole supervision before this matter's filing window closes, Plaintiff intends to file it.",
+    "note": "NOT abandoned \u2014 if discharged from CDCR parole supervision before this matter's filing window closes, Plaintiff intends to file it.",
     "badge": "PENDING",
     "filed": "Anticipated September 16, 2026 (not yet filed)",
     "judge": "TBD",
     "cluster": 2,
     "type": "Federal",
-    "defendants": "Long Moua (CDCR Parole Agent, Badge #7472 — received BNN's file on or about Jan. 26, 2026, ~14 days after BNN filed the Derrick FAC; fabricated March 31, 2026 telehealth 'failure to attend treatment' violation by withholding the access code then submitting BNN's non-attendance as willful; authored Nov. 14, 2025 CDCR Form 1502-DR (Discharge Review Report), reviewed/e-signed by Noguchi, judicially questioned by Sacramento County Superior Court; ordered retaliatory transfer to Santa Clara GPS Unit on Jun. 29, 2026, 7 days after BNN served CDCR in separate lawsuit, citing 'too many violations'); and DOES 1–10, inclusive. NOTE: an earlier complaint draft named Gary Noguchi (CDCR Parole Agent, Badge #7284, Unit Supervisor San Joaquin County Parole GPS Unit — Moua's direct supervisor; co-defendant in Newanforbi v. Andrew Derrick et al. FAC, Case 2:26-cv-00004-DJC-JDP; co-authored the 1502-DR with Moua) and Joseelyn Rojo (CDCR Parole official) as co-defendants, and both were served under that draft (Noguchi Jul. 7, 2026; Rojo Jul. 14, 2026). Plaintiff has confirmed the narrowing to Moua-only in the operative Complaint v9 was a deliberate strategic choice, not an oversight — the claim against Moua is pleaded on its own facts, with Noguchi and Rojo reserved for potential later amendment as DOE defendants if discovery substantiates their supervisory involvement. FLAGGED RISK FOR THAT RESERVATION: Matter 3's July 24, 2026 order already dismissed a supervisory-liability theory against this same Noguchi 'for lack of supervisory-liability allegations under Hansen v. Black' (with leave to amend, not a final merits adjudication — and in the same order the court itself noted this sits in tension with Plaintiff's own July 22, 2026 self-executing voluntary dismissal of Noguchi from that action). Neither ruling forecloses a differently-pleaded supervisory theory here, but any future DOE amendment naming Noguchi should address Hansen v. Black head-on rather than repeat the pleading gap Matter 3 already identified. This matter also does not currently disclose its overlap with the discharge-review cluster (Matters 9, 10, 11, 15, 19) — Moua co-authored the same Nov. 14, 2025 Form 1502-DR whose facial defects are the entire subject of that cluster (see Matter 19, now the sole still-pending vehicle for that challenge). Separately, this matter's causal account of the June 29, 2026 retaliatory transfer (Moua's personal decision, driven by the fabricated telehealth violation) differs from Matters 3 and 15's account of the same transfer (institutional retaliation by 'Stockton parole,' Noguchi's unit, tied to the Matter 15 filing) — the two framings aren't mutually exclusive, but neither cross-references the other, and a factfinder crediting one causal story could undercut the other.",
+    "defendants": "Long Moua (CDCR Parole Agent, Badge #7472 \u2014 received BNN's file on or about Jan. 26, 2026, ~14 days after BNN filed the Derrick FAC; fabricated March 31, 2026 telehealth 'failure to attend treatment' violation by withholding the access code then submitting BNN's non-attendance as willful; authored Nov. 14, 2025 CDCR Form 1502-DR (Discharge Review Report), reviewed/e-signed by Noguchi, judicially questioned by Sacramento County Superior Court; ordered retaliatory transfer to Santa Clara GPS Unit on Jun. 29, 2026, 7 days after BNN served CDCR in separate lawsuit, citing 'too many violations'); and DOES 1\u201310, inclusive. NOTE: an earlier complaint draft named Gary Noguchi (CDCR Parole Agent, Badge #7284, Unit Supervisor San Joaquin County Parole GPS Unit \u2014 Moua's direct supervisor; co-defendant in Newanforbi v. Andrew Derrick et al. FAC, Case 2:26-cv-00004-DJC-JDP; co-authored the 1502-DR with Moua) and Joseelyn Rojo (CDCR Parole official) as co-defendants, and both were served under that draft (Noguchi Jul. 7, 2026; Rojo Jul. 14, 2026). Plaintiff has confirmed the narrowing to Moua-only in the operative Complaint v9 was a deliberate strategic choice, not an oversight \u2014 the claim against Moua is pleaded on its own facts, with Noguchi and Rojo reserved for potential later amendment as DOE defendants if discovery substantiates their supervisory involvement. FLAGGED RISK FOR THAT RESERVATION: Matter 3's July 24, 2026 order already dismissed a supervisory-liability theory against this same Noguchi 'for lack of supervisory-liability allegations under Hansen v. Black' (with leave to amend, not a final merits adjudication \u2014 and in the same order the court itself noted this sits in tension with Plaintiff's own July 22, 2026 self-executing voluntary dismissal of Noguchi from that action). Neither ruling forecloses a differently-pleaded supervisory theory here, but any future DOE amendment naming Noguchi should address Hansen v. Black head-on rather than repeat the pleading gap Matter 3 already identified. This matter also does not currently disclose its overlap with the discharge-review cluster (Matters 9, 10, 11, 15, 19) \u2014 Moua co-authored the same Nov. 14, 2025 Form 1502-DR whose facial defects are the entire subject of that cluster (see Matter 19, now the sole still-pending vehicle for that challenge). Separately, this matter's causal account of the June 29, 2026 retaliatory transfer (Moua's personal decision, driven by the fabricated telehealth violation) differs from Matters 3 and 15's account of the same transfer (institutional retaliation by 'Stockton parole,' Noguchi's unit, tied to the Matter 15 filing) \u2014 the two framings aren't mutually exclusive, but neither cross-references the other, and a factfinder crediting one causal story could undercut the other.",
     "causes": [
-      "42 U.S.C. § 1983 — First Amendment Retaliation: Moua received BNN's file within ~14 days of the Derrick lawsuit (Jan. 12 → Jan. 26, 2026); Moua executed retaliatory transfer to Santa Clara GPS Unit within 18 days of CDCR lawsuit service (Jun. 22 → Jun. 29, 2026); causal nexus between protected petition activity and adverse parole action established by temporal proximity and Moua's cited pretext ('too many violations')",
-      "42 U.S.C. § 1983 — Fourteenth Amendment Due Process: fabricated 'failure to attend treatment' violation submitted by Moua into the parole system based on a telehealth session BNN could not attend because Moua never provided the access code; manufactured pretext used to justify retaliatory transfer without legitimate administrative basis",
-      "Tom Bane Civil Rights Act, Cal. Civ. Code § 52.1 — coercive interference with First and Fourteenth Amendment rights: Moua's use of the fabricated violation as a threatened and actual sanction (administrative record blemish + retaliatory transfer) constitutes threats, intimidation, and coercion within the meaning of §52.1; third-strike sex offender registration completed under duress of automatic life sentence amplifies the coercive context",
+      "42 U.S.C. \u00a7 1983 \u2014 First Amendment Retaliation: Moua received BNN's file within ~14 days of the Derrick lawsuit (Jan. 12 \u2192 Jan. 26, 2026); Moua executed retaliatory transfer to Santa Clara GPS Unit within 18 days of CDCR lawsuit service (Jun. 22 \u2192 Jun. 29, 2026); causal nexus between protected petition activity and adverse parole action established by temporal proximity and Moua's cited pretext ('too many violations')",
+      "42 U.S.C. \u00a7 1983 \u2014 Fourteenth Amendment Due Process: fabricated 'failure to attend treatment' violation submitted by Moua into the parole system based on a telehealth session BNN could not attend because Moua never provided the access code; manufactured pretext used to justify retaliatory transfer without legitimate administrative basis",
+      "Tom Bane Civil Rights Act, Cal. Civ. Code \u00a7 52.1 \u2014 coercive interference with First and Fourteenth Amendment rights: Moua's use of the fabricated violation as a threatened and actual sanction (administrative record blemish + retaliatory transfer) constitutes threats, intimidation, and coercion within the meaning of \u00a752.1; third-strike sex offender registration completed under duress of automatic life sentence amplifies the coercive context",
       "Intentional Infliction of Emotional Distress: fabrication of a parole violation, forced relocation from Stockton to Santa Clara GPS jurisdiction, destruction of Macy's employment ($21.50/hr Captain role, ~$3,870+ lost wages), compelled sex offender registration under duress of third-strike life sentence, and ongoing housing and employment instability constitute extreme and outrageous conduct causing severe emotional distress",
-      "[RESERVED — not pleaded in operative Complaint v9] Supervisory Liability (42 U.S.C. § 1983) as to Noguchi and Rojo: a prior complaint draft alleged supervisory defendants ratified, condoned, or failed to prevent Moua's retaliatory conduct, and both were served under that draft (Jul. 7 and Jul. 14, 2026); Plaintiff deliberately narrowed the operative pleading to Moua alone, preserving this theory as a potential DOE amendment rather than pleading it in the five-count complaint prepared for filing"
+      "[RESERVED \u2014 not pleaded in operative Complaint v9] Supervisory Liability (42 U.S.C. \u00a7 1983) as to Noguchi and Rojo: a prior complaint draft alleged supervisory defendants ratified, condoned, or failed to prevent Moua's retaliatory conduct, and both were served under that draft (Jul. 7 and Jul. 14, 2026); Plaintiff deliberately narrowed the operative pleading to Moua alone, preserving this theory as a potential DOE amendment rather than pleading it in the five-count complaint prepared for filing"
     ],
     "archived": false,
     "evidenceCount": 20,
@@ -875,11 +876,11 @@
     "caption": "Newanforbi v. First Advantage LLC",
     "case_no": "TBD",
     "court": "San Joaquin Sup. Ct. (anticipated)",
-    "claims": "FCRA § 1681b(b), FCRA § 1681e(b), ICRAA, Negligence Per Se, UCL § 17200",
+    "claims": "FCRA \u00a7 1681b(b), FCRA \u00a7 1681e(b), ICRAA, Negligence Per Se, UCL \u00a7 17200",
     "lifecycle": "pre_filing",
     "proceeding": "state_civil",
     "phase": "pre_filing",
-    "note": "Vendor-side companion to Matters 25/26 — same underlying reports, different defendant theory",
+    "note": "Vendor-side companion to Matters 25/26 \u2014 same underlying reports, different defendant theory",
     "badge": "PENDING",
     "filed": "Not yet filed",
     "judge": "TBD",
@@ -887,11 +888,11 @@
     "type": "State",
     "defendants": "First Advantage LLC (fadv.com; consumer reporting agency / investigative consumer reporting agency); DOES 1 through 10, inclusive",
     "causes": [
-      "Violation of the Fair Credit Reporting Act, 15 U.S.C. § 1681b(b)(1) — Furnishing a Consumer Report for Employment Purposes Without a Permissible/Certified Purpose",
-      "Violation of the Fair Credit Reporting Act, 15 U.S.C. § 1681e(b) — Failure to Follow Reasonable Procedures to Assure Maximum Possible Accuracy",
-      "Violation of the California Investigative Consumer Reporting Agencies Act (Cal. Civ. Code § 1786 et seq.)",
-      "Negligence Per Se (Evid. Code § 669; predicate duty: Cal. Penal Code § 290.46(j)(2)(E))",
-      "Unlawful Business Practices (Bus. & Prof. Code § 17200 et seq.)"
+      "Violation of the Fair Credit Reporting Act, 15 U.S.C. \u00a7 1681b(b)(1) \u2014 Furnishing a Consumer Report for Employment Purposes Without a Permissible/Certified Purpose",
+      "Violation of the Fair Credit Reporting Act, 15 U.S.C. \u00a7 1681e(b) \u2014 Failure to Follow Reasonable Procedures to Assure Maximum Possible Accuracy",
+      "Violation of the California Investigative Consumer Reporting Agencies Act (Cal. Civ. Code \u00a7 1786 et seq.)",
+      "Negligence Per Se (Evid. Code \u00a7 669; predicate duty: Cal. Penal Code \u00a7 290.46(j)(2)(E))",
+      "Unlawful Business Practices (Bus. & Prof. Code \u00a7 17200 et seq.)"
     ],
     "archived": false,
     "evidenceCount": 10,
@@ -902,18 +903,18 @@
     "caption": "Nforbi v. Meza-Gonzalez, et al",
     "case_no": "3:26-cv-08271-PHK",
     "court": "USDC N.D. Cal. (docketed Aug. 10, 2026; related Serrato 4:26-cv-05953-ASK and Candelaria 3:26-cv-08272-LJC)",
-    "claims": "42 U.S.C. § 1983 — Fourth/Fourteenth/First Amendment (unlawful entry, search, arrest, Franks/judicial deception, fabrication, First Amendment retaliation) — Dkt. 5 (FAC filed Aug. 17, 2026) is the court pleading of record; also CHP-cluster PDF home for Matters 1/2/20/24",
-    "status_label": "FAC filed Aug. 17 (Dkt. 5) — resp. due Sep. 4; CMC Dec. 2",
+    "claims": "42 U.S.C. \u00a7 1983 \u2014 Fourth/Fourteenth/First Amendment (unlawful entry, search, arrest, Franks/judicial deception, fabrication, First Amendment retaliation) \u2014 Dkt. 5 (FAC filed Aug. 17, 2026) is the court pleading of record; also CHP-cluster PDF home for Matters 1/2/20/24",
+    "status_label": "FAC filed Aug. 17 (Dkt. 5) \u2014 resp. due Sep. 4; CMC Dec. 2",
     "lifecycle": "active",
     "proceeding": "federal_civil",
     "phase": "responsive_deadline",
-    "note": "N.D. Cal. § 1983 action docketed Aug. 10, 2026 as No. 3:26-cv-08271-PHK (ndcal/). Also document store for Matters 1, 2, 20, and 24 under matter-32/from-NN/. Nov. 1 / Candelaria APS evidence in Matter 33.",
+    "note": "N.D. Cal. \u00a7 1983 action docketed Aug. 10, 2026 as No. 3:26-cv-08271-PHK (ndcal/). Also document store for Matters 1, 2, 20, and 24 under matter-32/from-NN/. Nov. 1 / Candelaria APS evidence in Matter 33.",
     "badge": "FAC FILED",
     "filed": "August 10, 2026 (docketed; intake packet signed Aug. 7, 2026)",
     "judge": "Hon. Peter H. Kang (Magistrate Judge)",
     "cluster": 1,
     "type": "Federal",
-    "defendants": "Santiago Meza-Gonzalez (CHP #023295), individually; Jose Melano (CHP #023054), individually; and DOES 1–10 — N.D. Cal. operative complaint (Aug. 7, 2026). State-court Matter 2 tracks the same officers under a False Imprisonment / Battery / Bane Act caption.",
+    "defendants": "Santiago Meza-Gonzalez (CHP #023295), individually; Jose Melano (CHP #023054), individually; and DOES 1\u201310 \u2014 N.D. Cal. operative complaint (Aug. 7, 2026). State-court Matter 2 tracks the same officers under a False Imprisonment / Battery / Bane Act caption.",
     "serviceTracking": [
       {
         "name": "Santiago Meza-Gonzalez",
@@ -931,12 +932,12 @@
       }
     ],
     "causes": [
-      "42 U.S.C. § 1983 — Unlawful Entry (Fourth Amendment)",
-      "42 U.S.C. § 1983 — Unlawful Search (Fourth Amendment)",
-      "42 U.S.C. § 1983 — Unlawful Arrest (Fourth Amendment)",
-      "42 U.S.C. § 1983 — Franks / Judicial Deception (Fourth/Fourteenth Amendments)",
-      "42 U.S.C. § 1983 — Fabrication of Evidence (Fourteenth Amendment)",
-      "42 U.S.C. § 1983 — First Amendment Retaliation (PAS refusal; Nieves / Ballentine)"
+      "42 U.S.C. \u00a7 1983 \u2014 Unlawful Entry (Fourth Amendment)",
+      "42 U.S.C. \u00a7 1983 \u2014 Unlawful Search (Fourth Amendment)",
+      "42 U.S.C. \u00a7 1983 \u2014 Unlawful Arrest (Fourth Amendment)",
+      "42 U.S.C. \u00a7 1983 \u2014 Franks / Judicial Deception (Fourth/Fourteenth Amendments)",
+      "42 U.S.C. \u00a7 1983 \u2014 Fabrication of Evidence (Fourteenth Amendment)",
+      "42 U.S.C. \u00a7 1983 \u2014 First Amendment Retaliation (PAS refusal; Nieves / Ballentine)"
     ],
     "archived": false,
     "evidenceCount": 13,
@@ -947,18 +948,18 @@
     "caption": "Nforbi v. Candelaria et al.",
     "case_no": "3:26-cv-08272-LJC",
     "court": "USDC N.D. Cal. (San Francisco Div.)",
-    "claims": "42 U.S.C. § 1983 — APS impartial-adjudicator / fair hearing; declaratory and injunctive relief (vacatur of APS 34739340) — Dkt. 6 (FAC filed Aug. 17, 2026) is the court pleading of record; also Candelaria / DMV APS PDF home for Matters 7/8",
-    "status_label": "FAC filed Aug. 17 (Dkt. 6) — resp. due Sep. 4; CMC Nov. 12",
+    "claims": "42 U.S.C. \u00a7 1983 \u2014 APS impartial-adjudicator / fair hearing; declaratory and injunctive relief (vacatur of APS 34739340) \u2014 Dkt. 6 (FAC filed Aug. 17, 2026) is the court pleading of record; also Candelaria / DMV APS PDF home for Matters 7/8",
+    "status_label": "FAC filed Aug. 17 (Dkt. 6) \u2014 resp. due Sep. 4; CMC Nov. 12",
     "lifecycle": "active",
     "proceeding": "federal_civil",
     "phase": "responsive_deadline",
-    "note": "N.D. Cal. § 1983 refile docketed Aug. 10, 2026 as No. 3:26-cv-08272-LJC (ndcal/), after voluntary dismissal of Matter 7 E.D. Cal. (confirmed filed Aug. 15, 2026). Also owns the Candelaria/DMV APS document set; Matters 7 and 8 remain historical docket records and cross-reference these paths.",
+    "note": "N.D. Cal. \u00a7 1983 refile docketed Aug. 10, 2026 as No. 3:26-cv-08272-LJC (ndcal/), after voluntary dismissal of Matter 7 E.D. Cal. (confirmed filed Aug. 15, 2026). Also owns the Candelaria/DMV APS document set; Matters 7 and 8 remain historical docket records and cross-reference these paths.",
     "badge": "FAC FILED",
     "filed": "August 10, 2026 (docketed; complaint signed Aug. 7, 2026)",
     "judge": "Hon. Lisa J. Cisneros (Magistrate Judge)",
     "cluster": 1,
     "type": "Federal",
-    "defendants": "Diana Candelaria (DMV Driver Safety Hearing Officer), individually; Steve Gordon, Director, California DMV, in his official capacity; and DOES 1–10 — Dkt. 1 complaint. Matter 7 (E.D. Cal.) and Matter 8 (state mandate, abandoned) are the prior Candelaria tracks.",
+    "defendants": "Diana Candelaria (DMV Driver Safety Hearing Officer), individually; Steve Gordon, Director, California DMV, in his official capacity; and DOES 1\u201310 \u2014 Dkt. 1 complaint. Matter 7 (E.D. Cal.) and Matter 8 (state mandate, abandoned) are the prior Candelaria tracks.",
     "serviceTracking": [
       {
         "name": "Diana Candelaria",
@@ -976,9 +977,9 @@
       }
     ],
     "causes": [
-      "42 U.S.C. § 1983 — Denial of an impartial adjudicator (procedural due process)",
-      "42 U.S.C. § 1983 — Denial of a fair hearing (procedural due process)",
-      "Declaratory relief — 28 U.S.C. §§ 2201–2202 (vacatur of APS Decision 34739340)",
+      "42 U.S.C. \u00a7 1983 \u2014 Denial of an impartial adjudicator (procedural due process)",
+      "42 U.S.C. \u00a7 1983 \u2014 Denial of a fair hearing (procedural due process)",
+      "Declaratory relief \u2014 28 U.S.C. \u00a7\u00a7 2201\u20132202 (vacatur of APS Decision 34739340)",
       "Injunctive / Ex parte Young relief vs. DMV Director Gordon (official capacity)"
     ],
     "archived": false,
@@ -990,8 +991,8 @@
     "caption": "Newanforbi v. Counseling and Psychotherapy Center, Inc., et al.",
     "case_no": "TBD",
     "court": "USDC N.D. Cal. (San Jose Div.) / Santa Clara Sup. Ct.",
-    "claims": "42 U.S.C. §1983 (Monell & Individual Capacity), Bane Act (Cal. Civ. Code §52.1), Fraud / Negligent Misrepresentation, RICO (18 U.S.C. §1962(c)-(d)), UCL (Bus. & Prof. Code §17200), Negligence Per Se",
-    "status_label": "Pre-filing — intake & compliance monitoring",
+    "claims": "42 U.S.C. \u00a71983 (Monell & Individual Capacity), Bane Act (Cal. Civ. Code \u00a752.1), Fraud / Negligent Misrepresentation, RICO (18 U.S.C. \u00a71962(c)-(d)), UCL (Bus. & Prof. Code \u00a717200), Negligence Per Se",
+    "status_label": "Pre-filing \u2014 intake & compliance monitoring",
     "lifecycle": "pre_filing",
     "proceeding": "federal_civil",
     "phase": "pre_filing",
@@ -1003,14 +1004,14 @@
     "archived": false,
     "defendants": "The Counseling and Psychotherapy Center, Inc. (d/b/a CPC / CPC America; Massachusetts professional corporation / California foreign corporation; CASOMB-certified sex offender treatment program provider, San Jose / Santa Clara County location; 7100 Hayvenhurst Ave, Unit #100, Van Nuys, CA 91406; Needham, MA HQ); Dennis McNamara, CEO and Founder (individually); Kellie McNamara, President/COO (individually); Maria Piccillo, Clinical Director / Chief Clinical Officer (individually); and DOES 1-10",
     "causes": [
-      "Count 1 — 42 U.S.C. §1983 (Monell / Institutional Liability against CPC): delegation of public function under West v. Atkins; unconstitutional policy, custom, or practice of indefinite containment-model retention",
-      "Count 2 — 42 U.S.C. §1983 (Individual Capacity against Executive / Clinical Officers): supervisory and individual liability for unconstitutional retention directives, retaliatory adverse reporting, and due process deprivations",
-      "Count 3 — Tom Bane Civil Rights Act, Cal. Civ. Code §52.1: coercive interference with constitutional and statutory rights under Pen. Code §3008(d)(2) and 15 CCR §3574(f)(1)",
-      "Count 4 — Fraud and Intentional / Negligent Misrepresentation: intake representations of individualized clinical graduation criteria vs. concealed blanket retention policies",
-      "Count 5 — Negligence and Negligence Per Se: duty of care under Giraldo; violation of mandatory statutory and regulatory standards governing sex offender treatment completion",
-      "Count 6 — Intentional Interference with Prospective Economic Advantage: disruption of Class A CDL commercial driving employment and refusal of reasonable scheduling accommodations",
-      "Count 7 — Unfair Competition Law, Cal. Bus. & Prof. Code §17200: unlawful and unfair business practices regarding fee-for-service client billing and retention models; restitution of client-paid fees",
-      "Count 8 — Declaratory and Injunctive Relief: judicial declaration that blanket non-completion policies violate California law; permanent injunction requiring individualized CASOMB assessment"
+      "Count 1 \u2014 42 U.S.C. \u00a71983 (Monell / Institutional Liability against CPC): delegation of public function under West v. Atkins; unconstitutional policy, custom, or practice of indefinite containment-model retention",
+      "Count 2 \u2014 42 U.S.C. \u00a71983 (Individual Capacity against Executive / Clinical Officers): supervisory and individual liability for unconstitutional retention directives, retaliatory adverse reporting, and due process deprivations",
+      "Count 3 \u2014 Tom Bane Civil Rights Act, Cal. Civ. Code \u00a752.1: coercive interference with constitutional and statutory rights under Pen. Code \u00a73008(d)(2) and 15 CCR \u00a73574(f)(1)",
+      "Count 4 \u2014 Fraud and Intentional / Negligent Misrepresentation: intake representations of individualized clinical graduation criteria vs. concealed blanket retention policies",
+      "Count 5 \u2014 Negligence and Negligence Per Se: duty of care under Giraldo; violation of mandatory statutory and regulatory standards governing sex offender treatment completion",
+      "Count 6 \u2014 Intentional Interference with Prospective Economic Advantage: disruption of Class A CDL commercial driving employment and refusal of reasonable scheduling accommodations",
+      "Count 7 \u2014 Unfair Competition Law, Cal. Bus. & Prof. Code \u00a717200: unlawful and unfair business practices regarding fee-for-service client billing and retention models; restitution of client-paid fees",
+      "Count 8 \u2014 Declaratory and Injunctive Relief: judicial declaration that blanket non-completion policies violate California law; permanent injunction requiring individualized CASOMB assessment"
     ],
     "evidenceCount": 10,
     "documentCount": 0
@@ -1020,14 +1021,14 @@
     "caption": "Ngwa Nforbi v. Ross Stores, Inc., et al.",
     "case_no": "26CV501995",
     "court": "Santa Clara Sup. Ct. (Downtown / First Street)",
-    "claims": "Unruh Civil Rights Act (Civ. Code §§51, 51.5, 52); False Imprisonment; Negligent Training and Supervision",
-    "status_label": "Filed — 26CV501995; CMC Feb 11 2027 (Parrett)",
+    "claims": "Unruh Civil Rights Act (Civ. Code \u00a7\u00a751, 51.5, 52); False Imprisonment; Negligent Training and Supervision",
+    "status_label": "Filed \u2014 26CV501995; CMC Feb 11 2027 (Parrett)",
     "lifecycle": "active",
     "proceeding": "state_civil",
     "phase": "service",
     "badge": "FILED",
     "filed": "E-filed Aug. 26, 2026, 2:06 AM PT via One Legal (Confirmation #35442871; Filing Order #29111713; Court Env. #24948831). Clerk-accepted same day; case number 26CV501995 assigned; summons issued (Deputy M. Suarez).",
-    "judge": "Hon. Vince Parrett, Dept. 16 (Santa Clara Superior Court — Downtown)",
+    "judge": "Hon. Vince Parrett, Dept. 16 (Santa Clara Superior Court \u2014 Downtown)",
     "cluster": 6,
     "type": "State",
     "archived": false,
@@ -1035,7 +1036,7 @@
     "serviceTracking": [
       {
         "name": "Ross Stores, Inc.",
-        "title": "Corporate Defendant (agent for service — C T Corporation System, info. and belief)",
+        "title": "Corporate Defendant (agent for service \u2014 C T Corporation System, info. and belief)",
         "location": "Glendale, CA (C T Corporation System)",
         "served": false,
         "dateServed": null,
@@ -1043,7 +1044,7 @@
       },
       {
         "name": "Ross Dress for Less, Inc.",
-        "title": "Corporate Defendant (agent for service — C T Corporation System, info. and belief)",
+        "title": "Corporate Defendant (agent for service \u2014 C T Corporation System, info. and belief)",
         "location": "Glendale, CA (C T Corporation System)",
         "served": false,
         "dateServed": null,
@@ -1051,9 +1052,9 @@
       }
     ],
     "causes": [
-      "First — Violation of the Unruh Civil Rights Act (Civ. Code §§ 51, 51.5, 52)",
-      "Second — False Imprisonment",
-      "Third — Negligent Training and Supervision"
+      "First \u2014 Violation of the Unruh Civil Rights Act (Civ. Code \u00a7\u00a7 51, 51.5, 52)",
+      "Second \u2014 False Imprisonment",
+      "Third \u2014 Negligent Training and Supervision"
     ],
     "evidenceCount": 10,
     "documentCount": 10
