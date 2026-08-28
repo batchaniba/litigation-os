@@ -164,6 +164,7 @@ export function JudicialOpinionsTab() {
   );
   const adverseCount = opinions.filter(o => o.outcome === "adverse").length;
   const favorableCount = opinions.filter(o => o.outcome === "favorable").length;
+  const mixedCount = opinions.filter(o => o.outcome === "mixed").length;
 
   return (
     <div>
@@ -193,6 +194,7 @@ export function JudicialOpinionsTab() {
           { label: "Total Rulings", count: opinions.length, color: SLATE },
           { label: "Adverse",       count: adverseCount,    color: RED   },
           { label: "Favorable",     count: favorableCount,  color: GREEN },
+          { label: "Mixed",         count: mixedCount,      color: AMBER },
         ].map(({ label, count, color }) => (
           <div key={label} style={{
             background: theme.cardBg,
