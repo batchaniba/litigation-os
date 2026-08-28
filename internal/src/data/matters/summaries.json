@@ -5,7 +5,7 @@
     "case_no": "2:25-cv-01460-DC-CSK",
     "court": "USDC E.D. Cal.",
     "claims": "42 USC 1983: 4A Search/Seizure, Due Process, Monell",
-    "status_label": "Dismissed w/o prejudice — Aug. 15; refiled as Matter 32",
+    "status_label": "Closed — E.D. Cal.; refiled as Matter 32",
     "lifecycle": "dismissed",
     "proceeding": "federal_civil",
     "phase": "terminal",
@@ -55,7 +55,7 @@
     "case_no": "2:26-cv-00004-DJC-JDP",
     "court": "USDC E.D. Cal.",
     "claims": "42 USC 1983: 1A Retaliation, 14A Equal Protection, Due Process",
-    "status_label": "Abandoned — OSC discharge pending",
+    "status_label": "Closed — E.D. Cal. 2:26-cv-00004",
     "lifecycle": "abandoned",
     "proceeding": "federal_civil",
     "phase": "terminal",
@@ -65,7 +65,7 @@
     "type": "Federal",
     "archived": true,
     "badge": "ABANDONED",
-    "note": "Palacios's MTD GRANTED Jul. 24; FAC dismissed w/ leave to amend by Aug. 7. Jul. 22 dismissal of Derrick/Noguchi was valid as a matter of right (no answer/MSJ served) — Jul. 24 order doesn't address it. Aug. 20, 2026 Notice of Voluntary Dismissal of Katie Palacios filed (Rule 41(a)(1)(A)(i)).",
+    "note": "Palacios's MTD GRANTED Jul. 24; FAC dismissed w/ leave to amend by Aug. 7. Jul. 22 dismissal of Derrick/Noguchi was valid as a matter of right (no answer/MSJ served). Aug. 20, 2026 Notice of Voluntary Dismissal of Katie Palacios filed (Rule 41(a)(1)(A)(i)). CASE CLOSED Aug. 26, 2026 — OSC discharged; E.D. Cal. docket terminated.",
     "defendants": "Andrew Derrick (#6910) — Notice of Voluntary Dismissal filed Jul. 22, 2026 (self-executing under Rule 41(a)(1)(A)(i)); Jul. 24, 2026 order nonetheless treats him as the sole remaining defendant if no amended complaint is filed — tension unresolved on the docket; Katie Palacios — MTD GRANTED Jul. 24, 2026 (failed all four state-actor tests); claims DISMISSED WITH LEAVE TO AMEND; then Notice of Voluntary Dismissal filed Aug. 20, 2026 under Rule 41(a)(1)(A)(i); Gary Noguchi (#7284) — Notice of Voluntary Dismissal filed Jul. 22, 2026 (self-executing); Jul. 24, 2026 order separately dismissed claims against him for failure to allege supervisory liability",
     "causes": [
       "First Amendment Retaliation",
@@ -495,10 +495,10 @@
     "case_no": "26CV191136",
     "court": "Alameda Sup. Ct.",
     "claims": "Writ of Mandate (CCP §1085; PC §679.10) — U Visa Certification; Declaratory Relief (CCP §1060)",
-    "status_label": "CHP demurrer reply in; hearing Aug. 28 — CMC Sep. 2",
+    "status_label": "Tentative: core writ claim survives; appear 10:30 Aug 28",
     "lifecycle": "active",
     "proceeding": "mandate",
-    "phase": "demurrer",
+    "phase": "hearing",
     "filed": "May 29, 2026",
     "judge": "Hon. Jenna M. Whitman, Dept. 25",
     "cluster": 1,
@@ -541,8 +541,9 @@
       "Count IV — Declaratory Relief (CCP §1060): Facial Deficiency of April 20, 2026 Denial and Construction of PC §679.10"
     ],
     "archived": false,
+    "badge": "TENTATIVE",
     "evidenceCount": 12,
-    "documentCount": 43
+    "documentCount": 45
   },
   {
     "number": 21,
@@ -641,7 +642,7 @@
     "case_no": "4:26-cv-05953-ASK",
     "court": "USDC N.D. Cal.",
     "claims": "42 USC 1983: Fourteenth Amendment (Substantive & Procedural Due Process), First Amendment (Retaliation); Declaratory Relief",
-    "status_label": "Served Aug. 5, 2026 — answer due Aug. 26; CMC Sep. 15",
+    "status_label": "Related to Meza — order Aug. 24; CMC Sep. 15",
     "lifecycle": "active",
     "proceeding": "federal_civil",
     "phase": "responsive_deadline",
@@ -668,7 +669,7 @@
       }
     ],
     "evidenceCount": 12,
-    "documentCount": 17
+    "documentCount": 26
   },
   {
     "number": 25,
@@ -706,12 +707,12 @@
     "claims": "PC §290.46(j)(2)(E) Violation, Failure to Hire (Tameny), ICRAA, Invasion of Privacy, Negligence Per Se, UCL §17200",
     "lifecycle": "active",
     "proceeding": "federal_civil",
-    "phase": "responsive_deadline",
+    "phase": "mtd_briefing",
     "filed": "July 15, 2026",
     "judge": "Hon. Dale A. Drozd, D.J.; Hon. Carolyn K. Delaney, M.J.",
     "cluster": 3,
     "type": "Federal",
-    "badge": "REMOVED",
+    "badge": "MTD",
     "defendants": "United Parcel Service, Inc.; and DOES 1 through 10, inclusive",
     "causes": [
       "Violation of Cal. Penal Code § 290.46(j)(2)(E)",
@@ -722,9 +723,9 @@
       "Unlawful Business Practices (Bus. & Prof. Code § 17200 et seq.)"
     ],
     "archived": false,
-    "status_label": "E.D. Cal. Sacramento 2:26-cv-02847 — UPS due Aug. 27",
+    "status_label": "MTD briefing — opp due Sep. 9; hearing Oct. 5",
     "evidenceCount": 7,
-    "documentCount": 31
+    "documentCount": 35
   },
   {
     "number": 27,
@@ -773,13 +774,13 @@
   {
     "number": 28,
     "caption": "Newanforbi v. Shannon Smith, LCSW, CEO, et al.",
-    "case_no": "3:26-cv-07504",
+    "case_no": "3:26-cv-07504-LJC",
     "court": "USDC N.D. Cal.",
     "claims": "42 U.S.C. §1983 (Monell + Individual Capacity); Bane Act (Cal. Civ. Code §52.1); Fraud / Negligent Misrepresentation; RICO (18 U.S.C. §1962(c)-(d))",
-    "status_label": "Fee paid — CMC Oct. 22, 2026; SPO denied w/o prejudice",
+    "status_label": "Dkt. 11 — serve under Rule 4; CMC Oct. 22",
     "lifecycle": "active",
     "proceeding": "federal_civil",
-    "phase": "screening_ifp",
+    "phase": "service",
     "filed": "Case Filed July 20, 2026 (complaint docketed July 21, 2026)",
     "judge": "Hon. Lisa J. Cisneros",
     "cluster": 2,
@@ -794,8 +795,27 @@
       "RICO (18 U.S.C. §1962(c)-(d))"
     ],
     "archived": false,
+    "badge": "SERVE",
+    "serviceTracking": [
+      {
+        "name": "Shannon Smith, LCSW",
+        "title": "Individual Defendant (CEO / Founder)",
+        "location": "Serve personally under Rule 4(e) — confirm address (HOPE: 1245 B Street, Hayward, CA 94541 or other)",
+        "served": false,
+        "dateServed": null,
+        "note": "Dkt. 11 (Aug. 26, 2026) directs Rule 4 service. 90-day Rule 4(m) clock runs from complaint filing (docketed ~July 21, 2026) → ~Oct. 19, 2026."
+      },
+      {
+        "name": "HOPE Psychotherapy, Inc. (d/b/a HOPE Program)",
+        "title": "Corporate Defendant",
+        "location": "Serve via officer/agent or registered agent under Rule 4(h) — principal office 1245 B Street, Hayward, CA 94541",
+        "served": false,
+        "dateServed": null,
+        "note": "Same Rule 4(m) window. SLB previously appeared in related/prior HOPE matters — do not treat that as waiver of service in this action unless a waiver is executed."
+      }
+    ],
     "evidenceCount": 15,
-    "documentCount": 32
+    "documentCount": 34
   },
   {
     "number": 29,
@@ -901,16 +921,16 @@
     "number": 32,
     "caption": "Nforbi v. Meza-Gonzalez, et al",
     "case_no": "3:26-cv-08271-PHK",
-    "court": "USDC N.D. Cal. (docketed Aug. 10, 2026; related Serrato 4:26-cv-05953-ASK and Candelaria 3:26-cv-08272-LJC)",
+    "court": "USDC N.D. Cal. (related to Serrato 4:26-cv-05953-ASK per Aug. 24, 2026 order; also related Candelaria 3:26-cv-08272-LJC)",
     "claims": "42 U.S.C. § 1983 — Fourth/Fourteenth/First Amendment (unlawful entry, search, arrest, Franks/judicial deception, fabrication, First Amendment retaliation) — Dkt. 5 (FAC filed Aug. 17, 2026) is the court pleading of record; also CHP-cluster PDF home for Matters 1/2/20/24",
-    "status_label": "FAC filed Aug. 17 (Dkt. 5) — resp. due Sep. 4; CMC Dec. 2",
+    "status_label": "Related to Serrato — reassigned to Krishnan",
     "lifecycle": "active",
     "proceeding": "federal_civil",
     "phase": "responsive_deadline",
     "note": "N.D. Cal. § 1983 action docketed Aug. 10, 2026 as No. 3:26-cv-08271-PHK (ndcal/). Also document store for Matters 1, 2, 20, and 24 under matter-32/from-NN/. Nov. 1 / Candelaria APS evidence in Matter 33.",
     "badge": "FAC FILED",
     "filed": "August 10, 2026 (docketed; intake packet signed Aug. 7, 2026)",
-    "judge": "Hon. Peter H. Kang (Magistrate Judge)",
+    "judge": "Hon. Ajay S. Krishnan, U.S. Magistrate Judge (N.D. Cal.) — reassigned Aug. 24, 2026 from Mag. Kang (related to Serrato 4:26-cv-05953-ASK)",
     "cluster": 1,
     "type": "Federal",
     "defendants": "Santiago Meza-Gonzalez (CHP #023295), individually; Jose Melano (CHP #023054), individually; and DOES 1–10 — N.D. Cal. operative complaint (Aug. 7, 2026). State-court Matter 2 tracks the same officers under a False Imprisonment / Battery / Bane Act caption.",
@@ -919,8 +939,9 @@
         "name": "Santiago Meza-Gonzalez",
         "title": "Defendant (CHP #023295, individually)",
         "location": "CHP Modesto Area",
-        "served": true,
-        "dateServed": "August 14, 2026 (Stanislaus County Sheriff, per SER-001 request e-signed Aug. 13, 2026)"
+        "served": false,
+        "dateServed": null,
+        "note": "Aug. 13 Stanislaus SER-001 / purported Aug. 14 attempt did not produce a filed Rule 4(l) return. Melano FAC-mail POS (Aug. 21) states Rule 4 as to Meza incomplete. Private process-server re-service bundle prepared Aug. 25, 2026 (Modesto Area, 4030 Kiernan Ave.)."
       },
       {
         "name": "Jose Melano",
@@ -940,7 +961,7 @@
     ],
     "archived": false,
     "evidenceCount": 13,
-    "documentCount": 124
+    "documentCount": 134
   },
   {
     "number": 33,
@@ -983,7 +1004,7 @@
     ],
     "archived": false,
     "evidenceCount": 17,
-    "documentCount": 48
+    "documentCount": 53
   },
   {
     "number": 34,
@@ -1021,7 +1042,7 @@
     "case_no": "26CV501995",
     "court": "Santa Clara Sup. Ct. (Downtown / First Street)",
     "claims": "Unruh Civil Rights Act (Civ. Code §§51, 51.5, 52); False Imprisonment; Negligent Training and Supervision",
-    "status_label": "Filed — 26CV501995; CMC Feb 11 2027 (Parrett)",
+    "status_label": "Filed — serve both Ross entities via CT Corp (~Oct 25)",
     "lifecycle": "active",
     "proceeding": "state_civil",
     "phase": "service",
@@ -1056,6 +1077,6 @@
       "Third — Negligent Training and Supervision"
     ],
     "evidenceCount": 10,
-    "documentCount": 10
+    "documentCount": 15
   }
 ]
