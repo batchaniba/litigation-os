@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Rebuild Matter 12 Diamond/Alpine default judgment packets.
 
-Patches CIV-100 item 2 monetary fields, stamps pen signatures over the CIV-100
+Patches CIV-100 item 2 monetary fields, stamps the canonical signature over the CIV-100
 signature markers, swaps in the regenerated August 3 declarations, and writes
 filing-ready packet PDFs.
 """
@@ -18,7 +18,10 @@ import fitz
 ROOT = Path(__file__).resolve().parents[2]
 OUT_DIR = ROOT / "internal/public/documents/matter-12"
 SCRIPT_DIR = Path(__file__).resolve().parent
-SIGNATURE_IMG = SCRIPT_DIR / "assets" / "newanforbi-pen-signature.png"
+sys.path.insert(0, str(SCRIPT_DIR))
+from signature_stamp import SIGNATURE_PATH  # noqa: E402
+
+SIGNATURE_IMG = Path(SIGNATURE_PATH)
 
 DIAMOND_OUT = OUT_DIR / (
     "1094 Diamond Default Judgment Packet "

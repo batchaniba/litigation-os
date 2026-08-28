@@ -11,6 +11,7 @@ import os
 import sys
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, SCRIPT_DIR)
 sys.path.insert(0, os.path.join(SCRIPT_DIR, "lib"))
 from pleading_paper import (  # noqa: E402
     PleadingPaper,
@@ -18,8 +19,10 @@ from pleading_paper import (  # noqa: E402
     COURT_LINE1,
 )
 
-SIGNATURE_IMG = os.path.join(SCRIPT_DIR, "assets", "newanforbi-pen-signature.png")
-SIG_IMG_W_PX, SIG_IMG_H_PX = 369, 101
+from signature_stamp import SIGNATURE_NATIVE_PX, SIGNATURE_PATH  # noqa: E402
+
+SIGNATURE_IMG = SIGNATURE_PATH
+SIG_IMG_W_PX, SIG_IMG_H_PX = SIGNATURE_NATIVE_PX
 
 REPO_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, "..", ".."))
 OUT_DIR = os.path.join(REPO_ROOT, "internal", "public", "documents", "matter-12")
