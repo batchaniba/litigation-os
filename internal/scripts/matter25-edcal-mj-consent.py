@@ -52,10 +52,26 @@ DEFAULT_MAILED_FROM = "San Jose, California"
 PRINT_NAME = "BRENDAN NGEHSI NEWANFORBI"
 
 # PyMuPDF top-origin coords on Dkt. 3 p. 4 (CONSENT box, not DECLINE).
+# CONSENT_BOX is the heading square (embedded 16×16 image, not a widget).
+# SIG_LINE y is below the Signature underline so the lower loops rest on
+# the rule. Skip white-out: the stamp rect covers that rule and would
+# erase it, leaving the loops floating in a white gap above Print Name.
 DATE_POS = (105.0, 481.0)
 NAME_POS = (300.0, 503.0)
 PLAINTIFF_CHECK = (297.5, 516.5)
-SIG_LINE = (288.8, 459.3, 483.4)
+SIG_LINE = (288.8, 459.3, 494.0)
+CONSENT_BOX = (79.9, 380.4, 91.8, 392.3)
+
+
+def check_consent_box(page) -> None:
+    """Draw an X inside the CONSENT heading square. Leave DECLINE empty."""
+    import fitz
+
+    x0, y0, x1, y1 = CONSENT_BOX
+    inset = 1.6
+    r = fitz.Rect(x0 + inset, y0 + inset, x1 - inset, y1 - inset)
+    page.draw_line(r.tl, r.br, color=(0, 0, 0), width=1.25)
+    page.draw_line(r.tr, r.bl, color=(0, 0, 0), width=1.25)
 
 
 def fill_consent_page(out: Path, exec_date: str) -> Path:
@@ -81,7 +97,10 @@ def fill_consent_page(out: Path, exec_date: str) -> Path:
     page.insert_text(
         PLAINTIFF_CHECK, "X", fontname="times-bold", fontsize=11, color=(0, 0, 0)
     )
-    stamp_on_pdf_line(page, SIG_LINE[0], SIG_LINE[1], SIG_LINE[2])
+    check_consent_box(page)
+    stamp_on_pdf_line(
+        page, SIG_LINE[0], SIG_LINE[1], SIG_LINE[2], whiteout=False
+    )
 
     out.parent.mkdir(parents=True, exist_ok=True)
     dst.save(out, garbage=4, deflate=True)
