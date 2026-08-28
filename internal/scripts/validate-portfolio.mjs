@@ -29,6 +29,7 @@ import {
 } from "./status-label.mjs";
 import { PROSE_HINTS, docketLogIssues, proseBudgetIssues } from "./prose-budget.mjs";
 import { loadRegistry, registryByPath } from "./lib/document-registry.mjs";
+import { pdfReadableProblem } from "./lib/pdfMagic.mjs";
 import { matterRefsInclude, parseMatterRefs } from "../src/utils/matterRefs.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -639,8 +640,17 @@ for (const copies of byDigest.values()) {
   }
 }
 
-
-
+// ---------- unreadable / empty PDFs (fail) ----------
+// A 0-byte file or a text file named .pdf will still "exist" for path checks
+// and then poison extraction (citation index, search). Fail before that.
+for (const full of onDiskDocs) {
+  if (!full.toLowerCase().endsWith(".pdf")) continue;
+  const size = fs.statSync(full).size;
+  const problem = pdfReadableProblem(full, size);
+  if (problem) {
+    fail(`${path.relative(PUBLIC_ROOT, full)}: ${problem}`);
+  }
+}
 
 // ---------- cross-matter graph ----------
 

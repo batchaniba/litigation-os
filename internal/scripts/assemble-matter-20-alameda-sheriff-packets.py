@@ -12,8 +12,11 @@ CHP Dublin Area duty station (4999 Gleason Drive, Dublin, CA 94568).
 from __future__ import annotations
 
 from pathlib import Path
+import sys
 
-from pypdf import PdfReader, PdfWriter
+SCRIPT_DIR = Path(__file__).resolve().parent
+sys.path.insert(0, str(SCRIPT_DIR / "lib"))
+from pdf_packet import assemble, page_count  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
 DOC_DIR = ROOT / "internal/public/documents/matter-32/from-20"
@@ -46,21 +49,11 @@ RESPONDENTS = [
 ]
 
 
-def append_pdf(writer: PdfWriter, path: Path) -> int:
-    reader = PdfReader(str(path))
-    for page in reader.pages:
-        writer.add_page(page)
-    return len(reader.pages)
-
-
-def assemble(ser_path: Path, out_path: Path) -> tuple[int, int, int, int]:
-    writer = PdfWriter()
-    n_ser = append_pdf(writer, ser_path)
-    n_fw = append_pdf(writer, FEE_WAIVER)
-    n_opp = append_pdf(writer, OPPOSITION)
-    out_path.parent.mkdir(parents=True, exist_ok=True)
-    with out_path.open("wb") as f:
-        writer.write(f)
+def assemble_packet(ser_path: Path, out_path: Path) -> tuple[int, int, int, int]:
+    n_ser = page_count(ser_path)
+    n_fw = page_count(FEE_WAIVER)
+    n_opp = page_count(OPPOSITION)
+    assemble([ser_path, FEE_WAIVER, OPPOSITION], out_path)
     return n_ser, n_fw, n_opp, n_ser + n_fw + n_opp
 
 
@@ -72,7 +65,7 @@ def main() -> None:
     for item in RESPONDENTS:
         if not item["ser"].exists():
             raise SystemExit(f"Missing SER-001: {item['ser']}")
-        n_ser, n_fw, n_opp, total = assemble(item["ser"], item["out"])
+        n_ser, n_fw, n_opp, total = assemble_packet(item["ser"], item["out"])
         print(
             f"{item['key']}: {total} pp "
             f"(SER-001 {n_ser} + FW-003 {n_fw} + Opposition/MPA {n_opp}) "

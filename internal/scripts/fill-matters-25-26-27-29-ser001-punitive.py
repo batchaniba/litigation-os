@@ -33,24 +33,20 @@ paid out of pocket, $52.05, for the original Amazon SER-001).
 
 from __future__ import annotations
 
+import sys
 from pathlib import Path
 
 import fitz
-from pypdf import PdfReader, PdfWriter
 from pypdf.generic import NameObject
 
-ROOT = Path(__file__).resolve().parents[2]
-TEMPLATE = ROOT / "internal/public/documents/_form-library/ser001-blank-template.pdf"
-DOCS_ROOT = ROOT / "internal/public/documents"
-SIGNATURE_IMG = Path(__file__).resolve().parent / "assets" / "newanforbi-pen-signature.png"
+SCRIPT_DIR = Path(__file__).resolve().parent
+sys.path.insert(0, str(SCRIPT_DIR))
+sys.path.insert(0, str(SCRIPT_DIR / "lib"))
+from ser001 import FIELDS as F, fill_ser001, filled_values, require_template  # noqa: E402
+from signature_stamp import SER001_SIG_PAGE_INDEX  # noqa: E402
 
-# Page-4 right-hand "Sign your name" line (PyMuPDF top-origin coords) --
-# same placement used for Matter 12's SER-001s.
-SIG_PAGE_INDEX = 3
-SIG_WIDTH = 120.0
-SIG_HEIGHT = SIG_WIDTH * (101.0 / 369.0)
-SIG_BASELINE = 645.0
-SIG_RECT = fitz.Rect(360.0, SIG_BASELINE - SIG_HEIGHT, 360.0 + SIG_WIDTH, SIG_BASELINE)
+ROOT = Path(__file__).resolve().parents[2]
+DOCS_ROOT = ROOT / "internal/public/documents"
 
 YOUR_NAME = "Brendan Ngehsi Newanforbi"
 ADDRESS = "1455 Cat Tail Drive"
@@ -74,43 +70,6 @@ def list_forms(amount: str, amended: bool) -> str:
         f"(dated August 7, 2026)"
         + (" — supersedes the $25,000.00 Notice dated August 4, 2026" if amended else "")
     )
-
-F = {
-    "case1": "SER-001[0].Page1[0].CaptionRight[0].CaseNo[0].CaseNumber[0]",
-    "county": "SER-001[0].Page1[0].List1[0].Li1[0].NameofCounty[0]",
-    "yourname": "SER-001[0].Page1[0].List2[0].Li2a[0].Yourname[0]",
-    "casename": "SER-001[0].Page1[0].List2[0].Li2c[0].TextField[0]",
-    "address": "SER-001[0].Page1[0].List2[0].Li2d[0].address\\.2d[0]",
-    "city": "SER-001[0].Page1[0].List2[0].Li2d[0].city\\.2d[0]",
-    "state": "SER-001[0].Page1[0].List2[0].Li2d[0].state\\.2d[0]",
-    "zip": "SER-001[0].Page1[0].List2[0].Li2d[0].zip\\.2d[0]",
-    "phone": "SER-001[0].Page1[0].List2[0].Li2d[0].telephone\\.2d[0]",
-    "email": "SER-001[0].Page1[0].List2[0].Li2d[0].email\\.2d[0]",
-    "serve_entity": "SER-001[0].Page2[0].List3[0].Li3b[0].servePerson[0]",
-    "entity_name": "SER-001[0].Page2[0].List3[0].Li3b[0].Li3bList[0].Li3b1[0].NameType[0]",
-    "entity_person": "SER-001[0].Page2[0].List3[0].Li3b[0].Li3bList[0].Li3b2[0].nameofperson[0]",
-    "entity_agent": "SER-001[0].Page2[0].List3[0].Li3b[0].Li3bList[0].Li3b3[0].nameofagent[0]",
-    "case2": "SER-001[0].Page2[0].PxCaption[0].CaseNumber[0]",
-    "addr": "SER-001[0].Page3[0].List4[0].Li4[0].Address[0]",
-    "addr_city": "SER-001[0].Page3[0].List4[0].Li4[0].City[0]",
-    "addr_state": "SER-001[0].Page3[0].List4[0].Li4[0].State[0]",
-    "addr_zip": "SER-001[0].Page3[0].List4[0].Li4[0].Zip[0]",
-    "business": "SER-001[0].Page3[0].List4[0].Li4[0].addDef[1]",
-    "serve_time": "SER-001[0].Page3[0].List4[0].Li4[0].serveTime[0]",
-    "gate": "SER-001[0].Page3[0].List4[0].Li4[0].gateCode[0]",
-    "type_papers": "SER-001[0].Page3[0].List5[0].Li5a[0].typePapers[0]",
-    "list_forms": "SER-001[0].Page3[0].List5[0].Li5b[0].listForms[0]",
-    "case3": "SER-001[0].Page3[0].PxCaption[0].CaseNumber[0]",
-    "deadline_yes": "SER-001[0].Page4[0].List5Continued[0].Li5d[0].deadline[2]",
-    "deadline_date": "SER-001[0].Page4[0].List5Continued[0].Li5d[0].deadlineDate[0]",
-    "alt_no": "SER-001[0].Page4[0].List5Continued[0].Li5e[0].altService[1]",
-    "oth_yes": "SER-001[0].Page4[0].List5Continued[0].Li5f[0].othInfo[1]",
-    "oth_text": "SER-001[0].Page4[0].List5Continued[0].Li5f[0].TextField[0]",
-    "case4": "SER-001[0].Page4[0].PxCaption[0].CaseNumber[0]",
-    "sig_date": "SER-001[0].Page4[0].sig[0].SigDate[0]",
-    "type_name": "SER-001[0].Page4[0].sig[0].typeName[0]",
-    "case5": "SER-001[0].Page5[0].PxCaption[0].CaseNumber[0]",
-}
 
 
 def base_fields(case_number: str, case_name: str, other: str, deadline_date: str,
@@ -356,56 +315,25 @@ def fields_for(d: dict) -> dict[str, object]:
 def fill_one(d: dict) -> Path:
     out_dir = DOCS_ROOT / f"matter-{d['matter']:02d}"
     out_dir.mkdir(parents=True, exist_ok=True)
-    out_path = out_dir / d["filename"]
-    reader = PdfReader(str(TEMPLATE))
-    writer = PdfWriter()
-    writer.append(reader)
-    writer.update_page_form_field_values(None, fields_for(d))
-    if writer.get_fields():
-        try:
-            writer.set_need_appearances_writer(True)
-        except Exception:
-            pass
-    with open(out_path, "wb") as fh:
-        writer.write(fh)
-    affix_signature(out_path)
-    return out_path
-
-
-def affix_signature(path: Path) -> None:
-    if not SIGNATURE_IMG.is_file():
-        raise SystemExit(f"Missing signature image: {SIGNATURE_IMG}")
-    doc = fitz.open(path)
-    try:
-        page = doc[SIG_PAGE_INDEX]
-        page.insert_image(SIG_RECT, filename=str(SIGNATURE_IMG), keep_proportion=True)
-        doc.saveIncr()
-    finally:
-        doc.close()
+    return fill_ser001(out_dir / d["filename"], fields_for(d), stamp_signature=True)
 
 
 def verify(path: Path, d: dict) -> None:
-    fields = PdfReader(str(path)).get_fields() or {}
-    filled = {
-        k: v.get("/V")
-        for k, v in fields.items()
-        if v.get("/V") not in (None, "", NameObject("/Off"), "/Off")
-    }
+    filled = filled_values(path)
     print(f"{path.name}: {len(filled)} filled fields")
     for key in (F["county"], F["entity_name"], F["addr"], F["addr_city"], F["sig_date"], F["type_papers"]):
         if key in filled:
             print(f"  {key.split('.')[-1]}: {filled[key]!r}")
     doc = fitz.open(path)
     try:
-        xobjects = doc[SIG_PAGE_INDEX].get_images(full=True)
+        xobjects = doc[SER001_SIG_PAGE_INDEX].get_images(full=True)
         print(f"  page-4 images: {len(xobjects)} (signature stamped)")
     finally:
         doc.close()
 
 
 def main() -> None:
-    if not TEMPLATE.is_file() or TEMPLATE.stat().st_size < 10_000:
-        raise SystemExit(f"Bad/missing template: {TEMPLATE}")
+    require_template()
     for d in DEFENDANTS:
         verify(fill_one(d), d)
     amended = sum(1 for d in DEFENDANTS if d["amended"])

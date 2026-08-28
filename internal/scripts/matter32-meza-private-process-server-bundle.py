@@ -17,11 +17,16 @@ Outputs (matter-32/ndcal/):
 from __future__ import annotations
 
 from pathlib import Path
+import sys
 
 import fitz
-from pypdf import PdfReader, PdfWriter
+from pypdf import PdfWriter
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
+
+SCRIPT_DIR = Path(__file__).resolve().parent
+sys.path.insert(0, str(SCRIPT_DIR / "lib"))
+from pdf_packet import append_page, append_pdf, page_count  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
 NDCAL = ROOT / "internal/public/documents/matter-32/ndcal"
@@ -53,10 +58,6 @@ SERVE_LINES = [
 PLAINTIFF = "Brendan Ngwa Nforbi, Plaintiff In Propria Persona"
 PHONE = "(209) 801-4442"
 EMAIL = "bnn.cdl@gmail.com"
-
-
-def _page_count(path: Path) -> int:
-    return len(PdfReader(str(path)).pages)
 
 
 def write_cover(path: Path) -> None:
@@ -132,16 +133,6 @@ def write_cover(path: Path) -> None:
     c.save()
 
 
-def _append_page(writer: PdfWriter, reader: PdfReader, index: int) -> None:
-    writer.add_page(reader.pages[index])
-
-
-def _append_all(writer: PdfWriter, path: Path) -> None:
-    reader = PdfReader(str(path))
-    for page in reader.pages:
-        writer.add_page(page)
-
-
 def annotate_pos_page(src: Path, page_index: int, out_tmp: Path) -> Path:
     """Stamp case number + defendant name onto the blank AO 440 POS page."""
     doc = fitz.open(src)
@@ -180,21 +171,21 @@ def build_bundle() -> Path:
     annotate_pos_page(AO440, AO440_POS_PAGE, tmp_pos)
 
     writer = PdfWriter()
-    _append_all(writer, OUT_COVER)
-    _append_page(writer, PdfReader(str(SUMMONS_ISSUED)), MEZA_SUMMONS_PAGE)
-    _append_all(writer, tmp_pos)
-    _append_all(writer, FAC)
-    _append_all(writer, NOTICE)
-    _append_all(writer, CMC)
+    append_pdf(writer, OUT_COVER)
+    append_page(writer, SUMMONS_ISSUED, MEZA_SUMMONS_PAGE)
+    append_pdf(writer, tmp_pos)
+    append_pdf(writer, FAC)
+    append_pdf(writer, NOTICE)
+    append_pdf(writer, CMC)
 
     with open(OUT_BUNDLE, "wb") as fh:
         writer.write(fh)
     tmp_pos.unlink(missing_ok=True)
 
-    n = _page_count(OUT_BUNDLE)
+    n = page_count(OUT_BUNDLE)
     print(f"Wrote {OUT_COVER.name} (1 p.)")
     print(f"Wrote {OUT_BUNDLE.name} ({n} pp.)")
-    expected = 1 + 1 + 1 + _page_count(FAC) + _page_count(NOTICE) + _page_count(CMC)
+    expected = 1 + 1 + 1 + page_count(FAC) + page_count(NOTICE) + page_count(CMC)
     if n != expected:
         raise SystemExit(f"Page count mismatch: got {n}, expected {expected}")
     return OUT_BUNDLE

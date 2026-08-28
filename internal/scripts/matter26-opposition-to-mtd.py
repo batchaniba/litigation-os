@@ -39,11 +39,10 @@ import argparse
 import sys
 from pathlib import Path
 
-from pypdf import PdfReader, PdfWriter
-
 SCRIPT_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPT_DIR / "lib"))
 sys.path.insert(0, str(SCRIPT_DIR))
+from pdf_packet import assemble  # noqa: E402
 from pleading_paper import CONTENT_LEFT, PleadingPaper  # noqa: E402
 from proof_of_service import (  # noqa: E402
     DISTRICT_EDCAL,
@@ -779,12 +778,7 @@ def _header_block(d: PleadingPaper, right_caption: list) -> None:
 
 def append_pdfs(front: Path, back: Path) -> Path:
     """Write front+back into front (in place). Used to attach the POS."""
-    writer = PdfWriter()
-    for src in (front, back):
-        for page in PdfReader(str(src)).pages:
-            writer.add_page(page)
-    with front.open("wb") as fh:
-        writer.write(fh)
+    assemble([front, back], front)
     return front
 
 

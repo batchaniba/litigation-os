@@ -21,24 +21,16 @@ import sys
 from pathlib import Path
 
 import fitz
-from pypdf import PdfReader, PdfWriter
 from pypdf.generic import NameObject
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPT_DIR))
-from signature_stamp import SIGNATURE_ASPECT, SIGNATURE_PATH  # noqa: E402
+sys.path.insert(0, str(SCRIPT_DIR / "lib"))
+from ser001 import FIELDS as F, fill_ser001, filled_values, require_template  # noqa: E402
+from signature_stamp import SER001_SIG_PAGE_INDEX  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
-TEMPLATE = ROOT / "internal/public/documents/_form-library/ser001-blank-template.pdf"
 OUT_DIR = ROOT / "internal/public/documents/matter-32/ndcal"
-
-# Page-4 right-hand "Sign your name" line (PyMuPDF top-origin coords) —
-# same placement used across every SER-001 script in this portfolio.
-SIG_PAGE_INDEX = 3
-SIG_WIDTH = 120.0
-SIG_HEIGHT = SIG_WIDTH * SIGNATURE_ASPECT
-SIG_BASELINE = 645.0
-SIG_RECT = fitz.Rect(360.0, SIG_BASELINE - SIG_HEIGHT, 360.0 + SIG_WIDTH, SIG_BASELINE)
 
 YOUR_NAME = "Brendan Ngwa Nforbi"
 ADDRESS = "1455 Cat Tail Drive"
@@ -116,47 +108,6 @@ FILENAME = (
     "Santiago Meza-Gonzalez (Stanislaus, Aug 13 2026).pdf"
 )
 
-# Fully-qualified AcroForm names on the Judicial Council SER-001 (Rev. Jan 1, 2026)
-F = {
-    "case1": "SER-001[0].Page1[0].CaptionRight[0].CaseNo[0].CaseNumber[0]",
-    "county": "SER-001[0].Page1[0].List1[0].Li1[0].NameofCounty[0]",
-    "yourname": "SER-001[0].Page1[0].List2[0].Li2a[0].Yourname[0]",
-    "casename": "SER-001[0].Page1[0].List2[0].Li2c[0].TextField[0]",
-    "address": "SER-001[0].Page1[0].List2[0].Li2d[0].address\\.2d[0]",
-    "city": "SER-001[0].Page1[0].List2[0].Li2d[0].city\\.2d[0]",
-    "state": "SER-001[0].Page1[0].List2[0].Li2d[0].state\\.2d[0]",
-    "zip": "SER-001[0].Page1[0].List2[0].Li2d[0].zip\\.2d[0]",
-    "phone": "SER-001[0].Page1[0].List2[0].Li2d[0].telephone\\.2d[0]",
-    "email": "SER-001[0].Page1[0].List2[0].Li2d[0].email\\.2d[0]",
-    "serve_person": "SER-001[0].Page2[0].List3[0].Li3a[0].servePerson[0]",
-    "person_name": "SER-001[0].Page2[0].List3[0].Li3a[0].Li3aList[0].Li3a1[0].personName[0]",
-    "nicknames": "SER-001[0].Page2[0].List3[0].Li3a[0].Li3aList[0].Li3a1[0].nicknames[0]",
-    "desc_no": "SER-001[0].Page2[0].List3[0].Li3a[0].Li3aList[0].Li3a3[0].Description[0]",
-    "safety_no": "SER-001[0].Page2[0].List3[0].Li3a[0].Li3aList[0].Li3a4[0].SafetyAccessibility[0]",
-    "case2": "SER-001[0].Page2[0].PxCaption[0].CaseNumber[0]",
-    "addr": "SER-001[0].Page3[0].List4[0].Li4[0].Address[0]",
-    "addr_city": "SER-001[0].Page3[0].List4[0].Li4[0].City[0]",
-    "addr_state": "SER-001[0].Page3[0].List4[0].Li4[0].State[0]",
-    "addr_zip": "SER-001[0].Page3[0].List4[0].Li4[0].Zip[0]",
-    "business": "SER-001[0].Page3[0].List4[0].Li4[0].addDef[1]",
-    "serve_time": "SER-001[0].Page3[0].List4[0].Li4[0].serveTime[0]",
-    "gate": "SER-001[0].Page3[0].List4[0].Li4[0].gateCode[0]",
-    "type_papers": "SER-001[0].Page3[0].List5[0].Li5a[0].typePapers[0]",
-    "list_forms": "SER-001[0].Page3[0].List5[0].Li5b[0].listForms[0]",
-    "hearing_yes": "SER-001[0].Page3[0].List5[0].Li5c[0].Hearing[2]",
-    "hearing_date": "SER-001[0].Page3[0].List5[0].Li5c[0].hearingDate[0]",
-    "case3": "SER-001[0].Page3[0].PxCaption[0].CaseNumber[0]",
-    "deadline_yes": "SER-001[0].Page4[0].List5Continued[0].Li5d[0].deadline[2]",
-    "deadline_date": "SER-001[0].Page4[0].List5Continued[0].Li5d[0].deadlineDate[0]",
-    "alt_no": "SER-001[0].Page4[0].List5Continued[0].Li5e[0].altService[1]",
-    "oth_yes": "SER-001[0].Page4[0].List5Continued[0].Li5f[0].othInfo[1]",
-    "oth_text": "SER-001[0].Page4[0].List5Continued[0].Li5f[0].TextField[0]",
-    "case4": "SER-001[0].Page4[0].PxCaption[0].CaseNumber[0]",
-    "sig_date": "SER-001[0].Page4[0].sig[0].SigDate[0]",
-    "type_name": "SER-001[0].Page4[0].sig[0].typeName[0]",
-    "case5": "SER-001[0].Page5[0].PxCaption[0].CaseNumber[0]",
-}
-
 FIELDS: dict[str, object] = {
     F["case1"]: CASE_NUMBER,
     F["county"]: COUNTY,
@@ -200,42 +151,11 @@ FIELDS: dict[str, object] = {
 
 def fill() -> Path:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
-    out_path = OUT_DIR / FILENAME
-    reader = PdfReader(str(TEMPLATE))
-    writer = PdfWriter()
-    writer.append(reader)
-    writer.update_page_form_field_values(None, FIELDS)
-    if writer.get_fields():
-        try:
-            writer.set_need_appearances_writer(True)
-        except Exception:
-            pass
-    with open(out_path, "wb") as fh:
-        writer.write(fh)
-    affix_signature(out_path)
-    return out_path
-
-
-def affix_signature(path: Path) -> None:
-    """Stamp the portfolio's canonical e-signature on page 4's signature line."""
-    if not Path(SIGNATURE_PATH).is_file():
-        raise SystemExit(f"Missing signature image: {SIGNATURE_PATH}")
-    doc = fitz.open(path)
-    try:
-        page = doc[SIG_PAGE_INDEX]
-        page.insert_image(SIG_RECT, filename=SIGNATURE_PATH, keep_proportion=True)
-        doc.saveIncr()
-    finally:
-        doc.close()
+    return fill_ser001(OUT_DIR / FILENAME, FIELDS, stamp_signature=True)
 
 
 def verify(path: Path) -> None:
-    fields = PdfReader(str(path)).get_fields() or {}
-    filled = {
-        k: v.get("/V")
-        for k, v in fields.items()
-        if v.get("/V") not in (None, "", NameObject("/Off"), "/Off")
-    }
+    filled = filled_values(path)
     print(f"{path.name}: {len(filled)} filled fields")
     for key in (F["county"], F["casename"], F["person_name"], F["addr"], F["addr_zip"], F["gate"]):
         short = key.split(".")[-1]
@@ -243,17 +163,14 @@ def verify(path: Path) -> None:
             print(f"  {short}: {filled[key]!r}")
     doc = fitz.open(path)
     try:
-        images = doc[SIG_PAGE_INDEX].get_images(full=True)
+        images = doc[SER001_SIG_PAGE_INDEX].get_images(full=True)
         print(f"  page-4 images: {len(images)} (signature stamped)")
     finally:
         doc.close()
 
 
 def main() -> None:
-    if not TEMPLATE.is_file():
-        raise SystemExit(f"Missing template: {TEMPLATE}")
-    if TEMPLATE.stat().st_size < 10_000:
-        raise SystemExit(f"Template looks like an LFS pointer ({TEMPLATE.stat().st_size} bytes)")
+    require_template()
     verify(fill())
     print("Done.")
 
