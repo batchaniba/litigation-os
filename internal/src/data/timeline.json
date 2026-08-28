@@ -3637,5 +3637,26 @@
     "upcoming": true,
     "actor": "you",
     "source": "/documents/matter-28/Dkt 11 - Order Regarding Filing Fee IFP and Directing Service (Filed Aug 26 2026).pdf"
+  },
+  {
+    "date": "Aug. 24, 2026",
+    "event": "ORDER GRANTING ADMINISTRATIVE MOTION TO CONSIDER WHETHER CASES SHOULD BE RELATED (Civil L.R. 3-12) \u2014 Mag. Ajay S. Krishnan (N.D. Cal.): Newanforbi v. Serrato (4:26-cv-05953-ASK) and Nforbi v. Meza-Gonzalez et al. (3:26-cv-08271-PHK) are RELATED; Clerk directed to reassign Meza to Krishnan; Meza CMC to be rescheduled. Serrato CMC remains Sep. 15, 2026.",
+    "matters": [
+      24,
+      32
+    ],
+    "type": "ruling",
+    "upcoming": false,
+    "source": "/documents/matter-24/Order Granting Administrative Motion to Relate Cases - Serrato and Meza (Aug 24 2026).pdf"
+  },
+  {
+    "date": "Aug. 25, 2026",
+    "event": "PRIVATE PROCESS SERVER BUNDLE prepared for Rule 4 re-service on Santiago Meza-Gonzalez (Matter 32, 3:26-cv-08271-PHK) \u2014 28-page packet: cover sheet; issued summons (Dkt. 3 Meza page); blank AO 440 Proof of Service return; operative FAC (Dkt. 5); Notice Identifying Operative FAC (Aug. 24); CMC/ADR Order (Dkt. 4). Service address: CHP Modesto Area, 4030 Kiernan Avenue, Modesto, CA 95356. No Stanislaus SER-001 / sheriff forms \u2014 private process server only. Melano already has summons POS on file (Dkt. 5-1); Meza Rule 4 remains incomplete.",
+    "matters": [
+      32
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "source": "/documents/matter-32/ndcal/Meza-Gonzalez Private Process Server Bundle (Aug 25 2026).pdf"
   }
 ]

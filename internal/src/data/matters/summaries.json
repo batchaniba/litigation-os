@@ -642,7 +642,7 @@
     "case_no": "4:26-cv-05953-ASK",
     "court": "USDC N.D. Cal.",
     "claims": "42 USC 1983: Fourteenth Amendment (Substantive & Procedural Due Process), First Amendment (Retaliation); Declaratory Relief",
-    "status_label": "Served Aug. 5, 2026 — answer due Aug. 26; CMC Sep. 15",
+    "status_label": "Related to Meza — order Aug. 24; CMC Sep. 15",
     "lifecycle": "active",
     "proceeding": "federal_civil",
     "phase": "responsive_deadline",
@@ -669,7 +669,7 @@
       }
     ],
     "evidenceCount": 12,
-    "documentCount": 25
+    "documentCount": 26
   },
   {
     "number": 25,
@@ -921,16 +921,16 @@
     "number": 32,
     "caption": "Nforbi v. Meza-Gonzalez, et al",
     "case_no": "3:26-cv-08271-PHK",
-    "court": "USDC N.D. Cal. (docketed Aug. 10, 2026; related Serrato 4:26-cv-05953-ASK and Candelaria 3:26-cv-08272-LJC)",
+    "court": "USDC N.D. Cal. (related to Serrato 4:26-cv-05953-ASK per Aug. 24, 2026 order; also related Candelaria 3:26-cv-08272-LJC)",
     "claims": "42 U.S.C. § 1983 — Fourth/Fourteenth/First Amendment (unlawful entry, search, arrest, Franks/judicial deception, fabrication, First Amendment retaliation) — Dkt. 5 (FAC filed Aug. 17, 2026) is the court pleading of record; also CHP-cluster PDF home for Matters 1/2/20/24",
-    "status_label": "FAC filed Aug. 17 (Dkt. 5) — resp. due Sep. 4; CMC Dec. 2",
+    "status_label": "Related to Serrato — reassigned to Krishnan",
     "lifecycle": "active",
     "proceeding": "federal_civil",
     "phase": "responsive_deadline",
     "note": "N.D. Cal. § 1983 action docketed Aug. 10, 2026 as No. 3:26-cv-08271-PHK (ndcal/). Also document store for Matters 1, 2, 20, and 24 under matter-32/from-NN/. Nov. 1 / Candelaria APS evidence in Matter 33.",
     "badge": "FAC FILED",
     "filed": "August 10, 2026 (docketed; intake packet signed Aug. 7, 2026)",
-    "judge": "Hon. Peter H. Kang (Magistrate Judge)",
+    "judge": "Hon. Ajay S. Krishnan, U.S. Magistrate Judge (N.D. Cal.) — reassigned Aug. 24, 2026 from Mag. Kang (related to Serrato 4:26-cv-05953-ASK)",
     "cluster": 1,
     "type": "Federal",
     "defendants": "Santiago Meza-Gonzalez (CHP #023295), individually; Jose Melano (CHP #023054), individually; and DOES 1–10 — N.D. Cal. operative complaint (Aug. 7, 2026). State-court Matter 2 tracks the same officers under a False Imprisonment / Battery / Bane Act caption.",
@@ -939,8 +939,9 @@
         "name": "Santiago Meza-Gonzalez",
         "title": "Defendant (CHP #023295, individually)",
         "location": "CHP Modesto Area",
-        "served": true,
-        "dateServed": "August 14, 2026 (Stanislaus County Sheriff, per SER-001 request e-signed Aug. 13, 2026)"
+        "served": false,
+        "dateServed": null,
+        "note": "Aug. 13 Stanislaus SER-001 / purported Aug. 14 attempt did not produce a filed Rule 4(l) return. Melano FAC-mail POS (Aug. 21) states Rule 4 as to Meza incomplete. Private process-server re-service bundle prepared Aug. 25, 2026 (Modesto Area, 4030 Kiernan Ave.)."
       },
       {
         "name": "Jose Melano",
@@ -960,7 +961,7 @@
     ],
     "archived": false,
     "evidenceCount": 13,
-    "documentCount": 131
+    "documentCount": 134
   },
   {
     "number": 33,
