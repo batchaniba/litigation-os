@@ -37,6 +37,32 @@ const PUBLIC_ROOT = path.join(REPO_ROOT, "internal", "public");
 const DOCUMENTS_ROOT = path.join(PUBLIC_ROOT, "documents");
 const DEADLINE_TIME_ZONE = "America/Los_Angeles";
 
+const ROOT_ALLOWED_FILES = new Set([
+  ".gitignore",
+  "eslint.config.js",
+  "index.html",
+  "package.json",
+  "package-lock.json",
+  "pyproject.toml",
+  "README.md",
+  "requirements.txt",
+  "tsconfig.json",
+  "vercel.json",
+  "vite.config.js",
+]);
+
+function checkRepoRootIsClean() {
+  for (const entry of fs.readdirSync(REPO_ROOT, { withFileTypes: true })) {
+    if (!entry.isFile()) continue;
+    if (entry.name.startsWith(".")) continue;
+    if (ROOT_ALLOWED_FILES.has(entry.name)) continue;
+    fail(
+      `repository root has stray file "${entry.name}" — move it into ` +
+        `internal/public/documents/matter-NN/ (or internal/assets/)`,
+    );
+  }
+}
+
 const errors = [];
 const warnings = [];
 
@@ -46,6 +72,8 @@ function fail(msg) {
 function warn(msg) {
   warnings.push(msg);
 }
+
+checkRepoRootIsClean();
 
 function todayInTimeZone(timeZone) {
   const parts = new Intl.DateTimeFormat("en-CA", {
