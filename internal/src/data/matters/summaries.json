@@ -5,7 +5,7 @@
     "case_no": "2:25-cv-01460-DC-CSK",
     "court": "USDC E.D. Cal.",
     "claims": "42 USC 1983: 4A Search/Seizure, Due Process, Monell",
-    "status_label": "Dismissed w/o prejudice — Aug. 15; refiled as Matter 32",
+    "status_label": "Closed — E.D. Cal.; refiled as Matter 32",
     "lifecycle": "dismissed",
     "proceeding": "federal_civil",
     "phase": "terminal",
@@ -55,7 +55,7 @@
     "case_no": "2:26-cv-00004-DJC-JDP",
     "court": "USDC E.D. Cal.",
     "claims": "42 USC 1983: 1A Retaliation, 14A Equal Protection, Due Process",
-    "status_label": "Abandoned — OSC discharge pending",
+    "status_label": "Closed — E.D. Cal. 2:26-cv-00004",
     "lifecycle": "abandoned",
     "proceeding": "federal_civil",
     "phase": "terminal",
@@ -65,7 +65,7 @@
     "type": "Federal",
     "archived": true,
     "badge": "ABANDONED",
-    "note": "Palacios's MTD GRANTED Jul. 24; FAC dismissed w/ leave to amend by Aug. 7. Jul. 22 dismissal of Derrick/Noguchi was valid as a matter of right (no answer/MSJ served) — Jul. 24 order doesn't address it. Aug. 20, 2026 Notice of Voluntary Dismissal of Katie Palacios filed (Rule 41(a)(1)(A)(i)).",
+    "note": "Palacios's MTD GRANTED Jul. 24; FAC dismissed w/ leave to amend by Aug. 7. Jul. 22 dismissal of Derrick/Noguchi was valid as a matter of right (no answer/MSJ served). Aug. 20, 2026 Notice of Voluntary Dismissal of Katie Palacios filed (Rule 41(a)(1)(A)(i)). CASE CLOSED Aug. 26, 2026 — OSC discharged; E.D. Cal. docket terminated.",
     "defendants": "Andrew Derrick (#6910) — Notice of Voluntary Dismissal filed Jul. 22, 2026 (self-executing under Rule 41(a)(1)(A)(i)); Jul. 24, 2026 order nonetheless treats him as the sole remaining defendant if no amended complaint is filed — tension unresolved on the docket; Katie Palacios — MTD GRANTED Jul. 24, 2026 (failed all four state-actor tests); claims DISMISSED WITH LEAVE TO AMEND; then Notice of Voluntary Dismissal filed Aug. 20, 2026 under Rule 41(a)(1)(A)(i); Gary Noguchi (#7284) — Notice of Voluntary Dismissal filed Jul. 22, 2026 (self-executing); Jul. 24, 2026 order separately dismissed claims against him for failure to allege supervisory liability",
     "causes": [
       "First Amendment Retaliation",
@@ -495,10 +495,10 @@
     "case_no": "26CV191136",
     "court": "Alameda Sup. Ct.",
     "claims": "Writ of Mandate (CCP §1085; PC §679.10) — U Visa Certification; Declaratory Relief (CCP §1060)",
-    "status_label": "CHP demurrer reply in; hearing Aug. 28 — CMC Sep. 2",
+    "status_label": "Tentative: core writ claim survives; appear 10:30 Aug 28",
     "lifecycle": "active",
     "proceeding": "mandate",
-    "phase": "demurrer",
+    "phase": "hearing",
     "filed": "May 29, 2026",
     "judge": "Hon. Jenna M. Whitman, Dept. 25",
     "cluster": 1,
@@ -541,8 +541,9 @@
       "Count IV — Declaratory Relief (CCP §1060): Facial Deficiency of April 20, 2026 Denial and Construction of PC §679.10"
     ],
     "archived": false,
+    "badge": "TENTATIVE",
     "evidenceCount": 12,
-    "documentCount": 43
+    "documentCount": 45
   },
   {
     "number": 21,
@@ -668,7 +669,7 @@
       }
     ],
     "evidenceCount": 12,
-    "documentCount": 17
+    "documentCount": 25
   },
   {
     "number": 25,
@@ -706,12 +707,12 @@
     "claims": "PC §290.46(j)(2)(E) Violation, Failure to Hire (Tameny), ICRAA, Invasion of Privacy, Negligence Per Se, UCL §17200",
     "lifecycle": "active",
     "proceeding": "federal_civil",
-    "phase": "responsive_deadline",
+    "phase": "mtd_briefing",
     "filed": "July 15, 2026",
     "judge": "Hon. Dale A. Drozd, D.J.; Hon. Carolyn K. Delaney, M.J.",
     "cluster": 3,
     "type": "Federal",
-    "badge": "REMOVED",
+    "badge": "MTD",
     "defendants": "United Parcel Service, Inc.; and DOES 1 through 10, inclusive",
     "causes": [
       "Violation of Cal. Penal Code § 290.46(j)(2)(E)",
@@ -722,9 +723,9 @@
       "Unlawful Business Practices (Bus. & Prof. Code § 17200 et seq.)"
     ],
     "archived": false,
-    "status_label": "E.D. Cal. Sacramento 2:26-cv-02847 — UPS due Aug. 27",
+    "status_label": "MTD briefing — opp due Sep. 9; hearing Oct. 5",
     "evidenceCount": 7,
-    "documentCount": 31
+    "documentCount": 35
   },
   {
     "number": 27,
@@ -959,7 +960,7 @@
     ],
     "archived": false,
     "evidenceCount": 13,
-    "documentCount": 124
+    "documentCount": 131
   },
   {
     "number": 33,
@@ -1002,7 +1003,7 @@
     ],
     "archived": false,
     "evidenceCount": 17,
-    "documentCount": 48
+    "documentCount": 53
   },
   {
     "number": 34,
