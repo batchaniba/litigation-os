@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """Fill the E.D. Cal. Consent / Decline of U.S. Magistrate Judge form for Matter 25.
 
-Source page is Dkt. 3 page 4 — the court-captioned form the Clerk attached to
-the FedEx removal packet (2:26-cv-02881-DAD-SCR). The N.D. Cal. template in
-``_form-library/ndcal-mj-consent-declination-blank-template.pdf`` is the wrong
-district for this case.
+Source is the court's fillable web form (consentmagweb), stored at
+``_form-library/edcal-mj-consent-declination-blank-template.pdf``. Do not overlay
+Dkt. 3 page 4 — that copy is already filed, and it is not the fillable form.
 
 House practice in Matters 24 / 32 / 33 is CONSENT. This script checks the
-CONSENT box (not DECLINE), stamps the canonical signature, and appends the
-portfolio four-sided-border Proof of Service for mail on Allison A. Kray.
+CONSENT box (not DECLINE), marks Plaintiff/Petitioner, stamps the canonical
+signature, and appends the portfolio four-sided-border Proof of Service for
+mail on Allison A. Kray.
 
     python3 internal/scripts/matter25-edcal-mj-consent.py \\
         [--date "August 28, 2026"] [--mailed-from "San Jose, California"]
@@ -17,6 +17,7 @@ portfolio four-sided-border Proof of Service for mail on Allison A. Kray.
 from __future__ import annotations
 
 import argparse
+import re
 import sys
 from pathlib import Path
 
@@ -34,8 +35,8 @@ from signature_stamp import SIGNATURE_PATH, stamp_on_pdf_line  # noqa: E402
 ROOT = SCRIPT_DIR.parents[1]
 SRC = (
     ROOT
-    / "internal/public/documents/matter-25"
-    / "Dkt 03 - Magistrate Judge Consent Form Materials (Filed Aug 25 2026).pdf"
+    / "internal/public/documents/_form-library"
+    / "edcal-mj-consent-declination-blank-template.pdf"
 )
 OUT_DIR = ROOT / "internal/public/documents/matter-25"
 DEFAULT_OUT = OUT_DIR / (
@@ -50,28 +51,18 @@ DEFAULT_POS = OUT_DIR / (
 DEFAULT_DATE = "August 28, 2026"
 DEFAULT_MAILED_FROM = "San Jose, California"
 PRINT_NAME = "BRENDAN NGEHSI NEWANFORBI"
+CASE_NO = "2:26-cv-02881-DAD-SCR"
+DEFENDANT = "FEDERAL EXPRESS CORPORATION"
 
-# PyMuPDF top-origin coords on Dkt. 3 p. 4 (CONSENT box, not DECLINE).
-# CONSENT_BOX is the heading square (embedded 16×16 image, not a widget).
-# SIG_LINE y is below the Signature underline so the lower loops rest on
-# the rule. Skip white-out: the stamp rect covers that rule and would
-# erase it, leaving the loops floating in a white gap above Print Name.
-DATE_POS = (105.0, 481.0)
-NAME_POS = (300.0, 503.0)
-PLAINTIFF_CHECK = (297.5, 516.5)
-SIG_LINE = (288.8, 459.3, 494.0)
-CONSENT_BOX = (79.9, 380.4, 91.8, 392.3)
+# Consent Signature widget is (306.4, 419.1, 487.4, 441.1). Stamp starts
+# right of the "Signature:" label; y sits on the rule without covering
+# Print Name (field begins at y=444.3). Skip white-out so the rule remains.
+SIG_LINE = (320.0, 487.4, 444.0)
 
 
-def check_consent_box(page) -> None:
-    """Draw an X inside the CONSENT heading square. Leave DECLINE empty."""
-    import fitz
-
-    x0, y0, x1, y1 = CONSENT_BOX
-    inset = 1.6
-    r = fitz.Rect(x0 + inset, y0 + inset, x1 - inset, y1 - inset)
-    page.draw_line(r.tl, r.br, color=(0, 0, 0), width=1.25)
-    page.draw_line(r.tr, r.bl, color=(0, 0, 0), width=1.25)
+def _parent_xref(doc, kid_xref: int) -> int | None:
+    m = re.search(r"/Parent (\d+) 0 R", doc.xref_object(kid_xref))
+    return int(m.group(1)) if m else None
 
 
 def fill_consent_page(out: Path, exec_date: str) -> Path:
@@ -79,32 +70,71 @@ def fill_consent_page(out: Path, exec_date: str) -> Path:
 
     if not Path(SIGNATURE_PATH).is_file():
         raise SystemExit(f"Missing universal signature: {SIGNATURE_PATH}")
-    if not SRC.is_file():
+    if not SRC.is_file() or SRC.stat().st_size < 10_000:
         raise SystemExit(f"Missing court form: {SRC}")
 
-    src = fitz.open(SRC)
-    dst = fitz.open()
-    dst.insert_pdf(src, from_page=3, to_page=3)
-    src.close()
-    page = dst[0]
+    doc = fitz.open(SRC)
+    page = doc[0]
+    g6_parent = g7_parent = None
 
-    page.insert_text(
-        DATE_POS, exec_date, fontname="times-roman", fontsize=10, color=(0, 0, 0)
-    )
-    page.insert_text(
-        NAME_POS, PRINT_NAME, fontname="times-roman", fontsize=9, color=(0, 0, 0)
-    )
-    page.insert_text(
-        PLAINTIFF_CHECK, "X", fontname="times-bold", fontsize=11, color=(0, 0, 0)
-    )
-    check_consent_box(page)
-    stamp_on_pdf_line(
-        page, SIG_LINE[0], SIG_LINE[1], SIG_LINE[2], whiteout=False
-    )
+    for w in page.widgets():
+        name = w.field_name
+        if name == "PlaintiffsPetitioners":
+            w.text_fontname = "tiro"
+            w.text_fontsize = 9
+            w.field_value = PRINT_NAME
+        elif name == "CASE NO":
+            w.text_fontname = "tiro"
+            w.text_fontsize = 9
+            w.field_value = CASE_NO
+        elif name == "DefendantsRespondents":
+            w.text_fontname = "tiro"
+            w.text_fontsize = 9
+            w.field_value = DEFENDANT
+        elif name == "Consent Check":
+            w.field_value = w.on_state()
+        elif name == "Decline Check":
+            w.field_value = "Off"
+        elif name == "Date":
+            w.text_fontname = "tiro"
+            w.text_fontsize = 10
+            w.field_value = exec_date
+        elif name == "Print Name":
+            w.text_fontname = "tiro"
+            w.text_fontsize = 9
+            w.field_value = PRINT_NAME
+        elif name == "Group6":
+            # Blank template defaults this group to Defendant. Force Plaintiff.
+            w.field_value = w.on_state() if w.on_state() == "Pltf" else "Off"
+            g6_parent = _parent_xref(doc, w.xref)
+        elif name == "Group7":
+            # Blank template defaults this group to Plaintiff. Leave empty.
+            w.field_value = "Off"
+            g7_parent = _parent_xref(doc, w.xref)
+        elif w.field_type_string == "Text":
+            w.field_value = ""
+        w.update()
+
+    # Widget.update() does not always clear leftover /AS on the sibling
+    # radios. Patch appearance states and parent /V before bake.
+    for w in page.widgets():
+        if w.field_name == "Group6":
+            doc.xref_set_key(
+                w.xref, "AS", "/Pltf" if w.on_state() == "Pltf" else "/Off"
+            )
+        elif w.field_name == "Group7":
+            doc.xref_set_key(w.xref, "AS", "/Off")
+    if g6_parent:
+        doc.xref_set_key(g6_parent, "V", "/Pltf")
+    if g7_parent:
+        doc.xref_set_key(g7_parent, "V", "/Off")
+
+    doc.bake(annots=True, widgets=True)
+    stamp_on_pdf_line(page, SIG_LINE[0], SIG_LINE[1], SIG_LINE[2], whiteout=False)
 
     out.parent.mkdir(parents=True, exist_ok=True)
-    dst.save(out, garbage=4, deflate=True)
-    dst.close()
+    doc.save(out, garbage=4, deflate=True)
+    doc.close()
     return out
 
 

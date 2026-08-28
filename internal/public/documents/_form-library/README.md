@@ -45,6 +45,7 @@ build_proof_of_service(
 |---|---|
 | `ao440-blank-template.pdf` | AO 440 summons |
 | `js44-civil-cover-sheet-blank-template.pdf` | JS 44 / JS-CAND 44 |
+| `edcal-mj-consent-declination-blank-template.pdf` | E.D. Cal. MJ consent (consentmagweb) |
 | `ndcal-mj-consent-declination-blank-template.pdf` | N.D. Cal. MJ consent |
 | `ser001-blank-template.pdf` | SER-001 sheriff service request |
 | `sum100-blank-template.pdf` | SUM-100 state summons |
