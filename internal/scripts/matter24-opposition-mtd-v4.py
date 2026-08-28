@@ -14,6 +14,7 @@ Retaliation-first revision:
 
 from __future__ import annotations
 
+import sys
 from pathlib import Path
 
 from docx import Document
@@ -22,6 +23,9 @@ from docx.oxml.ns import qn
 from docx.shared import Inches, Pt
 
 SCRIPT_DIR = Path(__file__).resolve().parent
+sys.path.insert(0, str(SCRIPT_DIR))
+from signature_stamp import SIGNATURE_PATH  # noqa: E402
+SIG_IMG = Path(SIGNATURE_PATH)
 REPO_ROOT = SCRIPT_DIR.parent.parent
 OUT_DOCX = REPO_ROOT / "Opposition to MTD v4.docx"
 OUT_MATTER24 = (
@@ -32,7 +36,6 @@ OUT_MATTER24 = (
     / "matter-24"
     / "Opposition to Serrato MTD FAC and Strike v4 (Sep 2 2026).docx"
 )
-SIG_IMG = SCRIPT_DIR / "assets" / "newanforbi-pen-signature.png"
 
 FONT = "Times New Roman"
 SIZE = Pt(12)

@@ -1,15 +1,32 @@
 # Portfolio universal signature: brendan-newanforbi-signature.png
-# (1450×360, transparent background). Use this for all generated filings
-# that need a signature affixed rather than a typed name. Do not use the
-# older cropped pen asset under internal/scripts/assets/.
+# Photographed loops mark, cropped/upscaled/thickened by
+# process-signature-photo.py (black on transparent). Use this for all
+# generated filings that need a signature affixed rather than a typed
+# name. Do not use the older cropped pen asset under
+# internal/scripts/assets/. The prior 1450×360 loops stamp is archived
+# next to this file as *-v1-abstract-loops.png.
+import struct
 from pathlib import Path
 
 _REPO_ROOT = Path(__file__).resolve().parents[2]
 SIGNATURE_PATH = str(
     _REPO_ROOT / "internal/assets/signature/brendan-newanforbi-signature.png"
 )
-SIGNATURE_ASPECT = 360.0 / 1450.0  # height / width
-SIGNATURE_NATIVE_PX = (1450, 360)
+
+
+def _png_size(path: str) -> tuple[int, int]:
+    with open(path, "rb") as fh:
+        if fh.read(8) != b"\x89PNG\r\n\x1a\n":
+            raise SystemExit(f"Not a PNG: {path}")
+        length, typ = struct.unpack(">I4s", fh.read(8))
+        if typ != b"IHDR" or length < 8:
+            raise SystemExit(f"PNG missing IHDR: {path}")
+        width, height = struct.unpack(">II", fh.read(8))
+    return width, height
+
+
+SIGNATURE_NATIVE_PX = _png_size(SIGNATURE_PATH)
+SIGNATURE_ASPECT = SIGNATURE_NATIVE_PX[1] / SIGNATURE_NATIVE_PX[0]
 
 # Judicial Council SER-001 page 4, right-hand "Sign your name" line
 # (PyMuPDF top-origin coords). Shared by every fill-*-ser001.py.

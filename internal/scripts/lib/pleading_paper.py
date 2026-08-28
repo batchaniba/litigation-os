@@ -262,8 +262,8 @@ class PleadingPaper:
         self.current_line = start_line + lines_consumed
 
     def draw_signature_image(self, image_path, img_w_px, img_h_px, line_text,
-                              width=155, right_margin_offset=20):
-        """Draw a pen-signature image centered over an underscore signature
+                              width=175, right_margin_offset=20):
+        """Draw the canonical signature centered over an underscore signature
         line at the current line position, then advance past it. Call this
         immediately before writing the underscore line itself with
         write_line(line_text, right=True, right_margin_offset=...)."""
