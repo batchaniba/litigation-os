@@ -1,5 +1,5 @@
 ---
-description: If the user asks for a script, talking points, or what to say in court or on Zoom, give a two-typeface read-aloud. Bold is don't-say. Regular type is what he speaks.
+description: If the user asks for a script, talking points, or what to say in court or on Zoom, give a verbose two-typeface read-aloud. Bold (don't say) is direction. Regular type is speech.
 alwaysApply: true
 ---
 
@@ -9,10 +9,9 @@ When the user asks for a **script**, talking points, what to say, or notes for a
 hearing / CMC / Zoom appearance:
 
 - Follow `.claude/skills/hearing-script/SKILL.md`.
-- Render it **in the chat**.
-- **Bold** lines always start with `(don't say)` — stage directions, never spoken.
-- Regular type is the only read-aloud. Short complete sentences. His voice. Sounds smart, not like a brief.
-- Never use "If they say…", "Q. / A.", "Point A", or "Read this" — those get spoken by accident.
-- Skip-blocks behind bold gates, not a six-page PDF.
+- Render it **in the chat**, verbose: opening, each live count, individuals, close, answers.
+- **Bold** lines always start with `(don't say)` — captions, skip-gates, the other side's question. Never spoken.
+- Regular type is the read-aloud. Full sentences. His voice. "Your Honor" belongs here.
+- Do not shrink to a cue card. Do not put "If they say," "Read this," "Point A," or "Q. / A." in regular type.
 
-Locked after the August 28, 2026 CHP demurrer (Matter 20). The Court could tell when heading and speech were the same type.
+The August 28, 2026 CHP demurrer failed because heading and speech were the same type. The fix is typeface, not brevity.
