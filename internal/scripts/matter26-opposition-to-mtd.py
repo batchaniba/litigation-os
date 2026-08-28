@@ -25,9 +25,9 @@ Order I.E does not require a proposed order with this civil motion; generate
 one only as a portfolio draft and do not file it unless the Court asks.
 
 Service is first-class mail (Fed. R. Civ. P. 5(b)(2)(C); E.D. Cal. L.R. 135).
-The Proof of Service is a standalone portfolio four-sided-border form
-(``lib/proof_of_service.py``). Do not append a pleading-paper certificate to
-the opposition. Do not serve or file the proposed order.
+The Proof of Service is the portfolio four-sided-border form
+(``lib/proof_of_service.py``), appended as the last page of the opposition PDF.
+Do not serve or file the proposed order.
 
     python3 internal/scripts/matter26-opposition-to-mtd.py \\
         [--date "August 28, 2026"] [--mailed-from "San Jose, California"] [OUT_PDF]
@@ -38,6 +38,8 @@ from __future__ import annotations
 import argparse
 import sys
 from pathlib import Path
+
+from pypdf import PdfReader, PdfWriter
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPT_DIR / "lib"))
@@ -775,6 +777,17 @@ def _header_block(d: PleadingPaper, right_caption: list) -> None:
     d.blank_line()
 
 
+def append_pdfs(front: Path, back: Path) -> Path:
+    """Write front+back into front (in place). Used to attach the POS."""
+    writer = PdfWriter()
+    for src in (front, back):
+        for page in PdfReader(str(src)).pages:
+            writer.add_page(page)
+    with front.open("wb") as fh:
+        writer.write(fh)
+    return front
+
+
 def build_opposition(out: Path, exec_date: str, mailed_from: str) -> Path:
     if not Path(SIGNATURE_PATH).is_file():
         raise SystemExit(f"Missing universal signature: {SIGNATURE_PATH}")
@@ -829,12 +842,15 @@ def main() -> None:
     ap.add_argument("--skip-pos", action="store_true")
     args = ap.parse_args()
     path = build_opposition(Path(args.out).resolve(), args.date, args.mailed_from)
-    print(f"Generated opposition: {path}")
     if not args.skip_pos:
         pos = build_opposition_proof_of_service(
             Path(args.pos_out).resolve(), args.date, args.mailed_from
         )
+        append_pdfs(path, pos)
+        print(f"Generated opposition (POS attached): {path}")
         print(f"Generated proof of service: {pos}")
+    else:
+        print(f"Generated opposition: {path}")
     if not args.skip_order:
         order = build_proposed_order(Path(args.order_out).resolve(), args.date,
                                      args.mailed_from)
