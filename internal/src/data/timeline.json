@@ -1,12 +1,13 @@
 [
   {
     "date": "Aug. 28, 2026",
-    "event": "Demurrer Hearing \u2014 Newanforbi v. California Highway Patrol et al. (26CV191136), APPEAR 10:30 a.m. (moved from 9:00 due to late tentative), Dept. 25, Hon. Jenna M. Whitman; tentative OVERRULES demurrer on COAs 1 & 4 and SUSTAINS WOLA on COAs 2 & 3. Zoom 161 8066 1142 / passcode 5805.",
+    "event": "HELD \u2014 Demurrer hearing, 10:30 a.m., Dept. 25, Hon. Jenna M. Whitman \u2014 Newanforbi v. CHP et al. (26CV191136). Petitioner appeared. The Aug. 27 tentative had overruled COAs 1 & 4 and sustained WOLA on COAs 2 & 3; whether that tentative was adopted is not yet recorded. Do not treat the tentative as the final order until the minute order is in hand.",
     "matters": [
       20
     ],
     "type": "hearing",
-    "upcoming": true
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Aug. 27, 2026",
@@ -3608,12 +3609,12 @@
   },
   {
     "date": "Aug. 28, 2026",
-    "event": "Demurrer Hearing \u2014 Newanforbi v. California Highway Patrol et al. (26CV191136), 9:00 a.m., Dept. 25, Rene C. Davidson Courthouse, Oakland; Hon. Jenna M. Whitman; AG's Demurrer to Petition for Writ of Mandate, reserved for this date; the Individual Respondents' Demurrers and Joinders (currently reserved for Oct. 16/23, 2026) will be heard the same day if the pending Joint Stipulation is entered; Trial Date: Not set",
+    "event": "SUPERSEDED \u2014 original 9:00 a.m. reservation for the CHP demurrer in Newanforbi v. CHP et al. (26CV191136). The Court moved appearance to 10:30 a.m. because of the late tentative; that 10:30 hearing was held August 28, 2026.",
     "matters": [
       20
     ],
     "type": "hearing",
-    "upcoming": true
+    "upcoming": false
   },
   {
     "date": "Aug. 26, 2026",

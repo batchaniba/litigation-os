@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Matter 20 — speaker script for the August 28, 2026 CHP demurrer hearing.
+"""HISTORICAL — Matter 20 CHP demurrer, August 28, 2026.
 
-Not a filing. Large-type oral-argument crib for Dept. 25 (Whitman).
-Regenerate:
-    python3 internal/scripts/matter20-hearing-script-aug28.py
+This file produced a lectern-unsafe briefing memo. Petitioner used it at
+the hearing; the Court could tell. Do not regenerate as a speaking script.
+See .claude/skills/hearing-script/SKILL.md.
 """
 
 from __future__ import annotations
@@ -91,7 +91,7 @@ def build_pdf():
 
     story = []
     story.append(P("ORAL ARGUMENT SCRIPT", title))
-    story.append(P("Do not file. Speaker crib only.", sub))
+    story.append(P("HISTORICAL — used August 28, 2026. Lectern-unsafe. Do not reuse this format.", sub))
     story.append(P("<b>Newanforbi v. California Highway Patrol, et al.</b>", sub))
     story.append(P("Alameda Super. Ct. No. 26CV191136 — August 28, 2026", sub))
 
@@ -442,6 +442,10 @@ def build_pdf():
 
 
 TXT = r"""ORAL ARGUMENT SCRIPT — DO NOT FILE
+HISTORICAL. Used at the August 28, 2026 hearing. Lectern-unsafe: "If they say"
+headings and full "Your Honor" paragraphs. Do not take this format to court
+again. Night-before memo only. See .claude/skills/hearing-script/SKILL.md.
+
 Newanforbi v. California Highway Patrol, et al.
 Alameda Super. Ct. No. 26CV191136
 Hon. Jenna M. Whitman, Dept. 25 — August 28, 2026, 10:30 a.m. (not 9:00)

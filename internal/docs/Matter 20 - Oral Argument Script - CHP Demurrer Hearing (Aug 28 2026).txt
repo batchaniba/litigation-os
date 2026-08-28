@@ -1,4 +1,8 @@
 ORAL ARGUMENT SCRIPT — DO NOT FILE
+HISTORICAL. Used at the August 28, 2026 hearing. Lectern-unsafe: "If they say"
+headings and full "Your Honor" paragraphs. Do not take this format to court
+again. Night-before memo only. See .claude/skills/hearing-script/SKILL.md.
+
 Newanforbi v. California Highway Patrol, et al.
 Alameda Super. Ct. No. 26CV191136
 Hon. Jenna M. Whitman, Dept. 25 — August 28, 2026, 10:30 a.m. (not 9:00)
@@ -284,4 +288,6 @@ Wait for the minute order.
 Authorities in this crib: Blank v. Kirwan (1985) 39 Cal.3d 311; Redfearn v.
 Trader Joe's Co. (2018) 20 Cal.App.5th 989; People v. Thompson (2006) 38 Cal.4th
 811; People v. Wolterman (1992) 11 Cal.App.4th Supp. 15; Espinoza v. Shiomoto
-(2017) 10 Cal.App.5th 85; Penal Code sections 679.10 and 851.6.
+(2017) 10 Cal.App.5th 85; Penal Code sections 679.10 and 851.6; Griset v. Fair
+Political Practices Commission (2001) 25 Cal.4th 688 (only if the Attorney
+General cites it).
