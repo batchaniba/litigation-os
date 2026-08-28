@@ -11,6 +11,11 @@ This writes the recognised words back into the page as invisible text
 content is untouched: the scan still renders exactly as it did, and a reader
 sees no difference. Only extraction and search change.
 
+A page that yields no lines at 0° (a sideways phone photo, a PACER stamp
+scanned on its side) is retried at 90/180/270. The winning rotation is
+written back as PDF /Rotate so the scan displays the same way it was read;
+the pixels are not resampled.
+
 The pdf-audit tier scripts also OCR, but into .cache/pdf-audit/ for their own
 cross-checking, and only the first few pages. That cache is not wired to the
 indexes. This is the complementary half: it makes the PDF itself searchable.
@@ -144,10 +149,16 @@ def is_text(group):
     return any(len(w["text"]) >= 3 and any(c.isalpha() for c in w["text"]) for w in group)
 
 
-def ocr_lines(pdf_page, scale):
-    """Return (text, x, baseline, size, width) per text line, in PDF points."""
-    bitmap = pdf_page.render(scale=scale)
-    data = pytesseract.image_to_data(bitmap.to_pil(), output_type=Output.DICT)
+# PIL Image.rotate is counter-clockwise; PDF /Rotate is clockwise display.
+# A scan that only becomes readable after PIL 270 therefore needs /Rotate 90
+# so the page displays the same way it was OCR'd, and the invisible text
+# lands on the glyphs in that display space.
+_PIL_TO_PDF_ROTATE = {0: 0, 90: 270, 180: 180, 270: 90}
+
+
+def lines_from_image(image, scale):
+    """OCR one PIL image. Coordinates are PDF points in that image's space."""
+    data = pytesseract.image_to_data(image, output_type=Output.DICT)
 
     grouped = {}
     for i, raw in enumerate(data["text"]):
@@ -209,6 +220,46 @@ def ocr_lines(pdf_page, scale):
     return sorted(lines, key=lambda line: (round(line[2] / BASELINE_BUCKET), line[1]))
 
 
+def ocr_lines(pdf_page, scale):
+    """Return ((text, x, baseline, size, width), pil_rotate) for one page.
+
+    Upright scans take one Tesseract pass. A page that yields no lines — a
+    phone photo of a screen, a sideways PACER stamp — is retried at 90/180/270
+    and the rotation with the most readable lines wins. Coordinates are in
+    the winning image's space; the caller sets PDF /Rotate to match so the
+    invisible text sits on the glyphs as displayed.
+    """
+    image = pdf_page.render(scale=scale).to_pil()
+    lines = lines_from_image(image, scale)
+    if lines:
+        return lines, 0
+
+    def rotation_score(candidate):
+        # Alphabetic volume is the main signal; a real caption at the top of
+        # the first line breaks ties between a page and its 180° inverse,
+        # which otherwise produce almost the same character count.
+        alpha = sum(sum(c.isalpha() for c in line[0]) for line in candidate)
+        if not candidate:
+            return alpha
+        head = candidate[0][0]
+        i = 0
+        while i < len(head) and not head[i].isalpha():
+            i += 1
+        run = 0
+        while i + run < len(head) and (head[i + run].isalpha() or head[i + run] == " "):
+            run += 1
+        return alpha * 100 + run
+
+    best_lines, best_rotate, best_score = [], 0, -1
+    for pil_rotate in (90, 180, 270):
+        rotated = image.rotate(pil_rotate, expand=True)
+        candidate = lines_from_image(rotated, scale)
+        score = rotation_score(candidate)
+        if score > best_score:
+            best_lines, best_rotate, best_score = candidate, pil_rotate, score
+    return best_lines, best_rotate
+
+
 def ocr_pdf(path, dry_run=False, force=False):
     """OCR one PDF in place. Returns (chars_before, chars_after, pages_ocred)."""
     doc = pymupdf.open(path)
@@ -223,9 +274,12 @@ def ocr_pdf(path, dry_run=False, force=False):
 
     font = pymupdf.Font(FONTNAME)
     for number, page in enumerate(doc):
-        lines = ocr_lines(pdfium_doc[number], scale)
+        lines, pil_rotate = ocr_lines(pdfium_doc[number], scale)
         if not lines:
             continue
+        pdf_rotate = _PIL_TO_PDF_ROTATE[pil_rotate]
+        if pdf_rotate:
+            page.set_rotation(pdf_rotate)
         # One TextWriter per page, not one insertion per line: each direct
         # insertion appends its own content stream, and a page of them costs
         # more in PDF object overhead than the scan it annotates.

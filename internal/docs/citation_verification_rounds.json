@@ -2783,5 +2783,11 @@
       "internal/docs/citation_lookup_barocio_order.json"
     ],
     "note": "16 plaintiff_filing + court_order PDFs OCR'd; no_text_layer count 73\u219257; known-bad gate stayed green."
+  },
+  "ocrTrancheRemaining": {
+    "date": "2026-08-28",
+    "documentsOcr": 62,
+    "pagesOcr": 597,
+    "note": "Everything still no_text_layer after the Aug 16 plaintiff_filing/court_order tranche: Krishnan relate order (sideways phone photo of the screen; ocr-text-layer.py now retries 90/180/270 when 0\u00b0 yields no lines and writes PDF /Rotate to match), the Matter 3 Derrick complaint scan, Palacios voluntary dismissal, CHP arrest report, Serrato opposition page-1 file-stamp, service_admin forms, and 483 pages of HOPE discovery. Corpus no_text_layer 58\u21920. Two files remain unreadable (Matter 10 ORDER_DENYING_PETITION_C2602632.pdf is a text file named .pdf; Matter 30 CASOMB upload is empty). Known-bad gate stayed green."
   }
 }

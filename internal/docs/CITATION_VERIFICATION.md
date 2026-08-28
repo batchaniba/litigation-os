@@ -1,6 +1,6 @@
 # Citation Verification Ledger
 
-Generated 2026-08-27 by `verify-citations.py`. Joins the PR #490 citation index to the July / Matter-28 citation audit, then overlays Round 4+ verification results (WebSearch + CourtListener/CAP multisource confirmation).
+Generated 2026-08-28 by `verify-citations.py`. Joins the PR #490 citation index to the July / Matter-28 citation audit, then overlays Round 4+ verification results (WebSearch + CourtListener/CAP multisource confirmation).
 
 ## Why this exists
 
@@ -10,13 +10,13 @@ The campaign is entering a phase where claims are cognizable and motions to dism
 
 | Status | Count |
 |---|---|
-| UNVERIFIED | 497 |
-| VERIFIED | 385 |
+| UNVERIFIED | 536 |
+| VERIFIED | 389 |
 | MISCITED | 27 |
 | MISCHARACTERIZED | 6 |
 | NOT_FOUND | 6 |
 
-**Plaintiff-only + still UNVERIFIED (P0 queue): 58**  
+**Plaintiff-only + still UNVERIFIED (P0 queue): 69**  
 **Plaintiff-only + bad status (P1): 28**
 
 ## Method controls
@@ -138,27 +138,38 @@ Asserted only in Plaintiff's filings; no court order or opposing brief in the co
 
 | Uses | Authority | Matters | Sample page |
 |---|---|---|---|
-| 7 | Gonzalez v. Trevino, 602 U.S. 653 (2024) | 32 | p.19 |
-| 7 | Sialoi v. City of San Diego, 823 F. 3d 1223 | 32 | p.15 |
-| 7 | United States v. Lopez, 482 F. 3d 1067 | 32 | p.15 |
-| 7 | United States v. Ngumezi, 980 F. 3d 1285 | 32 | p.16 |
-| 6 | Galbraith v. County of, 307 F. 3d 1119 | 32 | p.23 |
+| 8 | Gonzalez v. Trevino, 602 U.S. 653 (2024) | 32 | p.19 |
+| 8 | Sialoi v. City of San Diego, 823 F. 3d 1223 | 32 | p.15 |
+| 8 | United States v. Lopez, 482 F. 3d 1067 | 32 | p.15 |
+| 8 | United States v. Ngumezi, 980 F. 3d 1285 | 32 | p.16 |
+| 7 | Galbraith v. County of, 307 F. 3d 1119 | 32 | p.23 |
+| 7 | S v. JSS Scandinavia, 142 F. 3d 1150 | 25, 26 | p.7 |
+| 6 | See Fermino v. Fedco, Inc, 7 Cal. 4th 701 (1994) | 35 | p.16 |
 | 5 | Behan v. Alexis, 116 Cal.App. 3d 403 (1981) | 33 | p.15 |
-| 5 | S v. JSS Scandinavia, 142 F. 3d 1150 | 25, 26 | p.7 |
-| 4 | Benavidez v. County of San Diego, 993 F. 3d 9 | 32 | p.13 |
-| 4 | Devenpeck v. Alford, 543 U.S. 11 (2004) | 32 | p.15 |
+| 5 | Benavidez v. County of San Diego, 993 F. 3d 9 | 32 | p.13 |
+| 5 | Devenpeck v. Alford, 543 U.S. 11 (2004) | 32 | p.15 |
+| 4 | Cedars-Sinai Medical Center v. Superior Court, 18 Cal. 4th 1 (1998) | 22, 25, 26 | p.5 |
+| 4 | Kanter v. Warner-Lambert Co, 265 F. 3d 853 | 25, 26 | p.6 |
+| 4 | Kenneth Rothschild Trust v. Morgan Stanley Dean Witter, 199 F.Supp. 2d | 25, 26 | p.7 |
+| 4 | See Lew v. Moss, 797 F. 2d 747 | 25, 26 | p.6 |
 | 3 | Califomia DUI Lawyers Ass'n v. DMV, 77 Cal.App. 5th 517 (2022) | 33 | p.4 |
-| 3 | Kanter v. Warner-Lambert Co, 265 F. 3d 853 | 25, 26 | p.6 |
-| 3 | Kenneth Rothschild Trust v. Morgan Stanley Dean Witter, 199 F.Supp. 2d | 25, 26 | p.7 |
-| 3 | See Lew v. Moss, 797 F. 2d 747 | 25, 26 | p.6 |
+| 3 | Chavez v. JP Morgan Chase, 888 F. 3d 413 | 26 | p.5 |
+| 3 | Dart Cherokee Basin Operating Co., LLC v. Owens, 574 U.S. 81 | 26 | p.3 |
+| 3 | Fritsch v. Swift Transportation Company, 899 F. 3d 785 | 26 | p.7 |
+| 3 | Gonzales v. CarMax Auto Superstores, LLC, 840 F. 3d 644 | 26 | p.6 |
+| 3 | In Hertz Corp. v. Friend, 130 S. Ct. 1181 (2010) | 26 | p.4 |
+| 3 | Lacey v. Maricopa County, 693 F. 3d 896 | 32, 33 | p.26 |
+| 3 | Mendoza v. ADP Screening, 182 Cal.App. 4th 1644 (2010) | 25, 26 | p.2 |
+| 3 | Owens v. Huntling, 115 F. 2d 160 | 26 | p.3 |
+| 3 | Ruelaz v. Leprino Foods Co, 2025 WL 25549 | 26 | p.4 |
+| 3 | See Soliman v. Philip Morris Inc, 311 F. 3d 966 | 26 | p.4 |
+| 3 | Urbino v. Orkins Servs. Of Cal., Inc, 726 F. 3d 1118 | 26 | p.5 |
 | 2 | Burns v. Windsor Ins. Co, 31 F. 3d 1092 | 25 | p.7 |
 | 2 | Califomia v. Carney, 471 U.S. 386 (1985) | 32 | p.19 |
 | 2 | California DUILawyers Ass'n v. DMV, 11 Cal.App. 5th 517 (2022) | 33 | p.23 |
 | 2 | California DUl Lawyers Ass'n v. DMV, 11 Cal.App. 5th 517 (2022) | 33 | p.33 |
 | 2 | Devenpeck v. Alford, 3 U.S. 146 (2004) | 32 | p.22 |
-| 2 | Lacey v. Maricopa County, 693 F. 3d 896 | 32, 33 | p.2 |
 | 2 | See Camara v. Municipal, 387 U.S. 523 (1967) | 32 | p.26 |
-| 2 | See Fermino v. Fedco, Inc, 7 Cal. 4th 701 (1994) | 35 | p.16 |
 | 1 | Angus v. Shiley, Inc, 989 F. 2d 142 | 25 | p.7 |
 | 1 | Annondo v. Dep't of Motor Vehicles, 15 Cal.App. 4th 1174 (1993) | 33 | p.15 |
 | 1 | Arias v. Residence Inn, 936 F. 3d 920 | 25 | p.7 |
@@ -197,7 +208,7 @@ Asserted only in Plaintiff's filings; no court order or opposing brief in the co
 | 1 | Weyhe v. Wal-Mart Stores, Inc, 2010 WL 3411462 | 25 | p.10 |
 | 1 | White v. FCI USA, Inc, 319 F. 3d 672 | 25 | p.10 |
 
-_58 total in JSON `priorityQueue`._
+_69 total in JSON `priorityQueue`._
 
 ## Round overlay
 
