@@ -297,7 +297,7 @@
     "judge": "Hon. Robert T. Waters",
     "cluster": 5,
     "type": "State",
-    "defendants": "Diamond Truck Sales, Inc. (California corporation operating at multiple locations including Texas and South Carolina); Alpine Truck Sales, Inc. (California corporation; 1201 S Soderquist Road, Turlock, CA 95380); DOES 1-20",
+    "defendants": "Diamond Truck Sales, Inc. (California corporation, SOS Entity No. 3438768; principal address and agent Saliman Osmani at 1201 S. Soderquist Road, Turlock, CA 95380); Alpine Truck Sales, Inc. (California corporation, SOS Entity No. B20250280641, formed Sept. 2, 2025; principal address and agent Sheran Osmani at 7156 Golden State Highway, Bakersfield, CA 93308); DOES 1-20",
     "causes": [
       "Fraudulent Concealment (Count 1)",
       "Intentional Misrepresentation (Count 2)",
@@ -308,8 +308,24 @@
       "Declaratory Relief (Count 7)"
     ],
     "archived": false,
-    "evidenceCount": 12,
-    "documentCount": 65
+    "serviceTracking": [
+      {
+        "name": "Diamond Truck Sales, Inc.",
+        "title": "Defendant (agent for service: Saliman Osmani)",
+        "location": "Stanislaus County — 1201 S. Soderquist Road, Turlock, CA 95380",
+        "served": false,
+        "note": "SOS Entity 3438768, active, formed Feb. 2, 2012. Prior POS disputed at the Aug. 12, 2026 CMC. Re-serve the Amended Summons and FAC on Saliman Osmani as agent for service of process (CCP §416.10)."
+      },
+      {
+        "name": "Alpine Truck Sales, Inc.",
+        "title": "Defendant (agent for service: Sheran Osmani)",
+        "location": "Kern County — 7156 Golden State Highway, Bakersfield, CA 93308",
+        "served": false,
+        "note": "SOS Entity B20250280641, active, formed Sept. 2, 2025. July 1, 2026 Turlock service was not the SOS agent address. Re-serve the Amended Summons and FAC on Sheran Osmani as agent for service of process in Kern County, naming Alpine as sued (successor/alter ego caption)."
+      }
+    ],
+    "evidenceCount": 14,
+    "documentCount": 69
   },
   {
     "number": 13,
