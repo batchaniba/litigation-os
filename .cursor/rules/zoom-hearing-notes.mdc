@@ -1,5 +1,5 @@
 ---
-description: If the user asks for a script, talking points, or what to say in court or on Zoom, give a verbose two-typeface read-aloud. Bold (don't say) is direction. Regular type is speech.
+description: If the user asks for a script, talking points, or what to say in court or on Zoom, use the Matter 20 first-script format. Bold If-the-Court / If-the-AG gates on their own line. Regular type is speech.
 alwaysApply: true
 ---
 
@@ -9,9 +9,9 @@ When the user asks for a **script**, talking points, what to say, or notes for a
 hearing / CMC / Zoom appearance:
 
 - Follow `.claude/skills/hearing-script/SKILL.md`.
-- Render it **in the chat**, verbose: opening, each live count, individuals, close, answers.
-- **Bold** lines always start with `(don't say)` — captions, skip-gates, the other side's question. Never spoken.
-- Regular type is the read-aloud. Full sentences. His voice. "Your Honor" belongs here.
-- Do not shrink to a cue card. Do not put "If they say," "Read this," "Point A," or "Q. / A." in regular type.
+- Render it **in the chat**, verbose, with horizontal rules between sections.
+- **Bold on its own line** = Opening / Close / If the Attorney General… / If they say… / If the Court asks… He does not speak that line.
+- Regular type under it = the read-aloud. Full sentences. "Your Honor" belongs here.
+- Never bury "If the Court" or "If the AG" in the same paragraph as speech.
 
-The August 28, 2026 CHP demurrer failed because heading and speech were the same type. The fix is typeface, not brevity.
+The August 28, 2026 CHP demurrer failed when the gate and the speech shared a paragraph. The fix is a bold standalone gate, not a shorter argument.

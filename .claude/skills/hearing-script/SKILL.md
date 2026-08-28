@@ -4,50 +4,50 @@ description: >
   What the user will say at a hearing, CMC, OSC, oral argument, or Zoom appearance.
   Use whenever they ask for a script, talking points, what to say, notes for court,
   a lectern card, "if they say," or anything they will have open on camera.
-  Verbose read-aloud: opening, argument, close — with (don't say) in bold and
-  spoken lines in regular type. Locked after the August 28, 2026 CHP demurrer.
+  Format locked to the first Matter 20 demurrer script: verbose read-aloud,
+  horizontal rules between sections, If-the-Court / If-the-AG gates on their
+  own bold line, spoken words in regular type.
 ---
 
 # Zoom / court speaking notes
 
 The user appears in propria persona, often on Zoom.
 
-A "script" is the **same verbose oral-argument he asked for the first time**
-(opening, each live count, individuals, close, answers to likely questions) —
-not a sticky of three-word cues.
+A "script" is the **first Matter 20 demurrer format**: verbose opening,
+each live fight, individuals, close, answers. Not a cue card. Not a binder
+of `(don't say)` telegrams.
 
-Two typefaces, always:
+Two typefaces:
 
-- **Bold**, and every such line starts with `(don't say)` = stage direction,
-  caption, skip-gate, or the other side's question. He does not speak it.
-- Regular type = the only words that leave his mouth. Full sentences. Smart.
-  "Your Honor" is fine here. This is the read-aloud.
+- **Bold, on its own line** = caption or skip-gate. Every Court/AG
+  condition lives here: **If the Attorney General contests count one**,
+  **If they say certification is “discretionary”**, **If the Court asks…**
+  He does not speak the bold line.
+- Regular type under it = the only read-aloud. Full sentences. His voice.
+  "Your Honor" belongs here.
 
-The August 28 failure was headings in the **same type** as the speech
-("If they say…", "OPENING — read this", "POINT A"). He read the heading.
-The fix is typeface, not shortening the argument.
+Never put an "If the Court…" or "If the AG…" clause in the same paragraph
+as speech. That is how he accidentally read the gate aloud on August 28.
 
 ## Default deliverable
 
-Render the full script **in the chat**. Sections, in order:
+Render **in the chat**, in this order, with a horizontal rule between
+sections:
 
-1. Caption / clock / tentative table — all `(don't say)`
-2. Opening — spoken, several paragraphs if the case needs it
-3. Each live fight — `(don't say)` gate, then spoken argument
-4. Individuals / other parties — same
-5. Dead counts — `(don't say)` gate, then one spoken submit
-6. Close — spoken ask
-7. Answers — `(don't say)` the question they may hear, regular type the answer
+1. Clock / tentative / play — instruction, may be bold (he does not speak it)
+2. **Opening** — then spoken paragraphs
+3. **If the Attorney General contests [count]** — then spoken argument
+4. **If they say [their line]** — then spoken rebuttal
+5. **Individual respondents** / **If the Court asks…** — then spoken
+6. **Only if asked about [dead counts]** — then spoken submit
+7. **Close** — then spoken ask
+8. Answers: **If the Court asks: [their question]** — then spoken answer
 
-Do not shrink this to a cue card. Do not put "If they say," "Read this,"
-"Point A," or "Q. / A." in regular type.
-
-PDF only if he asks.
+Do not shrink this. PDF only if he asks.
 
 ## Chat while a hearing is live
 
-The next spoken block he needs, in regular type, plus one bold `(don't say)`
-gate if a skip matters. Not the whole binder.
+The next section he needs: one bold gate, then the spoken block. Stop.
 
 ## After the hearing
 
