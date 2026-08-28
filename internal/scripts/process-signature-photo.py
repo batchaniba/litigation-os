@@ -6,11 +6,11 @@ top canvas, JPEG ringing, thin aliased strokes). This script:
 
   1. crops to the ink
   2. upscales 12× (LANCZOS) so the PDF stamp downsamples instead of upsamples
-  3. closes tiny JPEG gaps, then a 1-px erode so the stroke is slightly
-     lighter than a raw threshold of the photo
+  3. closes tiny JPEG gaps, then a light erode so the stroke is slightly
+     thinner than a raw threshold of the photo
   4. Gaussian-blurs then re-thresholds a solid core so 12× stair-steps round
      off, keeping a short alpha fringe for PDF downsampling
-  5. writes black-on-transparent RGBA
+  5. writes dark-charcoal-on-transparent RGBA (not pure #000)
 
 Does not restamp any already-filed PDF.
 
@@ -41,10 +41,11 @@ INK_MAX = 210  # grayscale; below this is treated as ink
 CROP_PAD = 6
 SCALE = 12
 CLOSE_SIZE = 3  # morphological close only; do not dilate
-ERODE_SIZE = 3  # slight thin after close (odd Max/Min neighborhood)
+ERODE_SIZE = 5  # slight thin after close (odd Max/Min neighborhood)
 BLUR = 3.0
-CORE_T = 200  # blur luminance at/above this becomes solid ink
+CORE_T = 212  # blur luminance at/above this becomes solid ink
 ALPHA_FLOOR = 22  # below this, treat as background
+INK_RGB = 40  # charcoal, not pure black — dials down visual weight
 TRIM_PAD = 12
 
 
@@ -97,6 +98,9 @@ def _to_rgba(alpha_img: Image.Image) -> Image.Image:
     x1 = min(alpha_u8.shape[1], int(xs.max()) + TRIM_PAD + 1)
     alpha_u8 = alpha_u8[y0:y1, x0:x1]
     rgba = np.zeros((alpha_u8.shape[0], alpha_u8.shape[1], 4), dtype=np.uint8)
+    rgba[..., 0] = INK_RGB
+    rgba[..., 1] = INK_RGB
+    rgba[..., 2] = INK_RGB
     rgba[..., 3] = alpha_u8
     return Image.fromarray(rgba, "RGBA")
 
