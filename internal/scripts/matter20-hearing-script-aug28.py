@@ -160,6 +160,7 @@ def build_pdf():
         "Do not mention the Northern District IFP screening order unless the Court raises it. The Attorney General already attacked it; the tentative does not rely on it.",
         "Do not argue other cases (Serrato federal, Diamond, Randstad, CHP habeas).",
         "If you do not know, say so and offer to file a short supplemental letter. Do not guess.",
+        "Do not use count four to relitigate reason-giving or the helpfulness presumption. Lead with section 679.10(k) and no election of remedies.",
     ], card))
 
     story.append(P("4. Opening — read this if the Court invites argument first", h))
@@ -243,7 +244,43 @@ def build_pdf():
         speak,
     ))
 
-    story.append(P("7. Individual respondents — Serrato, Paul, Dutra", h))
+    story.append(P("7. If the Attorney General contests count four — declaratory relief", h))
+    story.append(P(
+        "Your Honor, I also submit on the tentative as to the fourth cause of action. "
+        "Count four is Code of Civil Procedure section 1060. It asks the Court to declare "
+        "the parties’ rights under Penal Code section 679.10. It does not ask the Court "
+        "to declare that the November 1, 2024 stop was qualifying criminal activity. "
+        "Paragraph 94 of the Petition says that expressly.",
+        speak,
+    ))
+    story.append(P(
+        "The Attorney General calls the claim duplicative and retrospective. The "
+        "tentative already answers that. The claim may later become duplicative of the "
+        "surviving first cause of action. The Court cannot make that determination on "
+        "demurrer. I may plead cumulative theories, even inconsistent ones. There is no "
+        "election of remedies at the pleading stage.",
+        speak,
+    ))
+    story.append(P(
+        "Count four is not a rerun of counts two and three. One of the live controversies "
+        "is Penal Code section 679.10, subdivision (k): whether the absence of charges or "
+        "a prosecution is a legitimate basis for denial. That question travels with count "
+        "one. It is an actual controversy about how this still-pending request must be "
+        "decided, and how CHP must apply the statute on reconsideration. That is "
+        "prospective. <i>Griset v. Fair Political Practices Commission</i> (2001) 25 Cal.4th 688 "
+        "held that declaratory relief was resolved after the writ claims were adjudicated. "
+        "We are at demurrer. <i>Griset</i> does not require dismissal now.",
+        speak,
+    ))
+    story.append(P(
+        "Do not argue count four as a way to restore the reason-giving or helpfulness "
+        "writ claims. The Court just sustained those without leave. If you lead with "
+        "“the letter was too conclusory,” you invite the Court to reverse itself on "
+        "count four. Lead with section 679.10(k) and no election of remedies.",
+        note,
+    ))
+
+    story.append(P("8. Individual respondents — Serrato, Paul, Dutra", h))
     story.append(P(
         "Your Honor, the individual respondents joined CHP’s demurrer. Their joinders "
         "rise and fall with CHP on counts one and four. Captain Serrato signed the "
@@ -271,7 +308,7 @@ def build_pdf():
         note,
     ))
 
-    story.append(P("8. Only if the Court asks about counts two and three", h))
+    story.append(P("9. Only if the Court asks about counts two and three", h))
     story.append(P(
         "Your Honor, I submit on the tentative as to the second and third causes of "
         "action so the Court can reach the surviving claim. I will not belabor them.",
@@ -289,7 +326,7 @@ def build_pdf():
         note,
     ))
 
-    story.append(P("9. Closing ask — read this", h))
+    story.append(P("10. Closing ask — read this", h))
     story.append(P(
         "Your Honor, I ask the Court to adopt the tentative: overrule the demurrer as "
         "to the first and fourth causes of action, including as to the individual "
@@ -303,7 +340,7 @@ def build_pdf():
     ))
 
     story.append(PageBreak())
-    story.append(P("10. Q&amp;A cards — short answers only", h))
+    story.append(P("11. Q&amp;A cards — short answers only", h))
 
     qa = [
         (
@@ -336,7 +373,11 @@ def build_pdf():
         ),
         (
             "“Declaratory relief is duplicative / retrospective.”",
-            "The tentative already holds I may plead cumulative theories at this stage, and there is no election of remedies on demurrer. I submit on that.",
+            "The tentative already holds the claim may later become duplicative of the surviving first cause of action, and that I need not elect remedies on demurrer. Count four also presents section 679.10(k): whether the absence of charges is a legitimate basis for denial. That controversy is live with count one. Griset resolved declaratory relief after the writ was adjudicated. We are at demurrer.",
+        ),
+        (
+            "“Count four just repeats the reason-giving and helpfulness claims I already sustained.”",
+            "I am not asking the Court to restore counts two and three through a declaration. Paragraph 94 does not seek a declaration on qualifying crime. The live declaration is how section 679.10, including subdivision (k), governs this still-pending request. That is why the tentative overruled count four.",
         ),
         (
             "“The Northern District already screened a related complaint.”",
@@ -351,17 +392,18 @@ def build_pdf():
         story.append(P(f"<b>Q. {q}</b>", card))
         story.append(P(f"A. {a}", speak))
 
-    story.append(P("11. Do not say", h))
+    story.append(P("12. Do not say", h))
     story.append(bullets([
         "Do not say “the tentative is a win” or “I already won.” Say “I submit on the tentative as to one and four.”",
         "Do not argue that CHP officers are criminals as a personal attack. Stay on the exhibits: report versus dashcam versus the 851.6 certificate.",
         "Do not quote damages, lost CDL wages, or immigration consequences as a reason to overrule a demurrer. Those are not pleading-stage issues.",
         "Do not volunteer counts two and three. If asked, submit.",
+        "Do not use count four to restore reason-giving or the helpfulness presumption. Lead with section 679.10(k).",
         "Do not correct the Court. If the Court says “Serrano,” let it go.",
         "Do not interrupt the Attorney General. Take notes. Answer the Court’s questions, not opposing counsel’s speeches.",
     ], card))
 
-    story.append(P("12. After the hearing", h))
+    story.append(P("13. After the hearing", h))
     story.append(P(
         "Write down the ruling word for word, including any answer deadline and whether "
         "the individual demurrers were ruled on or continued. The September 2, 2026 "
@@ -378,7 +420,9 @@ def build_pdf():
         "<i>People v. Thompson</i> (2006) 38 Cal.4th 811; "
         "<i>People v. Wolterman</i> (1992) 11 Cal.App.4th Supp. 15; "
         "<i>Espinoza v. Shiomoto</i> (2017) 10 Cal.App.5th 85; "
-        "Penal Code sections 679.10 and 851.6.",
+        "Penal Code sections 679.10 and 851.6; "
+        "<i>Griset v. Fair Political Practices Commission</i> (2001) 25 Cal.4th 688 "
+        "(only if the Attorney General cites it).",
         note,
     ))
 
@@ -428,6 +472,8 @@ RULES
 - Do not correct the Court's typos (Serrano/Serrato, APPICLABLE, WTIHOUT).
 - Do not mention the Northern District IFP order unless the Court raises it.
 - Do not argue other cases. If you do not know, say so. Do not guess.
+- Do not use count four to relitigate reason-giving or the helpfulness
+  presumption. Lead with section 679.10(k) and no election of remedies.
 
 
 ================================================================================
@@ -502,6 +548,37 @@ treats it that way. Mandamus can compel an agency to apply the correct legal
 standard, and it can compel performance of a duty the Legislature made
 mandatory. I am not asking for a particular Form B signature on the pleadings.
 I am asking that count one survive so that question can be tried.
+
+
+================================================================================
+IF THE ATTORNEY GENERAL CONTESTS COUNT FOUR
+================================================================================
+Your Honor, I also submit on the Court's tentative as to the fourth cause of
+action. Count four is Code of Civil Procedure section 1060. It asks the Court
+to declare the parties' rights under Penal Code section 679.10. It does not
+ask the Court to declare that the November 1, 2024 stop was qualifying criminal
+activity. Paragraph 94 of the Petition says that expressly.
+
+The Attorney General calls the claim duplicative and retrospective. The
+tentative already answers that. The claim may later become duplicative of the
+surviving first cause of action. The Court cannot make that determination on
+demurrer. I may plead cumulative theories, even inconsistent ones. There is
+no election of remedies at the pleading stage.
+
+Count four is not a rerun of counts two and three. One of the live
+controversies is Penal Code section 679.10, subdivision (k): whether the
+absence of charges or a prosecution is a legitimate basis for denial. That
+question travels with count one. It is an actual controversy about how this
+still-pending request must be decided, and how CHP must apply the statute on
+reconsideration. That is prospective. Griset v. Fair Political Practices
+Commission (2001) 25 Cal.4th 688 held that declaratory relief was resolved
+after the writ claims were adjudicated. We are at demurrer. Griset does not
+require dismissal now.
+
+Do not argue count four as a way to restore the reason-giving or helpfulness
+writ claims. If you lead with "the letter was too conclusory," you invite the
+Court to reverse itself on count four. Lead with section 679.10(k) and no
+election of remedies.
 
 
 ================================================================================
@@ -599,8 +676,20 @@ A. Serrato signed the denial. Paul processed the request. Dutra was the assigned
    amend. Do not dismiss them without leave.
 
 Q. Declaratory relief is duplicative / retrospective.
-A. The tentative already holds I may plead cumulative theories at this stage,
-   and there is no election of remedies on demurrer. I submit on that.
+A. The tentative already holds the claim may later become duplicative of the
+   surviving first cause of action, and that I need not elect remedies on
+   demurrer. Count four also presents section 679.10(k): whether the absence
+   of charges is a legitimate basis for denial. That controversy is live with
+   count one. Griset resolved declaratory relief after the writ was
+   adjudicated. We are at demurrer.
+
+Q. Count four just repeats the reason-giving and helpfulness claims I already
+   sustained.
+A. I am not asking the Court to restore counts two and three through a
+   declaration. Paragraph 94 does not seek a declaration on qualifying crime.
+   The live declaration is how section 679.10, including subdivision (k),
+   governs this still-pending request. That is why the tentative overruled
+   count four.
 
 Q. The Northern District already screened a related complaint.
 A. That order is not before this Court and I do not rely on it. This Petition
@@ -620,6 +709,8 @@ DO NOT SAY
 - Do not personally attack the officers. Stay on the exhibits.
 - Do not quote damages, lost CDL wages, or immigration consequences.
 - Do not volunteer counts two and three.
+- Do not use count four to restore reason-giving or the helpfulness
+  presumption. Lead with section 679.10(k).
 - Do not correct the Court. If the Court says "Serrano," let it go.
 - Do not interrupt the Attorney General.
 
@@ -636,7 +727,9 @@ Wait for the minute order.
 Authorities in this crib: Blank v. Kirwan (1985) 39 Cal.3d 311; Redfearn v.
 Trader Joe's Co. (2018) 20 Cal.App.5th 989; People v. Thompson (2006) 38 Cal.4th
 811; People v. Wolterman (1992) 11 Cal.App.4th Supp. 15; Espinoza v. Shiomoto
-(2017) 10 Cal.App.5th 85; Penal Code sections 679.10 and 851.6.
+(2017) 10 Cal.App.5th 85; Penal Code sections 679.10 and 851.6; Griset v. Fair
+Political Practices Commission (2001) 25 Cal.4th 688 (only if the Attorney
+General cites it).
 """
 
 

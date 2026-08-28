@@ -29,6 +29,8 @@ RULES
 - Do not correct the Court's typos (Serrano/Serrato, APPICLABLE, WTIHOUT).
 - Do not mention the Northern District IFP order unless the Court raises it.
 - Do not argue other cases. If you do not know, say so. Do not guess.
+- Do not use count four to relitigate reason-giving or the helpfulness
+  presumption. Lead with section 679.10(k) and no election of remedies.
 
 
 ================================================================================
@@ -103,6 +105,37 @@ treats it that way. Mandamus can compel an agency to apply the correct legal
 standard, and it can compel performance of a duty the Legislature made
 mandatory. I am not asking for a particular Form B signature on the pleadings.
 I am asking that count one survive so that question can be tried.
+
+
+================================================================================
+IF THE ATTORNEY GENERAL CONTESTS COUNT FOUR
+================================================================================
+Your Honor, I also submit on the Court's tentative as to the fourth cause of
+action. Count four is Code of Civil Procedure section 1060. It asks the Court
+to declare the parties' rights under Penal Code section 679.10. It does not
+ask the Court to declare that the November 1, 2024 stop was qualifying criminal
+activity. Paragraph 94 of the Petition says that expressly.
+
+The Attorney General calls the claim duplicative and retrospective. The
+tentative already answers that. The claim may later become duplicative of the
+surviving first cause of action. The Court cannot make that determination on
+demurrer. I may plead cumulative theories, even inconsistent ones. There is
+no election of remedies at the pleading stage.
+
+Count four is not a rerun of counts two and three. One of the live
+controversies is Penal Code section 679.10, subdivision (k): whether the
+absence of charges or a prosecution is a legitimate basis for denial. That
+question travels with count one. It is an actual controversy about how this
+still-pending request must be decided, and how CHP must apply the statute on
+reconsideration. That is prospective. Griset v. Fair Political Practices
+Commission (2001) 25 Cal.4th 688 held that declaratory relief was resolved
+after the writ claims were adjudicated. We are at demurrer. Griset does not
+require dismissal now.
+
+Do not argue count four as a way to restore the reason-giving or helpfulness
+writ claims. If you lead with "the letter was too conclusory," you invite the
+Court to reverse itself on count four. Lead with section 679.10(k) and no
+election of remedies.
 
 
 ================================================================================
@@ -200,8 +233,20 @@ A. Serrato signed the denial. Paul processed the request. Dutra was the assigned
    amend. Do not dismiss them without leave.
 
 Q. Declaratory relief is duplicative / retrospective.
-A. The tentative already holds I may plead cumulative theories at this stage,
-   and there is no election of remedies on demurrer. I submit on that.
+A. The tentative already holds the claim may later become duplicative of the
+   surviving first cause of action, and that I need not elect remedies on
+   demurrer. Count four also presents section 679.10(k): whether the absence
+   of charges is a legitimate basis for denial. That controversy is live with
+   count one. Griset resolved declaratory relief after the writ was
+   adjudicated. We are at demurrer.
+
+Q. Count four just repeats the reason-giving and helpfulness claims I already
+   sustained.
+A. I am not asking the Court to restore counts two and three through a
+   declaration. Paragraph 94 does not seek a declaration on qualifying crime.
+   The live declaration is how section 679.10, including subdivision (k),
+   governs this still-pending request. That is why the tentative overruled
+   count four.
 
 Q. The Northern District already screened a related complaint.
 A. That order is not before this Court and I do not rely on it. This Petition
@@ -221,6 +266,8 @@ DO NOT SAY
 - Do not personally attack the officers. Stay on the exhibits.
 - Do not quote damages, lost CDL wages, or immigration consequences.
 - Do not volunteer counts two and three.
+- Do not use count four to restore reason-giving or the helpfulness
+  presumption. Lead with section 679.10(k).
 - Do not correct the Court. If the Court says "Serrano," let it go.
 - Do not interrupt the Attorney General.
 
