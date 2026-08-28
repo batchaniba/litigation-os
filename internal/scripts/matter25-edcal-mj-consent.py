@@ -18,6 +18,7 @@ from __future__ import annotations
 
 import argparse
 import re
+import shutil
 import sys
 from pathlib import Path
 
@@ -50,6 +51,8 @@ DEFAULT_POS = OUT_DIR / (
 
 DEFAULT_DATE = "August 28, 2026"
 DEFAULT_MAILED_FROM = "San Jose, California"
+ARTIFACTS_DIR = Path("/opt/cursor/artifacts")
+ARTIFACT_PDF = ARTIFACTS_DIR / "fedex_mj_consent_with_pos.pdf"
 PRINT_NAME = "BRENDAN NGEHSI NEWANFORBI"
 CASE_NO = "2:26-cv-02881-DAD-SCR"
 DEFENDANT = "FEDERAL EXPRESS CORPORATION"
@@ -177,8 +180,11 @@ def main() -> None:
     path = fill_consent_page(Path(args.out).resolve(), args.date)
     pos = build_pos(Path(args.pos_out).resolve(), args.date, args.mailed_from)
     assemble([path, pos], path)
+    ARTIFACTS_DIR.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(path, ARTIFACT_PDF)
     print(f"Generated consent (POS attached): {path}")
     print(f"Generated proof of service: {pos}")
+    print(f"Download copy: {ARTIFACT_PDF}")
 
 
 if __name__ == "__main__":
