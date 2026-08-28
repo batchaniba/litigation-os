@@ -1,0 +1,20 @@
+---
+description: If the user asks for a script, talking points, or what to say in court or on Zoom, do not produce a read-aloud document. Zoom makes reading obvious.
+alwaysApply: true
+---
+
+# Zoom speaking notes
+
+When the user asks for a **script**, talking points, what to say, or notes for a
+hearing / CMC / Zoom appearance:
+
+- Follow `.claude/skills/hearing-script/SKILL.md`.
+- The chat is a **glanceable Zoom card**, not a teleprompter.
+- Never use "If they say…", "Q. / A.", "Point A", "Read this", or complete
+  "Your Honor, …" paragraphs in anything he might have open on camera.
+- Opening he can say without looking down. Then 3–6 word cues. One-line ask.
+- One screen. No scrolling. No PDF unless he asks.
+- Full argument and traps only if he asks for homework, in a separate artifact
+  labeled `DO NOT OPEN ON CAMERA`.
+
+Locked after the August 28, 2026 CHP demurrer (Matter 20). The Court could tell.
