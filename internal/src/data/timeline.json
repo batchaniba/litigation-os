@@ -1,7 +1,7 @@
 [
   {
     "date": "Aug. 28, 2026",
-    "event": "DECISION \u2014 Plaintiff will not hold the Aug. 19 opening demands ($55,000 Randstad-only / $85,000 global). They expire by their own terms at 2:00 p.m. PT this date. Do not reply to Williams before that hour. Silence is not a grant of his Sept. 4 request. After 2:00 p.m. there is no open offer; any later number from Randstad is a new negotiation. Optional post-expiry confirmation only. Pleading clocks: RK Logistics Sept. 14 (Garcia request granted; no further extension); Randstad Sept. 15. Evid. Code \u00a71152 / FRE 408.",
+    "event": "DECISION \u2014 Plaintiff will not hold the Aug. 19 opening demands ($55,000 Randstad-only / $85,000 global). They expire by their own terms at 2:00 p.m. PT this date. Do not reply to Williams before that hour. Silence is not a grant of his Sept. 4 request. After 2:00 p.m. the successor demand is $175,000 Randstad-only (letter executed this date; transmit after 2:00 p.m. PT). The unsent Aug. 18 $250,000 letter stays unsent. Pleading clocks: RK Logistics Sept. 14 (Garcia request granted; no further extension); Randstad Sept. 15. Evid. Code \u00a71152 / FRE 408.",
     "matters": [
       27
     ],
@@ -32,6 +32,29 @@
     "actor": "you"
   },
   {
+    "date": "Aug. 28, 2026",
+    "event": "EXECUTED \u2014 Post-expiry settlement demand as to Randstad US, LLC: $175,000.00 Randstad-only, inclusive, payable within 15 business days after a signed agreement. Successor to the Aug. 19 $55,000/$85,000 figures, which expire at 2:00 p.m. PT this date and are not being held. Response due 5:00 p.m. PT Sept. 8, 2026. Global number is its own number on request \u2014 not this demand plus a token for RK. RK remains Sept. 14 (single extension; no further). The Aug. 18 $250,000 letter remains unsent (internal aggressive ceiling). Evid. Code \u00a71152 / FRE 408. Not yet transmitted \u2014 send after 2:00 p.m. PT August 28, 2026.",
+    "matters": [
+      27
+    ],
+    "type": "settlement",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-27/Settlement Demand - Randstad US LLC (Aug 28 2026).pdf"
+  },
+  {
+    "date": "Sep. 8, 2026",
+    "event": "Response deadline (self-imposed) \u2014 post-expiry $175,000 Randstad-only settlement demand. Williams to accept, counter, or request a call by 5:00 p.m. PT; one week before Randstad's Sept. 15 responsive-pleading date. Not a court deadline. Evid. Code \u00a71152 / FRE 408.",
+    "matters": [
+      27
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "opposing",
+    "source": "/documents/matter-27/Settlement Demand - Randstad US LLC (Aug 28 2026).pdf"
+  },
+  {
     "date": "Aug. 19, 2026",
     "event": "TRANSMITTED \u2014 Opening settlement demand emailed to Chadwick L. Williams (cc Nathan Chapman) at 6:03 a.m.: Randstad US, LLC may resolve Plaintiff's claims against it for $55,000, or Randstad and The RK Logistics Group, Inc. may resolve all claims globally for $85,000. Open through 2:00 p.m. PT August 28, 2026. Evid. Code \u00a71152 / FRE 408. Plaintiff later elected not to hold these numbers past that hour.",
     "matters": [
@@ -44,7 +67,7 @@
   },
   {
     "date": "Sep. 4, 2026",
-    "event": "WATCH \u2014 Williams said he will attempt to respond by this date. The Aug. 19 $55,000/$85,000 demands expire (and are not being held) at 2:00 p.m. PT Aug. 28, so anything he sends is a new number into an empty field, not an acceptance of those figures. Not a court deadline. Pleading clocks: RK Logistics Sept. 14 (granted; no further); Randstad Sept. 15.",
+    "event": "WATCH \u2014 Williams said he will attempt to respond by this date. The Aug. 19 $55,000/$85,000 demands expire (and are not being held) at 2:00 p.m. PT Aug. 28. The successor demand is $175,000 Randstad-only, with its own Sept. 8 response date. Anything he sends on Sept. 4 is a number into that field, not an acceptance of the expired figures. Not a court deadline. Pleading clocks: RK Logistics Sept. 14 (granted; no further); Randstad Sept. 15.",
     "matters": [
       27
     ],
