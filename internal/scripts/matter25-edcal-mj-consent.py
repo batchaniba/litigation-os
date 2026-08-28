@@ -31,6 +31,7 @@ from proof_of_service import (  # noqa: E402
     ProofOfServiceFields,
     build_proof_of_service,
 )
+from short_link import publish_short_link  # noqa: E402
 from signature_stamp import SIGNATURE_PATH, stamp_on_pdf_line  # noqa: E402
 
 ROOT = SCRIPT_DIR.parents[1]
@@ -53,7 +54,7 @@ DEFAULT_DATE = "August 28, 2026"
 DEFAULT_MAILED_FROM = "San Jose, California"
 ARTIFACTS_DIR = Path("/opt/cursor/artifacts")
 ARTIFACT_PDF = ARTIFACTS_DIR / "fedex_mj_consent_with_pos.pdf"
-SHORT_LINK_PDF = ROOT / "internal/public/fedex-consent.pdf"
+SHORT_LINK_SLUG = "fedex-consent"
 PRINT_NAME = "BRENDAN NGEHSI NEWANFORBI"
 CASE_NO = "2:26-cv-02881-DAD-SCR"
 DEFENDANT = "FEDERAL EXPRESS CORPORATION"
@@ -183,11 +184,11 @@ def main() -> None:
     assemble([path, pos], path)
     ARTIFACTS_DIR.mkdir(parents=True, exist_ok=True)
     shutil.copy2(path, ARTIFACT_PDF)
-    shutil.copy2(path, SHORT_LINK_PDF)
+    short = publish_short_link(path, SHORT_LINK_SLUG)
     print(f"Generated consent (POS attached): {path}")
     print(f"Generated proof of service: {pos}")
     print(f"Download copy: {ARTIFACT_PDF}")
-    print(f"Short link copy: {SHORT_LINK_PDF}")
+    print(f"Short link copy: {short}")
 
 
 if __name__ == "__main__":
