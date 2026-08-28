@@ -4,7 +4,8 @@
 # generated filings that need a signature affixed rather than a typed
 # name. Supersedes the CIV-100 4b extract merged in #566. Do not use the
 # older cropped pen asset under internal/scripts/assets/. Prior loops
-# stamps are archived next to this file as *-v1-abstract-loops.png.
+# stamps are archived next to this file as *-v1-abstract-loops.png and
+# *-4b-civ100.png.
 import struct
 from pathlib import Path
 
