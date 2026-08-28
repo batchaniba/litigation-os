@@ -255,7 +255,7 @@ def build_proof_of_service(path: Path | str, fields: ProofOfServiceFields) -> Pa
     # Footer: declaration, then clear air for the signature stamp, then the line.
     sig_width = 165.0
     sig_height = sig_width * SIGNATURE_ASPECT  # ~25 pt at current aspect
-    gap_decl_to_sig = 36.0  # keep loops clear of the declaration after the lift
+    gap_decl_to_sig = 32.0  # keep loops clear of the declaration
     name_below = 14.0
     footer_pad = 16.0  # clearance from typed name down to the bottom border
     footer_block = (
@@ -301,11 +301,11 @@ def build_proof_of_service(path: Path | str, fields: ProofOfServiceFields) -> Pa
 
     if fields.stamp_signature and fields.server_name:
         try:
-            # Hover the stamp just above the rule (do not rest the ink on it).
+            # Hover the stamp a hair above the rule.
             c.drawImage(
                 SIGNATURE_PATH,
                 sig_x0 + line_pad + 12.0,
-                sig_line_y + 10.0,
+                sig_line_y + 4.0,
                 width=sig_width,
                 height=sig_height,
                 mask="auto",
