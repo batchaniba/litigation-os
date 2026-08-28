@@ -7,3 +7,12 @@ Next_Chapter_Application_Essay.pdf
 Next_Chapter_Resume.pdf
 __pycache__/
 *.pyc
+
+# Filings and working copies belong under internal/public/documents/matter-NN/,
+# not the repository root.
+/*.pdf
+/*.docx
+/*.doc
+/*.jpeg
+/*.jpg
+/*.png

@@ -1,6 +1,6 @@
 # Citation Verification Ledger
 
-Generated 2026-08-26 by `verify-citations.py`. Joins the PR #490 citation index to the July / Matter-28 citation audit, then overlays Round 4+ verification results (WebSearch + CourtListener/CAP multisource confirmation).
+Generated 2026-08-28 by `verify-citations.py`. Joins the PR #490 citation index to the July / Matter-28 citation audit, then overlays Round 4+ verification results (WebSearch + CourtListener/CAP multisource confirmation).
 
 ## Why this exists
 
