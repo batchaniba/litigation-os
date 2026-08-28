@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
-"""Extract signature 4b (CIV-100 p.2, item 7, 15 June 2026) as the
-canonical transparent PNG.
+"""Extract signature 4b (CIV-100 p.2, item 7, 15 June 2026) to an archive PNG.
+
+This is historical. The canonical stamp is the photographed loops mark at
+internal/assets/signature/brendan-newanforbi-signature.png, produced by
+process-signature-photo.py. Running this script must not overwrite that file.
 
 Source: matter-12/014a CIV100 Request for Entry of Default or Default
 Judgment.pdf, page 2, native 1-bit scan (1701×2215). The mark sits on
@@ -30,10 +33,10 @@ SRC_PDF = (
     / "internal/public/documents/matter-12"
     / "014a CIV100 Request for Entry of Default or Default Judgment.pdf"
 )
-OUT_PNG = REPO / "internal/assets/signature/brendan-newanforbi-signature.png"
-ARCHIVE_PNG = (
-    REPO / "internal/assets/signature/brendan-newanforbi-signature-v1-abstract-loops.png"
+OUT_PNG = (
+    REPO / "internal/assets/signature/brendan-newanforbi-signature-4b-civ100.png"
 )
+CANONICAL_PNG = REPO / "internal/assets/signature/brendan-newanforbi-signature.png"
 
 # Native-scan crop around item 7's signature block (page-2 pixels).
 CROP = (620, 1638, 1580, 1768)  # x0, y0, x1, y1
@@ -141,10 +144,8 @@ def extract() -> Image.Image:
 def main() -> None:
     img = extract()
     OUT_PNG.parent.mkdir(parents=True, exist_ok=True)
-    current = Image.open(OUT_PNG) if OUT_PNG.is_file() else None
-    if current is not None and current.size == (1450, 360):
-        ARCHIVE_PNG.write_bytes(OUT_PNG.read_bytes())
-        print(f"archived v1 loops → {ARCHIVE_PNG.relative_to(REPO)}")
+    if OUT_PNG.resolve() == CANONICAL_PNG.resolve():
+        raise SystemExit("refusing to overwrite the canonical photographed stamp")
     img.save(OUT_PNG, optimize=True)
     opaque = np.array(img)[..., 3]
     print(
