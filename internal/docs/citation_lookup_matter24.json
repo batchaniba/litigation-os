@@ -1,0 +1,3180 @@
+{
+  "generatedBy": "internal/scripts/lookup-citations.py",
+  "generatedDate": "2026-08-27",
+  "matters": [
+    24
+  ],
+  "reachability": {
+    "courtlistener_search": "ok (unauthenticated /api/rest/v4/search/)",
+    "case_law_api": "html docs only \u2014 JSON API not usable without auth/migration",
+    "case_law_static": "ok (CasesMetadata.json + html/{file_name}.html)",
+    "justia": "blocked (Cloudflare 403) in this environment",
+    "google_scholar": "unreliable (often 403)",
+    "courtlistener_citation_lookup": "requires API token (401)"
+  },
+  "resultCount": 81,
+  "results": [
+    {
+      "query": "Mathews v. Eldridge, 424 U.S. 319 (1976)",
+      "case_name_guess": "Mathews v. Eldridge",
+      "reporter_pin": "424 U.S. 319",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Mathews v. Eldridge",
+      "matched_citations": [
+        "47 L. Ed. 2d 18",
+        "96 S. Ct. 893",
+        "424 U.S. 319",
+        "1976 U.S. LEXIS 141",
+        "41 Cal. Comp. Cases 920"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/109382/mathews-v-eldridge/",
+          "case_name": "Mathews v. Eldridge",
+          "citations": [
+            "47 L. Ed. 2d 18",
+            "96 S. Ct. 893",
+            "424 U.S. 319",
+            "1976 U.S. LEXIS 141",
+            "41 Cal. Comp. Cases 920"
+          ],
+          "notes": "Search q='\"Mathews v. Eldridge\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/us/424/html/0319-01.html",
+          "case_name": "Mathews v. Eldridge",
+          "citations": [
+            "424 U.S. 319",
+            "47 L. Ed. 2d 18",
+            "96 S. Ct. 893",
+            "1976 U.S. LEXIS 141",
+            "SCDB 1975-035"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Goldberg v. Kelly, 397 U.S. 254 (1970)",
+      "case_name_guess": "Goldberg v. Kelly",
+      "reporter_pin": "397 U.S. 254",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Goldberg v. Kelly",
+      "matched_citations": [
+        "25 L. Ed. 2d 287",
+        "90 S. Ct. 1011",
+        "397 U.S. 254",
+        "1970 U.S. LEXIS 80"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/108100/goldberg-v-kelly/",
+          "case_name": "Goldberg v. Kelly",
+          "citations": [
+            "25 L. Ed. 2d 287",
+            "90 S. Ct. 1011",
+            "397 U.S. 254",
+            "1970 U.S. LEXIS 80"
+          ],
+          "notes": "Search q='\"Goldberg v. Kelly\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/us/397/html/0254-01.html",
+          "case_name": "Goldberg v. Kelly",
+          "citations": [
+            "397 U.S. 254",
+            "25 L. Ed. 2d 287",
+            "90 S. Ct. 1011",
+            "1970 U.S. LEXIS 80",
+            "SCDB 1969-062"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Withrow v. Larkin, 421 U.S. 35 (1975)",
+      "case_name_guess": "Withrow v. Larkin",
+      "reporter_pin": "421 U.S. 35",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Withrow v. Larkin",
+      "matched_citations": [
+        "43 L. Ed. 2d 712",
+        "95 S. Ct. 1456",
+        "421 U.S. 35",
+        "1975 U.S. LEXIS 56"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/109237/withrow-v-larkin/",
+          "case_name": "Withrow v. Larkin",
+          "citations": [
+            "43 L. Ed. 2d 712",
+            "95 S. Ct. 1456",
+            "421 U.S. 35",
+            "1975 U.S. LEXIS 56"
+          ],
+          "notes": "Search q='\"421 U.S. 35\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/us/421/html/0035-01.html",
+          "case_name": "Withrow v. Larkin",
+          "citations": [
+            "421 U.S. 35",
+            "95 S. Ct. 1456",
+            "43 L. Ed. 2d 712",
+            "1975 U.S. LEXIS 56",
+            "SCDB 1974-082"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Ashcroft v. Iqbal, 556 U.S. 662 (2009)",
+      "case_name_guess": "Ashcroft v. Iqbal",
+      "reporter_pin": "556 U.S. 662",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Ashcroft v. Iqbal",
+      "matched_citations": [
+        "173 L. Ed. 2d 868",
+        "129 S. Ct. 1937",
+        "556 U.S. 662",
+        "2009 U.S. LEXIS 3472"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/145875/ashcroft-v-iqbal/",
+          "case_name": "Ashcroft v. Iqbal",
+          "citations": [
+            "173 L. Ed. 2d 868",
+            "129 S. Ct. 1937",
+            "556 U.S. 662",
+            "2009 U.S. LEXIS 3472"
+          ],
+          "notes": "Search q='\"556 U.S. 662\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/us/556/html/0662-01.html",
+          "case_name": "Ashcroft v. Iqbal",
+          "citations": [
+            "556 U.S. 662",
+            "173 L. Ed. 2d 868",
+            "129 S. Ct. 1937",
+            "2009 U.S. LEXIS 3472",
+            "SCDB 2008-056"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Smith v. Wade, 461 U.S. 30 (1983)",
+      "case_name_guess": "Smith v. Wade",
+      "reporter_pin": "461 U.S. 30",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Smith v. Wade",
+      "matched_citations": [
+        "75 L. Ed. 2d 632",
+        "103 S. Ct. 1625",
+        "461 U.S. 30",
+        "1983 U.S. LEXIS 24",
+        "51 U.S.L.W. 4407"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/110915/smith-v-wade/",
+          "case_name": "Smith v. Wade",
+          "citations": [
+            "75 L. Ed. 2d 632",
+            "103 S. Ct. 1625",
+            "461 U.S. 30",
+            "1983 U.S. LEXIS 24",
+            "51 U.S.L.W. 4407"
+          ],
+          "notes": "Search q='\"461 U.S. 30\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/us/461/html/0030-01.html",
+          "case_name": "Smith v. Wade",
+          "citations": [
+            "461 U.S. 30",
+            "75 L. Ed. 2d 632",
+            "103 S. Ct. 1625",
+            "1983 U.S. LEXIS 24",
+            "SCDB 1982-063"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Hope v. Pelzer, 536 U.S. 730 (2002)",
+      "case_name_guess": "Hope v. Pelzer",
+      "reporter_pin": "536 U.S. 730",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Hope v. Pelzer",
+      "matched_citations": [
+        "153 L. Ed. 2d 666",
+        "122 S. Ct. 2508",
+        "536 U.S. 730",
+        "2002 U.S. LEXIS 4884"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/121169/hope-v-pelzer/",
+          "case_name": "Hope v. Pelzer",
+          "citations": [
+            "153 L. Ed. 2d 666",
+            "122 S. Ct. 2508",
+            "536 U.S. 730",
+            "2002 U.S. LEXIS 4884"
+          ],
+          "notes": "Search q='\"536 U.S. 730\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/us/536/html/0730-01.html",
+          "case_name": "Hope v. Pelzer",
+          "citations": [
+            "536 U.S. 730",
+            "153 L. Ed. 2d 666",
+            "122 S. Ct. 2508",
+            "2002 U.S. LEXIS 4884",
+            "SCDB 2001-081"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Nieves v. Bartlett, 587 U.S. 391 (2019)",
+      "case_name_guess": "Nieves v. Bartlett",
+      "reporter_pin": "587 U.S. 391",
+      "wl_pin": null,
+      "consensus": "PARTIAL",
+      "matched_name": "Nieves v. Bartlett",
+      "matched_citations": [
+        "587 U.S. 391",
+        "139 S. Ct. 1715"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/9231236/nieves-v-bartlett/",
+          "case_name": "Nieves v. Bartlett",
+          "citations": [
+            "587 U.S. 391",
+            "139 S. Ct. 1715"
+          ],
+          "notes": "Search q='\"587 U.S. 391\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": false,
+          "url": "https://static.case.law/us/587/CasesMetadata.json",
+          "case_name": "",
+          "citations": [],
+          "notes": "Volume metadata unavailable for us/587",
+          "http_status": 404
+        }
+      ]
+    },
+    {
+      "query": "Lopez v. Smith, 203 F. 3d 1122",
+      "case_name_guess": "Lopez v. Smith",
+      "reporter_pin": "203 F.3d 1122",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Lopez v. Smith",
+      "matched_citations": [
+        "203 F.3d 1122",
+        "46 Fed. R. Serv. 3d 494",
+        "2000 Cal. Daily Op. Serv. 1096",
+        "2000 Daily Journal DAR 1585",
+        "2000 U.S. App. LEXIS 1740",
+        "2000 WL 144385"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/7079981/lopez-v-smith/",
+          "case_name": "Lopez v. Smith",
+          "citations": [
+            "203 F.3d 1122",
+            "46 Fed. R. Serv. 3d 494",
+            "2000 Cal. Daily Op. Serv. 1096",
+            "2000 Daily Journal DAR 1585",
+            "2000 U.S. App. LEXIS 1740",
+            "2000 WL 144385"
+          ],
+          "notes": "Search q='\"203 F.3d 1122\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/f3d/203/html/1122-01.html",
+          "case_name": "Lopez v. Smith",
+          "citations": [
+            "203 F.3d 1122"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Bell Atl. Corp. v. Twombly, 550 U.S. 544 (2007)",
+      "case_name_guess": "Bell Atl. Corp. v. Twombly",
+      "reporter_pin": "550 U.S. 544",
+      "wl_pin": null,
+      "consensus": "PARTIAL",
+      "matched_name": "Bell Atlantic Corp. v. Twombly",
+      "matched_citations": [
+        "550 U.S. 544",
+        "167 L. Ed. 2d 929",
+        "127 S. Ct. 1955",
+        "2007 U.S. LEXIS 5901",
+        "SCDB 2006-045"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": false,
+          "url": "https://www.courtlistener.com/api/rest/v4/search/",
+          "case_name": "",
+          "citations": [],
+          "notes": "No cite/name match in queries ['\"550 U.S. 544\"', '\"Bell Atl. Corp. v. Twombly\"']",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/us/550/html/0544-01.html",
+          "case_name": "Bell Atlantic Corp. v. Twombly",
+          "citations": [
+            "550 U.S. 544",
+            "167 L. Ed. 2d 929",
+            "127 S. Ct. 1955",
+            "2007 U.S. LEXIS 5901",
+            "SCDB 2006-045"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Bell Atlantic Corp. v. Twombly, 550 U.S. 544 (2007)",
+      "case_name_guess": "Bell Atlantic Corp. v. Twombly",
+      "reporter_pin": "550 U.S. 544",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Bell Atlantic Corp. v. Twombly",
+      "matched_citations": [
+        "167 L. Ed. 2d 929",
+        "127 S. Ct. 1955",
+        "550 U.S. 544",
+        "2007 U.S. LEXIS 5901",
+        "41 Communications Reg. (P&F) 567",
+        "20 Fla. L. Weekly Fed. S 267",
+        "68 Fed. R. Serv. 3d 661",
+        "75 U.S.L.W. 4337"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/145730/bell-atlantic-corp-v-twombly/",
+          "case_name": "Bell Atlantic Corp. v. Twombly",
+          "citations": [
+            "167 L. Ed. 2d 929",
+            "127 S. Ct. 1955",
+            "550 U.S. 544",
+            "2007 U.S. LEXIS 5901",
+            "41 Communications Reg. (P&F) 567",
+            "20 Fla. L. Weekly Fed. S 267",
+            "68 Fed. R. Serv. 3d 661",
+            "75 U.S.L.W. 4337"
+          ],
+          "notes": "Search q='\"Bell Atlantic Corp. v. Twombly\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/us/550/html/0544-01.html",
+          "case_name": "Bell Atlantic Corp. v. Twombly",
+          "citations": [
+            "550 U.S. 544",
+            "167 L. Ed. 2d 929",
+            "127 S. Ct. 1955",
+            "2007 U.S. LEXIS 5901",
+            "SCDB 2006-045"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Lee v. City of Los Angeles, 250 F. 3d 668",
+      "case_name_guess": "Lee v. City of Los Angeles",
+      "reporter_pin": "250 F.3d 668",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Lee v. City of Los Angeles",
+      "matched_citations": [
+        "250 F.3d 668",
+        "2001 WL 468408"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/7092482/lee-v-city-of-los-angeles/",
+          "case_name": "Lee v. City of Los Angeles",
+          "citations": [
+            "250 F.3d 668",
+            "2001 WL 468408"
+          ],
+          "notes": "Search q='\"250 F.3d 668\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/f3d/250/html/0668-01.html",
+          "case_name": "Lee v. City of Los Angeles",
+          "citations": [
+            "250 F.3d 668"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Pearson v. Callahan, 555 U.S. 223 (2009)",
+      "case_name_guess": "Pearson v. Callahan",
+      "reporter_pin": "555 U.S. 223",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Pearson v. Callahan",
+      "matched_citations": [
+        "172 L. Ed. 2d 565",
+        "129 S. Ct. 808",
+        "555 U.S. 223",
+        "2009 U.S. LEXIS 591"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/145918/pearson-v-callahan/",
+          "case_name": "Pearson v. Callahan",
+          "citations": [
+            "172 L. Ed. 2d 565",
+            "129 S. Ct. 808",
+            "555 U.S. 223",
+            "2009 U.S. LEXIS 591"
+          ],
+          "notes": "Search q='\"555 U.S. 223\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/us/555/html/0223-01.html",
+          "case_name": "Pearson v. Callahan",
+          "citations": [
+            "555 U.S. 223",
+            "172 L. Ed. 2d 565",
+            "129 S. Ct. 808",
+            "SCDB 2008-013",
+            "2009 U.S. LEXIS 591"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Bd. of Cnty. Comm'rs v. Umbehr, 518 U.S. 668 (1996)",
+      "case_name_guess": "Bd. of Cnty. Comm'rs v. Umbehr",
+      "reporter_pin": "518 U.S. 668",
+      "wl_pin": null,
+      "consensus": "CAPTION_MISMATCH",
+      "matched_name": "Board of Comm'rs, Wabaunsee Cty. v. Umbehr",
+      "matched_citations": [
+        "135 L. Ed. 2d 843",
+        "116 S. Ct. 2342",
+        "518 U.S. 668",
+        "1996 U.S. LEXIS 4262",
+        "10 Fla. L. Weekly Fed. S 124",
+        "64 U.S.L.W. 4682",
+        "96 Cal. Daily Op. Serv. 4821",
+        "11 I.E.R. Cas. (BNA) 1393",
+        "96 Daily Journal DAR 7732"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/118059/board-of-commrs-wabaunsee-cty-v-umbehr/",
+          "case_name": "Board of Comm'rs, Wabaunsee Cty. v. Umbehr",
+          "citations": [
+            "135 L. Ed. 2d 843",
+            "116 S. Ct. 2342",
+            "518 U.S. 668",
+            "1996 U.S. LEXIS 4262",
+            "10 Fla. L. Weekly Fed. S 124",
+            "64 U.S.L.W. 4682",
+            "96 Cal. Daily Op. Serv. 4821",
+            "11 I.E.R. Cas. (BNA) 1393",
+            "96 Daily Journal DAR 7732"
+          ],
+          "notes": "Search q='\"518 U.S. 668\"'; cite_match=True; wl_match=False; name_match=False",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/us/518/html/0668-01.html",
+          "case_name": "Board of County Commissioners v. Umbehr",
+          "citations": [
+            "518 U.S. 668",
+            "135 L. Ed. 2d 843",
+            "116 S. Ct. 2342",
+            "SCDB 1995-088",
+            "1996 U.S. LEXIS 4262"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json; caption mismatch vs query name (\"Bd. of Cnty. Comm'rs v. Umbehr\" vs 'Board of County Commissioners v. Umbehr')",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Khoja v. Orexigen Therapeutics, Inc, 899 F. 3d 988",
+      "case_name_guess": "Khoja v. Orexigen Therapeutics, Inc",
+      "reporter_pin": "899 F.3d 988",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Khoja v. Orexigen Therapeutics, Inc.",
+      "matched_citations": [
+        "899 F.3d 988"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/4525969/karim-khoja-v-orexigen-therapeutics-inc/",
+          "case_name": "Karim Khoja v. Orexigen Therapeutics, Inc.",
+          "citations": [
+            "899 F.3d 988"
+          ],
+          "notes": "Search q='\"899 F.3d 988\"'; cite_match=True; wl_match=False; name_match=False",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/f3d/899/html/0988-01.html",
+          "case_name": "Khoja v. Orexigen Therapeutics, Inc.",
+          "citations": [
+            "899 F.3d 988"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Knievel v. ESPN, 393 F. 3d 1068",
+      "case_name_guess": "Knievel v. ESPN",
+      "reporter_pin": "393 F.3d 1068",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Knievel v. ESPN",
+      "matched_citations": [
+        "393 F.3d 1068"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/788804/evel-knievel-krystal-knievel-v-espn-a-subsidiary-of-walt-disney-inc/",
+          "case_name": "Evel Knievel Krystal Knievel v. Espn, a Subsidiary of Walt Disney, Inc.",
+          "citations": [
+            "393 F.3d 1068",
+            "3 A.L.R. 6th 733",
+            "33 Media L. Rep. (BNA) 1097",
+            "2005 U.S. App. LEXIS 45",
+            "2005 WL 14882"
+          ],
+          "notes": "Search q='\"393 F.3d 1068\"'; cite_match=True; wl_match=False; name_match=False",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/f3d/393/html/1068-01.html",
+          "case_name": "Knievel v. ESPN",
+          "citations": [
+            "393 F.3d 1068"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Perry v. Sindermann, 408 U.S. 593 (1972)",
+      "case_name_guess": "Perry v. Sindermann",
+      "reporter_pin": "408 U.S. 593",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Perry v. Sindermann",
+      "matched_citations": [
+        "33 L. Ed. 2d 570",
+        "92 S. Ct. 2694",
+        "408 U.S. 593",
+        "1972 U.S. LEXIS 20",
+        "1 I.E.R. Cas. (BNA) 33"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/108609/perry-v-sindermann/",
+          "case_name": "Perry v. Sindermann",
+          "citations": [
+            "33 L. Ed. 2d 570",
+            "92 S. Ct. 2694",
+            "408 U.S. 593",
+            "1972 U.S. LEXIS 20",
+            "1 I.E.R. Cas. (BNA) 33"
+          ],
+          "notes": "Search q='\"Perry v. Sindermann\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/us/408/html/0593-01.html",
+          "case_name": "Perry v. Sindermann",
+          "citations": [
+            "408 U.S. 593",
+            "33 L. Ed. 2d 570",
+            "92 S. Ct. 2694",
+            "1972 U.S. LEXIS 20",
+            "SCDB 1971-174"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Pratt v. Rowland, 65 F. 3d 802",
+      "case_name_guess": "Pratt v. Rowland",
+      "reporter_pin": "65 F.3d 802",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Pratt v. Rowland",
+      "matched_citations": [
+        "65 F.3d 802"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/703954/elmer-pratt-plaintiff-appellee-v-james-k-rowland-james-gomez/",
+          "case_name": "Elmer PRATT, Plaintiff-Appellee, v. James K. ROWLAND; James Gomez, Director; Daniel Vasquez; Robert Borg, Et Al., Defendants-Appellants",
+          "citations": [
+            "65 F.3d 802",
+            "95 Daily Journal DAR 12497",
+            "95 Cal. Daily Op. Serv. 7323",
+            "1995 U.S. App. LEXIS 26135",
+            "1995 WL 549080"
+          ],
+          "notes": "Search q='\"65 F.3d 802\"'; cite_match=True; wl_match=False; name_match=False",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/f3d/65/html/0802-01.html",
+          "case_name": "Pratt v. Rowland",
+          "citations": [
+            "65 F.3d 802"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Shanks v. Dressel, 540 F. 3d 1082",
+      "case_name_guess": "Shanks v. Dressel",
+      "reporter_pin": "540 F.3d 1082",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Shanks v. Dressel",
+      "matched_citations": [
+        "540 F.3d 1082",
+        "2008 U.S. App. LEXIS 18428",
+        "2008 WL 3916249"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/1269496/shanks-v-dressel/",
+          "case_name": "Shanks v. Dressel",
+          "citations": [
+            "540 F.3d 1082",
+            "2008 U.S. App. LEXIS 18428",
+            "2008 WL 3916249"
+          ],
+          "notes": "Search q='\"540 F.3d 1082\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/f3d/540/html/1082-01.html",
+          "case_name": "Shanks v. Dressel",
+          "citations": [
+            "540 F.3d 1082"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Catholic Charities CYO v. Chertoff, 622 F. Supp. 2d 865",
+      "case_name_guess": "Catholic Charities CYO v. Chertoff",
+      "reporter_pin": "622 F. Supp. 2d 865",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Catholic Charities CYO v. Chertoff",
+      "matched_citations": [
+        "622 F. Supp. 2d 865",
+        "2008 U.S. Dist. LEXIS 103304",
+        "2008 WL 5385250"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/2415984/catholic-charities-cyo-v-chertoff/",
+          "case_name": "Catholic Charities CYO v. Chertoff",
+          "citations": [
+            "622 F. Supp. 2d 865",
+            "2008 U.S. Dist. LEXIS 103304",
+            "2008 WL 5385250"
+          ],
+          "notes": "Search q='\"622 F. Supp. 2d 865\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/f-supp-2d/622/html/0865-01.html",
+          "case_name": "Catholic Charities Cyo v. Chertoff",
+          "citations": [
+            "622 F. Supp. 2d 865"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Ford v. City of Yakima, 706 F. 3d 1188",
+      "case_name_guess": "Ford v. City of Yakima",
+      "reporter_pin": "706 F.3d 1188",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Ford v. City of Yakima",
+      "matched_citations": [
+        "706 F.3d 1188"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/820004/eddie-ford-v-city-of-yakima/",
+          "case_name": "Eddie Ford v. City of Yakima",
+          "citations": [
+            "706 F.3d 1188",
+            "2013 U.S. App. LEXIS 2716",
+            "2013 WL 485233"
+          ],
+          "notes": "Search q='\"706 F.3d 1188\"'; cite_match=True; wl_match=False; name_match=False",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/f3d/706/html/1188-01.html",
+          "case_name": "Ford v. City of Yakima",
+          "citations": [
+            "706 F.3d 1188"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Perez Perez v. Wolf, 943 F. 3d 853",
+      "case_name_guess": "Perez Perez v. Wolf",
+      "reporter_pin": "943 F.3d 853",
+      "wl_pin": null,
+      "consensus": "CAPTION_MISMATCH",
+      "matched_name": "Pedro Perez Perez v. Chad Wolf",
+      "matched_citations": [
+        "943 F.3d 853"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/4681485/pedro-perez-perez-v-chad-wolf/",
+          "case_name": "Pedro Perez Perez v. Chad Wolf",
+          "citations": [
+            "943 F.3d 853"
+          ],
+          "notes": "Search q='\"943 F.3d 853\"'; cite_match=True; wl_match=False; name_match=False",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": false,
+          "url": "https://static.case.law/f3d/943/CasesMetadata.json",
+          "case_name": "",
+          "citations": [],
+          "notes": "Volume metadata unavailable for f3d/943",
+          "http_status": 404
+        }
+      ]
+    },
+    {
+      "query": "Albright v. Oliver, 510 U.S. 266 (1994)",
+      "case_name_guess": "Albright v. Oliver",
+      "reporter_pin": "510 U.S. 266",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Albright v. Oliver",
+      "matched_citations": [
+        "127 L. Ed. 2d 114",
+        "114 S. Ct. 807",
+        "510 U.S. 266",
+        "1994 U.S. LEXIS 1319"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/112924/albright-v-oliver/",
+          "case_name": "Albright v. Oliver",
+          "citations": [
+            "127 L. Ed. 2d 114",
+            "114 S. Ct. 807",
+            "510 U.S. 266",
+            "1994 U.S. LEXIS 1319"
+          ],
+          "notes": "Search q='\"510 U.S. 266\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/us/510/html/0266-01.html",
+          "case_name": "Albright v. Oliver",
+          "citations": [
+            "510 U.S. 266",
+            "127 L. Ed. 2d 114",
+            "114 S. Ct. 807",
+            "1994 U.S. LEXIS 1319",
+            "SCDB 1993-017"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Duryea v. Guarnieri, 564 U.S. 379 (2011)",
+      "case_name_guess": "Duryea v. Guarnieri",
+      "reporter_pin": "564 U.S. 379",
+      "wl_pin": null,
+      "consensus": "CAPTION_MISMATCH",
+      "matched_name": "Borough of Duryea v. Guarnieri",
+      "matched_citations": [
+        "180 L. Ed. 2d 408",
+        "131 S. Ct. 2488",
+        "564 U.S. 379",
+        "2011 U.S. LEXIS 4564"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/219105/borough-of-duryea-v-guarnieri/",
+          "case_name": "Borough of Duryea v. Guarnieri",
+          "citations": [
+            "180 L. Ed. 2d 408",
+            "131 S. Ct. 2488",
+            "564 U.S. 379",
+            "2011 U.S. LEXIS 4564"
+          ],
+          "notes": "Search q='\"564 U.S. 379\"'; cite_match=True; wl_match=False; name_match=False",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/us/564/html/0379-01.html",
+          "case_name": "Borough of Duryea v. Guarnieri",
+          "citations": [
+            "564 U.S. 379",
+            "180 L. Ed. 2d 408",
+            "131 S. Ct. 2488",
+            "2011 U.S. LEXIS 4564",
+            "SCDB 2010-071"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json; caption mismatch vs query name ('Duryea v. Guarnieri' vs 'Borough of Duryea v. Guarnieri')",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Hartman v. Moore, 547 U.S. 250 (2006)",
+      "case_name_guess": "Hartman v. Moore",
+      "reporter_pin": "547 U.S. 250",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Hartman v. Moore",
+      "matched_citations": [
+        "164 L. Ed. 2d 441",
+        "126 S. Ct. 1695",
+        "547 U.S. 250",
+        "2006 U.S. LEXIS 3450"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/145662/hartman-v-moore/",
+          "case_name": "Hartman v. Moore",
+          "citations": [
+            "164 L. Ed. 2d 441",
+            "126 S. Ct. 1695",
+            "547 U.S. 250",
+            "2006 U.S. LEXIS 3450"
+          ],
+          "notes": "Search q='\"547 U.S. 250\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/us/547/html/0250-01.html",
+          "case_name": "Hartman v. Moore",
+          "citations": [
+            "547 U.S. 250",
+            "164 L. Ed. 2d 441",
+            "126 S. Ct. 1695",
+            "2006 U.S. LEXIS 3450",
+            "SCDB 2005-049"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Hebbe v. Pliler, 627 F. 3d 338",
+      "case_name_guess": "Hebbe v. Pliler",
+      "reporter_pin": "627 F.3d 338",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Hebbe v. Pliler",
+      "matched_citations": [
+        "627 F.3d 338"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/151818/hebbe-v-pliler/",
+          "case_name": "Hebbe v. Pliler",
+          "citations": [
+            "627 F.3d 338"
+          ],
+          "notes": "Search q='\"627 F.3d 338\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/f3d/627/html/0338-01.html",
+          "case_name": "Hebbe v. Pliler",
+          "citations": [
+            "627 F.3d 338"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Wilkerson v. Butler, 229 F.R.D. 166",
+      "case_name_guess": "Wilkerson v. Butler",
+      "reporter_pin": "229 F.R.D. 166",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Wilkerson v. Butler",
+      "matched_citations": [
+        "229 F.R.D. 166",
+        "2005 U.S. Dist. LEXIS 19702",
+        "2005 WL 1560481"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/8757256/wilkerson-v-butler/",
+          "case_name": "Wilkerson v. Butler",
+          "citations": [
+            "229 F.R.D. 166",
+            "2005 U.S. Dist. LEXIS 19702",
+            "2005 WL 1560481"
+          ],
+          "notes": "Search q='\"229 F.R.D. 166\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/frd/229/html/0166-01.html",
+          "case_name": "Wilkerson v. Butler",
+          "citations": [
+            "229 F.R.D. 166"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Bd. of Educ. v. Doyle, 429 U.S. 274 (1977)",
+      "case_name_guess": "Bd. of Educ. v. Doyle",
+      "reporter_pin": "429 U.S. 274",
+      "wl_pin": null,
+      "consensus": "CAPTION_MISMATCH",
+      "matched_name": "Mt. Healthy City School District Board of Education v. Doyle",
+      "matched_citations": [
+        "429 U.S. 274",
+        "50 L. Ed. 2d 471",
+        "97 S. Ct. 568",
+        "1977 U.S. LEXIS 29",
+        "SCDB 1976-029"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": false,
+          "url": "https://www.courtlistener.com/api/rest/v4/search/",
+          "case_name": "",
+          "citations": [],
+          "notes": "No cite/name match in queries ['\"429 U.S. 274\"', '\"Bd. of Educ. v. Doyle\"']",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/us/429/html/0274-01.html",
+          "case_name": "Mt. Healthy City School District Board of Education v. Doyle",
+          "citations": [
+            "429 U.S. 274",
+            "50 L. Ed. 2d 471",
+            "97 S. Ct. 568",
+            "1977 U.S. LEXIS 29",
+            "SCDB 1976-029"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json; caption mismatch vs query name ('Bd. of Educ. v. Doyle' vs 'Mt. Healthy City School District Board of Education v. Doyle')",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Borough of Duryea v. Guarnieri, 564 U.S. 379 (2011)",
+      "case_name_guess": "Borough of Duryea v. Guarnieri",
+      "reporter_pin": "564 U.S. 379",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Borough of Duryea v. Guarnieri",
+      "matched_citations": [
+        "180 L. Ed. 2d 408",
+        "131 S. Ct. 2488",
+        "564 U.S. 379",
+        "2011 U.S. LEXIS 4564"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/219105/borough-of-duryea-v-guarnieri/",
+          "case_name": "Borough of Duryea v. Guarnieri",
+          "citations": [
+            "180 L. Ed. 2d 408",
+            "131 S. Ct. 2488",
+            "564 U.S. 379",
+            "2011 U.S. LEXIS 4564"
+          ],
+          "notes": "Search q='\"564 U.S. 379\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/us/564/html/0379-01.html",
+          "case_name": "Borough of Duryea v. Guarnieri",
+          "citations": [
+            "564 U.S. 379",
+            "180 L. Ed. 2d 408",
+            "131 S. Ct. 2488",
+            "2011 U.S. LEXIS 4564",
+            "SCDB 2010-071"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "District of Columbia v. Wesby, 583 U.S. 48 (2018)",
+      "case_name_guess": "District of Columbia v. Wesby",
+      "reporter_pin": "583 U.S. 48",
+      "wl_pin": null,
+      "consensus": "PARTIAL",
+      "matched_name": "District of Columbia v. Wesby",
+      "matched_citations": [
+        "583 U.S. 48"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/4460853/district-of-columbia-v-wesby/",
+          "case_name": "District of Columbia v. Wesby",
+          "citations": [
+            "583 U.S. 48"
+          ],
+          "notes": "Search q='\"583 U.S. 48\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": false,
+          "url": "https://static.case.law/us/583/CasesMetadata.json",
+          "case_name": "",
+          "citations": [],
+          "notes": "Volume metadata unavailable for us/583",
+          "http_status": 404
+        }
+      ]
+    },
+    {
+      "query": "Erickson v. Pardus, 551 U.S. 89 (2007)",
+      "case_name_guess": "Erickson v. Pardus",
+      "reporter_pin": "551 U.S. 89",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Erickson v. Pardus",
+      "matched_citations": [
+        "167 L. Ed. 2d 1081",
+        "127 S. Ct. 2197",
+        "551 U.S. 89",
+        "2007 U.S. LEXIS 6814"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/145722/erickson-v-pardus/",
+          "case_name": "Erickson v. Pardus",
+          "citations": [
+            "167 L. Ed. 2d 1081",
+            "127 S. Ct. 2197",
+            "551 U.S. 89",
+            "2007 U.S. LEXIS 6814"
+          ],
+          "notes": "Search q='\"551 U.S. 89\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/us/551/html/0089-01.html",
+          "case_name": "Erickson v. Pardus",
+          "citations": [
+            "551 U.S. 89",
+            "167 L. Ed. 2d 1081",
+            "127 S. Ct. 2197",
+            "2007 U.S. LEXIS 6814",
+            "SCDB 2006-053"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Florer v. Congregation Pidyon Shevuyim, N.A, 639 F. 3d 916",
+      "case_name_guess": "Florer v. Congregation Pidyon Shevuyim, N.A",
+      "reporter_pin": "639 F.3d 916",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Florer v. Congregation Pidyon Shevuyim, NA",
+      "matched_citations": [
+        "639 F.3d 916"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/145591/florer-v-congregation-pidyon-shevuyim-na/",
+          "case_name": "Florer v. Congregation Pidyon Shevuyim, NA",
+          "citations": [
+            "639 F.3d 916"
+          ],
+          "notes": "Search q='\"639 F.3d 916\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/f3d/639/html/0916-01.html",
+          "case_name": "Florer v. Congregation Pidyon Shevuyim, N.A.",
+          "citations": [
+            "639 F.3d 916"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Garity v. APWU Nat'l Lab. Org, 828 F. 3d 848",
+      "case_name_guess": "Garity v. APWU Nat'l Lab. Org",
+      "reporter_pin": "828 F.3d 848",
+      "wl_pin": null,
+      "consensus": "CAPTION_MISMATCH",
+      "matched_name": "Rosemary Garity v. Apwu National Labor Org.",
+      "matched_citations": [
+        "828 F.3d 848",
+        "32 Am. Disabilities Cas. (BNA) 1565",
+        "2016 U.S. App. LEXIS 12380",
+        "2016 WL 3607049"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/3288184/rosemary-garity-v-apwu-national-labor-org/",
+          "case_name": "Rosemary Garity v. Apwu National Labor Org.",
+          "citations": [
+            "828 F.3d 848",
+            "32 Am. Disabilities Cas. (BNA) 1565",
+            "2016 U.S. App. LEXIS 12380",
+            "2016 WL 3607049"
+          ],
+          "notes": "Search q='\"828 F.3d 848\"'; cite_match=True; wl_match=False; name_match=False",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/f3d/828/html/0848-01.html",
+          "case_name": "Garity v. APWU National Labor Organization",
+          "citations": [
+            "828 F.3d 848"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json; caption mismatch vs query name (\"Garity v. APWU Nat'l Lab. Org\" vs 'Garity v. APWU National Labor Organization')",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Lathus v. City of Huntington Beach, 56 F. 4th 1238",
+      "case_name_guess": "Lathus v. City of Huntington Beach",
+      "reporter_pin": "56 F.4th 1238",
+      "wl_pin": null,
+      "consensus": "CAPTION_MISMATCH",
+      "matched_name": "Shayna Lathus v. City of Huntington Beach",
+      "matched_citations": [
+        "56 F.4th 1238"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/9368384/shayna-lathus-v-city-of-huntington-beach/",
+          "case_name": "Shayna Lathus v. City of Huntington Beach",
+          "citations": [
+            "56 F.4th 1238"
+          ],
+          "notes": "Search q='\"56 F.4th 1238\"'; cite_match=True; wl_match=False; name_match=False",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": false,
+          "url": "https://static.case.law/f4th/56/CasesMetadata.json",
+          "case_name": "",
+          "citations": [],
+          "notes": "Volume metadata unavailable for f4th/56",
+          "http_status": 404
+        }
+      ]
+    },
+    {
+      "query": "Noll v. Carlson, 809 F. 2d 1446",
+      "case_name_guess": "Noll v. Carlson",
+      "reporter_pin": "809 F.2d 1446",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Noll v. Carlson",
+      "matched_citations": [
+        "809 F.2d 1446",
+        "7 Fed. R. Serv. 3d 253"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/8956219/noll-v-carlson/",
+          "case_name": "Noll v. Carlson",
+          "citations": [
+            "809 F.2d 1446",
+            "7 Fed. R. Serv. 3d 253"
+          ],
+          "notes": "Search q='\"809 F.2d 1446\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/f2d/809/html/1446-02.html",
+          "case_name": "Noll v. Carlson",
+          "citations": [
+            "809 F.2d 1446"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Bd. of Regents v. Roth, 408 U.S. 564 (1972)",
+      "case_name_guess": "Bd. of Regents v. Roth",
+      "reporter_pin": "408 U.S. 564",
+      "wl_pin": null,
+      "consensus": "CAPTION_MISMATCH",
+      "matched_name": "Board of Regents of State Colleges v. Roth",
+      "matched_citations": [
+        "408 U.S. 564",
+        "33 L. Ed. 2d 548",
+        "92 S. Ct. 2701",
+        "1972 U.S. LEXIS 131",
+        "SCDB 1971-173"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": false,
+          "url": "https://www.courtlistener.com/api/rest/v4/search/",
+          "case_name": "",
+          "citations": [],
+          "notes": "No cite/name match in queries ['\"408 U.S. 564\"', '\"Bd. of Regents v. Roth\"']",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/us/408/html/0564-01.html",
+          "case_name": "Board of Regents of State Colleges v. Roth",
+          "citations": [
+            "408 U.S. 564",
+            "33 L. Ed. 2d 548",
+            "92 S. Ct. 2701",
+            "1972 U.S. LEXIS 131",
+            "SCDB 1971-173"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json; caption mismatch vs query name ('Bd. of Regents v. Roth' vs 'Board of Regents of State Colleges v. Roth')",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Bureerong v. Uvawas, 922 F. Supp. 1450",
+      "case_name_guess": "Bureerong v. Uvawas",
+      "reporter_pin": null,
+      "wl_pin": null,
+      "consensus": "UNKNOWN",
+      "matched_name": "",
+      "matched_citations": [],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": false,
+          "url": "https://www.courtlistener.com/api/rest/v4/search/",
+          "case_name": "",
+          "citations": [],
+          "notes": "No cite/name match in queries []",
+          "http_status": null
+        },
+        {
+          "source": "case.law_static",
+          "found": false,
+          "url": "",
+          "case_name": "",
+          "citations": [],
+          "notes": "No supported reporter pin to resolve on static.case.law",
+          "http_status": null
+        }
+      ]
+    },
+    {
+      "query": "Capp v. Cnty. of San Diego, 940 F. 3d 1046",
+      "case_name_guess": "Capp v. Cnty. of San Diego",
+      "reporter_pin": "940 F.3d 1046",
+      "wl_pin": null,
+      "consensus": "CAPTION_MISMATCH",
+      "matched_name": "Jonathan Capp v. County of San Diego",
+      "matched_citations": [
+        "940 F.3d 1046"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/4667181/jonathan-capp-v-county-of-san-diego/",
+          "case_name": "Jonathan Capp v. County of San Diego",
+          "citations": [
+            "940 F.3d 1046"
+          ],
+          "notes": "Search q='\"940 F.3d 1046\"'; cite_match=True; wl_match=False; name_match=False",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": false,
+          "url": "https://static.case.law/f3d/940/CasesMetadata.json",
+          "case_name": "",
+          "citations": [],
+          "notes": "Volume metadata unavailable for f3d/940",
+          "http_status": 404
+        }
+      ]
+    },
+    {
+      "query": "Franklin v. Murphy, 745 F. 2d 1221",
+      "case_name_guess": "Franklin v. Murphy",
+      "reporter_pin": "745 F.2d 1221",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Franklin v. Murphy",
+      "matched_citations": [
+        "745 F.2d 1221"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/442925/harry-franklin-v-ms-murphy-and-hoyt-cupp/",
+          "case_name": "Harry Franklin v. Ms. Murphy and Hoyt Cupp",
+          "citations": [
+            "745 F.2d 1221",
+            "1984 U.S. App. LEXIS 17458"
+          ],
+          "notes": "Search q='\"745 F.2d 1221\"'; cite_match=True; wl_match=False; name_match=False",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/f2d/745/html/1221-01.html",
+          "case_name": "Franklin v. Murphy",
+          "citations": [
+            "745 F.2d 1221"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Johnson v. Duffy, 588 F. 2d 740",
+      "case_name_guess": "Johnson v. Duffy",
+      "reporter_pin": "588 F.2d 740",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Johnson v. Duffy",
+      "matched_citations": [
+        "588 F.2d 740"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/8919702/johnson-v-duffy/",
+          "case_name": "Johnson v. Duffy",
+          "citations": [
+            "588 F.2d 740"
+          ],
+          "notes": "Search q='\"588 F.2d 740\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/f2d/588/html/0740-01.html",
+          "case_name": "Johnson v. Duffy",
+          "citations": [
+            "588 F.2d 740"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Kay v. Ehrler, 499 U.S. 432 (1991)",
+      "case_name_guess": "Kay v. Ehrler",
+      "reporter_pin": "499 U.S. 432",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Kay v. Ehrler",
+      "matched_citations": [
+        "499 U.S. 432"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/9106342/kay-v-ehrler/",
+          "case_name": "Kay v. Ehrler",
+          "citations": [
+            "499 U.S. 432"
+          ],
+          "notes": "Search q='\"499 U.S. 432\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/us/499/html/0432-01.html",
+          "case_name": "Kay v. Ehrler",
+          "citations": [
+            "499 U.S. 432",
+            "113 L. Ed. 2d 486",
+            "111 S. Ct. 1435",
+            "1991 U.S. LEXIS 2219",
+            "SCDB 1990-057"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Keates v. Koile, 883 F. 3d 1228",
+      "case_name_guess": "Keates v. Koile",
+      "reporter_pin": "883 F.3d 1228",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Keates v. Koile",
+      "matched_citations": [
+        "883 F.3d 1228"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/4474827/ellen-keates-v-michael-koile/",
+          "case_name": "Ellen Keates v. Michael Koile",
+          "citations": [
+            "883 F.3d 1228"
+          ],
+          "notes": "Search q='\"883 F.3d 1228\"'; cite_match=True; wl_match=False; name_match=False",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/f3d/883/html/1228-01.html",
+          "case_name": "Keates v. Koile",
+          "citations": [
+            "883 F.3d 1228"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Navarro v. Block, 250 F. 3d 729",
+      "case_name_guess": "Navarro v. Block",
+      "reporter_pin": "250 F.3d 729",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Navarro v. Block",
+      "matched_citations": [
+        "250 F.3d 729",
+        "2001 WL 498270"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/7092494/navarro-v-block/",
+          "case_name": "Navarro v. Block",
+          "citations": [
+            "250 F.3d 729",
+            "2001 WL 498270"
+          ],
+          "notes": "Search q='\"250 F.3d 729\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/f3d/250/html/0729-01.html",
+          "case_name": "Navarro v. Block",
+          "citations": [
+            "250 F.3d 729"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Regents v. Roth, 408 U.S. 564 (1972)",
+      "case_name_guess": "Regents v. Roth",
+      "reporter_pin": "408 U.S. 564",
+      "wl_pin": null,
+      "consensus": "CAPTION_MISMATCH",
+      "matched_name": "Board of Regents of State Colleges v. Roth",
+      "matched_citations": [
+        "408 U.S. 564",
+        "33 L. Ed. 2d 548",
+        "92 S. Ct. 2701",
+        "1972 U.S. LEXIS 131",
+        "SCDB 1971-173"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": false,
+          "url": "https://www.courtlistener.com/api/rest/v4/search/",
+          "case_name": "",
+          "citations": [],
+          "notes": "No cite/name match in queries ['\"408 U.S. 564\"', '\"Regents v. Roth\"']",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/us/408/html/0564-01.html",
+          "case_name": "Board of Regents of State Colleges v. Roth",
+          "citations": [
+            "408 U.S. 564",
+            "33 L. Ed. 2d 548",
+            "92 S. Ct. 2701",
+            "1972 U.S. LEXIS 131",
+            "SCDB 1971-173"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json; caption mismatch vs query name ('Regents v. Roth' vs 'Board of Regents of State Colleges v. Roth')",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "See Hansen v. Black, 885 F. 2d 642",
+      "case_name_guess": "Hansen v. Black",
+      "reporter_pin": "885 F.2d 642",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Hansen v. Black",
+      "matched_citations": [
+        "885 F.2d 642"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/529383/kathleen-hansen-v-ronald-l-black/",
+          "case_name": "Kathleen Hansen v. Ronald L. Black",
+          "citations": [
+            "885 F.2d 642",
+            "1989 U.S. App. LEXIS 13906",
+            "1989 WL 106525"
+          ],
+          "notes": "Search q='\"885 F.2d 642\"'; cite_match=True; wl_match=False; name_match=False",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/f2d/885/html/0642-01.html",
+          "case_name": "Hansen v. Black",
+          "citations": [
+            "885 F.2d 642"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Under the Mathews v. Eldridge, 424 U.S. 319 (1976)",
+      "case_name_guess": "the Mathews v. Eldridge",
+      "reporter_pin": "424 U.S. 319",
+      "wl_pin": null,
+      "consensus": "PARTIAL",
+      "matched_name": "Mathews v. Eldridge",
+      "matched_citations": [
+        "424 U.S. 319",
+        "47 L. Ed. 2d 18",
+        "96 S. Ct. 893",
+        "1976 U.S. LEXIS 141",
+        "SCDB 1975-035"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": false,
+          "url": "https://www.courtlistener.com/api/rest/v4/search/",
+          "case_name": "",
+          "citations": [],
+          "notes": "No cite/name match in queries ['\"424 U.S. 319\"', '\"the Mathews v. Eldridge\"']",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/us/424/html/0319-01.html",
+          "case_name": "Mathews v. Eldridge",
+          "citations": [
+            "424 U.S. 319",
+            "47 L. Ed. 2d 18",
+            "96 S. Ct. 893",
+            "1976 U.S. LEXIS 141",
+            "SCDB 1975-035"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Whittlestone, Inc. v. Handi-Craft Co, 618 F. 3d 970",
+      "case_name_guess": "Whittlestone, Inc. v. Handi-Craft Co",
+      "reporter_pin": "618 F.3d 970",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Whittlestone, Inc. v. Handi-Craft Co.",
+      "matched_citations": [
+        "618 F.3d 970",
+        "77 Fed. R. Serv. 3d 404",
+        "2010 U.S. App. LEXIS 17133",
+        "2010 WL 3222417"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/173487/whittlestone-inc-v-handi-craft-co/",
+          "case_name": "Whittlestone, Inc. v. Handi-Craft Co.",
+          "citations": [
+            "618 F.3d 970",
+            "77 Fed. R. Serv. 3d 404",
+            "2010 U.S. App. LEXIS 17133",
+            "2010 WL 3222417"
+          ],
+          "notes": "Search q='\"618 F.3d 970\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/f3d/618/html/0970-01.html",
+          "case_name": "Whittlestone, Inc. v. Handi-Craft Co.",
+          "citations": [
+            "618 F.3d 970"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Winter v. Nat. Res. Def. Council, Inc, 555 U.S. 7 (2008)",
+      "case_name_guess": "Winter v. Nat. Res. Def. Council, Inc",
+      "reporter_pin": "555 U.S. 7",
+      "wl_pin": null,
+      "consensus": "CAPTION_MISMATCH",
+      "matched_name": "Winter v. Natural Resources Defense Council, Inc.",
+      "matched_citations": [
+        "172 L. Ed. 2d 249",
+        "129 S. Ct. 365",
+        "555 U.S. 7",
+        "2008 U.S. LEXIS 8343",
+        "77 U.S.L.W. 4001",
+        "39 Envtl. L. Rep. (Envtl. Law Inst.) 20279",
+        "21 Fla. L. Weekly Fed. S 547",
+        "67 ERC (BNA) 1225"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/145928/winter-v-natural-resources-defense-council-inc/",
+          "case_name": "Winter v. Natural Resources Defense Council, Inc.",
+          "citations": [
+            "172 L. Ed. 2d 249",
+            "129 S. Ct. 365",
+            "555 U.S. 7",
+            "2008 U.S. LEXIS 8343",
+            "77 U.S.L.W. 4001",
+            "39 Envtl. L. Rep. (Envtl. Law Inst.) 20279",
+            "21 Fla. L. Weekly Fed. S 547",
+            "67 ERC (BNA) 1225"
+          ],
+          "notes": "Search q='\"555 U.S. 7\"'; cite_match=True; wl_match=False; name_match=False",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/us/555/html/0007-01.html",
+          "case_name": "Winter v. Natural Resources Defense Council, Inc.",
+          "citations": [
+            "555 U.S. 7",
+            "172 L. Ed. 2d 249",
+            "129 S. Ct. 365",
+            "2008 U.S. LEXIS 8343",
+            "SCDB 2008-003"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json; caption mismatch vs query name ('Winter v. Nat. Res. Def. Council, Inc' vs 'Winter v. Natural Resources Defense Council, Inc.')",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Broam v. Bogan, 320 F. 3d 1023",
+      "case_name_guess": "Broam v. Bogan",
+      "reporter_pin": "320 F.3d 1023",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Broam v. Bogan",
+      "matched_citations": [
+        "320 F.3d 1023",
+        "2003 WL 454648"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/8437289/broam-v-bogan/",
+          "case_name": "Broam v. Bogan",
+          "citations": [
+            "320 F.3d 1023",
+            "2003 WL 454648"
+          ],
+          "notes": "Search q='\"320 F.3d 1023\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/f3d/320/html/1023-01.html",
+          "case_name": "Broam v. Bogan",
+          "citations": [
+            "320 F.3d 1023"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Bureerong v. Uvawas, 922 F.Supp. 1450",
+      "case_name_guess": "Bureerong v. Uvawas",
+      "reporter_pin": null,
+      "wl_pin": null,
+      "consensus": "UNKNOWN",
+      "matched_name": "",
+      "matched_citations": [],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": false,
+          "url": "https://www.courtlistener.com/api/rest/v4/search/",
+          "case_name": "",
+          "citations": [],
+          "notes": "No cite/name match in queries []",
+          "http_status": null
+        },
+        {
+          "source": "case.law_static",
+          "found": false,
+          "url": "",
+          "case_name": "",
+          "citations": [],
+          "notes": "No supported reporter pin to resolve on static.case.law",
+          "http_status": null
+        }
+      ]
+    },
+    {
+      "query": "County of Sacramento v. Lewis, 523 U.S. 10 (1998)",
+      "case_name_guess": "County of Sacramento v. Lewis",
+      "reporter_pin": "523 U.S. 10",
+      "wl_pin": null,
+      "consensus": "NOT_FOUND",
+      "matched_name": "",
+      "matched_citations": [],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": false,
+          "url": "https://www.courtlistener.com/api/rest/v4/search/",
+          "case_name": "",
+          "citations": [],
+          "notes": "No cite/name match in queries ['\"523 U.S. 10\"', '\"County of Sacramento v. Lewis\"']",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": false,
+          "url": "https://static.case.law/us/523/CasesMetadata.json",
+          "case_name": "",
+          "citations": [],
+          "notes": "No case with first_page=10 in CAP volume us/523",
+          "http_status": null
+        }
+      ]
+    },
+    {
+      "query": "Goldberg v. Kelly, 391 U.S. 254 (1970)",
+      "case_name_guess": "Goldberg v. Kelly",
+      "reporter_pin": "391 U.S. 254",
+      "wl_pin": null,
+      "consensus": "NOT_FOUND",
+      "matched_name": "",
+      "matched_citations": [],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": false,
+          "url": "https://www.courtlistener.com/api/rest/v4/search/",
+          "case_name": "",
+          "citations": [],
+          "notes": "No cite/name match in queries ['\"391 U.S. 254\"', '\"Goldberg v. Kelly\"']",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": false,
+          "url": "https://static.case.law/us/391/CasesMetadata.json",
+          "case_name": "",
+          "citations": [],
+          "notes": "No case with first_page=254 in CAP volume us/391",
+          "http_status": null
+        }
+      ]
+    },
+    {
+      "query": "Hartman v. Moore, 541 U.S. 250 (2006)",
+      "case_name_guess": "Hartman v. Moore",
+      "reporter_pin": "541 U.S. 250",
+      "wl_pin": null,
+      "consensus": "NOT_FOUND",
+      "matched_name": "",
+      "matched_citations": [],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": false,
+          "url": "https://www.courtlistener.com/api/rest/v4/search/",
+          "case_name": "",
+          "citations": [],
+          "notes": "No cite/name match in queries ['\"541 U.S. 250\"', '\"Hartman v. Moore\"']",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": false,
+          "url": "https://static.case.law/us/541/CasesMetadata.json",
+          "case_name": "",
+          "citations": [],
+          "notes": "No case with first_page=250 in CAP volume us/541",
+          "http_status": null
+        }
+      ]
+    },
+    {
+      "query": "In Whittlestone, Inc. v. Handi-Craft Co, 618 F. 3d 970",
+      "case_name_guess": "Whittlestone, Inc. v. Handi-Craft Co",
+      "reporter_pin": "618 F.3d 970",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Whittlestone, Inc. v. Handi-Craft Co.",
+      "matched_citations": [
+        "618 F.3d 970",
+        "77 Fed. R. Serv. 3d 404",
+        "2010 U.S. App. LEXIS 17133",
+        "2010 WL 3222417"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/173487/whittlestone-inc-v-handi-craft-co/",
+          "case_name": "Whittlestone, Inc. v. Handi-Craft Co.",
+          "citations": [
+            "618 F.3d 970",
+            "77 Fed. R. Serv. 3d 404",
+            "2010 U.S. App. LEXIS 17133",
+            "2010 WL 3222417"
+          ],
+          "notes": "Search q='\"618 F.3d 970\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/f3d/618/html/0970-01.html",
+          "case_name": "Whittlestone, Inc. v. Handi-Craft Co.",
+          "citations": [
+            "618 F.3d 970"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Navarro v. Black, 250 F. 3d 729",
+      "case_name_guess": "Navarro v. Black",
+      "reporter_pin": "250 F.3d 729",
+      "wl_pin": null,
+      "consensus": "CAPTION_MISMATCH",
+      "matched_name": "Navarro v. Block",
+      "matched_citations": [
+        "250 F.3d 729",
+        "2001 WL 498270"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/7092494/navarro-v-block/",
+          "case_name": "Navarro v. Block",
+          "citations": [
+            "250 F.3d 729",
+            "2001 WL 498270"
+          ],
+          "notes": "Search q='\"250 F.3d 729\"'; cite_match=True; wl_match=False; name_match=False",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/f3d/250/html/0729-01.html",
+          "case_name": "Navarro v. Block",
+          "citations": [
+            "250 F.3d 729"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json; caption mismatch vs query name ('Navarro v. Black' vs 'Navarro v. Block')",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Orosco v. Napolitano, 598 F. 3d 222",
+      "case_name_guess": "Orosco v. Napolitano",
+      "reporter_pin": "598 F.3d 222",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Orosco v. Napolitano",
+      "matched_citations": [
+        "598 F.3d 222"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/71559/ordonez-orosco-v-napolitano/",
+          "case_name": "ORDONEZ OROSCO v. Napolitano",
+          "citations": [
+            "598 F.3d 222",
+            "78 A.L.R. Fed. 2d 711",
+            "2010 U.S. App. LEXIS 4307",
+            "2010 WL 702635"
+          ],
+          "notes": "Search q='\"598 F.3d 222\"'; cite_match=True; wl_match=False; name_match=False",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/f3d/598/html/0222-01.html",
+          "case_name": "Orosco v. Napolitano",
+          "citations": [
+            "598 F.3d 222"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "See Kay v. Ehrler, 499 U.S. 432 (1991)",
+      "case_name_guess": "Kay v. Ehrler",
+      "reporter_pin": "499 U.S. 432",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Kay v. Ehrler",
+      "matched_citations": [
+        "499 U.S. 432"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/9106342/kay-v-ehrler/",
+          "case_name": "Kay v. Ehrler",
+          "citations": [
+            "499 U.S. 432"
+          ],
+          "notes": "Search q='\"499 U.S. 432\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/us/499/html/0432-01.html",
+          "case_name": "Kay v. Ehrler",
+          "citations": [
+            "499 U.S. 432",
+            "113 L. Ed. 2d 486",
+            "111 S. Ct. 1435",
+            "1991 U.S. LEXIS 2219",
+            "SCDB 1990-057"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Soranno's Gasco, Inc. v. Morgan Hill Unified, 874 F. 2d 1310",
+      "case_name_guess": "Soranno's Gasco, Inc. v. Morgan Hill Unified",
+      "reporter_pin": "874 F.2d 1310",
+      "wl_pin": null,
+      "consensus": "CAPTION_MISMATCH",
+      "matched_name": "Soranno's Gasco, Inc. v. Morgan",
+      "matched_citations": [
+        "874 F.2d 1310",
+        "1989 WL 49315"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/8978008/sorannos-gasco-inc-v-morgan/",
+          "case_name": "Soranno's Gasco, Inc. v. Morgan",
+          "citations": [
+            "874 F.2d 1310",
+            "1989 WL 49315"
+          ],
+          "notes": "Search q='\"874 F.2d 1310\"'; cite_match=True; wl_match=False; name_match=False",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/f2d/874/html/1310-01.html",
+          "case_name": "Soranno's Gasco, Inc. v. Morgan",
+          "citations": [
+            "874 F.2d 1310"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json; caption mismatch vs query name (\"Soranno's Gasco, Inc. v. Morgan Hill Unified\" vs \"Soranno's Gasco, Inc. v. Morgan\")",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "United States v. Biao, 2011 WL 607087",
+      "case_name_guess": "United States v. Biao",
+      "reporter_pin": null,
+      "wl_pin": null,
+      "consensus": "UNKNOWN",
+      "matched_name": "",
+      "matched_citations": [],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": false,
+          "url": "https://www.courtlistener.com/api/rest/v4/search/",
+          "case_name": "",
+          "citations": [],
+          "notes": "No cite/name match in queries []",
+          "http_status": null
+        },
+        {
+          "source": "case.law_static",
+          "found": false,
+          "url": "",
+          "case_name": "",
+          "citations": [],
+          "notes": "No supported reporter pin to resolve on static.case.law",
+          "http_status": null
+        }
+      ]
+    },
+    {
+      "query": "Wilder v. Virginia Hosp. Ass'n, 496 U.S. 498 (1990)",
+      "case_name_guess": "Wilder v. Virginia Hosp. Ass'n",
+      "reporter_pin": "496 U.S. 498",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Wilder v. Virginia Hospital Ass'n",
+      "matched_citations": [
+        "496 U.S. 498",
+        "110 L. Ed. 2d 455",
+        "110 S. Ct. 2510",
+        "1990 U.S. LEXIS 3143",
+        "SCDB 1989-111"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/112461/wilder-v-virginia-hospital-assn/",
+          "case_name": "Wilder v. Virginia Hospital Assn.",
+          "citations": [
+            "110 L. Ed. 2d 455",
+            "110 S. Ct. 2510",
+            "496 U.S. 498",
+            "1990 U.S. LEXIS 3143",
+            "58 U.S.L.W. 4795"
+          ],
+          "notes": "Search q='\"496 U.S. 498\"'; cite_match=True; wl_match=False; name_match=False",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/us/496/html/0498-01.html",
+          "case_name": "Wilder v. Virginia Hospital Ass'n",
+          "citations": [
+            "496 U.S. 498",
+            "110 L. Ed. 2d 455",
+            "110 S. Ct. 2510",
+            "1990 U.S. LEXIS 3143",
+            "SCDB 1989-111"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Ashcroft v. Al-Kidd, 563 U.S. 731 (2011)",
+      "case_name_guess": "Ashcroft v. Al-Kidd",
+      "reporter_pin": "563 U.S. 731",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Ashcroft v. al-Kidd",
+      "matched_citations": [
+        "179 L. Ed. 2d 1149",
+        "131 S. Ct. 2074",
+        "563 U.S. 731",
+        "2011 U.S. LEXIS 4021"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/217703/ashcroft-v-al-kidd/",
+          "case_name": "Ashcroft v. al-Kidd",
+          "citations": [
+            "179 L. Ed. 2d 1149",
+            "131 S. Ct. 2074",
+            "563 U.S. 731",
+            "2011 U.S. LEXIS 4021"
+          ],
+          "notes": "Search q='\"563 U.S. 731\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/us/563/html/0731-01.html",
+          "case_name": "Ashcroft v. al-Kidd",
+          "citations": [
+            "563 U.S. 731",
+            "179 L. Ed. 2d 1149",
+            "131 S. Ct. 2074",
+            "SCDB 2010-052",
+            "2011 U.S. LEXIS 4021"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Bostock v. Clayton Cnty, 590 U.S. 644 (2020)",
+      "case_name_guess": "Bostock v. Clayton Cnty",
+      "reporter_pin": "590 U.S. 644",
+      "wl_pin": null,
+      "consensus": "CAPTION_MISMATCH",
+      "matched_name": "Bostock v. Clayton County",
+      "matched_citations": [
+        "590 U.S. 644",
+        "140 S. Ct. 1731",
+        "207 L. Ed. 2d 218"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/4760997/bostock-v-clayton-county/",
+          "case_name": "Bostock v. Clayton County",
+          "citations": [
+            "590 U.S. 644",
+            "140 S. Ct. 1731",
+            "207 L. Ed. 2d 218"
+          ],
+          "notes": "Search q='\"590 U.S. 644\"'; cite_match=True; wl_match=False; name_match=False",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": false,
+          "url": "https://static.case.law/us/590/CasesMetadata.json",
+          "case_name": "",
+          "citations": [],
+          "notes": "Volume metadata unavailable for us/590",
+          "http_status": 404
+        }
+      ]
+    },
+    {
+      "query": "CONCLUSION TABLE OF AUTHORITIES Cases Ashcroft v. Iqbal, 556 U.S. 662 (2009)",
+      "case_name_guess": "CONCLUSION TABLE OF AUTHORITIES Cases Ashcroft v. Iqbal",
+      "reporter_pin": "556 U.S. 662",
+      "wl_pin": null,
+      "consensus": "CAPTION_MISMATCH",
+      "matched_name": "Ashcroft v. Iqbal",
+      "matched_citations": [
+        "173 L. Ed. 2d 868",
+        "129 S. Ct. 1937",
+        "556 U.S. 662",
+        "2009 U.S. LEXIS 3472"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/145875/ashcroft-v-iqbal/",
+          "case_name": "Ashcroft v. Iqbal",
+          "citations": [
+            "173 L. Ed. 2d 868",
+            "129 S. Ct. 1937",
+            "556 U.S. 662",
+            "2009 U.S. LEXIS 3472"
+          ],
+          "notes": "Search q='\"556 U.S. 662\"'; cite_match=True; wl_match=False; name_match=False",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/us/556/html/0662-01.html",
+          "case_name": "Ashcroft v. Iqbal",
+          "citations": [
+            "556 U.S. 662",
+            "173 L. Ed. 2d 868",
+            "129 S. Ct. 1937",
+            "2009 U.S. LEXIS 3472",
+            "SCDB 2008-056"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json; caption mismatch vs query name ('CONCLUSION TABLE OF AUTHORITIES Cases Ashcroft v. Iqbal' vs 'Ashcroft v. Iqbal')",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Constitution. Catholic Charities CYO v. Chertoff, 622 F. Supp. 2d 865",
+      "case_name_guess": "Constitution. Catholic Charities CYO v. Chertoff",
+      "reporter_pin": "622 F. Supp. 2d 865",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Catholic Charities CYO v. Chertoff",
+      "matched_citations": [
+        "622 F. Supp. 2d 865",
+        "2008 U.S. Dist. LEXIS 103304",
+        "2008 WL 5385250"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/2415984/catholic-charities-cyo-v-chertoff/",
+          "case_name": "Catholic Charities CYO v. Chertoff",
+          "citations": [
+            "622 F. Supp. 2d 865",
+            "2008 U.S. Dist. LEXIS 103304",
+            "2008 WL 5385250"
+          ],
+          "notes": "Search q='\"622 F. Supp. 2d 865\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/f-supp-2d/622/html/0865-01.html",
+          "case_name": "Catholic Charities Cyo v. Chertoff",
+          "citations": [
+            "622 F. Supp. 2d 865"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Dismiss. See Paulsen v. CNF Inc, 559 F. 3d 1061",
+      "case_name_guess": "Dismiss. See Paulsen v. CNF Inc",
+      "reporter_pin": "559 F.3d 1061",
+      "wl_pin": null,
+      "consensus": "CAPTION_MISMATCH",
+      "matched_name": "Paulsen v. CNF INC.",
+      "matched_citations": [
+        "559 F.3d 1061",
+        "46 Employee Benefits Cas. (BNA) 1481",
+        "2009 U.S. App. LEXIS 5852",
+        "2009 WL 723996"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/1389232/paulsen-v-cnf-inc/",
+          "case_name": "Paulsen v. CNF INC.",
+          "citations": [
+            "559 F.3d 1061",
+            "46 Employee Benefits Cas. (BNA) 1481",
+            "2009 U.S. App. LEXIS 5852",
+            "2009 WL 723996"
+          ],
+          "notes": "Search q='\"559 F.3d 1061\"'; cite_match=True; wl_match=False; name_match=False",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/f3d/559/html/1061-01.html",
+          "case_name": "Paulsen v. CNF Inc.",
+          "citations": [
+            "559 F.3d 1061"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json; caption mismatch vs query name ('Dismiss. See Paulsen v. CNF Inc' vs 'Paulsen v. CNF Inc.')",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "District of Columbia v. Wesby, 583 U.S. 48",
+      "case_name_guess": "District of Columbia v. Wesby",
+      "reporter_pin": "583 U.S. 48",
+      "wl_pin": null,
+      "consensus": "PARTIAL",
+      "matched_name": "District of Columbia v. Wesby",
+      "matched_citations": [
+        "583 U.S. 48"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/4460853/district-of-columbia-v-wesby/",
+          "case_name": "District of Columbia v. Wesby",
+          "citations": [
+            "583 U.S. 48"
+          ],
+          "notes": "Search q='\"583 U.S. 48\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": false,
+          "url": "https://static.case.law/us/583/CasesMetadata.json",
+          "case_name": "",
+          "citations": [],
+          "notes": "Volume metadata unavailable for us/583",
+          "http_status": 404
+        }
+      ]
+    },
+    {
+      "query": "Edejer v. DHI Mortg. Co, 2009 WL 1684714",
+      "case_name_guess": "Edejer v. DHI Mortg. Co",
+      "reporter_pin": null,
+      "wl_pin": "1684714",
+      "consensus": "NOT_FOUND",
+      "matched_name": "",
+      "matched_citations": [],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": false,
+          "url": "https://www.courtlistener.com/api/rest/v4/search/",
+          "case_name": "",
+          "citations": [],
+          "notes": "No cite/name match in queries ['1684714', 'WL 1684714']",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": false,
+          "url": "",
+          "case_name": "",
+          "citations": [],
+          "notes": "No supported reporter pin to resolve on static.case.law",
+          "http_status": null
+        }
+      ]
+    },
+    {
+      "query": "Fantasy Inc. v. Fogerty, 984 F. 2d 1524",
+      "case_name_guess": "Fantasy Inc. v. Fogerty",
+      "reporter_pin": "984 F.2d 1524",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Fantasy, Inc. v. Fogerty",
+      "matched_citations": [
+        "984 F.2d 1524",
+        "1993 WL 20355"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/599277/fantasy-inc-v-fogerty/",
+          "case_name": "Fantasy, Inc. v. Fogerty",
+          "citations": [
+            "984 F.2d 1524",
+            "1993 WL 20355"
+          ],
+          "notes": "Search q='\"984 F.2d 1524\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/f2d/984/html/1524-01.html",
+          "case_name": "Fantasy, Inc. v. Fogerty",
+          "citations": [
+            "984 F.2d 1524"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Felarca v. Birgeneau, 891 F. 3d 809",
+      "case_name_guess": "Felarca v. Birgeneau",
+      "reporter_pin": "891 F.3d 809",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Felarca v. Birgeneau",
+      "matched_citations": [
+        "891 F.3d 809"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/4502868/yvette-felarca-v-robert-birgeneau/",
+          "case_name": "Yvette Felarca v. Robert Birgeneau",
+          "citations": [
+            "891 F.3d 809"
+          ],
+          "notes": "Search q='\"891 F.3d 809\"'; cite_match=True; wl_match=False; name_match=False",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/f3d/891/html/0809-01.html",
+          "case_name": "Felarca v. Birgeneau",
+          "citations": [
+            "891 F.3d 809"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Hansen v. Blue Cross, 891 F. 2d 1384",
+      "case_name_guess": "Hansen v. Blue Cross",
+      "reporter_pin": "891 F.2d 1384",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Hansen v. Blue Cross of California",
+      "matched_citations": [
+        "891 F.2d 1384"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/533832/mary-ann-hansen-v-blue-cross-of-california-ventura-county-foundation-for/",
+          "case_name": "Mary Ann Hansen v. Blue Cross of California Ventura County Foundation for Medical Care",
+          "citations": [
+            "891 F.2d 1384"
+          ],
+          "notes": "Search q='\"891 F.2d 1384\"'; cite_match=True; wl_match=False; name_match=False",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/f2d/891/html/1384-01.html",
+          "case_name": "Hansen v. Blue Cross of California",
+          "citations": [
+            "891 F.2d 1384"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Hope v. Pelzer, 536 U.S. 730",
+      "case_name_guess": "Hope v. Pelzer",
+      "reporter_pin": "536 U.S. 730",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Hope v. Pelzer",
+      "matched_citations": [
+        "153 L. Ed. 2d 666",
+        "122 S. Ct. 2508",
+        "536 U.S. 730",
+        "2002 U.S. LEXIS 4884"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/121169/hope-v-pelzer/",
+          "case_name": "Hope v. Pelzer",
+          "citations": [
+            "153 L. Ed. 2d 666",
+            "122 S. Ct. 2508",
+            "536 U.S. 730",
+            "2002 U.S. LEXIS 4884"
+          ],
+          "notes": "Search q='\"536 U.S. 730\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/us/536/html/0730-01.html",
+          "case_name": "Hope v. Pelzer",
+          "citations": [
+            "536 U.S. 730",
+            "153 L. Ed. 2d 666",
+            "122 S. Ct. 2508",
+            "2002 U.S. LEXIS 4884",
+            "SCDB 2001-081"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Mangindin v. Washington Mut. Bank, 637 F.Supp. 2d 700",
+      "case_name_guess": "Mangindin v. Washington Mut. Bank",
+      "reporter_pin": "637 F. Supp. 2d 700",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Mangindin v. Washington Mutual Bank",
+      "matched_citations": [
+        "637 F. Supp. 2d 700",
+        "2009 U.S. Dist. LEXIS 51231",
+        "2009 WL 1766601"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/2342348/mangindin-v-washington-mutual-bank/",
+          "case_name": "Mangindin v. Washington Mutual Bank",
+          "citations": [
+            "637 F. Supp. 2d 700",
+            "2009 U.S. Dist. LEXIS 51231",
+            "2009 WL 1766601"
+          ],
+          "notes": "Search q='\"637 F. Supp. 2d 700\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/f-supp-2d/637/html/0700-01.html",
+          "case_name": "Mangindin v. Washington Mutual Bank",
+          "citations": [
+            "637 F. Supp. 2d 700"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Pinard v. Clatskanie Sch. Dist, 467 F. 3d 755",
+      "case_name_guess": "Pinard v. Clatskanie Sch. Dist",
+      "reporter_pin": "467 F.3d 755",
+      "wl_pin": null,
+      "consensus": "CAPTION_MISMATCH",
+      "matched_name": "Pinard v. Clatskanie School District 6J",
+      "matched_citations": [
+        "467 F.3d 755",
+        "2006 WL 3055909"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/8439524/pinard-v-clatskanie-school-district-6j/",
+          "case_name": "Pinard v. Clatskanie School District 6J",
+          "citations": [
+            "467 F.3d 755",
+            "2006 WL 3055909"
+          ],
+          "notes": "Search q='\"467 F.3d 755\"'; cite_match=True; wl_match=False; name_match=False",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/f3d/467/html/0755-01.html",
+          "case_name": "Pinard v. Clatskanie School District 6J",
+          "citations": [
+            "467 F.3d 755"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json; caption mismatch vs query name ('Pinard v. Clatskanie Sch. Dist' vs 'Pinard v. Clatskanie School District 6J')",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Pratt v. Sumner, 807 F. 2d 817",
+      "case_name_guess": "Pratt v. Sumner",
+      "reporter_pin": "807 F.2d 817",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Pratt v. Sumner",
+      "matched_citations": [
+        "807 F.2d 817"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/480621/ray-donald-pratt-v-george-sumner/",
+          "case_name": "Ray Donald Pratt v. George Sumner",
+          "citations": [
+            "807 F.2d 817",
+            "1987 U.S. App. LEXIS 790"
+          ],
+          "notes": "Search q='\"807 F.2d 817\"'; cite_match=True; wl_match=False; name_match=False",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/f2d/807/html/0817-01.html",
+          "case_name": "Pratt v. Sumner",
+          "citations": [
+            "807 F.2d 817"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Ruiz v. Mortg. Elec. Registration Sys., Inc, 2009 WL 2390824",
+      "case_name_guess": "Ruiz v. Mortg. Elec. Registration Sys., Inc",
+      "reporter_pin": null,
+      "wl_pin": "2390824",
+      "consensus": "NOT_FOUND",
+      "matched_name": "",
+      "matched_citations": [],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": false,
+          "url": "https://www.courtlistener.com/api/rest/v4/search/",
+          "case_name": "",
+          "citations": [],
+          "notes": "No cite/name match in queries ['2390824', 'WL 2390824']",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": false,
+          "url": "",
+          "case_name": "",
+          "citations": [],
+          "notes": "No supported reporter pin to resolve on static.case.law",
+          "http_status": null
+        }
+      ]
+    },
+    {
+      "query": "See Bell Atl. Corp. v. Twombly, 550 U.S. 544 (2007)",
+      "case_name_guess": "Bell Atl. Corp. v. Twombly",
+      "reporter_pin": "550 U.S. 544",
+      "wl_pin": null,
+      "consensus": "PARTIAL",
+      "matched_name": "Bell Atlantic Corp. v. Twombly",
+      "matched_citations": [
+        "550 U.S. 544",
+        "167 L. Ed. 2d 929",
+        "127 S. Ct. 1955",
+        "2007 U.S. LEXIS 5901",
+        "SCDB 2006-045"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": false,
+          "url": "https://www.courtlistener.com/api/rest/v4/search/",
+          "case_name": "",
+          "citations": [],
+          "notes": "No cite/name match in queries ['\"550 U.S. 544\"', '\"Bell Atl. Corp. v. Twombly\"']",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/us/550/html/0544-01.html",
+          "case_name": "Bell Atlantic Corp. v. Twombly",
+          "citations": [
+            "550 U.S. 544",
+            "167 L. Ed. 2d 929",
+            "127 S. Ct. 1955",
+            "2007 U.S. LEXIS 5901",
+            "SCDB 2006-045"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "See Castillo v. Marshall, 207 F. 3d 15",
+      "case_name_guess": "Castillo v. Marshall",
+      "reporter_pin": "207 F.3d 15",
+      "wl_pin": null,
+      "consensus": "NOT_FOUND",
+      "matched_name": "",
+      "matched_citations": [],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": false,
+          "url": "https://www.courtlistener.com/api/rest/v4/search/",
+          "case_name": "",
+          "citations": [],
+          "notes": "No cite/name match in queries ['\"207 F.3d 15\"', '\"Castillo v. Marshall\"']",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": false,
+          "url": "https://static.case.law/f3d/207/CasesMetadata.json",
+          "case_name": "",
+          "citations": [],
+          "notes": "No case with first_page=15 in CAP volume f3d/207",
+          "http_status": null
+        }
+      ]
+    },
+    {
+      "query": "Sidney-Vinstein v. A.H. Robins Co, 697 F. 2d 880",
+      "case_name_guess": "Sidney-Vinstein v. A.H. Robins Co",
+      "reporter_pin": "697 F.2d 880",
+      "wl_pin": null,
+      "consensus": "FOUND",
+      "matched_name": "Sidney-Vinstein v. A.H. Robins Co.",
+      "matched_citations": [
+        "697 F.2d 880",
+        "35 Fed. R. Serv. 2d 1155"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/8926587/sidney-vinstein-v-ah-robins-co/",
+          "case_name": "Sidney-Vinstein v. A.H. Robins Co.",
+          "citations": [
+            "697 F.2d 880",
+            "35 Fed. R. Serv. 2d 1155"
+          ],
+          "notes": "Search q='\"697 F.2d 880\"'; cite_match=True; wl_match=False; name_match=True",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/f2d/697/html/0880-01.html",
+          "case_name": "Sidney-Vinstein v. A.H. Robins Co.",
+          "citations": [
+            "697 F.2d 880"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Smith v. Adepa, 81 F. 4th 994",
+      "case_name_guess": "Smith v. Adepa",
+      "reporter_pin": "81 F.4th 994",
+      "wl_pin": null,
+      "consensus": "CAPTION_MISMATCH",
+      "matched_name": "Paulette Smith v. Edward Agdeppa",
+      "matched_citations": [
+        "81 F.4th 994"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/9423443/paulette-smith-v-edward-agdeppa/",
+          "case_name": "Paulette Smith v. Edward Agdeppa",
+          "citations": [
+            "81 F.4th 994"
+          ],
+          "notes": "Search q='\"81 F.4th 994\"'; cite_match=True; wl_match=False; name_match=False",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": false,
+          "url": "https://static.case.law/f4th/81/CasesMetadata.json",
+          "case_name": "",
+          "citations": [],
+          "notes": "Volume metadata unavailable for f4th/81",
+          "http_status": 404
+        }
+      ]
+    },
+    {
+      "query": "Soranno\u2019s Gasco, Inc. v. Morgan Hill Uniifed Sch. Dist, 874 F. 2d 1310",
+      "case_name_guess": "Soranno\u2019s Gasco, Inc. v. Morgan Hill Uniifed Sch. Dist",
+      "reporter_pin": "874 F.2d 1310",
+      "wl_pin": null,
+      "consensus": "CAPTION_MISMATCH",
+      "matched_name": "Soranno's Gasco, Inc. v. Morgan",
+      "matched_citations": [
+        "874 F.2d 1310",
+        "1989 WL 49315"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/8978008/sorannos-gasco-inc-v-morgan/",
+          "case_name": "Soranno's Gasco, Inc. v. Morgan",
+          "citations": [
+            "874 F.2d 1310",
+            "1989 WL 49315"
+          ],
+          "notes": "Search q='\"874 F.2d 1310\"'; cite_match=True; wl_match=False; name_match=False",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/f2d/874/html/1310-01.html",
+          "case_name": "Soranno's Gasco, Inc. v. Morgan",
+          "citations": [
+            "874 F.2d 1310"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json; caption mismatch vs query name ('Soranno\u2019s Gasco, Inc. v. Morgan Hill Uniifed Sch. Dist' vs \"Soranno's Gasco, Inc. v. Morgan\")",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Valdez v. Allstate Ins. Co, 372 F. 3d 1115",
+      "case_name_guess": "Valdez v. Allstate Ins. Co",
+      "reporter_pin": "372 F.3d 1115",
+      "wl_pin": null,
+      "consensus": "CAPTION_MISMATCH",
+      "matched_name": "Leticia Valdez v. Allstate Insurance Company, an Illinois Corporation Allstate Indemnity Co., an Illinois Corporation",
+      "matched_citations": [
+        "372 F.3d 1115",
+        "2004 U.S. App. LEXIS 12251",
+        "2004 WL 1381720"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/786679/leticia-valdez-v-allstate-insurance-company-an-illinois-corporation/",
+          "case_name": "Leticia Valdez v. Allstate Insurance Company, an Illinois Corporation Allstate Indemnity Co., an Illinois Corporation",
+          "citations": [
+            "372 F.3d 1115",
+            "2004 U.S. App. LEXIS 12251",
+            "2004 WL 1381720"
+          ],
+          "notes": "Search q='\"372 F.3d 1115\"'; cite_match=True; wl_match=False; name_match=False",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/f3d/372/html/1115-01.html",
+          "case_name": "Valdez v. Allstate Insurance",
+          "citations": [
+            "372 F.3d 1115"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json; caption mismatch vs query name ('Valdez v. Allstate Ins. Co' vs 'Valdez v. Allstate Insurance')",
+          "http_status": 200
+        }
+      ]
+    },
+    {
+      "query": "Winter v. NRDC, Inc, 555 U.S. 7 (2008)",
+      "case_name_guess": "Winter v. NRDC, Inc",
+      "reporter_pin": "555 U.S. 7",
+      "wl_pin": null,
+      "consensus": "CAPTION_MISMATCH",
+      "matched_name": "Winter v. Natural Resources Defense Council, Inc.",
+      "matched_citations": [
+        "172 L. Ed. 2d 249",
+        "129 S. Ct. 365",
+        "555 U.S. 7",
+        "2008 U.S. LEXIS 8343",
+        "77 U.S.L.W. 4001",
+        "39 Envtl. L. Rep. (Envtl. Law Inst.) 20279",
+        "21 Fla. L. Weekly Fed. S 547",
+        "67 ERC (BNA) 1225"
+      ],
+      "sources": [
+        {
+          "source": "courtlistener",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/145928/winter-v-natural-resources-defense-council-inc/",
+          "case_name": "Winter v. Natural Resources Defense Council, Inc.",
+          "citations": [
+            "172 L. Ed. 2d 249",
+            "129 S. Ct. 365",
+            "555 U.S. 7",
+            "2008 U.S. LEXIS 8343",
+            "77 U.S.L.W. 4001",
+            "39 Envtl. L. Rep. (Envtl. Law Inst.) 20279",
+            "21 Fla. L. Weekly Fed. S 547",
+            "67 ERC (BNA) 1225"
+          ],
+          "notes": "Search q='\"555 U.S. 7\"'; cite_match=True; wl_match=False; name_match=False",
+          "http_status": 200
+        },
+        {
+          "source": "case.law_static",
+          "found": true,
+          "url": "https://static.case.law/us/555/html/0007-01.html",
+          "case_name": "Winter v. Natural Resources Defense Council, Inc.",
+          "citations": [
+            "555 U.S. 7",
+            "172 L. Ed. 2d 249",
+            "129 S. Ct. 365",
+            "2008 U.S. LEXIS 8343",
+            "SCDB 2008-003"
+          ],
+          "notes": "Exact first_page match in CAP CasesMetadata.json; caption mismatch vs query name ('Winter v. NRDC, Inc' vs 'Winter v. Natural Resources Defense Council, Inc.')",
+          "http_status": 200
+        }
+      ]
+    }
+  ]
+}

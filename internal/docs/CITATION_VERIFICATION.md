@@ -1,6 +1,6 @@
 # Citation Verification Ledger
 
-Generated 2026-08-28 by `verify-citations.py`. Joins the PR #490 citation index to the July / Matter-28 citation audit, then overlays Round 4+ verification results (WebSearch + CourtListener/CAP multisource confirmation).
+Generated 2026-08-27 by `verify-citations.py`. Joins the PR #490 citation index to the July / Matter-28 citation audit, then overlays Round 4+ verification results (WebSearch + CourtListener/CAP multisource confirmation).
 
 ## Why this exists
 
@@ -10,14 +10,14 @@ The campaign is entering a phase where claims are cognizable and motions to dism
 
 | Status | Count |
 |---|---|
-| UNVERIFIED | 429 |
-| VERIFIED | 353 |
-| MISCITED | 26 |
+| UNVERIFIED | 497 |
+| VERIFIED | 385 |
+| MISCITED | 27 |
 | MISCHARACTERIZED | 6 |
 | NOT_FOUND | 6 |
 
-**Plaintiff-only + still UNVERIFIED (P0 queue): 8**  
-**Plaintiff-only + bad status (P1): 27**
+**Plaintiff-only + still UNVERIFIED (P0 queue): 58**  
+**Plaintiff-only + bad status (P1): 28**
 
 ## Method controls
 
@@ -35,7 +35,7 @@ The campaign is entering a phase where claims are cognizable and motions to dism
 
 ## Known fabricated / hard NOT_FOUND — live locations
 
-### In re Leman, 66 Cal.App.5th 200 — 16 hits (12 in plaintiff filings)
+### In re Leman, 66 Cal.App.5th 200 — 18 hits (14 in plaintiff filings)
 
 _July audit: likely fabricated. Negative control for verification method._
 
@@ -45,13 +45,13 @@ _July audit: likely fabricated. Negative control for verification method._
 - M9 `/documents/matter-09/Amended Notice of Hearing on Petition for Writ of Mandate.pdf` p.62 — plaintiff_filing
 - M9 `/documents/matter-09/WOM_Opening Brief.pdf` p.10 — plaintiff_filing
 - M9 `/documents/matter-09/WOM_Opening Brief.pdf` p.19 — plaintiff_filing
+- M19 `/documents/matter-19/HC-004 Notice and Request for Ruling Packet (with Exhibit A — Unstamped Petition) (Ready to File Aug 17 2026).pdf` p.11 — plaintiff_filing
 - M19 `/documents/matter-19/HC-004 Notice and Request for Ruling Packet (with Exhibit A — Unstamped Petition) (Ready to File Aug 7 2026).pdf` p.11 — plaintiff_filing
 - M19 `/documents/matter-19/Petition for Writ of Habeas Corpus (filed Apr. 3, 2026).pdf` p.9 — plaintiff_filing
 - M9 `/documents/matter-09/31626-43188-NTCHNG_69ce9f1e7ab52 2.pdf` p.52 — other
 - M9 `/documents/matter-09/31626-43188-NTCHNG_69ce9f1e7ab52 2.pdf` p.61 — other
 - M9 `/documents/matter-09/Amended Notice of Hearing on Petition for Writ of Mandate.pdf` p.53 — plaintiff_filing
-- M9 `/documents/matter-09/Amended Notice of Hearing on Petition for Writ of Mandate.pdf` p.62 — plaintiff_filing
-- …and 4 more
+- …and 6 more
 
 ### Friends of the Trinity River, 184 Cal.App.4th 1466 — 2 hits (0 in plaintiff filings)
 
@@ -81,7 +81,7 @@ _Matter 28 Round 3: table page hosts unrelated dispositions._
 - M28 `/documents/matter-28/research/Research Note - Strongest Clearly Established Right to Invoke.pdf` p.16 — other
 - M28 `/documents/matter-28/research/Research Note - Strongest Clearly Established Right to Invoke.pdf` p.16 — other
 
-### Burrell v. Jackson, 2003 WL 23545858 — 17 hits (13 in plaintiff filings)
+### Burrell v. Jackson, 2003 WL 23545858 — 18 hits (14 in plaintiff filings)
 
 _Round 4: no matching absolute-immunity hearing-officer decision at that WL number._
 
@@ -96,20 +96,20 @@ _Round 4: no matching absolute-immunity hearing-officer decision at that WL numb
 - M33 `/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal 3 Operative.pdf` p.43 — plaintiff_filing
 - M33 `/documents/matter-33/ndcal/Complaint Ngwa Nforbi v Candelaria and Gordon NDCal.pdf` p.43 — plaintiff_filing
 - M33 `/documents/matter-33/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf` p.43 — plaintiff_filing
-- M7 `/documents/matter-33/from-07/Objections to FR Newanforbi v Candelaria BOLSTERED 3.pdf` p.4 — plaintiff_filing
-- …and 5 more
+- M33 `/documents/matter-33/ndcal/Notice Identifying Operative First Amended Complaint (Candelaria) (Aug 24 2026).pdf` p.1 — plaintiff_filing
+- …and 6 more
 
 ## P1 — Plaintiff-only authorities with bad audit/round status
 
 | Uses | Status | Authority | Matters |
 |---|---|---|---|
-| 11 | MISCHARACTERIZED | California Highway Patrol v. Superior Court, 158 Cal.App. 4th 726 (200 | 9, 19 |
-| 11 | MISCHARACTERIZED | People v. Rizo, 22 Cal. 4th 681 (2000) | 9, 19 |
+| 12 | MISCHARACTERIZED | California Highway Patrol v. Superior Court, 158 Cal.App. 4th 726 (200 | 9, 19 |
+| 12 | MISCHARACTERIZED | People v. Rizo, 22 Cal. 4th 681 (2000) | 9, 19 |
+| 9 | NOT_FOUND | In re Leman, 66 Cal.App. 5th 200 (2021) | 9, 19 |
 | 9 | MISCHARACTERIZED | Pomona Police Officers' Ass'n v. City of Pomona, 58 Cal.App. 4th 578 ( | 9 |
-| 8 | NOT_FOUND | In re Leman, 66 Cal.App. 5th 200 (2021) | 9, 19 |
-| 7 | MISCITED | Rodriguez v. United States, 575 U.S. 348 (2015) | 1, 32 |
+| 9 | MISCITED | Rodriguez v. United States, 575 U.S. 348 (2015) | 1, 32 |
+| 7 | MISCITED | In re Hudson, 1 Cal.App. 4th 1 (2006) | 5, 15, 19 |
 | 6 | MISCITED | Home v. Dep't of Health Care Services, 204 Cal.App. 4th 676 (2012) | 9 |
-| 6 | MISCITED | In re Hudson, 1 Cal.App. 4th 1 (2006) | 5, 15, 19 |
 | 6 | MISCITED | People v. Superior Court, 25 Cal. 4th 703 (2001) | 9 |
 | 6 | MISCHARACTERIZED | Pomona Police Officers’ Ass’n v. City of Pomona, 58 Cal.App. 4th 578 ( | 9 |
 | 5 | MISCITED | Caldwell v. Montoya, 10 Cal. 4th 972 (1995) | 14, 15, 16 |
@@ -117,12 +117,13 @@ _Round 4: no matching absolute-immunity hearing-officer decision at that WL numb
 | 3 | MISCITED | County of Contra Costa v. State of California, 177 Cal.App. 3d 62 (198 | 9 |
 | 3 | MISCITED | Home v. Dep’t of Health Care Services, 204 Cal.App. 4th 676 (2012) | 9 |
 | 3 | MISCHARACTERIZED | See California Highway Patrol v. Superior Court, 158 Cal.App. 4th 726  | 9 |
+| 3 | MISCITED | See Rodriguez v. United States, 575 U.S. 348 (2015) | 32 |
 | 2 | MISCITED | California, Ltd. v. Dry Creek Joint Elementary Sch. Dist, 50 Cal.App.  | 20, 32 |
-| 2 | MISCITED | See Rodriguez v. United States, 575 U.S. 348 (2015) | 32 |
 | 2 | MISCITED | Soranno's Gasco, Inc. v. Morgan Hill Unified, 874 F. 2d 1310 | 24, 32 |
 | 2 | MISCITED | Swift v. Christian, 384 F. 3d 1184 | 30 |
 | 2 | MISCITED | Unicorn Glob., Inc. v. Hillo Am., Inc, 2021 WL 1034838 | 29 |
 | 1 | MISCITED | Accurate and Amazon. Los Angeles Cath. Worker v. Los Angeles Downtown  | 29 |
+| 1 | MISCITED | Ashcroft v. Iqbals, 556 U.S. 662 (2009) | 33 |
 | 1 | MISCITED | Cases Ashcroft v. Iqbal, 556 U.S. 662 | 29 |
 | 1 | MISCITED | Chubb v. Sullivan, 2014 WL 2807986 | 28 |
 | 1 | MISCITED | Jessie v. United States, 79 M.J. 437 | 28 |
@@ -137,22 +138,72 @@ Asserted only in Plaintiff's filings; no court order or opposing brief in the co
 
 | Uses | Authority | Matters | Sample page |
 |---|---|---|---|
+| 7 | Gonzalez v. Trevino, 602 U.S. 653 (2024) | 32 | p.19 |
+| 7 | Sialoi v. City of San Diego, 823 F. 3d 1223 | 32 | p.15 |
+| 7 | United States v. Lopez, 482 F. 3d 1067 | 32 | p.15 |
+| 7 | United States v. Ngumezi, 980 F. 3d 1285 | 32 | p.16 |
+| 6 | Galbraith v. County of, 307 F. 3d 1119 | 32 | p.23 |
+| 5 | Behan v. Alexis, 116 Cal.App. 3d 403 (1981) | 33 | p.15 |
+| 5 | S v. JSS Scandinavia, 142 F. 3d 1150 | 25, 26 | p.7 |
+| 4 | Benavidez v. County of San Diego, 993 F. 3d 9 | 32 | p.13 |
+| 4 | Devenpeck v. Alford, 543 U.S. 11 (2004) | 32 | p.15 |
 | 3 | Califomia DUI Lawyers Ass'n v. DMV, 77 Cal.App. 5th 517 (2022) | 33 | p.4 |
-| 1 | Califomia v. Carney, 471 U.S. 386 (1985) | 32 | p.19 |
-| 1 | Devenpeck v. Alford, 3 U.S. 146 (2004) | 32 | p.22 |
-| 1 | Galbraith v. County of, 307 F. 3d 1119 | 32 | p.23 |
+| 3 | Kanter v. Warner-Lambert Co, 265 F. 3d 853 | 25, 26 | p.6 |
+| 3 | Kenneth Rothschild Trust v. Morgan Stanley Dean Witter, 199 F.Supp. 2d | 25, 26 | p.7 |
+| 3 | See Lew v. Moss, 797 F. 2d 747 | 25, 26 | p.6 |
+| 2 | Burns v. Windsor Ins. Co, 31 F. 3d 1092 | 25 | p.7 |
+| 2 | Califomia v. Carney, 471 U.S. 386 (1985) | 32 | p.19 |
+| 2 | California DUILawyers Ass'n v. DMV, 11 Cal.App. 5th 517 (2022) | 33 | p.23 |
+| 2 | California DUl Lawyers Ass'n v. DMV, 11 Cal.App. 5th 517 (2022) | 33 | p.33 |
+| 2 | Devenpeck v. Alford, 3 U.S. 146 (2004) | 32 | p.22 |
+| 2 | Lacey v. Maricopa County, 693 F. 3d 896 | 32, 33 | p.2 |
+| 2 | See Camara v. Municipal, 387 U.S. 523 (1967) | 32 | p.26 |
+| 2 | See Fermino v. Fedco, Inc, 7 Cal. 4th 701 (1994) | 35 | p.16 |
+| 1 | Angus v. Shiley, Inc, 989 F. 2d 142 | 25 | p.7 |
+| 1 | Annondo v. Dep't of Motor Vehicles, 15 Cal.App. 4th 1174 (1993) | 33 | p.15 |
+| 1 | Arias v. Residence Inn, 936 F. 3d 920 | 25 | p.7 |
+| 1 | Armondo v. Dep'lofMotor Vehicles, 15 Cal.App. 4th 1174 (1993) | 33 | p.15 |
+| 1 | Brown v. TexaSy, 443 U.S. 47 (1979) | 33 | p.17 |
+| 1 | Chavez v. JPMorgan Chase, 888 F. 3d 413 | 25 | p.7 |
+| 1 | Davenport v. Mutual Ben. Health, 325 F. 3d 785 | 25 | p.8 |
+| 1 | Florida v. Royery, 460 U.S. 491 (1983) | 33 | p.17 |
+| 1 | Fritsch v. Swift Transp. Co, 899 F. 3d 785 | 25 | p.11 |
+| 1 | Gibson v. Chrysler Corp, 261 F. 3d 927 | 25 | p.12 |
+| 1 | Goldberg v. CPC Int’l, Inc, 678 F. 2d 1365 | 25 | p.7 |
+| 1 | Guglielmino v. McKee Foods Corp, 506 F. 3d 696 | 25 | p.8 |
+| 1 | Hernandez v. Regents of, 2009 WL 6045700 (2009) | 25 | p.10 |
+| 1 | Hertz Corp. v. Friend, 559 U.S. 77 (2010) | 25 | p.5 |
 | 1 | ICnudsen v. DMV, 101 Cal.App. 5th 186 (2024) | 33 | p.23 |
+| 1 | Idaho v. Coeiir, 521 U.S. 261 (1997) | 33 | p.41 |
+| 1 | In Aucina v. Amoco Oil Co, 871 F. Supp. 332 | 25 | p.13 |
+| 1 | Kantor v. Wellesley Galleries, Ltd, 704 F. 2d 1088 | 25 | p.6 |
 | 1 | Kjiudsen v. DMV, 101 Cal.App. 5th 186 (2024) | 33 | p.32 |
-| 1 | See Camara v. Municipal, 387 U.S. 523 (1967) | 32 | p.26 |
+| 1 | Kmidsen v. DMV, 101 Cal.App. 5th 186 (2024) | 33 | p.4 |
+| 1 | Knudsen v. DMF, 101 Cal.App. 5th 186 (2024) | 33 | p.4 |
+| 1 | Knudsen v. DMVy, 101 Cal.App. 5th 186 (2024) | 33 | p.33 |
+| 1 | Lewis v. Verizon Commc’ns, Inc, 627 F. 3d 395 | 25 | p.7 |
+| 1 | McDonnell v. DMVy, 45 Cal.App. 3d 653 (1975) | 33 | p.17 |
+| 1 | Mercer v. DMVy, 53 Cal. 3d 753 (1991) | 33 | p.17 |
+| 1 | Notice of Removal. Savelson v. W. States Bankcard Ass’n, 731 F. 2d 142 | 25 | p.6 |
+| 1 | People v. MedinOy, 12 Cal. 3d 484 (1972) | 33 | p.17 |
+| 1 | People v. TorreSy, 11 Cal.App. 4th 977 (2009) | 33 | p.17 |
+| 1 | Rabago-Alvarez v. Dart Industries, Inc, 55 Cal. App. 3d 91 (1976) | 25 | p.9 |
+| 1 | Sanchez v. Monumental Life Ins. Co, 102 F. 3d 398 | 25 | p.8 |
+| 1 | See Smith v. Brown-Forman Distillers Corp, 196 Cal. App. 3d 503 (1989) | 25 | p.9 |
+| 1 | Simmons v. PCR Technology, 209 F.Supp. 2d 1029 | 25 | p.7 |
+| 1 | State Farm Mut. Auto Ins. Co. v. Dyer, 19 F. 3d 514 | 25 | p.6 |
 | 1 | Swift v. Califomia, 384 F. 3d 1184 | 33 | p.42 |
+| 1 | Villa v. Maricopa County, 865 F. 3d 8 | 33 | p.38 |
+| 1 | Weyhe v. Wal-Mart Stores, Inc, 2010 WL 3411462 | 25 | p.10 |
+| 1 | White v. FCI USA, Inc, 319 F. 3d 672 | 25 | p.10 |
 
-_8 total in JSON `priorityQueue`._
+_58 total in JSON `priorityQueue`._
 
 ## Round overlay
 
-Loaded round: **2026-08-09 Round 4 — portfolio P0 (batches A–D; LACW WL correction); Round 5 multisource (CourtListener + CAP); Round 5b Matter 28 full funnel; Round 6 spot-check of the Matter 33 conformed complaint (3:26-cv-08272-LJC, Dkt. 1) page-43 immunity sentence; Round 7 authorities cited in the Serrato IFP screening order (Matter 24, Dkt. 5) after OCR made that scan searchable; Round 8 — OCR tranche (16 plaintiff filings + court orders: Matters 5/12/15/25/26/33, Barocio opinion)** — 278 results
+Loaded round: **2026-08-09 Round 4 — portfolio P0 (batches A–D; LACW WL correction); Round 5 multisource (CourtListener + CAP); Round 5b Matter 28 full funnel; Round 6 spot-check of the Matter 33 conformed complaint (3:26-cv-08272-LJC, Dkt. 1) page-43 immunity sentence; Round 7 authorities cited in the Serrato IFP screening order (Matter 24, Dkt. 5) after OCR made that scan searchable; Round 8 — OCR tranche (16 plaintiff filings + court orders: Matters 5/12/15/25/26/33, Barocio opinion); Round 9 — Matter 24 Serrato Opp v4 final citation/quotation verification pass (2026-08-27)** — 305 results
 
-Method note: Round 4: WebSearch after Richardson(+) / Leman(−) controls. Round 5: CourtListener /api/rest/v4/search/ + CAP static.case.law for controls/high-risk. Round 5b: all Matter 28 indexed authorities through lookup-citations.py --matter 28 (→ citation_lookup_matter28.json). Justia Cloudflare-blocked; Scholar unreliable; api.case.law JSON and CL citation-lookup need auth. Existence FOUND does not clear prior MISCHARACTERIZED/MISCITED proposition problems. Table-page F.3d pins can host multiple dispositions — do not treat first CL hit as unique. Round 7: the June 29, 2026 Serrato IFP/screening order was an image-only scan contributing nothing to the index until internal/scripts/ocr-text-layer.py added a text layer; its authorities were then probed through lookup-citations.py (→ citation_lookup_serrato_order.json) behind the same Richardson(+) / Leman(−) controls. These are a court's own citations, so they carry role court_order and never enter the plaintiff-only P0/P1 queues. Round 8: after ocr-text-layer.py on the 16-document plaintiff_filing/court_order tranche, probed new P0 Matter 12/15 authorities (citation_lookup_matter12_p0.json) and Barocio screening-order authorities (citation_lookup_barocio_order.json). McCorkle manually confirmed on CourtListener when CAP lacked cal2d/70.
+Method note: Round 4: WebSearch after Richardson(+) / Leman(−) controls. Round 5: CourtListener /api/rest/v4/search/ + CAP static.case.law for controls/high-risk. Round 5b: all Matter 28 indexed authorities through lookup-citations.py --matter 28 (→ citation_lookup_matter28.json). Justia Cloudflare-blocked; Scholar unreliable; api.case.law JSON and CL citation-lookup need auth. Existence FOUND does not clear prior MISCHARACTERIZED/MISCITED proposition problems. Table-page F.3d pins can host multiple dispositions — do not treat first CL hit as unique. Round 7: the June 29, 2026 Serrato IFP/screening order was an image-only scan contributing nothing to the index until internal/scripts/ocr-text-layer.py added a text layer; its authorities were then probed through lookup-citations.py (→ citation_lookup_serrato_order.json) behind the same Richardson(+) / Leman(−) controls. These are a court's own citations, so they carry role court_order and never enter the plaintiff-only P0/P1 queues. Round 8: after ocr-text-layer.py on the 16-document plaintiff_filing/court_order tranche, probed new P0 Matter 12/15 authorities (citation_lookup_matter12_p0.json) and Barocio screening-order authorities (citation_lookup_barocio_order.json). McCorkle manually confirmed on CourtListener when CAP lacked cal2d/70. Round 9: Matter 24 Opposition v4 — npm citations:index + citations:lookup:matter --matter 24 (→ citation_lookup_matter24.json); quote needles checked against CAP static.case.law HTML (Whittlestone/Lopez/Noll/Perry/Twombly/Iqbal/Wade/Knievel/Erickson/Ford) and CA9 PDF (Capp); fixed Garity miscitation, Whittlestone non-opinion paraphrase, Perry/Twombly wording, and removed unused Lewis/Shanks TOA entries; Bureerong manually FOUND on CL+CAP.
 
 ## Regenerating
 ```

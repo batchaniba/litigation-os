@@ -154,7 +154,8 @@ class PleadingPaper:
 
     def write_wrapped(self, text, bold=False, font="Times-Roman", size=FONT_SIZE,
                       italic=False, indent=0, first_indent=36):
-        avail = CONTENT_WIDTH - indent
+        # 3pt safety inset keeps glyphs from visually kissing the right rule.
+        avail = CONTENT_WIDTH - indent - 3
         segs = self._parse_segments(text)
         lines = self._wrap_segments(segs, avail, first_indent, size)
         c = self.c
@@ -220,12 +221,12 @@ class PleadingPaper:
         c = self.c
         box_left_x = CONTENT_LEFT
         box_right_x = CONTENT_LEFT + CONTENT_WIDTH * 0.52
-        right_col_x = box_right_x + 10
+        right_col_x = box_right_x + 12
         start_line = self.current_line
         self._ensure_line()
         first_y = self._line_y(self.current_line)
-        box_top = first_y + 11
-        left_x_pad = 6
+        box_top = first_y + 14
+        left_x_pad = 8
         rows = max(len(left), len(right))
         for i in range(rows):
             y = first_y - i * tight_lh
@@ -247,8 +248,8 @@ class PleadingPaper:
                 else: fn = "Times-Roman"
                 c.setFont(fn, caption_size)
                 c.drawString(right_col_x, y, rt)
-        last_left_y = first_y - (len(left) - 1) * tight_lh
-        box_bottom = last_left_y - 8
+        last_row_y = first_y - (max(len(left), len(right)) - 1) * tight_lh
+        box_bottom = last_row_y - 8
         if boxed:
             c.setLineWidth(0.75)
             c.line(VERT_LINE_RIGHT, box_top, box_right_x, box_top)

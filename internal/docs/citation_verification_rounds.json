@@ -1,6 +1,6 @@
 {
-  "round": "2026-08-09 Round 4 — portfolio P0 (batches A–D; LACW WL correction); Round 5 multisource (CourtListener + CAP); Round 5b Matter 28 full funnel; Round 6 spot-check of the Matter 33 conformed complaint (3:26-cv-08272-LJC, Dkt. 1) page-43 immunity sentence; Round 7 authorities cited in the Serrato IFP screening order (Matter 24, Dkt. 5) after OCR made that scan searchable; Round 8 — OCR tranche (16 plaintiff filings + court orders: Matters 5/12/15/25/26/33, Barocio opinion)",
-  "method": "Round 4: WebSearch after Richardson(+) / Leman(−) controls. Round 5: CourtListener /api/rest/v4/search/ + CAP static.case.law for controls/high-risk. Round 5b: all Matter 28 indexed authorities through lookup-citations.py --matter 28 (→ citation_lookup_matter28.json). Justia Cloudflare-blocked; Scholar unreliable; api.case.law JSON and CL citation-lookup need auth. Existence FOUND does not clear prior MISCHARACTERIZED/MISCITED proposition problems. Table-page F.3d pins can host multiple dispositions — do not treat first CL hit as unique. Round 7: the June 29, 2026 Serrato IFP/screening order was an image-only scan contributing nothing to the index until internal/scripts/ocr-text-layer.py added a text layer; its authorities were then probed through lookup-citations.py (→ citation_lookup_serrato_order.json) behind the same Richardson(+) / Leman(−) controls. These are a court's own citations, so they carry role court_order and never enter the plaintiff-only P0/P1 queues. Round 8: after ocr-text-layer.py on the 16-document plaintiff_filing/court_order tranche, probed new P0 Matter 12/15 authorities (citation_lookup_matter12_p0.json) and Barocio screening-order authorities (citation_lookup_barocio_order.json). McCorkle manually confirmed on CourtListener when CAP lacked cal2d/70.",
+  "round": "2026-08-09 Round 4 \u2014 portfolio P0 (batches A\u2013D; LACW WL correction); Round 5 multisource (CourtListener + CAP); Round 5b Matter 28 full funnel; Round 6 spot-check of the Matter 33 conformed complaint (3:26-cv-08272-LJC, Dkt. 1) page-43 immunity sentence; Round 7 authorities cited in the Serrato IFP screening order (Matter 24, Dkt. 5) after OCR made that scan searchable; Round 8 \u2014 OCR tranche (16 plaintiff filings + court orders: Matters 5/12/15/25/26/33, Barocio opinion); Round 9 \u2014 Matter 24 Serrato Opp v4 final citation/quotation verification pass (2026-08-27)",
+  "method": "Round 4: WebSearch after Richardson(+) / Leman(\u2212) controls. Round 5: CourtListener /api/rest/v4/search/ + CAP static.case.law for controls/high-risk. Round 5b: all Matter 28 indexed authorities through lookup-citations.py --matter 28 (\u2192 citation_lookup_matter28.json). Justia Cloudflare-blocked; Scholar unreliable; api.case.law JSON and CL citation-lookup need auth. Existence FOUND does not clear prior MISCHARACTERIZED/MISCITED proposition problems. Table-page F.3d pins can host multiple dispositions \u2014 do not treat first CL hit as unique. Round 7: the June 29, 2026 Serrato IFP/screening order was an image-only scan contributing nothing to the index until internal/scripts/ocr-text-layer.py added a text layer; its authorities were then probed through lookup-citations.py (\u2192 citation_lookup_serrato_order.json) behind the same Richardson(+) / Leman(\u2212) controls. These are a court's own citations, so they carry role court_order and never enter the plaintiff-only P0/P1 queues. Round 8: after ocr-text-layer.py on the 16-document plaintiff_filing/court_order tranche, probed new P0 Matter 12/15 authorities (citation_lookup_matter12_p0.json) and Barocio screening-order authorities (citation_lookup_barocio_order.json). McCorkle manually confirmed on CourtListener when CAP lacked cal2d/70. Round 9: Matter 24 Opposition v4 \u2014 npm citations:index + citations:lookup:matter --matter 24 (\u2192 citation_lookup_matter24.json); quote needles checked against CAP static.case.law HTML (Whittlestone/Lopez/Noll/Perry/Twombly/Iqbal/Wade/Knievel/Erickson/Ford) and CA9 PDF (Capp); fixed Garity miscitation, Whittlestone non-opinion paraphrase, Perry/Twombly wording, and removed unused Lewis/Shanks TOA entries; Bureerong manually FOUND on CL+CAP.",
   "controls": {
     "positive": {
       "citation": "Richardson v. McKnight, 521 U.S. 399 (1997)",
@@ -23,7 +23,7 @@
     {
       "citation": "Baker v. Bzydra, 2019 WL 6619348",
       "status": "VERIFIED",
-      "notes": "Real and correctly characterized, but the party name is misspelled in our filing: the decision is Baker v. Bzdyra, No. 3:18-cv-01792, 2019 WL 6619348 (D. Conn. Dec. 5, 2019) — defendant Michael Bzdyra, Connecticut DMV Commissioner. Holds DMV hearing officer James Quinn absolutely immune for acts within his hearing-officer capacity even if taken in bad faith, and the DMV presenter/prosecutor immune under Butz v. Economou. That supports the Matter 33 complaint's use of it at Dkt. 1 p.43 as adverse out-of-circuit authority to be distinguished. Other courts also render the name 'Bzydra' when citing it (Reus v. Arthur (N.D.N.Y. 2020); Cerame v. Lamont (D. Conn. 2022)), so the spelling is not itself a fabrication signal. Contrast the companion cite in the same sentence, Burrell v. Jackson, 2003 WL 23545858, which remains NOT_FOUND.",
+      "notes": "Real and correctly characterized, but the party name is misspelled in our filing: the decision is Baker v. Bzdyra, No. 3:18-cv-01792, 2019 WL 6619348 (D. Conn. Dec. 5, 2019) \u2014 defendant Michael Bzdyra, Connecticut DMV Commissioner. Holds DMV hearing officer James Quinn absolutely immune for acts within his hearing-officer capacity even if taken in bad faith, and the DMV presenter/prosecutor immune under Butz v. Economou. That supports the Matter 33 complaint's use of it at Dkt. 1 p.43 as adverse out-of-circuit authority to be distinguished. Other courts also render the name 'Bzydra' when citing it (Reus v. Arthur (N.D.N.Y. 2020); Cerame v. Lamont (D. Conn. 2022)), so the spelling is not itself a fabrication signal. Contrast the companion cite in the same sentence, Burrell v. Jackson, 2003 WL 23545858, which remains NOT_FOUND.",
       "sources": [
         "https://ecf.ctd.uscourts.gov/cgi-bin/show_public_doc?2018cv1792-29=",
         "https://storage.courtlistener.com/recap/gov.uscourts.ctd.146729/gov.uscourts.ctd.146729.23.0.pdf"
@@ -48,7 +48,7 @@
     {
       "citation": "California Highway Patrol v. Superior Court, 158 Cal.App. 4th 726 (2008)",
       "status": "MISCHARACTERIZED",
-      "notes": "Real at 158 Cal.App.4th 726 (Department of the California Highway Patrol v. Superior Court) — motorcycle-helmet 'fix-it' ticket / correctable-offense dispute. Index context attributes a California administrative-law 'taint' doctrine. That proposition is not this case. Do not brief as taint authority. Round 5 multisource (FOUND): CourtListener + CAP static.case.law → Department of California Highway Patrol v. Superior Court.",
+      "notes": "Real at 158 Cal.App.4th 726 (Department of the California Highway Patrol v. Superior Court) \u2014 motorcycle-helmet 'fix-it' ticket / correctable-offense dispute. Index context attributes a California administrative-law 'taint' doctrine. That proposition is not this case. Do not brief as taint authority. Round 5 multisource (FOUND): CourtListener + CAP static.case.law \u2192 Department of California Highway Patrol v. Superior Court.",
       "sources": [
         "https://www.syfert.com/california/cases/158-cal-app-4th-726/department-of-california-highway-patrol-v-superior-court",
         "https://www.courtlistener.com/opinion/2244860/department-of-california-highway-patrol-v-superior-court/",
@@ -58,7 +58,7 @@
     {
       "citation": "People v. Rizo, 22 Cal. 4th 681 (2000)",
       "status": "MISCHARACTERIZED",
-      "notes": "Real at 22 Cal.4th 681 — Penal Code § 113 / Proposition 187 false-documents / factual-impossibility case. Index context attributes a surplusage / 'up to' statutory-construction holding. Wrong proposition. Do not brief Rizo for surplusage. Round 5 multisource (FOUND): CourtListener + CAP static.case.law → People v. Rizo.",
+      "notes": "Real at 22 Cal.4th 681 \u2014 Penal Code \u00a7 113 / Proposition 187 false-documents / factual-impossibility case. Index context attributes a surplusage / 'up to' statutory-construction holding. Wrong proposition. Do not brief Rizo for surplusage. Round 5 multisource (FOUND): CourtListener + CAP static.case.law \u2192 People v. Rizo.",
       "sources": [
         "https://scocal.stanford.edu/opinion/people-v-rizo-32111",
         "https://www.courtlistener.com/opinion/1316085/people-v-rizo/",
@@ -68,7 +68,7 @@
     {
       "citation": "Stump v. Sparkman, 435 U.S. 349 (1978)",
       "status": "VERIFIED",
-      "notes": "Canonical absolute judicial immunity decision. Matches immunity briefing. Round 5 multisource (FOUND): CourtListener + CAP static.case.law → Stump v. Sparkman.",
+      "notes": "Canonical absolute judicial immunity decision. Matches immunity briefing. Round 5 multisource (FOUND): CourtListener + CAP static.case.law \u2192 Stump v. Sparkman.",
       "sources": [
         "https://supreme.justia.com/cases/federal/us/435/349/",
         "https://www.courtlistener.com/opinion/109820/stump-v-sparkman/",
@@ -78,13 +78,13 @@
     {
       "citation": "Pomona Police Officers' Ass'n v. City of Pomona, 58 Cal.App. 4th 578 (1997)",
       "status": "MISCHARACTERIZED",
-      "notes": "Real at 58 Cal.App.4th 578 — PERS retirement-conversion option / mandate for economic benefits. Index context uses it for 'agency exercises discretion under an unlawful standard' mandate doctrine. That is not Pomona's holding. Replace with a true mandate/abuse-of-discretion authority.",
+      "notes": "Real at 58 Cal.App.4th 578 \u2014 PERS retirement-conversion option / mandate for economic benefits. Index context uses it for 'agency exercises discretion under an unlawful standard' mandate doctrine. That is not Pomona's holding. Replace with a true mandate/abuse-of-discretion authority.",
       "sources": [
         "https://app.midpage.ai/document/pomona-police-officers-ass-n-2272474"
       ]
     },
     {
-      "citation": "Pomona Police Officers’ Ass’n v. City of Pomona, 58 Cal.App. 4th 578 (1997)",
+      "citation": "Pomona Police Officers\u2019 Ass\u2019n v. City of Pomona, 58 Cal.App. 4th 578 (1997)",
       "status": "MISCHARACTERIZED",
       "notes": "Duplicate index row (curly apostrophe). Same problem as straight-apostrophe Pomona entry.",
       "sources": [
@@ -94,7 +94,7 @@
     {
       "citation": "Lungren v. Deukmejian, 45 Cal. 3d 727 (1988)",
       "status": "VERIFIED",
-      "notes": "Real at 45 Cal.3d 727 — constitutional confirmation of gubernatorial nominee. Existence OK; if briefed solely for surplusage canons, pin to the construction discussion carefully or prefer a cleaner surplusage case.",
+      "notes": "Real at 45 Cal.3d 727 \u2014 constitutional confirmation of gubernatorial nominee. Existence OK; if briefed solely for surplusage canons, pin to the construction discussion carefully or prefer a cleaner surplusage case.",
       "sources": [
         "https://scocal.stanford.edu/opinion/lungren-v-deukmejian-31008"
       ]
@@ -134,7 +134,7 @@
     {
       "citation": "Forrester v. White, 484 U.S. 219 (1988)",
       "status": "VERIFIED",
-      "notes": "Real — absolute immunity is function-based; employment decisions by judges are not judicial acts. Matches functional-immunity briefing.",
+      "notes": "Real \u2014 absolute immunity is function-based; employment decisions by judges are not judicial acts. Matches functional-immunity briefing.",
       "sources": [
         "https://www.govinfo.gov/content/pkg/USREPORTS-484/pdf/USREPORTS-484-219.pdf"
       ]
@@ -142,7 +142,7 @@
     {
       "citation": "Home v. Dep't of Health Care Services, 204 Cal.App. 4th 676 (2012)",
       "status": "MISCITED",
-      "notes": "Reporter pin 204 Cal.App.4th 676 is real, but the case name is wrong. Correct: California Ass'n for Health Services at Home v. State Department of Health Care Services, 204 Cal.App.4th 676 (2012). Round 5 multisource (CAPTION_MISMATCH): CourtListener + CAP static.case.law → California Ass'n for Health Services at Home v. State Department of Health Care Services.",
+      "notes": "Reporter pin 204 Cal.App.4th 676 is real, but the case name is wrong. Correct: California Ass'n for Health Services at Home v. State Department of Health Care Services, 204 Cal.App.4th 676 (2012). Round 5 multisource (CAPTION_MISMATCH): CourtListener + CAP static.case.law \u2192 California Ass'n for Health Services at Home v. State Department of Health Care Services.",
       "sources": [
         "https://app.midpage.ai/case/california-ass-n-for-health-5666416",
         "https://www.courtlistener.com/opinion/5810956/california-assn-for-health-services-at-home-v-state-department-of-health/",
@@ -150,9 +150,9 @@
       ]
     },
     {
-      "citation": "Home v. Dep’t of Health Care Services, 204 Cal.App. 4th 676 (2012)",
+      "citation": "Home v. Dep\u2019t of Health Care Services, 204 Cal.App. 4th 676 (2012)",
       "status": "MISCITED",
-      "notes": "Duplicate curly-apostrophe row; same miscaption as Home v. Dep't of Health Care Services. Round 5 multisource (CAPTION_MISMATCH): CourtListener + CAP static.case.law → California Ass'n for Health Services at Home v. State Department of Health Care Services.",
+      "notes": "Duplicate curly-apostrophe row; same miscaption as Home v. Dep't of Health Care Services. Round 5 multisource (CAPTION_MISMATCH): CourtListener + CAP static.case.law \u2192 California Ass'n for Health Services at Home v. State Department of Health Care Services.",
       "sources": [
         "https://app.midpage.ai/case/california-ass-n-for-health-5666416",
         "https://www.courtlistener.com/opinion/5810956/california-assn-for-health-services-at-home-v-state-department-of-health/",
@@ -170,7 +170,7 @@
     {
       "citation": "In re Hudson, 1 Cal.App. 4th 1 (2006)",
       "status": "MISCITED",
-      "notes": "Real case is In re Hudson, 143 Cal.App.4th 1 (2006) — computer/Internet parole condition. Printed volume '1' is wrong (should be 143). Also check proposition: Hudson is not a general rehabilitation/treatment-completion authority. Round 5 multisource (CAPTION_MISMATCH): CourtListener + CAP static.case.law → Weidenfeller v. Star & Garter.",
+      "notes": "Real case is In re Hudson, 143 Cal.App.4th 1 (2006) \u2014 computer/Internet parole condition. Printed volume '1' is wrong (should be 143). Also check proposition: Hudson is not a general rehabilitation/treatment-completion authority. Round 5 multisource (CAPTION_MISMATCH): CourtListener + CAP static.case.law \u2192 Weidenfeller v. Star & Garter.",
       "sources": [
         "https://case-law.vlex.com/vid/in-re-hudson-no-893167175",
         "https://www.courtlistener.com/opinion/2275438/weidenfeller-v-star-garter/",
@@ -180,7 +180,7 @@
     {
       "citation": "In re Muszalski, 52 Cal.App. 3d 500 (1975)",
       "status": "VERIFIED",
-      "notes": "Real at 52 Cal.App.3d 500 — habeas / exhaustion in parole context.",
+      "notes": "Real at 52 Cal.App.3d 500 \u2014 habeas / exhaustion in parole context.",
       "sources": [
         "https://www.syfert.com/california/cases/52-cal-app-3d-500/in-re-muszalski"
       ]
@@ -188,7 +188,7 @@
     {
       "citation": "Morris v. Williams, 67 Cal. 2d 733 (1967)",
       "status": "VERIFIED",
-      "notes": "Real at 67 Cal.2d 733 — agency regulation inconsistent with statute.",
+      "notes": "Real at 67 Cal.2d 733 \u2014 agency regulation inconsistent with statute.",
       "sources": [
         "https://scocal.stanford.edu/opinion/morris-v-williams-32900"
       ]
@@ -196,7 +196,7 @@
     {
       "citation": "People v. Superior Court, 25 Cal. 4th 703 (2001)",
       "status": "MISCITED",
-      "notes": "Already flagged in July audit as People v. Superior Court (Laff), 25 Cal.4th 703 — real case, wrong proposition for ministerial-duty / mandate use in Matter 9. Keep MISCITED.",
+      "notes": "Already flagged in July audit as People v. Superior Court (Laff), 25 Cal.4th 703 \u2014 real case, wrong proposition for ministerial-duty / mandate use in Matter 9. Keep MISCITED.",
       "sources": [
         "citation_audit.json July 12 entry"
       ]
@@ -204,7 +204,7 @@
     {
       "citation": "Rodriguez v. Solis, 1 Cal.App. 4th 495 (1991)",
       "status": "VERIFIED",
-      "notes": "Real at 1 Cal.App.4th 495 — mandate / discretion principles.",
+      "notes": "Real at 1 Cal.App.4th 495 \u2014 mandate / discretion principles.",
       "sources": [
         "https://case-law.vlex.com/vid/rodriguez-v-solis-no-891978747"
       ]
@@ -220,7 +220,7 @@
     {
       "citation": "Vlandis v. Kline, 412 U.S. 441 (1973)",
       "status": "VERIFIED",
-      "notes": "Real — irrebuttable presumptions / due process.",
+      "notes": "Real \u2014 irrebuttable presumptions / due process.",
       "sources": [
         "https://www.law.cornell.edu/supremecourt/text/412/441"
       ]
@@ -228,7 +228,7 @@
     {
       "citation": "Brown v. Illinois, 422 U.S. 590 (1975)",
       "status": "VERIFIED",
-      "notes": "Real — attenuation / fruit of unlawful arrest.",
+      "notes": "Real \u2014 attenuation / fruit of unlawful arrest.",
       "sources": [
         "https://supreme.justia.com/cases/federal/us/422/590/"
       ]
@@ -236,7 +236,7 @@
     {
       "citation": "Brown v. Texas, 443 U.S. 47 (1979)",
       "status": "VERIFIED",
-      "notes": "Real — stop requires reasonable suspicion.",
+      "notes": "Real \u2014 stop requires reasonable suspicion.",
       "sources": [
         "https://www.law.cornell.edu/supremecourt/text/443/47"
       ]
@@ -252,7 +252,7 @@
     {
       "citation": "Florida v. Royer, 460 U.S. 491 (1983)",
       "status": "VERIFIED",
-      "notes": "Real — scope of Terry stop / consent.",
+      "notes": "Real \u2014 scope of Terry stop / consent.",
       "sources": [
         "https://www.law.cornell.edu/supremecourt/text/460/491"
       ]
@@ -284,7 +284,7 @@
     {
       "citation": "Payton v. New York, 445 U.S. 573 (1980)",
       "status": "VERIFIED",
-      "notes": "Real — warrantless home entry to arrest.",
+      "notes": "Real \u2014 warrantless home entry to arrest.",
       "sources": [
         "https://www.law.cornell.edu/supremecourt/text/445/573"
       ]
@@ -316,7 +316,7 @@
     {
       "citation": "Swift v. Christian, 384 F. 3d 1184",
       "status": "MISCITED",
-      "notes": "Same opinion as Swift v. California, 384 F.3d 1184 (9th Cir. 2004); 'Christian' is a defendant parole officer, not the case caption. Cite as Swift v. California. Round 5 multisource (CAPTION_MISMATCH): CourtListener + CAP static.case.law → Michael T. Swift v. State of California Department of Corrections Keith Tandy, and Steve Christian Maritza Rodriguez.",
+      "notes": "Same opinion as Swift v. California, 384 F.3d 1184 (9th Cir. 2004); 'Christian' is a defendant parole officer, not the case caption. Cite as Swift v. California. Round 5 multisource (CAPTION_MISMATCH): CourtListener + CAP static.case.law \u2192 Michael T. Swift v. State of California Department of Corrections Keith Tandy, and Steve Christian Maritza Rodriguez.",
       "sources": [
         "https://hallapproved.com/us/cases/ca9/2004/787920/",
         "https://www.courtlistener.com/opinion/787920/michael-t-swift-v-state-of-california-department-of-corrections-keith/",
@@ -326,7 +326,7 @@
     {
       "citation": "Caperton v. A.T. Massey Coal Co, 556 U.S. 868 (2009)",
       "status": "VERIFIED",
-      "notes": "Real — judicial bias / due process.",
+      "notes": "Real \u2014 judicial bias / due process.",
       "sources": [
         "https://supreme.justia.com/cases/federal/us/556/868/"
       ]
@@ -334,7 +334,7 @@
     {
       "citation": "Collins v. Virginia, 584 U.S. 586 (2018)",
       "status": "VERIFIED",
-      "notes": "Real — automobile exception / curtilage.",
+      "notes": "Real \u2014 automobile exception / curtilage.",
       "sources": [
         "https://www.law.cornell.edu/supremecourt/text/16-1027"
       ]
@@ -350,7 +350,7 @@
     {
       "citation": "Franks v. Delaware, 438 U.S. 154 (1978)",
       "status": "VERIFIED",
-      "notes": "Real — false statements in warrant affidavits.",
+      "notes": "Real \u2014 false statements in warrant affidavits.",
       "sources": [
         "https://www.law.cornell.edu/supremecourt/text/438/154"
       ]
@@ -366,7 +366,7 @@
     {
       "citation": "In re Murchison, 349 U.S. 133 (1955)",
       "status": "VERIFIED",
-      "notes": "Real — neutral decisionmaker / due process.",
+      "notes": "Real \u2014 neutral decisionmaker / due process.",
       "sources": [
         "https://www.law.cornell.edu/supremecourt/text/349/133"
       ]
@@ -382,7 +382,7 @@
     {
       "citation": "See Hill v. National Collegiate Athletic Assn, 7 Cal. 4th 1 (1994)",
       "status": "VERIFIED",
-      "notes": "Real at Hill v. National Collegiate Athletic Assn., 7 Cal.4th 1 (1994) — California constitutional privacy.",
+      "notes": "Real at Hill v. National Collegiate Athletic Assn., 7 Cal.4th 1 (1994) \u2014 California constitutional privacy.",
       "sources": [
         "https://scocal.stanford.edu/opinion/hill-v-national-collegiate-athletic-assn-31368"
       ]
@@ -398,7 +398,7 @@
     {
       "citation": "Beck v. Ohio, 379 U.S. 89 (1964)",
       "status": "VERIFIED",
-      "notes": "Real — probable cause for arrest.",
+      "notes": "Real \u2014 probable cause for arrest.",
       "sources": [
         "https://www.law.cornell.edu/supremecourt/text/379/89"
       ]
@@ -420,7 +420,7 @@
     {
       "citation": "England v. Louisiana State Bd, 375 U.S. 411 (1964)",
       "status": "VERIFIED",
-      "notes": "Real as England v. Louisiana State Board of Medical Examiners, 375 U.S. 411 (1964) — England reservation.",
+      "notes": "Real as England v. Louisiana State Board of Medical Examiners, 375 U.S. 411 (1964) \u2014 England reservation.",
       "sources": [
         "https://www.law.cornell.edu/supremecourt/text/375/411"
       ]
@@ -428,7 +428,7 @@
     {
       "citation": "Gantt v. Sentry Insurance, 1 Cal. 4th 1083 (1992)",
       "status": "VERIFIED",
-      "notes": "Real at 1 Cal.4th 1083 — Tameny public-policy wrongful termination elements.",
+      "notes": "Real at 1 Cal.4th 1083 \u2014 Tameny public-policy wrongful termination elements.",
       "sources": [
         "https://scocal.stanford.edu/opinion/gantt-v-sentry-insurance-31288"
       ]
@@ -436,7 +436,7 @@
     {
       "citation": "In re Stevens, 119 Cal.App. 4th 1228 (2004)",
       "status": "VERIFIED",
-      "notes": "Real at 119 Cal.App.4th 1228 — parole computer/Internet conditions.",
+      "notes": "Real at 119 Cal.App.4th 1228 \u2014 parole computer/Internet conditions.",
       "sources": [
         "https://www.syfert.com/california/cases/119-cal-app-4th-1228/in-re-stevens"
       ]
@@ -444,7 +444,7 @@
     {
       "citation": "Thornton v. Brown, 757 F. 3d 834",
       "status": "VERIFIED",
-      "notes": "Real at 757 F.3d 834 (9th Cir. 2014). Add year. Parole officer § 1983 liability / retaliation.",
+      "notes": "Real at 757 F.3d 834 (9th Cir. 2014). Add year. Parole officer \u00a7 1983 liability / retaliation.",
       "sources": [
         "https://case-law.vlex.com/vid/thornton-v-brown-no-895518368"
       ]
@@ -460,7 +460,7 @@
     {
       "citation": "Accardi v. Shaughnessy, 347 U.S. 260 (1954)",
       "status": "VERIFIED",
-      "notes": "Real as United States ex rel. Accardi v. Shaughnessy, 347 U.S. 260 (1954) — agencies must follow their own regulations.",
+      "notes": "Real as United States ex rel. Accardi v. Shaughnessy, 347 U.S. 260 (1954) \u2014 agencies must follow their own regulations.",
       "sources": [
         "https://www.law.cornell.edu/supremecourt/text/347/260"
       ]
@@ -468,7 +468,7 @@
     {
       "citation": "Board of Pardons v. Allen, 482 U.S. 369 (1987)",
       "status": "VERIFIED",
-      "notes": "Real — liberty interest in parole when statute uses mandatory language.",
+      "notes": "Real \u2014 liberty interest in parole when statute uses mandatory language.",
       "sources": [
         "https://www.law.cornell.edu/supremecourt/text/482/369"
       ]
@@ -484,7 +484,7 @@
     {
       "citation": "Carey v. Piphus, 435 U.S. 247 (1978)",
       "status": "VERIFIED",
-      "notes": "Real — nominal damages for due-process violations.",
+      "notes": "Real \u2014 nominal damages for due-process violations.",
       "sources": [
         "https://supreme.justia.com/cases/federal/us/435/247/"
       ]
@@ -492,7 +492,7 @@
     {
       "citation": "Verizon Md. Inc. v. Public Serv. Comm'n, 535 U.S. 635 (2002)",
       "status": "VERIFIED",
-      "notes": "Real — Ex parte Young prospective relief against state officers.",
+      "notes": "Real \u2014 Ex parte Young prospective relief against state officers.",
       "sources": [
         "https://www.law.cornell.edu/supremecourt/text/535/635"
       ]
@@ -500,7 +500,7 @@
     {
       "citation": "See California Highway Patrol v. Superior Court, 158 Cal.App. 4th 726 (2008)",
       "status": "MISCHARACTERIZED",
-      "notes": "Same case/problem as California Highway Patrol v. Superior Court — 'See ' prefix only.",
+      "notes": "Same case/problem as California Highway Patrol v. Superior Court \u2014 'See ' prefix only.",
       "sources": [
         "https://www.syfert.com/california/cases/158-cal-app-4th-726/department-of-california-highway-patrol-v-superior-court"
       ]
@@ -524,10 +524,14 @@
     {
       "citation": "Mathews v. Eldridge, 424 U.S. 319 (1976)",
       "status": "VERIFIED",
-      "notes": "Canonical due-process balancing test. Real at 424 U.S. 319. (July audit had a placeholder N/A row that must not join.)",
+      "notes": "Matter 24 Opp v4 existence probe 2026-08-27: consensus=FOUND; matched=Mathews v. Eldridge",
       "sources": [
-        "https://supreme.justia.com/cases/federal/us/424/319/"
-      ]
+        "https://www.courtlistener.com/opinion/109382/mathews-v-eldridge/",
+        "https://www.courtlistener.com/opinion/109382/mathews-v-eldridge/",
+        "https://static.case.law/us/424/html/0319-01.html"
+      ],
+      "matter": 24,
+      "round": "9-matter24-opp-quote-pass"
     },
     {
       "citation": "Scenic Community v. County of L.A, 11 Cal. 3d 506 (1974)",
@@ -564,7 +568,7 @@
     {
       "citation": "California, Ltd. v. Dry Creek Joint Elementary Sch. Dist, 50 Cal.App. 4th 1",
       "status": "MISCITED",
-      "notes": "Correct: Western/California, Ltd. v. Dry Creek Joint Elementary School Dist., 50 Cal.App.4th 1461 (1996) — not page 1; party name omits Western/. Round 5 multisource (NOT_FOUND): CourtListener + CAP static.case.law.",
+      "notes": "Correct: Western/California, Ltd. v. Dry Creek Joint Elementary School Dist., 50 Cal.App.4th 1461 (1996) \u2014 not page 1; party name omits Western/. Round 5 multisource (NOT_FOUND): CourtListener + CAP static.case.law.",
       "sources": [
         "https://law.justia.com/cases/california/court-of-appeal/4th/50/1461.html"
       ]
@@ -586,7 +590,7 @@
       ]
     },
     {
-      "citation": "Daniels-Hall v. Nat’l Educ. Ass’n, 629 F. 3d 992",
+      "citation": "Daniels-Hall v. Nat\u2019l Educ. Ass\u2019n, 629 F. 3d 992",
       "status": "VERIFIED",
       "notes": "Real at 629 F.3d 992 (9th Cir. 2010). Add year.",
       "sources": [
@@ -620,7 +624,7 @@
     {
       "citation": "Illinois v. Caballes, 543 U.S. 405 (2005)",
       "status": "VERIFIED",
-      "notes": "Real — dog sniff during lawful traffic stop.",
+      "notes": "Real \u2014 dog sniff during lawful traffic stop.",
       "sources": [
         "https://www.law.cornell.edu/supremecourt/text/543/405"
       ]
@@ -660,10 +664,14 @@
     {
       "citation": "Lopez v. Smith, 203 F. 3d 1122",
       "status": "VERIFIED",
-      "notes": "Real at 203 F.3d 1122 (9th Cir. 2000) (en banc). Add year.",
+      "notes": "Matter 24 Opp v4 existence probe 2026-08-27: consensus=FOUND; matched=Lopez v. Smith VERIFIED existence (203 F.3d 1122). Quote pass: leave standard \"absolutely clear that the deficiencies of the complaint could not be cured by amendment\" is Lopez at 1137 quoting Noll, 809 F.2d at 1448; liberality-for-pro-se sentence is Lopez at 1131 quoting Noll. Corrected prior miscitation that attributed Lopez/Noll language to Garity, 828 F.3d at 854 (issue-preclusion page).",
       "sources": [
-        "https://law.justia.com/cases/federal/appellate-courts/F3/203/1122/474805/"
-      ]
+        "https://www.courtlistener.com/opinion/7079981/lopez-v-smith/",
+        "https://www.courtlistener.com/opinion/7079981/lopez-v-smith/",
+        "https://static.case.law/f3d/203/html/1122-01.html"
+      ],
+      "matter": 24,
+      "round": "9-matter24-opp-quote-pass"
     },
     {
       "citation": "Love v. United States, 915 F. 2d 1242",
@@ -700,10 +708,14 @@
     {
       "citation": "Pratt v. Rowland, 65 F. 3d 802",
       "status": "VERIFIED",
-      "notes": "Real at 65 F.3d 802 (9th Cir. 1995). Add year.",
+      "notes": "Matter 24 Opp v4 existence probe 2026-08-27: consensus=FOUND; matched=Pratt v. Rowland",
       "sources": [
-        "https://openjurist.org/65/f3d/802/pratt-v-rowland"
-      ]
+        "https://www.courtlistener.com/opinion/703954/elmer-pratt-plaintiff-appellee-v-james-k-rowland-james-gomez/",
+        "https://www.courtlistener.com/opinion/703954/elmer-pratt-plaintiff-appellee-v-james-k-rowland-james-gomez/",
+        "https://static.case.law/f3d/65/html/0802-01.html"
+      ],
+      "matter": 24,
+      "round": "9-matter24-opp-quote-pass"
     },
     {
       "citation": "Shanks v. Dressel, 540 F. 3d 1082",
@@ -724,7 +736,7 @@
     {
       "citation": "Neal v. Shimoda, 131 F. 3d 818",
       "status": "VERIFIED",
-      "notes": "Real at 131 F.3d 818 (9th Cir. 1997). Add year. Round 5 Matter 28 multisource: reconfirmed FOUND → Neal v. Shimoda.",
+      "notes": "Real at 131 F.3d 818 (9th Cir. 1997). Add year. Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Neal v. Shimoda.",
       "sources": [
         "https://law.resource.org/pub/us/case/reporter/F3/131/131.F3d.818.95-16790.95-16564.html",
         "https://www.courtlistener.com/opinion/7056623/neal-v-shimoda/",
@@ -758,7 +770,7 @@
     {
       "citation": "Cleavinger v. Saxner, 474 U.S. 193 (1985)",
       "status": "VERIFIED",
-      "notes": "Real — absolute immunity for prison discipline committee members performing adjudicative functions.",
+      "notes": "Real \u2014 absolute immunity for prison discipline committee members performing adjudicative functions.",
       "sources": [
         "https://www.law.cornell.edu/supremecourt/text/474/193"
       ]
@@ -766,10 +778,14 @@
     {
       "citation": "Hebbe v. Pliler, 627 F. 3d 338",
       "status": "VERIFIED",
-      "notes": "Real at 627 F.3d 338 (9th Cir. 2010). Add year.",
+      "notes": "Matter 24 Opp v4 existence probe 2026-08-27: consensus=FOUND; matched=Hebbe v. Pliler",
       "sources": [
-        "https://case-law.vlex.com/vid/hebbe-v-pliler-no-892677717"
-      ]
+        "https://www.courtlistener.com/opinion/151818/hebbe-v-pliler/",
+        "https://www.courtlistener.com/opinion/151818/hebbe-v-pliler/",
+        "https://static.case.law/f3d/627/html/0338-01.html"
+      ],
+      "matter": 24,
+      "round": "9-matter24-opp-quote-pass"
     },
     {
       "citation": "See Shoyoye v. County of Los Angeles, 203 Cal.App. 4th 947 (2012)",
@@ -820,9 +836,9 @@
       ]
     },
     {
-      "citation": "Soranno’s Gasco, Inc. v. Morgan Hill Uniifed Sch. Dist, 874 F. 2d 1310",
+      "citation": "Soranno\u2019s Gasco, Inc. v. Morgan Hill Uniifed Sch. Dist, 874 F. 2d 1310",
       "status": "MISCITED",
-      "notes": "874 F.2d 1310 is Soranno's Gasco, Inc. v. Morgan (9th Cir. 1989) against Stanislaus County air-pollution officials — not Morgan Hill Unified. Also misspells Unified. Round 5 multisource (CAPTION_MISMATCH): CourtListener + CAP static.case.law → Soranno's Gasco, Inc. v. Morgan.",
+      "notes": "874 F.2d 1310 is Soranno's Gasco, Inc. v. Morgan (9th Cir. 1989) against Stanislaus County air-pollution officials \u2014 not Morgan Hill Unified. Also misspells Unified. Round 5 multisource (CAPTION_MISMATCH): CourtListener + CAP static.case.law \u2192 Soranno's Gasco, Inc. v. Morgan.",
       "sources": [
         "https://openjurist.org/874/f2d/1310",
         "https://www.courtlistener.com/opinion/8978008/sorannos-gasco-inc-v-morgan/",
@@ -832,7 +848,7 @@
     {
       "citation": "Soranno's Gasco, Inc. v. Morgan Hill Unified, 874 F. 2d 1310",
       "status": "MISCITED",
-      "notes": "Same problem — correct caption is Soranno's Gasco, Inc. v. Morgan, 874 F.2d 1310 (9th Cir. 1989). Round 5 multisource (CAPTION_MISMATCH): CourtListener + CAP static.case.law → Soranno's Gasco, Inc. v. Morgan.",
+      "notes": "Same problem \u2014 correct caption is Soranno's Gasco, Inc. v. Morgan, 874 F.2d 1310 (9th Cir. 1989). Round 5 multisource (CAPTION_MISMATCH): CourtListener + CAP static.case.law \u2192 Soranno's Gasco, Inc. v. Morgan.",
       "sources": [
         "https://openjurist.org/874/f2d/1310",
         "https://www.courtlistener.com/opinion/8978008/sorannos-gasco-inc-v-morgan/",
@@ -874,7 +890,7 @@
     {
       "citation": "Exxon Mobil Corp. v. Saudi Basic Indus. Corp, 544 U.S. 280 (2005)",
       "status": "VERIFIED",
-      "notes": "Real — Rooker-Feldman.",
+      "notes": "Real \u2014 Rooker-Feldman.",
       "sources": [
         "https://www.law.cornell.edu/supremecourt/text/544/280"
       ]
@@ -912,7 +928,7 @@
       ]
     },
     {
-      "citation": "Garity v. APWU Nat’l Lab. Org, 828 F. 3d 848",
+      "citation": "Garity v. APWU Nat\u2019l Lab. Org, 828 F. 3d 848",
       "status": "VERIFIED",
       "notes": "Real at 828 F.3d 848 (9th Cir. 2016). Add year.",
       "sources": [
@@ -930,7 +946,7 @@
     {
       "citation": "Heck v. Humphrey, 512 U.S. 477 (1994)",
       "status": "VERIFIED",
-      "notes": "Real — Heck bar.",
+      "notes": "Real \u2014 Heck bar.",
       "sources": [
         "https://supreme.justia.com/cases/federal/us/512/477/"
       ]
@@ -938,7 +954,7 @@
     {
       "citation": "Hunter v. Bryant, 502 U.S. 224 (1991)",
       "status": "VERIFIED",
-      "notes": "Real — qualified immunity / probable cause.",
+      "notes": "Real \u2014 qualified immunity / probable cause.",
       "sources": [
         "https://caselaw.findlaw.com/court/us-supreme-court/502/224.html"
       ]
@@ -954,7 +970,7 @@
     {
       "citation": "Jessie v. United States, 79 M.J. 437",
       "status": "MISCITED",
-      "notes": "Real decision is United States v. Jessie, 79 M.J. 437 (C.A.A.F. 2020) — caption inverted here. Also Matter 28 flagged wrong proposition for SOTP blanket policies. Round 5 Matter 28 multisource: no CourtListener/CAP hit for this pin/caption (consistent with prior MISCITED / wrong-WL / inverted-caption problems).",
+      "notes": "Real decision is United States v. Jessie, 79 M.J. 437 (C.A.A.F. 2020) \u2014 caption inverted here. Also Matter 28 flagged wrong proposition for SOTP blanket policies. Round 5 Matter 28 multisource: no CourtListener/CAP hit for this pin/caption (consistent with prior MISCITED / wrong-WL / inverted-caption problems).",
       "sources": [
         "https://www.armfor.uscourts.gov/newcaaf/opinions/2019OctTerm/190192.pdf"
       ]
@@ -970,7 +986,7 @@
     {
       "citation": "Kentucky v. King, 563 U.S. 452 (2011)",
       "status": "VERIFIED",
-      "notes": "Real — exigent circumstances / police-created exigency.",
+      "notes": "Real \u2014 exigent circumstances / police-created exigency.",
       "sources": [
         "https://supreme.justia.com/cases/federal/us/563/452/"
       ]
@@ -1002,7 +1018,7 @@
     {
       "citation": "Lockley v. Law Office, 91 Cal.App. 4th 401 (2001)",
       "status": "MISCITED",
-      "notes": "Wrong page — correct is Lockley v. Law Office of Cantrell, Green, Pekich, Cruz & McCort, 91 Cal.App.4th 875 (2001). Round 5 multisource (NOT_FOUND): CourtListener + CAP static.case.law.",
+      "notes": "Wrong page \u2014 correct is Lockley v. Law Office of Cantrell, Green, Pekich, Cruz & McCort, 91 Cal.App.4th 875 (2001). Round 5 multisource (NOT_FOUND): CourtListener + CAP static.case.law.",
       "sources": [
         "https://www.syfert.com/california/cases/91-cal-app-4th-875/lockley-v-law-office-of-cantrell-green-pekich-cruz-mccort"
       ]
@@ -1018,7 +1034,7 @@
     {
       "citation": "New York v. Class, 475 U.S. 106 (1986)",
       "status": "VERIFIED",
-      "notes": "Real — VIN inspection / search.",
+      "notes": "Real \u2014 VIN inspection / search.",
       "sources": [
         "https://supreme.justia.com/cases/federal/us/475/106/"
       ]
@@ -1026,7 +1042,7 @@
     {
       "citation": "Paul v. Davis, 424 U.S. 693 (1976)",
       "status": "VERIFIED",
-      "notes": "Real — reputation alone not liberty/property interest.",
+      "notes": "Real \u2014 reputation alone not liberty/property interest.",
       "sources": [
         "https://supreme.justia.com/cases/federal/us/424/693/"
       ]
@@ -1050,7 +1066,7 @@
     {
       "citation": "Camara v. Municipal Court, 387 U.S. 523 (1967)",
       "status": "VERIFIED",
-      "notes": "Real — administrative search warrants.",
+      "notes": "Real \u2014 administrative search warrants.",
       "sources": [
         "https://supreme.justia.com/cases/federal/us/387/523/"
       ]
@@ -1066,7 +1082,7 @@
     {
       "citation": "Florida v. Wells, 495 U.S. 1 (1990)",
       "status": "VERIFIED",
-      "notes": "Real — inventory search standardized criteria.",
+      "notes": "Real \u2014 inventory search standardized criteria.",
       "sources": [
         "https://www.law.cornell.edu/supremecourt/text/495/1"
       ]
@@ -1082,7 +1098,7 @@
     {
       "citation": "Missouri v. McNeely, 569 U.S. 141 (2013)",
       "status": "VERIFIED",
-      "notes": "Real — no per se blood-draw exigency.",
+      "notes": "Real \u2014 no per se blood-draw exigency.",
       "sources": [
         "https://supreme.justia.com/cases/federal/us/569/141/"
       ]
@@ -1134,13 +1150,13 @@
     {
       "citation": "Hagan v. Khoja, 139 S. Ct. 2615 (2019)",
       "status": "VERIFIED",
-      "notes": "Real as a certiorari denial (not a merits opinion) — Hagan v. Khoja, 139 S.Ct. 2615 (2019). Do not cite as merits authority.",
+      "notes": "Real as a certiorari denial (not a merits opinion) \u2014 Hagan v. Khoja, 139 S.Ct. 2615 (2019). Do not cite as merits authority.",
       "sources": [
         "https://www.supremecourt.gov/docket/docketfiles/html/public/18-1010.html"
       ]
     },
     {
-      "citation": "Sav. & Loan Ass’n v. Solimino, 501 U.S. 104 (1991)",
+      "citation": "Sav. & Loan Ass\u2019n v. Solimino, 501 U.S. 104 (1991)",
       "status": "VERIFIED",
       "notes": "Real as Astoria Federal Savings & Loan Ass'n v. Solimino, 501 U.S. 104 (1991).",
       "sources": [
@@ -1150,7 +1166,7 @@
     {
       "citation": "Edmo v. Corizon, Inc, 935 F. 3d 757",
       "status": "VERIFIED",
-      "notes": "Real at 935 F.3d 757 (9th Cir. 2019). Matter 28 already flags MISCHARACTERIZED if used as per se anti-blanket-policy holding — existence OK. Round 5 Matter 28 multisource: reconfirmed FOUND → Edmo v. Corizon, Inc..",
+      "notes": "Real at 935 F.3d 757 (9th Cir. 2019). Matter 28 already flags MISCHARACTERIZED if used as per se anti-blanket-policy holding \u2014 existence OK. Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Edmo v. Corizon, Inc..",
       "sources": [
         "https://cdn.ca9.uscourts.gov/datastore/opinions/2019/08/23/19-35017.pdf",
         "https://www.courtlistener.com/opinion/4655519/adree-edmo-v-corizon-inc/",
@@ -1160,7 +1176,7 @@
     {
       "citation": "Tsao v. Desert Palace, Inc, 698 F. 3d 1128",
       "status": "VERIFIED",
-      "notes": "Real at 698 F.3d 1128 (9th Cir. 2012). Add year. Correct form (not 98 F.3d). Round 5 Matter 28 multisource: reconfirmed FOUND → Tsao v. Desert Palace, Inc..",
+      "notes": "Real at 698 F.3d 1128 (9th Cir. 2012). Add year. Correct form (not 98 F.3d). Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Tsao v. Desert Palace, Inc..",
       "sources": [
         "https://cdn.ca9.uscourts.gov/datastore/opinions/2012/10/03/10-16377.pdf",
         "https://www.courtlistener.com/opinion/810771/laurie-tsao-v-desert-palace-inc/",
@@ -1170,16 +1186,19 @@
     {
       "citation": "Pearson v. Callahan, 555 U.S. 223 (2009)",
       "status": "VERIFIED",
-      "notes": "Canonical SCOTUS qualified-immunity decision; Saucier sequencing no longer mandatory. Matches QI briefing.",
+      "notes": "Matter 24 Opp v4 existence probe 2026-08-27: consensus=FOUND; matched=Pearson v. Callahan",
       "sources": [
-        "https://tile.loc.gov/storage-services/service/ll/usrep/usrep555/usrep555223/usrep555223.pdf",
-        "https://www.law.cornell.edu/supct/html/07-751.ZO.html"
-      ]
+        "https://www.courtlistener.com/opinion/145918/pearson-v-callahan/",
+        "https://www.courtlistener.com/opinion/145918/pearson-v-callahan/",
+        "https://static.case.law/us/555/html/0223-01.html"
+      ],
+      "matter": 24,
+      "round": "9-matter24-opp-quote-pass"
     },
     {
       "citation": "People v. Woodell, 17 Cal. 4th 448 (1998)",
       "status": "VERIFIED",
-      "notes": "Real at 17 Cal.4th 448 — prior-conviction / record-of-conviction (appellate opinion) holding. Existence OK; confirm proposition before reuse outside Three Strikes / prior-conviction context.",
+      "notes": "Real at 17 Cal.4th 448 \u2014 prior-conviction / record-of-conviction (appellate opinion) holding. Existence OK; confirm proposition before reuse outside Three Strikes / prior-conviction context.",
       "sources": [
         "https://scocal.stanford.edu/opinion/people-v-woodell-31932"
       ]
@@ -1187,7 +1206,7 @@
     {
       "citation": "Ross v. Creel Printing, 100 Cal.App. 4th 736 (2002)",
       "status": "VERIFIED",
-      "notes": "Full caption Ross v. Creel Printing & Publishing Co., 100 Cal.App.4th 736 (2002) — IIED / bad-check collection letter. Truncated caption OK.",
+      "notes": "Full caption Ross v. Creel Printing & Publishing Co., 100 Cal.App.4th 736 (2002) \u2014 IIED / bad-check collection letter. Truncated caption OK.",
       "sources": [
         "https://case-law.vlex.com/vid/ross-v-creel-printing-886001603",
         "https://app.midpage.ai/document/ross-v-creel-printing-publishing-2256066"
@@ -1196,7 +1215,7 @@
     {
       "citation": "SN Sands Corp. v. City and County, 167 Cal.App. 4th 185 (2008)",
       "status": "VERIFIED",
-      "notes": "Full caption SN Sands Corp. v. City and County of San Francisco, 167 Cal.App.4th 185 (2008) — SF Charter $10M board-approval jurisdiction / mandate. Truncated defendant OK.",
+      "notes": "Full caption SN Sands Corp. v. City and County of San Francisco, 167 Cal.App.4th 185 (2008) \u2014 SF Charter $10M board-approval jurisdiction / mandate. Truncated defendant OK.",
       "sources": [
         "https://www.syfert.com/california/cases/167-cal-app-4th-185/sn-sands-corp-v-city-and-county-of-san-francisco",
         "https://app.midpage.ai/document/sn-sands-corp-v-city-2260069"
@@ -1205,7 +1224,7 @@
     {
       "citation": "See Saleeby v. State Bar, 39 Cal. 3d 547 (1985)",
       "status": "VERIFIED",
-      "notes": "Real at 39 Cal.3d 547 — Client Security Fund due-process / mandamus review. Leading 'See' prefix stripped by join key.",
+      "notes": "Real at 39 Cal.3d 547 \u2014 Client Security Fund due-process / mandamus review. Leading 'See' prefix stripped by join key.",
       "sources": [
         "https://scocal.stanford.edu/opinion/saleeby-v-state-bar-30731"
       ]
@@ -1213,7 +1232,7 @@
     {
       "citation": "Sonner v. Premier Nutrition Corporation, 49 F. 4th 1300 (2022)",
       "status": "VERIFIED",
-      "notes": "Real at 49 F.4th 1300 (9th Cir. 2022) — Anti-Injunction Act / relitigation exception after Sonner I. Distinct from 971 F.3d 834 (Sonner I equitable-remedy holding); pin the right Sonner opinion to the proposition briefed.",
+      "notes": "Real at 49 F.4th 1300 (9th Cir. 2022) \u2014 Anti-Injunction Act / relitigation exception after Sonner I. Distinct from 971 F.3d 834 (Sonner I equitable-remedy holding); pin the right Sonner opinion to the proposition briefed.",
       "sources": [
         "https://cdn.ca9.uscourts.gov/datastore/opinions/2022/09/29/21-15526.pdf"
       ]
@@ -1258,11 +1277,13 @@
     {
       "citation": "Bd. of Educ. v. Doyle, 429 U.S. 274 (1977)",
       "status": "VERIFIED",
-      "notes": "Real as Mt. Healthy City School District Board of Education v. Doyle, 429 U.S. 274 (1977) — mixed-motive / same-decision causation. Short 'Bd. of Educ. v. Doyle' form is recognizable; prefer Mt. Healthy caption in new filings.",
+      "notes": "Matter 24 Opp v4 existence probe 2026-08-27: consensus=CAPTION_MISMATCH; matched=Mt. Healthy City School District Board of Education v. Doyle (abbreviation/style mismatch only; same reporter pin).",
       "sources": [
-        "https://www.govinfo.gov/content/pkg/USREPORTS-429/pdf/USREPORTS-429-274.pdf",
-        "https://www.law.cornell.edu/supremecourt/text/429/274"
-      ]
+        "https://www.courtlistener.com/api/rest/v4/search/",
+        "https://static.case.law/us/429/html/0274-01.html"
+      ],
+      "matter": 24,
+      "round": "9-matter24-opp-quote-pass"
     },
     {
       "citation": "Bill Johnson's Restaurants, Inc. v. NLRB, 461 U.S. 731 (1983)",
@@ -1276,7 +1297,7 @@
     {
       "citation": "Bolkiah v. Superior Ct, 74 Cal. App. 4th 984 (1999)",
       "status": "VERIFIED",
-      "notes": "Real as Bolkiah v. Superior Court, 74 Cal.App.4th 984 (1999) — FSIA / service-of-process. Truncated 'Superior Ct' OK.",
+      "notes": "Real as Bolkiah v. Superior Court, 74 Cal.App.4th 984 (1999) \u2014 FSIA / service-of-process. Truncated 'Superior Ct' OK.",
       "sources": [
         "https://caselaw.findlaw.com/court/ca-court-of-appeal/1223884.html",
         "https://app.midpage.ai/document/bolkiah-v-superior-court-2248770"
@@ -1285,7 +1306,7 @@
     {
       "citation": "California DUI Lawyers Ass'n v. Department of Motor Vehicles, 77 Cal. App. 5th 517 (2022)",
       "status": "VERIFIED",
-      "notes": "Real at 77 Cal.App.5th 517 — DMV APS hearing dual advocate/adjudicator due-process holding. Load-bearing for DMV structural-bias briefing.",
+      "notes": "Real at 77 Cal.App.5th 517 \u2014 DMV APS hearing dual advocate/adjudicator due-process holding. Load-bearing for DMV structural-bias briefing.",
       "sources": [
         "https://www.courts.ca.gov/opinions/archive/B305604.PDF",
         "https://caselaw.findlaw.com/court/ca-court-of-appeal/2169054.html"
@@ -1330,7 +1351,7 @@
     {
       "citation": "Griffin v. Green Tree Servicing, LLC, 166 F. Supp. 3d 1030",
       "status": "VERIFIED",
-      "notes": "Real at 166 F. Supp. 3d 1030 (C.D. Cal. 2015) — mortgage / promissory-estoppel MTD grant.",
+      "notes": "Real at 166 F. Supp. 3d 1030 (C.D. Cal. 2015) \u2014 mortgage / promissory-estoppel MTD grant.",
       "sources": [
         "https://app.midpage.ai/document/griffin-v-green-tree-servicing-7236687",
         "https://case-law.vlex.com/vid/griffin-v-green-tree-885176899"
@@ -1339,7 +1360,7 @@
     {
       "citation": "Helm v. Alderwoods Group, Inc, 696 F. Supp. 2d 1057",
       "status": "VERIFIED",
-      "notes": "Real at 696 F. Supp. 2d 1057 (N.D. Cal. 2009) — wage-and-hour class / MTD & sanctions rulings. Also 2009 WL 2337529.",
+      "notes": "Real at 696 F. Supp. 2d 1057 (N.D. Cal. 2009) \u2014 wage-and-hour class / MTD & sanctions rulings. Also 2009 WL 2337529.",
       "sources": [
         "https://www.ecases.us/case/cand/c699641/helm-v-alderwoods-group-inc"
       ]
@@ -1347,7 +1368,7 @@
     {
       "citation": "Herr v. Nestle U.S.A., Inc, 109 Cal.App. 4th 779",
       "status": "VERIFIED",
-      "notes": "Real at 109 Cal.App.4th 779 (2003) — FEHA age discrimination / UCL injunctive relief.",
+      "notes": "Real at 109 Cal.App.4th 779 (2003) \u2014 FEHA age discrimination / UCL injunctive relief.",
       "sources": [
         "https://syfert.com/california/cases/109-cal-app-4th-779/herr-v-nestle-usa-inc",
         "https://case-law.vlex.com/vid/herr-v-nestle-u-892807048"
@@ -1356,7 +1377,7 @@
     {
       "citation": "Jones v. Sutter Health, 499 F. Supp. 3d 704",
       "status": "VERIFIED",
-      "notes": "Full caption United States ex rel. Jones v. Sutter Health, 499 F. Supp. 3d 704 (N.D. Cal. 2020) — FCA public-disclosure bar / FOIA. Short 'Jones v. Sutter Health' OK for existence; prefer ex rel. form.",
+      "notes": "Full caption United States ex rel. Jones v. Sutter Health, 499 F. Supp. 3d 704 (N.D. Cal. 2020) \u2014 FCA public-disclosure bar / FOIA. Short 'Jones v. Sutter Health' OK for existence; prefer ex rel. form.",
       "sources": [
         "https://pubkgroup.com/wp-content/uploads/2020/11/FCA-Jones-v.-Sutter-Health.pdf",
         "https://case-law.vlex.com/vid/united-states-v-sutter-895425138"
@@ -1365,7 +1386,7 @@
     {
       "citation": "L'Garde, Inc. v. Raytheon Space, 805 F. Supp. 2d 932",
       "status": "VERIFIED",
-      "notes": "Real as L'Garde, Inc. v. Raytheon Space & Airborne Systems, 805 F. Supp. 2d 932 (C.D. Cal. 2011) — diversity / remand / Rule 9(b). Truncated defendant OK.",
+      "notes": "Real as L'Garde, Inc. v. Raytheon Space & Airborne Systems, 805 F. Supp. 2d 932 (C.D. Cal. 2011) \u2014 diversity / remand / Rule 9(b). Truncated defendant OK.",
       "sources": [
         "https://hallapproved.com/ca/cases/federal/district/2011/2169149/",
         "https://www.ecases.us/case/cacd/c739273/lgarde-inc-v-raytheon-space-airborne-systems"
@@ -1383,7 +1404,7 @@
     {
       "citation": "MGIC Indem. Corp. v. Weisman, 803 F. 2d 500",
       "status": "VERIFIED",
-      "notes": "Real at 803 F.2d 500 (9th Cir. 1986) — often cited for judicial notice of public records on a 12(b)(6) motion (via Mack).",
+      "notes": "Real at 803 F.2d 500 (9th Cir. 1986) \u2014 often cited for judicial notice of public records on a 12(b)(6) motion (via Mack).",
       "sources": [
         "https://www.studicata.com/case-briefs/case/mgic-indem-co-v-weisman",
         "https://www.cetient.com/case/mgic-indemnity-corporation-v-lawrence-i-weisman-thomas-p-dunn-ln-478039"
@@ -1392,7 +1413,7 @@
     {
       "citation": "Mack v. South Bay Beer Distribs, 798 F. 2d 1279",
       "status": "VERIFIED",
-      "notes": "Real at 798 F.2d 1279 (9th Cir. 1986) — ADEA / collateral estoppel from unreviewed unemployment board findings; also the judicial-notice line later quoted in MGIC.",
+      "notes": "Real at 798 F.2d 1279 (9th Cir. 1986) \u2014 ADEA / collateral estoppel from unreviewed unemployment board findings; also the judicial-notice line later quoted in MGIC.",
       "sources": [
         "https://law.justia.com/cases/federal/appellate-courts/F2/798/1279/444705/",
         "https://www.courtlistener.com/opinion/474911/henry-g-mack-v-south-bay-beer-distributors-inc-dba-bay-beer/"
@@ -1401,7 +1422,7 @@
     {
       "citation": "Milhouse v. Carlson, 652 F. 2d 371",
       "status": "VERIFIED",
-      "notes": "Real at 652 F.2d 371 (3d Cir. 1981) — prisoner access-to-courts / retaliation; liberal construction of pro se complaints.",
+      "notes": "Real at 652 F.2d 371 (3d Cir. 1981) \u2014 prisoner access-to-courts / retaliation; liberal construction of pro se complaints.",
       "sources": [
         "https://law.justia.com/cases/federal/appellate-courts/F2/652/371/56700/"
       ]
@@ -1409,7 +1430,7 @@
     {
       "citation": "Mir v. Little Co, 844 F. 2d 646",
       "status": "VERIFIED",
-      "notes": "Full caption Mir v. Little Co. of Mary Hospital, 844 F.2d 646 (9th Cir. 1988) — physician antitrust / claim-preclusion / limitations. Truncation OK.",
+      "notes": "Full caption Mir v. Little Co. of Mary Hospital, 844 F.2d 646 (9th Cir. 1988) \u2014 physician antitrust / claim-preclusion / limitations. Truncation OK.",
       "sources": [
         "https://case-law.vlex.com/vid/mir-v-little-co-891882773"
       ]
@@ -1417,7 +1438,7 @@
     {
       "citation": "Moser v. Benefytt, Inc, 8 F. 4th 872",
       "status": "VERIFIED",
-      "notes": "Real at 8 F.4th 872 (9th Cir. 2021) — personal jurisdiction over absent class members / Bristol-Myers waiver timing.",
+      "notes": "Real at 8 F.4th 872 (9th Cir. 2021) \u2014 personal jurisdiction over absent class members / Bristol-Myers waiver timing.",
       "sources": [
         "https://cdn.ca9.uscourts.gov/datastore/opinions/2021/08/10/19-56224.pdf"
       ]
@@ -1425,7 +1446,7 @@
     {
       "citation": "Neilson v. Union Bank, 290 F. Supp. 2d 1101",
       "status": "VERIFIED",
-      "notes": "Real as Neilson v. Union Bank of California, N.A., 290 F. Supp. 2d 1101 (C.D. Cal. 2003) — Ponzi / aiding-abetting / alter ego pleading.",
+      "notes": "Real as Neilson v. Union Bank of California, N.A., 290 F. Supp. 2d 1101 (C.D. Cal. 2003) \u2014 Ponzi / aiding-abetting / alter ego pleading.",
       "sources": [
         "https://law.justia.com/cases/federal/district-courts/FSupp2/290/1101/2326612/"
       ]
@@ -1442,7 +1463,7 @@
     {
       "citation": "United States Small Bus. Admin. v. Bensal, 853 F. 3d 992",
       "status": "VERIFIED",
-      "notes": "Real at 853 F.3d 992 (9th Cir. 2017) — FDCPA preempts California inheritance-disclaimer shield.",
+      "notes": "Real at 853 F.3d 992 (9th Cir. 2017) \u2014 FDCPA preempts California inheritance-disclaimer shield.",
       "sources": [
         "https://case-law.vlex.com/vid/u-s-small-bus-891363120"
       ]
@@ -1450,7 +1471,7 @@
     {
       "citation": "United States v. Reyna-Tapia, 328 F. 3d 1114",
       "status": "VERIFIED",
-      "notes": "Real at 328 F.3d 1114 (9th Cir. 2003) (en banc) — magistrate judges may conduct Rule 11 felony plea colloquies with consent; de novo review only on objection. Often cited for magistrate-report review standard.",
+      "notes": "Real at 328 F.3d 1114 (9th Cir. 2003) (en banc) \u2014 magistrate judges may conduct Rule 11 felony plea colloquies with consent; de novo review only on objection. Often cited for magistrate-report review standard.",
       "sources": [
         "https://app.midpage.ai/document/united-states-v-jose-francisco-781951",
         "https://hallapproved.com/us/cases/ca9/2003/781951/"
@@ -1459,7 +1480,7 @@
     {
       "citation": "United States v. Wilson, 631 F. 2d 118",
       "status": "VERIFIED",
-      "notes": "Real at 631 F.2d 118 (9th Cir. 1980) — bail-jumping willfulness; notice + nonappearance alone insufficient. Confirm the briefed proposition matches this opinion (not a different Wilson).",
+      "notes": "Real at 631 F.2d 118 (9th Cir. 1980) \u2014 bail-jumping willfulness; notice + nonappearance alone insufficient. Confirm the briefed proposition matches this opinion (not a different Wilson).",
       "sources": [
         "https://app.midpage.ai/document/united-states-v-john-paul-382290"
       ]
@@ -1467,7 +1488,7 @@
     {
       "citation": "Villiarimo v. Aloha Island Air, Inc, 281 F. 3d 1054",
       "status": "VERIFIED",
-      "notes": "Real at 281 F.3d 1054 (9th Cir. 2002) — Title VII / retaliation causation / temporal proximity; also common for 'self-serving' declaration summary-judgment language. Pin the proposition carefully.",
+      "notes": "Real at 281 F.3d 1054 (9th Cir. 2002) \u2014 Title VII / retaliation causation / temporal proximity; also common for 'self-serving' declaration summary-judgment language. Pin the proposition carefully.",
       "sources": [
         "https://law.justia.com/cases/federal/appellate-courts/F3/281/1054/633158/"
       ]
@@ -1475,7 +1496,7 @@
     {
       "citation": "Weston v. Motiu, 2025 WL 2916303",
       "status": "VERIFIED",
-      "notes": "Real recent E.D. Cal. prisoner civil-rights order in De'Andre Ivison Weston v. Joana Motiu (service / FRCP 12(b)(4)–(5); Oct. 2025 magistrate order associated with 2025 WL 2916303). Thin primary-source footprint outside commercial databases — confirm pin on Westlaw before load-bearing use; do not overclaim holding.",
+      "notes": "Real recent E.D. Cal. prisoner civil-rights order in De'Andre Ivison Weston v. Joana Motiu (service / FRCP 12(b)(4)\u2013(5); Oct. 2025 magistrate order associated with 2025 WL 2916303). Thin primary-source footprint outside commercial databases \u2014 confirm pin on Westlaw before load-bearing use; do not overclaim holding.",
       "sources": [
         "https://exa.ai/library/legal/opinion/bjwb0b50pmp2cb1crf21y7bn",
         "https://exa.ai/library/legal/opinion/6ythd76993n05n0knhz854td"
@@ -1484,7 +1505,7 @@
     {
       "citation": "Zahrey v. Coffey, 221 F. 3d 342",
       "status": "VERIFIED",
-      "notes": "Real at 221 F.3d 342 (2d Cir. 2000) — fabricated evidence / liberty deprivation; prosecutor investigative-capacity qualified immunity. Matches fabrication briefing.",
+      "notes": "Real at 221 F.3d 342 (2d Cir. 2000) \u2014 fabricated evidence / liberty deprivation; prosecutor investigative-capacity qualified immunity. Matches fabrication briefing.",
       "sources": [
         "https://case-law.vlex.com/vid/zahrey-v-coffey-plaintiff-892967133"
       ]
@@ -1492,7 +1513,7 @@
     {
       "citation": "Morrissey v. Brewer, 408 U.S. 471 (1972)",
       "status": "VERIFIED",
-      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND → Morrissey v. Brewer.",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Morrissey v. Brewer.",
       "sources": [
         "https://www.courtlistener.com/opinion/108606/morrissey-v-brewer/",
         "https://static.case.law/us/408/html/0471-01.html"
@@ -1501,7 +1522,7 @@
     {
       "citation": "Richardson v. McKnight, 521 U.S. 399 (1997)",
       "status": "VERIFIED",
-      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND → Richardson v. McKnight.",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Richardson v. McKnight.",
       "sources": [
         "https://www.courtlistener.com/opinion/118137/richardson-v-mcknight/",
         "https://static.case.law/us/521/html/0399-01.html"
@@ -1510,7 +1531,7 @@
     {
       "citation": "Filarsky v. Delia, 566 U.S. 377 (2012)",
       "status": "VERIFIED",
-      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND → Filarsky v. Delia.",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Filarsky v. Delia.",
       "sources": [
         "https://www.courtlistener.com/opinion/798512/filarsky-v-delia/",
         "https://static.case.law/us/566/html/0377-01.html"
@@ -1519,7 +1540,7 @@
     {
       "citation": "Foucha v. Louisiana, 504 U.S. 71 (1992)",
       "status": "VERIFIED",
-      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND → Foucha v. Louisiana.",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Foucha v. Louisiana.",
       "sources": [
         "https://www.courtlistener.com/opinion/112731/foucha-v-louisiana/",
         "https://static.case.law/us/504/html/0071-01.html"
@@ -1528,7 +1549,7 @@
     {
       "citation": "Patsy v. Board of Regents, 457 U.S. 496 (1982)",
       "status": "VERIFIED",
-      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND → Patsy v. Board of Regents of Fla..",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Patsy v. Board of Regents of Fla..",
       "sources": [
         "https://www.courtlistener.com/opinion/110753/patsy-v-board-of-regents-of-fla/",
         "https://static.case.law/us/457/html/0496-01.html"
@@ -1537,7 +1558,7 @@
     {
       "citation": "Halvorsen v. Baird, 146 F. 3d 680",
       "status": "VERIFIED",
-      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND → Halvorsen v. Baird.",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Halvorsen v. Baird.",
       "sources": [
         "https://www.courtlistener.com/opinion/7065767/halvorsen-v-baird/",
         "https://static.case.law/f3d/146/html/0680-01.html"
@@ -1546,7 +1567,7 @@
     {
       "citation": "Jensen v. Lane County, 222 F. 3d 570",
       "status": "VERIFIED",
-      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND → Jensen v. Lane County.",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Jensen v. Lane County.",
       "sources": [
         "https://www.courtlistener.com/opinion/769892/jensen-v-lane-county/",
         "https://static.case.law/f3d/222/html/0570-01.html"
@@ -1555,7 +1576,7 @@
     {
       "citation": "Vitek v. Jones, 445 U.S. 480 (1980)",
       "status": "VERIFIED",
-      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND → Vitek v. Jones.",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Vitek v. Jones.",
       "sources": [
         "https://www.courtlistener.com/opinion/110231/vitek-v-jones/",
         "https://static.case.law/us/445/html/0480-01.html"
@@ -1564,7 +1585,7 @@
     {
       "citation": "West v. Atkins, 487 U.S. 42 (1988)",
       "status": "VERIFIED",
-      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND → West v. Atkins.",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 West v. Atkins.",
       "sources": [
         "https://www.courtlistener.com/opinion/112116/west-v-atkins/",
         "https://static.case.law/us/487/html/0042-01.html"
@@ -1573,7 +1594,7 @@
     {
       "citation": "Wyatt v. Cole, 504 U.S. 158 (1992)",
       "status": "VERIFIED",
-      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND → Wyatt v. Cole.",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Wyatt v. Cole.",
       "sources": [
         "https://www.courtlistener.com/opinion/112733/wyatt-v-cole/",
         "https://static.case.law/us/504/html/0158-01.html"
@@ -1582,7 +1603,7 @@
     {
       "citation": "Chavez v. Robinson, 12 F. 4th 978",
       "status": "MISCHARACTERIZED",
-      "notes": "Round 5 Matter 28 multisource: 12 F.4th 978 exists (Daniel Chavez v. David Robinson). Prior MISCHARACTERIZED stands — existence OK, proposition not.",
+      "notes": "Round 5 Matter 28 multisource: 12 F.4th 978 exists (Daniel Chavez v. David Robinson). Prior MISCHARACTERIZED stands \u2014 existence OK, proposition not.",
       "sources": [
         "https://www.courtlistener.com/opinion/5296812/daniel-chavez-v-david-robinson/"
       ]
@@ -1590,7 +1611,7 @@
     {
       "citation": "County of Sacramento v. Lewis, 523 U.S. 833 (1998)",
       "status": "VERIFIED",
-      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND → County of Sacramento v. Lewis.",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 County of Sacramento v. Lewis.",
       "sources": [
         "https://www.courtlistener.com/opinion/118214/county-of-sacramento-v-lewis/",
         "https://static.case.law/us/523/html/0833-01.html"
@@ -1605,7 +1626,7 @@
     {
       "citation": "Foltz v. State Farm Mut. Auto. Ins. Co, 331 F. 3d 1122",
       "status": "VERIFIED",
-      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND → Foltz v. State Farm Mutual Automobile Insurance.",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Foltz v. State Farm Mutual Automobile Insurance.",
       "sources": [
         "https://www.courtlistener.com/opinion/8437506/foltz-v-state-farm-mutual-automobile-insurance/",
         "https://static.case.law/f3d/331/html/1122-01.html"
@@ -1614,7 +1635,7 @@
     {
       "citation": "Greenholtz v. Inmates of Nebraska Penal, 442 U.S. 1 (1979)",
       "status": "VERIFIED",
-      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND → Greenholtz v. Inmates of the Nebraska Penal & Correctional Complex.",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Greenholtz v. Inmates of the Nebraska Penal & Correctional Complex.",
       "sources": [
         "https://www.courtlistener.com/opinion/110085/greenholtz-v-inmates-of-the-nebraska-penal-correctional-complex/",
         "https://static.case.law/us/442/html/0001-01.html"
@@ -1623,7 +1644,7 @@
     {
       "citation": "In Richardson v. McKnight, 521 U.S. 399 (1997)",
       "status": "VERIFIED",
-      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND → Richardson v. McKnight.",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Richardson v. McKnight.",
       "sources": [
         "https://www.courtlistener.com/opinion/118137/richardson-v-mcknight/",
         "https://static.case.law/us/521/html/0399-01.html"
@@ -1632,7 +1653,7 @@
     {
       "citation": "Richardson v. McKnight, 117 S.Ct. 2100",
       "status": "VERIFIED",
-      "notes": "Round 5 Matter 28 multisource: PARTIAL → Richardson v. McKnight.",
+      "notes": "Round 5 Matter 28 multisource: PARTIAL \u2192 Richardson v. McKnight.",
       "sources": [
         "https://www.courtlistener.com/opinion/118137/richardson-v-mcknight/"
       ]
@@ -1640,7 +1661,7 @@
     {
       "citation": "Under West v. Atkins, 487 U.S. 42 (1988)",
       "status": "VERIFIED",
-      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND → West v. Atkins.",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 West v. Atkins.",
       "sources": [
         "https://www.courtlistener.com/opinion/112116/west-v-atkins/",
         "https://static.case.law/us/487/html/0042-01.html"
@@ -1649,7 +1670,7 @@
     {
       "citation": "Biggs v. Terhune, 334 F. 3d 910",
       "status": "VERIFIED",
-      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND → Biggs v. Terhune.",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Biggs v. Terhune.",
       "sources": [
         "https://www.courtlistener.com/opinion/782570/jeffrey-j-biggs-v-cal-a-terhune-director-of-wbsjfm-cdc-california/",
         "https://static.case.law/f3d/334/html/0910-01.html"
@@ -1667,7 +1688,7 @@
     {
       "citation": "Carver v. Lehman, 558 F. 3d 869",
       "status": "VERIFIED",
-      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND → Carver v. Lehman.",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Carver v. Lehman.",
       "sources": [
         "https://www.courtlistener.com/opinion/1354177/carver-v-lehman/",
         "https://static.case.law/f3d/558/html/0869-01.html"
@@ -1682,7 +1703,7 @@
     {
       "citation": "City of Escondido v. Emmons, 139 S. Ct. 500 (2019)",
       "status": "VERIFIED",
-      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND → City of Escondido v. Emmons.",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 City of Escondido v. Emmons.",
       "sources": [
         "https://www.courtlistener.com/opinion/4579240/city-of-escondido-v-emmons/",
         "https://static.case.law/s-ct/139/html/0500-01.html"
@@ -1697,7 +1718,7 @@
     {
       "citation": "Condit v. Dunne, 225 F.R.D. 100",
       "status": "MISCITED",
-      "notes": "Round 5 Matter 28 multisource: pin/caption resolves (FOUND → Condit v. Dunne), but prior MISCITED stands (proposition/characterization problem, not existence).",
+      "notes": "Round 5 Matter 28 multisource: pin/caption resolves (FOUND \u2192 Condit v. Dunne), but prior MISCITED stands (proposition/characterization problem, not existence).",
       "sources": [
         "https://www.courtlistener.com/opinion/8755939/condit-v-dunne/",
         "https://static.case.law/frd/225/html/0100-01.html"
@@ -1747,7 +1768,7 @@
     {
       "citation": "In Filarsky v. Delia, 566 U.S. 377 (2012)",
       "status": "VERIFIED",
-      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND → Filarsky v. Delia.",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Filarsky v. Delia.",
       "sources": [
         "https://www.courtlistener.com/opinion/798512/filarsky-v-delia/",
         "https://static.case.law/us/566/html/0377-01.html"
@@ -1774,7 +1795,7 @@
     {
       "citation": "In Minneci v. Pollard, 565 U.S. 118 (2012)",
       "status": "VERIFIED",
-      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND → Minneci v. Pollard.",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Minneci v. Pollard.",
       "sources": [
         "https://www.courtlistener.com/opinion/620567/minneci-v-pollard/",
         "https://static.case.law/us/565/html/0118-01.html"
@@ -1792,7 +1813,7 @@
     {
       "citation": "In Wyatt v. Cole, 504 U.S. 158 (1992)",
       "status": "VERIFIED",
-      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND → Wyatt v. Cole.",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Wyatt v. Cole.",
       "sources": [
         "https://www.courtlistener.com/opinion/112733/wyatt-v-cole/",
         "https://static.case.law/us/504/html/0158-01.html"
@@ -1801,7 +1822,7 @@
     {
       "citation": "JENSEN v. LANE COUNTY, 222 F. 3d 570",
       "status": "VERIFIED",
-      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND → Jensen v. Lane County.",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Jensen v. Lane County.",
       "sources": [
         "https://www.courtlistener.com/opinion/769892/jensen-v-lane-county/",
         "https://static.case.law/f3d/222/html/0570-01.html"
@@ -1810,7 +1831,7 @@
     {
       "citation": "Luca v. Administration of Offender Services Bureau, 15 F. 3d 1086",
       "status": "VERIFIED",
-      "notes": "Round 5 Matter 28 multisource: 15 F.3d 1086 is a table page hosting multiple dispositions; CL's first hit is unrelated. Prior audit treated Luca as an unpublished table decision at this pin — keep VERIFIED but prefer a better cite if one exists; do not treat the table page as unique.",
+      "notes": "Round 5 Matter 28 multisource: 15 F.3d 1086 is a table page hosting multiple dispositions; CL's first hit is unrelated. Prior audit treated Luca as an unpublished table decision at this pin \u2014 keep VERIFIED but prefer a better cite if one exists; do not treat the table page as unique.",
       "sources": [
         "https://www.courtlistener.com/opinion/662035/josefina-lagarto-snovelle-v-immigration-and-natura/"
       ]
@@ -1818,7 +1839,7 @@
     {
       "citation": "Sandin v. Conner, 515 U.S. 472 (1995)",
       "status": "VERIFIED",
-      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND → Sandin v. Conner.",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Sandin v. Conner.",
       "sources": [
         "https://www.courtlistener.com/opinion/117957/sandin-v-conner/",
         "https://static.case.law/us/515/html/0472-01.html"
@@ -1827,7 +1848,7 @@
     {
       "citation": "See Condit v. Dunne, 225 F.R.D. 100",
       "status": "MISCITED",
-      "notes": "Round 5 Matter 28 multisource: pin/caption resolves (FOUND → Condit v. Dunne), but prior MISCITED stands (proposition/characterization problem, not existence).",
+      "notes": "Round 5 Matter 28 multisource: pin/caption resolves (FOUND \u2192 Condit v. Dunne), but prior MISCITED stands (proposition/characterization problem, not existence).",
       "sources": [
         "https://www.courtlistener.com/opinion/8755939/condit-v-dunne/",
         "https://static.case.law/frd/225/html/0100-01.html"
@@ -1842,7 +1863,7 @@
     {
       "citation": "Serrano v. Francis, 345 F. 3d 1071",
       "status": "VERIFIED",
-      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND → Serrano v. Francis.",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Serrano v. Francis.",
       "sources": [
         "https://www.courtlistener.com/opinion/783788/onofre-t-serrano-v-sw-francis/",
         "https://static.case.law/f3d/345/html/1071-01.html"
@@ -1851,7 +1872,7 @@
     {
       "citation": "Swarthout v. Cooke, 562 U.S. 216 (2011)",
       "status": "VERIFIED",
-      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND → Swarthout v. Cooke.",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Swarthout v. Cooke.",
       "sources": [
         "https://www.courtlistener.com/opinion/183477/swarthout-v-cooke/",
         "https://static.case.law/us/562/html/0216-01.html"
@@ -1860,7 +1881,7 @@
     {
       "citation": "United States v. Cope, 527 F. 3d 944",
       "status": "VERIFIED",
-      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND → United States v. Cope.",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 United States v. Cope.",
       "sources": [
         "https://www.courtlistener.com/opinion/1458125/united-states-v-cope/",
         "https://static.case.law/f3d/527/html/0944-01.html"
@@ -1875,7 +1896,7 @@
     {
       "citation": "United States v. Sanchez-Gomez, 859 F. 3d 649",
       "status": "VERIFIED",
-      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND → United States v. Rene Sanchez-Gomez.",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 United States v. Rene Sanchez-Gomez.",
       "sources": [
         "https://www.courtlistener.com/opinion/4395849/united-states-v-rene-sanchez-gomez/",
         "https://static.case.law/f3d/859/html/0649-01.html"
@@ -1884,7 +1905,7 @@
     {
       "citation": "United States v. Weber, 451 F. 3d 552",
       "status": "VERIFIED",
-      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND → United States v. Weber.",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 United States v. Weber.",
       "sources": [
         "https://www.courtlistener.com/opinion/794683/united-states-v-matthew-henry-weber/",
         "https://static.case.law/f3d/451/html/0552-01.html"
@@ -1893,7 +1914,7 @@
     {
       "citation": "United States v. Williams, 356 F. 3d 1045",
       "status": "VERIFIED",
-      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND → United States v. Williams.",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 United States v. Williams.",
       "sources": [
         "https://www.courtlistener.com/opinion/784955/united-states-v-daniel-r-williams/",
         "https://static.case.law/f3d/356/html/1045-01.html"
@@ -1902,7 +1923,7 @@
     {
       "citation": "WYATT v. COLE, 994 F. 2d 1113",
       "status": "VERIFIED",
-      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND → Wyatt v. Cole.",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Wyatt v. Cole.",
       "sources": [
         "https://www.courtlistener.com/opinion/608099/howard-l-wyatt-v-bill-cole-john-robbins-ii/",
         "https://static.case.law/f2d/994/html/1113-01.html"
@@ -1911,7 +1932,7 @@
     {
       "citation": "Washington v. Harper, 494 U.S. 210 (1990)",
       "status": "VERIFIED",
-      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND → Washington v. Harper.",
+      "notes": "Round 5 Matter 28 multisource: reconfirmed FOUND \u2192 Washington v. Harper.",
       "sources": [
         "https://www.courtlistener.com/opinion/112381/washington-v-harper/",
         "https://static.case.law/us/494/html/0210-01.html"
@@ -1920,7 +1941,7 @@
     {
       "citation": "Pratt v. Sumner, 807 F.2d 817",
       "status": "VERIFIED",
-      "notes": "FOUND on CourtListener and CAP static.case.law at 807 F.2d 817 (9th Cir. 1987). Existence only. Note the order itself prints the year as '(9th Cir. 19987)' — a typo in Dkt. 5, confirmed against the scan at 600 dpi rather than an OCR artifact. Cited for the proposition that a complaint should be dismissed as frivolous on § 1915 review where subject matter jurisdiction is lacking."
+      "notes": "FOUND on CourtListener and CAP static.case.law at 807 F.2d 817 (9th Cir. 1987). Existence only. Note the order itself prints the year as '(9th Cir. 19987)' \u2014 a typo in Dkt. 5, confirmed against the scan at 600 dpi rather than an OCR artifact. Cited for the proposition that a complaint should be dismissed as frivolous on \u00a7 1915 review where subject matter jurisdiction is lacking."
     },
     {
       "citation": "Bell Atl. Corp. v. Twombly, 550 U.S. 544",
@@ -1930,7 +1951,7 @@
     {
       "citation": "Valdez v. Allstate Ins. Co., 372 F.3d 1115",
       "status": "VERIFIED",
-      "notes": "Resolves at 372 F.3d 1115 (9th Cir. 2004). CourtListener reports the fuller caption 'Leticia Valdez v. Allstate Insurance Company', which is the same decision — the probe's CAPTION_MISMATCH reflects the party-name expansion, not a different case. Existence only."
+      "notes": "Resolves at 372 F.3d 1115 (9th Cir. 2004). CourtListener reports the fuller caption 'Leticia Valdez v. Allstate Insurance Company', which is the same decision \u2014 the probe's CAPTION_MISMATCH reflects the party-name expansion, not a different case. Existence only."
     },
     {
       "citation": "Hansen v. Blue Cross, 891 F.2d 1384",
@@ -1938,9 +1959,16 @@
       "notes": "FOUND on CourtListener and CAP at 891 F.2d 1384 (9th Cir. 1989). Full caption is Hansen v. Blue Cross of California; the index key truncates at the reporter. Existence only."
     },
     {
-      "citation": "Perez Perez v. Wolf, 943 F.3d 853",
+      "citation": "Perez Perez v. Wolf, 943 F. 3d 853",
       "status": "VERIFIED",
-      "notes": "Resolves at 943 F.3d 853 (9th Cir. 2019). CourtListener reports the fuller caption 'Pedro Perez Perez v. Chad Wolf', the same decision — the probe's CAPTION_MISMATCH is the party-name expansion. Existence only."
+      "notes": "Matter 24 Opp v4 existence probe 2026-08-27: consensus=CAPTION_MISMATCH; matched=Pedro Perez Perez v. Chad Wolf (abbreviation/style mismatch only; same reporter pin).",
+      "sources": [
+        "https://www.courtlistener.com/opinion/4681485/pedro-perez-perez-v-chad-wolf/",
+        "https://www.courtlistener.com/opinion/4681485/pedro-perez-perez-v-chad-wolf/",
+        "https://static.case.law/f3d/943/CasesMetadata.json"
+      ],
+      "matter": 24,
+      "round": "9-matter24-opp-quote-pass"
     },
     {
       "citation": "Orosco v. Napolitano, 598 F.3d 222",
@@ -1955,7 +1983,7 @@
     {
       "citation": "Castillo v. Marshall, 207 F.3d 15",
       "status": "UNVERIFIED",
-      "notes": "DOES NOT RESOLVE, and the discrepancy is in the order rather than in the OCR — the scan reads 'See Castillo v. Marshall, 207 F.3d 15, 15 (9th Cir. 1997)' at 600 dpi. CourtListener indexes no opinion captioned Castillo v. Marshall and returns nothing for '207 F.3d 15'; CAP finds no case beginning at page 15 of f3d/207. The volume and year are also inconsistent with each other, since 207 F.3d dates to 2000 rather than 1997. Left UNVERIFIED rather than NOT_FOUND: CourtListener and CAP cover 1997 Ninth Circuit unpublished table dispositions unevenly, and NOT_FOUND in this ledger means a confirmed fabrication. This is the court's own citation in a screening order, carries role court_order, and is not plaintiff citation debt — but it is the one authority in Dkt. 5 that cannot be confirmed, so do not repeat it in a portfolio filing without independent confirmation."
+      "notes": "DOES NOT RESOLVE, and the discrepancy is in the order rather than in the OCR \u2014 the scan reads 'See Castillo v. Marshall, 207 F.3d 15, 15 (9th Cir. 1997)' at 600 dpi. CourtListener indexes no opinion captioned Castillo v. Marshall and returns nothing for '207 F.3d 15'; CAP finds no case beginning at page 15 of f3d/207. The volume and year are also inconsistent with each other, since 207 F.3d dates to 2000 rather than 1997. Left UNVERIFIED rather than NOT_FOUND: CourtListener and CAP cover 1997 Ninth Circuit unpublished table dispositions unevenly, and NOT_FOUND in this ledger means a confirmed fabrication. This is the court's own citation in a screening order, carries role court_order, and is not plaintiff citation debt \u2014 but it is the one authority in Dkt. 5 that cannot be confirmed, so do not repeat it in a portfolio filing without independent confirmation."
     },
     {
       "citation": "Aryeh v. Canon Business Solutions, Inc, 55 Cal. 4th 1185 (2013)",
@@ -2005,167 +2033,509 @@
     {
       "citation": "Ashcroft v. Iqbal, 556 U.S. 662 (2009)",
       "status": "VERIFIED",
-      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Ashcroft v. Iqbal). Existence only — court_order role."
+      "notes": "Matter 24 Opp v4 existence probe 2026-08-27: consensus=FOUND; matched=Ashcroft v. Iqbal VERIFIED existence; \"plausible on its face\" / \"merely consistent with\" language matches 556 U.S. at 678.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/145875/ashcroft-v-iqbal/",
+        "https://www.courtlistener.com/opinion/145875/ashcroft-v-iqbal/",
+        "https://static.case.law/us/556/html/0662-01.html"
+      ],
+      "matter": 24,
+      "round": "9-matter24-opp-quote-pass"
     },
     {
       "citation": "Bell Atlantic Corp. v. Twombly, 550 U.S. 544 (2007)",
       "status": "VERIFIED",
-      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Bell Atlantic Corp. v. Twombly). Existence only — court_order role."
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Bell Atlantic Corp. v. Twombly). Existence only \u2014 court_order role."
     },
     {
       "citation": "Bruce v. YIst, 351 F. 3d 1283",
       "status": "VERIFIED",
-      "notes": "Round 8: pin resolves as Bruce v. Ylst — CAPTION_MISMATCH is party-name expansion only. Existence only; court_order."
+      "notes": "Round 8: pin resolves as Bruce v. Ylst \u2014 CAPTION_MISMATCH is party-name expansion only. Existence only; court_order."
     },
     {
       "citation": "City of Cleburne Texas v. Cleburne Living Center, 473 U.S. 432 (1985)",
       "status": "VERIFIED",
-      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (City of Cleburne v. Cleburne Living Center, Inc.). Existence only — court_order role."
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (City of Cleburne v. Cleburne Living Center, Inc.). Existence only \u2014 court_order role."
     },
     {
       "citation": "Conley v. Gibson, 355 U.S. 41 (1957)",
       "status": "VERIFIED",
-      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Conley v. Gibson). Existence only — court_order role."
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Conley v. Gibson). Existence only \u2014 court_order role."
     },
     {
       "citation": "Davis v. Scherer, 468 U.S. 183 (1984)",
       "status": "VERIFIED",
-      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Davis v. Scherer). Existence only — court_order role."
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Davis v. Scherer). Existence only \u2014 court_order role."
     },
     {
       "citation": "Engquist v. Oregon Department, 553 U.S. 591 (2008)",
       "status": "VERIFIED",
-      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Engquist v. Oregon Department of Agriculture). Existence only — court_order role."
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Engquist v. Oregon Department of Agriculture). Existence only \u2014 court_order role."
     },
     {
       "citation": "Erickson v. Pardus, 551 U.S. 89 (2007)",
       "status": "VERIFIED",
-      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Erickson v. Pardus). Existence only — court_order role."
+      "notes": "Matter 24 Opp v4 existence probe 2026-08-27: consensus=FOUND; matched=Erickson v. Pardus VERIFIED existence; less-stringent pro se pleadings quote matches 551 U.S. at 94.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/145722/erickson-v-pardus/",
+        "https://www.courtlistener.com/opinion/145722/erickson-v-pardus/",
+        "https://static.case.law/us/551/html/0089-01.html"
+      ],
+      "matter": 24,
+      "round": "9-matter24-opp-quote-pass"
     },
     {
       "citation": "Frazier v. Dubois, 922 F. 2d 560",
       "status": "VERIFIED",
-      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Frazier v. Dubois). Existence only — court_order role."
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Frazier v. Dubois). Existence only \u2014 court_order role."
     },
     {
       "citation": "Ivey v. Bd. of Regents, 673 F. 2d 266",
       "status": "VERIFIED",
-      "notes": "Round 8: pin resolves as Ivey v. Board of Regents — CAPTION_MISMATCH is party-name expansion only. Existence only; court_order."
+      "notes": "Round 8: pin resolves as Ivey v. Board of Regents \u2014 CAPTION_MISMATCH is party-name expansion only. Existence only; court_order."
     },
     {
       "citation": "Johnson v. Duffy, 588 F. 2d 740",
       "status": "VERIFIED",
-      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Johnson v. Duffy). Existence only — court_order role."
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Johnson v. Duffy). Existence only \u2014 court_order role."
     },
     {
       "citation": "Jones v. Cmty. Redev. Agency, 733 F. 2d 646",
       "status": "VERIFIED",
-      "notes": "Round 8: pin resolves as Jones v. Community Redevelopment Agency of Los AngeLes — CAPTION_MISMATCH is party-name expansion only. Existence only; court_order."
+      "notes": "Round 8: pin resolves as Jones v. Community Redevelopment Agency of Los AngeLes \u2014 CAPTION_MISMATCH is party-name expansion only. Existence only; court_order."
     },
     {
       "citation": "Jones v. Williams, 297 F. 3d 930",
       "status": "VERIFIED",
-      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Jones v. Williams). Existence only — court_order role."
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Jones v. Williams). Existence only \u2014 court_order role."
     },
     {
       "citation": "Lee v. City of Los Angeles, 250 F. 3d 668",
       "status": "VERIFIED",
-      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Lee v. City of Los Angeles). Existence only — court_order role."
+      "notes": "Matter 24 Opp v4 existence probe 2026-08-27: consensus=FOUND; matched=Lee v. City of Los Angeles",
+      "sources": [
+        "https://www.courtlistener.com/opinion/7092482/lee-v-city-of-los-angeles/",
+        "https://www.courtlistener.com/opinion/7092482/lee-v-city-of-los-angeles/",
+        "https://static.case.law/f3d/250/html/0668-01.html"
+      ],
+      "matter": 24,
+      "round": "9-matter24-opp-quote-pass"
     },
     {
       "citation": "May v. Enomoto, 633 F. 2d 164",
       "status": "VERIFIED",
-      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (May v. Enomoto). Existence only — court_order role."
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (May v. Enomoto). Existence only \u2014 court_order role."
     },
     {
       "citation": "McCollum v. Ca. Dep't, 647 F. 3d 870",
       "status": "VERIFIED",
-      "notes": "Round 8: pin resolves as McCollum v. California Department of Corrections & Rehabilitation — CAPTION_MISMATCH is party-name expansion only. Existence only; court_order."
+      "notes": "Round 8: pin resolves as McCollum v. California Department of Corrections & Rehabilitation \u2014 CAPTION_MISMATCH is party-name expansion only. Existence only; court_order."
     },
     {
       "citation": "Neitzke v. Williams, 490 U.S. 319 (1989)",
       "status": "VERIFIED",
-      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Neitzke v. Williams). Existence only — court_order role."
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Neitzke v. Williams). Existence only \u2014 court_order role."
     },
     {
       "citation": "Ramirez v. Galaza, 334 F. 3d 850",
       "status": "VERIFIED",
-      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Ramirez v. Galaza). Existence only — court_order role."
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Ramirez v. Galaza). Existence only \u2014 court_order role."
     },
     {
       "citation": "Rhodes v. Robinson, 408 F. 3d 559",
       "status": "VERIFIED",
-      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Rhodes v. Robinson). Existence only — court_order role."
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Rhodes v. Robinson). Existence only \u2014 court_order role."
     },
     {
       "citation": "Rizzo v. Goode, 423 U.S. 362 (1976)",
       "status": "VERIFIED",
-      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Rizzo v. Goode). Existence only — court_order role."
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Rizzo v. Goode). Existence only \u2014 court_order role."
     },
     {
       "citation": "Scheuer v. Rhodes, 416 U.S. 232 (1974)",
       "status": "VERIFIED",
-      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Scheuer v. Rhodes). Existence only — court_order role."
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Scheuer v. Rhodes). Existence only \u2014 court_order role."
     },
     {
       "citation": "SeaRiver Maritime Financial Holdings, Inc. v. Mineta, 309 F. 3d 662",
       "status": "VERIFIED",
-      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (SeaRiver Maritime Financial Holdings Inc. v. Mineta). Existence only — court_order role."
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (SeaRiver Maritime Financial Holdings Inc. v. Mineta). Existence only \u2014 court_order role."
     },
     {
       "citation": "See Hansen v. Black, 885 F. 2d 642",
       "status": "VERIFIED",
-      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Hansen v. Black). Existence only — court_order role."
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Hansen v. Black). Existence only \u2014 court_order role."
     },
     {
       "citation": "See Jackson v. Arizona, 885 F. 2d 639",
       "status": "VERIFIED",
-      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Jackson v. Arizona). Existence only — court_order role."
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Jackson v. Arizona). Existence only \u2014 court_order role."
     },
     {
       "citation": "See Pratt v. Rowland, 65 F. 3d 802",
       "status": "VERIFIED",
-      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Pratt v. Rowland). Existence only — court_order role."
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Pratt v. Rowland). Existence only \u2014 court_order role."
     },
     {
       "citation": "See Ramirez v. Cnty. of San Bernardino, 806 F. 3d 1002",
       "status": "VERIFIED",
-      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Ramirez v. County of San Bernardino). Existence only — court_order role."
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Ramirez v. County of San Bernardino). Existence only \u2014 court_order role."
     },
     {
       "citation": "See West v. Atkins, 487 U.S. 42 (1988)",
       "status": "VERIFIED",
-      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (West v. Atkins). Existence only — court_order role."
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (West v. Atkins). Existence only \u2014 court_order role."
     },
     {
       "citation": "Starr v. Baca, 652 F. 3d 1202",
       "status": "VERIFIED",
-      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Starr v. Baca). Existence only — court_order role."
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Starr v. Baca). Existence only \u2014 court_order role."
     },
     {
       "citation": "Thornton v. City of St. Helens, 425 F. 3d 1158",
       "status": "VERIFIED",
-      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Thornton v. City of St. Helens). Existence only — court_order role."
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Thornton v. City of St. Helens). Existence only \u2014 court_order role."
     },
     {
       "citation": "Village of Willowbrook v. Olech, 528 U.S. 562 (2000)",
       "status": "VERIFIED",
-      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Village of Willowbrook v. Olech). Existence only — court_order role."
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Village of Willowbrook v. Olech). Existence only \u2014 court_order role."
     },
     {
       "citation": "Watison v. Carter, 668 F. 3d 1108",
       "status": "VERIFIED",
-      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Watison v. Carter). Existence only — court_order role."
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Watison v. Carter). Existence only \u2014 court_order role."
     },
     {
       "citation": "Wilkinson v. Austin, 545 U.S. 209 (2005)",
       "status": "VERIFIED",
-      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Wilkinson v. Austin). Existence only — court_order role."
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Wilkinson v. Austin). Existence only \u2014 court_order role."
     },
     {
       "citation": "Wood v. Yordy, 753 F. 3d 899",
       "status": "VERIFIED",
-      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Wood v. Yordy). Existence only — court_order role."
+      "notes": "Round 8: FOUND for Barocio screening order OCR tranche (Wood v. Yordy). Existence only \u2014 court_order role."
+    },
+    {
+      "citation": "Bd. of Cnty. Comm'rs v. Umbehr, 518 U.S. 668 (1996)",
+      "status": "VERIFIED",
+      "notes": "Matter 24 Opp v4 existence probe 2026-08-27: consensus=CAPTION_MISMATCH; matched=Board of Comm'rs, Wabaunsee Cty. v. Umbehr (abbreviation/style mismatch only; same reporter pin).",
+      "sources": [
+        "https://www.courtlistener.com/opinion/118059/board-of-commrs-wabaunsee-cty-v-umbehr/",
+        "https://www.courtlistener.com/opinion/118059/board-of-commrs-wabaunsee-cty-v-umbehr/",
+        "https://static.case.law/us/518/html/0668-01.html"
+      ],
+      "matter": 24,
+      "round": "9-matter24-opp-quote-pass"
+    },
+    {
+      "citation": "Bd. of Regents v. Roth, 408 U.S. 564 (1972)",
+      "status": "VERIFIED",
+      "notes": "Matter 24 Opp v4 existence probe 2026-08-27: consensus=CAPTION_MISMATCH; matched=Board of Regents of State Colleges v. Roth (abbreviation/style mismatch only; same reporter pin).",
+      "sources": [
+        "https://www.courtlistener.com/api/rest/v4/search/",
+        "https://static.case.law/us/408/html/0564-01.html"
+      ],
+      "matter": 24,
+      "round": "9-matter24-opp-quote-pass"
+    },
+    {
+      "citation": "Bell Atl. Corp. v. Twombly, 550 U.S. 544 (2007)",
+      "status": "VERIFIED",
+      "notes": "Matter 24 Opp v4 existence probe 2026-08-27: consensus=PARTIAL; matched=Bell Atlantic Corp. v. Twombly VERIFIED existence (550 U.S. 544). Quote pass: Twombly 556 is \"actual proof of the facts alleged is improbable,\" not \"those facts.\"",
+      "sources": [
+        "https://www.courtlistener.com/api/rest/v4/search/",
+        "https://static.case.law/us/550/html/0544-01.html"
+      ],
+      "matter": 24,
+      "round": "9-matter24-opp-quote-pass"
+    },
+    {
+      "citation": "Borough of Duryea v. Guarnieri, 564 U.S. 379 (2011)",
+      "status": "VERIFIED",
+      "notes": "Matter 24 Opp v4 existence probe 2026-08-27: consensus=FOUND; matched=Borough of Duryea v. Guarnieri",
+      "sources": [
+        "https://www.courtlistener.com/opinion/219105/borough-of-duryea-v-guarnieri/",
+        "https://www.courtlistener.com/opinion/219105/borough-of-duryea-v-guarnieri/",
+        "https://static.case.law/us/564/html/0379-01.html"
+      ],
+      "matter": 24,
+      "round": "9-matter24-opp-quote-pass"
+    },
+    {
+      "citation": "Bureerong v. Uvawas, 922 F. Supp. 1450",
+      "status": "VERIFIED",
+      "notes": "VERIFIED existence despite lookup UNKNOWN (CAP f-supp slug + CL search). Real at 922 F. Supp. 1450 (C.D. Cal. 1996). Cited only as Defendant's pre-Whittlestone authority; Opp does not rely on it for the rule.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/1592866/bureerong-v-uvawas/",
+        "https://static.case.law/f-supp/922/html/1450-01.html"
+      ],
+      "matter": 24,
+      "round": "9-matter24-opp-quote-pass"
+    },
+    {
+      "citation": "CONCLUSION TABLE OF AUTHORITIES Cases Ashcroft v. Iqbal, 556 U.S. 662 (2009)",
+      "status": "VERIFIED",
+      "notes": "Matter 24 Opp v4 existence probe 2026-08-27: consensus=FOUND; matched=Ashcroft v. Iqbal VERIFIED existence; \"plausible on its face\" / \"merely consistent with\" language matches 556 U.S. at 678.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/145875/ashcroft-v-iqbal/",
+        "https://www.courtlistener.com/opinion/145875/ashcroft-v-iqbal/",
+        "https://static.case.law/us/556/html/0662-01.html"
+      ],
+      "matter": 24,
+      "round": "9-matter24-opp-quote-pass"
+    },
+    {
+      "citation": "Capp v. Cnty. of San Diego, 940 F. 3d 1046",
+      "status": "VERIFIED",
+      "notes": "Matter 24 Opp v4 existence probe 2026-08-27: consensus=CAPTION_MISMATCH; matched=Jonathan Capp v. County of San Diego (abbreviation/style mismatch only; same reporter pin). VERIFIED existence (940 F.3d 1046); CAPTION_MISMATCH is abbreviation (Jonathan Capp / County). Pin 1055 supports pleading-stage retaliation / but-for plausibility discussion.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/4667181/jonathan-capp-v-county-of-san-diego/",
+        "https://www.courtlistener.com/opinion/4667181/jonathan-capp-v-county-of-san-diego/",
+        "https://static.case.law/f3d/940/CasesMetadata.json"
+      ],
+      "matter": 24,
+      "round": "9-matter24-opp-quote-pass"
+    },
+    {
+      "citation": "Catholic Charities CYO v. Chertoff, 622 F. Supp. 2d 865",
+      "status": "VERIFIED",
+      "notes": "Matter 24 Opp v4 existence probe 2026-08-27: consensus=FOUND; matched=Catholic Charities CYO v. Chertoff",
+      "sources": [
+        "https://www.courtlistener.com/opinion/2415984/catholic-charities-cyo-v-chertoff/",
+        "https://www.courtlistener.com/opinion/2415984/catholic-charities-cyo-v-chertoff/",
+        "https://static.case.law/f-supp-2d/622/html/0865-01.html"
+      ],
+      "matter": 24,
+      "round": "9-matter24-opp-quote-pass"
+    },
+    {
+      "citation": "District of Columbia v. Wesby, 583 U.S. 48 (2018)",
+      "status": "VERIFIED",
+      "notes": "Matter 24 Opp v4 existence probe 2026-08-27: consensus=PARTIAL; matched=District of Columbia v. Wesby",
+      "sources": [
+        "https://www.courtlistener.com/opinion/4460853/district-of-columbia-v-wesby/",
+        "https://www.courtlistener.com/opinion/4460853/district-of-columbia-v-wesby/",
+        "https://static.case.law/us/583/CasesMetadata.json"
+      ],
+      "matter": 24,
+      "round": "9-matter24-opp-quote-pass"
+    },
+    {
+      "citation": "Ford v. City of Yakima, 706 F. 3d 1188",
+      "status": "VERIFIED",
+      "notes": "Matter 24 Opp v4 existence probe 2026-08-27: consensus=FOUND; matched=Ford v. City of Yakima VERIFIED existence; chill / but-for desire-to-chill formulation at 706 F.3d at 1193.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/820004/eddie-ford-v-city-of-yakima/",
+        "https://www.courtlistener.com/opinion/820004/eddie-ford-v-city-of-yakima/",
+        "https://static.case.law/f3d/706/html/1188-01.html"
+      ],
+      "matter": 24,
+      "round": "9-matter24-opp-quote-pass"
+    },
+    {
+      "citation": "Goldberg v. Kelly, 397 U.S. 254 (1970)",
+      "status": "VERIFIED",
+      "notes": "Matter 24 Opp v4 existence probe 2026-08-27: consensus=FOUND; matched=Goldberg v. Kelly",
+      "sources": [
+        "https://www.courtlistener.com/opinion/108100/goldberg-v-kelly/",
+        "https://www.courtlistener.com/opinion/108100/goldberg-v-kelly/",
+        "https://static.case.law/us/397/html/0254-01.html"
+      ],
+      "matter": 24,
+      "round": "9-matter24-opp-quote-pass"
+    },
+    {
+      "citation": "Hartman v. Moore, 547 U.S. 250 (2006)",
+      "status": "VERIFIED",
+      "notes": "Matter 24 Opp v4 existence probe 2026-08-27: consensus=FOUND; matched=Hartman v. Moore",
+      "sources": [
+        "https://www.courtlistener.com/opinion/145662/hartman-v-moore/",
+        "https://www.courtlistener.com/opinion/145662/hartman-v-moore/",
+        "https://static.case.law/us/547/html/0250-01.html"
+      ],
+      "matter": 24,
+      "round": "9-matter24-opp-quote-pass"
+    },
+    {
+      "citation": "Hope v. Pelzer, 536 U.S. 730 (2002)",
+      "status": "VERIFIED",
+      "notes": "Matter 24 Opp v4 existence probe 2026-08-27: consensus=FOUND; matched=Hope v. Pelzer",
+      "sources": [
+        "https://www.courtlistener.com/opinion/121169/hope-v-pelzer/",
+        "https://www.courtlistener.com/opinion/121169/hope-v-pelzer/",
+        "https://static.case.law/us/536/html/0730-01.html"
+      ],
+      "matter": 24,
+      "round": "9-matter24-opp-quote-pass"
+    },
+    {
+      "citation": "In Whittlestone, Inc. v. Handi-Craft Co, 618 F. 3d 970",
+      "status": "VERIFIED",
+      "notes": "Matter 24 Opp v4 existence probe 2026-08-27: consensus=FOUND; matched=Whittlestone, Inc. v. Handi-Craft Co. VERIFIED existence (618 F.3d 970). Quote pass 2026-08-27: Opp now uses exact holding that Rule 12(f) \"does not authorize a district court to strike a claim for damages on the ground that such damages are precluded as a matter of law\" (at 971, 974-75) and \"better suited for a Rule 12(b)(6) motion or a Rule 56 motion\" (at 974). Removed non-opinion \"functional equivalent\" paraphrase.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/173487/whittlestone-inc-v-handi-craft-co/",
+        "https://www.courtlistener.com/opinion/173487/whittlestone-inc-v-handi-craft-co/",
+        "https://static.case.law/f3d/618/html/0970-01.html"
+      ],
+      "matter": 24,
+      "round": "9-matter24-opp-quote-pass"
+    },
+    {
+      "citation": "Kay v. Ehrler, 499 U.S. 432 (1991)",
+      "status": "VERIFIED",
+      "notes": "Matter 24 Opp v4 existence probe 2026-08-27: consensus=FOUND; matched=Kay v. Ehrler",
+      "sources": [
+        "https://www.courtlistener.com/opinion/9106342/kay-v-ehrler/",
+        "https://www.courtlistener.com/opinion/9106342/kay-v-ehrler/",
+        "https://static.case.law/us/499/html/0432-01.html"
+      ],
+      "matter": 24,
+      "round": "9-matter24-opp-quote-pass"
+    },
+    {
+      "citation": "Keates v. Koile, 883 F. 3d 1228",
+      "status": "VERIFIED",
+      "notes": "Matter 24 Opp v4 existence probe 2026-08-27: consensus=FOUND; matched=Keates v. Koile",
+      "sources": [
+        "https://www.courtlistener.com/opinion/4474827/ellen-keates-v-michael-koile/",
+        "https://www.courtlistener.com/opinion/4474827/ellen-keates-v-michael-koile/",
+        "https://static.case.law/f3d/883/html/1228-01.html"
+      ],
+      "matter": 24,
+      "round": "9-matter24-opp-quote-pass"
+    },
+    {
+      "citation": "Khoja v. Orexigen Therapeutics, Inc, 899 F. 3d 988",
+      "status": "VERIFIED",
+      "notes": "Matter 24 Opp v4 existence probe 2026-08-27: consensus=FOUND; matched=Khoja v. Orexigen Therapeutics, Inc.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/4525969/karim-khoja-v-orexigen-therapeutics-inc/",
+        "https://www.courtlistener.com/opinion/4525969/karim-khoja-v-orexigen-therapeutics-inc/",
+        "https://static.case.law/f3d/899/html/0988-01.html"
+      ],
+      "matter": 24,
+      "round": "9-matter24-opp-quote-pass"
+    },
+    {
+      "citation": "Knievel v. ESPN, 393 F. 3d 1068",
+      "status": "VERIFIED",
+      "notes": "Matter 24 Opp v4 existence probe 2026-08-27: consensus=FOUND; matched=Knievel v. ESPN VERIFIED existence; light-most-favorable pleading quote matches 393 F.3d at 1072.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/788804/evel-knievel-krystal-knievel-v-espn-a-subsidiary-of-walt-disney-inc/",
+        "https://www.courtlistener.com/opinion/788804/evel-knievel-krystal-knievel-v-espn-a-subsidiary-of-walt-disney-inc/",
+        "https://static.case.law/f3d/393/html/1068-01.html"
+      ],
+      "matter": 24,
+      "round": "9-matter24-opp-quote-pass"
+    },
+    {
+      "citation": "Navarro v. Block, 250 F. 3d 729",
+      "status": "VERIFIED",
+      "notes": "Matter 24 Opp v4 existence probe 2026-08-27: consensus=FOUND; matched=Navarro v. Block",
+      "sources": [
+        "https://www.courtlistener.com/opinion/7092494/navarro-v-block/",
+        "https://www.courtlistener.com/opinion/7092494/navarro-v-block/",
+        "https://static.case.law/f3d/250/html/0729-01.html"
+      ],
+      "matter": 24,
+      "round": "9-matter24-opp-quote-pass"
+    },
+    {
+      "citation": "Nieves v. Bartlett, 587 U.S. 391 (2019)",
+      "status": "VERIFIED",
+      "notes": "Matter 24 Opp v4 existence probe 2026-08-27: consensus=PARTIAL; matched=Nieves v. Bartlett",
+      "sources": [
+        "https://www.courtlistener.com/opinion/9231236/nieves-v-bartlett/",
+        "https://www.courtlistener.com/opinion/9231236/nieves-v-bartlett/",
+        "https://static.case.law/us/587/CasesMetadata.json"
+      ],
+      "matter": 24,
+      "round": "9-matter24-opp-quote-pass"
+    },
+    {
+      "citation": "Noll v. Carlson, 809 F. 2d 1446",
+      "status": "VERIFIED",
+      "notes": "Matter 24 Opp v4 existence probe 2026-08-27: consensus=FOUND; matched=Noll v. Carlson VERIFIED existence (809 F.2d 1446). Source of the leave-to-amend \"absolutely clear...\" quotation as used via Lopez.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/8956219/noll-v-carlson/",
+        "https://www.courtlistener.com/opinion/8956219/noll-v-carlson/",
+        "https://static.case.law/f2d/809/html/1446-02.html"
+      ],
+      "matter": 24,
+      "round": "9-matter24-opp-quote-pass"
+    },
+    {
+      "citation": "Perry v. Sindermann, 408 U.S. 593 (1972)",
+      "status": "VERIFIED",
+      "notes": "Matter 24 Opp v4 existence probe 2026-08-27: consensus=FOUND; matched=Perry v. Sindermann VERIFIED existence (408 U.S. 593). Quote pass: restored full two-sentence Perry 597 block (no-right-to-benefit / may-not-deny-on-infringing-basis) instead of inverted compressed paraphrase.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/108609/perry-v-sindermann/",
+        "https://www.courtlistener.com/opinion/108609/perry-v-sindermann/",
+        "https://static.case.law/us/408/html/0593-01.html"
+      ],
+      "matter": 24,
+      "round": "9-matter24-opp-quote-pass"
+    },
+    {
+      "citation": "Smith v. Wade, 461 U.S. 30 (1983)",
+      "status": "VERIFIED",
+      "notes": "Matter 24 Opp v4 existence probe 2026-08-27: consensus=FOUND; matched=Smith v. Wade VERIFIED existence; \"reckless or callous indifference to the federally protected rights of others\" matches 461 U.S. 30.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/110915/smith-v-wade/",
+        "https://www.courtlistener.com/opinion/110915/smith-v-wade/",
+        "https://static.case.law/us/461/html/0030-01.html"
+      ],
+      "matter": 24,
+      "round": "9-matter24-opp-quote-pass"
+    },
+    {
+      "citation": "Whittlestone, Inc. v. Handi-Craft Co, 618 F. 3d 970",
+      "status": "VERIFIED",
+      "notes": "Matter 24 Opp v4 existence probe 2026-08-27: consensus=FOUND; matched=Whittlestone, Inc. v. Handi-Craft Co. VERIFIED existence (618 F.3d 970). Quote pass 2026-08-27: Opp now uses exact holding that Rule 12(f) \"does not authorize a district court to strike a claim for damages on the ground that such damages are precluded as a matter of law\" (at 971, 974-75) and \"better suited for a Rule 12(b)(6) motion or a Rule 56 motion\" (at 974). Removed non-opinion \"functional equivalent\" paraphrase.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/173487/whittlestone-inc-v-handi-craft-co/",
+        "https://www.courtlistener.com/opinion/173487/whittlestone-inc-v-handi-craft-co/",
+        "https://static.case.law/f3d/618/html/0970-01.html"
+      ],
+      "matter": 24,
+      "round": "9-matter24-opp-quote-pass"
+    },
+    {
+      "citation": "Wilkerson v. Butler, 229 F.R.D. 166",
+      "status": "VERIFIED",
+      "notes": "Matter 24 Opp v4 existence probe 2026-08-27: consensus=FOUND; matched=Wilkerson v. Butler",
+      "sources": [
+        "https://www.courtlistener.com/opinion/8757256/wilkerson-v-butler/",
+        "https://www.courtlistener.com/opinion/8757256/wilkerson-v-butler/",
+        "https://static.case.law/frd/229/html/0166-01.html"
+      ],
+      "matter": 24,
+      "round": "9-matter24-opp-quote-pass"
+    },
+    {
+      "citation": "Winter v. Nat. Res. Def. Council, Inc, 555 U.S. 7 (2008)",
+      "status": "VERIFIED",
+      "notes": "Matter 24 Opp v4 existence probe 2026-08-27: consensus=CAPTION_MISMATCH; matched=Winter v. Natural Resources Defense Council, Inc. (abbreviation/style mismatch only; same reporter pin).",
+      "sources": [
+        "https://www.courtlistener.com/opinion/145928/winter-v-natural-resources-defense-council-inc/",
+        "https://www.courtlistener.com/opinion/145928/winter-v-natural-resources-defense-council-inc/",
+        "https://static.case.law/us/555/html/0007-01.html"
+      ],
+      "matter": 24,
+      "round": "9-matter24-opp-quote-pass"
+    },
+    {
+      "citation": "Withrow v. Larkin, 421 U.S. 35 (1975)",
+      "status": "VERIFIED",
+      "notes": "Matter 24 Opp v4 existence probe 2026-08-27: consensus=FOUND; matched=Withrow v. Larkin",
+      "sources": [
+        "https://www.courtlistener.com/opinion/109237/withrow-v-larkin/",
+        "https://www.courtlistener.com/opinion/109237/withrow-v-larkin/",
+        "https://static.case.law/us/421/html/0035-01.html"
+      ],
+      "matter": 24,
+      "round": "9-matter24-opp-quote-pass"
     }
   ],
   "multisourceConfirmation": {
@@ -2174,7 +2544,7 @@
     "script": "internal/scripts/lookup-citations.py",
     "reachability": {
       "courtlistener_search": "ok (unauthenticated /api/rest/v4/search/)",
-      "case_law_api": "html docs only — JSON API not usable without auth/migration",
+      "case_law_api": "html docs only \u2014 JSON API not usable without auth/migration",
       "case_law_static": "ok (CasesMetadata.json + html/{file_name}.html)",
       "justia": "blocked (Cloudflare 403) in this environment",
       "google_scholar": "unreliable (often 403)",
@@ -2388,8 +2758,8 @@
     "subject": "/documents/opinions/Newanforbi v Serrato - USDC NDCal - IFP Granted Complaint Sufficient Jun 29 2026.pdf",
     "note": "The order is a 5-page image-only scan that contributed no citations until internal/scripts/ocr-text-layer.py added an invisible text layer; it now indexes 53 citations and 8 new authorities, all role court_order.",
     "controls": {
-      "positive": "Richardson v. McKnight, 521 U.S. 399 — FOUND",
-      "negative": "In re Leman, 66 Cal.App.5th 200 — NOT_FOUND"
+      "positive": "Richardson v. McKnight, 521 U.S. 399 \u2014 FOUND",
+      "negative": "In re Leman, 66 Cal.App.5th 200 \u2014 NOT_FOUND"
     },
     "probeCount": 13,
     "consensusCounts": {
@@ -2412,6 +2782,6 @@
       "internal/docs/citation_lookup_matter12_p0.json",
       "internal/docs/citation_lookup_barocio_order.json"
     ],
-    "note": "16 plaintiff_filing + court_order PDFs OCR'd; no_text_layer count 73→57; known-bad gate stayed green."
+    "note": "16 plaintiff_filing + court_order PDFs OCR'd; no_text_layer count 73\u219257; known-bad gate stayed green."
   }
 }

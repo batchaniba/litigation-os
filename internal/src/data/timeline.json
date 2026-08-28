@@ -3658,5 +3658,67 @@
     "type": "filing",
     "upcoming": false,
     "source": "/documents/matter-32/ndcal/Meza-Gonzalez Private Process Server Bundle (Aug 25 2026).pdf"
+  },
+  {
+    "date": "Aug. 26, 2026",
+    "event": "Meet-and-confer deadline (computed) as to The RK Logistics Group, Inc. \u2014 Newanforbi v. Randstad US, LLC et al. (26CV199902); CCP \u00a7430.41(a)(2) requires meet-and-confer at least 5 calendar days before the Aug. 31, 2026 responsive-pleading deadline, if RK Logistics intends to demur; otherwise it must file a declaration for the automatic 30-day extension. Randstad US, LLC is no longer on this clock \u2014 its response was extended to Sept. 15, 2026 by the parties' Aug. 18, 2026 agreement, moving its meet-and-confer date to Sept. 10, 2026.",
+    "matters": [
+      27
+    ],
+    "type": "deadline",
+    "upcoming": false,
+    "actor": "opposing"
+  },
+  {
+    "date": "Aug. 26, 2026",
+    "event": "Meet-and-confer deadline (computed) \u2014 Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554); CCP \u00a7430.41(a)(2) requires meet-and-confer at least 5 calendar days before the Aug. 31, 2026 responsive-pleading deadline, if either defendant intends to demur; otherwise that defendant must file a declaration for the automatic 30-day extension",
+    "matters": [
+      29
+    ],
+    "type": "deadline",
+    "upcoming": false,
+    "actor": "opposing"
+  },
+  {
+    "date": "Aug. 26, 2026",
+    "event": "Responsive pleading deadline (computed) \u2014 Newanforbi v. Serrato (4:26-cv-05953-ASK); 21 days from the Aug. 5, 2026 USMS personal service date (FRCP 12(a)(1)(A))",
+    "matters": [
+      24
+    ],
+    "type": "deadline",
+    "upcoming": false,
+    "actor": "opposing"
+  },
+  {
+    "date": "Aug. 26, 2026",
+    "event": "RECEIVED \u2014 Defendant Captain G. Serrato's Notice of Motion and Motion to Dismiss Plaintiff's First Amended Complaint and/or Motion to Strike Portions of the FAC (Rules 12(b)(6) and 12(f)), filed by DAG Haiyang A. Li; noticed for hearing Sep. 16, 2026, 1:30 p.m., Mag. Krishnan (Civil L.R. 7-2(a) 35-day notice issue: only 21 days given). Grounds: (1) no SDP/PDP right because U-visa certification discretionary; (2) First Amendment retaliation fails because civil allegations are not qualifying criminal activity; (3)-(5) strike declaratory relief, injunction, and attorney fees; (6) qualified immunity. Also seeks to strike punitive damages. \u2014 Newanforbi v. Serrato (4:26-cv-05953-ASK).",
+    "source": "/documents/matter-24/Defendant Serrato Motion to Dismiss FAC and Strike (Aug 26 2026).pdf",
+    "upcoming": false,
+    "type": "filing",
+    "matters": [
+      24
+    ]
+  },
+  {
+    "date": "Sep. 2, 2026",
+    "event": "Opposition due to Serrato MTD / Motion to Strike (Civil L.R. 7-3(a) \u2014 14 days before Sep. 16 hearing). Draft Opposition v4 prepared (but-for causation / Perry restore / TOA sync / leave-to-amend hedges). \u2014 Newanforbi v. Serrato (4:26-cv-05953-ASK).",
+    "source": "/documents/matter-24/Opposition to Serrato MTD FAC and Strike v4 (Sep 2 2026).docx",
+    "upcoming": true,
+    "actor": "you",
+    "type": "deadline",
+    "matters": [
+      24
+    ]
+  },
+  {
+    "date": "Sep. 16, 2026",
+    "event": "Hearing on Defendant Serrato's Motion to Dismiss FAC and/or Motion to Strike \u2014 1:30 p.m., Mag. Ajay S. Krishnan \u2014 Newanforbi v. Serrato (4:26-cv-05953-ASK). Note: noticed with only 21 days; Civil L.R. 7-2(a) requires 35.",
+    "source": "/documents/matter-24/Defendant Serrato Motion to Dismiss FAC and Strike (Aug 26 2026).pdf",
+    "upcoming": true,
+    "actor": "agency",
+    "type": "hearing",
+    "matters": [
+      24
+    ]
   }
 ]
