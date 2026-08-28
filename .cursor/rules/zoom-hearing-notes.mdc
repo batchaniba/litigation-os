@@ -1,5 +1,5 @@
 ---
-description: If the user asks for a script, talking points, or what to say in court or on Zoom, do not produce a read-aloud document. Zoom makes reading obvious.
+description: If the user asks for a script, talking points, or what to say in court or on Zoom, give a two-typeface read-aloud. Bold is don't-say. Regular type is what he speaks.
 alwaysApply: true
 ---
 
@@ -9,12 +9,10 @@ When the user asks for a **script**, talking points, what to say, or notes for a
 hearing / CMC / Zoom appearance:
 
 - Follow `.claude/skills/hearing-script/SKILL.md`.
-- The chat is a **glanceable Zoom card**, not a teleprompter.
-- Never use "If they say…", "Q. / A.", "Point A", "Read this", or complete
-  "Your Honor, …" paragraphs in anything he might have open on camera.
-- Opening he can say without looking down. Then 3–6 word cues. One-line ask.
-- One screen. No scrolling. No PDF unless he asks.
-- Full argument and traps only if he asks for homework, in a separate artifact
-  labeled `DO NOT OPEN ON CAMERA`.
+- Render it **in the chat**.
+- **Bold** lines always start with `(don't say)` — stage directions, never spoken.
+- Regular type is the only read-aloud. Short complete sentences. His voice. Sounds smart, not like a brief.
+- Never use "If they say…", "Q. / A.", "Point A", or "Read this" — those get spoken by accident.
+- Skip-blocks behind bold gates, not a six-page PDF.
 
-Locked after the August 28, 2026 CHP demurrer (Matter 20). The Court could tell.
+Locked after the August 28, 2026 CHP demurrer (Matter 20). The Court could tell when heading and speech were the same type.
