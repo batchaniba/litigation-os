@@ -2499,7 +2499,7 @@
   },
   {
     "date": "Aug. 26, 2026",
-    "event": "Meet-and-confer deadline (computed) as to The RK Logistics Group, Inc. — Newanforbi v. Randstad US, LLC et al. (26CV199902); CCP §430.41(a)(2) requires meet-and-confer at least 5 calendar days before the Aug. 31, 2026 responsive-pleading deadline, if RK Logistics intends to demur; otherwise it must file a declaration for the automatic 30-day extension. Randstad US, LLC is no longer on this clock — its response was extended to Sept. 15, 2026 by the parties' Aug. 18, 2026 agreement, moving its meet-and-confer date to Sept. 10, 2026.",
+    "event": "PASSED — Meet-and-confer deadline (computed) as to The RK Logistics Group, Inc. — Newanforbi v. Randstad US, LLC et al. (26CV199902); CCP §430.41(a)(2) requires meet-and-confer at least 5 calendar days before the Aug. 31, 2026 responsive-pleading deadline, if RK Logistics intends to demur; otherwise it must file a declaration for the automatic 30-day extension. Randstad US, LLC is no longer on this clock — its response was extended to Sept. 15, 2026 by the parties' Aug. 18, 2026 agreement, moving its meet-and-confer date to Sept. 10, 2026.",
     "matters": [
       27
     ],
@@ -3006,7 +3006,7 @@
   },
   {
     "date": "Aug. 26, 2026",
-    "event": "Meet-and-confer deadline (computed) — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554); CCP §430.41(a)(2) requires meet-and-confer at least 5 calendar days before the Aug. 31, 2026 responsive-pleading deadline, if either defendant intends to demur; otherwise that defendant must file a declaration for the automatic 30-day extension",
+    "event": "PASSED — Meet-and-confer deadline (computed) — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554); CCP §430.41(a)(2) requires meet-and-confer at least 5 calendar days before the Aug. 31, 2026 responsive-pleading deadline, if either defendant intends to demur; otherwise that defendant must file a declaration for the automatic 30-day extension",
     "matters": [
       29
     ],
@@ -3382,7 +3382,7 @@
   },
   {
     "date": "Aug. 26, 2026",
-    "event": "Responsive pleading deadline (computed) — Newanforbi v. Serrato (4:26-cv-05953-ASK); 21 days from the Aug. 5, 2026 USMS personal service date (FRCP 12(a)(1)(A))",
+    "event": "PASSED — Responsive pleading deadline (computed) — Newanforbi v. Serrato (4:26-cv-05953-ASK); 21 days from the Aug. 5, 2026 USMS personal service date (FRCP 12(a)(1)(A))",
     "matters": [
       24
     ],
@@ -3552,5 +3552,36 @@
     ],
     "type": "event",
     "source": "/documents/matter-26/USPS Package Intercept Confirmation Email - Order o2568695706 (Aug 20 2026).pdf"
+  },
+  {
+    "date": "Aug. 26, 2026",
+    "event": "CASE CLOSED — Newanforbi v. Derrick et al. (Matter 3, E.D. Cal. No. 2:26-cv-00004-DJC-JDP). Docket terminated after Rule 41(a)(1)(A)(i) dismissals of Derrick/Noguchi (Jul. 22) and Palacios (Aug. 20–21) and discharge of Mag. Peterson's Aug. 13 OSC (ECF No. 33). No further action.",
+    "matters": [
+      3
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "actor": "court",
+    "filed": true
+  },
+  {
+    "date": "Aug. 26, 2026",
+    "event": "CASE CLOSED — Newanforbi v. State of California / CHP et al. (Matter 1, E.D. Cal. No. 2:25-cv-01460-DC-CSK). Docket terminated following the Aug. 15, 2026 Rule 41(a)(1)(A)(i) Notice of Voluntary Dismissal Without Prejudice. Live claims against Meza-Gonzalez and Melano continue only in Matter 32 (N.D. Cal. No. 3:26-cv-08271-PHK).",
+    "matters": [
+      1
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "actor": "court",
+    "filed": true
+  },
+  {
+    "date": "Aug. 27, 2026",
+    "event": "MOOT — OSC RESPONSE WINDOW — Newanforbi v. Derrick et al. (2:26-cv-00004-DJC-JDP). Mag. Peterson's Aug. 13, 2026 OSC (ECF No. 33) gave 14 days to show cause or amend. Plaintiff filed a Rule 41(a)(1)(A)(i) Notice of Voluntary Dismissal of Katie Palacios (remaining defendant) on/about Aug. 20–21. CASE CLOSED confirmed Aug. 26, 2026 — OSC discharged; no Response to OSC required.",
+    "matters": [
+      3
+    ],
+    "type": "deadline",
+    "upcoming": false
   }
 ]
