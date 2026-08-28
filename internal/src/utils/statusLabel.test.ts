@@ -24,12 +24,36 @@ describe("statusLabel derivation", () => {
   });
 
   it("prefers demurrer hearings over earlier reply deadlines", () => {
-    const matter = cases.find((item) => item.number === 20)!;
-    const events = eventsFor(20);
-    const posture = pickPostureEvent(events, matter.phase);
-    expect(posture?.date).toBe("Aug. 28, 2026");
+    // Synthetic — Matter 20's Aug. 28 demurrer was held; live posture is the
+    // Sep. 2 CMC plus a status_label override. Pin the ranking rule here so
+    // this test does not rot every time that calendar moves.
+    const matter = { number: 20, lifecycle: "active" as const, phase: "demurrer" as const };
+    const reply = {
+      date: "Aug. 21, 2026",
+      event: "AG reply deadline — Matter 20",
+      type: "deadline",
+      matters: [20],
+      upcoming: true,
+    } as TimelineEvent;
+    const hearing = {
+      date: "Aug. 28, 2026",
+      event: "Demurrer Hearing — Matter 20",
+      type: "hearing",
+      matters: [20],
+      upcoming: true,
+    } as TimelineEvent;
+    const events = [reply, hearing];
+    expect(pickPostureEvent(events, matter.phase)?.date).toBe("Aug. 28, 2026");
     expect(deriveStatusLabel(matter, { events })).toContain("Aug. 28, 2026");
     expect(deriveStatusLabel(matter, { events })).toMatch(/Demurrer hearing/i);
+  });
+
+  it("uses the next live calendar date after a held demurrer hearing", () => {
+    const matter = cases.find((item) => item.number === 20)!;
+    const events = eventsFor(20);
+    expect(matter.status_label).toMatch(/minute order pending/i);
+    expect(effectiveStatusLabel(matter, { events })).toMatch(/minute order pending/i);
+    expect(pickPostureEvent(events, matter.phase)?.date).toBe("Sep. 2, 2026");
   });
 
   it("derives default prove-up and CMC dates from upcoming hearings", () => {
@@ -56,7 +80,23 @@ describe("statusLabel derivation", () => {
     expect(deriveStatusLabel(cases.find((item) => item.number === 25)!, { events: eventsFor(25) })).toBe(
       "Served Jul. 24, 2026 — Response due Aug. 31, 2026",
     );
-    expect(deriveStatusLabel(cases.find((item) => item.number === 27)!, { events: eventsFor(27) })).toBe(
+    // Synthetic — Matter 27's live calendar now includes the Dec. 17 CMC, which
+    // outranks the August response date. Pin the pairing rule so the test does
+    // not rot when that posture moves.
+    const servedMatter = {
+      number: 27,
+      lifecycle: "active" as const,
+      phase: "responsive_deadline" as const,
+      serviceTracking: [{ name: "Randstad", served: true, dateServed: "July 30, 2026" }],
+    };
+    const responseDue = {
+      date: "Aug. 31, 2026",
+      event: "Response due — Matter 27",
+      type: "deadline",
+      matters: [27],
+      upcoming: true,
+    } as TimelineEvent;
+    expect(deriveStatusLabel(servedMatter, { events: [responseDue] })).toBe(
       "Served Jul. 30, 2026 — Response due Aug. 31, 2026",
     );
   });

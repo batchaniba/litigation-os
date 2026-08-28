@@ -495,7 +495,7 @@
     "case_no": "26CV191136",
     "court": "Alameda Sup. Ct.",
     "claims": "Writ of Mandate (CCP §1085; PC §679.10) — U Visa Certification; Declaratory Relief (CCP §1060)",
-    "status_label": "Tentative: core writ claim survives; appear 10:30 Aug 28",
+    "status_label": "Demurrer argued Aug. 28 — minute order pending",
     "lifecycle": "active",
     "proceeding": "mandate",
     "phase": "hearing",
@@ -541,9 +541,9 @@
       "Count IV — Declaratory Relief (CCP §1060): Facial Deficiency of April 20, 2026 Denial and Construction of PC §679.10"
     ],
     "archived": false,
-    "badge": "TENTATIVE",
+    "badge": "POST-HEARING",
     "evidenceCount": 12,
-    "documentCount": 45
+    "documentCount": 46
   },
   {
     "number": 21,
