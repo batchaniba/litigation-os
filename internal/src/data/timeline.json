@@ -21,6 +21,18 @@
     "actor": "you"
   },
   {
+    "date": "Aug. 28, 2026",
+    "event": "EXECUTED (unfiled) \u2014 Plaintiff's Consent to Jurisdiction of United States Magistrate Judge in Newanforbi v. Federal Express Corporation (2:26-cv-02881-DAD-SCR). Filled from Dkt. 3 p. 4 (court-captioned E.D. Cal. form): CONSENT checked, Plaintiff/Petitioner marked, dated August 28, 2026, canonical signature stamped. Proof of Service by first-class mail on Allison A. Kray at 2601 Main Street, Suite 1100, Irvine. Matches house practice in Matters 24/32/33. File with the Sacramento clerk (L.R. 305); POS says mailed from San Jose. Consent is effective only if FedEx also consents and both judges accept.",
+    "matters": [
+      25
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-25/Consent to Magistrate Judge Jurisdiction - Federal Express (E.D. Cal. 2-26-cv-02881) (Aug 28 2026).pdf"
+  },
+  {
     "date": "Aug. 27, 2026",
     "event": "WATCH \u2014 if UPS responds by a Fed. R. Civ. P. 12 motion on its Rule 81(c)(2)(C) date, two clocks start immediately in Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD): opposition due 14 days after the motion is FILED under L.R. 230(c) (roughly Sep. 10, 2026), and one amendment as of right available within 21 days of SERVICE of the motion under Fed. R. Civ. P. 15(a)(1)(B) (roughly Sep. 17, 2026). The two run from different events and the opposition clock is the shorter. Under L.R. 230(c) a failure to oppose may be taken as consent to granting the motion. Amending as of right can moot a Rule 12(b)(6) motion outright \u2014 decide between opposing and amending in the first days, not the last.",
     "matters": [
