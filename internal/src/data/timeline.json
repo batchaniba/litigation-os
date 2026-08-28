@@ -21,7 +21,7 @@
   },
   {
     "date": "Sep. 9, 2026",
-    "event": "OPPOSITION DUE — Plaintiff's opposition to UPS's Rule 12(b)(6) motion (ECF No. 7), Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). L.R. 230(c): 14 days after filing (Aug. 26). Failure to oppose may be taken as consent. Unfiled draft is dated Aug. 27; regenerate with internal/scripts/matter26-opposition-to-mtd.py --date on the day of actual service. Drozd Standing Order I.E: do not file the proposed order with the opposition unless the Court asks. Hearing Oct. 5, 2026 (Zoom).",
+    "event": "OPPOSITION DUE — Plaintiff's opposition to UPS's Rule 12(b)(6) motion (ECF No. 7), Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). L.R. 230(c): 14 days after filing (Aug. 26). Failure to oppose may be taken as consent. Unfiled draft is dated Aug. 28; regenerate with internal/scripts/matter26-opposition-to-mtd.py --date on the day of actual service. Drozd Standing Order I.E: do not file the proposed order with the opposition unless the Court asks. Hearing Oct. 5, 2026 (Zoom).",
     "matters": [
       26
     ],
@@ -31,8 +31,8 @@
     "source": "/documents/matter-26/Opposition to UPS Rule 12(b)(6) Motion to Dismiss (E.D. Cal. 2-26-cv-02847) (Sep 9 2026).pdf"
   },
   {
-    "date": "Aug. 27, 2026",
-    "event": "DRAFTED — Plaintiff's Opposition to UPS's Rule 12(b)(6) Motion to Dismiss (unfiled). Surgical cleanup: 12(b)(6) rhetoric softened; ICRAA anchored to Civ. Code 1786.16(b) not a 290.46 pass-through; Rule 15 clock runs from Aug. 26 mail service; proposed order is a single realistic disposition and is not to be filed (Drozd Standing Order I.E). Certificate dated Aug. 27, 2026. Due Sep. 9.",
+    "date": "Aug. 28, 2026",
+    "event": "DRAFTED — Plaintiff's Opposition to UPS's Rule 12(b)(6) Motion to Dismiss (unfiled). Surgical cleanup: 12(b)(6) rhetoric softened; ICRAA anchored to Civ. Code 1786.16(b) not a 290.46 pass-through; Rule 15 clock runs from Aug. 26 mail service; proposed order is a single realistic disposition and is not to be filed (Drozd Standing Order I.E). Dated Aug. 28, 2026. Service is first-class mail (FRCP 5(b)(2)(C)) on the portfolio four-sided-border Proof of Service, mailed from San Jose to Mott/Daskas at Costa Mesa and Mott's Carlsbad docket address; email is a courtesy copy only. Due Sep. 9.",
     "matters": [
       26
     ],

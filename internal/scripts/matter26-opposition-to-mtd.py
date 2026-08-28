@@ -18,14 +18,19 @@ Exhibit A. Architecture:
 Rendered on the shared pleading-paper engine and signed with the portfolio
 universal signature (bnn.cdl@gmail.com -- not the UPS COS misspelling).
 
-Date the signature and certificate with --date on the day of actual service.
-Do not pre-date a September 9 certificate. L.R. 230(c) due date is September 9,
-2026; that is not the certificate date. Judge Drozd Standing Order I.E does
-not require a proposed order with this civil motion; generate one only as a
-portfolio draft and do not file it unless the Court asks.
+Date the signature and Proof of Service with --date on the day of actual
+service. Do not pre-date a September 9 certificate. L.R. 230(c) due date is
+September 9, 2026; that is not the certificate date. Judge Drozd Standing
+Order I.E does not require a proposed order with this civil motion; generate
+one only as a portfolio draft and do not file it unless the Court asks.
+
+Service is first-class mail (Fed. R. Civ. P. 5(b)(2)(C); E.D. Cal. L.R. 135).
+The Proof of Service is the portfolio four-sided-border form
+(``lib/proof_of_service.py``), not a pleading-paper certificate. Do not serve
+or file the proposed order.
 
     python3 internal/scripts/matter26-opposition-to-mtd.py \\
-        [--date "August 27, 2026"] [--mailed-from "San Jose, California"] [OUT_PDF]
+        [--date "August 28, 2026"] [--mailed-from "San Jose, California"] [OUT_PDF]
 """
 
 from __future__ import annotations
@@ -38,6 +43,11 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPT_DIR / "lib"))
 sys.path.insert(0, str(SCRIPT_DIR))
 from pleading_paper import CONTENT_LEFT, PleadingPaper  # noqa: E402
+from proof_of_service import (  # noqa: E402
+    DISTRICT_EDCAL,
+    ProofOfServiceFields,
+    build_proof_of_service,
+)
 from signature_stamp import SIGNATURE_NATIVE_PX, SIGNATURE_PATH  # noqa: E402
 
 ROOT = SCRIPT_DIR.parents[1]
@@ -52,8 +62,13 @@ DEFAULT_ORDER_OUT = (
     / "Proposed Order Denying UPS Rule 12(b)(6) Motion to Dismiss (E.D. Cal. 2-26-cv-02847) (Sep 9 2026).pdf"
 )
 
-DEFAULT_EXEC_DATE = "August 27, 2026"
+DEFAULT_EXEC_DATE = "August 28, 2026"
 DEFAULT_MAILED_FROM = "San Jose, California"
+DEFAULT_POS_OUT = (
+    ROOT
+    / "internal/public/documents/matter-26"
+    / "Proof of Service - Opposition to UPS Rule 12(b)(6) (E.D. Cal. 2-26-cv-02847) (Aug 28 2026).pdf"
+)
 FOOTER = (
     "PLAINTIFF'S OPPOSITION TO RULE 12(b)(6) MOTION -- "
     "NEWANFORBI v. UNITED PARCEL SERVICE, INC."
@@ -129,15 +144,13 @@ SERVICE_ADDRESSEES = [
     "MARTENSON, HASBROUCK & SIMON LLP",
     "600 Anton Boulevard, Suite 1250",
     "Costa Mesa, CA 92626",
-    "vmott@martensonlaw.com",
-    "adaskas@martensonlaw.com",
-    "Attorneys for Defendant United Parcel Service, Inc.",
     "",
     "AND TO (address of record on the docket):",
     "Vanessa W. Mott, Esq.",
     "MARTENSON, HASBROUCK & SIMON LLP",
     "5800 Armada Drive, Suite 101",
     "Carlsbad, CA 92008",
+    "Attorneys for Defendant United Parcel Service, Inc.",
 ]
 
 
@@ -677,6 +690,36 @@ ORDER_CONTENT = [
 ]
 
 
+def opposition_pos_fields(exec_date: str, mailed_from: str) -> ProofOfServiceFields:
+    """Fill the portfolio four-sided-border Proof of Service (not pleading paper)."""
+    return ProofOfServiceFields(
+        plaintiff_line="BRENDAN NGEHSI NEWANFORBI",
+        plaintiff_role="Plaintiff",
+        defendant_lines=[
+            "UNITED PARCEL SERVICE, INC.; and",
+            "DOES 1 through 10, inclusive",
+        ],
+        defendant_role="Defendants",
+        case_number="2:26-cv-02847-DAD-CKD",
+        district_line=DISTRICT_EDCAL,
+        title="PROOF OF SERVICE",
+        service_date=exec_date,
+        document_title="Plaintiff's Opposition to UPS's Rule 12(b)(6) Motion to Dismiss",
+        mailing_location=mailed_from,
+        recipients=list(SERVICE_ADDRESSEES),
+        server_name="Brendan Ngehsi Newanforbi",
+        stamp_signature=True,
+    )
+
+
+def build_opposition_proof_of_service(
+    out: Path, exec_date: str, mailed_from: str
+) -> Path:
+    if not Path(SIGNATURE_PATH).is_file():
+        raise SystemExit(f"Missing universal signature: {SIGNATURE_PATH}")
+    return build_proof_of_service(out, opposition_pos_fields(exec_date, mailed_from))
+
+
 def _signature(d: PleadingPaper, exec_date: str) -> None:
     d.ensure_space(9)
     d.write_line(f"Dated: {exec_date}")
@@ -698,10 +741,11 @@ def _certificate_of_service(d: PleadingPaper, exec_date: str, mailed_from: str,
     d.blank_line()
     d.write_wrapped(
         "I am the Plaintiff in this action and am over the age of eighteen years. My "
-        "electronic service address is bnn.cdl@gmail.com. On "
-        f"{exec_date}, I served the foregoing {document_title} by placing a true and "
-        "correct copy in a sealed envelope, with first-class postage fully prepaid, and "
-        "depositing it with the United States Postal Service at "
+        "email address is bnn.cdl@gmail.com. On "
+        f"{exec_date}, I served the foregoing {document_title} pursuant to Federal Rule "
+        "of Civil Procedure 5(b)(2)(C) and E.D. Cal. Local Rule 135 by placing a true "
+        "and correct copy in a sealed envelope, with first-class postage fully prepaid, "
+        "and depositing it with the United States Postal Service at "
         f"{mailed_from}, addressed as follows:",
         first_indent=36,
     )
@@ -710,8 +754,10 @@ def _certificate_of_service(d: PleadingPaper, exec_date: str, mailed_from: str,
         d.write_line(line, indent=54)
     d.blank_line()
     d.write_wrapped(
-        "I also transmitted a true copy of the same document by electronic mail to "
-        "vmott@martensonlaw.com and adaskas@martensonlaw.com.",
+        "I also transmitted a courtesy copy of the same document by electronic mail to "
+        "vmott@martensonlaw.com and adaskas@martensonlaw.com. Counsel has not consented "
+        "in writing to electronic service under Rule 5(b)(2)(E). The courtesy email is "
+        "not the method of service.",
         first_indent=36,
     )
     d.blank_line()
@@ -819,15 +865,23 @@ def main() -> None:
     ap.add_argument("--order-out", default=str(DEFAULT_ORDER_OUT))
     ap.add_argument("--date", default=DEFAULT_EXEC_DATE,
                     help="Date of actual service, printed on the signature and "
-                         "certificate. Do not pass the L.R. 230(c) due date unless "
+                         "Proof of Service. Do not pass the L.R. 230(c) due date unless "
                          "that is the day the papers are actually served.")
     ap.add_argument("--mailed-from", default=DEFAULT_MAILED_FROM,
                     help="City and state where the service copy is deposited with the "
-                         "USPS and where the certificate is executed")
+                         "USPS and where the Proof of Service is executed")
+    ap.add_argument("--pos-out", default=str(DEFAULT_POS_OUT),
+                    help="Path for the four-sided-border Proof of Service PDF")
     ap.add_argument("--skip-order", action="store_true")
+    ap.add_argument("--skip-pos", action="store_true")
     args = ap.parse_args()
     path = build_opposition(Path(args.out).resolve(), args.date, args.mailed_from)
     print(f"Generated opposition: {path}")
+    if not args.skip_pos:
+        pos = build_opposition_proof_of_service(
+            Path(args.pos_out).resolve(), args.date, args.mailed_from
+        )
+        print(f"Generated proof of service: {pos}")
     if not args.skip_order:
         order = build_proposed_order(Path(args.order_out).resolve(), args.date,
                                      args.mailed_from)
