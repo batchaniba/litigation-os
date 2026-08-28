@@ -14,13 +14,16 @@
 import os, sys
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, SCRIPT_DIR)
 sys.path.insert(0, os.path.join(SCRIPT_DIR, "lib"))
 from pleading_paper import (
     PleadingPaper, CONTENT_LEFT, COURT_LINE1,
 )
 
-SIGNATURE_IMG = os.path.join(SCRIPT_DIR, "assets", "newanforbi-pen-signature.png")
-SIG_IMG_W_PX, SIG_IMG_H_PX = 369, 101  # actual pixel dims, for aspect ratio
+from signature_stamp import SIGNATURE_NATIVE_PX, SIGNATURE_PATH  # noqa: E402
+
+SIGNATURE_IMG = SIGNATURE_PATH
+SIG_IMG_W_PX, SIG_IMG_H_PX = SIGNATURE_NATIVE_PX
 
 FILED_STATUS = False  # flip to True once actually e-filed and served
 

@@ -1,15 +1,17 @@
 # Portfolio universal signature: brendan-newanforbi-signature.png
-# (1450×360, transparent background). Use this for all generated filings
+# Extracted from CIV-100 p.2 item 7 (Matter 12 Diamond, 15 June 2026) —
+# signature 4b. Transparent background. Use this for all generated filings
 # that need a signature affixed rather than a typed name. Do not use the
-# older cropped pen asset under internal/scripts/assets/.
+# older cropped pen asset under internal/scripts/assets/. The prior loops
+# stamp is archived next to this file as *-v1-abstract-loops.png.
 from pathlib import Path
 
 _REPO_ROOT = Path(__file__).resolve().parents[2]
 SIGNATURE_PATH = str(
     _REPO_ROOT / "internal/assets/signature/brendan-newanforbi-signature.png"
 )
-SIGNATURE_ASPECT = 360.0 / 1450.0  # height / width
-SIGNATURE_NATIVE_PX = (1450, 360)
+SIGNATURE_ASPECT = 236.0 / 1840.0  # height / width
+SIGNATURE_NATIVE_PX = (1840, 236)
 
 # Judicial Council SER-001 page 4, right-hand "Sign your name" line
 # (PyMuPDF top-origin coords). Shared by every fill-*-ser001.py.

@@ -14,6 +14,7 @@ Retaliation-first revision:
 
 from __future__ import annotations
 
+import sys
 from pathlib import Path
 
 from docx import Document
@@ -32,7 +33,10 @@ OUT_MATTER24 = (
     / "matter-24"
     / "Opposition to Serrato MTD FAC and Strike v4 (Sep 2 2026).docx"
 )
-SIG_IMG = SCRIPT_DIR / "assets" / "newanforbi-pen-signature.png"
+sys.path.insert(0, str(SCRIPT_DIR))
+from signature_stamp import SIGNATURE_PATH  # noqa: E402
+
+SIG_IMG = Path(SIGNATURE_PATH)
 
 FONT = "Times New Roman"
 SIZE = Pt(12)
