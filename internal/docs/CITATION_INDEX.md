@@ -15,13 +15,13 @@ numbers, so a citation in a draft can be traced to a source page rather than tru
 | | |
 |---|---|
 | PDFs scanned | 714 |
-| Pages | 7,625 |
+| Pages | 7,628 |
 | Readable | 714 |
 | **No text layer (not searched)** | **0** |
 | Unreadable | 0 |
 | Citation scan skipped | 169 |
-| Distinct citations | 3,650 |
-| Total occurrences | 14,702 |
+| Distinct citations | 3,656 |
+| Total occurrences | 14,717 |
 
 A PDF with no text layer yields no citations. That is **not** the same as containing
 none — those documents are unsearched until OCR'd. Blank form-library templates,
@@ -33,10 +33,10 @@ boilerplate (and OCR noise) is not this litigant's authority.
 
 | Kind | Distinct |
 |---|---|
-| `case_name` | 1059 |
-| `authority` | 964 |
-| `case_reporter` | 800 |
-| `statute_state` | 250 |
+| `case_name` | 1060 |
+| `authority` | 967 |
+| `case_reporter` | 801 |
+| `statute_state` | 251 |
 | `section_shorthand` | 163 |
 | `rule_local` | 110 |
 | `rule_federal` | 94 |
@@ -64,7 +64,7 @@ folder-derived attribution reported zero for Matters 1, 2, 7 and 20.
 | 20 | Newanforbi v. California Highway Patrol, et  | 288 |
 | 24 | Newanforbi v. Serrato | 296 |
 | 25 | Newanforbi v. Federal Express Corporation | 143 |
-| 26 | Newanforbi v. United Parcel Service, Inc. | 263 |
+| 26 | Newanforbi v. United Parcel Service, Inc. | 271 |
 | 27 | Newanforbi v. Randstad, et al. | 45 |
 | 28 | Newanforbi v. Shannon Smith, LCSW, CEO, et a | 212 |
 | 29 | Newanforbi v. Amazon.com Services, LLC | 629 |
@@ -77,7 +77,7 @@ folder-derived attribution reported zero for Matters 1, 2, 7 and 20.
 
 ## Highest-exposure citations
 
-744 of 964 paired authorities do not appear in the July audit. Of those,
+747 of 967 paired authorities do not appear in the July audit. Of those,
 **228 are asserted only in Plaintiff's own filings**, with no court order or
 opposing brief in the corpus citing them back. Unverified *and* uncorroborated is where a
 fabricated or miscited authority survives undetected — the queue worth working first.

@@ -16,7 +16,6 @@ from reportlab.lib.styles import ParagraphStyle
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, SCRIPT_DIR)
 from signature_stamp import SIGNATURE_ASPECT, SIGNATURE_PATH  # noqa: E402
-
 SIGNATURE_IMG = SIGNATURE_PATH
 REPO_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, "..", ".."))
 OUT_PATH = os.path.join(
@@ -119,7 +118,7 @@ story.append(Spacer(1, 12))
 story.append(Paragraph("Respectfully submitted,", plain))
 story.append(Spacer(1, 6))
 if os.path.isfile(SIGNATURE_IMG):
-    img = Image(SIGNATURE_IMG, width=1.9 * inch, height=1.9 * inch * SIGNATURE_ASPECT)
+    img = Image(SIGNATURE_IMG, width=2.5 * inch, height=2.5 * inch * SIGNATURE_ASPECT)
     img.hAlign = "LEFT"
     story.append(img)
 story.append(Paragraph("Brendan Ngehsi Newanforbi", plain))

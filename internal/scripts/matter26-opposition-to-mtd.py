@@ -6,14 +6,24 @@ Hearing: October 5, 2026, 1:30 p.m., Courtroom 4 (Hon. Dale A. Drozd).
 
 Built off ECF No. 7 / 7-1 / 7-2 / 7-3 (filed Aug. 26, 2026), the verified
 Complaint (ECF No. 1, Ex. 1), and the First Advantage report UPS lodged as
-Exhibit A. Architecture:
+Exhibit A. Hybrid architecture (Claude Code organization + Cursor caution):
 
-  1. UPS conceded it used the background check to deny hire; Exhibit A shows
-     the only Decisional / INELIGIBLE component is the registry hit.
-  2. Answer the (j)(3) -> Labor Code 432.7 path UPS actually argued, including
-     the words UPS dropped from 432.7(n).
-  3. Quote Exhibit A's two-field layout (Record Source vs Sentence) so the
-     California-source line cannot be impeached as cherry-picking.
+  1. Four-part (j)(3) -> Labor Code 432.7 argument, including the words UPS
+     dropped from 432.7(n) and the Cel-Tech distinction UPS quoted against
+     itself.
+  2. Two-field layout: Record Source = database queried; SOURCE OF RECORD =
+     origin of the returned record. The statute speaks to the information,
+     not the portal.
+  3. Characterize Exhibit A at the Rule 12(b)(6) inference level. Do not
+     attack Exhibit A as a "litigation reprint." If A is out, the Complaint
+     controls; if A is in, read the California-source field.
+  4. To the extent Exhibit B is considered, consider it as a whole. Use its
+     theft/dishonesty purpose affirmatively. Do not request Rule 12(d)
+     conversion.
+  5. Concede Counts II and V as labeled; ICRAA tracks 1786.16(b)(1)'s
+     request-and-three-business-day rule; UCL standing was not raised.
+  6. Mendoza is an anti-SLAPP employer-vs-screener discussion, not a merits
+     holding that the prohibition "targets" decisionmakers as such.
 
 Rendered on the shared pleading-paper engine and signed with the portfolio
 universal signature (bnn.cdl@gmail.com -- not the UPS COS misspelling).
@@ -168,98 +178,114 @@ CONTENT = [
     ("HEADER", "I.\nINTRODUCTION"),
 
     ("PARA",
-     "UPS cannot obtain Rule 12(b)(6) dismissal -- much less dismissal with prejudice -- "
-     "on a factual premise its own filing destroys. UPS \"does not dispute the fact that "
-     "it used information derived from Plaintiff's criminal background check when it made "
-     "the decision to not hire him.\" (ECF No. 7 at 3.) The report UPS asks this Court to "
-     "treat as part of the Complaint then shows what that information was. The First "
-     "Advantage National Criminal File Plus search returned \"No Record Found\" and was "
-     "scored \"Eligible.\" (ECF No. 7 at 18 (Ex. A at 5).) The only search scored "
-     "\"Decisional,\" and the only search that produced the overall result \"INELIGIBLE,\" "
-     "is the National Sex Offender Registry / Department of Justice website hit. (Id. at "
-     "17, 19 (Ex. A at 4, 6).) UPS conceded use. Exhibit A identifies the only adverse "
-     "component it could have used."),
+     "UPS's motion rests on a single factual premise: that \"[t]here is not a single "
+     "reference to any California based sex offender registry included in the background "
+     "check UPS obtained.\" (Mot. 4:18-19.) The document UPS attached to its own motion "
+     "refutes that premise. On page 6 of Exhibit A, in the block describing the one "
+     "search that returned a record, the report states: \"SOURCE OF RECORD: CALIFORNIA "
+     "SEX OFFENDER REGISTRY.\" (ECF No. 7 at 19 (Ex. A at 6).)"),
 
     ("PARA",
-     "UPS's motion nonetheless tells the Court: \"There is not a single reference to any "
-     "California based sex offender registry included in the background check UPS "
-     "obtained.\" (ECF No. 7 at 5.) Page 6 of 6 of that same report contains two fields, "
-     "and both must be read together. The designated Record Source field states "
-     "\"NATIONAL SEX OFFENDER REGISTRY.\" The Sentence field then states, verbatim: "
-     "\"SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY\" and \"SENTENCE: REGISTERED "
-     "SEX OFFENDER.\" (ECF No. 7 at 19 (Ex. A at 6).) That is not cherry-picking a stray line. "
-     "It is the vendor's own two-field dump of a national search whose source of record "
-     "is California's registry. The Complaint already alleges that the First Advantage "
-     "report contained information derived from California's Megan's Law registry and "
-     "that UPS used it to deny employment. (Compl. ¶¶ 2, 21, 23, 26, 34-36.) "
-     "Exhibit A confirms those allegations. It does not refute them."),
+     "UPS has also already conceded the element it now disputes. Its motion states: "
+     "\"UPS does not dispute the fact that it used information derived from Plaintiff's "
+     "criminal background check when it made the decision to not hire him.\" (Mot. "
+     "2:14-16.) Exhibit A identifies exactly one adverse component in that background "
+     "check. The criminal-records search -- \"First Advantage National Criminal File "
+     "Plus,\" Stockton, San Joaquin County -- returned \"No Record Found\" and scored "
+     "\"Eligible.\" (ECF No. 7 at 17-18 (Ex. A at 4-5).) The only components that "
+     "returned \"Record Found\" and scored \"Decisional\" were the sex offender registry "
+     "searches. (Id. at 17, 19 (Ex. A at 4, 6).) The overall result was \"INELIGIBLE.\" "
+     "(Id. at 17 (Ex. A at 4).) At minimum, a reasonable inference is that the "
+     "information UPS used was the registry hit."),
 
     ("PARA",
-     "UPS's remaining statutory argument fares no better. It does not defend a "
-     "freestanding Labor Code section 432.7(n) safe harbor. It routes through Penal Code "
-     "section 290.46(j)(3), which preserves uses of information \"pursuant to\" listed "
-     "statutes, including Labor Code section 432.7, and then quotes section 432.7(n) "
-     "with the words \"required by state, federal, or local law to\" omitted. (ECF No. 7 "
-     "at 5, 11.) Those words are the limitation. UPS -- a private package company hiring "
-     "a loader/unloader at the Lathrop hub -- has not identified any law that required "
-     "it to run a sex-offender-registry screen for that job. Section 432.7(a) restricts "
-     "the use of arrest records that did not result in conviction. It does not authorize "
-     "Megan's Law employment screening. And Exhibit A's own criminal-file search found "
-     "no record at all. UPS did not use a court conviction file. It used a registry "
-     "alert scored INELIGIBLE by a \"Centralized Adjudication Team.\" (ECF No. 7 at 17 "
-     "(Ex. A at 4).)"),
+     "Those two propositions resolve this motion. UPS concedes that it used information "
+     "derived from the report. The report supports the reasonable inference that the "
+     "only adverse information in it was a sex offender registry entry whose source of "
+     "record is California's registry. That is the use Penal Code section 290.46(j)(2)(E) "
+     "prohibits."),
 
     ("PARA",
-     "Because UPS's central premise collapses under its own record, the Complaint states "
-     "plausible claims. Even if the Court finds any count deficient as labeled, dismissal "
-     "with prejudice is improper on a pro se plaintiff's original complaint, and Rule "
-     "15(a)(1)(B) still permits one amendment as of right."),
+     "UPS's fallback is that Penal Code section 290.46(j)(3) directs the Court to Labor "
+     "Code section 432.7 and thereby creates a \"safe harbor, protecting UPS's exact "
+     "course of action.\" (Mot. 10:16-21.) It does not, for four independent reasons -- "
+     "among them that UPS reaches that conclusion only by deleting the operative "
+     "condition from its own quotation of the statute. Section 432.7(n) shelters an "
+     "employer \"required by state, federal, or local law to conduct criminal background "
+     "checks.\" UPS's brief quotes the subdivision with that clause bracketed away. "
+     "(Mot. 4:3-6.) UPS identifies no state, federal, or local law requiring such "
+     "screening for this position."),
+
+    ("PARA",
+     "Finally, UPS's own disclosure to Plaintiff states why it ordered the report: to "
+     "evaluate whether Plaintiff \"would present an unacceptable risk of theft or other "
+     "dishonest behavior.\" (ECF No. 7 at 27 (Ex. B).) A sex offender registry entry "
+     "bears on neither. UPS therefore used registry information for a purpose outside "
+     "not only section 290.46(j)(1), but outside the purpose UPS itself disclosed."),
+
+    ("PARA",
+     "The Court should deny the motion as to Count I and the claims that depend upon "
+     "it. To the extent any claim is found deficient, dismissal should be without "
+     "prejudice and with leave to amend."),
 
     ("HEADER", "II.\nSTATEMENT OF RELEVANT FACTS"),
 
     ("PARA",
-     "1. In or around mid-2024, Plaintiff applied for a loader/unloader position at UPS's "
-     "hub in Lathrop, San Joaquin County, California. (Compl. ¶ 16; ECF No. 7 at 14 (Ex. A at 1) "
-     "[Position: \"Loader/Unloader - Hub / US - LATHROP HUB (CALAH)\"])."),
+     "1. On July 17, 2024, Plaintiff completed an online application for the position "
+     "\"Loader/Unloader -- Hub\" at UPS's Lathrop, California hub (US -- LATHROP HUB "
+     "(CALAH)), Twilight shift, Monday through Friday, 15:00-23:30. (Compl. \u00b616; "
+     "ECF No. 7 at 21 (Ex. B).)"),
 
     ("PARA",
-     "2. UPS initiated a pre-employment background screening through First Advantage. "
-     "(Compl. ¶ 17.) The report was ordered July 17, 2024, and completed July 18, "
-     "2024. (ECF No. 7 at 14 (Ex. A at 1).)"),
+     "2. UPS initiated a pre-employment background screening through First Advantage, "
+     "a consumer reporting agency. The report was ordered July 17, 2024 at 9:52 p.m. "
+     "and completed July 18, 2024 at 6:50 p.m. (Compl. \u00b617; ECF No. 7 at 14, 17 "
+     "(Ex. A at 1, 4).)"),
 
     ("PARA",
-     "3. On July 19, 2024, the screening system recorded: \"BASED ON YOUR CRITERIA, THE "
-     "OVERALL CASE SCORE IS INELIGIBLE,\" with the notation \"Adjudicated by the "
-     "Centralized Adjudication Team.\" (ECF No. 7 at 17 (Ex. A at 4).)"),
+     "3. The report's \"Background Report Summary\" lists each component ordered and "
+     "the score returned: Social Security Verification -- \"Pass\"; First Advantage "
+     "National Criminal File Plus (Stockton, San Joaquin, CA) -- \"Eligible\"; National "
+     "Sex Offender Registry -- \"Decisional\"; and National Sex Offender Registry Search "
+     "-- Department Of Justice Web Site -- \"Decisional.\" (ECF No. 7 at 17 (Ex. A at "
+     "4).)"),
 
     ("PARA",
-     "4. The First Advantage National Criminal File Plus search for Stockton, San Joaquin "
-     "County, returned \"No Record Found\" and was scored \"Eligible.\" (ECF No. 7 at 18 "
-     "(Ex. A at 5).) Social Security verification passed. (Id. at 17-18.)"),
+     "4. The criminal-records component returned \"Search Results: No Record Found.\" "
+     "(ECF No. 7 at 18 (Ex. A at 5).) No conviction record, and no arrest record, "
+     "appears anywhere in Exhibit A."),
 
     ("PARA",
-     "5. The only component scored \"Decisional\" is \"National Sex Offender Registry "
-     "Search - Department Of Justice Web Site.\" On page 6 of 6, Record Source is "
-     "\"NATIONAL SEX OFFENDER REGISTRY\"; Search Results are \"Record Found\"; Name on File "
-     "is \"BRENDAN NGEHSI NGWANFORBI\"; and the Sentence field reads \"SOURCE OF RECORD: "
-     "CALIFORNIA SEX OFFENDER REGISTRY\" / \"SENTENCE: REGISTERED SEX OFFENDER.\" (Id. at "
-     "6.)"),
+     "5. The registry component returned \"Search Results: Record Found.\" Its detail "
+     "block on page 6 contains two distinct source fields. The field labeled \"Record "
+     "Source\" reads \"NATIONAL SEX OFFENDER REGISTRY\" -- identifying the database "
+     "queried. The field describing the record that was returned reads: \"SOURCE OF "
+     "RECORD: CALIFORNIA SEX OFFENDER REGISTRY\" and \"SENTENCE: REGISTERED SEX "
+     "OFFENDER.\" (ECF No. 7 at 19 (Ex. A at 6).)"),
 
     ("PARA",
-     "6. Between July 22 and July 27, 2024, First Advantage sent pre-adverse action "
+     "6. On July 19, 2024, the report was scored: \"BASED ON YOUR CRITERIA, THE OVERALL "
+     "CASE SCORE IS INELIGIBLE,\" under the comment \"Adjudicated by the Centralized "
+     "Adjudication Team.\" (ECF No. 7 at 17 (Ex. A at 4).)"),
+
+    ("PARA",
+     "7. The report carried a remark directed to UPS: \"City Ordinance, State, or "
+     "Federal law requires additional action and disclosure by employer to consumer "
+     "prior to taking adverse action based on Consumer Report.\" (Id.)"),
+
+    ("PARA",
+     "8. UPS's written disclosure to Plaintiff stated the purpose of the report: "
+     "because the position \"will involve access to confidential financial and other "
+     "business information and valuable property belonging to UPS's customers, a "
+     "consumer report about you is necessary and important for UPS to review in order "
+     "to evaluate whether you would present an unacceptable risk of theft or other "
+     "dishonest behavior in the performance of your job.\" (ECF No. 7 at 27 (Ex. B).)"),
+
+    ("PARA",
+     "9. Between July 22 and July 27, 2024, Plaintiff received pre-adverse action "
      "notices. On July 31, 2024, UPS issued a final adverse action notice denying "
-     "Plaintiff employment. (Compl. ¶¶ 18, 25.) UPS identified no other basis for "
-     "the denial. (Compl. ¶ 27.)"),
-
-    ("PARA",
-     "7. UPS's own California disclosures, lodged as Exhibit B, told Plaintiff the "
-     "consumer report would be used \"to evaluate whether you would present an "
-     "unacceptable risk of theft or other dishonest behavior in the job for which you "
-     "are being considered,\" including a Labor Code section 1024.5(a)(7) credit-purpose "
-     "box keyed to access to confidential financial and business information. (ECF No. 7 "
-     "at 27 (Ex. B).) A California sex-offender-registry listing is not a theft or "
-     "dishonesty record, and it is not a court conviction file -- Exhibit A's criminal "
-     "search found none."),
+     "Plaintiff employment. (Compl. \u00b6\u00b618, 19, 25.) No other disqualifying "
+     "information existed. (Compl. \u00b627.)"),
 
     ("HEADER", "III.\nSTANDARD OF REVIEW"),
 
@@ -286,376 +312,474 @@ CONTENT = [
      "in the pleadings, exhibits attached to the complaint, and matters properly subject "
      "to judicial notice.\" <<i:Swartz v. KPMG LLP>>, 476 F.3d 756, 763 (9th Cir. 2007). If "
      "matters outside the pleadings are considered, \"the motion must be treated as one "
-     "for summary judgment under Rule 56\" and the parties must be given a reasonable "
-     "opportunity to present material. Fed. R. Civ. P. 12(d)."),
+     "for summary judgment under Rule 56\" and \"all parties must be given a reasonable "
+     "opportunity to present all the material that is pertinent.\" Fed. R. Civ. P. 12(d). "
+     "Plaintiff does not ask the Court to convert this motion. The Rule is stated "
+     "because it supplies the procedure if the Court determines that extra-pleading "
+     "material must be considered for its truth."),
 
     ("HEADER", "IV.\nARGUMENT"),
 
     ("SUBHEAD",
-     "A.  If Exhibit A Is Considered, It Must Be Considered Whole -- and It\n"
-     "Proves Plaintiff's Allegations"),
+     "A.  UPS Concedes the Use, and Its Own Exhibit Supplies the Source"),
 
     ("PARA",
-     "UPS asks the Court to incorporate Exhibit A and Exhibit B by reference because the "
-     "Complaint refers to the background check and to ICRAA disclosures. (ECF No. 7 at "
-     "3-4); see <<i:United States v. Ritchie>>, 342 F.3d 903, 908 (9th Cir. 2003). Plaintiff "
-     "does not object to the Court reading Exhibit A. He objects to UPS using "
-     "incorporation as a one-way valve."),
+     "1.  UPS concedes that it used information derived from the report."),
 
     ("PARA",
-     "In <<i:Khoja v. Orexigen Therapeutics, Inc.>>, 899 F.3d 988, 998 (9th Cir. 2018), the "
-     "Ninth Circuit warned against \"overuse\" of the doctrine and cautioned that a court "
-     "should not \"assume the truth of an incorporated document if such assumptions only "
-     "serve to dispute facts stated in a well-pleaded complaint.\" Id. at 1003. UPS "
-     "offers Exhibit A to dispute the allegation that it used California Megan's Law "
-     "information. The document, read as a whole, reinforces that allegation. Khoja does "
-     "not permit UPS to credit the \"NATIONAL SEX OFFENDER REGISTRY\" Record Source label "
-     "and disregard the Sentence field that identifies \"CALIFORNIA SEX OFFENDER "
-     "REGISTRY\" as the source of record."),
+     "Section 290.46(j)(2)(E) prohibits the \"use of any information that is disclosed "
+     "pursuant to this section\" for purposes relating to employment. The operative "
+     "conduct is use. UPS concedes it: \"UPS does not dispute the fact that it used "
+     "information derived from Plaintiff's criminal background check when it made the "
+     "decision to not hire him.\" (Mot. 2:14-16.)"),
 
     ("PARA",
-     "UPS also filed the declaration of Ashley Felsing, an HRBP Director, as ECF No. 7-2, "
-     "attaching the same report and the application disclosures as exhibits. Incorporation "
-     "by reference reaches those documents because the Complaint already describes them. "
-     "It does not reach extra-pleading testimony. If the Court is asked to credit anything "
-     "in the Felsing declaration beyond authenticating Exhibits A and B, Rule 12(d) "
-     "requires conversion. Plaintiff asks the Court to read the documents. He does not "
-     "stipulate to UPS's characterization of what it \"accessed.\""),
+     "What UPS disputes is only the character of the information used. To the extent "
+     "the Court considers Exhibit A, as UPS asks it to, that dispute is not a pleading "
+     "failure. Of the four components ordered, three were not adverse: Social Security "
+     "Verification scored \"Pass,\" and the criminal-records search scored \"Eligible\" "
+     "on \"No Record Found.\" (ECF No. 7 at 17-18 (Ex. A at 4-5).) The two registry "
+     "searches alone scored \"Decisional,\" and the case then scored \"INELIGIBLE.\" "
+     "(Id. at 17 (Ex. A at 4).) At minimum, a reasonable inference is that the "
+     "information UPS used was the registry hit. That is the use section "
+     "290.46(j)(2)(E) forbids."),
 
     ("PARA",
-     "Two consequences follow. First, if Exhibit A is out, the Complaint's allegations "
-     "control: the report contained California registry information, and UPS used it to "
-     "deny hire. (Compl. ¶¶ 21, 23, 26, 34-36.) Second, if Exhibit A is in, UPS's "
-     "sentence that the report contains \"not a single reference to any California based "
-     "sex offender registry\" (ECF No. 7 at 5) is simply false. Either path denies "
-     "dismissal of Count I. What the Court may not do is take UPS's characterization of "
-     "Exhibit A as true and the document's California-source field as false."),
+     "2.  Exhibit A identifies the source of that information as California's registry."),
+
+    ("PARA",
+     "UPS argues that \"[t]here is not a single reference to any California based sex "
+     "offender registry included in the background check UPS obtained.\" (Mot. 4:18-19.) "
+     "Page 6 of Exhibit A states: \"SOURCE OF RECORD: CALIFORNIA SEX OFFENDER "
+     "REGISTRY.\" (ECF No. 7 at 19 (Ex. A at 6).) The premise of UPS's motion is "
+     "contradicted by UPS's own evidence."),
+
+    ("PARA",
+     "The report does not merely mention California in passing. Its registry detail "
+     "block contains two separate and differently labeled fields:"),
+
+    ("LIST_ITEM",
+     "Record Source:  NATIONAL SEX OFFENDER REGISTRY"),
+
+    ("LIST_ITEM",
+     "Sentence:  SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY / SENTENCE: "
+     "REGISTERED SEX OFFENDER"),
+
+    ("PARA",
+     "(ECF No. 7 at 19 (Ex. A at 6).) The two fields report two different things. "
+     "\"Record Source\" identifies the database that was queried. The \"SOURCE OF "
+     "RECORD\" line identifies the origin of the record that the query returned. Read "
+     "together -- and they must be read together, because they appear four lines apart "
+     "in the same block of the same document UPS asks the Court to consider -- they "
+     "support the reasonable inference that the record UPS acted on was a California "
+     "registry record retrieved through a national index."),
+
+    ("PARA",
+     "That distinction is dispositive of UPS's argument. Section 290.46(j)(2)(E) reaches "
+     "\"information that is disclosed pursuant to this section.\" The statute speaks to "
+     "the information, not to the portal through which an end user retrieves it. UPS's "
+     "reading would let any employer evade the prohibition by routing the same "
+     "California data through a federal index. \"The fundamental purpose of statutory "
+     "construction is to ascertain the intent of the lawmakers so as to effectuate the "
+     "purpose of the law.\" <<i:People v. Pieters>>, 52 Cal. 3d 894, 898 (1991)."),
+
+    ("PARA",
+     "The California Court of Appeal has already located the prohibition's target, in "
+     "an anti-SLAPP posture. In <<i:Mendoza v. ADP Screening & Selection Services, Inc.>>, "
+     "182 Cal. App. 4th 1644 (2010), a screening company transmitted Megan's Law "
+     "information to a prospective employer. The court explained that \"the statutory "
+     "liability created by the MLW statute should be limited to employers who 'use' "
+     "information disclosed on the MLW as a basis for an employment decision,\" and "
+     "that the Legislature did not intend liability for businesses that \"merely "
+     "reproduce or republish such information, without actually acting on the "
+     "information.\" Id. at 1658-59. \"His cause of action, if any, lies against his "
+     "prospective employer, and not SASS.\" Id. at 1659. UPS is the prospective "
+     "employer. It received California-sourced registry information and, by its own "
+     "concession, used the background check to deny hire. That is the conduct the "
+     "statute reaches."),
+
+    ("PARA",
+     "3.  At minimum, this presents a question that cannot be resolved on the "
+     "pleadings."),
+
+    ("PARA",
+     "Even if the Court were to regard the relationship between the national index and "
+     "the state registry as genuinely contested, that would defeat the motion rather "
+     "than support it. How First Advantage retrieved the record, what UPS instructed "
+     "it to search, and what UPS in fact reviewed are questions of fact. On a Rule "
+     "12(b)(6) motion they are resolved in Plaintiff's favor. Iqbal, 556 U.S. at 678; "
+     "Manzarek, 519 F.3d at 1031."),
 
     ("SUBHEAD",
-     "B.  Count I States a Claim Under Penal Code Section 290.46(j)(2)(E)"),
+     "B.  Section 290.46(j)(3) Does Not Deliver UPS a Safe Harbor"),
 
     ("PARA",
-     "Section 290.46(j)(1) authorizes use of \"information disclosed pursuant to this "
-     "section\" only \"to protect a person at risk.\" Section 290.46(j)(2)(E) then "
-     "prohibits, except as authorized under paragraph (1) or any other provision of law, "
-     "use of that information for purposes relating to employment. Section 290.46(j)(4)(A) "
-     "supplies the private right of action. The user is \"liable for the actual damages, "
-     "and any amount that may be determined by a jury or a court sitting without a jury, "
-     "not exceeding three times the amount of actual damage, and not less than two hundred "
-     "fifty dollars ($250), and attorney's fees, exemplary damages, or a civil penalty not "
-     "exceeding twenty-five thousand dollars ($25,000).\" The $25,000 figure is a cap on "
-     "the civil penalty, not a floor alternative to actual damages."),
+     "UPS argues that section 290.46(j)(3) \"provides an exception to the general "
+     "prohibition by directing us to Cal. Labor Code \u00a7 432.7(n),\" and that the "
+     "Legislature thereby \"contemplated, codified, and enacted this safe harbor, "
+     "protecting UPS's exact course of action.\" (Mot. 10:16-21.) Four independent "
+     "defects sink that argument."),
 
     ("PARA",
-     "The Complaint alleges each element. Plaintiff is a registrant. (Compl. ¶ 34.) "
-     "The First Advantage report disclosed that status from California's registry. "
-     "(Compl. ¶¶ 2, 21, 34.) UPS used the information to deny employment on or "
-     "about July 31, 2024. (Compl. ¶¶ 26, 35.) The loader/unloader position did "
-     "not implicate protecting an identified person at risk. (Compl. ¶ 36.) Those "
-     "allegations are accepted as true. UPS's motion does not say Plaintiff failed to "
-     "allege use. It says the use was of a \"national\" registry rather than California's "
-     "Megan's Law website. (ECF No. 7 at 5.) That is a construction argument, not a "
-     "pleading failure."),
+     "1.  Subdivision (j)(3) preserves uses that section 432.7 authorizes; section "
+     "432.7 authorizes nothing here."),
 
     ("PARA",
-     "1.  The conceded use, and the only adverse component, is the registry hit."),
+     "Subdivision (j)(3) provides that section 290.46 \"shall not affect authorized "
+     "access to, or use of, information pursuant to\" a list of other provisions, "
+     "including Labor Code section 432.7. The operative words are \"authorized\" and "
+     "\"pursuant to.\" Subdivision (j)(3) preserves whatever access or use those other "
+     "statutes affirmatively authorize. It does not convert every statute on the list "
+     "into a general license."),
 
     ("PARA",
-     "UPS \"does not dispute\" that it used information from the background check to not "
-     "hire Plaintiff. (ECF No. 7 at 3.) Exhibit A then shows the criminal-records search "
-     "was Eligible / No Record Found, and the registry search was the only Decisional "
-     "component feeding an INELIGIBLE overall score. (ECF No. 7 at 17-19 (Ex. A at 4-6).) "
-     "At minimum, a reasonable inference is that the information UPS used was the "
-     "registry hit. That is the use section 290.46(j)(2)(E) forbids."),
+     "Labor Code section 432.7 authorizes nothing here. It is a prohibitory statute: "
+     "section 432.7(a)(1) forbids employers to use records of arrest or detention that "
+     "did not result in conviction. Subdivision (n) is a savings clause -- it states "
+     "what the section \"does not prohibit.\" A provision declining to prohibit conduct "
+     "is not a provision authorizing it. As UPS itself observes in a different part of "
+     "its brief, \"[t]here is a difference between (1) not making an activity unlawful, "
+     "and (2) making that activity lawful.\" <<i:Cel-Tech Commc'ns, Inc. v. Los Angeles "
+     "Cellular Tel. Co.>>, 20 Cal. 4th 163, 183 (1999) (quoted at Mot. 10:12-13). UPS's "
+     "safe-harbor argument requires the second; section 432.7(n) supplies at most the "
+     "first."),
 
     ("PARA",
-     "UPS argues that by alleging a Megan's Law violation Plaintiff \"impliedly admits\" a "
-     "sex-crime conviction, so UPS was entitled to use a conviction record. (ECF No. 7 "
-     "at 5.) The argument is a bait-and-switch. Exhibit A's criminal-file search returned "
-     "no record. Registry status on a Department of Justice website search is not a "
-     "court conviction file. Plaintiff does not concede, and this motion does not "
-     "establish, that UPS reviewed or relied on any judicial conviction record."),
+     "2.  UPS reaches its reading only by deleting the statute's operative condition."),
 
     ("PARA",
-     "2.  The two-field layout supports California as the source of record."),
+     "UPS represents that section 432.7 does not prohibit an employer from "
+     "\"conduct[ing] criminal background checks for employment purposes or to restrict "
+     "employment based on criminal history from complying with those requirements.\" "
+     "(Mot. 4:3-6.) The bracketed alteration is not cosmetic. The statute reads:"),
 
     ("PARA",
-     "UPS's theory is that it \"did not access California's Megan's Law website\" and "
-     "therefore cannot have used \"information that is disclosed pursuant to this "
-     "section.\" (ECF No. 7 at 5); Cal. Penal Code section 290.46(j)(2). The statute "
-     "does not say \"information an employer personally downloaded from meganslaw.ca.gov.\" "
-     "It says \"any information that is disclosed pursuant to this section.\" Section "
-     "290.46 is the statute by which the California Department of Justice makes "
-     "registrant information available to the public via an internet website. (Cal. "
-     "Penal Code section 290.46(a)(1).) Exhibit A does not describe an independent "
-     "federal conviction database. It describes a \"National Sex Offender Registry Search "
-     "- Department Of Justice Web Site\" whose Sentence field identifies the source of "
-     "record as the California Sex Offender Registry. (ECF No. 7 at 19 (Ex. A at 6).)"),
+     "\"This section does not prohibit an employer, whether a public agency or private "
+     "individual or corporation, required by state, federal, or local law to conduct "
+     "criminal background checks for employment purposes or to restrict employment "
+     "based on criminal history from complying with those requirements . . . .\""),
 
     ("PARA",
-     "That two-field structure supports Plaintiff's pass-through theory, and it is in UPS's own exhibit. "
-     "A construction that lets an employer evade section 290.46(j)(2)(E) by running the "
-     "same California data through a national query portal would make the employment "
-     "prohibition surplusage. \"[A] statute should not be given an interpretation that "
-     "fails to accomplish its purpose.\" <<i:People v. Pieters>>, 52 Cal. 3d 894, 898-99 "
-     "(1991). The phrase \"disclosed pursuant to this section\" refers to the information "
-     "California discloses under section 290.46 -- not the brand name on the search "
-     "window."),
+     "Cal. Lab. Code \u00a7 432.7(n) (emphasis added). The subdivision shelters employers "
+     "that are required by law to screen. UPS's bracket converts \"required . . . to "
+     "conduct criminal background checks\" into \"conduct[ing] criminal background "
+     "checks,\" which drops the condition on which the entire subdivision turns. UPS "
+     "identifies no state, federal, or local law requiring it to conduct a sex offender "
+     "registry search for a warehouse loader position. UPS screened Plaintiff "
+     "voluntarily, as \"part of its standard pre-employment screening process.\" "
+     "(Compl. \u00b617; ECF No. 7 at 3.)"),
 
     ("PARA",
-     "In <<i:Mendoza v. ADP Screening & Selection Services, Inc.>>, 182 Cal. App. 4th 1644 "
-     "(2010), the Court of Appeal addressed section 290.46's civil-liability framework "
-     "in an anti-SLAPP posture. It distinguished the screening company that reports "
-     "Megan's Law information from the employer that uses the information for an "
-     "employment decision. Id. at 1658-59. UPS is the employer. It received "
-     "California-sourced registry information and, by its own concession, used the "
-     "background check to deny hire. That is the conduct the statute reaches."),
+     "3.  The remainder of subdivision (n) addresses seeking and receiving reports, "
+     "not using registry information."),
 
     ("PARA",
-     "3.  Section 290.46(j)(3) and Labor Code section 432.7 do not save this hiring\n"
-     "decision."),
+     "The balance of section 432.7(n) provides that the section does not prohibit an "
+     "employer \"from seeking or receiving an applicant's criminal history report that "
+     "has been obtained pursuant to procedures otherwise provided for under federal, "
+     "state, or local law.\" That clause speaks to procurement. Section 290.46(j)(2)(E) "
+     "prohibits use. Lawfully receiving a report does not authorize using a registry "
+     "entry within it to deny employment -- which is precisely the conduct section "
+     "290.46(j)(2)(E) singles out. Reading section 432.7(n) as UPS does would repeal "
+     "section 290.46(j)(2)(E) by implication as to every employer that orders a "
+     "background check, which is to say all of them. Repeals by implication are "
+     "disfavored."),
 
     ("PARA",
-     "UPS's actual statutory hook is not a freestanding 432.7(n) argument. It is that "
-     "section 290.46(j)(3) \"specifically carves out authorized access of otherwise "
-     "protected information under Cal. Labor Code. section 432.7,\" after which UPS "
-     "quotes 432.7(n) as if it \"explicitly permits\" any employer to run criminal "
-     "background checks and use the results. (ECF No. 7 at 5, 11.)"),
+     "4.  Section 432.7 governs arrest and conviction records; Exhibit A shows "
+     "neither."),
 
     ("PARA",
-     "Subdivision (j)(3) states that section 290.46 \"shall not affect authorized access "
-     "to, or use of, information pursuant to, among other provisions, Sections 11105 and "
-     "11105.3 of this code, Section 8808 of the Family Code, Sections 777.5 and 14409.2 "
-     "of the Financial Code, Sections 1522.01 and 1596.871 of the Health and Safety Code, "
-     "and Section 432.7 of the Labor Code.\" Cal. Penal Code section 290.46(j)(3). That "
-     "is a savings clause for uses those statutes independently authorize -- DOJ rap "
-     "sheets, childcare licensing, and the like. It is not a license to use Megan's Law "
-     "website information to reject a warehouse loader."),
+     "Section 432.7 is, by its terms, about records of arrest, detention, and "
+     "conviction. Exhibit A contains no such record. The criminal-records search "
+     "returned \"No Record Found\" and scored \"Eligible.\" (ECF No. 7 at 18 (Ex. A at "
+     "5).) The only entry marked \"Record Found\" reports a registration status -- "
+     "\"SENTENCE: REGISTERED SEX OFFENDER\" -- not a conviction. (Id. at 19 (Ex. A at "
+     "6).) There was no section 432.7 record for section 432.7 to authorize the use of."),
 
     ("PARA",
-     "Labor Code section 432.7(n), quoted in full, provides: \"This section does not "
-     "prohibit an employer, whether a public agency or private individual or corporation, "
-     "required by state, federal, or local law to conduct criminal background checks for "
-     "employment purposes or to restrict employment based on criminal history from "
-     "complying with those requirements, or to prohibit the employer from seeking or "
-     "receiving an applicant's criminal history report that has been obtained pursuant to "
-     "procedures otherwise provided for under federal, state, or local law.\" UPS's "
-     "quotation drops \"required by state, federal, or local law to.\" (ECF No. 7 at 5.) "
-     "Those words are the limitation. UPS has not identified any statute, regulation, or "
-     "ordinance that required a sex-offender-registry check for a Lathrop "
-     "loader/unloader. It screened Plaintiff as \"part of its standard pre-employment "
-     "screening process.\" (Compl. ¶ 17; ECF No. 7 at 3.)"),
-
-    ("PARA",
-     "Section 432.7(a) is in any event a restriction on using arrest or detention records "
-     "that did not result in conviction. It is not an affirmative grant of authority to "
-     "use California's public sex-offender website for employment. And again, UPS's "
-     "criminal-file search returned no record. (ECF No. 7 at 18 (Ex. A at 5).) There is no "
-     "432.7 \"conviction history\" use on this exhibit. There is a registry alert."),
-
-    ("PARA",
-     "4.  The use was not \"to protect a person at risk,\" and it was not the theft\n"
-     "purpose UPS disclosed."),
-
-    ("PARA",
-     "The only use section 290.46(j)(1) authorizes is \"to protect a person at risk.\" A "
-     "warehouse loader/unloader job is not that use. (Compl. ¶ 36.) UPS's Exhibit B "
-     "disclosures go further: they told Plaintiff the report would be used to assess "
-     "\"risk of theft or other dishonest behavior,\" including under Labor Code section "
-     "1024.5(a)(7). (ECF No. 7 at 27 (Ex. B).) Protecting packages from theft is not "
-     "protecting \"a person at risk\" within the meaning of Megan's Law. A registry "
-     "listing is not a theft record. UPS disclosed one purpose and, on this exhibit, "
-     "adjudicated another."),
-
-    ("PARA",
-     "5.  At minimum, the statutory question is not a 12(b)(6) knockout."),
-
-    ("PARA",
-     "Whether California-sourced registry information retrieved through a \"National Sex "
-     "Offender Registry / Department of Justice Web Site\" search is \"information "
-     "disclosed pursuant to\" section 290.46 is, at worst, a plausible reading in "
-     "Plaintiff's favor. Iqbal requires plausibility, not that Plaintiff win the "
-     "statutory fight in the opposition. How First Advantage queried California's "
-     "registry, what \"Department Of Justice Web Site\" means on this vendor form, and "
-     "what UPS's adjudication criteria actually scored are fact questions. If the Court "
-     "is inclined to resolve them on the exhibits, Rule 12(d) requires conversion and a "
-     "reasonable opportunity to take discovery -- including from First Advantage -- not "
-     "a with-prejudice dismissal on a cold record UPS assembled."),
+     "UPS attempts to close that gap by inference: \"By alleging that UPS impermissibly "
+     "accessed California's Megan's Law website, Plaintiff impliedly admits to being "
+     "convicted of a sex crime . . . . Because Plaintiff admits to being convicted of "
+     "a sex crime, if UPS used Plaintiff's conviction record as part of its analysis "
+     "when making the decision to not hire him, it was entitled to do so.\" (Mot. "
+     "4:9-13.) That argument asks the Court to draw an inference against the "
+     "non-moving party on a Rule 12(b)(6) motion, to supply by implication a conviction "
+     "record that UPS's own exhibit affirmatively negates, and then to assume UPS used "
+     "a record it does not have. Each step is impermissible; taken together they are "
+     "the opposite of the standard. Manzarek, 519 F.3d at 1031."),
 
     ("SUBHEAD",
-     "C.  Count II: Williams Does Not Extinguish the Statutory Claim, and Any\n"
-     "Tameny Labeling Defect Is Curable"),
+     "C.  UPS's Own Disclosure Establishes That This Was Not an Authorized Use"),
 
     ("PARA",
-     "UPS cites <<i:Williams v. Sacramento River Cats Baseball Club, LLC>>, 40 Cal. App. 5th "
-     "280 (2019), for the proposition that the common-law Tameny tort does not extend to "
-     "failure-to-hire. (ECF No. 7 at 6.) Williams holds that a Tameny duty of care "
-     "requires a prior employment relationship, so a job applicant's public-policy "
-     "remedy for a discriminatory refusal to hire is statutory, not common-law. Id. at "
-     "286-90."),
+     "Section 290.46(j)(1) states the only authorized use of registry information: a "
+     "person \"is authorized to use information disclosed pursuant to this section only "
+     "to protect a person at risk.\" Subdivision (j)(2) then prohibits every other use, "
+     "employment among them."),
 
     ("PARA",
-     "Two points follow, and neither is dismissal of the case. First, Count I is not a "
-     "Tameny claim. Section 290.46(j)(4)(A) is an express private right of action for "
-     "use of registry information \"for purposes relating to . . . employment.\" It does "
-     "not require a prior employment relationship. Applicants are the people the "
-     "employment prohibition exists to protect. Williams does not touch Count I."),
+     "To the extent Exhibit B is properly considered, it must be considered as a whole, "
+     "and it forecloses any claim that UPS acted to protect a person at risk. UPS told "
+     "Plaintiff, in writing, why it was ordering the report: because the position "
+     "\"will involve access to confidential financial and other business information "
+     "and valuable property belonging to UPS's customers,\" the report was \"necessary "
+     "and important for UPS to review in order to evaluate whether you would present "
+     "an unacceptable risk of theft or other dishonest behavior in the performance of "
+     "your job.\" (ECF No. 7 at 27 (Ex. B).) UPS repeated the same rationale in the "
+     "authorization it asked Plaintiff to sign. (Id. at 26 (Ex. B).)"),
 
     ("PARA",
-     "Second, Count II as currently captioned invokes Tameny and City of Moorpark. "
-     "(Compl. ¶ 39.) To the extent that caption is a common-law failure-to-hire "
-     "theory Williams forecloses, the facts pleaded in Count II are the same facts as "
-     "Count I. (Compl. ¶¶ 40-42.) The Court should either treat Count II as a "
-     "restatement of the statutory right of action already pleaded, or grant leave to "
-     "amend to caption it as such. A labeling defect on a pro se original complaint is "
-     "not futility. Lopez, 203 F.3d at 1130. Plaintiff does not abandon the claim; he "
-     "asks that it be read, or repled, as the statute that actually supplies the duty."),
+     "Theft and dishonesty are the stated purpose. A sex offender registry entry speaks "
+     "to neither. And the position itself -- a Twilight-shift loader and unloader "
+     "inside a Lathrop package hub, 15:00 to 23:30 (id. at 21 (Ex. B)) -- is not "
+     "alleged to involve responsibility for, or contact with, any identified person at "
+     "risk. (Compl. \u00b636.) On UPS's own account of its own screening, the registry "
+     "information served no authorized purpose. It served a prohibited one."),
 
     ("SUBHEAD",
-     "D.  Count III States an ICRAA Claim on the Theories Actually Pled"),
+     "D.  If the Exhibits Are Considered, They Must Be Considered as a Whole"),
+
+    ("PARA",
+     "A document may be incorporated by reference only \"if the plaintiff refers "
+     "extensively to the document or the document forms the basis of the plaintiff's "
+     "claim.\" <<i:United States v. Ritchie>>, 342 F.3d 903, 908 (9th Cir. 2003) (quoted "
+     "at Mot. 3:27-4:1). The Ninth Circuit has cautioned against overuse of the "
+     "doctrine and instructed that a court should not \"assume the truth of an "
+     "incorporated document if such assumptions only serve to dispute facts stated in "
+     "a well-pleaded complaint.\" <<i:Khoja v. Orexigen Therapeutics, Inc.>>, 899 F.3d 988, "
+     "998, 1003 (9th Cir. 2018)."),
+
+    ("PARA",
+     "Two consequences follow for Exhibit A. First, if Exhibit A is not incorporated, "
+     "the Complaint's allegations control: the report contained California registry "
+     "information, and UPS used it to deny hire. (Compl. \u00b6\u00b62, 21, 23, 26, "
+     "34-36.) Second, if Exhibit A is incorporated, it must be read in its entirety, "
+     "including the source-of-record line on page 6. Khoja does not permit UPS to "
+     "credit the \"NATIONAL SEX OFFENDER REGISTRY\" Record Source label and disregard "
+     "the Sentence field that identifies \"CALIFORNIA SEX OFFENDER REGISTRY\" as the "
+     "source of record. Either path denies dismissal of Count I. What the Court may "
+     "not do is take UPS's characterization of Exhibit A as true and the document's "
+     "California-source field as false."),
+
+    ("PARA",
+     "To the extent Exhibit B is properly considered, it likewise must be considered "
+     "as a whole. It does not establish compliance with the disputed statutory "
+     "obligations. It is a printout of an applicant-tracking system's completion log. "
+     "It shows that screens were displayed in July 2024. It does not show that UPS "
+     "discharged Civil Code section 1786.16. What Exhibit B does show, and what "
+     "Plaintiff uses it for, is the purpose UPS disclosed: theft and dishonesty. That "
+     "use is addressed in Part IV.C. It does not require the Court to resolve disputed "
+     "facts against Plaintiff."),
+
+    ("PARA",
+     "UPS also filed the declaration of Ashley Felsing, an HRBP Director, as ECF No. "
+     "7-2, attaching the same report and the application disclosures. Incorporation by "
+     "reference, if it applies, reaches those documents. It does not reach "
+     "extra-pleading testimony characterizing what UPS \"accessed\" or how it decided. "
+     "Those characterizations should not be resolved against Plaintiff on this motion. "
+     "If the Court determines that considering such testimony would require conversion, "
+     "Rule 12(d) supplies the procedure. Plaintiff does not ask the Court to convert."),
+
+    ("SUBHEAD",
+     "E.  Count III (ICRAA) Turns on Facts That Cannot Be Resolved on the Pleadings"),
 
     ("PARA",
      "UPS argues Plaintiff \"admits\" ICRAA compliance because Exhibit B contains a "
      "disclosure naming First Advantage and because Plaintiff received pre-adverse and "
-     "final adverse notices. (ECF No. 7 at 6-7.) That is a summary-judgment argument "
-     "dressed as a 12(b)(6). Khoja does not require the Court to treat UPS's "
-     "characterization of Exhibit B as true over the Complaint's sworn allegations. 899 "
-     "F.3d at 1003."),
+     "final adverse notices. (ECF No. 7 at 6-7.) That is a "
+     "summary-judgment argument dressed as a 12(b)(6). Khoja does not require the "
+     "Court to treat UPS's characterization of Exhibit B as true over the Complaint's "
+     "sworn allegations. 899 F.3d at 1003."),
 
     ("PARA",
-     "Plaintiff does not rest Count III on a theory that Exhibit B failed to name First "
-     "Advantage or to use the phrase \"investigative consumer report.\" He also does "
-     "not rest Count III on a theory that a Penal Code section 290.46 violation is, "
-     "without more, an ICRAA violation. Paragraph 46's \"spirit and purpose\" allegation "
-     "is not the statutory hook."),
+     "Plaintiff does not rest Count III on a theory that Exhibit B failed to name "
+     "First Advantage or to use the phrase \"investigative consumer report.\" He also "
+     "does not rest Count III on a theory that a Penal Code section 290.46 violation "
+     "is, without more, an ICRAA violation. Paragraph 46's \"spirit and purpose\" "
+     "allegation is not the statutory hook."),
 
     ("PARA",
      "The Complaint's live ICRAA theory is Civil Code section 1786.16. Subdivision "
      "(a)(5) and (b)(1) require the procuring person to provide a means to request a "
-     "copy of the report and, if requested, to send a copy within three business days of "
-     "the date the report is provided to the recipient. Subdivision (b)(2) requires "
+     "copy of the report and, if requested, to send a copy within three business days "
+     "of the date the report is provided to the recipient. Subdivision (b)(2) requires "
      "compliance with section 1786.40 if adverse action is a consideration -- advising "
      "the consumer of the action and supplying the name and address of the reporting "
-     "agency. (Compl. ¶¶ 24, 47(b).) Paragraph 24 alleges the First Advantage portal "
-     "link expired and Plaintiff no longer has access to the underlying report. Whether "
-     "UPS actually sent a complete copy of Exhibit A within the time section 1786.16(b)(1) "
-     "requires is a fact question. It is not resolved by UPS attaching an application "
-     "packet. If the Court concludes paragraph 47(b) was pled closer to a copy-before-"
-     "adverse-action formulation than to section 1786.16(b)(1)'s request-and-three-day "
-     "rule, the defect is labeling, not futility: the same facts support leave to "
-     "conform the citation. Lopez, 203 F.3d at 1130."),
-
-    ("SUBHEAD", "E.  Count IV States a Constitutional Privacy Claim"),
+     "agency. (Compl. \u00b6\u00b624, 47(b).) Paragraph 24 alleges the First Advantage "
+     "portal link expired and Plaintiff no longer has access to the underlying report."),
 
     ("PARA",
-     "A California constitutional privacy claim requires (1) a legally protected privacy "
-     "interest, (2) a reasonable expectation of privacy under the circumstances, and (3) "
-     "a serious invasion of that interest. <<i:Hill v. Nat'l Collegiate Athletic Ass'n>>, 7 "
-     "Cal. 4th 1, 35-40 (1994). UPS recites that test and then answers a different "
-     "question: whether court records are public. (ECF No. 7 at 7-8.)"),
+     "To the extent Exhibit B is properly considered, it does not close that gap. The "
+     "California disclosure UPS relies on offers a copy of the report \"by checking the "
+     "box beneath your signature as indicated below.\" (ECF No. 7 at 27 (Ex. B).) "
+     "Nothing in Exhibit B shows whether that box was checked. Nothing in Exhibit B "
+     "shows that any copy of the report was ever sent, let alone within three business "
+     "days of the date the report was provided to UPS. Whether UPS satisfied section "
+     "1786.16(b)(1) is a question for summary judgment or trial. Khoja, 899 F.3d at "
+     "1003."),
 
     ("PARA",
-     "The Legislature created a legally protected interest in how section 290.46 "
-     "information may be used. Authorized use is limited to protecting a person at "
-     "risk; employment use is prohibited. Cal. Penal Code section 290.46(j)(1)-(2). That "
-     "is not a claim that judicial conviction records are secret. It is a claim that "
-     "the State put a use-restriction on a specific public-website disclosure, and that "
-     "UPS invaded that interest by using the information for the one purpose the "
-     "statute names and forbids. (Compl. ¶¶ 50-52.) Estate of Hearst and Alfaro, "
-     "which UPS cites for access to court files, do not repeal section 290.46(j)."),
+     "If the Court concludes that paragraph 47(b) was pled closer to a "
+     "copy-before-adverse-action formulation than to section 1786.16(b)(1)'s "
+     "request-and-three-day rule, the defect is labeling, not futility: the same facts "
+     "support leave to conform the citation. Lopez, 203 F.3d at 1130. Separately, "
+     "consent to procure a report is not consent to misuse its results. Even a fully "
+     "compliant procurement does not make lawful a use that section 290.46(j)(2)(E) "
+     "prohibits."),
+
+    ("SUBHEAD", "F.  Count IV (Invasion of Privacy) Is Adequately Pleaded"),
 
     ("PARA",
-     "On expectation and consent: UPS argues Plaintiff cannot have a reasonable "
-     "expectation of privacy because he signed Exhibit B. (ECF No. 7 at 8.) Consent is "
-     "measured by its scope. Exhibit B disclosed a theft-and-dishonesty purpose, "
-     "including Labor Code section 1024.5(a)(7). Plaintiff did not consent to UPS using "
-     "California registry information in a manner the Legislature has declared "
-     "unlawful. Whether that scope question can be decided as a matter of law on these "
-     "exhibits is, at minimum, mixed. Hill itself treats reasonable expectation and "
-     "seriousness as mixed questions, adjudicable as law only when the facts are "
-     "undisputed. 7 Cal. 4th at 40. They are not. The claim is properly pled. It is "
-     "not the claim on which this opposition principally stands."),
+     "UPS argues that Plaintiff has no protected privacy interest because criminal "
+     "records are public, and that he consented in any event. (Mot. 7:17-27.) Neither "
+     "argument prevails on the pleadings."),
+
+    ("PARA",
+     "Count IV arises under the California Constitution's guarantee of privacy. Cal. "
+     "Const. art. I, \u00a7 1. A California constitutional privacy claim requires (1) a "
+     "legally protected privacy interest, (2) a reasonable expectation of privacy under "
+     "the circumstances, and (3) a serious invasion of that interest. <<i:Hill v. Nat'l "
+     "Collegiate Athletic Ass'n>>, 7 Cal. 4th 1, 35-40 (1994). The privacy interest here "
+     "is not an interest in secrecy; it is an interest in how information already "
+     "disclosed may be used. The Legislature created exactly that interest when it "
+     "authorized use of registry information solely \"to protect a person at risk\" and "
+     "prohibited every other use, employment expressly among them. Cal. Penal Code "
+     "\u00a7 290.46(j)(1)-(2)(E). A statute that permits publication for one purpose and "
+     "forbids it for another creates a legally protected interest in the difference. "
+     "That satisfies the first Hill element. Hill, 7 Cal. 4th at 40."),
+
+    ("PARA",
+     "Consent fails because consent is measured by its scope. "
+     "Plaintiff consented to what UPS asked for -- a report to assess \"risk of theft "
+     "or other dishonest behavior.\" (ECF No. 7 at 27 (Ex. B).) He did not consent, and "
+     "could not have consented, to UPS using Megan's Law registry data in a manner the "
+     "Legislature has declared unlawful. Whether the intrusion exceeded the scope of "
+     "consent is a fact question. (Compl. \u00b6\u00b650-52.) Hill itself treats reasonable "
+     "expectation and seriousness as mixed questions, adjudicable as law only when the "
+     "facts are undisputed. 7 Cal. 4th at 40. They are not."),
 
     ("SUBHEAD",
-     "F.  Count V: Negligence Per Se Is a Doctrine -- Leave to Amend Should Be\n"
-     "Granted to Plead Ordinary Negligence"),
+     "G.  Count II (Failure to Hire) Should Be Dismissed Without Prejudice"),
 
     ("PARA",
-     "UPS is correct that, under California law, negligence per se is a doctrine, not an "
+     "UPS cites <<i:Williams v. Sacramento River Cats Baseball Club, LLC>>, 40 Cal. App. "
+     "5th 280 (2019), for the proposition that the Tameny tort does not extend to "
+     "failure-to-hire claims. Plaintiff does not defend Count II as currently pleaded "
+     "and does not ask the Court to extend Tameny."),
+
+    ("PARA",
+     "Count II's disposition does not affect Count I. Count I is a statutory claim "
+     "under Penal Code section 290.46(j)(4)(A), which makes any person who uses "
+     "registry information in violation of subdivision (j)(2) \"liable for the actual "
+     "damages, and any amount that may be determined by a jury or a court sitting "
+     "without a jury, not exceeding three times the amount of actual damage, and not "
+     "less than two hundred fifty dollars ($250), and attorney's fees, exemplary "
+     "damages, or a civil penalty not exceeding twenty-five thousand dollars "
+     "($25,000).\" That liability does not depend on any employment relationship, and "
+     "Williams does not touch it. (Compl. \u00b6\u00b613, 33-37.)"),
+
+    ("PARA",
+     "Plaintiff respectfully requests that Count II be dismissed without prejudice."),
+
+    ("SUBHEAD",
+     "H.  Count V (Negligence Per Se) Should Be Dismissed With Leave to Amend"),
+
+    ("PARA",
+     "UPS correctly observes that negligence per se is a doctrine rather than an "
      "independent cause of action. <<i:Dent v. Nat'l Football League>>, 902 F.3d 1109, 1117 "
-     "(9th Cir. 2018). Plaintiff does not dispute the label. The Complaint nonetheless "
-     "pleads the substance: section 290.46(j)(2)(E) protects a defined class against a "
-     "defined harm; Plaintiff is in that class; UPS violated the statute; the violation "
-     "caused the harm. (Compl. ¶¶ 54-58); see Cal. Evid. Code section 669. A pro "
-     "se complaint is construed by its substance, not its caption. Hebbe, 627 F.3d at "
-     "342. Plaintiff requests leave to amend to plead ordinary negligence (duty, breach, "
-     "causation, damages) with Evidence Code section 669 as the presumption, not the "
-     "cause of action. That amendment is not futile. Lopez, 203 F.3d at 1130."),
-
-    ("SUBHEAD", "G.  Count VI States a UCL Claim"),
+     "(9th Cir. 2018). Plaintiff does not dispute that. UPS's own authority, <<i:Quinn v. "
+     "Coulton>>, 121 Cal. App. 5th 1124 (2026) (cited at Mot. 8:9-11, 8:22-24), likewise "
+     "treats the doctrine as an evidentiary presumption rather than a freestanding "
+     "claim."),
 
     ("PARA",
-     "The UCL borrows violations of other laws as independently actionable \"unlawful\" "
-     "practices. <<i:Cel-Tech Commc'ns, Inc. v. Los Angeles Cellular Tel. Co.>>, 20 Cal. 4th "
-     "163, 180 (1999). Count VI's unlawful prong is predicated on Count I. (Compl. ¶ "
-     "61.) If Count I states a claim -- and it does -- the unlawful prong states a "
-     "claim. UPS's chain of \"because we did not violate 290.46, the UCL dies\" is only "
-     "as strong as its Megan's Law argument, which Exhibit A does not establish."),
+     "The Complaint expressly invokes Evidence Code section 669 and identifies both "
+     "the class of persons the statute protects and the harm it was designed to "
+     "prevent. (Compl. \u00b6\u00b654-57.) A pro se pleading is construed by its substance "
+     "rather than its label. Hebbe, 627 F.3d at 342. Plaintiff requests leave to amend "
+     "to plead ordinary negligence (duty, breach, causation, damages) with the section "
+     "669 presumption in its proper evidentiary role. That amendment is not futile. "
+     "Lopez, 203 F.3d at 1130."),
+
+    ("SUBHEAD",
+     "I.  Count VI (UCL) States a Claim Under Both the Unlawful and the Unfair Prong"),
 
     ("PARA",
-     "The unfair prong is independently pled. (Compl. ¶ 62.) UPS disclosed that the "
-     "report would be used to assess theft and dishonest behavior, then scored Plaintiff "
-     "INELIGIBLE off a California registry alert that its own criminal search did not "
-     "corroborate with any conviction record. That practice offends the policy section "
-     "290.46(j) encodes. Plaintiff does not argue, and does not need to argue, that the "
-     "conduct would be \"unfair\" even if the Legislature had authorized it. Cel-Tech's "
-     "safe-harbor discussion applies when a statute affirmatively permits the conduct. "
-     "20 Cal. 4th at 182-83. Section 290.46(j)(3) does not affirmatively permit this "
-     "use; 432.7(n) does not apply to an employer not required by law to screen; and "
-     "nothing in Exhibit A is a court-file conviction UPS was independently entitled to "
-     "adjudicate."),
+     "Count VI arises under Business and Professions Code section 17200. Under the "
+     "unlawful prong, the UCL \"borrows\" violations of other law and makes them "
+     "independently actionable. Cel-Tech, 20 Cal. 4th at 180. UPS's sole answer is that "
+     "it did not violate section 290.46(j)(2)(E). (Mot. 10:1-2.) For the reasons stated "
+     "in Parts IV.A through IV.C, that premise fails, and the borrowed violation "
+     "stands. (Compl. \u00b661.)"),
 
-    ("HEADER", "V.\nLEAVE TO AMEND MUST BE GRANTED AS TO ANY COUNT FOUND DEFICIENT"),
+    ("PARA",
+     "Under the unfair prong, a practice is unfair when it \"offends an established "
+     "public policy.\" <<i:Podolsky v. First Healthcare Corp.>>, 50 Cal. App. 4th 632, 647 "
+     "(1996) (cited at Mot. 10:5). Even if the Court were to conclude that section "
+     "290.46(j)(2)(E) does not reach data retrieved through a national index, UPS's "
+     "practice -- obtaining California registry data through an intermediary index and "
+     "then denying employment on it, for a position UPS itself described as screened "
+     "for theft risk -- offends the policy the Legislature established in section "
+     "290.46(j). (Compl. \u00b662.) UPS's Cel-Tech argument (Mot. 10:10-22) proves "
+     "nothing, because it depends entirely on the section 432.7 safe harbor addressed "
+     "in Part IV.B: the Legislature has not \"made lawful\" the use of registry "
+     "information for employment; it has expressly prohibited it."),
+
+    ("PARA",
+     "UPS does not challenge Plaintiff's standing under Business and Professions Code "
+     "section 17204, and the issue is therefore not before the Court."),
+
+    ("HEADER", "V.\nANY DISMISSAL SHOULD BE WITHOUT PREJUDICE AND WITH LEAVE TO AMEND"),
+
+    ("PARA",
+     "UPS asks for dismissal with prejudice and asserts that \"even with leave to amend "
+     "his Complaint he would not be able to cure that deficiency.\" (Mot. 11:2-4.) That "
+     "assertion cannot be squared with UPS's own exhibit, which identifies the "
+     "California Sex Offender Registry as the source of record for the only adverse "
+     "entry in the screening."),
 
     ("PARA",
      "This is Plaintiff's original complaint. It was verified and filed when the First "
-     "Advantage report was not in Plaintiff's possession. (Compl. ¶ 24.) UPS then "
-     "lodged that report as Exhibit A. Even if the Court finds Count II's Tameny caption, "
-     "Count V's per se caption, or any ICRAA sub-theory deficient, \"[a] pro se litigant "
-     "must be given leave to amend his or her complaint unless it is absolutely clear "
-     "that the deficiencies of the complaint could not be cured by amendment.\" Noll, 809 "
-     "F.2d at 1448."),
+     "Advantage report was not in Plaintiff's possession. (Compl. \u00b624.) \"A pro se "
+     "litigant must be given leave to amend his or her complaint unless it is "
+     "absolutely clear that the deficiencies of the complaint could not be cured by "
+     "amendment.\" Noll, 809 F.2d at 1448; accord Lopez, 203 F.3d at 1130. Should the "
+     "Court find any claim deficient, Plaintiff can plead the source-of-record evidence "
+     "now in the record, restate Count V as ordinary negligence, and drop Count II."),
 
     ("PARA",
-     "Rule 15(a)(1)(B) permits one amendment as of right within 21 days after service of "
-     "a Rule 12(b) motion. UPS served the motion by mail on August 26, 2026. (ECF No. "
-     "7-3.) Twenty-one days after that service is September 16, 2026. Because service "
-     "was by mail, Rule 6(d) may add three days, through September 19, 2026. Plaintiff "
-     "will confirm the operative date from the envelope if it differs. L.R. 230(c) is a "
-     "different clock, runs from filing, and is not extended by Rule 6(d): this "
-     "opposition remains due September 9, 2026. The Initial Scheduling Order advised of "
-     "the Rule 15 window. (ECF No. 2.) Futility is not established. The facts that "
-     "would be added are the facts UPS already put in the record: the two-field "
-     "California source line, the Eligible criminal search, the INELIGIBLE centralized "
-     "adjudication, and the theft-purpose disclosure. Dismissal with prejudice on this "
-     "record would be an abuse of discretion."),
+     "Rule 15(a)(1)(B) permits one amendment as of right within 21 days after service "
+     "of a Rule 12(b) motion. UPS served the motion by mail on August 26, 2026. (ECF "
+     "No. 7-3.) Twenty-one days after that service is September 16, 2026. Because "
+     "service was by mail, Rule 6(d) may add three days, through September 19, 2026. "
+     "Plaintiff will confirm the operative date from the envelope if it differs. L.R. "
+     "230(c) is a different clock, runs from filing, and is not extended by Rule 6(d): "
+     "this opposition remains due September 9, 2026. The Initial Scheduling Order "
+     "advised of the Rule 15 window. (ECF No. 2.) Futility is not established. The "
+     "facts that would be added are the facts UPS already put in the record: the "
+     "two-field California source line, the Eligible criminal search, the INELIGIBLE "
+     "centralized adjudication, and the theft-purpose disclosure. Dismissal with "
+     "prejudice on this record would be an abuse of discretion."),
 
     ("HEADER", "VI.\nCONCLUSION"),
 
     ("PARA",
-     "UPS conceded it used the background check to deny hire. Its own Exhibit A shows "
-     "the only adverse component is a National Sex Offender Registry / Department of "
-     "Justice website hit whose Sentence field identifies the California Sex Offender "
-     "Registry as the source of record. That is a use of information disclosed pursuant "
-     "to Penal Code section 290.46, for employment, of a person who is not a \"person at "
-     "risk\" under subdivision (j)(1). Section 290.46(j)(3) and Labor Code section 432.7 "
-     "do not authorize it."),
+     "UPS cannot obtain dismissal by asserting that the information it used did not "
+     "come from California's registry when its own Exhibit A names the California Sex "
+     "Offender Registry as the source of record, and when UPS has conceded that it used "
+     "information derived from that report. At minimum, a reasonable inference is that "
+     "the information UPS used was the registry hit. Section 290.46(j)(3) and Labor "
+     "Code section 432.7 do not authorize that use."),
 
     ("PARA",
-     "Plaintiff respectfully requests that the Court deny the Motion to Dismiss in its "
-     "entirety. In the alternative, Plaintiff requests that the Court deny the motion as "
-     "to Counts I, III, IV, and VI; dismiss Counts II and V with leave to amend; and in "
-     "all events deny dismissal with prejudice."),
+     "Plaintiff respectfully requests that the Court deny the motion as to Count I "
+     "(Penal Code \u00a7 290.46), Count III (ICRAA), Count IV (invasion of privacy), and "
+     "Count VI (UCL). As to Count II and Count V, Plaintiff requests dismissal without "
+     "prejudice and with leave to amend. Plaintiff further requests that, to the extent "
+     "the Court considers Exhibits A and B, it consider each as a whole, including "
+     "Exhibit A's source-of-record line, and that it not use those exhibits to resolve "
+     "disputed facts against Plaintiff at the pleading stage."),
 ]
 
 
@@ -729,7 +853,12 @@ def _signature(d: PleadingPaper, exec_date: str) -> None:
     d.blank_line()
     d.blank_line()
     d.draw_signature_image(
-        SIGNATURE_PATH, SIGNATURE_NATIVE_PX[0], SIGNATURE_NATIVE_PX[1], SIG_LINE
+        SIGNATURE_PATH,
+        SIGNATURE_NATIVE_PX[0],
+        SIGNATURE_NATIVE_PX[1],
+        SIG_LINE,
+        width=220,
+        x_offset=15,
     )
     d.write_line(SIG_LINE, right=True, right_margin_offset=20)
     d.write_line(SIGNOFF_NAME, right=True, right_margin_offset=20)

@@ -262,20 +262,24 @@ class PleadingPaper:
         self.current_line = start_line + lines_consumed
 
     def draw_signature_image(self, image_path, img_w_px, img_h_px, line_text,
-                              width=155, right_margin_offset=20):
-        """Draw a pen-signature image centered over an underscore signature
+                              width=210, right_margin_offset=20, x_offset=0,
+                              height_scale=1.15):
+        """Draw the canonical signature centered over an underscore signature
         line at the current line position, then advance past it. Call this
         immediately before writing the underscore line itself with
-        write_line(line_text, right=True, right_margin_offset=...)."""
+        write_line(line_text, right=True, right_margin_offset=...).
+        ``x_offset`` shifts the stamp right (positive) or left (negative)
+        from geometric center, in points. ``height_scale`` stretches the
+        stamp upward from the line without changing width."""
         self._ensure_line()
         y = self._line_y(self.current_line)
-        img_h = width * (img_h_px / img_w_px)
+        img_h = width * (img_h_px / img_w_px) * height_scale
         line_right = CONTENT_RIGHT - right_margin_offset
         line_width = self.c.stringWidth(line_text, "Times-Roman", FONT_SIZE)
         line_center = line_right - line_width / 2
-        img_x = line_center - width / 2
+        img_x = line_center - width / 2 + x_offset
         self.c.drawImage(image_path, img_x, y + 3, width=width, height=img_h,
-                          mask='auto', preserveAspectRatio=True)
+                          mask='auto', preserveAspectRatio=False)
 
     def save(self):
         self.c.save()

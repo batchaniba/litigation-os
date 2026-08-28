@@ -253,9 +253,9 @@ def build_proof_of_service(path: Path | str, fields: ProofOfServiceFields) -> Pa
             y -= LEADING * 1.35
 
     # Footer: declaration, then clear air for the signature stamp, then the line.
-    sig_width = 145.0
-    sig_height = sig_width * SIGNATURE_ASPECT  # ~36 pt
-    gap_decl_to_sig = 32.0  # keep cursive loops clear of the declaration line
+    sig_width = 200.0
+    sig_height = sig_width * SIGNATURE_ASPECT  # native aspect × 1.15 upward stretch
+    gap_decl_to_sig = 32.0  # keep loops clear of the declaration
     name_below = 14.0
     footer_pad = 16.0  # clearance from typed name down to the bottom border
     footer_block = (
@@ -285,7 +285,7 @@ def build_proof_of_service(path: Path | str, fields: ProofOfServiceFields) -> Pa
     line_pad = 4.0
     sig_line_w = sig_width + 2 * line_pad
     sig_x0 = INNER_R - 48 - sig_line_w
-    sig_x1 = sig_x0 + sig_line_w
+    sig_x1 = sig_x0 + sig_line_w + 12.0  # extra run so the right-shifted stamp stays on the rule
     _hline(c, sig_x0, sig_x1, sig_line_y)
 
     if fields.server_name:
@@ -301,15 +301,15 @@ def build_proof_of_service(path: Path | str, fields: ProofOfServiceFields) -> Pa
 
     if fields.stamp_signature and fields.server_name:
         try:
-            # Sit the stamp on the line (slight overlap so ink rests on the rule).
+            # Hover the stamp a hair above the rule.
             c.drawImage(
                 SIGNATURE_PATH,
-                sig_x0 + line_pad,
-                sig_line_y - 3.0,
+                sig_x0 + line_pad + 12.0,
+                sig_line_y + 4.0,
                 width=sig_width,
                 height=sig_height,
                 mask="auto",
-                preserveAspectRatio=True,
+                preserveAspectRatio=False,
             )
         except Exception as exc:  # noqa: BLE001
             print(f"warning: could not stamp signature: {exc}", file=sys.stderr)

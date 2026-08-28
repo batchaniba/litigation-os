@@ -23,6 +23,9 @@ from docx.oxml.ns import qn
 from docx.shared import Inches, Pt
 
 SCRIPT_DIR = Path(__file__).resolve().parent
+sys.path.insert(0, str(SCRIPT_DIR))
+from signature_stamp import SIGNATURE_PATH  # noqa: E402
+SIG_IMG = Path(SIGNATURE_PATH)
 REPO_ROOT = SCRIPT_DIR.parent.parent
 OUT_DOCX = REPO_ROOT / "Opposition to MTD v3.docx"
 OUT_MATTER24 = (
@@ -33,10 +36,6 @@ OUT_MATTER24 = (
     / "matter-24"
     / "Opposition to Serrato MTD FAC and Strike v3 (Sep 2 2026).docx"
 )
-sys.path.insert(0, str(SCRIPT_DIR))
-from signature_stamp import SIGNATURE_PATH  # noqa: E402
-
-SIG_IMG = Path(SIGNATURE_PATH)
 
 FONT = "Times New Roman"
 SIZE = Pt(12)
@@ -979,7 +978,7 @@ def build():
     if SIG_IMG.exists():
         p = add_para(doc, "", double=False)
         run = p.add_run()
-        run.add_picture(str(SIG_IMG), width=Inches(1.8))
+        run.add_picture(str(SIG_IMG), width=Inches(2.4))
 
     add_para(doc, "____________________________________", double=False)
     add_para(doc, "BRENDAN NGEHSI NEWANFORBI", bold=True, double=False)

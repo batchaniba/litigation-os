@@ -20,7 +20,6 @@ OUT_DIR = ROOT / "internal/public/documents/matter-12"
 SCRIPT_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPT_DIR))
 from signature_stamp import SIGNATURE_PATH  # noqa: E402
-
 SIGNATURE_IMG = Path(SIGNATURE_PATH)
 
 DIAMOND_OUT = OUT_DIR / (
