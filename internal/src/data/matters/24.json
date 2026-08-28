@@ -4,7 +4,7 @@
   "case_no": "4:26-cv-05953-ASK",
   "court": "USDC N.D. Cal.",
   "claims": "42 USC 1983: Fourteenth Amendment (Substantive & Procedural Due Process), First Amendment (Retaliation); Declaratory Relief",
-  "status": "Active — FAC (Doc. 10) operative. USMS served Serrato Aug. 5, 2026 (Doc. 15). On Aug. 26, 2026 DAG Haiyang A. Li filed Defendant's Motion to Dismiss FAC and/or Motion to Strike under Rules 12(b)(6) and 12(f), noticed for hearing Sep. 16, 2026 at 1:30 p.m. before Mag. Krishnan (21 days' notice; Civil L.R. 7-2(a) requires 35). Opposition due Sep. 2, 2026 under Civil L.R. 7-3(a). Draft Opposition v4 prepared (but-for/Perry/TOA fixes). CMC remains Sep. 15, 2026. Related-cases admin motion filed Aug. 20, 2026.",
+  "status": "Active — FAC (Doc. 10) operative. USMS served Serrato Aug. 5, 2026 (Doc. 15). On Aug. 26, 2026 DAG Haiyang A. Li filed Defendant's Motion to Dismiss FAC and/or Motion to Strike under Rules 12(b)(6) and 12(f), noticed for hearing Sep. 16, 2026 at 1:30 p.m. before Mag. Krishnan (21 days' notice; Civil L.R. 7-2(a) requires 35). Opposition original-filed Aug. 27 (page-1 stamp); Civil L.R. 7-3(a) due Sep. 2. Notice of Supplemental Authority on the Whitman Aug. 27 tentative executed Aug. 28 — not yet filed; do not treat the tentative as the Alameda minute order. CMC remains Sep. 15, 2026. Related-cases admin motion filed Aug. 20, 2026.",
   "status_label": "MTD filed Aug. 26 — Opp due Sep. 2; hearing Sep. 16",
   "lifecycle": "active",
   "proceeding": "federal_civil",
@@ -160,6 +160,22 @@
     },
     {
       "path": "/documents/matter-24/Proof of Service by Email - Opposition to Serrato MTD (Aug 27 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-24/Notice of Supplemental Authority - Whitman Tentative with POS (Aug 28 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-24/Notice of Supplemental Authority - Whitman Tentative - Serrato MTD (Aug 28 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-24/Exhibit A Cover - Whitman Tentative Ruling (Aug 27 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-24/Proof of Service by Email - Notice of Supplemental Authority Whitman (Aug 28 2026).pdf",
       "filed": false
     }
   ],

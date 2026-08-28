@@ -1,6 +1,19 @@
 [
   {
     "date": "Aug. 28, 2026",
+    "event": "EXECUTED (unfiled) \u2014 Notice of Supplemental Authority in Newanforbi v. Serrato (4:26-cv-05953-ASK) lodging Hon. Jenna M. Whitman's August 27, 2026 written tentative on the CHP demurrer in Alameda No. 26CV191136 (heard August 28). The Serrato opposition was original-filed August 27, the day before that hearing. The notice attaches the tentative as Exhibit A, states that the minute order has not yet entered, and does not ask Krishnan to treat the tentative as a final state-court judgment. Email POS on DAG Haiyang A. Li. Drop at N.D. Cal. with the operative-FAC notices if filing paper today. Swap Exhibit A for the minute order when it is in hand.",
+    "matters": [
+      24,
+      20
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-24/Notice of Supplemental Authority - Whitman Tentative with POS (Aug 28 2026).pdf"
+  },
+  {
+    "date": "Aug. 28, 2026",
     "event": "SOS BIZFILE \u2014 California Secretary of State records retrieved for both Matter 12 defendants. Diamond Truck Sales, Inc. (Entity No. 3438768): active CA stock corporation formed Feb. 2, 2012; principal/mailing and individual agent for service of process Saliman Osmani, 1201 S. Soderquist Road, Turlock, CA 95380 (Stanislaus). Alpine Truck Sales, Inc. (Entity No. B20250280641): active CA stock corporation formed Sept. 2, 2025; principal/mailing and individual agent for service of process Sheran Osmani, 7156 Golden State Highway, Bakersfield, CA 93308 (Kern). Alpine's July 1, 2026 Turlock service was not the SOS agent address. Re-service of the Amended Summons and FAC: Diamond on Saliman Osmani in Stanislaus; Alpine on Sheran Osmani in Kern, named as sued. Meet and confer with Azimov still first.",
     "matters": [
       12
