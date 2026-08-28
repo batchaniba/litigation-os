@@ -1,5 +1,58 @@
 [
   {
+    "date": "Oct. 5, 2026",
+    "event": "HEARING — Defendant UPS's Rule 12(b)(6) Motion to Dismiss (ECF No. 7), Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD), 1:30 p.m., Courtroom 4. Drozd civil law-and-motion is Zoom only (Standing Order I.A). Opposition due Sep. 9, 2026 (L.R. 230(c)).",
+    "matters": [
+      26
+    ],
+    "type": "hearing",
+    "upcoming": true,
+    "actor": "you"
+  },
+  {
+    "date": "Sep. 16, 2026",
+    "event": "Rule 15(a)(1)(B) amendment-as-of-right window — Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). UPS served the MTD by mail Aug. 26, 2026 (ECF 7-3). 21 days after service is Sep. 16; Rule 6(d) may add 3 days for mail service through Sep. 19. A FAC moots ECF 7. Do not miss the Sep. 9 L.R. 230(c) opposition clock by waiting for this window.",
+    "matters": [
+      26
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you"
+  },
+  {
+    "date": "Sep. 9, 2026",
+    "event": "OPPOSITION DUE — Plaintiff's opposition to UPS's Rule 12(b)(6) motion (ECF No. 7), Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). L.R. 230(c): 14 days after filing (Aug. 26). Failure to oppose may be taken as consent. Unfiled draft is dated Aug. 28; regenerate with internal/scripts/matter26-opposition-to-mtd.py --date on the day of actual service. Drozd Standing Order I.E: do not file the proposed order with the opposition unless the Court asks. Hearing Oct. 5, 2026 (Zoom).",
+    "matters": [
+      26
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-26/Opposition to UPS Rule 12(b)(6) Motion to Dismiss (E.D. Cal. 2-26-cv-02847) (Sep 9 2026).pdf"
+  },
+  {
+    "date": "Aug. 28, 2026",
+    "event": "DRAFTED — Plaintiff's Opposition to UPS's Rule 12(b)(6) Motion to Dismiss (unfiled). Surgical cleanup: 12(b)(6) rhetoric softened; ICRAA anchored to Civ. Code 1786.16(b) not a 290.46 pass-through; Rule 15 clock runs from Aug. 26 mail service; proposed order is a single realistic disposition and is not to be filed (Drozd Standing Order I.E). Dated Aug. 28, 2026. The portfolio four-sided-border Proof of Service is attached as the last page of the opposition PDF. Service is first-class mail (FRCP 5(b)(2)(C)) from San Jose to Mott/Daskas at Costa Mesa and Mott's Carlsbad docket address; email is a courtesy copy only. Due Sep. 9.",
+    "matters": [
+      26
+    ],
+    "type": "event",
+    "upcoming": false,
+    "actor": "you",
+    "source": "/documents/matter-26/Opposition to UPS Rule 12(b)(6) Motion to Dismiss (E.D. Cal. 2-26-cv-02847) (Sep 9 2026).pdf"
+  },
+  {
+    "date": "Aug. 26, 2026",
+    "event": "FILED — UPS Rule 12(b)(6) Motion to Dismiss (ECF Nos. 7, 7-1, 7-2, 7-3) in Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). Noticed for Oct. 5, 2026, 1:30 p.m., Courtroom 4. Exhibit A is the First Advantage report (INELIGIBLE; National Criminal File Plus Eligible / No Record Found; NSOR Decisional; Sentence field SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY). Exhibit B is the application / FCRA-ICRAA disclosures (theft / dishonest-behavior purpose, including Labor Code section 1024.5(a)(7)).",
+    "matters": [
+      26
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "actor": "opposing",
+    "filed": true
+  },
+  {
     "date": "Aug. 31, 2026",
     "event": "FedEx responsive pleading deadline (computed) — Newanforbi v. Federal Express Corporation (Matter 25, E.D. Cal. No. 2:26-cv-02881-DAD-SCR); Fed. R. Civ. P. 81(c)(2)(C) — the later of 21 days after receipt of the initial pleading or 7 days after the notice of removal was filed (removal filed Aug. 24, 2026 → Aug. 31, 2026). Watch for answer or Rule 12 motion by Allison A. Kray.",
     "matters": [
@@ -2451,7 +2504,7 @@
       27
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "opposing"
   },
   {
@@ -2958,7 +3011,7 @@
       29
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "opposing"
   },
   {
@@ -3334,7 +3387,7 @@
       24
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "opposing"
   },
   {
@@ -3483,12 +3536,12 @@
   },
   {
     "date": "Aug. 27, 2026",
-    "event": "WATCH — if UPS responds by a Fed. R. Civ. P. 12 motion on its Rule 81(c)(2)(C) date, two clocks start immediately in Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD): opposition due 14 days after the motion is FILED under L.R. 230(c) (roughly Sep. 10, 2026), and one amendment as of right available within 21 days of SERVICE of the motion under Fed. R. Civ. P. 15(a)(1)(B) (roughly Sep. 17, 2026). The two run from different events and the opposition clock is the shorter. Under L.R. 230(c) a failure to oppose may be taken as consent to granting the motion. Amending as of right can moot a Rule 12(b)(6) motion outright — decide between opposing and amending in the first days, not the last.",
+    "event": "WATCH SATISFIED — UPS filed its Rule 12(b)(6) motion on Aug. 26, 2026 in Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). The L.R. 230(c) opposition clock and Rule 15(a)(1)(B) amendment window are now dated Sep. 9 and Sep. 16; see those entries.",
     "matters": [
       26
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "you"
   },
   {

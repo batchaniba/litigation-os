@@ -1,5 +1,36 @@
 [
   {
+    "date": "Oct. 5, 2026",
+    "event": "HEARING — Defendant UPS's Rule 12(b)(6) Motion to Dismiss (ECF No. 7), Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD), 1:30 p.m., Courtroom 4. Drozd civil law-and-motion is Zoom only (Standing Order I.A). Opposition due Sep. 9, 2026 (L.R. 230(c)).",
+    "matters": [
+      26
+    ],
+    "type": "hearing",
+    "upcoming": true,
+    "actor": "you"
+  },
+  {
+    "date": "Sep. 16, 2026",
+    "event": "Rule 15(a)(1)(B) amendment-as-of-right window — Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). UPS served the MTD by mail Aug. 26, 2026 (ECF 7-3). 21 days after service is Sep. 16; Rule 6(d) may add 3 days for mail service through Sep. 19. A FAC moots ECF 7. Do not miss the Sep. 9 L.R. 230(c) opposition clock by waiting for this window.",
+    "matters": [
+      26
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you"
+  },
+  {
+    "date": "Sep. 9, 2026",
+    "event": "OPPOSITION DUE — Plaintiff's opposition to UPS's Rule 12(b)(6) motion (ECF No. 7), Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). L.R. 230(c): 14 days after filing (Aug. 26). Failure to oppose may be taken as consent. Unfiled draft is dated Aug. 28; regenerate with internal/scripts/matter26-opposition-to-mtd.py --date on the day of actual service. Drozd Standing Order I.E: do not file the proposed order with the opposition unless the Court asks. Hearing Oct. 5, 2026 (Zoom).",
+    "matters": [
+      26
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-26/Opposition to UPS Rule 12(b)(6) Motion to Dismiss (E.D. Cal. 2-26-cv-02847) (Sep 9 2026).pdf"
+  },
+  {
     "date": "Aug. 31, 2026",
     "event": "FedEx responsive pleading deadline (computed) — Newanforbi v. Federal Express Corporation (Matter 25, E.D. Cal. No. 2:26-cv-02881-DAD-SCR); Fed. R. Civ. P. 81(c)(2)(C) — the later of 21 days after receipt of the initial pleading or 7 days after the notice of removal was filed (removal filed Aug. 24, 2026 → Aug. 31, 2026). Watch for answer or Rule 12 motion by Allison A. Kray.",
     "matters": [
@@ -216,16 +247,6 @@
     "upcoming": true
   },
   {
-    "date": "Aug. 26, 2026",
-    "event": "Meet-and-confer deadline (computed) as to The RK Logistics Group, Inc. — Newanforbi v. Randstad US, LLC et al. (26CV199902); CCP §430.41(a)(2) requires meet-and-confer at least 5 calendar days before the Aug. 31, 2026 responsive-pleading deadline, if RK Logistics intends to demur; otherwise it must file a declaration for the automatic 30-day extension. Randstad US, LLC is no longer on this clock — its response was extended to Sept. 15, 2026 by the parties' Aug. 18, 2026 agreement, moving its meet-and-confer date to Sept. 10, 2026.",
-    "matters": [
-      27
-    ],
-    "type": "deadline",
-    "upcoming": true,
-    "actor": "opposing"
-  },
-  {
     "date": "Aug. 31, 2026",
     "event": "Responsive pleading deadline (computed) — The RK Logistics Group, Inc. only, Newanforbi v. Randstad US, LLC et al. (26CV199902); 30 days from the Jul. 30, 2026 service date (CCP §412.20(a)(3)); the raw 30-day count lands on Saturday, Aug. 29, extended to Monday per CCP §12a. Randstad US, LLC's deadline was extended 15 days to Sept. 15, 2026 by agreement reached on the Aug. 18, 2026 call with its counsel, Chadwick L. Williams (Kabat Chapman & Ozmer LLP).",
     "matters": [
@@ -271,16 +292,6 @@
     ],
     "type": "deadline",
     "upcoming": true
-  },
-  {
-    "date": "Aug. 26, 2026",
-    "event": "Meet-and-confer deadline (computed) — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554); CCP §430.41(a)(2) requires meet-and-confer at least 5 calendar days before the Aug. 31, 2026 responsive-pleading deadline, if either defendant intends to demur; otherwise that defendant must file a declaration for the automatic 30-day extension",
-    "matters": [
-      29
-    ],
-    "type": "deadline",
-    "upcoming": true,
-    "actor": "opposing"
   },
   {
     "date": "Aug. 31, 2026",
@@ -360,16 +371,6 @@
     "source": "/documents/matter-27/Notice of Amount of Punitive Damages Sought (CCP 425.115) - Randstad US LLC (Aug 4 2026).pdf"
   },
   {
-    "date": "Aug. 26, 2026",
-    "event": "Responsive pleading deadline (computed) — Newanforbi v. Serrato (4:26-cv-05953-ASK); 21 days from the Aug. 5, 2026 USMS personal service date (FRCP 12(a)(1)(A))",
-    "matters": [
-      24
-    ],
-    "type": "deadline",
-    "upcoming": true,
-    "actor": "opposing"
-  },
-  {
     "date": "Aug. 27, 2026",
     "event": "UPS responsive pleading deadline (computed) — Newanforbi v. United Parcel Service, Inc., USDC E.D. Cal. No. 1:26-at-03195. Fed. R. Civ. P. 81(c)(2) fixes the longest of 21 days after receipt of the initial pleading, 21 days after service of the summons, or 7 days after the notice of removal is filed. Service was July 22, 2026, so the first two branches expired Aug. 12; the operative date is 7 days after the Aug. 20, 2026 removal. Expect a Fed. R. Civ. P. 12(b)(6) motion; the likely headline is that Tameny reaches wrongful discharge and does not extend to a refusal to hire.",
     "matters": [
@@ -392,16 +393,6 @@
   {
     "date": "Sep. 21, 2026",
     "event": "Consent to / Decline of Magistrate Judge jurisdiction — outer target, Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). The Initial Scheduling Order directs the parties to elect 'as soon as practicable' and to file within 30 days of service of process; in a removed action that trigger is ambiguous, so treat 30 days from the Aug. 20, 2026 order as the outer bound and file earlier. Worth real thought rather than a reflex decline: the order's own attachments describe E.D. Cal. congestion as 'crisis level,' with six district judgeships for forty years and weighted caseloads near twice the national average. Consent to M.J. Delaney likely buys a materially earlier and firmer trial date, with appeal still direct to the Ninth Circuit. Both sides must consent for it to take effect, and neither side is told of the other's election unless all consent.",
-    "matters": [
-      26
-    ],
-    "type": "deadline",
-    "upcoming": true,
-    "actor": "you"
-  },
-  {
-    "date": "Aug. 27, 2026",
-    "event": "WATCH — if UPS responds by a Fed. R. Civ. P. 12 motion on its Rule 81(c)(2)(C) date, two clocks start immediately in Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD): opposition due 14 days after the motion is FILED under L.R. 230(c) (roughly Sep. 10, 2026), and one amendment as of right available within 21 days of SERVICE of the motion under Fed. R. Civ. P. 15(a)(1)(B) (roughly Sep. 17, 2026). The two run from different events and the opposition clock is the shorter. Under L.R. 230(c) a failure to oppose may be taken as consent to granting the motion. Amending as of right can moot a Rule 12(b)(6) motion outright — decide between opposing and amending in the first days, not the last.",
     "matters": [
       26
     ],
