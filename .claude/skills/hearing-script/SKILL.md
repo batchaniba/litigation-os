@@ -58,6 +58,28 @@ visible. Cues exist so he can glance and look back at the camera.
 Stage directions and traps go in the off-camera memo, or not at all if he did
 not ask for homework.
 
+## Worked example — Matter 20 demurrer, August 28, 2026
+
+Retrospective. Hearing already held. This is the Zoom card he should have
+had on camera. The six-page "If they say" memo is what not to do.
+
+```
+I submit on one and four.
+Not asking you to order Form B signed today.
+Overrule those two counts and set an answer date.
+
+1 and 4 — live
+2 and 3 — leave them
+Ex. 5 vs Ex. 6 — conflict
+Ex. 7 — 851.6, no complaint
+can + PAS ≠ DUI on demurrer
+679.10(k) — charge not required
+Serrato signed the denial
+Paul / Dutra — amend if thin
+
+Ask: overrule 1 and 4. Answer date. CMC September 2.
+```
+
 ## Chat while a hearing is live
 
 Two or three spoken sentences. No labels. No menu of hypotheticals. Stop.
