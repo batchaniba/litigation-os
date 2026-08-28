@@ -2,9 +2,9 @@
 # Photographed loops mark, cropped/upscaled/smoothed by
 # process-signature-photo.py (charcoal on transparent). Use this for all
 # generated filings that need a signature affixed rather than a typed
-# name. Do not use the older cropped pen asset under
-# internal/scripts/assets/. The prior 1450×360 loops stamp is archived
-# next to this file as *-v1-abstract-loops.png.
+# name. Supersedes the CIV-100 4b extract merged in #566. Do not use the
+# older cropped pen asset under internal/scripts/assets/. Prior loops
+# stamps are archived next to this file as *-v1-abstract-loops.png.
 import struct
 from pathlib import Path
 
