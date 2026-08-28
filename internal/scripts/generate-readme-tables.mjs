@@ -267,7 +267,7 @@ const feeDateLabel = new Date(Date.UTC(fy, fm - 1, fd)).toLocaleDateString("en-U
   year: "numeric",
   timeZone: "UTC",
 });
-const clusterOrder = ["cluster1", "cluster2", "cluster3", "cluster4"];
+const clusterOrder = ["cluster1", "cluster2", "cluster3", "cluster4", "cluster6"];
 const feeClusterRows = clusterOrder
   .map((key) => feeSummary.byCluster[key])
   .filter(Boolean)

@@ -334,19 +334,19 @@ const lawyer_fees_raw = [
   {
     number: 20,
     type: "State - Writ of Mandate (CCP 1085, PC 679.10 U-Visa Certification)",
-    documentsCount: 18,
-    totalPagesReal: 390,
+    documentsCount: 42,
+    totalPagesReal: 567,
     hours: {
-      low: 80.8,
-      high: 137.9,
-      mid: 109.35
+      low: 84.8,
+      high: 145.9,
+      mid: 115.35
     },
     cost: {
-      low: 22624,
-      high: 38612,
-      mid: 30618
+      low: 23744,
+      high: 40852,
+      mid: 32298
     },
-    notes: "390 pages is the largest raw page count in the cluster, but 306 of those pages are two near-duplicate copies of the same 153-page writ petition, so the writ is billed once at the flat specialized rate rather than per-page, keeping the estimate defensible."
+    notes: "Record now lives under matter-32/from-20/ (42 PDFs / 567 pages). 306 pages remain two near-duplicate copies of the same 153-page writ, billed once at the flat specialized-writ rate. Aug. 28 true-up: Whitman Aug. 27 tentative (5 pp., OVERRULES COAs 1 & 4 / SUSTAINS WOLA 2 & 3) plus light review of the CHP and Serrato/Paul/Dutra replies, billed at court-order/opposing-review rates (4–8 hrs), not per-page drafting. Sheriff packets and individual-respondent oppositions are assemblies of already-billed work and stay at compilation rates."
   },
   {
     number: 21,
@@ -402,19 +402,19 @@ const lawyer_fees_raw = [
   {
     number: 24,
     type: "Federal - 42 U.S.C. 1983 (Due Process, 1st Amend. Retaliation - U-Visa certification denial)",
-    documentsCount: 6,
-    totalPagesReal: 58,
+    documentsCount: 21,
+    totalPagesReal: 168,
     hours: {
-      low: 46.5,
-      high: 72,
-      mid: 59.25
+      low: 77.5,
+      high: 135,
+      mid: 106.25
     },
     cost: {
-      low: 13020,
-      high: 20160,
-      mid: 16590
+      low: 21700,
+      high: 37800,
+      mid: 29750
     },
-    notes: "Newest and lightest matter in the cluster; only a single 21-page complaint plus routine N.D. Cal. intake paperwork (IFP application, proposed summons, ISC/magistrate consent form) have been filed so far."
+    notes: "Aug. 28 true-up (21 PDFs / 168 pages). Intake complaint + N.D. Cal. paperwork carry forward. New billable work: FAC + Notice of Errata (related-action disclosure amendment, not a full re-plead); Civil L.R. 3-12 related-case motions (filed + supplemental; drafts billed incrementally); light review of Serrato's 18-page 12(b)(6)/12(f) MTD; and the 18-page Opposition v4 at motion-briefing 0.6–1.2 hr/page. Duplicate opposition formats (plain PDF, pleading-paper, unified + POS, page-1 scan) billed once at full rate plus incremental assembly. USM-285 return and the Aug. 24 relate order are administrative / light-review only."
   },
   {
     number: 25,
@@ -435,20 +435,20 @@ const lawyer_fees_raw = [
   },
   {
     number: 26,
-    type: "State — PC §290.46(j) / ICRAA / Wrongful Failure to Hire",
-    documentsCount: 13,
-    totalPagesReal: 48,
+    type: "State — PC §290.46(j) / ICRAA / Wrongful Failure to Hire (removed to E.D. Cal.)",
+    documentsCount: 50,
+    totalPagesReal: 521,
     hours: {
-      low: 43,
-      high: 74,
-      mid: 58.5
+      low: 75,
+      high: 136,
+      mid: 105.5
     },
     cost: {
-      low: 12040,
-      high: 20720,
-      mid: 16380
+      low: 21000,
+      high: 38080,
+      mid: 29540
     },
-    notes: "Filed July 15, 2026 — 16 days before the July 31, 2026 two-year limitations cutoff, preserving all time-sensitive claims. The 18-page, six-count complaint is the only substantive drafting product; most remaining pages are single-page First Advantage notice/reminder emails. Increment since the prior estimate: file-stamped complaint confirmation pages, the FW-003 fee waiver order (GRANTED), a duplicate Notice of Case Assignment/Hearing, the SUM-100 Summons, and a 5-page SER-001 Request for Sheriff to Serve Court Papers (Sacramento County, registered-agent service, requested deadline July 31, 2026) — billed as a light administrative/procedural task, not full motion-drafting rate. No answer, motion practice, or discovery exists yet."
+    notes: "Aug. 28 true-up (50 PDFs / 521 pages). July 15 complaint + FA notices + sheriff service carry forward. Raw page count is inflated by three copies of the 49-page notice of removal and two copies of the 62-page ECF 7 MTD pack (opposition-pack-10 is a download set of already-counted files) — those duplicates are billed incrementally, not re-drafted. New work: light review of UPS's Rule 12(b)(6) (ECF 7 / exhibits A–B); 17-page opposition at motion-briefing 0.6–1.2 hr/page plus a 3-page proposed order (drafted, not filed — Drozd Standing Order I.E) and mail POS; caption/reassignment notices; CCP §425.115 punitive-damages notices. Opposing/court papers stay at review rates."
   },
   {
     number: 27,
@@ -470,19 +470,19 @@ const lawyer_fees_raw = [
   {
     number: 28,
     type: "Federal — 42 U.S.C. §1983 (Monell + Individual Capacity); Bane Act §52.1; Fraud/Negligent Misrepresentation; RICO 18 U.S.C. §1962(c)-(d)",
-    documentsCount: 7,
-    totalPagesReal: 77,
+    documentsCount: 31,
+    totalPagesReal: 704,
     hours: {
-      low: 102,
-      high: 176,
-      mid: 139
+      low: 124,
+      high: 219,
+      mid: 171.5
     },
     cost: {
-      low: 28560,
-      high: 49280,
-      mid: 38920
+      low: 34720,
+      high: 61320,
+      mid: 48020
     },
-    notes: "Seven documents totaling 77 real pages (corrected from a 53-page estimate — several documents ran longer than originally guessed): 24-page federal complaint (the dominant cost driver — novel theory development across RICO, §1983 Monell, individual-capacity §1983, Bane Act, and fraud/negligent misrepresentation in a single pleading; hours are elevated accordingly); 10-page Motion for Protective Order; 6-page supporting Declaration (billed per-document, not per-page, per methodology); state court Stipulated Protective Order as Exhibit A (12 pages); 12-page Proposed NDCA Protective Order; 11-page signed state Stipulated PO; 2-page PACER docket sheet confirming case filing and docket activity, billed at a nominal administrative-monitoring rate. Hours reflect drafting a complex multi-theory federal complaint from scratch leveraging 542 pages of discovery already produced in the dismissed state case, plus preparation of the contemporaneous protective-order motion package — now correctly priced against the actual, longer motion and proposed-order page counts. Fee-shifting under §1988 and RICO makes attorney fee recovery highly probable if Plaintiff prevails."
+    notes: "Aug. 28 true-up (31 PDFs / 704 pages). Complaint + protective-order package carry forward. ~478 pages under HOPE Discovery (Matter 5)/ are Matter 5 production already billed there — $0 here to avoid double-counting. New billable work: Mag. Cisneros Dkt. 11 (IFP moot; directed Rule 4 service) at court-order review; fee-payment / Doc. 8–9 notices at admin rates; QI research memos (~33 pp. finished product plus notes/prompts) at research rather than pleading rates; renewed PO draft billed incrementally on the already-priced motion. Fee-shifting under §1988 and RICO still applies on prevailing."
   },
   {
     number: 29,
@@ -538,19 +538,19 @@ const lawyer_fees_raw = [
   {
     number: 32,
     type: "Federal — § 1983 (N.D. Cal.) + Nov. 1, 2024 CHP cluster document store",
-    documentsCount: 78,
-    totalPagesReal: 808,
+    documentsCount: 115,
+    totalPagesReal: 1110,
     hours: {
-      low: 48,
-      high: 72,
-      mid: 60
+      low: 51,
+      high: 78,
+      mid: 64.5
     },
     cost: {
-      low: 13440,
-      high: 20160,
-      mid: 16800
+      low: 14280,
+      high: 21840,
+      mid: 18060
     },
-    notes: "NEW billable work is the Aug. 7, 2026 N.D. Cal. filing set under ndcal/ (77 pages): operative Complaint v3 (20 pp) at major-pleading 2.0–2.5 hr/page, plus revision credit for superseded drafts v1/v2 (not full rebill of 49 draft pages), plus intake packet / wage-exhibit admin (2–4 hrs). Relocated from-01|02|20|24/ PDFs (731 pp) remain attributed to source Matters 1, 2, 20, and 24 at $0 here to avoid double-counting. Nov. 1 / Candelaria APS evidence lives in Matter 33."
+    notes: "Aug. 28 true-up (115 PDFs / 1,110 pages). N.D. Cal. ndcal/ filing (complaint / FAC / intake) carries forward. from-01|02|20|24/ PDFs remain attributed to source Matters 1, 2, 20, and 24 at $0 here. New billable work is the Aug. 25 private process-server bundle and cover sheet — assembly of already-drafted FAC/summons, billed at compilation/admin rates (3–6 hrs), not a second complaint draft. 81-page docket-bundle copy is monitoring only. Nov. 1 / Candelaria APS evidence lives in Matter 33."
   },
   {
     number: 33,
@@ -589,41 +589,41 @@ const lawyer_fees_raw = [
   {
     number: 35,
     type: "State — Unruh / False Imprisonment / Negligent Training (Santa Clara Sup. Ct.)",
-    documentsCount: 6,
-    totalPagesReal: 37,
+    documentsCount: 17,
+    totalPagesReal: 209,
     hours: {
-      low: 46,
-      high: 78,
-      mid: 62
+      low: 51,
+      high: 88,
+      mid: 69.5
     },
     cost: {
-      low: 12880,
-      high: 21840,
-      mid: 17360
+      low: 14280,
+      high: 24640,
+      mid: 19460
     },
-    notes: "Aug. 26, 2026 verified complaint v9 (28 pp. pleading paper) billed as a major state pleading: fact investigation and corporate-entity research, Unruh / §490.5(f) / false-imprisonment theory development, and full drafting/revision of the tightened three-cause complaint with universal signature. Filing packet on disk and e-filed same day: CM-010 (3), SUM-100 (1), CV-5012 (1), plus Internal Damages Worksheet (2 — DO NOT FILE) and One Legal Order Receipt (2 — Confirmation #35442871; under clerk review). Packet forms billed at form-completion/admin rates; receipt at nominal monitoring. Fee-shifting under Civ. Code §52(a) and CCP §1021.5 applies upon prevailing."
+    notes: "Aug. 28 true-up (17 PDFs / 209 pages). Aug. 26 v9 complaint (28 pp.) and e-filing packet carry forward. Conformed complaint/summons/CM-010 are file-stamped copies of already-billed pages. New work is process-server assembly: CT Corporation 68-page court-docs packet (two defendant sets of already-drafted complaint + summons + CV-5012 + ADR) and two 32-page summons-first packets, billed at compilation rates, plus cover sheet / instructions (5–10 hrs). Blank POS-010 and CV-5003 are forms. Fee-shifting under Civ. Code §52(a) and CCP §1021.5 applies upon prevailing."
   }
 ];
 
 export const lawyer_fees = lawyer_fees_raw.map((row) => withMatterIdentity(row));
 
 export const lawyer_fees_summary = {
-  analysisDate: "2026-08-26",
+  analysisDate: "2026-08-28",
   totalMatters: 35,
-  totalDocumentsAnalyzed: 331,
-  totalPagesReal: 3942,
+  totalDocumentsAnalyzed: 573,
+  totalPagesReal: 6784,
   methodology: {
     blendedHourlyRate: 280,
     rateRange: { seniorPartner: [350, 450], midAssociate: [250, 350], paralegal: [150, 200] },
-    note: "Every PDF in public/documents/matter-XX/ was measured with pdfinfo for real page counts (poppler-utils), then classified by document type (complaint, motion/opposition/reply, discovery, writ/habeas, declaration, administrative, evidence) and priced using the hours-per-page/per-document conversions in docs/LAWYER_FEES_CALCULATOR.md. Opposing counsel's filings are billed only at a light review rate, never at drafting rate. Matters with no uploaded PDFs are estimated conservatively from matters.js status text. Aug. 26, 2026 true-up: Matter 35 Unruh verified complaint v9 + filing packet e-filed (37 real pages across 6 files) as Cluster 6.",
+    note: "Every PDF in public/documents/matter-XX/ was measured with pdfinfo for real page counts (poppler-utils), then classified by document type (complaint, motion/opposition/reply, discovery, writ/habeas, declaration, administrative, evidence) and priced using the hours-per-page/per-document conversions in docs/LAWYER_FEES_CALCULATOR.md. Opposing counsel's filings are billed only at a light review rate, never at drafting rate. Duplicate packs (opposition-pack-10, conformed copies, from-* stores) are billed incrementally. Matters with no uploaded PDFs are estimated conservatively from matter JSON status text. Aug. 28, 2026 true-up: Matter 20 Whitman tentative + reply review; Matter 24 Serrato Opp v4 / related-case motions / MTD review; Matter 26 UPS ECF 7 review + 17-page opposition; Matter 28 Dkt. 11 + QI research (HOPE discovery stays on Matter 5); Matter 32 process-server bundle; Matter 35 Ross CT / summons-first service packets.",
   },
-  totalEstimatedHours: { low: 2917.8, high: 4847.2, mid: 3875.0 },
-  totalEstimatedCost: { low: 816984, high: 1357216, mid: 1085000 },
+  totalEstimatedHours: { low: 3014.8, high: 5039.2, mid: 4019.5 },
+  totalEstimatedCost: { low: 844144, high: 1410976, mid: 1125460 },
   byCluster: {
-    cluster1: { label: "CHP / DUI / DMV", matters: [1, 2, 7, 8, 20, 24, 32, 33], costLow: 162036, costMid: 214172, costHigh: 266308 },
-    cluster2: { label: "Parole Retaliation / HOPE", matters: [3, 4, 5, 6, 11, 13, 14, 15, 16, 17, 18, 21, 28, 30, 34], costLow: 463512, costMid: 610092, costHigh: 760872 },
-    cluster3: { label: "Consumer Fraud / Employment", matters: [12, 22, 23, 25, 26, 27, 29, 31], costLow: 136976, costMid: 185500, costHigh: 233940 },
+    cluster1: { label: "CHP / DUI / DMV", matters: [1, 2, 7, 8, 20, 24, 32, 33], costLow: 172676, costMid: 230272, costHigh: 287868 },
+    cluster2: { label: "Parole Retaliation / HOPE", matters: [3, 4, 5, 6, 11, 13, 14, 15, 16, 17, 18, 21, 28, 30, 34], costLow: 469672, costMid: 619192, costHigh: 772912 },
+    cluster3: { label: "Consumer Fraud / Employment", matters: [12, 22, 23, 25, 26, 27, 29, 31], costLow: 145936, costMid: 198646, costHigh: 251356 },
     cluster4: { label: "Administrative Writs & Habeas", matters: [9, 10, 19], costLow: 41580, costMid: 57890, costHigh: 74200 },
-    cluster6: { label: "Public Accommodation / Unruh", matters: [35], costLow: 12880, costMid: 17360, costHigh: 21840 },
+    cluster6: { label: "Public Accommodation / Unruh", matters: [35], costLow: 14280, costMid: 19460, costHigh: 24640 },
   },
 };
