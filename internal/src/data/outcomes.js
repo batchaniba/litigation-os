@@ -96,6 +96,40 @@ const outcomes_raw = {
   },
   judicial_opinions: [
     {
+      matter: 20,
+      judge: "Hon. Jenna M. Whitman",
+      date: "August 27, 2026",
+      type: "merits",
+      outcome: "mixed",
+      title: "Tentative Ruling on CHP Demurrer to Petition for Writ of Mandate (hearing Aug. 28, 2026)",
+      holding: "Tentative issued the afternoon before the demurrer hearing. Parties ORDERED TO APPEAR at 10:30 a.m. (not 9:00) because the tentative posted late. First cause of action (ministerial duty to certify Form I-918 Supp. B under Pen. Code §679.10): OVERRULED. Accepting the petition's allegations that Petitioner showed no signs of impairment and that the arresting officers lied in the report, a finder of fact could reasonably find probable cause for the November 1, 2024 arrest was lacking; whether the incident is qualifying criminal activity is a contested fact, not a demurrer question. Fourth cause of action (declaratory relief): OVERRULED — no election of remedies at the pleadings stage. Second cause of action (reason-giving, §679.10(i)(2)): SUSTAINED WITHOUT LEAVE TO AMEND — the statute's specificity requirement applies to noncooperation denials, and CHP denied for lack of qualifying crime. Third cause of action (helpfulness presumption, §679.10(h)): SUSTAINED WITHOUT LEAVE TO AMEND — the presumption never came into play because denial was on qualifying-crime grounds. Individual respondents' joinders travel with CHP's demurrer.",
+      significance: "The first merits-stage ruling in the CHP U-visa mandate. It keeps the live theory — that the November 1, 2024 stop was qualifying false imprisonment / obstruction / perjury, so certification is ministerial — in the case for an evidentiary hearing. That is the same factual predicate Magistrate Judge Krishnan found plausible in Serrato (Matter 24, June 29) and the same incident Magistrate Judge Kim treated as probable cause as a matter of law in the Matter 1 F&R. If the tentative is adopted, Matters 1, 24, 32, and 20 will be in front of two courts that have already split on whether the dashcam-versus-report conflict is a pleading defect or a fact dispute. COAs 2 and 3 (reason-giving and helpfulness) are dead on this petition; do not spend the hearing relitigating them. This is still a tentative — appear August 28, 2026, 10:30 a.m., Dept. 25, Zoom 161 8066 1142 / 5805.",
+      document_path: "/documents/opinions/Newanforbi v California CHP - Alameda Sup Ct - Tentative Ruling Demurrer Aug 27 2026.pdf"
+    },
+    {
+      matter: 28,
+      judge: "Magistrate Judge Lisa J. Cisneros",
+      date: "August 26, 2026",
+      type: "procedural",
+      outcome: "mixed",
+      title: "Order Regarding Payment of Filing Fee and Application to Proceed In Forma Pauperis (Dkt. 11)",
+      holding: "Plaintiff's original IFP application (Dkt. 2) DENIED AS MOOT — he paid the filing fee in lieu of the supplemental IFP form required by the July 23 order (Dkt. 7), and he filed the state-court demurrer decision. No further response to Dkt. 7 is required. Because the fee is paid, the Court will not screen the complaint sua sponte under 28 U.S.C. §1915(e)(2)(B) and will not decide case or issue preclusion from the Matter 5 HOPE demurrer; those defenses are left for Defendants to raise after they are served and appear. The Order 'should not be construed as implying any opinion by the Court as to whether such defenses might apply.' Plaintiff is DIRECTED to serve process under Rule 4.",
+      significance: "Closes the July 23 IFP / state-decision to-do list and takes Matter 28 off the §1915 screening track that produced the adverse F&Rs in Matters 1 and 7. Preclusion from Palacios (Matter 5) is not dead — it is just not a sua sponte issue anymore. The live clock is Rule 4 service on Smith and HOPE (4(m) ~October 19, 2026 from the July 21 filing). This is the opposite of a merits win; it is permission to serve and proceed.",
+      document_path: "/documents/opinions/Newanforbi v Smith - USDC NDCal - Order Directing Service Aug 26 2026.pdf"
+    },
+    {
+      matter: 24,
+      caption: "Newanforbi v. Serrato — related to Nforbi v. Meza-Gonzalez",
+      judge: "Magistrate Judge Ajay S. Krishnan",
+      date: "August 24, 2026",
+      type: "procedural",
+      outcome: "favorable",
+      title: "Order Granting Administrative Motion to Consider Whether Cases Should Be Related (Civil L.R. 3-12)",
+      holding: "Newanforbi v. Serrato (4:26-cv-05953-ASK) and Nforbi v. Meza-Gonzalez et al. (3:26-cv-08271-PHK, Matter 32) are RELATED. Clerk directed to reassign Meza-Gonzalez to Magistrate Judge Krishnan. Meza CMC to be rescheduled. Serrato CMC remains September 15, 2026.",
+      significance: "Puts the U-visa certification case and the November 1, 2024 false-arrest case in front of the same judge who already held, at §1915 screening, that the CHP incident allegations plausibly state false imprisonment on fabricated evidence. Relatedness is not a merits ruling, but it is the assignment Plaintiff asked for. Serrato's MTD (hearing Sep. 16) and the Meza service / CMC track now run in one courtroom.",
+      document_path: "/documents/opinions/Newanforbi v Serrato - USDC NDCal - Order Relating Meza Aug 24 2026.pdf"
+    },
+    {
       matter: 19,
       caption: "In re Newanforbi (Habeas Corpus)",
       judge: "Hon. Robert Hawk",
@@ -228,6 +262,28 @@ const outcomes_raw = {
     }
   ],
   notable_quotes: [
+    {
+      quote: "Under those circumstances, at the hearing on the merits, a finder of fact could reasonably find probable cause for arrest was lacking.",
+      speaker: "Hon. Jenna M. Whitman",
+      role: "Judge of the Superior Court, Alameda Sup. Ct., Dept. 25",
+      source: "Tentative Ruling on CHP Demurrer to Petition for Writ of Mandate, p. 4",
+      case_no: "26CV191136",
+      date: "August 27, 2026",
+      matter: 20,
+      category: "vindication",
+      note: "The dashcam-versus-report conflict is a fact question, not a demurrer kill. Same November 1, 2024 incident Magistrate Judge Kim treated as probable cause as a matter of law in the Matter 1 F&R. Still a tentative — appear August 28, 10:30 a.m."
+    },
+    {
+      quote: "Because Plaintiff has now effectively withdrawn his IFP application by paying the filing fee, however, the Court leaves any such argument for Defendants to raise if they see fit after they are served and appear. This Order should not be construed as implying any opinion by the Court as to whether such defenses might apply.",
+      speaker: "Magistrate Judge Lisa J. Cisneros",
+      role: "U.S. Magistrate Judge, USDC N.D. Cal.",
+      source: "Order Regarding Payment of Filing Fee and Application to Proceed In Forma Pauperis (Dkt. 11), p. 1",
+      case_no: "3:26-cv-07504-LJC",
+      date: "August 26, 2026",
+      matter: 28,
+      category: "procedural",
+      note: "Fee paid = no §1915 screening and no sua sponte preclusion ruling from the Matter 5 HOPE demurrer. Serve under Rule 4; HOPE can still plead preclusion after appearance."
+    },
     {
       quote: "Plaintiff then made the 'strategic decision' to intentionally ignore half of Defendants' motion. Plaintiff regrets this decision, but the Court's local rules do not allow a non-moving party to bifurcate a moving party's motion, respond to the portion it prefers, and then request a second round of briefing on the remainder under the guise that it conserves judicial resources.",
       speaker: "Erick J. Rhoan, Deputy Attorney General",
