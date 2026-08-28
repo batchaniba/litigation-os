@@ -858,6 +858,7 @@ def _signature(d: PleadingPaper, exec_date: str) -> None:
         SIGNATURE_NATIVE_PX[1],
         SIG_LINE,
         width=185,
+        x_offset=32,
     )
     d.write_line(SIG_LINE, right=True, right_margin_offset=20)
     d.write_line(SIGNOFF_NAME, right=True, right_margin_offset=20)

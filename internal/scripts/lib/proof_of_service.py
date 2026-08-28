@@ -285,7 +285,7 @@ def build_proof_of_service(path: Path | str, fields: ProofOfServiceFields) -> Pa
     line_pad = 4.0
     sig_line_w = sig_width + 2 * line_pad
     sig_x0 = INNER_R - 48 - sig_line_w
-    sig_x1 = sig_x0 + sig_line_w
+    sig_x1 = sig_x0 + sig_line_w + 12.0  # extra run so the right-shifted stamp stays on the rule
     _hline(c, sig_x0, sig_x1, sig_line_y)
 
     if fields.server_name:
@@ -304,7 +304,7 @@ def build_proof_of_service(path: Path | str, fields: ProofOfServiceFields) -> Pa
             # Sit the stamp on the line (slight overlap so ink rests on the rule).
             c.drawImage(
                 SIGNATURE_PATH,
-                sig_x0 + line_pad,
+                sig_x0 + line_pad + 12.0,
                 sig_line_y - 3.0,
                 width=sig_width,
                 height=sig_height,
