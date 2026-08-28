@@ -7,40 +7,24 @@ Opposition by email to counsel of record.
 """
 from __future__ import annotations
 
-import os
 import sys
 from pathlib import Path
 
 from reportlab.lib.pagesizes import letter
-from reportlab.lib.units import inch
 from reportlab.pdfgen import canvas
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPT_DIR))
 sys.path.insert(0, str(SCRIPT_DIR / "lib"))
 
-from signature_stamp import SIGNATURE_ASPECT, SIGNATURE_NATIVE_PX, SIGNATURE_PATH  # noqa: E402
+from signature_stamp import SIGNATURE_ASPECT, SIGNATURE_PATH  # noqa: E402
 
 ROOT = SCRIPT_DIR.parent
-OUT_MATTER = (
-    ROOT
-    / "public/documents/matter-24"
-    / "Proof of Service by Email - Opposition to Serrato MTD (Aug 27 2026).pdf"
-)
-OUT_ROOT = ROOT.parent / "Proof of Service by Email - Opposition to Serrato MTD (Aug 27 2026).pdf"
-OUT_ARTIFACT = Path(
-    "/opt/cursor/artifacts/serrato_opp_pos_email_20260827.pdf"
-)
-OPP_PLEADING = ROOT.parent / "Opposition to MTD v4 - Pleading Paper.pdf"
-OUT_UNIFIED_ROOT = (
-    ROOT.parent
-    / "Opposition to Serrato MTD with Proof of Service by Email (Aug 27 2026).pdf"
-)
-OUT_UNIFIED_MATTER = (
-    ROOT
-    / "public/documents/matter-24"
-    / "Opposition to Serrato MTD with Proof of Service by Email (Aug 27 2026).pdf"
-)
+MATTER24 = ROOT / "public/documents/matter-24"
+OUT_MATTER = MATTER24 / "Proof of Service by Email - Opposition to Serrato MTD (Aug 27 2026).pdf"
+OUT_ARTIFACT = Path("/opt/cursor/artifacts/serrato_opp_pos_email_20260827.pdf")
+OPP_PLEADING = MATTER24 / "Opposition to Serrato MTD FAC and Strike v4 - Pleading Paper (Sep 2 2026).pdf"
+OUT_UNIFIED_MATTER = MATTER24 / "Opposition to Serrato MTD with Proof of Service by Email (Aug 27 2026).pdf"
 
 PAGE_W, PAGE_H = letter
 LEFT = 72.0
@@ -225,19 +209,19 @@ def merge_with_opposition(pos_path: Path) -> None:
         doc = pymupdf.open(src)
         merged.insert_pdf(doc)
         doc.close()
-    for out in (OUT_UNIFIED_ROOT, OUT_UNIFIED_MATTER):
-        out.parent.mkdir(parents=True, exist_ok=True)
-        merged.save(out)
-        print(f"Wrote {out} ({out.stat().st_size} bytes, {merged.page_count} pages)")
+    OUT_UNIFIED_MATTER.parent.mkdir(parents=True, exist_ok=True)
+    merged.save(OUT_UNIFIED_MATTER)
+    print(f"Wrote {OUT_UNIFIED_MATTER} ({OUT_UNIFIED_MATTER.stat().st_size} bytes, {merged.page_count} pages)")
     merged.close()
 
 
 def main() -> None:
     if not Path(SIGNATURE_PATH).is_file():
         raise SystemExit(f"Missing signature: {SIGNATURE_PATH}")
-    for out in (OUT_MATTER, OUT_ROOT, OUT_ARTIFACT):
-        build(out)
-    merge_with_opposition(OUT_ROOT)
+    build(OUT_MATTER)
+    if OUT_ARTIFACT.parent.is_dir():
+        build(OUT_ARTIFACT)
+    merge_with_opposition(OUT_MATTER)
 
 
 if __name__ == "__main__":
