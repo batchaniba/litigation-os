@@ -1,3 +1,15 @@
 {
+  "redirects": [
+    {
+      "source": "/fedex-consent",
+      "destination": "/fedex-consent.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/fedex-consent/",
+      "destination": "/fedex-consent.pdf",
+      "permanent": false
+    }
+  ],
   "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }
