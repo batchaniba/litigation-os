@@ -18,8 +18,14 @@ Exhibit A. Architecture:
 Rendered on the shared pleading-paper engine and signed with the portfolio
 universal signature (bnn.cdl@gmail.com -- not the UPS COS misspelling).
 
+Date the signature and certificate with --date on the day of actual service.
+Do not pre-date a September 9 certificate. L.R. 230(c) due date is September 9,
+2026; that is not the certificate date. Judge Drozd Standing Order I.E does
+not require a proposed order with this civil motion; generate one only as a
+portfolio draft and do not file it unless the Court asks.
+
     python3 internal/scripts/matter26-opposition-to-mtd.py \\
-        [--date "September 9, 2026"] [--mailed-from "San Jose, California"] [OUT_PDF]
+        [--date "August 27, 2026"] [--mailed-from "San Jose, California"] [OUT_PDF]
 """
 
 from __future__ import annotations
@@ -46,7 +52,7 @@ DEFAULT_ORDER_OUT = (
     / "Proposed Order Denying UPS Rule 12(b)(6) Motion to Dismiss (E.D. Cal. 2-26-cv-02847) (Sep 9 2026).pdf"
 )
 
-DEFAULT_EXEC_DATE = "September 9, 2026"
+DEFAULT_EXEC_DATE = "August 27, 2026"
 DEFAULT_MAILED_FROM = "San Jose, California"
 FOOTER = (
     "PLAINTIFF'S OPPOSITION TO RULE 12(b)(6) MOTION -- "
@@ -92,7 +98,7 @@ CAPTION_RIGHT = [
     ("", False, False),
     ("Hearing: October 5, 2026", False, False),
     ("Time: 1:30 p.m.", False, False),
-    ("Courtroom: 4, 15th Floor", False, False),
+    ("Courtroom: 4 (civil L&M by Zoom)", False, False),
     ("Judge: Hon. Dale A. Drozd", False, False),
     ("", False, False),
     ("Action filed: July 15, 2026", False, False),
@@ -109,7 +115,7 @@ ORDER_CAPTION_RIGHT = [
     ("", False, False),
     ("Hearing: October 5, 2026", False, False),
     ("Time: 1:30 p.m.", False, False),
-    ("Courtroom: 4, 15th Floor", False, False),
+    ("Courtroom: 4 (civil L&M by Zoom)", False, False),
     ("Judge: Hon. Dale A. Drozd", False, False),
 ]
 
@@ -319,9 +325,11 @@ CONTENT = [
      "section\" only \"to protect a person at risk.\" Section 290.46(j)(2)(E) then "
      "prohibits, except as authorized under paragraph (1) or any other provision of law, "
      "use of that information for purposes relating to employment. Section 290.46(j)(4)(A) "
-     "supplies the private right of action: actual damages, and an amount not exceeding "
-     "three times actual damage and not less than $250, and attorney's fees, exemplary "
-     "damages, or a civil penalty not exceeding $25,000. The $25,000 figure is a cap on "
+     "supplies the private right of action. The user is \"liable for the actual damages, "
+     "and any amount that may be determined by a jury or a court sitting without a jury, "
+     "not exceeding three times the amount of actual damage, and not less than two hundred "
+     "fifty dollars ($250), and attorney's fees, exemplary damages, or a civil penalty not "
+     "exceeding twenty-five thousand dollars ($25,000).\" The $25,000 figure is a cap on "
      "the civil penalty, not a floor alternative to actual damages."),
 
     ("PARA",
@@ -342,10 +350,9 @@ CONTENT = [
      "UPS \"does not dispute\" that it used information from the background check to not "
      "hire Plaintiff. (ECF No. 7 at 3.) Exhibit A then shows the criminal-records search "
      "was Eligible / No Record Found, and the registry search was the only Decisional "
-     "component feeding an INELIGIBLE overall score. (ECF No. 7 at 17-19 (Ex. A at 4-6).) The "
-     "reasonable inference -- the only reasonable inference on this record -- is that "
-     "the information UPS used was the registry hit. That is the use section "
-     "290.46(j)(2)(E) forbids."),
+     "component feeding an INELIGIBLE overall score. (ECF No. 7 at 17-19 (Ex. A at 4-6).) "
+     "At minimum, a reasonable inference is that the information UPS used was the "
+     "registry hit. That is the use section 290.46(j)(2)(E) forbids."),
 
     ("PARA",
      "UPS argues that by alleging a Megan's Law violation Plaintiff \"impliedly admits\" a "
@@ -356,7 +363,7 @@ CONTENT = [
      "establish, that UPS reviewed or relied on any judicial conviction record."),
 
     ("PARA",
-     "2.  The two-field layout proves California as the source of record."),
+     "2.  The two-field layout supports California as the source of record."),
 
     ("PARA",
      "UPS's theory is that it \"did not access California's Megan's Law website\" and "
@@ -372,7 +379,7 @@ CONTENT = [
      "record as the California Sex Offender Registry. (ECF No. 7 at 19 (Ex. A at 6).)"),
 
     ("PARA",
-     "That two-field structure is the pass-through proof, and it is in UPS's own exhibit. "
+     "That two-field structure supports Plaintiff's pass-through theory, and it is in UPS's own exhibit. "
      "A construction that lets an employer evade section 290.46(j)(2)(E) by running the "
      "same California data through a national query portal would make the employment "
      "prohibition surplusage. \"[A] statute should not be given an interpretation that "
@@ -503,17 +510,26 @@ CONTENT = [
 
     ("PARA",
      "Plaintiff does not rest Count III on a theory that Exhibit B failed to name First "
-     "Advantage or to use the phrase \"investigative consumer report.\" The Complaint "
-     "pleads three distinct ICRAA theories. (Compl. ¶ 47.) The live ones at this "
-     "stage are: (b) the requirement to provide a complete copy of the investigative "
-     "consumer reports obtained, concurrent with or prior to the adverse action -- a "
-     "theory supported by paragraph 24, which alleges the portal link expired and "
-     "Plaintiff no longer has access to the underlying report; and the allegation that "
-     "UPS used the report for a purpose California law prohibits. (Compl. ¶¶ 46, "
-     "47(b)-(c).) Consent to a lawful background check is not consent to a prohibited "
-     "use of its results. Whether every page of Exhibit A was in fact delivered to "
-     "Plaintiff before the July 31, 2024 final adverse action is a fact question. It is "
-     "not resolved by UPS attaching an application packet."),
+     "Advantage or to use the phrase \"investigative consumer report.\" He also does "
+     "not rest Count III on a theory that a Penal Code section 290.46 violation is, "
+     "without more, an ICRAA violation. Paragraph 46's \"spirit and purpose\" allegation "
+     "is not the statutory hook."),
+
+    ("PARA",
+     "The Complaint's live ICRAA theory is Civil Code section 1786.16. Subdivision "
+     "(a)(5) and (b)(1) require the procuring person to provide a means to request a "
+     "copy of the report and, if requested, to send a copy within three business days of "
+     "the date the report is provided to the recipient. Subdivision (b)(2) requires "
+     "compliance with section 1786.40 if adverse action is a consideration -- advising "
+     "the consumer of the action and supplying the name and address of the reporting "
+     "agency. (Compl. ¶¶ 24, 47(b).) Paragraph 24 alleges the First Advantage portal "
+     "link expired and Plaintiff no longer has access to the underlying report. Whether "
+     "UPS actually sent a complete copy of Exhibit A within the time section 1786.16(b)(1) "
+     "requires is a fact question. It is not resolved by UPS attaching an application "
+     "packet. If the Court concludes paragraph 47(b) was pled closer to a copy-before-"
+     "adverse-action formulation than to section 1786.16(b)(1)'s request-and-three-day "
+     "rule, the defect is labeling, not futility: the same facts support leave to "
+     "conform the citation. Lopez, 203 F.3d at 1130."),
 
     ("SUBHEAD", "E.  Count IV States a Constitutional Privacy Claim"),
 
@@ -543,7 +559,8 @@ CONTENT = [
      "unlawful. Whether that scope question can be decided as a matter of law on these "
      "exhibits is, at minimum, mixed. Hill itself treats reasonable expectation and "
      "seriousness as mixed questions, adjudicable as law only when the facts are "
-     "undisputed. 7 Cal. 4th at 40. They are not."),
+     "undisputed. 7 Cal. 4th at 40. They are not. The claim is properly pled. It is "
+     "not the claim on which this opposition principally stands."),
 
     ("SUBHEAD",
      "F.  Count V: Negligence Per Se Is a Doctrine -- Leave to Amend Should Be\n"
@@ -569,7 +586,7 @@ CONTENT = [
      "163, 180 (1999). Count VI's unlawful prong is predicated on Count I. (Compl. ¶ "
      "61.) If Count I states a claim -- and it does -- the unlawful prong states a "
      "claim. UPS's chain of \"because we did not violate 290.46, the UCL dies\" is only "
-     "as strong as its Megan's Law argument, which Exhibit A defeats."),
+     "as strong as its Megan's Law argument, which Exhibit A does not establish."),
 
     ("PARA",
      "The unfair prong is independently pled. (Compl. ¶ 62.) UPS disclosed that the "
@@ -596,13 +613,18 @@ CONTENT = [
      "F.2d at 1448."),
 
     ("PARA",
-     "Rule 15(a)(1)(B) still permits one amendment as of right within 21 days of service "
-     "of this Rule 12(b) motion -- through September 16, 2026. The Initial Scheduling "
-     "Order so advised. (ECF No. 2.) Futility is not established. The facts that would "
-     "be added are the facts UPS already put in the record: the two-field California "
-     "source line, the Eligible criminal search, the INELIGIBLE centralized adjudication, "
-     "and the theft-purpose disclosure. Dismissal with prejudice on this record would be "
-     "an abuse of discretion."),
+     "Rule 15(a)(1)(B) permits one amendment as of right within 21 days after service of "
+     "a Rule 12(b) motion. UPS served the motion by mail on August 26, 2026. (ECF No. "
+     "7-3.) Twenty-one days after that service is September 16, 2026. Because service "
+     "was by mail, Rule 6(d) may add three days, through September 19, 2026. Plaintiff "
+     "will confirm the operative date from the envelope if it differs. L.R. 230(c) is a "
+     "different clock, runs from filing, and is not extended by Rule 6(d): this "
+     "opposition remains due September 9, 2026. The Initial Scheduling Order advised of "
+     "the Rule 15 window. (ECF No. 2.) Futility is not established. The facts that "
+     "would be added are the facts UPS already put in the record: the two-field "
+     "California source line, the Eligible criminal search, the INELIGIBLE centralized "
+     "adjudication, and the theft-purpose disclosure. Dismissal with prejudice on this "
+     "record would be an abuse of discretion."),
 
     ("HEADER", "VI.\nCONCLUSION"),
 
@@ -626,22 +648,29 @@ CONTENT = [
 ORDER_CONTENT = [
     ("PARA",
      "Defendant United Parcel Service, Inc.'s Motion to Dismiss pursuant to Federal Rule "
-     "of Civil Procedure 12(b)(6) (ECF No. 7) came on for hearing on October 5, 2026, in "
-     "Courtroom 4 of this Court. Plaintiff BRENDAN NGEHSI NEWANFORBI appeared in propria "
-     "persona. Defendant appeared through counsel. The Court, having considered the "
-     "papers and arguments, and good cause appearing, ORDERS as follows:"),
+     "of Civil Procedure 12(b)(6) (ECF No. 7) came on for hearing on October 5, 2026. "
+     "Plaintiff BRENDAN NGEHSI NEWANFORBI appeared in propria persona. Defendant appeared "
+     "through counsel. The Court, having considered the papers and arguments, and good "
+     "cause appearing, ORDERS as follows:"),
 
     ("LIST_ITEM",
-     "1.  Defendant's Motion to Dismiss is DENIED in its entirety."),
+     "1.  The motion is DENIED as to the First Cause of Action (Cal. Penal Code "
+     "section 290.46(j)(2)(E))."),
 
     ("LIST_ITEM",
-     "2.  In the alternative, if the Court does not deny the motion in full: the motion "
-     "is DENIED as to the First, Third, Fourth, and Sixth Causes of Action; the Second "
-     "and Fifth Causes of Action are DISMISSED WITH LEAVE TO AMEND; and Plaintiff shall "
-     "file any amended complaint within twenty-one (21) days of this Order."),
+     "2.  The motion is DENIED as to the Third, Fourth, and Sixth Causes of Action."),
 
     ("LIST_ITEM",
-     "3.  Defendant shall file a responsive pleading within the time provided by the "
+     "3.  The Second Cause of Action (failure to hire in violation of public policy) is "
+     "DISMISSED WITH LEAVE TO AMEND."),
+
+    ("LIST_ITEM",
+     "4.  The Fifth Cause of Action (negligence per se) is DISMISSED WITH LEAVE TO "
+     "AMEND."),
+
+    ("LIST_ITEM",
+     "5.  Plaintiff shall file any amended complaint within twenty-one (21) days of this "
+     "Order. Defendant shall file a responsive pleading within the time provided by the "
      "Federal Rules of Civil Procedure."),
 
     ("PARA", "IT IS SO ORDERED."),
@@ -777,11 +806,9 @@ def build_proposed_order(out: Path, exec_date: str, mailed_from: str) -> Path:
     d.blank_line()
     d.write_line("Presented by:", italic=True)
     _signature(d, exec_date)
-    _certificate_of_service(
-        d, exec_date, mailed_from,
-        "[PROPOSED] ORDER DENYING DEFENDANT UNITED PARCEL SERVICE, INC.'S "
-        "RULE 12(b)(6) MOTION TO DISMISS",
-    )
+    # Drozd Standing Order I.E: do not file a proposed order with this motion
+    # unless the Court requests one. No certificate of service: this draft is
+    # not for lodging with the opposition.
     d.save()
     return out
 
@@ -791,7 +818,9 @@ def main() -> None:
     ap.add_argument("out", nargs="?", default=str(DEFAULT_OUT))
     ap.add_argument("--order-out", default=str(DEFAULT_ORDER_OUT))
     ap.add_argument("--date", default=DEFAULT_EXEC_DATE,
-                    help="Execution / service date printed on the filing")
+                    help="Date of actual service, printed on the signature and "
+                         "certificate. Do not pass the L.R. 230(c) due date unless "
+                         "that is the day the papers are actually served.")
     ap.add_argument("--mailed-from", default=DEFAULT_MAILED_FROM,
                     help="City and state where the service copy is deposited with the "
                          "USPS and where the certificate is executed")
