@@ -1,5 +1,5 @@
 # Portfolio universal signature: brendan-newanforbi-signature.png
-# Photographed loops mark, cropped/upscaled/thickened by
+# Photographed loops mark, cropped/upscaled/smoothed by
 # process-signature-photo.py (black on transparent). Use this for all
 # generated filings that need a signature affixed rather than a typed
 # name. Do not use the older cropped pen asset under

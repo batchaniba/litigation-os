@@ -6,7 +6,7 @@ top canvas, JPEG ringing, thin aliased strokes). This script:
 
   1. crops to the ink
   2. upscales 12× (LANCZOS) so the PDF stamp downsamples instead of upsamples
-  3. closes gaps, dilates for stroke weight (prominence)
+  3. closes tiny JPEG gaps without thickening the stroke
   4. Gaussian-blurs then re-thresholds a solid core so 12× stair-steps round
      off, keeping a short alpha fringe for PDF downsampling
   5. writes black-on-transparent RGBA
@@ -39,12 +39,10 @@ UPLOAD = Path(
 INK_MAX = 210  # grayscale; below this is treated as ink
 CROP_PAD = 6
 SCALE = 12
-DILATE_A = 7  # MaxFilter size at hi-res (odd)
-DILATE_B = 3
-CLOSE_SIZE = 3
-BLUR = 5.0
-CORE_T = 140  # blur luminance at/above this becomes solid ink
-ALPHA_FLOOR = 18  # below this, treat as background
+CLOSE_SIZE = 3  # morphological close only; do not dilate (keeps source stroke weight)
+BLUR = 3.0
+CORE_T = 190  # blur luminance at/above this becomes solid ink
+ALPHA_FLOOR = 22  # below this, treat as background
 TRIM_PAD = 12
 
 
@@ -80,10 +78,7 @@ def _mask(hi: Image.Image) -> Image.Image:
     closed = core.filter(ImageFilter.MaxFilter(CLOSE_SIZE)).filter(
         ImageFilter.MinFilter(CLOSE_SIZE)
     )
-    bold = closed.filter(ImageFilter.MaxFilter(DILATE_A)).filter(
-        ImageFilter.MaxFilter(DILATE_B)
-    )
-    return bold.filter(ImageFilter.GaussianBlur(radius=BLUR))
+    return closed.filter(ImageFilter.GaussianBlur(radius=BLUR))
 
 
 def _to_rgba(alpha_img: Image.Image) -> Image.Image:
