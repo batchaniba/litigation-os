@@ -254,7 +254,7 @@ def build_proof_of_service(path: Path | str, fields: ProofOfServiceFields) -> Pa
 
     # Footer: declaration, then clear air for the signature stamp, then the line.
     sig_width = 200.0
-    sig_height = sig_width * SIGNATURE_ASPECT  # ~30 pt at current aspect
+    sig_height = sig_width * SIGNATURE_ASPECT  # native aspect × 1.15 upward stretch
     gap_decl_to_sig = 32.0  # keep loops clear of the declaration
     name_below = 14.0
     footer_pad = 16.0  # clearance from typed name down to the bottom border
@@ -309,7 +309,7 @@ def build_proof_of_service(path: Path | str, fields: ProofOfServiceFields) -> Pa
                 width=sig_width,
                 height=sig_height,
                 mask="auto",
-                preserveAspectRatio=True,
+                preserveAspectRatio=False,
             )
         except Exception as exc:  # noqa: BLE001
             print(f"warning: could not stamp signature: {exc}", file=sys.stderr)
