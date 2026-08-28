@@ -1,0 +1,79 @@
+Matter 20 — CHP demurrer (August 28, 2026). Hearing held. Format LOCKED.
+
+Bold line = do not say. Regular type under it = say it.
+Canonical blank: .claude/skills/hearing-script/TEMPLATE.md
+Worked example: .claude/skills/hearing-script/SKILL.md
+
+Appear at **10:30 a.m.**, not 9:00. Hon. Jenna M. Whitman, Dept. 25. Zoom **161 8066 1142 / 5805**.
+
+The tentative already **overrules** counts 1 and 4 and **kills** counts 2 and 3 without leave. Play: submit on 1 and 4. Do not relitigate 2 and 3 unless the Court asks. Do not ask the Court, on demurrer, to order Form B signed.
+
+---
+
+**Opening**
+
+Good morning, Your Honor. Brendan Newanforbi, Petitioner, appearing for myself.
+
+I submit on the Court's tentative as to the first and fourth causes of action, and I ask the Court to adopt it. The tentative is correct that this is a classic factual dispute that cannot be resolved on demurrer. Penal Code section 679.10, subdivision (g)(1), uses the word "shall": a certifying official shall certify victim helpfulness on Form I-918 Supplement B when the victim was a victim of qualifying criminal activity and has been helpful. Whether those conditions are met turns on disputed facts. That is a merits question, not a pleading question.
+
+I am not asking the Court today to order the Form B signed. I am asking the Court to overrule the demurrer on counts one and four so the Petition can proceed to an answer and a hearing on the merits.
+
+---
+
+**If the Attorney General contests count one**
+
+The AG wants the dashcam, the empty can, and the PAS refusal treated as probable cause as a matter of law. The tentative already rejects that.
+
+The Court must take the pleaded facts as true (Blank v. Kirwan (1985) 39 Cal.3d 311, 318). Exhibit 5: no odor, no slurred speech, no confusion. Exhibit 6: the arrest report says otherwise. Exhibit 7: CHP's own Penal Code section 851.6 certificate, November 5, 2024 — detention only, insufficient grounds for a complaint. No charges were filed. Those are CHP's documents. They create a conflict. They do not knock the Petition out.
+
+The tentative cites People v. Thompson (2006) 38 Cal.4th 811, then holds a finder of fact could still find probable cause lacking (People v. Wolterman (1992) 11 Cal.App.4th Supp. 15; Espinoza v. Shiomoto (2017) 10 Cal.App.5th 85). An empty can in a parked car, and a declined PAS the officer said I was not required to take, do not as a matter of law establish DUI.
+
+I do not have to prove false imprisonment today. The Petition alleges it. Section 679.10 does not require a charge or a conviction.
+
+---
+
+**If they say certification is "discretionary"**
+
+Mandamus cannot compel a particular exercise of discretion — I said that in the opposition — but section 679.10(g)(1) says "shall certify" when the two conditions are met. Whether they are met is the factual dispute the tentative identifies. Count one should survive so that question can be tried.
+
+---
+
+**If the Attorney General contests count four**
+
+Count four is Code of Civil Procedure section 1060. It asks the Court to declare the parties' rights under Penal Code section 679.10. It does not ask the Court to declare that the November 1, 2024 stop was qualifying criminal activity. Paragraph 94 of the Petition says that expressly.
+
+Counsel calls the claim duplicative and retrospective. The tentative already answers that. The claim may later become duplicative of the surviving first cause of action. The Court cannot make that determination on demurrer. I may plead cumulative theories, even inconsistent ones. There is no election of remedies at the pleading stage.
+
+Count four is not a rerun of counts two and three. One of the live controversies is Penal Code section 679.10, subdivision (k): whether the absence of charges or a prosecution is a legitimate basis for denial. That question travels with count one. That is prospective. Griset held that declaratory relief was resolved after the writ claims were adjudicated. We are at demurrer. Griset does not require dismissal now.
+
+---
+
+**Individual respondents**
+
+Their joinders rise and fall with CHP on counts 1 and 4. Serrato signed the April 20, 2026 denial. Paul acknowledged the request. Dutra was the assigned investigator. Each is alleged, in the statute's words, to be a certifying official.
+
+---
+
+**If the Court finds Paul or Dutra thin**
+
+Your Honor, if the allegation is thin as to Lieutenant Paul or Sergeant Dutra, I ask leave to amend, not dismissal without leave.
+
+---
+
+**If the Court asks whether their demurrers are on calendar**
+
+The parties stipulated to advance October 16 and October 23 to today. That stipulation has been filed. It is not yet entered. I am prepared to argue the joinders with CHP's demurrer. I ask that they not be split onto a later calendar.
+
+---
+
+**Only if asked about counts 2 and 3**
+
+Your Honor, I submit on the tentative as to the second and third causes of action so the Court can reach the surviving claim. I will not belabor them.
+
+---
+
+**Close**
+
+Your Honor, I ask the Court to adopt the tentative: overrule the demurrer as to the first and fourth causes of action, including as to the individual respondents on those claims, and set a deadline for an answer. The case management conference is September 2. I am prepared to proceed.
+
+Thank you.
