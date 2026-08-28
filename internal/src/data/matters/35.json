@@ -4,8 +4,8 @@
   "case_no": "26CV501995",
   "court": "Santa Clara Sup. Ct. (Downtown / First Street)",
   "claims": "Unruh Civil Rights Act (Civ. Code §§51, 51.5, 52); False Imprisonment; Negligent Training and Supervision",
-  "status": "Clerk-accepted Aug. 26, 2026 as No. 26CV501995 (Hon. Vince Parrett, Dept. 16). Summons issued. First CMC Feb. 11, 2027. Serve both Ross entities (Complaint, Summons, ADR Information Sheet, CV-5012) and file POS-010 within 60 days of filing (~Oct. 25, 2026).",
-  "status_label": "Filed — 26CV501995; CMC Feb 11 2027 (Parrett)",
+  "status": "Clerk-accepted Aug. 26, 2026 as No. 26CV501995 (Hon. Vince Parrett, Dept. 16). Summons issued. First CMC Feb. 11, 2027. CT Corporation private-process-server packet ready for Ross Stores, Inc. and Ross Dress for Less, Inc. — serve by ~Oct. 25, 2026.",
+  "status_label": "Filed — serve both Ross entities via CT Corp (~Oct 25)",
   "lifecycle": "active",
   "proceeding": "state_civil",
   "phase": "service",
@@ -56,6 +56,26 @@
     "Clerk-returned conformed packet — Case No. 26CV501995 (Complaint, CM-010, issued Summons, stamped CV-5012; Env. #24948831)"
   ],
   "documents": [
+    {
+      "path": "/documents/matter-35/Ross_CT_Corp_Service_Packet_court_docs_only.pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-35/Email Draft - Process Server CT Corporation Service (Ross Stores Inc and Ross Dress for Less Inc) (Aug 27 2026).txt",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-35/Process Server Cover Sheet - CT Corporation Service (Ross Stores Inc and Ross Dress for Less Inc) (Aug 27 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-35/POS-010 Proof of Service of Summons (blank).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-35/CV-5003 ADR Information Sheet - Civil Division (Santa Clara).pdf",
+      "filed": false
+    },
     {
       "path": "/documents/matter-35/Verified Complaint (CONFORMED, Filed Aug 26 2026) - 26CV501995.pdf",
       "filed": true
