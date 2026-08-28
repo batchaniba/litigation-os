@@ -658,10 +658,10 @@
     "case_no": "4:26-cv-05953-ASK",
     "court": "USDC N.D. Cal.",
     "claims": "42 USC 1983: Fourteenth Amendment (Substantive & Procedural Due Process), First Amendment (Retaliation); Declaratory Relief",
-    "status_label": "MTD filed Aug. 26 — Opp due Sep. 2; hearing Sep. 16",
+    "status_label": "CMC Sep. 15 — MTD hearing reset to Sep. 30",
     "lifecycle": "active",
     "proceeding": "federal_civil",
-    "phase": "responsive_deadline",
+    "phase": "mtd_briefing",
     "filed": "June 17, 2026",
     "judge": "Hon. Ajay S. Krishnan, U.S. Magistrate Judge (N.D. Cal.)",
     "cluster": 1,
@@ -685,7 +685,7 @@
       }
     ],
     "evidenceCount": 12,
-    "documentCount": 37
+    "documentCount": 38
   },
   {
     "number": 25,

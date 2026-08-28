@@ -393,22 +393,11 @@
     "source": "/documents/matter-28/Dkt 11 - Order Regarding Filing Fee IFP and Directing Service (Filed Aug 26 2026).pdf"
   },
   {
-    "date": "Sep. 2, 2026",
-    "event": "Opposition due to Serrato MTD / Motion to Strike (Civil L.R. 7-3(a) — 14 days before Sep. 16 hearing). Draft Opposition v4 prepared (but-for causation / Perry restore / TOA sync / leave-to-amend hedges). — Newanforbi v. Serrato (4:26-cv-05953-ASK).",
-    "source": "/documents/matter-24/Opposition to Serrato MTD FAC and Strike v4 (Sep 2 2026).docx",
+    "date": "Sep. 30, 2026",
+    "event": "Hearing on Defendant Serrato's Motion to Dismiss FAC (Dkt. 18) — 1:30 p.m., Mag. Ajay S. Krishnan, Oakland Courtroom 4, 3rd Floor — Newanforbi v. Serrato (4:26-cv-05953-ASK). Reset from Sep. 16 by Clerk's Notice Dkt. 21 (filed Aug. 28) because the motion was noticed on less than 35 days (Civil L.R. 7-2(a)).",
+    "source": "/documents/matter-24/Clerk's Notice Resetting Hearing on Motion to Dismiss (Dkt 21, Filed Aug 28 2026).pdf",
     "upcoming": true,
     "actor": "you",
-    "type": "deadline",
-    "matters": [
-      24
-    ]
-  },
-  {
-    "date": "Sep. 16, 2026",
-    "event": "Hearing on Defendant Serrato's Motion to Dismiss FAC and/or Motion to Strike — 1:30 p.m., Mag. Ajay S. Krishnan — Newanforbi v. Serrato (4:26-cv-05953-ASK). Note: noticed with only 21 days; Civil L.R. 7-2(a) requires 35.",
-    "source": "/documents/matter-24/Defendant Serrato Motion to Dismiss FAC and Strike (Aug 26 2026).pdf",
-    "upcoming": true,
-    "actor": "agency",
     "type": "hearing",
     "matters": [
       24
