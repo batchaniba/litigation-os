@@ -1,6 +1,6 @@
 {
-  "round": "2026-08-09 Round 4 \u2014 portfolio P0 (batches A\u2013D; LACW WL correction); Round 5 multisource (CourtListener + CAP); Round 5b Matter 28 full funnel; Round 6 spot-check of the Matter 33 conformed complaint (3:26-cv-08272-LJC, Dkt. 1) page-43 immunity sentence; Round 7 authorities cited in the Serrato IFP screening order (Matter 24, Dkt. 5) after OCR made that scan searchable; Round 8 \u2014 OCR tranche (16 plaintiff filings + court orders: Matters 5/12/15/25/26/33, Barocio opinion); Round 9 \u2014 Matter 24 Serrato Opp v4 final citation/quotation verification pass (2026-08-27)",
-  "method": "Round 4: WebSearch after Richardson(+) / Leman(\u2212) controls. Round 5: CourtListener /api/rest/v4/search/ + CAP static.case.law for controls/high-risk. Round 5b: all Matter 28 indexed authorities through lookup-citations.py --matter 28 (\u2192 citation_lookup_matter28.json). Justia Cloudflare-blocked; Scholar unreliable; api.case.law JSON and CL citation-lookup need auth. Existence FOUND does not clear prior MISCHARACTERIZED/MISCITED proposition problems. Table-page F.3d pins can host multiple dispositions \u2014 do not treat first CL hit as unique. Round 7: the June 29, 2026 Serrato IFP/screening order was an image-only scan contributing nothing to the index until internal/scripts/ocr-text-layer.py added a text layer; its authorities were then probed through lookup-citations.py (\u2192 citation_lookup_serrato_order.json) behind the same Richardson(+) / Leman(\u2212) controls. These are a court's own citations, so they carry role court_order and never enter the plaintiff-only P0/P1 queues. Round 8: after ocr-text-layer.py on the 16-document plaintiff_filing/court_order tranche, probed new P0 Matter 12/15 authorities (citation_lookup_matter12_p0.json) and Barocio screening-order authorities (citation_lookup_barocio_order.json). McCorkle manually confirmed on CourtListener when CAP lacked cal2d/70. Round 9: Matter 24 Opposition v4 \u2014 npm citations:index + citations:lookup:matter --matter 24 (\u2192 citation_lookup_matter24.json); quote needles checked against CAP static.case.law HTML (Whittlestone/Lopez/Noll/Perry/Twombly/Iqbal/Wade/Knievel/Erickson/Ford) and CA9 PDF (Capp); fixed Garity miscitation, Whittlestone non-opinion paraphrase, Perry/Twombly wording, and removed unused Lewis/Shanks TOA entries; Bureerong manually FOUND on CL+CAP.",
+  "round": "2026-08-09 Round 4 \u2014 portfolio P0 (batches A\u2013D; LACW WL correction); Round 5 multisource (CourtListener + CAP); Round 5b Matter 28 full funnel; Round 6 spot-check of the Matter 33 conformed complaint (3:26-cv-08272-LJC, Dkt. 1) page-43 immunity sentence; Round 7 authorities cited in the Serrato IFP screening order (Matter 24, Dkt. 5) after OCR made that scan searchable; Round 8 \u2014 OCR tranche (16 plaintiff filings + court orders: Matters 5/12/15/25/26/33, Barocio opinion); Round 9 \u2014 Matter 24 Serrato Opp v4 final citation/quotation verification pass (2026-08-27); Round 10 \u2014 Matter 26 hybrid UPS MTD opposition (Claude structure + Cursor caution), 2026-08-28",
+  "method": "Round 4: WebSearch after Richardson(+) / Leman(\u2212) controls. Round 5: CourtListener /api/rest/v4/search/ + CAP static.case.law for controls/high-risk. Round 5b: all Matter 28 indexed authorities through lookup-citations.py --matter 28 (\u2192 citation_lookup_matter28.json). Justia Cloudflare-blocked; Scholar unreliable; api.case.law JSON and CL citation-lookup need auth. Existence FOUND does not clear prior MISCHARACTERIZED/MISCITED proposition problems. Table-page F.3d pins can host multiple dispositions \u2014 do not treat first CL hit as unique. Round 7: the June 29, 2026 Serrato IFP/screening order was an image-only scan contributing nothing to the index until internal/scripts/ocr-text-layer.py added a text layer; its authorities were then probed through lookup-citations.py (\u2192 citation_lookup_serrato_order.json) behind the same Richardson(+) / Leman(\u2212) controls. These are a court's own citations, so they carry role court_order and never enter the plaintiff-only P0/P1 queues. Round 8: after ocr-text-layer.py on the 16-document plaintiff_filing/court_order tranche, probed new P0 Matter 12/15 authorities (citation_lookup_matter12_p0.json) and Barocio screening-order authorities (citation_lookup_barocio_order.json). McCorkle manually confirmed on CourtListener when CAP lacked cal2d/70. Round 9: Matter 24 Opposition v4 \u2014 npm citations:index + citations:lookup:matter --matter 24 (\u2192 citation_lookup_matter24.json); quote needles checked against CAP static.case.law HTML (Whittlestone/Lopez/Noll/Perry/Twombly/Iqbal/Wade/Knievel/Erickson/Ford) and CA9 PDF (Capp); fixed Garity miscitation, Whittlestone non-opinion paraphrase, Perry/Twombly wording, and removed unused Lewis/Shanks TOA entries; Bureerong manually FOUND on CL+CAP. Round 10: Matter 26 hybrid opposition \u2014 npm citations:index + citations:lookup:matter --matter 26 (\u2192 citation_lookup_matter26.json); Cal. App. 5th pins for Williams (40 Cal. App. 5th 280) and Quinn (121 Cal. App. 5th 1124) confirmed by direct CourtListener search when the reporter probe missed (CAP static lacks those volumes). Mendoza quotes checked against the published opinion (anti-SLAPP; 1658-59). Cel-Tech 183 quote is UPS's own.",
   "controls": {
     "positive": {
       "citation": "Richardson v. McKnight, 521 U.S. 399 (1997)",
@@ -2536,6 +2536,126 @@
       ],
       "matter": 24,
       "round": "9-matter24-opp-quote-pass"
+    },
+    {
+      "citation": "United States v. Ritchie, 342 F. 3d 903",
+      "status": "VERIFIED",
+      "notes": "Matter 26 hybrid UPS opposition (2026-08-28): lookup consensus=FOUND; matched=United States v. Ritchie. Incorporation-by-reference: document may be considered if plaintiff refers extensively to it or it forms the basis of the claim.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/783930/united-states-v-ritchie/"
+      ],
+      "matter": 26,
+      "round": "10-matter26-hybrid-opp"
+    },
+    {
+      "citation": "People v. Pieters, 52 Cal. 3d 894 (1991)",
+      "status": "VERIFIED",
+      "notes": "Matter 26 hybrid UPS opposition (2026-08-28): lookup consensus=FOUND; matched=People v. Pieters. Quoted for the purpose-of-the-law statutory-construction canon at 52 Cal. 3d at 898.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/1297740/people-v-pieters/"
+      ],
+      "matter": 26,
+      "round": "10-matter26-hybrid-opp"
+    },
+    {
+      "citation": "Cel-Tech Commc'ns, Inc. v. Los Angeles Cellular Tel. Co, 20 Cal. 4th 163 (1999)",
+      "status": "VERIFIED",
+      "notes": "Matter 26 hybrid UPS opposition (2026-08-28): lookup consensus=FOUND; matched=Cel-Tech Communications, Inc. v. Los Angeles Cellular Telephone Co. Quote at 183 ('difference between (1) not making an activity unlawful, and (2) making that activity lawful') is UPS's own quotation, turned against the 432.7(n) safe-harbor theory. Unlawful-prong borrow is 20 Cal. 4th at 180.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/1316039/cel-tech-communications-inc-v-los-angeles-cellular-telephone-co/"
+      ],
+      "matter": 26,
+      "round": "10-matter26-hybrid-opp"
+    },
+    {
+      "citation": "Dent v. Nat'l Football League, 902 F. 3d 1109",
+      "status": "VERIFIED",
+      "notes": "Matter 26 hybrid UPS opposition (2026-08-28): lookup consensus=FOUND; matched=Dent v. Nat'l Football League. Cited for the proposition that negligence per se is a doctrine, not an independent cause of action (902 F.3d at 1117).",
+      "sources": [
+        "https://www.courtlistener.com/opinion/4530820/dent-v-national-football-league/"
+      ],
+      "matter": 26,
+      "round": "10-matter26-hybrid-opp"
+    },
+    {
+      "citation": "Hill v. Nat'l Collegiate Athletic Ass'n, 7 Cal. 4th 1 (1994)",
+      "status": "VERIFIED",
+      "notes": "Matter 26 hybrid UPS opposition (2026-08-28): lookup consensus=FOUND; matched=Hill v. National Collegiate Athletic Assn. California constitutional privacy elements at 7 Cal. 4th at 35-40.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/1297878/hill-v-national-collegiate-athletic-assn/"
+      ],
+      "matter": 26,
+      "round": "10-matter26-hybrid-opp"
+    },
+    {
+      "citation": "In Mendoza v. ADP Screening, 182 Cal. App. 4th 1644 (2010)",
+      "status": "VERIFIED",
+      "notes": "Matter 26 hybrid UPS opposition (2026-08-28): indexer captured the running text 'In Mendoza v. ADP Screening...'; lookup consensus=FOUND; matched=Mendoza v. ADP Screening & Selection Services, Inc., 182 Cal. App. 4th 1644 (B214653, Bigelow, P.J., Mar. 23, 2010). Anti-SLAPP probability-of-prevailing analysis. Opinion: statutory liability 'should be limited to employers who \"use\" information disclosed on the MLW as a basis for an employment decision'; Legislature did not intend liability for businesses who 'merely reproduce or republish such information, without actually acting on the information'; 'His cause of action, if any, lies against his prospective employer, and not SASS.' Pins 1658-59. Not treated as a merits holding that section 290.46 'targets' decisionmakers as such.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/2276792/mendoza-v-adp-screening-selection-services-inc/"
+      ],
+      "matter": 26,
+      "round": "10-matter26-hybrid-opp"
+    },
+    {
+      "citation": "Mendoza v. ADP Screening, 182 Cal.App. 4th 1644 (2010)",
+      "status": "VERIFIED",
+      "notes": "Same Mendoza opinion as the hybrid-opposition overlay. Existence FOUND on CourtListener (182 Cal. App. 4th 1644). Anti-SLAPP employer-vs-screener discussion; do not overclaim as a merits targeting holding.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/2276792/mendoza-v-adp-screening-selection-services-inc/"
+      ],
+      "matter": 26,
+      "round": "10-matter26-hybrid-opp"
+    },
+    {
+      "citation": "Manzarek v. St. Paul Fire, 519 F. 3d 1025",
+      "status": "VERIFIED",
+      "notes": "Matter 26 hybrid UPS opposition (2026-08-28): lookup consensus=FOUND; matched=Manzarek v. St. Paul Fire & Marine Insurance. Rule 12(b)(6) accept-as-true / light-most-favorable standard at 519 F.3d at 1031.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/1450901/raymond-manzarek-v-st-paul-fire-marine-insurance-company/"
+      ],
+      "matter": 26,
+      "round": "10-matter26-hybrid-opp"
+    },
+    {
+      "citation": "Podolsky v. First Healthcare Corp, 50 Cal. App. 4th 632 (1996)",
+      "status": "VERIFIED",
+      "notes": "Matter 26 hybrid UPS opposition (2026-08-28): lookup consensus=FOUND; matched=Podolsky v. First Healthcare Corp. Cited as UPS's own unfair-prong authority (Mot. 10:5) for practices that offend established public policy.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/2261606/podolsky-v-first-healthcare-corp/"
+      ],
+      "matter": 26,
+      "round": "10-matter26-hybrid-opp"
+    },
+    {
+      "citation": "Quinn v. Coulton, 121 Cal. App. 5th 1124 (2026)",
+      "status": "VERIFIED",
+      "notes": "Matter 26 hybrid UPS opposition (2026-08-28): lookup-citations.py reporter probe returned NOT_FOUND (Cal. App. 5th vol. 121 not on CAP static). Direct CourtListener search FOUND: Quinn v. Coulton, filed July 20, 2026, A172217, California Court of Appeal. Cited only as UPS's own authority that negligence per se is an evidentiary presumption, not a freestanding claim. It is a retaining-wall / Civ. Code section 832 case; Dent remains the primary cite.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/10933020/quinn-v-coulton/"
+      ],
+      "matter": 26,
+      "round": "10-matter26-hybrid-opp"
+    },
+    {
+      "citation": "Swartz v. KPMG LLP, 476 F. 3d 756",
+      "status": "VERIFIED",
+      "notes": "Matter 26 hybrid UPS opposition (2026-08-28): lookup consensus=FOUND; matched=Swartz v. KPMG LLP. 12(b)(6) materials limited to pleadings, attached exhibits, and judicially noticeable matters (476 F.3d at 763).",
+      "sources": [
+        "https://www.courtlistener.com/opinion/1450002/swartz-v-kpmg-llp/"
+      ],
+      "matter": 26,
+      "round": "10-matter26-hybrid-opp"
+    },
+    {
+      "citation": "Williams v. Sacramento River Cats Baseball Club, LLC, 40 Cal. App. 5th 280 (2019)",
+      "status": "VERIFIED",
+      "notes": "Matter 26 hybrid UPS opposition (2026-08-28): lookup-citations.py reporter probe returned NOT_FOUND (Cal. App. 5th matching). Direct CourtListener search FOUND: Williams v. Sacramento River Cats Baseball Club, LLC, filed Sept. 24, 2019, C086487. Tameny duty of care requires a prior employment relationship; cited for conceding Count II as currently pleaded.",
+      "sources": [
+        "https://www.courtlistener.com/opinion/4663898/williams-v-sacramento-river-cats-baseball-club-llc/"
+      ],
+      "matter": 26,
+      "round": "10-matter26-hybrid-opp"
     }
   ],
   "multisourceConfirmation": {

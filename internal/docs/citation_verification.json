@@ -38,22 +38,22 @@
       }
     }
   },
-  "corpusAuthorities": 964,
+  "corpusAuthorities": 967,
   "statusCounts": {
-    "UNVERIFIED": 536,
-    "VERIFIED": 389,
+    "UNVERIFIED": 520,
+    "VERIFIED": 408,
     "MISCHARACTERIZED": 6,
     "NOT_FOUND": 6,
     "MISCITED": 27
   },
   "queue": {
-    "plaintiffOnlyUnverified": 69,
+    "plaintiffOnlyUnverified": 68,
     "plaintiffOnlyBad": 28
   },
   "rounds": {
-    "loaded": "2026-08-09 Round 4 \u2014 portfolio P0 (batches A\u2013D; LACW WL correction); Round 5 multisource (CourtListener + CAP); Round 5b Matter 28 full funnel; Round 6 spot-check of the Matter 33 conformed complaint (3:26-cv-08272-LJC, Dkt. 1) page-43 immunity sentence; Round 7 authorities cited in the Serrato IFP screening order (Matter 24, Dkt. 5) after OCR made that scan searchable; Round 8 \u2014 OCR tranche (16 plaintiff filings + court orders: Matters 5/12/15/25/26/33, Barocio opinion); Round 9 \u2014 Matter 24 Serrato Opp v4 final citation/quotation verification pass (2026-08-27)",
-    "resultCount": 305,
-    "method": "Round 4: WebSearch after Richardson(+) / Leman(\u2212) controls. Round 5: CourtListener /api/rest/v4/search/ + CAP static.case.law for controls/high-risk. Round 5b: all Matter 28 indexed authorities through lookup-citations.py --matter 28 (\u2192 citation_lookup_matter28.json). Justia Cloudflare-blocked; Scholar unreliable; api.case.law JSON and CL citation-lookup need auth. Existence FOUND does not clear prior MISCHARACTERIZED/MISCITED proposition problems. Table-page F.3d pins can host multiple dispositions \u2014 do not treat first CL hit as unique. Round 7: the June 29, 2026 Serrato IFP/screening order was an image-only scan contributing nothing to the index until internal/scripts/ocr-text-layer.py added a text layer; its authorities were then probed through lookup-citations.py (\u2192 citation_lookup_serrato_order.json) behind the same Richardson(+) / Leman(\u2212) controls. These are a court's own citations, so they carry role court_order and never enter the plaintiff-only P0/P1 queues. Round 8: after ocr-text-layer.py on the 16-document plaintiff_filing/court_order tranche, probed new P0 Matter 12/15 authorities (citation_lookup_matter12_p0.json) and Barocio screening-order authorities (citation_lookup_barocio_order.json). McCorkle manually confirmed on CourtListener when CAP lacked cal2d/70. Round 9: Matter 24 Opposition v4 \u2014 npm citations:index + citations:lookup:matter --matter 24 (\u2192 citation_lookup_matter24.json); quote needles checked against CAP static.case.law HTML (Whittlestone/Lopez/Noll/Perry/Twombly/Iqbal/Wade/Knievel/Erickson/Ford) and CA9 PDF (Capp); fixed Garity miscitation, Whittlestone non-opinion paraphrase, Perry/Twombly wording, and removed unused Lewis/Shanks TOA entries; Bureerong manually FOUND on CL+CAP."
+    "loaded": "2026-08-09 Round 4 \u2014 portfolio P0 (batches A\u2013D; LACW WL correction); Round 5 multisource (CourtListener + CAP); Round 5b Matter 28 full funnel; Round 6 spot-check of the Matter 33 conformed complaint (3:26-cv-08272-LJC, Dkt. 1) page-43 immunity sentence; Round 7 authorities cited in the Serrato IFP screening order (Matter 24, Dkt. 5) after OCR made that scan searchable; Round 8 \u2014 OCR tranche (16 plaintiff filings + court orders: Matters 5/12/15/25/26/33, Barocio opinion); Round 9 \u2014 Matter 24 Serrato Opp v4 final citation/quotation verification pass (2026-08-27); Round 10 \u2014 Matter 26 hybrid UPS MTD opposition (Claude structure + Cursor caution), 2026-08-28",
+    "resultCount": 317,
+    "method": "Round 4: WebSearch after Richardson(+) / Leman(\u2212) controls. Round 5: CourtListener /api/rest/v4/search/ + CAP static.case.law for controls/high-risk. Round 5b: all Matter 28 indexed authorities through lookup-citations.py --matter 28 (\u2192 citation_lookup_matter28.json). Justia Cloudflare-blocked; Scholar unreliable; api.case.law JSON and CL citation-lookup need auth. Existence FOUND does not clear prior MISCHARACTERIZED/MISCITED proposition problems. Table-page F.3d pins can host multiple dispositions \u2014 do not treat first CL hit as unique. Round 7: the June 29, 2026 Serrato IFP/screening order was an image-only scan contributing nothing to the index until internal/scripts/ocr-text-layer.py added a text layer; its authorities were then probed through lookup-citations.py (\u2192 citation_lookup_serrato_order.json) behind the same Richardson(+) / Leman(\u2212) controls. These are a court's own citations, so they carry role court_order and never enter the plaintiff-only P0/P1 queues. Round 8: after ocr-text-layer.py on the 16-document plaintiff_filing/court_order tranche, probed new P0 Matter 12/15 authorities (citation_lookup_matter12_p0.json) and Barocio screening-order authorities (citation_lookup_barocio_order.json). McCorkle manually confirmed on CourtListener when CAP lacked cal2d/70. Round 9: Matter 24 Opposition v4 \u2014 npm citations:index + citations:lookup:matter --matter 24 (\u2192 citation_lookup_matter24.json); quote needles checked against CAP static.case.law HTML (Whittlestone/Lopez/Noll/Perry/Twombly/Iqbal/Wade/Knievel/Erickson/Ford) and CA9 PDF (Capp); fixed Garity miscitation, Whittlestone non-opinion paraphrase, Perry/Twombly wording, and removed unused Lewis/Shanks TOA entries; Bureerong manually FOUND on CL+CAP. Round 10: Matter 26 hybrid opposition \u2014 npm citations:index + citations:lookup:matter --matter 26 (\u2192 citation_lookup_matter26.json); Cal. App. 5th pins for Williams (40 Cal. App. 5th 280) and Quinn (121 Cal. App. 5th 1124) confirmed by direct CourtListener search when the reporter probe missed (CAP static lacks those volumes). Mendoza quotes checked against the published opinion (anti-SLAPP; 1658-59). Cel-Tech 183 quote is UPS's own."
   },
   "knownFabricated": [
     {
@@ -1619,45 +1619,6 @@
           "page": 2,
           "role": "plaintiff_filing",
           "matter": 33
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "Mendoza v. ADP Screening, 182 Cal.App. 4th 1644 (2010)",
-      "kind": "authority",
-      "occurrenceCount": 3,
-      "matters": [
-        25,
-        26
-      ],
-      "roles": [
-        "other",
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "andling positions do not qualify, and nothing in FedEx's adverse action materials purports to invoke the exception. The California Court of Appeal confirmed in Mendoza v. ADP Screening & Selection Services, Inc. (2010) 182 Cal.App.4th 1644 that section 290.46's civil-liability pr",
-      "locations": [
-        {
-          "document": "/documents/matter-25/FedEx Demand Packet Newanforbi.pdf",
-          "page": 2,
-          "role": "other",
-          "matter": 25
-        },
-        {
-          "document": "/documents/matter-26/UPS Demand Packet Newanforbi.pdf",
-          "page": 2,
-          "role": "other",
-          "matter": 26
-        },
-        {
-          "document": "/documents/matter-26/opposition-pack-10/05_UPS_Demand_Packet.pdf",
-          "page": 2,
-          "role": "plaintiff_filing",
-          "matter": 26
         }
       ],
       "priority": "P0_plaintiff_only_unverified"
@@ -7558,6 +7519,77 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Khoja v. Orexigen Therapeutics, Inc, 899 F. 3d 988",
+      "kind": "authority",
+      "occurrenceCount": 9,
+      "matters": [
+        24,
+        26,
+        29
+      ],
+      "roles": [
+        "court_order",
+        "opposing_filing",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Matter 24 Opp v4 existence probe 2026-08-27: consensus=FOUND; matched=Khoja v. Orexigen Therapeutics, Inc.",
+      "sampleContext": "e v. Pliler, 627 F.3d 338 (9th Cir. 2010) Hope v. Pelzer, 536 U.S. 730 (2002) Kay v. Ehrler, 499 U.S. 432 (1991) Keates v. Koile, 883 F.3d 1228 (9th Cir. 2018) Khoja v. Orexigen Therapeutics, Inc., 899 F.3d 988 (9th Cir. 2018) Knievel v. ESPN, 393 F.3d 1068 (9th Cir. 2005) Lee v.",
+      "locations": [
+        {
+          "document": "/documents/matter-24/Opposition to Serrato MTD FAC and Strike v4 (Sep 2 2026).pdf",
+          "page": 2,
+          "role": "plaintiff_filing",
+          "matter": 24
+        },
+        {
+          "document": "/documents/matter-24/Opposition to Serrato MTD FAC and Strike v4 (Sep 2 2026).pdf",
+          "page": 14,
+          "role": "plaintiff_filing",
+          "matter": 24
+        },
+        {
+          "document": "/documents/matter-24/Opposition to Serrato MTD FAC and Strike v4 - Pleading Paper (Sep 2 2026).pdf",
+          "page": 12,
+          "role": "plaintiff_filing",
+          "matter": 24
+        },
+        {
+          "document": "/documents/matter-24/Opposition to Serrato MTD with Proof of Service by Email (Aug 27 2026).pdf",
+          "page": 12,
+          "role": "plaintiff_filing",
+          "matter": 24
+        },
+        {
+          "document": "/documents/matter-26/Opposition to UPS Rule 12(b)(6) Motion to Dismiss (E.D. Cal. 2-26-cv-02847) (Sep 9 2026).pdf",
+          "page": 12,
+          "role": "opposing_filing",
+          "matter": 26
+        },
+        {
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
+          "page": 3,
+          "role": "plaintiff_filing",
+          "matter": 29
+        },
+        {
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
+          "page": 12,
+          "role": "plaintiff_filing",
+          "matter": 29
+        },
+        {
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 28 - Accurate Background's Reply ISO Motion to Dismiss (Feb 2, 2023).pdf",
+          "page": 6,
+          "role": "opposing_filing",
+          "matter": 29
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "Lee v. City of Los Angeles, 250 F. 3d 668",
       "kind": "authority",
       "occurrenceCount": 9,
@@ -8462,76 +8494,6 @@
       "priority": "P2_joined"
     },
     {
-      "citation": "Khoja v. Orexigen Therapeutics, Inc, 899 F. 3d 988",
-      "kind": "authority",
-      "occurrenceCount": 8,
-      "matters": [
-        24,
-        29
-      ],
-      "roles": [
-        "court_order",
-        "opposing_filing",
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": false,
-      "status": "VERIFIED",
-      "statusSource": "round",
-      "notes": "Matter 24 Opp v4 existence probe 2026-08-27: consensus=FOUND; matched=Khoja v. Orexigen Therapeutics, Inc.",
-      "sampleContext": "e v. Pliler, 627 F.3d 338 (9th Cir. 2010) Hope v. Pelzer, 536 U.S. 730 (2002) Kay v. Ehrler, 499 U.S. 432 (1991) Keates v. Koile, 883 F.3d 1228 (9th Cir. 2018) Khoja v. Orexigen Therapeutics, Inc., 899 F.3d 988 (9th Cir. 2018) Knievel v. ESPN, 393 F.3d 1068 (9th Cir. 2005) Lee v.",
-      "locations": [
-        {
-          "document": "/documents/matter-24/Opposition to Serrato MTD FAC and Strike v4 (Sep 2 2026).pdf",
-          "page": 2,
-          "role": "plaintiff_filing",
-          "matter": 24
-        },
-        {
-          "document": "/documents/matter-24/Opposition to Serrato MTD FAC and Strike v4 (Sep 2 2026).pdf",
-          "page": 14,
-          "role": "plaintiff_filing",
-          "matter": 24
-        },
-        {
-          "document": "/documents/matter-24/Opposition to Serrato MTD FAC and Strike v4 - Pleading Paper (Sep 2 2026).pdf",
-          "page": 12,
-          "role": "plaintiff_filing",
-          "matter": 24
-        },
-        {
-          "document": "/documents/matter-24/Opposition to Serrato MTD with Proof of Service by Email (Aug 27 2026).pdf",
-          "page": 12,
-          "role": "plaintiff_filing",
-          "matter": 24
-        },
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
-          "page": 3,
-          "role": "plaintiff_filing",
-          "matter": 29
-        },
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
-          "page": 12,
-          "role": "plaintiff_filing",
-          "matter": 29
-        },
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 28 - Accurate Background's Reply ISO Motion to Dismiss (Feb 2, 2023).pdf",
-          "page": 6,
-          "role": "opposing_filing",
-          "matter": 29
-        },
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 36 - ORDER GRANTING Motions to Dismiss - Megan's Law, FCRA, UCL Claims Dismissed (May 26, 2023).pdf",
-          "page": 5,
-          "role": "court_order",
-          "matter": 29
-        }
-      ],
-      "priority": "P2_joined"
-    },
-    {
       "citation": "Knievel v. ESPN, 393 F. 3d 1068",
       "kind": "authority",
       "occurrenceCount": 8,
@@ -9194,6 +9156,70 @@
           "page": 17,
           "role": "other",
           "matter": 24
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "United States v. Ritchie, 342 F. 3d 903",
+      "kind": "authority",
+      "occurrenceCount": 7,
+      "matters": [
+        26,
+        29
+      ],
+      "roles": [
+        "court_order",
+        "opposing_filing",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Matter 26 hybrid UPS opposition (2026-08-28): lookup consensus=FOUND; matched=United States v. Ritchie. Incorporation-by-reference: document may be considered if plaintiff refers extensively to it or it forms the basis of the claim.",
+      "sampleContext": "2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 extensively to the document or the document forms the basis of the plaintiff\u2019s claim.\u201d United States v. Ritchie, 342 F.3d 903, 908 (9th Cir. 2003). The allegations in Plaintiff\u2019s Complaint stem from his appl",
+      "locations": [
+        {
+          "document": "/documents/matter-26/Dkt 07 - Motion to Dismiss with Exhibits A-B Only (Filed Aug 26 2026).pdf",
+          "page": 4,
+          "role": "opposing_filing",
+          "matter": 26
+        },
+        {
+          "document": "/documents/matter-26/Dkt 07 - UPS Rule 12(b)(6) Motion to Dismiss with Exhibits Notice Declaration and Certificate of Service (Filed Aug 26 2026).pdf",
+          "page": 4,
+          "role": "opposing_filing",
+          "matter": 26
+        },
+        {
+          "document": "/documents/matter-26/Opposition to UPS Rule 12(b)(6) Motion to Dismiss (E.D. Cal. 2-26-cv-02847) (Sep 9 2026).pdf",
+          "page": 12,
+          "role": "opposing_filing",
+          "matter": 26
+        },
+        {
+          "document": "/documents/matter-26/opposition-pack-10/01_UPS_MTD_Complete_ECF_7_7-1_7-2_7-3.pdf",
+          "page": 4,
+          "role": "plaintiff_filing",
+          "matter": 26
+        },
+        {
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 24-1 - Amazon's Memorandum ISO Motion to Dismiss (Dec 15, 2022).pdf",
+          "page": 12,
+          "role": "opposing_filing",
+          "matter": 29
+        },
+        {
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 24-2 - Amazon's Request for Judicial Notice (Dec 15, 2022).pdf",
+          "page": 3,
+          "role": "plaintiff_filing",
+          "matter": 29
+        },
+        {
+          "document": "/documents/opinions/Newanforbi v California CHP - USDC EDCal - FR Recommending Dismissal Apr 20 2026.pdf",
+          "page": 4,
+          "role": "court_order",
+          "matter": null
         }
       ],
       "priority": "P2_joined"
@@ -10564,6 +10590,58 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "People v. Pieters, 52 Cal. 3d 894 (1991)",
+      "kind": "authority",
+      "occurrenceCount": 5,
+      "matters": [
+        20,
+        26,
+        32
+      ],
+      "roles": [
+        "opposing_filing",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Matter 26 hybrid UPS opposition (2026-08-28): lookup consensus=FOUND; matched=People v. Pieters. Quoted for the purpose-of-the-law statutory-construction canon at 52 Cal. 3d at 898.",
+      "sampleContext": "gh a federal index. \"The fundamental purpose of statutory construction is to ascertain the intent of the lawmakers so as to effectuate the purpose of the law.\" People v. Pieters, 52 Cal. 3d 894, 898 (1991). The California Court of Appeal has already located the prohibition's targ",
+      "locations": [
+        {
+          "document": "/documents/matter-26/Opposition to UPS Rule 12(b)(6) Motion to Dismiss (E.D. Cal. 2-26-cv-02847) (Sep 9 2026).pdf",
+          "page": 7,
+          "role": "opposing_filing",
+          "matter": 26
+        },
+        {
+          "document": "/documents/matter-32/from-20/Alameda Sheriff Service Packet - Eric Dutra (SER-001, FW-003, Opposition-MPA) (Aug 3 2026).pdf",
+          "page": 16,
+          "role": "plaintiff_filing",
+          "matter": 20
+        },
+        {
+          "document": "/documents/matter-32/from-20/Alameda Sheriff Service Packet - G Serrato (SER-001, FW-003, Opposition-MPA) (Aug 3 2026).pdf",
+          "page": 16,
+          "role": "plaintiff_filing",
+          "matter": 20
+        },
+        {
+          "document": "/documents/matter-32/from-20/Alameda Sheriff Service Packet - Gary Paul (SER-001, FW-003, Opposition-MPA) (Aug 3 2026).pdf",
+          "page": 16,
+          "role": "plaintiff_filing",
+          "matter": 20
+        },
+        {
+          "document": "/documents/matter-32/from-20/Opposition-to-Individual-Respondents-Demurrers.pdf",
+          "page": 7,
+          "role": "opposing_filing",
+          "matter": 20
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "Rhodes v. Robinson, 408 F. 3d 559",
       "kind": "authority",
       "occurrenceCount": 5,
@@ -10844,6 +10922,52 @@
           "page": 6,
           "role": "plaintiff_filing",
           "matter": 24
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Cel-Tech Commc\u2019ns, Inc. v. Los Angeles Cellular Tel. Co, 20 Cal. 4th 163 (1999)",
+      "kind": "authority",
+      "occurrenceCount": 4,
+      "matters": [
+        26,
+        29
+      ],
+      "roles": [
+        "court_order",
+        "opposing_filing",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Matter 26 hybrid UPS opposition (2026-08-28): lookup consensus=FOUND; matched=Cel-Tech Communications, Inc. v. Los Angeles Cellular Telephone Co. Quote at 183 ('difference between (1) not making an activity unlawful, and (2) making that activity lawful') is UPS's own quotation, turned against the 432.7(n) safe-harbor theory. Unlawful-prong borrow is 20 Cal. 4th at 180.",
+      "sampleContext": "ed the conduct in question. Courts have said that \u201c[t]here is a difference between (1) not making an activity unlawful, and (2) making that activity lawful.\u201d Cel-Tech Commc\u2019ns, Inc. v. Los Angeles Cellular Tel. Co., 20 Cal. 4th 163, 183 (1999). Here, we are dealing with the latte",
+      "locations": [
+        {
+          "document": "/documents/matter-26/Dkt 07 - Motion to Dismiss with Exhibits A-B Only (Filed Aug 26 2026).pdf",
+          "page": 11,
+          "role": "opposing_filing",
+          "matter": 26
+        },
+        {
+          "document": "/documents/matter-26/Dkt 07 - UPS Rule 12(b)(6) Motion to Dismiss with Exhibits Notice Declaration and Certificate of Service (Filed Aug 26 2026).pdf",
+          "page": 11,
+          "role": "opposing_filing",
+          "matter": 26
+        },
+        {
+          "document": "/documents/matter-26/opposition-pack-10/01_UPS_MTD_Complete_ECF_7_7-1_7-2_7-3.pdf",
+          "page": 11,
+          "role": "plaintiff_filing",
+          "matter": 26
+        },
+        {
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 36 - ORDER GRANTING Motions to Dismiss - Megan's Law, FCRA, UCL Claims Dismissed (May 26, 2023).pdf",
+          "page": 11,
+          "role": "court_order",
+          "matter": 29
         }
       ],
       "priority": "P2_joined"
@@ -12078,6 +12202,44 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Dent v. Nat\u2019l Football League, 902 F. 3d 1109",
+      "kind": "authority",
+      "occurrenceCount": 3,
+      "matters": [
+        26
+      ],
+      "roles": [
+        "opposing_filing",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Matter 26 hybrid UPS opposition (2026-08-28): lookup consensus=FOUND; matched=Dent v. Nat'l Football League. Cited for the proposition that negligence per se is a doctrine, not an independent cause of action (902 F.3d at 1117).",
+      "sampleContext": "cannot establish a cause of action for negligence per se because \u201cunder California law, negligence per se is a doctrine, not an independent cause of action.\u201d Dent v. Nat\u2019l Football League, 902 F.3d 1109. 1117 (9th Cir. 2018) (quoting Quiroz v. Seventh Ave. Ctr., 140 Cal.App.4th 1",
+      "locations": [
+        {
+          "document": "/documents/matter-26/Dkt 07 - Motion to Dismiss with Exhibits A-B Only (Filed Aug 26 2026).pdf",
+          "page": 9,
+          "role": "opposing_filing",
+          "matter": 26
+        },
+        {
+          "document": "/documents/matter-26/Dkt 07 - UPS Rule 12(b)(6) Motion to Dismiss with Exhibits Notice Declaration and Certificate of Service (Filed Aug 26 2026).pdf",
+          "page": 9,
+          "role": "opposing_filing",
+          "matter": 26
+        },
+        {
+          "document": "/documents/matter-26/opposition-pack-10/01_UPS_MTD_Complete_ECF_7_7-1_7-2_7-3.pdf",
+          "page": 9,
+          "role": "plaintiff_filing",
+          "matter": 26
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "Due Process Clause. Greenholtz v. Inmates of Nebraska Penal, 442 U.S. 1 (1979)",
       "kind": "authority",
       "occurrenceCount": 3,
@@ -12344,6 +12506,44 @@
           "page": 54,
           "role": "other",
           "matter": 32
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Hill v. Nat\u2019l Collegiate Athletic Ass\u2019n, 7 Cal. 4th 1",
+      "kind": "authority",
+      "occurrenceCount": 3,
+      "matters": [
+        26
+      ],
+      "roles": [
+        "opposing_filing",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Matter 26 hybrid UPS opposition (2026-08-28): lookup consensus=FOUND; matched=Hill v. National Collegiate Athletic Assn. California constitutional privacy elements at 7 Cal. 4th at 35-40.",
+      "sampleContext": "by the defendant that amounts to a serious invasion of the protected privacy interest.\u201d Saleh v. Nike, Inc., 562 F. Supp. 3d 503, 524 (C.D. Cal. 2021) (citing Hill v. Nat\u2019l Collegiate Athletic Ass\u2019n, 7 Cal. 4th 1, 40, 26 Cal.Rptr.2d 834, 865 P.2d 633 (1994)). Plaintiff cannot est",
+      "locations": [
+        {
+          "document": "/documents/matter-26/Dkt 07 - Motion to Dismiss with Exhibits A-B Only (Filed Aug 26 2026).pdf",
+          "page": 8,
+          "role": "opposing_filing",
+          "matter": 26
+        },
+        {
+          "document": "/documents/matter-26/Dkt 07 - UPS Rule 12(b)(6) Motion to Dismiss with Exhibits Notice Declaration and Certificate of Service (Filed Aug 26 2026).pdf",
+          "page": 8,
+          "role": "opposing_filing",
+          "matter": 26
+        },
+        {
+          "document": "/documents/matter-26/opposition-pack-10/01_UPS_MTD_Complete_ECF_7_7-1_7-2_7-3.pdf",
+          "page": 8,
+          "role": "plaintiff_filing",
+          "matter": 26
         }
       ],
       "priority": "P2_joined"
@@ -12729,6 +12929,82 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Mendoza v. ADP Screening, 182 Cal. App. 4th 1644",
+      "kind": "authority",
+      "occurrenceCount": 3,
+      "matters": [
+        29
+      ],
+      "roles": [
+        "opposing_filing"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Same Mendoza opinion as the hybrid-opposition overlay. Existence FOUND on CourtListener (182 Cal. App. 4th 1644). Anti-SLAPP employer-vs-screener discussion; do not overclaim as a merits targeting holding.",
+      "sampleContext": "o. 14-CV-00424, 2015 WL 5264750 (N.D. Cal. Sept. 9, 2015) ................................................................................................. 3 Mendoza v. ADP Screening & Selection Servs., Inc., 182 Cal. App. 4th 1644 (Cal. Ct. App. 2010) ...........................",
+      "locations": [
+        {
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 23-1 - Accurate Background's Memorandum ISO Motion to Dismiss (Dec 15, 2022).pdf",
+          "page": 4,
+          "role": "opposing_filing",
+          "matter": 29
+        },
+        {
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 23-1 - Accurate Background's Memorandum ISO Motion to Dismiss (Dec 15, 2022).pdf",
+          "page": 15,
+          "role": "opposing_filing",
+          "matter": 29
+        },
+        {
+          "document": "/documents/matter-29/lerma-v-amazon/Dkt 28 - Accurate Background's Reply ISO Motion to Dismiss (Feb 2, 2023).pdf",
+          "page": 7,
+          "role": "opposing_filing",
+          "matter": 29
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Mendoza v. ADP Screening, 182 Cal.App. 4th 1644 (2010)",
+      "kind": "authority",
+      "occurrenceCount": 3,
+      "matters": [
+        25,
+        26
+      ],
+      "roles": [
+        "other",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Same Mendoza opinion as the hybrid-opposition overlay. Existence FOUND on CourtListener (182 Cal. App. 4th 1644). Anti-SLAPP employer-vs-screener discussion; do not overclaim as a merits targeting holding.",
+      "sampleContext": "andling positions do not qualify, and nothing in FedEx's adverse action materials purports to invoke the exception. The California Court of Appeal confirmed in Mendoza v. ADP Screening & Selection Services, Inc. (2010) 182 Cal.App.4th 1644 that section 290.46's civil-liability pr",
+      "locations": [
+        {
+          "document": "/documents/matter-25/FedEx Demand Packet Newanforbi.pdf",
+          "page": 2,
+          "role": "other",
+          "matter": 25
+        },
+        {
+          "document": "/documents/matter-26/UPS Demand Packet Newanforbi.pdf",
+          "page": 2,
+          "role": "other",
+          "matter": 26
+        },
+        {
+          "document": "/documents/matter-26/opposition-pack-10/05_UPS_Demand_Packet.pdf",
+          "page": 2,
+          "role": "plaintiff_filing",
+          "matter": 26
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "Miller v. Gammie, 335 F. 3d 889",
       "kind": "authority",
       "occurrenceCount": 3,
@@ -12915,6 +13191,82 @@
           "page": 46,
           "role": "other",
           "matter": 32
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Podolsky v. First Healthcare Corp, 50 Cal.App. 4th 632",
+      "kind": "authority",
+      "occurrenceCount": 3,
+      "matters": [
+        26
+      ],
+      "roles": [
+        "opposing_filing",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Matter 26 hybrid UPS opposition (2026-08-28): lookup consensus=FOUND; matched=Podolsky v. First Healthcare Corp. Cited as UPS's own unfair-prong authority (Mot. 10:5) for practices that offend established public policy.",
+      "sampleContext": "blic policy or when the practice is immoral, unethical, oppressive, unscrupulous or substantially injurious to consumers.\u201d Khan, 975 F. Supp 2d 1145 (quoting Podolsky v. First Healthcare Corp., 50 Cal.App.4th 632, 647, 58 Cal.Rptr.2d 89 (1996)). The public policy in play here is ",
+      "locations": [
+        {
+          "document": "/documents/matter-26/Dkt 07 - Motion to Dismiss with Exhibits A-B Only (Filed Aug 26 2026).pdf",
+          "page": 11,
+          "role": "opposing_filing",
+          "matter": 26
+        },
+        {
+          "document": "/documents/matter-26/Dkt 07 - UPS Rule 12(b)(6) Motion to Dismiss with Exhibits Notice Declaration and Certificate of Service (Filed Aug 26 2026).pdf",
+          "page": 11,
+          "role": "opposing_filing",
+          "matter": 26
+        },
+        {
+          "document": "/documents/matter-26/opposition-pack-10/01_UPS_MTD_Complete_ECF_7_7-1_7-2_7-3.pdf",
+          "page": 11,
+          "role": "plaintiff_filing",
+          "matter": 26
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Quinn v. Coulton, 121 Cal. App. 5th 1124",
+      "kind": "authority",
+      "occurrenceCount": 3,
+      "matters": [
+        26
+      ],
+      "roles": [
+        "opposing_filing",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Matter 26 hybrid UPS opposition (2026-08-28): lookup-citations.py reporter probe returned NOT_FOUND (Cal. App. 5th vol. 121 not on CAP static). Direct CourtListener search FOUND: Quinn v. Coulton, filed July 20, 2026, A172217, California Court of Appeal. Cited only as UPS's own authority that negligence per se is an evidentiary presumption, not a freestanding claim. It is a retaining-wall / Civ. Code section 832 case; Dent remains the primary cite.",
+      "sampleContext": "006)). The per se doctrine is an evidentiary presumption used to establish only one of the several elements necessary to prove an underlying negligence claim. Quinn v. Coulton, 121 Cal. App. 5th 1124, 346 Cal. Rptr. 3d 320 (2026). So, if Plaintiff seeks to use the per se doctrine",
+      "locations": [
+        {
+          "document": "/documents/matter-26/Dkt 07 - Motion to Dismiss with Exhibits A-B Only (Filed Aug 26 2026).pdf",
+          "page": 9,
+          "role": "opposing_filing",
+          "matter": 26
+        },
+        {
+          "document": "/documents/matter-26/Dkt 07 - UPS Rule 12(b)(6) Motion to Dismiss with Exhibits Notice Declaration and Certificate of Service (Filed Aug 26 2026).pdf",
+          "page": 9,
+          "role": "opposing_filing",
+          "matter": 26
+        },
+        {
+          "document": "/documents/matter-26/opposition-pack-10/01_UPS_MTD_Complete_ECF_7_7-1_7-2_7-3.pdf",
+          "page": 9,
+          "role": "plaintiff_filing",
+          "matter": 26
         }
       ],
       "priority": "P2_joined"
@@ -13335,6 +13687,44 @@
           "page": 9,
           "role": "other",
           "matter": 15
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "See Williams v. Sacramento River Cats Baseball Club, LLC, 40 Cal. App. 5th 280",
+      "kind": "authority",
+      "occurrenceCount": 3,
+      "matters": [
+        26
+      ],
+      "roles": [
+        "opposing_filing",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Matter 26 hybrid UPS opposition (2026-08-28): lookup-citations.py reporter probe returned NOT_FOUND (Cal. App. 5th matching). Direct CourtListener search FOUND: Williams v. Sacramento River Cats Baseball Club, LLC, filed Sept. 24, 2019, C086487. Tameny duty of care requires a prior employment relationship; cited for conceding Count II as currently pleaded.",
+      "sampleContext": "Plaintiff\u2019s claim is that it is simply not true. In fact, California courts have definitively disavowed a failure to hire in violation of public policy claim. See Williams v. Sacramento River Cats Baseball Club, LLC, 40 Cal. App. 5th 280, 253 Cal. Rptr. 3d 129 (2019); see also Ho",
+      "locations": [
+        {
+          "document": "/documents/matter-26/Dkt 07 - Motion to Dismiss with Exhibits A-B Only (Filed Aug 26 2026).pdf",
+          "page": 6,
+          "role": "opposing_filing",
+          "matter": 26
+        },
+        {
+          "document": "/documents/matter-26/Dkt 07 - UPS Rule 12(b)(6) Motion to Dismiss with Exhibits Notice Declaration and Certificate of Service (Filed Aug 26 2026).pdf",
+          "page": 6,
+          "role": "opposing_filing",
+          "matter": 26
+        },
+        {
+          "document": "/documents/matter-26/opposition-pack-10/01_UPS_MTD_Complete_ECF_7_7-1_7-2_7-3.pdf",
+          "page": 6,
+          "role": "plaintiff_filing",
+          "matter": 26
         }
       ],
       "priority": "P2_joined"
@@ -15905,6 +16295,31 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Cel-Tech Commc'ns, Inc. v. Los Angeles Cellular Tel. Co, 20 Cal. 4th 163 (1999)",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        26
+      ],
+      "roles": [
+        "opposing_filing"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Matter 26 hybrid UPS opposition (2026-08-28): lookup consensus=FOUND; matched=Cel-Tech Communications, Inc. v. Los Angeles Cellular Telephone Co. Quote at 183 ('difference between (1) not making an activity unlawful, and (2) making that activity lawful') is UPS's own quotation, turned against the 432.7(n) safe-harbor theory. Unlawful-prong borrow is 20 Cal. 4th at 180.",
+      "sampleContext": "S itself observes in a different part of its brief, \"[t]here is a difference between (1) not making an activity unlawful, and (2) making that activity lawful.\" Cel-Tech Commc'ns, Inc. v. Los Angeles Cellular Tel. Co., 20 Cal. 4th 163, 183 (1999) (quoted at Mot. 10:12-13). UPS's s",
+      "locations": [
+        {
+          "document": "/documents/matter-26/Opposition to UPS Rule 12(b)(6) Motion to Dismiss (E.D. Cal. 2-26-cv-02847) (Sep 9 2026).pdf",
+          "page": 9,
+          "role": "opposing_filing",
+          "matter": 26
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "Cf. Wong Sun v. United States, 371 U.S. 471 (1963)",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -16202,6 +16617,31 @@
           "page": 2,
           "role": "court_order",
           "matter": 18
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Dent v. Nat'l Football League, 902 F. 3d 1109",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        26
+      ],
+      "roles": [
+        "opposing_filing"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Matter 26 hybrid UPS opposition (2026-08-28): lookup consensus=FOUND; matched=Dent v. Nat'l Football League. Cited for the proposition that negligence per se is a doctrine, not an independent cause of action (902 F.3d at 1117).",
+      "sampleContext": "ligence Per Se) Should Be Dismissed With Leave to Amend UPS correctly observes that negligence per se is a doctrine rather than an independent cause of action. Dent v. Nat'l Football League, 902 F.3d 1109, 1117 (9th Cir. 2018). Plaintiff does not dispute that. UPS's own authority",
+      "locations": [
+        {
+          "document": "/documents/matter-26/Opposition to UPS Rule 12(b)(6) Motion to Dismiss (E.D. Cal. 2-26-cv-02847) (Sep 9 2026).pdf",
+          "page": 16,
+          "role": "opposing_filing",
+          "matter": 26
         }
       ],
       "priority": "P2_joined"
@@ -16736,6 +17176,31 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Hill v. Nat'l Collegiate Athletic Ass'n, 7 Cal. 4th 1 (1994)",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        26
+      ],
+      "roles": [
+        "opposing_filing"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Matter 26 hybrid UPS opposition (2026-08-28): lookup consensus=FOUND; matched=Hill v. National Collegiate Athletic Assn. California constitutional privacy elements at 7 Cal. 4th at 35-40.",
+      "sampleContext": "equires (1) a legally protected privacy interest, (2) a reasonable expectation of privacy under the circumstances, and (3) a serious invasion of that interest. Hill v. Nat'l Collegiate Athletic Ass'n, 7 Cal. 4th 1, 35-40 (1994). The privacy interest here is not an interest in sec",
+      "locations": [
+        {
+          "document": "/documents/matter-26/Opposition to UPS Rule 12(b)(6) Motion to Dismiss (E.D. Cal. 2-26-cv-02847) (Sep 9 2026).pdf",
+          "page": 14,
+          "role": "opposing_filing",
+          "matter": 26
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "Holding Key Fact Ace Beverage Co. v. Lockheed Info. Mgmt. Servs, 144 F. 3d 1218",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -16984,6 +17449,31 @@
           "page": 5,
           "role": "other",
           "matter": 28
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "In Mendoza v. ADP Screening, 182 Cal. App. 4th 1644 (2010)",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        26
+      ],
+      "roles": [
+        "opposing_filing"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Matter 26 hybrid UPS opposition (2026-08-28): indexer captured the running text 'In Mendoza v. ADP Screening...'; lookup consensus=FOUND; matched=Mendoza v. ADP Screening & Selection Services, Inc., 182 Cal. App. 4th 1644 (B214653, Bigelow, P.J., Mar. 23, 2010). Anti-SLAPP probability-of-prevailing analysis. Opinion: statutory liability 'should be limited to employers who \"use\" information disclosed on the MLW as a basis for an employment decision'; Legislature did not intend liability for businesses who 'merely reproduce or republish such information, without actually acting on the information'; 'His cause of action, if any, lies against his prospective employer, and not SASS.' Pins 1658-59. Not treated as a merits holding that section 290.46 'targets' decisionmakers as such.",
+      "sampleContext": "the law.\" People v. Pieters, 52 Cal. 3d 894, 898 (1991). The California Court of Appeal has already located the prohibition's target, in an anti-SLAPP posture. In Mendoza v. ADP Screening & Selection Services, Inc., 182 Cal. App. 4th 1644 (2010), a screening company transmitted M",
+      "locations": [
+        {
+          "document": "/documents/matter-26/Opposition to UPS Rule 12(b)(6) Motion to Dismiss (E.D. Cal. 2-26-cv-02847) (Sep 9 2026).pdf",
+          "page": 7,
+          "role": "opposing_filing",
+          "matter": 26
         }
       ],
       "priority": "P2_joined"
@@ -17419,6 +17909,31 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Manzarek v. St. Paul Fire, 519 F. 3d 1025",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        26
+      ],
+      "roles": [
+        "opposing_filing"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Matter 26 hybrid UPS opposition (2026-08-28): lookup consensus=FOUND; matched=Manzarek v. St. Paul Fire & Marine Insurance. Rule 12(b)(6) accept-as-true / light-most-favorable standard at 519 F.3d at 1031.",
+      "sampleContext": "motion the Court must \"accept all factual allegations in the complaint as true and construe the pleadings in the light most favorable to the nonmoving party.\" Manzarek v. St. Paul Fire & Marine Ins. Co., 519 F.3d 1025, 1031 (9th Cir. 2008). A claim is plausible when \"the plaintif",
+      "locations": [
+        {
+          "document": "/documents/matter-26/Opposition to UPS Rule 12(b)(6) Motion to Dismiss (E.D. Cal. 2-26-cv-02847) (Sep 9 2026).pdf",
+          "page": 5,
+          "role": "opposing_filing",
+          "matter": 26
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "Marks v. Minnesota Mining, 187 Cal.App. 3d 1429 (1986)",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -17848,6 +18363,31 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Podolsky v. First Healthcare Corp, 50 Cal. App. 4th 632 (1996)",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        26
+      ],
+      "roles": [
+        "opposing_filing"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Matter 26 hybrid UPS opposition (2026-08-28): lookup consensus=FOUND; matched=Podolsky v. First Healthcare Corp. Cited as UPS's own unfair-prong authority (Mot. 10:5) for practices that offend established public policy.",
+      "sampleContext": "at premise fails, and the borrowed violation stands. (Compl. \u00b661.) Under the unfair prong, a practice is unfair when it \"offends an established public policy.\" Podolsky v. First Healthcare Corp., 50 Cal. App. 4th 632, 647 (1996) (cited at Mot. 10:5). Even if the Court were to con",
+      "locations": [
+        {
+          "document": "/documents/matter-26/Opposition to UPS Rule 12(b)(6) Motion to Dismiss (E.D. Cal. 2-26-cv-02847) (Sep 9 2026).pdf",
+          "page": 16,
+          "role": "opposing_filing",
+          "matter": 26
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "Potter v. Firestone Tire, 6 Cal. 4th 965 (1993)",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -17893,6 +18433,31 @@
           "page": 2,
           "role": "court_order",
           "matter": 24
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Quinn v. Coulton, 121 Cal. App. 5th 1124 (2026)",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        26
+      ],
+      "roles": [
+        "opposing_filing"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Matter 26 hybrid UPS opposition (2026-08-28): lookup-citations.py reporter probe returned NOT_FOUND (Cal. App. 5th vol. 121 not on CAP static). Direct CourtListener search FOUND: Quinn v. Coulton, filed July 20, 2026, A172217, California Court of Appeal. Cited only as UPS's own authority that negligence per se is an evidentiary presumption, not a freestanding claim. It is a retaining-wall / Civ. Code section 832 case; Dent remains the primary cite.",
+      "sampleContext": "than an independent cause of action. Dent v. Nat'l Football League, 902 F.3d 1109, 1117 (9th Cir. 2018). Plaintiff does not dispute that. UPS's own authority, Quinn v. Coulton, 121 Cal. App. 5th 1124 (2026) (cited at Mot. 8:9-11, 8:22-24), likewise treats the doctrine as an evide",
+      "locations": [
+        {
+          "document": "/documents/matter-26/Opposition to UPS Rule 12(b)(6) Motion to Dismiss (E.D. Cal. 2-26-cv-02847) (Sep 9 2026).pdf",
+          "page": 16,
+          "role": "opposing_filing",
+          "matter": 26
         }
       ],
       "priority": "P2_joined"
@@ -18832,6 +19397,31 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Swartz v. KPMG LLP, 476 F. 3d 756",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        26
+      ],
+      "roles": [
+        "opposing_filing"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Matter 26 hybrid UPS opposition (2026-08-28): lookup consensus=FOUND; matched=Swartz v. KPMG LLP. 12(b)(6) materials limited to pleadings, attached exhibits, and judicially noticeable matters (476 F.3d at 763).",
+      "sampleContext": "urt \"may generally consider only allegations contained in the pleadings, exhibits attached to the complaint, and matters properly subject to judicial notice.\" Swartz v. KPMG LLP, 476 F.3d 756, 763 (9th Cir. 2007). If matters outside the pleadings are considered, \"the motion must ",
+      "locations": [
+        {
+          "document": "/documents/matter-26/Opposition to UPS Rule 12(b)(6) Motion to Dismiss (E.D. Cal. 2-26-cv-02847) (Sep 9 2026).pdf",
+          "page": 5,
+          "role": "opposing_filing",
+          "matter": 26
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "Swift v. California, 384 F. 3d 28",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -19561,6 +20151,31 @@
           "page": 8,
           "role": "opposing_filing",
           "matter": 1
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
+      "citation": "Williams v. Sacramento River Cats Baseball Club, LLC, 40 Cal. App. 5th 280 (2019)",
+      "kind": "authority",
+      "occurrenceCount": 1,
+      "matters": [
+        26
+      ],
+      "roles": [
+        "opposing_filing"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "round",
+      "notes": "Matter 26 hybrid UPS opposition (2026-08-28): lookup-citations.py reporter probe returned NOT_FOUND (Cal. App. 5th matching). Direct CourtListener search FOUND: Williams v. Sacramento River Cats Baseball Club, LLC, filed Sept. 24, 2019, C086487. Tameny duty of care requires a prior employment relationship; cited for conceding Count II as currently pleaded.",
+      "sampleContext": "cable as law only when the facts are undisputed. 7 Cal. 4th at 40. They are not. G. Count II (Failure to Hire) Should Be Dismissed Without Prejudice UPS cites Williams v. Sacramento River Cats Baseball Club, LLC, 40 Cal. App. 5th 280 (2019), for the proposition that the Tameny to",
+      "locations": [
+        {
+          "document": "/documents/matter-26/Opposition to UPS Rule 12(b)(6) Motion to Dismiss (E.D. Cal. 2-26-cv-02847) (Sep 9 2026).pdf",
+          "page": 15,
+          "role": "opposing_filing",
+          "matter": 26
         }
       ],
       "priority": "P2_joined"
@@ -20720,70 +21335,6 @@
       "priority": "P3_unverified_corroborated"
     },
     {
-      "citation": "United States v. Ritchie, 342 F. 3d 903",
-      "kind": "authority",
-      "occurrenceCount": 7,
-      "matters": [
-        26,
-        29
-      ],
-      "roles": [
-        "court_order",
-        "opposing_filing",
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 extensively to the document or the document forms the basis of the plaintiff\u2019s claim.\u201d United States v. Ritchie, 342 F.3d 903, 908 (9th Cir. 2003). The allegations in Plaintiff\u2019s Complaint stem from his appl",
-      "locations": [
-        {
-          "document": "/documents/matter-26/Dkt 07 - Motion to Dismiss with Exhibits A-B Only (Filed Aug 26 2026).pdf",
-          "page": 4,
-          "role": "opposing_filing",
-          "matter": 26
-        },
-        {
-          "document": "/documents/matter-26/Dkt 07 - UPS Rule 12(b)(6) Motion to Dismiss with Exhibits Notice Declaration and Certificate of Service (Filed Aug 26 2026).pdf",
-          "page": 4,
-          "role": "opposing_filing",
-          "matter": 26
-        },
-        {
-          "document": "/documents/matter-26/Opposition to UPS Rule 12(b)(6) Motion to Dismiss (E.D. Cal. 2-26-cv-02847) (Sep 9 2026).pdf",
-          "page": 5,
-          "role": "opposing_filing",
-          "matter": 26
-        },
-        {
-          "document": "/documents/matter-26/opposition-pack-10/01_UPS_MTD_Complete_ECF_7_7-1_7-2_7-3.pdf",
-          "page": 4,
-          "role": "plaintiff_filing",
-          "matter": 26
-        },
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 24-1 - Amazon's Memorandum ISO Motion to Dismiss (Dec 15, 2022).pdf",
-          "page": 12,
-          "role": "opposing_filing",
-          "matter": 29
-        },
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 24-2 - Amazon's Request for Judicial Notice (Dec 15, 2022).pdf",
-          "page": 3,
-          "role": "plaintiff_filing",
-          "matter": 29
-        },
-        {
-          "document": "/documents/opinions/Newanforbi v California CHP - USDC EDCal - FR Recommending Dismissal Apr 20 2026.pdf",
-          "page": 4,
-          "role": "court_order",
-          "matter": null
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
       "citation": "Jones v. Lodge, 42 Cal. 4th 1158 (2008)",
       "kind": "authority",
       "occurrenceCount": 6,
@@ -21259,58 +21810,6 @@
       "priority": "P3_unverified_corroborated"
     },
     {
-      "citation": "People v. Pieters, 52 Cal. 3d 894 (1991)",
-      "kind": "authority",
-      "occurrenceCount": 5,
-      "matters": [
-        20,
-        26,
-        32
-      ],
-      "roles": [
-        "opposing_filing",
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "tional query portal would make the employment prohibition surplusage. \"[A] statute should not be given an interpretation that fails to accomplish its purpose.\" People v. Pieters, 52 Cal. 3d 894, 898-99 (1991). The phrase \"disclosed pursuant to this section\" refers to the informat",
-      "locations": [
-        {
-          "document": "/documents/matter-26/Opposition to UPS Rule 12(b)(6) Motion to Dismiss (E.D. Cal. 2-26-cv-02847) (Sep 9 2026).pdf",
-          "page": 8,
-          "role": "opposing_filing",
-          "matter": 26
-        },
-        {
-          "document": "/documents/matter-32/from-20/Alameda Sheriff Service Packet - Eric Dutra (SER-001, FW-003, Opposition-MPA) (Aug 3 2026).pdf",
-          "page": 16,
-          "role": "plaintiff_filing",
-          "matter": 20
-        },
-        {
-          "document": "/documents/matter-32/from-20/Alameda Sheriff Service Packet - G Serrato (SER-001, FW-003, Opposition-MPA) (Aug 3 2026).pdf",
-          "page": 16,
-          "role": "plaintiff_filing",
-          "matter": 20
-        },
-        {
-          "document": "/documents/matter-32/from-20/Alameda Sheriff Service Packet - Gary Paul (SER-001, FW-003, Opposition-MPA) (Aug 3 2026).pdf",
-          "page": 16,
-          "role": "plaintiff_filing",
-          "matter": 20
-        },
-        {
-          "document": "/documents/matter-32/from-20/Opposition-to-Individual-Respondents-Demurrers.pdf",
-          "page": 7,
-          "role": "opposing_filing",
-          "matter": 20
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
       "citation": "See North Oakland Medical Clinic v. Rogers, 65 Cal.App. 4th 824 (1998)",
       "kind": "authority",
       "occurrenceCount": 5,
@@ -21404,52 +21903,6 @@
           "page": 22,
           "role": "other",
           "matter": 15
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
-      "citation": "Cel-Tech Commc\u2019ns, Inc. v. Los Angeles Cellular Tel. Co, 20 Cal. 4th 163 (1999)",
-      "kind": "authority",
-      "occurrenceCount": 4,
-      "matters": [
-        26,
-        29
-      ],
-      "roles": [
-        "court_order",
-        "opposing_filing",
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "ed the conduct in question. Courts have said that \u201c[t]here is a difference between (1) not making an activity unlawful, and (2) making that activity lawful.\u201d Cel-Tech Commc\u2019ns, Inc. v. Los Angeles Cellular Tel. Co., 20 Cal. 4th 163, 183 (1999). Here, we are dealing with the latte",
-      "locations": [
-        {
-          "document": "/documents/matter-26/Dkt 07 - Motion to Dismiss with Exhibits A-B Only (Filed Aug 26 2026).pdf",
-          "page": 11,
-          "role": "opposing_filing",
-          "matter": 26
-        },
-        {
-          "document": "/documents/matter-26/Dkt 07 - UPS Rule 12(b)(6) Motion to Dismiss with Exhibits Notice Declaration and Certificate of Service (Filed Aug 26 2026).pdf",
-          "page": 11,
-          "role": "opposing_filing",
-          "matter": 26
-        },
-        {
-          "document": "/documents/matter-26/opposition-pack-10/01_UPS_MTD_Complete_ECF_7_7-1_7-2_7-3.pdf",
-          "page": 11,
-          "role": "plaintiff_filing",
-          "matter": 26
-        },
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 36 - ORDER GRANTING Motions to Dismiss - Megan's Law, FCRA, UCL Claims Dismissed (May 26, 2023).pdf",
-          "page": 11,
-          "role": "court_order",
-          "matter": 29
         }
       ],
       "priority": "P3_unverified_corroborated"
@@ -22542,44 +22995,6 @@
       "priority": "P3_unverified_corroborated"
     },
     {
-      "citation": "Dent v. Nat\u2019l Football League, 902 F. 3d 1109",
-      "kind": "authority",
-      "occurrenceCount": 3,
-      "matters": [
-        26
-      ],
-      "roles": [
-        "opposing_filing",
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "cannot establish a cause of action for negligence per se because \u201cunder California law, negligence per se is a doctrine, not an independent cause of action.\u201d Dent v. Nat\u2019l Football League, 902 F.3d 1109. 1117 (9th Cir. 2018) (quoting Quiroz v. Seventh Ave. Ctr., 140 Cal.App.4th 1",
-      "locations": [
-        {
-          "document": "/documents/matter-26/Dkt 07 - Motion to Dismiss with Exhibits A-B Only (Filed Aug 26 2026).pdf",
-          "page": 9,
-          "role": "opposing_filing",
-          "matter": 26
-        },
-        {
-          "document": "/documents/matter-26/Dkt 07 - UPS Rule 12(b)(6) Motion to Dismiss with Exhibits Notice Declaration and Certificate of Service (Filed Aug 26 2026).pdf",
-          "page": 9,
-          "role": "opposing_filing",
-          "matter": 26
-        },
-        {
-          "document": "/documents/matter-26/opposition-pack-10/01_UPS_MTD_Complete_ECF_7_7-1_7-2_7-3.pdf",
-          "page": 9,
-          "role": "plaintiff_filing",
-          "matter": 26
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
       "citation": "Foster v. Sexton, 61 Cal.App. 5th 998 (2021)",
       "kind": "authority",
       "occurrenceCount": 3,
@@ -22725,44 +23140,6 @@
           "page": 10,
           "role": "other",
           "matter": 15
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
-      "citation": "Hill v. Nat\u2019l Collegiate Athletic Ass\u2019n, 7 Cal. 4th 1",
-      "kind": "authority",
-      "occurrenceCount": 3,
-      "matters": [
-        26
-      ],
-      "roles": [
-        "opposing_filing",
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "by the defendant that amounts to a serious invasion of the protected privacy interest.\u201d Saleh v. Nike, Inc., 562 F. Supp. 3d 503, 524 (C.D. Cal. 2021) (citing Hill v. Nat\u2019l Collegiate Athletic Ass\u2019n, 7 Cal. 4th 1, 40, 26 Cal.Rptr.2d 834, 865 P.2d 633 (1994)). Plaintiff cannot est",
-      "locations": [
-        {
-          "document": "/documents/matter-26/Dkt 07 - Motion to Dismiss with Exhibits A-B Only (Filed Aug 26 2026).pdf",
-          "page": 8,
-          "role": "opposing_filing",
-          "matter": 26
-        },
-        {
-          "document": "/documents/matter-26/Dkt 07 - UPS Rule 12(b)(6) Motion to Dismiss with Exhibits Notice Declaration and Certificate of Service (Filed Aug 26 2026).pdf",
-          "page": 8,
-          "role": "opposing_filing",
-          "matter": 26
-        },
-        {
-          "document": "/documents/matter-26/opposition-pack-10/01_UPS_MTD_Complete_ECF_7_7-1_7-2_7-3.pdf",
-          "page": 8,
-          "role": "plaintiff_filing",
-          "matter": 26
         }
       ],
       "priority": "P3_unverified_corroborated"
@@ -23071,43 +23448,6 @@
       "priority": "P3_unverified_corroborated"
     },
     {
-      "citation": "Mendoza v. ADP Screening, 182 Cal. App. 4th 1644",
-      "kind": "authority",
-      "occurrenceCount": 3,
-      "matters": [
-        29
-      ],
-      "roles": [
-        "opposing_filing"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "o. 14-CV-00424, 2015 WL 5264750 (N.D. Cal. Sept. 9, 2015) ................................................................................................. 3 Mendoza v. ADP Screening & Selection Servs., Inc., 182 Cal. App. 4th 1644 (Cal. Ct. App. 2010) ...........................",
-      "locations": [
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 23-1 - Accurate Background's Memorandum ISO Motion to Dismiss (Dec 15, 2022).pdf",
-          "page": 4,
-          "role": "opposing_filing",
-          "matter": 29
-        },
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 23-1 - Accurate Background's Memorandum ISO Motion to Dismiss (Dec 15, 2022).pdf",
-          "page": 15,
-          "role": "opposing_filing",
-          "matter": 29
-        },
-        {
-          "document": "/documents/matter-29/lerma-v-amazon/Dkt 28 - Accurate Background's Reply ISO Motion to Dismiss (Feb 2, 2023).pdf",
-          "page": 7,
-          "role": "opposing_filing",
-          "matter": 29
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
       "citation": "Music v. DMV, 221 Cal.App. 3d 841 (1990)",
       "kind": "authority",
       "occurrenceCount": 3,
@@ -23261,82 +23601,6 @@
           "page": 3,
           "role": "opposing_filing",
           "matter": 20
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
-      "citation": "Podolsky v. First Healthcare Corp, 50 Cal.App. 4th 632",
-      "kind": "authority",
-      "occurrenceCount": 3,
-      "matters": [
-        26
-      ],
-      "roles": [
-        "opposing_filing",
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "blic policy or when the practice is immoral, unethical, oppressive, unscrupulous or substantially injurious to consumers.\u201d Khan, 975 F. Supp 2d 1145 (quoting Podolsky v. First Healthcare Corp., 50 Cal.App.4th 632, 647, 58 Cal.Rptr.2d 89 (1996)). The public policy in play here is ",
-      "locations": [
-        {
-          "document": "/documents/matter-26/Dkt 07 - Motion to Dismiss with Exhibits A-B Only (Filed Aug 26 2026).pdf",
-          "page": 11,
-          "role": "opposing_filing",
-          "matter": 26
-        },
-        {
-          "document": "/documents/matter-26/Dkt 07 - UPS Rule 12(b)(6) Motion to Dismiss with Exhibits Notice Declaration and Certificate of Service (Filed Aug 26 2026).pdf",
-          "page": 11,
-          "role": "opposing_filing",
-          "matter": 26
-        },
-        {
-          "document": "/documents/matter-26/opposition-pack-10/01_UPS_MTD_Complete_ECF_7_7-1_7-2_7-3.pdf",
-          "page": 11,
-          "role": "plaintiff_filing",
-          "matter": 26
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
-      "citation": "Quinn v. Coulton, 121 Cal. App. 5th 1124",
-      "kind": "authority",
-      "occurrenceCount": 3,
-      "matters": [
-        26
-      ],
-      "roles": [
-        "opposing_filing",
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "006)). The per se doctrine is an evidentiary presumption used to establish only one of the several elements necessary to prove an underlying negligence claim. Quinn v. Coulton, 121 Cal. App. 5th 1124, 346 Cal. Rptr. 3d 320 (2026). So, if Plaintiff seeks to use the per se doctrine",
-      "locations": [
-        {
-          "document": "/documents/matter-26/Dkt 07 - Motion to Dismiss with Exhibits A-B Only (Filed Aug 26 2026).pdf",
-          "page": 9,
-          "role": "opposing_filing",
-          "matter": 26
-        },
-        {
-          "document": "/documents/matter-26/Dkt 07 - UPS Rule 12(b)(6) Motion to Dismiss with Exhibits Notice Declaration and Certificate of Service (Filed Aug 26 2026).pdf",
-          "page": 9,
-          "role": "opposing_filing",
-          "matter": 26
-        },
-        {
-          "document": "/documents/matter-26/opposition-pack-10/01_UPS_MTD_Complete_ECF_7_7-1_7-2_7-3.pdf",
-          "page": 9,
-          "role": "plaintiff_filing",
-          "matter": 26
         }
       ],
       "priority": "P3_unverified_corroborated"
@@ -23529,44 +23793,6 @@
           "page": 11,
           "role": "other",
           "matter": 15
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
-      "citation": "See Williams v. Sacramento River Cats Baseball Club, LLC, 40 Cal. App. 5th 280",
-      "kind": "authority",
-      "occurrenceCount": 3,
-      "matters": [
-        26
-      ],
-      "roles": [
-        "opposing_filing",
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "Plaintiff\u2019s claim is that it is simply not true. In fact, California courts have definitively disavowed a failure to hire in violation of public policy claim. See Williams v. Sacramento River Cats Baseball Club, LLC, 40 Cal. App. 5th 280, 253 Cal. Rptr. 3d 129 (2019); see also Ho",
-      "locations": [
-        {
-          "document": "/documents/matter-26/Dkt 07 - Motion to Dismiss with Exhibits A-B Only (Filed Aug 26 2026).pdf",
-          "page": 6,
-          "role": "opposing_filing",
-          "matter": 26
-        },
-        {
-          "document": "/documents/matter-26/Dkt 07 - UPS Rule 12(b)(6) Motion to Dismiss with Exhibits Notice Declaration and Certificate of Service (Filed Aug 26 2026).pdf",
-          "page": 6,
-          "role": "opposing_filing",
-          "matter": 26
-        },
-        {
-          "document": "/documents/matter-26/opposition-pack-10/01_UPS_MTD_Complete_ECF_7_7-1_7-2_7-3.pdf",
-          "page": 6,
-          "role": "plaintiff_filing",
-          "matter": 26
         }
       ],
       "priority": "P3_unverified_corroborated"
@@ -29061,31 +29287,6 @@
       "priority": "P3_unverified_corroborated"
     },
     {
-      "citation": "Cel-Tech Commc'ns, Inc. v. Los Angeles Cellular Tel. Co, 20 Cal. 4th 163 (1999)",
-      "kind": "authority",
-      "occurrenceCount": 1,
-      "matters": [
-        26
-      ],
-      "roles": [
-        "opposing_filing"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "not futile. Lopez, 203 F.3d at 1130. G. Count VI States a UCL Claim The UCL borrows violations of other laws as independently actionable \"unlawful\" practices. Cel-Tech Commc'ns, Inc. v. Los Angeles Cellular Tel. Co., 20 Cal. 4th 163, 180 (1999). Count VI's unlawful prong is predi",
-      "locations": [
-        {
-          "document": "/documents/matter-26/Opposition to UPS Rule 12(b)(6) Motion to Dismiss (E.D. Cal. 2-26-cv-02847) (Sep 9 2026).pdf",
-          "page": 14,
-          "role": "opposing_filing",
-          "matter": 26
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
       "citation": "Cf. Fukuda v. City of Angels, 20 Cal. 4th 805 (1999)",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -29407,31 +29608,6 @@
           "page": 5,
           "role": "court_order",
           "matter": 7
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
-      "citation": "Dent v. Nat'l Football League, 902 F. 3d 1109",
-      "kind": "authority",
-      "occurrenceCount": 1,
-      "matters": [
-        26
-      ],
-      "roles": [
-        "opposing_filing"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "Should Be Granted to Plead Ordinary Negligence UPS is correct that, under California law, negligence per se is a doctrine, not an independent cause of action. Dent v. Nat'l Football League, 902 F.3d 1109, 1117 (9th Cir. 2018). Plaintiff does not dispute the label. The Complaint n",
-      "locations": [
-        {
-          "document": "/documents/matter-26/Opposition to UPS Rule 12(b)(6) Motion to Dismiss (E.D. Cal. 2-26-cv-02847) (Sep 9 2026).pdf",
-          "page": 14,
-          "role": "opposing_filing",
-          "matter": 26
         }
       ],
       "priority": "P3_unverified_corroborated"
@@ -30461,31 +30637,6 @@
       "priority": "P3_unverified_corroborated"
     },
     {
-      "citation": "Hill v. Nat'l Collegiate Athletic Ass'n, 7 Cal. 4th 1 (1994)",
-      "kind": "authority",
-      "occurrenceCount": 1,
-      "matters": [
-        26
-      ],
-      "roles": [
-        "opposing_filing"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "equires (1) a legally protected privacy interest, (2) a reasonable expectation of privacy under the circumstances, and (3) a serious invasion of that interest. Hill v. Nat'l Collegiate Athletic Ass'n, 7 Cal. 4th 1, 35-40 (1994). UPS recites that test and then answers a different ",
-      "locations": [
-        {
-          "document": "/documents/matter-26/Opposition to UPS Rule 12(b)(6) Motion to Dismiss (E.D. Cal. 2-26-cv-02847) (Sep 9 2026).pdf",
-          "page": 13,
-          "role": "opposing_filing",
-          "matter": 26
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
       "citation": "Hulsey v. Koehler, 218 Cal.App. 3d 1150 (1990)",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -30560,31 +30711,6 @@
           "page": 18,
           "role": "other",
           "matter": 7
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
-      "citation": "In Mendoza v. ADP Screening, 182 Cal. App. 4th 1644 (2010)",
-      "kind": "authority",
-      "occurrenceCount": 1,
-      "matters": [
-        26
-      ],
-      "roles": [
-        "opposing_filing"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "The phrase \"disclosed pursuant to this section\" refers to the information California discloses under section 290.46 -- not the brand name on the search window. In Mendoza v. ADP Screening & Selection Services, Inc., 182 Cal. App. 4th 1644 (2010), the Court of Appeal addressed sec",
-      "locations": [
-        {
-          "document": "/documents/matter-26/Opposition to UPS Rule 12(b)(6) Motion to Dismiss (E.D. Cal. 2-26-cv-02847) (Sep 9 2026).pdf",
-          "page": 8,
-          "role": "opposing_filing",
-          "matter": 26
         }
       ],
       "priority": "P3_unverified_corroborated"
@@ -33485,31 +33611,6 @@
       "priority": "P3_unverified_corroborated"
     },
     {
-      "citation": "Swartz v. KPMG LLP, 476 F. 3d 756",
-      "kind": "authority",
-      "occurrenceCount": 1,
-      "matters": [
-        26
-      ],
-      "roles": [
-        "opposing_filing"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "urt \"may generally consider only allegations contained in the pleadings, exhibits attached to the complaint, and matters properly subject to judicial notice.\" Swartz v. KPMG LLP, 476 F.3d 756, 763 (9th Cir. 2007). If matters outside the pleadings are considered, \"the motion must ",
-      "locations": [
-        {
-          "document": "/documents/matter-26/Opposition to UPS Rule 12(b)(6) Motion to Dismiss (E.D. Cal. 2-26-cv-02847) (Sep 9 2026).pdf",
-          "page": 5,
-          "role": "opposing_filing",
-          "matter": 26
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
       "citation": "Tellabs, Inc. v. Makor Issues, 551 U.S. 308 (2007)",
       "kind": "authority",
       "occurrenceCount": 1,
@@ -34011,31 +34112,6 @@
           "page": 11,
           "role": "court_order",
           "matter": 29
-        }
-      ],
-      "priority": "P3_unverified_corroborated"
-    },
-    {
-      "citation": "Williams v. Sacramento River Cats Baseball Club, LLC, 40 Cal. App. 5th 280 (2019)",
-      "kind": "authority",
-      "occurrenceCount": 1,
-      "matters": [
-        26
-      ],
-      "roles": [
-        "opposing_filing"
-      ],
-      "plaintiffOnly": false,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "UNITED PARCEL SERVICE, INC. UPS assembled. C. Count II: Williams Does Not Extinguish the Statutory Claim, and Any Tameny Labeling Defect Is Curable UPS cites Williams v. Sacramento River Cats Baseball Club, LLC, 40 Cal. App. 5th 280 (2019), for the proposition that the common-law",
-      "locations": [
-        {
-          "document": "/documents/matter-26/Opposition to UPS Rule 12(b)(6) Motion to Dismiss (E.D. Cal. 2-26-cv-02847) (Sep 9 2026).pdf",
-          "page": 11,
-          "role": "opposing_filing",
-          "matter": 26
         }
       ],
       "priority": "P3_unverified_corroborated"
@@ -35213,45 +35289,6 @@
           "page": 2,
           "role": "plaintiff_filing",
           "matter": 33
-        }
-      ],
-      "priority": "P0_plaintiff_only_unverified"
-    },
-    {
-      "citation": "Mendoza v. ADP Screening, 182 Cal.App. 4th 1644 (2010)",
-      "kind": "authority",
-      "occurrenceCount": 3,
-      "matters": [
-        25,
-        26
-      ],
-      "roles": [
-        "other",
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "UNVERIFIED",
-      "statusSource": "none",
-      "notes": "",
-      "sampleContext": "andling positions do not qualify, and nothing in FedEx's adverse action materials purports to invoke the exception. The California Court of Appeal confirmed in Mendoza v. ADP Screening & Selection Services, Inc. (2010) 182 Cal.App.4th 1644 that section 290.46's civil-liability pr",
-      "locations": [
-        {
-          "document": "/documents/matter-25/FedEx Demand Packet Newanforbi.pdf",
-          "page": 2,
-          "role": "other",
-          "matter": 25
-        },
-        {
-          "document": "/documents/matter-26/UPS Demand Packet Newanforbi.pdf",
-          "page": 2,
-          "role": "other",
-          "matter": 26
-        },
-        {
-          "document": "/documents/matter-26/opposition-pack-10/05_UPS_Demand_Packet.pdf",
-          "page": 2,
-          "role": "plaintiff_filing",
-          "matter": 26
         }
       ],
       "priority": "P0_plaintiff_only_unverified"
