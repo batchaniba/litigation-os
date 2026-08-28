@@ -1,5 +1,55 @@
 [
   {
+    "date": "Aug. 28, 2026",
+    "event": "Demurrer Hearing — Newanforbi v. California Highway Patrol et al. (26CV191136), APPEAR 10:30 a.m. (moved from 9:00 due to late tentative), Dept. 25, Hon. Jenna M. Whitman; tentative OVERRULES demurrer on COAs 1 & 4 and SUSTAINS WOLA on COAs 2 & 3. Zoom 161 8066 1142 / passcode 5805.",
+    "matters": [
+      20
+    ],
+    "type": "hearing",
+    "upcoming": true
+  },
+  {
+    "date": "Aug. 27, 2026",
+    "event": "WATCH — if UPS responds by a Fed. R. Civ. P. 12 motion on its Rule 81(c)(2)(C) date, two clocks start immediately in Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD): opposition due 14 days after the motion is FILED under L.R. 230(c) (roughly Sep. 10, 2026), and one amendment as of right available within 21 days of SERVICE of the motion under Fed. R. Civ. P. 15(a)(1)(B) (roughly Sep. 17, 2026). The two run from different events and the opposition clock is the shorter. Under L.R. 230(c) a failure to oppose may be taken as consent to granting the motion. Amending as of right can moot a Rule 12(b)(6) motion outright — decide between opposing and amending in the first days, not the last.",
+    "matters": [
+      26
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you"
+  },
+  {
+    "date": "Oct. 5, 2026",
+    "event": "HEARING — Defendant UPS's Rule 12(b)(6) Motion to Dismiss (ECF No. 7), Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD), 1:30 p.m., Courtroom 4. Drozd civil law-and-motion is Zoom only (Standing Order I.A). Opposition due Sep. 9, 2026 (L.R. 230(c)).",
+    "matters": [
+      26
+    ],
+    "type": "hearing",
+    "upcoming": true,
+    "actor": "you"
+  },
+  {
+    "date": "Sep. 16, 2026",
+    "event": "Rule 15(a)(1)(B) amendment-as-of-right window — Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). UPS served the MTD by mail Aug. 26, 2026 (ECF 7-3). 21 days after service is Sep. 16; Rule 6(d) may add 3 days for mail service through Sep. 19. A FAC moots ECF 7. Do not miss the Sep. 9 L.R. 230(c) opposition clock by waiting for this window.",
+    "matters": [
+      26
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you"
+  },
+  {
+    "date": "Sep. 9, 2026",
+    "event": "OPPOSITION DUE — Plaintiff's opposition to UPS's Rule 12(b)(6) motion (ECF No. 7), Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). L.R. 230(c): 14 days after filing (Aug. 26). Failure to oppose may be taken as consent. Unfiled draft is dated Aug. 28; regenerate with internal/scripts/matter26-opposition-to-mtd.py --date on the day of actual service. Drozd Standing Order I.E: do not file the proposed order with the opposition unless the Court asks. Hearing Oct. 5, 2026 (Zoom).",
+    "matters": [
+      26
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-26/Opposition to UPS Rule 12(b)(6) Motion to Dismiss (E.D. Cal. 2-26-cv-02847) (Sep 9 2026).pdf"
+  },
+  {
     "date": "Aug. 31, 2026",
     "event": "FedEx responsive pleading deadline (computed) — Newanforbi v. Federal Express Corporation (Matter 25, E.D. Cal. No. 2:26-cv-02881-DAD-SCR); Fed. R. Civ. P. 81(c)(2)(C) — the later of 21 days after receipt of the initial pleading or 7 days after the notice of removal was filed (removal filed Aug. 24, 2026 → Aug. 31, 2026). Watch for answer or Rule 12 motion by Allison A. Kray.",
     "matters": [
@@ -207,15 +257,6 @@
     "upcoming": true
   },
   {
-    "date": "Aug. 28, 2026",
-    "event": "Demurrer Hearing — Newanforbi v. California Highway Patrol et al. (26CV191136), 9:00 a.m., Dept. 25, Rene C. Davidson Courthouse, Oakland; Hon. Jenna M. Whitman; AG's Demurrer to Petition for Writ of Mandate, reserved for this date; the Individual Respondents' Demurrers and Joinders (currently reserved for Oct. 16/23, 2026) will be heard the same day if the pending Joint Stipulation is entered; Trial Date: Not set",
-    "matters": [
-      20
-    ],
-    "type": "hearing",
-    "upcoming": true
-  },
-  {
     "date": "Aug. 31, 2026",
     "event": "Responsive pleading deadline (computed) — The RK Logistics Group, Inc. only, Newanforbi v. Randstad US, LLC et al. (26CV199902); 30 days from the Jul. 30, 2026 service date (CCP §412.20(a)(3)); the raw 30-day count lands on Saturday, Aug. 29, extended to Monday per CCP §12a. Randstad US, LLC's deadline was extended 15 days to Sept. 15, 2026 by agreement reached on the Aug. 18, 2026 call with its counsel, Chadwick L. Williams (Kabat Chapman & Ozmer LLP).",
     "matters": [
@@ -370,13 +411,23 @@
     "actor": "you"
   },
   {
-    "date": "Aug. 27, 2026",
-    "event": "WATCH — if UPS responds by a Fed. R. Civ. P. 12 motion on its Rule 81(c)(2)(C) date, two clocks start immediately in Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD): opposition due 14 days after the motion is FILED under L.R. 230(c) (roughly Sep. 10, 2026), and one amendment as of right available within 21 days of SERVICE of the motion under Fed. R. Civ. P. 15(a)(1)(B) (roughly Sep. 17, 2026). The two run from different events and the opposition clock is the shorter. Under L.R. 230(c) a failure to oppose may be taken as consent to granting the motion. Amending as of right can moot a Rule 12(b)(6) motion outright — decide between opposing and amending in the first days, not the last.",
+    "date": "Aug. 28, 2026",
+    "event": "Demurrer Hearing — Newanforbi v. California Highway Patrol et al. (26CV191136), 9:00 a.m., Dept. 25, Rene C. Davidson Courthouse, Oakland; Hon. Jenna M. Whitman; AG's Demurrer to Petition for Writ of Mandate, reserved for this date; the Individual Respondents' Demurrers and Joinders (currently reserved for Oct. 16/23, 2026) will be heard the same day if the pending Joint Stipulation is entered; Trial Date: Not set",
     "matters": [
-      26
+      20
+    ],
+    "type": "hearing",
+    "upcoming": true
+  },
+  {
+    "date": "Oct. 19, 2026",
+    "event": "Rule 4(m) service deadline (computed) — Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504-LJC); 90 days from ~July 21, 2026 complaint docketing. Dkt. 11 (Aug. 26, 2026) expressly directs Rule 4 service on Defendants. Serve Shannon Smith and HOPE Psychotherapy, Inc., then file proofs of service.",
+    "matters": [
+      28
     ],
     "type": "deadline",
     "upcoming": true,
-    "actor": "you"
+    "actor": "you",
+    "source": "/documents/matter-28/Dkt 11 - Order Regarding Filing Fee IFP and Directing Service (Filed Aug 26 2026).pdf"
   }
 ]
