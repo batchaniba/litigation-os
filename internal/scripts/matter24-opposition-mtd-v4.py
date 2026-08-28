@@ -979,7 +979,7 @@ def build():
     if SIG_IMG.exists():
         p = add_para(doc, "", double=False)
         run = p.add_run()
-        run.add_picture(str(SIG_IMG), width=Inches(1.8))
+        run.add_picture(str(SIG_IMG), width=Inches(2.4))
 
     add_para(doc, "____________________________________", double=False)
     add_para(doc, "BRENDAN NGEHSI NEWANFORBI", bold=True, double=False)

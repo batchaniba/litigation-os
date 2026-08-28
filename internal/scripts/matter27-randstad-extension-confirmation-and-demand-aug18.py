@@ -81,7 +81,7 @@ def signature_block(story, closing="Very truly yours,"):
     story.append(Paragraph(closing, plain))
     story.append(Spacer(1, 6))
     if os.path.isfile(SIGNATURE_IMG):
-        img = Image(SIGNATURE_IMG, width=1.9 * inch, height=1.9 * inch * SIGNATURE_ASPECT)
+        img = Image(SIGNATURE_IMG, width=2.5 * inch, height=2.5 * inch * SIGNATURE_ASPECT)
         img.hAlign = "LEFT"
         story.append(img)
     story.append(Paragraph("Brendan Ngehsi Newanforbi", plain))

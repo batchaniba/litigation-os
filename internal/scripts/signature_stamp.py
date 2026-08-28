@@ -36,7 +36,7 @@ SER001_SIG_BASELINE = 645.0
 SER001_SIG_X = 360.0
 
 
-def affix_signature(canvas_obj, x, y, width=150, path=SIGNATURE_PATH):
+def affix_signature(canvas_obj, x, y, width=185, path=SIGNATURE_PATH):
     """Draws the canonical signature onto a reportlab canvas at (x, y),
     scaled to `width` points wide, preserving native aspect ratio."""
     height = width * SIGNATURE_ASPECT

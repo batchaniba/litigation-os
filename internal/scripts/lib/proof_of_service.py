@@ -253,8 +253,8 @@ def build_proof_of_service(path: Path | str, fields: ProofOfServiceFields) -> Pa
             y -= LEADING * 1.35
 
     # Footer: declaration, then clear air for the signature stamp, then the line.
-    sig_width = 165.0
-    sig_height = sig_width * SIGNATURE_ASPECT  # ~25 pt at current aspect
+    sig_width = 200.0
+    sig_height = sig_width * SIGNATURE_ASPECT  # ~30 pt at current aspect
     gap_decl_to_sig = 32.0  # keep loops clear of the declaration
     name_below = 14.0
     footer_pad = 16.0  # clearance from typed name down to the bottom border
