@@ -1,5 +1,5 @@
 ---
-description: If the user asks for a script, talking points, or what to say in court or on Zoom, use the locked Matter 20 format. Bold If-the-Court / If-the-AG gates on their own line. Regular type is speech.
+description: If the user asks for a script, talking points, or what to say in court or on Zoom, copy TEMPLATE.md. Bold If-the-Court / If-the-AG gates on their own line. Regular type is speech.
 alwaysApply: true
 ---
 
@@ -8,7 +8,8 @@ alwaysApply: true
 When the user asks for a **script**, talking points, what to say, or notes for a
 hearing / CMC / Zoom appearance:
 
-- Follow `.claude/skills/hearing-script/SKILL.md` and copy its worked example.
+- Copy `.claude/skills/hearing-script/TEMPLATE.md`. Fill the brackets. Delete unused gates.
+- Match density/voice to the worked example in `.claude/skills/hearing-script/SKILL.md`.
 - Render it **in the chat**, verbose, horizontal rules between sections.
 - **Bold on its own line** = Opening / Close / If the Attorney General… / If they say… / If the Court asks… He does not speak that line.
 - Regular type under it = the read-aloud. Full sentences. "Your Honor" belongs here.

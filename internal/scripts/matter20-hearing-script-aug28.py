@@ -2,7 +2,8 @@
 """HISTORICAL generator — Matter 20 CHP demurrer, August 28, 2026.
 
 Do not run this to produce a speaking script. The locked format lives in
-.claude/skills/hearing-script/SKILL.md (worked example) and
+.claude/skills/hearing-script/TEMPLATE.md (blank) and
+.claude/skills/hearing-script/SKILL.md (worked example), plus
 internal/docs/Matter 20 - Oral Argument Script - CHP Demurrer Hearing (Aug 28 2026).txt.
 
 Bold standalone gates. Spoken words in regular type. Portfolio-wide.
@@ -11,7 +12,6 @@ Bold standalone gates. Spoken words in regular type. Portfolio-wide.
 from __future__ import annotations
 
 import os
-import sys
 
 from reportlab.lib.enums import TA_CENTER, TA_JUSTIFY, TA_LEFT
 from reportlab.lib.pagesizes import letter
@@ -85,10 +85,6 @@ def build_pdf():
     card = ParagraphStyle(
         "card", fontName="Times-Roman", fontSize=11, leading=15,
         alignment=TA_LEFT, spaceAfter=4,
-    )
-    plain = ParagraphStyle(
-        "plain", fontName="Times-Roman", fontSize=11.5, leading=15,
-        alignment=TA_LEFT, spaceAfter=2,
     )
 
     story = []

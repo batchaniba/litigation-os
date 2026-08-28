@@ -5,13 +5,18 @@ description: >
   Use whenever they ask for a script, talking points, what to say, notes for court,
   a lectern card, "if they say," or anything they will have open on camera.
   LOCKED format: verbose read-aloud, horizontal rules, If-the-Court / If-the-AG
-  on their own bold line, spoken words in regular type. Copy the worked example.
+  on their own bold line, spoken words in regular type. Copy TEMPLATE.md, fill
+  the brackets, match the worked example's density. Portfolio-wide, not Matter 20.
 ---
 
 # Zoom / court speaking notes
 
 LOCKED. Portfolio-wide. Do not invent a shorter card or a `(don't say)` telegram
-style. Copy this format.
+style.
+
+Copy `.claude/skills/hearing-script/TEMPLATE.md`. Fill every `[bracket]`. Delete
+gates that do not apply. Do not add a new style. Density and voice match the
+worked example below — that example is Matter 20 history, not a new appearance.
 
 The user appears in propria persona, often on Zoom.
 

@@ -1,7 +1,8 @@
 Matter 20 — CHP demurrer (August 28, 2026). Hearing held. Format LOCKED.
 
 Bold line = do not say. Regular type under it = say it.
-Canonical copy: .claude/skills/hearing-script/SKILL.md
+Canonical blank: .claude/skills/hearing-script/TEMPLATE.md
+Worked example: .claude/skills/hearing-script/SKILL.md
 
 Appear at **10:30 a.m.**, not 9:00. Hon. Jenna M. Whitman, Dept. 25. Zoom **161 8066 1142 / 5805**.
 
