@@ -1672,6 +1672,11 @@
       "ownerMatter": 28
     },
     {
+      "path": "/documents/matter-28/Dkt 11 - Order Regarding Filing Fee IFP and Directing Service (Filed Aug 26 2026).pdf",
+      "label": "Dkt. 11 — Order re filing fee / IFP moot; directing Rule 4 service (Aug. 26, 2026)",
+      "ownerMatter": 28
+    },
+    {
       "path": "/documents/matter-28/Doc 8 - Notice of Pay.gov Filing Fee Payment (CAND Docket, filed Jul 24 2026).pdf",
       "label": "Doc 8 — Notice of Pay.gov Filing Fee Payment, entered on the court's own docket by CAND Finance (filed Jul. 24, 2026)",
       "ownerMatter": 28
@@ -3174,6 +3179,11 @@
     {
       "path": "/documents/opinions/Newanforbi v Smith - USDC NDCal - IFP PO Order Jul 23 2026.pdf",
       "label": "Order Addressing IFP Application, Denying Motion for Protective Order, and Requiring Filing of State Court Decision (Doc 7, Jul. 23, 2026)",
+      "ownerMatter": null
+    },
+    {
+      "path": "/documents/opinions/Newanforbi v Smith - USDC NDCal - Order Directing Service Aug 26 2026.pdf",
+      "label": "Opinion copy — Mag. Cisneros Order Directing Service (Aug. 26, 2026)",
       "ownerMatter": null
     }
   ]

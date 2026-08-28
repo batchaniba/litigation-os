@@ -409,5 +409,25 @@
     "type": "deadline",
     "upcoming": true,
     "actor": "you"
+  },
+  {
+    "date": "Aug. 28, 2026",
+    "event": "Demurrer Hearing — Newanforbi v. California Highway Patrol et al. (26CV191136), 9:00 a.m., Dept. 25, Rene C. Davidson Courthouse, Oakland; Hon. Jenna M. Whitman; AG's Demurrer to Petition for Writ of Mandate, reserved for this date; the Individual Respondents' Demurrers and Joinders (currently reserved for Oct. 16/23, 2026) will be heard the same day if the pending Joint Stipulation is entered; Trial Date: Not set",
+    "matters": [
+      20
+    ],
+    "type": "hearing",
+    "upcoming": true
+  },
+  {
+    "date": "Oct. 19, 2026",
+    "event": "Rule 4(m) service deadline (computed) — Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504-LJC); 90 days from ~July 21, 2026 complaint docketing. Dkt. 11 (Aug. 26, 2026) expressly directs Rule 4 service on Defendants. Serve Shannon Smith and HOPE Psychotherapy, Inc., then file proofs of service.",
+    "matters": [
+      28
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-28/Dkt 11 - Order Regarding Filing Fee IFP and Directing Service (Filed Aug 26 2026).pdf"
   }
 ]
