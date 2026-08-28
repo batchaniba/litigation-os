@@ -495,10 +495,10 @@
     "case_no": "26CV191136",
     "court": "Alameda Sup. Ct.",
     "claims": "Writ of Mandate (CCP §1085; PC §679.10) — U Visa Certification; Declaratory Relief (CCP §1060)",
-    "status_label": "CHP demurrer reply in; hearing Aug. 28 — CMC Sep. 2",
+    "status_label": "Tentative: core writ claim survives; appear 10:30 Aug 28",
     "lifecycle": "active",
     "proceeding": "mandate",
-    "phase": "demurrer",
+    "phase": "hearing",
     "filed": "May 29, 2026",
     "judge": "Hon. Jenna M. Whitman, Dept. 25",
     "cluster": 1,
@@ -541,8 +541,9 @@
       "Count IV — Declaratory Relief (CCP §1060): Facial Deficiency of April 20, 2026 Denial and Construction of PC §679.10"
     ],
     "archived": false,
+    "badge": "TENTATIVE",
     "evidenceCount": 12,
-    "documentCount": 43
+    "documentCount": 45
   },
   {
     "number": 21,

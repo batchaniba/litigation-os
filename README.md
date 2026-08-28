@@ -165,7 +165,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 |---|---|---|---|---|---|
 | 12 | Brendan Ngwa Nforbi v. Diamond Truck Sales, Inc. | STK-CV-UF-2026-0001094 | San Joaquin Sup. Ct. | State | Defense appeared, disputes service — CMC Dec. 11, 2026 |
 | 19 | Newanforbi v. Macomber | C2604791 | Santa Clara Sup. Ct. | State | HC-004 refreshed Aug. 17 — ruling overdue since Aug. 1, 2026 |
-| 20 | Newanforbi v. California Highway Patrol, et al. | 26CV191136 | Alameda Sup. Ct. | State | CHP demurrer reply in; hearing Aug. 28 — CMC Sep. 2 |
+| 20 | Newanforbi v. California Highway Patrol, et al. | 26CV191136 | Alameda Sup. Ct. | State | Tentative: core writ claim survives; appear 10:30 Aug 28 |
 | 22 | Newanforbi v. Pilot Travel Centers LLC | STK-CV-UWT-2026-0007649 | San Joaquin Sup. Ct. | State | Settled Jul. 14, 2026 ($35,000) |
 | 24 | Newanforbi v. Serrato | 4:26-cv-05953-ASK | USDC N.D. Cal. | Federal | Served Aug. 5, 2026 — answer due Aug. 26; CMC Sep. 15 |
 | 25 | Newanforbi v. Federal Express Corporation | 2:26-cv-02881-DAD-SCR | USDC E.D. Cal. (Sacramento Div.) | Federal | Removed — 2:26-cv-02881-DAD-SCR; resp. ~Aug 31 |
@@ -222,12 +222,9 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 <!-- PORTFOLIO:UPCOMING_DEADLINES:START -->
 | Date | Matter | Event |
 |---|---|---|
-| Aug. 26, 2026 | 27 | Meet-and-confer deadline (computed) as to The RK Logistics Group, Inc. — Newanforbi v. Randstad US, LLC et al. (26CV199902) |
-| Aug. 26, 2026 | 29 | Meet-and-confer deadline (computed) — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554) |
-| Aug. 26, 2026 | 24 | Responsive pleading deadline (computed) — Newanforbi v. Serrato (4:26-cv-05953-ASK); 21 days from the Aug. 5, 2026 USMS personal service date (FRCP 12(a)(1)(A)) |
 | Aug. 27, 2026 | 26 | UPS responsive pleading deadline (computed) — Newanforbi v. United Parcel Service, Inc., USDC E.D. Cal. No. 1:26-at-03195. Fed. R. Civ. |
 | Aug. 27, 2026 | 26 | WATCH — if UPS responds by a Fed. R. Civ. P. 12 motion on its Rule 81(c)(2)(C) date, two clocks start immediately in Newanforbi v. |
-| Aug. 28, 2026 | 20 | Demurrer Hearing — Newanforbi v. California Highway Patrol et al. (26CV191136), 9:00 a.m., Dept. 25, Rene C. Davidson Courthouse, Oakland; Hon. Jenna M. Whitman |
+| Aug. 28, 2026 | 20 | Demurrer Hearing — Newanforbi v. California Highway Patrol et al. (26CV191136), APPEAR 10:30 a.m. (moved from 9:00 due to late tentative), Dept. 25, Hon. Jenna M. Whitman |
 | Aug. 31, 2026 | 25 | FedEx responsive pleading deadline (computed) — Newanforbi v. Federal Express Corporation (Matter 25, E.D. Cal. No. 2:26-cv-02881-DAD-SCR); Fed. R. Civ. P. 81(c)(2)(C) |
 | Aug. 31, 2026 | 27 | Responsive pleading deadline (computed) — The RK Logistics Group, Inc. only, Newanforbi v. Randstad US, LLC et al. (26CV199902); 30 days from the Jul. 30, 2026 service date (CCP §412.20(a)(3)) |
 | Aug. 31, 2026 | 29 | Responsive pleading deadline (computed) — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554); 30 days from the Jul. 31, 2026 service date on both defendants (CCP §412.20(a)(3)) |

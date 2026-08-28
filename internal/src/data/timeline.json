@@ -2074,7 +2074,7 @@
   },
   {
     "date": "Aug. 28, 2026",
-    "event": "Demurrer Hearing — Newanforbi v. California Highway Patrol et al. (26CV191136), 9:00 a.m., Dept. 25, Rene C. Davidson Courthouse, Oakland; Hon. Jenna M. Whitman; AG's Demurrer to Petition for Writ of Mandate, reserved for this date; the Individual Respondents' Demurrers and Joinders (currently reserved for Oct. 16/23, 2026) will be heard the same day if the pending Joint Stipulation is entered; Trial Date: Not set",
+    "event": "Demurrer Hearing — Newanforbi v. California Highway Patrol et al. (26CV191136), APPEAR 10:30 a.m. (moved from 9:00 due to late tentative), Dept. 25, Hon. Jenna M. Whitman; tentative OVERRULES demurrer on COAs 1 & 4 and SUSTAINS WOLA on COAs 2 & 3. Zoom 161 8066 1142 / passcode 5805.",
     "matters": [
       20
     ],
@@ -2446,12 +2446,12 @@
   },
   {
     "date": "Aug. 26, 2026",
-    "event": "Meet-and-confer deadline (computed) as to The RK Logistics Group, Inc. — Newanforbi v. Randstad US, LLC et al. (26CV199902); CCP §430.41(a)(2) requires meet-and-confer at least 5 calendar days before the Aug. 31, 2026 responsive-pleading deadline, if RK Logistics intends to demur; otherwise it must file a declaration for the automatic 30-day extension. Randstad US, LLC is no longer on this clock — its response was extended to Sept. 15, 2026 by the parties' Aug. 18, 2026 agreement, moving its meet-and-confer date to Sept. 10, 2026.",
+    "event": "PASSED — Meet-and-confer deadline (computed) as to The RK Logistics Group, Inc. — Newanforbi v. Randstad US, LLC et al. (26CV199902); CCP §430.41(a)(2) requires meet-and-confer at least 5 calendar days before the Aug. 31, 2026 responsive-pleading deadline, if RK Logistics intends to demur; otherwise it must file a declaration for the automatic 30-day extension. Randstad US, LLC is no longer on this clock — its response was extended to Sept. 15, 2026 by the parties' Aug. 18, 2026 agreement, moving its meet-and-confer date to Sept. 10, 2026.",
     "matters": [
       27
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "opposing"
   },
   {
@@ -2953,12 +2953,12 @@
   },
   {
     "date": "Aug. 26, 2026",
-    "event": "Meet-and-confer deadline (computed) — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554); CCP §430.41(a)(2) requires meet-and-confer at least 5 calendar days before the Aug. 31, 2026 responsive-pleading deadline, if either defendant intends to demur; otherwise that defendant must file a declaration for the automatic 30-day extension",
+    "event": "PASSED — Meet-and-confer deadline (computed) — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554); CCP §430.41(a)(2) requires meet-and-confer at least 5 calendar days before the Aug. 31, 2026 responsive-pleading deadline, if either defendant intends to demur; otherwise that defendant must file a declaration for the automatic 30-day extension",
     "matters": [
       29
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "opposing"
   },
   {
@@ -3329,12 +3329,12 @@
   },
   {
     "date": "Aug. 26, 2026",
-    "event": "Responsive pleading deadline (computed) — Newanforbi v. Serrato (4:26-cv-05953-ASK); 21 days from the Aug. 5, 2026 USMS personal service date (FRCP 12(a)(1)(A))",
+    "event": "PASSED — Responsive pleading deadline (computed) — Newanforbi v. Serrato (4:26-cv-05953-ASK); 21 days from the Aug. 5, 2026 USMS personal service date (FRCP 12(a)(1)(A))",
     "matters": [
       24
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "opposing"
   },
   {
@@ -3499,5 +3499,17 @@
     ],
     "type": "event",
     "source": "/documents/matter-26/USPS Package Intercept Confirmation Email - Order o2568695706 (Aug 20 2026).pdf"
+  },
+  {
+    "date": "Aug. 27, 2026",
+    "event": "TENTATIVE RULING (Hon. Jenna M. Whitman, Dept. 25) — Newanforbi v. CHP et al. (26CV191136), demurrer hearing Aug. 28, 2026: CHP demurrer (joined by Serrato/Paul/Dutra) OVERRULED as to 1st COA (ministerial duty under PC §679.10 — qualifying-crime / PC dispute is factual) and 4th COA (declaratory relief); SUSTAINED WITHOUT LEAVE as to 2nd COA (reason-giving) and 3rd COA (helpfulness presumption). Parties ORDERED TO APPEAR at 10:30 a.m. (not 9:00) due to late tentative. Zoom: 161 8066 1142 / 5805.",
+    "matters": [
+      20
+    ],
+    "type": "ruling",
+    "upcoming": false,
+    "actor": "agency",
+    "filed": true,
+    "source": "/documents/matter-32/from-20/Tentative Ruling - CHP Demurrer (Dept 25 Whitman, Aug 27 2026 for Aug 28 hearing).pdf"
   }
 ]

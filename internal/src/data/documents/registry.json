@@ -2542,6 +2542,11 @@
       "ownerMatter": 32
     },
     {
+      "path": "/documents/matter-32/from-20/Tentative Ruling - CHP Demurrer (Dept 25 Whitman, Aug 27 2026 for Aug 28 hearing).pdf",
+      "label": "Tentative Ruling — CHP Demurrer (Whitman, Aug. 27, 2026; hearing Aug. 28)",
+      "ownerMatter": 32
+    },
+    {
       "path": "/documents/matter-32/from-20/Tentative Ruling on CMC Continuance - Hon. Jenna Whitman (July 12, 2026).pdf",
       "label": "Tentative Ruling re: Case Management — CMC Continued to Sept. 2, 2026 (Hon. Jenna Whitman, July 12, 2026)",
       "ownerMatter": 32
@@ -3009,6 +3014,11 @@
     {
       "path": "/documents/opinions/Newanforbi v California CHP - Alameda Sup Ct - Order Continuing CMC to Sep 2 2026.pdf",
       "label": "Order Initial Case Management Conference — Continued to Sept. 2, 2026 (signed July 15, 2026; entered/served July 21, 2026)",
+      "ownerMatter": null
+    },
+    {
+      "path": "/documents/opinions/Newanforbi v California CHP - Alameda Sup Ct - Tentative Ruling Demurrer Aug 27 2026.pdf",
+      "label": "Opinion copy — Tentative Ruling on CHP Demurrer (Aug. 27, 2026)",
       "ownerMatter": null
     },
     {
