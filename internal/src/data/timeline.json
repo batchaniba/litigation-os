@@ -15,7 +15,7 @@
       26
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "you"
   },
   {
@@ -3467,7 +3467,7 @@
       26
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "opposing"
   },
   {
