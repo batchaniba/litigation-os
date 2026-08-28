@@ -25,9 +25,9 @@ Order I.E does not require a proposed order with this civil motion; generate
 one only as a portfolio draft and do not file it unless the Court asks.
 
 Service is first-class mail (Fed. R. Civ. P. 5(b)(2)(C); E.D. Cal. L.R. 135).
-The Proof of Service is the portfolio four-sided-border form
-(``lib/proof_of_service.py``), not a pleading-paper certificate. Do not serve
-or file the proposed order.
+The Proof of Service is a standalone portfolio four-sided-border form
+(``lib/proof_of_service.py``). Do not append a pleading-paper certificate to
+the opposition. Do not serve or file the proposed order.
 
     python3 internal/scripts/matter26-opposition-to-mtd.py \\
         [--date "August 28, 2026"] [--mailed-from "San Jose, California"] [OUT_PDF]
@@ -721,53 +721,11 @@ def build_opposition_proof_of_service(
 
 
 def _signature(d: PleadingPaper, exec_date: str) -> None:
-    d.ensure_space(9)
+    d.ensure_space(10)
     d.write_line(f"Dated: {exec_date}")
     d.blank_line()
     d.write_line("Respectfully submitted,", right=True, right_margin_offset=20)
     d.blank_line()
-    d.draw_signature_image(
-        SIGNATURE_PATH, SIGNATURE_NATIVE_PX[0], SIGNATURE_NATIVE_PX[1], SIG_LINE
-    )
-    d.write_line(SIG_LINE, right=True, right_margin_offset=20)
-    d.write_line(SIGNOFF_NAME, right=True, right_margin_offset=20)
-    d.write_line(SIGNOFF_ROLE, right=True, right_margin_offset=20)
-
-
-def _certificate_of_service(d: PleadingPaper, exec_date: str, mailed_from: str,
-                            document_title: str) -> None:
-    d.start_new_page()
-    d.write_line("CERTIFICATE OF SERVICE", bold=True, center=True)
-    d.blank_line()
-    d.write_wrapped(
-        "I am the Plaintiff in this action and am over the age of eighteen years. My "
-        "email address is bnn.cdl@gmail.com. On "
-        f"{exec_date}, I served the foregoing {document_title} pursuant to Federal Rule "
-        "of Civil Procedure 5(b)(2)(C) and E.D. Cal. Local Rule 135 by placing a true "
-        "and correct copy in a sealed envelope, with first-class postage fully prepaid, "
-        "and depositing it with the United States Postal Service at "
-        f"{mailed_from}, addressed as follows:",
-        first_indent=36,
-    )
-    d.blank_line()
-    for line in SERVICE_ADDRESSEES:
-        d.write_line(line, indent=54)
-    d.blank_line()
-    d.write_wrapped(
-        "I also transmitted a courtesy copy of the same document by electronic mail to "
-        "vmott@martensonlaw.com and adaskas@martensonlaw.com. Counsel has not consented "
-        "in writing to electronic service under Rule 5(b)(2)(E). The courtesy email is "
-        "not the method of service.",
-        first_indent=36,
-    )
-    d.blank_line()
-    d.write_wrapped(
-        "I declare under penalty of perjury under the laws of the United States of America "
-        f"that the foregoing is true and correct. Executed on {exec_date}, at "
-        f"{mailed_from}.",
-        first_indent=36,
-    )
-    d.ensure_space(6)
     d.blank_line()
     d.draw_signature_image(
         SIGNATURE_PATH, SIGNATURE_NATIVE_PX[0], SIGNATURE_NATIVE_PX[1], SIG_LINE
@@ -825,11 +783,6 @@ def build_opposition(out: Path, exec_date: str, mailed_from: str) -> Path:
     _header_block(d, CAPTION_RIGHT)
     _render_body(d, CONTENT)
     _signature(d, exec_date)
-    _certificate_of_service(
-        d, exec_date, mailed_from,
-        "PLAINTIFF'S OPPOSITION TO DEFENDANT UNITED PARCEL SERVICE, INC.'S "
-        "RULE 12(b)(6) MOTION TO DISMISS",
-    )
     d.save()
     return out
 
