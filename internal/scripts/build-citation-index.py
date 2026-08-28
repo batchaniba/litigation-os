@@ -241,6 +241,24 @@ def role_for(rel_path):
     return "other"
 
 
+def skip_citations_for(rel_path):
+    """Do not pull citations from blanks, service forms, or discovery manuals.
+
+    Those PDFs stay in documents[] (status/chars) so they are not confused
+    with no_text_layer. They remain in the search index (index:build).
+    """
+    norm = rel_path.replace("\\", "/")
+    if norm.startswith("_form-library/") or "/_form-library/" in f"/{norm}":
+        return True
+    # HOPE program manuals produced in Matter 5 discovery — boilerplate-dense
+    # and not this litigant's citations. Folder name is the stable marker.
+    if "hope discovery" in norm.lower():
+        return True
+    if role_for(rel_path) == "service_admin":
+        return True
+    return False
+
+
 # California code names appear in at least four abbreviations each across the
 # corpus; without folding them, the same section lands under several keys and
 # the occurrence counts lie.
@@ -461,10 +479,14 @@ def build_report(out):
     w(f"| Readable | {c['readable']} |")
     w(f"| **No text layer (not searched)** | **{c['noTextLayer']}** |")
     w(f"| Unreadable | {c['unreadable']} |")
+    w(f"| Citation scan skipped | {c.get('citationScanSkipped', 0)} |")
     w(f"| Distinct citations | {len(cites):,} |")
     w(f"| Total occurrences | {sum(x['occurrenceCount'] for x in cites):,} |\n")
     w("A PDF with no text layer yields no citations. That is **not** the same as containing")
-    w("none — those documents are unsearched until OCR'd.\n")
+    w("none — those documents are unsearched until OCR'd. Blank form-library templates,")
+    w("`service_admin` forms (summons, POS, SER-001, fee waivers), and HOPE discovery")
+    w("manuals are listed in `documents[]` but not scanned for citations — their")
+    w("boilerplate (and OCR noise) is not this litigant's authority.\n")
     w("## What was catalogued\n")
     w("| Kind | Distinct |\n|---|---|")
     for k, n in kinds.most_common():
@@ -517,6 +539,9 @@ def build_report(out):
     w("- Pairing refuses to join a case name to a reporter across an intervening case name, so an")
     w("  unparseable reporter leaves the authority unpaired rather than joined to the next case's")
     w("  numbers. An index that invents citations would be worse than none.")
+    w("- Blank `_form-library/` templates, `service_admin` forms, and HOPE discovery")
+    w("  manuals are listed in `documents[]` with `citationScan: skipped` and contribute")
+    w("  zero citations. They remain in the search index.")
     w("- Nothing here verifies a citation exists or says what it is claimed to say. This locates")
     w("  and counts; verification remains the audit's job.")
     return "\n".join(L) + "\n"
@@ -545,29 +570,31 @@ def main():
 
             chars = sum(len(p) for p in pages)
             found = 0
-            for pageno, text in enumerate(pages, start=1):
-                if not text.strip():
-                    continue
-                for kind, raw, s, e in scan_page(text):
-                    key = normalize(kind, raw)
-                    if len(key) < 3:
+            skip = skip_citations_for(rel)
+            if not skip:
+                for pageno, text in enumerate(pages, start=1):
+                    if not text.strip():
                         continue
-                    entry = citations[key]
-                    entry["kind"] = entry["kind"] or kind
-                    ctx = re.sub(r"\s+", " ",
-                                 text[max(0, s - CONTEXT_CHARS): e + CONTEXT_CHARS]).strip()
-                    entry["occurrences"].append({
-                        "matter": matter_for(rel),
-                        "matters": matters_for(rel),
-                        "document": f"/documents/{rel}",
-                        "role": role_for(rel),
-                        "page": pageno,
-                        "raw": raw.strip(),
-                        "context": ctx,
-                    })
-                    found += 1
+                    for kind, raw, s, e in scan_page(text):
+                        key = normalize(kind, raw)
+                        if len(key) < 3:
+                            continue
+                        entry = citations[key]
+                        entry["kind"] = entry["kind"] or kind
+                        ctx = re.sub(r"\s+", " ",
+                                     text[max(0, s - CONTEXT_CHARS): e + CONTEXT_CHARS]).strip()
+                        entry["occurrences"].append({
+                            "matter": matter_for(rel),
+                            "matters": matters_for(rel),
+                            "document": f"/documents/{rel}",
+                            "role": role_for(rel),
+                            "page": pageno,
+                            "raw": raw.strip(),
+                            "context": ctx,
+                        })
+                        found += 1
 
-            documents.append({
+            rec = {
                 "path": f"/documents/{rel}",
                 "matter": matter_for(rel),
                 "matters": matters_for(rel),
@@ -578,7 +605,10 @@ def main():
                 # yielding zero citations means "not searched", not "none cited".
                 "status": "ok" if chars > 50 else "no_text_layer",
                 "citations": found,
-            })
+            }
+            if skip:
+                rec["citationScan"] = "skipped"
+            documents.append(rec)
 
     out = {
         "generatedBy": "internal/scripts/build-citation-index.py",
@@ -587,6 +617,7 @@ def main():
             "readable": sum(1 for d in documents if d["status"] == "ok"),
             "noTextLayer": sum(1 for d in documents if d["status"] == "no_text_layer"),
             "unreadable": sum(1 for d in documents if d["status"] == "unreadable"),
+            "citationScanSkipped": sum(1 for d in documents if d.get("citationScan") == "skipped"),
             "pages": sum(d["pages"] for d in documents),
         },
         "citations": sorted(
@@ -624,7 +655,7 @@ def main():
     c = out["corpus"]
     print(f"Scanned {c['documents']} PDFs ({c['pages']:,} pages) in {time.time() - start:.1f}s")
     print(f"  {c['readable']} readable, {c['noTextLayer']} with no text layer, "
-          f"{c['unreadable']} unreadable")
+          f"{c['unreadable']} unreadable, {c.get('citationScanSkipped', 0)} citation-scan skipped")
     print(f"Found {len(out['citations']):,} distinct citations "
           f"({sum(x['occurrenceCount'] for x in out['citations']):,} occurrences)")
     print(f"\nWrote {OUT_PATH}")

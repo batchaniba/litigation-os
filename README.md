@@ -504,10 +504,13 @@ need them:
 ```bash
 python3 -m pip install -r requirements.txt   # reportlab, pypdf, pymupdf, …
 ruff check .                                 # lint (same rules CI enforces)
+internal/scripts/ensure-pdf-tools.sh         # tesseract-ocr + the same pip install
 ```
 
-OCR (`internal/scripts/pdf-audit/ocr.py`) additionally needs the `tesseract`
-binary on `PATH`.
+OCR (`internal/scripts/ocr-text-layer.py` and `internal/scripts/pdf-audit/ocr.py`)
+needs the `tesseract` binary on `PATH`. `ensure-pdf-tools.sh` installs it via
+`apt-get` when missing (Debian/Ubuntu) and is safe to re-run. CI's Python job
+is ruff + `compileall` only — it does not install tesseract or the PDF libraries.
 
 ## Build
 

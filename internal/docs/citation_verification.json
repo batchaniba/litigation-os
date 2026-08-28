@@ -11648,6 +11648,51 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Wright v. State of California, 122 Cal.App. 4th 659 (2004)",
+      "kind": "authority",
+      "occurrenceCount": 4,
+      "matters": [
+        5,
+        10
+      ],
+      "roles": [
+        "opposing_filing",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": false,
+      "status": "VERIFIED",
+      "statusSource": "audit",
+      "notes": "Real, frequently-cited California exhaustion-doctrine case; both sides in this litigation cite and dispute the scope of its holding, which is ordinary adversarial argument, not evidence of misquotation.",
+      "sampleContext": "determination.\u201d (Foster, supra, 61 Cal.App.5th at 1023.) Exhaustion is required \u201ceven when seeking money damages unavailable in the administrative process.\u201d (Wright v. State of California (2004) 122 Cal.App.4th 659, 668.) \u201cA complaint is vulnerable to demurrer on administrative e",
+      "locations": [
+        {
+          "document": "/documents/matter-05/Demurrer-(NEWpal) (052226)).pdf",
+          "page": 12,
+          "role": "opposing_filing",
+          "matter": 5
+        },
+        {
+          "document": "/documents/matter-05/Demurrer-Reply (NEWpal) (070726).pdf",
+          "page": 4,
+          "role": "opposing_filing",
+          "matter": 5
+        },
+        {
+          "document": "/documents/matter-05/Opposition to Demurrer Pal.pdf",
+          "page": 9,
+          "role": "opposing_filing",
+          "matter": 5
+        },
+        {
+          "document": "/documents/matter-10/ORDER_DENYING_PETITION_C2602632.pdf",
+          "page": 1,
+          "role": "plaintiff_filing",
+          "matter": 10
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "Wyatt v. Cole, 504 U.S. 158 (1992)",
       "kind": "authority",
       "occurrenceCount": 4,
@@ -13478,43 +13523,6 @@
           "page": 20,
           "role": "plaintiff_filing",
           "matter": 9
-        }
-      ],
-      "priority": "P2_joined"
-    },
-    {
-      "citation": "Wright v. State of California, 122 Cal.App. 4th 659 (2004)",
-      "kind": "authority",
-      "occurrenceCount": 3,
-      "matters": [
-        5
-      ],
-      "roles": [
-        "opposing_filing"
-      ],
-      "plaintiffOnly": false,
-      "status": "VERIFIED",
-      "statusSource": "audit",
-      "notes": "Real, frequently-cited California exhaustion-doctrine case; both sides in this litigation cite and dispute the scope of its holding, which is ordinary adversarial argument, not evidence of misquotation.",
-      "sampleContext": "determination.\u201d (Foster, supra, 61 Cal.App.5th at 1023.) Exhaustion is required \u201ceven when seeking money damages unavailable in the administrative process.\u201d (Wright v. State of California (2004) 122 Cal.App.4th 659, 668.) \u201cA complaint is vulnerable to demurrer on administrative e",
-      "locations": [
-        {
-          "document": "/documents/matter-05/Demurrer-(NEWpal) (052226)).pdf",
-          "page": 12,
-          "role": "opposing_filing",
-          "matter": 5
-        },
-        {
-          "document": "/documents/matter-05/Demurrer-Reply (NEWpal) (070726).pdf",
-          "page": 4,
-          "role": "opposing_filing",
-          "matter": 5
-        },
-        {
-          "document": "/documents/matter-05/Opposition to Demurrer Pal.pdf",
-          "page": 9,
-          "role": "opposing_filing",
-          "matter": 5
         }
       ],
       "priority": "P2_joined"

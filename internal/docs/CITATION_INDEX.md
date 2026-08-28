@@ -14,31 +14,35 @@ numbers, so a citation in a draft can be traced to a source page rather than tru
 
 | | |
 |---|---|
-| PDFs scanned | 715 |
-| Pages | 7,623 |
-| Readable | 713 |
+| PDFs scanned | 714 |
+| Pages | 7,625 |
+| Readable | 714 |
 | **No text layer (not searched)** | **0** |
-| Unreadable | 2 |
-| Distinct citations | 3,672 |
-| Total occurrences | 15,149 |
+| Unreadable | 0 |
+| Citation scan skipped | 169 |
+| Distinct citations | 3,650 |
+| Total occurrences | 14,702 |
 
 A PDF with no text layer yields no citations. That is **not** the same as containing
-none — those documents are unsearched until OCR'd.
+none — those documents are unsearched until OCR'd. Blank form-library templates,
+`service_admin` forms (summons, POS, SER-001, fee waivers), and HOPE discovery
+manuals are listed in `documents[]` but not scanned for citations — their
+boilerplate (and OCR noise) is not this litigant's authority.
 
 ## What was catalogued
 
 | Kind | Distinct |
 |---|---|
-| `case_name` | 1060 |
+| `case_name` | 1059 |
 | `authority` | 964 |
 | `case_reporter` | 800 |
-| `statute_state` | 255 |
-| `section_shorthand` | 168 |
-| `rule_local` | 115 |
-| `rule_federal` | 95 |
-| `statute_federal` | 79 |
+| `statute_state` | 250 |
+| `section_shorthand` | 163 |
+| `rule_local` | 110 |
+| `rule_federal` | 94 |
+| `statute_federal` | 77 |
 | `case_westlaw` | 57 |
-| `rule_state` | 50 |
+| `rule_state` | 47 |
 | `regulation_state` | 12 |
 | `regulation_federal` | 10 |
 | `constitutional` | 7 |
@@ -55,21 +59,21 @@ folder-derived attribution reported zero for Matters 1, 2, 7 and 20.
 
 | Matter | Caption | Distinct citations |
 |---|---|---|
-| 12 | Brendan Ngwa Nforbi v. Diamond Truck Sales,  | 144 |
-| 19 | Newanforbi v. Macomber | 101 |
-| 20 | Newanforbi v. California Highway Patrol, et  | 290 |
-| 24 | Newanforbi v. Serrato | 297 |
-| 25 | Newanforbi v. Federal Express Corporation | 150 |
-| 26 | Newanforbi v. United Parcel Service, Inc. | 276 |
-| 27 | Newanforbi v. Randstad, et al. | 51 |
-| 28 | Newanforbi v. Shannon Smith, LCSW, CEO, et a | 216 |
-| 29 | Newanforbi v. Amazon.com Services, LLC | 645 |
+| 12 | Brendan Ngwa Nforbi v. Diamond Truck Sales,  | 121 |
+| 19 | Newanforbi v. Macomber | 100 |
+| 20 | Newanforbi v. California Highway Patrol, et  | 288 |
+| 24 | Newanforbi v. Serrato | 296 |
+| 25 | Newanforbi v. Federal Express Corporation | 143 |
+| 26 | Newanforbi v. United Parcel Service, Inc. | 263 |
+| 27 | Newanforbi v. Randstad, et al. | 45 |
+| 28 | Newanforbi v. Shannon Smith, LCSW, CEO, et a | 212 |
+| 29 | Newanforbi v. Amazon.com Services, LLC | 629 |
 | 30 | Newanforbi v. Moua, et al. | 100 |
 | 31 | Newanforbi v. First Advantage LLC | 0 |
-| 32 | Nforbi v. Meza-Gonzalez, et al | 860 |
-| 33 | Nforbi v. Candelaria et al. | 489 |
+| 32 | Nforbi v. Meza-Gonzalez, et al | 849 |
+| 33 | Nforbi v. Candelaria et al. | 480 |
 | 34 | Newanforbi v. Counseling and Psychotherapy C | 0 |
-| 35 | Ngwa Nforbi v. Ross Stores, Inc., et al. | 21 |
+| 35 | Ngwa Nforbi v. Ross Stores, Inc., et al. | 16 |
 
 ## Highest-exposure citations
 
@@ -159,14 +163,13 @@ _228 total; full list in the JSON._
 
 ## Catalog gaps — unsearchable documents in active matters
 
-1 documents in active matters have no text layer. Until OCR'd, the index cannot
+0 documents in active matters have no text layer. Until OCR'd, the index cannot
 speak to what they cite. Court orders are the ones that matter.
 
 | Matter | Role | Pages | Document |
 |---|---|---|---|
-| 30 | plaintiff_filing | 0 | CASOMB Complaint Submission – HOPE Psychotherapy, Inc..p |
 
-_1 total._
+_0 total._
 
 ## Regenerating
 ```
@@ -182,5 +185,8 @@ python3 internal/scripts/build-citation-index.py --check
 - Pairing refuses to join a case name to a reporter across an intervening case name, so an
   unparseable reporter leaves the authority unpaired rather than joined to the next case's
   numbers. An index that invents citations would be worse than none.
+- Blank `_form-library/` templates, `service_admin` forms, and HOPE discovery
+  manuals are listed in `documents[]` with `citationScan: skipped` and contribute
+  zero citations. They remain in the search index.
 - Nothing here verifies a citation exists or says what it is claimed to say. This locates
   and counts; verification remains the audit's job.
