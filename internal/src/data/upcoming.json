@@ -1,5 +1,16 @@
 [
   {
+    "date": "Sep. 4, 2026",
+    "event": "Williams stated he will attempt to respond to Plaintiff's Aug. 19 opening demand ($55,000 Randstad-only / $85,000 global) by this date — Newanforbi v. Randstad US, LLC et al. (26CV199902). Not a court deadline. Watch for accept / counter / decline. Do not treat 'attempt' as a granted hold unless Plaintiff confirms the numbers remain open.",
+    "matters": [
+      27
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "opposing",
+    "source": "/documents/matter-27/Gmail - Williams Request for Time on Opening Demand through Sep 4 (Aug 28 2026).pdf"
+  },
+  {
     "date": "Aug. 28, 2026",
     "event": "Demurrer Hearing — Newanforbi v. California Highway Patrol et al. (26CV191136), APPEAR 10:30 a.m. (moved from 9:00 due to late tentative), Dept. 25, Hon. Jenna M. Whitman; tentative OVERRULES demurrer on COAs 1 & 4 and SUSTAINS WOLA on COAs 2 & 3. Zoom 161 8066 1142 / passcode 5805.",
     "matters": [
@@ -93,16 +104,6 @@
     "upcoming": true,
     "actor": "you",
     "source": "/documents/matter-35/CV-5012 Civil Lawsuit Notice (Clerk-Stamped) - 26CV501995.pdf"
-  },
-  {
-    "date": "Sep. 12, 2026",
-    "event": "Outer bound — $85,000 global settlement offer payment window (Matter 27): 15 days from August 28, 2026. If funds are not agreed/cleared inside this fuse, the $85,000 global opener expires and Plaintiff returns to litigation posture (including the higher Randstad-only demand frame) rather than moving below $85,000.",
-    "matters": [
-      27
-    ],
-    "type": "deadline",
-    "upcoming": true,
-    "actor": "opposing"
   },
   {
     "date": "Sep. 10, 2026",

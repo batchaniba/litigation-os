@@ -1,6 +1,39 @@
 [
   {
     "date": "Aug. 28, 2026",
+    "event": "WILLIAMS REQUESTS TIME ON OPENING DEMAND \u2014 Chadwick L. Williams (Kabat Chapman & Ozmer LLP) emailed Aug. 28, 2026 at 6:49 a.m. (copying Nathan Chapman) that he is still conferring with Randstad US, LLC and requires additional time, and that he will attempt to respond to Plaintiff's opening demand by September 4, 2026. Delay request, not a counteroffer. The live transmitted ask remains the Aug. 19, 2026 6:03 a.m. email: $55,000 Randstad-only or $85,000 global, payment within 15 business days after execution, originally open through 2:00 p.m. PT Aug. 28. Williams had acknowledged receipt Aug. 19 at 7:49 a.m. This does not extend Randstad's Sept. 15, 2026 pleading deadline or RK Logistics' Aug. 31, 2026 clock. Evid. Code \u00a71152 / FRE 408.",
+    "matters": [
+      27
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "actor": "opposing",
+    "source": "/documents/matter-27/Gmail - Williams Request for Time on Opening Demand through Sep 4 (Aug 28 2026).pdf"
+  },
+  {
+    "date": "Aug. 19, 2026",
+    "event": "TRANSMITTED \u2014 Opening settlement demand emailed to Chadwick L. Williams (cc Nathan Chapman) at 6:03 a.m.: Randstad US, LLC may resolve Plaintiff's claims against it for $55,000, or Randstad and The RK Logistics Group, Inc. may resolve all claims globally for $85,000, each inclusive of damages, statutory remedies, fees, and costs; payment within 15 business days after execution; dismissal with prejudice after cleared payment; no admission; releases limited to claims arising from the events alleged through the execution date; mutual non-disparagement; allocation of any global payment left to Defendants. Open through 2:00 p.m. PT August 28, 2026. Evid. Code \u00a71152 / FRE 408. This is the live ask \u2014 not the unsent Aug. 18 $250,000 letter.",
+    "matters": [
+      27
+    ],
+    "type": "settlement",
+    "upcoming": false,
+    "actor": "you",
+    "source": "/documents/matter-27/Gmail - Williams Request for Time on Opening Demand through Sep 4 (Aug 28 2026).pdf"
+  },
+  {
+    "date": "Sep. 4, 2026",
+    "event": "Williams stated he will attempt to respond to Plaintiff's Aug. 19 opening demand ($55,000 Randstad-only / $85,000 global) by this date \u2014 Newanforbi v. Randstad US, LLC et al. (26CV199902). Not a court deadline. Watch for accept / counter / decline. Do not treat 'attempt' as a granted hold unless Plaintiff confirms the numbers remain open.",
+    "matters": [
+      27
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "opposing",
+    "source": "/documents/matter-27/Gmail - Williams Request for Time on Opening Demand through Sep 4 (Aug 28 2026).pdf"
+  },
+  {
+    "date": "Aug. 28, 2026",
     "event": "Demurrer Hearing \u2014 Newanforbi v. California Highway Patrol et al. (26CV191136), APPEAR 10:30 a.m. (moved from 9:00 due to late tentative), Dept. 25, Hon. Jenna M. Whitman; tentative OVERRULES demurrer on COAs 1 & 4 and SUSTAINS WOLA on COAs 2 & 3. Zoom 161 8066 1142 / passcode 5805.",
     "matters": [
       20
@@ -258,17 +291,17 @@
   },
   {
     "date": "Sep. 12, 2026",
-    "event": "Outer bound \u2014 $85,000 global settlement offer payment window (Matter 27): 15 days from August 28, 2026. If funds are not agreed/cleared inside this fuse, the $85,000 global opener expires and Plaintiff returns to litigation posture (including the higher Randstad-only demand frame) rather than moving below $85,000.",
+    "event": "SUPERSEDED \u2014 Outer bound that treated an $85,000 global as payable within 15 calendar days from August 28, 2026. The live Aug. 19 transmitted demand is $55,000 Randstad-only or $85,000 global, with payment due 15 business days after execution of a settlement agreement, not a calendar fuse from Aug. 28. Fuse does not start unless the demand is accepted.",
     "matters": [
       27
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "opposing"
   },
   {
     "date": "Aug. 23, 2026",
-    "event": "EXECUTED \u2014 Global settlement offer as to Randstad US, LLC and The RK Logistics Group, Inc. (Matter 27, Alameda Sup. Ct. No. 26CV199902): $85,000.00 global resolution, payable within 15 days from August 28, 2026. Time-limited quick-cash opener covering both defendants; supersedes the unsent Aug. 18 $250,000 Randstad-only demand as the live ask. Evid. Code \u00a71152 / FRE 408.",
+    "event": "INTERNAL FRAMING ONLY \u2014 Aug. 23 note of an $85,000 global payable within 15 calendar days from August 28, 2026. Does not change the live transmitted ask, which is the Aug. 19 email to Williams ($55,000 Randstad-only / $85,000 global, 15 business days after execution, originally open through 2:00 p.m. PT Aug. 28). The Aug. 18 $250,000 letter remains unsent.",
     "matters": [
       27
     ],
