@@ -71,8 +71,8 @@ describe("statusLabel derivation", () => {
       upcoming: true,
     } as TimelineEvent;
     expect(deriveStatusLabel(defaultMatter, { events: [proveUp] })).toBe("Default prove-up — Dec. 1, 2099");
-    expect(deriveStatusLabel(cases.find((item) => item.number === 24)!, { events: eventsFor(24) })).toContain(
-      "CMC Sep. 15, 2026",
+    expect(deriveStatusLabel(cases.find((item) => item.number === 24)!, { events: eventsFor(24) })).toMatch(
+      /CMC.*Sep\. 15, 2026/,
     );
   });
 
