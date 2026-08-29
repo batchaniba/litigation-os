@@ -80,7 +80,23 @@ describe("statusLabel derivation", () => {
     expect(deriveStatusLabel(cases.find((item) => item.number === 25)!, { events: eventsFor(25) })).toBe(
       "Served Jul. 24, 2026 — Response due Aug. 31, 2026",
     );
-    expect(deriveStatusLabel(cases.find((item) => item.number === 27)!, { events: eventsFor(27) })).toBe(
+    // Synthetic — Matter 27's live calendar now includes the Dec. 17 CMC, which
+    // outranks the August response date. Pin the pairing rule so the test does
+    // not rot when that posture moves.
+    const servedMatter = {
+      number: 27,
+      lifecycle: "active" as const,
+      phase: "responsive_deadline" as const,
+      serviceTracking: [{ name: "Randstad", served: true, dateServed: "July 30, 2026" }],
+    };
+    const responseDue = {
+      date: "Aug. 31, 2026",
+      event: "Response due — Matter 27",
+      type: "deadline",
+      matters: [27],
+      upcoming: true,
+    } as TimelineEvent;
+    expect(deriveStatusLabel(servedMatter, { events: [responseDue] })).toBe(
       "Served Jul. 30, 2026 — Response due Aug. 31, 2026",
     );
   });

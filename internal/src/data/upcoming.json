@@ -1,5 +1,27 @@
 [
   {
+    "date": "Sep. 8, 2026",
+    "event": "Response deadline (self-imposed) — post-expiry $175,000 Randstad-only settlement demand. Williams to accept, counter, or request a call by 5:00 p.m. PT; one week before Randstad's Sept. 15 responsive-pleading date. Not a court deadline. Evid. Code §1152 / FRE 408.",
+    "matters": [
+      27
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "opposing",
+    "source": "/documents/matter-27/Settlement Demand - Randstad US LLC (Aug 28 2026).pdf"
+  },
+  {
+    "date": "Sep. 4, 2026",
+    "event": "WATCH — Williams said he will attempt to respond by this date. The Aug. 19 $55,000/$85,000 demands expire (and are not being held) at 2:00 p.m. PT Aug. 28. The successor demand is $175,000 Randstad-only, with its own Sept. 8 response date. Anything he sends on Sept. 4 is a number into that field, not an acceptance of the expired figures. Not a court deadline. Pleading clocks: RK Logistics Sept. 14 (granted; no further); Randstad Sept. 15.",
+    "matters": [
+      27
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "opposing",
+    "source": "/documents/matter-27/Gmail - Williams Request for Time on Opening Demand through Sep 4 (Aug 28 2026).pdf"
+  },
+  {
     "date": "Oct. 5, 2026",
     "event": "HEARING — Defendant UPS's Rule 12(b)(6) Motion to Dismiss (ECF No. 7), Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD), 1:30 p.m., Courtroom 4. Drozd civil law-and-motion is Zoom only (Standing Order I.A). Opposition due Sep. 9, 2026 (L.R. 230(c)).",
     "matters": [
@@ -86,16 +108,6 @@
     "source": "/documents/matter-35/CV-5012 Civil Lawsuit Notice (Clerk-Stamped) - 26CV501995.pdf"
   },
   {
-    "date": "Sep. 12, 2026",
-    "event": "Outer bound — $85,000 global settlement offer payment window (Matter 27): 15 days from August 28, 2026. If funds are not agreed/cleared inside this fuse, the $85,000 global opener expires and Plaintiff returns to litigation posture (including the higher Randstad-only demand frame) rather than moving below $85,000.",
-    "matters": [
-      27
-    ],
-    "type": "deadline",
-    "upcoming": true,
-    "actor": "opposing"
-  },
-  {
     "date": "Sep. 10, 2026",
     "event": "Meet-and-confer deadline (computed) as to Randstad US, LLC — Newanforbi v. Randstad US, LLC et al. (26CV199902); CCP §430.41(a)(2) requires meet-and-confer at least 5 calendar days before the extended Sept. 15, 2026 responsive-pleading deadline if Randstad intends to demur; otherwise Randstad must file the §430.41(a)(2) declaration for the automatic 30-day extension, which would carry its response to on or about Oct. 15, 2026.",
     "matters": [
@@ -107,7 +119,27 @@
   },
   {
     "date": "Sep. 15, 2026",
-    "event": "Extended responsive-pleading deadline — Randstad US, LLC only, Newanforbi v. Randstad US, LLC et al. (26CV199902); 15 days past the Aug. 31, 2026 computed deadline, agreed on the Aug. 18, 2026 call with Chadwick L. Williams (Kabat Chapman & Ozmer LLP) and confirmed in his 2:11 p.m. email the same day. Party agreement only — no stipulation is on file with the court, so the docket will still show the Aug. 31 date. The RK Logistics Group, Inc.'s Aug. 31, 2026 deadline is unaffected.",
+    "event": "Extended responsive-pleading deadline — Randstad US, LLC only, Newanforbi v. Randstad US, LLC et al. (26CV199902); 15 days past the Aug. 31, 2026 computed deadline, agreed on the Aug. 18, 2026 call with Chadwick L. Williams (Kabat Chapman & Ozmer LLP) and confirmed in his 2:11 p.m. email the same day. Party agreement only — no stipulation is on file with the court, so the docket will still show the Aug. 31 date. The RK Logistics Group, Inc.'s deadline is now Sept. 14, 2026 (Garcia request granted; no further extension).",
+    "matters": [
+      27
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "opposing"
+  },
+  {
+    "date": "Sep. 9, 2026",
+    "event": "Meet-and-confer deadline (computed) as to The RK Logistics Group, Inc. — Newanforbi v. Randstad US, LLC et al. (26CV199902); CCP §430.41(a)(2) requires meet-and-confer at least 5 calendar days before the extended Sept. 14, 2026 responsive-pleading deadline, if RK Logistics intends to demur; otherwise it must file a declaration for the automatic 30-day extension. Randstad US, LLC's meet-and-confer remains Sept. 10, 2026.",
+    "matters": [
+      27
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "opposing"
+  },
+  {
+    "date": "Sep. 14, 2026",
+    "event": "Extended responsive-pleading deadline — The RK Logistics Group, Inc. only, Newanforbi v. Randstad US, LLC et al. (26CV199902); two weeks past the Aug. 31, 2026 computed deadline, per Melinda Garcia's Aug. 21 request as granted by Plaintiff. Party agreement only — no stipulation is on file unless Garcia files one. Single extension; Plaintiff will not grant a further one. Randstad US, LLC remains Sept. 15, 2026.",
     "matters": [
       27
     ],
@@ -236,16 +268,6 @@
     ],
     "type": "hearing",
     "upcoming": true
-  },
-  {
-    "date": "Aug. 31, 2026",
-    "event": "Responsive pleading deadline (computed) — The RK Logistics Group, Inc. only, Newanforbi v. Randstad US, LLC et al. (26CV199902); 30 days from the Jul. 30, 2026 service date (CCP §412.20(a)(3)); the raw 30-day count lands on Saturday, Aug. 29, extended to Monday per CCP §12a. Randstad US, LLC's deadline was extended 15 days to Sept. 15, 2026 by agreement reached on the Aug. 18, 2026 call with its counsel, Chadwick L. Williams (Kabat Chapman & Ozmer LLP).",
-    "matters": [
-      27
-    ],
-    "type": "deadline",
-    "upcoming": true,
-    "actor": "opposing"
   },
   {
     "date": "Oct. 15, 2026",
