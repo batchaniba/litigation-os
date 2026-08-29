@@ -126,7 +126,7 @@ const outcomes_raw = {
       outcome: "favorable",
       title: "Order Granting Administrative Motion to Consider Whether Cases Should Be Related (Civil L.R. 3-12)",
       holding: "Newanforbi v. Serrato (4:26-cv-05953-ASK) and Nforbi v. Meza-Gonzalez et al. (3:26-cv-08271-PHK, Matter 32) are RELATED. Clerk directed to reassign Meza-Gonzalez to Magistrate Judge Krishnan. Meza CMC to be rescheduled. Serrato CMC remains September 15, 2026.",
-      significance: "Puts the U-visa certification case and the November 1, 2024 false-arrest case in front of the same judge who already held, at §1915 screening, that the CHP incident allegations plausibly state false imprisonment on fabricated evidence. Relatedness is not a merits ruling, but it is the assignment Plaintiff asked for. Serrato's MTD (hearing Sep. 16) and the Meza service / CMC track now run in one courtroom.",
+      significance: "Puts the U-visa certification case and the November 1, 2024 false-arrest case in front of the same judge who already held, at §1915 screening, that the CHP incident allegations plausibly state false imprisonment on fabricated evidence. Relatedness is not a merits ruling, but it is the assignment Plaintiff asked for. Serrato's MTD (hearing reset to Sep. 30) and the Meza service / CMC track now run in one courtroom.",
       document_path: "/documents/opinions/Newanforbi v Serrato - USDC NDCal - Order Relating Meza Aug 24 2026.pdf"
     },
     {
