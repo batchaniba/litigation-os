@@ -77,8 +77,21 @@
     "source": "/documents/matter-27/Gmail - Williams Request for Time on Opening Demand through Sep 4 (Aug 28 2026).pdf"
   },
   {
+    "date": "Aug. 31, 2026",
+    "event": "EXECUTED (unfiled) \u2014 Notice of Supplemental Authority in Newanforbi v. Serrato (4:26-cv-05953-ASK) lodging Hon. Jenna M. Whitman's August 27, 2026 written tentative on the CHP demurrer in Alameda No. 26CV191136 (heard August 28). Caption hearing date is September 30, 2026 (Dkt. 21). The notice attaches the tentative as Exhibit A, states that the minute order has not yet entered, and does not ask Krishnan to treat the tentative as a final state-court judgment. No argument; Civil L.R. 7-3. Email POS on DAG Haiyang A. Li. Supersedes the Aug. 28 draft (which still said Sep. 16). Swap Exhibit A for the minute order when it is in hand.",
+    "matters": [
+      24,
+      20
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-24/Notice of Supplemental Authority - Whitman Tentative with POS (Aug 31 2026).pdf"
+  },
+  {
     "date": "Aug. 28, 2026",
-        "event": "FILED \u2014 Clerk's Notice Resetting Hearing on Motion to Dismiss (Dkt. 21) in Newanforbi v. Serrato (4:26-cv-05953-ASK). The hearing on Defendant's Motion to Dismiss the FAC (Dkt. 18) is reset to September 30, 2026, 1:30 p.m., before Mag. Ajay S. Krishnan, Oakland Courtroom 4, 3rd Floor, because the motion was noticed for hearing on less than 35 days (Civil L.R. 7-2(a)). The notice says the briefing schedule remains in effect but lists Opposition due 9/9/2025 and Reply due 9/16/2025 \u2014 those years are wrong on the face of the order; do not treat 2025 as a deadline. Opposition was original-filed Aug. 27 (page-1 stamp). Courtesy copy emailed Aug. 28 by Andy Marquez, Office of the Attorney General.",
+    "event": "FILED \u2014 Clerk's Notice Resetting Hearing on Motion to Dismiss (Dkt. 21) in Newanforbi v. Serrato (4:26-cv-05953-ASK). The hearing on Defendant's Motion to Dismiss the FAC (Dkt. 18) is reset to September 30, 2026, 1:30 p.m., before Mag. Ajay S. Krishnan, Oakland Courtroom 4, 3rd Floor, because the motion was noticed for hearing on less than 35 days (Civil L.R. 7-2(a)). The notice says the briefing schedule remains in effect but lists Opposition due 9/9/2025 and Reply due 9/16/2025 \u2014 those years are wrong on the face of the order; do not treat 2025 as a deadline. Opposition was original-filed Aug. 27 (page-1 stamp). Courtesy copy emailed Aug. 28 by Andy Marquez, Office of the Attorney General.",
     "matters": [
       24
     ],
@@ -90,7 +103,7 @@
   },
   {
     "date": "Aug. 28, 2026",
-    "event": "EXECUTED (unfiled) \u2014 Notice of Supplemental Authority in Newanforbi v. Serrato (4:26-cv-05953-ASK) lodging Hon. Jenna M. Whitman's August 27, 2026 written tentative on the CHP demurrer in Alameda No. 26CV191136 (heard August 28). The Serrato opposition was original-filed August 27, the day before that hearing. The notice attaches the tentative as Exhibit A, states that the minute order has not yet entered, and does not ask Krishnan to treat the tentative as a final state-court judgment. Email POS on DAG Haiyang A. Li. Drop at N.D. Cal. with the operative-FAC notices if filing paper today. Swap Exhibit A for the minute order when it is in hand.",
+    "event": "SUPERSEDED \u2014 Aug. 28 draft Notice of Supplemental Authority (Whitman tentative) in Newanforbi v. Serrato (4:26-cv-05953-ASK). Caption still said September 16; Dkt. 21 reset the hearing to September 30. Replaced by the August 31, 2026 packet.",
     "matters": [
       24,
       20
@@ -110,7 +123,8 @@
     "type": "event",
     "upcoming": false,
     "actor": "you",
-    "source": "/documents/matter-12/Diamond Truck Sales Inc - CA SOS Registered Agent for Service of Process (Aug 28 2026).pdf"  },
+    "source": "/documents/matter-12/Diamond Truck Sales Inc - CA SOS Registered Agent for Service of Process (Aug 28 2026).pdf"
+  },
   {
     "date": "Aug. 28, 2026",
     "event": "HELD \u2014 Demurrer hearing, 10:30 a.m., Dept. 25, Hon. Jenna M. Whitman \u2014 Newanforbi v. CHP et al. (26CV191136). Petitioner appeared. The Aug. 27 tentative had overruled COAs 1 & 4 and sustained WOLA on COAs 2 & 3; whether that tentative was adopted is not yet recorded. Do not treat the tentative as the final order until the minute order is in hand.",

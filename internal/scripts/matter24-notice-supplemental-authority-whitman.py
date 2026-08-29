@@ -6,6 +6,9 @@ the Alameda demurrer hearing. This notice lodges Judge Whitman's written
 tentative (August 27, for the August 28 hearing) with Magistrate Judge
 Krishnan. It does not treat the tentative as the minute order.
 
+Dkt. 21 (Aug. 28) reset the MTD hearing to September 30, 2026, 1:30 p.m.
+Execution date for this packet: August 31, 2026.
+
   python3 internal/scripts/matter24-notice-supplemental-authority-whitman.py
 """
 from __future__ import annotations
@@ -26,7 +29,8 @@ from pleading_paper import CONTENT_LEFT, PleadingPaper  # noqa: E402
 from signature_stamp import SIGNATURE_ASPECT, SIGNATURE_PATH  # noqa: E402
 
 ROOT = SCRIPT_DIR.parent
-EXEC_DATE = "August 28, 2026"
+EXEC_DATE = "August 31, 2026"
+HEARING_DATE = "September 30, 2026"
 SERVICE_PLACE = "San Jose, California"
 
 MATTER24 = ROOT / "public/documents/matter-24"
@@ -36,16 +40,16 @@ TENTATIVE = (
     / "Tentative Ruling - CHP Demurrer (Dept 25 Whitman, Aug 27 2026 for Aug 28 hearing).pdf"
 )
 OUT_NOTICE = MATTER24 / (
-    "Notice of Supplemental Authority - Whitman Tentative - Serrato MTD (Aug 28 2026).pdf"
+    "Notice of Supplemental Authority - Whitman Tentative - Serrato MTD (Aug 31 2026).pdf"
 )
 OUT_COVER = MATTER24 / (
     "Exhibit A Cover - Whitman Tentative Ruling (Aug 27 2026).pdf"
 )
 OUT_POS = MATTER24 / (
-    "Proof of Service by Email - Notice of Supplemental Authority Whitman (Aug 28 2026).pdf"
+    "Proof of Service by Email - Notice of Supplemental Authority Whitman (Aug 31 2026).pdf"
 )
 OUT_PACKET = MATTER24 / (
-    "Notice of Supplemental Authority - Whitman Tentative with POS (Aug 28 2026).pdf"
+    "Notice of Supplemental Authority - Whitman Tentative with POS (Aug 31 2026).pdf"
 )
 
 ATTY = [
@@ -100,8 +104,10 @@ def _stamp_sig(path: Path) -> None:
     y0 = y1 - height
     rect = fitz.Rect(line.x0, y0, line.x0 + width, y1)
     page.insert_image(rect, filename=SIGNATURE_PATH, keep_proportion=True)
-    doc.saveIncr()
+    tmp = path.with_name(path.stem + ".signed.pdf")
+    doc.save(tmp, garbage=4, deflate=True, incremental=False)
     doc.close()
+    tmp.replace(path)
 
 
 def build_notice(path: Path) -> None:
@@ -132,8 +138,9 @@ def build_notice(path: Path) -> None:
         ("AUTHORITY", True, False),
         ("[Civil L.R. 7-3]", True, False),
         ("", False, False),
-        ("Date: September 16, 2026", False, False),
+        (f"Date: {HEARING_DATE}", False, False),
         ("Time: 1:30 p.m.", False, False),
+        ("Ctrm: Oakland 4, 3rd Floor", False, False),
         ("Judge: Hon. Ajay S. Krishnan", False, False),
     ]
     d.draw_caption_block(left, right, caption_size=10, tight_lh=13, boxed=True)
@@ -149,7 +156,8 @@ def build_notice(path: Path) -> None:
         "Plaintiff Brendan Ngehsi Newanforbi, appearing in propria persona, "
         "submits this Notice of Supplemental Authority in connection with "
         "Defendant's Motion to Dismiss the First Amended Complaint and/or "
-        "Motion to Strike (noticed for September 16, 2026). Plaintiff's "
+        f"Motion to Strike (hearing reset by Clerk's Notice, Dkt. 21, to "
+        f"{HEARING_DATE}, 1:30 p.m., Oakland Courtroom 4). Plaintiff's "
         "opposition was original-filed August 27, 2026, the day before the "
         "state-court hearing described below.",
         first_indent=0,
