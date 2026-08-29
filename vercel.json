@@ -9,6 +9,16 @@
       "source": "/fedex-consent/",
       "destination": "/fedex-consent.pdf",
       "permanent": false
+    },
+    {
+      "source": "/ups-opp",
+      "destination": "/ups-opp.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/ups-opp/",
+      "destination": "/ups-opp.pdf",
+      "permanent": false
     }
   ],
   "headers": [
@@ -18,6 +28,15 @@
         {
           "key": "Content-Disposition",
           "value": "attachment; filename=\"Consent to Magistrate Judge Jurisdiction - Federal Express (E.D. Cal. 2-26-cv-02881) (Aug 28 2026).pdf\"; filename*=UTF-8''Consent%20to%20Magistrate%20Judge%20Jurisdiction%20-%20Federal%20Express%20%28E.D.%20Cal.%202-26-cv-02881%29%20%28Aug%2028%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/ups-opp.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Opposition to UPS Rule 12(b)(6) Motion to Dismiss (E.D. Cal. 2-26-cv-02847) (Sep 9 2026).pdf\"; filename*=UTF-8''Opposition%20to%20UPS%20Rule%2012%28b%29%286%29%20Motion%20to%20Dismiss%20%28E.D.%20Cal.%202-26-cv-02847%29%20%28Sep%209%202026%29.pdf"
         }
       ]
     }
