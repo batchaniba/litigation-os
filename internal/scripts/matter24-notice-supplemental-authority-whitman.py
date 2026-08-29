@@ -26,6 +26,7 @@ sys.path.insert(0, str(SCRIPT_DIR / "lib"))
 
 from pdf_packet import assemble  # noqa: E402
 from pleading_paper import CONTENT_LEFT, PleadingPaper  # noqa: E402
+from exhibit_cover import write_exhibit_cover  # noqa: E402
 from signature_stamp import SIGNATURE_ASPECT, SIGNATURE_PATH  # noqa: E402
 
 ROOT = SCRIPT_DIR.parent
@@ -204,26 +205,23 @@ def build_notice(path: Path) -> None:
 
 
 def build_exhibit_cover(path: Path) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    page_w, page_h = letter
-    c = canvas.Canvas(str(path), pagesize=letter)
-    c.setFont("Times-Bold", 14)
-    c.drawCentredString(page_w / 2, page_h / 2 + 40, "EXHIBIT A")
-    c.setFont("Times-Roman", 12)
-    lines = [
-        "Tentative Ruling",
-        "Hon. Jenna M. Whitman, Department 25",
-        "Alameda County Superior Court",
-        "Newanforbi v. California Highway Patrol et al.",
-        "No. 26CV191136",
-        "Issued August 27, 2026, for the August 28, 2026 demurrer hearing",
-        "Minute order not yet entered — do not treat as the final order",
-    ]
-    y = page_h / 2 + 10
-    for line in lines:
-        c.drawCentredString(page_w / 2, y, line)
-        y -= 18
-    c.save()
+    """Diamond default-packet exhibit cover (portfolio house style)."""
+    write_exhibit_cover(
+        path,
+        court="UNITED STATES DISTRICT COURT",
+        court_line2="NORTHERN DISTRICT OF CALIFORNIA",
+        caption="NEWANFORBI v. SERRATO",
+        case_no="Case No. 4:26-cv-05953-ASK",
+        exhibit="A",
+        title="Tentative Ruling",
+        details=[
+            "Hon. Jenna M. Whitman, Department 25",
+            "Alameda County Superior Court — No. 26CV191136",
+            "Issued August 27, 2026, for the August 28, 2026 demurrer hearing",
+            "Minute order not yet entered — do not treat as the final order",
+        ],
+        footer="Notice of Supplemental Authority — Newanforbi v. Serrato",
+    )
 
 
 def build_email_pos(path: Path) -> None:

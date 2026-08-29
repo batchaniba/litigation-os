@@ -13,17 +13,16 @@ Address of record on this form: 1455 Cat Tail Drive, Stockton, CA 95204.
 
 from __future__ import annotations
 
-import io
 import sys
 from pathlib import Path
 
 import fitz
 from pypdf import PdfReader, PdfWriter
-from reportlab.lib.colors import Color, black, white
-from reportlab.pdfgen import canvas
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPT_DIR))
+sys.path.insert(0, str(SCRIPT_DIR / "lib"))
+from exhibit_cover import write_exhibit_cover  # noqa: E402
 from signature_stamp import SIGNATURE_ASPECT, SIGNATURE_PATH  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -91,8 +90,6 @@ F = {
 SIG_X0 = 360.0
 SIG_X1 = 540.0
 SIG_Y_LINE = 556.3
-
-GRAY = Color(0.5, 0.5, 0.5)
 
 
 # Every caption-block field is drawn directly as static page content instead
@@ -200,71 +197,25 @@ def fill_hc004(out: Path) -> None:
     tmp.replace(out)
 
 
-def _center(c: canvas.Canvas, text: str, y: float, font: str, size: float, color=black) -> None:
-    c.setFillColor(color)
-    c.setFont(font, size)
-    c.drawCentredString(306, y, text)
-
-
 def build_exhibit_cover(out: Path) -> None:
-    """Matter-12 default-packet exhibit cover style (black header bar, giant letter)."""
-    buf = io.BytesIO()
-    c = canvas.Canvas(buf, pagesize=(612, 792))
-
-    # Outer border (1 pt) and black header band — match Matter 12 geometry.
-    c.setStrokeColor(black)
-    c.setLineWidth(1.0)
-    c.rect(36, 36, 540, 720, stroke=1, fill=0)
-
-    c.setFillColor(black)
-    c.rect(36, 692, 540, 64, stroke=0, fill=1)  # y=792-100=692 … 792-36=756 → height 64
-    # Matter 12: header band Rect(36, 36, 576, 100) in top-origin → bottom-origin:
-    # top 36 → y=756; bottom 100 → y=692; height=64. Yes.
-
-    _center(c, "SANTA CLARA COUNTY SUPERIOR COURT", 738, "Helvetica-Bold", 9, white)
-    _center(
-        c,
-        "IN RE NEWANFORBI (CDC BF3571) v. DODD ET AL.",
-        723,
-        "Helvetica",
-        8,
-        white,
+    """Diamond default-packet exhibit cover (portfolio house style)."""
+    write_exhibit_cover(
+        out,
+        court="SANTA CLARA COUNTY SUPERIOR COURT",
+        caption="IN RE NEWANFORBI (CDC BF3571) v. DODD ET AL.",
+        case_no=f"Case No. {CASE_NUMBER}",
+        exhibit="A",
+        title="Petition for Writ of Habeas Corpus",
+        details=[
+            "Filed April 3, 2026 | Santa Clara Superior Court",
+            "Immediate Discharge from Parole Requested",
+            "(Cal. Penal Code § 1473 et seq.)",
+        ],
+        footer=(
+            "Notice and Request for Ruling (HC-004) — "
+            f"Case No. {CASE_NUMBER}"
+        ),
     )
-    _center(c, f"Case No. {CASE_NUMBER}", 710, "Helvetica", 8, white)
-
-    # EXHIBIT above giant letter — keep number clear of the description rule.
-    _center(c, "EXHIBIT", 530, "Helvetica", 18, black)
-    _center(c, "A", 370, "Helvetica-Bold", 130, black)
-
-    # Rule above description (Matter 12: y_top 452 → bottom-origin 340)
-    c.setStrokeColor(black)
-    c.setLineWidth(0.75)
-    c.line(108, 340, 504, 340)
-
-    _center(c, "Petition for Writ of Habeas Corpus", 318, "Helvetica-Bold", 13, black)
-    _center(
-        c,
-        "Filed April 3, 2026 | Santa Clara Superior Court",
-        298,
-        "Helvetica",
-        10,
-        black,
-    )
-    _center(c, "Immediate Discharge from Parole Requested", 283, "Helvetica", 10, black)
-    _center(c, "(Cal. Penal Code § 1473 et seq.)", 268, "Helvetica", 10, black)
-
-    _center(
-        c,
-        "Notice and Request for Ruling (HC-004) — Case No. C2604791",
-        52,
-        "Helvetica",
-        7.5,
-        GRAY,
-    )
-
-    c.save()
-    out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_bytes(buf.getvalue())
 
 
 def assemble_packet(hc004: Path, cover: Path, petition: Path, out: Path) -> int:
