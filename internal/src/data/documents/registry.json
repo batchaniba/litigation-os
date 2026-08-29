@@ -1052,8 +1052,18 @@
       "ownerMatter": 24
     },
     {
+      "path": "/documents/matter-24/Notice of Supplemental Authority - Whitman Tentative - Serrato MTD (Aug 31 2026).pdf",
+      "label": "Notice of Supplemental Authority - Whitman Tentative - Serrato MTD (Aug 31 2026)",
+      "ownerMatter": 24
+    },
+    {
       "path": "/documents/matter-24/Notice of Supplemental Authority - Whitman Tentative with POS (Aug 28 2026).pdf",
       "label": "Notice of Supplemental Authority - Whitman Tentative with POS (Aug 28 2026)",
+      "ownerMatter": 24
+    },
+    {
+      "path": "/documents/matter-24/Notice of Supplemental Authority - Whitman Tentative with POS (Aug 31 2026).pdf",
+      "label": "Notice of Supplemental Authority - Whitman Tentative with POS (Aug 31 2026)",
       "ownerMatter": 24
     },
     {
@@ -1104,6 +1114,11 @@
     {
       "path": "/documents/matter-24/Proof of Service by Email - Notice of Supplemental Authority Whitman (Aug 28 2026).pdf",
       "label": "Proof of Service by Email - Notice of Supplemental Authority Whitman (Aug 28 2026)",
+      "ownerMatter": 24
+    },
+    {
+      "path": "/documents/matter-24/Proof of Service by Email - Notice of Supplemental Authority Whitman (Aug 31 2026).pdf",
+      "label": "Proof of Service by Email - Notice of Supplemental Authority Whitman (Aug 31 2026)",
       "ownerMatter": 24
     },
     {

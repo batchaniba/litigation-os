@@ -4,7 +4,7 @@
   "case_no": "4:26-cv-05953-ASK",
   "court": "USDC N.D. Cal.",
   "claims": "42 USC 1983: Fourteenth Amendment (Substantive & Procedural Due Process), First Amendment (Retaliation); Declaratory Relief",
-  "status": "Active — FAC (Doc. 10) operative. Serrato's MTD (Dkt. 18) hearing reset by Clerk's Notice (Dkt. 21, Aug. 28) to Sep. 30, 1:30 p.m., Oakland Courtroom 4, for short notice under Civil L.R. 7-2(a). Opposition original-filed Aug. 27. Whitman NSA packet executed Aug. 28, unfiled. CMC Sep. 15.",
+  "status": "Active — FAC (Doc. 10) operative. Serrato's MTD (Dkt. 18) hearing reset by Clerk's Notice (Dkt. 21, Aug. 28) to Sep. 30, 1:30 p.m., Oakland Courtroom 4, for short notice under Civil L.R. 7-2(a). Opposition original-filed Aug. 27. Whitman NSA packet executed Aug. 31 (supersedes Aug. 28 draft), unfiled — hearing date on caption is Sep. 30. CMC Sep. 15.",
   "status_label": "CMC Sep. 15 — MTD hearing reset to Sep. 30",
   "lifecycle": "active",
   "proceeding": "federal_civil",
@@ -165,6 +165,18 @@
     {
       "path": "/documents/matter-24/Clerk's Notice Resetting Hearing on Motion to Dismiss (Dkt 21, Filed Aug 28 2026).pdf",
       "filed": true
+    },
+    {
+      "path": "/documents/matter-24/Notice of Supplemental Authority - Whitman Tentative with POS (Aug 31 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-24/Notice of Supplemental Authority - Whitman Tentative - Serrato MTD (Aug 31 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-24/Proof of Service by Email - Notice of Supplemental Authority Whitman (Aug 31 2026).pdf",
+      "filed": false
     },
     {
       "path": "/documents/matter-24/Notice of Supplemental Authority - Whitman Tentative with POS (Aug 28 2026).pdf",
