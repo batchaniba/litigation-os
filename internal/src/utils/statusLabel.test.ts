@@ -24,12 +24,36 @@ describe("statusLabel derivation", () => {
   });
 
   it("prefers demurrer hearings over earlier reply deadlines", () => {
-    const matter = cases.find((item) => item.number === 20)!;
-    const events = eventsFor(20);
-    const posture = pickPostureEvent(events, matter.phase);
-    expect(posture?.date).toBe("Aug. 28, 2026");
+    // Synthetic — Matter 20's Aug. 28 demurrer was held; live posture is the
+    // Sep. 2 CMC plus a status_label override. Pin the ranking rule here so
+    // this test does not rot every time that calendar moves.
+    const matter = { number: 20, lifecycle: "active" as const, phase: "demurrer" as const };
+    const reply = {
+      date: "Aug. 21, 2026",
+      event: "AG reply deadline — Matter 20",
+      type: "deadline",
+      matters: [20],
+      upcoming: true,
+    } as TimelineEvent;
+    const hearing = {
+      date: "Aug. 28, 2026",
+      event: "Demurrer Hearing — Matter 20",
+      type: "hearing",
+      matters: [20],
+      upcoming: true,
+    } as TimelineEvent;
+    const events = [reply, hearing];
+    expect(pickPostureEvent(events, matter.phase)?.date).toBe("Aug. 28, 2026");
     expect(deriveStatusLabel(matter, { events })).toContain("Aug. 28, 2026");
     expect(deriveStatusLabel(matter, { events })).toMatch(/Demurrer hearing/i);
+  });
+
+  it("uses the next live calendar date after a held demurrer hearing", () => {
+    const matter = cases.find((item) => item.number === 20)!;
+    const events = eventsFor(20);
+    expect(matter.status_label).toMatch(/minute order pending/i);
+    expect(effectiveStatusLabel(matter, { events })).toMatch(/minute order pending/i);
+    expect(pickPostureEvent(events, matter.phase)?.date).toBe("Sep. 2, 2026");
   });
 
   it("derives default prove-up and CMC dates from upcoming hearings", () => {
@@ -47,8 +71,8 @@ describe("statusLabel derivation", () => {
       upcoming: true,
     } as TimelineEvent;
     expect(deriveStatusLabel(defaultMatter, { events: [proveUp] })).toBe("Default prove-up — Dec. 1, 2099");
-    expect(deriveStatusLabel(cases.find((item) => item.number === 24)!, { events: eventsFor(24) })).toContain(
-      "CMC Sep. 15, 2026",
+    expect(deriveStatusLabel(cases.find((item) => item.number === 24)!, { events: eventsFor(24) })).toMatch(
+      /CMC.*Sep\. 15, 2026/,
     );
   });
 

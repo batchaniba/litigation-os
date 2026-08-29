@@ -51,14 +51,20 @@ def affix_signature(canvas_obj, x, y, width=185, path=SIGNATURE_PATH):
     return height
 
 
-def stamp_on_pdf_line(page, x0, x1, y_line, path=SIGNATURE_PATH):
-    """Stamp the canonical signature onto a PyMuPDF page, sitting on y_line."""
+def stamp_on_pdf_line(page, x0, x1, y_line, path=SIGNATURE_PATH, *, whiteout=True):
+    """Stamp the canonical signature onto a PyMuPDF page, sitting on y_line.
+
+    whiteout fills the stamp rect with white first so form rules under the
+    mark do not show through. Pass whiteout=False when the form line should
+    remain visible through the transparent PNG (tight signature/name stacks).
+    """
     import fitz
 
     width = x1 - x0
     height = width * SIGNATURE_ASPECT
     rect = fitz.Rect(x0, y_line - height, x1, y_line)
-    page.draw_rect(rect, color=(1, 1, 1), fill=(1, 1, 1), width=0)
+    if whiteout:
+        page.draw_rect(rect, color=(1, 1, 1), fill=(1, 1, 1), width=0)
     page.insert_image(rect, filename=path, keep_proportion=False)
     return rect
 

@@ -1,12 +1,61 @@
 [
   {
     "date": "Aug. 28, 2026",
-    "event": "Demurrer Hearing \u2014 Newanforbi v. California Highway Patrol et al. (26CV191136), APPEAR 10:30 a.m. (moved from 9:00 due to late tentative), Dept. 25, Hon. Jenna M. Whitman; tentative OVERRULES demurrer on COAs 1 & 4 and SUSTAINS WOLA on COAs 2 & 3. Zoom 161 8066 1142 / passcode 5805.",
+    "event": "FILED \u2014 Clerk's Notice Resetting Hearing on Motion to Dismiss (Dkt. 21) in Newanforbi v. Serrato (4:26-cv-05953-ASK). The hearing on Defendant's Motion to Dismiss the FAC (Dkt. 18) is reset to September 30, 2026, 1:30 p.m., before Mag. Ajay S. Krishnan, Oakland Courtroom 4, 3rd Floor, because the motion was noticed for hearing on less than 35 days (Civil L.R. 7-2(a)). The notice says the briefing schedule remains in effect but lists Opposition due 9/9/2025 and Reply due 9/16/2025 \u2014 those years are wrong on the face of the order; do not treat 2025 as a deadline. Opposition was original-filed Aug. 27 (page-1 stamp). Courtesy copy emailed Aug. 28 by Andy Marquez, Office of the Attorney General.",
+    "matters": [
+      24
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "agency",
+    "source": "/documents/matter-24/Clerk's Notice Resetting Hearing on Motion to Dismiss (Dkt 21, Filed Aug 28 2026).pdf"
+  },
+  {
+    "date": "Aug. 28, 2026",
+    "event": "EXECUTED (unfiled) \u2014 Notice of Supplemental Authority in Newanforbi v. Serrato (4:26-cv-05953-ASK) lodging Hon. Jenna M. Whitman's August 27, 2026 written tentative on the CHP demurrer in Alameda No. 26CV191136 (heard August 28). The Serrato opposition was original-filed August 27, the day before that hearing. The notice attaches the tentative as Exhibit A, states that the minute order has not yet entered, and does not ask Krishnan to treat the tentative as a final state-court judgment. Email POS on DAG Haiyang A. Li. Drop at N.D. Cal. with the operative-FAC notices if filing paper today. Swap Exhibit A for the minute order when it is in hand.",
+    "matters": [
+      24,
+      20
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-24/Notice of Supplemental Authority - Whitman Tentative with POS (Aug 28 2026).pdf"
+  },
+  {
+    "date": "Aug. 28, 2026",
+    "event": "SOS BIZFILE \u2014 California Secretary of State records retrieved for both Matter 12 defendants. Diamond Truck Sales, Inc. (Entity No. 3438768): active CA stock corporation formed Feb. 2, 2012; principal/mailing and individual agent for service of process Saliman Osmani, 1201 S. Soderquist Road, Turlock, CA 95380 (Stanislaus). Alpine Truck Sales, Inc. (Entity No. B20250280641): active CA stock corporation formed Sept. 2, 2025; principal/mailing and individual agent for service of process Sheran Osmani, 7156 Golden State Highway, Bakersfield, CA 93308 (Kern). Alpine's July 1, 2026 Turlock service was not the SOS agent address. Re-service of the Amended Summons and FAC: Diamond on Saliman Osmani in Stanislaus; Alpine on Sheran Osmani in Kern, named as sued. Meet and confer with Azimov still first.",
+    "matters": [
+      12
+    ],
+    "type": "event",
+    "upcoming": false,
+    "actor": "you",
+    "source": "/documents/matter-12/Diamond Truck Sales Inc - CA SOS Registered Agent for Service of Process (Aug 28 2026).pdf"
+  },
+  {
+    "date": "Aug. 28, 2026",
+    "event": "HELD \u2014 Demurrer hearing, 10:30 a.m., Dept. 25, Hon. Jenna M. Whitman \u2014 Newanforbi v. CHP et al. (26CV191136). Petitioner appeared. The Aug. 27 tentative had overruled COAs 1 & 4 and sustained WOLA on COAs 2 & 3; whether that tentative was adopted is not yet recorded. Do not treat the tentative as the final order until the minute order is in hand.",
     "matters": [
       20
     ],
     "type": "hearing",
-    "upcoming": true
+    "upcoming": false,
+    "actor": "you"
+  },
+  {
+    "date": "Aug. 28, 2026",
+    "event": "EXECUTED (unfiled) \u2014 Plaintiff's Consent to Jurisdiction of United States Magistrate Judge in Newanforbi v. Federal Express Corporation (2:26-cv-02881-DAD-SCR). Filled from Dkt. 3 p. 4 (court-captioned E.D. Cal. form): CONSENT checked, Plaintiff/Petitioner marked, dated August 28, 2026, canonical signature stamped. Proof of Service by first-class mail on Allison A. Kray at 2601 Main Street, Suite 1100, Irvine. Matches house practice in Matters 24/32/33. File with the Sacramento clerk (L.R. 305); POS says mailed from San Jose. Consent is effective only if FedEx also consents and both judges accept.",
+    "matters": [
+      25
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-25/Consent to Magistrate Judge Jurisdiction - Federal Express (E.D. Cal. 2-26-cv-02881) (Aug 28 2026).pdf"
   },
   {
     "date": "Aug. 27, 2026",
@@ -3608,12 +3657,12 @@
   },
   {
     "date": "Aug. 28, 2026",
-    "event": "Demurrer Hearing \u2014 Newanforbi v. California Highway Patrol et al. (26CV191136), 9:00 a.m., Dept. 25, Rene C. Davidson Courthouse, Oakland; Hon. Jenna M. Whitman; AG's Demurrer to Petition for Writ of Mandate, reserved for this date; the Individual Respondents' Demurrers and Joinders (currently reserved for Oct. 16/23, 2026) will be heard the same day if the pending Joint Stipulation is entered; Trial Date: Not set",
+    "event": "SUPERSEDED \u2014 original 9:00 a.m. reservation for the CHP demurrer in Newanforbi v. CHP et al. (26CV191136). The Court moved appearance to 10:30 a.m. because of the late tentative; that 10:30 hearing was held August 28, 2026.",
     "matters": [
       20
     ],
     "type": "hearing",
-    "upcoming": true
+    "upcoming": false
   },
   {
     "date": "Aug. 26, 2026",
@@ -3701,9 +3750,9 @@
   },
   {
     "date": "Sep. 2, 2026",
-    "event": "Opposition due to Serrato MTD / Motion to Strike (Civil L.R. 7-3(a) \u2014 14 days before Sep. 16 hearing). Draft Opposition v4 prepared (but-for causation / Perry restore / TOA sync / leave-to-amend hedges). \u2014 Newanforbi v. Serrato (4:26-cv-05953-ASK).",
-    "source": "/documents/matter-24/Opposition to Serrato MTD FAC and Strike v4 (Sep 2 2026).docx",
-    "upcoming": true,
+    "event": "SATISFIED \u2014 Opposition due to Serrato MTD / Motion to Strike (Civil L.R. 7-3(a) \u2014 14 days before the then-noticed Sep. 16 hearing). Opposition original-filed Aug. 27 (page-1 stamp). Dkt. 21 (Aug. 28) reset the hearing to Sep. 30 and says briefing remains in effect; its listed dates (Opp 9/9/2025; Reply 9/16/2025) are year-wrong. \u2014 Newanforbi v. Serrato (4:26-cv-05953-ASK).",
+    "source": "/documents/matter-24/Opposition v4 Page 1 Scan (Filed-Stamped Aug 27 2026).pdf",
+    "upcoming": false,
     "actor": "you",
     "type": "deadline",
     "matters": [
@@ -3712,10 +3761,21 @@
   },
   {
     "date": "Sep. 16, 2026",
-    "event": "Hearing on Defendant Serrato's Motion to Dismiss FAC and/or Motion to Strike \u2014 1:30 p.m., Mag. Ajay S. Krishnan \u2014 Newanforbi v. Serrato (4:26-cv-05953-ASK). Note: noticed with only 21 days; Civil L.R. 7-2(a) requires 35.",
-    "source": "/documents/matter-24/Defendant Serrato Motion to Dismiss FAC and Strike (Aug 26 2026).pdf",
-    "upcoming": true,
+    "event": "RESET \u2014 Hearing on Defendant Serrato's Motion to Dismiss FAC and/or Motion to Strike, originally noticed for Sep. 16, 2026, 1:30 p.m., Mag. Ajay S. Krishnan. Vacated by Clerk's Notice (Dkt. 21, filed Aug. 28) for Civil L.R. 7-2(a) short notice; reset to Sep. 30, 2026. \u2014 Newanforbi v. Serrato (4:26-cv-05953-ASK).",
+    "source": "/documents/matter-24/Clerk's Notice Resetting Hearing on Motion to Dismiss (Dkt 21, Filed Aug 28 2026).pdf",
+    "upcoming": false,
     "actor": "agency",
+    "type": "hearing",
+    "matters": [
+      24
+    ]
+  },
+  {
+    "date": "Sep. 30, 2026",
+    "event": "Hearing on Defendant Serrato's Motion to Dismiss FAC (Dkt. 18) \u2014 1:30 p.m., Mag. Ajay S. Krishnan, Oakland Courtroom 4, 3rd Floor \u2014 Newanforbi v. Serrato (4:26-cv-05953-ASK). Reset from Sep. 16 by Clerk's Notice Dkt. 21 (filed Aug. 28) because the motion was noticed on less than 35 days (Civil L.R. 7-2(a)).",
+    "source": "/documents/matter-24/Clerk's Notice Resetting Hearing on Motion to Dismiss (Dkt 21, Filed Aug 28 2026).pdf",
+    "upcoming": true,
+    "actor": "you",
     "type": "hearing",
     "matters": [
       24

@@ -1,14 +1,5 @@
 [
   {
-    "date": "Aug. 28, 2026",
-    "event": "Demurrer Hearing — Newanforbi v. California Highway Patrol et al. (26CV191136), APPEAR 10:30 a.m. (moved from 9:00 due to late tentative), Dept. 25, Hon. Jenna M. Whitman; tentative OVERRULES demurrer on COAs 1 & 4 and SUSTAINS WOLA on COAs 2 & 3. Zoom 161 8066 1142 / passcode 5805.",
-    "matters": [
-      20
-    ],
-    "type": "hearing",
-    "upcoming": true
-  },
-  {
     "date": "Oct. 5, 2026",
     "event": "HEARING — Defendant UPS's Rule 12(b)(6) Motion to Dismiss (ECF No. 7), Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD), 1:30 p.m., Courtroom 4. Drozd civil law-and-motion is Zoom only (Standing Order I.A). Opposition due Sep. 9, 2026 (L.R. 230(c)).",
     "matters": [
@@ -391,15 +382,6 @@
     "actor": "you"
   },
   {
-    "date": "Aug. 28, 2026",
-    "event": "Demurrer Hearing — Newanforbi v. California Highway Patrol et al. (26CV191136), 9:00 a.m., Dept. 25, Rene C. Davidson Courthouse, Oakland; Hon. Jenna M. Whitman; AG's Demurrer to Petition for Writ of Mandate, reserved for this date; the Individual Respondents' Demurrers and Joinders (currently reserved for Oct. 16/23, 2026) will be heard the same day if the pending Joint Stipulation is entered; Trial Date: Not set",
-    "matters": [
-      20
-    ],
-    "type": "hearing",
-    "upcoming": true
-  },
-  {
     "date": "Oct. 19, 2026",
     "event": "Rule 4(m) service deadline (computed) — Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504-LJC); 90 days from ~July 21, 2026 complaint docketing. Dkt. 11 (Aug. 26, 2026) expressly directs Rule 4 service on Defendants. Serve Shannon Smith and HOPE Psychotherapy, Inc., then file proofs of service.",
     "matters": [
@@ -411,22 +393,11 @@
     "source": "/documents/matter-28/Dkt 11 - Order Regarding Filing Fee IFP and Directing Service (Filed Aug 26 2026).pdf"
   },
   {
-    "date": "Sep. 2, 2026",
-    "event": "Opposition due to Serrato MTD / Motion to Strike (Civil L.R. 7-3(a) — 14 days before Sep. 16 hearing). Draft Opposition v4 prepared (but-for causation / Perry restore / TOA sync / leave-to-amend hedges). — Newanforbi v. Serrato (4:26-cv-05953-ASK).",
-    "source": "/documents/matter-24/Opposition to Serrato MTD FAC and Strike v4 (Sep 2 2026).docx",
+    "date": "Sep. 30, 2026",
+    "event": "Hearing on Defendant Serrato's Motion to Dismiss FAC (Dkt. 18) — 1:30 p.m., Mag. Ajay S. Krishnan, Oakland Courtroom 4, 3rd Floor — Newanforbi v. Serrato (4:26-cv-05953-ASK). Reset from Sep. 16 by Clerk's Notice Dkt. 21 (filed Aug. 28) because the motion was noticed on less than 35 days (Civil L.R. 7-2(a)).",
+    "source": "/documents/matter-24/Clerk's Notice Resetting Hearing on Motion to Dismiss (Dkt 21, Filed Aug 28 2026).pdf",
     "upcoming": true,
     "actor": "you",
-    "type": "deadline",
-    "matters": [
-      24
-    ]
-  },
-  {
-    "date": "Sep. 16, 2026",
-    "event": "Hearing on Defendant Serrato's Motion to Dismiss FAC and/or Motion to Strike — 1:30 p.m., Mag. Ajay S. Krishnan — Newanforbi v. Serrato (4:26-cv-05953-ASK). Note: noticed with only 21 days; Civil L.R. 7-2(a) requires 35.",
-    "source": "/documents/matter-24/Defendant Serrato Motion to Dismiss FAC and Strike (Aug 26 2026).pdf",
-    "upcoming": true,
-    "actor": "agency",
     "type": "hearing",
     "matters": [
       24

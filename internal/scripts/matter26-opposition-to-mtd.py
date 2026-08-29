@@ -60,6 +60,7 @@ from proof_of_service import (  # noqa: E402
     ProofOfServiceFields,
     build_proof_of_service,
 )
+from short_link import publish_short_link  # noqa: E402
 from signature_stamp import SIGNATURE_NATIVE_PX, SIGNATURE_PATH  # noqa: E402
 
 ROOT = SCRIPT_DIR.parents[1]
@@ -81,7 +82,7 @@ DEFAULT_POS_OUT = (
     / "internal/public/documents/matter-26"
     / "Proof of Service - Opposition to UPS Rule 12(b)(6) (E.D. Cal. 2-26-cv-02847) (Aug 28 2026).pdf"
 )
-SHORT_LINK_PDF = ROOT / "internal/public/ups-opp.pdf"
+SHORT_LINK_SLUG = "ups-opp"
 FOOTER = (
     "PLAINTIFF'S OPPOSITION TO RULE 12(b)(6) MOTION -- "
     "NEWANFORBI v. UNITED PARCEL SERVICE, INC."
@@ -976,9 +977,8 @@ def main() -> None:
         print(f"Generated proof of service: {pos}")
     else:
         print(f"Generated opposition: {path}")
-    if path.resolve() != SHORT_LINK_PDF.resolve():
-        shutil.copy2(path, SHORT_LINK_PDF)
-        print(f"Updated short link PDF: {SHORT_LINK_PDF}")
+    short = publish_short_link(path, SHORT_LINK_SLUG)
+    print(f"Short link copy: {short}")
     if not args.skip_order:
         order = build_proposed_order(Path(args.order_out).resolve(), args.date,
                                      args.mailed_from)

@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
 """Fill two Matter 12 SER-001 forms for Stanislaus County Sheriff Civil.
 
-Serve each named defendant at 1201 S Soderquist Road, Turlock, CA 95380
-with the CCP §425.115 Notice of Amount of Punitive Damages Sought
-(execution date August 3, 2026).
+HISTORICAL — August 3, 2026 CCP §425.115 punitive-notice service only.
+Do not reuse these packets to re-serve the Amended Summons / FAC.
+
+As of the August 28, 2026 SOS bizfile printouts:
+  - Diamond agent: Saliman Osmani, 1201 S. Soderquist Road, Turlock (Stanislaus).
+  - Alpine agent: Sheran Osmani, 7156 Golden State Highway, Bakersfield (Kern).
+Alpine's summons re-service is Kern County, not Turlock.
 """
 
 from __future__ import annotations
