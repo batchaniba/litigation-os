@@ -189,9 +189,9 @@ a { color: inherit; }
   line-height: 1;
   transform: translateY(-0.15em);
 }
-/* Lead column (Morgan / Seyfarth) sits left of the existing 2×3 firm grid —
-   same slot the Westlaw quote used to occupy. */
-.legacy-header-main { flex: 1; display: flex; align-items: flex-end; justify-content: space-between; padding-left: 40px; min-width: 0; gap: 24px; }
+/* Lead column (Morgan / Seyfarth) sits immediately left of the existing 2×3
+   firm grid — not folded into it. */
+.legacy-header-main { flex: 1; display: flex; align-items: flex-end; justify-content: flex-end; padding-left: 40px; min-width: 0; gap: 24px; }
 .legacy-counsel-lead { display: grid; grid-template-columns: auto; grid-template-rows: auto auto; justify-content: start; justify-items: end; align-items: center; gap: 8px; flex-shrink: 0; }
 .legacy-opposing-counsel { display: grid; grid-template-columns: auto auto; grid-template-rows: auto auto auto; justify-content: end; justify-items: end; align-items: center; gap: 8px 16px; flex-shrink: 0; }
 /* Left: Kabat, Azimov, MHS — right: Garcia, SLB, DAG */
