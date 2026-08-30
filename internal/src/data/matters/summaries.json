@@ -839,7 +839,7 @@
     "case_no": "26CV201554",
     "court": "Alameda Sup. Ct. (Hayward Hall of Justice, Dept. 520)",
     "claims": "PC §290.46(j)(2)(E) Violation, Fair Chance Act (Gov. Code §12952), FCRA, ICRAA, Invasion of Privacy, UCL §17200, IIED",
-    "status_label": "Fee paid / notices e-filed Aug. 6 — response due Aug. 31",
+    "status_label": "Amazon NOA Aug. 24 (Morgan Lewis) — response due Aug. 31",
     "lifecycle": "active",
     "proceeding": "state_civil",
     "phase": "responsive_deadline",
@@ -875,8 +875,8 @@
       "Intentional Infliction of Emotional Distress"
     ],
     "archived": false,
-    "evidenceCount": 24,
-    "documentCount": 77
+    "evidenceCount": 26,
+    "documentCount": 78
   },
   {
     "number": 30,
