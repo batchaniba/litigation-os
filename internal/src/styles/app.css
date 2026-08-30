@@ -189,16 +189,17 @@ a { color: inherit; }
   line-height: 1;
   transform: translateY(-0.15em);
 }
-.legacy-header-main { flex: 1; display: flex; align-items: flex-end; justify-content: space-between; padding-left: 40px; min-width: 0; gap: 24px; }
-.legacy-westlaw { min-width: 0; }
-.legacy-opposing-counsel { display: grid; grid-template-columns: auto auto; grid-template-rows: auto auto auto; justify-content: end; justify-items: end; align-items: center; gap: 8px 16px; flex-shrink: 0; }
-/* Left: Kabat, Azimov, MHS — right: Garcia, SLB, DAG */
+.legacy-header-main { flex: 1; display: flex; align-items: flex-end; justify-content: flex-end; padding-left: 40px; min-width: 0; gap: 24px; }
+.legacy-opposing-counsel { display: grid; grid-template-columns: auto auto; grid-template-rows: repeat(4, auto); justify-content: end; justify-items: end; align-items: center; gap: 8px 16px; flex-shrink: 0; }
+/* Left: Morgan Lewis, Seyfarth, Kabat, Azimov — right: MHS, Garcia, SLB, DAG */
 .legacy-opposing-counsel .firm-link:nth-child(1) { grid-column: 1; grid-row: 1; }
 .legacy-opposing-counsel .firm-link:nth-child(2) { grid-column: 1; grid-row: 2; }
 .legacy-opposing-counsel .firm-link:nth-child(3) { grid-column: 1; grid-row: 3; }
-.legacy-opposing-counsel .firm-link:nth-child(4) { grid-column: 2; grid-row: 1; }
-.legacy-opposing-counsel .firm-link:nth-child(5) { grid-column: 2; grid-row: 2; }
-.legacy-opposing-counsel .firm-link:nth-child(6) { grid-column: 2; grid-row: 3; }
+.legacy-opposing-counsel .firm-link:nth-child(4) { grid-column: 1; grid-row: 4; }
+.legacy-opposing-counsel .firm-link:nth-child(5) { grid-column: 2; grid-row: 1; }
+.legacy-opposing-counsel .firm-link:nth-child(6) { grid-column: 2; grid-row: 2; }
+.legacy-opposing-counsel .firm-link:nth-child(7) { grid-column: 2; grid-row: 3; }
+.legacy-opposing-counsel .firm-link:nth-child(8) { grid-column: 2; grid-row: 4; }
 .firm-link { display: flex; align-items: center; gap: 8px; color: inherit; text-decoration: none; transition: opacity .15s ease; cursor: pointer; }
 .firm-link:hover { opacity: .82; }
 .firm-link:hover .firm-logo { filter: drop-shadow(0 0 0 transparent); }
@@ -215,6 +216,8 @@ a { color: inherit; }
    ink, per feedback that exact parity read as too small) rather than to the
    asset's full aspect ratio. */
 .firm-logo { flex-shrink: 0; display: block; object-fit: contain; object-position: right center; }
+.legacy-morgan-logo { width: 132px; height: 22px; }
+.legacy-seyfarth-logo { width: 118px; height: 22px; }
 .legacy-kco-logo { width: 115px; height: 37px; }
 .legacy-azimov-logo { width: 52px; height: 52px; margin-right: 32px; position: relative; top: 10px; }
 .legacy-slb-logo { width: 118px; height: 62px; }
@@ -294,13 +297,6 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
 .type-matter { background: #2563eb; }.type-event { background: #7c3aed; }.type-document { background: #0d9488; }
 .sr-only { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
 
-/* Header Westlaw block — kept compact so the two-column firm grid has room */
-.legacy-westlaw-label { font-size: 8px; font-family: var(--font-sans); font-weight: 700; letter-spacing: 2.5px; color: var(--gold); text-transform: uppercase; margin-bottom: 4px; }
-.legacy-westlaw-quote { font-family: var(--font-sans); font-size: 10px; font-style: italic; color: #495467; line-height: 1.45; margin-bottom: 4px; max-width: 260px; }
-.legacy-westlaw-cite { font-family: var(--font-sans); font-size: 9px; font-weight: 700; color: var(--gold); letter-spacing: 0.4px; margin-bottom: 2px; }
-.legacy-westlaw-attribution { font-family: var(--font-sans); font-size: 8px; color: #495467; opacity: 0.8; line-height: 1.4; }
-.legacy-westlaw-source { font-family: var(--font-sans); font-size: 8px; color: #495467; opacity: 0.6; }
-
 /* Coverage tower — insurance policy limits as a leverage marker.
    The per-incident bar is drawn as its true fraction of the aggregate, and the
    ticks mark how many separate incidents it takes to exhaust the tower. */
@@ -359,8 +355,7 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
 .coverage-tower-tick { position: absolute; top: 0; width: 1px; height: 100%; background: rgb(15 26 46 / 45%); }
 
 .coverage-tower-insureds { font-size: 10px; font-weight: 700; color: #495467; line-height: 1.45; }
-/* The header block matches the Westlaw slate; the panel is meant to be read,
-   so it follows the theme's body colors and stays legible in dark mode. */
+/* Panel body follows the theme so leverage copy stays legible in dark mode. */
 .coverage-tower-panel .coverage-tower-insureds { font-size: 13px; color: var(--secondary-text); }
 .coverage-tower-meta {
   margin-top: 3px;
@@ -739,11 +734,8 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
 }
 
 @media (max-width: 1180px) {
-  /* Three columns get tight before the mobile reflow: the Westlaw pull-quote
-     yields width first, since the coverage figures stop being legible if the
-     tower shrinks. */
+  /* Firm grid gets tight before the mobile reflow — keep logos readable. */
   .legacy-header-main { gap: 14px; }
-  .legacy-westlaw-quote { max-width: 200px; font-size: 9px; }
   .coverage-tower-header { width: 168px; padding: 8px 10px; }
   .coverage-tower-amount { font-size: 18px; }
   .coverage-tower-amount-aggregate { font-size: 21px; }
@@ -802,7 +794,6 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
     display: contents;
     padding-left: 0;
   }
-  .legacy-westlaw,
   .legacy-counsel-names {
     display: none;
   }
@@ -811,7 +802,7 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
     grid-row: 1;
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: repeat(4, auto);
     justify-content: end;
     justify-items: center;
     align-items: center;
@@ -820,13 +811,15 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
     min-width: max-content;
     gap: 6px 8px;
   }
-  /* Left: Kabat, Azimov, MHS — right: Garcia, SLB, DAG */
+  /* Left: Morgan Lewis, Seyfarth, Kabat, Azimov — right: MHS, Garcia, SLB, DAG */
   .legacy-opposing-counsel .firm-link:nth-child(1) { grid-column: 1; grid-row: 1; }
   .legacy-opposing-counsel .firm-link:nth-child(2) { grid-column: 1; grid-row: 2; }
   .legacy-opposing-counsel .firm-link:nth-child(3) { grid-column: 1; grid-row: 3; }
-  .legacy-opposing-counsel .firm-link:nth-child(4) { grid-column: 2; grid-row: 1; }
-  .legacy-opposing-counsel .firm-link:nth-child(5) { grid-column: 2; grid-row: 2; }
-  .legacy-opposing-counsel .firm-link:nth-child(6) { grid-column: 2; grid-row: 3; }
+  .legacy-opposing-counsel .firm-link:nth-child(4) { grid-column: 1; grid-row: 4; }
+  .legacy-opposing-counsel .firm-link:nth-child(5) { grid-column: 2; grid-row: 1; }
+  .legacy-opposing-counsel .firm-link:nth-child(6) { grid-column: 2; grid-row: 2; }
+  .legacy-opposing-counsel .firm-link:nth-child(7) { grid-column: 2; grid-row: 3; }
+  .legacy-opposing-counsel .firm-link:nth-child(8) { grid-column: 2; grid-row: 4; }
   /* The Westlaw quote drops on mobile; the coverage tower does not — it goes
      full-width on its own row and reads as a horizontal strip instead. */
   .coverage-tower-header {
@@ -861,6 +854,8 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
     gap: 2px;
   }
   .firm-logo { object-position: center; }
+  .legacy-morgan-logo { width: 96px; height: 16px; }
+  .legacy-seyfarth-logo { width: 86px; height: 16px; }
   .legacy-kco-logo { width: 83px; height: 27px; }
   .legacy-azimov-logo { width: 38px; height: 38px; }
   .legacy-slb-logo { width: 84px; height: 44px; }
@@ -941,7 +936,7 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
     grid-row: 1;
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: repeat(4, auto);
     justify-content: end;
     justify-items: center;
     align-items: center;
@@ -953,15 +948,18 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
     flex-direction: column;
     gap: 2px;
   }
-  /* Left column: Kabat (row 1), Azimov (row 2), MHS (row 3) */
+  /* Left: Morgan Lewis, Seyfarth, Kabat, Azimov — right: MHS, Garcia, SLB, DAG */
   .legacy-opposing-counsel .firm-link:nth-child(1) { grid-column: 1; grid-row: 1; }
   .legacy-opposing-counsel .firm-link:nth-child(2) { grid-column: 1; grid-row: 2; }
   .legacy-opposing-counsel .firm-link:nth-child(3) { grid-column: 1; grid-row: 3; }
-  /* Right column: Garcia (row 1), SLB (row 2), DAG (row 3) */
-  .legacy-opposing-counsel .firm-link:nth-child(4) { grid-column: 2; grid-row: 1; }
-  .legacy-opposing-counsel .firm-link:nth-child(5) { grid-column: 2; grid-row: 2; }
-  .legacy-opposing-counsel .firm-link:nth-child(6) { grid-column: 2; grid-row: 3; }
+  .legacy-opposing-counsel .firm-link:nth-child(4) { grid-column: 1; grid-row: 4; }
+  .legacy-opposing-counsel .firm-link:nth-child(5) { grid-column: 2; grid-row: 1; }
+  .legacy-opposing-counsel .firm-link:nth-child(6) { grid-column: 2; grid-row: 2; }
+  .legacy-opposing-counsel .firm-link:nth-child(7) { grid-column: 2; grid-row: 3; }
+  .legacy-opposing-counsel .firm-link:nth-child(8) { grid-column: 2; grid-row: 4; }
   .firm-logo { object-position: center; }
+  .legacy-morgan-logo { width: 92px; height: 15px; }
+  .legacy-seyfarth-logo { width: 82px; height: 15px; }
   .legacy-kco-logo { width: 80px; height: 26px; }
   .legacy-azimov-logo { width: 36px; height: 36px; }
   .legacy-slb-logo { width: 72px; height: 38px; }
