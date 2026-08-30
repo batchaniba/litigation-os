@@ -60,7 +60,7 @@ export function PortfolioHeader({
         <div className="legacy-header-main">
           {/* Matter 29 appearances — sit left of the existing 2×3 firm grid (same slot the Westlaw quote vacated). */}
           <div className="legacy-counsel-lead" aria-label="Matter 29 opposing counsel">
-            <a href="https://www.morganlewis.com/" target="_blank" rel="noopener noreferrer" title="Visit Morgan, Lewis & Bockius LLP (morganlewis.com) ↗" className="firm-link">
+            <a href="https://www.morganlewis.com/our-firm" target="_blank" rel="noopener noreferrer" title="Visit Morgan, Lewis & Bockius LLP — Our Firm (morganlewis.com/our-firm) ↗" className="firm-link">
               <div className="legacy-counsel-names">
                 <div>Andrew P. Frederick</div>
                 <div className="firm-external-hint">Visit site ↗</div>
