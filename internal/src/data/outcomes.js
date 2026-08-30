@@ -326,7 +326,7 @@ const outcomes_raw = {
       date: "May 22, 2026",
       matter: 5,
       category: "backhanded",
-      note: "Cited to portray Plaintiff as litigious — instead became the portfolio's Westlaw-indexed accolade, now featured in the site header (2026 WL 1067541 · 2026 WL 1389969)."
+      note: "Cited to portray Plaintiff as litigious — instead became a Westlaw-indexed accolade (2026 WL 1067541 · 2026 WL 1389969), preserved on the Notable Quotes tab.",
     },
     {
       quote: "The Court must extend the time in which to rule on Petitioner's habeas petition. Good cause for the extension is established by the need to thoroughly review the voluminous papers and the court's recent workload.",

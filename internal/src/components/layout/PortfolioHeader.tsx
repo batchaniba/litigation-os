@@ -58,23 +58,22 @@ export function PortfolioHeader({
         <span className="sr-only">versus</span>
 
         <div className="legacy-header-main">
-          <div className="legacy-westlaw">
-            <div className="legacy-westlaw-label">📚 Westlaw-Indexed</div>
-            <div className="legacy-westlaw-quote">
-              “In this regard, it appears from a search of Westlaw that Plaintiff filed two other lawsuits in federal court that have resulted in opinions available on Westlaw.”
-            </div>
-            <div className="legacy-westlaw-cite">
-              2026 WL 1067541 · 2026 WL 1389969
-            </div>
-            <div className="legacy-westlaw-attribution">
-              — Blaze Van Dine, Esq. · Sims, Lawrence &amp; Broghammer
-            </div>
-            <div className="legacy-westlaw-source">
-              Palacios Demurrer (Matter 5)
-            </div>
-          </div>
-
           <div className="legacy-opposing-counsel">
+            <a href="https://www.morganlewis.com/" target="_blank" rel="noopener noreferrer" title="Visit Morgan, Lewis & Bockius LLP (morganlewis.com) ↗" className="firm-link">
+              <div className="legacy-counsel-names">
+                <div>Andrew P. Frederick</div>
+                <div className="firm-external-hint">Visit site ↗</div>
+              </div>
+              <img className="firm-logo legacy-morgan-logo" src={withBase(darkMode ? "/branding/morgan-lewis-dark.webp" : "/branding/morgan-lewis-light.webp")} alt="Morgan, Lewis & Bockius LLP" width={920} height={148} decoding="async" />
+            </a>
+            <a href="https://www.seyfarth.com/" target="_blank" rel="noopener noreferrer" title="Visit Seyfarth Shaw LLP (seyfarth.com) ↗" className="firm-link">
+              <div className="legacy-counsel-names">
+                <div>Jasmine Stanzick</div>
+                <div>John Drury</div>
+                <div className="firm-external-hint">Visit site ↗</div>
+              </div>
+              <img className="firm-logo legacy-seyfarth-logo" src={withBase(darkMode ? "/branding/seyfarth-dark.webp" : "/branding/seyfarth-light.webp")} alt="Seyfarth Shaw LLP" width={920} height={160} decoding="async" />
+            </a>
             <a href="https://www.kcozlaw.com/" target="_blank" rel="noopener noreferrer" title="Visit Kabat Chapman & Ozmer LLP (kcozlaw.com) ↗" className="firm-link">
               <div className="legacy-counsel-names">
                 <div>Chadwick L. Williams</div>
