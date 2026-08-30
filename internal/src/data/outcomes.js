@@ -98,13 +98,13 @@ const outcomes_raw = {
     {
       matter: 20,
       judge: "Hon. Jenna M. Whitman",
-      date: "August 27, 2026",
+      date: "August 29, 2026",
       type: "merits",
       outcome: "mixed",
-      title: "Tentative Ruling on CHP Demurrer to Petition for Writ of Mandate (hearing Aug. 28, 2026)",
-      holding: "Tentative issued the afternoon before the demurrer hearing. Parties ORDERED TO APPEAR at 10:30 a.m. (not 9:00) because the tentative posted late. First cause of action (ministerial duty to certify Form I-918 Supp. B under Pen. Code §679.10): OVERRULED. Accepting the petition's allegations that Petitioner showed no signs of impairment and that the arresting officers lied in the report, a finder of fact could reasonably find probable cause for the November 1, 2024 arrest was lacking; whether the incident is qualifying criminal activity is a contested fact, not a demurrer question. Fourth cause of action (declaratory relief): OVERRULED — no election of remedies at the pleadings stage. Second cause of action (reason-giving, §679.10(i)(2)): SUSTAINED WITHOUT LEAVE TO AMEND — the statute's specificity requirement applies to noncooperation denials, and CHP denied for lack of qualifying crime. Third cause of action (helpfulness presumption, §679.10(h)): SUSTAINED WITHOUT LEAVE TO AMEND — the presumption never came into play because denial was on qualifying-crime grounds. Individual respondents' joinders travel with CHP's demurrer.",
-      significance: "The first merits-stage ruling in the CHP U-visa mandate. It keeps the live theory — that the November 1, 2024 stop was qualifying false imprisonment / obstruction / perjury, so certification is ministerial — in the case for an evidentiary hearing. That is the same factual predicate Magistrate Judge Krishnan found plausible in Serrato (Matter 24, June 29) and the same incident Magistrate Judge Kim treated as probable cause as a matter of law in the Matter 1 F&R. If the tentative is adopted, Matters 1, 24, 32, and 20 will be in front of two courts that have already split on whether the dashcam-versus-report conflict is a pleading defect or a fact dispute. COAs 2 and 3 (reason-giving and helpfulness) are dead on this petition; do not spend the hearing relitigating them. This is still a tentative — appear August 28, 2026, 10:30 a.m., Dept. 25, Zoom 161 8066 1142 / 5805.",
-      document_path: "/documents/opinions/Newanforbi v California CHP - Alameda Sup Ct - Tentative Ruling Demurrer Aug 27 2026.pdf"
+      title: "ORDER Sustaining Demurrer In Part, with Leave to Amend (CHP Demurrer to Petition for Writ of Mandate)",
+      holding: "Entered after the August 28, 2026 hearing. First cause of action (ministerial duty / abuse of discretion under Pen. Code §679.10): OVERRULED. Crediting the petition's allegations that neither Petitioner nor his vehicle smelled of alcohol, that he showed no signs of impairment, and that the arresting officers lied in the report, a finder of fact could reasonably find probable cause for the November 1, 2024 arrest was lacking, which could support a finding that CHP abused its discretion in refusing to certify Form I-918 (People v. Wolterman; Espinoza v. Shiomoto). Second cause of action (reason-giving, §679.10(i)(2)): SUSTAINED WITHOUT LEAVE — specificity is required only for noncooperation denials, and CHP denied for lack of qualifying crime. Third cause of action (helpfulness presumption, §679.10(h)): SUSTAINED WITHOUT LEAVE — the presumption never came into play on a qualifying-crime denial. Fourth cause of action (declaratory relief): SUSTAINED WITH LEAVE TO AMEND — the pleaded declarations were pure questions of law; Petitioner may amend within 20 days of notice of entry to narrow to the concrete controversy. Dutra and Paul dismissed by stipulation; their and Serrato's September 18 demurrer hearings vacated. CMC continued to October 28, 2026, 4:00 p.m., Dept. 25.",
+      significance: "The first entered merits ruling in the CHP U-visa mandate. Count 1 survives for trial on whether the November 1, 2024 stop was qualifying criminal activity because probable cause was lacking — the same factual predicate Magistrate Judge Krishnan found plausible in Serrato (Matter 24) and the same incident Magistrate Judge Kim treated as probable cause as a matter of law in the Matter 1 F&R. Counts 2 and 3 are dead on this petition. Count 4 is optional leave only; default path is proceed on Count 1 alone and await the answer. Live respondents are CHP and Serrato.",
+      document_path: "/documents/opinions/Newanforbi v California CHP - Alameda Sup Ct - Order Sustaining Demurrer In Part Aug 29 2026.pdf"
     },
     {
       matter: 28,
@@ -263,15 +263,15 @@ const outcomes_raw = {
   ],
   notable_quotes: [
     {
-      quote: "Under those circumstances, at the hearing on the merits, a finder of fact could reasonably find probable cause for arrest was lacking.",
+      quote: "If, at the trial on the merits, the Court were to credit Plaintiff's allegations that neither he nor his vehicle smelled of alcohol, that he showed no signs of impairment in talking with the officers or in performing the physical field sobriety tests he agreed to perform, and that the arresting officers lied about it in their police report, it could reasonably find probable cause for arrest was lacking, which could support a finding that the CHP abused its discretion in refusing to certify Petitioners Form I-918.",
       speaker: "Hon. Jenna M. Whitman",
       role: "Judge of the Superior Court, Alameda Sup. Ct., Dept. 25",
-      source: "Tentative Ruling on CHP Demurrer to Petition for Writ of Mandate, p. 4",
+      source: "ORDER Sustaining Demurrer In Part, with Leave to Amend, pp. 3–4",
       case_no: "26CV191136",
-      date: "August 27, 2026",
+      date: "August 29, 2026",
       matter: 20,
       category: "vindication",
-      note: "The dashcam-versus-report conflict is a fact question, not a demurrer kill. Same November 1, 2024 incident Magistrate Judge Kim treated as probable cause as a matter of law in the Matter 1 F&R. Still a tentative — appear August 28, 10:30 a.m."
+      note: "Entered demurrer order — Count 1 overruled. The dashcam-versus-report conflict is a fact question for trial, not a demurrer kill. Same November 1, 2024 incident Magistrate Judge Kim treated as probable cause as a matter of law in the Matter 1 F&R."
     },
     {
       quote: "Because Plaintiff has now effectively withdrawn his IFP application by paying the filing fee, however, the Court leaves any such argument for Defendants to raise if they see fit after they are served and appear. This Order should not be construed as implying any opinion by the Court as to whether such defenses might apply.",
