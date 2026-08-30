@@ -58,7 +58,8 @@ export function PortfolioHeader({
         <span className="sr-only">versus</span>
 
         <div className="legacy-header-main">
-          <div className="legacy-opposing-counsel">
+          {/* Matter 29 appearances — sit left of the existing 2×3 firm grid (same slot the Westlaw quote vacated). */}
+          <div className="legacy-counsel-lead" aria-label="Matter 29 opposing counsel">
             <a href="https://www.morganlewis.com/" target="_blank" rel="noopener noreferrer" title="Visit Morgan, Lewis & Bockius LLP (morganlewis.com) ↗" className="firm-link">
               <div className="legacy-counsel-names">
                 <div>Andrew P. Frederick</div>
@@ -74,6 +75,9 @@ export function PortfolioHeader({
               </div>
               <img className="firm-logo legacy-seyfarth-logo" src={withBase(darkMode ? "/branding/seyfarth-dark.webp" : "/branding/seyfarth-light.webp")} alt="Seyfarth Shaw LLP" width={920} height={160} decoding="async" />
             </a>
+          </div>
+
+          <div className="legacy-opposing-counsel">
             <a href="https://www.kcozlaw.com/" target="_blank" rel="noopener noreferrer" title="Visit Kabat Chapman & Ozmer LLP (kcozlaw.com) ↗" className="firm-link">
               <div className="legacy-counsel-names">
                 <div>Chadwick L. Williams</div>
