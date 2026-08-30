@@ -24,27 +24,26 @@ describe("statusLabel derivation", () => {
   });
 
   it("prefers demurrer hearings over earlier reply deadlines", () => {
-    // Synthetic — Matter 20's Aug. 28 demurrer was held; live posture is the
-    // Sep. 2 CMC plus a status_label override. Pin the ranking rule here so
-    // this test does not rot every time that calendar moves.
+    // Synthetic future dates — ranking rule only. Do not pin to Matter 20's
+    // live calendar (Aug. 28 demurrer was held; that posture is covered below).
     const matter = { number: 20, lifecycle: "active" as const, phase: "demurrer" as const };
     const reply = {
-      date: "Aug. 21, 2026",
+      date: "Nov. 1, 2099",
       event: "AG reply deadline — Matter 20",
       type: "deadline",
       matters: [20],
       upcoming: true,
     } as TimelineEvent;
     const hearing = {
-      date: "Aug. 28, 2026",
+      date: "Nov. 15, 2099",
       event: "Demurrer Hearing — Matter 20",
       type: "hearing",
       matters: [20],
       upcoming: true,
     } as TimelineEvent;
     const events = [reply, hearing];
-    expect(pickPostureEvent(events, matter.phase)?.date).toBe("Aug. 28, 2026");
-    expect(deriveStatusLabel(matter, { events })).toContain("Aug. 28, 2026");
+    expect(pickPostureEvent(events, matter.phase)?.date).toBe("Nov. 15, 2099");
+    expect(deriveStatusLabel(matter, { events })).toContain("Nov. 15, 2099");
     expect(deriveStatusLabel(matter, { events })).toMatch(/Demurrer hearing/i);
   });
 
