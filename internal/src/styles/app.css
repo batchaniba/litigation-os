@@ -218,12 +218,12 @@ a { color: inherit; }
    ink, per feedback that exact parity read as too small) rather than to the
    asset's full aspect ratio. */
 .firm-logo { flex-shrink: 0; display: block; object-fit: contain; object-position: right center; }
-.legacy-morgan-logo { width: 148px; height: 24px; }
-.legacy-seyfarth-logo { width: 132px; height: 24px; }
+.legacy-morgan-logo { width: 180px; height: 29px; }
+.legacy-seyfarth-logo { width: 160px; height: 29px; }
 .legacy-kco-logo { width: 115px; height: 37px; }
 .legacy-azimov-logo { width: 52px; height: 52px; margin-right: 32px; position: relative; top: 10px; }
 .legacy-slb-logo { width: 118px; height: 62px; }
-.legacy-garcia-logo { width: 115px; height: 39px; }
+.legacy-garcia-logo { width: 140px; height: 48px; }
 .legacy-mhs-logo { width: 154px; height: 32px; margin-left: 10px; }
 .legacy-dag-logo { width: 64px; height: 64px; object-fit: cover; border-radius: 50%; object-position: center; }
 .legacy-header-controls { display: flex; flex: 1 1 100%; flex-direction: column; align-items: stretch; gap: 8px; }
@@ -866,14 +866,14 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
     gap: 2px;
   }
   .firm-logo { object-position: center; }
-  .legacy-morgan-logo { width: 104px; height: 17px; }
-  .legacy-seyfarth-logo { width: 94px; height: 17px; }
+  .legacy-morgan-logo { width: 126px; height: 20px; }
+  .legacy-seyfarth-logo { width: 112px; height: 20px; }
   .legacy-kco-logo { width: 83px; height: 27px; }
   .legacy-azimov-logo { width: 38px; height: 38px; }
   .legacy-slb-logo { width: 84px; height: 44px; }
   /* Same box-narrower-than-asset-ratio letterbox as the desktop rule, scaled
      down by the same ~0.71 factor SLB's own box shrinks by at this breakpoint. */
-  .legacy-garcia-logo { width: 83px; height: 28px; }
+  .legacy-garcia-logo { width: 100px; height: 34px; }
   .legacy-mhs-logo { width: 83px; height: 17px; }
   .legacy-dag-logo { width: 44px; height: 44px; }
   :root { --header-action-gap: 10px; }
@@ -985,12 +985,12 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
   .legacy-opposing-counsel .firm-link:nth-child(5) { grid-column: 2; grid-row: 2; }
   .legacy-opposing-counsel .firm-link:nth-child(6) { grid-column: 2; grid-row: 3; }
   .firm-logo { object-position: center; }
-  .legacy-morgan-logo { width: 96px; height: 16px; }
-  .legacy-seyfarth-logo { width: 86px; height: 16px; }
+  .legacy-morgan-logo { width: 116px; height: 19px; }
+  .legacy-seyfarth-logo { width: 104px; height: 19px; }
   .legacy-kco-logo { width: 80px; height: 26px; }
   .legacy-azimov-logo { width: 36px; height: 36px; }
   .legacy-slb-logo { width: 72px; height: 38px; }
-  .legacy-garcia-logo { width: 72px; height: 24px; }
+  .legacy-garcia-logo { width: 88px; height: 30px; }
   .legacy-mhs-logo { width: 72px; height: 15px; }
   .legacy-dag-logo { width: 36px; height: 36px; }
   .legacy-clock-units { transform: scale(.88); transform-origin: left center; }
