@@ -334,8 +334,8 @@ const lawyer_fees_raw = [
   {
     number: 20,
     type: "State - Writ of Mandate (CCP 1085, PC 679.10 U-Visa Certification)",
-    documentsCount: 42,
-    totalPagesReal: 567,
+    documentsCount: 44,
+    totalPagesReal: 576,
     hours: {
       low: 84.8,
       high: 145.9,
@@ -346,7 +346,7 @@ const lawyer_fees_raw = [
       high: 40852,
       mid: 32298
     },
-    notes: "Record now lives under matter-32/from-20/ (42 PDFs / 567 pages). 306 pages remain two near-duplicate copies of the same 153-page writ, billed once at the flat specialized-writ rate. Aug. 28 true-up: Whitman Aug. 27 tentative (5 pp., OVERRULES COAs 1 & 4 / SUSTAINS WOLA 2 & 3) plus light review of the CHP and Serrato/Paul/Dutra replies, billed at court-order/opposing-review rates (4–8 hrs), not per-page drafting. Sheriff packets and individual-respondent oppositions are assemblies of already-billed work and stay at compilation rates."
+    notes: "Record now lives under matter-32/from-20/. Aug. 31 true-up: clerk-served 8-page notice-of-entry copy of the Aug. 29 Whitman order (6-page order already billed; +2 CES/mailing pages) plus the 1-page Dept. 25 EPOST email, billed at court-order/admin review, not drafting. Sheriff packets and individual-respondent oppositions stay at compilation rates. Aug. 28 true-up of the tentative and replies carries forward."
   },
   {
     number: 21,
@@ -436,8 +436,8 @@ const lawyer_fees_raw = [
   {
     number: 26,
     type: "State — PC §290.46(j) / ICRAA / Wrongful Failure to Hire (removed to E.D. Cal.)",
-    documentsCount: 50,
-    totalPagesReal: 521,
+    documentsCount: 51,
+    totalPagesReal: 541,
     hours: {
       low: 75,
       high: 136,
@@ -448,7 +448,7 @@ const lawyer_fees_raw = [
       high: 38080,
       mid: 29540
     },
-    notes: "Aug. 28 true-up (50 PDFs / 521 pages). July 15 complaint + FA notices + sheriff service carry forward. Raw page count is inflated by three copies of the 49-page notice of removal and two copies of the 62-page ECF 7 MTD pack (opposition-pack-10 is a download set of already-counted files) — those duplicates are billed incrementally, not re-drafted. New work: light review of UPS's Rule 12(b)(6) (ECF 7 / exhibits A–B); 17-page opposition at motion-briefing 0.6–1.2 hr/page plus a 3-page proposed order (drafted, not filed — Drozd Standing Order I.E) and mail POS; caption/reassignment notices; CCP §425.115 punitive-damages notices. Opposing/court papers stay at review rates."
+    notes: "Aug. 31 true-up: clerk-stamped Dkt. 10 opposition (Filed Aug. 28, 20 pp.) is the filed counterpart of the already-billed unfiled draft — incremental stamp-review only, not a second briefing. Proposed order remains unfiled (Drozd Standing Order I.E). Aug. 28 true-up of the ECF 7 MTD pack and opposition-pack-10 duplicates carries forward."
   },
   {
     number: 27,
