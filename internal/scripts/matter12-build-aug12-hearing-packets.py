@@ -79,7 +79,7 @@ DATE_SHORT = "08/12/2026"
 DATE_LONG = "August 12, 2026"
 FAC_FILED = "05/11/2026"
 
-# Exact defendant names as on the Amended Summons (filed June 11/12, 2026).
+# Exact defendant names as on the Amended Summons (clerk-issued June 11, 2026).
 DIAMOND_AS_SUED = "DIAMOND TRUCK SALES, INC., a California corporation"
 ALPINE_AS_SUED = (
     "ALPINE TRUCK SALES, INC., a California corporation "
