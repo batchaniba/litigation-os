@@ -5,35 +5,29 @@ Newanforbi v. Shannon Smith, LCSW, et al., N.D. Cal. No. 3:26-cv-07504-LJC.
 
 Blaze Van Dine (Sims, Lawrence & Broghammer) stated during meet-and-confer that
 SLB would accept service on behalf of Shannon Smith and HOPE Psychotherapy,
-Inc. This packet assembles the papers to transmit by email (with
-slb-eservice@sims-law.net on the To/Cc line) and the forms needed to file
-proof after counsel confirms acceptance in writing.
+Inc. This packet transmits the clerk-issued AO 440 (Aug. 31, 2026, combined
+form) with the complaint and Dkt. 11. Do not regenerate or restamp the issued
+summons.
 
 Outputs under internal/public/documents/matter-28/service-packet-slb/:
   00_Cover_Sheet.pdf
   01_Acknowledgment_of_Acceptance_of_Service.pdf
-  02_AO_440_Summons_Shannon_Smith.pdf
-  03_AO_440_Summons_HOPE_Psychotherapy.pdf
-  04_Complaint_as_filed.pdf  (copy)
-  05_Dkt_11_Order_Directing_Service.pdf  (copy)
-  06_Proof_of_Service_Electronic_Delivery_to_SLB.pdf
+  02_AO_440_Summons_Issued.pdf  (copy of clerk-issued combined AO 440)
+  03_Complaint_as_filed.pdf  (copy)
+  04_Dkt_11_Order_Directing_Service.pdf  (copy)
+  05_Proof_of_Service_Electronic_Delivery_to_SLB.pdf
   EMAIL_DRAFT_Service_on_SLB.txt
   COMPLETE_Service_Packet_SLB_Acceptance.pdf  (assembled)
 """
 
 from __future__ import annotations
 
+import os
 import shutil
 import sys
 from pathlib import Path
+from urllib.parse import quote
 
-from pypdf.generic import (
-    ArrayObject,
-    FloatObject,
-    NameObject,
-    TextStringObject,
-)
-from pypdf import PdfReader, PdfWriter
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
 
@@ -49,9 +43,11 @@ from proof_of_service import (  # noqa: E402
 ROOT = Path(__file__).resolve().parents[2]
 M28 = ROOT / "internal/public/documents/matter-28"
 OUT = M28 / "service-packet-slb"
-FORMS = ROOT / "internal/public/documents/_form-library"
-AO440_TEMPLATE = FORMS / "ao440-blank-template.pdf"
 
+ISSUED_SUMMONS_SRC = M28 / (
+    "AO 440 Summons Issued - Shannon Smith and HOPE Psychotherapy "
+    "(N.D. Cal. 3-26-cv-07504-LJC) (Aug 31 2026).pdf"
+)
 COMPLAINT_SRC = M28 / (
     "Complaint_Newanforbi_v_Smith_NDCA (as filed, served on SLB Jul 22 2026).pdf"
 )
@@ -67,117 +63,34 @@ PLAINTIFF_CITY = "Stockton, CA 95204"
 PHONE = "(209) 801-4442"
 EMAIL = "bnn.cdl@gmail.com"
 
-DEFENDANTS_BLOCK = (
-    "SHANNON SMITH, LCSW, Chief Executive Officer and Founder of HOPE Program, "
-    "an individual; and HOPE PSYCHOTHERAPY, INC., d/b/a HOPE PROGRAM, "
-    "a California corporation"
+# Raw links resolve on the branch that carries these PDFs. Override after merge:
+#   PACKET_GITHUB_REF=main python3 internal/scripts/matter28-slb-service-packet.py
+GITHUB_OWNER_REPO = "newanforbi/interactive-litigation-portfolio"
+GITHUB_REF = os.environ.get("PACKET_GITHUB_REF", "cursor/slb-service-packet-issued-6baa")
+
+PACKET_FILES = {
+    "cover": "00_Cover_Sheet.pdf",
+    "ack": "01_Acknowledgment_of_Acceptance_of_Service.pdf",
+    "summons": "02_AO_440_Summons_Issued.pdf",
+    "complaint": "03_Complaint_as_filed.pdf",
+    "dkt11": "04_Dkt_11_Order_Directing_Service.pdf",
+    "pos": "05_Proof_of_Service_Electronic_Delivery_to_SLB.pdf",
+    "complete": "COMPLETE_Service_Packet_SLB_Acceptance.pdf",
+}
+
+# Leftover from the unissued two-form packet. Delete on each render.
+OBSOLETE = (
+    "02_AO_440_Summons_Shannon_Smith.pdf",
+    "03_AO_440_Summons_HOPE_Psychotherapy.pdf",
+    "04_Complaint_as_filed.pdf",
+    "05_Dkt_11_Order_Directing_Service.pdf",
+    "06_Proof_of_Service_Electronic_Delivery_to_SLB.pdf",
 )
 
-AO440_DISTRICT = "        Northern District of California"
-AO440_PLAINTIFF_ADDRESS_RECT = (219.0, 286.0)
-AO440_FONT_OVERRIDES = {"Plaintiff address": "/Helv 9.00 Tf 0 g"}
 
-DEFENDANTS = [
-    {
-        "filename": "02_AO_440_Summons_Shannon_Smith.pdf",
-        "address": [
-            "Shannon Smith, LCSW, Chief Executive Officer",
-            "HOPE Psychotherapy, Inc. d/b/a HOPE Program",
-            "1245 B Street",
-            "Hayward, CA 94541",
-        ],
-        "proof_of_service_name": "Shannon Smith, LCSW, CEO — HOPE Program",
-    },
-    {
-        "filename": "03_AO_440_Summons_HOPE_Psychotherapy.pdf",
-        "address": [
-            "HOPE Psychotherapy, Inc. d/b/a HOPE Program",
-            "c/o Shannon Smith, LCSW, Chief Executive Officer",
-            "1245 B Street",
-            "Hayward, CA 94541",
-        ],
-        "proof_of_service_name": "HOPE Psychotherapy, Inc. d/b/a HOPE Program",
-    },
-]
-
-
-def set_default_appearance(writer: PdfWriter, qualified_name: str, da: str) -> None:
-    leaf = qualified_name.split(".")[-1]
-    for page in writer.pages:
-        for annot in page.get("/Annots") or []:
-            obj = annot.get_object()
-            if str(obj.get("/T")) == leaf:
-                obj[NameObject("/DA")] = TextStringObject(da)
-
-
-def set_field_rect(writer: PdfWriter, field_name: str, bottom: float, top: float) -> None:
-    for page in writer.pages:
-        for annot in page.get("/Annots") or []:
-            obj = annot.get_object()
-            if str(obj.get("/T")) != field_name:
-                continue
-            x0, _, x1, _ = (float(v) for v in obj["/Rect"])
-            obj[NameObject("/Rect")] = ArrayObject(
-                [FloatObject(x0), FloatObject(bottom), FloatObject(x1), FloatObject(top)]
-            )
-
-
-def fill_form(template: Path, out_path: Path, fields: dict[str, object], page_index: int = 0,
-              font_overrides: dict[str, str] | None = None) -> Path:
-    reader = PdfReader(str(template))
-    writer = PdfWriter()
-    writer.append(reader)
-    writer.update_page_form_field_values(writer.pages[page_index], fields)
-    for name, da in (font_overrides or {}).items():
-        set_default_appearance(writer, name, da)
-    writer.set_need_appearances_writer(True)
-    out_path.parent.mkdir(parents=True, exist_ok=True)
-    with open(out_path, "wb") as fh:
-        writer.write(fh)
-    return out_path
-
-
-def fill_summons(defendant: dict) -> Path:
-    fields: dict[str, object] = {
-        "Dist.Info": AO440_DISTRICT,
-        "Plaintiff": PLAINTIFF,
-        "Defendant": DEFENDANTS_BLOCK,
-        "Civil action number": CASE,
-        "Defendant address": "\n".join(defendant["address"]),
-        "Plaintiff address": "\n".join(
-            [
-                PLAINTIFF_MIXED,
-                "Plaintiff, In Pro Per",
-                PLAINTIFF_ADDRESS,
-                PLAINTIFF_CITY,
-                f"Telephone: {PHONE} — E-mail: {EMAIL}",
-            ]
-        ),
-    }
-    out_path = fill_form(
-        AO440_TEMPLATE,
-        OUT / defendant["filename"],
-        fields,
-        font_overrides=AO440_FONT_OVERRIDES,
-    )
-    reader = PdfReader(str(out_path))
-    writer = PdfWriter()
-    writer.append(reader)
-    set_field_rect(writer, "Plaintiff address", *AO440_PLAINTIFF_ADDRESS_RECT)
-    writer.set_need_appearances_writer(True)
-    with open(out_path, "wb") as fh:
-        writer.write(fh)
-
-    reader = PdfReader(str(out_path))
-    writer = PdfWriter()
-    writer.append(reader)
-    writer.update_page_form_field_values(
-        writer.pages[1], {"Defendant2": defendant["proof_of_service_name"]}
-    )
-    writer.set_need_appearances_writer(True)
-    with open(out_path, "wb") as fh:
-        writer.write(fh)
-    return out_path
+def github_raw(filename: str) -> str:
+    rel = f"internal/public/documents/matter-28/service-packet-slb/{filename}"
+    return f"https://raw.githubusercontent.com/{GITHUB_OWNER_REPO}/{GITHUB_REF}/{quote(rel, safe='/')}"
 
 
 def write_cover(path: Path) -> None:
@@ -213,26 +126,25 @@ def write_cover(path: Path) -> None:
     for item in [
         "1. This cover sheet",
         "2. Acknowledgment of Acceptance of Service (ask counsel to confirm in writing)",
-        "3. AO 440 Summons — Shannon Smith (case no. filled; clerk stamp if issued)",
-        "4. AO 440 Summons — HOPE Psychotherapy, Inc.",
-        "5. Complaint (as filed / courtesy copy previously emailed Jul. 22, 2026)",
-        "6. Dkt. 11 — Order directing Rule 4 service (filed Aug. 26, 2026)",
-        "7. Proof of Service — Electronic Delivery to SLB (file after confirmation)",
+        "3. AO 440 Summons ISSUED Aug. 31, 2026 (combined — both defendants)",
+        "4. Complaint (as filed / courtesy copy previously emailed Jul. 22, 2026)",
+        "5. Dkt. 11 — Order directing Rule 4 service (filed Aug. 26, 2026)",
+        "6. Proof of Service — Electronic Delivery to SLB (file after confirmation)",
     ]:
         line(f"  {item}")
     y -= 6
 
-    line("IMPORTANT — ISSUED SUMMONS", 10, True)
-    line("  Dkt. 3 on the early docket was a Proposed Summons. If CM/ECF now shows a")
-    line("  clerk-ISSUED summons (stamped Date + Deputy Clerk), download those pages")
-    line("  and substitute them for documents 3–4 before sending, or attach them as")
-    line("  the controlling summonses. Do not rely on an unissued proposed summons")
-    line("  alone if an issued copy is available.")
+    line("ISSUED SUMMONS (CONTROLLING)", 10, True)
+    line("  Combined AO 440 dated AUG 31 2026, Clerk Mark B. Busby, signed Charles Ho,")
+    line("  Deputy Clerk. Names HOPE Psychotherapy, Inc. d/b/a HOPE Program c/o Shannon")
+    line("  Smith, LCSW, and Shannon Smith individually, both at 1245 B Street, Hayward,")
+    line("  CA 94541. This is the issued process Dkt. 11 required. Do not substitute an")
+    line("  unissued proposed summons (Dkt. 3) or a generated blank AO 440.")
     y -= 6
 
     line("AFTER COUNSEL CONFIRMS ACCEPTANCE", 10, True)
     line("  1. Save the reply email (acceptance for both defendants, date certain).")
-    line("  2. Complete / date the Proof of Service (document 7) and file it on CM/ECF.")
+    line("  2. Complete / date the Proof of Service (document 6) and file it on CM/ECF.")
     line("  3. Calendar the Rule 12 response clock (typically 21 days from acceptance).")
     line("  4. Rule 4(m) outer window from complaint filing (~Jul. 20–21, 2026) ≈ Oct. 19, 2026.")
     y -= 8
@@ -280,8 +192,9 @@ def write_acknowledgment(path: Path) -> None:
         "I, Blaze Van Dine, Esq., of Sims, Lawrence & Broghammer, state that I am "
         "authorized to accept service of process on behalf of the defendants named "
         "below in the above-captioned action, and that I hereby accept service of "
-        "the Summons and Complaint (and the enclosed Dkt. 11 Order) transmitted by "
-        "email to blaze@sims-law.net and slb-eservice@sims-law.net."
+        "the issued Summons (AO 440, dated August 31, 2026) and Complaint (and the "
+        "enclosed Dkt. 11 Order) transmitted by email to blaze@sims-law.net and "
+        "slb-eservice@sims-law.net."
     )
     y -= 4
     line("Defendants for whom service is accepted:", 10, True)
@@ -290,8 +203,9 @@ def write_acknowledgment(path: Path) -> None:
     line("  [ ]  Both of the above")
     y -= 6
     line("Date of acceptance (effective date of service): ________________________", 10, False, 18)
-    line("Manner: Electronic mail (PDF attachments), pursuant to counsel’s agreement", 10, False, 18)
-    line("to accept service on behalf of the clients during meet-and-confer.", 10, False, 18)
+    line("Manner: Electronic mail (PDF attachments and GitHub raw links), pursuant", 10, False, 18)
+    line("to counsel’s agreement to accept service on behalf of the clients during", 10, False, 18)
+    line("meet-and-confer.", 10, False, 18)
 
     wrapped(
         "I understand that this acknowledgment is intended to perfect service under "
@@ -313,30 +227,40 @@ def write_acknowledgment(path: Path) -> None:
 
 
 def write_email_draft(path: Path) -> None:
+    raw_complete = github_raw(PACKET_FILES["complete"])
+    raw_summons = github_raw(PACKET_FILES["summons"])
+    raw_complaint = github_raw(PACKET_FILES["complaint"])
+    raw_dkt11 = github_raw(PACKET_FILES["dkt11"])
+    raw_ack = github_raw(PACKET_FILES["ack"])
+    raw_cover = github_raw(PACKET_FILES["cover"])
+
     text = f"""To: blaze@sims-law.net; slb-eservice@sims-law.net
 Cc: cynthia@sims-law.net; bryan@sims-law.net; kschmitt@sims-law.net; june@sims-law.net
 Subject: Service of Process — Newanforbi v. Smith, et al., No. 3:26-cv-07504-LJC (N.D. Cal.)
 
 Mr. Van Dine:
 
-I write to effect service of process in Newanforbi v. Shannon Smith, LCSW, et al., United States District Court for the Northern District of California, Case No. {CASE}, Hon. Lisa J. Cisneros.
+Per your statement at meet-and-confer that SLB will accept service for Shannon Smith, LCSW, and HOPE Psychotherapy, Inc., and pursuant to Fed. R. Civ. P. 4 and Dkt. 11 (Aug. 26, 2026), the service packet is attached and at these GitHub raw links:
 
-During our meet-and-confer, you stated that Sims, Lawrence & Broghammer would accept service on behalf of your clients in this action. Pursuant to that agreement, and consistent with Fed. R. Civ. P. 4 and this Court’s August 26, 2026 Order (Dkt. 11) directing service under Rule 4, please find attached a complete service packet containing:
+  Complete packet:
+  {raw_complete}
 
-  1. Cover sheet;
-  2. Acknowledgment of Acceptance of Service (for your written confirmation);
-  3. AO 440 Summons — Shannon Smith, LCSW;
-  4. AO 440 Summons — HOPE Psychotherapy, Inc. d/b/a HOPE Program;
-  5. Complaint (the same operative pleading previously transmitted as a courtesy copy on July 22, 2026);
-  6. Dkt. 11 — Order Regarding Payment of Filing Fee / Directing Rule 4 Service (filed Aug. 26, 2026).
+  Issued AO 440 (Aug. 31, 2026 — both defendants):
+  {raw_summons}
 
-This email includes slb-eservice@sims-law.net as required by your firm’s electronic-service notice.
+  Complaint (as filed):
+  {raw_complaint}
 
-Please reply confirming that SLB accepts service on behalf of (1) Shannon Smith, LCSW, and (2) HOPE Psychotherapy, Inc. d/b/a HOPE Program, and stating the effective date of acceptance. You may sign and return the enclosed Acknowledgment, or confirm by reply email. Upon your confirmation I will file proof of service on the docket.
+  Dkt. 11 (order directing Rule 4 service):
+  {raw_dkt11}
 
-If the Clerk has issued stamped summonses that supersede the enclosed AO 440 forms, please treat those issued summonses as controlling; I will promptly transmit any stamped copies from CM/ECF if they differ from what is attached.
+  Acknowledgment of Acceptance of Service:
+  {raw_ack}
 
-Thank you for your professional courtesy.
+  Cover sheet:
+  {raw_cover}
+
+Please reply confirming that SLB accepts service for both defendants and stating the effective date. You may sign the Acknowledgment or confirm by reply. I will file proof of service after your confirmation.
 
 Respectfully,
 
@@ -348,13 +272,18 @@ Tel: {PHONE}
 Email: {EMAIL}
 
 Attachments:
-  COMPLETE_Service_Packet_SLB_Acceptance.pdf
-  (or the individual packet PDFs listed above)
+  {PACKET_FILES["complete"]}
+  {PACKET_FILES["summons"]}
+  {PACKET_FILES["complaint"]}
+  {PACKET_FILES["dkt11"]}
+  {PACKET_FILES["ack"]}
 
 ---
 Note to self (do not send): After Blaze confirms, date and file
-06_Proof_of_Service_Electronic_Delivery_to_SLB.pdf with the confirmation
-email attached as an exhibit if the clerk’s practice prefers it.
+{PACKET_FILES["pos"]} with the confirmation email as an exhibit if the
+clerk’s practice prefers it. Do not treat SLB’s prior HOPE appearance as
+a waiver. Raw links use branch {GITHUB_REF}; after merge, re-render with
+PACKET_GITHUB_REF=main if you want main-line URLs.
 """
     path.write_text(text, encoding="utf-8")
 
@@ -371,9 +300,9 @@ def write_proof_of_service(path: Path) -> None:
         title="PROOF OF SERVICE",
         service_date="",  # fill after acceptance
         document_title=(
-            "Summons (AO 440) as to Shannon Smith, LCSW; Summons (AO 440) as to "
-            "HOPE Psychotherapy, Inc. d/b/a HOPE Program; Complaint; and Dkt. 11 "
-            "Order Regarding Payment of Filing Fee and Directing Service"
+            "Issued Summons (AO 440, dated August 31, 2026) as to Shannon Smith, "
+            "LCSW, and HOPE Psychotherapy, Inc. d/b/a HOPE Program; Complaint; "
+            "and Dkt. 11 Order Regarding Payment of Filing Fee and Directing Service"
         ),
         mailing_location="Stockton, California (electronic mail)",
         recipients=[
@@ -392,33 +321,42 @@ def write_proof_of_service(path: Path) -> None:
 
 def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
-    assert AO440_TEMPLATE.is_file(), f"missing {AO440_TEMPLATE}"
+    assert ISSUED_SUMMONS_SRC.is_file(), f"missing {ISSUED_SUMMONS_SRC}"
     assert COMPLAINT_SRC.is_file(), f"missing {COMPLAINT_SRC}"
     assert DKT11_SRC.is_file(), f"missing {DKT11_SRC}"
 
-    cover = OUT / "00_Cover_Sheet.pdf"
-    ack = OUT / "01_Acknowledgment_of_Acceptance_of_Service.pdf"
-    pos = OUT / "06_Proof_of_Service_Electronic_Delivery_to_SLB.pdf"
+    for name in OBSOLETE:
+        stale = OUT / name
+        if stale.is_file() and name not in PACKET_FILES.values():
+            stale.unlink()
+
+    cover = OUT / PACKET_FILES["cover"]
+    ack = OUT / PACKET_FILES["ack"]
+    summons_out = OUT / PACKET_FILES["summons"]
+    complaint_out = OUT / PACKET_FILES["complaint"]
+    dkt11_out = OUT / PACKET_FILES["dkt11"]
+    pos = OUT / PACKET_FILES["pos"]
     email = OUT / "EMAIL_DRAFT_Service_on_SLB.txt"
-    complaint_out = OUT / "04_Complaint_as_filed.pdf"
-    dkt11_out = OUT / "05_Dkt_11_Order_Directing_Service.pdf"
-    complete = OUT / "COMPLETE_Service_Packet_SLB_Acceptance.pdf"
+    complete = OUT / PACKET_FILES["complete"]
 
     write_cover(cover)
     write_acknowledgment(ack)
-    summons_paths = [fill_summons(d) for d in DEFENDANTS]
+    shutil.copy2(ISSUED_SUMMONS_SRC, summons_out)
     shutil.copy2(COMPLAINT_SRC, complaint_out)
     shutil.copy2(DKT11_SRC, dkt11_out)
     write_proof_of_service(pos)
     write_email_draft(email)
 
     pages = assemble(
-        [cover, ack, *summons_paths, complaint_out, dkt11_out, pos],
+        [cover, ack, summons_out, complaint_out, dkt11_out, pos],
         complete,
     )
     print(f"Wrote {complete} ({pages} pages)")
+    print(f"GitHub raw ref: {GITHUB_REF}")
     for p in sorted(OUT.iterdir()):
         print(f"  {p.name}  ({p.stat().st_size} bytes)")
+        if p.suffix.lower() == ".pdf" or p.name.startswith("EMAIL"):
+            print(f"    {github_raw(p.name)}")
 
 
 if __name__ == "__main__":
