@@ -15,6 +15,7 @@ __pycache__/
 # Filled payment sheets (PAN). Generate locally; do not commit.
 internal/handoff/*CC-Authorization*.pdf
 internal/handoff/3_Summons_FAC_SOS_CC_*.pdf
+internal/handoff/4_Stanislaus_Credit_Card_Authorization*.pdf
 /*.docx
 /*.doc
 /*.jpeg
