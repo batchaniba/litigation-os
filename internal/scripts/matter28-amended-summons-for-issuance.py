@@ -11,9 +11,10 @@ caption cleanly, and leave the clerk Date / signature lines blank for stamping.
 
 Outputs (matter-28/amended-summons-for-issuance/):
   00_Request_for_Issuance_of_Amended_Summons.pdf
-  01_Amended_Summons_Shannon_Smith.pdf
-  02_Amended_Summons_HOPE_Psychotherapy.pdf
+  01_Amended_Summons_Shannon_Smith.pdf   (AO 440 page 1 only)
+  02_Amended_Summons_HOPE_Psychotherapy.pdf  (AO 440 page 1 only)
   COMPLETE_Amended_Summons_Packet_for_Clerk.pdf
+    = Request + Exhibit A (Smith) + Exhibit B (HOPE) — single download
 """
 
 from __future__ import annotations
@@ -57,7 +58,8 @@ AO440_FONT_OVERRIDES = {"Plaintiff address": "/Helv 9.00 Tf 0 g"}
 DEFENDANTS = [
     {
         "filename": "01_Amended_Summons_Shannon_Smith.pdf",
-        "banner": "AMENDED SUMMONS — Shannon Smith, LCSW",
+        "exhibit": "A",
+        "banner": "EXHIBIT A — AMENDED SUMMONS — Shannon Smith, LCSW",
         "address": [
             "Shannon Smith, LCSW, Chief Executive Officer",
             "HOPE Psychotherapy, Inc. d/b/a HOPE Program",
@@ -68,7 +70,8 @@ DEFENDANTS = [
     },
     {
         "filename": "02_Amended_Summons_HOPE_Psychotherapy.pdf",
-        "banner": "AMENDED SUMMONS — HOPE Psychotherapy, Inc.",
+        "exhibit": "B",
+        "banner": "EXHIBIT B — AMENDED SUMMONS — HOPE Psychotherapy, Inc.",
         "address": [
             "HOPE Psychotherapy, Inc. d/b/a HOPE Program",
             "c/o Shannon Smith, LCSW, Chief Executive Officer",
@@ -120,13 +123,13 @@ def stamp_amended_banner(pdf_path: Path, banner: str) -> None:
     """Overlay a clear AMENDED SUMMONS banner so the clerk sees the ask."""
     doc = pymupdf.open(str(pdf_path))
     page = doc[0]
-    # Top margin below the AO 440 header line.
-    rect = pymupdf.Rect(36, 28, 576, 44)
+    # Top margin below the AO 440 header line — wider for EXHIBIT A/B banner.
+    rect = pymupdf.Rect(28, 22, 584, 46)
     page.draw_rect(rect, color=(0, 0, 0), fill=(1, 1, 1), width=0.6)
     page.insert_textbox(
         rect,
         banner,
-        fontsize=10,
+        fontsize=9,
         fontname="helv",
         align=pymupdf.TEXT_ALIGN_CENTER,
     )
@@ -141,6 +144,15 @@ def stamp_amended_banner(pdf_path: Path, banner: str) -> None:
     )
     doc.saveIncr()
     doc.close()
+
+
+def drop_proof_of_service_page(pdf_path: Path) -> None:
+    """Keep AO 440 page 1 only (drop the blank Proof of Service page)."""
+    reader = PdfReader(str(pdf_path))
+    writer = PdfWriter()
+    writer.add_page(reader.pages[0])
+    with open(pdf_path, "wb") as fh:
+        writer.write(fh)
 
 
 def fill_amended_summons(defendant: dict) -> Path:
@@ -175,16 +187,8 @@ def fill_amended_summons(defendant: dict) -> Path:
     with open(out_path, "wb") as fh:
         writer.write(fh)
 
-    reader = PdfReader(str(out_path))
-    writer = PdfWriter()
-    writer.append(reader)
-    writer.update_page_form_field_values(
-        writer.pages[1], {"Defendant2": defendant["proof_of_service_name"]}
-    )
-    writer.set_need_appearances_writer(True)
-    with open(out_path, "wb") as fh:
-        writer.write(fh)
-
+    # Page 2 (Proof of Service) is not needed for clerk issuance — drop it.
+    drop_proof_of_service_page(out_path)
     stamp_amended_banner(out_path, defendant["banner"])
     return out_path
 
@@ -241,17 +245,17 @@ def write_clerk_request(path: Path) -> None:
         "consistent with Rule 4 (Dkt. 11)."
     )
     wrap(
-        "3. The enclosed Amended Summonses (one for each named defendant) (a) state "
-        "the assigned case number, (b) identify each defendant with a complete "
-        "service address (1245 B Street, Hayward, CA 94541), and (c) leave the "
-        "Date and Deputy Clerk signature lines blank for issuance."
+        "3. Attached as Exhibit A (Shannon Smith, LCSW) and Exhibit B "
+        "(HOPE Psychotherapy, Inc. d/b/a HOPE Program) are Amended Summonses that "
+        "(a) state the assigned case number, (b) identify each defendant with a "
+        "complete service address (1245 B Street, Hayward, CA 94541), and "
+        "(c) leave the Date and Deputy Clerk signature lines blank for issuance."
     )
     y -= 6
     line("Request", 11, True)
     wrap(
-        "Please sign, seal, and issue the enclosed Amended Summons as to "
-        "(1) Shannon Smith, LCSW, and (2) HOPE Psychotherapy, Inc. d/b/a HOPE Program, "
-        "so Plaintiff may effect Rule 4 service as directed in Dkt. 11."
+        "Please sign, seal, and issue the Amended Summonses attached as Exhibits A "
+        "and B so Plaintiff may effect Rule 4 service as directed in Dkt. 11."
     )
     y -= 10
     line("Respectfully submitted,", 11, False, 28)
@@ -264,9 +268,9 @@ def write_clerk_request(path: Path) -> None:
     line(f"Email: {EMAIL}", 11, False, 18)
     line("Dated: August 31, 2026", 11)
     y -= 10
-    line("Enclosures (for clerk stamping — please return issued originals to Plaintiff):", 10, True, 14)
-    line("  1. Amended Summons — Shannon Smith, LCSW (AO 440)", 10)
-    line("  2. Amended Summons — HOPE Psychotherapy, Inc. (AO 440)", 10)
+    line("Exhibits (for clerk stamping -- please return issued originals to Plaintiff):", 10, True, 14)
+    line("  Exhibit A  Amended Summons -- Shannon Smith, LCSW (AO 440)", 10)
+    line("  Exhibit B  Amended Summons -- HOPE Psychotherapy, Inc. (AO 440)", 10)
     c.save()
 
 
