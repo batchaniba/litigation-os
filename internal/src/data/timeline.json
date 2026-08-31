@@ -1,5 +1,95 @@
 [
   {
+    "date": "Oct. 28, 2026",
+    "event": "Case Management Conference (continued from Sep. 2, 2026) \u2014 Newanforbi v. CHP et al. (26CV191136), 4:00 p.m., Dept. 25, Rene C. Davidson Courthouse, Hon. Jenna M. Whitman. Continued by the August 29, 2026 order (notice of entry August 31).",
+    "matters": [
+      20
+    ],
+    "type": "hearing",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-32/from-20/Order Sustaining Demurrer In Part - Whitman (Aug 29 2026) (Notice of Entry Aug 31 2026).pdf"
+  },
+  {
+    "date": "Oct. 13, 2026",
+    "event": "Case Management Statement due (computed) \u2014 Newanforbi v. CHP et al. (26CV191136), 15 calendar days before the Oct. 28, 2026 CMC per CRC 3.725.",
+    "matters": [
+      20
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you"
+  },
+  {
+    "date": "Sep. 20, 2026",
+    "event": "AMENDMENT DUE (optional) \u2014 if Petitioner elects to amend Count 4, file and serve an amended Petition within 20 days of notice of entry of the August 29, 2026 Whitman order. Clerk served notice of entry August 31, 2026 (CCP \u00a71010.6 e-service plus mail). Respondents then have 20 days after service of the amendment. Count 1 already survives; default path is proceed on Count 1 alone. \u2014 Newanforbi v. CHP et al. (26CV191136).",
+    "matters": [
+      20
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-32/from-20/Order Sustaining Demurrer In Part - Whitman (Aug 29 2026) (Notice of Entry Aug 31 2026).pdf"
+  },
+  {
+    "date": "Sep. 18, 2026",
+    "event": "VACATED \u2014 Hearing on Individual Respondents' demurrers (Paul CRS# 892736633033; Serrato CRS# 487924635411; Dutra CRS# 238548651553), Newanforbi v. CHP et al. (26CV191136). Vacated by the August 29, 2026 Whitman order: Dutra and Paul dismissed by stipulation; the individual demurrer hearings dropped as moot.",
+    "matters": [
+      20
+    ],
+    "type": "hearing",
+    "upcoming": false,
+    "actor": "agency",
+    "source": "/documents/matter-32/from-20/Order Sustaining Demurrer In Part - Whitman (Aug 29 2026) (Notice of Entry Aug 31 2026).pdf"
+  },
+  {
+    "date": "Aug. 31, 2026",
+    "event": "NOTICE OF ENTRY \u2014 Clerk of the Alameda Superior Court served the August 29, 2026 ORDER Sustaining Demurrer In Part, with Leave to Amend, in Newanforbi v. CHP et al. (26CV191136). CCP \u00a71010.6 Certificate of Electronic Service dated August 31, 2026 on bnn.cdl@gmail.com and vanessa.ing@doj.ca.gov; Certificate of Mailing the same date to 1455 Cat Tail Drive, Stockton, CA 95204. Starts the 20-day Count 4 amendment clock (~Sep. 20, 2026).",
+    "matters": [
+      20
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "agency",
+    "source": "/documents/matter-32/from-20/Order Sustaining Demurrer In Part - Whitman (Aug 29 2026) (Notice of Entry Aug 31 2026).pdf"
+  },
+  {
+    "date": "Aug. 31, 2026",
+    "event": "RECEIVED \u2014 Alameda Superior Court EPOST email, Mon Aug. 31, 2026, 10:00 a.m., from Dept25@alameda.courts.ca.gov (Amani Amponsah, covering, clerk to Hon. Michael Markman) to Petitioner and DAG Ing, attaching the August 29 General Order. Same-day notice of entry as the CCP \u00a71010.6 certificates. \u2014 Newanforbi v. CHP et al. (26CV191136).",
+    "matters": [
+      20
+    ],
+    "type": "event",
+    "upcoming": false,
+    "actor": "agency",
+    "source": "/documents/matter-32/from-20/Gmail - Alameda Superior Court EPOST - 26CV191136 Whitman Order (Aug 31 2026).pdf"
+  },
+  {
+    "date": "Aug. 29, 2026",
+    "event": "ENTERED \u2014 ORDER Sustaining Demurrer In Part, with Leave to Amend (Hon. Jenna M. Whitman, Dept. 25) in Newanforbi v. CHP et al. (26CV191136), after the August 28 hearing. Count 1 OVERRULED; Counts 2\u20133 SUSTAINED WITHOUT LEAVE; Count 4 SUSTAINED WITH LEAVE. Dutra and Paul dismissed by stipulation; September 18 individual demurrer hearings vacated; CMC continued from September 2 to October 28, 2026, 4:00 p.m., Dept. 25. Notice of entry served August 31.",
+    "matters": [
+      20
+    ],
+    "type": "ruling",
+    "upcoming": false,
+    "filed": true,
+    "actor": "agency",
+    "source": "/documents/matter-32/from-20/Order Sustaining Demurrer In Part - Whitman (Aug 29 2026).pdf"
+  },
+  {
+    "date": "Aug. 28, 2026",
+    "event": "FILED \u2014 Plaintiff's Opposition to UPS's Rule 12(b)(6) Motion to Dismiss (Dkt. 10) in Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). Clerk-stamped Document 10, Filed 08/28/26, 20 pages. Hearing remains Oct. 5, 2026, 1:30 p.m., Courtroom 4 / Zoom (Drozd Standing Order I.A). Satisfies the L.R. 230(c) opposition clock that had been dated Sep. 9.",
+    "matters": [
+      26
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "you",
+    "source": "/documents/matter-26/Dkt 10 - Plaintiff's Opposition to UPS Rule 12(b)(6) Motion to Dismiss (Filed Aug 28 2026).pdf"
+  },
+  {
     "date": "Aug. 24, 2026",
     "event": "FILED \u2014 Notice of Appearance on behalf of Defendant Amazon.com Services LLC in Newanforbi v. Amazon.com Services, LLC et al. (26CV201554). Andrew P. Frederick (SBN 284832), Morgan, Lewis & Bockius LLP, 1400 Page Mill Road, Palo Alto, CA 94304; tel +1.650.843.7565; fax +1.650.843.4001; andrew.frederick@morganlewis.com. Complaint filed July 28, 2026; trial not yet set. Proof of Service by U.S. mail (Suga A. Ikeda) on Plaintiff at 1455 Cat Tail Drive and on Accurate Background counsel: Jasmine Stanzick (Seyfarth Shaw LLP, 601 S. Figueroa St., Suite 3300, Los Angeles, CA 90017-5793) and John Drury (Seyfarth Shaw LLP, 233 S. Wacker Drive, Suite 8000, Chicago, IL 60606-6448). Responsive pleading still due Aug. 31, 2026.",
     "matters": [
@@ -90,7 +180,7 @@
   },
   {
     "date": "Aug. 31, 2026",
-    "event": "EXECUTED (unfiled) \u2014 Notice of Supplemental Authority in Newanforbi v. Serrato (4:26-cv-05953-ASK) lodging Hon. Jenna M. Whitman's August 27, 2026 written tentative on the CHP demurrer in Alameda No. 26CV191136 (heard August 28). Caption hearing date is September 30, 2026 (Dkt. 21). The notice attaches the tentative as Exhibit A, states that the minute order has not yet entered, and does not ask Krishnan to treat the tentative as a final state-court judgment. No argument; Civil L.R. 7-3. Email POS on DAG Haiyang A. Li. Supersedes the Aug. 28 draft (which still said Sep. 16). Swap Exhibit A for the minute order when it is in hand.",
+    "event": "EXECUTED (unfiled) \u2014 Notice of Supplemental Authority in Newanforbi v. Serrato (4:26-cv-05953-ASK) lodging Hon. Jenna M. Whitman's August 27, 2026 written tentative on the CHP demurrer in Alameda No. 26CV191136 (heard August 28). Caption hearing date is September 30, 2026 (Dkt. 21). The notice attaches the tentative as Exhibit A and does not ask Krishnan to treat the tentative as a final state-court judgment. The entered Whitman order (Aug. 29; notice of entry Aug. 31) is now in the Matter 20 file. This NSA remains unfiled; do not file it.",
     "matters": [
       24,
       20
@@ -139,13 +229,14 @@
   },
   {
     "date": "Aug. 28, 2026",
-    "event": "HELD \u2014 Demurrer hearing, 10:30 a.m., Dept. 25, Hon. Jenna M. Whitman \u2014 Newanforbi v. CHP et al. (26CV191136). Petitioner appeared. The Aug. 27 tentative had overruled COAs 1 & 4 and sustained WOLA on COAs 2 & 3; whether that tentative was adopted is not yet recorded. Do not treat the tentative as the final order until the minute order is in hand.",
+    "event": "HELD \u2014 Demurrer hearing, 10:30 a.m., Dept. 25, Hon. Jenna M. Whitman \u2014 Newanforbi v. CHP et al. (26CV191136). Petitioner appeared. Entered order dated August 29, 2026 (notice of entry August 31): Count 1 overruled; Counts 2\u20133 WOLA; Count 4 sustained with leave. Dutra/Paul dismissed by stipulation.",
     "matters": [
       20
     ],
     "type": "hearing",
     "upcoming": false,
-    "actor": "you"
+    "actor": "you",
+    "source": "/documents/matter-32/from-20/Order Sustaining Demurrer In Part - Whitman (Aug 29 2026).pdf"
   },
   {
     "date": "Aug. 28, 2026",
@@ -183,7 +274,7 @@
   },
   {
     "date": "Oct. 5, 2026",
-    "event": "HEARING \u2014 Defendant UPS's Rule 12(b)(6) Motion to Dismiss (ECF No. 7), Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD), 1:30 p.m., Courtroom 4. Drozd civil law-and-motion is Zoom only (Standing Order I.A). Opposition due Sep. 9, 2026 (L.R. 230(c)).",
+    "event": "HEARING \u2014 Defendant UPS's Rule 12(b)(6) Motion to Dismiss (ECF No. 7), Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD), 1:30 p.m., Courtroom 4. Drozd civil law-and-motion is Zoom only (Standing Order I.A). Opposition is on file as Dkt. 10 (filed Aug. 28, 2026).",
     "matters": [
       26
     ],
@@ -193,7 +284,7 @@
   },
   {
     "date": "Sep. 16, 2026",
-    "event": "Rule 15(a)(1)(B) amendment-as-of-right window \u2014 Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). UPS served the MTD by mail Aug. 26, 2026 (ECF 7-3). 21 days after service is Sep. 16; Rule 6(d) may add 3 days for mail service through Sep. 19. A FAC moots ECF 7. Do not miss the Sep. 9 L.R. 230(c) opposition clock by waiting for this window.",
+    "event": "Rule 15(a)(1)(B) amendment-as-of-right window \u2014 Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). UPS served the MTD by mail Aug. 26, 2026 (ECF 7-3). 21 days after service is Sep. 16; Rule 6(d) may add 3 days for mail service through Sep. 19. A FAC moots ECF 7. Opposition is already on file as Dkt. 10.",
     "matters": [
       26
     ],
@@ -203,18 +294,19 @@
   },
   {
     "date": "Sep. 9, 2026",
-    "event": "OPPOSITION DUE \u2014 Plaintiff's opposition to UPS's Rule 12(b)(6) motion (ECF No. 7), Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). L.R. 230(c): 14 days after filing (Aug. 26). Failure to oppose may be taken as consent. Unfiled draft is dated Aug. 28; regenerate with internal/scripts/matter26-opposition-to-mtd.py --date on the day of actual service. Drozd Standing Order I.E: do not file the proposed order with the opposition unless the Court asks. Hearing Oct. 5, 2026 (Zoom).",
+    "event": "SATISFIED \u2014 Opposition due to UPS's Rule 12(b)(6) motion (ECF No. 7), Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). L.R. 230(c) clock ran 14 days from the Aug. 26 filing. Opposition is on file as Dkt. 10 (FILED Aug. 28, 2026, 20 pages, clerk-stamped). Hearing Oct. 5, 2026 (Zoom).",
     "matters": [
       26
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "you",
-    "source": "/documents/matter-26/Opposition to UPS Rule 12(b)(6) Motion to Dismiss (E.D. Cal. 2-26-cv-02847) (Sep 9 2026).pdf"
+    "source": "/documents/matter-26/Dkt 10 - Plaintiff's Opposition to UPS Rule 12(b)(6) Motion to Dismiss (Filed Aug 28 2026).pdf",
+    "filed": true
   },
   {
     "date": "Aug. 28, 2026",
-    "event": "DRAFTED \u2014 Plaintiff's Opposition to UPS's Rule 12(b)(6) Motion to Dismiss (unfiled). Surgical cleanup: 12(b)(6) rhetoric softened; ICRAA anchored to Civ. Code 1786.16(b) not a 290.46 pass-through; Rule 15 clock runs from Aug. 26 mail service; proposed order is a single realistic disposition and is not to be filed (Drozd Standing Order I.E). Dated Aug. 28, 2026. The portfolio four-sided-border Proof of Service is attached as the last page of the opposition PDF. Service is first-class mail (FRCP 5(b)(2)(C)) from San Jose to Mott/Daskas at Costa Mesa and Mott's Carlsbad docket address; email is a courtesy copy only. Due Sep. 9.",
+    "event": "SUPERSEDED \u2014 Plaintiff's Opposition to UPS's Rule 12(b)(6) Motion to Dismiss (unfiled portfolio draft dated Aug. 28 / filename Sep. 9). Replaced by the clerk-stamped Dkt. 10 filed Aug. 28, 2026. Proposed order remains unfiled (Drozd Standing Order I.E).",
     "matters": [
       26
     ],
@@ -2086,7 +2178,7 @@
   },
   {
     "date": "Jun. 30, 2026",
-    "event": "Case Management Statement due (computed) \u2014 Newanforbi v. California Highway Patrol, et al. (Matter 20), 15 calendar days before the originally-set Jul. 15, 2026 CMC per Cal. Rules of Court, rule 3.725 default. MOOTED: the Jul. 15, 2026 CMC itself was continued to Sep. 2, 2026 (confirmed by the court's signed Order, entered Jul. 21, 2026), so the pressure behind this computed deadline no longer applies; a fresh CM-110 will be due 15 days ahead of the Sep. 2 date if not otherwise addressed",
+    "event": "Case Management Statement due (computed) \u2014 Newanforbi v. California Highway Patrol, et al. (Matter 20), 15 calendar days before the originally-set Jul. 15, 2026 CMC per Cal. Rules of Court, rule 3.725 default. MOOTED: the Jul. 15, 2026 CMC was continued to Sep. 2, 2026, then further continued by the August 29, 2026 Whitman order to Oct. 28, 2026; the live CM-110 date is 15 days ahead of Oct. 28 (see Oct. 13, 2026 entry).",
     "matters": [
       20
     ],
@@ -2102,12 +2194,14 @@
   },
   {
     "date": "Sep. 2, 2026",
-    "event": "Case Management Conference (continued from Jul. 15, 2026) \u2014 Newanforbi v. California Highway Patrol, et al. (Case No. 26CV191136), Dept. 25, Rene C. Davidson Courthouse, Oakland, Alameda County; Hon. Jenna M. Whitman",
+    "event": "CONTINUED \u2014 Case Management Conference originally continued from Jul. 15, 2026 to Sep. 2, 2026 \u2014 Newanforbi v. CHP et al. (26CV191136). Further continued by the August 29, 2026 Whitman order to October 28, 2026, 4:00 p.m., Dept. 25. Did not proceed on this date.",
     "matters": [
       20
     ],
     "type": "hearing",
-    "upcoming": true
+    "upcoming": false,
+    "actor": "you",
+    "source": "/documents/matter-32/from-20/Order Sustaining Demurrer In Part - Whitman (Aug 29 2026) (Notice of Entry Aug 31 2026).pdf"
   },
   {
     "date": "Jul. 17, 2026",
@@ -3729,7 +3823,7 @@
   },
   {
     "date": "Aug. 27, 2026",
-    "event": "WATCH SATISFIED \u2014 UPS filed its Rule 12(b)(6) motion on Aug. 26, 2026 in Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). The L.R. 230(c) opposition clock and Rule 15(a)(1)(B) amendment window are now dated Sep. 9 and Sep. 16; see those entries.",
+    "event": "WATCH SATISFIED \u2014 UPS filed its Rule 12(b)(6) motion on Aug. 26, 2026 in Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). Opposition is on file as Dkt. 10 (filed Aug. 28). The Rule 15(a)(1)(B) amendment window remains Sep. 16.",
     "matters": [
       26
     ],
