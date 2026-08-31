@@ -8,9 +8,9 @@ directs Rule 4 service after fee payment. This packet is what Plaintiff prints
 and takes to the courthouse:
 
   1. Request for Issuance — portfolio pleading paper
-  2. Exhibit A cover — portfolio exhibit-cover style
+  2. Exhibit A cover — portfolio pleading paper (Matter 33 exhibit style)
   3. Amended Summons — Shannon Smith (AO 440 page 1 only)
-  4. Exhibit B cover — portfolio exhibit-cover style
+  4. Exhibit B cover — portfolio pleading paper (Matter 33 exhibit style)
   5. Amended Summons — HOPE Psychotherapy (AO 440 page 1 only)
 
 Outputs under matter-28/amended-summons-for-issuance/.
@@ -27,7 +27,6 @@ from pypdf.generic import ArrayObject, FloatObject, NameObject, TextStringObject
 SCRIPT_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPT_DIR))
 sys.path.insert(0, str(SCRIPT_DIR / "lib"))
-from exhibit_cover import write_exhibit_cover  # noqa: E402
 from pdf_packet import assemble  # noqa: E402
 from pleading_paper import PleadingPaper  # noqa: E402
 from signature_stamp import SIGNATURE_ASPECT, SIGNATURE_PATH  # noqa: E402
@@ -67,12 +66,20 @@ DEFENDANTS = [
         "filename": "01_Amended_Summons_Shannon_Smith.pdf",
         "exhibit": "A",
         "cover_filename": "01a_Exhibit_A_Cover.pdf",
-        "title": "Amended Summons — Shannon Smith, LCSW (AO 440)",
-        "details": [
-            "Fed. R. Civ. P. 4(b) — for clerk issuance (Date / signature blank)",
-            "Serve: Shannon Smith, LCSW, CEO",
-            "HOPE Psychotherapy, Inc. d/b/a HOPE Program",
-            "1245 B Street, Hayward, CA 94541",
+        "footer": "EXHIBIT A — AMENDED SUMMONS (SHANNON SMITH, LCSW)",
+        "right_title": [
+            ("EXHIBIT A TO REQUEST FOR", True, False),
+            ("ISSUANCE OF AMENDED", True, False),
+            ("SUMMONS", True, False),
+            ("[Fed. R. Civ. P. 4(b)]", False, False),
+        ],
+        "heading": "AMENDED SUMMONS — SHANNON SMITH, LCSW",
+        "detail_lines": [
+            "FORM: AO 440 (Summons in a Civil Action) — page 1 only",
+            "DEFENDANT: Shannon Smith, LCSW, Chief Executive Officer",
+            "ADDRESS: HOPE Psychotherapy, Inc. d/b/a HOPE Program",
+            "         1245 B Street, Hayward, CA 94541",
+            "NOTE: Date and Deputy Clerk signature left blank for issuance",
         ],
         "address": [
             "Shannon Smith, LCSW, Chief Executive Officer",
@@ -85,12 +92,20 @@ DEFENDANTS = [
         "filename": "02_Amended_Summons_HOPE_Psychotherapy.pdf",
         "exhibit": "B",
         "cover_filename": "02a_Exhibit_B_Cover.pdf",
-        "title": "Amended Summons — HOPE Psychotherapy, Inc. (AO 440)",
-        "details": [
-            "Fed. R. Civ. P. 4(b) — for clerk issuance (Date / signature blank)",
-            "Serve: HOPE Psychotherapy, Inc. d/b/a HOPE Program",
-            "c/o Shannon Smith, LCSW, Chief Executive Officer",
-            "1245 B Street, Hayward, CA 94541",
+        "footer": "EXHIBIT B — AMENDED SUMMONS (HOPE PSYCHOTHERAPY, INC.)",
+        "right_title": [
+            ("EXHIBIT B TO REQUEST FOR", True, False),
+            ("ISSUANCE OF AMENDED", True, False),
+            ("SUMMONS", True, False),
+            ("[Fed. R. Civ. P. 4(b)]", False, False),
+        ],
+        "heading": "AMENDED SUMMONS — HOPE PSYCHOTHERAPY, INC.",
+        "detail_lines": [
+            "FORM: AO 440 (Summons in a Civil Action) — page 1 only",
+            "DEFENDANT: HOPE Psychotherapy, Inc. d/b/a HOPE Program",
+            "ADDRESS: c/o Shannon Smith, LCSW, Chief Executive Officer",
+            "         1245 B Street, Hayward, CA 94541",
+            "NOTE: Date and Deputy Clerk signature left blank for issuance",
         ],
         "address": [
             "HOPE Psychotherapy, Inc. d/b/a HOPE Program",
@@ -314,21 +329,35 @@ def fill_amended_summons(defendant: dict) -> Path:
     return out_path
 
 
+def write_exhibit_cover_pleading(path: Path, defendant: dict) -> None:
+    """Matter 33-style exhibit cover on portfolio pleading paper."""
+    mark = defendant["exhibit"]
+    d = PleadingPaper(str(path), doc_title_footer=defendant["footer"])
+    _write_party_header(d)
+
+    right = [
+        (f"Case No.: {CASE}", True, False),
+        ("", False, False),
+        *defendant["right_title"],
+        ("", False, False),
+        (f"Judge: {JUDGE}", False, False),
+    ]
+    d.draw_caption_block(_caption_left(), right, caption_size=9, tight_lh=12)
+    d.blank_line()
+    d.write_line(f"EXHIBIT {mark}", bold=True, center=True, size=14)
+    d.blank_line()
+    d.write_line(defendant["heading"], bold=True, center=True, size=11)
+    d.blank_line()
+    for line in defendant["detail_lines"]:
+        d.write_line(line, size=11)
+    d.save()
+
+
 def write_exhibit_pages() -> list[Path]:
     paths: list[Path] = []
     for defendant in DEFENDANTS:
         cover = OUT / defendant["cover_filename"]
-        write_exhibit_cover(
-            cover,
-            court="UNITED STATES DISTRICT COURT",
-            court_line2="NORTHERN DISTRICT OF CALIFORNIA",
-            caption=CAPTION,
-            case_no=f"Case No. {CASE}",
-            exhibit=defendant["exhibit"],
-            title=defendant["title"],
-            details=defendant["details"],
-            footer=f"Request for Issuance of Amended Summons — {CAPTION}",
-        )
+        write_exhibit_cover_pleading(cover, defendant)
         summons = fill_amended_summons(defendant)
         paths.extend([cover, summons])
     return paths
