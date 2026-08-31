@@ -173,7 +173,10 @@ def fill_one(spec: dict) -> Path:
         fields[F["entity_person"]] = spec["entity_person"]
     fields[F["entity_agent"]] = spec["entity_agent"]
     out = OUT / spec["ser001_name"]
-    return fill_ser001(out, fields, stamp_signature=True)
+    # Flatten so sheriff viewers that ignore /NeedAppearances cannot see a
+    # blank SER-001. Stanislaus Civil (Lu, Aug. 31, 2026) returned the
+    # live-field copy as blank.
+    return fill_ser001(out, fields, stamp_signature=True, flatten=True)
 
 
 FW003_PACKET_NAME = "2_FW-003_Order_on_Court_Fee_Waiver.pdf"

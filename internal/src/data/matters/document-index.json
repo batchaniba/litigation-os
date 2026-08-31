@@ -1086,8 +1086,18 @@
   },
   {
     "matter": 12,
+    "label": "Stanislaus Sheriff - SER-001 is blank (Lu, Aug 31 2026)",
+    "path": "/documents/matter-12/Stanislaus Sheriff - SER-001 is blank (Lu, Aug 31 2026).pdf"
+  },
+  {
+    "matter": 12,
     "label": "EMAIL_DRAFT_Stanislaus_Sheriff_Diamond_Reservice_Aug31_2026.txt",
     "path": "/documents/matter-12/EMAIL_DRAFT_Stanislaus_Sheriff_Diamond_Reservice_Aug31_2026.txt"
+  },
+  {
+    "matter": 12,
+    "label": "EMAIL_DRAFT_Stanislaus_Sheriff_Diamond_Flattened_SER001_Aug31_2026.txt",
+    "path": "/documents/matter-12/EMAIL_DRAFT_Stanislaus_Sheriff_Diamond_Flattened_SER001_Aug31_2026.txt"
   },
   {
     "matter": 12,
