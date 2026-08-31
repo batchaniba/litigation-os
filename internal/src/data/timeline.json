@@ -66,6 +66,75 @@
     "source": "/documents/matter-32/from-20/Gmail - Alameda Superior Court EPOST - 26CV191136 Whitman Order (Aug 31 2026).pdf"
   },
   {
+    "date": "Aug. 31, 2026",
+    "event": "FILED \u2014 Dkt. 1 Defendant Amazon.com Services LLC's Notice of Removal of Action to Federal Court in Newanforbi v. Amazon.com Services, LLC et al., USDC N.D. Cal. No. 3:26-cv-09249-ASK (U.S. Magistrate Judge Ajay S. Krishnan). Clerk-stamped Document 1, Filed 08/31/26, Page 1 of 5. Removes Alameda Sup. Ct. 26CV201554 (Hon. Jamilah Jefferson, Dept. 520) under 28 U.S.C. \u00a7\u00a7 1331, 1441, 1446 \u2014 federal question on the FCRA (15 U.S.C. \u00a7 1681) count; state claims via \u00a7 1367. Not diversity: Accurate Background is pled as a California LLC. Accurate consented (Exhibit 11). Timely: served July 31, removed August 31 (\u00a7 1446(b)). Counsel Andrew P. Frederick (SBN 284832), Morgan, Lewis & Bockius LLP, 1400 Page Mill Road, Palo Alto; tel +1.650.843.4000 (removal caption); andrew.frederick@morganlewis.com. Dated August 31, 2026. Amazon states it will serve Plaintiff and file a copy with Alameda under \u00a7 1446(d) \u2014 not yet confirmed.",
+    "matters": [
+      29
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "opposing",
+    "source": "/documents/matter-29/Dkt 01 - Notice of Removal (Filed Aug 31 2026).pdf"
+  },
+  {
+    "date": "Aug. 31, 2026",
+    "event": "FILED \u2014 Dkt. 2 / 2-1 through 2-10 Notice of Removal Exhibits 1\u201311 (68 pp.) in Newanforbi v. Amazon.com Services, LLC et al. (3:26-cv-09249-ASK). Exhibit 1 complaint; Ex. 2 other case-initiating docs; Ex. 3 Civil Case Cover Sheet; Ex. 4 FW-003; Ex. 5 Notice of Payment of Filing Fee; Ex. 6 \u00a7425.115 Amazon; Ex. 7 \u00a7425.115 Accurate; Ex. 8 POS Amazon; Ex. 9 POS Accurate; Ex. 10 Amazon Notice of Appearance (Aug. 24); Ex. 11 Accurate consent to removal (Jasmine J. Stanzick, SBN 354704, Seyfarth Shaw LLP, dated August 28, 2026).",
+    "matters": [
+      29
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "opposing",
+    "source": "/documents/matter-29/Dkt 02 - Notice of Removal Exhibits 1-11 (Filed Aug 31 2026).pdf"
+  },
+  {
+    "date": "Aug. 31, 2026",
+    "event": "FILED \u2014 Dkt. 3 Defendant Amazon.com Services LLC's Certification of Interested Entities or Persons (FRCP 7.1; Civil L.R. 3-15) in Newanforbi v. Amazon.com Services, LLC et al. (3:26-cv-09249-ASK). Clerk-stamped Document 3, Filed 08/31/26, Page 1 of 2. Amazon.com Sales, Inc. is the only member of Amazon.com Services LLC; Amazon.com, Inc. is the public parent. Dated August 31, 2026.",
+    "matters": [
+      29
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "opposing",
+    "source": "/documents/matter-29/Dkt 03 - Certification of Interested Entities or Persons (Filed Aug 31 2026).pdf"
+  },
+  {
+    "date": "Aug. 31, 2026",
+    "event": "CCP \u00a7425.115 PROGRAM MOOT AS TO AMAZON AND ACCURATE BACKGROUND \u2014 the Aug. 7, 2026 Notices of Amount of Punitive Damages Sought ($250,000 Amazon.com Services, LLC / $100,000 Accurate Background LLC) and the unsubmitted Aug. 17 SER-001s are dead letters on removal of Matter 29 to N.D. Cal. No. 3:26-cv-09249-ASK. Section 425.115 is a state pleading device with no federal analogue; the ceiling on relief is Fed. R. Civ. P. 54(c). Do not spend Sheriff service fees on those notices.",
+    "matters": [
+      29
+    ],
+    "type": "event",
+    "upcoming": false,
+    "actor": "you",
+    "source": "/documents/matter-29/Dkt 01 - Notice of Removal (Filed Aug 31 2026).pdf"
+  },
+  {
+    "date": "Sep. 8, 2026",
+    "event": "Amazon / Accurate Background responsive pleading deadline (computed) \u2014 Newanforbi v. Amazon.com Services, LLC et al. (Matter 29, N.D. Cal. No. 3:26-cv-09249-ASK). Fed. R. Civ. P. 81(c)(2) takes the longest of 21 days after receipt of the initial pleading, 21 days after service of the summons, or 7 days after the notice of removal is filed. Service was July 31, 2026, so the 21-day branches expired Aug. 21; the operative date is 7 days after the Aug. 31, 2026 removal, which is Monday, Sep. 7, 2026 (Labor Day). FRCP 6(a)(1)(C) rolls that deadline to Tuesday, September 8, 2026. Watch for answer or Rule 12 motion by Andrew P. Frederick (Morgan Lewis) / Jasmine J. Stanzick (Seyfarth Shaw).",
+    "matters": [
+      29
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "opposing",
+    "source": "/documents/matter-29/Dkt 01 - Notice of Removal (Filed Aug 31 2026).pdf"
+  },
+  {
+    "date": "Sep. 30, 2026",
+    "event": "28 U.S.C. \u00a71447(c) remand window closes (computed) \u2014 Newanforbi v. Amazon.com Services, LLC et al., USDC N.D. Cal. No. 3:26-cv-09249-ASK. Thirty days from the Aug. 31, 2026 notice of removal lands on Wednesday, Sep. 30, 2026. NO REMAND MOTION IS PLANNED: removal is federal-question under \u00a7 1331 on the FCRA count pleaded on the face of the complaint; Accurate Background consented. Subject-matter objections survive this date in any event under \u00a71447(c).",
+    "matters": [
+      29
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-29/Dkt 01 - Notice of Removal (Filed Aug 31 2026).pdf"
+  },
+  {
     "date": "Aug. 29, 2026",
     "event": "ENTERED \u2014 ORDER Sustaining Demurrer In Part, with Leave to Amend (Hon. Jenna M. Whitman, Dept. 25) in Newanforbi v. CHP et al. (26CV191136), after the August 28 hearing. Count 1 OVERRULED; Counts 2\u20133 SUSTAINED WITHOUT LEAVE; Count 4 SUSTAINED WITH LEAVE. Dutra and Paul dismissed by stipulation; September 18 individual demurrer hearings vacated; CMC continued from September 2 to October 28, 2026, 4:00 p.m., Dept. 25. Notice of entry served August 31.",
     "matters": [
@@ -91,7 +160,7 @@
   },
   {
     "date": "Aug. 24, 2026",
-    "event": "FILED \u2014 Notice of Appearance on behalf of Defendant Amazon.com Services LLC in Newanforbi v. Amazon.com Services, LLC et al. (26CV201554). Andrew P. Frederick (SBN 284832), Morgan, Lewis & Bockius LLP, 1400 Page Mill Road, Palo Alto, CA 94304; tel +1.650.843.7565; fax +1.650.843.4001; andrew.frederick@morganlewis.com. Complaint filed July 28, 2026; trial not yet set. Proof of Service by U.S. mail (Suga A. Ikeda) on Plaintiff at 1455 Cat Tail Drive and on Accurate Background counsel: Jasmine Stanzick (Seyfarth Shaw LLP, 601 S. Figueroa St., Suite 3300, Los Angeles, CA 90017-5793) and John Drury (Seyfarth Shaw LLP, 233 S. Wacker Drive, Suite 8000, Chicago, IL 60606-6448). Responsive pleading still due Aug. 31, 2026.",
+    "event": "FILED \u2014 Notice of Appearance on behalf of Defendant Amazon.com Services LLC in Newanforbi v. Amazon.com Services, LLC et al. (26CV201554). Andrew P. Frederick (SBN 284832), Morgan, Lewis & Bockius LLP, 1400 Page Mill Road, Palo Alto, CA 94304; tel +1.650.843.7565 (service block; firm main +1.650.843.4000); fax +1.650.843.4001; andrew.frederick@morganlewis.com. Complaint filed July 28, 2026; trial not yet set. Proof of Service by U.S. mail (Suga A. Ikeda) on Plaintiff at 1455 Cat Tail Drive and on Accurate Background counsel: Jasmine Stanzick (Seyfarth Shaw LLP, 601 S. Figueroa St., Suite 3300, Los Angeles, CA 90017-5793) and John Drury (Seyfarth Shaw LLP, 233 S. Wacker Drive, Suite 8000, Chicago, IL 60606-6448). State responsive pleading was due Aug. 31, 2026; SUPERSEDED the same day by Amazon's Notice of Removal to N.D. Cal. No. 3:26-cv-09249-ASK.",
     "matters": [
       29
     ],
@@ -769,7 +838,7 @@
   },
   {
     "date": "Aug. 17, 2026",
-    "event": "SER-001 Requests for Sheriff to Serve Court Papers executed and e-signed for Amazon.com Services, LLC (Sacramento County Sheriff Civil, registered agent CSC - Lawyers Incorporating Service, 2710 Gateway Oaks Drive, Suite 150N, Sacramento \u2014 same agent as the Jul. 31, 2026 summons service, Levy Officer File No. 2026027206) and Accurate Background LLC (Los Angeles County Sheriff Civil, registered agent CT Corporation System, 330 N Brand Blvd, Suite 700, Glendale \u2014 same agent as the Jul. 31, 2026 private-server service on Jaqueline Mejia). Each transmits the operative Aug. 7, 2026 CCP \u00a7425.115 Notice ($250,000 Amazon / $100,000 Accurate Background) for personal service in the same manner as a summons (CCP \u00a7425.115(f), (g)(1)). These requests supersede the unsubmitted Aug. 7, 2026 SER-001s. Fee waiver withdrawn as moot after the $435 first-paper fee; standard sheriff service fees apply. Not yet submitted \u2014 Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554)",
+    "event": "SER-001 Requests for Sheriff to Serve Court Papers executed and e-signed for Amazon.com Services, LLC (Sacramento County Sheriff Civil, registered agent CSC - Lawyers Incorporating Service, 2710 Gateway Oaks Drive, Suite 150N, Sacramento \u2014 same agent as the Jul. 31, 2026 summons service, Levy Officer File No. 2026027206) and Accurate Background LLC (Los Angeles County Sheriff Civil, registered agent CT Corporation System, 330 N Brand Blvd, Suite 700, Glendale \u2014 same agent as the Jul. 31, 2026 private-server service on Jaqueline Mejia). Each transmits the operative Aug. 7, 2026 CCP \u00a7425.115 Notice ($250,000 Amazon / $100,000 Accurate Background) for personal service in the same manner as a summons (CCP \u00a7425.115(f), (g)(1)). These requests supersede the unsubmitted Aug. 7, 2026 SER-001s. Fee waiver withdrawn as moot after the $435 first-paper fee; DO NOT SUBMIT \u2014 Matter 29 was removed Aug. 31, 2026 to N.D. Cal. No. 3:26-cv-09249-ASK; CCP \u00a7425.115 is a dead letter federally (FRCP 54(c) / Adams v. Murakami). Previously not yet submitted \u2014 Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554)",
     "matters": [
       29
     ],
@@ -3267,12 +3336,12 @@
   },
   {
     "date": "Sep. 26, 2026",
-    "event": "Service/proof-of-service deadline (computed) \u2014 Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554); 60 days from the Jul. 28, 2026 filing (CRC 3.110(b)); Sept. 26 falls on a Saturday, so CCP \u00a712a rolls the practical deadline to Monday, Sept. 28, 2026",
+    "event": "MOOT ON REMOVAL \u2014 Service/proof-of-service deadline (computed) \u2014 Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554); 60 days from the Jul. 28, 2026 filing (CRC 3.110(b)); Sept. 26 falls on a Saturday, so CCP \u00a712a would have rolled to Monday, Sept. 28, 2026. Both defendants were already served July 31; the state CRC clock died with the Aug. 31, 2026 removal to N.D. Cal. No. 3:26-cv-09249-ASK.",
     "matters": [
       29
     ],
     "type": "deadline",
-    "upcoming": true
+    "upcoming": false
   },
   {
     "date": "Aug. 3, 2026",
@@ -3303,22 +3372,22 @@
   },
   {
     "date": "Aug. 31, 2026",
-    "event": "Responsive pleading deadline (computed) \u2014 Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554); 30 days from the Jul. 31, 2026 service date on both defendants (CCP \u00a7412.20(a)(3)); the raw 30-day count lands on Sunday, Aug. 30, extended to Monday, Aug. 31, 2026 per CCP \u00a712a",
+    "event": "SUPERSEDED BY REMOVAL \u2014 State responsive pleading deadline (computed) \u2014 Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554); 30 days from the Jul. 31, 2026 service date on both defendants (CCP \u00a7412.20(a)(3)); the raw 30-day count lands on Sunday, Aug. 30, extended to Monday, Aug. 31, 2026 per CCP \u00a712a. Amazon removed the same day to N.D. Cal. No. 3:26-cv-09249-ASK; live clock is FRCP 81(c)(2) \u2192 Sep. 8, 2026 after the Labor Day roll.",
     "matters": [
       29
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "opposing"
   },
   {
     "date": "Jan. 6, 2027",
-    "event": "Case Management Conference \u2014 Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554), 10:00 AM, Dept. 520, Hon. Jamilah Jefferson, Hayward Hall of Justice, 24405 Amador Street, Hayward, CA 94544",
+    "event": "MOOT ON REMOVAL \u2014 Case Management Conference \u2014 Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554), 10:00 AM, Dept. 520, Hon. Jamilah Jefferson, Hayward Hall of Justice, 24405 Amador Street, Hayward, CA 94544. State CMC died with the Aug. 31, 2026 removal to N.D. Cal. No. 3:26-cv-09249-ASK. Do not invent an N.D. Cal. CMC; watch PACER for initial case documents.",
     "matters": [
       29
     ],
     "type": "hearing",
-    "upcoming": true
+    "upcoming": false
   },
   {
     "date": "Jan. 12, 2026",
