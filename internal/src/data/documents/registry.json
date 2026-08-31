@@ -617,6 +617,11 @@
       "ownerMatter": 12
     },
     {
+      "path": "/documents/matter-12/1094 SUM100 AMENDED Summons - Both Defendants (Issued Jun 11 2026).pdf",
+      "label": "1094 SUM100 AMENDED Summons - Both Defendants (Issued Jun 11 2026)",
+      "ownerMatter": 12
+    },
+    {
       "path": "/documents/matter-12/1094 SUM100 AMENDED Summons - Civil.pdf",
       "label": "AMENDED Summons — Civil",
       "ownerMatter": 12
@@ -677,6 +682,16 @@
       "ownerMatter": 12
     },
     {
+      "path": "/documents/matter-12/EMAIL_DRAFT_Kern_Sheriff_Alpine_Reservice_Aug31_2026.txt",
+      "label": "EMAIL_DRAFT_Kern_Sheriff_Alpine_Reservice_Aug31_2026.txt",
+      "ownerMatter": 12
+    },
+    {
+      "path": "/documents/matter-12/EMAIL_DRAFT_Stanislaus_Sheriff_Diamond_Reservice_Aug31_2026.txt",
+      "label": "EMAIL_DRAFT_Stanislaus_Sheriff_Diamond_Reservice_Aug31_2026.txt",
+      "ownerMatter": 12
+    },
+    {
       "path": "/documents/matter-12/FullCourt Enterprise - Civil Case.pdf",
       "label": "FullCourt Enterprise — Civil Case",
       "ownerMatter": 12
@@ -714,6 +729,31 @@
     {
       "path": "/documents/matter-12/POS010 Proof of Service - Alpine Truck Sales (Levying Officer File No. 2026002577).pdf",
       "label": "POS-010 Proof of Service of Summons — Alpine Truck Sales, Inc. (formal filed copy; Levying Officer File No. 2026002577)",
+      "ownerMatter": 12
+    },
+    {
+      "path": "/documents/matter-12/reservice-packets-aug31/1_SER-001_Alpine_Truck_Sales_Kern.pdf",
+      "label": "1_SER-001_Alpine_Truck_Sales_Kern",
+      "ownerMatter": 12
+    },
+    {
+      "path": "/documents/matter-12/reservice-packets-aug31/1_SER-001_Diamond_Truck_Sales_Stanislaus.pdf",
+      "label": "1_SER-001_Diamond_Truck_Sales_Stanislaus",
+      "ownerMatter": 12
+    },
+    {
+      "path": "/documents/matter-12/reservice-packets-aug31/2_FW-003_Order_on_Court_Fee_Waiver.pdf",
+      "label": "2_FW-003_Order_on_Court_Fee_Waiver",
+      "ownerMatter": 12
+    },
+    {
+      "path": "/documents/matter-12/reservice-packets-aug31/3_Summons_FAC.pdf",
+      "label": "3_Summons_FAC",
+      "ownerMatter": 12
+    },
+    {
+      "path": "/documents/matter-12/reservice-packets-aug31/4_Stanislaus_Credit_Card_Authorization_Diamond.pdf",
+      "label": "4_Stanislaus_Credit_Card_Authorization_Diamond",
       "ownerMatter": 12
     },
     {
