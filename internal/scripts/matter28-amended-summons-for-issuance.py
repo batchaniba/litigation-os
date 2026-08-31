@@ -1,20 +1,19 @@
 #!/usr/bin/env python3
-"""Matter 28 — Amended AO 440 summonses for clerk issuance at the courthouse.
+"""Matter 28 — Amended Summons packet for clerk issuance (pleading paper).
 
 Newanforbi v. Shannon Smith, LCSW, et al., N.D. Cal. No. 3:26-cv-07504-LJC.
 
-Dkt. 3 is a Proposed Summons (filed Jul. 20, 2026) with blank Date and blank
-Deputy Clerk signature — never issued. Dkt. 11 (Aug. 26, 2026) directs Rule 4
-service after the filing fee was paid. These Amended Summonses correct the
-defendant address block (street address was missing on Dkt. 3), type the
-caption cleanly, and leave the clerk Date / signature lines blank for stamping.
+Dkt. 3 Proposed Summons was never issued (blank Date / Deputy Clerk). Dkt. 11
+directs Rule 4 service after fee payment. This packet is what Plaintiff prints
+and takes to the courthouse:
 
-Outputs (matter-28/amended-summons-for-issuance/):
-  00_Request_for_Issuance_of_Amended_Summons.pdf
-  01_Amended_Summons_Shannon_Smith.pdf   (AO 440 page 1 only)
-  02_Amended_Summons_HOPE_Psychotherapy.pdf  (AO 440 page 1 only)
-  COMPLETE_Amended_Summons_Packet_for_Clerk.pdf
-    = Request + Exhibit A (Smith) + Exhibit B (HOPE) — single download
+  1. Request for Issuance — portfolio pleading paper
+  2. Exhibit A cover — portfolio exhibit-cover style
+  3. Amended Summons — Shannon Smith (AO 440 page 1 only)
+  4. Exhibit B cover — portfolio exhibit-cover style
+  5. Amended Summons — HOPE Psychotherapy (AO 440 page 1 only)
+
+Outputs under matter-28/amended-summons-for-issuance/.
 """
 
 from __future__ import annotations
@@ -24,13 +23,16 @@ from pathlib import Path
 
 from pypdf import PdfReader, PdfWriter
 from pypdf.generic import ArrayObject, FloatObject, NameObject, TextStringObject
-from reportlab.lib.pagesizes import letter
-from reportlab.pdfgen import canvas
-import pymupdf
 
 SCRIPT_DIR = Path(__file__).resolve().parent
+sys.path.insert(0, str(SCRIPT_DIR))
 sys.path.insert(0, str(SCRIPT_DIR / "lib"))
+from exhibit_cover import write_exhibit_cover  # noqa: E402
 from pdf_packet import assemble  # noqa: E402
+from pleading_paper import PleadingPaper  # noqa: E402
+from signature_stamp import SIGNATURE_ASPECT, SIGNATURE_PATH  # noqa: E402
+
+import pymupdf  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
 M28 = ROOT / "internal/public/documents/matter-28"
@@ -38,12 +40,17 @@ OUT = M28 / "amended-summons-for-issuance"
 AO440_TEMPLATE = ROOT / "internal/public/documents/_form-library/ao440-blank-template.pdf"
 
 CASE = "3:26-cv-07504-LJC"
+CASE_SHORT = "3:26-cv-07504"
+JUDGE = "Hon. Lisa J. Cisneros"
 PLAINTIFF = "BRENDAN NGEHSI NEWANFORBI"
 PLAINTIFF_MIXED = "Brendan Ngehsi Newanforbi"
 PLAINTIFF_ADDRESS = "1455 Cat Tail Drive"
 PLAINTIFF_CITY = "Stockton, CA 95204"
 PHONE = "(209) 801-4442"
 EMAIL = "bnn.cdl@gmail.com"
+EXEC_DATE = "August 31, 2026"
+FOOTER = "REQUEST FOR ISSUANCE OF AMENDED SUMMONS -- NEWANFORBI v. SMITH, ET AL."
+CAPTION = "NEWANFORBI v. SMITH, ET AL."
 
 DEFENDANTS_BLOCK = (
     "SHANNON SMITH, LCSW, Chief Executive Officer and Founder of HOPE Program, "
@@ -59,28 +66,169 @@ DEFENDANTS = [
     {
         "filename": "01_Amended_Summons_Shannon_Smith.pdf",
         "exhibit": "A",
-        "banner": "EXHIBIT A — AMENDED SUMMONS — Shannon Smith, LCSW",
+        "cover_filename": "01a_Exhibit_A_Cover.pdf",
+        "title": "Amended Summons — Shannon Smith, LCSW (AO 440)",
+        "details": [
+            "Fed. R. Civ. P. 4(b) — for clerk issuance (Date / signature blank)",
+            "Serve: Shannon Smith, LCSW, CEO",
+            "HOPE Psychotherapy, Inc. d/b/a HOPE Program",
+            "1245 B Street, Hayward, CA 94541",
+        ],
         "address": [
             "Shannon Smith, LCSW, Chief Executive Officer",
             "HOPE Psychotherapy, Inc. d/b/a HOPE Program",
             "1245 B Street",
             "Hayward, CA 94541",
         ],
-        "proof_of_service_name": "Shannon Smith, LCSW, CEO — HOPE Program",
     },
     {
         "filename": "02_Amended_Summons_HOPE_Psychotherapy.pdf",
         "exhibit": "B",
-        "banner": "EXHIBIT B — AMENDED SUMMONS — HOPE Psychotherapy, Inc.",
+        "cover_filename": "02a_Exhibit_B_Cover.pdf",
+        "title": "Amended Summons — HOPE Psychotherapy, Inc. (AO 440)",
+        "details": [
+            "Fed. R. Civ. P. 4(b) — for clerk issuance (Date / signature blank)",
+            "Serve: HOPE Psychotherapy, Inc. d/b/a HOPE Program",
+            "c/o Shannon Smith, LCSW, Chief Executive Officer",
+            "1245 B Street, Hayward, CA 94541",
+        ],
         "address": [
             "HOPE Psychotherapy, Inc. d/b/a HOPE Program",
             "c/o Shannon Smith, LCSW, Chief Executive Officer",
             "1245 B Street",
             "Hayward, CA 94541",
         ],
-        "proof_of_service_name": "HOPE Psychotherapy, Inc. d/b/a HOPE Program",
     },
 ]
+
+
+def _caption_left() -> list[tuple[str, bool, bool]]:
+    return [
+        ("BRENDAN NGEHSI NEWANFORBI,", False, False),
+        ("", False, False),
+        ("               Plaintiff,", False, False),
+        ("", False, False),
+        ("       v.", False, False),
+        ("", False, False),
+        ("SHANNON SMITH, LCSW, Chief", False, False),
+        ("Executive Officer and Founder of", False, False),
+        ("HOPE Program, an individual; and", False, False),
+        ("HOPE PSYCHOTHERAPY, INC., d/b/a", False, False),
+        ("HOPE PROGRAM, a California", False, False),
+        ("corporation,", False, False),
+        ("", False, False),
+        ("               Defendants.", False, False),
+    ]
+
+
+def _write_party_header(d: PleadingPaper) -> None:
+    d.write_line("BRENDAN NGEHSI NEWANFORBI", bold=True, size=11)
+    d.write_line("Plaintiff In Pro Per", size=11)
+    d.write_line("1455 Cat Tail Drive", size=11)
+    d.write_line("Stockton, CA 95204", size=11)
+    d.write_line("Tel: (209) 801-4442", size=11)
+    d.write_line("E-mail: bnn.cdl@gmail.com", size=11)
+    d.blank_line()
+    d.write_line("UNITED STATES DISTRICT COURT", bold=True, center=True, size=11)
+    d.write_line("NORTHERN DISTRICT OF CALIFORNIA", bold=True, center=True, size=11)
+    d.blank_line()
+
+
+def _stamp_signature(path: Path) -> None:
+    if not Path(SIGNATURE_PATH).is_file():
+        return
+    doc = pymupdf.open(str(path))
+    page = line = None
+    for candidate in doc:
+        hits = candidate.search_for("_______________________________")
+        if hits:
+            page = candidate
+            line = hits[-1]
+            break
+    if page is None or line is None:
+        doc.close()
+        return
+    width = 135.0
+    height = width * SIGNATURE_ASPECT
+    y1 = line.y1 - 2.0
+    y0 = y1 - height
+    rect = pymupdf.Rect(line.x0, y0, line.x0 + width, y1)
+    page.insert_image(rect, filename=str(SIGNATURE_PATH), keep_proportion=True)
+    tmp = path.with_name(path.stem + ".signed.pdf")
+    doc.save(tmp, garbage=4, deflate=True, incremental=False)
+    doc.close()
+    tmp.replace(path)
+
+
+def write_request(path: Path) -> None:
+    d = PleadingPaper(str(path), doc_title_footer=FOOTER)
+    _write_party_header(d)
+
+    right = [
+        (f"Case No.: {CASE}", True, False),
+        ("", False, False),
+        ("REQUEST FOR ISSUANCE OF", True, False),
+        ("AMENDED SUMMONS", True, False),
+        ("[Fed. R. Civ. P. 4(b)]", False, False),
+        ("", False, False),
+        (f"Judge: {JUDGE}", False, False),
+    ]
+    d.draw_caption_block(_caption_left(), right, caption_size=9, tight_lh=12)
+    d.blank_line()
+
+    d.write_line("REQUEST FOR ISSUANCE OF AMENDED SUMMONS", bold=True, center=True, size=11)
+    d.blank_line()
+    d.write_line("TO THE CLERK OF THE COURT:", bold=True)
+    d.write_wrapped(
+        "Plaintiff BRENDAN NGEHSI NEWANFORBI, appearing in propria persona, "
+        "respectfully requests that the Clerk issue Amended Summonses in this "
+        "action pursuant to Federal Rule of Civil Procedure 4(b)."
+    )
+    d.blank_line()
+    d.write_line("I.  BACKGROUND", bold=True)
+    d.write_wrapped(
+        "1. On July 20, 2026, Plaintiff filed a Proposed Summons (Dkt. 3). The "
+        "filed Proposed Summons does not bear a Date or Signature of the Clerk "
+        "or Deputy Clerk and therefore has not been issued."
+    )
+    d.write_wrapped(
+        "2. Plaintiff paid the filing fee (Dkt. 8). On August 26, 2026, the Court "
+        "denied the IFP application as moot and directed Plaintiff to serve "
+        "process consistent with Rule 4 (Dkt. 11)."
+    )
+    d.write_wrapped(
+        "3. Attached hereto as Exhibit A (Shannon Smith, LCSW) and Exhibit B "
+        "(HOPE Psychotherapy, Inc. d/b/a HOPE Program) are Amended Summonses "
+        "that (a) state the assigned case number, (b) identify each defendant "
+        "with a complete service address (1245 B Street, Hayward, CA 94541), "
+        "and (c) leave the Date and Deputy Clerk signature lines blank for "
+        "issuance."
+    )
+    d.blank_line()
+    d.write_line("II.  REQUEST", bold=True)
+    d.write_wrapped(
+        "Plaintiff respectfully requests that the Clerk sign, seal, and issue "
+        "the Amended Summonses attached as Exhibits A and B so that Plaintiff "
+        "may effect Rule 4 service as directed in Dkt. 11. Please return the "
+        "issued originals to Plaintiff."
+    )
+    d.blank_line()
+    d.ensure_space(8)
+    d.write_line(f"Dated: {EXEC_DATE}")
+    d.write_line("Respectfully submitted,", italic=True)
+    d.blank_line()
+    d.write_line("_______________________________")
+    d.write_line("BRENDAN NGEHSI NEWANFORBI", bold=True)
+    d.write_line("Plaintiff, In Pro Per")
+    d.write_line(f"{PLAINTIFF_ADDRESS}")
+    d.write_line(PLAINTIFF_CITY)
+    d.write_line(f"Tel: {PHONE}  |  Email: {EMAIL}", size=10)
+    d.blank_line()
+    d.write_line("Exhibits:", bold=True)
+    d.write_line("  Exhibit A — Amended Summons (Shannon Smith, LCSW)")
+    d.write_line("  Exhibit B — Amended Summons (HOPE Psychotherapy, Inc.)")
+    d.save()
+    _stamp_signature(path)
 
 
 def set_default_appearance(writer: PdfWriter, qualified_name: str, da: str) -> None:
@@ -104,8 +252,13 @@ def set_field_rect(writer: PdfWriter, field_name: str, bottom: float, top: float
             )
 
 
-def fill_form(template: Path, out_path: Path, fields: dict[str, object], page_index: int = 0,
-              font_overrides: dict[str, str] | None = None) -> Path:
+def fill_form(
+    template: Path,
+    out_path: Path,
+    fields: dict[str, object],
+    page_index: int = 0,
+    font_overrides: dict[str, str] | None = None,
+) -> Path:
     reader = PdfReader(str(template))
     writer = PdfWriter()
     writer.append(reader)
@@ -119,35 +272,7 @@ def fill_form(template: Path, out_path: Path, fields: dict[str, object], page_in
     return out_path
 
 
-def stamp_amended_banner(pdf_path: Path, banner: str) -> None:
-    """Overlay a clear AMENDED SUMMONS banner so the clerk sees the ask."""
-    doc = pymupdf.open(str(pdf_path))
-    page = doc[0]
-    # Top margin below the AO 440 header line — wider for EXHIBIT A/B banner.
-    rect = pymupdf.Rect(28, 22, 584, 46)
-    page.draw_rect(rect, color=(0, 0, 0), fill=(1, 1, 1), width=0.6)
-    page.insert_textbox(
-        rect,
-        banner,
-        fontsize=9,
-        fontname="helv",
-        align=pymupdf.TEXT_ALIGN_CENTER,
-    )
-    # Footer cue: leave Date / Deputy Clerk blank for issuance.
-    foot = pymupdf.Rect(36, 740, 576, 762)
-    page.insert_textbox(
-        foot,
-        "FOR CLERK ISSUANCE -- leave Date and Deputy Clerk signature blank for court stamp/signature",
-        fontsize=7,
-        fontname="helv",
-        align=pymupdf.TEXT_ALIGN_CENTER,
-    )
-    doc.saveIncr()
-    doc.close()
-
-
 def drop_proof_of_service_page(pdf_path: Path) -> None:
-    """Keep AO 440 page 1 only (drop the blank Proof of Service page)."""
     reader = PdfReader(str(pdf_path))
     writer = PdfWriter()
     writer.add_page(reader.pages[0])
@@ -161,7 +286,6 @@ def fill_amended_summons(defendant: dict) -> Path:
         "Plaintiff": PLAINTIFF,
         "Defendant": DEFENDANTS_BLOCK,
         "Civil action number": CASE,
-        # Date_Today and Deputy Clerk Signature intentionally omitted — clerk stamps.
         "Defendant address": "\n".join(defendant["address"]),
         "Plaintiff address": "\n".join(
             [
@@ -186,92 +310,28 @@ def fill_amended_summons(defendant: dict) -> Path:
     writer.set_need_appearances_writer(True)
     with open(out_path, "wb") as fh:
         writer.write(fh)
-
-    # Page 2 (Proof of Service) is not needed for clerk issuance — drop it.
     drop_proof_of_service_page(out_path)
-    stamp_amended_banner(out_path, defendant["banner"])
     return out_path
 
 
-def write_clerk_request(path: Path) -> None:
-    c = canvas.Canvas(str(path), pagesize=letter)
-    w, h = letter
-    y = h - 54
-
-    def line(text: str, size: float = 11, bold: bool = False, dy: float = 15) -> None:
-        nonlocal y
-        c.setFont("Times-Bold" if bold else "Times-Roman", size)
-        c.drawString(54, y, text[:100])
-        y -= dy
-
-    def wrap(text: str, size: float = 11, dy: float = 14) -> None:
-        nonlocal y
-        c.setFont("Times-Roman", size)
-        words = text.split()
-        row = ""
-        max_w = w - 108
-        for word in words:
-            trial = (row + " " + word).strip()
-            if c.stringWidth(trial, "Times-Roman", size) <= max_w:
-                row = trial
-            else:
-                c.drawString(54, y, row)
-                y -= dy
-                row = word
-        if row:
-            c.drawString(54, y, row)
-            y -= dy
-
-    line("UNITED STATES DISTRICT COURT", 12, True, 14)
-    line("NORTHERN DISTRICT OF CALIFORNIA", 12, True, 18)
-    line("REQUEST FOR ISSUANCE OF AMENDED SUMMONS", 13, True, 18)
-    line(f"{PLAINTIFF_MIXED} v. Shannon Smith, LCSW, et al.", 11, True)
-    line(f"Case No. {CASE}    Hon. Lisa J. Cisneros", 11, True, 18)
-
-    wrap(
-        "Plaintiff, appearing In Propria Persona, respectfully requests that the Clerk "
-        "issue Amended Summonses in this action under Fed. R. Civ. P. 4(b)."
-    )
-    y -= 6
-    line("Background", 11, True)
-    wrap(
-        "1. On July 20, 2026, Plaintiff filed a Proposed Summons (Dkt. 3). The filed "
-        "Proposed Summons does not bear a Date or Signature of the Clerk or Deputy "
-        "Clerk and therefore has not been issued."
-    )
-    wrap(
-        "2. Plaintiff paid the filing fee (Dkt. 8). On August 26, 2026, the Court "
-        "denied the IFP application as moot and directed Plaintiff to serve process "
-        "consistent with Rule 4 (Dkt. 11)."
-    )
-    wrap(
-        "3. Attached as Exhibit A (Shannon Smith, LCSW) and Exhibit B "
-        "(HOPE Psychotherapy, Inc. d/b/a HOPE Program) are Amended Summonses that "
-        "(a) state the assigned case number, (b) identify each defendant with a "
-        "complete service address (1245 B Street, Hayward, CA 94541), and "
-        "(c) leave the Date and Deputy Clerk signature lines blank for issuance."
-    )
-    y -= 6
-    line("Request", 11, True)
-    wrap(
-        "Please sign, seal, and issue the Amended Summonses attached as Exhibits A "
-        "and B so Plaintiff may effect Rule 4 service as directed in Dkt. 11."
-    )
-    y -= 10
-    line("Respectfully submitted,", 11, False, 28)
-    line("________________________________", 11, False, 14)
-    line(PLAINTIFF_MIXED, 11, True)
-    line("Plaintiff In Propria Persona", 11, False, 14)
-    line(f"{PLAINTIFF_ADDRESS}", 11)
-    line(PLAINTIFF_CITY, 11)
-    line(f"Tel: {PHONE}", 11)
-    line(f"Email: {EMAIL}", 11, False, 18)
-    line("Dated: August 31, 2026", 11)
-    y -= 10
-    line("Exhibits (for clerk stamping -- please return issued originals to Plaintiff):", 10, True, 14)
-    line("  Exhibit A  Amended Summons -- Shannon Smith, LCSW (AO 440)", 10)
-    line("  Exhibit B  Amended Summons -- HOPE Psychotherapy, Inc. (AO 440)", 10)
-    c.save()
+def write_exhibit_pages() -> list[Path]:
+    paths: list[Path] = []
+    for defendant in DEFENDANTS:
+        cover = OUT / defendant["cover_filename"]
+        write_exhibit_cover(
+            cover,
+            court="UNITED STATES DISTRICT COURT",
+            court_line2="NORTHERN DISTRICT OF CALIFORNIA",
+            caption=CAPTION,
+            case_no=f"Case No. {CASE}",
+            exhibit=defendant["exhibit"],
+            title=defendant["title"],
+            details=defendant["details"],
+            footer=f"Request for Issuance of Amended Summons — {CAPTION}",
+        )
+        summons = fill_amended_summons(defendant)
+        paths.extend([cover, summons])
+    return paths
 
 
 def main() -> None:
@@ -279,10 +339,10 @@ def main() -> None:
     assert AO440_TEMPLATE.is_file(), f"missing {AO440_TEMPLATE}"
 
     request = OUT / "00_Request_for_Issuance_of_Amended_Summons.pdf"
-    write_clerk_request(request)
-    summons_paths = [fill_amended_summons(d) for d in DEFENDANTS]
+    write_request(request)
+    exhibit_and_summons = write_exhibit_pages()
     complete = OUT / "COMPLETE_Amended_Summons_Packet_for_Clerk.pdf"
-    pages = assemble([request, *summons_paths], complete)
+    pages = assemble([request, *exhibit_and_summons], complete)
     print(f"Wrote {complete} ({pages} pages)")
     for p in sorted(OUT.iterdir()):
         print(f"  {p.name}  ({p.stat().st_size} bytes)")
