@@ -33,6 +33,28 @@
   },
   {
     "date": "Sep. 8, 2026",
+    "event": "Amazon / Accurate Background responsive pleading deadline (computed) — Newanforbi v. Amazon.com Services, LLC et al. (Matter 29, N.D. Cal. No. 3:26-cv-09249-ASK). Fed. R. Civ. P. 81(c)(2) takes the longest of 21 days after receipt of the initial pleading, 21 days after service of the summons, or 7 days after the notice of removal is filed. Service was July 31, 2026, so the 21-day branches expired Aug. 21; the operative date is 7 days after the Aug. 31, 2026 removal, which is Monday, Sep. 7, 2026 (Labor Day). FRCP 6(a)(1)(C) rolls that deadline to Tuesday, September 8, 2026. Watch for answer or Rule 12 motion by Andrew P. Frederick (Morgan Lewis) / Jasmine J. Stanzick (Seyfarth Shaw).",
+    "matters": [
+      29
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "opposing",
+    "source": "/documents/matter-29/Dkt 01 - Notice of Removal (Filed Aug 31 2026).pdf"
+  },
+  {
+    "date": "Sep. 30, 2026",
+    "event": "28 U.S.C. §1447(c) remand window closes (computed) — Newanforbi v. Amazon.com Services, LLC et al., USDC N.D. Cal. No. 3:26-cv-09249-ASK. Thirty days from the Aug. 31, 2026 notice of removal lands on Wednesday, Sep. 30, 2026. NO REMAND MOTION IS PLANNED: removal is federal-question under § 1331 on the FCRA count pleaded on the face of the complaint; Accurate Background consented. Subject-matter objections survive this date in any event under §1447(c).",
+    "matters": [
+      29
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-29/Dkt 01 - Notice of Removal (Filed Aug 31 2026).pdf"
+  },
+  {
+    "date": "Sep. 8, 2026",
     "event": "Response deadline (self-imposed) — post-expiry $175,000 Randstad-only settlement demand. Williams to accept, counter, or request a call by 5:00 p.m. PT; one week before Randstad's Sept. 15 responsive-pleading date. Not a court deadline. Evid. Code §1152 / FRE 408.",
     "matters": [
       27
@@ -307,34 +329,6 @@
     ],
     "type": "hearing",
     "source": "/documents/matter-12/Minute Order - Case Management Conference (Aug 12 2026).pdf",
-    "upcoming": true
-  },
-  {
-    "date": "Sep. 26, 2026",
-    "event": "Service/proof-of-service deadline (computed) — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554); 60 days from the Jul. 28, 2026 filing (CRC 3.110(b)); Sept. 26 falls on a Saturday, so CCP §12a rolls the practical deadline to Monday, Sept. 28, 2026",
-    "matters": [
-      29
-    ],
-    "type": "deadline",
-    "upcoming": true
-  },
-  {
-    "date": "Aug. 31, 2026",
-    "event": "Responsive pleading deadline (computed) — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554); 30 days from the Jul. 31, 2026 service date on both defendants (CCP §412.20(a)(3)); the raw 30-day count lands on Sunday, Aug. 30, extended to Monday, Aug. 31, 2026 per CCP §12a",
-    "matters": [
-      29
-    ],
-    "type": "deadline",
-    "upcoming": true,
-    "actor": "opposing"
-  },
-  {
-    "date": "Jan. 6, 2027",
-    "event": "Case Management Conference — Newanforbi v. Amazon.com Services, LLC, et al. (26CV201554), 10:00 AM, Dept. 520, Hon. Jamilah Jefferson, Hayward Hall of Justice, 24405 Amador Street, Hayward, CA 94544",
-    "matters": [
-      29
-    ],
-    "type": "hearing",
     "upcoming": true
   },
   {
