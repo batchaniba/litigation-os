@@ -234,7 +234,7 @@ def write_cover(path: Path) -> None:
     line("  1. Save the reply email (acceptance for both defendants, date certain).")
     line("  2. Complete / date the Proof of Service (document 7) and file it on CM/ECF.")
     line("  3. Calendar the Rule 12 response clock (typically 21 days from acceptance).")
-    line(f"  4. Rule 4(m) outer window from complaint filing (~Jul. 20–21, 2026) ≈ Oct. 19, 2026.")
+    line("  4. Rule 4(m) outer window from complaint filing (~Jul. 20–21, 2026) ≈ Oct. 19, 2026.")
     y -= 8
 
     line(f"Prepared for Plaintiff {PLAINTIFF_MIXED}, In Propria Persona", 9)
