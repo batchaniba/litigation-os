@@ -22,14 +22,22 @@ import sys
 from pathlib import Path
 
 from pypdf import PdfReader, PdfWriter
-from pypdf.generic import ArrayObject, FloatObject, NameObject, TextStringObject
+from pypdf.generic import (
+    ArrayObject,
+    DecodedStreamObject,
+    DictionaryObject,
+    FloatObject,
+    NameObject,
+    NumberObject,
+    TextStringObject,
+)
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPT_DIR))
 sys.path.insert(0, str(SCRIPT_DIR / "lib"))
 from exhibit_cover import write_exhibit_cover  # noqa: E402
 from pdf_packet import assemble  # noqa: E402
-from pleading_paper import PleadingPaper  # noqa: E402
+from pleading_paper import CONTENT_LEFT, PleadingPaper  # noqa: E402
 from signature_stamp import SIGNATURE_ASPECT, SIGNATURE_PATH  # noqa: E402
 
 import pymupdf  # noqa: E402
@@ -57,8 +65,21 @@ DEFENDANTS_BLOCK = (
 )
 
 AO440_DISTRICT = "        Northern District of California"
-AO440_PLAINTIFF_ADDRESS_RECT = (219.0, 286.0)
-AO440_FONT_OVERRIDES = {"Plaintiff address": "/Helv 9.00 Tf 0 g"}
+# Plaintiff-address (pro se / attorney) block: compressed leading so five
+# lines pack tightly under "whose name and address are:" without crowding
+# the "If you fail to respond..." line below.
+AO440_PLAINTIFF_ADDRESS_RECT = (219.0, 286.0)  # (bottom, top); left/right unchanged
+AO440_PLAINTIFF_ADDRESS_FONT = 8.5
+AO440_PLAINTIFF_ADDRESS_LEADING = 10.0
+AO440_FONT_OVERRIDES = {"Plaintiff address": "/Helv 8.50 Tf 0 g"}
+
+PLAINTIFF_ADDRESS_LINES = [
+    PLAINTIFF_MIXED,
+    "Plaintiff, In Pro Per",
+    PLAINTIFF_ADDRESS,
+    PLAINTIFF_CITY,
+    f"Telephone: {PHONE} - E-mail: {EMAIL}",
+]
 
 DEFENDANTS = [
     {
@@ -122,12 +143,22 @@ def _caption_left() -> list[tuple[str, bool, bool]]:
 
 
 def _write_party_header(d: PleadingPaper) -> None:
-    d.write_line("BRENDAN NGEHSI NEWANFORBI", bold=True, size=11)
-    d.write_line("Plaintiff In Pro Per", size=11)
-    d.write_line("1455 Cat Tail Drive", size=11)
-    d.write_line("Stockton, CA 95204", size=11)
-    d.write_line("Tel: (209) 801-4442", size=11)
-    d.write_line("E-mail: bnn.cdl@gmail.com", size=11)
+    # Same six lines, compressed 15pt spacing (portfolio attorney-block pattern).
+    c = d.c
+    atty_y = d._line_y(0)
+    atty_lh = 15
+    lines = [
+        ("BRENDAN NGEHSI NEWANFORBI", "Times-Bold", 11),
+        ("Plaintiff In Pro Per", "Times-Roman", 11),
+        ("1455 Cat Tail Drive", "Times-Roman", 11),
+        ("Stockton, CA 95204", "Times-Roman", 11),
+        ("Tel: (209) 801-4442", "Times-Roman", 11),
+        ("E-mail: bnn.cdl@gmail.com", "Times-Roman", 11),
+    ]
+    for i, (txt, fn, sz) in enumerate(lines):
+        c.setFont(fn, sz)
+        c.drawString(CONTENT_LEFT, atty_y - i * atty_lh, txt)
+    d.current_line = 4
     d.blank_line()
     d.write_line("UNITED STATES DISTRICT COURT", bold=True, center=True, size=11)
     d.write_line("NORTHERN DISTRICT OF CALIFORNIA", bold=True, center=True, size=11)
@@ -252,6 +283,56 @@ def set_field_rect(writer: PdfWriter, field_name: str, bottom: float, top: float
             )
 
 
+def draw_compressed_multiline(
+    writer: PdfWriter,
+    field_name: str,
+    lines: list[str],
+    *,
+    font: str = "/Helv",
+    size: float = AO440_PLAINTIFF_ADDRESS_FONT,
+    leading: float = AO440_PLAINTIFF_ADDRESS_LEADING,
+    left_pad: float = 2.0,
+    top_pad: float = 2.0,
+) -> None:
+    """Replace a multiline field appearance with tightly spaced lines."""
+    fonts = writer._root_object["/AcroForm"]["/DR"]["/Font"]
+    for page in writer.pages:
+        for annot in page.get("/Annots") or []:
+            obj = annot.get_object()
+            if str(obj.get("/T")) != field_name:
+                continue
+            x0, y0, x1, y1 = (float(v) for v in obj["/Rect"])
+            # First baseline a few points below the top of the box.
+            first_baseline = (y1 - y0) - top_pad - size
+            parts = [f"/Tx BMC q BT {font} {size} Tf 0 g"]
+            for i, line in enumerate(lines):
+                escaped = (
+                    line.replace("\\", r"\\").replace("(", r"\(").replace(")", r"\)")
+                )
+                if i == 0:
+                    parts.append(f"{left_pad} {first_baseline} Td ({escaped}) Tj")
+                else:
+                    parts.append(f"0 {-leading} Td ({escaped}) Tj")
+            parts.append("ET Q EMC")
+            stream = DecodedStreamObject()
+            stream.set_data(" ".join(parts).encode("latin-1"))
+            stream[NameObject("/Type")] = NameObject("/XObject")
+            stream[NameObject("/Subtype")] = NameObject("/Form")
+            stream[NameObject("/FormType")] = NumberObject(1)
+            stream[NameObject("/BBox")] = ArrayObject(
+                [FloatObject(0), FloatObject(0), FloatObject(x1 - x0), FloatObject(y1 - y0)]
+            )
+            resources = DictionaryObject()
+            resources[NameObject("/Font")] = fonts
+            stream[NameObject("/Resources")] = resources
+            appearance = DictionaryObject()
+            appearance[NameObject("/N")] = writer._add_object(stream)
+            obj[NameObject("/AP")] = appearance
+            obj[NameObject("/DA")] = TextStringObject(f"{font} {size:.2f} Tf 0 g")
+            # Keep the value for extraction; appearance carries the tight layout.
+            obj[NameObject("/V")] = TextStringObject("\n".join(lines))
+
+
 def fill_form(
     template: Path,
     out_path: Path,
@@ -287,15 +368,7 @@ def fill_amended_summons(defendant: dict) -> Path:
         "Defendant": DEFENDANTS_BLOCK,
         "Civil action number": CASE,
         "Defendant address": "\n".join(defendant["address"]),
-        "Plaintiff address": "\n".join(
-            [
-                PLAINTIFF_MIXED,
-                "Plaintiff, In Pro Per",
-                PLAINTIFF_ADDRESS,
-                PLAINTIFF_CITY,
-                f"Telephone: {PHONE} — E-mail: {EMAIL}",
-            ]
-        ),
+        "Plaintiff address": "\n".join(PLAINTIFF_ADDRESS_LINES),
     }
     out_path = fill_form(
         AO440_TEMPLATE,
@@ -307,7 +380,9 @@ def fill_amended_summons(defendant: dict) -> Path:
     writer = PdfWriter()
     writer.append(reader)
     set_field_rect(writer, "Plaintiff address", *AO440_PLAINTIFF_ADDRESS_RECT)
-    writer.set_need_appearances_writer(True)
+    draw_compressed_multiline(writer, "Plaintiff address", PLAINTIFF_ADDRESS_LINES)
+    # Hand-drawn appearance — do not let the viewer rebuild and re-space it.
+    writer.set_need_appearances_writer(False)
     with open(out_path, "wb") as fh:
         writer.write(fh)
     drop_proof_of_service_page(out_path)
