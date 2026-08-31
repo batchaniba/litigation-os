@@ -43,7 +43,12 @@ HEARING_DATE = "12/11/2026, 8:30 a.m., Dept. 11B"
 DEADLINE_DATE = "as soon as practicable (re-service to cure; CMC 12/11/2026)"
 SIG_DATE = "August 31, 2026"
 
-SUMMONS = M12 / "1094 SUM100 AMENDED Summons - Civil.pdf"
+# Clerk-issued Jun. 12, 2026: NOTICE TO DEFENDANT names Diamond (handwritten)
+# and Alpine as sued (typed successor/alter-ego caption). Do not use the
+# Diamond-only "AMENDED Summons - Civil.pdf" or the Alpine-only Civil 2 scan.
+SUMMONS = M12 / (
+    "1094 SUM100 AMENDED Summons - Both Defendants (Issued Jun 12 2026).pdf"
+)
 FAC = M12 / "1094 Amended Complaint.pdf"
 FW003 = M12 / "1094 FW003 Order on Court Fee Waiver (for Stanislaus Sheriff Service Packets).pdf"
 SOS_DIAMOND = M12 / (
