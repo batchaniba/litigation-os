@@ -4,7 +4,7 @@
 Diamond (Stanislaus) — four documents:
   1. SER-001
   2. FW-003 (already on file)
-  3. Clerk-issued Amended Summons + FAC + SOS agent printout
+  3. Clerk-issued Amended Summons + First Amended Complaint
   4. Unlocked Stanislaus CC authorization (printing only)
 
 Alpine (Kern) — documents 1–3 only. No printing charge.
@@ -58,14 +58,6 @@ SUMMONS = M12 / (
 )
 FAC = M12 / "1094 Amended Complaint.pdf"
 FW003 = M12 / "1094 FW003 Order on Court Fee Waiver (for Stanislaus Sheriff Service Packets).pdf"
-SOS_DIAMOND = M12 / (
-    "Diamond Truck Sales Inc - CA SOS Registered Agent for Service of Process "
-    "(Aug 28 2026).pdf"
-)
-SOS_ALPINE = M12 / (
-    "Alpine Truck Sales Inc - CA SOS Registered Agent for Service of Process "
-    "(Aug 28 2026).pdf"
-)
 
 
 def base_fields(*, county: str, addr: str, city: str, zip_code: str,
@@ -109,7 +101,7 @@ def base_fields(*, county: str, addr: str, city: str, zip_code: str,
 
 DIAMOND = {
     "ser001_name": "1_SER-001_Diamond_Truck_Sales_Stanislaus.pdf",
-    "packet3_name": "3_Summons_FAC_SOS_Diamond_Truck_Sales.pdf",
+    "packet3_name": "3_Summons_FAC_Diamond_Truck_Sales.pdf",
     "county": "Stanislaus",
     "addr": "1201 S. Soderquist Road",
     "city": "Turlock",
@@ -118,7 +110,6 @@ DIAMOND = {
     "entity_name": "DIAMOND TRUCK SALES, INC., a California corporation",
     "entity_person": "Officer, manager, or person authorized to accept (CCP §416.10)",
     "entity_agent": "Saliman Osmani (SOS agent for service of process)",
-    "sos": SOS_DIAMOND,
     "other": (
         "RE-SERVICE of Amended Summons and First Amended Complaint. "
         "FW-003 fee waiver is already on file as to Diamond and Alpine. "
@@ -128,15 +119,15 @@ DIAMOND = {
         "Do NOT serve Alpine Truck Sales, Inc. under this Stanislaus request "
         "(Alpine is Kern County — Sheran Osmani, 7156 Golden State Highway, Bakersfield). "
         "CMC: December 11, 2026, 8:30 a.m., Dept. 11B. "
-        "Four documents: (1) this SER-001, (2) FW-003, (3) Amended Summons + FAC + SOS, "
+        "Four documents: (1) this SER-001, (2) FW-003, (3) Amended Summons + FAC, "
         "(4) unlocked printing authorization ($43.75 for 35 pp. at $1.25/page); no password. "
-        "Print only the Summons (1 p.) and FAC (34 pp.)."
+        "Print packet 3 in full (Summons 1 p. + FAC 34 pp.)."
     ),
 }
 
 ALPINE = {
     "ser001_name": "1_SER-001_Alpine_Truck_Sales_Kern.pdf",
-    "packet3_name": "3_Summons_FAC_SOS_Alpine_Truck_Sales.pdf",
+    "packet3_name": "3_Summons_FAC_Alpine_Truck_Sales.pdf",
     "county": "Kern",
     "addr": "7156 Golden State Highway",
     "city": "Bakersfield",
@@ -149,7 +140,6 @@ ALPINE = {
     ),
     "entity_person": "Officer, manager, or person authorized to accept (CCP §416.10)",
     "entity_agent": "Sheran Osmani (SOS agent for service of process)",
-    "sos": SOS_ALPINE,
     "other": (
         "RE-SERVICE of Amended Summons and First Amended Complaint in Kern County. "
         "FW-003 fee waiver is already on file as to Diamond and Alpine. "
@@ -160,7 +150,7 @@ ALPINE = {
         "Do NOT serve Diamond Truck Sales, Inc. under this Kern request "
         "(Diamond is Stanislaus County — Saliman Osmani, Turlock). "
         "CMC: December 11, 2026, 8:30 a.m., Dept. 11B. "
-        "Three packets: (1) this SER-001, (2) FW-003, (3) Amended Summons + FAC + SOS. "
+        "Three packets: (1) this SER-001, (2) FW-003, (3) Amended Summons + FAC. "
         "No printing charge requested."
     ),
 }
@@ -205,14 +195,17 @@ def copy_fw003() -> Path:
 
 def assemble_packet3(spec: dict) -> Path:
     packet = OUT / spec["packet3_name"]
-    pages = assemble([SUMMONS, FAC, spec["sos"]], packet)
+    pages = assemble([SUMMONS, FAC], packet)
     print(f"{packet.name}: {pages} pages")
     return packet
 
 
 def fill_document4_cc() -> Path:
-    cc = _load_cc_module()
     dest = OUT / CC_DOC4_NAME
+    if dest.is_file() and dest.stat().st_size > 10_000:
+        print(f"{dest.name}: already present")
+        return dest
+    cc = _load_cc_module()
     cc.fill(dest)
     cc.verify(dest)
     return dest
@@ -224,6 +217,8 @@ def remove_legacy_combined() -> None:
         "COMPLETE_Kern_Service_Packet_Alpine_Truck_Sales.pdf",
         "SER-001_Diamond_Truck_Sales_Stanislaus_Aug31_2026.pdf",
         "SER-001_Alpine_Truck_Sales_Kern_Aug31_2026.pdf",
+        "3_Summons_FAC_SOS_Diamond_Truck_Sales.pdf",
+        "3_Summons_FAC_SOS_Alpine_Truck_Sales.pdf",
         "3_Summons_FAC_SOS_CC_Diamond_Truck_Sales.pdf",
     ):
         for folder in (OUT, HANDOFF):
