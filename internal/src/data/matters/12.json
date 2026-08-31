@@ -283,6 +283,22 @@
     },
     {
       "path": "/documents/matter-12/EMAIL_DRAFT_Kern_Sheriff_Alpine_Reservice_Aug31_2026.txt"
+    },
+    {
+      "path": "/documents/matter-12/reservice-packets-aug31/COMPLETE_Stanislaus_Service_Packet_Diamond_Truck_Sales.pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-12/reservice-packets-aug31/COMPLETE_Kern_Service_Packet_Alpine_Truck_Sales.pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-12/reservice-packets-aug31/SER-001_Diamond_Truck_Sales_Stanislaus_Aug31_2026.pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-12/reservice-packets-aug31/SER-001_Alpine_Truck_Sales_Kern_Aug31_2026.pdf",
+      "filed": false
     }
   ],
   "archived": false,
