@@ -5,8 +5,7 @@ Diamond (Stanislaus) — four documents:
   1. SER-001
   2. FW-003 (already on file)
   3. Clerk-issued Amended Summons + FAC + SOS agent printout
-  4. Unlocked Stanislaus CC authorization (printing only; generated
-     locally, not written into git)
+  4. Unlocked Stanislaus CC authorization (printing only)
 
 Alpine (Kern) — documents 1–3 only. No printing charge.
 
@@ -213,8 +212,7 @@ def assemble_packet3(spec: dict) -> Path:
 
 def fill_document4_cc() -> Path:
     cc = _load_cc_module()
-    HANDOFF.mkdir(parents=True, exist_ok=True)
-    dest = HANDOFF / CC_DOC4_NAME
+    dest = OUT / CC_DOC4_NAME
     cc.fill(dest)
     cc.verify(dest)
     return dest
@@ -245,7 +243,7 @@ def main() -> None:
         print(f"{ser001.name}: filled")
         assemble_packet3(spec)
     doc4 = fill_document4_cc()
-    print(f"Diamond document 4 (not committed): {doc4}")
+    print(f"Diamond document 4: {doc4}")
 
 
 if __name__ == "__main__":
