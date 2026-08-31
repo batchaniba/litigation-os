@@ -1086,13 +1086,33 @@
   },
   {
     "matter": 12,
+    "label": "Stanislaus Sheriff - SER-001 is blank (Lu, Aug 31 2026)",
+    "path": "/documents/matter-12/Stanislaus Sheriff - SER-001 is blank (Lu, Aug 31 2026).pdf"
+  },
+  {
+    "matter": 12,
     "label": "EMAIL_DRAFT_Stanislaus_Sheriff_Diamond_Reservice_Aug31_2026.txt",
     "path": "/documents/matter-12/EMAIL_DRAFT_Stanislaus_Sheriff_Diamond_Reservice_Aug31_2026.txt"
   },
   {
     "matter": 12,
+    "label": "EMAIL_DRAFT_Stanislaus_Sheriff_Diamond_Flattened_SER001_Aug31_2026.txt",
+    "path": "/documents/matter-12/EMAIL_DRAFT_Stanislaus_Sheriff_Diamond_Flattened_SER001_Aug31_2026.txt"
+  },
+  {
+    "matter": 12,
     "label": "EMAIL_DRAFT_Kern_Sheriff_Alpine_Reservice_Aug31_2026.txt",
     "path": "/documents/matter-12/EMAIL_DRAFT_Kern_Sheriff_Alpine_Reservice_Aug31_2026.txt"
+  },
+  {
+    "matter": 12,
+    "label": "EMAIL DRAFT — Kern Sheriff Alpine correction / resume processing (Aug. 31, 2026) — not yet sent",
+    "path": "/documents/matter-12/EMAIL_DRAFT_Kern_Sheriff_Alpine_Correction_Aug31_2026.txt"
+  },
+  {
+    "matter": 12,
+    "label": "Kern Sheriff Notice of Action Taken - SER-001 3b(2) must be blank (Aug 31 2026)",
+    "path": "/documents/matter-12/Kern Sheriff Notice of Action Taken - SER-001 3b(2) must be blank (Aug 31 2026).pdf"
   },
   {
     "matter": 12,

@@ -314,7 +314,7 @@
         "title": "Defendant (agent for service: Saliman Osmani)",
         "location": "Stanislaus County — 1201 S. Soderquist Road, Turlock, CA 95380",
         "served": false,
-        "note": "SOS Entity 3438768, active, formed Feb. 2, 2012. Prior POS disputed at the Aug. 12, 2026 CMC. Re-serve the Amended Summons and FAC on Saliman Osmani as agent for service of process (CCP §416.10)."
+        "note": "SOS Entity 3438768, active, formed Feb. 2, 2012. Prior POS disputed at the Aug. 12, 2026 CMC. Re-serve the Amended Summons and FAC on Saliman Osmani as agent for service of process (CCP §416.10). Stanislaus Civil (Lu, Aug. 31, 2026) returned the live-field SER-001 as blank; flattened (print-pressed) copy prepared the same day."
       },
       {
         "name": "Alpine Truck Sales, Inc.",
@@ -324,8 +324,8 @@
         "note": "SOS Entity B20250280641, active, formed Sept. 2, 2025. July 1, 2026 Turlock service was not the SOS agent address. Re-serve the Amended Summons and FAC on Sheran Osmani as agent for service of process in Kern County, naming Alpine as sued (successor/alter ego caption)."
       }
     ],
-    "evidenceCount": 14,
-    "documentCount": 77
+    "evidenceCount": 15,
+    "documentCount": 81
   },
   {
     "number": 13,

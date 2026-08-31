@@ -130,13 +130,15 @@ ALPINE = {
     "addr": "7156 Golden State Highway",
     "city": "Bakersfield",
     "zip": "93308",
-    "gate": "Principal office / SOS agent address — ask for manager or Sheran Osmani",
+    "gate": "Principal office / SOS agent address — serve Sheran Osmani, agent for service of process",
     "entity_name": (
         "ALPINE TRUCK SALES, INC., a California corporation (sued individually "
         "and as the successor in interest, mere continuation, and/or alter ego "
         "of Diamond Truck Sales, Inc.)"
     ),
-    "entity_person": "Officer, manager, or person authorized to accept (CCP §416.10)",
+    # Kern Sheriff Notice of Action Taken (Aug. 31, 2026): blank 3b(2) when
+    # 3b(3) lists an agent for service of process. Do not fill both.
+    "entity_person": "",
     "entity_agent": "Sheran Osmani (SOS agent for service of process)",
     "other": (
         "RE-SERVICE of Amended Summons and First Amended Complaint in Kern County. "
@@ -164,10 +166,17 @@ def fill_one(spec: dict) -> Path:
         other=spec["other"],
     )
     fields[F["entity_name"]] = spec["entity_name"]
-    fields[F["entity_person"]] = spec["entity_person"]
+    # SER-001 3b(2) ("specific person") and 3b(3) ("agent for service of
+    # process") are alternatives. Kern Sheriff will not process a request
+    # that fills both. Skip 3b(2) when it is blank.
+    if spec.get("entity_person"):
+        fields[F["entity_person"]] = spec["entity_person"]
     fields[F["entity_agent"]] = spec["entity_agent"]
     out = OUT / spec["ser001_name"]
-    return fill_ser001(out, fields, stamp_signature=True)
+    # Flatten so sheriff viewers that ignore /NeedAppearances cannot see a
+    # blank SER-001. Stanislaus Civil (Lu, Aug. 31, 2026) returned the
+    # live-field copy as blank.
+    return fill_ser001(out, fields, stamp_signature=True, flatten=True)
 
 
 FW003_PACKET_NAME = "2_FW-003_Order_on_Court_Fee_Waiver.pdf"
