@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
-"""Matter 12 — re-service SER-001s and combined sheriff packets (Aug. 31, 2026).
+"""Matter 12 — three sheriff re-service packets each (Aug. 31, 2026).
+
+1. SER-001
+2. FW-003 (already on file; same copy for both counties)
+3. Clerk-issued Amended Summons + FAC + SOS agent printout
+   Diamond only: unlocked Stanislaus CC authorization as the last page
+   of packet 3 is assembled locally (PAN) and is not written to the
+   public documents tree.
 
 Diamond → Stanislaus (Saliman Osmani, Turlock).
 Alpine → Kern (Sheran Osmani, Bakersfield).
@@ -9,6 +16,8 @@ Do not reuse the Aug. 3, 2026 SER-001s (those were CCP §425.115 at Turlock).
 
 from __future__ import annotations
 
+import importlib.util
+import shutil
 import sys
 from pathlib import Path
 
@@ -101,8 +110,8 @@ def base_fields(*, county: str, addr: str, city: str, zip_code: str,
 
 
 DIAMOND = {
-    "ser001_name": "SER-001_Diamond_Truck_Sales_Stanislaus_Aug31_2026.pdf",
-    "packet_name": "COMPLETE_Stanislaus_Service_Packet_Diamond_Truck_Sales.pdf",
+    "ser001_name": "1_SER-001_Diamond_Truck_Sales_Stanislaus.pdf",
+    "packet3_name": "3_Summons_FAC_SOS_Diamond_Truck_Sales.pdf",
     "county": "Stanislaus",
     "addr": "1201 S. Soderquist Road",
     "city": "Turlock",
@@ -121,14 +130,15 @@ DIAMOND = {
         "Do NOT serve Alpine Truck Sales, Inc. under this Stanislaus request "
         "(Alpine is Kern County — Sheran Osmani, 7156 Golden State Highway, Bakersfield). "
         "CMC: December 11, 2026, 8:30 a.m., Dept. 11B. "
-        "Printing authorization ($43.75 for 35 pp. at $1.25/page) is a separate attachment; "
-        "no password."
+        "Three packets: (1) this SER-001, (2) FW-003, (3) Amended Summons + FAC + SOS, "
+        "with unlocked printing authorization ($43.75 for 35 pp. at $1.25/page) as the "
+        "last page of packet 3; no password. Print only the Summons (1 p.) and FAC (34 pp.)."
     ),
 }
 
 ALPINE = {
-    "ser001_name": "SER-001_Alpine_Truck_Sales_Kern_Aug31_2026.pdf",
-    "packet_name": "COMPLETE_Kern_Service_Packet_Alpine_Truck_Sales.pdf",
+    "ser001_name": "1_SER-001_Alpine_Truck_Sales_Kern.pdf",
+    "packet3_name": "3_Summons_FAC_SOS_Alpine_Truck_Sales.pdf",
     "county": "Kern",
     "addr": "7156 Golden State Highway",
     "city": "Bakersfield",
@@ -151,7 +161,9 @@ ALPINE = {
         "Truck Sales, Inc.). Do not shorten to 'Alpine Truck Sales' or an individual name. "
         "Do NOT serve Diamond Truck Sales, Inc. under this Kern request "
         "(Diamond is Stanislaus County — Saliman Osmani, Turlock). "
-        "CMC: December 11, 2026, 8:30 a.m., Dept. 11B."
+        "CMC: December 11, 2026, 8:30 a.m., Dept. 11B. "
+        "Three packets: (1) this SER-001, (2) FW-003, (3) Amended Summons + FAC + SOS. "
+        "No printing charge requested."
     ),
 }
 
@@ -172,22 +184,66 @@ def fill_one(spec: dict) -> Path:
     return fill_ser001(out, fields, stamp_signature=True)
 
 
-def assemble_packet(spec: dict, ser001: Path) -> Path:
-    packet = OUT / spec["packet_name"]
-    pages = assemble(
-        [ser001, FW003, SUMMONS, FAC, spec["sos"]],
-        packet,
+FW003_PACKET_NAME = "2_FW-003_Order_on_Court_Fee_Waiver.pdf"
+HANDOFF = ROOT / "internal/handoff"
+PACKET3_CC_NAME = "3_Summons_FAC_SOS_CC_Diamond_Truck_Sales.pdf"
+
+
+def _load_cc_module():
+    path = SCRIPT_DIR / "fill-matter-12-stanislaus-cc-authorization.py"
+    spec = importlib.util.spec_from_file_location("matter12_cc_auth", path)
+    if spec is None or spec.loader is None:
+        raise SystemExit(f"Cannot load {path}")
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod
+
+
+def copy_fw003() -> Path:
+    dest = OUT / FW003_PACKET_NAME
+    shutil.copyfile(FW003, dest)
+    return dest
+
+
+def assemble_packet3(spec: dict, extra: list[Path] | None = None) -> Path:
+    parts = [SUMMONS, FAC, spec["sos"], *(extra or [])]
+    packet = (HANDOFF if extra else OUT) / (
+        PACKET3_CC_NAME if extra else spec["packet3_name"]
     )
+    pages = assemble(parts, packet)
     print(f"{packet.name}: {pages} pages")
     return packet
+
+
+def remove_legacy_combined() -> None:
+    for name in (
+        "COMPLETE_Stanislaus_Service_Packet_Diamond_Truck_Sales.pdf",
+        "COMPLETE_Kern_Service_Packet_Alpine_Truck_Sales.pdf",
+        "SER-001_Diamond_Truck_Sales_Stanislaus_Aug31_2026.pdf",
+        "SER-001_Alpine_Truck_Sales_Kern_Aug31_2026.pdf",
+    ):
+        path = OUT / name
+        if path.exists():
+            path.unlink()
 
 
 def main() -> None:
     require_template()
     OUT.mkdir(parents=True, exist_ok=True)
+    remove_legacy_combined()
+    fw = copy_fw003()
+    print(f"{fw.name}: copied")
     for spec in (DIAMOND, ALPINE):
         ser001 = fill_one(spec)
-        assemble_packet(spec, ser001)
+        print(f"{ser001.name}: filled")
+        assemble_packet3(spec)
+    cc = _load_cc_module()
+    HANDOFF.mkdir(parents=True, exist_ok=True)
+    cc_pdf = HANDOFF / cc.UNLOCKED_NAME
+    cc.fill(cc_pdf)
+    cc.verify(cc_pdf)
+    assemble_packet3(DIAMOND, extra=[cc_pdf])
+    print(f"Diamond packet 3 with CC (not committed): {HANDOFF / PACKET3_CC_NAME}")
 
 
 if __name__ == "__main__":

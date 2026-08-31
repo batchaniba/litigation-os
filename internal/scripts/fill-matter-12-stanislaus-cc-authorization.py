@@ -79,7 +79,7 @@ def fill(out_path: Path) -> None:
     sig_rect = fitz.Rect(SIG_RECT.x0, SIG_RECT.y1 - height, SIG_RECT.x1, SIG_RECT.y1)
     page.insert_image(sig_rect, filename=SIGNATURE_PATH, keep_proportion=True)
     out_path.parent.mkdir(parents=True, exist_ok=True)
-    doc.save(out_path)
+    doc.save(out_path, garbage=4, deflate=True)
     doc.close()
 
 

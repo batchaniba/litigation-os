@@ -1096,23 +1096,28 @@
   },
   {
     "matter": 12,
-    "label": "COMPLETE_Stanislaus_Service_Packet_Diamond_Truck_Sales",
-    "path": "/documents/matter-12/reservice-packets-aug31/COMPLETE_Stanislaus_Service_Packet_Diamond_Truck_Sales.pdf"
+    "label": "1_SER-001_Diamond_Truck_Sales_Stanislaus",
+    "path": "/documents/matter-12/reservice-packets-aug31/1_SER-001_Diamond_Truck_Sales_Stanislaus.pdf"
   },
   {
     "matter": 12,
-    "label": "COMPLETE_Kern_Service_Packet_Alpine_Truck_Sales",
-    "path": "/documents/matter-12/reservice-packets-aug31/COMPLETE_Kern_Service_Packet_Alpine_Truck_Sales.pdf"
+    "label": "1_SER-001_Alpine_Truck_Sales_Kern",
+    "path": "/documents/matter-12/reservice-packets-aug31/1_SER-001_Alpine_Truck_Sales_Kern.pdf"
   },
   {
     "matter": 12,
-    "label": "SER-001_Diamond_Truck_Sales_Stanislaus_Aug31_2026",
-    "path": "/documents/matter-12/reservice-packets-aug31/SER-001_Diamond_Truck_Sales_Stanislaus_Aug31_2026.pdf"
+    "label": "2_FW-003_Order_on_Court_Fee_Waiver",
+    "path": "/documents/matter-12/reservice-packets-aug31/2_FW-003_Order_on_Court_Fee_Waiver.pdf"
   },
   {
     "matter": 12,
-    "label": "SER-001_Alpine_Truck_Sales_Kern_Aug31_2026",
-    "path": "/documents/matter-12/reservice-packets-aug31/SER-001_Alpine_Truck_Sales_Kern_Aug31_2026.pdf"
+    "label": "3_Summons_FAC_SOS_Diamond_Truck_Sales",
+    "path": "/documents/matter-12/reservice-packets-aug31/3_Summons_FAC_SOS_Diamond_Truck_Sales.pdf"
+  },
+  {
+    "matter": 12,
+    "label": "3_Summons_FAC_SOS_Alpine_Truck_Sales",
+    "path": "/documents/matter-12/reservice-packets-aug31/3_Summons_FAC_SOS_Alpine_Truck_Sales.pdf"
   },
   {
     "matter": 14,
