@@ -5,7 +5,7 @@
   "court": "USDC N.D. Cal.",
   "claims": "42 U.S.C. §1983 (Monell + Individual Capacity); Bane Act (Cal. Civ. Code §52.1); Fraud / Negligent Misrepresentation; RICO (18 U.S.C. §1962(c)-(d))",
   "status": "Dkt. 11 (Aug. 26, 2026, Mag. Cisneros): IFP DENIED AS MOOT (fee paid); no further response needed to the July 23 order. Court will NOT screen the complaint sua sponte for preclusion — leaves that for Defendants after service. Plaintiff DIRECTED to serve process under Rule 4. Initial CMC Oct. 22, 2026.",
-  "status_label": "Dkt. 11 — serve under Rule 4; CMC Oct. 22",
+  "status_label": "Dkt. 11 — SLB service packet ready (counsel acceptance)",
   "lifecycle": "active",
   "proceeding": "federal_civil",
   "phase": "service",
@@ -156,6 +156,30 @@
     {
       "path": "/documents/matter-28/research/Research Prompt - Clearly Established Law for QI.pdf",
       "filed": false
+    },
+    {
+      "path": "/documents/matter-28/Gmail - New Filing NDCA 3-26-cv-07504 and M&C with Blaze Van Dine (Jul 22-28 2026).pdf"
+    },
+    {
+      "path": "/documents/matter-28/service-packet-slb/COMPLETE_Service_Packet_SLB_Acceptance.pdf"
+    },
+    {
+      "path": "/documents/matter-28/service-packet-slb/EMAIL_DRAFT_Service_on_SLB.txt"
+    },
+    {
+      "path": "/documents/matter-28/service-packet-slb/00_Cover_Sheet.pdf"
+    },
+    {
+      "path": "/documents/matter-28/service-packet-slb/01_Acknowledgment_of_Acceptance_of_Service.pdf"
+    },
+    {
+      "path": "/documents/matter-28/service-packet-slb/02_AO_440_Summons_Shannon_Smith.pdf"
+    },
+    {
+      "path": "/documents/matter-28/service-packet-slb/03_AO_440_Summons_HOPE_Psychotherapy.pdf"
+    },
+    {
+      "path": "/documents/matter-28/service-packet-slb/06_Proof_of_Service_Electronic_Delivery_to_SLB.pdf"
     }
   ],
   "archived": false,
@@ -167,7 +191,7 @@
       "location": "Serve personally under Rule 4(e) — confirm address (HOPE: 1245 B Street, Hayward, CA 94541 or other)",
       "served": false,
       "dateServed": null,
-      "note": "Dkt. 11 (Aug. 26, 2026) directs Rule 4 service. 90-day Rule 4(m) clock runs from complaint filing (docketed ~July 21, 2026) → ~Oct. 19, 2026."
+      "note": "Dkt. 11 (Aug. 26, 2026) directs Rule 4 service. 90-day Rule 4(m) clock runs from complaint filing (docketed ~July 21, 2026) → ~Oct. 19, 2026. SLB (Blaze Van Dine) stated during M&C that counsel will accept service; service packet prepared Aug. 31, 2026 under matter-28/service-packet-slb/."
     },
     {
       "name": "HOPE Psychotherapy, Inc. (d/b/a HOPE Program)",
@@ -175,7 +199,7 @@
       "location": "Serve via officer/agent or registered agent under Rule 4(h) — principal office 1245 B Street, Hayward, CA 94541",
       "served": false,
       "dateServed": null,
-      "note": "Same Rule 4(m) window. SLB previously appeared in related/prior HOPE matters — do not treat that as waiver of service in this action unless a waiver is executed."
+      "note": "Same Rule 4(m) window. SLB previously appeared in related/prior HOPE matters — do not treat that as waiver of service in this action unless a waiver is executed. SLB (Blaze Van Dine) stated during M&C that counsel will accept service; service packet prepared Aug. 31, 2026 under matter-28/service-packet-slb/."
     }
   ]
 }

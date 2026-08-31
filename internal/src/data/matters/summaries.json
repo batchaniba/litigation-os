@@ -793,7 +793,7 @@
     "case_no": "3:26-cv-07504-LJC",
     "court": "USDC N.D. Cal.",
     "claims": "42 U.S.C. §1983 (Monell + Individual Capacity); Bane Act (Cal. Civ. Code §52.1); Fraud / Negligent Misrepresentation; RICO (18 U.S.C. §1962(c)-(d))",
-    "status_label": "Dkt. 11 — serve under Rule 4; CMC Oct. 22",
+    "status_label": "Dkt. 11 — SLB service packet ready (counsel acceptance)",
     "lifecycle": "active",
     "proceeding": "federal_civil",
     "phase": "service",
@@ -819,7 +819,7 @@
         "location": "Serve personally under Rule 4(e) — confirm address (HOPE: 1245 B Street, Hayward, CA 94541 or other)",
         "served": false,
         "dateServed": null,
-        "note": "Dkt. 11 (Aug. 26, 2026) directs Rule 4 service. 90-day Rule 4(m) clock runs from complaint filing (docketed ~July 21, 2026) → ~Oct. 19, 2026."
+        "note": "Dkt. 11 (Aug. 26, 2026) directs Rule 4 service. 90-day Rule 4(m) clock runs from complaint filing (docketed ~July 21, 2026) → ~Oct. 19, 2026. SLB (Blaze Van Dine) stated during M&C that counsel will accept service; service packet prepared Aug. 31, 2026 under matter-28/service-packet-slb/."
       },
       {
         "name": "HOPE Psychotherapy, Inc. (d/b/a HOPE Program)",
@@ -827,11 +827,11 @@
         "location": "Serve via officer/agent or registered agent under Rule 4(h) — principal office 1245 B Street, Hayward, CA 94541",
         "served": false,
         "dateServed": null,
-        "note": "Same Rule 4(m) window. SLB previously appeared in related/prior HOPE matters — do not treat that as waiver of service in this action unless a waiver is executed."
+        "note": "Same Rule 4(m) window. SLB previously appeared in related/prior HOPE matters — do not treat that as waiver of service in this action unless a waiver is executed. SLB (Blaze Van Dine) stated during M&C that counsel will accept service; service packet prepared Aug. 31, 2026 under matter-28/service-packet-slb/."
       }
     ],
     "evidenceCount": 15,
-    "documentCount": 34
+    "documentCount": 42
   },
   {
     "number": 29,
