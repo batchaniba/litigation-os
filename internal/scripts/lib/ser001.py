@@ -97,11 +97,44 @@ def filled_values(path: Path | str) -> dict[str, object]:
     }
 
 
+def flatten_ser001(path: Path | str) -> Path:
+    """Bake AcroForm values into page content.
+
+    SER-001 is filled with ``/NeedAppearances``. Viewers that do not generate
+    appearances (Stanislaus Civil, Aug. 31, 2026 — “SER-001 is blank”) print
+    an empty request. Flattening after fill + signature stamp is the press.
+    Empty checkboxes are forced Off first so bake does not treat blank as
+    checked.
+    """
+    import fitz
+
+    out_path = Path(path)
+    doc = fitz.open(out_path)
+    try:
+        for page in doc:
+            for widget in page.widgets() or []:
+                if widget.field_type_string == "Text":
+                    widget.update()
+                elif widget.field_type_string in ("CheckBox", "RadioButton"):
+                    val = (widget.field_value or "").strip()
+                    if not val or val in ("Off", "/Off"):
+                        widget.field_value = "Off"
+                    widget.update()
+        doc.bake(annots=True, widgets=True)
+        tmp = out_path.with_name(out_path.stem + ".flattened.pdf")
+        doc.save(str(tmp), garbage=4, deflate=True, incremental=False)
+    finally:
+        doc.close()
+    tmp.replace(out_path)
+    return out_path
+
+
 def fill_ser001(
     out: Path | str,
     fields: dict[str, object],
     *,
     stamp_signature: bool = False,
+    flatten: bool = False,
     template: Path | None = None,
 ) -> Path:
     """Fill ``fields`` onto a copy of the blank SER-001 and write ``out``."""
@@ -121,4 +154,6 @@ def fill_ser001(
         writer.write(fh)
     if stamp_signature:
         stamp_ser001_signature(out_path)
+    if flatten:
+        flatten_ser001(out_path)
     return out_path

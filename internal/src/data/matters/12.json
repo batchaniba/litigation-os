@@ -284,7 +284,14 @@
       "path": "/documents/matter-12/018 Request for Sheriff Service + Fee Waiver : CC Auth — Ngwa Nforbi v. Diamond Truc.pdf"
     },
     {
+      "path": "/documents/matter-12/Stanislaus Sheriff - SER-001 is blank (Lu, Aug 31 2026).pdf",
+      "filed": false
+    },
+    {
       "path": "/documents/matter-12/EMAIL_DRAFT_Stanislaus_Sheriff_Diamond_Reservice_Aug31_2026.txt"
+    },
+    {
+      "path": "/documents/matter-12/EMAIL_DRAFT_Stanislaus_Sheriff_Diamond_Flattened_SER001_Aug31_2026.txt"
     },
     {
       "path": "/documents/matter-12/EMAIL_DRAFT_Kern_Sheriff_Alpine_Reservice_Aug31_2026.txt"
@@ -324,7 +331,7 @@
       "title": "Defendant (agent for service: Saliman Osmani)",
       "location": "Stanislaus County — 1201 S. Soderquist Road, Turlock, CA 95380",
       "served": false,
-      "note": "SOS Entity 3438768, active, formed Feb. 2, 2012. Prior POS disputed at the Aug. 12, 2026 CMC. Re-serve the Amended Summons and FAC on Saliman Osmani as agent for service of process (CCP §416.10)."
+      "note": "SOS Entity 3438768, active, formed Feb. 2, 2012. Prior POS disputed at the Aug. 12, 2026 CMC. Re-serve the Amended Summons and FAC on Saliman Osmani as agent for service of process (CCP §416.10). Stanislaus Civil (Lu, Aug. 31, 2026) returned the live-field SER-001 as blank; flattened (print-pressed) copy prepared the same day."
     },
     {
       "name": "Alpine Truck Sales, Inc.",
