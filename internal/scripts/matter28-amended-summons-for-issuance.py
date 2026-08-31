@@ -39,7 +39,6 @@ OUT = M28 / "amended-summons-for-issuance"
 AO440_TEMPLATE = ROOT / "internal/public/documents/_form-library/ao440-blank-template.pdf"
 
 CASE = "3:26-cv-07504-LJC"
-CASE_SHORT = "3:26-cv-07504"
 JUDGE = "Hon. Lisa J. Cisneros"
 PLAINTIFF = "BRENDAN NGEHSI NEWANFORBI"
 PLAINTIFF_MIXED = "Brendan Ngehsi Newanforbi"
@@ -49,8 +48,6 @@ PHONE = "(209) 801-4442"
 EMAIL = "bnn.cdl@gmail.com"
 EXEC_DATE = "August 31, 2026"
 FOOTER = "REQUEST FOR ISSUANCE OF AMENDED SUMMONS -- NEWANFORBI v. SMITH, ET AL."
-CAPTION = "NEWANFORBI v. SMITH, ET AL."
-
 DEFENDANTS_BLOCK = (
     "SHANNON SMITH, LCSW, Chief Executive Officer and Founder of HOPE Program, "
     "an individual; and HOPE PSYCHOTHERAPY, INC., d/b/a HOPE PROGRAM, "
