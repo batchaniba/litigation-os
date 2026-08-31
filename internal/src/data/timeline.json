@@ -1,7 +1,31 @@
 [
   {
     "date": "Aug. 31, 2026",
-    "event": "DRAFTED, NOT YET SENT — Follow-up email to Kern County Sheriff Civil (Civil@KernSheriff.org) noticing the Aug. 31, 2026 Notice of Action Taken (clerk A. Jennings) and resubmitting the corrected Alpine three-document packet: SER-001 with 3b(2) blank and Sheran Osmani in 3b(3), FW-003, Amended Summons + FAC. Asks the office to resume processing. — Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094)",
+    "event": "ISSUED \u2014 AO 440 summons in Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504-LJC). Combined form: HOPE Psychotherapy, Inc., d/b/a HOPE Program, c/o Shannon Smith, LCSW, Chief Executive Officer, and Shannon Smith individually, both at 1245 B Street, Hayward, CA 94541. Dated AUG 31 2026; Clerk Mark B. Busby; signed Charles Ho, Deputy Clerk. This is the issued process Dkt. 11 (Aug. 26) directed. Not yet served. Rule 4(m) remains ~Oct. 19, 2026.",
+    "matters": [
+      28
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "agency",
+    "source": "/documents/matter-28/AO 440 Summons Issued - Shannon Smith and HOPE Psychotherapy (N.D. Cal. 3-26-cv-07504-LJC) (Aug 31 2026).pdf"
+  },
+  {
+    "date": "Aug. 31, 2026",
+    "event": "RECEIVED \u2014 clerk-stamped original of the AO 440 Proof of Service for Jose Melano (Nforbi v. Meza-Gonzalez et al., 3:26-cv-08271-PHK). Same C&P Process Server return as Dkt. 5-1 (Clifford Black; Officer Reed; CHP South Sacramento; served Aug. 14, 2026; ECF filed Aug. 17). Paper original bears FILED / ORIGINAL FILED Aug. 31, 2026 (N.D. Cal. San Jose) and a red SCANNED stamp. Not a new service date. Meza Rule 4 remains incomplete.",
+    "matters": [
+      32
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "agency",
+    "source": "/documents/matter-32/ndcal/Proof of Service of Summons - Jose Melano (C&P Process Server original, clerk-stamped Aug 31 2026).pdf"
+  },
+  {
+    "date": "Aug. 31, 2026",
+    "event": "DRAFTED, NOT YET SENT \u2014 Follow-up email to Kern County Sheriff Civil (Civil@KernSheriff.org) noticing the Aug. 31, 2026 Notice of Action Taken (clerk A. Jennings) and resubmitting the corrected Alpine three-document packet: SER-001 with 3b(2) blank and Sheran Osmani in 3b(3), FW-003, Amended Summons + FAC. Asks the office to resume processing. \u2014 Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094)",
     "matters": [
       12
     ],
@@ -12,7 +36,7 @@
   },
   {
     "date": "Aug. 31, 2026",
-    "event": "RETURNED — Kern County Sheriff Civil (clerk A. Jennings) rejected the Alpine Truck Sales SER-001 the same day it was received: page 2 item 3b(2) must be blank when 3b(3) lists an agent for service of process. Corrected SER-001 blanks 3b(2) and keeps Sheran Osmani in 3b(3). Three-document Kern packet re-rendered (SER-001, FW-003, Amended Summons + FAC). Not yet re-submitted. — Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094)",
+    "event": "RETURNED \u2014 Kern County Sheriff Civil (clerk A. Jennings) rejected the Alpine Truck Sales SER-001 the same day it was received: page 2 item 3b(2) must be blank when 3b(3) lists an agent for service of process. Corrected SER-001 blanks 3b(2) and keeps Sheran Osmani in 3b(3). Three-document Kern packet re-rendered (SER-001, FW-003, Amended Summons + FAC). Not yet re-submitted. \u2014 Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094)",
     "matters": [
       12
     ],
