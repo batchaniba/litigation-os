@@ -101,7 +101,6 @@ def base_fields(*, county: str, addr: str, city: str, zip_code: str,
 
 DIAMOND = {
     "ser001_name": "1_SER-001_Diamond_Truck_Sales_Stanislaus.pdf",
-    "packet3_name": "3_Summons_FAC_Diamond_Truck_Sales.pdf",
     "county": "Stanislaus",
     "addr": "1201 S. Soderquist Road",
     "city": "Turlock",
@@ -127,7 +126,6 @@ DIAMOND = {
 
 ALPINE = {
     "ser001_name": "1_SER-001_Alpine_Truck_Sales_Kern.pdf",
-    "packet3_name": "3_Summons_FAC_Alpine_Truck_Sales.pdf",
     "county": "Kern",
     "addr": "7156 Golden State Highway",
     "city": "Bakersfield",
@@ -173,6 +171,7 @@ def fill_one(spec: dict) -> Path:
 
 
 FW003_PACKET_NAME = "2_FW-003_Order_on_Court_Fee_Waiver.pdf"
+PACKET3_NAME = "3_Summons_FAC.pdf"
 HANDOFF = ROOT / "internal/handoff"
 CC_DOC4_NAME = "4_Stanislaus_Credit_Card_Authorization_Diamond.pdf"
 
@@ -193,8 +192,8 @@ def copy_fw003() -> Path:
     return dest
 
 
-def assemble_packet3(spec: dict) -> Path:
-    packet = OUT / spec["packet3_name"]
+def assemble_packet3() -> Path:
+    packet = OUT / PACKET3_NAME
     pages = assemble([SUMMONS, FAC], packet)
     print(f"{packet.name}: {pages} pages")
     return packet
@@ -217,6 +216,8 @@ def remove_legacy_combined() -> None:
         "COMPLETE_Kern_Service_Packet_Alpine_Truck_Sales.pdf",
         "SER-001_Diamond_Truck_Sales_Stanislaus_Aug31_2026.pdf",
         "SER-001_Alpine_Truck_Sales_Kern_Aug31_2026.pdf",
+        "3_Summons_FAC_Diamond_Truck_Sales.pdf",
+        "3_Summons_FAC_Alpine_Truck_Sales.pdf",
         "3_Summons_FAC_SOS_Diamond_Truck_Sales.pdf",
         "3_Summons_FAC_SOS_Alpine_Truck_Sales.pdf",
         "3_Summons_FAC_SOS_CC_Diamond_Truck_Sales.pdf",
@@ -233,10 +234,10 @@ def main() -> None:
     remove_legacy_combined()
     fw = copy_fw003()
     print(f"{fw.name}: copied")
+    assemble_packet3()
     for spec in (DIAMOND, ALPINE):
         ser001 = fill_one(spec)
         print(f"{ser001.name}: filled")
-        assemble_packet3(spec)
     doc4 = fill_document4_cc()
     print(f"Diamond document 4: {doc4}")
 
