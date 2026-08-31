@@ -839,7 +839,7 @@
     "case_no": "3:26-cv-09249-ASK",
     "court": "USDC N.D. Cal.",
     "claims": "PC §290.46(j)(2)(E) Violation, Fair Chance Act (Gov. Code §12952), FCRA, ICRAA, Invasion of Privacy, UCL §17200, IIED",
-    "status_label": "Removed — 3:26-cv-09249-ASK; resp. Sep. 8",
+    "status_label": "Removed — Amazon Sep. 8; Accurate Sep. 22",
     "lifecycle": "active",
     "proceeding": "federal_civil",
     "phase": "responsive_deadline",
@@ -859,10 +859,10 @@
       },
       {
         "name": "Accurate Background LLC",
-        "title": "Defendant (registered agent CT Corporation System)",
-        "location": "Los Angeles County (private process server)",
+        "title": "Defendant (counsel Seyfarth Shaw LLP — John Drury / Jasmine J. Stanzick)",
+        "location": "Los Angeles County (private process server); counsel now accepts service at JDrury@seyfarth.com and jstanzick@seyfarth.com",
         "served": true,
-        "dateServed": "July 31, 2026 (Jaqueline Mejia, Agent, served by Sarah Thompson)"
+        "dateServed": "July 31, 2026 (Jaqueline Mejia, Agent, served by Sarah Thompson); e-service accepted Aug. 31, 2026"
       }
     ],
     "causes": [
@@ -875,8 +875,8 @@
       "Intentional Infliction of Emotional Distress"
     ],
     "archived": false,
-    "evidenceCount": 30,
-    "documentCount": 83
+    "evidenceCount": 31,
+    "documentCount": 84
   },
   {
     "number": 30,

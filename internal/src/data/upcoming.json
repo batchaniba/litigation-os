@@ -33,7 +33,7 @@
   },
   {
     "date": "Sep. 8, 2026",
-    "event": "Amazon / Accurate Background responsive pleading deadline (computed) — Newanforbi v. Amazon.com Services, LLC et al. (Matter 29, N.D. Cal. No. 3:26-cv-09249-ASK). Fed. R. Civ. P. 81(c)(2) takes the longest of 21 days after receipt of the initial pleading, 21 days after service of the summons, or 7 days after the notice of removal is filed. Service was July 31, 2026, so the 21-day branches expired Aug. 21; the operative date is 7 days after the Aug. 31, 2026 removal, which is Monday, Sep. 7, 2026 (Labor Day). FRCP 6(a)(1)(C) rolls that deadline to Tuesday, September 8, 2026. Watch for answer or Rule 12 motion by Andrew P. Frederick (Morgan Lewis) / Jasmine J. Stanzick (Seyfarth Shaw).",
+    "event": "Amazon.com Services LLC responsive pleading deadline (computed) — Newanforbi v. Amazon.com Services, LLC et al. (Matter 29, N.D. Cal. No. 3:26-cv-09249-ASK). Fed. R. Civ. P. 81(c)(2) takes the longest of 21 days after receipt of the initial pleading, 21 days after service of the summons, or 7 days after the notice of removal is filed. Service was July 31, 2026, so the 21-day branches expired Aug. 21; the operative date is 7 days after the Aug. 31, 2026 removal, which is Monday, Sep. 7, 2026 (Labor Day). FRCP 6(a)(1)(C) rolls that deadline to Tuesday, September 8, 2026. Accurate Background's 81(c) date was extended through September 22 by the Aug. 31 party agreement with John Drury (Seyfarth Shaw). Watch for answer or Rule 12 as to Amazon by Andrew P. Frederick (Morgan Lewis).",
     "matters": [
       29
     ],
@@ -41,6 +41,17 @@
     "upcoming": true,
     "actor": "opposing",
     "source": "/documents/matter-29/Dkt 01 - Notice of Removal (Filed Aug 31 2026).pdf"
+  },
+  {
+    "date": "Sep. 22, 2026",
+    "event": "Extended responsive-pleading deadline — Accurate Background LLC only, Newanforbi v. Amazon.com Services, LLC et al. (Matter 29, N.D. Cal. No. 3:26-cv-09249-ASK). Through and including September 22, 2026, by Aug. 31, 2026 party agreement with John Drury (Seyfarth Shaw LLP). Drury also said Accurate will respond to the $250,000 Accurate-only opening demand during that period. Party agreement only — no stipulation on file. Amazon.com Services LLC remains September 8, 2026. Single extension as recorded; nothing further implied.",
+    "matters": [
+      29
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "opposing",
+    "source": "/documents/matter-29/Gmail - Accurate 14-Day Extension Offer and Settlement Demand (Aug 31 2026).pdf"
   },
   {
     "date": "Sep. 30, 2026",
