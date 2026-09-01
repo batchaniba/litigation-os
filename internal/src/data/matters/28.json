@@ -46,6 +46,14 @@
   ],
   "documents": [
     {
+      "path": "/documents/matter-28/Dkt 01 - Complaint and Civil Cover Sheet (Filed Jul 20 2026) (CM-ECF).pdf",
+      "filed": true
+    },
+    {
+      "path": "/documents/matter-28/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Filed Jul 20 2026).pdf",
+      "filed": true
+    },
+    {
       "path": "/documents/matter-28/Dkt 11 - Order Regarding Filing Fee IFP and Directing Service (Filed Aug 26 2026).pdf",
       "filed": true
     },
@@ -177,13 +185,16 @@
       "path": "/documents/matter-28/service-packet-slb/02_AO_440_Summons_Issued.pdf"
     },
     {
-      "path": "/documents/matter-28/service-packet-slb/03_Complaint_as_filed.pdf"
+      "path": "/documents/matter-28/service-packet-slb/03_Dkt_01_Complaint.pdf"
     },
     {
-      "path": "/documents/matter-28/service-packet-slb/04_Dkt_11_Order_Directing_Service.pdf"
+      "path": "/documents/matter-28/service-packet-slb/04_Dkt_04_Initial_CMC_ADR_Order.pdf"
     },
     {
-      "path": "/documents/matter-28/service-packet-slb/05_Proof_of_Service_Electronic_Delivery_to_SLB.pdf"
+      "path": "/documents/matter-28/service-packet-slb/05_Dkt_11_Order_Directing_Service.pdf"
+    },
+    {
+      "path": "/documents/matter-28/service-packet-slb/06_Proof_of_Service_Electronic_Delivery_to_SLB.pdf"
     },
     {
       "path": "/documents/matter-28/Dkt 03 - Proposed Summons (Filed Jul 20 2026) (scan).pdf"
@@ -220,7 +231,7 @@
       "location": "Serve personally under Rule 4(e) — confirm address (HOPE: 1245 B Street, Hayward, CA 94541 or other)",
       "served": false,
       "dateServed": null,
-      "note": "Dkt. 11 (Aug. 26, 2026) directs Rule 4 service. 90-day Rule 4(m) clock runs from complaint filing (docketed ~July 21, 2026) → ~Oct. 19, 2026. SLB (Blaze Van Dine) stated during M&C that counsel will accept service. Packet rebuilt Aug. 31, 2026 with the clerk-issued combined AO 440 (Charles Ho) under matter-28/service-packet-slb/. Ready to transmit; not yet sent. POS undated pending written acceptance. Do not treat a prior HOPE appearance as waiver."
+      "note": "Dkt. 11 (Aug. 26, 2026) directs Rule 4 service. 90-day Rule 4(m) clock runs from complaint filing (docketed ~July 21, 2026) → ~Oct. 19, 2026. SLB (Blaze Van Dine) stated during M&C that counsel will accept service. Packet rebuilt Sep. 1, 2026 with CM/ECF Dkt. 1 / 1-1, Dkt. 4, Dkt. 11, and the clerk-issued combined AO 440 under matter-28/service-packet-slb/. Ready to transmit; not yet sent. POS undated pending written acceptance. Do not treat a prior HOPE appearance as waiver."
     },
     {
       "name": "HOPE Psychotherapy, Inc. (d/b/a HOPE Program)",
@@ -228,7 +239,7 @@
       "location": "Serve via officer/agent or registered agent under Rule 4(h) — principal office 1245 B Street, Hayward, CA 94541",
       "served": false,
       "dateServed": null,
-      "note": "Same Rule 4(m) window. SLB previously appeared in related/prior HOPE matters — do not treat that as waiver of service in this action unless a waiver is executed. Packet rebuilt Aug. 31, 2026 with the clerk-issued combined AO 440 under matter-28/service-packet-slb/. Ready to transmit; not yet sent. POS undated pending written acceptance."
+      "note": "Same Rule 4(m) window. SLB previously appeared in related/prior HOPE matters — do not treat that as waiver of service in this action unless a waiver is executed. Packet rebuilt Sep. 1, 2026 with CM/ECF Dkt. 1 / 1-1, Dkt. 4, Dkt. 11, and the issued AO 440 under matter-28/service-packet-slb/. Ready to transmit; not yet sent. POS undated pending written acceptance."
     }
   ]
 }

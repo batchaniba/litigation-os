@@ -6,18 +6,19 @@ Newanforbi v. Shannon Smith, LCSW, et al., N.D. Cal. No. 3:26-cv-07504-LJC.
 Blaze Van Dine (Sims, Lawrence & Broghammer) stated during meet-and-confer that
 SLB would accept service on behalf of Shannon Smith and HOPE Psychotherapy,
 Inc. This packet transmits the clerk-issued AO 440 (Aug. 31, 2026, combined
-form) with the complaint and Dkt. 11. Do not regenerate or restamp the issued
-summons.
+form) with the CM/ECF-stamped complaint (Dkt. 1 / 1-1), the Dkt. 4 CMC/ADR
+order, and Dkt. 11. Do not regenerate or restamp the issued summons.
 
 Outputs under internal/public/documents/matter-28/service-packet-slb/:
   00_Cover_Sheet.pdf  (plaintiff file only — not in COMPLETE)
   01_Acknowledgment_of_Acceptance_of_Service.pdf  (plaintiff file only — not in COMPLETE)
   02_AO_440_Summons_Issued.pdf  (copy of clerk-issued combined AO 440)
-  03_Complaint_as_filed.pdf  (copy)
-  04_Dkt_11_Order_Directing_Service.pdf  (copy)
-  05_Proof_of_Service_Electronic_Delivery_to_SLB.pdf
+  03_Dkt_01_Complaint.pdf  (CM/ECF Dkt. 1 + 1-1)
+  04_Dkt_04_Initial_CMC_ADR_Order.pdf  (CM/ECF Dkt. 4)
+  05_Dkt_11_Order_Directing_Service.pdf  (CM/ECF Dkt. 11)
+  06_Proof_of_Service_Electronic_Delivery_to_SLB.pdf
   EMAIL_DRAFT_Service_on_SLB.txt
-  COMPLETE_Service_Packet_SLB_Acceptance.pdf  (summons + complaint + Dkt. 11 + POS)
+  COMPLETE_Service_Packet_SLB_Acceptance.pdf
 """
 
 from __future__ import annotations
@@ -49,7 +50,11 @@ ISSUED_SUMMONS_SRC = M28 / (
     "(N.D. Cal. 3-26-cv-07504-LJC) (Aug 31 2026).pdf"
 )
 COMPLAINT_SRC = M28 / (
-    "Complaint_Newanforbi_v_Smith_NDCA (as filed, served on SLB Jul 22 2026).pdf"
+    "Dkt 01 - Complaint and Civil Cover Sheet (Filed Jul 20 2026) (CM-ECF).pdf"
+)
+DKT4_SRC = M28 / (
+    "Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines "
+    "(Filed Jul 20 2026).pdf"
 )
 DKT11_SRC = M28 / (
     "Dkt 11 - Order Regarding Filing Fee IFP and Directing Service (Filed Aug 26 2026).pdf"
@@ -72,18 +77,22 @@ PACKET_FILES = {
     "cover": "00_Cover_Sheet.pdf",
     "ack": "01_Acknowledgment_of_Acceptance_of_Service.pdf",
     "summons": "02_AO_440_Summons_Issued.pdf",
-    "complaint": "03_Complaint_as_filed.pdf",
-    "dkt11": "04_Dkt_11_Order_Directing_Service.pdf",
-    "pos": "05_Proof_of_Service_Electronic_Delivery_to_SLB.pdf",
+    "complaint": "03_Dkt_01_Complaint.pdf",
+    "dkt4": "04_Dkt_04_Initial_CMC_ADR_Order.pdf",
+    "dkt11": "05_Dkt_11_Order_Directing_Service.pdf",
+    "pos": "06_Proof_of_Service_Electronic_Delivery_to_SLB.pdf",
     "complete": "COMPLETE_Service_Packet_SLB_Acceptance.pdf",
 }
 
-# Leftover from the unissued two-form packet. Delete on each render.
+# Leftover from earlier packet numbering. Delete on each render.
 OBSOLETE = (
     "02_AO_440_Summons_Shannon_Smith.pdf",
     "03_AO_440_Summons_HOPE_Psychotherapy.pdf",
+    "03_Complaint_as_filed.pdf",
     "04_Complaint_as_filed.pdf",
+    "04_Dkt_11_Order_Directing_Service.pdf",
     "05_Dkt_11_Order_Directing_Service.pdf",
+    "05_Proof_of_Service_Electronic_Delivery_to_SLB.pdf",
     "06_Proof_of_Service_Electronic_Delivery_to_SLB.pdf",
 )
 
@@ -125,9 +134,10 @@ def write_cover(path: Path) -> None:
     line("PACKET CONTENTS (assembled PDF transmitted to counsel, in order)", 10, True)
     for item in [
         "1. AO 440 Summons ISSUED Aug. 31, 2026 (combined — both defendants)",
-        "2. Complaint (as filed / courtesy copy previously emailed Jul. 22, 2026)",
-        "3. Dkt. 11 — Order directing Rule 4 service (filed Aug. 26, 2026)",
-        "4. Proof of Service — Electronic Delivery to SLB (file after confirmation)",
+        "2. Dkt. 1 — Complaint and Dkt. 1-1 civil cover (CM/ECF, filed Jul. 20, 2026)",
+        "3. Dkt. 4 — Initial CMC / ADR scheduling order (filed Jul. 20, 2026)",
+        "4. Dkt. 11 — Order directing Rule 4 service (filed Aug. 26, 2026)",
+        "5. Proof of Service — Electronic Delivery to SLB (file after confirmation)",
     ]:
         line(f"  {item}")
     line("  Cover and acknowledgment are plaintiff-file only; they are not attached.")
@@ -191,9 +201,9 @@ def write_acknowledgment(path: Path) -> None:
         "I, Blaze Van Dine, Esq., of Sims, Lawrence & Broghammer, state that I am "
         "authorized to accept service of process on behalf of the defendants named "
         "below in the above-captioned action, and that I hereby accept service of "
-        "the issued Summons (AO 440, dated August 31, 2026) and Complaint (and the "
-        "enclosed Dkt. 11 Order) transmitted by email to blaze@sims-law.net and "
-        "slb-eservice@sims-law.net."
+        "the issued Summons (AO 440, dated August 31, 2026), the Complaint (Dkt. 1), "
+        "the Initial Case Management / ADR Order (Dkt. 4), and Dkt. 11, transmitted "
+        "by email to blaze@sims-law.net and slb-eservice@sims-law.net."
     )
     y -= 4
     line("Defendants for whom service is accepted:", 10, True)
@@ -229,6 +239,7 @@ def write_email_draft(path: Path) -> None:
     raw_complete = github_raw(PACKET_FILES["complete"])
     raw_summons = github_raw(PACKET_FILES["summons"])
     raw_complaint = github_raw(PACKET_FILES["complaint"])
+    raw_dkt4 = github_raw(PACKET_FILES["dkt4"])
     raw_dkt11 = github_raw(PACKET_FILES["dkt11"])
     raw_ack = github_raw(PACKET_FILES["ack"])
     raw_cover = github_raw(PACKET_FILES["cover"])
@@ -256,6 +267,7 @@ Attachments:
   {PACKET_FILES["complete"]}
   {PACKET_FILES["summons"]}
   {PACKET_FILES["complaint"]}
+  {PACKET_FILES["dkt4"]}
   {PACKET_FILES["dkt11"]}
 
 ---
@@ -268,6 +280,7 @@ Plaintiff-only raws (branch {GITHUB_REF}; after merge use PACKET_GITHUB_REF=main
   {raw_complete}
   {raw_summons}
   {raw_complaint}
+  {raw_dkt4}
   {raw_dkt11}
   {raw_ack}
   {raw_cover}
@@ -288,8 +301,10 @@ def write_proof_of_service(path: Path) -> None:
         service_date="",  # fill after acceptance
         document_title=(
             "Issued Summons (AO 440, dated August 31, 2026) as to Shannon Smith, "
-            "LCSW, and HOPE Psychotherapy, Inc. d/b/a HOPE Program; Complaint; "
-            "and Dkt. 11 Order Regarding Payment of Filing Fee and Directing Service"
+            "LCSW, and HOPE Psychotherapy, Inc. d/b/a HOPE Program; Complaint "
+            "(Dkt. 1 / 1-1); Dkt. 4 Order Setting Initial Case Management "
+            "Conference and ADR Deadlines; and Dkt. 11 Order Regarding Payment "
+            "of Filing Fee and Directing Service"
         ),
         mailing_location="Stockton, California (electronic mail)",
         recipients=[
@@ -310,6 +325,7 @@ def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     assert ISSUED_SUMMONS_SRC.is_file(), f"missing {ISSUED_SUMMONS_SRC}"
     assert COMPLAINT_SRC.is_file(), f"missing {COMPLAINT_SRC}"
+    assert DKT4_SRC.is_file(), f"missing {DKT4_SRC}"
     assert DKT11_SRC.is_file(), f"missing {DKT11_SRC}"
 
     for name in OBSOLETE:
@@ -321,6 +337,7 @@ def main() -> None:
     ack = OUT / PACKET_FILES["ack"]
     summons_out = OUT / PACKET_FILES["summons"]
     complaint_out = OUT / PACKET_FILES["complaint"]
+    dkt4_out = OUT / PACKET_FILES["dkt4"]
     dkt11_out = OUT / PACKET_FILES["dkt11"]
     pos = OUT / PACKET_FILES["pos"]
     email = OUT / "EMAIL_DRAFT_Service_on_SLB.txt"
@@ -330,12 +347,13 @@ def main() -> None:
     write_acknowledgment(ack)
     shutil.copy2(ISSUED_SUMMONS_SRC, summons_out)
     shutil.copy2(COMPLAINT_SRC, complaint_out)
+    shutil.copy2(DKT4_SRC, dkt4_out)
     shutil.copy2(DKT11_SRC, dkt11_out)
     write_proof_of_service(pos)
     write_email_draft(email)
 
     pages = assemble(
-        [summons_out, complaint_out, dkt11_out, pos],
+        [summons_out, complaint_out, dkt4_out, dkt11_out, pos],
         complete,
     )
     print(f"Wrote {complete} ({pages} pages)")

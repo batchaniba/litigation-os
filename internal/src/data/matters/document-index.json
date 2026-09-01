@@ -2541,6 +2541,16 @@
   },
   {
     "matter": 28,
+    "label": "Dkt 01 - Complaint and Civil Cover Sheet (Filed Jul 20 2026) (CM-ECF)",
+    "path": "/documents/matter-28/Dkt 01 - Complaint and Civil Cover Sheet (Filed Jul 20 2026) (CM-ECF).pdf"
+  },
+  {
+    "matter": 28,
+    "label": "Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Filed Jul 20 2026)",
+    "path": "/documents/matter-28/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Filed Jul 20 2026).pdf"
+  },
+  {
+    "matter": 28,
     "label": "Dkt. 11 — Order re filing fee / IFP moot; directing Rule 4 service (Aug. 26, 2026)",
     "path": "/documents/matter-28/Dkt 11 - Order Regarding Filing Fee IFP and Directing Service (Filed Aug 26 2026).pdf"
   },
@@ -2741,18 +2751,23 @@
   },
   {
     "matter": 28,
-    "label": "03_Complaint_as_filed",
-    "path": "/documents/matter-28/service-packet-slb/03_Complaint_as_filed.pdf"
+    "label": "03_Dkt_01_Complaint",
+    "path": "/documents/matter-28/service-packet-slb/03_Dkt_01_Complaint.pdf"
   },
   {
     "matter": 28,
-    "label": "04_Dkt_11_Order_Directing_Service",
-    "path": "/documents/matter-28/service-packet-slb/04_Dkt_11_Order_Directing_Service.pdf"
+    "label": "04_Dkt_04_Initial_CMC_ADR_Order",
+    "path": "/documents/matter-28/service-packet-slb/04_Dkt_04_Initial_CMC_ADR_Order.pdf"
   },
   {
     "matter": 28,
-    "label": "05_Proof_of_Service_Electronic_Delivery_to_SLB",
-    "path": "/documents/matter-28/service-packet-slb/05_Proof_of_Service_Electronic_Delivery_to_SLB.pdf"
+    "label": "05_Dkt_11_Order_Directing_Service",
+    "path": "/documents/matter-28/service-packet-slb/05_Dkt_11_Order_Directing_Service.pdf"
+  },
+  {
+    "matter": 28,
+    "label": "06_Proof_of_Service_Electronic_Delivery_to_SLB",
+    "path": "/documents/matter-28/service-packet-slb/06_Proof_of_Service_Electronic_Delivery_to_SLB.pdf"
   },
   {
     "matter": 28,

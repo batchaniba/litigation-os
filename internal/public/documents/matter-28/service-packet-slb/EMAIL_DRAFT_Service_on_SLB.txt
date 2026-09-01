@@ -20,19 +20,21 @@ Email: bnn.cdl@gmail.com
 Attachments:
   COMPLETE_Service_Packet_SLB_Acceptance.pdf
   02_AO_440_Summons_Issued.pdf
-  03_Complaint_as_filed.pdf
-  04_Dkt_11_Order_Directing_Service.pdf
+  03_Dkt_01_Complaint.pdf
+  04_Dkt_04_Initial_CMC_ADR_Order.pdf
+  05_Dkt_11_Order_Directing_Service.pdf
 
 ---
 Note to self (do not send): Do not put GitHub raws in the email to SLB.
-After Blaze confirms, date and file 05_Proof_of_Service_Electronic_Delivery_to_SLB.pdf with the
+After Blaze confirms, date and file 06_Proof_of_Service_Electronic_Delivery_to_SLB.pdf with the
 confirmation email as an exhibit if the clerk’s practice prefers it.
 Do not treat SLB’s prior HOPE appearance as a waiver.
 
 Plaintiff-only raws (branch cursor/slb-service-packet-issued-6baa; after merge use PACKET_GITHUB_REF=main):
   https://raw.githubusercontent.com/newanforbi/interactive-litigation-portfolio/cursor/slb-service-packet-issued-6baa/internal/public/documents/matter-28/service-packet-slb/COMPLETE_Service_Packet_SLB_Acceptance.pdf
   https://raw.githubusercontent.com/newanforbi/interactive-litigation-portfolio/cursor/slb-service-packet-issued-6baa/internal/public/documents/matter-28/service-packet-slb/02_AO_440_Summons_Issued.pdf
-  https://raw.githubusercontent.com/newanforbi/interactive-litigation-portfolio/cursor/slb-service-packet-issued-6baa/internal/public/documents/matter-28/service-packet-slb/03_Complaint_as_filed.pdf
-  https://raw.githubusercontent.com/newanforbi/interactive-litigation-portfolio/cursor/slb-service-packet-issued-6baa/internal/public/documents/matter-28/service-packet-slb/04_Dkt_11_Order_Directing_Service.pdf
+  https://raw.githubusercontent.com/newanforbi/interactive-litigation-portfolio/cursor/slb-service-packet-issued-6baa/internal/public/documents/matter-28/service-packet-slb/03_Dkt_01_Complaint.pdf
+  https://raw.githubusercontent.com/newanforbi/interactive-litigation-portfolio/cursor/slb-service-packet-issued-6baa/internal/public/documents/matter-28/service-packet-slb/04_Dkt_04_Initial_CMC_ADR_Order.pdf
+  https://raw.githubusercontent.com/newanforbi/interactive-litigation-portfolio/cursor/slb-service-packet-issued-6baa/internal/public/documents/matter-28/service-packet-slb/05_Dkt_11_Order_Directing_Service.pdf
   https://raw.githubusercontent.com/newanforbi/interactive-litigation-portfolio/cursor/slb-service-packet-issued-6baa/internal/public/documents/matter-28/service-packet-slb/01_Acknowledgment_of_Acceptance_of_Service.pdf
   https://raw.githubusercontent.com/newanforbi/interactive-litigation-portfolio/cursor/slb-service-packet-issued-6baa/internal/public/documents/matter-28/service-packet-slb/00_Cover_Sheet.pdf
