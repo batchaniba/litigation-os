@@ -203,7 +203,7 @@ def write_acknowledgment(path: Path) -> None:
     line("  [ ]  Both of the above")
     y -= 6
     line("Date of acceptance (effective date of service): ________________________", 10, False, 18)
-    line("Manner: Electronic mail (PDF attachments and GitHub raw links), pursuant", 10, False, 18)
+    line("Manner: Electronic mail (PDF attachments), pursuant", 10, False, 18)
     line("to counsel’s agreement to accept service on behalf of the clients during", 10, False, 18)
     line("meet-and-confer.", 10, False, 18)
 
@@ -240,25 +240,7 @@ Subject: Service of Process — Newanforbi v. Smith, et al., No. 3:26-cv-07504-L
 
 Mr. Van Dine:
 
-Per your statement at meet-and-confer that SLB will accept service for Shannon Smith, LCSW, and HOPE Psychotherapy, Inc., and pursuant to Fed. R. Civ. P. 4 and Dkt. 11 (Aug. 26, 2026), the service packet is attached and at these GitHub raw links:
-
-  Complete packet:
-  {raw_complete}
-
-  Issued AO 440 (Aug. 31, 2026 — both defendants):
-  {raw_summons}
-
-  Complaint (as filed):
-  {raw_complaint}
-
-  Dkt. 11 (order directing Rule 4 service):
-  {raw_dkt11}
-
-  Acknowledgment of Acceptance of Service:
-  {raw_ack}
-
-  Cover sheet:
-  {raw_cover}
+Per your statement at meet-and-confer that SLB will accept service for Shannon Smith, LCSW, and HOPE Psychotherapy, Inc., and pursuant to Fed. R. Civ. P. 4 and Dkt. 11 (Aug. 26, 2026), please find the service packet attached.
 
 Please reply confirming that SLB accepts service for both defendants and stating the effective date. You may sign the Acknowledgment or confirm by reply. I will file proof of service after your confirmation.
 
@@ -279,11 +261,18 @@ Attachments:
   {PACKET_FILES["ack"]}
 
 ---
-Note to self (do not send): After Blaze confirms, date and file
-{PACKET_FILES["pos"]} with the confirmation email as an exhibit if the
-clerk’s practice prefers it. Do not treat SLB’s prior HOPE appearance as
-a waiver. Raw links use branch {GITHUB_REF}; after merge, re-render with
-PACKET_GITHUB_REF=main if you want main-line URLs.
+Note to self (do not send): Do not put GitHub raws in the email to SLB.
+After Blaze confirms, date and file {PACKET_FILES["pos"]} with the
+confirmation email as an exhibit if the clerk’s practice prefers it.
+Do not treat SLB’s prior HOPE appearance as a waiver.
+
+Plaintiff-only raws (branch {GITHUB_REF}; after merge use PACKET_GITHUB_REF=main):
+  {raw_complete}
+  {raw_summons}
+  {raw_complaint}
+  {raw_dkt11}
+  {raw_ack}
+  {raw_cover}
 """
     path.write_text(text, encoding="utf-8")
 
