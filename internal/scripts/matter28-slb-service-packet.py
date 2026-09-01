@@ -10,14 +10,14 @@ form) with the complaint and Dkt. 11. Do not regenerate or restamp the issued
 summons.
 
 Outputs under internal/public/documents/matter-28/service-packet-slb/:
-  00_Cover_Sheet.pdf
-  01_Acknowledgment_of_Acceptance_of_Service.pdf
+  00_Cover_Sheet.pdf  (plaintiff file only — not in COMPLETE)
+  01_Acknowledgment_of_Acceptance_of_Service.pdf  (plaintiff file only — not in COMPLETE)
   02_AO_440_Summons_Issued.pdf  (copy of clerk-issued combined AO 440)
   03_Complaint_as_filed.pdf  (copy)
   04_Dkt_11_Order_Directing_Service.pdf  (copy)
   05_Proof_of_Service_Electronic_Delivery_to_SLB.pdf
   EMAIL_DRAFT_Service_on_SLB.txt
-  COMPLETE_Service_Packet_SLB_Acceptance.pdf  (assembled)
+  COMPLETE_Service_Packet_SLB_Acceptance.pdf  (summons + complaint + Dkt. 11 + POS)
 """
 
 from __future__ import annotations
@@ -122,16 +122,15 @@ def write_cover(path: Path) -> None:
     line("  Firm e-service: slb-eservice@sims-law.net")
     y -= 6
 
-    line("PACKET CONTENTS (this assembled PDF, in order)", 10, True)
+    line("PACKET CONTENTS (assembled PDF transmitted to counsel, in order)", 10, True)
     for item in [
-        "1. This cover sheet",
-        "2. Acknowledgment of Acceptance of Service (ask counsel to confirm in writing)",
-        "3. AO 440 Summons ISSUED Aug. 31, 2026 (combined — both defendants)",
-        "4. Complaint (as filed / courtesy copy previously emailed Jul. 22, 2026)",
-        "5. Dkt. 11 — Order directing Rule 4 service (filed Aug. 26, 2026)",
-        "6. Proof of Service — Electronic Delivery to SLB (file after confirmation)",
+        "1. AO 440 Summons ISSUED Aug. 31, 2026 (combined — both defendants)",
+        "2. Complaint (as filed / courtesy copy previously emailed Jul. 22, 2026)",
+        "3. Dkt. 11 — Order directing Rule 4 service (filed Aug. 26, 2026)",
+        "4. Proof of Service — Electronic Delivery to SLB (file after confirmation)",
     ]:
         line(f"  {item}")
+    line("  Cover and acknowledgment are plaintiff-file only; they are not attached.")
     y -= 6
 
     line("ISSUED SUMMONS (CONTROLLING)", 10, True)
@@ -144,7 +143,7 @@ def write_cover(path: Path) -> None:
 
     line("AFTER COUNSEL CONFIRMS ACCEPTANCE", 10, True)
     line("  1. Save the reply email (acceptance for both defendants, date certain).")
-    line("  2. Complete / date the Proof of Service (document 6) and file it on CM/ECF.")
+    line("  2. Complete / date the Proof of Service (last page) and file it on CM/ECF.")
     line("  3. Calendar the Rule 12 response clock (typically 21 days from acceptance).")
     line("  4. Rule 4(m) outer window from complaint filing (~Jul. 20–21, 2026) ≈ Oct. 19, 2026.")
     y -= 8
@@ -242,7 +241,7 @@ Mr. Van Dine:
 
 Per your statement at meet-and-confer that SLB will accept service for Shannon Smith, LCSW, and HOPE Psychotherapy, Inc., and pursuant to Fed. R. Civ. P. 4 and Dkt. 11 (Aug. 26, 2026), please find the service packet attached.
 
-Please reply confirming that SLB accepts service for both defendants and stating the effective date. You may sign the Acknowledgment or confirm by reply. I will file proof of service after your confirmation.
+Please reply confirming that SLB accepts service for both defendants and stating the effective date. I will file proof of service after your confirmation.
 
 Respectfully,
 
@@ -258,7 +257,6 @@ Attachments:
   {PACKET_FILES["summons"]}
   {PACKET_FILES["complaint"]}
   {PACKET_FILES["dkt11"]}
-  {PACKET_FILES["ack"]}
 
 ---
 Note to self (do not send): Do not put GitHub raws in the email to SLB.
@@ -337,7 +335,7 @@ def main() -> None:
     write_email_draft(email)
 
     pages = assemble(
-        [cover, ack, summons_out, complaint_out, dkt11_out, pos],
+        [summons_out, complaint_out, dkt11_out, pos],
         complete,
     )
     print(f"Wrote {complete} ({pages} pages)")

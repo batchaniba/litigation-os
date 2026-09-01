@@ -6,7 +6,7 @@ Mr. Van Dine:
 
 Per your statement at meet-and-confer that SLB will accept service for Shannon Smith, LCSW, and HOPE Psychotherapy, Inc., and pursuant to Fed. R. Civ. P. 4 and Dkt. 11 (Aug. 26, 2026), please find the service packet attached.
 
-Please reply confirming that SLB accepts service for both defendants and stating the effective date. You may sign the Acknowledgment or confirm by reply. I will file proof of service after your confirmation.
+Please reply confirming that SLB accepts service for both defendants and stating the effective date. I will file proof of service after your confirmation.
 
 Respectfully,
 
@@ -22,7 +22,6 @@ Attachments:
   02_AO_440_Summons_Issued.pdf
   03_Complaint_as_filed.pdf
   04_Dkt_11_Order_Directing_Service.pdf
-  01_Acknowledgment_of_Acceptance_of_Service.pdf
 
 ---
 Note to self (do not send): Do not put GitHub raws in the email to SLB.
