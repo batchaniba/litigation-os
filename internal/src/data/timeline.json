@@ -466,12 +466,12 @@
   },
   {
     "date": "Aug. 31, 2026",
-    "event": "FedEx responsive pleading deadline (computed) \u2014 Newanforbi v. Federal Express Corporation (Matter 25, E.D. Cal. No. 2:26-cv-02881-DAD-SCR); Fed. R. Civ. P. 81(c)(2)(C) \u2014 the later of 21 days after receipt of the initial pleading or 7 days after the notice of removal was filed (removal filed Aug. 24, 2026 \u2192 Aug. 31, 2026). Watch for answer or Rule 12 motion by Allison A. Kray.",
+    "event": "PASSED (date ran) \u2014 FedEx responsive pleading deadline (computed) \u2014 Newanforbi v. Federal Express Corporation (Matter 25, E.D. Cal. No. 2:26-cv-02881-DAD-SCR); Fed. R. Civ. P. 81(c)(2)(C) \u2014 the later of 21 days after receipt of the initial pleading or 7 days after the notice of removal was filed (removal filed Aug. 24, 2026 \u2192 Aug. 31, 2026). Watch for answer or Rule 12 motion by Allison A. Kray.",
     "matters": [
       25
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "opposing",
     "source": "/documents/matter-25/Dkt 01 - Petition and Notice of Removal (Filed Aug 24 2026).pdf"
   },

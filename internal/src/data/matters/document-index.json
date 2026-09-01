@@ -3210,6 +3210,11 @@
     "path": "/documents/matter-29/EMAIL_DRAFT_Opening_Demand_Amazon.com_Services_LLC (Aug 31 2026).txt"
   },
   {
+    "matter": 29,
+    "label": "Frederick leftover Civil L.R. 5-1(i)(3) attestation draft (dated June 30, 2025) — DO NOT SIGN. Amazon executed the Aug. 31 Civil L.R. 6-1(a) counterpart instead. Moved off the repo root for the stray-file CI gate.",
+    "path": "/documents/matter-29/04967304_#653288963v1_Newanforbi v Amazon et al. -- Stipulation to Extend Time for Amazon to Respond to Complaint.docx"
+  },
+  {
     "matter": 30,
     "label": "Newanforbi v. Derrick et al. FAC (Case 2:26-cv-00004-DJC-JDP, E.D. Cal., filed Jan. 12, 2026) — triggering protected activity",
     "path": "/documents/matter-03/8_fed_derrickFAC.pdf"
