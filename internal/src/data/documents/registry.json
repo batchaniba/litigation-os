@@ -903,22 +903,27 @@
     },
     {
       "path": "/documents/matter-19/HC-004 Notice and Request for Ruling (Habeas Corpus, Executed Aug 17 2026).pdf",
-      "label": "HC-004 Notice and Request for Ruling (executed and e-signed Aug. 17, 2026; address 1455 Cat Tail Drive, Stockton) — ready to file; requests ruling under CRC 4.551(a)(3)(B)",
+      "label": "HC-004 Notice and Request for Ruling (executed and e-signed Aug. 17, 2026; address 1455 Cat Tail Drive, Stockton) — SUPERSEDED by the September 1, 2026 HC-004. Do not file this version.",
       "ownerMatter": 19
     },
     {
       "path": "/documents/matter-19/HC-004 Notice and Request for Ruling (Habeas Corpus, Executed Aug 7 2026).pdf",
-      "label": "HC-004 Notice and Request for Ruling (executed Aug. 7, 2026) — SUPERSEDED by the August 17, 2026 HC-004. Do not file this version.",
+      "label": "HC-004 Notice and Request for Ruling (executed Aug. 7, 2026) — SUPERSEDED by the September 1, 2026 HC-004. Do not file this version.",
+      "ownerMatter": 19
+    },
+    {
+      "path": "/documents/matter-19/HC-004 Notice and Request for Ruling (Habeas Corpus, Executed Sep 1 2026).pdf",
+      "label": "HC-004 Notice and Request for Ruling (executed and e-signed Sep. 1, 2026; address 1455 Cat Tail Drive, Stockton) — ready to file; requests ruling under CRC 4.551(a)(3)(B). SUPERSEDES the August 7 and August 17 HC-004s. Not yet filed.",
       "ownerMatter": 19
     },
     {
       "path": "/documents/matter-19/HC-004 Notice and Request for Ruling Packet (with Exhibit A — Unstamped Petition) (Ready to File Aug 17 2026).pdf",
-      "label": "HC-004 Packet (HC-004 + Exhibit A cover + unstamped Petition, 69 pp.) — ready to file Aug. 17, 2026",
+      "label": "HC-004 Packet (HC-004 + Exhibit A cover + unstamped Petition, 69 pp.) — ready to file Aug. 17, 2026 — SUPERSEDED by the September 1, 2026 standalone HC-004. Do not file this version.",
       "ownerMatter": 19
     },
     {
       "path": "/documents/matter-19/HC-004 Notice and Request for Ruling Packet (with Exhibit A — Unstamped Petition) (Ready to File Aug 7 2026).pdf",
-      "label": "HC-004 Packet (HC-004 + Exhibit A cover + unstamped Petition, 69 pp.) — ready to file Aug. 7, 2026 — SUPERSEDED by the August 17, 2026 packet. Do not file this version.",
+      "label": "HC-004 Packet (HC-004 + Exhibit A cover + unstamped Petition, 69 pp.) — ready to file Aug. 7, 2026 — SUPERSEDED by the September 1, 2026 standalone HC-004. Do not file this version.",
       "ownerMatter": 19
     },
     {

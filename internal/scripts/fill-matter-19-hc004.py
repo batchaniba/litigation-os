@@ -1,18 +1,19 @@
 #!/usr/bin/env python3
-"""Fill Matter 19 HC-004 Notice and Request for Ruling; assemble filing packet.
+"""Fill Matter 19 HC-004 Notice and Request for Ruling (standalone).
 
-Packet order:
-  1. HC-004 (filled, signed)
-  2. Exhibit A cover (Matter-12 default-packet style)
-  3. Unstamped Petition for Writ of Habeas Corpus (67 pp)
+Default: one-page executed form dated September 1, 2026. Does not rebuild
+the 69-page Exhibit A + petition packet unless ``--packet`` is passed.
 
-Execution / notice date: August 17, 2026.
+    python3 internal/scripts/fill-matter-19-hc004.py
+    python3 internal/scripts/fill-matter-19-hc004.py --packet
+
 Petition filing date: April 3, 2026 (Case No. C2604791).
 Address of record on this form: 1455 Cat Tail Drive, Stockton, CA 95204.
 """
 
 from __future__ import annotations
 
+import argparse
 import sys
 from pathlib import Path
 
@@ -23,6 +24,7 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPT_DIR))
 sys.path.insert(0, str(SCRIPT_DIR / "lib"))
 from exhibit_cover import write_exhibit_cover  # noqa: E402
+from short_link import publish_short_link  # noqa: E402
 from signature_stamp import SIGNATURE_ASPECT, SIGNATURE_PATH  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -30,17 +32,13 @@ TEMPLATE = ROOT / "internal/public/documents/_form-library/hc004-blank-template.
 OUT_DIR = ROOT / "internal/public/documents/matter-19"
 PETITION = OUT_DIR / "Petition for Writ of Habeas Corpus (filed Apr. 3, 2026).pdf"
 
-HC004_OUT = OUT_DIR / (
-    "HC-004 Notice and Request for Ruling "
-    "(Habeas Corpus, Executed Aug 17 2026).pdf"
-)
+DEFAULT_SIG_DATE = "September 1, 2026"
+DEFAULT_FILE_DATE = "Sep 1 2026"
+SHORT_LINK_SLUG = "hc-004"
+
 COVER_OUT = OUT_DIR / (
     "Exhibit A Cover — Petition for Writ of Habeas Corpus "
     "(HC-004 Attachment).pdf"
-)
-PACKET_OUT = OUT_DIR / (
-    "HC-004 Notice and Request for Ruling Packet "
-    "(with Exhibit A — Unstamped Petition) (Ready to File Aug 17 2026).pdf"
 )
 
 # Party / caption
@@ -58,7 +56,6 @@ CASE_NUMBER = "C2604791"
 DOB = "09/16/1996"
 CDC_NO = "BF3571"
 PETITION_FILE_DATE = "April 3, 2026"
-SIG_DATE = "August 17, 2026"
 
 # pypdf field names (XFA-style hierarchy on Judicial Council HC-004)
 F = {
@@ -130,23 +127,36 @@ _LEFT_PAD = 2.0
 _TOP_BIAS = 0.35
 
 
-def fields() -> dict[str, str]:
+def hc004_out(file_date: str) -> Path:
+    return OUT_DIR / (
+        f"HC-004 Notice and Request for Ruling (Habeas Corpus, Executed {file_date}).pdf"
+    )
+
+
+def packet_out(file_date: str) -> Path:
+    return OUT_DIR / (
+        "HC-004 Notice and Request for Ruling Packet "
+        f"(with Exhibit A — Unstamped Petition) (Ready to File {file_date}).pdf"
+    )
+
+
+def fields(sig_date: str) -> dict[str, str]:
     return {
         F["case"]: CASE_NUMBER,
         F["cdc"]: CDC_NO,
         F["pet_name"]: NAME,
         F["pet_county"]: COUNTY_SHORT,
         F["pet_file"]: PETITION_FILE_DATE,
-        F["sig_date"]: SIG_DATE,
+        F["sig_date"]: sig_date,
         F["sig_name"]: NAME,
     }
 
 
-def fill_hc004(out: Path) -> None:
+def fill_hc004(out: Path, sig_date: str) -> None:
     reader = PdfReader(str(TEMPLATE))
     writer = PdfWriter()
     writer.append(reader)
-    writer.update_page_form_field_values(None, fields())
+    writer.update_page_form_field_values(None, fields(sig_date))
     try:
         writer.set_need_appearances_writer(True)
     except Exception:
@@ -230,19 +240,39 @@ def assemble_packet(hc004: Path, cover: Path, petition: Path, out: Path) -> int:
     return len(writer.pages)
 
 
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--date", default=DEFAULT_SIG_DATE)
+    parser.add_argument("--file-date", default=DEFAULT_FILE_DATE)
+    parser.add_argument(
+        "--packet",
+        action="store_true",
+        help="Also assemble HC-004 + Exhibit A cover + unstamped petition",
+    )
+    return parser.parse_args()
+
+
 def main() -> None:
-    for required in (TEMPLATE, PETITION, Path(SIGNATURE_PATH)):
+    args = parse_args()
+    for required in (TEMPLATE, Path(SIGNATURE_PATH)):
         if not required.exists():
             raise SystemExit(f"Missing required file: {required}")
 
-    fill_hc004(HC004_OUT)
-    print(f"HC-004 → {HC004_OUT.name}")
+    out = hc004_out(args.file_date)
+    fill_hc004(out, args.date)
+    print(f"HC-004 → {out.name}")
 
-    build_exhibit_cover(COVER_OUT)
-    print(f"Exhibit cover → {COVER_OUT.name}")
+    short = publish_short_link(out, SHORT_LINK_SLUG)
+    print(f"Short link → {short.relative_to(ROOT)}")
 
-    total = assemble_packet(HC004_OUT, COVER_OUT, PETITION, PACKET_OUT)
-    print(f"Packet → {PACKET_OUT.name} ({total} pages)")
+    if args.packet:
+        if not PETITION.exists():
+            raise SystemExit(f"Missing required file: {PETITION}")
+        build_exhibit_cover(COVER_OUT)
+        print(f"Exhibit cover → {COVER_OUT.name}")
+        packet = packet_out(args.file_date)
+        total = assemble_packet(out, COVER_OUT, PETITION, packet)
+        print(f"Packet → {packet.name} ({total} pages)")
 
 
 if __name__ == "__main__":

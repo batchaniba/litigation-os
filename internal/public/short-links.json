@@ -2,6 +2,12 @@
   "doc": "Phone-tappable PDF links. Vercel rejects some court-style paths as redirect destinations (parentheses, especially '(b)'). Serve an identical copy at /{slug}.pdf and set Content-Disposition to the portfolio filename so Save As keeps the long name. After editing this file run: node internal/scripts/sync-short-links.mjs",
   "links": [
     {
+      "slug": "hc-004",
+      "source": "/documents/matter-19/HC-004 Notice and Request for Ruling (Habeas Corpus, Executed Sep 1 2026).pdf",
+      "downloadName": "HC-004 Notice and Request for Ruling (Habeas Corpus, Executed Sep 1 2026).pdf",
+      "title": "HC-004 Notice and Request for Ruling — In re Newanforbi (Santa Clara C2604791)"
+    },
+    {
       "slug": "fedex-consent",
       "source": "/documents/matter-25/Consent to Magistrate Judge Jurisdiction - Federal Express (E.D. Cal. 2-26-cv-02881) (Aug 28 2026).pdf",
       "downloadName": "Consent to Magistrate Judge Jurisdiction - Federal Express (E.D. Cal. 2-26-cv-02881) (Aug 28 2026).pdf",
