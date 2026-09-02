@@ -172,7 +172,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | 26 | Newanforbi v. United Parcel Service, Inc. | 2:26-cv-02847-DAD-CKD | USDC E.D. Cal. (Sacramento Div.) | Federal | Opp on file (Dkt. 10) — hearing Oct. 5 |
 | 27 | Newanforbi v. Randstad, et al. | 26CV199902 | Alameda Sup. Ct. | State | $175k Randstad (post-fuse); RK Sep. 14 |
 | 28 | Newanforbi v. Shannon Smith, LCSW, CEO, et al. | 3:26-cv-07504-LJC | USDC N.D. Cal. | Federal | SLB accepted Aug. 31 — file POS |
-| 29 | Newanforbi v. Amazon.com Services, LLC | 3:26-cv-09249-ASK | USDC N.D. Cal. | Federal | Removed — 3:26-cv-09249-ASK; resp. Sep. 8 |
+| 29 | Newanforbi v. Amazon.com Services, LLC | 3:26-cv-09249-ASK | USDC N.D. Cal. | Federal | Amazon stip to Sep. 22; Accurate still Sep. 8 |
 | 30 | Newanforbi v. Moua, et al. | TBD | USDC N.D. Cal. | Federal | Pre-filing — GCA claim pending; Moua-only complaint ready |
 | 31 | Newanforbi v. First Advantage LLC | TBD | San Joaquin Sup. Ct. (anticipated) | State | Pre-filing |
 | 32 | Nforbi v. Meza-Gonzalez, et al | 3:26-cv-08271-PHK | USDC N.D. Cal. (related to Serrato 4:26-cv-05953-ASK per Aug. 24, 2026 order; also related Candelaria 3:26-cv-08272-LJC) | Federal | Related to Serrato — reassigned to Krishnan |
@@ -240,6 +240,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | Sep. 21, 2026 | 28 | Responsive pleading deadline (computed) — Shannon Smith, LCSW, and HOPE Psychotherapy, Inc., Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504-LJC) |
 | Sep. 21, 2026 | 26 | 28 U.S.C. §1447(c) remand window closes (computed) — Newanforbi v. United Parcel Service, Inc., USDC E.D. Cal. No. 1:26-at-03195. |
 | Sep. 21, 2026 | 26 | Consent to / Decline of Magistrate Judge jurisdiction — outer target, Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). |
+| Sep. 22, 2026 | 29 | Amazon.com Services, LLC responsive pleading deadline (extended) — Newanforbi v. Amazon.com Services, LLC et al. (Matter 29, N.D. Cal. No. 3:26-cv-09249-ASK). |
 | Sep. 30, 2026 | 29 | 28 U.S.C. §1447(c) remand window closes (computed) — Newanforbi v. Amazon.com Services, LLC et al., USDC N.D. Cal. No. 3:26-cv-09249-ASK. |
 | Sep. 30, 2026 | 24 | Hearing on Defendant Serrato's Motion to Dismiss FAC (Dkt. 18) — 1:30 p.m., Mag. Ajay S. Krishnan, Oakland Courtroom 4, 3rd Floor — Newanforbi v. Serrato (4:26-cv-05953-ASK). |
 | Oct. 1, 2026 | 19 | Habeas ruling calendar (computed) — Newanforbi v. Macomber (C2604791). |
