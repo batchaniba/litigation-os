@@ -164,11 +164,11 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | # | Caption | Case No. | Court | Type | Status |
 |---|---|---|---|---|---|
 | 12 | Brendan Ngwa Nforbi v. Diamond Truck Sales, Inc. | STK-CV-UF-2026-0001094 | San Joaquin Sup. Ct. | State | Defense appeared, disputes service — CMC Dec. 11, 2026 |
-| 19 | Newanforbi v. Macomber | C2604791 | Santa Clara Sup. Ct. | State | HC-004 refreshed Aug. 17 — ruling overdue since Aug. 1, 2026 |
+| 19 | Newanforbi v. Macomber | C2604791 | Santa Clara Sup. Ct. | State | HC-004 filed Sep. 1 — ruling due Oct. 1 |
 | 20 | Newanforbi v. California Highway Patrol, et al. | 26CV191136 | Alameda Sup. Ct. | State | Leave to amend Count 4 — due Sep. 20 |
 | 22 | Newanforbi v. Pilot Travel Centers LLC | STK-CV-UWT-2026-0007649 | San Joaquin Sup. Ct. | State | Settled Jul. 14, 2026 ($35,000) |
 | 24 | Newanforbi v. Serrato | 4:26-cv-05953-ASK | USDC N.D. Cal. | Federal | CMC Sep. 15 — MTD hearing reset to Sep. 30 |
-| 25 | Newanforbi v. Federal Express Corporation | 2:26-cv-02881-DAD-SCR | USDC E.D. Cal. (Sacramento Div.) | Federal | Removed — 2:26-cv-02881-DAD-SCR; resp. ~Aug 31 |
+| 25 | Newanforbi v. Federal Express Corporation | 2:26-cv-02881-DAD-SCR | USDC E.D. Cal. (Sacramento Div.) | Federal | Removed — MJ consent mailed Sep. 1, unfiled |
 | 26 | Newanforbi v. United Parcel Service, Inc. | 2:26-cv-02847-DAD-CKD | USDC E.D. Cal. (Sacramento Div.) | Federal | Opp on file (Dkt. 10) — hearing Oct. 5 |
 | 27 | Newanforbi v. Randstad, et al. | 26CV199902 | Alameda Sup. Ct. | State | $175k Randstad (post-fuse); RK Sep. 14 |
 | 28 | Newanforbi v. Shannon Smith, LCSW, CEO, et al. | 3:26-cv-07504-LJC | USDC N.D. Cal. | Federal | Summons issued Aug. 31 — serve |
@@ -222,7 +222,6 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 <!-- PORTFOLIO:UPCOMING_DEADLINES:START -->
 | Date | Matter | Event |
 |---|---|---|
-| Aug. 31, 2026 | 25 | FedEx responsive pleading deadline (computed) — Newanforbi v. Federal Express Corporation (Matter 25, E.D. Cal. No. 2:26-cv-02881-DAD-SCR); Fed. R. Civ. P. 81(c)(2)(C) |
 | Sep. 1, 2026 | 30 | Anticipated deemed-rejection date (computed) — Government Claims Act claim, Newanforbi v. Moua, et al. (Matter 30) |
 | Sep. 4, 2026 | 27 | WATCH — Williams said he will attempt to respond by this date. The Aug. 19 $55,000/$85,000 demands expire (and are not being held) at 2:00 p.m. PT Aug. 28. |
 | Sep. 4, 2026 | 32 | Responsive pleading deadline (computed) — Santiago Meza-Gonzalez and Jose Melano, Nforbi v. Meza-Gonzalez, et al. (3:26-cv-08271-PHK, N.D. Cal.) |
@@ -242,6 +241,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | Sep. 21, 2026 | 26 | Consent to / Decline of Magistrate Judge jurisdiction — outer target, Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). |
 | Sep. 30, 2026 | 29 | 28 U.S.C. §1447(c) remand window closes (computed) — Newanforbi v. Amazon.com Services, LLC et al., USDC N.D. Cal. No. 3:26-cv-09249-ASK. |
 | Sep. 30, 2026 | 24 | Hearing on Defendant Serrato's Motion to Dismiss FAC (Dkt. 18) — 1:30 p.m., Mag. Ajay S. Krishnan, Oakland Courtroom 4, 3rd Floor — Newanforbi v. Serrato (4:26-cv-05953-ASK). |
+| Oct. 1, 2026 | 19 | Habeas ruling calendar (computed) — Newanforbi v. Macomber (C2604791). |
 | Oct. 5, 2026 | 26 | HEARING — Defendant UPS's Rule 12(b)(6) Motion to Dismiss (ECF No. 7), Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD), 1:30 p.m., Courtroom 4. |
 | Oct. 13, 2026 | 20 | Case Management Statement due (computed) — Newanforbi v. CHP et al. (26CV191136), 15 calendar days before the Oct. 28, 2026 CMC per CRC 3.725. |
 | Oct. 15, 2026 | 28 | Case Management Statement due — Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504), USDC N.D. Cal. |

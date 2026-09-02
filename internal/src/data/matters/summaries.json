@@ -485,7 +485,7 @@
     "case_no": "C2604791",
     "court": "Santa Clara Sup. Ct.",
     "claims": "Habeas Corpus — Immediate Discharge from Parole (Pen. Code §1473; PC §§3000, 3001, 3008(d)(2); 15 CCR §3574)",
-    "status_label": "HC-004 refreshed Aug. 17 — ruling overdue since Aug. 1, 2026",
+    "status_label": "HC-004 filed Sep. 1 — ruling due Oct. 1",
     "lifecycle": "active",
     "proceeding": "habeas",
     "phase": "under_submission",
@@ -503,7 +503,7 @@
     ],
     "archived": false,
     "evidenceCount": 11,
-    "documentCount": 9
+    "documentCount": 11
   },
   {
     "number": 20,
@@ -711,9 +711,9 @@
       "Unlawful Business Practices (Bus. & Prof. Code § 17200 et seq.)"
     ],
     "archived": false,
-    "status_label": "Removed — 2:26-cv-02881-DAD-SCR; resp. ~Aug 31",
+    "status_label": "Removed — MJ consent mailed Sep. 1, unfiled",
     "evidenceCount": 9,
-    "documentCount": 36
+    "documentCount": 37
   },
   {
     "number": 26,
@@ -741,7 +741,7 @@
     "archived": false,
     "status_label": "Opp on file (Dkt. 10) — hearing Oct. 5",
     "evidenceCount": 7,
-    "documentCount": 53
+    "documentCount": 54
   },
   {
     "number": 27,
@@ -876,7 +876,7 @@
     ],
     "archived": false,
     "evidenceCount": 30,
-    "documentCount": 83
+    "documentCount": 87
   },
   {
     "number": 30,
@@ -977,7 +977,7 @@
     ],
     "archived": false,
     "evidenceCount": 14,
-    "documentCount": 136
+    "documentCount": 137
   },
   {
     "number": 33,

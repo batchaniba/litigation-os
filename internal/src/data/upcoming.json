@@ -1,5 +1,16 @@
 [
   {
+    "date": "Oct. 1, 2026",
+    "event": "Habeas ruling calendar (computed) — Newanforbi v. Macomber (C2604791). CRC 4.551(a)(6)(B) runs 30 days from the September 1, 2026 in-person filing of the HC-004, if the presiding judge determines the notice is complete and the court has failed to rule. Not a hearing. Not automatic if the PJ finds the notice incomplete. Thursday; no weekend roll under CRC 1.10.",
+    "matters": [
+      19
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "agency",
+    "source": "/documents/matter-19/HC-004 Notice and Request for Ruling (Habeas Corpus, Executed Sep 1 2026).pdf"
+  },
+  {
     "date": "Oct. 28, 2026",
     "event": "Case Management Conference (continued from Sep. 2, 2026) — Newanforbi v. CHP et al. (26CV191136), 4:00 p.m., Dept. 25, Rene C. Davidson Courthouse, Hon. Jenna M. Whitman. Continued by the August 29, 2026 order (notice of entry August 31).",
     "matters": [
@@ -94,17 +105,6 @@
     "type": "deadline",
     "upcoming": true,
     "actor": "you"
-  },
-  {
-    "date": "Aug. 31, 2026",
-    "event": "FedEx responsive pleading deadline (computed) — Newanforbi v. Federal Express Corporation (Matter 25, E.D. Cal. No. 2:26-cv-02881-DAD-SCR); Fed. R. Civ. P. 81(c)(2)(C) — the later of 21 days after receipt of the initial pleading or 7 days after the notice of removal was filed (removal filed Aug. 24, 2026 → Aug. 31, 2026). Watch for answer or Rule 12 motion by Allison A. Kray.",
-    "matters": [
-      25
-    ],
-    "type": "deadline",
-    "upcoming": true,
-    "actor": "opposing",
-    "source": "/documents/matter-25/Dkt 01 - Petition and Notice of Removal (Filed Aug 24 2026).pdf"
   },
   {
     "date": "Oct. 25, 2026",

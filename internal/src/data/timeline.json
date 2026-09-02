@@ -1,5 +1,43 @@
 [
   {
+    "date": "Sep. 1, 2026",
+    "event": "FILED in person \u2014 HC-004 Notice and Request for Ruling in Newanforbi v. Macomber (Santa Clara Sup. Ct. C2604791, Hon. Robert Hawk). Petitioner filed the Sep. 1, 2026 executed HC-004 at the courthouse (not mailed). CRC 4.551(a)(6)(B): if the presiding judge finds the notice complete and that the court has failed to rule, the PJ must assign the petition and calendar a decision without appearances within 30 days of this filing. Thirty days from September 1 is Thursday, October 1, 2026. The August 1, 2026 ruling deadline had already lapsed. Confirm the clerk file-stamp matches September 1.",
+    "matters": [
+      19
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "you",
+    "source": "/documents/matter-19/HC-004 Notice and Request for Ruling (Habeas Corpus, Executed Sep 1 2026).pdf"
+  },
+  {
+    "date": "Oct. 1, 2026",
+    "event": "Habeas ruling calendar (computed) \u2014 Newanforbi v. Macomber (C2604791). CRC 4.551(a)(6)(B) runs 30 days from the September 1, 2026 in-person filing of the HC-004, if the presiding judge determines the notice is complete and the court has failed to rule. Not a hearing. Not automatic if the PJ finds the notice incomplete. Thursday; no weekend roll under CRC 1.10.",
+    "matters": [
+      19
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "agency",
+    "source": "/documents/matter-19/HC-004 Notice and Request for Ruling (Habeas Corpus, Executed Sep 1 2026).pdf"
+  },
+  {
+    "date": "Sep. 1, 2026",
+    "event": "MAILED \u2014 eight First-Class large envelopes from San Jose MO Finance (1750 Lundy Ave), 6:46 p.m., $17.00, USPS eReceipt 840-59500196-3-10362733-2 / 047791. HC-004 was filed in person the same day and is not in this batch. ZIP/weight map (inferred): San Jose 95113 0.70 oz \u00d7 2 (N.D. Cal. clerk \u2014 Amazon MJ consent and a second San Jose clerk copy); Sacramento 95814 0.80 oz (E.D. Cal. clerk); Irvine 92614 0.80 oz (FedEx / Kray); San Jose 95113 3.70 oz, Los Angeles 90013 3.70 oz, Sacramento 95823 3.70 oz, Modesto 95356 3.70 oz (Meza Li accept-service packet: clerk, DAG Li, Melano at CHP South Sacramento, Meza courtesy at CHP Modesto). Est. delivery Sep. 4\u20135. Not yet clerk-stamped on the federal dockets.",
+    "matters": [
+      19,
+      25,
+      26,
+      29,
+      32
+    ],
+    "type": "service",
+    "upcoming": false,
+    "actor": "you",
+    "source": "/documents/matter-19/USPS eReceipt - First-Class Mailings San Jose (Sep 1 2026).pdf"
+  },
+  {
     "date": "Aug. 31, 2026",
     "event": "ISSUED \u2014 AO 440 summons in Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504-LJC). Combined form: HOPE Psychotherapy, Inc., d/b/a HOPE Program, c/o Shannon Smith, LCSW, Chief Executive Officer, and Shannon Smith individually, both at 1245 B Street, Hayward, CA 94541. Dated AUG 31 2026; Clerk Mark B. Busby; signed Charles Ho, Deputy Clerk. This is the issued process Dkt. 11 (Aug. 26) directed. Not yet served. Rule 4(m) remains ~Oct. 19, 2026.",
     "matters": [
@@ -459,7 +497,7 @@
       25
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "opposing",
     "source": "/documents/matter-25/Dkt 01 - Petition and Notice of Removal (Filed Aug 24 2026).pdf"
   },

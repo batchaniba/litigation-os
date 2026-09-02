@@ -76,8 +76,23 @@ describe("statusLabel derivation", () => {
   });
 
   it("pairs served milestones with later CMC / response deadlines", () => {
-    expect(deriveStatusLabel(cases.find((item) => item.number === 25)!, { events: eventsFor(25) })).toBe(
-      "Served Jul. 24, 2026 — Response due Aug. 31, 2026",
+    // Synthetic — Matter 25's live Aug. 31 FRCP 81(c) date is past and no
+    // longer upcoming. Pin the pairing rule so the test does not rot.
+    const servedMatter25 = {
+      number: 25,
+      lifecycle: "active" as const,
+      phase: "responsive_deadline" as const,
+      serviceTracking: [{ name: "FedEx", served: true, dateServed: "July 24, 2026" }],
+    };
+    const responseDue25 = {
+      date: "Nov. 30, 2099",
+      event: "Response due — Matter 25",
+      type: "deadline",
+      matters: [25],
+      upcoming: true,
+    } as TimelineEvent;
+    expect(deriveStatusLabel(servedMatter25, { events: [responseDue25] })).toBe(
+      "Served Jul. 24, 2026 — Response due Nov. 30, 2099",
     );
     // Synthetic — Matter 27's live calendar now includes the Dec. 17 CMC, which
     // outranks the August response date. Pin the pairing rule so the test does
@@ -89,14 +104,14 @@ describe("statusLabel derivation", () => {
       serviceTracking: [{ name: "Randstad", served: true, dateServed: "July 30, 2026" }],
     };
     const responseDue = {
-      date: "Aug. 31, 2026",
+      date: "Dec. 15, 2099",
       event: "Response due — Matter 27",
       type: "deadline",
       matters: [27],
       upcoming: true,
     } as TimelineEvent;
     expect(deriveStatusLabel(servedMatter, { events: [responseDue] })).toBe(
-      "Served Jul. 30, 2026 — Response due Aug. 31, 2026",
+      "Served Jul. 30, 2026 — Response due Dec. 15, 2099",
     );
   });
 
