@@ -695,7 +695,7 @@
     "claims": "PC §290.46(j)(2)(E) Violation, Failure to Hire (Tameny), ICRAA, Invasion of Privacy, Negligence Per Se, UCL §17200",
     "lifecycle": "active",
     "proceeding": "federal_civil",
-    "phase": "responsive_deadline",
+    "phase": "pleadings",
     "filed": "July 15, 2026 (state); removed Aug. 24, 2026",
     "judge": "Hon. Dale A. Drozd, D.J.; Hon. Sean C. Riordan, M.J.",
     "cluster": 3,
@@ -711,9 +711,9 @@
       "Unlawful Business Practices (Bus. & Prof. Code § 17200 et seq.)"
     ],
     "archived": false,
-    "status_label": "Removed — MJ consent mailed Sep. 1, unfiled",
+    "status_label": "Answered Aug. 31 — Dkt. 4; no MTD",
     "evidenceCount": 9,
-    "documentCount": 37
+    "documentCount": 38
   },
   {
     "number": 26,

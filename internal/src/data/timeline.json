@@ -1,5 +1,28 @@
 [
   {
+    "date": "Aug. 31, 2026",
+    "event": "FILED — Dkt. 4 Defendant Federal Express Corporation's Answer to Plaintiff's Complaint in Newanforbi v. Federal Express Corporation (E.D. Cal. No. 2:26-cv-02881-DAD-SCR). 21 pp. PACER-stamped Case 2:26-cv-02881-DAD-SCR Document 4 Filed 08/31/26; dated Aug. 31, 2026; /s/ Allison A. Kray; internal Bates (330448). Answered under FRCP 8(b), 8(c), and 81(c)(2) on the Rule 81(c) date — no MTD (contrast Matter 26 UPS). Load-bearing admissions: ¶16 January 2025 package-handler application and initiated background check (in tension with the July 17, 2024 Paradox confirmation, which is not overwritten); ¶17 engaged First Advantage; ¶18 pre-adverse on or about March 10, 2025; ¶20 report provided to FedEx on or before March 10, 2025; ¶25 adverse action on or about March 19, 2025 and conditional offer withdrawn; ¶26 adverse-action letter referenced NSOPW and the California sex-offender website and identified a PC §220(a)(1) conviction; ¶34 First Advantage report identified Plaintiff as a registrant on California's sex offender registry in connection with that conviction. Denies use was unlawful. Independent-basis theory: Jan. 8, 2025 forms, Plaintiff answered 'NO' to sex-based offenses (7th AD / unclean hands). 8th AD = (j)(1) protection of persons at risk. Forty-three affirmative defenses. COS: CM/ECF and U.S. mail to 1455 Cat Tail Drive; still uses typo bnn.cdla@gmail.com (correct bnn.cdl@gmail.com); Michele Wilson declaration. Satisfies the Aug. 31 FRCP 81(c) clock.",
+    "matters": [
+      25
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "actor": "opposing",
+    "filed": true,
+    "source": "/documents/matter-25/Dkt 04 - Answer to Complaint (Filed Aug 31 2026).pdf"
+  },
+  {
+    "date": "Aug. 31, 2026",
+    "event": "SATISFIED — FedEx responsive pleading deadline (computed) — Newanforbi v. Federal Express Corporation (Matter 25, E.D. Cal. No. 2:26-cv-02881-DAD-SCR); Fed. R. Civ. P. 81(c)(2)(C). FedEx answered on the 81(c) date as Dkt. 4 (filed Aug. 31, 2026). No Rule 12 motion.",
+    "matters": [
+      25
+    ],
+    "type": "deadline",
+    "upcoming": false,
+    "actor": "opposing",
+    "source": "/documents/matter-25/Dkt 01 - Petition and Notice of Removal (Filed Aug 24 2026).pdf"
+  },
+  {
     "date": "Aug. 30, 2026",
     "event": "LODGED — Melano AO 440 Proof of Service (C&P Process Server / Clifford Black return, service on Officer Reed at CHP South Sacramento Aug. 14, 2026) extracted from a mixed 3-page process-server packet and saved under Matter 32 (ndcal/). The Candelaria and Gordon pages in the same packet were discarded (already on file). The Melano page's face caption incorrectly reads 3:26-cv-08272-LJC; the filed Dkt. 5-1 return already on the 3:26-cv-08271-PHK docket carries the correct caption and Aug. 17 clerk stamp.",
     "matters": [
