@@ -1,6 +1,41 @@
 [
   {
     "date": "Sep. 1, 2026",
+    "event": "EXECUTED (unsent) — Plaintiff-signed Civil L.R. 6-1 counterpart extending Accurate Background LLC only through September 22, 2026, and a letter telling Seyfarth (Stanzick / Drury) they do not have permission to affix his signature, including a conformed /s/, on this or any other paper. PDF and Word of both. Cover e-mail drafted. Not yet transmitted. Seyfarth’s draft (328376958.1) already carried “/s/ Brendan Ngehis Newanforbi.” Case No. 3:26-cv-09249-ASK. Sep. 8 remains the live Accurate clock until the counterpart is on PACER. Do not put GitHub raws in the e-mail.",
+    "matters": [
+      29
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-29/Stipulation to Extend Time for Accurate Background to Respond (Plaintiff Counterpart, Sep 1 2026).pdf"
+  },
+  {
+    "date": "Sep. 1, 2026",
+    "event": "RECEIVED — Seyfarth draft stipulation (328376958.1) from John Drury (cc Jasmine J. Stanzick) asking Plaintiff to confirm consent to file an Accurate-only extension through September 22, 2026. The Word draft already carries a conformed “/s/ Brendan Ngehis Newanforbi” (middle name misspelled) and a Civil L.R. 5-1 attestation. Not filed. Gmail thread PDF on file.",
+    "matters": [
+      29
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": false,
+    "actor": "opposing",
+    "source": "/documents/matter-29/Seyfarth Draft - Stipulation to Extend Accurate Time to Respond (328376958.1) (Sep 1 2026).docx"
+  },
+  {
+    "date": "Aug. 31, 2026",
+    "event": "AGREED BY E-MAIL — Plaintiff confirmed to John Drury / Jasmine J. Stanzick (Seyfarth) that Accurate Background LLC’s time to respond is extended through and including September 22, 2026. Accurate accepted service at those e-mails. Party agreement only; no stipulation on PACER yet. Sep. 8 FRCP 81(c) remains the live clock until a signed counterpart is filed.",
+    "matters": [
+      29
+    ],
+    "type": "deadline",
+    "upcoming": false,
+    "actor": "you",
+    "source": "/documents/matter-29/Gmail - Accurate Extension Offer and Stipulation Thread (Aug 31-Sep 1 2026).pdf"
+  },
+  {
+    "date": "Sep. 1, 2026",
     "event": "EXECUTED (unfiled) — Plaintiff's Consent or Declination to Magistrate Judge Jurisdiction in Newanforbi v. Amazon.com Services, LLC et al. (N.D. Cal. 3:26-cv-09249-ASK, Mag. Ajay S. Krishnan). Court's N.D. Cal. form: CONSENT checked, DECLINE blank, dated September 1, 2026, PRO SE, canonical signature stamped. Proof of Service by first-class mail from San Jose on Andrew P. Frederick (Morgan Lewis / Amazon) and Jasmine J. Stanzick (Seyfarth / Accurate). File with the clerk. Consent is effective only if the other parties also consent. Do not treat as filed until the clerk enters it.",
     "matters": [
       29

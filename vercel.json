@@ -39,6 +39,26 @@
       "source": "/amazon-consent/",
       "destination": "/amazon-consent.pdf",
       "permanent": false
+    },
+    {
+      "source": "/accurate-stip",
+      "destination": "/accurate-stip.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/accurate-stip/",
+      "destination": "/accurate-stip.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/accurate-sig-notice",
+      "destination": "/accurate-sig-notice.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/accurate-sig-notice/",
+      "destination": "/accurate-sig-notice.pdf",
+      "permanent": false
     }
   ],
   "headers": [
@@ -75,6 +95,24 @@
         {
           "key": "Content-Disposition",
           "value": "attachment; filename=\"Consent to Magistrate Judge Jurisdiction - Amazon (N.D. Cal. 3-26-cv-09249-ASK) (Sep 1 2026).pdf\"; filename*=UTF-8''Consent%20to%20Magistrate%20Judge%20Jurisdiction%20-%20Amazon%20%28N.D.%20Cal.%203-26-cv-09249-ASK%29%20%28Sep%201%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/accurate-stip.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Stipulation to Extend Time for Accurate Background to Respond (Plaintiff Counterpart, Sep 1 2026).pdf\"; filename*=UTF-8''Stipulation%20to%20Extend%20Time%20for%20Accurate%20Background%20to%20Respond%20%28Plaintiff%20Counterpart%2C%20Sep%201%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/accurate-sig-notice.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Letter - Seyfarth May Not Affix Plaintiff's Signature (Accurate Stipulation) (Sep 1 2026).pdf\"; filename*=UTF-8''Letter%20-%20Seyfarth%20May%20Not%20Affix%20Plaintiff's%20Signature%20%28Accurate%20Stipulation%29%20%28Sep%201%202026%29.pdf"
         }
       ]
     }

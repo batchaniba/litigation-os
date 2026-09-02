@@ -4,8 +4,8 @@
   "case_no": "3:26-cv-09249-ASK",
   "court": "USDC N.D. Cal.",
   "claims": "PC §290.46(j)(2)(E) Violation, Fair Chance Act (Gov. Code §12952), FCRA, ICRAA, Invasion of Privacy, UCL §17200, IIED",
-  "status": "REMOVED — Amazon.com Services LLC removed Aug. 31, 2026 to N.D. Cal. No. 3:26-cv-09249-ASK (Krishnan). Civil L.R. 6-1(a) stipulation executed Aug. 31 / Sep. 1 and e-served Sep. 1 extends Amazon only through Sep. 22; Accurate Background still due Sep. 8. Not yet on PACER. $250k Amazon-only opening demand drafted Aug. 31, unsent Plaintiff's MJ consent executed Sep. 1, mailed from San Jose, unfiled until clerk-stamped.",
-  "status_label": "Amazon to Sep. 22; MJ consent mailed Sep. 1",
+  "status": "REMOVED — Amazon.com Services LLC removed Aug. 31, 2026 to N.D. Cal. No. 3:26-cv-09249-ASK (Krishnan). Civil L.R. 6-1(a) stipulation executed Aug. 31 / Sep. 1 and e-served Sep. 1 extends Amazon only through Sep. 22; Accurate Background still due Sep. 8. Not yet on PACER. $250k Amazon-only opening demand drafted Aug. 31, unsent Plaintiff's MJ consent executed Sep. 1, mailed from San Jose, unfiled until clerk-stamped Accurate Background: Plaintiff agreed Aug. 31 to Sep. 22 and signed the counterpart Sep. 1; still unsent / unfiled, so the live clock remains Sep. 8 until it is on PACER.",
+  "status_label": "Amazon Sep. 22; Accurate stip signed, still Sep. 8",
   "lifecycle": "active",
   "proceeding": "federal_civil",
   "phase": "responsive_deadline",
@@ -387,6 +387,25 @@
     {
       "path": "/documents/matter-29/Proof of Service - Consent to Magistrate Judge Jurisdiction - Amazon (N.D. Cal. 3-26-cv-09249-ASK) (Sep 1 2026).pdf",
       "filed": false
+    },
+    {
+      "path": "/documents/matter-29/Stipulation to Extend Time for Accurate Background to Respond (Plaintiff Counterpart, Sep 1 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-29/Stipulation to Extend Time for Accurate Background to Respond (Plaintiff Counterpart, Sep 1 2026).docx",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-29/Letter - Seyfarth May Not Affix Plaintiff's Signature (Accurate Stipulation) (Sep 1 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-29/Letter - Seyfarth May Not Affix Plaintiff's Signature (Accurate Stipulation) (Sep 1 2026).docx",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-29/EMAIL_DRAFT_Accurate_Stip_Signature_Notice.txt"
     }
   ],
   "archived": false
