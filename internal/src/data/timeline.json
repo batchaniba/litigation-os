@@ -1,6 +1,18 @@
 [
   {
     "date": "Sep. 1, 2026",
+    "event": "EXECUTED (unfiled) — Plaintiff's Consent to Jurisdiction of United States Magistrate Judge in Newanforbi v. United Parcel Service, Inc. (E.D. Cal. 2:26-cv-02847-DAD-CKD, Drozd / Delaney). Court's consentmagweb form: CONSENT checked, DECLINE blank, Plaintiff/Petitioner marked, dated September 1, 2026, canonical signature. Proof of Service by first-class mail from San Jose on Vanessa W. Mott (Martenson Hasbrouck, 5800 Armada Drive, Suite 101, Carlsbad — docket address of record). File with the Sacramento clerk (L.R. 305). Consent is effective only if UPS also consents and both judges accept. Do not treat as filed until the clerk enters it. Use this POS only if mailed today from San Jose.",
+    "matters": [
+      26
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-26/Consent to Magistrate Judge Jurisdiction - United Parcel Service (E.D. Cal. 2-26-cv-02847) (Sep 1 2026).pdf"
+  },
+  {
+    "date": "Sep. 1, 2026",
     "event": "EXECUTED (unfiled) — Plaintiff's Consent to Jurisdiction of United States Magistrate Judge in Newanforbi v. Federal Express Corporation (2:26-cv-02881-DAD-SCR). Court's fillable web form (consentmagweb), not Dkt. 3 p. 4: CONSENT checked, Plaintiff/Petitioner marked, dated September 1, 2026, canonical signature stamped. Proof of Service by first-class mail on Allison A. Kray at 2601 Main Street, Suite 1100, Irvine, CA 92614 from San Jose. The Aug. 28 packet was never mailed and is superseded. Not filed until the Sacramento clerk stamps it (L.R. 305). Consent is effective only if FedEx also consents and both judges accept.",
     "matters": [
       25
