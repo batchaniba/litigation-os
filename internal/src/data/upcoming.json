@@ -1,5 +1,17 @@
 [
   {
+    "date": "Sep. 11, 2026",
+    "event": "Azimov response due (courtesy) — whether Diamond Truck Sales, Inc. and Alpine Truck Sales, Inc. will (A) execute a Notice of Acknowledgment of Receipt or equivalent stipulation accepting the Amended Summons and FAC, or (B) require formal re-service on the SOS agents. Extended from September 4 at Azimov’s September 1 request. Silence means Plaintiff proceeds with path (B). Does not move the December 11, 2026 CMC. — Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094)",
+    "matters": [
+      12
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "filed": false,
+    "actor": "opposing",
+    "source": "/documents/matter-12/Gmail - Meet and Confer Service Case at Issue - Azimov (Aug 31 and Sep 1 2026).pdf"
+  },
+  {
     "date": "Sep. 22, 2026",
     "event": "Amazon.com Services, LLC responsive pleading deadline (extended) — Newanforbi v. Amazon.com Services, LLC et al. (Matter 29, N.D. Cal. No. 3:26-cv-09249-ASK). Civil L.R. 6-1(a) stipulation executed August 31 (Plaintiff) / September 1 (Frederick), e-served September 1, extends Amazon only through and including September 22, 2026. Accurate Background LLC is not a party to that stipulation. Single extension; no further extension implied. Watch for answer or Rule 12 motion by Andrew P. Frederick (Morgan Lewis). Watch PACER for the stipulation to hit the docket.",
     "matters": [
@@ -351,16 +363,6 @@
     "type": "hearing",
     "source": "/documents/matter-12/Minute Order - Case Management Conference (Aug 12 2026).pdf",
     "upcoming": true
-  },
-  {
-    "date": "Sep. 1, 2026",
-    "event": "Anticipated deemed-rejection date (computed) — Government Claims Act claim, Newanforbi v. Moua, et al. (Matter 30); 45 days from the Jul. 18, 2026 filing without written notice of rejection triggers deemed rejection by operation of law under Gov. Code §912.4(c), starting the state-law suit-filing clock",
-    "matters": [
-      30
-    ],
-    "type": "deadline",
-    "upcoming": true,
-    "actor": "agency"
   },
   {
     "date": "Sep. 16, 2026",

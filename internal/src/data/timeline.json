@@ -1,5 +1,53 @@
 [
   {
+    "date": "Sep. 2, 2026",
+    "event": "DRAFTED, NOT YET SENT — Reply to Gulomjon Azimov granting his September 1 request: the August 31 meet-and-confer response date moves from September 4 to Friday, September 11, 2026. He must pick (A) Notice of Acknowledgment of Receipt / stipulated acceptance of the Amended Summons and FAC, or (B) sheriff re-service on the SOS agents. Silence on September 11 means path (B). Does not change the December 11, 2026 at-issue CMC. Do not put GitHub raws in the email. — Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094)",
+    "matters": [
+      12
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-12/EMAIL_DRAFT_Azimov_Extend_Service_Response_to_Sep11.txt"
+  },
+  {
+    "date": "Sep. 11, 2026",
+    "event": "Azimov response due (courtesy) — whether Diamond Truck Sales, Inc. and Alpine Truck Sales, Inc. will (A) execute a Notice of Acknowledgment of Receipt or equivalent stipulation accepting the Amended Summons and FAC, or (B) require formal re-service on the SOS agents. Extended from September 4 at Azimov’s September 1 request. Silence means Plaintiff proceeds with path (B). Does not move the December 11, 2026 CMC. — Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094)",
+    "matters": [
+      12
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "filed": false,
+    "actor": "opposing",
+    "source": "/documents/matter-12/Gmail - Meet and Confer Service Case at Issue - Azimov (Aug 31 and Sep 1 2026).pdf"
+  },
+  {
+    "date": "Sep. 1, 2026",
+    "event": "RECEIVED — Gulomjon Azimov (Azimov Law Firm) emailed 10:56 p.m. asking Plaintiff to extend the August 31 meet-and-confer response deadline by an additional 10 days, citing short-notice international travel. Original date was Friday, September 4. — Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094)",
+    "matters": [
+      12
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": false,
+    "actor": "opposing",
+    "source": "/documents/matter-12/Gmail - Meet and Confer Service Case at Issue - Azimov (Aug 31 and Sep 1 2026).pdf"
+  },
+  {
+    "date": "Aug. 31, 2026",
+    "event": "SENT — Meet-and-confer email to Gulomjon Azimov (info@azimovlawfirm.com) as ordered at the August 12 CMC. Offered (A) Notice of Acknowledgment of Receipt / stipulated acceptance of the Amended Summons and FAC, or (B) sheriff re-service on SOS agents Saliman Osmani (Diamond, Turlock) and Sheran Osmani (Alpine, Bakersfield). Asked for an answer by Friday, September 4. Also opened a $68,000 settlement discussion (Evid. Code § 1152). — Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094)",
+    "matters": [
+      12
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-12/Gmail - Meet and Confer Service Case at Issue - Azimov (Aug 31 and Sep 1 2026).pdf"
+  },
+  {
     "date": "Sep. 1, 2026",
     "event": "EXECUTED (unfiled) — Plaintiff's Civil L.R. 7-11 Administrative Motion for an Order Directing Deputy Attorney General Haiyang A. Li to Accept Service of Process on Behalf of Defendant Santiago Meza-Gonzalez, Nforbi v. Meza-Gonzalez et al. (N.D. Cal. 4:26-cv-08271-ASK). Packet: 5-page motion, declaration, Exhibits A–C (Diamond-style covers + caption pages of Li's E.D. Cal. MTD, Alameda U-visa opposition, and Serrato MTD), proposed order, and a two-page Proof of Service by first-class mail from San Jose on Li (300 South Spring Street, Suite 1702, Los Angeles; Haiyang.Li@doj.ca.gov), Melano at CHP South Sacramento, and a courtesy copy to Meza-Gonzalez at CHP Modesto Area. Grounds: Melano served Aug. 14 (Dkt. 5-1 / Document 12); Meza has not been produced at the Modesto duty station; Li has represented these officers in E.D. Cal. 2:25-cv-01460, Alameda 26CV168913, and the related Serrato action. Rule 4(e)(1) / CCP § 413.30. Do not treat as filed. Use this POS only if mailed today from San Jose.",
     "matters": [
@@ -3884,7 +3932,7 @@
       30
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "agency"
   },
   {

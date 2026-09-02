@@ -288,7 +288,7 @@
     "case_no": "STK-CV-UF-2026-0001094",
     "court": "San Joaquin Sup. Ct.",
     "claims": "Fraudulent Concealment, Intentional Misrepresentation, Negligent Misrepresentation, Breach of Contract, UCL §17200, Rescission & Restitution, Declaratory Relief",
-    "status_label": "Defense appeared, disputes service — CMC Dec. 11, 2026",
+    "status_label": "Azimov service pick due Sep. 11 — CMC Dec. 11",
     "lifecycle": "active",
     "proceeding": "state_civil",
     "phase": "service",
@@ -325,7 +325,7 @@
       }
     ],
     "evidenceCount": 15,
-    "documentCount": 81
+    "documentCount": 83
   },
   {
     "number": 13,
