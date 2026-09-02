@@ -1,5 +1,15 @@
 [
   {
+    "date": "Sep. 21, 2026",
+    "event": "Responsive pleading deadline (computed) — Shannon Smith, LCSW, and HOPE Psychotherapy, Inc., Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504-LJC); 21 days from the August 31, 2026 service date Van Dine accepted (FRCP 12(a)(1)(A)(i)). Falls on a Monday; no weekend/holiday extension applies.",
+    "matters": [
+      28
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "opposing"
+  },
+  {
     "date": "Oct. 1, 2026",
     "event": "Habeas ruling calendar (computed) — Newanforbi v. Macomber (C2604791). CRC 4.551(a)(6)(B) runs 30 days from the September 1, 2026 in-person filing of the HC-004, if the presiding judge determines the notice is complete and the court has failed to rule. Not a hearing. Not automatic if the PJ finds the notice incomplete. Thursday; no weekend roll under CRC 1.10.",
     "matters": [

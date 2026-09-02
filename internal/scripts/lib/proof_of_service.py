@@ -69,6 +69,12 @@ class ProofOfServiceFields:
     server_name: str = ""
     stamp_signature: bool = False
     district_line: str = DISTRICT_NDCAL
+    # One-page squeeze clips long titles and drives the signature through
+    # the bottom border. Set True to put the declaration and stamp on page 2.
+    signature_on_second_page: bool = False
+    # Default recites first-class mail. Set True when service was by email
+    # (no postage, no envelope, no United States Mail).
+    by_email: bool = False
 
 
 def _hline(c: canvas.Canvas, x0: float, x1: float, y: float, width: float = 0.7) -> None:
@@ -126,6 +132,128 @@ def _fill_or_blank_line(
         if suffix:
             c.setFont("Times-Roman", FS)
             c.drawString(x0 + pref_w + avail + 2, y, suffix)
+
+
+def _wrap_lines(text: str, max_width: float, font: str = "Times-Roman", size: float = FS) -> list[str]:
+    from reportlab.pdfbase.pdfmetrics import stringWidth
+
+    words = text.split()
+    if not words:
+        return [""]
+    lines: list[str] = []
+    current = words[0]
+    for word in words[1:]:
+        trial = f"{current} {word}"
+        if stringWidth(trial, font, size) <= max_width:
+            current = trial
+        else:
+            lines.append(current)
+            current = word
+    lines.append(current)
+    return lines
+
+
+def _draw_wrapped_filled(
+    c: canvas.Canvas,
+    y: float,
+    text: str,
+    *,
+    x0: float = INNER_L,
+    x1: float = INNER_R,
+    suffix: str = "",
+) -> float:
+    """Draw a long filled value on as many underlined lines as it needs."""
+    max_w = x1 - x0
+    lines = _wrap_lines(text, max_w)
+    for i, line in enumerate(lines):
+        drawn = line
+        if suffix and i == len(lines) - 1:
+            drawn = f"{line}{suffix}"
+        c.setFont("Times-Roman", FS)
+        c.drawString(x0, y, drawn)
+        _hline(c, x0 - 1, min(x1, x0 + c.stringWidth(drawn, "Times-Roman", FS) + 2), y - 2)
+        y -= LEADING * 1.45
+    return y
+
+
+def _page_label(c: canvas.Canvas, page: int, total: int) -> None:
+    c.setFont("Times-Roman", 8.5)
+    c.drawCentredString((BORDER_L + BORDER_R) / 2.0, PAGE_H - BORDER_B + 10, f"Page {page} of {total}")
+
+
+def _draw_signature_block(c: canvas.Canvas, fields: ProofOfServiceFields, decl_y: float) -> None:
+    c.setFont("Times-Roman", FS)
+    c.drawString(
+        INNER_L,
+        decl_y,
+        "I declare under penalty of perjury that the foregoing is true and correct.",
+    )
+
+    sig_width = 200.0
+    sig_height = sig_width * SIGNATURE_ASPECT
+    gap_decl_to_sig = 40.0
+    name_below = 16.0
+    sig_line_y = decl_y - gap_decl_to_sig - sig_height
+    line_pad = 4.0
+    sig_line_w = sig_width + 2 * line_pad
+    sig_x0 = INNER_R - 48 - sig_line_w
+    sig_x1 = sig_x0 + sig_line_w + 12.0
+    _hline(c, sig_x0, sig_x1, sig_line_y)
+
+    if fields.server_name:
+        name_line = f"{fields.server_name}, In Propria Persona"
+        name_font = "Times-Roman"
+    else:
+        name_line = "(Name of Person Completing Service)"
+        name_font = "Times-Italic"
+    nw = c.stringWidth(name_line, name_font, FS)
+    c.setFont(name_font, FS)
+    c.drawString(sig_x0 + (sig_line_w - nw) / 2.0, sig_line_y - name_below, name_line)
+
+    if fields.stamp_signature and fields.server_name:
+        try:
+            c.drawImage(
+                SIGNATURE_PATH,
+                sig_x0 + line_pad + 12.0,
+                sig_line_y + 4.0,
+                width=sig_width,
+                height=sig_height,
+                mask="auto",
+                preserveAspectRatio=False,
+            )
+        except Exception as exc:  # noqa: BLE001
+            print(f"warning: could not stamp signature: {exc}", file=sys.stderr)
+
+
+def _draw_continuation_header(c: canvas.Canvas, fields: ProofOfServiceFields) -> float:
+    y = PAGE_H - BORDER_T - 44
+    _center(c, "UNITED STATES DISTRICT COURT", y, "Times-Roman", FS)
+    y -= LEADING
+    _center(c, fields.district_line or DISTRICT_NDCAL, y, "Times-Roman", FS)
+    y -= LEADING * 2.0
+    c.setFont("Times-Roman", FS)
+    c.drawString(INNER_L, y, fields.plaintiff_line or "(Case Title)")
+    if fields.case_number:
+        c.drawString(CAPTION_RIGHT_X, y, f"Case Number: {fields.case_number}")
+    y -= LEADING
+    c.setFont("Times-Italic", FS)
+    c.drawString(INNER_L, y, "v.")
+    c.setFont("Times-Bold", FS)
+    c.drawString(CAPTION_RIGHT_X, y, fields.title or "PROOF OF SERVICE")
+    y -= LEADING
+    first_def = ""
+    for line in fields.defendant_lines or []:
+        if line:
+            first_def = line
+            break
+    c.setFont("Times-Roman", FS)
+    if first_def:
+        lead = first_def.split(";")[0].strip().rstrip(",")
+        c.drawString(INNER_L, y, f"{lead} et al.")
+    c.setFont("Times-Italic", FS)
+    c.drawString(CAPTION_RIGHT_X, y, "(continued)")
+    y -= LEADING * 2.2
+    return y
 
 
 def build_proof_of_service(path: Path | str, fields: ProofOfServiceFields) -> Path:
@@ -203,40 +331,53 @@ def build_proof_of_service(path: Path | str, fields: ProofOfServiceFields) -> Pa
     )
     y -= LEADING * 1.8
 
-    _fill_or_blank_line(
-        c,
-        y,
-        "",
-        fields.document_title,
-        "(Title of Document Served and Filed)",
-        ",",
-    )
-    y -= LEADING * 1.8
+    if fields.document_title:
+        y = _draw_wrapped_filled(c, y, fields.document_title, suffix=",")
+        y -= LEADING * 0.4
+    else:
+        _fill_or_blank_line(
+            c,
+            y,
+            "",
+            fields.document_title,
+            "(Title of Document Served and Filed)",
+            ",",
+        )
+        y -= LEADING * 1.8
 
-    c.setFont("Times-Roman", FS)
-    c.drawString(
-        INNER_L,
-        y,
-        "by placing a copy in a postage paid envelope addressed to the person(s) hereinafter listed, by depositing said",
-    )
-    y -= LEADING * 1.8
+    if fields.by_email:
+        c.setFont("Times-Roman", FS)
+        for line in _wrap_lines(
+            "by transmitting a true copy by electronic mail (PDF attachments) "
+            "to the e-mail address(es) hereinafter listed:",
+            INNER_R - INNER_L,
+        ):
+            c.drawString(INNER_L, y, line)
+            y -= LEADING
+        y -= LEADING * 0.6
+        list_heading = "(List Name and E-mail Address of Each Defendant or Attorney Served)"
+    else:
+        c.setFont("Times-Roman", FS)
+        c.drawString(
+            INNER_L,
+            y,
+            "by placing a copy in a postage paid envelope addressed to the person(s) hereinafter listed, by depositing said",
+        )
+        y -= LEADING * 1.8
 
-    _fill_or_blank_line(
-        c,
-        y,
-        "envelope in the United States Mail at ",
-        fields.mailing_location,
-        "(Location of Mailing)",
-        ":",
-    )
-    y -= LEADING * 1.8
+        _fill_or_blank_line(
+            c,
+            y,
+            "envelope in the United States Mail at ",
+            fields.mailing_location,
+            "(Location of Mailing)",
+            ":",
+        )
+        y -= LEADING * 1.8
+        list_heading = "(List Name and Address of Each Defendant or Attorney Served)"
 
     c.setFont("Times-Bold", FS)
-    c.drawString(
-        INNER_L,
-        y,
-        "(List Name and Address of Each Defendant or Attorney Served)",
-    )
+    c.drawString(INNER_L, y, list_heading)
     y -= LEADING * 1.4
 
     if fields.recipients:
@@ -252,11 +393,31 @@ def build_proof_of_service(path: Path | str, fields: ProofOfServiceFields) -> Pa
             _hline(c, INNER_L + 12, INNER_R - 12, y)
             y -= LEADING * 1.35
 
-    # Footer: declaration, then clear air for the signature stamp, then the line.
+    two_page = bool(fields.signature_on_second_page)
+    if two_page:
+        _page_label(c, 1, 2)
+        c.showPage()
+        _draw_border(c)
+        y = _draw_continuation_header(c, fields)
+        c.setFont("Times-Roman", FS)
+        c.drawString(
+            INNER_L,
+            y,
+            "The names and addresses of the persons served appear on page 1.",
+        )
+        # Sit the declaration below that line so the stamp has air.
+        decl_y = y - 36
+        _draw_signature_block(c, fields, decl_y)
+        _page_label(c, 2, 2)
+        c.save()
+        return path
+
+    # One-page footer: must match _draw_signature_block (gap 40, name 16)
+    # or the stamp sits lower than this reservation and punches the border.
     sig_width = 200.0
     sig_height = sig_width * SIGNATURE_ASPECT  # native aspect × 1.15 upward stretch
-    gap_decl_to_sig = 32.0  # keep loops clear of the declaration
-    name_below = 14.0
+    gap_decl_to_sig = 40.0
+    name_below = 16.0
     footer_pad = 16.0  # clearance from typed name down to the bottom border
     footer_block = (
         FS  # declaration
@@ -268,51 +429,10 @@ def build_proof_of_service(path: Path | str, fields: ProofOfServiceFields) -> Pa
     )
     border_bottom_y = PAGE_H - BORDER_B
     decl_y = border_bottom_y + footer_block - FS
-    # If body content ran low, keep a gap under the last body line.
     min_decl_from_body = y - 32
     if min_decl_from_body < decl_y:
         decl_y = min_decl_from_body
-
-    c.setFont("Times-Roman", FS)
-    c.drawString(
-        INNER_L,
-        decl_y,
-        "I declare under penalty of perjury that the foregoing is true and correct.",
-    )
-
-    # Short signature line sized to the stamp; typed name may run wider below.
-    sig_line_y = decl_y - gap_decl_to_sig - sig_height
-    line_pad = 4.0
-    sig_line_w = sig_width + 2 * line_pad
-    sig_x0 = INNER_R - 48 - sig_line_w
-    sig_x1 = sig_x0 + sig_line_w + 12.0  # extra run so the right-shifted stamp stays on the rule
-    _hline(c, sig_x0, sig_x1, sig_line_y)
-
-    if fields.server_name:
-        name_line = f"{fields.server_name}, In Propria Persona"
-        name_font = "Times-Roman"
-    else:
-        name_line = "(Name of Person Completing Service)"
-        name_font = "Times-Italic"
-    nw = c.stringWidth(name_line, name_font, FS)
-    c.setFont(name_font, FS)
-    # Center name under the short line; allow overhang past the rule.
-    c.drawString(sig_x0 + (sig_line_w - nw) / 2.0, sig_line_y - name_below, name_line)
-
-    if fields.stamp_signature and fields.server_name:
-        try:
-            # Hover the stamp a hair above the rule.
-            c.drawImage(
-                SIGNATURE_PATH,
-                sig_x0 + line_pad + 12.0,
-                sig_line_y + 4.0,
-                width=sig_width,
-                height=sig_height,
-                mask="auto",
-                preserveAspectRatio=False,
-            )
-        except Exception as exc:  # noqa: BLE001
-            print(f"warning: could not stamp signature: {exc}", file=sys.stderr)
+    _draw_signature_block(c, fields, decl_y)
 
     c.save()
     return path

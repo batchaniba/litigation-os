@@ -1,5 +1,49 @@
 [
   {
+    "date": "Sep. 2, 2026",
+    "event": "EXECUTED (unfiled) — Proof of Service of Rule 4 process on Shannon Smith, LCSW, and HOPE Psychotherapy, Inc. in Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504-LJC). E-mail only on August 31, 2026 to slb-eservice@sims-law.net and blaze@sims-law.net; nothing mailed. Papers: one combined issued AO 440 (both defendants); Complaint (Dkt. 1); Civil Cover Sheet (Dkt. 1-1); Order Setting Initial Case Management Conference and ADR Deadlines (Dkt. 4); and Dkt. 11. Van Dine emailed September 1, 2026 accepting for both defendants effective August 31. POS only; no Gmail exhibit. File this on PACER. Do not treat as filed.",
+    "matters": [
+      28
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-28/Proof of Service - SLB Accepted Service for Smith and HOPE (N.D. Cal. 3-26-cv-07504-LJC) (Sep 2 2026).pdf"
+  },
+  {
+    "date": "Sep. 21, 2026",
+    "event": "Responsive pleading deadline (computed) — Shannon Smith, LCSW, and HOPE Psychotherapy, Inc., Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504-LJC); 21 days from the August 31, 2026 service date Van Dine accepted (FRCP 12(a)(1)(A)(i)). Falls on a Monday; no weekend/holiday extension applies.",
+    "matters": [
+      28
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "opposing"
+  },
+  {
+    "date": "Aug. 31, 2026",
+    "event": "SERVED — Shannon Smith, LCSW, and HOPE Psychotherapy, Inc. in Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504-LJC). Plaintiff emailed the 33-page packet to slb-eservice@sims-law.net and blaze@sims-law.net on August 31, 2026: one combined issued AO 440 (both defendants, Charles Ho / Aug. 31); Complaint (Dkt. 1); Civil Cover Sheet (Dkt. 1-1); Order Setting Initial Case Management Conference and ADR Deadlines (Dkt. 4, including magistrate-consent form); and Dkt. 11. Nothing was mailed. Van Dine emailed September 1, 2026 accepting service for both defendants effective August 31. Rule 4(m) (~Oct. 19) is satisfied by that acceptance; file the executed Proof of Service.",
+    "matters": [
+      28
+    ],
+    "type": "service",
+    "upcoming": false,
+    "actor": "you",
+    "source": "/documents/matter-28/Service Packet Emailed to SLB (Issued Summons Complaint Dkt 1-1 Dkt 4 Dkt 11) (Aug 31 2026).pdf"
+  },
+  {
+    "date": "Oct. 19, 2026",
+    "event": "SATISFIED — Rule 4(m) service deadline (computed) — Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504-LJC). Van Dine accepted service for both defendants effective August 31, 2026. File the executed Proof of Service; 4(m) itself is no longer the live clock.",
+    "matters": [
+      28
+    ],
+    "type": "deadline",
+    "upcoming": false,
+    "actor": "you",
+    "source": "/documents/matter-28/Dkt 11 - Order Regarding Filing Fee IFP and Directing Service (Filed Aug 26 2026).pdf"
+  },
+  {
     "date": "Sep. 1, 2026",
     "event": "EXECUTED (unfiled) — Plaintiff's Consent to Jurisdiction of United States Magistrate Judge in Newanforbi v. United Parcel Service, Inc. (E.D. Cal. 2:26-cv-02847-DAD-CKD, Drozd / Delaney). Court's consentmagweb form: CONSENT checked, DECLINE blank, Plaintiff/Petitioner marked, dated September 1, 2026, canonical signature. Proof of Service by first-class mail from San Jose on Vanessa W. Mott (Martenson Hasbrouck, 5800 Armada Drive, Suite 101, Carlsbad — docket address of record). File with the Sacramento clerk (L.R. 305). Consent is effective only if UPS also consents and both judges accept. Do not treat as filed until the clerk enters it. Use this POS only if mailed today from San Jose.",
     "matters": [
