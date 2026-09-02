@@ -1,6 +1,18 @@
 [
   {
     "date": "Sep. 1, 2026",
+    "event": "EXECUTED (unfiled) — Plaintiff's Civil L.R. 7-11 Administrative Motion for an Order Directing Deputy Attorney General Haiyang A. Li to Accept Service of Process on Behalf of Defendant Santiago Meza-Gonzalez, Nforbi v. Meza-Gonzalez et al. (N.D. Cal. 4:26-cv-08271-ASK). Packet: 5-page motion, declaration, Exhibits A–C (Diamond-style covers + caption pages of Li's E.D. Cal. MTD, Alameda U-visa opposition, and Serrato MTD), proposed order, and a two-page Proof of Service by first-class mail from San Jose on Li (300 South Spring Street, Suite 1702, Los Angeles; Haiyang.Li@doj.ca.gov), Melano at CHP South Sacramento, and a courtesy copy to Meza-Gonzalez at CHP Modesto Area. Grounds: Melano served Aug. 14 (Dkt. 5-1 / Document 12); Meza has not been produced at the Modesto duty station; Li has represented these officers in E.D. Cal. 2:25-cv-01460, Alameda 26CV168913, and the related Serrato action. Rule 4(e)(1) / CCP § 413.30. Do not treat as filed. Use this POS only if mailed today from San Jose.",
+    "matters": [
+      32
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-32/ndcal/Administrative Motion Packet - DAG Li to Accept Service for Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (Sep 1 2026).pdf"
+  },
+  {
+    "date": "Sep. 1, 2026",
     "event": "EXECUTED (unsent) — Plaintiff-signed Civil L.R. 6-1 counterpart extending Accurate Background LLC only through September 22, 2026, and a letter telling Seyfarth (Stanzick / Drury) they do not have permission to affix his signature, including a conformed /s/, on this or any other paper. PDF and Word of both. Cover e-mail drafted. Not yet transmitted. Seyfarth’s draft (328376958.1) already carried “/s/ Brendan Ngehis Newanforbi.” Case No. 3:26-cv-09249-ASK. Sep. 8 remains the live Accurate clock until the counterpart is on PACER. Do not put GitHub raws in the e-mail.",
     "matters": [
       29
