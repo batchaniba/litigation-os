@@ -1,5 +1,26 @@
 [
   {
+    "date": "Sep. 22, 2026",
+    "event": "Amazon.com Services, LLC responsive pleading deadline (extended) — Newanforbi v. Amazon.com Services, LLC et al. (Matter 29, N.D. Cal. No. 3:26-cv-09249-ASK). Civil L.R. 6-1(a) stipulation executed August 31 (Plaintiff) / September 1 (Frederick), e-served September 1, extends Amazon only through and including September 22, 2026. Accurate Background LLC is not a party to that stipulation. Single extension; no further extension implied. Watch for answer or Rule 12 motion by Andrew P. Frederick (Morgan Lewis). Watch PACER for the stipulation to hit the docket.",
+    "matters": [
+      29
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "opposing",
+    "source": "/documents/matter-29/Stipulation to Extend Time for Amazon to Respond (Executed Sep 1 2026).pdf"
+  },
+  {
+    "date": "Sep. 21, 2026",
+    "event": "Responsive pleading deadline (computed) — Shannon Smith, LCSW, and HOPE Psychotherapy, Inc., Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504-LJC); 21 days from the August 31, 2026 service date Van Dine accepted (FRCP 12(a)(1)(A)(i)). Falls on a Monday; no weekend/holiday extension applies.",
+    "matters": [
+      28
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "opposing"
+  },
+  {
     "date": "Oct. 1, 2026",
     "event": "Habeas ruling calendar (computed) — Newanforbi v. Macomber (C2604791). CRC 4.551(a)(6)(B) runs 30 days from the September 1, 2026 in-person filing of the HC-004, if the presiding judge determines the notice is complete and the court has failed to rule. Not a hearing. Not automatic if the PJ finds the notice incomplete. Thursday; no weekend roll under CRC 1.10.",
     "matters": [
