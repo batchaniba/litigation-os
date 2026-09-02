@@ -6,9 +6,11 @@ Source is the court's fillable web form (consentmagweb), stored at
 Dkt. 3 page 4 — that copy is already filed, and it is not the fillable form.
 
 House practice in Matters 24 / 32 / 33 is CONSENT. This script checks the
-CONSENT box (not DECLINE), marks Plaintiff/Petitioner, stamps the canonical
+CONSENT box (not DECLINE), marks Plaintiff/Petitioner (painted after bake
+because the Group6 radio does not survive flatten), stamps the canonical
 signature, and appends the portfolio four-sided-border Proof of Service for
-mail on Allison A. Kray.
+mail on Allison A. Kray. Default execution/mail date is September 1, 2026
+(the Aug. 28 packet was generated but never filed or mailed).
 
     python3 internal/scripts/matter25-edcal-mj-consent.py \\
         [--date "August 28, 2026"] [--mailed-from "San Jose, California"]
@@ -43,14 +45,14 @@ SRC = (
 OUT_DIR = ROOT / "internal/public/documents/matter-25"
 DEFAULT_OUT = OUT_DIR / (
     "Consent to Magistrate Judge Jurisdiction - "
-    "Federal Express (E.D. Cal. 2-26-cv-02881) (Aug 28 2026).pdf"
+    "Federal Express (E.D. Cal. 2-26-cv-02881) (Sep 1 2026).pdf"
 )
 DEFAULT_POS = OUT_DIR / (
     "Proof of Service - Consent to Magistrate Judge Jurisdiction - "
-    "FedEx (E.D. Cal. 2-26-cv-02881) (Aug 28 2026).pdf"
+    "FedEx (E.D. Cal. 2-26-cv-02881) (Sep 1 2026).pdf"
 )
 
-DEFAULT_DATE = "August 28, 2026"
+DEFAULT_DATE = "September 1, 2026"
 DEFAULT_MAILED_FROM = "San Jose, California"
 ARTIFACTS_DIR = Path("/opt/cursor/artifacts")
 ARTIFACT_PDF = ARTIFACTS_DIR / "fedex_mj_consent_with_pos.pdf"
@@ -63,6 +65,24 @@ DEFENDANT = "FEDERAL EXPRESS CORPORATION"
 # right of the "Signature:" label; y sits on the rule without covering
 # Print Name (field begins at y=444.3). Skip white-out so the rule remains.
 SIG_LINE = (320.0, 487.4, 444.0)
+
+# Consent-section party radios (Group6). Widget /AS does not reliably
+# survive bake — paint the Plaintiff/Petitioner bullet after flatten.
+CONSENT_PLTF_RADIO = (311.4, 476.0, 318.6, 483.2)
+CONSENT_DFT_RADIO = (401.6, 476.2, 408.8, 483.4)
+
+
+def _paint_consent_plaintiff_radio(page) -> None:
+    """Filled bullet on Plaintiff/Petitioner; blank the Defendant/Respondent circle."""
+    import fitz
+
+    dft = fitz.Rect(*CONSENT_DFT_RADIO)
+    dft_c = fitz.Point((dft.x0 + dft.x1) / 2, (dft.y0 + dft.y1) / 2)
+    page.draw_circle(dft_c, dft.width / 2 + 0.6, color=(1, 1, 1), fill=(1, 1, 1), width=0)
+    page.draw_circle(dft_c, 3.2, color=(0, 0, 0), fill=None, width=0.6)
+    pltf = fitz.Rect(*CONSENT_PLTF_RADIO)
+    pltf_c = fitz.Point((pltf.x0 + pltf.x1) / 2, (pltf.y0 + pltf.y1) / 2)
+    page.draw_circle(pltf_c, 2.15, color=(0, 0, 0), fill=(0, 0, 0), width=0)
 
 
 def _parent_xref(doc, kid_xref: int) -> int | None:
@@ -110,7 +130,7 @@ def fill_consent_page(out: Path, exec_date: str) -> Path:
             w.field_value = PRINT_NAME
         elif name == "Group6":
             # Blank template defaults this group to Defendant. Force Plaintiff.
-            w.field_value = w.on_state() if w.on_state() == "Pltf" else "Off"
+            w.field_value = "Pltf" if w.on_state() == "Pltf" else "Off"
             g6_parent = _parent_xref(doc, w.xref)
         elif name == "Group7":
             # Blank template defaults this group to Plaintiff. Leave empty.
@@ -135,6 +155,7 @@ def fill_consent_page(out: Path, exec_date: str) -> Path:
         doc.xref_set_key(g7_parent, "V", "/Off")
 
     doc.bake(annots=True, widgets=True)
+    _paint_consent_plaintiff_radio(page)
     stamp_on_pdf_line(page, SIG_LINE[0], SIG_LINE[1], SIG_LINE[2], whiteout=False)
 
     out.parent.mkdir(parents=True, exist_ok=True)
