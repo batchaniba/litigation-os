@@ -1,6 +1,18 @@
 [
   {
     "date": "Sep. 1, 2026",
+    "event": "EXECUTED (unfiled) — Plaintiff's Consent or Declination to Magistrate Judge Jurisdiction in Newanforbi v. Amazon.com Services, LLC et al. (N.D. Cal. 3:26-cv-09249-ASK, Mag. Ajay S. Krishnan). Court's N.D. Cal. form: CONSENT checked, DECLINE blank, dated September 1, 2026, PRO SE, canonical signature stamped. Proof of Service by first-class mail from San Jose on Andrew P. Frederick (Morgan Lewis / Amazon) and Jasmine J. Stanzick (Seyfarth / Accurate). File with the clerk. Consent is effective only if the other parties also consent. Do not treat as filed until the clerk enters it.",
+    "matters": [
+      29
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-29/Consent to Magistrate Judge Jurisdiction - Amazon (N.D. Cal. 3-26-cv-09249-ASK) (Sep 1 2026).pdf"
+  },
+  {
+    "date": "Sep. 1, 2026",
     "event": "EXECUTED AND E-SERVED (not yet PACER-docketed) — Civil L.R. 6-1(a) Stipulation to Extend Time for Amazon.com Services, LLC to Respond to the Complaint in Newanforbi v. Amazon.com Services, LLC et al. (N.D. Cal. 3:26-cv-09249-ASK). Plaintiff's August 31 counterpart; Andrew P. Frederick signed September 1. Amazon only, through and including September 22, 2026. Accurate Background LLC unchanged (still September 8). Single extension; no court order required; shall be promptly filed under Civil L.R. 5. Eveline Schmid e-served Plaintiff by email September 1, 2026, 9:36 a.m. (cc Frederick). Do not sign Frederick's leftover Civil L.R. 5-1(i)(3) attestation .docx. Do not treat as filed until the clerk enters it.",
     "matters": [
       29

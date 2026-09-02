@@ -29,6 +29,16 @@
       "source": "/ups-consent/",
       "destination": "/ups-consent.pdf",
       "permanent": false
+    },
+    {
+      "source": "/amazon-consent",
+      "destination": "/amazon-consent.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/amazon-consent/",
+      "destination": "/amazon-consent.pdf",
+      "permanent": false
     }
   ],
   "headers": [
@@ -56,6 +66,15 @@
         {
           "key": "Content-Disposition",
           "value": "attachment; filename=\"Consent to Magistrate Judge Jurisdiction - United Parcel Service (E.D. Cal. 2-26-cv-02847) (Sep 1 2026).pdf\"; filename*=UTF-8''Consent%20to%20Magistrate%20Judge%20Jurisdiction%20-%20United%20Parcel%20Service%20%28E.D.%20Cal.%202-26-cv-02847%29%20%28Sep%201%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/amazon-consent.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Consent to Magistrate Judge Jurisdiction - Amazon (N.D. Cal. 3-26-cv-09249-ASK) (Sep 1 2026).pdf\"; filename*=UTF-8''Consent%20to%20Magistrate%20Judge%20Jurisdiction%20-%20Amazon%20%28N.D.%20Cal.%203-26-cv-09249-ASK%29%20%28Sep%201%202026%29.pdf"
         }
       ]
     }
