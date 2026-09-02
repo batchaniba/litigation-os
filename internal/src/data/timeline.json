@@ -1,6 +1,27 @@
 [
   {
     "date": "Sep. 1, 2026",
+    "event": "FILED IN PERSON — HC-004 Notice and Request for Ruling (Cal. Rules of Court, rule 4.551(a)(3)(B)) lodged with the Santa Clara Superior Court clerk in Newanforbi v. Macomber, No. C2604791, together with the Notice of Change of Address restoring 1455 Cat Tail Drive, Stockton, CA 95204. Exhibit A is the unstamped 67-page Petition for Writ of Habeas Corpus filed April 3, 2026. Filed 151 days after the petition and 31 days after the August 1, 2026 extended ruling deadline that Judge Robert Hawk set for himself in the July 2, 2026 Order Extending Time (rule 4.551(i)) and then let lapse. ACTION: obtain the conformed/stamped copy from the clerk and add it to the matter record; confirm service on the District Attorney (motions_dropbox@dao.sccgov.org).",
+    "matters": [
+      19
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "you"
+  },
+  {
+    "date": "Oct. 1, 2026",
+    "event": "WATCH — Escalation date if Judge Hawk still has not ruled on the habeas petition (Matter 19, Santa Clara Sup. Ct. No. C2604791). Cal. Rules of Court, rule 4.551(a)(3)(C) is understood to permit a petition for writ of mandate in the Court of Appeal, Sixth Appellate District, where the superior court has not ruled within 30 days after an HC-004 notice and request for ruling is filed; the HC-004 was filed Sept. 1, 2026. VERIFY the exact text and interval of rule 4.551(a)(3)(C) against the current Rules of Court before calendaring or filing on this date. Not a court-imposed deadline against Petitioner — nothing is forfeited by waiting — but it is the only remaining lever to force a ruling on the sole surviving vehicle for the entire Nov./Dec. 2025 discharge-review challenge (Matters 9, 10, 11 and 15 all closed).",
+    "matters": [
+      19
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you"
+  },
+  {
+    "date": "Sep. 1, 2026",
     "event": "POST-TERMINATION RECRUITING STREAM DOCUMENTED — Randstad automated SMS from +1 (209) 714-5138 at 5:54 AM: 'New Job Invite! You've been invited to a new job with Randstad. Check your jobs to see this opportunity!' Latest in a continuing automated stream since the July 15, 2026 termination: templated emails 'we are searching for forklift operators in your area' (Aug. 19, Aug. 25), 'we are searching for on-site support agents' (Aug. 19, Aug. 26), and 'we are holding a hiring event in Lathrop' (Aug. 26). Marketing automation, not targeted outreach — all carry 'reply STOP' footers, none names a recruiter, none offers a CDL/Class C driving role comparable to the terminated RK Logistics placement. Value to Plaintiff: Randstad's own systems treat him as an active placeable candidate six weeks after terminating him over a registry hit, undercutting any §290.46(j)(1) 'persons at risk' defense. Non-comparable roles do not support a failure-to-mitigate defense. ACTION: preserve full headers and thread; do NOT reply STOP; open the Randstad app and capture the actual invited role, rate, and location; do not discuss the case with recruiters — all case communication to Chadwick L. Williams only.",
     "matters": [
       27
