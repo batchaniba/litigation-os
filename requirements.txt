@@ -9,7 +9,7 @@
 # PDF libraries rather than freeze to a single tested revision.
 
 # Pleading-paper generation and form filling (reportlab draws, pypdf merges).
-reportlab>=5.0.0
+reportlab>=5.0.1
 pypdf>=6.14.2
 
 # Text and layout extraction for the pdf-audit tier scripts.
