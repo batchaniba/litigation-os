@@ -3347,8 +3347,18 @@
       "ownerMatter": 32
     },
     {
+      "path": "/documents/matter-32/ndcal/Exhibit A - USPS eReceipt FAC Service on Melano (Aug 21 2026).pdf",
+      "label": "Exhibit A — USPS eReceipt of August 21, 2026 First-Class mailing of FAC Dkt. 5 to Jose Melano (Sacramento 95823) and other mailings that afternoon (Diamond-style cover + receipt)",
+      "ownerMatter": 32
+    },
+    {
       "path": "/documents/matter-32/ndcal/Exhibit A Cover - ED Cal MTD Caption Li for Meza-Gonzalez (Sep 1 2026).pdf",
       "label": "Exhibit A Cover - ED Cal MTD Caption Li for Meza-Gonzalez (Sep 1 2026)",
+      "ownerMatter": 32
+    },
+    {
+      "path": "/documents/matter-32/ndcal/Exhibit A Cover - USPS eReceipt FAC Service on Melano (Aug 21 2026).pdf",
+      "label": "Exhibit A Cover - USPS eReceipt FAC Service on Melano (Aug 21 2026)",
       "ownerMatter": 32
     },
     {
@@ -3457,6 +3467,11 @@
       "ownerMatter": 32
     },
     {
+      "path": "/documents/matter-32/ndcal/Proof of Service Packet - FAC Dkt 05 Mailed to Melano with Exhibit A (Aug 21 2026).pdf",
+      "label": "Filing packet — Proof of Service of FAC Dkt. 5 mailed to Melano (Aug. 21, 2026) with Exhibit A USPS e-receipt (4 pp.; unfiled)",
+      "ownerMatter": 32
+    },
+    {
       "path": "/documents/matter-32/ndcal/Proposed Order - DAG Li to Accept Service for Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (Sep 1 2026).pdf",
       "label": "Proposed Order - DAG Li to Accept Service for Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (Sep 1 2026)",
       "ownerMatter": 32
@@ -3479,6 +3494,11 @@
     {
       "path": "/documents/matter-32/ndcal/USPS eReceipt - First-Class Large Envelope to Sacramento 95823 (Aug 21 2026).pdf",
       "label": "USPS eReceipt - First-Class Large Envelope to Sacramento 95823 (Aug 21 2026)",
+      "ownerMatter": 32
+    },
+    {
+      "path": "/documents/matter-32/ndcal/USPS eReceipt - Service of FAC on Melano and other Mailings (Aug 21 2026).pdf",
+      "label": "USPS eReceipt — San Jose MO Finance, Aug. 21, 2026, 5:40 p.m.; First-Class Large Envelope to Sacramento 95823 (Melano FAC Dkt. 5) and other mailings that afternoon; receipt 840-59500196-3-10335441-2; $14.78",
       "ownerMatter": 32
     },
     {
