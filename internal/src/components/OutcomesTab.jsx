@@ -18,19 +18,23 @@ const moderate   = outcomes.portfolio_exposure.moderate;
 const demandTotal = outcomes.active_demands.reduce((s, d) => s + d.demand_amount, 0);
 const demandSentDates = outcomes.active_demands.map(d => new Date(d.sent_date));
 const demandDeadlines = outcomes.active_demands.map(d => new Date(d.deadline));
-const earliestSent = new Date(Math.min(...demandSentDates));
-const latestSent = new Date(Math.max(...demandSentDates));
-const earliestDeadline = new Date(Math.min(...demandDeadlines));
-const latestDeadline = new Date(Math.max(...demandDeadlines));
+const hasDemands = outcomes.active_demands.length > 0;
+const earliestSent = hasDemands ? new Date(Math.min(...demandSentDates)) : null;
+const latestSent = hasDemands ? new Date(Math.max(...demandSentDates)) : null;
+const earliestDeadline = hasDemands ? new Date(Math.min(...demandDeadlines)) : null;
+const latestDeadline = hasDemands ? new Date(Math.max(...demandDeadlines)) : null;
 const fmtDate = (d) => d.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
-const demandSentRange = earliestSent.getTime() === latestSent.getTime()
+const demandSentRange = !earliestSent ? "—"
+  : earliestSent.getTime() === latestSent.getTime()
   ? fmtDate(earliestSent)
   : `${fmtDate(earliestSent)} – ${fmtDate(latestSent)}`;
-const demandDeadlineRange = earliestDeadline.getTime() === latestDeadline.getTime()
+const demandDeadlineRange = !earliestDeadline ? "—"
+  : earliestDeadline.getTime() === latestDeadline.getTime()
   ? fmtDate(earliestDeadline)
   : `${fmtDate(earliestDeadline)} – ${fmtDate(latestDeadline)}`;
 const totalMatterCount = cases.length;
 const activeMatterCount = cases.filter(c => isOpenLifecycle(c.lifecycle) || (!c.lifecycle && !c.archived)).length;
+const pendingDemandCount = outcomes.active_demands.filter(d => d.response_status !== "denied").length;
 
 function StatTile({ label, amount, prefix = "", color, sub, confidential = false, theme, href, linkLabel }) {
   const Tag = href ? "a" : "div";
@@ -229,8 +233,8 @@ export function OutcomesTab() {
           fontFamily: "'DM Sans', sans-serif", fontSize: 13,
           color: theme.mutedText, margin: 0, maxWidth: 620,
         }}>
-          {totalMatterCount} matters filed across six jurisdictions. {activeMatterCount} active. The first recoveries are in — one settled,
-          one heading to default judgment, {outcomes.active_demands.length} demands outstanding. All pro se.
+          {totalMatterCount} matters filed across six jurisdictions. {activeMatterCount} active. The first recovery is in —
+          Matter 22 settled and dismissed; {pendingDemandCount} live demand{pendingDemandCount === 1 ? "" : "s"} outstanding. All pro se.
         </p>
       </div>
 
@@ -240,24 +244,32 @@ export function OutcomesTab() {
           label="Confirmed — Settled"
           amount={realized}
           color={GREEN}
-          sub="Matter 22 · Pilot Travel Centers · July 11, 2026"
+          sub="Matter 22 · Pilot Travel Centers · July 14, 2026 · dismissed Aug. 6"
           confidential={outcomes.realized.some(r => r.confidential)}
           theme={theme}
         />
-        <StatTile
-          label="Anticipated — Default Judgment"
-          amount={anticipated}
-          prefix="~"
-          color={AMBER}
-          sub="Matter 12 · Diamond / Alpine · Prove-up Aug. 12, 2026"
-          theme={theme}
-          href="https://claude.ai/code/artifact/41e12d5f-30c9-439d-9f58-2aaf9317a9ac"
-          linkLabel="The Last Mile: judgment → cash walkthrough"
-        />
+        {outcomes.anticipated.length > 0 ? (
+          <StatTile
+            label="Anticipated — Default Judgment"
+            amount={anticipated}
+            prefix="~"
+            color={AMBER}
+            sub="Near-term recoveries booked below"
+            theme={theme}
+          />
+        ) : (
+          <StatTile
+            label="Near-Term Booked"
+            amount={0}
+            color={AMBER}
+            sub="Matter 12 default track closed — defense appeared Aug. 12"
+            theme={theme}
+          />
+        )}
         <StatTile
           label="Combined Near-Term"
           amount={combined}
-          prefix="~"
+          prefix={outcomes.anticipated.length > 0 ? "~" : ""}
           color={BLUE}
           sub={`vs. ${fmt(moderate)} portfolio exposure (moderate)`}
           theme={theme}
@@ -309,11 +321,23 @@ export function OutcomesTab() {
 
       {/* Anticipated */}
       <SectionHeading label="Near-Term" color={AMBER} count={outcomes.anticipated.length} theme={theme} />
-      <div style={{ display: "flex", flexDirection: "column", gap: 12, marginBottom: 32 }}>
-        {outcomes.anticipated.map(item => (
-          <OutcomeCard key={item.matter} item={item} color={AMBER} statusLabel="Default Pending" theme={theme} />
-        ))}
-      </div>
+      {outcomes.anticipated.length === 0 ? (
+        <div style={{
+          background: theme.cardBg,
+          border: `1px solid ${theme.cardBorder}`,
+          borderRadius: 10, padding: "18px 24px", marginBottom: 32,
+          fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: theme.mutedText, lineHeight: 1.6,
+        }}>
+          No near-term recovery is currently booked. Matter 12&apos;s default prove-up did not go forward on Aug. 12, 2026 —
+          Diamond and Alpine appeared through counsel and disputed service. Further CMC Dec. 11, 2026.
+        </div>
+      ) : (
+        <div style={{ display: "flex", flexDirection: "column", gap: 12, marginBottom: 32 }}>
+          {outcomes.anticipated.map(item => (
+            <OutcomeCard key={`${item.matter}-${item.type}`} item={item} color={AMBER} statusLabel="Default Pending" theme={theme} />
+          ))}
+        </div>
+      )}
 
       {/* Active Demands */}
       <SectionHeading label="Active Demands" color="#ea580c" count={outcomes.active_demands.length} theme={theme} />
@@ -326,7 +350,7 @@ export function OutcomesTab() {
         <div style={{
           fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: theme.mutedText, lineHeight: 1.6,
         }}>
-          Pre-filing demands transmitted <strong style={{ color: theme.heading }}>{demandSentRange}</strong> · Response deadlines <strong style={{ color: "#ea580c" }}>{demandDeadlineRange}</strong>
+          Settlement demands · transmitted <strong style={{ color: theme.heading }}>{demandSentRange}</strong> · Response deadlines <strong style={{ color: "#ea580c" }}>{demandDeadlineRange}</strong>
         </div>
         <div>
           <div style={{
@@ -341,7 +365,7 @@ export function OutcomesTab() {
       </div>
       <div style={{ display: "flex", flexDirection: "column", gap: 12, marginBottom: 32 }}>
         {outcomes.active_demands.map(item => (
-          <DemandCard key={item.matter} item={item} theme={theme} />
+          <DemandCard key={`${item.matter}-${item.caption || item.counsel || item.sent_date}`} item={item} theme={theme} />
         ))}
       </div>
 
@@ -361,16 +385,15 @@ export function OutcomesTab() {
           lineHeight: 1.8, margin: 0,
         }}>
           Matter 22 settled in under seven weeks, pro se, before a single proof of service was filed —
-          because the defendant's own adverse-action notice named the registry as the only reason for termination.
-          There was nothing to litigate. Matter 12 reaches a default posture because both defendants chose not
-          to respond. Matters 25 and 26 are already filed and assigned; pre-filing demands of $85,000 each went
-          out citing the Pilot settlement as a resolved precedent. Matter 27 followed the same $85,000 pattern
-          against both Randstad and RK Logistics after a termination that came before the FCRA waiting period
-          even ran; the complaint is already on file (No. 26CV199902, Alameda Sup. Ct.), both defendants were
-          SERVED July 30, 2026, and RK Logistics has since denied the demand through counsel — a response that
-          reaches only the Tameny claim against RK Logistics and leaves Randstad's own exposure untouched. These outcomes are not anomalies; they reflect the quality of the underlying record
-          across all {totalMatterCount} matters. The remaining {fmt(moderate - combined)} at moderate estimate represents
-          {activeMatterCount} active matters where that same record is still at work.
+          because the defendant&apos;s own adverse-action notice named the registry as the only reason for termination —
+          and the action was dismissed with prejudice on August 6, 2026. Matter 12&apos;s default track closed when
+          Diamond and Alpine appeared through counsel on August 12 and disputed service; that case is back on an
+          ordinary litigated path (CMC Dec. 11). FedEx (Matter 25) and UPS (Matter 26) are in federal court after
+          removal — the July pre-filing $85,000 demands are no longer live asks. Matter 27 carries the live
+          settlement track: a $175,000 Randstad-only demand (response Sept. 8) after RK Logistics denied the
+          earlier $85,000 ask through Garcia &amp; Gurney. These outcomes reflect the quality of the underlying
+          record across all {totalMatterCount} matters. The remaining {fmt(moderate - combined)} at moderate estimate
+          represents {activeMatterCount} active matters where that same record is still at work.
         </p>
       </div>
     </div>
