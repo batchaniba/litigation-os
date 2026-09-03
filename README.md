@@ -222,7 +222,6 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 <!-- PORTFOLIO:UPCOMING_DEADLINES:START -->
 | Date | Matter | Event |
 |---|---|---|
-| Sep. 1, 2026 | 30 | Anticipated deemed-rejection date (computed) — Government Claims Act claim, Newanforbi v. Moua, et al. (Matter 30) |
 | Sep. 4, 2026 | 27 | WATCH — Williams said he will attempt to respond by this date. The Aug. 19 $55,000/$85,000 demands expire (and are not being held) at 2:00 p.m. PT Aug. 28. |
 | Sep. 4, 2026 | 32 | Responsive pleading deadline (computed) — Santiago Meza-Gonzalez and Jose Melano, Nforbi v. Meza-Gonzalez, et al. (3:26-cv-08271-PHK, N.D. Cal.) |
 | Sep. 4, 2026 | 33 | Responsive pleading deadline (computed) — Diana Candelaria and Steve Gordon, Nforbi v. Candelaria et al. (3:26-cv-08272-LJC, N.D. Cal.); 21 days from the Aug. 14, 2026 personal service date (FRCP 12(a)(1)(A)(i)). |
