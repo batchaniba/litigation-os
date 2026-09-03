@@ -353,16 +353,6 @@
     "upcoming": true
   },
   {
-    "date": "Sep. 1, 2026",
-    "event": "Anticipated deemed-rejection date (computed) — Government Claims Act claim, Newanforbi v. Moua, et al. (Matter 30); 45 days from the Jul. 18, 2026 filing without written notice of rejection triggers deemed rejection by operation of law under Gov. Code §912.4(c), starting the state-law suit-filing clock",
-    "matters": [
-      30
-    ],
-    "type": "deadline",
-    "upcoming": true,
-    "actor": "agency"
-  },
-  {
     "date": "Sep. 16, 2026",
     "event": "Anticipated filing date (computed) — Complaint v9 (Moua and DOES 1-10), Newanforbi v. Moua, et al. (Matter 30); 15 days after the anticipated Sep. 1, 2026 deemed rejection; within the 2-year §1983 personal-injury limitations period and the Gov. Code §945.6(a)(2) window for state-law claims",
     "matters": [
