@@ -783,7 +783,7 @@
       27
     ],
     "type": "deadline",
-    "upcoming": false,
+    "upcoming": true,
     "actor": "opposing",
     "source": "/documents/matter-27/Settlement Demand - Randstad US LLC (Aug 28 2026).pdf"
   },
@@ -805,7 +805,7 @@
       27
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "opposing",
     "source": "/documents/matter-27/Gmail - Williams Request for Time on Opening Demand through Sep 4 (Aug 28 2026).pdf"
   },
