@@ -606,8 +606,8 @@ const lawyer_fees_raw = [
   {
     number: 36,
     type: "State — Rescinded Employment Offer / Pre-Filing Evidence Review",
-    documentsCount: 25,
-    totalPagesReal: 42,
+    documentsCount: 26,
+    totalPagesReal: 46,
     hours: {
       low: 8,
       high: 15,
@@ -618,7 +618,7 @@ const lawyer_fees_raw = [
       high: 4200,
       mid: 3220
     },
-    notes: "Sep. 5 intake review of 24 short email PDFs and one SMS screenshot. Estimate covers chronology reconstruction, duplicate/reschedule reconciliation, preliminary issue spotting, and evidence-gap analysis only. No complaint, demand, CRD charge, or damages worksheet has been drafted."
+    notes: "Sep. 5 intake review of 24 short email PDFs and one SMS screenshot, plus a four-page findings memorandum. Estimate covers chronology reconstruction, duplicate/reschedule reconciliation, preliminary issue spotting, evidence-gap analysis, and memorandum rendering only. No complaint, demand, CRD charge, or damages worksheet has been drafted."
   }
 ];
 
@@ -627,8 +627,8 @@ export const lawyer_fees = lawyer_fees_raw.map((row) => withMatterIdentity(row))
 export const lawyer_fees_summary = {
   analysisDate: "2026-09-05",
   totalMatters: 36,
-  totalDocumentsAnalyzed: 598,
-  totalPagesReal: 6826,
+  totalDocumentsAnalyzed: 599,
+  totalPagesReal: 6830,
   methodology: {
     blendedHourlyRate: 280,
     rateRange: { seniorPartner: [350, 450], midAssociate: [250, 350], paralegal: [150, 200] },
