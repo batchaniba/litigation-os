@@ -79,6 +79,76 @@
       "source": "/hc-004/",
       "destination": "/hc-004.pdf",
       "permanent": false
+    },
+    {
+      "source": "/serrato-complaint",
+      "destination": "/serrato-complaint.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/serrato-complaint/",
+      "destination": "/serrato-complaint.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/serrato-mtd",
+      "destination": "/serrato-mtd.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/serrato-mtd/",
+      "destination": "/serrato-mtd.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/serrato-opp",
+      "destination": "/serrato-opp.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/serrato-opp/",
+      "destination": "/serrato-opp.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/ups-complaint",
+      "destination": "/ups-complaint.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/ups-complaint/",
+      "destination": "/ups-complaint.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/ups-mtd",
+      "destination": "/ups-mtd.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/ups-mtd/",
+      "destination": "/ups-mtd.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/fedex-complaint",
+      "destination": "/fedex-complaint.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/fedex-complaint/",
+      "destination": "/fedex-complaint.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/fedex-answer",
+      "destination": "/fedex-answer.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/fedex-answer/",
+      "destination": "/fedex-answer.pdf",
+      "permanent": false
     }
   ],
   "headers": [
@@ -151,6 +221,69 @@
         {
           "key": "Content-Disposition",
           "value": "attachment; filename=\"HC-004 Notice and Request for Ruling (Habeas Corpus, Executed Sep 1 2026).pdf\"; filename*=UTF-8''HC-004%20Notice%20and%20Request%20for%20Ruling%20%28Habeas%20Corpus%2C%20Executed%20Sep%201%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/serrato-complaint.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"First Amended Complaint (Doc 10, Filed Jul 15 2026).pdf\"; filename*=UTF-8''First%20Amended%20Complaint%20%28Doc%2010%2C%20Filed%20Jul%2015%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/serrato-mtd.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Defendant Serrato Motion to Dismiss FAC and Strike (Aug 26 2026).pdf\"; filename*=UTF-8''Defendant%20Serrato%20Motion%20to%20Dismiss%20FAC%20and%20Strike%20%28Aug%2026%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/serrato-opp.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Opposition to Serrato MTD with Proof of Service by Email (Aug 27 2026).pdf\"; filename*=UTF-8''Opposition%20to%20Serrato%20MTD%20with%20Proof%20of%20Service%20by%20Email%20%28Aug%2027%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/ups-complaint.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Newanforbi v UPS Complaint.pdf\"; filename*=UTF-8''Newanforbi%20v%20UPS%20Complaint.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/ups-mtd.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Dkt 07 - UPS Rule 12(b)(6) Motion to Dismiss with Exhibits Notice Declaration and Certificate of Service (Filed Aug 26 2026).pdf\"; filename*=UTF-8''Dkt%2007%20-%20UPS%20Rule%2012%28b%29%286%29%20Motion%20to%20Dismiss%20with%20Exhibits%20Notice%20Declaration%20and%20Certificate%20of%20Service%20%28Filed%20Aug%2026%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/fedex-complaint.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Newanforbi v FedEx Complaint.pdf\"; filename*=UTF-8''Newanforbi%20v%20FedEx%20Complaint.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/fedex-answer.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Dkt 04 - Answer to Complaint (Filed Aug 31 2026).pdf\"; filename*=UTF-8''Dkt%2004%20-%20Answer%20to%20Complaint%20%28Filed%20Aug%2031%202026%29.pdf"
         }
       ]
     }
