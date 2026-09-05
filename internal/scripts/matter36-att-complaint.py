@@ -295,7 +295,7 @@ CONTENT = [
     ("PARA", "168. Plaintiff seeks an injunction requiring Defendants to cease prohibited employment use of California registry information; preserve and disclose the source and audit trail of AT&T screening; correct or segregate unlawfully used data; and implement lawful pre-adverse procedures."),
     ("PARA", "169. Plaintiff also seeks restitution and declaratory relief ancillary to the injunction to the extent authorized by Business and Professions Code section 17203."),
     ("HEADER", "XV.\nPRESERVATION OF EVIDENCE"),
-    ("PARA", "170. Defendants are on notice to preserve the AT&T Workday record for C-1690172 and requisitions R-106742 and R-107776; offer versions and acceptance logs; manager approvals; LTI/ACTFL score and transmission data; First Advantage client order 132156, report, component, adjudication, access and cancellation logs; ID.me events; text and email communications; and policies governing registry, FCRA, ICRAA, and fair-chance review."),
+    ("PARA", "170. Defendants are on notice to preserve the AT&T Workday record for C-1690172 and requisitions R-106742 and R-107776; offer versions and acceptance logs; manager approvals; LTI/ACTFL score and transmission data; the individual First Advantage order under client account 132156, report, component, adjudication, access and cancellation logs; ID.me events; text and email communications; and policies governing registry, FCRA, ICRAA, and fair-chance review."),
     ("PARA", "171. Relevant electronically stored information includes audit fields, event timestamps, reason codes, API messages, report views, internal chats, emails, SMS, candidate-status history, and data-retention records from May 16 through June 30, 2026."),
     ("PARA", "172. The same First Advantage identifiers and prior UPS report are relevant to whether First Advantage reused, matched, or retained registry data concerning Plaintiff."),
     ("HEADER", "XVI.\nPRAYER FOR RELIEF"),
@@ -399,7 +399,7 @@ def build(out: Path, exec_date: str, execute: bool) -> Path:
     for kind, text in CONTENT:
         if kind == "NOTICE":
             d.ensure_space(7)
-            d.write_wrapped(text, bold=True, center=True)
+            d.write_wrapped(text, bold=True)
             d.blank_line()
         elif kind == "HEADER":
             lines = text.split("\n")
