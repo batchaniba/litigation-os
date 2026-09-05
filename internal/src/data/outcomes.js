@@ -18,62 +18,30 @@ const outcomes_raw = {
       matter: 22,
       type: "settlement",
       status: "SETTLED",
-      date: "July 11, 2026",
+      date: "July 14, 2026",
       amount: 35000,
       confidential: true,
       speed: "Under 6 weeks from filing",
       served: false,
       claims: "PC §290.46(j)(2)(E) Wrongful Termination; Tameny; ICRAA; UCL §17200",
-      notes: "Defendant's own Post-Adverse Action Notice named the registry as the sole basis for termination — no ambiguity on liability. Resolved pro se before service was completed. First portfolio matter to reach a negotiated resolution. FLAGGED: this settlement's case number and existence have since been cited by name as persuasive precedent in demand letters to three other corporate defendants (Matters 25, 26, 27). Only the signature page of the signed release is in the document repository (see Matter 22) — the confidentiality clause's actual scope (amount only, vs. the fact/existence of settlement) has not been confirmed against the full release text. Worth resolving before this case number is cited again."
+      notes: "Defendant's own Post-Adverse Action Notice named the registry as the sole basis for termination — no ambiguity on liability. Resolved pro se before service was completed. First portfolio matter to reach a negotiated resolution. CIV-110 Request for Dismissal (entire action with prejudice) filed and entered August 6, 2026 — settled action closed. FLAGGED: this settlement's case number and existence have since been cited by name as persuasive precedent in demand letters to other corporate defendants (Matters 25, 26, 27). Only the signature page of the signed release is in the document repository (see Matter 22) — the confidentiality clause's actual scope (amount only, vs. the fact/existence of settlement) has not been confirmed against the full release text. Worth resolving before this case number is cited again."
     }
   ],
-  anticipated: [
-    {
-      matter: 12,
-      caption: "Ngwa Nforbi v. Diamond Truck Sales, Inc. et al.",
-      type: "default_judgment",
-      status: "DEFAULT PENDING",
-      date: "Aug. 12, 2026",
-      amount: 78000,
-      defendants: "Diamond Truck Sales, Inc.; Alpine Truck Sales, Inc.",
-      claims: "Consumer Fraud / Defective Vehicle",
-      notes: "June 15, 2026 CIV-100 seeking default against Diamond and Alpine was docketed Not Entered (Alpine not yet served; Notice to Filing Party). Alpine personally served July 1, 2026; response deadline July 31, 2026 — no appearance. Plaintiff mailed complete renewed default judgment packets for both Diamond and Alpine on July 31, 2026 via USPS Priority Mail to Stockton court (tracking 9505 5114 6005 6212 9832 68; expected delivery 08/03/2026); as of Aug. 1, 2026 ROA printout those mailings had not yet posted. Clerk stated by phone that the August 12, 2026 CMC (8:30 AM, Dept. 11B, Hon. Robert T. Waters) will be converted to a default prove-up hearing."
-    }
-  ],
+  // Matter 12 default track closed Aug. 12, 2026 when Diamond/Alpine appeared through
+  // Gulomjon Azimov and disputed service — no near-term recovery is currently booked.
+  anticipated: [],
   active_demands: [
-    {
-      matter: 25,
-      demand_amount: 85000,
-      sent_date: "July 12, 2026",
-      deadline: "July 26, 2026",
-      deadline_time: "5:00 PM PT",
-      counsel: "Allison Aguirre Kray, Esq. (Cal. Bar No. 312544)",
-      counsel_email: "allison.kray@fedex.com",
-      response_status: "no response",
-      notes: "Complaint filed July 15 enclosed as Exhibit A. Pilot settlement (STK-CV-UWT-2026-0007649) cited as precedent. Litigation hold notice issued. 8 exhibits (March 2025 adverse action chain). No response received from FedEx by the July 26, 2026 deadline; non-response after the complaint is already filed and assigned strengthens settlement posture. SERVED July 24, 2026 on Ct Corporation System (Jaqueline Mejia, CA Authorized Employee) per LA County Sheriff's Civil File Status; proof of service to be filed with the court."
-    },
-    {
-      matter: 26,
-      demand_amount: 85000,
-      sent_date: "July 12, 2026",
-      deadline: "July 26, 2026",
-      deadline_time: "5:00 PM PT",
-      counsel: "Norman M. Brothers Jr., Esq.",
-      counsel_email: "norman.brothers@ups.com",
-      response_status: "no response",
-      notes: "Complaint filed July 15 enclosed as Exhibit A. Pilot settlement (STK-CV-UWT-2026-0007649) cited as precedent. Litigation hold notice issued. 4 exhibits (July 2024 adverse action chain). No response received from UPS by the July 26, 2026 deadline; non-response after the complaint is already filed and assigned strengthens settlement posture. SERVED July 22, 2026 on Josh Swindell, Authorized Agent, per Sacramento County Sheriff's Civil File Status; proof of service to be filed with the court."
-    },
     {
       matter: 27,
       caption: "Newanforbi v. Randstad US, LLC",
-      demand_amount: 85000,
-      sent_date: "July 20, 2026",
-      deadline: "August 2, 2026",
+      demand_amount: 175000,
+      sent_date: "August 28, 2026",
+      deadline: "September 8, 2026",
       deadline_time: "5:00 PM PT",
-      counsel: "Randstad Legal / Privacy Dept.",
-      counsel_email: "privacyofficer@randstad.com",
+      counsel: "Chadwick L. Williams, Esq. (Kabat Chapman & Ozmer LLP)",
+      counsel_email: "cwilliams@kcozlaw.com",
       response_status: "pending",
-      notes: "Verified Complaint for Damages (Alameda Sup. Ct., executed and e-filed July 20, 2026 — Case No. 26CV199902 assigned, Hon. Karin Schwartz, Dept. 20) enclosed as the pre-filing exhibit. Employment terminated July 15, 2026 — only 2 business days after the July 13 FCRA pre-adverse notice, short of the 5-business-day waiting period. Cites Tameny, Evid. Code §669, and Bus. & Prof. Code §17200. Non-monetary terms: written confirmation of a policy change, correction of personnel record to 'eligible for rehire,' no non-disparagement clause, confidentiality limited to the settlement amount only. Also mailed to Legal Dept./Office of General Counsel, 1 Overton Park Drive, Suite 300, Atlanta, GA 30339. cc: call.center@, rus-privacy@, hrsupport@randstadusa.com, complianceofficer@randstad.com. As of July 21, 2026, Randstad has not responded; its own exposure is unaffected by RK Logistics' denial — Randstad ordered the InfoMart background check, received the pre-adverse notice, and issued the July 15 termination. SERVED July 30, 2026, 1:34 PM (Josh Swindell, Authorized Agent) per Sacramento County Sheriff Civil File Status — responsive pleading due August 31, 2026."
+      notes: "Post-expiry successor to the Aug. 19 $55,000 Randstad-only / $85,000 global figures (those expired 2:00 p.m. PT Aug. 28 and were not held). $175,000.00 Randstad-only, inclusive, payable within 15 business days after a signed agreement. Global number is its own number on request — not this demand plus a token for RK. Response due 5:00 p.m. PT Sept. 8, 2026 (self-imposed; one week before Randstad's Sept. 15 answer date). Williams said Aug. 28 he would attempt to respond by Sept. 4 — that watch is a number into this field, not acceptance of the expired $55k/$85k. Pleading clocks: Randstad Sept. 15 (Aug. 18 15-day extension with Williams); RK Logistics Sept. 14 (Garcia request granted; no further). Evid. Code §1152 / FRE 408. Case No. 26CV199902, Hon. Karin Schwartz, Dept. 20; CMC Dec. 17, 2026."
     },
     {
       matter: 27,
@@ -86,7 +54,7 @@ const outcomes_raw = {
       counsel_email: "",
       response_status: "denied",
       response_date: "July 21, 2026",
-      notes: "Verified Complaint for Damages (Alameda Sup. Ct., executed and e-filed July 20, 2026 — Case No. 26CV199902 assigned, Hon. Karin Schwartz, Dept. 20) enclosed as the pre-filing exhibit. InfoMart report shows RK Logistics as the billing client that configured the screening criteria triggering the 'NEEDS APPROVAL' flag. Cites Tameny, Evid. Code §669, and Bus. & Prof. Code §17200. Non-monetary terms: written confirmation of a policy change, correction of personnel record to 'eligible for rehire,' no non-disparagement clause, confidentiality limited to the settlement amount only. Also mailed to Legal Dept./HR, 47020 Kato Road, Fremont, CA 94538. cc: peter.odonnell@, nikki.michaux@rklogisticsgroup.com. On July 21, 2026, RK Logistics responded through counsel Garcia & Gurney, ALC, denying liability on two grounds: (1) Randstad, not RK Logistics, was the employer — an argument that reaches only the Tameny claim and is in tension with RK Logistics' own Transportation Manager, Jack Altares, who made the placement-rejection call in writing; and (2) the rejection was MVR-based, not registry-based, citing a SambaSafety report showing a commercial (Class A) disqualification — inapplicable to the non-commercial Class C position, and predating Plaintiff's June 11, 2026 Class C license reissue. SERVED July 30, 2026, 1:34 PM (Josh Swindell, Authorized Agent) per Sacramento County Sheriff Civil File Status — responsive pleading due August 31, 2026."
+      notes: "Pre-filing $85,000 demand denied July 21 through Garcia & Gurney on (1) Randstad-was-the-employer and (2) MVR/Class A grounds — both in tension with RK's own Transportation Manager email and Plaintiff's Class C license. Not part of the live Aug. 28 $175,000 Randstad-only ask; any global remains a separate number. Responsive pleading extended to Sept. 14, 2026 (single extension; no further). Case No. 26CV199902."
     }
   ],
   portfolio_exposure: {

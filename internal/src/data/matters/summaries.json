@@ -831,15 +831,15 @@
       }
     ],
     "evidenceCount": 16,
-    "documentCount": 53
+    "documentCount": 60
   },
   {
     "number": 29,
     "caption": "Newanforbi v. Amazon.com Services, LLC",
-    "case_no": "3:26-cv-09249-ASK",
-    "court": "USDC N.D. Cal.",
+    "case_no": "4:26-cv-09249-ASK",
+    "court": "USDC N.D. Cal. (Oakland; formerly 3:26-cv-09249-ASK)",
     "claims": "PC §290.46(j)(2)(E) Violation, Fair Chance Act (Gov. Code §12952), FCRA, ICRAA, Invasion of Privacy, UCL §17200, IIED",
-    "status_label": "Amazon Sep. 22; Accurate stip signed, still Sep. 8",
+    "status_label": "Both defendants Sep. 22; CMC Dec. 1",
     "lifecycle": "active",
     "proceeding": "federal_civil",
     "phase": "responsive_deadline",
@@ -875,8 +875,8 @@
       "Intentional Infliction of Emotional Distress"
     ],
     "archived": false,
-    "evidenceCount": 30,
-    "documentCount": 102
+    "evidenceCount": 34,
+    "documentCount": 106
   },
   {
     "number": 30,
@@ -957,7 +957,7 @@
         "location": "CHP Modesto Area",
         "served": false,
         "dateServed": null,
-        "note": "Aug. 13 Stanislaus SER-001 / purported Aug. 14 attempt did not produce a filed Rule 4(l) return. Melano FAC-mail POS (Aug. 21) states Rule 4 as to Meza incomplete. Private process-server re-service bundle prepared Aug. 25, 2026 (Modesto Area, 4030 Kiernan Ave.)."
+        "note": "Aug. 13 Stanislaus SER-001 / purported Aug. 14 attempt did not produce a filed Rule 4(l) return. Private process-server re-service bundle prepared Aug. 25, 2026 (Modesto Area, 4030 Kiernan Ave.)."
       },
       {
         "name": "Jose Melano",

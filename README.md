@@ -172,7 +172,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | 26 | Newanforbi v. United Parcel Service, Inc. | 2:26-cv-02847-DAD-CKD | USDC E.D. Cal. (Sacramento Div.) | Federal | Opp on file (Dkt. 10) — hearing Oct. 5 |
 | 27 | Newanforbi v. Randstad, et al. | 26CV199902 | Alameda Sup. Ct. | State | $175k Randstad (post-fuse); RK Sep. 14 |
 | 28 | Newanforbi v. Shannon Smith, LCSW, CEO, et al. | 3:26-cv-07504-LJC | USDC N.D. Cal. | Federal | SLB accepted Aug. 31 — file POS |
-| 29 | Newanforbi v. Amazon.com Services, LLC | 3:26-cv-09249-ASK | USDC N.D. Cal. | Federal | Amazon Sep. 22; Accurate stip signed, still Sep. 8 |
+| 29 | Newanforbi v. Amazon.com Services, LLC | 4:26-cv-09249-ASK | USDC N.D. Cal. (Oakland; formerly 3:26-cv-09249-ASK) | Federal | Both defendants Sep. 22; CMC Dec. 1 |
 | 30 | Newanforbi v. Moua, et al. | TBD | USDC N.D. Cal. | Federal | Pre-filing — GCA claim pending; Moua-only complaint ready |
 | 31 | Newanforbi v. First Advantage LLC | TBD | San Joaquin Sup. Ct. (anticipated) | State | Pre-filing |
 | 32 | Nforbi v. Meza-Gonzalez, et al | 3:26-cv-08271-PHK | USDC N.D. Cal. (related to Serrato 4:26-cv-05953-ASK per Aug. 24, 2026 order; also related Candelaria 3:26-cv-08272-LJC) | Federal | Meza unserved — Li accept-service motion drafted |
@@ -222,15 +222,12 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 <!-- PORTFOLIO:UPCOMING_DEADLINES:START -->
 | Date | Matter | Event |
 |---|---|---|
-| Sep. 4, 2026 | 27 | WATCH — Williams said he will attempt to respond by this date. The Aug. 19 $55,000/$85,000 demands expire (and are not being held) at 2:00 p.m. PT Aug. 28. |
-| Sep. 4, 2026 | 32 | Responsive pleading deadline (computed) — Santiago Meza-Gonzalez and Jose Melano, Nforbi v. Meza-Gonzalez, et al. (3:26-cv-08271-PHK, N.D. Cal.) |
-| Sep. 4, 2026 | 33 | Responsive pleading deadline (computed) — Diana Candelaria and Steve Gordon, Nforbi v. Candelaria et al. (3:26-cv-08272-LJC, N.D. Cal.); 21 days from the Aug. 14, 2026 personal service date (FRCP 12(a)(1)(A)(i)). |
-| Sep. 8, 2026 | 29 | Amazon / Accurate Background responsive pleading deadline (computed) — Newanforbi v. Amazon.com Services, LLC et al. (Matter 29, N.D. Cal. No. 3:26-cv-09249-ASK). Fed. R. Civ. |
 | Sep. 8, 2026 | 27 | Response deadline (self-imposed) — post-expiry $175,000 Randstad-only settlement demand. Williams to accept, counter, or request a call by 5:00 p.m. PT; one week before Randstad's Sept. 15 responsive-pleading date. |
 | Sep. 8, 2026 | 24 | Deadline — Initial disclosures (FRCP 26(a)(1)) and Joint Case Management Statement — Newanforbi v. Serrato (4:26-cv-05953-ASK) |
 | Sep. 9, 2026 | 27 | Meet-and-confer deadline (computed) as to The RK Logistics Group, Inc. — Newanforbi v. Randstad US, LLC et al. (26CV199902) |
 | Sep. 10, 2026 | 27 | Meet-and-confer deadline (computed) as to Randstad US, LLC — Newanforbi v. Randstad US, LLC et al. (26CV199902) |
 | Sep. 11, 2026 | 12 | Azimov response due (courtesy) — whether Diamond Truck Sales, Inc. and Alpine Truck Sales, Inc. will (A) execute a Notice of Acknowledgment of Receipt or equivalent stipulation accepting the Amended Summons and FAC, or… |
+| Sep. 14, 2026 | 29 | Deadline to file Consent or Declination to Magistrate Judge Jurisdiction — Plaintiff or the removing party, Newanforbi v. |
 | Sep. 14, 2026 | 27 | Extended responsive-pleading deadline — The RK Logistics Group, Inc. only, Newanforbi v. Randstad US, LLC et al. (26CV199902) |
 | Sep. 15, 2026 | 27 | Extended responsive-pleading deadline — Randstad US, LLC only, Newanforbi v. Randstad US, LLC et al. (26CV199902); 15 days past the Aug. 31, 2026 computed deadline, agreed on the Aug. 18, 2026 call with Chadwick L. |
 | Sep. 15, 2026 | 24 | Initial Case Management Conference — 1:30 PM via Zoom (cand.uscourts.gov/ask); Hon. Ajay S. Krishnan — Newanforbi v. Serrato (4:26-cv-05953-ASK) |
@@ -240,7 +237,8 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | Sep. 21, 2026 | 28 | Responsive pleading deadline (computed) — Shannon Smith, LCSW, and HOPE Psychotherapy, Inc., Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504-LJC) |
 | Sep. 21, 2026 | 26 | 28 U.S.C. §1447(c) remand window closes (computed) — Newanforbi v. United Parcel Service, Inc., USDC E.D. Cal. No. 1:26-at-03195. |
 | Sep. 21, 2026 | 26 | Consent to / Decline of Magistrate Judge jurisdiction — outer target, Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). |
-| Sep. 22, 2026 | 29 | Amazon.com Services, LLC responsive pleading deadline (extended) — Newanforbi v. Amazon.com Services, LLC et al. (Matter 29, N.D. Cal. No. 3:26-cv-09249-ASK). |
+| Sep. 22, 2026 | 29 | Accurate Background LLC responsive pleading deadline (extended) — Newanforbi v. Amazon.com Services, LLC et al. (Matter 29, N.D. Cal. No. 4:26-cv-09249-ASK). |
+| Sep. 22, 2026 | 29 | Amazon.com Services, LLC responsive pleading deadline (extended) — Newanforbi v. Amazon.com Services, LLC et al. (Matter 29, N.D. Cal. No. 4:26-cv-09249-ASK). |
 | Sep. 30, 2026 | 29 | 28 U.S.C. §1447(c) remand window closes (computed) — Newanforbi v. Amazon.com Services, LLC et al., USDC N.D. Cal. No. 3:26-cv-09249-ASK. |
 | Sep. 30, 2026 | 24 | Hearing on Defendant Serrato's Motion to Dismiss FAC (Dkt. 18) — 1:30 p.m., Mag. Ajay S. Krishnan, Oakland Courtroom 4, 3rd Floor — Newanforbi v. Serrato (4:26-cv-05953-ASK). |
 | Oct. 1, 2026 | 19 | Habeas ruling calendar (computed) — Newanforbi v. Macomber (C2604791). |
@@ -256,9 +254,12 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | Oct. 28, 2026 | 20 | Case Management Conference (continued from Sep. 2, 2026) — Newanforbi v. CHP et al. (26CV191136), 4:00 p.m., Dept. 25, Rene C. Davidson Courthouse, Hon. Jenna M. Whitman. |
 | Nov. 1, 2026 | 1, 2, 32 | CCP §335.1 two-year statute of limitations (computed) backstop, running from the Nov. 1, 2024 incident. (1) Matter 1's Fourth Amendment §1983 claim (borrowed two-year period): Matter 1 was voluntarily dismissed without… |
 | Nov. 5, 2026 | 33 | Deadline to make initial disclosures (Fed. R. Civ. P. 26(a)(1)) and to file the Joint Case Management Statement (Standing Order for All Judges of the Northern District of California) — Nforbi v. |
+| Nov. 10, 2026 | 29 | Deadline to file ADR Certification (ADR L.R. 3) and to meet and confer regarding initial disclosures, early settlement, ADR process selection, and a discovery plan (Fed. R. Civ. P. 26(f)) — Newanforbi v. |
 | Nov. 12, 2026 | 33 | Initial Case Management Conference, 1:30 p.m. by Zoom (cand.uscourts.gov/ljc) before Magistrate Judge Lisa J. Cisneros — Nforbi v. Candelaria et al. (3:26-cv-08272-LJC), set by the Dkt. 4 order. |
 | Nov. 12, 2026 | 32 | Deadline to file ADR Certification (ADR L.R. 3) and to meet and confer regarding initial disclosures, early settlement, ADR process selection, and a discovery plan (Fed. R. Civ. P. 26(f)) — Nforbi v. |
+| Nov. 24, 2026 | 29 | Deadline to make initial disclosures (Fed. R. Civ. P. 26(a)(1)) and to file the Joint Case Management Statement (Standing Order for All Judges of the Northern District of California) — Newanforbi v. |
 | Nov. 25, 2026 | 32 | Deadline to make initial disclosures (Fed. R. Civ. P. 26(a)(1)) and to file the Joint Case Management Statement (Standing Order for All Judges of the Northern District of California) — Nforbi v. |
+| Dec. 1, 2026 | 29 | Initial Case Management Conference, 1:30 p.m. by Zoom (cand.uscourts.gov/ask) before Magistrate Judge Ajay S. Krishnan — Newanforbi v. Amazon.com Services, LLC et al. (4:26-cv-09249-ASK), set by Dkt. 9. |
 | Dec. 2, 2026 | 32 | Initial Case Management Conference, 11:00 a.m., Courtroom F, 450 Golden Gate Ave., San Francisco, before Magistrate Judge Peter H. Kang — Nforbi v. Meza-Gonzalez, et al. (3:26-cv-08271-PHK), set by the Dkt. 4 order. |
 | Dec. 11, 2026 | 12 | Further Case Management Conference, 8:30 AM, Dept. 11B, Hon. Robert T. Waters — Ngwa Nforbi v. |
 | Dec. 17, 2026 | 27 | Case Management Conference, Newanforbi v. Randstad US LLC and RK Logistics Group, Inc. (Matter 27) — Hon. Karin Schwartz, Dept. 20, 3:00 p.m. |
