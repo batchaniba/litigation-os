@@ -27,6 +27,7 @@
   "damages": "$249,000 – $1,510,000+: Lost CDL wages and career displacement (documented $109,408+ in 2022–2024 W-2s; $72K/yr but-for rate); §1983 compensatory and punitive damages (Shannon Smith individually); Bane Act §52.1 statutory damages ($25,000 per violation; multiple violations alleged); RICO treble damages (3× enterprise economic harm under 18 U.S.C. §1964(c)); attorney fees (42 U.S.C. §1988; RICO fee shifting).",
   "risk": "Dkt. 11 (Aug. 26): Court declined sua sponte preclusion screening after fee payment; Defendants must raise preclusion post-service — oppose on exhaustion-only state dismissal and Shannon Smith not a state-court party. Favorable on state-actor theory — West v. Atkins controls for CDCR contractors. Monell requires proving a custom or policy: supported by blanket retention policy confirmed in In re Dwyer and HOPE's own Clinical Operational Manual (HOPE_000294 — verbatim 'Aftercare Phase' language tying treatment to full parole term). RICO adds substantial complexity and risk of dismissal (pattern and enterprise must be pleaded with particularity per Twombly); preserved as an aggressive-scenario multiplier. Insurance coverage through Philadelphia Indemnity ($1M per-incident / $5M aggregate) creates a realistic settlement floor. Shannon Smith's individual capacity exposure creates personal settlement pressure independent of HOPE's corporate coverage. 542 pages of discovery already in hand from the dismissed state case provides a substantial evidentiary head start unavailable in most §1983 cases at the filing stage.",
   "evidence": [
+    "Plaintiff's Civil L.R. 3-15 Certification of Conflicts, Interested Entities and Persons, and Citizenship — EXECUTED Sep. 4, 2026, unfiled",
     "AO 440 Summons Issued Aug. 31, 2026 — Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504-LJC). Combined summons: HOPE Psychotherapy, Inc. d/b/a HOPE Program c/o Shannon Smith, LCSW, and Shannon Smith individually, 1245 B Street, Hayward, CA 94541. Dated AUG 31 2026; clerk Mark B. Busby; signed Charles Ho, Deputy Clerk. Cropped from the Aug. 31 FedEx Office A3 scan. Not yet served.",
     "HOPE's Clinical Operational Manual (HOPE_000001–542, produced in Matter 5)",
     "Maintenance Curriculum, Employee Handbook, Preparatory Treatment Manual (Matter 5 discovery)",
@@ -45,6 +46,14 @@
     "West v. Atkins, 487 U.S. 42 (1988) — state-actor doctrine for CDCR contractors"
   ],
   "documents": [
+    {
+      "path": "/documents/matter-28/Certification of Conflicts Interested Entities and Persons (Smith HOPE) (Sep 4 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-28/Proof of Service - Certification of Conflicts (Smith HOPE) (Sep 4 2026).pdf",
+      "filed": false
+    },
     {
       "path": "/documents/matter-28/Dkt 11 - Order Regarding Filing Fee IFP and Directing Service (Filed Aug 26 2026).pdf",
       "filed": true
