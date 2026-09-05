@@ -23,7 +23,7 @@ const matters = Object.entries(matterModules)
 
 describe("prose length budgets", () => {
   it("loads every matter record", () => {
-    expect(matters.length).toBe(35);
+    expect(matters.length).toBe(36);
   });
 
   it("counts words without being fooled by runs of whitespace", () => {
