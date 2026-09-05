@@ -822,6 +822,23 @@ const matter_damages_raw = [
         aggressive: 690000
       }
     ]
+  },
+  {
+    number: 36,
+    claims: "Rescinded AT&T Offer — Promissory Estoppel / Contract; FEHA and Consumer-Report Theories Under Investigation",
+    risk: "Not complaint-ready. The written offer terms, acceptance, detrimental reliance, Spanish score/rubric, employing entity, and First Advantage screening file are missing. The recruiter’s express Spanish-test explanation supports causation for rescission but also supplies a facially legitimate criterion for an expressly bilingual role.",
+    settlement_note: "No demand and no damages valuation. Hold at $0 until evidence shows an accepted promise plus actual reliance/loss, or actionable discrimination or consumer-report use. Do not import the statutory values used in the registry-background-check matters without proof of registry use.",
+    conservative: 0,
+    moderate: 0,
+    aggressive: 0,
+    components: [
+      {
+        label: "Reserved — obtain formal offer, acceptance/reliance proof, Spanish assessment file, and First Advantage report before valuation",
+        conservative: 0,
+        moderate: 0,
+        aggressive: 0
+      }
+    ]
   }
 ];
 

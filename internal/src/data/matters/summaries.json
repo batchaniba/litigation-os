@@ -1094,5 +1094,33 @@
     ],
     "evidenceCount": 10,
     "documentCount": 18
+  },
+  {
+    "number": 36,
+    "caption": "Newanforbi v. AT&T, et al.",
+    "case_no": "TBD",
+    "court": "San Joaquin Sup. Ct. (potential; venue and employer entity unconfirmed)",
+    "claims": "Rescinded Employment Offer — Promissory Estoppel / Breach (investigation); FEHA National-Origin / Language Discrimination (administrative-exhaustion review); FCRA / ICRAA and Fair Chance Act (contingent on proof of background-information use)",
+    "status_label": "Pre-filing — offer rescission; proof gaps",
+    "lifecycle": "pre_filing",
+    "proceeding": "state_civil",
+    "phase": "pre_filing",
+    "filed": "Not yet filed",
+    "judge": "TBD",
+    "cluster": 3,
+    "type": "State",
+    "archived": false,
+    "note": "Do not draft from the present record. First obtain the formal offer, Spanish score/rating, candidate-history audit, application statuses, screening file, and employing-entity identity.",
+    "defendants": "Potential employer defendant presently identified only by the record as “AT&T” / “AT&T Non Management” (precise employing entity and owner/operator of the Lodi store must be confirmed; do not assume parent AT&T Inc. employed Plaintiff); Richard Patterson (AT&T recruiter and percipient witness, not presently identified as a proposed defendant); First Advantage (screening vendor, factual participant only unless its file shows actionable reporting conduct); DOES 1–20",
+    "causes": [
+      "[INVESTIGATE] Promissory Estoppel — written May 28 offer and immediate onboarding prompts; requires proof of a clear promise, reasonable detrimental reliance, and resulting loss",
+      "[INVESTIGATE] Breach of Written or Implied Contract / Implied Covenant — contingent on obtaining the formal offer, proving acceptance, and identifying any conditions or at-will language",
+      "[WEAK ON PRESENT RECORD] FEHA National-Origin / Ancestry Discrimination (Gov. Code § 12940) — language can operate as a national-origin proxy, but Spanish fluency appears facially job-related for the expressly bilingual role and the recruiter identified a failed proficiency assessment as the reason",
+      "[CONTINGENT] California Fair Chance Act (Gov. Code § 12952) — only if AT&T considered conviction history before a conditional offer or rescinded because of it without the required assessment/notices; no present exhibit shows such use",
+      "[CONTINGENT] FCRA (15 U.S.C. § 1681b(b)) and ICRAA (Civ. Code § 1786 et seq.) — First Advantage invited screening after the offer, but no report, disclosure/authorization, pre-adverse notice, or screening-based decision is presently in the record",
+      "[CONTINGENT / NO PRESENT FACTUAL BASIS] Penal Code § 290.46(j)(2)(E) and related UCL theory — preserve only if the screening file proves employment use of Megan’s Law registry information; timing and the recruiter’s express Spanish-test explanation currently point elsewhere"
+    ],
+    "evidenceCount": 12,
+    "documentCount": 25
   }
 ]
