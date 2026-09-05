@@ -4,7 +4,7 @@
   "case_no": "TBD",
   "court": "San Joaquin Sup. Ct. (proposed; review draft not filed)",
   "claims": "Penal Code § 290.46(j); FCRA § 1681b(b)(3); ICRAA §§ 1786.40, 1786.50; Breach of Contract; Implied Covenant; Promissory Estoppel; Negligent Misrepresentation; Fraud / Concealment; UCL § 17200 (alternative pleading)",
-  "status": "UNEXECUTED REVIEW DRAFT — A nine-count verified complaint is prepared for proposed execution September 8, 2026 against AT&T Mobility Services LLC and First Advantage Background Services Corp. It pleads registry-use, FCRA, and ICRAA theories on information and belief from the two-hour offer-rescission chronology and First Advantage’s documented 2024 registry match to Plaintiff, with independent offer-based claims pleaded in the alternative. It is deliberately unsigned and must not be filed until Plaintiff personally confirms offer acceptance, onboarding/screening completion, each alleged act of reliance, economic loss, and nonreceipt of pre-adverse materials. No CRD charge/right-to-sue appears in the record, so FEHA and Fair Chance counts are preserved but not included.",
+  "status": "UNEXECUTED REVIEW DRAFT — A nine-count complaint is prepared for proposed September 8, 2026 execution against AT&T Mobility Services LLC and First Advantage Background Services Corp. It is deliberately unsigned and must not be filed until Plaintiff confirms acceptance, onboarding/screening completion, reliance, loss, and nonreceipt of pre-adverse materials. FEHA and Fair Chance counts are preserved but omitted because no CRD right-to-sue appears in the record.",
   "status_label": "Review draft — execution gates remain",
   "lifecycle": "pre_filing",
   "proceeding": "state_civil",
@@ -43,8 +43,7 @@
     "Workday “Welcome to the team” email — May 28, 2026 at 10:13 a.m.; official offer for R-106742",
     "Workday offer-process task emails — review documents at 10:15 a.m.; government identifiers at 10:16 a.m.; personal information at 10:17 a.m.",
     "First Advantage task invitation for AT&T Non Management — May 28, 2026 at 10:19 a.m.; FCRA disclosure/authorization and optional ID.me language",
-    "SMS screenshot attributed to Richard Patterson AT&T — May 28, 2026 at 12:23 p.m.; manager would not proceed because a Spanish speaker was needed and Plaintiff did not pass the Spanish assessment; Plaintiff’s acknowledgment preserved"
-    ,
+    "SMS screenshot attributed to Richard Patterson AT&T — May 28, 2026 at 12:23 p.m.; manager would not proceed because a Spanish speaker was needed and Plaintiff did not pass the Spanish assessment; Plaintiff’s acknowledgment preserved",
     "User-supplied formal-offer terms — $24.95/hour, targeted variable compensation, tentative June 15, 2026 start, formal-acceptance and standardized-background-check contingencies; referenced offer-letter PDF is not yet in the repository",
     "First Advantage UPS report, July 2024 — prior report on this Plaintiff identified a DOJ website / National Sex Offender Registry search, source of record California Sex Offender Registry, as Decisional and produced an overall Ineligible result; corroborates vendor capability and prior match, not May 2026 AT&T transmission"
   ],

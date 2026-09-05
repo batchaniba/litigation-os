@@ -14,14 +14,14 @@ numbers, so a citation in a draft can be traced to a source page rather than tru
 
 | | |
 |---|---|
-| PDFs scanned | 714 |
-| Pages | 7,628 |
-| Readable | 714 |
-| **No text layer (not searched)** | **0** |
+| PDFs scanned | 849 |
+| Pages | 8,304 |
+| Readable | 841 |
+| **No text layer (not searched)** | **8** |
 | Unreadable | 0 |
-| Citation scan skipped | 169 |
-| Distinct citations | 3,656 |
-| Total occurrences | 14,717 |
+| Citation scan skipped | 205 |
+| Distinct citations | 3,723 |
+| Total occurrences | 15,236 |
 
 A PDF with no text layer yields no citations. That is **not** the same as containing
 none — those documents are unsearched until OCR'd. Blank form-library templates,
@@ -33,16 +33,16 @@ boilerplate (and OCR noise) is not this litigant's authority.
 
 | Kind | Distinct |
 |---|---|
-| `case_name` | 1060 |
-| `authority` | 967 |
-| `case_reporter` | 801 |
-| `statute_state` | 251 |
-| `section_shorthand` | 163 |
-| `rule_local` | 110 |
-| `rule_federal` | 94 |
-| `statute_federal` | 77 |
+| `case_name` | 1078 |
+| `authority` | 975 |
+| `case_reporter` | 807 |
+| `statute_state` | 257 |
+| `section_shorthand` | 167 |
+| `rule_local` | 120 |
+| `rule_federal` | 102 |
+| `statute_federal` | 83 |
 | `case_westlaw` | 57 |
-| `rule_state` | 47 |
+| `rule_state` | 48 |
 | `regulation_state` | 12 |
 | `regulation_federal` | 10 |
 | `constitutional` | 7 |
@@ -61,24 +61,25 @@ folder-derived attribution reported zero for Matters 1, 2, 7 and 20.
 |---|---|---|
 | 12 | Brendan Ngwa Nforbi v. Diamond Truck Sales,  | 121 |
 | 19 | Newanforbi v. Macomber | 100 |
-| 20 | Newanforbi v. California Highway Patrol, et  | 288 |
-| 24 | Newanforbi v. Serrato | 296 |
-| 25 | Newanforbi v. Federal Express Corporation | 143 |
+| 20 | Newanforbi v. California Highway Patrol, et  | 293 |
+| 24 | Newanforbi v. Serrato | 327 |
+| 25 | Newanforbi v. Federal Express Corporation | 145 |
 | 26 | Newanforbi v. United Parcel Service, Inc. | 271 |
 | 27 | Newanforbi v. Randstad, et al. | 45 |
-| 28 | Newanforbi v. Shannon Smith, LCSW, CEO, et a | 212 |
-| 29 | Newanforbi v. Amazon.com Services, LLC | 629 |
+| 28 | Newanforbi v. Shannon Smith, LCSW, CEO, et a | 220 |
+| 29 | Newanforbi v. Amazon.com Services, LLC | 681 |
 | 30 | Newanforbi v. Moua, et al. | 100 |
 | 31 | Newanforbi v. First Advantage LLC | 0 |
-| 32 | Nforbi v. Meza-Gonzalez, et al | 849 |
-| 33 | Nforbi v. Candelaria et al. | 480 |
+| 32 | Nforbi v. Meza-Gonzalez, et al | 875 |
+| 33 | Nforbi v. Candelaria et al. | 485 |
 | 34 | Newanforbi v. Counseling and Psychotherapy C | 0 |
 | 35 | Ngwa Nforbi v. Ross Stores, Inc., et al. | 16 |
+| 36 | Brendan Ngehsi Newanforbi v. AT&T Mobility S | 14 |
 
 ## Highest-exposure citations
 
-747 of 967 paired authorities do not appear in the July audit. Of those,
-**228 are asserted only in Plaintiff's own filings**, with no court order or
+754 of 975 paired authorities do not appear in the July audit. Of those,
+**231 are asserted only in Plaintiff's own filings**, with no court order or
 opposing brief in the corpus citing them back. Unverified *and* uncorroborated is where a
 fabricated or miscited authority survives undetected — the queue worth working first.
 
@@ -125,7 +126,7 @@ fabricated or miscited authority survives undetected — the queue worth working
 | 4 | Capp v. Cnty. of San Diego, 940 F. 3d 1046 | 24 |
 | 4 | Cedars-Sinai Medical Center v. Superior Court, 18 Cal. 4th 1 (1998) | 22, 25, 26 |
 
-_228 total; full list in the JSON._
+_231 total; full list in the JSON._
 
 ## Known-bad citations from the July audit — current locations
 
@@ -159,17 +160,25 @@ _228 total; full list in the JSON._
 - `/documents/matter-09/Amended Notice of Hearing on Petition for Writ of Mandate.pdf` p.7 — plaintiff_filing
 - `/documents/matter-09/Amended Notice of Hearing on Petition for Writ of Mandate.pdf` p.11 — plaintiff_filing
 - `/documents/matter-09/Amended Notice of Hearing on Petition for Writ of Mandate.pdf` p.48 — plaintiff_filing
-- …and 26 more
+- …and 28 more
 
 ## Catalog gaps — unsearchable documents in active matters
 
-0 documents in active matters have no text layer. Until OCR'd, the index cannot
+8 documents in active matters have no text layer. Until OCR'd, the index cannot
 speak to what they cite. Court orders are the ones that matter.
 
 | Matter | Role | Pages | Document |
 |---|---|---|---|
+| 28 | court_order | 16 | Gmail - Re Contains JavaScript Re Newanforbi v Palacios  |
+| 12 | service_admin | 1 | 1094 SUM100 AMENDED Summons - Both Defendants (Issued Ju |
+| 28 | service_admin | 1 | AO 440 Summons Issued - Shannon Smith and HOPE Psychothe |
+| 28 | other | 10 | CASOMB Provider Treatment Completion Liability and Litig |
+| 28 | other | 8 | Cal. Code Regs. Tit. 15 sec. 3574 - Sex Offender Treatme |
+| 28 | other | 17 | NCR 25-01 Sex Offender Treatment (Jan 3 2025).pdf |
+| 32 | service_admin | 1 | Proof of Service of Summons - Jose Melano (C&P Process S |
+| 32 | service_admin | 1 | Proof of Service of Summons - Jose Melano (C&P Process S |
 
-_0 total._
+_8 total._
 
 ## Regenerating
 ```

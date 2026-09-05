@@ -10,13 +10,13 @@ The campaign is entering a phase where claims are cognizable and motions to dism
 
 | Status | Count |
 |---|---|
-| UNVERIFIED | 520 |
-| VERIFIED | 408 |
+| UNVERIFIED | 525 |
+| VERIFIED | 411 |
 | MISCITED | 27 |
 | MISCHARACTERIZED | 6 |
 | NOT_FOUND | 6 |
 
-**Plaintiff-only + still UNVERIFIED (P0 queue): 68**  
+**Plaintiff-only + still UNVERIFIED (P0 queue): 70**  
 **Plaintiff-only + bad status (P1): 28**
 
 ## Method controls
@@ -39,6 +39,9 @@ The campaign is entering a phase where claims are cognizable and motions to dism
 
 _July audit: likely fabricated. Negative control for verification method._
 
+- M19 `/documents/matter-19/HC-004 Notice and Request for Ruling Packet (with Exhibit A — Unstamped Petition) (Ready to File Aug 17 2026).pdf` p.11 — plaintiff_filing
+- M19 `/documents/matter-19/HC-004 Notice and Request for Ruling Packet (with Exhibit A — Unstamped Petition) (Ready to File Aug 7 2026).pdf` p.11 — plaintiff_filing
+- M19 `/documents/matter-19/Petition for Writ of Habeas Corpus (filed Apr. 3, 2026).pdf` p.9 — plaintiff_filing
 - M9 `/documents/matter-09/31626-43188-NTCHNG_69ce9f1e7ab52 2.pdf` p.52 — other
 - M9 `/documents/matter-09/31626-43188-NTCHNG_69ce9f1e7ab52 2.pdf` p.61 — other
 - M9 `/documents/matter-09/Amended Notice of Hearing on Petition for Writ of Mandate.pdf` p.53 — plaintiff_filing
@@ -48,9 +51,6 @@ _July audit: likely fabricated. Negative control for verification method._
 - M19 `/documents/matter-19/HC-004 Notice and Request for Ruling Packet (with Exhibit A — Unstamped Petition) (Ready to File Aug 17 2026).pdf` p.11 — plaintiff_filing
 - M19 `/documents/matter-19/HC-004 Notice and Request for Ruling Packet (with Exhibit A — Unstamped Petition) (Ready to File Aug 7 2026).pdf` p.11 — plaintiff_filing
 - M19 `/documents/matter-19/Petition for Writ of Habeas Corpus (filed Apr. 3, 2026).pdf` p.9 — plaintiff_filing
-- M9 `/documents/matter-09/31626-43188-NTCHNG_69ce9f1e7ab52 2.pdf` p.52 — other
-- M9 `/documents/matter-09/31626-43188-NTCHNG_69ce9f1e7ab52 2.pdf` p.61 — other
-- M9 `/documents/matter-09/Amended Notice of Hearing on Petition for Writ of Mandate.pdf` p.53 — plaintiff_filing
 - …and 6 more
 
 ### Friends of the Trinity River, 184 Cal.App.4th 1466 — 2 hits (0 in plaintiff filings)
@@ -143,15 +143,16 @@ Asserted only in Plaintiff's filings; no court order or opposing brief in the co
 | 8 | United States v. Lopez, 482 F. 3d 1067 | 32 | p.15 |
 | 8 | United States v. Ngumezi, 980 F. 3d 1285 | 32 | p.16 |
 | 7 | Galbraith v. County of, 307 F. 3d 1119 | 32 | p.23 |
-| 7 | S v. JSS Scandinavia, 142 F. 3d 1150 | 25, 26 | p.7 |
+| 7 | S v. JSS Scandinavia, 142 F. 3d 1150 | 25, 26 | p.5 |
 | 6 | See Fermino v. Fedco, Inc, 7 Cal. 4th 701 (1994) | 35 | p.16 |
 | 5 | Behan v. Alexis, 116 Cal.App. 3d 403 (1981) | 33 | p.15 |
 | 5 | Benavidez v. County of San Diego, 993 F. 3d 9 | 32 | p.13 |
 | 5 | Devenpeck v. Alford, 543 U.S. 11 (2004) | 32 | p.15 |
 | 4 | Cedars-Sinai Medical Center v. Superior Court, 18 Cal. 4th 1 (1998) | 22, 25, 26 | p.5 |
-| 4 | Kanter v. Warner-Lambert Co, 265 F. 3d 853 | 25, 26 | p.6 |
-| 4 | Kenneth Rothschild Trust v. Morgan Stanley Dean Witter, 199 F.Supp. 2d | 25, 26 | p.7 |
-| 4 | See Lew v. Moss, 797 F. 2d 747 | 25, 26 | p.6 |
+| 4 | Kanter v. Warner-Lambert Co, 265 F. 3d 853 | 25, 26 | p.3 |
+| 4 | Kenneth Rothschild Trust v. Morgan Stanley Dean Witter, 199 F.Supp. 2d | 25, 26 | p.5 |
+| 4 | Mullane v. Central Hanover Bank, 339 U.S. 306 (1950) | 32 | p.3 |
+| 4 | See Lew v. Moss, 797 F. 2d 747 | 25, 26 | p.3 |
 | 3 | Califomia DUI Lawyers Ass'n v. DMV, 77 Cal.App. 5th 517 (2022) | 33 | p.4 |
 | 3 | Chavez v. JP Morgan Chase, 888 F. 3d 413 | 26 | p.5 |
 | 3 | Dart Cherokee Basin Operating Co., LLC v. Owens, 574 U.S. 81 | 26 | p.3 |
@@ -168,6 +169,7 @@ Asserted only in Plaintiff's filings; no court order or opposing brief in the co
 | 2 | California DUILawyers Ass'n v. DMV, 11 Cal.App. 5th 517 (2022) | 33 | p.23 |
 | 2 | California DUl Lawyers Ass'n v. DMV, 11 Cal.App. 5th 517 (2022) | 33 | p.33 |
 | 2 | Devenpeck v. Alford, 3 U.S. 146 (2004) | 32 | p.22 |
+| 2 | Rio Properties, Inc. v. Rio Int'l Interlink, 284 F. 3d 1007 | 32 | p.17 |
 | 2 | See Camara v. Municipal, 387 U.S. 523 (1967) | 32 | p.26 |
 | 1 | Angus v. Shiley, Inc, 989 F. 2d 142 | 25 | p.7 |
 | 1 | Annondo v. Dep't of Motor Vehicles, 15 Cal.App. 4th 1174 (1993) | 33 | p.15 |
@@ -207,11 +209,11 @@ Asserted only in Plaintiff's filings; no court order or opposing brief in the co
 | 1 | Weyhe v. Wal-Mart Stores, Inc, 2010 WL 3411462 | 25 | p.10 |
 | 1 | White v. FCI USA, Inc, 319 F. 3d 672 | 25 | p.10 |
 
-_68 total in JSON `priorityQueue`._
+_70 total in JSON `priorityQueue`._
 
 ## Round overlay
 
-Loaded round: **2026-08-09 Round 4 — portfolio P0 (batches A–D; LACW WL correction); Round 5 multisource (CourtListener + CAP); Round 5b Matter 28 full funnel; Round 6 spot-check of the Matter 33 conformed complaint (3:26-cv-08272-LJC, Dkt. 1) page-43 immunity sentence; Round 7 authorities cited in the Serrato IFP screening order (Matter 24, Dkt. 5) after OCR made that scan searchable; Round 8 — OCR tranche (16 plaintiff filings + court orders: Matters 5/12/15/25/26/33, Barocio opinion); Round 9 — Matter 24 Serrato Opp v4 final citation/quotation verification pass (2026-08-27); Round 10 — Matter 26 hybrid UPS MTD opposition (Claude structure + Cursor caution), 2026-08-28** — 317 results
+Loaded round: **2026-08-09 Round 4 — portfolio P0 (batches A–D; LACW WL correction); Round 5 multisource (CourtListener + CAP); Round 5b Matter 28 full funnel; Round 6 spot-check of the Matter 33 conformed complaint (3:26-cv-08272-LJC, Dkt. 1) page-43 immunity sentence; Round 7 authorities cited in the Serrato IFP screening order (Matter 24, Dkt. 5) after OCR made that scan searchable; Round 8 — OCR tranche (16 plaintiff filings + court orders: Matters 5/12/15/25/26/33, Barocio opinion); Round 9 — Matter 24 Serrato Opp v4 final citation/quotation verification pass (2026-08-27); Round 10 — Matter 26 hybrid UPS MTD opposition (Claude structure + Cursor caution), 2026-08-28** — 320 results
 
 Method note: Round 4: WebSearch after Richardson(+) / Leman(−) controls. Round 5: CourtListener /api/rest/v4/search/ + CAP static.case.law for controls/high-risk. Round 5b: all Matter 28 indexed authorities through lookup-citations.py --matter 28 (→ citation_lookup_matter28.json). Justia Cloudflare-blocked; Scholar unreliable; api.case.law JSON and CL citation-lookup need auth. Existence FOUND does not clear prior MISCHARACTERIZED/MISCITED proposition problems. Table-page F.3d pins can host multiple dispositions — do not treat first CL hit as unique. Round 7: the June 29, 2026 Serrato IFP/screening order was an image-only scan contributing nothing to the index until internal/scripts/ocr-text-layer.py added a text layer; its authorities were then probed through lookup-citations.py (→ citation_lookup_serrato_order.json) behind the same Richardson(+) / Leman(−) controls. These are a court's own citations, so they carry role court_order and never enter the plaintiff-only P0/P1 queues. Round 8: after ocr-text-layer.py on the 16-document plaintiff_filing/court_order tranche, probed new P0 Matter 12/15 authorities (citation_lookup_matter12_p0.json) and Barocio screening-order authorities (citation_lookup_barocio_order.json). McCorkle manually confirmed on CourtListener when CAP lacked cal2d/70. Round 9: Matter 24 Opposition v4 — npm citations:index + citations:lookup:matter --matter 24 (→ citation_lookup_matter24.json); quote needles checked against CAP static.case.law HTML (Whittlestone/Lopez/Noll/Perry/Twombly/Iqbal/Wade/Knievel/Erickson/Ford) and CA9 PDF (Capp); fixed Garity miscitation, Whittlestone non-opinion paraphrase, Perry/Twombly wording, and removed unused Lewis/Shanks TOA entries; Bureerong manually FOUND on CL+CAP. Round 10: Matter 26 hybrid opposition — npm citations:index + citations:lookup:matter --matter 26 (→ citation_lookup_matter26.json); Cal. App. 5th pins for Williams (40 Cal. App. 5th 280) and Quinn (121 Cal. App. 5th 1124) confirmed by direct CourtListener search when the reporter probe missed (CAP static lacks those volumes). Mendoza quotes checked against the published opinion (anti-SLAPP; 1658-59). Cel-Tech 183 quote is UPS's own.
 

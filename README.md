@@ -179,7 +179,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | 33 | Nforbi v. Candelaria et al. | 3:26-cv-08272-LJC | USDC N.D. Cal. (San Francisco Div.) | Federal | FAC filed Aug. 17 (Dkt. 6) — resp. due Sep. 4; CMC Nov. 12 |
 | 34 | Newanforbi v. Counseling and Psychotherapy Center, Inc., et al. | TBD | USDC N.D. Cal. (San Jose Div.) / Santa Clara Sup. Ct. | Federal | Pre-filing — intake & compliance monitoring |
 | 35 | Ngwa Nforbi v. Ross Stores, Inc., et al. | 26CV501995 | Santa Clara Sup. Ct. (Downtown / First Street) | State | Filed — serve both Ross entities via CT Corp (~Oct 25) |
-| 36 | Newanforbi v. AT&T, et al. | TBD | San Joaquin Sup. Ct. (potential; venue and employer entity unconfirmed) | State | Pre-filing — offer rescission; proof gaps |
+| 36 | Brendan Ngehsi Newanforbi v. AT&T Mobility Services LLC, et al. | TBD | San Joaquin Sup. Ct. (proposed; review draft not filed) | State | Review draft — execution gates remain |
 <!-- PORTFOLIO:ACTIVE_MATTERS:END -->
 
 *Settled matters stay in the table above until dismissal is entered — a settlement resolves the merits, but the matter is still open on the docket. Their Status column reads "Settled" (see the Overview count above for which ones).*
@@ -415,13 +415,13 @@ Controls (reconfirm when batching): *Richardson v. McKnight*, 521 U.S. 399 must 
 <!-- PORTFOLIO:CITATION_SCOREBOARD:START -->
 | Status | Count |
 |---|---|
-| VERIFIED | 408 |
+| VERIFIED | 411 |
 | MISCITED | 27 |
 | MISCHARACTERIZED | 6 |
 | NOT_FOUND | 6 |
-| UNVERIFIED | 520 |
+| UNVERIFIED | 525 |
 
-Paired authorities: **967**. P0 (plaintiff-only UNVERIFIED): **68**. P1 (plaintiff-only bad status): **28**. Ledger date: 2026-09-05.
+Paired authorities: **975**. P0 (plaintiff-only UNVERIFIED): **70**. P1 (plaintiff-only bad status): **28**. Ledger date: 2026-09-05.
 <!-- PORTFOLIO:CITATION_SCOREBOARD:END -->
 
 Priority queues from the ledger: **P0** = plaintiff-only + still `UNVERIFIED` (`npm run citations:queue`); **P1** = plaintiff-only + bad status (fix before the next brief). Pre-existing fabricated hits are debt-tracked in `citation_known_bad_debt.json` so CI stays green while corrected drafts replace them.
