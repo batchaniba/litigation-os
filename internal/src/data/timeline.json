@@ -1,6 +1,21 @@
 [
   {
     "date": "Sep. 4, 2026",
+    "event": "EXECUTED (unfiled) — Plaintiff's Civil L.R. 3-15 Certification of Conflicts, Interested Entities and Persons, and Citizenship in each live N.D. Cal. case where the first-appearance certification was missing: Serrato 4:26-cv-05953-ASK; Smith/HOPE 3:26-cv-07504-LJC; Amazon/Accurate 4:26-cv-09249-ASK; Meza/Melano 4:26-cv-08271-ASK; Candelaria/Gordon 3:26-cv-08272-LJC. Dated September 4, 2026. Uses the Civil L.R. 3-15(c)(3) no-conflict form. Not diversity; no (b)(3) citizenship recital. POS attached (mail except Smith/HOPE, served by email on SLB). Do not treat as filed until clerk-stamped.",
+    "matters": [
+      24,
+      28,
+      29,
+      32,
+      33
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": false,
+    "source": "/documents/matter-33/ndcal/Certification of Conflicts Interested Entities and Persons (Candelaria Gordon) (Sep 4 2026).pdf"
+  },
+  {
+    "date": "Sep. 4, 2026",
     "event": "PACER — Docket report for Newanforbi v. Serrato (4:26-cv-05953-ASK), pulled Sep. 4, 2026, 3:30 p.m. Dkt. 22 (filed Sep. 3) is Serrato's stipulation with proposed order to continue the initial CMC. No order. Sep. 8 disclosures/JCMS and Sep. 15 CMC stay live. Dkt. 21 reset the MTD hearing to Sep. 30, 1:30 p.m., Oakland Courtroom 4 (briefing years on that notice still say 2025). Dkt. 20 is the opposition to Dkt. 18.",
     "matters": [
       24
@@ -1459,7 +1474,7 @@
   },
   {
     "date": "Aug. 10, 2026",
-    "event": "Certification of Conflicts and Interested Entities or Persons due — Nforbi v. Candelaria et al. (3:26-cv-08272-LJC). The Dkt. 4 scheduling order sets this obligation at \"Upon first appearance (supplement as necessary)\" and Civil L.R. 3-15(a) requires each non-governmental party to file it as a separate document with its first appearance. Plaintiff's first appearance was the Aug. 10, 2026 complaint; no such certification appears among Dkts. 1–4, so it is outstanding. Not carried as an upcoming countdown because the trigger date has passed — treat as an open filing task",
+    "event": "Certification of Conflicts and Interested Entities or Persons due — Nforbi v. Candelaria et al. (3:26-cv-08272-LJC). The Dkt. 4 scheduling order sets this obligation at \"Upon first appearance (supplement as necessary)\" and Civil L.R. 3-15(a) requires each non-governmental party to file it as a separate document with its first appearance. Plaintiff's first appearance was the Aug. 10, 2026 complaint. An executed Sep. 4, 2026 Certification is ready to file. Not carried as an upcoming countdown.",
     "matters": [
       33
     ],
