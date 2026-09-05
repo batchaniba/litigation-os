@@ -985,10 +985,10 @@
     "case_no": "3:26-cv-08272-LJC",
     "court": "USDC N.D. Cal. (San Francisco Div.)",
     "claims": "42 U.S.C. § 1983 — APS impartial-adjudicator / fair hearing; declaratory and injunctive relief (vacatur of APS 34739340) — Dkt. 6 (FAC filed Aug. 17, 2026) is the court pleading of record; also Candelaria / DMV APS PDF home for Matters 7/8",
-    "status_label": "FAC filed Aug. 17 (Dkt. 6) — resp. due Sep. 4; CMC Nov. 12",
+    "status_label": "Motion to Strike Answer drafted; CMC Nov. 12",
     "lifecycle": "active",
     "proceeding": "federal_civil",
-    "phase": "responsive_deadline",
+    "phase": "pleadings",
     "note": "N.D. Cal. § 1983 refile docketed Aug. 10, 2026 as No. 3:26-cv-08272-LJC (ndcal/), after voluntary dismissal of Matter 7 E.D. Cal. (confirmed filed Aug. 15, 2026). Also owns the Candelaria/DMV APS document set; Matters 7 and 8 remain historical docket records and cross-reference these paths.",
     "badge": "FAC FILED",
     "filed": "August 10, 2026 (docketed; complaint signed Aug. 7, 2026)",
@@ -1020,7 +1020,7 @@
     ],
     "archived": false,
     "evidenceCount": 18,
-    "documentCount": 56
+    "documentCount": 61
   },
   {
     "number": 34,

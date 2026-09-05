@@ -62,7 +62,8 @@
     ],
     "type": "deadline",
     "upcoming": true,
-    "actor": "opposing"
+    "actor": "opposing",
+    "source": "/documents/matter-28/PACER Deadlines-Hearings - N.D. Cal. 3-26-cv-07504-LJC (Sep 4 2026).pdf"
   },
   {
     "date": "Oct. 1, 2026",
@@ -128,17 +129,6 @@
     "upcoming": true,
     "actor": "opposing",
     "source": "/documents/matter-27/Settlement Demand - Randstad US LLC (Aug 28 2026).pdf"
-  },
-  {
-    "date": "Sep. 4, 2026",
-    "event": "WATCH — Williams said he will attempt to respond by this date. The Aug. 19 $55,000/$85,000 demands expire (and are not being held) at 2:00 p.m. PT Aug. 28. The successor demand is $175,000 Randstad-only, with its own Sept. 8 response date. Anything he sends on Sept. 4 is a number into that field, not an acceptance of the expired figures. Not a court deadline. Pleading clocks: RK Logistics Sept. 14 (granted; no further); Randstad Sept. 15.",
-    "matters": [
-      27
-    ],
-    "type": "deadline",
-    "upcoming": true,
-    "actor": "opposing",
-    "source": "/documents/matter-27/Gmail - Williams Request for Time on Opening Demand through Sep 4 (Aug 28 2026).pdf"
   },
   {
     "date": "Oct. 5, 2026",
@@ -275,26 +265,6 @@
     "type": "hearing",
     "source": "/documents/matter-33/ndcal/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026).pdf",
     "upcoming": true
-  },
-  {
-    "date": "Sep. 4, 2026",
-    "event": "Responsive pleading deadline (computed) — Santiago Meza-Gonzalez and Jose Melano, Nforbi v. Meza-Gonzalez, et al. (3:26-cv-08271-PHK, N.D. Cal.); 21 days from the Aug. 14, 2026 personal service date (FRCP 12(a)(1)(A)(i)). Falls on a Friday; no weekend/holiday extension applies.",
-    "matters": [
-      32
-    ],
-    "type": "deadline",
-    "upcoming": true,
-    "actor": "opposing"
-  },
-  {
-    "date": "Sep. 4, 2026",
-    "event": "Responsive pleading deadline (computed) — Diana Candelaria and Steve Gordon, Nforbi v. Candelaria et al. (3:26-cv-08272-LJC, N.D. Cal.); 21 days from the Aug. 14, 2026 personal service date (FRCP 12(a)(1)(A)(i)). Falls on a Friday; no weekend/holiday extension applies.",
-    "matters": [
-      33
-    ],
-    "type": "deadline",
-    "upcoming": true,
-    "actor": "opposing"
   },
   {
     "date": "Nov. 12, 2026",
