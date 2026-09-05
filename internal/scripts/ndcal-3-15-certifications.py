@@ -332,6 +332,7 @@ CASES: list[CertCase] = [
             "2415 First Avenue",
             "Sacramento, CA 95818",
         ],
+        signature_on_second_page=True,
     ),
 ]
 
