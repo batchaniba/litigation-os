@@ -48,6 +48,48 @@
       "source": "/documents/matter-19/HC-004 Notice and Request for Ruling (Habeas Corpus, Executed Sep 1 2026).pdf",
       "downloadName": "HC-004 Notice and Request for Ruling (Habeas Corpus, Executed Sep 1 2026).pdf",
       "title": "HC-004 Notice and Request for Ruling — In re Newanforbi (Santa Clara C2604791)"
+    },
+    {
+      "slug": "serrato-complaint",
+      "source": "/documents/matter-24/First Amended Complaint (Doc 10, Filed Jul 15 2026).pdf",
+      "downloadName": "First Amended Complaint (Doc 10, Filed Jul 15 2026).pdf",
+      "title": "First Amended Complaint — Newanforbi v. Serrato (N.D. Cal. 4:26-cv-05953-ASK)"
+    },
+    {
+      "slug": "serrato-mtd",
+      "source": "/documents/matter-24/Defendant Serrato Motion to Dismiss FAC and Strike (Aug 26 2026).pdf",
+      "downloadName": "Defendant Serrato Motion to Dismiss FAC and Strike (Aug 26 2026).pdf",
+      "title": "Motion to Dismiss FAC — Newanforbi v. Serrato (N.D. Cal. 4:26-cv-05953-ASK)"
+    },
+    {
+      "slug": "serrato-opp",
+      "source": "/documents/matter-24/Opposition to Serrato MTD with Proof of Service by Email (Aug 27 2026).pdf",
+      "downloadName": "Opposition to Serrato MTD with Proof of Service by Email (Aug 27 2026).pdf",
+      "title": "Opposition to MTD — Newanforbi v. Serrato (N.D. Cal. 4:26-cv-05953-ASK)"
+    },
+    {
+      "slug": "ups-complaint",
+      "source": "/documents/matter-26/Newanforbi v UPS Complaint.pdf",
+      "downloadName": "Newanforbi v UPS Complaint.pdf",
+      "title": "Complaint — Newanforbi v. United Parcel Service, Inc. (E.D. Cal. 2:26-cv-02847-DAD-CKD)"
+    },
+    {
+      "slug": "ups-mtd",
+      "source": "/documents/matter-26/Dkt 07 - UPS Rule 12(b)(6) Motion to Dismiss with Exhibits Notice Declaration and Certificate of Service (Filed Aug 26 2026).pdf",
+      "downloadName": "Dkt 07 - UPS Rule 12(b)(6) Motion to Dismiss with Exhibits Notice Declaration and Certificate of Service (Filed Aug 26 2026).pdf",
+      "title": "Rule 12(b)(6) Motion — Newanforbi v. United Parcel Service, Inc. (E.D. Cal. 2:26-cv-02847-DAD-CKD)"
+    },
+    {
+      "slug": "fedex-complaint",
+      "source": "/documents/matter-25/Newanforbi v FedEx Complaint.pdf",
+      "downloadName": "Newanforbi v FedEx Complaint.pdf",
+      "title": "Complaint — Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR)"
+    },
+    {
+      "slug": "fedex-answer",
+      "source": "/documents/matter-25/Dkt 04 - Answer to Complaint (Filed Aug 31 2026).pdf",
+      "downloadName": "Dkt 04 - Answer to Complaint (Filed Aug 31 2026).pdf",
+      "title": "Answer (Dkt. 4) — Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR)"
     }
   ]
 }

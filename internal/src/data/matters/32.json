@@ -46,6 +46,7 @@
   "damages": "The Dkt. 5 FAC seeks compensatory damages exceeding $214,000 (Centerline rates $33.35 / $50.03), plus punitive damages according to proof, and attorney fees under 42 U.S.C. § 1988. State-court Matter 2 damages remain separate.",
   "risk": "CONFIRMED Aug. 15, 2026: both Matter 1 (E.D. Cal., 2:25-cv-01460-DC-CSK) and Matter 2 (Alameda Sup. Ct., 26CV168913) filed their voluntary/requested dismissals without prejudice, matching what this docket's Dkt. 1 already represented to the N.D. Cal. [FLAGGED: Matter 2's dismissal terminates the entire state action, including the False Imprisonment/Battery/Bane Act state-law theories and State of California/CHP as a defendant — none of which this complaint pleads. Consider a supplemental-jurisdiction amendment (28 U.S.C. §1367) adding those state-law claims and the State/CHP if Plaintiff intends to preserve them; the CCP §335.1 two-year backstop runs Nov. 1, 2026.] Also manage related-case notices and claim-splitting with Matter 24 (Serrato N.D. Cal.). Caption/name-form (Ngwa Nforbi vs Newanforbi) must stay consistent with DS-367. Do not double-plead damages across Matter 32 and Matter 2. Dkt. 5 (FAC filed Aug. 17, 2026) is now the court pleading of record; the unsigned Aug. 12 draft is superseded.",
   "evidence": [
+    "Plaintiff's Civil L.R. 3-15 Certification of Conflicts, Interested Entities and Persons, and Citizenship — EXECUTED Sep. 4, 2026, unfiled",
     "AO 440 Proof of Service — Jose Melano #023054 (C&P Process Server Clifford Black / Owner, served Officer Reed at CHP South Sacramento, 6 Massie Court, Aug. 14, 2026; received Aug. 13). Clerk-stamped original: FILED / ORIGINAL FILED Aug. 31, 2026, N.D. Cal. San Jose, red SCANNED stamp, initials CH. Same return as Dkt. 5-1 (ECF filed Aug. 17). Cropped from the Aug. 31 FedEx Office A3 scan.",
     "First Amended Complaint — Dkt. 5 OPERATIVE (CONFORMED, Filed Aug. 17, 2026, 21 pp.) — ndcal/; Dkt. 6 (Aug. 14) is the earlier stamped FAC",
     "N.D. Cal. Complaint v3 (superseded by the FAC) — ndcal/",
@@ -62,6 +63,14 @@
     "Matter 7 Candelaria federal PDFs — cross-ref Matter 33 (matter-33/from-07/)"
   ],
   "documents": [
+    {
+      "path": "/documents/matter-32/ndcal/Certification of Conflicts Interested Entities and Persons (Meza Melano) (Sep 4 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-32/ndcal/Proof of Service - Certification of Conflicts (Meza Melano) (Sep 4 2026).pdf",
+      "filed": false
+    },
     {
       "path": "/documents/matter-32/ndcal/Order Granting Administrative Motion to Relate Cases - Serrato and Meza (Aug 24 2026).pdf",
       "filed": true
