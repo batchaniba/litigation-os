@@ -14,9 +14,9 @@ numbers, so a citation in a draft can be traced to a source page rather than tru
 
 | | |
 |---|---|
-| PDFs scanned | 849 |
-| Pages | 8,304 |
-| Readable | 841 |
+| PDFs scanned | 850 |
+| Pages | 8,307 |
+| Readable | 842 |
 | **No text layer (not searched)** | **8** |
 | Unreadable | 0 |
 | Citation scan skipped | 205 |
