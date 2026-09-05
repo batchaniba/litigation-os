@@ -607,7 +607,7 @@ const lawyer_fees_raw = [
     number: 36,
     type: "State — Rescinded Employment Offer / Pre-Filing Evidence Review",
     documentsCount: 25,
-    totalPagesReal: 44,
+    totalPagesReal: 42,
     hours: {
       low: 8,
       high: 15,
@@ -628,7 +628,7 @@ export const lawyer_fees_summary = {
   analysisDate: "2026-09-05",
   totalMatters: 36,
   totalDocumentsAnalyzed: 598,
-  totalPagesReal: 6828,
+  totalPagesReal: 6826,
   methodology: {
     blendedHourlyRate: 280,
     rateRange: { seniorPartner: [350, 450], midAssociate: [250, 350], paralegal: [150, 200] },
