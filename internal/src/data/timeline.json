@@ -64,7 +64,7 @@
   },
   {
     "date": "Sep. 3, 2026",
-    "event": "FILED — Dkt. 9 Order Setting Initial Case Management Conference and ADR Deadlines in Newanforbi v. Amazon.com Services, LLC et al. (N.D. Cal. 4:26-cv-09249-ASK). Assigned to Mag. Ajay S. Krishnan. ADR certification (ADR L.R. 3) and Rule 26(f) meet-and-confer due Nov. 10, 2026. Initial disclosures (Rule 26(a)(1)) and Joint Case Management Statement due Nov. 24, 2026. Initial CMC by Zoom Dec. 1, 2026, 1:30 p.m. (cand.uscourts.gov/ask). Review General Order 71. Plaintiff or the removing party must file the attached Consent or Declination to Magistrate Judge Jurisdiction within 14 days of case initiation (Sep. 14, 2026); other parties within 14 days of appearing. Plaintiff's Sep. 1 CONSENT remains unfiled until clerk-stamped. If the CMC date moves, the Nov. 10 and Nov. 24 deadlines move with it unless otherwise ordered.",
+    "event": "FILED — Dkt. 9 Order Setting Initial Case Management Conference and ADR Deadlines in Newanforbi v. Amazon.com Services, LLC et al. (N.D. Cal. 4:26-cv-09249-ASK). Assigned to Mag. Ajay S. Krishnan. ADR certification (ADR L.R. 3) and Rule 26(f) meet-and-confer due Nov. 10, 2026. Initial disclosures (Rule 26(a)(1)) and Joint Case Management Statement due Nov. 24, 2026. Initial CMC by Zoom Dec. 1, 2026, 1:30 p.m. (cand.uscourts.gov/ask). Review General Order 71. Plaintiff or the removing party must file the attached Consent or Declination to Magistrate Judge Jurisdiction within 14 days of case initiation (Sep. 14, 2026); other parties within 14 days of appearing. Plaintiff's CONSENT is on file as Dkt. 11 (filed Sep. 3). If the CMC date moves, the Nov. 10 and Nov. 24 deadlines move with it unless otherwise ordered.",
     "matters": [
       29
     ],
@@ -273,7 +273,7 @@
   },
   {
     "date": "Sep. 2, 2026",
-    "event": "EXECUTED (unfiled) — Proof of Service of Rule 4 process on Shannon Smith, LCSW, and HOPE Psychotherapy, Inc. in Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504-LJC). E-mail only on August 31, 2026 to slb-eservice@sims-law.net and blaze@sims-law.net; nothing mailed. Papers: one combined issued AO 440 (both defendants); Complaint (Dkt. 1); Civil Cover Sheet (Dkt. 1-1); Order Setting Initial Case Management Conference and ADR Deadlines (Dkt. 4); and Dkt. 11. Van Dine emailed September 1, 2026 accepting for both defendants effective August 31. POS only; no Gmail exhibit. File this on PACER. Do not treat as filed.",
+    "event": "SUPERSEDED — unfiled Sep. 2 Proof of Service of Rule 4 process on Shannon Smith / HOPE. Replaced by clerk-stamped Dkt. 13, filed Sep. 3, 2026.",
     "matters": [
       28
     ],
@@ -295,7 +295,7 @@
   },
   {
     "date": "Aug. 31, 2026",
-    "event": "SERVED — Shannon Smith, LCSW, and HOPE Psychotherapy, Inc. in Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504-LJC). Plaintiff emailed the 33-page packet to slb-eservice@sims-law.net and blaze@sims-law.net on August 31, 2026: one combined issued AO 440 (both defendants, Charles Ho / Aug. 31); Complaint (Dkt. 1); Civil Cover Sheet (Dkt. 1-1); Order Setting Initial Case Management Conference and ADR Deadlines (Dkt. 4, including magistrate-consent form); and Dkt. 11. Nothing was mailed. Van Dine emailed September 1, 2026 accepting service for both defendants effective August 31. Rule 4(m) (~Oct. 19) is satisfied by that acceptance; file the executed Proof of Service.",
+    "event": "SERVED — Shannon Smith, LCSW, and HOPE Psychotherapy, Inc. in Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504-LJC). Plaintiff emailed the 33-page packet to slb-eservice@sims-law.net and blaze@sims-law.net on August 31, 2026: one combined issued AO 440 (both defendants, Charles Ho / Aug. 31); Complaint (Dkt. 1); Civil Cover Sheet (Dkt. 1-1); Order Setting Initial Case Management Conference and ADR Deadlines (Dkt. 4, including magistrate-consent form); and Dkt. 11. Nothing was mailed. Van Dine emailed September 1, 2026 accepting service for both defendants effective August 31. Rule 4(m) (~Oct. 19) is satisfied by that acceptance; Dkt. 13 POS is on file (filed Sep. 3).",
     "matters": [
       28
     ],
@@ -306,7 +306,7 @@
   },
   {
     "date": "Oct. 19, 2026",
-    "event": "SATISFIED — Rule 4(m) service deadline (computed) — Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504-LJC). Van Dine accepted service for both defendants effective August 31, 2026. File the executed Proof of Service; 4(m) itself is no longer the live clock.",
+    "event": "SATISFIED / SUPERSEDED — Rule 4(m) service deadline (computed) — Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504-LJC). Duplicate of the satisfied 4(m) entry. Van Dine accepted Aug. 31; Dkt. 13 POS filed Sep. 3.",
     "matters": [
       28
     ],
@@ -353,7 +353,7 @@
   },
   {
     "date": "Aug. 31, 2026",
-    "event": "SATISFIED — FedEx responsive pleading deadline (computed) — Newanforbi v. Federal Express Corporation (Matter 25, E.D. Cal. No. 2:26-cv-02881-DAD-SCR); Fed. R. Civ. P. 81(c)(2)(C). FedEx answered on the 81(c) date as Dkt. 4 (filed Aug. 31, 2026). No Rule 12 motion.",
+    "event": "FedEx responsive pleading deadline (computed) — Newanforbi v. Federal Express Corporation (Matter 25, E.D. Cal. No. 2:26-cv-02881-DAD-SCR); Fed. R. Civ. P. 81(c)(2)(C) — the later of 21 days after receipt of the initial pleading or 7 days after the notice of removal was filed (removal filed Aug. 24, 2026 → Aug. 31, 2026). Watch for answer or Rule 12 motion by Allison A. Kray.",
     "matters": [
       25
     ],
@@ -728,7 +728,7 @@
       27
     ],
     "type": "deadline",
-    "upcoming": false,
+    "upcoming": true,
     "actor": "opposing",
     "source": "/documents/matter-27/Gmail - Williams Request for Time on Opening Demand through Sep 4 (Aug 28 2026).pdf"
   },
@@ -881,17 +881,6 @@
     "filed": true
   },
   {
-    "date": "Aug. 31, 2026",
-    "event": "FedEx responsive pleading deadline (computed) — Newanforbi v. Federal Express Corporation (Matter 25, E.D. Cal. No. 2:26-cv-02881-DAD-SCR); Fed. R. Civ. P. 81(c)(2)(C) — the later of 21 days after receipt of the initial pleading or 7 days after the notice of removal was filed (removal filed Aug. 24, 2026 → Aug. 31, 2026). Watch for answer or Rule 12 motion by Allison A. Kray.",
-    "matters": [
-      25
-    ],
-    "type": "deadline",
-    "upcoming": false,
-    "actor": "opposing",
-    "source": "/documents/matter-25/Dkt 01 - Petition and Notice of Removal (Filed Aug 24 2026).pdf"
-  },
-  {
     "date": "Aug. 25, 2026",
     "event": "EXECUTED — Dkt. 3 magistrate-consent / consent-decline materials filed in Newanforbi v. Federal Express Corporation (E.D. Cal. No. 2:26-cv-02881-DAD-SCR).",
     "matters": [
@@ -905,7 +894,7 @@
   },
   {
     "date": "Aug. 24, 2026",
-    "event": "EXECUTED — Dkt. 1 FedEx Petition and Notice of Removal filed in USDC E.D. Cal. (No. 2:26-cv-02881-DAD-SCR) with Dkt. 1-1 (Kray decl. + Exs. 1–7), Dkt. 1-2 (Bow decl.), Dkt. 1-3 (Eslami decl.), Dkt. 1-4 (JS-44), and Dkt. 2 FRCP 7.1 Disclosure Statement (parent: FedEx Corporation). Counsel Allison A. Kray. State San Joaquin action STK-CV-UWT-2026-0009118 removed on diversity.",
+    "event": "EXECUTED — REMOVAL — Newanforbi v. Federal Express Corporation (Matter 25) removed Aug. 24, 2026 to USDC E.D. Cal. as No. 2:26-cv-02881-DAD-SCR (D.J. Dale A. Drozd / M.J. Sean C. Riordan). Diversity under 28 U.S.C. §§ 1332, 1441, 1446; counsel Allison A. Kray. State STK-CV-UWT-2026-0009118 removed. Dkt. 1 Notice of Removal (with Dkts. 1-1 through 1-4); Dkt. 2 FRCP 7.1 disclosure; Dkt. 3 magistrate-consent materials (Aug. 25).",
     "matters": [
       25
     ],
@@ -1513,7 +1502,7 @@
       32
     ],
     "type": "deadline",
-    "upcoming": false,
+    "upcoming": true,
     "actor": "opposing"
   },
   {
@@ -1523,7 +1512,7 @@
       33
     ],
     "type": "deadline",
-    "upcoming": false,
+    "upcoming": true,
     "actor": "opposing"
   },
   {
@@ -3405,12 +3394,13 @@
   },
   {
     "date": "Aug. 6, 2026",
-    "event": "Notice of Payment of Filing Fee; Withdrawal of Request to Waive Court Fees as Moot e-filed and ACCEPTED for Newanforbi v. Amazon.com Services, LLC (Matter 29) — records payment in full of the $435.00 first-paper fee (Gov. Code §70611(a)) by USPS money order Serial #55300687696 (purchased Aug. 3, 2026 at Milpitas) and withdraws the FW-001 / requests the Aug. 18, 2026 fee-waiver hearing be taken off calendar. One Legal ref. 28953227; submission 26AA00209562; court received Aug. 6, 2026 at 9:43 p.m.; notice generated Aug. 7, 2026",
+    "event": "Notices of Amount of Punitive Damages Sought (CCP §425.115 — $250,000 Amazon.com Services, LLC / $100,000 Accurate Background LLC) e-filed and ACCEPTED together with the Notice of Payment of Filing Fee (One Legal ref. 28953227; three 'Notice of (name extension)' documents accepted) — personal service on defendants still required before default — Newanforbi v. Amazon.com Services, LLC et al. (26CV201554)",
     "matters": [
       29
     ],
     "type": "filing",
-    "source": "/documents/matter-29/Notice of Confirmation of Electronic Filing - Fee Payment and Punitive Notices Accepted (Aug 6 2026).pdf"
+    "source": "/documents/matter-29/Notice of Confirmation of Electronic Filing - Fee Payment and Punitive Notices Accepted (Aug 6 2026).pdf",
+    "filed": true
   },
   {
     "date": "Aug. 12, 2026",
@@ -4202,16 +4192,6 @@
     "filed": true
   },
   {
-    "date": "Aug. 6, 2026",
-    "event": "Notices of Amount of Punitive Damages Sought (CCP §425.115 — $250,000 Amazon.com Services, LLC / $100,000 Accurate Background LLC) e-filed and ACCEPTED together with the Notice of Payment of Filing Fee (One Legal ref. 28953227; three 'Notice of (name extension)' documents accepted) — personal service on defendants still required before default — Newanforbi v. Amazon.com Services, LLC et al. (26CV201554)",
-    "matters": [
-      29
-    ],
-    "type": "filing",
-    "source": "/documents/matter-29/Notice of Confirmation of Electronic Filing - Fee Payment and Punitive Notices Accepted (Aug 6 2026).pdf",
-    "filed": true
-  },
-  {
     "date": "Aug. 7, 2026",
     "event": "POS-010 Proofs of Service of Summons (Randstad US, LLC and The RK Logistics Group, Inc.) e-filed and ACCEPTED (One Legal ref. 28958443; submission 26AA00209977; court received Aug. 7, 2026 at 11:24 a.m.) — Newanforbi v. Randstad US, LLC et al. (26CV199902)",
     "matters": [
@@ -4262,7 +4242,7 @@
   },
   {
     "date": "Aug. 20, 2026",
-    "event": "DEFECTS NOTED IN UPS's REMOVAL PAPERS — (1) the action was filed under a '1:' case number, i.e. the Fresno Division, but San Joaquin County is a Sacramento Division county under E.D. Cal. L.R. 120(d); (2) Plaintiff's name is misspelled 'BRENDAN NGWANFORBI' on the notice caption and at ¶4, and the Rule 7.1 statement recites that misspelling as an a.k.a.; (3) the notice's caption page gives the state case number as STK-CV-UWT-2026-9113 rather than -0009113; (4) ¶20 refers to 'DOES 1-50' where the complaint names DOES 1 through 10; (5) ¶29 cites 'Exh. 1, pg. .' with the page left blank; (6) Exhibit 1 runs exactly 18 pages — the complaint alone — so the Summons, Civil Case Cover Sheet, Notice of CMC, Notice of Case Assignment and FW-003 order that ¶5 recites as served appear absent from the 28 U.S.C. §1446(a) attachments; (7) Rule 7.1 ¶2 states no publicly traded entity holds ten percent or more of United Parcel Service, Inc.; (8) ¶6 mischaracterizes the action as arising from Plaintiff's 'employment with UPS' — this is a failure-to-hire case and Plaintiff was never employed.",
+    "event": "CCP §425.115 PROGRAM MOOT AS TO UPS AND FEDEX — the Aug. 17, 2026 amended Notices of Amount of Punitive Damages Sought ($250,000.00) against United Parcel Service, Inc. (Matter 26, 2:26-cv-02847-DAD-CKD) and Federal Express Corporation (Matter 25, 2:26-cv-02881-DAD-SCR) are dead letters on removal. Section 425.115 is a state pleading device with no federal analogue; in USDC E.D. Cal. the ceiling on relief is governed by Fed. R. Civ. P. 54(c). Do not spend Sheriff service fees on those notices. The parallel notices as to Matter 27 (Randstad US, LLC; The RK Logistics Group, Inc.) remain live while that action remains in state court.",
     "matters": [
       26
     ],
@@ -4298,27 +4278,6 @@
     "type": "deadline",
     "upcoming": true,
     "actor": "you"
-  },
-  {
-    "date": "Aug. 20, 2026",
-    "event": "CCP §425.115 PROGRAM MOOT AS TO UPS AND FEDEX — the Aug. 17, 2026 amended Notices of Amount of Punitive Damages Sought ($250,000.00) against United Parcel Service, Inc. (Matter 26, 2:26-cv-02847-DAD-CKD) and Federal Express Corporation (Matter 25, 2:26-cv-02881-DAD-SCR) are dead letters on removal. Section 425.115 is a state pleading device with no federal analogue; in USDC E.D. Cal. the ceiling on relief is governed by Fed. R. Civ. P. 54(c). Do not spend Sheriff service fees on those notices. The parallel notices as to Matter 27 (Randstad US, LLC; The RK Logistics Group, Inc.) remain live while that action remains in state court.",
-    "matters": [
-      26
-    ],
-    "type": "event",
-    "source": "/documents/matter-26/Notice of Removal to Federal Court - United Parcel Service Inc (E.D. Cal. 1-26-at-03195) (Aug 20 2026).pdf"
-  },
-  {
-    "date": "Aug. 24, 2026",
-    "event": "EXECUTED — REMOVAL — Newanforbi v. Federal Express Corporation (Matter 25) removed Aug. 24, 2026 to USDC E.D. Cal. as No. 2:26-cv-02881-DAD-SCR (D.J. Dale A. Drozd / M.J. Sean C. Riordan). Diversity under 28 U.S.C. §§ 1332, 1441, 1446; counsel Allison A. Kray. State STK-CV-UWT-2026-0009118 removed. Dkt. 1 Notice of Removal (with Dkts. 1-1 through 1-4); Dkt. 2 FRCP 7.1 disclosure; Dkt. 3 magistrate-consent materials (Aug. 25).",
-    "matters": [
-      25
-    ],
-    "type": "filing",
-    "upcoming": false,
-    "actor": "opposing",
-    "filed": true,
-    "source": "/documents/matter-25/Dkt 01 - Petition and Notice of Removal (Filed Aug 24 2026).pdf"
   },
   {
     "date": "Aug. 21, 2026",
@@ -4447,17 +4406,6 @@
     "source": "/documents/matter-28/Dkt 11 - Order Regarding Filing Fee IFP and Directing Service (Filed Aug 26 2026).pdf"
   },
   {
-    "date": "Oct. 19, 2026",
-    "event": "Rule 4(m) service deadline (computed) — Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504-LJC); 90 days from ~July 21, 2026 complaint docketing. Dkt. 11 (Aug. 26, 2026) expressly directs Rule 4 service on Defendants. Serve Shannon Smith and HOPE Psychotherapy, Inc., then file proofs of service.",
-    "matters": [
-      28
-    ],
-    "type": "deadline",
-    "upcoming": true,
-    "actor": "you",
-    "source": "/documents/matter-28/Dkt 11 - Order Regarding Filing Fee IFP and Directing Service (Filed Aug 26 2026).pdf"
-  },
-  {
     "date": "Aug. 24, 2026",
     "event": "ORDER GRANTING ADMINISTRATIVE MOTION TO CONSIDER WHETHER CASES SHOULD BE RELATED (Civil L.R. 3-12) — Mag. Ajay S. Krishnan (N.D. Cal.): Newanforbi v. Serrato (4:26-cv-05953-ASK) and Nforbi v. Meza-Gonzalez et al. (3:26-cv-08271-PHK) are RELATED; Clerk directed to reassign Meza to Krishnan; Meza CMC to be rescheduled. Serrato CMC remains Sep. 15, 2026.",
     "matters": [
@@ -4550,5 +4498,110 @@
     "matters": [
       24
     ]
+  },
+  {
+    "date": "Sep. 4, 2026",
+    "event": "PACER — Docket report for Newanforbi v. Serrato (4:26-cv-05953-ASK), pulled Sep. 4, 2026, 3:30 p.m. Dkt. 22 (filed Sep. 3) is Serrato's stipulation with proposed order to continue the initial CMC. No order. Sep. 8 disclosures/JCMS and Sep. 15 CMC stay live. Dkt. 21 reset the MTD hearing to Sep. 30, 1:30 p.m., Oakland Courtroom 4 (briefing years on that notice still say 2025). Dkt. 20 is the opposition to Dkt. 18.",
+    "matters": [
+      24
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-24/PACER Docket Report - N.D. Cal. 4-26-cv-05953-ASK (Sep 4 2026).pdf"
+  },
+  {
+    "date": "Sep. 3, 2026",
+    "event": "FILED — Dkt. 22 STIPULATION WITH PROPOSED ORDER to Continue Initial Case Management Conference in Newanforbi v. Serrato (4:26-cv-05953-ASK). Filed by G. Serrato (Li) Sep. 3, 2026. Proposed order unsigned as of the Sep. 4 PACER print. Do not treat Sep. 8 or Sep. 15 as vacated.",
+    "matters": [
+      24
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "opposing",
+    "source": "/documents/matter-24/PACER Docket Report - N.D. Cal. 4-26-cv-05953-ASK (Sep 4 2026).pdf"
+  },
+  {
+    "date": "Sep. 4, 2026",
+    "event": "PACER — Docket report for Newanforbi v. Amazon.com Services LLC et al. (4:26-cv-09249-ASK), pulled Sep. 4, 2026, 3:25 p.m. Dkt. 11 is Plaintiff's CONSENT (filed Sep. 3). Dkt. 10 Amazon certificate of service (filed Sep. 3) was rejected Sep. 4: incorrect PDF, incorrect case number and name of court; will not be processed; refile in its entirety. Clerk also noted an earlier case-opening party-name error on Dkt. 1 (all caps); corrected; no further action. Dkt. 6/7 still run through Sep. 22. CMC Dec. 1.",
+    "matters": [
+      29
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-29/PACER Docket Report - N.D. Cal. 4-26-cv-09249-ASK (Sep 4 2026).pdf"
+  },
+  {
+    "date": "Sep. 3, 2026",
+    "event": "FILED — Dkt. 11 CONSENT/DECLINATION to Proceed Before a US Magistrate Judge by Brendan Ngehsi Newanforbi in Newanforbi v. Amazon.com Services LLC et al. (4:26-cv-09249-ASK). Clerk-stamped Document 11, Filed 09/03/26, 3 pages (form, Sep. 1 San Jose envelope, blank). CONSENT checked. Form still recites 3:26-cv-09249-ASK. Signature on the form line is as filed; do not restamp. Satisfies the Sep. 14 plaintiff/removing-party consent clock. Defendants still owe their own elections.",
+    "matters": [
+      29
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "you",
+    "source": "/documents/matter-29/Dkt 11 - Plaintiff's Consent to Magistrate Judge Jurisdiction (Filed Sep 3 2026).pdf"
+  },
+  {
+    "date": "Sep. 3, 2026",
+    "event": "FILED — Dkt. 13 Proof of Service in Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504-LJC). Clerk-stamped FILED Sep. 3, 2026, San Jose. Certifies email service on August 31, 2026 to slb-eservice@sims-law.net and blaze@sims-law.net of the issued AO 440, Complaint, civil cover, Dkt. 4, and Dkt. 11. Van Dine accepted for both defendants effective August 31. Envelope is San Jose Sep. 1. Caption remains 3:26-cv-07504-LJC. Do not restamp. Answer due Sep. 21.",
+    "matters": [
+      28
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "you",
+    "source": "/documents/matter-28/Dkt 13 - Proof of Service of Rule 4 Packet on SLB (Filed Sep 3 2026).pdf"
+  },
+  {
+    "date": "Sep. 4, 2026",
+    "event": "PACER — Deadlines/Hearings print for Newanforbi v. Smith et al. (3:26-cv-07504-LJC), pulled Sep. 4, 2026, 3:29 p.m. Answer due Sep. 21, 2026 (both defendants). Case Management Statement due Oct. 15, 2026. Initial CMC Oct. 22, 2026, 1:30 p.m. Last filing on the print is Sep. 3 (Dkt. 13).",
+    "matters": [
+      28
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-28/PACER Deadlines-Hearings - N.D. Cal. 3-26-cv-07504-LJC (Sep 4 2026).pdf"
+  },
+  {
+    "date": "Sep. 14, 2026",
+    "event": "SATISFIED as to Plaintiff — Consent or Declination to Magistrate Judge Jurisdiction, Newanforbi v. Amazon.com Services, LLC et al. (4:26-cv-09249-ASK). Dkt. 11 CONSENT filed Sep. 3, 2026 (mailed Sep. 1 from San Jose). Form still recites 3:26-cv-09249-ASK; stamp is 4:26-cv-09249-ASK. Defendants still must file within 14 days of appearing. Do not treat Plaintiff's Sep. 14 clock as open.",
+    "matters": [
+      29
+    ],
+    "type": "deadline",
+    "upcoming": false,
+    "actor": "you",
+    "source": "/documents/matter-29/Dkt 11 - Plaintiff's Consent to Magistrate Judge Jurisdiction (Filed Sep 3 2026).pdf"
+  },
+  {
+    "date": "Sep. 21, 2026",
+    "event": "Responsive pleading deadline (computed) — Shannon Smith, LCSW, and HOPE Psychotherapy, Inc., Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504-LJC); 21 days from the August 31, 2026 service date Van Dine accepted (FRCP 12(a)(1)(A)(i)). Falls on a Monday; no weekend/holiday extension applies. Confirmed on the Sep. 4 PACER Deadlines/Hearings print. Dkt. 13 POS is on file.",
+    "matters": [
+      28
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "opposing",
+    "source": "/documents/matter-28/PACER Deadlines-Hearings - N.D. Cal. 3-26-cv-07504-LJC (Sep 4 2026).pdf"
+  },
+  {
+    "date": "Oct. 19, 2026",
+    "event": "SATISFIED — Rule 4(m) service deadline (computed) — Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504-LJC). Van Dine accepted service for both defendants effective August 31, 2026. Dkt. 13 POS filed September 3, 2026.",
+    "matters": [
+      28
+    ],
+    "type": "deadline",
+    "upcoming": false,
+    "actor": "you",
+    "source": "/documents/matter-28/Dkt 13 - Proof of Service of Rule 4 Packet on SLB (Filed Sep 3 2026).pdf"
   }
 ]

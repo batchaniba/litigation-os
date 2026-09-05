@@ -658,7 +658,7 @@
     "case_no": "4:26-cv-05953-ASK",
     "court": "USDC N.D. Cal.",
     "claims": "42 USC 1983: Fourteenth Amendment (Substantive & Procedural Due Process), First Amendment (Retaliation); Declaratory Relief",
-    "status_label": "CMC Sep. 15 — MTD hearing reset to Sep. 30",
+    "status_label": "CMC Sep. 15 live — Dkt. 22 unsigned",
     "lifecycle": "active",
     "proceeding": "federal_civil",
     "phase": "mtd_briefing",
@@ -685,7 +685,7 @@
       }
     ],
     "evidenceCount": 13,
-    "documentCount": 44
+    "documentCount": 45
   },
   {
     "number": 25,
@@ -793,7 +793,7 @@
     "case_no": "3:26-cv-07504-LJC",
     "court": "USDC N.D. Cal.",
     "claims": "42 U.S.C. §1983 (Monell + Individual Capacity); Bane Act (Cal. Civ. Code §52.1); Fraud / Negligent Misrepresentation; RICO (18 U.S.C. §1962(c)-(d))",
-    "status_label": "SLB accepted Aug. 31 — file POS",
+    "status_label": "POS filed Dkt. 13 — answer Sep. 21",
     "lifecycle": "active",
     "proceeding": "federal_civil",
     "phase": "responsive_deadline",
@@ -811,27 +811,27 @@
       "RICO (18 U.S.C. §1962(c)-(d))"
     ],
     "archived": false,
-    "badge": "SERVE",
+    "badge": "SERVED",
     "serviceTracking": [
       {
         "name": "Shannon Smith, LCSW",
         "title": "Individual Defendant (CEO / Founder)",
         "location": "Serve personally under Rule 4(e) — confirm address (HOPE: 1245 B Street, Hayward, CA 94541 or other)",
-        "served": false,
-        "dateServed": null,
-        "note": "Dkt. 11 (Aug. 26, 2026) directs Rule 4 service. 90-day Rule 4(m) clock runs from complaint filing (docketed ~July 21, 2026) → ~Oct. 19, 2026. SLB (Blaze Van Dine) stated during M&C that counsel will accept service; service packet prepared Aug. 31, 2026 under matter-28/service-packet-slb/. Issued AO 440 dated Aug. 31, 2026 is in hand (combined form)."
+        "served": true,
+        "dateServed": "August 31, 2026",
+        "note": "Van Dine accepted service for both defendants effective August 31, 2026. Dkt. 13 POS filed September 3, 2026 (email only to slb-eservice@sims-law.net and blaze@sims-law.net). Rule 4(m) satisfied. Answer due September 21, 2026."
       },
       {
         "name": "HOPE Psychotherapy, Inc. (d/b/a HOPE Program)",
         "title": "Corporate Defendant",
         "location": "Serve via officer/agent or registered agent under Rule 4(h) — principal office 1245 B Street, Hayward, CA 94541",
-        "served": false,
-        "dateServed": null,
-        "note": "Same Rule 4(m) window. SLB previously appeared in related/prior HOPE matters — do not treat that as waiver of service in this action unless a waiver is executed. SLB (Blaze Van Dine) stated during M&C that counsel will accept service; service packet prepared Aug. 31, 2026 under matter-28/service-packet-slb/. Issued AO 440 dated Aug. 31, 2026 is in hand (combined form)."
+        "served": true,
+        "dateServed": "August 31, 2026",
+        "note": "Van Dine accepted service for both defendants effective August 31, 2026. Dkt. 13 POS filed September 3, 2026 (email only to slb-eservice@sims-law.net and blaze@sims-law.net). Rule 4(m) satisfied. Answer due September 21, 2026."
       }
     ],
     "evidenceCount": 17,
-    "documentCount": 62
+    "documentCount": 64
   },
   {
     "number": 29,
@@ -839,7 +839,7 @@
     "case_no": "4:26-cv-09249-ASK",
     "court": "USDC N.D. Cal. (Oakland; formerly 3:26-cv-09249-ASK)",
     "claims": "PC §290.46(j)(2)(E) Violation, Fair Chance Act (Gov. Code §12952), FCRA, ICRAA, Invasion of Privacy, UCL §17200, IIED",
-    "status_label": "Both defendants Sep. 22; CMC Dec. 1",
+    "status_label": "Plaintiff consent filed — both answers Sep. 22",
     "lifecycle": "active",
     "proceeding": "federal_civil",
     "phase": "responsive_deadline",
@@ -876,7 +876,7 @@
     ],
     "archived": false,
     "evidenceCount": 35,
-    "documentCount": 108
+    "documentCount": 110
   },
   {
     "number": 30,
