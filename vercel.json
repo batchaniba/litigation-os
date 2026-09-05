@@ -159,6 +159,16 @@
       "source": "/cand-strike/",
       "destination": "/cand-strike.pdf",
       "permanent": false
+    },
+    {
+      "source": "/cand-strike-packet",
+      "destination": "/cand-strike-packet.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/cand-strike-packet/",
+      "destination": "/cand-strike-packet.pdf",
+      "permanent": false
     }
   ],
   "headers": [
@@ -303,6 +313,15 @@
         {
           "key": "Content-Disposition",
           "value": "attachment; filename=\"Plaintiff Motion to Strike Answer (N.D. Cal. 3-26-cv-08272-LJC) (Sep 5 2026).pdf\"; filename*=UTF-8''Plaintiff%20Motion%20to%20Strike%20Answer%20%28N.D.%20Cal.%203-26-cv-08272-LJC%29%20%28Sep%205%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/cand-strike-packet.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Plaintiff Motion to Strike Answer Packet with Proposed Order (N.D. Cal. 3-26-cv-08272-LJC) (Sep 5 2026).pdf\"; filename*=UTF-8''Plaintiff%20Motion%20to%20Strike%20Answer%20Packet%20with%20Proposed%20Order%20%28N.D.%20Cal.%203-26-cv-08272-LJC%29%20%28Sep%205%202026%29.pdf"
         }
       ]
     }

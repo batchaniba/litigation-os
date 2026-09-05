@@ -27,8 +27,8 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPT_DIR / "lib"))
 sys.path.insert(0, str(SCRIPT_DIR))
 
-from pdf_packet import assemble  # noqa: E402
-from pleading_paper import CONTENT_LEFT, PleadingPaper  # noqa: E402
+from pdf_packet import assemble, page_count  # noqa: E402
+from pleading_paper import CONTENT_LEFT, CONTENT_WIDTH, FONT_SIZE, PleadingPaper  # noqa: E402
 from proof_of_service import (  # noqa: E402
     DISTRICT_NDCAL,
     ProofOfServiceFields,
@@ -70,6 +70,7 @@ DEFAULT_PACKET_OUT = (
 DEFAULT_EXEC_DATE = "September 5, 2026"
 DEFAULT_MAILED_FROM = "San Jose, California"
 SHORT_LINK_SLUG = "cand-strike"
+PACKET_SLUG = "cand-strike-packet"
 
 FOOTER = (
     "PLAINTIFF'S MOTION TO STRIKE ANSWER (ECF NO. 11) -- "
@@ -169,8 +170,10 @@ SERVICE_RECIPIENTS = [
 CONTENT: list[tuple[str, str]] = [
     (
         "HEADER",
-        "PLAINTIFF'S NOTICE OF MOTION AND MOTION TO STRIKE DEFENDANTS' ANSWER (ECF NO. 11)\n"
-        "PURSUANT TO FED. R. CIV. P. 12(f); OR, IN THE ALTERNATIVE, TO STRIKE AFFIRMATIVE DEFENSES",
+        "PLAINTIFF'S NOTICE OF MOTION AND MOTION TO STRIKE\n"
+        "DEFENDANTS' ANSWER (ECF NO. 11)\n"
+        "PURSUANT TO FED. R. CIV. P. 12(f);\n"
+        "OR, IN THE ALTERNATIVE, TO STRIKE AFFIRMATIVE DEFENSES",
     ),
     (
         "PARA",
@@ -301,16 +304,14 @@ CONTENT: list[tuple[str, str]] = [
     (
         "PARA",
         "On August 17, 2026, Plaintiff filed a conforming First Amended Complaint (Dkt. 6), which omitted an "
-        "unverified citation and constitutes the operative complaint of record in this action. (See Matter 33 "
-        "Docket, Dkt. 6.)",
+        "unverified citation and constitutes the operative complaint of record in this action.",
     ),
     (
         "PARA",
         "On August 21, 2026, Plaintiff served a copy of the operative First Amended Complaint (Dkt. 6) on both "
         "Defendant Candelaria and Defendant Gordon by United States first-class mail deposited at San Jose, "
         "California, addressed to each Defendant at the DMV Legal Affairs Division, Mail Station C128, 2415 First "
-        "Avenue, Sacramento, CA 95818. A formal Proof of Service certifying this service was executed on August "
-        "21, 2026. (See Proof of Service, Dkt. 6 Mailed to Candelaria and Gordon, Aug. 21, 2026.)",
+        "Avenue, Sacramento, CA 95818.",
     ),
     (
         "PARA",
@@ -399,15 +400,9 @@ CONTENT: list[tuple[str, str]] = [
     ),
     (
         "PARA",
-        "District courts throughout the Ninth Circuit and across the country regularly strike answers responding "
-        "to superseded complaints. See, e.g., <<i:Stanley v. Trustees of Cal. State Univ.>>, 2019 WL 4127201, at *2 "
-        "(E.D. Cal. Aug. 30, 2019) (striking answer under Rule 12(f) because it was directed to a superseded "
-        "complaint); <<i:Reyes v. City of Glendale>>, 2013 WL 12134015, at *2 (C.D. Cal. Sept. 10, 2013) (holding "
-        "that defendant's answer to the original complaint was rendered moot and striking it under Rule 12(f) after "
-        "the first amended complaint became operative); <<i:Northern Valley Commc'ns, LLC v. Qwest Commc'ns Co.>>, "
-        "2012 WL 523685, at *1 (D.S.D. Feb. 16, 2012) (granting motion to strike answer to original complaint "
-        "because an amended complaint supersedes the original, rendering the answer to the original 'a legal "
-        "nullity').",
+        "That is the necessary consequence of the Ninth Circuit rule. An answer that joins issue only on a "
+        "superseded complaint does not answer the operative pleading and should be stricken under Rule 12(f) as "
+        "redundant, immaterial, and impertinent.",
     ),
     (
         "PARA",
@@ -491,7 +486,7 @@ CONTENT: list[tuple[str, str]] = [
         "Defenses 9 and 10 allege failure to exhaust administrative remedies under the California Government Claims "
         "Act and failure to state claims presented to the Department of General Services (each trailing off with the "
         "uncompleted placeholder 'xxx'). Under binding Supreme Court precedent, state notice-of-claim and government "
-        "claims presentation requirements DO NOT APPLY to federal civil rights claims under 42 U.S.C. § 1983. "
+        "claims presentation requirements do not apply to federal civil rights claims under 42 U.S.C. § 1983. "
         "<<i:Felder v. Casey>>, 487 U.S. 131, 140-41 (1988) ('a state law that condition[s] the right of recovery upon "
         "compliance with a notice-of-claim requirement cannot be applied to an action brought under § 1983'). "
         "Plaintiff asserts federal claims under Section 1983, not state-law tort claims. These defenses are legally "
@@ -530,13 +525,13 @@ CONTENT: list[tuple[str, str]] = [
     (
         "PARA",
         "Defense 13 asserts that state officials sued in their official capacity for damages are not 'persons' under "
-        "§ 1983, citing <<i:Will v. Michigan Dept. of State Police>>, 491 U.S. 58 (1989). But Plaintiff DID NOT sue "
+        "§ 1983, citing <<i:Will v. Michigan Dept. of State Police>>, 491 U.S. 58 (1989). But Plaintiff did not sue "
         "Director Steve Gordon for damages in his official capacity. Director Gordon is sued strictly in his official "
         "capacity for prospective declaratory and injunctive relief under <<i:Ex parte Young>>, 209 U.S. 123 (1908). "
         "The Supreme Court in <<i:Will>> explicitly reaffirmed that 'a state official in his or her official capacity, "
         "when sued for injunctive relief, would be a person under § 1983 because official-capacity actions for "
         "prospective relief are not treated as actions against the State.' 491 U.S. at 71 n.10. And Defendant Diana "
-        "Candelaria is sued for damages in her INDIVIDUAL capacity, where <<i:Will>> does not apply. <<i:Hafer v. "
+        "Candelaria is sued for damages in her individual capacity, where <<i:Will>> does not apply. <<i:Hafer v. "
         "Melo>>, 502 U.S. 21, 31 (1991) ('state officials, sued in their individual capacities, are \"persons\" "
         "within the meaning of § 1983'). Defense 13 is legally meritless and mischaracterizes the complaint.",
     ),
@@ -568,11 +563,9 @@ CONTENT: list[tuple[str, str]] = [
         "California Vehicle Code §§ 14100 et seq., DMV hearing officers combine investigatory, prosecutorial, and "
         "adjudicative roles: they collect the DMV's enforcement evidence, introduce it at the hearing, rule on their "
         "own objections, cross-examine the licensee, and render the decision. They are subordinate employees of the "
-        "very enforcement agency whose administrative action is at issue. The California courts have repeatedly recognized "
-        "that DMV hearing officers are not ALJs and do not possess judicial independence. See <<i:Knight v. McMahon>>, "
-        "12 Cal. 4th 458, 467 (1996); <<i:Cal. Dept. of Motor Vehicles v. Office of Admin. Hearings>>, 159 Cal. App. 4th "
-        "911, 920-22 (2008). Executive hearing officers are shielded, at most, by qualified immunity, not absolute "
-        "quasi-judicial immunity. Defense 31 is legally insufficient.",
+        "very enforcement agency whose administrative action is at issue. Executive hearing officers performing those "
+        "combined functions are shielded, at most, by qualified immunity, not absolute quasi-judicial immunity. "
+        "<<i:Cleavinger>>, 474 U.S. at 201-06. Defense 31 is legally insufficient.",
     ),
     (
         "SUBHEAD",
@@ -608,13 +601,8 @@ CONTENT: list[tuple[str, str]] = [
         "PARA",
         "A reservation of rights is not a valid affirmative defense. Under Federal Rule of Civil Procedure 15, a party "
         "may amend its pleading only by leave of court or with the opposing party's written consent. A party cannot "
-        "circumvent Rule 15 by reserving rights in an answer. Courts in this district and circuit uniformly strike "
-        "such reservations. See, e.g., <<i:Solven v. M & T Bank>>, 2018 WL 6314187, at *4 (N.D. Cal. Dec. 3, 2018) "
-        "('A reservation of rights to add affirmative defenses in the future is not a proper affirmative defense... "
-        "and is STRICKEN.'); <<i:Perez>>, 2012 WL 1029425, at *11 (striking reservation of rights); <<i:E. & J. Gallo "
-        "Winery v. Encana Energy Servs., Inc.>>, 2008 WL 2223259, at *4 (E.D. Cal. May 27, 2008) ('An attempt to "
-        "reserve rights in the future is not a defense... It does not conform to Rule 8... Defendants cannot reserve "
-        "a right to amend their answer.'). Defense 33 must be stricken.",
+        "circumvent Rule 15 by reserving rights in an answer. Courts in this district strike such reservations. "
+        "See <<i:Perez>>, 2012 WL 1029425, at *11 (striking a reservation of rights). Defense 33 must be stricken.",
     ),
     (
         "SUBHEAD",
@@ -705,7 +693,7 @@ CONTENT: list[tuple[str, str]] = [
         "allegations asserted against it by an opposing party.' Rule 8(b) provides only three permissible responses: "
         "(1) an admission, (2) a denial, or (3) a statement that the party lacks knowledge or information sufficient "
         "to form a belief. Responding that an allegation 'purports to be a conclusion of law' or that 'the law speaks for "
-        "itself' is an improper, evasive evasion that violates Rule 8(b). See <<i:State Farm Mut. Auto. Ins. Co. v. "
+        "itself' is an improper, evasive response that violates Rule 8(b). See <<i:State Farm Mut. Auto. Ins. Co. v. "
         "Riley>>, 199 F.R.D. 276, 278 (N.D. Ill. 2001) (explaining that responses stating 'the document speaks for "
         "itself' or claiming an allegation is a 'legal conclusion' are improper evasions under Rule 8(b)); <<i:Barnes>>, "
         "718 F. Supp. 2d at 1170. When Defendants are ordered to answer the operative FAC (Dkt. 6), the Court should "
@@ -743,20 +731,18 @@ CONTENT: list[tuple[str, str]] = [
 ORDER_CONTENT: list[tuple[str, str]] = [
     (
         "HEADER",
-        "[PROPOSED] ORDER GRANTING PLAINTIFF'S MOTION TO STRIKE DEFENDANTS' ANSWER (ECF NO. 11)\n"
-        "PURSUANT TO FED. R. CIV. P. 12(f)",
+        "[PROPOSED] ORDER GRANTING PLAINTIFF'S MOTION TO STRIKE\n"
+        "DEFENDANTS' ANSWER (ECF NO. 11)",
     ),
     (
         "PARA",
         "Plaintiff Brendan Ngwa Nforbi's Motion to Strike Defendants' Answer (ECF No. 11) Pursuant to "
-        "Federal Rule of Civil Procedure 12(f); or, in the Alternative, to Strike Affirmative Defenses, "
-        "came on regularly for hearing before this Court.",
+        "Federal Rule of Civil Procedure 12(f) is before the Court.",
     ),
     (
         "PARA",
-        "Having considered Plaintiff's Motion, the Memorandum of Points and Authorities, the Court's "
-        "records and files in this action, and the arguments of the parties, and good cause appearing therefor, "
-        "THE COURT FINDS AND ORDERS AS FOLLOWS:",
+        "Having considered Plaintiff's Motion, the Memorandum of Points and Authorities, the papers on "
+        "file, and any opposition and reply, and good cause appearing, THE COURT ORDERS AS FOLLOWS:",
     ),
     (
         "LIST_ITEM",
@@ -772,18 +758,12 @@ ORDER_CONTENT: list[tuple[str, str]] = [
     ),
     (
         "LIST_ITEM",
-        "3. In the alternative, Defendants' thirty-three (33) Affirmative Defenses (ECF No. 11 at 32-35) "
-        "are hereby STRICKEN as legally insufficient, impertinent, and failing to state plausible defenses "
-        "under Federal Rules of Civil Procedure 8 and 12(f).",
-    ),
-    (
-        "LIST_ITEM",
-        "4. Defendants shall file and serve an answer addressing the operative First Amended Complaint "
+        "3. Defendants shall file and serve an answer addressing the operative First Amended Complaint "
         "(Dkt. 6) within fourteen (14) days of the date of this Order.",
     ),
     (
         "LIST_ITEM",
-        "5. Any answer filed by Defendants shall strictly conform to Federal Rule of Civil Procedure 8(b), "
+        "4. Any answer filed by Defendants shall strictly conform to Federal Rule of Civil Procedure 8(b), "
         "admitting or denying each allegation or stating lack of knowledge or information sufficient to form "
         "a belief, and shall not assert evasive boilerplate denials stating that 'the law speaks for itself.'",
     ),
@@ -831,19 +811,29 @@ def _signature(d: PleadingPaper, exec_date: str) -> None:
     d.write_line(SIGNOFF_ROLE, right=True, right_margin_offset=20)
 
 
+def _write_centered_wrapped(d: PleadingPaper, text: str, bold: bool = True) -> None:
+    """Center a heading after wrapping so long titles cannot overflow the rules."""
+    avail = CONTENT_WIDTH - 8
+    segs = d._parse_segments(text)
+    lines = d._wrap_segments(segs, avail, 0, FONT_SIZE)
+    d.ensure_space(len(lines) + 1)
+    for parts in lines:
+        line = "".join(pt for pt, _ in parts).strip()
+        if line:
+            d.write_line(line, bold=bold, center=True)
+
+
 def _render_body(d: PleadingPaper, content: list[tuple[str, str]]) -> None:
     for kind, text in content:
         if kind == "HEADER":
-            lines = text.split("\n")
+            lines = [ln for ln in text.split("\n") if ln.strip()]
             d.ensure_space(len(lines) + 3)
             for line in lines:
-                d.write_line(line, bold=True, center=True)
+                _write_centered_wrapped(d, line, bold=True)
             d.blank_line()
         elif kind == "SUBHEAD":
-            lines = text.split("\n")
-            d.ensure_space(len(lines) + 3)
-            for line in lines:
-                d.write_line(line, bold=True, center=False)
+            d.ensure_space(4)
+            d.write_wrapped(text.replace("\n", " "), bold=True, indent=0, first_indent=0)
             d.blank_line()
         elif kind == "PARA":
             d.write_wrapped(text, first_indent=36)
@@ -898,9 +888,8 @@ def build_motion_document(out: Path, exec_date: str) -> Path:
     return out
 
 
-def build_proposed_order(out: Path, exec_date: str) -> Path:
-    if not Path(SIGNATURE_PATH).is_file():
-        raise SystemExit(f"Missing universal signature: {SIGNATURE_PATH}")
+def build_proposed_order(out: Path) -> Path:
+    """Judge-only signature block. Never stamp the plaintiff's signature here."""
     out.parent.mkdir(parents=True, exist_ok=True)
     d = PleadingPaper(str(out), doc_title_footer=ORDER_FOOTER)
     _header_block(d, ORDER_CAPTION_RIGHT)
@@ -913,9 +902,6 @@ def build_proposed_order(out: Path, exec_date: str) -> Path:
     d.write_line("___________________________________________")
     d.write_line("HON. LISA J. CISNEROS")
     d.write_line("United States Magistrate Judge")
-    d.blank_line()
-    d.write_line("Presented by:", italic=True)
-    _signature(d, exec_date)
     d.save()
     return out
 
@@ -925,6 +911,75 @@ def build_motion_proof_of_service(out: Path, exec_date: str, mailed_from: str) -
         raise SystemExit(f"Missing universal signature: {SIGNATURE_PATH}")
     out.parent.mkdir(parents=True, exist_ok=True)
     return build_proof_of_service(out, motion_pos_fields(exec_date, mailed_from))
+
+
+def _pdf_text(path: Path) -> str:
+    from pypdf import PdfReader
+
+    return "\n".join(page.extract_text() or "" for page in PdfReader(str(path)).pages)
+
+
+def verify_outputs(motion: Path, order: Path, pos: Path, packet: Path) -> None:
+    """Fail the build if the packet still carries the defects this rewrite fixed."""
+    from pypdf import PdfReader
+
+    order_text = _pdf_text(order)
+    motion_text = _pdf_text(motion)
+    packet_text = _pdf_text(packet)
+    pos_text = _pdf_text(pos)
+
+    forbidden_order = (
+        "Presented by",
+        "Respectfully submitted",
+    )
+    for needle in forbidden_order:
+        if needle in order_text:
+            raise SystemExit(f"FAILED: proposed order still contains {needle!r}")
+
+    # Caption may name the plaintiff; the judge block must be the only sign-off.
+    after_so_ordered = order_text.split("IT IS SO ORDERED.", 1)[-1]
+    if "Respectfully submitted" in after_so_ordered or "Presented by" in after_so_ordered:
+        raise SystemExit("FAILED: proposed order has a party sign-off after IT IS SO ORDERED")
+    if "HON. LISA J. CISNEROS" not in after_so_ordered:
+        raise SystemExit("FAILED: proposed order missing judge signature block")
+
+    forbidden_anywhere = (
+        "Matter 33",
+        "Knight v. McMahon",
+        "12 Cal. 4th 458",
+        "Stanley v. Trustees",
+        "Reyes v. City of Glendale",
+        "Northern Valley",
+        "Solven v.",
+        "Encana Energy",
+    )
+    combined = f"{motion_text}\n{order_text}\n{packet_text}"
+    for needle in forbidden_anywhere:
+        if needle in combined:
+            raise SystemExit(f"FAILED: filing still contains {needle!r}")
+
+    if "PROOF OF SERVICE" not in pos_text:
+        raise SystemExit("FAILED: standalone POS is not a proof of service")
+
+    n_motion_body = page_count(motion) - page_count(pos)
+    n_order = page_count(order)
+    n_pos = page_count(pos)
+    n_packet = page_count(packet)
+    expected = n_motion_body + n_order + n_pos
+    if n_packet != expected:
+        raise SystemExit(
+            f"FAILED: packet is {n_packet} pp.; expected {expected} "
+            f"(motion {n_motion_body} + order {n_order} + POS {n_pos})"
+        )
+
+    last_packet = PdfReader(str(packet)).pages[-1].extract_text() or ""
+    if "PROOF OF SERVICE" not in last_packet:
+        raise SystemExit("FAILED: packet must end with the Proof of Service")
+    mid = PdfReader(str(packet)).pages[n_motion_body].extract_text() or ""
+    if "[PROPOSED] ORDER" not in mid and "PROPOSED" not in mid:
+        raise SystemExit("FAILED: packet does not place the proposed order after the motion")
+
+    print("OK: proposed order has no plaintiff signature; packet is Motion + Order + POS")
 
 
 def main() -> None:
@@ -965,32 +1020,32 @@ def main() -> None:
 
     print(f"Building Motion to Strike for Matter 33 (Date: {args.date})...")
 
-    # 1. Build the standalone Proof of Service PDF
     build_motion_proof_of_service(args.pos_out, args.date, args.mailed_from)
     print(f"  [+] Wrote Proof of Service: {args.pos_out}")
 
-    # 2. Build the standalone Proposed Order PDF
-    build_proposed_order(args.order_out, args.date)
+    build_proposed_order(args.order_out)
     print(f"  [+] Wrote Proposed Order: {args.order_out}")
 
-    # 3. Build the Motion (Notice + Memo of P&As) temporary PDF
     temp_motion_raw = args.out.with_name("tmp_motion_raw.pdf")
     build_motion_document(temp_motion_raw, args.date)
     print(f"  [+] Wrote Motion document: {temp_motion_raw}")
 
-    # 4. Assemble primary filing: Motion + Proof of Service
     assemble([temp_motion_raw, args.pos_out], args.out)
-    if temp_motion_raw.exists():
-        temp_motion_raw.unlink()
     print(f"  [+] Wrote Primary Motion PDF with POS: {args.out}")
 
-    # 5. Assemble full packet: Motion + Proposed Order + Proof of Service
-    assemble([args.out, args.order_out], args.packet_out)
-    print(f"  [+] Wrote Full Filing Packet PDF: {args.packet_out}")
+    n_packet = assemble(
+        [temp_motion_raw, args.order_out, args.pos_out], args.packet_out
+    )
+    if temp_motion_raw.exists():
+        temp_motion_raw.unlink()
+    print(f"  [+] Wrote Full Filing Packet PDF ({n_packet} pp.): {args.packet_out}")
 
-    # 6. Publish to short link
     pub = publish_short_link(args.out, SHORT_LINK_SLUG)
     print(f"  [+] Published short-link PDF to: {pub}")
+    packet_pub = publish_short_link(args.packet_out, PACKET_SLUG)
+    print(f"  [+] Published packet short-link PDF to: {packet_pub}")
+
+    verify_outputs(args.out, args.order_out, args.pos_out, args.packet_out)
 
 
 if __name__ == "__main__":
