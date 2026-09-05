@@ -1,5 +1,20 @@
 [
   {
+    "date": "Sep. 4, 2026",
+    "event": "EXECUTED (unfiled) — Plaintiff's Civil L.R. 3-15 Certification of Conflicts, Interested Entities and Persons, and Citizenship in each live N.D. Cal. case where the first-appearance certification was missing: Serrato 4:26-cv-05953-ASK; Smith/HOPE 3:26-cv-07504-LJC; Amazon/Accurate 4:26-cv-09249-ASK; Meza/Melano 4:26-cv-08271-ASK; Candelaria/Gordon 3:26-cv-08272-LJC. Dated September 4, 2026. Uses the Civil L.R. 3-15(c)(3) no-conflict form. Not diversity; no (b)(3) citizenship recital. POS attached (mail except Smith/HOPE, served by email on SLB). Do not treat as filed until clerk-stamped.",
+    "matters": [
+      24,
+      28,
+      29,
+      32,
+      33
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": false,
+    "source": "/documents/matter-33/ndcal/Certification of Conflicts Interested Entities and Persons (Candelaria Gordon) (Sep 4 2026).pdf"
+  },
+  {
     "date": "Sep. 3, 2026",
     "event": "FILED — Dkt. 9 Order Setting Initial Case Management Conference and ADR Deadlines in Newanforbi v. Amazon.com Services, LLC et al. (N.D. Cal. 4:26-cv-09249-ASK). Assigned to Mag. Ajay S. Krishnan. ADR certification (ADR L.R. 3) and Rule 26(f) meet-and-confer due Nov. 10, 2026. Initial disclosures (Rule 26(a)(1)) and Joint Case Management Statement due Nov. 24, 2026. Initial CMC by Zoom Dec. 1, 2026, 1:30 p.m. (cand.uscourts.gov/ask). Review General Order 71. Plaintiff or the removing party must file the attached Consent or Declination to Magistrate Judge Jurisdiction within 14 days of case initiation (Sep. 14, 2026); other parties within 14 days of appearing. Plaintiff's Sep. 1 CONSENT remains unfiled until clerk-stamped. If the CMC date moves, the Nov. 10 and Nov. 24 deadlines move with it unless otherwise ordered.",
     "matters": [
@@ -1374,7 +1389,7 @@
   },
   {
     "date": "Aug. 10, 2026",
-    "event": "Certification of Conflicts and Interested Entities or Persons due — Nforbi v. Candelaria et al. (3:26-cv-08272-LJC). The Dkt. 4 scheduling order sets this obligation at \"Upon first appearance (supplement as necessary)\" and Civil L.R. 3-15(a) requires each non-governmental party to file it as a separate document with its first appearance. Plaintiff's first appearance was the Aug. 10, 2026 complaint; no such certification appears among Dkts. 1–4, so it is outstanding. Not carried as an upcoming countdown because the trigger date has passed — treat as an open filing task",
+    "event": "Certification of Conflicts and Interested Entities or Persons due — Nforbi v. Candelaria et al. (3:26-cv-08272-LJC). The Dkt. 4 scheduling order sets this obligation at \"Upon first appearance (supplement as necessary)\" and Civil L.R. 3-15(a) requires each non-governmental party to file it as a separate document with its first appearance. Plaintiff's first appearance was the Aug. 10, 2026 complaint. An executed Sep. 4, 2026 Certification is ready to file. Not carried as an upcoming countdown.",
     "matters": [
       33
     ],
