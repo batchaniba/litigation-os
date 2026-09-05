@@ -20,7 +20,6 @@ from pathlib import Path
 SCRIPT_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPT_DIR / "lib"))
 sys.path.insert(0, str(SCRIPT_DIR))
-from pdf_packet import assemble  # noqa: E402
 from pleading_paper import CONTENT_LEFT, PleadingPaper  # noqa: E402
 from proof_of_service import (  # noqa: E402
     DISTRICT_NDCAL,
@@ -62,6 +61,7 @@ class CertCase:
     defendant_pos_lines: list[str]
     recipients: list[str]
     pos_by_email: bool = False
+    signature_on_second_page: bool = False
 
 
 CASES: list[CertCase] = [
@@ -216,6 +216,7 @@ CASES: list[CertCase] = [
             "jstanzick@seyfarth.com",
             "Attorney for Accurate Background, LLC",
         ],
+        signature_on_second_page=True,
     ),
     CertCase(
         matter=32,
@@ -276,6 +277,7 @@ CASES: list[CertCase] = [
             "Haiyang.Li@doj.ca.gov",
             "(Courtesy; counsel in the related Serrato action)",
         ],
+        signature_on_second_page=True,
     ),
     CertCase(
         matter=33,
@@ -449,7 +451,7 @@ def build_pos(case: CertCase, out: Path, exec_date: str, mailed_from: str) -> Pa
         server_name=case.server_name,
         stamp_signature=True,
         by_email=case.pos_by_email,
-        signature_on_second_page=len(case.recipients) > 12,
+        signature_on_second_page=case.signature_on_second_page,
     )
     return build_proof_of_service(out, fields)
 
