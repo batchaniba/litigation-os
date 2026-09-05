@@ -311,17 +311,17 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 ## Attorney Fees Analysis
 
 <!-- PORTFOLIO:ATTORNEY_FEES:START -->
-Plaintiff is representing himself pro se across all 36 matters. The figures below represent what he would have been required to spend on private counsel to litigate this portfolio — costs he has absorbed entirely through self-representation. Based on real page counts extracted from 599 documents / 6,830 pages across matters with uploaded filings (Matter 32: 115 PDFs / 1,110 pages — N.D. Cal. ndcal/ filing billed; from-01|02|20|24/ stay attributed to source matters; Matter 33: 30 PDFs / 428 pages — N.D. Cal. refile + Nov. 1 / APS evidence; from-07/from-08 drafting stays on Matters 7/8; Matter 31 has no uploaded PDFs of its own), classified by document type and priced at a blended rate of **$280/hour** (senior partner $350–$450 / mid-associate $250–$350 / paralegal $150–$200). Opposing-party filings billed at light review rate only. Fee analysis date: September 5, 2026.
+Plaintiff is representing himself pro se across all 36 matters. The figures below represent what he would have been required to spend on private counsel to litigate this portfolio — costs he has absorbed entirely through self-representation. Based on real page counts extracted from 601 documents / 6,864 pages across matters with uploaded filings (Matter 32: 115 PDFs / 1,110 pages — N.D. Cal. ndcal/ filing billed; from-01|02|20|24/ stay attributed to source matters; Matter 33: 30 PDFs / 428 pages — N.D. Cal. refile + Nov. 1 / APS evidence; from-07/from-08 drafting stays on Matters 7/8; Matter 31 has no uploaded PDFs of its own), classified by document type and priced at a blended rate of **$280/hour** (senior partner $350–$450 / mid-associate $250–$350 / paralegal $150–$200). Opposing-party filings billed at light review rate only. Fee analysis date: September 5, 2026.
 
 | Cluster | Matters | Low | Mid | High |
 |---|---|---|---|---|
 | CHP / DUI / DMV | 1, 2, 7, 8, 20, 24, 32, 33 | $172,676 | $230,272 | $287,868 |
 | Parole Retaliation / HOPE | 3, 4, 5, 6, 11, 13, 14, 15, 16, 17, 18, 21, 28, 30, 34 | $469,672 | $619,192 | $772,912 |
-| Consumer Fraud / Employment | 12, 22, 23, 25, 26, 27, 29, 31, 36 | $148,176 | $201,866 | $255,556 |
+| Consumer Fraud / Employment | 12, 22, 23, 25, 26, 27, 29, 31, 36 | $154,896 | $210,826 | $266,756 |
 | Administrative Writs & Habeas | 9, 10, 19 | $41,580 | $57,890 | $74,200 |
 | Public Accommodation / Unruh | 35 | $14,280 | $19,460 | $24,640 |
-| **Portfolio Total** | **36 matters** | **$846,384** | **$1,128,680** | **$1,415,176** |
-| **Estimated Hours** | | **3,022.8 hrs** | **4,031 hrs** | **5,054.2 hrs** |
+| **Portfolio Total** | **36 matters** | **$853,104** | **$1,137,640** | **$1,426,376** |
+| **Estimated Hours** | | **3,046.8 hrs** | **4,063 hrs** | **5,094.2 hrs** |
 
 *Plaintiff has litigated all 36 matters pro se, absorbing the full economic equivalent of the above without compensation. Fee-shifting statutes (42 U.S.C. §1988, PC §290.46(j)(4)(A), RICO 18 U.S.C. §1964(c), FCRA, ICRAA) apply across the majority of active matters — mandatory fee recovery upon prevailing substantially offsets or eliminates the above costs.*
 <!-- PORTFOLIO:ATTORNEY_FEES:END -->
