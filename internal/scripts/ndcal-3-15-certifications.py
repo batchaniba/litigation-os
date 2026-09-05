@@ -466,7 +466,6 @@ def main() -> None:
         pos = ROOT / case.pos_rel
         build_cert(case, out, args.date)
         build_pos(case, pos, args.date, args.mailed_from)
-        assemble([out, pos], out)
         print(f"M{case.matter} {case.case_no}: {out}")
 
 
