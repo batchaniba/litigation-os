@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 """Matter 39 — verified complaint, Best Buy Co., Inc. / First Advantage.
 
-LOCKED after the September 8, 2026 execute except for the Checkr-pattern
-I&B pass. Do not rewrite pleading prose unless a new Best Buy or First
-Advantage document appears.
+LOCKED after the September 8, 2026 execute. Do not rewrite pleading prose
+unless a new Best Buy or First Advantage document appears. This complaint
+stands on Best Buy's own file. Do not weave other employers' reports.
 
 San Joaquin Superior Court. Penal Code § 290.46(j) is the load-bearing count.
 The October 17, 2023 warehouse offer, background authorization, and First
@@ -571,19 +571,8 @@ CONTENT = [
         "(d) First Advantage's role as Best Buy's named CRA; (e) Plaintiff's "
         "contemporaneous presence on the California Megan's Law website; "
         "(f) Best Buy did not identify any independent, lawful, job-related "
-        "basis for the decision; (g) Defendants' exclusive control of the "
-        "Best Buy report; and (h) other employment consumer reports "
-        "concerning this same Plaintiff that have been produced show a "
-        "repeating structure — ordinary county, federal, and national "
-        "criminal-history components returned Clear, No Record, or Eligible, "
-        "and the only component that returned Consider, Ineligible, Needs "
-        "Approval, Decisional, or a listed-on-registry result was "
-        "information disclosed pursuant to Penal Code section 290.46. "
-        "First Advantage is among the consumer reporting agencies that have "
-        "furnished that structure for this Plaintiff. Plaintiff does not "
-        "allege that any other employer's report is Best Buy's report. He "
-        "states that structure as information supporting his belief about "
-        "the unseen Best Buy First Advantage report.",
+        "basis for the decision; and (g) Defendants' exclusive control of "
+        "the Best Buy report.",
     ),
     (
         "PARA",
@@ -625,9 +614,7 @@ CONTENT = [
         "47. Best Buy and First Advantage knew or should have known that "
         "employment use of Megan's Law information is prohibited. The "
         "registry website displays that warning. Both are sophisticated "
-        "national actors. On information and belief, First Advantage's own "
-        "notices in other matters involving this Plaintiff have recited that "
-        "registry information may not be used for employment.",
+        "national actors.",
     ),
     (
         "PARA",
