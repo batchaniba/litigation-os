@@ -33,13 +33,13 @@ ROOT = SCRIPT_DIR.parents[1]
 DEFAULT_OUT = (
     ROOT
     / "internal/public/documents/matter-39"
-    / "Verified Complaint - Nforbi v Best Buy Co Inc et al"
+    / "Verified Complaint - Ngwa Nforbi v Best Buy Co Inc et al"
     " (REVIEW DRAFT for Sep 8 2026).pdf"
 )
 DEFAULT_EXEC_DATE = "September 8, 2026"
 EARLIEST_EXECUTION_DATE = dt.date(2026, 9, 8)
 COURT_LINE2 = "COUNTY OF SAN JOAQUIN"
-FOOTER = "VERIFIED COMPLAINT -- NFORBI v. BEST BUY CO., INC."
+FOOTER = "VERIFIED COMPLAINT -- BRENDAN NGWA NFORBI v. BEST BUY CO., INC."
 
 PLAINTIFF_BLOCK = [
     ("BRENDAN NGWA NFORBI", "Times-Bold", 12),

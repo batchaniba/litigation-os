@@ -180,9 +180,9 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | 34 | Newanforbi v. Counseling and Psychotherapy Center, Inc., et al. | TBD | USDC N.D. Cal. (San Jose Div.) / Santa Clara Sup. Ct. | Federal | Pre-filing — intake & compliance monitoring |
 | 35 | Ngwa Nforbi v. Ross Stores, Inc., et al. | 26CV501995 | Santa Clara Sup. Ct. (Downtown / First Street) | State | Filed — serve both Ross entities via CT Corp (~Oct 25) |
 | 36 | Brendan Ngwa Nforbi v. AT&T Mobility Services LLC, et al. | TBD | San Joaquin Sup. Ct. (proposed; review draft not filed) | State | Review draft — demurrer-hardened |
-| 37 | Nforbi v. Home Depot U.S.A., Inc. | TBD | San Joaquin Sup. Ct. (proposed; review draft not filed) | State | Review draft — demurrer-hardened |
-| 38 | Nforbi v. Swift Transportation Co. of Arizona LLC | TBD | San Joaquin Sup. Ct. (proposed; review draft not filed) | State | Review draft — demurrer-hardened |
-| 39 | Nforbi v. Best Buy Co., Inc., et al. | TBD | San Joaquin Sup. Ct. (proposed; review draft not filed) | State | Review draft — demurrer-hardened |
+| 37 | Brendan Ngwa Nforbi v. Home Depot U.S.A., Inc. | TBD | San Joaquin Sup. Ct. (proposed; review draft not filed) | State | Review draft — demurrer-hardened |
+| 38 | Brendan Ngwa Nforbi v. Swift Transportation Co. of Arizona LLC | TBD | San Joaquin Sup. Ct. (proposed; review draft not filed) | State | Review draft — demurrer-hardened |
+| 39 | Brendan Ngwa Nforbi v. Best Buy Co., Inc., et al. | TBD | San Joaquin Sup. Ct. (proposed; review draft not filed) | State | Review draft — demurrer-hardened |
 <!-- PORTFOLIO:ACTIVE_MATTERS:END -->
 
 *Settled matters stay in the table above until dismissal is entered — a settlement resolves the merits, but the matter is still open on the docket. Their Status column reads "Settled" (see the Overview count above for which ones).*

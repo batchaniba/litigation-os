@@ -26,13 +26,13 @@ ROOT = SCRIPT_DIR.parents[1]
 DEFAULT_OUT = (
     ROOT
     / "internal/public/documents/matter-36"
-    / "Verified Complaint - Nforbi v AT&T Mobility Services LLC et al"
+    / "Verified Complaint - Ngwa Nforbi v AT&T Mobility Services LLC et al"
     " (REVIEW DRAFT for Sep 8 2026).pdf"
 )
 DEFAULT_EXEC_DATE = "September 8, 2026"
 EARLIEST_EXECUTION_DATE = dt.date(2026, 9, 8)
 COURT_LINE2 = "COUNTY OF SAN JOAQUIN"
-FOOTER = "VERIFIED COMPLAINT -- NFORBI v. AT&T MOBILITY SERVICES LLC, ET AL."
+FOOTER = "VERIFIED COMPLAINT -- BRENDAN NGWA NFORBI v. AT&T MOBILITY SERVICES LLC, ET AL."
 
 PLAINTIFF_BLOCK = [
     ("BRENDAN NGWA NFORBI", "Times-Bold", 12),

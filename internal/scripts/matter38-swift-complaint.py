@@ -33,13 +33,13 @@ ROOT = SCRIPT_DIR.parents[1]
 DEFAULT_OUT = (
     ROOT
     / "internal/public/documents/matter-38"
-    / "Verified Complaint - Nforbi v Swift Transportation Co of Arizona LLC"
+    / "Verified Complaint - Ngwa Nforbi v Swift Transportation Co of Arizona LLC"
     " (REVIEW DRAFT for Sep 8 2026).pdf"
 )
 DEFAULT_EXEC_DATE = "September 8, 2026"
 EARLIEST_EXECUTION_DATE = dt.date(2026, 9, 8)
 COURT_LINE2 = "COUNTY OF SAN JOAQUIN"
-FOOTER = "VERIFIED COMPLAINT -- NFORBI v. SWIFT TRANSPORTATION CO. OF ARIZONA LLC"
+FOOTER = "VERIFIED COMPLAINT -- BRENDAN NGWA NFORBI v. SWIFT TRANSPORTATION CO. OF ARIZONA LLC"
 
 PLAINTIFF_BLOCK = [
     ("BRENDAN NGWA NFORBI", "Times-Bold", 12),
