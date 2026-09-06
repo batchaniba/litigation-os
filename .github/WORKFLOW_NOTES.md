@@ -19,6 +19,12 @@ These scripts are **load-bearing** and ensure data consistency:
   - `document-index.json` — searchable index of all documents across matters
 - **Failure mode**: If stale, the UI will show outdated matter lists or missing documents
 
+#### 1b. `npm run sync:all`
+- **When**: After editing matter JSON, `timeline.json`, documents, or short-links. The pre-commit hook runs this automatically when those paths are staged (`core.hooksPath = .githooks`, installed by `npm run prepare`).
+- **What it does**: `sync:registry` → `sync:summaries` → `sync:upcoming` → `sync:short-links` → `generate:readme`
+- **Why**: Stops generated-file merge wars from a commit that updates a matter but leaves `summaries.json` / README stale (the #627 failure mode).
+- **Companion**: `npm run retire:upcoming` flips past-dated `upcoming: true` flags to `false` (America/Los_Angeles). Run it when validate complains that a clock rolled past today, then `sync:upcoming`.
+
 #### 2. `npm run sync:upcoming`
 - **When**: Runs in `prebuild` (before every production build)
 - **What it does**: Generates `internal/src/data/upcoming.json` by filtering `timeline.json` for events marked `upcoming: true`

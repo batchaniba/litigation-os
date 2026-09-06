@@ -65,6 +65,17 @@ describe("inferActor", () => {
     expect(inferActor(entry({ actor: "nobody" })).actorSource).toBe("inferred");
   });
 
+  it("treats plaintiff as you and honors court as an explicit actor", () => {
+    expect(inferActor(entry({ actor: "plaintiff" }))).toEqual({
+      actor: "you",
+      actorSource: "explicit",
+    });
+    expect(inferActor(entry({ actor: "court" }))).toEqual({
+      actor: "court",
+      actorSource: "explicit",
+    });
+  });
+
   it("flags clocks that run against the other side", () => {
     expect(inferActor(entry({ event: "AG reply deadline (computed) — Respondents' Reply" })).actor)
       .toBe("opposing");
@@ -272,5 +283,14 @@ describe("buildQueue against the real portfolio data", () => {
   it("keeps §430.41 meet-and-confer out of yourQueue", () => {
     const mine = yourQueue(queue);
     expect(mine.some((i) => /430\.41|intends to demur/i.test(i.event))).toBe(false);
+  });
+
+  it("pins a known actor and a /documents/ source on every upcoming event", () => {
+    const flagged = timeline.filter((t) => t.upcoming === true);
+    expect(flagged.length).toBeGreaterThan(0);
+    for (const event of flagged) {
+      expect(inferActor(event).actorSource, event.event).toBe("explicit");
+      expect(event.source, event.event).toMatch(/^\/documents\//);
+    }
   });
 });

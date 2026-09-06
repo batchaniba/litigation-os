@@ -233,6 +233,34 @@ describe("deadlineMath — FRCP 6", () => {
     expect(byId.federal_period_with_mail.date).toBe("2026-08-20");
   });
 
+  it("computes E.D. Cal. L.R. 230(d) reply from the UPS Dkt. 10 opposition (Matter 26 golden)", () => {
+    const result = computeDeadlinesFromEvent({
+      recipe: "edcal_lr230d_reply",
+      anchorDate: "Aug. 28, 2026",
+      court: "USDC E.D. Cal.",
+    });
+    const reply = result.deadlines[0];
+    expect(reply.id).toBe("edcal_reply");
+    expect(reply.rawDate).toBe("2026-09-07");
+    expect(reply.date).toBe("2026-09-08");
+    expect(reply.rolled).toBe(true);
+    expect(reply.displayDate).toBe("Sep. 8, 2026");
+    expect(reply.citations.some((c) => c.id === "edcal230")).toBe(true);
+    expect(result.sources.some((s) => s.id === "edcal230")).toBe(true);
+  });
+
+  it("computes E.D. Cal. L.R. 230(c) opposition 14 days after a Wednesday filing with no roll", () => {
+    const result = computeDeadlinesFromEvent({
+      recipe: "edcal_lr230c_opposition",
+      anchorDate: "2026-08-26",
+      court: "USDC E.D. Cal.",
+    });
+    const opposition = result.deadlines[0];
+    expect(opposition.rawDate).toBe("2026-09-09");
+    expect(opposition.date).toBe("2026-09-09");
+    expect(opposition.rolled).toBe(false);
+  });
+
   it("computes FRCP 6(c) motion notice backward from a hearing", () => {
     const result = computeDeadlinesFromEvent({
       recipe: "federal_motion_hearing",

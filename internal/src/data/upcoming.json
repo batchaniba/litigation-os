@@ -118,7 +118,8 @@
     ],
     "type": "deadline",
     "upcoming": true,
-    "actor": "opposing"
+    "actor": "opposing",
+    "source": "/documents/matter-28/Proof of Service - SLB Accepted Service for Smith and HOPE (N.D. Cal. 3-26-cv-07504-LJC) (Sep 2 2026).pdf"
   },
   {
     "date": "Oct. 1, 2026",
@@ -150,7 +151,8 @@
     ],
     "type": "deadline",
     "upcoming": true,
-    "actor": "you"
+    "actor": "you",
+    "source": "/documents/matter-32/from-20/Notice of Case Management Conference.pdf"
   },
   {
     "date": "Sep. 20, 2026",
@@ -193,7 +195,8 @@
     ],
     "type": "deadline",
     "upcoming": true,
-    "actor": "you"
+    "actor": "you",
+    "source": "/documents/matter-26/Dkt 07-3 - Certificate of Service (Filed Aug 26 2026).pdf"
   },
   {
     "date": "Oct. 25, 2026",
@@ -247,7 +250,8 @@
     ],
     "type": "deadline",
     "upcoming": true,
-    "actor": "opposing"
+    "actor": "opposing",
+    "source": "/documents/matter-27/Letter Confirming 15-Day Extension of Randstad's Time to Respond (Aug 18 2026).pdf"
   },
   {
     "date": "Sep. 15, 2026",
@@ -257,7 +261,8 @@
     ],
     "type": "deadline",
     "upcoming": true,
-    "actor": "opposing"
+    "actor": "opposing",
+    "source": "/documents/matter-27/Letter Confirming 15-Day Extension of Randstad's Time to Respond (Aug 18 2026).pdf"
   },
   {
     "date": "Sep. 9, 2026",
@@ -267,7 +272,8 @@
     ],
     "type": "deadline",
     "upcoming": true,
-    "actor": "opposing"
+    "actor": "opposing",
+    "source": "/documents/matter-27/Gmail - RK Logistics Extension Request to Sep 14 (Aug 21 2026).pdf"
   },
   {
     "date": "Sep. 14, 2026",
@@ -277,7 +283,8 @@
     ],
     "type": "deadline",
     "upcoming": true,
-    "actor": "opposing"
+    "actor": "opposing",
+    "source": "/documents/matter-27/Gmail - RK Logistics Extension Request to Sep 14 (Aug 21 2026).pdf"
   },
   {
     "date": "Oct. 22, 2026",
@@ -309,7 +316,8 @@
     ],
     "type": "hearing",
     "source": "/documents/matter-33/ndcal/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026).pdf",
-    "upcoming": true
+    "upcoming": true,
+    "actor": "you"
   },
   {
     "date": "Nov. 12, 2026",
@@ -341,7 +349,8 @@
     ],
     "type": "hearing",
     "source": "/documents/matter-32/ndcal/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026).pdf",
-    "upcoming": true
+    "upcoming": true,
+    "actor": "you"
   },
   {
     "date": "Nov. 1, 2026",
@@ -352,7 +361,9 @@
       32
     ],
     "type": "deadline",
-    "upcoming": true
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-33/incident/Arrest Report.pdf"
   },
   {
     "date": "Sep. 8, 2026",
@@ -361,7 +372,9 @@
       24
     ],
     "type": "deadline",
-    "upcoming": true
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-24/Order Setting Initial CMC and ADR Deadlines (Doc 4, Filed Jun 17 2026).pdf"
   },
   {
     "date": "Sep. 15, 2026",
@@ -370,7 +383,9 @@
       24
     ],
     "type": "hearing",
-    "upcoming": true
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-24/Order Setting Initial CMC and ADR Deadlines (Doc 4, Filed Jun 17 2026).pdf"
   },
   {
     "date": "Oct. 15, 2026",
@@ -379,7 +394,9 @@
       28
     ],
     "type": "deadline",
-    "upcoming": true
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-28/Service Packet Emailed to SLB (Issued Summons Complaint Dkt 1-1 Dkt 4 Dkt 11) (Aug 31 2026).pdf"
   },
   {
     "date": "Oct. 22, 2026",
@@ -388,7 +405,9 @@
       28
     ],
     "type": "hearing",
-    "upcoming": true
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-28/Service Packet Emailed to SLB (Issued Summons Complaint Dkt 1-1 Dkt 4 Dkt 11) (Aug 31 2026).pdf"
   },
   {
     "date": "Dec. 11, 2026",
@@ -398,7 +417,8 @@
     ],
     "type": "hearing",
     "source": "/documents/matter-12/Minute Order - Case Management Conference (Aug 12 2026).pdf",
-    "upcoming": true
+    "upcoming": true,
+    "actor": "you"
   },
   {
     "date": "Sep. 16, 2026",
@@ -407,7 +427,9 @@
       30
     ],
     "type": "deadline",
-    "upcoming": true
+    "upcoming": true,
+    "actor": "agency",
+    "source": "/documents/matter-30/Complaint v9 Newanforbi v Moua NDCAL.pdf"
   },
   {
     "date": "Mar. 1, 2027",
@@ -416,7 +438,9 @@
       30
     ],
     "type": "deadline",
-    "upcoming": true
+    "upcoming": true,
+    "actor": "agency",
+    "source": "/documents/matter-30/Complaint v9 Newanforbi v Moua NDCAL.pdf"
   },
   {
     "date": "Oct. 16, 2026",
@@ -426,6 +450,7 @@
     ],
     "type": "deadline",
     "upcoming": true,
+    "actor": "you",
     "source": "/documents/matter-32/from-20/Serrato Notice of Joinder and Demurrer.pdf"
   },
   {
@@ -436,6 +461,7 @@
     ],
     "type": "deadline",
     "upcoming": true,
+    "actor": "you",
     "source": "/documents/matter-32/from-20/Dutra Notice of Joinder and Demurrer.pdf"
   },
   {
@@ -446,6 +472,7 @@
     ],
     "type": "deadline",
     "upcoming": true,
+    "actor": "you",
     "source": "/documents/matter-27/Notice of Amount of Punitive Damages Sought (CCP 425.115) - Randstad US LLC (Aug 4 2026).pdf"
   },
   {
@@ -456,7 +483,8 @@
     ],
     "type": "deadline",
     "upcoming": true,
-    "actor": "you"
+    "actor": "you",
+    "source": "/documents/matter-26/Dkt 01 - Notice of Removal as Docketed, E.D. Cal. Sacramento (Aug 20 2026).pdf"
   },
   {
     "date": "Sep. 30, 2026",

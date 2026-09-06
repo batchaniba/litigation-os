@@ -63,7 +63,7 @@
     "type": "filing",
     "upcoming": false,
     "filed": false,
-    "actor": "plaintiff",
+    "actor": "you",
     "source": "/documents/matter-26/Opposition to UPS Consent Motion for Extension of Time to File Reply (Sep 4 2026).pdf"
   },
   {
@@ -134,6 +134,7 @@
     "type": "filing",
     "upcoming": false,
     "filed": true,
+    "actor": "you",
     "source": "/documents/matter-33/ndcal/Dkt 09 - Proof of Service - FAC Dkt 06 Mailed to Candelaria and Gordon (CONFORMED, Filed Aug 26 2026).pdf"
   },
   {
@@ -180,6 +181,7 @@
     "type": "filing",
     "upcoming": false,
     "filed": false,
+    "actor": "you",
     "source": "/documents/matter-32/ndcal/Run With It - Process Serving Order Executed - Meza-Gonzalez (Aug 27 2026).jpg"
   },
   {
@@ -202,6 +204,7 @@
     ],
     "type": "employment",
     "upcoming": false,
+    "actor": "you",
     "source": "/documents/matter-36/Application Received - R-106742 Bilingual Spanish Retail Sales Consultant.pdf"
   },
   {
@@ -212,6 +215,7 @@
     ],
     "type": "employment",
     "upcoming": false,
+    "actor": "you",
     "source": "/documents/matter-36/Scheduled in-person interview with AT&T.pdf"
   },
   {
@@ -222,6 +226,7 @@
     ],
     "type": "employment",
     "upcoming": false,
+    "actor": "you",
     "source": "/documents/matter-36/LTI Notification for Brendan Ngwa Nforbi.pdf"
   },
   {
@@ -232,6 +237,7 @@
     ],
     "type": "employment",
     "upcoming": false,
+    "actor": "you",
     "source": "/documents/matter-36/IMG_8093.png"
   },
   {
@@ -247,6 +253,7 @@
     "type": "filing",
     "upcoming": false,
     "filed": false,
+    "actor": "you",
     "source": "/documents/matter-33/ndcal/Certification of Conflicts Interested Entities and Persons (Candelaria Gordon) (Sep 4 2026).pdf"
   },
   {
@@ -526,7 +533,8 @@
     ],
     "type": "deadline",
     "upcoming": true,
-    "actor": "opposing"
+    "actor": "opposing",
+    "source": "/documents/matter-28/Proof of Service - SLB Accepted Service for Smith and HOPE (N.D. Cal. 3-26-cv-07504-LJC) (Sep 2 2026).pdf"
   },
   {
     "date": "Aug. 31, 2026",
@@ -727,7 +735,8 @@
     ],
     "type": "deadline",
     "upcoming": true,
-    "actor": "you"
+    "actor": "you",
+    "source": "/documents/matter-32/from-20/Notice of Case Management Conference.pdf"
   },
   {
     "date": "Sep. 20, 2026",
@@ -1078,7 +1087,8 @@
     ],
     "type": "deadline",
     "upcoming": true,
-    "actor": "you"
+    "actor": "you",
+    "source": "/documents/matter-26/Dkt 07-3 - Certificate of Service (Filed Aug 26 2026).pdf"
   },
   {
     "date": "Sep. 9, 2026",
@@ -1235,6 +1245,7 @@
     "type": "filing",
     "upcoming": false,
     "filed": false,
+    "actor": "you",
     "source": "/documents/matter-35/Internal Damages Worksheet - Ngwa Nforbi v Ross Stores Inc et al (Aug 26 2026).pdf"
   },
   {
@@ -1246,6 +1257,7 @@
     "type": "filing",
     "upcoming": false,
     "filed": true,
+    "actor": "you",
     "source": "/documents/matter-35/Verified Complaint (CONFORMED, Filed Aug 26 2026) - 26CV501995.pdf"
   },
   {
@@ -1255,7 +1267,8 @@
       35
     ],
     "type": "incident",
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Aug. 31, 2026",
@@ -1265,6 +1278,7 @@
     ],
     "type": "deadline",
     "upcoming": false,
+    "actor": "you",
     "source": "/documents/matter-25/Amended Notice of Amount of Punitive Damages Sought (CCP 425.115) - Federal Express Corporation (Aug 17 2026).pdf"
   },
   {
@@ -1274,7 +1288,8 @@
       3
     ],
     "type": "deadline",
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Sep. 12, 2026",
@@ -1294,7 +1309,8 @@
     ],
     "type": "settlement",
     "upcoming": false,
-    "filed": false
+    "filed": false,
+    "actor": "you"
   },
   {
     "date": "Aug. 21, 2026",
@@ -1304,6 +1320,7 @@
     ],
     "type": "correspondence",
     "upcoming": false,
+    "actor": "you",
     "source": "/documents/matter-27/Gmail - RK Logistics Extension Request to Sep 14 (Aug 21 2026).pdf"
   },
   {
@@ -1314,6 +1331,7 @@
     ],
     "type": "filing",
     "upcoming": false,
+    "actor": "you",
     "source": "/documents/matter-33/ndcal/Notice Identifying Operative First Amended Complaint (Candelaria) (Aug 24 2026).pdf"
   },
   {
@@ -1324,6 +1342,7 @@
     ],
     "type": "filing",
     "upcoming": false,
+    "actor": "you",
     "source": "/documents/matter-32/ndcal/Notice Identifying Operative First Amended Complaint (Meza) (Aug 24 2026).pdf"
   },
   {
@@ -1335,7 +1354,8 @@
     "type": "filing",
     "source": "/documents/matter-32/ndcal/Dkt 06 - First Amended Complaint (CONFORMED, Filed Aug 14 2026).pdf",
     "filed": true,
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Aug. 14, 2026",
@@ -1346,7 +1366,8 @@
     "type": "filing",
     "source": "/documents/matter-33/ndcal/Dkt 05 - First Amended Complaint (CONFORMED, Filed Aug 14 2026).pdf",
     "filed": true,
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Aug. 17, 2026",
@@ -1357,7 +1378,8 @@
     "type": "filing",
     "source": "/documents/matter-32/ndcal/Dkt 05 - First Amended Complaint (CONFORMED, Filed Aug 17 2026).pdf",
     "filed": true,
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Aug. 17, 2026",
@@ -1368,7 +1390,8 @@
     "type": "filing",
     "source": "/documents/matter-33/ndcal/Dkt 06 - First Amended Complaint (CONFORMED, Filed Aug 17 2026).pdf",
     "filed": true,
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Aug. 20, 2026",
@@ -1380,7 +1403,8 @@
     "type": "filing",
     "source": "/documents/matter-24/Administrative Motion to Consider Whether Cases Should Be Related - Serrato and Meza-Gonzalez (Filed Aug 20 2026).pdf",
     "filed": true,
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Aug. 20, 2026",
@@ -1391,7 +1415,8 @@
     "type": "filing",
     "source": "/documents/matter-03/Notice of Voluntary Dismissal - Katie Palacios (Filed Aug 20 2026).pdf",
     "filed": true,
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Aug. 21, 2026",
@@ -1426,7 +1451,8 @@
     "type": "filing",
     "source": "/documents/matter-27/Letter Confirming 15-Day Extension of Randstad's Time to Respond (Aug 18 2026).pdf",
     "filed": false,
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Aug. 18, 2026",
@@ -1437,7 +1463,8 @@
     "type": "filing",
     "source": "/documents/matter-27/Opening Settlement Demand - Randstad US LLC (Aug 18 2026).pdf",
     "filed": false,
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Aug. 18, 2026",
@@ -1479,7 +1506,8 @@
     ],
     "type": "deadline",
     "upcoming": true,
-    "actor": "opposing"
+    "actor": "opposing",
+    "source": "/documents/matter-27/Letter Confirming 15-Day Extension of Randstad's Time to Respond (Aug 18 2026).pdf"
   },
   {
     "date": "Sep. 15, 2026",
@@ -1489,7 +1517,8 @@
     ],
     "type": "deadline",
     "upcoming": true,
-    "actor": "opposing"
+    "actor": "opposing",
+    "source": "/documents/matter-27/Letter Confirming 15-Day Extension of Randstad's Time to Respond (Aug 18 2026).pdf"
   },
   {
     "date": "Sep. 9, 2026",
@@ -1499,7 +1528,8 @@
     ],
     "type": "deadline",
     "upcoming": true,
-    "actor": "opposing"
+    "actor": "opposing",
+    "source": "/documents/matter-27/Gmail - RK Logistics Extension Request to Sep 14 (Aug 21 2026).pdf"
   },
   {
     "date": "Sep. 14, 2026",
@@ -1509,7 +1539,8 @@
     ],
     "type": "deadline",
     "upcoming": true,
-    "actor": "opposing"
+    "actor": "opposing",
+    "source": "/documents/matter-27/Gmail - RK Logistics Extension Request to Sep 14 (Aug 21 2026).pdf"
   },
   {
     "date": "Aug. 17, 2026",
@@ -1521,7 +1552,8 @@
     "type": "milestone",
     "source": "/documents/matter-32/ndcal/FAC Nforbi v Meza-Gonzalez and Melano NDCal - OPERATIVE UNSIGNED (Aug 12 2026).pdf",
     "filed": false,
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Aug. 17, 2026",
@@ -1531,7 +1563,8 @@
     ],
     "type": "filing",
     "source": "/documents/matter-19/Notice of Change of Address (Aug 17 2026).pdf",
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Aug. 17, 2026",
@@ -1542,7 +1575,8 @@
     ],
     "type": "filing",
     "source": "/documents/matter-25/Amended Notice of Amount of Punitive Damages Sought (CCP 425.115) - Federal Express Corporation (Aug 17 2026).pdf",
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Aug. 17, 2026",
@@ -1552,7 +1586,8 @@
     ],
     "type": "filing",
     "source": "/documents/matter-29/SER-001 Request for Sheriff to Serve Court Papers - Amazon.com Services LLC (CCP 425.115 Notice) (Aug 17 2026).pdf",
-    "upcoming": false
+    "upcoming": false,
+    "actor": "agency"
   },
   {
     "date": "Aug. 14, 2026",
@@ -1561,7 +1596,8 @@
       34
     ],
     "type": "investigation",
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Aug. 11, 2026",
@@ -1571,7 +1607,8 @@
     ],
     "type": "filing",
     "source": "/documents/matter-32/from-01/Notice of Voluntary Dismissal Without Prejudice (Aug 11 2026).pdf",
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Aug. 11, 2026",
@@ -1581,7 +1618,8 @@
     ],
     "type": "filing",
     "source": "/documents/matter-33/from-07/Notice of Voluntary Dismissal Without Prejudice (Aug 11 2026).pdf",
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Aug. 11, 2026",
@@ -1591,7 +1629,8 @@
     ],
     "type": "filing",
     "source": "/documents/matter-32/from-02/Request for Dismissal Without Prejudice (Draft, Aug 11 2026).pdf",
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Aug. 15, 2026",
@@ -1602,7 +1641,8 @@
     ],
     "type": "filing",
     "source": "/documents/matter-32/from-01/Notice of Voluntary Dismissal Without Prejudice (Aug 11 2026).pdf",
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Aug. 15, 2026",
@@ -1613,7 +1653,8 @@
     ],
     "type": "filing",
     "source": "/documents/matter-32/from-02/Request for Dismissal Without Prejudice (Draft, Aug 11 2026).pdf",
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Aug. 15, 2026",
@@ -1624,7 +1665,8 @@
     ],
     "type": "filing",
     "source": "/documents/matter-33/from-07/Notice of Voluntary Dismissal Without Prejudice (Aug 11 2026).pdf",
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Aug. 11, 2026",
@@ -1633,7 +1675,8 @@
       12
     ],
     "type": "milestone",
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Aug. 11, 2026",
@@ -1645,7 +1688,8 @@
     "type": "milestone",
     "source": "/documents/matter-33/ndcal/FAC Ngwa Nforbi v Candelaria and Gordon NDCal 3-26-cv-08272-LJC (Aug 11 2026).pdf",
     "filed": false,
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Aug. 10, 2026",
@@ -1656,7 +1700,8 @@
     "type": "milestone",
     "source": "/documents/matter-33/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
     "filed": true,
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Aug. 10, 2026",
@@ -1709,7 +1754,8 @@
     ],
     "type": "hearing",
     "source": "/documents/matter-33/ndcal/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026).pdf",
-    "upcoming": true
+    "upcoming": true,
+    "actor": "you"
   },
   {
     "date": "Aug. 14, 2026",
@@ -1718,7 +1764,8 @@
       32
     ],
     "type": "filing",
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Aug. 14, 2026",
@@ -1727,7 +1774,8 @@
       33
     ],
     "type": "filing",
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Sep. 4, 2026",
@@ -1777,7 +1825,8 @@
     ],
     "type": "hearing",
     "source": "/documents/matter-32/ndcal/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026).pdf",
-    "upcoming": true
+    "upcoming": true,
+    "actor": "you"
   },
   {
     "date": "Aug. 7, 2026",
@@ -1787,7 +1836,8 @@
     ],
     "type": "filing",
     "source": "/documents/matter-32/from-01/Notice of Voluntary Dismissal Without Prejudice (Aug 7 2026).pdf",
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Nov. 1, 2026",
@@ -1798,7 +1848,9 @@
       32
     ],
     "type": "deadline",
-    "upcoming": true
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-33/incident/Arrest Report.pdf"
   },
   {
     "date": "Aug. 7, 2026",
@@ -1809,7 +1861,8 @@
       7,
       8
     ],
-    "type": "milestone"
+    "type": "milestone",
+    "actor": "you"
   },
   {
     "date": "Aug. 7, 2026",
@@ -1818,7 +1871,8 @@
       32,
       33
     ],
-    "type": "milestone"
+    "type": "milestone",
+    "actor": "you"
   },
   {
     "date": "Jul. 30, 2026",
@@ -1826,13 +1880,15 @@
     "matters": [
       31
     ],
-    "type": "milestone"
+    "type": "milestone",
+    "actor": "you"
   },
   {
     "date": "Dec. 2, 2020",
     "event": "Released on parole; HOPE Program begins",
     "matters": "All",
-    "type": "milestone"
+    "type": "milestone",
+    "actor": "you"
   },
   {
     "date": "Apr. 4, 2023",
@@ -1840,7 +1896,8 @@
     "matters": [
       12
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Aug. 27, 2025",
@@ -1848,7 +1905,8 @@
     "matters": [
       19
     ],
-    "type": "ruling"
+    "type": "ruling",
+    "actor": "you"
   },
   {
     "date": "Dec. 1, 2025",
@@ -1856,7 +1914,8 @@
     "matters": [
       19
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Feb. 10, 2026",
@@ -1864,7 +1923,8 @@
     "matters": [
       19
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Mar. 31, 2026",
@@ -1872,7 +1932,8 @@
     "matters": [
       19
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Mar. 2023",
@@ -1884,7 +1945,8 @@
       11,
       15
     ],
-    "type": "ruling"
+    "type": "ruling",
+    "actor": "you"
   },
   {
     "date": "Dec. 2023",
@@ -1895,7 +1957,8 @@
       5,
       11
     ],
-    "type": "ruling"
+    "type": "ruling",
+    "actor": "you"
   },
   {
     "date": "Nov. 1, 2024",
@@ -1906,7 +1969,8 @@
       13,
       14
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Dec. 4, 2024",
@@ -1915,7 +1979,8 @@
       7,
       8
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Jan. 2025",
@@ -1924,7 +1989,8 @@
       3,
       4
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Jan. 24, 2025",
@@ -1933,7 +1999,8 @@
       7,
       8
     ],
-    "type": "hearing"
+    "type": "hearing",
+    "actor": "you"
   },
   {
     "date": "Feb. 11, 2025",
@@ -1942,7 +2009,8 @@
       7,
       8
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Mar.\u2013Apr. 2025",
@@ -1951,7 +2019,8 @@
       3,
       4
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Apr. 2025",
@@ -1962,7 +2031,8 @@
       5,
       11
     ],
-    "type": "ruling"
+    "type": "ruling",
+    "actor": "you"
   },
   {
     "date": "May 27, 2025",
@@ -1970,7 +2040,8 @@
     "matters": [
       1
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Mid-2025",
@@ -1980,7 +2051,8 @@
       4,
       5
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Nov. 19, 2025",
@@ -1994,7 +2066,8 @@
       15,
       14
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Dec. 2, 2025",
@@ -2003,7 +2076,8 @@
       9,
       10
     ],
-    "type": "milestone"
+    "type": "milestone",
+    "actor": "you"
   },
   {
     "date": "Dec. 2025",
@@ -2011,7 +2085,8 @@
     "matters": [
       11
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Apr. 1, 2025",
@@ -2020,7 +2095,8 @@
       3,
       4
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Apr. 17, 2025",
@@ -2029,7 +2105,8 @@
       3,
       4
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Aug. 2025",
@@ -2038,7 +2115,8 @@
       3,
       4
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Dec. 31, 2025",
@@ -2047,7 +2125,8 @@
       3,
       4
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Jan. 5, 2026",
@@ -2055,7 +2134,8 @@
     "matters": [
       3
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Jan. 6, 2026",
@@ -2063,7 +2143,8 @@
     "matters": [
       3
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Jan. 12, 2026",
@@ -2071,7 +2152,8 @@
     "matters": [
       3
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Jan. 13, 2026",
@@ -2079,7 +2161,8 @@
     "matters": [
       3
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Jan. 15, 2026",
@@ -2088,7 +2171,8 @@
       3,
       4
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Jan. 30, 2026",
@@ -2096,7 +2180,8 @@
     "matters": [
       3
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Feb. 2, 2026",
@@ -2104,7 +2189,8 @@
     "matters": [
       3
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Feb. 26, 2026",
@@ -2112,7 +2198,8 @@
     "matters": [
       3
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Jan. 22, 2026",
@@ -2123,7 +2210,8 @@
       17,
       18
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Feb. 20, 2026",
@@ -2131,7 +2219,8 @@
     "matters": [
       6
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "May 20, 2026",
@@ -2139,7 +2228,8 @@
     "matters": [
       6
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "May 21, 2026",
@@ -2147,7 +2237,8 @@
     "matters": [
       6
     ],
-    "type": "milestone"
+    "type": "milestone",
+    "actor": "you"
   },
   {
     "date": "Jun. 1, 2026",
@@ -2155,7 +2246,8 @@
     "matters": [
       6
     ],
-    "type": "milestone"
+    "type": "milestone",
+    "actor": "you"
   },
   {
     "date": "Apr. 2, 2026",
@@ -2163,7 +2255,8 @@
     "matters": [
       18
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Apr. 2, 2026",
@@ -2171,7 +2264,8 @@
     "matters": [
       18
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "May 2, 2026",
@@ -2179,7 +2273,8 @@
     "matters": [
       18
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Jan. 30, 2026",
@@ -2187,7 +2282,8 @@
     "matters": [
       9
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Feb. 4, 2026",
@@ -2195,7 +2291,8 @@
     "matters": [
       2
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Feb. 10, 2026",
@@ -2203,7 +2300,8 @@
     "matters": [
       5
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Feb. 13, 2026",
@@ -2211,7 +2309,8 @@
     "matters": [
       12
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Feb. 23, 2026",
@@ -2219,7 +2318,8 @@
     "matters": [
       10
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Feb. 24, 2026",
@@ -2227,7 +2327,8 @@
     "matters": [
       5
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Mar. 2, 2026",
@@ -2235,7 +2336,8 @@
     "matters": [
       11
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "May 13, 2026",
@@ -2243,7 +2345,8 @@
     "matters": [
       14
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Mar. 3, 2026",
@@ -2252,7 +2355,8 @@
       2,
       5
     ],
-    "type": "hearing"
+    "type": "hearing",
+    "actor": "you"
   },
   {
     "date": "Mar. 9, 2026",
@@ -2260,7 +2364,8 @@
     "matters": [
       3
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Mar. 10, 2026",
@@ -2268,7 +2373,8 @@
     "matters": [
       9
     ],
-    "type": "ruling"
+    "type": "ruling",
+    "actor": "you"
   },
   {
     "date": "Mar. 11, 2026",
@@ -2276,7 +2382,8 @@
     "matters": [
       12
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Mar. 19, 2026",
@@ -2284,7 +2391,8 @@
     "matters": [
       3
     ],
-    "type": "hearing"
+    "type": "hearing",
+    "actor": "you"
   },
   {
     "date": "Mar. 25, 2026",
@@ -2292,7 +2400,8 @@
     "matters": [
       2
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Mar. 27, 2026",
@@ -2300,7 +2409,8 @@
     "matters": [
       3
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Mar. 30, 2026",
@@ -2308,7 +2418,8 @@
     "matters": [
       3
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Apr. 1, 2026",
@@ -2316,7 +2427,8 @@
     "matters": [
       3
     ],
-    "type": "milestone"
+    "type": "milestone",
+    "actor": "you"
   },
   {
     "date": "Apr. 1, 2026",
@@ -2324,7 +2436,8 @@
     "matters": [
       9
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Apr. 2, 2026",
@@ -2332,7 +2445,8 @@
     "matters": [
       2
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "opposing"
   },
   {
     "date": "Apr. 2, 2026",
@@ -2340,7 +2454,8 @@
     "matters": [
       3
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Apr. 3, 2026",
@@ -2348,7 +2463,8 @@
     "matters": [
       19
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Apr. 6, 2026",
@@ -2356,7 +2472,8 @@
     "matters": [
       3
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Apr. 9, 2026",
@@ -2365,7 +2482,8 @@
       1,
       2
     ],
-    "type": "hearing"
+    "type": "hearing",
+    "actor": "you"
   },
   {
     "date": "Apr. 13, 2026",
@@ -2374,7 +2492,8 @@
       1,
       2
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Apr. 14, 2026",
@@ -2383,7 +2502,8 @@
       1,
       2
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Apr. 20, 2026",
@@ -2391,7 +2511,8 @@
     "matters": [
       9
     ],
-    "type": "milestone"
+    "type": "milestone",
+    "actor": "you"
   },
   {
     "date": "Apr. 15, 2026",
@@ -2399,7 +2520,8 @@
     "matters": [
       5
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "opposing"
   },
   {
     "date": "Apr. 22, 2026",
@@ -2407,7 +2529,8 @@
     "matters": [
       5
     ],
-    "type": "milestone"
+    "type": "milestone",
+    "actor": "opposing"
   },
   {
     "date": "Apr. 22, 2026",
@@ -2415,7 +2538,8 @@
     "matters": [
       5
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "May 22, 2026",
@@ -2423,7 +2547,8 @@
     "matters": [
       5
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "May 22, 2026",
@@ -2431,7 +2556,8 @@
     "matters": [
       5
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "May 22, 2026",
@@ -2439,7 +2565,8 @@
     "matters": [
       5
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "May 12, 2026",
@@ -2447,7 +2574,8 @@
     "matters": [
       5
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "May 4, 2026",
@@ -2455,7 +2583,8 @@
     "matters": [
       2
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Apr. 23, 2026",
@@ -2463,7 +2592,8 @@
     "matters": [
       15
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "agency"
   },
   {
     "date": "May 13, 2026",
@@ -2471,7 +2601,8 @@
     "matters": [
       15
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "May 15, 2026",
@@ -2481,7 +2612,8 @@
       7,
       8
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "May 23, 2026",
@@ -2491,7 +2623,8 @@
       5,
       6
     ],
-    "type": "milestone"
+    "type": "milestone",
+    "actor": "you"
   },
   {
     "date": "Jun. 8, 2026",
@@ -2499,7 +2632,8 @@
     "matters": [
       5
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Jun. 14, 2026",
@@ -2507,7 +2641,8 @@
     "matters": [
       5
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Jun. 15, 2026",
@@ -2515,7 +2650,8 @@
     "matters": [
       5
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Jun. 16, 2026",
@@ -2523,7 +2659,8 @@
     "matters": [
       5
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Jun. 18, 2026",
@@ -2531,7 +2668,8 @@
     "matters": [
       5
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Jun. 24, 2026",
@@ -2539,7 +2677,8 @@
     "matters": [
       5
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "May 18, 2026",
@@ -2547,7 +2686,8 @@
     "matters": [
       3
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "May 28, 2026",
@@ -2555,7 +2695,8 @@
     "matters": [
       3
     ],
-    "type": "hearing"
+    "type": "hearing",
+    "actor": "you"
   },
   {
     "date": "Apr. 27, 2026",
@@ -2563,7 +2704,8 @@
     "matters": [
       7
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "May 29, 2026",
@@ -2573,7 +2715,8 @@
       8,
       22
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Apr. 7, 2026",
@@ -2581,7 +2724,8 @@
     "matters": [
       2
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Apr. 9, 2026",
@@ -2589,7 +2733,8 @@
     "matters": [
       3
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Apr. 13, 2026",
@@ -2597,7 +2742,8 @@
     "matters": [
       3
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Apr. 20, 2026",
@@ -2605,7 +2751,8 @@
     "matters": [
       3
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Apr. 9, 2026",
@@ -2613,7 +2760,8 @@
     "matters": [
       3
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Apr. 10, 2026",
@@ -2621,7 +2769,8 @@
     "matters": [
       5
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Apr. 10, 2026",
@@ -2629,7 +2778,8 @@
     "matters": [
       12
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Mar. 26, 2026",
@@ -2637,7 +2787,8 @@
     "matters": [
       5
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Mar. 26, 2026",
@@ -2645,7 +2796,8 @@
     "matters": [
       5
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Jun. 1, 2026",
@@ -2654,7 +2806,8 @@
       4,
       14
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Jun. 5, 2026",
@@ -2662,7 +2815,8 @@
     "matters": [
       19
     ],
-    "type": "hearing"
+    "type": "hearing",
+    "actor": "you"
   },
   {
     "date": "Jun. 3, 2026",
@@ -2670,7 +2824,8 @@
     "matters": [
       2
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "May 12, 2026",
@@ -2678,7 +2833,8 @@
     "matters": [
       12
     ],
-    "type": "milestone"
+    "type": "milestone",
+    "actor": "you"
   },
   {
     "date": "Jun. 15, 2026",
@@ -2686,7 +2842,8 @@
     "matters": [
       12
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Jun. 18, 2026",
@@ -2694,7 +2851,8 @@
     "matters": [
       2
     ],
-    "type": "hearing"
+    "type": "hearing",
+    "actor": "you"
   },
   {
     "date": "Jul. 6, 2026",
@@ -2702,7 +2860,8 @@
     "matters": [
       2
     ],
-    "type": "hearing"
+    "type": "hearing",
+    "actor": "you"
   },
   {
     "date": "Jul. 20, 2026",
@@ -2710,7 +2869,8 @@
     "matters": [
       12
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Aug. 19, 2026",
@@ -2721,7 +2881,8 @@
       33
     ],
     "type": "filing",
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Jun. 7, 2026",
@@ -2729,7 +2890,8 @@
     "matters": [
       15
     ],
-    "type": "milestone"
+    "type": "milestone",
+    "actor": "you"
   },
   {
     "date": "Jun. 11, 2026",
@@ -2737,7 +2899,8 @@
     "matters": [
       15
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Apr. 9, 2026",
@@ -2745,7 +2908,8 @@
     "matters": [
       20
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Apr. 10, 2026",
@@ -2753,7 +2917,8 @@
     "matters": [
       20
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Apr. 20, 2026",
@@ -2761,7 +2926,8 @@
     "matters": [
       20
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "May 29, 2026",
@@ -2769,7 +2935,8 @@
     "matters": [
       20
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Jun. 17, 2026",
@@ -2777,7 +2944,8 @@
     "matters": [
       24
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Jun. 29, 2026",
@@ -2785,7 +2953,8 @@
     "matters": [
       24
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "agency"
   },
   {
     "date": "Jul. 1, 2026",
@@ -2793,7 +2962,8 @@
     "matters": [
       24
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "agency"
   },
   {
     "date": "Jul. 21, 2026",
@@ -2801,7 +2971,8 @@
     "matters": [
       24
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Aug. 25, 2026",
@@ -2810,7 +2981,8 @@
       24
     ],
     "type": "deadline",
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Sep. 8, 2026",
@@ -2819,7 +2991,9 @@
       24
     ],
     "type": "deadline",
-    "upcoming": true
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-24/Order Setting Initial CMC and ADR Deadlines (Doc 4, Filed Jun 17 2026).pdf"
   },
   {
     "date": "Sep. 15, 2026",
@@ -2828,7 +3002,9 @@
       24
     ],
     "type": "hearing",
-    "upcoming": true
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-24/Order Setting Initial CMC and ADR Deadlines (Doc 4, Filed Jun 17 2026).pdf"
   },
   {
     "date": "Jun. 11, 2026",
@@ -2836,7 +3012,8 @@
     "matters": [
       15
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Jun. 22, 2026",
@@ -2844,7 +3021,8 @@
     "matters": [
       15
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Jun. 29, 2026",
@@ -2852,7 +3030,8 @@
     "matters": [
       15
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Jul. 16, 2026",
@@ -2860,7 +3039,8 @@
     "matters": [
       15
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "opposing"
   },
   {
     "date": "Jul. 22, 2026",
@@ -2868,7 +3048,8 @@
     "matters": [
       15
     ],
-    "type": "deadline"
+    "type": "deadline",
+    "actor": "opposing"
   },
   {
     "date": "Jul. 24, 2026",
@@ -2876,7 +3057,8 @@
     "matters": [
       15
     ],
-    "type": "milestone"
+    "type": "milestone",
+    "actor": "opposing"
   },
   {
     "date": "Aug. 1, 2026",
@@ -2885,7 +3067,8 @@
       19
     ],
     "type": "deadline",
-    "upcoming": false
+    "upcoming": false,
+    "actor": "agency"
   },
   {
     "date": "Aug. 7, 2026",
@@ -2893,7 +3076,8 @@
     "matters": [
       19
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "agency"
   },
   {
     "date": "Aug. 7, 2026",
@@ -2901,7 +3085,8 @@
     "matters": [
       19
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "May 4, 2026",
@@ -2909,7 +3094,8 @@
     "matters": [
       9
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "May 14, 2026",
@@ -2917,7 +3103,8 @@
     "matters": [
       9
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "May 18, 2026",
@@ -2925,7 +3112,8 @@
     "matters": [
       9
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "May 18, 2026",
@@ -2933,7 +3121,8 @@
     "matters": [
       8
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "May 19, 2026",
@@ -2941,7 +3130,8 @@
     "matters": [
       8
     ],
-    "type": "ruling"
+    "type": "ruling",
+    "actor": "you"
   },
   {
     "date": "Jul. 15, 2026",
@@ -2949,7 +3139,8 @@
     "matters": [
       5
     ],
-    "type": "hearing"
+    "type": "hearing",
+    "actor": "you"
   },
   {
     "date": "Jun. 30, 2026",
@@ -2957,7 +3148,8 @@
     "matters": [
       20
     ],
-    "type": "deadline"
+    "type": "deadline",
+    "actor": "you"
   },
   {
     "date": "Jul. 15, 2026",
@@ -2965,7 +3157,8 @@
     "matters": [
       20
     ],
-    "type": "hearing"
+    "type": "hearing",
+    "actor": "you"
   },
   {
     "date": "Sep. 2, 2026",
@@ -2984,7 +3177,8 @@
     "matters": [
       8
     ],
-    "type": "hearing"
+    "type": "hearing",
+    "actor": "you"
   },
   {
     "date": "Jul. 27, 2026",
@@ -2992,7 +3186,8 @@
     "matters": [
       8
     ],
-    "type": "deadline"
+    "type": "deadline",
+    "actor": "you"
   },
   {
     "date": "Jul. 27, 2026",
@@ -3000,7 +3195,8 @@
     "matters": [
       8
     ],
-    "type": "milestone"
+    "type": "milestone",
+    "actor": "you"
   },
   {
     "date": "Jun. 27, 2026",
@@ -3008,7 +3204,8 @@
     "matters": [
       14
     ],
-    "type": "milestone"
+    "type": "milestone",
+    "actor": "you"
   },
   {
     "date": "Jun. 30, 2026",
@@ -3016,7 +3213,8 @@
     "matters": [
       14
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "May 19, 2026",
@@ -3024,7 +3222,8 @@
     "matters": [
       16
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Jul. 3, 2026",
@@ -3032,7 +3231,8 @@
     "matters": [
       16
     ],
-    "type": "milestone"
+    "type": "milestone",
+    "actor": "you"
   },
   {
     "date": "Jul. 7, 2026",
@@ -3040,7 +3240,8 @@
     "matters": [
       16
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Jun. 29, 2026",
@@ -3052,7 +3253,8 @@
       18,
       21
     ],
-    "type": "milestone"
+    "type": "milestone",
+    "actor": "you"
   },
   {
     "date": "Jul. 2, 2026",
@@ -3061,7 +3263,8 @@
       3,
       15
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Jul. 2, 2026",
@@ -3069,7 +3272,8 @@
     "matters": [
       19
     ],
-    "type": "ruling"
+    "type": "ruling",
+    "actor": "agency"
   },
   {
     "date": "Jul. 7, 2026",
@@ -3080,7 +3284,8 @@
       19,
       20
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Jul. 10, 2026",
@@ -3096,7 +3301,8 @@
       22,
       24
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Jul. 9, 2026",
@@ -3104,7 +3310,8 @@
     "matters": [
       22
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Jul. 10, 2026",
@@ -3112,7 +3319,8 @@
     "matters": [
       5
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Jul. 11, 2026",
@@ -3120,7 +3328,8 @@
     "matters": [
       22
     ],
-    "type": "milestone"
+    "type": "milestone",
+    "actor": "you"
   },
   {
     "date": "Jul. 13, 2026",
@@ -3128,7 +3337,8 @@
     "matters": [
       5
     ],
-    "type": "ruling"
+    "type": "ruling",
+    "actor": "you"
   },
   {
     "date": "Jul. 13, 2026",
@@ -3136,7 +3346,8 @@
     "matters": [
       5
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Jul. 13, 2026",
@@ -3144,7 +3355,8 @@
     "matters": [
       20
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Jul. 24, 2026",
@@ -3152,7 +3364,8 @@
     "matters": [
       20
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Jul. 27, 2026",
@@ -3160,7 +3373,8 @@
     "matters": [
       20
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Jul. 29, 2026",
@@ -3168,7 +3382,8 @@
     "matters": [
       20
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "opposing"
   },
   {
     "date": "Jul. 30, 2026",
@@ -3176,7 +3391,8 @@
     "matters": [
       20
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Jul. 30, 2026",
@@ -3184,7 +3400,8 @@
     "matters": [
       20
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Aug. 21, 2026",
@@ -3202,7 +3419,8 @@
     "matters": [
       26
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Jul. 31, 2024",
@@ -3210,7 +3428,8 @@
     "matters": [
       26
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Jul. 17, 2024",
@@ -3218,7 +3437,8 @@
     "matters": [
       25
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Mar. 10, 2025",
@@ -3226,7 +3446,8 @@
     "matters": [
       25
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Mar. 19, 2025",
@@ -3234,7 +3455,8 @@
     "matters": [
       25
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Jul. 12, 2026",
@@ -3243,7 +3465,8 @@
       25,
       26
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Jul. 15, 2026",
@@ -3252,7 +3475,8 @@
       25,
       26
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Jul. 15, 2026",
@@ -3261,7 +3485,8 @@
       25,
       26
     ],
-    "type": "ruling"
+    "type": "ruling",
+    "actor": "you"
   },
   {
     "date": "Jul. 20, 2026",
@@ -3269,7 +3494,8 @@
     "matters": [
       26
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "agency"
   },
   {
     "date": "Jul. 21, 2026",
@@ -3277,7 +3503,8 @@
     "matters": [
       25
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "agency"
   },
   {
     "date": "Jul. 22, 2026",
@@ -3285,7 +3512,8 @@
     "matters": [
       26
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Jul. 24, 2026",
@@ -3293,7 +3521,8 @@
     "matters": [
       25
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Jul. 26, 2026",
@@ -3302,7 +3531,8 @@
       25,
       26
     ],
-    "type": "deadline"
+    "type": "deadline",
+    "actor": "you"
   },
   {
     "date": "Jul. 28, 2026",
@@ -3310,7 +3540,8 @@
     "matters": [
       26
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Jul. 30, 2026",
@@ -3319,7 +3550,8 @@
       26
     ],
     "type": "deadline",
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Aug. 14, 2026",
@@ -3370,7 +3602,8 @@
       26
     ],
     "type": "deadline",
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Sep. 18, 2026",
@@ -3379,7 +3612,8 @@
       27
     ],
     "type": "deadline",
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Dec. 14, 2026",
@@ -3389,6 +3623,7 @@
     ],
     "type": "deadline",
     "upcoming": false,
+    "actor": "you",
     "source": "/documents/matter-26/Notice of Removal to Federal Court - United Parcel Service Inc (E.D. Cal. 1-26-at-03195) (Aug 20 2026).pdf"
   },
   {
@@ -3398,7 +3633,8 @@
       25
     ],
     "type": "deadline",
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Dec. 29, 2026",
@@ -3408,6 +3644,7 @@
     ],
     "type": "deadline",
     "upcoming": false,
+    "actor": "you",
     "source": "/documents/matter-26/Notice of Removal to Federal Court - United Parcel Service Inc (E.D. Cal. 1-26-at-03195) (Aug 20 2026).pdf"
   },
   {
@@ -3417,7 +3654,8 @@
       25
     ],
     "type": "deadline",
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Jan. 13, 2027",
@@ -3427,6 +3665,7 @@
     ],
     "type": "hearing",
     "upcoming": false,
+    "actor": "you",
     "source": "/documents/matter-26/Notice of Removal to Federal Court - United Parcel Service Inc (E.D. Cal. 1-26-at-03195) (Aug 20 2026).pdf"
   },
   {
@@ -3436,7 +3675,8 @@
       25
     ],
     "type": "hearing",
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Jun. 30, 2026",
@@ -3444,7 +3684,8 @@
     "matters": [
       27
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Jul. 1, 2026",
@@ -3452,7 +3693,8 @@
     "matters": [
       27
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Jul. 2, 2026",
@@ -3460,7 +3702,8 @@
     "matters": [
       27
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Jul. 7, 2026",
@@ -3468,7 +3711,8 @@
     "matters": [
       27
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Jul. 13, 2026",
@@ -3476,7 +3720,8 @@
     "matters": [
       27
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Jul. 13, 2026",
@@ -3484,7 +3729,8 @@
     "matters": [
       27
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Jul. 15, 2026",
@@ -3492,7 +3738,8 @@
     "matters": [
       27
     ],
-    "type": "milestone"
+    "type": "milestone",
+    "actor": "you"
   },
   {
     "date": "Jul. 20, 2026",
@@ -3500,7 +3747,8 @@
     "matters": [
       27
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Jul. 20, 2026",
@@ -3508,7 +3756,8 @@
     "matters": [
       27
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Jul. 20, 2026",
@@ -3516,7 +3765,8 @@
     "matters": [
       27
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "agency"
   },
   {
     "date": "Jul. 21, 2026",
@@ -3524,7 +3774,8 @@
     "matters": [
       27
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Jul. 21, 2026",
@@ -3532,7 +3783,8 @@
     "matters": [
       27
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Aug. 2, 2026",
@@ -3541,7 +3793,8 @@
       27
     ],
     "type": "deadline",
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Jul. 24, 2026",
@@ -3549,7 +3802,8 @@
     "matters": [
       27
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "agency"
   },
   {
     "date": "Jul. 30, 2026",
@@ -3557,7 +3811,8 @@
     "matters": [
       27
     ],
-    "type": "milestone"
+    "type": "milestone",
+    "actor": "you"
   },
   {
     "date": "Aug. 26, 2026",
@@ -3585,7 +3840,8 @@
     "matters": [
       27
     ],
-    "type": "deadline"
+    "type": "deadline",
+    "actor": "agency"
   },
   {
     "date": "Aug. 3, 2026",
@@ -3594,7 +3850,8 @@
       27,
       26
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Aug. 4, 2026",
@@ -3602,7 +3859,8 @@
     "matters": [
       25
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Aug. 7, 2026",
@@ -3613,6 +3871,7 @@
       27
     ],
     "type": "filing",
+    "actor": "you",
     "source": "/documents/matter-25/Amended Notice of Amount of Punitive Damages Sought (CCP 425.115) - Federal Express Corporation (Aug 7 2026).pdf"
   },
   {
@@ -3622,6 +3881,7 @@
       29
     ],
     "type": "filing",
+    "actor": "you",
     "source": "/documents/matter-29/Notice of Amount of Punitive Damages Sought (CCP 425.115) - Amazon.com Services LLC (Aug 7 2026).pdf"
   },
   {
@@ -3632,7 +3892,8 @@
     ],
     "type": "filing",
     "source": "/documents/matter-29/Notice of Confirmation of Electronic Filing - Fee Payment and Punitive Notices Accepted (Aug 6 2026).pdf",
-    "filed": true
+    "filed": true,
+    "actor": "you"
   },
   {
     "date": "Aug. 12, 2026",
@@ -3652,7 +3913,8 @@
       12
     ],
     "type": "filing",
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Aug. 3, 2026",
@@ -3660,7 +3922,8 @@
     "matters": [
       12
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Aug. 3, 2026",
@@ -3668,7 +3931,8 @@
     "matters": [
       20
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Aug. 3, 2026",
@@ -3676,7 +3940,8 @@
     "matters": [
       22
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Aug. 3, 2026",
@@ -3684,7 +3949,8 @@
     "matters": [
       22
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Aug. 5, 2026",
@@ -3692,7 +3958,8 @@
     "matters": [
       22
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Jul. 15, 2026",
@@ -3700,7 +3967,8 @@
     "matters": [
       5
     ],
-    "type": "milestone"
+    "type": "milestone",
+    "actor": "you"
   },
   {
     "date": "Jul. 16, 2026",
@@ -3708,7 +3976,8 @@
     "matters": [
       28
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Jul. 20, 2026",
@@ -3716,7 +3985,8 @@
     "matters": [
       28
     ],
-    "type": "milestone"
+    "type": "milestone",
+    "actor": "you"
   },
   {
     "date": "Jul. 21, 2026",
@@ -3724,7 +3994,8 @@
     "matters": [
       28
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Aug. 3, 2026",
@@ -3733,7 +4004,8 @@
       28
     ],
     "type": "deadline",
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Aug. 10, 2026",
@@ -3742,7 +4014,8 @@
       28
     ],
     "type": "deadline",
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Oct. 15, 2026",
@@ -3751,7 +4024,9 @@
       28
     ],
     "type": "deadline",
-    "upcoming": true
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-28/Service Packet Emailed to SLB (Issued Summons Complaint Dkt 1-1 Dkt 4 Dkt 11) (Aug 31 2026).pdf"
   },
   {
     "date": "Oct. 22, 2026",
@@ -3760,7 +4035,9 @@
       28
     ],
     "type": "hearing",
-    "upcoming": true
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-28/Service Packet Emailed to SLB (Issued Summons Complaint Dkt 1-1 Dkt 4 Dkt 11) (Aug 31 2026).pdf"
   },
   {
     "date": "Jul. 23, 2026",
@@ -3768,7 +4045,8 @@
     "matters": [
       28
     ],
-    "type": "milestone"
+    "type": "milestone",
+    "actor": "you"
   },
   {
     "date": "Jul. 24, 2026",
@@ -3776,7 +4054,8 @@
     "matters": [
       28
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Jul. 27, 2026",
@@ -3784,7 +4063,8 @@
     "matters": [
       28
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Aug. 13, 2026",
@@ -3792,7 +4072,8 @@
     "matters": [
       28
     ],
-    "type": "deadline"
+    "type": "deadline",
+    "actor": "you"
   },
   {
     "date": "Jul. 22, 2026",
@@ -3800,7 +4081,8 @@
     "matters": [
       3
     ],
-    "type": "milestone"
+    "type": "milestone",
+    "actor": "you"
   },
   {
     "date": "Jul. 24, 2026",
@@ -3808,7 +4090,8 @@
     "matters": [
       3
     ],
-    "type": "milestone"
+    "type": "milestone",
+    "actor": "you"
   },
   {
     "date": "Aug. 7, 2026",
@@ -3817,7 +4100,8 @@
       3
     ],
     "type": "deadline",
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Jul. 1, 2026",
@@ -3825,7 +4109,8 @@
     "matters": [
       12
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Jul. 31, 2026",
@@ -3834,7 +4119,8 @@
       12
     ],
     "type": "deadline",
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Jul. 31, 2026",
@@ -3843,7 +4129,8 @@
       12
     ],
     "type": "filing",
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Aug. 12, 2026",
@@ -3853,7 +4140,8 @@
     ],
     "type": "hearing",
     "source": "/documents/matter-12/Minute Order - Case Management Conference (Aug 12 2026).pdf",
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Dec. 11, 2026",
@@ -3863,7 +4151,8 @@
     ],
     "type": "hearing",
     "source": "/documents/matter-12/Minute Order - Case Management Conference (Aug 12 2026).pdf",
-    "upcoming": true
+    "upcoming": true,
+    "actor": "you"
   },
   {
     "date": "Sep. 21, 2022",
@@ -3871,7 +4160,8 @@
     "matters": [
       29
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "May 26, 2023",
@@ -3879,7 +4169,8 @@
     "matters": [
       29
     ],
-    "type": "milestone"
+    "type": "milestone",
+    "actor": "you"
   },
   {
     "date": "Aug. 23, 2023",
@@ -3887,7 +4178,8 @@
     "matters": [
       29
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Sep. 29, 2023",
@@ -3895,7 +4187,8 @@
     "matters": [
       29
     ],
-    "type": "milestone"
+    "type": "milestone",
+    "actor": "you"
   },
   {
     "date": "Jul. 3, 2026",
@@ -3903,7 +4196,8 @@
     "matters": [
       29
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Jul. 3, 2026",
@@ -3911,7 +4205,8 @@
     "matters": [
       29
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Jul. 4, 2026",
@@ -3919,7 +4214,8 @@
     "matters": [
       29
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Jul. 6, 2026",
@@ -3927,7 +4223,8 @@
     "matters": [
       29
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Jul. 7, 2026",
@@ -3935,7 +4232,8 @@
     "matters": [
       29
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Jul. 8, 2026",
@@ -3943,7 +4241,8 @@
     "matters": [
       29
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Jul. 12, 2026",
@@ -3951,7 +4250,8 @@
     "matters": [
       29
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Jul. 17, 2026",
@@ -3959,7 +4259,8 @@
     "matters": [
       29
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Jul. 27, 2026",
@@ -3967,7 +4268,8 @@
     "matters": [
       29
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Jul. 28, 2026",
@@ -3975,7 +4277,8 @@
     "matters": [
       29
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Jul. 29, 2026",
@@ -3983,7 +4286,8 @@
     "matters": [
       29
     ],
-    "type": "milestone"
+    "type": "milestone",
+    "actor": "you"
   },
   {
     "date": "Jul. 29, 2026",
@@ -3991,7 +4295,8 @@
     "matters": [
       29
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "agency"
   },
   {
     "date": "Jul. 29, 2026",
@@ -3999,7 +4304,8 @@
     "matters": [
       29
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Jul. 29, 2026",
@@ -4007,7 +4313,8 @@
     "matters": [
       29
     ],
-    "type": "milestone"
+    "type": "milestone",
+    "actor": "you"
   },
   {
     "date": "Jul. 29, 2026",
@@ -4015,7 +4322,8 @@
     "matters": [
       29
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Jul. 31, 2026",
@@ -4023,7 +4331,8 @@
     "matters": [
       29
     ],
-    "type": "milestone"
+    "type": "milestone",
+    "actor": "you"
   },
   {
     "date": "Jul. 31, 2026",
@@ -4031,7 +4340,8 @@
     "matters": [
       29
     ],
-    "type": "milestone"
+    "type": "milestone",
+    "actor": "you"
   },
   {
     "date": "Aug. 3, 2026",
@@ -4039,7 +4349,8 @@
     "matters": [
       29
     ],
-    "type": "milestone"
+    "type": "milestone",
+    "actor": "you"
   },
   {
     "date": "Sep. 26, 2026",
@@ -4048,7 +4359,8 @@
       29
     ],
     "type": "deadline",
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Aug. 3, 2026",
@@ -4056,7 +4368,8 @@
     "matters": [
       29
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Aug. 18, 2026",
@@ -4065,7 +4378,8 @@
       29
     ],
     "type": "hearing",
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Aug. 26, 2026",
@@ -4094,7 +4408,8 @@
       29
     ],
     "type": "hearing",
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Jan. 12, 2026",
@@ -4102,7 +4417,8 @@
     "matters": [
       30
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Jan. 26, 2026",
@@ -4110,7 +4426,8 @@
     "matters": [
       30
     ],
-    "type": "milestone"
+    "type": "milestone",
+    "actor": "you"
   },
   {
     "date": "Feb. 23, 2026",
@@ -4118,7 +4435,8 @@
     "matters": [
       30
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Feb. 26, 2026",
@@ -4126,7 +4444,8 @@
     "matters": [
       30
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Mar. 18, 2026",
@@ -4134,7 +4453,8 @@
     "matters": [
       30
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Mar. 25, 2026",
@@ -4142,7 +4462,8 @@
     "matters": [
       30
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Mar. 31, 2026",
@@ -4150,7 +4471,8 @@
     "matters": [
       30
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Apr. 1, 2026",
@@ -4158,7 +4480,8 @@
     "matters": [
       30
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "May 28, 2026",
@@ -4166,7 +4489,8 @@
     "matters": [
       30
     ],
-    "type": "milestone"
+    "type": "milestone",
+    "actor": "you"
   },
   {
     "date": "Jun. 11, 2026",
@@ -4174,7 +4498,8 @@
     "matters": [
       30
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Jun. 22, 2026",
@@ -4182,7 +4507,8 @@
     "matters": [
       30
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Jun. 29, 2026",
@@ -4190,7 +4516,8 @@
     "matters": [
       30
     ],
-    "type": "milestone"
+    "type": "milestone",
+    "actor": "you"
   },
   {
     "date": "Jul. 2, 2026",
@@ -4198,7 +4525,8 @@
     "matters": [
       30
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Jul. 5, 2026",
@@ -4206,7 +4534,8 @@
     "matters": [
       30
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Jul. 6, 2026",
@@ -4214,7 +4543,8 @@
     "matters": [
       30
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Jul. 7, 2026",
@@ -4222,7 +4552,8 @@
     "matters": [
       30
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Jul. 8, 2026",
@@ -4230,7 +4561,8 @@
     "matters": [
       30
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Jul. 14, 2026",
@@ -4238,7 +4570,8 @@
     "matters": [
       30
     ],
-    "type": "event"
+    "type": "event",
+    "actor": "you"
   },
   {
     "date": "Jul. 31, 2026",
@@ -4246,7 +4579,8 @@
     "matters": [
       30
     ],
-    "type": "milestone"
+    "type": "milestone",
+    "actor": "you"
   },
   {
     "date": "Aug. 11, 2026",
@@ -4255,7 +4589,8 @@
       30
     ],
     "type": "event",
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Jul. 18, 2026",
@@ -4263,7 +4598,8 @@
     "matters": [
       30
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Sep. 1, 2026",
@@ -4282,7 +4618,9 @@
       30
     ],
     "type": "deadline",
-    "upcoming": true
+    "upcoming": true,
+    "actor": "agency",
+    "source": "/documents/matter-30/Complaint v9 Newanforbi v Moua NDCAL.pdf"
   },
   {
     "date": "Mar. 1, 2027",
@@ -4291,7 +4629,9 @@
       30
     ],
     "type": "deadline",
-    "upcoming": true
+    "upcoming": true,
+    "actor": "agency",
+    "source": "/documents/matter-30/Complaint v9 Newanforbi v Moua NDCAL.pdf"
   },
   {
     "date": "Oct. 13, 2026",
@@ -4301,6 +4641,7 @@
     ],
     "type": "deadline",
     "upcoming": false,
+    "actor": "you",
     "source": "/documents/matter-05/SROG Set Two HOPE NEWpal .pdf"
   },
   {
@@ -4311,6 +4652,7 @@
     ],
     "type": "deadline",
     "upcoming": true,
+    "actor": "you",
     "source": "/documents/matter-32/from-20/Serrato Notice of Joinder and Demurrer.pdf"
   },
   {
@@ -4321,6 +4663,7 @@
     ],
     "type": "deadline",
     "upcoming": true,
+    "actor": "you",
     "source": "/documents/matter-32/from-20/Dutra Notice of Joinder and Demurrer.pdf"
   },
   {
@@ -4331,6 +4674,7 @@
     ],
     "type": "deadline",
     "upcoming": true,
+    "actor": "you",
     "source": "/documents/matter-27/Notice of Amount of Punitive Damages Sought (CCP 425.115) - Randstad US LLC (Aug 4 2026).pdf"
   },
   {
@@ -4340,6 +4684,7 @@
       1
     ],
     "type": "hearing",
+    "actor": "you",
     "source": "/documents/matter-32/from-01/CHP Motion To Dismiss.pdf"
   },
   {
@@ -4349,6 +4694,7 @@
       1
     ],
     "type": "hearing",
+    "actor": "you",
     "source": "/documents/matter-32/from-01/Reply - CHP.pdf"
   },
   {
@@ -4357,7 +4703,8 @@
     "matters": [
       32
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Aug. 7, 2026",
@@ -4365,7 +4712,8 @@
     "matters": [
       33
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Aug. 5, 2026",
@@ -4373,7 +4721,8 @@
     "matters": [
       29
     ],
-    "type": "filing"
+    "type": "filing",
+    "actor": "you"
   },
   {
     "date": "Jul. 22, 2026",
@@ -4382,6 +4731,7 @@
       24
     ],
     "type": "event",
+    "actor": "you",
     "source": "/documents/matter-24/USM-285 Process Receipt and Return - Service Executed on Serrato (Doc 15, Filed Aug 6 2026).pdf"
   },
   {
@@ -4391,6 +4741,7 @@
       24
     ],
     "type": "service",
+    "actor": "you",
     "source": "/documents/matter-24/USM-285 Process Receipt and Return - Service Executed on Serrato (Doc 15, Filed Aug 6 2026).pdf"
   },
   {
@@ -4401,7 +4752,8 @@
     ],
     "type": "filing",
     "source": "/documents/matter-24/USM-285 Process Receipt and Return - Service Executed on Serrato (Doc 15, Filed Aug 6 2026).pdf",
-    "filed": true
+    "filed": true,
+    "actor": "you"
   },
   {
     "date": "Aug. 6, 2026",
@@ -4411,7 +4763,8 @@
     ],
     "type": "milestone",
     "source": "/documents/matter-22/CIV-110 Request for Dismissal - Entire Action With Prejudice (Pilot, CONFORMED, Dismissal Entered Aug 6 2026).pdf",
-    "filed": true
+    "filed": true,
+    "actor": "you"
   },
   {
     "date": "Aug. 6, 2026",
@@ -4421,7 +4774,8 @@
     ],
     "type": "filing",
     "source": "/documents/matter-27/Notice of Confirmation of Electronic Filing - Amended Punitive Damages Notices Accepted (Aug 6 2026).pdf",
-    "filed": true
+    "filed": true,
+    "actor": "you"
   },
   {
     "date": "Aug. 7, 2026",
@@ -4431,7 +4785,8 @@
     ],
     "type": "filing",
     "source": "/documents/matter-27/Notice of Confirmation of Electronic Filing - POS-010 Proofs of Service Accepted (Aug 7 2026).pdf",
-    "filed": true
+    "filed": true,
+    "actor": "you"
   },
   {
     "date": "Aug. 26, 2026",
@@ -4451,7 +4806,8 @@
     ],
     "type": "filing",
     "source": "/documents/matter-24/First Amended Complaint (Doc 10, Filed Jul 15 2026).pdf",
-    "filed": true
+    "filed": true,
+    "actor": "you"
   },
   {
     "date": "Jul. 15, 2026",
@@ -4461,7 +4817,8 @@
     ],
     "type": "filing",
     "source": "/documents/matter-24/Notice of Errata re First Amended Complaint (Doc 12, Filed Jul 15 2026).pdf",
-    "filed": true
+    "filed": true,
+    "actor": "you"
   },
   {
     "date": "Aug. 20, 2026",
@@ -4470,6 +4827,7 @@
       26
     ],
     "type": "filing",
+    "actor": "you",
     "source": "/documents/matter-26/Notice of Removal to Federal Court - United Parcel Service Inc (E.D. Cal. 1-26-at-03195) (Aug 20 2026).pdf"
   },
   {
@@ -4479,6 +4837,7 @@
       26
     ],
     "type": "event",
+    "actor": "you",
     "source": "/documents/matter-26/Notice of Removal to Federal Court - United Parcel Service Inc (E.D. Cal. 1-26-at-03195) (Aug 20 2026).pdf"
   },
   {
@@ -4489,6 +4848,7 @@
     ],
     "type": "filing",
     "upcoming": false,
+    "actor": "you",
     "source": "/documents/matter-26/Notice of Errata and Request for Intradistrict Reassignment (E.D. Cal. 1-26-at-03195) (Aug 20 2026).pdf"
   },
   {
@@ -4509,7 +4869,8 @@
     ],
     "type": "deadline",
     "upcoming": true,
-    "actor": "you"
+    "actor": "you",
+    "source": "/documents/matter-26/Dkt 01 - Notice of Removal as Docketed, E.D. Cal. Sacramento (Aug 20 2026).pdf"
   },
   {
     "date": "Aug. 21, 2026",
@@ -4518,6 +4879,7 @@
       26
     ],
     "type": "filing",
+    "actor": "you",
     "source": "/documents/matter-26/Amended Notice Regarding Caption and Request for Intradistrict Reassignment (E.D. Cal. 1-26-at-03195) (Aug 21 2026).pdf"
   },
   {
@@ -4527,6 +4889,7 @@
       26
     ],
     "type": "event",
+    "actor": "you",
     "source": "/documents/matter-26/Amended Notice Regarding Caption and Request for Intradistrict Reassignment (E.D. Cal. 1-26-at-03195) (Aug 21 2026).pdf"
   },
   {
@@ -4536,6 +4899,7 @@
       26
     ],
     "type": "ruling",
+    "actor": "you",
     "source": "/documents/matter-26/PACER Docket Report - E.D. Cal. 2-26-cv-02847-DAD-CKD (Aug 20 2026).pdf"
   },
   {
@@ -4545,6 +4909,7 @@
       26
     ],
     "type": "ruling",
+    "actor": "you",
     "source": "/documents/matter-26/Dkt 02 - Initial Scheduling Order and Magistrate Judge Consent Materials (Aug 20 2026).pdf"
   },
   {
@@ -4554,6 +4919,7 @@
       26
     ],
     "type": "event",
+    "actor": "you",
     "source": "/documents/matter-26/Dkt 03 - Certificate of Service of Removal Papers by UPS (Aug 20 2026).pdf"
   },
   {
@@ -4583,6 +4949,7 @@
       26
     ],
     "type": "event",
+    "actor": "you",
     "source": "/documents/matter-26/USPS Package Intercept Confirmation Email - Order o2568695706 (Aug 20 2026).pdf"
   },
   {
@@ -4614,7 +4981,8 @@
       3
     ],
     "type": "deadline",
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Aug. 28, 2026",
@@ -4623,7 +4991,8 @@
       20
     ],
     "type": "hearing",
-    "upcoming": false
+    "upcoming": false,
+    "actor": "you"
   },
   {
     "date": "Aug. 26, 2026",
@@ -4646,6 +5015,7 @@
     ],
     "type": "ruling",
     "upcoming": false,
+    "actor": "you",
     "source": "/documents/matter-24/Order Granting Administrative Motion to Relate Cases - Serrato and Meza (Aug 24 2026).pdf"
   },
   {
@@ -4656,6 +5026,7 @@
     ],
     "type": "filing",
     "upcoming": false,
+    "actor": "you",
     "source": "/documents/matter-32/ndcal/Meza-Gonzalez Private Process Server Bundle (Aug 25 2026).pdf"
   },
   {
@@ -4694,6 +5065,7 @@
     "source": "/documents/matter-24/Defendant Serrato Motion to Dismiss FAC and Strike (Aug 26 2026).pdf",
     "upcoming": false,
     "type": "filing",
+    "actor": "you",
     "matters": [
       24
     ]
