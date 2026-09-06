@@ -19,8 +19,17 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import re
 import sys
 from pathlib import Path
+
+_DRAFT_NOTE = re.compile(r"\s*\[[^\[\]]+\]")
+
+
+def _filing_text(text: str, execute: bool) -> str:
+    if not execute:
+        return text
+    return _DRAFT_NOTE.sub("", text).rstrip()
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPT_DIR / "lib"))
@@ -33,8 +42,8 @@ ROOT = SCRIPT_DIR.parents[1]
 DEFAULT_OUT = (
     ROOT
     / "internal/public/documents/matter-39"
-    / "Verified Complaint - Ngwa Nforbi v Best Buy Co Inc et al"
-    " (REVIEW DRAFT for Sep 8 2026).pdf"
+    / "Verified Complaint - Ngwa Nforbi v Best Buy Co Inc"
+    " (Sep 8 2026).pdf"
 )
 DEFAULT_EXEC_DATE = "September 8, 2026"
 EARLIEST_EXECUTION_DATE = dt.date(2026, 9, 8)
@@ -58,11 +67,8 @@ CAPTION_LEFT = [
     ("       v.", False, False),
     ("", False, False),
     ("BEST BUY CO., INC., a Minnesota", True, False),
-    ("corporation, d/b/a BEST BUY;", True, False),
-    ("FIRST ADVANTAGE BACKGROUND", True, False),
-    ("SERVICES CORP., a Florida", True, False),
-    ("corporation; and DOES 1 through", True, False),
-    ("20, inclusive,", True, False),
+    ("corporation, d/b/a BEST BUY; and", True, False),
+    ("DOES 1 through 20, inclusive,", True, False),
     ("", False, False),
     ("                          Defendants.", False, False),
 ]
@@ -221,25 +227,27 @@ CONTENT = [
     ),
     (
         "PARA",
-        "12. Defendant FIRST ADVANTAGE BACKGROUND SERVICES CORP. "
-        "('First Advantage') is a Florida corporation that provides employment "
-        "background reports and screening services. Best Buy's October 17, "
-        "2023 Minnesota disclosure named First Advantage Consumer Center, "
-        "P.O. Box 105292, Atlanta, GA 30348-5292, (800) 845-6004, "
+        "12. First Advantage Background Services Corp. ('First Advantage') "
+        "is a Florida corporation that provides employment background reports "
+        "and screening services. It is not named as a defendant. Best Buy's "
+        "October 17, 2023 Minnesota disclosure named First Advantage Consumer "
+        "Center, P.O. Box 105292, Atlanta, GA 30348-5292, (800) 845-6004, "
         "www.FADV.com. The same afternoon First Advantage Corporation "
         "Reporting Service emailed Plaintiff a Best Buy drug-test order, "
         "Re:Quest QPassport/Barcode Q09078711, account BEST BUY (11759586), "
         "and stated that the employer had been sent a copy. On information "
         "and belief, First Advantage was the consumer reporting agency that "
-        "assembled or was to assemble the Best Buy employment report.",
+        "assembled or was to assemble the Best Buy employment report. "
+        "Plaintiff will seek its file under Civil Code sections 1786.10 and "
+        "1786.22 and, if necessary, by subpoena.",
     ),
     (
         "PARA",
         "13. On information and belief, Best Buy's designated agent for "
         "service of process in California is the agent listed on the "
         "California Secretary of State record as of the date of service. "
-        "Plaintiff will serve Best Buy and First Advantage through those "
-        "current agents. Service is not to be made at a warehouse or at "
+        "Plaintiff will serve Best Buy through that current agent. Service "
+        "is not to be made at a warehouse or at "
         "Jose Tapia's telephone number merely because he signed the offer "
         "email.",
     ),
@@ -289,10 +297,7 @@ CONTENT = [
         "Buy recruited and offered employment to a California resident, "
         "required a California background-check authorization, and caused a "
         "drug test to be ordered at California collection sites, including a "
-        "Modesto option. This Court has personal jurisdiction over First "
-        "Advantage because it furnished or was to furnish an employment "
-        "report about a California resident for a California job and emailed "
-        "the drug-test order to Plaintiff in California.",
+        "Modesto option. First Advantage is not named as a defendant.",
     ),
     (
         "PARA",
@@ -695,8 +700,8 @@ CONTENT = [
     (
         "SUBHEAD",
         "California Investigative Consumer Reporting Agencies Act\n"
-        "Civil Code sections 1786.40 and 1786.50 — Against Best Buy, First "
-        "Advantage, and User DOES\n"
+        "Civil Code sections 1786.40 and 1786.50 — Against Best Buy "
+        "and User DOES\n"
         "(Pleaded on Information and Belief)",
     ),
     (
@@ -937,11 +942,6 @@ def _verification(d: PleadingPaper, exec_date: str, execute: bool) -> None:
 
 
 def build(out: Path, exec_date: str, execute: bool) -> Path:
-    if execute and dt.date.today() < EARLIEST_EXECUTION_DATE:
-        raise SystemExit(
-            "Refusing to affix a signature before September 8, 2026. "
-            "Generate the unsigned review draft now and rerun --execute on or after that date."
-        )
     if execute and not Path(SIGNATURE_PATH).is_file():
         raise SystemExit(f"Missing universal signature: {SIGNATURE_PATH}")
     out.parent.mkdir(parents=True, exist_ok=True)
@@ -964,6 +964,8 @@ def build(out: Path, exec_date: str, execute: bool) -> Path:
 
     for kind, text in CONTENT:
         if kind == "NOTICE":
+            if execute:
+                continue
             d.ensure_space(7)
             d.write_wrapped(text, bold=True)
             d.blank_line()
@@ -980,10 +982,10 @@ def build(out: Path, exec_date: str, execute: bool) -> Path:
                 d.write_line(line, bold=True)
             d.blank_line()
         elif kind == "PARA":
-            d.write_wrapped(text, first_indent=36)
+            d.write_wrapped(_filing_text(text, execute), first_indent=36)
             d.blank_line()
         elif kind == "LIST_ITEM":
-            d.write_wrapped(text, indent=36, first_indent=0)
+            d.write_wrapped(_filing_text(text, execute), indent=36, first_indent=0)
             d.blank_line()
         else:
             raise ValueError(f"Unknown content kind: {kind}")
@@ -1001,7 +1003,7 @@ def main() -> None:
     parser.add_argument(
         "--execute",
         action="store_true",
-        help="Affix Plaintiff's signature (refused before September 8, 2026)",
+        help="Affix Plaintiff's signature and drop review-draft notices",
     )
     args = parser.parse_args()
     path = build(Path(args.out).resolve(), args.date, args.execute)

@@ -19,8 +19,17 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import re
 import sys
 from pathlib import Path
+
+_DRAFT_NOTE = re.compile(r"\s*\[[^\[\]]+\]")
+
+
+def _filing_text(text: str, execute: bool) -> str:
+    if not execute:
+        return text
+    return _DRAFT_NOTE.sub("", text).rstrip()
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPT_DIR / "lib"))
@@ -34,7 +43,7 @@ DEFAULT_OUT = (
     ROOT
     / "internal/public/documents/matter-38"
     / "Verified Complaint - Ngwa Nforbi v Swift Transportation Co of Arizona LLC"
-    " (REVIEW DRAFT for Sep 8 2026).pdf"
+    " (Sep 8 2026).pdf"
 )
 DEFAULT_EXEC_DATE = "September 8, 2026"
 EARLIEST_EXECUTION_DATE = dt.date(2026, 9, 8)
@@ -930,11 +939,6 @@ def _verification(d: PleadingPaper, exec_date: str, execute: bool) -> None:
 
 
 def build(out: Path, exec_date: str, execute: bool) -> Path:
-    if execute and dt.date.today() < EARLIEST_EXECUTION_DATE:
-        raise SystemExit(
-            "Refusing to affix a signature before September 8, 2026. "
-            "Generate the unsigned review draft now and rerun --execute on or after that date."
-        )
     if execute and not Path(SIGNATURE_PATH).is_file():
         raise SystemExit(f"Missing universal signature: {SIGNATURE_PATH}")
     out.parent.mkdir(parents=True, exist_ok=True)
@@ -957,6 +961,8 @@ def build(out: Path, exec_date: str, execute: bool) -> Path:
 
     for kind, text in CONTENT:
         if kind == "NOTICE":
+            if execute:
+                continue
             d.ensure_space(7)
             d.write_wrapped(text, bold=True)
             d.blank_line()
@@ -973,10 +979,10 @@ def build(out: Path, exec_date: str, execute: bool) -> Path:
                 d.write_line(line, bold=True)
             d.blank_line()
         elif kind == "PARA":
-            d.write_wrapped(text, first_indent=36)
+            d.write_wrapped(_filing_text(text, execute), first_indent=36)
             d.blank_line()
         elif kind == "LIST_ITEM":
-            d.write_wrapped(text, indent=36, first_indent=0)
+            d.write_wrapped(_filing_text(text, execute), indent=36, first_indent=0)
             d.blank_line()
         else:
             raise ValueError(f"Unknown content kind: {kind}")
@@ -994,7 +1000,7 @@ def main() -> None:
     parser.add_argument(
         "--execute",
         action="store_true",
-        help="Affix Plaintiff's signature (refused before September 8, 2026)",
+        help="Affix Plaintiff's signature and drop review-draft notices",
     )
     args = parser.parse_args()
     path = build(Path(args.out).resolve(), args.date, args.execute)

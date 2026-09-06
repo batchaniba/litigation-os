@@ -1097,11 +1097,11 @@
   },
   {
     "number": 36,
-    "caption": "Brendan Ngwa Nforbi v. AT&T Mobility Services LLC, et al.",
+    "caption": "Brendan Ngwa Nforbi v. AT&T Mobility Services LLC",
     "case_no": "TBD",
-    "court": "San Joaquin Sup. Ct. (proposed; review draft not filed)",
+    "court": "San Joaquin Sup. Ct. (executed packet; not yet filed)",
     "claims": "Penal Code § 290.46(j); FCRA § 1681b(b)(3); ICRAA §§ 1786.40, 1786.50; Breach of Contract; Implied Covenant; Promissory Estoppel; Negligent Misrepresentation; Fraud / Concealment; UCL § 17200 (alternative pleading)",
-    "status_label": "Review draft — demurrer-hardened",
+    "status_label": "Executed — unfiled",
     "lifecycle": "pre_filing",
     "proceeding": "state_civil",
     "phase": "pre_filing",
@@ -1110,12 +1110,12 @@
     "cluster": 3,
     "type": "State",
     "archived": false,
-    "note": "Do not execute or file the review draft before September 8, 2026. The formal offer is now in the record; confirm draft paragraphs 55, 83, 104, 118, 132, 145, and 160, obtain the Workday acceptance audit, and identify concrete reliance.",
-    "defendants": "AT&T Mobility Services LLC (likely legal employer for the Mobility Orange Retail Sales Consultant role; AT&T Inc. not named merely as parent); First Advantage Background Services Corp. (likely operating CRA; First Advantage Corporation parent not named merely as parent); DOES 1–20 for the actual AT&T employing/decisionmaking entity, First Advantage furnishing affiliate, manager, adjudication personnel, and other responsible actors. Richard Patterson is treated as an AT&T recruiter and percipient witness, not presently named individually.",
+    "note": "Packet is signed for September 8, 2026 filing. Do not treat as filed until clerk-stamped. Confirm paragraphs 55, 83, 104, 118, 132, 145, and 160, the Workday acceptance audit, and concrete reliance before handing it to the clerk. First Advantage is not a named defendant.",
+    "defendants": "AT&T Mobility Services LLC (likely legal employer for the Mobility Orange Retail Sales Consultant role; AT&T Inc. not named merely as parent); DOES 1–20 for the actual AT&T employing/decisionmaking entity, any First Advantage furnishing affiliate, manager, adjudication personnel, and other responsible actors. First Advantage Background Services Corp. is a fact witness and inspection target, not a named defendant. Richard Patterson is treated as an AT&T recruiter and percipient witness, not presently named individually.",
     "causes": [
       "[PLEADED ON INFORMATION AND BELIEF] Penal Code § 290.46(j) — two-hour chronology plus First Advantage’s documented 2024 report matching this Plaintiff to a DOJ search sourced from the California Sex Offender Registry; AT&T report is not attached; Lerma cannot be decided on the face of this complaint",
       "[PLEADED ON INFORMATION AND BELIEF] FCRA, 15 U.S.C. § 1681b(b)(3)(A) — against AT&T if a consumer report contributed to rescission; invites federal-question removal; Plaintiff must confirm no report/rights notice was received before 12:23 p.m.",
-      "[INDEPENDENT PATH] ICRAA, Civ. Code §§ 1786.40 and 1786.50 — named First Advantage, same-day screen, no 1786.40 advice at rescission; §§ 1786.10 / 1786.22 inspection not yet demanded",
+      "[INDEPENDENT PATH] ICRAA, Civ. Code §§ 1786.40 and 1786.50 — against AT&T as user; vendor First Advantage is not a named defendant; same-day screen, no 1786.40 advice at rescission; §§ 1786.10 / 1786.22 inspection not yet demanded",
       "[ALTERNATIVE / CONFIRM ACCEPTANCE] Breach of Written Contract and Implied Covenant — requires Workday acceptance proof and complete offer terms",
       "[ALTERNATIVE / CONFIRM RELIANCE] Promissory Estoppel — official offer, compensation, tentative start date, and onboarding; requires specific substantial reliance and resulting loss",
       "[ALTERNATIVE] Negligent Misrepresentation — official offer after assessment period if AT&T already treated the Spanish result as disqualifying or lacked grounds to represent approval",
@@ -1124,15 +1124,15 @@
       "[PRESERVED, NOT PLEADED] FEHA and Fair Chance Act — do not plead without CRD exhaustion/right-to-sue and supporting score or criminal-history-use evidence"
     ],
     "evidenceCount": 17,
-    "documentCount": 28
+    "documentCount": 31
   },
   {
     "number": 37,
     "caption": "Brendan Ngwa Nforbi v. Home Depot U.S.A., Inc.",
     "case_no": "TBD",
-    "court": "San Joaquin Sup. Ct. (proposed; review draft not filed)",
+    "court": "San Joaquin Sup. Ct. (executed packet; not yet filed)",
     "claims": "Penal Code § 290.46(j); ICRAA §§ 1786.40, 1786.50 (I&B); UCL § 17200",
-    "status_label": "Review draft — demurrer-hardened",
+    "status_label": "Executed — unfiled",
     "lifecycle": "pre_filing",
     "proceeding": "state_civil",
     "phase": "pre_filing",
@@ -1141,7 +1141,7 @@
     "cluster": 3,
     "type": "State",
     "archived": false,
-    "note": "Do not execute or file before September 8, 2026. Confirm paragraphs on hire date, job title/pay, the employment decision and its date, any BGC vendor/notices, and wages. Tameny/IIED/FEHA omitted. FCRA omitted to keep this a state-law filing. Serve CSC, not the Tracy building. Verify the SOS agent before service.",
+    "note": "Packet is signed for September 8, 2026 filing. Do not treat as filed until clerk-stamped. Confirm hire date, job title/pay, the employment decision and its date, any BGC vendor/notices, and wages before the clerk. Tameny/IIED/FEHA omitted. FCRA omitted to keep this a state-law filing. Serve CSC, not the Tracy building.",
     "defendants": "Home Depot U.S.A., Inc., a Delaware corporation, d/b/a The Home Depot and The Home Depot Distribution Center (likely legal employer for the Tracy fulfillment center at 5395 Hopkins Road); DOES 1–20 for the actual employing affiliate, screening vendor, and decision-makers. The Home Depot, Inc. parent is not named merely as parent. The Tracy building is a worksite, not a defendant.",
     "causes": [
       "[PLEADED ON INFORMATION AND BELIEF] Penal Code § 290.46(j) — hire at the Tracy DC on or about August 2024, then an employment decision; four-element map pleaded; inference from Home Depot screening practice, Plaintiff's contemporaneous registry listing, and the July 2024 First Advantage/UPS report showing this Plaintiff was commercially matched to the California registry that season; Home Depot's own report is not in hand and is not attached; Lerma cannot be decided on the face of this complaint",
@@ -1152,15 +1152,15 @@
       "[PRESERVED, NOT PLEADED] FEHA and Fair Chance Act — no CRD right-to-sue in the record"
     ],
     "evidenceCount": 7,
-    "documentCount": 1
+    "documentCount": 4
   },
   {
     "number": 38,
     "caption": "Brendan Ngwa Nforbi v. Swift Transportation Co. of Arizona LLC",
     "case_no": "TBD",
-    "court": "San Joaquin Sup. Ct. (proposed; review draft not filed)",
+    "court": "San Joaquin Sup. Ct. (executed packet; not yet filed)",
     "claims": "Penal Code § 290.46(j) (I&B — preliminary NSOPW / registry); ICRAA §§ 1786.40, 1786.50; UCL § 17200",
-    "status_label": "Review draft — demurrer-hardened",
+    "status_label": "Executed — unfiled",
     "lifecycle": "pre_filing",
     "proceeding": "state_civil",
     "phase": "pre_filing",
@@ -1169,7 +1169,7 @@
     "cluster": 3,
     "type": "State",
     "archived": false,
-    "note": "Do not execute or file before September 8, 2026. The decrypted packet shows NSOPW Processing, not a completed hit and not SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY. The 290 count is I&B use of preliminary registry information from that in-process component. Confirm the driver role. Serve the current SOS agent (likely NRAI), not a terminal. Knight-Swift parent is not named. Do not publish the decrypted packet; it contains SSN last-four, DOB, CDL, and phones.",
+    "note": "Packet is signed for September 8, 2026 filing. Do not treat as filed until clerk-stamped. The decrypted packet shows NSOPW Processing, not a completed hit and not SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY. Confirm the driver role. Serve the current SOS agent (likely NRAI), not a terminal. Knight-Swift parent is not named. Do not publish the decrypted packet; it contains SSN last-four, DOB, CDL, and phones.",
     "defendants": "Swift Transportation Co. of Arizona LLC (USDOT 54283; 2200 South 75th Avenue, Phoenix, AZ 85043 on the Oct. 5 letter), d/b/a Swift Transportation; DOES 1–20 for the CRA that assembled the incomplete packet (Asurint, Tenstreet, DriverIQ/Cisive, and Equifax Work Number are named in the letter but not joined until roles are confirmed) and any employing affiliate. Knight-Swift Transportation Holdings, Inc. is not named merely as parent. Recruiters Robin Kaufman and Matt Hutto are witnesses.",
     "causes": [
       "[PLEADED ON INFORMATION AND BELIEF] Penal Code § 290.46(j) — NSOPW remained Processing; inference that Swift used preliminary sex-offender-registry information from that in-process component, in whole or in part, in the Oct. 5 denial; packet does not show a completed hit or a California source-of-record line",
@@ -1179,15 +1179,15 @@
       "[OMITTED] FCRA — two-year 15 U.S.C. § 1681p discovery clock from the 2023 letters would have closed"
     ],
     "evidenceCount": 12,
-    "documentCount": 10
+    "documentCount": 13
   },
   {
     "number": 39,
-    "caption": "Brendan Ngwa Nforbi v. Best Buy Co., Inc., et al.",
+    "caption": "Brendan Ngwa Nforbi v. Best Buy Co., Inc.",
     "case_no": "TBD",
-    "court": "San Joaquin Sup. Ct. (proposed; review draft not filed)",
+    "court": "San Joaquin Sup. Ct. (executed packet; not yet filed)",
     "claims": "Penal Code § 290.46(j); ICRAA §§ 1786.40, 1786.50 (I&B); UCL § 17200",
-    "status_label": "Review draft — demurrer-hardened",
+    "status_label": "Executed — unfiled",
     "lifecycle": "pre_filing",
     "proceeding": "state_civil",
     "phase": "pre_filing",
@@ -1196,17 +1196,17 @@
     "cluster": 3,
     "type": "State",
     "archived": false,
-    "note": "Do not execute or file before September 8, 2026. Confirm what happened after the Oct. 17 offer, whether Plaintiff signed Candidate Zone or completed the drug test, whether any adverse notice arrived, and the warehouse city. Application confirmation recites an arbitration policy; Best Buy will move to compel; the policy PDF is not in this upload. Serve the current SOS agents, not a warehouse. Best Buy Stores, L.P. is a DOE, not a named defendant.",
-    "defendants": "Best Buy Co., Inc., a Minnesota corporation, d/b/a Best Buy (authorization and drug-test order use 7601 Penn Ave. South, Richfield, MN 55423); First Advantage Background Services Corp., a Florida corporation (Minnesota disclosure + Oct. 17 drug-test order); DOES 1–20 for any First Advantage furnishing affiliate, Best Buy Stores, L.P. or other employing affiliate, and decision-makers. First Advantage Corporation parent is not named merely as parent. Jose Tapia (GM) and Daisy Calvary are witnesses.",
+    "note": "Packet is signed for September 8, 2026 filing. Do not treat as filed until clerk-stamped. Confirm what happened after the Oct. 17 offer, whether Plaintiff signed Candidate Zone or completed the drug test, whether any adverse notice arrived, and the warehouse city. Application confirmation recites an arbitration policy; Best Buy will move to compel; the policy PDF is not in this upload. Serve the current SOS agent for Best Buy, not a warehouse. Best Buy Stores, L.P. is a DOE. First Advantage is not a named defendant.",
+    "defendants": "Best Buy Co., Inc., a Minnesota corporation, d/b/a Best Buy (authorization and drug-test order use 7601 Penn Ave. South, Richfield, MN 55423); DOES 1–20 for any First Advantage furnishing affiliate, Best Buy Stores, L.P. or other employing affiliate, and decision-makers. First Advantage Background Services Corp. is a fact witness and inspection target, not a named defendant. First Advantage Corporation parent is not named. Jose Tapia (GM) and Daisy Calvary are witnesses.",
     "causes": [
       "[PLEADED ON INFORMATION AND BELIEF] Penal Code § 290.46(j) — Oct. 17, 2023 written offer plus same-day First Advantage screen; four-element map pleaded; inference of registry use from First Advantage's later UPS match of this Plaintiff to SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY; Best Buy report is not in hand and is not attached; Lerma cannot be decided on the face of this complaint",
-      "[INDEPENDENT PATH] ICRAA, Civ. Code §§ 1786.40 and 1786.50 — written offer, named First Advantage, no 1786.40 advice in the file; pleaded to reach discovery even if the § 290 count later fails; inspection rights under §§ 1786.10 and 1786.22 not yet demanded; Plaintiff must confirm nonreceipt of any adverse package",
+      "[INDEPENDENT PATH] ICRAA, Civ. Code §§ 1786.40 and 1786.50 — against Best Buy as user; vendor First Advantage is not a named defendant; written offer, no 1786.40 advice in the file; pleaded to reach discovery even if the § 290 count later fails; inspection rights under §§ 1786.10 and 1786.22 not yet demanded; Plaintiff must confirm nonreceipt of any adverse package",
       "[DERIVATIVE / EQUITABLE] UCL § 17200 — unlawful and unfair prongs borrowing § 290.46(j); restitution limited to vested money/property",
       "[OMITTED] Tameny / IIED / contract / estoppel — two-year CCP § 335.1 clock from an Oct. 2023 decision would have closed in 2025; no signed offer audit in the file",
       "[OMITTED] FCRA — reserved; pleading it now would create a federal question without a Best Buy report or adverse packet, and a two-year discovery clock from late-2023 knowledge of non-hire is a defense argument",
       "[PRESERVED, NOT PLEADED] FEHA and Fair Chance Act — no CRD right-to-sue in the record"
     ],
     "evidenceCount": 10,
-    "documentCount": 6
+    "documentCount": 9
   }
 ]

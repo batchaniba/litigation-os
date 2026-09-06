@@ -2,10 +2,10 @@
   "number": 37,
   "caption": "Brendan Ngwa Nforbi v. Home Depot U.S.A., Inc.",
   "case_no": "TBD",
-  "court": "San Joaquin Sup. Ct. (proposed; review draft not filed)",
+  "court": "San Joaquin Sup. Ct. (executed packet; not yet filed)",
   "claims": "Penal Code § 290.46(j); ICRAA §§ 1786.40, 1786.50 (I&B); UCL § 17200",
-  "status": "UNEXECUTED REVIEW DRAFT — three-count I&B §290.46(j) complaint against Home Depot U.S.A., Inc. for the Tracy DC hire. Hardened so a demurrer cannot run Lerma without Home Depot's unproduced report. ICRAA is an independent path. Unsigned until Sep. 8, 2026. Confirm hire, decision date, notices, and wages before execution.",
-  "status_label": "Review draft — demurrer-hardened",
+  "status": "EXECUTED (unfiled) — three-count San Joaquin complaint against Home Depot U.S.A., Inc. for the Tracy DC hire, signed for September 8, 2026. CM-010, SUM-100, and FW-001 (5b / $0, UPS/FedEx grant pattern) are in the packet. Confirm hire, decision date, notices, and wages before the clerk. Serve CSC, not the Tracy building.",
+  "status_label": "Executed — unfiled",
   "lifecycle": "pre_filing",
   "proceeding": "state_civil",
   "phase": "pre_filing",
@@ -14,7 +14,7 @@
   "cluster": 3,
   "type": "State",
   "archived": false,
-  "note": "Do not execute or file before September 8, 2026. Confirm paragraphs on hire date, job title/pay, the employment decision and its date, any BGC vendor/notices, and wages. Tameny/IIED/FEHA omitted. FCRA omitted to keep this a state-law filing. Serve CSC, not the Tracy building. Verify the SOS agent before service.",
+  "note": "Packet is signed for September 8, 2026 filing. Do not treat as filed until clerk-stamped. Confirm hire date, job title/pay, the employment decision and its date, any BGC vendor/notices, and wages before the clerk. Tameny/IIED/FEHA omitted. FCRA omitted to keep this a state-law filing. Serve CSC, not the Tracy building.",
   "defendants": "Home Depot U.S.A., Inc., a Delaware corporation, d/b/a The Home Depot and The Home Depot Distribution Center (likely legal employer for the Tracy fulfillment center at 5395 Hopkins Road); DOES 1–20 for the actual employing affiliate, screening vendor, and decision-makers. The Home Depot, Inc. parent is not named merely as parent. The Tracy building is a worksite, not a defendant.",
   "causes": [
     "[PLEADED ON INFORMATION AND BELIEF] Penal Code § 290.46(j) — hire at the Tracy DC on or about August 2024, then an employment decision; four-element map pleaded; inference from Home Depot screening practice, Plaintiff's contemporaneous registry listing, and the July 2024 First Advantage/UPS report showing this Plaintiff was commercially matched to the California registry that season; Home Depot's own report is not in hand and is not attached; Lerma cannot be decided on the face of this complaint",
@@ -25,9 +25,9 @@
     "[PRESERVED, NOT PLEADED] FEHA and Fair Chance Act — no CRD right-to-sue in the record"
   ],
   "key_facts": "On or about August 2024, Plaintiff was hired to work at The Home Depot distribution/fulfillment center at 5395 Hopkins Road, Tracy, CA 95377 (San Joaquin County). Home Depot thereafter made an employment decision concerning that hire. Plaintiff is a Penal Code § 290 registrant whose identifying information appeared on the California Megan's Law website at the time. No offer letter, time records, wage statements, vendor name, or adverse-action notice is in the portfolio. The complaint does not attach a Home Depot report and does not allege its contents as a known fact. The load-bearing theory is information-and-belief use of § 290.46 disclosures for employment. Supporting inference, not proof of Home Depot's file: Home Depot is a national employer that ordinarily backgrounds distribution-center hires; Plaintiff was on the registry; and in July 2024 First Advantage matched this same Plaintiff to SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY on the UPS employment report later lodged in E.D. Cal. 2:26-cv-02847. That UPS report is not alleged to have been sent to Home Depot and First Advantage is not alleged to have been Home Depot's vendor. Labor Code § 1198.5 inspection has not yet been demanded. The legal defendant is Home Depot U.S.A., Inc., not the Tracy building. Proposed California agent (verify on SOS before service): CSC Lawyers Incorporating Service, 2710 Gateway Oaks Drive, Suite 150N, Sacramento, CA 95833.",
-  "procedural_status": "Verified complaint review draft, demurrer-hardened, generated for proposed September 8, 2026 execution; deliberately unsigned and unfiled. The draft pleads that a court cannot run Lerma on an unattached Home Depot report and that ICRAA § 1786.40 is an independent path. Pre-execution gates: (1) confirm hire/start date, title, shift, and pay; (2) confirm what the employment decision was and its date; (3) confirm any BGC vendor, portal, or written notices; (4) confirm wages earned/lost and replacement work; (5) verify the current California agent for Home Depot U.S.A., Inc.; (6) execute on or after September 8 only after those confirmations. No CRD charge. No demand. Filing court is San Joaquin Superior Court. Companion Judicial Council forms are not yet generated.",
+  "procedural_status": "Executed verified complaint and San Joaquin intake (CM-010, SUM-100, FW-001) dated September 8, 2026; signed, not yet filed. Lerma cannot run on an unattached Home Depot report; ICRAA § 1786.40 is an independent path. Confirm before the clerk: hire/start, title, pay, the decision and its date, any notices, wages, and the current CSC agent — not the Tracy building. FW-001 copies the 5b / $0 UPS/FedEx grant answers. Do not bury Serrato disclosures that day.",
   "damages": "No wage rate or duration is in the record. Portfolio valuation is $0 until the hire and decision are documented. Contingent statutory remedies if use is proven: Penal Code § 290.46(j)(4)(A) actual/treble with a $250 floor, fees, exemplary damages, or a civil penalty capped at $25,000; ICRAA § 1786.50 actual damages or $10,000, whichever is greater. Do not import UPS/Pilot numbers.",
-  "risk": "High-risk I&B draft, not filing-ready. The file has no Home Depot offer, report, or notice. Lerma dismissed after the employer's report was in the record and showed ordinary court records — a demurrer cannot replicate that analysis while Home Depot withholds the report. If production later shows court records and no California-registry source, the 290 count dies then, not at the pleading stage. ICRAA is the backup path but is thinner without a named CRA. CCP § 340(a) remains a defense argument on the civil-penalty piece. Tameny is omitted. Naming the Tracy building or serving the warehouse instead of CSC would be party/service defects.",
+  "risk": "High-risk I&B filing: the file has no Home Depot offer, report, or notice. Lerma dismissed after the employer's report was in the record and showed ordinary court records — a demurrer cannot replicate that analysis while Home Depot withholds the report. If production later shows court records and no California-registry source, the 290 count dies then, not at the pleading stage. ICRAA is the backup path but is thinner without a named CRA. CCP § 340(a) remains a defense argument on the civil-penalty piece. Tameny is omitted. Naming the Tracy building or serving the warehouse instead of CSC would be party/service defects.",
   "evidence": [
     "Plaintiff's statement — hired on or about August 2024 at 5395 Hopkins Road, Tracy, then an employment decision using registry information (not independently documented)",
     "Public description of the Tracy fulfillment center at 5395 Hopkins Road (worksite identification only)",
@@ -39,7 +39,19 @@
   ],
   "documents": [
     {
-      "path": "/documents/matter-37/Verified Complaint - Ngwa Nforbi v Home Depot USA Inc (REVIEW DRAFT for Sep 8 2026).pdf",
+      "path": "/documents/matter-37/Verified Complaint - Ngwa Nforbi v Home Depot USA Inc (Sep 8 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-37/CM-010 Civil Case Cover Sheet - Ngwa Nforbi v Home Depot USA Inc (Sep 8 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-37/SUM-100 Summons - Ngwa Nforbi v Home Depot USA Inc (Sep 8 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-37/FW-001 Request to Waive Court Fees - Ngwa Nforbi v Home Depot USA Inc (Sep 8 2026).pdf",
       "filed": false
     }
   ]

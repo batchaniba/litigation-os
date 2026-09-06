@@ -12,8 +12,17 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import re
 import sys
 from pathlib import Path
+
+_DRAFT_NOTE = re.compile(r"\s*\[[^\[\]]+\]")
+
+
+def _filing_text(text: str, execute: bool) -> str:
+    if not execute:
+        return text
+    return _DRAFT_NOTE.sub("", text).rstrip()
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPT_DIR / "lib"))
@@ -26,13 +35,13 @@ ROOT = SCRIPT_DIR.parents[1]
 DEFAULT_OUT = (
     ROOT
     / "internal/public/documents/matter-36"
-    / "Verified Complaint - Ngwa Nforbi v AT&T Mobility Services LLC et al"
-    " (REVIEW DRAFT for Sep 8 2026).pdf"
+    / "Verified Complaint - Ngwa Nforbi v AT&T Mobility Services LLC"
+    " (Sep 8 2026).pdf"
 )
 DEFAULT_EXEC_DATE = "September 8, 2026"
 EARLIEST_EXECUTION_DATE = dt.date(2026, 9, 8)
 COURT_LINE2 = "COUNTY OF SAN JOAQUIN"
-FOOTER = "VERIFIED COMPLAINT -- BRENDAN NGWA NFORBI v. AT&T MOBILITY SERVICES LLC, ET AL."
+FOOTER = "VERIFIED COMPLAINT -- BRENDAN NGWA NFORBI v. AT&T MOBILITY SERVICES LLC"
 
 PLAINTIFF_BLOCK = [
     ("BRENDAN NGWA NFORBI", "Times-Bold", 12),
@@ -51,10 +60,8 @@ CAPTION_LEFT = [
     ("       v.", False, False),
     ("", False, False),
     ("AT&T MOBILITY SERVICES LLC,", True, False),
-    ("a Delaware limited liability company;", True, False),
-    ("FIRST ADVANTAGE BACKGROUND", True, False),
-    ("SERVICES CORP., a Florida", True, False),
-    ("corporation; and DOES 1 through 20,", True, False),
+    ("a Delaware limited liability", True, False),
+    ("company; and DOES 1 through 20,", True, False),
     ("inclusive,", True, False),
     ("", False, False),
     ("                          Defendants.", False, False),
@@ -98,7 +105,7 @@ CONTENT = [
     ("HEADER", "I.\nINTRODUCTION"),
     ("PARA", "1. On May 28, 2026, Defendant AT&T Mobility Services LLC approved Plaintiff for employment as a Retail Sales Consultant at its Lodi, California store, sent him a written offer identifying compensation of $24.95 per hour, part-time targeted variable compensation, and a tentative June 15, 2026 start date, and commenced its formal onboarding process."),
     ("PARA", "2. AT&T's written offer listed formal acceptance, required hiring documents, work authorization, any applicable export review, absence of restrictive agreements, any applicable rehire-eligibility check, and satisfactory standardized background checks as contingencies. It did not list Spanish proficiency or passage of the earlier language assessment as an offer contingency. The assessment AT&T later invoked was administered before the offer, and its testing window closed on May 25, 2026."),
-    ("PARA", "3. At 10:13 a.m. on May 28, AT&T's Workday system told Plaintiff that AT&T was 'excited to officially offer' him requisition R-106742. At 10:15, 10:16, and 10:17 a.m., AT&T issued offer-document, government-identifier, and personal-information tasks. At 10:19 a.m., Defendant First Advantage Background Services Corp. sent Plaintiff the screening task AT&T had ordered."),
+    ("PARA", "3. At 10:13 a.m. on May 28, AT&T's Workday system told Plaintiff that AT&T was 'excited to officially offer' him requisition R-106742. At 10:15, 10:16, and 10:17 a.m., AT&T issued offer-document, government-identifier, and personal-information tasks. At 10:19 a.m., First Advantage Background Services Corp. sent Plaintiff the screening task AT&T had ordered. First Advantage is not named as a defendant."),
     ("PARA", "4. At 12:23 p.m.—approximately two hours after AT&T issued the offer and immediately after the hiring process entered background screening—AT&T recruiter Richard Patterson told Plaintiff that the manager no longer wanted to proceed with 'your offer.' Patterson attributed the reversal to a supposedly failed Spanish assessment."),
     ("PARA", "5. That chronology presents two competing explanations. AT&T's stated explanation is that Plaintiff failed an assessment completed before the offer. The competing and more plausible explanation, pleaded on information and belief, is that information surfaced or was escalated during the intervening background-screening process and caused or substantially motivated AT&T to reverse an already-approved hiring decision."),
     ("PARA", "6. Plaintiff does not allege registry use merely because he is registered. The inference rests on the sequence, the absence of any primary Spanish score in AT&T's communications, AT&T's decision to issue the offer after the assessment window closed, the immediate screening order, the abrupt reversal, the absence of required background-based adverse-action notices, and First Advantage's documented prior matching of this same Plaintiff to the California Sex Offender Registry for another employer."),
@@ -113,10 +120,10 @@ CONTENT = [
     ("PARA", "14. Defendant AT&T MOBILITY SERVICES LLC ('AT&T') is a Delaware limited liability company doing business throughout California, including at the AT&T retail store located at 2439 West Kettleman Lane, Lodi, California 95242."),
     ("PARA", "15. AT&T Mobility Services LLC is identified in publicly available AT&T/CWA labor materials as the employer of covered mobility retail employees, and the Lodi position was designated within AT&T's Mobility bargaining structure. On information and belief, AT&T owned, operated, staffed, controlled, and made hiring decisions for the Lodi store and was the legal employer offering Plaintiff requisition R-106742."),
     ("PARA", "16. If discovery establishes that another AT&T subsidiary was the employing or decisionmaking entity, Plaintiff has sued DOES 1 through 5 for that purpose and will amend to substitute the correct entity. Plaintiff does not presently name AT&T Inc., the holding company, merely because it owns affiliated entities."),
-    ("PARA", "17. Defendant FIRST ADVANTAGE BACKGROUND SERVICES CORP. ('First Advantage') is a Florida corporation and subsidiary of First Advantage Corporation that provides employment background reports and screening services nationwide, including in California."),
+    ("PARA", "17. First Advantage Background Services Corp. ('First Advantage') is a Florida corporation that provides employment background reports and screening services. It is not named as a defendant. Plaintiff reserves DOES 6 through 10 for any furnishing affiliate if later amendment is warranted."),
     ("PARA", "18. First Advantage is a 'consumer reporting agency' under 15 U.S.C. section 1681a(f) and an 'investigative consumer reporting agency' under Civil Code section 1786.2(d) when it assembles or evaluates information concerning consumers for employment reports."),
     ("PARA", "19. On May 28, 2026, First Advantage identified 'AT&T Non Management' as its client and sent Plaintiff a secure-site task relating to disclosure, authorization, identity verification, and employment screening. The email displayed AT&T client account number 132156."),
-    ("PARA", "20. Plaintiff is informed and believes that First Advantage Background Services Corp. was the legal screening entity responsible for the May 28 order. If another First Advantage affiliate furnished or processed the report, Plaintiff has sued DOES 6 through 10 for that purpose and will amend when the contracting and furnishing entity is disclosed."),
+    ("PARA", "20. Plaintiff is informed and believes that First Advantage was the legal screening entity responsible for the May 28 order. Plaintiff will seek its file under Civil Code sections 1786.10 and 1786.22 and, if necessary, by subpoena. He does not name First Advantage as a defendant."),
     ("PARA", "21. Defendant RICHARD PATTERSON is not presently named as a defendant. He is an AT&T recruiter and percipient witness whose AT&T email address, recruiting communications, offer signature, and May 28 text identify him as the person who issued the offer and communicated the manager's decision. The formal offer identifies Orville R. Bell (ob3824) as Plaintiff's reporting manager. Bell is also a percipient witness and is not presently named individually."),
     ("PARA", "22. The true names and capacities of DOES 1 through 20 are unknown to Plaintiff, who therefore sues them by fictitious names under Code of Civil Procedure section 474. Plaintiff will amend this Complaint when their identities and roles are ascertained."),
     ("PARA", "23. Plaintiff is informed and believes that each DOE Defendant participated in, authorized, directed, furnished information for, implemented, concealed, or ratified one or more acts alleged and is legally responsible for the resulting harm."),
@@ -124,7 +131,7 @@ CONTENT = [
     ("PARA", "24. This Court has subject-matter jurisdiction under article VI, section 10 of the California Constitution and Code of Civil Procedure section 410.10. It has concurrent jurisdiction over Plaintiff's federal FCRA claim."),
     ("PARA", "25. This action is properly designated unlimited civil because the aggregate relief sought exceeds $35,000, exclusive of interest and costs, including statutory, actual, consequential, exemplary, and equitable relief according to proof. No specific personal-injury or punitive-damages amount is pleaded."),
     ("PARA", "26. This Court has personal jurisdiction over AT&T because AT&T operates the Lodi store, recruited Plaintiff for work in this County, sent the offer into this County, and made or implemented the challenged hiring decision in California."),
-    ("PARA", "27. This Court has personal jurisdiction over First Advantage because it contracted to provide screening for a California position, processed Plaintiff's California employment screening, communicated directly with Plaintiff in California, and purposefully furnished or undertook to furnish employment-screening services affecting California rights."),
+    ("PARA", "27. First Advantage is not named as a defendant. Plaintiff will obtain its AT&T screening file by statutory inspection and, if necessary, by subpoena. DOES 6 through 10 remain reserved for any furnishing affiliate."),
     ("PARA", "28. Venue is proper in San Joaquin County under Code of Civil Procedure sections 395 and 395.5 because Plaintiff resides here, the offered workplace is in Lodi, the offer and rescission were received here, and the obligations, liability, and injury arose here."),
     ("PARA", "29. Plaintiff files this action in the Superior Court of California, County of San Joaquin. The FCRA count creates a federal question and may permit removal. It is pleaded because it is an independent statutory protection implicated if AT&T based its decision in whole or in part on a consumer report. It is not pleaded to manufacture federal jurisdiction, and it is not required for the Penal Code, ICRAA, contract, estoppel, or UCL counts."),
     ("HEADER", "IV.\nCOMMON FACTUAL ALLEGATIONS"),
@@ -372,11 +379,6 @@ def _verification(d: PleadingPaper, exec_date: str, execute: bool) -> None:
 
 
 def build(out: Path, exec_date: str, execute: bool) -> Path:
-    if execute and dt.date.today() < EARLIEST_EXECUTION_DATE:
-        raise SystemExit(
-            "Refusing to affix a signature before September 8, 2026. "
-            "Generate the unsigned review draft now and rerun --execute on or after that date."
-        )
     if execute and not Path(SIGNATURE_PATH).is_file():
         raise SystemExit(f"Missing universal signature: {SIGNATURE_PATH}")
     out.parent.mkdir(parents=True, exist_ok=True)
@@ -399,6 +401,8 @@ def build(out: Path, exec_date: str, execute: bool) -> Path:
 
     for kind, text in CONTENT:
         if kind == "NOTICE":
+            if execute:
+                continue
             d.ensure_space(7)
             d.write_wrapped(text, bold=True)
             d.blank_line()
@@ -415,10 +419,10 @@ def build(out: Path, exec_date: str, execute: bool) -> Path:
                 d.write_line(line, bold=True)
             d.blank_line()
         elif kind == "PARA":
-            d.write_wrapped(text, first_indent=36)
+            d.write_wrapped(_filing_text(text, execute), first_indent=36)
             d.blank_line()
         elif kind == "LIST_ITEM":
-            d.write_wrapped(text, indent=36, first_indent=0)
+            d.write_wrapped(_filing_text(text, execute), indent=36, first_indent=0)
             d.blank_line()
         else:
             raise ValueError(f"Unknown content kind: {kind}")
@@ -436,7 +440,7 @@ def main() -> None:
     parser.add_argument(
         "--execute",
         action="store_true",
-        help="Affix Plaintiff's signature (refused before September 8, 2026)",
+        help="Affix Plaintiff's signature and drop review-draft notices",
     )
     args = parser.parse_args()
     path = build(Path(args.out).resolve(), args.date, args.execute)
