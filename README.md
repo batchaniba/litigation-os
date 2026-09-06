@@ -169,7 +169,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | 22 | Newanforbi v. Pilot Travel Centers LLC | STK-CV-UWT-2026-0007649 | San Joaquin Sup. Ct. | State | Settled Jul. 14, 2026 ($35,000) |
 | 24 | Newanforbi v. Serrato | 4:26-cv-05953-ASK | USDC N.D. Cal. | Federal | CMC Sep. 15 live — Dkt. 22 unsigned |
 | 25 | Newanforbi v. Federal Express Corporation | 2:26-cv-02881-DAD-SCR | USDC E.D. Cal. (Sacramento Div.) | Federal | Answered Dkt. 4 — MJ consent mailed Sep. 1 |
-| 26 | Newanforbi v. United Parcel Service, Inc. | 2:26-cv-02847-DAD-CKD | USDC E.D. Cal. (Sacramento Div.) | Federal | UPS reply Sep. 8 — hearing Oct. 5 |
+| 26 | Newanforbi v. United Parcel Service, Inc. | 2:26-cv-02847-DAD-CKD | USDC E.D. Cal. (Sacramento Div.) | Federal | Opp. to Dkt. 11 executed — hearing Oct. 7 (CKD) |
 | 27 | Newanforbi v. Randstad, et al. | 26CV199902 | Alameda Sup. Ct. | State | $175k Randstad (post-fuse); RK Sep. 14 |
 | 28 | Newanforbi v. Shannon Smith, LCSW, CEO, et al. | 3:26-cv-07504-LJC | USDC N.D. Cal. | Federal | POS filed Dkt. 13 — answer Sep. 21 |
 | 29 | Newanforbi v. Amazon.com Services, LLC | 4:26-cv-09249-ASK | USDC N.D. Cal. (Oakland; formerly 3:26-cv-09249-ASK) | Federal | Plaintiff consent filed — both answers Sep. 22 |
@@ -223,7 +223,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 <!-- PORTFOLIO:UPCOMING_DEADLINES:START -->
 | Date | Matter | Event |
 |---|---|---|
-| Sep. 8, 2026 | 26 | UPS reply deadline — Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). E.D. Cal. L.R. 230(d): moving party may file a reply no later than 10 days after the opposition was filed. |
+| Sep. 8, 2026 | 26 | UPS reply deadline — Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). E.D. Cal. L.R. 230(d): reply no later than 10 days after the opposition was filed. |
 | Sep. 8, 2026 | 27 | Response deadline (self-imposed) — post-expiry $175,000 Randstad-only settlement demand. Williams to accept, counter, or request a call by 5:00 p.m. PT; one week before Randstad's Sept. 15 responsive-pleading date. |
 | Sep. 8, 2026 | 24 | Deadline — Initial disclosures (FRCP 26(a)(1)) and Joint Case Management Statement — Newanforbi v. Serrato (4:26-cv-05953-ASK) |
 | Sep. 9, 2026 | 27 | Meet-and-confer deadline (computed) as to The RK Logistics Group, Inc. — Newanforbi v. Randstad US, LLC et al. (26CV199902) |
@@ -239,14 +239,13 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | Sep. 20, 2026 | 20 | AMENDMENT DUE (optional) — if Petitioner elects to amend Count 4, file and serve an amended Petition within 20 days of notice of entry of the August 29, 2026 Whitman order. |
 | Sep. 21, 2026 | 28 | Responsive pleading deadline (computed) — Shannon Smith, LCSW, and HOPE Psychotherapy, Inc., Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504-LJC) |
 | Sep. 21, 2026 | 26 | 28 U.S.C. §1447(c) remand window closes (computed) — Newanforbi v. United Parcel Service, Inc., USDC E.D. Cal. No. 1:26-at-03195. |
-| Sep. 21, 2026 | 26 | Consent to / Decline of Magistrate Judge jurisdiction — outer target, Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). |
 | Sep. 21, 2026 | 28 | Responsive pleading deadline (computed) — Shannon Smith, LCSW, and HOPE Psychotherapy, Inc., Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504-LJC) |
 | Sep. 22, 2026 | 29 | Accurate Background LLC responsive pleading deadline (extended) — Newanforbi v. Amazon.com Services, LLC et al. (Matter 29, N.D. Cal. No. 4:26-cv-09249-ASK). |
 | Sep. 22, 2026 | 29 | Amazon.com Services, LLC responsive pleading deadline (extended) — Newanforbi v. Amazon.com Services, LLC et al. (Matter 29, N.D. Cal. No. 4:26-cv-09249-ASK). |
 | Sep. 30, 2026 | 29 | 28 U.S.C. §1447(c) remand window closes (computed) — Newanforbi v. Amazon.com Services, LLC et al., USDC N.D. Cal. No. 3:26-cv-09249-ASK. |
 | Sep. 30, 2026 | 24 | Hearing on Defendant Serrato's Motion to Dismiss FAC (Dkt. 18) — 1:30 p.m., Mag. Ajay S. Krishnan, Oakland Courtroom 4, 3rd Floor — Newanforbi v. Serrato (4:26-cv-05953-ASK). |
 | Oct. 1, 2026 | 19 | Habeas ruling calendar (computed) — Newanforbi v. Macomber (C2604791). |
-| Oct. 5, 2026 | 26 | HEARING — Defendant UPS's Rule 12(b)(6) Motion to Dismiss (ECF No. 7), Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD), 1:30 p.m., Courtroom 4. |
+| Oct. 7, 2026 | 26 | HEARING — Defendant UPS's Rule 12(b)(6) Motion to Dismiss (ECF No. 9), Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD), 10:00 a.m., Courtroom 24 (CKD) before Magistrate Judge Carolyn K. Delaney. |
 | Oct. 13, 2026 | 20 | Case Management Statement due (computed) — Newanforbi v. CHP et al. (26CV191136), 15 calendar days before the Oct. 28, 2026 CMC per CRC 3.725. |
 | Oct. 15, 2026 | 28 | Case Management Statement due — Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504), USDC N.D. Cal. |
 | Oct. 16, 2026 | 20 | Hearing on CHP demurrer and the individual respondents' joinders/demurrers to the Petition for Writ of Mandate, Newanforbi v. California Highway Patrol, et al. (Matter 20) — Dept. 25 |
