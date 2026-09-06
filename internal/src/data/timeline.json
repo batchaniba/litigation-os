@@ -282,15 +282,39 @@
     "source": "/documents/matter-28/Gmail - Blaze Van Dine Meet and Confer re Motion to Dismiss (Sep 3 2026).pdf"
   },
   {
-    "date": "Sep. 10, 2026",
-    "event": "Meet-and-confer date Van Dine requested before a Rule 12(b)(6) in Newanforbi v. Shannon Smith, LCSW, et al. (N.D. Cal. 3:26-cv-07504-LJC). Reply with available dates. Do not dismiss the action. Rule 12 from the Aug. 31 acceptance still runs to about September 21.",
+    "date": "Sep. 3, 2026",
+    "event": "SENT \u2014 Plaintiff replied 3:49 p.m. to Van Dine's Rule 12(b)(6) meet-and-confer in Newanforbi v. Shannon Smith, LCSW, et al. (N.D. Cal. 3:26-cv-07504-LJC). Offered Wednesday, September 9 (9:00 a.m.\u20134:00 p.m. PT); Thursday, September 10 before 12:00 p.m. or after 1:30 p.m. PT; and Monday, September 14. Refused to dismiss. Corrected two premises: the Matter 5 state demurrer was exhaustion-only, and Shannon Smith was not a state-court party. Do not treat as a dismissal. Rule 12 from the Aug. 31 acceptance still runs to about September 21.",
     "matters": [
       28
     ],
-    "type": "deadline",
+    "type": "correspondence",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-28/Gmail - Newanforbi v HOPE re Meet and Confer 3-26-cv-07504 (Sep 3-6 2026).pdf"
+  },
+  {
+    "date": "Sep. 6, 2026",
+    "event": "RECEIVED \u2014 Blaze Van Dine (Sims, Lawrence & Broghammer) e-mail, 11:09 a.m.: \"Let's do Thursday at 2pm. I'll follow with a link.\" Locks the Rule 12(b)(6) meet-and-confer in Newanforbi v. Shannon Smith, LCSW, et al. (N.D. Cal. 3:26-cv-07504-LJC) for Thursday, September 10, 2026, 2:00 p.m. Pacific. Cc: Eric Martinez, Kim Schmitt, June Meinecke. Do not dismiss the action. Rule 12 from the Aug. 31 acceptance still runs to about September 21.",
+    "matters": [
+      28
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "filed": false,
+    "actor": "opposing",
+    "source": "/documents/matter-28/Gmail - Newanforbi v HOPE re Meet and Confer 3-26-cv-07504 (Sep 3-6 2026).pdf"
+  },
+  {
+    "date": "Sep. 10, 2026",
+    "event": "LOCKED \u2014 Rule 12(b)(6) meet and confer with Blaze Van Dine (Sims, Lawrence & Broghammer), Thursday, September 10, 2026, 2:00 p.m. Pacific, Newanforbi v. Shannon Smith, LCSW, et al. (N.D. Cal. 3:26-cv-07504-LJC). Van Dine will send the link. Do not dismiss the action. Rule 12 from the Aug. 31 acceptance still runs to about September 21.",
+    "matters": [
+      28
+    ],
+    "type": "hearing",
     "upcoming": true,
     "actor": "you",
-    "source": "/documents/matter-28/Gmail - Blaze Van Dine Meet and Confer re Motion to Dismiss (Sep 3 2026).pdf"
+    "source": "/documents/matter-28/Gmail - Newanforbi v HOPE re Meet and Confer 3-26-cv-07504 (Sep 3-6 2026).pdf"
   },
   {
     "date": "Sep. 3, 2026",

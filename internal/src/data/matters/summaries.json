@@ -793,7 +793,7 @@
     "case_no": "3:26-cv-07504-LJC",
     "court": "USDC N.D. Cal.",
     "claims": "42 U.S.C. §1983 (Monell + Individual Capacity); Bane Act (Cal. Civ. Code §52.1); Fraud / Negligent Misrepresentation; RICO (18 U.S.C. §1962(c)-(d))",
-    "status_label": "POS filed Dkt. 13 — answer Sep. 21",
+    "status_label": "M&C locked Sep. 10 2:00 p.m. PT — answer Sep. 21",
     "lifecycle": "active",
     "proceeding": "federal_civil",
     "phase": "responsive_deadline",
@@ -831,7 +831,7 @@
       }
     ],
     "evidenceCount": 17,
-    "documentCount": 66
+    "documentCount": 67
   },
   {
     "number": 29,
