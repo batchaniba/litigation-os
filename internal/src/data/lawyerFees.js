@@ -619,6 +619,23 @@ const lawyer_fees_raw = [
       mid: 12180
     },
     notes: "Sep. 5 intake review of 24 short email PDFs and one SMS screenshot, four-page findings memorandum, two-page formal offer, and 32-page verified-complaint review draft. Estimate covers chronology reconstruction, entity and authority research, modular nine-count drafting, citation verification, pleading-paper rendering, and factual execution gates. The complaint remains unsigned and unfiled; no demand, CRD charge, or damages worksheet has been prepared."
+  },
+  {
+    number: 37,
+    type: "State — Penal Code § 290.46(j) I&B / Complaint Review Draft",
+    documentsCount: 1,
+    totalPagesReal: 20,
+    hours: {
+      low: 8,
+      high: 14,
+      mid: 11
+    },
+    cost: {
+      low: 2240,
+      high: 3920,
+      mid: 3080
+    },
+    notes: "Sep. 6 drafting of an unsigned 20-page three-count verified-complaint review draft against Home Depot U.S.A., Inc. for the Tracy DC hire. Estimate covers entity/agent research, I&B pleading, SOL/Tameny omission, and pleading-paper rendering. No demand or CRD charge."
   }
 ];
 
@@ -626,7 +643,7 @@ export const lawyer_fees = lawyer_fees_raw.map((row) => withMatterIdentity(row))
 
 export const lawyer_fees_summary = {
   analysisDate: "2026-09-05",
-  totalMatters: 36,
+  totalMatters: 37,
   totalDocumentsAnalyzed: 601,
   totalPagesReal: 6864,
   methodology: {

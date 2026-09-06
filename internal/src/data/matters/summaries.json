@@ -1125,5 +1125,33 @@
     ],
     "evidenceCount": 14,
     "documentCount": 28
+  },
+  {
+    "number": 37,
+    "caption": "Newanforbi v. Home Depot U.S.A., Inc.",
+    "case_no": "TBD",
+    "court": "San Joaquin Sup. Ct. (proposed; review draft not filed)",
+    "claims": "Penal Code § 290.46(j); ICRAA §§ 1786.40, 1786.50 (I&B); UCL § 17200",
+    "status_label": "Review draft — execution gates remain",
+    "lifecycle": "pre_filing",
+    "proceeding": "state_civil",
+    "phase": "pre_filing",
+    "filed": "Not yet filed",
+    "judge": "TBD",
+    "cluster": 3,
+    "type": "State",
+    "archived": false,
+    "note": "Do not execute or file before September 8, 2026. Confirm paragraphs on hire date, job title/pay, the employment decision and its date, any BGC vendor/notices, and wages. Tameny/IIED/FEHA omitted. FCRA omitted to keep this a state-law filing. Serve CSC, not the Tracy building. Verify the SOS agent before service.",
+    "defendants": "Home Depot U.S.A., Inc., a Delaware corporation, d/b/a The Home Depot and The Home Depot Distribution Center (likely legal employer for the Tracy fulfillment center at 5395 Hopkins Road); DOES 1–20 for the actual employing affiliate, screening vendor, and decision-makers. The Home Depot, Inc. parent is not named merely as parent. The Tracy building is a worksite, not a defendant.",
+    "causes": [
+      "[PLEADED ON INFORMATION AND BELIEF] Penal Code § 290.46(j) — hire at the Tracy DC on or about August 2024, then an employment decision; inference from Home Depot screening practice, Plaintiff's contemporaneous registry listing, and the July 2024 First Advantage/UPS report showing this Plaintiff was commercially matched to the California registry that season; Home Depot's own report is not in hand",
+      "[PLEADED ON INFORMATION AND BELIEF] ICRAA, Civ. Code §§ 1786.40 and 1786.50 — if an investigative report was obtained before the decision without source advice; Plaintiff must confirm nonreceipt",
+      "[DERIVATIVE / EQUITABLE] UCL § 17200 — unlawful and unfair prongs borrowing § 290.46(j); restitution limited to vested money/property",
+      "[OMITTED] Tameny / IIED — two-year CCP § 335.1 clock likely closed if the decision was August 2024; not the load-bearing claim",
+      "[OMITTED] FCRA — reserved; pleading it now would create a federal question without a named vendor or pre-adverse packet",
+      "[PRESERVED, NOT PLEADED] FEHA and Fair Chance Act — no CRD right-to-sue in the record"
+    ],
+    "evidenceCount": 5,
+    "documentCount": 1
   }
 ]

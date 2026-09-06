@@ -39,8 +39,8 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 | Plaintiff | Brendan Ngehsi Newanforbi |
 | Representation | Pro Se / In Propria Persona |
 | Jurisdictions | USDC E.D. Cal., USDC N.D. Cal., San Joaquin Sup. Ct., Alameda Sup. Ct., Sacramento Sup. Ct., Santa Clara Sup. Ct. |
-| Total Matters | 36 |
-| Active / Open | 17 |
+| Total Matters | 37 |
+| Active / Open | 18 |
 | — of which Settled | 1 (Matter 22 — Newanforbi v. Pilot Travel Centers LLC, Jul. 14, 2026) |
 | Dismissed / Closed / Abandoned | 19 |
 | Aggregate Exposure (Conservative) | ~$1,276,000+ |
@@ -180,6 +180,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | 34 | Newanforbi v. Counseling and Psychotherapy Center, Inc., et al. | TBD | USDC N.D. Cal. (San Jose Div.) / Santa Clara Sup. Ct. | Federal | Pre-filing — intake & compliance monitoring |
 | 35 | Ngwa Nforbi v. Ross Stores, Inc., et al. | 26CV501995 | Santa Clara Sup. Ct. (Downtown / First Street) | State | Filed — serve both Ross entities via CT Corp (~Oct 25) |
 | 36 | Brendan Ngehsi Newanforbi v. AT&T Mobility Services LLC, et al. | TBD | San Joaquin Sup. Ct. (proposed; review draft not filed) | State | Review draft — execution gates remain |
+| 37 | Newanforbi v. Home Depot U.S.A., Inc. | TBD | San Joaquin Sup. Ct. (proposed; review draft not filed) | State | Review draft — execution gates remain |
 <!-- PORTFOLIO:ACTIVE_MATTERS:END -->
 
 *Settled matters stay in the table above until dismissal is entered — a settlement resolves the merits, but the matter is still open on the docket. Their Status column reads "Settled" (see the Overview count above for which ones).*
@@ -223,6 +224,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 <!-- PORTFOLIO:UPCOMING_DEADLINES:START -->
 | Date | Matter | Event |
 |---|---|---|
+| Sep. 8, 2026 | 37 | EXECUTE (optional) — Verified complaint review draft against Home Depot U.S.A., Inc. for the Tracy distribution-center hire (Matter 37), proposed execution September 8, 2026. |
 | Sep. 8, 2026 | 26 | UPS reply deadline — Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). E.D. Cal. L.R. 230(d): reply no later than 10 days after the opposition was filed. |
 | Sep. 8, 2026 | 27 | Response deadline (self-imposed) — post-expiry $175,000 Randstad-only settlement demand. Williams to accept, counter, or request a call by 5:00 p.m. PT; one week before Randstad's Sept. 15 responsive-pleading date. |
 | Sep. 8, 2026 | 24 | Deadline — Initial disclosures (FRCP 26(a)(1)) and Joint Case Management Statement — Newanforbi v. Serrato (4:26-cv-05953-ASK) |
@@ -315,7 +317,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 ## Attorney Fees Analysis
 
 <!-- PORTFOLIO:ATTORNEY_FEES:START -->
-Plaintiff is representing himself pro se across all 36 matters. The figures below represent what he would have been required to spend on private counsel to litigate this portfolio — costs he has absorbed entirely through self-representation. Based on real page counts extracted from 601 documents / 6,864 pages across matters with uploaded filings (Matter 32: 115 PDFs / 1,110 pages — N.D. Cal. ndcal/ filing billed; from-01|02|20|24/ stay attributed to source matters; Matter 33: 30 PDFs / 428 pages — N.D. Cal. refile + Nov. 1 / APS evidence; from-07/from-08 drafting stays on Matters 7/8; Matter 31 has no uploaded PDFs of its own), classified by document type and priced at a blended rate of **$280/hour** (senior partner $350–$450 / mid-associate $250–$350 / paralegal $150–$200). Opposing-party filings billed at light review rate only. Fee analysis date: September 5, 2026.
+Plaintiff is representing himself pro se across all 37 matters. The figures below represent what he would have been required to spend on private counsel to litigate this portfolio — costs he has absorbed entirely through self-representation. Based on real page counts extracted from 601 documents / 6,864 pages across matters with uploaded filings (Matter 32: 115 PDFs / 1,110 pages — N.D. Cal. ndcal/ filing billed; from-01|02|20|24/ stay attributed to source matters; Matter 33: 30 PDFs / 428 pages — N.D. Cal. refile + Nov. 1 / APS evidence; from-07/from-08 drafting stays on Matters 7/8; Matter 31 has no uploaded PDFs of its own), classified by document type and priced at a blended rate of **$280/hour** (senior partner $350–$450 / mid-associate $250–$350 / paralegal $150–$200). Opposing-party filings billed at light review rate only. Fee analysis date: September 5, 2026.
 
 | Cluster | Matters | Low | Mid | High |
 |---|---|---|---|---|
@@ -324,10 +326,10 @@ Plaintiff is representing himself pro se across all 36 matters. The figures belo
 | Consumer Fraud / Employment | 12, 22, 23, 25, 26, 27, 29, 31, 36 | $154,896 | $210,826 | $266,756 |
 | Administrative Writs & Habeas | 9, 10, 19 | $41,580 | $57,890 | $74,200 |
 | Public Accommodation / Unruh | 35 | $14,280 | $19,460 | $24,640 |
-| **Portfolio Total** | **36 matters** | **$853,104** | **$1,137,640** | **$1,426,376** |
+| **Portfolio Total** | **37 matters** | **$853,104** | **$1,137,640** | **$1,426,376** |
 | **Estimated Hours** | | **3,046.8 hrs** | **4,063 hrs** | **5,094.2 hrs** |
 
-*Plaintiff has litigated all 36 matters pro se, absorbing the full economic equivalent of the above without compensation. Fee-shifting statutes (42 U.S.C. §1988, PC §290.46(j)(4)(A), RICO 18 U.S.C. §1964(c), FCRA, ICRAA) apply across the majority of active matters — mandatory fee recovery upon prevailing substantially offsets or eliminates the above costs.*
+*Plaintiff has litigated all 37 matters pro se, absorbing the full economic equivalent of the above without compensation. Fee-shifting statutes (42 U.S.C. §1988, PC §290.46(j)(4)(A), RICO 18 U.S.C. §1964(c), FCRA, ICRAA) apply across the majority of active matters — mandatory fee recovery upon prevailing substantially offsets or eliminates the above costs.*
 <!-- PORTFOLIO:ATTORNEY_FEES:END -->
 
 [↑ Contents](#contents)

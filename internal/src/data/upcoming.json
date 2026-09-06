@@ -1,6 +1,17 @@
 [
   {
     "date": "Sep. 8, 2026",
+    "event": "EXECUTE (optional) — Verified complaint review draft against Home Depot U.S.A., Inc. for the Tracy distribution-center hire (Matter 37), proposed execution September 8, 2026. Unsigned until Plaintiff confirms the hire, the employment decision and its date, any background-check notices, and wages. Do not file the review draft as-is. San Joaquin Superior Court. Serve CSC, not 5395 Hopkins Road.",
+    "matters": [
+      37
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-37/Verified Complaint - Newanforbi v Home Depot USA Inc (REVIEW DRAFT for Sep 8 2026).pdf"
+  },
+  {
+    "date": "Sep. 8, 2026",
     "event": "UPS reply deadline — Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). E.D. Cal. L.R. 230(d): reply no later than 10 days after the opposition was filed. Dkt. 10 (opposition to live Dkt. 9) was filed Aug. 28, 2026; day 10 is Monday, Sep. 7 (Labor Day), rolled to Tuesday, Sep. 8 under Fed. R. Civ. P. 6(a)(1)(C). Hearing is Oct. 7, 2026, 10:00 a.m., Courtroom 24 (CKD), Judge Delaney. Dkt. 11 seeks Sep. 14; Plaintiff does not consent; opposition executed Sep. 4, unfiled until clerk-stamped. Clock unchanged until an order. This is UPS's clock.",
     "matters": [
       26
