@@ -4,11 +4,11 @@
   "case_no": "3:26-cv-08272-LJC",
   "court": "USDC N.D. Cal. (San Francisco Div.)",
   "claims": "42 U.S.C. § 1983 — APS impartial-adjudicator / fair hearing; declaratory and injunctive relief (vacatur of APS 34739340) — Dkt. 6 (FAC filed Aug. 17, 2026) is the court pleading of record; also Candelaria / DMV APS PDF home for Matters 7/8",
-  "status": "Docketed as No. 3:26-cv-08272-LJC before Mag. Lisa J. Cisneros; CMC Nov. 12, 2026. Defendants served Aug. 14, 2026; response due Sep. 4, 2026. Operative FAC is Dkt. 6 (filed Aug. 17, 2026).",
-  "status_label": "FAC filed Aug. 17 (Dkt. 6) — resp. due Sep. 4; CMC Nov. 12",
+  "status": "Docketed as No. 3:26-cv-08272-LJC before Mag. Lisa J. Cisneros; CMC Nov. 12, 2026. Defendants filed Answer (ECF No. 11) to superseded Dkt. 1 on Sep. 4, 2026; Plaintiff Motion to Strike prepared Sep. 5, 2026. Operative FAC is Dkt. 6.",
+  "status_label": "Motion to Strike Answer drafted; CMC Nov. 12",
   "lifecycle": "active",
   "proceeding": "federal_civil",
-  "phase": "responsive_deadline",
+  "phase": "pleadings",
   "note": "N.D. Cal. § 1983 refile docketed Aug. 10, 2026 as No. 3:26-cv-08272-LJC (ndcal/), after voluntary dismissal of Matter 7 E.D. Cal. (confirmed filed Aug. 15, 2026). Also owns the Candelaria/DMV APS document set; Matters 7 and 8 remain historical docket records and cross-reference these paths.",
   "badge": "FAC FILED",
   "filed": "August 10, 2026 (docketed; complaint signed Aug. 7, 2026)",
@@ -69,6 +69,26 @@
     },
     {
       "path": "/documents/matter-33/ndcal/Proof of Service - Certification of Conflicts (Candelaria Gordon) (Sep 4 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-33/ndcal/Dkt 11 - Answer by Defendants Candelaria and Gordon (Filed Sep 04 2026).pdf",
+      "filed": true
+    },
+    {
+      "path": "/documents/matter-33/ndcal/Plaintiff Motion to Strike Answer (N.D. Cal. 3-26-cv-08272-LJC) (Sep 5 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-33/ndcal/Proposed Order Granting Motion to Strike Answer (N.D. Cal. 3-26-cv-08272-LJC) (Sep 5 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-33/ndcal/Proof of Service - Motion to Strike Answer (N.D. Cal. 3-26-cv-08272-LJC) (Sep 5 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-33/ndcal/Plaintiff Motion to Strike Answer Packet with Proposed Order (N.D. Cal. 3-26-cv-08272-LJC) (Sep 5 2026).pdf",
       "filed": false
     },
     {
