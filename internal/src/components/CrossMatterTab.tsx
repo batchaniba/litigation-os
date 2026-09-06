@@ -178,6 +178,13 @@ export function CrossMatterTab() {
                     Matters {item.matters.join(", ")}
                   </span>
                   <p className="detail-copy detail-copy-muted">{item.detail}</p>
+                  {item.document_path ? (
+                    <p className="detail-copy">
+                      <a className="xm-foundation-doc" href={item.document_path} target="_blank" rel="noreferrer">
+                        Open source PDF
+                      </a>
+                    </p>
+                  ) : null}
                 </li>
               ))}
             </ul>
@@ -223,3 +230,5 @@ export function CrossMatterTab() {
     </article>
   );
 }
+
+export default CrossMatterTab;

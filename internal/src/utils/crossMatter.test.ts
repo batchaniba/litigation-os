@@ -12,6 +12,7 @@ import {
   linksBetween,
   openExposures,
   partiesForMatter,
+  precedentPeers,
   relatedMatterNumbers,
   relatedMatters,
   relationshipFor,
@@ -110,6 +111,12 @@ describe("clusterForMatter", () => {
 
   it("returns undefined for a matter outside any cluster", () => {
     expect(clusterForMatter(9999)).toBeUndefined();
+  });
+
+  it("places the UPS docket in the §290.46 employment cluster", () => {
+    expect(clusterForMatter(26)?.id).toBe("megan-law-employment");
+    expect(kindsBetween(26, 27)).toContain("same_statute");
+    expect(precedentPeers(26)).toEqual([22, 25, 27, 29]);
   });
 });
 

@@ -24,6 +24,24 @@ export const allLinkKinds = (): string[] => Object.keys(crossMatterGraph.linkKin
 export const clusterForMatter = (matter: number): CrossMatterCluster | undefined =>
   CROSS_MATTER_CLUSTERS.find((cluster) => cluster.matters.includes(matter));
 
+export const clustersForMatter = (matter: number): CrossMatterCluster[] =>
+  CROSS_MATTER_CLUSTERS.filter((cluster) => cluster.matters.includes(matter));
+
+/** Other matters that share a same-statute or same-denial link — the queue's "also affects". */
+export function precedentPeers(matter: number): number[] {
+  const peers = new Set<number>();
+  for (const cluster of CROSS_MATTER_CLUSTERS) {
+    for (const link of cluster.links) {
+      const travels =
+        link.kinds.includes("same_statute") || link.kinds.includes("same_denial_challenged");
+      if (!travels) continue;
+      if (link.from === matter) peers.add(link.to);
+      if (link.to === matter) peers.add(link.from);
+    }
+  }
+  return [...peers].sort((a, b) => a - b);
+}
+
 export const clusterById = (id: string): CrossMatterCluster | undefined =>
   CROSS_MATTER_CLUSTERS.find((cluster) => cluster.id === id);
 

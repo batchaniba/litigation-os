@@ -167,7 +167,9 @@ export interface TimelineEvent {
   type: string;
   matters: TimelineMatters;
   upcoming?: boolean;
+  /** Path under /documents/ for the PDF or order that created this clock. */
   source?: string;
+  actor?: "you" | "opposing" | "agency" | "court" | "unknown";
 }
 
 export type CrossMatterDirection = "mutual" | "from_depends_on_to" | "to_cites_from";

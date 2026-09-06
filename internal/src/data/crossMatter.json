@@ -28,6 +28,10 @@
       "label": "Parallel relief track",
       "description": "Both dockets seek overlapping relief on separate tracks, raising sequencing, abstention, and inconsistent-ruling risk."
     },
+    "same_statute": {
+      "label": "Same statute",
+      "description": "Both dockets turn on the same statutory construction. A ruling on that text in one matter is immediately relevant to the others."
+    },
     "damages_overlap": {
       "label": "Overlapping damages claim",
       "description": "The same economic loss is pleaded as damages in both dockets without an offset or reservation coordinating them."
@@ -452,7 +456,8 @@
             32,
             33
           ],
-          "detail": "00:54:36\u201301:57:10. Establishes that no officer verbalized an alcohol odor, that the only liquid found was identified on tape as urine ('Is it water? No this is piss'), and that handcuffing at 01:11:16 preceded the 01:11:42 dispatch disclosure of parole status. Transcript PDF owned by Matter 33."
+          "detail": "00:54:36\u201301:57:10. Establishes that no officer verbalized an alcohol odor, that the only liquid found was identified on tape as urine ('Is it water? No this is piss'), and that handcuffing at 01:11:16 preceded the 01:11:42 dispatch disclosure of parole status. Transcript PDF owned by Matter 33.",
+          "document_path": "/documents/matter-33/from-07/Exhibit C Cover CHP Dashcam Transcript.pdf"
         },
         {
           "id": "detention-certificate",
@@ -504,7 +509,8 @@
             20,
             24
           ],
-          "detail": "June 29, 2026 order in Matter 24 granting IFP and finding a complaint on this record sufficient under 28 U.S.C. \u00a7 1915(e)(2). Now filed as persuasive authority in Matters 1, 7, and 20."
+          "detail": "June 29, 2026 order in Matter 24 granting IFP and finding a complaint on this record sufficient under 28 U.S.C. \u00a7 1915(e)(2). Now filed as persuasive authority in Matters 1, 7, and 20.",
+          "document_path": "/documents/opinions/Newanforbi v Serrato - USDC NDCal - IFP Granted Complaint Sufficient Jun 29 2026.pdf"
         },
         {
           "id": "uvisa-denial",
@@ -583,6 +589,218 @@
             1,
             2
           ]
+        }
+      ]
+    },
+    {
+      "id": "megan-law-employment",
+      "label": "Penal Code \u00a7290.46(j) employment cluster",
+      "matters": [22, 25, 26, 27, 29],
+      "thesis": "Five dockets turn on whether an employer or screening vendor used California Megan's Law registry information to deny or end work. A construction of \u00a7290.46(j)(2)(E) in one of them \u2014 especially the live UPS motion \u2014 travels immediately to FedEx, Randstad/RK, and Amazon. Pilot (Matter 22) is the resolved analog on the same text.",
+      "links": [
+        {
+          "id": "26-25-same-statute",
+          "from": 26,
+          "to": 25,
+          "direction": "mutual",
+          "severity": "high",
+          "kinds": ["same_statute"],
+          "significance": "UPS and FedEx are parallel failure-to-hire actions under Penal Code \u00a7290.46(j)(2)(E) after First Advantage screening. A ruling on whether a national-registry hit sourced to the California registry is 'use' of Megan's Law information in Matter 26 is the construction Matter 25 will meet.",
+          "sources": [
+            "Matter 26 \u2014 First Advantage Exhibit A (SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY)",
+            "Matter 25 \u2014 FedEx Answer Dkt. 4 admitting the report identified Plaintiff as a California registrant"
+          ]
+        },
+        {
+          "id": "26-27-same-statute",
+          "from": 26,
+          "to": 27,
+          "direction": "mutual",
+          "severity": "high",
+          "kinds": ["same_statute"],
+          "significance": "Randstad/RK is the same statutory bar with a stronger proof package: InfoMart Order 15780719 is in Plaintiff's possession and the registry is the sole flagged item. A UPS Count I survival supplies the construction; Matter 27 supplies the cleaner exhibit.",
+          "sources": [
+            "Matter 27 \u2014 InfoMart Order 15780719",
+            "Matter 26 \u2014 Opposition Dkt. 10 (Count I)"
+          ]
+        },
+        {
+          "id": "26-29-same-statute",
+          "from": 26,
+          "to": 29,
+          "direction": "mutual",
+          "severity": "medium",
+          "kinds": ["same_statute"],
+          "significance": "Amazon/Accurate plead the same \u00a7290.46(j) theory, but without the screening report in hand. Lerma (C.D. Cal.) dismissed a Megan's Law count when the hit was ordinary court records. A UPS ruling that the California source-of-record field is enough \u2014 or is not \u2014 is the first thing Matter 29 should read.",
+          "sources": [
+            "Matter 29 \u2014 complaint as filed, 26CV201554 / 4:26-cv-09249-ASK",
+            "Lerma v. Amazon, C.D. Cal. 8:22-cv-01727, Dkt. 36"
+          ]
+        },
+        {
+          "id": "25-27-same-statute",
+          "from": 25,
+          "to": 27,
+          "direction": "mutual",
+          "severity": "medium",
+          "kinds": ["same_statute"],
+          "significance": "FedEx answered and admitted registry identification; Randstad has the vendor report. Neither case depends on the other procedurally, but both will cite the same statutory text and the same 'use vs. access' distinction.",
+          "sources": [
+            "Matter 25 \u2014 Answer Dkt. 4",
+            "Matter 27 \u2014 InfoMart Order 15780719"
+          ]
+        },
+        {
+          "id": "25-29-same-statute",
+          "from": 25,
+          "to": 29,
+          "direction": "mutual",
+          "severity": "low",
+          "kinds": ["same_statute"],
+          "significance": "Both are employer-plus-vendor screening cases under \u00a7290.46(j). FedEx has an answer on the docket; Amazon is at the responsive-pleading stage after removal.",
+          "sources": [
+            "Matter 25 \u2014 Answer Dkt. 4",
+            "Matter 29 \u2014 Notice of Removal Dkt. 1"
+          ]
+        },
+        {
+          "id": "27-29-same-statute",
+          "from": 27,
+          "to": 29,
+          "direction": "mutual",
+          "severity": "low",
+          "kinds": ["same_statute"],
+          "significance": "Randstad's InfoMart report is the proof standard Amazon still lacks. If Accurate's product looks like Lerma (court records, not the Megan's Law site), Matter 29 diverges; if it looks like InfoMart (registry as the only flag), it converges.",
+          "sources": [
+            "Matter 27 \u2014 InfoMart Order 15780719",
+            "Matter 29 \u2014 complaint (information-and-belief registry use)"
+          ]
+        },
+        {
+          "id": "22-26-same-statute",
+          "from": 22,
+          "to": 26,
+          "direction": "mutual",
+          "severity": "medium",
+          "kinds": ["same_statute"],
+          "significance": "Pilot (Matter 22) resolved a \u00a7290.46(j) failure-to-hire claim after the employer's own post-adverse notice named the California registry. It is the closed analog, not controlling authority, for how UPS should read Exhibit A.",
+          "sources": [
+            "Matter 22 \u2014 settlement and dismissal papers",
+            "Matter 26 \u2014 First Advantage Exhibit A"
+          ]
+        },
+        {
+          "id": "22-25-same-statute",
+          "from": 22,
+          "to": 25,
+          "direction": "mutual",
+          "severity": "low",
+          "kinds": ["same_statute"],
+          "significance": "Same closed analog as against FedEx, whose Answer now admits the California registry appeared in the First Advantage report.",
+          "sources": [
+            "Matter 22 \u2014 settlement and dismissal papers",
+            "Matter 25 \u2014 Answer Dkt. 4"
+          ]
+        },
+        {
+          "id": "22-27-same-statute",
+          "from": 22,
+          "to": 27,
+          "direction": "mutual",
+          "severity": "medium",
+          "kinds": ["same_statute"],
+          "significance": "Pilot and Randstad are the two matters where the vendor report (or employer letter) named the California registry as the adverse item. Matter 27 is the live successor to that proof pattern.",
+          "sources": [
+            "Matter 22 \u2014 Checkr / post-adverse notice",
+            "Matter 27 \u2014 InfoMart Order 15780719"
+          ]
+        }
+      ],
+      "exposures": [
+        {
+          "id": "williams-tameny-failure-to-hire",
+          "label": "Tameny failure-to-hire counts do not travel with \u00a7290.46",
+          "severity": "medium",
+          "status": "open",
+          "matters": [25, 26],
+          "detail": "Williams v. Sacramento River Cats holds that Tameny does not extend to failure to hire. UPS Count II is already conceded in the opposition. The statutory \u00a7290.46(j)(4)(A) private right of action does not depend on Tameny.",
+          "remedy": "Do not brief Tameny as the load-bearing claim in a never-hired case. Keep Count I (and any UCL unlawful-prong borrow) as the statute that actually moves."
+        },
+        {
+          "id": "registry-report-not-in-hand",
+          "label": "Registry use is still inferred in Amazon and was I&B in FedEx until the Answer",
+          "severity": "high",
+          "status": "open",
+          "matters": [25, 29],
+          "detail": "Lerma dismissed a Megan's Law count when the only 'record found' was ordinary county court records. Matter 29 does not yet have the Accurate report. FedEx's Answer now admits registry identification, which closes that gap on the pleading for Matter 25.",
+          "remedy": "Obtain the First Advantage (FedEx) and Accurate (Amazon) reports under Rule 26 / Rule 45 before the next amendment or opposition. Do not treat delay or an identity-verification ping as a registry hit."
+        }
+      ],
+      "foundation": [
+        {
+          "id": "pc-290-46-j",
+          "label": "Penal Code \u00a7290.46(j)(2)(E)",
+          "matters": [22, 25, 26, 27, 29],
+          "detail": "The statutory bar on using Megan's Law registry information for employment, with a private right of action under (j)(4)(A)."
+        },
+        {
+          "id": "first-advantage-ex-a",
+          "label": "First Advantage report (UPS Exhibit A)",
+          "matters": [26, 25],
+          "detail": "Lodged by UPS with its Rule 12(b)(6) motion. The only Decisional / INELIGIBLE component is the NSOR hit whose sentence field reads SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY.",
+          "document_path": "/documents/matter-26/Dkt 07 Exhibit A - First Advantage Background Report (Filed Aug 26 2026).pdf"
+        },
+        {
+          "id": "infomart-15780719",
+          "label": "InfoMart Order 15780719",
+          "matters": [27],
+          "detail": "In Plaintiff's possession. Every criminal search returned No Record. The sole flag is the California Sex Offender Registry. Status NEEDS APPROVAL, PER CLIENT CRITERIA; billing code RK LOGISTICS.",
+          "document_path": "/documents/matter-27/15780719Final_Profile.PDF"
+        },
+        {
+          "id": "lerma-dkt-36",
+          "label": "Lerma pleading-stage Megan's Law dismissal",
+          "matters": [29],
+          "detail": "C.D. Cal. 8:22-cv-01727 Dkt. 36 (May 26, 2023) dismissed the \u00a7290.46 count because the hit was Orange County court records, not the Megan's Law website. The later settlement was on a surviving Fair Chance Act claim.",
+          "document_path": "/documents/matter-29/lerma-v-amazon/Dkt 36 - ORDER GRANTING Motions to Dismiss - Megan's Law, FCRA, UCL Claims Dismissed (May 26, 2023).pdf"
+        }
+      ],
+      "parties": [
+        {
+          "name": "United Parcel Service, Inc.",
+          "role": "Employer; First Advantage customer",
+          "defendantIn": [26],
+          "factualIn": []
+        },
+        {
+          "name": "Federal Express Corporation",
+          "role": "Employer; First Advantage customer",
+          "defendantIn": [25],
+          "factualIn": []
+        },
+        {
+          "name": "Randstad / RK Logistics",
+          "role": "Staffing employer and client; InfoMart customer",
+          "defendantIn": [27],
+          "factualIn": []
+        },
+        {
+          "name": "Amazon.com Services, LLC / Accurate Background LLC",
+          "role": "Employer and screening vendor",
+          "defendantIn": [29],
+          "factualIn": []
+        },
+        {
+          "name": "Pilot Travel Centers LLC",
+          "role": "Resolved analog on the same statute",
+          "defendantIn": [22],
+          "factualIn": [25, 26, 27]
+        },
+        {
+          "name": "First Advantage",
+          "role": "Screening vendor (not a named defendant in 25/26)",
+          "defendantIn": [],
+          "factualIn": [25, 26, 29]
         }
       ]
     }

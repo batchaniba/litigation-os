@@ -29,7 +29,8 @@ export function CrossMatterPanel({ matter }: CrossMatterPanelProps) {
       <div className="detail-label">Cross-matter significance</div>
       <p className="detail-copy detail-copy-secondary xm-cluster-line">
         Part of <strong>{cluster.label}</strong> — {cluster.matters.length} matters,{" "}
-        {peers.length} direct links from this docket.
+        {peers.length} direct links from this docket.{" "}
+        <Link className="xm-foundation-doc" to={ROUTES.crossMatter}>Full graph</Link>
       </p>
 
       <div className="xm-subhead">Linked matters</div>
@@ -118,6 +119,13 @@ export function CrossMatterPanel({ matter }: CrossMatterPanelProps) {
                     {item.matters.length} matter{item.matters.length === 1 ? "" : "s"}
                   </span>
                   <p className="detail-copy detail-copy-muted">{item.detail}</p>
+                  {item.document_path ? (
+                    <p className="detail-copy">
+                      <a className="xm-foundation-doc" href={item.document_path} target="_blank" rel="noreferrer">
+                        Open source PDF
+                      </a>
+                    </p>
+                  ) : null}
                 </li>
               ))}
             </ul>
