@@ -1,5 +1,28 @@
 [
   {
+    "date": "Aug. 27, 2026",
+    "event": "RECEIVED \u2014 Run With It do-not-reply: Process Serving Order Executed (order 15645547) for Santiago Meza-Gonzalez (CHP #023295), individually, at 4030 Kiernan Ave, Modesto, CA 95356. Vendor reports substitute service on a person apparently in charge on Aug. 27, 2026. Signed process-serving report not yet received. Do not treat as a filed Rule 4(l) return.",
+    "matters": [
+      32
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": false,
+    "source": "/documents/matter-32/ndcal/Run With It - Process Serving Order Executed - Meza-Gonzalez (Aug 27 2026).jpg"
+  },
+  {
+    "date": "Sep. 3, 2026",
+    "event": "EXECUTED (unsent) \u2014 brief e-mail to DAG Haiyang A. Li reporting service of the Dkt. 5 FAC in Nforbi v. Meza-Gonzalez et al. (N.D. Cal. 4:26-cv-08271-ASK): Melano by first-class mail Aug. 21 from San Jose to CHP South Sacramento (6 Massie Court); Meza-Gonzalez substitute-served Aug. 27 at CHP Modesto Area (4030 Kiernan Ave) per Run With It order 15645547 (person apparently in charge). Proofs not yet filed; planned today or tomorrow. Do not put GitHub raws in the e-mail. Do not treat Meza as served on the catalog until the signed return is in hand.",
+    "matters": [
+      32
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-32/ndcal/EMAIL_DRAFT_Li_FAC_Service_Melano_and_Meza.txt"
+  },
+  {
     "date": "May 16, 2026",
     "event": "AT&T APPLICATIONS RECEIVED \u2014 Plaintiff applied for R-107776 Retail Sales Consultant, Stockton Pacific, and R-106742 Bilingual Spanish Retail Sales Consultant, Lodi. AT&T immediately advanced both tracks through Modern Hire interview invitations; Stockton also generated a Virtual Job Tryout.",
     "matters": [

@@ -23,7 +23,7 @@
       "location": "CHP Modesto Area",
       "served": false,
       "dateServed": null,
-      "note": "Aug. 13 Stanislaus SER-001 / purported Aug. 14 attempt did not produce a filed Rule 4(l) return. Private process-server re-service bundle prepared Aug. 25, 2026 (Modesto Area, 4030 Kiernan Ave.)."
+      "note": "Aug. 13 Stanislaus SER-001 / purported Aug. 14 attempt did not produce a filed Rule 4(l) return. Private process-server re-service bundle prepared Aug. 25, 2026 (Modesto Area, 4030 Kiernan Ave.). Run With It order 15645547 reports substitute service on a person apparently in charge at that address on Aug. 27, 2026; signed return not yet received; proofs not yet filed."
     },
     {
       "name": "Jose Melano",
@@ -63,6 +63,12 @@
     "Matter 7 Candelaria federal PDFs — cross-ref Matter 33 (matter-33/from-07/)"
   ],
   "documents": [
+    {
+      "path": "/documents/matter-32/ndcal/EMAIL_DRAFT_Li_FAC_Service_Melano_and_Meza.txt"
+    },
+    {
+      "path": "/documents/matter-32/ndcal/Run With It - Process Serving Order Executed - Meza-Gonzalez (Aug 27 2026).jpg"
+    },
     {
       "path": "/documents/matter-32/ndcal/Certification of Conflicts Interested Entities and Persons (Meza Melano) (Sep 4 2026).pdf",
       "filed": false
