@@ -622,9 +622,9 @@ const lawyer_fees_raw = [
   },
   {
     number: 37,
-    type: "State — ICRAA / UCL / § 290.46(j) I&B (San Joaquin, executed unfiled)",
+    type: "State — ICRAA / UCL / § 290.46(j) (San Joaquin, executed unfiled)",
     documentsCount: 6,
-    totalPagesReal: 60,
+    totalPagesReal: 58,
     hours: {
       low: 14,
       high: 30,
@@ -635,7 +635,7 @@ const lawyer_fees_raw = [
       high: 8400,
       mid: 6160
     },
-    notes: "Sep. 6 true-up to the executed packet (6 files / 60 pages). The 21-page signed three-count verified complaint is the drafting driver. CM-010, FW-001, FW-003, and SUM-100 are billed as light administrative tasks (0.5–2 hr/doc). The 30-page Filing Packet is incremental assembly, not a second complaint. No offer letter or Home Depot report is in the file. Unfiled; no demand or CRD charge."
+    notes: "Sep. 6 true-up, then affirmative-fact rewrite: 20-page signed three-count verified complaint now alleges Home Depot's own report contained registry information and Home Depot used it to ghost Plaintiff — not the UPS file. Packet is 29 pages (6 files / 58 pages on disk). CM-010, FW-001, FW-003, and SUM-100 remain light administrative tasks. Filing Packet billed as assembly. No offer letter or Home Depot report is in the file. Unfiled; no demand or CRD charge."
   },
   {
     number: 38,
@@ -679,7 +679,7 @@ export const lawyer_fees_summary = {
   analysisDate: "2026-09-06",
   totalMatters: 39,
   totalDocumentsAnalyzed: 641,
-  totalPagesReal: 7209,
+  totalPagesReal: 7207,
   methodology: {
     blendedHourlyRate: 280,
     rateRange: { seniorPartner: [350, 450], midAssociate: [250, 350], paralegal: [150, 200] },
