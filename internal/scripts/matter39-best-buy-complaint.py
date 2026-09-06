@@ -362,7 +362,8 @@ CONTENT = [
         "335.1 or section 340, subdivision (a), supplies the limitations period "
         "for the section 290.46(j) count. The actual-damages and discretionary "
         "enhancement authorized by section 290.46(j)(4)(A) are a liability "
-        "created by statute, not an action upon a statute for a penalty. The "
+        "created by statute under Code of Civil Procedure section 338(a), "
+        "not an action upon a statute for a penalty. The "
         "labeled civil-penalty slice is pleaded in the alternative and is not "
         "the sole theory. He does not plead a Tameny or personal-injury count. "
         "A two-year clock from an October 2023 decision would have closed in "
@@ -819,16 +820,17 @@ CONTENT = [
     (
         "PARA",
         "68. Plaintiff suffered injury in fact and lost money or property "
-        "through the lost warehouse employment at $22.60 per hour, the "
-        "compelled disclosure of personal identifying information for "
-        "screening, and other economic losses to be proven. Injury in fact "
-        "sufficient for UCL standing is not the same as recoverable "
-        "restitution. He does not seek future unearned wages as UCL "
-        "restitution. He seeks restitution only of money or property in "
-        "which he had a vested interest and that Defendants acquired through "
-        "the challenged practices — including, according to proof, the value "
-        "of personal information he was compelled to disclose. He does not "
-        "allege that Best Buy holds a fund of unearned future wages.",
+        "through the lost warehouse employment at $22.60 per hour, reliance "
+        "expenditures, employment-search costs, and other economic losses "
+        "to be proven. Injury in fact sufficient for UCL standing is not "
+        "the same as recoverable restitution. He does not seek future "
+        "unearned wages as UCL restitution. He seeks restitution only of "
+        "money or property in which he had a vested interest and that "
+        "Defendants acquired through the challenged practices — including, "
+        "according to proof, reliance expenditures and employment-search "
+        "costs. He does not seek restitution of an abstract value of "
+        "personal information. He does not allege that Best Buy holds a "
+        "fund of unearned future wages.",
     ),
     (
         "PARA",

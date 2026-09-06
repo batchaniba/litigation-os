@@ -345,7 +345,8 @@ CONTENT = [
         "335.1 or section 340, subdivision (a), supplies the limitations period "
         "for the section 290.46(j) count. The actual-damages and discretionary "
         "enhancement authorized by section 290.46(j)(4)(A) are a liability "
-        "created by statute, not an action upon a statute for a penalty. The "
+        "created by statute under Code of Civil Procedure section 338(a), "
+        "not an action upon a statute for a penalty. The "
         "labeled civil-penalty slice is pleaded in the alternative and is not "
         "the sole theory. Those statutes, if raised as affirmative defenses, "
         "will be addressed on the nature of the right sued upon. Plaintiff "
@@ -775,16 +776,17 @@ CONTENT = [
     (
         "PARA",
         "75. Plaintiff suffered injury in fact and lost money or property "
-        "through lost wages from the ended Tracy Center employment, the "
-        "compelled disclosure of personal identifying information for "
-        "screening, and other economic losses to be proven. Injury in fact "
-        "sufficient for UCL standing is not the same as recoverable "
-        "restitution. Plaintiff does not seek future unearned wages as UCL "
-        "restitution. He seeks restitution only of money or property in "
-        "which he had a vested interest and that Defendants acquired through "
-        "the challenged practices — including, according to proof, the value "
-        "of personal information he was compelled to disclose and any vested "
-        "unpaid wages if the personnel file later shows earned work. He does "
+        "through lost wages from the ended Tracy Center employment, "
+        "reliance expenditures, employment-search costs, and other economic "
+        "losses to be proven. Injury in fact sufficient for UCL standing is "
+        "not the same as recoverable restitution. Plaintiff does not seek "
+        "future unearned wages as UCL restitution. He seeks restitution "
+        "only of money or property in which he had a vested interest and "
+        "that Defendants acquired through the challenged practices — "
+        "including, according to proof, reliance expenditures, "
+        "employment-search costs, and any vested unpaid wages if the "
+        "personnel file later shows earned work. He does not seek "
+        "restitution of an abstract value of personal information. He does "
         "not allege that Home Depot holds a fund of unearned future wages.",
     ),
     (
