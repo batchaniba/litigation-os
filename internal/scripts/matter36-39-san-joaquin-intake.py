@@ -401,10 +401,21 @@ def build_fw001(case: dict, out: Path) -> None:
     page0.add_redact_annot(pymupdf.Rect(379.0, 694.8, 470.0, 708.0), fill=(1, 1, 1))
     page0.add_redact_annot(pymupdf.Rect(36.0, 693.0, 132.5, 708.0), fill=(1, 1, 1))
     page0.add_redact_annot(pymupdf.Rect(66.4, 682.8, 200.0, 693.8), fill=(1, 1, 1))
-    page0.add_redact_annot(pymupdf.Rect(97.0, 219.0, 392.5, 234.0), fill=(1, 1, 1))
+    # Old Name: value sits under item 1. Do not start the wipe at y=219 —
+    # that ate "nformation" from "Your Information" (bbox y1=220.7, x1=154.7).
+    page0.add_redact_annot(pymupdf.Rect(154.7, 219.0, 392.5, 234.0), fill=(1, 1, 1))
+    page0.add_redact_annot(pymupdf.Rect(97.3, 221.2, 154.7, 234.0), fill=(1, 1, 1))
     page1.add_redact_annot(pymupdf.Rect(97.0, 47.5, 250.0, 64.0), fill=(1, 1, 1))
     page0.apply_redactions()
     page1.apply_redactions()
+    if "Your Information" not in (page0.get_text() or ""):
+        page0.insert_text(
+            (63.0, 216.6),
+            "Your Information ",
+            fontsize=11,
+            fontname="hebo",
+            color=(0, 0, 0),
+        )
     # Cover leftover date tops that overlap the declaration, then restore
     # the official second line of the perjury block.
     _whiteout(page0, pymupdf.Rect(36.0, 667.0, 285.0, 682.5))
