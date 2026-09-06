@@ -1,18 +1,29 @@
 [
   {
-    "date": "Sep. 4, 2026",
-    "event": "PHONE \u2014 UPS asked Plaintiff for a 30-day extension of its reply on the Rule 12(b)(6) motion (ECF No. 7) in Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). Declined. UPS then asked for 15 days. Declined. No stipulation. No written ask is in the file. L.R. 230(d) reply remains Sep. 8, 2026. Hearing remains Oct. 5, 2026, 1:30 p.m. Zoom.",
+    "date": "Sep. 21, 2026",
+    "event": "MOOT \u2014 Consent to / Decline of Magistrate Judge jurisdiction outer target, Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). UPS filed a Notice of Decline of Jurisdiction of United States Magistrate Judge on Aug. 24, 2026 (Dkt. 5; COS Dkt. 6). Both sides must consent for a full referral. Plaintiff's later-executed Sep. 1 consent form cannot create one. The case remains assigned to Judge Drozd and referred to Judge Delaney for pretrial matters. Dkt. 9 is set before Delaney on Oct. 7.",
     "matters": [
       26
     ],
-    "type": "correspondence",
+    "type": "deadline",
     "upcoming": false,
-    "actor": "opposing",
-    "source": "/documents/matter-26/Dkt 10 - Plaintiff's Opposition to UPS Rule 12(b)(6) Motion to Dismiss (Filed Aug 28 2026).pdf"
+    "actor": "you",
+    "source": "/documents/matter-26/PACER Docket Report - E.D. Cal. 2-26-cv-02847-DAD-CKD (Sep 4 2026).pdf"
+  },
+  {
+    "date": "Oct. 5, 2026",
+    "event": "VACATED \u2014 Hearing on UPS's first Rule 12(b)(6) notice (ECF No. 7) in Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD), Oct. 5, 2026, 1:30 p.m., Courtroom 4 (DAD). Dkt. 8 (Aug. 27) vacated the hearing as improperly noticed before Judge Drozd and directed re-notice before the assigned magistrate judge. Live hearing is Oct. 7, 2026, 10:00 a.m., Courtroom 24 (CKD), Judge Delaney, on Dkt. 9.",
+    "matters": [
+      26
+    ],
+    "type": "hearing",
+    "upcoming": false,
+    "actor": "you",
+    "source": "/documents/matter-26/PACER Docket Report - E.D. Cal. 2-26-cv-02847-DAD-CKD (Sep 4 2026).pdf"
   },
   {
     "date": "Sep. 8, 2026",
-    "event": "UPS reply deadline \u2014 Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). E.D. Cal. L.R. 230(d): moving party may file a reply no later than 10 days after the opposition was filed. Dkt. 10 was filed Aug. 28, 2026; day 10 is Sunday, Sep. 7, rolled to Monday, Sep. 8 under Fed. R. Civ. P. 6(a)(1)(C). Sep. 4 phone asks for 30 days and then 15 days were both declined. Hearing remains Oct. 5. This is UPS's clock.",
+    "event": "UPS reply deadline \u2014 Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). E.D. Cal. L.R. 230(d): reply no later than 10 days after the opposition was filed. Dkt. 10 (opposition to live Dkt. 9) was filed Aug. 28, 2026; day 10 is Monday, Sep. 7 (Labor Day), rolled to Tuesday, Sep. 8 under Fed. R. Civ. P. 6(a)(1)(C). Hearing is Oct. 7, 2026, 10:00 a.m., Courtroom 24 (CKD), Judge Delaney. Dkt. 11 seeks Sep. 14; Plaintiff does not consent; opposition executed Sep. 4, unfiled until clerk-stamped. Clock unchanged until an order. This is UPS's clock.",
     "matters": [
       26
     ],
@@ -20,6 +31,99 @@
     "upcoming": true,
     "actor": "opposing",
     "source": "/documents/matter-26/Dkt 10 - Plaintiff's Opposition to UPS Rule 12(b)(6) Motion to Dismiss (Filed Aug 28 2026).pdf"
+  },
+  {
+    "date": "Sep. 4, 2026",
+    "event": "PHONE \u2014 UPS asked Plaintiff for a 30-day extension of its reply on the Rule 12(b)(6) motion (live motion ECF No. 9) in Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). Declined. UPS then asked for 15 days. Declined. No stipulation. L.R. 230(d) reply remains Sep. 8, 2026. Hearing is Oct. 7, 2026, 10:00 a.m., Courtroom 24 (CKD), Judge Delaney.",
+    "matters": [
+      26
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "actor": "opposing"
+  },
+  {
+    "date": "Sep. 4, 2026",
+    "event": "FILED \u2014 Dkt. 11 Defendant United Parcel Service Inc.'s motion for a seven-day extension of time to file a reply brief re Dkt. 9, with Dkt. 11-1 certificate of service, in Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). Entered 09/04/26. Paper is captioned a Consent Motion; paragraph 4 admits Plaintiff does not consent. Cites Fed. R. Civ. P. 16(b)(4); asks through September 14, 2026. Recites reply due September 7 [Doc. 8] \u2014 Doc. 8 is the minute order vacating the Oct. 5 Drozd hearing, not a reply deadline; opposition is Dkt. 10 to live Dkt. 9; Sep. 7 is Labor Day; live L.R. 230(d) clock is Tuesday, Sep. 8. Paragraph 8 still recites an Oct. 5 hearing (vacated). Cause: personal matters including non-refundable, pre-planned holiday-weekend travel. No affidavit. COS mail-only to bnn.cdla@gmail.com (wrong). Do not flip the Sep. 8 reply clock unless the Court enters an order.",
+    "matters": [
+      26
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "opposing",
+    "source": "/documents/matter-26/Dkt 11 - UPS Consent Motion for Extension of Time to File Reply (Filed Sep 4 2026).pdf"
+  },
+  {
+    "date": "Sep. 4, 2026",
+    "event": "EXECUTED (unfiled) \u2014 Plaintiff's Opposition to UPS's Consent Motion for Extension of Time to File Reply (ECF No. 11) in Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). Dated September 4, 2026. POS by first-class mail from San Jose to Mott at Costa Mesa letterhead and the Carlsbad docket address. Not consented. Ample time; prejudice; wrong rule; no affidavit. Live hearing is Oct. 7, 2026, 10:00 a.m., Courtroom 24 (CKD), Judge Delaney. L.R. 230(d) reply remains Tuesday, Sep. 8. Do not treat as filed until clerk-stamped. Drozd Standing Order I.E: no proposed order lodged.",
+    "matters": [
+      26
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": false,
+    "actor": "plaintiff",
+    "source": "/documents/matter-26/Opposition to UPS Consent Motion for Extension of Time to File Reply (Sep 4 2026).pdf"
+  },
+  {
+    "date": "Aug. 24, 2026",
+    "event": "FILED \u2014 Dkt. 5 NOTICE of Decline of Jurisdiction of United States Magistrate Judge by United Parcel Service, Inc., with Dkt. 6 certificate of service, in Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). Full referral requires both sides' consent. Plaintiff's later Sep. 1 consent form cannot create one. Dkt. 4 is a restricted consent/decline entry (Aug. 21 / entered Aug. 24) that judges cannot view unless all parties consent.",
+    "matters": [
+      26
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "opposing",
+    "source": "/documents/matter-26/PACER Docket Report - E.D. Cal. 2-26-cv-02847-DAD-CKD (Sep 4 2026).pdf"
+  },
+  {
+    "date": "Aug. 26, 2026",
+    "event": "SUPERSEDED \u2014 Dkt. 7 MOTION to DISMISS by United Parcel Service, Inc. in Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD), noticed for Oct. 5, 2026, 1:30 p.m., Courtroom 4 (DAD) before Judge Drozd. Clerk marked '[DISREGARD see 9]' on 8/28/2026. Hearing vacated by Dkt. 8. Live motion is Dkt. 9.",
+    "matters": [
+      26
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "opposing",
+    "source": "/documents/matter-26/PACER Docket Report - E.D. Cal. 2-26-cv-02847-DAD-CKD (Sep 4 2026).pdf"
+  },
+  {
+    "date": "Aug. 27, 2026",
+    "event": "FILED \u2014 Dkt. 9 MOTION to DISMISS by United Parcel Service, Inc. in Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). Hearing Oct. 7, 2026, 10:00 a.m., Courtroom 24 (CKD) before Magistrate Judge Carolyn K. Delaney. Attachments: notice, Felsing declaration, proof of service. This is the live motion. Dkt. 7 is marked disregard. Modified on 8/28/2026 (RRB). Paper PDF not yet pulled from PACER.",
+    "matters": [
+      26
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "opposing",
+    "source": "/documents/matter-26/PACER Docket Report - E.D. Cal. 2-26-cv-02847-DAD-CKD (Sep 4 2026).pdf"
+  },
+  {
+    "date": "Oct. 7, 2026",
+    "event": "HEARING \u2014 Defendant UPS's Rule 12(b)(6) Motion to Dismiss (ECF No. 9), Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD), 10:00 a.m., Courtroom 24 (CKD) before Magistrate Judge Carolyn K. Delaney. Delaney civil law-and-motion is Zoom on Wednesdays at 10:00 a.m. Opposition is on file as Dkt. 10 (filed Aug. 28, 2026, to Dkt. 9). Dkt. 11 pending; Plaintiff's opposition to the extension executed Sep. 4. L.R. 230(d) reply stays Sep. 8 until an order.",
+    "matters": [
+      26
+    ],
+    "type": "hearing",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-26/PACER Deadlines-Hearings - E.D. Cal. 2-26-cv-02847-DAD-CKD (Sep 4 2026).pdf"
+  },
+  {
+    "date": "Sep. 4, 2026",
+    "event": "PACER \u2014 Docket report and Deadlines/Hearings print for Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD), pulled Sep. 4, 2026, 3:14 p.m. Assigned Drozd; referred Delaney. Dkt. 5 UPS decline of MJ jurisdiction (Aug. 24). Dkt. 7 marked [DISREGARD see 9]; Oct. 5 Drozd hearing vacated by Dkt. 8. Live MTD is Dkt. 9, hearing Oct. 7, 2026, 10:00 a.m., Courtroom 24 (CKD), Judge Delaney. Dkt. 10 opposes Dkt. 9. Dkt. 11 is the Sep. 4 extension motion. Do not treat the Oct. 5 Drozd setting as live.",
+    "matters": [
+      26
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-26/PACER Docket Report - E.D. Cal. 2-26-cv-02847-DAD-CKD (Sep 4 2026).pdf"
   },
   {
     "date": "Aug. 26, 2026",
@@ -963,7 +1067,7 @@
       26
     ],
     "type": "hearing",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "you"
   },
   {
@@ -4459,7 +4563,7 @@
       26
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "you"
   },
   {

@@ -169,6 +169,16 @@
       "source": "/cand-strike-packet/",
       "destination": "/cand-strike-packet.pdf",
       "permanent": false
+    },
+    {
+      "source": "/ups-ext-opp",
+      "destination": "/ups-ext-opp.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/ups-ext-opp/",
+      "destination": "/ups-ext-opp.pdf",
+      "permanent": false
     }
   ],
   "headers": [
@@ -322,6 +332,15 @@
         {
           "key": "Content-Disposition",
           "value": "attachment; filename=\"Plaintiff Motion to Strike Answer Packet with Proposed Order (N.D. Cal. 3-26-cv-08272-LJC) (Sep 5 2026).pdf\"; filename*=UTF-8''Plaintiff%20Motion%20to%20Strike%20Answer%20Packet%20with%20Proposed%20Order%20%28N.D.%20Cal.%203-26-cv-08272-LJC%29%20%28Sep%205%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/ups-ext-opp.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Opposition to UPS Consent Motion for Extension of Time to File Reply (Sep 4 2026).pdf\"; filename*=UTF-8''Opposition%20to%20UPS%20Consent%20Motion%20for%20Extension%20of%20Time%20to%20File%20Reply%20%28Sep%204%202026%29.pdf"
         }
       ]
     }
