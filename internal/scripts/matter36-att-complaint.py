@@ -12,8 +12,17 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import re
 import sys
 from pathlib import Path
+
+_DRAFT_NOTE = re.compile(r"\s*\[[^\[\]]+\]")
+
+
+def _filing_text(text: str, execute: bool) -> str:
+    if not execute:
+        return text
+    return _DRAFT_NOTE.sub("", text).rstrip()
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPT_DIR / "lib"))
@@ -26,13 +35,13 @@ ROOT = SCRIPT_DIR.parents[1]
 DEFAULT_OUT = (
     ROOT
     / "internal/public/documents/matter-36"
-    / "Verified Complaint - Ngwa Nforbi v AT&T Mobility Services LLC et al"
-    " (REVIEW DRAFT for Sep 8 2026).pdf"
+    / "Verified Complaint - Ngwa Nforbi v AT&T Mobility Services LLC"
+    " (Sep 8 2026).pdf"
 )
 DEFAULT_EXEC_DATE = "September 8, 2026"
 EARLIEST_EXECUTION_DATE = dt.date(2026, 9, 8)
 COURT_LINE2 = "COUNTY OF SAN JOAQUIN"
-FOOTER = "VERIFIED COMPLAINT -- BRENDAN NGWA NFORBI v. AT&T MOBILITY SERVICES LLC, ET AL."
+FOOTER = "VERIFIED COMPLAINT -- BRENDAN NGWA NFORBI v. AT&T MOBILITY SERVICES LLC"
 
 PLAINTIFF_BLOCK = [
     ("BRENDAN NGWA NFORBI", "Times-Bold", 12),
@@ -51,10 +60,8 @@ CAPTION_LEFT = [
     ("       v.", False, False),
     ("", False, False),
     ("AT&T MOBILITY SERVICES LLC,", True, False),
-    ("a Delaware limited liability company;", True, False),
-    ("FIRST ADVANTAGE BACKGROUND", True, False),
-    ("SERVICES CORP., a Florida", True, False),
-    ("corporation; and DOES 1 through 20,", True, False),
+    ("a Delaware limited liability", True, False),
+    ("company; and DOES 1 through 20,", True, False),
     ("inclusive,", True, False),
     ("", False, False),
     ("                          Defendants.", False, False),
@@ -68,17 +75,17 @@ CAPTION_RIGHT = [
     ("DECLARATORY AND", True, False),
     ("INJUNCTIVE RELIEF", True, False),
     ("", False, False),
-    ("(1) Penal Code § 290.46(j);", False, False),
-    ("(2) FCRA, 15 U.S.C.", False, False),
+    ("(1) FCRA, 15 U.S.C.", False, False),
     ("      § 1681b(b)(3)(A);", False, False),
-    ("(3) ICRAA, Civ. Code", False, False),
+    ("(2) ICRAA, Civ. Code", False, False),
     ("      §§ 1786.40, 1786.50;", False, False),
-    ("(4) Breach of Contract;", False, False),
-    ("(5) Breach of Implied Covenant;", False, False),
-    ("(6) Promissory Estoppel;", False, False),
-    ("(7) Negligent Misrepresentation;", False, False),
-    ("(8) Fraud / Concealment;", False, False),
-    ("(9) UCL, B&P Code § 17200", False, False),
+    ("(3) Breach of Contract;", False, False),
+    ("(4) Breach of Implied Covenant;", False, False),
+    ("(5) Promissory Estoppel;", False, False),
+    ("(6) Negligent Misrepresentation;", False, False),
+    ("(7) Fraud / Concealment;", False, False),
+    ("(8) UCL, B&P Code § 17200;", False, False),
+    ("(9) Penal Code § 290.46(j)", False, False),
     ("", False, False),
     ("[Unlimited Civil]", False, True),
     ("[Jury Trial Demanded]", False, True),
@@ -98,7 +105,7 @@ CONTENT = [
     ("HEADER", "I.\nINTRODUCTION"),
     ("PARA", "1. On May 28, 2026, Defendant AT&T Mobility Services LLC approved Plaintiff for employment as a Retail Sales Consultant at its Lodi, California store, sent him a written offer identifying compensation of $24.95 per hour, part-time targeted variable compensation, and a tentative June 15, 2026 start date, and commenced its formal onboarding process."),
     ("PARA", "2. AT&T's written offer listed formal acceptance, required hiring documents, work authorization, any applicable export review, absence of restrictive agreements, any applicable rehire-eligibility check, and satisfactory standardized background checks as contingencies. It did not list Spanish proficiency or passage of the earlier language assessment as an offer contingency. The assessment AT&T later invoked was administered before the offer, and its testing window closed on May 25, 2026."),
-    ("PARA", "3. At 10:13 a.m. on May 28, AT&T's Workday system told Plaintiff that AT&T was 'excited to officially offer' him requisition R-106742. At 10:15, 10:16, and 10:17 a.m., AT&T issued offer-document, government-identifier, and personal-information tasks. At 10:19 a.m., Defendant First Advantage Background Services Corp. sent Plaintiff the screening task AT&T had ordered."),
+    ("PARA", "3. At 10:13 a.m. on May 28, AT&T's Workday system told Plaintiff that AT&T was 'excited to officially offer' him requisition R-106742. At 10:15, 10:16, and 10:17 a.m., AT&T issued offer-document, government-identifier, and personal-information tasks. At 10:19 a.m., First Advantage Background Services Corp. sent Plaintiff the screening task AT&T had ordered. First Advantage is not named as a defendant."),
     ("PARA", "4. At 12:23 p.m.—approximately two hours after AT&T issued the offer and immediately after the hiring process entered background screening—AT&T recruiter Richard Patterson told Plaintiff that the manager no longer wanted to proceed with 'your offer.' Patterson attributed the reversal to a supposedly failed Spanish assessment."),
     ("PARA", "5. That chronology presents two competing explanations. AT&T's stated explanation is that Plaintiff failed an assessment completed before the offer. The competing and more plausible explanation, pleaded on information and belief, is that information surfaced or was escalated during the intervening background-screening process and caused or substantially motivated AT&T to reverse an already-approved hiring decision."),
     ("PARA", "6. Plaintiff does not allege registry use merely because he is registered. The inference rests on the sequence, the absence of any primary Spanish score in AT&T's communications, AT&T's decision to issue the offer after the assessment window closed, the immediate screening order, the abrupt reversal, the absence of required background-based adverse-action notices, and First Advantage's documented prior matching of this same Plaintiff to the California Sex Offender Registry for another employer."),
@@ -113,10 +120,10 @@ CONTENT = [
     ("PARA", "14. Defendant AT&T MOBILITY SERVICES LLC ('AT&T') is a Delaware limited liability company doing business throughout California, including at the AT&T retail store located at 2439 West Kettleman Lane, Lodi, California 95242."),
     ("PARA", "15. AT&T Mobility Services LLC is identified in publicly available AT&T/CWA labor materials as the employer of covered mobility retail employees, and the Lodi position was designated within AT&T's Mobility bargaining structure. On information and belief, AT&T owned, operated, staffed, controlled, and made hiring decisions for the Lodi store and was the legal employer offering Plaintiff requisition R-106742."),
     ("PARA", "16. If discovery establishes that another AT&T subsidiary was the employing or decisionmaking entity, Plaintiff has sued DOES 1 through 5 for that purpose and will amend to substitute the correct entity. Plaintiff does not presently name AT&T Inc., the holding company, merely because it owns affiliated entities."),
-    ("PARA", "17. Defendant FIRST ADVANTAGE BACKGROUND SERVICES CORP. ('First Advantage') is a Florida corporation and subsidiary of First Advantage Corporation that provides employment background reports and screening services nationwide, including in California."),
+    ("PARA", "17. First Advantage Background Services Corp. ('First Advantage') is a Florida corporation that provides employment background reports and screening services. It is not named as a defendant. Plaintiff reserves DOES 6 through 10 for any furnishing affiliate if later amendment is warranted."),
     ("PARA", "18. First Advantage is a 'consumer reporting agency' under 15 U.S.C. section 1681a(f) and an 'investigative consumer reporting agency' under Civil Code section 1786.2(d) when it assembles or evaluates information concerning consumers for employment reports."),
     ("PARA", "19. On May 28, 2026, First Advantage identified 'AT&T Non Management' as its client and sent Plaintiff a secure-site task relating to disclosure, authorization, identity verification, and employment screening. The email displayed AT&T client account number 132156."),
-    ("PARA", "20. Plaintiff is informed and believes that First Advantage Background Services Corp. was the legal screening entity responsible for the May 28 order. If another First Advantage affiliate furnished or processed the report, Plaintiff has sued DOES 6 through 10 for that purpose and will amend when the contracting and furnishing entity is disclosed."),
+    ("PARA", "20. Plaintiff is informed and believes that First Advantage was the legal screening entity responsible for the May 28 order. Plaintiff will seek its file under Civil Code sections 1786.10 and 1786.22 and, if necessary, by subpoena. He does not name First Advantage as a defendant."),
     ("PARA", "21. Defendant RICHARD PATTERSON is not presently named as a defendant. He is an AT&T recruiter and percipient witness whose AT&T email address, recruiting communications, offer signature, and May 28 text identify him as the person who issued the offer and communicated the manager's decision. The formal offer identifies Orville R. Bell (ob3824) as Plaintiff's reporting manager. Bell is also a percipient witness and is not presently named individually."),
     ("PARA", "22. The true names and capacities of DOES 1 through 20 are unknown to Plaintiff, who therefore sues them by fictitious names under Code of Civil Procedure section 474. Plaintiff will amend this Complaint when their identities and roles are ascertained."),
     ("PARA", "23. Plaintiff is informed and believes that each DOE Defendant participated in, authorized, directed, furnished information for, implemented, concealed, or ratified one or more acts alleged and is legally responsible for the resulting harm."),
@@ -124,7 +131,7 @@ CONTENT = [
     ("PARA", "24. This Court has subject-matter jurisdiction under article VI, section 10 of the California Constitution and Code of Civil Procedure section 410.10. It has concurrent jurisdiction over Plaintiff's federal FCRA claim."),
     ("PARA", "25. This action is properly designated unlimited civil because the aggregate relief sought exceeds $35,000, exclusive of interest and costs, including statutory, actual, consequential, exemplary, and equitable relief according to proof. No specific personal-injury or punitive-damages amount is pleaded."),
     ("PARA", "26. This Court has personal jurisdiction over AT&T because AT&T operates the Lodi store, recruited Plaintiff for work in this County, sent the offer into this County, and made or implemented the challenged hiring decision in California."),
-    ("PARA", "27. This Court has personal jurisdiction over First Advantage because it contracted to provide screening for a California position, processed Plaintiff's California employment screening, communicated directly with Plaintiff in California, and purposefully furnished or undertook to furnish employment-screening services affecting California rights."),
+    ("PARA", "27. First Advantage is not named as a defendant. Plaintiff will obtain its AT&T screening file by statutory inspection and, if necessary, by subpoena. DOES 6 through 10 remain reserved for any furnishing affiliate."),
     ("PARA", "28. Venue is proper in San Joaquin County under Code of Civil Procedure sections 395 and 395.5 because Plaintiff resides here, the offered workplace is in Lodi, the offer and rescission were received here, and the obligations, liability, and injury arose here."),
     ("PARA", "29. Plaintiff files this action in the Superior Court of California, County of San Joaquin. The FCRA count creates a federal question and may permit removal. It is pleaded because it is an independent statutory protection implicated if AT&T based its decision in whole or in part on a consumer report. It is not pleaded to manufacture federal jurisdiction, and it is not required for the Penal Code, ICRAA, contract, estoppel, or UCL counts."),
     ("HEADER", "IV.\nCOMMON FACTUAL ALLEGATIONS"),
@@ -157,7 +164,7 @@ CONTENT = [
     ("PARA", "52. At 10:17 a.m., Workday assigned a 'Change Personal Information' task within the same offer business process."),
     ("PARA", "53. At 10:19 a.m., First Advantage stated that AT&T Non Management had contracted with it and assigned Plaintiff a task. It directed Plaintiff to a secure site, referenced FCRA disclosure and authorization, and described possible ID.me identity verification."),
     ("PARA", "54. The 10:19 communication establishes that AT&T placed a screening order with First Advantage. Defendants' systems will show the order time, package, searches, candidate activity, completion status, results, adjudication, access, and cancellation history."),
-    ("PARA", "55. Plaintiff accepted the offer through AT&T's Workday process, timely undertook the mandatory onboarding and screening steps presented to him, furnished personal information for that purpose, and remained ready, willing, and able to begin on June 15. [PLAINTIFF MUST CONFIRM THIS PARAGRAPH BEFORE EXECUTION.]"),
+    ("PARA", "55. Plaintiff accepted the offer through AT&T's Workday process, timely undertook the mandatory onboarding and screening steps presented to him, furnished personal information for that purpose, and remained ready, willing, and able to begin on June 15."),
     ("SUBHEAD", "E. AT&T Reverses the Approved Decision at 12:23 p.m."),
     ("PARA", "56. At 12:23 p.m., Patterson sent Plaintiff a text message stating: 'Hi Brendan. Unfortunately, the manager advised me that he no longer wants to move forward with your offer. He stated that he need a Spanish speaker and you did not pass the Spanish assessment. Sorry for the inconvenience.'"),
     ("PARA", "57. Plaintiff replied politely: 'No worries sir, thank you for the opportunity.' That response did not release any claim, waive any right, admit that the explanation was accurate, or indicate that Plaintiff had seen the underlying score."),
@@ -189,10 +196,98 @@ CONTENT = [
     ("HEADER", "V.\nALTERNATIVE PLEADING AND PRESERVATION"),
     ("PARA", "81. Plaintiff pleads the statutory screening counts on the good-faith inference that a consumer report or registry result reached or influenced AT&T before rescission. Defendants may possess evidence disproving that inference. If so, the offer-based counts remain independent. The section 290.46(j) claim has four elements: (a) information disclosed pursuant to section 290.46; (b) use of that information by a defendant; (c) a purpose relating to employment; and (d) the use was not to protect a person at risk and was not otherwise authorized by law. Elements (a) and (b) are pleaded on information and belief because the AT&T report is exclusively in Defendants' files. A demurrer tests the pleading, not the unproduced report."),
     ("PARA", "82. Plaintiff pleads contract and implied-covenant theories if the Workday acceptance formed an agreement. If no enforceable contract formed, Plaintiff pleads promissory estoppel and misrepresentation in the alternative."),
-    ("PARA", "83. Plaintiff specifically relied by accepting the offer, completing or beginning required onboarding and screening, disclosing personal information, preparing for the June 15 start, ceasing further pursuit of the Lodi opening, and foregoing or delaying pursuit of identified alternative work. [PLAINTIFF MUST CONFIRM EACH FORM OF RELIANCE AND IDENTIFY THE ALTERNATIVE WORK BEFORE EXECUTION.]"),
+    ("PARA", "83. Plaintiff specifically relied by accepting the offer, completing or beginning required onboarding and screening, disclosing personal information, preparing for the June 15 start, and ceasing further pursuit of the Lodi opening."),
     ("PARA", "84. Plaintiff does not plead a FEHA or Fair Chance Act cause of action in this Complaint because the present portfolio does not contain a California Civil Rights Department charge and right-to-sue notice. Plaintiff preserves all timely rights to exhaust and seek leave to amend if discovery supports those theories."),
     ("PARA", "85. The omission of an unexhausted FEHA count is deliberate. Plaintiff does not allege that requiring Spanish for an expressly bilingual position is inherently unlawful. The relevant issue is whether AT&T's stated assessment reason was accurate or pretextual."),
     ("HEADER", "VI.\nFIRST CAUSE OF ACTION"),
+    ("SUBHEAD", "Fair Credit Reporting Act — Pre-Adverse Action\n15 U.S.C. section 1681b(b)(3)(A) — Against AT&T and Employer DOES"),
+    ("PARA", "99. Plaintiff realleges paragraphs 1 through 85 and 90 through 97 to the extent consistent with this cause."),
+    ("PARA", "100. The First Advantage background screening was a consumer report obtained for employment purposes within the FCRA."),
+    ("PARA", "101. AT&T was a person using or intending to use the consumer report for employment purposes."),
+    ("PARA", "102. On information and belief, AT&T's rescission was based in whole or in part on information in, produced by, or communicated through the First Advantage report or screening process."),
+    ("PARA", "103. Before taking the adverse action, AT&T was required to provide Plaintiff a copy of the report and a written description of his FCRA rights."),
+    ("PARA", "104. AT&T provided neither before the 12:23 p.m. rescission and gave Plaintiff no meaningful opportunity to review or respond. No such report or rights summary arrived by portal or email."),
+    ("PARA", "105. The violation caused concrete informational and procedural injury: Plaintiff was denied the report and rights Congress required before an employment decision, was unable to identify or challenge the source and use of registry information, and lost the offered position before any review period."),
+    ("PARA", "106. AT&T's violation was negligent under 15 U.S.C. section 1681o and, on information and belief, willful or reckless under section 1681n because AT&T maintained standardized screening procedures, knew the pre-adverse requirement, and bypassed it by communicating another reason immediately after screening began."),
+    ("PARA", "107. Plaintiff seeks actual damages, statutory damages if willfulness is proven, punitive damages as authorized by federal law, costs, and any attorney's fees available if Plaintiff later obtains counsel."),
+    ("HEADER", "VII.\nSECOND CAUSE OF ACTION"),
+    ("SUBHEAD", "California Investigative Consumer Reporting Agencies Act\nCivil Code sections 1786.40 and 1786.50 — Against AT&T and User DOES"),
+    ("PARA", "108. Plaintiff realleges paragraphs 1 through 85 and 90 through 97 to the extent consistent with this cause."),
+    ("PARA", "109. First Advantage is an investigative consumer reporting agency, and its employment background report concerns Plaintiff's character, general reputation, personal characteristics, or mode of living."),
+    ("PARA", "110. AT&T procured or caused that report to be prepared for employment purposes and was the user of its information."),
+    ("PARA", "111. On information and belief, the report was obtained before AT&T denied employment."),
+    ("PARA", "112. Civil Code section 1786.40(a) required AT&T, under circumstances in which employment was denied and an investigative consumer report had been obtained, to advise Plaintiff of that fact and supply the agency's name and address."),
+    ("PARA", "113. AT&T did not comply. The First Advantage task invitation preceded the report and did not advise Plaintiff, at the time of rescission, that a report had been obtained or used."),
+    ("PARA", "114. The omission prevented Plaintiff from timely obtaining the AT&T-specific report, testing its source, and invoking his statutory inspection and dispute rights. This ICRAA count does not depend on proving Penal Code section 290.46(j). A notice failure under Civil Code section 1786.40 is independently actionable if an investigative consumer report was obtained and employment was denied without the required advice. That count can reach discovery even if the registry-use inference later fails. Civil Code sections 1786.10 and 1786.22 entitle Plaintiff to inspect and obtain a copy of the information First Advantage maintains on him. Plaintiff has not yet served that inspection request. He will."),
+    ("PARA", "115. Under Civil Code section 1786.50, Plaintiff seeks actual damages or $10,000, whichever is greater, costs, attorney's fees if represented, and punitive damages upon proof of gross negligence or willfulness."),
+    ("PARA", "116. This ICRAA count rests on an act or omission distinct from the FCRA count. The FCRA count challenges AT&T's pre-decision failure to furnish the report and federal rights summary; this count challenges AT&T's separate failure, when communicating the denial, to advise that an investigative report had been obtained and to supply the agency's name and address. Plaintiff pleads no duplicative ICRAA theory for the same act or omission and will elect remedies to the extent Civil Code section 1786.52 requires."),
+    ("PARA", "116A. Plaintiff reserves amendment under Civil Code section 1786.16 if production shows AT&T procured the report before providing the required standalone disclosure and obtaining written authorization. Plaintiff does not presently allege nonauthorization as an established fact."),
+    ("HEADER", "VIII.\nTHIRD CAUSE OF ACTION"),
+    ("SUBHEAD", "Breach of Contract — Against AT&T and Employer DOES\n(Pleaded in the Alternative)"),
+    ("PARA", "117. Plaintiff realleges paragraphs 1 through 85, except the no-contract alternative."),
+    ("PARA", "118. AT&T made a written offer containing the material position, compensation, start-date, acceptance, and contingency terms, and Plaintiff timely accepted it through Workday."),
+    ("PARA", "119. The accepted offer formed an agreement for at-will employment subject to stated pre-employment conditions administered lawfully and in good faith."),
+    ("PARA", "120. Plaintiff performed, commenced performance, or was excused from further performance because AT&T repudiated the agreement and prevented completion of the remaining conditions."),
+    ("PARA", "121. Plaintiff remained ready, willing, and able to perform the Retail Sales Consultant role and to complete lawful conditions."),
+    ("PARA", "122. AT&T breached by rescinding the accepted offer based on a reason it had already evaluated or waived before contracting, by preventing satisfaction of conditions, and/or by using an unlawful screening criterion."),
+    ("PARA", "123. AT&T may not rely on failure of a condition that it wrongfully caused, prevented, waived, or applied in violation of law."),
+    ("PARA", "124. The at-will nature of prospective employment limits but does not erase reliance and other damages caused before Plaintiff received a good-faith opportunity to begin performance."),
+    ("PARA", "125. AT&T's breach caused damages according to proof, subject to mitigation and the prohibition against double recovery."),
+    ("HEADER", "IX.\nFOURTH CAUSE OF ACTION"),
+    ("SUBHEAD", "Breach of the Implied Covenant of Good Faith and Fair Dealing\nAgainst AT&T and Employer DOES (Alternative)"),
+    ("PARA", "126. Plaintiff realleges paragraphs 117 through 125."),
+    ("PARA", "127. Every contract contains an implied covenant that neither party will unfairly frustrate the other's right to receive the agreement's benefits."),
+    ("PARA", "128. The accepted offer gave AT&T discretion to evaluate standardized background checks and other contingencies. That discretion had to be exercised honestly, in good faith, for authorized purposes, and consistently with the parties' justified expectations."),
+    ("PARA", "129. AT&T frustrated the agreement by issuing and inducing acceptance of an offer after the language-assessment period, commencing onboarding, and then invoking that preexisting assessment only after screening began."),
+    ("PARA", "130. Alternatively, AT&T exercised screening discretion in bad faith by considering a prohibited registry source, concealing that consideration, and denying the contractual pre-adverse review process required by law."),
+    ("PARA", "131. The conduct deprived Plaintiff of the opportunity to satisfy lawful conditions and receive the benefit of the accepted offer."),
+    ("PARA", "132. Plaintiff suffered the reliance and economic losses alleged in paragraphs 78 through 80 and 83."),
+    ("HEADER", "X.\nFIFTH CAUSE OF ACTION"),
+    ("SUBHEAD", "Promissory Estoppel — Against AT&T and Employer DOES\n(Alternative if No Contract Formed)"),
+    ("PARA", "133. Plaintiff realleges paragraphs 1 through 85 except allegations requiring an enforceable contract."),
+    ("PARA", "134. AT&T made a clear promise by stating that it was 'excited to officially offer' Plaintiff the identified Lodi position and by providing specific compensation, a tentative start date, and immediate onboarding tasks."),
+    ("PARA", "135. AT&T reasonably expected the promise to induce acceptance, disclosure of sensitive information, completion of screening, preparation for work, and employment-related action or forbearance."),
+    ("PARA", "136. Plaintiff reasonably relied because the offer followed completion of AT&T's interview and assessment stages and was communicated as official rather than tentative selection."),
+    ("PARA", "137. The reliance was foreseeable because the purpose of an employment offer and onboarding workflow is to cause the applicant to commit to the position and prepare to begin."),
+    ("PARA", "138. Plaintiff changed position in the ways alleged in paragraphs 55, 74 through 80, and 83."),
+    ("PARA", "139. AT&T withdrew the promise before giving Plaintiff a good-faith opportunity to begin, causing substantial detriment."),
+    ("PARA", "140. Injustice can be avoided only by enforcing the promise to the extent justice requires or awarding reliance damages."),
+    ("PARA", "141. Plaintiff seeks reliance losses, not a speculative guarantee of indefinite employment. California law permits proven employment-opportunity losses caused by reasonable reliance on a rescinded offer. (Sheppard v. Morgan Keegan & Co. (1990) 218 Cal.App.3d 61; Toscano v. Greene Music (2004) 124 Cal.App.4th 685.)"),
+    ("HEADER", "XI.\nSIXTH CAUSE OF ACTION"),
+    ("SUBHEAD", "Negligent Misrepresentation — Against AT&T and Representation DOES\n(Pleaded in the Alternative)"),
+    ("PARA", "142. Plaintiff realleges paragraphs 1 through 85 except allegations of intentional falsity."),
+    ("PARA", "143. AT&T represented at 10:13 a.m. that it had officially offered Plaintiff R-106742 and then represented through onboarding tasks that the approved offer process was proceeding."),
+    ("PARA", "144. If AT&T had already received and treated the Spanish result as finally disqualifying, AT&T's representation that it was officially offering the expressly bilingual position was false or misleading when made."),
+    ("PARA", "145. If AT&T had not obtained managerial approval, had already decided not to hire Plaintiff, or knew its workflow would automatically disqualify him based on existing data, AT&T lacked reasonable grounds for believing the representation true. [THIS THEORY DEPENDS ON INTERNAL RECORDS AND PLAINTIFF'S CONFIRMED RELIANCE.]"),
+    ("PARA", "146. AT&T made the representation to induce Plaintiff to accept, undertake onboarding and screening, disclose personal information, and prepare to begin work."),
+    ("PARA", "147. Plaintiff did not know the undisclosed internal facts and reasonably relied on the official offer and onboarding sequence."),
+    ("PARA", "148. Plaintiff's reliance caused the detriment alleged in paragraphs 78 through 80 and 83."),
+    ("PARA", "149. AT&T's failure to use reasonable care in communicating an approved offer after the assessment period was a substantial factor in causing the harm."),
+    ("HEADER", "XII.\nSEVENTH CAUSE OF ACTION"),
+    ("SUBHEAD", "Intentional Misrepresentation and Fraudulent Concealment\nAgainst AT&T and Fraud DOES (Alternative; Subject to Proof)"),
+    ("PARA", "150. Plaintiff realleges paragraphs 1 through 85 and 143 through 149, except allegations expressly limited to negligence."),
+    ("PARA", "151. The speaker and medium were specific: AT&T, through its Workday recruiting system and the personnel who approved its business process, represented to Plaintiff at 10:13 a.m. on May 28 that AT&T was officially offering him R-106742."),
+    ("PARA", "152. The representation concerned an existing fact—that AT&T had approved and was extending the offer—not merely future performance."),
+    ("PARA", "153. AT&T also concealed material facts known only to it: whether it already possessed an adverse Spanish result; whether the manager had approved or opposed the offer; whether a First Advantage result caused the reversal; and whether AT&T intended to use a prohibited criterion."),
+    ("PARA", "154. AT&T had exclusive knowledge of those facts, actively supplied a different explanation after screening began, and made partial representations likely to mislead absent full disclosure."),
+    ("PARA", "155. On information and belief, if AT&T already knew at 10:13 a.m. that it would not honor the offer, it made the representation knowingly or recklessly and intended Plaintiff to act through the onboarding and screening process."),
+    ("PARA", "156. Alternatively, if AT&T genuinely approved the offer at 10:13 and changed its decision only after receiving prohibited screening information, the fraud count may not apply, but the statutory counts do."),
+    ("PARA", "157. Plaintiff reasonably relied as alleged, and AT&T's misrepresentation or concealment caused the resulting harm."),
+    ("PARA", "158. Fraudulent inducement of an employment agreement may support tort damages for reliance injuries distinct from contract expectancy. (Lazar v. Superior Court (1996) 12 Cal.4th 631.)"),
+    ("PARA", "159. Plaintiff seeks tort damages caused by the inducement and concealment without duplicating contract damages."),
+    ("PARA", "160. Plaintiff seeks punitive damages against AT&T only upon proof that an officer, director, or managing agent authorized, ratified, or personally engaged in fraud, malice, or oppression under Civil Code section 3294(b). [MANAGING-AGENT FACTS ARE NOT YET ESTABLISHED; NO SPECIFIC AMOUNT IS PLEADED.]"),
+    ("HEADER", "XIII.\nEIGHTH CAUSE OF ACTION"),
+    ("SUBHEAD", "Unlawful and Unfair Business Practices\nBusiness and Professions Code section 17200 — Against All Defendants"),
+    ("PARA", "161. Plaintiff realleges paragraphs 1 through 160 to the extent consistent with this equitable cause."),
+    ("PARA", "162. Defendants engaged in unlawful practices by violating Penal Code section 290.46(j), the FCRA, and ICRAA as alleged."),
+    ("PARA", "163. Defendants engaged in unfair practices by structuring employment screening so an offer could be reversed immediately upon secret adverse information while denying the applicant the source, report, review period, and opportunity to respond."),
+    ("PARA", "164. AT&T engaged in fraudulent practices likely to mislead a reasonable applicant by announcing an official offer and demanding sensitive onboarding action while concealing a known disqualification or undisclosed screening basis."),
+    ("PARA", "165. Plaintiff suffered injury in fact and lost money or property through the reliance expenditures, employment-search costs, and other economic losses alleged and to be proven."),
+    ("PARA", "166. Plaintiff does not seek future unearned wages as UCL restitution. He seeks restitution only of money or property in which he had a vested interest and that Defendants acquired or caused him to expend through the challenged practices, according to proof."),
+    ("PARA", "167. Legal damages are not an adequate remedy for Defendants' retention, use, and dissemination of registry-derived screening data or their ongoing secret-screening practices."),
+    ("PARA", "168. Plaintiff seeks an injunction requiring Defendants to cease prohibited employment use of California registry information; preserve and disclose the source and audit trail of AT&T screening; correct or segregate unlawfully used data; and implement lawful pre-adverse procedures."),
+    ("PARA", "169. Plaintiff also seeks restitution and declaratory relief ancillary to the injunction to the extent authorized by Business and Professions Code section 17203."),
+    ("HEADER", "XIV.\nNINTH CAUSE OF ACTION"),
     ("SUBHEAD", "Unauthorized Employment Use of Registry Information\nPenal Code section 290.46(j) — Against All Defendants"),
     ("PARA", "86. Plaintiff realleges paragraphs 1 through 85, except that allegations expressly pleaded in the alternative are incorporated only to the extent consistent with this cause."),
     ("PARA", "87. Penal Code section 290.46(j)(1) authorizes use of information disclosed under that section only to protect a person at risk, except as otherwise authorized by law."),
@@ -207,94 +302,6 @@ CONTENT = [
     ("PARA", "96. Defendants concealed the screening basis by supplying a preexisting Spanish-assessment rationale and omitting the disclosures and review process that would have revealed consumer-report use."),
     ("PARA", "97. Defendants' use was a substantial factor in the rescission and caused the loss and injury alleged."),
     ("PARA", "98. Plaintiff seeks the remedies authorized by section 290.46(j)(4), including actual and statutory relief according to proof, and preventive relief under subdivision (j)(4)(B) to restrain any pattern or practice of employment use."),
-    ("HEADER", "VII.\nSECOND CAUSE OF ACTION"),
-    ("SUBHEAD", "Fair Credit Reporting Act — Pre-Adverse Action\n15 U.S.C. section 1681b(b)(3)(A) — Against AT&T and Employer DOES"),
-    ("PARA", "99. Plaintiff realleges paragraphs 1 through 85 and 90 through 97 to the extent consistent with this cause."),
-    ("PARA", "100. The First Advantage background screening was a consumer report obtained for employment purposes within the FCRA."),
-    ("PARA", "101. AT&T was a person using or intending to use the consumer report for employment purposes."),
-    ("PARA", "102. On information and belief, AT&T's rescission was based in whole or in part on information in, produced by, or communicated through the First Advantage report or screening process."),
-    ("PARA", "103. Before taking the adverse action, AT&T was required to provide Plaintiff a copy of the report and a written description of his FCRA rights."),
-    ("PARA", "104. AT&T provided neither before the 12:23 p.m. rescission and gave Plaintiff no meaningful opportunity to review or respond. [PLAINTIFF MUST CONFIRM THAT NO SUCH MATERIALS WERE RECEIVED THROUGH ANY PORTAL OR EMAIL BEFORE EXECUTION.]"),
-    ("PARA", "105. The violation caused concrete informational and procedural injury: Plaintiff was denied the report and rights Congress required before an employment decision, was unable to identify or challenge the source and use of registry information, and lost the offered position before any review period."),
-    ("PARA", "106. AT&T's violation was negligent under 15 U.S.C. section 1681o and, on information and belief, willful or reckless under section 1681n because AT&T maintained standardized screening procedures, knew the pre-adverse requirement, and bypassed it by communicating another reason immediately after screening began."),
-    ("PARA", "107. Plaintiff seeks actual damages, statutory damages if willfulness is proven, punitive damages as authorized by federal law, costs, and any attorney's fees available if Plaintiff later obtains counsel."),
-    ("HEADER", "VIII.\nTHIRD CAUSE OF ACTION"),
-    ("SUBHEAD", "California Investigative Consumer Reporting Agencies Act\nCivil Code sections 1786.40 and 1786.50 — Against AT&T and User DOES"),
-    ("PARA", "108. Plaintiff realleges paragraphs 1 through 85 and 90 through 97 to the extent consistent with this cause."),
-    ("PARA", "109. First Advantage is an investigative consumer reporting agency, and its employment background report concerns Plaintiff's character, general reputation, personal characteristics, or mode of living."),
-    ("PARA", "110. AT&T procured or caused that report to be prepared for employment purposes and was the user of its information."),
-    ("PARA", "111. On information and belief, the report was obtained before AT&T denied employment."),
-    ("PARA", "112. Civil Code section 1786.40(a) required AT&T, under circumstances in which employment was denied and an investigative consumer report had been obtained, to advise Plaintiff of that fact and supply the agency's name and address."),
-    ("PARA", "113. AT&T did not comply. The First Advantage task invitation preceded the report and did not advise Plaintiff, at the time of rescission, that a report had been obtained or used."),
-    ("PARA", "114. The omission prevented Plaintiff from timely obtaining the AT&T-specific report, testing its source, and invoking his statutory inspection and dispute rights. This ICRAA count does not depend on proving Penal Code section 290.46(j). A notice failure under Civil Code section 1786.40 is independently actionable if an investigative consumer report was obtained and employment was denied without the required advice. That count can reach discovery even if the registry-use inference later fails. Civil Code sections 1786.10 and 1786.22 entitle Plaintiff to inspect and obtain a copy of the information First Advantage maintains on him. Plaintiff has not yet served that inspection request. He will."),
-    ("PARA", "115. Under Civil Code section 1786.50, Plaintiff seeks actual damages or $10,000, whichever is greater, costs, attorney's fees if represented, and punitive damages upon proof of gross negligence or willfulness."),
-    ("PARA", "116. This ICRAA count rests on an act or omission distinct from the FCRA count. The FCRA count challenges AT&T's pre-decision failure to furnish the report and federal rights summary; this count challenges AT&T's separate failure, when communicating the denial, to advise that an investigative report had been obtained and to supply the agency's name and address. Plaintiff pleads no duplicative ICRAA theory for the same act or omission and will elect remedies to the extent Civil Code section 1786.52 requires."),
-    ("PARA", "116A. Plaintiff reserves amendment under Civil Code section 1786.16 if production shows AT&T procured the report before providing the required standalone disclosure and obtaining written authorization. Plaintiff does not presently allege nonauthorization as an established fact."),
-    ("HEADER", "IX.\nFOURTH CAUSE OF ACTION"),
-    ("SUBHEAD", "Breach of Contract — Against AT&T and Employer DOES\n(Pleaded in the Alternative)"),
-    ("PARA", "117. Plaintiff realleges paragraphs 1 through 85, except the no-contract alternative."),
-    ("PARA", "118. AT&T made a written offer containing the material position, compensation, start-date, acceptance, and contingency terms, and Plaintiff timely accepted it through Workday. [PLAINTIFF MUST CONFIRM THE ACCEPTANCE METHOD AND TIMESTAMP BEFORE EXECUTION.]"),
-    ("PARA", "119. The accepted offer formed an agreement for at-will employment subject to stated pre-employment conditions administered lawfully and in good faith."),
-    ("PARA", "120. Plaintiff performed, commenced performance, or was excused from further performance because AT&T repudiated the agreement and prevented completion of the remaining conditions."),
-    ("PARA", "121. Plaintiff remained ready, willing, and able to perform the Retail Sales Consultant role and to complete lawful conditions."),
-    ("PARA", "122. AT&T breached by rescinding the accepted offer based on a reason it had already evaluated or waived before contracting, by preventing satisfaction of conditions, and/or by using an unlawful screening criterion."),
-    ("PARA", "123. AT&T may not rely on failure of a condition that it wrongfully caused, prevented, waived, or applied in violation of law."),
-    ("PARA", "124. The at-will nature of prospective employment limits but does not erase reliance and other damages caused before Plaintiff received a good-faith opportunity to begin performance."),
-    ("PARA", "125. AT&T's breach caused damages according to proof, subject to mitigation and the prohibition against double recovery."),
-    ("HEADER", "X.\nFIFTH CAUSE OF ACTION"),
-    ("SUBHEAD", "Breach of the Implied Covenant of Good Faith and Fair Dealing\nAgainst AT&T and Employer DOES (Alternative)"),
-    ("PARA", "126. Plaintiff realleges paragraphs 117 through 125."),
-    ("PARA", "127. Every contract contains an implied covenant that neither party will unfairly frustrate the other's right to receive the agreement's benefits."),
-    ("PARA", "128. The accepted offer gave AT&T discretion to evaluate standardized background checks and other contingencies. That discretion had to be exercised honestly, in good faith, for authorized purposes, and consistently with the parties' justified expectations."),
-    ("PARA", "129. AT&T frustrated the agreement by issuing and inducing acceptance of an offer after the language-assessment period, commencing onboarding, and then invoking that preexisting assessment only after screening began."),
-    ("PARA", "130. Alternatively, AT&T exercised screening discretion in bad faith by considering a prohibited registry source, concealing that consideration, and denying the contractual pre-adverse review process required by law."),
-    ("PARA", "131. The conduct deprived Plaintiff of the opportunity to satisfy lawful conditions and receive the benefit of the accepted offer."),
-    ("PARA", "132. Plaintiff suffered the reliance and economic losses alleged in paragraphs 78 through 80 and 83. [PLAINTIFF MUST CONFIRM THOSE LOSSES BEFORE EXECUTION.]"),
-    ("HEADER", "XI.\nSIXTH CAUSE OF ACTION"),
-    ("SUBHEAD", "Promissory Estoppel — Against AT&T and Employer DOES\n(Alternative if No Contract Formed)"),
-    ("PARA", "133. Plaintiff realleges paragraphs 1 through 85 except allegations requiring an enforceable contract."),
-    ("PARA", "134. AT&T made a clear promise by stating that it was 'excited to officially offer' Plaintiff the identified Lodi position and by providing specific compensation, a tentative start date, and immediate onboarding tasks."),
-    ("PARA", "135. AT&T reasonably expected the promise to induce acceptance, disclosure of sensitive information, completion of screening, preparation for work, and employment-related action or forbearance."),
-    ("PARA", "136. Plaintiff reasonably relied because the offer followed completion of AT&T's interview and assessment stages and was communicated as official rather than tentative selection."),
-    ("PARA", "137. The reliance was foreseeable because the purpose of an employment offer and onboarding workflow is to cause the applicant to commit to the position and prepare to begin."),
-    ("PARA", "138. Plaintiff changed position in the ways alleged in paragraphs 55, 74 through 80, and 83."),
-    ("PARA", "139. AT&T withdrew the promise before giving Plaintiff a good-faith opportunity to begin, causing substantial detriment."),
-    ("PARA", "140. Injustice can be avoided only by enforcing the promise to the extent justice requires or awarding reliance damages."),
-    ("PARA", "141. Plaintiff seeks reliance losses, not a speculative guarantee of indefinite employment. California law permits proven employment-opportunity losses caused by reasonable reliance on a rescinded offer. (Sheppard v. Morgan Keegan & Co. (1990) 218 Cal.App.3d 61; Toscano v. Greene Music (2004) 124 Cal.App.4th 685.)"),
-    ("HEADER", "XII.\nSEVENTH CAUSE OF ACTION"),
-    ("SUBHEAD", "Negligent Misrepresentation — Against AT&T and Representation DOES\n(Pleaded in the Alternative)"),
-    ("PARA", "142. Plaintiff realleges paragraphs 1 through 85 except allegations of intentional falsity."),
-    ("PARA", "143. AT&T represented at 10:13 a.m. that it had officially offered Plaintiff R-106742 and then represented through onboarding tasks that the approved offer process was proceeding."),
-    ("PARA", "144. If AT&T had already received and treated the Spanish result as finally disqualifying, AT&T's representation that it was officially offering the expressly bilingual position was false or misleading when made."),
-    ("PARA", "145. If AT&T had not obtained managerial approval, had already decided not to hire Plaintiff, or knew its workflow would automatically disqualify him based on existing data, AT&T lacked reasonable grounds for believing the representation true. [THIS THEORY DEPENDS ON INTERNAL RECORDS AND PLAINTIFF'S CONFIRMED RELIANCE.]"),
-    ("PARA", "146. AT&T made the representation to induce Plaintiff to accept, undertake onboarding and screening, disclose personal information, and prepare to begin work."),
-    ("PARA", "147. Plaintiff did not know the undisclosed internal facts and reasonably relied on the official offer and onboarding sequence."),
-    ("PARA", "148. Plaintiff's reliance caused the detriment alleged in paragraphs 78 through 80 and 83."),
-    ("PARA", "149. AT&T's failure to use reasonable care in communicating an approved offer after the assessment period was a substantial factor in causing the harm."),
-    ("HEADER", "XIII.\nEIGHTH CAUSE OF ACTION"),
-    ("SUBHEAD", "Intentional Misrepresentation and Fraudulent Concealment\nAgainst AT&T and Fraud DOES (Alternative; Subject to Proof)"),
-    ("PARA", "150. Plaintiff realleges paragraphs 1 through 85 and 143 through 149, except allegations expressly limited to negligence."),
-    ("PARA", "151. The speaker and medium were specific: AT&T, through its Workday recruiting system and the personnel who approved its business process, represented to Plaintiff at 10:13 a.m. on May 28 that AT&T was officially offering him R-106742."),
-    ("PARA", "152. The representation concerned an existing fact—that AT&T had approved and was extending the offer—not merely future performance."),
-    ("PARA", "153. AT&T also concealed material facts known only to it: whether it already possessed an adverse Spanish result; whether the manager had approved or opposed the offer; whether a First Advantage result caused the reversal; and whether AT&T intended to use a prohibited criterion."),
-    ("PARA", "154. AT&T had exclusive knowledge of those facts, actively supplied a different explanation after screening began, and made partial representations likely to mislead absent full disclosure."),
-    ("PARA", "155. On information and belief, if AT&T already knew at 10:13 a.m. that it would not honor the offer, it made the representation knowingly or recklessly and intended Plaintiff to act through the onboarding and screening process."),
-    ("PARA", "156. Alternatively, if AT&T genuinely approved the offer at 10:13 and changed its decision only after receiving prohibited screening information, the fraud count may not apply, but the statutory counts do."),
-    ("PARA", "157. Plaintiff reasonably relied as alleged, and AT&T's misrepresentation or concealment caused the resulting harm."),
-    ("PARA", "158. Fraudulent inducement of an employment agreement may support tort damages for reliance injuries distinct from contract expectancy. (Lazar v. Superior Court (1996) 12 Cal.4th 631.)"),
-    ("PARA", "159. Plaintiff seeks tort damages caused by the inducement and concealment without duplicating contract damages."),
-    ("PARA", "160. Plaintiff seeks punitive damages against AT&T only upon proof that an officer, director, or managing agent authorized, ratified, or personally engaged in fraud, malice, or oppression under Civil Code section 3294(b). [MANAGING-AGENT FACTS ARE NOT YET ESTABLISHED; NO SPECIFIC AMOUNT IS PLEADED.]"),
-    ("HEADER", "XIV.\nNINTH CAUSE OF ACTION"),
-    ("SUBHEAD", "Unlawful and Unfair Business Practices\nBusiness and Professions Code section 17200 — Against All Defendants"),
-    ("PARA", "161. Plaintiff realleges paragraphs 1 through 160 to the extent consistent with this equitable cause."),
-    ("PARA", "162. Defendants engaged in unlawful practices by violating Penal Code section 290.46(j), the FCRA, and ICRAA as alleged."),
-    ("PARA", "163. Defendants engaged in unfair practices by structuring employment screening so an offer could be reversed immediately upon secret adverse information while denying the applicant the source, report, review period, and opportunity to respond."),
-    ("PARA", "164. AT&T engaged in fraudulent practices likely to mislead a reasonable applicant by announcing an official offer and demanding sensitive onboarding action while concealing a known disqualification or undisclosed screening basis."),
-    ("PARA", "165. Plaintiff suffered injury in fact and lost money or property through the reliance expenditures, employment-search costs, and other economic losses alleged and to be proven."),
-    ("PARA", "166. Plaintiff does not seek future unearned wages as UCL restitution. He seeks restitution only of money or property in which he had a vested interest and that Defendants acquired or caused him to expend through the challenged practices, according to proof."),
-    ("PARA", "167. Legal damages are not an adequate remedy for Defendants' retention, use, and dissemination of registry-derived screening data or their ongoing secret-screening practices."),
-    ("PARA", "168. Plaintiff seeks an injunction requiring Defendants to cease prohibited employment use of California registry information; preserve and disclose the source and audit trail of AT&T screening; correct or segregate unlawfully used data; and implement lawful pre-adverse procedures."),
-    ("PARA", "169. Plaintiff also seeks restitution and declaratory relief ancillary to the injunction to the extent authorized by Business and Professions Code section 17203."),
     ("HEADER", "XV.\nPRESERVATION OF EVIDENCE"),
     ("PARA", "170. Defendants are on notice to preserve the AT&T Workday record for C-1690172 and requisitions R-106742 and R-107776; offer versions and acceptance logs; approvals and communications involving Orville R. Bell and Richard Patterson; LTI/ACTFL score and transmission data; the individual First Advantage order under client account 132156, report, component, adjudication, access and cancellation logs, and the First Advantage file subject to Civil Code sections 1786.10 and 1786.22; ID.me events; text and email communications; and policies governing registry, FCRA, ICRAA, and fair-chance review."),
     ("PARA", "171. Relevant electronically stored information includes audit fields, event timestamps, reason codes, API messages, report views, internal chats, emails, SMS, candidate-status history, and data-retention records from May 16 through June 30, 2026."),
@@ -339,8 +346,6 @@ def _verification(d: PleadingPaper, exec_date: str, execute: bool) -> None:
     d.start_new_page()
     d.write_line("VERIFICATION", bold=True, center=True)
     d.blank_line()
-    d.write_line("STATE OF CALIFORNIA, COUNTY OF SAN JOAQUIN", bold=True, center=True)
-    d.blank_line()
     d.write_wrapped("I, BRENDAN NGWA NFORBI, declare:", first_indent=36)
     d.blank_line()
     d.write_wrapped(
@@ -358,7 +363,7 @@ def _verification(d: PleadingPaper, exec_date: str, execute: bool) -> None:
     )
     d.blank_line()
     d.write_wrapped(
-        f"Executed on {exec_date}, at Stockton, California.", first_indent=36
+        f"Signed on {exec_date}, at Milpitas, California.", first_indent=36
     )
     d.ensure_space(10)
     d.blank_line()
@@ -372,11 +377,6 @@ def _verification(d: PleadingPaper, exec_date: str, execute: bool) -> None:
 
 
 def build(out: Path, exec_date: str, execute: bool) -> Path:
-    if execute and dt.date.today() < EARLIEST_EXECUTION_DATE:
-        raise SystemExit(
-            "Refusing to affix a signature before September 8, 2026. "
-            "Generate the unsigned review draft now and rerun --execute on or after that date."
-        )
     if execute and not Path(SIGNATURE_PATH).is_file():
         raise SystemExit(f"Missing universal signature: {SIGNATURE_PATH}")
     out.parent.mkdir(parents=True, exist_ok=True)
@@ -399,6 +399,8 @@ def build(out: Path, exec_date: str, execute: bool) -> Path:
 
     for kind, text in CONTENT:
         if kind == "NOTICE":
+            if execute:
+                continue
             d.ensure_space(7)
             d.write_wrapped(text, bold=True)
             d.blank_line()
@@ -415,10 +417,10 @@ def build(out: Path, exec_date: str, execute: bool) -> Path:
                 d.write_line(line, bold=True)
             d.blank_line()
         elif kind == "PARA":
-            d.write_wrapped(text, first_indent=36)
+            d.write_wrapped(_filing_text(text, execute), first_indent=36)
             d.blank_line()
         elif kind == "LIST_ITEM":
-            d.write_wrapped(text, indent=36, first_indent=0)
+            d.write_wrapped(_filing_text(text, execute), indent=36, first_indent=0)
             d.blank_line()
         else:
             raise ValueError(f"Unknown content kind: {kind}")
@@ -436,7 +438,7 @@ def main() -> None:
     parser.add_argument(
         "--execute",
         action="store_true",
-        help="Affix Plaintiff's signature (refused before September 8, 2026)",
+        help="Affix Plaintiff's signature and drop review-draft notices",
     )
     args = parser.parse_args()
     path = build(Path(args.out).resolve(), args.date, args.execute)

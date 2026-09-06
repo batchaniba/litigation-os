@@ -62,6 +62,7 @@ After adding an entry, copy the packet to `internal/public/{slug}.pdf`
 | `ser001-blank-template.pdf` | SER-001 sheriff service request |
 | `sum100-blank-template.pdf` | SUM-100 state summons |
 | `cm010-blank-template.pdf` | CM-010 civil case cover sheet |
+| `fw003-blank-template.pdf` | FW-003 order on court fee waiver (clerk) |
 | `cv-5012-blank-template.pdf` | Santa Clara CV-5012 Civil Lawsuit Notice (blank for clerk) |
 | `hc004-blank-template.pdf` | HC-004 habeas |
 | `stanislaus-cc-authorization-blank-template.pdf` | Stanislaus CC auth |

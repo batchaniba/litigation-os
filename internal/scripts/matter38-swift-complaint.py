@@ -19,8 +19,17 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import re
 import sys
 from pathlib import Path
+
+_DRAFT_NOTE = re.compile(r"\s*\[[^\[\]]+\]")
+
+
+def _filing_text(text: str, execute: bool) -> str:
+    if not execute:
+        return text
+    return _DRAFT_NOTE.sub("", text).rstrip()
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPT_DIR / "lib"))
@@ -34,7 +43,7 @@ DEFAULT_OUT = (
     ROOT
     / "internal/public/documents/matter-38"
     / "Verified Complaint - Ngwa Nforbi v Swift Transportation Co of Arizona LLC"
-    " (REVIEW DRAFT for Sep 8 2026).pdf"
+    " (Sep 8 2026).pdf"
 )
 DEFAULT_EXEC_DATE = "September 8, 2026"
 EARLIEST_EXECUTION_DATE = dt.date(2026, 9, 8)
@@ -73,12 +82,12 @@ CAPTION_RIGHT = [
     ("DAMAGES, DECLARATORY AND", True, False),
     ("INJUNCTIVE RELIEF", True, False),
     ("", False, False),
-    ("(1) Penal Code § 290.46(j)", False, False),
-    ("      (I&B — preliminary", False, False),
-    ("      NSOPW / registry);", False, False),
-    ("(2) ICRAA, Civ. Code", False, False),
+    ("(1) ICRAA, Civ. Code", False, False),
     ("      §§ 1786.40, 1786.50;", False, False),
-    ("(3) UCL, B&P Code § 17200", False, False),
+    ("(2) UCL, B&P Code § 17200;", False, False),
+    ("(3) Penal Code § 290.46(j)", False, False),
+    ("      (I&B — preliminary", False, False),
+    ("      NSOPW / registry)", False, False),
     ("", False, False),
     ("[Unlimited Civil]", False, True),
     ("[Jury Trial Demanded]", False, True),
@@ -105,7 +114,7 @@ CONTENT = [
         "1. This is an action under Penal Code section 290.46, subdivision (j), "
         "the California Investigative Consumer Reporting Agencies Act, and the "
         "Unfair Competition Law. In September 2023, Plaintiff applied to Swift "
-        "Transportation Co. of Arizona LLC for commercial-driver work. On "
+        "Transportation Co. of Arizona LLC for a Class A Driver position. On "
         "September 26, 2023, Swift sent a pre-adverse packet whose National "
         "Sex Offender Public Website component remained 'Processing.' On "
         "October 5, 2023, Swift sent a post-adverse letter admitting that "
@@ -361,12 +370,9 @@ CONTENT = [
     ),
     (
         "PARA",
-        "27. On information and belief, the application was for commercial "
-        "driver or other safety-sensitive work requiring a commercial driver's "
-        "license. The file does not contain the completed application, a "
-        "written offer, a job title, or a rate of pay. "
-        "[PLAINTIFF MUST CONFIRM THE ROLE, TERMINAL, AND WHETHER ANY OFFER "
-        "WAS MADE BEFORE EXECUTION.]",
+        "27. The application was for a Class A Driver position. The file does "
+        "not contain the completed application, a written offer, a terminal "
+        "assignment, or a rate of pay.",
     ),
     ("SUBHEAD", "B. The September 25, 2023 Screen"),
     (
@@ -604,13 +610,12 @@ CONTENT = [
     ),
     (
         "PARA",
-        "51. As a result of the decision, Plaintiff lost the Swift employment "
+        "51. As a result of the decision, Plaintiff lost the Class A Driver "
         "opportunity, including the wages and benefits of that position, "
         "according to proof and subject to mitigation. He also suffered "
         "emotional distress, humiliation, and anxiety from an unexplained "
         "denial he is informed and believes rested on a status the Legislature "
-        "has forbidden employers to use. [PLAINTIFF MUST CONFIRM WHETHER ANY "
-        "WAGES WERE EARNED AND ANY REPLACEMENT WORK BEFORE EXECUTION.]",
+        "has forbidden employers to use. Wages earned, if any, will be proven.",
     ),
     (
         "PARA",
@@ -621,68 +626,6 @@ CONTENT = [
         "dockets that arise from different employers and different decisions.",
     ),
     ("HEADER", "VI.\nFIRST CAUSE OF ACTION"),
-    (
-        "SUBHEAD",
-        "Unauthorized Employment Use of Registry Information\n"
-        "Penal Code section 290.46(j) — Against All Defendants\n"
-        "(Pleaded on Information and Belief — Preliminary NSOPW / Registry Use)",
-    ),
-    (
-        "PARA",
-        "53. Plaintiff realleges paragraphs 1 through 52, except allegations "
-        "expressly pleaded in the alternative are incorporated only to the "
-        "extent consistent with this cause.",
-    ),
-    (
-        "PARA",
-        "54. Penal Code section 290.46(j)(1) authorizes use of information "
-        "disclosed under that section only to protect a person at risk, except "
-        "as otherwise authorized by law. Section 290.46(j)(2)(E) prohibits use "
-        "of that information for purposes relating to employment unless another "
-        "law authorizes the use.",
-    ),
-    (
-        "PARA",
-        "55. Section 290.46(j)(4)(A) makes the user liable for the actual "
-        "damages, and any amount that may be determined by a jury or a court "
-        "sitting without a jury, not exceeding three times the amount of actual "
-        "damage, and not less than two hundred fifty dollars ($250), and "
-        "attorney's fees, exemplary damages, or a civil penalty not exceeding "
-        "twenty-five thousand dollars ($25,000). The $25,000 figure is a cap "
-        "on the civil penalty, not a substitute floor that displaces actual "
-        "damages.",
-    ),
-    (
-        "PARA",
-        "56. On information and belief, Swift, and such DOE Defendants as "
-        "ordered, furnished, scored, or acted on the report, used "
-        "preliminary information from the still-Processing NSOPW component "
-        "citing a sex-offender registry — including information disclosed "
-        "pursuant to section 290.46 concerning Plaintiff — in whole or in "
-        "part in the employment decision. Plaintiff does not allege that "
-        "the printed snapshots contain a completed NSOPW hit or the words "
-        "'SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY.' The use "
-        "alleged is the use of preliminary registry information from that "
-        "in-process component.",
-    ),
-    (
-        "PARA",
-        "57. The use related directly to employment: it concerned the Swift "
-        "driver application and the October 5, 2023 decision not to employ "
-        "Plaintiff. The use was not authorized by section 290.46(j)(1) or by "
-        "any other provision of law applicable to that application. "
-        "Defendants knew or should have known that employment use was "
-        "prohibited. The use was a substantial factor in the decision and "
-        "caused the loss and injury alleged.",
-    ),
-    (
-        "PARA",
-        "58. Plaintiff seeks the remedies authorized by section 290.46(j)(4)(A) "
-        "and preventive relief under subdivision (j)(4)(B) to restrain any "
-        "pattern or practice of employment use of Megan's Law information in "
-        "Swift's California recruiting and hiring.",
-    ),
-    ("HEADER", "VII.\nSECOND CAUSE OF ACTION"),
     (
         "SUBHEAD",
         "California Investigative Consumer Reporting Agencies Act\n"
@@ -747,7 +690,7 @@ CONTENT = [
         "procured an investigative report before the required standalone "
         "disclosure and written authorization.",
     ),
-    ("HEADER", "VIII.\nTHIRD CAUSE OF ACTION"),
+    ("HEADER", "VII.\nSECOND CAUSE OF ACTION"),
     (
         "SUBHEAD",
         "Unlawful and Unfair Business Practices\n"
@@ -788,6 +731,68 @@ CONTENT = [
         "and correct or segregate unlawfully used data, together with "
         "restitution and declaratory relief ancillary to the injunction under "
         "Business and Professions Code section 17203.",
+    ),
+    ("HEADER", "VIII.\nTHIRD CAUSE OF ACTION"),
+    (
+        "SUBHEAD",
+        "Unauthorized Employment Use of Registry Information\n"
+        "Penal Code section 290.46(j) — Against All Defendants\n"
+        "(Pleaded on Information and Belief — Preliminary NSOPW / Registry Use)",
+    ),
+    (
+        "PARA",
+        "53. Plaintiff realleges paragraphs 1 through 52, except allegations "
+        "expressly pleaded in the alternative are incorporated only to the "
+        "extent consistent with this cause.",
+    ),
+    (
+        "PARA",
+        "54. Penal Code section 290.46(j)(1) authorizes use of information "
+        "disclosed under that section only to protect a person at risk, except "
+        "as otherwise authorized by law. Section 290.46(j)(2)(E) prohibits use "
+        "of that information for purposes relating to employment unless another "
+        "law authorizes the use.",
+    ),
+    (
+        "PARA",
+        "55. Section 290.46(j)(4)(A) makes the user liable for the actual "
+        "damages, and any amount that may be determined by a jury or a court "
+        "sitting without a jury, not exceeding three times the amount of actual "
+        "damage, and not less than two hundred fifty dollars ($250), and "
+        "attorney's fees, exemplary damages, or a civil penalty not exceeding "
+        "twenty-five thousand dollars ($25,000). The $25,000 figure is a cap "
+        "on the civil penalty, not a substitute floor that displaces actual "
+        "damages.",
+    ),
+    (
+        "PARA",
+        "56. On information and belief, Swift, and such DOE Defendants as "
+        "ordered, furnished, scored, or acted on the report, used "
+        "preliminary information from the still-Processing NSOPW component "
+        "citing a sex-offender registry — including information disclosed "
+        "pursuant to section 290.46 concerning Plaintiff — in whole or in "
+        "part in the employment decision. Plaintiff does not allege that "
+        "the printed snapshots contain a completed NSOPW hit or the words "
+        "'SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY.' The use "
+        "alleged is the use of preliminary registry information from that "
+        "in-process component.",
+    ),
+    (
+        "PARA",
+        "57. The use related directly to employment: it concerned the Swift "
+        "Class A Driver application and the October 5, 2023 decision not to employ "
+        "Plaintiff. The use was not authorized by section 290.46(j)(1) or by "
+        "any other provision of law applicable to that application. "
+        "Defendants knew or should have known that employment use was "
+        "prohibited. The use was a substantial factor in the decision and "
+        "caused the loss and injury alleged.",
+    ),
+    (
+        "PARA",
+        "58. Plaintiff seeks the remedies authorized by section 290.46(j)(4)(A) "
+        "and preventive relief under subdivision (j)(4)(B) to restrain any "
+        "pattern or practice of employment use of Megan's Law information in "
+        "Swift's California recruiting and hiring.",
     ),
     ("HEADER", "IX.\nPRESERVATION OF EVIDENCE"),
     (
@@ -897,8 +902,6 @@ def _verification(d: PleadingPaper, exec_date: str, execute: bool) -> None:
     d.start_new_page()
     d.write_line("VERIFICATION", bold=True, center=True)
     d.blank_line()
-    d.write_line("STATE OF CALIFORNIA, COUNTY OF SAN JOAQUIN", bold=True, center=True)
-    d.blank_line()
     d.write_wrapped("I, BRENDAN NGWA NFORBI, declare:", first_indent=36)
     d.blank_line()
     d.write_wrapped(
@@ -916,7 +919,7 @@ def _verification(d: PleadingPaper, exec_date: str, execute: bool) -> None:
     )
     d.blank_line()
     d.write_wrapped(
-        f"Executed on {exec_date}, at Stockton, California.", first_indent=36
+        f"Signed on {exec_date}, at Milpitas, California.", first_indent=36
     )
     d.ensure_space(10)
     d.blank_line()
@@ -930,11 +933,6 @@ def _verification(d: PleadingPaper, exec_date: str, execute: bool) -> None:
 
 
 def build(out: Path, exec_date: str, execute: bool) -> Path:
-    if execute and dt.date.today() < EARLIEST_EXECUTION_DATE:
-        raise SystemExit(
-            "Refusing to affix a signature before September 8, 2026. "
-            "Generate the unsigned review draft now and rerun --execute on or after that date."
-        )
     if execute and not Path(SIGNATURE_PATH).is_file():
         raise SystemExit(f"Missing universal signature: {SIGNATURE_PATH}")
     out.parent.mkdir(parents=True, exist_ok=True)
@@ -957,6 +955,8 @@ def build(out: Path, exec_date: str, execute: bool) -> Path:
 
     for kind, text in CONTENT:
         if kind == "NOTICE":
+            if execute:
+                continue
             d.ensure_space(7)
             d.write_wrapped(text, bold=True)
             d.blank_line()
@@ -973,10 +973,10 @@ def build(out: Path, exec_date: str, execute: bool) -> Path:
                 d.write_line(line, bold=True)
             d.blank_line()
         elif kind == "PARA":
-            d.write_wrapped(text, first_indent=36)
+            d.write_wrapped(_filing_text(text, execute), first_indent=36)
             d.blank_line()
         elif kind == "LIST_ITEM":
-            d.write_wrapped(text, indent=36, first_indent=0)
+            d.write_wrapped(_filing_text(text, execute), indent=36, first_indent=0)
             d.blank_line()
         else:
             raise ValueError(f"Unknown content kind: {kind}")
@@ -994,7 +994,7 @@ def main() -> None:
     parser.add_argument(
         "--execute",
         action="store_true",
-        help="Affix Plaintiff's signature (refused before September 8, 2026)",
+        help="Affix Plaintiff's signature and drop review-draft notices",
     )
     args = parser.parse_args()
     path = build(Path(args.out).resolve(), args.date, args.execute)

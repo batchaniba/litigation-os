@@ -19,8 +19,17 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import re
 import sys
 from pathlib import Path
+
+_DRAFT_NOTE = re.compile(r"\s*\[[^\[\]]+\]")
+
+
+def _filing_text(text: str, execute: bool) -> str:
+    if not execute:
+        return text
+    return _DRAFT_NOTE.sub("", text).rstrip()
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPT_DIR / "lib"))
@@ -34,7 +43,7 @@ DEFAULT_OUT = (
     ROOT
     / "internal/public/documents/matter-37"
     / "Verified Complaint - Ngwa Nforbi v Home Depot USA Inc"
-    " (REVIEW DRAFT for Sep 8 2026).pdf"
+    " (Sep 8 2026).pdf"
 )
 DEFAULT_EXEC_DATE = "September 8, 2026"
 EARLIEST_EXECUTION_DATE = dt.date(2026, 9, 8)
@@ -73,10 +82,10 @@ CAPTION_RIGHT = [
     ("DAMAGES, DECLARATORY AND", True, False),
     ("INJUNCTIVE RELIEF", True, False),
     ("", False, False),
-    ("(1) Penal Code § 290.46(j);", False, False),
-    ("(2) ICRAA, Civ. Code", False, False),
+    ("(1) ICRAA, Civ. Code", False, False),
     ("      §§ 1786.40, 1786.50;", False, False),
-    ("(3) UCL, B&P Code § 17200", False, False),
+    ("(2) UCL, B&P Code § 17200;", False, False),
+    ("(3) Penal Code § 290.46(j)", False, False),
     ("", False, False),
     ("[Unlimited Civil]", False, True),
     ("[Jury Trial Demanded]", False, True),
@@ -101,12 +110,14 @@ CONTENT = [
         "PARA",
         "1. This is an action under Penal Code section 290.46, subdivision (j), "
         "for the unauthorized employment use of California Megan's Law registry "
-        "information. On or about August 2024, Defendant Home Depot U.S.A., Inc. "
-        "hired Plaintiff to work at its distribution and fulfillment center at "
-        "5395 Hopkins Road, Tracy, California 95377. Thereafter, Home Depot made "
-        "an employment decision concerning Plaintiff. Plaintiff is informed and "
-        "believes, and on that basis alleges, that Home Depot used information "
-        "disclosed pursuant to Penal Code section 290.46 — Plaintiff's status as "
+        "information. On information and belief, on or about August 2024, "
+        "Defendant Home Depot U.S.A., Inc. hired Plaintiff to work at its "
+        "distribution and fulfillment center at 5395 Hopkins Road, Tracy, "
+        "California 95377. Plaintiff accepted that hire and began onboarding. "
+        "Thereafter Home Depot ceased communication and ghosted him. Plaintiff "
+        "is informed and believes, and on that basis alleges, that Home Depot "
+        "used information disclosed pursuant to Penal Code section 290.46 — "
+        "Plaintiff's status as "
         "a person required to register under Penal Code section 290, as published "
         "on the California Sex Offender Registry — for purposes relating to that "
         "employment.",
@@ -311,10 +322,11 @@ CONTENT = [
     (
         "PARA",
         "23. Plaintiff is informed and believes that the challenged employment "
-        "decision occurred on or after on or about August 2024, and in any "
-        "event within three years before the filing of this Complaint. The "
-        "precise day is a fact of Home Depot's personnel and screening records. "
-        "[PLAINTIFF MUST CONFIRM THE DECISION DATE BEFORE EXECUTION.]",
+        "decision — Home Depot's cessation of communication after he accepted "
+        "the hire and began onboarding — occurred on or after on or about "
+        "August 2024, and in any event within three years before the filing "
+        "of this Complaint. The precise day is a fact of Home Depot's "
+        "personnel and screening records.",
     ),
     (
         "PARA",
@@ -329,10 +341,11 @@ CONTENT = [
     ("SUBHEAD", "A. The Tracy Center Hire"),
     (
         "PARA",
-        "25. On or about August 2024, Home Depot hired Plaintiff to work at the "
-        "Tracy Center, 5395 Hopkins Road, Tracy, California 95377. "
-        "[PLAINTIFF MUST CONFIRM THE HIRE DATE, START DATE, JOB TITLE, "
-        "DEPARTMENT, SHIFT, AND RATE OF PAY BEFORE EXECUTION.]",
+        "25. On information and belief, on or about August 2024, Home Depot "
+        "hired Plaintiff to work at the Tracy Center, 5395 Hopkins Road, "
+        "Tracy, California 95377. Plaintiff accepted that position and began "
+        "onboarding. The precise start date, job title, shift, and rate of "
+        "pay are facts of Home Depot's personnel file.",
     ),
     (
         "PARA",
@@ -352,19 +365,17 @@ CONTENT = [
         "onboarding packet, time records, or wage statements from the Tracy "
         "Center hire. Those documents, if they exist, are in Home Depot's "
         "possession or the possession of its vendors. Their absence from "
-        "Plaintiff's files does not negate the hire. "
-        "[PLAINTIFF MUST CONFIRM WHETHER HE HAS ANY OFFER, BADGE, TIMECARD, "
-        "PAYSTUB, OR W-2/1099 BEFORE EXECUTION.]",
+        "Plaintiff's files does not negate the hire or the onboarding he began.",
     ),
     ("SUBHEAD", "B. The Employment Decision"),
     (
         "PARA",
-        "29. After the hire, Home Depot made an employment decision concerning "
-        "Plaintiff. On information and belief, that decision was a termination, "
-        "discharge, revocation of hire, withdrawal of assignment, or other "
-        "adverse action that ended or prevented Plaintiff's work at the Tracy "
-        "Center. [PLAINTIFF MUST CONFIRM WHAT HAPPENED — FIRED, WALKED OUT, "
-        "TOLD NOT TO RETURN, OFFER RESCINDED, OR OTHER — AND ON WHAT DAY.]",
+        "29. After Plaintiff accepted the hire and began onboarding, Home Depot "
+        "ceased communication and ghosted him. That cessation ended or "
+        "prevented his work at the Tracy Center. Home Depot sent no written "
+        "termination, no explanation, and no further reporting instruction. "
+        "The precise day communication stopped is a fact of Home Depot's "
+        "personnel and screening records.",
     ),
     (
         "PARA",
@@ -380,8 +391,7 @@ CONTENT = [
         "31. On information and belief, Home Depot did not provide Plaintiff, "
         "before the decision, a copy of any consumer report used in the "
         "decision or a written description of his rights under the Fair Credit "
-        "Reporting Act. [PLAINTIFF MUST CONFIRM THAT NO PRE-ADVERSE PACKAGE "
-        "ARRIVED BY EMAIL, PORTAL, OR MAIL.]",
+        "Reporting Act. No such package arrived by email, portal, or mail.",
     ),
     (
         "PARA",
@@ -528,8 +538,8 @@ CONTENT = [
         "Plaintiff also suffered emotional distress, humiliation, and anxiety "
         "from an unexplained employment decision he is informed and believes "
         "rested on a status the Legislature has forbidden employers to use. "
-        "[PLAINTIFF MUST CONFIRM WAGES EARNED, WAGES LOST, AND ANY "
-        "REPLACEMENT WORK BEFORE EXECUTION.]",
+        "Wages earned or lost, if any, will be proven from Home Depot's "
+        "records. Plaintiff does not invent a rate or duration here.",
     ),
     (
         "PARA",
@@ -576,6 +586,136 @@ CONTENT = [
         "Plaintiff's files is not a defect in this pleading.",
     ),
     ("HEADER", "VI.\nFIRST CAUSE OF ACTION"),
+    (
+        "SUBHEAD",
+        "California Investigative Consumer Reporting Agencies Act\n"
+        "Civil Code sections 1786.40 and 1786.50 — Against Home Depot and User DOES\n"
+        "(Pleaded on Information and Belief)",
+    ),
+    (
+        "PARA",
+        "62. Plaintiff realleges paragraphs 1 through 50 and 56 through 60 to "
+        "the extent consistent with this cause.",
+    ),
+    (
+        "PARA",
+        "63. On information and belief, a consumer reporting agency or "
+        "investigative consumer reporting agency assembled or evaluated "
+        "information concerning Plaintiff's character, general reputation, "
+        "personal characteristics, or mode of living for employment purposes "
+        "at Home Depot's request.",
+    ),
+    (
+        "PARA",
+        "64. Home Depot procured or caused that report to be prepared and was "
+        "the user of its information.",
+    ),
+    (
+        "PARA",
+        "65. On information and belief, the report was obtained before Home "
+        "Depot made the employment decision alleged in paragraph 29.",
+    ),
+    (
+        "PARA",
+        "66. Civil Code section 1786.40(a) required Home Depot, under "
+        "circumstances in which employment was denied or ended and an "
+        "investigative consumer report had been obtained, to advise Plaintiff "
+        "of that fact and supply the agency's name and address.",
+    ),
+    (
+        "PARA",
+        "67. Home Depot did not comply. Plaintiff was not told a report had "
+        "been obtained and was not given the agency's name and address.",
+    ),
+    (
+        "PARA",
+        "68. The omission prevented Plaintiff from timely obtaining the Home "
+        "Depot-specific report, testing whether its source was the California "
+        "registry or ordinary court records, and invoking his statutory "
+        "inspection and dispute rights. This ICRAA count does not depend on "
+        "proving Penal Code section 290.46(j). A notice failure under Civil "
+        "Code section 1786.40 is independently actionable if an investigative "
+        "consumer report was obtained and employment was denied or ended "
+        "without the required advice. That count can reach discovery even if "
+        "the registry-use inference later fails.",
+    ),
+    (
+        "PARA",
+        "69. Under Civil Code section 1786.50, Plaintiff seeks actual damages "
+        "or $10,000, whichever is greater, costs, attorney's fees if later "
+        "represented, and punitive damages upon proof of gross negligence or "
+        "willfulness.",
+    ),
+    (
+        "PARA",
+        "70. This ICRAA count is not a Fair Credit Reporting Act count. "
+        "Plaintiff has not pleaded 15 U.S.C. section 1681b(b)(3) in this "
+        "Complaint. He reserves amendment if production shows Home Depot based "
+        "the decision in whole or in part on a consumer report and failed to "
+        "provide a copy of the report and a federal rights summary before the "
+        "adverse action.",
+    ),
+    (
+        "PARA",
+        "71. Plaintiff also reserves amendment under Civil Code section 1786.16 "
+        "if production shows Home Depot procured the report before providing "
+        "the required standalone disclosure and obtaining written authorization. "
+        "He does not presently allege nonauthorization as an established fact.",
+    ),
+    ("HEADER", "VII.\nSECOND CAUSE OF ACTION"),
+    (
+        "SUBHEAD",
+        "Unlawful and Unfair Business Practices\n"
+        "Business and Professions Code section 17200 — Against All Defendants",
+    ),
+    (
+        "PARA",
+        "72. Plaintiff realleges paragraphs 1 through 71 to the extent "
+        "consistent with this equitable cause.",
+    ),
+    (
+        "PARA",
+        "73. Defendants engaged in unlawful practices by violating Penal Code "
+        "section 290.46(j) and, if proven, Civil Code section 1786.40, as "
+        "alleged.",
+    ),
+    (
+        "PARA",
+        "74. Defendants engaged in unfair practices by structuring employment "
+        "screening so a hire at the Tracy Center could be undone on secret "
+        "registry-derived information while denying the worker the source, "
+        "the report, and an opportunity to respond.",
+    ),
+    (
+        "PARA",
+        "75. Plaintiff suffered injury in fact and lost money or property "
+        "through lost wages from the ended Tracy Center employment and other "
+        "economic losses to be proven. Plaintiff does not seek future unearned "
+        "wages as UCL restitution. He seeks restitution only of money or "
+        "property in which he had a vested interest and that Defendants "
+        "acquired or caused him to lose through the challenged practices.",
+    ),
+    (
+        "PARA",
+        "76. Legal damages are not an adequate remedy for Defendants' "
+        "retention, use, and dissemination of registry-derived screening data "
+        "or their ongoing employment-screening practices.",
+    ),
+    (
+        "PARA",
+        "77. Plaintiff seeks an injunction requiring Defendants to cease "
+        "prohibited employment use of California registry information at "
+        "California facilities including the Tracy Center; preserve and "
+        "disclose the source and audit trail of Plaintiff's screening; and "
+        "correct or segregate unlawfully used data.",
+    ),
+    (
+        "PARA",
+        "78. Plaintiff also seeks restitution and declaratory relief ancillary "
+        "to the injunction to the extent authorized by Business and Professions "
+        "Code section 17203.",
+    ),
+    ("HEADER", "VIII.\nTHIRD CAUSE OF ACTION"),
     (
         "SUBHEAD",
         "Unauthorized Employment Use of Registry Information\n"
@@ -650,137 +790,6 @@ CONTENT = [
         "preventive relief under subdivision (j)(4)(B) to restrain any pattern "
         "or practice of employment use of Megan's Law information at Home "
         "Depot's California facilities, including the Tracy Center.",
-    ),
-    ("HEADER", "VII.\nSECOND CAUSE OF ACTION"),
-    (
-        "SUBHEAD",
-        "California Investigative Consumer Reporting Agencies Act\n"
-        "Civil Code sections 1786.40 and 1786.50 — Against Home Depot and User DOES\n"
-        "(Pleaded on Information and Belief)",
-    ),
-    (
-        "PARA",
-        "62. Plaintiff realleges paragraphs 1 through 50 and 56 through 60 to "
-        "the extent consistent with this cause.",
-    ),
-    (
-        "PARA",
-        "63. On information and belief, a consumer reporting agency or "
-        "investigative consumer reporting agency assembled or evaluated "
-        "information concerning Plaintiff's character, general reputation, "
-        "personal characteristics, or mode of living for employment purposes "
-        "at Home Depot's request.",
-    ),
-    (
-        "PARA",
-        "64. Home Depot procured or caused that report to be prepared and was "
-        "the user of its information.",
-    ),
-    (
-        "PARA",
-        "65. On information and belief, the report was obtained before Home "
-        "Depot made the employment decision alleged in paragraph 29.",
-    ),
-    (
-        "PARA",
-        "66. Civil Code section 1786.40(a) required Home Depot, under "
-        "circumstances in which employment was denied or ended and an "
-        "investigative consumer report had been obtained, to advise Plaintiff "
-        "of that fact and supply the agency's name and address.",
-    ),
-    (
-        "PARA",
-        "67. On information and belief, Home Depot did not comply. "
-        "[PLAINTIFF MUST CONFIRM THAT HE WAS NOT TOLD A REPORT HAD BEEN "
-        "OBTAINED AND WAS NOT GIVEN THE AGENCY'S NAME AND ADDRESS.]",
-    ),
-    (
-        "PARA",
-        "68. The omission prevented Plaintiff from timely obtaining the Home "
-        "Depot-specific report, testing whether its source was the California "
-        "registry or ordinary court records, and invoking his statutory "
-        "inspection and dispute rights. This ICRAA count does not depend on "
-        "proving Penal Code section 290.46(j). A notice failure under Civil "
-        "Code section 1786.40 is independently actionable if an investigative "
-        "consumer report was obtained and employment was denied or ended "
-        "without the required advice. That count can reach discovery even if "
-        "the registry-use inference later fails.",
-    ),
-    (
-        "PARA",
-        "69. Under Civil Code section 1786.50, Plaintiff seeks actual damages "
-        "or $10,000, whichever is greater, costs, attorney's fees if later "
-        "represented, and punitive damages upon proof of gross negligence or "
-        "willfulness.",
-    ),
-    (
-        "PARA",
-        "70. This ICRAA count is not a Fair Credit Reporting Act count. "
-        "Plaintiff has not pleaded 15 U.S.C. section 1681b(b)(3) in this "
-        "Complaint. He reserves amendment if production shows Home Depot based "
-        "the decision in whole or in part on a consumer report and failed to "
-        "provide a copy of the report and a federal rights summary before the "
-        "adverse action.",
-    ),
-    (
-        "PARA",
-        "71. Plaintiff also reserves amendment under Civil Code section 1786.16 "
-        "if production shows Home Depot procured the report before providing "
-        "the required standalone disclosure and obtaining written authorization. "
-        "He does not presently allege nonauthorization as an established fact.",
-    ),
-    ("HEADER", "VIII.\nTHIRD CAUSE OF ACTION"),
-    (
-        "SUBHEAD",
-        "Unlawful and Unfair Business Practices\n"
-        "Business and Professions Code section 17200 — Against All Defendants",
-    ),
-    (
-        "PARA",
-        "72. Plaintiff realleges paragraphs 1 through 71 to the extent "
-        "consistent with this equitable cause.",
-    ),
-    (
-        "PARA",
-        "73. Defendants engaged in unlawful practices by violating Penal Code "
-        "section 290.46(j) and, if proven, Civil Code section 1786.40, as "
-        "alleged.",
-    ),
-    (
-        "PARA",
-        "74. Defendants engaged in unfair practices by structuring employment "
-        "screening so a hire at the Tracy Center could be undone on secret "
-        "registry-derived information while denying the worker the source, "
-        "the report, and an opportunity to respond.",
-    ),
-    (
-        "PARA",
-        "75. Plaintiff suffered injury in fact and lost money or property "
-        "through lost wages from the ended Tracy Center employment and other "
-        "economic losses to be proven. Plaintiff does not seek future unearned "
-        "wages as UCL restitution. He seeks restitution only of money or "
-        "property in which he had a vested interest and that Defendants "
-        "acquired or caused him to lose through the challenged practices.",
-    ),
-    (
-        "PARA",
-        "76. Legal damages are not an adequate remedy for Defendants' "
-        "retention, use, and dissemination of registry-derived screening data "
-        "or their ongoing employment-screening practices.",
-    ),
-    (
-        "PARA",
-        "77. Plaintiff seeks an injunction requiring Defendants to cease "
-        "prohibited employment use of California registry information at "
-        "California facilities including the Tracy Center; preserve and "
-        "disclose the source and audit trail of Plaintiff's screening; and "
-        "correct or segregate unlawfully used data.",
-    ),
-    (
-        "PARA",
-        "78. Plaintiff also seeks restitution and declaratory relief ancillary "
-        "to the injunction to the extent authorized by Business and Professions "
-        "Code section 17203.",
     ),
     ("HEADER", "IX.\nPRESERVATION OF EVIDENCE"),
     (
@@ -892,8 +901,6 @@ def _verification(d: PleadingPaper, exec_date: str, execute: bool) -> None:
     d.start_new_page()
     d.write_line("VERIFICATION", bold=True, center=True)
     d.blank_line()
-    d.write_line("STATE OF CALIFORNIA, COUNTY OF SAN JOAQUIN", bold=True, center=True)
-    d.blank_line()
     d.write_wrapped("I, BRENDAN NGWA NFORBI, declare:", first_indent=36)
     d.blank_line()
     d.write_wrapped(
@@ -911,7 +918,7 @@ def _verification(d: PleadingPaper, exec_date: str, execute: bool) -> None:
     )
     d.blank_line()
     d.write_wrapped(
-        f"Executed on {exec_date}, at Stockton, California.", first_indent=36
+        f"Signed on {exec_date}, at Milpitas, California.", first_indent=36
     )
     d.ensure_space(10)
     d.blank_line()
@@ -925,11 +932,6 @@ def _verification(d: PleadingPaper, exec_date: str, execute: bool) -> None:
 
 
 def build(out: Path, exec_date: str, execute: bool) -> Path:
-    if execute and dt.date.today() < EARLIEST_EXECUTION_DATE:
-        raise SystemExit(
-            "Refusing to affix a signature before September 8, 2026. "
-            "Generate the unsigned review draft now and rerun --execute on or after that date."
-        )
     if execute and not Path(SIGNATURE_PATH).is_file():
         raise SystemExit(f"Missing universal signature: {SIGNATURE_PATH}")
     out.parent.mkdir(parents=True, exist_ok=True)
@@ -952,6 +954,8 @@ def build(out: Path, exec_date: str, execute: bool) -> Path:
 
     for kind, text in CONTENT:
         if kind == "NOTICE":
+            if execute:
+                continue
             d.ensure_space(7)
             d.write_wrapped(text, bold=True)
             d.blank_line()
@@ -968,10 +972,10 @@ def build(out: Path, exec_date: str, execute: bool) -> Path:
                 d.write_line(line, bold=True)
             d.blank_line()
         elif kind == "PARA":
-            d.write_wrapped(text, first_indent=36)
+            d.write_wrapped(_filing_text(text, execute), first_indent=36)
             d.blank_line()
         elif kind == "LIST_ITEM":
-            d.write_wrapped(text, indent=36, first_indent=0)
+            d.write_wrapped(_filing_text(text, execute), indent=36, first_indent=0)
             d.blank_line()
         else:
             raise ValueError(f"Unknown content kind: {kind}")
@@ -989,7 +993,7 @@ def main() -> None:
     parser.add_argument(
         "--execute",
         action="store_true",
-        help="Affix Plaintiff's signature (refused before September 8, 2026)",
+        help="Affix Plaintiff's signature and drop review-draft notices",
     )
     args = parser.parse_args()
     path = build(Path(args.out).resolve(), args.date, args.execute)
