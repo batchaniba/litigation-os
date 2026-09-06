@@ -227,7 +227,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | Date | Matter | Event |
 |---|---|---|
 | Sep. 8, 2026 | 37 | EXECUTE (optional) — Demurrer-hardened verified complaint review draft against Home Depot U.S.A., Inc. for the Tracy distribution-center hire (Matter 37), proposed execution September 8, 2026. |
-| Sep. 8, 2026 | 38 | EXECUTE (optional) — Demurrer-hardened verified complaint review draft against Swift Transportation Co. of Arizona LLC (Matter 38), proposed execution September 8, 2026. ICRAA and UCL are load-bearing. |
+| Sep. 8, 2026 | 38 | EXECUTE (optional) — Demurrer-hardened verified complaint review draft against Swift Transportation Co. of Arizona LLC (Matter 38), proposed execution September 8, 2026. NSOPW remained Processing. |
 | Sep. 8, 2026 | 39 | EXECUTE (optional) — Demurrer-hardened verified complaint review draft against Best Buy Co., Inc. and First Advantage Background Services Corp. (Matter 39), proposed execution September 8, 2026. |
 | Sep. 8, 2026 | 36 | EXECUTE (optional) — Demurrer-hardened verified complaint review draft against AT&T Mobility Services LLC and First Advantage Background Services Corp. (Matter 36), proposed execution September 8, 2026. |
 | Sep. 8, 2026 | 26 | UPS reply deadline — Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). E.D. Cal. L.R. 230(d): reply no later than 10 days after the opposition was filed. |
@@ -249,7 +249,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | Sep. 21, 2026 | 28 | Responsive pleading deadline (computed) — Shannon Smith, LCSW, and HOPE Psychotherapy, Inc., Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504-LJC) |
 | Sep. 22, 2026 | 29 | Accurate Background LLC responsive pleading deadline (extended) — Newanforbi v. Amazon.com Services, LLC et al. (Matter 29, N.D. Cal. No. 4:26-cv-09249-ASK). |
 | Sep. 22, 2026 | 29 | Amazon.com Services, LLC responsive pleading deadline (extended) — Newanforbi v. Amazon.com Services, LLC et al. (Matter 29, N.D. Cal. No. 4:26-cv-09249-ASK). |
-| Sep. 26, 2026 | 38 | OUTER BOUND — CCP § 338(a) three-year statutory-liability clock on the Swift ICRAA / alternative § 290.46(j) counts if accrual is the Sept. 26, 2023 pre-adverse email. Post-adverse is Oct. 5, 2023 (Oct. 5, 2026). |
+| Sep. 26, 2026 | 38 | OUTER BOUND — CCP § 338(a) three-year statutory-liability clock on the Swift § 290.46(j) / ICRAA counts if accrual is the Sept. 26, 2023 pre-adverse email. Post-adverse is Oct. 5, 2023 (Oct. 5, 2026). |
 | Sep. 30, 2026 | 29 | 28 U.S.C. §1447(c) remand window closes (computed) — Newanforbi v. Amazon.com Services, LLC et al., USDC N.D. Cal. No. 3:26-cv-09249-ASK. |
 | Sep. 30, 2026 | 24 | Hearing on Defendant Serrato's Motion to Dismiss FAC (Dkt. 18) — 1:30 p.m., Mag. Ajay S. Krishnan, Oakland Courtroom 4, 3rd Floor — Newanforbi v. Serrato (4:26-cv-05953-ASK). |
 | Oct. 1, 2026 | 19 | Habeas ruling calendar (computed) — Newanforbi v. Macomber (C2604791). |
