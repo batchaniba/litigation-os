@@ -20,7 +20,7 @@ numbers, so a citation in a draft can be traced to a source page rather than tru
 | **No text layer (not searched)** | **8** |
 | Unreadable | 0 |
 | Citation scan skipped | 211 |
-| Distinct citations | 3,810 |
+| Distinct citations | 3,806 |
 | Total occurrences | 15,784 |
 
 A PDF with no text layer yields no citations. That is **not** the same as containing
@@ -33,8 +33,8 @@ boilerplate (and OCR noise) is not this litigant's authority.
 
 | Kind | Distinct |
 |---|---|
-| `case_name` | 1093 |
-| `authority` | 989 |
+| `case_name` | 1091 |
+| `authority` | 987 |
 | `case_reporter` | 828 |
 | `statute_state` | 261 |
 | `section_shorthand` | 168 |
@@ -70,7 +70,7 @@ folder-derived attribution reported zero for Matters 1, 2, 7 and 20.
 | 29 | Newanforbi v. Amazon.com Services, LLC | 681 |
 | 30 | Newanforbi v. Moua, et al. | 100 |
 | 31 | Newanforbi v. First Advantage LLC | 0 |
-| 32 | Nforbi v. Meza-Gonzalez, et al | 883 |
+| 32 | Nforbi v. Meza-Gonzalez, et al | 879 |
 | 33 | Nforbi v. Candelaria et al. | 548 |
 | 34 | Newanforbi v. Counseling and Psychotherapy C | 0 |
 | 35 | Ngwa Nforbi v. Ross Stores, Inc., et al. | 16 |
@@ -78,8 +78,8 @@ folder-derived attribution reported zero for Matters 1, 2, 7 and 20.
 
 ## Highest-exposure citations
 
-764 of 989 paired authorities do not appear in the July audit. Of those,
-**213 are asserted only in Plaintiff's own filings**, with no court order or
+762 of 987 paired authorities do not appear in the July audit. Of those,
+**211 are asserted only in Plaintiff's own filings**, with no court order or
 opposing brief in the corpus citing them back. Unverified *and* uncorroborated is where a
 fabricated or miscited authority survives undetected — the queue worth working first.
 
@@ -114,6 +114,7 @@ fabricated or miscited authority survives undetected — the queue worth working
 | 6 | Collins v. Virginia, 584 U.S. 586 (2018) | 32 |
 | 6 | Home v. Dep't of Health Care Services, 204 Cal.App. 4th 676 (2012) | 9 |
 | 6 | Illinois v. Caballes, 543 U.S. 405 (2005) | 32 |
+| 6 | Rio Properties, Inc. v. Rio Int'l Interlink, 284 F. 3d 1007 | 32 |
 | 6 | See Fermino v. Fedco, Inc, 7 Cal. 4th 701 (1994) | 35 |
 | 5 | Bd. of Educ. v. Doyle, 429 U.S. 274 (1977) | 24, 30 |
 | 5 | Behan v. Alexis, 116 Cal.App. 3d 403 (1981) | 33 |
@@ -124,9 +125,8 @@ fabricated or miscited authority survives undetected — the queue worth working
 | 4 | Bureerong v. Uvawas, 922 F. Supp. 1450 | 24 |
 | 4 | Burrell v. Jackson, 2003 WL 23545858 | 7, 32, 33 |
 | 4 | Capp v. Cnty. of San Diego, 940 F. 3d 1046 | 24 |
-| 4 | Cedars-Sinai Medical Center v. Superior Court, 18 Cal. 4th 1 (1998) | 22, 25, 26 |
 
-_213 total; full list in the JSON._
+_211 total; full list in the JSON._
 
 ## Known-bad citations from the July audit — current locations
 

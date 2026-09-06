@@ -38,10 +38,10 @@
       }
     }
   },
-  "corpusAuthorities": 989,
+  "corpusAuthorities": 987,
   "statusCounts": {
     "UNVERIFIED": 485,
-    "VERIFIED": 462,
+    "VERIFIED": 460,
     "MISCHARACTERIZED": 6,
     "MISCITED": 30,
     "NOT_FOUND": 6
@@ -8814,6 +8814,62 @@
       "priority": "P2_joined"
     },
     {
+      "citation": "Rio Properties, Inc. v. Rio Int'l Interlink, 284 F. 3d 1007",
+      "kind": "authority",
+      "occurrenceCount": 6,
+      "matters": [
+        32
+      ],
+      "roles": [
+        "other",
+        "plaintiff_filing"
+      ],
+      "plaintiffOnly": true,
+      "status": "VERIFIED",
+      "statusSource": "Round 11 CourtListener + CAP lookup",
+      "notes": "Existence only. Pin 284 F.3d 1007 is Rio Properties, Inc. v. Rio International Interlink, Rio Properties, Inc. v. Rio International Interlink. Sources: https://www.courtlistener.com/opinion/777052/rio-properties-inc-v-rio-international-interlink-rio-properties-inc/ ; https://static.case.law/f3d/284/html/1007-01.html. Characterization still needs opinion text.",
+      "sampleContext": "lculated to give actual notice. (Fed. R. Civ. P. 4(e)(1); Cal. Code Civ. Proc. \u00a7 413.30; Mullane v. Central Hanover Bank & Trust Co., 339 U.S. 306, 314 (1950); Rio Properties, Inc. v. Rio Int'l Interlink, 284 F.3d 1007, 1016-17 (9th Cir. 2002).) GOOD CAUSE APPEARING, IT IS ORDERE",
+      "locations": [
+        {
+          "document": "/documents/matter-32/ndcal/Administrative Motion Packet - DAG Li to Accept Service for Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (Sep 1 2026).pdf",
+          "page": 17,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 13 - Administrative Motion - DAG Li to Accept Service (Filed Sep 3 2026).pdf",
+          "page": 4,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 13 - Administrative Motion Packet - DAG Li to Accept Service (Filed Sep 3 2026).pdf",
+          "page": 4,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 13 - Administrative Motion Packet - DAG Li to Accept Service (Filed Sep 3 2026).pdf",
+          "page": 17,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Dkt 13-1 - Declaration and Exhibits A-C ISO Admin Motion (Filed Sep 3 2026).pdf",
+          "page": 12,
+          "role": "plaintiff_filing",
+          "matter": 32
+        },
+        {
+          "document": "/documents/matter-32/ndcal/Proposed Order - DAG Li to Accept Service for Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (Sep 1 2026).pdf",
+          "page": 2,
+          "role": "other",
+          "matter": 32
+        }
+      ],
+      "priority": "P2_joined"
+    },
+    {
       "citation": "Rodriguez v. Solis, 1 Cal.App. 4th 495 (1991)",
       "kind": "authority",
       "occurrenceCount": 6,
@@ -14462,7 +14518,7 @@
       "status": "VERIFIED",
       "statusSource": "Round 11 pin resolves; official caption differs from index string",
       "notes": "Existence only. Pin 339 U.S. 306 is Mullane v. Central Hanover Bank & Trust Co.. Index string is truncated or OCR-variant; official caption is Mullane v. Central Hanover Bank & Trust Co.. Sources: https://www.courtlistener.com/opinion/104786/mullane-v-central-hanover-bank-trust-co/ ; https://static.case.law/us/339/html/0306-01.html. Characterization still needs opinion text.",
-      "sampleContext": "ented this defendant throughout is a manner of service reasonably calculated to give 4 actual notice. (Fed. R. Civ. P. 4(e)(1); Gal. Code Civ. Proc. \u00a7 413.30; Mullane v. Central 5 Hanover Bank & Timst Co.^ 339 U.S. 306, 314(1950); Rio Propeiiies, Inc. v. Rio Int'l Interlink., 6 2",
+      "sampleContext": "ented this defendant throughout is a manner of service reasonably calculated to give 4 actual notice. (Fed. R. Civ. P. 4(e)(1); Gal. Code Civ. Proc. \u00a7 413.30; Mullane v. Central 5 Hanover Bank & Timst Co.^ 339 U.S. 306, 314(1950); Rio Properties, Inc. v. Rio Int'l Interlink., 6 2",
       "locations": [
         {
           "document": "/documents/matter-32/ndcal/Dkt 13 - Administrative Motion Packet - DAG Li to Accept Service (Filed Sep 3 2026).pdf",
@@ -14668,37 +14724,6 @@
       "priority": "P2_joined"
     },
     {
-      "citation": "Properties, Inc. v. Rio Int'llnterlink, 284 F. 3d 1007",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        32
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "VERIFIED",
-      "statusSource": "Round 11 pin resolves; official caption differs from index string",
-      "notes": "Existence only. Pin 284 F.3d 1007 is Rio Properties, Inc. v. Rio International Interlink, Rio Properties, Inc. v. Rio International Interlink. Index string is truncated or OCR-variant; official caption is Rio Properties, Inc. v. Rio International Interlink, Rio Properties, Inc. v. Rio International Interlink. Sources: https://www.courtlistener.com/opinion/777052/rio-properties-inc-v-rio-international-interlink-rio-properties-inc/ ; https://static.case.law/f3d/284/html/1007-01.html. Characterization still needs opinion text.",
-      "sampleContext": "1 Properties, Inc. v. Rio Int'llnterlink, 284 F.3d 1007, 1016-17 (9th Cir. 2002). 2 3 Directing Li to accept the summons and the operative First Amended Complaint, and 4 treating delivery to him at",
-      "locations": [
-        {
-          "document": "/documents/matter-32/ndcal/Dkt 13 - Administrative Motion - DAG Li to Accept Service (Filed Sep 3 2026).pdf",
-          "page": 4,
-          "role": "plaintiff_filing",
-          "matter": 32
-        },
-        {
-          "document": "/documents/matter-32/ndcal/Dkt 13 - Administrative Motion Packet - DAG Li to Accept Service (Filed Sep 3 2026).pdf",
-          "page": 4,
-          "role": "plaintiff_filing",
-          "matter": 32
-        }
-      ],
-      "priority": "P2_joined"
-    },
-    {
       "citation": "Richardson v. McKnight, 117 S.Ct. 2100",
       "kind": "authority",
       "occurrenceCount": 2,
@@ -14725,69 +14750,6 @@
           "page": 12,
           "role": "other",
           "matter": 28
-        }
-      ],
-      "priority": "P2_joined"
-    },
-    {
-      "citation": "Rio Propeiiies, Inc. v. Rio Int'l Interlink, 284 F. 3d 1007",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        32
-      ],
-      "roles": [
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "VERIFIED",
-      "statusSource": "Round 11 CourtListener + CAP lookup",
-      "notes": "Existence only. Pin 284 F.3d 1007 is Rio Properties, Inc. v. Rio International Interlink, Rio Properties, Inc. v. Rio International Interlink. Sources: https://www.courtlistener.com/opinion/777052/rio-properties-inc-v-rio-international-interlink-rio-properties-inc/ ; https://static.case.law/f3d/284/html/1007-01.html. Characterization still needs opinion text.",
-      "sampleContext": "ed to give 4 actual notice. (Fed. R. Civ. P. 4(e)(1); Gal. Code Civ. Proc. \u00a7 413.30; Mullane v. Central 5 Hanover Bank & Timst Co.^ 339 U.S. 306, 314(1950); Rio Propeiiies, Inc. v. Rio Int'l Interlink., 6 284 F.3d 1007, 1016-17 (9th Cir. 2002).) 7 8 GOOD CAUSE APPEARING, IT IS OR",
-      "locations": [
-        {
-          "document": "/documents/matter-32/ndcal/Dkt 13 - Administrative Motion Packet - DAG Li to Accept Service (Filed Sep 3 2026).pdf",
-          "page": 17,
-          "role": "plaintiff_filing",
-          "matter": 32
-        },
-        {
-          "document": "/documents/matter-32/ndcal/Dkt 13-1 - Declaration and Exhibits A-C ISO Admin Motion (Filed Sep 3 2026).pdf",
-          "page": 12,
-          "role": "plaintiff_filing",
-          "matter": 32
-        }
-      ],
-      "priority": "P2_joined"
-    },
-    {
-      "citation": "Rio Properties, Inc. v. Rio Int'l Interlink, 284 F. 3d 1007",
-      "kind": "authority",
-      "occurrenceCount": 2,
-      "matters": [
-        32
-      ],
-      "roles": [
-        "other",
-        "plaintiff_filing"
-      ],
-      "plaintiffOnly": true,
-      "status": "VERIFIED",
-      "statusSource": "Round 11 CourtListener + CAP lookup",
-      "notes": "Existence only. Pin 284 F.3d 1007 is Rio Properties, Inc. v. Rio International Interlink, Rio Properties, Inc. v. Rio International Interlink. Sources: https://www.courtlistener.com/opinion/777052/rio-properties-inc-v-rio-international-interlink-rio-properties-inc/ ; https://static.case.law/f3d/284/html/1007-01.html. Characterization still needs opinion text.",
-      "sampleContext": "lculated to give actual notice. (Fed. R. Civ. P. 4(e)(1); Cal. Code Civ. Proc. \u00a7 413.30; Mullane v. Central Hanover Bank & Trust Co., 339 U.S. 306, 314 (1950); Rio Properties, Inc. v. Rio Int'l Interlink, 284 F.3d 1007, 1016-17 (9th Cir. 2002).) GOOD CAUSE APPEARING, IT IS ORDERE",
-      "locations": [
-        {
-          "document": "/documents/matter-32/ndcal/Administrative Motion Packet - DAG Li to Accept Service for Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (Sep 1 2026).pdf",
-          "page": 17,
-          "role": "plaintiff_filing",
-          "matter": 32
-        },
-        {
-          "document": "/documents/matter-32/ndcal/Proposed Order - DAG Li to Accept Service for Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (Sep 1 2026).pdf",
-          "page": 2,
-          "role": "other",
-          "matter": 32
         }
       ],
       "priority": "P2_joined"

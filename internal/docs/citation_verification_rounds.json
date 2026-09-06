@@ -3257,7 +3257,7 @@
     "date": "2026-09-06",
     "artifact": "internal/docs/citation_lookup_p0.json",
     "script": "internal/scripts/lookup-citations.py (P0 queue) + overlay-citation-lookups.py",
-    "indexNote": "OCR_PAGE_FIXES in build-citation-index.py merged garbled plaintiff-filing strings (Knudsen, California DUI Lawyers, Medina, Torres, etc.). Index: 875 PDFs, 8,482 pages, 3,810 distinct cites; no_text_layer still 8. P0 dropped 70\u219254 before lookup.",
+    "indexNote": "OCR_PAGE_FIXES in build-citation-index.py merged garbled plaintiff-filing strings (Knudsen, California DUI Lawyers, Medina, Torres, Rio Properties wrap, etc.). Index: 875 PDFs, 8,482 pages, 3,806 distinct cites; no_text_layer still 8. P0 dropped 70\u219254 before lookup.",
     "probeCount": 54,
     "consensusCounts": {
       "FOUND": 28,

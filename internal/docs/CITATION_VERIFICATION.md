@@ -11,7 +11,7 @@ The campaign is entering a phase where claims are cognizable and motions to dism
 | Status | Count |
 |---|---|
 | UNVERIFIED | 485 |
-| VERIFIED | 462 |
+| VERIFIED | 460 |
 | MISCITED | 30 |
 | MISCHARACTERIZED | 6 |
 | NOT_FOUND | 6 |

@@ -375,6 +375,10 @@ OCR_PAGE_FIXES = (
     (re.compile(r"Devenpeck v\. Alford,\s*3 U\.S\."), "Devenpeck v. Alford, 543 U.S."),
     (re.compile(r"Propeiiies"), "Properties"),
     (re.compile(r"Int'llnterlink"), "Int'l Interlink"),
+    # Line-wrap drops the leading "Rio". Do not fire when the caption already
+    # starts with Rio — that produced "Rio Rio Properties".
+    (re.compile(r"(?<!Rio )Properties, Inc\. v\. Rio Int'?l Interlink"),
+     "Rio Properties, Inc. v. Rio Int'l Interlink"),
 )
 
 
