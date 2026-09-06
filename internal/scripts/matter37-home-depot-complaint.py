@@ -157,9 +157,15 @@ CONTENT = [
         "5. The contents, vendor, order time, completion time, transmission, "
         "access log, adjudication status, and reason codes of any Home Depot "
         "background check concerning Plaintiff are exclusively within "
-        "Defendants' possession. Plaintiff pleads the screening and use "
-        "allegations on information and belief, states the facts supporting "
-        "that belief, and will seek those records in discovery.",
+        "Defendants' possession. Plaintiff does not attach a Home Depot report "
+        "because he does not have one. He does not allege the contents of that "
+        "report as a known fact. Code of Civil Procedure section 425.10 "
+        "requires a statement of the facts constituting the cause of action in "
+        "ordinary and concise language. Section 452 requires this Court to "
+        "construe the pleading liberally with a view to substantial justice "
+        "between the parties. Facts exclusively in Defendants' possession are "
+        "properly pleaded on information and belief. Plaintiff states the "
+        "facts supporting that belief and will seek the report in discovery."
     ),
     (
         "PARA",
@@ -475,10 +481,17 @@ CONTENT = [
         "conviction that appears in ordinary court records is not this claim. "
         "This claim is the use of information disclosed pursuant to section "
         "290.46. Lerma v. Amazon.com Services, LLC, C.D. Cal. No. 8:22-cv-01727, "
-        "Dkt. 36, dismissed a Megan's Law count where the report itself showed "
-        "ordinary court records and a national sex-offender search returning no "
-        "record. Plaintiff pleads the opposite inference here and will stand or "
-        "fall on what Home Depot's report actually says.",
+        "Dkt. 36, dismissed a Megan's Law count after the employer's report was "
+        "in the record and showed ordinary court records and a national "
+        "sex-offender search returning no record. That dismissal turned on the "
+        "report. This Complaint does not attach Home Depot's report. A court "
+        "cannot perform a Lerma analysis on the face of a complaint that does "
+        "not contain the employer's report. Defendants may not obtain a "
+        "pleading-stage dismissal by withholding the one document that would "
+        "confirm or refute the inference. Plaintiff pleads the opposite "
+        "inference here. If production shows ordinary court records and no "
+        "California-registry source, this count will stand or fall on that "
+        "record — after production, not before."
     ),
     ("SUBHEAD", "D. Knowledge, Concealment, and Harm"),
     (
@@ -526,6 +539,42 @@ CONTENT = [
         "reasonable certainty and without double recovery against other "
         "dockets that arise from different employers and different decisions.",
     ),
+    ("SUBHEAD", "E. Inspection Rights and Why a Demurrer Cannot Replicate Lerma"),
+    (
+        "PARA",
+        "48. The section 290.46(j) claim has four elements: (a) information "
+        "disclosed pursuant to section 290.46; (b) use of that information by "
+        "a defendant; (c) a purpose relating to employment; and (d) the use "
+        "was not to protect a person at risk and was not otherwise authorized "
+        "by law. Plaintiff pleads each element. Elements (a) and (b) are "
+        "pleaded on information and belief because the report, the "
+        "source-of-record line, and the adjudication code are exclusively in "
+        "Defendants' files. Elements (c) and (d) follow from the Tracy Center "
+        "hire and the later employment decision, which are purposes relating "
+        "to employment and are not, without more, protection of a person at "
+        "risk.",
+    ),
+    (
+        "PARA",
+        "49. A demurrer tests the pleading, not the unproduced report. "
+        "Defendants may deny registry use. They may not convert that denial "
+        "into a Lerma dismissal while the report remains in their possession. "
+        "The Second Cause of Action under Civil Code sections 1786.40 and "
+        "1786.50 is independent of the registry-use inference. A notice "
+        "failure can reach discovery even if the section 290.46(j) count "
+        "later fails on the contents of the report.",
+    ),
+    (
+        "PARA",
+        "50. If Plaintiff was an employee of Home Depot, Labor Code section "
+        "1198.5 entitles him to inspect and receive a copy of the personnel "
+        "records Home Depot maintained relating to his performance or to any "
+        "grievance concerning him. Plaintiff has not yet served a section "
+        "1198.5 request. He will. Those records, together with the "
+        "background-check order and report, are the discrete set that will "
+        "confirm or refute registry use. Their present absence from "
+        "Plaintiff's files is not a defect in this pleading.",
+    ),
     ("HEADER", "VI.\nFIRST CAUSE OF ACTION"),
     (
         "SUBHEAD",
@@ -534,25 +583,25 @@ CONTENT = [
     ),
     (
         "PARA",
-        "48. Plaintiff realleges paragraphs 1 through 47, except allegations "
+        "51. Plaintiff realleges paragraphs 1 through 50, except allegations "
         "expressly pleaded in the alternative are incorporated only to the "
         "extent consistent with this cause.",
     ),
     (
         "PARA",
-        "49. Penal Code section 290.46(j)(1) authorizes use of information "
+        "52. Penal Code section 290.46(j)(1) authorizes use of information "
         "disclosed under that section only to protect a person at risk, except "
         "as otherwise authorized by law.",
     ),
     (
         "PARA",
-        "50. Section 290.46(j)(2)(E) prohibits use of information disclosed "
+        "53. Section 290.46(j)(2)(E) prohibits use of information disclosed "
         "under that section for purposes relating to employment unless another "
         "law authorizes the use.",
     ),
     (
         "PARA",
-        "51. Section 290.46(j)(4)(A) makes the user liable for the actual "
+        "54. Section 290.46(j)(4)(A) makes the user liable for the actual "
         "damages, and any amount that may be determined by a jury or a court "
         "sitting without a jury, not exceeding three times the amount of actual "
         "damage, and not less than two hundred fifty dollars ($250), and "
@@ -561,41 +610,42 @@ CONTENT = [
     ),
     (
         "PARA",
-        "52. The $25,000 figure in subdivision (j)(4)(A) is a cap on the civil "
+        "55. The $25,000 figure in subdivision (j)(4)(A) is a cap on the civil "
         "penalty, not a substitute floor that displaces actual damages. "
         "Plaintiff seeks the remedies the statute authorizes according to proof.",
     ),
     (
         "PARA",
-        "53. On information and belief, Home Depot, and such DOE Defendants as "
-        "ordered, furnished, scored, or acted on the report, used information "
-        "disclosed pursuant to section 290.46 concerning Plaintiff.",
+        "56. On information and belief, each element alleged in paragraph 48 "
+        "is satisfied. Home Depot, and such DOE Defendants as ordered, "
+        "furnished, scored, or acted on the report, used information disclosed "
+        "pursuant to section 290.46 concerning Plaintiff.",
     ),
     (
         "PARA",
-        "54. The use related directly to employment: it concerned the Tracy "
+        "57. The use related directly to employment: it concerned the Tracy "
         "Center hire or the later decision that ended or prevented Plaintiff's "
         "work there.",
     ),
     (
         "PARA",
-        "55. The use was not authorized by section 290.46(j)(1) or by any other "
+        "58. The use was not authorized by section 290.46(j)(1) or by any other "
         "provision of law applicable to this warehouse and fulfillment "
         "assignment.",
     ),
     (
         "PARA",
-        "56. Defendants knew or should have known that employment use was "
+        "59. Defendants knew or should have known that employment use was "
         "prohibited, for the reasons alleged in paragraph 43.",
     ),
     (
         "PARA",
-        "57. Defendants' use was a substantial factor in the employment "
+        "60. Defendants' use was a substantial factor in the employment "
         "decision and caused the loss and injury alleged.",
     ),
     (
         "PARA",
-        "58. Plaintiff seeks the remedies authorized by section 290.46(j)(4)(A), "
+        "61. Plaintiff seeks the remedies authorized by section 290.46(j)(4)(A), "
         "including actual and statutory relief according to proof, and "
         "preventive relief under subdivision (j)(4)(B) to restrain any pattern "
         "or practice of employment use of Megan's Law information at Home "
@@ -610,12 +660,12 @@ CONTENT = [
     ),
     (
         "PARA",
-        "59. Plaintiff realleges paragraphs 1 through 47 and 53 through 57 to "
+        "62. Plaintiff realleges paragraphs 1 through 50 and 56 through 60 to "
         "the extent consistent with this cause.",
     ),
     (
         "PARA",
-        "60. On information and belief, a consumer reporting agency or "
+        "63. On information and belief, a consumer reporting agency or "
         "investigative consumer reporting agency assembled or evaluated "
         "information concerning Plaintiff's character, general reputation, "
         "personal characteristics, or mode of living for employment purposes "
@@ -623,44 +673,49 @@ CONTENT = [
     ),
     (
         "PARA",
-        "61. Home Depot procured or caused that report to be prepared and was "
+        "64. Home Depot procured or caused that report to be prepared and was "
         "the user of its information.",
     ),
     (
         "PARA",
-        "62. On information and belief, the report was obtained before Home "
+        "65. On information and belief, the report was obtained before Home "
         "Depot made the employment decision alleged in paragraph 29.",
     ),
     (
         "PARA",
-        "63. Civil Code section 1786.40(a) required Home Depot, under "
+        "66. Civil Code section 1786.40(a) required Home Depot, under "
         "circumstances in which employment was denied or ended and an "
         "investigative consumer report had been obtained, to advise Plaintiff "
         "of that fact and supply the agency's name and address.",
     ),
     (
         "PARA",
-        "64. On information and belief, Home Depot did not comply. "
+        "67. On information and belief, Home Depot did not comply. "
         "[PLAINTIFF MUST CONFIRM THAT HE WAS NOT TOLD A REPORT HAD BEEN "
         "OBTAINED AND WAS NOT GIVEN THE AGENCY'S NAME AND ADDRESS.]",
     ),
     (
         "PARA",
-        "65. The omission prevented Plaintiff from timely obtaining the Home "
+        "68. The omission prevented Plaintiff from timely obtaining the Home "
         "Depot-specific report, testing whether its source was the California "
         "registry or ordinary court records, and invoking his statutory "
-        "inspection and dispute rights.",
+        "inspection and dispute rights. This ICRAA count does not depend on "
+        "proving Penal Code section 290.46(j). A notice failure under Civil "
+        "Code section 1786.40 is independently actionable if an investigative "
+        "consumer report was obtained and employment was denied or ended "
+        "without the required advice. That count can reach discovery even if "
+        "the registry-use inference later fails.",
     ),
     (
         "PARA",
-        "66. Under Civil Code section 1786.50, Plaintiff seeks actual damages "
+        "69. Under Civil Code section 1786.50, Plaintiff seeks actual damages "
         "or $10,000, whichever is greater, costs, attorney's fees if later "
         "represented, and punitive damages upon proof of gross negligence or "
         "willfulness.",
     ),
     (
         "PARA",
-        "67. This ICRAA count is not a Fair Credit Reporting Act count. "
+        "70. This ICRAA count is not a Fair Credit Reporting Act count. "
         "Plaintiff has not pleaded 15 U.S.C. section 1681b(b)(3) in this "
         "Complaint. He reserves amendment if production shows Home Depot based "
         "the decision in whole or in part on a consumer report and failed to "
@@ -669,7 +724,7 @@ CONTENT = [
     ),
     (
         "PARA",
-        "68. Plaintiff also reserves amendment under Civil Code section 1786.16 "
+        "71. Plaintiff also reserves amendment under Civil Code section 1786.16 "
         "if production shows Home Depot procured the report before providing "
         "the required standalone disclosure and obtaining written authorization. "
         "He does not presently allege nonauthorization as an established fact.",
@@ -682,25 +737,25 @@ CONTENT = [
     ),
     (
         "PARA",
-        "69. Plaintiff realleges paragraphs 1 through 68 to the extent "
+        "72. Plaintiff realleges paragraphs 1 through 71 to the extent "
         "consistent with this equitable cause.",
     ),
     (
         "PARA",
-        "70. Defendants engaged in unlawful practices by violating Penal Code "
+        "73. Defendants engaged in unlawful practices by violating Penal Code "
         "section 290.46(j) and, if proven, Civil Code section 1786.40, as "
         "alleged.",
     ),
     (
         "PARA",
-        "71. Defendants engaged in unfair practices by structuring employment "
+        "74. Defendants engaged in unfair practices by structuring employment "
         "screening so a hire at the Tracy Center could be undone on secret "
         "registry-derived information while denying the worker the source, "
         "the report, and an opportunity to respond.",
     ),
     (
         "PARA",
-        "72. Plaintiff suffered injury in fact and lost money or property "
+        "75. Plaintiff suffered injury in fact and lost money or property "
         "through lost wages from the ended Tracy Center employment and other "
         "economic losses to be proven. Plaintiff does not seek future unearned "
         "wages as UCL restitution. He seeks restitution only of money or "
@@ -709,13 +764,13 @@ CONTENT = [
     ),
     (
         "PARA",
-        "73. Legal damages are not an adequate remedy for Defendants' "
+        "76. Legal damages are not an adequate remedy for Defendants' "
         "retention, use, and dissemination of registry-derived screening data "
         "or their ongoing employment-screening practices.",
     ),
     (
         "PARA",
-        "74. Plaintiff seeks an injunction requiring Defendants to cease "
+        "77. Plaintiff seeks an injunction requiring Defendants to cease "
         "prohibited employment use of California registry information at "
         "California facilities including the Tracy Center; preserve and "
         "disclose the source and audit trail of Plaintiff's screening; and "
@@ -723,25 +778,26 @@ CONTENT = [
     ),
     (
         "PARA",
-        "75. Plaintiff also seeks restitution and declaratory relief ancillary "
+        "78. Plaintiff also seeks restitution and declaratory relief ancillary "
         "to the injunction to the extent authorized by Business and Professions "
         "Code section 17203.",
     ),
     ("HEADER", "IX.\nPRESERVATION OF EVIDENCE"),
     (
         "PARA",
-        "76. Defendants are on notice to preserve Plaintiff's complete Tracy "
-        "Center personnel and hiring file; offer, onboarding, badge, time, "
-        "attendance, and pay records; the background-check order, disclosure, "
-        "authorization, report, component searches, adjudication, access, and "
-        "cancellation logs; communications of every person who recommended, "
-        "approved, or implemented the employment decision; vendor contracts "
-        "and adjudication guides in effect in 2024; and policies governing "
+        "79. Defendants are on notice to preserve Plaintiff's complete Tracy "
+        "Center personnel and hiring file, including records subject to Labor "
+        "Code section 1198.5; offer, onboarding, badge, time, attendance, and "
+        "pay records; the background-check order, disclosure, authorization, "
+        "report, component searches, adjudication, access, and cancellation "
+        "logs; communications of every person who recommended, approved, or "
+        "implemented the employment decision; vendor contracts and "
+        "adjudication guides in effect in 2024; and policies governing "
         "Megan's Law, FCRA, ICRAA, and fair-chance review.",
     ),
     (
         "PARA",
-        "77. Relevant electronically stored information includes applicant-"
+        "80. Relevant electronically stored information includes applicant-"
         "tracking and HRIS audit fields, event timestamps, reason codes, "
         "report-view logs, emails, chats, SMS, and data-retention records from "
         "July 1, 2024 through December 31, 2024, and any later date on which "
@@ -749,7 +805,7 @@ CONTENT = [
     ),
     (
         "PARA",
-        "78. The July 2024 First Advantage/UPS report is relevant to "
+        "81. The July 2024 First Advantage/UPS report is relevant to "
         "retrievability and matching methodology. It is not a substitute for "
         "Home Depot's own file.",
     ),
@@ -810,7 +866,7 @@ CONTENT = [
     ("HEADER", "XI.\nDEMAND FOR JURY TRIAL"),
     (
         "PARA",
-        "79. Plaintiff demands trial by jury on all causes of action and issues "
+        "82. Plaintiff demands trial by jury on all causes of action and issues "
         "so triable.",
     ),
 ]

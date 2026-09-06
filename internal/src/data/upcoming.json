@@ -1,7 +1,7 @@
 [
   {
     "date": "Sep. 8, 2026",
-    "event": "EXECUTE (optional) — Verified complaint review draft against Home Depot U.S.A., Inc. for the Tracy distribution-center hire (Matter 37), proposed execution September 8, 2026. Unsigned until Plaintiff confirms the hire, the employment decision and its date, any background-check notices, and wages. Do not file the review draft as-is. San Joaquin Superior Court. Serve CSC, not 5395 Hopkins Road.",
+    "event": "EXECUTE (optional) — Demurrer-hardened verified complaint review draft against Home Depot U.S.A., Inc. for the Tracy distribution-center hire (Matter 37), proposed execution September 8, 2026. Unsigned until Plaintiff confirms the hire, the employment decision and its date, any background-check notices, and wages. Do not file the review draft as-is. San Joaquin Superior Court. Serve CSC, not 5395 Hopkins Road. Serrato disclosures are already on this day — this execution is optional.",
     "matters": [
       37
     ],
@@ -12,18 +12,7 @@
   },
   {
     "date": "Sep. 8, 2026",
-    "event": "EXECUTE (optional) — Verified complaint review draft against Swift Transportation Co. of Arizona LLC (Matter 38), proposed execution September 8, 2026. Unsigned until Plaintiff confirms the driver role, decrypts the Sept. 26, 2023 pre-adverse packet, and confirms nonreceipt of the underlying Asurint/Tenstreet/DriverIQ reports. Do not file the review draft as-is. San Joaquin Superior Court. Serve the current SOS agent, not a terminal.",
-    "matters": [
-      38
-    ],
-    "type": "deadline",
-    "upcoming": true,
-    "actor": "you",
-    "source": "/documents/matter-38/Verified Complaint - Newanforbi v Swift Transportation Co of Arizona LLC (REVIEW DRAFT for Sep 8 2026).pdf"
-  },
-  {
-    "date": "Sep. 8, 2026",
-    "event": "EXECUTE (optional) — Verified complaint review draft against Best Buy Co., Inc. and First Advantage Background Services Corp. (Matter 39), proposed execution September 8, 2026. Unsigned until Plaintiff confirms what happened after the Oct. 17, 2023 warehouse offer, the decision date, notices, and whether he signed Candidate Zone or completed the drug test. Do not file the review draft as-is. San Joaquin Superior Court. Serve the current SOS agents, not a warehouse.",
+    "event": "EXECUTE (optional) — Demurrer-hardened verified complaint review draft against Best Buy Co., Inc. and First Advantage Background Services Corp. (Matter 39), proposed execution September 8, 2026. Unsigned until Plaintiff confirms what happened after the Oct. 17, 2023 warehouse offer, the decision date, notices, and whether he signed Candidate Zone or completed the drug test. Do not file the review draft as-is. San Joaquin Superior Court. Serve the current SOS agents, not a warehouse. Serrato disclosures are already on this day — this execution is optional.",
     "matters": [
       39
     ],
@@ -31,17 +20,6 @@
     "upcoming": true,
     "actor": "you",
     "source": "/documents/matter-39/Verified Complaint - Newanforbi v Best Buy Co Inc et al (REVIEW DRAFT for Sep 8 2026).pdf"
-  },
-  {
-    "date": "Sep. 26, 2026",
-    "event": "OUTER BOUND — CCP § 338(a) three-year statutory-liability clock on the Swift § 290.46(j) count if accrual is the Sept. 26, 2023 pre-adverse email. Post-adverse is Oct. 5, 2023 (Oct. 5, 2026). This is a limitations argument sourced to the Swift FCRA emails, not a court-ordered deadline. File before the earlier date.",
-    "matters": [
-      38
-    ],
-    "type": "deadline",
-    "upcoming": true,
-    "actor": "you",
-    "source": "/documents/matter-38/Swift FCRA Email - Pre-Adverse (Sep 26 2023).pdf"
   },
   {
     "date": "Oct. 17, 2026",

@@ -1,7 +1,7 @@
 [
   {
     "date": "Sep. 8, 2026",
-    "event": "EXECUTE (optional) \u2014 Verified complaint review draft against Home Depot U.S.A., Inc. for the Tracy distribution-center hire (Matter 37), proposed execution September 8, 2026. Unsigned until Plaintiff confirms the hire, the employment decision and its date, any background-check notices, and wages. Do not file the review draft as-is. San Joaquin Superior Court. Serve CSC, not 5395 Hopkins Road.",
+    "event": "EXECUTE (optional) \u2014 Demurrer-hardened verified complaint review draft against Home Depot U.S.A., Inc. for the Tracy distribution-center hire (Matter 37), proposed execution September 8, 2026. Unsigned until Plaintiff confirms the hire, the employment decision and its date, any background-check notices, and wages. Do not file the review draft as-is. San Joaquin Superior Court. Serve CSC, not 5395 Hopkins Road. Serrato disclosures are already on this day \u2014 this execution is optional.",
     "matters": [
       37
     ],
@@ -12,18 +12,18 @@
   },
   {
     "date": "Sep. 8, 2026",
-    "event": "EXECUTE (optional) \u2014 Verified complaint review draft against Swift Transportation Co. of Arizona LLC (Matter 38), proposed execution September 8, 2026. Unsigned until Plaintiff confirms the driver role, decrypts the Sept. 26, 2023 pre-adverse packet, and confirms nonreceipt of the underlying Asurint/Tenstreet/DriverIQ reports. Do not file the review draft as-is. San Joaquin Superior Court. Serve the current SOS agent, not a terminal.",
+    "event": "DO NOT FILE \u2014 Matter 38 Swift complaint retired after decrypt. The Sept. 26, 2023 pre-adverse packet is a Lerma file: NSOPW never completed, no California-registry source, criminal components clear. Do not execute the review draft on September 8, 2026.",
     "matters": [
       38
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "you",
     "source": "/documents/matter-38/Verified Complaint - Newanforbi v Swift Transportation Co of Arizona LLC (REVIEW DRAFT for Sep 8 2026).pdf"
   },
   {
     "date": "Sep. 8, 2026",
-    "event": "EXECUTE (optional) \u2014 Verified complaint review draft against Best Buy Co., Inc. and First Advantage Background Services Corp. (Matter 39), proposed execution September 8, 2026. Unsigned until Plaintiff confirms what happened after the Oct. 17, 2023 warehouse offer, the decision date, notices, and whether he signed Candidate Zone or completed the drug test. Do not file the review draft as-is. San Joaquin Superior Court. Serve the current SOS agents, not a warehouse.",
+    "event": "EXECUTE (optional) \u2014 Demurrer-hardened verified complaint review draft against Best Buy Co., Inc. and First Advantage Background Services Corp. (Matter 39), proposed execution September 8, 2026. Unsigned until Plaintiff confirms what happened after the Oct. 17, 2023 warehouse offer, the decision date, notices, and whether he signed Candidate Zone or completed the drug test. Do not file the review draft as-is. San Joaquin Superior Court. Serve the current SOS agents, not a warehouse. Serrato disclosures are already on this day \u2014 this execution is optional.",
     "matters": [
       39
     ],
@@ -34,12 +34,12 @@
   },
   {
     "date": "Sep. 26, 2026",
-    "event": "OUTER BOUND \u2014 CCP \u00a7 338(a) three-year statutory-liability clock on the Swift \u00a7 290.46(j) count if accrual is the Sept. 26, 2023 pre-adverse email. Post-adverse is Oct. 5, 2023 (Oct. 5, 2026). This is a limitations argument sourced to the Swift FCRA emails, not a court-ordered deadline. File before the earlier date.",
+    "event": "ACADEMIC \u2014 CCP \u00a7 338(a) three-year clock on a Swift \u00a7 290.46(j) count if accrual is the Sept. 26, 2023 pre-adverse. The count is not being filed. The decrypted packet refutes a California-registry source.",
     "matters": [
       38
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "you",
     "source": "/documents/matter-38/Swift FCRA Email - Pre-Adverse (Sep 26 2023).pdf"
   },
@@ -78,7 +78,7 @@
   },
   {
     "date": "Sep. 26, 2023",
-    "event": "SWIFT PRE-ADVERSE \u2014 Swift Recruiting emailed a password-protected Pre_Adverse_Action_Letter_76326281-1916808-encrypted.pdf at 3:09 a.m. The attachment in the portfolio remains encrypted. Contents are not alleged as known facts.",
+    "event": "SWIFT PRE-ADVERSE \u2014 Swift Recruiting emailed a password-protected Pre_Adverse_Action_Letter_76326281-1916808-encrypted.pdf at 3:09 a.m. Later decrypt showed a Lerma file: NSOPW still Processing, no California-registry source, criminal components Clear. The encrypted copy remains the public-site file. Do not publish the decrypted packet.",
     "matters": [
       38
     ],
