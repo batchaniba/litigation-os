@@ -59,7 +59,7 @@ CASES = [
             "AT&T MOBILITY SERVICES LLC, a Delaware",
             "limited liability company; and DOES 1–20, inclusive",
         ],
-        "causes": "9",
+        "causes": "10",
         "stem": "Ngwa Nforbi v AT&T Mobility Services LLC",
     },
     {
@@ -74,7 +74,7 @@ CASES = [
             "HOME DEPOT U.S.A., INC., a Delaware corporation;",
             "and DOES 1 through 20, inclusive",
         ],
-        "causes": "3",
+        "causes": "4",
         "stem": "Ngwa Nforbi v Home Depot USA Inc",
     },
     {
@@ -89,7 +89,7 @@ CASES = [
             "SWIFT TRANSPORTATION CO. OF ARIZONA LLC,",
             "a limited liability company; and DOES 1–20, inclusive",
         ],
-        "causes": "3",
+        "causes": "4",
         "stem": "Ngwa Nforbi v Swift Transportation Co of Arizona LLC",
     },
     {
@@ -104,7 +104,7 @@ CASES = [
             "BEST BUY CO., INC., a Minnesota corporation;",
             "and DOES 1 through 20, inclusive",
         ],
-        "causes": "3",
+        "causes": "4",
         "stem": "Ngwa Nforbi v Best Buy Co Inc",
     },
 ]

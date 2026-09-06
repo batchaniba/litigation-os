@@ -81,9 +81,11 @@ CAPTION_RIGHT = [
     ("INJUNCTIVE RELIEF", True, False),
     ("", False, False),
     ("(1) ICRAA, Civ. Code", False, False),
-    ("      §§ 1786.40, 1786.50;", False, False),
-    ("(2) UCL, B&P Code § 17200;", False, False),
-    ("(3) Penal Code § 290.46(j)", False, False),
+    ("      § 1786.40;", False, False),
+    ("(2) CCRAA, Civ. Code", False, False),
+    ("      § 1785.20.5;", False, False),
+    ("(3) UCL, B&P Code § 17200;", False, False),
+    ("(4) Penal Code § 290.46(j)", False, False),
     ("", False, False),
     ("[Unlimited Civil]", False, True),
     ("[Jury Trial Demanded]", False, True),
@@ -184,8 +186,15 @@ CONTENT = [
         "count, or a FEHA or Fair Chance Act count. The load-bearing claim is "
         "Penal Code section 290.46(j). Companion consumer-report and "
         "unfair-competition counts are pleaded only to the extent the same "
-        "employment use, if proven, also violated those statutes. Plaintiff "
-        "preserves all timely rights to seek leave to amend.",
+        "employment use, if proven, also violated those statutes. ICRAA and "
+        "CCRAA are pleaded in the alternative so the notice claim survives "
+        "whether the First Advantage product was an investigative consumer "
+        "report or an ordinary consumer credit report. Plaintiff does not "
+        "presently plead Labor Code section 432.7 or section 1198.5. He has "
+        "not alleged that any report used an arrest that did not result in a "
+        "conviction, diversion, or a dismissed conviction, and he has not "
+        "yet served a section 1198.5 inspection request. He preserves leave "
+        "to amend if the file later supports those theories.",
     ),
     ("HEADER", "II.\nPARTIES"),
     (
@@ -343,10 +352,36 @@ CONTENT = [
         "PARA",
         "25. Plaintiff does not concede that Code of Civil Procedure section "
         "335.1 or section 340, subdivision (a), supplies the limitations period "
-        "for the section 290.46(j) count. He does not plead a Tameny or "
-        "personal-injury count. A two-year clock from an October 2023 decision "
-        "would have closed in October 2025. He has not pleaded the Fair Credit "
-        "Reporting Act.",
+        "for the section 290.46(j) count. The actual-damages and discretionary "
+        "enhancement authorized by section 290.46(j)(4)(A) are a liability "
+        "created by statute, not an action upon a statute for a penalty. The "
+        "labeled civil-penalty slice is pleaded in the alternative and is not "
+        "the sole theory. He does not plead a Tameny or personal-injury count. "
+        "A two-year clock from an October 2023 decision would have closed in "
+        "October 2025. He has not pleaded the Fair Credit Reporting Act.",
+    ),
+    (
+        "PARA",
+        "25A. Civil Code section 1786.52 requires that an ICRAA action be "
+        "brought within two years from the date the plaintiff knew or should "
+        "have known of the violation. Plaintiff received no Civil Code "
+        "section 1786.40 advice and no copy of any Best Buy report. He could "
+        "not discover from a notice he never received that an investigative "
+        "consumer report had been obtained and used. He knew in October 2023 "
+        "that Best Buy had required a background authorization and that "
+        "communication then stopped. He did not then know that an "
+        "investigative consumer report had actually been obtained. The face "
+        "of this Complaint does not establish a discovery date that bars the "
+        "ICRAA count. If Defendants interpose section 1786.52, the date is "
+        "a fact to be proven.",
+    ),
+    (
+        "PARA",
+        "25B. The Unfair Competition Law claim is timely under Business and "
+        "Professions Code section 17208's four-year period. That period is "
+        "independent of any shorter period that may apply to a borrowed "
+        "predicate. The UCL count is not pleaded to resurrect a time-barred "
+        "statutory right.",
     ),
     ("HEADER", "V.\nCOMMON FACTUAL ALLEGATIONS"),
     ("SUBHEAD", "A. The Application and the Offer"),
@@ -506,7 +541,8 @@ CONTENT = [
         "42. On information and belief, Best Buy used that information for "
         "purposes relating to employment when it made the decision alleged in "
         "paragraph 34. The use was a substantial factor in the decision. "
-        "First Advantage furnished or scored the information for that use.",
+        "First Advantage is not named as a defendant. This count is Best "
+        "Buy's use, not a vendor's mere retrieval or republication.",
     ),
     (
         "PARA",
@@ -668,15 +704,19 @@ CONTENT = [
     ),
     (
         "PARA",
-        "63. The omission prevented Plaintiff from timely obtaining the Best "
-        "Buy-specific report, testing whether its source was the California "
-        "registry or ordinary court records, and invoking his statutory "
-        "inspection and dispute rights. This ICRAA count does not depend on "
-        "proving Penal Code section 290.46(j). A notice failure under Civil "
-        "Code section 1786.40 is independently actionable if an investigative "
-        "consumer report was obtained and employment was denied without the "
-        "required advice. That count can reach discovery even if the "
-        "registry-use inference later fails.",
+        "63. The omission caused incremental harm distinct from the denial "
+        "itself. Plaintiff could not timely obtain the Best Buy-specific "
+        "report, test whether its source was the California registry or "
+        "ordinary court records, or invoke his statutory inspection and "
+        "dispute rights before the decision became final. Ghosting after "
+        "an accepted offer is the adverse action. This ICRAA count does "
+        "not depend on proving Penal Code section 290.46(j). A notice "
+        "failure under Civil Code section 1786.40 is independently "
+        "actionable if an investigative consumer report was obtained and "
+        "employment was denied without the required advice. If Defendants "
+        "establish that the product was an ordinary consumer credit report "
+        "and not investigative, this count does not apply and the CCRAA "
+        "count does.",
     ),
     (
         "PARA",
@@ -696,9 +736,54 @@ CONTENT = [
         "production shows the report was procured before the required "
         "standalone disclosure and written authorization. The October 17 "
         "confirmation recites authorization; it does not prove that a report "
-        "was lawfully procured or used.",
+        "was lawfully procured or used. Plaintiff does not presently allege "
+        "nonauthorization as an established fact.",
     ),
     ("HEADER", "VII.\nSECOND CAUSE OF ACTION"),
+    (
+        "SUBHEAD",
+        "California Consumer Credit Reporting Agencies Act\n"
+        "Civil Code sections 1785.20.5 and 1785.31 — Against Best Buy and User DOES\n"
+        "(Pleaded in the Alternative to ICRAA)",
+    ),
+    (
+        "PARA",
+        "65A. Plaintiff realleges paragraphs 1 through 53 and 60 through 65 "
+        "to the extent consistent with this cause.",
+    ),
+    (
+        "PARA",
+        "65B. In the alternative, if the First Advantage product was an "
+        "ordinary consumer credit report rather than an investigative "
+        "consumer report, the California Consumer Credit Reporting Agencies "
+        "Act applies. Civil Code section 1785.20.5 required Best Buy, before "
+        "procuring a consumer credit report for employment purposes, to "
+        "provide written notice that a report would be used, and, before "
+        "taking adverse action based in whole or in part on the report, to "
+        "provide a copy of the report and a notice of rights.",
+    ),
+    (
+        "PARA",
+        "65C. The file contains no copy of any Best Buy consumer credit "
+        "report and no rights notice before the ghosting. No such package "
+        "arrived by email, portal, or mail. On information and belief, the "
+        "decision was based in whole or in part on information in, produced "
+        "by, or communicated through the First Advantage screening process.",
+    ),
+    (
+        "PARA",
+        "65D. If the product was investigative, this count does not apply "
+        "and the ICRAA count does. If it was an ordinary consumer credit "
+        "report, the failure to furnish the report and rights notice before "
+        "adverse action violated section 1785.20.5.",
+    ),
+    (
+        "PARA",
+        "65E. Under Civil Code section 1785.31, Plaintiff seeks actual "
+        "damages, costs, attorney's fees if later represented, and punitive "
+        "damages upon proof of willfulness, according to proof.",
+    ),
+    ("HEADER", "VIII.\nTHIRD CAUSE OF ACTION"),
     (
         "SUBHEAD",
         "Unlawful and Unfair Business Practices\n"
@@ -706,40 +791,51 @@ CONTENT = [
     ),
     (
         "PARA",
-        "66. Plaintiff realleges paragraphs 1 through 65 to the extent "
+        "66. Plaintiff realleges paragraphs 1 through 65E to the extent "
         "consistent with this equitable cause.",
     ),
     (
         "PARA",
-        "67. Defendants engaged in unlawful practices by violating Penal Code "
-        "section 290.46(j) and, if proven, Civil Code section 1786.40. They "
-        "engaged in unfair practices by extending a written warehouse offer, "
-        "ordering a same-day screen, and then undoing the hire on secret "
-        "registry-derived information without a source, a report, or an "
-        "opportunity to respond.",
+        "67. Defendants engaged in unlawful practices by violating, to the "
+        "extent proven, Civil Code section 1786.40, Civil Code section "
+        "1785.20.5, and Penal Code section 290.46(j)(2)(E). They engaged in "
+        "unfair practices because the gravity of the harm — collapse of a "
+        "written warehouse offer on a criterion the Legislature has forbidden, "
+        "or on a consumer report without the advice the statute required — "
+        "outweighs any utility of undoing the hire on secret registry-derived "
+        "information without a source, a report, or an opportunity to respond.",
     ),
     (
         "PARA",
         "68. Plaintiff suffered injury in fact and lost money or property "
-        "through the lost warehouse employment at $22.60 per hour and other "
-        "economic losses to be proven. He does not seek future unearned wages "
-        "as UCL restitution. He seeks restitution only of money or property "
-        "in which he had a vested interest and that Defendants acquired or "
-        "caused him to lose through the challenged practices.",
+        "through the lost warehouse employment at $22.60 per hour, the "
+        "compelled disclosure of personal identifying information for "
+        "screening, and other economic losses to be proven. Injury in fact "
+        "sufficient for UCL standing is not the same as recoverable "
+        "restitution. He does not seek future unearned wages as UCL "
+        "restitution. He seeks restitution only of money or property in "
+        "which he had a vested interest and that Defendants acquired through "
+        "the challenged practices — including, according to proof, the value "
+        "of personal information he was compelled to disclose. He does not "
+        "allege that Best Buy holds a fund of unearned future wages.",
     ),
     (
         "PARA",
         "69. Legal damages are not an adequate remedy for Defendants' "
-        "retention, use, and dissemination of registry-derived screening data "
-        "or their ongoing employment-screening practices. Plaintiff seeks an "
-        "injunction requiring Defendants to cease prohibited employment use of "
-        "California registry information in California warehouse hiring; "
-        "preserve and disclose the source and audit trail of Plaintiff's "
-        "screening; and correct or segregate unlawfully used data, together "
-        "with restitution and declaratory relief ancillary to the injunction "
-        "under Business and Professions Code section 17203.",
+        "retention, use, and dissemination of registry-derived screening data. "
+        "On information and belief, Best Buy continues to use the same or "
+        "similar standardized screening procedures for California warehouse "
+        "applicants. That continuing practice is the basis for UCL injunctive "
+        "relief and for declaratory relief under Code of Civil Procedure "
+        "section 1060. Plaintiff seeks an injunction requiring Defendants to "
+        "cease prohibited employment use of California registry information "
+        "in California warehouse hiring; preserve and disclose the source and "
+        "audit trail of Plaintiff's screening; and correct or segregate "
+        "unlawfully used data, together with restitution of vested money or "
+        "property actually acquired, under Business and Professions Code "
+        "section 17203.",
     ),
-    ("HEADER", "VIII.\nTHIRD CAUSE OF ACTION"),
+    ("HEADER", "IX.\nFOURTH CAUSE OF ACTION"),
     (
         "SUBHEAD",
         "Unauthorized Employment Use of Registry Information\n"
@@ -773,9 +869,12 @@ CONTENT = [
     (
         "PARA",
         "57. On information and belief, each element alleged in paragraph 52 "
-        "is satisfied. Best Buy, First Advantage, and such DOE Defendants as "
-        "ordered, furnished, scored, or acted on the report, used information "
-        "disclosed pursuant to section 290.46 concerning Plaintiff.",
+        "is satisfied. Best Buy used information disclosed pursuant to "
+        "section 290.46 concerning Plaintiff. The user is the employer that "
+        "takes the information into account in making the employment "
+        "decision, not a consumer reporting agency that merely retrieves, "
+        "scores, or republishes it. First Advantage is not named as a "
+        "defendant. This count is directed at Best Buy's use.",
     ),
     (
         "PARA",
@@ -789,13 +888,28 @@ CONTENT = [
     ),
     (
         "PARA",
-        "59. Plaintiff seeks the remedies authorized by section 290.46(j)(4)(A) "
-        "and preventive relief under subdivision (j)(4)(B) to restrain any "
-        "pattern or practice of employment use of Megan's Law information in "
-        "Best Buy's California warehouse hiring and in First Advantage's "
-        "California employment reports.",
+        "59. Plaintiff seeks the remedies authorized by section 290.46(j)(4)(A). "
+        "He does not presently allege a multi-incident pattern or practice at "
+        "Best Buy sufficient for subdivision (j)(4)(B) preventive relief. He "
+        "seeks that remedy only if discovery shows reasonable cause to believe "
+        "such a pattern or practice. The damages claim under subdivision "
+        "(j)(4)(A) does not depend on pattern or practice.",
     ),
-    ("HEADER", "IX.\nPRESERVATION OF EVIDENCE"),
+    (
+        "PARA",
+        "59A. On information and belief, Best Buy's human-resources and "
+        "centralized employment-screening personnel are managing agents "
+        "within the meaning of Civil Code section 3294(b): they exercise "
+        "substantial discretionary authority over hiring and screening "
+        "policy, not merely the power to accept or reject a single applicant. "
+        "Those managing agents established, implemented, and ratified the "
+        "standardized screening practices alleged. Plaintiff seeks section "
+        "3294 punitive damages only upon proof of oppression, fraud, or "
+        "malice and of managing-agent authorization, ratification, or "
+        "personal participation. ICRAA punitive damages, if any, rest on "
+        "Civil Code section 1786.50 and do not depend on section 3294.",
+    ),
+    ("HEADER", "X.\nPRESERVATION OF EVIDENCE"),
     (
         "PARA",
         "70. Defendants are on notice to preserve Plaintiff's complete Best "
@@ -822,7 +936,7 @@ CONTENT = [
         "retrievability and matching methodology of this same vendor on this "
         "same Plaintiff. It is not a substitute for the Best Buy report.",
     ),
-    ("HEADER", "X.\nPRAYER FOR RELIEF"),
+    ("HEADER", "XI.\nPRAYER FOR RELIEF"),
     ("PARA", "WHEREFORE, Plaintiff prays for judgment against Defendants as follows:"),
     (
         "LIST_ITEM",
@@ -843,40 +957,50 @@ CONTENT = [
     ),
     (
         "LIST_ITEM",
-        "4. For punitive damages against only those Defendants for whom Civil "
+        "4. For CCRAA actual damages and punitive damages upon the showing "
+        "required by Civil Code section 1785.31, if that alternative count "
+        "is proven;",
+    ),
+    (
+        "LIST_ITEM",
+        "5. For punitive damages against only those Defendants for whom Civil "
         "Code section 3294 is proven, in an amount to be determined by the "
         "trier of fact, with no amount pleaded;",
     ),
     (
         "LIST_ITEM",
-        "5. For restitution under Business and Professions Code section 17203 "
-        "to the extent available;",
+        "6. For restitution under Business and Professions Code section 17203 "
+        "of vested money or property Defendants acquired, not unearned future "
+        "wages;",
     ),
     (
         "LIST_ITEM",
-        "6. For preventive and injunctive relief under Penal Code section "
-        "290.46(j)(4)(B), Business and Professions Code section 17203, and "
-        "other applicable law;",
+        "7. For injunctive relief under Business and Professions Code section "
+        "17203, and for Penal Code section 290.46(j)(4)(B) preventive relief "
+        "only if discovery shows reasonable cause to believe a pattern or "
+        "practice;",
     ),
     (
         "LIST_ITEM",
-        "7. For declaratory relief concerning Defendants' prohibited registry "
-        "use to the extent an actual controversy remains;",
+        "8. For declaratory relief under Code of Civil Procedure section 1060 "
+        "concerning whether Defendants' standardized California screening "
+        "practices may use information disclosed pursuant to Penal Code "
+        "section 290.46 for employment;",
     ),
     (
         "LIST_ITEM",
-        "8. For costs of suit and attorney's fees where authorized if Plaintiff "
+        "9. For costs of suit and attorney's fees where authorized if Plaintiff "
         "obtains counsel;",
     ),
     (
         "LIST_ITEM",
-        "9. For prejudgment and post-judgment interest as allowed by law; and",
+        "10. For prejudgment and post-judgment interest as allowed by law; and",
     ),
     (
         "LIST_ITEM",
-        "10. For such other relief as the Court deems just and proper.",
+        "11. For such other relief as the Court deems just and proper.",
     ),
-    ("HEADER", "XI.\nDEMAND FOR JURY TRIAL"),
+    ("HEADER", "XII.\nDEMAND FOR JURY TRIAL"),
     (
         "PARA",
         "73. Plaintiff demands trial by jury on all causes of action and issues "
