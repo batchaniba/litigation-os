@@ -1,5 +1,27 @@
 [
   {
+    "date": "Sep. 4, 2026",
+    "event": "PHONE \u2014 UPS asked Plaintiff for a 30-day extension of its reply on the Rule 12(b)(6) motion (ECF No. 7) in Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). Declined. UPS then asked for 15 days. Declined. No stipulation. No written ask is in the file. L.R. 230(d) reply remains Sep. 8, 2026. Hearing remains Oct. 5, 2026, 1:30 p.m. Zoom.",
+    "matters": [
+      26
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "actor": "opposing",
+    "source": "/documents/matter-26/Dkt 10 - Plaintiff's Opposition to UPS Rule 12(b)(6) Motion to Dismiss (Filed Aug 28 2026).pdf"
+  },
+  {
+    "date": "Sep. 8, 2026",
+    "event": "UPS reply deadline \u2014 Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). E.D. Cal. L.R. 230(d): moving party may file a reply no later than 10 days after the opposition was filed. Dkt. 10 was filed Aug. 28, 2026; day 10 is Sunday, Sep. 7, rolled to Monday, Sep. 8 under Fed. R. Civ. P. 6(a)(1)(C). Sep. 4 phone asks for 30 days and then 15 days were both declined. Hearing remains Oct. 5. This is UPS's clock.",
+    "matters": [
+      26
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "opposing",
+    "source": "/documents/matter-26/Dkt 10 - Plaintiff's Opposition to UPS Rule 12(b)(6) Motion to Dismiss (Filed Aug 28 2026).pdf"
+  },
+  {
     "date": "Aug. 26, 2026",
     "event": "FILED \u2014 Dkt. 9 Proof of Service in Nforbi v. Candelaria et al. (3:26-cv-08272-LJC). Clerk-stamped Aug. 26, 2026 (San Jose). Certifies that on Aug. 21, 2026 Plaintiff mailed Dkt. 6 (operative FAC) first-class from San Jose to Diana Candelaria and Steve Gordon at DMV Legal Affairs Division, Mail Station C128, 2415 First Avenue, Sacramento. Postage photos on pp. 2\u20133. This is Rule 5 service of the amended pleading, not a new Rule 4 personal-service date. The Sep. 4 response clock from the Aug. 14 sheriff service stays recorded.",
     "matters": [
