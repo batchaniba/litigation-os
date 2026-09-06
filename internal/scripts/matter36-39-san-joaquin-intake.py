@@ -314,7 +314,7 @@ def build_cm010(case: dict, out: Path) -> None:
     # Cover the printed sign-here pointer; it reads as a black triangle.
     _whiteout(page1, pymupdf.Rect(328.8, 305.2, 340.0, 324.2))
     # Signature rule is y=320.4.
-    _stamp_on_rule(page1, 358.0, 320.4, 128.0, sink=5.4)
+    _stamp_on_rule(page1, 358.0, 320.4, 128.0, sink=-2.0)
 
     # Adobe Print/Save/Clear chrome on page 3 is not part of the filed form.
     _whiteout(page2, pymupdf.Rect(0.0, 756.0, 612.0, 792.0))
@@ -336,10 +336,8 @@ def build_sum100(case: dict, out: Path) -> None:
         if "Footer" in name or "CourtLink" in name:
             page.delete_widget(w)
 
-    # Official FillText25 is y=118.4–140.3; NOTICE Spanish ends at 116.9.
-    # Inset from the top so the stack does not kiss the header.
-    defendant_rect = pymupdf.Rect(36.0, 126.8, 431.3, 139.8)
-    _whiteout(page, fields.get("FillText25[0]", pymupdf.Rect(36.0, 118.4, 431.3, 140.3)))
+    defendant_rect = fields.get("FillText25[0]", pymupdf.Rect(36.0, 118.4, 431.3, 140.3))
+    _whiteout(page, defendant_rect)
     _write_stack(page, defendant_rect, case["defendant_lines"], max_fs=8.0, min_fs=6.5)
 
     plaintiff_rect = fields.get("FillText180[0]", pymupdf.Rect(36.0, 170.4, 431.3, 191.9))
@@ -516,7 +514,7 @@ def build_fw001(case: dict, out: Path) -> None:
         _write_on_line(page1, fields1["PetitionerName1[0]"], PLAINTIFF_PRINT, fontsize=8.0)
 
     # Signature rule is y=707.3.
-    _stamp_on_rule(page0, 368.0, 707.3, 128.0, sink=6.6)
+    _stamp_on_rule(page0, 368.0, 707.3, 128.0, sink=-2.0)
 
     _save_clean(doc, out)
     print(f"Wrote {out}")
