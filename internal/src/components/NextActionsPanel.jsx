@@ -83,6 +83,22 @@ export function NextActionsPanel({ queue, mineOnly, onMineOnlyChange }) {
                         {ACTOR_LABEL[item.actor] ?? item.actor}
                         {inferred ? " · inferred" : null}
                       </span>
+                      {item.source ? (
+                        <a className="next-actions-source" href={item.source} target="_blank" rel="noreferrer">
+                          source PDF
+                        </a>
+                      ) : null}
+                      {item.precedentPeers?.length ? (
+                        <span className="next-actions-peers">
+                          also{" "}
+                          {item.precedentPeers.map((peer, index) => (
+                            <span key={peer}>
+                              {index > 0 ? ", " : null}
+                              <Link to={`/matters/${peer}`}>M{peer}</Link>
+                            </span>
+                          ))}
+                        </span>
+                      ) : null}
                     </div>
                   </div>
                 </li>

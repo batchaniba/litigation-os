@@ -23,6 +23,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = path.resolve(__dirname, "../src/data");
 const TIMELINE = path.join(DATA_DIR, "timeline.json");
 const SUMMARIES = path.join(DATA_DIR, "matters/summaries.json");
+const CROSS_MATTER = path.join(DATA_DIR, "crossMatter.json");
 
 const argv = process.argv.slice(2);
 const asJson = argv.includes("--json");
@@ -46,7 +47,7 @@ if (matterRaw !== null && !Number.isFinite(matterFilter)) {
   process.exit(1);
 }
 
-for (const file of [TIMELINE, SUMMARIES]) {
+for (const file of [TIMELINE, SUMMARIES, CROSS_MATTER]) {
   if (!fs.existsSync(file)) {
     console.error(`Missing ${path.relative(process.cwd(), file)}`);
     process.exit(1);
@@ -55,8 +56,9 @@ for (const file of [TIMELINE, SUMMARIES]) {
 
 const timeline = JSON.parse(fs.readFileSync(TIMELINE, "utf8"));
 const summaries = JSON.parse(fs.readFileSync(SUMMARIES, "utf8"));
+const clusters = JSON.parse(fs.readFileSync(CROSS_MATTER, "utf8")).clusters ?? [];
 const today = todayKey();
-const queue = buildQueue(timeline, summaries, { today, horizonDays });
+const queue = buildQueue(timeline, summaries, { today, horizonDays, clusters });
 
 const matchesFilter = (item) => matterFilter === null || item.matters.includes(matterFilter);
 const matchesActor = (item) => !mineOnly || item.actor === "you" || item.actor === "unknown";
@@ -113,6 +115,10 @@ for (const [band, heading] of BANDS) {
     console.log(`  ${item.date}  (${countdown(item)})  ${matters}  [${item.action}]${actorNote(item)}`);
     console.log(`    ${item.event}`);
     for (const label of item.matterLabels) console.log(`      · ${label}`);
+    if (item.precedentPeers?.length) {
+      console.log(`      also affects M${item.precedentPeers.join(", M")}`);
+    }
+    if (item.source) console.log(`      source: ${item.source}`);
   }
 }
 

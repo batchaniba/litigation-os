@@ -118,6 +118,13 @@ export function CrossMatterPanel({ matter }: CrossMatterPanelProps) {
                     {item.matters.length} matter{item.matters.length === 1 ? "" : "s"}
                   </span>
                   <p className="detail-copy detail-copy-muted">{item.detail}</p>
+                  {item.document_path ? (
+                    <p className="detail-copy">
+                      <a className="xm-foundation-doc" href={item.document_path} target="_blank" rel="noreferrer">
+                        Open source PDF
+                      </a>
+                    </p>
+                  ) : null}
                 </li>
               ))}
             </ul>

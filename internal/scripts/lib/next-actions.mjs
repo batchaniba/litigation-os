@@ -153,14 +153,30 @@ const ACTOR_RANK = new Map([
   ["court", 2],
 ]);
 
+const PRECEDENT_KINDS = new Set(["same_statute", "same_denial_challenged"]);
+
+/** Other matters that share a traveling statute or the same agency denial. */
+export function precedentPeers(matter, clusters) {
+  const peers = new Set();
+  for (const cluster of clusters ?? []) {
+    for (const link of cluster.links ?? []) {
+      if (!(link.kinds ?? []).some((kind) => PRECEDENT_KINDS.has(kind))) continue;
+      if (link.from === matter) peers.add(link.to);
+      if (link.to === matter) peers.add(link.from);
+    }
+  }
+  return [...peers].sort((a, b) => a - b);
+}
+
 /**
  * @param {Array<object>} timeline  timeline.json entries
  * @param {Array<object>} summaries matters/summaries.json entries
- * @param {{ today?: string, horizonDays?: number }} [options]
+ * @param {{ today?: string, horizonDays?: number, clusters?: Array<object> }} [options]
  */
 export function buildQueue(timeline, summaries, options = {}) {
   const today = options.today ?? todayKey();
   const horizonDays = options.horizonDays ?? 30;
+  const clusters = options.clusters ?? [];
   const byNumber = new Map((summaries ?? []).map((m) => [Number(m.number), m]));
 
   const items = [];
@@ -181,6 +197,12 @@ export function buildQueue(timeline, summaries, options = {}) {
         return m ? `${n} — ${m.caption}${m.case_no ? ` (${m.case_no})` : ""}` : `${n}`;
       }),
       action: inferAction(entry),
+      source: typeof entry.source === "string" && entry.source.startsWith("/documents/")
+        ? entry.source
+        : null,
+      precedentPeers: [...new Set(matters.flatMap((n) => precedentPeers(n, clusters)))]
+        .filter((n) => !matters.includes(n))
+        .sort((a, b) => a - b),
       ...inferActor(entry),
     };
 

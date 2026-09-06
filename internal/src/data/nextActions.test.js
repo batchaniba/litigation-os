@@ -5,12 +5,14 @@ import {
   daysBetween,
   inferAction,
   inferActor,
+  precedentPeers,
   touchesActiveMatter,
   urgencyFor,
   yourQueue,
 } from "../../scripts/lib/next-actions.mjs";
 import timeline from "./timeline.json";
 import summaries from "./matters/summaries.json";
+import graph from "./crossMatter.json";
 
 const TODAY = "2026-08-08";
 
@@ -187,7 +189,12 @@ describe("buildQueue", () => {
         "Meet-and-confer deadline (computed) — CCP §430.41(a)(2); if UPS intends to demur",
       matters: [26],
     }),
-    entry({ date: "Aug. 25, 2026", event: "Deadline — ADR certification", matters: [24] }),
+    entry({
+      date: "Aug. 25, 2026",
+      event: "Deadline — ADR certification",
+      matters: [24],
+      source: "/documents/matter-24/Order Setting Initial CMC and ADR Deadlines (Doc 4, Filed Jun 17 2026).pdf",
+    }),
     entry({ date: "Dec. 2026", event: "Trial setting window", matters: [20] }),
     entry({ date: "Mar. 1, 2027", event: "OUTER STATUTE OF LIMITATIONS", matters: [24] }),
     entry({ date: "Jun. 1, 2026", event: "Already-logged filing", matters: [20], upcoming: false }),
@@ -247,10 +254,34 @@ describe("buildQueue", () => {
       "Deadline — ADR certification",
     ]);
   });
+
+  it("copies a /documents/ source onto the queue row", () => {
+    const adr = queue.items.find((i) => i.event === "Deadline — ADR certification");
+    expect(adr.source).toMatch(/^\/documents\/matter-24\//);
+  });
+});
+
+describe("precedentPeers", () => {
+  it("lists the other §290.46 dockets from a same_statute link", () => {
+    expect(precedentPeers(26, graph.clusters)).toEqual([22, 25, 27, 29]);
+  });
+
+  it("attaches those peers on a live UPS queue row", () => {
+    const withClusters = buildQueue(
+      [entry({ date: "Oct. 7, 2026", event: "UPS MTD hearing", matters: [26], type: "hearing" })],
+      [{ number: 26, caption: "Newanforbi v. UPS", lifecycle: "active" }],
+      { today: TODAY, horizonDays: 90, clusters: graph.clusters },
+    );
+    expect(withClusters.items[0].precedentPeers).toEqual([22, 25, 27, 29]);
+  });
 });
 
 describe("buildQueue against the real portfolio data", () => {
-  const queue = buildQueue(timeline, summaries, { today: TODAY, horizonDays: 30 });
+  const queue = buildQueue(timeline, summaries, {
+    today: TODAY,
+    horizonDays: 30,
+    clusters: graph.clusters,
+  });
 
   it("covers every timeline entry flagged upcoming", () => {
     const flagged = timeline.filter((t) => t.upcoming === true).length;
