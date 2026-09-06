@@ -902,8 +902,6 @@ def _verification(d: PleadingPaper, exec_date: str, execute: bool) -> None:
     d.start_new_page()
     d.write_line("VERIFICATION", bold=True, center=True)
     d.blank_line()
-    d.write_line("STATE OF CALIFORNIA, COUNTY OF SANTA CLARA", bold=True, center=True)
-    d.blank_line()
     d.write_wrapped("I, BRENDAN NGWA NFORBI, declare:", first_indent=36)
     d.blank_line()
     d.write_wrapped(
@@ -921,7 +919,7 @@ def _verification(d: PleadingPaper, exec_date: str, execute: bool) -> None:
     )
     d.blank_line()
     d.write_wrapped(
-        f"Executed on {exec_date}, at Milpitas, California.", first_indent=36
+        f"Signed on {exec_date}, at Milpitas, California.", first_indent=36
     )
     d.ensure_space(10)
     d.blank_line()
