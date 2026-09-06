@@ -153,7 +153,10 @@ CONTENT = [
         "an overall INELIGIBLE result. That report is not the Best Buy report. "
         "It is alleged because the same vendor that Best Buy used in October "
         "2023 later matched this Plaintiff to the California registry and "
-        "treated that match as an employment bar.",
+        "treated that match as an employment bar. The UPS report is "
+        "methodology and matchability evidence — the same CRA, the same "
+        "Plaintiff, a California-registry source of record — not the Best "
+        "Buy report and not a substitute for it."
     ),
     (
         "PARA",
@@ -529,10 +532,18 @@ CONTENT = [
     (
         "PARA",
         "45. Lerma v. Amazon.com Services, LLC, C.D. Cal. No. 8:22-cv-01727, "
-        "Dkt. 36, dismissed a Megan's Law count where the report itself showed "
-        "ordinary court records and a national sex-offender search returning no "
-        "record. Plaintiff pleads the opposite inference here and will stand or "
-        "fall on what the Best Buy First Advantage report actually says.",
+        "Dkt. 36, dismissed a Megan's Law count after the employer's report was "
+        "in the record and showed ordinary court records and a national "
+        "sex-offender search returning no record. That dismissal turned on the "
+        "report. This Complaint does not attach the Best Buy First Advantage "
+        "report. Plaintiff does not allege its contents as a known fact. A "
+        "court cannot perform a Lerma analysis on the face of a complaint that "
+        "does not contain the employer's report. Defendants may not obtain a "
+        "pleading-stage dismissal by withholding the one document that would "
+        "confirm or refute the inference. Plaintiff pleads the opposite "
+        "inference here. If production shows ordinary court records and no "
+        "California-registry source, this count will stand or fall on that "
+        "record — after production, not before."
     ),
     (
         "PARA",
@@ -581,6 +592,50 @@ CONTENT = [
         "against other dockets that arise from different employers and "
         "different decisions.",
     ),
+    ("SUBHEAD", "F. Inspection Rights, Independent ICRAA Path, and Why a Demurrer Cannot Replicate Lerma"),
+    (
+        "PARA",
+        "51. Code of Civil Procedure section 425.10 requires a statement of "
+        "the facts constituting the cause of action in ordinary and concise "
+        "language. Section 452 requires this Court to construe the pleading "
+        "liberally with a view to substantial justice between the parties. "
+        "Facts exclusively in Defendants' possession — the Best Buy First "
+        "Advantage report, the source-of-record line, the adjudication code, "
+        "and the decision-maker's reason — are properly pleaded on "
+        "information and belief. Plaintiff does not attach that report "
+        "because he does not have it.",
+    ),
+    (
+        "PARA",
+        "52. The section 290.46(j) claim has four elements: (a) information "
+        "disclosed pursuant to section 290.46; (b) use of that information by "
+        "a defendant; (c) a purpose relating to employment; and (d) the use "
+        "was not to protect a person at risk and was not otherwise authorized "
+        "by law. Plaintiff pleads each element. Elements (a) and (b) are "
+        "pleaded on information and belief. Elements (c) and (d) follow from "
+        "the written warehouse offer and the later employment decision. A "
+        "demurrer tests the pleading, not the unproduced report. Defendants "
+        "may deny registry use. They may not convert that denial into a "
+        "Lerma dismissal while the report remains in their possession.",
+    ),
+    (
+        "PARA",
+        "53. The Second Cause of Action under Civil Code sections 1786.40 and "
+        "1786.50 is independent of the registry-use inference. Best Buy "
+        "extended a written offer, named First Advantage, and required a "
+        "consumer report and investigative consumer report as a condition of "
+        "that offer. The file contains no Civil Code section 1786.40 advice "
+        "that an investigative consumer report had been obtained, and no "
+        "agency name and address supplied at the time of any denial. A "
+        "notice failure can reach discovery even if the section 290.46(j) "
+        "count later fails on the contents of the report. Civil Code "
+        "sections 1786.10 and 1786.22 entitle Plaintiff to inspect and "
+        "obtain a copy of the information First Advantage maintains on him. "
+        "Plaintiff has not yet served that inspection request. He will. "
+        "Those records, together with Best Buy's Candidate Zone and "
+        "Employment Screening file, are the discrete set that will confirm "
+        "or refute registry use.",
+    ),
     ("HEADER", "VI.\nFIRST CAUSE OF ACTION"),
     (
         "SUBHEAD",
@@ -589,13 +644,13 @@ CONTENT = [
     ),
     (
         "PARA",
-        "51. Plaintiff realleges paragraphs 1 through 50, except allegations "
+        "54. Plaintiff realleges paragraphs 1 through 53, except allegations "
         "expressly pleaded in the alternative are incorporated only to the "
         "extent consistent with this cause.",
     ),
     (
         "PARA",
-        "52. Penal Code section 290.46(j)(1) authorizes use of information "
+        "55. Penal Code section 290.46(j)(1) authorizes use of information "
         "disclosed under that section only to protect a person at risk, except "
         "as otherwise authorized by law. Section 290.46(j)(2)(E) prohibits use "
         "of that information for purposes relating to employment unless another "
@@ -603,7 +658,7 @@ CONTENT = [
     ),
     (
         "PARA",
-        "53. Section 290.46(j)(4)(A) makes the user liable for the actual "
+        "56. Section 290.46(j)(4)(A) makes the user liable for the actual "
         "damages, and any amount that may be determined by a jury or a court "
         "sitting without a jury, not exceeding three times the amount of actual "
         "damage, and not less than two hundred fifty dollars ($250), and "
@@ -614,14 +669,14 @@ CONTENT = [
     ),
     (
         "PARA",
-        "54. On information and belief, Best Buy, First Advantage, and such "
-        "DOE Defendants as ordered, furnished, scored, or acted on the report, "
-        "used information disclosed pursuant to section 290.46 concerning "
-        "Plaintiff.",
+        "57. On information and belief, each element alleged in paragraph 52 "
+        "is satisfied. Best Buy, First Advantage, and such DOE Defendants as "
+        "ordered, furnished, scored, or acted on the report, used information "
+        "disclosed pursuant to section 290.46 concerning Plaintiff.",
     ),
     (
         "PARA",
-        "55. The use related directly to employment: it concerned the General "
+        "58. The use related directly to employment: it concerned the General "
         "Warehouse Worker / 2nd Shift offer or the later decision that ended "
         "or prevented that job. The use was not authorized by section "
         "290.46(j)(1) or by any other provision of law applicable to that "
@@ -631,7 +686,7 @@ CONTENT = [
     ),
     (
         "PARA",
-        "56. Plaintiff seeks the remedies authorized by section 290.46(j)(4)(A) "
+        "59. Plaintiff seeks the remedies authorized by section 290.46(j)(4)(A) "
         "and preventive relief under subdivision (j)(4)(B) to restrain any "
         "pattern or practice of employment use of Megan's Law information in "
         "Best Buy's California warehouse hiring and in First Advantage's "
@@ -647,12 +702,12 @@ CONTENT = [
     ),
     (
         "PARA",
-        "57. Plaintiff realleges paragraphs 1 through 50 and 54 through 55 to "
+        "60. Plaintiff realleges paragraphs 1 through 53 and 57 through 58 to "
         "the extent consistent with this cause.",
     ),
     (
         "PARA",
-        "58. On information and belief, First Advantage assembled or evaluated "
+        "61. On information and belief, First Advantage assembled or evaluated "
         "information concerning Plaintiff's character, general reputation, "
         "personal characteristics, or mode of living for employment purposes "
         "at Best Buy's request, and Best Buy was the user of that information "
@@ -660,7 +715,7 @@ CONTENT = [
     ),
     (
         "PARA",
-        "59. Civil Code section 1786.40(a) required Best Buy, under "
+        "62. Civil Code section 1786.40(a) required Best Buy, under "
         "circumstances in which employment was denied and an investigative "
         "consumer report had been obtained, to advise Plaintiff of that fact "
         "and supply the agency's name and address. On information and belief, "
@@ -669,21 +724,26 @@ CONTENT = [
     ),
     (
         "PARA",
-        "60. The omission prevented Plaintiff from timely obtaining the Best "
+        "63. The omission prevented Plaintiff from timely obtaining the Best "
         "Buy-specific report, testing whether its source was the California "
         "registry or ordinary court records, and invoking his statutory "
-        "inspection and dispute rights.",
+        "inspection and dispute rights. This ICRAA count does not depend on "
+        "proving Penal Code section 290.46(j). A notice failure under Civil "
+        "Code section 1786.40 is independently actionable if an investigative "
+        "consumer report was obtained and employment was denied without the "
+        "required advice. That count can reach discovery even if the "
+        "registry-use inference later fails.",
     ),
     (
         "PARA",
-        "61. Under Civil Code section 1786.50, Plaintiff seeks actual damages "
+        "64. Under Civil Code section 1786.50, Plaintiff seeks actual damages "
         "or $10,000, whichever is greater, costs, attorney's fees if later "
         "represented, and punitive damages upon proof of gross negligence or "
         "willfulness.",
     ),
     (
         "PARA",
-        "62. This ICRAA count is not a Fair Credit Reporting Act count. "
+        "65. This ICRAA count is not a Fair Credit Reporting Act count. "
         "Plaintiff has not pleaded 15 U.S.C. section 1681b(b)(3). He reserves "
         "amendment if production shows Best Buy based the decision in whole or "
         "in part on a consumer report and failed to provide a copy of the "
@@ -702,12 +762,12 @@ CONTENT = [
     ),
     (
         "PARA",
-        "63. Plaintiff realleges paragraphs 1 through 62 to the extent "
+        "66. Plaintiff realleges paragraphs 1 through 65 to the extent "
         "consistent with this equitable cause.",
     ),
     (
         "PARA",
-        "64. Defendants engaged in unlawful practices by violating Penal Code "
+        "67. Defendants engaged in unlawful practices by violating Penal Code "
         "section 290.46(j) and, if proven, Civil Code section 1786.40. They "
         "engaged in unfair practices by extending a written warehouse offer, "
         "ordering a same-day screen, and then undoing the hire on secret "
@@ -716,7 +776,7 @@ CONTENT = [
     ),
     (
         "PARA",
-        "65. Plaintiff suffered injury in fact and lost money or property "
+        "68. Plaintiff suffered injury in fact and lost money or property "
         "through the lost warehouse employment at $22.60 per hour and other "
         "economic losses to be proven. He does not seek future unearned wages "
         "as UCL restitution. He seeks restitution only of money or property "
@@ -725,7 +785,7 @@ CONTENT = [
     ),
     (
         "PARA",
-        "66. Legal damages are not an adequate remedy for Defendants' "
+        "69. Legal damages are not an adequate remedy for Defendants' "
         "retention, use, and dissemination of registry-derived screening data "
         "or their ongoing employment-screening practices. Plaintiff seeks an "
         "injunction requiring Defendants to cease prohibited employment use of "
@@ -738,18 +798,19 @@ CONTENT = [
     ("HEADER", "IX.\nPRESERVATION OF EVIDENCE"),
     (
         "PARA",
-        "67. Defendants are on notice to preserve Plaintiff's complete Best "
+        "70. Defendants are on notice to preserve Plaintiff's complete Best "
         "Buy and BrassRing / Candidate Zone file for requisition 928556BR; "
         "the offer, acceptance audit, and disclosure PDFs; the background-"
         "check order, authorization, report, component searches, adjudication, "
-        "access, and cancellation logs; the First Advantage drug-test order "
-        "Q09078711 and result; communications of Tapia, Calvary, and "
-        "Employment Screening; and policies governing Megan's Law, FCRA, "
-        "ICRAA, and warehouse adjudication in 2023.",
+        "access, and cancellation logs; the First Advantage file subject to "
+        "Civil Code sections 1786.10 and 1786.22; the First Advantage "
+        "drug-test order Q09078711 and result; communications of Tapia, "
+        "Calvary, and Employment Screening; and policies governing Megan's "
+        "Law, FCRA, ICRAA, and warehouse adjudication in 2023.",
     ),
     (
         "PARA",
-        "68. Relevant electronically stored information includes applicant-"
+        "71. Relevant electronically stored information includes applicant-"
         "tracking and HRIS audit fields, event timestamps, reason codes, "
         "report-view logs, emails, chats, SMS, and data-retention records "
         "from October 1, 2023 through January 31, 2024, and any later date "
@@ -757,9 +818,9 @@ CONTENT = [
     ),
     (
         "PARA",
-        "69. The July 2024 First Advantage/UPS report is relevant to "
-        "retrievability and matching methodology. It is not a substitute for "
-        "the Best Buy report.",
+        "72. The July 2024 First Advantage/UPS report is relevant to "
+        "retrievability and matching methodology of this same vendor on this "
+        "same Plaintiff. It is not a substitute for the Best Buy report.",
     ),
     ("HEADER", "X.\nPRAYER FOR RELIEF"),
     ("PARA", "WHEREFORE, Plaintiff prays for judgment against Defendants as follows:"),
@@ -818,7 +879,7 @@ CONTENT = [
     ("HEADER", "XI.\nDEMAND FOR JURY TRIAL"),
     (
         "PARA",
-        "70. Plaintiff demands trial by jury on all causes of action and issues "
+        "73. Plaintiff demands trial by jury on all causes of action and issues "
         "so triable.",
     ),
 ]
