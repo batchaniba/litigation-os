@@ -23,7 +23,8 @@ export const damages_table = [
     { category: "N.D. Cal. §1983 Meza-Gonzalez (Matter 32) — pleaded >$214k; $0 here to avoid double-count w/ M1/M2", matters: [32], conservative: 0, moderate: 0, aggressive: 0 },
     { category: "N.D. Cal. §1983 Nforbi v. Candelaria et al. (Matter 33, 3:26-cv-08272-LJC) — pleaded >$214k; $0 here to avoid double-count w/ M7", matters: [33], conservative: 0, moderate: 0, aggressive: 0 },
     { category: "§1983 Monell / Individual + Bane Act — Counseling & Psychotherapy Center (Matter 34)", matters: [34], conservative: 0, moderate: 0, aggressive: 0 },
-    { category: "Unruh / False Imprisonment / Negligent Training — Ross Stores (Matter 35)", matters: [35], conservative: 115000, moderate: 345000, aggressive: 1035000 }
+    { category: "Unruh / False Imprisonment / Negligent Training — Ross Stores (Matter 35)", matters: [35], conservative: 115000, moderate: 345000, aggressive: 1035000 },
+    { category: "San Joaquin executed packets — favorable-MTD settlement (Matters 36–39)", matters: [36, 37, 38, 39], conservative: 235000, moderate: 360000, aggressive: 485000 }
 ];
 // Matters 3, 5, and 15 are excluded/reduced above (abandoned/dismissed Jul. 2026):
 // - Matter 3 (Derrick, ABANDONED): its Lost Income, Emotional Distress, Punitive, and Fees
@@ -825,69 +826,177 @@ const matter_damages_raw = [
   },
   {
     number: 36,
-    claims: "Rescinded AT&T Offer — Promissory Estoppel / Contract; FEHA and Consumer-Report Theories Under Investigation",
-    risk: "Not complaint-ready. The written offer terms, acceptance, detrimental reliance, Spanish score/rubric, employing entity, and First Advantage screening file are missing. The recruiter’s express Spanish-test explanation supports causation for rescission but also supplies a facially legitimate criterion for an expressly bilingual role.",
-    settlement_note: "No demand and no damages valuation. Hold at $0 until evidence shows an accepted promise plus actual reliance/loss, or actionable discrimination or consumer-report use. Do not import the statutory values used in the registry-background-check matters without proof of registry use.",
-    conservative: 0,
-    moderate: 0,
-    aggressive: 0,
+    claims: "FCRA / ICRAA / Contract / Estoppel / § 290.46(j) — executed San Joaquin packet",
+    risk: "Favorable on contract and estoppel at demurrer: written $24.95 offer, Workday acceptance, onboarding, two-hour rescission. 290/FCRA/ICRAA remain information and belief until the AT&T report is produced. FCRA invites federal-question removal.",
+    settlement_note: "Post-favorable-MTD settlement range if the pleading survives demurrer. Strongest of the four. No demand has been sent. Do not treat as a confirming-report valuation — 290 still needs the AT&T file.",
+    conservative: 90000,
+    moderate: 135000,
+    aggressive: 175000,
     components: [
       {
-        label: "Reserved — obtain formal offer, acceptance/reliance proof, Spanish assessment file, and First Advantage report before valuation",
+        label: "PC §290.46(j)(4)(A) statutory / actual (I&B until the AT&T report is produced)",
+        conservative: 25000,
+        moderate: 35000,
+        aggressive: 40000
+      },
+      {
+        label: "Contract / promissory estoppel — accepted $24.95/hr offer, June 15 start; weekly hours unstated",
+        conservative: 35000,
+        moderate: 45000,
+        aggressive: 60000
+      },
+      {
+        label: "FCRA / ICRAA statutory (pleaded; report use still I&B)",
+        conservative: 10000,
+        moderate: 20000,
+        aggressive: 25000
+      },
+      {
+        label: "Emotional distress / lost opportunity",
+        conservative: 10000,
+        moderate: 20000,
+        aggressive: 25000
+      },
+      {
+        label: "Punitive (Civ. Code §3294 — discovery-dependent)",
         conservative: 0,
-        moderate: 0,
-        aggressive: 0
+        moderate: 5000,
+        aggressive: 10000
+      },
+      {
+        label: "Fees — FCRA / ICRAA / PC §290.46(j)(4)(A)",
+        conservative: 10000,
+        moderate: 10000,
+        aggressive: 15000
       }
     ]
   },
   {
     number: 37,
-    claims: "Penal Code § 290.46(j) I&B — Tracy Home Depot hire / employment decision",
-    risk: "Review draft only. No offer, report, or notice is in the file. Valuation stays at $0 until the hire and the decision are documented and registry use is more than an inference.",
-    settlement_note: "No demand. Do not import UPS/Pilot statutory figures. Confirm the decision date before treating August 2027 as a real clock.",
-    conservative: 0,
-    moderate: 0,
-    aggressive: 0,
+    claims: "ICRAA / UCL / § 290.46(j) I&B — Tracy Home Depot hire",
+    risk: "Significant. No offer, report, or notice is in the file. A demurrer cannot run Lerma on an unattached report; settlement assumes the pleading survives on notice pleading.",
+    settlement_note: "Post-favorable-MTD settlement range. Thinner paper than AT&T/Best Buy. No demand. Do not import UPS/Pilot wage figures.",
+    conservative: 50000,
+    moderate: 70000,
+    aggressive: 90000,
     components: [
       {
-        label: "Reserved — obtain hire records, employment-decision date, and Home Depot screening file before valuation",
-        conservative: 0,
-        moderate: 0,
-        aggressive: 0
+        label: "PC §290.46(j)(4)(A) statutory / actual (I&B hire; no Home Depot report in the file)",
+        conservative: 25000,
+        moderate: 30000,
+        aggressive: 35000
+      },
+      {
+        label: "Lost opportunity — no wage rate or duration in the record",
+        conservative: 10000,
+        moderate: 15000,
+        aggressive: 20000
+      },
+      {
+        label: "ICRAA statutory (user path; no named CRA)",
+        conservative: 5000,
+        moderate: 10000,
+        aggressive: 15000
+      },
+      {
+        label: "Emotional distress / dignitary harm",
+        conservative: 5000,
+        moderate: 10000,
+        aggressive: 15000
+      },
+      {
+        label: "Fees — PC §290.46(j)(4)(A) / ICRAA",
+        conservative: 5000,
+        moderate: 5000,
+        aggressive: 5000
       }
     ]
   },
   {
     number: 38,
-    claims: "Penal Code § 290.46(j) I&B — Swift driver application / Oct. 5, 2023 denial",
-    risk: "Review draft only. Written post-adverse admits consumer-report use; the underlying reports are not in the file. Valuation stays at $0 until the reports show a registry source.",
-    settlement_note: "No demand. Do not import UPS/Pilot statutory figures. File before Sept. 26, 2026 if the pre-adverse date is treated as accrual.",
-    conservative: 0,
-    moderate: 0,
-    aggressive: 0,
+    claims: "ICRAA / UCL / § 290.46(j) I&B — Swift Class A Driver / Oct. 5, 2023 denial",
+    risk: "Significant. Written post-adverse admits consumer-report use, so ICRAA is the load-bearing path. The 290 count is I&B that Swift used preliminary NSOPW information while that component remained Processing.",
+    settlement_note: "Post-favorable-MTD settlement range. Weakest of the four on 290; ICRAA still settles if the pleading survives. No demand. File before Sept. 26, 2026 if the pre-adverse is accrual.",
+    conservative: 45000,
+    moderate: 65000,
+    aggressive: 90000,
     components: [
       {
-        label: "Reserved — obtain Asurint/Tenstreet/DriverIQ reports and the decrypted pre-adverse packet before valuation",
+        label: "ICRAA statutory — written post-adverse admits consumer-report use",
+        conservative: 10000,
+        moderate: 15000,
+        aggressive: 25000
+      },
+      {
+        label: "PC §290.46(j)(4)(A) (I&B preliminary NSOPW use; no completed hit)",
+        conservative: 15000,
+        moderate: 25000,
+        aggressive: 35000
+      },
+      {
+        label: "Emotional distress / lost Class A opportunity (no wage in the file)",
+        conservative: 10000,
+        moderate: 15000,
+        aggressive: 15000
+      },
+      {
+        label: "Punitive (Civ. Code §3294 — thin without a completed registry source)",
         conservative: 0,
         moderate: 0,
-        aggressive: 0
+        aggressive: 5000
+      },
+      {
+        label: "Fees — ICRAA / PC §290.46(j)(4)(A)",
+        conservative: 10000,
+        moderate: 10000,
+        aggressive: 10000
       }
     ]
   },
   {
     number: 39,
-    claims: "Penal Code § 290.46(j) I&B — Best Buy warehouse offer / First Advantage screen",
-    risk: "Review draft only. Written $22.60 offer is in the file; no rejection letter or Best Buy report. Valuation stays at $0 until the decision and the report are documented.",
-    settlement_note: "No demand. Do not import UPS/Pilot statutory figures. Confirm the decision date before treating October 17, 2026 as a real clock.",
-    conservative: 0,
-    moderate: 0,
-    aggressive: 0,
+    claims: "ICRAA / UCL / § 290.46(j) I&B — Best Buy Tracy warehouse offer",
+    risk: "Favorable on paper: written $22.60 offer, accepted, drug screen completed (I&B clean), then ghosted. Best Buy will move to compel arbitration; conservative is the compel-haircut. 290 remains I&B until the Best Buy report is produced.",
+    settlement_note: "Post-favorable-MTD settlement range. Second of the four. Conservative ($50k) is the compelled-arbitration haircut; moderate/aggressive assume the case stays in court or settles before a compel hearing. No demand.",
+    conservative: 50000,
+    moderate: 90000,
+    aggressive: 130000,
     components: [
       {
-        label: "Reserved — obtain the Best Buy First Advantage report, decision date, and hours/start before valuation",
+        label: "PC §290.46(j)(4)(A) statutory / actual (I&B until the Best Buy report is produced)",
+        conservative: 25000,
+        moderate: 30000,
+        aggressive: 40000
+      },
+      {
+        label: "Lost opportunity — $22.60/hr offer; weekly hours and start unstated",
+        conservative: 10000,
+        moderate: 25000,
+        aggressive: 40000
+      },
+      {
+        label: "ICRAA statutory (user path; First Advantage not a named defendant)",
+        conservative: 5000,
+        moderate: 10000,
+        aggressive: 15000
+      },
+      {
+        label: "Emotional distress / dignitary harm",
+        conservative: 5000,
+        moderate: 15000,
+        aggressive: 20000
+      },
+      {
+        label: "Punitive (Civ. Code §3294 — discovery-dependent)",
         conservative: 0,
-        moderate: 0,
-        aggressive: 0
+        moderate: 5000,
+        aggressive: 10000
+      },
+      {
+        label: "Fees — PC §290.46(j)(4)(A) / ICRAA",
+        conservative: 5000,
+        moderate: 5000,
+        aggressive: 5000
       }
     ]
   }
