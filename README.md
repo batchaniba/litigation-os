@@ -43,9 +43,9 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 | Active / Open | 20 |
 | — of which Settled | 1 (Matter 22 — Newanforbi v. Pilot Travel Centers LLC, Jul. 14, 2026) |
 | Dismissed / Closed / Abandoned | 19 |
-| Aggregate Exposure (Conservative) | ~$1,276,000+ |
-| Aggregate Exposure (Moderate) | ~$3,302,000+ |
-| Aggregate Exposure (Aggressive) | ~$7,614,000+ |
+| Aggregate Exposure (Conservative) | ~$1,511,000+ |
+| Aggregate Exposure (Moderate) | ~$3,662,000+ |
+| Aggregate Exposure (Aggressive) | ~$8,099,000+ |
 | Last Updated | August 8, 2026 |
 <!-- PORTFOLIO:OVERVIEW_TABLE:END -->
 
@@ -308,12 +308,13 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | N.D. Cal. §1983 Nforbi v. Candelaria et al. (Matter 33, 3:26-cv-08272-LJC) — pleaded >$214k; $0 here to avoid double-count w/ M7 | 33 | $0 | $0 | $0 |
 | §1983 Monell / Individual + Bane Act — Counseling & Psychotherapy Center (Matter 34) | 34 | $0 | $0 | $0 |
 | Unruh / False Imprisonment / Negligent Training — Ross Stores (Matter 35) | 35 | $115,000 | $345,000 | $1,035,000 |
-| **Portfolio Total (pre-deduplication)** | | **$1,275,672** | **$3,302,072** | **$7,614,272** |
+| San Joaquin executed packets — favorable-MTD settlement (Matters 36–39) | 36, 37, 38, 39 | $235,000 | $360,000 | $485,000 |
+| **Portfolio Total (pre-deduplication)** | | **$1,510,672** | **$3,662,072** | **$8,099,272** |
 <!-- PORTFOLIO:DAMAGES_SUMMARY:END -->
 
 *Note: The portfolio total reflects independent per-defendant exposure across all matters before deduplication of shared economic events (e.g., the same CDL wage-loss period underlying Matters 1, 2, 7, 15). Per-matter settlement negotiations treat each defendant independently.*
 
-*Matter 22 (Pilot) settled July 14, 2026 — terms confidential per settlement agreement. Matters 32 and 33 plead compensatory damages exceeding $214,000 in their N.D. Cal. complaints; the $0 rows above keep the portfolio damages table from double-counting the same Nov. 1 / APS economic loss already modeled in Matters 1, 2, and 7.*
+*Matter 22 (Pilot) settled July 14, 2026 — terms confidential per settlement agreement. Matters 32 and 33 plead compensatory damages exceeding $214,000 in their N.D. Cal. complaints; the $0 rows above keep the portfolio damages table from double-counting the same Nov. 1 / APS economic loss already modeled in Matters 1, 2, and 7. Matters 36–39 are post-favorable-MTD settlement figures for the executed San Joaquin packets, not confirming-report valuations and not sent demands.*
 
 *Matters 3 (Derrick), 5 (Palacios), and 15 (CDCR/Dodd/Noguchi) have been excluded/reduced above following their abandonment or dismissal. Matter 3's Lost Income, Emotional Distress, Punitive, and Fees components; Matter 5's Lost CDL Wages, Bane Act/Treble, Punitive, and Fees components; and Matter 15's Lost CDL Wages, Liberty Deprivation, Emotional Distress, and Punitive components were all subtracted from their matching rows. Two gaps are worth flagging: Matter 5's own damages breakdown has no dedicated Emotional Distress line item, so that row still carries its unquantified share; and Matter 15's Out-of-Pocket Compliance Costs ($20K/$40K/$60K) and Retaliatory Transfer Losses ($15K/$30K/$64K) components never had a matching category row at all, so removing Matter 15 pulls more out of the Per-Matter total than out of this table. The Emotional Distress row's conservative estimate would have gone negative after Matter 15's subtraction (already reduced by Matter 3's share); it's floored at $0 rather than shown negative. Matter 30 (Moua) is included above at full value — it is pending, not abandoned; see the Cluster 2 notes.*
 
@@ -324,17 +325,17 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 ## Attorney Fees Analysis
 
 <!-- PORTFOLIO:ATTORNEY_FEES:START -->
-Plaintiff is representing himself pro se across all 39 matters. The figures below represent what he would have been required to spend on private counsel to litigate this portfolio — costs he has absorbed entirely through self-representation. Based on real page counts extracted from 601 documents / 6,864 pages across matters with uploaded filings (Matter 32: 115 PDFs / 1,110 pages — N.D. Cal. ndcal/ filing billed; from-01|02|20|24/ stay attributed to source matters; Matter 33: 30 PDFs / 428 pages — N.D. Cal. refile + Nov. 1 / APS evidence; from-07/from-08 drafting stays on Matters 7/8; Matter 31 has no uploaded PDFs of its own), classified by document type and priced at a blended rate of **$280/hour** (senior partner $350–$450 / mid-associate $250–$350 / paralegal $150–$200). Opposing-party filings billed at light review rate only. Fee analysis date: September 6, 2026.
+Plaintiff is representing himself pro se across all 39 matters. The figures below represent what he would have been required to spend on private counsel to litigate this portfolio — costs he has absorbed entirely through self-representation. Based on real page counts extracted from 641 documents / 7,209 pages across matters with uploaded filings (Matter 32: 115 PDFs / 1,110 pages — N.D. Cal. ndcal/ filing billed; from-01|02|20|24/ stay attributed to source matters; Matter 33: 30 PDFs / 428 pages — N.D. Cal. refile + Nov. 1 / APS evidence; from-07/from-08 drafting stays on Matters 7/8; Matter 31 has no uploaded PDFs of its own), classified by document type and priced at a blended rate of **$280/hour** (senior partner $350–$450 / mid-associate $250–$350 / paralegal $150–$200). Opposing-party filings billed at light review rate only. Fee analysis date: September 6, 2026.
 
 | Cluster | Matters | Low | Mid | High |
 |---|---|---|---|---|
 | CHP / DUI / DMV | 1, 2, 7, 8, 20, 24, 32, 33 | $172,676 | $230,272 | $287,868 |
 | Parole Retaliation / HOPE | 3, 4, 5, 6, 11, 13, 14, 15, 16, 17, 18, 21, 28, 30, 34 | $469,672 | $619,192 | $772,912 |
-| Consumer Fraud / Employment | 12, 22, 23, 25, 26, 27, 29, 31, 36, 37, 38, 39 | $154,896 | $210,826 | $266,756 |
+| Consumer Fraud / Employment | 12, 22, 23, 25, 26, 27, 29, 31, 36, 37, 38, 39 | $169,176 | $233,506 | $297,836 |
 | Administrative Writs & Habeas | 9, 10, 19 | $41,580 | $57,890 | $74,200 |
 | Public Accommodation / Unruh | 35 | $14,280 | $19,460 | $24,640 |
-| **Portfolio Total** | **39 matters** | **$853,104** | **$1,137,640** | **$1,426,376** |
-| **Estimated Hours** | | **3,046.8 hrs** | **4,063 hrs** | **5,094.2 hrs** |
+| **Portfolio Total** | **39 matters** | **$867,384** | **$1,160,320** | **$1,457,456** |
+| **Estimated Hours** | | **3,097.8 hrs** | **4,144 hrs** | **5,205.2 hrs** |
 
 *Plaintiff has litigated all 39 matters pro se, absorbing the full economic equivalent of the above without compensation. Fee-shifting statutes (42 U.S.C. §1988, PC §290.46(j)(4)(A), RICO 18 U.S.C. §1964(c), FCRA, ICRAA) apply across the majority of active matters — mandatory fee recovery upon prevailing substantially offsets or eliminates the above costs.*
 <!-- PORTFOLIO:ATTORNEY_FEES:END -->

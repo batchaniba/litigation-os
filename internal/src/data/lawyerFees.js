@@ -605,71 +605,71 @@ const lawyer_fees_raw = [
   },
   {
     number: 36,
-    type: "State — Rescinded Employment Offer / Complaint Review Draft",
-    documentsCount: 28,
-    totalPagesReal: 80,
+    type: "State — FCRA / ICRAA / Contract / § 290.46(j) (San Joaquin, executed unfiled)",
+    documentsCount: 33,
+    totalPagesReal: 134,
     hours: {
-      low: 32,
-      high: 55,
-      mid: 43.5
+      low: 40,
+      high: 72,
+      mid: 56
     },
     cost: {
-      low: 8960,
-      high: 15400,
-      mid: 12180
+      low: 11200,
+      high: 20160,
+      mid: 15680
     },
-    notes: "Sep. 5 intake review of 24 short email PDFs and one SMS screenshot, four-page findings memorandum, two-page formal offer, and 32-page verified-complaint review draft. Estimate covers chronology reconstruction, entity and authority research, modular nine-count drafting, citation verification, pleading-paper rendering, and factual execution gates. The complaint remains unsigned and unfiled; no demand, CRD charge, or damages worksheet has been prepared."
+    notes: "Sep. 6 true-up to the executed packet (33 files / 134 pages). The 33-page signed verified complaint carries forward from the Sep. 5 draft at the 2–3 hr/page major-pleading rate, plus execution/verification (Signed at Milpitas). New work is the San Joaquin walk-up: CM-010 (3), FW-001 (2), FW-003 (3), SUM-100 (1) at 0.5–2 hr/doc administrative rates, and the 42-page Filing Packet billed incrementally as assembly of already-drafted parts, not a second complaint. Hiring-record emails, SMS screenshot, findings memorandum, and formal offer carry forward. First Advantage is not a named defendant. Unfiled; no demand or CRD charge."
   },
   {
     number: 37,
-    type: "State — Penal Code § 290.46(j) I&B / Complaint Review Draft",
-    documentsCount: 1,
-    totalPagesReal: 20,
+    type: "State — ICRAA / UCL / § 290.46(j) I&B (San Joaquin, executed unfiled)",
+    documentsCount: 6,
+    totalPagesReal: 60,
     hours: {
-      low: 8,
-      high: 14,
-      mid: 11
+      low: 14,
+      high: 30,
+      mid: 22
     },
     cost: {
-      low: 2240,
-      high: 3920,
-      mid: 3080
+      low: 3920,
+      high: 8400,
+      mid: 6160
     },
-    notes: "Sep. 6 drafting of an unsigned 20-page three-count verified-complaint review draft against Home Depot U.S.A., Inc. for the Tracy DC hire. Estimate covers entity/agent research, I&B pleading, SOL/Tameny omission, and pleading-paper rendering. No demand or CRD charge."
+    notes: "Sep. 6 true-up to the executed packet (6 files / 60 pages). The 21-page signed three-count verified complaint is the drafting driver. CM-010, FW-001, FW-003, and SUM-100 are billed as light administrative tasks (0.5–2 hr/doc). The 30-page Filing Packet is incremental assembly, not a second complaint. No offer letter or Home Depot report is in the file. Unfiled; no demand or CRD charge."
   },
   {
     number: 38,
-    type: "State — Penal Code § 290.46(j) I&B / Complaint Review Draft",
-    documentsCount: 10,
-    totalPagesReal: 20,
+    type: "State — ICRAA / UCL / § 290.46(j) I&B (San Joaquin, executed unfiled)",
+    documentsCount: 15,
+    totalPagesReal: 134,
     hours: {
-      low: 6,
-      high: 12,
-      mid: 9
+      low: 18,
+      high: 38,
+      mid: 28
     },
     cost: {
-      low: 1680,
-      high: 3360,
-      mid: 2520
+      low: 5040,
+      high: 10640,
+      mid: 7840
     },
-    notes: "Sep. 6 intake of Swift recruiting, Clearinghouse, and FCRA emails plus the Oct. 5, 2023 post-adverse letter, and drafting of an unsigned 20-page three-count verified-complaint review draft. Estimate covers chronology, FMCSA/290 distinction, SOL/Tameny/FCRA omission, and pleading-paper rendering. Encrypted pre-adverse unread. No demand or CRD charge."
+    notes: "Sep. 6 true-up to the executed packet (15 files / 134 pages). The 21-page signed three-count verified complaint carries forward. Intake forms and the 30-page Filing Packet are billed as in Matters 36/37. The 17-page Oct. 5 post-adverse letter is evidence compilation (0.3–0.5 hr/page). The 49-page encrypted pre-adverse is billed at a light existence/admin rate only — ciphertext, not a drafting source; the decrypted packet is not in the public folder and is not billed. Recruiting/Clearinghouse emails carry forward. Unfiled; no demand or CRD charge."
   },
   {
     number: 39,
-    type: "State — Penal Code § 290.46(j) I&B / Complaint Review Draft",
-    documentsCount: 6,
-    totalPagesReal: 20,
+    type: "State — ICRAA / UCL / § 290.46(j) I&B (San Joaquin, executed unfiled)",
+    documentsCount: 11,
+    totalPagesReal: 68,
     hours: {
-      low: 6,
-      high: 11,
-      mid: 8.5
+      low: 11,
+      high: 26,
+      mid: 18.5
     },
     cost: {
-      low: 1680,
-      high: 3080,
-      mid: 2380
+      low: 3080,
+      high: 7280,
+      mid: 5180
     },
-    notes: "Sep. 6 intake of Best Buy application, offer, authorization, and First Advantage drug-test emails, and drafting of an unsigned 20-page three-count verified-complaint review draft against Best Buy Co., Inc. and First Advantage Background Services Corp. Estimate covers chronology, arbitration-recital risk, SOL/Tameny/FCRA omission, and pleading-paper rendering. No rejection letter. No demand or CRD charge."
+    notes: "Sep. 6 true-up to the executed packet (11 files / 68 pages). The 21-page signed three-count verified complaint is the drafting driver. CM-010, FW-001, FW-003, and SUM-100 plus the 30-page Filing Packet are billed as in Matters 36/37. Application, $22.60 offer, authorization, and First Advantage drug-test emails carry forward. First Advantage is not a named defendant. Unfiled; no demand or CRD charge."
   }
 ];
 
@@ -678,19 +678,19 @@ export const lawyer_fees = lawyer_fees_raw.map((row) => withMatterIdentity(row))
 export const lawyer_fees_summary = {
   analysisDate: "2026-09-06",
   totalMatters: 39,
-  totalDocumentsAnalyzed: 601,
-  totalPagesReal: 6864,
+  totalDocumentsAnalyzed: 641,
+  totalPagesReal: 7209,
   methodology: {
     blendedHourlyRate: 280,
     rateRange: { seniorPartner: [350, 450], midAssociate: [250, 350], paralegal: [150, 200] },
-    note: "Every PDF in public/documents/matter-XX/ was measured with pdfinfo for real page counts (poppler-utils), then classified by document type (complaint, motion/opposition/reply, discovery, writ/habeas, declaration, administrative, evidence) and priced using the hours-per-page/per-document conversions in docs/LAWYER_FEES_CALCULATOR.md. Opposing counsel's filings are billed only at a light review rate, never at drafting rate. Duplicate packs (opposition-pack-10, conformed copies, from-* stores) are billed incrementally. Matters with no uploaded PDFs are estimated conservatively from matter JSON status text. Aug. 28, 2026 true-up: Matter 20 Whitman tentative + reply review; Matter 24 Serrato Opp v4 / related-case motions / MTD review; Matter 26 UPS ECF 7 review + 17-page opposition; Matter 28 Dkt. 11 + QI research (HOPE discovery stays on Matter 5); Matter 32 process-server bundle; Matter 35 Ross CT / summons-first service packets. Sep. 5, 2026: Matter 36 adds the AT&T hiring record, formal offer, findings memorandum, and 32-page verified-complaint review draft.",
+    note: "Every PDF in public/documents/matter-XX/ was measured with pdfinfo for real page counts (poppler-utils), then classified by document type (complaint, motion/opposition/reply, discovery, writ/habeas, declaration, administrative, evidence) and priced using the hours-per-page/per-document conversions in docs/LAWYER_FEES_CALCULATOR.md. Opposing counsel's filings are billed only at a light review rate, never at drafting rate. Duplicate packs (opposition-pack-10, conformed copies, from-* stores) are billed incrementally. Matters with no uploaded PDFs are estimated conservatively from matter JSON status text. Aug. 28, 2026 true-up: Matter 20 Whitman tentative + reply review; Matter 24 Serrato Opp v4 / related-case motions / MTD review; Matter 26 UPS ECF 7 review + 17-page opposition; Matter 28 Dkt. 11 + QI research (HOPE discovery stays on Matter 5); Matter 32 process-server bundle; Matter 35 Ross CT / summons-first service packets. Sep. 5, 2026: Matter 36 adds the AT&T hiring record, formal offer, findings memorandum, and 32-page verified-complaint review draft. Sep. 6, 2026: Matters 36–39 true-up to executed San Joaquin packets (CM-010, FW-001, FW-003, SUM-100, signed complaints, walk-up assemblies).",
   },
-  totalEstimatedHours: { low: 3046.8, high: 5094.2, mid: 4063 },
-  totalEstimatedCost: { low: 853104, high: 1426376, mid: 1137640 },
+  totalEstimatedHours: { low: 3097.8, high: 5205.2, mid: 4144 },
+  totalEstimatedCost: { low: 867384, high: 1457456, mid: 1160320 },
   byCluster: {
     cluster1: { label: "CHP / DUI / DMV", matters: [1, 2, 7, 8, 20, 24, 32, 33], costLow: 172676, costMid: 230272, costHigh: 287868 },
     cluster2: { label: "Parole Retaliation / HOPE", matters: [3, 4, 5, 6, 11, 13, 14, 15, 16, 17, 18, 21, 28, 30, 34], costLow: 469672, costMid: 619192, costHigh: 772912 },
-    cluster3: { label: "Consumer Fraud / Employment", matters: [12, 22, 23, 25, 26, 27, 29, 31, 36, 37, 38, 39], costLow: 154896, costMid: 210826, costHigh: 266756 },
+    cluster3: { label: "Consumer Fraud / Employment", matters: [12, 22, 23, 25, 26, 27, 29, 31, 36, 37, 38, 39], costLow: 169176, costMid: 233506, costHigh: 297836 },
     cluster4: { label: "Administrative Writs & Habeas", matters: [9, 10, 19], costLow: 41580, costMid: 57890, costHigh: 74200 },
     cluster6: { label: "Public Accommodation / Unruh", matters: [35], costLow: 14280, costMid: 19460, costHigh: 24640 },
   },
