@@ -2,11 +2,13 @@
 # -*- coding: utf-8 -*-
 """San Joaquin intake packet for Matters 36–39.
 
-CM-010, SUM-100, and FW-001 for each executed complaint. Text is drawn onto
-the printed lines (not left to AcroForm appearance streams) so captions stack
-inside the case-name boxes and the signature sits on the signature line.
-FW-001 still copies the 5b / $0 answers that produced automatic grants on the
-July 15, 2026 UPS and FedEx filings. First Advantage is not a named defendant.
+CM-010, SUM-100, FW-001, and FW-003 for each executed complaint. Text is
+drawn onto the printed lines (not left to AcroForm appearance streams) so
+captions stack inside the case-name boxes and the signature sits on the
+signature line. FW-001 still copies the 5b / $0 answers that produced
+automatic grants on the July 15, 2026 UPS and FedEx filings. FW-003 fills
+item 1 and the caption for the clerk; the filed-on date stays blank.
+First Advantage is not a named defendant.
 
     python3 internal/scripts/matter36-39-san-joaquin-intake.py
 """
@@ -520,6 +522,69 @@ def build_fw001(case: dict, out: Path) -> None:
     print(f"Wrote {out}")
 
 
+def build_fw003(case: dict, out: Path) -> None:
+    """Clerk order. Fill item 1 and the caption. Leave the filed-on date blank."""
+    src = FORMS / "fw003-blank-template.pdf"
+    shutil.copy2(src, out)
+    doc = pymupdf.open(str(out))
+    page0, page1, page2 = doc[0], doc[1], doc[2]
+    fields0 = _widget_map(page0)
+    fields1 = _widget_map(page1)
+    fields2 = _widget_map(page2)
+
+    _drop_text_widgets(page0)
+    _drop_text_widgets(page1)
+    _drop_text_widgets(page2)
+    for w in list(page2.widgets() or []):
+        name = w.field_name or ""
+        if "Print" in name or "Save" in name or "Reset" in name or "Warning" in name:
+            page2.delete_widget(w)
+
+    if "PersonWaivingName_ft[0]" in fields0:
+        _write_on_line(page0, fields0["PersonWaivingName_ft[0]"], PLAINTIFF_PRINT, fontsize=9.0)
+    if "FillText23[0]" in fields0:
+        _write_on_line(
+            page0, fields0["FillText23[0]"], STREET, fontsize=8.0, baseline_inset=1.0
+        )
+    if "FillText21[0]" in fields0:
+        _write_on_line(page0, fields0["FillText21[0]"], CITY, fontsize=8.0)
+    if "FillText20[0]" in fields0:
+        _write_on_line(page0, fields0["FillText20[0]"], STATE, fontsize=8.0)
+    if "FillText22[0]" in fields0:
+        _write_on_line(page0, fields0["FillText22[0]"], ZIP, fontsize=8.0)
+
+    court_rect = fields0.get("CourtInfo_ft[0]", pymupdf.Rect(399.6, 202.9, 573.9, 270.2))
+    _write_stack(
+        page0,
+        court_rect,
+        [COURT_COUNTY, COURT_STREET, COURT_CITYZIP],
+        max_fs=8.5,
+        min_fs=7.0,
+    )
+
+    # Case Name cell is y≈311–340. Stack under the printed label.
+    case_rect = pymupdf.Rect(400.8, 325.4, 573.0, 339.0)
+    _write_stack(
+        page0,
+        case_rect,
+        _caption_lines(case["caption"]),
+        max_fs=6.2,
+        min_fs=5.8,
+        leading=6.6,
+        valign="center",
+    )
+
+    if "PersonWaivingName_ft[0]" in fields1:
+        _write_on_line(page1, fields1["PersonWaivingName_ft[0]"], PLAINTIFF_PRINT, fontsize=8.0)
+    if "PersonWaivingName_ft[0]" in fields2:
+        _write_on_line(page2, fields2["PersonWaivingName_ft[0]"], PLAINTIFF_PRINT, fontsize=8.0)
+
+    _whiteout(page2, pymupdf.Rect(0.0, 756.0, 612.0, 792.0))
+
+    _save_clean(doc, out)
+    print(f"Wrote {out}")
+
+
 def main() -> None:
     if not Path(SIGNATURE_PATH).is_file():
         raise SystemExit(f"Missing signature: {SIGNATURE_PATH}")
@@ -537,6 +602,10 @@ def main() -> None:
         build_fw001(
             case,
             case["dir"] / f"FW-001 Request to Waive Court Fees - {stem} (Sep 8 2026).pdf",
+        )
+        build_fw003(
+            case,
+            case["dir"] / f"FW-003 Order on Court Fee Waiver - {stem} (Sep 8 2026).pdf",
         )
 
 

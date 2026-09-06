@@ -4,7 +4,7 @@
   "case_no": "TBD",
   "court": "San Joaquin Sup. Ct. (executed packet; not yet filed)",
   "claims": "ICRAA §§ 1786.40, 1786.50; UCL § 17200; Penal Code § 290.46(j) (I&B — preliminary NSOPW / registry)",
-  "status": "EXECUTED (unfiled) — three-count San Joaquin complaint against Swift Transportation Co. of Arizona LLC for a Class A Driver role, signed for September 8, 2026. NSOPW remained Processing. CM-010, SUM-100, and FW-001 are in the packet. § 290 is the third count. File before September 26 if accrual is the pre-adverse.",
+  "status": "EXECUTED (unfiled) — three-count San Joaquin complaint against Swift Transportation Co. of Arizona LLC for a Class A Driver role, signed for September 8, 2026. NSOPW remained Processing. CM-010, SUM-100, FW-001, and FW-003 are in the packet. § 290 is the third count. File before September 26 if accrual is the pre-adverse.",
   "status_label": "Executed — unfiled",
   "lifecycle": "pre_filing",
   "proceeding": "state_civil",
@@ -60,6 +60,10 @@
     },
     {
       "path": "/documents/matter-38/FW-001 Request to Waive Court Fees - Ngwa Nforbi v Swift Transportation Co of Arizona LLC (Sep 8 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-38/FW-003 Order on Court Fee Waiver - Ngwa Nforbi v Swift Transportation Co of Arizona LLC (Sep 8 2026).pdf",
       "filed": false
     },
     {

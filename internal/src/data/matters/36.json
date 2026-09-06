@@ -4,7 +4,7 @@
   "case_no": "TBD",
   "court": "San Joaquin Sup. Ct. (executed packet; not yet filed)",
   "claims": "FCRA § 1681b(b)(3); ICRAA §§ 1786.40, 1786.50; Breach of Contract; Implied Covenant; Promissory Estoppel; Negligent Misrepresentation; Fraud / Concealment; UCL § 17200 (alternative pleading); Penal Code § 290.46(j)",
-  "status": "EXECUTED (unfiled) — nine-count San Joaquin complaint against AT&T Mobility Services LLC, signed for September 8, 2026. Plaintiff confirmed Workday acceptance, onboarding, and nonreceipt. First Advantage is not a named defendant. CM-010, SUM-100, and FW-001 are in the packet. § 290 is the ninth count.",
+  "status": "EXECUTED (unfiled) — nine-count San Joaquin complaint against AT&T Mobility Services LLC, signed for September 8, 2026. Plaintiff confirmed Workday acceptance, onboarding, and nonreceipt. First Advantage is not a named defendant. CM-010, SUM-100, FW-001, and FW-003 are in the packet. § 290 is the ninth count.",
   "status_label": "Executed — unfiled",
   "lifecycle": "pre_filing",
   "proceeding": "state_civil",
@@ -177,6 +177,10 @@
     },
     {
       "path": "/documents/matter-36/FW-001 Request to Waive Court Fees - Ngwa Nforbi v AT&T Mobility Services LLC (Sep 8 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-36/FW-003 Order on Court Fee Waiver - Ngwa Nforbi v AT&T Mobility Services LLC (Sep 8 2026).pdf",
       "filed": false
     }
   ]

@@ -5,8 +5,9 @@
 Walk-up order for a fee-waiver unlimited filing:
   1. CM-010 Civil Case Cover Sheet
   2. FW-001 Request to Waive Court Fees
-  3. SUM-100 Summons
-  4. Verified Complaint
+  3. FW-003 Order on Court Fee Waiver (clerk fills; date blank)
+  4. SUM-100 Summons
+  5. Verified Complaint
 
 Does not attach exhibits. Does not include the Swift decrypted packet.
 
@@ -61,6 +62,7 @@ def sources_for(case: dict) -> list[Path]:
     paths = [
         d / f"CM-010 Civil Case Cover Sheet - {stem} ({DATE}).pdf",
         d / f"FW-001 Request to Waive Court Fees - {stem} ({DATE}).pdf",
+        d / f"FW-003 Order on Court Fee Waiver - {stem} ({DATE}).pdf",
         d / f"SUM-100 Summons - {stem} ({DATE}).pdf",
         d / f"Verified Complaint - {stem} ({DATE}).pdf",
     ]
@@ -81,7 +83,8 @@ def main() -> None:
         print(
             f"Wrote {out.name} — {total} pages "
             f"(CM-010 {part_pages[0]} + FW-001 {part_pages[1]} + "
-            f"SUM-100 {part_pages[2]} + complaint {part_pages[3]})"
+            f"FW-003 {part_pages[2]} + SUM-100 {part_pages[3]} + "
+            f"complaint {part_pages[4]})"
         )
 
 
