@@ -354,6 +354,38 @@ def extract_pages(path):
         doc.close()
 
 
+# Attested OCR wreckage from plaintiff-filing scans in the P0 queue.
+# Only strings that appear in this corpus — do not invent general OCR.
+OCR_PAGE_FIXES = (
+    (re.compile(r"Califomia"), "California"),
+    (re.compile(r"DUl"), "DUI"),
+    (re.compile(r"DUILawyers"), "DUI Lawyers"),
+    (re.compile(r"MedinOy"), "Medina"),
+    (re.compile(r"TorreSy"), "Torres"),
+    (re.compile(r"TexaSy"), "Texas"),
+    (re.compile(r"Royery"), "Royer"),
+    (re.compile(r"Coeiir"), "Coeur"),
+    (re.compile(r"\bDMVy\b"), "DMV"),
+    (re.compile(r"\bICnudsen\b"), "Knudsen"),
+    (re.compile(r"\bKjiudsen\b"), "Knudsen"),
+    (re.compile(r"\bKmidsen\b"), "Knudsen"),
+    (re.compile(r"Knudsen v\. DMF\b"), "Knudsen v. DMV"),
+    (re.compile(r"Annondo"), "Armondo"),
+    (re.compile(r"Dep'lofMotor"), "Department of Motor"),
+    (re.compile(r"Devenpeck v\. Alford,\s*3 U\.S\."), "Devenpeck v. Alford, 543 U.S."),
+    (re.compile(r"Propeiiies"), "Properties"),
+    (re.compile(r"Int'llnterlink"), "Int'l Interlink"),
+)
+
+
+def repair_ocr_page_text(text):
+    """Fold attested Tesseract wreckage so one authority is one index row."""
+    out = text
+    for rx, repl in OCR_PAGE_FIXES:
+        out = rx.sub(repl, out)
+    return out
+
+
 # A full authority is "Name, <reporter cite> (year)" or the California form
 # "Name (year) <reporter cite>". Cataloguing the name and the reporter numbers
 # as separate rows makes the index useless for drafting -- you cannot check
@@ -575,6 +607,7 @@ def main():
                 for pageno, text in enumerate(pages, start=1):
                     if not text.strip():
                         continue
+                    text = repair_ocr_page_text(text)
                     for kind, raw, s, e in scan_page(text):
                         key = normalize(kind, raw)
                         if len(key) < 3:

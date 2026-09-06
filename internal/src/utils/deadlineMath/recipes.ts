@@ -94,6 +94,12 @@ export const RECIPE_META: Record<
     anchorLabel: "Opposition filing date",
     description: "Reply due 10 calendar days after the opposition is filed, then FRCP 6(a) last-day roll.",
   },
+  ndcal_lr7_motion_filed: {
+    label: "N.D. Cal. Civil L.R. 7 motion filed",
+    forum: "federal",
+    anchorLabel: "Motion filing date",
+    description: "Earliest hearing (35 days), opposition (14 days after filing), and reply (7 days after opposition was due). FRCP 6(d) does not apply.",
+  },
 };
 
 function cite(...ids: (keyof typeof SOURCES)[]): RuleCitation[] {
@@ -394,6 +400,8 @@ function computeDeadlines(input: ComputeInput, court: CourtKey): ComputedDeadlin
         citations: cite("edcal230", "frcp6"),
         rule: `E.D. Cal. L.R. 230(d) allows a reply no later than 10 days after the opposition is filed on ${formatPortfolioDate(anchor)}`,
       });
+    case "ndcal_lr7_motion_filed":
+      return ndcalLr7FromFiling(anchor, court);
     default: {
       const _exhaustive: never = input.recipe;
       throw new Error(`Unknown recipe: ${_exhaustive}`);
@@ -430,8 +438,66 @@ function federalCalendarDeadline(opts: {
   ];
 }
 
+function ndcalLr7FromFiling(filed: DayKey, court: CourtKey): ComputedDeadline[] {
+  const hearingRaw = addCalendarDaysAfter(filed, 35);
+  const hearing = rollForwardToCourtDay(hearingRaw, court);
+  const oppositionRaw = addCalendarDaysAfter(filed, 14);
+  const opposition = rollForwardToCourtDay(oppositionRaw, court);
+  const replyRaw = addCalendarDaysAfter(opposition.date, 7);
+  const reply = rollForwardToCourtDay(replyRaw, court);
+  const cites7 = cite("ndcal7", "frcp6");
+  return [
+    deadline({
+      id: "ndcal_opposition",
+      label: "Opposition (Civil L.R. 7-3(a))",
+      date: opposition.date,
+      rawDate: oppositionRaw,
+      rolled: opposition.rolled,
+      citations: cites7,
+      explanation: [
+        `N.D. Cal. Civil L.R. 7-3(a) requires opposition no later than 14 days after the motion is filed on ${formatPortfolioDate(filed)} → ${formatPortfolioDate(oppositionRaw)}.`,
+        "FRCP 6(d) does not extend this filing-triggered clock.",
+        opposition.rolled
+          ? `That day is a Saturday, Sunday, or legal holiday, so FRCP 6(a)(1)(C) continues the period to ${formatPortfolioDate(opposition.date)}.`
+          : "That day is a court day, so no FRCP 6(a) last-day extension applies.",
+      ].join(" "),
+    }),
+    deadline({
+      id: "ndcal_reply",
+      label: "Reply (Civil L.R. 7-3(c))",
+      date: reply.date,
+      rawDate: replyRaw,
+      rolled: reply.rolled,
+      citations: cites7,
+      explanation: [
+        `N.D. Cal. Civil L.R. 7-3(c) requires a reply no later than 7 days after the opposition was due (${formatPortfolioDate(opposition.date)}) → ${formatPortfolioDate(replyRaw)}.`,
+        "FRCP 6(d) does not extend this clock.",
+        reply.rolled
+          ? `FRCP 6(a)(1)(C) continues the period to ${formatPortfolioDate(reply.date)}.`
+          : "That day is a court day.",
+      ].join(" "),
+    }),
+    deadline({
+      id: "ndcal_earliest_hearing",
+      label: "Earliest hearing date (Civil L.R. 7-2(a))",
+      date: hearing.date,
+      rawDate: hearingRaw,
+      rolled: hearing.rolled,
+      citations: cites7,
+      explanation: [
+        `N.D. Cal. Civil L.R. 7-2(a) requires the motion to be noticed for a hearing not less than 35 days after filing on ${formatPortfolioDate(filed)} → ${formatPortfolioDate(hearingRaw)}.`,
+        "FRCP 6(d) does not extend this filing-triggered clock.",
+        hearing.rolled
+          ? `That day is a Saturday, Sunday, or legal holiday, so the earliest hearing rolls to ${formatPortfolioDate(hearing.date)}.`
+          : "That day is a court day.",
+      ].join(" "),
+    }),
+  ];
+}
+
 function defaultCourtForRecipe(recipe: RecipeId, court?: CourtKey): CourtKey {
   if (court) return court;
+  if (recipe === "ndcal_lr7_motion_filed") return "USDC N.D. Cal.";
   return RECIPE_META[recipe].forum === "federal" ? DEFAULT_FEDERAL_COURT : DEFAULT_STATE_COURT;
 }
 
@@ -460,6 +526,8 @@ function sourcesFor(recipe: RecipeId, court: CourtKey): RuleCitation[] {
       case "edcal_lr230c_opposition":
       case "edcal_lr230d_reply":
         return cite("edcal230", "frcp6");
+      case "ndcal_lr7_motion_filed":
+        return cite("ndcal7", "frcp6");
       default:
         return [];
     }

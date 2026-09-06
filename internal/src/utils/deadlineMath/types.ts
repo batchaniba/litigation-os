@@ -58,7 +58,8 @@ export type RecipeId =
   | "federal_answer_after_service"
   | "federal_response_after_mail_service"
   | "edcal_lr230c_opposition"
-  | "edcal_lr230d_reply";
+  | "edcal_lr230d_reply"
+  | "ndcal_lr7_motion_filed";
 
 export type ComputeInput = {
   recipe: RecipeId;

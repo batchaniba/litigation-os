@@ -22,6 +22,7 @@ const RECIPE_ORDER: RecipeId[] = [
   "federal_response_after_mail_service",
   "edcal_lr230c_opposition",
   "edcal_lr230d_reply",
+  "ndcal_lr7_motion_filed",
 ];
 
 const SERVICE_OPTIONS: { value: ServiceMethod; label: string }[] = [
@@ -79,7 +80,11 @@ export function DeadlineCalculatorTab() {
   const onRecipeChange = (next: RecipeId) => {
     setRecipe(next);
     const nextForum = RECIPE_META[next].forum;
-    if (nextForum === "federal" && !FEDERAL_COURTS.includes(court)) {
+    if (next === "ndcal_lr7_motion_filed") {
+      setCourt("USDC N.D. Cal.");
+    } else if (next.startsWith("edcal_")) {
+      setCourt("USDC E.D. Cal.");
+    } else if (nextForum === "federal" && !FEDERAL_COURTS.includes(court)) {
       setCourt("USDC E.D. Cal.");
     }
     if (nextForum === "california" && !STATE_COURTS.includes(court)) {
@@ -94,7 +99,8 @@ export function DeadlineCalculatorTab() {
         <p className="detail-copy detail-copy-secondary">
           Derive opposition, reply, answer, and service deadlines from the triggering event — not from
           dates typed by hand. Counts follow CCP §§12 / 12a / 12c / 1005, FRCP 6, and E.D. Cal. L.R.
-          230, against published holiday calendars for the six courts in this portfolio.
+          230, and N.D. Cal. Civil L.R. 7, against published holiday calendars for the six
+          courts in this portfolio.
         </p>
       </header>
 
