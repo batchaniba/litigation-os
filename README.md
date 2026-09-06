@@ -227,7 +227,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | Date | Matter | Event |
 |---|---|---|
 | Sep. 8, 2026 | 37 | FILE-READY (optional vs Serrato) — Executed verified complaint against Home Depot U.S.A., Inc. for the Tracy distribution-center hire (Matter 37), dated September 8, 2026, with CM-010, SUM-100, and FW-001 (5b / $0,… |
-| Sep. 8, 2026 | 38 | FILE-READY (optional vs Serrato) — Executed verified complaint against Swift Transportation Co. of Arizona LLC (Matter 38), dated September 8, 2026, with CM-010, SUM-100, and FW-001 (5b / $0, UPS/FedEx grant pattern). |
+| Sep. 8, 2026 | 38 | FILE-READY (optional vs Serrato) — Executed verified complaint against Swift Transportation Co. of Arizona LLC for a Class A Driver role (Matter 38), dated September 8, 2026, with CM-010, SUM-100, and FW-001 (5b / $0,… |
 | Sep. 8, 2026 | 39 | FILE-READY (optional vs Serrato) — Executed verified complaint against Best Buy Co., Inc. (Matter 39), dated September 8, 2026, with CM-010, SUM-100, and FW-001 (5b / $0, UPS/FedEx grant pattern). |
 | Sep. 8, 2026 | 36 | FILE-READY (optional vs Serrato) — Executed verified complaint against AT&T Mobility Services LLC (Matter 36), dated September 8, 2026, with CM-010, SUM-100, and FW-001 (5b / $0, UPS/FedEx grant pattern). |
 | Sep. 8, 2026 | 26 | UPS reply deadline — Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). E.D. Cal. L.R. 230(d): reply no later than 10 days after the opposition was filed. |

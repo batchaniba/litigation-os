@@ -80,10 +80,10 @@ CAPTION_RIGHT = [
     ("DAMAGES, DECLARATORY AND", True, False),
     ("INJUNCTIVE RELIEF", True, False),
     ("", False, False),
-    ("(1) Penal Code § 290.46(j);", False, False),
-    ("(2) ICRAA, Civ. Code", False, False),
+    ("(1) ICRAA, Civ. Code", False, False),
     ("      §§ 1786.40, 1786.50;", False, False),
-    ("(3) UCL, B&P Code § 17200", False, False),
+    ("(2) UCL, B&P Code § 17200;", False, False),
+    ("(3) Penal Code § 290.46(j)", False, False),
     ("", False, False),
     ("[Unlimited Civil]", False, True),
     ("[Jury Trial Demanded]", False, True),
@@ -111,10 +111,13 @@ CONTENT = [
         "for the unauthorized employment use of California Megan's Law registry "
         "information. On October 13, 2023, Plaintiff applied to Best Buy for "
         "General Warehouse Worker / 2nd Shift at $22.60, requisition 928556BR. "
-        "On October 17, 2023, Best Buy offered him that job, required a "
+        "On October 17, 2023, Best Buy offered him that job at its warehouse "
+        "at 6653 Hopkins Road, Tracy, California 95377, required a "
         "background check, and through First Advantage ordered a drug test. "
-        "Thereafter Best Buy made an employment decision concerning that offer. "
-        "No written rejection is in Plaintiff's files.",
+        "Plaintiff accepted the offer and completed the drug screening. On "
+        "information and belief, that screen came back clean. Thereafter "
+        "Best Buy ceased communication and ghosted him. No written rejection "
+        "is in Plaintiff's files.",
     ),
     (
         "PARA",
@@ -217,13 +220,10 @@ CONTENT = [
     ),
     (
         "PARA",
-        "11. The October 13 and October 17, 2023 emails do not state the "
-        "street address of the warehouse. A Quest Diagnostics collection site "
-        "in Modesto, California, appears on the drug-test order as one "
-        "available site. That is a collection option, not a pleaded worksite. "
-        "Plaintiff does not invent a distribution-center address. "
-        "[PLAINTIFF MUST CONFIRM THE WAREHOUSE CITY AND WHETHER HE EVER "
-        "REPORTED THERE.]",
+        "11. The warehouse job was at 6653 Hopkins Road, Tracy, California "
+        "95377. A Quest Diagnostics collection site in Modesto, California, "
+        "appears on the drug-test order as one available site. That is a "
+        "collection option, not the worksite.",
     ),
     (
         "PARA",
@@ -294,18 +294,19 @@ CONTENT = [
     (
         "PARA",
         "19. This Court has personal jurisdiction over Best Buy because Best "
-        "Buy recruited and offered employment to a California resident, "
-        "required a California background-check authorization, and caused a "
-        "drug test to be ordered at California collection sites, including a "
-        "Modesto option. First Advantage is not named as a defendant.",
+        "Buy recruited and offered employment to a California resident for "
+        "work at 6653 Hopkins Road, Tracy, required a California "
+        "background-check authorization, and caused a drug test to be ordered "
+        "at California collection sites, including a Modesto option. First "
+        "Advantage is not named as a defendant.",
     ),
     (
         "PARA",
         "20. Venue is proper in the County of San Joaquin under Code of Civil "
-        "Procedure sections 395 and 395.5 because Plaintiff resides here, he "
-        "received the application confirmation, the offer, the authorization "
-        "copy, and the drug-test order here, and the liability and injury "
-        "arose here.",
+        "Procedure sections 395 and 395.5 because Plaintiff resides here, the "
+        "warehouse is in Tracy, he received the application confirmation, the "
+        "offer, the authorization copy, and the drug-test order here, and the "
+        "liability and injury arose here.",
     ),
     (
         "PARA",
@@ -331,12 +332,12 @@ CONTENT = [
     ),
     (
         "PARA",
-        "24. The file does not contain a dated rejection. On information and "
-        "belief, the decision occurred on or after October 17, 2023, and in "
-        "any event within three years before the filing of this Complaint. "
-        "Three years from October 17, 2023, is October 17, 2026. This "
-        "Complaint is prepared for execution on September 8, 2026. "
-        "[PLAINTIFF MUST CONFIRM THE DECISION DATE BEFORE EXECUTION.]",
+        "24. After October 17, 2023, Best Buy ceased communication and "
+        "ghosted Plaintiff. The file contains no dated rejection. On "
+        "information and belief, that cessation occurred on or after October "
+        "17, 2023, and in any event within three years before the filing of "
+        "this Complaint. Three years from October 17, 2023, is October 17, "
+        "2026. This Complaint is prepared for execution on September 8, 2026.",
     ),
     (
         "PARA",
@@ -375,12 +376,10 @@ CONTENT = [
     ),
     (
         "PARA",
-        "28. The signed offer, the Candidate Zone acceptance audit, and the "
-        "two attached disclosure PDFs are not in Plaintiff's present files. "
-        "Plaintiff does not allege that he signed, or that he refused to "
-        "sign, as a known fact. "
-        "[PLAINTIFF MUST CONFIRM WHETHER HE SIGNED THE OFFER AND COMPLETED "
-        "THE CANDIDATE ZONE TASKS.]",
+        "28. Plaintiff accepted the offer. The Candidate Zone acceptance "
+        "audit and the two attached disclosure PDFs are not in Plaintiff's "
+        "present files. Their absence from those files does not negate the "
+        "acceptance.",
     ),
     ("SUBHEAD", "B. The Background Authorization and the Drug Test"),
     (
@@ -420,27 +419,25 @@ CONTENT = [
         "with Best Buy!' and that the drug screen had been successfully "
         "ordered, with instructions pointing to the First Advantage email. "
         "The reminder's 'accepting your offer' sentence is Best Buy's "
-        "characterization. Plaintiff does not treat that sentence as a "
-        "substitute for the Candidate Zone signature audit. "
-        "[PLAINTIFF MUST CONFIRM WHETHER HE COMPLETED THE DRUG TEST AND "
-        "WHAT RESULT, IF ANY, HE WAS TOLD.]",
+        "characterization; Plaintiff independently accepted the offer and "
+        "completed the drug screening. On information and belief, that "
+        "screen came back clean.",
     ),
     (
         "PARA",
         "33. Plaintiff does not allege that a failed drug test was the reason "
-        "for any later decision. He does not know the result. A drug-test "
-        "order is not a Penal Code section 290.46 disclosure.",
+        "for any later decision. On information and belief, the screen came "
+        "back clean. A drug-test order is not a Penal Code section 290.46 "
+        "disclosure.",
     ),
     ("SUBHEAD", "C. The Employment Decision"),
     (
         "PARA",
-        "34. After the October 17, 2023 offer and screen, Best Buy made an "
-        "employment decision concerning Plaintiff. On information and belief, "
-        "that decision was a revocation of the offer, a refusal to finalize "
-        "employment, a termination of the application, or other adverse action "
-        "that ended or prevented the warehouse job. The file contains no "
-        "pre-adverse letter, no adverse-action letter, and no explanation. "
-        "[PLAINTIFF MUST CONFIRM WHAT HAPPENED AND ON WHAT DAY.]",
+        "34. After Plaintiff accepted the October 17, 2023 offer and completed "
+        "the drug screening, Best Buy ceased communication and ghosted him. "
+        "That cessation ended or prevented the warehouse job. The file "
+        "contains no pre-adverse letter, no adverse-action letter, and no "
+        "explanation.",
     ),
     (
         "PARA",
@@ -457,9 +454,8 @@ CONTENT = [
         "an investigative consumer report had been obtained or supply the "
         "name and address of the agency that prepared it, as Civil Code "
         "section 1786.40 requires when employment is denied under "
-        "circumstances in which such a report was obtained. "
-        "[PLAINTIFF MUST CONFIRM THAT NO PRE-ADVERSE OR ADVERSE PACKAGE "
-        "ARRIVED BY EMAIL, PORTAL, OR MAIL.]",
+        "circumstances in which such a report was obtained. No pre-adverse "
+        "or adverse package arrived by email, portal, or mail.",
     ),
     ("SUBHEAD", "D. Facts Supporting the Registry-Use Inference"),
     (
@@ -584,8 +580,8 @@ CONTENT = [
         "not state weekly hours. Plaintiff also suffered emotional distress, "
         "humiliation, and anxiety from an unexplained collapse of a written "
         "offer he is informed and believes rested on a status the Legislature "
-        "has forbidden employers to use. [PLAINTIFF MUST CONFIRM WAGES "
-        "EARNED, IF ANY, HOURS OFFERED, AND REPLACEMENT WORK.]",
+        "has forbidden employers to use. Weekly hours are not in the offer "
+        "email. Wages earned, if any, will be proven.",
     ),
     (
         "PARA",
@@ -643,6 +639,109 @@ CONTENT = [
     ("HEADER", "VI.\nFIRST CAUSE OF ACTION"),
     (
         "SUBHEAD",
+        "California Investigative Consumer Reporting Agencies Act\n"
+        "Civil Code sections 1786.40 and 1786.50 — Against Best Buy "
+        "and User DOES\n"
+        "(Pleaded on Information and Belief)",
+    ),
+    (
+        "PARA",
+        "60. Plaintiff realleges paragraphs 1 through 53 and 57 through 58 to "
+        "the extent consistent with this cause.",
+    ),
+    (
+        "PARA",
+        "61. On information and belief, First Advantage assembled or evaluated "
+        "information concerning Plaintiff's character, general reputation, "
+        "personal characteristics, or mode of living for employment purposes "
+        "at Best Buy's request, and Best Buy was the user of that information "
+        "before the decision alleged in paragraph 34.",
+    ),
+    (
+        "PARA",
+        "62. Civil Code section 1786.40(a) required Best Buy, under "
+        "circumstances in which employment was denied and an investigative "
+        "consumer report had been obtained, to advise Plaintiff of that fact "
+        "and supply the agency's name and address. On information and belief, "
+        "Best Buy did not comply. The file contains no such advice. "
+        "Plaintiff received none.",
+    ),
+    (
+        "PARA",
+        "63. The omission prevented Plaintiff from timely obtaining the Best "
+        "Buy-specific report, testing whether its source was the California "
+        "registry or ordinary court records, and invoking his statutory "
+        "inspection and dispute rights. This ICRAA count does not depend on "
+        "proving Penal Code section 290.46(j). A notice failure under Civil "
+        "Code section 1786.40 is independently actionable if an investigative "
+        "consumer report was obtained and employment was denied without the "
+        "required advice. That count can reach discovery even if the "
+        "registry-use inference later fails.",
+    ),
+    (
+        "PARA",
+        "64. Under Civil Code section 1786.50, Plaintiff seeks actual damages "
+        "or $10,000, whichever is greater, costs, attorney's fees if later "
+        "represented, and punitive damages upon proof of gross negligence or "
+        "willfulness.",
+    ),
+    (
+        "PARA",
+        "65. This ICRAA count is not a Fair Credit Reporting Act count. "
+        "Plaintiff has not pleaded 15 U.S.C. section 1681b(b)(3). He reserves "
+        "amendment if production shows Best Buy based the decision in whole or "
+        "in part on a consumer report and failed to provide a copy of the "
+        "report and a federal rights summary before the adverse action. He "
+        "also reserves amendment under Civil Code section 1786.16 if "
+        "production shows the report was procured before the required "
+        "standalone disclosure and written authorization. The October 17 "
+        "confirmation recites authorization; it does not prove that a report "
+        "was lawfully procured or used.",
+    ),
+    ("HEADER", "VII.\nSECOND CAUSE OF ACTION"),
+    (
+        "SUBHEAD",
+        "Unlawful and Unfair Business Practices\n"
+        "Business and Professions Code section 17200 — Against All Defendants",
+    ),
+    (
+        "PARA",
+        "66. Plaintiff realleges paragraphs 1 through 65 to the extent "
+        "consistent with this equitable cause.",
+    ),
+    (
+        "PARA",
+        "67. Defendants engaged in unlawful practices by violating Penal Code "
+        "section 290.46(j) and, if proven, Civil Code section 1786.40. They "
+        "engaged in unfair practices by extending a written warehouse offer, "
+        "ordering a same-day screen, and then undoing the hire on secret "
+        "registry-derived information without a source, a report, or an "
+        "opportunity to respond.",
+    ),
+    (
+        "PARA",
+        "68. Plaintiff suffered injury in fact and lost money or property "
+        "through the lost warehouse employment at $22.60 per hour and other "
+        "economic losses to be proven. He does not seek future unearned wages "
+        "as UCL restitution. He seeks restitution only of money or property "
+        "in which he had a vested interest and that Defendants acquired or "
+        "caused him to lose through the challenged practices.",
+    ),
+    (
+        "PARA",
+        "69. Legal damages are not an adequate remedy for Defendants' "
+        "retention, use, and dissemination of registry-derived screening data "
+        "or their ongoing employment-screening practices. Plaintiff seeks an "
+        "injunction requiring Defendants to cease prohibited employment use of "
+        "California registry information in California warehouse hiring; "
+        "preserve and disclose the source and audit trail of Plaintiff's "
+        "screening; and correct or segregate unlawfully used data, together "
+        "with restitution and declaratory relief ancillary to the injunction "
+        "under Business and Professions Code section 17203.",
+    ),
+    ("HEADER", "VIII.\nTHIRD CAUSE OF ACTION"),
+    (
+        "SUBHEAD",
         "Unauthorized Employment Use of Registry Information\n"
         "Penal Code section 290.46(j) — Against All Defendants",
     ),
@@ -695,109 +794,6 @@ CONTENT = [
         "pattern or practice of employment use of Megan's Law information in "
         "Best Buy's California warehouse hiring and in First Advantage's "
         "California employment reports.",
-    ),
-    ("HEADER", "VII.\nSECOND CAUSE OF ACTION"),
-    (
-        "SUBHEAD",
-        "California Investigative Consumer Reporting Agencies Act\n"
-        "Civil Code sections 1786.40 and 1786.50 — Against Best Buy "
-        "and User DOES\n"
-        "(Pleaded on Information and Belief)",
-    ),
-    (
-        "PARA",
-        "60. Plaintiff realleges paragraphs 1 through 53 and 57 through 58 to "
-        "the extent consistent with this cause.",
-    ),
-    (
-        "PARA",
-        "61. On information and belief, First Advantage assembled or evaluated "
-        "information concerning Plaintiff's character, general reputation, "
-        "personal characteristics, or mode of living for employment purposes "
-        "at Best Buy's request, and Best Buy was the user of that information "
-        "before the decision alleged in paragraph 34.",
-    ),
-    (
-        "PARA",
-        "62. Civil Code section 1786.40(a) required Best Buy, under "
-        "circumstances in which employment was denied and an investigative "
-        "consumer report had been obtained, to advise Plaintiff of that fact "
-        "and supply the agency's name and address. On information and belief, "
-        "Best Buy did not comply. The file contains no such advice. "
-        "[PLAINTIFF MUST CONFIRM NONRECEIPT.]",
-    ),
-    (
-        "PARA",
-        "63. The omission prevented Plaintiff from timely obtaining the Best "
-        "Buy-specific report, testing whether its source was the California "
-        "registry or ordinary court records, and invoking his statutory "
-        "inspection and dispute rights. This ICRAA count does not depend on "
-        "proving Penal Code section 290.46(j). A notice failure under Civil "
-        "Code section 1786.40 is independently actionable if an investigative "
-        "consumer report was obtained and employment was denied without the "
-        "required advice. That count can reach discovery even if the "
-        "registry-use inference later fails.",
-    ),
-    (
-        "PARA",
-        "64. Under Civil Code section 1786.50, Plaintiff seeks actual damages "
-        "or $10,000, whichever is greater, costs, attorney's fees if later "
-        "represented, and punitive damages upon proof of gross negligence or "
-        "willfulness.",
-    ),
-    (
-        "PARA",
-        "65. This ICRAA count is not a Fair Credit Reporting Act count. "
-        "Plaintiff has not pleaded 15 U.S.C. section 1681b(b)(3). He reserves "
-        "amendment if production shows Best Buy based the decision in whole or "
-        "in part on a consumer report and failed to provide a copy of the "
-        "report and a federal rights summary before the adverse action. He "
-        "also reserves amendment under Civil Code section 1786.16 if "
-        "production shows the report was procured before the required "
-        "standalone disclosure and written authorization. The October 17 "
-        "confirmation recites authorization; it does not prove that a report "
-        "was lawfully procured or used.",
-    ),
-    ("HEADER", "VIII.\nTHIRD CAUSE OF ACTION"),
-    (
-        "SUBHEAD",
-        "Unlawful and Unfair Business Practices\n"
-        "Business and Professions Code section 17200 — Against All Defendants",
-    ),
-    (
-        "PARA",
-        "66. Plaintiff realleges paragraphs 1 through 65 to the extent "
-        "consistent with this equitable cause.",
-    ),
-    (
-        "PARA",
-        "67. Defendants engaged in unlawful practices by violating Penal Code "
-        "section 290.46(j) and, if proven, Civil Code section 1786.40. They "
-        "engaged in unfair practices by extending a written warehouse offer, "
-        "ordering a same-day screen, and then undoing the hire on secret "
-        "registry-derived information without a source, a report, or an "
-        "opportunity to respond.",
-    ),
-    (
-        "PARA",
-        "68. Plaintiff suffered injury in fact and lost money or property "
-        "through the lost warehouse employment at $22.60 per hour and other "
-        "economic losses to be proven. He does not seek future unearned wages "
-        "as UCL restitution. He seeks restitution only of money or property "
-        "in which he had a vested interest and that Defendants acquired or "
-        "caused him to lose through the challenged practices.",
-    ),
-    (
-        "PARA",
-        "69. Legal damages are not an adequate remedy for Defendants' "
-        "retention, use, and dissemination of registry-derived screening data "
-        "or their ongoing employment-screening practices. Plaintiff seeks an "
-        "injunction requiring Defendants to cease prohibited employment use of "
-        "California registry information in California warehouse hiring; "
-        "preserve and disclose the source and audit trail of Plaintiff's "
-        "screening; and correct or segregate unlawfully used data, together "
-        "with restitution and declaratory relief ancillary to the injunction "
-        "under Business and Professions Code section 17203.",
     ),
     ("HEADER", "IX.\nPRESERVATION OF EVIDENCE"),
     (
