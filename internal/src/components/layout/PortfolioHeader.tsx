@@ -111,6 +111,7 @@ export function PortfolioHeader({
             <a href="https://www.sims-law.net/" target="_blank" rel="noopener noreferrer" title="Visit Sims, Lawrence & Broghammer (sims-law.net) ↗" className="firm-link">
               <div className="legacy-counsel-names">
                 <div>Bryan Malone</div>
+                <div>Eric T. Martinez</div>
                 <div>Blaze Van Dine</div>
                 <div className="firm-external-hint">Visit site ↗</div>
               </div>
