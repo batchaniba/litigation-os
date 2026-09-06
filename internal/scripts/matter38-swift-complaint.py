@@ -2,14 +2,14 @@
 # -*- coding: utf-8 -*-
 """Matter 38 — verified complaint, Swift Transportation Co. of Arizona LLC.
 
-San Joaquin Superior Court. Penal Code § 290.46(j) is the load-bearing count.
-Swift's October 5, 2023 post-adverse letter admits consumer-report use.
-Registry use is still information and belief because the underlying reports
-are not in the file. The pre-adverse attachment remains encrypted.
+San Joaquin Superior Court. The decrypted Sept. 26, 2023 pre-adverse packet
+is in hand. NSOPW remained Processing. Plaintiff pleads on information and
+belief that Swift used preliminary sex-offender-registry information from
+that in-process component, in whole or in part, in the denial. ICRAA and
+UCL remain independent paths.
 
 Default output is unsigned. On or after September 8, 2026, rerun with
-``--execute`` only after Plaintiff confirms the notices, the reports, and
-the absence of an independent lawful ground.
+``--execute`` only after Plaintiff confirms the role.
 
     python3 internal/scripts/matter38-swift-complaint.py
     python3 internal/scripts/matter38-swift-complaint.py --execute
@@ -33,16 +33,16 @@ ROOT = SCRIPT_DIR.parents[1]
 DEFAULT_OUT = (
     ROOT
     / "internal/public/documents/matter-38"
-    / "Verified Complaint - Newanforbi v Swift Transportation Co of Arizona LLC"
+    / "Verified Complaint - Ngwa Nforbi v Swift Transportation Co of Arizona LLC"
     " (REVIEW DRAFT for Sep 8 2026).pdf"
 )
 DEFAULT_EXEC_DATE = "September 8, 2026"
 EARLIEST_EXECUTION_DATE = dt.date(2026, 9, 8)
 COURT_LINE2 = "COUNTY OF SAN JOAQUIN"
-FOOTER = "VERIFIED COMPLAINT -- NEWANFORBI v. SWIFT TRANSPORTATION CO. OF ARIZONA LLC"
+FOOTER = "VERIFIED COMPLAINT -- BRENDAN NGWA NFORBI v. SWIFT TRANSPORTATION CO. OF ARIZONA LLC"
 
 PLAINTIFF_BLOCK = [
-    ("BRENDAN NGEHSI NEWANFORBI", "Times-Bold", 12),
+    ("BRENDAN NGWA NFORBI", "Times-Bold", 12),
     ("Plaintiff, In Propria Persona", "Times-Roman", 12),
     ("1455 Cat Tail Drive", "Times-Roman", 12),
     ("Stockton, CA 95204", "Times-Roman", 12),
@@ -51,7 +51,7 @@ PLAINTIFF_BLOCK = [
 ]
 
 CAPTION_LEFT = [
-    ("BRENDAN NGEHSI NEWANFORBI,", True, False),
+    ("BRENDAN NGWA NFORBI,", True, False),
     ("", False, False),
     ("                          Plaintiff,", False, False),
     ("", False, False),
@@ -73,7 +73,9 @@ CAPTION_RIGHT = [
     ("DAMAGES, DECLARATORY AND", True, False),
     ("INJUNCTIVE RELIEF", True, False),
     ("", False, False),
-    ("(1) Penal Code § 290.46(j);", False, False),
+    ("(1) Penal Code § 290.46(j)", False, False),
+    ("      (I&B — preliminary", False, False),
+    ("      NSOPW / registry);", False, False),
     ("(2) ICRAA, Civ. Code", False, False),
     ("      §§ 1786.40, 1786.50;", False, False),
     ("(3) UCL, B&P Code § 17200", False, False),
@@ -82,45 +84,53 @@ CAPTION_RIGHT = [
     ("[Jury Trial Demanded]", False, True),
 ]
 
-SIGNOFF_NAME = "BRENDAN NGEHSI NEWANFORBI"
+SIGNOFF_NAME = "BRENDAN NGWA NFORBI"
 SIGNOFF_ROLE = "Plaintiff, In Propria Persona"
 SIG_LINE = "___________________________________"
 
 CONTENT = [
     (
         "NOTICE",
-        "DO NOT FILE. THE SEPTEMBER 26, 2023 PRE-ADVERSE PACKET, ONCE "
-        "DECRYPTED, IS A LERMA FILE: NSOPW NEVER COMPLETED, NO CALIFORNIA-"
-        "REGISTRY SOURCE, CRIMINAL COMPONENTS CLEAR. FILING THE SECTION "
-        "290.46(j) COUNT ON THIS PAPER WOULD INVITE THE LERMA DISMISSAL. "
-        "THIS DRAFT IS RETIRED. KEEP IT IN THE FILE AS THE REASON MATTER "
-        "38 IS DEAD. DO NOT EXECUTE ON SEPTEMBER 8, 2026.",
+        "REVIEW DRAFT — DO NOT FILE OR SIGN BEFORE SEPTEMBER 8, 2026. "
+        "THE SEPTEMBER 26, 2023 PRE-ADVERSE PACKET HAS BEEN DECRYPTED. "
+        "NSOPW REMAINED PROCESSING. THE SECTION 290.46(j) COUNT IS "
+        "PLEADED ON INFORMATION AND BELIEF THAT SWIFT USED PRELIMINARY "
+        "SEX-OFFENDER-REGISTRY INFORMATION FROM THAT IN-PROCESS COMPONENT. "
+        "CONFIRM THE DRIVER ROLE.",
     ),
-    ("PARA", 'Plaintiff BRENDAN NGEHSI NEWANFORBI ("Plaintiff") alleges as follows:'),
+    ("PARA", 'Plaintiff BRENDAN NGWA NFORBI ("Plaintiff") alleges as follows:'),
     ("HEADER", "I.\nINTRODUCTION"),
     (
         "PARA",
         "1. This is an action under Penal Code section 290.46, subdivision (j), "
-        "for the unauthorized employment use of California Megan's Law registry "
-        "information. In September 2023, Plaintiff applied to Swift "
+        "the California Investigative Consumer Reporting Agencies Act, and the "
+        "Unfair Competition Law. In September 2023, Plaintiff applied to Swift "
         "Transportation Co. of Arizona LLC for commercial-driver work. On "
-        "October 5, 2023, Swift sent a written post-adverse-action letter "
-        "stating that it had decided not to employ Plaintiff, or to take other "
-        "adverse action, based in whole or in part on consumer reports.",
+        "September 26, 2023, Swift sent a pre-adverse packet whose National "
+        "Sex Offender Public Website component remained 'Processing.' On "
+        "October 5, 2023, Swift sent a post-adverse letter admitting that "
+        "consumer reports from Asurint, Tenstreet, DriverIQ, FMCSA-DOT, and "
+        "Equifax Work Number caused the denial. Plaintiff is informed and "
+        "believes, and on that basis alleges, that Swift's decision was based "
+        "in whole or in part on preliminary information from that report "
+        "citing a sex-offender registry.",
     ),
     (
         "PARA",
-        "2. Swift identified Asurint, Tenstreet, DriverIQ, the Federal Motor "
-        "Carrier Safety Administration, and Equifax Workforce Solutions / The "
-        "Work Number as the agencies that furnished those reports. The "
-        "underlying reports themselves are not in Plaintiff's files. The "
-        "September 26, 2023 pre-adverse attachment remains encrypted. Plaintiff "
-        "is informed and believes, and on that basis alleges, that one or more "
-        "of those reports included information disclosed pursuant to Penal Code "
-        "section 290.46 — Plaintiff's status as a person required to register "
-        "under Penal Code section 290, as published on the California Sex "
-        "Offender Registry — and that Swift used that information for purposes "
-        "relating to employment.",
+        "2. The September 26, 2023 pre-adverse packet has been decrypted. "
+        "Plaintiff alleges its contents as known facts. The packet does not "
+        "state 'SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY.' The "
+        "National Criminal search run without a sex-offender component "
+        "returned Clear / No Reportable Records Found. Federal criminal "
+        "returned Clear. The county criminal searches that had completed "
+        "returned Clear. The National Sex Offender Public Website component "
+        "remained 'Processing' on every snapshot in the packet. It never "
+        "completed. It reported no hit. Clearinghouse returned Driver Not "
+        "Prohibited. What the packet does contain — a Class A commercial "
+        "driver's license, an April 22, 2022 improper-lane moving violation "
+        "with zero points, PSP inspection history, and a CDLIS license-"
+        "identity match — is not information disclosed pursuant to Penal Code "
+        "section 290.46.",
     ),
     (
         "PARA",
@@ -142,17 +152,20 @@ CONTENT = [
     ),
     (
         "PARA",
-        "5. Plaintiff does not allege registry use merely because he is "
-        "registered. The inference rests on concrete facts: (a) Swift recruited "
-        "Plaintiff for driver work and ran a multi-vendor screen; (b) Swift "
-        "admitted, in writing, that consumer reports caused the denial; "
-        "(c) Plaintiff was then listed on the California Megan's Law website; "
-        "(d) commercial consumer reporting agencies had already shown they "
-        "could match this same Plaintiff to the California Sex Offender "
-        "Registry on an employment report; (e) Swift's letter stated no "
-        "independent, lawful, job-related ground; and (f) the reports, "
-        "adjudication logs, and decision-maker communications are exclusively "
-        "within Defendants' possession.",
+        "5. Plaintiff does not allege that the decrypted packet contains a "
+        "completed NSOPW hit or the words 'SOURCE OF RECORD: CALIFORNIA SEX "
+        "OFFENDER REGISTRY.' He does allege, on information and belief, that "
+        "Swift used preliminary information from the still-Processing NSOPW "
+        "component — information citing a sex-offender registry, including "
+        "information disclosed pursuant to Penal Code section 290.46 or a "
+        "derivative national compilation whose source was the California "
+        "registry — in whole or in part in the denial. Code of Civil "
+        "Procedure section 425.10 requires a statement of the facts "
+        "constituting the cause of action in ordinary and concise language. "
+        "Section 452 requires this Court to construe the pleading liberally. "
+        "The vendor adjudication log, interim NSOPW return, and "
+        "decision-maker communications are exclusively in Defendants' "
+        "possession.",
     ),
     (
         "PARA",
@@ -178,20 +191,21 @@ CONTENT = [
         "PARA",
         "8. This Complaint does not plead a Tameny wrongful-termination or "
         "failure-to-hire count, an IIED count, a Fair Credit Reporting Act "
-        "count, or a FEHA or Fair Chance Act count. The load-bearing claim is "
-        "Penal Code section 290.46(j). Companion consumer-report and "
-        "unfair-competition counts are pleaded only to the extent the same "
-        "employment use, if proven, also violated those statutes. Plaintiff "
-        "preserves all timely rights to seek leave to amend.",
+        "count, or a FEHA or Fair Chance Act count. The section 290.46(j) "
+        "count is pleaded on information and belief that Swift used "
+        "preliminary sex-offender-registry information from the in-process "
+        "NSOPW component. Civil Code sections 1786.40 and 1786.50 and "
+        "Business and Professions Code section 17200 are independent paths "
+        "that do not require a completed registry hit. Plaintiff preserves "
+        "all timely rights to seek leave to amend.",
     ),
     ("HEADER", "II.\nPARTIES"),
     (
         "PARA",
-        "9. Plaintiff BRENDAN NGEHSI NEWANFORBI is a natural person residing in "
+        "9. Plaintiff BRENDAN NGWA NFORBI is a natural person residing in "
         "Stockton, San Joaquin County, California. He is also identified in "
-        "employment and court records as Brendan Ngwa Nforbi, Brendan Ngehsi "
-        "Ngwa Nforbi, and Brendan Ngehsi Ngwanforbi. Those name variants "
-        "refer to Plaintiff.",
+        "employment and court records as Brendan Ngehsi Ngwa Nforbi and "
+        "Brendan Ngehsi Ngwanforbi. Those name variants refer to Plaintiff.",
     ),
     (
         "PARA",
@@ -374,8 +388,9 @@ CONTENT = [
         "PARA",
         "30. At 1:20 p.m. the same day, Tenstreet notified Plaintiff that his "
         "FMCSA Clearinghouse result ordered by Swift Transportation Co. of "
-        "Arizona LLC was available for review. The contents of that result "
-        "are not in Plaintiff's files.",
+        "Arizona LLC was available for review. The decrypted pre-adverse "
+        "packet includes a Clearinghouse result of Driver Not Prohibited, "
+        "with no open violations.",
     ),
     (
         "PARA",
@@ -397,13 +412,14 @@ CONTENT = [
     ),
     (
         "PARA",
-        "33. The encrypted pre-adverse attachment in Plaintiff's present files "
-        "has not been decrypted. Plaintiff does not allege its contents as a "
-        "known fact. On information and belief, it was a pre-adverse-action "
-        "notice under the Fair Credit Reporting Act stating that Swift was "
-        "considering adverse action based on a consumer report and enclosing "
-        "or linking that report. [PLAINTIFF MUST DECRYPT OR OTHERWISE OBTAIN "
-        "THAT LETTER AND THE ENCLOSED REPORT BEFORE EXECUTION IF HE CAN.]",
+        "33. The pre-adverse attachment has been decrypted. It is a composite "
+        "screening packet, not a blank cover letter. It includes completed "
+        "criminal-file components returning Clear, an NSOPW component that "
+        "remained Processing on every snapshot, a Clearinghouse result of "
+        "Driver Not Prohibited, an MVR, PSP inspection history, and CDLIS "
+        "license-identity information. Plaintiff does not republish "
+        "identifiers from that packet in this pleading. He alleges the "
+        "adjudication results as known facts.",
     ),
     (
         "PARA",
@@ -434,14 +450,14 @@ CONTENT = [
     ),
     (
         "PARA",
-        "37. The letter says a copy of the consumer report and a Summary of "
-        "Rights were attached. The copy in Plaintiff's files contains the "
-        "cover letter, federal and multi-state rights summaries, and a "
-        "California disclosure regarding background checks. It does not "
-        "contain an Asurint, Tenstreet, or DriverIQ report showing component "
-        "searches, hits, or reason codes. "
-        "[PLAINTIFF MUST CONFIRM THAT HE NEVER RECEIVED THOSE UNDERLYING "
-        "REPORTS BY EMAIL, PORTAL, OR MAIL.]",
+        "37. The October 5 letter says a copy of the consumer report and a "
+        "Summary of Rights were attached. The decrypted September 26 packet "
+        "is the report-side paper in Plaintiff's files. It does not contain "
+        "a completed NSOPW result, a California Sex Offender Registry source "
+        "line, or a separate later Asurint, Tenstreet, or DriverIQ printout "
+        "showing a registry hit. Civil Code sections 1786.10 and 1786.22 "
+        "entitle Plaintiff to inspect the files those agencies maintain on "
+        "him. Plaintiff has not yet served those inspection requests. He will.",
     ),
     (
         "PARA",
@@ -488,29 +504,46 @@ CONTENT = [
     ),
     (
         "PARA",
-        "43. On information and belief, Swift or its vendor obtained, "
-        "accessed, displayed, scored, or was informed of information disclosed "
-        "pursuant to Penal Code section 290.46 concerning Plaintiff — including "
-        "a California Sex Offender Registry listing, a Department of Justice "
-        "website result, or a derivative national sex-offender compilation "
-        "whose source of record was the California registry — in connection "
-        "with the driver application and the October 5, 2023 decision.",
+        "43. The NSOPW component was still Processing. A search that never "
+        "completed is not a completed 'no record' result. It is also not a "
+        "completed printed hit. Plaintiff is informed and believes, and on "
+        "that basis alleges, that Swift or a DOE obtained, displayed, "
+        "scored, or was informed of preliminary information from that "
+        "in-process NSOPW component citing a sex-offender registry — "
+        "including information disclosed pursuant to Penal Code section "
+        "290.46 or a derivative national compilation whose source of record "
+        "was the California registry — and used that preliminary information "
+        "in whole or in part in the October 5, 2023 decision.",
     ),
     (
         "PARA",
-        "44. On information and belief, Swift used that information for "
-        "purposes relating to employment when it decided not to employ "
-        "Plaintiff. The use was a substantial factor in the decision.",
+        "44. The basis for paragraph 43 is the combination of: Swift ordered "
+        "an NSOPW sex-offender-website search; that component remained "
+        "Processing on every snapshot in the packet sent with the "
+        "pre-adverse notice; Swift then denied employment based in whole or "
+        "in part on consumer reports; the completed criminal, Clearinghouse, "
+        "and MVR components that are in the packet do not themselves "
+        "explain a registry-based denial; Plaintiff was then listed on the "
+        "California Megan's Law website; commercial screeners had already "
+        "shown they could match this Plaintiff to the California registry; "
+        "and the interim NSOPW return, adjudication notes, and "
+        "decision-maker communications are exclusively in Defendants' "
+        "possession.",
     ),
     (
         "PARA",
-        "45. The basis for paragraphs 43 and 44 is the combination of: the "
-        "driver application and multi-vendor screen; Swift's written admission "
-        "that consumer reports caused the denial; Plaintiff's contemporaneous "
-        "presence on the California registry; the demonstrated commercial "
-        "retrievability of that listing; the absence of any other basis "
-        "stated in the October 5 letter; and Swift's exclusive control of the "
-        "reports that will confirm or refute the inference.",
+        "45. Swift admitted in writing that consumer reports caused the "
+        "denial. It took that action while a sex-offender-website component "
+        "remained Processing. It did not, in the October 5 letter, identify "
+        "the specific item that caused the denial or supply a completed "
+        "NSOPW result. Civil Code section 1786.40 required advice that an "
+        "investigative consumer report had been obtained and the agency's "
+        "name and address at denial. The letter names agencies. It does "
+        "not advise that an investigative consumer report containing an "
+        "incomplete NSOPW had been obtained, and it does not supply a "
+        "complete copy of every component. The ICRAA and UCL counts rest "
+        "on that notice and completeness failure even if the preliminary-"
+        "registry-use inference later fails.",
     ),
     (
         "PARA",
@@ -526,10 +559,20 @@ CONTENT = [
     (
         "PARA",
         "47. Lerma v. Amazon.com Services, LLC, C.D. Cal. No. 8:22-cv-01727, "
-        "Dkt. 36, dismissed a Megan's Law count where the report itself showed "
-        "ordinary court records and a national sex-offender search returning no "
-        "record. Plaintiff pleads the opposite inference here and will stand or "
-        "fall on what Swift's reports actually say.",
+        "Dkt. 36, dismissed a Megan's Law count after the employer's report "
+        "was in the record and showed ordinary court records and a completed "
+        "national sex-offender search returning no record. This packet is "
+        "not that report. The NSOPW component never completed. A demurrer "
+        "may take the printed snapshots as what Plaintiff has pleaded them "
+        "to be. It cannot convert an incomplete NSOPW into Lerma's completed "
+        "no-record search, and it cannot decide — without the adjudication "
+        "log — whether Swift used preliminary registry information from that "
+        "in-process component. Defendants may not obtain a pleading-stage "
+        "dismissal by withholding the interim NSOPW return and the "
+        "decision-maker file. If production shows a completed NSOPW "
+        "returning no record and no preliminary registry use, the Penal "
+        "Code count will stand or fall on that file — after production, "
+        "not by assuming it now.",
     ),
     (
         "PARA",
@@ -581,7 +624,8 @@ CONTENT = [
     (
         "SUBHEAD",
         "Unauthorized Employment Use of Registry Information\n"
-        "Penal Code section 290.46(j) — Against All Defendants",
+        "Penal Code section 290.46(j) — Against All Defendants\n"
+        "(Pleaded on Information and Belief — Preliminary NSOPW / Registry Use)",
     ),
     (
         "PARA",
@@ -611,8 +655,15 @@ CONTENT = [
     (
         "PARA",
         "56. On information and belief, Swift, and such DOE Defendants as "
-        "ordered, furnished, scored, or acted on the reports, used information "
-        "disclosed pursuant to section 290.46 concerning Plaintiff.",
+        "ordered, furnished, scored, or acted on the report, used "
+        "preliminary information from the still-Processing NSOPW component "
+        "citing a sex-offender registry — including information disclosed "
+        "pursuant to section 290.46 concerning Plaintiff — in whole or in "
+        "part in the employment decision. Plaintiff does not allege that "
+        "the printed snapshots contain a completed NSOPW hit or the words "
+        "'SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY.' The use "
+        "alleged is the use of preliminary registry information from that "
+        "in-process component.",
     ),
     (
         "PARA",
@@ -636,7 +687,7 @@ CONTENT = [
         "SUBHEAD",
         "California Investigative Consumer Reporting Agencies Act\n"
         "Civil Code sections 1786.40 and 1786.50 — Against Swift and User DOES\n"
-        "(Pleaded on Information and Belief)",
+        "(Load-Bearing Count)",
     ),
     (
         "PARA",
@@ -657,23 +708,27 @@ CONTENT = [
         "in which employment was denied and an investigative consumer report "
         "had been obtained, to advise Plaintiff of that fact and supply the "
         "agency's name and address. Swift's October 5 letter names agencies. "
-        "It does not, in the copy in Plaintiff's files, supply the actual "
-        "investigative report or identify which component — still less a "
-        "California-registry component — caused the denial.",
+        "It does not advise that an investigative consumer report containing "
+        "an incomplete NSOPW component had been obtained. It does not "
+        "identify which component caused the denial.",
     ),
     (
         "PARA",
-        "62. On information and belief, Swift did not provide the underlying "
-        "Asurint, Tenstreet, or DriverIQ reports or a meaningful source "
-        "identification of any registry-derived item. "
-        "[PLAINTIFF MUST CONFIRM NONRECEIPT OF THOSE REPORTS.]",
+        "62. The decrypted packet is not a complete investigative consumer "
+        "report. NSOPW remained Processing. Plaintiff was denied while that "
+        "component was unfinished. Civil Code sections 1786.10 and 1786.22 "
+        "entitle him to inspect the files Asurint, Tenstreet, DriverIQ, and "
+        "any other ICRA maintains on him. He has not yet served those "
+        "requests. He will.",
     ),
     (
         "PARA",
-        "63. The omission prevented Plaintiff from timely testing whether the "
-        "source was the California registry or ordinary court records, and from "
-        "invoking his statutory inspection and dispute rights under Civil Code "
-        "section 1786.22.",
+        "63. This ICRAA count does not depend on proving Penal Code section "
+        "290.46(j). A notice or completeness failure under Civil Code "
+        "section 1786.40 is independently actionable if an investigative "
+        "consumer report was obtained and employment was denied without the "
+        "required advice and a complete source. That count can reach "
+        "discovery even if the section 290.46(j) count later fails.",
     ),
     (
         "PARA",
@@ -705,11 +760,13 @@ CONTENT = [
     ),
     (
         "PARA",
-        "67. Defendants engaged in unlawful practices by violating Penal Code "
-        "section 290.46(j) and, if proven, Civil Code section 1786.40. They "
-        "engaged in unfair practices by structuring a driver screen so an "
-        "application could be denied on secret registry-derived information "
-        "while naming agencies and withholding the hits.",
+        "67. Defendants engaged in unlawful practices by violating Civil Code "
+        "section 1786.40 and, if proven, Penal Code section 290.46(j). They "
+        "engaged in unfair practices by taking "
+        "adverse action on consumer reports while a sex-offender-website "
+        "component remained Processing, naming agencies without identifying "
+        "the item that caused the denial, and withholding a complete "
+        "investigative-consumer-report file.",
     ),
     (
         "PARA",
@@ -842,7 +899,7 @@ def _verification(d: PleadingPaper, exec_date: str, execute: bool) -> None:
     d.blank_line()
     d.write_line("STATE OF CALIFORNIA, COUNTY OF SAN JOAQUIN", bold=True, center=True)
     d.blank_line()
-    d.write_wrapped("I, BRENDAN NGEHSI NEWANFORBI, declare:", first_indent=36)
+    d.write_wrapped("I, BRENDAN NGWA NFORBI, declare:", first_indent=36)
     d.blank_line()
     d.write_wrapped(
         "I am the Plaintiff in this action. I have read the foregoing VERIFIED "

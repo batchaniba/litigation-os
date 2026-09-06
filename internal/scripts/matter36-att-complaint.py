@@ -26,16 +26,16 @@ ROOT = SCRIPT_DIR.parents[1]
 DEFAULT_OUT = (
     ROOT
     / "internal/public/documents/matter-36"
-    / "Verified Complaint - Newanforbi v AT&T Mobility Services LLC et al"
+    / "Verified Complaint - Ngwa Nforbi v AT&T Mobility Services LLC et al"
     " (REVIEW DRAFT for Sep 8 2026).pdf"
 )
 DEFAULT_EXEC_DATE = "September 8, 2026"
 EARLIEST_EXECUTION_DATE = dt.date(2026, 9, 8)
 COURT_LINE2 = "COUNTY OF SAN JOAQUIN"
-FOOTER = "VERIFIED COMPLAINT -- NEWANFORBI v. AT&T MOBILITY SERVICES LLC, ET AL."
+FOOTER = "VERIFIED COMPLAINT -- BRENDAN NGWA NFORBI v. AT&T MOBILITY SERVICES LLC, ET AL."
 
 PLAINTIFF_BLOCK = [
-    ("BRENDAN NGEHSI NEWANFORBI", "Times-Bold", 12),
+    ("BRENDAN NGWA NFORBI", "Times-Bold", 12),
     ("Plaintiff, In Propria Persona", "Times-Roman", 12),
     ("1455 Cat Tail Drive", "Times-Roman", 12),
     ("Stockton, CA 95204", "Times-Roman", 12),
@@ -44,7 +44,7 @@ PLAINTIFF_BLOCK = [
 ]
 
 CAPTION_LEFT = [
-    ("BRENDAN NGEHSI NEWANFORBI,", True, False),
+    ("BRENDAN NGWA NFORBI,", True, False),
     ("", False, False),
     ("                          Plaintiff,", False, False),
     ("", False, False),
@@ -84,7 +84,7 @@ CAPTION_RIGHT = [
     ("[Jury Trial Demanded]", False, True),
 ]
 
-SIGNOFF_NAME = "BRENDAN NGEHSI NEWANFORBI"
+SIGNOFF_NAME = "BRENDAN NGWA NFORBI"
 SIGNOFF_ROLE = "Plaintiff, In Propria Persona"
 SIG_LINE = "___________________________________"
 
@@ -94,7 +94,7 @@ CONTENT = [
     ("NOTICE", "REVIEW DRAFT — DO NOT FILE OR SIGN BEFORE SEPTEMBER 8, 2026. "
                "PLAINTIFF MUST CONFIRM THE ACCEPTANCE, ONBOARDING, RELIANCE, "
                "DAMAGES, AND NONRECEIPT ALLEGATIONS BEFORE EXECUTION."),
-    ("PARA", 'Plaintiff BRENDAN NGEHSI NEWANFORBI ("Plaintiff") alleges as follows:'),
+    ("PARA", 'Plaintiff BRENDAN NGWA NFORBI ("Plaintiff") alleges as follows:'),
     ("HEADER", "I.\nINTRODUCTION"),
     ("PARA", "1. On May 28, 2026, Defendant AT&T Mobility Services LLC approved Plaintiff for employment as a Retail Sales Consultant at its Lodi, California store, sent him a written offer identifying compensation of $24.95 per hour, part-time targeted variable compensation, and a tentative June 15, 2026 start date, and commenced its formal onboarding process."),
     ("PARA", "2. AT&T's written offer listed formal acceptance, required hiring documents, work authorization, any applicable export review, absence of restrictive agreements, any applicable rehire-eligibility check, and satisfactory standardized background checks as contingencies. It did not list Spanish proficiency or passage of the earlier language assessment as an offer contingency. The assessment AT&T later invoked was administered before the offer, and its testing window closed on May 25, 2026."),
@@ -103,12 +103,12 @@ CONTENT = [
     ("PARA", "5. That chronology presents two competing explanations. AT&T's stated explanation is that Plaintiff failed an assessment completed before the offer. The competing and more plausible explanation, pleaded on information and belief, is that information surfaced or was escalated during the intervening background-screening process and caused or substantially motivated AT&T to reverse an already-approved hiring decision."),
     ("PARA", "6. Plaintiff does not allege registry use merely because he is registered. The inference rests on the sequence, the absence of any primary Spanish score in AT&T's communications, AT&T's decision to issue the offer after the assessment window closed, the immediate screening order, the abrupt reversal, the absence of required background-based adverse-action notices, and First Advantage's documented prior matching of this same Plaintiff to the California Sex Offender Registry for another employer."),
     ("PARA", "7. In July 2024, First Advantage prepared an employment report on Plaintiff for United Parcel Service. That report—later filed in federal court by UPS—identified a 'National Sex Offender Registry' and 'Department Of Justice Web Site' search as decisional, stated 'SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY,' and produced an overall 'INELIGIBLE' result. First Advantage therefore had previously identified Plaintiff through the same prohibited registry source and had the capability, identifiers, and matching methodology to do so again."),
-    ("PARA", "8. The contents, completion time, transmission time, access log, adjudication status, and cancellation history of the May 28 AT&T screening are exclusively within Defendants' possession. Plaintiff pleads the screening allegations on information and belief, states the concrete facts supporting that belief, and seeks discovery directed to those records."),
+    ("PARA", "8. The contents, completion time, transmission time, access log, adjudication status, and cancellation history of the May 28 AT&T screening are exclusively within Defendants' possession. Plaintiff does not attach an AT&T First Advantage report because he does not have one. He does not allege the contents of that report as a known fact. Code of Civil Procedure section 425.10 requires a statement of the facts constituting the cause of action in ordinary and concise language. Section 452 requires this Court to construe the pleading liberally with a view to substantial justice between the parties. Facts exclusively in Defendants' possession are properly pleaded on information and belief. Plaintiff states the facts supporting that belief and will seek the report in discovery."),
     ("PARA", "9. In the alternative, if Defendants establish that no consumer report was completed or transmitted before 12:23 p.m., AT&T remains answerable under the independent offer, contract, estoppel, and misrepresentation theories pleaded below to the extent established by the offer, acceptance, reliance, and internal approval records."),
     ("PARA", "10. Plaintiff pleads alternative and inconsistent theories because Defendants exclusively control the evidence that will determine whether the offer was reversed because of registry information, another consumer-report item, a preexisting language score, a manager's undisclosed reconsideration, or an automated workflow failure. Each theory is pleaded separately and does not depend upon success of every other theory."),
     ("HEADER", "II.\nPARTIES"),
-    ("PARA", "11. Plaintiff BRENDAN NGEHSI NEWANFORBI is a natural person residing in Stockton, San Joaquin County, California. Plaintiff applied for, received an offer for, and was denied employment in San Joaquin County."),
-    ("PARA", "12. Plaintiff is the person identified in AT&T candidate records as Brendan Ngwa Nforbi and in other records as Brendan Ngehsi Newanforbi or Brendan Ngehsi Ngwanforbi. Those name variants refer to Plaintiff."),
+    ("PARA", "11. Plaintiff BRENDAN NGWA NFORBI is a natural person residing in Stockton, San Joaquin County, California. Plaintiff applied for, received an offer for, and was denied employment in San Joaquin County."),
+    ("PARA", "12. Plaintiff is the person identified in AT&T candidate records as Brendan Ngwa Nforbi and in other records as Brendan Ngehsi Ngwanforbi. Those name variants refer to Plaintiff."),
     ("PARA", "13. Plaintiff is required to register under California Penal Code section 290, and information identifying him appeared on California's Megan's Law website and California Sex Offender Registry at the time of the events alleged."),
     ("PARA", "14. Defendant AT&T MOBILITY SERVICES LLC ('AT&T') is a Delaware limited liability company doing business throughout California, including at the AT&T retail store located at 2439 West Kettleman Lane, Lodi, California 95242."),
     ("PARA", "15. AT&T Mobility Services LLC is identified in publicly available AT&T/CWA labor materials as the employer of covered mobility retail employees, and the Lodi position was designated within AT&T's Mobility bargaining structure. On information and belief, AT&T owned, operated, staffed, controlled, and made hiring decisions for the Lodi store and was the legal employer offering Plaintiff requisition R-106742."),
@@ -126,7 +126,7 @@ CONTENT = [
     ("PARA", "26. This Court has personal jurisdiction over AT&T because AT&T operates the Lodi store, recruited Plaintiff for work in this County, sent the offer into this County, and made or implemented the challenged hiring decision in California."),
     ("PARA", "27. This Court has personal jurisdiction over First Advantage because it contracted to provide screening for a California position, processed Plaintiff's California employment screening, communicated directly with Plaintiff in California, and purposefully furnished or undertook to furnish employment-screening services affecting California rights."),
     ("PARA", "28. Venue is proper in San Joaquin County under Code of Civil Procedure sections 395 and 395.5 because Plaintiff resides here, the offered workplace is in Lodi, the offer and rescission were received here, and the obligations, liability, and injury arose here."),
-    ("PARA", "29. The FCRA count creates a federal question and may permit removal. Plaintiff pleads it because it is an independent statutory protection implicated if AT&T based its decision in whole or in part on a consumer report. Plaintiff does not plead federal jurisdiction as a substitute for facts."),
+    ("PARA", "29. Plaintiff files this action in the Superior Court of California, County of San Joaquin. The FCRA count creates a federal question and may permit removal. It is pleaded because it is an independent statutory protection implicated if AT&T based its decision in whole or in part on a consumer report. It is not pleaded to manufacture federal jurisdiction, and it is not required for the Penal Code, ICRAA, contract, estoppel, or UCL counts."),
     ("HEADER", "IV.\nCOMMON FACTUAL ALLEGATIONS"),
     ("SUBHEAD", "A. Two AT&T Applications Advance in Parallel"),
     ("PARA", "30. On May 16, 2026 at approximately 1:15 p.m., Plaintiff applied for AT&T requisition R-107776, Retail Sales Consultant—Stockton Pacific, located at 5756 Pacific Avenue #94, Stockton, California."),
@@ -177,7 +177,7 @@ CONTENT = [
     ("PARA", "70. On information and belief, between 10:19 a.m. and 12:23 p.m., First Advantage's screening system returned, flagged, reused, transmitted, displayed, or escalated sex-offender registry information concerning Plaintiff, or informed AT&T that the screening would produce an adverse result."),
     ("PARA", "71. On information and belief, AT&T's hiring manager, recruiter, centralized adjudication personnel, or screening personnel accessed, received, or learned of that information and it caused or substantially motivated the reversal."),
     ("PARA", "72. Plaintiff states the basis for paragraphs 69 through 71: the precise sequence; the already-completed assessment period; the offer and onboarding approval; First Advantage's immediate involvement; its documented prior registry match to Plaintiff; the abrupt reversal; the lack of primary language-score evidence; and the absence of consumer-report adverse-action notices."),
-    ("PARA", "73. The alternative explanations and exact timestamps can be resolved from a discrete set of electronic records in Defendants' possession. Plaintiff will seek the First Advantage order and component logs, report and audit history, AT&T Workday business-process history, LTI transmission logs, and Patterson/manager communications."),
+    ("PARA", "73. The alternative explanations and exact timestamps can be resolved from a discrete set of electronic records in Defendants' possession. Plaintiff will seek the First Advantage order and component logs, report and audit history, AT&T Workday business-process history, LTI transmission logs, and Patterson/manager communications. Lerma v. Amazon.com Services, LLC, C.D. Cal. No. 8:22-cv-01727, Dkt. 36, dismissed a Megan's Law count after the employer's report was in the record and showed ordinary court records and a national sex-offender search returning no record. That dismissal turned on the report. This Complaint does not attach the AT&T First Advantage report. A court cannot perform a Lerma analysis on the face of a complaint that does not contain the employer's report. Defendants may not obtain a pleading-stage dismissal by withholding the one document that would confirm or refute the inference. If production shows ordinary court records and no California-registry source, the section 290.46(j) count will stand or fall on that record — after production, not before. The offer, contract, estoppel, and ICRAA counts do not depend on that inference."),
     ("SUBHEAD", "G. Reliance, Harm, and Continuing Effects"),
     ("PARA", "74. AT&T intended the offer and onboarding communications to induce Plaintiff to accept the position, complete mandatory tasks, disclose sensitive identifying information, prepare for the June 15 start, and refrain from treating the Lodi position as unavailable."),
     ("PARA", "75. Plaintiff reasonably understood 'officially offer,' the specified compensation, start date, and immediate onboarding sequence to mean AT&T had approved him subject to the written contingencies being administered lawfully and in good faith."),
@@ -187,7 +187,7 @@ CONTENT = [
     ("PARA", "79. Plaintiff also suffered out-of-pocket and reliance losses, loss of other employment opportunities pursued or forgone in reliance on the offer, time devoted to onboarding and screening, emotional distress, anxiety, humiliation, and frustration from the abrupt and unexplained reversal."),
     ("PARA", "80. Plaintiff has sought and continues to seek replacement employment and does not claim a guaranteed lifetime or one-year expectancy from an at-will position. Economic damages will be limited to losses proven with reasonable certainty and without double recovery."),
     ("HEADER", "V.\nALTERNATIVE PLEADING AND PRESERVATION"),
-    ("PARA", "81. Plaintiff pleads the statutory screening counts on the good-faith inference that a consumer report or registry result reached or influenced AT&T before rescission. Defendants may possess evidence disproving that inference. If so, the offer-based counts remain independent."),
+    ("PARA", "81. Plaintiff pleads the statutory screening counts on the good-faith inference that a consumer report or registry result reached or influenced AT&T before rescission. Defendants may possess evidence disproving that inference. If so, the offer-based counts remain independent. The section 290.46(j) claim has four elements: (a) information disclosed pursuant to section 290.46; (b) use of that information by a defendant; (c) a purpose relating to employment; and (d) the use was not to protect a person at risk and was not otherwise authorized by law. Elements (a) and (b) are pleaded on information and belief because the AT&T report is exclusively in Defendants' files. A demurrer tests the pleading, not the unproduced report."),
     ("PARA", "82. Plaintiff pleads contract and implied-covenant theories if the Workday acceptance formed an agreement. If no enforceable contract formed, Plaintiff pleads promissory estoppel and misrepresentation in the alternative."),
     ("PARA", "83. Plaintiff specifically relied by accepting the offer, completing or beginning required onboarding and screening, disclosing personal information, preparing for the June 15 start, ceasing further pursuit of the Lodi opening, and foregoing or delaying pursuit of identified alternative work. [PLAINTIFF MUST CONFIRM EACH FORM OF RELIANCE AND IDENTIFY THE ALTERNATIVE WORK BEFORE EXECUTION.]"),
     ("PARA", "84. Plaintiff does not plead a FEHA or Fair Chance Act cause of action in this Complaint because the present portfolio does not contain a California Civil Rights Department charge and right-to-sue notice. Plaintiff preserves all timely rights to exhaust and seek leave to amend if discovery supports those theories."),
@@ -226,7 +226,7 @@ CONTENT = [
     ("PARA", "111. On information and belief, the report was obtained before AT&T denied employment."),
     ("PARA", "112. Civil Code section 1786.40(a) required AT&T, under circumstances in which employment was denied and an investigative consumer report had been obtained, to advise Plaintiff of that fact and supply the agency's name and address."),
     ("PARA", "113. AT&T did not comply. The First Advantage task invitation preceded the report and did not advise Plaintiff, at the time of rescission, that a report had been obtained or used."),
-    ("PARA", "114. The omission prevented Plaintiff from timely obtaining the AT&T-specific report, testing its source, and invoking his statutory inspection and dispute rights."),
+    ("PARA", "114. The omission prevented Plaintiff from timely obtaining the AT&T-specific report, testing its source, and invoking his statutory inspection and dispute rights. This ICRAA count does not depend on proving Penal Code section 290.46(j). A notice failure under Civil Code section 1786.40 is independently actionable if an investigative consumer report was obtained and employment was denied without the required advice. That count can reach discovery even if the registry-use inference later fails. Civil Code sections 1786.10 and 1786.22 entitle Plaintiff to inspect and obtain a copy of the information First Advantage maintains on him. Plaintiff has not yet served that inspection request. He will."),
     ("PARA", "115. Under Civil Code section 1786.50, Plaintiff seeks actual damages or $10,000, whichever is greater, costs, attorney's fees if represented, and punitive damages upon proof of gross negligence or willfulness."),
     ("PARA", "116. This ICRAA count rests on an act or omission distinct from the FCRA count. The FCRA count challenges AT&T's pre-decision failure to furnish the report and federal rights summary; this count challenges AT&T's separate failure, when communicating the denial, to advise that an investigative report had been obtained and to supply the agency's name and address. Plaintiff pleads no duplicative ICRAA theory for the same act or omission and will elect remedies to the extent Civil Code section 1786.52 requires."),
     ("PARA", "116A. Plaintiff reserves amendment under Civil Code section 1786.16 if production shows AT&T procured the report before providing the required standalone disclosure and obtaining written authorization. Plaintiff does not presently allege nonauthorization as an established fact."),
@@ -296,7 +296,7 @@ CONTENT = [
     ("PARA", "168. Plaintiff seeks an injunction requiring Defendants to cease prohibited employment use of California registry information; preserve and disclose the source and audit trail of AT&T screening; correct or segregate unlawfully used data; and implement lawful pre-adverse procedures."),
     ("PARA", "169. Plaintiff also seeks restitution and declaratory relief ancillary to the injunction to the extent authorized by Business and Professions Code section 17203."),
     ("HEADER", "XV.\nPRESERVATION OF EVIDENCE"),
-    ("PARA", "170. Defendants are on notice to preserve the AT&T Workday record for C-1690172 and requisitions R-106742 and R-107776; offer versions and acceptance logs; approvals and communications involving Orville R. Bell and Richard Patterson; LTI/ACTFL score and transmission data; the individual First Advantage order under client account 132156, report, component, adjudication, access and cancellation logs; ID.me events; text and email communications; and policies governing registry, FCRA, ICRAA, and fair-chance review."),
+    ("PARA", "170. Defendants are on notice to preserve the AT&T Workday record for C-1690172 and requisitions R-106742 and R-107776; offer versions and acceptance logs; approvals and communications involving Orville R. Bell and Richard Patterson; LTI/ACTFL score and transmission data; the individual First Advantage order under client account 132156, report, component, adjudication, access and cancellation logs, and the First Advantage file subject to Civil Code sections 1786.10 and 1786.22; ID.me events; text and email communications; and policies governing registry, FCRA, ICRAA, and fair-chance review."),
     ("PARA", "171. Relevant electronically stored information includes audit fields, event timestamps, reason codes, API messages, report views, internal chats, emails, SMS, candidate-status history, and data-retention records from May 16 through June 30, 2026."),
     ("PARA", "172. The same First Advantage identifiers and prior UPS report are relevant to whether First Advantage reused, matched, or retained registry data concerning Plaintiff."),
     ("HEADER", "XVI.\nPRAYER FOR RELIEF"),
@@ -341,7 +341,7 @@ def _verification(d: PleadingPaper, exec_date: str, execute: bool) -> None:
     d.blank_line()
     d.write_line("STATE OF CALIFORNIA, COUNTY OF SAN JOAQUIN", bold=True, center=True)
     d.blank_line()
-    d.write_wrapped("I, BRENDAN NGEHSI NEWANFORBI, declare:", first_indent=36)
+    d.write_wrapped("I, BRENDAN NGWA NFORBI, declare:", first_indent=36)
     d.blank_line()
     d.write_wrapped(
         "I am the Plaintiff in this action. I have read the foregoing VERIFIED "

@@ -8,18 +8,18 @@
     "type": "deadline",
     "upcoming": true,
     "actor": "you",
-    "source": "/documents/matter-37/Verified Complaint - Newanforbi v Home Depot USA Inc (REVIEW DRAFT for Sep 8 2026).pdf"
+    "source": "/documents/matter-37/Verified Complaint - Ngwa Nforbi v Home Depot USA Inc (REVIEW DRAFT for Sep 8 2026).pdf"
   },
   {
     "date": "Sep. 8, 2026",
-    "event": "DO NOT FILE \u2014 Matter 38 Swift complaint retired after decrypt. The Sept. 26, 2023 pre-adverse packet is a Lerma file: NSOPW never completed, no California-registry source, criminal components clear. Do not execute the review draft on September 8, 2026.",
+    "event": "EXECUTE (optional) \u2014 Demurrer-hardened verified complaint review draft against Swift Transportation Co. of Arizona LLC (Matter 38), proposed execution September 8, 2026. NSOPW remained Processing. The \u00a7 290.46(j) count is I&B that Swift used preliminary sex-offender-registry information from that in-process component, in whole or in part. ICRAA and UCL remain independent. Unsigned until Plaintiff confirms the driver role. San Joaquin Superior Court. Serve the current SOS agent, not a terminal. Serrato disclosures are already on this day \u2014 this execution is optional. File before September 26 if accrual is the pre-adverse.",
     "matters": [
       38
     ],
     "type": "deadline",
-    "upcoming": false,
+    "upcoming": true,
     "actor": "you",
-    "source": "/documents/matter-38/Verified Complaint - Newanforbi v Swift Transportation Co of Arizona LLC (REVIEW DRAFT for Sep 8 2026).pdf"
+    "source": "/documents/matter-38/Verified Complaint - Ngwa Nforbi v Swift Transportation Co of Arizona LLC (REVIEW DRAFT for Sep 8 2026).pdf"
   },
   {
     "date": "Sep. 8, 2026",
@@ -30,16 +30,27 @@
     "type": "deadline",
     "upcoming": true,
     "actor": "you",
-    "source": "/documents/matter-39/Verified Complaint - Newanforbi v Best Buy Co Inc et al (REVIEW DRAFT for Sep 8 2026).pdf"
+    "source": "/documents/matter-39/Verified Complaint - Ngwa Nforbi v Best Buy Co Inc et al (REVIEW DRAFT for Sep 8 2026).pdf"
+  },
+  {
+    "date": "Sep. 8, 2026",
+    "event": "EXECUTE (optional) \u2014 Demurrer-hardened verified complaint review draft against AT&T Mobility Services LLC and First Advantage Background Services Corp. (Matter 36), proposed execution September 8, 2026. Unsigned until Plaintiff confirms Workday acceptance, onboarding/screening completion, reliance, and nonreceipt of pre-adverse materials. San Joaquin Superior Court. Serve the current SOS agents, not a store. Serrato disclosures are already on this day \u2014 this execution is optional. FCRA is pleaded and may permit removal.",
+    "matters": [
+      36
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-36/Verified Complaint - Ngwa Nforbi v AT&T Mobility Services LLC et al (REVIEW DRAFT for Sep 8 2026).pdf"
   },
   {
     "date": "Sep. 26, 2026",
-    "event": "ACADEMIC \u2014 CCP \u00a7 338(a) three-year clock on a Swift \u00a7 290.46(j) count if accrual is the Sept. 26, 2023 pre-adverse. The count is not being filed. The decrypted packet refutes a California-registry source.",
+    "event": "OUTER BOUND \u2014 CCP \u00a7 338(a) three-year statutory-liability clock on the Swift \u00a7 290.46(j) / ICRAA counts if accrual is the Sept. 26, 2023 pre-adverse email. Post-adverse is Oct. 5, 2023 (Oct. 5, 2026). This is a limitations argument sourced to the Swift FCRA emails, not a court-ordered deadline. File before the earlier date.",
     "matters": [
       38
     ],
     "type": "deadline",
-    "upcoming": false,
+    "upcoming": true,
     "actor": "you",
     "source": "/documents/matter-38/Swift FCRA Email - Pre-Adverse (Sep 26 2023).pdf"
   },
