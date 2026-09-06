@@ -786,9 +786,15 @@ const crossMatter = JSON.parse(
         }
       }
       if (item.document_path) {
-        const full = path.join(REPO_ROOT, item.document_path.replace(/^\/+/, ""));
-        if (!fs.existsSync(full)) {
-          errors.push(`crossMatter foundation item ${item.id} cites a missing file ${item.document_path}.`);
+        if (!item.document_path.startsWith("/documents/")) {
+          errors.push(`crossMatter foundation item ${item.id} path "${item.document_path}" should start with "/documents/".`);
+        } else {
+          const full = path.join(PUBLIC_ROOT, item.document_path);
+          if (!fs.existsSync(full)) {
+            errors.push(`crossMatter foundation item ${item.id} cites a missing file ${item.document_path}.`);
+          } else {
+            referencedDocPaths.add(path.resolve(full));
+          }
         }
       }
     }
