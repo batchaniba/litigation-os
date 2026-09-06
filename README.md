@@ -226,6 +226,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | Sep. 8, 2026 | 27 | Response deadline (self-imposed) — post-expiry $175,000 Randstad-only settlement demand. Williams to accept, counter, or request a call by 5:00 p.m. PT; one week before Randstad's Sept. 15 responsive-pleading date. |
 | Sep. 8, 2026 | 24 | Deadline — Initial disclosures (FRCP 26(a)(1)) and Joint Case Management Statement — Newanforbi v. Serrato (4:26-cv-05953-ASK) |
 | Sep. 9, 2026 | 27 | Meet-and-confer deadline (computed) as to The RK Logistics Group, Inc. — Newanforbi v. Randstad US, LLC et al. (26CV199902) |
+| Sep. 10, 2026 | 28 | Meet-and-confer date Van Dine requested before a Rule 12(b)(6) in Newanforbi v. Shannon Smith, LCSW, et al. (N.D. Cal. 3:26-cv-07504-LJC). Reply with available dates. Do not dismiss the action. |
 | Sep. 10, 2026 | 27 | Meet-and-confer deadline (computed) as to Randstad US, LLC — Newanforbi v. Randstad US, LLC et al. (26CV199902) |
 | Sep. 11, 2026 | 12 | Azimov response due (courtesy) — whether Diamond Truck Sales, Inc. and Alpine Truck Sales, Inc. will (A) execute a Notice of Acknowledgment of Receipt or equivalent stipulation accepting the Amended Summons and FAC, or… |
 | Sep. 14, 2026 | 29 | Deadline to file Consent or Declination to Magistrate Judge Jurisdiction — Plaintiff or the removing party, Newanforbi v. |

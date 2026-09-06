@@ -1,6 +1,29 @@
 [
   {
     "date": "Sep. 3, 2026",
+    "event": "RECEIVED \u2014 Blaze Van Dine (Sims, Lawrence & Broghammer) e-mail meet-and-confer, 2:40 p.m., previewing a Rule 12(b)(6) in Newanforbi v. Shannon Smith, LCSW, et al. (N.D. Cal. 3:26-cv-07504-LJC). Grounds previewed: res judicata from Matter 5; no state action; First Amendment chill/intent; due process liberty/safeguards; Bane Act threat/intimidation/coercion; fraud/negligent misrepresentation reliance and intent; RICO Rule 8 / 9(b). Asks Plaintiff to dismiss or give dates on or before September 10, 2026. Cc: Eric Martinez, Kim Schmitt, June Meinecke. Do not treat as a filed motion. Rule 12 from the Aug. 31 acceptance still runs to about September 21.",
+    "matters": [
+      28
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "filed": false,
+    "actor": "opposing",
+    "source": "/documents/matter-28/Gmail - Blaze Van Dine Meet and Confer re Motion to Dismiss (Sep 3 2026).pdf"
+  },
+  {
+    "date": "Sep. 10, 2026",
+    "event": "Meet-and-confer date Van Dine requested before a Rule 12(b)(6) in Newanforbi v. Shannon Smith, LCSW, et al. (N.D. Cal. 3:26-cv-07504-LJC). Reply with available dates. Do not dismiss the action. Rule 12 from the Aug. 31 acceptance still runs to about September 21.",
+    "matters": [
+      28
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-28/Gmail - Blaze Van Dine Meet and Confer re Motion to Dismiss (Sep 3 2026).pdf"
+  },
+  {
+    "date": "Sep. 3, 2026",
     "event": "FILED \u2014 Dkt. 13 / 13-1 / 13-2 / 13-3 Plaintiff's Civil L.R. 7-11 Administrative Motion directing DAG Haiyang A. Li to accept service for Santiago Meza-Gonzalez in Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK). Clerk-stamped FILED / RECEIVED Sep. 3, 2026, San Jose (22 pp. combined). Motion mailed Sep. 1. Meza remains unserved. Exhibit C is the original Serrato MTD caption noticing September 16 \u2014 that hearing is now September 30 (Matter 24 Dkt. 21).",
     "matters": [
       32
