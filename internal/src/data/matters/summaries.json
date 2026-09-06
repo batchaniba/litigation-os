@@ -1094,5 +1094,36 @@
     ],
     "evidenceCount": 10,
     "documentCount": 18
+  },
+  {
+    "number": 36,
+    "caption": "Brendan Ngehsi Newanforbi v. AT&T Mobility Services LLC, et al.",
+    "case_no": "TBD",
+    "court": "San Joaquin Sup. Ct. (proposed; review draft not filed)",
+    "claims": "Penal Code § 290.46(j); FCRA § 1681b(b)(3); ICRAA §§ 1786.40, 1786.50; Breach of Contract; Implied Covenant; Promissory Estoppel; Negligent Misrepresentation; Fraud / Concealment; UCL § 17200 (alternative pleading)",
+    "status_label": "Review draft — execution gates remain",
+    "lifecycle": "pre_filing",
+    "proceeding": "state_civil",
+    "phase": "pre_filing",
+    "filed": "Not yet filed",
+    "judge": "TBD",
+    "cluster": 3,
+    "type": "State",
+    "archived": false,
+    "note": "Do not execute or file the review draft before September 8, 2026. The formal offer is now in the record; confirm draft paragraphs 55, 83, 104, 118, 132, 145, and 160, obtain the Workday acceptance audit, and identify concrete reliance.",
+    "defendants": "AT&T Mobility Services LLC (likely legal employer for the Mobility Orange Retail Sales Consultant role; AT&T Inc. not named merely as parent); First Advantage Background Services Corp. (likely operating CRA; First Advantage Corporation parent not named merely as parent); DOES 1–20 for the actual AT&T employing/decisionmaking entity, First Advantage furnishing affiliate, manager, adjudication personnel, and other responsible actors. Richard Patterson is treated as an AT&T recruiter and percipient witness, not presently named individually.",
+    "causes": [
+      "[PLEADED ON INFORMATION AND BELIEF] Penal Code § 290.46(j) — two-hour chronology plus First Advantage’s documented 2024 report matching this Plaintiff to a DOJ search sourced from the California Sex Offender Registry; May 2026 report completion/delivery remains unproved",
+      "[PLEADED ON INFORMATION AND BELIEF] FCRA, 15 U.S.C. § 1681b(b)(3)(A) — against AT&T if a consumer report contributed to rescission; Plaintiff must confirm no report/rights notice was received before 12:23 p.m.",
+      "[PLEADED ON INFORMATION AND BELIEF] ICRAA, Civ. Code §§ 1786.40 and 1786.50 — against AT&T if an investigative report was obtained before denial without the required source advice",
+      "[ALTERNATIVE / CONFIRM ACCEPTANCE] Breach of Written Contract and Implied Covenant — requires Workday acceptance proof and complete offer terms",
+      "[ALTERNATIVE / CONFIRM RELIANCE] Promissory Estoppel — official offer, compensation, tentative start date, and onboarding; requires specific substantial reliance and resulting loss",
+      "[ALTERNATIVE] Negligent Misrepresentation — official offer after assessment period if AT&T already treated the Spanish result as disqualifying or lacked grounds to represent approval",
+      "[ALTERNATIVE / DISCOVERY DEPENDENT] Intentional Misrepresentation and Concealment — requires internal proof of knowledge, intent, reliance, and managing-agent involvement for corporate punitive damages",
+      "[DERIVATIVE / EQUITABLE] UCL § 17200 — unlawful, unfair, and fraudulent prongs; restitution limited to vested money/property and injunction subject to standing and adequate-remedy proof",
+      "[PRESERVED, NOT PLEADED] FEHA and Fair Chance Act — do not plead without CRD exhaustion/right-to-sue and supporting score or criminal-history-use evidence"
+    ],
+    "evidenceCount": 14,
+    "documentCount": 28
   }
 ]

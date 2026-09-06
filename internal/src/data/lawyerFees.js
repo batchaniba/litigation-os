@@ -602,27 +602,44 @@ const lawyer_fees_raw = [
       mid: 19460
     },
     notes: "Aug. 28 true-up (17 PDFs / 209 pages). Aug. 26 v9 complaint (28 pp.) and e-filing packet carry forward. Conformed complaint/summons/CM-010 are file-stamped copies of already-billed pages. New work is process-server assembly: CT Corporation 68-page court-docs packet (two defendant sets of already-drafted complaint + summons + CV-5012 + ADR) and two 32-page summons-first packets, billed at compilation rates, plus cover sheet / instructions (5–10 hrs). Blank POS-010 and CV-5003 are forms. Fee-shifting under Civ. Code §52(a) and CCP §1021.5 applies upon prevailing."
+  },
+  {
+    number: 36,
+    type: "State — Rescinded Employment Offer / Complaint Review Draft",
+    documentsCount: 28,
+    totalPagesReal: 80,
+    hours: {
+      low: 32,
+      high: 55,
+      mid: 43.5
+    },
+    cost: {
+      low: 8960,
+      high: 15400,
+      mid: 12180
+    },
+    notes: "Sep. 5 intake review of 24 short email PDFs and one SMS screenshot, four-page findings memorandum, two-page formal offer, and 32-page verified-complaint review draft. Estimate covers chronology reconstruction, entity and authority research, modular nine-count drafting, citation verification, pleading-paper rendering, and factual execution gates. The complaint remains unsigned and unfiled; no demand, CRD charge, or damages worksheet has been prepared."
   }
 ];
 
 export const lawyer_fees = lawyer_fees_raw.map((row) => withMatterIdentity(row));
 
 export const lawyer_fees_summary = {
-  analysisDate: "2026-08-28",
-  totalMatters: 35,
-  totalDocumentsAnalyzed: 573,
-  totalPagesReal: 6784,
+  analysisDate: "2026-09-05",
+  totalMatters: 36,
+  totalDocumentsAnalyzed: 601,
+  totalPagesReal: 6864,
   methodology: {
     blendedHourlyRate: 280,
     rateRange: { seniorPartner: [350, 450], midAssociate: [250, 350], paralegal: [150, 200] },
-    note: "Every PDF in public/documents/matter-XX/ was measured with pdfinfo for real page counts (poppler-utils), then classified by document type (complaint, motion/opposition/reply, discovery, writ/habeas, declaration, administrative, evidence) and priced using the hours-per-page/per-document conversions in docs/LAWYER_FEES_CALCULATOR.md. Opposing counsel's filings are billed only at a light review rate, never at drafting rate. Duplicate packs (opposition-pack-10, conformed copies, from-* stores) are billed incrementally. Matters with no uploaded PDFs are estimated conservatively from matter JSON status text. Aug. 28, 2026 true-up: Matter 20 Whitman tentative + reply review; Matter 24 Serrato Opp v4 / related-case motions / MTD review; Matter 26 UPS ECF 7 review + 17-page opposition; Matter 28 Dkt. 11 + QI research (HOPE discovery stays on Matter 5); Matter 32 process-server bundle; Matter 35 Ross CT / summons-first service packets.",
+    note: "Every PDF in public/documents/matter-XX/ was measured with pdfinfo for real page counts (poppler-utils), then classified by document type (complaint, motion/opposition/reply, discovery, writ/habeas, declaration, administrative, evidence) and priced using the hours-per-page/per-document conversions in docs/LAWYER_FEES_CALCULATOR.md. Opposing counsel's filings are billed only at a light review rate, never at drafting rate. Duplicate packs (opposition-pack-10, conformed copies, from-* stores) are billed incrementally. Matters with no uploaded PDFs are estimated conservatively from matter JSON status text. Aug. 28, 2026 true-up: Matter 20 Whitman tentative + reply review; Matter 24 Serrato Opp v4 / related-case motions / MTD review; Matter 26 UPS ECF 7 review + 17-page opposition; Matter 28 Dkt. 11 + QI research (HOPE discovery stays on Matter 5); Matter 32 process-server bundle; Matter 35 Ross CT / summons-first service packets. Sep. 5, 2026: Matter 36 adds the AT&T hiring record, formal offer, findings memorandum, and 32-page verified-complaint review draft.",
   },
-  totalEstimatedHours: { low: 3014.8, high: 5039.2, mid: 4019.5 },
-  totalEstimatedCost: { low: 844144, high: 1410976, mid: 1125460 },
+  totalEstimatedHours: { low: 3046.8, high: 5094.2, mid: 4063 },
+  totalEstimatedCost: { low: 853104, high: 1426376, mid: 1137640 },
   byCluster: {
     cluster1: { label: "CHP / DUI / DMV", matters: [1, 2, 7, 8, 20, 24, 32, 33], costLow: 172676, costMid: 230272, costHigh: 287868 },
     cluster2: { label: "Parole Retaliation / HOPE", matters: [3, 4, 5, 6, 11, 13, 14, 15, 16, 17, 18, 21, 28, 30, 34], costLow: 469672, costMid: 619192, costHigh: 772912 },
-    cluster3: { label: "Consumer Fraud / Employment", matters: [12, 22, 23, 25, 26, 27, 29, 31], costLow: 145936, costMid: 198646, costHigh: 251356 },
+    cluster3: { label: "Consumer Fraud / Employment", matters: [12, 22, 23, 25, 26, 27, 29, 31, 36], costLow: 154896, costMid: 210826, costHigh: 266756 },
     cluster4: { label: "Administrative Writs & Habeas", matters: [9, 10, 19], costLow: 41580, costMid: 57890, costHigh: 74200 },
     cluster6: { label: "Public Accommodation / Unruh", matters: [35], costLow: 14280, costMid: 19460, costHigh: 24640 },
   },
