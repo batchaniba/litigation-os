@@ -118,8 +118,13 @@ CONTENT = [
         "background check, and through First Advantage ordered a drug test. "
         "Plaintiff accepted the offer and completed the drug screening. On "
         "information and belief, that screen came back clean. Thereafter "
-        "Best Buy ceased communication and ghosted him. No written rejection "
-        "is in Plaintiff's files.",
+        "Best Buy ceased communication and ghosted him. That cessation is "
+        "the adverse employment action: it denied, withdrew, or ended the "
+        "accepted warehouse job. A written rejection letter is not an "
+        "element of Civil Code section 1786.40, Civil Code section "
+        "1785.20.5, or Penal Code section 290.46(j). Silence after an "
+        "accepted offer is the decision. No written rejection is in "
+        "Plaintiff's files.",
     ),
     (
         "PARA",
@@ -183,18 +188,28 @@ CONTENT = [
         "PARA",
         "7. This Complaint does not plead a Tameny count, an IIED count, a "
         "Fair Credit Reporting Act count, a contract or promissory-estoppel "
-        "count, or a FEHA or Fair Chance Act count. The load-bearing claim is "
-        "Penal Code section 290.46(j). Companion consumer-report and "
-        "unfair-competition counts are pleaded only to the extent the same "
-        "employment use, if proven, also violated those statutes. ICRAA and "
-        "CCRAA are pleaded in the alternative so the notice claim survives "
-        "whether the First Advantage product was an investigative consumer "
-        "report or an ordinary consumer credit report. Plaintiff does not "
-        "presently plead Labor Code section 432.7 or section 1198.5. He has "
-        "not alleged that any report used an arrest that did not result in a "
-        "conviction, diversion, or a dismissed conviction, and he has not "
-        "yet served a section 1198.5 inspection request. He preserves leave "
-        "to amend if the file later supports those theories.",
+        "count, or a FEHA or Government Code section 12952 Fair Chance Act "
+        "count. The Fair Chance reservation is not a count. Plaintiff will "
+        "timely exhaust California Civil Rights Department rights and seek "
+        "leave to amend if discovery shows conviction history caused or "
+        "contributed to the decision after the written offer. He does not "
+        "presently plead contract or promissory estoppel. He preserves "
+        "those theories if the written offer and confirmed reliance later "
+        "support a timely count. He does not invent declined jobs, travel, "
+        "or hours. The load-bearing claim is Penal Code section 290.46(j). "
+        "Companion consumer-report and unfair-competition counts are pleaded "
+        "only to the extent the same employment use, if proven, also "
+        "violated those statutes. ICRAA and CCRAA are pleaded in the "
+        "alternative so the notice claim survives whether the First "
+        "Advantage product was an investigative consumer report or an "
+        "ordinary consumer credit report. First Advantage is the named "
+        "screening vendor in Best Buy's own October 17, 2023 emails. "
+        "Plaintiff does not presently plead Labor Code section 432.7 or "
+        "section 1198.5. He has not alleged that any report used an arrest "
+        "that did not result in a conviction, diversion, or a dismissed "
+        "conviction, and he has not yet served a section 1198.5 inspection "
+        "request. He preserves leave to amend if the file later supports "
+        "those reserved theories.",
     ),
     ("HEADER", "II.\nPARTIES"),
     (
@@ -470,9 +485,10 @@ CONTENT = [
         "PARA",
         "34. After Plaintiff accepted the October 17, 2023 offer and completed "
         "the drug screening, Best Buy ceased communication and ghosted him. "
-        "That cessation ended or prevented the warehouse job. The file "
-        "contains no pre-adverse letter, no adverse-action letter, and no "
-        "explanation.",
+        "That cessation ended or prevented the warehouse job. Ghosting after "
+        "an accepted offer is an adverse employment action. A written "
+        "rejection letter is not required. The file contains no pre-adverse "
+        "letter, no adverse-action letter, and no explanation.",
     ),
     (
         "PARA",
@@ -691,7 +707,13 @@ CONTENT = [
         "information concerning Plaintiff's character, general reputation, "
         "personal characteristics, or mode of living for employment purposes "
         "at Best Buy's request, and Best Buy was the user of that information "
-        "before the decision alleged in paragraph 34.",
+        "before the decision alleged in paragraph 34. Civil Code section "
+        "1786.2 defines an investigative consumer report as one in which "
+        "information on those subjects is obtained. Plaintiff alleges the "
+        "First Advantage product concerned those subjects. He does not "
+        "invent personal interviews. If this Court concludes that interviews "
+        "are required and none occurred, this ICRAA count does not apply and "
+        "the CCRAA count does.",
     ),
     (
         "PARA",
@@ -864,7 +886,11 @@ CONTENT = [
         "attorney's fees, exemplary damages, or a civil penalty not exceeding "
         "twenty-five thousand dollars ($25,000). The $25,000 figure is a cap "
         "on the civil penalty, not a substitute floor that displaces actual "
-        "damages.",
+        "damages. Plaintiff seeks the civil remedies the statute authorizes "
+        "for unauthorized employment use of information disclosed pursuant to "
+        "section 290.46, whether this Court locates those remedies in "
+        "subdivision (j)(4)(A) or in another subdivision of section 290.46. "
+        "He does not rest this cause on a criminal-enhancement theory.",
     ),
     (
         "PARA",
@@ -888,12 +914,17 @@ CONTENT = [
     ),
     (
         "PARA",
-        "59. Plaintiff seeks the remedies authorized by section 290.46(j)(4)(A). "
-        "He does not presently allege a multi-incident pattern or practice at "
-        "Best Buy sufficient for subdivision (j)(4)(B) preventive relief. He "
-        "seeks that remedy only if discovery shows reasonable cause to believe "
-        "such a pattern or practice. The damages claim under subdivision "
-        "(j)(4)(A) does not depend on pattern or practice.",
+        "59. Plaintiff seeks the remedies authorized by section 290.46(j)(4)(A), "
+        "or by whichever subdivision this Court holds supplies the civil "
+        "remedy for unauthorized employment use. He does not presently allege "
+        "a multi-incident pattern or practice at Best Buy sufficient for "
+        "subdivision (j)(4)(B) preventive relief. He seeks that remedy only "
+        "if discovery shows reasonable cause to believe such a pattern or "
+        "practice. The damages claim under subdivision (j)(4)(A) does not "
+        "depend on pattern or practice. Civil Code section 3294 punitive "
+        "damages, if any, are pleaded in the alternative to the statute's "
+        "exemplary damages or civil penalty for the same conduct. Plaintiff "
+        "will elect. He does not seek double punitive recovery.",
     ),
     (
         "PARA",
@@ -963,9 +994,11 @@ CONTENT = [
     ),
     (
         "LIST_ITEM",
-        "5. For punitive damages against only those Defendants for whom Civil "
-        "Code section 3294 is proven, in an amount to be determined by the "
-        "trier of fact, with no amount pleaded;",
+        "5. For punitive damages under Civil Code section 3294 against only "
+        "those Defendants for whom the statutory prerequisites are proven, "
+        "pleaded in the alternative to any exemplary damages or civil penalty "
+        "awarded under Penal Code section 290.46 for the same conduct, with "
+        "no double recovery and no amount pleaded;",
     ),
     (
         "LIST_ITEM",

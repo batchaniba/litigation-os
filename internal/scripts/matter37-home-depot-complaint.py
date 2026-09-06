@@ -168,8 +168,14 @@ CONTENT = [
         "He does not attach the report because Home Depot has not given it to "
         "him. He nonetheless alleges, as fact, what that report contained and "
         "how Home Depot used it. Withholding the report does not make those "
-        "allegations disappear at the pleading stage. Plaintiff will seek the "
-        "report in discovery."
+        "allegations disappear at the pleading stage. The precise hire date, "
+        "job title, rate of pay, and vendor name are likewise facts of Home "
+        "Depot's personnel and screening records. Plaintiff alleges them on "
+        "information and belief as to August 2024 and the Tracy Center. A "
+        "demurrer for uncertainty under Code of Civil Procedure section "
+        "430.10(f) is not a substitute for records Defendant possesses and "
+        "has not produced. Plaintiff will seek the report and those records "
+        "in discovery."
     ),
     (
         "PARA",
@@ -183,17 +189,26 @@ CONTENT = [
     (
         "PARA",
         "7. This Complaint does not plead a Tameny wrongful-termination count, "
-        "an IIED count, or a FEHA or Fair Chance Act count. The load-bearing "
-        "claim is the statutory prohibition in Penal Code section 290.46(j). "
-        "Companion consumer-report and unfair-competition counts are pleaded "
-        "only to the extent the same employment use, if proven, also violated "
-        "those statutes. ICRAA and CCRAA are pleaded in the alternative so "
-        "the notice claim survives whether the report was investigative or "
-        "an ordinary consumer credit report. Plaintiff does not presently "
-        "plead Labor Code section 432.7 as a cause of action. He has not "
-        "alleged that any report used an arrest that did not result in a "
-        "conviction, diversion, or a dismissed conviction. He preserves "
-        "leave to amend if the file later supports that theory.",
+        "an IIED count, or a FEHA or Government Code section 12952 Fair "
+        "Chance Act count. The Fair Chance reservation is not a count. "
+        "Plaintiff will timely exhaust California Civil Rights Department "
+        "rights and seek leave to amend if discovery shows conviction history "
+        "caused or contributed to the decision after the hire. He does not "
+        "presently plead unpaid-wage, waiting-time, or wage-statement counts. "
+        "'Began onboarding' is not, without more, compensable work. He "
+        "preserves those theories if badge, time, training, or pay records "
+        "later show he performed employer-controlled activity for which "
+        "wages were due. The load-bearing claim is the statutory prohibition "
+        "in Penal Code section 290.46(j). Companion consumer-report and "
+        "unfair-competition counts are pleaded only to the extent the same "
+        "employment use, if proven, also violated those statutes. ICRAA and "
+        "CCRAA are pleaded in the alternative so the notice claim survives "
+        "whether the report was investigative or an ordinary consumer credit "
+        "report. Plaintiff does not presently plead Labor Code section 432.7 "
+        "as a cause of action. He has not alleged that any report used an "
+        "arrest that did not result in a conviction, diversion, or a "
+        "dismissed conviction. He preserves leave to amend if the file later "
+        "supports those reserved theories.",
     ),
     ("HEADER", "II.\nPARTIES"),
     (
@@ -397,10 +412,14 @@ CONTENT = [
         "PARA",
         "29. After Plaintiff accepted the hire and began onboarding, Home Depot "
         "ceased communication and ghosted him. That cessation ended or "
-        "prevented his work at the Tracy Center. Home Depot sent no written "
-        "termination, no explanation, and no further reporting instruction. "
-        "The precise day communication stopped is a fact of Home Depot's "
-        "personnel and screening records.",
+        "prevented his work at the Tracy Center. Ghosting after an accepted "
+        "hire is an adverse employment action: it denied, withdrew, or ended "
+        "the employment. A written termination letter is not an element of "
+        "Civil Code section 1786.40, Civil Code section 1785.20.5, or Penal "
+        "Code section 290.46(j). Silence after an accepted hire is the "
+        "decision. Home Depot sent no written termination, no explanation, "
+        "and no further reporting instruction. The precise day communication "
+        "stopped is a fact of Home Depot's personnel and screening records.",
     ),
     (
         "PARA",
@@ -613,7 +632,12 @@ CONTENT = [
         "investigative consumer reporting agency assembled or evaluated "
         "information concerning Plaintiff's character, general reputation, "
         "personal characteristics, or mode of living for employment purposes "
-        "at Home Depot's request.",
+        "at Home Depot's request. Civil Code section 1786.2 defines an "
+        "investigative consumer report as one in which information on those "
+        "subjects is obtained. Plaintiff alleges the product concerned those "
+        "subjects. He does not invent personal interviews. If this Court "
+        "concludes that interviews are required and none occurred, this "
+        "ICRAA count does not apply and the CCRAA count does.",
     ),
     (
         "PARA",
@@ -822,7 +846,12 @@ CONTENT = [
         "sitting without a jury, not exceeding three times the amount of actual "
         "damage, and not less than two hundred fifty dollars ($250), and "
         "attorney's fees, exemplary damages, or a civil penalty not exceeding "
-        "twenty-five thousand dollars ($25,000).",
+        "twenty-five thousand dollars ($25,000). Plaintiff seeks the civil "
+        "remedies the statute authorizes for unauthorized employment use of "
+        "information disclosed pursuant to section 290.46, whether this Court "
+        "locates those remedies in subdivision (j)(4)(A) or in another "
+        "subdivision of section 290.46. He does not rest this cause on a "
+        "criminal-enhancement theory.",
     ),
     (
         "PARA",
@@ -864,12 +893,17 @@ CONTENT = [
     ),
     (
         "PARA",
-        "61. Plaintiff seeks the remedies authorized by section 290.46(j)(4)(A). "
-        "He does not presently allege a multi-incident pattern or practice at "
-        "Home Depot sufficient for subdivision (j)(4)(B) preventive relief. "
-        "He seeks that remedy only if discovery shows reasonable cause to "
-        "believe such a pattern or practice. The damages claim under "
-        "subdivision (j)(4)(A) does not depend on pattern or practice.",
+        "61. Plaintiff seeks the remedies authorized by section 290.46(j)(4)(A), "
+        "or by whichever subdivision this Court holds supplies the civil "
+        "remedy for unauthorized employment use. He does not presently allege "
+        "a multi-incident pattern or practice at Home Depot sufficient for "
+        "subdivision (j)(4)(B) preventive relief. He seeks that remedy only "
+        "if discovery shows reasonable cause to believe such a pattern or "
+        "practice. The damages claim under subdivision (j)(4)(A) does not "
+        "depend on pattern or practice. Civil Code section 3294 punitive "
+        "damages, if any, are pleaded in the alternative to the statute's "
+        "exemplary damages or civil penalty for the same conduct. Plaintiff "
+        "will elect. He does not seek double punitive recovery.",
     ),
     (
         "PARA",
@@ -939,9 +973,11 @@ CONTENT = [
     ),
     (
         "LIST_ITEM",
-        "5. For punitive damages against only those Defendants for whom Civil "
-        "Code section 3294 is proven, in an amount to be determined by the "
-        "trier of fact, with no amount pleaded;",
+        "5. For punitive damages under Civil Code section 3294 against only "
+        "those Defendants for whom the statutory prerequisites are proven, "
+        "pleaded in the alternative to any exemplary damages or civil penalty "
+        "awarded under Penal Code section 290.46 for the same conduct, with "
+        "no double recovery and no amount pleaded;",
     ),
     (
         "LIST_ITEM",

@@ -635,7 +635,7 @@ const lawyer_fees_raw = [
       high: 8400,
       mid: 6160
     },
-    notes: "Sep. 6 true-up, then demurrer-harden: 23-page signed four-count verified complaint (ICRAA, CCRAA alternative, UCL, § 290). Affirmative Home Depot report-and-use facts remain; CCRAA added so a Mendoza/Connor overlap attack does not kill the notice path. Packet is 32 pages. CM-010, FW-001, FW-003, and SUM-100 remain light administrative tasks. Filing Packet billed as assembly. No offer letter or Home Depot report is in the file. Unfiled; no demand or CRD charge."
+    notes: "Sep. 6 true-up, then demurrer-harden: 24-page signed four-count verified complaint (ICRAA, CCRAA alternative, UCL, § 290). Affirmative Home Depot report-and-use facts remain; CCRAA added so a Mendoza/Connor overlap attack does not kill the notice path. Packet is 33 pages. CM-010, FW-001, FW-003, and SUM-100 remain light administrative tasks. Filing Packet billed as assembly. No offer letter or Home Depot report is in the file. Unfiled; no demand or CRD charge."
   },
   {
     number: 38,
@@ -652,7 +652,7 @@ const lawyer_fees_raw = [
       high: 10640,
       mid: 7840
     },
-    notes: "Sep. 6 true-up, then demurrer-harden: 24-page signed four-count verified complaint. ICRAA § 1786.40 rebuilt around the statutory advice/name-and-address elements; CCRAA pleaded in the alternative. Packet is 33 pages. Intake forms billed as in Matters 36/37. The 17-page Oct. 5 post-adverse letter is evidence compilation (0.3–0.5 hr/page). The 49-page encrypted pre-adverse is billed at a light existence/admin rate only — ciphertext, not a drafting source; the decrypted packet is not in the public folder and is not billed. Recruiting/Clearinghouse emails carry forward. Unfiled; no demand or CRD charge."
+    notes: "Sep. 6 true-up, then demurrer-harden: 25-page signed four-count verified complaint. ICRAA § 1786.40 rebuilt around the statutory advice/name-and-address elements; CCRAA pleaded in the alternative. Packet is 34 pages. Intake forms billed as in Matters 36/37. The 17-page Oct. 5 post-adverse letter is evidence compilation (0.3–0.5 hr/page). The 49-page encrypted pre-adverse is billed at a light existence/admin rate only — ciphertext, not a drafting source; the decrypted packet is not in the public folder and is not billed. Recruiting/Clearinghouse emails carry forward. Unfiled; no demand or CRD charge."
   },
   {
     number: 39,
@@ -669,7 +669,7 @@ const lawyer_fees_raw = [
       high: 7280,
       mid: 5180
     },
-    notes: "Sep. 6 true-up, then demurrer-harden: 24-page signed four-count verified complaint (ICRAA, CCRAA alternative, UCL, § 290). Packet is 33 pages. CM-010, FW-001, FW-003, and SUM-100 plus the Filing Packet are billed as in Matters 36/37. Application, $22.60 offer, authorization, and First Advantage drug-test emails carry forward. First Advantage is not a named defendant. Unfiled; no demand or CRD charge."
+    notes: "Sep. 6 true-up, then demurrer-harden: 25-page signed four-count verified complaint (ICRAA, CCRAA alternative, UCL, § 290). Packet is 34 pages. CM-010, FW-001, FW-003, and SUM-100 plus the Filing Packet are billed as in Matters 36/37. Application, $22.60 offer, authorization, and First Advantage drug-test emails carry forward. First Advantage is not a named defendant. Unfiled; no demand or CRD charge."
   }
 ];
 

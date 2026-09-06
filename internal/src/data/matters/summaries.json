@@ -1113,7 +1113,7 @@
     "note": "Packet is signed for September 8, 2026 filing. Do not treat as filed until clerk-stamped. Plaintiff confirmed Workday acceptance, onboarding, reliance, and nonreceipt of pre-adverse materials. First Advantage is not a named defendant. § 290.46(j) is the last count on page one.",
     "defendants": "AT&T Mobility Services LLC (likely legal employer for the Mobility Orange Retail Sales Consultant role; AT&T Inc. not named merely as parent); DOES 1–20 for the actual AT&T employing/decisionmaking entity, any First Advantage furnishing affiliate, manager, adjudication personnel, and other responsible actors. First Advantage Background Services Corp. is a fact witness and inspection target, not a named defendant. Richard Patterson is treated as an AT&T recruiter and percipient witness, not presently named individually.",
     "causes": [
-      "[PLEADED ON INFORMATION AND BELIEF] FCRA, 15 U.S.C. § 1681b(b)(3)(A) — against AT&T if a consumer report contributed to rescission; invites federal-question removal; Plaintiff confirms no report/rights notice arrived before 12:23 p.m.",
+      "[PLEADED ON INFORMATION AND BELIEF] FCRA, 15 U.S.C. § 1681b(b)(3)(A) — against AT&T if a consumer report contributed to rescission; invites federal-question removal; Plaintiff confirms no report/rights notice arrived before 12:23 p.m.; § 1681b(b)(2) standalone disclosure reserved until the authorization package is in hand",
       "[INDEPENDENT PATH] ICRAA, Civ. Code §§ 1786.40 and 1786.50 — against AT&T as user; vendor First Advantage is not a named defendant; same-day screen, no 1786.40 advice at rescission; §§ 1786.10 / 1786.22 inspection not yet demanded; 1786.16 pleaded from the combined 10:19 task",
       "[ALTERNATIVE] CCRAA, Civ. Code §§ 1785.20.5 and 1785.31 — if the First Advantage product was an ordinary consumer credit report rather than investigative; no copy or rights notice before 12:23",
       "[ALTERNATIVE] Breach of Written Contract and Implied Covenant — Plaintiff accepted through Workday and began onboarding",
@@ -1179,7 +1179,8 @@
       "[INDEPENDENT PATH] UCL § 17200 — unlawful prong cites 1786.40, 1785.20.5, and 290.46(j)(2)(E); unfair gravity/utility; standing vs restitution distinguished; four-year 17208 clock",
       "[PLEADED ON INFORMATION AND BELIEF] Penal Code § 290.46(j) — last count on page one; NSOPW remained Processing; inference that Swift used preliminary sex-offender-registry information from that in-process component, in whole or in part, in the Oct. 5 denial; packet does not show a completed hit or a California source-of-record line",
       "[OMITTED] Tameny / IIED — two-year CCP § 335.1 clock from Sept. 26 / Oct. 5, 2023 closed in 2025",
-      "[OMITTED] FCRA — two-year 15 U.S.C. § 1681p discovery clock from the 2023 letters would have closed"
+      "[OMITTED] FCRA — two-year 15 U.S.C. § 1681p discovery clock from the 2023 letters would have closed",
+      "[PRESERVED, NOT PLEADED] FEHA and Fair Chance Act — no CRD right-to-sue in the record; 2023 CRD window is closing"
     ],
     "evidenceCount": 12,
     "documentCount": 15
