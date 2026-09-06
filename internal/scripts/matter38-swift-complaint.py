@@ -33,16 +33,16 @@ ROOT = SCRIPT_DIR.parents[1]
 DEFAULT_OUT = (
     ROOT
     / "internal/public/documents/matter-38"
-    / "Verified Complaint - Newanforbi v Swift Transportation Co of Arizona LLC"
+    / "Verified Complaint - Nforbi v Swift Transportation Co of Arizona LLC"
     " (REVIEW DRAFT for Sep 8 2026).pdf"
 )
 DEFAULT_EXEC_DATE = "September 8, 2026"
 EARLIEST_EXECUTION_DATE = dt.date(2026, 9, 8)
 COURT_LINE2 = "COUNTY OF SAN JOAQUIN"
-FOOTER = "VERIFIED COMPLAINT -- NEWANFORBI v. SWIFT TRANSPORTATION CO. OF ARIZONA LLC"
+FOOTER = "VERIFIED COMPLAINT -- NFORBI v. SWIFT TRANSPORTATION CO. OF ARIZONA LLC"
 
 PLAINTIFF_BLOCK = [
-    ("BRENDAN NGEHSI NEWANFORBI", "Times-Bold", 12),
+    ("BRENDAN NGWA NFORBI", "Times-Bold", 12),
     ("Plaintiff, In Propria Persona", "Times-Roman", 12),
     ("1455 Cat Tail Drive", "Times-Roman", 12),
     ("Stockton, CA 95204", "Times-Roman", 12),
@@ -51,7 +51,7 @@ PLAINTIFF_BLOCK = [
 ]
 
 CAPTION_LEFT = [
-    ("BRENDAN NGEHSI NEWANFORBI,", True, False),
+    ("BRENDAN NGWA NFORBI,", True, False),
     ("", False, False),
     ("                          Plaintiff,", False, False),
     ("", False, False),
@@ -84,7 +84,7 @@ CAPTION_RIGHT = [
     ("[Jury Trial Demanded]", False, True),
 ]
 
-SIGNOFF_NAME = "BRENDAN NGEHSI NEWANFORBI"
+SIGNOFF_NAME = "BRENDAN NGWA NFORBI"
 SIGNOFF_ROLE = "Plaintiff, In Propria Persona"
 SIG_LINE = "___________________________________"
 
@@ -98,7 +98,7 @@ CONTENT = [
         "SEX-OFFENDER-REGISTRY INFORMATION FROM THAT IN-PROCESS COMPONENT. "
         "CONFIRM THE DRIVER ROLE.",
     ),
-    ("PARA", 'Plaintiff BRENDAN NGEHSI NEWANFORBI ("Plaintiff") alleges as follows:'),
+    ("PARA", 'Plaintiff BRENDAN NGWA NFORBI ("Plaintiff") alleges as follows:'),
     ("HEADER", "I.\nINTRODUCTION"),
     (
         "PARA",
@@ -202,11 +202,10 @@ CONTENT = [
     ("HEADER", "II.\nPARTIES"),
     (
         "PARA",
-        "9. Plaintiff BRENDAN NGEHSI NEWANFORBI is a natural person residing in "
+        "9. Plaintiff BRENDAN NGWA NFORBI is a natural person residing in "
         "Stockton, San Joaquin County, California. He is also identified in "
-        "employment and court records as Brendan Ngwa Nforbi, Brendan Ngehsi "
-        "Ngwa Nforbi, and Brendan Ngehsi Ngwanforbi. Those name variants "
-        "refer to Plaintiff.",
+        "employment and court records as Brendan Ngehsi Ngwa Nforbi and "
+        "Brendan Ngehsi Ngwanforbi. Those name variants refer to Plaintiff.",
     ),
     (
         "PARA",
@@ -900,7 +899,7 @@ def _verification(d: PleadingPaper, exec_date: str, execute: bool) -> None:
     d.blank_line()
     d.write_line("STATE OF CALIFORNIA, COUNTY OF SAN JOAQUIN", bold=True, center=True)
     d.blank_line()
-    d.write_wrapped("I, BRENDAN NGEHSI NEWANFORBI, declare:", first_indent=36)
+    d.write_wrapped("I, BRENDAN NGWA NFORBI, declare:", first_indent=36)
     d.blank_line()
     d.write_wrapped(
         "I am the Plaintiff in this action. I have read the foregoing VERIFIED "

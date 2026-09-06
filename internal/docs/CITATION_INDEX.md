@@ -74,7 +74,7 @@ folder-derived attribution reported zero for Matters 1, 2, 7 and 20.
 | 33 | Nforbi v. Candelaria et al. | 548 |
 | 34 | Newanforbi v. Counseling and Psychotherapy C | 0 |
 | 35 | Ngwa Nforbi v. Ross Stores, Inc., et al. | 16 |
-| 36 | Brendan Ngehsi Newanforbi v. AT&T Mobility S | 14 |
+| 36 | Brendan Ngwa Nforbi v. AT&T Mobility Service | 14 |
 
 ## Highest-exposure citations
 

@@ -26,16 +26,16 @@ ROOT = SCRIPT_DIR.parents[1]
 DEFAULT_OUT = (
     ROOT
     / "internal/public/documents/matter-36"
-    / "Verified Complaint - Newanforbi v AT&T Mobility Services LLC et al"
+    / "Verified Complaint - Nforbi v AT&T Mobility Services LLC et al"
     " (REVIEW DRAFT for Sep 8 2026).pdf"
 )
 DEFAULT_EXEC_DATE = "September 8, 2026"
 EARLIEST_EXECUTION_DATE = dt.date(2026, 9, 8)
 COURT_LINE2 = "COUNTY OF SAN JOAQUIN"
-FOOTER = "VERIFIED COMPLAINT -- NEWANFORBI v. AT&T MOBILITY SERVICES LLC, ET AL."
+FOOTER = "VERIFIED COMPLAINT -- NFORBI v. AT&T MOBILITY SERVICES LLC, ET AL."
 
 PLAINTIFF_BLOCK = [
-    ("BRENDAN NGEHSI NEWANFORBI", "Times-Bold", 12),
+    ("BRENDAN NGWA NFORBI", "Times-Bold", 12),
     ("Plaintiff, In Propria Persona", "Times-Roman", 12),
     ("1455 Cat Tail Drive", "Times-Roman", 12),
     ("Stockton, CA 95204", "Times-Roman", 12),
@@ -44,7 +44,7 @@ PLAINTIFF_BLOCK = [
 ]
 
 CAPTION_LEFT = [
-    ("BRENDAN NGEHSI NEWANFORBI,", True, False),
+    ("BRENDAN NGWA NFORBI,", True, False),
     ("", False, False),
     ("                          Plaintiff,", False, False),
     ("", False, False),
@@ -84,7 +84,7 @@ CAPTION_RIGHT = [
     ("[Jury Trial Demanded]", False, True),
 ]
 
-SIGNOFF_NAME = "BRENDAN NGEHSI NEWANFORBI"
+SIGNOFF_NAME = "BRENDAN NGWA NFORBI"
 SIGNOFF_ROLE = "Plaintiff, In Propria Persona"
 SIG_LINE = "___________________________________"
 
@@ -94,7 +94,7 @@ CONTENT = [
     ("NOTICE", "REVIEW DRAFT — DO NOT FILE OR SIGN BEFORE SEPTEMBER 8, 2026. "
                "PLAINTIFF MUST CONFIRM THE ACCEPTANCE, ONBOARDING, RELIANCE, "
                "DAMAGES, AND NONRECEIPT ALLEGATIONS BEFORE EXECUTION."),
-    ("PARA", 'Plaintiff BRENDAN NGEHSI NEWANFORBI ("Plaintiff") alleges as follows:'),
+    ("PARA", 'Plaintiff BRENDAN NGWA NFORBI ("Plaintiff") alleges as follows:'),
     ("HEADER", "I.\nINTRODUCTION"),
     ("PARA", "1. On May 28, 2026, Defendant AT&T Mobility Services LLC approved Plaintiff for employment as a Retail Sales Consultant at its Lodi, California store, sent him a written offer identifying compensation of $24.95 per hour, part-time targeted variable compensation, and a tentative June 15, 2026 start date, and commenced its formal onboarding process."),
     ("PARA", "2. AT&T's written offer listed formal acceptance, required hiring documents, work authorization, any applicable export review, absence of restrictive agreements, any applicable rehire-eligibility check, and satisfactory standardized background checks as contingencies. It did not list Spanish proficiency or passage of the earlier language assessment as an offer contingency. The assessment AT&T later invoked was administered before the offer, and its testing window closed on May 25, 2026."),
@@ -107,8 +107,8 @@ CONTENT = [
     ("PARA", "9. In the alternative, if Defendants establish that no consumer report was completed or transmitted before 12:23 p.m., AT&T remains answerable under the independent offer, contract, estoppel, and misrepresentation theories pleaded below to the extent established by the offer, acceptance, reliance, and internal approval records."),
     ("PARA", "10. Plaintiff pleads alternative and inconsistent theories because Defendants exclusively control the evidence that will determine whether the offer was reversed because of registry information, another consumer-report item, a preexisting language score, a manager's undisclosed reconsideration, or an automated workflow failure. Each theory is pleaded separately and does not depend upon success of every other theory."),
     ("HEADER", "II.\nPARTIES"),
-    ("PARA", "11. Plaintiff BRENDAN NGEHSI NEWANFORBI is a natural person residing in Stockton, San Joaquin County, California. Plaintiff applied for, received an offer for, and was denied employment in San Joaquin County."),
-    ("PARA", "12. Plaintiff is the person identified in AT&T candidate records as Brendan Ngwa Nforbi and in other records as Brendan Ngehsi Newanforbi or Brendan Ngehsi Ngwanforbi. Those name variants refer to Plaintiff."),
+    ("PARA", "11. Plaintiff BRENDAN NGWA NFORBI is a natural person residing in Stockton, San Joaquin County, California. Plaintiff applied for, received an offer for, and was denied employment in San Joaquin County."),
+    ("PARA", "12. Plaintiff is the person identified in AT&T candidate records as Brendan Ngwa Nforbi and in other records as Brendan Ngehsi Ngwanforbi. Those name variants refer to Plaintiff."),
     ("PARA", "13. Plaintiff is required to register under California Penal Code section 290, and information identifying him appeared on California's Megan's Law website and California Sex Offender Registry at the time of the events alleged."),
     ("PARA", "14. Defendant AT&T MOBILITY SERVICES LLC ('AT&T') is a Delaware limited liability company doing business throughout California, including at the AT&T retail store located at 2439 West Kettleman Lane, Lodi, California 95242."),
     ("PARA", "15. AT&T Mobility Services LLC is identified in publicly available AT&T/CWA labor materials as the employer of covered mobility retail employees, and the Lodi position was designated within AT&T's Mobility bargaining structure. On information and belief, AT&T owned, operated, staffed, controlled, and made hiring decisions for the Lodi store and was the legal employer offering Plaintiff requisition R-106742."),
@@ -341,7 +341,7 @@ def _verification(d: PleadingPaper, exec_date: str, execute: bool) -> None:
     d.blank_line()
     d.write_line("STATE OF CALIFORNIA, COUNTY OF SAN JOAQUIN", bold=True, center=True)
     d.blank_line()
-    d.write_wrapped("I, BRENDAN NGEHSI NEWANFORBI, declare:", first_indent=36)
+    d.write_wrapped("I, BRENDAN NGWA NFORBI, declare:", first_indent=36)
     d.blank_line()
     d.write_wrapped(
         "I am the Plaintiff in this action. I have read the foregoing VERIFIED "
