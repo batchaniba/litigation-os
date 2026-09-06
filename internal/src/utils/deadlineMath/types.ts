@@ -56,7 +56,9 @@ export type RecipeId =
   | "ca_cmc_statement"
   | "federal_motion_hearing"
   | "federal_answer_after_service"
-  | "federal_response_after_mail_service";
+  | "federal_response_after_mail_service"
+  | "edcal_lr230c_opposition"
+  | "edcal_lr230d_reply";
 
 export type ComputeInput = {
   recipe: RecipeId;

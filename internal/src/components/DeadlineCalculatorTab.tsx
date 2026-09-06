@@ -20,6 +20,8 @@ const RECIPE_ORDER: RecipeId[] = [
   "federal_motion_hearing",
   "federal_answer_after_service",
   "federal_response_after_mail_service",
+  "edcal_lr230c_opposition",
+  "edcal_lr230d_reply",
 ];
 
 const SERVICE_OPTIONS: { value: ServiceMethod; label: string }[] = [
@@ -91,8 +93,8 @@ export function DeadlineCalculatorTab() {
         <h1 className="tab-title">Deadline Math</h1>
         <p className="detail-copy detail-copy-secondary">
           Derive opposition, reply, answer, and service deadlines from the triggering event — not from
-          dates typed by hand. Counts follow CCP §§12 / 12a / 12c / 1005 and FRCP 6, against published
-          holiday calendars for the six courts in this portfolio.
+          dates typed by hand. Counts follow CCP §§12 / 12a / 12c / 1005, FRCP 6, and E.D. Cal. L.R.
+          230, against published holiday calendars for the six courts in this portfolio.
         </p>
       </header>
 

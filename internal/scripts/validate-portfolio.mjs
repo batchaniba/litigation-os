@@ -31,6 +31,7 @@ import { PROSE_HINTS, docketLogIssues, proseBudgetIssues } from "./prose-budget.
 import { loadRegistry, registryByPath } from "./lib/document-registry.mjs";
 import { pdfReadableProblem } from "./lib/pdfMagic.mjs";
 import { matterRefsInclude, parseMatterRefs } from "../src/utils/matterRefs.js";
+import { ACTORS } from "./lib/next-actions.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(__dirname, "..", "..");
@@ -398,6 +399,21 @@ for (const [i, t] of timeline.entries()) {
       fail(`${tag}: upcoming event date must use the format "Mon. D, YYYY"`);
     } else if (dateKey < today) {
       fail(`${tag}: past event is still marked upcoming (today is ${today} in ${DEADLINE_TIME_ZONE})`);
+    }
+    const src = typeof t.source === "string" ? t.source.trim() : "";
+    if (!src) {
+      fail(`${tag}: upcoming event must cite a "source" PDF`);
+    } else if (!src.startsWith("/documents/")) {
+      fail(`${tag}: source should start with "/documents/", got "${src}"`);
+    } else {
+      const onDisk = path.join(PUBLIC_ROOT, src);
+      if (!fs.existsSync(onDisk)) {
+        fail(`${tag}: source does not resolve to a real file: ${src}`);
+      }
+    }
+    const actor = typeof t.actor === "string" ? t.actor.toLowerCase() : "";
+    if (!ACTORS.includes(actor)) {
+      fail(`${tag}: upcoming event must pin actor as one of: ${ACTORS.join(", ")}`);
     }
   }
 }

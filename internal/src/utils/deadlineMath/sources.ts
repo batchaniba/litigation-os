@@ -135,6 +135,12 @@ export const SOURCES = {
     label: "USDC N.D. Cal. — Court Holidays",
     url: "https://cand.uscourts.gov/about/court/locations-hours/court-holidays",
   },
+  edcal230: {
+    id: "edcal230",
+    label: "E.D. Cal. L.R. 230",
+    url: "https://www.caed.uscourts.gov/caednew/index.cfm/rules/local-rules/",
+    note: "L.R. 230(c): opposition due 14 days after the motion is filed. L.R. 230(d): reply due 10 days after the opposition is filed. Last-day rolls follow FRCP 6(a).",
+  },
 } as const satisfies Record<string, RuleCitation>;
 
 export const COURT_HOLIDAY_SOURCES: Record<CourtKey, RuleCitation[]> = {

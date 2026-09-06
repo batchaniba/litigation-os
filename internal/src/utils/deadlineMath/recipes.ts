@@ -82,6 +82,18 @@ export const RECIPE_META: Record<
     anchorLabel: "Date of mail service",
     description: "Illustrates FRCP 6(d): after a 14-day response period expires under 6(a), add 3 days for mail.",
   },
+  edcal_lr230c_opposition: {
+    label: "E.D. Cal. L.R. 230(c) opposition",
+    forum: "federal",
+    anchorLabel: "Motion filing date",
+    description: "Opposition due 14 calendar days after the motion is filed, then FRCP 6(a) last-day roll.",
+  },
+  edcal_lr230d_reply: {
+    label: "E.D. Cal. L.R. 230(d) reply",
+    forum: "federal",
+    anchorLabel: "Opposition filing date",
+    description: "Reply due 10 calendar days after the opposition is filed, then FRCP 6(a) last-day roll.",
+  },
 };
 
 function cite(...ids: (keyof typeof SOURCES)[]): RuleCitation[] {
@@ -362,11 +374,60 @@ function computeDeadlines(input: ComputeInput, court: CourtKey): ComputedDeadlin
         }),
       ];
     }
+    case "edcal_lr230c_opposition":
+      return federalCalendarDeadline({
+        anchor,
+        days: 14,
+        court,
+        id: "edcal_opposition",
+        label: "Opposition (L.R. 230(c))",
+        citations: cite("edcal230", "frcp6"),
+        rule: `E.D. Cal. L.R. 230(c) requires opposition no later than 14 days after the motion is filed on ${formatPortfolioDate(anchor)}`,
+      });
+    case "edcal_lr230d_reply":
+      return federalCalendarDeadline({
+        anchor,
+        days: 10,
+        court,
+        id: "edcal_reply",
+        label: "Reply brief (L.R. 230(d))",
+        citations: cite("edcal230", "frcp6"),
+        rule: `E.D. Cal. L.R. 230(d) allows a reply no later than 10 days after the opposition is filed on ${formatPortfolioDate(anchor)}`,
+      });
     default: {
       const _exhaustive: never = input.recipe;
       throw new Error(`Unknown recipe: ${_exhaustive}`);
     }
   }
+}
+
+function federalCalendarDeadline(opts: {
+  anchor: DayKey;
+  days: number;
+  court: CourtKey;
+  id: string;
+  label: string;
+  citations: RuleCitation[];
+  rule: string;
+}): ComputedDeadline[] {
+  const raw = addCalendarDaysAfter(opts.anchor, opts.days);
+  const rolled = rollForwardToCourtDay(raw, opts.court);
+  return [
+    deadline({
+      id: opts.id,
+      label: opts.label,
+      date: rolled.date,
+      rawDate: raw,
+      rolled: rolled.rolled,
+      citations: opts.citations,
+      explanation: [
+        `${opts.rule}, computed under FRCP 6(a) (exclude the trigger day, count every intervening day) → ${formatPortfolioDate(raw)}.`,
+        rolled.rolled
+          ? `That day is a Saturday, Sunday, or legal holiday, so FRCP 6(a)(1)(C) continues the period to ${formatPortfolioDate(rolled.date)}.`
+          : "That day is a court day, so no FRCP 6(a) last-day extension applies.",
+      ].join(" "),
+    }),
+  ];
 }
 
 function defaultCourtForRecipe(recipe: RecipeId, court?: CourtKey): CourtKey {
@@ -396,6 +457,9 @@ function sourcesFor(recipe: RecipeId, court: CourtKey): RuleCitation[] {
         return cite("frcp12", "frcp6");
       case "federal_response_after_mail_service":
         return cite("frcp6");
+      case "edcal_lr230c_opposition":
+      case "edcal_lr230d_reply":
+        return cite("edcal230", "frcp6");
       default:
         return [];
     }

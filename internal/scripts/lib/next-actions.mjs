@@ -84,10 +84,12 @@ const AGENCY_PATTERNS = [
 
 const ACTIVE_LIFECYCLES = new Set(["active", "pre_filing"]);
 
-export const ACTORS = ["you", "opposing", "agency", "unknown"];
+export const ACTORS = ["you", "opposing", "agency", "court", "unknown"];
+const ACTOR_ALIASES = { plaintiff: "you" };
 
 export function inferActor(entry) {
-  const explicit = typeof entry?.actor === "string" ? entry.actor.toLowerCase() : null;
+  const raw = typeof entry?.actor === "string" ? entry.actor.toLowerCase() : null;
+  const explicit = raw && (ACTOR_ALIASES[raw] ?? raw);
   if (explicit && ACTORS.includes(explicit)) {
     return { actor: explicit, actorSource: "explicit" };
   }
@@ -148,6 +150,7 @@ const ACTOR_RANK = new Map([
   ["unknown", 1],
   ["opposing", 2],
   ["agency", 2],
+  ["court", 2],
 ]);
 
 /**
