@@ -839,6 +839,23 @@ const matter_damages_raw = [
         aggressive: 0
       }
     ]
+  },
+  {
+    number: 37,
+    claims: "Penal Code § 290.46(j) I&B — Tracy Home Depot hire / employment decision",
+    risk: "Review draft only. No offer, report, or notice is in the file. Valuation stays at $0 until the hire and the decision are documented and registry use is more than an inference.",
+    settlement_note: "No demand. Do not import UPS/Pilot statutory figures. Confirm the decision date before treating August 2027 as a real clock.",
+    conservative: 0,
+    moderate: 0,
+    aggressive: 0,
+    components: [
+      {
+        label: "Reserved — obtain hire records, employment-decision date, and Home Depot screening file before valuation",
+        conservative: 0,
+        moderate: 0,
+        aggressive: 0
+      }
+    ]
   }
 ];
 
