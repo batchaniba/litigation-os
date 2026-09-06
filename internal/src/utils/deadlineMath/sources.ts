@@ -141,6 +141,12 @@ export const SOURCES = {
     url: "https://www.caed.uscourts.gov/caednew/index.cfm/rules/local-rules/",
     note: "L.R. 230(c): opposition due 14 days after the motion is filed. L.R. 230(d): reply due 10 days after the opposition is filed. Last-day rolls follow FRCP 6(a).",
   },
+  ndcal7: {
+    id: "ndcal7",
+    label: "N.D. Cal. Civil L.R. 7-2 / 7-3",
+    url: "https://cand.uscourts.gov/rules-forms-fees/local-rules/civil-local-rules",
+    note: "L.R. 7-2(a): hearing not less than 35 days after the motion is filed. L.R. 7-3(a): opposition due 14 days after the motion is filed. L.R. 7-3(c): reply due 7 days after the opposition was due. FRCP 6(d) does not extend these filing-triggered clocks.",
+  },
 } as const satisfies Record<string, RuleCitation>;
 
 export const COURT_HOLIDAY_SOURCES: Record<CourtKey, RuleCitation[]> = {

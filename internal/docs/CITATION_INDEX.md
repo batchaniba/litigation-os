@@ -14,14 +14,14 @@ numbers, so a citation in a draft can be traced to a source page rather than tru
 
 | | |
 |---|---|
-| PDFs scanned | 850 |
-| Pages | 8,307 |
-| Readable | 842 |
+| PDFs scanned | 875 |
+| Pages | 8,482 |
+| Readable | 867 |
 | **No text layer (not searched)** | **8** |
 | Unreadable | 0 |
-| Citation scan skipped | 205 |
-| Distinct citations | 3,723 |
-| Total occurrences | 15,236 |
+| Citation scan skipped | 211 |
+| Distinct citations | 3,806 |
+| Total occurrences | 15,784 |
 
 A PDF with no text layer yields no citations. That is **not** the same as containing
 none — those documents are unsearched until OCR'd. Blank form-library templates,
@@ -33,15 +33,15 @@ boilerplate (and OCR noise) is not this litigant's authority.
 
 | Kind | Distinct |
 |---|---|
-| `case_name` | 1078 |
-| `authority` | 975 |
-| `case_reporter` | 807 |
-| `statute_state` | 257 |
-| `section_shorthand` | 167 |
-| `rule_local` | 120 |
-| `rule_federal` | 102 |
-| `statute_federal` | 83 |
-| `case_westlaw` | 57 |
+| `case_name` | 1091 |
+| `authority` | 987 |
+| `case_reporter` | 828 |
+| `statute_state` | 261 |
+| `section_shorthand` | 168 |
+| `rule_local` | 131 |
+| `rule_federal` | 118 |
+| `statute_federal` | 86 |
+| `case_westlaw` | 59 |
 | `rule_state` | 48 |
 | `regulation_state` | 12 |
 | `regulation_federal` | 10 |
@@ -59,33 +59,33 @@ folder-derived attribution reported zero for Matters 1, 2, 7 and 20.
 
 | Matter | Caption | Distinct citations |
 |---|---|---|
-| 12 | Brendan Ngwa Nforbi v. Diamond Truck Sales,  | 121 |
+| 12 | Brendan Ngwa Nforbi v. Diamond Truck Sales,  | 122 |
 | 19 | Newanforbi v. Macomber | 100 |
 | 20 | Newanforbi v. California Highway Patrol, et  | 293 |
-| 24 | Newanforbi v. Serrato | 327 |
+| 24 | Newanforbi v. Serrato | 328 |
 | 25 | Newanforbi v. Federal Express Corporation | 145 |
-| 26 | Newanforbi v. United Parcel Service, Inc. | 271 |
+| 26 | Newanforbi v. United Parcel Service, Inc. | 284 |
 | 27 | Newanforbi v. Randstad, et al. | 45 |
-| 28 | Newanforbi v. Shannon Smith, LCSW, CEO, et a | 220 |
+| 28 | Newanforbi v. Shannon Smith, LCSW, CEO, et a | 238 |
 | 29 | Newanforbi v. Amazon.com Services, LLC | 681 |
 | 30 | Newanforbi v. Moua, et al. | 100 |
 | 31 | Newanforbi v. First Advantage LLC | 0 |
-| 32 | Nforbi v. Meza-Gonzalez, et al | 875 |
-| 33 | Nforbi v. Candelaria et al. | 485 |
+| 32 | Nforbi v. Meza-Gonzalez, et al | 879 |
+| 33 | Nforbi v. Candelaria et al. | 548 |
 | 34 | Newanforbi v. Counseling and Psychotherapy C | 0 |
 | 35 | Ngwa Nforbi v. Ross Stores, Inc., et al. | 16 |
 | 36 | Brendan Ngehsi Newanforbi v. AT&T Mobility S | 14 |
 
 ## Highest-exposure citations
 
-754 of 975 paired authorities do not appear in the July audit. Of those,
-**231 are asserted only in Plaintiff's own filings**, with no court order or
+762 of 987 paired authorities do not appear in the July audit. Of those,
+**211 are asserted only in Plaintiff's own filings**, with no court order or
 opposing brief in the corpus citing them back. Unverified *and* uncorroborated is where a
 fabricated or miscited authority survives undetected — the queue worth working first.
 
 | Uses | Authority | Matters |
 |---|---|---|
-| 49 | Mercer v. DMV, 53 Cal. 3d 753 (1991) | 1, 2, 7, 8, 32, 33 |
+| 50 | Mercer v. DMV, 53 Cal. 3d 753 (1991) | 1, 2, 7, 8, 32, 33 |
 | 16 | Franks v. Delaware, 438 U.S. 154 (1978) | 32 |
 | 15 | In re Murchison, 349 U.S. 133 (1955) | 33 |
 | 14 | Costanich v. Dep't of Social, 627 F. 3d 1101 | 32 |
@@ -103,17 +103,18 @@ fabricated or miscited authority survives undetected — the queue worth working
 | 8 | Sialoi v. City of San Diego, 823 F. 3d 1223 | 32 |
 | 8 | United States v. Lopez, 482 F. 3d 1067 | 32 |
 | 8 | United States v. Ngumezi, 980 F. 3d 1285 | 32 |
+| 7 | Armondo v. Dep't of Motor Vehicles, 15 Cal.App. 4th 1174 (1993) | 33 |
 | 7 | Galbraith v. County of, 307 F. 3d 1119 | 32 |
 | 7 | In re Hudson, 1 Cal.App. 4th 1 (2006) | 5, 15, 19 |
 | 7 | In re Muszalski, 52 Cal.App. 3d 500 (1975) | 5, 15, 19 |
 | 7 | S v. JSS Scandinavia, 142 F. 3d 1150 | 25, 26 |
 | 7 | See Tameny v. Atlantic Richfield Co, 27 Cal. 3d 167 (1980) | 25, 26, 27 |
-| 6 | Armondo v. Dep't of Motor Vehicles, 15 Cal.App. 4th 1174 (1993) | 33 |
 | 6 | Bd. of Educ. v. Loudermill, 470 U.S. 532 (1985) | 33 |
 | 6 | Carey v. Piphus, 435 U.S. 247 (1978) | 33 |
 | 6 | Collins v. Virginia, 584 U.S. 586 (2018) | 32 |
 | 6 | Home v. Dep't of Health Care Services, 204 Cal.App. 4th 676 (2012) | 9 |
 | 6 | Illinois v. Caballes, 543 U.S. 405 (2005) | 32 |
+| 6 | Rio Properties, Inc. v. Rio Int'l Interlink, 284 F. 3d 1007 | 32 |
 | 6 | See Fermino v. Fedco, Inc, 7 Cal. 4th 701 (1994) | 35 |
 | 5 | Bd. of Educ. v. Doyle, 429 U.S. 274 (1977) | 24, 30 |
 | 5 | Behan v. Alexis, 116 Cal.App. 3d 403 (1981) | 33 |
@@ -124,9 +125,8 @@ fabricated or miscited authority survives undetected — the queue worth working
 | 4 | Bureerong v. Uvawas, 922 F. Supp. 1450 | 24 |
 | 4 | Burrell v. Jackson, 2003 WL 23545858 | 7, 32, 33 |
 | 4 | Capp v. Cnty. of San Diego, 940 F. 3d 1046 | 24 |
-| 4 | Cedars-Sinai Medical Center v. Superior Court, 18 Cal. 4th 1 (1998) | 22, 25, 26 |
 
-_231 total; full list in the JSON._
+_211 total; full list in the JSON._
 
 ## Known-bad citations from the July audit — current locations
 

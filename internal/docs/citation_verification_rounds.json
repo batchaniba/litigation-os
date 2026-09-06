@@ -1,6 +1,6 @@
 {
-  "round": "2026-08-09 Round 4 \u2014 portfolio P0 (batches A\u2013D; LACW WL correction); Round 5 multisource (CourtListener + CAP); Round 5b Matter 28 full funnel; Round 6 spot-check of the Matter 33 conformed complaint (3:26-cv-08272-LJC, Dkt. 1) page-43 immunity sentence; Round 7 authorities cited in the Serrato IFP screening order (Matter 24, Dkt. 5) after OCR made that scan searchable; Round 8 \u2014 OCR tranche (16 plaintiff filings + court orders: Matters 5/12/15/25/26/33, Barocio opinion); Round 9 \u2014 Matter 24 Serrato Opp v4 final citation/quotation verification pass (2026-08-27); Round 10 \u2014 Matter 26 hybrid UPS MTD opposition (Claude structure + Cursor caution), 2026-08-28",
-  "method": "Round 4: WebSearch after Richardson(+) / Leman(\u2212) controls. Round 5: CourtListener /api/rest/v4/search/ + CAP static.case.law for controls/high-risk. Round 5b: all Matter 28 indexed authorities through lookup-citations.py --matter 28 (\u2192 citation_lookup_matter28.json). Justia Cloudflare-blocked; Scholar unreliable; api.case.law JSON and CL citation-lookup need auth. Existence FOUND does not clear prior MISCHARACTERIZED/MISCITED proposition problems. Table-page F.3d pins can host multiple dispositions \u2014 do not treat first CL hit as unique. Round 7: the June 29, 2026 Serrato IFP/screening order was an image-only scan contributing nothing to the index until internal/scripts/ocr-text-layer.py added a text layer; its authorities were then probed through lookup-citations.py (\u2192 citation_lookup_serrato_order.json) behind the same Richardson(+) / Leman(\u2212) controls. These are a court's own citations, so they carry role court_order and never enter the plaintiff-only P0/P1 queues. Round 8: after ocr-text-layer.py on the 16-document plaintiff_filing/court_order tranche, probed new P0 Matter 12/15 authorities (citation_lookup_matter12_p0.json) and Barocio screening-order authorities (citation_lookup_barocio_order.json). McCorkle manually confirmed on CourtListener when CAP lacked cal2d/70. Round 9: Matter 24 Opposition v4 \u2014 npm citations:index + citations:lookup:matter --matter 24 (\u2192 citation_lookup_matter24.json); quote needles checked against CAP static.case.law HTML (Whittlestone/Lopez/Noll/Perry/Twombly/Iqbal/Wade/Knievel/Erickson/Ford) and CA9 PDF (Capp); fixed Garity miscitation, Whittlestone non-opinion paraphrase, Perry/Twombly wording, and removed unused Lewis/Shanks TOA entries; Bureerong manually FOUND on CL+CAP. Round 10: Matter 26 hybrid opposition \u2014 npm citations:index + citations:lookup:matter --matter 26 (\u2192 citation_lookup_matter26.json); Cal. App. 5th pins for Williams (40 Cal. App. 5th 280) and Quinn (121 Cal. App. 5th 1124) confirmed by direct CourtListener search when the reporter probe missed (CAP static lacks those volumes). Mendoza quotes checked against the published opinion (anti-SLAPP; 1658-59). Cel-Tech 183 quote is UPS's own.",
+  "round": "2026-08-09 Round 4 \u2014 portfolio P0 (batches A\u2013D; LACW WL correction); Round 5 multisource (CourtListener + CAP); Round 5b Matter 28 full funnel; Round 6 spot-check of the Matter 33 conformed complaint (3:26-cv-08272-LJC, Dkt. 1) page-43 immunity sentence; Round 7 authorities cited in the Serrato IFP screening order (Matter 24, Dkt. 5) after OCR made that scan searchable; Round 8 \u2014 OCR tranche (16 plaintiff filings + court orders: Matters 5/12/15/25/26/33, Barocio opinion); Round 9 \u2014 Matter 24 Serrato Opp v4 final citation/quotation verification pass (2026-08-27); Round 10 \u2014 Matter 26 hybrid UPS MTD opposition (Claude structure + Cursor caution), 2026-08-28; Round 11 \u2014 P0 plaintiff-only queue after OCR-alias index rebuild (Matters 25/26/32/33 plus remaining portfolio P0), 2026-09-06",
+  "method": "Round 4: WebSearch after Richardson(+) / Leman(\u2212) controls. Round 5: CourtListener /api/rest/v4/search/ + CAP static.case.law for controls/high-risk. Round 5b: all Matter 28 indexed authorities through lookup-citations.py --matter 28 (\u2192 citation_lookup_matter28.json). Justia Cloudflare-blocked; Scholar unreliable; api.case.law JSON and CL citation-lookup need auth. Existence FOUND does not clear prior MISCHARACTERIZED/MISCITED proposition problems. Table-page F.3d pins can host multiple dispositions \u2014 do not treat first CL hit as unique. Round 7: the June 29, 2026 Serrato IFP/screening order was an image-only scan contributing nothing to the index until internal/scripts/ocr-text-layer.py added a text layer; its authorities were then probed through lookup-citations.py (\u2192 citation_lookup_serrato_order.json) behind the same Richardson(+) / Leman(\u2212) controls. These are a court's own citations, so they carry role court_order and never enter the plaintiff-only P0/P1 queues. Round 8: after ocr-text-layer.py on the 16-document plaintiff_filing/court_order tranche, probed new P0 Matter 12/15 authorities (citation_lookup_matter12_p0.json) and Barocio screening-order authorities (citation_lookup_barocio_order.json). McCorkle manually confirmed on CourtListener when CAP lacked cal2d/70. Round 9: Matter 24 Opposition v4 \u2014 npm citations:index + citations:lookup:matter --matter 24 (\u2192 citation_lookup_matter24.json); quote needles checked against CAP static.case.law HTML (Whittlestone/Lopez/Noll/Perry/Twombly/Iqbal/Wade/Knievel/Erickson/Ford) and CA9 PDF (Capp); fixed Garity miscitation, Whittlestone non-opinion paraphrase, Perry/Twombly wording, and removed unused Lewis/Shanks TOA entries; Bureerong manually FOUND on CL+CAP. Round 10: Matter 26 hybrid opposition \u2014 npm citations:index + citations:lookup:matter --matter 26 (\u2192 citation_lookup_matter26.json); Cal. App. 5th pins for Williams (40 Cal. App. 5th 280) and Quinn (121 Cal. App. 5th 1124) confirmed by direct CourtListener search when the reporter probe missed (CAP static lacks those volumes). Mendoza quotes checked against the published opinion (anti-SLAPP; 1658-59). Cel-Tech 183 quote is UPS's own. Round 11: build-citation-index.py OCR_PAGE_FIXES (Califomia/DUl/MedinOy/TorreSy/Knudsen/Devenpeck 3 U.S.\u2192543 U.S. etc.) dropped P0 70\u219254; lookup-citations.py \u2192 citation_lookup_p0.json (FOUND 28, CAPTION_MISMATCH 14, PARTIAL 3, NOT_FOUND 7, UNKNOWN 2); overlay-citation-lookups.py folded FOUND + same-case OCR mismatches + Gonzalez/Hertz PARTIAL into VERIFIED (existence only) and marked both Devenpeck mispins MISCITED (real case is 543 U.S. 146). NOT_FOUND/UNKNOWN left UNVERIFIED (a miss is not a fabrication). Controls were not re-probed this pass.",
   "controls": {
     "positive": {
       "citation": "Richardson v. McKnight, 521 U.S. 399 (1997)",
@@ -24,19 +24,22 @@
       "citation": "Lazar v. Superior Court, 12 Cal. 4th 631 (1996)",
       "status": "VERIFIED",
       "source": "Round 11 CourtListener + CAP opinion review",
-      "notes": "Real at 12 Cal.4th 631. California Supreme Court permits fraudulent-inducement tort damages for reliance injuries distinct from contract expectancy in the employment context. Sources: https://www.courtlistener.com/opinion/1250721/lazar-v-superior-court/ and https://static.case.law/cal-4th/12/html/0631-01.html."
+      "notes": "Real at 12 Cal.4th 631. California Supreme Court permits fraudulent-inducement tort damages for reliance injuries distinct from contract expectancy in the employment context. Sources: https://www.courtlistener.com/opinion/1250721/lazar-v-superior-court/ and https://static.case.law/cal-4th/12/html/0631-01.html.",
+      "round": "11-p0-ocr-alias"
     },
     {
       "citation": "Sheppard v. Morgan Keegan, 218 Cal.App. 3d 61 (1990)",
       "status": "VERIFIED",
       "source": "Round 11 CourtListener + CAP opinion review",
-      "notes": "Real as Sheppard v. Morgan Keegan & Co. at 218 Cal.App.3d 61. Supports promissory-estoppel and implied-covenant recovery for proven detrimental reliance on an accepted at-will employment offer. Sources: https://www.courtlistener.com/opinion/2171353/sheppard-v-morgan-keegan-co/ and https://static.case.law/cal-app-3d/218/html/0061-01.html."
+      "notes": "Real as Sheppard v. Morgan Keegan & Co. at 218 Cal.App.3d 61. Supports promissory-estoppel and implied-covenant recovery for proven detrimental reliance on an accepted at-will employment offer. Sources: https://www.courtlistener.com/opinion/2171353/sheppard-v-morgan-keegan-co/ and https://static.case.law/cal-app-3d/218/html/0061-01.html.",
+      "round": "11-p0-ocr-alias"
     },
     {
       "citation": "Toscano v. Greene Music, 124 Cal.App. 4th 685 (2004)",
       "status": "VERIFIED",
       "source": "Round 11 CourtListener + CAP opinion review",
-      "notes": "Real at 124 Cal.App.4th 685. Holds that reliance damages from relinquished at-will employment may be recoverable if not speculative or remote and supported by substantial evidence. Sources: https://www.courtlistener.com/opinion/2274753/toscano-v-greene-music/ and https://static.case.law/cal-app-4th/124/html/0685-01.html."
+      "notes": "Real at 124 Cal.App.4th 685. Holds that reliance damages from relinquished at-will employment may be recoverable if not speculative or remote and supported by substantial evidence. Sources: https://www.courtlistener.com/opinion/2274753/toscano-v-greene-music/ and https://static.case.law/cal-app-4th/124/html/0685-01.html.",
+      "round": "11-p0-ocr-alias"
     },
     {
       "citation": "Baker v. Bzydra, 2019 WL 6619348",
@@ -2674,6 +2677,328 @@
       ],
       "matter": 26,
       "round": "10-matter26-hybrid-opp"
+    },
+    {
+      "citation": "Gonzalez v. Trevino, 602 U.S. 653 (2024)",
+      "status": "VERIFIED",
+      "source": "Round 11 single-source lookup (CourtListener or CAP)",
+      "notes": "Existence only. Pin 602 U.S. 653 is Gonzalez v. Trevino. Sources: https://www.courtlistener.com/opinion/10600071/gonzalez-v-trevino/. Characterization still needs opinion text.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "Sialoi v. City of San Diego, 823 F. 3d 1223",
+      "status": "VERIFIED",
+      "source": "Round 11 CourtListener + CAP lookup",
+      "notes": "Existence only. Pin 823 F.3d 1223 is Sialoi v. City of San Diego. Sources: https://www.courtlistener.com/opinion/3206359/edward-sialoi-v-city-of-san-diego/ ; https://static.case.law/f3d/823/html/1223-01.html. Characterization still needs opinion text.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "United States v. Lopez, 482 F. 3d 1067",
+      "status": "VERIFIED",
+      "source": "Round 11 CourtListener + CAP lookup",
+      "notes": "Existence only. Pin 482 F.3d 1067 is United States v. Lopez. Sources: https://www.courtlistener.com/opinion/797423/united-states-v-hosvaldo-lopez/ ; https://static.case.law/f3d/482/html/1067-01.html. Characterization still needs opinion text.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "United States v. Ngumezi, 980 F. 3d 1285",
+      "status": "VERIFIED",
+      "source": "Round 11 pin resolves; official caption differs from index string",
+      "notes": "Existence only. Pin 980 F.3d 1285 is United States v. Malik Ngumezi. Index string is truncated or OCR-variant; official caption is United States v. Malik Ngumezi. Sources: https://www.courtlistener.com/opinion/4808091/united-states-v-malik-ngumezi/. Characterization still needs opinion text.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "Galbraith v. County of, 307 F. 3d 1119",
+      "status": "VERIFIED",
+      "source": "Round 11 pin resolves; official caption differs from index string",
+      "notes": "Existence only. Pin 307 F.3d 1119 is Galbraith v. County of Santa Clara. Index string is truncated or OCR-variant; official caption is Galbraith v. County of Santa Clara. Sources: https://www.courtlistener.com/opinion/7108812/galbraith-v-county-of-santa-clara/ ; https://static.case.law/f3d/307/html/1119-01.html. Characterization still needs opinion text.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "S v. JSS Scandinavia, 142 F. 3d 1150",
+      "status": "VERIFIED",
+      "source": "Round 11 pin resolves; official caption differs from index string",
+      "notes": "Existence only. Pin 142 F.3d 1150 is 98 Cal. Daily Op. Serv. 3108, 98 Daily Journal D.A.R. 4313 Galt G/s v. Jss Scandinavia, Defendant/cross-Defendant/appellee, D & D Services, Defendant/cross-Defendant/ Cross-Claimant/appellee, Crystal Ice & Cold Storage Co., Defendant/cross-Claim Third-Party v. Safeway Stores Inc., Third-Party Defendant/ Cross-Claimant v. Buyers Refrigerated Truck Service of Sacramento, Cross-Defendant/appellee, Can Transport, Inc., Defendant/cross-Defendant Third-Party North America Services, Defendant/cross-Defendant Third-Party A.G. Hapag-Lloyd, Defendant/cross-Defendant Third-Party. Index string is truncated or OCR-variant; official caption is 98 Cal. Daily Op. Serv. 3108, 98 Daily Journal D.A.R. 4313 Galt G/s v. Jss Scandinavia, Defendant/cross-Defendant/appellee, D & D Services, Defendant/cross-Defendant/ Cross-Claimant/appellee, Crystal Ice & Cold Storage Co., Defendant/cross-Claim Third-Party v. Safeway Stores Inc., Third-Party Defendant/ Cross-Claimant v. Buyers Refrigerated Truck Service of Sacramento, Cross-Defendant/appellee, Can Transport, Inc., Defendant/cross-Defendant Third-Party North America Services, Defendant/cross-Defendant Third-Party A.G. Hapag-Lloyd, Defendant/cross-Defendant Third-Party. Sources: https://www.courtlistener.com/opinion/754107/98-cal-daily-op-serv-3108-98-daily-journal-dar-4313-galt-gs-v-jss/ ; https://static.case.law/f3d/142/html/1150-01.html. Characterization still needs opinion text.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "Mullane v. Central Hanover Bank, 339 U.S. 306 (1950)",
+      "status": "VERIFIED",
+      "source": "Round 11 CourtListener + CAP lookup",
+      "notes": "Existence only. Pin 339 U.S. 306 is Mullane v. Central Hanover Bank & Trust Co.. Sources: https://www.courtlistener.com/opinion/104786/mullane-v-central-hanover-bank-trust-co/ ; https://static.case.law/us/339/html/0306-01.html. Characterization still needs opinion text.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "See Fermino v. Fedco, Inc, 7 Cal. 4th 701 (1994)",
+      "status": "VERIFIED",
+      "source": "Round 11 CourtListener + CAP lookup",
+      "notes": "Existence only. Pin 7 Cal. 4th 701 is Fermino v. Fedco, Inc.. Sources: https://www.courtlistener.com/opinion/1189781/fermino-v-fedco-inc/ ; https://static.case.law/cal-4th/7/html/0701-01.html. Characterization still needs opinion text.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "Behan v. Alexis, 116 Cal.App. 3d 403 (1981)",
+      "status": "VERIFIED",
+      "source": "Round 11 CourtListener + CAP lookup",
+      "notes": "Existence only. Pin 116 Cal. App. 3d 403 is Behan v. Alexis. Sources: https://www.courtlistener.com/opinion/2149760/behan-v-alexis/ ; https://static.case.law/cal-app-3d/116/html/0403-01.html. Characterization still needs opinion text.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "Devenpeck v. Alford, 543 U.S. 11 (2004)",
+      "status": "MISCITED",
+      "source": "Round 11 CAP volume check",
+      "notes": "Devenpeck v. Alford is 543 U.S. 146 (2004). This string points at a page that is not in that volume (543 U.S. 11) or at an impossible early U.S. Reports volume (3 U.S. 146). Do not brief this pin.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "Cedars-Sinai Medical Center v. Superior Court, 18 Cal. 4th 1 (1998)",
+      "status": "VERIFIED",
+      "source": "Round 11 CourtListener + CAP lookup",
+      "notes": "Existence only. Pin 18 Cal. 4th 1 is Cedars-Sinai Medical Center v. Superior Court. Sources: https://www.courtlistener.com/opinion/1225987/cedars-sinai-medical-center-v-superior-court/ ; https://static.case.law/cal-4th/18/html/0001-01.html. Characterization still needs opinion text.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "Kanter v. Warner-Lambert Co, 265 F. 3d 853",
+      "status": "VERIFIED",
+      "source": "Round 11 CourtListener + CAP lookup",
+      "notes": "Existence only. Pin 265 F.3d 853 is Kanter v. Warner-Lambert Co.. Sources: https://www.courtlistener.com/opinion/774946/susan-kanter-sharon-plunk-v-warner-lambert-co-and-pfizer-inc/ ; https://static.case.law/f3d/265/html/0853-01.html. Characterization still needs opinion text.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "Kenneth Rothschild Trust v. Morgan Stanley Dean Witter, 199 F.Supp. 2d 993",
+      "status": "VERIFIED",
+      "source": "Round 11 CourtListener + CAP lookup",
+      "notes": "Existence only. Pin 199 F. Supp. 2d 993 is Kenneth Rothschild Trust v. Morgan Stanley Dean Witter. Sources: https://www.courtlistener.com/opinion/2414630/kenneth-rothschild-trust-v-morgan-stanley-dean-witter/ ; https://static.case.law/f-supp-2d/199/html/0993-01.html. Characterization still needs opinion text.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "See Lew v. Moss, 797 F. 2d 747",
+      "status": "VERIFIED",
+      "source": "Round 11 CourtListener + CAP lookup",
+      "notes": "Existence only. Pin 797 F.2d 747 is Lew v. Moss. Sources: https://www.courtlistener.com/opinion/474309/solomon-lew-v-stanton-moss-and-harlean-moss/ ; https://static.case.law/f2d/797/html/0747-01.html. Characterization still needs opinion text.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "Chavez v. JP Morgan Chase, 888 F. 3d 413",
+      "status": "VERIFIED",
+      "source": "Round 11 pin resolves; official caption differs from index string",
+      "notes": "Existence only. Pin 888 F.3d 413 is Elsa Chavez v. Jpmorgan Chase Bank. Index string is truncated or OCR-variant; official caption is Elsa Chavez v. Jpmorgan Chase Bank. Sources: https://www.courtlistener.com/opinion/4488884/elsa-chavez-v-jpmorgan-chase-bank/ ; https://static.case.law/f3d/888/html/0413-01.html. Characterization still needs opinion text.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "Fritsch v. Swift Transportation Company, 899 F. 3d 785",
+      "status": "VERIFIED",
+      "source": "Round 11 pin resolves; official caption differs from index string",
+      "notes": "Existence only. Pin 899 F.3d 785 is Grant Fritsch v. Swift Transportation Co. of Az. Index string is truncated or OCR-variant; official caption is Grant Fritsch v. Swift Transportation Co. of Az. Sources: https://www.courtlistener.com/opinion/4524668/grant-fritsch-v-swift-transportation-co-of-az/ ; https://static.case.law/f3d/899/html/0785-01.html. Characterization still needs opinion text.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "Gonzales v. CarMax Auto Superstores, LLC, 840 F. 3d 644",
+      "status": "VERIFIED",
+      "source": "Round 11 CourtListener + CAP lookup",
+      "notes": "Existence only. Pin 840 F.3d 644 is Gonzales v. CarMax Auto Superstores, LLC. Sources: https://www.courtlistener.com/opinion/4314077/travis-gonzales-v-carmax-auto-superstores-llc/ ; https://static.case.law/f3d/840/html/0644-01.html. Characterization still needs opinion text.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "In Hertz Corp. v. Friend, 130 S. Ct. 1181 (2010)",
+      "status": "VERIFIED",
+      "source": "Round 11 single-source lookup (CourtListener or CAP)",
+      "notes": "Existence only. Pin 130 S. Ct. 1181 is Hertz Corp. v. Friend. Sources: https://www.courtlistener.com/opinion/1735/hertz-corp-v-friend/. Characterization still needs opinion text.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "Owens v. Huntling, 115 F. 2d 160",
+      "status": "VERIFIED",
+      "source": "Round 11 CourtListener + CAP lookup",
+      "notes": "Existence only. Pin 115 F.2d 160 is Owens v. Huntling. Sources: https://www.courtlistener.com/opinion/6983485/owens-v-huntling/ ; https://static.case.law/f2d/115/html/0160-01.html. Characterization still needs opinion text.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "See Soliman v. Philip Morris Inc, 311 F. 3d 966",
+      "status": "VERIFIED",
+      "source": "Round 11 CourtListener + CAP lookup",
+      "notes": "Existence only. Pin 311 F.3d 966 is Soliman v. Philip Morris Inc.. Sources: https://www.courtlistener.com/opinion/7109496/soliman-v-philip-morris-inc/ ; https://static.case.law/f3d/311/html/0966-01.html. Characterization still needs opinion text.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "Urbino v. Orkins Servs. Of Cal., Inc, 726 F. 3d 1118",
+      "status": "VERIFIED",
+      "source": "Round 11 pin resolves; official caption differs from index string",
+      "notes": "Existence only. Pin 726 F.3d 1118 is Urbino v. Orkin Servs. of California, Inc.. Index string is truncated or OCR-variant; official caption is Urbino v. Orkin Servs. of California, Inc.. Sources: https://www.courtlistener.com/opinion/8441424/urbino-v-orkin-servs-of-california-inc/ ; https://static.case.law/f3d/726/html/1118-01.html. Characterization still needs opinion text.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "Burns v. Windsor Ins. Co, 31 F. 3d 1092",
+      "status": "VERIFIED",
+      "source": "Round 11 pin resolves; official caption differs from index string",
+      "notes": "Existence only. Pin 31 F.3d 1092 is Jacqueline Burns v. Windsor Insurance Co.. Index string is truncated or OCR-variant; official caption is Jacqueline Burns v. Windsor Insurance Co.. Sources: https://www.courtlistener.com/opinion/675856/jacqueline-burns-v-windsor-insurance-co/ ; https://static.case.law/f3d/31/html/1092-01.html. Characterization still needs opinion text.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "Devenpeck v. Alford, 3 U.S. 146 (2004)",
+      "status": "MISCITED",
+      "source": "Round 11 CAP volume check",
+      "notes": "Devenpeck v. Alford is 543 U.S. 146 (2004). This string points at a page that is not in that volume (543 U.S. 11) or at an impossible early U.S. Reports volume (3 U.S. 146). Do not brief this pin.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "Mullane v. Central, 339 U.S. 306 (1950)",
+      "status": "VERIFIED",
+      "source": "Round 11 pin resolves; official caption differs from index string",
+      "notes": "Existence only. Pin 339 U.S. 306 is Mullane v. Central Hanover Bank & Trust Co.. Index string is truncated or OCR-variant; official caption is Mullane v. Central Hanover Bank & Trust Co.. Sources: https://www.courtlistener.com/opinion/104786/mullane-v-central-hanover-bank-trust-co/ ; https://static.case.law/us/339/html/0306-01.html. Characterization still needs opinion text.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "Properties, Inc. v. Rio Int'llnterlink, 284 F. 3d 1007",
+      "status": "VERIFIED",
+      "source": "Round 11 pin resolves; official caption differs from index string",
+      "notes": "Existence only. Pin 284 F.3d 1007 is Rio Properties, Inc. v. Rio International Interlink, Rio Properties, Inc. v. Rio International Interlink. Index string is truncated or OCR-variant; official caption is Rio Properties, Inc. v. Rio International Interlink, Rio Properties, Inc. v. Rio International Interlink. Sources: https://www.courtlistener.com/opinion/777052/rio-properties-inc-v-rio-international-interlink-rio-properties-inc/ ; https://static.case.law/f3d/284/html/1007-01.html. Characterization still needs opinion text.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "Rio Propeiiies, Inc. v. Rio Int'l Interlink, 284 F. 3d 1007",
+      "status": "VERIFIED",
+      "source": "Round 11 CourtListener + CAP lookup",
+      "notes": "Existence only. Pin 284 F.3d 1007 is Rio Properties, Inc. v. Rio International Interlink, Rio Properties, Inc. v. Rio International Interlink. Sources: https://www.courtlistener.com/opinion/777052/rio-properties-inc-v-rio-international-interlink-rio-properties-inc/ ; https://static.case.law/f3d/284/html/1007-01.html. Characterization still needs opinion text.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "Rio Properties, Inc. v. Rio Int'l Interlink, 284 F. 3d 1007",
+      "status": "VERIFIED",
+      "source": "Round 11 CourtListener + CAP lookup",
+      "notes": "Existence only. Pin 284 F.3d 1007 is Rio Properties, Inc. v. Rio International Interlink, Rio Properties, Inc. v. Rio International Interlink. Sources: https://www.courtlistener.com/opinion/777052/rio-properties-inc-v-rio-international-interlink-rio-properties-inc/ ; https://static.case.law/f3d/284/html/1007-01.html. Characterization still needs opinion text.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "See Camara v. Municipal, 387 U.S. 523 (1967)",
+      "status": "VERIFIED",
+      "source": "Round 11 pin resolves; official caption differs from index string",
+      "notes": "Existence only. Pin 387 U.S. 523 is Camara v. Municipal Court of City and County of San Francisco. Index string is truncated or OCR-variant; official caption is Camara v. Municipal Court of City and County of San Francisco. Sources: https://www.courtlistener.com/opinion/107473/camara-v-municipal-court-of-city-and-county-of-san-francisco/ ; https://static.case.law/us/387/html/0523-01.html. Characterization still needs opinion text.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "Angus v. Shiley, Inc, 989 F. 2d 142",
+      "status": "VERIFIED",
+      "source": "Round 11 CourtListener + CAP lookup",
+      "notes": "Existence only. Pin 989 F.2d 142 is Angus v. Shiley Inc.. Sources: https://www.courtlistener.com/opinion/602855/helen-w-angus-appellant-v-shiley-inc/ ; https://static.case.law/f2d/989/html/0142-01.html. Characterization still needs opinion text.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "Arias v. Residence Inn, 936 F. 3d 920",
+      "status": "VERIFIED",
+      "source": "Round 11 pin resolves; official caption differs from index string",
+      "notes": "Existence only. Pin 936 F.3d 920 is Blanca Argelia Arias v. Residence Inn by Marriott. Index string is truncated or OCR-variant; official caption is Blanca Argelia Arias v. Residence Inn by Marriott. Sources: https://www.courtlistener.com/opinion/4658290/blanca-argelia-arias-v-residence-inn-by-marriott/. Characterization still needs opinion text.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "Armondo v. Department of Motor Vehicles, 15 Cal.App. 4th 1174 (1993)",
+      "status": "VERIFIED",
+      "source": "Round 11 CourtListener + CAP lookup",
+      "notes": "Existence only. Pin 15 Cal. App. 4th 1174 is Armondo v. Department of Motor Vehicles. Sources: https://www.courtlistener.com/opinion/2289906/armondo-v-department-of-motor-vehicles/ ; https://static.case.law/cal-app-4th/15/html/1174-01.html. Characterization still needs opinion text.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "Chavez v. JPMorgan Chase, 888 F. 3d 413",
+      "status": "VERIFIED",
+      "source": "Round 11 CourtListener + CAP lookup",
+      "notes": "Existence only. Pin 888 F.3d 413 is Chavez v. JPMorgan Chase & Co.. Sources: https://www.courtlistener.com/opinion/4488884/elsa-chavez-v-jpmorgan-chase-bank/ ; https://static.case.law/f3d/888/html/0413-01.html. Characterization still needs opinion text.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "Fritsch v. Swift Transp. Co, 899 F. 3d 785",
+      "status": "VERIFIED",
+      "source": "Round 11 CourtListener + CAP lookup",
+      "notes": "Existence only. Pin 899 F.3d 785 is Fritsch v. Swift Transp. Co. of Ariz., LLC. Sources: https://www.courtlistener.com/opinion/4524668/grant-fritsch-v-swift-transportation-co-of-az/ ; https://static.case.law/f3d/899/html/0785-01.html. Characterization still needs opinion text.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "Gibson v. Chrysler Corp, 261 F. 3d 927",
+      "status": "VERIFIED",
+      "source": "Round 11 CourtListener + CAP lookup",
+      "notes": "Existence only. Pin 261 F.3d 927 is Gibson v. Chrysler Corp.. Sources: https://www.courtlistener.com/opinion/7098107/gibson-v-chrysler-corp/ ; https://static.case.law/f3d/261/html/0927-01.html. Characterization still needs opinion text.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "Goldberg v. CPC Int\u2019l, Inc, 678 F. 2d 1365",
+      "status": "VERIFIED",
+      "source": "Round 11 pin resolves; official caption differs from index string",
+      "notes": "Existence only. Pin 678 F.2d 1365 is Goldberg v. CPC International, Inc.. Index string is truncated or OCR-variant; official caption is Goldberg v. CPC International, Inc.. Sources: https://www.courtlistener.com/opinion/8925638/goldberg-v-cpc-international-inc/ ; https://static.case.law/f2d/678/html/1365-01.html. Characterization still needs opinion text.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "Guglielmino v. McKee Foods Corp, 506 F. 3d 696",
+      "status": "VERIFIED",
+      "source": "Round 11 CourtListener + CAP lookup",
+      "notes": "Existence only. Pin 506 F.3d 696 is Guglielmino v. McKee Foods Corp.. Sources: https://www.courtlistener.com/opinion/1291359/guglielmino-v-mckee-foods-corp/ ; https://static.case.law/f3d/506/html/0696-01.html. Characterization still needs opinion text.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "Hertz Corp. v. Friend, 559 U.S. 77 (2010)",
+      "status": "VERIFIED",
+      "source": "Round 11 CourtListener + CAP lookup",
+      "notes": "Existence only. Pin 559 U.S. 77 is Hertz Corp. v. Friend. Sources: https://www.courtlistener.com/opinion/1735/hertz-corp-v-friend/ ; https://static.case.law/us/559/html/0077-01.html. Characterization still needs opinion text.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "Kantor v. Wellesley Galleries, Ltd, 704 F. 2d 1088",
+      "status": "VERIFIED",
+      "source": "Round 11 CourtListener + CAP lookup",
+      "notes": "Existence only. Pin 704 F.2d 1088 is Kantor v. Wellesley Galleries, Ltd.. Sources: https://www.courtlistener.com/opinion/8926931/kantor-v-wellesley-galleries-ltd/ ; https://static.case.law/f2d/704/html/1088-01.html. Characterization still needs opinion text.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "Lewis v. Verizon Commc\u2019ns, Inc, 627 F. 3d 395",
+      "status": "VERIFIED",
+      "source": "Round 11 pin resolves; official caption differs from index string",
+      "notes": "Existence only. Pin 627 F.3d 395 is Delores Lewis v. Verizon Communications, Inc.. Index string is truncated or OCR-variant; official caption is Delores Lewis v. Verizon Communications, Inc.. Sources: https://www.courtlistener.com/opinion/179462/delores-lewis-v-verizon-communications-inc/ ; https://static.case.law/f3d/627/html/0395-01.html. Characterization still needs opinion text.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "Notice of Removal. Savelson v. W. States Bankcard Ass\u2019n, 731 F. 2d 1423",
+      "status": "VERIFIED",
+      "source": "Round 11 pin resolves; official caption differs from index string",
+      "notes": "Existence only. Pin 731 F.2d 1423 is Salveson v. Western States Bankcard Ass'n. Index string is truncated or OCR-variant; official caption is Salveson v. Western States Bankcard Ass'n. Sources: https://www.courtlistener.com/opinion/8930660/salveson-v-western-states-bankcard-assn/ ; https://static.case.law/f2d/731/html/1423-01.html. Characterization still needs opinion text.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "Rabago-Alvarez v. Dart Industries, Inc, 55 Cal. App. 3d 91 (1976)",
+      "status": "VERIFIED",
+      "source": "Round 11 CourtListener + CAP lookup",
+      "notes": "Existence only. Pin 55 Cal. App. 3d 91 is Rabago-Alvarez v. Dart Industries, Inc.. Sources: https://www.courtlistener.com/opinion/2174157/rabago-alvarez-v-dart-industries-inc/ ; https://static.case.law/cal-app-3d/55/html/0091-01.html. Characterization still needs opinion text.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "Sanchez v. Monumental Life Ins. Co, 102 F. 3d 398",
+      "status": "VERIFIED",
+      "source": "Round 11 CourtListener + CAP lookup",
+      "notes": "Existence only. Pin 102 F.3d 398 is Sanchez v. Monumental Life Insurance. Sources: https://www.courtlistener.com/opinion/731038/richard-m-sanchez-v-monumental-life-insurance-company/ ; https://static.case.law/f3d/102/html/0398-01.html. Characterization still needs opinion text.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "See Smith v. Brown-Forman Distillers Corp, 196 Cal. App. 3d 503 (1989)",
+      "status": "VERIFIED",
+      "source": "Round 11 CourtListener + CAP lookup",
+      "notes": "Existence only. Pin 196 Cal. App. 3d 503 is Smith v. Brown-Forman Distillers Corp.. Sources: https://www.courtlistener.com/opinion/2137018/smith-v-brown-forman-distillers-corp/ ; https://static.case.law/cal-app-3d/196/html/0503-01.html. Characterization still needs opinion text.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "Simmons v. PCR Technology, 209 F.Supp. 2d 1029",
+      "status": "VERIFIED",
+      "source": "Round 11 CourtListener + CAP lookup",
+      "notes": "Existence only. Pin 209 F. Supp. 2d 1029 is Simmons v. PCR TECHNOLOGY. Sources: https://www.courtlistener.com/opinion/2425037/simmons-v-pcr-technology/ ; https://static.case.law/f-supp-2d/209/html/1029-01.html. Characterization still needs opinion text.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "State Farm Mut. Auto Ins. Co. v. Dyer, 19 F. 3d 514",
+      "status": "VERIFIED",
+      "source": "Round 11 CourtListener + CAP lookup",
+      "notes": "Existence only. Pin 19 F.3d 514 is State Farm Mutual Automobile Insurance v. Dyer. Sources: https://www.courtlistener.com/opinion/7028306/state-farm-mutual-automobile-insurance-v-dyer/ ; https://static.case.law/f3d/19/html/0514-01.html. Characterization still needs opinion text.",
+      "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "White v. FCI USA, Inc, 319 F. 3d 672",
+      "status": "VERIFIED",
+      "source": "Round 11 CourtListener + CAP lookup",
+      "notes": "Existence only. Pin 319 F.3d 672 is White v. FCI USA, Inc.. Sources: https://www.courtlistener.com/opinion/29940/white-v-fci-usa-inc/ ; https://static.case.law/f3d/319/html/0672-01.html. Characterization still needs opinion text.",
+      "round": "11-p0-ocr-alias"
     }
   ],
   "multisourceConfirmation": {
@@ -2927,5 +3252,39 @@
     "documentsOcr": 62,
     "pagesOcr": 597,
     "note": "Everything still no_text_layer after the Aug 16 plaintiff_filing/court_order tranche: Krishnan relate order (sideways phone photo of the screen; ocr-text-layer.py now retries 90/180/270 when 0\u00b0 yields no lines and writes PDF /Rotate to match), the Matter 3 Derrick complaint scan, Palacios voluntary dismissal, CHP arrest report, Serrato opposition page-1 file-stamp, service_admin forms, and 483 pages of HOPE discovery. Corpus no_text_layer 58\u21920. Two files remain unreadable (Matter 10 ORDER_DENYING_PETITION_C2602632.pdf is a text file named .pdf; Matter 30 CASOMB upload is empty). Known-bad gate stayed green."
+  },
+  "round11P0": {
+    "date": "2026-09-06",
+    "artifact": "internal/docs/citation_lookup_p0.json",
+    "script": "internal/scripts/lookup-citations.py (P0 queue) + overlay-citation-lookups.py",
+    "indexNote": "OCR_PAGE_FIXES in build-citation-index.py merged garbled plaintiff-filing strings (Knudsen, California DUI Lawyers, Medina, Torres, Rio Properties wrap, etc.). Index: 875 PDFs, 8,482 pages, 3,806 distinct cites; no_text_layer still 8. P0 dropped 70\u219254 before lookup.",
+    "probeCount": 54,
+    "consensusCounts": {
+      "FOUND": 28,
+      "CAPTION_MISMATCH": 14,
+      "PARTIAL": 3,
+      "NOT_FOUND": 7,
+      "UNKNOWN": 2
+    },
+    "overlay": {
+      "added": 46,
+      "VERIFIED": 44,
+      "MISCITED": 2
+    },
+    "miscited": [
+      "Devenpeck v. Alford, 543 U.S. 11 (2004)",
+      "Devenpeck v. Alford, 3 U.S. 146 (2004)"
+    ],
+    "leftUnverified": [
+      "Benavidez v. County of San Diego, 993 F.3d 9",
+      "Dart Cherokee Basin Operating Co., LLC v. Owens, 574 U.S. 81",
+      "Davenport v. Mutual Ben. Health, 325 F.3d 785",
+      "Hernandez v. Regents of, 2009 WL 6045700",
+      "Villa v. Maricopa County, 865 F.3d 8",
+      "Weyhe v. Wal-Mart Stores, Inc, 2010 WL 3411462",
+      "Ruelaz v. Leprino Foods Co, 2025 WL 25549",
+      "In Aucina v. Amoco Oil Co, 871 F. Supp. 332"
+    ],
+    "note": "CAPTION_MISMATCH rows were the same case with a truncated/OCR caption (Galbraith, Ngumezi, Orkin, Galt G/S, Salveson, etc.) and overlay as VERIFIED existence with the official caption in notes. Do not treat a lookup miss as a fabrication. Existence \u2260 holding."
   }
 }

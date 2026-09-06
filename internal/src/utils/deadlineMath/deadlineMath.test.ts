@@ -261,6 +261,34 @@ describe("deadlineMath — FRCP 6", () => {
     expect(opposition.rolled).toBe(false);
   });
 
+  it("computes N.D. Cal. Civil L.R. 7 clocks from the Serrato Dkt. 18 filing (Matter 24 golden)", () => {
+    const result = computeDeadlinesFromEvent({
+      recipe: "ndcal_lr7_motion_filed",
+      anchorDate: "Aug. 26, 2026",
+      court: "USDC N.D. Cal.",
+    });
+    const byId = Object.fromEntries(result.deadlines.map((d) => [d.id, d]));
+    // Clerk notice (Dkt. 21) listed opposition 9/9 and reply 9/16 with the year wrong;
+    // the month/day matches L.R. 7-3 from the Aug. 26 filing. Hearing reset to Sep. 30
+    // is the 35-day L.R. 7-2(a) floor.
+    expect(byId.ndcal_opposition).toMatchObject({
+      date: "2026-09-09",
+      rawDate: "2026-09-09",
+      rolled: false,
+    });
+    expect(byId.ndcal_reply).toMatchObject({
+      date: "2026-09-16",
+      rawDate: "2026-09-16",
+      rolled: false,
+    });
+    expect(byId.ndcal_earliest_hearing).toMatchObject({
+      date: "2026-09-30",
+      rawDate: "2026-09-30",
+      rolled: false,
+    });
+    expect(result.sources.some((s) => s.id === "ndcal7")).toBe(true);
+  });
+
   it("computes FRCP 6(c) motion notice backward from a hearing", () => {
     const result = computeDeadlinesFromEvent({
       recipe: "federal_motion_hearing",
