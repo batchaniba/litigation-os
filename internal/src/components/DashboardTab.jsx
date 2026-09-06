@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router";
 import { cases } from "../data/matters";
 import { CLUSTERS } from "../data/clusters";
@@ -6,9 +7,8 @@ import { jurisdictions } from "../data/portfolioMeta";
 import { headline_coverage, formatLimit } from "../data/coverage";
 import { formatCurrency } from "../utils/formatters";
 import { isArchivedMatter, isOpenLifecycle } from "../utils/matterLifecycle";
-
-const FILED_GREEN = "#34D399";
-const UPCOMING_AMBER = "#FBBF24";
+import { useNextActions } from "../hooks/useNextActions";
+import { NextActionsPanel } from "./NextActionsPanel";
 
 const totalMatters = cases.length;
 // "Active Matters" is the open-docket count -- still on the docket, settled
@@ -16,8 +16,8 @@ const totalMatters = cases.length;
 // set. A settled-but-not-yet-dismissed matter (e.g. Matter 22) still belongs
 // here; its card carries its own Settled ribbon/badge regardless.
 const activeMatters = cases.filter(c => isOpenLifecycle(c.lifecycle) || (!c.lifecycle && !c.archived)).length;
-const clusterCounts = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 };
-const clusterNumberLists = { 1: [], 2: [], 3: [], 4: [], 5: [] };
+const clusterCounts = Object.fromEntries(CLUSTERS.map((cl) => [cl.n, 0]));
+const clusterNumberLists = Object.fromEntries(CLUSTERS.map((cl) => [cl.n, []]));
 const courtCounts = {};
 let federalCount = 0;
 let stateCount = 0;
@@ -45,29 +45,19 @@ const formatRanges = (nums) => {
   ranges.push(start === end ? `${start}` : `${start}–${end}`);
   return ranges.join(", ");
 };
-const clusterMattersStr = {
-  1: formatRanges(clusterNumberLists[1]),
-  2: formatRanges(clusterNumberLists[2]),
-  3: formatRanges(clusterNumberLists[3]),
-  4: formatRanges(clusterNumberLists[4]),
-  5: formatRanges(clusterNumberLists[5]),
-};
+const clusterMattersStr = Object.fromEntries(
+  CLUSTERS.map((cl) => [cl.n, formatRanges(clusterNumberLists[cl.n])]),
+);
 
 const moderateExposure = formatCurrency(
   damages_table.reduce((s, r) => s + r.moderate, 0)
 );
 
-const PERTINENT_FILINGS = [
-  { title: "Newanforbi v. Serrato et al.", matter: 24, date: "Filed Jun 17, 2026", dateStatus: "filed" },
-  { title: "Newanforbi v. Federal Express Corporation", matter: 25, note: "Served Jul 24, 2026 — Ct Corporation System (Jaqueline Mejia)", date: "Filed Jul 15, 2026", dateStatus: "filed" },
-  { title: "Newanforbi v. United Parcel Service, Inc.", matter: 26, note: "Served Jul 22, 2026 — Josh Swindell, Authorized Agent", date: "Filed Jul 15, 2026", dateStatus: "filed" },
-  { title: "Newanforbi v. Randstad, et al.", matter: 27, note: "SERVED Jul 30, 2026 — Josh Swindell (Randstad & RK)", date: "Filed Jul 20, 2026", dateStatus: "filed" },
-  { title: "Newanforbi v. Shannon Smith, LCSW, et al.", matter: 28, note: "Case No. 3:26-cv-07504 — Hon. Lisa J. Cisneros", date: "Filed Jul 20, 2026", dateStatus: "filed" },
-  { title: "Newanforbi v. Amazon.com Services, LLC", matter: 29, date: "Pre-Complaint — BGC Pending", dateStatus: "upcoming" },
-  { title: "Newanforbi v. First Advantage LLC", matter: 31, note: "Identified via portfolio gap analysis — vendor for Matters 25 & 26", date: "Not Yet Filed", dateStatus: "upcoming" },
-];
+export const DashboardTab = ({ setClusterFilter, setActiveTab }) => {
+  const { queue, mine } = useNextActions(30);
+  const [mineOnly, setMineOnly] = useState(false);
+  const nextMine = mine[0];
 
-export const DashboardTab = ({ upcomingEvents, setClusterFilter, setActiveTab }) => {
   return (
     <div className="dashboard-view">
       {/* Stats Row */}
@@ -76,7 +66,7 @@ export const DashboardTab = ({ upcomingEvents, setClusterFilter, setActiveTab })
           { label: "Active Matters", value: activeMatters, sub: `${federalCount} Federal · ${stateCount} State · ${totalMatters} total` },
           { label: "Jurisdictions", value: jurisdictions.length, sub: "Courts across CA" },
           { label: "Aggregate Exposure", value: moderateExposure, sub: "Moderate estimate" },
-          { label: "Next Deadline", value: upcomingEvents[0]?.date || "—", sub: upcomingEvents[0]?.event?.slice(0, 35) || "" }
+          { label: "Next on your desk", value: nextMine?.date || "—", sub: nextMine ? `M${nextMine.matters[0]} · ${nextMine.action}` : "Nothing dated" }
         ].map((s, i) => (
           <div key={i} className="dashboard-stat-card">
             <div className="dashboard-stat-label">{s.label}</div>
@@ -102,25 +92,10 @@ export const DashboardTab = ({ upcomingEvents, setClusterFilter, setActiveTab })
         )}
       </div>
 
-      {/* Two-column: Upcoming + Clusters */}
-      <div className="grid-2 dashboard-primary-grid">
-        {/* Upcoming */}
-        <section className="dashboard-panel">
-          <h3 className="dashboard-heading">Upcoming Deadlines</h3>
-          <div className="dashboard-deadlines">
-            {upcomingEvents.map((e, i) => (
-              <div key={i} className="dashboard-deadline">
-                <div className="dashboard-deadline-date">{e.date}</div>
-                <div>
-                  <div className="dashboard-deadline-event">{e.event}</div>
-                  <div className="dashboard-deadline-matter">Matter {e.matters}</div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
+      <NextActionsPanel queue={queue} mineOnly={mineOnly} onMineOnlyChange={setMineOnly} />
 
-        {/* Cluster Breakdown */}
+      {/* Two-column: Clusters + courts */}
+      <div className="grid-2 dashboard-primary-grid">
         <section className="dashboard-panel">
           <h3 className="dashboard-heading">Case Clusters</h3>
           {CLUSTERS.map(cl => (
@@ -133,40 +108,26 @@ export const DashboardTab = ({ upcomingEvents, setClusterFilter, setActiveTab })
             >
               <div className="dashboard-cluster-header">
                 <span>{cl.label}</span>
-                <span style={{ color: cl.color }}>{clusterCounts[cl.n]} matters</span>
+                <span style={{ color: cl.color }}>{clusterCounts[cl.n] || 0} matters</span>
               </div>
-              <div className="dashboard-cluster-meta">Matters {clusterMattersStr[cl.n]}</div>
+              <div className="dashboard-cluster-meta">Matters {clusterMattersStr[cl.n] || "—"}</div>
               <div className="dashboard-cluster-track">
-                <div className="dashboard-cluster-bar" style={{ width: `${(clusterCounts[cl.n] / totalMatters) * 100}%`, background: cl.color }} />
+                <div className="dashboard-cluster-bar" style={{ width: `${((clusterCounts[cl.n] || 0) / totalMatters) * 100}%`, background: cl.color }} />
               </div>
             </button>
           ))}
           <div className="dashboard-cluster-hint">Click a cluster to filter matters →</div>
+        </section>
 
-          {/* Pertinent Filings */}
-          <div className="dashboard-filings">
-            <h4 className="dashboard-subheading">Pertinent Filings</h4>
-            <div className="dashboard-filing-list">
-              {PERTINENT_FILINGS.map((f, i) => {
-                const dateColor = f.dateStatus === "upcoming" ? UPCOMING_AMBER : FILED_GREEN;
-                return (
-                  <div key={i} className="dashboard-filing">
-                    <span className="dashboard-filing-title">
-                      {f.title}
-                      {f.note && (
-                        <span className="dashboard-filing-note">{f.note}</span>
-                      )}
-                    </span>
-                    <div className="dashboard-filing-meta">
-                      <span className="dashboard-matter-badge">Matter {f.matter}</span>
-                      {f.date && (
-                        <span className="dashboard-filing-date" style={{ color: dateColor }}>{f.date}</span>
-                      )}
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
+        <section className="dashboard-panel">
+          <h3 className="dashboard-heading">Jurisdictional Distribution</h3>
+          <div className="dashboard-jurisdictions">
+            {jurisdictions.map(j => (
+              <div key={j} className="dashboard-jurisdiction">
+                <div className="dashboard-jurisdiction-name">{j}</div>
+                <div className="dashboard-jurisdiction-count">{courtCounts[j] || 0}</div>
+              </div>
+            ))}
           </div>
         </section>
       </div>
@@ -196,19 +157,6 @@ export const DashboardTab = ({ upcomingEvents, setClusterFilter, setActiveTab })
           </div>
         </div>
       </div>
-
-      {/* Courts Overview */}
-      <section className="dashboard-panel">
-        <h3 className="dashboard-heading">Jurisdictional Distribution</h3>
-        <div className="dashboard-jurisdictions">
-          {jurisdictions.map(j => (
-            <div key={j} className="dashboard-jurisdiction">
-              <div className="dashboard-jurisdiction-name">{j}</div>
-              <div className="dashboard-jurisdiction-count">{courtCounts[j] || 0}</div>
-            </div>
-          ))}
-        </div>
-      </section>
     </div>
   );
 };

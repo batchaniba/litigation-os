@@ -22,11 +22,10 @@ const MatterDetailPage = lazy(() => import("./pages/MatterDetailPage").then((m) 
 const noop = () => undefined;
 
 function DashboardRoute() {
-  const ui = usePortfolioUI();
   const navigate = useNavigate();
   // Stable identities so DashboardTab can bail out on unrelated shell re-renders.
   const setClusterFilter = useCallback((cluster: number) => navigate(`${ROUTES.matters}?cluster=${cluster}`), [navigate]);
-  return <DashboardTab upcomingEvents={ui.upcomingEvents} setClusterFilter={setClusterFilter} setActiveTab={noop} />;
+  return <DashboardTab setClusterFilter={setClusterFilter} setActiveTab={noop} />;
 }
 
 function TimelineRoute() {
