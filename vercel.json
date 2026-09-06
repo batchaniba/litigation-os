@@ -149,6 +149,26 @@
       "source": "/fedex-answer/",
       "destination": "/fedex-answer.pdf",
       "permanent": false
+    },
+    {
+      "source": "/cand-strike",
+      "destination": "/cand-strike.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/cand-strike/",
+      "destination": "/cand-strike.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/cand-strike-packet",
+      "destination": "/cand-strike-packet.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/cand-strike-packet/",
+      "destination": "/cand-strike-packet.pdf",
+      "permanent": false
     }
   ],
   "headers": [
@@ -284,6 +304,24 @@
         {
           "key": "Content-Disposition",
           "value": "attachment; filename=\"Dkt 04 - Answer to Complaint (Filed Aug 31 2026).pdf\"; filename*=UTF-8''Dkt%2004%20-%20Answer%20to%20Complaint%20%28Filed%20Aug%2031%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/cand-strike.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Plaintiff Motion to Strike Answer (N.D. Cal. 3-26-cv-08272-LJC) (Sep 5 2026).pdf\"; filename*=UTF-8''Plaintiff%20Motion%20to%20Strike%20Answer%20%28N.D.%20Cal.%203-26-cv-08272-LJC%29%20%28Sep%205%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/cand-strike-packet.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Plaintiff Motion to Strike Answer Packet with Proposed Order (N.D. Cal. 3-26-cv-08272-LJC) (Sep 5 2026).pdf\"; filename*=UTF-8''Plaintiff%20Motion%20to%20Strike%20Answer%20Packet%20with%20Proposed%20Order%20%28N.D.%20Cal.%203-26-cv-08272-LJC%29%20%28Sep%205%202026%29.pdf"
         }
       ]
     }

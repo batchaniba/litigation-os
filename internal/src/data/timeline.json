@@ -728,7 +728,6 @@
       27
     ],
     "type": "deadline",
-    "upcoming": true,
     "actor": "opposing",
     "source": "/documents/matter-27/Gmail - Williams Request for Time on Opening Demand through Sep 4 (Aug 28 2026).pdf"
   },
@@ -1502,17 +1501,15 @@
       32
     ],
     "type": "deadline",
-    "upcoming": true,
     "actor": "opposing"
   },
   {
     "date": "Sep. 4, 2026",
-    "event": "Responsive pleading deadline (computed) — Diana Candelaria and Steve Gordon, Nforbi v. Candelaria et al. (3:26-cv-08272-LJC, N.D. Cal.); 21 days from the Aug. 14, 2026 personal service date (FRCP 12(a)(1)(A)(i)). Falls on a Friday; no weekend/holiday extension applies.",
+    "event": "ANSWER FILED (ECF No. 11) — Diana Candelaria and Steve Gordon file 37-page Answer responding to superseded Complaint (Dkt. 1) instead of operative FAC (Dkt. 6), with 33 boilerplate affirmative defenses; responsive pleading deadline was Sep. 4, 2026 — Nforbi v. Candelaria et al. (3:26-cv-08272-LJC, N.D. Cal.)",
     "matters": [
       33
     ],
     "type": "deadline",
-    "upcoming": true,
     "actor": "opposing"
   },
   {
