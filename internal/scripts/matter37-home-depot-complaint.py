@@ -5,8 +5,7 @@
 San Joaquin Superior Court. Penal Code § 290.46(j) is the load-bearing count.
 The Home Depot background report, the registry information in it, and Home
 Depot's use of that information to ghost Plaintiff are pleaded as facts.
-This claim does not rest on another employer's report. The Tracy building is
-the worksite, not the legal defendant.
+The Tracy building is the worksite, not the legal defendant.
 
 Default output is unsigned because the requested execution date
 (September 8, 2026) is in the future. On or after that date, rerun with
@@ -137,8 +136,7 @@ CONTENT = [
     (
         "PARA",
         "3. Those are factual allegations about Home Depot's own report and "
-        "Home Depot's own decision. Plaintiff does not plead this claim off "
-        "another employer's complaint or another employer's report. He alleges: "
+        "Home Depot's own decision. He alleges: "
         "(a) Home Depot hired him; (b) Home Depot ran a background check; "
         "(c) the report that came back contained information disclosed pursuant "
         "to Penal Code section 290.46, including his California Sex Offender "
@@ -477,9 +475,8 @@ CONTENT = [
     ),
     (
         "PARA",
-        "37. Plaintiff does not plead those facts off another employer's "
-        "complaint or another employer's report. This claim is Home Depot's "
-        "report and Home Depot's decision. Plaintiff does not presently know "
+        "37. This claim is Home Depot's report and Home Depot's decision. "
+        "Plaintiff does not presently know "
         "the legal name of the consumer reporting agency, if any, that "
         "assembled the report. He has sued DOES 1 through 10 for that vendor.",
     ),
@@ -942,9 +939,8 @@ CONTENT = [
     ),
     (
         "PARA",
-        "81. This claim does not rest on another employer's report. Home "
-        "Depot's own background-check file is the document that will confirm "
-        "the contents Plaintiff has alleged.",
+        "81. Home Depot's own background-check file is the document that "
+        "will confirm the contents Plaintiff has alleged.",
     ),
     ("HEADER", "XI.\nPRAYER FOR RELIEF"),
     ("PARA", "WHEREFORE, Plaintiff prays for judgment against Defendants as follows:"),

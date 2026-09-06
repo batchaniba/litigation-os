@@ -151,28 +151,21 @@ CONTENT = [
         "report and investigative consumer report as a condition of that "
         "offer; (c) First Advantage was the named screening vendor and "
         "ordered the drug test the same afternoon; (d) Plaintiff was then "
-        "listed on the California Megan's Law website; (e) First Advantage "
-        "had already shown, on another employer's report, that it could match "
-        "this same Plaintiff to the California Sex Offender Registry and treat "
-        "that match as dispositive; (f) Best Buy did not, to Plaintiff's "
-        "knowledge, identify any independent, lawful, job-related basis for "
-        "undoing the offer; and (g) the screening file is exclusively within "
-        "Defendants' possession.",
+        "listed on the California Megan's Law website; (e) Best Buy did not, "
+        "to Plaintiff's knowledge, identify any independent, lawful, "
+        "job-related basis for undoing the offer; and (f) the screening file "
+        "is exclusively within Defendants' possession.",
     ),
     (
         "PARA",
-        "5. In July 2024, First Advantage prepared an employment background "
-        "report on Plaintiff for United Parcel Service. That report, later "
-        "lodged in federal court by UPS, identified a Department of Justice "
-        "website / National Sex Offender Registry search as decisional, stated "
-        "'SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY,' and produced "
-        "an overall INELIGIBLE result. That report is not the Best Buy report. "
-        "It is alleged because the same vendor that Best Buy used in October "
-        "2023 later matched this Plaintiff to the California registry and "
-        "treated that match as an employment bar. The UPS report is "
-        "methodology and matchability evidence — the same CRA, the same "
-        "Plaintiff, a California-registry source of record — not the Best "
-        "Buy report and not a substitute for it."
+        "5. Plaintiff does not possess the Best Buy First Advantage report "
+        "and does not allege its contents as a known fact. On information "
+        "and belief, that report — or the screening process that produced "
+        "it — contained or was informed of information disclosed pursuant "
+        "to Penal Code section 290.46 concerning Plaintiff. The report, "
+        "the order, the adjudication notes, and the decision-maker "
+        "communications are in Defendants' possession. Plaintiff will seek "
+        "them in discovery."
     ),
     (
         "PARA",
@@ -534,13 +527,10 @@ CONTENT = [
     ),
     (
         "PARA",
-        "40. The July 2024 First Advantage / UPS report is alleged for three "
-        "limited purposes: it shows that Plaintiff's registry status was "
-        "commercially retrievable by this same vendor; it shows that First "
-        "Advantage treated a California-registry source as an employment-"
-        "eligibility bar for this Plaintiff; and it identifies the kind of "
-        "record First Advantage would have been able to return to Best Buy. "
-        "Plaintiff does not allege that UPS sent its report to Best Buy.",
+        "40. Plaintiff does not attach a Best Buy First Advantage report "
+        "because he does not have one. The Best Buy report is the document "
+        "that will confirm or refute registry use. It is exclusively in "
+        "Defendants' possession.",
     ),
     (
         "PARA",
@@ -566,10 +556,9 @@ CONTENT = [
         "written offer; the same-day background authorization and First "
         "Advantage drug-test order; First Advantage's role as Best Buy's "
         "named CRA; Plaintiff's contemporaneous presence on the California "
-        "registry; First Advantage's later documented match of this Plaintiff "
-        "to SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY; the absence "
-        "of any other basis communicated to Plaintiff; and Defendants' "
-        "exclusive control of the Best Buy report.",
+        "Megan's Law website; the absence of any other basis communicated "
+        "to Plaintiff; and Defendants' exclusive control of the Best Buy "
+        "report.",
     ),
     (
         "PARA",
@@ -963,9 +952,9 @@ CONTENT = [
     ),
     (
         "PARA",
-        "72. The July 2024 First Advantage/UPS report is relevant to "
-        "retrievability and matching methodology of this same vendor on this "
-        "same Plaintiff. It is not a substitute for the Best Buy report.",
+        "72. The Best Buy First Advantage order, report, component searches, "
+        "and adjudication logs are the documents that will confirm or refute "
+        "registry use.",
     ),
     ("HEADER", "XI.\nPRAYER FOR RELIEF"),
     ("PARA", "WHEREFORE, Plaintiff prays for judgment against Defendants as follows:"),

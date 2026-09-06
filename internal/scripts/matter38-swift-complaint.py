@@ -193,15 +193,11 @@ CONTENT = [
     ),
     (
         "PARA",
-        "6. In July 2024, First Advantage prepared an employment background "
-        "report on Plaintiff for United Parcel Service. That report, later "
-        "lodged in federal court by UPS, identified a Department of Justice "
-        "website / National Sex Offender Registry search as decisional, stated "
-        "'SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY,' and produced "
-        "an overall INELIGIBLE result. That report is not the Swift report. "
-        "It is alleged because it shows that commercial screeners could and "
-        "did identify this Plaintiff through the California registry and treat "
-        "that identification as dispositive of employment eligibility.",
+        "6. Plaintiff is a person as to whom information is disclosed on the "
+        "California Megan's Law website. He does not possess any completed "
+        "NSOPW result from Swift. The vendor adjudication log, any later "
+        "NSOPW return, and the decision-maker communications are exclusively "
+        "in Defendants' possession. He will seek them in discovery.",
     ),
     (
         "PARA",
@@ -555,14 +551,11 @@ CONTENT = [
     ),
     (
         "PARA",
-        "42. The July 2024 First Advantage / UPS report is alleged for three "
-        "limited purposes: it shows that Plaintiff's registry status was "
-        "commercially retrievable for employment screening; it shows that at "
-        "least one national CRA treated a California-registry source as an "
-        "employment-eligibility bar for this Plaintiff; and it identifies the "
-        "kind of record Swift's vendors would have been able to return. "
-        "Plaintiff does not allege that First Advantage was Swift's vendor, "
-        "and does not allege that UPS sent its report to Swift.",
+        "42. Plaintiff does not attach a completed NSOPW result because the "
+        "packet furnished to him does not contain one. Swift's adjudication "
+        "log and any later NSOPW return are the documents that will confirm "
+        "or refute preliminary registry use. They are exclusively in "
+        "Defendants' possession.",
     ),
     (
         "PARA",
@@ -586,9 +579,8 @@ CONTENT = [
         "in part on consumer reports; the completed criminal, Clearinghouse, "
         "and MVR components that are in the packet do not themselves "
         "explain a registry-based denial; Plaintiff was then listed on the "
-        "California Megan's Law website; commercial screeners had already "
-        "shown they could match this Plaintiff to the California registry; "
-        "and the interim NSOPW return, adjudication notes, and "
+        "California Megan's Law website; and the interim NSOPW return, "
+        "adjudication notes, and "
         "decision-maker communications are exclusively in Defendants' "
         "possession.",
     ),
@@ -981,9 +973,9 @@ CONTENT = [
     ),
     (
         "PARA",
-        "72. The July 2024 First Advantage/UPS report is relevant to "
-        "retrievability and matching methodology. It is not a substitute for "
-        "Swift's own file.",
+        "72. Swift's own application file, vendor reports, and NSOPW "
+        "adjudication log are the documents that will confirm or refute "
+        "registry use.",
     ),
     ("HEADER", "XI.\nPRAYER FOR RELIEF"),
     ("PARA", "WHEREFORE, Plaintiff prays for judgment against Defendants as follows:"),

@@ -669,7 +669,7 @@ const lawyer_fees_raw = [
       high: 7280,
       mid: 5180
     },
-    notes: "Sep. 6 true-up, then demurrer-harden: 25-page signed four-count verified complaint (ICRAA, CCRAA alternative, UCL, § 290). Packet is 34 pages. CM-010, FW-001, FW-003, and SUM-100 plus the Filing Packet are billed as in Matters 36/37. Application, $22.60 offer, authorization, and First Advantage drug-test emails carry forward. First Advantage is not a named defendant. Unfiled; no demand or CRD charge."
+    notes: "Sep. 6 true-up, then demurrer-harden: 24-page signed four-count verified complaint (ICRAA, CCRAA alternative, UCL, § 290). Packet is 33 pages. CM-010, FW-001, FW-003, and SUM-100 plus the Filing Packet are billed as in Matters 36/37. Application, $22.60 offer, authorization, and First Advantage drug-test emails carry forward. First Advantage is not a named defendant. Unfiled; no demand or CRD charge."
   }
 ];
 
