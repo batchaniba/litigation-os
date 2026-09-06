@@ -1,5 +1,17 @@
 [
   {
+    "date": "Sep. 11, 2026",
+    "event": "Azimov response due (courtesy) — whether Diamond Truck Sales, Inc. and Alpine Truck Sales, Inc. will (A) execute a Notice of Acknowledgment of Receipt or equivalent stipulation accepting the Amended Summons and FAC, or (B) require formal re-service on the SOS agents. Extended from September 4 at Azimov’s September 1 request. Silence means Plaintiff proceeds with path (B). Does not move the December 11, 2026 CMC. — Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094)",
+    "matters": [
+      12
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "filed": false,
+    "actor": "opposing",
+    "source": "/documents/matter-12/Gmail - Meet and Confer Service Case at Issue - Azimov (Aug 31 and Sep 1 2026).pdf"
+  },
+  {
     "date": "Dec. 1, 2026",
     "event": "Initial Case Management Conference, 1:30 p.m. by Zoom (cand.uscourts.gov/ask) before Magistrate Judge Ajay S. Krishnan — Newanforbi v. Amazon.com Services, LLC et al. (4:26-cv-09249-ASK), set by Dkt. 9. If this date moves, the Nov. 10 and Nov. 24, 2026 deadlines shift with it unless the court orders otherwise.",
     "matters": [
@@ -128,17 +140,6 @@
     "upcoming": true,
     "actor": "opposing",
     "source": "/documents/matter-27/Settlement Demand - Randstad US LLC (Aug 28 2026).pdf"
-  },
-  {
-    "date": "Sep. 4, 2026",
-    "event": "WATCH — Williams said he will attempt to respond by this date. The Aug. 19 $55,000/$85,000 demands expire (and are not being held) at 2:00 p.m. PT Aug. 28. The successor demand is $175,000 Randstad-only, with its own Sept. 8 response date. Anything he sends on Sept. 4 is a number into that field, not an acceptance of the expired figures. Not a court deadline. Pleading clocks: RK Logistics Sept. 14 (granted; no further); Randstad Sept. 15.",
-    "matters": [
-      27
-    ],
-    "type": "deadline",
-    "upcoming": true,
-    "actor": "opposing",
-    "source": "/documents/matter-27/Gmail - Williams Request for Time on Opening Demand through Sep 4 (Aug 28 2026).pdf"
   },
   {
     "date": "Oct. 5, 2026",
@@ -275,26 +276,6 @@
     "type": "hearing",
     "source": "/documents/matter-33/ndcal/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026).pdf",
     "upcoming": true
-  },
-  {
-    "date": "Sep. 4, 2026",
-    "event": "Responsive pleading deadline (computed) — Santiago Meza-Gonzalez and Jose Melano, Nforbi v. Meza-Gonzalez, et al. (3:26-cv-08271-PHK, N.D. Cal.); 21 days from the Aug. 14, 2026 personal service date (FRCP 12(a)(1)(A)(i)). Falls on a Friday; no weekend/holiday extension applies.",
-    "matters": [
-      32
-    ],
-    "type": "deadline",
-    "upcoming": true,
-    "actor": "opposing"
-  },
-  {
-    "date": "Sep. 4, 2026",
-    "event": "Responsive pleading deadline (computed) — Diana Candelaria and Steve Gordon, Nforbi v. Candelaria et al. (3:26-cv-08272-LJC, N.D. Cal.); 21 days from the Aug. 14, 2026 personal service date (FRCP 12(a)(1)(A)(i)). Falls on a Friday; no weekend/holiday extension applies.",
-    "matters": [
-      33
-    ],
-    "type": "deadline",
-    "upcoming": true,
-    "actor": "opposing"
   },
   {
     "date": "Nov. 12, 2026",

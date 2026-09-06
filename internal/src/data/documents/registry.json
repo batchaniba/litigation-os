@@ -682,6 +682,11 @@
       "ownerMatter": 12
     },
     {
+      "path": "/documents/matter-12/EMAIL_DRAFT_Azimov_Extend_Service_Response_to_Sep11.txt",
+      "label": "EMAIL DRAFT — grant Azimov through Sep. 11 on the A/B service pick (unsent)",
+      "ownerMatter": 12
+    },
+    {
       "path": "/documents/matter-12/EMAIL_DRAFT_Kern_Sheriff_Alpine_Correction_Aug31_2026.txt",
       "label": "EMAIL DRAFT — Kern Sheriff Alpine correction / resume processing (Aug. 31, 2026) — not yet sent",
       "ownerMatter": 12
@@ -719,6 +724,11 @@
     {
       "path": "/documents/matter-12/FullCourt Enterprise - Civil ROA Summary.pdf",
       "label": "FullCourt Enterprise — Civil ROA Summary (earlier print; superseded by Aug. 1, 2026 ROA below)",
+      "ownerMatter": 12
+    },
+    {
+      "path": "/documents/matter-12/Gmail - Meet and Confer Service Case at Issue - Azimov (Aug 31 and Sep 1 2026).pdf",
+      "label": "Gmail — Meet and Confer on service / case at issue (Aug. 31 sent; Azimov Sep. 1 10-day request)",
       "ownerMatter": 12
     },
     {
