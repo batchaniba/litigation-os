@@ -153,10 +153,13 @@ class PleadingPaper:
         self.current_line += 1
 
     def write_wrapped(self, text, bold=False, font="Times-Roman", size=FONT_SIZE,
-                      italic=False, indent=0, first_indent=36):
-        # 3pt safety inset keeps glyphs from visually kissing the right rule.
-        avail = CONTENT_WIDTH - indent - 3
+                      italic=False, indent=0, first_indent=36, right_inset=10):
+        # right_inset keeps glyphs from visually kissing or crossing the right rule.
+        avail = CONTENT_WIDTH - indent - right_inset
         segs = self._parse_segments(text)
+        if bold or italic:
+            default = "bi" if bold and italic else ("b" if bold else "i")
+            segs = [(t, s if s != "r" else default) for t, s in segs]
         lines = self._wrap_segments(segs, avail, first_indent, size)
         c = self.c
         for i, parts in enumerate(lines):
