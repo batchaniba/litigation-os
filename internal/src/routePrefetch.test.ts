@@ -17,6 +17,13 @@ describe("routePrefetch", () => {
     }
   });
 
+  it("does not expose standalone Deadline Math or Cross-Matter pages", () => {
+    expect(Object.values(ROUTES)).not.toContain("/deadlines");
+    expect(Object.values(ROUTES)).not.toContain("/cross-matter");
+    expect(NAV_ITEMS.map((item) => item.label)).not.toContain("Deadline Math");
+    expect(NAV_ITEMS.map((item) => item.label)).not.toContain("Cross-Matter");
+  });
+
   it("is a no-op for a path with no chunk, and never throws", () => {
     expect(() => prefetchRoute("/not-a-route")).not.toThrow();
     expect(() => prefetchRoute("")).not.toThrow();
