@@ -221,9 +221,7 @@ CONTENT = [
     (
         "PARA",
         "11. The warehouse job was at 6653 Hopkins Road, Tracy, California "
-        "95377. A Quest Diagnostics collection site in Modesto, California, "
-        "appears on the drug-test order as one available site. That is a "
-        "collection option, not the worksite.",
+        "95377.",
     ),
     (
         "PARA",
@@ -297,8 +295,7 @@ CONTENT = [
         "Buy recruited and offered employment to a California resident for "
         "work at 6653 Hopkins Road, Tracy, required a California "
         "background-check authorization, and caused a drug test to be ordered "
-        "at California collection sites, including a Modesto option. First "
-        "Advantage is not named as a defendant.",
+        "and completed. First Advantage is not named as a defendant.",
     ),
     (
         "PARA",
@@ -409,8 +406,8 @@ CONTENT = [
         "request date October 17, 2023, 7:29 p.m. It stated: 'You are required "
         "to complete a drug test as a condition of your offer of employment "
         "from Best Buy,' and that the employer had been sent a copy. The "
-        "account was BEST BUY (11759586). A listed collection site was Quest "
-        "Diagnostics-Modesto, 1008 6th Street Ste C, Modesto, CA 95354.",
+        "account was BEST BUY (11759586). Plaintiff completed the drug "
+        "screening.",
     ),
     (
         "PARA",
