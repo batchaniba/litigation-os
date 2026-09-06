@@ -1153,5 +1153,61 @@
     ],
     "evidenceCount": 5,
     "documentCount": 1
+  },
+  {
+    "number": 38,
+    "caption": "Newanforbi v. Swift Transportation Co. of Arizona LLC",
+    "case_no": "TBD",
+    "court": "San Joaquin Sup. Ct. (proposed; review draft not filed)",
+    "claims": "Penal Code § 290.46(j); ICRAA §§ 1786.40, 1786.50 (I&B); UCL § 17200",
+    "status_label": "Review draft — execution gates remain",
+    "lifecycle": "pre_filing",
+    "proceeding": "state_civil",
+    "phase": "pre_filing",
+    "filed": "Not yet filed",
+    "judge": "TBD",
+    "cluster": 3,
+    "type": "State",
+    "archived": false,
+    "note": "Do not execute or file before September 8, 2026. Decrypt or obtain the Sept. 26, 2023 pre-adverse packet. Confirm the driver role, whether the underlying Asurint/Tenstreet/DriverIQ reports ever arrived, and the absence of an independent lawful ground. File before Sept. 26, 2026 if accrual is the pre-adverse letter (CCP § 338(a)). Serve the current SOS agent (likely NRAI), not a terminal. Knight-Swift parent is not named.",
+    "defendants": "Swift Transportation Co. of Arizona LLC (USDOT 54283; 2200 South 75th Avenue, Phoenix, AZ 85043 on the Oct. 5 letter), d/b/a Swift Transportation; DOES 1–20 for the CRA that returned registry-derived information (Asurint, Tenstreet, DriverIQ/Cisive, and Equifax Work Number are named in the letter but not joined until the report is in hand) and any employing affiliate. Knight-Swift Transportation Holdings, Inc. is not named merely as parent. Recruiters Robin Kaufman and Matt Hutto are witnesses.",
+    "causes": [
+      "[PLEADED ON INFORMATION AND BELIEF] Penal Code § 290.46(j) — Oct. 5, 2023 post-adverse admits consumer reports caused the denial; inference that one report included § 290.46 disclosures, from Plaintiff's contemporaneous registry listing and the later First Advantage/UPS California-registry match; Swift's own reports are not in hand",
+      "[PLEADED ON INFORMATION AND BELIEF] ICRAA, Civ. Code §§ 1786.40 and 1786.50 — letter names agencies but the uploaded packet has no underlying Asurint/Tenstreet/DriverIQ report; Plaintiff must confirm nonreceipt",
+      "[DERIVATIVE / EQUITABLE] UCL § 17200 — unlawful and unfair prongs borrowing § 290.46(j); restitution limited to vested money/property",
+      "[OMITTED] Tameny / IIED — two-year CCP § 335.1 clock from Sept. 26 / Oct. 5, 2023 closed in 2025",
+      "[OMITTED] FCRA — Swift sent pre- and post-adverse letters; two-year 15 U.S.C. § 1681p discovery clock from those 2023 letters would have closed; omitted to keep this a state-law filing",
+      "[PRESERVED, NOT PLEADED] FEHA and Fair Chance Act — no CRD right-to-sue in the record"
+    ],
+    "evidenceCount": 11,
+    "documentCount": 10
+  },
+  {
+    "number": 39,
+    "caption": "Newanforbi v. Best Buy Co., Inc., et al.",
+    "case_no": "TBD",
+    "court": "San Joaquin Sup. Ct. (proposed; review draft not filed)",
+    "claims": "Penal Code § 290.46(j); ICRAA §§ 1786.40, 1786.50 (I&B); UCL § 17200",
+    "status_label": "Review draft — execution gates remain",
+    "lifecycle": "pre_filing",
+    "proceeding": "state_civil",
+    "phase": "pre_filing",
+    "filed": "Not yet filed",
+    "judge": "TBD",
+    "cluster": 3,
+    "type": "State",
+    "archived": false,
+    "note": "Do not execute or file before September 8, 2026. Confirm what happened after the Oct. 17 offer, whether Plaintiff signed Candidate Zone or completed the drug test, whether any adverse notice arrived, and the warehouse city. Application confirmation recites an arbitration policy; Best Buy will move to compel; the policy PDF is not in this upload. Serve the current SOS agents, not a warehouse. Best Buy Stores, L.P. is a DOE, not a named defendant.",
+    "defendants": "Best Buy Co., Inc., a Minnesota corporation, d/b/a Best Buy (authorization and drug-test order use 7601 Penn Ave. South, Richfield, MN 55423); First Advantage Background Services Corp., a Florida corporation (Minnesota disclosure + Oct. 17 drug-test order); DOES 1–20 for any First Advantage furnishing affiliate, Best Buy Stores, L.P. or other employing affiliate, and decision-makers. First Advantage Corporation parent is not named merely as parent. Jose Tapia (GM) and Daisy Calvary are witnesses.",
+    "causes": [
+      "[PLEADED ON INFORMATION AND BELIEF] Penal Code § 290.46(j) — Oct. 17, 2023 written offer plus same-day First Advantage screen; inference of registry use from First Advantage's later UPS match of this Plaintiff to SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY; Best Buy report and decision letter are not in hand",
+      "[PLEADED ON INFORMATION AND BELIEF] ICRAA, Civ. Code §§ 1786.40 and 1786.50 — if an investigative report was obtained before the decision without source advice; Plaintiff must confirm nonreceipt of any adverse package",
+      "[DERIVATIVE / EQUITABLE] UCL § 17200 — unlawful and unfair prongs borrowing § 290.46(j); restitution limited to vested money/property",
+      "[OMITTED] Tameny / IIED / contract / estoppel — two-year CCP § 335.1 clock from an Oct. 2023 decision would have closed in 2025; no signed offer audit in the file",
+      "[OMITTED] FCRA — reserved; pleading it now would create a federal question without a Best Buy report or adverse packet, and a two-year discovery clock from late-2023 knowledge of non-hire is a defense argument",
+      "[PRESERVED, NOT PLEADED] FEHA and Fair Chance Act — no CRD right-to-sue in the record"
+    ],
+    "evidenceCount": 8,
+    "documentCount": 6
   }
 ]

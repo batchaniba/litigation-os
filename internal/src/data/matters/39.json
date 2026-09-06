@@ -1,0 +1,67 @@
+{
+  "number": 39,
+  "caption": "Newanforbi v. Best Buy Co., Inc., et al.",
+  "case_no": "TBD",
+  "court": "San Joaquin Sup. Ct. (proposed; review draft not filed)",
+  "claims": "Penal Code § 290.46(j); ICRAA §§ 1786.40, 1786.50 (I&B); UCL § 17200",
+  "status": "UNEXECUTED REVIEW DRAFT — three-count I&B §290.46(j) complaint against Best Buy Co., Inc. and First Advantage. Oct. 17, 2023 warehouse offer is in the file; no rejection letter. Unsigned until Sep. 8, 2026. Confirm the decision date before execution.",
+  "status_label": "Review draft — execution gates remain",
+  "lifecycle": "pre_filing",
+  "proceeding": "state_civil",
+  "phase": "pre_filing",
+  "filed": "Not yet filed",
+  "judge": "TBD",
+  "cluster": 3,
+  "type": "State",
+  "archived": false,
+  "note": "Do not execute or file before September 8, 2026. Confirm what happened after the Oct. 17 offer, whether Plaintiff signed Candidate Zone or completed the drug test, whether any adverse notice arrived, and the warehouse city. Application confirmation recites an arbitration policy; Best Buy will move to compel; the policy PDF is not in this upload. Serve the current SOS agents, not a warehouse. Best Buy Stores, L.P. is a DOE, not a named defendant.",
+  "defendants": "Best Buy Co., Inc., a Minnesota corporation, d/b/a Best Buy (authorization and drug-test order use 7601 Penn Ave. South, Richfield, MN 55423); First Advantage Background Services Corp., a Florida corporation (Minnesota disclosure + Oct. 17 drug-test order); DOES 1–20 for any First Advantage furnishing affiliate, Best Buy Stores, L.P. or other employing affiliate, and decision-makers. First Advantage Corporation parent is not named merely as parent. Jose Tapia (GM) and Daisy Calvary are witnesses.",
+  "causes": [
+    "[PLEADED ON INFORMATION AND BELIEF] Penal Code § 290.46(j) — Oct. 17, 2023 written offer plus same-day First Advantage screen; inference of registry use from First Advantage's later UPS match of this Plaintiff to SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY; Best Buy report and decision letter are not in hand",
+    "[PLEADED ON INFORMATION AND BELIEF] ICRAA, Civ. Code §§ 1786.40 and 1786.50 — if an investigative report was obtained before the decision without source advice; Plaintiff must confirm nonreceipt of any adverse package",
+    "[DERIVATIVE / EQUITABLE] UCL § 17200 — unlawful and unfair prongs borrowing § 290.46(j); restitution limited to vested money/property",
+    "[OMITTED] Tameny / IIED / contract / estoppel — two-year CCP § 335.1 clock from an Oct. 2023 decision would have closed in 2025; no signed offer audit in the file",
+    "[OMITTED] FCRA — reserved; pleading it now would create a federal question without a Best Buy report or adverse packet, and a two-year discovery clock from late-2023 knowledge of non-hire is a defense argument",
+    "[PRESERVED, NOT PLEADED] FEHA and Fair Chance Act — no CRD right-to-sue in the record"
+  ],
+  "key_facts": "On Oct. 13, 2023, Best Buy emailed that it had received Plaintiff's application for General Warehouse Worker / 2nd Shift at $22.60, requisition 928556BR. On Oct. 17 at 3:47 p.m., Jose Tapia, General Manager, emailed a congratulations offer for that job and required, within 24 hours, Candidate Zone signature, background-check information, and background-check authorization; California disclosure PDFs were attached but are not in this upload. At 4:22 p.m. Best Buy sent a background-authorization confirmation naming First Advantage Consumer Center. At 4:30 p.m. First Advantage ordered a Best Buy drug test (Q09078711; account BEST BUY 11759586; Quest Modesto listed as a collection option). At 5:31 p.m. Best Buy HR reminded him to complete the screen and wrote 'Congratulations on accepting your offer' — that sentence is their characterization, not a Candidate Zone audit. No pre-adverse letter, adverse letter, drug-test result, signed offer, or warehouse street address is in the file. The load-bearing theory is information-and-belief use of § 290.46 disclosures. Supporting inference: written offer, same-day First Advantage screen, contemporaneous registry listing, and First Advantage's July 2024 UPS report matching this Plaintiff to the California registry. That UPS report is not alleged to have been sent to Best Buy.",
+  "procedural_status": "Verified complaint review draft generated for proposed September 8, 2026 execution; deliberately unsigned and unfiled. Pre-execution gates: (1) confirm what the employment decision was and its date; (2) confirm whether Plaintiff signed the offer or completed the drug test; (3) confirm the warehouse city; (4) confirm no pre-adverse or adverse package arrived; (5) verify current California agents for Best Buy Co., Inc. and First Advantage Background Services Corp.; (6) execute on or after September 8 only after those confirmations. Three years from Oct. 17, 2023 is Oct. 17, 2026 if that week is accrual. No CRD charge. No demand. Filing court is San Joaquin Superior Court. Companion Judicial Council forms are not yet generated. Arbitration policy is recited in the Oct. 13 application email; the policy itself is not in the upload.",
+  "damages": "The offer states $22.60/hour for General Warehouse Worker / 2nd Shift. It does not state weekly hours or a start date. Portfolio valuation is $0 until the decision, hours, and Best Buy report are documented. Contingent statutory remedies if use is proven: Penal Code § 290.46(j)(4)(A) actual/treble with a $250 floor, fees, exemplary damages, or a civil penalty capped at $25,000; ICRAA § 1786.50 actual damages or $10,000, whichever is greater. Do not import UPS/Pilot numbers.",
+  "risk": "Weaker than Swift: no rejection letter and no report. Stronger than Home Depot on the offer ($22.60, title, requisition) and on the named CRA (First Advantage). Lerma still kills the count if the Best Buy report is ordinary court records. Best Buy will move to compel arbitration based on the application-email recital; that is a defense, not pleaded as a claim. Diversity removal is likely. Naming a warehouse instead of Best Buy Co., Inc., or serving the warehouse instead of the SOS agent, would be party/service defects. Do not invent a worksite city from the Modesto collection-site option.",
+  "evidence": [
+    "Best Buy application confirmation — Oct. 13, 2023, 7:29 a.m. — General Warehouse Worker / 2nd Shift @ $22.60, requisition 928556BR; recites an arbitration policy",
+    "Best Buy offer email — Oct. 17, 2023, 3:47 p.m. — Jose Tapia, GM; Candidate Zone signature, BGC information, and BGC authorization due within 24 hours",
+    "Background Authorization Consent Confirmation — Oct. 17, 2023, 4:22 p.m. — First Advantage Consumer Center named in the Minnesota disclosure",
+    "First Advantage Best Buy drug-test order — Oct. 17, 2023, 4:30 p.m. — Q09078711; account BEST BUY 11759586; employer copy sent",
+    "Best Buy Drug Screen Reminder — Oct. 17, 2023, 5:31 p.m. — screen ordered; 'accepting your offer' is Best Buy's wording",
+    "First Advantage UPS report, July 2024 — same vendor later matched this Plaintiff to SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY; corroborates retrievability, not Best Buy transmission",
+    "Penal Code § 290.46(j)(1), (j)(2)(E), (j)(4)(A)-(B)",
+    "Lerma v. Amazon, C.D. Cal. 8:22-cv-01727, Dkt. 36 — dismissal where the report was ordinary court records"
+  ],
+  "documents": [
+    {
+      "path": "/documents/matter-39/Verified Complaint - Newanforbi v Best Buy Co Inc et al (REVIEW DRAFT for Sep 8 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-39/Thank You for Your Application - Best Buy 928556BR (Oct 13 2023).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-39/Job Offer - Best Buy General Warehouse Worker 2nd Shift (Oct 17 2023).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-39/Background Authorization Consent Confirmation (Oct 17 2023).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-39/First Advantage Best Buy Drug Test (Oct 17 2023).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-39/Best Buy Drug Screen Reminder (Oct 17 2023).pdf",
+      "filed": false
+    }
+  ]
+}
