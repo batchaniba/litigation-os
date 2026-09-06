@@ -736,6 +736,16 @@
   },
   {
     "matter": 12,
+    "label": "Gmail — Meet and Confer on service / case at issue (Aug. 31 sent; Azimov Sep. 1 10-day request)",
+    "path": "/documents/matter-12/Gmail - Meet and Confer Service Case at Issue - Azimov (Aug 31 and Sep 1 2026).pdf"
+  },
+  {
+    "matter": 12,
+    "label": "EMAIL DRAFT — grant Azimov through Sep. 11 on the A/B service pick (unsent)",
+    "path": "/documents/matter-12/EMAIL_DRAFT_Azimov_Extend_Service_Response_to_Sep11.txt"
+  },
+  {
+    "matter": 12,
     "label": "Alpine Truck Sales Inc - CA SOS Registered Agent for Service of Process (Aug 28 2026)",
     "path": "/documents/matter-12/Alpine Truck Sales Inc - CA SOS Registered Agent for Service of Process (Aug 28 2026).pdf"
   },
@@ -4338,6 +4348,31 @@
     "matter": 33,
     "label": "Proof of Service - Certification of Conflicts (Candelaria Gordon) (Sep 4 2026)",
     "path": "/documents/matter-33/ndcal/Proof of Service - Certification of Conflicts (Candelaria Gordon) (Sep 4 2026).pdf"
+  },
+  {
+    "matter": 33,
+    "label": "Dkt 11 - Answer by Defendants Candelaria and Gordon (Filed Sep 04 2026)",
+    "path": "/documents/matter-33/ndcal/Dkt 11 - Answer by Defendants Candelaria and Gordon (Filed Sep 04 2026).pdf"
+  },
+  {
+    "matter": 33,
+    "label": "Plaintiff Motion to Strike Answer (N.D. Cal. 3-26-cv-08272-LJC) (Sep 5 2026)",
+    "path": "/documents/matter-33/ndcal/Plaintiff Motion to Strike Answer (N.D. Cal. 3-26-cv-08272-LJC) (Sep 5 2026).pdf"
+  },
+  {
+    "matter": 33,
+    "label": "Proposed Order Granting Motion to Strike Answer (N.D. Cal. 3-26-cv-08272-LJC) (Sep 5 2026)",
+    "path": "/documents/matter-33/ndcal/Proposed Order Granting Motion to Strike Answer (N.D. Cal. 3-26-cv-08272-LJC) (Sep 5 2026).pdf"
+  },
+  {
+    "matter": 33,
+    "label": "Proof of Service - Motion to Strike Answer (N.D. Cal. 3-26-cv-08272-LJC) (Sep 5 2026)",
+    "path": "/documents/matter-33/ndcal/Proof of Service - Motion to Strike Answer (N.D. Cal. 3-26-cv-08272-LJC) (Sep 5 2026).pdf"
+  },
+  {
+    "matter": 33,
+    "label": "Plaintiff Motion to Strike Answer Packet with Proposed Order (N.D. Cal. 3-26-cv-08272-LJC) (Sep 5 2026)",
+    "path": "/documents/matter-33/ndcal/Plaintiff Motion to Strike Answer Packet with Proposed Order (N.D. Cal. 3-26-cv-08272-LJC) (Sep 5 2026).pdf"
   },
   {
     "matter": 33,

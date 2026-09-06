@@ -288,7 +288,7 @@
     "case_no": "STK-CV-UF-2026-0001094",
     "court": "San Joaquin Sup. Ct.",
     "claims": "Fraudulent Concealment, Intentional Misrepresentation, Negligent Misrepresentation, Breach of Contract, UCL §17200, Rescission & Restitution, Declaratory Relief",
-    "status_label": "Defense appeared, disputes service — CMC Dec. 11, 2026",
+    "status_label": "Azimov service pick due Sep. 11 — CMC Dec. 11",
     "lifecycle": "active",
     "proceeding": "state_civil",
     "phase": "service",
@@ -325,7 +325,7 @@
       }
     ],
     "evidenceCount": 15,
-    "documentCount": 81
+    "documentCount": 83
   },
   {
     "number": 13,
@@ -985,10 +985,10 @@
     "case_no": "3:26-cv-08272-LJC",
     "court": "USDC N.D. Cal. (San Francisco Div.)",
     "claims": "42 U.S.C. § 1983 — APS impartial-adjudicator / fair hearing; declaratory and injunctive relief (vacatur of APS 34739340) — Dkt. 6 (FAC filed Aug. 17, 2026) is the court pleading of record; also Candelaria / DMV APS PDF home for Matters 7/8",
-    "status_label": "FAC filed Aug. 17 (Dkt. 6) — resp. due Sep. 4; CMC Nov. 12",
+    "status_label": "Motion to Strike Answer drafted; CMC Nov. 12",
     "lifecycle": "active",
     "proceeding": "federal_civil",
-    "phase": "responsive_deadline",
+    "phase": "pleadings",
     "note": "N.D. Cal. § 1983 refile docketed Aug. 10, 2026 as No. 3:26-cv-08272-LJC (ndcal/), after voluntary dismissal of Matter 7 E.D. Cal. (confirmed filed Aug. 15, 2026). Also owns the Candelaria/DMV APS document set; Matters 7 and 8 remain historical docket records and cross-reference these paths.",
     "badge": "FAC FILED",
     "filed": "August 10, 2026 (docketed; complaint signed Aug. 7, 2026)",
@@ -1020,7 +1020,7 @@
     ],
     "archived": false,
     "evidenceCount": 18,
-    "documentCount": 56
+    "documentCount": 61
   },
   {
     "number": 34,
