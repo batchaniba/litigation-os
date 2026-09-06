@@ -2,6 +2,9 @@
 # -*- coding: utf-8 -*-
 """Matter 39 — verified complaint, Best Buy Co., Inc. / First Advantage.
 
+LOCKED after the September 8, 2026 execute. Do not rewrite pleading prose
+unless a new Best Buy or First Advantage document appears.
+
 San Joaquin Superior Court. Penal Code § 290.46(j) is the load-bearing count.
 The October 17, 2023 warehouse offer, background authorization, and First
 Advantage drug-test order are in the file. The employment decision and the

@@ -2,9 +2,13 @@
 # -*- coding: utf-8 -*-
 """Matter 37 — verified complaint, Home Depot U.S.A., Inc. (Tracy DC).
 
+LOCKED after the September 8, 2026 execute. Do not rewrite pleading prose
+unless a new Home Depot document appears.
+
 San Joaquin Superior Court. Penal Code § 290.46(j) is the load-bearing count.
-The Home Depot background report, the registry information in it, and Home
-Depot's use of that information to ghost Plaintiff are pleaded as facts.
+Hire, acceptance, onboarding, the background check, the ghost, Plaintiff's
+Megan's Law listing, and exclusive control of the file are the supporting
+facts. Report contents and Home Depot's use are information and belief.
 The Tracy building is the worksite, not the legal defendant.
 
 Default output is unsigned because the requested execution date
@@ -89,6 +93,8 @@ CAPTION_RIGHT = [
     ("      § 1785.20.5;", False, False),
     ("(3) UCL, B&P Code § 17200;", False, False),
     ("(4) Penal Code § 290.46(j)", False, False),
+    ("      (I&B — report", False, False),
+    ("      contents and use)", False, False),
     ("", False, False),
     ("[Unlimited Civil]", False, True),
     ("[Jury Trial Demanded]", False, True),
@@ -117,12 +123,20 @@ CONTENT = [
         "hired Plaintiff to work at its distribution and fulfillment center at "
         "5395 Hopkins Road, Tracy, California 95377. Plaintiff accepted that "
         "hire and began onboarding. Home Depot ran a background check concerning "
-        "Plaintiff. The background report came back with information disclosed "
-        "pursuant to Penal Code section 290.46 in it, including Plaintiff's "
-        "listing on the California Sex Offender Registry. Home Depot used that "
-        "registry information, in whole or in part, to cease communication, "
-        "ghost Plaintiff, and make an employment decision that ended or "
-        "prevented his work at the Tracy Center.",
+        "Plaintiff. Thereafter Home Depot ceased communication and ghosted him. "
+        "That cessation is the adverse employment action: it denied, withdrew, "
+        "or ended the accepted Tracy Center employment. Plaintiff is a person "
+        "as to whom information is disclosed on the California Megan's Law "
+        "website. The Home Depot background report remains in Defendants' "
+        "files. Plaintiff does not possess it and does not allege its contents "
+        "as a known fact. He is informed and believes, and on that basis "
+        "alleges, that the report contained information disclosed pursuant to "
+        "Penal Code section 290.46, including his listing on the California "
+        "Sex Offender Registry, and that Home Depot used that information, in "
+        "whole or in part, to ghost him and make the employment decision. The "
+        "basis for that belief is the hire, the screen, the unexplained ghost, "
+        "Plaintiff's contemporaneous Megan's Law listing, and Home Depot's "
+        "exclusive control of the file.",
     ),
     (
         "PARA",
@@ -135,28 +149,34 @@ CONTENT = [
     ),
     (
         "PARA",
-        "3. Those are factual allegations about Home Depot's own report and "
-        "Home Depot's own decision. He alleges: "
-        "(a) Home Depot hired him; (b) Home Depot ran a background check; "
-        "(c) the report that came back contained information disclosed pursuant "
-        "to Penal Code section 290.46, including his California Sex Offender "
-        "Registry listing; (d) Home Depot used that information to ghost him "
-        "and to make an employment decision; and (e) that use was a purpose "
-        "relating to employment, which section 290.46(j)(2)(E) forbids.",
+        "3. Those are two different classes of allegation. Plaintiff alleges "
+        "as known facts: (a) Home Depot hired him, on information and belief "
+        "on or about August 2024, at the Tracy Center; (b) he accepted and "
+        "began onboarding; (c) Home Depot ran a background check; (d) Home "
+        "Depot then ghosted him; (e) he is a person as to whom information is "
+        "disclosed pursuant to Penal Code section 290.46; and (f) the report "
+        "is in Home Depot's files. He is informed and believes, and on that "
+        "basis alleges, that the report contained information disclosed "
+        "pursuant to Penal Code section 290.46, including his California Sex "
+        "Offender Registry listing, and that Home Depot used that information "
+        "to ghost him and to make an employment decision. A warehouse or "
+        "fulfillment-center hiring, continuation, or termination decision is "
+        "a purpose relating to employment, which section 290.46(j)(2)(E) "
+        "forbids.",
     ),
     (
         "PARA",
-        "4. Taking those factual allegations as true, as this Court must on "
-        "demurrer, Plaintiff states a cause of action under Penal Code section "
-        "290.46(j) that is plausible on its face. Home Depot obtained a "
-        "background report containing Megan's Law registry information and used "
-        "that information to make an employment decision. Subdivision (j)(2)(E) "
-        "prohibits that use. Code of Civil Procedure section 425.10 requires "
-        "a statement of the facts constituting the cause of action in ordinary "
+        "4. Taking the known facts and the well-pleaded information-and-belief "
+        "allegations as true, as this Court must on demurrer, Plaintiff states "
+        "a cause of action under Penal Code section 290.46(j) that is plausible "
+        "on its face. Code of Civil Procedure section 425.10 requires a "
+        "statement of the facts constituting the cause of action in ordinary "
         "and concise language. Section 452 requires this Court to construe the "
         "pleading liberally with a view to substantial justice between the "
-        "parties. A demurrer admits the material facts properly pleaded. It "
-        "does not test whether Home Depot will later produce a different report.",
+        "parties. A demurrer admits the material facts properly pleaded, "
+        "including facts alleged on information and belief when the supporting "
+        "basis is stated. It does not test whether Home Depot will later "
+        "produce a different report.",
     ),
     (
         "PARA",
@@ -164,8 +184,8 @@ CONTENT = [
         "background report. The report, the vendor file, the order time, the "
         "access log, and the adjudication notes are in Defendants' possession. "
         "He does not attach the report because Home Depot has not given it to "
-        "him. He nonetheless alleges, as fact, what that report contained and "
-        "how Home Depot used it. Withholding the report does not make those "
+        "him. He does not allege, as a known fact, what that report contained. "
+        "Withholding the report does not make the information-and-belief "
         "allegations disappear at the pleading stage. The precise hire date, "
         "job title, rate of pay, and vendor name are likewise facts of Home "
         "Depot's personnel and screening records. Plaintiff alleges them on "
@@ -460,7 +480,8 @@ CONTENT = [
     ),
     (
         "PARA",
-        "35. The background report that came back contained information "
+        "35. Plaintiff is informed and believes, and on that basis alleges, "
+        "that the background report that came back contained information "
         "disclosed pursuant to Penal Code section 290.46 concerning Plaintiff, "
         "including his listing on the California Sex Offender Registry, a "
         "Department of Justice website or Megan's Law website result, or a "
@@ -469,10 +490,16 @@ CONTENT = [
     ),
     (
         "PARA",
-        "36. Home Depot used that registry information, in whole or in part, "
+        "36. Plaintiff is informed and believes, and on that basis alleges, "
+        "that Home Depot used that registry information, in whole or in part, "
         "to cease communication, ghost Plaintiff, and make the employment "
         "decision alleged in paragraph 29. The use was a substantial factor "
-        "in that decision. The use was a purpose relating to employment.",
+        "in that decision. The use was a purpose relating to employment. The "
+        "basis for paragraphs 35 and 36 is the combination of: the accepted "
+        "hire and begun onboarding; Home Depot's background check; Plaintiff's "
+        "contemporaneous presence on the California Megan's Law website; the "
+        "unexplained ghost; the absence of any other basis communicated to "
+        "Plaintiff; and Defendants' exclusive control of the Home Depot report.",
     ),
     (
         "PARA",
@@ -484,24 +511,26 @@ CONTENT = [
     (
         "PARA",
         "38. Home Depot did not give Plaintiff a copy of the report. It did "
-        "not tell him that the report contained registry information. It did "
         "not identify any independent, lawful, job-related ground for the "
-        "decision. The report remains in Defendants' possession.",
+        "decision. On information and belief, it did not tell him that the "
+        "report contained registry information. The report remains in "
+        "Defendants' possession.",
     ),
     (
         "PARA",
         "39. Taking the allegations in paragraphs 34 through 36 as true, "
-        "Plaintiff states a plausible claim under Penal Code section "
-        "290.46(j): Home Depot used information disclosed pursuant to that "
-        "section for a purpose relating to employment, which subdivision "
-        "(j)(2)(E) prohibits.",
+        "including those pleaded on information and belief, Plaintiff states "
+        "a plausible claim under Penal Code section 290.46(j): Home Depot "
+        "used information disclosed pursuant to that section for a purpose "
+        "relating to employment, which subdivision (j)(2)(E) prohibits.",
     ),
     (
         "PARA",
-        "40. A demurrer admits those facts. It is not an occasion for Home "
-        "Depot to substitute a different account of its own unproduced file. "
-        "If production later shows ordinary court records and no "
-        "California-registry source, this count will stand or fall on that "
+        "40. A demurrer admits those well-pleaded facts. It is not an occasion "
+        "for Home Depot to substitute a different account of its own "
+        "unproduced file. Plaintiff does not allege the report's contents as "
+        "a known fact. If production later shows ordinary court records and "
+        "no California-registry source, this count will stand or fall on that "
         "record — after production, not before.",
     ),
     (
@@ -525,11 +554,14 @@ CONTENT = [
         "Dkt. 36, dismissed a Megan's Law count after the employer's report was "
         "in the record and showed ordinary court records and a national "
         "sex-offender search returning no record. That dismissal turned on the "
-        "report. This Complaint alleges that Home Depot's report contained "
-        "registry information and that Home Depot used it. Taking those "
-        "allegations as true, a court cannot perform a Lerma analysis on the "
-        "face of this pleading. Defendants may not obtain a pleading-stage "
-        "dismissal by withholding the report Plaintiff has alleged."
+        "report. This Complaint does not attach Home Depot's report. Plaintiff "
+        "does not allege its contents as a known fact. He is informed and "
+        "believes, and on that basis alleges, that Home Depot's report "
+        "contained registry information and that Home Depot used it. A court "
+        "cannot perform a Lerma analysis on the face of a complaint that does "
+        "not contain the employer's report. Defendants may not obtain a "
+        "pleading-stage dismissal by withholding the one document that would "
+        "confirm or refute the inference."
     ),
     ("SUBHEAD", "D. Knowledge, Concealment, and Harm"),
     (
@@ -584,11 +616,13 @@ CONTENT = [
         "disclosed pursuant to section 290.46; (b) use of that information by "
         "a defendant; (c) a purpose relating to employment; and (d) the use "
         "was not to protect a person at risk and was not otherwise authorized "
-        "by law. Plaintiff alleges each element as fact. The report contained "
+        "by law. Plaintiff is informed and believes, and on that basis "
+        "alleges, each element. On that belief, the report contained "
         "information disclosed pursuant to section 290.46. Home Depot used "
         "that information. The use related to the Tracy Center hire and the "
         "later employment decision. The use was not, without more, protection "
-        "of a person at risk. Taking those allegations as true, the claim is "
+        "of a person at risk. The basis is alleged in paragraphs 1, 3, 5, and "
+        "34 through 36. Taking those allegations as true, the claim is "
         "plausible.",
     ),
     (
@@ -818,7 +852,8 @@ CONTENT = [
     (
         "SUBHEAD",
         "Unauthorized Employment Use of Registry Information\n"
-        "Penal Code section 290.46(j) — Against All Defendants",
+        "Penal Code section 290.46(j) — Against All Defendants\n"
+        "(Pleaded on Information and Belief — Report Contents and Use)",
     ),
     (
         "PARA",
@@ -860,13 +895,15 @@ CONTENT = [
     ),
     (
         "PARA",
-        "56. Each element alleged in paragraph 48 is satisfied. Home Depot "
-        "used information disclosed pursuant to section 290.46 concerning "
-        "Plaintiff. The user is the employer that takes the information into "
-        "account in making the employment decision, not a consumer reporting "
-        "agency that merely retrieves, scores, or republishes it. Plaintiff "
-        "does not name a vendor as a defendant on this count. This count is "
-        "directed at Home Depot's use.",
+        "56. Each element alleged in paragraph 48 is satisfied on the "
+        "information-and-belief basis stated there. Plaintiff is informed and "
+        "believes, and on that basis alleges, that Home Depot used information "
+        "disclosed pursuant to section 290.46 concerning Plaintiff. The user "
+        "is the employer that takes the information into account in making "
+        "the employment decision, not a consumer reporting agency that merely "
+        "retrieves, scores, or republishes it. Plaintiff does not name a "
+        "vendor as a defendant on this count. This count is directed at Home "
+        "Depot's use.",
     ),
     (
         "PARA",

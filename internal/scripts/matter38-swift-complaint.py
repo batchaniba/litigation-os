@@ -2,11 +2,16 @@
 # -*- coding: utf-8 -*-
 """Matter 38 — verified complaint, Swift Transportation Co. of Arizona LLC.
 
+LOCKED after the September 8, 2026 execute. Do not rewrite pleading prose
+unless a new Swift or vendor document appears.
+
 San Joaquin Superior Court. The decrypted Sept. 26, 2023 pre-adverse packet
-is in hand. NSOPW remained Processing. Plaintiff pleads on information and
-belief that Swift used preliminary sex-offender-registry information from
-that in-process component, in whole or in part, in the denial. ICRAA and
-UCL remain independent paths.
+is in hand. NSOPW remained Processing on every snapshot furnished to
+Plaintiff. The furnished packet contains neither a completed hit nor a
+completed no-record. Plaintiff pleads on information and belief that Swift
+used preliminary sex-offender-registry information from that in-process
+component, in whole or in part, in the denial. ICRAA and UCL remain
+independent paths.
 
 Default output is unsigned. On or after September 8, 2026, rerun with
 ``--execute`` only after Plaintiff confirms the role.
@@ -135,8 +140,9 @@ CONTENT = [
         "returned Clear / No Reportable Records Found. Federal criminal "
         "returned Clear. The county criminal searches that had completed "
         "returned Clear. The National Sex Offender Public Website component "
-        "remained 'Processing' on every snapshot in the packet. It never "
-        "completed. It reported no hit. Clearinghouse returned Driver Not "
+        "remained 'Processing' on every snapshot furnished to Plaintiff. The "
+        "furnished packet contains neither a completed hit nor a completed "
+        "no-record. Clearinghouse returned Driver Not "
         "Prohibited. What the packet does contain — a Class A commercial "
         "driver's license, an April 22, 2022 improper-lane moving violation "
         "with zero points, PSP inspection history, and a CDLIS license-"
@@ -560,9 +566,12 @@ CONTENT = [
     ),
     (
         "PARA",
-        "43. The NSOPW component was still Processing. A search that never "
-        "completed is not a completed 'no record' result. It is also not a "
-        "completed printed hit. Plaintiff is informed and believes, and on "
+        "43. The NSOPW component remained Processing on every snapshot "
+        "furnished to Plaintiff. The furnished packet contains neither a "
+        "completed hit nor a completed no-record. What happened after those "
+        "snapshots — including any later completion, interim display, or "
+        "adjudication use — is a fact of discovery. Plaintiff is informed "
+        "and believes, and on "
         "that basis alleges, that Swift or a DOE obtained, displayed, "
         "scored, or was informed of preliminary information from that "
         "in-process NSOPW component citing a sex-offender registry — "
@@ -624,9 +633,10 @@ CONTENT = [
         "Dkt. 36, dismissed a Megan's Law count after the employer's report "
         "was in the record and showed ordinary court records and a completed "
         "national sex-offender search returning no record. This packet is "
-        "not that report. The NSOPW component never completed. A demurrer "
-        "may take the printed snapshots as what Plaintiff has pleaded them "
-        "to be. It cannot convert an incomplete NSOPW into Lerma's completed "
+        "not that report. The NSOPW component remained Processing on every "
+        "snapshot furnished to Plaintiff. A demurrer may take the printed "
+        "snapshots as what Plaintiff has pleaded them to be. It cannot "
+        "convert those incomplete snapshots into Lerma's completed "
         "no-record search, and it cannot decide — without the adjudication "
         "log — whether Swift used preliminary registry information from that "
         "in-process component. Defendants may not obtain a pleading-stage "
