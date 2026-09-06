@@ -636,14 +636,48 @@ const lawyer_fees_raw = [
       mid: 3080
     },
     notes: "Sep. 6 drafting of an unsigned 20-page three-count verified-complaint review draft against Home Depot U.S.A., Inc. for the Tracy DC hire. Estimate covers entity/agent research, I&B pleading, SOL/Tameny omission, and pleading-paper rendering. No demand or CRD charge."
+  },
+  {
+    number: 38,
+    type: "State — Penal Code § 290.46(j) I&B / Complaint Review Draft",
+    documentsCount: 10,
+    totalPagesReal: 20,
+    hours: {
+      low: 6,
+      high: 12,
+      mid: 9
+    },
+    cost: {
+      low: 1680,
+      high: 3360,
+      mid: 2520
+    },
+    notes: "Sep. 6 intake of Swift recruiting, Clearinghouse, and FCRA emails plus the Oct. 5, 2023 post-adverse letter, and drafting of an unsigned 20-page three-count verified-complaint review draft. Estimate covers chronology, FMCSA/290 distinction, SOL/Tameny/FCRA omission, and pleading-paper rendering. Encrypted pre-adverse unread. No demand or CRD charge."
+  },
+  {
+    number: 39,
+    type: "State — Penal Code § 290.46(j) I&B / Complaint Review Draft",
+    documentsCount: 6,
+    totalPagesReal: 20,
+    hours: {
+      low: 6,
+      high: 11,
+      mid: 8.5
+    },
+    cost: {
+      low: 1680,
+      high: 3080,
+      mid: 2380
+    },
+    notes: "Sep. 6 intake of Best Buy application, offer, authorization, and First Advantage drug-test emails, and drafting of an unsigned 20-page three-count verified-complaint review draft against Best Buy Co., Inc. and First Advantage Background Services Corp. Estimate covers chronology, arbitration-recital risk, SOL/Tameny/FCRA omission, and pleading-paper rendering. No rejection letter. No demand or CRD charge."
   }
 ];
 
 export const lawyer_fees = lawyer_fees_raw.map((row) => withMatterIdentity(row));
 
 export const lawyer_fees_summary = {
-  analysisDate: "2026-09-05",
-  totalMatters: 37,
+  analysisDate: "2026-09-06",
+  totalMatters: 39,
   totalDocumentsAnalyzed: 601,
   totalPagesReal: 6864,
   methodology: {
@@ -656,7 +690,7 @@ export const lawyer_fees_summary = {
   byCluster: {
     cluster1: { label: "CHP / DUI / DMV", matters: [1, 2, 7, 8, 20, 24, 32, 33], costLow: 172676, costMid: 230272, costHigh: 287868 },
     cluster2: { label: "Parole Retaliation / HOPE", matters: [3, 4, 5, 6, 11, 13, 14, 15, 16, 17, 18, 21, 28, 30, 34], costLow: 469672, costMid: 619192, costHigh: 772912 },
-    cluster3: { label: "Consumer Fraud / Employment", matters: [12, 22, 23, 25, 26, 27, 29, 31, 36], costLow: 154896, costMid: 210826, costHigh: 266756 },
+    cluster3: { label: "Consumer Fraud / Employment", matters: [12, 22, 23, 25, 26, 27, 29, 31, 36, 37, 38, 39], costLow: 154896, costMid: 210826, costHigh: 266756 },
     cluster4: { label: "Administrative Writs & Habeas", matters: [9, 10, 19], costLow: 41580, costMid: 57890, costHigh: 74200 },
     cluster6: { label: "Public Accommodation / Unruh", matters: [35], costLow: 14280, costMid: 19460, costHigh: 24640 },
   },

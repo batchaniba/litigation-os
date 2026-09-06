@@ -856,6 +856,40 @@ const matter_damages_raw = [
         aggressive: 0
       }
     ]
+  },
+  {
+    number: 38,
+    claims: "Penal Code § 290.46(j) I&B — Swift driver application / Oct. 5, 2023 denial",
+    risk: "Review draft only. Written post-adverse admits consumer-report use; the underlying reports are not in the file. Valuation stays at $0 until the reports show a registry source.",
+    settlement_note: "No demand. Do not import UPS/Pilot statutory figures. File before Sept. 26, 2026 if the pre-adverse date is treated as accrual.",
+    conservative: 0,
+    moderate: 0,
+    aggressive: 0,
+    components: [
+      {
+        label: "Reserved — obtain Asurint/Tenstreet/DriverIQ reports and the decrypted pre-adverse packet before valuation",
+        conservative: 0,
+        moderate: 0,
+        aggressive: 0
+      }
+    ]
+  },
+  {
+    number: 39,
+    claims: "Penal Code § 290.46(j) I&B — Best Buy warehouse offer / First Advantage screen",
+    risk: "Review draft only. Written $22.60 offer is in the file; no rejection letter or Best Buy report. Valuation stays at $0 until the decision and the report are documented.",
+    settlement_note: "No demand. Do not import UPS/Pilot statutory figures. Confirm the decision date before treating October 17, 2026 as a real clock.",
+    conservative: 0,
+    moderate: 0,
+    aggressive: 0,
+    components: [
+      {
+        label: "Reserved — obtain the Best Buy First Advantage report, decision date, and hours/start before valuation",
+        conservative: 0,
+        moderate: 0,
+        aggressive: 0
+      }
+    ]
   }
 ];
 

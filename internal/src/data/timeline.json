@@ -11,6 +11,116 @@
     "source": "/documents/matter-37/Verified Complaint - Newanforbi v Home Depot USA Inc (REVIEW DRAFT for Sep 8 2026).pdf"
   },
   {
+    "date": "Sep. 8, 2026",
+    "event": "EXECUTE (optional) \u2014 Verified complaint review draft against Swift Transportation Co. of Arizona LLC (Matter 38), proposed execution September 8, 2026. Unsigned until Plaintiff confirms the driver role, decrypts the Sept. 26, 2023 pre-adverse packet, and confirms nonreceipt of the underlying Asurint/Tenstreet/DriverIQ reports. Do not file the review draft as-is. San Joaquin Superior Court. Serve the current SOS agent, not a terminal.",
+    "matters": [
+      38
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-38/Verified Complaint - Newanforbi v Swift Transportation Co of Arizona LLC (REVIEW DRAFT for Sep 8 2026).pdf"
+  },
+  {
+    "date": "Sep. 8, 2026",
+    "event": "EXECUTE (optional) \u2014 Verified complaint review draft against Best Buy Co., Inc. and First Advantage Background Services Corp. (Matter 39), proposed execution September 8, 2026. Unsigned until Plaintiff confirms what happened after the Oct. 17, 2023 warehouse offer, the decision date, notices, and whether he signed Candidate Zone or completed the drug test. Do not file the review draft as-is. San Joaquin Superior Court. Serve the current SOS agents, not a warehouse.",
+    "matters": [
+      39
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-39/Verified Complaint - Newanforbi v Best Buy Co Inc et al (REVIEW DRAFT for Sep 8 2026).pdf"
+  },
+  {
+    "date": "Sep. 26, 2026",
+    "event": "OUTER BOUND \u2014 CCP \u00a7 338(a) three-year statutory-liability clock on the Swift \u00a7 290.46(j) count if accrual is the Sept. 26, 2023 pre-adverse email. Post-adverse is Oct. 5, 2023 (Oct. 5, 2026). This is a limitations argument sourced to the Swift FCRA emails, not a court-ordered deadline. File before the earlier date.",
+    "matters": [
+      38
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-38/Swift FCRA Email - Pre-Adverse (Sep 26 2023).pdf"
+  },
+  {
+    "date": "Oct. 17, 2026",
+    "event": "OUTER BOUND \u2014 CCP \u00a7 338(a) three-year statutory-liability clock on the Best Buy \u00a7 290.46(j) count if accrual is the Oct. 17, 2023 offer / same-day screen week. The file has no dated rejection. This is a limitations argument sourced to the offer email, not a court-ordered deadline. Confirm the actual decision date.",
+    "matters": [
+      39
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-39/Job Offer - Best Buy General Warehouse Worker 2nd Shift (Oct 17 2023).pdf"
+  },
+  {
+    "date": "Sep. 22, 2023",
+    "event": "SWIFT APPLICATION INTAKE \u2014 Driver recruiters Robin Kaufman (3:02 p.m.) and Matt Hutto (10:03 p.m.) emailed Plaintiff through Tenstreet on behalf of Swift Transportation Co. of Arizona LLC and asked him to complete the full driver application. No job title or pay is in the emails.",
+    "matters": [
+      38
+    ],
+    "type": "employment",
+    "upcoming": false,
+    "actor": "you",
+    "source": "/documents/matter-38/Application Received - Swift Transportation (Sep 22 2023).pdf"
+  },
+  {
+    "date": "Sep. 25, 2023",
+    "event": "SWIFT SCREENING \u2014 Tenstreet posted a DriverIQ employment document at 11:54 a.m. FMCSA emailed at 11:58 a.m. that SWIFT TRANSPORTATION CO OF ARIZONA LLC (USDOT 54283) had requested Clearinghouse access. Tenstreet posted the Clearinghouse result at 1:20 p.m. Contents of those results are not in the file.",
+    "matters": [
+      38
+    ],
+    "type": "employment",
+    "upcoming": false,
+    "actor": "opposing",
+    "source": "/documents/matter-38/FMCSA Clearinghouse Consent Requested - Swift (Sep 25 2023).pdf"
+  },
+  {
+    "date": "Sep. 26, 2023",
+    "event": "SWIFT PRE-ADVERSE \u2014 Swift Recruiting emailed a password-protected Pre_Adverse_Action_Letter_76326281-1916808-encrypted.pdf at 3:09 a.m. The attachment in the portfolio remains encrypted. Contents are not alleged as known facts.",
+    "matters": [
+      38
+    ],
+    "type": "employment",
+    "upcoming": false,
+    "actor": "opposing",
+    "source": "/documents/matter-38/Swift FCRA Email - Pre-Adverse (Sep 26 2023).pdf"
+  },
+  {
+    "date": "Oct. 5, 2023",
+    "event": "SWIFT POST-ADVERSE \u2014 Swift Transportation Co. of Arizona LLC letter dated 5:09 a.m. (emailed 3:09 a.m.) states Swift decided not to employ Plaintiff based in whole or in part on consumer reports from Asurint, Tenstreet, DriverIQ, FMCSA-DOT, and Equifax Work Number. The uploaded packet is the cover letter and rights summaries, not the underlying reports.",
+    "matters": [
+      38
+    ],
+    "type": "employment",
+    "upcoming": false,
+    "actor": "opposing",
+    "source": "/documents/matter-38/Post-Adverse Action Letter - Swift (Oct 5 2023).pdf"
+  },
+  {
+    "date": "Oct. 13, 2023",
+    "event": "BEST BUY APPLICATION \u2014 Best Buy Human Resources emailed that it had received Plaintiff's submission for General Warehouse Worker / 2nd Shift at $22.60, requisition 928556BR. The email recites an arbitration policy as a condition of application; the policy PDF is not in this upload.",
+    "matters": [
+      39
+    ],
+    "type": "employment",
+    "upcoming": false,
+    "actor": "you",
+    "source": "/documents/matter-39/Thank You for Your Application - Best Buy 928556BR (Oct 13 2023).pdf"
+  },
+  {
+    "date": "Oct. 17, 2023",
+    "event": "BEST BUY OFFER AND SAME-DAY SCREEN \u2014 At 3:47 p.m. Jose Tapia, General Manager, emailed an offer for General Warehouse Worker / 2nd Shift at $22.60 and required Candidate Zone signature, background-check information, and authorization within 24 hours. At 4:22 p.m. Best Buy sent a background-authorization confirmation naming First Advantage. At 4:30 p.m. First Advantage ordered a Best Buy drug test (Q09078711). At 5:31 p.m. Best Buy HR reminded him to complete the screen. No rejection letter is in the file.",
+    "matters": [
+      39
+    ],
+    "type": "employment",
+    "upcoming": false,
+    "actor": "opposing",
+    "source": "/documents/matter-39/Job Offer - Best Buy General Warehouse Worker 2nd Shift (Oct 17 2023).pdf"
+  },
+  {
     "date": "Sep. 21, 2026",
     "event": "MOOT \u2014 Consent to / Decline of Magistrate Judge jurisdiction outer target, Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). UPS filed a Notice of Decline of Jurisdiction of United States Magistrate Judge on Aug. 24, 2026 (Dkt. 5; COS Dkt. 6). Both sides must consent for a full referral. Plaintiff's later-executed Sep. 1 consent form cannot create one. The case remains assigned to Judge Drozd and referred to Judge Delaney for pretrial matters. Dkt. 9 is set before Delaney on Oct. 7.",
     "matters": [
