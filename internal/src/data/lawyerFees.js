@@ -607,7 +607,7 @@ const lawyer_fees_raw = [
     number: 36,
     type: "State — FCRA / ICRAA / Contract / § 290.46(j) (San Joaquin, executed unfiled)",
     documentsCount: 33,
-    totalPagesReal: 134,
+    totalPagesReal: 136,
     hours: {
       low: 40,
       high: 72,
@@ -618,7 +618,7 @@ const lawyer_fees_raw = [
       high: 20160,
       mid: 15680
     },
-    notes: "Sep. 6 true-up, then lock: 37-page signed ten-count verified complaint (FCRA willfulness facts, CCRAA alternative, strengthened concealment, UCL unlawful-prong cites). Civil Code § 1786.16 is reserved until the exact authorization package is in hand, not pleaded from the 10:19 task. Packet is 46 pages. San Joaquin walk-up: CM-010 (3), FW-001 (2), FW-003 (3), SUM-100 (1) at 0.5–2 hr/doc administrative rates; Filing Packet billed as assembly. Hiring-record emails, SMS screenshot, findings memorandum, and formal offer carry forward. First Advantage is not a named defendant. Unfiled; no demand or CRD charge."
+    notes: "Sep. 6 true-up, then lock: 38-page signed ten-count verified complaint (FCRA willfulness facts, CCRAA alternative, strengthened concealment, UCL unlawful-prong cites). Civil Code § 1786.16 is reserved until the exact authorization package is in hand, not pleaded from the 10:19 task. Packet is 47 pages. San Joaquin walk-up: CM-010 (3), FW-001 (2), FW-003 (3), SUM-100 (1) at 0.5–2 hr/doc administrative rates; Filing Packet billed as assembly. Hiring-record emails, SMS screenshot, findings memorandum, and formal offer carry forward. First Advantage is not a named defendant. Unfiled; no demand or CRD charge."
   },
   {
     number: 37,
@@ -658,7 +658,7 @@ const lawyer_fees_raw = [
     number: 39,
     type: "State — ICRAA / UCL / § 290.46(j) I&B (San Joaquin, executed unfiled)",
     documentsCount: 11,
-    totalPagesReal: 68,
+    totalPagesReal: 70,
     hours: {
       low: 11,
       high: 26,
@@ -669,7 +669,7 @@ const lawyer_fees_raw = [
       high: 7280,
       mid: 5180
     },
-    notes: "Sep. 6 true-up, then demurrer-harden: 24-page signed four-count verified complaint (ICRAA, CCRAA alternative, UCL, § 290). Packet is 33 pages. CM-010, FW-001, FW-003, and SUM-100 plus the Filing Packet are billed as in Matters 36/37. Application, $22.60 offer, authorization, and First Advantage drug-test emails carry forward. First Advantage is not a named defendant. Unfiled; no demand or CRD charge."
+    notes: "Sep. 6 true-up, then lock: 25-page signed four-count verified complaint (ICRAA, CCRAA alternative, UCL, § 290). Report contents and use are I&B, pleaded like Home Depot, with the repeating Clear-criminal / registry-only-adverse structure of other produced reports as supporting information. Packet is 34 pages. CM-010, FW-001, FW-003, and SUM-100 plus the Filing Packet are billed as in Matters 36/37. Application, $22.60 offer, authorization, and First Advantage drug-test emails carry forward. First Advantage is not a named defendant. Unfiled; no demand or CRD charge."
   }
 ];
 

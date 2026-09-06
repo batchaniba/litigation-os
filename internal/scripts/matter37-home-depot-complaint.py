@@ -135,8 +135,10 @@ CONTENT = [
         "Sex Offender Registry, and that Home Depot used that information, in "
         "whole or in part, to ghost him and make the employment decision. The "
         "basis for that belief is the hire, the screen, the unexplained ghost, "
-        "Plaintiff's contemporaneous Megan's Law listing, and Home Depot's "
-        "exclusive control of the file.",
+        "Plaintiff's contemporaneous Megan's Law listing, Home Depot's "
+        "exclusive control of the file, and the repeating structure of other "
+        "employment consumer reports concerning this same Plaintiff that "
+        "have been produced, as alleged in paragraph 36.",
     ),
     (
         "PARA",
@@ -499,7 +501,17 @@ CONTENT = [
         "hire and begun onboarding; Home Depot's background check; Plaintiff's "
         "contemporaneous presence on the California Megan's Law website; the "
         "unexplained ghost; the absence of any other basis communicated to "
-        "Plaintiff; and Defendants' exclusive control of the Home Depot report.",
+        "Plaintiff; Defendants' exclusive control of the Home Depot report; "
+        "and other employment consumer reports concerning this same "
+        "Plaintiff that have been produced, which show a repeating structure "
+        "— ordinary county, federal, and national criminal-history "
+        "components returned Clear, No Record, or Eligible, and the only "
+        "component that returned Consider, Ineligible, Needs Approval, "
+        "Decisional, or a listed-on-registry result was information "
+        "disclosed pursuant to Penal Code section 290.46. Plaintiff does "
+        "not allege that any other employer's report is Home Depot's "
+        "report. He states that structure as information supporting his "
+        "belief about the unseen Home Depot report.",
     ),
     (
         "PARA",

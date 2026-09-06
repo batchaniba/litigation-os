@@ -589,10 +589,22 @@ CONTENT = [
         "in part on consumer reports; the completed criminal, Clearinghouse, "
         "and MVR components that are in the packet do not themselves "
         "explain a registry-based denial; Plaintiff was then listed on the "
-        "California Megan's Law website; and the interim NSOPW return, "
-        "adjudication notes, and "
-        "decision-maker communications are exclusively in Defendants' "
-        "possession.",
+        "California Megan's Law website; the interim NSOPW return, "
+        "adjudication notes, and decision-maker communications are "
+        "exclusively in Defendants' possession; and other employment "
+        "consumer reports concerning this same Plaintiff that have been "
+        "produced show a repeating structure — ordinary county, federal, "
+        "and national criminal-history components returned Clear, No "
+        "Record, or Eligible, and the only component that returned "
+        "Consider, Ineligible, Needs Approval, Decisional, or a "
+        "listed-on-registry result was information disclosed pursuant to "
+        "Penal Code section 290.46. The completed criminal components in "
+        "the Swift packet match that ordinary-criminal half of the "
+        "structure. The unfinished NSOPW component is the remaining half. "
+        "Plaintiff does not allege that any other employer's report is "
+        "Swift's report. He states that structure as information "
+        "supporting his belief about preliminary registry use from the "
+        "still-Processing NSOPW component.",
     ),
     (
         "PARA",

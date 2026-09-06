@@ -43,7 +43,7 @@
     "Confirmation of Employee ID 573787, December 15, 2025 — assignment to PTC Lodi, CA, Retail Travel Center 617",
     "Preboarding and Onboarding Task Assignment emails, December 15, 2025",
     "Checkr background check initiation email, December 15, 2025",
-    "Checkr Consumer Report (Report ID: 43f3d4df15540eaf0ba009f3), completed December 23, 2025 — Overall Status 'Consider'; County Searches 'Clear' in all jurisdictions; Sex Offender Search flagging CA Registry only",
+    "Checkr Consumer Report (Report ID: 43f3d4df15540eaf0ba009f3), completed December 23, 2025 — Overall Status 'Consider'; SSN Trace Complete; Global Watchlist Clear; National Search Complete; County Searches Clear in San Joaquin CA, Washoe NV, Santa Clara CA, and Sheridan WY; Sex Offender Search Consider — CA SEX OFFENDER REGISTRY (now in the public folder)",
     "Post-Adverse Action Notice from Pilot Travel Centers LLC, December 30, 2025, 5:10 p.m., explicitly citing 'REGISTRATION IN CA SEX OFFENDER REGISTRY' as sole basis",
     "Valley Strong Credit Union account statements showing weekly paychecks: Dec. 19, 2025 ($425.67); Dec. 29, 2025 ($915.29); Jan. 5, 2026 ($857.26); Jan. 9, 2026 ($426.11); Jan. 23, 2026 ($48.69 — final)",
     "Email chain dated December 1, 2025 — Plaintiff's disclosure to Brian O'Toole: 'Unfortunately, I have fell on hard times financially and I am in need of help. Well, namely I need a job. My phone is disconnected because of this reason'",
@@ -63,6 +63,10 @@
     },
     {
       "path": "/documents/matter-22/Post-adverse action notice - Pilot Travel Centers LLC 2.pdf"
+    },
+    {
+      "path": "/documents/matter-22/Checkr Consumer Report - Pilot Travel Centers (Dec 23 2025).pdf",
+      "filed": false
     },
     {
       "path": "/documents/matter-22/Demand Letter Newanforbi v Pilot Travel Centers.pdf"

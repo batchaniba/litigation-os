@@ -2,8 +2,9 @@
 # -*- coding: utf-8 -*-
 """Matter 39 — verified complaint, Best Buy Co., Inc. / First Advantage.
 
-LOCKED after the September 8, 2026 execute. Do not rewrite pleading prose
-unless a new Best Buy or First Advantage document appears.
+LOCKED after the September 8, 2026 execute except for the Checkr-pattern
+I&B pass. Do not rewrite pleading prose unless a new Best Buy or First
+Advantage document appears.
 
 San Joaquin Superior Court. Penal Code § 290.46(j) is the load-bearing count.
 The October 17, 2023 warehouse offer, background authorization, and First
@@ -89,6 +90,8 @@ CAPTION_RIGHT = [
     ("      § 1785.20.5;", False, False),
     ("(3) UCL, B&P Code § 17200;", False, False),
     ("(4) Penal Code § 290.46(j)", False, False),
+    ("      (I&B — report", False, False),
+    ("      contents and use)", False, False),
     ("", False, False),
     ("[Unlimited Civil]", False, True),
     ("[Jury Trial Demanded]", False, True),
@@ -132,10 +135,14 @@ CONTENT = [
     (
         "PARA",
         "2. Plaintiff is informed and believes, and on that basis alleges, that "
-        "Best Buy used information disclosed pursuant to Penal Code section "
-        "290.46 — Plaintiff's status as a person required to register under "
-        "Penal Code section 290, as published on the California Sex Offender "
-        "Registry — for purposes relating to that employment.",
+        "the First Advantage background report obtained by Best Buy contained "
+        "information disclosed pursuant to Penal Code section 290.46 "
+        "concerning Plaintiff — including his listing on the California Sex "
+        "Offender Registry, a Department of Justice website result, or a "
+        "derivative sex-offender compilation whose source of record was the "
+        "California registry — and that Best Buy used that information, in "
+        "whole or in part, to cease communication, ghost Plaintiff, and make "
+        "the employment decision.",
     ),
     (
         "PARA",
@@ -148,25 +155,23 @@ CONTENT = [
     ),
     (
         "PARA",
-        "4. Plaintiff does not allege registry use merely because he is "
-        "registered. The inference rests on concrete facts: (a) Best Buy "
-        "offered him the warehouse job; (b) Best Buy required a consumer "
-        "report and investigative consumer report as a condition of that "
-        "offer; (c) First Advantage was the named screening vendor and "
-        "ordered the drug test the same afternoon; (d) Plaintiff was then "
-        "listed on the California Megan's Law website; (e) Best Buy did not, "
-        "to Plaintiff's knowledge, identify any independent, lawful, "
-        "job-related basis for undoing the offer; and (f) the screening file "
-        "is exclusively within Defendants' possession.",
+        "4. Plaintiff is informed and believes, and on that basis alleges, "
+        "that the First Advantage background report obtained by Best Buy "
+        "contained information disclosed pursuant to Penal Code section "
+        "290.46 concerning Plaintiff — including his listing on the "
+        "California Sex Offender Registry, a Department of Justice website "
+        "result, or a derivative sex-offender compilation whose source of "
+        "record was the California registry.",
     ),
     (
         "PARA",
-        "5. Plaintiff does not possess the Best Buy First Advantage report "
-        "and does not allege its contents as a known fact. On information "
-        "and belief, that report — or the screening process that produced "
-        "it — contained or was informed of information disclosed pursuant "
-        "to Penal Code section 290.46 concerning Plaintiff. The report, "
-        "the order, the adjudication notes, and the decision-maker "
+        "5. Plaintiff is informed and believes, and on that basis alleges, "
+        "that Best Buy used that registry information, in whole or in part, "
+        "to cease communication, ghost Plaintiff, and make the employment "
+        "decision. The use was a substantial factor in that decision. "
+        "Plaintiff does not possess the Best Buy First Advantage report and "
+        "does not allege its contents as a known fact. The report, the "
+        "order, the adjudication notes, and the decision-maker "
         "communications are in Defendants' possession. Plaintiff will seek "
         "them in discovery."
     ),
@@ -538,31 +543,47 @@ CONTENT = [
     ),
     (
         "PARA",
-        "41. On information and belief, Best Buy or First Advantage obtained, "
-        "accessed, displayed, scored, or was informed of information disclosed "
-        "pursuant to Penal Code section 290.46 concerning Plaintiff — including "
-        "a California Sex Offender Registry listing, a Department of Justice "
-        "website result, or a derivative national sex-offender compilation "
-        "whose source of record was the California registry — in connection "
-        "with the warehouse offer or the later employment decision.",
+        "41. Plaintiff is informed and believes, and on that basis alleges, "
+        "that the First Advantage background report obtained by Best Buy "
+        "contained information disclosed pursuant to Penal Code section "
+        "290.46 concerning Plaintiff — including a California Sex Offender "
+        "Registry listing, a Department of Justice website result, or a "
+        "derivative national sex-offender compilation whose source of "
+        "record was the California registry — in connection with the "
+        "warehouse offer or the later employment decision.",
     ),
     (
         "PARA",
-        "42. On information and belief, Best Buy used that information for "
-        "purposes relating to employment when it made the decision alleged in "
-        "paragraph 34. The use was a substantial factor in the decision. "
+        "42. Plaintiff is informed and believes, and on that basis alleges, "
+        "that Best Buy used that registry information, in whole or in part, "
+        "to cease communication, ghost Plaintiff, and make the employment "
+        "decision alleged in paragraph 34. The use was a substantial factor "
+        "in the decision. The use was a purpose relating to employment. "
         "First Advantage is not named as a defendant. This count is Best "
         "Buy's use, not a vendor's mere retrieval or republication.",
     ),
     (
         "PARA",
-        "43. The basis for paragraphs 41 and 42 is the combination of: the "
-        "written offer; the same-day background authorization and First "
-        "Advantage drug-test order; First Advantage's role as Best Buy's "
-        "named CRA; Plaintiff's contemporaneous presence on the California "
-        "Megan's Law website; the absence of any other basis communicated "
-        "to Plaintiff; and Defendants' exclusive control of the Best Buy "
-        "report.",
+        "43. The basis for paragraphs 41 and 42 is the combination of: (a) the "
+        "written offer; (b) Best Buy required a background check through "
+        "First Advantage as a condition of that offer; (c) the same-day "
+        "background authorization and First Advantage drug-test order; "
+        "(d) First Advantage's role as Best Buy's named CRA; (e) Plaintiff's "
+        "contemporaneous presence on the California Megan's Law website; "
+        "(f) Best Buy did not identify any independent, lawful, job-related "
+        "basis for the decision; (g) Defendants' exclusive control of the "
+        "Best Buy report; and (h) other employment consumer reports "
+        "concerning this same Plaintiff that have been produced show a "
+        "repeating structure — ordinary county, federal, and national "
+        "criminal-history components returned Clear, No Record, or Eligible, "
+        "and the only component that returned Consider, Ineligible, Needs "
+        "Approval, Decisional, or a listed-on-registry result was "
+        "information disclosed pursuant to Penal Code section 290.46. "
+        "First Advantage is among the consumer reporting agencies that have "
+        "furnished that structure for this Plaintiff. Plaintiff does not "
+        "allege that any other employer's report is Best Buy's report. He "
+        "states that structure as information supporting his belief about "
+        "the unseen Best Buy First Advantage report.",
     ),
     (
         "PARA",
@@ -656,9 +677,12 @@ CONTENT = [
         "disclosed pursuant to section 290.46; (b) use of that information by "
         "a defendant; (c) a purpose relating to employment; and (d) the use "
         "was not to protect a person at risk and was not otherwise authorized "
-        "by law. Plaintiff pleads each element. Elements (a) and (b) are "
-        "pleaded on information and belief. Elements (c) and (d) follow from "
-        "the written warehouse offer and the later employment decision. A "
+        "by law. Plaintiff is informed and believes, and on that basis "
+        "alleges, each of (a) and (b). On that belief, the First Advantage "
+        "report contained information disclosed pursuant to section 290.46 "
+        "and Best Buy used that information. Elements (c) and (d) follow "
+        "from the written warehouse offer and the later employment decision. "
+        "The basis is alleged in paragraphs 4, 5, and 41 through 43. A "
         "demurrer tests the pleading, not the unproduced report. Defendants "
         "may deny registry use. They may not convert that denial into a "
         "Lerma dismissal while the report remains in their possession.",
@@ -855,7 +879,8 @@ CONTENT = [
     (
         "SUBHEAD",
         "Unauthorized Employment Use of Registry Information\n"
-        "Penal Code section 290.46(j) — Against All Defendants",
+        "Penal Code section 290.46(j) — Against All Defendants\n"
+        "(Pleaded on Information and Belief — Report Contents and Use)",
     ),
     (
         "PARA",
@@ -888,9 +913,14 @@ CONTENT = [
     ),
     (
         "PARA",
-        "57. On information and belief, each element alleged in paragraph 52 "
-        "is satisfied. Best Buy used information disclosed pursuant to "
-        "section 290.46 concerning Plaintiff. The user is the employer that "
+        "57. Each element alleged in paragraph 52 is satisfied on the "
+        "information-and-belief basis stated in paragraphs 4, 5, 41, 42, "
+        "and 43. Plaintiff is informed and believes, and on that basis "
+        "alleges, that Best Buy's First Advantage report contained "
+        "information disclosed pursuant to section 290.46 concerning "
+        "Plaintiff and that Best Buy used that information for purposes "
+        "relating to employment when it ghosted Plaintiff and made the "
+        "decision alleged in paragraph 34. The user is the employer that "
         "takes the information into account in making the employment "
         "decision, not a consumer reporting agency that merely retrieves, "
         "scores, or republishes it. First Advantage is not named as a "
