@@ -873,15 +873,15 @@ const matter_damages_raw = [
   },
   {
     number: 37,
-    claims: "ICRAA / UCL / § 290.46(j) — Tracy Home Depot hire (affirmative report-and-use facts)",
-    risk: "Significant. No offer, report, or notice is in the file. The complaint now alleges Home Depot's report contained registry information and Home Depot used it to ghost Plaintiff. A demurrer must take those facts as true. Settlement assumes the pleading survives on that standard.",
+    claims: "ICRAA / UCL / § 290.46(j) — Tracy Home Depot hire (I&B report contents and use)",
+    risk: "Significant. No offer, report, or notice is in the file. Report contents and use are I&B, supported by hire, screen, unexplained ghost, contemporaneous Megan's Law listing, and exclusive control of the file. A demurrer must take well-pleaded I&B as true. Settlement assumes the pleading survives on that standard.",
     settlement_note: "Post-favorable-MTD settlement range. Thinner paper than AT&T/Best Buy. No demand. Do not import UPS/Pilot wage figures.",
     conservative: 50000,
     moderate: 70000,
     aggressive: 90000,
     components: [
       {
-        label: "PC §290.46(j)(4)(A) statutory / actual (affirmative report-and-use facts; report not yet produced)",
+        label: "PC §290.46(j)(4)(A) statutory / actual (I&B report contents and use; report not yet produced)",
         conservative: 25000,
         moderate: 30000,
         aggressive: 35000

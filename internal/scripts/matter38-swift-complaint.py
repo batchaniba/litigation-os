@@ -2,11 +2,16 @@
 # -*- coding: utf-8 -*-
 """Matter 38 — verified complaint, Swift Transportation Co. of Arizona LLC.
 
+LOCKED after the September 8, 2026 execute. Do not rewrite pleading prose
+unless a new Swift or vendor document appears.
+
 San Joaquin Superior Court. The decrypted Sept. 26, 2023 pre-adverse packet
-is in hand. NSOPW remained Processing. Plaintiff pleads on information and
-belief that Swift used preliminary sex-offender-registry information from
-that in-process component, in whole or in part, in the denial. ICRAA and
-UCL remain independent paths.
+is in hand. NSOPW remained Processing on every snapshot furnished to
+Plaintiff. The furnished packet contains neither a completed hit nor a
+completed no-record. Plaintiff pleads on information and belief that Swift
+used preliminary sex-offender-registry information from that in-process
+component, in whole or in part, in the denial. ICRAA and UCL remain
+independent paths.
 
 Default output is unsigned. On or after September 8, 2026, rerun with
 ``--execute`` only after Plaintiff confirms the role.
@@ -83,9 +88,11 @@ CAPTION_RIGHT = [
     ("INJUNCTIVE RELIEF", True, False),
     ("", False, False),
     ("(1) ICRAA, Civ. Code", False, False),
-    ("      §§ 1786.40, 1786.50;", False, False),
-    ("(2) UCL, B&P Code § 17200;", False, False),
-    ("(3) Penal Code § 290.46(j)", False, False),
+    ("      § 1786.40;", False, False),
+    ("(2) CCRAA, Civ. Code", False, False),
+    ("      § 1785.20.5;", False, False),
+    ("(3) UCL, B&P Code § 17200;", False, False),
+    ("(4) Penal Code § 290.46(j)", False, False),
     ("      (I&B — preliminary", False, False),
     ("      NSOPW / registry)", False, False),
     ("", False, False),
@@ -133,8 +140,9 @@ CONTENT = [
         "returned Clear / No Reportable Records Found. Federal criminal "
         "returned Clear. The county criminal searches that had completed "
         "returned Clear. The National Sex Offender Public Website component "
-        "remained 'Processing' on every snapshot in the packet. It never "
-        "completed. It reported no hit. Clearinghouse returned Driver Not "
+        "remained 'Processing' on every snapshot furnished to Plaintiff. The "
+        "furnished packet contains neither a completed hit nor a completed "
+        "no-record. Clearinghouse returned Driver Not "
         "Prohibited. What the packet does contain — a Class A commercial "
         "driver's license, an April 22, 2022 improper-lane moving violation "
         "with zero points, PSP inspection history, and a CDLIS license-"
@@ -157,7 +165,13 @@ CONTENT = [
         "history. They are not Penal Code section 290.46 disclosures. An "
         "employer that may lawfully obtain ordinary criminal-history or "
         "safety records is not thereby authorized to use Megan's Law website "
-        "information for employment. Penal Code section 290.46(j)(3) says so.",
+        "information for employment. Penal Code section 290.46(j)(3) says so. "
+        "This count does not ask the Court to forbid Swift from using the "
+        "Clearinghouse, PSP, CDLIS, or other federally required or permitted "
+        "safety databases. It asks the Court to forbid employment use of "
+        "information disclosed pursuant to Penal Code section 290.46. Federal "
+        "motor-carrier regulations do not preempt that narrower claim and do "
+        "not authorize Megan's Law use.",
     ),
     (
         "PARA",
@@ -174,19 +188,22 @@ CONTENT = [
         "Section 452 requires this Court to construe the pleading liberally. "
         "The vendor adjudication log, interim NSOPW return, and "
         "decision-maker communications are exclusively in Defendants' "
-        "possession.",
+        "possession. Information disclosed pursuant to Penal Code section "
+        "290.46 does not lose that character because a vendor also searched "
+        "the National Sex Offender Public Website or another public "
+        "sex-offender compilation. Searching a public website is not a free "
+        "pass. Subdivision (j)(3)'s reference to publicly available "
+        "information does not authorize employment use of Megan's Law "
+        "disclosures. The prohibition is on use of information disclosed "
+        "pursuant to section 290.46 for purposes relating to employment.",
     ),
     (
         "PARA",
-        "6. In July 2024, First Advantage prepared an employment background "
-        "report on Plaintiff for United Parcel Service. That report, later "
-        "lodged in federal court by UPS, identified a Department of Justice "
-        "website / National Sex Offender Registry search as decisional, stated "
-        "'SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY,' and produced "
-        "an overall INELIGIBLE result. That report is not the Swift report. "
-        "It is alleged because it shows that commercial screeners could and "
-        "did identify this Plaintiff through the California registry and treat "
-        "that identification as dispositive of employment eligibility.",
+        "6. Plaintiff is a person as to whom information is disclosed on the "
+        "California Megan's Law website. He does not possess any completed "
+        "NSOPW result from Swift. The vendor adjudication log, any later "
+        "NSOPW return, and the decision-maker communications are exclusively "
+        "in Defendants' possession. He will seek them in discovery.",
     ),
     (
         "PARA",
@@ -200,13 +217,26 @@ CONTENT = [
         "PARA",
         "8. This Complaint does not plead a Tameny wrongful-termination or "
         "failure-to-hire count, an IIED count, a Fair Credit Reporting Act "
-        "count, or a FEHA or Fair Chance Act count. The section 290.46(j) "
-        "count is pleaded on information and belief that Swift used "
-        "preliminary sex-offender-registry information from the in-process "
-        "NSOPW component. Civil Code sections 1786.40 and 1786.50 and "
-        "Business and Professions Code section 17200 are independent paths "
-        "that do not require a completed registry hit. Plaintiff preserves "
-        "all timely rights to seek leave to amend.",
+        "count, a contract or promissory-estoppel count, or a FEHA or "
+        "Government Code section 12952 Fair Chance Act count. The Fair "
+        "Chance reservation is not a count. Plaintiff will timely exhaust "
+        "California Civil Rights Department rights and seek leave to amend "
+        "if discovery shows Swift considered conviction history before any "
+        "conditional offer, or used conviction history without the "
+        "individualized assessment and notices section 12952 requires. The "
+        "section 290.46(j) count is pleaded on information and belief that "
+        "Swift used preliminary sex-offender-registry information from the "
+        "in-process NSOPW component. Civil Code sections 1786.40 and "
+        "1786.50, Civil Code section 1785.20.5, and Business and Professions "
+        "Code section 17200 are independent paths that do not require a "
+        "completed registry hit. ICRAA and CCRAA are pleaded in the "
+        "alternative so the claim survives whether the reports were "
+        "investigative or ordinary consumer reports. Plaintiff does not "
+        "presently plead Labor Code section 432.7 or section 1198.5. He "
+        "has not alleged that any report used an arrest that did not result "
+        "in a conviction, diversion, or a dismissed conviction, and he has "
+        "not yet served a section 1198.5 inspection request. He preserves "
+        "leave to amend if the file later supports those reserved theories.",
     ),
     ("HEADER", "II.\nPARTIES"),
     (
@@ -340,11 +370,40 @@ CONTENT = [
         "PARA",
         "24. Plaintiff does not concede that Code of Civil Procedure section "
         "335.1 or section 340, subdivision (a), supplies the limitations period "
-        "for the section 290.46(j) count. He does not plead a Tameny or "
-        "personal-injury count. A two-year clock from September 26 or "
-        "October 5, 2023, would have closed in 2025. He has not pleaded the "
-        "Fair Credit Reporting Act; the two-year FCRA discovery clock from "
-        "those same 2023 letters would likewise have closed.",
+        "for the section 290.46(j) count. The actual-damages and discretionary "
+        "enhancement authorized by section 290.46(j)(4)(A) are a liability "
+        "created by statute under Code of Civil Procedure section 338(a), "
+        "not an action upon a statute for a penalty. The "
+        "labeled civil-penalty slice of subdivision (j)(4)(A) is pleaded in "
+        "the alternative and is not the sole theory. He does not plead a "
+        "Tameny or personal-injury count. A two-year clock from September 26 "
+        "or October 5, 2023, would have closed in 2025. He has not pleaded "
+        "the Fair Credit Reporting Act; the two-year FCRA discovery clock "
+        "from those same 2023 letters would likewise have closed.",
+    ),
+    (
+        "PARA",
+        "24A. Civil Code section 1786.52 requires that an ICRAA action be "
+        "brought within two years from the date the plaintiff knew or should "
+        "have known of the violation. The September 26 and October 5, 2023 "
+        "letters described consumer reports. They did not advise that an "
+        "investigative consumer report had been obtained. Plaintiff did not "
+        "then possess a complete investigative-consumer-report file and did "
+        "not know the NSOPW component remained Processing until the encrypted "
+        "attachment was later decrypted. The face of this Complaint does not "
+        "establish that discovery date. If Defendants interpose section "
+        "1786.52, the date is a fact to be proven; it does not appear from "
+        "the pleading as a complete bar.",
+    ),
+    (
+        "PARA",
+        "24B. The Unfair Competition Law claim is timely under Business and "
+        "Professions Code section 17208's four-year period. That period is "
+        "independent of any shorter period that may apply to a borrowed "
+        "predicate. The UCL count is not pleaded to resurrect a time-barred "
+        "statutory right. It is pleaded as an independent equitable claim "
+        "for ongoing standardized screening practices and for restitution of "
+        "any vested money or property Defendants acquired.",
     ),
     ("HEADER", "V.\nCOMMON FACTUAL ALLEGATIONS"),
     ("SUBHEAD", "A. The Swift Application"),
@@ -499,20 +558,20 @@ CONTENT = [
     ),
     (
         "PARA",
-        "42. The July 2024 First Advantage / UPS report is alleged for three "
-        "limited purposes: it shows that Plaintiff's registry status was "
-        "commercially retrievable for employment screening; it shows that at "
-        "least one national CRA treated a California-registry source as an "
-        "employment-eligibility bar for this Plaintiff; and it identifies the "
-        "kind of record Swift's vendors would have been able to return. "
-        "Plaintiff does not allege that First Advantage was Swift's vendor, "
-        "and does not allege that UPS sent its report to Swift.",
+        "42. Plaintiff does not attach a completed NSOPW result because the "
+        "packet furnished to him does not contain one. Swift's adjudication "
+        "log and any later NSOPW return are the documents that will confirm "
+        "or refute preliminary registry use. They are exclusively in "
+        "Defendants' possession.",
     ),
     (
         "PARA",
-        "43. The NSOPW component was still Processing. A search that never "
-        "completed is not a completed 'no record' result. It is also not a "
-        "completed printed hit. Plaintiff is informed and believes, and on "
+        "43. The NSOPW component remained Processing on every snapshot "
+        "furnished to Plaintiff. The furnished packet contains neither a "
+        "completed hit nor a completed no-record. What happened after those "
+        "snapshots — including any later completion, interim display, or "
+        "adjudication use — is a fact of discovery. Plaintiff is informed "
+        "and believes, and on "
         "that basis alleges, that Swift or a DOE obtained, displayed, "
         "scored, or was informed of preliminary information from that "
         "in-process NSOPW component citing a sex-offender registry — "
@@ -530,26 +589,32 @@ CONTENT = [
         "in part on consumer reports; the completed criminal, Clearinghouse, "
         "and MVR components that are in the packet do not themselves "
         "explain a registry-based denial; Plaintiff was then listed on the "
-        "California Megan's Law website; commercial screeners had already "
-        "shown they could match this Plaintiff to the California registry; "
-        "and the interim NSOPW return, adjudication notes, and "
+        "California Megan's Law website; and the interim NSOPW return, "
+        "adjudication notes, and "
         "decision-maker communications are exclusively in Defendants' "
         "possession.",
     ),
     (
         "PARA",
-        "45. Swift admitted in writing that consumer reports caused the "
-        "denial. It took that action while a sex-offender-website component "
-        "remained Processing. It did not, in the October 5 letter, identify "
-        "the specific item that caused the denial or supply a completed "
-        "NSOPW result. Civil Code section 1786.40 required advice that an "
-        "investigative consumer report had been obtained and the agency's "
-        "name and address at denial. The letter names agencies. It does "
-        "not advise that an investigative consumer report containing an "
-        "incomplete NSOPW had been obtained, and it does not supply a "
-        "complete copy of every component. The ICRAA and UCL counts rest "
-        "on that notice and completeness failure even if the preliminary-"
-        "registry-use inference later fails.",
+        "45. Swift admitted in writing that the denial was based in whole "
+        "or in part on consumer reports. Civil Code section 1786.40(a) "
+        "required, if an investigative consumer report had been obtained, "
+        "that Swift advise Plaintiff that an investigative consumer report "
+        "had been obtained and supply the name and address of the "
+        "investigative consumer reporting agency. The October 5 letter "
+        "stated that consumer reports from named agencies influenced the "
+        "decision. It named Asurint, Tenstreet, DriverIQ, FMCSA-DOT, and "
+        "Equifax Work Number and listed cities. It did not advise that an "
+        "investigative consumer report had been obtained. Plaintiff does "
+        "not contend that section 1786.40 required Swift to identify the "
+        "decisive component, to explain the unfinished NSOPW search, or to "
+        "attach a complete report. Those facts are alleged as "
+        "circumstantial support for the registry-use inference and as "
+        "context for the alternative CCRAA count, not as elements of "
+        "section 1786.40(a). Cessation of hiring after those reports is "
+        "the adverse action. The ICRAA and CCRAA counts can reach "
+        "discovery even if the preliminary-registry-use inference later "
+        "fails.",
     ),
     (
         "PARA",
@@ -568,9 +633,10 @@ CONTENT = [
         "Dkt. 36, dismissed a Megan's Law count after the employer's report "
         "was in the record and showed ordinary court records and a completed "
         "national sex-offender search returning no record. This packet is "
-        "not that report. The NSOPW component never completed. A demurrer "
-        "may take the printed snapshots as what Plaintiff has pleaded them "
-        "to be. It cannot convert an incomplete NSOPW into Lerma's completed "
+        "not that report. The NSOPW component remained Processing on every "
+        "snapshot furnished to Plaintiff. A demurrer may take the printed "
+        "snapshots as what Plaintiff has pleaded them to be. It cannot "
+        "convert those incomplete snapshots into Lerma's completed "
         "no-record search, and it cannot decide — without the adjudication "
         "log — whether Swift used preliminary registry information from that "
         "in-process component. Defendants may not obtain a pleading-stage "
@@ -630,7 +696,7 @@ CONTENT = [
         "SUBHEAD",
         "California Investigative Consumer Reporting Agencies Act\n"
         "Civil Code sections 1786.40 and 1786.50 — Against Swift and User DOES\n"
-        "(Load-Bearing Count)",
+        "(Pleaded in the Alternative to CCRAA)",
     ),
     (
         "PARA",
@@ -643,35 +709,47 @@ CONTENT = [
         "named assembled or evaluated information concerning Plaintiff's "
         "character, general reputation, personal characteristics, or mode of "
         "living for employment purposes at Swift's request, and Swift was the "
-        "user of that information before the October 5, 2023 decision.",
+        "user of that information before the October 5, 2023 decision. Civil "
+        "Code section 1786.2 defines an investigative consumer report as one "
+        "in which information on those subjects is obtained. Plaintiff "
+        "alleges the products concerned those subjects. He does not invent "
+        "personal interviews. If this Court concludes that interviews are "
+        "required and none occurred, this ICRAA count does not apply and "
+        "the CCRAA count does.",
     ),
     (
         "PARA",
         "61. Civil Code section 1786.40(a) required Swift, under circumstances "
         "in which employment was denied and an investigative consumer report "
         "had been obtained, to advise Plaintiff of that fact and supply the "
-        "agency's name and address. Swift's October 5 letter names agencies. "
-        "It does not advise that an investigative consumer report containing "
-        "an incomplete NSOPW component had been obtained. It does not "
-        "identify which component caused the denial.",
+        "agency's name and address. Swift's October 5 letter names agencies "
+        "and cities and states that consumer reports influenced the decision. "
+        "It does not advise that an investigative consumer report had been "
+        "obtained. That is the notice failure alleged. Plaintiff does not "
+        "allege that section 1786.40 independently required Swift to identify "
+        "the decisive component, to complete the NSOPW search, or to attach "
+        "every unfinished printout.",
     ),
     (
         "PARA",
-        "62. The decrypted packet is not a complete investigative consumer "
-        "report. NSOPW remained Processing. Plaintiff was denied while that "
-        "component was unfinished. Civil Code sections 1786.10 and 1786.22 "
-        "entitle him to inspect the files Asurint, Tenstreet, DriverIQ, and "
-        "any other ICRA maintains on him. He has not yet served those "
-        "requests. He will.",
+        "62. The omission caused incremental harm distinct from the denial "
+        "itself. Plaintiff could not timely inspect the investigative file, "
+        "learn whether an investigative report rather than an ordinary "
+        "consumer report had been obtained, or invoke Civil Code sections "
+        "1786.10 and 1786.22 before the decision became final. He has not "
+        "yet served those inspection requests. He will. Those records, "
+        "together with the adjudication log, will confirm whether an "
+        "investigative report was obtained.",
     ),
     (
         "PARA",
         "63. This ICRAA count does not depend on proving Penal Code section "
-        "290.46(j). A notice or completeness failure under Civil Code "
-        "section 1786.40 is independently actionable if an investigative "
-        "consumer report was obtained and employment was denied without the "
-        "required advice and a complete source. That count can reach "
-        "discovery even if the section 290.46(j) count later fails.",
+        "290.46(j). A notice failure under Civil Code section 1786.40 is "
+        "independently actionable if an investigative consumer report was "
+        "obtained and employment was denied without the required advice. "
+        "If Defendants establish that the reports were ordinary consumer "
+        "reports and not investigative, this count does not apply and the "
+        "CCRAA count does.",
     ),
     (
         "PARA",
@@ -688,9 +766,61 @@ CONTENT = [
         "copy defect that the 2023 letters did not cure. He also reserves "
         "amendment under Civil Code section 1786.16 if production shows Swift "
         "procured an investigative report before the required standalone "
-        "disclosure and written authorization.",
+        "disclosure and written authorization. The California disclosure in "
+        "the packet recites that Swift may order a consumer report or "
+        "investigative consumer report. Plaintiff does not presently allege "
+        "nonauthorization as an established fact.",
     ),
     ("HEADER", "VII.\nSECOND CAUSE OF ACTION"),
+    (
+        "SUBHEAD",
+        "California Consumer Credit Reporting Agencies Act\n"
+        "Civil Code sections 1785.20.5 and 1785.31 — Against Swift and User DOES\n"
+        "(Pleaded in the Alternative to ICRAA)",
+    ),
+    (
+        "PARA",
+        "65A. Plaintiff realleges paragraphs 1 through 52 and 59 through 65 "
+        "to the extent consistent with this cause.",
+    ),
+    (
+        "PARA",
+        "65B. In the alternative, if the reports Swift obtained were ordinary "
+        "consumer credit reports rather than investigative consumer reports, "
+        "the California Consumer Credit Reporting Agencies Act applies. "
+        "Civil Code section 1785.20.5 required Swift, before procuring a "
+        "consumer credit report for employment purposes, to provide written "
+        "notice that a report would be used, and, before taking adverse "
+        "action based in whole or in part on the report, to provide a copy "
+        "of the report and a notice of rights.",
+    ),
+    (
+        "PARA",
+        "65C. Swift's October 5 letter stated that a copy of the consumer "
+        "report and a Summary of Rights were attached. The decrypted "
+        "September 26 packet is the report-side paper in Plaintiff's files. "
+        "On information and belief, any later-completed component used in "
+        "the October 5 decision — including any completed NSOPW or other "
+        "agency report that was not in that packet — was not provided to "
+        "Plaintiff before the adverse action. Plaintiff does not invent "
+        "the contents of any unproduced later report.",
+    ),
+    (
+        "PARA",
+        "65D. The October 5 denial was based in whole or in part on consumer "
+        "reports, as Swift admitted. If those reports were consumer credit "
+        "reports, the failure to furnish a complete copy of every report "
+        "actually used, before the decision, violated section 1785.20.5. "
+        "If they were investigative, this count does not apply and the "
+        "ICRAA count does.",
+    ),
+    (
+        "PARA",
+        "65E. Under Civil Code section 1785.31, Plaintiff seeks actual "
+        "damages, costs, attorney's fees if later represented, and punitive "
+        "damages upon proof of willfulness, according to proof.",
+    ),
+    ("HEADER", "VIII.\nTHIRD CAUSE OF ACTION"),
     (
         "SUBHEAD",
         "Unlawful and Unfair Business Practices\n"
@@ -698,41 +828,53 @@ CONTENT = [
     ),
     (
         "PARA",
-        "66. Plaintiff realleges paragraphs 1 through 65 to the extent "
+        "66. Plaintiff realleges paragraphs 1 through 65E to the extent "
         "consistent with this equitable cause.",
     ),
     (
         "PARA",
-        "67. Defendants engaged in unlawful practices by violating Civil Code "
-        "section 1786.40 and, if proven, Penal Code section 290.46(j). They "
-        "engaged in unfair practices by taking "
-        "adverse action on consumer reports while a sex-offender-website "
-        "component remained Processing, naming agencies without identifying "
-        "the item that caused the denial, and withholding a complete "
-        "investigative-consumer-report file.",
+        "67. Defendants engaged in unlawful practices by violating, to the "
+        "extent proven, Civil Code section 1786.40, Civil Code section "
+        "1785.20.5, and Penal Code section 290.46(j)(2)(E). They engaged in "
+        "unfair practices because the gravity of the harm — denial of "
+        "employment on a criterion the Legislature has forbidden, or on "
+        "consumer reports without the advice the statute required — outweighs "
+        "any utility of taking adverse action while a sex-offender-website "
+        "component remained Processing and while a complete copy of every "
+        "report actually used was withheld.",
     ),
     (
         "PARA",
         "68. Plaintiff suffered injury in fact and lost money or property "
-        "through the lost Swift employment opportunity and other economic "
-        "losses to be proven. He does not seek future unearned wages as UCL "
-        "restitution. He seeks restitution only of money or property in which "
-        "he had a vested interest and that Defendants acquired or caused him "
-        "to lose through the challenged practices.",
+        "through the lost Swift employment opportunity, reliance "
+        "expenditures, employment-search costs, and other economic losses "
+        "to be proven. Injury in fact sufficient for UCL standing is not "
+        "the same as recoverable restitution. He does not seek future "
+        "unearned wages as UCL restitution. He seeks restitution only of "
+        "money or property in which he had a vested interest and that "
+        "Defendants acquired through the challenged practices — including, "
+        "according to proof, reliance expenditures and employment-search "
+        "costs. He does not seek restitution of an abstract value of "
+        "personal information. He does not allege that Swift holds a fund "
+        "of unearned future wages.",
     ),
     (
         "PARA",
         "69. Legal damages are not an adequate remedy for Defendants' "
-        "retention, use, and dissemination of registry-derived screening data "
-        "or their ongoing employment-screening practices. Plaintiff seeks an "
-        "injunction requiring Defendants to cease prohibited employment use of "
-        "California registry information in California recruiting; preserve "
-        "and disclose the source and audit trail of Plaintiff's screening; "
-        "and correct or segregate unlawfully used data, together with "
-        "restitution and declaratory relief ancillary to the injunction under "
-        "Business and Professions Code section 17203.",
+        "retention, use, and dissemination of registry-derived screening data. "
+        "On information and belief, Swift continues to use the same or "
+        "similar standardized screening procedures for California driver "
+        "applicants. That continuing practice, not a single past denial, is "
+        "the basis for UCL injunctive relief and for declaratory relief under "
+        "Code of Civil Procedure section 1060. Plaintiff seeks an injunction "
+        "requiring Defendants to cease prohibited employment use of California "
+        "registry information in California recruiting; preserve and disclose "
+        "the source and audit trail of Plaintiff's screening; and correct or "
+        "segregate unlawfully used data, together with restitution of vested "
+        "money or property actually acquired, under Business and Professions "
+        "Code section 17203.",
     ),
-    ("HEADER", "VIII.\nTHIRD CAUSE OF ACTION"),
+    ("HEADER", "IX.\nFOURTH CAUSE OF ACTION"),
     (
         "SUBHEAD",
         "Unauthorized Employment Use of Registry Information\n"
@@ -762,20 +904,27 @@ CONTENT = [
         "attorney's fees, exemplary damages, or a civil penalty not exceeding "
         "twenty-five thousand dollars ($25,000). The $25,000 figure is a cap "
         "on the civil penalty, not a substitute floor that displaces actual "
-        "damages.",
+        "damages. Plaintiff seeks the civil remedies the statute authorizes "
+        "for unauthorized employment use of information disclosed pursuant to "
+        "section 290.46, whether this Court locates those remedies in "
+        "subdivision (j)(4)(A) or in another subdivision of section 290.46. "
+        "He does not rest this cause on a criminal-enhancement theory.",
     ),
     (
         "PARA",
-        "56. On information and belief, Swift, and such DOE Defendants as "
-        "ordered, furnished, scored, or acted on the report, used "
-        "preliminary information from the still-Processing NSOPW component "
-        "citing a sex-offender registry — including information disclosed "
-        "pursuant to section 290.46 concerning Plaintiff — in whole or in "
-        "part in the employment decision. Plaintiff does not allege that "
-        "the printed snapshots contain a completed NSOPW hit or the words "
-        "'SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY.' The use "
-        "alleged is the use of preliminary registry information from that "
-        "in-process component.",
+        "56. On information and belief, Swift used preliminary information "
+        "from the still-Processing NSOPW component citing a sex-offender "
+        "registry — including information disclosed pursuant to section "
+        "290.46 concerning Plaintiff — in whole or in part in the employment "
+        "decision. The user is the employer that takes the information into "
+        "account in making the employment decision, not a consumer reporting "
+        "agency that merely retrieves, scores, or republishes it. Plaintiff "
+        "does not sue Asurint, Tenstreet, DriverIQ, or Equifax for mere "
+        "furnishing. This count is directed at Swift's use. Plaintiff does "
+        "not allege that the printed snapshots contain a completed NSOPW hit "
+        "or the words 'SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY.' "
+        "The use alleged is the use of preliminary registry information from "
+        "that in-process component.",
     ),
     (
         "PARA",
@@ -789,12 +938,33 @@ CONTENT = [
     ),
     (
         "PARA",
-        "58. Plaintiff seeks the remedies authorized by section 290.46(j)(4)(A) "
-        "and preventive relief under subdivision (j)(4)(B) to restrain any "
-        "pattern or practice of employment use of Megan's Law information in "
-        "Swift's California recruiting and hiring.",
+        "58. Plaintiff seeks the remedies authorized by section 290.46(j)(4)(A), "
+        "or by whichever subdivision this Court holds supplies the civil "
+        "remedy for unauthorized employment use. He does not presently allege "
+        "a multi-incident pattern or practice at Swift sufficient for "
+        "subdivision (j)(4)(B) preventive relief. He seeks that remedy only "
+        "if discovery shows reasonable cause to believe such a pattern or "
+        "practice. The damages claim under subdivision (j)(4)(A) does not "
+        "depend on pattern or practice. Civil Code section 3294 punitive "
+        "damages, if any, are pleaded in the alternative to the statute's "
+        "exemplary damages or civil penalty for the same conduct. Plaintiff "
+        "will elect. He does not seek double punitive recovery.",
     ),
-    ("HEADER", "IX.\nPRESERVATION OF EVIDENCE"),
+    (
+        "PARA",
+        "58A. On information and belief, Swift's human-resources and "
+        "centralized driver-adjudication personnel are managing agents "
+        "within the meaning of Civil Code section 3294(b): they exercise "
+        "substantial discretionary authority over hiring and screening "
+        "policy, not merely the power to accept or reject a single applicant. "
+        "Those managing agents established, implemented, and ratified the "
+        "standardized screening practices alleged. Plaintiff seeks section "
+        "3294 punitive damages only upon proof of oppression, fraud, or "
+        "malice and of managing-agent authorization, ratification, or "
+        "personal participation. ICRAA punitive damages, if any, rest on "
+        "Civil Code section 1786.50 and do not depend on section 3294.",
+    ),
+    ("HEADER", "X.\nPRESERVATION OF EVIDENCE"),
     (
         "PARA",
         "70. Defendants are on notice to preserve Plaintiff's complete Swift "
@@ -815,11 +985,11 @@ CONTENT = [
     ),
     (
         "PARA",
-        "72. The July 2024 First Advantage/UPS report is relevant to "
-        "retrievability and matching methodology. It is not a substitute for "
-        "Swift's own file.",
+        "72. Swift's own application file, vendor reports, and NSOPW "
+        "adjudication log are the documents that will confirm or refute "
+        "registry use.",
     ),
-    ("HEADER", "X.\nPRAYER FOR RELIEF"),
+    ("HEADER", "XI.\nPRAYER FOR RELIEF"),
     ("PARA", "WHEREFORE, Plaintiff prays for judgment against Defendants as follows:"),
     (
         "LIST_ITEM",
@@ -840,40 +1010,52 @@ CONTENT = [
     ),
     (
         "LIST_ITEM",
-        "4. For punitive damages against only those Defendants for whom Civil "
-        "Code section 3294 is proven, in an amount to be determined by the "
-        "trier of fact, with no amount pleaded;",
+        "4. For CCRAA actual damages and punitive damages upon the showing "
+        "required by Civil Code section 1785.31, if that alternative count "
+        "is proven;",
     ),
     (
         "LIST_ITEM",
-        "5. For restitution under Business and Professions Code section 17203 "
-        "to the extent available;",
+        "5. For punitive damages under Civil Code section 3294 against only "
+        "those Defendants for whom the statutory prerequisites are proven, "
+        "pleaded in the alternative to any exemplary damages or civil penalty "
+        "awarded under Penal Code section 290.46 for the same conduct, with "
+        "no double recovery and no amount pleaded;",
     ),
     (
         "LIST_ITEM",
-        "6. For preventive and injunctive relief under Penal Code section "
-        "290.46(j)(4)(B), Business and Professions Code section 17203, and "
-        "other applicable law;",
+        "6. For restitution under Business and Professions Code section 17203 "
+        "of vested money or property Defendants acquired, not unearned future "
+        "wages;",
     ),
     (
         "LIST_ITEM",
-        "7. For declaratory relief concerning Defendants' prohibited registry "
-        "use to the extent an actual controversy remains;",
+        "7. For injunctive relief under Business and Professions Code section "
+        "17203, and for Penal Code section 290.46(j)(4)(B) preventive relief "
+        "only if discovery shows reasonable cause to believe a pattern or "
+        "practice;",
     ),
     (
         "LIST_ITEM",
-        "8. For costs of suit and attorney's fees where authorized if Plaintiff "
+        "8. For declaratory relief under Code of Civil Procedure section 1060 "
+        "concerning whether Defendants' standardized California screening "
+        "practices may use information disclosed pursuant to Penal Code "
+        "section 290.46 for employment;",
+    ),
+    (
+        "LIST_ITEM",
+        "9. For costs of suit and attorney's fees where authorized if Plaintiff "
         "obtains counsel;",
     ),
     (
         "LIST_ITEM",
-        "9. For prejudgment and post-judgment interest as allowed by law; and",
+        "10. For prejudgment and post-judgment interest as allowed by law; and",
     ),
     (
         "LIST_ITEM",
-        "10. For such other relief as the Court deems just and proper.",
+        "11. For such other relief as the Court deems just and proper.",
     ),
-    ("HEADER", "XI.\nDEMAND FOR JURY TRIAL"),
+    ("HEADER", "XII.\nDEMAND FOR JURY TRIAL"),
     (
         "PARA",
         "73. Plaintiff demands trial by jury on all causes of action and issues "

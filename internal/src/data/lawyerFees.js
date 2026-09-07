@@ -618,13 +618,13 @@ const lawyer_fees_raw = [
       high: 20160,
       mid: 15680
     },
-    notes: "Sep. 6 true-up to the executed packet (33 files / 134 pages). The 33-page signed verified complaint carries forward from the Sep. 5 draft at the 2–3 hr/page major-pleading rate, plus execution/verification (Signed at Milpitas). New work is the San Joaquin walk-up: CM-010 (3), FW-001 (2), FW-003 (3), SUM-100 (1) at 0.5–2 hr/doc administrative rates, and the 42-page Filing Packet billed incrementally as assembly of already-drafted parts, not a second complaint. Hiring-record emails, SMS screenshot, findings memorandum, and formal offer carry forward. First Advantage is not a named defendant. Unfiled; no demand or CRD charge."
+    notes: "Sep. 6 true-up, then lock: 37-page signed ten-count verified complaint (FCRA willfulness facts, CCRAA alternative, strengthened concealment, UCL unlawful-prong cites). Civil Code § 1786.16 is reserved until the exact authorization package is in hand, not pleaded from the 10:19 task. Packet is 46 pages. Each complaint stands on its own file. San Joaquin walk-up: CM-010 (3), FW-001 (2), FW-003 (3), SUM-100 (1) at 0.5–2 hr/doc administrative rates; Filing Packet billed as assembly. Hiring-record emails, SMS screenshot, findings memorandum, and formal offer carry forward. First Advantage is not a named defendant. Unfiled; no demand or CRD charge."
   },
   {
     number: 37,
     type: "State — ICRAA / UCL / § 290.46(j) (San Joaquin, executed unfiled)",
     documentsCount: 6,
-    totalPagesReal: 58,
+    totalPagesReal: 60,
     hours: {
       low: 14,
       high: 30,
@@ -635,7 +635,7 @@ const lawyer_fees_raw = [
       high: 8400,
       mid: 6160
     },
-    notes: "Sep. 6 true-up, then affirmative-fact rewrite: 20-page signed three-count verified complaint now alleges Home Depot's own report contained registry information and Home Depot used it to ghost Plaintiff — not the UPS file. Packet is 29 pages (6 files / 58 pages on disk). CM-010, FW-001, FW-003, and SUM-100 remain light administrative tasks. Filing Packet billed as assembly. No offer letter or Home Depot report is in the file. Unfiled; no demand or CRD charge."
+    notes: "Sep. 6 true-up, then lock: 25-page signed four-count verified complaint (ICRAA, CCRAA alternative, UCL, § 290). Report contents and use are I&B, supported by hire, screen, unexplained ghost, contemporaneous Megan's Law listing, and exclusive control of the file. Packet is 34 pages. CM-010, FW-001, FW-003, and SUM-100 remain light administrative tasks. Filing Packet billed as assembly. No offer letter or Home Depot report is in the file. Unfiled; no demand or CRD charge."
   },
   {
     number: 38,
@@ -652,13 +652,13 @@ const lawyer_fees_raw = [
       high: 10640,
       mid: 7840
     },
-    notes: "Sep. 6 true-up to the executed packet (15 files / 134 pages). The 21-page signed three-count verified complaint carries forward. Intake forms and the 30-page Filing Packet are billed as in Matters 36/37. The 17-page Oct. 5 post-adverse letter is evidence compilation (0.3–0.5 hr/page). The 49-page encrypted pre-adverse is billed at a light existence/admin rate only — ciphertext, not a drafting source; the decrypted packet is not in the public folder and is not billed. Recruiting/Clearinghouse emails carry forward. Unfiled; no demand or CRD charge."
+    notes: "Sep. 6 true-up, then lock: 25-page signed four-count verified complaint. NSOPW remained Processing on every snapshot furnished to Plaintiff; the furnished packet contains neither a completed hit nor a completed no-record. ICRAA § 1786.40 rebuilt around the statutory advice/name-and-address elements; CCRAA pleaded in the alternative. Packet is 34 pages. Intake forms billed as in Matters 36/37. The 17-page Oct. 5 post-adverse letter is evidence compilation (0.3–0.5 hr/page). The 49-page encrypted pre-adverse is billed at a light existence/admin rate only — ciphertext, not a drafting source; the decrypted packet is not in the public folder and is not billed. Recruiting/Clearinghouse emails carry forward. Unfiled; no demand or CRD charge."
   },
   {
     number: 39,
     type: "State — ICRAA / UCL / § 290.46(j) I&B (San Joaquin, executed unfiled)",
     documentsCount: 11,
-    totalPagesReal: 68,
+    totalPagesReal: 70,
     hours: {
       low: 11,
       high: 26,
@@ -669,7 +669,7 @@ const lawyer_fees_raw = [
       high: 7280,
       mid: 5180
     },
-    notes: "Sep. 6 true-up to the executed packet (11 files / 68 pages). The 21-page signed three-count verified complaint is the drafting driver. CM-010, FW-001, FW-003, and SUM-100 plus the 30-page Filing Packet are billed as in Matters 36/37. Application, $22.60 offer, authorization, and First Advantage drug-test emails carry forward. First Advantage is not a named defendant. Unfiled; no demand or CRD charge."
+    notes: "Sep. 6 true-up, then lock: 25-page signed four-count verified complaint (ICRAA, CCRAA alternative, UCL, § 290). Report contents and use are I&B, pleaded like Home Depot, on Best Buy's own offer, vendor, and screen. Packet is 34 pages. CM-010, FW-001, FW-003, and SUM-100 plus the Filing Packet are billed as in Matters 36/37. Application, $22.60 offer, authorization, and First Advantage drug-test emails carry forward. First Advantage is not a named defendant. Unfiled; no demand or CRD charge."
   }
 ];
 
