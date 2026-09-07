@@ -6,9 +6,9 @@ Alameda Super. Ct. No. 26CV191136, Dept. 25 (Hon. Jenna M. Whitman).
 Department 25's covering clerk authorized lodging video by USB or a cloud
 drive (September 4, 2026). Petitioner emailed the Camera 1 Google Drive
 link to dept25@alameda.courts.ca.gov (cc DAG Ing) on September 8, 2026.
-This paper is the Notice of Lodging for the eCourt portal, with a short
-authenticating declaration and proof of service. The portal will not
-accept the 2.5 GB file; the link is the lodging.
+This paper is the eCourt Notice of Lodging, a separate-page authenticating
+declaration, and the portfolio four-sided-border Proof of Service. The
+portal will not accept the 2.5 GB file; the link is the lodging.
 
   python3 internal/scripts/matter20-notice-of-lodging-dashcam.py
 
@@ -18,16 +18,19 @@ from __future__ import annotations
 
 import os
 import sys
+from pathlib import Path
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, SCRIPT_DIR)
 sys.path.insert(0, os.path.join(SCRIPT_DIR, "lib"))
 
+from pdf_packet import assemble  # noqa: E402
 from pleading_paper import (  # noqa: E402
     CONTENT_LEFT,
     COURT_LINE1,
     PleadingPaper,
 )
+from proof_of_service import ProofOfServiceFields, build_proof_of_service  # noqa: E402
 from signature_stamp import SIGNATURE_NATIVE_PX, SIGNATURE_PATH  # noqa: E402
 
 SIGNATURE_IMG = SIGNATURE_PATH
@@ -49,15 +52,18 @@ DOC_TITLE_FOOTER = (
     "NEWANFORBI v. CHP, ET AL."
 )
 COURT_LINE2 = "COUNTY OF ALAMEDA"
+PAPER_TITLE = (
+    "NOTICE OF LODGING OF NOVEMBER 1, 2024 CHP DASHCAM "
+    "RECORDING (PETITION EXHIBIT 5 SOURCE); DECLARATION OF PETITIONER"
+)
 
 REPO_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, "..", ".."))
-OUTPUT_PATH = os.path.join(
-    REPO_ROOT,
-    "internal",
-    "public",
-    "documents",
-    "matter-20",
-    "Notice of Lodging - Nov 1 2024 CHP Dashcam Exhibit 5 Source (Sep 8 2026).pdf",
+MATTER20 = Path(REPO_ROOT) / "internal" / "public" / "documents" / "matter-20"
+OUTPUT_PATH = MATTER20 / (
+    "Notice of Lodging - Nov 1 2024 CHP Dashcam Exhibit 5 Source (Sep 8 2026).pdf"
+)
+POS_PATH = MATTER20 / (
+    "Proof of Service - Notice of Lodging Nov 1 2024 CHP Dashcam (Sep 8 2026).pdf"
 )
 
 SIG_LINE = "___________________________________"
@@ -85,7 +91,7 @@ def _header(d: PleadingPaper) -> None:
     d.blank_line()
 
 
-def _caption(d: PleadingPaper) -> None:
+def _caption(d: PleadingPaper, right_title_lines: list[tuple[str, bool, bool]]) -> None:
     left = [
         ("BRENDAN NGEHSI NEWANFORBI,", True, False),
         ("", False, False),
@@ -104,11 +110,7 @@ def _caption(d: PleadingPaper) -> None:
     right = [
         ("Case No. 26CV191136", False, False),
         ("", False, False),
-        ("NOTICE OF LODGING OF", True, False),
-        ("NOVEMBER 1, 2024 CHP", True, False),
-        ("DASHCAM RECORDING", True, False),
-        ("(PETITION EXHIBIT 5 SOURCE);", True, False),
-        ("DECLARATION OF PETITIONER", True, False),
+        *right_title_lines,
         ("", False, False),
         (f"CMC:  {CMC_DATE}", False, False),
         (f"Time:  {CMC_TIME}", False, False),
@@ -123,22 +125,48 @@ def _caption(d: PleadingPaper) -> None:
 
 
 def _sign(d: PleadingPaper, executed_line: str) -> None:
-    d.ensure_space(6)
+    """Stamp with air above the line so the loops do not hit the date line."""
+    d.ensure_space(11)
     d.write_line(executed_line)
+    d.blank_line()
+    d.blank_line()
     d.draw_signature_image(
-        SIGNATURE_IMG, SIG_IMG_W_PX, SIG_IMG_H_PX, SIG_LINE
+        SIGNATURE_IMG,
+        SIG_IMG_W_PX,
+        SIG_IMG_H_PX,
+        SIG_LINE,
+        width=165,
+        x_offset=15,
     )
     d.write_line(SIG_LINE, right=True, right_margin_offset=20)
+    d.blank_line()
     d.write_line("BRENDAN NGEHSI NEWANFORBI", bold=True, right=True, right_margin_offset=20)
     d.write_line("Petitioner, In Pro Per", right=True, right_margin_offset=20)
-    d.blank_line()
 
 
-def build() -> None:
-    os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
-    d = PleadingPaper(OUTPUT_PATH, doc_title_footer=DOC_TITLE_FOOTER)
+def _notice_right() -> list[tuple[str, bool, bool]]:
+    return [
+        ("NOTICE OF LODGING OF", True, False),
+        ("NOVEMBER 1, 2024 CHP", True, False),
+        ("DASHCAM RECORDING", True, False),
+        ("(PETITION EXHIBIT 5 SOURCE)", True, False),
+    ]
+
+
+def _declaration_right() -> list[tuple[str, bool, bool]]:
+    return [
+        ("DECLARATION OF PETITIONER", True, False),
+        ("ISO NOTICE OF LODGING OF", True, False),
+        ("NOVEMBER 1, 2024 CHP", True, False),
+        ("DASHCAM RECORDING", True, False),
+    ]
+
+
+def build_notice_and_declaration(path: Path) -> Path:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    d = PleadingPaper(str(path), doc_title_footer=DOC_TITLE_FOOTER)
     _header(d)
-    _caption(d)
+    _caption(d, _notice_right())
 
     d.write_line("NOTICE OF LODGING", bold=True, center=True)
     d.blank_line()
@@ -198,12 +226,14 @@ def build() -> None:
         "General Vanessa K. Ing, counsel for Respondents."
     )
     d.blank_line()
-
     _sign(d, f"Signed on {EXEC_DATE}, at {EXEC_PLACE}.")
+
+    d.start_new_page()
+    _header(d)
+    _caption(d, _declaration_right())
 
     d.write_line("DECLARATION OF PETITIONER", bold=True, center=True)
     d.blank_line()
-
     d.write_wrapped("I, Brendan Ngehsi Newanforbi, declare:", first_indent=0)
     d.blank_line()
 
@@ -216,12 +246,12 @@ def build() -> None:
     d.blank_line()
 
     d.write_wrapped(
-        "2. The file at the Google Drive link stated in this Notice is the "
-        "November 1, 2024 California Highway Patrol dashcam recording of the "
-        "encounter in CHP Case RJ68845 / CAD 241101GG0064. The burned-in "
-        "clock on the recording begins at 00:54:36 and the encounter window "
-        "pleaded in the Petition runs through 01:57:10. I have not altered "
-        "the video."
+        "2. The file at the Google Drive link stated in the accompanying "
+        "Notice of Lodging is the November 1, 2024 California Highway Patrol "
+        "dashcam recording of the encounter in CHP Case RJ68845 / CAD "
+        "241101GG0064. The burned-in clock on the recording begins at "
+        "00:54:36 and the encounter window pleaded in the Petition runs "
+        "through 01:57:10. I have not altered the video."
     )
     d.blank_line()
 
@@ -252,58 +282,58 @@ def build() -> None:
     )
     d.blank_line()
     _sign(d, f"Signed on {EXEC_DATE}, at {EXEC_PLACE}.")
-
-    d.start_new_page()
-    d.write_line("PROOF OF SERVICE", bold=True, center=True)
-    d.blank_line()
-    d.write_wrapped("I, Brendan Ngehsi Newanforbi, declare:", first_indent=0)
-    d.blank_line()
-    d.write_wrapped(
-        "I am the Petitioner in the above-captioned action, appearing in "
-        "propria persona. I am over the age of eighteen and a resident of "
-        "San Joaquin County, California. My mailing address is 1455 Cat Tail "
-        "Drive, Stockton, California 95204, and my electronic service address "
-        "is bnn.cdl@gmail.com."
-    )
-    d.blank_line()
-    d.write_wrapped(
-        f"On {EXEC_DATE}, I served a true and correct copy of the following "
-        "document:"
-    )
-    d.write_wrapped(
-        "NOTICE OF LODGING OF NOVEMBER 1, 2024 CHP DASHCAM RECORDING "
-        "(PETITION EXHIBIT 5 SOURCE); DECLARATION OF PETITIONER",
-        indent=36,
-        first_indent=0,
-    )
-    d.blank_line()
-    d.write_wrapped(
-        "on the following party by transmitting a true copy via electronic "
-        "mail, and by e-filing through the Alameda County Superior Court "
-        "eCourt portal, addressed as follows:"
-    )
-    d.write_wrapped(
-        "Vanessa K. Ing, Deputy Attorney General, Office of the Attorney "
-        "General, 455 Golden Gate Avenue, Suite 11000, San Francisco, CA "
-        "94102-7004. E-mail: Vanessa.Ing@doj.ca.gov. Attorneys for "
-        "Respondents California Highway Patrol and G. Serrato.",
-        first_indent=0,
-    )
-    d.blank_line()
-    d.write_wrapped(
-        "I declare under penalty of perjury under the laws of the State of "
-        "California that the foregoing is true and correct."
-    )
-    d.blank_line()
-    _sign(d, f"Signed on {EXEC_DATE}, at {EXEC_PLACE}.")
-
     d.save()
+    return path
+
+
+def lodging_pos_fields() -> ProofOfServiceFields:
+    return ProofOfServiceFields(
+        plaintiff_line="BRENDAN NGEHSI NEWANFORBI",
+        plaintiff_role="Petitioner",
+        defendant_lines=[
+            "CALIFORNIA HIGHWAY PATROL;",
+            "G. SERRATO; and DOES 1-10",
+        ],
+        defendant_role="Respondents",
+        case_number="26CV191136",
+        title="PROOF OF SERVICE",
+        service_date=EXEC_DATE,
+        document_title=PAPER_TITLE,
+        mailing_location=EXEC_PLACE,
+        recipients=[
+            "Vanessa K. Ing, Deputy Attorney General",
+            "Vanessa.Ing@doj.ca.gov",
+            "Office of the Attorney General",
+            "455 Golden Gate Avenue, Suite 11000",
+            "San Francisco, CA 94102-7004",
+            "Attorneys for Respondents California Highway Patrol and G. Serrato",
+        ],
+        server_name="Brendan Ngehsi Newanforbi",
+        stamp_signature=True,
+        court_line=COURT_LINE1,
+        district_line=COURT_LINE2,
+        by_email=True,
+        signature_on_second_page=True,
+    )
+
+
+def build_pos(path: Path) -> Path:
+    return build_proof_of_service(path, lodging_pos_fields())
+
+
+def main() -> None:
+    if not os.path.isfile(SIGNATURE_IMG):
+        raise SystemExit(f"Missing universal signature: {SIGNATURE_IMG}")
+    MATTER20.mkdir(parents=True, exist_ok=True)
+    front = Path("/tmp/matter20-lodging-front.pdf")
+    build_notice_and_declaration(front)
+    build_pos(POS_PATH)
+    assemble([front, POS_PATH], OUTPUT_PATH)
     print(f"SUCCESS! Generated: {OUTPUT_PATH}")
+    print(f"SUCCESS! Generated: {POS_PATH}")
     if not FILED_STATUS:
         print("NOTE: FILED_STATUS is False -- not yet e-filed/served.")
 
 
 if __name__ == "__main__":
-    if not os.path.isfile(SIGNATURE_IMG):
-        raise SystemExit(f"Missing universal signature: {SIGNATURE_IMG}")
-    build()
+    main()
