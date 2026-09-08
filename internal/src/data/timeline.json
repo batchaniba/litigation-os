@@ -1133,7 +1133,7 @@
   },
   {
     "date": "Aug. 31, 2026",
-    "event": "EXECUTED (unfiled) \u2014 Notice of Supplemental Authority in Newanforbi v. Serrato (4:26-cv-05953-ASK) lodging Hon. Jenna M. Whitman's August 27, 2026 written tentative on the CHP demurrer in Alameda No. 26CV191136 (heard August 28). Caption hearing date is September 30, 2026 (Dkt. 21). The notice attaches the tentative as Exhibit A and does not ask Krishnan to treat the tentative as a final state-court judgment. The entered Whitman order (Aug. 29; notice of entry Aug. 31) is now in the Matter 20 file. This NSA remains unfiled; do not file it.",
+    "event": "EXECUTED (unfiled) \u2014 Notice of Supplemental Authority in Newanforbi v. Serrato (4:26-cv-05953-ASK) lodging Hon. Jenna M. Whitman's August 27, 2026 written tentative on the CHP demurrer in Alameda No. 26CV191136 (heard August 28). Caption hearing date is September 30, 2026 (Dkt. 21). The notice attaches the tentative as Exhibit A and does not ask Krishnan to treat the tentative as a final state-court judgment. SUPERSEDED by the September 8, 2026 Notice of Lodging of the entered August 29 order. Do not file this tentative notice.",
     "matters": [
       24,
       20
@@ -1143,6 +1143,19 @@
     "filed": false,
     "actor": "you",
     "source": "/documents/matter-24/Notice of Supplemental Authority - Whitman Tentative with POS (Aug 31 2026).pdf"
+  },
+  {
+    "date": "Sep. 8, 2026",
+    "event": "EXECUTED (unfiled) \u2014 Notice of Lodging in Newanforbi v. Serrato (4:26-cv-05953-ASK) of Hon. Jenna M. Whitman's August 29, 2026 Order Sustaining Demurrer In Part, with Leave to Amend, in Alameda No. 26CV191136, with the clerk's August 31 notice of entry (Exhibit A). Count 1 overruled; Counts 2\u20133 without leave; Count 4 with leave. Dutra and Paul dismissed by stipulation. Does not ask Krishnan to treat the order as a final judgment on the federal claims. Hearing remains September 30, 2026, 1:30 p.m. (Dkt. 21). Email POS to Li. This is the successor to the unfiled August 31 tentative NSA \u2014 file this packet, not that one. Do not treat as filed until clerk-stamped.",
+    "matters": [
+      24,
+      20
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-24/Notice of Lodging - Whitman Order with POS (Sep 8 2026).pdf"
   },
   {
     "date": "Aug. 28, 2026",
