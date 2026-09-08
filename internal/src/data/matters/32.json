@@ -4,8 +4,8 @@
   "case_no": "3:26-cv-08271-PHK",
   "court": "USDC N.D. Cal. (related to Serrato 4:26-cv-05953-ASK per Aug. 24, 2026 order; also related Candelaria 3:26-cv-08272-LJC)",
   "claims": "42 U.S.C. § 1983 — Fourth/Fourteenth/First Amendment (unlawful entry, search, arrest, Franks/judicial deception, fabrication, First Amendment retaliation) — Dkt. 5 (FAC filed Aug. 17, 2026) is the court pleading of record; also CHP-cluster PDF home for Matters 1/2/20/24",
-  "status": "Related to Serrato and reassigned to Krishnan as 4:26-cv-08271-ASK. Melano served (Dkt. 12). Meza unserved. Dkt. 13 (filed Sep. 3, San Jose) is the Civil L.R. 7-11 administrative motion asking the Court to direct DAG Li to accept service.",
-  "status_label": "Meza unserved — Li accept-service motion filed Dkt. 13",
+  "status": "Related to Serrato and reassigned to Krishnan as 4:26-cv-08271-ASK. Melano served (Dkt. 12). Meza unserved. Dkt. 13 (filed Sep. 3) asks the Court to direct DAG Li to accept service. Li Sep. 7 10:00 p.m. asked for a phone conference this week on Melano/Meza service.",
+  "status_label": "Li service call this week — Meza unserved",
   "lifecycle": "active",
   "proceeding": "federal_civil",
   "phase": "responsive_deadline",
@@ -85,6 +85,14 @@
     },
     {
       "path": "/documents/matter-32/ndcal/EMAIL_DRAFT_Li_FAC_Service_Melano_and_Meza.txt"
+    },
+    {
+      "path": "/documents/matter-24/Gmail - Ngehsi Newanforbi v Serrato - Li Meza Melano service call availability (Sep 7 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-24/EMAIL_DRAFT_Li_Availability_Meza_Melano_Service_Call.txt",
+      "filed": false
     },
     {
       "path": "/documents/matter-32/ndcal/Run With It - Process Serving Order Executed - Meza-Gonzalez (Aug 27 2026).jpg"
