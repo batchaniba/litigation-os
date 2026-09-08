@@ -6,8 +6,8 @@ Alameda Super. Ct. No. 26CV191136, Dept. 25 (Hon. Jenna M. Whitman).
 Department 25's covering clerk authorized lodging video by USB or a cloud
 drive (September 4, 2026). Petitioner emailed the Camera 1 Google Drive
 link to dept25@alameda.courts.ca.gov (cc DAG Ing) on September 8, 2026.
-This paper is the eCourt Notice of Lodging, a separate-page authenticating
-declaration, and the portfolio four-sided-border Proof of Service on one page. The
+This paper is three standalone PDFs: the Notice of Lodging, the
+Declaration of Petitioner, and a one-page Proof of Service. The
 portal will not accept the 2.5 GB file; the link is the lodging.
 
   python3 internal/scripts/matter20-notice-of-lodging-dashcam.py
@@ -24,7 +24,6 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, SCRIPT_DIR)
 sys.path.insert(0, os.path.join(SCRIPT_DIR, "lib"))
 
-from pdf_packet import assemble  # noqa: E402
 from pleading_paper import (  # noqa: E402
     CONTENT_LEFT,
     COURT_LINE1,
@@ -59,8 +58,11 @@ PAPER_TITLE = (
 
 REPO_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, "..", ".."))
 MATTER20 = Path(REPO_ROOT) / "internal" / "public" / "documents" / "matter-20"
-OUTPUT_PATH = MATTER20 / (
+NOTICE_PATH = MATTER20 / (
     "Notice of Lodging - Nov 1 2024 CHP Dashcam Exhibit 5 Source (Sep 8 2026).pdf"
+)
+DECL_PATH = MATTER20 / (
+    "Declaration ISO Notice of Lodging Nov 1 2024 CHP Dashcam (Sep 8 2026).pdf"
 )
 POS_PATH = MATTER20 / (
     "Proof of Service - Notice of Lodging Nov 1 2024 CHP Dashcam (Sep 8 2026).pdf"
@@ -162,7 +164,7 @@ def _declaration_right() -> list[tuple[str, bool, bool]]:
     ]
 
 
-def build_notice_and_declaration(path: Path) -> Path:
+def build_notice(path: Path) -> Path:
     path.parent.mkdir(parents=True, exist_ok=True)
     d = PleadingPaper(str(path), doc_title_footer=DOC_TITLE_FOOTER)
     _header(d)
@@ -227,8 +229,13 @@ def build_notice_and_declaration(path: Path) -> Path:
     )
     d.blank_line()
     _sign(d, f"Signed on {EXEC_DATE}, at {EXEC_PLACE}.")
+    d.save()
+    return path
 
-    d.start_new_page()
+
+def build_declaration(path: Path) -> Path:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    d = PleadingPaper(str(path), doc_title_footer=DOC_TITLE_FOOTER)
     _header(d)
     _caption(d, _declaration_right())
 
@@ -328,11 +335,11 @@ def main() -> None:
     if not os.path.isfile(SIGNATURE_IMG):
         raise SystemExit(f"Missing universal signature: {SIGNATURE_IMG}")
     MATTER20.mkdir(parents=True, exist_ok=True)
-    front = Path("/tmp/matter20-lodging-front.pdf")
-    build_notice_and_declaration(front)
+    build_notice(NOTICE_PATH)
+    build_declaration(DECL_PATH)
     build_pos(POS_PATH)
-    assemble([front, POS_PATH], OUTPUT_PATH)
-    print(f"SUCCESS! Generated: {OUTPUT_PATH}")
+    print(f"SUCCESS! Generated: {NOTICE_PATH}")
+    print(f"SUCCESS! Generated: {DECL_PATH}")
     print(f"SUCCESS! Generated: {POS_PATH}")
     if not FILED_STATUS:
         print("NOTE: FILED_STATUS is False -- not yet e-filed/served.")
