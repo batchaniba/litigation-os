@@ -7,8 +7,11 @@ Department 25's covering clerk authorized lodging video by USB or a cloud
 drive (September 4, 2026). Petitioner emailed the Camera 1 Google Drive
 link to dept25@alameda.courts.ca.gov (cc DAG Ing) on September 8, 2026.
 This paper is three standalone PDFs: the Notice of Lodging, the
-Declaration of Petitioner, and a one-page Proof of Service. The
-portal will not accept the 2.5 GB file; the link is the lodging.
+Declaration of Petitioner, and Judicial Council POS-050 (Proof of
+Electronic Service). Alameda's Sep. 8, 2026 e-filing accepted the
+Notice and Declaration and rejected a federal-style POS for CRC 2.111
+/ JCC format. The portal will not accept the 2.5 GB file; the link is
+the lodging.
 
   python3 internal/scripts/matter20-notice-of-lodging-dashcam.py
 
@@ -29,7 +32,7 @@ from pleading_paper import (  # noqa: E402
     COURT_LINE1,
     PleadingPaper,
 )
-from proof_of_service import ProofOfServiceFields, build_proof_of_service  # noqa: E402
+from pos050 import ProofOfElectronicService, fill_pos050  # noqa: E402
 from signature_stamp import SIGNATURE_NATIVE_PX, SIGNATURE_PATH  # noqa: E402
 
 SIGNATURE_IMG = SIGNATURE_PATH
@@ -293,42 +296,44 @@ def build_declaration(path: Path) -> Path:
     return path
 
 
-def lodging_pos_fields() -> ProofOfServiceFields:
-    return ProofOfServiceFields(
-        plaintiff_line="BRENDAN NGEHSI NEWANFORBI",
-        plaintiff_role="Petitioner",
-        defendant_lines=[
-            "CALIFORNIA HIGHWAY PATROL;",
-            "G. SERRATO; and DOES 1-10",
-        ],
-        defendant_role="Respondents",
+def lodging_pos_fields() -> ProofOfElectronicService:
+    return ProofOfElectronicService(
+        name="Brendan Ngehsi Newanforbi",
+        street="1455 Cat Tail Drive",
+        city="Stockton",
+        state="CA",
+        zip_code="95204",
+        phone="(209) 801-4442",
+        email="bnn.cdl@gmail.com",
+        attorney_for="Petitioner in pro per",
+        county="ALAMEDA",
+        court_street="1225 Fallon Street",
+        court_mailing="1225 Fallon Street",
+        court_city_zip="Oakland, CA 94612",
+        court_branch="Rene C. Davidson Alameda County Courthouse",
+        petitioner="Brendan Ngehsi Newanforbi",
+        respondent="California Highway Patrol, et al.",
         case_number="26CV191136",
-        title="PROOF OF SERVICE",
-        service_date=EXEC_DATE,
-        document_title=(
-            "NOTICE OF LODGING OF NOVEMBER 1, 2024 CHP DASHCAM "
-            "RECORDING (PETITION EXHIBIT 5 SOURCE), with Declaration of Petitioner"
-        ),
-        mailing_location=EXEC_PLACE,
-        recipients=[
-            "Vanessa K. Ing, Deputy Attorney General",
-            "Vanessa.Ing@doj.ca.gov",
-            "Office of the Attorney General",
-            "455 Golden Gate Avenue, Suite 11000",
-            "San Francisco, CA 94102-7004",
-            "Attorneys for Respondents California Highway Patrol and G. Serrato",
+        judicial_officer="Hon. Jenna M. Whitman",
+        department="25",
+        residence_address="1455 Cat Tail Drive, Stockton, CA 95204",
+        server_e_address="bnn.cdl@gmail.com",
+        document_titles=[
+            "NOTICE OF LODGING OF NOVEMBER 1, 2024 CHP DASHCAM RECORDING (PETITION EXHIBIT 5 SOURCE)",
+            "DECLARATION OF PETITIONER ISO NOTICE OF LODGING OF NOVEMBER 1, 2024 CHP DASHCAM RECORDING",
         ],
-        server_name="Brendan Ngehsi Newanforbi",
+        person_served="Vanessa K. Ing",
+        on_behalf_of="Respondents California Highway Patrol and G. Serrato",
+        person_e_address="Vanessa.Ing@doj.ca.gov",
+        service_date="09/08/2026",
+        signature_date="09/08/2026",
+        printed_name="Brendan Ngehsi Newanforbi",
         stamp_signature=True,
-        court_line=COURT_LINE1,
-        district_line=COURT_LINE2,
-        by_email=True,
-        signature_on_second_page=False,
     )
 
 
 def build_pos(path: Path) -> Path:
-    return build_proof_of_service(path, lodging_pos_fields())
+    return fill_pos050(path, lodging_pos_fields())
 
 
 def main() -> None:

@@ -1561,8 +1561,13 @@
   },
   {
     "matter": 20,
-    "label": "Proof of Service — Notice of Lodging, Nov. 1, 2024 CHP dashcam (Sep. 8, 2026)",
+    "label": "POS-050 Proof of Electronic Service — Notice of Lodging, Nov. 1, 2024 CHP dashcam (Sep. 8, 2026; refile after CRC 2.111 reject)",
     "path": "/documents/matter-20/Proof of Service - Notice of Lodging Nov 1 2024 CHP Dashcam (Sep 8 2026).pdf"
+  },
+  {
+    "matter": 20,
+    "label": "Notice of Confirmation of Electronic Filing - Notice of Lodging (POS rejected Sep 8 2026)",
+    "path": "/documents/matter-20/Notice of Confirmation of Electronic Filing - Notice of Lodging (POS rejected Sep 8 2026).pdf"
   },
   {
     "matter": 21,

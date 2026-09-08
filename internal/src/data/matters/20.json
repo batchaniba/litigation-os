@@ -265,15 +265,19 @@
     },
     {
       "path": "/documents/matter-20/Notice of Lodging - Nov 1 2024 CHP Dashcam Exhibit 5 Source (Sep 8 2026).pdf",
-      "filed": false
+      "filed": true
     },
     {
       "path": "/documents/matter-20/Declaration ISO Notice of Lodging Nov 1 2024 CHP Dashcam (Sep 8 2026).pdf",
-      "filed": false
+      "filed": true
     },
     {
       "path": "/documents/matter-20/Proof of Service - Notice of Lodging Nov 1 2024 CHP Dashcam (Sep 8 2026).pdf",
       "filed": false
+    },
+    {
+      "path": "/documents/matter-20/Notice of Confirmation of Electronic Filing - Notice of Lodging (POS rejected Sep 8 2026).pdf",
+      "filed": true
     }
   ],
   "archived": false,
