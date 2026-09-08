@@ -3154,7 +3154,7 @@
   },
   {
     "date": "Sep. 7, 2026",
-    "event": "DRAFTED, NOT YET SENT \u2014 Reply to DAG Li agreeing to a joint JCMS in Newanforbi v. Serrato (4:26-cv-05953-ASK) if Dkt. 22 is still unsigned at 2:00 p.m. Pacific September 8. Prefers joint; will not file separately. If the order posts first, the September 8 disclosure / JCMS / ADR dates are vacated and no statement goes. If unsigned at 2:00 p.m., Plaintiff will also serve Rule 26(a)(1) disclosures by end of day. Do not put GitHub raws in the email. Do not mark sent until it goes out.",
+    "event": "SENT \u2014 Reply to DAG Li, 9:52 p.m., agreeing to a joint JCMS in Newanforbi v. Serrato (4:26-cv-05953-ASK) if Dkt. 22 is still unsigned at 2:00 p.m. Pacific September 8. Prefers joint; will not file separately. If the order posts first, the September 8 disclosure / JCMS / ADR dates are vacated and no statement goes. If unsigned at 2:00 p.m., Plaintiff will also serve Rule 26(a)(1) disclosures by end of day.",
     "matters": [
       24
     ],
@@ -3162,7 +3162,33 @@
     "upcoming": false,
     "filed": false,
     "actor": "you",
-    "source": "/documents/matter-24/EMAIL_DRAFT_Li_Agree_JCMS_Fallback_if_Dkt_22_Unsigned.txt"
+    "source": "/documents/matter-24/Gmail - Ngehsi Newanforbi v Serrato - Li Meza Melano service call availability (Sep 7 2026).pdf"
+  },
+  {
+    "date": "Sep. 7, 2026",
+    "event": "RECEIVED \u2014 DAG Haiyang A. Li e-mail, 10:00 p.m.: agreed on the Serrato JCMS fallback; he will check Dkt. 22 tomorrow afternoon and report. Separately asks Plaintiff's availability Wednesday, Thursday, or Friday for a phone conference on service of Officer Melano and Officer Meza-Gonzalez in Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK). Cc: Andy Marquez. Do not argue service by email. Availability only.",
+    "matters": [
+      24,
+      32
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "filed": false,
+    "actor": "opposing",
+    "source": "/documents/matter-24/Gmail - Ngehsi Newanforbi v Serrato - Li Meza Melano service call availability (Sep 7 2026).pdf"
+  },
+  {
+    "date": "Sep. 8, 2026",
+    "event": "DRAFTED, NOT YET SENT \u2014 Reply to DAG Li with telephone availability for the Meza/Melano service call in Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK): Wednesday, September 9, all day Pacific; Thursday, September 10, all day except 12:00 p.m. to 1:30 p.m. and except 2:00 p.m. (HOPE Rule 12 meet-and-confer with Van Dine is locked at 2:00 p.m.); Friday, September 11, all day. Call (209) 801-4442 or Li to send a number. Do not argue service in this email. Do not put GitHub raws in the email. Do not mark sent until it goes out.",
+    "matters": [
+      24,
+      32
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-24/EMAIL_DRAFT_Li_Availability_Meza_Melano_Service_Call.txt"
   },
   {
     "date": "Sep. 8, 2026",

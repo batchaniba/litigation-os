@@ -4,8 +4,8 @@
   "case_no": "4:26-cv-05953-ASK",
   "court": "USDC N.D. Cal.",
   "claims": "42 USC 1983: Fourteenth Amendment (Substantive & Procedural Due Process), First Amendment (Retaliation); Declaratory Relief",
-  "status": "Dkt. 22 to continue the CMC is still unsigned. Li Sep. 7: if no order by Sep. 8 at 2:00 p.m. PT, Plaintiff sends his JCMS portion for a joint filing by EOD. Disclosures and the Sep. 15 CMC stay live until an order. MTD hearing Sep. 30; opposition is Dkt. 20.",
-  "status_label": "Dkt. 22 unsigned — JCMS fallback Sep. 8 2:00 p.m.",
+  "status": "Dkt. 22 still unsigned. Plaintiff agreed Sep. 7 to a joint JCMS if no order by Sep. 8 at 2:00 p.m. PT; Li will check the docket this afternoon. Disclosures and the Sep. 15 CMC stay live until an order. MTD hearing Sep. 30; opposition is Dkt. 20. Li also asked for a Meza/Melano service call this week.",
+  "status_label": "Dkt. 22 unsigned — JCMS fallback today 2:00 p.m.",
   "lifecycle": "active",
   "proceeding": "federal_civil",
   "phase": "mtd_briefing",
@@ -50,6 +50,14 @@
     },
     {
       "path": "/documents/matter-24/EMAIL_DRAFT_Li_Agree_JCMS_Fallback_if_Dkt_22_Unsigned.txt",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-24/Gmail - Ngehsi Newanforbi v Serrato - Li Meza Melano service call availability (Sep 7 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-24/EMAIL_DRAFT_Li_Availability_Meza_Melano_Service_Call.txt",
       "filed": false
     },
     {
