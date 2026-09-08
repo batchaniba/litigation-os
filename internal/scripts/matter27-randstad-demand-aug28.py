@@ -1,18 +1,11 @@
 # ==========================================================
 # NEWANFORBI v. RANDSTAD US, LLC, ET AL. (26CV199902, Alameda Sup. Ct.)
 #
-# Successor settlement demand as to Randstad US, LLC only, to be
-# transmitted AFTER 2:00 p.m. PT August 28, 2026 — the moment the
-# August 19 $55,000 / $85,000 figures expire by their own terms.
-#
-# Do not send this letter before that hour. Do not attach or send the
-# unsent August 18 $250,000 letter; that figure stays the internal
-# aggressive ceiling.
-#
-# Anchor: $175,000.00 Randstad-only. Lands above the ~$110,000 moderate
-# band and below $250,000 so there is room to settle without walking
-# back to $55,000. RK Logistics is not a cheap add-on; a global number
-# is its own number, on request.
+# Restatement of the August 19 opening demands as to Randstad US, LLC
+# ($55,000 Randstad-only / $85,000 global). Williams asked August 28
+# for more time; these figures are held, not withdrawn. Do not attach
+# or send the unsent August 18 $250,000 letter; that figure stays the
+# internal aggressive ceiling.
 # ==========================================================
 import os
 import sys
@@ -43,8 +36,10 @@ COVER_PATH = os.path.join(
 )
 
 DATE = "August 28, 2026"
-AMOUNT = "$175,000.00"
-AMOUNT_WORDS = "One Hundred Seventy-Five Thousand U.S. Dollars"
+AMOUNT = "$55,000.00"
+AMOUNT_WORDS = "Fifty-Five Thousand U.S. Dollars"
+GLOBAL_AMOUNT = "$85,000.00"
+GLOBAL_WORDS = "Eighty-Five Thousand U.S. Dollars"
 
 body = ParagraphStyle(
     "body", fontName="Times-Roman", fontSize=12, leading=16.5,
@@ -109,9 +104,7 @@ def stamp_settlement_page(canvas, doc):
     canvas.restoreState()
 
 
-COVER_EMAIL = """HOLD — do not send before 2:00 p.m. Pacific Time on August 28, 2026.
-
-To: Chad Williams <CWilliams@kcozlaw.com>
+COVER_EMAIL = """To: Chad Williams <CWilliams@kcozlaw.com>
 Cc: Nathan Chapman <nchapman@kcozlaw.com>
 Subject: Newanforbi v. Randstad US, LLC et al. — Settlement Demand (Evid. Code § 1152 / FRE 408)
 
@@ -121,9 +114,11 @@ Attach: Settlement Demand - Randstad US LLC (Aug 28 2026).pdf
 
 Chad:
 
-The August 19, 2026 demands ($55,000 Randstad-only / $85,000 global) expired by their own terms at 2:00 p.m. Pacific Time today and are withdrawn. They are not being held.
+I am holding the August 19, 2026 demands. They are not withdrawn.
 
-Attached is my demand to settle as to Randstad US, LLC only: $175,000.00, inclusive of all damages, statutory remedies, attorneys' fees, and costs asserted against Randstad in this action. Please respond on or before 5:00 p.m. Pacific Time on September 8, 2026.
+Randstad US, LLC may resolve Plaintiff's claims against it for $55,000.00. Randstad and The RK Logistics Group, Inc. may resolve all claims globally for $85,000.00.
+
+Attached is a letter restating those figures. Please respond on or before 5:00 p.m. Pacific Time on September 8, 2026.
 
 This communication is for compromise purposes and is protected by California Evidence Code section 1152 and Federal Rule of Evidence 408.
 
@@ -160,7 +155,7 @@ story.append(Paragraph(
     "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unlawful Use of California Sex Offender Registry Information for "
     "Employment (Pen. Code, &sect; 290.46, subd. (j)(2)(E)); Wrongful Termination; ICRAA<br/>"
     "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;InfoMart Order No. 15780719 | Termination: July 15, 2026 | "
-    f"<b>Demand: {AMOUNT} (Randstad only)</b>",
+    f"<b>Demand: {AMOUNT} (Randstad only) or {GLOBAL_AMOUNT} (global)</b>",
     body,
 ))
 story.append(Spacer(1, 6))
@@ -168,18 +163,17 @@ story.append(Paragraph("Dear Mr. Williams:", plain))
 story.append(Spacer(1, 12))
 
 story.append(Paragraph(
-    "The settlement demands I emailed you on August 19, 2026 — $55,000.00 as to Randstad US, "
-    "LLC alone, or $85,000.00 globally with The RK Logistics Group, Inc. — expired by their own "
-    "terms at 2:00 p.m. Pacific Time today. They are withdrawn. They are not being held. Your "
-    "e-mail this morning at 6:49 a.m., stating that you are still conferring with Randstad and will "
-    "attempt to respond by September 4, 2026, is noted. Silence before 2:00 p.m. was not a grant of "
-    "that request, and it did not keep those figures open.",
+    "Your e-mail this morning at 6:49 a.m., stating that you are still conferring with Randstad and "
+    "will attempt to respond by September 4, 2026, is noted. I am holding the settlement demands I "
+    "emailed you on August 19, 2026 — $55,000.00 as to Randstad US, LLC alone, or $85,000.00 "
+    "globally with The RK Logistics Group, Inc. They have not expired for these purposes. They have "
+    "not been withdrawn.",
     body,
 ))
 
 story.append(Paragraph(
-    "This letter is the demand that is open now. It is made as to Randstad alone. A demand against "
-    "both defendants would be a different number and is addressed at the end of this letter.",
+    "This letter restates those demands. It is made as to Randstad alone at $55,000.00, with the "
+    "$85,000.00 global figure stated in Part V.",
     body,
 ))
 
@@ -199,9 +193,8 @@ story.append(Paragraph(
 ))
 
 story.append(Paragraph(
-    "I mention the posture for one reason: this is a filed, served, and calendared case. The July 20, "
-    "2026 pre-filing figure of $85,000.00, and the August 19, 2026 $55,000.00 / $85,000.00 figures "
-    "that expired today, have been overtaken by events and are withdrawn.",
+    "I mention the posture for one reason: this is a filed, served, and calendared case. The figures "
+    "in this letter are the same numbers I sent on August 19. They remain open.",
     body,
 ))
 
@@ -343,13 +336,13 @@ for text in [
 story.append(Paragraph("V.&nbsp;&nbsp;A GLOBAL RESOLUTION", heading))
 
 story.append(Paragraph(
-    "Your August 18 e-mail invited a global demand against both defendants. I am willing to discuss "
-    "one, and if counsel for RK Logistics wishes to participate jointly, I will provide a global "
-    "number on request. Two conditions apply. First, a global number will be its own number; it will "
-    "not be this demand plus a token for RK Logistics, and it will not be produced by dividing this "
-    "demand between the two defendants. Second, nothing about a global discussion changes RK "
-    "Logistics' September 14, 2026 deadline to respond. That date is a single extension. I will not "
-    "grant a further one.",
+    f"Your August 18 e-mail invited a global demand against both defendants. As stated on August 19, "
+    f"Randstad US, LLC and The RK Logistics Group, Inc. may resolve all claims in this action for a "
+    f"total global payment of {GLOBAL_AMOUNT} ({GLOBAL_WORDS}), inclusive of all damages, statutory "
+    f"remedies, attorneys' fees, and costs. The allocation of that payment between Defendants is for "
+    f"Defendants to determine. A Randstad-only resolution of {AMOUNT} leaves the claims against RK "
+    f"Logistics intact. Nothing about a global discussion changes RK Logistics' September 14, 2026 "
+    f"deadline to respond. That date is a single extension. I will not grant a further one.",
     body,
 ))
 
