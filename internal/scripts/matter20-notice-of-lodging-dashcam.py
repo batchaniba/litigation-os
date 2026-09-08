@@ -7,7 +7,7 @@ Department 25's covering clerk authorized lodging video by USB or a cloud
 drive (September 4, 2026). Petitioner emailed the Camera 1 Google Drive
 link to dept25@alameda.courts.ca.gov (cc DAG Ing) on September 8, 2026.
 This paper is the eCourt Notice of Lodging, a separate-page authenticating
-declaration, and the portfolio four-sided-border Proof of Service. The
+declaration, and the portfolio four-sided-border Proof of Service on one page. The
 portal will not accept the 2.5 GB file; the link is the lodging.
 
   python3 internal/scripts/matter20-notice-of-lodging-dashcam.py
@@ -298,7 +298,10 @@ def lodging_pos_fields() -> ProofOfServiceFields:
         case_number="26CV191136",
         title="PROOF OF SERVICE",
         service_date=EXEC_DATE,
-        document_title=PAPER_TITLE,
+        document_title=(
+            "NOTICE OF LODGING OF NOVEMBER 1, 2024 CHP DASHCAM "
+            "RECORDING (PETITION EXHIBIT 5 SOURCE), with Declaration of Petitioner"
+        ),
         mailing_location=EXEC_PLACE,
         recipients=[
             "Vanessa K. Ing, Deputy Attorney General",
@@ -313,7 +316,7 @@ def lodging_pos_fields() -> ProofOfServiceFields:
         court_line=COURT_LINE1,
         district_line=COURT_LINE2,
         by_email=True,
-        signature_on_second_page=True,
+        signature_on_second_page=False,
     )
 
 
