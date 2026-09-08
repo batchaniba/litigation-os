@@ -329,6 +329,41 @@
     "source": "/documents/matter-32/ndcal/Dkt 13 - Administrative Motion Packet - DAG Li to Accept Service (Filed Sep 3 2026).pdf"
   },
   {
+    "date": "Sep. 8, 2026",
+    "event": "RECEIVED \u2014 signed Run With It Declaration of Service and Declaration of Reasonable Diligence (order 15645547; Daniel Fischer, independent contractor, PO Box 691237, Stockton, CA 95269; fee $134.00) for Santiago Meza-Gonzalez (CHP #023295), individually, Nforbi v. Meza-Gonzalez et al. (3:26-cv-08271-PHK / 4:26-cv-08271-ASK). Substitute service Aug. 27, 2026, 1:30 p.m., at CHP Modesto Area, 4030 Kiernan Ave, Modesto, CA 95356, left with Kim S. - H.R. after unsuccessful attempts Aug. 25 (4:00 p.m.) and Aug. 26 (10:15 a.m.). Packet: summons, Dkt. 5 FAC, Notice Identifying Operative FAC, Dkt. 4 CMC/ADR order. Signed Sep. 3, 2026. Unfiled Rule 4(l) return. CCP \u00a7415.20 mailing follow-up is not on the face of the return \u2014 do not start Meza's FRCP 12 clock from Aug. 27 until mailing is confirmed or Li accepts service.",
+    "matters": [
+      32
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-32/ndcal/Run With It - Declaration of Service and Diligence - Meza-Gonzalez (Order 15645547, Signed Sep 3 2026).pdf"
+  },
+  {
+    "date": "Sep. 8, 2026",
+    "event": "FILE \u2014 Rule 4(l) return for Santiago Meza-Gonzalez (Daniel Fischer Declaration of Service + Diligence, Run With It order 15645547). Mail or e-file as Summons Returned Executed. Do not wait on Dkt. 13. If ECF is still not live, mail the original to the N.D. Cal. San Jose clerk the same way Dkt. 13 went in. Copy DAG Li. CCP \u00a7415.20 mailing follow-up is not on the face of this return.",
+    "matters": [
+      32
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-32/ndcal/Run With It - Declaration of Service and Diligence - Meza-Gonzalez (Order 15645547, Signed Sep 3 2026).pdf"
+  },
+  {
+    "date": "Sep. 8, 2026",
+    "event": "REVISED (still unsent) \u2014 Li FAC-service email now attaches the signed Fischer / Run With It Declaration of Service and Diligence (order 15645547) and names Kim S. - H.R. as the person who accepted at CHP Modesto Area on Aug. 27. Proofs still unfiled. Do not put GitHub raws in the e-mail. Do not treat CCP \u00a7415.20 as complete until mailing is confirmed. Availability for this week's service call is a separate reply on the Serrato thread.",
+    "matters": [
+      32
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-32/ndcal/EMAIL_DRAFT_Li_FAC_Service_Melano_and_Meza.txt"
+  },
+  {
     "date": "Aug. 27, 2026",
     "event": "RECEIVED \u2014 Run With It do-not-reply: Process Serving Order Executed (order 15645547) for Santiago Meza-Gonzalez (CHP #023295), individually, at 4030 Kiernan Ave, Modesto, CA 95356. Vendor reports substitute service on a person apparently in charge on Aug. 27, 2026. Signed process-serving report not yet received. Do not treat as a filed Rule 4(l) return.",
     "matters": [
