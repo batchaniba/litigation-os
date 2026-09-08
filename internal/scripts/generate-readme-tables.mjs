@@ -198,7 +198,7 @@ const overviewTable = [
   `| Aggregate Exposure (Conservative) | ~${money(roundK(cons))}+ |`,
   `| Aggregate Exposure (Moderate) | ~${money(roundK(mod))}+ |`,
   `| Aggregate Exposure (Aggressive) | ~${money(roundK(agg))}+ |`,
-  `| Last Updated | August 8, 2026 |`,
+  `| Last Updated | September 7, 2026 |`,
 ].join("\n");
 
 const activeTable = [

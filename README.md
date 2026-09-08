@@ -2,7 +2,7 @@
 
 # Interactive Litigation Portfolio
 
-An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi**, Pro Se / In Propria Persona. The portfolio tracks 35 civil matters across federal and California state courts, providing a structured view of case status, procedural history, damages exposure, and overarching legal theories.
+An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi**, Pro Se / In Propria Persona. The portfolio tracks 39 civil matters across federal and California state courts, providing a structured view of case status, procedural history, damages exposure, and overarching legal theories.
 
 **Live site:** [interactive-litigation-portfolio.vercel.app](https://interactive-litigation-portfolio.vercel.app)
 
@@ -16,7 +16,7 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
   - [2 — Parole Retaliation, HOPE Abuse & Policy 19-03](#cluster-2--parole-retaliation-hope-abuse--policy-19-03-matters-36-11-1318-21-28-30)
   - [3 — Consumer Fraud / Defective Vehicle](#cluster-3--consumer-fraud--defective-vehicle-matter-12)
   - [4 — Administrative Writs & Habeas Corpus](#cluster-4--administrative-writs--habeas-corpus-matters-9-10-19)
-  - [5 — Employment / Statutory Violation](#cluster-5--employment--statutory-violation-matters-22-25-26-27-29-31)
+  - [5 — Employment / Statutory Violation](#cluster-5--employment--statutory-violation-matters-22-25-26-27-29-31-36-39)
   - [6 — Public Accommodation / Unruh](#cluster-6--public-accommodation--unruh-matter-35)
 - [All Matters](#all-matters)
 - [Upcoming Deadlines](#upcoming-deadlines)
@@ -46,7 +46,7 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 | Aggregate Exposure (Conservative) | ~$1,511,000+ |
 | Aggregate Exposure (Moderate) | ~$3,662,000+ |
 | Aggregate Exposure (Aggressive) | ~$8,099,000+ |
-| Last Updated | August 8, 2026 |
+| Last Updated | September 7, 2026 |
 <!-- PORTFOLIO:OVERVIEW_TABLE:END -->
 
 <!-- PORTFOLIO:CLOSED_COUNT_NOTE:START -->
@@ -55,7 +55,7 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 
 > **Housing status:** Homeless since July 2, 2026 — a direct consequence of a retaliatory inter-county parole transfer (Stockton → Santa Clara) imposed immediately after filing Matter 15 (*Newanforbi v. CDCR, et al.*). The transfer caused loss of Stockton family housing; Matters 3, 9, and 19 are also potential retaliatory predicate acts.
 >
-> **Cost of self-representation:** All 35 matters are self-litigated. Estimated equivalent private-counsel cost: **$844,144–$1,410,976** (see [Attorney Fees Analysis](#attorney-fees-analysis)).
+> **Cost of self-representation:** All 39 matters are self-litigated. Estimated equivalent private-counsel cost: **$844,144–$1,410,976** (see [Attorney Fees Analysis](#attorney-fees-analysis)).
 
 [↑ Contents](#contents)
 
@@ -69,12 +69,12 @@ Arising from a November 1, 2024 CHP encounter on I-580. Officers arrested Plaint
 
 - **Matter 1** (USDC E.D. Cal.): Federal §1983 against CHP officers; adverse F&R issued April 20, 2026 (Magistrate CSK recommends MTD GRANTED WOLA — 4th/14th Amendment, qualified immunity); District Judge DC adoption pending. If adopted, Matter 2 (Alameda, stayed) and the new Matter 32 N.D. Cal. filing become the primary vehicles.
 - **Matter 2** (Alameda Sup. Ct.): Parallel state tort action (False Imprisonment, Battery, Bane Act); STAYED pending Matter 1 District Judge ruling.
-- **Matter 7** (USDC E.D. Cal.): Federal §1983 against DMV Hearing Officer Candelaria and DMV Director Gordon; adverse F&R issued June 15, 2026 (Magistrate CSK: IFP denied as frivolous; FAC dismissed WOLA). Portfolio record still shows F&R pending on objections; Matter 33's operative N.D. Cal. complaint alleges Matter 7 was voluntarily dismissed without prejudice — confirm the E.D. Cal. docket before treating either posture as controlling.
+- **Matter 7** (USDC E.D. Cal.): Federal §1983 against DMV Hearing Officer Candelaria and DMV Director Gordon; **DISMISSED WITHOUT PREJUDICE** by notice filed August 15, 2026 (FRCP 41(a)(1)(A)(i)), mooting the June 15 F&R and any objections. Claims were refiled as Matter 33 (N.D. Cal. 3:26-cv-08272-LJC).
 - **Matter 8** (Sacramento Sup. Ct.): State Writ of Administrative Mandate challenging the same void APS decision — **ABANDONED** after the July 17, 2026 fee-waiver hearing (non-appearance) and the ~July 27, 2026 fee-payment deadline lapsed. PDFs live under Matter 33 (`matter-33/from-08/`).
-- **Matter 20** (Alameda Sup. Ct.): State Writ of Mandate against CHP; demurrer opposition filed July 13, 2026; CHP demurrer hearing Aug. 28, 2026. Individual Respondents Serrato, Paul, and Dutra filed joinders/demurrers July 30, 2026 and stipulated to advance their Oct. 16/23 hearing dates to Aug. 28 (stipulation not yet entered).
+- **Matter 20** (Alameda Sup. Ct.): State Writ of Mandate against CHP. After the August 28, 2026 hearing, Judge Whitman entered an August 29 order (notice of entry August 31): Count 1 overruled and proceeds; Counts 2–3 out without leave; Count 4 optional leave to amend by September 20, 2026. Dutra and Paul were dismissed by stipulation; live respondents are CHP and Serrato. CMC is October 28, 2026, 4:00 p.m., Dept. 25.
 - **Matter 24** (USDC N.D. Cal.): §1983 against CHP Captain G. Serrato for arbitrary U Visa certification denial and retaliation; IFP granted June 29, 2026 (Krishnan screening order, now cited across the cluster); MTD hearing reset to September 30, 2026 (Dkt. 21); CMC September 15, 2026. Listed as related case on the Matter 32/33 JS-44s.
-- **Matter 32** (USDC N.D. Cal.): **CASE FILED August 7, 2026, 4:05 p.m. PT** — *Nforbi v. Meza-Gonzalez & Melano*, §1983 (six causes: unlawful entry/search/arrest, Franks/judicial deception, fabrication, First Amendment retaliation); compensatory damages >$214,000 pleaded; case number assignment pending. Also owns the Meza-Gonzalez / CHP-cluster docket PDFs from Matters 1, 2, 20, and 24 under `matter-32/from-01|02|20|24/` and the new N.D. Cal. filing set under `matter-32/ndcal/`.
-- **Matter 33** (USDC N.D. Cal.): **CASE FILED August 7, 2026, 4:05 p.m. PT** — *Ngwa Nforbi v. Candelaria, et al*, §1983 APS structural-bias / fair-hearing / vacatur (five causes); compensatory damages >$214,000 and JS-44 demand $250,000 min.; case number assignment pending. Also owns the Nov. 1 / APS incident evidence (`matter-33/incident/`), Matter 7 PDFs (`from-07/`), Matter 8 PDFs (`from-08/`), the June 15, 2026 Candelaria F&R (`opinions/`), and the N.D. Cal. filing set under `matter-33/ndcal/`.
+- **Matter 32** (USDC N.D. Cal.): *Nforbi v. Meza-Gonzalez & Melano*, **3:26-cv-08271-PHK** (related/reassigned as **4:26-cv-08271-ASK**); docketed August 10, 2026. Operative pleading is the August 17 FAC (Dkt. 5). Melano has been served; Meza remains unserved. A Civil L.R. 7-11 motion asking DAG Li to accept service was filed September 3 (Dkt. 13). Also owns the Meza-Gonzalez / CHP-cluster docket PDFs from Matters 1, 2, 20, and 24 under `matter-32/from-01|02|20|24/` and the new N.D. Cal. filing set under `matter-32/ndcal/`.
+- **Matter 33** (USDC N.D. Cal.): *Nforbi v. Candelaria, et al.*, **3:26-cv-08272-LJC**; docketed August 10, 2026. Operative pleading is the August 17 FAC (Dkt. 6). Defendants answered the superseded Dkt. 1 complaint on September 4 (ECF No. 11); a motion to strike that answer was prepared September 5. CMC is November 12, 2026. Also owns the Nov. 1 / APS incident evidence (`matter-33/incident/`), Matter 7 PDFs (`from-07/`), Matter 8 PDFs (`from-08/`), the June 15, 2026 Candelaria F&R (`opinions/`), and the N.D. Cal. filing set under `matter-33/ndcal/`.
 
 ### Cluster 2 — Parole Retaliation, HOPE Abuse & Policy 19-03 (Matters 3–6, 11, 13–18, 21, 28, 30)
 
@@ -98,7 +98,7 @@ The largest cluster — 14 matters — targeting CDCR's parole supervision appar
 
 Fraud and UCL claims against Diamond Truck Sales, Inc. and Alpine Truck Sales, Inc. for concealing a DEF/emissions defect and prior CHP out-of-service order on a 2014 Volvo VNL (VIN: 4V4NC9EH6EN142206) purchased for $26,900. The truck entered catastrophic derate mode immediately after purchase, rendering it commercially unusable. Direct documented losses ~$25,129.44; lost hauling income >$46,800. At the August 12, 2026 CMC, both defendants appeared through counsel (Gulomjon Azimov), disputed service, and no default was entered; further CMC December 11, 2026. California SOS bizfile (August 28, 2026): Diamond Truck Sales, Inc. (Entity 3438768) — agent **Saliman Osmani**, 1201 S. Soderquist Road, Turlock (Stanislaus); Alpine Truck Sales, Inc. (Entity B20250280641, formed September 2, 2025) — agent **Sheran Osmani**, 7156 Golden State Highway, Bakersfield (Kern). Alpine's July 1, 2026 Turlock service was not the SOS agent address. Re-serve the Amended Summons and FAC on those agents (Alpine named as sued); meet and confer with Azimov first.
 
-**Expected recovery — favorable August 12, 2026 CMC:** With both named defendants in default (Diamond since April 10, 2026; Alpine deadline July 31, 2026 — before CMC), the August 12 hearing is the prove-up entry point. A favorable ruling is expected to yield:
+**Requested default prove-up (did not go forward):** The August 12, 2026 CMC did not convert to a prove-up because both defendants appeared through counsel, disputed service, and no default was entered. The figures below remain the litigated-damages floor:
 
 | Component | Amount |
 |---|---|
@@ -111,9 +111,9 @@ Fraud and UCL claims against Diamond Truck Sales, Inc. and Alpine Truck Sales, I
 | Costs of Suit (per Form MC-010 — filing fees, sheriff's service fees, etc.) | per MC-010 |
 | **Total Monetary Judgment Requested (per Default Judgment Packet)** | **≥ $78,671.20 + costs** |
 
-*The $78,671.20 floor is established in the Declaration ISO Default Judgment filed June 15, 2026 against Diamond Truck Sales, Inc. Punitive damages and costs are subject to judicial discretion at the August 12, 2026 prove-up hearing. Lost income was deliberately underpled at 18 weeks (conservative) versus the FAC's $46,800+ allegation; FAC paragraph 31 controls the Greenup v. Rodman notice ceiling on lost income.*
+*The $78,671.20 floor is established in the Declaration ISO Default Judgment filed June 15, 2026 against Diamond Truck Sales, Inc. Punitive damages and costs remain subject to judicial discretion if and when a future prove-up occurs. Lost income was deliberately underpled at 18 weeks (conservative) versus the FAC's $46,800+ allegation; FAC paragraph 31 controls the Greenup v. Rodman notice ceiling on lost income.*
 
-**Post-judgment collection prep (as of July 29, 2026 — no judgment entered yet):** EJ-001 (Abstract of Judgment), EJ-130 (Writ of Execution), AT-138/EJ-125 (Judgment Debtor Examination), and MC-012 (Memorandum of Costs After Judgment) are pre-drafted with the case's fixed facts (parties, court, case number) already filled in, so they're ready to complete and file the same day or next business day once the Aug. 12 CMC actually produces a judgment — no field asserts a judgment date or amount that hasn't happened. Alpine's joint-and-several exposure runs through its own pre-drafted default judgment packet (CIV-100, execution date Aug. 1, 2026), not a CCP §187 motion to amend the judgment — §187 amendment adds an alter ego who was never a named party, and generally isn't available where the underlying judgment is by default; Alpine is already a named, personally-served defendant, so its own default judgment is the correct vehicle.
+**Post-judgment collection prep (as of July 29, 2026 — no judgment entered yet):** EJ-001 (Abstract of Judgment), EJ-130 (Writ of Execution), AT-138/EJ-125 (Judgment Debtor Examination), and MC-012 (Memorandum of Costs After Judgment) are pre-drafted with the case's fixed facts (parties, court, case number) already filled in, so they're ready to complete and file the same day or next business day if a future prove-up produces a judgment — no field asserts a judgment date or amount that hasn't happened. Alpine's joint-and-several exposure runs through its own pre-drafted default judgment packet (CIV-100, execution date Aug. 1, 2026), not a CCP §187 motion to amend the judgment — §187 amendment adds an alter ego who was never a named party, and generally isn't available where the underlying judgment is by default; Alpine is already a named, personally-served defendant, so its own default judgment is the correct vehicle.
 
 **Default judgment packet review findings (flagged Jul. 29, 2026):**
 - **Case number error** — every CIV-100 in both the Diamond and Alpine default judgment packets, and the original [Proposed] Judgment (JUD-100), showed the case number as `STK-CV-UF-2026-1094` instead of the actual `STK-CV-UF-2026-0001094`. The JUD-100 has been corrected (new file in the documents list, ready to submit at the Aug. 12 CMC) and also now names Alpine — not just Diamond — in Item 5a's operative "against defendant" field, since the original only mentioned Alpine's joint-and-several liability in freeform Item 8 text, which the abstract-of-judgment and writ-of-execution forms aren't built to read. Diamond's CIV-100/Declaration were already submitted to the court on 6/15/26 with the case-number error baked in — that can't be fixed by editing a repository copy; confirm with the clerk that the case docketed correctly, and fix Alpine's CIV-100 before it's filed Aug. 1.
@@ -135,9 +135,9 @@ Three equitable proceedings seeking court orders directing CDCR to act — no to
 - **Matter 10** (Santa Clara Sup. Ct., C2602632): Habeas Corpus — **CLOSED**. Petition denied without prejudice April 27, 2026 (exhaustion; PC §3008(d)(2) certification required).
 - **Matter 19** (Santa Clara Sup. Ct., C2604791): Habeas Corpus — **ACTIVE**. Seeks immediate and unconditional discharge from parole; filed April 3, 2026; Order Extending Time issued July 2, 2026 (Hon. Robert Hawk) setting a ruling deadline of August 1, 2026. **That deadline lapsed without a ruling** — as of August 7, 2026 Judge Hawk has not ruled and no further extension order has issued. The petition remains pending and under submission; it has not been denied, dismissed, or set for an Order to Show Cause. An HC-004 request-for-ruling packet was prepared August 7, 2026 and is ready to file.
 
-### Cluster 5 — Employment / Statutory Violation (Matters 22, 25, 26, 27, 29, 31)
+### Cluster 5 — Employment / Statutory Violation (Matters 22, 25, 26, 27, 29, 31, 36-39)
 
-Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibition on using sex offender registry information for employment purposes — against separate employers across a 30-month window, plus a sixth matter (31) asserting vendor-side FCRA/ICRAA liability against the background-check company that supplied two of those registry-flagged reports. (Matters 32 and 33 are CHP / DMV APS filings — see Cluster 1.)
+Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibition on using sex offender registry information for employment purposes — against separate employers across a 30-month window, plus a sixth matter (31) asserting vendor-side FCRA/ICRAA liability against the background-check company that supplied two of those registry-flagged reports. Matters 36-39 are executed San Joaquin packets (AT&T, Home Depot, Swift, Best Buy) prepared for a September 8, 2026 walk-up and still unfiled as of September 7, 2026. (Matters 32 and 33 are CHP / DMV APS filings — see Cluster 1.)
 
 - **Matter 22** (Newanforbi v. Pilot Travel Centers LLC) — **SETTLED July 14, 2026** — San Joaquin Superior Court (STK-CV-UWT-2026-0007649). Wrongful termination; Defendant's own Post-Adverse Action Notice admitted registry as sole termination basis. Resolved pro se in under seven weeks from filing, before service was completed. First portfolio settlement. Closing out August 2026: CM-200 Notice of Settlement / CIV-110 request for dismissal mailed August 3, 2026; POS completed August 5, 2026.
 - **Matter 25** (Newanforbi v. Federal Express Corporation) — San Joaquin Superior Court (STK-CV-UWT-2026-0009118); PC §290.46(j) failure to hire; First Advantage BGC ran March 2025; final adverse action March 19, 2025; complaint filed July 15, 2026; assigned to Dept. 10B, Hon. Blanca Banuelos; CMC January 14, 2027. **SERVED July 24, 2026** on Ct Corporation System; responsive pleading due August 24, 2026.
@@ -368,7 +368,7 @@ Plaintiff is representing himself pro se across all 39 matters. The figures belo
 
 11. **Consumer Reporting Agency Liability for Registry-Flagged Reports (Matter 31)** — First Advantage LLC generated and transmitted the registry-flagged background reports and every pre-adverse/adverse notice underlying both Matter 25 (FedEx, March 2025) and Matter 26 (UPS, July 2024) — an identical notice template and cadence, eight months apart, for two different employers — yet was never itself joined as a defendant in either matter, unlike the comparable vendors elsewhere in the same cluster (Accurate Background, Matter 29; HireRight, the abandoned Matter 23). This theory targets the vendor's own furnishing conduct under FCRA §§1681b(b) and 1681e(b) and ICRAA, rather than the employers' use of the reports, and is pled as additive to — not duplicative of — Matters 25 and 26.
 
-12. **N.D. Cal. Refile of the Nov. 1 / APS Cluster (Matters 32 & 33)** — Filed the same day (August 7, 2026, 4:05 p.m. PT) under related-case notices to Serrato (Matter 24). Matter 32 brings six §1983 counts against the arresting CHP officers under the Ngwa Nforbi name form on the DS-367; Matter 33 brings the APS structural-bias / vacatur theory against Candelaria and Gordon after an alleged voluntary dismissal without prejudice of the E.D. Cal. Matter 7 action. Both plead compensatory damages exceeding $214,000. Portfolio damages rows for 32/33 remain $0 so the shared CDL wage-loss period is not triple-counted against Matters 1, 2, and 7.
+12. **N.D. Cal. Refile of the Nov. 1 / APS Cluster (Matters 32 & 33)** — Both matters were docketed August 10, 2026 as **3:26-cv-08271-PHK** (Matter 32; related/reassigned as 4:26-cv-08271-ASK) and **3:26-cv-08272-LJC** (Matter 33). Matter 7 was dismissed without prejudice on August 15, 2026. Matter 32 brings six §1983 counts against the arresting CHP officers under the Ngwa Nforbi name form on the DS-367; Matter 33 brings the APS structural-bias / vacatur theory against Candelaria and Gordon. Both plead compensatory damages exceeding $214,000. Portfolio damages rows for 32/33 remain $0 so the shared CDL wage-loss period is not triple-counted against Matters 1, 2, and 7.
 
 [↑ Contents](#contents)
 
