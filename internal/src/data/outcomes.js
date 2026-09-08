@@ -34,14 +34,14 @@ const outcomes_raw = {
     {
       matter: 27,
       caption: "Newanforbi v. Randstad US, LLC",
-      demand_amount: 175000,
-      sent_date: "August 28, 2026",
+      demand_amount: 55000,
+      sent_date: "August 19, 2026",
       deadline: "September 8, 2026",
       deadline_time: "5:00 PM PT",
       counsel: "Chadwick L. Williams, Esq. (Kabat Chapman & Ozmer LLP)",
       counsel_email: "cwilliams@kcozlaw.com",
       response_status: "pending",
-      notes: "Post-expiry successor to the Aug. 19 $55,000 Randstad-only / $85,000 global figures (those expired 2:00 p.m. PT Aug. 28 and were not held). $175,000.00 Randstad-only, inclusive, payable within 15 business days after a signed agreement. Global number is its own number on request — not this demand plus a token for RK. Response due 5:00 p.m. PT Sept. 8, 2026 (self-imposed; one week before Randstad's Sept. 15 answer date). Williams said Aug. 28 he would attempt to respond by Sept. 4 — that watch is a number into this field, not acceptance of the expired $55k/$85k. Pleading clocks: Randstad Sept. 15 (Aug. 18 15-day extension with Williams); RK Logistics Sept. 14 (Garcia request granted; no further). Evid. Code §1152 / FRE 408. Case No. 26CV199902, Hon. Karin Schwartz, Dept. 20; CMC Dec. 17, 2026."
+      notes: "Live ask is the Aug. 19 transmitted demand: $55,000.00 Randstad-only, or $85,000.00 globally with The RK Logistics Group, Inc., restated in the Aug. 28 letter. Inclusive, payable within 15 business days after a signed agreement. Response due 5:00 p.m. PT Sept. 8, 2026 (self-imposed; one week before Randstad's Sept. 15 answer date). Williams said Aug. 28 he would attempt to respond by Sept. 4. The unsent Aug. 18 $250,000 letter stays unsent. Pleading clocks: Randstad Sept. 15 (Aug. 18 15-day extension with Williams); RK Logistics Sept. 14 (Garcia request granted; no further). Evid. Code §1152 / FRE 408. Case No. 26CV199902, Hon. Karin Schwartz, Dept. 20; CMC Dec. 17, 2026."
     },
     {
       matter: 27,
@@ -54,7 +54,7 @@ const outcomes_raw = {
       counsel_email: "",
       response_status: "denied",
       response_date: "July 21, 2026",
-      notes: "Pre-filing $85,000 demand denied July 21 through Garcia & Gurney on (1) Randstad-was-the-employer and (2) MVR/Class A grounds — both in tension with RK's own Transportation Manager email and Plaintiff's Class C license. Not part of the live Aug. 28 $175,000 Randstad-only ask; any global remains a separate number. Responsive pleading extended to Sept. 14, 2026 (single extension; no further). Case No. 26CV199902."
+      notes: "Pre-filing $85,000 demand denied July 21 through Garcia & Gurney on (1) Randstad-was-the-employer and (2) MVR/Class A grounds — both in tension with RK's own Transportation Manager email and Plaintiff's Class C license. Not part of the live Aug. 19 $55,000 Randstad-only / $85,000 global ask restated Aug. 28. Responsive pleading extended to Sept. 14, 2026 (single extension; no further). Case No. 26CV199902."
     }
   ],
   portfolio_exposure: {

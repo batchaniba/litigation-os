@@ -390,7 +390,7 @@ export function OutcomesTab() {
           Diamond and Alpine appeared through counsel on August 12 and disputed service; that case is back on an
           ordinary litigated path (CMC Dec. 11). FedEx (Matter 25) and UPS (Matter 26) are in federal court after
           removal — the July pre-filing $85,000 demands are no longer live asks. Matter 27 carries the live
-          settlement track: a $175,000 Randstad-only demand (response Sept. 8) after RK Logistics denied the
+          settlement track: a $55,000 Randstad-only / $85,000 global demand (response Sept. 8) after RK Logistics denied the
           earlier $85,000 ask through Garcia &amp; Gurney. These outcomes reflect the quality of the underlying
           record across all {totalMatterCount} matters. The remaining {fmt(moderate - combined)} at moderate estimate
           represents {activeMatterCount} active matters where that same record is still at work.
