@@ -68,6 +68,7 @@ class ProofOfServiceFields:
     recipients: list[str] = field(default_factory=list)
     server_name: str = ""
     stamp_signature: bool = False
+    court_line: str = "UNITED STATES DISTRICT COURT"
     district_line: str = DISTRICT_NDCAL
     # One-page squeeze clips long titles and drives the signature through
     # the bottom border. Set True to put the declaration and stamp on page 2.
@@ -189,10 +190,12 @@ def _draw_signature_block(c: canvas.Canvas, fields: ProofOfServiceFields, decl_y
         "I declare under penalty of perjury that the foregoing is true and correct.",
     )
 
-    sig_width = 200.0
+    sig_width = 165.0
     sig_height = sig_width * SIGNATURE_ASPECT
     gap_decl_to_sig = 40.0
-    name_below = 16.0
+    # Keep the typed name clear of the stamp's bottom loops. 40 pt matches
+    # the pleading-paper gap on the Notice / Declaration pages.
+    name_below = 40.0
     sig_line_y = decl_y - gap_decl_to_sig - sig_height
     line_pad = 4.0
     sig_line_w = sig_width + 2 * line_pad
@@ -227,7 +230,7 @@ def _draw_signature_block(c: canvas.Canvas, fields: ProofOfServiceFields, decl_y
 
 def _draw_continuation_header(c: canvas.Canvas, fields: ProofOfServiceFields) -> float:
     y = PAGE_H - BORDER_T - 44
-    _center(c, "UNITED STATES DISTRICT COURT", y, "Times-Roman", FS)
+    _center(c, fields.court_line or "UNITED STATES DISTRICT COURT", y, "Times-Roman", FS)
     y -= LEADING
     _center(c, fields.district_line or DISTRICT_NDCAL, y, "Times-Roman", FS)
     y -= LEADING * 2.0
@@ -265,7 +268,7 @@ def build_proof_of_service(path: Path | str, fields: ProofOfServiceFields) -> Pa
 
     y = PAGE_H - BORDER_T - 44
 
-    _center(c, "UNITED STATES DISTRICT COURT", y, "Times-Roman", FS)
+    _center(c, fields.court_line or "UNITED STATES DISTRICT COURT", y, "Times-Roman", FS)
     y -= LEADING
     _center(c, fields.district_line or DISTRICT_NDCAL, y, "Times-Roman", FS)
     y -= LEADING * 2.2
@@ -412,12 +415,12 @@ def build_proof_of_service(path: Path | str, fields: ProofOfServiceFields) -> Pa
         c.save()
         return path
 
-    # One-page footer: must match _draw_signature_block (gap 40, name 16)
+    # One-page footer: must match _draw_signature_block (gap 40, name 40)
     # or the stamp sits lower than this reservation and punches the border.
-    sig_width = 200.0
+    sig_width = 165.0
     sig_height = sig_width * SIGNATURE_ASPECT  # native aspect × 1.15 upward stretch
     gap_decl_to_sig = 40.0
-    name_below = 16.0
+    name_below = 40.0
     footer_pad = 16.0  # clearance from typed name down to the bottom border
     footer_block = (
         FS  # declaration

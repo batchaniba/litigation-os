@@ -66,4 +66,4 @@ After adding an entry, copy the packet to `internal/public/{slug}.pdf`
 | `cv-5012-blank-template.pdf` | Santa Clara CV-5012 Civil Lawsuit Notice (blank for clerk) |
 | `hc004-blank-template.pdf` | HC-004 habeas |
 | `stanislaus-cc-authorization-blank-template.pdf` | Stanislaus CC auth |
-| `ndcal-proof-of-service-blank-template.pdf` | Alias of the POS blank (same bytes) |
+| `pos050-blank-template.pdf` | POS-050/EFS-050 Proof of Electronic Service (CRC 2.251) |

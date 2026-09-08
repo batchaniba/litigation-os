@@ -519,7 +519,7 @@
     "judge": "Hon. Jenna M. Whitman, Dept. 25",
     "cluster": 1,
     "type": "State",
-    "defendants": "California Highway Patrol; G. Serrato, Captain and Commander CHP Dublin Area; Gary Paul, Lieutenant CHP Dublin Area; Eric Dutra, Sergeant CHP Dublin Area; DOES 1-10",
+    "defendants": "California Highway Patrol; G. Serrato, Captain and Commander CHP Dublin Area; DOES 1-10",
     "serviceTracking": [
       {
         "name": "G. Serrato",
@@ -559,7 +559,7 @@
     "archived": false,
     "badge": "LEAVE TO AMEND",
     "evidenceCount": 12,
-    "documentCount": 49
+    "documentCount": 53
   },
   {
     "number": 21,
