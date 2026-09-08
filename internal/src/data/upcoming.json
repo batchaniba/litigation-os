@@ -254,6 +254,28 @@
     "source": "/documents/matter-27/Settlement Demand - Randstad US LLC (Aug 28 2026).pdf"
   },
   {
+    "date": "Sep. 15, 2026",
+    "event": "FILE IF SILENT — e-file CIV-100 Request for Entry of Default as to The RK Logistics Group, Inc. (clerk default only, item 1c). First fileable the day after RK's Sept. 14 response date. Check Alameda eCourt / One Legal that morning: do not file if an answer, demurrer, motion to strike, CIV-141, or stipulation is on the docket. Document type ≈ Request for Default. Do not attach the 425.115 notices. Same-day CCP §587 first-class mail to Melinda Garcia (Garcia & Gurney, 6600 Koll Center Parkway, Suite 200, Pleasanton, CA 94566) and to RK c/o CSC, 2710 Gateway Oaks Drive, Suite 150N, Sacramento, CA 95833.",
+    "matters": [
+      27
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-27/CIV-100 Request for Entry of Default - RK Logistics Group Inc (Clerk Default Only, Sep 15 2026).pdf"
+  },
+  {
+    "date": "Sep. 16, 2026",
+    "event": "FILE IF SILENT — e-file CIV-100 Request for Entry of Default as to Randstad US, LLC (clerk default only, item 1c). First fileable the day after Randstad's Sept. 15 response date. Check Alameda eCourt / One Legal that morning: do not file if an answer, demurrer, motion to strike, CIV-141, or stipulation is on the docket. Document type ≈ Request for Default. Do not attach the 425.115 notices. Same-day CCP §587 first-class mail to Chadwick L. Williams (Kabat Chapman & Ozmer LLP, 1150 Spring Street NW, Suite 800, Atlanta, GA 30309) and to Randstad c/o CSC, 2710 Gateway Oaks Drive, Suite 150N, Sacramento, CA 95833.",
+    "matters": [
+      27
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-27/CIV-100 Request for Entry of Default - Randstad US LLC (Clerk Default Only, Sep 16 2026).pdf"
+  },
+  {
     "date": "Sep. 16, 2026",
     "event": "Rule 15(a)(1)(B) amendment-as-of-right window — Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). UPS served the MTD by mail Aug. 26, 2026 (ECF 7-3). 21 days after service is Sep. 16; Rule 6(d) may add 3 days for mail service through Sep. 19. A FAC moots ECF 7. Opposition is already on file as Dkt. 10.",
     "matters": [

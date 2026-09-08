@@ -170,7 +170,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | 24 | Newanforbi v. Serrato | 4:26-cv-05953-ASK | USDC N.D. Cal. | Federal | Dkt. 22 unsigned — JCMS fallback today 2:00 p.m. |
 | 25 | Newanforbi v. Federal Express Corporation | 2:26-cv-02881-DAD-SCR | USDC E.D. Cal. (Sacramento Div.) | Federal | Answered Dkt. 4 — MJ consent mailed Sep. 1 |
 | 26 | Newanforbi v. United Parcel Service, Inc. | 2:26-cv-02847-DAD-CKD | USDC E.D. Cal. (Sacramento Div.) | Federal | Opp. to Dkt. 11 executed — hearing Oct. 7 (CKD) |
-| 27 | Newanforbi v. Randstad, et al. | 26CV199902 | Alameda Sup. Ct. | State | $55k / $85k global held; RK Sep. 14 |
+| 27 | Newanforbi v. Randstad, et al. | 26CV199902 | Alameda Sup. Ct. | State | $55k / $85k global held; CIV-100s hold Sep. 15/16 |
 | 28 | Newanforbi v. Shannon Smith, LCSW, CEO, et al. | 3:26-cv-07504-LJC | USDC N.D. Cal. | Federal | M&C locked Sep. 10 2:00 p.m. PT — answer Sep. 21 |
 | 29 | Newanforbi v. Amazon.com Services, LLC | 4:26-cv-09249-ASK | USDC N.D. Cal. (Oakland; formerly 3:26-cv-09249-ASK) | Federal | Plaintiff consent filed — both answers Sep. 22 |
 | 30 | Newanforbi v. Moua, et al. | TBD | USDC N.D. Cal. | Federal | Pre-filing — GCA claim pending; Moua-only complaint ready |
@@ -239,8 +239,10 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | Sep. 11, 2026 | 12 | Azimov response due (courtesy) — whether Diamond Truck Sales, Inc. and Alpine Truck Sales, Inc. will (A) execute a Notice of Acknowledgment of Receipt or equivalent stipulation accepting the Amended Summons and FAC, or… |
 | Sep. 14, 2026 | 29 | Deadline to file Consent or Declination to Magistrate Judge Jurisdiction — Plaintiff or the removing party, Newanforbi v. |
 | Sep. 14, 2026 | 27 | Extended responsive-pleading deadline — The RK Logistics Group, Inc. only, Newanforbi v. Randstad US, LLC et al. (26CV199902) |
+| Sep. 15, 2026 | 27 | FILE IF SILENT — e-file CIV-100 Request for Entry of Default as to The RK Logistics Group, Inc. (clerk default only, item 1c). First fileable the day after RK's Sept. 14 response date. |
 | Sep. 15, 2026 | 27 | Extended responsive-pleading deadline — Randstad US, LLC only, Newanforbi v. Randstad US, LLC et al. (26CV199902); 15 days past the Aug. 31, 2026 computed deadline, agreed on the Aug. 18, 2026 call with Chadwick L. |
 | Sep. 15, 2026 | 24 | Initial Case Management Conference — 1:30 PM via Zoom (cand.uscourts.gov/ask); Hon. Ajay S. Krishnan — Newanforbi v. Serrato (4:26-cv-05953-ASK) |
+| Sep. 16, 2026 | 27 | FILE IF SILENT — e-file CIV-100 Request for Entry of Default as to Randstad US, LLC (clerk default only, item 1c). First fileable the day after Randstad's Sept. 15 response date. |
 | Sep. 16, 2026 | 26 | Rule 15(a)(1)(B) amendment-as-of-right window — Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). UPS served the MTD by mail Aug. 26, 2026 (ECF 7-3). 21 days after service is Sep. 16 |
 | Sep. 16, 2026 | 30 | Anticipated filing date (computed) — Complaint v9 (Moua and DOES 1-10), Newanforbi v. Moua, et al. (Matter 30); 15 days after the anticipated Sep. 1, 2026 deemed rejection |
 | Sep. 20, 2026 | 20 | AMENDMENT DUE (optional) — if Petitioner elects to amend Count 4, file and serve an amended Petition within 20 days of notice of entry of the August 29, 2026 Whitman order. |
