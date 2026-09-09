@@ -53,6 +53,36 @@ Firm site: [kcozlaw.com](https://www.kcozlaw.com/). Bios used this pass: [Willia
 
 ---
 
+## Style — what the file actually supports (Sep. 9, 2026)
+
+Do not collapse "KCO is aggressive" into "Williams writes that way." We still have **no Williams-signed brief**. The heat is on papers Chapman signed. Williams's own voice, in this file, is short, courteous, and about **tempo**.
+
+**What is Williams, personally**
+
+- **Three Matter 27 emails.** Aug. 19, 7:49 a.m.: *"Brendan, this is received. I'll discuss with my client and circle back."* Aug. 28, 6:49 a.m., the morning the $55k/$85k window died: *"thanks again for your patience. I am still conferring with my client and require additional time. We will attempt respond to your opening demand by September 4, 2026."* No counteroffer. No merits. No threat. Direct line, "We have moved" footer, copies Chapman every time.
+- **First move on this desk was pricing, not pleading.** Call plus intro email: 15-day extension (party agreement only; no stipulation) **and** "send an opening demand" as to Randstad, optional global. No NOA, no CCP § 430.41 letter, no answer. That is aggressive about **control of the number and the clock**, not about rhetoric.
+- **Bio path is appellate, not trial-heat.** Eleventh Circuit staff attorney, then Hull clerk, then KCO associate from 2021. Ones to Watch 2026. That predicts clean, short writing if he ever signs something. It does not predict the *We Got U* introduction.
+
+**What is the firm / Chapman, and easy to misread as "Chadwick"**
+
+- *We Got U* Dkt. 1 is a full-heat employer-plaintiff complaint: *"coordinated scheme orchestrated by high ranking former insiders,"* *"To be clear, Garry did not leave WGU and then decide to compete,"* names a daughter and her partner as co-conspirators who are **not** defendants, downloaded CRM / budgets / *"at least one client's digital login credentials,"* prayer **"at least $1 million"** plus punitives, fees, and an injunction. **Chapman signed it.** Williams is on the block, not named lead on the later Rule 26 report.
+- *Charter* is the same posture at speed: emergency TRO/PI 17 days after filing, Chapman declaration, seal, expedited discovery, oppose transfer, then **stipulate out with prejudice, each side own fees**, before the May hearing. Williams was PACER lead. Chapman filed the merits.
+- *We Got U* Dkt. 21 (answer to the Leonards' counterclaim) is the other register: "the MOU speaks for itself," deny characterizations, no fireworks. Also Chapman.
+- *We Got U* Dkt. 24 is a **joint** consent protective order. They will cooperate on discovery mechanics when it serves the company.
+
+**How that reads on Matter 27**
+
+Williams asking for your number before he appears is the aggressive part that is actually his. It lets Randstad treat $55k / $85k as a ceiling and, later, as a "professional plaintiff" talking point. It is not the same thing as the *We Got U* "coordinated scheme" voice. If a demurrer or § 430.41 letter arrives, expect Chapman's name on it unless a California appearance is arranged for Williams. Until that paper exists, do not forecast heat from three polite emails.
+
+**Still missing (so do not invent it)**
+
+- Any Williams-signed motion, opposition, or meet-and-confer letter.
+- Hearing transcripts or a judge describing his demeanor.
+- The four other N.D. Ga. Williams dockets (*Fowler*, *Sullivan*, *SidePrize*, *Newson-Pace*) — especially *SidePrize* (13 days) and *Fowler* (closed).
+- Whether he is nasty in person. The Aug. 18 call is memorialized only as extension-plus-demand. No raised-voice record.
+
+---
+
 ## Education / path (firm-claimed)
 
 **Williams.** B.B.A. University of North Georgia 2015, cum laude. J.D. Georgia State University College of Law 2018, summa cum laude; Order of the Coif; law review (associate editor; student Note selected for publication); moot court (Best Team and Best Brief, 2017 Georgia Intrastate). Extern, Metro Atlanta Business Court. Staff Attorney, U.S. Court of Appeals for the Eleventh Circuit (firm: prepared memoranda and draft opinions). Law clerk to Judge Frank M. Hull, Eleventh Circuit. LinkedIn (not independently verified): Staff Attorney June 2018–June 2020; Hull clerk June 2020–August 2021; KCO associate from September 2021. Best Lawyers: Ones to Watch® in America 2026, Litigation – Labor and Employment (Georgia) — firm presser August 25, 2025.
