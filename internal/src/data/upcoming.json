@@ -1,5 +1,27 @@
 [
   {
+    "date": "Oct. 8, 2026",
+    "event": "HEARING — Status (Pretrial Scheduling) Conference in Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR), Thursday, October 8, 2026, 11:00 a.m. Zoom. Set by Dkt. 8 (filed Sep. 8; dated Sep. 4). The courtroom deputy sends dial-in about one week before. Appear. Magistrate referral under E.D. Cal. L.R. 302(c)(21) because Plaintiff is pro se.",
+    "matters": [
+      25
+    ],
+    "type": "hearing",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-25/Dkt 08 - Order Setting Status Conference (Filed Sep 8 2026).pdf"
+  },
+  {
+    "date": "Sep. 24, 2026",
+    "event": "DEADLINE — Status reports due in Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR), not later than 14 days before the Oct. 8 Zoom conference (Dkt. 8). Cover service, joinder, amendment, jurisdiction/venue, anticipated motions, a Rule 26(f) discovery plan including expert disclosure, cutoffs and trial estimate, related cases, settlement conference, and whether the parties will stipulate to the assigned magistrate as settlement judge. Both parties file. FedEx counsel: Allison A. Kray (allison.kray@fedex.com).",
+    "matters": [
+      25
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-25/Dkt 08 - Order Setting Status Conference (Filed Sep 8 2026).pdf"
+  },
+  {
     "date": "Sep. 8, 2026",
     "event": "FILE-READY (optional vs Serrato) — Executed verified complaint against Home Depot U.S.A., Inc. for the Tracy distribution-center hire (Matter 37), dated September 8, 2026, with CM-010, SUM-100, and FW-001 (5b / $0, UPS/FedEx grant pattern). Not yet filed. Plaintiff accepted the hire, began onboarding, and was ghosted; hire timing remains I&B on or about August 2024. Serve CSC, not 5395 Hopkins Road. Serrato disclosures are already on this day — do not bury them.",
     "matters": [
@@ -97,6 +119,17 @@
     "upcoming": true,
     "actor": "you",
     "source": "/documents/matter-28/Gmail - Newanforbi v HOPE re Meet and Confer 3-26-cv-07504 (Sep 3-6 2026).pdf"
+  },
+  {
+    "date": "Sep. 8, 2026",
+    "event": "FILE — Rule 4(l) return for Santiago Meza-Gonzalez (Daniel Fischer Declaration of Service + Diligence, Run With It order 15645547). Mail or e-file as Summons Returned Executed. Do not wait on Dkt. 13. If ECF is still not live, mail the original to the N.D. Cal. San Jose clerk the same way Dkt. 13 went in. Copy DAG Li. CCP §415.20 mailing follow-up is not on the face of this return.",
+    "matters": [
+      32
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-32/ndcal/Run With It - Declaration of Service and Diligence - Meza-Gonzalez (Order 15645547, Signed Sep 3 2026).pdf"
   },
   {
     "date": "Sep. 11, 2026",
@@ -252,6 +285,28 @@
     "upcoming": true,
     "actor": "opposing",
     "source": "/documents/matter-27/Settlement Demand - Randstad US LLC (Aug 28 2026).pdf"
+  },
+  {
+    "date": "Sep. 15, 2026",
+    "event": "FILE IF SILENT — e-file CIV-100 Request for Entry of Default as to The RK Logistics Group, Inc. (clerk default only, item 1c). First fileable the day after RK's Sept. 14 response date. Check Alameda eCourt / One Legal that morning: do not file if an answer, demurrer, motion to strike, CIV-141, or stipulation is on the docket. Document type ≈ Request for Default. Do not attach the 425.115 notices. Same-day CCP §587 first-class mail to Melinda Garcia (Garcia & Gurney, 6600 Koll Center Parkway, Suite 200, Pleasanton, CA 94566) and to RK c/o CSC, 2710 Gateway Oaks Drive, Suite 150N, Sacramento, CA 95833.",
+    "matters": [
+      27
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-27/CIV-100 Request for Entry of Default - RK Logistics Group Inc (Clerk Default Only, Sep 15 2026).pdf"
+  },
+  {
+    "date": "Sep. 16, 2026",
+    "event": "FILE IF SILENT — e-file CIV-100 Request for Entry of Default as to Randstad US, LLC (clerk default only, item 1c). First fileable the day after Randstad's Sept. 15 response date. Check Alameda eCourt / One Legal that morning: do not file if an answer, demurrer, motion to strike, CIV-141, or stipulation is on the docket. Document type ≈ Request for Default. Do not attach the 425.115 notices. Same-day CCP §587 first-class mail to Chadwick L. Williams (Kabat Chapman & Ozmer LLP, 1150 Spring Street NW, Suite 800, Atlanta, GA 30309) and to Randstad c/o CSC, 2710 Gateway Oaks Drive, Suite 150N, Sacramento, CA 95833.",
+    "matters": [
+      27
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-27/CIV-100 Request for Entry of Default - Randstad US LLC (Clerk Default Only, Sep 16 2026).pdf"
   },
   {
     "date": "Sep. 16, 2026",

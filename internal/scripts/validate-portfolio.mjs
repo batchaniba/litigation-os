@@ -46,6 +46,8 @@ const ROOT_ALLOWED_FILES = new Set([
   "package.json",
   "package-lock.json",
   "pyproject.toml",
+  "AGENTS.md",
+  "CLAUDE.md",
   "README.md",
   "requirements.txt",
   "tsconfig.json",
