@@ -1,6 +1,10 @@
 # ==========================================================
 # NEWANFORBI v. RANDSTAD US, LLC, ET AL. (26CV199902, Alameda Sup. Ct.)
 #
+# HISTORICAL generator — locked stipulation posture:
+# .claude/skills/stipulation-draft/TEMPLATE.md and SKILL.md. Portfolio-wide.
+# Named party only, single fifteen days, default reserved, no further implied.
+#
 # Two documents responding to the August 18, 2026 email from Chadwick L.
 # Williams of Kabat Chapman & Ozmer LLP, counsel for Randstad US, LLC:
 #

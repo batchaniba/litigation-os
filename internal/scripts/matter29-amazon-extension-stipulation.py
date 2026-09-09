@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 """Matter 29 — Plaintiff-executed counterpart of the Amazon response extension.
 
+HISTORICAL generator — the locked stipulation posture lives in
+.claude/skills/stipulation-draft/TEMPLATE.md (blank) and
+.claude/skills/stipulation-draft/SKILL.md (worked examples). Portfolio-wide.
+
 Andrew P. Frederick (Morgan Lewis) emailed a draft stipulation on August 31,
 2026, and asked for permission to apply Plaintiff's e-signature and file.
 This script does not stamp counsel's .docx (that file was not in the Gmail
