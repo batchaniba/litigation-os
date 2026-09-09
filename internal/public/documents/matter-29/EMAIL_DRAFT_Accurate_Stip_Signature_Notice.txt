@@ -27,7 +27,4 @@ Attachments:
   Stipulation to Extend Time for Accurate Background to Respond (Plaintiff Counterpart, Sep 1 2026).docx
 
 ---
-Note to self (do not send): Do not put a GitHub raw link in this email.
-Do not mention the 5-1 attestation page.
-Do not date this as sent until it goes out.
-After Seyfarth files, pull the PACER stamp and retire the unfiled counterpart. Sep. 8 remains the live Accurate clock until then.
+Note to self (do not send): Dkt. 7 is on PACER (filed Sep. 2) — Plaintiff counterpart, Stanzick signed. The Sep. 8 Accurate clock is superseded (now Sep. 22). This leftover /s/ warning letter is optional only if Seyfarth still has the unfiled 328376958.1 draft; do not treat the stipulation as unsent.

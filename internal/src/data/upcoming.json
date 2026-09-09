@@ -23,7 +23,7 @@
   },
   {
     "date": "Sep. 8, 2026",
-    "event": "FILE-READY (optional vs Serrato) — Executed verified complaint against Home Depot U.S.A., Inc. for the Tracy distribution-center hire (Matter 37), dated September 8, 2026, with CM-010, SUM-100, and FW-001 (5b / $0, UPS/FedEx grant pattern). Not yet filed. Plaintiff accepted the hire, began onboarding, and was ghosted; hire timing remains I&B on or about August 2024. Serve CSC, not 5395 Hopkins Road. Serrato disclosures are already on this day — do not bury them.",
+    "event": "FILE-READY (optional vs Serrato) — Executed verified complaint against Home Depot U.S.A., Inc. for the Tracy distribution-center hire (Matter 37), dated September 8, 2026, with CM-010, SUM-100, and FW-001 (5b / $0, UPS/FedEx grant pattern). Not yet filed. Plaintiff accepted the hire, began onboarding, and was ghosted; hire timing remains I&B on or about August 2024. Serve CSC, not 5395 Hopkins Road. Serrato Rule 26(a)(1) went to Li Sep. 8 at 8:59 p.m. These remain optional unfiled.",
     "matters": [
       37
     ],
@@ -34,7 +34,7 @@
   },
   {
     "date": "Sep. 8, 2026",
-    "event": "FILE-READY (optional vs Serrato) — Executed verified complaint against Swift Transportation Co. of Arizona LLC for a Class A Driver role (Matter 38), dated September 8, 2026, with CM-010, SUM-100, and FW-001 (5b / $0, UPS/FedEx grant pattern). NSOPW remained Processing. Not yet filed. Serve the current SOS agent, not a terminal. Serrato disclosures are already on this day — do not bury them. File before September 26 if accrual is the pre-adverse.",
+    "event": "FILE-READY (optional vs Serrato) — Executed verified complaint against Swift Transportation Co. of Arizona LLC for a Class A Driver role (Matter 38), dated September 8, 2026, with CM-010, SUM-100, and FW-001 (5b / $0, UPS/FedEx grant pattern). NSOPW remained Processing. Not yet filed. Serve the current SOS agent, not a terminal. Serrato Rule 26(a)(1) went to Li Sep. 8 at 8:59 p.m. These remain optional unfiled. File before September 26 if accrual is the pre-adverse.",
     "matters": [
       38
     ],
@@ -45,7 +45,7 @@
   },
   {
     "date": "Sep. 8, 2026",
-    "event": "FILE-READY (optional vs Serrato) — Executed verified complaint against Best Buy Co., Inc. (Matter 39), dated September 8, 2026, with CM-010, SUM-100, and FW-001 (5b / $0, UPS/FedEx grant pattern). First Advantage is not a named defendant. Not yet filed. Plaintiff accepted the Oct. 17, 2023 Tracy warehouse offer at 6653 Hopkins Road, completed the drug screen (I&B clean), and was ghosted. Serve the current SOS agent, not a warehouse. Serrato disclosures are already on this day — do not bury them.",
+    "event": "FILE-READY (optional vs Serrato) — Executed verified complaint against Best Buy Co., Inc. (Matter 39), dated September 8, 2026, with CM-010, SUM-100, and FW-001 (5b / $0, UPS/FedEx grant pattern). First Advantage is not a named defendant. Not yet filed. Plaintiff accepted the Oct. 17, 2023 Tracy warehouse offer at 6653 Hopkins Road, completed the drug screen (I&B clean), and was ghosted. Serve the current SOS agent, not a warehouse. Serrato Rule 26(a)(1) went to Li Sep. 8 at 8:59 p.m. These remain optional unfiled.",
     "matters": [
       39
     ],
@@ -56,7 +56,7 @@
   },
   {
     "date": "Sep. 8, 2026",
-    "event": "FILE-READY (optional vs Serrato) — Executed verified complaint against AT&T Mobility Services LLC (Matter 36), dated September 8, 2026, with CM-010, SUM-100, and FW-001 (5b / $0, UPS/FedEx grant pattern). First Advantage is not a named defendant. Not yet filed. Plaintiff confirmed Workday acceptance, onboarding, reliance, and nonreceipt. Serve the current SOS agent, not a store. Serrato disclosures are already on this day — do not bury them. FCRA is pleaded and may permit removal.",
+    "event": "FILE-READY (optional vs Serrato) — Executed verified complaint against AT&T Mobility Services LLC (Matter 36), dated September 8, 2026, with CM-010, SUM-100, and FW-001 (5b / $0, UPS/FedEx grant pattern). First Advantage is not a named defendant. Not yet filed. Plaintiff confirmed Workday acceptance, onboarding, reliance, and nonreceipt. Serve the current SOS agent, not a store. Serrato Rule 26(a)(1) went to Li Sep. 8 at 8:59 p.m. These remain optional unfiled. FCRA is pleaded and may permit removal.",
     "matters": [
       36
     ],
@@ -133,7 +133,7 @@
   },
   {
     "date": "Sep. 11, 2026",
-    "event": "Azimov response due (courtesy) — whether Diamond Truck Sales, Inc. and Alpine Truck Sales, Inc. will (A) execute a Notice of Acknowledgment of Receipt or equivalent stipulation accepting the Amended Summons and FAC, or (B) require formal re-service on the SOS agents. Extended from September 4 at Azimov’s September 1 request. Silence means Plaintiff proceeds with path (B). Does not move the December 11, 2026 CMC. — Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094)",
+    "event": "Azimov response due (courtesy) — whether Diamond Truck Sales, Inc. and Alpine Truck Sales, Inc. will (A) execute a Notice of Acknowledgment of Receipt or equivalent stipulation accepting the Amended Summons and FAC, or (B) require formal re-service on the SOS agents. Extended from September 4 at Azimov's September 1 request. Plaintiff's written grant of that extension is still DRAFTED, NOT YET SENT — Azimov may not have Sep. 11 in writing. Silence, if the grant has gone, means path (B). Does not move the December 11, 2026 CMC. — Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094)",
     "matters": [
       12
     ],
@@ -168,17 +168,6 @@
   {
     "date": "Nov. 10, 2026",
     "event": "Deadline to file ADR Certification (ADR L.R. 3) and to meet and confer regarding initial disclosures, early settlement, ADR process selection, and a discovery plan (Fed. R. Civ. P. 26(f)) — Newanforbi v. Amazon.com Services, LLC et al. (4:26-cv-09249-ASK), per Dkt. 9.",
-    "matters": [
-      29
-    ],
-    "type": "deadline",
-    "upcoming": true,
-    "actor": "you",
-    "source": "/documents/matter-29/Dkt 09 - Order Setting Initial CMC and ADR Deadlines (Filed Sep 3 2026).pdf"
-  },
-  {
-    "date": "Sep. 14, 2026",
-    "event": "Deadline to file Consent or Declination to Magistrate Judge Jurisdiction — Plaintiff or the removing party, Newanforbi v. Amazon.com Services, LLC et al. (4:26-cv-09249-ASK), within 14 days of Aug. 31, 2026 case initiation per Dkt. 9. Plaintiff's September 1 CONSENT is executed and mailed from San Jose; unfiled until clerk-stamped. Other parties must file within 14 days of appearing.",
     "matters": [
       29
     ],
@@ -485,6 +474,19 @@
     "upcoming": true,
     "actor": "you",
     "source": "/documents/matter-33/incident/Arrest Report.pdf"
+  },
+  {
+    "date": "Sep. 8, 2026",
+    "event": "SEND — Reply to DAG Li with telephone availability for the Meza/Melano service call in Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK): Wednesday, September 9, all day Pacific; Thursday, September 10, all day except 12:00 p.m. to 1:30 p.m. and except 2:00 p.m. (Van Dine / Matter 28 is locked at 2:00 p.m.); Friday, September 11, all day. Call (209) 801-4442 or Li to send a number. Reply on the existing Serrato Gmail thread. Do not argue Melano or Meza service in this email. The Sep. 7 Gmail print ends at Li's 10:00 p.m. request — no plaintiff reply is in the file.",
+    "matters": [
+      24,
+      32
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-24/EMAIL_DRAFT_Li_Availability_Meza_Melano_Service_Call.txt"
   },
   {
     "date": "Sep. 15, 2026",
