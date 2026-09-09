@@ -162,13 +162,15 @@
       "side": "defense",
       "client": "W. Michael Maloof, Jr. d/b/a The Maloof Law Firm",
       "nature": "FLSA 29 U.S.C. §216(b); NOS 710; pro se plaintiff",
-      "williams_role": "LEAD; substituted in Dkts. 16-17 (2025-07-15); terminated Dkt. 33 (2025-11-12); signer/CM/ECF filer on 16, 25, 30, 33; Ga. Bar 161149; sole defense counsel on CIP Dkt. 25",
+      "williams_role": "LEAD; substituted in Dkts. 16-17 (2025-07-15); terminated Dkt. 33 (2025-11-12); signer on 16, 25, 30, 33, 34 (34 joint); present at Dkt. 32 mediation; Ga. Bar 161149; sole defense counsel on CIP Dkt. 25",
       "chapman_role": "absent",
       "chapman_filings": [],
-      "williams_filings": [16, 25, 30, 33],
-      "papers_lodged": [16, 25, 30, 33],
-      "papers_to_pull": [35, 17, 29, 9, 5, 1, 32],
-      "outcome": "Williams withdrew after failed mediation and before the court granted leave to amend and denied the inherited 408-strike motion. Case continued with successor counsel.",
+      "predecessor_counsel": "Bryan J. Henderson (821624) / William S. Cleveland (721593), Guilmette Pulver / Guilmette Henderson; Dkts. 5 and 14",
+      "williams_filings": [16, 25, 30, 33, 34],
+      "papers_lodged": [5, 8, 14, 16, 19, 25, 30, 32, 33, 34],
+      "papers_to_pull": [35, 17, 29, 9, 1],
+      "outcome": "Williams sat a 5h39m mediation that failed, filed a joint status report, and withdrew the same day (Nov. 12), before the court granted leave to amend and denied the inherited 408-strike. Case continued with successor counsel.",
+      "dkt5_not_williams": "Predecessor FRE 408 strike (Jun 17). COS failed to serve pro se plaintiff. Williams inherited it; court denied after he left (Dkt. 35).",
       "dkt30": {
         "filed": "2025-09-11",
         "what": "Opposition to leave to amend. Does not oppose amendment in principle; objects to timing of a 399-paragraph / 220-page FAC before Oct. 30 mediation. Asks deny without prejudice or 14 days after mediation to answer.",
@@ -177,14 +179,10 @@
         "recites_offer": "50000 from Doc. 9 (pre-Williams substitution)"
       },
       "sources": [
-        "internal/docs/counsel/kcoz/sources/1-25-cv-02006-JPB-Sullivan-v-Maloof/PACER Full Docket (Sep 8 2026 PT).pdf",
-        "internal/docs/counsel/kcoz/sources/1-25-cv-02006-JPB-Sullivan-v-Maloof/Dkt 16 Proposed Consent Order Granting Substitution (Jul 15 2025).pdf",
-        "internal/docs/counsel/kcoz/sources/1-25-cv-02006-JPB-Sullivan-v-Maloof/Dkt 25 Certificate of Interested Persons (Aug 11 2025).pdf",
-        "internal/docs/counsel/kcoz/sources/1-25-cv-02006-JPB-Sullivan-v-Maloof/Dkt 30 Opposition to Leave to Amend with Ex A (Sep 11 2025).pdf",
-        "internal/docs/counsel/kcoz/sources/1-25-cv-02006-JPB-Sullivan-v-Maloof/Dkt 33 Certificate of Consent to Withdraw (Nov 12 2025).pdf"
+        "internal/docs/counsel/kcoz/sources/1-25-cv-02006-JPB-Sullivan-v-Maloof/"
       ],
-      "usable_as": "First Williams-only docket and first Williams-signed brief. Defense of an employer/professional against a pro se FLSA plaintiff. Closest analog to Matter 27. Voice match to Matter 27 emails: settlement-first, cost, clock — not We Got U heat.",
-      "not_a_holding": "Not related to Matter 27. The $50,000 figure is that defendant's early offer in that case (Doc. 9), not a Randstad number. Court later granted leave (Dkt. 35) after Williams withdrew."
+      "usable_as": "First Williams-only docket and first Williams-signed brief. Defense of an employer/professional against a pro se FLSA plaintiff. Closest analog to Matter 27. Voice match to Matter 27 emails: settlement-first, cost, clock — not We Got U heat. Predecessor (not Williams) filed the 408-strike and botched service.",
+      "not_a_holding": "Not related to Matter 27. The $50,000 figure is that defendant's early offer in that case (Doc. 9), not a Randstad number. Dkt. 5 is not a Williams paper. Court later granted leave (Dkt. 35) after Williams withdrew."
     }
   ],
   "unpulled_williams_ndga": [
