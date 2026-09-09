@@ -76,7 +76,7 @@ Williams asking for your number before he appears is the aggressive part that is
 
 **Still missing (so do not invent it)**
 
-- Any Williams-signed motion, opposition, or meet-and-confer letter.
+- Any Williams-signed motion, opposition, or meet-and-confer letter. *Sullivan* Dkt. **30** is the first one — pull that PDF.
 - Hearing transcripts or a judge describing his demeanor.
 - The four other N.D. Ga. Williams dockets (*Fowler*, *Sullivan*, *SidePrize*, *Newson-Pace*) — especially *SidePrize* (13 days) and *Fowler* (closed).
 - Whether he is nasty in person. The Aug. 18 call is memorialized only as extension-plus-demand. No raised-voice record.
@@ -181,18 +181,32 @@ Party-screen names on the docket caption as *Charter Communications, Inc. v. Myl
 
 The file originally committed as `CM-ECF-GA Northern District Court.pdf` is **not** this docket. It is Williams's N.D. Ga. attorney query (five cases). Lodged separately under `sources/ndga-williams-attorney-query/`.
 
+### 3 — PACER — *Sullivan v. Maloof* (docket only; papers not yet pulled)
+
+| | |
+|---|---|
+| Court / no. | N.D. Ga. (Atlanta) **1:25-cv-02006-JPB** |
+| Judge | Hon. J. P. Boulee (mediation: Mag. Regina D. Cannon) |
+| Filed | April 11, 2025. Still open after Williams left. |
+| Nature | FLSA overtime / minimum wage, 29 U.S.C. § 216(b). NOS 710. Pro se plaintiff. |
+| Side | **Defense** — W. Michael Maloof, Jr. d/b/a The Maloof Law Firm. Employer/professional-defendant vs. a pro se individual. Closest caption-shape to Matter 27 of anything in this file. |
+| Williams | LEAD. Substituted in Dkts. 16–17 (Jul. 15, 2025). **Terminated Nov. 12, 2025** (Dkt. 33). CM/ECF filer on **16, 25, 30, 33**. Chapman does **not** appear. |
+| Chapman | Absent. |
+| Outcome as to Williams | Four months. Opposed leave to amend (Dkt. 30). Mediation Oct. 30 did not resolve (Dkt. 32). Withdrew Nov. 12. Court **granted** the amendment and **denied** the inherited 408-strike motion five days later (Dkt. 35). Successor counsel (DeWoskin / Han) answered the FAC and later moved for summary judgment. |
+| Sources | `sources/1-25-cv-02006-JPB-Sullivan-v-Maloof/PACER Full Docket (Sep 8 2026 PT).pdf` |
+| Pull next | See the ranked ECF list in chat / below. Dkt. **30 + Ex. A** is the only Williams merits brief on this docket. |
+
 ---
 
-## Williams N.D. Ga. attorney query — four still unpulled
+## Williams N.D. Ga. attorney query — remaining unpulled
 
-PACER query "Last Name: Williams First Name: Chadwick Type: aty" (Sep. 8, 2026 PT): **Chadwick Lloyd Williams is an attorney in 5 cases.** *We Got U* is card 2. The other four are leads, not cards:
+PACER query (Sep. 8, 2026 PT): **Chadwick Lloyd Williams is an attorney in 5 cases.** *We Got U* is card 2. *Sullivan* docket is card 3 (papers still to pull). Three case-level pulls left:
 
 | Case | Filed | Closed | Next pull |
 |---|---|---|---|
-| *Fowler v. Lazer Spot, Inc.*, 1:24-cv-01609-LMM | Apr. 16, 2024 | Jan. 7, 2026 | Docket + which side |
-| *Sullivan v. Maloof*, 1:25-cv-02006-JPB | Apr. 11, 2025 | open as of the query | Docket + which side |
-| *SidePrize LLC v. Huffman*, 1:25-cv-03301-SDG | Jun. 12, 2025 | Jun. 25, 2025 | 13-day case — why so fast |
-| *Newson-Pace et al. v. HITT Contracting Inc. et al.*, 3:25-cv-00197-LMM | Sep. 8, 2025 | Feb. 11, 2026 | Docket + which side |
+| *Fowler v. Lazer Spot, Inc.*, 1:24-cv-01609-LMM | Apr. 16, 2024 | Jan. 7, 2026 | Full docket + which side |
+| *SidePrize LLC v. Huffman*, 1:25-cv-03301-SDG | Jun. 12, 2025 | Jun. 25, 2025 | Full docket — 13-day case |
+| *Newson-Pace et al. v. HITT Contracting Inc. et al.*, 3:25-cv-00197-LMM | Sep. 8, 2025 | Feb. 11, 2026 | Full docket + which side |
 
 ---
 
@@ -211,7 +225,7 @@ From the Chapman bio "Representative Matters" as retrieved September 9, 2026. Th
 
 Williams's bio has no representative-matter list on the page retrieved this pass.
 
-Party-search ideas for the next PACER dump (user pulls; agent lodges): the four remaining Williams N.D. Ga. dockets above; Chapman / Williams as attorney in other districts; Kabat Chapman & Ozmer as firm; Charter / TWC / Time Warner as party. Do not dump PDFs on the repository root — they belong in `sources/`.
+Party-search ideas for the next PACER dump (user pulls; agent lodges): *Sullivan* Dkts. 30+Ex. A first, then 16/17/33/29/35; then *Fowler*, *SidePrize*, *Newson-Pace*. Do not dump PDFs on the repository root — they belong in `sources/`.
 
 ---
 
