@@ -1306,12 +1306,12 @@
   },
   {
     "matter": 20,
-    "label": "FW-003 Order on Court Fee Waiver — GRANTED (One Legal download; 5 pp. incl. certificate of mailing; clerk e-service Jun. 3, 2026, 10:45 a.m. PDT). Attach if One Legal bills a court filing fee. Does not waive One Legal's own vendor fee.",
+    "label": "FW-003 Order on Court Fee Waiver - GRANTED (One Legal download, Jun 3 2026)",
     "path": "/documents/matter-20/FW-003 Order on Court Fee Waiver - GRANTED (One Legal download, Jun 3 2026).pdf"
   },
   {
     "matter": 20,
-    "label": "EMAIL DRAFT — to One Legal if they bill a court filing fee again on 26CV191136. Attach the granted FW-003. Do not pay a second court fee. Unsent until billed.",
+    "label": "EMAIL_DRAFT_One_Legal_Court_Fees_Already_Waived.txt",
     "path": "/documents/matter-20/EMAIL_DRAFT_One_Legal_Court_Fees_Already_Waived.txt"
   },
   {
@@ -1561,6 +1561,11 @@
   },
   {
     "matter": 20,
+    "label": "Gmail - Newanforbi v CHP - Notice of Lodging Dashcam to Ing (Sent Sep 8 2026)",
+    "path": "/documents/matter-20/Gmail - Newanforbi v CHP - Notice of Lodging Dashcam to Ing (Sent Sep 8 2026).pdf"
+  },
+  {
+    "matter": 20,
     "label": "Notice of Lodging — Nov. 1, 2024 CHP dashcam (Petition Exhibit 5 source); Declaration; POS (Sep. 8, 2026)",
     "path": "/documents/matter-20/Notice of Lodging - Nov 1 2024 CHP Dashcam Exhibit 5 Source (Sep 8 2026).pdf"
   },
@@ -1678,6 +1683,11 @@
     "matter": 23,
     "label": "HireRight Background Check Report (May 28–29, 2026)",
     "path": "/documents/matter-23/HireRight Report to Macy's Corporate Services (Pre-Employment - BGC). Subject- C 2.pdf"
+  },
+  {
+    "matter": 24,
+    "label": "Gmail - Newanforbi v Serrato - Rule 26(a)(1) Initial Disclosures to Li (Sent Sep 8 2026)",
+    "path": "/documents/matter-24/Gmail - Newanforbi v Serrato - Rule 26(a)(1) Initial Disclosures to Li (Sent Sep 8 2026).pdf"
   },
   {
     "matter": 24,
@@ -2496,12 +2506,12 @@
   },
   {
     "matter": 27,
-    "label": "FW-003 Order on Court Fee Waiver — GRANTED (One Legal download; clerk e-service Jul. 20, 2026, 4:40 p.m. PDT, Deputy A. Gospel). Attach if One Legal bills a court filing fee. Does not waive One Legal's own vendor fee.",
+    "label": "FW-003 Order on Court Fee Waiver - GRANTED (One Legal download, Jul 20 2026)",
     "path": "/documents/matter-27/FW-003 Order on Court Fee Waiver - GRANTED (One Legal download, Jul 20 2026).pdf"
   },
   {
     "matter": 27,
-    "label": "EMAIL DRAFT — to One Legal if they bill a court filing fee again on 26CV199902. Attach the granted FW-003. Do not pay a second court fee. Unsent until billed.",
+    "label": "EMAIL_DRAFT_One_Legal_Court_Fees_Already_Waived.txt",
     "path": "/documents/matter-27/EMAIL_DRAFT_One_Legal_Court_Fees_Already_Waived.txt"
   },
   {
