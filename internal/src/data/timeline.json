@@ -554,6 +554,18 @@
     "source": "/documents/matter-29/Dkt 09 - Order Setting Initial CMC and ADR Deadlines (Filed Sep 3 2026).pdf"
   },
   {
+    "date": "Sep. 8, 2026",
+    "event": "RECEIVED \u2014 Suga A. Ikeda (Morgan Lewis) e-mail, 4:42 p.m. Pacific, serving Dkt. 9 (Order Setting Initial CMC and ADR Deadlines) and a Certificate of Service in Newanforbi v. Amazon.com Services, LLC et al. (4:26-cv-09249-ASK). To bnn.cdl@gmail.com; cc Andrew P. Frederick. The COS is dated September 8, 2026, email-only, correct federal caption. It is service of the CMC order, not a PACER-stamped refile of rejected Dkt. 10 (Dkt. 10 was standing-order service under the Alameda caption 26CV201554). Do not assign this COS a docket number until a clerk stamp appears.",
+    "matters": [
+      29
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "filed": false,
+    "actor": "opposing",
+    "source": "/documents/matter-29/Gmail - Amazon CMC Order and Certificate of Service (Sep 8 2026).pdf"
+  },
+  {
     "date": "Sep. 2, 2026",
     "event": "FILED \u2014 Dkt. 8 Defendant Accurate Background, LLC's Corporate Disclosure Statement and Certification of Conflicts and Interested Entities or Persons (FRCP 7.1 / Civil L.R. 3-15) in Newanforbi v. Amazon.com Services, LLC et al. (N.D. Cal. 4:26-cv-09249-ASK). Accurate is privately owned; no publicly traded company owns or controls 10% or more. Lists Plaintiff, Accurate, and Amazon.com Services, LLC. Caption and body misspell Plaintiff's middle name as Ngehis. Jasmine J. Stanzick; certificate of service by email Sep. 2, 2026.",
     "matters": [
@@ -3329,6 +3341,18 @@
     "filed": true,
     "actor": "you",
     "source": "/documents/matter-24/Dkt 24 - Joint Case Management Conference Statement (Filed Sep 8 2026).pdf"
+  },
+  {
+    "date": "Sep. 8, 2026",
+    "event": "RECEIVED \u2014 Giomara Guardado (DOJ legal secretary) e-mail, 5:50 p.m. Pacific, serving the Joint Case Management Conference Statement in Newanforbi v. Serrato (4:26-cv-05953-ASK). To bnn.cdl@gmail.com; cc Haiyang A. Li. Attached the unstamped service copy. Asked not to be added to the service list (intermittent support only). The PACER-stamped paper is already Dkt. 24. Do not resend Plaintiff's JCMS draft.",
+    "matters": [
+      24
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "filed": false,
+    "actor": "opposing",
+    "source": "/documents/matter-24/Gmail - Newanforbi v Serrato - Guardado Service of Joint CMC Statement (Sep 8 2026).pdf"
   },
   {
     "date": "Sep. 8, 2026",
