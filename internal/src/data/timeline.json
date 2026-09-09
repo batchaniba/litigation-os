@@ -987,6 +987,18 @@
     "source": "/documents/matter-32/from-20/Order Sustaining Demurrer In Part - Whitman (Aug 29 2026) (Notice of Entry Aug 31 2026).pdf"
   },
   {
+    "date": "Sep. 8, 2026",
+    "event": "SENT \u2014 Electronic service on DAG Vanessa Ing, 10:06 p.m. Pacific, in Newanforbi v. CHP et al. (26CV191136). From bnn.cdl@gmail.com to Vanessa.Ing@doj.ca.gov. Attached: Notice of Lodging of November 1, 2024 CHP Dashcam Recording (Petition Exhibit 5 Source); Declaration of Petitioner ISO that Notice; POS-050. Body recites the Drive view link and that no ruling is requested. This is service on Respondents. The eCourt POS reject of September 8 is a portal defect, not a failure of this email. Do not copy Department 25 on a later resend.",
+    "matters": [
+      20
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-20/Gmail - Newanforbi v CHP - Notice of Lodging Dashcam to Ing (Sent Sep 8 2026).pdf"
+  },
+  {
     "date": "Sep. 18, 2026",
     "event": "VACATED \u2014 Hearing on Individual Respondents' demurrers (Paul CRS# 892736633033; Serrato CRS# 487924635411; Dutra CRS# 238548651553), Newanforbi v. CHP et al. (26CV191136). Vacated by the August 29, 2026 Whitman order: Dutra and Paul dismissed by stipulation; the individual demurrer hearings dropped as moot.",
     "matters": [
@@ -3320,7 +3332,7 @@
   },
   {
     "date": "Sep. 8, 2026",
-    "event": "FILED \u2014 Dkt. 24 Joint Case Management Conference Statement in Newanforbi v. Serrato (4:26-cv-05953-ASK). Li filed; Plaintiff authorized /s/ (Civil L.R. 5-1(i)(3) attestation). CMC remains September 15, 2026, 1:30 p.m. Zoom. Dkt. 22 is still unsigned; Li's portion still asks the Court to sign it. Do not resend Plaintiff's JCMS draft. Serve Rule 26(a)(1) if not already emailed. Do not file the disclosures.",
+    "event": "FILED \u2014 Dkt. 24 Joint Case Management Conference Statement in Newanforbi v. Serrato (4:26-cv-05953-ASK). Li filed; Plaintiff authorized /s/ (Civil L.R. 5-1(i)(3) attestation). CMC remains September 15, 2026, 1:30 p.m. Zoom. Dkt. 22 is still unsigned; Li's portion still asks the Court to sign it. Do not resend Plaintiff's JCMS draft. Plaintiff's Rule 26(a)(1) went by email Sep. 8, 8:59 p.m. Do not file the disclosures.",
     "matters": [
       24
     ],
@@ -3345,7 +3357,7 @@
   },
   {
     "date": "Sep. 8, 2026",
-    "event": "DRAFTED, NOT YET SENT \u2014 Plaintiff's Rule 26(a)(1) initial disclosures in Newanforbi v. Serrato (4:26-cv-05953-ASK), dated September 8, 2026, with email POS to DAG Li. JCMS portion is MOOT as a send \u2014 Li filed Dkt. 24. If the disclosures have not gone, email them now (Mr. Li; cc Marquez). Do not file them. Do not merge with the Meza/Melano availability reply. Do not import Matter 32 wage figures. Do not put GitHub raws in the email.",
+    "event": "SENT \u2014 Rule 26(a)(1) initial disclosures in Newanforbi v. Serrato (4:26-cv-05953-ASK), emailed September 8, 2026, 8:59 p.m. Pacific from bnn.cdl@gmail.com to Haiyang.Li@doj.ca.gov, cc Andy.Marquez@doj.ca.gov. Subject: Newanforbi v. Serrato, No. 4:26-cv-05953-ASK \u2014 Plaintiff's Rule 26(a)(1) Initial Disclosures. Attached: Plaintiff's Rule 26(a)(1) Initial Disclosures (Sep 8 2026).pdf and Proof of Service - Rule 26 Initial Disclosures (Sep 8 2026).pdf. Do not file the disclosures. Availability reply for the Meza/Melano service call is still unsent.",
     "matters": [
       24
     ],
@@ -3353,18 +3365,35 @@
     "upcoming": false,
     "filed": false,
     "actor": "you",
-    "source": "/documents/matter-24/EMAIL_DRAFT_Li_JCMS_Portion_and_Rule26_Disclosures.txt"
+    "source": "/documents/matter-24/Gmail - Newanforbi v Serrato - Rule 26(a)(1) Initial Disclosures to Li (Sent Sep 8 2026).pdf"
   },
   {
     "date": "Sep. 8, 2026",
-    "event": "Deadline \u2014 Serve Rule 26(a)(1) initial disclosures in Newanforbi v. Serrato (4:26-cv-05953-ASK). JCMS is on file as Dkt. 24. Dkt. 22 is not an order; Krishnan is not signing it. If the disclosures are not yet in Li's inbox, send them tonight. Do not file them. Do not bury this under the optional HD/Swift/Best Buy/AT&T filings.",
+    "event": "SATISFIED \u2014 Serve Rule 26(a)(1) initial disclosures in Newanforbi v. Serrato (4:26-cv-05953-ASK). Emailed Sep. 8, 8:59 p.m. with the house POS. Do not file them.",
     "matters": [
       24
     ],
     "type": "deadline",
     "upcoming": false,
     "actor": "you",
+    "source": "/documents/matter-24/Gmail - Newanforbi v Serrato - Rule 26(a)(1) Initial Disclosures to Li (Sent Sep 8 2026).pdf"
+  },
+  {
+    "date": "Sep. 15, 2026",
+    "event": "WATCH \u2014 Defendant's Rule 26(a)(1) disclosures in Newanforbi v. Serrato (4:26-cv-05953-ASK). Dkt. 24 \u00a7 VII.A asked Defendant to serve within seven days of Plaintiff's Sep. 8 service. Plaintiff's disclosures went 8:59 p.m. Sep. 8. Same day as the CMC.",
+    "matters": [
+      24
+    ],
+    "type": "deadline",
+<<<<<<< HEAD
+    "upcoming": false,
+    "actor": "you",
     "source": "/documents/matter-24/Gmail - Ngehsi Newanforbi v Serrato - Li JCMS fallback if Dkt 22 unsigned (Sep 7 2026).pdf"
+=======
+    "upcoming": true,
+    "actor": "opposing",
+    "source": "/documents/matter-24/Dkt 24 - Joint Case Management Conference Statement (Filed Sep 8 2026).pdf"
+>>>>>>> origin/main
   },
   {
     "date": "Sep. 15, 2026",
