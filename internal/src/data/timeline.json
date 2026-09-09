@@ -1,5 +1,40 @@
 [
   {
+    "date": "Oct. 8, 2026",
+    "event": "HEARING \u2014 Status (Pretrial Scheduling) Conference in Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR), Thursday, October 8, 2026, 11:00 a.m. Zoom. Set by Dkt. 8 (filed Sep. 8; dated Sep. 4). The courtroom deputy sends dial-in about one week before. Appear. Magistrate referral under E.D. Cal. L.R. 302(c)(21) because Plaintiff is pro se.",
+    "matters": [
+      25
+    ],
+    "type": "hearing",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-25/Dkt 08 - Order Setting Status Conference (Filed Sep 8 2026).pdf"
+  },
+  {
+    "date": "Sep. 24, 2026",
+    "event": "DEADLINE \u2014 Status reports due in Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR), not later than 14 days before the Oct. 8 Zoom conference (Dkt. 8). Cover service, joinder, amendment, jurisdiction/venue, anticipated motions, a Rule 26(f) discovery plan including expert disclosure, cutoffs and trial estimate, related cases, settlement conference, and whether the parties will stipulate to the assigned magistrate as settlement judge. Both parties file. FedEx counsel: Allison A. Kray (allison.kray@fedex.com).",
+    "matters": [
+      25
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-25/Dkt 08 - Order Setting Status Conference (Filed Sep 8 2026).pdf"
+  },
+  {
+    "date": "Sep. 8, 2026",
+    "event": "FILED \u2014 Dkt. 8 Order Setting Status (Pretrial Scheduling) Conference in Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR). Dated September 4, 2026; PACER-stamped Document 8 Filed 09/08/26. Because Plaintiff is pro se, the matter is referred to the magistrate for pretrial proceedings under E.D. Cal. L.R. 302(c)(21). Conference: Thursday, October 8, 2026, 11:00 a.m. Zoom. Status reports due September 24. The order recites Defendant's August 31 answer as ECF No. 5; the portfolio currently has that answer as Dkt. 4 \u2014 confirm the PACER number before citing it.",
+    "matters": [
+      25
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "court",
+    "source": "/documents/matter-25/Dkt 08 - Order Setting Status Conference (Filed Sep 8 2026).pdf"
+  },
+
+  {
     "date": "Sep. 8, 2026",
     "event": "FILE-READY (optional vs Serrato) \u2014 Executed verified complaint against Home Depot U.S.A., Inc. for the Tracy distribution-center hire (Matter 37), dated September 8, 2026, with CM-010, SUM-100, and FW-001 (5b / $0, UPS/FedEx grant pattern). Not yet filed. Plaintiff accepted the hire, began onboarding, and was ghosted; hire timing remains I&B on or about August 2024. Serve CSC, not 5395 Hopkins Road. Serrato disclosures are already on this day \u2014 do not bury them.",
     "matters": [
