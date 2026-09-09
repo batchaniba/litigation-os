@@ -230,14 +230,6 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 <!-- PORTFOLIO:UPCOMING_DEADLINES:START -->
 | Date | Matter | Event |
 |---|---|---|
-| Sep. 8, 2026 | 37 | FILE-READY (optional vs Serrato) — Executed verified complaint against Home Depot U.S.A., Inc. for the Tracy distribution-center hire (Matter 37), dated September 8, 2026, with CM-010, SUM-100, and FW-001 (5b / $0,… |
-| Sep. 8, 2026 | 38 | FILE-READY (optional vs Serrato) — Executed verified complaint against Swift Transportation Co. of Arizona LLC for a Class A Driver role (Matter 38), dated September 8, 2026, with CM-010, SUM-100, and FW-001 (5b / $0,… |
-| Sep. 8, 2026 | 39 | FILE-READY (optional vs Serrato) — Executed verified complaint against Best Buy Co., Inc. (Matter 39), dated September 8, 2026, with CM-010, SUM-100, and FW-001 (5b / $0, UPS/FedEx grant pattern). |
-| Sep. 8, 2026 | 36 | FILE-READY (optional vs Serrato) — Executed verified complaint against AT&T Mobility Services LLC (Matter 36), dated September 8, 2026, with CM-010, SUM-100, and FW-001 (5b / $0, UPS/FedEx grant pattern). |
-| Sep. 8, 2026 | 26 | UPS reply deadline — Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). E.D. Cal. L.R. 230(d): reply no later than 10 days after the opposition was filed. |
-| Sep. 8, 2026 | 32 | FILE — Rule 4(l) return for Santiago Meza-Gonzalez (Daniel Fischer Declaration of Service + Diligence, Run With It order 15645547). Mail or e-file as Summons Returned Executed. Do not wait on Dkt. 13. |
-| Sep. 8, 2026 | 27 | Response deadline (self-imposed) — Aug. 19 $55,000 Randstad-only / $85,000 global settlement demand, restated Aug. 28. Williams to accept, counter, or request a call by 5:00 p.m. PT |
-| Sep. 8, 2026 | 24, 32 | SEND — Reply to DAG Li with telephone availability for the Meza/Melano service call in Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK): Wednesday, September 9, all day Pacific |
 | Sep. 9, 2026 | 27 | Meet-and-confer deadline (computed) as to The RK Logistics Group, Inc. — Newanforbi v. Randstad US, LLC et al. (26CV199902) |
 | Sep. 10, 2026 | 28 | LOCKED — Rule 12(b)(6) meet and confer with Blaze Van Dine (Sims, Lawrence & Broghammer), Thursday, September 10, 2026, 2:00 p.m. Pacific, Newanforbi v. Shannon Smith, LCSW, et al. (N.D. Cal. 3:26-cv-07504-LJC). |
 | Sep. 10, 2026 | 27 | Meet-and-confer deadline (computed) as to Randstad US, LLC — Newanforbi v. Randstad US, LLC et al. (26CV199902) |
