@@ -842,23 +842,19 @@ def pos_fields() -> ProofOfServiceFields:
         title="PROOF OF SERVICE",
         service_date=EXEC_DATE,
         document_title=(
-            "Plaintiff's Initial Disclosures (Fed. R. Civ. P. 26(a)(1)); and "
-            "Plaintiff's Portion of Joint Case Management Statement (for "
-            "incorporation into a joint filing; not a separate filing)"
+            "Plaintiff's Rule 26(a)(1) Initial Disclosures and Plaintiff's "
+            "Portion of Joint Case Management Statement"
         ),
         recipients=[
-            "Haiyang A. Li, Deputy Attorney General",
-            "Office of the Attorney General",
-            "300 South Spring Street, Suite 1702",
+            "Haiyang A. Li, Deputy Attorney General — Haiyang.Li@doj.ca.gov",
+            "Office of the Attorney General, 300 South Spring Street, Suite 1702",
             "Los Angeles, CA 90013-1230",
-            "Haiyang.Li@doj.ca.gov",
             "Attorney for Defendant Captain G. Serrato",
         ],
         server_name="Brendan Ngehsi Newanforbi",
         stamp_signature=True,
         district_line=DISTRICT_NDCAL,
         by_email=True,
-        signature_on_second_page=True,
     )
 
 
