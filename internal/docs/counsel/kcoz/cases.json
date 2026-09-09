@@ -167,10 +167,15 @@
       "chapman_filings": [],
       "predecessor_counsel": "Bryan J. Henderson (821624) / William S. Cleveland (721593), Guilmette Pulver / Guilmette Henderson; Dkts. 5 and 14",
       "williams_filings": [16, 25, 30, 33, 34],
-      "papers_lodged": [1, 5, 8, 14, 16, 19, 25, 30, 32, 33, 34],
-      "papers_to_pull": [35, 17, 29, 9],
+      "papers_lodged": [1, 5, 8, 14, 16, 19, 25, 29, 30, 32, 33, 34],
+      "papers_to_pull": [35, 17, 9],
       "outcome": "Williams sat a 5h39m mediation that failed, filed a joint status report, and withdrew the same day (Nov. 12), before the court granted leave to amend and denied the inherited 408-strike. Case continued with successor counsel.",
       "dkt5_not_williams": "Predecessor FRE 408 strike (Jun 17). COS failed to serve pro se plaintiff. Williams inherited it; court denied after he left (Dkt. 35).",
+      "dkt29": {
+        "filed": "2025-08-28",
+        "what": "Plaintiff motion for leave to amend. Not a Williams paper. Conference certificate: plaintiff offered 30 days from filing; Williams would consent only if answer waited 14 days after Oct 30 mediation; plaintiff refused and filed.",
+        "fac": "Dkt. 29-1, 99 pages, 399 paragraphs, same nine counts"
+      },
       "dkt30": {
         "filed": "2025-09-11",
         "what": "Opposition to leave to amend. Does not oppose amendment in principle; objects to timing of a 399-paragraph / 220-page FAC before Oct. 30 mediation. Asks deny without prejudice or 14 days after mediation to answer.",
@@ -182,7 +187,7 @@
         "internal/docs/counsel/kcoz/sources/1-25-cv-02006-JPB-Sullivan-v-Maloof/"
       ],
       "usable_as": "First Williams-only docket and first Williams-signed brief. Defense of an employer/professional against a pro se FLSA plaintiff. Closest analog to Matter 27. Voice match to Matter 27 emails: settlement-first, cost, clock — not We Got U heat. Predecessor (not Williams) filed the 408-strike and botched service.",
-      "not_a_holding": "Not related to Matter 27. The $50,000 figure is that defendant's early offer in that case (Doc. 9), not a Randstad number. Dkt. 5 is not a Williams paper. Court later granted leave (Dkt. 35) after Williams withdrew."
+      "not_a_holding": "Not related to Matter 27. The $50,000 figure is that defendant's early offer in that case (Doc. 9), not a Randstad number. Dkts. 1 and 29 are plaintiff's papers. Dkt. 5 is predecessor counsel. Court later granted leave (Dkt. 35) after Williams withdrew."
     }
   ],
   "unpulled_williams_ndga": [
