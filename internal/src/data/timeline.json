@@ -1,5 +1,51 @@
 [
   {
+    "date": "Oct. 8, 2026",
+    "event": "HEARING \u2014 Status (Pretrial Scheduling) Conference in Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR), Thursday, October 8, 2026, 11:00 a.m. Zoom. Set by Dkt. 8 (filed Sep. 8; dated Sep. 4). The courtroom deputy sends dial-in about one week before. Appear. Magistrate referral under E.D. Cal. L.R. 302(c)(21) because Plaintiff is pro se.",
+    "matters": [
+      25
+    ],
+    "type": "hearing",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-25/Dkt 08 - Order Setting Status Conference (Filed Sep 8 2026).pdf"
+  },
+  {
+    "date": "Sep. 24, 2026",
+    "event": "DEADLINE \u2014 Status reports due in Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR), not later than 14 days before the Oct. 8 Zoom conference (Dkt. 8). Cover service, joinder, amendment, jurisdiction/venue, anticipated motions, a Rule 26(f) discovery plan including expert disclosure, cutoffs and trial estimate, related cases, settlement conference, and whether the parties will stipulate to the assigned magistrate as settlement judge. Both parties file. FedEx counsel: Allison A. Kray (allison.kray@fedex.com).",
+    "matters": [
+      25
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-25/Dkt 08 - Order Setting Status Conference (Filed Sep 8 2026).pdf"
+  },
+  {
+    "date": "Sep. 8, 2026",
+    "event": "FILED \u2014 Dkt. 8 Order Setting Status (Pretrial Scheduling) Conference in Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR). Dated September 4, 2026; PACER-stamped Document 8 Filed 09/08/26. Because Plaintiff is pro se, the matter is referred to the magistrate for pretrial proceedings under E.D. Cal. L.R. 302(c)(21). Conference: Thursday, October 8, 2026, 11:00 a.m. Zoom. Status reports due September 24. The order recites Defendant's August 31 answer as ECF No. 5. PACER History/Documents (Sep. 8, 8:27 p.m.) confirms the answer is Dkt. 4; Dkt. 5 is Consent/Decline of Magistrate Judge Jurisdiction. Treat the ECF No. 5 recitation as a clerk miscite.",
+    "matters": [
+      25
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "court",
+    "source": "/documents/matter-25/Dkt 08 - Order Setting Status Conference (Filed Sep 8 2026).pdf"
+  },
+  {
+    "date": "Sep. 8, 2026",
+    "event": "PACER \u2014 History/Documents for Newanforbi v. Federal Express Corp. (E.D. Cal. 2:26-cv-02881-DAD-SCR (PS)), pulled Sep. 8, 2026, 8:27 p.m. (bngwanforbi). Confirms: Dkt. 1 Notice of Removal (Aug. 24); Dkt. 2 Corporate Disclosure (Aug. 24); Dkt. 3 Civil New Case Documents (Aug. 25); Dkt. 4 Answer to Complaint (Aug. 31); Dkt. 5 Consent/Decline of Magistrate Judge Jurisdiction (filed Sep. 2, entered Sep. 3); Dkt. 6 same description (filed Sep. 3, entered Sep. 4); Dkt. 7 same description (filed and entered Sep. 4); unnumbered Service by Mail Sep. 8; Dkt. 8 Order (Sep. 8). Last filing Sep. 8. Do not assign Dkts. 5\u20137 to a party until the PDFs are pulled. Plaintiff's Sep. 1 mailing may be among them.",
+    "matters": [
+      25
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-25/PACER History-Documents - E.D. Cal. 2-26-cv-02881-DAD-SCR (Sep 8 2026).pdf"
+  },
+  {
     "date": "Sep. 8, 2026",
     "event": "FILE-READY (optional vs Serrato) \u2014 Executed verified complaint against Home Depot U.S.A., Inc. for the Tracy distribution-center hire (Matter 37), dated September 8, 2026, with CM-010, SUM-100, and FW-001 (5b / $0, UPS/FedEx grant pattern). Not yet filed. Plaintiff accepted the hire, began onboarding, and was ghosted; hire timing remains I&B on or about August 2024. Serve CSC, not 5395 Hopkins Road. Serrato disclosures are already on this day \u2014 do not bury them.",
     "matters": [
@@ -763,7 +809,7 @@
   },
   {
     "date": "Sep. 1, 2026",
-    "event": "EXECUTED (unfiled) \u2014 Plaintiff's Consent to Jurisdiction of United States Magistrate Judge in Newanforbi v. Federal Express Corporation (2:26-cv-02881-DAD-SCR). Court's fillable web form (consentmagweb), not Dkt. 3 p. 4: CONSENT checked, Plaintiff/Petitioner marked, dated September 1, 2026, canonical signature stamped. Proof of Service by first-class mail on Allison A. Kray at 2601 Main Street, Suite 1100, Irvine, CA 92614 from San Jose. The Aug. 28 packet was never mailed and is superseded. Not filed until the Sacramento clerk stamps it (L.R. 305). Consent is effective only if FedEx also consents and both judges accept.",
+    "event": "EXECUTED (docket number unconfirmed) \u2014 Plaintiff's Consent to Jurisdiction of United States Magistrate Judge in Newanforbi v. Federal Express Corporation (2:26-cv-02881-DAD-SCR). Court's fillable web form (consentmagweb), not Dkt. 3 p. 4: CONSENT checked, Plaintiff/Petitioner marked, dated September 1, 2026, canonical signature stamped. Proof of Service by first-class mail on Allison A. Kray at 2601 Main Street, Suite 1100, Irvine, CA 92614 from San Jose. The Aug. 28 packet was never mailed and is superseded. PACER History/Documents as of Sep. 8 shows three later Consent/Decline entries (Dkts. 5\u20137). Do not keep calling this unfiled, and do not assign it a docket number, until those PDFs are pulled. Consent is effective only if FedEx also consents and both judges accept.",
     "matters": [
       25
     ],

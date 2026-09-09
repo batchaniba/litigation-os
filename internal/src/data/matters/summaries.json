@@ -693,9 +693,10 @@
     "case_no": "2:26-cv-02881-DAD-SCR",
     "court": "USDC E.D. Cal. (Sacramento Div.)",
     "claims": "PC §290.46(j)(2)(E) Violation, Failure to Hire (Tameny), ICRAA, Invasion of Privacy, Negligence Per Se, UCL §17200",
+    "status_label": "Status reports Sep. 24; Zoom Oct. 8",
     "lifecycle": "active",
     "proceeding": "federal_civil",
-    "phase": "pleadings",
+    "phase": "cmc",
     "filed": "July 15, 2026 (state); removed Aug. 24, 2026",
     "judge": "Hon. Dale A. Drozd, D.J.; Hon. Sean C. Riordan, M.J.",
     "cluster": 3,
@@ -711,9 +712,8 @@
       "Unlawful Business Practices (Bus. & Prof. Code § 17200 et seq.)"
     ],
     "archived": false,
-    "status_label": "Answered Dkt. 4 — MJ consent mailed Sep. 1",
     "evidenceCount": 9,
-    "documentCount": 40
+    "documentCount": 42
   },
   {
     "number": 26,
