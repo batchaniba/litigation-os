@@ -558,8 +558,8 @@
     ],
     "archived": false,
     "badge": "LEAVE TO AMEND",
-    "evidenceCount": 13,
-    "documentCount": 55
+    "evidenceCount": 14,
+    "documentCount": 56
   },
   {
     "number": 21,
@@ -658,7 +658,7 @@
     "case_no": "4:26-cv-05953-ASK",
     "court": "USDC N.D. Cal.",
     "claims": "42 USC 1983: Fourteenth Amendment (Substantive & Procedural Due Process), First Amendment (Retaliation); Declaratory Relief",
-    "status_label": "Serve 26(a)(1); appear Sep. 15 CMC",
+    "status_label": "Appear Sep. 15 CMC",
     "lifecycle": "active",
     "proceeding": "federal_civil",
     "phase": "mtd_briefing",
@@ -685,7 +685,7 @@
       }
     ],
     "evidenceCount": 13,
-    "documentCount": 60
+    "documentCount": 61
   },
   {
     "number": 25,
