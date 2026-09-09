@@ -27,5 +27,5 @@ Note to self (do not send this footer):
 - To Chad and Nathan. Do not cc Garcia.
 - Attach only the Randstad POS-040 and the Randstad Amended Notice. Do not attach the RK Logistics POS or notice.
 - Attach the PDFs. Do not paste GitHub links. Do not attach the CIV-100s.
-- Do not mention default, the $55,000/$85,000 figures, or Evid. Code § 1152. This is not a settlement communication.
+- Do not mention default, the $55,000/$85,000 figures (those are withdrawn), or Evid. Code § 1152. This is not a settlement communication.
 - Do not date this as sent until it goes out.

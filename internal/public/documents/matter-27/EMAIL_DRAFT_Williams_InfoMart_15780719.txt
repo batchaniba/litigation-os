@@ -33,5 +33,5 @@ Note to self (do not send this footer):
 - To Chad, cc Nathan. Do not cc Garcia unless you decide RK should get the same production in the same send.
 - Attach the PDF. Do not paste SSN, DOB, or other identifiers into the body. The report already contains them; counsel-only is enough.
 - Reply on the settlement-demand thread is fine (1152 already wraps that thread). A new message with the subject above is also fine.
-- Do not restate the $55,000 / $85,000 figures unless you mean to hold them open in this send. Do not mention default or the September 15 response date.
+- The Aug. 19 / Aug. 28 $55,000 / $85,000 figures are withdrawn. Do not restate them. Do not mention default. September 15 belongs in the withdrawal email, not this cover.
 - Do not date this as sent until it goes out.
