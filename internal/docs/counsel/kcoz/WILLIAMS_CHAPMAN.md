@@ -3,7 +3,7 @@
 **Firm:** Kabat Chapman & Ozmer LLP (KCO / KCOZ)  
 **Matter 27 role:** counsel for **Randstad US, LLC** only — *Newanforbi v. Randstad US, LLC et al.*, Alameda Super. Ct. No. **26CV199902**. RK Logistics is Garcia & Gurney.  
 **Last updated:** September 9, 2026  
-**Status:** three PACER pulls lodged (*Charter*; *We Got U*; *Sullivan* docket **plus** Dkts. 1, 5, 8, 14, 16, 19, 25, 29+29-1+29-2+29-3, 30+Ex. A, 32, 33, 34). Williams N.D. Ga. attorney query lodged (five cases).
+**Status:** four PACER pulls lodged (*Ventura* C.D. Cal. docket; *Charter*; *We Got U*; *Sullivan*). Williams N.D. Ga. attorney query lodged (five cases).
 
 This file is internal research. It is **not** a related-case disclosure, **not** a brief, and **not** something to send to this firm.
 
@@ -11,8 +11,8 @@ This file is internal research. It is **not** a related-case disclosure, **not**
 
 ## Do not
 
-- Email Williams or Chapman about this research, the Charter docket, *We Got U*, or any other third-party case.
-- Cite *Charter v. Myla* (or any other card below) as related to Matter 27 on a docket, CMC statement, or Civil L.R. 3-12 / CRC 3.300 notice.
+- Email Williams or Chapman about this research, the Charter docket, *We Got U*, *Ventura*, or any other third-party case.
+- Cite *Charter v. Myla*, *Ventura v. Randstad*, or any other card below as related to Matter 27 on a docket, CMC statement, or Civil L.R. 3-12 / CRC 3.300 notice.
 - Treat a firm-website "representative matter" as a holding until a PACER / reporter pull is lodged under `sources/`.
 - Store PACER credentials here.
 
@@ -20,7 +20,7 @@ This file is internal research. It is **not** a related-case disclosure, **not**
 
 ## The desk in one paragraph
 
-Williams is the **email voice**. Chapman is the **signer**. *Charter v. Myla* (D. Conn. 2025) put Williams as PACER lead and Chapman as the CM/ECF filer. *We Got U LLC v. Leonard* (N.D. Ga., live) puts Chapman on the Rule 26 lead-counsel line with Florida PHV co-counsel; Williams is on the signature block but is **not** named as lead. Same split as Matter 27 so far: Williams called and wrote; Chapman is cc'd and has not signed anything Plaintiff has received. Williams's Georgia Bar number on those papers is **161149**. Chapman's is **244954**. Chapman is California-barred on the firm's own bio; Williams's firm bio and every paper in this file list **Georgia only**. If Randstad files in Alameda, the person who can appear of right is Chapman (or other California counsel), not Williams, unless Williams is admitted *pro hac vice* with a California attorney of record.
+Williams is the **email voice**. Chapman is the **signer**. *Ventura v. Randstad* (C.D. Cal., live) puts that split on the same client: Chapman is **LEAD** at the Los Angeles office and files; Williams is **PHV** with Chapman as local counsel; Jonathan D. Marvisi (LA) is on the block. *Charter v. Myla* (D. Conn. 2025) put Williams as PACER lead and Chapman as the CM/ECF filer. *We Got U LLC v. Leonard* (N.D. Ga., live) puts Chapman on the Rule 26 lead-counsel line; Williams is on the signature block but is **not** named as lead. Same split as Matter 27 so far: Williams called and wrote; Chapman is cc'd and has not signed anything Plaintiff has received. Williams's Georgia Bar number on the Georgia papers is **161149**. Chapman's is **244954**. If Randstad files in Alameda, the person who can appear of right is Chapman (or Marvisi), not Williams, unless Williams is admitted *pro hac vice* with a California attorney of record — which is exactly what *Ventura* Dkt. 73 did on August 19, 2026, the day after the Matter 27 intro call.
 
 ---
 
@@ -35,21 +35,23 @@ Williams is the **email voice**. Chapman is the **signer**. *Charter v. Myla* (D
 | Direct / listed phone | (404) 400-7306 | (404) 400-7300 (also the firm main line) |
 | Fax | (404) 400-7333 | (404) 400-7333 |
 | Email | `cwilliams@kcozlaw.com` | `nchapman@kcozlaw.com` |
-| Office (current; on Aug. 18 / Sep. 8 2026 *We Got U* papers and Matter 27) | 1150 Spring Street NW, Suite 800, Atlanta, GA 30309 | same |
+| Office (current; Atlanta) | 1150 Spring Street NW, Suite 800, Atlanta, GA 30309 | same; **also 707 Wilshire Blvd, Suite 4800, Los Angeles, CA 90017** on *Ventura* |
 | Prior Atlanta address (*Sullivan* 2025 papers; June 2026 *We Got U* complaint / CIP / summons) | 171 17th Street NW, Suite 1550, Atlanta, GA 30363 | same |
 | Matter 27 | Voice, extension, demand recipient | Cc on the Aug. 19 / Aug. 28 demand thread |
 
-Firm site: [kcozlaw.com](https://www.kcozlaw.com/). Bios used this pass: [Williams](https://www.kcozlaw.com/chadwick-l-william/), [Chapman](https://www.kcozlaw.com/nathan-d-chapman/). Offices claimed: Atlanta, Chicago, Los Angeles, Portland.
+**Also on the *Ventura* Randstad block:** Jonathan Danny Marvisi, `jmarvisi@kcozlaw.com`, (213) 493-3980, 707 Wilshire Blvd, Ste 4800, Los Angeles. NOA May 13, 2026. Appeared at the May 13 MTD hearing. Third KCOZ name in this file.
+
+Firm site: [kcozlaw.com](https://www.kcozlaw.com/). Bios used this pass: [Williams](https://www.kcozlaw.com/chadwick-l-william/), [Chapman](https://www.kcozlaw.com/nathan-d-chapman/). Offices claimed: Atlanta, Chicago, Los Angeles, Portland. The LA address is no longer just a website claim — it is on the *Ventura* party screen.
 
 ---
 
 ## Admissions (firm-claimed; not a CalBar pull)
 
-**Williams** (firm bio, retrieved Sep. 9, 2026): State Bar of Georgia. **Georgia Bar No. 161149** on *We Got U* Dkts. 5, 21, 22, and 24, and on *Sullivan* Dkts. 25, 30, and 33. Court admissions listed on the bio page: Georgia Supreme Court and Court of Appeals. A firm press release dated August 25, 2025 also states admission to the U.S. District Court for the Northern District of Georgia, which matches his PACER attorney query in that court (five cases). **No California admission is listed.** Until a CalBar record says otherwise, he cannot file in Alameda Superior Court except through *pro hac vice* with a California attorney of record (Cal. Rules of Court, rule 9.40).
+**Williams** (firm bio, retrieved Sep. 9, 2026): State Bar of Georgia. **Georgia Bar No. 161149** on *We Got U* Dkts. 5, 21, 22, and 24, and on *Sullivan* Dkts. 25, 30, and 33. Court admissions listed on the bio page: Georgia Supreme Court and Court of Appeals. A firm press release dated August 25, 2025 also states admission to the U.S. District Court for the Northern District of Georgia, which matches his PACER attorney query in that court (five cases). **No California admission is listed.** *Ventura* Dkt. 73 (Aug. 19, 2026) admits him **PHV in C.D. Cal.** with Chapman as local counsel after a deficient first application (Dkt. 70, local-counsel signature blank). That is the appearance structure, on the same client, that Alameda would require.
 
-**Chapman** (firm bio, same date): State Bars of Georgia, **California**, Alabama, and Florida. **Georgia Bar No. 244954** on the same *We Got U* papers. Federal: N.D. / M.D. Georgia; N.D. / M.D. / S.D. Alabama; M.D. Florida; D. Colorado; U.S. Supreme Court. **D. Conn. is not on that list** — consistent with the *Charter* PHV motions. California state-bar claim is firm-claimed; a CalBar number lookup has not been run this pass.
+**Chapman** (firm bio, same date): State Bars of Georgia, **California**, Alabama, and Florida. **Georgia Bar No. 244954** on the Georgia papers. Federal: N.D. / M.D. Georgia; N.D. / M.D. / S.D. Alabama; M.D. Florida; D. Colorado; U.S. Supreme Court. **D. Conn. is not on that list** — consistent with the *Charter* PHV motions. *Ventura* puts him on the C.D. Cal. docket as **LEAD ATTORNEY** at the Wilshire address, no PHV — the California claim is no longer bio-only. A CalBar number lookup has still not been run this pass.
 
-**Implication for Matter 27:** Williams's August 18 call and emails are not a notice of appearance. No NOA is on the Alameda docket. The person who can appear of right, on the firm's own admissions list, is Chapman.
+**Implication for Matter 27:** Williams's August 18 call and emails are not a notice of appearance. No NOA is on the Alameda docket. The person who can appear of right is Chapman (or Marvisi). Williams can appear the *Ventura* way: PHV, Chapman as California attorney of record.
 
 ---
 
@@ -73,15 +75,17 @@ Do not collapse "KCO is aggressive" into "Williams writes that way." The heat is
 - *Charter* is the same posture at speed: emergency TRO/PI 17 days after filing, Chapman declaration, seal, expedited discovery, oppose transfer, then **stipulate out with prejudice, each side own fees**, before the May hearing. Williams was PACER lead. Chapman filed the merits.
 - *We Got U* Dkt. 21 (answer to the Leonards' counterclaim) is the other register: "the MOU speaks for itself," deny characterizations, no fireworks. Also Chapman.
 - *We Got U* Dkt. 24 is a **joint** consent protective order. They will cooperate on discovery mechanics when it serves the company.
+- *Ventura* is Chapman on a **California Randstad defense** docket: NOA, inherited state demurrer as a removal exhibit, Rule 12(b)(6) (denied Aug. 7 for local-rule nonconformity), answer, then a Rule 12(c) MJOP set for **November 25, 2026**. Williams is PHV only. Marvisi appeared at the May 13 hearing. The heat, if any, will be on Chapman-signed Rule 12 papers — pull Dkts. 64, 68, and 75 before forecasting it.
 
 **How that reads on Matter 27**
 
-Williams asking for your number before he appears is the aggressive part that is actually his. It lets Randstad treat $55k / $85k as a ceiling and, later, as a "professional plaintiff" talking point. The Aug. 28 "require additional time… September 4" delay after asking for a number is the same move as *Sullivan* Ex. A: buy clock, spend money on settlement not paper. It is not the *We Got U* "coordinated scheme" voice. A FRE 408 / Evid. Code § 1152 strike in Alameda, if one arrives, is the **predecessor** analog (Guilmette Dkt. 5), not Williams — he inherited that motion, did not file it, and used the $50k history in Dkt. 30 to argue for mediation rather than to hide it. If a demurrer or § 430.41 letter arrives, expect Chapman's name on it unless a California appearance is arranged for Williams. If Williams himself files, the analog in this file is Dkt. 30 (timing / cost / settlement), not Dkt. 1 of *We Got U* and not Dkt. 5. Until that paper exists in Alameda, do not forecast *We Got U* heat from three polite emails plus one Georgia opposition.
+Williams asking for your number before he appears is the aggressive part that is actually his. It lets Randstad treat $55k / $85k as a ceiling and, later, as a "professional plaintiff" talking point. The Aug. 28 "require additional time… September 4" delay after asking for a number is the same move as *Sullivan* Ex. A: buy clock, spend money on settlement not paper. It is not the *We Got U* "coordinated scheme" voice. A FRE 408 / Evid. Code § 1152 strike in Alameda, if one arrives, is the **predecessor** analog (Guilmette Dkt. 5), not Williams — he inherited that motion, did not file it, and used the $50k history in Dkt. 30 to argue for mediation rather than to hide it. If a demurrer or § 430.41 letter arrives, expect Chapman's name on it (or Marvisi's), with Williams PHV if he appears — that is the *Ventura* structure, executed the same week as the Matter 27 call. If Williams himself files, the analog in this file is still *Sullivan* Dkt. 30 (timing / cost / settlement), not Dkt. 1 of *We Got U*. *Ventura* Dkts. 64 / 75 are the California pleading analog; they are not yet pulled. Until those papers exist in hand, do not forecast *We Got U* heat from three polite emails plus one Georgia opposition.
 
 **Still missing (so do not invent it)**
 
-- Hearing transcripts or a judge describing his demeanor. *Sullivan* Dkt. **35** (the order granting leave / denying the inherited 408-strike) is the next paper that would show how a court treated his Dkt. 30 argument.
-- The three remaining N.D. Ga. Williams dockets (*Fowler*, *SidePrize*, *Newson-Pace*) — especially *SidePrize* (13 days) and *Fowler* (closed).
+- Hearing transcripts or a judge describing his demeanor. *Sullivan* Dkt. **35** is still unpulled. *Ventura* Dkt. 60 is a 16-minute MTD hearing with Marvisi at counsel table — minutes only, no transcript in this file.
+- The three remaining N.D. Ga. Williams dockets (*Fowler*, *SidePrize*, *Newson-Pace*).
+- The *Ventura* Rule 12 briefs (Dkts. 64 / 68 / 75). Until those are lodged, do not invent Chapman's California motion voice.
 - Whether he is nasty in person. The Aug. 18 call is memorialized only as extension-plus-demand. No raised-voice record. Ex. A is the same register with a different pro se plaintiff.
 
 ---
@@ -102,6 +106,7 @@ Williams asking for your number before he appears is the aggressive part that is
 4. **Local counsel is disposable once PHV is in.** Dkt. 41/42: Reilly moved to be excused from further proceedings under D. Conn. L.R. 83.1(d)(2); granted Feb. 24, 2025. Out-of-state KCO then ran the case. Arnold & Porter (Daniel Reisner) was added later; first PHV denied for D. Conn. L.R. 83.1(e)(1)(b), then granted.
 5. **Matter 27 so far is pricing, not testing.** Williams's first move was a 15-day extension (party agreement only; no stipulation on file) and a request for an opening demand — Randstad-only plus optional global. No answer, no demurrer, no CCP § 430.41 letter, no NOA as of the last Matter 27 update in this repo.
 6. **When Williams signs, it is cost / clock / settlement, not *We Got U* rhetoric.** *Sullivan* Dkt. 30 is the only Williams merits brief in this file. He offered consent to amend if the answer waited until after mediation; when the plaintiff filed anyway, he opposed on timing and asked the court to protect the mediation spend. He sat a 5h 39m Zoom mediation (Dkt. 32), then withdrew the same day as a joint "mediation failed, discovery reopens" status report (Dkts. 33–34), before the court granted the amendment. Chapman never appeared on that docket. The 408-strike he inherited (Dkt. 5) is predecessor counsel; they also botched service on the pro se plaintiff and conceded it (Dkt. 14) four days before he substituted.
+7. **California appearance for Randstad is Chapman lead + Williams PHV.** *Ventura* (C.D. Cal., same client, live): Chapman NOA Nov. 18, 2025; Marvisi May 13, 2026; Williams PHV granted Aug. 19, 2026 after a deficient first application. Chapman files the Rule 12 papers. They lost a June MTD on local-rule grounds (Dkt. 69), answered, and filed a 12(c) the same day. Hearing **Nov. 25, 2026, 1:30 p.m.** before Judge Murillo.
 
 ---
 
@@ -114,9 +119,9 @@ Portfolio matter **27**. Alameda Super. Ct. **26CV199902**, Hon. Karin Schwartz,
 | Aug. 18, 2026 | Williams telephones Plaintiff; email 2:11 p.m. (`cwilliams@kcozlaw.com`, subject *Newanforbi v. RK/Randstad: Introduction*) confirms a 15-day extension of **Randstad's** responsive date through and including **September 15, 2026**, copies "Nathan," and asks for an opening Randstad demand plus an optional global. Party agreement only. RK Logistics is not covered. |
 | Aug. 19, 2026 | Plaintiff emails $55,000 Randstad-only / $85,000 global (cc Chapman). Williams acknowledges 7:49 a.m. |
 | Aug. 28, 2026 | Williams (cc Chapman) asks for more time; will attempt to respond by September 4. Delay request, not a counteroffer. Plaintiff restates the same numbers; response asked 5:00 p.m. PT September 8. Evid. Code § 1152 / FRE 408. |
-| Clocks | RK Logistics: September 14 (Garcia; no further). Randstad: September 15. CIV-100s **hold** — file-if-silent September 15 (RK) / September 16 (Randstad) only if eCourt that morning is empty. Same-day CCP § 587 mail to Williams at the Atlanta address above **and** to Randstad c/o CSC. |
+| Clocks | RK Logistics: September 14 (Garcia; no further). Randstad: September 15. CIV-100s **hold** — file-if-silent September 15 (RK) / September 16 (Randstad) only if eCourt that morning is empty. Same-day CCP § 587 mail to Williams at the Atlanta address above **and** to Randstad c/o CSC. KCOZ's other live Randstad file (*Ventura*) has a Rule 12(c) hearing **November 25, 2026, 1:30 p.m.** in Riverside — three weeks before this CMC. |
 
-Do not treat silence on the demand as a deal. Do not email this dossier, the Charter prints, the *We Got U* file, or a "we saw you in Georgia" line.
+Do not treat silence on the demand as a deal. Do not email this dossier, the Charter prints, the *We Got U* file, the *Ventura* file, or a "we saw you in California" line.
 
 ---
 
@@ -215,11 +220,30 @@ The file originally committed as `CM-ECF-GA Northern District Court.pdf` is **no
 | Usable as | First Williams-only docket and first Williams-signed brief. Defense of an employer/professional against a pro se wage plaintiff. Closest analog to Matter 27. Voice match to the Matter 27 emails. Predecessor vs. Williams split on the 408-strike and on serving a pro se plaintiff. |
 | Not usable as | A holding about Randstad, FCRA, or PC § 290.46. Not a related case. Not an admission in Matter 27. The $50,000 figure is that defendant's offer in that case, recited from Doc. 9 — not a Randstad number. Dkt. 5 is not a Williams paper. |
 
+### 4 — PACER — *Ventura v. Randstad US LLC et al.*
+
+| | |
+|---|---|
+| Court / no. | C.D. Cal. (Eastern Division — Riverside) **5:25-cv-02931-SRM-DTB** |
+| Judge | Hon. Serena R. Murillo; Mag. David T. Bristow |
+| Filed | Removed **Nov. 3, 2025** from San Bernardino Super. Ct. **CIVRS2508108** (state complaint Sep. 25, 2025). Still open. |
+| Nature | 18 U.S.C. § 1962 RICO. NOS 470. Jury demanded by plaintiff. Pro se plaintiff (Chino Hills). |
+| Side | **Defense — Randstad US, LLC and Randstad North America, Inc.** (docket misspells "Randsatd"). Same corporate defendant as Matter 27. Co-defendants Hirewell Inc. and Korn Ferry / Korn Ferry (US) have other counsel. Korn Ferry removed. |
+| Chapman | **LEAD ATTORNEY**, ATBN. NOA Dkt. 9 (Nov. 18, 2025). Address on the party screen: **707 Wilshire Blvd, Suite 4800, Los Angeles, CA 90017**. Phone listed (404) 400-7300. CM/ECF filer on Dkts. **9, 12, 64, 66, 68, 70, 72, 74, 75**. |
+| Williams | **PRO HAC VICE**, ATBN. Atlanta Spring Street address. First PHV app Dkt. 70 (Aug. 14, 2026, $450) **deficient** — local-counsel signature blank (Dkt. 71). Amended Dkt. 72 (Aug. 17). **Granted Dkt. 73 (Aug. 19)** with Chapman as local counsel. The Matter 27 intro call was **Aug. 18**. |
+| Marvisi | Jonathan Danny Marvisi, KCOZ LA. `jmarvisi@kcozlaw.com`, (213) 493-3980. NOA Dkt. 59 (May 13, 2026). At counsel table for the May 13 MTD hearing (Dkt. 60). |
+| What they did | Dkt. 12 (Nov. 25, Chapman): supplement to removal attaching a **state-court demurrer**. Court later refused to hear that demurrer until resubmitted as a CD Cal. Rule 12 motion (Dkt. 60). Dkt. 64 (Jun. 11, Chapman): MTD the FAC; Dkt. 65 clerk deficiency (no LR 7.1-1 interested-parties notice); Dkt. 66 CIP names **Randstad General Partner (US), LLC** and **Randstad Luxembourg UK Limited**. Dkt. 69 (Aug. 7): court **DENIED** the MTD "for failure to conform with the Local Rules"; answer in 14 days. Dkt. 74 answer (Aug. 21, Chapman) **and** Dkt. 75 Rule 12(c) MJOP the same day. Hearing **Nov. 25, 2026, 1:30 p.m.** Plaintiff opposed Sep. 3 (Dkt. 76), claiming a July 20 meet-and-confer declination. |
+| Outcome | Open. |
+| Sources | `sources/5-25-cv-02931-SRM-Ventura-v-Randstad/PACER Full Docket (Sep 8 2026 PT).pdf` — PACER receipt Sep. 9, 2026 00:37:15, $1.00 / 10 pages. |
+| Pull next | Chapman-signed **64** (MTD), **69** (the denial), **75** (MJOP), **66** (CIP), **9** (NOA), **70/72** (Williams PHV). Then the state demurrer behind Dkt. 12. |
+| Usable as | Same client. California appearance structure (Chapman lead / Williams PHV / Marvisi). LA office on a live paper. They will 12(b)(6) then 12(c) a pro se plaintiff. They can lose a motion on local rules. Near-term hearing Nov. 25. |
+| Not usable as | A Civil L.R. 3-12 / CRC 3.300 related case. Different plaintiff, different claims (RICO vs. PC § 290.46). Not an admission in Matter 27. Not a holding about the registry or FCRA. |
+
 ---
 
 ## Williams N.D. Ga. attorney query — remaining unpulled
 
-PACER query (Sep. 8, 2026 PT): **Chadwick Lloyd Williams is an attorney in 5 cases.** *We Got U* is card 2. *Sullivan* is card 3 (docket plus Dkts. 1, 5, 8, 14, 16, 19, 25, 29+29-1+29-2+29-3, 30+Ex. A, 32, 33, 34 lodged). Three case-level pulls left:
+PACER query (Sep. 8, 2026 PT): **Chadwick Lloyd Williams is an attorney in 5 cases** in N.D. Ga. *We Got U* is card 2. *Sullivan* is card 3. *Ventura* (C.D. Cal.) is card 4 and was not on that Georgia query. Three N.D. Ga. case-level pulls left:
 
 | Case | Filed | Closed | Next pull |
 |---|---|---|---|
@@ -244,7 +268,7 @@ From the Chapman bio "Representative Matters" as retrieved September 9, 2026. Th
 
 Williams's bio has no representative-matter list on the page retrieved this pass.
 
-Party-search ideas for the next PACER dump (user pulls; agent lodges): *Sullivan* Dkt. **35** first (the order granting leave / denying the inherited 408-strike), then 17 / 9 as needed; then *Fowler*, *SidePrize*, *Newson-Pace*. Do not dump PDFs on the repository root — they belong in `sources/`. Re-upload Dkt. 29-4 / 29-5 (Ex. 42 / 44) if those pages matter; the last two GitHub files were 0 bytes.
+Party-search ideas for the next PACER dump (user pulls; agent lodges): *Ventura* Dkts. **64, 69, 75** first (Chapman-signed California Rule 12 papers), then *Sullivan* Dkt. **35**; then *Fowler*, *SidePrize*, *Newson-Pace*. Do not dump PDFs on the repository root — they belong in `sources/`.
 
 ---
 

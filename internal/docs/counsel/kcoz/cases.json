@@ -17,7 +17,7 @@
       "admissions_firm_claimed": ["Georgia"],
       "georgia_bar_no": "161149",
       "california_bar_firm_claimed": false,
-      "notes": "Matter 27 email voice. Georgia Bar 161149 on We Got U and Sullivan signature blocks; not named lead on the We Got U Rule 26 report. First signed brief is Sullivan Dkt. 30 (settlement/cost/clock). Firm bio lists Georgia only. CalBar lookup not run this pass."
+      "notes": "Matter 27 email voice. Georgia Bar 161149 on We Got U and Sullivan signature blocks. PHV in Ventura (C.D. Cal.) granted 2026-08-19 with Chapman as local counsel. First signed brief is Sullivan Dkt. 30 (settlement/cost/clock). Firm bio lists Georgia only."
     },
     {
       "id": "chapman",
@@ -32,7 +32,22 @@
       "admissions_firm_claimed": ["Georgia", "California", "Alabama", "Florida"],
       "georgia_bar_no": "244954",
       "california_bar_firm_claimed": true,
-      "notes": "Matter 27 cc. Signs the We Got U papers and was the Charter CM/ECF filer. CalBar lookup not run this pass."
+      "notes": "Matter 27 cc. Signs We Got U and Charter merits papers. Ventura LEAD for Randstad in C.D. Cal. at 707 Wilshire. CalBar lookup not run this pass."
+    },
+    {
+      "id": "marvisi",
+      "name": "Jonathan Danny Marvisi",
+      "pacer_name": "Jonathan Danny Marvisi",
+      "also_as": ["Jonathan D. Marvisi"],
+      "title_firm_site": null,
+      "email": "jmarvisi@kcozlaw.com",
+      "phone": "(213) 493-3980",
+      "fax": "(404) 400-7333",
+      "bio_url": null,
+      "admissions_firm_claimed": [],
+      "georgia_bar_no": null,
+      "california_bar_firm_claimed": null,
+      "notes": "KCOZ Los Angeles. Ventura NOA Dkt. 59 (2026-05-13). At the May 13 MTD hearing. Third name on the Randstad C.D. Cal. block."
     }
   ],
   "office": {
@@ -41,6 +56,7 @@
     "city": "Atlanta",
     "state": "GA",
     "zip": "30309",
+    "los_angeles": "707 Wilshire Blvd, Suite 4800, Los Angeles, CA 90017 (on Ventura party screen)",
     "prior_atlanta": "171 17th Street NW, Suite 1550, Atlanta, GA 30363 (on We Got U June 2026 papers)"
   },
   "cases": [
@@ -58,7 +74,7 @@
       "client": "Randstad US, LLC",
       "nature": "PC §290.46(j)(2)(E); Tameny; ICRAA; privacy; negligence per se; UCL",
       "williams_role": "client-facing; 15-day extension; demand recipient; no NOA on file",
-      "chapman_role": "cc on demand thread; no signed paper received yet",
+      "chapman_role": "cc on demand thread; no signed paper received yet. Ventura shows he is Randstad's California lead of record in C.D. Cal.",
       "outcome": "open",
       "speed_days": null,
       "local_counsel": null,
@@ -188,6 +204,35 @@
       ],
       "usable_as": "First Williams-only docket and first Williams-signed brief. Defense of an employer/professional against a pro se FLSA plaintiff. Closest analog to Matter 27. Voice match to Matter 27 emails: settlement-first, cost, clock — not We Got U heat. Predecessor (not Williams) filed the 408-strike and botched service.",
       "not_a_holding": "Not related to Matter 27. The $50,000 figure is that defendant's early offer in that case (Doc. 9), not a Randstad number. Dkts. 1 and 29 are plaintiff's papers. Dkt. 5 is predecessor counsel. Court later granted leave (Dkt. 35) after Williams withdrew."
+    },
+    {
+      "id": "ventura-v-randstad-cdcal-2025",
+      "kind": "pacer_pull",
+      "matter": null,
+      "caption": "Ventura v. Randstad US LLC et al.",
+      "docket_short_title": "Nicholas A. Ventura v. Randstad US LLC et al",
+      "court": "C.D. Cal. (Eastern Division — Riverside)",
+      "case_no": "5:25-cv-02931-SRM-DTB",
+      "judge": "Hon. Serena R. Murillo; Mag. David T. Bristow",
+      "filed": "2025-11-03",
+      "removed_from": "San Bernardino Super. Ct. CIVRS2508108 (complaint 2025-09-25)",
+      "terminated": null,
+      "side": "defense",
+      "client": "Randstad US, LLC and Randstad North America, Inc.",
+      "nature": "18 U.S.C. §1962 RICO; NOS 470; pro se plaintiff",
+      "williams_role": "PHV ATBN; first app Dkt. 70 (2026-08-14) deficient; amended Dkt. 72; granted Dkt. 73 (2026-08-19) with Chapman as local counsel",
+      "chapman_role": "LEAD ATBN; NOA Dkt. 9 (2025-11-18); CM/ECF filer on 9, 12, 64, 66, 68, 70, 72, 74, 75; 707 Wilshire Blvd Ste 4800 Los Angeles",
+      "marvisi_role": "ATBN; NOA Dkt. 59 (2026-05-13); at May 13 MTD hearing",
+      "chapman_filings": [9, 12, 64, 66, 68, 70, 72, 74, 75],
+      "williams_filings": [70, 72],
+      "papers_to_pull": [64, 69, 75, 66, 9, 70, 72, 12],
+      "outcome": "Open. MTD denied Aug. 7 2026 for local-rule nonconformity. Answer and Rule 12(c) MJOP filed Aug. 21. Hearing Nov. 25 2026 1:30 p.m.",
+      "hearing_next": "2026-11-25T13:30:00-08:00",
+      "sources": [
+        "internal/docs/counsel/kcoz/sources/5-25-cv-02931-SRM-Ventura-v-Randstad/PACER Full Docket (Sep 8 2026 PT).pdf"
+      ],
+      "usable_as": "Same client. California appearance structure (Chapman lead / Williams PHV / Marvisi). LA office on a live paper. They will 12(b)(6) then 12(c). They can lose on local rules.",
+      "not_a_holding": "Not a Civil L.R. 3-12 / CRC 3.300 related case. Different plaintiff, different claims. Not an admission in Matter 27."
     }
   ],
   "unpulled_williams_ndga": [
