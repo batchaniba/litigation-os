@@ -15,19 +15,17 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
-from reportlab.lib.pagesizes import letter
-from reportlab.pdfgen import canvas
-
 SCRIPT_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPT_DIR / "lib"))
 sys.path.insert(0, str(SCRIPT_DIR))
 
 from pleading_paper import CONTENT_LEFT, PleadingPaper  # noqa: E402
-from signature_stamp import (  # noqa: E402
-    SIGNATURE_ASPECT,
-    SIGNATURE_NATIVE_PX,
-    SIGNATURE_PATH,
+from proof_of_service import (  # noqa: E402
+    DISTRICT_NDCAL,
+    ProofOfServiceFields,
+    build_proof_of_service,
 )
+from signature_stamp import SIGNATURE_NATIVE_PX, SIGNATURE_PATH  # noqa: E402
 
 ROOT = SCRIPT_DIR.parent
 MATTER24 = ROOT / "public/documents/matter-24"
@@ -35,7 +33,6 @@ MATTER24 = ROOT / "public/documents/matter-24"
 EXEC_DATE = "September 8, 2026"
 CMC_DATE = "September 15, 2026"
 MTD_DATE = "September 30, 2026"
-SERVICE_PLACE = "San Jose, California"
 
 OUT_DISCLOSURES = MATTER24 / (
     "Plaintiff's Rule 26(a)(1) Initial Disclosures (Sep 8 2026).pdf"
@@ -832,145 +829,43 @@ def build_jcms(path: Path) -> None:
     print(f"Wrote {path} ({path.stat().st_size} bytes, {d.page_num} pp.)")
 
 
-def build_email_pos(path: Path) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    page_w, page_h = letter
-    left = 72.0
-    right = page_w - 72.0
-    width = right - left
-    fs = 11.0
-    lh = 15.0
-    c = canvas.Canvas(str(path), pagesize=letter)
-    y = page_h - 72.0
-
-    def wrap(text: str) -> None:
-        nonlocal y
-        c.setFont("Times-Roman", fs)
-        words = text.split()
-        line = ""
-        for word in words:
-            trial = (line + " " + word).strip()
-            if c.stringWidth(trial, "Times-Roman", fs) <= width:
-                line = trial
-            else:
-                c.drawString(left, y, line)
-                y -= lh
-                line = word
-        if line:
-            c.drawString(left, y, line)
-            y -= lh
-
-    c.setFont("Times-Bold", 13)
-    c.drawCentredString(page_w / 2, y, "DECLARATION OF SERVICE BY E-MAIL")
-    y -= lh * 2.0
-
-    c.setFont("Times-Bold", fs)
-    c.drawString(left, y, "Case Name:")
-    c.setFont("Times-Roman", fs)
-    c.drawString(left + 95, y, "Brendan N. Newanforbi v. Captain G. Serrato, et al.")
-    y -= lh * 1.2
-
-    c.setFont("Times-Bold", fs)
-    c.drawString(left, y, "Case Number:")
-    c.setFont("Times-Roman", fs)
-    c.drawString(left + 95, y, "4:26-cv-05953-ASK")
-    y -= lh * 1.2
-
-    c.setFont("Times-Bold", fs)
-    c.drawString(left, y, "Party Represented:")
-    c.setFont("Times-Roman", fs)
-    c.drawString(left + 115, y, "Plaintiff Brendan Ngehsi Newanforbi, In Pro Per")
-    y -= lh * 1.8
-
-    c.setFont("Times-Bold", 12)
-    c.drawString(left, y, "Declaration of Electronic Service")
-    y -= lh * 1.6
-
-    for para in (
-        "1. I am over the age of eighteen years. I am the Plaintiff in this action, "
-        "appearing in propria persona.",
-        "2. My mailing address is 1455 Cat Tail Drive, Stockton, CA 95204, County of "
-        "San Joaquin. My telephone number is (209) 801-4442.",
-        "3. My electronic service address is bnn.cdl@gmail.com.",
-        f"4. On {EXEC_DATE}, I electronically served the following document[s]:",
-    ):
-        wrap(para)
-        y -= lh * 0.35
-
-    y -= lh * 0.3
-    for line in (
-        "a. PLAINTIFF'S INITIAL DISCLOSURES (Fed. R. Civ. P. 26(a)(1));",
-        "b. PLAINTIFF'S PORTION OF JOINT CASE MANAGEMENT STATEMENT",
-        "   (for incorporation into a joint filing; not a separate filing);",
-    ):
-        c.setFont("Times-Roman", fs)
-        c.drawString(left + 24, y, line)
-        y -= lh
-    y -= lh * 0.5
-
-    wrap(
-        "5. I electronically served the aforementioned document[s] by emailing them to "
-        "the following individual[s]:"
-    )
-    y -= lh * 0.6
-
-    for line in (
-        "Haiyang A. Li",
-        "Deputy Attorney General",
-        "Office of the Attorney General",
-        "300 South Spring Street, Suite 1702",
-        "Los Angeles, CA 90013-1230",
-        "E-mail Address: Haiyang.Li@doj.ca.gov",
-        "Attorneys for Defendant Captain G. Serrato",
-    ):
-        c.setFont("Times-Roman", fs)
-        c.drawString(left + 12, y, line)
-        y -= lh
-
-    y -= lh * 1.0
-    wrap(
-        "I declare under penalty of perjury under the laws of the State of California "
-        "and the United States of America that the foregoing is true and correct, and "
-        f"that this declaration was executed on {EXEC_DATE}, at {SERVICE_PLACE}."
+def pos_fields() -> ProofOfServiceFields:
+    return ProofOfServiceFields(
+        plaintiff_line="BRENDAN NGEHSI NEWANFORBI",
+        plaintiff_role="Plaintiff",
+        defendant_lines=[
+            "CAPTAIN G. SERRATO; and",
+            "DOES 1-10, inclusive",
+        ],
+        defendant_role="Defendants",
+        case_number="4:26-cv-05953-ASK",
+        title="PROOF OF SERVICE",
+        service_date=EXEC_DATE,
+        document_title=(
+            "Plaintiff's Initial Disclosures (Fed. R. Civ. P. 26(a)(1)); and "
+            "Plaintiff's Portion of Joint Case Management Statement (for "
+            "incorporation into a joint filing; not a separate filing)"
+        ),
+        recipients=[
+            "Haiyang A. Li, Deputy Attorney General",
+            "Office of the Attorney General",
+            "300 South Spring Street, Suite 1702",
+            "Los Angeles, CA 90013-1230",
+            "Haiyang.Li@doj.ca.gov",
+            "Attorney for Defendant Captain G. Serrato",
+        ],
+        server_name="Brendan Ngehsi Newanforbi",
+        stamp_signature=True,
+        district_line=DISTRICT_NDCAL,
+        by_email=True,
+        signature_on_second_page=True,
     )
 
-    y -= lh * 2.0
-    sig_w = 160.0
-    sig_h = sig_w * SIGNATURE_ASPECT
-    line_w = 220.0
-    sig_x = right - line_w
-    line_y = y - 8
 
-    if Path(SIGNATURE_PATH).is_file():
-        img_x = sig_x + (line_w - sig_w) / 2.0
-        c.drawImage(
-            SIGNATURE_PATH,
-            img_x,
-            line_y + 4,
-            width=sig_w,
-            height=sig_h,
-            mask="auto",
-            preserveAspectRatio=True,
-        )
-
-    c.setStrokeColorRGB(0, 0, 0)
-    c.setLineWidth(0.8)
-    c.line(sig_x, line_y, sig_x + line_w, line_y)
-
-    c.setFont("Times-Roman", 9)
-    c.drawCentredString(sig_x + line_w / 2, line_y - 14, "Signature")
-
-    c.setFont("Times-Bold", fs)
-    c.drawString(left, line_y - 4, "Brendan Ngehsi Newanforbi")
-    c.setFont("Times-Roman", fs)
-    c.drawString(left, line_y - 4 - lh, "Declarant / Plaintiff, In Pro Per")
-
-    c.setFont("Times-Roman", 8)
-    c.drawString(left, 42, "Matter 24 - N.D. Cal. 4:26-cv-05953-ASK")
-    c.drawRightString(right, 42, "Proof of Service by E-mail - Rule 26(a)(1) / JCMS")
-
-    c.save()
-    print(f"Wrote {path} ({path.stat().st_size} bytes)")
+def build_pos(path: Path) -> Path:
+    out = build_proof_of_service(path, pos_fields())
+    print(f"Wrote {out} ({out.stat().st_size} bytes)")
+    return out
 
 
 def main() -> None:
@@ -978,7 +873,7 @@ def main() -> None:
         raise SystemExit(f"Missing signature: {SIGNATURE_PATH}")
     build_disclosures(OUT_DISCLOSURES)
     build_jcms(OUT_JCMS)
-    build_email_pos(OUT_POS)
+    build_pos(OUT_POS)
     artifact_dir = Path("/opt/cursor/artifacts")
     if artifact_dir.is_dir():
         import shutil
