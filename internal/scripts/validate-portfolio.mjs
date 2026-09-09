@@ -41,6 +41,8 @@ const DEADLINE_TIME_ZONE = "America/Los_Angeles";
 
 const ROOT_ALLOWED_FILES = new Set([
   ".gitignore",
+  "AGENTS.md",
+  "CLAUDE.md",
   "eslint.config.js",
   "index.html",
   "package.json",
