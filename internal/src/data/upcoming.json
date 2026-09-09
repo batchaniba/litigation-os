@@ -22,6 +22,17 @@
     "source": "/documents/matter-25/Dkt 08 - Order Setting Status Conference (Filed Sep 8 2026).pdf"
   },
   {
+    "date": "Sep. 9, 2026",
+    "event": "OPEN TASK — Send the One Legal email on Order #29111713 asking them to correct the Odyssey / public-portal short title in Ngwa Nforbi v. Ross Stores, Inc., et al. (Santa Clara 26CV501995) from 'Brendan Ngwa Nforbi vs Does 2 through 20 et al' to 'Brendan Ngwa Nforbi vs. Ross Stores, Inc., et al.' Party-grid order error on the original e-filing. Complaint and issued SUM-100 already name Ross first. File the executed Request to Correct Case Title only if One Legal cannot fix Odyssey. Do not amend. Do not reissue the summons unless the clerk requires it.",
+    "matters": [
+      35
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-35/EMAIL_DRAFT_One_Legal_Correct_Case_Title_Party_Order.txt"
+  },
+  {
     "date": "Sep. 8, 2026",
     "event": "FILE-READY (optional vs Serrato) — Executed verified complaint against Home Depot U.S.A., Inc. for the Tracy distribution-center hire (Matter 37), dated September 8, 2026, with CM-010, SUM-100, and FW-001 (5b / $0, UPS/FedEx grant pattern). Not yet filed. Plaintiff accepted the hire, began onboarding, and was ghosted; hire timing remains I&B on or about August 2024. Serve CSC, not 5395 Hopkins Road. Serrato disclosures are already on this day — do not bury them.",
     "matters": [
@@ -321,7 +332,7 @@
   },
   {
     "date": "Oct. 25, 2026",
-    "event": "OPEN TASK — Serve Ross Stores, Inc. and Ross Dress for Less, Inc. in Matter 35 (26CV501995) with the Verified Complaint, issued Summons, ADR Information Sheet, and clerk-stamped CV-5012 Civil Lawsuit Notice (via C T Corporation System, 330 N. Brand Blvd., Suite 700, Glendale, CA 91203 — info. and belief), then file POS-010. Santa Clara CV-5012 / local practice: serve within 60 days of filing (filed Aug. 26, 2026). Do not serve DOEs until identified/amended. After service, demand Aug. 25, 2026 Sunnyvale Ross surveillance and LP stop/training materials.",
+    "event": "OPEN TASK — Serve Ross Stores, Inc. and Ross Dress for Less, Inc. in Matter 35 (26CV501995) with the Verified Complaint, issued Summons, ADR Information Sheet, and clerk-stamped CV-5012 Civil Lawsuit Notice (via C T Corporation System, 330 N. Brand Blvd., Suite 700, Glendale, CA 91203 — info. and belief), then file POS-010. Santa Clara CV-5012 / local practice: serve within 60 days of filing (filed Aug. 26, 2026). Prefer the Odyssey short title corrected from Does 2 through 20 to Ross Stores, Inc. before CT Corp looks the case up, but do not miss this date for the caption. The issued SUM-100 already names Ross first and is valid. Do not serve DOEs until identified/amended. After service, demand Aug. 25, 2026 Sunnyvale Ross surveillance and LP stop/training materials.",
     "matters": [
       35
     ],

@@ -22,6 +22,41 @@
     "source": "/documents/matter-25/Dkt 08 - Order Setting Status Conference (Filed Sep 8 2026).pdf"
   },
   {
+    "date": "Sep. 9, 2026",
+    "event": "OPEN TASK \u2014 Send the One Legal email on Order #29111713 asking them to correct the Odyssey / public-portal short title in Ngwa Nforbi v. Ross Stores, Inc., et al. (Santa Clara 26CV501995) from 'Brendan Ngwa Nforbi vs Does 2 through 20 et al' to 'Brendan Ngwa Nforbi vs. Ross Stores, Inc., et al.' Party-grid order error on the original e-filing. Complaint and issued SUM-100 already name Ross first. File the executed Request to Correct Case Title only if One Legal cannot fix Odyssey. Do not amend. Do not reissue the summons unless the clerk requires it.",
+    "matters": [
+      35
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-35/EMAIL_DRAFT_One_Legal_Correct_Case_Title_Party_Order.txt"
+  },
+  {
+    "date": "Sep. 9, 2026",
+    "event": "EXECUTED (unfiled) \u2014 Request to Correct Case Title (clerical party-order error) in Ngwa Nforbi v. Ross Stores, Inc., et al. (26CV501995), with [proposed] order and Exhibits A\u2013C (complaint caption page; Sep. 8 portal print; One Legal Order #29111713 status). Plaintiff entered the One Legal party grid Does-first; the complaint and issued summons name Ross Stores, Inc. first. Do not file until One Legal says they cannot correct Odyssey. Do not amend the complaint.",
+    "matters": [
+      35
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-35/Request to Correct Case Title Packet (Request, Proposed Order, Exs A-C) (Sep 9 2026).pdf"
+  },
+  {
+    "date": "Sep. 8, 2026",
+    "event": "PORTAL \u2014 Santa Clara public portal for 26CV501995 (printed Sep. 8, 2026, 10:28 p.m.) titles the case 'Brendan Ngwa Nforbi vs Does 2 through 20 et al.' Party list still includes Ross Stores, Inc. and Ross Dress for Less, Inc. One Legal Order #29111713 status page (10:29 p.m.) shows the same wrong short title. Cause: defendants entered in the wrong order on the One Legal party grid. The issued SUM-100 names Ross first.",
+    "matters": [
+      35
+    ],
+    "type": "event",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-35/Santa Clara Public Portal - 26CV501995 Caption Does 2 through 20 (Sep 8 2026).pdf"
+  },
+  {
     "date": "Sep. 8, 2026",
     "event": "FILED \u2014 Dkt. 8 Order Setting Status (Pretrial Scheduling) Conference in Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR). Dated September 4, 2026; PACER-stamped Document 8 Filed 09/08/26. Because Plaintiff is pro se, the matter is referred to the magistrate for pretrial proceedings under E.D. Cal. L.R. 302(c)(21). Conference: Thursday, October 8, 2026, 11:00 a.m. Zoom. Status reports due September 24. The order recites Defendant's August 31 answer as ECF No. 5. PACER History/Documents (Sep. 8, 8:27 p.m.) confirms the answer is Dkt. 4; Dkt. 5 is Consent/Decline of Magistrate Judge Jurisdiction. Treat the ECF No. 5 recitation as a clerk miscite.",
     "matters": [
@@ -1445,7 +1480,7 @@
   },
   {
     "date": "Oct. 25, 2026",
-    "event": "OPEN TASK \u2014 Serve Ross Stores, Inc. and Ross Dress for Less, Inc. in Matter 35 (26CV501995) with the Verified Complaint, issued Summons, ADR Information Sheet, and clerk-stamped CV-5012 Civil Lawsuit Notice (via C T Corporation System, 330 N. Brand Blvd., Suite 700, Glendale, CA 91203 \u2014 info. and belief), then file POS-010. Santa Clara CV-5012 / local practice: serve within 60 days of filing (filed Aug. 26, 2026). Do not serve DOEs until identified/amended. After service, demand Aug. 25, 2026 Sunnyvale Ross surveillance and LP stop/training materials.",
+    "event": "OPEN TASK \u2014 Serve Ross Stores, Inc. and Ross Dress for Less, Inc. in Matter 35 (26CV501995) with the Verified Complaint, issued Summons, ADR Information Sheet, and clerk-stamped CV-5012 Civil Lawsuit Notice (via C T Corporation System, 330 N. Brand Blvd., Suite 700, Glendale, CA 91203 \u2014 info. and belief), then file POS-010. Santa Clara CV-5012 / local practice: serve within 60 days of filing (filed Aug. 26, 2026). Prefer the Odyssey short title corrected from Does 2 through 20 to Ross Stores, Inc. before CT Corp looks the case up, but do not miss this date for the caption. The issued SUM-100 already names Ross first and is valid. Do not serve DOEs until identified/amended. After service, demand Aug. 25, 2026 Sunnyvale Ross surveillance and LP stop/training materials.",
     "matters": [
       35
     ],
