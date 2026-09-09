@@ -1,5 +1,9 @@
 # Repository Instructions
 
+## Skip GitHub PR #666
+
+Do not work on, review, comment on, update, rebase, merge, close, re-open, label, or push to **PR #666** (`https://github.com/newanforbi/interactive-litigation-portfolio/pull/666`). If assigned it or pointed at it, say it is skipped by standing instruction and stop. This skip is only #666.
+
 ## Stipulations — permanent plaintiff-first rule
 
 Before drafting, reviewing, redlining, recommending, or recording any stipulation or defense agreement in any current or future matter, read and follow [Stipulation Defense](internal/docs/STIPULATION_DEFENSE.md).
