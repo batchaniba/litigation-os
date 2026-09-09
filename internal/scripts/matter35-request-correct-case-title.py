@@ -312,7 +312,7 @@ def build_proposed_order() -> Path:
     d.write_line("IT IS SO ORDERED.", bold=False)
     d.blank_line()
     d.blank_line()
-    d.write_line(f"Dated: _______________     ________________________________")
+    d.write_line("Dated: _______________     ________________________________")
     d.write_line("                            Hon. Vince Parrett")
     d.write_line("                            Judge of the Superior Court")
     d.save()
