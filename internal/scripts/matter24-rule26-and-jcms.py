@@ -41,8 +41,7 @@ OUT_JCMS = MATTER24 / (
     "Plaintiff's Portion of Joint Case Management Statement (Sep 8 2026).pdf"
 )
 OUT_POS = MATTER24 / (
-    "Proof of Service by Email - Rule 26 Initial Disclosures and JCMS Portion "
-    "(Sep 8 2026).pdf"
+    "Proof of Service - Rule 26 Initial Disclosures (Sep 8 2026).pdf"
 )
 
 ATTY = [
