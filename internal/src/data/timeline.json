@@ -3320,7 +3320,44 @@
   },
   {
     "date": "Sep. 8, 2026",
-    "event": "Deadline \u2014 Initial disclosures (FRCP 26(a)(1)) and Joint Case Management Statement \u2014 Newanforbi v. Serrato (4:26-cv-05953-ASK). Still live unless a signed order on Dkt. 22 is on PACER. Li's fallback: if no order by 2:00 p.m. Pacific, send Plaintiff's JCMS portion to Li for a joint filing by end of day. Do not bury this under the optional HD/Swift/Best Buy/AT&T filings.",
+    "event": "FILED \u2014 Dkt. 24 Joint Case Management Conference Statement in Newanforbi v. Serrato (4:26-cv-05953-ASK). Li filed; Plaintiff authorized /s/ (Civil L.R. 5-1(i)(3) attestation). CMC remains September 15, 2026, 1:30 p.m. Zoom. Dkt. 22 is still unsigned; Li's portion still asks the Court to sign it. Do not resend Plaintiff's JCMS draft. Serve Rule 26(a)(1) if not already emailed. Do not file the disclosures.",
+    "matters": [
+      24
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "you",
+    "source": "/documents/matter-24/Dkt 24 - Joint Case Management Conference Statement (Filed Sep 8 2026).pdf"
+  },
+  {
+    "date": "Sep. 8, 2026",
+    "event": "ORDER \u2014 Related Case Order (Serrato Dkt. 23 / Candelaria Dkt. 13). Mag. Krishnan finds Nforbi v. Candelaria, 3:26-cv-08272-LJC, is NOT related to Newanforbi v. Serrato, 4:26-cv-05953-ASK. Candelaria stays with Mag. Cisneros. The order recites Serrato as a false-imprisonment suit against the stopping officers (Meza facts); the Serrato FAC is the April 20, 2026 certification denial. Do not file a correction unless that recitation shows up in a merits order.",
+    "matters": [
+      24,
+      33
+    ],
+    "type": "order",
+    "upcoming": false,
+    "filed": true,
+    "actor": "agency",
+    "source": "/documents/matter-24/Dkt 23 - Related Case Order - Candelaria Not Related (Filed Sep 8 2026).pdf"
+  },
+  {
+    "date": "Sep. 8, 2026",
+    "event": "DRAFTED, NOT YET SENT \u2014 Plaintiff's Rule 26(a)(1) initial disclosures in Newanforbi v. Serrato (4:26-cv-05953-ASK), dated September 8, 2026, with email POS to DAG Li. JCMS portion is MOOT as a send \u2014 Li filed Dkt. 24. If the disclosures have not gone, email them now (Mr. Li; cc Marquez). Do not file them. Do not merge with the Meza/Melano availability reply. Do not import Matter 32 wage figures. Do not put GitHub raws in the email.",
+    "matters": [
+      24
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-24/EMAIL_DRAFT_Li_JCMS_Portion_and_Rule26_Disclosures.txt"
+  },
+  {
+    "date": "Sep. 8, 2026",
+    "event": "Deadline \u2014 Serve Rule 26(a)(1) initial disclosures in Newanforbi v. Serrato (4:26-cv-05953-ASK). JCMS is on file as Dkt. 24. Dkt. 22 is not an order; Krishnan is not signing it. If the disclosures are not yet in Li's inbox, send them tonight. Do not file them. Do not bury this under the optional HD/Swift/Best Buy/AT&T filings.",
     "matters": [
       24
     ],

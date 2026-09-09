@@ -658,7 +658,7 @@
     "case_no": "4:26-cv-05953-ASK",
     "court": "USDC N.D. Cal.",
     "claims": "42 USC 1983: Fourteenth Amendment (Substantive & Procedural Due Process), First Amendment (Retaliation); Declaratory Relief",
-    "status_label": "Dkt. 22 unsigned — JCMS fallback today 2:00 p.m.",
+    "status_label": "Serve 26(a)(1); appear Sep. 15 CMC",
     "lifecycle": "active",
     "proceeding": "federal_civil",
     "phase": "mtd_briefing",
@@ -685,7 +685,7 @@
       }
     ],
     "evidenceCount": 13,
-    "documentCount": 54
+    "documentCount": 60
   },
   {
     "number": 25,
@@ -984,7 +984,7 @@
     "case_no": "3:26-cv-08272-LJC",
     "court": "USDC N.D. Cal. (San Francisco Div.)",
     "claims": "42 U.S.C. § 1983 — APS impartial-adjudicator / fair hearing; declaratory and injunctive relief (vacatur of APS 34739340) — Dkt. 6 (FAC filed Aug. 17, 2026) is the court pleading of record; also Candelaria / DMV APS PDF home for Matters 7/8",
-    "status_label": "Motion to Strike Answer drafted; CMC Nov. 12",
+    "status_label": "Stays with LJC; motion to strike drafted",
     "lifecycle": "active",
     "proceeding": "federal_civil",
     "phase": "pleadings",
@@ -1019,7 +1019,7 @@
     ],
     "archived": false,
     "evidenceCount": 19,
-    "documentCount": 62
+    "documentCount": 63
   },
   {
     "number": 34,
