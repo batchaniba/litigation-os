@@ -3,7 +3,7 @@
 
 HISTORICAL generator — when they caption consent he did not give, the
 locked posture is opposition, not a late signature on their paper. See
-.claude/skills/stipulation-draft/SKILL.md. Portfolio-wide.
+.claude/skills/stipulation-defense/SKILL.md. Portfolio-wide.
 
 
 Newanforbi v. United Parcel Service, Inc., USDC E.D. Cal. No. 2:26-cv-02847-DAD-CKD.

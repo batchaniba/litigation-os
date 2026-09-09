@@ -42,18 +42,21 @@ build_proof_of_service(
 ## Stipulations (plaintiff-favorable — LOCKED)
 
 There is no blank court PDF for a stipulation. Draft from
-`.claude/skills/stipulation-draft/TEMPLATE.md`. Terms and density match
-`.claude/skills/stipulation-draft/SKILL.md`. Always-on rule:
+`.claude/skills/stipulation-defense/TEMPLATE.md`. Terms match
+`.claude/skills/stipulation-defense/SKILL.md`. Clauses:
+`.claude/skills/stipulation-defense/CLAUSES.md`. Always-on rule:
 `.cursor/rules/stipulation-plaintiff-favor.mdc`.
 
 Every stipulation in any matter is drafted most favorably to Plaintiff.
-Shorten a timeline when that helps (advance a hearing). If they want more
-time, give the shortest lawful window or hold the existing date. Never
-volunteer extra days. Named party only. Single shot. He signs his own
-paper — do not sign counsel's draft, and do not let them affix `/s/`.
+Shorten or hold a defense clock. Do not compress Plaintiff's own clocks.
+Continue the event only — not the chain of deadlines. Date certain, never
+a floating anchor. Never expand their ask. Named party only. Single shot.
+He signs his own paper — do not sign counsel's draft, and do not let them
+affix `/s/`.
 
 Worked counterparts: Matter 29 Amazon (Aug. 31, 2026) and Accurate
 (Sep. 1, 2026). Stay counter-draft: Matter 2 (Apr. 13–14, 2026).
+Failure mode: Serrato Dkt. 22 — do not give more delay than they asked.
 
 ## Short public PDF links
 

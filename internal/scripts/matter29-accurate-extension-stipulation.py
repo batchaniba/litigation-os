@@ -3,8 +3,8 @@
 extension, plus a letter telling Seyfarth they may not affix his signature.
 
 HISTORICAL generator — the locked stipulation posture lives in
-.claude/skills/stipulation-draft/TEMPLATE.md (blank) and
-.claude/skills/stipulation-draft/SKILL.md (worked examples). Portfolio-wide.
+.claude/skills/stipulation-defense/TEMPLATE.md (blank) and
+.claude/skills/stipulation-defense/SKILL.md (worked examples). Portfolio-wide.
 
 John Drury (Seyfarth) emailed the draft on September 1, 2026, already
 carrying a conformed "/s/ Brendan Ngehis Newanforbi" and asked for consent

@@ -1,24 +1,29 @@
 ---
-description: If the user asks to draft, review, counter, or sign a stipulation, copy TEMPLATE.md. Draft most favorably to Plaintiff. Shorten or hold timelines; never volunteer extra days.
+description: If the user asks to draft, review, counter, or sign a stipulation, copy TEMPLATE.md. Draft most favorably to Plaintiff. Shorten or hold defense clocks; do not compress Plaintiff's. Never expand their ask.
 alwaysApply: true
 ---
 
 # Stipulation defense — LOCKED
 
 When the user asks to **draft**, review, counter, sign, or respond to a
-stipulation / extension / stay / proposed order / "can we stipulate":
+stipulation / extension / stay / continuance / proposed order / "can we
+stipulate":
 
-- Copy `.claude/skills/stipulation-draft/TEMPLATE.md`. Fill the brackets.
-- Match the terms in `.claude/skills/stipulation-draft/SKILL.md`.
+- Copy `.claude/skills/stipulation-defense/TEMPLATE.md`. Fill the brackets.
+- Match the terms in `.claude/skills/stipulation-defense/SKILL.md`.
+- Use drop-in language from `.claude/skills/stipulation-defense/CLAUSES.md`.
 - Draft **most favorably to Plaintiff**. Every extra day, extra party, extra
-  waiver, or extra silence is a gift to the other side.
-- **Timelines:** shorten if the change helps Plaintiff (advance a hearing).
-  If they want more time, give the shortest lawful window or hold the
+  waiver, extra silence, or extra item they did not ask for is a gift.
+- **Defense clocks:** shorten if the change helps Plaintiff, or hold the
   existing date. Never volunteer extra days. Never imply a second extension.
+- **Plaintiff clocks:** do not compress his opposition, disclosure, demand,
+  or default right. Continue the event only — not the chain of deadlines.
+- **Date certain.** Never "reset to run from the continued conference."
 - Do **not** sign counsel's paper. Return a Plaintiff counterpart.
 - Plaintiff signs his own paper. Counsel may not affix `/s/` or e-signature.
 - Named party only. Named deadline only. Court-set dates stay unless moving
   them helps Plaintiff. Preserve default and every other right.
 
 Portfolio-wide. Matter 29 (Amazon / Accurate counterparts) and Matter 2
-(Li stay counter-draft) are why it exists, not its only cases.
+(Li stay counter-draft) are the positive examples. Serrato Dkt. 22 is the
+failure mode — do not expand their ask. Not their only cases.
