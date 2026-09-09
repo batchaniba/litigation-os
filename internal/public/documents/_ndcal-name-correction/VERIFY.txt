@@ -1,0 +1,48 @@
+VERIFY BEFORE FILING — N.D. Cal. name-correction packets
+Generated September 9, 2026. Target docket name: Brendan Ngwa Nforbi
+
+1. Pull the exact party-name string from the PACER party tab in each
+   case. The strings below came from the portfolio record, not from
+   PACER. If a docket reads 'Nforbi' rather than 'Ngwa Nforbi', it does
+   NOT already match the ECF account and still needs a motion.
+
+2. Attach the September 1, 2026 ECF Help Desk e-mail as Exhibit A to
+   each declaration before filing.
+
+3. Complete the bracketed Civil L.R. 7-11(a) paragraph in each
+   declaration after you hear back from counsel.
+
+4. SERVICE. The proof of service is written for U.S. Mail under
+   Fed. R. Civ. P. 5(b)(2)(C), which is always valid. Fill in each
+   counsel's STREET address. Do NOT switch it to e-mail service
+   unless that counsel has given written consent under Rule
+   5(b)(2)(E) — an e-mail address on a signature block is not
+   consent. The meet-and-confer drafts are correspondence, not
+   service, so e-mail is fine for those.
+
+4:26-cv-05953-ASK  (matter 24)
+    docket name per portfolio : Brendan Ngehsi Newanforbi
+    needs change             : YES
+
+3:26-cv-07504-LJC  (matter 28)
+    docket name per portfolio : Brendan Ngehsi Newanforbi
+    needs change             : YES
+    NOTE                     : Confirm defense counsel of record before service.
+    NOTE                     : recipients blank — fill POS and e-mail.
+
+3:26-cv-09249-ASK  (matter 29)
+    docket name per portfolio : Brendan Ngehsi Newanforbi
+    needs change             : YES
+    NOTE                     : Confirm counsel e-mail for Amazon and Accurate before service.
+    NOTE                     : recipients blank — fill POS and e-mail.
+
+3:26-cv-08271-PHK  (matter 32)
+    docket name per portfolio : Nforbi
+    needs change             : YES
+    NOTE                     : Case-number initials: the August 24, 2026 related-case order reassigned this action from Magistrate Judge Kang to Magistrate Judge Krishnan. Confirm the current initials on PACER and update the caption before filing.
+
+3:26-cv-08272-LJC  (matter 33)
+    docket name per portfolio : Nforbi
+    needs change             : YES
+    NOTE                     : Confirm defense counsel of record before service.
+    NOTE                     : recipients blank — fill POS and e-mail.
