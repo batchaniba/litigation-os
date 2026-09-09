@@ -1111,6 +1111,40 @@
     "source": "/documents/matter-27/Settlement Demand - Randstad US LLC (Aug 28 2026).pdf"
   },
   {
+    "date": "Sep. 8, 2026",
+    "event": "EXECUTED (UNFILED / HOLD) \u2014 Clerk's Requests for Entry of Default (CIV-100 item 1c only) prepared as to The RK Logistics Group, Inc. (dated Sep. 15) and Randstad US, LLC (dated Sep. 16). No clerk's judgment, no court judgment, no item 2 money, no prove-up. Do not e-file until after each granted response date, and only if eCourt that morning shows no answer, demurrer, CIV-141, or stipulation. Same-day CCP \u00a7587 first-class mailing to counsel and CSC (2710 Gateway Oaks Drive, Suite 150N, Sacramento, CA 95833). Amended \u00a7425.115 notices are e-filed but not personally served \u2014 punitives cannot ride a default. CRC 3.110(h) then gives ten days.",
+    "matters": [
+      27
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-27/CIV-100 Request for Entry of Default - RK Logistics Group Inc (Clerk Default Only, Sep 15 2026).pdf"
+  },
+  {
+    "date": "Sep. 15, 2026",
+    "event": "FILE IF SILENT \u2014 e-file CIV-100 Request for Entry of Default as to The RK Logistics Group, Inc. (clerk default only, item 1c). First fileable the day after RK's Sept. 14 response date. Check Alameda eCourt / One Legal that morning: do not file if an answer, demurrer, motion to strike, CIV-141, or stipulation is on the docket. Document type \u2248 Request for Default. Do not attach the 425.115 notices. Same-day CCP \u00a7587 first-class mail to Melinda Garcia (Garcia & Gurney, 6600 Koll Center Parkway, Suite 200, Pleasanton, CA 94566) and to RK c/o CSC, 2710 Gateway Oaks Drive, Suite 150N, Sacramento, CA 95833.",
+    "matters": [
+      27
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-27/CIV-100 Request for Entry of Default - RK Logistics Group Inc (Clerk Default Only, Sep 15 2026).pdf"
+  },
+  {
+    "date": "Sep. 16, 2026",
+    "event": "FILE IF SILENT \u2014 e-file CIV-100 Request for Entry of Default as to Randstad US, LLC (clerk default only, item 1c). First fileable the day after Randstad's Sept. 15 response date. Check Alameda eCourt / One Legal that morning: do not file if an answer, demurrer, motion to strike, CIV-141, or stipulation is on the docket. Document type \u2248 Request for Default. Do not attach the 425.115 notices. Same-day CCP \u00a7587 first-class mail to Chadwick L. Williams (Kabat Chapman & Ozmer LLP, 1150 Spring Street NW, Suite 800, Atlanta, GA 30309) and to Randstad c/o CSC, 2710 Gateway Oaks Drive, Suite 150N, Sacramento, CA 95833.",
+    "matters": [
+      27
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-27/CIV-100 Request for Entry of Default - Randstad US LLC (Clerk Default Only, Sep 16 2026).pdf"
+  },
+  {
     "date": "Aug. 19, 2026",
     "event": "TRANSMITTED \u2014 Opening settlement demand emailed to Chadwick L. Williams (cc Nathan Chapman) at 6:03 a.m.: Randstad US, LLC may resolve Plaintiff's claims against it for $55,000, or Randstad and The RK Logistics Group, Inc. may resolve all claims globally for $85,000. Originally open through 2:00 p.m. PT August 28, 2026; held and restated Aug. 28, response due 5:00 p.m. PT Sept. 8. Evid. Code \u00a71152 / FRE 408.",
     "matters": [

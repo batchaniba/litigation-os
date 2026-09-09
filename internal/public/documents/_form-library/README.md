@@ -67,3 +67,4 @@ After adding an entry, copy the packet to `internal/public/{slug}.pdf`
 | `hc004-blank-template.pdf` | HC-004 habeas |
 | `stanislaus-cc-authorization-blank-template.pdf` | Stanislaus CC auth |
 | `pos050-blank-template.pdf` | POS-050/EFS-050 Proof of Electronic Service (CRC 2.251) |
+| `civ100-blank-template.pdf` | CIV-100 Request for Entry of Default (Judicial Council; courts.ca.gov) |
