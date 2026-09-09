@@ -1,0 +1,47 @@
+To: support@onelegal.com
+Subject: Party-order error on Order #29111713 — Santa Clara 26CV501995 — caption reads Does instead of Ross
+
+Hello,
+
+When I entered the defendants on One Legal Order #29111713 (Confirmation #35442871; Santa Clara Superior Court No. 26CV501995), I put them in the wrong order in the party grid. The court case title now reads:
+
+  Brendan Ngwa Nforbi vs Does 2 through 20 et al
+
+That is wrong. The Verified Complaint and the issued SUM-100 name the defendants in this order:
+
+  1. ROSS STORES, INC., a Delaware corporation
+  2. ROSS DRESS FOR LESS, INC., a Virginia corporation
+  3. DOE 1
+  4. DOES 2 through 20, inclusive
+
+Both Ross entities are already on the party list. Please have the Odyssey / public-portal short title corrected to:
+
+  Brendan Ngwa Nforbi vs. Ross Stores, Inc., et al.
+
+and reorder the defendants so Ross Stores, Inc. is first.
+
+This is a clerical party-order error on the e-filing. I am not adding or dropping parties and I am not amending the complaint. The issued summons already names Ross first. I do not want a new summons unless the clerk says one is required after the title is fixed.
+
+Please confirm when the title is corrected. If you cannot change Odyssey after acceptance, tell me that in the reply and I will file the enclosed Request to Correct Case Title with the Court.
+
+Regards,
+Brendan Ngwa Nforbi
+(209) 801-4442
+bnn.cdl@gmail.com
+One Legal Customer #0212970
+
+Attachments:
+  Santa Clara Public Portal - 26CV501995 Caption Does 2 through 20 (Sep 8 2026).pdf
+  One Legal Order 29111713 Status - Wrong Case Title Does 2 through 20 (Sep 8 2026).pdf
+  SUM-100 Summons (ISSUED, Filed Aug 26 2026) - 26CV501995.pdf
+  Request to Correct Case Title Packet (Request, Proposed Order, Exs A-C) (Sep 9 2026).pdf
+
+---
+Note to self (do not send until you mean to):
+Send this first. Do not file the clerk request until One Legal says they cannot fix Odyssey.
+Do not amend the complaint. Do not pay to refile the case. Do not reissue the summons unless the clerk requires it.
+The issued SUM-100 is valid for service (Ross is named first on the face). Do not hold service past ~October 25, 2026.
+Prefer the title fixed before CT Corp looks the case up, if One Legal can turn it this week.
+If the bill/thread is on Order #29111713, reply on that thread instead of a new message.
+Do not put a GitHub raw link in this email.
+Do not date this as sent until it goes out.

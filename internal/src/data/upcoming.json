@@ -22,6 +22,17 @@
     "source": "/documents/matter-25/Dkt 08 - Order Setting Status Conference (Filed Sep 8 2026).pdf"
   },
   {
+    "date": "Sep. 9, 2026",
+    "event": "OPEN TASK — Send the One Legal email on Order #29111713 asking them to correct the Odyssey / public-portal short title in Ngwa Nforbi v. Ross Stores, Inc., et al. (Santa Clara 26CV501995) from 'Brendan Ngwa Nforbi vs Does 2 through 20 et al' to 'Brendan Ngwa Nforbi vs. Ross Stores, Inc., et al.' Party-grid order error on the original e-filing. Complaint and issued SUM-100 already name Ross first. File the executed Request to Correct Case Title only if One Legal cannot fix Odyssey. Do not amend. Do not reissue the summons unless the clerk requires it.",
+    "matters": [
+      35
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-35/EMAIL_DRAFT_One_Legal_Correct_Case_Title_Party_Order.txt"
+  },
+  {
     "date": "Sep. 26, 2026",
     "event": "OUTER BOUND — CCP § 338(a) three-year statutory-liability clock on the Swift § 290.46(j) / ICRAA counts if accrual is the Sept. 26, 2023 pre-adverse email. Post-adverse is Oct. 5, 2023 (Oct. 5, 2026). This is a limitations argument sourced to the Swift FCRA emails, not a court-ordered deadline. File before the earlier date.",
     "matters": [
@@ -233,7 +244,7 @@
   },
   {
     "date": "Oct. 25, 2026",
-    "event": "OPEN TASK — Serve Ross Stores, Inc. and Ross Dress for Less, Inc. in Matter 35 (26CV501995) with the Verified Complaint, issued Summons, ADR Information Sheet, and clerk-stamped CV-5012 Civil Lawsuit Notice (via C T Corporation System, 330 N. Brand Blvd., Suite 700, Glendale, CA 91203 — info. and belief), then file POS-010. Santa Clara CV-5012 / local practice: serve within 60 days of filing (filed Aug. 26, 2026). Do not serve DOEs until identified/amended. After service, demand Aug. 25, 2026 Sunnyvale Ross surveillance and LP stop/training materials.",
+    "event": "OPEN TASK — Serve Ross Stores, Inc. and Ross Dress for Less, Inc. in Matter 35 (26CV501995) with the Verified Complaint, issued Summons, ADR Information Sheet, and clerk-stamped CV-5012 Civil Lawsuit Notice (via C T Corporation System, 330 N. Brand Blvd., Suite 700, Glendale, CA 91203 — info. and belief), then file POS-010. Santa Clara CV-5012 / local practice: serve within 60 days of filing (filed Aug. 26, 2026). Prefer the Odyssey short title corrected from Does 2 through 20 to Ross Stores, Inc. before CT Corp looks the case up, but do not miss this date for the caption. The issued SUM-100 already names Ross first and is valid. Do not serve DOEs until identified/amended. After service, demand Aug. 25, 2026 Sunnyvale Ross surveillance and LP stop/training materials.",
     "matters": [
       35
     ],
@@ -532,13 +543,13 @@
   },
   {
     "date": "Sep. 21, 2026",
-    "event": "Responsive pleading deadline (computed) — Shannon Smith, LCSW, and HOPE Psychotherapy, Inc., Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504-LJC); 21 days from the August 31, 2026 service date Van Dine accepted (FRCP 12(a)(1)(A)(i)). Falls on a Monday; no weekend/holiday extension applies. Confirmed on the Sep. 4 PACER Deadlines/Hearings print. Dkt. 13 POS is on file.",
+    "event": "Responsive pleading deadline (computed) — Shannon Smith, LCSW, and HOPE Psychotherapy, Inc., Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504-LJC); 21 days from the August 31, 2026 service date Van Dine accepted (FRCP 12(a)(1)(A)(i)). Falls on a Monday; no weekend/holiday extension applies.",
     "matters": [
       28
     ],
     "type": "deadline",
     "upcoming": true,
     "actor": "opposing",
-    "source": "/documents/matter-28/PACER Deadlines-Hearings - N.D. Cal. 3-26-cv-07504-LJC (Sep 4 2026).pdf"
+    "source": "/documents/matter-28/Proof of Service - SLB Accepted Service for Smith and HOPE (N.D. Cal. 3-26-cv-07504-LJC) (Sep 2 2026).pdf"
   }
 ]
