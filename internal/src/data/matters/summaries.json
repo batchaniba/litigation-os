@@ -658,7 +658,7 @@
     "case_no": "4:26-cv-05953-ASK",
     "court": "USDC N.D. Cal.",
     "claims": "42 USC 1983: Fourteenth Amendment (Substantive & Procedural Due Process), First Amendment (Retaliation); Declaratory Relief",
-    "status_label": "Dkt. 22 unsigned — JCMS fallback today 2:00 p.m.",
+    "status_label": "Send JCMS + 26(a)(1) if Dkt. 22 unsigned",
     "lifecycle": "active",
     "proceeding": "federal_civil",
     "phase": "mtd_briefing",
@@ -685,7 +685,7 @@
       }
     ],
     "evidenceCount": 13,
-    "documentCount": 54
+    "documentCount": 58
   },
   {
     "number": 25,

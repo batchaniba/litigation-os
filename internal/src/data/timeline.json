@@ -3205,7 +3205,19 @@
   },
   {
     "date": "Sep. 8, 2026",
-    "event": "Deadline \u2014 Initial disclosures (FRCP 26(a)(1)) and Joint Case Management Statement \u2014 Newanforbi v. Serrato (4:26-cv-05953-ASK). Still live unless a signed order on Dkt. 22 is on PACER. Li's fallback: if no order by 2:00 p.m. Pacific, send Plaintiff's JCMS portion to Li for a joint filing by end of day. Do not bury this under the optional HD/Swift/Best Buy/AT&T filings.",
+    "event": "DRAFTED, NOT YET SENT \u2014 Plaintiff's Rule 26(a)(1) initial disclosures and Plaintiff's portion of the Joint Case Management Statement in Newanforbi v. Serrato (4:26-cv-05953-ASK), dated September 8, 2026, with email POS to DAG Li. Email both to Li (Mr. Li; cc Marquez) on the existing JCMS thread if Dkt. 22 is still unsigned. Do not file the disclosures. Li files the joint JCMS. HOLD if PACER shows a signed Dkt. 22 order. Do not merge with the Meza/Melano availability reply. Do not import Matter 32 wage figures. Do not put GitHub raws in the email.",
+    "matters": [
+      24
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-24/EMAIL_DRAFT_Li_JCMS_Portion_and_Rule26_Disclosures.txt"
+  },
+  {
+    "date": "Sep. 8, 2026",
+    "event": "Deadline \u2014 Initial disclosures (FRCP 26(a)(1)) and Joint Case Management Statement \u2014 Newanforbi v. Serrato (4:26-cv-05953-ASK). Still live unless a signed order on Dkt. 22 is on PACER. Drafts are in matter-24. If no order, email Plaintiff's JCMS portion and the Rule 26(a)(1) disclosures to Li for a joint filing by end of day. Do not file the disclosures. Do not bury this under the optional HD/Swift/Best Buy/AT&T filings.",
     "matters": [
       24
     ],
