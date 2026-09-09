@@ -3,7 +3,7 @@
 **Firm:** Kabat Chapman & Ozmer LLP (KCO / KCOZ)  
 **Matter 27 role:** counsel for **Randstad US, LLC** only — *Newanforbi v. Randstad US, LLC et al.*, Alameda Super. Ct. No. **26CV199902**. RK Logistics is Garcia & Gurney.  
 **Last updated:** September 9, 2026  
-**Status:** three PACER pulls lodged (*Charter*; *We Got U*; *Sullivan* docket **plus** Dkts. 5, 8, 14, 16, 19, 25, 30+Ex. A, 32, 33, 34). Williams N.D. Ga. attorney query lodged (five cases).
+**Status:** three PACER pulls lodged (*Charter*; *We Got U*; *Sullivan* docket **plus** Dkts. 1, 5, 8, 14, 16, 19, 25, 30+Ex. A, 32, 33, 34). Williams N.D. Ga. attorney query lodged (five cases).
 
 This file is internal research. It is **not** a related-case disclosure, **not** a brief, and **not** something to send to this firm.
 
@@ -192,11 +192,12 @@ The file originally committed as `CM-ECF-GA Northern District Court.pdf` is **no
 | Court / no. | N.D. Ga. (Atlanta) **1:25-cv-02006-JPB** |
 | Judge | Hon. J. P. Boulee (mediation: Mag. Regina D. Cannon) |
 | Filed | April 11, 2025. Still open after Williams left. |
-| Nature | FLSA overtime / minimum wage, 29 U.S.C. § 216(b). NOS 710. Pro se plaintiff. |
+| Nature | FLSA overtime / minimum wage / retaliation, 29 U.S.C. §§ 206, 207, 215(a)(3), plus Georgia contract, quantum meruit, unjust enrichment, promissory estoppel, fiduciary duty, and O.C.G.A. § 13-6-11. NOS 710. Pro se plaintiff. Prayer **not less than $114,784** plus liquidated, punitive, fees, jury. |
 | Side | **Defense** — W. Michael Maloof, Jr. d/b/a The Maloof Law Firm. Employer/professional-defendant vs. a pro se individual. Closest caption-shape to Matter 27 of anything in this file. |
 | Williams | LEAD. Substituted in Dkts. 16–17 (Jul. 15, 2025). **Terminated Nov. 12, 2025** (Dkt. 33). Signer on **16, 25, 30, 33, 34** (34 is joint; plaintiff-prepared). Present at mediation (Dkt. 32). Georgia Bar **161149**. Address on these papers: **171 17th Street NW, Suite 1550** (pre–Spring Street). |
 | Chapman | **Absent.** CIP Dkt. 25 lists Williams as the only defense attorney. |
 | Predecessor | Bryan J. Henderson (Ga. Bar 821624) and William S. Cleveland (Ga. Bar 721593), Guilmette Pulver LLC / Guilmette Henderson, LLC. Filed the 408-strike (Dkt. 5) and the service concession (Dkt. 14). Out when Williams substituted. |
+| Dkt. 1 (Apr. 11, 2025) | **Plaintiff's complaint — not a Williams paper.** 69 pages plus a 3-page clerk filing receipt (Dkt. 1-1, $405, Apr. 14). Nine counts. The settlement history in it ($15k / $40k / $45k) is what predecessor Dkt. 5 tried to strike. The **$50,000** Williams recites in Dkt. 30 is still Doc. 9, not this print. This is the pleading he inherited. |
 | Dkt. 5 (Jun. 17, 2025) | **Predecessor, not Williams.** Motion to strike complaint paragraphs and exhibits as FRE 408 settlement communications ($15k / $40k / $45k history recited from the complaint). COS: CM/ECF to "attorneys of record" only. Court later **denied** (Dkt. 35) after Williams left. |
 | Dkt. 8 (Jul. 1, 2025) | Plaintiff objection: Dkt. 5 was never mailed or emailed to the pro se party; response clock has not started. |
 | Dkt. 14 (Jul. 11, 2025) | Predecessor concedes mistaken CM/ECF-only service; mailed Answer and Dkt. 5 on July 8; stipulates the response clock ran from July 8. Four days before Williams substituted. |
@@ -208,8 +209,8 @@ The file originally committed as `CM-ECF-GA Northern District Court.pdf` is **no
 | Dkt. 33 (Nov. 12, 2025) | Certificate of Consent to Withdraw under N.D. Ga. LR 83.1(E)(3). Client-signed. Same day as Dkt. 34. Not a fight with the client on the paper. |
 | Dkt. 34 (Nov. 12, 2025) | Joint status report (plaintiff-prepared; Williams consented). Mediator advised Nov. 5 the mediation was unsuccessful. Discovery reopens four months. Plaintiff asks for a ruling on leave to amend. |
 | Outcome as to Williams | Four months. Opposed leave to amend (Dkt. 30). Sat mediation Oct. 30 (Dkt. 32). Withdrew Nov. 12 (Dkts. 33–34). Court **granted** the amendment and **denied** the inherited 408-strike five days later (Dkt. 35). Successor counsel (DeWoskin / Han) answered the FAC and later moved for summary judgment. |
-| Sources | `sources/1-25-cv-02006-JPB-Sullivan-v-Maloof/` — full docket (Sep. 8, 2026 PT); Dkts. **5, 8, 14, 16, 19, 25, 30+Ex. A, 32, 33, 34**. |
-| Still to pull | Dkt. **35** (the order he lost); 17 (entered substitution order); 29 (plaintiff's motion for leave); 9 (the $50k offer he recites); 1 (complaint) as needed. |
+| Sources | `sources/1-25-cv-02006-JPB-Sullivan-v-Maloof/` — full docket (Sep. 8, 2026 PT); Dkts. **1, 5, 8, 14, 16, 19, 25, 30+Ex. A, 32, 33, 34**. |
+| Still to pull | Dkt. **35** (the order he lost); 17 (entered substitution order); 29 (plaintiff's motion for leave); 9 (the $50k offer he recites). |
 | Usable as | First Williams-only docket and first Williams-signed brief. Defense of an employer/professional against a pro se wage plaintiff. Closest analog to Matter 27. Voice match to the Matter 27 emails. Predecessor vs. Williams split on the 408-strike and on serving a pro se plaintiff. |
 | Not usable as | A holding about Randstad, FCRA, or PC § 290.46. Not a related case. Not an admission in Matter 27. The $50,000 figure is that defendant's offer in that case, recited from Doc. 9 — not a Randstad number. Dkt. 5 is not a Williams paper. |
 
@@ -217,7 +218,7 @@ The file originally committed as `CM-ECF-GA Northern District Court.pdf` is **no
 
 ## Williams N.D. Ga. attorney query — remaining unpulled
 
-PACER query (Sep. 8, 2026 PT): **Chadwick Lloyd Williams is an attorney in 5 cases.** *We Got U* is card 2. *Sullivan* is card 3 (docket plus Dkts. 5, 8, 14, 16, 19, 25, 30+Ex. A, 32, 33, 34 lodged). Three case-level pulls left:
+PACER query (Sep. 8, 2026 PT): **Chadwick Lloyd Williams is an attorney in 5 cases.** *We Got U* is card 2. *Sullivan* is card 3 (docket plus Dkts. 1, 5, 8, 14, 16, 19, 25, 30+Ex. A, 32, 33, 34 lodged). Three case-level pulls left:
 
 | Case | Filed | Closed | Next pull |
 |---|---|---|---|
