@@ -46,6 +46,18 @@
     "source": "/documents/matter-27/FW-003 Order on Court Fee Waiver - GRANTED (One Legal download, Jul 20 2026).pdf"
   },
   {
+    "date": "Sep. 9, 2026",
+    "event": "FILED \u2014 POS-040 Proofs of Service of the Amended Notices of Amount of Punitive Damages Sought (CCP \u00a7425.115, $500,000 each) as to Randstad US, LLC and The RK Logistics Group, Inc. Sacramento County Sheriff / F. Conley personally served both notices on Aug. 21, 2026 at 11:21 a.m. on Skylar Leih / Authorized Agent at CSC - Lawyers Incorporating Service, 2710 Gateway Oaks Dr Ste 150N, Sacramento (Levying Officer File No. 2026028894). Courtesy-copy emails to Chadwick L. Williams / Nathan Chapman (Randstad) and Melinda Garcia, cc Karen Tai (RK Logistics) drafted the same day; not yet sent.",
+    "matters": [
+      27
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "you",
+    "source": "/documents/matter-27/POS-040 Proof of Service - Amended CCP 425.115 Notice - Randstad US LLC (Served Aug 21 2026, Filed Sep 9 2026, Levying Officer 2026028894).pdf"
+  },
+  {
     "date": "Sep. 8, 2026",
     "event": "FILED \u2014 Dkt. 8 Order Setting Status (Pretrial Scheduling) Conference in Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR). Dated September 4, 2026; PACER-stamped Document 8 Filed 09/08/26. Because Plaintiff is pro se, the matter is referred to the magistrate for pretrial proceedings under E.D. Cal. L.R. 302(c)(21). Conference: Thursday, October 8, 2026, 11:00 a.m. Zoom. Status reports due September 24. The order recites Defendant's August 31 answer as ECF No. 5. PACER History/Documents (Sep. 8, 8:27 p.m.) confirms the answer is Dkt. 4; Dkt. 5 is Consent/Decline of Magistrate Judge Jurisdiction. Treat the ECF No. 5 recitation as a clerk miscite.",
     "matters": [
@@ -1230,7 +1242,7 @@
   },
   {
     "date": "Sep. 8, 2026",
-    "event": "EXECUTED (UNFILED / HOLD) \u2014 Clerk's Requests for Entry of Default (CIV-100 item 1c only) prepared as to The RK Logistics Group, Inc. (dated Sep. 15) and Randstad US, LLC (dated Sep. 16). No clerk's judgment, no court judgment, no item 2 money, no prove-up. Do not e-file until after each granted response date, and only if eCourt that morning shows no answer, demurrer, CIV-141, or stipulation. Same-day CCP \u00a7587 first-class mailing to counsel and CSC (2710 Gateway Oaks Drive, Suite 150N, Sacramento, CA 95833). Amended \u00a7425.115 notices are e-filed but not personally served \u2014 punitives cannot ride a default. CRC 3.110(h) then gives ten days.",
+    "event": "EXECUTED (UNFILED / HOLD) \u2014 Clerk's Requests for Entry of Default (CIV-100 item 1c only) prepared as to The RK Logistics Group, Inc. (dated Sep. 15) and Randstad US, LLC (dated Sep. 16). No clerk's judgment, no court judgment, no item 2 money, no prove-up. Do not e-file until after each granted response date, and only if eCourt that morning shows no answer, demurrer, CIV-141, or stipulation. Same-day CCP \u00a7587 first-class mailing to counsel and CSC (2710 Gateway Oaks Drive, Suite 150N, Sacramento, CA 95833). Amended \u00a7425.115 notices were personally served Aug. 21, 2026 (POS-040s filed Sept. 9, 2026); punitives may ride a later default judgment, but stay off these clerk-default CIV-100s. CRC 3.110(h) then gives ten days.",
     "matters": [
       27
     ],
@@ -1643,6 +1655,18 @@
     "upcoming": false,
     "actor": "you",
     "source": "/documents/matter-27/Gmail - RK Logistics Extension Request to Sep 14 (Aug 21 2026).pdf"
+  },
+  {
+    "date": "Aug. 21, 2026",
+    "event": "SERVED \u2014 Sacramento County Sheriff / F. Conley personally served the Amended Notices of Amount of Punitive Damages Sought (CCP \u00a7425.115, $500,000 each) on Randstad US, LLC and The RK Logistics Group, Inc. at 11:21 a.m. on Skylar Leih / Authorized Agent at CSC - Lawyers Incorporating Service, 2710 Gateway Oaks Dr Ste 150N, Sacramento (Levying Officer File No. 2026028894). POS-040s later filed Sept. 9, 2026.",
+    "matters": [
+      27
+    ],
+    "type": "service",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-27/POS-040 Proof of Service - Amended CCP 425.115 Notice - Randstad US LLC (Served Aug 21 2026, Filed Sep 9 2026, Levying Officer 2026028894).pdf"
   },
   {
     "date": "Aug. 24, 2026",
