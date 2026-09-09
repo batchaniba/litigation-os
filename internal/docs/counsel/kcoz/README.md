@@ -6,7 +6,7 @@ Living dossier for **Chadwick L. Williams** and **Nathan D. Chapman**, Randstad'
 |---|---|
 | [`WILLIAMS_CHAPMAN.md`](WILLIAMS_CHAPMAN.md) | Read this. Identity, roles, Matter 27 posture, case cards, what is *not* a holding. |
 | [`cases.json`](cases.json) | Append-only machine cards. One object per docket. |
-| [`sources/`](sources/) | Lodged PACER prints and other primary pulls. Not served on the public site. Seeded: *Charter* (D. Conn.), *We Got U* (N.D. Ga.), Williams N.D. Ga. attorney query. |
+| [`sources/`](sources/) | Lodged PACER prints and other primary pulls. Not served on the public site. Seeded: *Charter* (D. Conn.), *We Got U* (N.D. Ga.), *Sullivan* (N.D. Ga. docket + Dkts. 16, 25, 30+Ex. A, 33), Williams N.D. Ga. attorney query. |
 
 ## How to add the next case
 

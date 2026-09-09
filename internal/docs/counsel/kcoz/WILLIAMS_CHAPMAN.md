@@ -3,7 +3,7 @@
 **Firm:** Kabat Chapman & Ozmer LLP (KCO / KCOZ)  
 **Matter 27 role:** counsel for **Randstad US, LLC** only — *Newanforbi v. Randstad US, LLC et al.*, Alameda Super. Ct. No. **26CV199902**. RK Logistics is Garcia & Gurney.  
 **Last updated:** September 9, 2026  
-**Status:** two PACER pulls lodged (*Charter*; *We Got U*). Williams N.D. Ga. attorney query lodged (five cases).
+**Status:** three PACER pulls lodged (*Charter*; *We Got U*; *Sullivan* docket **plus** Dkts. 16, 25, 30+Ex. A, 33). Williams N.D. Ga. attorney query lodged (five cases).
 
 This file is internal research. It is **not** a related-case disclosure, **not** a brief, and **not** something to send to this firm.
 
@@ -36,7 +36,7 @@ Williams is the **email voice**. Chapman is the **signer**. *Charter v. Myla* (D
 | Fax | (404) 400-7333 | (404) 400-7333 |
 | Email | `cwilliams@kcozlaw.com` | `nchapman@kcozlaw.com` |
 | Office (current; on Aug. 18 / Sep. 8 2026 *We Got U* papers and Matter 27) | 1150 Spring Street NW, Suite 800, Atlanta, GA 30309 | same |
-| Prior Atlanta address (June 2026 *We Got U* complaint / CIP / summons) | 171 17th Street NW, Suite 1550, Atlanta, GA 30363 | same |
+| Prior Atlanta address (*Sullivan* 2025 papers; June 2026 *We Got U* complaint / CIP / summons) | 171 17th Street NW, Suite 1550, Atlanta, GA 30363 | same |
 | Matter 27 | Voice, extension, demand recipient | Cc on the Aug. 19 / Aug. 28 demand thread |
 
 Firm site: [kcozlaw.com](https://www.kcozlaw.com/). Bios used this pass: [Williams](https://www.kcozlaw.com/chadwick-l-william/), [Chapman](https://www.kcozlaw.com/nathan-d-chapman/). Offices claimed: Atlanta, Chicago, Los Angeles, Portland.
@@ -45,7 +45,7 @@ Firm site: [kcozlaw.com](https://www.kcozlaw.com/). Bios used this pass: [Willia
 
 ## Admissions (firm-claimed; not a CalBar pull)
 
-**Williams** (firm bio, retrieved Sep. 9, 2026): State Bar of Georgia. **Georgia Bar No. 161149** on *We Got U* Dkts. 5, 21, 22, and 24. Court admissions listed on the bio page: Georgia Supreme Court and Court of Appeals. A firm press release dated August 25, 2025 also states admission to the U.S. District Court for the Northern District of Georgia, which matches his PACER attorney query in that court (five cases). **No California admission is listed.** Until a CalBar record says otherwise, he cannot file in Alameda Superior Court except through *pro hac vice* with a California attorney of record (Cal. Rules of Court, rule 9.40).
+**Williams** (firm bio, retrieved Sep. 9, 2026): State Bar of Georgia. **Georgia Bar No. 161149** on *We Got U* Dkts. 5, 21, 22, and 24, and on *Sullivan* Dkts. 25, 30, and 33. Court admissions listed on the bio page: Georgia Supreme Court and Court of Appeals. A firm press release dated August 25, 2025 also states admission to the U.S. District Court for the Northern District of Georgia, which matches his PACER attorney query in that court (five cases). **No California admission is listed.** Until a CalBar record says otherwise, he cannot file in Alameda Superior Court except through *pro hac vice* with a California attorney of record (Cal. Rules of Court, rule 9.40).
 
 **Chapman** (firm bio, same date): State Bars of Georgia, **California**, Alabama, and Florida. **Georgia Bar No. 244954** on the same *We Got U* papers. Federal: N.D. / M.D. Georgia; N.D. / M.D. / S.D. Alabama; M.D. Florida; D. Colorado; U.S. Supreme Court. **D. Conn. is not on that list** — consistent with the *Charter* PHV motions. California state-bar claim is firm-claimed; a CalBar number lookup has not been run this pass.
 
@@ -55,13 +55,16 @@ Firm site: [kcozlaw.com](https://www.kcozlaw.com/). Bios used this pass: [Willia
 
 ## Style — what the file actually supports (Sep. 9, 2026)
 
-Do not collapse "KCO is aggressive" into "Williams writes that way." We still have **no Williams-signed brief**. The heat is on papers Chapman signed. Williams's own voice, in this file, is short, courteous, and about **tempo**.
+Do not collapse "KCO is aggressive" into "Williams writes that way." The heat is on papers **Chapman** signed. Williams's own voice, now including a signed brief, is short, courteous, and about **tempo, cost, and getting to a number**.
 
 **What is Williams, personally**
 
 - **Three Matter 27 emails.** Aug. 19, 7:49 a.m.: *"Brendan, this is received. I'll discuss with my client and circle back."* Aug. 28, 6:49 a.m., the morning the $55k/$85k window died: *"thanks again for your patience. I am still conferring with my client and require additional time. We will attempt respond to your opening demand by September 4, 2026."* No counteroffer. No merits. No threat. Direct line, "We have moved" footer, copies Chapman every time.
 - **First move on this desk was pricing, not pleading.** Call plus intro email: 15-day extension (party agreement only; no stipulation) **and** "send an opening demand" as to Randstad, optional global. No NOA, no CCP § 430.41 letter, no answer. That is aggressive about **control of the number and the clock**, not about rhetoric.
-- **Bio path is appellate, not trial-heat.** Eleventh Circuit staff attorney, then Hull clerk, then KCO associate from 2021. Ones to Watch 2026. That predicts clean, short writing if he ever signs something. It does not predict the *We Got U* introduction.
+- **First signed brief: *Sullivan* Dkt. 30 (Sep. 11, 2025).** Opposition to a pro se plaintiff's motion for leave to file a 399-paragraph / 220-page FAC on the eve of an Oct. 30 mediation. He does **not** oppose amendment in principle. He objects to **timing**: answering before mediation would "waste thousands of dollars" that "can and should be spent settling this case." Relief asked: deny without prejudice to renew after mediation, or if granted, **14 days after mediation** to answer. Cites *St. Claire v. Ditech Fin.*, No. 1:17-CV-3370-AT, 2018 WL 8459491 (N.D. Ga. Oct. 23, 2018); 11th Cir. *Sosa v. Airprint Sys.*, 133 F.3d 1417 (1998) and *S. Grouts & Mortars, Inc. v. 3M Co.*, 575 F.3d 1235 (2009); N.D. Ga. LR 16.7(A) (ADR cost savings). Recites an early **$50,000** defense offer from Doc. 9 (filed before he substituted in). Chapman is not on the paper.
+- **Same email voice in Dkt. 30 Ex. A (Aug. 12–13, 2025)** as Matter 27. To the pro se plaintiff: *"Thanks, Mike. I'm out of the office today and I should be able to get back to you by EOD tomorrow. Does that work?"* Next day: consent **if** the answer deadline is 14 days after mediation, citing LR 16.7(A). Plaintiff wrote "Yes, that works," then did not take the deal and filed Dkt. 29. Williams wrote Dkt. 30.
+- **He lost the paper and left.** The court later **granted** leave and **denied** the inherited 408-strike (Dkt. 35, Nov. 17) — Williams had already withdrawn Nov. 12 (Dkt. 33, client-consented under LR 83.1(E)) after the Oct. 30 mediation failed. Four months in. Chapman never appeared. CIP (Dkt. 25) lists Williams as the only defense attorney.
+- **Bio path is appellate, not trial-heat.** Eleventh Circuit staff attorney, then Hull clerk, then KCO associate from 2021. Ones to Watch 2026. Dkt. 30 matches that prediction: clean, short, cost-and-clock. It does not match the *We Got U* introduction.
 
 **What is the firm / Chapman, and easy to misread as "Chadwick"**
 
@@ -72,14 +75,13 @@ Do not collapse "KCO is aggressive" into "Williams writes that way." We still ha
 
 **How that reads on Matter 27**
 
-Williams asking for your number before he appears is the aggressive part that is actually his. It lets Randstad treat $55k / $85k as a ceiling and, later, as a "professional plaintiff" talking point. It is not the same thing as the *We Got U* "coordinated scheme" voice. If a demurrer or § 430.41 letter arrives, expect Chapman's name on it unless a California appearance is arranged for Williams. Until that paper exists, do not forecast heat from three polite emails.
+Williams asking for your number before he appears is the aggressive part that is actually his. It lets Randstad treat $55k / $85k as a ceiling and, later, as a "professional plaintiff" talking point. The Aug. 28 "require additional time… September 4" delay after asking for a number is the same move as *Sullivan* Ex. A: buy clock, spend money on settlement not paper. It is not the *We Got U* "coordinated scheme" voice. If a demurrer or § 430.41 letter arrives, expect Chapman's name on it unless a California appearance is arranged for Williams. If Williams himself files, the analog in this file is Dkt. 30 (timing / cost / settlement), not Dkt. 1 of *We Got U*. Until that paper exists in Alameda, do not forecast *We Got U* heat from three polite emails plus one Georgia opposition.
 
 **Still missing (so do not invent it)**
 
-- Any Williams-signed motion, opposition, or meet-and-confer letter. *Sullivan* Dkt. **30** is the first one — pull that PDF.
-- Hearing transcripts or a judge describing his demeanor.
-- The four other N.D. Ga. Williams dockets (*Fowler*, *Sullivan*, *SidePrize*, *Newson-Pace*) — especially *SidePrize* (13 days) and *Fowler* (closed).
-- Whether he is nasty in person. The Aug. 18 call is memorialized only as extension-plus-demand. No raised-voice record.
+- Hearing transcripts or a judge describing his demeanor. *Sullivan* Dkt. **35** (the order granting leave / denying the inherited 408-strike) is the next paper that would show how a court treated his Dkt. 30 argument.
+- The three remaining N.D. Ga. Williams dockets (*Fowler*, *SidePrize*, *Newson-Pace*) — especially *SidePrize* (13 days) and *Fowler* (closed).
+- Whether he is nasty in person. The Aug. 18 call is memorialized only as extension-plus-demand. No raised-voice record. Ex. A is the same register with a different pro se plaintiff.
 
 ---
 
@@ -98,6 +100,7 @@ Williams asking for your number before he appears is the aggressive part that is
 3. **Speed to a paid quietus.** *Charter* went from complaint (Jan. 7, 2025) to joint dismissal with prejudice (order Apr. 21, 2025) in **104 days**, each side to bear its own fees. That is after a denied transfer/MTD, a live TRO/PI set for an evidentiary hearing, expedited discovery, an answer with counterclaim, and a motion to dismiss that counterclaim. They litigated hard and then stipulated out before the May 14–15 hearing. That is a posture, not a prediction that Randstad will pay.
 4. **Local counsel is disposable once PHV is in.** Dkt. 41/42: Reilly moved to be excused from further proceedings under D. Conn. L.R. 83.1(d)(2); granted Feb. 24, 2025. Out-of-state KCO then ran the case. Arnold & Porter (Daniel Reisner) was added later; first PHV denied for D. Conn. L.R. 83.1(e)(1)(b), then granted.
 5. **Matter 27 so far is pricing, not testing.** Williams's first move was a 15-day extension (party agreement only; no stipulation on file) and a request for an opening demand — Randstad-only plus optional global. No answer, no demurrer, no CCP § 430.41 letter, no NOA as of the last Matter 27 update in this repo.
+6. **When Williams signs, it is cost / clock / settlement, not *We Got U* rhetoric.** *Sullivan* Dkt. 30 is the only Williams merits brief in this file. He offered consent to amend if the answer waited until after mediation; when the plaintiff filed anyway, he opposed on timing and asked the court to protect the mediation spend. He then withdrew after the mediation failed, before the court granted the amendment. Chapman never appeared on that docket.
 
 ---
 
@@ -181,7 +184,7 @@ Party-screen names on the docket caption as *Charter Communications, Inc. v. Myl
 
 The file originally committed as `CM-ECF-GA Northern District Court.pdf` is **not** this docket. It is Williams's N.D. Ga. attorney query (five cases). Lodged separately under `sources/ndga-williams-attorney-query/`.
 
-### 3 — PACER — *Sullivan v. Maloof* (docket only; papers not yet pulled)
+### 3 — PACER — *Sullivan v. Maloof*
 
 | | |
 |---|---|
@@ -190,17 +193,23 @@ The file originally committed as `CM-ECF-GA Northern District Court.pdf` is **no
 | Filed | April 11, 2025. Still open after Williams left. |
 | Nature | FLSA overtime / minimum wage, 29 U.S.C. § 216(b). NOS 710. Pro se plaintiff. |
 | Side | **Defense** — W. Michael Maloof, Jr. d/b/a The Maloof Law Firm. Employer/professional-defendant vs. a pro se individual. Closest caption-shape to Matter 27 of anything in this file. |
-| Williams | LEAD. Substituted in Dkts. 16–17 (Jul. 15, 2025). **Terminated Nov. 12, 2025** (Dkt. 33). CM/ECF filer on **16, 25, 30, 33**. Chapman does **not** appear. |
-| Chapman | Absent. |
+| Williams | LEAD. Substituted in Dkts. 16–17 (Jul. 15, 2025). **Terminated Nov. 12, 2025** (Dkt. 33). CM/ECF filer and signer on **16, 25, 30, 33**. Georgia Bar **161149**. Address on these papers: **171 17th Street NW, Suite 1550** (pre–Spring Street). |
+| Chapman | **Absent.** CIP Dkt. 25 lists Williams as the only defense attorney. |
+| Dkt. 16 (Jul. 15, 2025) | Proposed consent order granting substitution. Page 1 is image-only on this print. COS (p. 2) serves the pro se plaintiff by email and U.S. mail. |
+| Dkt. 25 (Aug. 11, 2025) | Certificate of Interested Persons. Parties: Sullivan and Maloof. Other financial interests: N/A. Attorneys: **"Chadwick L. Williams, Counsel for Defendant"** — no co-counsel. |
+| Dkt. 30 + Ex. A (Sep. 11, 2025) | **Only Williams merits brief in this file.** Does not oppose amendment in principle. Objects to timing of a 399-¶ / 220-page FAC before the Oct. 30 mediation. Asks deny without prejudice, or 14 days after mediation to answer. Recites a **$50,000** early offer (Doc. 9, pre-Williams). Ex. A: Aug. 12 "out of the office… EOD tomorrow"; Aug. 13 consent-if (14 days post-mediation; LR 16.7(A)). Plaintiff did not take that deal. |
+| Dkt. 33 (Nov. 12, 2025) | Certificate of Consent to Withdraw under N.D. Ga. LR 83.1(E)(3). Client-signed. After failed Oct. 30 mediation (Dkt. 32). Not a fight with the client on the paper. |
 | Outcome as to Williams | Four months. Opposed leave to amend (Dkt. 30). Mediation Oct. 30 did not resolve (Dkt. 32). Withdrew Nov. 12. Court **granted** the amendment and **denied** the inherited 408-strike motion five days later (Dkt. 35). Successor counsel (DeWoskin / Han) answered the FAC and later moved for summary judgment. |
-| Sources | `sources/1-25-cv-02006-JPB-Sullivan-v-Maloof/PACER Full Docket (Sep 8 2026 PT).pdf` |
-| Pull next | See the ranked ECF list in chat / below. Dkt. **30 + Ex. A** is the only Williams merits brief on this docket. |
+| Sources | `sources/1-25-cv-02006-JPB-Sullivan-v-Maloof/` — full docket (Sep. 8, 2026 PT); Dkts. **16, 25, 30+Ex. A, 33**. |
+| Still to pull | Dkt. **35** (the order he lost); 17 (entered substitution order); 29 (plaintiff's motion); 9 (the $50k offer he recites); 5 / 1 / 32 as needed. |
+| Usable as | First Williams-only docket and first Williams-signed brief. Defense of an employer/professional against a pro se wage plaintiff. Closest analog to Matter 27. Voice match to the Matter 27 emails. |
+| Not usable as | A holding about Randstad, FCRA, or PC § 290.46. Not a related case. Not an admission in Matter 27. The $50,000 figure is that defendant's offer in that case, recited from Doc. 9 — not a Randstad number. |
 
 ---
 
 ## Williams N.D. Ga. attorney query — remaining unpulled
 
-PACER query (Sep. 8, 2026 PT): **Chadwick Lloyd Williams is an attorney in 5 cases.** *We Got U* is card 2. *Sullivan* docket is card 3 (papers still to pull). Three case-level pulls left:
+PACER query (Sep. 8, 2026 PT): **Chadwick Lloyd Williams is an attorney in 5 cases.** *We Got U* is card 2. *Sullivan* is card 3 (docket plus Dkts. 16, 25, 30+Ex. A, 33 lodged). Three case-level pulls left:
 
 | Case | Filed | Closed | Next pull |
 |---|---|---|---|
@@ -225,7 +234,7 @@ From the Chapman bio "Representative Matters" as retrieved September 9, 2026. Th
 
 Williams's bio has no representative-matter list on the page retrieved this pass.
 
-Party-search ideas for the next PACER dump (user pulls; agent lodges): *Sullivan* Dkts. 30+Ex. A first, then 16/17/33/29/35; then *Fowler*, *SidePrize*, *Newson-Pace*. Do not dump PDFs on the repository root — they belong in `sources/`.
+Party-search ideas for the next PACER dump (user pulls; agent lodges): *Sullivan* Dkt. **35** first (the order granting leave), then 17 / 29 / 9 as needed; then *Fowler*, *SidePrize*, *Newson-Pace*. Do not dump PDFs on the repository root — they belong in `sources/`.
 
 ---
 
