@@ -13,3 +13,7 @@ Draft terms most favorable to Plaintiff. Maintain or shorten defense timelines w
 This is a standing instruction across the portfolio. Case-specific exceptions do not replace it. Preserve existing court orders and executed agreements as historical facts.
 
 For project structure and existing development workflows, consult README.md and internal/docs/SUPERCYCLE_INSTRUCTIONS.md.
+
+## Counsel dossiers
+
+Opposing-counsel identity/role research lives under `internal/docs/counsel/`. Seeded: Kabat Chapman & Ozmer (Williams / Chapman) at [`internal/docs/counsel/kcoz/`](internal/docs/counsel/kcoz/). Append PACER pulls there. Those dockets are not related cases. Do not email counsel about the research.
