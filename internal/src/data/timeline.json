@@ -22,6 +22,30 @@
     "source": "/documents/matter-25/Dkt 08 - Order Setting Status Conference (Filed Sep 8 2026).pdf"
   },
   {
+    "date": "Sep. 9, 2026",
+    "event": "LODGED \u2014 One Legal download of the granted FW-003 in Newanforbi v. California Highway Patrol et al. (26CV191136). GRANTED Jun. 3, 2026 (box 4a(1); clerk e-service 10:45 a.m. PDT; Deputy Penelope Cabrera-Gamez; 5 pp. including certificate of mailing to 1455 Cat Tail Drive). Attach if One Legal bills a court filing fee. Does not waive One Legal's own vendor fee. The earlier 4-page copy in matter-32/from-20 was not replaced.",
+    "matters": [
+      20
+    ],
+    "type": "event",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-20/FW-003 Order on Court Fee Waiver - GRANTED (One Legal download, Jun 3 2026).pdf"
+  },
+  {
+    "date": "Sep. 9, 2026",
+    "event": "LODGED \u2014 One Legal download of the granted FW-003 in Newanforbi v. Randstad US, LLC et al. (26CV199902). GRANTED Jul. 20, 2026 (box 4a(1); clerk e-service 4:40 p.m. PDT, Deputy A. Gospel). Attach if One Legal bills a court filing fee. Does not waive One Legal's own vendor fee. The earlier copy Randstad Order on Court Fee Waiver (Superior Court).pdf was not replaced.",
+    "matters": [
+      27
+    ],
+    "type": "event",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-27/FW-003 Order on Court Fee Waiver - GRANTED (One Legal download, Jul 20 2026).pdf"
+  },
+  {
     "date": "Sep. 8, 2026",
     "event": "FILED \u2014 Dkt. 8 Order Setting Status (Pretrial Scheduling) Conference in Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR). Dated September 4, 2026; PACER-stamped Document 8 Filed 09/08/26. Because Plaintiff is pro se, the matter is referred to the magistrate for pretrial proceedings under E.D. Cal. L.R. 302(c)(21). Conference: Thursday, October 8, 2026, 11:00 a.m. Zoom. Status reports due September 24. The order recites Defendant's August 31 answer as ECF No. 5. PACER History/Documents (Sep. 8, 8:27 p.m.) confirms the answer is Dkt. 4; Dkt. 5 is Consent/Decline of Magistrate Judge Jurisdiction. Treat the ECF No. 5 recitation as a clerk miscite.",
     "matters": [
@@ -3223,6 +3247,17 @@
     "actor": "you"
   },
   {
+    "date": "Jun. 3, 2026",
+    "event": "FILED \u2014 FW-003 Order on Court Fee Waiver GRANTED in Newanforbi v. California Highway Patrol et al. (26CV191136). Box 4a(1); CRC 3.55 / 8.818: filing papers in superior court, copies, sheriff's fee to give notice, and the other listed items. Clerk e-service Jun. 3, 2026, 10:45 a.m. PDT (Deputy Penelope Cabrera-Gamez). Do not pay One Legal a court filing fee on this case.",
+    "matters": [
+      20
+    ],
+    "type": "ruling",
+    "filed": true,
+    "actor": "court",
+    "source": "/documents/matter-20/FW-003 Order on Court Fee Waiver - GRANTED (One Legal download, Jun 3 2026).pdf"
+  },
+  {
     "date": "Jun. 17, 2026",
     "event": "Complaint for Damages, Declaratory Relief, and Injunctive Relief filed \u2014 Newanforbi v. Serrato, U.S. District Court, Northern District of California, Oakland Division; Case No. 4:26-cv-05953-ASK; assigned to Hon. Ajay S. Krishnan, U.S. Magistrate Judge; 4 causes of action under 42 U.S.C. \u00a71983 (14th Amendment Substantive Due Process, Procedural Due Process, 1st Amendment Retaliation, Declaratory Relief); ISC Order and ADR Deadlines issued same day; IFP Application and Proposed Summons filed concurrently; Plaintiff in Pro Per",
     "matters": [
@@ -4129,6 +4164,17 @@
     ],
     "type": "filing",
     "actor": "you"
+  },
+  {
+    "date": "Jul. 20, 2026",
+    "event": "FILED \u2014 FW-003 Order on Court Fee Waiver GRANTED in Newanforbi v. Randstad US, LLC et al. (26CV199902). Box 4a(1); CRC 3.55 / 8.818: filing papers in superior court, copies, sheriff's fee to give notice, and the other listed items. Clerk e-service Jul. 20, 2026, 4:40 p.m. PDT (Deputy A. Gospel). Do not pay One Legal a court filing fee on this case.",
+    "matters": [
+      27
+    ],
+    "type": "ruling",
+    "filed": true,
+    "actor": "court",
+    "source": "/documents/matter-27/FW-003 Order on Court Fee Waiver - GRANTED (One Legal download, Jul 20 2026).pdf"
   },
   {
     "date": "Jul. 20, 2026",

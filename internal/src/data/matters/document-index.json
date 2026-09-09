@@ -1306,6 +1306,16 @@
   },
   {
     "matter": 20,
+    "label": "FW-003 Order on Court Fee Waiver — GRANTED (One Legal download; 5 pp. incl. certificate of mailing; clerk e-service Jun. 3, 2026, 10:45 a.m. PDT). Attach if One Legal bills a court filing fee. Does not waive One Legal's own vendor fee.",
+    "path": "/documents/matter-20/FW-003 Order on Court Fee Waiver - GRANTED (One Legal download, Jun 3 2026).pdf"
+  },
+  {
+    "matter": 20,
+    "label": "EMAIL DRAFT — to One Legal if they bill a court filing fee again on 26CV191136. Attach the granted FW-003. Do not pay a second court fee. Unsent until billed.",
+    "path": "/documents/matter-20/EMAIL_DRAFT_One_Legal_Court_Fees_Already_Waived.txt"
+  },
+  {
+    "matter": 20,
     "label": "Oral Argument Script - CHP Demurrer Hearing (Aug 28 2026)",
     "path": "/documents/matter-32/from-20/Oral Argument Script - CHP Demurrer Hearing (Aug 28 2026).pdf"
   },
@@ -2483,6 +2493,16 @@
     "matter": 26,
     "label": "Proof of Service - Consent to Magistrate Judge Jurisdiction - UPS (E.D. Cal. 2-26-cv-02847) (Sep 1 2026)",
     "path": "/documents/matter-26/Proof of Service - Consent to Magistrate Judge Jurisdiction - UPS (E.D. Cal. 2-26-cv-02847) (Sep 1 2026).pdf"
+  },
+  {
+    "matter": 27,
+    "label": "FW-003 Order on Court Fee Waiver — GRANTED (One Legal download; clerk e-service Jul. 20, 2026, 4:40 p.m. PDT, Deputy A. Gospel). Attach if One Legal bills a court filing fee. Does not waive One Legal's own vendor fee.",
+    "path": "/documents/matter-27/FW-003 Order on Court Fee Waiver - GRANTED (One Legal download, Jul 20 2026).pdf"
+  },
+  {
+    "matter": 27,
+    "label": "EMAIL DRAFT — to One Legal if they bill a court filing fee again on 26CV199902. Attach the granted FW-003. Do not pay a second court fee. Unsent until billed.",
+    "path": "/documents/matter-27/EMAIL_DRAFT_One_Legal_Court_Fees_Already_Waived.txt"
   },
   {
     "matter": 27,
