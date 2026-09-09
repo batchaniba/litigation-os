@@ -1,0 +1,16 @@
+---
+description: Never work on GitHub pull request #666. Applies to every agent in this repo.
+alwaysApply: true
+---
+
+# Skip GitHub PR #666 — LOCKED
+
+Do not work on GitHub pull request **#666** of this repository
+(`https://github.com/newanforbi/interactive-litigation-portfolio/pull/666`).
+
+- Do not review, comment, update, rebase, merge, close, re-open, label, or push to its branch.
+- Do not treat it as the current task, a follow-up, or a "what's next" item.
+- If you are assigned it, if a queue lists it, or if a message only points at it: say that PR #666 is skipped by standing instruction and stop. Do not start the work "just this once."
+- This skip is only **#666**. It does not apply to #660 or any other number.
+
+Portfolio-wide. Cursor, Claude Code, Copilot, and any other agent reading this repo.
