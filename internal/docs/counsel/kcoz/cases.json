@@ -15,8 +15,9 @@
       "fax": "(404) 400-7333",
       "bio_url": "https://www.kcozlaw.com/chadwick-l-william/",
       "admissions_firm_claimed": ["Georgia"],
+      "georgia_bar_no": "161149",
       "california_bar_firm_claimed": false,
-      "notes": "Matter 27 email voice and named lead. Firm bio lists Georgia only. CalBar lookup not run this pass."
+      "notes": "Matter 27 email voice. Georgia Bar 161149 on We Got U signature blocks; not named lead on that Rule 26 report. Firm bio lists Georgia only. CalBar lookup not run this pass."
     },
     {
       "id": "chapman",
@@ -29,8 +30,9 @@
       "fax": "(404) 400-7333",
       "bio_url": "https://www.kcozlaw.com/nathan-d-chapman/",
       "admissions_firm_claimed": ["Georgia", "California", "Alabama", "Florida"],
+      "georgia_bar_no": "244954",
       "california_bar_firm_claimed": true,
-      "notes": "Matter 27 cc. In Charter v. Myla, CM/ECF filer on the merits. CalBar lookup not run this pass."
+      "notes": "Matter 27 cc. Signs the We Got U papers and was the Charter CM/ECF filer. CalBar lookup not run this pass."
     }
   ],
   "office": {
@@ -38,7 +40,8 @@
     "address2": "Suite 800",
     "city": "Atlanta",
     "state": "GA",
-    "zip": "30309"
+    "zip": "30309",
+    "prior_atlanta": "171 17th Street NW, Suite 1550, Atlanta, GA 30363 (on We Got U June 2026 papers)"
   },
   "cases": [
     {
@@ -109,6 +112,67 @@
       },
       "usable_as": "Identity, lead-vs-filer split, employer-side posture, 104-day path to with-prejudice walkaway on own fees.",
       "not_a_holding": "Not related to Matter 27. Not a holding about Randstad, FCRA, or PC §290.46."
+    },
+    {
+      "id": "we-got-u-v-leonard-ndga-2026",
+      "kind": "pacer_pull",
+      "matter": null,
+      "caption": "We Got U LLC v. Garry Leonard, Diana Leonard, Leonard Consulting, LLC, and FSELL Marketing, LLC",
+      "docket_short_title": "We Got U LLC v. Leonard et al",
+      "court": "N.D. Ga.",
+      "case_no": "1:26-cv-03474-VMC",
+      "judge": "Hon. Victoria M. Calvert",
+      "filed": "2026-06-22",
+      "terminated": null,
+      "side": "plaintiff_and_counter_defendant",
+      "client": "We Got U LLC",
+      "nature": "DTSA 18 U.S.C. §1836; Georgia Trade Secrets Act O.C.G.A. §10-1-760; breach of MOU; fiduciary duty; conspiracy; unjust enrichment; punitive damages; fees. Prayer at least $1 million plus injunction.",
+      "williams_role": "signature block on Dkts. 5, 21, 22, 24; Ga. Bar 161149; not named as lead on Dkt. 22 ¶3",
+      "chapman_role": "signer; named lead with Spoont and Edenfield on Dkt. 22 ¶3; Ga. Bar 244954",
+      "outcome": "open",
+      "speed_days": null,
+      "local_counsel": null,
+      "later_cocounsel": "Joshua L. Spoont and Nathaniel M. Edenfield, Sodhi Spoont Edenfield PLLC (PHV)",
+      "defense_counsel": [
+        "W. Drake Blackmon, Poole Huffman, LLC (Ga. Bar 375337)",
+        "Mark J. Edwards, Poole Huffman, LLC (Ga. Bar 698903)"
+      ],
+      "clocks": {
+        "protective_order_submission": "2026-09-28",
+        "discovery": "2026-12-14"
+      },
+      "sources": [
+        "internal/docs/counsel/kcoz/sources/1-26-cv-03474-VMC-We-Got-U-v-Leonard/"
+      ],
+      "usable_as": "Company-plaintiff trade-secret posture; Chapman signs; Williams listed; Georgia bar numbers; office move to Spring Street by Aug. 18 2026.",
+      "not_a_holding": "Not related to Matter 27. Not a holding about Randstad, FCRA, or PC §290.46."
+    }
+  ],
+  "unpulled_williams_ndga": [
+    {
+      "caption": "Fowler v. Lazer Spot, Inc.",
+      "case_no": "1:24-cv-01609-LMM",
+      "filed": "2024-04-16",
+      "terminated": "2026-01-07"
+    },
+    {
+      "caption": "Sullivan v. Maloof",
+      "case_no": "1:25-cv-02006-JPB",
+      "filed": "2025-04-11",
+      "terminated": null
+    },
+    {
+      "caption": "SidePrize LLC v. Huffman",
+      "case_no": "1:25-cv-03301-SDG",
+      "filed": "2025-06-12",
+      "terminated": "2025-06-25",
+      "why": "13-day case"
+    },
+    {
+      "caption": "Newson-Pace et al. v. HITT Contracting Inc. et al.",
+      "case_no": "3:25-cv-00197-LMM",
+      "filed": "2025-09-08",
+      "terminated": "2026-02-11"
     }
   ],
   "unpulled_firm_claimed_leads": [
