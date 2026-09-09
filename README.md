@@ -8,6 +8,10 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 
 <br clear="left" />
 
+## Standing Stipulation Policy
+
+All current and future matters follow the [Stipulation Defense — Plaintiff-First Standing Policy](internal/docs/STIPULATION_DEFENSE.md). Draft and review every stipulation for Plaintiff's maximum supported advantage: maintain or shorten defense deadlines where favorable, protect Plaintiff's preparation time, preserve hearing dates and rights, and identify every concession and its concrete benefit. Required review includes a deadline comparison and concession audit. This policy is also linked from Codex, Claude, and Cursor repository instructions.
+
 ## Contents
 
 - [Overview](#overview)
@@ -73,7 +77,7 @@ Arising from a November 1, 2024 CHP encounter on I-580. Officers arrested Plaint
 - **Matter 8** (Sacramento Sup. Ct.): State Writ of Administrative Mandate challenging the same void APS decision — **ABANDONED** after the July 17, 2026 fee-waiver hearing (non-appearance) and the ~July 27, 2026 fee-payment deadline lapsed. PDFs live under Matter 33 (`matter-33/from-08/`).
 - **Matter 20** (Alameda Sup. Ct.): State Writ of Mandate against CHP. After the August 28, 2026 hearing, Judge Whitman entered an August 29 order (notice of entry August 31): Count 1 overruled and proceeds; Counts 2–3 out without leave; Count 4 optional leave to amend by September 20, 2026. Dutra and Paul were dismissed by stipulation; live respondents are CHP and Serrato. CMC is October 28, 2026, 4:00 p.m., Dept. 25.
 - **Matter 24** (USDC N.D. Cal.): §1983 against CHP Captain G. Serrato for arbitrary U Visa certification denial and retaliation; IFP granted June 29, 2026 (Krishnan screening order, now cited across the cluster); MTD hearing reset to September 30, 2026 (Dkt. 21); CMC September 15, 2026. Listed as related case on the Matter 32/33 JS-44s.
-- **Matter 32** (USDC N.D. Cal.): *Nforbi v. Meza-Gonzalez & Melano*, **3:26-cv-08271-PHK** (related/reassigned as **4:26-cv-08271-ASK**); docketed August 10, 2026. Operative pleading is the August 17 FAC (Dkt. 5). Melano has been served; Meza remains unserved. A Civil L.R. 7-11 motion asking DAG Li to accept service was filed September 3 (Dkt. 13). Also owns the Meza-Gonzalez / CHP-cluster docket PDFs from Matters 1, 2, 20, and 24 under `matter-32/from-01|02|20|24/` and the new N.D. Cal. filing set under `matter-32/ndcal/`.
+- **Matter 32** (USDC N.D. Cal.): *Nforbi v. Meza-Gonzalez & Melano*, **3:26-cv-08271-PHK** (related/reassigned as **4:26-cv-08271-ASK**); docketed August 10, 2026. Operative pleading is the August 17 FAC (Dkt. 5). Melano has been served. Signed Meza substituted-service return is in hand (Fischer / Run With It, Aug. 27 on Kim S. - H.R. at CHP Modesto) and still needs to be filed. A Civil L.R. 7-11 motion asking DAG Li to accept service was filed September 3 (Dkt. 13). Also owns the Meza-Gonzalez / CHP-cluster docket PDFs from Matters 1, 2, 20, and 24 under `matter-32/from-01|02|20|24/` and the new N.D. Cal. filing set under `matter-32/ndcal/`.
 - **Matter 33** (USDC N.D. Cal.): *Nforbi v. Candelaria, et al.*, **3:26-cv-08272-LJC**; docketed August 10, 2026. Operative pleading is the August 17 FAC (Dkt. 6). Defendants answered the superseded Dkt. 1 complaint on September 4 (ECF No. 11); a motion to strike that answer was prepared September 5. CMC is November 12, 2026. Also owns the Nov. 1 / APS incident evidence (`matter-33/incident/`), Matter 7 PDFs (`from-07/`), Matter 8 PDFs (`from-08/`), the June 15, 2026 Candelaria F&R (`opinions/`), and the N.D. Cal. filing set under `matter-33/ndcal/`.
 
 ### Cluster 2 — Parole Retaliation, HOPE Abuse & Policy 19-03 (Matters 3–6, 11, 13–18, 21, 28, 30)
@@ -168,14 +172,14 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | 20 | Newanforbi v. California Highway Patrol, et al. | 26CV191136 | Alameda Sup. Ct. | State | Leave to amend Count 4 — due Sep. 20 |
 | 22 | Newanforbi v. Pilot Travel Centers LLC | STK-CV-UWT-2026-0007649 | San Joaquin Sup. Ct. | State | Settled Jul. 14, 2026 ($35,000) |
 | 24 | Newanforbi v. Serrato | 4:26-cv-05953-ASK | USDC N.D. Cal. | Federal | Serve 26(a)(1); appear Sep. 15 CMC |
-| 25 | Newanforbi v. Federal Express Corporation | 2:26-cv-02881-DAD-SCR | USDC E.D. Cal. (Sacramento Div.) | Federal | Answered Dkt. 4 — MJ consent mailed Sep. 1 |
+| 25 | Newanforbi v. Federal Express Corporation | 2:26-cv-02881-DAD-SCR | USDC E.D. Cal. (Sacramento Div.) | Federal | Status reports Sep. 24; Zoom Oct. 8 |
 | 26 | Newanforbi v. United Parcel Service, Inc. | 2:26-cv-02847-DAD-CKD | USDC E.D. Cal. (Sacramento Div.) | Federal | Opp. to Dkt. 11 executed — hearing Oct. 7 (CKD) |
-| 27 | Newanforbi v. Randstad, et al. | 26CV199902 | Alameda Sup. Ct. | State | $55k / $85k global held; RK Sep. 14 |
+| 27 | Newanforbi v. Randstad, et al. | 26CV199902 | Alameda Sup. Ct. | State | $55k / $85k global held; CIV-100s hold Sep. 15/16 |
 | 28 | Newanforbi v. Shannon Smith, LCSW, CEO, et al. | 3:26-cv-07504-LJC | USDC N.D. Cal. | Federal | M&C locked Sep. 10 2:00 p.m. PT — answer Sep. 21 |
 | 29 | Newanforbi v. Amazon.com Services, LLC | 4:26-cv-09249-ASK | USDC N.D. Cal. (Oakland; formerly 3:26-cv-09249-ASK) | Federal | Plaintiff consent filed — both answers Sep. 22 |
 | 30 | Newanforbi v. Moua, et al. | TBD | USDC N.D. Cal. | Federal | Pre-filing — GCA claim pending; Moua-only complaint ready |
 | 31 | Newanforbi v. First Advantage LLC | TBD | San Joaquin Sup. Ct. (anticipated) | State | Pre-filing |
-| 32 | Nforbi v. Meza-Gonzalez, et al | 3:26-cv-08271-PHK | USDC N.D. Cal. (related to Serrato 4:26-cv-05953-ASK per Aug. 24, 2026 order; also related Candelaria 3:26-cv-08272-LJC) | Federal | Li service call this week — Meza unserved |
+| 32 | Nforbi v. Meza-Gonzalez, et al | 3:26-cv-08271-PHK | USDC N.D. Cal. (related to Serrato 4:26-cv-05953-ASK per Aug. 24, 2026 order; also related Candelaria 3:26-cv-08272-LJC) | Federal | File Meza POS; Li call this week |
 | 33 | Nforbi v. Candelaria et al. | 3:26-cv-08272-LJC | USDC N.D. Cal. (San Francisco Div.) | Federal | Stays with LJC; motion to strike drafted |
 | 34 | Newanforbi v. Counseling and Psychotherapy Center, Inc., et al. | TBD | USDC N.D. Cal. (San Jose Div.) / Santa Clara Sup. Ct. | Federal | Pre-filing — intake & compliance monitoring |
 | 35 | Ngwa Nforbi v. Ross Stores, Inc., et al. | 26CV501995 | Santa Clara Sup. Ct. (Downtown / First Street) | State | Filed — serve both Ross entities via CT Corp (~Oct 25) |
@@ -231,6 +235,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | Sep. 8, 2026 | 39 | FILE-READY (optional vs Serrato) — Executed verified complaint against Best Buy Co., Inc. (Matter 39), dated September 8, 2026, with CM-010, SUM-100, and FW-001 (5b / $0, UPS/FedEx grant pattern). |
 | Sep. 8, 2026 | 36 | FILE-READY (optional vs Serrato) — Executed verified complaint against AT&T Mobility Services LLC (Matter 36), dated September 8, 2026, with CM-010, SUM-100, and FW-001 (5b / $0, UPS/FedEx grant pattern). |
 | Sep. 8, 2026 | 26 | UPS reply deadline — Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). E.D. Cal. L.R. 230(d): reply no later than 10 days after the opposition was filed. |
+| Sep. 8, 2026 | 32 | FILE — Rule 4(l) return for Santiago Meza-Gonzalez (Daniel Fischer Declaration of Service + Diligence, Run With It order 15645547). Mail or e-file as Summons Returned Executed. Do not wait on Dkt. 13. |
 | Sep. 8, 2026 | 27 | Response deadline (self-imposed) — Aug. 19 $55,000 Randstad-only / $85,000 global settlement demand, restated Aug. 28. Williams to accept, counter, or request a call by 5:00 p.m. PT |
 | Sep. 8, 2026 | 24 | Deadline — Serve Rule 26(a)(1) initial disclosures in Newanforbi v. Serrato (4:26-cv-05953-ASK). JCMS is on file as Dkt. 24. Dkt. 22 is not an order; Krishnan is not signing it. |
 | Sep. 9, 2026 | 27 | Meet-and-confer deadline (computed) as to The RK Logistics Group, Inc. — Newanforbi v. Randstad US, LLC et al. (26CV199902) |
@@ -239,8 +244,10 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | Sep. 11, 2026 | 12 | Azimov response due (courtesy) — whether Diamond Truck Sales, Inc. and Alpine Truck Sales, Inc. will (A) execute a Notice of Acknowledgment of Receipt or equivalent stipulation accepting the Amended Summons and FAC, or… |
 | Sep. 14, 2026 | 29 | Deadline to file Consent or Declination to Magistrate Judge Jurisdiction — Plaintiff or the removing party, Newanforbi v. |
 | Sep. 14, 2026 | 27 | Extended responsive-pleading deadline — The RK Logistics Group, Inc. only, Newanforbi v. Randstad US, LLC et al. (26CV199902) |
+| Sep. 15, 2026 | 27 | FILE IF SILENT — e-file CIV-100 Request for Entry of Default as to The RK Logistics Group, Inc. (clerk default only, item 1c). First fileable the day after RK's Sept. 14 response date. |
 | Sep. 15, 2026 | 27 | Extended responsive-pleading deadline — Randstad US, LLC only, Newanforbi v. Randstad US, LLC et al. (26CV199902); 15 days past the Aug. 31, 2026 computed deadline, agreed on the Aug. 18, 2026 call with Chadwick L. |
 | Sep. 15, 2026 | 24 | Initial Case Management Conference — 1:30 PM via Zoom (cand.uscourts.gov/ask); Hon. Ajay S. Krishnan — Newanforbi v. Serrato (4:26-cv-05953-ASK) |
+| Sep. 16, 2026 | 27 | FILE IF SILENT — e-file CIV-100 Request for Entry of Default as to Randstad US, LLC (clerk default only, item 1c). First fileable the day after Randstad's Sept. 15 response date. |
 | Sep. 16, 2026 | 26 | Rule 15(a)(1)(B) amendment-as-of-right window — Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). UPS served the MTD by mail Aug. 26, 2026 (ECF 7-3). 21 days after service is Sep. 16 |
 | Sep. 16, 2026 | 30 | Anticipated filing date (computed) — Complaint v9 (Moua and DOES 1-10), Newanforbi v. Moua, et al. (Matter 30); 15 days after the anticipated Sep. 1, 2026 deemed rejection |
 | Sep. 20, 2026 | 20 | AMENDMENT DUE (optional) — if Petitioner elects to amend Count 4, file and serve an amended Petition within 20 days of notice of entry of the August 29, 2026 Whitman order. |
@@ -249,11 +256,13 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | Sep. 21, 2026 | 28 | Responsive pleading deadline (computed) — Shannon Smith, LCSW, and HOPE Psychotherapy, Inc., Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504-LJC) |
 | Sep. 22, 2026 | 29 | Accurate Background LLC responsive pleading deadline (extended) — Newanforbi v. Amazon.com Services, LLC et al. (Matter 29, N.D. Cal. No. 4:26-cv-09249-ASK). |
 | Sep. 22, 2026 | 29 | Amazon.com Services, LLC responsive pleading deadline (extended) — Newanforbi v. Amazon.com Services, LLC et al. (Matter 29, N.D. Cal. No. 4:26-cv-09249-ASK). |
+| Sep. 24, 2026 | 25 | DEADLINE — Status reports due in Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR), not later than 14 days before the Oct. 8 Zoom conference (Dkt. 8). |
 | Sep. 26, 2026 | 38 | OUTER BOUND — CCP § 338(a) three-year statutory-liability clock on the Swift § 290.46(j) / ICRAA counts if accrual is the Sept. 26, 2023 pre-adverse email. Post-adverse is Oct. 5, 2023 (Oct. 5, 2026). |
 | Sep. 30, 2026 | 29 | 28 U.S.C. §1447(c) remand window closes (computed) — Newanforbi v. Amazon.com Services, LLC et al., USDC N.D. Cal. No. 3:26-cv-09249-ASK. |
 | Sep. 30, 2026 | 24 | Hearing on Defendant Serrato's Motion to Dismiss FAC (Dkt. 18) — 1:30 p.m., Mag. Ajay S. Krishnan, Oakland Courtroom 4, 3rd Floor — Newanforbi v. Serrato (4:26-cv-05953-ASK). |
 | Oct. 1, 2026 | 19 | Habeas ruling calendar (computed) — Newanforbi v. Macomber (C2604791). |
 | Oct. 7, 2026 | 26 | HEARING — Defendant UPS's Rule 12(b)(6) Motion to Dismiss (ECF No. 9), Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD), 10:00 a.m., Courtroom 24 (CKD) before Magistrate Judge Carolyn K. Delaney. |
+| Oct. 8, 2026 | 25 | HEARING — Status (Pretrial Scheduling) Conference in Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR), Thursday, October 8, 2026, 11:00 a.m. Zoom. Set by Dkt. 8 (filed Sep. 8; dated Sep. 4). |
 | Oct. 13, 2026 | 20 | Case Management Statement due (computed) — Newanforbi v. CHP et al. (26CV191136), 15 calendar days before the Oct. 28, 2026 CMC per CRC 3.725. |
 | Oct. 15, 2026 | 28 | Case Management Statement due — Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504), USDC N.D. Cal. |
 | Oct. 16, 2026 | 20 | Hearing on CHP demurrer and the individual respondents' joinders/demurrers to the Petition for Writ of Mandate, Newanforbi v. California Highway Patrol, et al. (Matter 20) — Dept. 25 |
