@@ -8,10 +8,6 @@ An interactive, single-page litigation dashboard for **Brendan Ngehsi Newanforbi
 
 <br clear="left" />
 
-## Standing Stipulation Policy
-
-All current and future matters follow the [Stipulation Defense — Plaintiff-First Standing Policy](internal/docs/STIPULATION_DEFENSE.md). Draft and review every stipulation for Plaintiff's maximum supported advantage: maintain or shorten defense deadlines where favorable, protect Plaintiff's preparation time, preserve hearing dates and rights, and identify every concession and its concrete benefit. Required review includes a deadline comparison and concession audit. This policy is also linked from Codex, Claude, and Cursor repository instructions.
-
 ## Contents
 
 - [Overview](#overview)
