@@ -55,6 +55,7 @@
   "damages": "[FLAGGED: this CDL lost-wage figure is also independently claimed, unreserved, in Matters 1, 2, and 7 for the same one-year suspension — see the note on Matter 1's damages field] Economic: Approximately $112,000 in documented lost wages during one-year CDL suspension (Feb. 20, 2025 – Feb. 19, 2026), with continuing losses at ~$6,000/month. Wage documentation: 26 consecutive weekly Centerline Drivers LLC pay stubs (May 5, 2024 – Jan. 3, 2025) averaging $900–$2,800/week. Non-economic: Severe emotional distress and anxiety from denial of federal immigration relief avenue; complete loss of employment prospects in CDL industry; ongoing professional and reputational harm; out-of-pocket compliance and collateral costs. Total quantifiable damages exceed $112,000 with continuing accrual.",
   "risk": "The entered order is in hand: Count 1 survives for trial on whether the Nov. 1, 2024 stop was qualifying criminal activity because probable cause for DUI was lacking. Counts 2–3 are dead on this petition. Count 4 is optional leave only. Serrato remains; Dutra and Paul are dismissed. Strong documentary support on Count 1: CHP's own dashcam and section 851.6 detention certificate. Subject-matter jurisdiction remains a vulnerability if the court treats this as a federal U-visa matter rather than a state-law duty under Penal Code section 679.10.",
   "evidence": [
+    "FW-003 GRANTED Jun. 3, 2026 (Alameda 26CV191136) — box 4a(1); filing papers in superior court, copies, and sheriff's fee to give notice waived (CRC 3.55 / 8.818). Do not pay One Legal a court filing fee on this case. One Legal's own e-filing service charge, if any, is separate. Handy copy: One Legal download (5 pp., includes certificate of mailing).",
     "Gmail — Notice of Lodging (CHP dashcam) to Vanessa Ing (SENT Sep. 8, 2026, 10:06 p.m. Pacific) — electronic service of the Notice, Declaration, and POS-050; Drive view link in the body. Portal POS reject is a separate filing defect.",
     "CHP Dashcam Video Transcript (November 1, 2024, 00:54:36–01:57:10) — objective contemporaneous record directly contradicting sworn statements in arrest report",
     "CHP Arrest-Investigation Report (CHP Form 202, Case No. RJ68845) — contains four material false sworn statements contradicted by dashcam: 'strong distinct odor of an alcoholic beverage,' 'slurred' speech, 'very confused and disoriented' demeanor, 'beverage present: yes'",
@@ -70,6 +71,14 @@
     "California Attorney General Information Bulletin No. DLE-2024-05 (April 3, 2024) — mandatory guidance on AB 1261 directing all law enforcement to certify when statutory elements are met"
   ],
   "documents": [
+    {
+      "path": "/documents/matter-20/FW-003 Order on Court Fee Waiver - GRANTED (One Legal download, Jun 3 2026).pdf",
+      "filed": true
+    },
+    {
+      "path": "/documents/matter-20/EMAIL_DRAFT_One_Legal_Court_Fees_Already_Waived.txt",
+      "filed": false
+    },
     {
       "path": "/documents/matter-32/from-20/Oral Argument Script - CHP Demurrer Hearing (Aug 28 2026).pdf",
       "filed": false

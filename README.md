@@ -179,7 +179,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | 29 | Newanforbi v. Amazon.com Services, LLC | 4:26-cv-09249-ASK | USDC N.D. Cal. (Oakland; formerly 3:26-cv-09249-ASK) | Federal | Plaintiff consent filed — both answers Sep. 22 |
 | 30 | Newanforbi v. Moua, et al. | TBD | USDC N.D. Cal. | Federal | Pre-filing — GCA claim pending; Moua-only complaint ready |
 | 31 | Newanforbi v. First Advantage LLC | TBD | San Joaquin Sup. Ct. (anticipated) | State | Pre-filing |
-| 32 | Nforbi v. Meza-Gonzalez, et al | 3:26-cv-08271-PHK | USDC N.D. Cal. (related to Serrato 4:26-cv-05953-ASK per Aug. 24, 2026 order; also related Candelaria 3:26-cv-08272-LJC) | Federal | File Meza POS; Li call this week |
+| 32 | Nforbi v. Meza-Gonzalez, et al | 3:26-cv-08271-PHK | USDC N.D. Cal. (related to Serrato 4:26-cv-05953-ASK per Aug. 24, 2026 order; also related Candelaria 3:26-cv-08272-LJC) | Federal | File Meza POS; send Li availability |
 | 33 | Nforbi v. Candelaria et al. | 3:26-cv-08272-LJC | USDC N.D. Cal. (San Francisco Div.) | Federal | Stays with LJC; motion to strike drafted |
 | 34 | Newanforbi v. Counseling and Psychotherapy Center, Inc., et al. | TBD | USDC N.D. Cal. (San Jose Div.) / Santa Clara Sup. Ct. | Federal | Pre-filing — intake & compliance monitoring |
 | 35 | Ngwa Nforbi v. Ross Stores, Inc., et al. | 26CV501995 | Santa Clara Sup. Ct. (Downtown / First Street) | State | Fix Odyssey caption (Does first) — then serve Ross ~Oct 25 |
@@ -237,12 +237,12 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | Sep. 8, 2026 | 26 | UPS reply deadline — Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). E.D. Cal. L.R. 230(d): reply no later than 10 days after the opposition was filed. |
 | Sep. 8, 2026 | 32 | FILE — Rule 4(l) return for Santiago Meza-Gonzalez (Daniel Fischer Declaration of Service + Diligence, Run With It order 15645547). Mail or e-file as Summons Returned Executed. Do not wait on Dkt. 13. |
 | Sep. 8, 2026 | 27 | Response deadline (self-imposed) — Aug. 19 $55,000 Randstad-only / $85,000 global settlement demand, restated Aug. 28. Williams to accept, counter, or request a call by 5:00 p.m. PT |
+| Sep. 8, 2026 | 24, 32 | SEND — Reply to DAG Li with telephone availability for the Meza/Melano service call in Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK): Wednesday, September 9, all day Pacific |
 | Sep. 9, 2026 | 35 | OPEN TASK — Send the One Legal email on Order #29111713 asking them to correct the Odyssey / public-portal short title in Ngwa Nforbi v. |
 | Sep. 9, 2026 | 27 | Meet-and-confer deadline (computed) as to The RK Logistics Group, Inc. — Newanforbi v. Randstad US, LLC et al. (26CV199902) |
 | Sep. 10, 2026 | 28 | LOCKED — Rule 12(b)(6) meet and confer with Blaze Van Dine (Sims, Lawrence & Broghammer), Thursday, September 10, 2026, 2:00 p.m. Pacific, Newanforbi v. Shannon Smith, LCSW, et al. (N.D. Cal. 3:26-cv-07504-LJC). |
 | Sep. 10, 2026 | 27 | Meet-and-confer deadline (computed) as to Randstad US, LLC — Newanforbi v. Randstad US, LLC et al. (26CV199902) |
 | Sep. 11, 2026 | 12 | Azimov response due (courtesy) — whether Diamond Truck Sales, Inc. and Alpine Truck Sales, Inc. will (A) execute a Notice of Acknowledgment of Receipt or equivalent stipulation accepting the Amended Summons and FAC, or… |
-| Sep. 14, 2026 | 29 | Deadline to file Consent or Declination to Magistrate Judge Jurisdiction — Plaintiff or the removing party, Newanforbi v. |
 | Sep. 14, 2026 | 27 | Extended responsive-pleading deadline — The RK Logistics Group, Inc. only, Newanforbi v. Randstad US, LLC et al. (26CV199902) |
 | Sep. 15, 2026 | 27 | FILE IF SILENT — e-file CIV-100 Request for Entry of Default as to The RK Logistics Group, Inc. (clerk default only, item 1c). First fileable the day after RK's Sept. 14 response date. |
 | Sep. 15, 2026 | 27 | Extended responsive-pleading deadline — Randstad US, LLC only, Newanforbi v. Randstad US, LLC et al. (26CV199902); 15 days past the Aug. 31, 2026 computed deadline, agreed on the Aug. 18, 2026 call with Chadwick L. |
@@ -445,7 +445,7 @@ Controls (reconfirm when batching): *Richardson v. McKnight*, 521 U.S. 399 must 
 | NOT_FOUND | 6 |
 | UNVERIFIED | 485 |
 
-Paired authorities: **987**. P0 (plaintiff-only UNVERIFIED): **8**. P1 (plaintiff-only bad status): **30**. Ledger date: 2026-09-06.
+Paired authorities: **987**. P0 (plaintiff-only UNVERIFIED): **8**. P1 (plaintiff-only bad status): **30**. Ledger date: 2026-09-09.
 <!-- PORTFOLIO:CITATION_SCOREBOARD:END -->
 
 Priority queues from the ledger: **P0** = plaintiff-only + still `UNVERIFIED` (`npm run citations:queue`); **P1** = plaintiff-only + bad status (fix before the next brief). Pre-existing fabricated hits are debt-tracked in `citation_known_bad_debt.json` so CI stays green while corrected drafts replace them.
