@@ -702,6 +702,11 @@
       "ownerMatter": 12
     },
     {
+      "path": "/documents/matter-12/EMAIL_DRAFT_Stanislaus_Sheriff_Diamond_Osmani_41230_Sep9_2026.txt",
+      "label": "EMAIL DRAFT — Stanislaus additional service on Saliman Osmani only (levy 2026003531; POS item 6d; not yet sent)",
+      "ownerMatter": 12
+    },
+    {
       "path": "/documents/matter-12/EMAIL_DRAFT_Stanislaus_Sheriff_Diamond_Reservice_Aug31_2026.txt",
       "label": "EMAIL_DRAFT_Stanislaus_Sheriff_Diamond_Reservice_Aug31_2026.txt",
       "ownerMatter": 12
@@ -784,6 +789,11 @@
     {
       "path": "/documents/matter-12/reservice-packets-aug31/4_Stanislaus_Credit_Card_Authorization_Diamond.pdf",
       "label": "4_Stanislaus_Credit_Card_Authorization_Diamond",
+      "ownerMatter": 12
+    },
+    {
+      "path": "/documents/matter-12/reservice-packets-sep9/1_SER-001_Diamond_Saliman_Osmani_Stanislaus.pdf",
+      "label": "SER-001 — Diamond Truck Sales, Inc. additional service on Saliman Osmani only (3b(2) blank; flattened Sept. 9, 2026)",
       "ownerMatter": 12
     },
     {

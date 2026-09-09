@@ -288,7 +288,7 @@
     "case_no": "STK-CV-UF-2026-0001094",
     "court": "San Joaquin Sup. Ct.",
     "claims": "Fraudulent Concealment, Intentional Misrepresentation, Negligent Misrepresentation, Breach of Contract, UCL §17200, Rescission & Restitution, Declaratory Relief",
-    "status_label": "Diamond POS §412.30 trap — Alpine Kern pending",
+    "status_label": "Draft Stanislaus Osmani re-serve — Alpine Kern pending",
     "lifecycle": "active",
     "proceeding": "state_civil",
     "phase": "service",
@@ -314,7 +314,7 @@
         "title": "Defendant (agent for service: Saliman Osmani)",
         "location": "Stanislaus County — 1201 S. Soderquist Road, Turlock, CA 95380",
         "served": false,
-        "note": "SOS Entity 3438768, active, formed Feb. 2, 2012. Prior POS disputed at the Aug. 12, 2026 CMC. Stanislaus levy 2026003531: personal service Sept. 8, 2026, 9:35 a.m. on Musdaqem Usmani/Manager at the Turlock lot — right address, wrong person vs SOS agent Saliman Osmani, and POS-010 item 6 marked “as an individual defendant” (CCP § 412.30). Do not mark served. Do not start the 30-day clock. File the proof as diligence. Still need NAR/stip or a POS with item 6d on behalf of Diamond under § 416.10, preferably on Saliman Osmani."
+        "note": "SOS Entity 3438768, active, formed Feb. 2, 2012. Levy 2026003531 served Usmani/Manager with item 6 as individual — do not mark served. Cure is additional Stanislaus personal service on Saliman Osmani only: SER-001 3b(2) blank, 3b(3) the agent, summons Notice and POS-010 item 6d on behalf of Diamond under § 416.10. Draft to civilfax@stansheriff.com not yet sent. Do not amend who Heaney served. File 3531 as diligence."
       },
       {
         "name": "Alpine Truck Sales, Inc.",
@@ -325,7 +325,7 @@
       }
     ],
     "evidenceCount": 16,
-    "documentCount": 84
+    "documentCount": 86
   },
   {
     "number": 13,

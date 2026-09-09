@@ -1,0 +1,55 @@
+To: civilfax@stansheriff.com
+Subject: Re: Sheriff service — STK-CV-UF-2026-0001094 — levy 2026003531 — additional service on Saliman Osmani only
+
+Hello Lu,
+
+Thank you for levy 2026003531 (POS certified September 9, 2026). Please keep that return as written. I am not asking you to change who Deputy Heaney served on September 8.
+
+I need additional personal service on the same defendant, same address, on the designated agent only:
+
+DIAMOND TRUCK SALES, INC., a California corporation
+Agent for service of process: Saliman Osmani
+1201 S. Soderquist Road, Turlock, CA 95380
+
+Serve Saliman Osmani. Do not serve a manager, officer, or anyone else in lieu of the named agent.
+
+SER-001: item 3b(2) is blank. Item 3b(3) is Saliman Osmani. Flattened so the values print.
+
+On the copy of the Amended Summons handed to the person served, complete the “Notice to the Person Served” as:
+on behalf of DIAMOND TRUCK SALES, INC., a California corporation
+under Code of Civil Procedure section 416.10 (corporation).
+
+POS-010:
+3a — DIAMOND TRUCK SALES, INC., a California corporation (exact caption; do not shorten)
+3b — Saliman Osmani, agent for service of process
+6 — 6d, on behalf of DIAMOND TRUCK SALES, INC., a California corporation, CCP § 416.10 (corporation)
+Do not check 6a (as an individual defendant).
+
+Do not serve Alpine Truck Sales, Inc. (Kern County — separate request).
+
+If the Amended Summons and First Amended Complaint from levy 2026003531 are still in the file, please reuse them. If you need a new print set, use attachments 3 and 4.
+
+Attachments:
+1. SER-001 (new; flattened; agent only)
+2. FW-003 (already on file; apply to the sheriff service fee)
+3. Papers to serve — Amended Summons (issued June 11, 2026) and First Amended Complaint (35 pages) — only if you no longer have the 3531 set
+4. Credit card authorization, unlocked, no password — printing only if you reprint ($43.75 = 35 pp. × $1.25, plus your card fee). Print attachment 3 only.
+
+Please reply with the new file number and the completed POS.
+
+Brendan Ngwa Nforbi, plaintiff in pro per
+Ngwa Nforbi v. Diamond Truck Sales, Inc., et al., San Joaquin Superior Court STK-CV-UF-2026-0001094
+1455 Cat Tail Drive, Stockton, CA 95204
+(209) 801-4442 · bnn.cdl@gmail.com
+
+---
+Note to self (do not send):
+NOT YET SENT.
+Attach 1_SER-001_Diamond_Saliman_Osmani_Stanislaus.pdf from reservice-packets-sep9.
+Reuse Aug. 31 FW-003, 3_Summons_FAC.pdf, and CC authorization if a reprint is needed.
+Do not ask Stanislaus to rewrite Usmani as Osmani on levy 2026003531 — that would be a false return.
+Do not fill SER-001 3b(2). That is how the last request produced a manager.
+Do not volunteer CCP § 412.30 to Azimov.
+File the 3531 POS as diligence; do not start Diamond’s 30-day clock on it.
+Alpine stays Kern / Sheran Osmani.
+The Aug. 31 cover email said “officer, manager, or authorized agent, or the SOS agent” — do not reuse that sentence.

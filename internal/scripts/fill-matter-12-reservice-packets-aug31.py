@@ -107,6 +107,11 @@ DIAMOND = {
     "zip": "95380",
     "gate": "Truck sales lot — ask for manager / authorized agent for Diamond Truck Sales, Inc.",
     "entity_name": "DIAMOND TRUCK SALES, INC., a California corporation",
+    # HISTORICAL. Filling 3b(2) (manager) and 3b(3) (SOS agent) together, plus
+    # the Aug. 31 cover email's "officer, manager, or authorized agent, or the
+    # SOS agent," is why levy 2026003531 served Musdaqem Usmani/Manager with
+    # POS-010 item 6 as an individual. Do not reuse this spec. Additional
+    # service: fill-matter-12-stanislaus-diamond-osmani-sep9.py (3b(2) blank).
     "entity_person": "Officer, manager, or person authorized to accept (CCP §416.10)",
     "entity_agent": "Saliman Osmani (SOS agent for service of process)",
     "other": (
