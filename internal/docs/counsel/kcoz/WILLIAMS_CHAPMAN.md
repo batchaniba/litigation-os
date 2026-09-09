@@ -1,0 +1,158 @@
+# Chadwick L. Williams / Nathan D. Chapman
+
+**Firm:** Kabat Chapman & Ozmer LLP (KCO / KCOZ)  
+**Matter 27 role:** counsel for **Randstad US, LLC** only — *Newanforbi v. Randstad US, LLC et al.*, Alameda Super. Ct. No. **26CV199902**. RK Logistics is Garcia & Gurney.  
+**Last updated:** September 9, 2026  
+**Status:** seed dossier. One PACER pull lodged. More cases to be appended.
+
+This file is internal research. It is **not** a related-case disclosure, **not** a brief, and **not** something to send to this firm.
+
+---
+
+## Do not
+
+- Email Williams or Chapman about this research, the Charter docket, or any other third-party case.
+- Cite *Charter v. Myla* (or any other card below) as related to Matter 27 on a docket, CMC statement, or Civil L.R. 3-12 / CRC 3.300 notice.
+- Treat a firm-website "representative matter" as a holding until a PACER / reporter pull is lodged under `sources/`.
+- Store PACER credentials here.
+
+---
+
+## The desk in one paragraph
+
+Williams is the **named lead and the email voice**. Chapman is the **working attorney** — the one who actually files. That split is documented on a 2025 D. Conn. docket (*Charter Communications, Inc. v. Myla*, 3:25-cv-00025-SFR) and it matches Matter 27 so far: Williams called and wrote on August 18 and August 28; Chapman was copied on the demand thread and has not been the signer on anything Plaintiff has received. Chapman is California-barred on the firm's own bio; Williams's firm bio lists **Georgia only**. If Randstad files in Alameda, the person who can appear of right is Chapman (or other California counsel), not Williams, unless Williams is admitted *pro hac vice* with a California attorney of record.
+
+---
+
+## Contacts (as used)
+
+| | Chadwick L. Williams | Nathan D. Chapman |
+|---|---|---|
+| PACER / CM/ECF name | Chadwick Lloyd Williams | Nathan Chapman / Nathan D. Chapman |
+| Also appears as | Chad Williams | — |
+| Title (firm site, retrieved Sep. 9, 2026) | Associate; "member" of labor/employment and commercial litigation | Founding partner |
+| Direct / listed phone | (404) 400-7306 | (404) 400-7300 (also the firm main line) |
+| Fax | (404) 400-7333 | (404) 400-7333 |
+| Email | `cwilliams@kcozlaw.com` | `nchapman@kcozlaw.com` |
+| Office | 1150 Spring Street NW, Suite 800, Atlanta, GA 30309 | same |
+| Matter 27 | Voice, extension, demand recipient | Cc on the Aug. 19 / Aug. 28 demand thread |
+
+Firm site: [kcozlaw.com](https://www.kcozlaw.com/). Bios used this pass: [Williams](https://www.kcozlaw.com/chadwick-l-william/), [Chapman](https://www.kcozlaw.com/nathan-d-chapman/). Offices claimed: Atlanta, Chicago, Los Angeles, Portland.
+
+---
+
+## Admissions (firm-claimed; not a CalBar pull)
+
+**Williams** (firm bio, retrieved Sep. 9, 2026): State Bar of Georgia. Court admissions listed on that page: Georgia Supreme Court and Court of Appeals. A firm press release dated August 25, 2025 also states admission to the U.S. District Court for the Northern District of Georgia (*Four Kabat Chapman & Ozmer Attorneys Recognized By Best Lawyers®…*). **No California admission is listed.** Until a CalBar record says otherwise, he cannot file in Alameda Superior Court except through *pro hac vice* with a California attorney of record (Cal. Rules of Court, rule 9.40).
+
+**Chapman** (firm bio, same date): State Bars of Georgia, **California**, Alabama, and Florida. Federal: N.D. / M.D. Georgia; N.D. / M.D. / S.D. Alabama; M.D. Florida; D. Colorado; U.S. Supreme Court. **D. Conn. is not on that list** — consistent with the *Charter* PHV motions. California state-bar claim is firm-claimed; a CalBar number lookup has not been run this pass.
+
+**Implication for Matter 27:** Williams's August 18 call and emails are not a notice of appearance. No NOA is on the Alameda docket. The person who can appear of right, on the firm's own admissions list, is Chapman.
+
+---
+
+## Education / path (firm-claimed)
+
+**Williams.** B.B.A. University of North Georgia 2015, cum laude. J.D. Georgia State University College of Law 2018, summa cum laude; Order of the Coif; law review (associate editor; student Note selected for publication); moot court (Best Team and Best Brief, 2017 Georgia Intrastate). Extern, Metro Atlanta Business Court. Staff Attorney, U.S. Court of Appeals for the Eleventh Circuit (firm: prepared memoranda and draft opinions). Law clerk to Judge Frank M. Hull, Eleventh Circuit. LinkedIn (not independently verified): Staff Attorney June 2018–June 2020; Hull clerk June 2020–August 2021; KCO associate from September 2021. Best Lawyers: Ones to Watch® in America 2026, Litigation – Labor and Employment (Georgia) — firm presser August 25, 2025.
+
+**Chapman.** B.A. History and Political Science, McGill University 2002, summa cum laude. J.D. Florida State University College of Law 2005, summa cum laude; law review and moot court; judicial extern for Hon. Robert T. Benton, II, Florida First District Court of Appeal. Entered private practice 2005. Founding partner of KCO. Best Lawyers in America® 2026: Commercial Litigation and Labor and Employment Litigation. Georgia Super Lawyers 2025, Employment & Labor (firm presser). Practice emphasis on the firm bio: employment, class/collective/wage-and-hour, restrictive covenants, complex commercial; clients described as ranging from start-ups to multinationals, including telecommunications and cable.
+
+---
+
+## Working pattern (what the file actually shows)
+
+1. **Lead vs. filer.** In *Charter v. Myla*, Williams is `LEAD ATTORNEY` / `PRO HAC VICE` on the party screen. Chapman is `ATTORNEY TO BE NOTICED` only — **not** lead. Chapman is the CM/ECF filer on the merits: emergency TRO/PI with his own declaration (Dkt. 18), opposition to the motion to dismiss or transfer (Dkt. 33), TRO reply and seal papers (Dkts. 38–40), joint expedited-discovery stipulation (Dkt. 47), motion to dismiss the counterclaim (Dkt. 58), joint dismissal with prejudice (Dkt. 60). Williams's merits footprint on that docket is the lead designation plus a notice of appearance (Dkt. 21). Local Connecticut counsel (Patricia E. Reilly) filed the complaint and the PHV motions.
+2. **They show up as employer / corporate plaintiff counsel**, not as counsel for the individual. *Charter* is the company suing a person on a contract theory. Matter 27 is the inverse caption (employee vs. staffing company) but the same side of the "v."
+3. **Speed to a paid quietus.** *Charter* went from complaint (Jan. 7, 2025) to joint dismissal with prejudice (order Apr. 21, 2025) in **104 days**, each side to bear its own fees. That is after a denied transfer/MTD, a live TRO/PI set for an evidentiary hearing, expedited discovery, an answer with counterclaim, and a motion to dismiss that counterclaim. They litigated hard and then stipulated out before the May 14–15 hearing. That is a posture, not a prediction that Randstad will pay.
+4. **Local counsel is disposable once PHV is in.** Dkt. 41/42: Reilly moved to be excused from further proceedings under D. Conn. L.R. 83.1(d)(2); granted Feb. 24, 2025. Out-of-state KCO then ran the case. Arnold & Porter (Daniel Reisner) was added later; first PHV denied for D. Conn. L.R. 83.1(e)(1)(b), then granted.
+5. **Matter 27 so far is pricing, not testing.** Williams's first move was a 15-day extension (party agreement only; no stipulation on file) and a request for an opening demand — Randstad-only plus optional global. No answer, no demurrer, no CCP § 430.41 letter, no NOA as of the last Matter 27 update in this repo.
+
+---
+
+## Matter 27 — live file (this desk)
+
+Portfolio matter **27**. Alameda Super. Ct. **26CV199902**, Hon. Karin Schwartz, Dept. 20. CMC December 17, 2026.
+
+| Date | What happened |
+|---|---|
+| Aug. 18, 2026 | Williams telephones Plaintiff; email 2:11 p.m. (`cwilliams@kcozlaw.com`, subject *Newanforbi v. RK/Randstad: Introduction*) confirms a 15-day extension of **Randstad's** responsive date through and including **September 15, 2026**, copies "Nathan," and asks for an opening Randstad demand plus an optional global. Party agreement only. RK Logistics is not covered. |
+| Aug. 19, 2026 | Plaintiff emails $55,000 Randstad-only / $85,000 global (cc Chapman). Williams acknowledges 7:49 a.m. |
+| Aug. 28, 2026 | Williams (cc Chapman) asks for more time; will attempt to respond by September 4. Delay request, not a counteroffer. Plaintiff restates the same numbers; response asked 5:00 p.m. PT September 8. Evid. Code § 1152 / FRE 408. |
+| Clocks | RK Logistics: September 14 (Garcia; no further). Randstad: September 15. CIV-100s **hold** — file-if-silent September 15 (RK) / September 16 (Randstad) only if eCourt that morning is empty. Same-day CCP § 587 mail to Williams at the Atlanta address above **and** to Randstad c/o CSC. |
+
+Do not treat silence on the demand as a deal. Do not email this dossier, the Charter prints, or a "we saw you in Connecticut" line.
+
+---
+
+## Case cards
+
+Append below. Newest PACER pull first after the live matter. Schema twin: `cases.json`.
+
+### 0 — Live — *Newanforbi v. Randstad US, LLC et al.* (Matter 27)
+
+| | |
+|---|---|
+| Court / no. | Alameda Super. Ct. 26CV199902 |
+| Judge | Hon. Karin Schwartz, Dept. 20 |
+| Filed | July 20, 2026 (complaint); summons accepted July 21 |
+| Side | Defense — **Randstad US, LLC** (staffing / employer of record). Not RK Logistics. |
+| Nature | PC § 290.46(j)(2)(E), Tameny, ICRAA, privacy, negligence per se, UCL |
+| Williams | Client-facing; extension; demand recipient |
+| Chapman | Cc on demand thread; no signed paper in Plaintiff's hands yet |
+| Outcome | Open. Demand pending as of the September 8, 2026 ask. |
+| Sources | Matter 27 JSON, timeline, Gmail prints already in `internal/public/documents/matter-27/` |
+
+Not a PACER research card. This is the case the dossier is for.
+
+### 1 — PACER — *Charter Communications, Inc. v. Prashanth Myla*
+
+| | |
+|---|---|
+| Court / no. | D. Conn. (New Haven) **3:25-cv-00025-SFR** |
+| Judge | Hon. Sarah F. Russell |
+| Filed / terminated | January 7, 2025 / **April 21, 2025** |
+| Nature | 28 U.S.C. § 1332 diversity — breach of contract. NOS 190. Jury demanded by defendant. |
+| Side | **Plaintiff / counter-defendant** (employer / company vs. individual) |
+| Williams | LEAD, PHV, ATBN. PHV motion Dkt. 13 (Jan. 13) granted Dkt. 15 (Jan. 14). NOA Dkt. 21 (Jan. 28). Attorney-list "Assigned" **February 10, 2025**. |
+| Chapman | ATBN, **not** lead. PHV motion Dkt. 12 (Jan. 13; $400 PHV fee on that motion) granted Dkt. 14 (Jan. 14). NOA Dkt. 22 (Jan. 28). Attorney-list "Assigned" **January 24, 2025** (the TRO filing date). CM/ECF filer on Dkts. **18, 33, 38, 39, 40, 47, 58, 60**. Dkt. 18 includes **Declaration of Nathan D. Chapman**. |
+| Local counsel | Patricia E. Reilly, Harris Beach Murtha Cullina PLLC, New Haven. Lead from day one. Complaint, summons, PHV motions, Reisner PHV. Excused Dkt. 42. |
+| Later co-counsel | Daniel Reisner, Arnold & Porter Kaye Scholer LLP (NY). PHV denied Dkt. 53 (D. Conn. L.R. 83.1(e)(1)(b)); granted Dkt. 56. NOA Dkt. 59. |
+| Defense | Glenn A. Duhl / Elizabeth Ditman, Zangari Cohn (New Haven); Jacqueline R. Guesno, HKM Employment Attorneys LLP (Denver), PHV. |
+| Outcome | Dkt. 60 joint stipulation of dismissal **with prejudice** (Chapman). Dkt. 61 order April 21, 2025: dismissed with prejudice; **each party bears its own attorneys' fees and costs**; TRO/PI (18) and MTD counterclaim (58) denied as moot. Case closed. |
+| Speed | 104 days, complaint to closing order. |
+| What they did in the middle | Service Jan. 10; emergency TRO/PI Jan. 24; defendant MTD-or-transfer Jan. 29; court **denied** the MTD/transfer after a 1h 49m Zoom argument Feb. 24; TRO briefing completed; seal granted on alleged trade secrets (Conn. Gen. Stat. § 35-55); joint expedited discovery (interrogatories by Mar. 7 / responses Mar. 27; depositions by May 7); evidentiary hearing set **May 14–15, 2025** in Bridgeport; defendant answered **and counterclaimed** Mar. 10; Chapman moved to dismiss the counterclaim Mar. 31; stipulated out Apr. 17, **before** the hearing and before the counterclaim MTD was due to be opposed. |
+| PACER prints | Lodged `sources/3-25-cv-00025-SFR-Charter-v-Myla/` — History/Documents, full docket, attorney list. Safari / iOS prints; PACER receipts dated **September 9, 2026 02:25–02:30 UTC** (evening September 8, 2026 PT). Costs on the three receipts: $0.20 + $0.80 + $0.20. |
+| Usable as | Identity (phones, emails, lead vs. filer), speed, employer-side posture, willingness to stipulate out with each side bearing fees once a hearing is on the calendar. |
+| Not usable as | A holding about Randstad, FCRA, or PC § 290.46. Not a related case. Not an admission in Matter 27. |
+
+Party-screen names on the docket caption as *Charter Communications, Inc. v. Myla*; the individual is **Prashanth Myla** (docket also spells Prasanth on the answer).
+
+---
+
+## Firm-claimed Chapman matters — not yet pulled
+
+From the Chapman bio "Representative Matters" as retrieved September 9, 2026. These are **leads for the next PACER session**, not case cards. Do not cite them as holdings until a print is in `sources/`. Several predate KCO (Chapman entered practice in 2005; confirm the appearing firm on each docket).
+
+| Lead | Court / cite as stated on the bio | Why it might matter |
+|---|---|---|
+| *Warinner v. North Am. Sec. Solutions, Inc.* | 2008 WL 2355727 (W.D. Ky. June 5, 2008) | SJ for employer on **invasion of privacy, wrongful discharge, and FCRA** after a workplace investigation — closest theory overlap with Matter 27. |
+| *Hadaway v. Noble Systems Corp.* | 2009 WL 4067261 (W.D. Okla. Nov. 23, 2009) | Age-discrimination SJ. |
+| *Billingslea v. Ford Motor Co.* | 2010 WL 4861500 (W.D.N.Y. Nov. 30, 2010) | Race/gender SJ. |
+| *Swann v. Time Warner Entertainment Co., L.P.* | 2014 WL 2573079 (S.D. Ohio June 9, 2014) | Disparate treatment/impact; cable/telecom employer. |
+| *Beecher v. TWC Administration LLC* | No. 1:15-cv-00154-WMS-JJM (W.D.N.Y. Oct. 18, 2016) | Wage/hour class-and-collective SJ for national cable. |
+| Unnumbered bio bullets | California wage/hour for a national cable company; FLSA collective (Colorado, Florida); DOL enforcement (Texas) | California employment defense is claimed; pull if a docket number surfaces. |
+
+Williams's bio has no representative-matter list on the page retrieved this pass.
+
+Party-search ideas for the next PACER dump (user pulls; agent lodges): Chapman / Williams as attorney; Kabat Chapman & Ozmer as firm; Charter / TWC / Time Warner as party.
+
+---
+
+## What this is not
+
+- A prediction that Randstad will settle, or at what number.
+- Authority that Williams's emails constitute an appearance under CCP § 1014.
+- A CalBar or Georgia bar extract. Run those before putting an admission in a filed paper.
+- A reason to delay the CIV-100 file-if-silent dates.
+
+When the next PACER zip lands, start at `README.md` in this folder.

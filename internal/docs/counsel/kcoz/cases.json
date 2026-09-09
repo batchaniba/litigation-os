@@ -1,0 +1,141 @@
+{
+  "firm": "Kabat Chapman & Ozmer LLP",
+  "firm_url": "https://www.kcozlaw.com/",
+  "updated": "2026-09-09",
+  "purpose": "Append-only counsel-research cards for Chadwick L. Williams and Nathan D. Chapman. Identity/role only. Not related-case disclosures.",
+  "counsel": [
+    {
+      "id": "williams",
+      "name": "Chadwick L. Williams",
+      "pacer_name": "Chadwick Lloyd Williams",
+      "also_as": ["Chad Williams"],
+      "title_firm_site": "Associate",
+      "email": "cwilliams@kcozlaw.com",
+      "phone": "(404) 400-7306",
+      "fax": "(404) 400-7333",
+      "bio_url": "https://www.kcozlaw.com/chadwick-l-william/",
+      "admissions_firm_claimed": ["Georgia"],
+      "california_bar_firm_claimed": false,
+      "notes": "Matter 27 email voice and named lead. Firm bio lists Georgia only. CalBar lookup not run this pass."
+    },
+    {
+      "id": "chapman",
+      "name": "Nathan D. Chapman",
+      "pacer_name": "Nathan Chapman",
+      "also_as": ["Nathan D. Chapman"],
+      "title_firm_site": "Founding partner",
+      "email": "nchapman@kcozlaw.com",
+      "phone": "(404) 400-7300",
+      "fax": "(404) 400-7333",
+      "bio_url": "https://www.kcozlaw.com/nathan-d-chapman/",
+      "admissions_firm_claimed": ["Georgia", "California", "Alabama", "Florida"],
+      "california_bar_firm_claimed": true,
+      "notes": "Matter 27 cc. In Charter v. Myla, CM/ECF filer on the merits. CalBar lookup not run this pass."
+    }
+  ],
+  "office": {
+    "address1": "1150 Spring Street NW",
+    "address2": "Suite 800",
+    "city": "Atlanta",
+    "state": "GA",
+    "zip": "30309"
+  },
+  "cases": [
+    {
+      "id": "newanforbi-v-randstad-alameda-2026",
+      "kind": "live_portfolio",
+      "matter": 27,
+      "caption": "Newanforbi v. Randstad US, LLC et al.",
+      "court": "Alameda Super. Ct.",
+      "case_no": "26CV199902",
+      "judge": "Hon. Karin Schwartz, Dept. 20",
+      "filed": "2026-07-20",
+      "terminated": null,
+      "side": "defense",
+      "client": "Randstad US, LLC",
+      "nature": "PC §290.46(j)(2)(E); Tameny; ICRAA; privacy; negligence per se; UCL",
+      "williams_role": "client-facing; 15-day extension; demand recipient; no NOA on file",
+      "chapman_role": "cc on demand thread; no signed paper received yet",
+      "outcome": "open",
+      "speed_days": null,
+      "local_counsel": null,
+      "sources": [
+        "internal/src/data/matters/27.json",
+        "internal/public/documents/matter-27/"
+      ],
+      "usable_as": "The case this dossier is for.",
+      "not_a_holding": "Do not treat the live demand figures as findings in this research file."
+    },
+    {
+      "id": "charter-v-myla-dconn-2025",
+      "kind": "pacer_pull",
+      "matter": null,
+      "caption": "Charter Communications, Inc. v. Prashanth Myla",
+      "docket_short_title": "Charter Communications, Inc. v. Myla",
+      "court": "D. Conn.",
+      "case_no": "3:25-cv-00025-SFR",
+      "judge": "Hon. Sarah F. Russell",
+      "filed": "2025-01-07",
+      "terminated": "2025-04-21",
+      "side": "plaintiff_and_counter_defendant",
+      "client": "Charter Communications, Inc.",
+      "nature": "28 U.S.C. §1332 diversity — breach of contract; NOS 190",
+      "williams_role": "LEAD ATTORNEY, PHV, ATBN; PHV Dkt. 13 granted Dkt. 15; NOA Dkt. 21; attorney-list assigned 2025-02-10",
+      "chapman_role": "ATBN, not lead; PHV Dkt. 12 granted Dkt. 14; NOA Dkt. 22; attorney-list assigned 2025-01-24; CM/ECF filer on Dkts. 18, 33, 38, 39, 40, 47, 58, 60; Declaration of Nathan D. Chapman on Dkt. 18",
+      "chapman_filings": [18, 33, 38, 39, 40, 47, 58, 60],
+      "outcome": "joint dismissal with prejudice; each party bears own fees and costs; TRO/PI and counterclaim MTD denied as moot",
+      "outcome_dockets": {
+        "stipulation": 60,
+        "order": 61
+      },
+      "speed_days": 104,
+      "local_counsel": "Patricia E. Reilly, Harris Beach Murtha Cullina PLLC, New Haven",
+      "later_cocounsel": "Daniel Reisner, Arnold & Porter Kaye Scholer LLP (PHV denied Dkt. 53 for D. Conn. L.R. 83.1(e)(1)(b), granted Dkt. 56)",
+      "defense_counsel": [
+        "Glenn A. Duhl, Zangari Cohn, New Haven (lead)",
+        "Elizabeth Ditman, Zangari Cohn",
+        "Jacqueline R. Guesno, HKM Employment Attorneys LLP, Denver (PHV)"
+      ],
+      "sources": [
+        "internal/docs/counsel/kcoz/sources/3-25-cv-00025-SFR-Charter-v-Myla/PACER History-Documents (Sep 8 2026 PT).pdf",
+        "internal/docs/counsel/kcoz/sources/3-25-cv-00025-SFR-Charter-v-Myla/PACER Full Docket (Sep 8 2026 PT).pdf",
+        "internal/docs/counsel/kcoz/sources/3-25-cv-00025-SFR-Charter-v-Myla/PACER Attorney List (Sep 8 2026 PT).pdf"
+      ],
+      "pacer_receipts": {
+        "pulled": "2026-09-09T02:25Z",
+        "history_cost": 0.2,
+        "docket_cost": 0.8,
+        "attorney_list_cost": 0.2
+      },
+      "usable_as": "Identity, lead-vs-filer split, employer-side posture, 104-day path to with-prejudice walkaway on own fees.",
+      "not_a_holding": "Not related to Matter 27. Not a holding about Randstad, FCRA, or PC §290.46."
+    }
+  ],
+  "unpulled_firm_claimed_leads": [
+    {
+      "caption": "Warinner v. North Am. Sec. Solutions, Inc.",
+      "cite_as_stated": "2008 WL 2355727 (W.D. Ky. June 5, 2008)",
+      "why": "FCRA / privacy / wrongful discharge SJ — closest theory overlap"
+    },
+    {
+      "caption": "Hadaway v. Noble Systems Corp.",
+      "cite_as_stated": "2009 WL 4067261 (W.D. Okla. Nov. 23, 2009)",
+      "why": "age-discrimination SJ"
+    },
+    {
+      "caption": "Billingslea v. Ford Motor Co.",
+      "cite_as_stated": "2010 WL 4861500 (W.D.N.Y. Nov. 30, 2010)",
+      "why": "race/gender SJ"
+    },
+    {
+      "caption": "Swann v. Time Warner Entertainment Co., L.P.",
+      "cite_as_stated": "2014 WL 2573079 (S.D. Ohio June 9, 2014)",
+      "why": "cable/telecom employer; discrimination"
+    },
+    {
+      "caption": "Beecher v. TWC Administration LLC",
+      "cite_as_stated": "No. 1:15-cv-00154-WMS-JJM (W.D.N.Y. Oct. 18, 2016)",
+      "why": "wage/hour class-and-collective; national cable"
+    }
+  ]
+}
