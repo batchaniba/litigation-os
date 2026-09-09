@@ -47,7 +47,31 @@
   },
   {
     "date": "Sep. 9, 2026",
-    "event": "PHONE / DRAFT \u2014 Chadwick L. Williams asked Plaintiff for a further extension of Randstad US, LLC's time to respond in Newanforbi v. Randstad US, LLC et al. (26CV199902). Declined on the call. The Aug. 18 party agreement through and including September 15, 2026 remains the date (CRC 3.110(d) 15-day extension already used). Same-day draft withdraws the Aug. 19 / Aug. 28 $55,000 Randstad-only / $85,000 global demands (no acceptance by the Sept. 8 date in the Aug. 28 letter). Not yet sent. Do not treat silence, the call, or further talks as a further extension or as a revival of those figures. The unsent Aug. 18 $250,000 letter stays unsent. RK Logistics remains September 14 (no further). Evid. Code \u00a71152 / FRE 408.",
+    "event": "SENT \u2014 Gmail to Chadwick L. Williams (cc Nathan Chapman), 2:57 p.m., reply on the settlement-demand thread in Newanforbi v. Randstad US, LLC et al. (26CV199902). Subject as sent: Re: Newanforbi v. Randstad US, LLC et al. \u2014 Settlement Demands / Sep. 9 Meet and Confer. Withdraws the Aug. 19 / Aug. 28 $55,000 Randstad-only / $85,000 global demands; those figures are no longer open for acceptance. September 15 remains. No replacement number. Evid. Code \u00a71152 / FRE 408. The unsent Aug. 18 $250,000 letter stays unsent.",
+    "matters": [
+      27
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-27/Gmail - Williams Withdrawal of 55k 85k Demands (Sep 9 2026).pdf"
+  },
+  {
+    "date": "Sep. 9, 2026",
+    "event": "SENT \u2014 Gmail to Chadwick L. Williams (cc Nathan Chapman), 2:33 p.m., transmitting InfoMart Order No. 15780719 (15780719Final_Profile.PDF) in Newanforbi v. Randstad US, LLC et al. (26CV199902). Evid. Code \u00a71152 / FRE 408. Did not restate the $55,000/$85,000 figures.",
+    "matters": [
+      27
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-27/Gmail - Williams InfoMart Order 15780719 (Sep 9 2026).pdf"
+  },
+  {
+    "date": "Sep. 9, 2026",
+    "event": "PHONE \u2014 After Williams's 1:56 p.m. email, Plaintiff called. Chadwick L. Williams asked for a further extension of Randstad US, LLC's time to respond in Newanforbi v. Randstad US, LLC et al. (26CV199902). Declined. The Aug. 18 party agreement through and including September 15, 2026 remains the date (CRC 3.110(d) 15-day extension already used). Do not treat the call, his reaction, or further talks as a further extension or as a revival of the withdrawn figures. RK Logistics remains September 14 (no further).",
     "matters": [
       27
     ],
@@ -55,11 +79,35 @@
     "upcoming": false,
     "filed": false,
     "actor": "you",
-    "source": "/documents/matter-27/EMAIL_DRAFT_Williams_Withdraw_Demand_Sep9.txt"
+    "source": "/documents/matter-27/Gmail - Williams Courtesy Copies Filed POS040 425115 (Sep 9 2026).pdf"
   },
   {
     "date": "Sep. 9, 2026",
-    "event": "FILED \u2014 POS-040 Proofs of Service of the Amended Notices of Amount of Punitive Damages Sought (CCP \u00a7425.115, $500,000 each) as to Randstad US, LLC and The RK Logistics Group, Inc. Sacramento County Sheriff / F. Conley personally served both notices on Aug. 21, 2026 at 11:21 a.m. on Skylar Leih / Authorized Agent at CSC - Lawyers Incorporating Service, 2710 Gateway Oaks Dr Ste 150N, Sacramento (Levying Officer File No. 2026028894). Courtesy-copy emails to Chadwick L. Williams / Nathan Chapman (Randstad) and Melinda Garcia, cc Karen Tai (RK Logistics) drafted the same day; not yet sent. The Garcia draft also asks whether insurance counsel has been sorted and whether she will meet and confer (CCP \u00a7430.41 runs today if RK intends to demur); it does not grant a further extension.",
+    "event": "SENT \u2014 Gmail to Chadwick L. Williams (cc Nathan Chapman), 1:54 p.m., courtesy copies of the filed Randstad POS-040 and Randstad Amended CCP \u00a7425.115 notice in Newanforbi v. Randstad US, LLC et al. (26CV199902). September 15 unchanged. Asked to meet and confer Sept. 9 or 10. Williams replied 1:56 p.m.: he can talk today; call his direct line (404) 400-7306.",
+    "matters": [
+      27
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-27/Gmail - Williams Courtesy Copies Filed POS040 425115 (Sep 9 2026).pdf"
+  },
+  {
+    "date": "Sep. 9, 2026",
+    "event": "SENT \u2014 Gmail to Melinda Garcia, 1:46 p.m., courtesy copies of the filed RK POS-040 and RK Amended CCP \u00a7425.115 notice in Newanforbi v. Randstad US, LLC et al. (26CV199902). September 14 unchanged. Asked whether insurance counsel has been identified and whether she will meet and confer under CCP \u00a7430.41. Print To line is Garcia only.",
+    "matters": [
+      27
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-27/Gmail - Garcia Courtesy Copies Filed POS040 425115 (Sep 9 2026).pdf"
+  },
+  {
+    "date": "Sep. 9, 2026",
+    "event": "FILED \u2014 POS-040 Proofs of Service of the Amended Notices of Amount of Punitive Damages Sought (CCP \u00a7425.115, $500,000 each) as to Randstad US, LLC and The RK Logistics Group, Inc. Sacramento County Sheriff / F. Conley personally served both notices on Aug. 21, 2026 at 11:21 a.m. on Skylar Leih / Authorized Agent at CSC - Lawyers Incorporating Service, 2710 Gateway Oaks Dr Ste 150N, Sacramento (Levying Officer File No. 2026028894). Courtesy-copy emails sent the same day: Garcia 1:46 p.m.; Williams/Chapman 1:54 p.m.",
     "matters": [
       27
     ],
