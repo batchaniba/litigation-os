@@ -5578,5 +5578,38 @@
     "upcoming": false,
     "actor": "you",
     "source": "/documents/matter-28/Dkt 13 - Proof of Service of Rule 4 Packet on SLB (Filed Sep 3 2026).pdf"
+  },
+  {
+    "date": "Sep. 8, 2026",
+    "event": "EVENT \u2014 Case title error identified in Matter 35 (Santa Clara Sup. Ct. No. 26CV501995). The Court's public portal titles the action \"Brendan Ngwa Nforbi vs Does 2 through 20 et al\" and lists the defendant party records as Does 2 through 20; Doe 1; Ross Dress for Less, Inc.; Ross Stores, Inc. \u2014 the reverse of the conformed Verified Complaint, the issued SUM-100, and the CM-010, each of which names ROSS STORES, INC. first. The short title is generated from the first-listed defendant record, so the defect is in the party data transmitted at the Aug. 26, 2026 One Legal party-entry step, not in the pleadings. No operative date changes.",
+    "matters": [
+      35
+    ],
+    "type": "event",
+    "upcoming": false,
+    "actor": "you",
+    "source": "/documents/matter-35/Public Portal Case Detail (Case Title Error) - 26CV501995 (Printed Sept 8 2026).pdf"
+  },
+  {
+    "date": "Sep. 9, 2026",
+    "event": "PREPARED \u2014 Matter 35 case-title correction packet (26CV501995): letter to the Santa Clara Civil Division Clerk requesting that the register of actions and public portal be corrected to \"Brendan Ngwa Nforbi v. Ross Stores, Inc., et al.\" and that the defendant party records be re-sequenced to track the Complaint (Ross Stores, Inc.; Ross Dress for Less, Inc.; Doe 1; Does 2 through 20); a backup Notice of Errata on pleading paper (Code Civ. Proc., \u00a7 422.40; Cal. Rules of Court, rule 2.111(4)) to file only if the Clerk requires a filed document; and e-mail drafts to the Civil Division and to One Legal. Clerical correction only \u2014 no party added, dropped, substituted, or renamed.",
+    "matters": [
+      35
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "actor": "you",
+    "source": "/documents/matter-35/Letter to Civil Division Clerk - Request to Correct Case Title in Register of Actions (Sept 9 2026).pdf"
+  },
+  {
+    "date": "Sep. 18, 2026",
+    "event": "OPEN TASK \u2014 Get the Matter 35 case title corrected (26CV501995) before the Ross service packet goes out. Call or e-mail the Santa Clara Civil Division (verify the current number and address on the court's contact page) and send the Sept. 9, 2026 clerk letter with the portal printout, conformed Complaint caption page, issued Summons, and One Legal order status page. If the Clerk requires a filed document, e-file the prepared Notice of Errata into 26CV501995 the same day; if the Clerk directs an ex parte application or noticed motion instead, prepare that form first. Target date is self-imposed, not a court deadline \u2014 the operative constraint is service by ~Oct. 25, 2026.",
+    "matters": [
+      35
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-35/Email Draft - Civil Division Clerk (Correct Case Title in Register of Actions) (Sept 9 2026).txt"
   }
 ]

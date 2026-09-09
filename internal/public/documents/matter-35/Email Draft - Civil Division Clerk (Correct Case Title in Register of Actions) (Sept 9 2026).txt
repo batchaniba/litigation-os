@@ -1,0 +1,82 @@
+Subject: Case No. 26CV501995 - request to correct the case title / defendant party order
+(Ngwa Nforbi v. Ross Stores, Inc., et al., Hon. Vince Parrett, Dept. 16)
+
+To:  sscivilinfo@scscourt.org   [VERIFY current Civil Division e-mail on the court's
+     "Court Telephone Numbers & Email Addresses" page before sending]
+     Civil Division phone: (408) 882-2100 [VERIFY]
+     Telephone hours: Mon-Thu 8:30 a.m.-3:00 p.m.; Fri 8:30 a.m.-12:00 p.m. [VERIFY]
+
+Attachments:
+    1. Letter to Civil Division Clerk - Request to Correct Case Title in Register of
+       Actions (Sept 9 2026).pdf
+    2. Public Portal Case Detail (Case Title Error) - 26CV501995 (Printed Sept 8 2026).pdf
+    3. Verified Complaint (CONFORMED, Filed Aug 26 2026) - 26CV501995.pdf  [caption page]
+    4. SUM-100 Summons (ISSUED, Filed Aug 26 2026) - 26CV501995.pdf
+    5. One Legal Order Status 29111713 (Case Title as Transmitted) (Printed Sept 8 2026).pdf
+
+Hello,
+
+I am the plaintiff in Santa Clara Superior Court Case No. 26CV501995, appearing in
+propria persona. I am writing to ask the Civil Division to correct the title of the
+case in the register of actions and on the public case portal.
+
+The portal currently shows the case title as:
+
+    "Brendan Ngwa Nforbi vs Does 2 through 20 et al"
+
+and lists the defendant party records in this order: Does 2 through 20; Doe 1; Ross
+Dress for Less, Inc., a Virginia corporation; Ross Stores, Inc., a Delaware corporation.
+
+The Verified Complaint the Court accepted on August 26, 2026 names the defendants in
+the opposite order -- ROSS STORES, INC., a Delaware corporation; ROSS DRESS FOR LESS,
+INC., a Virginia corporation; DOE 1; and DOES 2 through 20, inclusive -- and the issued
+SUM-100 Summons and the CM-010 Civil Case Cover Sheet match the Complaint. The party
+records appear to have been transmitted in the wrong order during the party-entry step
+of my e-filing submission through One Legal (Filing Order #29111713; Confirmation
+#35442871; Court Transaction #24948831), which is what generated the case title from
+the Doe defendants instead of from Ross Stores, Inc.
+
+I am asking for two things, both clerical:
+
+    1. Correct the case title to "Brendan Ngwa Nforbi v. Ross Stores, Inc., et al."
+    2. Re-sequence the defendant party records to track the Complaint:
+       (1) Ross Stores, Inc.; (2) Ross Dress for Less, Inc.; (3) Doe 1;
+       (4) Does 2 through 20, inclusive.
+
+I am not adding, dropping, substituting, or renaming any party, and I am not asking to
+change the Complaint, the Summons, or any date on the calendar. No defendant has been
+served yet and none has appeared, so no party is affected by the correction.
+
+I would like to have this corrected before I serve Ross Stores, Inc. and Ross Dress for
+Less, Inc. through C T Corporation System, which I need to do by approximately
+October 25, 2026.
+
+If the Court needs a document filed in the case before the register of actions can be
+corrected, I have a Notice of Errata prepared and will submit it the same day in
+whatever form the Court prefers (e-filed notice, ex parte application, noticed motion,
+or a local form). Please let me know which. I would also appreciate confirmation once
+the correction has been made.
+
+Thank you,
+
+Brendan Ngwa Nforbi
+Plaintiff, In Propria Persona
+1455 Cat Tail Drive, Stockton, CA 95204
+(209) 801-4442 | bnn.cdl@gmail.com
+
+----------------------------------------------------------------------
+NOTES BEFORE SENDING (not part of the e-mail):
+
+- Confirm the current Civil Division e-mail address and phone number on the court's
+  own contact page. The address and number above were taken from a search result, not
+  from the court's site directly.
+- Calling is usually faster than e-mail for a records correction. If you call, ask for
+  the civil case-processing / records unit and say: "The case title in the register of
+  actions was generated from the wrong first-named defendant. The complaint names Ross
+  Stores, Inc. first; the portal lists Does 2 through 20 first. Can that be corrected
+  as a clerical entry, or do you need me to file something?"
+- If the clerk says a filing is required, e-file the Notice of Errata PDF in this same
+  folder through One Legal into case 26CV501995. It is a notice, not a motion; no
+  filing fee should attach to it, but ask the clerk to confirm before submitting.
+- If the clerk instead directs an ex parte application or noticed motion, say so and a
+  matching draft can be prepared -- do not file a motion before the clerk asks for one.

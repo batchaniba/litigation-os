@@ -1,0 +1,54 @@
+Subject: Order #29111713 (Confirmation #35442871) - party order transmitted to Santa Clara
+on case 26CV501995
+
+To:  One Legal support (support@onelegal.com or the support form on the One Legal
+     dashboard) [VERIFY current support channel]
+
+Hello,
+
+I filed a new civil case through One Legal on August 26, 2026:
+
+    Order #29111713
+    Confirmation #35442871
+    Court Transaction #24948831
+    Court: Santa Clara County Superior Court (Santa Clara - First Street)
+    Case No. assigned: 26CV501995
+    Title on your order page: "Brendan Ngwa Nforbi vs Does 2 through 20 et al"
+
+The complaint that was filed and accepted names the defendants in this order:
+ROSS STORES, INC., a Delaware corporation; ROSS DRESS FOR LESS, INC., a Virginia
+corporation; DOE 1; and DOES 2 through 20, inclusive. The court's public portal,
+however, lists the defendant party records in reverse -- Does 2 through 20 first,
+then Doe 1, then Ross Dress for Less, Inc., then Ross Stores, Inc. -- and the case
+title was generated from the Doe entry.
+
+Two requests:
+
+    1. Please send me the party data exactly as it was submitted on Order #29111713,
+       including the order of the defendant records, so I can see whether the sequence
+       was reversed at the party-entry step, in transmission, or at the court's intake.
+
+    2. If the order of the party records as transmitted did not match the complaint,
+       please tell me whether One Legal can transmit a correction to Santa Clara on
+       this case, or whether the correction has to come from the court's civil clerk.
+
+I have separately asked the Santa Clara Civil Division to correct the case title in
+the register of actions. I am not asking to change the complaint or any filed
+document -- only the party records in the case management system.
+
+Thank you,
+
+Brendan Ngwa Nforbi
+Plaintiff, In Propria Persona
+1455 Cat Tail Drive, Stockton, CA 95204
+(209) 801-4442 | bnn.cdl@gmail.com
+
+----------------------------------------------------------------------
+NOTES BEFORE SENDING (not part of the e-mail):
+
+- The court, not One Legal, owns the register of actions. One Legal cannot change the
+  case title; the value of this e-mail is (a) the record of what was transmitted, which
+  is useful if the clerk asks how the error happened, and (b) confirmation of whether
+  the error was yours, theirs, or the court's intake.
+- Do not wait on One Legal before contacting the clerk. The clerk request is the one
+  that actually fixes the title.

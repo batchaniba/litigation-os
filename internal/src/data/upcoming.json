@@ -628,5 +628,16 @@
     "upcoming": true,
     "actor": "opposing",
     "source": "/documents/matter-28/PACER Deadlines-Hearings - N.D. Cal. 3-26-cv-07504-LJC (Sep 4 2026).pdf"
+  },
+  {
+    "date": "Sep. 18, 2026",
+    "event": "OPEN TASK — Get the Matter 35 case title corrected (26CV501995) before the Ross service packet goes out. Call or e-mail the Santa Clara Civil Division (verify the current number and address on the court's contact page) and send the Sept. 9, 2026 clerk letter with the portal printout, conformed Complaint caption page, issued Summons, and One Legal order status page. If the Clerk requires a filed document, e-file the prepared Notice of Errata into 26CV501995 the same day; if the Clerk directs an ex parte application or noticed motion instead, prepare that form first. Target date is self-imposed, not a court deadline — the operative constraint is service by ~Oct. 25, 2026.",
+    "matters": [
+      35
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-35/Email Draft - Civil Division Clerk (Correct Case Title in Register of Actions) (Sept 9 2026).txt"
   }
 ]
