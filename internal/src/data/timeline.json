@@ -34,6 +34,18 @@
   },
   {
     "date": "Sep. 10, 2026",
+    "event": "RECEIVED \u2014 DAG Vanessa Ing (cc Mark Beckington) asked at 12:59 p.m. for a 'secure link' to the November 1, 2024 CHP dashcam already served September 8 in Newanforbi v. CHP et al. (26CV191136). She offered to send a DOJ upload link. The September 8 service used the Dept. 25-authorized Drive link. Courtesy copy only if sent; does not redo service or move any date.",
+    "matters": [
+      20
+    ],
+    "type": "event",
+    "upcoming": false,
+    "filed": false,
+    "actor": "opposing",
+    "source": "/documents/matter-20/Gmail - Ing asks for secure dashcam upload link (Sep 10 2026).pdf"
+  },
+  {
+    "date": "Sep. 10, 2026",
     "event": "REVISED (unfiled) \u2014 Motion to Strike POS in Nforbi v. Candelaria et al. (3:26-cv-08272-LJC) now names Fiel Dizon Tigno, Supervising Deputy Attorney General (PACER lead / attorney to be noticed), ahead of William J. McMahon. The September 5 draft had omitted Tigno. Still unfiled.",
     "matters": [
       33
