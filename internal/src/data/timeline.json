@@ -22,6 +22,77 @@
     "source": "/documents/matter-25/Dkt 08 - Order Setting Status Conference (Filed Sep 8 2026).pdf"
   },
   {
+    "date": "Sep. 22, 2026",
+    "event": "WATCH \u2014 Defendants' consent or declination to magistrate-judge jurisdiction due in Nforbi v. Candelaria et al. (3:26-cv-08272-LJC). Set by Dkt. 12 (Sep. 8, text-only clerk's notice). Dkt. 14 is a second notice filed in the wrong case \u2014 DISREGARD. Plaintiff already consented (Dkt. 3). A single declination reassigns the case to a district judge. Counsel: Field Tignino, DAG.",
+    "matters": [
+      33
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "opposing",
+    "source": "/documents/matter-33/ndcal/PACER Docket Report - N.D. Cal. 3-26-cv-08272-LJC (Sep 9 2026).pdf"
+  },
+  {
+    "date": "Sep. 9, 2026",
+    "event": "PACER \u2014 Docket report for Nforbi v. Candelaria et al. (3:26-cv-08272-LJC), pulled Sep. 9, 2026 evening (2 billable pages, $0.20). Assigned Mag. Lisa J. Cisneros (San Francisco). Last numbered entry Dkt. 14. Dkt. 7 summons returned (served Aug. 14 / answer Sep. 4). Dkt. 8 admin motion to relate (Aug. 25). Dkt. 9 FAC POS (Aug. 26). Dkt. 10 Notice Identifying Operative FAC (filed Aug. 26, entered Aug. 27). Dkt. 11 Answer by Field Tignino, DAG (Sep. 4). Dkt. 12 clerk's MJ-consent notice (Sep. 8; due Sep. 22). Dkt. 13 related-case denial (Sep. 8). Dkt. 14 second clerk's notice \u2014 DISREGARD, filed in incorrect case. Tignino: 1515 Clay Street, 20th Floor, P.O. Box 70550, Oakland, CA 94612-0550; (510) 622-2214; field.tignino@doj.ca.gov.",
+    "matters": [
+      33
+    ],
+    "type": "event",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-33/ndcal/PACER Docket Report - N.D. Cal. 3-26-cv-08272-LJC (Sep 9 2026).pdf"
+  },
+  {
+    "date": "Sep. 9, 2026",
+    "event": "FILED \u2014 Dkt. 13 Plaintiff's Certification of Conflicts, Interested Entities and Persons, and Citizenship (Civil L.R. 3-15) in Newanforbi v. Amazon.com Services, LLC et al. (4:26-cv-09249-ASK). Clerk-stamped FILED Sep. 9, 2026. Dated September 4, 2026. No-conflict form; not diversity. POS mailed Sep. 4 to Andrew P. Frederick (Morgan Lewis) and Jasmine J. Stanzick (Seyfarth). Do not treat the Sep. 4 executed copy as still unfiled.",
+    "matters": [
+      29
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "you",
+    "source": "/documents/matter-29/Dkt 13 - Plaintiff's Certification of Conflicts (Filed Sep 9 2026).pdf"
+  },
+  {
+    "date": "Sep. 9, 2026",
+    "event": "FILED \u2014 Dkt. 15 Plaintiff's Certification of Conflicts, Interested Entities and Persons, and Citizenship (Civil L.R. 3-15) in Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK). Clerk-stamped Document 15, Filed 09/09/26. Dated September 4, 2026. PACER download is an image scan. Do not treat the Sep. 4 executed copy as still unfiled.",
+    "matters": [
+      32
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "you",
+    "source": "/documents/matter-32/ndcal/Dkt 15 - Plaintiff's Certification of Conflicts (Filed Sep 9 2026).pdf"
+  },
+  {
+    "date": "Sep. 8, 2026",
+    "event": "FILED \u2014 Dkt. 14 Proof of Service in Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK). Clerk-stamped Document 14, Filed 09/08/26, 6 pages. Certifies that on August 21, 2026 Plaintiff mailed the First Amended Complaint (Dkt. 5) first-class from San Jose to Officer Jose Melano (CHP Badge #023054), CHP South Sacramento Area, 6 Massie Court, Sacramento, CA 95823. Exhibit: USPS eReceipt 840-59500196-3-10335441-2 (San Jose MO Finance, Aug. 21, 5:40 p.m., $14.78) and the Sep. 3 Priority Mail Express envelope to the San Jose clerk. Caption on page 1 still recites the old 3:26-cv-08271-PHK number; stamp is 4:26-cv-08271-ASK.",
+    "matters": [
+      32
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "you",
+    "source": "/documents/matter-32/ndcal/Dkt 14 - Proof of Service - FAC Dkt 05 Mailed to Melano (Filed Sep 8 2026).pdf"
+  },
+  {
+    "date": "Sep. 8, 2026",
+    "event": "FILED \u2014 Dkt. 12 Clerk's Notice Re: Consent or Declination in Nforbi v. Candelaria et al. (3:26-cv-08272-LJC). Text-only. Defendants shall file a consent or declination to proceed before a magistrate judge by September 22, 2026. No document attached. Dkt. 14 (same day, later modified) is a second notice filed in the incorrect case \u2014 DISREGARD; do not run a second clock.",
+    "matters": [
+      33
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "court",
+    "source": "/documents/matter-33/ndcal/PACER Docket Report - N.D. Cal. 3-26-cv-08272-LJC (Sep 9 2026).pdf"
+  },
+  {
     "date": "Sep. 9, 2026",
     "event": "OPEN TASK \u2014 Send the One Legal email on Order #29111713 asking them to correct the Odyssey / public-portal short title in Ngwa Nforbi v. Ross Stores, Inc., et al. (Santa Clara 26CV501995) from 'Brendan Ngwa Nforbi vs Does 2 through 20 et al' to 'Brendan Ngwa Nforbi vs. Ross Stores, Inc., et al.' Party-grid order error on the original e-filing. Complaint and issued SUM-100 already name Ross first. File the executed Request to Correct Case Title only if One Legal cannot fix Odyssey. Do not amend. Do not reissue the summons unless the clerk requires it.",
     "matters": [
@@ -610,7 +681,7 @@
   },
   {
     "date": "Sep. 4, 2026",
-    "event": "EXECUTED (unfiled) \u2014 Plaintiff's Civil L.R. 3-15 Certification of Conflicts, Interested Entities and Persons, and Citizenship in each live N.D. Cal. case where the first-appearance certification was missing: Serrato 4:26-cv-05953-ASK; Smith/HOPE 3:26-cv-07504-LJC; Amazon/Accurate 4:26-cv-09249-ASK; Meza/Melano 4:26-cv-08271-ASK; Candelaria/Gordon 3:26-cv-08272-LJC. Dated September 4, 2026. Uses the Civil L.R. 3-15(c)(3) no-conflict form. Not diversity; no (b)(3) citizenship recital. POS attached (mail except Smith/HOPE, served by email on SLB). Do not treat as filed until clerk-stamped.",
+    "event": "EXECUTED (unfiled) \u2014 Plaintiff's Civil L.R. 3-15 Certification of Conflicts, Interested Entities and Persons, and Citizenship in each live N.D. Cal. case where the first-appearance certification was missing. Dated September 4, 2026. Uses the Civil L.R. 3-15(c)(3) no-conflict form. Not diversity; no (b)(3) citizenship recital. POS attached (mail except Smith/HOPE, served by email on SLB). NOW FILED: Amazon/Accurate as Dkt. 13 (Sep. 9) and Meza/Melano as Dkt. 15 (Sep. 9). STILL UNFILED: Serrato 4:26-cv-05953-ASK; Smith/HOPE 3:26-cv-07504-LJC; Candelaria/Gordon 3:26-cv-08272-LJC. Do not treat those three as filed until clerk-stamped.",
     "matters": [
       24,
       28,
@@ -1764,13 +1835,14 @@
     "source": "/documents/matter-27/POS-040 Proof of Service - Amended CCP 425.115 Notice - Randstad US LLC (Served Aug 21 2026, Filed Sep 9 2026, Levying Officer 2026028894).pdf"
   },
   {
-    "date": "Aug. 24, 2026",
-    "event": "EXECUTED \u2014 Notice Identifying Operative First Amended Complaint, Nforbi v. Candelaria et al., N.D. Cal. No. 3:26-cv-08272-LJC. Clarifies that Dkt. 6 (FAC filed Aug. 17, 2026) is the operative pleading of record and that Dkt. 5 (FAC filed Aug. 14, 2026) is superseded in full. Not yet filed.",
+    "date": "Aug. 26, 2026",
+    "event": "FILED as Dkt. 10 \u2014 Notice Identifying Operative First Amended Complaint, Nforbi v. Candelaria et al., N.D. Cal. No. 3:26-cv-08272-LJC. Clarifies that Dkt. 6 (FAC filed Aug. 17, 2026) is the operative pleading of record and that Dkt. 5 (FAC filed Aug. 14, 2026) is superseded in full. PACER Sep. 9 shows filed Aug. 26, entered Aug. 27. Stamped PDF not yet pulled; the Aug. 24 executed copy remains in the file.",
     "matters": [
       33
     ],
     "type": "filing",
     "upcoming": false,
+    "filed": true,
     "actor": "you",
     "source": "/documents/matter-33/ndcal/Notice Identifying Operative First Amended Complaint (Candelaria) (Aug 24 2026).pdf"
   },
