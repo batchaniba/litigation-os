@@ -297,6 +297,45 @@ CANDELARIA = StipCase(
     ),
 )
 
+# McMahon redline (11:01 a.m.) dropped Tigno and the Civil L.R. 5-1(i)(3)
+# attestation. This counterpart keeps Tigno in the counsel-of-record recital
+# (he is PACER lead / attorney to be noticed), lets McMahon be the sole
+# signing DAG, and restores the attestation. Do not file McMahon's file.
+CANDELARIA_COUNTER = StipCase(
+    matter=33,
+    outdir=ROOT / "public/documents/matter-33/ndcal",
+    case_no="3:26-cv-08272-LJC",
+    short="NFORBI v. CANDELARIA",
+    docket_name="Nforbi",
+    division="SAN FRANCISCO DIVISION",
+    judge="Hon. Lisa J. Cisneros",
+    left_caption=list(CANDELARIA.left_caption),
+    defendant_intro=(
+        "Defendants Diana Candelaria and Steve Gordon, by and through "
+        "their counsel of record Fiel Dizon Tigno, Supervising Deputy "
+        "Attorney General (attorney to be noticed), and William J. McMahon, "
+        "Deputy Attorney General,"
+    ),
+    preserve_clauses=list(CANDELARIA.preserve_clauses),
+    order_preserve=CANDELARIA.order_preserve,
+    counsel_signers=(
+        CounselSigner(
+            "WILLIAM J. McMAHON (SBN 178588)",
+            (
+                "Deputy Attorney General",
+                "Attorneys for Defendants",
+                "Diana Candelaria and Steve Gordon",
+            ),
+        ),
+    ),
+    footer="STIPULATION TO CORRECT DOCKET NAME -- NFORBI v. CANDELARIA",
+    filename=(
+        "Stipulation and Proposed Order to Correct Plaintiff's Name "
+        "on the Docket (3-26-cv-08272-LJC) (Plaintiff Counterpart to "
+        "McMahon Rev, Sep 10 2026).docx"
+    ),
+)
+
 
 def _docx_helpers():
     try:
@@ -578,7 +617,7 @@ def build_docx(case: StipCase) -> Path:
 
 
 def main() -> None:
-    for case in (SERRATO, MEZA, SMITH, CANDELARIA):
+    for case in (SERRATO, MEZA, SMITH, CANDELARIA, CANDELARIA_COUNTER):
         path = build_docx(case)
         print(f"Wrote {path}")
 
