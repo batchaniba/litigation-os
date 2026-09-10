@@ -238,7 +238,6 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | Sep. 14, 2026 | 27 | Extended responsive-pleading deadline — The RK Logistics Group, Inc. only, Newanforbi v. Randstad US, LLC et al. (26CV199902) |
 | Sep. 15, 2026 | 27 | FILE IF SILENT — e-file CIV-100 Request for Entry of Default as to The RK Logistics Group, Inc. (clerk default only, item 1c). First fileable the day after RK's Sept. 14 response date. |
 | Sep. 15, 2026 | 27 | Extended responsive-pleading deadline — Randstad US, LLC only, Newanforbi v. Randstad US, LLC et al. (26CV199902); 15 days past the Aug. 31, 2026 computed deadline, agreed on the Aug. 18, 2026 call with Chadwick L. |
-| Sep. 15, 2026 | 24 | WATCH — Defendant's Rule 26(a)(1) disclosures in Newanforbi v. Serrato (4:26-cv-05953-ASK). Dkt. 24 § VII.A asked Defendant to serve within seven days of Plaintiff's Sep. 8 service. Plaintiff's disclosures went 8:59 p.m. |
 | Sep. 15, 2026 | 24 | Initial Case Management Conference — 1:30 PM via Zoom (cand.uscourts.gov/ask); Hon. Ajay S. Krishnan — Newanforbi v. Serrato (4:26-cv-05953-ASK) |
 | Sep. 16, 2026 | 27 | FILE IF SILENT — e-file CIV-100 Request for Entry of Default as to Randstad US, LLC (clerk default only, item 1c). First fileable the day after Randstad's Sept. 15 response date. |
 | Sep. 16, 2026 | 26 | Rule 15(a)(1)(B) amendment-as-of-right window — Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). UPS served the MTD by mail Aug. 26, 2026 (ECF 7-3). 21 days after service is Sep. 16 |
