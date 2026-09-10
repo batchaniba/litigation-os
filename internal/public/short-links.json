@@ -117,15 +117,21 @@
     },
     {
       "slug": "ross-title-packet",
-      "source": "/documents/matter-35/Request to Correct Case Title Packet (Request, Proposed Order, Exs A-C) (Sep 10 2026).pdf",
-      "downloadName": "Request to Correct Case Title Packet (Request, Proposed Order, Exs A-C) (Sep 10 2026).pdf",
+      "source": "/documents/matter-35/Request to Correct Case Title Packet (Request with Exhibits, Declaration, Proposed Order) (Sep 10 2026).pdf",
+      "downloadName": "Request to Correct Case Title Packet (Request with Exhibits, Declaration, Proposed Order) (Sep 10 2026).pdf",
       "title": "Request to Correct Case Title packet \u2014 Ngwa Nforbi v. Ross Stores (26CV501995)"
     },
     {
       "slug": "ross-title",
       "source": "/documents/matter-35/Request to Correct Case Title - Clerical Party-Order Error (Sep 10 2026).pdf",
       "downloadName": "Request to Correct Case Title - Clerical Party-Order Error (Sep 10 2026).pdf",
-      "title": "Request to Correct Case Title \u2014 Ngwa Nforbi v. Ross Stores (26CV501995)"
+      "title": "Request to Correct Case Title with Exhibits A\u2013C \u2014 Ngwa Nforbi v. Ross Stores (26CV501995)"
+    },
+    {
+      "slug": "ross-title-decl",
+      "source": "/documents/matter-35/Declaration ISO Request to Correct Case Title (Sep 10 2026).pdf",
+      "downloadName": "Declaration ISO Request to Correct Case Title (Sep 10 2026).pdf",
+      "title": "Declaration ISO Request to Correct Case Title \u2014 26CV501995"
     },
     {
       "slug": "ross-title-order",

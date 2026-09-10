@@ -211,6 +211,16 @@
       "permanent": false
     },
     {
+      "source": "/ross-title-decl",
+      "destination": "/ross-title-decl.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/ross-title-decl/",
+      "destination": "/ross-title-decl.pdf",
+      "permanent": false
+    },
+    {
       "source": "/ross-title-order",
       "destination": "/ross-title-order.pdf",
       "permanent": false
@@ -458,7 +468,7 @@
       "headers": [
         {
           "key": "Content-Disposition",
-          "value": "attachment; filename=\"Request to Correct Case Title Packet (Request, Proposed Order, Exs A-C) (Sep 10 2026).pdf\"; filename*=UTF-8''Request%20to%20Correct%20Case%20Title%20Packet%20%28Request%2C%20Proposed%20Order%2C%20Exs%20A-C%29%20%28Sep%2010%202026%29.pdf"
+          "value": "attachment; filename=\"Request to Correct Case Title Packet (Request with Exhibits, Declaration, Proposed Order) (Sep 10 2026).pdf\"; filename*=UTF-8''Request%20to%20Correct%20Case%20Title%20Packet%20%28Request%20with%20Exhibits%2C%20Declaration%2C%20Proposed%20Order%29%20%28Sep%2010%202026%29.pdf"
         }
       ]
     },
@@ -468,6 +478,15 @@
         {
           "key": "Content-Disposition",
           "value": "attachment; filename=\"Request to Correct Case Title - Clerical Party-Order Error (Sep 10 2026).pdf\"; filename*=UTF-8''Request%20to%20Correct%20Case%20Title%20-%20Clerical%20Party-Order%20Error%20%28Sep%2010%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/ross-title-decl.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Declaration ISO Request to Correct Case Title (Sep 10 2026).pdf\"; filename*=UTF-8''Declaration%20ISO%20Request%20to%20Correct%20Case%20Title%20%28Sep%2010%202026%29.pdf"
         }
       ]
     },

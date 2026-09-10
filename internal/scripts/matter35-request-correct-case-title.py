@@ -45,6 +45,9 @@ FOOTER = (
 OUT_REQUEST = MATTER / (
     f"Request to Correct Case Title - Clerical Party-Order Error ({FILE_STAMP}).pdf"
 )
+OUT_DECLARATION = MATTER / (
+    f"Declaration ISO Request to Correct Case Title ({FILE_STAMP}).pdf"
+)
 OUT_ORDER = MATTER / (
     f"[Proposed] Order Correcting Case Title - 26CV501995 ({FILE_STAMP}).pdf"
 )
@@ -53,8 +56,8 @@ OUT_COVER_B = MATTER / "Exhibit B Cover - Public Portal Wrong Title (26CV501995)
 OUT_COVER_C = MATTER / "Exhibit C Cover - One Legal Order 29111713 Title (26CV501995).pdf"
 OUT_EX_A = MATTER / "Exhibit A - Complaint Caption Page (26CV501995).pdf"
 OUT_PACKET = MATTER / (
-    "Request to Correct Case Title Packet (Request, Proposed Order, Exs A-C) "
-    f"({FILE_STAMP}).pdf"
+    "Request to Correct Case Title Packet "
+    f"(Request with Exhibits, Declaration, Proposed Order) ({FILE_STAMP}).pdf"
 )
 
 COMPLAINT = MATTER / (
@@ -72,6 +75,7 @@ ONELEGAL = MATTER / (
 SHORT_LINKS = (
     (OUT_PACKET, "ross-title-packet"),
     (OUT_REQUEST, "ross-title"),
+    (OUT_DECLARATION, "ross-title-decl"),
     (OUT_ORDER, "ross-title-order"),
     (OUT_COVER_A, "ross-title-ex-a-cover"),
     (OUT_EX_A, "ross-title-ex-a"),
@@ -133,6 +137,25 @@ ORDER_RIGHT = [
     ("Dept. 16", False, False),
 ]
 
+DECL_RIGHT = [
+    (f"Case No. {CASE_NO}", False, False),
+    ("", False, False),
+    ("DECLARATION OF", True, False),
+    ("BRENDAN NGWA NFORBI", True, False),
+    ("ISO REQUEST TO CORRECT", True, False),
+    ("CASE TITLE", True, False),
+    ("", False, False),
+    ("[No hearing requested]", False, False),
+    ("", False, False),
+    ("Assigned: Hon. Vince Parrett", False, False),
+    ("Dept. 16", False, False),
+]
+
+DECL_FOOTER = (
+    "DECLARATION ISO REQUEST TO CORRECT CASE TITLE -- "
+    "NGWA NFORBI v. ROSS STORES, INC., ET AL."
+)
+
 
 def _header(d: PleadingPaper) -> None:
     c = d.c
@@ -167,8 +190,8 @@ def _sign(d: PleadingPaper, closer: str) -> None:
     d.write_line(closer, right=True, right_margin_offset=20)
 
 
-def build_request() -> Path:
-    d = PleadingPaper(str(OUT_REQUEST), doc_title_footer=FOOTER)
+def build_request(path: Path) -> Path:
+    d = PleadingPaper(str(path), doc_title_footer=FOOTER)
     _header(d)
     d.draw_caption_block(CAPTION_LEFT, CAPTION_RIGHT, caption_size=10, tight_lh=13, boxed=True)
     d.blank_line()
@@ -239,8 +262,18 @@ def build_request() -> Path:
     )
     d.blank_line()
     _sign(d, "Plaintiff, In Propria Persona")
+    d.save()
+    print(f"Wrote {path}")
+    return path
 
-    d.start_new_page()
+
+def build_declaration() -> Path:
+    d = PleadingPaper(str(OUT_DECLARATION), doc_title_footer=DECL_FOOTER)
+    _header(d)
+    d.draw_caption_block(
+        CAPTION_LEFT, DECL_RIGHT, caption_size=10, tight_lh=13, boxed=True
+    )
+    d.blank_line()
     d.write_line("DECLARATION OF BRENDAN NGWA NFORBI", bold=True, center=True)
     d.blank_line()
     d.write_wrapped("I, Brendan Ngwa Nforbi, declare:", first_indent=36)
@@ -284,7 +317,22 @@ def build_request() -> Path:
     d.blank_line()
     _sign(d, "Declarant")
     d.save()
-    print(f"Wrote {OUT_REQUEST}")
+    print(f"Wrote {OUT_DECLARATION}")
+    return OUT_DECLARATION
+
+
+def attach_exhibits_to_request(request_pages: Path) -> Path:
+    writer = PdfWriter()
+    append_pdf(writer, request_pages)
+    append_pdf(writer, OUT_COVER_A)
+    append_pdf(writer, OUT_EX_A)
+    append_pdf(writer, OUT_COVER_B)
+    append_pdf(writer, PORTAL)
+    append_pdf(writer, OUT_COVER_C)
+    append_pdf(writer, ONELEGAL)
+    with OUT_REQUEST.open("wb") as fh:
+        writer.write(fh)
+    print(f"Wrote {OUT_REQUEST} (request + Exhibits A-C)")
     return OUT_REQUEST
 
 
@@ -406,13 +454,8 @@ def build_exhibits() -> None:
 def assemble_packet() -> Path:
     writer = PdfWriter()
     append_pdf(writer, OUT_REQUEST)
+    append_pdf(writer, OUT_DECLARATION)
     append_pdf(writer, OUT_ORDER)
-    append_pdf(writer, OUT_COVER_A)
-    append_pdf(writer, OUT_EX_A)
-    append_pdf(writer, OUT_COVER_B)
-    append_pdf(writer, PORTAL)
-    append_pdf(writer, OUT_COVER_C)
-    append_pdf(writer, ONELEGAL)
     with OUT_PACKET.open("wb") as fh:
         writer.write(fh)
     print(f"Wrote {OUT_PACKET}")
@@ -425,14 +468,22 @@ def main() -> None:
             raise SystemExit(f"Missing {path}")
     for stale in MATTER.glob("*Sep 9 2026*.pdf"):
         stale.unlink()
-    build_request()
+    for stale in MATTER.glob(
+        "Request to Correct Case Title Packet (Request, Proposed Order, Exs A-C)*"
+    ):
+        stale.unlink()
+    request_pages = MATTER / f"_tmp_request_pages ({FILE_STAMP}).pdf"
+    build_request(request_pages)
+    build_declaration()
     build_proposed_order()
     build_exhibits()
+    attach_exhibits_to_request(request_pages)
+    request_pages.unlink(missing_ok=True)
     assemble_packet()
     for src, slug in SHORT_LINKS:
         dest = publish_short_link(src, slug)
         print(f"  short-link {slug} -> {dest.name}")
-    print("One Legal referred the caption fix to Santa Clara — file the packet.")
+    print("One Legal referred the caption fix to Santa Clara — file the three papers.")
     print("Do not amend the complaint. Do not reissue the summons unless asked.")
 
 
