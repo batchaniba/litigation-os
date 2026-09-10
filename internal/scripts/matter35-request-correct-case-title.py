@@ -149,10 +149,11 @@ def _header(d: PleadingPaper) -> None:
 
 def _sign(d: PleadingPaper, closer: str) -> None:
     sig_line = "___________________________________"
-    d.ensure_space(8)
+    d.ensure_space(9)
     d.write_line(f"Dated: {EXEC_DATE}", bold=False)
     d.blank_line()
     d.write_line("Respectfully submitted,", right=True, right_margin_offset=20)
+    d.blank_line()
     d.blank_line()
     if os.path.isfile(SIGNATURE_PATH):
         d.draw_signature_image(
