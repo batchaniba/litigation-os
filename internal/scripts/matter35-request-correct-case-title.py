@@ -8,8 +8,8 @@ One Legal Order #29111713 transmitted the defendants in the wrong order
 title the case "Brendan Ngwa Nforbi vs Does 2 through 20 et al."
 
 Do not amend the complaint. Do not reissue the summons unless the clerk
-requires it. Send the One Legal email first; file this request if they
-cannot correct Odyssey after acceptance.
+requires it. One Legal said ask Santa Clara; file this request on the
+existing case.
 
   python3 internal/scripts/matter35-request-correct-case-title.py
 """
@@ -413,7 +413,7 @@ def main() -> None:
     for src, slug in SHORT_LINKS:
         dest = publish_short_link(src, slug)
         print(f"  short-link {slug} -> {dest.name}")
-    print("Do not file until One Legal says they cannot correct Odyssey.")
+    print("One Legal referred the caption fix to Santa Clara — file the packet.")
     print("Do not amend the complaint. Do not reissue the summons unless asked.")
 
 

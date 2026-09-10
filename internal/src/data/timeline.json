@@ -106,18 +106,41 @@
   },
   {
     "date": "Sep. 10, 2026",
-    "event": "OPEN TASK \u2014 Send the One Legal email on Order #29111713 asking them to correct the Odyssey / public-portal short title in Ngwa Nforbi v. Ross Stores, Inc., et al. (Santa Clara 26CV501995) from 'Brendan Ngwa Nforbi vs Does 2 through 20 et al' to 'Brendan Ngwa Nforbi vs. Ross Stores, Inc., et al.' Party-grid order error on the original e-filing. Complaint and issued SUM-100 already name Ross first. File the executed Request to Correct Case Title only if One Legal cannot fix Odyssey. Do not amend. Do not reissue the summons unless the clerk requires it.",
+    "event": "SATISFIED \u2014 One Legal email on Order #29111713. One Legal said to ask Santa Clara. The Odyssey / public-portal short title still reads 'Brendan Ngwa Nforbi vs Does 2 through 20 et al.' File the September 10 Request to Correct Case Title packet. Do not amend. Do not reissue the summons unless the clerk requires it.",
+    "matters": [
+      35
+    ],
+    "type": "deadline",
+    "upcoming": false,
+    "actor": "you",
+    "source": "/documents/matter-35/EMAIL_DRAFT_One_Legal_Correct_Case_Title_Party_Order.txt"
+  },
+  {
+    "date": "Sep. 10, 2026",
+    "event": "RECEIVED \u2014 One Legal, on Order #29111713 (Santa Clara 26CV501995), directed Plaintiff to ask the Court. They will not correct the Odyssey short title themselves. That is the condition for filing the Request to Correct Case Title.",
+    "matters": [
+      35
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-35/Request to Correct Case Title Packet (Request, Proposed Order, Exs A-C) (Sep 10 2026).pdf"
+  },
+  {
+    "date": "Sep. 10, 2026",
+    "event": "FILE \u2014 Request to Correct Case Title packet in Ngwa Nforbi v. Ross Stores, Inc., et al. (Santa Clara 26CV501995). One Legal said ask the Court. E-file the September 10 combined packet only (request, [proposed] order, Exhibits A\u2013C) on the existing case. Do not amend. Do not reissue the summons unless the clerk requires it. No POS \u2014 no defendant has appeared. Document type \u2248 Request. After the clerk-stamp, lodge it and retire this row.",
     "matters": [
       35
     ],
     "type": "deadline",
     "upcoming": true,
     "actor": "you",
-    "source": "/documents/matter-35/EMAIL_DRAFT_One_Legal_Correct_Case_Title_Party_Order.txt"
+    "source": "/documents/matter-35/Request to Correct Case Title Packet (Request, Proposed Order, Exs A-C) (Sep 10 2026).pdf"
   },
   {
     "date": "Sep. 10, 2026",
-    "event": "EXECUTED (unfiled) \u2014 Request to Correct Case Title (clerical party-order error) in Ngwa Nforbi v. Ross Stores, Inc., et al. (26CV501995), dated September 10, 2026, with [proposed] order and Exhibits A\u2013C (complaint caption page; Sep. 8 portal print; One Legal Order #29111713 status). Plaintiff entered the One Legal party grid Does-first; the complaint and issued summons name Ross Stores, Inc. first. Do not file until One Legal says they cannot correct Odyssey. Do not amend the complaint.",
+    "event": "EXECUTED (unfiled) \u2014 Request to Correct Case Title (clerical party-order error) in Ngwa Nforbi v. Ross Stores, Inc., et al. (26CV501995), dated September 10, 2026, with [proposed] order and Exhibits A\u2013C. One Legal referred the caption fix to Santa Clara. Ready to e-file. Do not amend the complaint.",
     "matters": [
       35
     ],
@@ -2046,12 +2069,12 @@
   },
   {
     "date": "Sep. 9, 2026",
-    "event": "Meet-and-confer deadline (computed) as to The RK Logistics Group, Inc. \u2014 Newanforbi v. Randstad US, LLC et al. (26CV199902); CCP \u00a7430.41(a)(2) requires meet-and-confer at least 5 calendar days before the extended Sept. 14, 2026 responsive-pleading deadline, if RK Logistics intends to demur; otherwise it must file a declaration for the automatic 30-day extension. Randstad US, LLC's meet-and-confer remains Sept. 10, 2026.",
+    "event": "LAPSED \u2014 Meet-and-confer deadline (computed) as to The RK Logistics Group, Inc. \u2014 Newanforbi v. Randstad US, LLC et al. (26CV199902); CCP \u00a7430.41(a)(2) required meet-and-confer at least 5 calendar days before the extended Sept. 14, 2026 responsive-pleading deadline. That clock was September 9. If RK demurs without a timely conference it must file the statute's declaration. Randstad US, LLC's meet-and-confer remains Sept. 10, 2026.",
     "matters": [
       27
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "opposing",
     "source": "/documents/matter-27/Gmail - RK Logistics Extension Request to Sep 14 (Aug 21 2026).pdf"
   },

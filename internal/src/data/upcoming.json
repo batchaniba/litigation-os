@@ -34,14 +34,14 @@
   },
   {
     "date": "Sep. 10, 2026",
-    "event": "OPEN TASK — Send the One Legal email on Order #29111713 asking them to correct the Odyssey / public-portal short title in Ngwa Nforbi v. Ross Stores, Inc., et al. (Santa Clara 26CV501995) from 'Brendan Ngwa Nforbi vs Does 2 through 20 et al' to 'Brendan Ngwa Nforbi vs. Ross Stores, Inc., et al.' Party-grid order error on the original e-filing. Complaint and issued SUM-100 already name Ross first. File the executed Request to Correct Case Title only if One Legal cannot fix Odyssey. Do not amend. Do not reissue the summons unless the clerk requires it.",
+    "event": "FILE — Request to Correct Case Title packet in Ngwa Nforbi v. Ross Stores, Inc., et al. (Santa Clara 26CV501995). One Legal said ask the Court. E-file the September 10 combined packet only (request, [proposed] order, Exhibits A–C) on the existing case. Do not amend. Do not reissue the summons unless the clerk requires it. No POS — no defendant has appeared. Document type ≈ Request. After the clerk-stamp, lodge it and retire this row.",
     "matters": [
       35
     ],
     "type": "deadline",
     "upcoming": true,
     "actor": "you",
-    "source": "/documents/matter-35/EMAIL_DRAFT_One_Legal_Correct_Case_Title_Party_Order.txt"
+    "source": "/documents/matter-35/Request to Correct Case Title Packet (Request, Proposed Order, Exs A-C) (Sep 10 2026).pdf"
   },
   {
     "date": "Sep. 26, 2026",
@@ -318,17 +318,6 @@
     "upcoming": true,
     "actor": "opposing",
     "source": "/documents/matter-27/Letter Confirming 15-Day Extension of Randstad's Time to Respond (Aug 18 2026).pdf"
-  },
-  {
-    "date": "Sep. 9, 2026",
-    "event": "Meet-and-confer deadline (computed) as to The RK Logistics Group, Inc. — Newanforbi v. Randstad US, LLC et al. (26CV199902); CCP §430.41(a)(2) requires meet-and-confer at least 5 calendar days before the extended Sept. 14, 2026 responsive-pleading deadline, if RK Logistics intends to demur; otherwise it must file a declaration for the automatic 30-day extension. Randstad US, LLC's meet-and-confer remains Sept. 10, 2026.",
-    "matters": [
-      27
-    ],
-    "type": "deadline",
-    "upcoming": true,
-    "actor": "opposing",
-    "source": "/documents/matter-27/Gmail - RK Logistics Extension Request to Sep 14 (Aug 21 2026).pdf"
   },
   {
     "date": "Sep. 14, 2026",
