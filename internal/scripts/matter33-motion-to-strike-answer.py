@@ -27,6 +27,7 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPT_DIR / "lib"))
 sys.path.insert(0, str(SCRIPT_DIR))
 
+from matter33_counsel import counsel_pos_recipients  # noqa: E402
 from pdf_packet import assemble  # noqa: E402
 from pleading_paper import CONTENT_LEFT, PleadingPaper  # noqa: E402
 from proof_of_service import (  # noqa: E402
@@ -151,19 +152,8 @@ SIGNOFF_NAME = "BRENDAN NGWA NFORBI"
 SIGNOFF_ROLE = "Plaintiff, In Propria Persona"
 SIG_LINE = "___________________________________"
 
-SERVICE_RECIPIENTS = [
-    "William J. McMahon, Deputy Attorney General",
-    "Office of the Attorney General, California Department of Justice",
-    "1515 Clay Street, 20th Floor, P.O. Box 70550",
-    "Oakland, CA 94612-0550",
-    "Attorneys for Defendants Diana Candelaria and Steve Gordon",
-    "",
-    "Diana Candelaria and Steve Gordon",
-    "California Department of Motor Vehicles",
-    "Legal Affairs Division, Mail Station C128",
-    "2415 First Avenue",
-    "Sacramento, CA 95818",
-]
+# Tigno is PACER lead / attorney to be noticed. Do not omit him.
+SERVICE_RECIPIENTS = counsel_pos_recipients()
 
 # Body content for the Notice of Motion and Memorandum of Points and Authorities
 CONTENT: list[tuple[str, str]] = [
