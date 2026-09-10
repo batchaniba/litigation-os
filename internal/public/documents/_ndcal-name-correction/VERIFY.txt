@@ -13,6 +13,8 @@ Generated September 10, 2026. Target docket name: Brendan Ngwa Nforbi
 3. Complete the bracketed Civil L.R. 7-11(a) paragraph in each
    declaration after you hear back from counsel. Send the meet-and-
    confer draft first. Do not file until that paragraph is filled.
+   DAG Li gets one combined email covering Serrato (05953) and
+   Meza-Gonzalez (08271). Do not send him two.
 
 4. SERVICE is U.S. Mail under Fed. R. Civ. P. 5(b)(2)(C). Street
    addresses below are the ones already used on other papers in this
@@ -22,6 +24,7 @@ Generated September 10, 2026. Target docket name: Brendan Ngwa Nforbi
 4:26-cv-05953-ASK  (matter 24)
     docket name per portfolio : Brendan Ngehsi Newanforbi
     needs change             : YES
+    NOTE                     : L.R. 7-11(a) email is the combined Li draft covering 05953 and 08271.
 
 3:26-cv-07504-LJC  (matter 28)
     docket name per portfolio : Brendan Ngehsi Newanforbi
@@ -35,6 +38,7 @@ Generated September 10, 2026. Target docket name: Brendan Ngwa Nforbi
     docket name per portfolio : Nforbi
     needs change             : YES
     NOTE                     : Caption uses 4:26-cv-08271-ASK after the August 24, 2026 related-case order. Confirm the PACER party-tab string before filing.
+    NOTE                     : L.R. 7-11(a) email is the combined Li draft covering 05953 and 08271.
 
 3:26-cv-08272-LJC  (matter 33)
     docket name per portfolio : Nforbi

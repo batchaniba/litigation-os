@@ -574,10 +574,12 @@ def build_exhibit_cover(path: Path, case: Case) -> None:
     )
 
 
-# ------------------------------------------------------------ m&c e-mail
-def build_email(path: Path, case: Case) -> None:
+LI_MATTERS = {24, 32}
+
+
+def _email_text(case: Case) -> str:
     to = "; ".join(case.emails) or "[counsel of record]"
-    body = f"""To: {to}
+    return f"""To: {to}
 Subject: {case.case_no} — request to stipulate to a docket name correction (Civil L.R. 7-11(a))
 
 Dear {case.counsel_salutation},
@@ -611,7 +613,53 @@ Plaintiff, In Pro Per
 1455 Cat Tail Drive, Stockton, CA 95204
 (209) 801-4442 | bnn.cdl@gmail.com
 """
-    path.write_text(body, encoding="utf-8")
+
+
+def li_combined_email_text() -> str:
+    """One L.R. 7-11(a) email covering Serrato (24) and Meza (32)."""
+    return f"""To: Haiyang.Li@doj.ca.gov; Andy.Marquez@doj.ca.gov
+Subject: 4:26-cv-05953-ASK and 4:26-cv-08271-ASK — request to stipulate to docket name corrections (Civil L.R. 7-11(a))
+
+Dear Mr. Li,
+
+I write under Civil Local Rule 7-11(a) before filing administrative
+motions in two related Oakland cases, to ask whether you will stipulate.
+
+I am one person. I use one PACER account ({PACER_LOGIN}). That account
+records my first name as "Brendan" and my last name as "Ngwa Nforbi."
+The two dockets do not match that account:
+
+• 4:26-cv-05953-ASK (Serrato) identifies me as "Brendan Ngehsi Newanforbi."
+• 4:26-cv-08271-ASK (Meza-Gonzalez / Melano) identifies me as "Nforbi."
+
+Because of the mismatch, the CAND ECF Help Desk advised me on
+{HELPDESK_DATE} that it cannot link these cases to my account, and that
+the fix is to ask the Court to correct the names on the dockets first.
+The result is that I cannot e-file in either case and must file on paper.
+
+I intend to ask the Court to state my name on both dockets as
+"{TARGET_NAME_TC}." The request changes nothing else: no party is added,
+dropped, or substituted; no claim or allegation is amended; no deadline
+moves. Rule 25 is not implicated, because I am the same person before and
+after.
+
+Would you stipulate as to both cases? If so, I will prepare a short
+stipulation and proposed order for your signature in each action. If you
+would rather I proceed by motion, or if you oppose, please tell me so I
+can state your position accurately in my Rule 7-11(a) declarations.
+
+Thank you.
+
+{TARGET_NAME_TC}
+Plaintiff, In Pro Per
+1455 Cat Tail Drive, Stockton, CA 95204
+(209) 801-4442 | bnn.cdl@gmail.com
+"""
+
+
+def build_email(path: Path, case: Case) -> None:
+    text = li_combined_email_text() if case.matter in LI_MATTERS else _email_text(case)
+    path.write_text(text, encoding="utf-8")
 
 
 # -------------------------------------------------------------------- main
@@ -637,6 +685,8 @@ def main() -> None:
         "3. Complete the bracketed Civil L.R. 7-11(a) paragraph in each",
         "   declaration after you hear back from counsel. Send the meet-and-",
         "   confer draft first. Do not file until that paragraph is filled.",
+        "   DAG Li gets one combined email covering Serrato (05953) and",
+        "   Meza-Gonzalez (08271). Do not send him two.",
         "",
         "4. SERVICE is U.S. Mail under Fed. R. Civ. P. 5(b)(2)(C). Street",
         "   addresses below are the ones already used on other papers in this",
@@ -677,9 +727,17 @@ def main() -> None:
         verify.append(f"    needs change             : {'YES' if case.needs_change else 'verify'}")
         if case.verify_note:
             verify.append(f"    NOTE                     : {case.verify_note}")
+        if case.matter in LI_MATTERS:
+            verify.append(
+                "    NOTE                     : L.R. 7-11(a) email is the combined "
+                "Li draft covering 05953 and 08271."
+            )
         if not case.recipients:
             verify.append("    NOTE                     : recipients blank — fill POS and e-mail.")
         verify.append("")
+
+    combined_li = OUTDIR / "Li - EMAIL_DRAFT_meet_and_confer_05953_and_08271.txt"
+    combined_li.write_text(li_combined_email_text(), encoding="utf-8")
 
     (OUTDIR / "VERIFY.txt").write_text("\n".join(verify), encoding="utf-8")
     print(f"\n{made} packets + VERIFY.txt -> {OUTDIR.relative_to(ROOT.parent)}")
