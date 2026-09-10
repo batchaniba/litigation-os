@@ -28,12 +28,14 @@ sys.path.insert(0, str(SCRIPT_DIR / "lib"))
 from exhibit_cover import write_exhibit_cover  # noqa: E402
 from pdf_packet import append_pdf  # noqa: E402
 from pleading_paper import CONTENT_LEFT, COURT_LINE1, PleadingPaper  # noqa: E402
+from short_link import publish_short_link  # noqa: E402
 from signature_stamp import SIGNATURE_NATIVE_PX, SIGNATURE_PATH  # noqa: E402
 
 ROOT = SCRIPT_DIR.parents[1]
 MATTER = ROOT / "internal/public/documents/matter-35"
 
-EXEC_DATE = "September 9, 2026"
+EXEC_DATE = "September 10, 2026"
+FILE_STAMP = "Sep 10 2026"
 CASE_NO = "26CV501995"
 CORRECT_TITLE = "Brendan Ngwa Nforbi vs. Ross Stores, Inc., et al."
 WRONG_TITLE = "Brendan Ngwa Nforbi vs Does 2 through 20 et al"
@@ -42,10 +44,10 @@ FOOTER = (
 )
 
 OUT_REQUEST = MATTER / (
-    "Request to Correct Case Title - Clerical Party-Order Error (Sep 9 2026).pdf"
+    f"Request to Correct Case Title - Clerical Party-Order Error ({FILE_STAMP}).pdf"
 )
 OUT_ORDER = MATTER / (
-    "[Proposed] Order Correcting Case Title - 26CV501995 (Sep 9 2026).pdf"
+    f"[Proposed] Order Correcting Case Title - 26CV501995 ({FILE_STAMP}).pdf"
 )
 OUT_COVER_A = MATTER / "Exhibit A Cover - Complaint Caption Page (26CV501995).pdf"
 OUT_COVER_B = MATTER / "Exhibit B Cover - Public Portal Wrong Title (26CV501995).pdf"
@@ -53,7 +55,7 @@ OUT_COVER_C = MATTER / "Exhibit C Cover - One Legal Order 29111713 Title (26CV50
 OUT_EX_A = MATTER / "Exhibit A - Complaint Caption Page (26CV501995).pdf"
 OUT_PACKET = MATTER / (
     "Request to Correct Case Title Packet (Request, Proposed Order, Exs A-C) "
-    "(Sep 9 2026).pdf"
+    f"({FILE_STAMP}).pdf"
 )
 
 COMPLAINT = MATTER / (
@@ -66,6 +68,18 @@ PORTAL = MATTER / (
 ONELEGAL = MATTER / (
     "One Legal Order 29111713 Status - Wrong Case Title Does 2 through 20 "
     "(Sep 8 2026).pdf"
+)
+
+SHORT_LINKS = (
+    (OUT_PACKET, "ross-title-packet"),
+    (OUT_REQUEST, "ross-title"),
+    (OUT_ORDER, "ross-title-order"),
+    (OUT_COVER_A, "ross-title-ex-a-cover"),
+    (OUT_EX_A, "ross-title-ex-a"),
+    (OUT_COVER_B, "ross-title-ex-b-cover"),
+    (OUT_COVER_C, "ross-title-ex-c-cover"),
+    (PORTAL, "ross-title-ex-b"),
+    (ONELEGAL, "ross-title-ex-c"),
 )
 
 PLAINTIFF_BLOCK = [
@@ -390,10 +404,15 @@ def main() -> None:
     for path in (COMPLAINT, PORTAL, ONELEGAL):
         if not path.is_file():
             raise SystemExit(f"Missing {path}")
+    for stale in MATTER.glob("*Sep 9 2026*.pdf"):
+        stale.unlink()
     build_request()
     build_proposed_order()
     build_exhibits()
     assemble_packet()
+    for src, slug in SHORT_LINKS:
+        dest = publish_short_link(src, slug)
+        print(f"  short-link {slug} -> {dest.name}")
     print("Do not file until One Legal says they cannot correct Odyssey.")
     print("Do not amend the complaint. Do not reissue the summons unless asked.")
 
