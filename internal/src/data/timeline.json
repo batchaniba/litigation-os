@@ -23,7 +23,7 @@
   },
   {
     "date": "Sep. 22, 2026",
-    "event": "WATCH \u2014 Defendants' consent or declination to magistrate-judge jurisdiction due in Nforbi v. Candelaria et al. (3:26-cv-08272-LJC). Set by Dkt. 12 (Sep. 8, text-only clerk's notice). Dkt. 14 is a second notice filed in the wrong case \u2014 DISREGARD. Plaintiff already consented (Dkt. 3). A single declination reassigns the case to a district judge. Counsel: Field Tignino, DAG.",
+    "event": "WATCH \u2014 Defendants' consent or declination to magistrate-judge jurisdiction due in Nforbi v. Candelaria et al. (3:26-cv-08272-LJC). Set by Dkt. 12 (Sep. 8, text-only clerk's notice). Dkt. 14 is a second notice filed in the wrong case \u2014 DISREGARD. Plaintiff already consented (Dkt. 3). A single declination reassigns the case to a district judge. Counsel: Fiel Dizon Tigno, Supervising DAG (PACER lead); William J. McMahon signed Dkt. 11.",
     "matters": [
       33
     ],
@@ -33,8 +33,20 @@
     "source": "/documents/matter-33/ndcal/PACER Docket Report - N.D. Cal. 3-26-cv-08272-LJC (Sep 9 2026).pdf"
   },
   {
+    "date": "Sep. 10, 2026",
+    "event": "REVISED (unfiled) \u2014 Motion to Strike POS in Nforbi v. Candelaria et al. (3:26-cv-08272-LJC) now names Fiel Dizon Tigno, Supervising Deputy Attorney General (PACER lead / attorney to be noticed), ahead of William J. McMahon. The September 5 draft had omitted Tigno. Still unfiled.",
+    "matters": [
+      33
+    ],
+    "type": "event",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-33/ndcal/Proof of Service - Motion to Strike Answer (N.D. Cal. 3-26-cv-08272-LJC) (Sep 5 2026).pdf"
+  },
+  {
     "date": "Sep. 9, 2026",
-    "event": "PACER \u2014 Docket report for Nforbi v. Candelaria et al. (3:26-cv-08272-LJC), pulled Sep. 9, 2026 evening (2 billable pages, $0.20). Assigned Mag. Lisa J. Cisneros (San Francisco). Last numbered entry Dkt. 14. Dkt. 7 summons returned (served Aug. 14 / answer Sep. 4). Dkt. 8 admin motion to relate (Aug. 25). Dkt. 9 FAC POS (Aug. 26). Dkt. 10 Notice Identifying Operative FAC (filed Aug. 26, entered Aug. 27). Dkt. 11 Answer by Field Tignino, DAG (Sep. 4). Dkt. 12 clerk's MJ-consent notice (Sep. 8; due Sep. 22). Dkt. 13 related-case denial (Sep. 8). Dkt. 14 second clerk's notice \u2014 DISREGARD, filed in incorrect case. Tignino: 1515 Clay Street, 20th Floor, P.O. Box 70550, Oakland, CA 94612-0550; (510) 622-2214; field.tignino@doj.ca.gov.",
+    "event": "PACER \u2014 Docket report for Nforbi v. Candelaria et al. (3:26-cv-08272-LJC), pulled Sep. 9, 2026 evening (2 billable pages, $0.20). Assigned Mag. Lisa J. Cisneros (San Francisco). Last numbered entry Dkt. 14. Dkt. 7 summons returned (served Aug. 14 / answer Sep. 4). Dkt. 8 admin motion to relate (Aug. 25). Dkt. 9 FAC POS (Aug. 26). Dkt. 10 Notice Identifying Operative FAC (filed Aug. 26, entered Aug. 27). Dkt. 11 Answer (Sep. 4) signed by William J. McMahon, DAG; PACER lead is Fiel Dizon Tigno, Supervising DAG. Dkt. 12 clerk's MJ-consent notice (Sep. 8; due Sep. 22). Dkt. 13 related-case denial (Sep. 8). Dkt. 14 second clerk's notice \u2014 DISREGARD, filed in incorrect case. Tigno: 1515 Clay Street, 20th Floor, P.O. Box 70550, Oakland, CA 94612-0550; (510) 622-2214; fiel.tigno@doj.ca.gov.",
     "matters": [
       33
     ],
