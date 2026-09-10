@@ -9,9 +9,10 @@ complaint," and that the fix is to ask each court to change the name on the
 docket first, then request the merge.
 
 This builds, per case: a Civil L.R. 7-11 administrative motion to correct
-the docket name, a supporting declaration under 28 U.S.C. section 1746, a
-proposed order, a proof of service, a combined packet, and a meet-and-confer
-email draft for L.R. 7-11(a).
+the docket name (Exhibit A bound on — four-sided-border cover plus the
+September 1 Help Desk thread), a supporting declaration under 28 U.S.C.
+section 1746, a proposed order, a proof of service, a combined packet, and
+a meet-and-confer email draft for L.R. 7-11(a).
 
 Nothing here changes a claim, a party, or a deadline. It is a docket-caption
 correction so the plaintiff can e-file.
@@ -35,6 +36,7 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPT_DIR))
 sys.path.insert(0, str(SCRIPT_DIR / "lib"))
 
+from exhibit_cover import write_exhibit_cover  # noqa: E402
 from pdf_packet import assemble  # noqa: E402
 from pleading_paper import CONTENT_LEFT, PleadingPaper  # noqa: E402
 from proof_of_service import (  # noqa: E402
@@ -553,22 +555,23 @@ def build_pos(path: Path, case: Case) -> Path:
     return build_proof_of_service(path, fields)
 
 
-# ------------------------------------------------------------ m&c e-mail
 def build_exhibit_cover(path: Path, case: Case) -> None:
-    d = PleadingPaper(str(path), doc_title_footer=f"EXHIBIT A -- {case.short}")
-    _header(d, case)
-    _caption(d, case, ["EXHIBIT A", "CAND ECF HELP DESK", "CORRESPONDENCE"])
-    d.write_line("EXHIBIT A", bold=True, center=True)
-    d.blank_line()
-    d.write_wrapped(
-        "September 1, 2026 correspondence with the Northern District of "
-        "California ECF Help Desk: Plaintiff's 8:00 a.m. request that one "
-        f"PACER account ({PACER_LOGIN}) be linked to all five pending actions, "
-        "and the Help Desk's 12:06 p.m. reply refusing to merge the two name "
-        "forms until the Court changes the names on the dockets.",
-        first_indent=0,
+    """Four-sided-border Diamond cover — not 28-line pleading paper."""
+    write_exhibit_cover(
+        path,
+        court="UNITED STATES DISTRICT COURT",
+        court_line2="NORTHERN DISTRICT OF CALIFORNIA",
+        caption=case.short,
+        case_no=f"Case No. {case.case_no}",
+        exhibit="A",
+        title="CAND ECF Help Desk Correspondence",
+        details=[
+            "September 1, 2026 — 8:00 a.m. request and 12:06 p.m. refusal",
+            f"PACER login {PACER_LOGIN} — one account, two docket name forms",
+            "Help Desk will not merge until the Court corrects the docket",
+        ],
+        footer=f"Administrative Motion to Correct Name — {case.short} — Exhibit A",
     )
-    d.save()
 
 
 # ------------------------------------------------------------ m&c e-mail
@@ -628,7 +631,8 @@ def main() -> None:
         "   NOT already match the ECF account and still needs a motion.",
         "",
         "2. Exhibit A (September 1 Help Desk thread, 12:06 p.m. refusal) is",
-        "   already bound into each packet after the declaration.",
+        "   bound onto each administrative motion after a four-sided-border",
+        "   cover, and into each packet after the declaration.",
         "",
         "3. Complete the bracketed Civil L.R. 7-11(a) paragraph in each",
         "   declaration after you hear back from counsel. Send the meet-and-",
@@ -643,6 +647,7 @@ def main() -> None:
     made = 0
     for case in CASES:
         stem = f"{case.slug}-matter-{case.matter}"
+        motion_pages = OUTDIR / f"{stem} - _tmp_motion_pages.pdf"
         motion = OUTDIR / f"{stem} - Admin Motion to Correct Name ({FILE_STAMP}).pdf"
         decl = OUTDIR / f"{stem} - Declaration ISO Name Correction ({FILE_STAMP}).pdf"
         cover = OUTDIR / f"{stem} - Exhibit A Cover ({FILE_STAMP}).pdf"
@@ -651,13 +656,18 @@ def main() -> None:
         packet = OUTDIR / f"{stem} - NAME CORRECTION PACKET ({FILE_STAMP}).pdf"
         email = OUTDIR / f"{stem} - EMAIL_DRAFT_meet_and_confer.txt"
 
-        build_motion(motion, case)
+        build_motion(motion_pages, case)
         build_declaration(decl, case)
         build_exhibit_cover(cover, case)
         build_order(order, case)
         build_pos(pos, case)
         build_email(email, case)
-        pages = assemble([motion, decl, cover, EXHIBIT_A, order, pos], packet)
+        assemble([motion_pages, cover, EXHIBIT_A], motion)
+        pages = assemble(
+            [motion_pages, decl, cover, EXHIBIT_A, order, pos],
+            packet,
+        )
+        motion_pages.unlink()
         made += 1
         print(f"  [{case.case_no}] matter {case.matter} — packet {pages} pp. "
               f"(docket name now: {case.docket_name})")
