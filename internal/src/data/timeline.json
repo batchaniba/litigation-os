@@ -34,6 +34,45 @@
   },
   {
     "date": "Sep. 10, 2026",
+    "event": "DRAFTED, NOT FILED \u2014 Plaintiff-drafted Civil L.R. 7-11 / 7-12 stipulations and proposed orders to correct the docket name to Brendan Ngwa Nforbi in Newanforbi v. Serrato (4:26-cv-05953-ASK) and Nforbi v. Meza-Gonzalez (4:26-cv-08271-ASK). Name correction only. No deadline, CMC, MTD, service, or Rule 12 change. Plaintiff e-signed /s/ Brendan Ngwa Nforbi. Li's signature blank. Cover email authorizes those two named .docx files only. Do not treat as filed until clerk-stamped. Do not treat the docket name as changed until the Court enters the order.",
+    "matters": [
+      24,
+      32
+    ],
+    "type": "event",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-24/Stipulation and Proposed Order to Correct Plaintiff's Name on the Docket (4-26-cv-05953-ASK) (Sep 10 2026).docx"
+  },
+  {
+    "date": "Sep. 10, 2026",
+    "event": "RECEIVED \u2014 DAG Haiyang A. Li replied at 8:55 a.m. to the Civil L.R. 7-11(a) name-correction email in 4:26-cv-05953-ASK and 4:26-cv-08271-ASK: \"Please send over a draft stipulation and I will review.\" Addressed Plaintiff as Mr. Newanforbi. Not a signed stipulation. Not a filing. Plaintiff drafts.",
+    "matters": [
+      24,
+      32
+    ],
+    "type": "event",
+    "upcoming": false,
+    "filed": false,
+    "actor": "opposing",
+    "source": "/documents/matter-24/Gmail - Li request to stipulate to docket name corrections (Sep 10 2026).pdf"
+  },
+  {
+    "date": "Sep. 10, 2026",
+    "event": "SENT \u2014 Civil L.R. 7-11(a) email to DAG Haiyang A. Li (cc Andy Marquez, Diana Montufar) asking whether he will stipulate to docket name corrections in Newanforbi v. Serrato (4:26-cv-05953-ASK) and Nforbi v. Meza-Gonzalez (4:26-cv-08271-ASK). Name form only. No party substitution. No deadline move. Scheduled 8:00 a.m.",
+    "matters": [
+      24,
+      32
+    ],
+    "type": "event",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-24/Gmail - Li request to stipulate to docket name corrections (Sep 10 2026).pdf"
+  },
+  {
+    "date": "Sep. 10, 2026",
     "event": "REVISED (unfiled) \u2014 Motion to Strike POS in Nforbi v. Candelaria et al. (3:26-cv-08272-LJC) now names Fiel Dizon Tigno, Supervising Deputy Attorney General (PACER lead / attorney to be noticed), ahead of William J. McMahon. The September 5 draft had omitted Tigno. Still unfiled.",
     "matters": [
       33
