@@ -58,7 +58,7 @@ SERRATO = StipCase(
     short="NFORBI v. SERRATO",
     docket_name="Brendan Ngehsi Newanforbi",
     left_caption=[
-        ("BRENDAN NGEHSI NEWANFORBI,", True),
+        ("BRENDAN NGWA NFORBI,", True),
         ("          Plaintiff,", False),
         ("", False),
         ("     v.", False),
@@ -106,7 +106,7 @@ MEZA = StipCase(
     short="NFORBI v. MEZA-GONZALEZ",
     docket_name="Nforbi",
     left_caption=[
-        ("NFORBI,", True),
+        ("BRENDAN NGWA NFORBI,", True),
         ("          Plaintiff,", False),
         ("", False),
         ("     v.", False),
@@ -292,7 +292,7 @@ def build_docx(case: StipCase) -> Path:
             f"The parties stipulate, and respectfully request that the Court "
             f"order, that the Clerk correct the docket and the CM/ECF party "
             f"record in this action to identify Plaintiff as "
-            f"\"{TARGET_NAME_TC}.\""
+            f"\"{TARGET_NAME}.\""
         ),
         (
             "This stipulation corrects the form of Plaintiff's name only. It "
@@ -367,6 +367,32 @@ def build_docx(case: StipCase) -> Path:
     add_para(doc, "___________________________________")
     add_para(doc, f"HAIYANG A. LI (SBN {LI_SBN})", bold=True)
     add_para(doc, "Deputy Attorney General")
+    doc.add_page_break()
+    add_para(doc, "UNITED STATES DISTRICT COURT", bold=True, center=True)
+    add_para(doc, "NORTHERN DISTRICT OF CALIFORNIA", bold=True, center=True)
+    add_para(doc, "OAKLAND DIVISION", bold=True, center=True)
+    add_para(doc, "")
+    order_table = doc.add_table(rows=1, cols=2)
+    order_left, order_right = order_table.rows[0].cells
+    order_right_lines = [
+        (f"Case No. {case.case_no}", False),
+        ("", False),
+        ("[PROPOSED] ORDER CORRECTING", True),
+        ("PLAINTIFF'S NAME ON THE", True),
+        ("DOCKET", True),
+        ("[Civil L.R. 7-11, 7-12]", True),
+        ("", False),
+        ("Judge: Hon. Ajay S. Krishnan", False),
+    ]
+    for cell, lines in ((order_left, case.left_caption), (order_right, order_right_lines)):
+        cell.text = ""
+        for i, (text, bold) in enumerate(lines):
+            p = cell.paragraphs[0] if i == 0 else cell.add_paragraph()
+            p.paragraph_format.space_before = Pt(0)
+            p.paragraph_format.space_after = Pt(0)
+            p.paragraph_format.line_spacing = 1.0
+            run = p.add_run(text)
+            _set_run(run, qn, bold=bold, size=Pt(11))
     add_para(doc, "")
     add_para(doc, "[PROPOSED] ORDER", bold=True, center=True)
     add_para(doc, "")
@@ -379,7 +405,7 @@ def build_docx(case: StipCase) -> Path:
     add_para(doc, "")
     order_paras = [
         f"1.  The Clerk shall correct the docket and the CM/ECF party record "
-        f"in this action to identify Plaintiff as \"{TARGET_NAME_TC}.\"",
+        f"in this action to identify Plaintiff as \"{TARGET_NAME}.\"",
         "2.  This Order corrects the form of Plaintiff's name only. It "
         "effects no substitution of parties, no amendment of any claim or "
         "allegation, and no change to any deadline, hearing, conference, "
