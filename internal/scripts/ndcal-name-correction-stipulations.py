@@ -298,9 +298,10 @@ CANDELARIA = StipCase(
 )
 
 # McMahon redline (11:01 a.m.) dropped Tigno and the Civil L.R. 5-1(i)(3)
-# attestation. This counterpart keeps Tigno in the counsel-of-record recital
-# (he is PACER lead / attorney to be noticed), lets McMahon be the sole
-# signing DAG, and restores the attestation. Do not file McMahon's file.
+# attestation. Plaintiff authorized omitting Tigno from this paper only.
+# This counterpart follows that: McMahon is the sole defense counsel named
+# and the sole signing DAG. The attestation stays. Do not file McMahon's file.
+# Other Candelaria papers still name Tigno first (PACER lead).
 CANDELARIA_COUNTER = StipCase(
     matter=33,
     outdir=ROOT / "public/documents/matter-33/ndcal",
@@ -312,9 +313,8 @@ CANDELARIA_COUNTER = StipCase(
     left_caption=list(CANDELARIA.left_caption),
     defendant_intro=(
         "Defendants Diana Candelaria and Steve Gordon, by and through "
-        "their counsel of record Fiel Dizon Tigno, Supervising Deputy "
-        "Attorney General (attorney to be noticed), and William J. McMahon, "
-        "Deputy Attorney General,"
+        "their counsel of record William J. McMahon, Deputy Attorney "
+        "General,"
     ),
     preserve_clauses=list(CANDELARIA.preserve_clauses),
     order_preserve=CANDELARIA.order_preserve,
