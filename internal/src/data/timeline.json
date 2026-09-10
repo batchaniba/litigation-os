@@ -34,6 +34,38 @@
   },
   {
     "date": "Sep. 10, 2026",
+    "event": "DRAFTED (unfiled) \u2014 Civil L.R. 7-11 administrative motions to correct Plaintiff's name on the five live N.D. Cal. dockets to Brendan Ngwa Nforbi, so PACER login bngwanforbi can be linked for e-filing. Target matches the account (first Brendan, last Ngwa Nforbi). Newanforbi \u2192 Ngwa Nforbi on 4:26-cv-05953-ASK (24), 3:26-cv-07504-LJC (28), and 4:26-cv-09249-ASK (29). Nforbi \u2192 Ngwa Nforbi on 4:26-cv-08271-ASK (32) and 3:26-cv-08272-LJC (33). Each packet is motion, declaration, Exhibit A (Sep. 1 Help Desk refusal), proposed order, and mail POS. Not a party substitution. Send the L.R. 7-11(a) emails and fill the bracketed declaration paragraph before mailing. Do not e-file these; paper / mail until the dockets are conformed.",
+    "matters": [
+      24,
+      28,
+      29,
+      32,
+      33
+    ],
+    "type": "event",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/_ndcal-name-correction/05953-matter-24 - NAME CORRECTION PACKET (Sep 10 2026).pdf"
+  },
+  {
+    "date": "Sep. 1, 2026",
+    "event": "RECEIVED \u2014 N.D. Cal. ECF Help Desk reply, 12:06 p.m., to Plaintiff's 8:00 a.m. pro se e-filing request. The desk will not merge Brendan Ngehsi Newanforbi and Ngwa Nforbi / Nforbi into one e-filing account because \"the case has to reflect what is listed on the complaint.\" If Plaintiff wants the names changed, submit a request to the court. After the dockets are changed, ask again to merge into one account. Docket clerks: https://cand.uscourts.gov/about-court/clerks-office/civil-docketing-assignments. The five Civil L.R. 7-11 name-correction packets (drafted Sep. 10) are that request.",
+    "matters": [
+      24,
+      28,
+      29,
+      32,
+      33
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "filed": false,
+    "actor": "court",
+    "source": "/documents/matter-28/Gmail - Pro se e-filing one account two name forms - CAND ECF Help Desk (Reply Sep 1 2026).pdf"
+  },
+  {
+    "date": "Sep. 10, 2026",
     "event": "REVISED (unfiled) \u2014 Motion to Strike POS in Nforbi v. Candelaria et al. (3:26-cv-08272-LJC) now names Fiel Dizon Tigno, Supervising Deputy Attorney General (PACER lead / attorney to be noticed), ahead of William J. McMahon. The September 5 draft had omitted Tigno. Still unfiled.",
     "matters": [
       33
@@ -1070,7 +1102,7 @@
   },
   {
     "date": "Sep. 1, 2026",
-    "event": "SENT \u2014 email to N.D. Cal. ECF Help Desk (ECFHelpDesk@cand.uscourts.gov) requesting pro se e-filing on one PACER account (bngwanforbi) for five open cases, and disclosing both docket name forms: Brendan Ngehsi Newanforbi (3:26-cv-07504-LJC, 3:26-cv-09249-ASK, 4:26-cv-05953-ASK) and Ngwa Nforbi / Nforbi (3:26-cv-08271-PHK, 3:26-cv-08272-LJC). PACER Most Recent Case box: 3:26-cv-07504. Sent 8:00 a.m. from bnn.cdl@gmail.com. Not yet approved. Do not e-file until the help desk confirms the account is live and linked.",
+    "event": "SENT \u2014 email to N.D. Cal. ECF Help Desk (ECFHelpDesk@cand.uscourts.gov) requesting pro se e-filing on one PACER account (bngwanforbi) for five open cases, and disclosing both docket name forms: Brendan Ngehsi Newanforbi (3:26-cv-07504-LJC, 3:26-cv-09249-ASK, 4:26-cv-05953-ASK) and Ngwa Nforbi / Nforbi (3:26-cv-08271-PHK, 3:26-cv-08272-LJC). PACER Most Recent Case box: 3:26-cv-07504. Sent 8:00 a.m. from bnn.cdl@gmail.com. The Help Desk answered the same day at 12:06 p.m.: it will not merge the names until the Court changes the dockets. That reply is a separate entry.",
     "matters": [
       24,
       28,

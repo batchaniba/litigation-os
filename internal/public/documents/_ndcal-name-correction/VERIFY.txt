@@ -1,0 +1,40 @@
+VERIFY BEFORE FILING — N.D. Cal. name-correction packets
+Generated September 10, 2026. Target docket name: Brendan Ngwa Nforbi
+
+1. Pull the exact party-name string from the PACER party tab in each
+   case. The strings below came from the portfolio record, not from
+   PACER. If a docket reads 'Nforbi' rather than 'Ngwa Nforbi', it does
+   NOT already match the ECF account and still needs a motion.
+
+2. Exhibit A (September 1 Help Desk thread, 12:06 p.m. refusal) is
+   already bound into each packet after the declaration.
+
+3. Complete the bracketed Civil L.R. 7-11(a) paragraph in each
+   declaration after you hear back from counsel. Send the meet-and-
+   confer draft first. Do not file until that paragraph is filled.
+
+4. SERVICE is U.S. Mail under Fed. R. Civ. P. 5(b)(2)(C). Street
+   addresses below are the ones already used on other papers in this
+   portfolio. Do not switch to e-mail unless counsel has given written
+   consent under Rule 5(b)(2)(E).
+
+4:26-cv-05953-ASK  (matter 24)
+    docket name per portfolio : Brendan Ngehsi Newanforbi
+    needs change             : YES
+
+3:26-cv-07504-LJC  (matter 28)
+    docket name per portfolio : Brendan Ngehsi Newanforbi
+    needs change             : YES
+
+4:26-cv-09249-ASK  (matter 29)
+    docket name per portfolio : Brendan Ngehsi Newanforbi
+    needs change             : YES
+
+4:26-cv-08271-ASK  (matter 32)
+    docket name per portfolio : Nforbi
+    needs change             : YES
+    NOTE                     : Caption uses 4:26-cv-08271-ASK after the August 24, 2026 related-case order. Confirm the PACER party-tab string before filing.
+
+3:26-cv-08272-LJC  (matter 33)
+    docket name per portfolio : Nforbi
+    needs change             : YES
