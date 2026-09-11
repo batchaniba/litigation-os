@@ -47,8 +47,9 @@ Do not mark a citation VERIFIED from memory. Run the funnel and record evidence.
 | Source | Status |
 |---|---|
 | CourtListener `/api/rest/v4/search/` | OK (unauthenticated) |
+| CourtListener `/api/rest/v4/citation-lookup/` | Needs `COURTLISTENER_TOKEN` (alias: `COURTLISTENER_API_TOKEN`) |
 | CAP `static.case.law` CasesMetadata + HTML | OK |
-| `api.case.law` JSON / CL citation-lookup | Need auth |
+| `api.case.law` JSON | Need auth |
 | Justia | Cloudflare 403 |
 | Google Scholar | Unreliable (often 403) |
 
