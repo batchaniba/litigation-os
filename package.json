@@ -28,9 +28,9 @@
     "next": "node internal/scripts/next-actions.mjs",
     "generate:readme": "node internal/scripts/generate-readme-tables.mjs",
     "prepare": "node internal/scripts/install-githooks.mjs",
-    "validate": "npm run lint && node internal/scripts/sync-document-registry.mjs --check && node internal/scripts/sync-matter-summaries.mjs --check && node internal/scripts/sync-upcoming.mjs --check && node internal/scripts/sync-short-links.mjs --check && node internal/scripts/generate-readme-tables.mjs --check && node internal/scripts/validate-portfolio.mjs && npm run citations:check && npm run test:coverage",
+    "validate": "npm run lint && node internal/scripts/sync-document-registry.mjs --check && node internal/scripts/generate-readme-tables.mjs --check && node internal/scripts/validate-portfolio.mjs && npm run citations:check && npm run test:coverage",
     "scaffold:matter": "node internal/scripts/scaffold-matter.mjs",
-    "prebuild": "npm run sync:registry && npm run sync:summaries && npm run sync:upcoming",
+    "prebuild": "npm run sync:summaries && npm run sync:upcoming && npm run sync:short-links",
     "index:build": "python3 internal/scripts/build-document-index.py",
     "index:search": "python3 internal/scripts/search-documents.py",
     "citations:index": "python3 internal/scripts/build-citation-index.py",
@@ -44,7 +44,8 @@
     "extract:matter1": "node internal/scripts/extract-matter-pdfs.mjs",
     "court:resolve": "node internal/scripts/courtlistener/resolve-dockets.mjs",
     "court:sync": "node internal/scripts/courtlistener/sync-dockets.mjs",
-    "court:reconcile": "node internal/scripts/courtlistener/reconcile-timeline.mjs"
+    "court:reconcile": "node internal/scripts/courtlistener/reconcile-timeline.mjs",
+    "postinstall": "npm run sync:summaries && npm run sync:upcoming && npm run sync:short-links"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
