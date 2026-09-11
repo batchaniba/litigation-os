@@ -483,7 +483,7 @@ def _caption(d: PleadingPaper, case: NameCase, right_title: list[str]) -> None:
 
 
 def _sign_for(d: PleadingPaper, case: NameCase, *, declaration: bool = False) -> None:
-    d.ensure_space(10)
+    d.ensure_space(8)
     if declaration:
         d.write_line("I declare under penalty of perjury that the foregoing")
         d.write_line(f"is true and correct. Executed on {EXEC_DATE},")
@@ -498,8 +498,9 @@ def _sign_for(d: PleadingPaper, case: NameCase, *, declaration: bool = False) ->
         SIGNATURE_NATIVE_PX[0],
         SIGNATURE_NATIVE_PX[1],
         SIG_LINE,
-        width=220,
+        width=185,
         x_offset=15,
+        height_scale=1.0,
     )
     d.write_line(SIG_LINE, right=True, right_margin_offset=20)
     d.write_line(NEW_NAME_CAPS, bold=True, right=True, right_margin_offset=20)
@@ -518,18 +519,22 @@ def _aka_other(case: NameCase) -> str:
     return " and as Ngwa Nforbi"
 
 
-def _motion_title(case: NameCase) -> str:
-    return (
-        "UNOPPOSED ADMINISTRATIVE MOTION TO CONFORM"
-        if case.unopposed
-        else "ADMINISTRATIVE MOTION TO CONFORM"
-    )
+def _motion_title() -> str:
+    return "ADMINISTRATIVE MOTION TO CONFORM"
+
+
+def _caption_title() -> list[str]:
+    return [
+        "ADMIN. MOTION",
+        "TO CONFORM",
+        "PLAINTIFF'S NAME",
+        "ON THE DOCKET",
+    ]
 
 
 def _motion_path(case: NameCase) -> Path:
-    tag = "Unopposed " if case.unopposed else ""
     return case.out_dir / (
-        f"{tag}Administrative Motion - Conform Plaintiff's Name "
+        f"Administrative Motion - Conform Plaintiff's Name "
         f"to Brendan Ngwa Nforbi ({EXEC_DATE}).pdf"
     )
 
@@ -555,10 +560,9 @@ def _pos_path(case: NameCase) -> Path:
 
 
 def _packet_path(case: NameCase) -> Path:
-    tag = " (unopposed)" if case.unopposed else " (no non-opposition on the record)"
     return case.out_dir / (
-        f"Name Conform Administrative Motion Packet - Brendan Ngwa Nforbi"
-        f"{tag} ({EXEC_DATE}).pdf"
+        f"Name Conform Administrative Motion Packet - Brendan Ngwa Nforbi "
+        f"({EXEC_DATE}).pdf"
     )
 
 
@@ -575,12 +579,8 @@ def build_motion(case: NameCase) -> Path:
     path.parent.mkdir(parents=True, exist_ok=True)
     d = PleadingPaper(str(path), doc_title_footer=case.footer)
     _header(d)
-    title_lines = [
-        _motion_title(case),
-        "PLAINTIFF'S NAME ON THE DOCKET",
-    ]
-    _caption(d, case, title_lines)
-    d.write_line(_motion_title(case), bold=True, center=True)
+    _caption(d, case, _caption_title())
+    d.write_line(_motion_title(), bold=True, center=True)
     d.write_line("PLAINTIFF'S NAME ON THE DOCKET", bold=True, center=True)
     d.blank_line()
     d.write_wrapped(
@@ -768,11 +768,7 @@ def build_order(case: NameCase) -> Path:
     )
     d.write_line("[PROPOSED] ORDER", bold=True, center=True)
     d.blank_line()
-    considered = (
-        "Plaintiff's unopposed Civil L.R. 7-11 administrative motion"
-        if case.unopposed
-        else "Plaintiff's Civil L.R. 7-11 administrative motion"
-    )
+    considered = "Plaintiff's Civil L.R. 7-11 administrative motion"
     d.write_wrapped(
         f"The Court has considered {considered} to conform Plaintiff's "
         "name on the docket, the supporting declaration, and Exhibit A. "
@@ -842,8 +838,7 @@ def build_exhibit_cover(case: NameCase) -> Path:
 def build_pos(case: NameCase) -> Path:
     path = _pos_path(case)
     title = (
-        ("Unopposed " if case.unopposed else "")
-        + "Civil L.R. 7-11 Administrative Motion to Conform Plaintiff's "
+        "Civil L.R. 7-11 Administrative Motion to Conform Plaintiff's "
         f"Name on the Docket; Declaration; Exhibit A; [Proposed] Order ({EXEC_DATE})"
     )
     build_proof_of_service(
@@ -871,9 +866,8 @@ def build_pos(case: NameCase) -> Path:
 def build_email(case: NameCase) -> Path:
     path = _email_path(case)
     to = "; ".join(case.email_to) if case.email_to else "[counsel]"
-    kind = "unopposed administrative motion" if case.unopposed else "administrative motion"
     subject = (
-        f"{case.case_no} — Civil L.R. 7-11 {kind} to conform "
+        f"{case.case_no} — Civil L.R. 7-11 administrative motion to conform "
         f"Plaintiff's name to {NEW_NAME}"
     )
     if case.unopposed:
