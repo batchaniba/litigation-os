@@ -95,7 +95,7 @@ jobs:
       - name: Open or update review PR
         uses: peter-evans/create-pull-request@v7
         with:
-          branch: intel/counsel-dossier
+          branch: intel/counsel-dossier/${{ github.run_id }}
           delete-branch: true
           title: "Counsel dossier: ${{ inputs.name }}"
           commit-message: "feat(intel): counsel dossier for ${{ inputs.name }}"
