@@ -822,12 +822,15 @@ def build_order(case: NameCase) -> Path:
         first_indent=0,
     )
     d.blank_line()
+    d.ensure_space(7)
     d.write_line("IT IS SO ORDERED.", bold=True)
     d.blank_line()
     d.blank_line()
-    d.write_line("Dated: ________________     ________________________________")
-    d.write_line(f"                            {case.judge}")
-    d.write_line("                            United States Magistrate Judge")
+    d.write_line("Dated: ________________")
+    d.blank_line()
+    d.write_line(SIG_LINE)
+    d.write_line(case.judge)
+    d.write_line("United States Magistrate Judge")
     d.save()
     return path
 
