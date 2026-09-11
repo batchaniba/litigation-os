@@ -421,7 +421,7 @@ def build_proof_of_service(path: Path | str, fields: ProofOfServiceFields) -> Pa
     sig_height = sig_width * SIGNATURE_ASPECT  # native aspect × 1.15 upward stretch
     gap_decl_to_sig = 40.0
     name_below = 40.0
-    footer_pad = 16.0  # clearance from typed name down to the bottom border
+    footer_pad = 22.0  # clearance from typed name down to the bottom border
     footer_block = (
         FS  # declaration
         + gap_decl_to_sig
@@ -431,10 +431,10 @@ def build_proof_of_service(path: Path | str, fields: ProofOfServiceFields) -> Pa
         + footer_pad
     )
     border_bottom_y = PAGE_H - BORDER_B
-    decl_y = border_bottom_y + footer_block - FS
-    min_decl_from_body = y - 32
-    if min_decl_from_body < decl_y:
-        decl_y = min_decl_from_body
+    safe_decl_y = border_bottom_y + footer_block - FS
+    near_body_y = y - 24
+    # Sit near the body when there is room; never drop below the safe floor.
+    decl_y = near_body_y if near_body_y > safe_decl_y else safe_decl_y
     _draw_signature_block(c, fields, decl_y)
 
     c.save()
