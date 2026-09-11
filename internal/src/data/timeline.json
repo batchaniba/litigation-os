@@ -12,6 +12,30 @@
     "source": "/documents/matter-27/POS-040 Proof of Service - Amended CCP 425.115 Notice - Randstad US LLC (Sheriff 4-page packet, Served Aug 21 2026, Levying Officer 2026028894).pdf"
   },
   {
+    "date": "Sep. 8, 2026",
+    "event": "RECEIVED \u2014 Giomara Guardado (DOJ legal secretary) e-mail, 5:50 p.m. Pacific, serving the Joint Case Management Conference Statement in Newanforbi v. Serrato (4:26-cv-05953-ASK). To bnn.cdl@gmail.com; cc Haiyang A. Li. Attached the unstamped service copy. Asked not to be added to the service list (intermittent support only). The PACER-stamped paper is already Dkt. 24. Do not resend Plaintiff's JCMS draft.",
+    "matters": [
+      24
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "filed": false,
+    "actor": "opposing",
+    "source": "/documents/matter-24/Gmail - Newanforbi v Serrato - Guardado Service of Joint CMC Statement (Sep 8 2026).pdf"
+  },
+  {
+    "date": "Sep. 8, 2026",
+    "event": "RECEIVED \u2014 Suga A. Ikeda (Morgan Lewis) e-mail, 4:42 p.m. Pacific, serving Dkt. 9 (Order Setting Initial CMC and ADR Deadlines) and a Certificate of Service in Newanforbi v. Amazon.com Services, LLC et al. (4:26-cv-09249-ASK). To bnn.cdl@gmail.com; cc Andrew P. Frederick. The COS is dated September 8, 2026, email-only, correct federal caption. It is service of the CMC order, not a PACER-stamped refile of rejected Dkt. 10 (Dkt. 10 was standing-order service under the Alameda caption 26CV201554). Do not assign this COS a docket number until a clerk stamp appears.",
+    "matters": [
+      29
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "filed": false,
+    "actor": "opposing",
+    "source": "/documents/matter-29/Gmail - Amazon CMC Order and Certificate of Service (Sep 8 2026).pdf"
+  },
+  {
     "date": "Oct. 8, 2026",
     "event": "HEARING \u2014 Status (Pretrial Scheduling) Conference in Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR), Thursday, October 8, 2026, 11:00 a.m. Zoom. Set by Dkt. 8 (filed Sep. 8; dated Sep. 4). The courtroom deputy sends dial-in about one week before. Appear. Magistrate referral under E.D. Cal. L.R. 302(c)(21) because Plaintiff is pro se.",
     "matters": [
