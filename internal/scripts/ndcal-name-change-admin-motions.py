@@ -15,6 +15,7 @@ Dated September 14, 2026. Signed. Do not treat as filed.
 """
 from __future__ import annotations
 
+import re
 import sys
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -43,9 +44,10 @@ NEW_NAME_CAPS = "BRENDAN NGWA NFORBI"
 FIRST_NAME = "Brendan"
 LAST_NAME = "Ngwa Nforbi"
 BOLD_FIRST = f"<<b:{FIRST_NAME}>>"
-BOLD_LAST = f"<<b:{LAST_NAME}>>"
+BOLD_NFORBI = "<<b:Nforbi>>"
+BOLD_LAST = f"Ngwa {BOLD_NFORBI}"
 BOLD_NAME = f"{BOLD_FIRST} {BOLD_LAST}"
-BOLD_NAME_CAPS = "<<b:BRENDAN>> <<b:NGWA NFORBI>>"
+BOLD_NAME_CAPS = f"<<b:BRENDAN>> NGWA <<b:NFORBI>>"
 FIRST_LAST_GLOSS = (
     f"first name {BOLD_FIRST}, last name {BOLD_LAST}"
 )
@@ -218,7 +220,7 @@ CASES: list[NameCase] = [
             "Plaintiff conferred with Blaze Van Dine and Eric Martinez. "
             "They stated Defendants will not oppose this request if the "
             "paper makes clear that the two name forms are one person. "
-            "Section II and the accompanying declaration do that. They did "
+            "Section III and the accompanying declaration do that. They did "
             "not agree to a Civil L.R. 7-12 stipulation. The accompanying "
             "declaration satisfies Civil L.R. 7-11(a)."
         ),
@@ -540,17 +542,29 @@ def _sign_for(d: PleadingPaper, case: NameCase, *, declaration: bool = False) ->
     d.write_line(NEW_NAME_CAPS, bold=True, right=True, right_margin_offset=20)
     d.write_line("Plaintiff, In Propria Persona", right=True, right_margin_offset=20)
     d.write_line(
-        f"(presently on this docket as {case.current_docket_name})",
+        f"(presently on this docket as {_bold_nforbi_name(case.current_docket_name)})",
         right=True,
         right_margin_offset=20,
         size=10,
     )
 
 
-def _aka_other(case: NameCase) -> str:
-    if case.current_docket_name != "Brendan Ngehsi Newanforbi":
-        return " and as Brendan Ngehsi Newanforbi"
-    return " and as Ngwa Nforbi"
+def _bold_nforbi_name(name: str) -> str:
+    """Bold the token Nforbi / NFORBI without touching Newanforbi."""
+    return re.sub(
+        r"\bNforbi\b",
+        BOLD_NFORBI,
+        re.sub(r"\bNFORBI\b", "<<b:NFORBI>>", name),
+    )
+
+
+def _same_person_line() -> str:
+    """Requested name plus every docket form, Nforbi listed on its own."""
+    return (
+        f"{BOLD_NAME} is the same natural person as "
+        f"Ngwa {BOLD_NFORBI} and as {BOLD_NFORBI} and as "
+        "Brendan Ngehsi Newanforbi."
+    )
 
 
 def _pacer_name_ask(case: NameCase) -> str:
@@ -558,8 +572,8 @@ def _pacer_name_ask(case: NameCase) -> str:
     if case.last_name_on_docket:
         return (
             f" This docket currently records last name as the single word "
-            f"{case.last_name_on_docket}. The ask is that the Clerk change "
-            f"that last-name field from {case.last_name_on_docket} to "
+            f"{BOLD_NFORBI}. The ask is that the Clerk change "
+            f"that last-name field from {BOLD_NFORBI} to "
             f"{BOLD_LAST} so it matches Plaintiff's PACER account (login "
             f"bngwanforbi). First name is {BOLD_FIRST}."
         )
@@ -648,7 +662,7 @@ def build_motion(case: NameCase) -> Path:
     d.blank_line()
     d.write_wrapped(
         f"Plaintiff {BOLD_NAME}, appearing in propria persona and presently "
-        f"identified on this docket as {case.current_docket_name}, moves under "
+        f"identified on this docket as {_bold_nforbi_name(case.current_docket_name)}, moves under "
         "Civil Local Rule 7-11 for an order conforming the docket name. This "
         "is Plaintiff's request. It is not a Civil L.R. 7-12 stipulation.",
         first_indent=0,
@@ -656,34 +670,6 @@ def build_motion(case: NameCase) -> Path:
     d.blank_line()
     d.ensure_space(3)
     d.write_line("I.", bold=True, center=True)
-    d.write_line("RELIEF REQUESTED", bold=True, center=True)
-    d.blank_line()
-    d.write_wrapped(
-        f"The Clerk shall amend the docket, the short title, the CM/ECF "
-        f"party record, and the caption of this action so that Plaintiff is "
-        f"identified as {BOLD_NAME} — {FIRST_LAST_GLOSS} — matching "
-        f"Plaintiff's existing PACER account (login "
-        f"bngwanforbi). This is a clean swap of the party name."
-        f"{_pacer_name_ask(case)} Subsequent "
-        f"papers shall use that caption.",
-        first_indent=0,
-    )
-    d.blank_line()
-    d.ensure_space(3)
-    d.write_line("II.", bold=True, center=True)
-    d.write_line("THE TWO NAMES ARE ONE PERSON", bold=True, center=True)
-    d.blank_line()
-    d.write_wrapped(
-        f"{BOLD_NAME} is the same natural person as {case.current_docket_name}"
-        f"{_aka_other(case)}. The names are one person. This motion does not "
-        "add, drop, or substitute any party. It is not an amendment of any "
-        "claim, defense, or operative pleading. It is not a Fed. R. Civ. P. "
-        "25 substitution.",
-        first_indent=0,
-    )
-    d.blank_line()
-    d.ensure_space(3)
-    d.write_line("III.", bold=True, center=True)
     d.write_line("THE ECF HELP DESK CANNOT LINK THE ACCOUNT", bold=True, center=True)
     d.write_line("UNTIL THE DOCKET MATCHES", bold=True, center=True)
     d.blank_line()
@@ -711,6 +697,33 @@ def build_motion(case: NameCase) -> Path:
         "account instead of mailing five copies of every paper. Mailing "
         "also carries weekend and holiday lag and the risk that a paper "
         "reaches the Clerk after the date it was sent.",
+        first_indent=0,
+    )
+    d.blank_line()
+    d.ensure_space(3)
+    d.write_line("II.", bold=True, center=True)
+    d.write_line("RELIEF REQUESTED", bold=True, center=True)
+    d.blank_line()
+    d.write_wrapped(
+        f"The Clerk shall amend the docket, the short title, the CM/ECF "
+        f"party record, and the caption of this action so that Plaintiff is "
+        f"identified as {BOLD_NAME} — {FIRST_LAST_GLOSS} — matching "
+        f"Plaintiff's existing PACER account (login "
+        f"bngwanforbi). This is a clean swap of the party name."
+        f"{_pacer_name_ask(case)} Subsequent "
+        f"papers shall use that caption.",
+        first_indent=0,
+    )
+    d.blank_line()
+    d.ensure_space(3)
+    d.write_line("III.", bold=True, center=True)
+    d.write_line("THE TWO NAMES ARE ONE PERSON", bold=True, center=True)
+    d.blank_line()
+    d.write_wrapped(
+        f"{_same_person_line()} The names are one person. This motion does not "
+        "add, drop, or substitute any party. It is not an amendment of any "
+        "claim, defense, or operative pleading. It is not a Fed. R. Civ. P. "
+        "25 substitution.",
         first_indent=0,
     )
     d.blank_line()
@@ -745,7 +758,7 @@ def build_motion(case: NameCase) -> Path:
     d.write_wrapped(
         "Nothing in this motion is a waiver of any claim, defense, "
         "objection, or right except the identity of Plaintiff as the same "
-        "natural person and the docket name requested in Section I.",
+        "natural person and the docket name requested in Section II.",
         first_indent=0,
     )
     d.blank_line()
@@ -792,15 +805,7 @@ def build_declaration(case: NameCase) -> Path:
     )
     d.blank_line()
     d.write_wrapped(
-        f"2.  I am the same natural person as {case.current_docket_name}"
-        f"{_aka_other(case)}. The names are one person."
-        f"{_pacer_name_ask(case)} I am not asking the "
-        "Court to add, drop, or substitute any party.",
-        first_indent=0,
-    )
-    d.blank_line()
-    d.write_wrapped(
-        "3.  My PACER login is bngwanforbi. On September 1, 2026 I asked "
+        "2.  My PACER login is bngwanforbi. On September 1, 2026 I asked "
         "the CAND ECF Help Desk to link that account to this action and to "
         "my other N.D. Cal. actions. The Help Desk replied the same day "
         "that it cannot link an action to that account until the docket "
@@ -810,12 +815,7 @@ def build_declaration(case: NameCase) -> Path:
     )
     d.blank_line()
     d.write_wrapped(
-        f"4.  {case.conferral_decl}",
-        first_indent=0,
-    )
-    d.blank_line()
-    d.write_wrapped(
-        "5.  I recently learned that this District permits pro se "
+        "3.  I recently learned that this District permits pro se "
         "litigants to e-file. That is why I asked the ECF Help Desk on "
         "September 1, 2026 to link PACER login bngwanforbi. Until the "
         "docket name matches, I must mail papers. Mailing introduces "
@@ -827,6 +827,20 @@ def build_declaration(case: NameCase) -> Path:
         "will avoid that delay, let the Clerk and counsel receive papers "
         "the same day, and let me use one PACER account instead of "
         "mailing each paper five times.",
+        first_indent=0,
+    )
+    d.blank_line()
+    d.write_wrapped(
+        f"4.  I, {BOLD_NAME}, am the same natural person as "
+        f"Ngwa {BOLD_NFORBI} and as {BOLD_NFORBI} and as "
+        "Brendan Ngehsi Newanforbi."
+        f"{_pacer_name_ask(case)} I am not asking the "
+        "Court to add, drop, or substitute any party.",
+        first_indent=0,
+    )
+    d.blank_line()
+    d.write_wrapped(
+        f"5.  {case.conferral_decl}",
         first_indent=0,
     )
     d.blank_line()
@@ -883,10 +897,11 @@ def build_order(case: NameCase) -> Path:
     )
     d.blank_line()
     d.write_wrapped(
-        f"2.  {BOLD_NAME} is the same natural person previously identified "
-        f"on this docket as {case.current_docket_name}. This Order does not "
-        "add, drop, or substitute any party and does not amend any claim "
-        "or defense.",
+        f"2.  {_same_person_line()} "
+        f"{BOLD_NAME} is the same natural person previously identified "
+        f"on this docket as {_bold_nforbi_name(case.current_docket_name)}. "
+        "This Order does not add, drop, or substitute any party and does "
+        "not amend any claim or defense.",
         first_indent=0,
     )
     d.blank_line()
