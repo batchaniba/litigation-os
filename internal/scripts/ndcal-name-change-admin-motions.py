@@ -524,7 +524,7 @@ def _sign_for(d: PleadingPaper, case: NameCase, *, declaration: bool = False) ->
         SIG_LINE,
         width=215,
         x_offset=15,
-        height_scale=1.0,
+        height_scale=1.2,
     )
     d.write_line(SIG_LINE, right=True, right_margin_offset=20)
     d.write_line(NEW_NAME_CAPS, bold=True, right=True, right_margin_offset=20)
@@ -907,7 +907,7 @@ def build_pos(case: NameCase) -> Path:
     path = _pos_path(case)
     title = (
         "Civil L.R. 7-11 Administrative Motion to Conform Plaintiff's "
-        f"Name on the Docket; Declaration; Exhibit A; [Proposed] Order ({EXEC_DATE})"
+        "Name; Declaration; Exhibit A; [Proposed] Order"
     )
     build_proof_of_service(
         path,
@@ -925,7 +925,7 @@ def build_pos(case: NameCase) -> Path:
             stamp_signature=True,
             district_line=DISTRICT_NDCAL,
             by_email=True,
-            signature_on_second_page=True,
+            signature_on_second_page=False,
         ),
     )
     return path
