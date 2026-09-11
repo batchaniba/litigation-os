@@ -19,7 +19,7 @@
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { loadMatters } from "../load-matters.mjs";
+import { loadMatters } from "../../load-matters.mjs";
 import { budgetAllows, createClient, readCourtListenerToken } from "../client.mjs";
 import { loadLedger } from "../io.mjs";
 import { validateMatter } from "../../lib/matter-schema.mjs";
