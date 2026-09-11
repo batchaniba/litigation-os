@@ -78,10 +78,16 @@ class NameCase:
     preserve: list[str]
     unopposed: bool
     short_slug: str
+    file_short: str
     extra_right: list[tuple[str, bool, bool]] = field(default_factory=list)
     email_to: list[str] = field(default_factory=list)
     email_extra: str = ""
     caption_short: str = ""
+
+    @property
+    def file_tag(self) -> str:
+        docket = self.case_no.replace(":", "-")
+        return f"{self.file_short} (N.D. Cal. {docket})"
 
 
 CASES: list[NameCase] = [
@@ -141,6 +147,7 @@ CASES: list[NameCase] = [
         ],
         unopposed=True,
         short_slug="name-24",
+        file_short="Serrato",
         email_to=["Haiyang.Li@doj.ca.gov"],
         caption_short="NEWANFORBI v. SERRATO",
     ),
@@ -207,6 +214,7 @@ CASES: list[NameCase] = [
         ],
         unopposed=True,
         short_slug="name-28",
+        file_short="Smith",
         email_to=[
             "blaze@sims-law.net",
             "emartinez@sims-law.net",
@@ -286,6 +294,7 @@ CASES: list[NameCase] = [
         ],
         unopposed=False,
         short_slug="name-29",
+        file_short="Amazon",
         email_to=[
             "andrew.frederick@morganlewis.com",
             "jstanzick@seyfarth.com",
@@ -365,6 +374,7 @@ CASES: list[NameCase] = [
         ],
         unopposed=True,
         short_slug="name-32",
+        file_short="Meza-Gonzalez",
         extra_right=[("Related: 4:26-cv-05953-ASK", False, False)],
         email_to=["Haiyang.Li@doj.ca.gov"],
         email_extra=(
@@ -440,6 +450,7 @@ CASES: list[NameCase] = [
         ],
         unopposed=False,
         short_slug="name-33",
+        file_short="Candelaria",
         email_to=["fiel.tigno@doj.ca.gov", "William.McMahon@doj.ca.gov"],
         email_extra=(
             "I am not representing that you have stipulated or that you "
@@ -537,40 +548,43 @@ def _caption_title() -> list[str]:
 
 def _motion_path(case: NameCase) -> Path:
     return case.out_dir / (
-        f"Administrative Motion - Conform Plaintiff's Name "
-        f"to Brendan Ngwa Nforbi ({EXEC_DATE}).pdf"
+        f"Administrative Motion - Conform Plaintiff's Name - "
+        f"{case.file_tag} ({EXEC_DATE}).pdf"
     )
 
 
 def _decl_path(case: NameCase) -> Path:
     return case.out_dir / (
-        f"Declaration ISO Administrative Motion - Conform Plaintiff's Name "
-        f"({EXEC_DATE}).pdf"
+        f"Declaration ISO Administrative Motion - Conform Plaintiff's Name - "
+        f"{case.file_tag} ({EXEC_DATE}).pdf"
     )
 
 
 def _order_path(case: NameCase) -> Path:
     return case.out_dir / (
-        f"Proposed Order - Conform Plaintiff's Name to Brendan Ngwa Nforbi "
-        f"({EXEC_DATE}).pdf"
+        f"Proposed Order - Conform Plaintiff's Name - "
+        f"{case.file_tag} ({EXEC_DATE}).pdf"
     )
 
 
 def _pos_path(case: NameCase) -> Path:
     return case.out_dir / (
-        f"Proof of Service - Name Conform Administrative Motion ({EXEC_DATE}).pdf"
+        f"Proof of Service - Name Conform Administrative Motion - "
+        f"{case.file_tag} ({EXEC_DATE}).pdf"
     )
 
 
 def _packet_path(case: NameCase) -> Path:
     return case.out_dir / (
-        f"Name Conform Administrative Motion Packet - Brendan Ngwa Nforbi "
-        f"({EXEC_DATE}).pdf"
+        f"Name Conform Administrative Motion Packet - "
+        f"{case.file_tag} ({EXEC_DATE}).pdf"
     )
 
 
 def _cover_path(case: NameCase) -> Path:
-    return case.out_dir / f"Exhibit A Cover - ECF Help Desk ({EXEC_DATE}).pdf"
+    return case.out_dir / (
+        f"Exhibit A Cover - ECF Help Desk - {case.file_tag} ({EXEC_DATE}).pdf"
+    )
 
 
 def _email_path(case: NameCase) -> Path:
