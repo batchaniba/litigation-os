@@ -49,6 +49,16 @@ const OPTIONAL = {
   note: isStr,
   policy_limits: (v) => isStr(v) || isObj(v) || Array.isArray(v),
   serviceTracking: (v) => isObj(v) || Array.isArray(v),
+  opposing_counsel: (v) =>
+    Array.isArray(v) &&
+    v.every(
+      (c) =>
+        isObj(c) &&
+        isNonEmptyStr(c.name) &&
+        (c.attorney_id === undefined || isNum(c.attorney_id)) &&
+        (c.firm === undefined || isStr(c.firm)) &&
+        (c.dossier === undefined || isStr(c.dossier)),
+    ),
 };
 
 /** Validate a parsed matter JSON; returns an array of human-readable issues (empty = valid). */
