@@ -336,7 +336,7 @@ export function analyzeSubjects(sample) {
 }
 
 /** Honest identity labeling: pinned attorney ID vs name-based match. */
-export function identityConfidence({ attorney_id, firm } = {}) {
+export function identityConfidence({ attorney_id } = {}) {
   if (attorney_id != null) {
     return {
       level: "verified",
@@ -520,7 +520,7 @@ async function main() {
     linked_matters: matterNumber ? [matterNumber] : [],
     generated_at: new Date().toISOString(),
     source: "courtlistener",
-    identity: identityConfidence({ attorney_id: attorneyIdValue, firm }),
+    identity: identityConfidence({ attorney_id: attorneyIdValue }),
     history,
     clients: analyzeClients(history.sample),
     subjects: analyzeSubjects(history.sample),
