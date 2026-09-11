@@ -49,7 +49,7 @@ BOLD_NAME_CAPS = "<<b:BRENDAN>> <<b:NGWA NFORBI>>"
 FIRST_LAST_GLOSS = (
     f"first name {BOLD_FIRST}, last name {BOLD_LAST}"
 )
-SIG_LINE = "___________________________________"
+SIG_LINE = "________________________________________"
 HELP_DESK = (
     DOCS
     / "matter-28"
@@ -506,22 +506,23 @@ def _caption(d: PleadingPaper, case: NameCase, right_title: list[str]) -> None:
 
 
 def _sign_for(d: PleadingPaper, case: NameCase, *, declaration: bool = False) -> None:
-    d.ensure_space(8)
+    d.ensure_space(10)
     if declaration:
         d.write_line("I declare under penalty of perjury that the foregoing")
-        d.write_line(f"is true and correct. Executed on {EXEC_DATE},")
-        d.write_line("at Stockton, California.")
+        d.write_line(f"is true and correct. Signed on {EXEC_DATE},")
+        d.write_line("at Milpitas, California.")
     else:
         d.write_line(f"Dated: {EXEC_DATE}")
         d.blank_line()
         d.write_line("Respectfully submitted,", right=True, right_margin_offset=20)
+    d.blank_line()
     d.blank_line()
     d.draw_signature_image(
         SIGNATURE_PATH,
         SIGNATURE_NATIVE_PX[0],
         SIGNATURE_NATIVE_PX[1],
         SIG_LINE,
-        width=185,
+        width=215,
         x_offset=15,
         height_scale=1.0,
     )
