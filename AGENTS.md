@@ -17,3 +17,23 @@ For project structure and existing development workflows, consult README.md and 
 ## Counsel dossiers
 
 Opposing-counsel identity/role research lives under `internal/docs/counsel/`. Seeded: Kabat Chapman & Ozmer (Williams / Chapman) at [`internal/docs/counsel/kcoz/`](internal/docs/counsel/kcoz/). Append PACER pulls there. Those dockets are not related cases. Do not email counsel about the research.
+
+## Runtime boundary: Python vs Node
+
+`internal/scripts/` contains two runtimes. Do not mix them.
+
+**Node (.mjs)** — the build/validation/sync pipeline. These run in CI, the
+pre-commit hook, and `npm run` scripts:
+- `validate-portfolio.mjs` — data validation (required CI check)
+- `sync-*.mjs` — derived data generation (registry, manifest, summaries, upcoming, short-links)
+- `load-matters.mjs`, `lib/matter-schema.mjs` — shared loaders and schemas
+- `courtlistener/*.mjs` — docket sync
+
+**Python (.py)** — one-off document generation and filling. These are
+matter-specific utilities (e.g. `fill-matter-12-*.py`, `build-citation-index.py`)
+run manually by Aliko. They are **not** part of CI, the build, or any npm script.
+
+Rules:
+- New automation that runs in CI or `npm run` must be Node (.mjs).
+- Python scripts must not be added to `package.json` scripts or workflow steps.
+- Shared logic (matter loading, validation) lives in Node; do not duplicate it in Python.
