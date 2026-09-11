@@ -9,6 +9,8 @@ import { formatCurrency } from "../utils/formatters";
 import { isArchivedMatter, isOpenLifecycle } from "../utils/matterLifecycle";
 import { useNextActions } from "../hooks/useNextActions";
 import { NextActionsPanel } from "./NextActionsPanel";
+import { timeline } from "../data/timeline";
+import syncState from "../data/courtlistener/sync-state.json";
 
 const totalMatters = cases.length;
 // "Active Matters" is the open-docket count -- still on the docket, settled
@@ -57,9 +59,21 @@ export const DashboardTab = ({ setClusterFilter, setActiveTab }) => {
   const { queue, mine } = useNextActions(30);
   const [mineOnly, setMineOnly] = useState(false);
   const nextMine = mine[0];
+  // Data freshness: latest verification across timeline events.
+  const verifiedDates = timeline.map((e) => e.verified_at).filter(Boolean).sort();
+  const dataAsOf = verifiedDates.length ? verifiedDates[verifiedDates.length - 1] : null;
+  const clMatters = syncState?.matters ? Object.keys(syncState.matters).length : 0;
+  const clStatus = clMatters > 0 ? `${clMatters} dockets` : "paused";
 
   return (
     <div className="dashboard-view">
+      <div className="data-freshness-badge" role="status">
+        {dataAsOf ? <span>Portfolio data as of {dataAsOf}</span> : <span>Portfolio data date unknown</span>}
+        <span className="freshness-sep">·</span>
+        <span className={clMatters > 0 ? "freshness-ok" : "freshness-paused"}>
+          CourtListener sync: {clStatus}
+        </span>
+      </div>
       {/* Stats Row */}
       <div className="dashboard-stats">
         {[
