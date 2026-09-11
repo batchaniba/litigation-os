@@ -16,6 +16,7 @@ import { loadMatters } from "../load-matters.mjs";
 import { budgetAllows, createClient, readCourtListenerToken } from "./client.mjs";
 import { isFederalMatter } from "./courts.mjs";
 import { normalizeDocketEntry } from "./entries.mjs";
+import { normalizeOpinion } from "./opinions.mjs";
 import {
   loadLedger,
   loadReview,
@@ -121,7 +122,28 @@ export async function syncDockets({
       normalizeDocketEntry(entry, { matter: row.number, docketId, ingestedAt }),
     );
     normalized.push(...rows);
-    perMatter.push({ matter: row.number, docketId, pulled: rows.length });
+
+    // Opinions: new published opinions on bound dockets become timeline facts.
+    const clusters = await client.listOpinionClusters({
+      docketId,
+      afterClusterId: cursor.last_opinion_cluster_id ?? null,
+    });
+    const opinionRows = [];
+    for (const cluster of clusters) {
+      const opinions = await client.listClusterOpinions({ clusterId: cluster.id });
+      for (const opinion of opinions) {
+        opinionRows.push(
+          normalizeOpinion(opinion, cluster, { matter: row.number, docketId, ingestedAt }),
+        );
+      }
+    }
+    normalized.push(...opinionRows);
+    perMatter.push({
+      matter: row.number,
+      docketId,
+      pulled: rows.length,
+      opinionsPulled: opinionRows.length,
+    });
   }
 
   const result = reconcileEntries({
@@ -140,10 +162,17 @@ export async function syncDockets({
     const incoming = normalized.filter((entry) => entry.matter === row.number);
     const prior = nextSync.matters[String(row.number)] ?? {};
     const last = incoming.at(-1);
+    const incomingOpinions = normalized.filter(
+      (entry) =>
+        entry.matter === row.number && entry.courtlistener_cluster_id != null,
+    );
+    const lastCluster = incomingOpinions.at(-1);
     nextSync.matters[String(row.number)] = {
       docket_id: row.courtlistener.docket_id,
       last_entry_id: last?.courtlistener_entry_id ?? prior.last_entry_id ?? null,
       last_entry_number: last?.entry_number ?? prior.last_entry_number ?? null,
+      last_opinion_cluster_id:
+        lastCluster?.courtlistener_cluster_id ?? prior.last_opinion_cluster_id ?? null,
       last_synced_at: ingestedAt,
     };
   }
