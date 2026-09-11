@@ -4,7 +4,7 @@
   "case_no": "4:26-cv-05953-ASK",
   "court": "USDC N.D. Cal.",
   "claims": "42 USC 1983: Fourteenth Amendment (Substantive & Procedural Due Process), First Amendment (Retaliation); Declaratory Relief",
-  "status": "Rule 26(a)(1) served on Li by email Sep. 8, 8:59 p.m. (disclosures + house POS). Do not file. Sep. 15 Zoom CMC live. MTD Sep. 30. Dkt. 22 unsigned.",
+  "status": "Serrato's Rule 26(a)(1) received Sep. 9 (Montufar; dated Sep. 8). Plaintiff's went Sep. 8, 8:59 p.m. Do not file either set. Sep. 15 Zoom CMC live. MTD Sep. 30. Dkt. 22 unsigned.",
   "status_label": "Appear Sep. 15 CMC",
   "lifecycle": "active",
   "proceeding": "federal_civil",
@@ -40,6 +40,14 @@
     "California Attorney General Information Bulletin No. DLE-2024-05 (April 3, 2024) — mandatory guidance directing all law enforcement to certify when statutory elements met"
   ],
   "documents": [
+    {
+      "path": "/documents/matter-24/Gmail - Serrato Initial Disclosures from Montufar (Received Sep 9 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-24/Defendant Serrato's Rule 26(a)(1) Initial Disclosures (Dated Sep 8, Served Sep 9 2026).pdf",
+      "filed": false
+    },
     {
       "path": "/documents/matter-24/Gmail - Newanforbi v Serrato - Rule 26(a)(1) Initial Disclosures to Li (Sent Sep 8 2026).pdf",
       "filed": false
