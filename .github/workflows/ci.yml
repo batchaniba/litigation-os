@@ -1,8 +1,9 @@
 name: CI
 
-# Runners are paused while GitHub billing/spending limit is blocking jobs.
-# Restore push + pull_request when Actions can start again.
 on:
+  push:
+    branches: [main]
+  pull_request:
   workflow_dispatch:
 
 jobs:

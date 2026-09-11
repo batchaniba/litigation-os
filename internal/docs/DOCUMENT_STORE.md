@@ -58,9 +58,8 @@ Do **not** put new PDFs anywhere else, and do not `git add -f` them onto
 
 ## Two CI paths
 
-Those workflows are currently **dispatch-only** (GitHub billing is blocking
-runners). Restore `push` / `pull_request` in `.github/workflows/*.yml` when
-Actions can start again. The jobs below stay as written.
+Those workflows run on `push` / `pull_request` (plus manual dispatch).
+The jobs below stay as written.
 
 **Data job** (`.github/workflows/ci.yml` → `build-and-validate`):
 
