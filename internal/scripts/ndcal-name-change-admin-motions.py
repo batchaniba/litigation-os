@@ -656,6 +656,21 @@ def build_motion(case: NameCase) -> Path:
         first_indent=0,
     )
     d.blank_line()
+    d.write_wrapped(
+        "Plaintiff recently learned that this District permits pro se "
+        "litigants to e-file. Good cause exists to conform the docket name "
+        "so that login can be linked. Among other things, e-filing will "
+        "prevent the delay inherent in mailing papers from Stockton to the "
+        "Clerk and to counsel; it will put each paper on the docket the "
+        "day it is filed rather than days later in the mail; it will let "
+        "counsel of record receive service the same day; and it will let "
+        "Plaintiff prosecute these five open N.D. Cal. actions on one "
+        "account instead of mailing five copies of every paper. Mailing "
+        "also carries weekend and holiday lag and the risk that a paper "
+        "reaches the Clerk after the date it was sent.",
+        first_indent=0,
+    )
+    d.blank_line()
     d.ensure_space(3)
     d.write_line("IV.", bold=True, center=True)
     d.write_line("CIVIL L.R. 7-11", bold=True, center=True)
@@ -756,7 +771,22 @@ def build_declaration(case: NameCase) -> Path:
     )
     d.blank_line()
     d.write_wrapped(
-        "5.  I am not asking the Court to move any deadline, hearing, "
+        "5.  I recently learned that this District permits pro se "
+        "litigants to e-file. That is why I asked the ECF Help Desk on "
+        "September 1, 2026 to link PACER login bngwanforbi. Until the "
+        "docket name matches, I must mail papers. Mailing introduces "
+        "delay: transit time from Stockton to the Clerk and to counsel, "
+        "weekend and holiday lag, and the risk that a paper reaches the "
+        "Clerk or counsel after the date I sent it. I have five open "
+        "actions in this District. Conforming the name so I can e-file "
+        "will avoid that delay, let the Clerk and counsel receive papers "
+        "the same day, and let me use one PACER account instead of "
+        "mailing each paper five times.",
+        first_indent=0,
+    )
+    d.blank_line()
+    d.write_wrapped(
+        "6.  I am not asking the Court to move any deadline, hearing, "
         "conference, pending motion, or discovery obligation. After the "
         "Clerk updates the party name I will ask the ECF Help Desk to link "
         "PACER login bngwanforbi for pro se e-filing.",
@@ -789,7 +819,11 @@ def build_order(case: NameCase) -> Path:
     d.write_wrapped(
         f"The Court has considered {considered} to conform Plaintiff's "
         "name on the docket, the supporting declaration, and Exhibit A. "
-        "Good cause appearing, IT IS ORDERED that:",
+        "Good cause appearing — including so that the docket will match "
+        "PACER login bngwanforbi, the ECF Help Desk may link that account "
+        "for pro se e-filing, and Plaintiff may file and serve without the "
+        "delay inherent in mailing papers to the Clerk and to counsel — "
+        "IT IS ORDERED that:",
         first_indent=0,
     )
     d.blank_line()
@@ -822,11 +856,13 @@ def build_order(case: NameCase) -> Path:
         first_indent=0,
     )
     d.blank_line()
-    d.ensure_space(7)
+    d.ensure_space(9)
     d.write_line("IT IS SO ORDERED.", bold=True)
     d.blank_line()
     d.blank_line()
     d.write_line("Dated: ________________")
+    d.blank_line()
+    d.blank_line()
     d.blank_line()
     d.write_line(SIG_LINE)
     d.write_line(case.judge)
@@ -919,7 +955,9 @@ This is a request to the Court. It is not a stipulation.
 {posture}
 {("" if not case.email_extra else chr(10) + case.email_extra)}
 The two name forms are one person. No deadline, hearing, or pending
-motion moves.
+motion moves. I recently learned this District permits pro se
+e-filing; conforming the name lets the Help Desk link the account
+and avoids the delay of mailing papers.
 
 After the Clerk updates the party name I will ask the ECF Help Desk
 to link PACER login bngwanforbi for pro se e-filing.
