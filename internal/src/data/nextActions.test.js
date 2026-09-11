@@ -11,6 +11,7 @@ import {
   yourQueue,
 } from "../../scripts/lib/next-actions.mjs";
 import timeline from "./timeline.json";
+import upcoming from "./upcoming.json";
 import summaries from "./matters/summaries.json";
 import graph from "./crossMatter.json";
 
@@ -281,6 +282,23 @@ describe("buildQueue against the real portfolio data", () => {
     today: TODAY,
     horizonDays: 30,
     clusters: graph.clusters,
+  });
+
+  it("upcoming.json is a sufficient input for the dashboard queue", () => {
+    const fromFull = buildQueue(timeline, summaries, {
+      today: TODAY,
+      horizonDays: 30,
+      clusters: graph.clusters,
+    });
+    const fromUpcoming = buildQueue(upcoming, summaries, {
+      today: TODAY,
+      horizonDays: 30,
+      clusters: graph.clusters,
+    });
+    expect(fromUpcoming.items).toEqual(fromFull.items);
+    expect(fromUpcoming.undated).toEqual(fromFull.undated);
+    expect(fromUpcoming.retired).toEqual(fromFull.retired);
+    expect(fromUpcoming.gaps).toEqual(fromFull.gaps);
   });
 
   it("covers every timeline entry flagged upcoming", () => {

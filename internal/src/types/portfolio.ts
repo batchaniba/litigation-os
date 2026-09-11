@@ -88,9 +88,10 @@ export interface MatterSummary {
   court: string;
   claims: string;
   /** Optional hand override for the short posture label (<= 60 chars). When
-   *  omitted, the UI derives a label from `phase` + the next posture-ranked
-   *  timeline event via `effectiveStatusLabel`. Keep an override for terminal
-   *  disposition nuance and other cases derivation can't see. */
+   *  omitted on NN.json, `sync:summaries` bakes a derived label onto
+   *  summaries.json so the list/dashboard never import timeline.json.
+   *  Keep an override on the source record for terminal disposition nuance
+   *  and other cases derivation can't see. */
   status_label?: string;
   lifecycle: MatterLifecycle;
   proceeding: MatterProceeding;

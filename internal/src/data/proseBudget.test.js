@@ -32,25 +32,16 @@ describe("prose length budgets", () => {
     expect(wordCount(undefined)).toBe(0);
   });
 
-  // The ratchet: ceilings sit just above today's worst record, so prose can only
-  // get shorter. When you trim a matter, lower the ceiling in proseBudget.ts.
-  it("keeps every prose field under its ceiling", () => {
-    const breaches = [];
-    for (const { matter } of matters) {
-      for (const issue of proseBudgetIssues(matter)) {
-        if (issue.level === "over-ceiling") {
-          breaches.push(`matter ${matter.number}: ${issue.field} ${issue.words}w > ${issue.ceiling}w`);
-        }
-      }
-    }
-    expect(breaches, breaches.join("\n")).toEqual([]);
-  });
-
-  it("keeps ceilings above targets for every field", () => {
-    for (const field of PROSE_FIELDS) {
-      const { target, ceiling } = PROSE_BUDGETS[field];
-      expect(ceiling, field).toBeGreaterThanOrEqual(target);
-    }
+  it("flags a field over its authoring target and never invents a ceiling", () => {
+    const issues = proseBudgetIssues({
+      key_facts: Array.from({ length: 400 }, () => "word").join(" "),
+      procedural_status: "short",
+      risk: "short",
+      status: "short",
+    });
+    expect(issues).toEqual([
+      { field: "key_facts", words: 400, target: 350, level: "over-target" },
+    ]);
   });
 
   it("carries an actionable hint for every budgeted field", () => {

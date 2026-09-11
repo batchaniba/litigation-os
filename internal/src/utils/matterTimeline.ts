@@ -28,6 +28,7 @@ export function eventsForMatter(matterNumber: number): TimelineEvent[] {
 }
 
 export function matterActivity(matterNumber: number) {
+  const events = eventsForMatter(matterNumber);
   const now = +getPDTMidnight();
   let next: TimelineEvent | undefined;
   let nextTs = Infinity;
@@ -36,7 +37,7 @@ export function matterActivity(matterNumber: number) {
 
   // Two linear passes rather than map + two filters + two sorts: only the extremes
   // are ever read, so there is nothing to gain from ordering the rest.
-  for (const event of eventsForMatter(matterNumber)) {
+  for (const event of events) {
     const timestamp = +parseEventDatePDT(event.date);
     if (!Number.isFinite(timestamp)) continue;
     if (timestamp >= now && event.upcoming && timestamp < nextTs) {
@@ -48,5 +49,5 @@ export function matterActivity(matterNumber: number) {
       recentTs = timestamp;
     }
   }
-  return { next, recent };
+  return { next, recent, events };
 }

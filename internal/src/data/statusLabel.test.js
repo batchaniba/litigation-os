@@ -4,14 +4,13 @@ import { STATUS_LABEL_MAX, effectiveStatusLabel } from "../utils/statusLabel";
 import { eventsForMatter } from "../utils/matterTimeline";
 
 describe("status_label overrides + effective labels", () => {
-  it("keeps hand overrides inside the width cap when present", () => {
+  it("bakes a display label onto every summary so the list never needs the timeline", () => {
     for (const matter of summaries) {
-      if (!matter.status_label) continue;
+      expect(matter.status_label?.trim(), `matter ${matter.number}`).toBeTruthy();
       expect(matter.status_label.length, `matter ${matter.number}: ${matter.status_label}`).toBeLessThanOrEqual(
         STATUS_LABEL_MAX,
       );
       expect(matter.status_label, `matter ${matter.number}`).not.toMatch(/\n/);
-      expect(matter.status_label.trim(), `matter ${matter.number}`).not.toBe("");
     }
   });
 

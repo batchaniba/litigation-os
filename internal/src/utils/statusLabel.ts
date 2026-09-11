@@ -1,6 +1,5 @@
 import type { MatterLifecycle, MatterPhase, MatterSummary, TimelineEvent } from "../types/portfolio";
 import { lifecycleLabel, isTerminalLifecycle } from "./matterLifecycle";
-import { eventsForMatter, matterActivity } from "./matterTimeline";
 import { getPDTMidnight, parseEventDatePDT } from "./dateUtils";
 
 /** Max length for badges, the summary strip, search, and README cells. */
@@ -202,7 +201,10 @@ function phaseFallback(phase: MatterPhase | undefined, lifecycle: MatterLifecycl
  * disposition nuance ("voluntarily dismissed", dual settlement dates, etc.).
  */
 export function deriveStatusLabel(matter: MatterLike, activity: StatusLabelActivity = {}): string {
-  const events = activity.events ?? eventsForMatter(matter.number);
+  // Empty default on purpose: this module must not import the timeline. List
+  // and dashboard badges use a baked `status_label` on summaries.json; live
+  // derivation is for callers that already have events (matter detail).
+  const events = activity.events ?? [];
   const now = activity.now ?? +getPDTMidnight();
   const posture = pickPostureEvent(events, matter.phase, now);
   const lifecycle = matter.lifecycle;
@@ -272,21 +274,14 @@ export function deriveStatusLabel(matter: MatterLike, activity: StatusLabelActiv
 export function effectiveStatusLabel(matter: MatterLike, activity?: StatusLabelActivity): string {
   const override = matter.status_label?.trim();
   if (override) return clampStatusLabel(override);
-
-  if (activity) return deriveStatusLabel(matter, activity);
-  const live = matterActivity(matter.number);
-  return deriveStatusLabel(matter, {
-    next: live.next,
-    recent: live.recent,
-    events: eventsForMatter(matter.number),
-  });
+  return deriveStatusLabel(matter, activity ?? {});
 }
 
 /** True when the override merely restates what derivation already produces. */
 export function isRedundantStatusLabelOverride(matter: MatterLike, activity?: StatusLabelActivity): boolean {
   const override = matter.status_label?.trim();
   if (!override) return false;
-  const derived = activity ? deriveStatusLabel(matter, activity) : deriveStatusLabel(matter);
+  const derived = deriveStatusLabel(matter, activity ?? {});
   const norm = (value: string) => value.toLowerCase().replace(/[—–-]/g, "-").replace(/\s+/g, " ").trim();
   return norm(override) === norm(derived);
 }

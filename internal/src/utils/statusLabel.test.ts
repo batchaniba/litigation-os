@@ -137,7 +137,14 @@ describe("statusLabel derivation", () => {
     const matter = cases.find((item) => item.number === 22)!;
     expect(matter.status_label).toBeTruthy();
     expect(effectiveStatusLabel(matter, { events: eventsFor(22) })).toBe(matter.status_label);
+    expect(effectiveStatusLabel(matter)).toBe(matter.status_label);
     expect(deriveStatusLabel(matter, { events: eventsFor(22) })).toBe("Settled");
+  });
+
+  it("falls back to phase words when no override and no events are passed", () => {
+    expect(
+      effectiveStatusLabel({ number: 31, lifecycle: "pre_filing", phase: "pre_filing" }),
+    ).toBe("Pre-filing");
   });
 
   it("produces an effective label ≤ 60 chars for every matter", () => {

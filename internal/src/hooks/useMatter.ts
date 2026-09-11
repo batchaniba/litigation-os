@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { loadMatter } from "../data/matters";
+import { loadMatter } from "../data/matters/loadMatter";
 import type { Matter } from "../types/portfolio";
 
 export type MatterLoadStatus = "idle" | "loading" | "ready" | "error";

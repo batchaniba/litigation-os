@@ -10,8 +10,8 @@ function SummaryItem({ label, value, accent }: { label: string; value: string; a
   );
 }
 
-export function MatterSummary({ matter, next, recent }: { matter: Matter; next?: TimelineEvent; recent?: TimelineEvent }) {
-  const statusLabel = effectiveStatusLabel(matter, { next, recent });
+export function MatterSummary({ matter, next, recent, events }: { matter: Matter; next?: TimelineEvent; recent?: TimelineEvent; events?: TimelineEvent[] }) {
+  const statusLabel = effectiveStatusLabel(matter, { next, recent, events });
   return (
     <section className="matter-summary" aria-label="Matter at a glance">
       <SummaryItem label="Status" value={statusLabel} accent />

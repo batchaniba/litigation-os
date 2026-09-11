@@ -1,13 +1,15 @@
 import { useMemo } from "react";
-import timeline from "../data/timeline.json";
+import upcoming from "../data/upcoming.json";
 import graph from "../data/crossMatter.json";
 import { cases } from "../data/matters";
 import { buildQueue, yourQueue } from "../../scripts/lib/next-actions.mjs";
 
-/** Same queue as `npm run next` — ranked from timeline.json, not upcoming.json. */
+/** Same ranking as `npm run next`, fed from upcoming.json (the upcoming:true
+ *  slice). buildQueue ignores past events, so the dashboard must not import
+ *  the full timeline.json log. */
 export function useNextActions(horizonDays = 30) {
   return useMemo(() => {
-    const queue = buildQueue(timeline, cases, {
+    const queue = buildQueue(upcoming, cases, {
       horizonDays,
       clusters: graph.clusters,
     });

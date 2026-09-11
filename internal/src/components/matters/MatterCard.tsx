@@ -114,7 +114,7 @@ function MatterCardImpl({ matter: summary, isOpen, onToggle }: MatterCardProps) 
             <TypeBadge type={c.type} />
             <ProceedingBadge proceeding={c.proceeding} />
             <PhaseBadge phase={c.phase} />
-            <StatusBadge status={effectiveStatusLabel(c)} lifecycle={c.lifecycle} />
+            <StatusBadge status={effectiveStatusLabel({ ...c, status_label: c.status_label || summary.status_label })} lifecycle={c.lifecycle} />
             <PolicyLimitsBadge limits={c.policy_limits} coverage={coverageForMatter(c.number)} />
             {isArchivedMatter(c) && <ArchiveBadge />}
           </div>

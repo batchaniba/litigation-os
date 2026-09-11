@@ -388,22 +388,22 @@ Plaintiff is representing himself pro se across all 39 matters. The figures belo
   - `lifecycle` — disposition: `active` | `pre_filing` | `settled` | `dismissed` | `abandoned` | `closed`
   - `proceeding` — track: `state_civil` | `federal_civil` | `mandate` | `habeas`
   - `phase` — current stage on that track (e.g. `demurrer`, `fr_pending`, `under_submission`, `responsive_deadline`; `terminal` when disposed)
-- **Timeline:** `internal/src/data/timeline.json` (full log) + generated `upcoming.json` for the shell deadline clock
+- **Timeline:** `internal/src/data/timeline.json` (full log) + generated `upcoming.json` for the shell deadline clock and the dashboard "what's next" queue
 - **Documents:** `internal/public/documents/` (Matter 32: `from-01|02|20|24/` + N.D. Cal. filing under `ndcal/`; Matter 33: `incident|from-07|from-08|opinions/` + N.D. Cal. filing under `ndcal/`; blank Judicial Council templates and the portfolio Proof of Service form under `_form-library/` (see `_form-library/README.md`)). The tree is ~660 MB and growing; data CI sparse-checkouts around it and checks paths against `internal/src/data/documents/manifest.json`. See [DOCUMENT_STORE.md](internal/docs/DOCUMENT_STORE.md).
 
 ### Prose length budgets
 
-The free-prose matter fields carry word budgets, defined in `internal/src/utils/proseBudget.ts` and mirrored for scripts in `internal/scripts/prose-budget.mjs`:
+The free-prose matter fields carry word *targets*, defined in `internal/src/utils/proseBudget.ts` and mirrored for scripts in `internal/scripts/prose-budget.mjs`:
 
 | Field | Target | Enforcement |
 | --- | --- | --- |
-| `key_facts` | 350 words | warning over target, test failure over ceiling |
-| `procedural_status` | 400 words | warning over target, test failure over ceiling |
-| `risk` | 150 words | warning over target, test failure over ceiling |
-| `status` | 60 words | warning over target, test failure over ceiling |
+| `key_facts` | 350 words | warning over target |
+| `procedural_status` | 400 words | warning over target |
+| `risk` | 150 words | warning over target |
+| `status` | 60 words | warning over target |
 | `status_label` | 60 **characters** | validator error (`STATUS_LABEL_MAX`) |
 
-Targets are advisory — `npm run validate` warns but still exits zero, because trimming legal prose is an editorial decision. Ceilings are a ratchet pinned just above the current worst record and enforced by `proseBudget.test.js`, so prose can only get shorter. **When you trim a matter, lower its field's ceiling to match the new worst case.**
+Targets are advisory — `npm run validate` warns but still exits zero, because trimming legal prose is an editorial decision. There is no hard word ceiling on the long-form fields; a living docket will grow. Dated beats still belong in `timeline.json`, not restated in `procedural_status`. The 60-character `status_label` cap stays: badges, the README table, and search result lines cannot hold a paragraph.
 
 Two rules keep prose inside budget:
 
@@ -466,7 +466,7 @@ npm run sync:registry         # rebuild path → label catalog
 npm run sync:manifest         # sha256 inventory of public/documents (hashes only new/resized files)
 npm run documents:pull        # restore PDFs from the documents branch (after clone)
 npm run documents:push        # publish local PDFs to origin/documents
-npm run sync:upcoming         # rebuild upcoming.json from timeline.json for the shell
+npm run sync:upcoming         # rebuild upcoming.json from timeline.json for the shell and dashboard
 npm run generate:readme       # regenerate marked README tables from portfolio data
 npm run lint                  # ESLint over internal/src + internal/scripts
 npm run lint:fix              # ...and auto-fix what is safely fixable

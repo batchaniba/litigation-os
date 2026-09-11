@@ -113,7 +113,7 @@ export function MatterDetailPage() {
             <StatusBadge status={effectiveStatusLabel(matter, activity)} lifecycle={matter.lifecycle} />
             {isArchivedMatter(matter) && <ArchiveBadge />}
           </div>
-          <MatterSummary matter={matter} next={activity.next} recent={activity.recent} />
+          <MatterSummary matter={matter} next={activity.next} recent={activity.recent} events={activity.events} />
         </header>
 
         <PanelGroup id="matter-details" title="The matter">

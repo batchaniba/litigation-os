@@ -3,7 +3,8 @@
 // Build light upcoming-deadline list for the SPA shell bundle.
 //
 // Full timeline stays in timeline.json and is only imported by
-// route/search chunks that need the complete event log.
+// route/search chunks that need the complete event log. The dashboard
+// "what's next" queue and the shell deadline clock both read this file.
 //
 // Usage:
 //   npm run sync:upcoming           # write upcoming.json

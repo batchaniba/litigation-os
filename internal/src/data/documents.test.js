@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { documentRegistry, getRegistryEntry, resolveDocument, resolveDocuments } from "./documents";
-import { loadMatter } from "./matters";
+import { loadMatter } from "./matters/loadMatter";
 
 describe("document registry", () => {
   it("registers unique paths including outcomes-only opinions", () => {

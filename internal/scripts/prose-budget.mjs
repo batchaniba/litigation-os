@@ -3,11 +3,10 @@
 // asserts the two agree.
 
 export const PROSE_BUDGETS = {
-  key_facts: { target: 350, ceiling: 1650 },
-  // Ratcheted down after round-2 docket-log trim (Matters 3/5–8/12/20/24/28/30).
-  procedural_status: { target: 400, ceiling: 650 },
-  risk: { target: 150, ceiling: 660 },
-  status: { target: 60, ceiling: 100 },
+  key_facts: { target: 350 },
+  procedural_status: { target: 400 },
+  risk: { target: 150 },
+  status: { target: 60 },
 };
 
 export const PROSE_FIELDS = Object.keys(PROSE_BUDGETS);
@@ -27,10 +26,9 @@ export function wordCount(value) {
 export function proseBudgetIssues(matter) {
   const issues = [];
   for (const field of PROSE_FIELDS) {
-    const { target, ceiling } = PROSE_BUDGETS[field];
+    const { target } = PROSE_BUDGETS[field];
     const words = wordCount(matter[field]);
-    if (words > ceiling) issues.push({ field, words, target, ceiling, level: "over-ceiling" });
-    else if (words > target) issues.push({ field, words, target, ceiling, level: "over-target" });
+    if (words > target) issues.push({ field, words, target, level: "over-target" });
   }
   return issues;
 }

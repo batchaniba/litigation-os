@@ -216,17 +216,10 @@ for (const m of cases) {
     }
   }
 
-  // Free-prose length budgets. Over-target is advisory (trimming legal prose is
-  // an editorial call); over-ceiling is a hard regression and fails below.
+  // Free-prose length targets. Over-target is advisory (trimming legal prose is
+  // an editorial call); there is no hard ceiling — a living docket will grow.
   for (const issue of proseBudgetIssues(m)) {
-    if (issue.level === "over-ceiling") {
-      fail(
-        `${tag}: ${issue.field} is ${issue.words} words, ceiling ${issue.ceiling} — prose may not get ` +
-          `longer than the recorded worst case; ${PROSE_HINTS[issue.field]}`,
-      );
-    } else {
-      warn(`${tag}: ${issue.field} is ${issue.words} words, target ${issue.target} — ${PROSE_HINTS[issue.field]}`);
-    }
+    warn(`${tag}: ${issue.field} is ${issue.words} words, target ${issue.target} — ${PROSE_HINTS[issue.field]}`);
   }
 
   // Docket-log heuristic: status / procedural_status that still read like a

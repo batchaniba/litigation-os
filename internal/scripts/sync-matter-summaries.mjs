@@ -5,7 +5,8 @@
 // Full prose (status, key_facts, procedural_status, damages, risk, evidence)
 // and document lists stay in NN.json (lazy-loaded on expand/detail).
 // Document labels resolve through documents/registry.json (path is the id).
-// Shell badges use status_label / effectiveStatusLabel instead of status.
+// Shell badges read status_label on summaries.json (hand override or baked
+// derivation). The list/dashboard must not import timeline.json.
 // A slim document-index.json is generated for global search.
 //
 // Usage:
@@ -14,16 +15,22 @@
 // ==========================================================
 import fs from "node:fs";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
 import { loadMatters, MATTERS_DIR } from "./load-matters.mjs";
 import { loadRegistry, registryByPath, resolveDocumentRef } from "./lib/document-registry.mjs";
+import { effectiveStatusLabel } from "./status-label.mjs";
+import { matterRefsInclude } from "../src/utils/matterRefs.js";
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUT = path.join(MATTERS_DIR, "summaries.json");
 const DOC_INDEX = path.join(MATTERS_DIR, "document-index.json");
+const TIMELINE = path.join(MATTERS_DIR, "../timeline.json");
 const checkOnly = process.argv.includes("--check");
 const registry = loadRegistry();
 const registryPaths = registryByPath(registry);
+const timeline = JSON.parse(fs.readFileSync(TIMELINE, "utf8"));
+if (!Array.isArray(timeline)) {
+  console.error("timeline.json must be an array");
+  process.exit(1);
+}
 
 const HEAVY = new Set([
   // Full procedural narrative — lazy-load with NN.json. Shell uses
@@ -46,6 +53,12 @@ function toSummary(matter) {
   }
   summary.evidenceCount = Array.isArray(matter.evidence) ? matter.evidence.length : 0;
   summary.documentCount = Array.isArray(matter.documents) ? matter.documents.length : 0;
+  // List/dashboard badges must not import timeline.json. When NN.json omits
+  // status_label, bake the derived posture so every summary has a display string.
+  if (typeof summary.status_label !== "string" || !summary.status_label.trim()) {
+    const events = timeline.filter((event) => matterRefsInclude(event.matters, matter.number));
+    summary.status_label = effectiveStatusLabel(matter, events);
+  }
   return summary;
 }
 
