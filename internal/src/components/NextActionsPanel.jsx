@@ -88,6 +88,11 @@ export function NextActionsPanel({ queue, mineOnly, onMineOnlyChange }) {
                           source PDF
                         </a>
                       ) : null}
+                      {item.verified_at ? (
+                        <span className="next-actions-verified" title={`Source: ${item.source_type || "unknown"} · Confidence: ${item.confidence || "unknown"}`}>
+                          verified {item.verified_at}
+                        </span>
+                      ) : null}
                       {item.precedentPeers?.length ? (
                         <span className="next-actions-peers">
                           also{" "}
