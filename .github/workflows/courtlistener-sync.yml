@@ -56,7 +56,7 @@ jobs:
         run: npm run court:resolve
 
       - name: Incremental docket sync
-        run: npm run court:sync
+        run: npm run court:sync -- --bootstrap
 
       - name: Refresh generated snapshots
         run: npm run sync:all

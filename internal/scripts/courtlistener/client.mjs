@@ -13,56 +13,88 @@ export function readCourtListenerToken(env = process.env) {
       );
     }
   }
-  const token = String(env.COURTLISTENER_TOKEN ?? "").trim();
+  const token = String(env.COURTLISTENER_TOKEN || env.COURTLISTENER_API_TOKEN || "").trim();
   return token || null;
 }
 
+function windowKind(row) {
+  const seconds = Number(row?.window_seconds);
+  const rate = String(row?.rate ?? "");
+  if (seconds === 86400 || /\/day$/i.test(rate)) return "daily";
+  if (seconds === 3600 || /\/hour$/i.test(rate)) return "hourly";
+  if (seconds === 60 || /\/min$/i.test(rate)) return "minute";
+  return null;
+}
+
+function remainingOf(row) {
+  if (Number.isFinite(row?.remaining)) return Number(row.remaining);
+  if (Number.isFinite(row?.limit) && Number.isFinite(row?.used)) {
+    return Math.max(0, Number(row.limit) - Number(row.used));
+  }
+  return null;
+}
+
+/** Parse /api-usage/. Prefer documented current_usage rows (scope=user). */
 export function remainingFromUsage(usage) {
-  if (!usage || typeof usage !== "object") return { daily: null, hourly: null, minute: null, unknown: true };
-  const pick = (...candidates) => {
+  if (!usage || typeof usage !== "object") {
+    return { daily: null, hourly: null, minute: null, unknown: true, rows: [] };
+  }
+  const rows = Array.isArray(usage.current_usage) ? usage.current_usage : [];
+  const userRows = rows.filter((row) => row?.scope === "user");
+  if (userRows.length) {
+    const pick = (kind) => remainingOf(userRows.find((row) => windowKind(row) === kind));
+    const daily = pick("daily");
+    const hourly = pick("hourly");
+    const minute = pick("minute");
+    return {
+      daily,
+      hourly,
+      minute,
+      unknown: daily == null && hourly == null && minute == null,
+      rows: userRows,
+      blocked: userRows.some((row) => row.blocked === true || Number(row.limit) === 0),
+    };
+  }
+  const pickLegacy = (...candidates) => {
     for (const value of candidates) {
       if (Number.isFinite(value)) return value;
     }
     return null;
   };
-  const daily = pick(
+  const daily = pickLegacy(
     usage.daily_remaining,
-    usage.remaining,
     Number.isFinite(usage.daily_limit) && Number.isFinite(usage.daily_used)
       ? usage.daily_limit - usage.daily_used
       : null,
-    Number.isFinite(usage.limits?.requests?.per_day) && Number.isFinite(usage.usage?.requests?.per_day)
-      ? usage.limits.requests.per_day - usage.usage.requests.per_day
-      : null,
   );
-  const hourly = pick(
-    usage.hourly_remaining,
-    Number.isFinite(usage.limits?.requests?.per_hour) && Number.isFinite(usage.usage?.requests?.per_hour)
-      ? usage.limits.requests.per_hour - usage.usage.requests.per_hour
-      : null,
-  );
-  const minute = pick(
-    usage.minute_remaining,
-    Number.isFinite(usage.limits?.requests?.per_minute) && Number.isFinite(usage.usage?.requests?.per_minute)
-      ? usage.limits.requests.per_minute - usage.usage.requests.per_minute
-      : null,
-  );
+  const hourly = pickLegacy(usage.hourly_remaining);
+  const minute = pickLegacy(usage.minute_remaining);
   return {
     daily,
     hourly,
     minute,
     unknown: daily == null && hourly == null && minute == null,
+    rows: [],
+    blocked: false,
   };
 }
 
-export function budgetAllows(usage, { minDaily = 8 } = {}) {
+export function budgetAllows(usage, { minDaily = 8, minHourly = 2, minMinute = 1 } = {}) {
   const remaining = remainingFromUsage(usage);
-  if (remaining.unknown) return { ok: true, remaining, reason: "usage_shape_unknown" };
+  if (remaining.blocked) {
+    return { ok: false, remaining, reason: "user scope blocked" };
+  }
+  if (remaining.unknown) {
+    return { ok: false, remaining, reason: "usage_shape_unknown" };
+  }
   if (remaining.daily != null && remaining.daily < minDaily) {
     return { ok: false, remaining, reason: `daily remaining ${remaining.daily} < ${minDaily}` };
   }
-  if (remaining.hourly != null && remaining.hourly < 2) {
-    return { ok: false, remaining, reason: `hourly remaining ${remaining.hourly} < 2` };
+  if (remaining.hourly != null && remaining.hourly < minHourly) {
+    return { ok: false, remaining, reason: `hourly remaining ${remaining.hourly} < ${minHourly}` };
+  }
+  if (remaining.minute != null && remaining.minute < minMinute) {
+    return { ok: false, remaining, reason: `minute remaining ${remaining.minute} < ${minMinute}` };
   }
   return { ok: true, remaining, reason: "ok" };
 }
@@ -135,13 +167,19 @@ export function createClient({
     return request(`${CL_BASE}/api-usage/`, { auth: true });
   }
 
-  async function listDocketEntries({ docketId, afterEntryId = null, afterEntryNumber = null }) {
+  async function listDocketEntries({
+    docketId,
+    afterEntryId = null,
+    afterEntryNumber = null,
+    dateFiledGte = null,
+  } = {}) {
     const params = new URLSearchParams({
       docket: String(docketId),
       order_by: "id",
     });
     if (afterEntryId != null) params.set("id__gt", String(afterEntryId));
     else if (afterEntryNumber != null) params.set("entry_number__gt", String(afterEntryNumber));
+    if (dateFiledGte) params.set("date_filed__gte", String(dateFiledGte));
     const entries = [];
     let url = `${CL_BASE}/docket-entries/?${params}`;
     while (url) {
@@ -150,6 +188,8 @@ export function createClient({
       for (const row of rows) {
         if (afterEntryId != null && Number(row.id) <= Number(afterEntryId)) continue;
         if (afterEntryNumber != null && Number(row.entry_number) <= Number(afterEntryNumber)) continue;
+        const filed = String(row.date_filed ?? row.entry_date_filed ?? "").slice(0, 10);
+        if (dateFiledGte && filed && filed < dateFiledGte) continue;
         entries.push(row);
       }
       url = page?.next || null;

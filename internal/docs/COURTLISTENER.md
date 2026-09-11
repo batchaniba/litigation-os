@@ -7,7 +7,7 @@ COURTLISTENER
      │
      ├── Search API     resolve docket_id once
      ├── Docket API     incremental entries newer than last seen
-     └── Citation API   later (CiteProof)
+     └── Citation Lookup POST /citation-lookup/ (COURTLISTENER_TOKEN)
      │
 CourtListener Bridge
      ├── confirmed events → timeline.json  (upcoming: false)
@@ -26,11 +26,13 @@ Phases not in this branch: webhook HTTP endpoint, RECAP document ingest, citatio
 
 ## Token
 
-Store `COURTLISTENER_TOKEN` as a **GitHub Actions repository secret** (and in the local shell when you run `court:sync`).
+Store `COURTLISTENER_TOKEN` as a **GitHub Actions repository secret** and in a gitignored `.env` for local `court:sync` / `citations:lookup`. `COURTLISTENER_API_TOKEN` is a deprecated alias for the same value.
 
-Never put it in a `VITE_*` variable, `.env` that Vite loads, or any file the browser bundle can see. The client throws if it finds a `VITE_*` CourtListener token.
+Never put it in a `VITE_*` variable, a Vite-loaded env file, or any file the browser bundle can see. The Node client throws if it finds a `VITE_*` CourtListener token.
 
-Docket **resolution** can run unauthenticated against the Search API (`type=d`). Docket **entries**, `/api-usage/`, and the REST docket object require the token.
+Docket **resolution** can run unauthenticated against the Search API (`type=d`). Docket **entries**, `/api-usage/`, Citation Lookup, and the REST docket object require the token.
+
+`court:sync` hits `/api/rest/v4/api-usage/` first and **refuses to run** if that call fails or if the body cannot be parsed. It reads `current_usage` rows with `scope: "user"` (defaults 5/min, 50/hour, 125/day) rather than guessing `daily_remaining`. Checking `/api-usage/` does not consume the main quota.
 
 ## Commands
 
@@ -38,12 +40,18 @@ Docket **resolution** can run unauthenticated against the Search API (`type=d`).
 npm run court:resolve                 # bind federal matters (Search API)
 npm run court:resolve -- --dry-run
 npm run court:resolve -- --matter 28
-npm run court:sync                    # pull new entries; needs COURTLISTENER_TOKEN
-npm run court:sync -- --dry-run
+npm run court:sync -- --bootstrap     # first ingest: 24, 25, 26, 28, 29, 32, 33
+npm run court:sync -- --bootstrap --since 2026-07-01
+npm run court:sync -- --active-only
+npm run court:sync -- --matter 28
+npm run court:sync -- --all           # every bound federal docket; explicit
+npm run court:sync -- --dry-run --bootstrap
 npm run court:reconcile               # reminder: candidates stay in review.json
 ```
 
-`court:sync` hits `/api/rest/v4/api-usage/` first and aborts if the remaining budget is too small. Limits are read from the account, not hard-coded to 125/day.
+Empty cursors refuse a full historical backfill. Pass `--bootstrap`, `--active-only`, `--matter N`, or `--all`. `--since YYYY-MM-DD` is sent as `date_filed__gte` so a first pull does not paginate 2025 closed cases.
+
+The hourly workflow runs `--bootstrap`, not `--all`.
 
 ## Data
 
