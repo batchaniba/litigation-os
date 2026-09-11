@@ -47,8 +47,8 @@ const OPTIONAL = {
     (v.docket_id === undefined || isNum(v.docket_id)) &&
     (v.docket_url === undefined || isStr(v.docket_url)),
   note: isStr,
-  policy_limits: isObj,
-  serviceTracking: isObj,
+  policy_limits: (v) => isObj(v) || Array.isArray(v),
+  serviceTracking: (v) => isObj(v) || Array.isArray(v),
 };
 
 /** Validate a parsed matter JSON; returns an array of human-readable issues (empty = valid). */
