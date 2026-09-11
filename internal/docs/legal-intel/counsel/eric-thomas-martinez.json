@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "name": "Eric Thomas Martinez",
+  "attorney_id": null,
+  "firm": null,
+  "linked_matters": [
+    28
+  ],
+  "generated_at": "2026-09-11T21:59:19.054Z",
+  "source": "courtlistener",
+  "history": {
+    "dockets_found": 2,
+    "courts": {
+      "District Court, N.D. California": 1,
+      "United States Bankruptcy Court, S.D. California": 1
+    },
+    "date_range": {
+      "earliest": "1992-05-27",
+      "latest": "2023-09-04"
+    },
+    "sample": [
+      {
+        "case_name": "Prado v. City of Berkeley",
+        "docket_number": "3:23-cv-04537",
+        "court": "District Court, N.D. California",
+        "date_filed": "2023-09-04"
+      },
+      {
+        "case_name": "Eric Thomas Martinez",
+        "docket_number": "92-06325",
+        "court": "United States Bankruptcy Court, S.D. California",
+        "date_filed": "1992-05-27"
+      }
+    ],
+    "sample_truncated": false
+  },
+  "vs_you": {
+    "matters": [
+      28
+    ],
+    "entries_analyzed": 0,
+    "patterns": {
+      "motion_to_dismiss": 0,
+      "summary_judgment": 0,
+      "discovery_motion": 0,
+      "motion_to_strike": 0,
+      "sanctions": 0,
+      "settlement": 0,
+      "voluntary_dismissal": 0,
+      "default": 0,
+      "appeal": 0
+    }
+  },
+  "caveats": [
+    "Name-based RECAP search can conflate attorneys with common names; pin --attorney-id when ambiguous.",
+    "History is a docket sample (up to ~60 most recent), not an exhaustive record.",
+    "Outcome signals (settlement/dismissal mentions) are directional, not adjudicated results.",
+    "Motion patterns cover only matters with locally synced docket entries."
+  ]
+}

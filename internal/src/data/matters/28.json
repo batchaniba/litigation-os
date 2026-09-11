@@ -332,5 +332,16 @@
       "dateServed": "August 31, 2026",
       "note": "Van Dine accepted service for both defendants effective August 31, 2026. Dkt. 13 POS filed September 3, 2026 (email only to slb-eservice@sims-law.net and blaze@sims-law.net). Rule 4(m) satisfied. Answer due September 21, 2026."
     }
+  ],
+  "opposing_counsel": [
+    {
+      "name": "Blaze Van Dine",
+      "dossier": "counsel/blaze-van-dine.json",
+      "firm": "Sims Lawrence & Broghammer"
+    },
+    {
+      "name": "Eric Thomas Martinez",
+      "dossier": "counsel/eric-thomas-martinez.json"
+    }
   ]
 }
