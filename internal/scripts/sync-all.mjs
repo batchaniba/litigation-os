@@ -14,14 +14,20 @@
 // ==========================================================
 import { spawnSync } from "node:child_process";
 
+const skipManifest = process.env.PORTFOLIO_SKIP_MANIFEST === "1";
+
 const steps = [
   ["sync:registry", ["npm", "run", "sync:registry"]],
-  ["sync:manifest", ["npm", "run", "sync:manifest"]],
+  ...(skipManifest ? [] : [["sync:manifest", ["npm", "run", "sync:manifest"]]]),
   ["sync:summaries", ["npm", "run", "sync:summaries"]],
   ["sync:upcoming", ["npm", "run", "sync:upcoming"]],
   ["sync:short-links", ["npm", "run", "sync:short-links"]],
   ["generate:readme", ["npm", "run", "generate:readme"]],
 ];
+
+if (skipManifest) {
+  console.log("sync:all skipping sync:manifest (PORTFOLIO_SKIP_MANIFEST=1 — sparse checkout without documents tree)");
+}
 
 for (const [label, argv] of steps) {
   const result = spawnSync(argv[0], argv.slice(1), { stdio: "inherit" });
