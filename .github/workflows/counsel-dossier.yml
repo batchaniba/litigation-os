@@ -1,0 +1,104 @@
+name: Counsel Dossier
+
+# On-demand opposing-counsel dossier builder. Runs `npm run intel:counsel`
+# with the CourtListener token, then opens (or updates) a review PR carrying
+# the generated dossier files. Never writes to main directly.
+
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Opposing counsel full name (e.g. "Nathan D. Chapman")'
+        required: true
+        type: string
+      firm:
+        description: 'Firm name (e.g. "Kabat Chapman & Ozmer LLP")'
+        required: false
+        type: string
+      matter:
+        description: "Matter number (motion-pattern baseline + --link target)"
+        required: false
+        type: string
+      attorney_id:
+        description: "CourtListener attorney id (pins identity when names collide)"
+        required: false
+        type: string
+      link:
+        description: "Write opposing_counsel onto the matter record"
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: counsel-dossier
+  cancel-in-progress: false
+
+jobs:
+  dossier:
+    runs-on: ubuntu-latest
+    env:
+      PORTFOLIO_SKIP_DISK_DOCS: "1"
+      PORTFOLIO_SKIP_MANIFEST: "1"
+      VITE_COPY_DOCUMENTS: "0"
+      COURTLISTENER_TOKEN: ${{ secrets.COURTLISTENER_TOKEN }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 1
+
+      - name: Setup Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check CourtListener token
+        run: |
+          if [ -z "${{ secrets.COURTLISTENER_TOKEN }}" ]; then
+            echo "::error::COURTLISTENER_TOKEN is not set."
+            exit 1
+          fi
+
+      - name: Build dossier
+        run: |
+          ARGS=(--name "${{ inputs.name }}")
+          if [ -n "${{ inputs.firm }}" ]; then ARGS+=(--firm "${{ inputs.firm }}"); fi
+          if [ -n "${{ inputs.matter }}" ]; then ARGS+=(--matter "${{ inputs.matter }}"); fi
+          if [ -n "${{ inputs.attorney_id }}" ]; then ARGS+=(--attorney-id "${{ inputs.attorney_id }}"); fi
+          if [ "${{ inputs.link }}" = "true" ]; then ARGS+=(--link); fi
+          npm run intel:counsel -- "${ARGS[@]}"
+
+      - name: Tests
+        run: npm test
+
+      - name: Open or update review PR
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: intel/counsel-dossier
+          delete-branch: true
+          title: "Counsel dossier: ${{ inputs.name }}"
+          commit-message: "feat(intel): counsel dossier for ${{ inputs.name }}"
+          body: |
+            On-demand opposing-counsel dossier from `npm run intel:counsel`
+            (CourtListener RECAP history + local motion patterns).
+
+            Inspect before merge:
+
+            - `internal/docs/legal-intel/counsel/<slug>.json` — machine dossier
+            - `internal/docs/legal-intel/counsel/<slug>.md` — readable summary
+            - `internal/src/data/matters/*.json` — `opposing_counsel` link (only when `--link` was passed)
+
+            Caveats: name-based RECAP search can conflate attorneys with common
+            names (pin `--attorney-id` when ambiguous); history is a sample of
+            up to ~60 recent dockets, not an exhaustive record.
+          add-paths: |
+            internal/docs/legal-intel/counsel/
+            internal/src/data/matters/
