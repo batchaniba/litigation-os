@@ -68,7 +68,7 @@ async function main() {
 
   const client = createClient({ token });
   const usage = await client.getApiUsage();
-  const budget = budgetAllows(usage, { minDaily: 15, minHourly: 3, minMinute: 2 });
+  const budget = budgetAllows(usage, { minDaily: 5, minHourly: 2, minMinute: 1 });
   if (!budget.ok) throw new Error(`CourtListener budget too low: ${budget.reason}`);
   console.log(
     `budget ok (daily=${budget.remaining.daily} hourly=${budget.remaining.hourly} minute=${budget.remaining.minute})`,
@@ -114,24 +114,35 @@ async function main() {
     console.log(`note: ${dockets.length} candidates; picked first exact docket_number match`);
   }
 
-  const entries = await client.listDocketEntries({ docketId: docket.id });
-  console.log(`docket has ${entries.length} entries`);
-  let wanted;
+  const nums =
+    ENTRIES_RAW === "all"
+      ? null
+      : new Set(
+          ENTRIES_RAW.split(",")
+            .map((n) => Number(String(n).trim()))
+            .filter(Number.isFinite),
+        );
   if (ENTRIES_RAW === "all") {
-    wanted = entries;
-  } else {
-    const nums = new Set(
-      ENTRIES_RAW.split(",")
-        .map((n) => Number(String(n).trim()))
-        .filter(Number.isFinite),
-    );
-    wanted = entries.filter((e) => nums.has(Number(e.entry_number)));
-    const found = new Set(wanted.map((e) => Number(e.entry_number)));
-    for (const n of nums) {
-      if (!found.has(n)) console.log(`warning: entry_number ${n} not found in docket entries`);
-    }
+    throw new Error('--entries "all" is disabled in budget-saver mode; pass explicit entry numbers');
   }
-  console.log(`matched ${wanted.length} entries`);
+  const wanted = [];
+  for (const n of nums) {
+    // Exact entry_number filter: one cheap call per entry instead of full pagination.
+    const params = new URLSearchParams({ docket: String(docket.id), entry_number: String(n) });
+    let url = `${CL_BASE}/docket-entries/?${params}`;
+    let matched = null;
+    while (url && !matched) {
+      const page = await client.request(url, { auth: true });
+      const rows = Array.isArray(page?.results) ? page.results : [];
+      matched = rows.find((e) => Number(e.entry_number) === n) ?? null;
+      // If the filter was ignored server-side, page 1 may still contain it; only
+      // follow pagination when nothing matched yet (bounded by page count).
+      url = matched ? null : page?.next || null;
+    }
+    if (matched) wanted.push(matched);
+    else console.log(`warning: entry_number ${n} not found in docket entries`);
+  }
+  console.log(`matched ${wanted.length}/${nums.size} entries`);
 
 
   for (const entry of wanted) {
