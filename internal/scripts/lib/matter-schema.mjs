@@ -47,7 +47,7 @@ const OPTIONAL = {
     (v.docket_id === undefined || isNum(v.docket_id)) &&
     (v.docket_url === undefined || isStr(v.docket_url)),
   note: isStr,
-  policy_limits: (v) => isObj(v) || Array.isArray(v),
+  policy_limits: (v) => isStr(v) || isObj(v) || Array.isArray(v),
   serviceTracking: (v) => isObj(v) || Array.isArray(v),
 };
 
