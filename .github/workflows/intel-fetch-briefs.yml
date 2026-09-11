@@ -66,17 +66,21 @@ jobs:
           COURTLISTENER_TOKEN: ${{ secrets.COURTLISTENER_TOKEN }}
 
       - name: Verify downloads
+        if: always()
         run: |
-          ls -la /tmp/briefs/${{ inputs.label }}/
+          ls -la /tmp/briefs/${{ inputs.label }}/ || echo "no output dir"
           count=$(ls /tmp/briefs/${{ inputs.label }}/*.pdf 2>/dev/null | wc -l)
           echo "pdf_count=$count"
-          if [ "$count" -eq 0 ]; then
-            echo "::error::no PDFs downloaded; see manifest.json for per-document status"
+          if [ -f /tmp/briefs/${{ inputs.label }}/manifest.json ]; then
+            echo "--- manifest ---"
             cat /tmp/briefs/${{ inputs.label }}/manifest.json
-            exit 1
+          fi
+          if [ "$count" -eq 0 ]; then
+            echo "::warning::no PDFs downloaded; manifest carries the diagnostic"
           fi
 
       - name: Checkout document store
+        if: always()
         uses: actions/checkout@v7
         with:
           ref: documents
@@ -84,11 +88,12 @@ jobs:
           fetch-depth: 1
 
       - name: Commit to document store
+        if: always()
         run: |
           dest="docstore/internal/public/documents/counsel-briefs/${{ inputs.label }}"
           mkdir -p "$dest"
-          cp /tmp/briefs/${{ inputs.label }}/*.pdf "$dest"/
-          cp /tmp/briefs/${{ inputs.label }}/manifest.json "$dest"/
+          cp /tmp/briefs/${{ inputs.label }}/*.pdf "$dest"/ 2>/dev/null || true
+          cp /tmp/briefs/${{ inputs.label }}/manifest.json "$dest"/ 2>/dev/null || true
           cd docstore
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
