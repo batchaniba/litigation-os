@@ -74,7 +74,7 @@ jobs:
         run: npm run sync:all
 
       - name: Tests
-        run: npm test
+        run: npm test && npm run test:golden
 
       - name: Open or update standing PR
         uses: peter-evans/create-pull-request@v7
