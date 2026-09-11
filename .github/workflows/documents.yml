@@ -4,9 +4,10 @@ name: Documents
 # not the main checkout. Runs when the inventory or the store-sync scripts
 # change. See internal/docs/DOCUMENT_STORE.md.
 
-# Runners are paused while GitHub billing/spending limit is blocking jobs.
-# Restore push + pull_request when Actions can start again.
 on:
+  push:
+    branches: [main]
+  pull_request:
   workflow_dispatch:
 
 jobs:
