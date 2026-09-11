@@ -16,6 +16,18 @@
     "source": "/documents/matter-24/Name Conform Administrative Motion Packet - Brendan Ngwa Nforbi (September 14, 2026).pdf"
   },
   {
+    "date": "Sep. 9, 2026",
+    "event": "ORDER \u2014 Dkt. 25 in Newanforbi v. Serrato (4:26-cv-05953-ASK). Mag. Krishnan signed the Dkt. 22 stipulation. CMC continued from September 15, 2026 to fourteen (14) days after the final order on Defendant's motion to dismiss (Dkt. 18; hearing remains Sep. 30 per Dkt. 21). The September 8, 2026 deadlines for Rule 26(a)(1) disclosures, the Joint Case Management Statement, and ADR certification are vacated; all other deadlines reset from the new CMC date. No date certain. Do not appear September 15. Plaintiff's Sep. 8 disclosures already went; do not re-serve unless ordered. Dkt. 22 is the unsigned proposed paper; Dkt. 25 is the entered order.",
+    "matters": [
+      24
+    ],
+    "type": "order",
+    "upcoming": false,
+    "filed": true,
+    "actor": "agency",
+    "source": "/documents/matter-24/Dkt 25 - Order Continuing Initial CMC (Filed Sep 9 2026).pdf"
+  },
+  {
     "date": "Sep. 10, 2026",
     "event": "RECEIVED \u2014 William J. McMahon (AG) 9:59 a.m. asked two questions on the Candelaria name-correction stip request (3:26-cv-08272-LJC): whether Plaintiff seeks to change the name to match PACER, and why the names differ across lawsuits. Plaintiff replied 10:21 a.m.: yes, same person, PACER login bngwanforbi, aliases plus clerical error, nothing else moves; attached a signed counterpart and authorized McMahon to file that exact file only. McMahon 11:01 a.m. returned a REVISED stipulation/proposed order with his edits. The Sep. 10 filing authorization does not extend to the revision. Compare before authorizing the named McMahon file.",
     "matters": [
@@ -3675,25 +3687,36 @@
   },
   {
     "date": "Sep. 15, 2026",
-    "event": "WATCH \u2014 Defendant's Rule 26(a)(1) disclosures in Newanforbi v. Serrato (4:26-cv-05953-ASK). Dkt. 24 \u00a7 VII.A asked Defendant to serve within seven days of Plaintiff's Sep. 8 service. Plaintiff's disclosures went 8:59 p.m. Sep. 8. Same day as the CMC.",
+    "event": "SUPERSEDED \u2014 Defendant's Rule 26(a)(1) disclosures in Newanforbi v. Serrato (4:26-cv-05953-ASK). Dkt. 24 \u00a7 VII.A asked Defendant to serve within seven days of Plaintiff's Sep. 8 service. Dkt. 25 (Sep. 9) vacated the Sep. 8 disclosure deadline and reset disclosure / JCMS / ADR dates from the continued CMC (14 days after the final MTD order). Do not treat Sep. 15 as Defendant's disclosure date.",
     "matters": [
       24
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "opposing",
-    "source": "/documents/matter-24/Dkt 24 - Joint Case Management Conference Statement (Filed Sep 8 2026).pdf"
+    "source": "/documents/matter-24/Dkt 25 - Order Continuing Initial CMC (Filed Sep 9 2026).pdf"
   },
   {
     "date": "Sep. 15, 2026",
-    "event": "Initial Case Management Conference \u2014 1:30 PM via Zoom (cand.uscourts.gov/ask); Hon. Ajay S. Krishnan \u2014 Newanforbi v. Serrato (4:26-cv-05953-ASK)",
+    "event": "CONTINUED \u2014 Initial Case Management Conference (was 1:30 p.m. Zoom, Hon. Ajay S. Krishnan) \u2014 Newanforbi v. Serrato (4:26-cv-05953-ASK). Vacated by Dkt. 25 (filed Sep. 9). Reset to fourteen days after the final order on Dkt. 18. Did not proceed on this date. Do not appear.",
     "matters": [
       24
     ],
     "type": "hearing",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "you",
-    "source": "/documents/matter-24/Order Setting Initial CMC and ADR Deadlines (Doc 4, Filed Jun 17 2026).pdf"
+    "source": "/documents/matter-24/Dkt 25 - Order Continuing Initial CMC (Filed Sep 9 2026).pdf"
+  },
+  {
+    "date": "After MTD order",
+    "event": "WATCH \u2014 Reset initial CMC in Newanforbi v. Serrato (4:26-cv-05953-ASK). Dkt. 25 sets it fourteen (14) days after the final order on Defendant's motion to dismiss (Dkt. 18; hearing Sep. 30). No date certain. Disclosure, JCMS, and ADR-certification dates run from that conference. Do not invent a calendar date.",
+    "matters": [
+      24
+    ],
+    "type": "hearing",
+    "upcoming": false,
+    "actor": "you",
+    "source": "/documents/matter-24/Dkt 25 - Order Continuing Initial CMC (Filed Sep 9 2026).pdf"
   },
   {
     "date": "Jun. 11, 2026",

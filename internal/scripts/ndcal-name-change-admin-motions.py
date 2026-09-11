@@ -130,10 +130,13 @@ CASES: list[NameCase] = [
             "declaration satisfies Civil L.R. 7-11(a)."
         ),
         preserve=[
-            "the September 15, 2026 initial case management conference",
+            "the continued initial case management conference (Dkt. 25: "
+            "fourteen days after the final order on Defendant's motion to "
+            "dismiss)",
             "the September 30, 2026 hearing on Defendant's motion to dismiss "
             "(Dkt. 18 / Dkt. 21)",
-            "any date in the June 17, 2026 ISC / ADR order that remains in effect",
+            "the Rule 26(a)(1), Joint CMC Statement, and ADR-certification "
+            "dates reset by Dkt. 25 to run from that continued conference",
             "Defendant's pending motion (Dkt. 18) and Plaintiff's opposition",
         ],
         unopposed=True,
