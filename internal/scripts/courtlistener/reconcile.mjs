@@ -1,9 +1,15 @@
 // Merge normalized CourtListener entries into timeline.json + review.json.
-// Idempotent: entry ID / hash / Dkt. N never create a second copy.
+// Idempotent: entry ID / hash never create a second copy.
+// Dkt. N provenance requires matter + docket + date + type/description similarity.
 // Deadlines never become upcoming: true here.
 
 import { matterRefsInclude } from "../../src/utils/matterRefs.js";
-import { classifyNormalized, docketNumberFromEventText } from "./entries.mjs";
+import {
+  classifyNormalized,
+  docketNumberFromEventText,
+  formatTimelineDate,
+  inferFactType,
+} from "./entries.mjs";
 
 function cleanExternal(external) {
   const out = {};
@@ -24,17 +30,81 @@ function attachProvenance(event, fact) {
   return next;
 }
 
-export function findMatchingTimelineEvent(timeline, { matter, entryId, entryNumber }) {
+function tokenize(text) {
+  return new Set(
+    String(text ?? "")
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, " ")
+      .trim()
+      .split(/\s+/)
+      .filter((word) => word.length > 2),
+  );
+}
+
+export function descriptionSimilarity(a, b) {
+  const left = tokenize(a);
+  const right = tokenize(b);
+  if (!left.size || !right.size) return 0;
+  let inter = 0;
+  for (const word of left) {
+    if (right.has(word)) inter += 1;
+  }
+  return inter / new Set([...left, ...right]).size;
+}
+
+function eventDocketNumber(event) {
+  const fromText = docketNumberFromEventText(event.event);
+  if (fromText != null) return fromText;
+  const fromExternal = event.external?.entry_number;
+  return fromExternal == null ? null : Number(fromExternal);
+}
+
+const PLAUSIBLE_SIMILARITY = 0.18;
+
+export function scoreTimelineMatch(event, { dateFiled, description, factType }) {
+  const expectedDate = formatTimelineDate(dateFiled);
+  const dateMatch = Boolean(expectedDate && event.date === expectedDate);
+  const typeMatch = Boolean(factType && event.type === factType);
+  const similarity = descriptionSimilarity(event.event, description);
+  let score = 0;
+  if (dateMatch) score += 3;
+  if (typeMatch) score += 2;
+  if (similarity >= 0.25) score += 2;
+  else if (similarity >= PLAUSIBLE_SIMILARITY) score += 1;
+  return { score, dateMatch, typeMatch, similarity };
+}
+
+function isPlausible(scored) {
+  return Boolean(scored.dateMatch && (scored.typeMatch || scored.similarity >= PLAUSIBLE_SIMILARITY));
+}
+
+/**
+ * Match a CourtListener entry onto an existing timeline row.
+ * Entry-id is unique. Dkt. N alone is not — require date + type/similarity.
+ * Multiple plausible rows → { ambiguous: true } so the caller parks it in review.
+ */
+export function findMatchingTimelineEvent(
+  timeline,
+  { matter, entryId, entryNumber, dateFiled, description, factType } = {},
+) {
+  const plausible = [];
   for (let index = 0; index < timeline.length; index += 1) {
     const event = timeline[index];
     if (!matterRefsInclude(event.matters, matter)) continue;
     const externalId = event.external?.docket_entry_id;
     if (entryId != null && externalId != null && Number(externalId) === Number(entryId)) {
-      return { index, event, via: "entry_id" };
+      return { index, event, via: "entry_id", ambiguous: false };
     }
-    if (entryNumber != null && docketNumberFromEventText(event.event) === Number(entryNumber)) {
-      return { index, event, via: "dkt_text" };
+    if (entryNumber == null) continue;
+    if (eventDocketNumber(event) !== Number(entryNumber)) continue;
+    const scored = scoreTimelineMatch(event, { dateFiled, description, factType });
+    if (isPlausible(scored)) {
+      plausible.push({ index, event, via: "dkt_date_type", ambiguous: false, ...scored });
     }
+  }
+  if (plausible.length === 1) return plausible[0];
+  if (plausible.length > 1) {
+    return { ambiguous: true, matches: plausible, via: "dkt_ambiguous" };
   }
   return null;
 }
@@ -79,6 +149,7 @@ export function reconcileEntries({
     factsAdded: 0,
     provenanceAttached: 0,
     candidatesAdded: 0,
+    ambiguousQueued: 0,
   };
 
   for (const normalized of normalizedEntries ?? []) {
@@ -105,8 +176,34 @@ export function reconcileEntries({
         matter: normalized.matter,
         entryId: normalized.courtlistener_entry_id,
         entryNumber: normalized.entry_number,
+        dateFiled: normalized.date_filed,
+        description: normalized.description,
+        factType: inferFactType(normalized.description),
       });
-      if (match) {
+      if (match?.ambiguous) {
+        const candidate = {
+          matter: normalized.matter,
+          candidate_type: "ambiguous_timeline_match",
+          trigger_entry: normalized.entry_number,
+          courtlistener_entry_id: normalized.courtlistener_entry_id,
+          proposed_date: normalized.date_filed,
+          confidence: 0.4,
+          reason: `Dkt. ${normalized.entry_number} matches ${match.matches.length} timeline rows on the same date; provenance not auto-attached.`,
+          status: "pending",
+        };
+        const dup = nextReview.candidates.some(
+          (row) =>
+            row.matter === candidate.matter &&
+            row.candidate_type === candidate.candidate_type &&
+            row.trigger_entry === candidate.trigger_entry &&
+            row.courtlistener_entry_id === candidate.courtlistener_entry_id,
+        );
+        if (!dup) {
+          nextReview.candidates.push(candidate);
+          stats.candidatesAdded += 1;
+        }
+        stats.ambiguousQueued += 1;
+      } else if (match) {
         nextTimeline[match.index] = attachProvenance(match.event, fact);
         stats.provenanceAttached += 1;
       } else {

@@ -2,8 +2,10 @@
 """Multi-source citation existence lookup (CourtListener + CAP static.case.law).
 
 Probes reporter pins against:
-  1. CourtListener REST search API (unauthenticated /api/rest/v4/search/)
-  2. Caselaw Access Project bulk metadata at static.case.law (CasesMetadata.json)
+  1. CourtListener Citation Lookup (POST /api/rest/v4/citation-lookup/) when
+     COURTLISTENER_TOKEN is set — the pin API (200 / 404 / 400 / 300)
+  2. CourtListener REST search API (unauthenticated /api/rest/v4/search/) as corroboration
+  3. Caselaw Access Project bulk metadata at static.case.law (CasesMetadata.json)
 
 Also records reachability for Justia and Google Scholar (usually blocked).
 
@@ -23,6 +25,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import sys
 import time
@@ -39,7 +42,13 @@ OUT_PATH = DOCS / "citation_lookup_multisource.json"
 
 UA = "litigation-portfolio-citation-verify/1.0 (+local; research)"
 CL_SEARCH = "https://www.courtlistener.com/api/rest/v4/search/"
+CL_CITATION_LOOKUP = "https://www.courtlistener.com/api/rest/v4/citation-lookup/"
 CAP_STATIC = "https://static.case.law"
+CL_TOKEN_ENV = "COURTLISTENER_TOKEN"
+CL_TOKEN_ENV_ALT = "COURTLISTENER_API_TOKEN"
+
+_citation_lookup_disabled = False
+_citation_lookup_last_call = 0.0
 
 # reporter slug on static.case.law → regex capturing (volume, page)
 REPORTER_MAP = [
@@ -122,6 +131,93 @@ def http_get(url: str, accept: str = "application/json", timeout: int = 45, retr
                 continue
             return last
     return last
+
+
+def http_post_form(
+    url: str,
+    fields: dict[str, str],
+    *,
+    headers: dict[str, str] | None = None,
+    timeout: int = 45,
+    retries: int = 3,
+):
+    last = (-1, "error", b"")
+    body_bytes = urllib.parse.urlencode(fields).encode()
+    for attempt in range(retries):
+        req_headers = {
+            "User-Agent": UA,
+            "Accept": "application/json",
+            "Content-Type": "application/x-www-form-urlencoded",
+        }
+        if headers:
+            req_headers.update(headers)
+        req = urllib.request.Request(url, data=body_bytes, headers=req_headers, method="POST")
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                return r.status, r.headers.get("Content-Type", ""), r.read()
+        except urllib.error.HTTPError as e:
+            body = b""
+            try:
+                body = e.read()
+            except Exception:
+                pass
+            last = (e.code, str(e.reason), body)
+            if e.code in (429, 502, 503, 504) and attempt + 1 < retries:
+                wait = 2.0 * (attempt + 1)
+                if e.code == 429:
+                    wait = 65.0
+                time.sleep(wait)
+                continue
+            return last
+        except Exception as e:
+            last = (-1, type(e).__name__, str(e).encode())
+            if attempt + 1 < retries:
+                time.sleep(0.75 * (attempt + 1))
+                continue
+            return last
+    return last
+
+
+def _dotenv_token() -> str | None:
+    for path in (ROOT.parent / ".env", ROOT / ".env"):
+        if not path.is_file():
+            continue
+        try:
+            lines = path.read_text().splitlines()
+        except OSError:
+            continue
+        for raw in lines:
+            line = raw.strip()
+            if not line or line.startswith("#"):
+                continue
+            if line.startswith("export "):
+                line = line[7:].strip()
+            key, sep, val = line.partition("=")
+            if not sep:
+                continue
+            if key.strip() not in {CL_TOKEN_ENV, CL_TOKEN_ENV_ALT}:
+                continue
+            val = val.strip().strip("'").strip('"')
+            if val:
+                return val
+    return None
+
+
+def courtlistener_token() -> str | None:
+    if _citation_lookup_disabled:
+        return None
+    tok = (os.environ.get(CL_TOKEN_ENV) or os.environ.get(CL_TOKEN_ENV_ALT) or "").strip()
+    if tok:
+        return tok
+    return _dotenv_token()
+
+
+def reporter_pin_key(citation: str) -> str | None:
+    rep = parse_reporter(citation)
+    if not rep:
+        return None
+    slug = re.sub(r"[^a-z0-9]+", "", str(rep["label"]).lower())
+    return f"{rep['volume']} {slug} {rep['page']}"
 
 
 def parse_reporter(citation: str):
@@ -363,6 +459,210 @@ def lookup_cap(citation: str, name_guess: str) -> SourceHit:
     )
 
 
+def _cluster_name(cluster: dict) -> str:
+    return (
+        cluster.get("case_name")
+        or cluster.get("caseName")
+        or cluster.get("case_name_full")
+        or ""
+    )
+
+
+def _cluster_url(cluster: dict) -> str:
+    path = cluster.get("absolute_url") or cluster.get("frontend_url") or ""
+    if path.startswith("/"):
+        return "https://www.courtlistener.com" + path
+    return path
+
+
+def _cluster_cites(cluster: dict) -> list[str]:
+    out = []
+    for item in cluster.get("citations") or []:
+        if isinstance(item, str) and item.strip():
+            out.append(item.strip())
+        elif isinstance(item, dict):
+            vol, reporter, page = item.get("volume"), item.get("reporter"), item.get("page")
+            if vol and reporter and page:
+                out.append(f"{vol} {reporter} {page}")
+    return out
+
+
+def _citation_lookup_row(rows: list[dict], citation: str) -> dict | None:
+    if not rows:
+        return None
+    pin = reporter_pin_key(citation)
+    if not pin:
+        return rows[0]
+    for row in rows:
+        candidates = [row.get("citation") or ""] + list(row.get("normalized_citations") or [])
+        if any(reporter_pin_key(str(c) or "") == pin for c in candidates if c):
+            return row
+    return rows[0]
+
+
+def citation_lookup_hit(
+    rows: list[dict],
+    citation: str,
+    name_guess: str,
+    *,
+    http_status: int | None,
+    url: str,
+) -> SourceHit:
+    """Map a citation-lookup JSON array to a SourceHit. No network."""
+    row = _citation_lookup_row(rows, citation)
+    if not row:
+        return SourceHit(
+            source="courtlistener_citation",
+            found=False,
+            url=url,
+            http_status=http_status,
+            notes="Eyecite parsed no case citation (Westlaw-only pins often miss)",
+        )
+    status = row.get("status")
+    clusters = [c for c in (row.get("clusters") or []) if isinstance(c, dict)]
+    error = row.get("error_message") or ""
+    cites = list(row.get("normalized_citations") or [])
+    if row.get("citation"):
+        cites = [row["citation"]] + [c for c in cites if c != row["citation"]]
+
+    if status == 404:
+        return SourceHit(
+            source="courtlistener_citation",
+            found=False,
+            url=url,
+            citations=cites,
+            http_status=http_status,
+            notes=error or f"Citation-lookup 404 for {row.get('citation') or citation}",
+        )
+    if status == 400:
+        return SourceHit(
+            source="courtlistener_citation",
+            found=False,
+            url=url,
+            citations=cites,
+            http_status=http_status,
+            notes=error or "Citation-lookup 400: reporter not in Eyecite",
+        )
+    if status == 429:
+        return SourceHit(
+            source="courtlistener_citation",
+            found=False,
+            url=url,
+            citations=cites,
+            http_status=http_status,
+            notes=error or "Citation-lookup 429: too many citations in this request",
+        )
+    if status not in {200, 300} or not clusters:
+        return SourceHit(
+            source="courtlistener_citation",
+            found=False,
+            url=url,
+            citations=cites,
+            http_status=http_status,
+            notes=error or f"Citation-lookup status={status} with no clusters",
+        )
+
+    compatible = [c for c in clusters if names_compatible(name_guess, _cluster_name(c))]
+    chosen = compatible[0] if compatible else clusters[0]
+    name = _cluster_name(chosen)
+    cluster_url = _cluster_url(chosen) or url
+    cluster_cites = _cluster_cites(chosen) or cites
+    notes = f"Citation-lookup status={status}; clusters={len(clusters)}"
+    if status == 300:
+        notes += "; ambiguous reporter/pin — picked by party-name overlap" if compatible else (
+            "; ambiguous reporter/pin — no party-name overlap"
+        )
+    elif not compatible and name:
+        notes += f"; caption mismatch vs query name ({name_guess!r} vs {name!r})"
+    return SourceHit(
+        source="courtlistener_citation",
+        found=True,
+        url=cluster_url,
+        case_name=name,
+        citations=cluster_cites,
+        notes=notes,
+        http_status=http_status,
+    )
+
+
+def lookup_courtlistener_citation(citation: str, name_guess: str) -> SourceHit:
+    """Pin API. Requires COURTLISTENER_TOKEN. 60 valid citations/minute."""
+    global _citation_lookup_disabled, _citation_lookup_last_call
+    token = courtlistener_token()
+    if not token:
+        return SourceHit(
+            source="courtlistener_citation",
+            found=False,
+            url=CL_CITATION_LOOKUP,
+            notes="skipped (no COURTLISTENER_TOKEN)",
+        )
+    elapsed = time.monotonic() - _citation_lookup_last_call
+    if _citation_lookup_last_call and elapsed < 1.05:
+        time.sleep(1.05 - elapsed)
+
+    rep = parse_reporter(citation)
+    fields = {"text": citation}
+    if rep:
+        fields = {
+            "volume": str(rep["volume"]),
+            "reporter": str(rep["label"]),
+            "page": str(rep["page"]),
+        }
+    headers = {"Authorization": f"Token {token}"}
+    status, _ctype, body = http_post_form(CL_CITATION_LOOKUP, fields, headers=headers)
+    _citation_lookup_last_call = time.monotonic()
+    if status == 401:
+        _citation_lookup_disabled = True
+        return SourceHit(
+            source="courtlistener_citation",
+            found=False,
+            url=CL_CITATION_LOOKUP,
+            http_status=401,
+            notes="401 — COURTLISTENER_TOKEN rejected; citation-lookup disabled this run",
+        )
+    if status != 200 or not body:
+        if rep and fields.get("volume"):
+            status, _ctype, body = http_post_form(
+                CL_CITATION_LOOKUP, {"text": citation}, headers=headers
+            )
+            _citation_lookup_last_call = time.monotonic()
+        if status == 401:
+            _citation_lookup_disabled = True
+            return SourceHit(
+                source="courtlistener_citation",
+                found=False,
+                url=CL_CITATION_LOOKUP,
+                http_status=401,
+                notes="401 — COURTLISTENER_TOKEN rejected; citation-lookup disabled this run",
+            )
+        if status != 200 or not body:
+            return SourceHit(
+                source="courtlistener_citation",
+                found=False,
+                url=CL_CITATION_LOOKUP,
+                http_status=status if isinstance(status, int) else None,
+                notes=f"citation-lookup HTTP {status}",
+            )
+    try:
+        payload = json.loads(body)
+    except json.JSONDecodeError:
+        return SourceHit(
+            source="courtlistener_citation",
+            found=False,
+            url=CL_CITATION_LOOKUP,
+            http_status=status if isinstance(status, int) else None,
+            notes="citation-lookup returned non-JSON",
+        )
+    rows = payload if isinstance(payload, list) else payload.get("results") or []
+    return citation_lookup_hit(
+        [r for r in rows if isinstance(r, dict)],
+        citation,
+        name_guess,
+        http_status=status if isinstance(status, int) else None,
+        url=CL_CITATION_LOOKUP,
+    )
+
+
 def lookup_courtlistener(citation: str, name_guess: str) -> SourceHit:
     rep = parse_reporter(citation)
     wl = WL_RE.search(citation)
@@ -523,9 +823,15 @@ def probe_scholar(citation: str) -> SourceHit:
 
 
 def consensus_for(result: LookupResult) -> str:
+    pin = next((s for s in result.sources if s.source == "courtlistener_citation"), None)
     cl = next((s for s in result.sources if s.source == "courtlistener"), None)
     cap = next((s for s in result.sources if s.source == "case.law_static"), None)
-    found_sources = [s for s in (cl, cap) if s and s.found]
+    if pin and pin.found and pin.case_name and names_compatible(result.case_name_guess, pin.case_name):
+        result.matched_name = pin.case_name
+        result.matched_citations = pin.citations
+        result.consensus = "FOUND"
+        return result.consensus
+    found_sources = [s for s in (pin, cl, cap) if s and s.found]
     if not found_sources:
         if result.wl_pin and not result.reporter_pin:
             result.consensus = "NOT_FOUND"
@@ -562,7 +868,12 @@ def consensus_for(result: LookupResult) -> str:
     return result.consensus
 
 
-def lookup_one(citation: str, *, include_blocked_probes: bool = False) -> LookupResult:
+def lookup_one(
+    citation: str,
+    *,
+    include_blocked_probes: bool = False,
+    citation_lookup: str = "auto",
+) -> LookupResult:
     name = guess_name(citation)
     rep = parse_reporter(citation)
     wl_m = WL_RE.search(citation)
@@ -572,8 +883,31 @@ def lookup_one(citation: str, *, include_blocked_probes: bool = False) -> Lookup
         reporter_pin=rep["pin"] if rep else None,
         wl_pin=wl_m.group(1) if wl_m else None,
     )
-    result.sources.append(lookup_courtlistener(citation, name))
+    use_lookup = citation_lookup == "always" or (
+        citation_lookup == "auto" and bool(courtlistener_token())
+    )
+    cite_hit = None
+    if use_lookup:
+        cite_hit = lookup_courtlistener_citation(citation, name)
+        result.sources.append(cite_hit)
+    else:
+        result.sources.append(
+            SourceHit(
+                source="courtlistener_citation",
+                found=False,
+                url=CL_CITATION_LOOKUP,
+                notes="skipped (citation-lookup disabled or no COURTLISTENER_TOKEN)",
+            )
+        )
     result.sources.append(lookup_cap(citation, name))
+    pin_resolved = bool(
+        cite_hit
+        and cite_hit.found
+        and cite_hit.case_name
+        and names_compatible(name, cite_hit.case_name)
+    )
+    if not pin_resolved:
+        result.sources.append(lookup_courtlistener(citation, name))
     if include_blocked_probes:
         result.sources.append(probe_justia(citation))
         result.sources.append(probe_scholar(citation))
@@ -646,6 +980,12 @@ def main(argv: list[str] | None = None) -> int:
         action="store_true",
         help="Also probe Justia + Google Scholar (usually 403)",
     )
+    ap.add_argument(
+        "--citation-lookup",
+        choices=["auto", "always", "never"],
+        default="auto",
+        help="CourtListener citation-lookup pin API (needs COURTLISTENER_TOKEN)",
+    )
     ap.add_argument("--out", type=Path, default=None)
     ap.add_argument("--quiet", action="store_true")
     args = ap.parse_args(argv)
@@ -685,7 +1025,13 @@ def main(argv: list[str] | None = None) -> int:
     for i, c in enumerate(ordered):
         if not args.quiet:
             print(f"[{i+1}/{len(ordered)}] {c}", file=sys.stderr)
-        results.append(lookup_one(c, include_blocked_probes=args.probe_blocked))
+        results.append(
+            lookup_one(
+                c,
+                include_blocked_probes=args.probe_blocked,
+                citation_lookup=args.citation_lookup,
+            )
+        )
 
     # reachability summary (one-shot probes on controls if requested)
     reachability = {
@@ -694,7 +1040,11 @@ def main(argv: list[str] | None = None) -> int:
         "case_law_static": "ok (CasesMetadata.json + html/{file_name}.html)",
         "justia": "blocked (Cloudflare 403) in this environment",
         "google_scholar": "unreliable (often 403)",
-        "courtlistener_citation_lookup": "requires API token (401)",
+        "courtlistener_citation_lookup": (
+            "configured (COURTLISTENER_TOKEN)"
+            if courtlistener_token()
+            else "unset — citation-lookup skipped (set COURTLISTENER_TOKEN)"
+        ),
     }
 
     out = {
