@@ -244,6 +244,43 @@ export function createClient({
     return opinions;
   }
 
+  async function listParties({ docketId } = {}) {
+    const params = new URLSearchParams({ docket: String(docketId) });
+    const parties = [];
+    let url = `${CL_BASE}/parties/?${params}`;
+    while (url) {
+      const page = await request(url, { auth: true });
+      const rows = Array.isArray(page?.results) ? page.results : [];
+      parties.push(...rows);
+      url = page?.next || null;
+    }
+    return parties;
+  }
+
+  async function getAttorney({ attorneyId } = {}) {
+    return request(`${CL_BASE}/attorneys/${attorneyId}/`, { auth: true });
+  }
+
+  async function searchRecap({ query, pageSize = 20, maxPages = 3 } = {}) {
+    const params = new URLSearchParams({
+      type: "r",
+      q: String(query),
+      order_by: "dateFiled desc",
+      page_size: String(pageSize),
+    });
+    const results = [];
+    let url = `${CL_BASE}/search/?${params}`;
+    let pages = 0;
+    while (url && pages < maxPages) {
+      const page = await request(url, { auth: true });
+      const rows = Array.isArray(page?.results) ? page.results : [];
+      results.push(...rows);
+      url = page?.next || null;
+      pages += 1;
+    }
+    return results;
+  }
+
   return {
     token,
     request,
@@ -252,5 +289,8 @@ export function createClient({
     listDocketEntries,
     listOpinionClusters,
     listClusterOpinions,
+    listParties,
+    getAttorney,
+    searchRecap,
   };
 }
