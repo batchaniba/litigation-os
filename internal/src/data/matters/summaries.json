@@ -288,7 +288,7 @@
     "case_no": "STK-CV-UF-2026-0001094",
     "court": "San Joaquin Sup. Ct.",
     "claims": "Fraudulent Concealment, Intentional Misrepresentation, Negligent Misrepresentation, Breach of Contract, UCL §17200, Rescission & Restitution, Declaratory Relief",
-    "status_label": "Azimov service pick due Sep. 11 — CMC Dec. 11",
+    "status_label": "Draft Stanislaus Osmani re-serve — Alpine Kern pending",
     "lifecycle": "active",
     "proceeding": "state_civil",
     "phase": "service",
@@ -314,18 +314,18 @@
         "title": "Defendant (agent for service: Saliman Osmani)",
         "location": "Stanislaus County — 1201 S. Soderquist Road, Turlock, CA 95380",
         "served": false,
-        "note": "SOS Entity 3438768, active, formed Feb. 2, 2012. Prior POS disputed at the Aug. 12, 2026 CMC. Re-serve the Amended Summons and FAC on Saliman Osmani as agent for service of process (CCP §416.10). Stanislaus Civil (Lu, Aug. 31, 2026) returned the live-field SER-001 as blank; flattened (print-pressed) copy prepared the same day."
+        "note": "SOS Entity 3438768, active, formed Feb. 2, 2012. Levy 2026003531 served Usmani/Manager with item 6 as individual — do not mark served. Cure is additional Stanislaus personal service on Saliman Osmani only: SER-001 3b(2) blank, 3b(3) the agent, summons Notice and POS-010 item 6d on behalf of Diamond under § 416.10. Draft to civilfax@stansheriff.com not yet sent. Do not amend who Heaney served. File 3531 as diligence."
       },
       {
         "name": "Alpine Truck Sales, Inc.",
         "title": "Defendant (agent for service: Sheran Osmani)",
         "location": "Kern County — 7156 Golden State Highway, Bakersfield, CA 93308",
         "served": false,
-        "note": "SOS Entity B20250280641, active, formed Sept. 2, 2025. July 1, 2026 Turlock service was not the SOS agent address. Re-serve the Amended Summons and FAC on Sheran Osmani as agent for service of process in Kern County, naming Alpine as sued (successor/alter ego caption)."
+        "note": "SOS Entity B20250280641, active, formed Sept. 2, 2025. July 1, 2026 Turlock service was not the SOS agent address. Re-serve the Amended Summons and FAC on Sheran Osmani as agent for service of process in Kern County, naming Alpine as sued (successor/alter ego caption). Still underway. Do not serve Alpine at Turlock. Do not copy Diamond levy 2026003531 (item 6 as individual / Usmani at Soderquist)."
       }
     ],
-    "evidenceCount": 15,
-    "documentCount": 83
+    "evidenceCount": 16,
+    "documentCount": 89
   },
   {
     "number": 13,
@@ -559,7 +559,7 @@
     "archived": false,
     "badge": "LEAVE TO AMEND",
     "evidenceCount": 14,
-    "documentCount": 56
+    "documentCount": 58
   },
   {
     "number": 21,
@@ -684,8 +684,8 @@
         "dateServed": "August 5, 2026 at 10:20 a.m. (USMS; Doc. 15 filed Aug. 6, 2026)"
       }
     ],
-    "evidenceCount": 13,
-    "documentCount": 64
+    "evidenceCount": 15,
+    "documentCount": 68
   },
   {
     "number": 25,
@@ -783,9 +783,9 @@
       "Unlawful Business Practices (Bus. & Prof. Code § 17200 et seq.)"
     ],
     "archived": false,
-    "status_label": "$55k/$85k withdrawn; POS courtesy sent; CIV-100 hold 15/16",
-    "evidenceCount": 28,
-    "documentCount": 67
+    "status_label": "Gurney renews RK to Sept. 30 — decline; CIV-100 hold 15/16",
+    "evidenceCount": 32,
+    "documentCount": 73
   },
   {
     "number": 28,
@@ -875,8 +875,8 @@
       "Intentional Infliction of Emotional Distress"
     ],
     "archived": false,
-    "evidenceCount": 35,
-    "documentCount": 116
+    "evidenceCount": 37,
+    "documentCount": 118
   },
   {
     "number": 30,
@@ -1057,7 +1057,7 @@
     "case_no": "26CV501995",
     "court": "Santa Clara Sup. Ct. (Downtown / First Street)",
     "claims": "Unruh Civil Rights Act (Civ. Code §§51, 51.5, 52); False Imprisonment; Negligent Training and Supervision",
-    "status_label": "Fix Odyssey caption (Does first) — then serve Ross ~Oct 25",
+    "status_label": "File caption request — then serve Ross ~Oct 25",
     "lifecycle": "active",
     "proceeding": "state_civil",
     "phase": "service",
@@ -1092,7 +1092,7 @@
       "Third — Negligent Training and Supervision"
     ],
     "evidenceCount": 14,
-    "documentCount": 28
+    "documentCount": 29
   },
   {
     "number": 36,

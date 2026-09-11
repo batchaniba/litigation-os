@@ -33,15 +33,15 @@
     "source": "/documents/matter-33/ndcal/PACER Docket Report - N.D. Cal. 3-26-cv-08272-LJC (Sep 9 2026).pdf"
   },
   {
-    "date": "Sep. 9, 2026",
-    "event": "OPEN TASK — Send the One Legal email on Order #29111713 asking them to correct the Odyssey / public-portal short title in Ngwa Nforbi v. Ross Stores, Inc., et al. (Santa Clara 26CV501995) from 'Brendan Ngwa Nforbi vs Does 2 through 20 et al' to 'Brendan Ngwa Nforbi vs. Ross Stores, Inc., et al.' Party-grid order error on the original e-filing. Complaint and issued SUM-100 already name Ross first. File the executed Request to Correct Case Title only if One Legal cannot fix Odyssey. Do not amend. Do not reissue the summons unless the clerk requires it.",
+    "date": "Sep. 10, 2026",
+    "event": "FILE — Request to Correct Case Title in Ngwa Nforbi v. Ross Stores, Inc., et al. (Santa Clara 26CV501995). One Legal said ask the Court. E-file three papers on the existing case: (1) Request with Exhibits A–C attached, (2) Declaration, (3) [Proposed] Order. Do not amend. Do not reissue the summons unless the clerk requires it. No POS — no defendant has appeared. After the clerk-stamp, lodge it and retire this row.",
     "matters": [
       35
     ],
     "type": "deadline",
     "upcoming": true,
     "actor": "you",
-    "source": "/documents/matter-35/EMAIL_DRAFT_One_Legal_Correct_Case_Title_Party_Order.txt"
+    "source": "/documents/matter-35/Request to Correct Case Title - Clerical Party-Order Error (Sep 10 2026).pdf"
   },
   {
     "date": "Sep. 26, 2026",
@@ -320,17 +320,6 @@
     "source": "/documents/matter-27/Letter Confirming 15-Day Extension of Randstad's Time to Respond (Aug 18 2026).pdf"
   },
   {
-    "date": "Sep. 9, 2026",
-    "event": "Meet-and-confer deadline (computed) as to The RK Logistics Group, Inc. — Newanforbi v. Randstad US, LLC et al. (26CV199902); CCP §430.41(a)(2) requires meet-and-confer at least 5 calendar days before the extended Sept. 14, 2026 responsive-pleading deadline, if RK Logistics intends to demur; otherwise it must file a declaration for the automatic 30-day extension. Randstad US, LLC's meet-and-confer remains Sept. 10, 2026.",
-    "matters": [
-      27
-    ],
-    "type": "deadline",
-    "upcoming": true,
-    "actor": "opposing",
-    "source": "/documents/matter-27/Gmail - RK Logistics Extension Request to Sep 14 (Aug 21 2026).pdf"
-  },
-  {
     "date": "Sep. 14, 2026",
     "event": "Extended responsive-pleading deadline — The RK Logistics Group, Inc. only, Newanforbi v. Randstad US, LLC et al. (26CV199902); two weeks past the Aug. 31, 2026 computed deadline, per Melinda Garcia's Aug. 21 request as granted by Plaintiff. Party agreement only — no stipulation is on file unless Garcia files one. Single extension; Plaintiff will not grant a further one. Randstad US, LLC remains Sept. 15, 2026.",
     "matters": [
@@ -419,17 +408,6 @@
     "upcoming": true,
     "actor": "you",
     "source": "/documents/matter-33/incident/Arrest Report.pdf"
-  },
-  {
-    "date": "Sep. 15, 2026",
-    "event": "WATCH — Defendant's Rule 26(a)(1) disclosures in Newanforbi v. Serrato (4:26-cv-05953-ASK). Dkt. 24 § VII.A asked Defendant to serve within seven days of Plaintiff's Sep. 8 service. Plaintiff's disclosures went 8:59 p.m. Sep. 8. Same day as the CMC.",
-    "matters": [
-      24
-    ],
-    "type": "deadline",
-    "upcoming": true,
-    "actor": "opposing",
-    "source": "/documents/matter-24/Dkt 24 - Joint Case Management Conference Statement (Filed Sep 8 2026).pdf"
   },
   {
     "date": "Sep. 15, 2026",

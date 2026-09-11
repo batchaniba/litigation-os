@@ -1,5 +1,41 @@
 [
   {
+    "date": "Sep. 9, 2026",
+    "event": "LODGED \u2014 Sacramento County Sheriff 4-page POS-040 return packets (Levying Officer File No. 2026028894) for the Aug. 21, 2026 personal service of the Amended CCP \u00a7425.115 notices on Randstad US, LLC and The RK Logistics Group, Inc. Server: F. Conley on Skylar Leih / Authorized Agent at CSC. POS dated Aug. 25, 2026 by Sheriff's Authorized Agent Jim Cooper. Fee $50.00 waived. One-page Originals were filed Sept. 9 \u2014 do not e-file these 4-page packets (Original + Attorney/Plaintiff copies + address sheets).",
+    "matters": [
+      27
+    ],
+    "type": "event",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-27/POS-040 Proof of Service - Amended CCP 425.115 Notice - Randstad US LLC (Sheriff 4-page packet, Served Aug 21 2026, Levying Officer 2026028894).pdf"
+  },
+  {
+    "date": "Sep. 8, 2026",
+    "event": "RECEIVED \u2014 Giomara Guardado (DOJ legal secretary) e-mail, 5:50 p.m. Pacific, serving the Joint Case Management Conference Statement in Newanforbi v. Serrato (4:26-cv-05953-ASK). To bnn.cdl@gmail.com; cc Haiyang A. Li. Attached the unstamped service copy. Asked not to be added to the service list (intermittent support only). The PACER-stamped paper is already Dkt. 24. Do not resend Plaintiff's JCMS draft.",
+    "matters": [
+      24
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "filed": false,
+    "actor": "opposing",
+    "source": "/documents/matter-24/Gmail - Newanforbi v Serrato - Guardado Service of Joint CMC Statement (Sep 8 2026).pdf"
+  },
+  {
+    "date": "Sep. 8, 2026",
+    "event": "RECEIVED \u2014 Suga A. Ikeda (Morgan Lewis) e-mail, 4:42 p.m. Pacific, serving Dkt. 9 (Order Setting Initial CMC and ADR Deadlines) and a Certificate of Service in Newanforbi v. Amazon.com Services, LLC et al. (4:26-cv-09249-ASK). To bnn.cdl@gmail.com; cc Andrew P. Frederick. The COS is dated September 8, 2026, email-only, correct federal caption. It is service of the CMC order, not a PACER-stamped refile of rejected Dkt. 10 (Dkt. 10 was standing-order service under the Alameda caption 26CV201554). Do not assign this COS a docket number until a clerk stamp appears.",
+    "matters": [
+      29
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "filed": false,
+    "actor": "opposing",
+    "source": "/documents/matter-29/Gmail - Amazon CMC Order and Certificate of Service (Sep 8 2026).pdf"
+  },
+  {
     "date": "Oct. 8, 2026",
     "event": "HEARING \u2014 Status (Pretrial Scheduling) Conference in Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR), Thursday, October 8, 2026, 11:00 a.m. Zoom. Set by Dkt. 8 (filed Sep. 8; dated Sep. 4). The courtroom deputy sends dial-in about one week before. Appear. Magistrate referral under E.D. Cal. L.R. 302(c)(21) because Plaintiff is pro se.",
     "matters": [
@@ -34,6 +70,54 @@
   },
   {
     "date": "Sep. 10, 2026",
+    "event": "RECEIVED \u2014 DAG Vanessa Ing (cc Mark Beckington) asked at 12:59 p.m. for a 'secure link' to the November 1, 2024 CHP dashcam already served September 8 in Newanforbi v. CHP et al. (26CV191136). She offered to send a DOJ upload link. The September 8 service used the Dept. 25-authorized Drive link. Courtesy copy only if sent; does not redo service or move any date.",
+    "matters": [
+      20
+    ],
+    "type": "event",
+    "upcoming": false,
+    "filed": false,
+    "actor": "opposing",
+    "source": "/documents/matter-20/Gmail - Ing asks for secure dashcam upload link (Sep 10 2026).pdf"
+  },
+  {
+    "date": "Sep. 10, 2026",
+    "event": "RECEIVED \u2014 Tod Gurney (Garcia & Gurney, ALC litigation partner; to Plaintiff and Melinda Garcia; cc Karen Tai, Pol Minguet, Shinae Kim), 4:47 p.m., renews the ask for a further extension of The RK Logistics Group, Inc.'s response deadline in Newanforbi v. Randstad US, LLC et al. (26CV199902) through September 30, 2026. Says insurance coverage is still pending; matter shifted to him for litigation handling after Plaintiff's morning decline; claims he is just getting up to speed and cannot meet and confer before next week's due date; previews demurrer theories (wrongful termination / privacy). September 14 remains operative. Decline draft: EMAIL_DRAFT_Gurney_Decline_Further_Extension_Sep30.txt. Do not treat Sept. 30 as live. Do not brief the merits in the reply.",
+    "matters": [
+      27
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "filed": false,
+    "actor": "opposing",
+    "source": "/documents/matter-27/Gmail - Gurney Renews RK Extension Request to Sep 30 (Sep 10 2026).pdf"
+  },
+  {
+    "date": "Sep. 10, 2026",
+    "event": "SENT \u2014 Gmail to Melinda Garcia (cc Karen Tai), 10:42 a.m., declining her ask to extend The RK Logistics Group, Inc.'s response deadline through September 30, 2026 in Newanforbi v. Randstad US, LLC et al. (26CV199902). September 14 remains. Remains available to meet and confer with her or litigation counsel. No bridge date. No stipulation.",
+    "matters": [
+      27
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-27/Gmail - Gurney Renews RK Extension Request to Sep 30 (Sep 10 2026).pdf"
+  },
+  {
+    "date": "Sep. 10, 2026",
+    "event": "RECEIVED \u2014 Melinda Garcia (Garcia & Gurney, ALC; cc Karen Tai), 10:23 a.m., asks Plaintiff to stipulate to a further extension of The RK Logistics Group, Inc.'s deadline to respond to the Complaint in Newanforbi v. Randstad US, LLC et al. (26CV199902), through September 30, 2026. States insurance counsel has not yet been assigned; she is not litigation counsel; threatens court relief if Plaintiff will not stipulate. Same insurance-counsel ground as the Aug. 21 ask already granted through September 14. No stipulation on file. September 14 remains operative. Plaintiff declined the same morning at 10:42 a.m. Do not treat Sept. 30 as live.",
+    "matters": [
+      27
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "filed": false,
+    "actor": "opposing",
+    "source": "/documents/matter-27/Gmail - Garcia Further Extension Request to Sep 30 (Sep 10 2026).pdf"
+  },
+  {
+    "date": "Sep. 10, 2026",
     "event": "DRAFTED (unfiled) \u2014 Civil L.R. 7-11 administrative motions to correct Plaintiff's name on the five live N.D. Cal. dockets to Brendan Ngwa Nforbi, so PACER login bngwanforbi can be linked for e-filing. Target matches the account (first Brendan, last Ngwa Nforbi). Newanforbi \u2192 Ngwa Nforbi on 4:26-cv-05953-ASK (24), 3:26-cv-07504-LJC (28), and 4:26-cv-09249-ASK (29). Nforbi \u2192 Ngwa Nforbi on 4:26-cv-08271-ASK (32) and 3:26-cv-08272-LJC (33). Each packet is motion, declaration, Exhibit A (Sep. 1 Help Desk refusal), proposed order, and mail POS. Not a party substitution. Send the L.R. 7-11(a) emails and fill the bracketed declaration paragraph before mailing. Do not e-file these; paper / mail until the dockets are conformed.",
     "matters": [
       24,
@@ -49,22 +133,6 @@
     "source": "/documents/_ndcal-name-correction/05953-matter-24 - NAME CORRECTION PACKET (Sep 10 2026).pdf"
   },
   {
-    "date": "Sep. 1, 2026",
-    "event": "RECEIVED \u2014 N.D. Cal. ECF Help Desk reply, 12:06 p.m., to Plaintiff's 8:00 a.m. pro se e-filing request. The desk will not merge Brendan Ngehsi Newanforbi and Ngwa Nforbi / Nforbi into one e-filing account because \"the case has to reflect what is listed on the complaint.\" If Plaintiff wants the names changed, submit a request to the court. After the dockets are changed, ask again to merge into one account. Docket clerks: https://cand.uscourts.gov/about-court/clerks-office/civil-docketing-assignments. The five Civil L.R. 7-11 name-correction packets (drafted Sep. 10) are that request.",
-    "matters": [
-      24,
-      28,
-      29,
-      32,
-      33
-    ],
-    "type": "correspondence",
-    "upcoming": false,
-    "filed": false,
-    "actor": "court",
-    "source": "/documents/matter-28/Gmail - Pro se e-filing one account two name forms - CAND ECF Help Desk (Reply Sep 1 2026).pdf"
-  },
-  {
     "date": "Sep. 10, 2026",
     "event": "REVISED (unfiled) \u2014 Motion to Strike POS in Nforbi v. Candelaria et al. (3:26-cv-08272-LJC) now names Fiel Dizon Tigno, Supervising Deputy Attorney General (PACER lead / attorney to be noticed), ahead of William J. McMahon. The September 5 draft had omitted Tigno. Still unfiled.",
     "matters": [
@@ -75,6 +143,18 @@
     "filed": false,
     "actor": "you",
     "source": "/documents/matter-33/ndcal/Proof of Service - Motion to Strike Answer (N.D. Cal. 3-26-cv-08272-LJC) (Sep 5 2026).pdf"
+  },
+  {
+    "date": "Sep. 9, 2026",
+    "event": "RECEIVED \u2014 Defendant Serrato's Rule 26(a)(1) initial disclosures in Newanforbi v. Serrato (4:26-cv-05953-ASK). Diana Montufar emailed them September 9, 2026, 9:34 a.m. Pacific (cc Haiyang A. Li). The disclosures are dated September 8, 2026, with Montufar's email POS the 9th. That satisfies Dkt. 24 \u00a7 VII.A (seven days from Plaintiff's Sep. 8 service; the clock ran to Sep. 15). Do not file. The Gmail subject line miscaptions Alameda 26CV168913 (Matter 2, dismissed); the attached paper is captioned 4:26-cv-05953-ASK. Witnesses named: Plaintiff, Serrato, Melano, Meza-Gonzalez, Candelaria (via Matter 33 counsel), CHP Officer Del Carlo (spelled \"Laruen\"), and an unnamed 2024 parole officer. Documents listed: dashcam/MVARS, APS 34739340 decision, detention certificate, arrest/investigation report, Serrato U-visa denial letter. No damages claimed; official-capacity self-insured. Contact with CHP employees must go through Li. Privilege objections on state-employee personal contact information.",
+    "matters": [
+      24
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "filed": false,
+    "actor": "opposing",
+    "source": "/documents/matter-24/Defendant Serrato's Rule 26(a)(1) Initial Disclosures (Dated Sep 8, Served Sep 9 2026).pdf"
   },
   {
     "date": "Sep. 9, 2026",
@@ -137,19 +217,42 @@
     "source": "/documents/matter-33/ndcal/PACER Docket Report - N.D. Cal. 3-26-cv-08272-LJC (Sep 9 2026).pdf"
   },
   {
-    "date": "Sep. 9, 2026",
-    "event": "OPEN TASK \u2014 Send the One Legal email on Order #29111713 asking them to correct the Odyssey / public-portal short title in Ngwa Nforbi v. Ross Stores, Inc., et al. (Santa Clara 26CV501995) from 'Brendan Ngwa Nforbi vs Does 2 through 20 et al' to 'Brendan Ngwa Nforbi vs. Ross Stores, Inc., et al.' Party-grid order error on the original e-filing. Complaint and issued SUM-100 already name Ross first. File the executed Request to Correct Case Title only if One Legal cannot fix Odyssey. Do not amend. Do not reissue the summons unless the clerk requires it.",
+    "date": "Sep. 10, 2026",
+    "event": "SATISFIED \u2014 One Legal email on Order #29111713. One Legal said to ask Santa Clara. The Odyssey / public-portal short title still reads 'Brendan Ngwa Nforbi vs Does 2 through 20 et al.' File the September 10 Request to Correct Case Title packet. Do not amend. Do not reissue the summons unless the clerk requires it.",
+    "matters": [
+      35
+    ],
+    "type": "deadline",
+    "upcoming": false,
+    "actor": "you",
+    "source": "/documents/matter-35/EMAIL_DRAFT_One_Legal_Correct_Case_Title_Party_Order.txt"
+  },
+  {
+    "date": "Sep. 10, 2026",
+    "event": "RECEIVED \u2014 One Legal, on Order #29111713 (Santa Clara 26CV501995), directed Plaintiff to ask the Court. They will not correct the Odyssey short title themselves. That is the condition for filing the Request to Correct Case Title.",
+    "matters": [
+      35
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-35/Request to Correct Case Title Packet (Request with Exhibits, Declaration, Proposed Order) (Sep 10 2026).pdf"
+  },
+  {
+    "date": "Sep. 10, 2026",
+    "event": "FILE \u2014 Request to Correct Case Title in Ngwa Nforbi v. Ross Stores, Inc., et al. (Santa Clara 26CV501995). One Legal said ask the Court. E-file three papers on the existing case: (1) Request with Exhibits A\u2013C attached, (2) Declaration, (3) [Proposed] Order. Do not amend. Do not reissue the summons unless the clerk requires it. No POS \u2014 no defendant has appeared. After the clerk-stamp, lodge it and retire this row.",
     "matters": [
       35
     ],
     "type": "deadline",
     "upcoming": true,
     "actor": "you",
-    "source": "/documents/matter-35/EMAIL_DRAFT_One_Legal_Correct_Case_Title_Party_Order.txt"
+    "source": "/documents/matter-35/Request to Correct Case Title - Clerical Party-Order Error (Sep 10 2026).pdf"
   },
   {
-    "date": "Sep. 9, 2026",
-    "event": "EXECUTED (unfiled) \u2014 Request to Correct Case Title (clerical party-order error) in Ngwa Nforbi v. Ross Stores, Inc., et al. (26CV501995), with [proposed] order and Exhibits A\u2013C (complaint caption page; Sep. 8 portal print; One Legal Order #29111713 status). Plaintiff entered the One Legal party grid Does-first; the complaint and issued summons name Ross Stores, Inc. first. Do not file until One Legal says they cannot correct Odyssey. Do not amend the complaint.",
+    "date": "Sep. 10, 2026",
+    "event": "EXECUTED (unfiled) \u2014 Request to Correct Case Title (clerical party-order error) in Ngwa Nforbi v. Ross Stores, Inc., et al. (26CV501995), dated September 10, 2026. Three papers: Request with Exhibits A\u2013C bound on; Declaration; [proposed] order. One Legal referred the caption fix to Santa Clara. Ready to e-file. Do not amend the complaint.",
     "matters": [
       35
     ],
@@ -157,7 +260,7 @@
     "upcoming": false,
     "filed": false,
     "actor": "you",
-    "source": "/documents/matter-35/Request to Correct Case Title Packet (Request, Proposed Order, Exs A-C) (Sep 9 2026).pdf"
+    "source": "/documents/matter-35/Request to Correct Case Title Packet (Request with Exhibits, Declaration, Proposed Order) (Sep 10 2026).pdf"
   },
   {
     "date": "Sep. 8, 2026",
@@ -741,7 +844,7 @@
   },
   {
     "date": "Sep. 2, 2026",
-    "event": "DRAFTED, NOT YET SENT \u2014 Reply to Gulomjon Azimov granting his September 1 request: the August 31 meet-and-confer response date moves from September 4 to Friday, September 11, 2026. He must pick (A) Notice of Acknowledgment of Receipt / stipulated acceptance of the Amended Summons and FAC, or (B) sheriff re-service on the SOS agents. Silence on September 11 means path (B). Does not change the December 11, 2026 at-issue CMC. Do not put GitHub raws in the email. \u2014 Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094)",
+    "event": "DRAFTED, NOT YET SENT \u2014 Reply to Gulomjon Azimov granting his September 1 request: the August 31 meet-and-confer response date moves from September 4 to Friday, September 11, 2026. He must pick (A) Notice of Acknowledgment of Receipt / stipulated acceptance of the Amended Summons and FAC, or (B) sheriff re-service on the SOS agents. Silence on September 11 means path (B). Notes that Stanislaus has returned a proof of attempted personal service on Diamond at Turlock and that Alpine remains for Kern; path (B) is still required unless he elects (A). Does not change the December 11, 2026 at-issue CMC. Do not put GitHub raws in the email. Do not volunteer the CCP \u00a7 412.30 item-6 defect. \u2014 Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094)",
     "matters": [
       12
     ],
@@ -750,6 +853,30 @@
     "filed": false,
     "actor": "you",
     "source": "/documents/matter-12/EMAIL_DRAFT_Azimov_Extend_Service_Response_to_Sep11.txt"
+  },
+  {
+    "date": "Sep. 8, 2026",
+    "event": "STANISLAUS POS RETURNED — levy 2026003531, certified Sept. 9, 2026. Deputy P. Heaney personally delivered the Amended Summons (SUM-100) and First Amended Complaint on Sept. 8, 2026 at 9:35 a.m. to Musdaqem Usmani/Manager at 1201 S. Soderquist Road, Turlock, party named Diamond Truck Sales, Inc. POS-010 item 6 completed “as an individual defendant,” not on behalf of the corporation under CCP § 416.10. Right entity and right Diamond address; not SOS agent Saliman Osmani. Same family of trap as the clerk’s July 30 Alpine rejection (Usmani/Manager at Soderquist; Alpine also had the wrong lot). Do not start Diamond’s 30-day clock. Do not default on this proof. File it as diligence. Alpine Kern service on Sheran Osmani remains underway. — Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094)",
+    "matters": [
+      12
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": false,
+    "actor": "agency",
+    "source": "/documents/matter-12/POS010 Proof of Service - Diamond Truck Sales (Levying Officer File No. 2026003531).pdf"
+  },
+  {
+    "date": "Sep. 9, 2026",
+    "event": "DRAFTED, NOT YET SENT \u2014 Email to Stanislaus Civil (civilfax@stansheriff.com, Lu) for additional personal service of the Amended Summons and FAC on Saliman Osmani only, same Turlock address. Keep levy 2026003531 as written (do not change Usmani). New SER-001 blanks 3b(2), names the SOS agent in 3b(3), and instructs POS-010 item 6d / summons Notice on behalf of Diamond Truck Sales, Inc. under CCP \u00a7 416.10 \u2014 not 6a as an individual. The Aug. 31 request invited the trap by saying serve a manager or the agent. File 3531 as diligence; do not start Diamond\u2019s clock on it. Alpine stays Kern. \u2014 Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094)",
+    "matters": [
+      12
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-12/EMAIL_DRAFT_Stanislaus_Sheriff_Diamond_Osmani_41230_Sep9_2026.txt"
   },
   {
     "date": "Sep. 11, 2026",
@@ -1115,6 +1242,22 @@
     "filed": false,
     "actor": "you",
     "source": "/documents/matter-28/Gmail - Pro se e-filing one account two name forms - CAND ECF Help Desk (Sent Sep 1 2026).pdf"
+  },
+  {
+    "date": "Sep. 1, 2026",
+    "event": "RECEIVED \u2014 N.D. Cal. ECF Help Desk reply, 12:06 p.m., to Plaintiff's 8:00 a.m. pro se e-filing request. The desk will not merge Brendan Ngehsi Newanforbi and Ngwa Nforbi / Nforbi into one e-filing account because \"the case has to reflect what is listed on the complaint.\" If Plaintiff wants the names changed, submit a request to the court. After the dockets are changed, ask again to merge into one account. Docket clerks: https://cand.uscourts.gov/about-court/clerks-office/civil-docketing-assignments. The five Civil L.R. 7-11 name-correction packets (drafted Sep. 10) are that request.",
+    "matters": [
+      24,
+      28,
+      29,
+      32,
+      33
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "filed": false,
+    "actor": "court",
+    "source": "/documents/matter-28/Gmail - Pro se e-filing one account two name forms - CAND ECF Help Desk (Reply Sep 1 2026).pdf"
   },
   {
     "date": "Sep. 1, 2026",
@@ -2078,12 +2221,12 @@
   },
   {
     "date": "Sep. 9, 2026",
-    "event": "Meet-and-confer deadline (computed) as to The RK Logistics Group, Inc. \u2014 Newanforbi v. Randstad US, LLC et al. (26CV199902); CCP \u00a7430.41(a)(2) requires meet-and-confer at least 5 calendar days before the extended Sept. 14, 2026 responsive-pleading deadline, if RK Logistics intends to demur; otherwise it must file a declaration for the automatic 30-day extension. Randstad US, LLC's meet-and-confer remains Sept. 10, 2026.",
+    "event": "LAPSED \u2014 Meet-and-confer deadline (computed) as to The RK Logistics Group, Inc. \u2014 Newanforbi v. Randstad US, LLC et al. (26CV199902); CCP \u00a7430.41(a)(2) required meet-and-confer at least 5 calendar days before the extended Sept. 14, 2026 responsive-pleading deadline. That clock was September 9. If RK demurs without a timely conference it must file the statute's declaration. Randstad US, LLC's meet-and-confer remains Sept. 10, 2026.",
     "matters": [
       27
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "opposing",
     "source": "/documents/matter-27/Gmail - RK Logistics Extension Request to Sep 14 (Aug 21 2026).pdf"
   },
@@ -3651,14 +3794,14 @@
   },
   {
     "date": "Sep. 15, 2026",
-    "event": "WATCH \u2014 Defendant's Rule 26(a)(1) disclosures in Newanforbi v. Serrato (4:26-cv-05953-ASK). Dkt. 24 \u00a7 VII.A asked Defendant to serve within seven days of Plaintiff's Sep. 8 service. Plaintiff's disclosures went 8:59 p.m. Sep. 8. Same day as the CMC.",
+    "event": "SATISFIED \u2014 Defendant's Rule 26(a)(1) disclosures in Newanforbi v. Serrato (4:26-cv-05953-ASK). Dkt. 24 \u00a7 VII.A asked Defendant to serve within seven days of Plaintiff's Sep. 8 service. Montufar served them September 9, 2026, 9:34 a.m. (dated Sep. 8). Do not file.",
     "matters": [
       24
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "opposing",
-    "source": "/documents/matter-24/Dkt 24 - Joint Case Management Conference Statement (Filed Sep 8 2026).pdf"
+    "source": "/documents/matter-24/Defendant Serrato's Rule 26(a)(1) Initial Disclosures (Dated Sep 8, Served Sep 9 2026).pdf"
   },
   {
     "date": "Sep. 15, 2026",
