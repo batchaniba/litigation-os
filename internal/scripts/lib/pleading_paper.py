@@ -249,7 +249,11 @@ class PleadingPaper:
                 elif rb: fn = "Times-Bold"
                 elif ri: fn = "Times-Italic"
                 else: fn = "Times-Roman"
-                c.setFont(fn, caption_size)
+                size = caption_size
+                avail = CONTENT_RIGHT - right_col_x - 4
+                while size > 7 and c.stringWidth(rt, fn, size) > avail:
+                    size -= 0.25
+                c.setFont(fn, size)
                 c.drawString(right_col_x, y, rt)
         last_row_y = first_y - (max(len(left), len(right)) - 1) * tight_lh
         box_bottom = last_row_y - 8

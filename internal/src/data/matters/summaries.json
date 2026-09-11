@@ -658,7 +658,7 @@
     "case_no": "4:26-cv-05953-ASK",
     "court": "USDC N.D. Cal.",
     "claims": "42 USC 1983: Fourteenth Amendment (Substantive & Procedural Due Process), First Amendment (Retaliation); Declaratory Relief",
-    "status_label": "Appear Sep. 15 CMC",
+    "status_label": "MTD Sep. 30; CMC continued",
     "lifecycle": "active",
     "proceeding": "federal_civil",
     "phase": "mtd_briefing",
@@ -685,7 +685,7 @@
       }
     ],
     "evidenceCount": 13,
-    "documentCount": 63
+    "documentCount": 72
   },
   {
     "number": 25,
@@ -831,7 +831,7 @@
       }
     ],
     "evidenceCount": 17,
-    "documentCount": 67
+    "documentCount": 76
   },
   {
     "number": 29,
@@ -876,7 +876,7 @@
     ],
     "archived": false,
     "evidenceCount": 35,
-    "documentCount": 113
+    "documentCount": 121
   },
   {
     "number": 30,
@@ -976,7 +976,7 @@
     ],
     "archived": false,
     "evidenceCount": 17,
-    "documentCount": 168
+    "documentCount": 176
   },
   {
     "number": 33,
@@ -1019,7 +1019,7 @@
     ],
     "archived": false,
     "evidenceCount": 21,
-    "documentCount": 64
+    "documentCount": 74
   },
   {
     "number": 34,
