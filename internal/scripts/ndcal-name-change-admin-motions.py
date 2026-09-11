@@ -26,7 +26,7 @@ sys.path.insert(0, str(SCRIPT_DIR / "lib"))
 
 from exhibit_cover import write_exhibit_cover  # noqa: E402
 from pdf_packet import assemble  # noqa: E402
-from pleading_paper import CONTENT_LEFT, PleadingPaper  # noqa: E402
+from pleading_paper import CONTENT_LEFT, CONTENT_RIGHT, PleadingPaper  # noqa: E402
 from proof_of_service import (  # noqa: E402
     DISTRICT_NDCAL,
     ProofOfServiceFields,
@@ -541,12 +541,37 @@ def _sign_for(d: PleadingPaper, case: NameCase, *, declaration: bool = False) ->
     d.write_line(SIG_LINE, right=True, right_margin_offset=20)
     d.write_line(NEW_NAME_CAPS, bold=True, right=True, right_margin_offset=20)
     d.write_line("Plaintiff, In Propria Persona", right=True, right_margin_offset=20)
-    d.write_line(
+    _write_right_markup(
+        d,
         f"(presently on this docket as {_bold_nforbi_name(case.current_docket_name)})",
-        right=True,
-        right_margin_offset=20,
         size=10,
+        right_margin_offset=20,
     )
+
+
+def _write_right_markup(
+    d: PleadingPaper,
+    text: str,
+    *,
+    size: int = 10,
+    right_margin_offset: int = 20,
+) -> None:
+    """Right-align a line that may contain <<b:…>> markers."""
+    segs = d._parse_segments(text)
+
+    def font_for(style: str) -> str:
+        return "Times-Bold" if style == "b" else "Times-Roman"
+
+    total = sum(d.c.stringWidth(part, font_for(style), size) for part, style in segs)
+    d._ensure_line()
+    y = d._line_y(d.current_line)
+    x = CONTENT_RIGHT - right_margin_offset - total
+    for part, style in segs:
+        font = font_for(style)
+        d.c.setFont(font, size)
+        d.c.drawString(x, y, part)
+        x += d.c.stringWidth(part, font, size)
+    d.current_line += 1
 
 
 def _bold_nforbi_name(name: str) -> str:
@@ -668,7 +693,7 @@ def build_motion(case: NameCase) -> Path:
         first_indent=0,
     )
     d.blank_line()
-    d.ensure_space(3)
+    d.ensure_space(10)
     d.write_line("I.", bold=True, center=True)
     d.write_line("THE ECF HELP DESK CANNOT LINK THE ACCOUNT", bold=True, center=True)
     d.write_line("UNTIL THE DOCKET MATCHES", bold=True, center=True)
