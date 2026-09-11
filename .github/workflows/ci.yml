@@ -51,6 +51,9 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Golden-file tests (damages/fee math)
+        run: npm run test:golden
+
       - name: Validate portfolio data (matter JSON, document paths, cross-module coverage)
         run: npm run validate
 
