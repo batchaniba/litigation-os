@@ -803,7 +803,7 @@ def build_proposed_order(case: NameCase) -> Path:
         first_indent=0,
     )
     d.blank_line()
-    d.write_line(f"IT IS SO ORDERED.", bold=True)
+    d.write_line("IT IS SO ORDERED.", bold=True)
     d.blank_line()
     d.blank_line()
     d.write_line("Dated: ________________     ________________________________")
