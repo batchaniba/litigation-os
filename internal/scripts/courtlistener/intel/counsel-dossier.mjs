@@ -328,9 +328,10 @@ async function main() {
     const record = JSON.parse(readFileSync(file, "utf8"));
     const existing = Array.isArray(record.opposing_counsel) ? record.opposing_counsel : [];
     const key = slugify(name);
-    const next = existing.some((c) => slugify(c.name) === key)
-      ? existing
-      : [...existing, { name, attorney_id: attorneyIdValue, firm, dossier: `counsel/${slug}.json` }];
+    const entry = { name, dossier: `counsel/${slug}.json` };
+    if (attorneyIdValue != null) entry.attorney_id = attorneyIdValue;
+    if (firm) entry.firm = firm;
+    const next = existing.some((c) => slugify(c.name) === key) ? existing : [...existing, entry];
     record.opposing_counsel = next;
     const issues = validateMatter(record);
     if (issues.length > 0) {
