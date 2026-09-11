@@ -3,9 +3,12 @@
 // New entries become ledger rows + optional timeline facts. Deadlines go to review.json.
 //
 // Usage:
-//   npm run court:sync
-//   npm run court:sync -- --dry-run
+//   npm run court:sync -- --bootstrap
+//   npm run court:sync -- --bootstrap --since 2026-07-01
+//   npm run court:sync -- --active-only
 //   npm run court:sync -- --matter 28
+//   npm run court:sync -- --all
+//   npm run court:sync -- --dry-run --bootstrap
 
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -25,12 +28,32 @@ import {
 } from "./io.mjs";
 import { reconcileEntries } from "./reconcile.mjs";
 
-function parseArgs(argv) {
-  const args = { dryRun: false, matter: null };
+/** Live federal matters for the first controlled ingest. Historical / dismissed dockets stay off this list. */
+export const BOOTSTRAP_MATTERS = Object.freeze([24, 25, 26, 28, 29, 32, 33]);
+export const ACTIVE_LIFECYCLES = new Set(["active", "pre_filing"]);
+
+export function parseArgs(argv) {
+  const args = {
+    dryRun: false,
+    matter: null,
+    bootstrap: false,
+    activeOnly: false,
+    all: false,
+    since: null,
+  };
   for (let i = 0; i < argv.length; i += 1) {
     const token = argv[i];
     if (token === "--dry-run") args.dryRun = true;
+    else if (token === "--bootstrap") args.bootstrap = true;
+    else if (token === "--active-only") args.activeOnly = true;
+    else if (token === "--all") args.all = true;
     else if (token === "--matter") args.matter = Number(argv[++i]);
+    else if (token === "--since") args.since = String(argv[++i] ?? "");
+  }
+  if (args.since && !/^\d{4}-\d{2}-\d{2}$/.test(args.since)) {
+    const error = new Error("--since must be YYYY-MM-DD");
+    error.code = "CL_SINCE_FORMAT";
+    throw error;
   }
   return args;
 }
@@ -43,6 +66,28 @@ export function boundMatters(matters, matterFilter = null) {
   });
 }
 
+function cursorEmpty(syncState, matterNumber) {
+  const cursor = syncState?.matters?.[String(matterNumber)];
+  return !cursor?.last_entry_id && cursor?.last_entry_number == null;
+}
+
+export function selectSyncTargets(matters, args = {}, syncState = {}) {
+  const bound = boundMatters(matters, Number.isInteger(args.matter) ? args.matter : null);
+  if (Number.isInteger(args.matter)) return bound;
+  if (args.bootstrap) return bound.filter((row) => BOOTSTRAP_MATTERS.includes(row.number));
+  if (args.activeOnly) return bound.filter((row) => ACTIVE_LIFECYCLES.has(row.lifecycle));
+  if (args.all) return bound;
+  const empty = bound.some((row) => cursorEmpty(syncState, row.number));
+  if (empty) {
+    const error = new Error(
+      "Cursors are empty. Refusing a full historical backfill. Pass --bootstrap (24, 25, 26, 28, 29, 32, 33), --active-only, --matter N, or --all.",
+    );
+    error.code = "CL_EMPTY_CURSOR_GUARD";
+    throw error;
+  }
+  return bound;
+}
+
 export async function syncDockets({
   client,
   matters,
@@ -52,10 +97,14 @@ export async function syncDockets({
   syncState,
   dryRun = false,
   matter = null,
+  bootstrap = false,
+  activeOnly = false,
+  all = false,
+  since = null,
   now = () => new Date(),
 } = {}) {
   const ingestedAt = now().toISOString();
-  const targets = boundMatters(matters, matter);
+  const targets = selectSyncTargets(matters, { matter, bootstrap, activeOnly, all }, syncState);
   const normalized = [];
   const perMatter = [];
 
@@ -66,6 +115,7 @@ export async function syncDockets({
       docketId,
       afterEntryId: cursor.last_entry_id ?? null,
       afterEntryNumber: cursor.last_entry_id ? null : (cursor.last_entry_number ?? null),
+      dateFiledGte: since,
     });
     const rows = entries.map((entry) =>
       normalizeDocketEntry(entry, { matter: row.number, docketId, ingestedAt }),
@@ -122,15 +172,14 @@ async function main() {
   try {
     usage = await client.getApiUsage();
   } catch (err) {
-    console.warn(`api-usage lookup failed (${err.message}); continuing with live limits unknown.`);
+    console.error(`api-usage lookup failed (${err.message}); refusing to sync without a budget reading.`);
+    process.exit(3);
   }
-  if (usage) {
-    const budget = budgetAllows(usage);
-    console.log(`API budget: ${budget.reason}`);
-    if (!budget.ok) {
-      console.error("Aborting sync to preserve the CourtListener request budget.");
-      process.exit(3);
-    }
+  const budget = budgetAllows(usage);
+  console.log(`API budget: ${budget.reason}`);
+  if (!budget.ok) {
+    console.error("Aborting sync to preserve the CourtListener request budget.");
+    process.exit(3);
   }
 
   const outcome = await syncDockets({
@@ -142,11 +191,16 @@ async function main() {
     syncState: loadSyncState(),
     dryRun: args.dryRun,
     matter: Number.isInteger(args.matter) ? args.matter : null,
+    bootstrap: args.bootstrap,
+    activeOnly: args.activeOnly,
+    all: args.all,
+    since: args.since,
   });
   console.log(
     `${args.dryRun ? "Dry run — " : ""}entries ${outcome.stats.seen}, skipped ${outcome.stats.skipped}, ` +
       `facts +${outcome.stats.factsAdded}, provenance ${outcome.stats.provenanceAttached}, ` +
-      `deadline candidates +${outcome.stats.candidatesAdded}.`,
+      `deadline candidates +${outcome.stats.candidatesAdded}` +
+      `${outcome.stats.ambiguousQueued ? `, ambiguous ${outcome.stats.ambiguousQueued}` : ""}.`,
   );
   for (const row of outcome.perMatter) {
     console.log(`  Matter ${row.matter} docket ${row.docketId}: ${row.pulled} new raw entries`);
@@ -157,6 +211,6 @@ const isCli = process.argv[1] && fileURLToPath(import.meta.url) === path.resolve
 if (isCli) {
   main().catch((err) => {
     console.error(err.message || err);
-    process.exit(1);
+    process.exit(err.code === "CL_EMPTY_CURSOR_GUARD" || err.code === "CL_SINCE_FORMAT" ? 2 : 1);
   });
 }

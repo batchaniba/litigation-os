@@ -28,3 +28,8 @@ internal/public/documents/**
 !internal/public/documents/
 !internal/public/documents/README.md
 !internal/public/documents/.gitkeep
+
+# Local CourtListener token. Never a VITE_* name.
+.env
+.env.*
+!.env.example

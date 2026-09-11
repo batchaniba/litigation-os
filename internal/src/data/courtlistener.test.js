@@ -16,8 +16,14 @@ import {
   normalizeDocketEntry,
 } from "../../scripts/courtlistener/entries.mjs";
 import { reconcileEntries } from "../../scripts/courtlistener/reconcile.mjs";
+import {
+  BOOTSTRAP_MATTERS,
+  parseArgs,
+  selectSyncTargets,
+} from "../../scripts/courtlistener/sync-dockets.mjs";
 import { resolveMatter } from "../../scripts/courtlistener/resolve-dockets.mjs";
 import { extractDocketHints, webhookSyncPlan } from "../../scripts/courtlistener/webhook.mjs";
+import apiUsageFixture from "./courtlistener/fixtures/api-usage.json";
 
 describe("docket number + court binding", () => {
   it("strips judge initials and (PC) from PACER numbers", () => {
@@ -210,6 +216,69 @@ describe("reconcileEntries", () => {
     expect(result.timeline[0].event).toContain("Proof of Service");
   });
 
+  it("does not attach Dkt. N provenance when another row only mentions that docket", () => {
+    const timeline = [
+      {
+        date: "Aug. 26, 2026",
+        event: "FILED — Dkt. 18 Motion to Dismiss FAC in Newanforbi v. Serrato",
+        matters: [24],
+        type: "filing",
+        upcoming: false,
+      },
+      {
+        date: "Sep. 30, 2026",
+        event: "Hearing on Defendant Serrato's Motion to Dismiss FAC (Dkt. 18)",
+        matters: [24],
+        type: "hearing",
+        upcoming: true,
+      },
+    ];
+    const mtd = normalizeDocketEntry(
+      { id: 1800, entry_number: 18, date_filed: "2026-08-26", description: "MOTION to Dismiss the FAC" },
+      { matter: 24, docketId: 1, ingestedAt: "2026-09-11T08:00:00Z" },
+    );
+    const result = reconcileEntries({ timeline, normalizedEntries: [mtd] });
+    expect(result.stats.factsAdded).toBe(0);
+    expect(result.stats.provenanceAttached).toBe(1);
+    expect(result.timeline[0].external.docket_entry_id).toBe(1800);
+    expect(result.timeline[1].external).toBeUndefined();
+  });
+
+  it("parks an ambiguous same-date Dkt. N collision in review instead of guessing", () => {
+    const timeline = [
+      {
+        date: "Aug. 26, 2026",
+        event: "FILED — Dkt. 18 Motion to Dismiss FAC",
+        matters: [24],
+        type: "filing",
+        upcoming: false,
+      },
+      {
+        date: "Aug. 26, 2026",
+        event: "SET — Dkt. 18 hearing on the motion to dismiss FAC",
+        matters: [24],
+        type: "hearing",
+        upcoming: false,
+      },
+    ];
+    const mtd = normalizeDocketEntry(
+      { id: 1800, entry_number: 18, date_filed: "2026-08-26", description: "MOTION to Dismiss" },
+      { matter: 24, docketId: 1, ingestedAt: "2026-09-11T08:00:00Z" },
+    );
+    const result = reconcileEntries({ timeline, normalizedEntries: [mtd] });
+    expect(result.stats.factsAdded).toBe(0);
+    expect(result.stats.provenanceAttached).toBe(0);
+    expect(result.stats.ambiguousQueued).toBe(1);
+    expect(result.timeline).toHaveLength(2);
+    expect(result.timeline.every((event) => !event.external?.docket_entry_id)).toBe(true);
+    expect(result.review.candidates[0]).toMatchObject({
+      matter: 24,
+      candidate_type: "ambiguous_timeline_match",
+      trigger_entry: 18,
+      status: "pending",
+    });
+  });
+
   it("never flips a deadline candidate onto upcoming: true", () => {
     const result = reconcileEntries({ timeline: [], normalizedEntries: [order] });
     expect(result.stats.factsAdded).toBe(1);
@@ -263,10 +332,56 @@ describe("token leakage and budget", () => {
     expect(() => readCourtListenerToken({ VITE_COURTLISTENER_TOKEN: "secret" })).toThrow(/VITE_/);
   });
 
-  it("reads remaining quota instead of hard-coding 125/day", () => {
-    expect(remainingFromUsage({ daily_limit: 500, daily_used: 10 }).daily).toBe(490);
+  it("accepts COURTLISTENER_TOKEN and the COURTLISTENER_API_TOKEN alias", () => {
+    expect(readCourtListenerToken({ COURTLISTENER_TOKEN: "abc" })).toBe("abc");
+    expect(readCourtListenerToken({ COURTLISTENER_API_TOKEN: "alias" })).toBe("alias");
+    expect(readCourtListenerToken({ COURTLISTENER_TOKEN: "primary", COURTLISTENER_API_TOKEN: "alias" })).toBe(
+      "primary",
+    );
+  });
+
+  it("parses the documented /api-usage/ current_usage rows", () => {
+    const remaining = remainingFromUsage(apiUsageFixture);
+    expect(remaining.unknown).toBe(false);
+    expect(remaining.daily).toBe(62);
+    expect(remaining.hourly).toBe(32);
+    expect(remaining.minute).toBe(3);
+    expect(budgetAllows(apiUsageFixture).ok).toBe(true);
+  });
+
+  it("fails closed when the usage body is not the documented shape", () => {
+    expect(budgetAllows({ weird: true }).ok).toBe(false);
+    expect(budgetAllows({ weird: true }).reason).toBe("usage_shape_unknown");
     expect(budgetAllows({ daily_remaining: 2 }).ok).toBe(false);
     expect(budgetAllows({ daily_remaining: 40 }).ok).toBe(true);
-    expect(budgetAllows({ weird: true }).ok).toBe(true);
+    expect(remainingFromUsage({ daily_limit: 500, daily_used: 10 }).daily).toBe(490);
+  });
+});
+
+describe("sync target selection", () => {
+  const matters = [
+    { number: 1, type: "Federal", proceeding: "federal_civil", lifecycle: "dismissed", courtlistener: { docket_id: 1 } },
+    { number: 24, type: "Federal", proceeding: "federal_civil", lifecycle: "active", courtlistener: { docket_id: 24 } },
+    { number: 28, type: "Federal", proceeding: "federal_civil", lifecycle: "active", courtlistener: { docket_id: 28 } },
+    { number: 7, type: "Federal", proceeding: "federal_civil", lifecycle: "dismissed", courtlistener: { docket_id: 7 } },
+  ];
+
+  it("refuses a first sync of every bound docket when cursors are empty", () => {
+    expect(() => selectSyncTargets(matters, {}, { matters: {} })).toThrow(/Refusing a full historical backfill/);
+  });
+
+  it("bootstraps only the live seven", () => {
+    expect(BOOTSTRAP_MATTERS).toEqual([24, 25, 26, 28, 29, 32, 33]);
+    expect(selectSyncTargets(matters, { bootstrap: true }).map((row) => row.number)).toEqual([24, 28]);
+  });
+
+  it("parses --bootstrap --since and --active-only", () => {
+    expect(parseArgs(["--bootstrap", "--since", "2026-07-01", "--dry-run"])).toMatchObject({
+      bootstrap: true,
+      since: "2026-07-01",
+      dryRun: true,
+    });
+    expect(parseArgs(["--active-only"]).activeOnly).toBe(true);
+    expect(() => parseArgs(["--since", "07/01/2026"])).toThrow(/YYYY-MM-DD/);
   });
 });
