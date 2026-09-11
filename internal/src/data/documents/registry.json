@@ -1172,6 +1172,11 @@
       "ownerMatter": 24
     },
     {
+      "path": "/documents/matter-24/EMAIL_DRAFT_Name_Conform_Stipulation_serrato.txt",
+      "label": "EMAIL_DRAFT_Name_Conform_Stipulation_serrato.txt",
+      "ownerMatter": 24
+    },
+    {
       "path": "/documents/matter-24/Exhibit A Cover - Whitman Order (Aug 29 2026).pdf",
       "label": "Exhibit A Cover - Whitman Order (Aug 29 2026)",
       "ownerMatter": 24
@@ -1214,6 +1219,11 @@
     {
       "path": "/documents/matter-24/Mailing Photo - Envelope to NDCal Clerk San Jose (Aug 21 2026).jpeg",
       "label": "Mailing Photo - Envelope to NDCal Clerk San Jose (Aug 21 2026).jpeg",
+      "ownerMatter": 24
+    },
+    {
+      "path": "/documents/matter-24/Name Conform Packet - Brendan Ngwa Nforbi (September 11, 2026).pdf",
+      "label": "Name Conform Packet - Brendan Ngwa Nforbi (September 11, 2026)",
       "ownerMatter": 24
     },
     {
@@ -1317,6 +1327,11 @@
       "ownerMatter": 24
     },
     {
+      "path": "/documents/matter-24/Proof of Service - Name Conform Stipulation (September 11, 2026).pdf",
+      "label": "Proof of Service - Name Conform Stipulation (September 11, 2026)",
+      "ownerMatter": 24
+    },
+    {
       "path": "/documents/matter-24/Proof of Service - Rule 26 Initial Disclosures (Sep 8 2026).pdf",
       "label": "Proof of Service - Rule 26 Initial Disclosures (Sep 8 2026)",
       "ownerMatter": 24
@@ -1342,8 +1357,23 @@
       "ownerMatter": 24
     },
     {
+      "path": "/documents/matter-24/Proposed Order - Conform Plaintiff's Name to Brendan Ngwa Nforbi (September 11, 2026).pdf",
+      "label": "Proposed Order - Conform Plaintiff's Name to Brendan Ngwa Nforbi (September 11, 2026)",
+      "ownerMatter": 24
+    },
+    {
       "path": "/documents/matter-24/Proposed Order Granting Supplemental Administrative Motion to Relate Cases (Aug 21 2026).pdf",
       "label": "Proposed Order Granting Supplemental Administrative Motion to Relate Cases (Aug 21 2026)",
+      "ownerMatter": 24
+    },
+    {
+      "path": "/documents/matter-24/Stipulation and Proposed Order - Conform Plaintiff's Name to Brendan Ngwa Nforbi (September 11, 2026).docx",
+      "label": "Stipulation and Proposed Order - Conform Plaintiff's Name to Brendan Ngwa Nforbi (September 11, 2026)",
+      "ownerMatter": 24
+    },
+    {
+      "path": "/documents/matter-24/Stipulation and Proposed Order - Conform Plaintiff's Name to Brendan Ngwa Nforbi (September 11, 2026).pdf",
+      "label": "Stipulation and Proposed Order - Conform Plaintiff's Name to Brendan Ngwa Nforbi (September 11, 2026)",
       "ownerMatter": 24
     },
     {
@@ -2292,6 +2322,11 @@
       "ownerMatter": 28
     },
     {
+      "path": "/documents/matter-28/EMAIL_DRAFT_Name_Conform_Stipulation_smith.txt",
+      "label": "EMAIL_DRAFT_Name_Conform_Stipulation_smith.txt",
+      "ownerMatter": 28
+    },
+    {
       "path": "/documents/matter-28/Exhibit A Stipulated Protective Order.pdf",
       "label": "Exhibit A — State Court Stipulated Protective Order (entered Jun. 17, 2026; STK-CV-UF-2026-0001032)",
       "ownerMatter": 28
@@ -2319,6 +2354,16 @@
     {
       "path": "/documents/matter-28/Gmail - Re Contains JavaScript Re Newanforbi v Palacios re Stipulated Protective Order (Jun 2026).pdf",
       "label": "Email thread — stipulated protective order / JavaScript (June 2026, Matter 5)",
+      "ownerMatter": 28
+    },
+    {
+      "path": "/documents/matter-28/Gmail - Re Pro se e-filing one account two name forms - CAND ECF Help Desk (Received Sep 1 2026).pdf",
+      "label": "Gmail - Re Pro se e-filing one account two name forms - CAND ECF Help Desk (Received Sep 1 2026)",
+      "ownerMatter": 28
+    },
+    {
+      "path": "/documents/matter-28/Gmail - RE request to stipulate to docket name correction - Martinez (Sep 10 2026).pdf",
+      "label": "Gmail - RE request to stipulate to docket name correction - Martinez (Sep 10 2026)",
       "ownerMatter": 28
     },
     {
@@ -2387,6 +2432,11 @@
       "ownerMatter": 28
     },
     {
+      "path": "/documents/matter-28/Name Conform Packet - Brendan Ngwa Nforbi (September 11, 2026).pdf",
+      "label": "Name Conform Packet - Brendan Ngwa Nforbi (September 11, 2026)",
+      "ownerMatter": 28
+    },
+    {
       "path": "/documents/matter-28/Ngehsi Newanforbi v. Smith et al (3_26-cv-07504), California Northern District Court.pdf",
       "label": "PACER Docket Sheet — Newanforbi v. Smith et al. (3:26-cv-07504), USDC N.D. Cal. (as of Jul. 22, 2026)",
       "ownerMatter": 28
@@ -2412,8 +2462,18 @@
       "ownerMatter": 28
     },
     {
+      "path": "/documents/matter-28/Proof of Service - Name Conform Stipulation (September 11, 2026).pdf",
+      "label": "Proof of Service - Name Conform Stipulation (September 11, 2026)",
+      "ownerMatter": 28
+    },
+    {
       "path": "/documents/matter-28/Proof of Service - SLB Accepted Service for Smith and HOPE (N.D. Cal. 3-26-cv-07504-LJC) (Sep 2 2026).pdf",
       "label": "Proof of Service - SLB Accepted Service for Smith and HOPE (N.D. Cal. 3-26-cv-07504-LJC) (Sep 2 2026)",
+      "ownerMatter": 28
+    },
+    {
+      "path": "/documents/matter-28/Proposed Order - Conform Plaintiff's Name to Brendan Ngwa Nforbi (September 11, 2026).pdf",
+      "label": "Proposed Order - Conform Plaintiff's Name to Brendan Ngwa Nforbi (September 11, 2026)",
       "ownerMatter": 28
     },
     {
@@ -2519,6 +2579,16 @@
     {
       "path": "/documents/matter-28/Stipulated Protective Order SIGNED.pdf",
       "label": "Stipulated Protective Order SIGNED — State Court (Jun. 17, 2026)",
+      "ownerMatter": 28
+    },
+    {
+      "path": "/documents/matter-28/Stipulation and Proposed Order - Conform Plaintiff's Name to Brendan Ngwa Nforbi (September 11, 2026).docx",
+      "label": "Stipulation and Proposed Order - Conform Plaintiff's Name to Brendan Ngwa Nforbi (September 11, 2026)",
+      "ownerMatter": 28
+    },
+    {
+      "path": "/documents/matter-28/Stipulation and Proposed Order - Conform Plaintiff's Name to Brendan Ngwa Nforbi (September 11, 2026).pdf",
+      "label": "Stipulation and Proposed Order - Conform Plaintiff's Name to Brendan Ngwa Nforbi (September 11, 2026)",
       "ownerMatter": 28
     },
     {
@@ -2669,6 +2739,11 @@
     {
       "path": "/documents/matter-29/EMAIL_DRAFT_Amazon_Stip_Esig_Decline.txt",
       "label": "EMAIL_DRAFT_Amazon_Stip_Esig_Decline.txt",
+      "ownerMatter": 29
+    },
+    {
+      "path": "/documents/matter-29/EMAIL_DRAFT_Name_Conform_Stipulation_amazon.txt",
+      "label": "EMAIL_DRAFT_Name_Conform_Stipulation_amazon.txt",
       "ownerMatter": 29
     },
     {
@@ -2877,6 +2952,11 @@
       "ownerMatter": 29
     },
     {
+      "path": "/documents/matter-29/Name Conform Packet - Brendan Ngwa Nforbi (not yet agreed) (September 11, 2026).pdf",
+      "label": "Name Conform Packet - Brendan Ngwa Nforbi (not yet agreed) (September 11, 2026)",
+      "ownerMatter": 29
+    },
+    {
       "path": "/documents/matter-29/Newanforbi_v_Amazon_Complaint.pdf",
       "label": "Complaint for Damages — 7 causes of action, executed July 28, 2026, ready for e-filing (Alameda Superior Court)",
       "ownerMatter": 29
@@ -2957,8 +3037,18 @@
       "ownerMatter": 29
     },
     {
+      "path": "/documents/matter-29/Proof of Service - Name Conform Stipulation (September 11, 2026).pdf",
+      "label": "Proof of Service - Name Conform Stipulation (September 11, 2026)",
+      "ownerMatter": 29
+    },
+    {
       "path": "/documents/matter-29/Proof of Service Accurate Background.pdf",
       "label": "POS-010 Proof of Service of Summons — Accurate Background LLC (served Jul. 31, 2026, 11:00 AM on CT Corporation / Jaqueline Mejia; declaration dated Aug. 5, 2026)",
+      "ownerMatter": 29
+    },
+    {
+      "path": "/documents/matter-29/Proposed Order - Conform Plaintiff's Name to Brendan Ngwa Nforbi (September 11, 2026).pdf",
+      "label": "Proposed Order - Conform Plaintiff's Name to Brendan Ngwa Nforbi (September 11, 2026)",
       "ownerMatter": 29
     },
     {
@@ -3039,6 +3129,16 @@
     {
       "path": "/documents/matter-29/Seyfarth Draft - Stipulation to Extend Accurate Time to Respond (328376958.1) (Sep 1 2026).docx",
       "label": "Seyfarth draft stipulation to extend Accurate Background's time to respond (328376958.1, Sep. 1, 2026) — counsel draft.",
+      "ownerMatter": 29
+    },
+    {
+      "path": "/documents/matter-29/Stipulation and Proposed Order - Conform Plaintiff's Name to Brendan Ngwa Nforbi (Plaintiff Counterpart — not yet agreed) (September 11, 2026).docx",
+      "label": "Stipulation and Proposed Order - Conform Plaintiff's Name to Brendan Ngwa Nforbi (Plaintiff Counterpart — not yet agreed) (September 11, 2026)",
+      "ownerMatter": 29
+    },
+    {
+      "path": "/documents/matter-29/Stipulation and Proposed Order - Conform Plaintiff's Name to Brendan Ngwa Nforbi (Plaintiff Counterpart — not yet agreed) (September 11, 2026).pdf",
+      "label": "Stipulation and Proposed Order - Conform Plaintiff's Name to Brendan Ngwa Nforbi (Plaintiff Counterpart — not yet agreed) (September 11, 2026)",
       "ownerMatter": 29
     },
     {
@@ -3707,6 +3807,11 @@
       "ownerMatter": 32
     },
     {
+      "path": "/documents/matter-32/ndcal/EMAIL_DRAFT_Name_Conform_Stipulation_meza.txt",
+      "label": "EMAIL_DRAFT_Name_Conform_Stipulation_meza.txt",
+      "ownerMatter": 32
+    },
+    {
       "path": "/documents/matter-32/ndcal/Exhibit A - Caption Page - ED Cal MTD Li Appearance (Dec 10 2025).pdf",
       "label": "Exhibit A - Caption Page - ED Cal MTD Li Appearance (Dec 10 2025)",
       "ownerMatter": 32
@@ -3797,6 +3902,11 @@
       "ownerMatter": 32
     },
     {
+      "path": "/documents/matter-32/ndcal/Name Conform Packet - Brendan Ngwa Nforbi (September 11, 2026).pdf",
+      "label": "Name Conform Packet - Brendan Ngwa Nforbi (September 11, 2026)",
+      "ownerMatter": 32
+    },
+    {
       "path": "/documents/matter-32/ndcal/Notice Identifying Operative First Amended Complaint (Meza) (Aug 24 2026).pdf",
       "label": "Notice Identifying Operative First Amended Complaint (Dkt. 5 operative; Dkt. 6 superseded) (Aug. 24, 2026)",
       "ownerMatter": 32
@@ -3827,6 +3937,11 @@
       "ownerMatter": 32
     },
     {
+      "path": "/documents/matter-32/ndcal/Proof of Service - Name Conform Stipulation (September 11, 2026).pdf",
+      "label": "Proof of Service - Name Conform Stipulation (September 11, 2026)",
+      "ownerMatter": 32
+    },
+    {
       "path": "/documents/matter-32/ndcal/Proof of Service of Summons - Jose Melano (C&P Process Server original, clerk-stamped Aug 31 2026).pdf",
       "label": "Proof of Service of Summons - Jose Melano (C&P Process Server original, clerk-stamped Aug 31 2026)",
       "ownerMatter": 32
@@ -3839,6 +3954,11 @@
     {
       "path": "/documents/matter-32/ndcal/Proof of Service Packet - FAC Dkt 05 Mailed to Melano with Exhibit A (Aug 21 2026).pdf",
       "label": "Filing packet — Proof of Service of FAC Dkt. 5 mailed to Melano (Aug. 21, 2026) with Exhibit A USPS e-receipt (4 pp.; unfiled)",
+      "ownerMatter": 32
+    },
+    {
+      "path": "/documents/matter-32/ndcal/Proposed Order - Conform Plaintiff's Name to Brendan Ngwa Nforbi (September 11, 2026).pdf",
+      "label": "Proposed Order - Conform Plaintiff's Name to Brendan Ngwa Nforbi (September 11, 2026)",
       "ownerMatter": 32
     },
     {
@@ -3864,6 +3984,16 @@
     {
       "path": "/documents/matter-32/ndcal/SER-001 Request for Sheriff to Serve Court Papers - Santiago Meza-Gonzalez (Stanislaus, Aug 13 2026).pdf",
       "label": "SER-001 Request for Sheriff to Serve Court Papers — Santiago Meza-Gonzalez (filled and e-signed Aug. 13, 2026; Stanislaus County Sheriff; serve at CHP Modesto Area duty station, 4030 Kiernan Avenue; 36 pp. enclosed, $45.00 printing fee calculated; Credit Card Authorization enclosed; item 5d requested service date 08/21/2026, Fed. R. Civ. P. 4(m) deadline 11/08/2026 noted; no CA fee waiver — federal filing fee paid)",
+      "ownerMatter": 32
+    },
+    {
+      "path": "/documents/matter-32/ndcal/Stipulation and Proposed Order - Conform Plaintiff's Name to Brendan Ngwa Nforbi (September 11, 2026).docx",
+      "label": "Stipulation and Proposed Order - Conform Plaintiff's Name to Brendan Ngwa Nforbi (September 11, 2026)",
+      "ownerMatter": 32
+    },
+    {
+      "path": "/documents/matter-32/ndcal/Stipulation and Proposed Order - Conform Plaintiff's Name to Brendan Ngwa Nforbi (September 11, 2026).pdf",
+      "label": "Stipulation and Proposed Order - Conform Plaintiff's Name to Brendan Ngwa Nforbi (September 11, 2026)",
       "ownerMatter": 32
     },
     {
@@ -4097,6 +4227,11 @@
       "ownerMatter": 33
     },
     {
+      "path": "/documents/matter-33/ndcal/EMAIL_DRAFT_Name_Conform_Stipulation_candelaria.txt",
+      "label": "EMAIL_DRAFT_Name_Conform_Stipulation_candelaria.txt",
+      "ownerMatter": 33
+    },
+    {
       "path": "/documents/matter-33/ndcal/Exhibit A Cover Page - Serrato Supplemental Related-Cases Motion (Aug 21 2026).pdf",
       "label": "Exhibit A Cover Page - Serrato Supplemental Related-Cases Motion (Aug 21 2026)",
       "ownerMatter": 33
@@ -4114,6 +4249,11 @@
     {
       "path": "/documents/matter-33/ndcal/FAC Ngwa Nforbi v Candelaria and Gordon NDCal 3-26-cv-08272-LJC (Aug 11 2026).pdf",
       "label": "First Amended Complaint draft (44 pp., executed Aug. 11, 2026; generated by matter33-ndcal-fac.py) — superseded by the OPERATIVE UNSIGNED copy",
+      "ownerMatter": 33
+    },
+    {
+      "path": "/documents/matter-33/ndcal/Gmail - RE request to stipulate to docket name correction - McMahon (Sep 10 2026).pdf",
+      "label": "Gmail - RE request to stipulate to docket name correction - McMahon (Sep 10 2026)",
       "ownerMatter": 33
     },
     {
@@ -4139,6 +4279,11 @@
     {
       "path": "/documents/matter-33/ndcal/N.D. Cal. Intake Packet (print copy) - Ngwa Nforbi v. Candelaria & Gordon (Aug 7 2026).pdf",
       "label": "N.D. Cal. Intake Packet (print copy) - Ngwa Nforbi v. Candelaria & Gordon (Aug 7 2026)",
+      "ownerMatter": 33
+    },
+    {
+      "path": "/documents/matter-33/ndcal/Name Conform Packet - Brendan Ngwa Nforbi (September 11, 2026).pdf",
+      "label": "Name Conform Packet - Brendan Ngwa Nforbi (September 11, 2026)",
       "ownerMatter": 33
     },
     {
@@ -4182,8 +4327,23 @@
       "ownerMatter": 33
     },
     {
+      "path": "/documents/matter-33/ndcal/Proof of Service - Name Conform Stipulation (September 11, 2026).pdf",
+      "label": "Proof of Service - Name Conform Stipulation (September 11, 2026)",
+      "ownerMatter": 33
+    },
+    {
+      "path": "/documents/matter-33/ndcal/Proposed Order - Conform Plaintiff's Name to Brendan Ngwa Nforbi (September 11, 2026).pdf",
+      "label": "Proposed Order - Conform Plaintiff's Name to Brendan Ngwa Nforbi (September 11, 2026)",
+      "ownerMatter": 33
+    },
+    {
       "path": "/documents/matter-33/ndcal/Proposed Order Granting Motion to Strike Answer (N.D. Cal. 3-26-cv-08272-LJC) (Sep 5 2026).pdf",
       "label": "Proposed Order Granting Motion to Strike Answer (N.D. Cal. 3-26-cv-08272-LJC) (Sep 5 2026)",
+      "ownerMatter": 33
+    },
+    {
+      "path": "/documents/matter-33/ndcal/REVISED Stipulation and Proposed Order to Correct Plaintiff's Name on the Docket (McMahon markup, Sep 10 2026).docx",
+      "label": "REVISED Stipulation and Proposed Order to Correct Plaintiff's Name on the Docket (McMahon markup, Sep 10 2026)",
       "ownerMatter": 33
     },
     {
@@ -4194,6 +4354,16 @@
     {
       "path": "/documents/matter-33/ndcal/SER-001 Request for Sheriff to Serve Court Papers - Steve Gordon (Sacramento, Aug 13 2026).pdf",
       "label": "SER-001 Request for Sheriff to Serve Court Papers — Steve Gordon (filled and e-signed Aug. 13, 2026 with Plaintiff's canonical portfolio signature; Sacramento County Sheriff; serve care of DMV Legal Affairs Division, Mail Station C128, 2415 First Avenue; official capacity; item 5d requested service date 08/21/2026, Fed. R. Civ. P. 4(m) deadline 11/08/2026 noted; no CA fee waiver — federal filing fee paid)",
+      "ownerMatter": 33
+    },
+    {
+      "path": "/documents/matter-33/ndcal/Stipulation and Proposed Order - Conform Plaintiff's Name to Brendan Ngwa Nforbi (September 11, 2026).docx",
+      "label": "Stipulation and Proposed Order - Conform Plaintiff's Name to Brendan Ngwa Nforbi (September 11, 2026)",
+      "ownerMatter": 33
+    },
+    {
+      "path": "/documents/matter-33/ndcal/Stipulation and Proposed Order - Conform Plaintiff's Name to Brendan Ngwa Nforbi (September 11, 2026).pdf",
+      "label": "Stipulation and Proposed Order - Conform Plaintiff's Name to Brendan Ngwa Nforbi (September 11, 2026)",
       "ownerMatter": 33
     },
     {
