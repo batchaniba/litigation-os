@@ -33,3 +33,10 @@ internal/public/documents/**
 .env
 .env.*
 !.env.example
+
+# Generated at build time (prebuild). Do not commit.
+internal/src/data/matters/summaries.json
+internal/src/data/matters/document-index.json
+internal/src/data/upcoming.json
+vercel.json
+internal/public/*/index.html
