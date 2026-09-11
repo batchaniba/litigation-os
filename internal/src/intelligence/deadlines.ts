@@ -92,7 +92,7 @@ export function resolveDeadlines(catalog: IntelligenceCatalog, events: Litigatio
       (event) =>
         event.type === "ORDER_ENTERED" &&
         event.matter === recipe.matter &&
-        (event.payload?.triggerId === recipe.trigger.id || String(event.summary).includes("final order on Dkt. 18")),
+        event.payload?.triggerId === recipe.trigger.id,
     );
     const live = triggerEvent?.at ? fireTrigger(recipe, toDayKey(triggerEvent.at)) : recipe;
     return resolveRecipe(live);

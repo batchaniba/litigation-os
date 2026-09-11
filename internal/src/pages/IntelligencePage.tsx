@@ -23,7 +23,7 @@ function MatterLink({ number }: { number: number }) {
 export function IntelligencePage() {
   const os = getLitigationOS();
   const ranking = systemicImportance(cases, os.graph, os.catalog);
-  const radar = qiRadar(os.graph, os.catalog);
+  const radar = qiRadar(os.graph, os.catalog, new Set(os.twins.map((twin) => twin.matter)));
   const shock = shockwaveFromOpinion(
     {
       title: "Example v. County (watch)",

@@ -65,6 +65,26 @@ describe("litigation intelligence OS", () => {
     expect(cmc?.status).toBe("fired");
     expect(cmc?.displayDate).toBe("Sep. 28, 2026");
     expect(jcms?.displayDate).toBe("Sep. 21, 2026");
+    const continuance: LitigationEvent = {
+      id: "dkt25",
+      type: "ORDER_ENTERED",
+      at: "Sep. 9, 2026",
+      matter: 24,
+      summary:
+        "ORDER — Dkt. 25 continued the CMC to fourteen (14) days after the final order on Defendant's motion to dismiss (Dkt. 18).",
+    };
+    expect(resolveDeadlines(intelligenceCatalog, [continuance]).every((clock) => clock.status === "waiting_on_trigger")).toBe(true);
+    const disposition: LitigationEvent = {
+      id: "dkt18-final",
+      type: "ORDER_ENTERED",
+      at: "2026-09-14",
+      matter: 24,
+      summary: "Order granting in part and denying in part Dkt. 18",
+      payload: { triggerId: "m24-dkt18-final" },
+    };
+    expect(resolveDeadlines(intelligenceCatalog, [disposition]).find((clock) => clock.id === "m24-cmc-after-mtd")?.displayDate).toBe(
+      "Sep. 28, 2026",
+    );
   });
 
   it("shockwaves a new QI opinion onto the matters that actually depend on that issue", () => {

@@ -127,7 +127,7 @@ export function commandCenter(matter: number, os: LitigationOS = getLitigationOS
     fingerprints: fingerprintForMatter(os.catalog, matter),
     clocks: os.clocks.filter((clock) => clock.matter === matter),
     judge: os.catalog.judges.find((row) => os.graph.edges.some((edge) => edge.from === `matter:${matter}` && edge.to === `judge:${row.id}`)),
-    radar: qiRadar(os.graph, os.catalog),
+    radar: qiRadar(os.graph, os.catalog, new Set(os.twins.map((twin) => twin.matter))),
   };
 }
 

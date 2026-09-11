@@ -41,8 +41,8 @@ export function sharedCounsel(catalog: IntelligenceCatalog, matterA: number, mat
     .map((attorney) => attorney.name);
 }
 
-export function qiRadar(graph: KnowledgeGraph, catalog: IntelligenceCatalog) {
-  const matters = mattersWithIssue(graph, "qualified_immunity");
+export function qiRadar(graph: KnowledgeGraph, catalog: IntelligenceCatalog, liveMatters?: Set<number>) {
+  const matters = mattersWithIssue(graph, "qualified_immunity").filter((matter) => !liveMatters || liveMatters.has(matter));
   return {
     matters,
     supporting: authoritiesForIssue(catalog, "qualified_immunity", "plaintiff"),
