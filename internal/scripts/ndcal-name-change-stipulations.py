@@ -1,5 +1,14 @@
 #!/usr/bin/env python3
-"""N.D. Cal. Civil L.R. 7-12 stipulations to swap Plaintiff's docket name
+"""SUPERSEDED. Do not generate or file these 7-12 counterparts.
+
+Operative vehicle: Civil L.R. 7-11 administrative motions in
+``ndcal-name-change-admin-motions.py``. Counsel will not stipulate.
+Non-opposition on the record is only Li (24, 32) and Van Dine /
+Martinez (28).
+
+Original docstring follows.
+
+N.D. Cal. Civil L.R. 7-12 stipulations to swap Plaintiff's docket name
 to Brendan Ngwa Nforbi (first name Brendan; last name Ngwa Nforbi).
 
 Same-person clean swap. No deadline moves. No aka in the caption. The
