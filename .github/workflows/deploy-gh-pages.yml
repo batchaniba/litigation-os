@@ -21,8 +21,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v7
         with:
-          # The document library has to be present for the build, but its history
-          # does not — that is most of the ~290 MB pack.
+          # Production still ships the PDF tree inside dist/. Data-only CI
+          # excludes it; this deploy job cannot. See DOCUMENT_STORE.md.
           fetch-depth: 1
 
       - name: Setup Node

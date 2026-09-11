@@ -1,0 +1,43 @@
+name: Documents
+
+# Full-tree hash / magic / orphan checks. Runs only when the PDF library or
+# the inventory scripts change — not on the ~4 matter-data commits/day.
+# See internal/docs/DOCUMENT_STORE.md.
+
+on:
+  push:
+    paths:
+      - "internal/public/documents/**"
+      - "internal/src/data/documents/**"
+      - "internal/scripts/validate-portfolio.mjs"
+      - "internal/scripts/sync-document-manifest.mjs"
+      - "internal/scripts/lib/document-store.mjs"
+      - "internal/scripts/lib/pdfMagic.mjs"
+      - ".github/workflows/documents.yml"
+  pull_request:
+    paths:
+      - "internal/public/documents/**"
+      - "internal/src/data/documents/**"
+      - "internal/scripts/validate-portfolio.mjs"
+      - "internal/scripts/sync-document-manifest.mjs"
+      - "internal/scripts/lib/document-store.mjs"
+      - "internal/scripts/lib/pdfMagic.mjs"
+      - ".github/workflows/documents.yml"
+  workflow_dispatch:
+
+jobs:
+  documents-integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 1
+
+      - name: Setup Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: 22
+
+      - name: Verify document tree against manifest
+        run: node internal/scripts/validate-portfolio.mjs

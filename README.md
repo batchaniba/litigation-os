@@ -389,7 +389,7 @@ Plaintiff is representing himself pro se across all 39 matters. The figures belo
   - `proceeding` — track: `state_civil` | `federal_civil` | `mandate` | `habeas`
   - `phase` — current stage on that track (e.g. `demurrer`, `fr_pending`, `under_submission`, `responsive_deadline`; `terminal` when disposed)
 - **Timeline:** `internal/src/data/timeline.json` (full log) + generated `upcoming.json` for the shell deadline clock
-- **Documents:** `internal/public/documents/` (Matter 32: `from-01|02|20|24/` + N.D. Cal. filing under `ndcal/`; Matter 33: `incident|from-07|from-08|opinions/` + N.D. Cal. filing under `ndcal/`; blank Judicial Council templates and the portfolio Proof of Service form under `_form-library/` (see `_form-library/README.md`))
+- **Documents:** `internal/public/documents/` (Matter 32: `from-01|02|20|24/` + N.D. Cal. filing under `ndcal/`; Matter 33: `incident|from-07|from-08|opinions/` + N.D. Cal. filing under `ndcal/`; blank Judicial Council templates and the portfolio Proof of Service form under `_form-library/` (see `_form-library/README.md`)). The tree is ~660 MB and growing; data CI sparse-checkouts around it and checks paths against `internal/src/data/documents/manifest.json`. See [DOCUMENT_STORE.md](internal/docs/DOCUMENT_STORE.md).
 
 ### Prose length budgets
 
@@ -461,6 +461,8 @@ Useful scripts:
 ```bash
 npm run next                  # ranked "what's next to do" queue (see below)
 npm run sync:summaries        # rebuild light matter summaries + document search index
+npm run sync:registry         # rebuild path → label catalog
+npm run sync:manifest         # rebuild sha256 inventory of public/documents
 npm run sync:upcoming         # rebuild upcoming.json from timeline.json for the shell
 npm run generate:readme       # regenerate marked README tables from portfolio data
 npm run lint                  # ESLint over internal/src + internal/scripts
@@ -528,9 +530,11 @@ is ruff + `compileall` only — it does not install tesseract or the PDF librari
 ## Build
 
 ```bash
-npm run build   # outputs to dist/
+npm run build   # outputs to dist/ (copies public/documents unless VITE_COPY_DOCUMENTS=0)
 npm run preview # preview the production build locally
 ```
+
+CI sets `VITE_COPY_DOCUMENTS=0` and `PORTFOLIO_SKIP_DISK_DOCS=1` so the default build job does not check out or copy the PDF library. Production (Vercel and GitHub Pages) still ships the files. Details: [DOCUMENT_STORE.md](internal/docs/DOCUMENT_STORE.md).
 
 ## Deployment
 

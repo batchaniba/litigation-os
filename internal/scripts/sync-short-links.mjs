@@ -12,6 +12,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { loadManifest, manifestByPath, skipDiskDocs } from "./lib/document-store.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(__dirname, "../..");
@@ -88,6 +89,8 @@ if (!fs.existsSync(CATALOG)) {
 
 const catalog = JSON.parse(fs.readFileSync(CATALOG, "utf8"));
 const links = catalog.links;
+const skipDisk = skipDiskDocs();
+const documentManifestByPath = manifestByPath(loadManifest());
 if (!Array.isArray(links) || links.length === 0) {
   console.error("short-links.json must have a non-empty links array");
   process.exit(1);
@@ -119,7 +122,12 @@ for (const link of links) {
     process.exit(1);
   }
   const sourcePath = path.join(PUBLIC_ROOT, link.source.replace(/^\//, ""));
-  if (!fs.existsSync(sourcePath)) {
+  if (skipDisk && String(link.source).startsWith("/documents/")) {
+    if (!documentManifestByPath.has(link.source)) {
+      console.error(`Missing catalog source in document manifest: ${link.source}`);
+      process.exit(1);
+    }
+  } else if (!fs.existsSync(sourcePath)) {
     console.error(`Missing catalog source ${path.relative(process.cwd(), sourcePath)}`);
     process.exit(1);
   }
