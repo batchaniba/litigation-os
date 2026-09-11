@@ -18,6 +18,8 @@ import { matterActivity } from "../utils/matterTimeline";
 import { downloadMatterSummary, matterMarkdown } from "../utils/exportMatter";
 import { isArchivedMatter } from "../utils/matterLifecycle";
 import { effectiveStatusLabel } from "../utils/statusLabel";
+import { commandCenter } from "../intelligence";
+import { ClaimMatrixPanel, DependencyClocks, LitigationTwinPanel, WarRoomCard } from "../components/intelligence/CommandPanels";
 
 interface RailSection {
   id: string;
@@ -78,10 +80,13 @@ export function MatterDetailPage() {
   // CrossMatterPanel renders null without a cluster, so the rail has to ask the
   // same question before advertising a link to it.
   const hasCrossMatter = Boolean(clusterForMatter(matter.number));
+  const intel = commandCenter(matter.number);
+  const hasTwin = Boolean(intel.twin);
 
   const sections: RailSection[] = [
     { id: "matter-overview", label: "Overview" },
     { id: "matter-details", label: "The matter" },
+    ...(hasTwin ? [{ id: "matter-twin", label: "Litigation twin" }] : []),
     { id: "matter-exposure", label: "Exposure" },
     ...(hasCrossMatter ? [{ id: "matter-cross", label: "Cross-matter" }] : []),
     { id: "matter-record", label: "Record" },
@@ -141,6 +146,36 @@ export function MatterDetailPage() {
           <DetailSection label="Key facts"><CollapsibleProse text={matter.key_facts} label="key facts" className="detail-copy-muted" lines={6} /></DetailSection>
           <DetailSection label="Procedural status"><CollapsibleProse text={matter.procedural_status} label="procedural status" className="detail-copy-muted" lines={6} /></DetailSection>
         </PanelGroup>
+
+        {intel.twin && (
+          <PanelGroup id="matter-twin" title="Litigation twin">
+            <LitigationTwinPanel twin={intel.twin} />
+            <DetailSection label="Claim element matrix">
+              <ClaimMatrixPanel matrices={intel.matrices} />
+            </DetailSection>
+            {intel.clocks.length > 0 && (
+              <DetailSection label="Dependency clocks">
+                <DependencyClocks clocks={intel.clocks} />
+              </DetailSection>
+            )}
+            {intel.warRooms[0] && <WarRoomCard room={intel.warRooms[0]} />}
+            {intel.diffs[0] && (
+              <DetailSection label="Argument diff">
+                <p className="detail-copy">
+                  {intel.diffs[0].current} vs {intel.diffs[0].prior}
+                </p>
+                {intel.diffs[0].added.length > 0 && <p className="detail-copy">New: {intel.diffs[0].added.join(", ")}</p>}
+                {intel.diffs[0].abandoned.length > 0 && <p className="detail-copy">Abandoned: {intel.diffs[0].abandoned.join(", ")}</p>}
+                {intel.diffs[0].newAuthorities.length > 0 && (
+                  <p className="detail-copy">New authorities: {intel.diffs[0].newAuthorities.join(", ")}</p>
+                )}
+                {intel.diffs[0].factualAdmissions.length > 0 && (
+                  <p className="detail-copy">Admissions: {intel.diffs[0].factualAdmissions.join(" ")}</p>
+                )}
+              </DetailSection>
+            )}
+          </PanelGroup>
+        )}
 
         <PanelGroup id="matter-exposure" title="Exposure">
           <DetailSection label="Estimated damages and risk">

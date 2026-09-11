@@ -1,0 +1,37 @@
+[
+  {
+    "id": "m26-dkt12-reply-pdf",
+    "label": "Matter 26 UPS reply brief (if not already in RECAP)",
+    "matter": 26,
+    "inRecap": false,
+    "prayerPending": false,
+    "strategicValue": "HIGH",
+    "why": "Live MTD. Reply is the last word before the Oct. 7 hearing and is the input to the argument-diff engine."
+  },
+  {
+    "id": "m29-accurate-report",
+    "label": "Accurate Background report for screening Y94611404",
+    "matter": 29,
+    "inRecap": false,
+    "prayerPending": false,
+    "strategicValue": "HIGH",
+    "why": "Lerma died on the face of the report. This document is the distinction. Not a PACER docket PDF — do not buy unrelated Lerma minutiae."
+  },
+  {
+    "id": "m24-dkt18-already",
+    "label": "Matter 24 Dkt. 18 MTD",
+    "matter": 24,
+    "inRecap": true,
+    "prayerPending": false,
+    "strategicValue": "HIGH",
+    "why": "Already in the portfolio / RECAP. Retrieve, do not repurchase."
+  },
+  {
+    "id": "low-value-minutiae",
+    "label": "Unrelated consent/decline form on a closed docket",
+    "inRecap": false,
+    "prayerPending": false,
+    "strategicValue": "LOW",
+    "why": "No live issue, no citation in a pending brief, no cross-matter consequence."
+  }
+]

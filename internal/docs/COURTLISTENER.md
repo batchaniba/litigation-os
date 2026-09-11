@@ -22,7 +22,9 @@ npm run sync:all → Calendar / Matter UI / Next Actions
 2. **Sync** new docket entries incrementally. The hash + CourtListener entry ID make the job idempotent.
 3. **Standing PR** from `automation/courtlistener-sync` titled **CourtListener Live Docket Sync**. Automation does not commit to `main`.
 
-Phases not in this branch: webhook HTTP endpoint, RECAP document ingest, citation CI, research watches, Court Intelligence tab.
+Phases not in this branch: webhook HTTP endpoint, RECAP document ingest, citation CI, research watches.
+
+The litigation intelligence OS (`internal/docs/LITIGATION_INTELLIGENCE.md`) consumes this feed. `court:sync` classifies new entries onto the event bus and appends `internal/src/data/intelligence/events.json`. It does not invent deadlines.
 
 ## Token
 

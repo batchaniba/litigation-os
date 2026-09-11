@@ -1,0 +1,86 @@
+[
+  {
+    "id": "krishnan",
+    "judge": "Hon. Ajay S. Krishnan, U.S. Magistrate Judge",
+    "court": "CAND",
+    "doctrines": [
+      {
+        "id": "pro-se-ifp",
+        "label": "Pro se / IFP screening",
+        "notes": "June 29 IFP order in Serrato found the complaint sufficient under § 1915; Plaintiff has cited that order as persuasive in Matters 1, 7, and 20.",
+        "orders": ["Matter 24 June 29 IFP / screening order"]
+      },
+      {
+        "id": "rule-12",
+        "label": "Rule 12(b)(6) / related cases",
+        "notes": "Related Meza-Gonzalez to Serrato (Aug. 24). Declined to relate Candelaria (Dkt. 23 / Dkt. 13). Dkt. 21 reset a short-notice MTD hearing rather than striking the motion. Dkt. 25 continued the CMC off a date certain to 14 days after the MTD final order.",
+        "orders": ["Matter 24 Dkt. 21", "Matter 24 Dkt. 23", "Matter 24 Dkt. 25", "Matter 32 related-case order Aug. 24"]
+      },
+      {
+        "id": "qualified_immunity",
+        "label": "Qualified immunity",
+        "notes": "No Krishnan QI merits order on this portfolio yet. Live question on Dkt. 18 (hearing Sep. 30). Prioritize his own orders, then N.D. Cal. orders he has relied on, then Ninth Circuit, then Supreme Court.",
+        "orders": []
+      },
+      {
+        "id": "amendment",
+        "label": "Amendment / errata",
+        "notes": "FAC plus Notice of Errata (Dkts. 10, 12) correcting related-case disclosure; IFP screening left in place.",
+        "orders": ["Matter 24 FAC / errata July 15"]
+      }
+    ],
+    "researchOrder": [
+      "Krishnan's own decisions in these dockets",
+      "N.D. Cal. decisions he has relied upon",
+      "Ninth Circuit authority",
+      "Supreme Court authority",
+      "Persuasive district authority"
+    ]
+  },
+  {
+    "id": "cisneros",
+    "judge": "Hon. Lisa J. Cisneros, U.S. Magistrate Judge",
+    "court": "CAND",
+    "doctrines": [
+      {
+        "id": "ifp-preclusion",
+        "label": "IFP / sua sponte preclusion",
+        "notes": "Matter 28 Dkt. 11: fee payment mooted IFP; Court will not screen preclusion sua sponte and left it for Defendants after service.",
+        "orders": ["Matter 28 Dkt. 11 (Aug. 26, 2026)"]
+      },
+      {
+        "id": "rule-12",
+        "label": "Rule 12(b)(6)",
+        "notes": "No merits MTD in Smith yet. Candelaria (Matter 33) stays with Cisneros after Krishnan declined relation.",
+        "orders": ["Matter 24 Dkt. 23 (declining to relate Candelaria)"]
+      }
+    ],
+    "researchOrder": [
+      "Cisneros's own decisions in Matters 28 and 33",
+      "N.D. Cal. decisions she has relied upon",
+      "Ninth Circuit authority",
+      "Supreme Court authority",
+      "Persuasive district authority"
+    ]
+  },
+  {
+    "id": "delaney",
+    "judge": "Hon. Carolyn K. Delaney, U.S. Magistrate Judge",
+    "court": "CAED",
+    "doctrines": [
+      {
+        "id": "lr230",
+        "label": "E.D. Cal. L.R. 230 sequencing",
+        "notes": "Live UPS MTD is Dkt. 9, hearing Oct. 7 in Courtroom 24. Dkt. 12 granted the reply extension through Sep. 14. Drozd Oct. 5 setting vacated (Dkt. 8) after UPS declined MJ jurisdiction (Dkt. 5) — hearing still before Delaney.",
+        "orders": ["Matter 26 Dkt. 8", "Matter 26 Dkt. 12"]
+      }
+    ],
+    "researchOrder": [
+      "Delaney's orders on this MTD",
+      "E.D. Cal. L.R. 230 practice",
+      "Ninth Circuit authority on the registry-use question",
+      "Supreme Court authority",
+      "Persuasive district authority including Lerma (distinguish, do not overclaim)"
+    ]
+  }
+]

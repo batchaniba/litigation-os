@@ -1,0 +1,34 @@
+[
+  {
+    "id": "hope-full-term-treatment",
+    "fact": "HOPE required treatment throughout the parole term regardless of individual progress.",
+    "sources": ["HOPE RFA 18", "Clinical Operational Manual p. 42 / HOPE_000294", "In re Dwyer"],
+    "supports": [28, 5, 6],
+    "contradicted_by": [],
+    "issues": ["monell_policy"]
+  },
+  {
+    "id": "serrato-thorough-review",
+    "fact": "Serrato's April 20 letter claimed a thorough review of the U-visa packet.",
+    "sources": ["April 20, 2026 Denial Letter"],
+    "supports": [24],
+    "contradicted_by": ["Dashcam transcript unused", "PC § 851.6 unused", "five-sentence letter with no statutory element"],
+    "issues": ["u_visa_certification", "substantive_due_process"]
+  },
+  {
+    "id": "ups-nsor-hit",
+    "fact": "The only INELIGIBLE component on the UPS First Advantage report is a California Sex Offender Registry hit.",
+    "sources": ["UPS Exhibit A", "Dkt. 9 MTD reciting Exhibit A"],
+    "supports": [26],
+    "contradicted_by": [],
+    "issues": ["pc_290_46"]
+  },
+  {
+    "id": "smith-not-state-party",
+    "fact": "Shannon Smith was not a party to the Matter 5 state action.",
+    "sources": ["Matter 28 Dkt. 9 / Doc 9", "Matter 5 caption"],
+    "supports": [28],
+    "contradicted_by": [],
+    "issues": ["claim_preclusion"]
+  }
+]

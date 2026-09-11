@@ -1,0 +1,38 @@
+{
+  "west-atkins": {
+    "exists": true,
+    "propositionFound": true,
+    "reversed": false,
+    "criticized": false,
+    "binding": true,
+    "court": "SCOTUS",
+    "posture": "section 1983 color-of-law holding",
+    "parentheticalOverstates": false,
+    "notes": ["Contract physician performing a state-obligated function is a state actor."]
+  },
+  "lerma": {
+    "exists": true,
+    "propositionFound": true,
+    "reversed": false,
+    "criticized": false,
+    "binding": false,
+    "court": "CACD",
+    "posture": "Rule 12(b)(6) dismissal of Megan's Law count; later settlement on Fair Chance only",
+    "parentheticalOverstates": true,
+    "notes": [
+      "Do not parenthetical this as Amazon settled the identical § 290.46 claim.",
+      "The registry theory was dismissed; the settlement was the surviving Fair Chance count."
+    ]
+  },
+  "shanks": {
+    "exists": true,
+    "propositionFound": true,
+    "reversed": false,
+    "criticized": false,
+    "binding": true,
+    "court": "CA9",
+    "posture": "substantive due process / clearly established arbitrary action",
+    "parentheticalOverstates": false,
+    "notes": ["Binding in the Ninth Circuit for the clearly-established inquiry on Dkt. 18."]
+  }
+}

@@ -1,0 +1,138 @@
+[
+  {
+    "id": "qualified_immunity",
+    "label": "Qualified immunity",
+    "doctrines": ["Harlow", "clearly established law", "private-actor QI"],
+    "statutes": ["42 U.S.C. § 1983"],
+    "likelyDefense": true,
+    "keywords": ["qualified immunity", "clearly established", "harlow", "wyatt", "richardson", "filarsky"]
+  },
+  {
+    "id": "monell_policy",
+    "label": "Monell policy or custom",
+    "doctrines": ["Monell", "official policy", "ratification"],
+    "statutes": ["42 U.S.C. § 1983"],
+    "likelyDefense": true,
+    "keywords": ["monell", "policy", "custom", "blanket retention"]
+  },
+  {
+    "id": "state_actor",
+    "label": "State action / color of law",
+    "doctrines": ["West v. Atkins", "public-function", "joint action"],
+    "statutes": ["42 U.S.C. § 1983"],
+    "likelyDefense": true,
+    "keywords": ["state actor", "color of state law", "west v. atkins", "contractor"]
+  },
+  {
+    "id": "claim_preclusion",
+    "label": "Claim or issue preclusion",
+    "doctrines": ["res judicata", "collateral estoppel", "exhaustion-only dismissal"],
+    "statutes": [],
+    "likelyDefense": true,
+    "keywords": ["preclusion", "res judicata", "collateral estoppel"]
+  },
+  {
+    "id": "procedural_due_process",
+    "label": "Procedural due process",
+    "doctrines": ["Mathews v. Eldridge", "adequate process"],
+    "statutes": ["U.S. Const. amend. XIV"],
+    "likelyDefense": false,
+    "keywords": ["procedural due process", "mathews", "hearing"]
+  },
+  {
+    "id": "substantive_due_process",
+    "label": "Substantive due process",
+    "doctrines": ["conscience-shocking", "arbitrary official action"],
+    "statutes": ["U.S. Const. amend. XIV"],
+    "likelyDefense": false,
+    "keywords": ["substantive due process", "conscience-shocking", "arbitrary"]
+  },
+  {
+    "id": "first_amendment_retaliation",
+    "label": "First Amendment retaliation",
+    "doctrines": ["Hartman", "Nieves", "protected petitioning"],
+    "statutes": ["U.S. Const. amend. I"],
+    "likelyDefense": true,
+    "keywords": ["retaliation", "first amendment", "petition"]
+  },
+  {
+    "id": "u_visa_certification",
+    "label": "U-visa certification duty (PC § 679.10)",
+    "doctrines": ["mandatory certification", "rebuttable presumption of helpfulness"],
+    "statutes": ["Cal. Penal Code § 679.10", "8 U.S.C. § 1101(a)(15)(U)"],
+    "likelyDefense": true,
+    "keywords": ["u visa", "679.10", "certification", "i-918"]
+  },
+  {
+    "id": "fourth_amendment",
+    "label": "Fourth Amendment seizure / search",
+    "doctrines": ["probable cause", "Franks", "unlawful arrest"],
+    "statutes": ["U.S. Const. amend. IV"],
+    "likelyDefense": true,
+    "keywords": ["fourth amendment", "probable cause", "unlawful arrest", "franks"]
+  },
+  {
+    "id": "fabrication",
+    "label": "Fabrication of evidence",
+    "doctrines": ["Devereaux", "judicial deception"],
+    "statutes": ["U.S. Const. amend. XIV"],
+    "likelyDefense": true,
+    "keywords": ["fabrication", "false report", "dashcam"]
+  },
+  {
+    "id": "rico_continuity",
+    "label": "RICO pattern and continuity",
+    "doctrines": ["pattern of racketeering", "enterprise"],
+    "statutes": ["18 U.S.C. § 1962"],
+    "likelyDefense": true,
+    "keywords": ["rico", "continuity", "enterprise", "1962"]
+  },
+  {
+    "id": "pc_290_46",
+    "label": "PC § 290.46(j) registry-use bar",
+    "doctrines": ["categorical employment bar", "Megan's Law website vs. ordinary records"],
+    "statutes": ["Cal. Penal Code § 290.46(j)(2)(E)"],
+    "likelyDefense": true,
+    "keywords": ["290.46", "megan", "registry", "sex offender"]
+  },
+  {
+    "id": "fair_chance",
+    "label": "Fair Chance Act individualized assessment",
+    "doctrines": ["Gov. Code § 12952"],
+    "statutes": ["Cal. Gov. Code § 12952"],
+    "likelyDefense": true,
+    "keywords": ["fair chance", "12952", "individualized"]
+  },
+  {
+    "id": "fcra_icraa",
+    "label": "FCRA / ICRAA consumer-report duties",
+    "doctrines": ["pre-adverse notice", "accuracy"],
+    "statutes": ["15 U.S.C. § 1681", "Cal. Civ. Code § 1786"],
+    "likelyDefense": true,
+    "keywords": ["fcra", "icraa", "background check", "first advantage"]
+  },
+  {
+    "id": "standing",
+    "label": "Standing / Rule 8 plausibility",
+    "doctrines": ["Iqbal", "Twombly", "Article III"],
+    "statutes": ["Fed. R. Civ. P. 8", "Fed. R. Civ. P. 12(b)(6)"],
+    "likelyDefense": true,
+    "keywords": ["standing", "iqbal", "twombly", "plausibility"]
+  },
+  {
+    "id": "rooker_feldman",
+    "label": "Rooker-Feldman",
+    "doctrines": ["Rooker-Feldman"],
+    "statutes": [],
+    "likelyDefense": true,
+    "keywords": ["rooker", "feldman"]
+  },
+  {
+    "id": "absolute_immunity",
+    "label": "Absolute / quasi-judicial immunity",
+    "doctrines": ["Forrester", "Cleavinger", "prosecutorial vs adjudicatory"],
+    "statutes": ["42 U.S.C. § 1983"],
+    "likelyDefense": true,
+    "keywords": ["absolute immunity", "quasi-judicial", "hearing officer"]
+  }
+]

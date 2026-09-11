@@ -1306,6 +1306,53 @@ kbd { border: 1px solid rgb(148 163 184 / 25%); border-radius: 4px; padding: 2px
   border-top: 1px dashed rgb(148 163 184 / 28%); padding-top: 12px;
 }
 
+/* Litigation intelligence command center */
+.intel-page { display: flex; flex-direction: column; gap: 22px; padding-bottom: 48px; }
+.intel-hero, .intel-panel, .intel-war-room, .intel-fingerprint, .intel-matrix {
+  padding: 24px; border: 1px solid var(--card-border); border-radius: var(--radius-card); background: var(--card-bg);
+}
+.intel-page h2, .intel-matrix h3, .intel-fingerprint h3, .intel-war-room h3 {
+  margin: 0 0 10px; color: var(--heading); font-size: 18px;
+}
+.intel-kicker {
+  margin: 0 0 10px; color: var(--gold); font-family: var(--font-sans); font-size: 11px;
+  font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+}
+.intel-disclaimer { margin: 12px 0 0; max-width: 72ch; color: var(--subtle-text); font-size: 12px; line-height: 1.5; }
+.intel-list, .intel-issue-list, .intel-element-list, .intel-sequence { margin: 0; padding-left: 18px; }
+.intel-list li, .intel-issue-list li, .intel-element-list li { margin: 6px 0; color: var(--secondary-text); font-size: 13px; line-height: 1.5; }
+.intel-issue-list { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.intel-issue-list li { display: flex; gap: 8px; align-items: center; margin: 0; }
+.intel-tag {
+  display: inline-block; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--card-border);
+  font-family: var(--font-sans); font-size: 10px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase;
+}
+.intel-tag-hot { border-color: rgb(248 113 113 / 45%); background: var(--sev-high-bg); color: var(--sev-high); }
+.intel-tag-warn { border-color: rgb(251 191 36 / 45%); background: rgb(251 191 36 / 14%); color: #fbbf24; }
+.intel-twin-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-bottom: 16px; }
+.intel-coverage-row {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px;
+  margin: 16px 0; padding: 12px; border: 1px solid var(--card-border); border-radius: 8px; background: var(--deep-bg);
+}
+.intel-coverage-row div { display: flex; flex-direction: column; gap: 4px; }
+.intel-coverage-row span { color: var(--subtle-text); font-size: 11px; text-transform: uppercase; letter-spacing: .06em; }
+.intel-coverage-row strong { color: var(--heading); font-size: 20px; }
+.intel-rank { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px; }
+.intel-rank-top { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; }
+.intel-score { color: var(--gold); font-weight: 700; }
+.intel-bar { height: 6px; border-radius: 3px; background: var(--bar-track); overflow: hidden; }
+.intel-bar span { display: block; height: 100%; background: var(--gold); }
+.intel-reasons { margin: 6px 0 0; color: var(--subtle-text); font-size: 12px; }
+.intel-matter-link { color: var(--gold); text-decoration: none; font-weight: 600; }
+.intel-matter-link:hover, .intel-matter-link:focus-visible { text-decoration: underline; }
+.intel-defense { color: var(--muted-text); }
+.intel-element-top { display: flex; justify-content: space-between; gap: 12px; }
+.intel-element-list p { margin: 4px 0 0; }
+.intel-sequence { max-width: 72ch; }
+.intel-matrices { display: flex; flex-direction: column; gap: 16px; margin-top: 8px; }
+.intel-matrix-head { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; }
+.intel-page .intel-matter-link + .intel-matter-link::before { content: " · "; color: var(--subtle-text); font-weight: 400; }
+
 @media (max-width: 760px) {
   .dl-form { grid-template-columns: 1fr; }
   .dl-deadline-date { font-size: 22px; }

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "m24-cmc-after-mtd",
+    "matter": 24,
+    "label": "Initial CMC (14 days after final order on Dkt. 18)",
+    "court": "USDC N.D. Cal.",
+    "trigger": {
+      "id": "m24-dkt18-final",
+      "description": "Final order on Defendant's motion to dismiss (Dkt. 18). Dkt. 25: no date certain until that order enters.",
+      "fired": false,
+      "firedOn": null
+    },
+    "offset": {
+      "days": 14,
+      "unit": "calendar",
+      "direction": "after",
+      "roll": "forward"
+    },
+    "dependents": [
+      {
+        "id": "m24-jcms",
+        "label": "Joint Case Management Statement",
+        "days": 7,
+        "unit": "calendar",
+        "direction": "before",
+        "roll": "backward"
+      },
+      {
+        "id": "m24-adr",
+        "label": "ADR certification / Rule 26(f) obligations reset from the new CMC",
+        "days": 7,
+        "unit": "calendar",
+        "direction": "before",
+        "roll": "backward"
+      }
+    ]
+  }
+]
