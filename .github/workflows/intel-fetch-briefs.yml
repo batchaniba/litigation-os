@@ -35,12 +35,10 @@ jobs:
   fetch:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout scripts
+      - name: Checkout
         uses: actions/checkout@v7
         with:
           fetch-depth: 1
-          sparse-checkout: |
-            internal/scripts
 
       - name: Setup Node
         uses: actions/setup-node@v7
@@ -104,3 +102,35 @@ jobs:
             git commit -m "RECAP briefs: ${{ inputs.label }} (${{ inputs.docket_number }})"
             git push origin HEAD:documents
           fi
+
+      - name: Update document manifest
+        if: always()
+        run: |
+          # Base the manifest on the unmerged manifest PR branch when one exists,
+          # so concurrent fetches do not clobber each other's entries.
+          git fetch origin intel/document-manifest:tmp-manifest-branch 2>/dev/null || true
+          if git rev-parse --verify tmp-manifest-branch >/dev/null 2>&1; then
+            git show tmp-manifest-branch:internal/src/data/documents/manifest.json \
+              > internal/src/data/documents/manifest.json
+            echo "based manifest on unmerged intel/document-manifest branch"
+          fi
+          node internal/scripts/append-document-manifest.mjs \
+            --manifest internal/src/data/documents/manifest.json \
+            --dir /tmp/briefs/${{ inputs.label }} \
+            --prefix /documents/counsel-briefs/${{ inputs.label }}
+
+      - name: Open or update manifest PR
+        if: always()
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: intel/document-manifest
+          delete-branch: false
+          title: "Document manifest: counsel briefs ${{ inputs.label }}"
+          commit-message: "docs: register counsel-briefs/${{ inputs.label }} in document manifest"
+          body: |
+            Registers the files landed on the `documents` branch by the Intel Fetch
+            Briefs run (`${{ inputs.label }}`, docket `${{ inputs.docket_number }}`)
+            in `internal/src/data/documents/manifest.json`, keeping the
+            documents-integrity check green.
+          add-paths: |
+            internal/src/data/documents/manifest.json
