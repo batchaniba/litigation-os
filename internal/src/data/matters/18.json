@@ -3,6 +3,11 @@
   "caption": "Newanforbi v. Barocio",
   "case_no": "2:26-cv-00191-DJC-CSK (PC)",
   "court": "USDC E.D. Cal.",
+  "courtlistener": {
+    "court_id": "caed",
+    "docket_id": 72184129,
+    "docket_url": "/docket/72184129/pc-newanforbi-v-barocio/"
+  },
   "claims": "42 USC 1983: Prisoner Civil Rights",
   "status": "DISMISSED WITH PREJUDICE — Notice of Voluntary Dismissal filed June 29, 2026 (FRCP 41(a)(1)(A)(i)); self-executing",
   "status_label": "Dismissed with prejudice — Jun. 29, 2026",

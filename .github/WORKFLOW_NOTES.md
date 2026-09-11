@@ -132,6 +132,23 @@ This allows the same codebase to deploy to both:
 - **Vercel** (https://interactive-litigation-portfolio.vercel.app) — base: `/`
 - **GitHub Pages** (https://newanforbi.github.io/interactive-litigation-portfolio/) — base: `/interactive-litigation-portfolio/`
 
+### `.github/workflows/courtlistener-sync.yml`
+
+Hourly (`17 * * * *`) plus `workflow_dispatch`. Needs repository secret `COURTLISTENER_TOKEN` (never a `VITE_*` variable).
+
+```
+1. Checkout (same sparse skip of the PDF tree as CI)
+2. npm ci
+3. npm run court:resolve     # bind new federal dockets; skip already-bound IDs
+4. npm run court:sync        # incremental docket entries
+5. npm run sync:all
+6. npm test
+7. Open/update standing PR from automation/courtlistener-sync
+```
+
+The job does **not** commit to `main`. Deadline candidates stay in `internal/src/data/courtlistener/review.json` until someone copies them into `timeline.json`. See `internal/docs/COURTLISTENER.md`.
+
+
 ## Testing
 
 Tests run in CI (both workflows) and can be run locally:

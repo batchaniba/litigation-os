@@ -3,6 +3,9 @@
   "caption": "Newanforbi v. Counseling and Psychotherapy Center, Inc., et al.",
   "case_no": "TBD",
   "court": "USDC N.D. Cal. (San Jose Div.) / Santa Clara Sup. Ct.",
+  "courtlistener": {
+    "court_id": "cand"
+  },
   "claims": "42 U.S.C. §1983 (Monell & Individual Capacity), Bane Act (Cal. Civ. Code §52.1), Fraud / Negligent Misrepresentation, RICO (18 U.S.C. §1962(c)-(d)), UCL (Bus. & Prof. Code §17200), Negligence Per Se",
   "status": "Pre-filing / intake stage — newly enrolled CASOMB-certified sex offender treatment program in San Jose following the July 2, 2026 retaliatory parole transfer to Santa Clara County. Pleading framework mirrors Matter 28 (NDCA HOPE action) and Matter 5 (state tort / institutional fraud), targeting containment-model retention policies, fee-for-service structural conflicts, and compliance monitoring under 15 CCR §3574.",
   "status_label": "Pre-filing — intake & compliance monitoring",

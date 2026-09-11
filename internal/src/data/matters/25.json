@@ -3,6 +3,11 @@
   "caption": "Newanforbi v. Federal Express Corporation",
   "case_no": "2:26-cv-02881-DAD-SCR",
   "court": "USDC E.D. Cal. (Sacramento Div.)",
+  "courtlistener": {
+    "court_id": "caed",
+    "docket_id": 74699765,
+    "docket_url": "/docket/74699765/ps-newanforbi-v-federal-express-corp/"
+  },
   "claims": "PC §290.46(j)(2)(E) Violation, Failure to Hire (Tameny), ICRAA, Invasion of Privacy, Negligence Per Se, UCL §17200",
   "status": "PACER 09/08 history confirms the Aug. 31 answer is Dkt. 4. Dkt. 8's 'ECF No. 5' is a miscite — Dkt. 5 is a magistrate consent/decline. Status reports Sep. 24; Zoom Oct. 8. Pull Dkts. 5–7 before treating the Sep. 1 mailing as unfiled.",
   "status_label": "Status reports Sep. 24; Zoom Oct. 8",
