@@ -208,11 +208,49 @@ export function createClient({
     return entries;
   }
 
+  async function listOpinionClusters({ docketId, afterClusterId = null } = {}) {
+    const params = new URLSearchParams({
+      docket: String(docketId),
+      order_by: "id",
+    });
+    if (afterClusterId != null) params.set("id__gt", String(afterClusterId));
+    const clusters = [];
+    let url = `${CL_BASE}/clusters/?${params}`;
+    while (url) {
+      const page = await request(url, { auth: true });
+      const rows = Array.isArray(page?.results) ? page.results : [];
+      for (const row of rows) {
+        if (afterClusterId != null && Number(row.id) <= Number(afterClusterId)) continue;
+        clusters.push(row);
+      }
+      url = page?.next || null;
+    }
+    return clusters;
+  }
+
+  async function listClusterOpinions({ clusterId } = {}) {
+    const params = new URLSearchParams({
+      cluster: String(clusterId),
+      order_by: "id",
+    });
+    const opinions = [];
+    let url = `${CL_BASE}/opinions/?${params}`;
+    while (url) {
+      const page = await request(url, { auth: true });
+      const rows = Array.isArray(page?.results) ? page.results : [];
+      opinions.push(...rows);
+      url = page?.next || null;
+    }
+    return opinions;
+  }
+
   return {
     token,
     request,
     searchDockets,
     getApiUsage,
     listDocketEntries,
+    listOpinionClusters,
+    listClusterOpinions,
   };
 }
