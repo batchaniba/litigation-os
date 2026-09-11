@@ -95,6 +95,9 @@ class NameCase:
     # If set, this docket recorded last name as a single token (Nforbi)
     # and the ask is to change that field to Ngwa Nforbi to match PACER.
     last_name_on_docket: str = ""
+    # If set (24/28), change this middle+last token to Ngwa Nforbi.
+    # Leave empty on Amazon — that packet stays on the generic ask.
+    from_name_token: str = ""
 
     @property
     def file_tag(self) -> str:
@@ -162,6 +165,7 @@ CASES: list[NameCase] = [
         file_short="Serrato",
         email_to=["Haiyang.Li@doj.ca.gov"],
         caption_short="NEWANFORBI v. SERRATO",
+        from_name_token="Ngehsi Newanforbi",
     ),
     NameCase(
         matter=28,
@@ -239,6 +243,7 @@ CASES: list[NameCase] = [
             "stipulate or to sign.\n"
         ),
         caption_short="NEWANFORBI v. SMITH",
+        from_name_token="Ngehsi Newanforbi",
     ),
     NameCase(
         matter=29,
@@ -548,17 +553,25 @@ def _aka_other(case: NameCase) -> str:
     return " and as Ngwa Nforbi"
 
 
-def _last_name_pacer_ask(case: NameCase) -> str:
-    """32/33: last-name field is the single word Nforbi; ask to match PACER."""
-    if not case.last_name_on_docket:
-        return ""
-    return (
-        f" This docket currently records last name as the single word "
-        f"{case.last_name_on_docket}. The ask is that the Clerk change "
-        f"that last-name field from {case.last_name_on_docket} to "
-        f"{BOLD_LAST} so it matches Plaintiff's PACER account (login "
-        f"bngwanforbi). First name is {BOLD_FIRST}."
-    )
+def _pacer_name_ask(case: NameCase) -> str:
+    """Case-specific PACER-match ask. Amazon stays on the generic paragraph."""
+    if case.last_name_on_docket:
+        return (
+            f" This docket currently records last name as the single word "
+            f"{case.last_name_on_docket}. The ask is that the Clerk change "
+            f"that last-name field from {case.last_name_on_docket} to "
+            f"{BOLD_LAST} so it matches Plaintiff's PACER account (login "
+            f"bngwanforbi). First name is {BOLD_FIRST}."
+        )
+    if case.from_name_token:
+        return (
+            f" This docket currently records the name as "
+            f"{case.current_docket_name}. The ask is that the Clerk change "
+            f"{case.from_name_token} to {BOLD_LAST} so it matches "
+            f"Plaintiff's PACER account (login bngwanforbi). First name "
+            f"remains {BOLD_FIRST}."
+        )
+    return ""
 
 
 def _motion_title() -> str:
@@ -651,7 +664,7 @@ def build_motion(case: NameCase) -> Path:
         f"identified as {BOLD_NAME} — {FIRST_LAST_GLOSS} — matching "
         f"Plaintiff's existing PACER account (login "
         f"bngwanforbi). This is a clean swap of the party name."
-        f"{_last_name_pacer_ask(case)} Subsequent "
+        f"{_pacer_name_ask(case)} Subsequent "
         f"papers shall use that caption.",
         first_indent=0,
     )
@@ -781,7 +794,7 @@ def build_declaration(case: NameCase) -> Path:
     d.write_wrapped(
         f"2.  I am the same natural person as {case.current_docket_name}"
         f"{_aka_other(case)}. The names are one person."
-        f"{_last_name_pacer_ask(case)} I am not asking the "
+        f"{_pacer_name_ask(case)} I am not asking the "
         "Court to add, drop, or substitute any party.",
         first_indent=0,
     )
@@ -864,7 +877,7 @@ def build_order(case: NameCase) -> Path:
         f"CM/ECF party record, and the caption of this action so that "
         f"Plaintiff is identified as {BOLD_NAME} ({FIRST_LAST_GLOSS}), "
         f"matching PACER login bngwanforbi."
-        f"{_last_name_pacer_ask(case)} "
+        f"{_pacer_name_ask(case)} "
         f"Subsequent papers shall use that caption.",
         first_indent=0,
     )
@@ -982,7 +995,7 @@ Counsel:
 I am filing a Civil L.R. 7-11 administrative motion asking the Court
 to conform the Plaintiff name on this docket to {NEW_NAME}
 (first name Brendan; last name Ngwa Nforbi).
-{("This docket lists last name as " + case.last_name_on_docket + ". The ask is to change that last name to " + LAST_NAME + " to match PACER login bngwanforbi.\n" if case.last_name_on_docket else "")}
+{("This docket lists last name as " + case.last_name_on_docket + ". The ask is to change that last name to " + LAST_NAME + " to match PACER login bngwanforbi.\n" if case.last_name_on_docket else "This docket lists the name as " + case.current_docket_name + ". The ask is to change " + case.from_name_token + " to " + LAST_NAME + " to match PACER login bngwanforbi.\n" if case.from_name_token else "")}
 This is a request to the Court. It is not a stipulation.
 
 {posture}
