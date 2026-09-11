@@ -14,6 +14,17 @@ This is a standing instruction across the portfolio. Case-specific exceptions do
 
 For project structure and existing development workflows, consult README.md and internal/docs/SUPERCYCLE_INSTRUCTIONS.md.
 
+## Email ending
+
+Outgoing emails close with:
+
+```
+Brendan Ngwa Nforbi
+Plaintiff, In Propria Persona
+```
+
+No phone, no email address, no "In Pro Per" on the close.
+
 ## Counsel dossiers
 
 Opposing-counsel identity/role research lives under `internal/docs/counsel/`. Seeded: Kabat Chapman & Ozmer (Williams / Chapman) at [`internal/docs/counsel/kcoz/`](internal/docs/counsel/kcoz/). Append PACER pulls there. Those dockets are not related cases. Do not email counsel about the research.

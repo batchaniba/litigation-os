@@ -938,8 +938,7 @@ to link PACER login bngwanforbi for pro se e-filing.
 
 Thank you,
 {NEW_NAME}
-(209) 801-4442
-bnn.cdl@gmail.com
+Plaintiff, In Propria Persona
 """
     path.write_text(body)
     return path
