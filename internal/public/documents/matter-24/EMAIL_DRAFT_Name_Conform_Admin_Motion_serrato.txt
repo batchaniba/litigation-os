@@ -6,13 +6,16 @@ Counsel:
 I am filing a Civil L.R. 7-11 administrative motion asking the Court
 to conform the Plaintiff name on this docket to Brendan Ngwa Nforbi
 (first name Brendan; last name Ngwa Nforbi).
+This docket lists the name as Brendan Ngehsi Newanforbi. The ask is to change Ngehsi Newanforbi to Ngwa Nforbi to match PACER login bngwanforbi.
 
 This is a request to the Court. It is not a stipulation.
 
 You stated you will not oppose this request once made. I am not asking you to stipulate or to sign. The attached paper is Plaintiff's Civil L.R. 7-11 motion, declaration, Exhibit A (the September 1 ECF Help Desk reply), proposed order, and proof of service.
 
 The two name forms are one person. No deadline, hearing, or pending
-motion moves.
+motion moves. I recently learned this District permits pro se
+e-filing; conforming the name lets the Help Desk link the account
+and avoids the delay of mailing papers.
 
 After the Clerk updates the party name I will ask the ECF Help Desk
 to link PACER login bngwanforbi for pro se e-filing.
