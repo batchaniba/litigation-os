@@ -5,10 +5,12 @@ import { activateIssue, deriveTwin } from "./twin";
 import { applyOrderToDependencies, resolveDeadlines, resolveRecipe } from "./deadlines";
 import { diffArguments, diffsForMatter } from "./argumentDiff";
 import { contradictionsForMatter, flagContradiction } from "./contradictions";
-import { classifyDocketText, issuesMentioned } from "./classify";
+import { classifyDocketText, eventFromNormalizedEntry, issuesMentioned } from "./classify";
+import { eventFromNormalizedEntry as emitFromNormalized } from "../../scripts/intelligence/emit-events.mjs";
 import { publish, publishedEvents, resetEventBus, subscribe } from "./eventBus";
 import { buildKnowledgeGraph } from "./graph";
 import { assembleIntelligence, commandCenter } from "./index";
+import { timeline } from "../data/timeline";
 import { qiRadar, sharedCounsel } from "./queries";
 import { matchFingerprint } from "./fingerprints";
 import { recapAdvice } from "./recap";
@@ -249,5 +251,183 @@ describe("litigation intelligence OS", () => {
       strategicValue: "HIGH",
       why: "clock",
     }).action).toBe("wait");
+  });
+});
+
+const SERRATO_DKT25 =
+  "ORDER — Dkt. 25 in Newanforbi v. Serrato (4:26-cv-05953-ASK). Mag. Krishnan signed the Dkt. 22 stipulation. CMC continued from September 15, 2026 to fourteen (14) days after the final order on Defendant's motion to dismiss (Dkt. 18; hearing remains Sep. 30 per Dkt. 21).";
+
+const SERRATO_DKT21 =
+  "FILED — Clerk's Notice Resetting Hearing on Motion to Dismiss (Dkt. 21) in Newanforbi v. Serrato (4:26-cv-05953-ASK). The hearing on Defendant's Motion to Dismiss the FAC (Dkt. 18) is reset to September 30, 2026, 1:30 p.m.";
+
+const VAN_DINE_MTD_BODY = `MOTION to Dismiss Plaintiff's Complaint
+
+Defendants HOPE Psychotherapy, Inc. and Shannon Smith hereby move to dismiss under Fed. R. Civ. P. 12(b)(6).
+
+Qualified immunity bars the individual-capacity claims because the rights were not clearly established under Harlow v. Fitzgerald.
+HOPE is not a state actor under West v. Atkins, 487 U.S. 42 (1988).
+Monell liability fails because there is no official policy or custom.
+Claim preclusion and res judicata bar relitigation of the state-court action.
+The RICO claim fails for lack of continuity and enterprise.
+Defendants do not dispute that HOPE contracted with CDCR.`;
+
+describe("docket text fires Serrato clocks and mutates the Matter 28 twin", () => {
+  it("sets m24-dkt18-final from a merits order on Dkt. 18 without a pre-set triggerId", () => {
+    const grant = eventFromNormalizedEntry(
+      {
+        matter: 24,
+        description: "ORDER GRANTING IN PART AND DENYING IN PART Defendant's Motion to Dismiss (Dkt. 18)",
+        date_filed: "2026-09-14",
+        entry_number: 27,
+        courtlistener_entry_id: 27001,
+      },
+      intelligenceCatalog,
+    );
+    expect(grant.type).toBe("ORDER_ENTERED");
+    expect(grant.payload?.triggerId).toBe("m24-dkt18-final");
+    expect(resolveDeadlines(intelligenceCatalog, [grant]).find((clock) => clock.id === "m24-cmc-after-mtd")?.displayDate).toBe(
+      "Sep. 28, 2026",
+    );
+
+    const shortGrant = eventFromNormalizedEntry(
+      {
+        matter: 24,
+        description: "ORDER GRANTING Dkt. 18",
+        date_filed: "2026-09-14",
+        entry_number: 27,
+      },
+      intelligenceCatalog,
+    );
+    expect(shortGrant.payload?.triggerId).toBe("m24-dkt18-final");
+
+    const denied = eventFromNormalizedEntry(
+      {
+        matter: 24,
+        description: "MINUTE ORDER: Dkt. 18 DENIED",
+        date_filed: "2026-09-14",
+        entry_number: 27,
+      },
+      intelligenceCatalog,
+    );
+    expect(denied.payload?.triggerId).toBe("m24-dkt18-final");
+  });
+
+  it("does not treat Dkt. 25, the Dkt. 21 hearing reset, or a grant of the continuance stipulation as the MTD order", () => {
+    const noise = [
+      SERRATO_DKT25,
+      SERRATO_DKT21,
+      "ORDER GRANTING stipulation to continue the hearing on Dkt. 18",
+    ].map((description, index) =>
+      eventFromNormalizedEntry(
+        {
+          matter: 24,
+          description,
+          date_filed: "2026-09-09",
+          entry_number: index === 1 ? 21 : 25,
+        },
+        intelligenceCatalog,
+      ),
+    );
+    expect(noise.every((event) => event.payload?.triggerId == null)).toBe(true);
+    expect(resolveDeadlines(intelligenceCatalog, noise).every((clock) => clock.status === "waiting_on_trigger")).toBe(true);
+
+    const liveRows = timeline.filter(
+      (event) =>
+        event.event.includes("Dkt. 25 in Newanforbi v. Serrato") ||
+        event.event.includes("Clerk's Notice Resetting Hearing on Motion to Dismiss (Dkt. 21)"),
+    );
+    const fromTimeline = assembleIntelligence({
+      summaries,
+      timeline: liveRows,
+      catalog: intelligenceCatalog,
+    });
+    expect(fromTimeline.clocks.filter((clock) => clock.matter === 24).every((clock) => clock.status === "waiting_on_trigger")).toBe(
+      true,
+    );
+  });
+
+  it("assembling the live portfolio leaves Serrato waiting and HOPE QI anticipated", () => {
+    const os = assembleIntelligence({ summaries, catalog: intelligenceCatalog, asOf: "Sep. 11, 2026" });
+    const serrato = os.clocks.filter((clock) => ["m24-cmc-after-mtd", "m24-jcms", "m24-adr"].includes(clock.id));
+    expect(serrato.length).toBe(3);
+    expect(serrato.every((clock) => clock.status === "waiting_on_trigger")).toBe(true);
+    expect(os.twins.find((twin) => twin.matter === 28)?.open_issues.find((issue) => issue.id === "qualified_immunity")?.status).toBe(
+      "anticipated",
+    );
+  });
+
+  it("mutates Matter 28 from Van Dine MTD text without editing the catalog", () => {
+    const filing = eventFromNormalizedEntry(
+      {
+        matter: 28,
+        description: "MOTION to Dismiss",
+        body: VAN_DINE_MTD_BODY,
+        date_filed: "2026-09-21",
+        entry_number: 15,
+        courtlistener_entry_id: 15001,
+      },
+      intelligenceCatalog,
+    );
+    expect(filing.type).toBe("MOTION_FILED");
+    expect(filing.issues).toEqual(
+      expect.arrayContaining(["qualified_immunity", "state_actor", "monell_policy", "claim_preclusion", "rico_continuity"]),
+    );
+    expect(filing.payload?.authorities).toEqual(expect.arrayContaining(["west-atkins", "harlow"]));
+    const admissions = filing.payload?.admissions as string[] | undefined;
+    expect(admissions?.[0]).toMatch(/do not dispute that HOPE contracted/i);
+
+    const preview = eventFromNormalizedEntry(
+      {
+        matter: 28,
+        description: "Gmail: Van Dine previewed a Rule 12(b)(6) and asked to confer",
+        date_filed: "2026-09-03",
+      },
+      intelligenceCatalog,
+    );
+    expect(preview.type).not.toBe("MOTION_FILED");
+
+    const os = assembleIntelligence({
+      summaries,
+      timeline: [],
+      catalog: intelligenceCatalog,
+      events: [filing],
+      asOf: "Sep. 21, 2026",
+    });
+    const twin = os.twins.find((row) => row.matter === 28);
+    expect(twin?.open_issues.find((issue) => issue.id === "qualified_immunity")?.status).toBe("active");
+    expect(twin?.live_motions.some((motion) => motion.status === "live" && motion.issues.includes("qualified_immunity"))).toBe(true);
+    expect(twin?.live_motions.some((motion) => motion.status === "anticipated")).toBe(false);
+    expect(os.clocks.some((clock) => clock.matter === 28 && /Opposition/.test(clock.label) && clock.status === "date_certain")).toBe(
+      true,
+    );
+    expect(os.warRooms.some((room) => room.matter === 28)).toBe(true);
+    const center = commandCenter(28, os);
+    expect(center.diffs[0]?.prior).toMatch(/preview/i);
+    expect(center.diffs[0]?.newAuthorities).toEqual(expect.arrayContaining(["west-atkins", "harlow"]));
+    expect(center.diffs[0]?.factualAdmissions[0]).toMatch(/HOPE contracted/i);
+  });
+
+  it("court:sync classifier attaches the same triggerId and MTD extraction", () => {
+    const order = emitFromNormalized({
+      matter: 24,
+      description: "ORDER GRANTING IN PART AND DENYING IN PART Defendant's Motion to Dismiss (Dkt. 18)",
+      date_filed: "2026-09-14",
+      entry_number: 27,
+      courtlistener_entry_id: 27001,
+    });
+    expect(order.type).toBe("ORDER_ENTERED");
+    expect(order.payload.triggerId).toBe("m24-dkt18-final");
+
+    const motion = emitFromNormalized({
+      matter: 28,
+      description: "MOTION to Dismiss",
+      body: VAN_DINE_MTD_BODY,
+      date_filed: "2026-09-21",
+      entry_number: 15,
+      courtlistener_entry_id: 15001,
+    });
+    expect(motion.type).toBe("MOTION_FILED");
+    expect(motion.issues).toContain("qualified_immunity");
+    expect(motion.payload.authorities).toContain("west-atkins");
   });
 });

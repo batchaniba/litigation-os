@@ -1,13 +1,23 @@
 import { intelligenceCatalog } from "../data/intelligence/catalog";
+import loggedEventLog from "../data/intelligence/events.json";
 import { cases } from "../data/matters";
 import { timeline } from "../data/timeline";
 import type { MatterSummary, TimelineEvent } from "../types/portfolio";
-import { diffsForMatter } from "./argumentDiff";
+import { diffsForMatter, diffsFromEvents } from "./argumentDiff";
+import { briefingClocksFromEvents, resolveDeadlines } from "./deadlines";
 import { auditCatalog } from "./citeProof";
-import { eventsFromTimeline } from "./classify";
-import { COVERAGE_DISCLAIMER, type IntelligenceCatalog, type KnowledgeGraph, type LitigationEvent, type LitigationTwin, type OvernightBrief, type PendingClock, type WarRoom } from "./types";
+import { enrichEvent, eventsFromTimeline } from "./classify";
+import {
+  COVERAGE_DISCLAIMER,
+  type IntelligenceCatalog,
+  type KnowledgeGraph,
+  type LitigationEvent,
+  type LitigationTwin,
+  type OvernightBrief,
+  type PendingClock,
+  type WarRoom,
+} from "./types";
 import { coverageReport, matrixForMatter } from "./coverage";
-import { resolveDeadlines } from "./deadlines";
 import { publishAll, resetEventBus } from "./eventBus";
 import { fingerprintForMatter } from "./fingerprints";
 import { buildKnowledgeGraph } from "./graph";
@@ -36,6 +46,8 @@ export interface AssembleInput {
   summaries?: MatterSummary[];
   timeline?: TimelineEvent[];
   catalog?: IntelligenceCatalog;
+  /** Pre-classified feed (CourtListener log or a test fixture). */
+  events?: LitigationEvent[];
   asOf?: string;
   publish?: boolean;
 }
@@ -53,27 +65,55 @@ function upcomingClocks(summary: MatterSummary, events: TimelineEvent[]): Pendin
     }));
 }
 
+function mergeEventStreams(preferred: LitigationEvent[], fallback: LitigationEvent[]): LitigationEvent[] {
+  const seenIds = new Set(preferred.map((event) => event.id));
+  const seenKeys = new Set(
+    preferred
+      .filter((event) => event.matter != null && event.docket != null)
+      .map((event) => `${event.matter}:${event.docket}:${event.type}`),
+  );
+  const merged = [...preferred];
+  for (const event of fallback) {
+    if (seenIds.has(event.id)) continue;
+    const key = event.matter != null && event.docket != null ? `${event.matter}:${event.docket}:${event.type}` : null;
+    if (key && seenKeys.has(key)) continue;
+    seenIds.add(event.id);
+    if (key) seenKeys.add(key);
+    merged.push(event);
+  }
+  return merged;
+}
+
 export function assembleIntelligence(input: AssembleInput = {}): LitigationOS {
   const catalog = input.catalog ?? intelligenceCatalog;
   const summaries = input.summaries ?? cases;
   const log = input.timeline ?? timeline;
-  const events = eventsFromTimeline(log, catalog);
+  const fromTimeline = eventsFromTimeline(log, catalog);
+  const fromFeed =
+    input.events ?? (input.timeline === undefined ? (loggedEventLog as LitigationEvent[]) : []);
+  const events = mergeEventStreams(
+    fromFeed.map((event) => enrichEvent(event, catalog)),
+    fromTimeline,
+  );
   if (input.publish) {
     resetEventBus();
     publishAll(events);
   }
   const graph = buildKnowledgeGraph(summaries, catalog);
   const dependencyClocks = resolveDeadlines(catalog, events);
+  const briefingClocks = briefingClocksFromEvents(events, catalog, summaries);
+  const clocks = [...dependencyClocks, ...briefingClocks];
   const twins = summaries
     .filter((row) => row.lifecycle === "active" || row.lifecycle === "pre_filing")
-    .map((summary) => {
-      const twin = deriveTwin(summary, catalog, events, [...dependencyClocks, ...upcomingClocks(summary, log)]);
-      return twin;
-    });
+    .map((summary) =>
+      deriveTwin(summary, catalog, events, [
+        ...clocks.filter((clock) => clock.matter === summary.number),
+        ...upcomingClocks(summary, log),
+      ]),
+    );
   const significant = events.filter(
     (event) =>
-      (event.type === "MOTION_FILED" || event.type === "ORDER_ENTERED") &&
-      catalog.motions.some((motion) => motion.matter === event.matter),
+      event.type === "MOTION_FILED" || (event.type === "ORDER_ENTERED" && Boolean(event.payload?.triggerId)),
   );
   const warRooms = warRoomsFromEvents(significant.slice(0, 24), catalog);
   const overnight = overnightBrief({
@@ -98,7 +138,7 @@ export function assembleIntelligence(input: AssembleInput = {}): LitigationOS {
     graph,
     events,
     twins,
-    clocks: dependencyClocks,
+    clocks,
     warRooms,
     overnight,
     disclaimer: COVERAGE_DISCLAIMER,
@@ -123,7 +163,7 @@ export function commandCenter(matter: number, os: LitigationOS = getLitigationOS
     twin,
     matrices,
     warRooms: os.warRooms.filter((room) => room.matter === matter).slice(0, 3),
-    diffs: diffsForMatter(os.catalog.arguments, matter),
+    diffs: diffsFromEvents(os.catalog, os.events, matter),
     fingerprints: fingerprintForMatter(os.catalog, matter),
     clocks: os.clocks.filter((clock) => clock.matter === matter),
     judge: os.catalog.judges.find((row) => os.graph.edges.some((edge) => edge.from === `matter:${matter}` && edge.to === `judge:${row.id}`)),
@@ -135,6 +175,7 @@ export {
   auditCatalog,
   coverageReport,
   diffsForMatter,
+  diffsFromEvents,
   fingerprintForMatter,
   matrixForMatter,
   qiRadar,

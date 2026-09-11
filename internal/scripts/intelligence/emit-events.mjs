@@ -5,52 +5,80 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-
-const MOTION = /motion to dismiss|notice of motion|rule 12|12\(b\)\(6\)|demurrer/i;
-const ORDER = /\border\b|clerk.?s notice|findings?\s*(and|&)\s*recommendations?/i;
-const COUNSEL = /notice of appearance|appeared for|counsel of record/i;
-const SETTLED = /\bsettled\b|notice of settlement|stipulation of dismissal/i;
-
-export function classifyDocketText(text) {
-  const body = String(text ?? "");
-  if (SETTLED.test(body)) return "CASE_SETTLED";
-  if (COUNSEL.test(body)) return "COUNSEL_APPEARED";
-  if (MOTION.test(body)) return "MOTION_FILED";
-  if (ORDER.test(body)) return "ORDER_ENTERED";
-  return "DOCKET_ENTRY_ADDED";
-}
-
-export function eventFromNormalizedEntry(entry) {
-  const description = entry.description ?? "";
-  return {
-    id: `cl-${entry.matter}-${entry.courtlistener_entry_id ?? entry.entry_number ?? "x"}`,
-    type: classifyDocketText(description),
-    at: entry.date_filed ?? "",
-    matter: entry.matter,
-    docket: entry.entry_number ?? null,
-    summary: description,
-    payload: { provider: "courtlistener" },
-  };
-}
+import {
+  classifyDocketText,
+  enrichEventRecord,
+  issuesInText,
+} from "../../src/intelligence/filingSignals.js";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../src/data/intelligence");
 const EVENTS_PATH = path.join(ROOT, "events.json");
+
+function readJson(name, fallback) {
+  const file = path.join(ROOT, name);
+  if (!fs.existsSync(file)) return fallback;
+  return JSON.parse(fs.readFileSync(file, "utf8"));
+}
+
+export function loadCatalogSlice() {
+  return {
+    issues: readJson("issues.json", []),
+    authorities: readJson("authorities.json", []),
+    dependencies: readJson("dependencies.json", []),
+  };
+}
+
+export { classifyDocketText };
+
+export function eventFromNormalizedEntry(entry, catalog = loadCatalogSlice()) {
+  const description = entry.description ?? "";
+  const body = entry.body ?? "";
+  const text = `${description}\n${body}`.trim();
+  return enrichEventRecord(
+    {
+      id: `cl-${entry.matter}-${entry.courtlistener_entry_id ?? entry.entry_number ?? "x"}`,
+      type: classifyDocketText(text),
+      at: entry.date_filed ?? "",
+      matter: entry.matter,
+      docket: entry.entry_number ?? null,
+      summary: description,
+      issues: issuesInText(text, catalog.issues),
+      payload: { provider: "courtlistener", body },
+    },
+    catalog,
+  );
+}
 
 export function loadEventLog() {
   if (!fs.existsSync(EVENTS_PATH)) return [];
   return JSON.parse(fs.readFileSync(EVENTS_PATH, "utf8"));
 }
 
+function bodyOf(event) {
+  return typeof event?.payload?.body === "string" ? event.payload.body : "";
+}
+
 export function appendEventLog(events, { dryRun = false } = {}) {
   if (!events.length) return loadEventLog();
   const existing = loadEventLog();
-  const seen = new Set(existing.map((row) => row.id));
-  const merged = [...existing];
+  const byId = new Map(existing.map((row) => [row.id, row]));
   for (const event of events) {
-    if (seen.has(event.id)) continue;
-    seen.add(event.id);
-    merged.push(event);
+    const prior = byId.get(event.id);
+    if (!prior) {
+      byId.set(event.id, event);
+      continue;
+    }
+    const nextBody = bodyOf(event);
+    if (nextBody && nextBody !== bodyOf(prior)) {
+      byId.set(event.id, {
+        ...prior,
+        ...event,
+        payload: { ...(prior.payload ?? {}), ...(event.payload ?? {}) },
+        issues: event.issues?.length ? event.issues : prior.issues,
+      });
+    }
   }
+  const merged = [...byId.values()];
   if (!dryRun) {
     fs.mkdirSync(ROOT, { recursive: true });
     fs.writeFileSync(EVENTS_PATH, `${JSON.stringify(merged, null, 2)}\n`);

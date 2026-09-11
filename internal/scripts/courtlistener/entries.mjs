@@ -41,6 +41,28 @@ function firstRecapDocs(raw) {
   return [];
 }
 
+const BODY_MAX = 80_000;
+
+function firstPlainText(value) {
+  if (typeof value !== "string") return "";
+  return value.trim();
+}
+
+/** Capture RECAP / OCR text so the intelligence OS can extract arguments without a catalog edit. */
+export function recapPlainText(raw, recapDocs = firstRecapDocs(raw)) {
+  const candidates = [
+    raw?.plain_text,
+    raw?.ocr_text,
+    ...recapDocs.flatMap((doc) => [doc.plain_text, doc.ocr_text, doc.plain_text_short]),
+  ];
+  for (const candidate of candidates) {
+    const text = firstPlainText(candidate);
+    if (text) return text.length > BODY_MAX ? text.slice(0, BODY_MAX) : text;
+  }
+  return "";
+}
+
+
 export function normalizeDocketEntry(raw, { matter, docketId, ingestedAt }) {
   const recapDocs = firstRecapDocs(raw);
   const entryId = raw?.id ?? raw?.docket_entry_id ?? recapDocs[0]?.docket_entry_id ?? null;
@@ -55,6 +77,7 @@ export function normalizeDocketEntry(raw, { matter, docketId, ingestedAt }) {
     is_available: Boolean(doc.is_available),
     filepath_local: doc.filepath_local ?? null,
   }));
+  const body = recapPlainText(raw, recapDocs);
   return {
     matter,
     courtlistener_docket_id: docketId,
@@ -62,6 +85,7 @@ export function normalizeDocketEntry(raw, { matter, docketId, ingestedAt }) {
     entry_number: entryNumber == null ? null : Number(entryNumber),
     date_filed: dateFiled,
     description,
+    body,
     documents,
     ingested_at: ingestedAt,
     hash: entryHash({

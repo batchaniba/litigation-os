@@ -1,25 +1,31 @@
 import type { IntelligenceCatalog, LitigationEvent, LitigationEventType } from "./types";
 import type { TimelineEvent } from "../types/portfolio";
 import { parseMatterRefs } from "../utils/matterRefs.js";
-
-const MOTION = /motion to dismiss|notice of motion|rule 12|12\(b\)\(6\)|demurrer/i;
-const ORDER = /\border\b|clerk.?s notice|findings?\s*(and|&)\s*recommendations?/i;
-const COUNSEL = /notice of appearance|appeared for|counsel of record/i;
-const SETTLED = /\bsettled\b|notice of settlement|stipulation of dismissal/i;
-const TRIGGER_LANGUAGE = /within \d+ days|shall file|deadline|continued.{0,40}after/i;
+import {
+  classifyDocketText as classifyFromSignals,
+  enrichEventRecord,
+  issuesInText,
+  mentionedDockets,
+} from "./filingSignals.js";
 
 export function classifyDocketText(text: string): LitigationEventType {
-  if (SETTLED.test(text)) return "CASE_SETTLED";
-  if (COUNSEL.test(text)) return "COUNSEL_APPEARED";
-  if (MOTION.test(text)) return "MOTION_FILED";
-  if (ORDER.test(text)) return "ORDER_ENTERED";
-  if (TRIGGER_LANGUAGE.test(text)) return "DEADLINE_TRIGGERED";
-  return "DOCKET_ENTRY_ADDED";
+  return classifyFromSignals(text) as LitigationEventType;
 }
 
 export function issuesMentioned(text: string, catalog: IntelligenceCatalog): string[] {
-  const lower = text.toLowerCase();
-  return catalog.issues.filter((issue) => issue.keywords.some((keyword) => lower.includes(keyword.toLowerCase()))).map((issue) => issue.id);
+  return issuesInText(text, catalog.issues);
+}
+
+function docketFromText(text: string, fallback?: number | null): number | undefined {
+  if (fallback != null && Number.isInteger(fallback)) return fallback;
+  return mentionedDockets(text)[0];
+}
+
+export function enrichEvent(event: LitigationEvent, catalog: IntelligenceCatalog): LitigationEvent {
+  const body = typeof event.payload?.body === "string" ? event.payload.body : "";
+  const text = [event.summary, body].filter(Boolean).join("\n");
+  const docket = event.docket ?? docketFromText(text, Number(event.payload?.docket) || null);
+  return enrichEventRecord({ ...event, docket }, catalog) as LitigationEvent;
 }
 
 export function eventFromTimeline(
@@ -30,18 +36,27 @@ export function eventFromTimeline(
   const text = `${event.type} ${event.event}`;
   const { numbers } = parseMatterRefs(event.matters);
   const matter = numbers[0];
-  const type = event.type === "order" ? "ORDER_ENTERED" : event.type === "deadline" ? "DEADLINE_TRIGGERED" : classifyDocketText(text);
+  let type: LitigationEventType =
+    event.type === "order" ? "ORDER_ENTERED" : event.type === "deadline" ? "DEADLINE_TRIGGERED" : classifyDocketText(text);
+  if (/\bunfiled\b|drafted \(unfiled\)/i.test(event.event) && type === "MOTION_FILED") type = "DOCKET_ENTRY_ADDED";
   const issues = issuesMentioned(text, catalog);
-  return {
-    id: `tl-${index}-${event.date}`,
-    type,
-    at: event.date,
-    matter,
-    summary: event.event,
-    issues,
-    actor: event.actor,
-    payload: { source_type: event.source_type ?? "portfolio", docket: event.external?.entry_number ?? null },
-  };
+  return enrichEvent(
+    {
+      id: `tl-${index}-${event.date}`,
+      at: event.date,
+      type,
+      matter,
+      summary: event.event,
+      issues,
+      actor: event.actor,
+      payload: {
+        source_type: event.source_type ?? "portfolio",
+        docket: event.external?.entry_number ?? null,
+        body: event.event,
+      },
+    },
+    catalog,
+  );
 }
 
 export function eventsFromTimeline(timeline: TimelineEvent[], catalog: IntelligenceCatalog): LitigationEvent[] {
@@ -52,6 +67,7 @@ export function eventFromNormalizedEntry(
   entry: {
     matter: number;
     description?: string;
+    body?: string;
     date_filed?: string;
     entry_number?: number | null;
     courtlistener_entry_id?: number | null;
@@ -59,14 +75,18 @@ export function eventFromNormalizedEntry(
   catalog: IntelligenceCatalog,
 ): LitigationEvent {
   const description = entry.description ?? "";
-  return {
-    id: `cl-${entry.matter}-${entry.courtlistener_entry_id ?? entry.entry_number ?? description.slice(0, 24)}`,
-    type: classifyDocketText(description),
-    at: entry.date_filed ?? "",
-    matter: entry.matter,
-    docket: entry.entry_number ?? undefined,
-    summary: description,
-    issues: issuesMentioned(description, catalog),
-    payload: { provider: "courtlistener" },
-  };
+  const body = entry.body ?? "";
+  return enrichEvent(
+    {
+      id: `cl-${entry.matter}-${entry.courtlistener_entry_id ?? entry.entry_number ?? description.slice(0, 24)}`,
+      type: classifyDocketText(`${description} ${body}`),
+      at: entry.date_filed ?? "",
+      matter: entry.matter,
+      docket: entry.entry_number ?? undefined,
+      summary: description,
+      issues: issuesMentioned(`${description}\n${body}`, catalog),
+      payload: { provider: "courtlistener", body },
+    },
+    catalog,
+  );
 }

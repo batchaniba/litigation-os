@@ -157,7 +157,7 @@ export function IntelligencePage() {
       <section className="intel-panel" aria-labelledby="war-title">
         <h2 id="war-title">War rooms</h2>
         {rooms.length ? rooms.map((room) => <WarRoomCard key={`${room.matter}-${room.event}`} room={room} />) : (
-          <p className="detail-copy">No significant motion/order events matched the live-motion catalog in this pass.</p>
+          <p className="detail-copy">No filed motion or trigger-firing order in this pass.</p>
         )}
       </section>
     </article>

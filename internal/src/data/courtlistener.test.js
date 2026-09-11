@@ -14,6 +14,7 @@ import {
   inferFactActor,
   inferFactType,
   normalizeDocketEntry,
+  recapPlainText,
 } from "../../scripts/courtlistener/entries.mjs";
 import { reconcileEntries } from "../../scripts/courtlistener/reconcile.mjs";
 import { resolveMatter } from "../../scripts/courtlistener/resolve-dockets.mjs";
@@ -140,6 +141,26 @@ describe("entry normalization and deadlines", () => {
     expect(event.upcoming).toBe(false);
     expect(event.external.docket_entry_id).toBe(99887766);
     expect(event.event).toContain("Dkt. 15");
+  });
+
+  it("captures RECAP plain_text on the normalized entry without hashing it", () => {
+    const normalized = normalizeDocketEntry(
+      {
+        id: 42,
+        entry_number: 18,
+        date_filed: "2026-08-26",
+        description: "MOTION to Dismiss",
+        recap_documents: [{ id: 9, plain_text: "  Defendants move to dismiss. Qualified immunity.  " }],
+      },
+      { matter: 24, docketId: 1, ingestedAt: "2026-08-26T12:00:00Z" },
+    );
+    expect(normalized.body).toBe("Defendants move to dismiss. Qualified immunity.");
+    expect(recapPlainText({ recap_documents: [{ ocr_text: "OCR body" }] })).toBe("OCR body");
+    const withoutText = normalizeDocketEntry(
+      { id: 42, entry_number: 18, date_filed: "2026-08-26", description: "MOTION to Dismiss" },
+      { matter: 24, docketId: 1, ingestedAt: "2026-08-26T12:00:00Z" },
+    );
+    expect(withoutText.hash).toBe(normalized.hash);
   });
 
   it("parks an amended-complaint clock in review, not on the timeline as upcoming", () => {

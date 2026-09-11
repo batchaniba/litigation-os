@@ -8,7 +8,8 @@
       "id": "m24-dkt18-final",
       "description": "Final order on Defendant's motion to dismiss (Dkt. 18). Dkt. 25: no date certain until that order enters.",
       "fired": false,
-      "firedOn": null
+      "firedOn": null,
+      "motionDocket": 18
     },
     "offset": {
       "days": 14,

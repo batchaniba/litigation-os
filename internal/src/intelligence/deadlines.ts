@@ -1,7 +1,9 @@
 import { addCalendarDaysAfter, addCourtDaysAfter, rollBackwardToCourtDay, rollForwardToCourtDay, subtractCalendarDaysBefore, subtractCourtDaysBefore } from "../utils/deadlineMath/dayCount";
 import { formatPortfolioDate, toDayKey } from "../utils/deadlineMath/format";
+import { computeDeadlinesFromEvent } from "../utils/deadlineMath/recipes";
 import type { CourtKey } from "../utils/deadlineMath/types";
 import type { DeadlineRecipe, IntelligenceCatalog, LitigationEvent, PendingClock } from "./types";
+import type { MatterSummary } from "../types/portfolio";
 
 function courtKey(label?: string): CourtKey {
   if (label?.includes("E.D. Cal")) return "USDC E.D. Cal.";
@@ -97,6 +99,43 @@ export function resolveDeadlines(catalog: IntelligenceCatalog, events: Litigatio
     const live = triggerEvent?.at ? fireTrigger(recipe, toDayKey(triggerEvent.at)) : recipe;
     return resolveRecipe(live);
   });
+}
+
+/** Opposition / reply clocks from a newly filed motion that is not already a catalogued live motion. */
+export function briefingClocksFromEvents(
+  events: LitigationEvent[],
+  catalog: IntelligenceCatalog,
+  summaries: MatterSummary[],
+): PendingClock[] {
+  const knownLive = new Set(
+    catalog.motions.filter((motion) => motion.status === "live" && motion.docket != null).map((motion) => `${motion.matter}:${motion.docket}`),
+  );
+  const clocks: PendingClock[] = [];
+  for (const event of events) {
+    if (event.type !== "MOTION_FILED" || event.matter == null || !event.at) continue;
+    if (event.docket != null && knownLive.has(`${event.matter}:${event.docket}`)) continue;
+    const summary = summaries.find((row) => row.number === event.matter);
+    const court = summary?.court.includes("E.D. Cal") ? "USDC E.D. Cal." : "USDC N.D. Cal.";
+    const recipe = court === "USDC E.D. Cal." ? "edcal_lr230c_opposition" : "ndcal_lr7_motion_filed";
+    try {
+      const computed = computeDeadlinesFromEvent({ recipe, anchorDate: event.at, court });
+      for (const deadline of computed.deadlines) {
+        if (deadline.id === "ndcal_earliest_hearing") continue;
+        clocks.push({
+          id: `briefing-${event.matter}-${event.docket ?? event.id}-${deadline.id}`,
+          matter: event.matter,
+          label: deadline.label,
+          status: "date_certain",
+          date: deadline.date,
+          displayDate: deadline.displayDate,
+          derivedFrom: event.id,
+        });
+      }
+    } catch {
+      // Unparseable filing date — skip rather than invent a clock.
+    }
+  }
+  return clocks;
 }
 
 export function applyOrderToDependencies(

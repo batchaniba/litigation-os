@@ -14,12 +14,26 @@ export function buildWarRoom(
   const matter = event.matter;
   if (!matter) return null;
   const motion = catalog.motions.find((row) => row.matter === matter && (event.docket == null || row.docket === event.docket));
-  const issues = event.issues?.length ? event.issues : motion?.issues ?? [];
+  const extractedArgs = Array.isArray(event.payload?.arguments) ? (event.payload.arguments as string[]) : [];
+  const extractedAuth = Array.isArray(event.payload?.authorities) ? (event.payload.authorities as string[]) : [];
+  const issues = event.issues?.length ? event.issues : extractedArgs.length ? extractedArgs : motion?.issues ?? [];
   const snapshot = [...catalog.arguments].reverse().find((row) => row.matter === matter);
-  const prior = catalog.arguments.find((row) => row.matter === matter && row.id !== snapshot?.id);
-  const diff = snapshot && prior ? diffArguments(prior, snapshot) : null;
+  const liveFiling =
+    event.type === "MOTION_FILED"
+      ? {
+          id: event.id,
+          matter,
+          filing: event.summary.slice(0, 120),
+          date: event.at,
+          arguments: issues,
+          authorities: extractedAuth,
+          admissions: Array.isArray(event.payload?.admissions) ? (event.payload.admissions as string[]) : [],
+        }
+      : null;
+  const prior = snapshot;
+  const diff = liveFiling && prior ? diffArguments(prior, liveFiling) : snapshot && prior && snapshot.id !== prior.id ? diffArguments(prior, snapshot) : null;
   const facts = detectContradictions(catalog).filter((row) => row.supports.includes(matter));
-  const newAuthorities = snapshot?.authorities ?? [];
+  const newAuthorities = liveFiling?.authorities ?? snapshot?.authorities ?? [];
   const citeproofIds = options.citeproofIds ?? Object.keys(catalog.citeproof);
   const inProof = newAuthorities.filter((id) => citeproofIds.includes(id));
   const weak = newAuthorities.filter((id) => catalog.citeproof[id]?.parentheticalOverstates || catalog.authorities.find((row) => row.id === id)?.supports === "mixed");

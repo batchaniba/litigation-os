@@ -200,6 +200,8 @@ export interface DeadlineRecipe {
     description: string;
     fired?: boolean;
     firedOn?: string | null;
+    /** Docket number of the motion whose final order fires this recipe (e.g. Serrato Dkt. 18). */
+    motionDocket?: number;
   };
   offset: {
     days: number;
