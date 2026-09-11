@@ -25,6 +25,8 @@
   "damages": "Compensatory damages for deprivation of meaningful access to U Visa process, causing ongoing immigration uncertainty, inability to obtain employment authorization and removal protections, severe emotional distress, anxiety, and deprivation of dignitary interest in having state actor acknowledge documented criminal misconduct by subordinate officers. Punitive damages against Serrato individually for deliberate indifference to constitutional rights, recitation of 'thorough review' unsupported by record, willful refusal to engage with evidence in own possession, and severe continuing harm caused by immigration uncertainty, loss of work authorization, emotional distress, and dignitary injury. Attorney's fees and costs under 42 U.S.C. §1988(b) and California CCP §1021.5. Pre-judgment and post-judgment interest.",
   "risk": "Favorable. No qualified immunity available — the right to non-arbitrary decision-making by state officials exercising mandatory statutory duties is clearly established (Shanks v. Dressel, 540 F.3d 1082 (9th Cir. 2008)); the right to freedom from First Amendment retaliation is clearly established (Borough of Duryea v. Guarnieri, 564 U.S. 379 (2011); Hartman v. Moore, 547 U.S. 250 (2006)). The specific statutory requirements of PC §679.10 — mandatory certification language, rebuttable presumption, specific-reasons requirement — gave Serrato fair notice that boilerplate denial ignoring evidence and statutory standards would violate constitutional rights. Structural bias claim (Serrato as supervisor and certifier) strong under Withrow v. Larkin, 421 U.S. 35, 47 (1975). Retaliation claim strong — documented knowledge of protected activity (Serrato's own March 26, 2026 acknowledgment of POST complaint and assignment of investigator), tight temporal proximity (March 23 to April 20), concrete institutional incentive (avoiding admission of officers' crimes while defending same officers in pending civil suits), and pretextual reasoning (no engagement with any evidence). Mathews v. Eldridge balancing favors Plaintiff — private interest in certification substantial; risk of erroneous deprivation extreme; governmental interest minimal.",
   "evidence": [
+    "Gmail — Guardado service of Joint CMC Statement (Sep. 8, 2026, 5:50 p.m. Pacific) — service copy of Dkt. 24 emailed to bnn.cdl@gmail.com, cc Li; Guardado asked not to be added to the service list",
+    "Joint CMC Statement — Service Copy (Sep. 8, 2026) — unstamped AG PDF emailed with the Guardado print; PACER-stamped filed paper remains Dkt. 24",
     "Plaintiff's Civil L.R. 3-15 Certification of Conflicts, Interested Entities and Persons, and Citizenship — EXECUTED Sep. 4, 2026, unfiled",
     "CHP Dashcam Video Transcript (November 1, 2024, I-580 East Livermore, 00:54:36–01:57:10) — directly contradicts arrest report on four material points: alcohol odor never verbalized, speech coherent, location correctly identified, reading highway signs",
     "CHP Arrest-Investigation Report (RJ68845) — contains four material fabrications contradicted by dashcam",
@@ -46,6 +48,14 @@
     },
     {
       "path": "/documents/matter-24/Defendant Serrato's Rule 26(a)(1) Initial Disclosures (Dated Sep 8, Served Sep 9 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-24/Gmail - Newanforbi v Serrato - Guardado Service of Joint CMC Statement (Sep 8 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-24/Joint CMC Statement - Service Copy (Sep 8 2026).pdf",
       "filed": false
     },
     {
