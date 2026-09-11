@@ -74,10 +74,39 @@ async function main() {
     `budget ok (daily=${budget.remaining.daily} hourly=${budget.remaining.hourly} minute=${budget.remaining.minute})`,
   );
 
+  const dir = join(OUT, LABEL);
+  await mkdir(dir, { recursive: true });
+
+  const manifest = {
+    label: LABEL,
+    requested: { docket_number: DOCKET_NUMBER, court: COURT_ID, entries: ENTRIES_RAW },
+    docket: null,
+    fetched_at: new Date().toISOString(),
+    error: null,
+    documents: [],
+  };
+  const fail = async (message) => {
+    manifest.error = String(message);
+    await writeFile(join(dir, "manifest.json"), JSON.stringify(manifest, null, 2));
+    throw new Error(message);
+  };
+
   const dockets = await client.searchDockets({ docketNumber: DOCKET_NUMBER, courtId: COURT_ID });
-  if (!dockets.length) throw new Error(`no CourtListener docket for ${DOCKET_NUMBER}`);
+  if (!dockets.length) {
+    // Retry without judge-suffix etc: try the bare number core.
+    await fail(
+      `no CourtListener docket for "${DOCKET_NUMBER}" (court=${COURT_ID || "any"}). ` +
+        `Try the full number with judge initials as filed on the docket.`,
+    );
+  }
   const docket =
     dockets.find((d) => String(d.docket_number) === String(DOCKET_NUMBER)) ?? dockets[0];
+  manifest.docket = {
+    id: docket.id,
+    case_name: docket.case_name,
+    docket_number: docket.docket_number,
+    court: docket.court,
+  };
   console.log(
     `docket: ${docket.case_name} (${docket.docket_number}) id=${docket.id} court=${docket.court}`,
   );
@@ -104,20 +133,6 @@ async function main() {
   }
   console.log(`matched ${wanted.length} entries`);
 
-  const dir = join(OUT, LABEL);
-  await mkdir(dir, { recursive: true });
-
-  const manifest = {
-    label: LABEL,
-    docket: {
-      id: docket.id,
-      case_name: docket.case_name,
-      docket_number: docket.docket_number,
-      court: docket.court,
-    },
-    fetched_at: new Date().toISOString(),
-    documents: [],
-  };
 
   for (const entry of wanted) {
     const docs = [];
@@ -186,7 +201,24 @@ async function main() {
   console.log(`done: ${okCount}/${manifest.documents.length} documents downloaded -> ${dir}`);
 }
 
-main().catch((err) => {
+main().catch(async (err) => {
   console.error(`fetch-recap-briefs failed: ${err?.message || err}`);
+  try {
+    const dir = join(OUT, LABEL);
+    await mkdir(dir, { recursive: true });
+    const mfPath = join(dir, "manifest.json");
+    let manifest;
+    try {
+      manifest = JSON.parse(await (await import("node:fs/promises")).readFile(mfPath, "utf8"));
+    } catch {
+      manifest = { label: LABEL, error: null, documents: [] };
+    }
+    if (!manifest.error) {
+      manifest.error = String(err?.message || err);
+      await (await import("node:fs/promises")).writeFile(mfPath, JSON.stringify(manifest, null, 2));
+    }
+  } catch {
+    // manifest write is best-effort; the console error above is the record.
+  }
   process.exit(1);
 });
