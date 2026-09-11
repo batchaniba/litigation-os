@@ -41,7 +41,10 @@
     "citations:lookup": "python3 internal/scripts/lookup-citations.py --batch all",
     "citations:lookup:matter": "python3 internal/scripts/lookup-citations.py",
     "citations:lookup:matter28": "python3 internal/scripts/lookup-citations.py --matter 28",
-    "extract:matter1": "node internal/scripts/extract-matter-pdfs.mjs"
+    "extract:matter1": "node internal/scripts/extract-matter-pdfs.mjs",
+    "court:resolve": "node internal/scripts/courtlistener/resolve-dockets.mjs",
+    "court:sync": "node internal/scripts/courtlistener/sync-dockets.mjs",
+    "court:reconcile": "node internal/scripts/courtlistener/reconcile-timeline.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

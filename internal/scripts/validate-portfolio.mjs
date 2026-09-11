@@ -36,6 +36,8 @@ import { loadRegistry, registryByPath } from "./lib/document-registry.mjs";
 import { pdfReadableProblem } from "./lib/pdfMagic.mjs";
 import { matterRefsInclude, parseMatterRefs } from "../src/utils/matterRefs.js";
 import { ACTORS } from "./lib/next-actions.mjs";
+import { isFederalMatter } from "./courtlistener/courts.mjs";
+import { hasResolvableDocketNumber } from "./courtlistener/docket-number.mjs";
 import {
   DOCUMENTS_ROOT,
   PUBLIC_ROOT,
@@ -182,6 +184,8 @@ const TERMINAL_LIFECYCLES = new Set(["settled", "dismissed", "abandoned", "close
 
 const seenMatterNumbers = new Set();
 const matterRecords = new Map();
+const seenCourtListenerDockets = new Map();
+const SOURCE_TYPES = new Set(["portfolio", "courtlistener", "pacer", "email"]);
 const referencedDocPaths = new Set();
 let missingFiledCount = 0;
 const documentRegistry = loadRegistry();
@@ -343,6 +347,38 @@ for (const m of cases) {
     }
   }
 
+  if ("courtlistener" in m) {
+    const cl = m.courtlistener;
+    if (!cl || typeof cl !== "object" || Array.isArray(cl)) {
+      fail(`${tag}: courtlistener must be an object when present`);
+    } else {
+      if (typeof cl.court_id !== "string" || !/^[a-z][a-z0-9]*$/.test(cl.court_id)) {
+        fail(`${tag}: courtlistener.court_id must be a CourtListener court id`);
+      }
+      if ("docket_id" in cl) {
+        if (!Number.isInteger(cl.docket_id) || cl.docket_id <= 0) {
+          fail(`${tag}: courtlistener.docket_id must be a positive integer when present`);
+        } else {
+          const prior = seenCourtListenerDockets.get(cl.docket_id);
+          if (prior != null && prior !== m.number) {
+            fail(`${tag}: courtlistener.docket_id ${cl.docket_id} is already bound to Matter ${prior}`);
+          }
+          seenCourtListenerDockets.set(cl.docket_id, m.number);
+        }
+      }
+      if ("docket_url" in cl && (typeof cl.docket_url !== "string" || !cl.docket_url.startsWith("/docket/"))) {
+        fail(`${tag}: courtlistener.docket_url must start with /docket/`);
+      }
+      if ("alert_id" in cl && (!Number.isInteger(cl.alert_id) || cl.alert_id <= 0)) {
+        fail(`${tag}: courtlistener.alert_id must be a positive integer when present`);
+      }
+    }
+  } else if (isFederalMatter(m) && (m.lifecycle === "active" || m.lifecycle === "pre_filing")) {
+    fail(`${tag}: federal matter must carry a courtlistener binding (court_id at minimum)`);
+  } else if (isFederalMatter(m) && hasResolvableDocketNumber(m.case_no)) {
+    warn(`${tag}: federal matter has a PACER number but no courtlistener binding`);
+  }
+
   if (m.documents !== undefined) {
     if (!Array.isArray(m.documents)) {
       fail(`${tag}: field "documents" should be an array`);
@@ -434,6 +470,30 @@ for (const [i, t] of timeline.entries()) {
     const actor = typeof t.actor === "string" ? t.actor.toLowerCase() : "";
     if (!ACTORS.includes(actor)) {
       fail(`${tag}: upcoming event must pin actor as one of: ${ACTORS.join(", ")}`);
+    }
+  }
+  if ("source_type" in t) {
+    if (!SOURCE_TYPES.has(t.source_type)) {
+      fail(`${tag}: source_type must be one of ${[...SOURCE_TYPES].join(", ")}`);
+    }
+  }
+  if ("external" in t) {
+    const ext = t.external;
+    if (!ext || typeof ext !== "object" || Array.isArray(ext)) {
+      fail(`${tag}: external must be an object when present`);
+    } else {
+      if (ext.provider !== "courtlistener") {
+        fail(`${tag}: external.provider must be "courtlistener"`);
+      }
+      if (!Number.isInteger(ext.docket_id) || ext.docket_id <= 0) {
+        fail(`${tag}: external.docket_id must be a positive integer`);
+      }
+      if ("docket_entry_id" in ext && (!Number.isInteger(ext.docket_entry_id) || ext.docket_entry_id <= 0)) {
+        fail(`${tag}: external.docket_entry_id must be a positive integer when present`);
+      }
+      if ("entry_number" in ext && (!Number.isInteger(ext.entry_number) || ext.entry_number <= 0)) {
+        fail(`${tag}: external.entry_number must be a positive integer when present`);
+      }
     }
   }
 }

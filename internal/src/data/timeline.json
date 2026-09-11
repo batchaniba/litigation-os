@@ -368,7 +368,7 @@
       35
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "you",
     "source": "/documents/matter-35/Request to Correct Case Title - Clerical Party-Order Error (Sep 10 2026).pdf"
   },
@@ -829,7 +829,7 @@
       28
     ],
     "type": "hearing",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "you",
     "source": "/documents/matter-28/Gmail - Newanforbi v HOPE re Meet and Confer 3-26-cv-07504 (Sep 3-6 2026).pdf"
   },
@@ -2310,7 +2310,7 @@
       27
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "opposing",
     "source": "/documents/matter-27/Letter Confirming 15-Day Extension of Randstad's Time to Respond (Aug 18 2026).pdf"
   },

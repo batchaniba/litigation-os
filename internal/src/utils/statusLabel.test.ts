@@ -70,9 +70,15 @@ describe("statusLabel derivation", () => {
       upcoming: true,
     } as TimelineEvent;
     expect(deriveStatusLabel(defaultMatter, { events: [proveUp] })).toBe("Default prove-up — Dec. 1, 2099");
-    expect(deriveStatusLabel(cases.find((item) => item.number === 24)!, { events: eventsFor(24) })).toMatch(
-      /CMC.*Sep\. 15, 2026/,
-    );
+    const cmcMatter = { number: 24, lifecycle: "active" as const, phase: "cmc" as const };
+    const cmc = {
+      date: "Nov. 15, 2099",
+      event: "Initial Case Management Conference — Matter 24",
+      type: "hearing",
+      matters: [24],
+      upcoming: true,
+    } as TimelineEvent;
+    expect(deriveStatusLabel(cmcMatter, { events: [cmc] })).toMatch(/CMC.*Nov\. 15, 2099/);
   });
 
   it("pairs served milestones with later CMC / response deadlines", () => {

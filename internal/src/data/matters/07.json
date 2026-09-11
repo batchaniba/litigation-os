@@ -3,6 +3,11 @@
   "caption": "Newanforbi v. Candelaria",
   "case_no": "2:26-cv-00983-DC-CSK",
   "court": "USDC E.D. Cal.",
+  "courtlistener": {
+    "court_id": "caed",
+    "docket_id": 72521399,
+    "docket_url": "/docket/72521399/ps-newanforbi-v-candelaria/"
+  },
   "claims": "42 USC 1983: Procedural Due Process — Structural Bias, Denial of Neutral Decisionmaker, Deprivation Without Due Process",
   "status": "DISMISSED WITHOUT PREJUDICE — Notice of Voluntary Dismissal filed Aug. 15, 2026 (FRCP 41(a)(1)(A)(i); self-executing — neither Defendant had served an answer or MSJ, so the pending F&R/Objections did not foreclose dismissal by notice). Mooted Mag. Kim's F&R (Jun. 15, 2026, recommending IFP denial and dismissal WOLA) and the Objections/Notice of Supplemental Authority before District Judge Coggins ruled. Claims against Candelaria (individual) and Gordon (official capacity) refiled in N.D. Cal. as Matter 33 (No. 3:26-cv-08272-LJC, docketed Aug. 10, 2026, before this dismissal). PDFs for the historical E.D. Cal. docket remain under Matter 33.",
   "status_label": "Dismissed w/o prejudice — Aug. 15; refiled as Matter 33",
