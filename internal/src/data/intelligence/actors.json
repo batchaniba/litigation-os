@@ -1,0 +1,68 @@
+{
+  "attorneys": [
+    {
+      "id": "haiyang-li",
+      "name": "Haiyang A. Li",
+      "firm": "ca-ag",
+      "matters": [1, 7, 24, 32],
+      "issues": ["qualified_immunity", "u_visa_certification", "first_amendment_retaliation", "standing"]
+    },
+    {
+      "id": "blaze-van-dine",
+      "name": "Blaze Van Dine",
+      "firm": "slb",
+      "matters": [28],
+      "issues": ["state_actor", "monell_policy", "claim_preclusion", "qualified_immunity", "rico_continuity"]
+    },
+    {
+      "id": "eric-martinez",
+      "name": "Eric T. Martinez",
+      "firm": "slb",
+      "matters": [28],
+      "issues": ["state_actor", "claim_preclusion"]
+    },
+    {
+      "id": "vanessa-mott",
+      "name": "Vanessa W. Mott",
+      "firm": "mhs",
+      "matters": [26],
+      "issues": ["pc_290_46", "fcra_icraa", "standing"]
+    },
+    {
+      "id": "allison-kray",
+      "name": "Allison A. Kray",
+      "firm": "fedex-inhouse",
+      "matters": [25],
+      "issues": ["pc_290_46", "fcra_icraa"]
+    },
+    {
+      "id": "andrew-frederick",
+      "name": "Andrew P. Frederick",
+      "firm": "morgan-lewis",
+      "matters": [29],
+      "issues": ["pc_290_46", "fair_chance", "fcra_icraa"]
+    },
+    {
+      "id": "jasmine-stanzick",
+      "name": "Jasmine J. Stanzick",
+      "firm": "seyfarth",
+      "matters": [29],
+      "issues": ["pc_290_46", "fcra_icraa"]
+    },
+    {
+      "id": "fiel-tigno",
+      "name": "Fiel Dizon Tigno",
+      "firm": "ca-ag",
+      "matters": [33],
+      "issues": ["absolute_immunity", "procedural_due_process"]
+    }
+  ],
+  "firms": [
+    { "id": "ca-ag", "name": "California Attorney General", "attorneys": ["haiyang-li", "fiel-tigno"] },
+    { "id": "slb", "name": "Sims, Lawrence & Broghammer", "attorneys": ["blaze-van-dine", "eric-martinez"] },
+    { "id": "mhs", "name": "Martenson, Hasbrouck & Simon LLP", "attorneys": ["vanessa-mott"] },
+    { "id": "fedex-inhouse", "name": "Federal Express Corporation (in-house)", "attorneys": ["allison-kray"] },
+    { "id": "morgan-lewis", "name": "Morgan, Lewis & Bockius LLP", "attorneys": ["andrew-frederick"] },
+    { "id": "seyfarth", "name": "Seyfarth Shaw LLP", "attorneys": ["jasmine-stanzick"] }
+  ]
+}

@@ -47,10 +47,12 @@ export default defineConfig({
         'internal/src/components/Modal.jsx',
         'internal/src/hooks/**/*.{ts,js}',
         'internal/src/utils/**/*.{ts,js}',
+        'internal/src/intelligence/**/*.ts',
       ],
       exclude: [
         // Type-only module; Vitest 4 / v8 attributes it as 0% and skews averages.
         'internal/src/utils/deadlineMath/types.ts',
+        'internal/src/intelligence/types.ts',
         '**/*.test.{ts,js}',
       ],
       // Thresholds are unchanged, but they now apply across every hook and util

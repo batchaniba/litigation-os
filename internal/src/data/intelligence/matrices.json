@@ -1,0 +1,201 @@
+[
+  {
+    "matter": 24,
+    "claim_id": "m24-pdp",
+    "claim": "§ 1983 procedural due process — U-visa certification",
+    "elements": [
+      {
+        "id": "m24-deprivation",
+        "label": "Deprivation of a protected interest",
+        "issue": "procedural_due_process",
+        "allegation": "Serrato's April 20 boilerplate denial cut off meaningful access to U-visa certification under PC § 679.10.",
+        "evidence": ["April 20, 2026 Denial Letter", "Form I-918 Supplement B packet"],
+        "authority": ["shanks"],
+        "defense": "U-visa certification is discretionary; no protected interest.",
+        "next_evidence": "Complete CHP certification file / deliberative trail"
+      },
+      {
+        "id": "m24-process",
+        "label": "Process inadequate",
+        "issue": "u_visa_certification",
+        "allegation": "Denial identified no deficient statutory element, ignored dashcam and the § 851.6 certificate, and skipped § 679.10(g)/(h).",
+        "evidence": ["Dashcam transcript", "PC § 851.6 Detention Certificate", "AG Bulletin DLE-2024-05"],
+        "authority": ["shanks"],
+        "defense": "Five-sentence letter is sufficient written reasons.",
+        "next_evidence": "Comparator CHP certification grants after AB 1261"
+      },
+      {
+        "id": "m24-qi",
+        "label": "Qualified immunity (defense element)",
+        "issue": "qualified_immunity",
+        "allegation": "Mandatory statutory duties plus Shanks put Serrato on notice that a boilerplate denial is unconstitutional.",
+        "evidence": ["PC § 679.10(g)-(k) text", "Serrato March 26 complaint-assignment letter"],
+        "authority": ["harlow", "shanks"],
+        "defense": "Raised in Dkt. 18 MTD — no clearly established right to certification.",
+        "next_evidence": "N.D. Cal. orders applying Shanks to mandatory state duties"
+      }
+    ]
+  },
+  {
+    "matter": 28,
+    "claim_id": "m28-monell",
+    "claim": "§ 1983 Monell + individual capacity (HOPE / Smith)",
+    "elements": [
+      {
+        "id": "m28-state-action",
+        "label": "State action",
+        "issue": "state_actor",
+        "allegation": "HOPE performs CDCR's delegated parole-treatment function under a vendor contract.",
+        "evidence": ["CDCR vendor agreement / CASOMB certification", "West v. Atkins"],
+        "authority": ["west-atkins"],
+        "defense": "Anticipated: private clinic, not a state actor.",
+        "next_evidence": "CDCR payment records showing per-parolee compensation"
+      },
+      {
+        "id": "m28-policy",
+        "label": "Policy or custom",
+        "issue": "monell_policy",
+        "allegation": "Blanket retention for the full parole term regardless of progress.",
+        "evidence": ["HOPE Clinical Operational Manual HOPE_000294", "In re Dwyer", "HOPE RFA 18"],
+        "authority": ["monell", "dwyer"],
+        "defense": "Anticipated: individualized clinical judgment, not a policy.",
+        "next_evidence": "Multi-client retention statistics"
+      },
+      {
+        "id": "m28-causation",
+        "label": "Causation",
+        "issue": "monell_policy",
+        "allegation": "Adverse Form 3043 reporting and no-show logging prolonged supervision and destroyed CDL work.",
+        "evidence": ["HOPE_000142 / 194 no-show despite agent-confirmed error", "CDCR Form 3043"],
+        "authority": ["monell"],
+        "defense": "Anticipated: parole board / agent independent cause.",
+        "next_evidence": "Agent emails tying 3043 language to HOPE reports"
+      },
+      {
+        "id": "m28-rico",
+        "label": "RICO continuity",
+        "issue": "rico_continuity",
+        "allegation": "Pattern of fraudulent billing and false official reporting across the HOPE enterprise.",
+        "evidence": ["Billing rate schedule", "RFA Nos. 4 and 18"],
+        "authority": [],
+        "defense": "Anticipated: no enterprise / no pattern / Twombly particularity.",
+        "next_evidence": "CDCR payment records across locations"
+      }
+    ]
+  },
+  {
+    "matter": 32,
+    "claim_id": "m32-fourth",
+    "claim": "§ 1983 Fourth / Fourteenth — Meza-Gonzalez & Melano",
+    "elements": [
+      {
+        "id": "m32-seizure",
+        "label": "Unlawful seizure",
+        "issue": "fourth_amendment",
+        "allegation": "Officers arrested without probable cause on a fabricated alcohol/impairment narrative.",
+        "evidence": ["Dashcam transcript", "PC § 851.6 Detention Certificate"],
+        "authority": [],
+        "defense": "Anticipated: qualified immunity / arguable probable cause.",
+        "next_evidence": "Full CAD / MDT logs for RJ68845"
+      },
+      {
+        "id": "m32-fabrication",
+        "label": "Fabrication",
+        "issue": "fabrication",
+        "allegation": "Four material report falsehoods contradicted by CHP's own recording.",
+        "evidence": ["Arrest-Investigation Report RJ68845", "Dashcam transcript"],
+        "authority": [],
+        "defense": "Anticipated: negligent misstatement, not fabrication.",
+        "next_evidence": "POST PUBLIC-26-000371 investigative file"
+      }
+    ]
+  },
+  {
+    "matter": 26,
+    "claim_id": "m26-registry",
+    "claim": "PC § 290.46(j) + ICRAA — UPS / First Advantage",
+    "elements": [
+      {
+        "id": "m26-use",
+        "label": "Employment use of registry information",
+        "issue": "pc_290_46",
+        "allegation": "UPS used a First Advantage report whose only INELIGIBLE hit is the California Sex Offender Registry.",
+        "evidence": ["UPS Exhibit A / First Advantage report", "Final Adverse Action July 31, 2024"],
+        "authority": [],
+        "defense": "National-not-California construction; (j)(3) savings clause.",
+        "next_evidence": "First Advantage decisioning notes"
+      },
+      {
+        "id": "m26-fcra",
+        "label": "FCRA / ICRAA notice and accuracy",
+        "issue": "fcra_icraa",
+        "allegation": "Vendor-generated pre-adverse and final-adverse notices on UPS letterhead.",
+        "evidence": ["Pre Adverse Action July 22, 2024", "Final Adverse Action July 31, 2024"],
+        "authority": ["iqbal"],
+        "defense": "Tameny/Williams lead; FCRA not independently pled as the load-bearing count.",
+        "next_evidence": "Native First Advantage production"
+      }
+    ]
+  },
+  {
+    "matter": 29,
+    "claim_id": "m29-amazon",
+    "claim": "PC § 290.46(j) + Fair Chance + FCRA — Amazon / Accurate",
+    "elements": [
+      {
+        "id": "m29-registry",
+        "label": "Registry-information use",
+        "issue": "pc_290_46",
+        "allegation": "Accurate's mid-screening identity step and 20-day hold are consistent with a registry flag; Amazon stalled the XL Warehouse offer.",
+        "evidence": ["Accurate shortcode 45996 texts", "Simple Hire checklist Background Check PENDING"],
+        "authority": ["lerma"],
+        "defense": "Lerma: report used ordinary convictions, not Megan's Law website.",
+        "next_evidence": "The actual Accurate Background report for screening Y94611404"
+      },
+      {
+        "id": "m29-fair-chance",
+        "label": "Individualized assessment",
+        "issue": "fair_chance",
+        "allegation": "No individualized assessment of registry/conviction history against XL Warehouse Associate duties.",
+        "evidence": ["July 3, 2026 conditional offer", "Simple Hire shift deletion on July 27"],
+        "authority": ["lerma"],
+        "defense": "No final adverse action yet; claim unripe.",
+        "next_evidence": "Amazon Fair Chance assessment form (or its absence)"
+      }
+    ]
+  },
+  {
+    "matter": 25,
+    "claim_id": "m25-fedex",
+    "claim": "PC § 290.46(j) — FedEx / First Advantage",
+    "elements": [
+      {
+        "id": "m25-use",
+        "label": "Employment use of registry information",
+        "issue": "pc_290_46",
+        "allegation": "FedEx took adverse action nine days after a First Advantage pre-adverse notice; registry use pled on information and belief.",
+        "evidence": ["FedEx Pre-Adverse March 10, 2025", "FedEx Adverse March 19, 2025"],
+        "authority": [],
+        "defense": "Anticipated: report did not use Megan's Law website (Lerma pattern).",
+        "next_evidence": "First Advantage report produced in Rule 26 / Rule 45"
+      }
+    ]
+  },
+  {
+    "matter": 33,
+    "claim_id": "m33-aps",
+    "claim": "§ 1983 impartial adjudicator — Candelaria APS",
+    "elements": [
+      {
+        "id": "m33-bias",
+        "label": "Structural bias / inadequate hearing",
+        "issue": "procedural_due_process",
+        "allegation": "Hearing officer advocated for the officers' narrative and ignored CHP's own Detention Certificate.",
+        "evidence": ["APS 34739340 record", "PC § 851.6 Detention Certificate"],
+        "authority": [],
+        "defense": "Absolute / quasi-judicial immunity; Answer is to superseded Dkt. 1.",
+        "next_evidence": "Full APS audio / decision packet"
+      }
+    ]
+  }
+]

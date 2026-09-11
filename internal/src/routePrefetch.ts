@@ -11,6 +11,7 @@ const LOADERS: Record<string, () => Promise<unknown>> = {
   [ROUTES.timeline]: () => import("./components/TimelineTab"),
   [ROUTES.damages]: () => import("./components/DamagesTab"),
   [ROUTES.theories]: () => import("./components/TheoriesTab"),
+  [ROUTES.intelligence]: () => import("./pages/IntelligencePage"),
   [ROUTES.costOfCounsel]: () => import("./components/CostOfCounselTab"),
   [ROUTES.outcomes]: () => import("./components/OutcomesTab"),
   [ROUTES.judicialOpinions]: () => import("./components/JudicialOpinionsTab"),

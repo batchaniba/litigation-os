@@ -18,6 +18,7 @@ const OutcomesTab = lazy(() => import("./components/OutcomesTab").then((m) => ({
 const JudicialOpinionsTab = lazy(() => import("./components/JudicialOpinionsTab").then((m) => ({ default: m.JudicialOpinionsTab })));
 const NotableQuotesTab = lazy(() => import("./components/NotableQuotesTab").then((m) => ({ default: m.NotableQuotesTab })));
 const MatterDetailPage = lazy(() => import("./pages/MatterDetailPage").then((m) => ({ default: m.MatterDetailPage })));
+const IntelligencePage = lazy(() => import("./pages/IntelligencePage").then((m) => ({ default: m.IntelligencePage })));
 
 const noop = () => undefined;
 
@@ -54,6 +55,7 @@ export default function App() {
             <Route path="cross-matter" element={<Navigate to={ROUTES.dashboard} replace />} />
             <Route path="damages" element={<DamagesRoute />} />
             <Route path="theories" element={<TheoriesTab />} />
+            <Route path="intelligence" element={<IntelligencePage />} />
             <Route path="cost-of-counsel" element={<CostOfCounselTab />} />
             <Route path="outcomes" element={<OutcomesTab />} />
             <Route path="judicial-opinions" element={<JudicialOpinionsTab />} />

@@ -1,0 +1,56 @@
+[
+  {
+    "id": "haiyang-li",
+    "attorney": "Haiyang A. Li",
+    "firm": "California Attorney General",
+    "matters": [1, 7, 24, 32],
+    "recapMattersLocated": 4,
+    "motionsRetrieved": 2,
+    "leadDefense": "Qualified immunity plus no protected interest / Rule 12(b)(6) plausibility",
+    "frequentAuthorities": ["harlow", "iqbal", "shanks"],
+    "typicalMtdLength": "Portfolio MTD (Matter 24 Dkt. 18) leads with discretion, then retaliation, then QI and strike requests",
+    "repeatedArguments": ["qualified_immunity", "standing", "u_visa_certification"],
+    "tactics": [
+      "Rule 12(b)(6) with 12(f) strike overlay",
+      "Short-notice hearing later corrected by clerk (Dkt. 21)",
+      "Stipulation to continue CMC rather than a noticed 7-11"
+    ],
+    "settlementTiming": "No settlement on the live N.D. Cal. CHP dockets; historical Matter 1 dismissed without prejudice before district QI ruling"
+  },
+  {
+    "id": "blaze-van-dine",
+    "attorney": "Blaze Van Dine",
+    "firm": "Sims, Lawrence & Broghammer",
+    "matters": [28],
+    "recapMattersLocated": 0,
+    "motionsRetrieved": 0,
+    "leadDefense": "Previewed Rule 12(b)(6); expected lead: private actor / preclusion / RICO particularity",
+    "frequentAuthorities": ["iqbal", "monell"],
+    "typicalMtdLength": "Not yet filed. Sep. 3 preview asked to confer or dismiss by Sep. 10.",
+    "repeatedArguments": ["state_actor", "claim_preclusion", "rico_continuity"],
+    "tactics": [
+      "Service accepted by email for both defendants",
+      "Early Rule 12 meet-and-confer pressure to dismiss",
+      "Name-conform non-opposition (with Martinez) on the administrative-motion packet"
+    ],
+    "settlementTiming": "Unknown — MTD not on file. Philadelphia $1M/$5M is the insurance floor."
+  },
+  {
+    "id": "vanessa-mott",
+    "attorney": "Vanessa W. Mott",
+    "firm": "Martenson, Hasbrouck & Simon LLP",
+    "matters": [26],
+    "recapMattersLocated": 1,
+    "motionsRetrieved": 1,
+    "leadDefense": "Tameny/Williams plus national-not-California reading of the NSOR hit",
+    "frequentAuthorities": ["williams-tameny", "iqbal"],
+    "typicalMtdLength": "Dkt. 9 with exhibits including First Advantage report",
+    "repeatedArguments": ["pc_290_46", "standing"],
+    "tactics": [
+      "Removal then immediate Rule 12",
+      "Asked 15- and 30-day reply extensions; Plaintiff declined",
+      "Filed Dkt. 11 seeking through Sep. 14 after the telephonic ask failed"
+    ],
+    "settlementTiming": "No settlement; live MTD hearing Oct. 7 before Delaney"
+  }
+]

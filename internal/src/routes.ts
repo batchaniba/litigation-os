@@ -9,6 +9,7 @@ export const ROUTES = {
   outcomes: "/outcomes",
   judicialOpinions: "/judicial-opinions",
   notableQuotes: "/notable-quotes",
+  intelligence: "/intelligence",
 } as const;
 
 export const NAV_ITEMS = [
@@ -17,6 +18,7 @@ export const NAV_ITEMS = [
   { label: "Timeline", path: ROUTES.timeline, end: false, icon: "↦", group: "Casework" },
   { label: "Damages", path: ROUTES.damages, end: false, icon: "$", group: "Analysis" },
   { label: "Theories", path: ROUTES.theories, end: false, icon: "¶", group: "Analysis" },
+  { label: "Intelligence", path: ROUTES.intelligence, end: false, icon: "◎", group: "Analysis" },
   { label: "Cost of Counsel", path: ROUTES.costOfCounsel, end: false, icon: "◈", group: "Analysis" },
   { label: "Outcomes", path: ROUTES.outcomes, end: false, icon: "✓", group: "Analysis" },
   { label: "Judicial Opinions", path: ROUTES.judicialOpinions, end: false, icon: "⚖", group: "Record" },

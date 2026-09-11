@@ -24,6 +24,7 @@ import {
   writeTimeline,
 } from "./io.mjs";
 import { reconcileEntries } from "./reconcile.mjs";
+import { appendEventLog, eventFromNormalizedEntry } from "../intelligence/emit-events.mjs";
 
 function parseArgs(argv) {
   const args = { dryRun: false, matter: null };
@@ -105,6 +106,8 @@ export async function syncDockets({
     if (result.stats.seen) writeLedger(result.ledger);
     if (result.stats.candidatesAdded) writeReview(result.review);
     writeSyncState(nextSync);
+    const busEvents = normalized.map((entry) => eventFromNormalizedEntry(entry));
+    appendEventLog(busEvents);
   }
 
   return { ...result, syncState: nextSync, perMatter, ingestedAt };

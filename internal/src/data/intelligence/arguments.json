@@ -1,0 +1,54 @@
+[
+  {
+    "id": "m24-anticipated",
+    "matter": 24,
+    "filing": "Anticipated Rule 12 defenses (pre-Dkt. 18)",
+    "date": "Aug. 20, 2026",
+    "arguments": ["standing", "qualified_immunity", "u_visa_certification"],
+    "authorities": ["harlow", "iqbal"],
+    "admissions": []
+  },
+  {
+    "id": "m24-dkt18",
+    "matter": 24,
+    "filing": "Dkt. 18 Motion to Dismiss FAC / Motion to Strike",
+    "date": "Aug. 26, 2026",
+    "arguments": ["u_visa_certification", "first_amendment_retaliation", "qualified_immunity", "standing"],
+    "authorities": ["harlow", "iqbal", "shanks"],
+    "admissions": [
+      "Defendant does not dispute the April 20 denial issued.",
+      "Defendant does not dispute receipt of the April 9 packet."
+    ]
+  },
+  {
+    "id": "m26-dkt9",
+    "matter": 26,
+    "filing": "Dkt. 9 Motion to Dismiss",
+    "date": "Aug. 26, 2026",
+    "arguments": ["pc_290_46", "standing"],
+    "authorities": ["williams-tameny", "iqbal"],
+    "admissions": [
+      "UPS does not dispute it used the First Advantage background check to deny hire."
+    ]
+  },
+  {
+    "id": "m26-dkt12-reply",
+    "matter": 26,
+    "filing": "UPS reply (extension through Sep. 14; authorities added)",
+    "date": "Sep. 10, 2026",
+    "arguments": ["pc_290_46", "standing", "fcra_icraa"],
+    "authorities": ["williams-tameny", "iqbal", "lerma"],
+    "admissions": [
+      "UPS does not dispute it used the First Advantage background check to deny hire."
+    ]
+  },
+  {
+    "id": "m28-anticipated",
+    "matter": 28,
+    "filing": "Van Dine Sep. 3 Rule 12(b)(6) preview",
+    "date": "Sep. 3, 2026",
+    "arguments": ["state_actor", "monell_policy", "claim_preclusion", "qualified_immunity", "rico_continuity"],
+    "authorities": ["iqbal", "monell"],
+    "admissions": []
+  }
+]

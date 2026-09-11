@@ -1,0 +1,27 @@
+[
+  {
+    "id": "m24-dkt18",
+    "matter": 24,
+    "docket": 18,
+    "label": "Serrato motion to dismiss FAC / motion to strike",
+    "status": "live",
+    "hearing": "Sep. 30, 2026",
+    "issues": ["u_visa_certification", "first_amendment_retaliation", "qualified_immunity", "standing"]
+  },
+  {
+    "id": "m26-dkt9",
+    "matter": 26,
+    "docket": 9,
+    "label": "UPS Rule 12(b)(6) motion",
+    "status": "live",
+    "hearing": "Oct. 7, 2026",
+    "issues": ["pc_290_46", "standing", "fcra_icraa"]
+  },
+  {
+    "id": "m28-anticipated-mtd",
+    "matter": 28,
+    "label": "Anticipated HOPE / Smith Rule 12(b)(6)",
+    "status": "anticipated",
+    "issues": ["state_actor", "monell_policy", "claim_preclusion", "qualified_immunity", "rico_continuity"]
+  }
+]
