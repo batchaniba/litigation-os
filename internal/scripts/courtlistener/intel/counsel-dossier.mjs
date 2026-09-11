@@ -253,14 +253,13 @@ async function main() {
   let name = args.name ?? null;
   let attorneyIdValue = args["attorney-id"] ? Number(args["attorney-id"]) : null;
   let firm = args.firm ?? null;
-  let discovery = null;
 
   if (attorneyIdValue) {
     const attorney = await client.getAttorney({ attorneyId: attorneyIdValue });
     name = attorney?.name ?? name ?? `attorney-${attorneyIdValue}`;
   } else if (matter && matter.courtlistener?.docket_id) {
     const parties = await client.listParties({ docketId: matter.courtlistener.docket_id });
-    discovery = discoverCounselCandidates(parties, matter.defendants);
+    const discovery = discoverCounselCandidates(parties, matter.defendants);
     if (discovery.autoPick) {
       name = discovery.autoPick.name;
       attorneyIdValue = discovery.autoPick.attorney_id;
