@@ -753,7 +753,7 @@ Read code → Find module → Edit → Test → Commit → Push → Repeat
 
 1. **Code splitting:** Import React components lazily for new tabs (use `React.lazy()`)
 2. **Image optimization:** If adding images, use WebP with PNG fallback
-3. **Memoization:** Wrap expensive components in `React.memo()` if rendering > 100 cases
+3. **Memoization:** Wrap expensive components in `React.memo()` if rendering > 39 matters
 4. **Data compression:** If PORTFOLIO grows, consider gzip (GitHub Pages auto-compresses)
 
 ### Monitoring
