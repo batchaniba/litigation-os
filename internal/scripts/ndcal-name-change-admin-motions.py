@@ -43,13 +43,13 @@ NEW_NAME = "Brendan Ngwa Nforbi"
 NEW_NAME_CAPS = "BRENDAN NGWA NFORBI"
 FIRST_NAME = "Brendan"
 LAST_NAME = "Ngwa Nforbi"
-BOLD_FIRST = f"<<b:{FIRST_NAME}>>"
 BOLD_NFORBI = "<<b:Nforbi>>"
 BOLD_LAST = f"Ngwa {BOLD_NFORBI}"
-BOLD_NAME = f"{BOLD_FIRST} {BOLD_LAST}"
-BOLD_NAME_CAPS = f"<<b:BRENDAN>> NGWA <<b:NFORBI>>"
+# The full requested name stays roman. Bold only the last-name token Nforbi.
+BOLD_NAME = NEW_NAME
+BOLD_NAME_CAPS = NEW_NAME_CAPS
 FIRST_LAST_GLOSS = (
-    f"first name {BOLD_FIRST}, last name {BOLD_LAST}"
+    f"first name {FIRST_NAME}, last name {BOLD_LAST}"
 )
 SIG_LINE = "________________________________________"
 HELP_DESK = (
@@ -600,7 +600,7 @@ def _pacer_name_ask(case: NameCase) -> str:
             f"{BOLD_NFORBI}. The ask is that the Clerk change "
             f"that last-name field from {BOLD_NFORBI} to "
             f"{BOLD_LAST} so it matches Plaintiff's PACER account (login "
-            f"bngwanforbi). First name is {BOLD_FIRST}."
+            f"bngwanforbi). First name is {FIRST_NAME}."
         )
     if case.from_name_token:
         return (
@@ -608,7 +608,7 @@ def _pacer_name_ask(case: NameCase) -> str:
             f"{case.current_docket_name}. The ask is that the Clerk change "
             f"{case.from_name_token} to {BOLD_LAST} so it matches "
             f"Plaintiff's PACER account (login bngwanforbi). First name "
-            f"remains {BOLD_FIRST}."
+            f"remains {FIRST_NAME}."
         )
     return ""
 
