@@ -47,7 +47,7 @@ jobs:
 
       - name: Check CourtListener token
         run: |
-          if [ -z "${{ secrets.COURTLISTENER_TOKEN }}" ]; then
+          if [ -z "${{ secrets.COURTLISTENER_TOKEN1 || secrets.COURTLISTENER_TOKEN }}" ]; then
             echo "::error::COURTLISTENER_TOKEN is not set."
             exit 1
           fi
@@ -61,7 +61,7 @@ jobs:
             --label "${{ inputs.label }}" \
             --out /tmp/briefs
         env:
-          COURTLISTENER_TOKEN: ${{ secrets.COURTLISTENER_TOKEN }}
+          COURTLISTENER_TOKEN: ${{ secrets.COURTLISTENER_TOKEN1 || secrets.COURTLISTENER_TOKEN }}
 
       - name: Verify downloads
         if: always()
