@@ -1,7 +1,53 @@
 [
   {
+    "date": "Sep. 11, 2026",
+    "event": "RECEIVED \u2014 Eric T. Martinez (Sims, Lawrence & Broghammer) memorialized the September 10 Rule 12(b)(6) meet-and-confer in Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC). Defendants' position: res judicata from the state-court order; allegations insufficient. Parties did not agree whether the prior order was on the merits; informal resolution not attainable; meet-and-confer exhausted; formal motion practice unavoidable. On the name request: no intention of opposing a motion; will not sign the then-current stipulation; wants more background on the two name forms and why the correction is needed; wants the date-by-date \"nothing moves\" list removed, especially expired dates. Quiet counterpart and covering email are drafted (internal/docs/name-conform/). Do not debate the Rule 12 memorialization in the name email. Answer still September 21. Service emails must include slb-eservice@sims-law.net. Do not treat as a signed stipulation.",
+    "matters": [
+      28
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "filed": false,
+    "actor": "opposing",
+    "source": "/documents/matter-28/Gmail - RE request to stipulate to docket name correction - Martinez (Sep 10 2026).pdf"
+  },
+  {
+    "date": "Sep. 11, 2026",
+    "event": "RECEIVED \u2014 Andrew P. Frederick (Morgan Lewis) on the Matter 29 docket-name request (4:26-cv-09249-ASK). Amazon is agreeable to stipulating that the docket identify Plaintiff as Brendan Ngwa Nforbi if Plaintiff confirms that both \"Brendan Ngwa Nforbi\" and \"Brendan Ngehsi Newanforbi\" are names he uses and goes by. Covering email confirming that is drafted. Do not attach the $250k demand. Do not treat as a signed stipulation. September 22 response dates (Dkts. 6 and 7) and the December 1 CMC are unchanged.",
+    "matters": [
+      29
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "filed": false,
+    "actor": "opposing"
+  },
+  {
+    "date": "Sep. 11, 2026",
+    "event": "RECEIVED \u2014 John Drury (Seyfarth; cc Jasmine J. Stanzick) on the same Matter 29 docket-name request (4:26-cv-09249-ASK). Asks Plaintiff to confirm that \"Brendan Ngehsi Newanforbi\" is a name he also uses, and asks for a government ID before reviewing a draft. Covering email confirms the names and declines to circulate an ID. If they will not stipulate, proceed by Civil L.R. 7-11. Do not send a government ID. Accurate's September 22 response date (Dkt. 7) is unchanged.",
+    "matters": [
+      29
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "filed": false,
+    "actor": "opposing"
+  },
+  {
+    "date": "Sep. 10, 2026",
+    "event": "RECEIVED \u2014 Haiyang A. Li (AG) on the Serrato (4:26-cv-05953-ASK) and Meza-Gonzalez (4:26-cv-08271-ASK) docket-name requests. 8:55 a.m.: asked for drafts. 4:55 p.m.: will not stipulate because defendants are not requesting relief; will not oppose a motion so long as it is clear that \"Nforbi\" and \"Newanforbi\" are the same person; does not represent Officer Melano or Officer Meza-Gonzalez in 08271 and says neither has been properly served. Take the non-opposition. File Civil L.R. 7-11 in both actions. Do not ask him to sign. His 08271 statement is not an appearance and not acceptance of service. Dkt. 13 remains pending.",
+    "matters": [
+      24,
+      32
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "filed": false,
+    "actor": "opposing"
+  },
+  {
     "date": "Sep. 14, 2026",
-    "event": "DRAFTED (unfiled) \u2014 Civil L.R. 7-11 administrative motions (not 7-12 stipulations) to conform Plaintiff's docket name to Brendan Ngwa Nforbi in all five N.D. Cal. actions. Clean swap; same person; PACER bngwanforbi; Help Desk Sep. 1 attached as Exhibit A. No deadline, hearing, or pending motion moves. Non-opposition on the record recited only for Haiyang A. Li (24, 32) and Blaze Van Dine / Eric Martinez (28). Do not recite non-opposition for Amazon/Accurate (29) or Tigno/McMahon (33). Li's 32 statement is not an appearance. Dated Sep. 14. Do not treat as filed. After entry, re-ask the ECF Help Desk to link bngwanforbi.",
+    "event": "DRAFTED (unfiled) \u2014 Civil L.R. 7-11 administrative motions (not 7-12 stipulations) to conform Plaintiff's docket name to Brendan Ngwa Nforbi in the N.D. Cal. actions where a stipulation is not going on file. Clean swap; same person; PACER bngwanforbi; Help Desk Sep. 1 attached as Exhibit A. No deadline, hearing, or pending motion moves. Do not file Matter 33 while the September 10 McMahon-revision authorization is live. Matter 28 is the fallback if Martinez declines the quiet counterpart. Matters 24 and 32: recite Li's non-opposition; his 32 statement is not an appearance. Matter 29: do not recite non-opposition until it is on the email record after the name confirmation; do not send Accurate a government ID. Dated Sep. 14. Do not treat as filed. After entry, re-ask the ECF Help Desk to link bngwanforbi.",
     "matters": [
       24,
       28,
@@ -29,7 +75,7 @@
   },
   {
     "date": "Sep. 10, 2026",
-    "event": "RECEIVED \u2014 William J. McMahon (AG) 9:59 a.m. asked two questions on the Candelaria name-correction stip request (3:26-cv-08272-LJC): whether Plaintiff seeks to change the name to match PACER, and why the names differ across lawsuits. Plaintiff replied 10:21 a.m.: yes, same person, PACER login bngwanforbi, aliases plus clerical error, nothing else moves; attached a signed counterpart and authorized McMahon to file that exact file only. McMahon 11:01 a.m. returned a REVISED stipulation/proposed order with his edits. The Sep. 10 filing authorization does not extend to the revision. Compare before authorizing the named McMahon file.",
+    "event": "RECEIVED / ACCEPTED \u2014 William J. McMahon (AG) on the Candelaria name-correction request (3:26-cv-08272-LJC). 9:59 a.m.: asked whether Plaintiff seeks to change the name to match PACER, and why the names differ across lawsuits. Plaintiff 10:21 a.m.: yes, same person, PACER login bngwanforbi, aliases plus clerical error, nothing else moves; attached a signed counterpart and authorized that exact file only. McMahon 11:01 a.m. returned a REVISED stipulation/proposed order. Plaintiff 1:29 p.m. accepted that named revised file and authorized counsel to file it, and only it, with /s/ Brendan Ngwa Nforbi. Do not send a new counterpart. Do not file the Sep. 14 7-11 while that authorization is live. Diff the filed PDF against the 11:01 a.m. file when the conformed copy arrives.",
     "matters": [
       33
     ],
@@ -41,7 +87,7 @@
   },
   {
     "date": "Sep. 10, 2026",
-    "event": "RECEIVED \u2014 Eric T. Martinez (Sims, Lawrence & Broghammer) on Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC). 9:18 a.m.: no objection to Plaintiff asking the Court for an administrative name correction; not sure the Court would approve a stipulation if the new name differs from the legal name; will discuss at the 2:00 p.m. Rule 12 meet-and-confer; must review the actual paper before agreeing. Plaintiff 10:24 a.m. sent the signed counterpart (same-person / PACER match; Sep. 21, Oct. 15, Oct. 22 stay). Martinez 11:08 a.m.: will review before 2:00 p.m. Do not treat as a signed stipulation. Service emails must include slb-eservice@sims-law.net.",
+    "event": "RECEIVED \u2014 Eric T. Martinez (Sims, Lawrence & Broghammer) on Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC). 9:18 a.m.: no objection to Plaintiff asking the Court for an administrative name correction; not sure the Court would approve a stipulation if the new name differs from the legal name; will discuss at the 2:00 p.m. Rule 12 meet-and-confer; must review the actual paper before agreeing. Plaintiff 10:24 a.m. sent the signed counterpart (same-person / PACER match; Sep. 21, Oct. 15, Oct. 22 stay). Martinez 11:08 a.m.: will review before 2:00 p.m. Do not treat as a signed stipulation. Service emails must include slb-eservice@sims-law.net. Superseded in part by his September 11 memorialization: will not oppose a motion; will not sign the then-current stipulation; asked for background and less date-list language. Quiet counterpart is drafted. Do not treat either email as a signed stipulation.",
     "matters": [
       28
     ],

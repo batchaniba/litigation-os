@@ -1,15 +1,24 @@
 #!/usr/bin/env python3
-"""SUPERSEDED. Do not generate or file these 7-12 counterparts.
+"""N.D. Cal. Civil L.R. 7-12 name-conform counterparts.
 
-Operative vehicle: Civil L.R. 7-11 administrative motions in
-``ndcal-name-change-admin-motions.py``. Counsel will not stipulate.
-Non-opposition on the record is only Li (24, 32) and Van Dine /
-Martinez (28).
+Live posture as of September 11, 2026 — do not lean on counsel:
 
-Original docstring follows.
-
-N.D. Cal. Civil L.R. 7-12 stipulations to swap Plaintiff's docket name
-to Brendan Ngwa Nforbi (first name Brendan; last name Ngwa Nforbi).
+- Matter 33 (McMahon): Plaintiff accepted their REVISED file at 1:29 p.m.
+  on September 10. Do not send a new counterpart. Do not file a 7-11
+  while that authorization is live. Wait for the conformed copy.
+- Matter 24 (Li): will not stipulate; will not oppose a motion if
+  "Nforbi" and "Newanforbi" are the same person. Take the non-opposition.
+  File the 7-11. Do not ask him to sign.
+- Matter 32 (Li): same, plus he does not appear and does not accept
+  service. Do not put him on a signature block that looks like an
+  appearance.
+- Matter 29 Amazon (Frederick): agreeable if Plaintiff confirms both
+  name forms are names he uses. Confirm that. Plaintiff drafts.
+- Matter 29 Accurate (Drury / Stanzick): asked for the same confirmation
+  and a government ID. Confirm the names. Do not send an ID.
+- Matter 28 (Martinez): will review a quieter revision (background;
+  drop the date laundry list). Use the quiet Matter 28 terms. Do not
+  narrate "aliases" as a stipulated fact about the events of the suit.
 
 Same-person clean swap. No deadline moves. No aka in the caption. The
 body and proposed order recites that the two name forms are one person.
@@ -88,6 +97,7 @@ class NameCase:
     extra_right: list[tuple[str, bool, bool]] = field(default_factory=list)
     email_extra: str = ""
     short_slug: str = ""
+    quiet: bool = False
 
 
 CASES: list[NameCase] = [
@@ -130,18 +140,21 @@ CASES: list[NameCase] = [
         ],
         pos_by_email=True,
         counsel_stated=(
-            "Deputy Attorney General Haiyang A. Li stated that Defendant "
-            "will not oppose a clean name change identifying Plaintiff as "
-            f"{NEW_NAME}."
+            "Deputy Attorney General Haiyang A. Li stated on September 10, "
+            "2026 that he does not believe a stipulation is required and "
+            "that Defendant will not oppose a motion so long as the paper "
+            'makes clear that "Nforbi" and "Newanforbi" are the same '
+            "person. This counterpart is not for his signature. The "
+            "operative vehicle in this action is the Civil L.R. 7-11 "
+            "motion."
         ),
         preserve=[
-            "the September 15, 2026 initial case management conference",
+            "the continued initial case management conference (Dkt. 25)",
             "the September 30, 2026 hearing on Defendant's motion to dismiss "
             "(Dkt. 18 / Dkt. 21)",
-            "any date in the June 17, 2026 ISC / ADR order that remains in effect",
             "Defendant's pending motion (Dkt. 18) and Plaintiff's opposition",
         ],
-        agreed_on_record=True,
+        agreed_on_record=False,
         short_slug="name-24",
     ),
     NameCase(
@@ -197,25 +210,25 @@ CASES: list[NameCase] = [
         ],
         pos_by_email=True,
         counsel_stated=(
-            "Blaze Van Dine and Eric Martinez of Sims, Lawrence & Broghammer "
-            "stated that Defendants will not oppose a clean name change so "
-            "long as the paper makes clear that the two name forms are one "
-            "person. Paragraph 2 does that."
+            "Eric T. Martinez wrote on September 11, 2026 that he does not "
+            "intend to oppose a request that the Clerk identify Plaintiff "
+            f"as {NEW_NAME}, and that he will review a revised stipulation "
+            "that explains why the two name forms appear and why the "
+            "correction is needed. Paragraph 1 does that. This paper does "
+            "not recite a date-by-date calendar."
         ),
-        preserve=[
-            "Defendants' September 21, 2026 deadline to answer or otherwise "
-            "respond (from the August 31, 2026 accepted service)",
-            "the October 15, 2026 joint case management statement",
-            "the October 22, 2026 initial case management conference",
-        ],
-        agreed_on_record=True,
+        preserve=[],
+        agreed_on_record=False,
         email_extra=(
-            "This is the same clean swap we discussed September 10: same "
-            "person as Brendan Ngehsi Newanforbi; PACER login bngwanforbi; "
-            "September 21, October 15, and October 22 stay put. Paragraph 2 "
-            "states the two names are one person.\n"
+            "This is the quieter revision you asked for on September 11: "
+            "short background on the two name forms and the PACER / Help "
+            "Desk reason; no date-by-date list. The paper asks only that "
+            "the Clerk identify me as Brendan Ngwa Nforbi. I am the same "
+            "person as Brendan Ngehsi Newanforbi. If you want a change, "
+            "send a redline.\n"
         ),
         short_slug="name-28",
+        quiet=True,
     ),
     NameCase(
         matter=29,
@@ -272,10 +285,14 @@ CASES: list[NameCase] = [
         ],
         pos_by_email=True,
         counsel_stated=(
-            "Plaintiff has not obtained Amazon's or Accurate Background's "
-            "agreement on this request. This counterpart is sent for their "
-            "signatures. Do not file it as a stipulation until both "
-            "signature blocks are signed."
+            "Andrew P. Frederick wrote on September 11, 2026 that Amazon "
+            "is agreeable if Plaintiff confirms that both name forms are "
+            "names he uses and goes by. John Drury wrote the same morning "
+            "asking for that confirmation and for a government ID. This "
+            "counterpart is sent for their signatures after that "
+            "confirmation. It is not a stipulation until both signature "
+            "blocks are signed. Plaintiff is not circulating a government "
+            "ID with this paper."
         ),
         preserve=[
             "both Defendants' September 22, 2026 deadlines to answer or "
@@ -402,9 +419,12 @@ CASES: list[NameCase] = [
         ],
         pos_by_email=True,
         counsel_stated=(
-            "Counsel for Defendants (PACER lead Fiel Dizon Tigno; William J. "
-            "McMahon signed the Dkt. 11 Answer) stated they are willing to "
-            f"stipulate to a clean name change identifying Plaintiff as {NEW_NAME}."
+            "William J. McMahon returned a REVISED stipulation on "
+            "September 10, 2026. Plaintiff accepted that named file at "
+            "1:29 p.m. the same day and authorized counsel to file that "
+            "file only. This generator is not a substitute for that "
+            "accepted revision. Do not send this counterpart. Do not file "
+            "a 7-11 while that authorization is live."
         ),
         preserve=[
             "Defendants' September 22, 2026 deadline to consent or decline "
@@ -524,65 +544,124 @@ def build_stipulation(case: NameCase) -> Path:
         first_indent=0,
     )
     d.blank_line()
-    d.write_wrapped(
-        f"1.  The Clerk shall amend the docket, the short title, the "
-        f"CM/ECF party record, and the caption of this action so that "
-        f"Plaintiff is identified as <<b:{NEW_NAME}>> — first name "
-        f"Brendan, last name Ngwa Nforbi — matching Plaintiff's existing "
-        f"PACER account (login bngwanforbi). This is a clean swap of the "
-        f"party name. Subsequent papers shall use that caption.",
-        first_indent=0,
-    )
-    d.blank_line()
-    d.write_wrapped(
-        f"2.  {NEW_NAME} is the same natural person as "
-        f"{case.current_docket_name}"
-        + (
-            " and as Brendan Ngehsi Newanforbi"
-            if case.current_docket_name != "Brendan Ngehsi Newanforbi"
-            else " and as Ngwa Nforbi"
+    if case.quiet:
+        d.write_wrapped(
+            f"1.  Plaintiff has appeared in this District under more than "
+            f"one name form. {NEW_NAME} and {case.current_docket_name} "
+            "refer to the same natural person — the Plaintiff in this "
+            "action. Plaintiff's existing PACER account (login "
+            "bngwanforbi) records his first name as Brendan and his last "
+            "name as Ngwa Nforbi. On September 1, 2026, the CAND ECF Help "
+            "Desk advised that it cannot link this action to that account "
+            "until the docket reflects the name on the account. That is "
+            "the reason for this request.",
+            first_indent=0,
         )
-        + ". The names are one person. This stipulation does not add, drop, "
-        "or substitute any party. It is not an amendment of any claim, "
-        "defense, or operative pleading. It is not a Fed. R. Civ. P. 25 "
-        "substitution. On September 1, 2026 the CAND ECF Help Desk advised "
-        "that it cannot link this action to that PACER account until the "
-        "docket reflects the name on the account.",
-        first_indent=0,
-    )
-    d.blank_line()
-    d.write_wrapped(
-        "3.  " + case.counsel_stated,
-        first_indent=0,
-    )
-    d.blank_line()
-    d.write_wrapped(
-        "4.  All prior filings, proofs of service, acceptances of service, "
-        "orders, and related-case determinations remain effective as to the "
-        "same person. No party need be re-served by reason of this caption "
-        "change.",
-        first_indent=0,
-    )
-    d.blank_line()
-    preserved = "; ".join(case.preserve)
-    d.write_wrapped(
-        "5.  <<b:No other date or deadline in this action is modified.>> "
-        "This stipulation is not a stay of discovery and does not stay or "
-        "defer any party's discovery obligations. Expressly unchanged, "
-        f"without limitation: {preserved}.",
-        first_indent=0,
-    )
-    d.blank_line()
-    d.write_wrapped(
-        "6.  Nothing in this stipulation is a waiver of any claim, defense, "
-        "objection, or right. No party concedes any issue other than the "
-        "identity of Plaintiff as the same natural person and the docket "
-        "name requested in paragraph 1. No party is authorized to affix "
-        "Plaintiff's signature or to file this paper with Plaintiff's "
-        "electronic signature except on the exact final file Plaintiff "
-        "authorizes in a separate writing.",
-        first_indent=0,
-    )
+        d.blank_line()
+        d.write_wrapped(
+            f"2.  The Clerk shall amend the docket, the short title, the "
+            f"CM/ECF party record, and the caption of this action so that "
+            f"Plaintiff is identified as <<b:{NEW_NAME}>> — first name "
+            f"Brendan, last name Ngwa Nforbi. Subsequent papers shall use "
+            f"that caption.",
+            first_indent=0,
+        )
+        d.blank_line()
+        d.write_wrapped(
+            "3.  This stipulation does not add, drop, or substitute any "
+            "party. It is not an amendment of any claim, defense, or "
+            "operative pleading. It is not a Fed. R. Civ. P. 25 "
+            "substitution.",
+            first_indent=0,
+        )
+        d.blank_line()
+        d.write_wrapped(
+            "4.  All prior filings, proofs of service, acceptances of "
+            "service, and orders remain effective as to the same person. "
+            "No party need be re-served by reason of this caption change.",
+            first_indent=0,
+        )
+        d.blank_line()
+        d.write_wrapped(
+            "5.  This request is limited to the docket name. It does not "
+            "seek any other relief.",
+            first_indent=0,
+        )
+        d.blank_line()
+        d.write_wrapped(
+            "6.  Nothing in this stipulation is a waiver of any claim, "
+            "defense, objection, or right, except the identity of "
+            "Plaintiff as the same natural person and the docket name "
+            "requested in paragraph 2.",
+            first_indent=0,
+        )
+    else:
+        d.write_wrapped(
+            f"1.  The Clerk shall amend the docket, the short title, the "
+            f"CM/ECF party record, and the caption of this action so that "
+            f"Plaintiff is identified as <<b:{NEW_NAME}>> — first name "
+            f"Brendan, last name Ngwa Nforbi — matching Plaintiff's existing "
+            f"PACER account (login bngwanforbi). This is a clean swap of the "
+            f"party name. Subsequent papers shall use that caption.",
+            first_indent=0,
+        )
+        d.blank_line()
+        d.write_wrapped(
+            f"2.  {NEW_NAME} is the same natural person as "
+            f"{case.current_docket_name}"
+            + (
+                " and as Brendan Ngehsi Newanforbi"
+                if case.current_docket_name != "Brendan Ngehsi Newanforbi"
+                else " and as Ngwa Nforbi"
+            )
+            + ". The names are one person. This stipulation does not add, drop, "
+            "or substitute any party. It is not an amendment of any claim, "
+            "defense, or operative pleading. It is not a Fed. R. Civ. P. 25 "
+            "substitution. On September 1, 2026 the CAND ECF Help Desk advised "
+            "that it cannot link this action to that PACER account until the "
+            "docket reflects the name on the account.",
+            first_indent=0,
+        )
+        d.blank_line()
+        d.write_wrapped(
+            "3.  " + case.counsel_stated,
+            first_indent=0,
+        )
+        d.blank_line()
+        d.write_wrapped(
+            "4.  All prior filings, proofs of service, acceptances of service, "
+            "orders, and related-case determinations remain effective as to the "
+            "same person. No party need be re-served by reason of this caption "
+            "change.",
+            first_indent=0,
+        )
+        d.blank_line()
+        if case.preserve:
+            preserved = "; ".join(case.preserve)
+            d.write_wrapped(
+                "5.  <<b:No other date or deadline in this action is modified.>> "
+                "This stipulation is not a stay of discovery and does not stay or "
+                "defer any party's discovery obligations. Expressly unchanged, "
+                f"without limitation: {preserved}.",
+                first_indent=0,
+            )
+        else:
+            d.write_wrapped(
+                "5.  This request is limited to the docket name. It does not "
+                "seek any other relief.",
+                first_indent=0,
+            )
+        d.blank_line()
+        d.write_wrapped(
+            "6.  Nothing in this stipulation is a waiver of any claim, defense, "
+            "objection, or right. No party concedes any issue other than the "
+            "identity of Plaintiff as the same natural person and the docket "
+            "name requested in paragraph 1. No party is authorized to affix "
+            "Plaintiff's signature or to file this paper with Plaintiff's "
+            "electronic signature except on the exact final file Plaintiff "
+            "authorizes in a separate writing.",
+            first_indent=0,
+        )
     d.blank_line()
     d.write_wrapped(
         "7.  After the Clerk updates the party name, Plaintiff may ask the "
@@ -715,8 +794,12 @@ def build_proposed_order(case: NameCase) -> Path:
     )
     d.blank_line()
     d.write_wrapped(
-        "4.  No deadline, hearing, conference, pending motion, or discovery "
-        "obligation is modified.",
+        "4.  This Order grants no other relief."
+        if case.quiet
+        else (
+            "4.  No deadline, hearing, conference, pending motion, or discovery "
+            "obligation is modified."
+        ),
         first_indent=0,
     )
     d.blank_line()
@@ -786,7 +869,31 @@ def build_email(case: NameCase) -> Path:
             "notice of appearance and not acceptance of service on Officer "
             "Meza-Gonzalez. Dkt. 13 remains pending.\n"
         )
-    body = f"""To: {to}
+    if case.quiet:
+        body = f"""To: {to}
+Subject: Re: {case.case_no} — docket name correction
+
+Counsel:
+
+Attached is a revised stipulation and proposed order asking the Clerk
+to identify me as {NEW_NAME}. I am the same person as
+{case.current_docket_name}.
+
+The revision adds a short explanation of the two name forms and the
+PACER / ECF Help Desk reason, and it drops the date-by-date list. The
+paper asks only for the docket name.
+
+I have signed the enclosed counterpart. If it works, please add
+counsel's signature and file that file. If you want a change, send a
+redline and I will look at it.
+{("" if not case.email_extra else chr(10) + case.email_extra)}
+Thank you,
+{NEW_NAME}
+(209) 801-4442
+bnn.cdl@gmail.com
+"""
+    else:
+        body = f"""To: {to}
 Subject: {subject}
 
 Counsel:

@@ -3,11 +3,20 @@
 docket name to Brendan Ngwa Nforbi (first Brendan; last Ngwa Nforbi).
 
 These are Plaintiff's requests — not Civil L.R. 7-12 stipulations.
-Counsel who have signaled they will not oppose once the request is
-made: Haiyang A. Li (24, 32); Blaze Van Dine and Eric Martinez (28).
-Do not recite non-opposition for Amazon / Accurate (29) or Tigno /
-McMahon (33). A 7-11 still lies in those two actions; the declaration
-says a stipulation could not be obtained and does not invent consent.
+Live posture as of September 11, 2026:
+
+- Matter 33: McMahon revision accepted 1:29 p.m. Sep. 10. Do not file
+  this 7-11 while that authorization is live.
+- Matter 24 / 32: Li will not stipulate; will not oppose if the paper
+  makes clear Nforbi and Newanforbi are the same person. Recite that.
+  His 32 statement is not an appearance and not acceptance of service.
+- Matter 28: Martinez will review a quieter stipulation; he does not
+  intend to oppose a motion. File this 7-11 only if he declines the
+  revised counterpart.
+- Matter 29: Amazon is agreeable if both name forms are confirmed.
+  Accurate asked for that confirmation and a government ID. Do not
+  send an ID. Do not recite non-opposition until it is on the email
+  record after the confirmation.
 
   python3 internal/scripts/ndcal-name-change-admin-motions.py
 
@@ -117,17 +126,21 @@ CASES: list[NameCase] = [
         ],
         conferral_decl=(
             "I conferred with Deputy Attorney General Haiyang A. Li, counsel "
-            "of record for Defendant Captain G. Serrato. He stated that "
-            "Defendant will not oppose a request that the Clerk identify "
-            f"Plaintiff as {NEW_NAME}. He did not agree to enter a Civil "
-            "L.R. 7-12 stipulation. That is why this motion is not "
-            "accompanied by a stipulation."
+            "of record for Defendant Captain G. Serrato. On September 10, "
+            "2026 he wrote that he does not believe a stipulation is "
+            "required and that Defendant will not oppose a motion so long "
+            'as the paper makes clear that "Nforbi" and "Newanforbi" are '
+            "the same person. This motion and this declaration do that. "
+            "He did not agree to enter a Civil L.R. 7-12 stipulation. That "
+            "is why this motion is not accompanied by a stipulation."
         ),
         motion_conferral=(
             "Plaintiff conferred with Deputy Attorney General Haiyang A. Li. "
-            "He stated Defendant will not oppose this request. He did not "
-            "agree to a Civil L.R. 7-12 stipulation. The accompanying "
-            "declaration satisfies Civil L.R. 7-11(a)."
+            "He stated Defendant will not oppose this request so long as "
+            'the paper makes clear that "Nforbi" and "Newanforbi" are the '
+            "same person. Section II and the accompanying declaration do "
+            "that. He did not agree to a Civil L.R. 7-12 stipulation. The "
+            "accompanying declaration satisfies Civil L.R. 7-11(a)."
         ),
         preserve=[
             "the continued initial case management conference (Dkt. 25: "
@@ -183,21 +196,22 @@ CASES: list[NameCase] = [
         ],
         conferral_decl=(
             "I conferred with Blaze Van Dine and Eric Martinez of Sims, "
-            "Lawrence & Broghammer, counsel for Defendants. They stated "
-            "Defendants will not oppose a request that the Clerk identify "
-            f"Plaintiff as {NEW_NAME} so long as the paper makes clear that "
-            "the two name forms are one person. This motion and this "
-            "declaration do that. They did not agree to enter a Civil L.R. "
-            "7-12 stipulation. That is why this motion is not accompanied "
-            "by a stipulation."
+            "Lawrence & Broghammer, counsel for Defendants. On September "
+            "11, 2026 Mr. Martinez wrote that he does not intend to oppose "
+            "a request that the Clerk identify Plaintiff as "
+            f"{NEW_NAME}, and that he would review a revised stipulation. "
+            "A revised counterpart was sent. No Civil L.R. 7-12 "
+            "stipulation was executed. That is why this motion is not "
+            "accompanied by a stipulation. This motion and this "
+            "declaration make clear that the two name forms are one person."
         ),
         motion_conferral=(
             "Plaintiff conferred with Blaze Van Dine and Eric Martinez. "
-            "They stated Defendants will not oppose this request if the "
-            "paper makes clear that the two name forms are one person. "
-            "Section II and the accompanying declaration do that. They did "
-            "not agree to a Civil L.R. 7-12 stipulation. The accompanying "
-            "declaration satisfies Civil L.R. 7-11(a)."
+            "Mr. Martinez stated he does not intend to oppose this request. "
+            "A revised stipulation was offered. None was executed. Section "
+            "II and the accompanying declaration make clear that the two "
+            "name forms are one person. The accompanying declaration "
+            "satisfies Civil L.R. 7-11(a)."
         ),
         preserve=[
             "Defendants' September 21, 2026 deadline to answer or otherwise "
@@ -213,10 +227,9 @@ CASES: list[NameCase] = [
             "slb-eservice@sims-law.net",
         ],
         email_extra=(
-            "This is the request we discussed September 10: same person as "
-            "Brendan Ngehsi Newanforbi; PACER login bngwanforbi; September 21, "
-            "October 15, and October 22 stay put. I am not asking you to "
-            "stipulate or to sign.\n"
+            "You said you do not intend to oppose. I am not asking you to "
+            "sign. This motion is the fallback if the revised stipulation "
+            "does not go on file.\n"
         ),
         caption_short="NEWANFORBI v. SMITH",
     ),
@@ -263,17 +276,24 @@ CASES: list[NameCase] = [
         ],
         conferral_decl=(
             "I have communicated with Andrew P. Frederick, counsel for "
-            "Amazon.com Services, LLC, and Jasmine J. Stanzick, counsel for "
-            "Accurate Background LLC. Neither has stated that Defendants "
-            "will not oppose this request. Neither has agreed to a Civil "
-            "L.R. 7-12 stipulation. That is why this motion is not "
-            "accompanied by a stipulation. Civil L.R. 7-11(b) gives them "
-            "four days after filing to oppose or support."
+            "Amazon.com Services, LLC, and John Drury and Jasmine J. "
+            "Stanzick, counsel for Accurate Background LLC. On September "
+            "11, 2026 Mr. Frederick wrote that Amazon is agreeable if I "
+            "confirm that both name forms are names I use. Mr. Drury asked "
+            "for that confirmation and for a government ID. I am confirming "
+            "the names. I am not circulating a government ID. "
+            "No Civil L.R. 7-12 stipulation has been executed. That is "
+            "why this motion is not accompanied by a stipulation. Civil "
+            "L.R. 7-11(b) gives them four days after filing to oppose or "
+            "support."
         ),
         motion_conferral=(
-            "Plaintiff has not obtained a statement of non-opposition from "
-            "counsel for Amazon.com Services, LLC, or Accurate Background "
-            "LLC. A Civil L.R. 7-12 stipulation could not be obtained. The "
+            "Plaintiff conferred with counsel for Amazon.com Services, LLC, "
+            "and Accurate Background LLC. Amazon stated it is agreeable if "
+            "both name forms are confirmed as names Plaintiff uses. "
+            "Accurate asked for that confirmation and for a government ID. "
+            "The names are being confirmed. A government ID is not being circulated. "
+            "A Civil L.R. 7-12 stipulation has not been executed. The "
             "accompanying declaration satisfies Civil L.R. 7-11(a). Counsel "
             "may file a Civil L.R. 7-11(b) response within four days."
         ),
@@ -337,8 +357,13 @@ CASES: list[NameCase] = [
             "counsel of record for Captain Serrato in the related action "
             "and is the attorney named in Plaintiff's pending Civil L.R. "
             "7-11 motion that he accept service for Officer Meza-Gonzalez "
-            "(Dkt. 13). He stated he will not oppose a request that the "
-            f"Clerk identify Plaintiff as {NEW_NAME}. He has not filed a "
+            "(Dkt. 13). On September 10, 2026 he wrote that he does not "
+            "represent Officer Melano or Officer Meza-Gonzalez in this "
+            "action, that neither has been properly served as he sees it, "
+            "that he does not believe a stipulation is required, and that "
+            "he will not oppose a motion so long as the paper makes clear "
+            'that "Nforbi" and "Newanforbi" are the same person. This '
+            "motion and this declaration do that. He has not filed a "
             "notice of appearance in this action. His statement is "
             "non-opposition to this caption request. It is not a notice of "
             "appearance and not acceptance of service. A Civil L.R. 7-12 "
@@ -348,12 +373,14 @@ CASES: list[NameCase] = [
         ),
         motion_conferral=(
             "Plaintiff conferred with Deputy Attorney General Haiyang A. Li. "
-            "He stated he will not oppose this request. He has not appeared "
-            "in this action. His statement is non-opposition to this "
-            "caption request — not an appearance and not acceptance of "
-            "service. Dkt. 13 remains pending. A Civil L.R. 7-12 stipulation "
-            "could not be obtained. The accompanying declaration satisfies "
-            "Civil L.R. 7-11(a)."
+            "He stated he will not oppose this request so long as the paper "
+            'makes clear that "Nforbi" and "Newanforbi" are the same person. '
+            "He has not appeared in this action and states he does not "
+            "represent either officer here. His statement is non-opposition "
+            "to this caption request — not an appearance and not acceptance "
+            "of service. Dkt. 13 remains pending. A Civil L.R. 7-12 "
+            "stipulation could not be obtained. The accompanying declaration "
+            "satisfies Civil L.R. 7-11(a)."
         ),
         preserve=[
             "Plaintiff's pending administrative motion that DAG Li accept "
@@ -413,19 +440,23 @@ CASES: list[NameCase] = [
         ],
         conferral_decl=(
             "I conferred with William J. McMahon, who signed the Dkt. 11 "
-            "Answer, and identified Fiel Dizon Tigno as PACER lead. Counsel "
-            "discussed a stipulation. No Civil L.R. 7-12 stipulation was "
-            "executed. Counsel have not stated that they will not oppose "
-            "this administrative request. That is why this motion is not "
-            "accompanied by a stipulation. Civil L.R. 7-11(b) gives them "
-            "four days after filing to oppose or support."
+            "Answer, and identified Fiel Dizon Tigno as PACER lead. On "
+            "September 10, 2026 Mr. McMahon returned a revised stipulation. "
+            "I accepted that named file the same afternoon and authorized "
+            "counsel to file it. As of the date of this declaration that "
+            "paper has not appeared on the docket. This motion is the "
+            "fallback. It does not withdraw the September 10 authorization "
+            "to file that named revised file. Civil L.R. 7-11(b) gives "
+            "counsel four days after filing to oppose or support."
         ),
         motion_conferral=(
-            "Plaintiff conferred with counsel for Defendants. A stipulation "
-            "was discussed. None was executed. Counsel have not stated that "
-            "they will not oppose this request. The accompanying declaration "
-            "satisfies Civil L.R. 7-11(a). Counsel may file a Civil L.R. "
-            "7-11(b) response within four days."
+            "Plaintiff conferred with counsel for Defendants. Counsel sent "
+            "a revised stipulation on September 10, 2026. Plaintiff "
+            "accepted that named file. It has not yet appeared on the "
+            "docket. This motion is the fallback if that paper is not "
+            "filed. The accompanying declaration satisfies Civil L.R. "
+            "7-11(a). Counsel may file a Civil L.R. 7-11(b) response "
+            "within four days."
         ),
         preserve=[
             "Defendants' September 22, 2026 deadline to consent or decline "
@@ -442,12 +473,10 @@ CASES: list[NameCase] = [
         short_slug="name-33",
         email_to=["fiel.tigno@doj.ca.gov", "William.McMahon@doj.ca.gov"],
         email_extra=(
-            "I am not representing that you have stipulated or that you "
-            "will not oppose. The September 10 authorization to file the "
-            "then-attached stipulation does not apply to this motion. Civil "
-            "L.R. 7-11(b) gives you four days after filing to oppose or "
-            "support. If you will state non-opposition in writing before I "
-            "file, I will recite it.\n"
+            "The September 10 authorization to file your revised "
+            "stipulation remains. This motion is only the fallback if that "
+            "paper does not go on file. Civil L.R. 7-11(b) gives you four "
+            "days after filing to oppose or support.\n"
         ),
         caption_short="NFORBI v. CANDELARIA",
     ),
