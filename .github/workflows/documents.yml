@@ -20,18 +20,7 @@ jobs:
           fetch-depth: 1
 
       - name: Checkout document store
-        uses: actions/checkout@v7
-        with:
-          ref: documents
-          fetch-depth: 1
-          path: .document-store
-
-      - name: Place PDFs
-        run: |
-          rm -rf internal/public/documents
-          mkdir -p internal/public
-          mv .document-store/internal/public/documents internal/public/documents
-          rm -rf .document-store
+        uses: ./.github/actions/checkout-documents
 
       - name: Setup Node
         uses: actions/setup-node@v7
