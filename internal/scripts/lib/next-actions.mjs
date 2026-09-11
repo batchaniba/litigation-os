@@ -200,6 +200,9 @@ export function buildQueue(timeline, summaries, options = {}) {
       source: typeof entry.source === "string" && entry.source.startsWith("/documents/")
         ? entry.source
         : null,
+      verified_at: entry.verified_at ?? null,
+      confidence: entry.confidence ?? null,
+      source_type: entry.source_type ?? null,
       precedentPeers: [...new Set(matters.flatMap((n) => precedentPeers(n, clusters)))]
         .filter((n) => !matters.includes(n))
         .sort((a, b) => a - b),
