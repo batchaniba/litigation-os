@@ -44,7 +44,8 @@
     "extract:matter1": "node internal/scripts/extract-matter-pdfs.mjs",
     "court:resolve": "node internal/scripts/courtlistener/resolve-dockets.mjs",
     "court:sync": "node internal/scripts/courtlistener/sync-dockets.mjs",
-    "court:reconcile": "node internal/scripts/courtlistener/reconcile-timeline.mjs"
+    "court:reconcile": "node internal/scripts/courtlistener/reconcile-timeline.mjs",
+    "postinstall": "npm run sync:summaries && npm run sync:upcoming && npm run sync:short-links"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
