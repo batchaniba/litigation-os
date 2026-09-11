@@ -4,6 +4,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { validateMatter } from "./lib/matter-schema.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 export const MATTERS_DIR = path.resolve(__dirname, "../src/data/matters");
@@ -17,6 +18,10 @@ export function loadMatters() {
   const cases = files.map((name) => {
     const raw = fs.readFileSync(path.join(MATTERS_DIR, name), "utf8");
     const matter = JSON.parse(raw);
+    const issues = validateMatter(matter);
+    if (issues.length) {
+      throw new Error(`matters/${name} failed schema validation:\n  - ${issues.join("\n  - ")}`);
+    }
     matter.__sourceFile = name;
     return matter;
   });
