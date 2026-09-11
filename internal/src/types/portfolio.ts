@@ -171,7 +171,7 @@ export interface DeadlineClockState {
 /** Matter joins: concrete numbers, or portfolio-wide sentinel `"All"`. */
 export type TimelineMatters = number[] | "All";
 
-export type TimelineSourceType = "portfolio" | "courtlistener" | "pacer" | "email";
+export type TimelineSourceType = "portfolio" | "courtlistener" | "pacer" | "email" | "court_order" | "manual";
 
 export interface TimelineExternalRef {
   provider: "courtlistener";
@@ -191,6 +191,8 @@ export interface TimelineEvent {
   source?: string;
   actor?: "you" | "opposing" | "agency" | "court" | "unknown";
   source_type?: TimelineSourceType;
+  /** high: court order/docket; medium: document-backed; low: manual entry. */
+  confidence?: "high" | "medium" | "low";
   verified_at?: string;
   external?: TimelineExternalRef;
 }
