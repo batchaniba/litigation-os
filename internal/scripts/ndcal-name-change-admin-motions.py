@@ -92,6 +92,9 @@ class NameCase:
     email_to: list[str] = field(default_factory=list)
     email_extra: str = ""
     caption_short: str = ""
+    # If set, this docket recorded last name as a single token (Nforbi)
+    # and the ask is to change that field to Ngwa Nforbi to match PACER.
+    last_name_on_docket: str = ""
 
     @property
     def file_tag(self) -> str:
@@ -322,7 +325,7 @@ CASES: list[NameCase] = [
         out_dir=DOCS / "matter-32/ndcal",
         case_no="4:26-cv-08271-ASK",
         judge="Hon. Ajay S. Krishnan",
-        footer="ADMIN. MOTION TO CONFORM PLAINTIFF'S NAME -- NFORBI v. MEZA-GONZALEZ",
+        footer="ADMIN. MOTION TO CONFORM PLAINTIFF'S NAME -- NGWA NFORBI v. MEZA-GONZALEZ",
         current_docket_name="Ngwa Nforbi",
         caption_left=[
             ("NGWA NFORBI,", True, False),
@@ -392,7 +395,8 @@ CASES: list[NameCase] = [
             "acceptance of service on Officer Meza-Gonzalez. Dkt. 13 "
             "remains pending.\n"
         ),
-        caption_short="NFORBI v. MEZA-GONZALEZ",
+        caption_short="NGWA NFORBI v. MEZA-GONZALEZ",
+        last_name_on_docket="Nforbi",
     ),
     NameCase(
         matter=33,
@@ -400,7 +404,7 @@ CASES: list[NameCase] = [
         out_dir=DOCS / "matter-33/ndcal",
         case_no="3:26-cv-08272-LJC",
         judge="Hon. Lisa J. Cisneros",
-        footer="ADMIN. MOTION TO CONFORM PLAINTIFF'S NAME -- NFORBI v. CANDELARIA",
+        footer="ADMIN. MOTION TO CONFORM PLAINTIFF'S NAME -- NGWA NFORBI v. CANDELARIA",
         current_docket_name="Ngwa Nforbi",
         caption_left=[
             ("NGWA NFORBI,", True, False),
@@ -469,7 +473,8 @@ CASES: list[NameCase] = [
             "support. If you will state non-opposition in writing before I "
             "file, I will recite it.\n"
         ),
-        caption_short="NFORBI v. CANDELARIA",
+        caption_short="NGWA NFORBI v. CANDELARIA",
+        last_name_on_docket="Nforbi",
     ),
 ]
 
@@ -541,6 +546,19 @@ def _aka_other(case: NameCase) -> str:
     if case.current_docket_name != "Brendan Ngehsi Newanforbi":
         return " and as Brendan Ngehsi Newanforbi"
     return " and as Ngwa Nforbi"
+
+
+def _last_name_pacer_ask(case: NameCase) -> str:
+    """32/33: last-name field is the single word Nforbi; ask to match PACER."""
+    if not case.last_name_on_docket:
+        return ""
+    return (
+        f" This docket currently records last name as the single word "
+        f"{case.last_name_on_docket}. The ask is that the Clerk change "
+        f"that last-name field from {case.last_name_on_docket} to "
+        f"{BOLD_LAST} so it matches Plaintiff's PACER account (login "
+        f"bngwanforbi). First name is {BOLD_FIRST}."
+    )
 
 
 def _motion_title() -> str:
@@ -632,7 +650,8 @@ def build_motion(case: NameCase) -> Path:
         f"party record, and the caption of this action so that Plaintiff is "
         f"identified as {BOLD_NAME} — {FIRST_LAST_GLOSS} — matching "
         f"Plaintiff's existing PACER account (login "
-        f"bngwanforbi). This is a clean swap of the party name. Subsequent "
+        f"bngwanforbi). This is a clean swap of the party name."
+        f"{_last_name_pacer_ask(case)} Subsequent "
         f"papers shall use that caption.",
         first_indent=0,
     )
@@ -761,7 +780,8 @@ def build_declaration(case: NameCase) -> Path:
     d.blank_line()
     d.write_wrapped(
         f"2.  I am the same natural person as {case.current_docket_name}"
-        f"{_aka_other(case)}. The names are one person. I am not asking the "
+        f"{_aka_other(case)}. The names are one person."
+        f"{_last_name_pacer_ask(case)} I am not asking the "
         "Court to add, drop, or substitute any party.",
         first_indent=0,
     )
@@ -843,7 +863,8 @@ def build_order(case: NameCase) -> Path:
         f"1.  The Clerk shall amend the docket, the short title, the "
         f"CM/ECF party record, and the caption of this action so that "
         f"Plaintiff is identified as {BOLD_NAME} ({FIRST_LAST_GLOSS}), "
-        f"matching PACER login bngwanforbi. "
+        f"matching PACER login bngwanforbi."
+        f"{_last_name_pacer_ask(case)} "
         f"Subsequent papers shall use that caption.",
         first_indent=0,
     )
@@ -961,7 +982,7 @@ Counsel:
 I am filing a Civil L.R. 7-11 administrative motion asking the Court
 to conform the Plaintiff name on this docket to {NEW_NAME}
 (first name Brendan; last name Ngwa Nforbi).
-
+{("This docket lists last name as " + case.last_name_on_docket + ". The ask is to change that last name to " + LAST_NAME + " to match PACER login bngwanforbi.\n" if case.last_name_on_docket else "")}
 This is a request to the Court. It is not a stipulation.
 
 {posture}
