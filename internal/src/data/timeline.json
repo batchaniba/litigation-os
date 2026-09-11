@@ -1,5 +1,64 @@
 [
   {
+    "date": "Sep. 10, 2026",
+    "event": "FILED \u2014 Dkt. 12 MINUTE ORDER (text-only) by Courtroom Deputy to Chief Magistrate Judge Carolyn K. Delaney in Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD): good cause appearing, UPS's Dkt. 11 motion for extension of time to file reply brief is GRANTED; Defendant's reply brief shall be filed by September 14, 2026. SO ORDERED. Service by mail on Plaintiff the same day. Plaintiff's mailed opposition to Dkt. 11 was delivered to Sacramento 95814 at 11:16 a.m. the same day (USPS tracking) and does not appear on the docket as of the 5:51 p.m. PACER pull \u2014 effectively moot as to preventing the extension. Dkt. 10 (opposition to the live MTD) remains on file and is not moot. Oct. 7, 2026 hearing unchanged.",
+    "matters": [
+      26
+    ],
+    "type": "order",
+    "upcoming": false,
+    "filed": true,
+    "actor": "agency",
+    "source": "/documents/matter-26/PACER Docket Report - E.D. Cal. 2-26-cv-02847-DAD-CKD (Sep 10 2026).pdf"
+  },
+  {
+    "date": "Sep. 10, 2026",
+    "event": "USPS \u2014 Plaintiff's Opposition to UPS Consent Motion for Extension (executed Sep. 4; mailed first-class from San Jose Sep. 4, 6:20 p.m.) delivered in/at mailbox Sacramento, CA 95814 at 11:16 a.m. Tracking 4209581473039570112630596247339161. Scheduled delivery had been Tuesday, Sep. 8; Labor Day / transit delay pushed actual delivery to Sep. 10 \u2014 the same day Dkt. 12 granted Dkt. 11. As of the Sep. 10, 5:51 p.m. PACER pull, the opposition is not docketed. Do not treat it as on file.",
+    "matters": [
+      26
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-26/USPS Tracking - Opposition to UPS Extension Motion (Delivered Sep 10 2026).pdf"
+  },
+  {
+    "date": "Sep. 10, 2026",
+    "event": "PACER \u2014 Docket report for Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD), pulled Sep. 10, 2026, 5:51 p.m. (bngwanforbi; 2 billable pages, $0.20). Last numbered entry Dkt. 12. Dkt. 9 live MTD, hearing Oct. 7, 2026, 10:00 a.m., Courtroom 24 (CKD). Dkt. 10 opposition (Aug. 28). Dkt. 11 extension motion (Sep. 4). Dkt. 12 grants Dkt. 11; UPS reply due Sep. 14, 2026. No docket entry for Plaintiff's opposition to Dkt. 11.",
+    "matters": [
+      26
+    ],
+    "type": "event",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-26/PACER Docket Report - E.D. Cal. 2-26-cv-02847-DAD-CKD (Sep 10 2026).pdf"
+  },
+  {
+    "date": "Sep. 14, 2026",
+    "event": "UPS reply deadline (extended) \u2014 Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). Dkt. 12 (Sep. 10) grants Dkt. 11; Defendant's reply brief on the live Dkt. 9 MTD shall be filed by September 14, 2026. Supersedes the L.R. 230(d) Sep. 8 clock. Hearing remains Oct. 7, 2026, 10:00 a.m., Courtroom 24 (CKD), Judge Delaney. This is UPS's clock.",
+    "matters": [
+      26
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "opposing",
+    "source": "/documents/matter-26/PACER Docket Report - E.D. Cal. 2-26-cv-02847-DAD-CKD (Sep 10 2026).pdf"
+  },
+  {
+    "date": "Sep. 10, 2026",
+    "event": "FILED \u2014 Dkt. 14 Consent to Magistrate Judge Jurisdiction by Jasmine J. Stanzick for Defendant Accurate Background, LLC in Newanforbi v. Amazon.com Services LLC et al. (N.D. Cal. 4:26-cv-09249-ASK). Dated September 10, 2026. CONSENT box checked. Amazon's election still outstanding unless separately on file.",
+    "matters": [
+      29
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "opposing",
+    "source": "/documents/matter-29/Dkt 14 - Accurate Background Consent to Magistrate Judge Jurisdiction (Filed Sep 10 2026).pdf"
+  },
+  {
     "date": "Sep. 9, 2026",
     "event": "LODGED \u2014 Sacramento County Sheriff 4-page POS-040 return packets (Levying Officer File No. 2026028894) for the Aug. 21, 2026 personal service of the Amended CCP \u00a7425.115 notices on Randstad US, LLC and The RK Logistics Group, Inc. Server: F. Conley on Skylar Leih / Authorized Agent at CSC. POS dated Aug. 25, 2026 by Sheriff's Authorized Agent Jim Cooper. Fee $50.00 waived. One-page Originals were filed Sept. 9 \u2014 do not e-file these 4-page packets (Original + Attorney/Plaintiff copies + address sheets).",
     "matters": [
@@ -534,7 +593,7 @@
   },
   {
     "date": "Sep. 8, 2026",
-    "event": "UPS reply deadline \u2014 Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). E.D. Cal. L.R. 230(d): reply no later than 10 days after the opposition was filed. Dkt. 10 (opposition to live Dkt. 9) was filed Aug. 28, 2026; day 10 is Monday, Sep. 7 (Labor Day), rolled to Tuesday, Sep. 8 under Fed. R. Civ. P. 6(a)(1)(C). Hearing is Oct. 7, 2026, 10:00 a.m., Courtroom 24 (CKD), Judge Delaney. Dkt. 11 seeks Sep. 14; Plaintiff does not consent; opposition executed Sep. 4, unfiled until clerk-stamped. Clock unchanged until an order. This is UPS's clock.",
+    "event": "SUPERSEDED by Dkt. 12 (Sep. 10) \u2014 UPS reply deadline \u2014 Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). E.D. Cal. L.R. 230(d): reply no later than 10 days after the opposition was filed. Dkt. 10 (opposition to live Dkt. 9) was filed Aug. 28, 2026; day 10 is Monday, Sep. 7 (Labor Day), rolled to Tuesday, Sep. 8 under Fed. R. Civ. P. 6(a)(1)(C). Hearing is Oct. 7, 2026, 10:00 a.m., Courtroom 24 (CKD), Judge Delaney. Dkt. 11 seeks Sep. 14; Plaintiff does not consent; opposition executed Sep. 4, unfiled until clerk-stamped. Clock unchanged until an order. This is UPS's clock.",
     "matters": [
       26
     ],
@@ -615,7 +674,7 @@
   },
   {
     "date": "Oct. 7, 2026",
-    "event": "HEARING \u2014 Defendant UPS's Rule 12(b)(6) Motion to Dismiss (ECF No. 9), Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD), 10:00 a.m., Courtroom 24 (CKD) before Magistrate Judge Carolyn K. Delaney. Delaney civil law-and-motion is Zoom on Wednesdays at 10:00 a.m. Opposition is on file as Dkt. 10 (filed Aug. 28, 2026, to Dkt. 9). Dkt. 11 pending; Plaintiff's opposition to the extension executed Sep. 4. L.R. 230(d) reply stays Sep. 8 until an order.",
+    "event": "HEARING \u2014 Defendant UPS's Rule 12(b)(6) Motion to Dismiss (ECF No. 9), Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD), 10:00 a.m., Courtroom 24 (CKD) before Magistrate Judge Carolyn K. Delaney. Delaney civil law-and-motion is Zoom on Wednesdays at 10:00 a.m. Opposition is on file as Dkt. 10 (filed Aug. 28, 2026, to Dkt. 9). Dkt. 12 (Sep. 10) granted Dkt. 11; UPS reply due Sep. 14. Dkt. 10 opposition to the MTD remains on file.",
     "matters": [
       26
     ],
@@ -840,7 +899,7 @@
   },
   {
     "date": "Sep. 8, 2026",
-    "event": "STANISLAUS POS RETURNED — levy 2026003531, certified Sept. 9, 2026. Deputy P. Heaney personally delivered the Amended Summons (SUM-100) and First Amended Complaint on Sept. 8, 2026 at 9:35 a.m. to Musdaqem Usmani/Manager at 1201 S. Soderquist Road, Turlock, party named Diamond Truck Sales, Inc. POS-010 item 6 completed “as an individual defendant,” not on behalf of the corporation under CCP § 416.10. Right entity and right Diamond address; not SOS agent Saliman Osmani. Same family of trap as the clerk’s July 30 Alpine rejection (Usmani/Manager at Soderquist; Alpine also had the wrong lot). Do not start Diamond’s 30-day clock. Do not default on this proof. File it as diligence. Alpine Kern service on Sheran Osmani remains underway. — Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094)",
+    "event": "STANISLAUS POS RETURNED \u2014 levy 2026003531, certified Sept. 9, 2026. Deputy P. Heaney personally delivered the Amended Summons (SUM-100) and First Amended Complaint on Sept. 8, 2026 at 9:35 a.m. to Musdaqem Usmani/Manager at 1201 S. Soderquist Road, Turlock, party named Diamond Truck Sales, Inc. POS-010 item 6 completed \u201cas an individual defendant,\u201d not on behalf of the corporation under CCP \u00a7 416.10. Right entity and right Diamond address; not SOS agent Saliman Osmani. Same family of trap as the clerk\u2019s July 30 Alpine rejection (Usmani/Manager at Soderquist; Alpine also had the wrong lot). Do not start Diamond\u2019s 30-day clock. Do not default on this proof. File it as diligence. Alpine Kern service on Sheran Osmani remains underway. \u2014 Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094)",
     "matters": [
       12
     ],
