@@ -145,21 +145,19 @@ async function main() {
     return;
   }
   const wanted = [];
+  // List the docket's entries (same path as list mode, which is proven reliable)
+  // and match the requested numbers client-side. The v4 entry_number query
+  // filter proved unreliable in production; do not reintroduce it.
+  const allEntries = await client.listDocketEntries({ docketId });
+  manifest.entry_count = allEntries.length;
+  const byNumber = new Map();
+  for (const e of allEntries) {
+    if (!byNumber.has(Number(e.entry_number))) byNumber.set(Number(e.entry_number), e);
+  }
   for (const n of nums) {
-    // Exact entry_number filter: one cheap call per entry instead of full pagination.
-    const params = new URLSearchParams({ docket: String(docketId), entry_number: String(n) });
-    let url = `${CL_BASE}/docket-entries/?${params}`;
-    let matched = null;
-    while (url && !matched) {
-      const page = await client.request(url, { auth: true });
-      const rows = Array.isArray(page?.results) ? page.results : [];
-      matched = rows.find((e) => Number(e.entry_number) === n) ?? null;
-      // If the filter was ignored server-side, page 1 may still contain it; only
-      // follow pagination when nothing matched yet (bounded by page count).
-      url = matched ? null : page?.next || null;
-    }
-    if (matched) wanted.push(matched);
-    else console.log(`warning: entry_number ${n} not found in docket entries`);
+    const hit = byNumber.get(n) ?? null;
+    if (hit) wanted.push(hit);
+    else console.log(`warning: entry_number ${n} not found among ${allEntries.length} docket entries`);
   }
   console.log(`matched ${wanted.length}/${nums.size} entries`);
 

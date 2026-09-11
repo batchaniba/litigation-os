@@ -44,7 +44,7 @@ jobs:
       PORTFOLIO_SKIP_DISK_DOCS: "1"
       PORTFOLIO_SKIP_MANIFEST: "1"
       VITE_COPY_DOCUMENTS: "0"
-      COURTLISTENER_TOKEN: ${{ secrets.COURTLISTENER_TOKEN }}
+      COURTLISTENER_TOKEN: ${{ secrets.COURTLISTENER_TOKEN2 || secrets.COURTLISTENER_TOKEN }}
     steps:
       - name: Checkout
         uses: actions/checkout@v7
@@ -62,7 +62,7 @@ jobs:
 
       - name: Check CourtListener token
         run: |
-          if [ -z "${{ secrets.COURTLISTENER_TOKEN }}" ]; then
+          if [ -z "${{ secrets.COURTLISTENER_TOKEN2 || secrets.COURTLISTENER_TOKEN }}" ]; then
             echo "::error::COURTLISTENER_TOKEN is not set."
             exit 1
           fi
