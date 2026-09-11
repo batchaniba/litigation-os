@@ -338,6 +338,10 @@
       "name": "Blaze Van Dine",
       "dossier": "counsel/blaze-van-dine.json",
       "firm": "Sims Lawrence & Broghammer"
+    },
+    {
+      "name": "Eric Thomas Martinez",
+      "dossier": "counsel/eric-thomas-martinez.json"
     }
   ]
 }
