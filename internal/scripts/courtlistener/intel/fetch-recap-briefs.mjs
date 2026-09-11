@@ -74,6 +74,23 @@ async function main() {
     `budget ok (daily=${budget.remaining.daily} hourly=${budget.remaining.hourly} minute=${budget.remaining.minute})`,
   );
 
+  const dir = join(OUT, LABEL);
+  await mkdir(dir, { recursive: true });
+
+  const manifest = {
+    label: LABEL,
+    requested: { docket_number: DOCKET_NUMBER, court: COURT_ID, entries: ENTRIES_RAW },
+    docket: null,
+    fetched_at: new Date().toISOString(),
+    error: null,
+    documents: [],
+  };
+  const fail = async (message) => {
+    manifest.error = String(message);
+    await writeFile(join(dir, "manifest.json"), JSON.stringify(manifest, null, 2));
+    throw new Error(message);
+  };
+
   const dockets = await client.searchDockets({ docketNumber: DOCKET_NUMBER, courtId: COURT_ID });
   if (!dockets.length) {
     // Retry without judge-suffix etc: try the bare number core.
@@ -116,22 +133,6 @@ async function main() {
   }
   console.log(`matched ${wanted.length} entries`);
 
-  const dir = join(OUT, LABEL);
-  await mkdir(dir, { recursive: true });
-
-  const manifest = {
-    label: LABEL,
-    requested: { docket_number: DOCKET_NUMBER, court: COURT_ID, entries: ENTRIES_RAW },
-    docket: null,
-    fetched_at: new Date().toISOString(),
-    error: null,
-    documents: [],
-  };
-  const fail = async (message) => {
-    manifest.error = String(message);
-    await writeFile(join(dir, "manifest.json"), JSON.stringify(manifest, null, 2));
-    throw new Error(message);
-  };
 
   for (const entry of wanted) {
     const docs = [];
