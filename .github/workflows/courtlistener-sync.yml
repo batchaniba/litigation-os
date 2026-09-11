@@ -26,6 +26,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       PORTFOLIO_SKIP_DISK_DOCS: "1"
+      PORTFOLIO_SKIP_MANIFEST: "1"
       VITE_COPY_DOCUMENTS: "0"
       COURTLISTENER_TOKEN: ${{ secrets.COURTLISTENER_TOKEN }}
     steps:
