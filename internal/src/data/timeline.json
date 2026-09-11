@@ -82,6 +82,42 @@
   },
   {
     "date": "Sep. 10, 2026",
+    "event": "RECEIVED \u2014 Tod Gurney (Garcia & Gurney, ALC litigation partner; to Plaintiff and Melinda Garcia; cc Karen Tai, Pol Minguet, Shinae Kim), 4:47 p.m., renews the ask for a further extension of The RK Logistics Group, Inc.'s response deadline in Newanforbi v. Randstad US, LLC et al. (26CV199902) through September 30, 2026. Says insurance coverage is still pending; matter shifted to him for litigation handling after Plaintiff's morning decline; claims he is just getting up to speed and cannot meet and confer before next week's due date; previews demurrer theories (wrongful termination / privacy). September 14 remains operative. Decline draft: EMAIL_DRAFT_Gurney_Decline_Further_Extension_Sep30.txt. Do not treat Sept. 30 as live. Do not brief the merits in the reply.",
+    "matters": [
+      27
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "filed": false,
+    "actor": "opposing",
+    "source": "/documents/matter-27/Gmail - Gurney Renews RK Extension Request to Sep 30 (Sep 10 2026).pdf"
+  },
+  {
+    "date": "Sep. 10, 2026",
+    "event": "SENT \u2014 Gmail to Melinda Garcia (cc Karen Tai), 10:42 a.m., declining her ask to extend The RK Logistics Group, Inc.'s response deadline through September 30, 2026 in Newanforbi v. Randstad US, LLC et al. (26CV199902). September 14 remains. Remains available to meet and confer with her or litigation counsel. No bridge date. No stipulation.",
+    "matters": [
+      27
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-27/Gmail - Gurney Renews RK Extension Request to Sep 30 (Sep 10 2026).pdf"
+  },
+  {
+    "date": "Sep. 10, 2026",
+    "event": "RECEIVED \u2014 Melinda Garcia (Garcia & Gurney, ALC; cc Karen Tai), 10:23 a.m., asks Plaintiff to stipulate to a further extension of The RK Logistics Group, Inc.'s deadline to respond to the Complaint in Newanforbi v. Randstad US, LLC et al. (26CV199902), through September 30, 2026. States insurance counsel has not yet been assigned; she is not litigation counsel; threatens court relief if Plaintiff will not stipulate. Same insurance-counsel ground as the Aug. 21 ask already granted through September 14. No stipulation on file. September 14 remains operative. Plaintiff declined the same morning at 10:42 a.m. Do not treat Sept. 30 as live.",
+    "matters": [
+      27
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "filed": false,
+    "actor": "opposing",
+    "source": "/documents/matter-27/Gmail - Garcia Further Extension Request to Sep 30 (Sep 10 2026).pdf"
+  },
+  {
+    "date": "Sep. 10, 2026",
     "event": "REVISED (unfiled) \u2014 Motion to Strike POS in Nforbi v. Candelaria et al. (3:26-cv-08272-LJC) now names Fiel Dizon Tigno, Supervising Deputy Attorney General (PACER lead / attorney to be noticed), ahead of William J. McMahon. The September 5 draft had omitted Tigno. Still unfiled.",
     "matters": [
       33
