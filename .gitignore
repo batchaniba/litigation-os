@@ -21,3 +21,10 @@ internal/handoff/4_Stanislaus_Credit_Card_Authorization*.pdf
 /*.jpeg
 /*.jpg
 /*.png
+
+# Filed PDFs live on the `documents` branch. Restore with:
+#   npm run documents:pull
+internal/public/documents/**
+!internal/public/documents/
+!internal/public/documents/README.md
+!internal/public/documents/.gitkeep

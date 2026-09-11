@@ -1,0 +1,41 @@
+name: Documents
+
+# Hash / magic / orphan checks against origin/documents (the PDF store),
+# not the main checkout. Runs when the inventory or the store-sync scripts
+# change. See internal/docs/DOCUMENT_STORE.md.
+
+# Runners are paused while GitHub billing/spending limit is blocking jobs.
+# Restore push + pull_request when Actions can start again.
+on:
+  workflow_dispatch:
+
+jobs:
+  documents-integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 1
+
+      - name: Checkout document store
+        uses: actions/checkout@v7
+        with:
+          ref: documents
+          fetch-depth: 1
+          path: .document-store
+
+      - name: Place PDFs
+        run: |
+          rm -rf internal/public/documents
+          mkdir -p internal/public
+          mv .document-store/internal/public/documents internal/public/documents
+          rm -rf .document-store
+
+      - name: Setup Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: 22
+
+      - name: Verify document tree against manifest
+        run: node internal/scripts/validate-portfolio.mjs

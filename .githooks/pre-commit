@@ -19,11 +19,17 @@ printf '%s\n' "$staged" | grep -Eq \
 echo "pre-commit: source records staged — running npm run sync:all"
 npm run sync:all
 
+if ! git diff --quiet -- internal/src/data/documents/manifest.json 2>/dev/null; then
+  echo "pre-commit: document inventory changed — pushing origin/documents"
+  npm run documents:push
+fi
+
 git add -- \
   internal/src/data/upcoming.json \
   internal/src/data/matters/summaries.json \
   internal/src/data/matters/document-index.json \
   internal/src/data/documents/registry.json \
+  internal/src/data/documents/manifest.json \
   internal/public/short-links.json \
   vercel.json \
   README.md \
