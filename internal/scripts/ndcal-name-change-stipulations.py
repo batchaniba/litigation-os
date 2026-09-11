@@ -227,7 +227,7 @@ CASES: list[NameCase] = [
             "person as Brendan Ngehsi Newanforbi. If you want a change, "
             "send a redline.\n"
         ),
-        short_slug="name-28",
+        short_slug="hope-name-stip",
         quiet=True,
     ),
     NameCase(
