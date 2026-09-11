@@ -324,5 +324,12 @@
     }
   ],
   "archived": false,
-  "status_label": "Gurney renews RK to Sept. 30 — decline; CIV-100 hold 15/16"
+  "status_label": "Gurney renews RK to Sept. 30 — decline; CIV-100 hold 15/16",
+  "opposing_counsel": [
+    {
+      "name": "Nathan D. Chapman",
+      "dossier": "counsel/nathan-d-chapman.json",
+      "firm": "Kabat Chapman & Ozmer LLP"
+    }
+  ]
 }
