@@ -2,7 +2,7 @@
 // Opinions are confirmed court issuances: they become timeline facts
 // (upcoming stays false), deduplicated by hash like docket entries.
 
-import { entryHash, formatTimelineDate } from "./entries.mjs";
+import { entryHash } from "./entries.mjs";
 
 const OPINION_TYPE_LABELS = {
   "010combined": "Combined Opinion",
