@@ -24,6 +24,7 @@ Dated September 14, 2026. Signed. Do not treat as filed.
 """
 from __future__ import annotations
 
+import shutil
 import sys
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -50,6 +51,8 @@ MAIL_FROM = "San Jose, California"
 NEW_NAME = "Brendan Ngwa Nforbi"
 NEW_NAME_CAPS = "BRENDAN NGWA NFORBI"
 SIG_LINE = "___________________________________"
+# Exhibit A is this Help Desk thread only. Do not bind counsel email
+# (including the Martinez M&C memorialization) into the packet.
 HELP_DESK = (
     DOCS
     / "matter-28"
@@ -57,6 +60,12 @@ HELP_DESK = (
         "Gmail - Re Pro se e-filing one account two name forms - "
         "CAND ECF Help Desk (Received Sep 1 2026).pdf"
     )
+)
+HOPE_LONG_PUBLIC = ROOT / "public" / (
+    "Civil L.R. 7-11 Administrative Motion Packet - Conform Plaintiff's "
+    "Docket Name to Brendan Ngwa Nforbi for PACER ECF E-Filing Access "
+    "(Newanforbi v. Smith and HOPE, N.D. Cal. 3-26-cv-07504-LJC) "
+    f"({EXEC_DATE}).pdf"
 )
 
 ATTY = [
@@ -978,6 +987,8 @@ def main() -> None:
         assemble([motion, decl, cover, HELP_DESK, order, pos], packet)
         email = build_email(case)
         short = publish_short_link(packet, case.short_slug)
+        if case.short_slug == "hope-name-motion":
+            shutil.copy2(packet, HOPE_LONG_PUBLIC)
         print(f"M{case.matter} {case.slug} unopposed={case.unopposed}:")
         print(f"  {motion}")
         print(f"  {decl}")
