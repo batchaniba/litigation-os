@@ -1,6 +1,11 @@
 #!/usr/bin/env python3
 """Matter 26 -- Opposition to UPS's ECF No. 11 extension motion.
 
+HISTORICAL generator — when they caption consent he did not give, the
+locked posture is opposition, not a late signature on their paper. See
+.claude/skills/stipulation-defense/SKILL.md. Portfolio-wide.
+
+
 Newanforbi v. United Parcel Service, Inc., USDC E.D. Cal. No. 2:26-cv-02847-DAD-CKD.
 Hearing on the underlying Rule 12(b)(6) motion: October 7, 2026, 10:00 a.m.,
 Courtroom 24 (CKD), Magistrate Judge Carolyn K. Delaney (civil L&M by Zoom).
