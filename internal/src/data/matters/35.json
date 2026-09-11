@@ -4,8 +4,8 @@
   "case_no": "26CV501995",
   "court": "Santa Clara Sup. Ct. (Downtown / First Street)",
   "claims": "Unruh Civil Rights Act (Civ. Code §§51, 51.5, 52); False Imprisonment; Negligent Training and Supervision",
-  "status": "Clerk-accepted Aug. 26 as 26CV501995. Portal/One Legal short title wrongly reads vs Does 2 through 20 et al. (party-grid order on Order #29111713). Complaint and issued SUM-100 name Ross first. Send One Legal correction email; clerk request is executed, unfiled. Serve both Ross entities via CT Corp by ~Oct. 25.",
-  "status_label": "Fix Odyssey caption (Does first) — then serve Ross ~Oct 25",
+  "status": "One Legal said ask Santa Clara to fix the Does-first short title. FILE three Sep. 10 papers on 26CV501995: Request with Exhibits A–C, Declaration, [Proposed] Order. Do not amend. Serve both Ross entities via CT Corp by ~Oct. 25.",
+  "status_label": "File caption request — then serve Ross ~Oct 25",
   "lifecycle": "active",
   "proceeding": "state_civil",
   "phase": "service",
@@ -65,15 +65,19 @@
       "filed": false
     },
     {
-      "path": "/documents/matter-35/Request to Correct Case Title Packet (Request, Proposed Order, Exs A-C) (Sep 9 2026).pdf",
+      "path": "/documents/matter-35/Request to Correct Case Title Packet (Request with Exhibits, Declaration, Proposed Order) (Sep 10 2026).pdf",
       "filed": false
     },
     {
-      "path": "/documents/matter-35/Request to Correct Case Title - Clerical Party-Order Error (Sep 9 2026).pdf",
+      "path": "/documents/matter-35/Request to Correct Case Title - Clerical Party-Order Error (Sep 10 2026).pdf",
       "filed": false
     },
     {
-      "path": "/documents/matter-35/[Proposed] Order Correcting Case Title - 26CV501995 (Sep 9 2026).pdf",
+      "path": "/documents/matter-35/Declaration ISO Request to Correct Case Title (Sep 10 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-35/[Proposed] Order Correcting Case Title - 26CV501995 (Sep 10 2026).pdf",
       "filed": false
     },
     {
