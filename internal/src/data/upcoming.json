@@ -1,5 +1,16 @@
 [
   {
+    "date": "Sep. 14, 2026",
+    "event": "UPS reply deadline (extended) — Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). Dkt. 12 (Sep. 10) grants Dkt. 11; Defendant's reply brief on the live Dkt. 9 MTD shall be filed by September 14, 2026. Supersedes the L.R. 230(d) Sep. 8 clock. Hearing remains Oct. 7, 2026, 10:00 a.m., Courtroom 24 (CKD), Judge Delaney. This is UPS's clock.",
+    "matters": [
+      26
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "opposing",
+    "source": "/documents/matter-26/PACER Docket Report - E.D. Cal. 2-26-cv-02847-DAD-CKD (Sep 10 2026).pdf"
+  },
+  {
     "date": "Oct. 8, 2026",
     "event": "HEARING — Status (Pretrial Scheduling) Conference in Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR), Thursday, October 8, 2026, 11:00 a.m. Zoom. Set by Dkt. 8 (filed Sep. 8; dated Sep. 4). The courtroom deputy sends dial-in about one week before. Appear. Magistrate referral under E.D. Cal. L.R. 302(c)(21) because Plaintiff is pro se.",
     "matters": [
@@ -67,7 +78,7 @@
   },
   {
     "date": "Oct. 7, 2026",
-    "event": "HEARING — Defendant UPS's Rule 12(b)(6) Motion to Dismiss (ECF No. 9), Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD), 10:00 a.m., Courtroom 24 (CKD) before Magistrate Judge Carolyn K. Delaney. Delaney civil law-and-motion is Zoom on Wednesdays at 10:00 a.m. Opposition is on file as Dkt. 10 (filed Aug. 28, 2026, to Dkt. 9). Dkt. 11 pending; Plaintiff's opposition to the extension executed Sep. 4. L.R. 230(d) reply stays Sep. 8 until an order.",
+    "event": "HEARING — Defendant UPS's Rule 12(b)(6) Motion to Dismiss (ECF No. 9), Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD), 10:00 a.m., Courtroom 24 (CKD) before Magistrate Judge Carolyn K. Delaney. Delaney civil law-and-motion is Zoom on Wednesdays at 10:00 a.m. Opposition is on file as Dkt. 10 (filed Aug. 28, 2026, to Dkt. 9). Dkt. 12 (Sep. 10) granted Dkt. 11; UPS reply due Sep. 14. Dkt. 10 opposition to the MTD remains on file.",
     "matters": [
       26
     ],

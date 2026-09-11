@@ -173,7 +173,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | 22 | Newanforbi v. Pilot Travel Centers LLC | STK-CV-UWT-2026-0007649 | San Joaquin Sup. Ct. | State | Settled Jul. 14, 2026 ($35,000) |
 | 24 | Newanforbi v. Serrato | 4:26-cv-05953-ASK | USDC N.D. Cal. | Federal | Appear Sep. 15 CMC |
 | 25 | Newanforbi v. Federal Express Corporation | 2:26-cv-02881-DAD-SCR | USDC E.D. Cal. (Sacramento Div.) | Federal | Status reports Sep. 24; Zoom Oct. 8 |
-| 26 | Newanforbi v. United Parcel Service, Inc. | 2:26-cv-02847-DAD-CKD | USDC E.D. Cal. (Sacramento Div.) | Federal | Opp. to Dkt. 11 executed — hearing Oct. 7 (CKD) |
+| 26 | Newanforbi v. United Parcel Service, Inc. | 2:26-cv-02847-DAD-CKD | USDC E.D. Cal. (Sacramento Div.) | Federal | Dkt. 12: UPS reply by Sep. 14 — hearing Oct. 7 |
 | 27 | Newanforbi v. Randstad, et al. | 26CV199902 | Alameda Sup. Ct. | State | Gurney renews RK to Sept. 30 — decline; CIV-100 hold 15/16 |
 | 28 | Newanforbi v. Shannon Smith, LCSW, CEO, et al. | 3:26-cv-07504-LJC | USDC N.D. Cal. | Federal | M&C locked Sep. 10 2:00 p.m. PT — answer Sep. 21 |
 | 29 | Newanforbi v. Amazon.com Services, LLC | 4:26-cv-09249-ASK | USDC N.D. Cal. (Oakland; formerly 3:26-cv-09249-ASK) | Federal | Plaintiff consent filed — both answers Sep. 22 |
@@ -234,6 +234,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | Sep. 10, 2026 | 28 | LOCKED — Rule 12(b)(6) meet and confer with Blaze Van Dine (Sims, Lawrence & Broghammer), Thursday, September 10, 2026, 2:00 p.m. Pacific, Newanforbi v. Shannon Smith, LCSW, et al. (N.D. Cal. 3:26-cv-07504-LJC). |
 | Sep. 10, 2026 | 27 | Meet-and-confer deadline (computed) as to Randstad US, LLC — Newanforbi v. Randstad US, LLC et al. (26CV199902) |
 | Sep. 11, 2026 | 12 | Azimov response due (courtesy) — whether Diamond Truck Sales, Inc. and Alpine Truck Sales, Inc. will (A) execute a Notice of Acknowledgment of Receipt or equivalent stipulation accepting the Amended Summons and FAC, or… |
+| Sep. 14, 2026 | 26 | UPS reply deadline (extended) — Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). Dkt. 12 (Sep. 10) grants Dkt. 11; Defendant's reply brief on the live Dkt. 9 MTD shall be filed by September 14, 2026. |
 | Sep. 14, 2026 | 27 | Extended responsive-pleading deadline — The RK Logistics Group, Inc. only, Newanforbi v. Randstad US, LLC et al. (26CV199902) |
 | Sep. 15, 2026 | 27 | FILE IF SILENT — e-file CIV-100 Request for Entry of Default as to The RK Logistics Group, Inc. (clerk default only, item 1c). First fileable the day after RK's Sept. 14 response date. |
 | Sep. 15, 2026 | 27 | Extended responsive-pleading deadline — Randstad US, LLC only, Newanforbi v. Randstad US, LLC et al. (26CV199902); 15 days past the Aug. 31, 2026 computed deadline, agreed on the Aug. 18, 2026 call with Chadwick L. |
