@@ -1,5 +1,40 @@
 {
   "label": "ventura-randstad",
-  "error": "CourtListener HTTP 400 for https://www.courtlistener.com/api/rest/v4/docket-entries/?docket=undefined&entry_number=64",
-  "documents": []
+  "requested": {
+    "docket_number": "5:25-cv-02931",
+    "court": "cacd",
+    "entries": "64,75"
+  },
+  "docket": {
+    "id": 71869110,
+    "court": "cacd"
+  },
+  "fetched_at": "2026-09-11T22:59:11.971Z",
+  "error": null,
+  "documents": [
+    {
+      "entry_number": 64,
+      "entry_id": 467187625,
+      "description": "",
+      "date_filed": "2026-06-11",
+      "document_number": "64",
+      "attachment_number": null,
+      "pacer_doc_id": "031048029154",
+      "is_available": false,
+      "status": "unavailable",
+      "file": null
+    },
+    {
+      "entry_number": 75,
+      "entry_id": 475435384,
+      "description": "",
+      "date_filed": "2026-08-21",
+      "document_number": "75",
+      "attachment_number": null,
+      "pacer_doc_id": "031048675049",
+      "is_available": false,
+      "status": "unavailable",
+      "file": null
+    }
+  ]
 }
