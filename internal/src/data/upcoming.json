@@ -22,48 +22,26 @@
     "source": "/documents/matter-25/Dkt 08 - Order Setting Status Conference (Filed Sep 8 2026).pdf"
   },
   {
-    "date": "Sep. 8, 2026",
-    "event": "FILE-READY (optional vs Serrato) — Executed verified complaint against Home Depot U.S.A., Inc. for the Tracy distribution-center hire (Matter 37), dated September 8, 2026, with CM-010, SUM-100, and FW-001 (5b / $0, UPS/FedEx grant pattern). Not yet filed. Plaintiff accepted the hire, began onboarding, and was ghosted; hire timing remains I&B on or about August 2024. Serve CSC, not 5395 Hopkins Road. Serrato disclosures are already on this day — do not bury them.",
+    "date": "Sep. 22, 2026",
+    "event": "WATCH — Defendants' consent or declination to magistrate-judge jurisdiction due in Nforbi v. Candelaria et al. (3:26-cv-08272-LJC). Set by Dkt. 12 (Sep. 8, text-only clerk's notice). Dkt. 14 is a second notice filed in the wrong case — DISREGARD. Plaintiff already consented (Dkt. 3). A single declination reassigns the case to a district judge. Counsel: Fiel Dizon Tigno, Supervising DAG (PACER lead); William J. McMahon signed Dkt. 11.",
     "matters": [
-      37
+      33
     ],
     "type": "deadline",
     "upcoming": true,
-    "actor": "you",
-    "source": "/documents/matter-37/Verified Complaint - Ngwa Nforbi v Home Depot USA Inc (Sep 8 2026).pdf"
+    "actor": "opposing",
+    "source": "/documents/matter-33/ndcal/PACER Docket Report - N.D. Cal. 3-26-cv-08272-LJC (Sep 9 2026).pdf"
   },
   {
-    "date": "Sep. 8, 2026",
-    "event": "FILE-READY (optional vs Serrato) — Executed verified complaint against Swift Transportation Co. of Arizona LLC for a Class A Driver role (Matter 38), dated September 8, 2026, with CM-010, SUM-100, and FW-001 (5b / $0, UPS/FedEx grant pattern). NSOPW remained Processing. Not yet filed. Serve the current SOS agent, not a terminal. Serrato disclosures are already on this day — do not bury them. File before September 26 if accrual is the pre-adverse.",
+    "date": "Sep. 9, 2026",
+    "event": "OPEN TASK — Send the One Legal email on Order #29111713 asking them to correct the Odyssey / public-portal short title in Ngwa Nforbi v. Ross Stores, Inc., et al. (Santa Clara 26CV501995) from 'Brendan Ngwa Nforbi vs Does 2 through 20 et al' to 'Brendan Ngwa Nforbi vs. Ross Stores, Inc., et al.' Party-grid order error on the original e-filing. Complaint and issued SUM-100 already name Ross first. File the executed Request to Correct Case Title only if One Legal cannot fix Odyssey. Do not amend. Do not reissue the summons unless the clerk requires it.",
     "matters": [
-      38
+      35
     ],
     "type": "deadline",
     "upcoming": true,
     "actor": "you",
-    "source": "/documents/matter-38/Verified Complaint - Ngwa Nforbi v Swift Transportation Co of Arizona LLC (Sep 8 2026).pdf"
-  },
-  {
-    "date": "Sep. 8, 2026",
-    "event": "FILE-READY (optional vs Serrato) — Executed verified complaint against Best Buy Co., Inc. (Matter 39), dated September 8, 2026, with CM-010, SUM-100, and FW-001 (5b / $0, UPS/FedEx grant pattern). First Advantage is not a named defendant. Not yet filed. Plaintiff accepted the Oct. 17, 2023 Tracy warehouse offer at 6653 Hopkins Road, completed the drug screen (I&B clean), and was ghosted. Serve the current SOS agent, not a warehouse. Serrato disclosures are already on this day — do not bury them.",
-    "matters": [
-      39
-    ],
-    "type": "deadline",
-    "upcoming": true,
-    "actor": "you",
-    "source": "/documents/matter-39/Verified Complaint - Ngwa Nforbi v Best Buy Co Inc (Sep 8 2026).pdf"
-  },
-  {
-    "date": "Sep. 8, 2026",
-    "event": "FILE-READY (optional vs Serrato) — Executed verified complaint against AT&T Mobility Services LLC (Matter 36), dated September 8, 2026, with CM-010, SUM-100, and FW-001 (5b / $0, UPS/FedEx grant pattern). First Advantage is not a named defendant. Not yet filed. Plaintiff confirmed Workday acceptance, onboarding, reliance, and nonreceipt. Serve the current SOS agent, not a store. Serrato disclosures are already on this day — do not bury them. FCRA is pleaded and may permit removal.",
-    "matters": [
-      36
-    ],
-    "type": "deadline",
-    "upcoming": true,
-    "actor": "you",
-    "source": "/documents/matter-36/Verified Complaint - Ngwa Nforbi v AT&T Mobility Services LLC (Sep 8 2026).pdf"
+    "source": "/documents/matter-35/EMAIL_DRAFT_One_Legal_Correct_Case_Title_Party_Order.txt"
   },
   {
     "date": "Sep. 26, 2026",
@@ -88,17 +66,6 @@
     "source": "/documents/matter-39/Job Offer - Best Buy General Warehouse Worker 2nd Shift (Oct 17 2023).pdf"
   },
   {
-    "date": "Sep. 8, 2026",
-    "event": "UPS reply deadline — Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). E.D. Cal. L.R. 230(d): reply no later than 10 days after the opposition was filed. Dkt. 10 (opposition to live Dkt. 9) was filed Aug. 28, 2026; day 10 is Monday, Sep. 7 (Labor Day), rolled to Tuesday, Sep. 8 under Fed. R. Civ. P. 6(a)(1)(C). Hearing is Oct. 7, 2026, 10:00 a.m., Courtroom 24 (CKD), Judge Delaney. Dkt. 11 seeks Sep. 14; Plaintiff does not consent; opposition executed Sep. 4, unfiled until clerk-stamped. Clock unchanged until an order. This is UPS's clock.",
-    "matters": [
-      26
-    ],
-    "type": "deadline",
-    "upcoming": true,
-    "actor": "opposing",
-    "source": "/documents/matter-26/Dkt 10 - Plaintiff's Opposition to UPS Rule 12(b)(6) Motion to Dismiss (Filed Aug 28 2026).pdf"
-  },
-  {
     "date": "Oct. 7, 2026",
     "event": "HEARING — Defendant UPS's Rule 12(b)(6) Motion to Dismiss (ECF No. 9), Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD), 10:00 a.m., Courtroom 24 (CKD) before Magistrate Judge Carolyn K. Delaney. Delaney civil law-and-motion is Zoom on Wednesdays at 10:00 a.m. Opposition is on file as Dkt. 10 (filed Aug. 28, 2026, to Dkt. 9). Dkt. 11 pending; Plaintiff's opposition to the extension executed Sep. 4. L.R. 230(d) reply stays Sep. 8 until an order.",
     "matters": [
@@ -121,19 +88,8 @@
     "source": "/documents/matter-28/Gmail - Newanforbi v HOPE re Meet and Confer 3-26-cv-07504 (Sep 3-6 2026).pdf"
   },
   {
-    "date": "Sep. 8, 2026",
-    "event": "FILE — Rule 4(l) return for Santiago Meza-Gonzalez (Daniel Fischer Declaration of Service + Diligence, Run With It order 15645547). Mail or e-file as Summons Returned Executed. Do not wait on Dkt. 13. If ECF is still not live, mail the original to the N.D. Cal. San Jose clerk the same way Dkt. 13 went in. Copy DAG Li. CCP §415.20 mailing follow-up is not on the face of this return.",
-    "matters": [
-      32
-    ],
-    "type": "deadline",
-    "upcoming": true,
-    "actor": "you",
-    "source": "/documents/matter-32/ndcal/Run With It - Declaration of Service and Diligence - Meza-Gonzalez (Order 15645547, Signed Sep 3 2026).pdf"
-  },
-  {
     "date": "Sep. 11, 2026",
-    "event": "Azimov response due (courtesy) — whether Diamond Truck Sales, Inc. and Alpine Truck Sales, Inc. will (A) execute a Notice of Acknowledgment of Receipt or equivalent stipulation accepting the Amended Summons and FAC, or (B) require formal re-service on the SOS agents. Extended from September 4 at Azimov’s September 1 request. Silence means Plaintiff proceeds with path (B). Does not move the December 11, 2026 CMC. — Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094)",
+    "event": "Azimov response due (courtesy) — whether Diamond Truck Sales, Inc. and Alpine Truck Sales, Inc. will (A) execute a Notice of Acknowledgment of Receipt or equivalent stipulation accepting the Amended Summons and FAC, or (B) require formal re-service on the SOS agents. Extended from September 4 at Azimov's September 1 request. Plaintiff's written grant of that extension is still DRAFTED, NOT YET SENT — Azimov may not have Sep. 11 in writing. Silence, if the grant has gone, means path (B). Does not move the December 11, 2026 CMC. — Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094)",
     "matters": [
       12
     ],
@@ -168,17 +124,6 @@
   {
     "date": "Nov. 10, 2026",
     "event": "Deadline to file ADR Certification (ADR L.R. 3) and to meet and confer regarding initial disclosures, early settlement, ADR process selection, and a discovery plan (Fed. R. Civ. P. 26(f)) — Newanforbi v. Amazon.com Services, LLC et al. (4:26-cv-09249-ASK), per Dkt. 9.",
-    "matters": [
-      29
-    ],
-    "type": "deadline",
-    "upcoming": true,
-    "actor": "you",
-    "source": "/documents/matter-29/Dkt 09 - Order Setting Initial CMC and ADR Deadlines (Filed Sep 3 2026).pdf"
-  },
-  {
-    "date": "Sep. 14, 2026",
-    "event": "Deadline to file Consent or Declination to Magistrate Judge Jurisdiction — Plaintiff or the removing party, Newanforbi v. Amazon.com Services, LLC et al. (4:26-cv-09249-ASK), within 14 days of Aug. 31, 2026 case initiation per Dkt. 9. Plaintiff's September 1 CONSENT is executed and mailed from San Jose; unfiled until clerk-stamped. Other parties must file within 14 days of appearing.",
     "matters": [
       29
     ],
@@ -276,17 +221,6 @@
     "source": "/documents/matter-29/Dkt 01 - Notice of Removal (Filed Aug 31 2026).pdf"
   },
   {
-    "date": "Sep. 8, 2026",
-    "event": "Response deadline (self-imposed) — Aug. 19 $55,000 Randstad-only / $85,000 global settlement demand, restated Aug. 28. Williams to accept, counter, or request a call by 5:00 p.m. PT; one week before Randstad's Sept. 15 responsive-pleading date. Not a court deadline. Evid. Code §1152 / FRE 408.",
-    "matters": [
-      27
-    ],
-    "type": "deadline",
-    "upcoming": true,
-    "actor": "opposing",
-    "source": "/documents/matter-27/Settlement Demand - Randstad US LLC (Aug 28 2026).pdf"
-  },
-  {
     "date": "Sep. 15, 2026",
     "event": "FILE IF SILENT — e-file CIV-100 Request for Entry of Default as to The RK Logistics Group, Inc. (clerk default only, item 1c). First fileable the day after RK's Sept. 14 response date. Check Alameda eCourt / One Legal that morning: do not file if an answer, demurrer, motion to strike, CIV-141, or stipulation is on the docket. Document type ≈ Request for Default. Do not attach the 425.115 notices. Same-day CCP §587 first-class mail to Melinda Garcia (Garcia & Gurney, 6600 Koll Center Parkway, Suite 200, Pleasanton, CA 94566) and to RK c/o CSC, 2710 Gateway Oaks Drive, Suite 150N, Sacramento, CA 95833.",
     "matters": [
@@ -321,7 +255,7 @@
   },
   {
     "date": "Oct. 25, 2026",
-    "event": "OPEN TASK — Serve Ross Stores, Inc. and Ross Dress for Less, Inc. in Matter 35 (26CV501995) with the Verified Complaint, issued Summons, ADR Information Sheet, and clerk-stamped CV-5012 Civil Lawsuit Notice (via C T Corporation System, 330 N. Brand Blvd., Suite 700, Glendale, CA 91203 — info. and belief), then file POS-010. Santa Clara CV-5012 / local practice: serve within 60 days of filing (filed Aug. 26, 2026). Do not serve DOEs until identified/amended. After service, demand Aug. 25, 2026 Sunnyvale Ross surveillance and LP stop/training materials.",
+    "event": "OPEN TASK — Serve Ross Stores, Inc. and Ross Dress for Less, Inc. in Matter 35 (26CV501995) with the Verified Complaint, issued Summons, ADR Information Sheet, and clerk-stamped CV-5012 Civil Lawsuit Notice (via C T Corporation System, 330 N. Brand Blvd., Suite 700, Glendale, CA 91203 — info. and belief), then file POS-010. Santa Clara CV-5012 / local practice: serve within 60 days of filing (filed Aug. 26, 2026). Prefer the Odyssey short title corrected from Does 2 through 20 to Ross Stores, Inc. before CT Corp looks the case up, but do not miss this date for the caption. The issued SUM-100 already names Ross first and is valid. Do not serve DOEs until identified/amended. After service, demand Aug. 25, 2026 Sunnyvale Ross surveillance and LP stop/training materials.",
     "matters": [
       35
     ],
@@ -620,13 +554,13 @@
   },
   {
     "date": "Sep. 21, 2026",
-    "event": "Responsive pleading deadline (computed) — Shannon Smith, LCSW, and HOPE Psychotherapy, Inc., Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504-LJC); 21 days from the August 31, 2026 service date Van Dine accepted (FRCP 12(a)(1)(A)(i)). Falls on a Monday; no weekend/holiday extension applies. Confirmed on the Sep. 4 PACER Deadlines/Hearings print. Dkt. 13 POS is on file.",
+    "event": "Responsive pleading deadline (computed) — Shannon Smith, LCSW, and HOPE Psychotherapy, Inc., Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504-LJC); 21 days from the August 31, 2026 service date Van Dine accepted (FRCP 12(a)(1)(A)(i)). Falls on a Monday; no weekend/holiday extension applies.",
     "matters": [
       28
     ],
     "type": "deadline",
     "upcoming": true,
     "actor": "opposing",
-    "source": "/documents/matter-28/PACER Deadlines-Hearings - N.D. Cal. 3-26-cv-07504-LJC (Sep 4 2026).pdf"
+    "source": "/documents/matter-28/Proof of Service - SLB Accepted Service for Smith and HOPE (N.D. Cal. 3-26-cv-07504-LJC) (Sep 2 2026).pdf"
   }
 ]
