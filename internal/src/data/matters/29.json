@@ -514,6 +514,11 @@
       "name": "Jasmine J. Stanzick",
       "dossier": "counsel/jasmine-j-stanzick.json",
       "firm": "Seyfarth Shaw LLP"
+    },
+    {
+      "name": "Andrew P. Frederick",
+      "dossier": "counsel/andrew-p-frederick.json",
+      "firm": "Morgan, Lewis & Bockius LLP"
     }
   ]
 }
