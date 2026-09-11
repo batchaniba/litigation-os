@@ -29,6 +29,7 @@ All current and future matters follow the [Stipulation Defense — Plaintiff-Fir
 - [Legal Theories](#legal-theories)
 - [Tech Stack](#tech-stack)
 - [Citation Verification](#citation-verification)
+- [CourtListener bridge](#courtlistener-bridge)
 - [Local Development](#local-development)
 - [Build](#build)
 - [Deployment](#deployment)
@@ -230,9 +231,6 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 <!-- PORTFOLIO:UPCOMING_DEADLINES:START -->
 | Date | Matter | Event |
 |---|---|---|
-| Sep. 10, 2026 | 35 | FILE — Request to Correct Case Title in Ngwa Nforbi v. Ross Stores, Inc., et al. (Santa Clara 26CV501995). One Legal said ask the Court. |
-| Sep. 10, 2026 | 28 | LOCKED — Rule 12(b)(6) meet and confer with Blaze Van Dine (Sims, Lawrence & Broghammer), Thursday, September 10, 2026, 2:00 p.m. Pacific, Newanforbi v. Shannon Smith, LCSW, et al. (N.D. Cal. 3:26-cv-07504-LJC). |
-| Sep. 10, 2026 | 27 | Meet-and-confer deadline (computed) as to Randstad US, LLC — Newanforbi v. Randstad US, LLC et al. (26CV199902) |
 | Sep. 11, 2026 | 12 | Azimov response due (courtesy) — whether Diamond Truck Sales, Inc. and Alpine Truck Sales, Inc. will (A) execute a Notice of Acknowledgment of Receipt or equivalent stipulation accepting the Amended Summons and FAC, or… |
 | Sep. 14, 2026 | 26 | UPS reply deadline (extended) — Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). Dkt. 12 (Sep. 10) grants Dkt. 11; Defendant's reply brief on the live Dkt. 9 MTD shall be filed by September 14, 2026. |
 | Sep. 14, 2026 | 27 | Extended responsive-pleading deadline — The RK Logistics Group, Inc. only, Newanforbi v. Randstad US, LLC et al. (26CV199902) |
@@ -389,7 +387,7 @@ Plaintiff is representing himself pro se across all 39 matters. The figures belo
   - `proceeding` — track: `state_civil` | `federal_civil` | `mandate` | `habeas`
   - `phase` — current stage on that track (e.g. `demurrer`, `fr_pending`, `under_submission`, `responsive_deadline`; `terminal` when disposed)
 - **Timeline:** `internal/src/data/timeline.json` (full log) + generated `upcoming.json` for the shell deadline clock
-- **Documents:** `internal/public/documents/` (Matter 32: `from-01|02|20|24/` + N.D. Cal. filing under `ndcal/`; Matter 33: `incident|from-07|from-08|opinions/` + N.D. Cal. filing under `ndcal/`; blank Judicial Council templates and the portfolio Proof of Service form under `_form-library/` (see `_form-library/README.md`))
+- **Documents:** `internal/public/documents/` (Matter 32: `from-01|02|20|24/` + N.D. Cal. filing under `ndcal/`; Matter 33: `incident|from-07|from-08|opinions/` + N.D. Cal. filing under `ndcal/`; blank Judicial Council templates and the portfolio Proof of Service form under `_form-library/` (see `_form-library/README.md`)). The tree is ~660 MB and growing; data CI sparse-checkouts around it and checks paths against `internal/src/data/documents/manifest.json`. See [DOCUMENT_STORE.md](internal/docs/DOCUMENT_STORE.md).
 
 ### Prose length budgets
 
@@ -447,10 +445,26 @@ Full reports: [`CITATION_INDEX.md`](internal/docs/CITATION_INDEX.md) · [`CITATI
 
 ---
 
+## CourtListener bridge
+
+Federal matters bind to a stable CourtListener `docket_id` and ingest new PACER/RECAP entries as portfolio facts. Confirmed filings and orders can enter [`timeline.json`](internal/src/data/timeline.json). **Deadlines cannot** — they land in [`courtlistener/review.json`](internal/src/data/courtlistener/review.json) until approved. Automation never writes to `main`; it maintains `automation/courtlistener-sync` and a standing PR.
+
+```bash
+npm run court:resolve              # bind docket_id (Search API; token optional)
+npm run court:sync                 # new entries; needs COURTLISTENER_TOKEN
+```
+
+Store the token as a GitHub Actions repository secret. Never put it in a `VITE_*` variable. Design notes: [`COURTLISTENER.md`](internal/docs/COURTLISTENER.md).
+
+[↑ Contents](#contents)
+
+---
+
 ## Local Development
 
 ```bash
 npm install
+npm run documents:pull   # fill internal/public/documents/ from origin/documents
 npm run dev
 ```
 
@@ -461,6 +475,10 @@ Useful scripts:
 ```bash
 npm run next                  # ranked "what's next to do" queue (see below)
 npm run sync:summaries        # rebuild light matter summaries + document search index
+npm run sync:registry         # rebuild path → label catalog
+npm run sync:manifest         # sha256 inventory of public/documents (hashes only new/resized files)
+npm run documents:pull        # restore PDFs from the documents branch (after clone)
+npm run documents:push        # publish local PDFs to origin/documents
 npm run sync:upcoming         # rebuild upcoming.json from timeline.json for the shell
 npm run generate:readme       # regenerate marked README tables from portfolio data
 npm run lint                  # ESLint over internal/src + internal/scripts
@@ -471,6 +489,8 @@ npm run citations:verify      # rebuild verification ledger
 npm run citations:check       # known-bad gate (also run by validate)
 npm run citations:queue       # print P0 plaintiff-only UNVERIFIED queue
 npm run citations:lookup:matter -- --matter 20   # CourtListener + CAP probe for one matter
+npm run court:resolve             # bind federal matters to CourtListener docket_id
+npm run court:sync                # incremental docket entries (needs COURTLISTENER_TOKEN)
 npm run scaffold:matter -- 34 "Newanforbi v. Example"
 ```
 
@@ -528,15 +548,19 @@ is ruff + `compileall` only — it does not install tesseract or the PDF librari
 ## Build
 
 ```bash
-npm run build   # outputs to dist/
+npm run build   # outputs to dist/ (copies public/documents unless VITE_COPY_DOCUMENTS=0)
 npm run preview # preview the production build locally
 ```
 
+CI sets `VITE_COPY_DOCUMENTS=0` and `PORTFOLIO_SKIP_DISK_DOCS=1` so the default build job does not check out or copy the PDF library. GitHub Pages attaches `origin/documents` before `vite build`. Vercel rewrites `/documents/*` to that Pages origin. Details: [DOCUMENT_STORE.md](internal/docs/DOCUMENT_STORE.md).
+
 ## Deployment
 
-**Vercel** builds and deploys automatically on every push to `main` — no extra config, served from the domain root.
+**Vercel** builds and deploys automatically on every push to `main` — no extra config, served from the domain root. `/documents/:path*` is rewritten to the GitHub Pages copy of the library so the Vercel build does not copy 660 MB of PDFs. After a fresh clone, run `npm run documents:pull` before `npm run dev`.
 
-**GitHub Pages** deploys via `.github/workflows/deploy-gh-pages.yml` on every push to `main` (typecheck + validate + build). Because GitHub Pages serves this repo as a project site under a subpath (`/interactive-litigation-portfolio/`) rather than a domain root, `vite.config.js` conditionally sets `base` from a `GITHUB_PAGES` env var the workflow sets at build time — Vercel builds leave it unset and get `base: '/'` as before. One-time setup: in the repo's **Settings → Pages**, set **Source** to **GitHub Actions**.
+**GitHub Pages** deploys via `.github/workflows/deploy-gh-pages.yml`. The job checks out the `documents` branch into `internal/public/documents/` before `vite build`. Because GitHub Pages serves this repo as a project site under a subpath (`/interactive-litigation-portfolio/`) rather than a domain root, `vite.config.js` conditionally sets `base` from a `GITHUB_PAGES` env var the workflow sets at build time — Vercel builds leave it unset and get `base: '/'` as before. One-time setup: in the repo's **Settings → Pages**, set **Source** to **GitHub Actions**.
+
+GitHub Actions (CI, documents integrity, Pages deploy) are **dispatch-only** until billing/spending is restored. They do not run on push or pull request. Vercel Git integration is separate and still deploys. Restore the `push` / `pull_request` triggers in `.github/workflows/*.yml` when runners can start again.
 
 ---
 

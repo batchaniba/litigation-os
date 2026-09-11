@@ -3,6 +3,11 @@
   "caption": "Newanforbi v. Serrato",
   "case_no": "4:26-cv-05953-ASK",
   "court": "USDC N.D. Cal.",
+  "courtlistener": {
+    "court_id": "cand",
+    "docket_id": 73504901,
+    "docket_url": "/docket/73504901/ngehsi-newanforbi-v-serrato/"
+  },
   "claims": "42 USC 1983: Fourteenth Amendment (Substantive & Procedural Due Process), First Amendment (Retaliation); Declaratory Relief",
   "status": "Dkt. 25 (filed Sep. 9) continued the Zoom CMC off Sep. 15 to 14 days after the final order on Dkt. 18; Sep. 8 disclosure / JCMS / ADR dates vacated and reset from that conference. Plaintiff's Rule 26(a)(1) already went Sep. 8, 8:59 p.m. Serrato's received Sep. 9 (Montufar; dated Sep. 8). Do not file either set. MTD hearing remains Sep. 30 (Dkt. 21).",
   "status_label": "MTD Sep. 30; CMC continued",

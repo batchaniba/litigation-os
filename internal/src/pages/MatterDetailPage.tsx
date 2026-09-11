@@ -98,7 +98,17 @@ export function MatterDetailPage() {
             <div className="matter-hero-identity">
               <div className="detail-label">Matter {matter.number}</div>
               <h1 className="matter-detail-title">{matter.caption}</h1>
-              <p className="detail-copy detail-copy-subtle">{matter.case_no} · {matter.court}</p>
+              <p className="detail-copy detail-copy-subtle">
+                {matter.case_no} · {matter.court}
+                {matter.courtlistener?.docket_url ? (
+                  <>
+                    {" · "}
+                    <a href={`https://www.courtlistener.com${matter.courtlistener.docket_url}`} target="_blank" rel="noreferrer">
+                      CourtListener docket
+                    </a>
+                  </>
+                ) : null}
+              </p>
             </div>
             <div className="matter-actions print-hidden">
               <button onClick={() => window.print()}>Print summary</button>

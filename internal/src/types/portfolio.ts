@@ -110,6 +110,16 @@ export interface MatterSummary {
   note?: string;
   /** Known insurance policy limits for a named defendant, e.g. "$1M / $5M". */
   policy_limits?: string;
+  /** Stable CourtListener docket binding. Cursor/sync timestamps live in courtlistener/sync-state.json. */
+  courtlistener?: CourtListenerBinding;
+}
+
+/** Permanent federal-docket identity. Once docket_id is set, never rediscover by caption. */
+export interface CourtListenerBinding {
+  court_id: string;
+  docket_id?: number;
+  docket_url?: string;
+  alert_id?: number;
 }
 
 /** Full matter record lazy-loaded from NN.json on expand/detail. */
@@ -161,6 +171,16 @@ export interface DeadlineClockState {
 /** Matter joins: concrete numbers, or portfolio-wide sentinel `"All"`. */
 export type TimelineMatters = number[] | "All";
 
+export type TimelineSourceType = "portfolio" | "courtlistener" | "pacer" | "email";
+
+export interface TimelineExternalRef {
+  provider: "courtlistener";
+  docket_id: number;
+  docket_entry_id?: number;
+  recap_document_id?: number;
+  entry_number?: number;
+}
+
 export interface TimelineEvent {
   date: string;
   event: string;
@@ -170,6 +190,9 @@ export interface TimelineEvent {
   /** Path under /documents/ for the PDF or order that created this clock. */
   source?: string;
   actor?: "you" | "opposing" | "agency" | "court" | "unknown";
+  source_type?: TimelineSourceType;
+  verified_at?: string;
+  external?: TimelineExternalRef;
 }
 
 export type CrossMatterDirection = "mutual" | "from_depends_on_to" | "to_cites_from";

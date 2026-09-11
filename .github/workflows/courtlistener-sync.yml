@@ -1,0 +1,98 @@
+name: CourtListener Sync
+
+# Hourly reconciliation plus manual dispatch. Automation never writes to main:
+# it maintains automation/courtlistener-sync and opens/updates one standing PR.
+#
+# Runners are currently paused while GitHub billing/spending limit is blocking
+# jobs. The schedule is in place so sync resumes when Actions can start again.
+# Set repository secret COURTLISTENER_TOKEN before the first real run.
+# Never put that token in a VITE_* variable.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 * * * *"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: courtlistener-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    env:
+      PORTFOLIO_SKIP_DISK_DOCS: "1"
+      VITE_COPY_DOCUMENTS: "0"
+      COURTLISTENER_TOKEN: ${{ secrets.COURTLISTENER_TOKEN }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 1
+          filter: blob:none
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /*
+            !/internal/
+            /internal/*
+            !/internal/public/
+            /internal/public/*
+            !/internal/public/documents/
+
+      - name: Setup Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Bind federal dockets
+        run: npm run court:resolve
+
+      - name: Incremental docket sync
+        run: npm run court:sync
+
+      - name: Refresh generated snapshots
+        run: npm run sync:all
+
+      - name: Tests
+        run: npm test
+
+      - name: Open or update standing PR
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: automation/courtlistener-sync
+          delete-branch: false
+          title: CourtListener Live Docket Sync
+          commit-message: "chore(courtlistener): live docket sync"
+          body: |
+            Standing automation PR. CourtListener is an upstream feed, not a
+            writer of canonical deadlines.
+
+            Inspect before merge:
+
+            - `internal/src/data/matters/*.json` — docket bindings only
+            - `internal/src/data/timeline.json` — confirmed filings/orders (`upcoming` stays false)
+            - `internal/src/data/courtlistener/review.json` — **candidates**. Approve into `timeline.json` by hand.
+            - `internal/src/data/courtlistener/ledger.json` — idempotency ledger
+
+            Do not treat proposed dates in `review.json` as operative. Webhook or
+            API payloads are re-queried; nothing in a POST body is committed.
+          add-paths: |
+            internal/src/data/matters/
+            internal/src/data/timeline.json
+            internal/src/data/upcoming.json
+            internal/src/data/courtlistener/
+            README.md
+            vercel.json
+            internal/public/short-links.json
+            internal/src/data/documents/registry.json
+            internal/src/data/documents/manifest.json
+            internal/src/data/matters/summaries.json
+            internal/src/data/matters/document-index.json

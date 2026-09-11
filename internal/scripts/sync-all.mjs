@@ -3,6 +3,7 @@
 // Refresh every derived snapshot from source records.
 //
 //   registry.json          ← document files + label overrides
+//   manifest.json          ← sha256 inventory of public/documents
 //   summaries.json         ← matter JSON
 //   document-index.json    ← matter JSON + registry
 //   upcoming.json          ← timeline.json (upcoming: true)
@@ -15,6 +16,7 @@ import { spawnSync } from "node:child_process";
 
 const steps = [
   ["sync:registry", ["npm", "run", "sync:registry"]],
+  ["sync:manifest", ["npm", "run", "sync:manifest"]],
   ["sync:summaries", ["npm", "run", "sync:summaries"]],
   ["sync:upcoming", ["npm", "run", "sync:upcoming"]],
   ["sync:short-links", ["npm", "run", "sync:short-links"]],

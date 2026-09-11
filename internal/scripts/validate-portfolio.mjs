@@ -8,10 +8,14 @@
 // Exits non-zero if any error is found (warnings are informational).
 //
 // Usage: node internal/scripts/validate-portfolio.mjs
+//        node internal/scripts/validate-portfolio.mjs --skip-disk-docs
 //        npm run validate
+//
+// --skip-disk-docs (or PORTFOLIO_SKIP_DISK_DOCS=1) checks cited paths
+// against the committed manifest instead of reading the 660 MB tree.
+// See internal/docs/DOCUMENT_STORE.md.
 // ==========================================================
 import fs from "node:fs";
-import crypto from "node:crypto";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { loadMatters, MATTERS_DIR } from "./load-matters.mjs";
@@ -32,11 +36,23 @@ import { loadRegistry, registryByPath } from "./lib/document-registry.mjs";
 import { pdfReadableProblem } from "./lib/pdfMagic.mjs";
 import { matterRefsInclude, parseMatterRefs } from "../src/utils/matterRefs.js";
 import { ACTORS } from "./lib/next-actions.mjs";
+import { isFederalMatter } from "./courtlistener/courts.mjs";
+import { hasResolvableDocketNumber } from "./courtlistener/docket-number.mjs";
+import {
+  DOCUMENTS_ROOT,
+  PUBLIC_ROOT,
+  diskFromUrl,
+  hashFileSha256,
+  loadManifest,
+  manifestByPath,
+  publicRel,
+  skipDiskDocs,
+  urlFromPublicRel,
+  walkFiles,
+} from "./lib/document-store.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(__dirname, "..", "..");
-const PUBLIC_ROOT = path.join(REPO_ROOT, "internal", "public");
-const DOCUMENTS_ROOT = path.join(PUBLIC_ROOT, "documents");
 const DEADLINE_TIME_ZONE = "America/Los_Angeles";
 
 const ROOT_ALLOWED_FILES = new Set([
@@ -104,15 +120,30 @@ function timelineDateKey(value) {
   return month ? `${match[3]}-${month}-${match[2].padStart(2, "0")}` : null;
 }
 
-function walkFiles(dir) {
-  const out = [];
-  if (!fs.existsSync(dir)) return out;
-  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
-    const full = path.join(dir, entry.name);
-    if (entry.isDirectory()) out.push(...walkFiles(full));
-    else if (entry.isFile() && !entry.name.startsWith(".")) out.push(full);
+const skipDisk = skipDiskDocs();
+const documentManifest = loadManifest();
+const documentManifestByPath = manifestByPath(documentManifest);
+if (!documentManifest.files.length) {
+  fail("document manifest is empty — run npm run sync:manifest");
+}
+
+function checkDocumentPath(tag, urlPath) {
+  if (!urlPath.startsWith("/documents/")) {
+    fail(`${tag}: path "${urlPath}" should start with "/documents/"`);
+    return false;
   }
-  return out;
+  if (!documentManifestByPath.has(urlPath)) {
+    fail(`${tag}: path not in document manifest — run npm run sync:manifest: ${urlPath}`);
+    return false;
+  }
+  if (skipDisk) return true;
+  const onDisk = diskFromUrl(urlPath);
+  if (!fs.existsSync(onDisk)) {
+    fail(`${tag}: path does not resolve to a real file: ${urlPath}`);
+    return false;
+  }
+  referencedDocPaths.add(path.resolve(onDisk));
+  return true;
 }
 
 const cases = loadMatters();
@@ -153,6 +184,8 @@ const TERMINAL_LIFECYCLES = new Set(["settled", "dismissed", "abandoned", "close
 
 const seenMatterNumbers = new Set();
 const matterRecords = new Map();
+const seenCourtListenerDockets = new Map();
+const SOURCE_TYPES = new Set(["portfolio", "courtlistener", "pacer", "email"]);
 const referencedDocPaths = new Set();
 let missingFiledCount = 0;
 const documentRegistry = loadRegistry();
@@ -314,6 +347,38 @@ for (const m of cases) {
     }
   }
 
+  if ("courtlistener" in m) {
+    const cl = m.courtlistener;
+    if (!cl || typeof cl !== "object" || Array.isArray(cl)) {
+      fail(`${tag}: courtlistener must be an object when present`);
+    } else {
+      if (typeof cl.court_id !== "string" || !/^[a-z][a-z0-9]*$/.test(cl.court_id)) {
+        fail(`${tag}: courtlistener.court_id must be a CourtListener court id`);
+      }
+      if ("docket_id" in cl) {
+        if (!Number.isInteger(cl.docket_id) || cl.docket_id <= 0) {
+          fail(`${tag}: courtlistener.docket_id must be a positive integer when present`);
+        } else {
+          const prior = seenCourtListenerDockets.get(cl.docket_id);
+          if (prior != null && prior !== m.number) {
+            fail(`${tag}: courtlistener.docket_id ${cl.docket_id} is already bound to Matter ${prior}`);
+          }
+          seenCourtListenerDockets.set(cl.docket_id, m.number);
+        }
+      }
+      if ("docket_url" in cl && (typeof cl.docket_url !== "string" || !cl.docket_url.startsWith("/docket/"))) {
+        fail(`${tag}: courtlistener.docket_url must start with /docket/`);
+      }
+      if ("alert_id" in cl && (!Number.isInteger(cl.alert_id) || cl.alert_id <= 0)) {
+        fail(`${tag}: courtlistener.alert_id must be a positive integer when present`);
+      }
+    }
+  } else if (isFederalMatter(m) && (m.lifecycle === "active" || m.lifecycle === "pre_filing")) {
+    fail(`${tag}: federal matter must carry a courtlistener binding (court_id at minimum)`);
+  } else if (isFederalMatter(m) && hasResolvableDocketNumber(m.case_no)) {
+    warn(`${tag}: federal matter has a PACER number but no courtlistener binding`);
+  }
+
   if (m.documents !== undefined) {
     if (!Array.isArray(m.documents)) {
       fail(`${tag}: field "documents" should be an array`);
@@ -323,9 +388,6 @@ for (const m of cases) {
         if (typeof d.path !== "string" || !d.path.trim()) {
           fail(`${dtag}: missing/empty "path"`);
         } else {
-          if (!d.path.startsWith("/documents/")) {
-            fail(`${dtag}: path "${d.path}" should start with "/documents/"`);
-          }
           const registryEntry = documentRegistryByPath.get(d.path);
           if (!registryEntry) {
             fail(
@@ -343,12 +405,7 @@ for (const m of cases) {
           if (d.label !== undefined && (typeof d.label !== "string" || !d.label.trim())) {
             fail(`${dtag}: "label" override must be a non-empty string when present`);
           }
-          const onDisk = path.join(PUBLIC_ROOT, d.path);
-          if (!fs.existsSync(onDisk)) {
-            fail(`${dtag}: path does not resolve to a real file: ${d.path}`);
-          } else {
-            referencedDocPaths.add(path.resolve(onDisk));
-          }
+          checkDocumentPath(dtag, d.path);
         }
         if ("filed" in d && typeof d.filed !== "boolean") {
           fail(`${dtag}: "filed" should be boolean when present, got ${typeof d.filed}`);
@@ -407,17 +464,36 @@ for (const [i, t] of timeline.entries()) {
     const src = typeof t.source === "string" ? t.source.trim() : "";
     if (!src) {
       fail(`${tag}: upcoming event must cite a "source" PDF`);
-    } else if (!src.startsWith("/documents/")) {
-      fail(`${tag}: source should start with "/documents/", got "${src}"`);
     } else {
-      const onDisk = path.join(PUBLIC_ROOT, src);
-      if (!fs.existsSync(onDisk)) {
-        fail(`${tag}: source does not resolve to a real file: ${src}`);
-      }
+      checkDocumentPath(`${tag}: source`, src);
     }
     const actor = typeof t.actor === "string" ? t.actor.toLowerCase() : "";
     if (!ACTORS.includes(actor)) {
       fail(`${tag}: upcoming event must pin actor as one of: ${ACTORS.join(", ")}`);
+    }
+  }
+  if ("source_type" in t) {
+    if (!SOURCE_TYPES.has(t.source_type)) {
+      fail(`${tag}: source_type must be one of ${[...SOURCE_TYPES].join(", ")}`);
+    }
+  }
+  if ("external" in t) {
+    const ext = t.external;
+    if (!ext || typeof ext !== "object" || Array.isArray(ext)) {
+      fail(`${tag}: external must be an object when present`);
+    } else {
+      if (ext.provider !== "courtlistener") {
+        fail(`${tag}: external.provider must be "courtlistener"`);
+      }
+      if (!Number.isInteger(ext.docket_id) || ext.docket_id <= 0) {
+        fail(`${tag}: external.docket_id must be a positive integer`);
+      }
+      if ("docket_entry_id" in ext && (!Number.isInteger(ext.docket_entry_id) || ext.docket_entry_id <= 0)) {
+        fail(`${tag}: external.docket_entry_id must be a positive integer when present`);
+      }
+      if ("entry_number" in ext && (!Number.isInteger(ext.entry_number) || ext.entry_number <= 0)) {
+        fail(`${tag}: external.entry_number must be a positive integer when present`);
+      }
     }
   }
 }
@@ -594,16 +670,7 @@ for (const f of lawyer_fees ?? []) {
 
 function checkOutcomePath(tag, p) {
   if (typeof p !== "string" || !p.trim()) return;
-  if (!p.startsWith("/documents/")) {
-    fail(`${tag}: path "${p}" should start with "/documents/"`);
-    return;
-  }
-  const onDisk = path.join(PUBLIC_ROOT, p);
-  if (!fs.existsSync(onDisk)) {
-    fail(`${tag}: path does not resolve to a real file: ${p}`);
-  } else {
-    referencedDocPaths.add(path.resolve(onDisk));
-  }
+  checkDocumentPath(tag, p);
 }
 
 for (const [i, op] of (outcomes.judicial_opinions ?? []).entries()) {
@@ -624,51 +691,55 @@ if (missingFiledCount > 0) {
   );
 }
 
-const onDiskDocs = walkFiles(DOCUMENTS_ROOT).map((p) => path.resolve(p));
+const onDiskDocs = skipDisk ? [] : walkFiles(DOCUMENTS_ROOT).map((p) => path.resolve(p));
 const formLibraryPrefix = path.resolve(path.join(DOCUMENTS_ROOT, "_form-library"));
-const orphans = [];
-for (const full of onDiskDocs) {
-  if (full.startsWith(formLibraryPrefix + path.sep) || full === formLibraryPrefix) continue;
-  if (!referencedDocPaths.has(full)) {
-    orphans.push(path.relative(PUBLIC_ROOT, full));
+if (!skipDisk) {
+  const orphans = [];
+  const byDigest = new Map();
+  const seenManifestPaths = new Set();
+  for (const full of onDiskDocs) {
+    const urlPath = urlFromPublicRel(publicRel(full));
+    const size = fs.statSync(full).size;
+    const digest = hashFileSha256(full);
+    seenManifestPaths.add(urlPath);
+    const recorded = documentManifestByPath.get(urlPath);
+    if (!recorded) {
+      fail(`${urlPath}: on disk but not in document manifest — run npm run sync:manifest`);
+    } else if (recorded.size !== size || recorded.sha256 !== digest) {
+      fail(`${urlPath}: size/hash does not match document manifest — run npm run sync:manifest`);
+    }
+    if (full.startsWith(formLibraryPrefix + path.sep) || full === formLibraryPrefix) continue;
+    if (!referencedDocPaths.has(full)) {
+      orphans.push(path.relative(PUBLIC_ROOT, full));
+    }
+    const key = `${path.dirname(full)}::${digest}`;
+    if (!byDigest.has(key)) byDigest.set(key, []);
+    byDigest.get(key).push(path.relative(PUBLIC_ROOT, full));
+    if (full.toLowerCase().endsWith(".pdf")) {
+      const problem = pdfReadableProblem(full, size);
+      if (problem) fail(`${path.relative(PUBLIC_ROOT, full)}: ${problem}`);
+    }
   }
-}
-if (orphans.length) {
-  const preview = orphans.slice(0, 15);
-  warn(`${orphans.length} orphan document(s) on disk not referenced in matters/outcomes:`);
-  for (const rel of preview) warn(`  - ${rel}`);
-  if (orphans.length > preview.length) {
-    warn(`  …and ${orphans.length - preview.length} more`);
+  for (const entry of documentManifest.files) {
+    if (!seenManifestPaths.has(entry.path)) {
+      fail(`${entry.path}: in document manifest but missing on disk`);
+    }
   }
-}
-
-// ---------- byte-identical duplicate documents (fail) ----------
-// Two copies of the same filing inside one matter folder make the record
-// ambiguous: half the links point at one copy, half at the other. Keep a
-// single copy and reference that one.
-const byDigest = new Map();
-for (const full of onDiskDocs) {
-  if (full.startsWith(formLibraryPrefix + path.sep) || full === formLibraryPrefix) continue;
-  const digest = crypto.createHash("sha1").update(fs.readFileSync(full)).digest("hex");
-  const key = `${path.dirname(full)}::${digest}`;
-  if (!byDigest.has(key)) byDigest.set(key, []);
-  byDigest.get(key).push(path.relative(PUBLIC_ROOT, full));
-}
-for (const copies of byDigest.values()) {
-  if (copies.length > 1) {
-    fail(`byte-identical duplicate document(s) in one matter folder: ${copies.join(" == ")}`);
+  if (orphans.length) {
+    const preview = orphans.slice(0, 15);
+    warn(`${orphans.length} orphan document(s) on disk not referenced in matters/outcomes:`);
+    for (const rel of preview) warn(`  - ${rel}`);
+    if (orphans.length > preview.length) {
+      warn(`  …and ${orphans.length - preview.length} more`);
+    }
   }
-}
-
-// ---------- unreadable / empty PDFs (fail) ----------
-// A 0-byte file or a text file named .pdf will still "exist" for path checks
-// and then poison extraction (citation index, search). Fail before that.
-for (const full of onDiskDocs) {
-  if (!full.toLowerCase().endsWith(".pdf")) continue;
-  const size = fs.statSync(full).size;
-  const problem = pdfReadableProblem(full, size);
-  if (problem) {
-    fail(`${path.relative(PUBLIC_ROOT, full)}: ${problem}`);
+  // Two copies of the same filing inside one matter folder make the record
+  // ambiguous: half the links point at one copy, half at the other. Keep a
+  // single copy and reference that one.
+  for (const copies of byDigest.values()) {
+    if (copies.length > 1) {
+      fail(`byte-identical duplicate document(s) in one matter folder: ${copies.join(" == ")}`);
+    }
   }
 }
 
@@ -790,16 +861,7 @@ const crossMatter = JSON.parse(
         }
       }
       if (item.document_path) {
-        if (!item.document_path.startsWith("/documents/")) {
-          errors.push(`crossMatter foundation item ${item.id} path "${item.document_path}" should start with "/documents/".`);
-        } else {
-          const full = path.join(PUBLIC_ROOT, item.document_path);
-          if (!fs.existsSync(full)) {
-            errors.push(`crossMatter foundation item ${item.id} cites a missing file ${item.document_path}.`);
-          } else {
-            referencedDocPaths.add(path.resolve(full));
-          }
-        }
+        checkDocumentPath(`crossMatter foundation item ${item.id}`, item.document_path);
       }
     }
 
@@ -826,7 +888,7 @@ console.log(
     `${(matter_damages ?? []).length} damages rows, ` +
     `${(lawyer_fees ?? []).length} lawyer-fee rows, ` +
     `${(outcomes.judicial_opinions ?? []).length} judicial opinions, ` +
-    `${onDiskDocs.length} files under documents/, ` +
+    `${skipDisk ? "disk document checks skipped" : `${onDiskDocs.length} files under documents/`}, ` +
     `${(crossMatter.clusters ?? []).length} cross-matter cluster(s) with ` +
     `${(crossMatter.clusters ?? []).reduce((sum, c) => sum + (c.links ?? []).length, 0)} links.`,
 );

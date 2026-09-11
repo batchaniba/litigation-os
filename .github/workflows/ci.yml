@@ -2,20 +2,35 @@ name: CI
 
 on:
   push:
-    branches: ["**"]
+    branches: [main]
   pull_request:
+  workflow_dispatch:
 
 jobs:
   build-and-validate:
     runs-on: ubuntu-latest
+    env:
+      # Data jobs do not need the 660 MB PDF tree. Existence is checked
+      # against the committed manifest; Vite skips copying documents/.
+      # See internal/docs/DOCUMENT_STORE.md.
+      PORTFOLIO_SKIP_DISK_DOCS: "1"
+      VITE_COPY_DOCUMENTS: "0"
     steps:
       - name: Checkout
         uses: actions/checkout@v7
         with:
-          # The repo carries ~290 MB of filed PDFs. The build needs them present
-          # (publicDir is copied wholesale and validate resolves document paths),
-          # but not their history.
           fetch-depth: 1
+          filter: blob:none
+          sparse-checkout-cone-mode: false
+          # Everything except the filed-PDF tree. Nested exclude needs the
+          # un-cone walk: drop a directory, then put its siblings back.
+          sparse-checkout: |
+            /*
+            !/internal/
+            /internal/*
+            !/internal/public/
+            /internal/public/*
+            !/internal/public/documents/
 
       - name: Setup Node
         uses: actions/setup-node@v7
@@ -48,7 +63,7 @@ jobs:
         with:
           fetch-depth: 1
           # This job only lints and syntax-checks internal/scripts, so it has no
-          # reason to pull the ~290 MB document library at all.
+          # reason to pull the ~660 MB document library at all.
           sparse-checkout: |
             internal/scripts
             pyproject.toml
