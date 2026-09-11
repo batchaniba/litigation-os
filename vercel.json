@@ -189,6 +189,56 @@
       "source": "/ups-ext-opp/",
       "destination": "/ups-ext-opp.pdf",
       "permanent": false
+    },
+    {
+      "source": "/name-24",
+      "destination": "/name-24.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/name-24/",
+      "destination": "/name-24.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/name-28",
+      "destination": "/name-28.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/name-28/",
+      "destination": "/name-28.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/name-29",
+      "destination": "/name-29.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/name-29/",
+      "destination": "/name-29.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/name-32",
+      "destination": "/name-32.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/name-32/",
+      "destination": "/name-32.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/name-33",
+      "destination": "/name-33.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/name-33/",
+      "destination": "/name-33.pdf",
+      "permanent": false
     }
   ],
   "headers": [
@@ -360,6 +410,51 @@
         {
           "key": "Content-Disposition",
           "value": "attachment; filename=\"Opposition to UPS Consent Motion for Extension of Time to File Reply (Sep 4 2026).pdf\"; filename*=UTF-8''Opposition%20to%20UPS%20Consent%20Motion%20for%20Extension%20of%20Time%20to%20File%20Reply%20%28Sep%204%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/name-24.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Stipulation and Proposed Order - Conform Plaintiff's Name to Brendan Ngwa Nforbi (September 14, 2026).pdf\"; filename*=UTF-8''Stipulation%20and%20Proposed%20Order%20-%20Conform%20Plaintiff's%20Name%20to%20Brendan%20Ngwa%20Nforbi%20%28September%2014%2C%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/name-28.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Stipulation and Proposed Order - Conform Plaintiff's Name to Brendan Ngwa Nforbi (September 14, 2026).pdf\"; filename*=UTF-8''Stipulation%20and%20Proposed%20Order%20-%20Conform%20Plaintiff's%20Name%20to%20Brendan%20Ngwa%20Nforbi%20%28September%2014%2C%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/name-29.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Stipulation and Proposed Order - Conform Plaintiff's Name to Brendan Ngwa Nforbi (Plaintiff Counterpart — not yet agreed) (September 14, 2026).pdf\"; filename*=UTF-8''Stipulation%20and%20Proposed%20Order%20-%20Conform%20Plaintiff's%20Name%20to%20Brendan%20Ngwa%20Nforbi%20%28Plaintiff%20Counterpart%20%E2%80%94%20not%20yet%20agreed%29%20%28September%2014%2C%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/name-32.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Stipulation and Proposed Order - Conform Plaintiff's Name to Brendan Ngwa Nforbi (September 14, 2026).pdf\"; filename*=UTF-8''Stipulation%20and%20Proposed%20Order%20-%20Conform%20Plaintiff's%20Name%20to%20Brendan%20Ngwa%20Nforbi%20%28September%2014%2C%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/name-33.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Stipulation and Proposed Order - Conform Plaintiff's Name to Brendan Ngwa Nforbi (September 14, 2026).pdf\"; filename*=UTF-8''Stipulation%20and%20Proposed%20Order%20-%20Conform%20Plaintiff's%20Name%20to%20Brendan%20Ngwa%20Nforbi%20%28September%2014%2C%202026%29.pdf"
         }
       ]
     }

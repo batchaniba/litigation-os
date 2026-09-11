@@ -30,11 +30,12 @@ from proof_of_service import (  # noqa: E402
     ProofOfServiceFields,
     build_proof_of_service,
 )
+from short_link import publish_short_link  # noqa: E402
 from signature_stamp import SIGNATURE_NATIVE_PX, SIGNATURE_PATH  # noqa: E402
 
 ROOT = SCRIPT_DIR.parent
 DOCS = ROOT / "public/documents"
-EXEC_DATE = "September 11, 2026"
+EXEC_DATE = "September 14, 2026"
 MAIL_FROM = "San Jose, California"
 NEW_NAME = "Brendan Ngwa Nforbi"
 NEW_NAME_CAPS = "BRENDAN NGWA NFORBI"
@@ -77,6 +78,7 @@ class NameCase:
     agreed_on_record: bool
     extra_right: list[tuple[str, bool, bool]] = field(default_factory=list)
     email_extra: str = ""
+    short_slug: str = ""
 
 
 CASES: list[NameCase] = [
@@ -131,6 +133,7 @@ CASES: list[NameCase] = [
             "Defendant's pending motion (Dkt. 18) and Plaintiff's opposition",
         ],
         agreed_on_record=True,
+        short_slug="name-24",
     ),
     NameCase(
         matter=28,
@@ -203,6 +206,7 @@ CASES: list[NameCase] = [
             "September 21, October 15, and October 22 stay put. Paragraph 2 "
             "states the two names are one person.\n"
         ),
+        short_slug="name-28",
     ),
     NameCase(
         matter=29,
@@ -272,6 +276,7 @@ CASES: list[NameCase] = [
             "the December 1, 2026 initial case management conference",
         ],
         agreed_on_record=False,
+        short_slug="name-29",
     ),
     NameCase(
         matter=32,
@@ -337,6 +342,7 @@ CASES: list[NameCase] = [
         ],
         agreed_on_record=True,
         extra_right=[("Related: 4:26-cv-05953-ASK", False, False)],
+        short_slug="name-32",
     ),
     NameCase(
         matter=33,
@@ -413,6 +419,7 @@ CASES: list[NameCase] = [
             "sign this counterpart, or send a redline. I will authorize one "
             "named final file in a separate writing after I read it.\n"
         ),
+        short_slug="name-33",
     ),
 ]
 
@@ -973,6 +980,7 @@ def main() -> None:
         assemble([stip, order, pos], packet)
         docx = build_docx(case, stip)
         email = build_email(case)
+        short = publish_short_link(stip, case.short_slug) if case.short_slug else None
         print(f"M{case.matter} {case.slug}:")
         print(f"  {stip}")
         print(f"  {order}")
@@ -980,6 +988,8 @@ def main() -> None:
         print(f"  {packet}")
         print(f"  {docx}")
         print(f"  {email}")
+        if short:
+            print(f"  /{case.short_slug}.pdf")
 
 
 if __name__ == "__main__":
