@@ -1050,6 +1050,20 @@ def build_email(case: NameCase) -> Path:
             "Civil L.R. 7-11 motion. Civil L.R. 7-11(b) gives you four "
             "days after filing to oppose or support."
         )
+    if case.last_name_on_docket:
+        docket_ask = (
+            "This docket lists last name as " + case.last_name_on_docket
+            + ". The ask is to change that last name to " + LAST_NAME
+            + " to match PACER login bngwanforbi.\n"
+        )
+    elif case.from_name_token:
+        docket_ask = (
+            "This docket lists the name as " + case.current_docket_name
+            + ". The ask is to change " + case.from_name_token
+            + " to " + LAST_NAME + " to match PACER login bngwanforbi.\n"
+        )
+    else:
+        docket_ask = ""
     body = f"""To: {to}
 Subject: {subject}
 
@@ -1058,7 +1072,7 @@ Counsel:
 I am filing a Civil L.R. 7-11 administrative motion asking the Court
 to conform the Plaintiff name on this docket to {NEW_NAME}
 (first name Brendan; last name Ngwa Nforbi).
-{("This docket lists last name as " + case.last_name_on_docket + ". The ask is to change that last name to " + LAST_NAME + " to match PACER login bngwanforbi.\n" if case.last_name_on_docket else "This docket lists the name as " + case.current_docket_name + ". The ask is to change " + case.from_name_token + " to " + LAST_NAME + " to match PACER login bngwanforbi.\n" if case.from_name_token else "")}
+    {docket_ask}
 This is a request to the Court. It is not a stipulation.
 
 {posture}
