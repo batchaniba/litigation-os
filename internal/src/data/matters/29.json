@@ -508,5 +508,12 @@
       "filed": false
     }
   ],
-  "archived": false
+  "archived": false,
+  "opposing_counsel": [
+    {
+      "name": "Jasmine J. Stanzick",
+      "dossier": "counsel/jasmine-j-stanzick.json",
+      "firm": "Seyfarth Shaw LLP"
+    }
+  ]
 }
