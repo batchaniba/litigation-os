@@ -91,4 +91,40 @@ describe("buildManifestFromDisk", () => {
       rmSync(dir, { recursive: true, force: true });
     }
   });
+
+  it("reuses a previous hash when the path still has the same size", () => {
+    const dir = mkdtempSync(path.join(tmpdir(), "doc-manifest-inc-"));
+    try {
+      const documents = path.join(dir, "documents");
+      mkdirSync(path.join(documents, "matter-01"), { recursive: true });
+      const file = path.join(documents, "matter-01", "a.pdf");
+      writeFileSync(file, "A");
+      const previous = {
+        files: [{ path: "/documents/matter-01/a.pdf", size: 1, sha256: "deadbeef" }],
+      };
+      const reused = buildManifestFromDisk(documents, dir, { previous });
+      expect(reused.files[0].sha256).toBe("deadbeef");
+      const hashed = buildManifestFromDisk(documents, dir, { previous, rehash: true });
+      expect(hashed.files[0].sha256).toBe(hashFileSha256(file));
+      expect(hashed.files[0].sha256).not.toBe("deadbeef");
+    } finally {
+      rmSync(dir, { recursive: true, force: true });
+    }
+  });
+
+  it("hashes a new path even when a previous inventory exists", () => {
+    const dir = mkdtempSync(path.join(tmpdir(), "doc-manifest-new-"));
+    try {
+      const documents = path.join(dir, "documents");
+      mkdirSync(path.join(documents, "matter-01"), { recursive: true });
+      const file = path.join(documents, "matter-01", "b.pdf");
+      writeFileSync(file, "%PDF-1.4\n");
+      const incremental = buildManifestFromDisk(documents, dir, {
+        previous: { files: [] },
+      });
+      expect(incremental.files[0].sha256).toBe(hashFileSha256(file));
+    } finally {
+      rmSync(dir, { recursive: true, force: true });
+    }
+  });
 });

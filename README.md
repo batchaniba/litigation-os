@@ -462,7 +462,7 @@ Useful scripts:
 npm run next                  # ranked "what's next to do" queue (see below)
 npm run sync:summaries        # rebuild light matter summaries + document search index
 npm run sync:registry         # rebuild path → label catalog
-npm run sync:manifest         # rebuild sha256 inventory of public/documents
+npm run sync:manifest         # sha256 inventory of public/documents (hashes only new/resized files)
 npm run sync:upcoming         # rebuild upcoming.json from timeline.json for the shell
 npm run generate:readme       # regenerate marked README tables from portfolio data
 npm run lint                  # ESLint over internal/src + internal/scripts

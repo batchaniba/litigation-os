@@ -113,21 +113,35 @@ export function hashFileSha256(filePath) {
 }
 
 /**
+ * Walk the documents tree into a manifest.
+ *
+ * Default write path reuses a previous sha256 when the path still exists at
+ * the same byte size so adding one PDF does not re-read the whole library.
+ * Pass `rehash: true` (used by `--check` / `--full`) to hash every file.
+ *
  * @param {string} [documentsRoot]
  * @param {string} [publicRoot]
+ * @param {{ previous?: { files?: Array<{ path: string, size: number, sha256: string }> }, rehash?: boolean }} [opts]
  */
 export function buildManifestFromDisk(
   documentsRoot = DOCUMENTS_ROOT,
   publicRoot = PUBLIC_ROOT,
+  { previous, rehash = false } = {},
 ) {
+  const prevByPath = manifestByPath(
+    previous ?? (rehash ? { files: [] } : loadManifest()),
+  );
   const files = walkFiles(documentsRoot)
     .map((full) => {
       const rel = publicRel(full, publicRoot);
-      return {
-        path: urlFromPublicRel(rel),
-        size: fs.statSync(full).size,
-        sha256: hashFileSha256(full),
-      };
+      const urlPath = urlFromPublicRel(rel);
+      const size = fs.statSync(full).size;
+      const prev = prevByPath.get(urlPath);
+      const sha256 =
+        !rehash && prev && prev.size === size && prev.sha256
+          ? prev.sha256
+          : hashFileSha256(full);
+      return { path: urlPath, size, sha256 };
     })
     .sort((a, b) => a.path.localeCompare(b.path));
   return {

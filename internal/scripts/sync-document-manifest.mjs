@@ -7,14 +7,16 @@
 // tree. See internal/docs/DOCUMENT_STORE.md.
 //
 // Usage:
-//   npm run sync:manifest            # write manifest.json
-//   npm run sync:manifest -- --check # exit 1 if the inventory drifted
+//   npm run sync:manifest            # write; reuse hashes when size is unchanged
+//   npm run sync:manifest -- --full  # write; hash every file
+//   npm run sync:manifest -- --check # full-hash; exit 1 if the inventory drifted
 // ==========================================================
 import fs from "node:fs";
 import path from "node:path";
 import {
   DOCUMENTS_ROOT,
   MANIFEST_PATH,
+  PUBLIC_ROOT,
   REPO_ROOT,
   buildManifestFromDisk,
   loadManifest,
@@ -23,6 +25,7 @@ import {
 } from "./lib/document-store.mjs";
 
 const checkOnly = process.argv.includes("--check");
+const rehash = checkOnly || process.argv.includes("--full");
 
 if (!fs.existsSync(DOCUMENTS_ROOT)) {
   console.error(
@@ -33,7 +36,7 @@ if (!fs.existsSync(DOCUMENTS_ROOT)) {
   process.exit(1);
 }
 
-const expected = buildManifestFromDisk();
+const expected = buildManifestFromDisk(DOCUMENTS_ROOT, PUBLIC_ROOT, { rehash });
 const payload = manifestPayload(expected);
 
 function summarizeDrift(onDisk) {

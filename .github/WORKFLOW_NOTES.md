@@ -21,9 +21,9 @@ These scripts are **load-bearing** and ensure data consistency:
 
 #### 1b. `npm run sync:all`
 - **When**: After editing matter JSON, `timeline.json`, documents, or short-links. The pre-commit hook runs this automatically when those paths are staged (`core.hooksPath = .githooks`, installed by `npm run prepare`).
-- **What it does**: `sync:registry` → `sync:summaries` → `sync:upcoming` → `sync:short-links` → `generate:readme`
-- **Why**: Stops generated-file merge wars from a commit that updates a matter but leaves `summaries.json` / README stale (the #627 failure mode).
-- **Companion**: `npm run retire:upcoming` flips past-dated `upcoming: true` flags to `false` (America/Los_Angeles). Run it when validate complains that a clock rolled past today, then `sync:upcoming`.
+- **What it does**: `sync:registry` → `sync:manifest` → `sync:summaries` → `sync:upcoming` → `sync:short-links` → `generate:readme`
+- **Why**: Stops generated-file merge wars from a commit that updates a matter but leaves `summaries.json` / README stale (the #627 failure mode). `sync:manifest` reuses sha256 values when file size is unchanged, so a matter-only commit does not re-read the PDF library.
+- **Companion**: `npm run retire:upcoming` flips past-dated `upcoming: true` flags to `false` (America/Los_Angeles). Run it when validate complains that a clock rolled past today, then `sync:upcoming`. The hook also stages `internal/src/data/documents/manifest.json` when it rewrites it.
 
 #### 2. `npm run sync:upcoming`
 - **When**: Runs in `prebuild` (before every production build)

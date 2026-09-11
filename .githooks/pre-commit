@@ -24,6 +24,7 @@ git add -- \
   internal/src/data/matters/summaries.json \
   internal/src/data/matters/document-index.json \
   internal/src/data/documents/registry.json \
+  internal/src/data/documents/manifest.json \
   internal/public/short-links.json \
   vercel.json \
   README.md \

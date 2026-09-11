@@ -21,6 +21,42 @@ The PDFs themselves stay in git **for now** so local `npm run dev`, Vercel,
 and GitHub Pages keep serving `/documents/...` with no extra account. What
 changed is that **most CI no longer checks them out or copies them**.
 
+## Day to day — adding a filing
+
+Same desk as before. The new file still goes in the matter folder and on
+`documents[]`. The derived catalog (registry + manifest) refreshes on commit.
+
+```bash
+# 1. Drop the PDF next to the others
+#    internal/public/documents/matter-NN/Your Filing (Date).pdf
+
+# 2. Point the matter record at it (path + optional filed / label override)
+#    internal/src/data/matters/NN.json → documents[]
+
+# 3. Commit. The pre-commit hook runs npm run sync:all, hashes *only the
+#    new/resized file*, and stages registry.json + manifest.json.
+git add internal/public/documents/matter-NN/"Your Filing (Date).pdf" \
+        internal/src/data/matters/NN.json
+git commit -m "Add Matter NN filing"
+```
+
+Data CI never sees the bytes. It checks that the path is in the committed
+manifest. The documents job runs only because this commit touched
+`internal/public/documents/` (or the inventory scripts), and it hashes the
+tree. Production (Vercel / GH Pages) still copies `publicDir` wholesale, so
+the live `/documents/...` URL works without a new host.
+
+If the hook is skipped (`git commit --no-verify`), data CI fails with
+`path not in document manifest — run npm run sync:manifest`. Run that, commit
+the JSON, push again.
+
+In-place rewrite of an existing PDF that happens to keep the same byte size
+is the one case the incremental write will not notice. `npm run sync:manifest -- --full` (or the documents job) rehashes everything. Court filings almost
+never land that way — a new file or a larger file is the normal path.
+
+Do **not** put new PDFs anywhere else (repo root, `internal/assets/`, a
+sidecar folder). `validate-portfolio` still wants `/documents/...`.
+
 ## Two CI paths
 
 **Data job** (`.github/workflows/ci.yml` → `build-and-validate`):
