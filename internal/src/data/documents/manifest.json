@@ -1,6 +1,6 @@
 {
  "version": 1,
- "fileCount": 1095,
+ "fileCount": 1196,
  "totalBytes": 725393349,
  "files": [
   {
@@ -5477,6 +5477,511 @@
    "path": "/documents/matter-33/ndcal/Proposed Order - Conform Plaintiff's Name - Candelaria (N.D. Cal. 3-26-cv-08272-LJC) (September 14, 2026).pdf",
    "size": 6907,
    "sha256": "408469250f60342cfb8108cf28ffa7412a42f82101452ea319ae05d988229b4f"
+  },
+  {
+   "path": "/documents/_handoff/Stanislaus-Civil-Credit-Card-Authorization-Aug3-2026-PASSWORD.pdf",
+   "size": 238044,
+   "sha256": "c8354ce04e8379b2548554c3d27120f33b12c0f3e8ae5c04450c7a3d3abab122"
+  },
+  {
+   "path": "/documents/_handoff/Stanislaus-Civil-Credit-Card-Authorization-Meza-Gonzalez-Aug12-2026-PASSWORD.pdf",
+   "size": 1840001,
+   "sha256": "a4ad0daba76fd58aafd72e6283abac3c775ae725e2eff94f5f149fd7dd61aab6"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/1-25-cv-02006-JPB-Sullivan-v-Maloof/Dkt 01 Complaint and Filing Receipt (Apr 11 2025).pdf",
+   "size": 6109191,
+   "sha256": "53cb561ef05182b3e4fb2df9dfa69d651815c831b866275369133daae8029fed"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/1-25-cv-02006-JPB-Sullivan-v-Maloof/Dkt 05 Motion to Strike FRE 408 - Guilmette (Jun 17 2025).pdf",
+   "size": 382279,
+   "sha256": "1cb50f352f7fda6d165d0f09ed9f60f10a6b50f6cf347a84c075e162cd71cdf7"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/1-25-cv-02006-JPB-Sullivan-v-Maloof/Dkt 08 Plaintiff Objection Lack of Service (Jul 1 2025).pdf",
+   "size": 226769,
+   "sha256": "1de8187bc045d92672fdbac7ea8b016b9fbe1dce34a53bd4878a4adc8b9d24a5"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/1-25-cv-02006-JPB-Sullivan-v-Maloof/Dkt 14 Defendant Response Conceding Service (Jul 11 2025).pdf",
+   "size": 158495,
+   "sha256": "44971b03f6edce128968bdaa253b4363fcc3ff161b40fce24638f4bee4382142"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/1-25-cv-02006-JPB-Sullivan-v-Maloof/Dkt 16 Proposed Consent Order Granting Substitution (Jul 15 2025).pdf",
+   "size": 237422,
+   "sha256": "8fab6bef875151ba716d67537fa1ea4e74557f68444ae5c86edd3d8c2eeeca46"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/1-25-cv-02006-JPB-Sullivan-v-Maloof/Dkt 19 Plaintiff Opposition to Motion to Strike (Jul 25 2025).pdf",
+   "size": 1391346,
+   "sha256": "b050ae2988d749a4fdf812f8c5e63e01d0ac1a7db2796689d09bdae08760c0f8"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/1-25-cv-02006-JPB-Sullivan-v-Maloof/Dkt 25 Certificate of Interested Persons (Aug 11 2025).pdf",
+   "size": 173189,
+   "sha256": "c3cb2690b13e011e280194255c27705fbcf9d2a927f120a258b5595de5374458"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/1-25-cv-02006-JPB-Sullivan-v-Maloof/Dkt 29 Motion and Proposed FAC 29-1 part 1 of 3 (pp 1-36).pdf",
+   "size": 11536139,
+   "sha256": "fc9c880f7bfb01f22b34a10ee78c9f857cc5609bcac058bc1eb48ae27a0631ac"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/1-25-cv-02006-JPB-Sullivan-v-Maloof/Dkt 29-1 Proposed FAC exhibits part 3 of 3 (pp 73-108).pdf",
+   "size": 13517697,
+   "sha256": "97ebe1003036a1b340ecefe11dc57b12c2c91ed60f3f2a4c0660137cb0b2b5e3"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/1-25-cv-02006-JPB-Sullivan-v-Maloof/Dkt 29-1 Proposed FAC part 2 of 3 (pp 37-72).pdf",
+   "size": 11165565,
+   "sha256": "bf6f122bf923ed33772de6ef4e13a139d8e1f47750b2650614032f4dd500af9d"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/1-25-cv-02006-JPB-Sullivan-v-Maloof/Dkt 29-2 Exhibit 17 Delta Email (Aug 28 2025).pdf",
+   "size": 11637896,
+   "sha256": "548a0bc33915c3566f28f9d76e6b4572a88488d027511b993c6c67243f95de96"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/1-25-cv-02006-JPB-Sullivan-v-Maloof/Dkt 29-3 Exhibit 34 Sullivan Email (Aug 28 2025).pdf",
+   "size": 5680702,
+   "sha256": "660cd0048ed74d7e9d1c819e15fe14fafd8a6d848598d8fc1f8abc1fc431c590"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/1-25-cv-02006-JPB-Sullivan-v-Maloof/Dkt 30 Opposition to Leave to Amend with Ex A (Sep 11 2025).pdf",
+   "size": 233210,
+   "sha256": "cb622113f9599e7125ee76845dae3c71082b720c95cc6354bd34589eefe1df5e"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/1-25-cv-02006-JPB-Sullivan-v-Maloof/Dkt 32 Mediation Minute Sheet (Oct 30 2025).pdf",
+   "size": 85800,
+   "sha256": "01b97e6ffbc56dc1e9ea78edf28b3284ab1eba3e130ca67a3872c4166e2116c7"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/1-25-cv-02006-JPB-Sullivan-v-Maloof/Dkt 33 Certificate of Consent to Withdraw (Nov 12 2025).pdf",
+   "size": 92269,
+   "sha256": "029d0c769862e20c9e8a23485834c00714d081c633d51317bc38fb2c2b7e85ea"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/1-25-cv-02006-JPB-Sullivan-v-Maloof/Dkt 34 Joint Status Report Regarding Mediation (Nov 12 2025).pdf",
+   "size": 228321,
+   "sha256": "913a174ad9e5c7b550a53a3e3786b0dcbb927bd78e844fbf8e1881603555b710"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/1-25-cv-02006-JPB-Sullivan-v-Maloof/PACER Full Docket (Sep 8 2026 PT).pdf",
+   "size": 270253,
+   "sha256": "8b091dcf0bd2670c6170f75c0d543d3a3af540bf6e3345d2df1d4ff3591f562e"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/1-26-cv-03474-VMC-We-Got-U-v-Leonard/Dkt 01 Complaint (Jun 22 2026).pdf",
+   "size": 2910925,
+   "sha256": "e0320b28142d6a1ef1919051bbfb3a682fbb3334af79c535e8ff5155459eff59"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/1-26-cv-03474-VMC-We-Got-U-v-Leonard/Dkt 02 Summons (Jun 23 2026).pdf",
+   "size": 116798,
+   "sha256": "8c4309d3e11aca60aa890939bbb90ec123c25ae5fe3443e614c948baad7ddcbb"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/1-26-cv-03474-VMC-We-Got-U-v-Leonard/Dkt 05 Certificate of Interested Persons (Jun 26 2026).pdf",
+   "size": 367117,
+   "sha256": "a766aaa9b0f76b980cf5b76045ee7dd67ad025e3342faf6814c9a8bd46b98d4d"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/1-26-cv-03474-VMC-We-Got-U-v-Leonard/Dkt 16 Answer and Counterclaim (Jul 17 2026).pdf",
+   "size": 272171,
+   "sha256": "f62f1fd8a19b45444e94284ac03344de40f9ac0b261e50279d9a1c040d71664a"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/1-26-cv-03474-VMC-We-Got-U-v-Leonard/Dkt 19 Notice of Leave of Absence - Edwards (Jul 29 2026).pdf",
+   "size": 165971,
+   "sha256": "2128989b5ea55c8a5b54b0f092125b77903da77a58524b431af2e99aaf3b69b4"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/1-26-cv-03474-VMC-We-Got-U-v-Leonard/Dkt 21 WGU Answer to Counterclaim (Aug 7 2026).pdf",
+   "size": 424765,
+   "sha256": "3df4b74f324133c352755b31340665f30b12fd8aae4d4a779091c1d56f8b96cb"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/1-26-cv-03474-VMC-We-Got-U-v-Leonard/Dkt 22 Joint Preliminary Report and Discovery Plan (Aug 18 2026).pdf",
+   "size": 511258,
+   "sha256": "0b54d299fe19e49851d07c3e8d4f063ce4e0f61f32b8f4c18f6ee58b5f567fe3"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/1-26-cv-03474-VMC-We-Got-U-v-Leonard/Dkt 23 Amended Answer and Counterclaim (Aug 28 2026).pdf",
+   "size": 267849,
+   "sha256": "224da9ab1776de08d0041b30f1d9f74d8a92622c4f088827e0a7458870c65f1d"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/1-26-cv-03474-VMC-We-Got-U-v-Leonard/Dkt 24 Joint Motion for Consent Protective Order (Sep 8 2026).pdf",
+   "size": 825109,
+   "sha256": "2333bb00936ce9f8cfa73ccace8d909dd2068ea3d4072ae952b46c5c67141834"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/3-25-cv-00025-SFR-Charter-v-Myla/PACER Attorney List (Sep 8 2026 PT).pdf",
+   "size": 161669,
+   "sha256": "8fc43c24c7e91713e04696de5b0a3958abbac73b68f37670f6547812b080eda3"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/3-25-cv-00025-SFR-Charter-v-Myla/PACER Full Docket (Sep 8 2026 PT).pdf",
+   "size": 248265,
+   "sha256": "250bb015e2eff90e1339514599b7841a021a9b4bc1ace927e11e563291297eb9"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/3-25-cv-00025-SFR-Charter-v-Myla/PACER History-Documents (Sep 8 2026 PT).pdf",
+   "size": 160781,
+   "sha256": "221a2a517f8df05044500064b5dfdab1207e0e72a33af2c99df19ba2783b76d7"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/5-25-cv-02931-SRM-Ventura-v-Randstad/Dkt 09 Notice of Appearance - Nathan D Chapman (Nov 18 2025).pdf",
+   "size": 67544,
+   "sha256": "66281b9c48509407b337c1f7aba314a70e50c5d56310738ec0f734268b8b777e"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/5-25-cv-02931-SRM-Ventura-v-Randstad/Dkt 12 Notice of Supplement to Notice of Removal (Nov 25 2025).pdf",
+   "size": 43292,
+   "sha256": "a82fb294a547ab941006327b5bda304686f1bbcae29bafc5a05d813a348ed560"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/5-25-cv-02931-SRM-Ventura-v-Randstad/Dkt 12-1 Exhibit A - Randstad Demurrer filed San Bernardino (Nov 25 2025).pdf",
+   "size": 700854,
+   "sha256": "cdb48242b0f373b54fdccfb200c68309008231bd84b255832689fd3f415b4df4"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/5-25-cv-02931-SRM-Ventura-v-Randstad/Dkt 59 Notice of Appearance - Jonathan D Marvisi (May 13 2026).pdf",
+   "size": 167955,
+   "sha256": "0f490a40f612e4c8ed63f0140ed03803a8d4028a0f6f9705a953c5e3a4425f80"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/5-25-cv-02931-SRM-Ventura-v-Randstad/Dkt 64 Randstad Motion to Dismiss First Amended Complaint (Jun 11 2026).pdf",
+   "size": 466347,
+   "sha256": "498d1d7409c427d0def032e340029e5428187a27acc0990ff8df3ae2baaa04d3"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/5-25-cv-02931-SRM-Ventura-v-Randstad/Dkt 64-1 Proposed Order re Motion to Dismiss (Jun 11 2026).pdf",
+   "size": 21247,
+   "sha256": "69c032f0d6d7a9a790756f729038926041b208cc503699b0983ece0d75d2cdee"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/5-25-cv-02931-SRM-Ventura-v-Randstad/Dkt 67 Plaintiff Opposition to Motion to Dismiss (Jul 20 2026).pdf",
+   "size": 912974,
+   "sha256": "596b3e940340d85d7e7a6b9dffc59410e392f33524c75c5a452461b62301ab9d"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/5-25-cv-02931-SRM-Ventura-v-Randstad/Dkt 67-1 Exhibit - Defendant Declination of Meet-and-Confer and Stipulation (Jul 20 2026).pdf",
+   "size": 345230,
+   "sha256": "cb0c9513ef71f1b34694d34f206770b55b9d5fc6b4c319e46b967e152220e62b"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/5-25-cv-02931-SRM-Ventura-v-Randstad/Dkt 67-2 Exhibit - Preservation Correspondence with Carriers (Jul 20 2026).pdf",
+   "size": 1580244,
+   "sha256": "b7e2b595702a263559b216e55cd12e480984efcf9f27e6cff7851827ead413e7"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/5-25-cv-02931-SRM-Ventura-v-Randstad/Dkt 67-3 Exhibit - Meet and Confer Chronology through March 2026 (Jul 20 2026).pdf",
+   "size": 148271,
+   "sha256": "fea777dcca7a5c5241d0f95b87bab1e3823706ccac868eed739e32f0c7ff7420"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/5-25-cv-02931-SRM-Ventura-v-Randstad/Dkt 68 Randstad Reply ISO Motion to Dismiss (Jul 29 2026).pdf",
+   "size": 67459,
+   "sha256": "82333c13c7a95b3053431be4ad9839e0100cdd87dee5d5ecc01d3b45d020505c"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/5-25-cv-02931-SRM-Ventura-v-Randstad/Dkt 69 Order Denying Randstad Motion to Dismiss for Local Rule Non-Compliance (Aug 7 2026).pdf",
+   "size": 108135,
+   "sha256": "4c4da25c1403de956183edc9524018e13ecfd719a2092693be5151be6601f571"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/5-25-cv-02931-SRM-Ventura-v-Randstad/Dkt 72 Amended Application of Chadwick L Williams to Appear Pro Hac Vice (Aug 17 2026).pdf",
+   "size": 701926,
+   "sha256": "edb1294b44ddae7ce5c6b87c0e1daf73426c27d1b573498bba5228084aa039a1"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/5-25-cv-02931-SRM-Ventura-v-Randstad/Dkt 72-1 Proposed Order on Pro Hac Vice Application (Aug 17 2026).pdf",
+   "size": 75826,
+   "sha256": "5697e7cc9f54404e97c7d02547fcfe6b45909d77989c9597fa9054dc040864ce"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/5-25-cv-02931-SRM-Ventura-v-Randstad/Dkt 74 Randstad Answer to First Amended Complaint (Aug 21 2026).pdf",
+   "size": 298282,
+   "sha256": "402dfc5a9ab25a27fd6fb672a5c76d26e4048c73b4cd406f78cc888800af22f2"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/5-25-cv-02931-SRM-Ventura-v-Randstad/Dkt 75 Randstad Rule 12(c) Motion for Judgment on the Pleadings (Aug 21 2026).pdf",
+   "size": 511408,
+   "sha256": "a9737a29b912180967130c8027503b8cedb572f7202676aad5b89df28af930a3"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/5-25-cv-02931-SRM-Ventura-v-Randstad/Dkt 75-1 Proposed Order re Rule 12(c) Motion (Aug 21 2026).pdf",
+   "size": 115136,
+   "sha256": "30612a31c297c44e6bff741c5b3c9baabad72ce20566d8ba7f00997ab182fb5e"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/5-25-cv-02931-SRM-Ventura-v-Randstad/PACER Full Docket (Sep 8 2026 PT).pdf",
+   "size": 198450,
+   "sha256": "eb8c1a6935ef4db9818a98d225f6a55a31294e1a9f8d8ee4e498ea1f0dae3fe3"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/5-25-cv-02931-SRM-Ventura-v-Randstad/PACER History-Documents (Sep 8 2026 PT).pdf",
+   "size": 146261,
+   "sha256": "0c997abd834d397c4532f4ac5aae6bd00bd5768d150f09c9e7110ac2537bb675"
+  },
+  {
+   "path": "/documents/_migrated/docs/counsel/kcoz/sources/ndga-williams-attorney-query/PACER Attorney Query - Chadwick Lloyd Williams NDGA (Sep 8 2026 PT).pdf",
+   "size": 122955,
+   "sha256": "3e735db6aa2039849b819c953da18909b9ba23fcd4e36b3583acd4cb26e21f9a"
+  },
+  {
+   "path": "/documents/_migrated/docs/matter-24-opposition-critique-pack/01_Opposition_to_Serrato_MTD_v4_Pleading_Paper.pdf",
+   "size": 280630,
+   "sha256": "f08de75031c4c234eb5580f74bc74f92cef5b44de45600092341bc530d6a0980"
+  },
+  {
+   "path": "/documents/_migrated/docs/matter-24-opposition-critique-pack/02_Defendant_Serrato_MTD_and_Strike_Aug26_2026.pdf",
+   "size": 712692,
+   "sha256": "3105e59e4dc831e716db86208a487a7b0741a44128e6dd7615cf1d1291e44730"
+  },
+  {
+   "path": "/documents/_migrated/docs/matter-24-opposition-critique-pack/03_Krishnan_IFP_Screening_Order_Dkt5_Jun29_2026.pdf",
+   "size": 564497,
+   "sha256": "9f00bb4d807287a39687835a503beb4a2754bef01b9bd5b38f0339ba25c7f444"
+  },
+  {
+   "path": "/documents/_migrated/docs/matter-24-opposition-critique-pack/04_FAC_Doc10_Text_Extract_for_LLM.pdf",
+   "size": 39107,
+   "sha256": "0da9e38f7579ae72c5a91bd6d35e9855004fc3fcf281774191d5b0924473bc83"
+  },
+  {
+   "path": "/documents/_migrated/docs/matter-24-opposition-critique-pack/05_Notice_of_Errata_re_FAC_Doc12.pdf",
+   "size": 1216620,
+   "sha256": "c835e932c5e486a60333d27f73e38d1ada0515d1aedabe2f036632d51ddb45d5"
+  },
+  {
+   "path": "/documents/_migrated/docs/matter-24-opposition-critique-pack/06_Critique_Briefing_and_Prompt.pdf",
+   "size": 5652,
+   "sha256": "ffe52299370b371f6756ae57a5ba3ca54ebf1bc20abc9f470fb8fbfd74e1d283"
+  },
+  {
+   "path": "/documents/_migrated/docs/matter-24-opposition-critique-pack/07_MTD_Attack_Map_and_Error_Inventory.pdf",
+   "size": 4867,
+   "sha256": "163e2a48552be77092f998cf2018ff3fe158ba26e59fe3fb9240477a966cfb4a"
+  },
+  {
+   "path": "/documents/_migrated/docs/matter-24-opposition-critique-pack/08_Authorities_and_PC_67910_Cheat_Sheet.pdf",
+   "size": 3787,
+   "sha256": "7ea4d6250af2003bfee7c903137d5419be5bf5a112b590d0e929966518207ac1"
+  },
+  {
+   "path": "/documents/_migrated/docs/matter-24-opposition-critique-pack/09_Alameda_AG_Opposition_to_Judicial_UVisa_Certification_Fickes_Context.pdf",
+   "size": 335040,
+   "sha256": "bbc20f39fc7a703437ec7eef57d4423ceaf0da9ce73ee79a4d875d37d297965e"
+  },
+  {
+   "path": "/documents/_migrated/docs/matter-24-opposition-critique-pack/10_Case_Chronology_and_Theory_Map.pdf",
+   "size": 4895,
+   "sha256": "6f281a13f2c39409510d18d896aa60acc6f6d3df7c3ba6941056013a9ffca40a"
+  },
+  {
+   "path": "/documents/_migrated/docs/matter-27-eval/randstad-rk-eval-packet.pdf",
+   "size": 517867,
+   "sha256": "28edb37f12dbbb61b7431c035b57a5fe0f773645b8b8a4442e21f8d626c30743"
+  },
+  {
+   "path": "/documents/_migrated/handoff/Stanislaus-CC-Authorization-Meza-Gonzalez-Aug12-2026.pdf",
+   "size": 1853852,
+   "sha256": "0a1d3dd64569233836de78c5a059ade49d13e890bf5ef6ec6c79eb1fa3598851"
+  },
+  {
+   "path": "/documents/_migrated/handoff/ao398-meza-waiver-request/AO398-Meza-Waiver-Request-FILLED-SIGNED.pdf",
+   "size": 268778,
+   "sha256": "2c9b403692dc280a481ab4c1c2eceb6e59088068f22beadf5389612fa156e02e"
+  },
+  {
+   "path": "/documents/_migrated/handoff/ao398-meza-waiver-request/AO398-Notice-Request-Waive-Service-Meza-Gonzalez-FILLED.pdf",
+   "size": 272478,
+   "sha256": "4bf1d86a017792e61444b6354e07f956e2382367190e8469292c9ea3f8991806"
+  },
+  {
+   "path": "/documents/_migrated/handoff/ao399-meza-waiver-form/AO399-Waiver-of-Service-Meza-Gonzalez-READY-FOR-DEFENDANT.pdf",
+   "size": 260356,
+   "sha256": "7dc5eb20d85487247f64bdf5b41bddd356616718a2bb5517d646a083596af3d5"
+  },
+  {
+   "path": "/documents/_migrated/handoff/meza-docket-bundle-81/Meza-Docket-Bundle-81pp.pdf",
+   "size": 5391607,
+   "sha256": "75344b79b311d1991bf3469a2b2e060074f40a65a0ed4b9d1b6eb16c66214140"
+  },
+  {
+   "path": "/documents/_migrated/public/accurate-sig-notice.pdf",
+   "size": 194689,
+   "sha256": "d7a17d420668e5dc6ea675e0e5bea20c832c74e4a95233b62654af3fe8e7ff39"
+  },
+  {
+   "path": "/documents/_migrated/public/accurate-stip.pdf",
+   "size": 197602,
+   "sha256": "e900eb3e28b5acc478a3a15733d7ffdc4ef41d72bd9b83f37c5710e8394cecb9"
+  },
+  {
+   "path": "/documents/_migrated/public/amazon-consent.pdf",
+   "size": 549267,
+   "sha256": "b1ddf28cdf34dacfcc1b93315e6b0679122ecd860435cd50369bd0793ade06bb"
+  },
+  {
+   "path": "/documents/_migrated/public/cand-strike-packet.pdf",
+   "size": 474769,
+   "sha256": "85aaa0fa9658b194d54f9e257b10a23cbe2534feb48c453431240733aebb2636"
+  },
+  {
+   "path": "/documents/_migrated/public/cand-strike.pdf",
+   "size": 468279,
+   "sha256": "32d59beb15393d3b100d65064073a9483aee800c42fc64b92e9f95fa2d84ccad"
+  },
+  {
+   "path": "/documents/_migrated/public/fedex-answer.pdf",
+   "size": 293697,
+   "sha256": "b8b70e1e26017fa5bf1007b2c2b453ddc44947c6e2a575dc35cc26b91beece84"
+  },
+  {
+   "path": "/documents/_migrated/public/fedex-complaint.pdf",
+   "size": 62904,
+   "sha256": "7b68a6278722a88f400f9ed26e780c34752d74e488aba2abe955964e08cd04ff"
+  },
+  {
+   "path": "/documents/_migrated/public/fedex-consent.pdf",
+   "size": 536922,
+   "sha256": "67c89b68ddfc4df8bca1e84651eb4a42b12038039b886f8e062956f4c21be4e7"
+  },
+  {
+   "path": "/documents/_migrated/public/habeas-discharge.pdf",
+   "size": 24465644,
+   "sha256": "2059a6cb2e7934e02aaa29ad05024b06da9e56c5b7a032f4a93f63439873717d"
+  },
+  {
+   "path": "/documents/_migrated/public/hc-004.pdf",
+   "size": 290539,
+   "sha256": "6799967fa187ef88c25f1179ea60aeb51899278c34c6eefa773637ad460cc9b7"
+  },
+  {
+   "path": "/documents/_migrated/public/meza-li-service.pdf",
+   "size": 1052443,
+   "sha256": "a4f6745dc9c8eefbd4d112981f6b1c63c935740c456ce84f94d2492748d1486f"
+  },
+  {
+   "path": "/documents/_migrated/public/name-24.pdf",
+   "size": 678442,
+   "sha256": "918458ec33812642413f2bfee004cc55a4a0c754090d9eb53514ab6f0dba84af"
+  },
+  {
+   "path": "/documents/_migrated/public/name-28.pdf",
+   "size": 678874,
+   "sha256": "1f25ed355a1a9aaa4c7881f9bb5609105e10cf40ef29a8d0c186318c1a0c615d"
+  },
+  {
+   "path": "/documents/_migrated/public/name-29.pdf",
+   "size": 677358,
+   "sha256": "e8d46c17b273b5879b5f17cbeaacac132368074e992fb2fea842cc290d9220f0"
+  },
+  {
+   "path": "/documents/_migrated/public/name-32.pdf",
+   "size": 679476,
+   "sha256": "9f7ba6a27ea00ffd5403a6fa70d59a9f95a483094b3ccbe731e7c17a4b9b3ac9"
+  },
+  {
+   "path": "/documents/_migrated/public/name-33.pdf",
+   "size": 678906,
+   "sha256": "7f5790cc9d0aae99fc8bab70582854910e55527d2b857ce1432f4dff288a6e0a"
+  },
+  {
+   "path": "/documents/_migrated/public/ross-title-decl.pdf",
+   "size": 197601,
+   "sha256": "cc9f49f00aa0be084d2c4afb6eec81b1a83005f01ac3625c66cfc0b55d68093c"
+  },
+  {
+   "path": "/documents/_migrated/public/ross-title-ex-a-cover.pdf",
+   "size": 3098,
+   "sha256": "47dca9cf4f6dbcb788e30176bf25cd7a8920ccaf3a6c143cffc5621306c3f697"
+  },
+  {
+   "path": "/documents/_migrated/public/ross-title-ex-a.pdf",
+   "size": 104996,
+   "sha256": "b853cc82103a17a16ec348621cd128c6b9683e1289b8c96fe8255e3d6c0e5625"
+  },
+  {
+   "path": "/documents/_migrated/public/ross-title-ex-b-cover.pdf",
+   "size": 3231,
+   "sha256": "b8afbb7896b71159c46a9e7daa9600b77ff471a11d9c31b7e2f65d8eea271886"
+  },
+  {
+   "path": "/documents/_migrated/public/ross-title-ex-b.pdf",
+   "size": 60087,
+   "sha256": "1d8d88c5afa71b6177fbd7fc6ed3f6ccf6247e6b5779781e12959d20c525a3f8"
+  },
+  {
+   "path": "/documents/_migrated/public/ross-title-ex-c-cover.pdf",
+   "size": 3133,
+   "sha256": "cb6f8729cd8efb7f39c12df9550a005b5952ae505426ef926d25e93a35451a07"
+  },
+  {
+   "path": "/documents/_migrated/public/ross-title-ex-c.pdf",
+   "size": 91972,
+   "sha256": "377539c8036bfdef05e37b22a0af87cb96c79cdee7ee38719f4b70cc4b042761"
+  },
+  {
+   "path": "/documents/_migrated/public/ross-title-order.pdf",
+   "size": 4913,
+   "sha256": "859b493d697bd48afa975e677aa008fd4b46e4febb3fbbd843ca44f676e7f47a"
+  },
+  {
+   "path": "/documents/_migrated/public/ross-title-packet.pdf",
+   "size": 664582,
+   "sha256": "d983cbd883a5d5d50be21b892c6a4477086144cdf97b8252c41baf783b2c2caf"
+  },
+  {
+   "path": "/documents/_migrated/public/ross-title.pdf",
+   "size": 463496,
+   "sha256": "8d87826f4d25636e9d76e75e3f871c49c96256b2e1d111d973251d92f27aefa1"
+  },
+  {
+   "path": "/documents/_migrated/public/serrato-complaint.pdf",
+   "size": 10944702,
+   "sha256": "f0b75325e925aa441cab1aaa109faaba19cb07287f95998f70b6816dad0024fd"
+  },
+  {
+   "path": "/documents/_migrated/public/serrato-mtd.pdf",
+   "size": 712692,
+   "sha256": "3105e59e4dc831e716db86208a487a7b0741a44128e6dd7615cf1d1291e44730"
+  },
+  {
+   "path": "/documents/_migrated/public/serrato-opp.pdf",
+   "size": 295267,
+   "sha256": "5c5bb19d35834d41db4dd6ea5c8b5cc7db2506a8702d083870ba7db59e91e6f5"
+  },
+  {
+   "path": "/documents/_migrated/public/ups-complaint.pdf",
+   "size": 62468,
+   "sha256": "ce8e56ede6d59c87a6bbaec4c307c8b5042380bec25414816f000fae5916c484"
+  },
+  {
+   "path": "/documents/_migrated/public/ups-consent.pdf",
+   "size": 536948,
+   "sha256": "79689aeb77d72fed20595039143b632cc26f2a6966b8898d19e56028afa6a184"
+  },
+  {
+   "path": "/documents/_migrated/public/ups-ext-opp.pdf",
+   "size": 407146,
+   "sha256": "d0f813f813ce2aa470d431262e55f26cb2e069b6336a21aca6b41d5e936ead85"
+  },
+  {
+   "path": "/documents/_migrated/public/ups-mtd.pdf",
+   "size": 962609,
+   "sha256": "9620c2fb6d0af85febca312c6f9848bee30a65033a2544bd1629ac2647dfd34c"
+  },
+  {
+   "path": "/documents/_migrated/public/ups-opp.pdf",
+   "size": 426219,
+   "sha256": "7fcdcc9c0ab24942b6a3f8a2065df9f804e63ddaa67a4c43215ffcd49efaf4d4"
   }
  ]
 }
