@@ -4,6 +4,8 @@
 // Builds a profile of opposing counsel from CourtListener:
 //   - identity resolution (bound docket parties, or --name / --attorney-id)
 //   - RECAP docket history (courts, volume, date range)
+//   - client concentration (defendant-side party clustering over sampled cases)
+//   - subject-matter concentration (keyword heuristic over sampled case names)
 //   - motion-pattern analysis against YOU, from locally synced docket entries (zero API cost)
 //
 // Usage:
@@ -186,32 +188,250 @@ export function analyzeHistory(dockets) {
   };
 }
 
+// --- Client & subject-matter concentration (v2) ---
+
+const ENTITY_SUFFIXES = new Set([
+  "inc", "incorporated", "corp", "corporation", "llc", "ltd", "limited",
+  "co", "company", "pllc", "pa", "lp", "llp", "plc", "holdings", "group",
+  "services", "solutions", "systems",
+]);
+
+/** Split "Plaintiff v. Defendant" into its parties. Null when no separator. */
+export function splitCaseName(caseName) {
+  const text = String(caseName ?? "").trim();
+  const m = text.match(/^(.*?)\s+v(?:s?\.?)\s+(.*)$/i);
+  if (!m) return null;
+  const plaintiff = m[1].trim();
+  const defendant = m[2].trim().replace(/\s+et\s+al\.?$/i, "").trim();
+  if (!plaintiff || !defendant) return null;
+  return { plaintiff, defendant };
+}
+
+/** Normalize a party name to a clustering key plus a display form. */
+export function normalizeClientName(name) {
+  const display = String(name ?? "")
+    .replace(/\s+et\s+al\.?$/i, "")
+    .replace(/\s+/g, " ")
+    .trim();
+  const key = display
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, " ")
+    .split(/\s+/)
+    .filter((t) => t && !ENTITY_SUFFIXES.has(t) && !STOP_WORDS.has(t))
+    .join(" ");
+  return { key: key || display.toLowerCase(), display };
+}
+
+/**
+ * Cluster sampled cases by party. For defense-side counsel, repeat
+ * defendant-side names are the client base. Pure function over the
+ * history sample (case_name strings).
+ */
+export function analyzeClients(sample) {
+  const defendants = new Map();
+  const plaintiffs = new Map();
+  let parsed = 0;
+  for (const d of sample ?? []) {
+    const parts = splitCaseName(d?.case_name);
+    if (!parts) continue;
+    parsed += 1;
+    for (const [side, map] of [
+      ["defendant", defendants],
+      ["plaintiff", plaintiffs],
+    ]) {
+      const { key, display } = normalizeClientName(parts[side]);
+      if (!key) continue;
+      const prev = map.get(key) ?? { name: display, count: 0 };
+      prev.count += 1;
+      if (display.length > prev.name.length) prev.name = display;
+      map.set(key, prev);
+    }
+  }
+  const ranked = (map) =>
+    [...map.values()].sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
+  const defendantList = ranked(defendants);
+  return {
+    cases_parsed: parsed,
+    defendants: defendantList,
+    plaintiffs: ranked(plaintiffs),
+    top_defendant: defendantList[0] ?? null,
+  };
+}
+
+// Consumer-reporting agencies / background-screening companies. A repeat
+// defendant-side appearance here is the FCRA/screening signal.
+const KNOWN_CRAS = [
+  "checkr",
+  "disa",
+  "equifax",
+  "first advantage",
+  "inflection",
+  "sterling",
+  "accurate background",
+  "appfolio",
+  "hireright",
+  "goodhire",
+  "certn",
+  "transunion",
+  "experian",
+];
+
+const SUBJECT_RULES = [
+  [
+    "fcra_background_screening",
+    /\bfcra\b|fair credit reporting|background (check|screening)|consumer report|investigative consumer/i,
+  ],
+  [
+    "employment_discrimination",
+    /discrimination|harassment|retaliation|wrongful termination|title vii|\bfeha\b|\bada\b|\badea\b/i,
+  ],
+  [
+    "wage_hour",
+    /\bwage\b|overtime|\bflsa\b|\bpaga\b|meal (and|&) rest|rest break|minimum wage/i,
+  ],
+  [
+    "consumer_protection",
+    /\bucl\b|unfair competition|\bclra\b|false advertising/i,
+  ],
+  ["privacy", /\bcipa\b|\bccpa\b|\bbipa\b|biometric|invasion of privacy|wiretap/i],
+  ["class_action", /class action|putative class/i],
+];
+
+/**
+ * Keyword heuristic over sampled case names. Tags are directional, not legal
+ * determinations. Also flags the background-screening ecosystem when a
+ * defendant matches a known consumer-reporting agency.
+ */
+export function analyzeSubjects(sample) {
+  const tags = {};
+  const craHits = new Set();
+  for (const d of sample ?? []) {
+    const text = String(d?.case_name ?? "");
+    const hit = new Set();
+    for (const [tag, re] of SUBJECT_RULES) {
+      if (re.test(text)) hit.add(tag);
+    }
+    const parts = splitCaseName(text);
+    if (parts) {
+      const defKey = normalizeClientName(parts.defendant).key;
+      for (const cra of KNOWN_CRAS) {
+        if (defKey.includes(cra)) {
+          hit.add("fcra_background_screening");
+          craHits.add(cra);
+        }
+      }
+    }
+    for (const t of hit) tags[t] = (tags[t] ?? 0) + 1;
+  }
+  const sorted = Object.entries(tags).sort((a, b) => b[1] - a[1]);
+  return {
+    tags,
+    primary: sorted[0]?.[0] ?? null,
+    screening_ecosystem: {
+      detected: craHits.size > 0,
+      matched_cra_clients: [...craHits].sort(),
+    },
+    note: "Keyword heuristic over sampled case names; directional, not a legal determination.",
+  };
+}
+
+/** Honest identity labeling: pinned attorney ID vs name-based match. */
+export function identityConfidence({ attorney_id } = {}) {
+  if (attorney_id != null) {
+    return {
+      level: "verified",
+      label: `Pinned to CourtListener attorney ID ${attorney_id}`,
+    };
+  }
+  return {
+    level: "name-based",
+    label:
+      "Name-based match (no CourtListener attorney ID). Client and subject signals are directional; pin --attorney-id to verify.",
+  };
+}
+
 function renderMarkdown(dossier) {
+  const ident = dossier.identity ?? identityConfidence(dossier);
   const lines = [
     `# Counsel dossier: ${dossier.name}`,
     ``,
     `- Generated: ${dossier.generated_at}`,
-    `- Attorney ID: ${dossier.attorney_id ?? "unresolved (name-based)"}`,
+    `- Identity: ${ident.label}`,
     `- Firm: ${dossier.firm ?? "unknown"}`,
     `- Linked matters: ${(dossier.linked_matters ?? []).join(", ") || "none"}`,
     ``,
+  ];
+
+  const clients = dossier.clients;
+  if (clients?.defendants?.length) {
+    lines.push(`## Client concentration (defendant-side, sampled cases)`, ``);
+    if (clients.top_defendant) {
+      lines.push(
+        `- Top repeat defendant: **${clients.top_defendant.name}** (${clients.top_defendant.count} of ${clients.cases_parsed} parsed cases)`,
+      );
+    }
+    for (const c of clients.defendants.slice(0, 10)) {
+      if (clients.top_defendant && c.name === clients.top_defendant.name) continue;
+      lines.push(`- ${c.name} — ${c.count} case${c.count === 1 ? "" : "s"}`);
+    }
+    lines.push(``);
+  }
+
+  const subjects = dossier.subjects;
+  if (subjects && Object.keys(subjects.tags).length > 0) {
+    lines.push(`## Subject-matter concentration`, ``);
+    if (subjects.primary) lines.push(`- Primary signal: **${subjects.primary}**`);
+    for (const [tag, count] of Object.entries(subjects.tags).sort((a, b) => b[1] - a[1])) {
+      if (tag !== subjects.primary) lines.push(`- ${tag}: ${count} case${count === 1 ? "" : "s"}`);
+    }
+    if (subjects.screening_ecosystem?.detected) {
+      lines.push(
+        `- Background-screening ecosystem: **yes** — ${subjects.screening_ecosystem.matched_cra_clients.join(", ")}`,
+      );
+    }
+    lines.push(`- _${subjects.note}_`, ``);
+  }
+
+  lines.push(
     `## Docket history (RECAP search)`,
     ``,
     `- Dockets found: ${dossier.history.dockets_found}`,
     `- Date range: ${dossier.history.date_range.earliest ?? "?"} to ${dossier.history.date_range.latest ?? "?"}`,
     `- Courts:`,
-  ];
+  );
   for (const [court, count] of Object.entries(dossier.history.courts).sort((a, b) => b[1] - a[1])) {
     lines.push(`  - ${court}: ${count}`);
   }
-  if (dossier.vs_you) {
-    lines.push(``, `## Motion patterns against you`, ``);
-    lines.push(`- Entries analyzed: ${dossier.vs_you.entries_analyzed} (locally synced; no API cost)`);
-    for (const [key, count] of Object.entries(dossier.vs_you.patterns)) {
-      if (count > 0) lines.push(`- ${key}: ${count}`);
+  lines.push(``);
+
+  if (dossier.history.sample?.length) {
+    lines.push(`## Sampled cases`, ``);
+    for (const s of dossier.history.sample) {
+      lines.push(
+        `- ${s.case_name ?? "?"} — ${s.docket_number ?? "?"} (${s.court ?? "?"}, filed ${s.date_filed ?? "?"})`,
+      );
     }
+    if (dossier.history.sample_truncated) {
+      lines.push(`- …truncated at 25; ${dossier.history.dockets_found} dockets total`);
+    }
+    lines.push(``);
   }
-  lines.push(``, `## Caveats`, ``);
+
+  if (dossier.vs_you) {
+    lines.push(`## Motion patterns against you`, ``);
+    if (dossier.vs_you.entries_analyzed > 0) {
+      lines.push(`- Entries analyzed: ${dossier.vs_you.entries_analyzed} (locally synced; no API cost)`);
+      for (const [key, count] of Object.entries(dossier.vs_you.patterns)) {
+        if (count > 0) lines.push(`- ${key}: ${count}`);
+      }
+    } else {
+      lines.push(
+        `- No locally synced docket entries for the linked matter(s) — source not connected. This is not evidence of no activity.`,
+      );
+    }
+    lines.push(``);
+  }
+  lines.push(`## Caveats`, ``);
   for (const caveat of dossier.caveats) lines.push(`- ${caveat}`);
   lines.push(``);
   return lines.join("\n");
@@ -293,18 +513,22 @@ async function main() {
   }
 
   const dossier = {
-    version: 1,
+    version: 2,
     name,
     attorney_id: attorneyIdValue,
     firm,
     linked_matters: matterNumber ? [matterNumber] : [],
     generated_at: new Date().toISOString(),
     source: "courtlistener",
+    identity: identityConfidence({ attorney_id: attorneyIdValue }),
     history,
+    clients: analyzeClients(history.sample),
+    subjects: analyzeSubjects(history.sample),
     vs_you: vsYou,
     caveats: [
       "Name-based RECAP search can conflate attorneys with common names; pin --attorney-id when ambiguous.",
       "History is a docket sample (up to ~60 most recent), not an exhaustive record.",
+      "Client and subject signals are keyword heuristics over sampled case names; directional, not adjudicated.",
       "Outcome signals (settlement/dismissal mentions) are directional, not adjudicated results.",
       "Motion patterns cover only matters with locally synced docket entries.",
     ],
@@ -322,6 +546,13 @@ async function main() {
     `History: ${history.dockets_found} dockets across ${Object.keys(history.courts).length} courts ` +
       `(${history.date_range.earliest ?? "?"} to ${history.date_range.latest ?? "?"})`,
   );
+  const topClient = dossier.clients.top_defendant;
+  if (topClient) {
+    console.log(`Top client signal: ${topClient.name} (${topClient.count}/${dossier.clients.cases_parsed})`);
+  }
+  if (dossier.subjects.primary) {
+    console.log(`Primary subject: ${dossier.subjects.primary}`);
+  }
 
   // --- Optionally link onto the matter record ---
   if (args.link && matter) {

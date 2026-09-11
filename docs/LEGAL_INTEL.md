@@ -2,7 +2,7 @@
 
 CourtListener-powered intelligence for the portfolio, beyond docket syncing.
 
-## Opposing counsel dossiers (v1)
+## Opposing counsel dossiers (v2)
 
 `npm run intel:counsel` builds a profile of opposing counsel:
 
@@ -14,9 +14,18 @@ CourtListener-powered intelligence for the portfolio, beyond docket syncing.
 
 What a dossier contains:
 
-- **Identity** - name, CourtListener attorney ID when resolvable, firm.
+- **Identity** - name, firm, and an honest confidence label: pinned to a
+  CourtListener attorney ID, or name-based (directional).
+- **Client concentration** - defendant-side party clustering over the sampled
+  cases; repeat defendants are the client base.
+- **Subject-matter concentration** - keyword heuristic over sampled case names
+  (e.g. FCRA/background screening, employment discrimination, wage & hour),
+  plus a background-screening-ecosystem flag when a defendant matches a known
+  consumer-reporting agency.
 - **Docket history** - RECAP search across their cases: volume, courts, date
-  range, and a 25-case sample. Capped at ~60 most recent dockets.
+  range. Capped at ~60 most recent dockets.
+- **Sampled cases** - the 25-case sample, listed (previously computed but not
+  rendered).
 - **Motion patterns against you** - their filings in *your* matters, classified
   from locally synced docket entries (motion to dismiss, summary judgment,
   discovery, settlement signals, voluntary dismissals). Zero API cost.
