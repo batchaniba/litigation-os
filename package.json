@@ -17,9 +17,13 @@
     "test:coverage": "vitest run --coverage",
     "sync:summaries": "node internal/scripts/sync-matter-summaries.mjs",
     "sync:registry": "node internal/scripts/sync-document-registry.mjs",
+    "sync:manifest": "node internal/scripts/sync-document-manifest.mjs",
     "sync:upcoming": "node internal/scripts/sync-upcoming.mjs",
     "sync:short-links": "node internal/scripts/sync-short-links.mjs",
     "sync:all": "node internal/scripts/sync-all.mjs",
+    "documents:pull": "node internal/scripts/documents-store.mjs pull",
+    "documents:push": "node internal/scripts/documents-store.mjs push",
+    "documents:seed": "node internal/scripts/documents-store.mjs seed",
     "retire:upcoming": "node internal/scripts/retire-upcoming.mjs",
     "next": "node internal/scripts/next-actions.mjs",
     "generate:readme": "node internal/scripts/generate-readme-tables.mjs",
@@ -37,7 +41,10 @@
     "citations:lookup": "python3 internal/scripts/lookup-citations.py --batch all",
     "citations:lookup:matter": "python3 internal/scripts/lookup-citations.py",
     "citations:lookup:matter28": "python3 internal/scripts/lookup-citations.py --matter 28",
-    "extract:matter1": "node internal/scripts/extract-matter-pdfs.mjs"
+    "extract:matter1": "node internal/scripts/extract-matter-pdfs.mjs",
+    "court:resolve": "node internal/scripts/courtlistener/resolve-dockets.mjs",
+    "court:sync": "node internal/scripts/courtlistener/sync-dockets.mjs",
+    "court:reconcile": "node internal/scripts/courtlistener/reconcile-timeline.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

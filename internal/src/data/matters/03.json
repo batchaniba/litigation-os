@@ -3,6 +3,11 @@
   "caption": "Newanforbi v. Derrick et al.",
   "case_no": "2:26-cv-00004-DJC-JDP",
   "court": "USDC E.D. Cal.",
+  "courtlistener": {
+    "court_id": "caed",
+    "docket_id": 72104727,
+    "docket_url": "/docket/72104727/ps-newanforbi-v-derrick/"
+  },
   "claims": "42 USC 1983: 1A Retaliation, 14A Equal Protection, Due Process",
   "status": "CASE CLOSED — E.D. Cal. No. 2:26-cv-00004-DJC-JDP terminated (confirmed Aug. 26, 2026). Derrick/Noguchi dismissed Jul. 22 under Rule 41(a)(1)(A)(i); Palacios dismissed Aug. 20–21 under Rule 41(a)(1)(A)(i) in response to Mag. Peterson's Aug. 13 OSC (ECF No. 33); OSC discharged and docket closed. No further action.",
   "status_label": "Closed — E.D. Cal. 2:26-cv-00004",

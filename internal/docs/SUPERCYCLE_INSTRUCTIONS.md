@@ -339,8 +339,8 @@ git push -u origin [branch-name]
 1. Run `npm run scaffold:matter -- <N> "Caption"` — creates `matters/NN.json` + `documents/matter-NN/`
 2. Fill required fields in the JSON (`number`, `cluster` as a number, status prose, etc.)
 3. Add companion rows in `timeline.js`, `damages.js`, and `lawyerFees.js`
-4. Drop PDFs under `internal/public/documents/matter-NN/` and list them in `documents[]`
-5. Run `npm run sync:summaries && npm run validate` (also runs in CI and the GitHub Pages deploy workflow). Full prose stays in `NN.json` and is lazy-loaded on expand/detail; list views use `summaries.json`.
+4. Drop PDFs under `internal/public/documents/matter-NN/` and list them in `documents[]`. Do not `git add -f` the PDF onto `main` — the pre-commit hook pushes bytes to `origin/documents` when the manifest changes (see [DOCUMENT_STORE.md](DOCUMENT_STORE.md)).
+5. Run `npm run sync:registry && npm run sync:manifest && npm run sync:summaries && npm run validate` if you skipped the hook. Data CI checks the committed manifest, not the PDF tree. Full prose stays in `NN.json` and is lazy-loaded on expand/detail; list views use `summaries.json`.
 
 **Adding a timeline event:**
 1. Add entry to `internal/src/data/timeline.js`
@@ -412,9 +412,10 @@ export default defineConfig({
 ```
 
 **CI/CD (GitHub Actions):**
-- Typically runs on `push` to `main` or `pull_request`
+- Workflows are currently `workflow_dispatch` only (billing/spending limit)
+- Restore `push` / `pull_request` in `.github/workflows/*.yml` when runners work
 - Builds with `npm run build`
-- Deploys `dist/` to GitHub Pages
+- Deploys `dist/` to GitHub Pages (when the Pages workflow is run)
 
 **Manual Deployment:**
 1. Ensure local build succeeds: `npm run build`

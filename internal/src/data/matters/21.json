@@ -3,6 +3,11 @@
   "caption": "Newanforbi v. Rojo et al.",
   "case_no": "2:26-cv-00193-DC-CKD",
   "court": "USDC E.D. Cal.",
+  "courtlistener": {
+    "court_id": "caed",
+    "docket_id": 72182274,
+    "docket_url": "/docket/72182274/ps-newanforbi-v-rojo/"
+  },
   "claims": "42 USC 1983: Free Exercise Clause (First Amendment), Due Process (Fourteenth Amendment)",
   "status": "DISMISSED WITH PREJUDICE — Notice of Voluntary Dismissal filed June 29, 2026 (FRCP 41(a)(1)(A)(i)); self-executing",
   "status_label": "Dismissed with prejudice — Jun. 29, 2026",
