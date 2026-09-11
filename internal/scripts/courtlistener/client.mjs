@@ -110,7 +110,7 @@ export function createClient({
 } = {}) {
   let lastAt = 0;
 
-  async function request(url, { auth = false, retries = 3 } = {}) {
+  async function request(url, { auth = false, retries = 5 } = {}) {
     const wait = minIntervalMs - (Date.now() - lastAt);
     if (wait > 0) await sleep(wait);
     const headers = { Accept: "application/json", "User-Agent": CL_UA };
@@ -134,7 +134,18 @@ export function createClient({
         continue;
       }
       if (response.status === 429 || response.status >= 500) {
-        await sleep(1000 * (attempt + 1));
+        // CourtListener sends Retry-After on 429; honor it (capped at 2 min).
+        // Otherwise use exponential backoff — the old 1s/2s/3s waits were too
+        // short to survive a bootstrap backfill exhausting the per-minute quota.
+        const retryAfter = Number(response.headers?.get?.("retry-after"));
+        const backoff =
+          response.status === 429 && Number.isFinite(retryAfter) && retryAfter > 0
+            ? Math.min(retryAfter * 1000, 120000)
+            : Math.min(1000 * 2 ** attempt, 30000);
+        console.warn(
+          `CourtListener HTTP ${response.status} for ${url} — backing off ${Math.round(backoff)}ms (attempt ${attempt + 1}/${retries})`,
+        );
+        await sleep(backoff);
         lastError = new Error(`CourtListener HTTP ${response.status} for ${url}`);
         continue;
       }
