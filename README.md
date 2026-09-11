@@ -543,7 +543,9 @@ CI sets `VITE_COPY_DOCUMENTS=0` and `PORTFOLIO_SKIP_DISK_DOCS=1` so the default 
 
 **Vercel** builds and deploys automatically on every push to `main` — no extra config, served from the domain root. `/documents/:path*` is rewritten to the GitHub Pages copy of the library so the Vercel build does not copy 660 MB of PDFs. After a fresh clone, run `npm run documents:pull` before `npm run dev`.
 
-**GitHub Pages** deploys via `.github/workflows/deploy-gh-pages.yml` on every push to `main` (typecheck + validate + build). The job checks out the `documents` branch into `internal/public/documents/` before `vite build`. Because GitHub Pages serves this repo as a project site under a subpath (`/interactive-litigation-portfolio/`) rather than a domain root, `vite.config.js` conditionally sets `base` from a `GITHUB_PAGES` env var the workflow sets at build time — Vercel builds leave it unset and get `base: '/'` as before. One-time setup: in the repo's **Settings → Pages**, set **Source** to **GitHub Actions**.
+**GitHub Pages** deploys via `.github/workflows/deploy-gh-pages.yml`. The job checks out the `documents` branch into `internal/public/documents/` before `vite build`. Because GitHub Pages serves this repo as a project site under a subpath (`/interactive-litigation-portfolio/`) rather than a domain root, `vite.config.js` conditionally sets `base` from a `GITHUB_PAGES` env var the workflow sets at build time — Vercel builds leave it unset and get `base: '/'` as before. One-time setup: in the repo's **Settings → Pages**, set **Source** to **GitHub Actions**.
+
+GitHub Actions (CI, documents integrity, Pages deploy) are **dispatch-only** until billing/spending is restored. They do not run on push or pull request. Vercel Git integration is separate and still deploys. Restore the `push` / `pull_request` triggers in `.github/workflows/*.yml` when runners can start again.
 
 ---
 

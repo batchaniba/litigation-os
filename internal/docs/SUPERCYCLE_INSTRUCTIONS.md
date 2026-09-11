@@ -412,9 +412,10 @@ export default defineConfig({
 ```
 
 **CI/CD (GitHub Actions):**
-- Typically runs on `push` to `main` or `pull_request`
+- Workflows are currently `workflow_dispatch` only (billing/spending limit)
+- Restore `push` / `pull_request` in `.github/workflows/*.yml` when runners work
 - Builds with `npm run build`
-- Deploys `dist/` to GitHub Pages
+- Deploys `dist/` to GitHub Pages (when the Pages workflow is run)
 
 **Manual Deployment:**
 1. Ensure local build succeeds: `npm run build`
