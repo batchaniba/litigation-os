@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "name": "Chadwick L. Williams",
+  "attorney_id": null,
+  "firm": "Kabat Chapman & Ozmer LLP",
+  "linked_matters": [
+    27
+  ],
+  "generated_at": "2026-09-11T21:56:40.814Z",
+  "source": "courtlistener",
+  "history": {
+    "dockets_found": 5,
+    "courts": {
+      "District Court, D. Nevada": 1,
+      "District Court, W.D. Washington": 1,
+      "District Court, N.D. Georgia": 1,
+      "District Court, D. Connecticut": 1,
+      "United States Bankruptcy Court, M.D. Tennessee": 1
+    },
+    "date_range": {
+      "earliest": "2015-08-28",
+      "latest": "2025-07-25"
+    },
+    "sample": [
+      {
+        "case_name": "Solomon v. Spherion Staffing LLC",
+        "docket_number": "3:25-cv-00380",
+        "court": "District Court, D. Nevada",
+        "date_filed": "2025-07-25"
+      },
+      {
+        "case_name": "SidePrize LLC v. Huffman",
+        "docket_number": "2:25-cv-01092",
+        "court": "District Court, W.D. Washington",
+        "date_filed": "2025-06-11"
+      },
+      {
+        "case_name": "Sullivan v. Maloof",
+        "docket_number": "1:25-cv-02006",
+        "court": "District Court, N.D. Georgia",
+        "date_filed": "2025-04-11"
+      },
+      {
+        "case_name": "Charter Communications, Inc. v. Myla",
+        "docket_number": "3:25-cv-00025",
+        "court": "District Court, D. Connecticut",
+        "date_filed": "2025-01-07"
+      },
+      {
+        "case_name": "George Tryell Woods",
+        "docket_number": "3:15-bk-06047",
+        "court": "United States Bankruptcy Court, M.D. Tennessee",
+        "date_filed": "2015-08-28"
+      }
+    ],
+    "sample_truncated": false
+  },
+  "vs_you": {
+    "matters": [
+      27
+    ],
+    "entries_analyzed": 0,
+    "patterns": {
+      "motion_to_dismiss": 0,
+      "summary_judgment": 0,
+      "discovery_motion": 0,
+      "motion_to_strike": 0,
+      "sanctions": 0,
+      "settlement": 0,
+      "voluntary_dismissal": 0,
+      "default": 0,
+      "appeal": 0
+    }
+  },
+  "caveats": [
+    "Name-based RECAP search can conflate attorneys with common names; pin --attorney-id when ambiguous.",
+    "History is a docket sample (up to ~60 most recent), not an exhaustive record.",
+    "Outcome signals (settlement/dismissal mentions) are directional, not adjudicated results.",
+    "Motion patterns cover only matters with locally synced docket entries."
+  ]
+}
