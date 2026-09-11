@@ -1,37 +1,5 @@
-To: Haiyang.Li@doj.ca.gov; Andy.Marquez@doj.ca.gov
-Subject: 4:26-cv-05953-ASK and 4:26-cv-08271-ASK — request to stipulate to docket name corrections (Civil L.R. 7-11(a))
+Do not send this file.
 
-Dear Mr. Li,
-
-I write under Civil Local Rule 7-11(a) before filing administrative
-motions in two related Oakland cases, to ask whether you will stipulate.
-
-I am one person. I use one PACER account (bngwanforbi). That account
-records my first name as "Brendan" and my last name as "Ngwa Nforbi."
-The two dockets do not match that account:
-
-• 4:26-cv-05953-ASK (Serrato) identifies me as "Brendan Ngehsi Newanforbi."
-• 4:26-cv-08271-ASK (Meza-Gonzalez / Melano) identifies me as "Nforbi."
-
-Because of the mismatch, the CAND ECF Help Desk advised me on
-September 1, 2026 that it cannot link these cases to my account, and that
-the fix is to ask the Court to correct the names on the dockets first.
-The result is that I cannot e-file in either case and must file on paper.
-
-I intend to ask the Court to state my name on both dockets as
-"Brendan Ngwa Nforbi." The request changes nothing else: no party is added,
-dropped, or substituted; no claim or allegation is amended; no deadline
-moves. Rule 25 is not implicated, because I am the same person before and
-after.
-
-Would you stipulate as to both cases? If so, I will prepare a short
-stipulation and proposed order for your signature in each action. If you
-would rather I proceed by motion, or if you oppose, please tell me so I
-can state your position accurately in my Rule 7-11(a) declarations.
-
-Thank you.
-
-Brendan Ngwa Nforbi
-Plaintiff, In Pro Per
-1455 Cat Tail Drive, Stockton, CA 95204
-(209) 801-4442 | bnn.cdl@gmail.com
+DAG Li gets one combined Civil L.R. 7-11(a) email covering Serrato (4:26-cv-05953-ASK) and Meza-Gonzalez (4:26-cv-08271-ASK).
+Use: Li - EMAIL_DRAFT_meet_and_confer_05953_and_08271.txt
+This pointer is for matter 32 (4:26-cv-08271-ASK) only.

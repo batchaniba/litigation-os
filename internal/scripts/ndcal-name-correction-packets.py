@@ -658,7 +658,19 @@ Plaintiff, In Pro Per
 
 
 def build_email(path: Path, case: Case) -> None:
-    text = li_combined_email_text() if case.matter in LI_MATTERS else _email_text(case)
+    if case.matter in LI_MATTERS:
+        # Unique per case so validate-portfolio does not treat the two Li
+        # stubs as byte-identical duplicates of the combined draft.
+        text = (
+            f"Do not send this file.\n\n"
+            f"DAG Li gets one combined Civil L.R. 7-11(a) email covering "
+            f"Serrato (4:26-cv-05953-ASK) and Meza-Gonzalez "
+            f"(4:26-cv-08271-ASK).\n"
+            f"Use: Li - EMAIL_DRAFT_meet_and_confer_05953_and_08271.txt\n"
+            f"This pointer is for matter {case.matter} ({case.case_no}) only.\n"
+        )
+    else:
+        text = _email_text(case)
     path.write_text(text, encoding="utf-8")
 
 
