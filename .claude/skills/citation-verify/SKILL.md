@@ -30,7 +30,8 @@ Do not mark a citation VERIFIED from memory. Run the funnel and record evidence.
    ```  
    - `FOUND` + prior `UNVERIFIED` → `VERIFIED` (existence only)  
   - `CAPTION_MISMATCH` with truncated/OCR name of the same case → `VERIFIED` (existence; official caption in notes)  
-  - `CAPTION_MISMATCH` with no party-name overlap (wrong case at pin) → **not overlaid**; mark `MISCITED` by hand  
+  - `CAPTION_MISMATCH` with no party-name overlap from the pin API (citation-lookup or CAP) → `MISCITED`  
+  - `CAPTION_MISMATCH` from search-only → **not overlaid** (table-page hazard)  
   - Prior `MISCHARACTERIZED` / proposition-`MISCITED` **stays** even if the pin exists
    - Web-search-only `PARTIAL` is **not** overlaid  
    - Never downgrade a table-page `VERIFIED` solely because CL’s first hit differs

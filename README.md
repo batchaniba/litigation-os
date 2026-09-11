@@ -430,13 +430,13 @@ Controls (reconfirm when batching): *Richardson v. McKnight*, 521 U.S. 399 must 
 <!-- PORTFOLIO:CITATION_SCOREBOARD:START -->
 | Status | Count |
 |---|---|
-| VERIFIED | 500 |
-| MISCITED | 31 |
+| VERIFIED | 501 |
+| MISCITED | 34 |
 | MISCHARACTERIZED | 6 |
 | NOT_FOUND | 6 |
-| UNVERIFIED | 444 |
+| UNVERIFIED | 440 |
 
-Paired authorities: **987**. P0 (plaintiff-only UNVERIFIED): **8**. P1 (plaintiff-only bad status): **30**. UNVERIFIED includes opposing-counsel and court-order cites (P3). The desk is P0, then P1. Existence VERIFIED is not a holding check. Ledger date: 2026-09-11.
+Paired authorities: **987**. P0 (plaintiff-only UNVERIFIED): **5**. P1 (plaintiff-only bad status): **32**. UNVERIFIED includes opposing-counsel and court-order cites (P3). The desk is P0, then P1. Existence VERIFIED is not a holding check. Ledger date: 2026-09-11.
 <!-- PORTFOLIO:CITATION_SCOREBOARD:END -->
 
 Priority queues from the ledger: **P0** = plaintiff-only + still `UNVERIFIED` (`npm run citations:queue`); **P1** = plaintiff-only + bad status (fix before the next brief). Pre-existing fabricated hits are debt-tracked in `citation_known_bad_debt.json` so CI stays green while corrected drafts replace them.

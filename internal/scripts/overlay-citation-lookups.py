@@ -11,8 +11,9 @@ Rules (citation-verify skill + this overlay):
     (single-source; CAP often lacks recent Cal. App. 5th volumes)
   CAPTION_MISMATCH + truncated/OCR name of the same case → VERIFIED
     (existence; official caption recorded in notes)
-  CAPTION_MISMATCH with a wrong case at the pin → MISCITED
-    (this script does not auto-detect that; mark those by hand)
+  CAPTION_MISMATCH with a wrong case at the pin, from a pin API
+    (citation-lookup or CAP) → MISCITED
+  CAPTION_MISMATCH from search-only → left alone (table-page hazard)
   Devenpeck 543 U.S. 11 / 3 U.S. 146 → MISCITED (wrong or impossible pin)
   Prior MISCHARACTERIZED / proposition-MISCITED stays
   Never downgrade a table-page VERIFIED
@@ -35,7 +36,8 @@ ROOT = Path(__file__).resolve().parents[1]
 ROUNDS = ROOT / "docs" / "citation_verification_rounds.json"
 LEDGER = ROOT / "docs" / "citation_verification.json"
 DOCS = ROOT / "docs"
-ROUND_ID = "12-funnel"
+ROUND_ID = "13-cl-token"
+PIN_OVERLAY_SOURCES = {"courtlistener_citation", "case.law_static"}
 
 SKIP_PRIOR = {"MISCHARACTERIZED", "MISCITED", "NOT_FOUND", "VERIFIED"}
 
@@ -96,6 +98,13 @@ def ledger_citation_for(lookup: dict, cites_by_pin: dict[str, list[str]]) -> str
     return query
 
 
+def pin_source_found(lookup: dict) -> bool:
+    return any(
+        isinstance(s, dict) and s.get("found") and s.get("source") in PIN_OVERLAY_SOURCES
+        for s in (lookup.get("sources") or [])
+    )
+
+
 def web_only_partial(lookup: dict) -> bool:
     if lookup.get("consensus") != "PARTIAL":
         return False
@@ -140,8 +149,19 @@ def overlay_row(
             ),
         }
 
-    # Wrong case at the pin is a human MISCITED, not an OCR fold.
+    # Pin API resolved a different case at this reporter page.
     if consensus == "CAPTION_MISMATCH" and matched and not names_overlap(query_name, matched):
+        if pin_source_found(lookup):
+            return {
+                "citation": ledger_citation_for(lookup, cites_by_pin),
+                "status": "MISCITED",
+                "source": "Round 13 CourtListener citation-lookup / CAP pin",
+                "round": ROUND_ID,
+                "notes": (
+                    f"Pin {pin or '(none)'} resolves to {matched}, not the queried caption. "
+                    f"Do not brief this pin as {query_name}.{sources_note(lookup)}"
+                ),
+            }
         return None
 
     if consensus in {"FOUND", "CAPTION_MISMATCH"} or (
@@ -149,12 +169,12 @@ def overlay_row(
     ):
         official = matched or "the queried caption"
         src = (
-            "Round 12 CourtListener + CAP lookup"
+            "Round 13 CourtListener citation-lookup + CAP"
             if consensus == "FOUND"
             else (
-                "Round 12 pin resolves; official caption differs from index string"
+                "Round 13 pin resolves; official caption differs from index string"
                 if consensus == "CAPTION_MISMATCH"
-                else "Round 12 single-source lookup (CourtListener or CAP)"
+                else "Round 13 single-source pin (citation-lookup or CAP)"
             )
         )
         extra = ""
@@ -224,11 +244,11 @@ def main(argv: list[str]) -> int:
     if added:
         method = rounds.get("method") or ""
         note = (
-            " Round 12: npm run citations:overlay folds lookup JSON (FOUND / "
-            "compatible PARTIAL / OCR CAPTION_MISMATCH) into existence-only VERIFIED; "
-            "web-search-only hits are not overlaid."
+            " Round 13: CourtListener citation-lookup (COURTLISTENER_API_TOKEN) is a pin "
+            "source; same-case OCR CAPTION_MISMATCH stays existence VERIFIED; wrong case "
+            "at a pin-API hit is MISCITED; web-search-only hits are not overlaid."
         )
-        if "Round 12:" not in method:
+        if "Round 13:" not in method:
             rounds["method"] = (method.rstrip() + note).strip()
     ROUNDS.write_text(json.dumps(rounds, indent=2) + "\n")
     print(json.dumps({"added": len(added), "byStatus": {

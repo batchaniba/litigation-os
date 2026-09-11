@@ -122,6 +122,25 @@ class OverlayRulesTest(unittest.TestCase):
         }
         self.assertIsNone(overlay.overlay_row(lookup_row, {}, {}, {}))
 
+    def test_pin_api_wrong_case_is_miscited(self):
+        lookup_row = {
+            "query": "Davenport v. Mutual Ben. Health, 325 F. 3d 785",
+            "consensus": "CAPTION_MISMATCH",
+            "matched_name": "Roberts v. Galen of Virginia, Inc.",
+            "reporter_pin": "325 F.3d 785",
+            "sources": [
+                {
+                    "source": "courtlistener_citation",
+                    "found": True,
+                    "url": "https://www.courtlistener.com/opinion/x",
+                }
+            ],
+        }
+        row = overlay.overlay_row(lookup_row, {}, {}, {})
+        self.assertIsNotNone(row)
+        self.assertEqual(row["status"], "MISCITED")
+        self.assertIn("Roberts v. Galen", row["notes"])
+
     def test_web_only_partial_is_not_overlaid(self):
         lookup_row = {
             "query": "Some Case, 1 U.S. 1",

@@ -10,14 +10,14 @@ The campaign is entering a phase where claims are cognizable and motions to dism
 
 | Status | Count |
 |---|---|
-| VERIFIED | 500 |
-| UNVERIFIED | 444 |
-| MISCITED | 31 |
+| VERIFIED | 501 |
+| UNVERIFIED | 440 |
+| MISCITED | 34 |
 | MISCHARACTERIZED | 6 |
 | NOT_FOUND | 6 |
 
-**Plaintiff-only + still UNVERIFIED (P0 queue): 8**  
-**Plaintiff-only + bad status (P1): 30**
+**Plaintiff-only + still UNVERIFIED (P0 queue): 5**  
+**Plaintiff-only + bad status (P1): 32**
 
 ## Method controls
 
@@ -128,11 +128,13 @@ _Round 4: no matching absolute-immunity hearing-officer decision at that WL numb
 | 1 | MISCITED | Ashcroft v. Iqbals, 556 U.S. 662 (2009) | 33 |
 | 1 | MISCITED | Cases Ashcroft v. Iqbal, 556 U.S. 662 | 29 |
 | 1 | MISCITED | Chubb v. Sullivan, 2014 WL 2807986 | 28 |
+| 1 | MISCITED | Davenport v. Mutual Ben. Health, 325 F. 3d 785 | 25 |
 | 1 | MISCITED | Jessie v. United States, 79 M.J. 437 | 28 |
 | 1 | MISCITED | Lockley v. Law Office, 91 Cal.App. 4th 401 (2001) | 20, 32 |
 | 1 | MISCITED | Los Angeles Cath. Worker v. Los Angeles Downtown Indus. Dist. Bus, 201 | 29 |
 | 1 | MISCITED | See Johnson v. City of Grants Pass, 50 F. 4th 787 | 28 |
 | 1 | MISCITED | Soranno’s Gasco, Inc. v. Morgan Hill Uniifed Sch. Dist, 874 F. 2d 1310 | 24 |
+| 1 | MISCITED | Villa v. Maricopa County, 865 F. 3d 8 | 33 |
 
 ## P0 — Plaintiff-only UNVERIFIED queue (work this next)
 
@@ -143,19 +145,16 @@ Asserted only in Plaintiff's filings; no court order or opposing brief in the co
 | 5 | Benavidez v. County of San Diego, 993 F. 3d 9 | 32 | p.13 |
 | 3 | Dart Cherokee Basin Operating Co., LLC v. Owens, 574 U.S. 81 | 26 | p.3 |
 | 3 | Ruelaz v. Leprino Foods Co, 2025 WL 25549 | 26 | p.4 |
-| 1 | Davenport v. Mutual Ben. Health, 325 F. 3d 785 | 25 | p.8 |
 | 1 | Hernandez v. Regents of, 2009 WL 6045700 (2009) | 25 | p.10 |
-| 1 | In Aucina v. Amoco Oil Co, 871 F. Supp. 332 | 25 | p.13 |
-| 1 | Villa v. Maricopa County, 865 F. 3d 8 | 33 | p.38 |
 | 1 | Weyhe v. Wal-Mart Stores, Inc, 2010 WL 3411462 | 25 | p.10 |
 
-_8 total in JSON `priorityQueue`._
+_5 total in JSON `priorityQueue`._
 
 ## Round overlay
 
-Loaded round: **2026-08-09 Round 4 — portfolio P0 (batches A–D; LACW WL correction); Round 5 multisource (CourtListener + CAP); Round 5b Matter 28 full funnel; Round 6 spot-check of the Matter 33 conformed complaint (3:26-cv-08272-LJC, Dkt. 1) page-43 immunity sentence; Round 7 authorities cited in the Serrato IFP screening order (Matter 24, Dkt. 5) after OCR made that scan searchable; Round 8 — OCR tranche (16 plaintiff filings + court orders: Matters 5/12/15/25/26/33, Barocio opinion); Round 9 — Matter 24 Serrato Opp v4 final citation/quotation verification pass (2026-08-27); Round 10 — Matter 26 hybrid UPS MTD opposition (Claude structure + Cursor caution), 2026-08-28; Round 11 — P0 plaintiff-only queue after OCR-alias index rebuild (Matters 25/26/32/33 plus remaining portfolio P0), 2026-09-06** — 387 results
+Loaded round: **2026-08-09 Round 4 — portfolio P0 (batches A–D; LACW WL correction); Round 5 multisource (CourtListener + CAP); Round 5b Matter 28 full funnel; Round 6 spot-check of the Matter 33 conformed complaint (3:26-cv-08272-LJC, Dkt. 1) page-43 immunity sentence; Round 7 authorities cited in the Serrato IFP screening order (Matter 24, Dkt. 5) after OCR made that scan searchable; Round 8 — OCR tranche (16 plaintiff filings + court orders: Matters 5/12/15/25/26/33, Barocio opinion); Round 9 — Matter 24 Serrato Opp v4 final citation/quotation verification pass (2026-08-27); Round 10 — Matter 26 hybrid UPS MTD opposition (Claude structure + Cursor caution), 2026-08-28; Round 11 — P0 plaintiff-only queue after OCR-alias index rebuild (Matters 25/26/32/33 plus remaining portfolio P0), 2026-09-06** — 390 results
 
-Method note: Round 4: WebSearch after Richardson(+) / Leman(−) controls. Round 5: CourtListener /api/rest/v4/search/ + CAP static.case.law for controls/high-risk. Round 5b: all Matter 28 indexed authorities through lookup-citations.py --matter 28 (→ citation_lookup_matter28.json). Justia Cloudflare-blocked; Scholar unreliable; api.case.law JSON and CL citation-lookup need auth. Existence FOUND does not clear prior MISCHARACTERIZED/MISCITED proposition problems. Table-page F.3d pins can host multiple dispositions — do not treat first CL hit as unique. Round 7: the June 29, 2026 Serrato IFP/screening order was an image-only scan contributing nothing to the index until internal/scripts/ocr-text-layer.py added a text layer; its authorities were then probed through lookup-citations.py (→ citation_lookup_serrato_order.json) behind the same Richardson(+) / Leman(−) controls. These are a court's own citations, so they carry role court_order and never enter the plaintiff-only P0/P1 queues. Round 8: after ocr-text-layer.py on the 16-document plaintiff_filing/court_order tranche, probed new P0 Matter 12/15 authorities (citation_lookup_matter12_p0.json) and Barocio screening-order authorities (citation_lookup_barocio_order.json). McCorkle manually confirmed on CourtListener when CAP lacked cal2d/70. Round 9: Matter 24 Opposition v4 — npm citations:index + citations:lookup:matter --matter 24 (→ citation_lookup_matter24.json); quote needles checked against CAP static.case.law HTML (Whittlestone/Lopez/Noll/Perry/Twombly/Iqbal/Wade/Knievel/Erickson/Ford) and CA9 PDF (Capp); fixed Garity miscitation, Whittlestone non-opinion paraphrase, Perry/Twombly wording, and removed unused Lewis/Shanks TOA entries; Bureerong manually FOUND on CL+CAP. Round 10: Matter 26 hybrid opposition — npm citations:index + citations:lookup:matter --matter 26 (→ citation_lookup_matter26.json); Cal. App. 5th pins for Williams (40 Cal. App. 5th 280) and Quinn (121 Cal. App. 5th 1124) confirmed by direct CourtListener search when the reporter probe missed (CAP static lacks those volumes). Mendoza quotes checked against the published opinion (anti-SLAPP; 1658-59). Cel-Tech 183 quote is UPS's own. Round 11: build-citation-index.py OCR_PAGE_FIXES (Califomia/DUl/MedinOy/TorreSy/Knudsen/Devenpeck 3 U.S.→543 U.S. etc.) dropped P0 70→54; lookup-citations.py → citation_lookup_p0.json (FOUND 28, CAPTION_MISMATCH 14, PARTIAL 3, NOT_FOUND 7, UNKNOWN 2); overlay-citation-lookups.py folded FOUND + same-case OCR mismatches + Gonzalez/Hertz PARTIAL into VERIFIED (existence only) and marked both Devenpeck mispins MISCITED (real case is 543 U.S. 146). NOT_FOUND/UNKNOWN left UNVERIFIED (a miss is not a fabrication). Controls were not re-probed this pass. Round 12: npm run citations:overlay folds lookup JSON (FOUND / compatible PARTIAL / OCR CAPTION_MISMATCH) into existence-only VERIFIED; web-search-only hits are not overlaid.
+Method note: Round 4: WebSearch after Richardson(+) / Leman(−) controls. Round 5: CourtListener /api/rest/v4/search/ + CAP static.case.law for controls/high-risk. Round 5b: all Matter 28 indexed authorities through lookup-citations.py --matter 28 (→ citation_lookup_matter28.json). Justia Cloudflare-blocked; Scholar unreliable; api.case.law JSON and CL citation-lookup need auth. Existence FOUND does not clear prior MISCHARACTERIZED/MISCITED proposition problems. Table-page F.3d pins can host multiple dispositions — do not treat first CL hit as unique. Round 7: the June 29, 2026 Serrato IFP/screening order was an image-only scan contributing nothing to the index until internal/scripts/ocr-text-layer.py added a text layer; its authorities were then probed through lookup-citations.py (→ citation_lookup_serrato_order.json) behind the same Richardson(+) / Leman(−) controls. These are a court's own citations, so they carry role court_order and never enter the plaintiff-only P0/P1 queues. Round 8: after ocr-text-layer.py on the 16-document plaintiff_filing/court_order tranche, probed new P0 Matter 12/15 authorities (citation_lookup_matter12_p0.json) and Barocio screening-order authorities (citation_lookup_barocio_order.json). McCorkle manually confirmed on CourtListener when CAP lacked cal2d/70. Round 9: Matter 24 Opposition v4 — npm citations:index + citations:lookup:matter --matter 24 (→ citation_lookup_matter24.json); quote needles checked against CAP static.case.law HTML (Whittlestone/Lopez/Noll/Perry/Twombly/Iqbal/Wade/Knievel/Erickson/Ford) and CA9 PDF (Capp); fixed Garity miscitation, Whittlestone non-opinion paraphrase, Perry/Twombly wording, and removed unused Lewis/Shanks TOA entries; Bureerong manually FOUND on CL+CAP. Round 10: Matter 26 hybrid opposition — npm citations:index + citations:lookup:matter --matter 26 (→ citation_lookup_matter26.json); Cal. App. 5th pins for Williams (40 Cal. App. 5th 280) and Quinn (121 Cal. App. 5th 1124) confirmed by direct CourtListener search when the reporter probe missed (CAP static lacks those volumes). Mendoza quotes checked against the published opinion (anti-SLAPP; 1658-59). Cel-Tech 183 quote is UPS's own. Round 11: build-citation-index.py OCR_PAGE_FIXES (Califomia/DUl/MedinOy/TorreSy/Knudsen/Devenpeck 3 U.S.→543 U.S. etc.) dropped P0 70→54; lookup-citations.py → citation_lookup_p0.json (FOUND 28, CAPTION_MISMATCH 14, PARTIAL 3, NOT_FOUND 7, UNKNOWN 2); overlay-citation-lookups.py folded FOUND + same-case OCR mismatches + Gonzalez/Hertz PARTIAL into VERIFIED (existence only) and marked both Devenpeck mispins MISCITED (real case is 543 U.S. 146). NOT_FOUND/UNKNOWN left UNVERIFIED (a miss is not a fabrication). Controls were not re-probed this pass. Round 12: npm run citations:overlay folds lookup JSON (FOUND / compatible PARTIAL / OCR CAPTION_MISMATCH) into existence-only VERIFIED; web-search-only hits are not overlaid. Round 13: CourtListener citation-lookup (COURTLISTENER_API_TOKEN) is a pin source; same-case OCR CAPTION_MISMATCH stays existence VERIFIED; wrong case at a pin-API hit is MISCITED; web-search-only hits are not overlaid.
 
 ## Regenerating
 ```

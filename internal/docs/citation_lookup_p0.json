@@ -1,362 +1,18 @@
 {
   "generatedBy": "internal/scripts/lookup-citations.py",
-  "generatedDate": "2026-09-06",
+  "generatedDate": "2026-09-11",
   "matters": null,
   "reachability": {
-    "courtlistener_search": "ok (unauthenticated /api/rest/v4/search/)",
+    "courtlistener_search": "ok (unauthenticated /api/rest/v4/search/; corroboration only)",
+    "courtlistener_citation_lookup": "configured (env/dotenv; token not logged)",
     "case_law_api": "html docs only \u2014 JSON API not usable without auth/migration",
     "case_law_static": "ok (CasesMetadata.json + html/{file_name}.html)",
     "justia": "blocked (Cloudflare 403) in this environment",
     "google_scholar": "unreliable (often 403)",
-    "courtlistener_citation_lookup": "requires API token (401)"
+    "web_search": "Bing HTML, allowlisted legal hosts, pin+name required; PARTIAL at most"
   },
-  "resultCount": 54,
+  "resultCount": 8,
   "results": [
-    {
-      "query": "Gonzalez v. Trevino, 602 U.S. 653 (2024)",
-      "case_name_guess": "Gonzalez v. Trevino",
-      "reporter_pin": "602 U.S. 653",
-      "wl_pin": null,
-      "consensus": "PARTIAL",
-      "matched_name": "Gonzalez v. Trevino",
-      "matched_citations": [
-        "602 U.S. 653"
-      ],
-      "sources": [
-        {
-          "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/10600071/gonzalez-v-trevino/",
-          "case_name": "Gonzalez v. Trevino",
-          "citations": [
-            "602 U.S. 653"
-          ],
-          "notes": "Search q='\"602 U.S. 653\"'; cite_match=True; wl_match=False; name_match=True",
-          "http_status": 200
-        },
-        {
-          "source": "case.law_static",
-          "found": false,
-          "url": "https://static.case.law/us/602/CasesMetadata.json",
-          "case_name": "",
-          "citations": [],
-          "notes": "Volume metadata unavailable for us/602",
-          "http_status": 404
-        }
-      ]
-    },
-    {
-      "query": "Sialoi v. City of San Diego, 823 F. 3d 1223",
-      "case_name_guess": "Sialoi v. City of San Diego",
-      "reporter_pin": "823 F.3d 1223",
-      "wl_pin": null,
-      "consensus": "FOUND",
-      "matched_name": "Sialoi v. City of San Diego",
-      "matched_citations": [
-        "823 F.3d 1223"
-      ],
-      "sources": [
-        {
-          "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/3206359/edward-sialoi-v-city-of-san-diego/",
-          "case_name": "Edward Sialoi v. City of San Diego",
-          "citations": [
-            "823 F.3d 1223",
-            "2016 U.S. App. LEXIS 9489",
-            "2016 WL 2996138"
-          ],
-          "notes": "Search q='\"823 F.3d 1223\"'; cite_match=True; wl_match=False; name_match=False",
-          "http_status": 200
-        },
-        {
-          "source": "case.law_static",
-          "found": true,
-          "url": "https://static.case.law/f3d/823/html/1223-01.html",
-          "case_name": "Sialoi v. City of San Diego",
-          "citations": [
-            "823 F.3d 1223"
-          ],
-          "notes": "Exact first_page match in CAP CasesMetadata.json",
-          "http_status": 200
-        }
-      ]
-    },
-    {
-      "query": "United States v. Lopez, 482 F. 3d 1067",
-      "case_name_guess": "United States v. Lopez",
-      "reporter_pin": "482 F.3d 1067",
-      "wl_pin": null,
-      "consensus": "FOUND",
-      "matched_name": "United States v. Lopez",
-      "matched_citations": [
-        "482 F.3d 1067"
-      ],
-      "sources": [
-        {
-          "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/797423/united-states-v-hosvaldo-lopez/",
-          "case_name": "United States v. Hosvaldo Lopez",
-          "citations": [
-            "482 F.3d 1067",
-            "2007 WL 725641",
-            "2007 U.S. App. LEXIS 5709"
-          ],
-          "notes": "Search q='\"482 F.3d 1067\"'; cite_match=True; wl_match=False; name_match=False",
-          "http_status": 200
-        },
-        {
-          "source": "case.law_static",
-          "found": true,
-          "url": "https://static.case.law/f3d/482/html/1067-01.html",
-          "case_name": "United States v. Lopez",
-          "citations": [
-            "482 F.3d 1067"
-          ],
-          "notes": "Exact first_page match in CAP CasesMetadata.json",
-          "http_status": 200
-        }
-      ]
-    },
-    {
-      "query": "United States v. Ngumezi, 980 F. 3d 1285",
-      "case_name_guess": "United States v. Ngumezi",
-      "reporter_pin": "980 F.3d 1285",
-      "wl_pin": null,
-      "consensus": "CAPTION_MISMATCH",
-      "matched_name": "United States v. Malik Ngumezi",
-      "matched_citations": [
-        "980 F.3d 1285"
-      ],
-      "sources": [
-        {
-          "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/4808091/united-states-v-malik-ngumezi/",
-          "case_name": "United States v. Malik Ngumezi",
-          "citations": [
-            "980 F.3d 1285"
-          ],
-          "notes": "Search q='\"980 F.3d 1285\"'; cite_match=True; wl_match=False; name_match=False",
-          "http_status": 200
-        },
-        {
-          "source": "case.law_static",
-          "found": false,
-          "url": "https://static.case.law/f3d/980/CasesMetadata.json",
-          "case_name": "",
-          "citations": [],
-          "notes": "Volume metadata unavailable for f3d/980",
-          "http_status": 404
-        }
-      ]
-    },
-    {
-      "query": "Galbraith v. County of, 307 F. 3d 1119",
-      "case_name_guess": "Galbraith v. County of",
-      "reporter_pin": "307 F.3d 1119",
-      "wl_pin": null,
-      "consensus": "CAPTION_MISMATCH",
-      "matched_name": "Galbraith v. County of Santa Clara",
-      "matched_citations": [
-        "307 F.3d 1119",
-        "2002 WL 31255033"
-      ],
-      "sources": [
-        {
-          "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/7108812/galbraith-v-county-of-santa-clara/",
-          "case_name": "Galbraith v. County of Santa Clara",
-          "citations": [
-            "307 F.3d 1119",
-            "2002 WL 31255033"
-          ],
-          "notes": "Search q='\"307 F.3d 1119\"'; cite_match=True; wl_match=False; name_match=False",
-          "http_status": 200
-        },
-        {
-          "source": "case.law_static",
-          "found": true,
-          "url": "https://static.case.law/f3d/307/html/1119-01.html",
-          "case_name": "Galbraith v. County of Santa Clara",
-          "citations": [
-            "307 F.3d 1119"
-          ],
-          "notes": "Exact first_page match in CAP CasesMetadata.json; caption mismatch vs query name ('Galbraith v. County of' vs 'Galbraith v. County of Santa Clara')",
-          "http_status": 200
-        }
-      ]
-    },
-    {
-      "query": "S v. JSS Scandinavia, 142 F. 3d 1150",
-      "case_name_guess": "S v. JSS Scandinavia",
-      "reporter_pin": "142 F.3d 1150",
-      "wl_pin": null,
-      "consensus": "CAPTION_MISMATCH",
-      "matched_name": "98 Cal. Daily Op. Serv. 3108, 98 Daily Journal D.A.R. 4313 Galt G/s v. Jss Scandinavia, Defendant/cross-Defendant/appellee, D & D Services, Defendant/cross-Defendant/ Cross-Claimant/appellee, Crystal Ice & Cold Storage Co., Defendant/cross-Claim Third-Party v. Safeway Stores Inc., Third-Party Defendant/ Cross-Claimant v. Buyers Refrigerated Truck Service of Sacramento, Cross-Defendant/appellee, Can Transport, Inc., Defendant/cross-Defendant Third-Party North America Services, Defendant/cross-Defendant Third-Party A.G. Hapag-Lloyd, Defendant/cross-Defendant Third-Party",
-      "matched_citations": [
-        "142 F.3d 1150"
-      ],
-      "sources": [
-        {
-          "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/754107/98-cal-daily-op-serv-3108-98-daily-journal-dar-4313-galt-gs-v-jss/",
-          "case_name": "98 Cal. Daily Op. Serv. 3108, 98 Daily Journal D.A.R. 4313 Galt G/s v. Jss Scandinavia, Defendant/cross-Defendant/appellee, D & D Services, Defendant/cross-Defendant/ Cross-Claimant/appellee, Crystal Ice & Cold Storage Co., Defendant/cross-Claim Third-Party v. Safeway Stores Inc., Third-Party Defendant/ Cross-Claimant v. Buyers Refrigerated Truck Service of Sacramento, Cross-Defendant/appellee, Can Transport, Inc., Defendant/cross-Defendant Third-Party North America Services, Defendant/cross-Defendant Third-Party A.G. Hapag-Lloyd, Defendant/cross-Defendant Third-Party",
-          "citations": [
-            "142 F.3d 1150"
-          ],
-          "notes": "Search q='\"142 F.3d 1150\"'; cite_match=True; wl_match=False; name_match=False",
-          "http_status": 200
-        },
-        {
-          "source": "case.law_static",
-          "found": true,
-          "url": "https://static.case.law/f3d/142/html/1150-01.html",
-          "case_name": "Galt G/S v. JSS Scandinavia",
-          "citations": [
-            "142 F.3d 1150"
-          ],
-          "notes": "Exact first_page match in CAP CasesMetadata.json; caption mismatch vs query name ('S v. JSS Scandinavia' vs 'Galt G/S v. JSS Scandinavia')",
-          "http_status": 200
-        }
-      ]
-    },
-    {
-      "query": "Mullane v. Central Hanover Bank, 339 U.S. 306 (1950)",
-      "case_name_guess": "Mullane v. Central Hanover Bank",
-      "reporter_pin": "339 U.S. 306",
-      "wl_pin": null,
-      "consensus": "FOUND",
-      "matched_name": "Mullane v. Central Hanover Bank & Trust Co.",
-      "matched_citations": [
-        "94 L. Ed. 2d 865",
-        "70 S. Ct. 652",
-        "339 U.S. 306",
-        "1950 U.S. LEXIS 2070"
-      ],
-      "sources": [
-        {
-          "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/104786/mullane-v-central-hanover-bank-trust-co/",
-          "case_name": "Mullane v. Central Hanover Bank & Trust Co.",
-          "citations": [
-            "94 L. Ed. 2d 865",
-            "70 S. Ct. 652",
-            "339 U.S. 306",
-            "1950 U.S. LEXIS 2070"
-          ],
-          "notes": "Search q='\"Mullane v. Central Hanover Bank\"'; cite_match=True; wl_match=False; name_match=True",
-          "http_status": 200
-        },
-        {
-          "source": "case.law_static",
-          "found": true,
-          "url": "https://static.case.law/us/339/html/0306-01.html",
-          "case_name": "Mullane v. Central Hanover Bank & Trust Co.",
-          "citations": [
-            "339 U.S. 306",
-            "94 L. Ed. 2d 865",
-            "70 S. Ct. 652",
-            "1950 U.S. LEXIS 2070",
-            "SCDB 1949-066"
-          ],
-          "notes": "Exact first_page match in CAP CasesMetadata.json",
-          "http_status": 200
-        }
-      ]
-    },
-    {
-      "query": "See Fermino v. Fedco, Inc, 7 Cal. 4th 701 (1994)",
-      "case_name_guess": "Fermino v. Fedco, Inc",
-      "reporter_pin": "7 Cal. 4th 701",
-      "wl_pin": null,
-      "consensus": "FOUND",
-      "matched_name": "Fermino v. Fedco, Inc.",
-      "matched_citations": [
-        "872 P.2d 559",
-        "7 Cal. 4th 701",
-        "30 Cal. Rptr. 2d 18",
-        "9 I.E.R. Cas. (BNA) 1132",
-        "94 Daily Journal DAR 6423",
-        "59 Cal. Comp. Cases 296",
-        "94 Cal. Daily Op. Serv. 3399",
-        "1994 Cal. LEXIS 2193"
-      ],
-      "sources": [
-        {
-          "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/1189781/fermino-v-fedco-inc/",
-          "case_name": "Fermino v. Fedco, Inc.",
-          "citations": [
-            "872 P.2d 559",
-            "7 Cal. 4th 701",
-            "30 Cal. Rptr. 2d 18",
-            "9 I.E.R. Cas. (BNA) 1132",
-            "94 Daily Journal DAR 6423",
-            "59 Cal. Comp. Cases 296",
-            "94 Cal. Daily Op. Serv. 3399",
-            "1994 Cal. LEXIS 2193"
-          ],
-          "notes": "Search q='\"7 Cal. 4th 701\"'; cite_match=True; wl_match=False; name_match=True",
-          "http_status": 200
-        },
-        {
-          "source": "case.law_static",
-          "found": true,
-          "url": "https://static.case.law/cal-4th/7/html/0701-01.html",
-          "case_name": "Fermino v. Fedco, Inc.",
-          "citations": [
-            "7 Cal. 4th 701"
-          ],
-          "notes": "Exact first_page match in CAP CasesMetadata.json",
-          "http_status": 200
-        }
-      ]
-    },
-    {
-      "query": "Behan v. Alexis, 116 Cal.App. 3d 403 (1981)",
-      "case_name_guess": "Behan v. Alexis",
-      "reporter_pin": "116 Cal. App. 3d 403",
-      "wl_pin": null,
-      "consensus": "FOUND",
-      "matched_name": "Behan v. Alexis",
-      "matched_citations": [
-        "116 Cal. App. 3d 403",
-        "172 Cal. Rptr. 132",
-        "1981 Cal. App. LEXIS 1457"
-      ],
-      "sources": [
-        {
-          "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/2149760/behan-v-alexis/",
-          "case_name": "Behan v. Alexis",
-          "citations": [
-            "116 Cal. App. 3d 403",
-            "172 Cal. Rptr. 132",
-            "1981 Cal. App. LEXIS 1457"
-          ],
-          "notes": "Search q='\"116 Cal. App. 3d 403\"'; cite_match=True; wl_match=False; name_match=True",
-          "http_status": 200
-        },
-        {
-          "source": "case.law_static",
-          "found": true,
-          "url": "https://static.case.law/cal-app-3d/116/html/0403-01.html",
-          "case_name": "Behan v. Alexis",
-          "citations": [
-            "116 Cal. App. 3d 403"
-          ],
-          "notes": "Exact first_page match in CAP CasesMetadata.json",
-          "http_status": 200
-        }
-      ]
-    },
     {
       "query": "Benavidez v. County of San Diego, 993 F. 3d 9",
       "case_name_guess": "Benavidez v. County of San Diego",
@@ -367,12 +23,14 @@
       "matched_citations": [],
       "sources": [
         {
-          "source": "courtlistener",
+          "source": "courtlistener_citation",
           "found": false,
-          "url": "https://www.courtlistener.com/api/rest/v4/search/",
+          "url": "https://www.courtlistener.com/api/rest/v4/citation-lookup/",
           "case_name": "",
-          "citations": [],
-          "notes": "No cite/name match in queries ['\"993 F.3d 9\"', '\"Benavidez v. County of San Diego\"']",
+          "citations": [
+            "993 F.3d 9"
+          ],
+          "notes": "Citation not found: '993 F.3d 9'",
           "http_status": 200
         },
         {
@@ -383,229 +41,14 @@
           "citations": [],
           "notes": "Volume metadata unavailable for f3d/993",
           "http_status": 404
-        }
-      ]
-    },
-    {
-      "query": "Devenpeck v. Alford, 543 U.S. 11 (2004)",
-      "case_name_guess": "Devenpeck v. Alford",
-      "reporter_pin": "543 U.S. 11",
-      "wl_pin": null,
-      "consensus": "NOT_FOUND",
-      "matched_name": "",
-      "matched_citations": [],
-      "sources": [
+        },
         {
           "source": "courtlistener",
           "found": false,
           "url": "https://www.courtlistener.com/api/rest/v4/search/",
           "case_name": "",
           "citations": [],
-          "notes": "No cite/name match in queries ['\"543 U.S. 11\"', '\"Devenpeck v. Alford\"']",
-          "http_status": 200
-        },
-        {
-          "source": "case.law_static",
-          "found": false,
-          "url": "https://static.case.law/us/543/CasesMetadata.json",
-          "case_name": "",
-          "citations": [],
-          "notes": "No case with first_page=11 in CAP volume us/543",
-          "http_status": null
-        }
-      ]
-    },
-    {
-      "query": "Cedars-Sinai Medical Center v. Superior Court, 18 Cal. 4th 1 (1998)",
-      "case_name_guess": "Cedars-Sinai Medical Center v. Superior Court",
-      "reporter_pin": "18 Cal. 4th 1",
-      "wl_pin": null,
-      "consensus": "FOUND",
-      "matched_name": "Cedars-Sinai Medical Center v. Superior Court",
-      "matched_citations": [
-        "954 P.2d 511",
-        "74 Cal. Rptr. 2d 248",
-        "18 Cal. 4th 1",
-        "98 Cal. Daily Op. Serv. 3554",
-        "98 Daily Journal DAR 4881",
-        "1998 Cal. LEXIS 2624"
-      ],
-      "sources": [
-        {
-          "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/1225987/cedars-sinai-medical-center-v-superior-court/",
-          "case_name": "Cedars-Sinai Medical Center v. Superior Court",
-          "citations": [
-            "954 P.2d 511",
-            "74 Cal. Rptr. 2d 248",
-            "18 Cal. 4th 1",
-            "98 Cal. Daily Op. Serv. 3554",
-            "98 Daily Journal DAR 4881",
-            "1998 Cal. LEXIS 2624"
-          ],
-          "notes": "Search q='\"18 Cal. 4th 1\"'; cite_match=True; wl_match=False; name_match=True",
-          "http_status": 200
-        },
-        {
-          "source": "case.law_static",
-          "found": true,
-          "url": "https://static.case.law/cal-4th/18/html/0001-01.html",
-          "case_name": "Cedar-Sinai Medical Center v. Superior Court",
-          "citations": [
-            "18 Cal. 4th 1"
-          ],
-          "notes": "Exact first_page match in CAP CasesMetadata.json; caption mismatch vs query name ('Cedars-Sinai Medical Center v. Superior Court' vs 'Cedar-Sinai Medical Center v. Superior Court')",
-          "http_status": 200
-        }
-      ]
-    },
-    {
-      "query": "Kanter v. Warner-Lambert Co, 265 F. 3d 853",
-      "case_name_guess": "Kanter v. Warner-Lambert Co",
-      "reporter_pin": "265 F.3d 853",
-      "wl_pin": null,
-      "consensus": "FOUND",
-      "matched_name": "Kanter v. Warner-Lambert Co.",
-      "matched_citations": [
-        "265 F.3d 853"
-      ],
-      "sources": [
-        {
-          "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/774946/susan-kanter-sharon-plunk-v-warner-lambert-co-and-pfizer-inc/",
-          "case_name": "Susan Kanter Sharon Plunk v. Warner-Lambert Co. And Pfizer Inc.",
-          "citations": [
-            "265 F.3d 853",
-            "2001 Cal. Daily Op. Serv. 7949",
-            "2001 Daily Journal DAR 9819",
-            "2001 U.S. App. LEXIS 20137",
-            "2001 WL 1028307"
-          ],
-          "notes": "Search q='\"265 F.3d 853\"'; cite_match=True; wl_match=False; name_match=False",
-          "http_status": 200
-        },
-        {
-          "source": "case.law_static",
-          "found": true,
-          "url": "https://static.case.law/f3d/265/html/0853-01.html",
-          "case_name": "Kanter v. Warner-Lambert Co.",
-          "citations": [
-            "265 F.3d 853"
-          ],
-          "notes": "Exact first_page match in CAP CasesMetadata.json",
-          "http_status": 200
-        }
-      ]
-    },
-    {
-      "query": "Kenneth Rothschild Trust v. Morgan Stanley Dean Witter, 199 F.Supp. 2d 993",
-      "case_name_guess": "Kenneth Rothschild Trust v. Morgan Stanley Dean Witter",
-      "reporter_pin": "199 F. Supp. 2d 993",
-      "wl_pin": null,
-      "consensus": "FOUND",
-      "matched_name": "Kenneth Rothschild Trust v. Morgan Stanley Dean Witter",
-      "matched_citations": [
-        "199 F. Supp. 2d 993",
-        "2002 U.S. Dist. LEXIS 6439",
-        "2002 WL 570642"
-      ],
-      "sources": [
-        {
-          "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/2414630/kenneth-rothschild-trust-v-morgan-stanley-dean-witter/",
-          "case_name": "Kenneth Rothschild Trust v. Morgan Stanley Dean Witter",
-          "citations": [
-            "199 F. Supp. 2d 993",
-            "2002 U.S. Dist. LEXIS 6439",
-            "2002 WL 570642"
-          ],
-          "notes": "Search q='\"199 F. Supp. 2d 993\"'; cite_match=True; wl_match=False; name_match=True",
-          "http_status": 200
-        },
-        {
-          "source": "case.law_static",
-          "found": true,
-          "url": "https://static.case.law/f-supp-2d/199/html/0993-01.html",
-          "case_name": "Kenneth Rothschild Trust v. Morgan Stanley Dean Witter",
-          "citations": [
-            "199 F. Supp. 2d 993"
-          ],
-          "notes": "Exact first_page match in CAP CasesMetadata.json",
-          "http_status": 200
-        }
-      ]
-    },
-    {
-      "query": "See Lew v. Moss, 797 F. 2d 747",
-      "case_name_guess": "Lew v. Moss",
-      "reporter_pin": "797 F.2d 747",
-      "wl_pin": null,
-      "consensus": "FOUND",
-      "matched_name": "Lew v. Moss",
-      "matched_citations": [
-        "797 F.2d 747"
-      ],
-      "sources": [
-        {
-          "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/474309/solomon-lew-v-stanton-moss-and-harlean-moss/",
-          "case_name": "Solomon Lew v. Stanton Moss and Harlean Moss",
-          "citations": [
-            "797 F.2d 747",
-            "21 Fed. R. Serv. 589",
-            "1986 U.S. App. LEXIS 28170"
-          ],
-          "notes": "Search q='\"797 F.2d 747\"'; cite_match=True; wl_match=False; name_match=False",
-          "http_status": 200
-        },
-        {
-          "source": "case.law_static",
-          "found": true,
-          "url": "https://static.case.law/f2d/797/html/0747-01.html",
-          "case_name": "Lew v. Moss",
-          "citations": [
-            "797 F.2d 747"
-          ],
-          "notes": "Exact first_page match in CAP CasesMetadata.json",
-          "http_status": 200
-        }
-      ]
-    },
-    {
-      "query": "Chavez v. JP Morgan Chase, 888 F. 3d 413",
-      "case_name_guess": "Chavez v. JP Morgan Chase",
-      "reporter_pin": "888 F.3d 413",
-      "wl_pin": null,
-      "consensus": "CAPTION_MISMATCH",
-      "matched_name": "Elsa Chavez v. Jpmorgan Chase Bank",
-      "matched_citations": [
-        "888 F.3d 413"
-      ],
-      "sources": [
-        {
-          "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/4488884/elsa-chavez-v-jpmorgan-chase-bank/",
-          "case_name": "Elsa Chavez v. Jpmorgan Chase Bank",
-          "citations": [
-            "888 F.3d 413"
-          ],
-          "notes": "Search q='\"888 F.3d 413\"'; cite_match=True; wl_match=False; name_match=False",
-          "http_status": 200
-        },
-        {
-          "source": "case.law_static",
-          "found": true,
-          "url": "https://static.case.law/f3d/888/html/0413-01.html",
-          "case_name": "Chavez v. JPMorgan Chase & Co.",
-          "citations": [
-            "888 F.3d 413"
-          ],
-          "notes": "Exact first_page match in CAP CasesMetadata.json; caption mismatch vs query name ('Chavez v. JP Morgan Chase' vs 'Chavez v. JPMorgan Chase & Co.')",
+          "notes": "No cite/name match in queries ['\"993 F.3d 9\"', '\"Benavidez v. County of San Diego\"']",
           "http_status": 200
         }
       ]
@@ -620,12 +63,14 @@
       "matched_citations": [],
       "sources": [
         {
-          "source": "courtlistener",
+          "source": "courtlistener_citation",
           "found": false,
-          "url": "https://www.courtlistener.com/api/rest/v4/search/",
+          "url": "https://www.courtlistener.com/api/rest/v4/citation-lookup/",
           "case_name": "",
-          "citations": [],
-          "notes": "No cite/name match in queries ['\"574 U.S. 81\"', '\"Dart Cherokee Basin Operating Co., LLC v. Owens\"']",
+          "citations": [
+            "574 U.S. 81"
+          ],
+          "notes": "Citation not found: '574 U.S. 81'",
           "http_status": 200
         },
         {
@@ -636,152 +81,14 @@
           "citations": [],
           "notes": "Volume metadata unavailable for us/574",
           "http_status": 404
-        }
-      ]
-    },
-    {
-      "query": "Fritsch v. Swift Transportation Company, 899 F. 3d 785",
-      "case_name_guess": "Fritsch v. Swift Transportation Company",
-      "reporter_pin": "899 F.3d 785",
-      "wl_pin": null,
-      "consensus": "CAPTION_MISMATCH",
-      "matched_name": "Grant Fritsch v. Swift Transportation Co. of Az",
-      "matched_citations": [
-        "899 F.3d 785"
-      ],
-      "sources": [
-        {
-          "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/4524668/grant-fritsch-v-swift-transportation-co-of-az/",
-          "case_name": "Grant Fritsch v. Swift Transportation Co. of Az",
-          "citations": [
-            "899 F.3d 785"
-          ],
-          "notes": "Search q='\"899 F.3d 785\"'; cite_match=True; wl_match=False; name_match=False",
-          "http_status": 200
         },
         {
-          "source": "case.law_static",
-          "found": true,
-          "url": "https://static.case.law/f3d/899/html/0785-01.html",
-          "case_name": "Fritsch v. Swift Transp. Co. of Ariz., LLC",
-          "citations": [
-            "899 F.3d 785"
-          ],
-          "notes": "Exact first_page match in CAP CasesMetadata.json; caption mismatch vs query name ('Fritsch v. Swift Transportation Company' vs 'Fritsch v. Swift Transp. Co. of Ariz., LLC')",
-          "http_status": 200
-        }
-      ]
-    },
-    {
-      "query": "Gonzales v. CarMax Auto Superstores, LLC, 840 F. 3d 644",
-      "case_name_guess": "Gonzales v. CarMax Auto Superstores, LLC",
-      "reporter_pin": "840 F.3d 644",
-      "wl_pin": null,
-      "consensus": "FOUND",
-      "matched_name": "Gonzales v. CarMax Auto Superstores, LLC",
-      "matched_citations": [
-        "840 F.3d 644"
-      ],
-      "sources": [
-        {
           "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/4314077/travis-gonzales-v-carmax-auto-superstores-llc/",
-          "case_name": "Travis Gonzales v. Carmax Auto Superstores, LLC",
-          "citations": [
-            "840 F.3d 644",
-            "2016 WL 6122776"
-          ],
-          "notes": "Search q='\"840 F.3d 644\"'; cite_match=True; wl_match=False; name_match=False",
-          "http_status": 200
-        },
-        {
-          "source": "case.law_static",
-          "found": true,
-          "url": "https://static.case.law/f3d/840/html/0644-01.html",
-          "case_name": "Gonzales v. CarMax Auto Superstores, LLC",
-          "citations": [
-            "840 F.3d 644"
-          ],
-          "notes": "Exact first_page match in CAP CasesMetadata.json",
-          "http_status": 200
-        }
-      ]
-    },
-    {
-      "query": "In Hertz Corp. v. Friend, 130 S. Ct. 1181 (2010)",
-      "case_name_guess": "Hertz Corp. v. Friend",
-      "reporter_pin": "130 S. Ct. 1181",
-      "wl_pin": null,
-      "consensus": "PARTIAL",
-      "matched_name": "Hertz Corp. v. Friend",
-      "matched_citations": [
-        "175 L. Ed. 2d 1029",
-        "130 S. Ct. 1181",
-        "559 U.S. 77",
-        "2010 U.S. LEXIS 1897"
-      ],
-      "sources": [
-        {
-          "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/1735/hertz-corp-v-friend/",
-          "case_name": "Hertz Corp. v. Friend",
-          "citations": [
-            "175 L. Ed. 2d 1029",
-            "130 S. Ct. 1181",
-            "559 U.S. 77",
-            "2010 U.S. LEXIS 1897"
-          ],
-          "notes": "Search q='\"130 S. Ct. 1181\"'; cite_match=True; wl_match=False; name_match=True",
-          "http_status": 200
-        },
-        {
-          "source": "case.law_static",
           "found": false,
-          "url": "https://static.case.law/s-ct/130/CasesMetadata.json",
+          "url": "https://www.courtlistener.com/api/rest/v4/search/",
           "case_name": "",
           "citations": [],
-          "notes": "Volume metadata unavailable for s-ct/130",
-          "http_status": 404
-        }
-      ]
-    },
-    {
-      "query": "Owens v. Huntling, 115 F. 2d 160",
-      "case_name_guess": "Owens v. Huntling",
-      "reporter_pin": "115 F.2d 160",
-      "wl_pin": null,
-      "consensus": "FOUND",
-      "matched_name": "Owens v. Huntling",
-      "matched_citations": [
-        "115 F.2d 160",
-        "1940 U.S. App. LEXIS 2827"
-      ],
-      "sources": [
-        {
-          "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/6983485/owens-v-huntling/",
-          "case_name": "Owens v. Huntling",
-          "citations": [
-            "115 F.2d 160",
-            "1940 U.S. App. LEXIS 2827"
-          ],
-          "notes": "Search q='\"115 F.2d 160\"'; cite_match=True; wl_match=False; name_match=True",
-          "http_status": 200
-        },
-        {
-          "source": "case.law_static",
-          "found": true,
-          "url": "https://static.case.law/f2d/115/html/0160-01.html",
-          "case_name": "Owens v. Huntling",
-          "citations": [
-            "115 F.2d 160"
-          ],
-          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "notes": "No cite/name match in queries ['\"574 U.S. 81\"', '\"Dart Cherokee Basin Operating Co., LLC v. Owens\"']",
           "http_status": 200
         }
       ]
@@ -790,19 +97,21 @@
       "query": "Ruelaz v. Leprino Foods Co, 2025 WL 25549",
       "case_name_guess": "Ruelaz v. Leprino Foods Co",
       "reporter_pin": null,
-      "wl_pin": null,
-      "consensus": "UNKNOWN",
+      "wl_pin": "25549",
+      "consensus": "NOT_FOUND",
       "matched_name": "",
       "matched_citations": [],
       "sources": [
         {
-          "source": "courtlistener",
+          "source": "courtlistener_citation",
           "found": false,
-          "url": "https://www.courtlistener.com/api/rest/v4/search/",
+          "url": "https://www.courtlistener.com/api/rest/v4/citation-lookup/",
           "case_name": "",
-          "citations": [],
-          "notes": "No cite/name match in queries []",
-          "http_status": null
+          "citations": [
+            "2025 WL 25549"
+          ],
+          "notes": "Citation not found: '2025 WL 25549'",
+          "http_status": 200
         },
         {
           "source": "case.law_static",
@@ -812,536 +121,14 @@
           "citations": [],
           "notes": "No supported reporter pin to resolve on static.case.law",
           "http_status": null
-        }
-      ]
-    },
-    {
-      "query": "See Soliman v. Philip Morris Inc, 311 F. 3d 966",
-      "case_name_guess": "Soliman v. Philip Morris Inc",
-      "reporter_pin": "311 F.3d 966",
-      "wl_pin": null,
-      "consensus": "FOUND",
-      "matched_name": "Soliman v. Philip Morris Inc.",
-      "matched_citations": [
-        "311 F.3d 966",
-        "2002 WL 31628406"
-      ],
-      "sources": [
-        {
-          "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/7109496/soliman-v-philip-morris-inc/",
-          "case_name": "Soliman v. Philip Morris Inc.",
-          "citations": [
-            "311 F.3d 966",
-            "2002 WL 31628406"
-          ],
-          "notes": "Search q='\"311 F.3d 966\"'; cite_match=True; wl_match=False; name_match=True",
-          "http_status": 200
         },
         {
-          "source": "case.law_static",
-          "found": true,
-          "url": "https://static.case.law/f3d/311/html/0966-01.html",
-          "case_name": "Soliman v. Philip Morris Inc.",
-          "citations": [
-            "311 F.3d 966"
-          ],
-          "notes": "Exact first_page match in CAP CasesMetadata.json",
-          "http_status": 200
-        }
-      ]
-    },
-    {
-      "query": "Urbino v. Orkins Servs. Of Cal., Inc, 726 F. 3d 1118",
-      "case_name_guess": "Urbino v. Orkins Servs. Of Cal., Inc",
-      "reporter_pin": "726 F.3d 1118",
-      "wl_pin": null,
-      "consensus": "CAPTION_MISMATCH",
-      "matched_name": "Urbino v. Orkin Servs. of California, Inc.",
-      "matched_citations": [
-        "726 F.3d 1118",
-        "2013 WL 4055615"
-      ],
-      "sources": [
-        {
           "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/8441424/urbino-v-orkin-servs-of-california-inc/",
-          "case_name": "Urbino v. Orkin Servs. of California, Inc.",
-          "citations": [
-            "726 F.3d 1118",
-            "2013 WL 4055615"
-          ],
-          "notes": "Search q='\"726 F.3d 1118\"'; cite_match=True; wl_match=False; name_match=False",
-          "http_status": 200
-        },
-        {
-          "source": "case.law_static",
-          "found": true,
-          "url": "https://static.case.law/f3d/726/html/1118-01.html",
-          "case_name": "Urbino v. Orkin Servs. of California, Inc.",
-          "citations": [
-            "726 F.3d 1118"
-          ],
-          "notes": "Exact first_page match in CAP CasesMetadata.json; caption mismatch vs query name ('Urbino v. Orkins Servs. Of Cal., Inc' vs 'Urbino v. Orkin Servs. of California, Inc.')",
-          "http_status": 200
-        }
-      ]
-    },
-    {
-      "query": "Burns v. Windsor Ins. Co, 31 F. 3d 1092",
-      "case_name_guess": "Burns v. Windsor Ins. Co",
-      "reporter_pin": "31 F.3d 1092",
-      "wl_pin": null,
-      "consensus": "CAPTION_MISMATCH",
-      "matched_name": "Jacqueline Burns v. Windsor Insurance Co.",
-      "matched_citations": [
-        "31 F.3d 1092",
-        "1994 U.S. App. LEXIS 25241",
-        "1994 WL 462043"
-      ],
-      "sources": [
-        {
-          "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/675856/jacqueline-burns-v-windsor-insurance-co/",
-          "case_name": "Jacqueline Burns v. Windsor Insurance Co.",
-          "citations": [
-            "31 F.3d 1092",
-            "1994 U.S. App. LEXIS 25241",
-            "1994 WL 462043"
-          ],
-          "notes": "Search q='\"31 F.3d 1092\"'; cite_match=True; wl_match=False; name_match=False",
-          "http_status": 200
-        },
-        {
-          "source": "case.law_static",
-          "found": true,
-          "url": "https://static.case.law/f3d/31/html/1092-01.html",
-          "case_name": "Burns v. Windsor Insurance",
-          "citations": [
-            "31 F.3d 1092"
-          ],
-          "notes": "Exact first_page match in CAP CasesMetadata.json; caption mismatch vs query name ('Burns v. Windsor Ins. Co' vs 'Burns v. Windsor Insurance')",
-          "http_status": 200
-        }
-      ]
-    },
-    {
-      "query": "Devenpeck v. Alford, 3 U.S. 146 (2004)",
-      "case_name_guess": "Devenpeck v. Alford",
-      "reporter_pin": "3 U.S. 146",
-      "wl_pin": null,
-      "consensus": "PARTIAL",
-      "matched_name": "Devenpeck v. Alford",
-      "matched_citations": [
-        "160 L. Ed. 2d 537",
-        "125 S. Ct. 588",
-        "543 U.S. 146",
-        "2004 U.S. LEXIS 8272"
-      ],
-      "sources": [
-        {
-          "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/137733/devenpeck-v-alford/",
-          "case_name": "Devenpeck v. Alford",
-          "citations": [
-            "160 L. Ed. 2d 537",
-            "125 S. Ct. 588",
-            "543 U.S. 146",
-            "2004 U.S. LEXIS 8272"
-          ],
-          "notes": "Search q='\"Devenpeck v. Alford\"'; cite_match=True; wl_match=False; name_match=True",
-          "http_status": 200
-        },
-        {
-          "source": "case.law_static",
           "found": false,
-          "url": "https://static.case.law/us/3/CasesMetadata.json",
+          "url": "https://www.courtlistener.com/api/rest/v4/search/",
           "case_name": "",
           "citations": [],
-          "notes": "No case with first_page=146 in CAP volume us/3",
-          "http_status": null
-        }
-      ]
-    },
-    {
-      "query": "Mullane v. Central, 339 U.S. 306 (1950)",
-      "case_name_guess": "Mullane v. Central",
-      "reporter_pin": "339 U.S. 306",
-      "wl_pin": null,
-      "consensus": "CAPTION_MISMATCH",
-      "matched_name": "Mullane v. Central Hanover Bank & Trust Co.",
-      "matched_citations": [
-        "94 L. Ed. 2d 865",
-        "70 S. Ct. 652",
-        "339 U.S. 306",
-        "1950 U.S. LEXIS 2070"
-      ],
-      "sources": [
-        {
-          "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/104786/mullane-v-central-hanover-bank-trust-co/",
-          "case_name": "Mullane v. Central Hanover Bank & Trust Co.",
-          "citations": [
-            "94 L. Ed. 2d 865",
-            "70 S. Ct. 652",
-            "339 U.S. 306",
-            "1950 U.S. LEXIS 2070"
-          ],
-          "notes": "Search q='\"Mullane v. Central\"'; cite_match=True; wl_match=False; name_match=False",
-          "http_status": 200
-        },
-        {
-          "source": "case.law_static",
-          "found": true,
-          "url": "https://static.case.law/us/339/html/0306-01.html",
-          "case_name": "Mullane v. Central Hanover Bank & Trust Co.",
-          "citations": [
-            "339 U.S. 306",
-            "94 L. Ed. 2d 865",
-            "70 S. Ct. 652",
-            "1950 U.S. LEXIS 2070",
-            "SCDB 1949-066"
-          ],
-          "notes": "Exact first_page match in CAP CasesMetadata.json; caption mismatch vs query name ('Mullane v. Central' vs 'Mullane v. Central Hanover Bank & Trust Co.')",
-          "http_status": 200
-        }
-      ]
-    },
-    {
-      "query": "Properties, Inc. v. Rio Int'llnterlink, 284 F. 3d 1007",
-      "case_name_guess": "Properties, Inc. v. Rio Int'llnterlink",
-      "reporter_pin": "284 F.3d 1007",
-      "wl_pin": null,
-      "consensus": "CAPTION_MISMATCH",
-      "matched_name": "Rio Properties, Inc. v. Rio International Interlink, Rio Properties, Inc. v. Rio International Interlink",
-      "matched_citations": [
-        "284 F.3d 1007",
-        "2002 Daily Journal DAR 3092",
-        "2002 Cal. Daily Op. Serv. 2511",
-        "62 U.S.P.Q. 2d (BNA) 1161",
-        "52 Fed. R. Serv. 3d 239",
-        "2002 U.S. App. LEXIS 4392",
-        "2002 WL 431915"
-      ],
-      "sources": [
-        {
-          "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/777052/rio-properties-inc-v-rio-international-interlink-rio-properties-inc/",
-          "case_name": "Rio Properties, Inc. v. Rio International Interlink, Rio Properties, Inc. v. Rio International Interlink",
-          "citations": [
-            "284 F.3d 1007",
-            "2002 Daily Journal DAR 3092",
-            "2002 Cal. Daily Op. Serv. 2511",
-            "62 U.S.P.Q. 2d (BNA) 1161",
-            "52 Fed. R. Serv. 3d 239",
-            "2002 U.S. App. LEXIS 4392",
-            "2002 WL 431915"
-          ],
-          "notes": "Search q='\"284 F.3d 1007\"'; cite_match=True; wl_match=False; name_match=False",
-          "http_status": 200
-        },
-        {
-          "source": "case.law_static",
-          "found": true,
-          "url": "https://static.case.law/f3d/284/html/1007-01.html",
-          "case_name": "Rio Properties, Inc. v. Rio International Interlink",
-          "citations": [
-            "284 F.3d 1007"
-          ],
-          "notes": "Exact first_page match in CAP CasesMetadata.json; caption mismatch vs query name (\"Properties, Inc. v. Rio Int'llnterlink\" vs 'Rio Properties, Inc. v. Rio International Interlink')",
-          "http_status": 200
-        }
-      ]
-    },
-    {
-      "query": "Rio Propeiiies, Inc. v. Rio Int'l Interlink, 284 F. 3d 1007",
-      "case_name_guess": "Rio Propeiiies, Inc. v. Rio Int'l Interlink",
-      "reporter_pin": "284 F.3d 1007",
-      "wl_pin": null,
-      "consensus": "FOUND",
-      "matched_name": "Rio Properties, Inc. v. Rio International Interlink, Rio Properties, Inc. v. Rio International Interlink",
-      "matched_citations": [
-        "284 F.3d 1007",
-        "2002 Daily Journal DAR 3092",
-        "2002 Cal. Daily Op. Serv. 2511",
-        "62 U.S.P.Q. 2d (BNA) 1161",
-        "52 Fed. R. Serv. 3d 239",
-        "2002 U.S. App. LEXIS 4392",
-        "2002 WL 431915"
-      ],
-      "sources": [
-        {
-          "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/777052/rio-properties-inc-v-rio-international-interlink-rio-properties-inc/",
-          "case_name": "Rio Properties, Inc. v. Rio International Interlink, Rio Properties, Inc. v. Rio International Interlink",
-          "citations": [
-            "284 F.3d 1007",
-            "2002 Daily Journal DAR 3092",
-            "2002 Cal. Daily Op. Serv. 2511",
-            "62 U.S.P.Q. 2d (BNA) 1161",
-            "52 Fed. R. Serv. 3d 239",
-            "2002 U.S. App. LEXIS 4392",
-            "2002 WL 431915"
-          ],
-          "notes": "Search q='\"284 F.3d 1007\"'; cite_match=True; wl_match=False; name_match=True",
-          "http_status": 200
-        },
-        {
-          "source": "case.law_static",
-          "found": true,
-          "url": "https://static.case.law/f3d/284/html/1007-01.html",
-          "case_name": "Rio Properties, Inc. v. Rio International Interlink",
-          "citations": [
-            "284 F.3d 1007"
-          ],
-          "notes": "Exact first_page match in CAP CasesMetadata.json",
-          "http_status": 200
-        }
-      ]
-    },
-    {
-      "query": "Rio Properties, Inc. v. Rio Int'l Interlink, 284 F. 3d 1007",
-      "case_name_guess": "Rio Properties, Inc. v. Rio Int'l Interlink",
-      "reporter_pin": "284 F.3d 1007",
-      "wl_pin": null,
-      "consensus": "FOUND",
-      "matched_name": "Rio Properties, Inc. v. Rio International Interlink, Rio Properties, Inc. v. Rio International Interlink",
-      "matched_citations": [
-        "284 F.3d 1007",
-        "2002 Daily Journal DAR 3092",
-        "2002 Cal. Daily Op. Serv. 2511",
-        "62 U.S.P.Q. 2d (BNA) 1161",
-        "52 Fed. R. Serv. 3d 239",
-        "2002 U.S. App. LEXIS 4392",
-        "2002 WL 431915"
-      ],
-      "sources": [
-        {
-          "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/777052/rio-properties-inc-v-rio-international-interlink-rio-properties-inc/",
-          "case_name": "Rio Properties, Inc. v. Rio International Interlink, Rio Properties, Inc. v. Rio International Interlink",
-          "citations": [
-            "284 F.3d 1007",
-            "2002 Daily Journal DAR 3092",
-            "2002 Cal. Daily Op. Serv. 2511",
-            "62 U.S.P.Q. 2d (BNA) 1161",
-            "52 Fed. R. Serv. 3d 239",
-            "2002 U.S. App. LEXIS 4392",
-            "2002 WL 431915"
-          ],
-          "notes": "Search q='\"284 F.3d 1007\"'; cite_match=True; wl_match=False; name_match=True",
-          "http_status": 200
-        },
-        {
-          "source": "case.law_static",
-          "found": true,
-          "url": "https://static.case.law/f3d/284/html/1007-01.html",
-          "case_name": "Rio Properties, Inc. v. Rio International Interlink",
-          "citations": [
-            "284 F.3d 1007"
-          ],
-          "notes": "Exact first_page match in CAP CasesMetadata.json",
-          "http_status": 200
-        }
-      ]
-    },
-    {
-      "query": "See Camara v. Municipal, 387 U.S. 523 (1967)",
-      "case_name_guess": "Camara v. Municipal",
-      "reporter_pin": "387 U.S. 523",
-      "wl_pin": null,
-      "consensus": "CAPTION_MISMATCH",
-      "matched_name": "Camara v. Municipal Court of City and County of San Francisco",
-      "matched_citations": [
-        "18 L. Ed. 2d 930",
-        "87 S. Ct. 1727",
-        "387 U.S. 523",
-        "1967 U.S. LEXIS 1254"
-      ],
-      "sources": [
-        {
-          "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/107473/camara-v-municipal-court-of-city-and-county-of-san-francisco/",
-          "case_name": "Camara v. Municipal Court of City and County of San Francisco",
-          "citations": [
-            "18 L. Ed. 2d 930",
-            "87 S. Ct. 1727",
-            "387 U.S. 523",
-            "1967 U.S. LEXIS 1254"
-          ],
-          "notes": "Search q='\"Camara v. Municipal\"'; cite_match=True; wl_match=False; name_match=False",
-          "http_status": 200
-        },
-        {
-          "source": "case.law_static",
-          "found": true,
-          "url": "https://static.case.law/us/387/html/0523-01.html",
-          "case_name": "Camara v. Municipal Court of San Francisco",
-          "citations": [
-            "387 U.S. 523",
-            "18 L. Ed. 2d 930",
-            "87 S. Ct. 1727",
-            "SCDB 1966-116",
-            "1967 U.S. LEXIS 1254"
-          ],
-          "notes": "Exact first_page match in CAP CasesMetadata.json; caption mismatch vs query name ('Camara v. Municipal' vs 'Camara v. Municipal Court of San Francisco')",
-          "http_status": 200
-        }
-      ]
-    },
-    {
-      "query": "Angus v. Shiley, Inc, 989 F. 2d 142",
-      "case_name_guess": "Angus v. Shiley, Inc",
-      "reporter_pin": "989 F.2d 142",
-      "wl_pin": null,
-      "consensus": "FOUND",
-      "matched_name": "Angus v. Shiley Inc.",
-      "matched_citations": [
-        "989 F.2d 142"
-      ],
-      "sources": [
-        {
-          "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/602855/helen-w-angus-appellant-v-shiley-inc/",
-          "case_name": "Helen W. ANGUS, Appellant, v. SHILEY INC.",
-          "citations": [
-            "989 F.2d 142",
-            "1993 U.S. App. LEXIS 6213",
-            "1993 WL 87396"
-          ],
-          "notes": "Search q='\"989 F.2d 142\"'; cite_match=True; wl_match=False; name_match=False",
-          "http_status": 200
-        },
-        {
-          "source": "case.law_static",
-          "found": true,
-          "url": "https://static.case.law/f2d/989/html/0142-01.html",
-          "case_name": "Angus v. Shiley Inc.",
-          "citations": [
-            "989 F.2d 142"
-          ],
-          "notes": "Exact first_page match in CAP CasesMetadata.json",
-          "http_status": 200
-        }
-      ]
-    },
-    {
-      "query": "Arias v. Residence Inn, 936 F. 3d 920",
-      "case_name_guess": "Arias v. Residence Inn",
-      "reporter_pin": "936 F.3d 920",
-      "wl_pin": null,
-      "consensus": "CAPTION_MISMATCH",
-      "matched_name": "Blanca Argelia Arias v. Residence Inn by Marriott",
-      "matched_citations": [
-        "936 F.3d 920"
-      ],
-      "sources": [
-        {
-          "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/4658290/blanca-argelia-arias-v-residence-inn-by-marriott/",
-          "case_name": "Blanca Argelia Arias v. Residence Inn by Marriott",
-          "citations": [
-            "936 F.3d 920"
-          ],
-          "notes": "Search q='\"936 F.3d 920\"'; cite_match=True; wl_match=False; name_match=False",
-          "http_status": 200
-        },
-        {
-          "source": "case.law_static",
-          "found": false,
-          "url": "https://static.case.law/f3d/936/CasesMetadata.json",
-          "case_name": "",
-          "citations": [],
-          "notes": "Volume metadata unavailable for f3d/936",
-          "http_status": 404
-        }
-      ]
-    },
-    {
-      "query": "Armondo v. Department of Motor Vehicles, 15 Cal.App. 4th 1174 (1993)",
-      "case_name_guess": "Armondo v. Department of Motor Vehicles",
-      "reporter_pin": "15 Cal. App. 4th 1174",
-      "wl_pin": null,
-      "consensus": "FOUND",
-      "matched_name": "Armondo v. Department of Motor Vehicles",
-      "matched_citations": [
-        "15 Cal. App. 4th 1174",
-        "19 Cal. Rptr. 2d 399",
-        "93 Daily Journal DAR 5959",
-        "93 Cal. Daily Op. Serv. 3531",
-        "1993 Cal. App. LEXIS 518"
-      ],
-      "sources": [
-        {
-          "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/2289906/armondo-v-department-of-motor-vehicles/",
-          "case_name": "Armondo v. Department of Motor Vehicles",
-          "citations": [
-            "15 Cal. App. 4th 1174",
-            "19 Cal. Rptr. 2d 399",
-            "93 Daily Journal DAR 5959",
-            "93 Cal. Daily Op. Serv. 3531",
-            "1993 Cal. App. LEXIS 518"
-          ],
-          "notes": "Search q='\"15 Cal. App. 4th 1174\"'; cite_match=True; wl_match=False; name_match=True",
-          "http_status": 200
-        },
-        {
-          "source": "case.law_static",
-          "found": true,
-          "url": "https://static.case.law/cal-app-4th/15/html/1174-01.html",
-          "case_name": "Armondo v. Department of Motor Vehicles",
-          "citations": [
-            "15 Cal. App. 4th 1174"
-          ],
-          "notes": "Exact first_page match in CAP CasesMetadata.json",
-          "http_status": 200
-        }
-      ]
-    },
-    {
-      "query": "Chavez v. JPMorgan Chase, 888 F. 3d 413",
-      "case_name_guess": "Chavez v. JPMorgan Chase",
-      "reporter_pin": "888 F.3d 413",
-      "wl_pin": null,
-      "consensus": "FOUND",
-      "matched_name": "Chavez v. JPMorgan Chase & Co.",
-      "matched_citations": [
-        "888 F.3d 413"
-      ],
-      "sources": [
-        {
-          "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/4488884/elsa-chavez-v-jpmorgan-chase-bank/",
-          "case_name": "Elsa Chavez v. Jpmorgan Chase Bank",
-          "citations": [
-            "888 F.3d 413"
-          ],
-          "notes": "Search q='\"888 F.3d 413\"'; cite_match=True; wl_match=False; name_match=False",
-          "http_status": 200
-        },
-        {
-          "source": "case.law_static",
-          "found": true,
-          "url": "https://static.case.law/f3d/888/html/0413-01.html",
-          "case_name": "Chavez v. JPMorgan Chase & Co.",
-          "citations": [
-            "888 F.3d 413"
-          ],
-          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "notes": "No cite/name match in queries ['25549', 'WL 25549']",
           "http_status": 200
         }
       ]
@@ -1351,17 +138,21 @@
       "case_name_guess": "Davenport v. Mutual Ben. Health",
       "reporter_pin": "325 F.3d 785",
       "wl_pin": null,
-      "consensus": "NOT_FOUND",
-      "matched_name": "",
-      "matched_citations": [],
+      "consensus": "CAPTION_MISMATCH",
+      "matched_name": "Roberts v. Galen of Virginia, Inc.",
+      "matched_citations": [
+        "325 F.3d 776"
+      ],
       "sources": [
         {
-          "source": "courtlistener",
-          "found": false,
-          "url": "https://www.courtlistener.com/api/rest/v4/search/",
-          "case_name": "",
-          "citations": [],
-          "notes": "No cite/name match in queries ['\"325 F.3d 785\"', '\"Davenport v. Mutual Ben. Health\"']",
+          "source": "courtlistener_citation",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/8437379/roberts-v-galen-of-virginia-inc/",
+          "case_name": "Roberts v. Galen of Virginia, Inc.",
+          "citations": [
+            "325 F.3d 776"
+          ],
+          "notes": "Citation-lookup status=200; clusters=1; caption mismatch vs query name ('Davenport v. Mutual Ben. Health' vs 'Roberts v. Galen of Virginia, Inc.')",
           "http_status": 200
         },
         {
@@ -1372,161 +163,14 @@
           "citations": [],
           "notes": "No case with first_page=785 in CAP volume f3d/325",
           "http_status": null
-        }
-      ]
-    },
-    {
-      "query": "Fritsch v. Swift Transp. Co, 899 F. 3d 785",
-      "case_name_guess": "Fritsch v. Swift Transp. Co",
-      "reporter_pin": "899 F.3d 785",
-      "wl_pin": null,
-      "consensus": "FOUND",
-      "matched_name": "Fritsch v. Swift Transp. Co. of Ariz., LLC",
-      "matched_citations": [
-        "899 F.3d 785"
-      ],
-      "sources": [
-        {
-          "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/4524668/grant-fritsch-v-swift-transportation-co-of-az/",
-          "case_name": "Grant Fritsch v. Swift Transportation Co. of Az",
-          "citations": [
-            "899 F.3d 785"
-          ],
-          "notes": "Search q='\"899 F.3d 785\"'; cite_match=True; wl_match=False; name_match=False",
-          "http_status": 200
         },
         {
-          "source": "case.law_static",
-          "found": true,
-          "url": "https://static.case.law/f3d/899/html/0785-01.html",
-          "case_name": "Fritsch v. Swift Transp. Co. of Ariz., LLC",
-          "citations": [
-            "899 F.3d 785"
-          ],
-          "notes": "Exact first_page match in CAP CasesMetadata.json",
-          "http_status": 200
-        }
-      ]
-    },
-    {
-      "query": "Gibson v. Chrysler Corp, 261 F. 3d 927",
-      "case_name_guess": "Gibson v. Chrysler Corp",
-      "reporter_pin": "261 F.3d 927",
-      "wl_pin": null,
-      "consensus": "FOUND",
-      "matched_name": "Gibson v. Chrysler Corp.",
-      "matched_citations": [
-        "261 F.3d 927",
-        "50 Fed. R. Serv. 3d 1517",
-        "2001 Cal. Daily Op. Serv. 7206",
-        "2001 Daily Journal DAR 8907",
-        "2001 U.S. App. LEXIS 18740"
-      ],
-      "sources": [
-        {
           "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/7098107/gibson-v-chrysler-corp/",
-          "case_name": "Gibson v. Chrysler Corp.",
-          "citations": [
-            "261 F.3d 927",
-            "50 Fed. R. Serv. 3d 1517",
-            "2001 Cal. Daily Op. Serv. 7206",
-            "2001 Daily Journal DAR 8907",
-            "2001 U.S. App. LEXIS 18740"
-          ],
-          "notes": "Search q='\"261 F.3d 927\"'; cite_match=True; wl_match=False; name_match=True",
-          "http_status": 200
-        },
-        {
-          "source": "case.law_static",
-          "found": true,
-          "url": "https://static.case.law/f3d/261/html/0927-01.html",
-          "case_name": "Gibson v. Chrysler Corp.",
-          "citations": [
-            "261 F.3d 927"
-          ],
-          "notes": "Exact first_page match in CAP CasesMetadata.json",
-          "http_status": 200
-        }
-      ]
-    },
-    {
-      "query": "Goldberg v. CPC Int\u2019l, Inc, 678 F. 2d 1365",
-      "case_name_guess": "Goldberg v. CPC Int\u2019l, Inc",
-      "reporter_pin": "678 F.2d 1365",
-      "wl_pin": null,
-      "consensus": "CAPTION_MISMATCH",
-      "matched_name": "Goldberg v. CPC International, Inc.",
-      "matched_citations": [
-        "678 F.2d 1365",
-        "34 Fed. R. Serv. 2d 598"
-      ],
-      "sources": [
-        {
-          "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/8925638/goldberg-v-cpc-international-inc/",
-          "case_name": "Goldberg v. CPC International, Inc.",
-          "citations": [
-            "678 F.2d 1365",
-            "34 Fed. R. Serv. 2d 598"
-          ],
-          "notes": "Search q='\"678 F.2d 1365\"'; cite_match=True; wl_match=False; name_match=False",
-          "http_status": 200
-        },
-        {
-          "source": "case.law_static",
-          "found": true,
-          "url": "https://static.case.law/f2d/678/html/1365-01.html",
-          "case_name": "Goldberg v. CPC International, Inc.",
-          "citations": [
-            "678 F.2d 1365"
-          ],
-          "notes": "Exact first_page match in CAP CasesMetadata.json; caption mismatch vs query name ('Goldberg v. CPC Int\u2019l, Inc' vs 'Goldberg v. CPC International, Inc.')",
-          "http_status": 200
-        }
-      ]
-    },
-    {
-      "query": "Guglielmino v. McKee Foods Corp, 506 F. 3d 696",
-      "case_name_guess": "Guglielmino v. McKee Foods Corp",
-      "reporter_pin": "506 F.3d 696",
-      "wl_pin": null,
-      "consensus": "FOUND",
-      "matched_name": "Guglielmino v. McKee Foods Corp.",
-      "matched_citations": [
-        "506 F.3d 696",
-        "12 Wage & Hour Cas.2d (BNA) 1683",
-        "2007 U.S. App. LEXIS 23654",
-        "2007 WL 2916193"
-      ],
-      "sources": [
-        {
-          "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/1291359/guglielmino-v-mckee-foods-corp/",
-          "case_name": "Guglielmino v. McKee Foods Corp.",
-          "citations": [
-            "506 F.3d 696",
-            "12 Wage & Hour Cas.2d (BNA) 1683",
-            "2007 U.S. App. LEXIS 23654",
-            "2007 WL 2916193"
-          ],
-          "notes": "Search q='\"506 F.3d 696\"'; cite_match=True; wl_match=False; name_match=True",
-          "http_status": 200
-        },
-        {
-          "source": "case.law_static",
-          "found": true,
-          "url": "https://static.case.law/f3d/506/html/0696-01.html",
-          "case_name": "Guglielmino v. McKee Foods Corp.",
-          "citations": [
-            "506 F.3d 696"
-          ],
-          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "found": false,
+          "url": "https://www.courtlistener.com/api/rest/v4/search/",
+          "case_name": "",
+          "citations": [],
+          "notes": "No cite/name match in queries ['\"325 F.3d 785\"', '\"Davenport v. Mutual Ben. Health\"']",
           "http_status": 200
         }
       ]
@@ -1541,12 +185,14 @@
       "matched_citations": [],
       "sources": [
         {
-          "source": "courtlistener",
+          "source": "courtlistener_citation",
           "found": false,
-          "url": "https://www.courtlistener.com/api/rest/v4/search/",
+          "url": "https://www.courtlistener.com/api/rest/v4/citation-lookup/",
           "case_name": "",
-          "citations": [],
-          "notes": "No cite/name match in queries ['6045700', 'WL 6045700']",
+          "citations": [
+            "2009 WL 6045700"
+          ],
+          "notes": "Citation not found: '2009 WL 6045700'",
           "http_status": 200
         },
         {
@@ -1557,50 +203,14 @@
           "citations": [],
           "notes": "No supported reporter pin to resolve on static.case.law",
           "http_status": null
-        }
-      ]
-    },
-    {
-      "query": "Hertz Corp. v. Friend, 559 U.S. 77 (2010)",
-      "case_name_guess": "Hertz Corp. v. Friend",
-      "reporter_pin": "559 U.S. 77",
-      "wl_pin": null,
-      "consensus": "FOUND",
-      "matched_name": "Hertz Corp. v. Friend",
-      "matched_citations": [
-        "175 L. Ed. 2d 1029",
-        "130 S. Ct. 1181",
-        "559 U.S. 77",
-        "2010 U.S. LEXIS 1897"
-      ],
-      "sources": [
-        {
-          "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/1735/hertz-corp-v-friend/",
-          "case_name": "Hertz Corp. v. Friend",
-          "citations": [
-            "175 L. Ed. 2d 1029",
-            "130 S. Ct. 1181",
-            "559 U.S. 77",
-            "2010 U.S. LEXIS 1897"
-          ],
-          "notes": "Search q='\"559 U.S. 77\"'; cite_match=True; wl_match=False; name_match=True",
-          "http_status": 200
         },
         {
-          "source": "case.law_static",
-          "found": true,
-          "url": "https://static.case.law/us/559/html/0077-01.html",
-          "case_name": "Hertz Corp. v. Friend",
-          "citations": [
-            "559 U.S. 77",
-            "175 L. Ed. 2d 1029",
-            "130 S. Ct. 1181",
-            "SCDB 2009-023",
-            "2010 U.S. LEXIS 1897"
-          ],
-          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "source": "courtlistener",
+          "found": false,
+          "url": "https://www.courtlistener.com/api/rest/v4/search/",
+          "case_name": "",
+          "citations": [],
+          "notes": "No cite/name match in queries ['6045700', 'WL 6045700']",
           "http_status": 200
         }
       ]
@@ -1610,18 +220,26 @@
       "case_name_guess": "Aucina v. Amoco Oil Co",
       "reporter_pin": null,
       "wl_pin": null,
-      "consensus": "UNKNOWN",
-      "matched_name": "",
-      "matched_citations": [],
+      "consensus": "PARTIAL",
+      "matched_name": "Aucina v. Amoco Oil Co.",
+      "matched_citations": [
+        "871 F. Supp. 332",
+        "1994 U.S. Dist. LEXIS 18828",
+        "1994 WL 724044"
+      ],
       "sources": [
         {
-          "source": "courtlistener",
-          "found": false,
-          "url": "https://www.courtlistener.com/api/rest/v4/search/",
-          "case_name": "",
-          "citations": [],
-          "notes": "No cite/name match in queries []",
-          "http_status": null
+          "source": "courtlistener_citation",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/1685026/aucina-v-amoco-oil-co/",
+          "case_name": "Aucina v. Amoco Oil Co.",
+          "citations": [
+            "871 F. Supp. 332",
+            "1994 U.S. Dist. LEXIS 18828",
+            "1994 WL 724044"
+          ],
+          "notes": "Citation-lookup status=200; clusters=1",
+          "http_status": 200
         },
         {
           "source": "case.law_static",
@@ -1635,324 +253,29 @@
       ]
     },
     {
-      "query": "Kantor v. Wellesley Galleries, Ltd, 704 F. 2d 1088",
-      "case_name_guess": "Kantor v. Wellesley Galleries, Ltd",
-      "reporter_pin": "704 F.2d 1088",
-      "wl_pin": null,
-      "consensus": "FOUND",
-      "matched_name": "Kantor v. Wellesley Galleries, Ltd.",
-      "matched_citations": [
-        "704 F.2d 1088"
-      ],
-      "sources": [
-        {
-          "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/8926931/kantor-v-wellesley-galleries-ltd/",
-          "case_name": "Kantor v. Wellesley Galleries, Ltd.",
-          "citations": [
-            "704 F.2d 1088"
-          ],
-          "notes": "Search q='\"704 F.2d 1088\"'; cite_match=True; wl_match=False; name_match=True",
-          "http_status": 200
-        },
-        {
-          "source": "case.law_static",
-          "found": true,
-          "url": "https://static.case.law/f2d/704/html/1088-01.html",
-          "case_name": "Kantor v. Wellesley Galleries, Ltd.",
-          "citations": [
-            "704 F.2d 1088"
-          ],
-          "notes": "Exact first_page match in CAP CasesMetadata.json",
-          "http_status": 200
-        }
-      ]
-    },
-    {
-      "query": "Lewis v. Verizon Commc\u2019ns, Inc, 627 F. 3d 395",
-      "case_name_guess": "Lewis v. Verizon Commc\u2019ns, Inc",
-      "reporter_pin": "627 F.3d 395",
-      "wl_pin": null,
-      "consensus": "CAPTION_MISMATCH",
-      "matched_name": "Delores Lewis v. Verizon Communications, Inc.",
-      "matched_citations": [
-        "627 F.3d 395",
-        "51 Communications Reg. (P&F) 1112",
-        "2010 U.S. App. LEXIS 23725",
-        "2010 WL 4645465"
-      ],
-      "sources": [
-        {
-          "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/179462/delores-lewis-v-verizon-communications-inc/",
-          "case_name": "Delores Lewis v. Verizon Communications, Inc.",
-          "citations": [
-            "627 F.3d 395",
-            "51 Communications Reg. (P&F) 1112",
-            "2010 U.S. App. LEXIS 23725",
-            "2010 WL 4645465"
-          ],
-          "notes": "Search q='\"627 F.3d 395\"'; cite_match=True; wl_match=False; name_match=False",
-          "http_status": 200
-        },
-        {
-          "source": "case.law_static",
-          "found": true,
-          "url": "https://static.case.law/f3d/627/html/0395-01.html",
-          "case_name": "Lewis v. Verizon Communications, Inc.",
-          "citations": [
-            "627 F.3d 395"
-          ],
-          "notes": "Exact first_page match in CAP CasesMetadata.json; caption mismatch vs query name ('Lewis v. Verizon Commc\u2019ns, Inc' vs 'Lewis v. Verizon Communications, Inc.')",
-          "http_status": 200
-        }
-      ]
-    },
-    {
-      "query": "Notice of Removal. Savelson v. W. States Bankcard Ass\u2019n, 731 F. 2d 1423",
-      "case_name_guess": "Notice of Removal. Savelson v. W. States Bankcard Ass\u2019n",
-      "reporter_pin": "731 F.2d 1423",
-      "wl_pin": null,
-      "consensus": "CAPTION_MISMATCH",
-      "matched_name": "Salveson v. Western States Bankcard Ass'n",
-      "matched_citations": [
-        "731 F.2d 1423"
-      ],
-      "sources": [
-        {
-          "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/8930660/salveson-v-western-states-bankcard-assn/",
-          "case_name": "Salveson v. Western States Bankcard Ass'n",
-          "citations": [
-            "731 F.2d 1423"
-          ],
-          "notes": "Search q='\"731 F.2d 1423\"'; cite_match=True; wl_match=False; name_match=False",
-          "http_status": 200
-        },
-        {
-          "source": "case.law_static",
-          "found": true,
-          "url": "https://static.case.law/f2d/731/html/1423-01.html",
-          "case_name": "Salveson v. Western States Bankcard Ass'n",
-          "citations": [
-            "731 F.2d 1423"
-          ],
-          "notes": "Exact first_page match in CAP CasesMetadata.json; caption mismatch vs query name ('Notice of Removal. Savelson v. W. States Bankcard Ass\u2019n' vs \"Salveson v. Western States Bankcard Ass'n\")",
-          "http_status": 200
-        }
-      ]
-    },
-    {
-      "query": "Rabago-Alvarez v. Dart Industries, Inc, 55 Cal. App. 3d 91 (1976)",
-      "case_name_guess": "Rabago-Alvarez v. Dart Industries, Inc",
-      "reporter_pin": "55 Cal. App. 3d 91",
-      "wl_pin": null,
-      "consensus": "FOUND",
-      "matched_name": "Rabago-Alvarez v. Dart Industries, Inc.",
-      "matched_citations": [
-        "55 Cal. App. 3d 91",
-        "127 Cal. Rptr. 222",
-        "115 L.R.R.M. (BNA) 4704",
-        "1976 Cal. App. LEXIS 1220"
-      ],
-      "sources": [
-        {
-          "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/2174157/rabago-alvarez-v-dart-industries-inc/",
-          "case_name": "Rabago-Alvarez v. Dart Industries, Inc.",
-          "citations": [
-            "55 Cal. App. 3d 91",
-            "127 Cal. Rptr. 222",
-            "115 L.R.R.M. (BNA) 4704",
-            "1976 Cal. App. LEXIS 1220"
-          ],
-          "notes": "Search q='\"55 Cal. App. 3d 91\"'; cite_match=True; wl_match=False; name_match=True",
-          "http_status": 200
-        },
-        {
-          "source": "case.law_static",
-          "found": true,
-          "url": "https://static.case.law/cal-app-3d/55/html/0091-01.html",
-          "case_name": "Rabago-Alvarez v. Dart Industries, Inc.",
-          "citations": [
-            "55 Cal. App. 3d 91"
-          ],
-          "notes": "Exact first_page match in CAP CasesMetadata.json",
-          "http_status": 200
-        }
-      ]
-    },
-    {
-      "query": "Sanchez v. Monumental Life Ins. Co, 102 F. 3d 398",
-      "case_name_guess": "Sanchez v. Monumental Life Ins. Co",
-      "reporter_pin": "102 F.3d 398",
-      "wl_pin": null,
-      "consensus": "FOUND",
-      "matched_name": "Sanchez v. Monumental Life Insurance",
-      "matched_citations": [
-        "102 F.3d 398"
-      ],
-      "sources": [
-        {
-          "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/731038/richard-m-sanchez-v-monumental-life-insurance-company/",
-          "case_name": "Richard M. Sanchez v. Monumental Life Insurance Company",
-          "citations": [
-            "102 F.3d 398",
-            "1996 WL 726408"
-          ],
-          "notes": "Search q='\"102 F.3d 398\"'; cite_match=True; wl_match=False; name_match=False",
-          "http_status": 200
-        },
-        {
-          "source": "case.law_static",
-          "found": true,
-          "url": "https://static.case.law/f3d/102/html/0398-01.html",
-          "case_name": "Sanchez v. Monumental Life Insurance",
-          "citations": [
-            "102 F.3d 398"
-          ],
-          "notes": "Exact first_page match in CAP CasesMetadata.json",
-          "http_status": 200
-        }
-      ]
-    },
-    {
-      "query": "See Smith v. Brown-Forman Distillers Corp, 196 Cal. App. 3d 503 (1989)",
-      "case_name_guess": "Smith v. Brown-Forman Distillers Corp",
-      "reporter_pin": "196 Cal. App. 3d 503",
-      "wl_pin": null,
-      "consensus": "FOUND",
-      "matched_name": "Smith v. Brown-Forman Distillers Corp.",
-      "matched_citations": [
-        "196 Cal. App. 3d 503",
-        "241 Cal. Rptr. 916",
-        "2 I.E.R. Cas. (BNA) 1516",
-        "1987 Cal. App. LEXIS 2346"
-      ],
-      "sources": [
-        {
-          "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/2137018/smith-v-brown-forman-distillers-corp/",
-          "case_name": "Smith v. Brown-Forman Distillers Corp.",
-          "citations": [
-            "196 Cal. App. 3d 503",
-            "241 Cal. Rptr. 916",
-            "2 I.E.R. Cas. (BNA) 1516",
-            "1987 Cal. App. LEXIS 2346"
-          ],
-          "notes": "Search q='\"196 Cal. App. 3d 503\"'; cite_match=True; wl_match=False; name_match=True",
-          "http_status": 200
-        },
-        {
-          "source": "case.law_static",
-          "found": true,
-          "url": "https://static.case.law/cal-app-3d/196/html/0503-01.html",
-          "case_name": "Smith v. Brown-Forman Distillers Corp.",
-          "citations": [
-            "196 Cal. App. 3d 503"
-          ],
-          "notes": "Exact first_page match in CAP CasesMetadata.json",
-          "http_status": 200
-        }
-      ]
-    },
-    {
-      "query": "Simmons v. PCR Technology, 209 F.Supp. 2d 1029",
-      "case_name_guess": "Simmons v. PCR Technology",
-      "reporter_pin": "209 F. Supp. 2d 1029",
-      "wl_pin": null,
-      "consensus": "FOUND",
-      "matched_name": "Simmons v. PCR TECHNOLOGY",
-      "matched_citations": [
-        "209 F. Supp. 2d 1029",
-        "2002 U.S. Dist. LEXIS 12094",
-        "2002 WL 1483261"
-      ],
-      "sources": [
-        {
-          "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/2425037/simmons-v-pcr-technology/",
-          "case_name": "Simmons v. PCR TECHNOLOGY",
-          "citations": [
-            "209 F. Supp. 2d 1029",
-            "2002 U.S. Dist. LEXIS 12094",
-            "2002 WL 1483261"
-          ],
-          "notes": "Search q='\"209 F. Supp. 2d 1029\"'; cite_match=True; wl_match=False; name_match=True",
-          "http_status": 200
-        },
-        {
-          "source": "case.law_static",
-          "found": true,
-          "url": "https://static.case.law/f-supp-2d/209/html/1029-01.html",
-          "case_name": "Simmons v. PCR Technology",
-          "citations": [
-            "209 F. Supp. 2d 1029"
-          ],
-          "notes": "Exact first_page match in CAP CasesMetadata.json",
-          "http_status": 200
-        }
-      ]
-    },
-    {
-      "query": "State Farm Mut. Auto Ins. Co. v. Dyer, 19 F. 3d 514",
-      "case_name_guess": "State Farm Mut. Auto Ins. Co. v. Dyer",
-      "reporter_pin": "19 F.3d 514",
-      "wl_pin": null,
-      "consensus": "FOUND",
-      "matched_name": "State Farm Mutual Automobile Insurance v. Dyer",
-      "matched_citations": [
-        "19 F.3d 514"
-      ],
-      "sources": [
-        {
-          "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/7028306/state-farm-mutual-automobile-insurance-v-dyer/",
-          "case_name": "State Farm Mutual Automobile Insurance v. Dyer",
-          "citations": [
-            "19 F.3d 514"
-          ],
-          "notes": "Search q='\"19 F.3d 514\"'; cite_match=True; wl_match=False; name_match=True",
-          "http_status": 200
-        },
-        {
-          "source": "case.law_static",
-          "found": true,
-          "url": "https://static.case.law/f3d/19/html/0514-01.html",
-          "case_name": "State Farm Mutual Automobile Insurance v. Dyer",
-          "citations": [
-            "19 F.3d 514"
-          ],
-          "notes": "Exact first_page match in CAP CasesMetadata.json",
-          "http_status": 200
-        }
-      ]
-    },
-    {
       "query": "Villa v. Maricopa County, 865 F. 3d 8",
       "case_name_guess": "Villa v. Maricopa County",
       "reporter_pin": "865 F.3d 8",
       "wl_pin": null,
-      "consensus": "NOT_FOUND",
-      "matched_name": "",
-      "matched_citations": [],
+      "consensus": "CAPTION_MISMATCH",
+      "matched_name": "Shaulis v. Nordstrom, Inc.",
+      "matched_citations": [
+        "865 F.3d 1",
+        "2017 WL 3167619",
+        "2017 U.S. App. LEXIS 13545"
+      ],
       "sources": [
         {
-          "source": "courtlistener",
-          "found": false,
-          "url": "https://www.courtlistener.com/api/rest/v4/search/",
-          "case_name": "",
-          "citations": [],
-          "notes": "No cite/name match in queries ['\"865 F.3d 8\"', '\"Villa v. Maricopa County\"']",
+          "source": "courtlistener_citation",
+          "found": true,
+          "url": "https://www.courtlistener.com/opinion/4412474/shaulis-v-nordstrom-inc/",
+          "case_name": "Shaulis v. Nordstrom, Inc.",
+          "citations": [
+            "865 F.3d 1",
+            "2017 WL 3167619",
+            "2017 U.S. App. LEXIS 13545"
+          ],
+          "notes": "Citation-lookup status=200; clusters=1; caption mismatch vs query name ('Villa v. Maricopa County' vs 'Shaulis v. Nordstrom, Inc.')",
           "http_status": 200
         },
         {
@@ -1963,6 +286,15 @@
           "citations": [],
           "notes": "No case with first_page=8 in CAP volume f3d/865",
           "http_status": null
+        },
+        {
+          "source": "courtlistener",
+          "found": false,
+          "url": "https://www.courtlistener.com/api/rest/v4/search/",
+          "case_name": "",
+          "citations": [],
+          "notes": "No cite/name match in queries ['\"865 F.3d 8\"', '\"Villa v. Maricopa County\"']",
+          "http_status": 200
         }
       ]
     },
@@ -1976,12 +308,14 @@
       "matched_citations": [],
       "sources": [
         {
-          "source": "courtlistener",
+          "source": "courtlistener_citation",
           "found": false,
-          "url": "https://www.courtlistener.com/api/rest/v4/search/",
+          "url": "https://www.courtlistener.com/api/rest/v4/citation-lookup/",
           "case_name": "",
-          "citations": [],
-          "notes": "No cite/name match in queries ['3411462', 'WL 3411462']",
+          "citations": [
+            "2010 WL 3411462"
+          ],
+          "notes": "Citation not found: '2010 WL 3411462'",
           "http_status": 200
         },
         {
@@ -1992,42 +326,14 @@
           "citations": [],
           "notes": "No supported reporter pin to resolve on static.case.law",
           "http_status": null
-        }
-      ]
-    },
-    {
-      "query": "White v. FCI USA, Inc, 319 F. 3d 672",
-      "case_name_guess": "White v. FCI USA, Inc",
-      "reporter_pin": "319 F.3d 672",
-      "wl_pin": null,
-      "consensus": "FOUND",
-      "matched_name": "White v. FCI USA, Inc.",
-      "matched_citations": [
-        "319 F.3d 672",
-        "2003 WL 149846"
-      ],
-      "sources": [
-        {
-          "source": "courtlistener",
-          "found": true,
-          "url": "https://www.courtlistener.com/opinion/29940/white-v-fci-usa-inc/",
-          "case_name": "White v. FCI USA, Inc.",
-          "citations": [
-            "319 F.3d 672",
-            "2003 WL 149846"
-          ],
-          "notes": "Search q='\"319 F.3d 672\"'; cite_match=True; wl_match=False; name_match=True",
-          "http_status": 200
         },
         {
-          "source": "case.law_static",
-          "found": true,
-          "url": "https://static.case.law/f3d/319/html/0672-01.html",
-          "case_name": "White v. FCI USA, Inc.",
-          "citations": [
-            "319 F.3d 672"
-          ],
-          "notes": "Exact first_page match in CAP CasesMetadata.json",
+          "source": "courtlistener",
+          "found": false,
+          "url": "https://www.courtlistener.com/api/rest/v4/search/",
+          "case_name": "",
+          "citations": [],
+          "notes": "No cite/name match in queries ['3411462', 'WL 3411462']",
           "http_status": 200
         }
       ]
