@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "name": "Jasmine J. Stanzick",
+  "attorney_id": null,
+  "firm": "Seyfarth Shaw LLP",
+  "linked_matters": [
+    29
+  ],
+  "generated_at": "2026-09-11T21:49:05.741Z",
+  "source": "courtlistener",
+  "history": {
+    "dockets_found": 9,
+    "courts": {
+      "District Court, C.D. California": 3,
+      "District Court, N.D. California": 3,
+      "District Court, S.D. California": 1,
+      "District Court, District of Columbia": 1,
+      "District Court, N.D. Illinois": 1
+    },
+    "date_range": {
+      "earliest": "2019-12-02",
+      "latest": "2026-04-03"
+    },
+    "sample": [
+      {
+        "case_name": "Zorayda Mariscal v. Appfolio, Inc.",
+        "docket_number": "2:26-cv-03591",
+        "court": "District Court, C.D. California",
+        "date_filed": "2026-04-03"
+      },
+      {
+        "case_name": "Kennedy Bosco v. First Advantage Background Services Corp.",
+        "docket_number": "2:25-cv-12019",
+        "court": "District Court, C.D. California",
+        "date_filed": "2025-12-17"
+      },
+      {
+        "case_name": "Boyer v. First Advantage Background Services Corporation",
+        "docket_number": "3:25-cv-06723",
+        "court": "District Court, N.D. California",
+        "date_filed": "2025-08-08"
+      },
+      {
+        "case_name": "Williams v. DISA Global Solutions, Inc.",
+        "docket_number": "4:25-cv-06678",
+        "court": "District Court, N.D. California",
+        "date_filed": "2025-08-07"
+      },
+      {
+        "case_name": "Roman v. First Background Services Corp.",
+        "docket_number": "3:25-cv-01955",
+        "court": "District Court, S.D. California",
+        "date_filed": "2025-07-31"
+      },
+      {
+        "case_name": "Shante Julissa Reaux v. Equifax Information Services, LLC",
+        "docket_number": "2:25-cv-03323",
+        "court": "District Court, C.D. California",
+        "date_filed": "2025-04-14"
+      },
+      {
+        "case_name": "In re: Uber Technologies, Inc., Passenger Sexual Assault Litigation",
+        "docket_number": "3:23-md-03084",
+        "court": "District Court, N.D. California",
+        "date_filed": "2023-10-04"
+      },
+      {
+        "case_name": "GIALLELA v. UNITED PROPERTY MANAGEMENT, INC.",
+        "docket_number": "1:23-cv-01978",
+        "court": "District Court, District of Columbia",
+        "date_filed": "2023-07-10"
+      },
+      {
+        "case_name": "Fleming v. Lacey",
+        "docket_number": "1:19-cv-07898",
+        "court": "District Court, N.D. Illinois",
+        "date_filed": "2019-12-02"
+      }
+    ],
+    "sample_truncated": false
+  },
+  "vs_you": {
+    "matters": [
+      29
+    ],
+    "entries_analyzed": 0,
+    "patterns": {
+      "motion_to_dismiss": 0,
+      "summary_judgment": 0,
+      "discovery_motion": 0,
+      "motion_to_strike": 0,
+      "sanctions": 0,
+      "settlement": 0,
+      "voluntary_dismissal": 0,
+      "default": 0,
+      "appeal": 0
+    }
+  },
+  "caveats": [
+    "Name-based RECAP search can conflate attorneys with common names; pin --attorney-id when ambiguous.",
+    "History is a docket sample (up to ~60 most recent), not an exhaustive record.",
+    "Outcome signals (settlement/dismissal mentions) are directional, not adjudicated results.",
+    "Motion patterns cover only matters with locally synced docket entries."
+  ]
+}
