@@ -257,7 +257,8 @@ async function main() {
   if (attorneyIdValue) {
     const attorney = await client.getAttorney({ attorneyId: attorneyIdValue });
     name = attorney?.name ?? name ?? `attorney-${attorneyIdValue}`;
-  } else if (matter && matter.courtlistener?.docket_id) {
+  } else if (!name && matter && matter.courtlistener?.docket_id) {
+    // Auto-discovery runs only when no explicit --name/--attorney-id was given.
     const parties = await client.listParties({ docketId: matter.courtlistener.docket_id });
     const discovery = discoverCounselCandidates(parties, matter.defendants);
     if (discovery.autoPick) {
