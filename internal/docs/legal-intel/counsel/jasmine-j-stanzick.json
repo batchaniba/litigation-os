@@ -1,13 +1,17 @@
 {
-  "version": 1,
+  "version": 2,
   "name": "Jasmine J. Stanzick",
   "attorney_id": null,
-  "firm": "Seyfarth Shaw LLP",
+  "firm": null,
   "linked_matters": [
     29
   ],
-  "generated_at": "2026-09-11T21:49:05.741Z",
+  "generated_at": "2026-09-11T23:39:37.491Z",
   "source": "courtlistener",
+  "identity": {
+    "level": "name-based",
+    "label": "Name-based match (no CourtListener attorney ID). Client and subject signals are directional; pin --attorney-id to verify."
+  },
   "history": {
     "dockets_found": 9,
     "courts": {
@@ -79,6 +83,93 @@
     ],
     "sample_truncated": false
   },
+  "clients": {
+    "cases_parsed": 8,
+    "defendants": [
+      {
+        "name": "First Advantage Background Services Corporation",
+        "count": 2
+      },
+      {
+        "name": "Appfolio, Inc.",
+        "count": 1
+      },
+      {
+        "name": "DISA Global Solutions, Inc.",
+        "count": 1
+      },
+      {
+        "name": "Equifax Information Services, LLC",
+        "count": 1
+      },
+      {
+        "name": "First Background Services Corp.",
+        "count": 1
+      },
+      {
+        "name": "Lacey",
+        "count": 1
+      },
+      {
+        "name": "UNITED PROPERTY MANAGEMENT, INC.",
+        "count": 1
+      }
+    ],
+    "plaintiffs": [
+      {
+        "name": "Boyer",
+        "count": 1
+      },
+      {
+        "name": "Fleming",
+        "count": 1
+      },
+      {
+        "name": "GIALLELA",
+        "count": 1
+      },
+      {
+        "name": "Kennedy Bosco",
+        "count": 1
+      },
+      {
+        "name": "Roman",
+        "count": 1
+      },
+      {
+        "name": "Shante Julissa Reaux",
+        "count": 1
+      },
+      {
+        "name": "Williams",
+        "count": 1
+      },
+      {
+        "name": "Zorayda Mariscal",
+        "count": 1
+      }
+    ],
+    "top_defendant": {
+      "name": "First Advantage Background Services Corporation",
+      "count": 2
+    }
+  },
+  "subjects": {
+    "tags": {
+      "fcra_background_screening": 5
+    },
+    "primary": "fcra_background_screening",
+    "screening_ecosystem": {
+      "detected": true,
+      "matched_cra_clients": [
+        "appfolio",
+        "disa",
+        "equifax",
+        "first advantage"
+      ]
+    },
+    "note": "Keyword heuristic over sampled case names; directional, not a legal determination."
+  },
   "vs_you": {
     "matters": [
       29
@@ -99,6 +190,7 @@
   "caveats": [
     "Name-based RECAP search can conflate attorneys with common names; pin --attorney-id when ambiguous.",
     "History is a docket sample (up to ~60 most recent), not an exhaustive record.",
+    "Client and subject signals are keyword heuristics over sampled case names; directional, not adjudicated.",
     "Outcome signals (settlement/dismissal mentions) are directional, not adjudicated results.",
     "Motion patterns cover only matters with locally synced docket entries."
   ]
