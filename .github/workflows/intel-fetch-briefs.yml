@@ -1,0 +1,101 @@
+name: Intel Fetch Briefs
+
+# Surgical RECAP brief fetcher. Downloads filed papers for specific docket
+# entries (e.g. opposing counsel's Rule 12 briefs) and commits the PDFs to the
+# `documents` branch (the filed-paper store). Never writes to main.
+
+on:
+  workflow_dispatch:
+    inputs:
+      docket_number:
+        description: 'Docket number (e.g. "5:25-cv-02931")'
+        required: true
+        type: string
+      court:
+        description: 'CourtListener court id (e.g. "cacd", "njd"); blank to auto-match'
+        required: false
+        type: string
+      entries:
+        description: 'Entry numbers CSV (e.g. "64,68,69,75") or "all"'
+        required: true
+        type: string
+      label:
+        description: 'Output folder label (e.g. "ventura-randstad")'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: intel-fetch-briefs
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout scripts
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 1
+          sparse-checkout: |
+            internal/scripts
+
+      - name: Setup Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: 22
+
+      - name: Check CourtListener token
+        run: |
+          if [ -z "${{ secrets.COURTLISTENER_TOKEN }}" ]; then
+            echo "::error::COURTLISTENER_TOKEN is not set."
+            exit 1
+          fi
+
+      - name: Fetch RECAP briefs
+        run: |
+          node internal/scripts/courtlistener/intel/fetch-recap-briefs.mjs \
+            --docket-number "${{ inputs.docket_number }}" \
+            --court "${{ inputs.court }}" \
+            --entries "${{ inputs.entries }}" \
+            --label "${{ inputs.label }}" \
+            --out /tmp/briefs
+        env:
+          COURTLISTENER_TOKEN: ${{ secrets.COURTLISTENER_TOKEN }}
+
+      - name: Verify downloads
+        run: |
+          ls -la /tmp/briefs/${{ inputs.label }}/
+          count=$(ls /tmp/briefs/${{ inputs.label }}/*.pdf 2>/dev/null | wc -l)
+          echo "pdf_count=$count"
+          if [ "$count" -eq 0 ]; then
+            echo "::error::no PDFs downloaded; see manifest.json for per-document status"
+            cat /tmp/briefs/${{ inputs.label }}/manifest.json
+            exit 1
+          fi
+
+      - name: Checkout document store
+        uses: actions/checkout@v7
+        with:
+          ref: documents
+          path: docstore
+          fetch-depth: 1
+
+      - name: Commit to document store
+        run: |
+          dest="docstore/internal/public/documents/counsel-briefs/${{ inputs.label }}"
+          mkdir -p "$dest"
+          cp /tmp/briefs/${{ inputs.label }}/*.pdf "$dest"/
+          cp /tmp/briefs/${{ inputs.label }}/manifest.json "$dest"/
+          cd docstore
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "nothing new to commit"
+          else
+            git commit -m "RECAP briefs: ${{ inputs.label }} (${{ inputs.docket_number }})"
+            git push origin HEAD:documents
+          fi

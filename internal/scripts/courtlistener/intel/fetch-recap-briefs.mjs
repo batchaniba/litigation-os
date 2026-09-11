@@ -1,0 +1,192 @@
+// Surgical RECAP brief fetcher.
+//
+// Given a docket number (+ optional CourtListener court id) and a list of
+// docket entry numbers, resolves the CourtListener docket, lists its entries,
+// and downloads every available RECAP PDF for the requested entries.
+//
+// Runs in CI where COURTLISTENER_TOKEN exists. Writes PDFs + manifest.json to
+// --out/<label>/. Never touches main; the workflow commits results to the
+// `documents` branch (filed-paper store).
+//
+// Usage:
+//   node fetch-recap-briefs.mjs --docket-number 5:25-cv-02931 --court cacd \
+//     --entries 64,68,69,75 --label ventura-randstad --out /tmp/briefs
+//   --entries "all" downloads every entry with available RECAP docs.
+
+import { mkdir, writeFile } from "node:fs/promises";
+import { join } from "node:path";
+import {
+  CL_BASE,
+  CL_UA,
+  budgetAllows,
+  createClient,
+  readCourtListenerToken,
+} from "../client.mjs";
+
+function arg(name, def = null) {
+  const ix = process.argv.indexOf(`--${name}`);
+  if (ix === -1 || ix + 1 >= process.argv.length) return def;
+  return process.argv[ix + 1];
+}
+
+const DOCKET_NUMBER = arg("docket-number");
+const COURT_ID = arg("court", null);
+const ENTRIES_RAW = arg("entries", "");
+const LABEL = arg("label", "briefs");
+const OUT = arg("out", "./briefs");
+
+function sanitize(value) {
+  return (
+    String(value ?? "")
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "")
+      .slice(0, 60) || "doc"
+  );
+}
+
+async function downloadPdf(url, token) {
+  const response = await fetch(url, {
+    headers: { Authorization: `Token ${token}`, "User-Agent": CL_UA },
+  });
+  if (!response.ok) {
+    throw new Error(`HTTP ${response.status} for ${url}`);
+  }
+  const buf = Buffer.from(await response.arrayBuffer());
+  const contentType = response.headers.get("content-type") || "";
+  if (!contentType.includes("pdf") && buf.length < 1024) {
+    throw new Error(`unexpected content-type ${contentType} (${buf.length} bytes) for ${url}`);
+  }
+  return buf;
+}
+
+async function main() {
+  if (!DOCKET_NUMBER) throw new Error("--docket-number is required");
+  if (!ENTRIES_RAW) throw new Error("--entries is required (CSV entry numbers or \"all\")");
+  const token = readCourtListenerToken();
+  if (!token) throw new Error("COURTLISTENER_TOKEN is required");
+
+  const client = createClient({ token });
+  const usage = await client.getApiUsage();
+  const budget = budgetAllows(usage, { minDaily: 15, minHourly: 3, minMinute: 2 });
+  if (!budget.ok) throw new Error(`CourtListener budget too low: ${budget.reason}`);
+  console.log(
+    `budget ok (daily=${budget.remaining.daily} hourly=${budget.remaining.hourly} minute=${budget.remaining.minute})`,
+  );
+
+  const dockets = await client.searchDockets({ docketNumber: DOCKET_NUMBER, courtId: COURT_ID });
+  if (!dockets.length) throw new Error(`no CourtListener docket for ${DOCKET_NUMBER}`);
+  const docket =
+    dockets.find((d) => String(d.docket_number) === String(DOCKET_NUMBER)) ?? dockets[0];
+  console.log(
+    `docket: ${docket.case_name} (${docket.docket_number}) id=${docket.id} court=${docket.court}`,
+  );
+  if (dockets.length > 1) {
+    console.log(`note: ${dockets.length} candidates; picked first exact docket_number match`);
+  }
+
+  const entries = await client.listDocketEntries({ docketId: docket.id });
+  console.log(`docket has ${entries.length} entries`);
+  let wanted;
+  if (ENTRIES_RAW === "all") {
+    wanted = entries;
+  } else {
+    const nums = new Set(
+      ENTRIES_RAW.split(",")
+        .map((n) => Number(String(n).trim()))
+        .filter(Number.isFinite),
+    );
+    wanted = entries.filter((e) => nums.has(Number(e.entry_number)));
+    const found = new Set(wanted.map((e) => Number(e.entry_number)));
+    for (const n of nums) {
+      if (!found.has(n)) console.log(`warning: entry_number ${n} not found in docket entries`);
+    }
+  }
+  console.log(`matched ${wanted.length} entries`);
+
+  const dir = join(OUT, LABEL);
+  await mkdir(dir, { recursive: true });
+
+  const manifest = {
+    label: LABEL,
+    docket: {
+      id: docket.id,
+      case_name: docket.case_name,
+      docket_number: docket.docket_number,
+      court: docket.court,
+    },
+    fetched_at: new Date().toISOString(),
+    documents: [],
+  };
+
+  for (const entry of wanted) {
+    const docs = [];
+    let url = `${CL_BASE}/recap-documents/?docket_entry=${entry.id}`;
+    while (url) {
+      const page = await client.request(url, { auth: true });
+      const rows = Array.isArray(page?.results) ? page.results : [];
+      docs.push(...rows);
+      url = page?.next || null;
+    }
+    if (!docs.length) {
+      console.log(`entry ${entry.entry_number}: no recap-documents rows`);
+      manifest.documents.push({
+        entry_number: entry.entry_number,
+        entry_id: entry.id,
+        description: entry.description,
+        status: "no-recap-rows",
+      });
+      continue;
+    }
+    for (const doc of docs) {
+      const rec = {
+        entry_number: entry.entry_number,
+        entry_id: entry.id,
+        description: entry.description,
+        date_filed: entry.date_filed,
+        document_number: doc.document_number,
+        attachment_number: doc.attachment_number,
+        pacer_doc_id: doc.pacer_doc_id,
+        is_available: !!doc.is_available,
+        status: "skipped",
+        file: null,
+      };
+      if (!doc.is_available) {
+        rec.status = "unavailable";
+        console.log(`entry ${entry.entry_number} doc ${doc.document_number}: not available on CourtListener`);
+      } else {
+        const pdfUrl = doc.filepath_ia
+          ? `https://storage.courtlistener.com/${doc.filepath_ia}`
+          : null;
+        if (!pdfUrl) {
+          rec.status = "no-filepath";
+          console.log(`entry ${entry.entry_number} doc ${doc.document_number}: available but no filepath_ia`);
+        } else {
+          const fname = `entry-${entry.entry_number}-doc-${doc.document_number ?? "0"}-${sanitize(entry.description)}.pdf`;
+          try {
+            const buf = await downloadPdf(pdfUrl, token);
+            await writeFile(join(dir, fname), buf);
+            rec.status = "downloaded";
+            rec.file = fname;
+            rec.bytes = buf.length;
+            console.log(`entry ${entry.entry_number}: downloaded ${fname} (${buf.length} bytes)`);
+          } catch (err) {
+            rec.status = "download-failed";
+            rec.error = String(err?.message || err);
+            console.log(`entry ${entry.entry_number}: download failed: ${rec.error}`);
+          }
+        }
+      }
+      manifest.documents.push(rec);
+    }
+  }
+
+  await writeFile(join(dir, "manifest.json"), JSON.stringify(manifest, null, 2));
+  const okCount = manifest.documents.filter((d) => d.status === "downloaded").length;
+  console.log(`done: ${okCount}/${manifest.documents.length} documents downloaded -> ${dir}`);
+}
+
+main().catch((err) => {
+  console.error(`fetch-recap-briefs failed: ${err?.message || err}`);
+  process.exit(1);
+});
