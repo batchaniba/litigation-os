@@ -1,0 +1,221 @@
+{
+  "version": 1,
+  "name": "Nathan D. Chapman",
+  "attorney_id": null,
+  "firm": "Kabat Chapman & Ozmer LLP",
+  "linked_matters": [
+    27
+  ],
+  "generated_at": "2026-09-11T21:47:59.015Z",
+  "source": "courtlistener",
+  "history": {
+    "dockets_found": 60,
+    "courts": {
+      "Court of Appeals for the Eleventh Circuit": 1,
+      "District Court, S.D. Texas": 1,
+      "District Court, N.D. Georgia": 10,
+      "District Court, C.D. California": 5,
+      "District Court, D. Nevada": 1,
+      "District Court, S.D. Indiana": 1,
+      "District Court, W.D. Washington": 2,
+      "District Court, M.D. Georgia": 3,
+      "District Court, D. Connecticut": 2,
+      "District Court, M.D. Florida": 2,
+      "District Court, S.D. California": 2,
+      "District Court, N.D. Illinois": 4,
+      "District Court, E.D. California": 6,
+      "United States Judicial Panel on Multidistrict Litigation": 1,
+      "District Court, E.D. Texas": 1,
+      "District Court, S.D. Alabama": 1,
+      "District Court, S.D. Florida": 4,
+      "District Court, W.D. North Carolina": 3,
+      "District Court, N.D. Alabama": 3,
+      "District Court, D. New Jersey": 2,
+      "District Court, D. Montana": 1,
+      "District Court, W.D. New York": 1,
+      "District Court, M.D. Alabama": 1,
+      "District Court, S.D. New York": 1,
+      "District Court, E.D. Missouri": 1
+    },
+    "date_range": {
+      "earliest": "2017-03-24",
+      "latest": "2026-04-30"
+    },
+    "sample": [
+      {
+        "case_name": "The National Association of Realtors v. James Mullis",
+        "docket_number": "26-11566",
+        "court": "Court of Appeals for the Eleventh Circuit",
+        "date_filed": "2026-04-30"
+      },
+      {
+        "case_name": "American Bankers Insurance Company of Florida v. Schouten",
+        "docket_number": "4:26-cv-03424",
+        "court": "District Court, S.D. Texas",
+        "date_filed": "2026-04-28"
+      },
+      {
+        "case_name": "Ankrah v. America First Moving Services, LLC",
+        "docket_number": "1:26-cv-00666",
+        "court": "District Court, N.D. Georgia",
+        "date_filed": "2026-02-05"
+      },
+      {
+        "case_name": "Nicholas A. Ventura v. Randstad US LLC",
+        "docket_number": "5:25-cv-02931",
+        "court": "District Court, C.D. California",
+        "date_filed": "2025-11-03"
+      },
+      {
+        "case_name": "Solomon v. Spherion Staffing LLC",
+        "docket_number": "3:25-cv-00380",
+        "court": "District Court, D. Nevada",
+        "date_filed": "2025-07-25"
+      },
+      {
+        "case_name": "American Bankers Insurance Company of Florida v. Ferguson",
+        "docket_number": "1:25-cv-03981",
+        "court": "District Court, N.D. Georgia",
+        "date_filed": "2025-07-17"
+      },
+      {
+        "case_name": "OLSON v. HEARTLAND PAYMENT SYSTEMS, LLC (D/B/A GLOBAL PAYMENTS)",
+        "docket_number": "4:25-cv-00114",
+        "court": "District Court, S.D. Indiana",
+        "date_filed": "2025-06-20"
+      },
+      {
+        "case_name": "SidePrize LLC v. Huffman",
+        "docket_number": "2:25-cv-01092",
+        "court": "District Court, W.D. Washington",
+        "date_filed": "2025-06-11"
+      },
+      {
+        "case_name": "THOMAS v. GLOBAL PAYMENTS, INC.",
+        "docket_number": "4:25-cv-00155",
+        "court": "District Court, M.D. Georgia",
+        "date_filed": "2025-05-12"
+      },
+      {
+        "case_name": "Charter Communications, Inc. v. Myla",
+        "docket_number": "3:25-cv-00025",
+        "court": "District Court, D. Connecticut",
+        "date_filed": "2025-01-07"
+      },
+      {
+        "case_name": "American Bankers Insurance Company of Florida v. Absher",
+        "docket_number": "1:24-cv-02930",
+        "court": "District Court, N.D. Georgia",
+        "date_filed": "2024-07-02"
+      },
+      {
+        "case_name": "Timothy Elliott v. Charter Communications, Inc.",
+        "docket_number": "8:24-cv-01029",
+        "court": "District Court, C.D. California",
+        "date_filed": "2024-05-10"
+      },
+      {
+        "case_name": "1925 Hooper LLC v. Watson Realty Corp.",
+        "docket_number": "3:24-cv-00374",
+        "court": "District Court, M.D. Florida",
+        "date_filed": "2024-04-18"
+      },
+      {
+        "case_name": "Jean Szetoo v. Charter Communications Inc.",
+        "docket_number": "2:24-cv-01097",
+        "court": "District Court, C.D. California",
+        "date_filed": "2024-02-08"
+      },
+      {
+        "case_name": "Zuckerman v. Charter Communications, LLC",
+        "docket_number": "3:24-cv-00128",
+        "court": "District Court, S.D. California",
+        "date_filed": "2024-01-19"
+      },
+      {
+        "case_name": "Walston v. National Retail Solutions, Inc.",
+        "docket_number": "1:24-cv-00083",
+        "court": "District Court, N.D. Illinois",
+        "date_filed": "2024-01-03"
+      },
+      {
+        "case_name": "Jimenez v. Hyatt Corp.",
+        "docket_number": "2:23-cv-03028",
+        "court": "District Court, E.D. California",
+        "date_filed": "2023-12-28"
+      },
+      {
+        "case_name": "IN RE: Real Estate Commission Antitrust Litigation",
+        "docket_number": "MDL No. 3100",
+        "court": "United States Judicial Panel on Multidistrict Litigation",
+        "date_filed": "2023-12-27"
+      },
+      {
+        "case_name": "1925 Hooper LLC v. The National Association of Realtors",
+        "docket_number": "1:23-cv-05392",
+        "court": "District Court, N.D. Georgia",
+        "date_filed": "2023-11-22"
+      },
+      {
+        "case_name": "Charter Communications, Inc. v. Mahlum",
+        "docket_number": "3:23-cv-01106",
+        "court": "District Court, D. Connecticut",
+        "date_filed": "2023-08-18"
+      },
+      {
+        "case_name": "Arellano v. The J.M. Smucker, Co.",
+        "docket_number": "2:23-cv-01540",
+        "court": "District Court, E.D. California",
+        "date_filed": "2023-07-27"
+      },
+      {
+        "case_name": "Burton v. The Scion Group LLC",
+        "docket_number": "1:23-cv-01315",
+        "court": "District Court, N.D. Illinois",
+        "date_filed": "2023-03-02"
+      },
+      {
+        "case_name": "Irvin v. Marriott International Inc",
+        "docket_number": "4:23-cv-00131",
+        "court": "District Court, E.D. Texas",
+        "date_filed": "2023-02-20"
+      },
+      {
+        "case_name": "Schreiber v. Catalyst Nutraceuticals LLC",
+        "docket_number": "1:23-cv-00373",
+        "court": "District Court, N.D. Georgia",
+        "date_filed": "2023-01-25"
+      },
+      {
+        "case_name": "Khan v. Randstad Inhouse Services, LLC",
+        "docket_number": "2:22-cv-02288",
+        "court": "District Court, E.D. California",
+        "date_filed": "2022-12-22"
+      }
+    ],
+    "sample_truncated": true
+  },
+  "vs_you": {
+    "matters": [
+      27
+    ],
+    "entries_analyzed": 0,
+    "patterns": {
+      "motion_to_dismiss": 0,
+      "summary_judgment": 0,
+      "discovery_motion": 0,
+      "motion_to_strike": 0,
+      "sanctions": 0,
+      "settlement": 0,
+      "voluntary_dismissal": 0,
+      "default": 0,
+      "appeal": 0
+    }
+  },
+  "caveats": [
+    "Name-based RECAP search can conflate attorneys with common names; pin --attorney-id when ambiguous.",
+    "History is a docket sample (up to ~60 most recent), not an exhaustive record.",
+    "Outcome signals (settlement/dismissal mentions) are directional, not adjudicated results.",
+    "Motion patterns cover only matters with locally synced docket entries."
+  ]
+}
