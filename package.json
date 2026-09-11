@@ -28,6 +28,7 @@
     "generate:readme": "node internal/scripts/generate-readme-tables.mjs",
     "index:build": "python3 internal/scripts/build-document-index.py",
     "index:search": "python3 internal/scripts/search-documents.py",
+    "intel:counsel": "node internal/scripts/courtlistener/intel/counsel-dossier.mjs",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "next": "node internal/scripts/next-actions.mjs",
