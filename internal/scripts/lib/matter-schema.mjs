@@ -39,8 +39,6 @@ export const MatterSchema = z.object({
   documents: z.array(MatterDocumentSchema),
 });
 
-export type Matter = z.infer<typeof MatterSchema>;
-
 /** Validate a parsed matter JSON; returns an array of human-readable issues (empty = valid). */
 export function validateMatter(data) {
   const result = MatterSchema.safeParse(data);
