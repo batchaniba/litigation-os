@@ -1,0 +1,203 @@
+{
+  "version": 1,
+  "name": "Andrew P. Frederick",
+  "attorney_id": null,
+  "firm": "Morgan, Lewis & Bockius LLP",
+  "linked_matters": [
+    29
+  ],
+  "generated_at": "2026-09-11T21:58:15.825Z",
+  "source": "courtlistener",
+  "history": {
+    "dockets_found": 60,
+    "courts": {
+      "District Court, C.D. California": 30,
+      "District Court, W.D. Washington": 4,
+      "District Court, N.D. California": 19,
+      "District Court, E.D. California": 2,
+      "District Court, S.D. California": 3,
+      "District Court, S.D. Illinois": 1,
+      "District Court, S.D. Ohio": 1
+    },
+    "date_range": {
+      "earliest": "2014-08-12",
+      "latest": "2026-06-22"
+    },
+    "sample": [
+      {
+        "case_name": "Carlos Pulido v. AmerisourceBergen Drug Corporation",
+        "docket_number": "5:26-cv-03429",
+        "court": "District Court, C.D. California",
+        "date_filed": "2026-06-22"
+      },
+      {
+        "case_name": "William McMillan v. Delta Air Lines, Inc.",
+        "docket_number": "2:25-cv-11775",
+        "court": "District Court, C.D. California",
+        "date_filed": "2025-12-12"
+      },
+      {
+        "case_name": "Valdovinos v. Delta Air Lines Inc",
+        "docket_number": "2:25-cv-02026",
+        "court": "District Court, W.D. Washington",
+        "date_filed": "2025-10-17"
+      },
+      {
+        "case_name": "Malaspina v. American Airlines, Inc.",
+        "docket_number": "3:25-cv-05411",
+        "court": "District Court, N.D. California",
+        "date_filed": "2025-06-27"
+      },
+      {
+        "case_name": "Maria Prado v. Brenntag Pacific, Inc.",
+        "docket_number": "2:25-cv-05150",
+        "court": "District Court, C.D. California",
+        "date_filed": "2025-06-06"
+      },
+      {
+        "case_name": "James Smith v. Delta Air Lines, Inc.",
+        "docket_number": "2:25-cv-04930",
+        "court": "District Court, C.D. California",
+        "date_filed": "2025-05-30"
+      },
+      {
+        "case_name": "Griffin v. JetBlue Airways Corporation",
+        "docket_number": "4:25-cv-01888",
+        "court": "District Court, N.D. California",
+        "date_filed": "2025-02-21"
+      },
+      {
+        "case_name": "Biddle III v. Unifi Aviation, LLC",
+        "docket_number": "3:25-cv-01612",
+        "court": "District Court, N.D. California",
+        "date_filed": "2025-02-14"
+      },
+      {
+        "case_name": "Mireya Martinez v. Cencora, Inc.",
+        "docket_number": "5:24-cv-02663",
+        "court": "District Court, C.D. California",
+        "date_filed": "2024-12-18"
+      },
+      {
+        "case_name": "Sandhu v. Delta Air Lines, Inc.",
+        "docket_number": "3:24-cv-08212",
+        "court": "District Court, N.D. California",
+        "date_filed": "2024-11-20"
+      },
+      {
+        "case_name": "Aric Lemons v. Pearce Services, LLC",
+        "docket_number": "2:24-cv-05995",
+        "court": "District Court, C.D. California",
+        "date_filed": "2024-07-17"
+      },
+      {
+        "case_name": "Rachel Liebregt v. World Courier, Inc.",
+        "docket_number": "2:24-cv-03051",
+        "court": "District Court, C.D. California",
+        "date_filed": "2024-04-15"
+      },
+      {
+        "case_name": "Hugger v. Aramark Campus LLC",
+        "docket_number": "1:24-cv-00410",
+        "court": "District Court, E.D. California",
+        "date_filed": "2024-04-05"
+      },
+      {
+        "case_name": "Ayala v. JanCo FS 3, LLC",
+        "docket_number": "3:24-cv-02061",
+        "court": "District Court, N.D. California",
+        "date_filed": "2024-04-04"
+      },
+      {
+        "case_name": "Stephanie La Grow v. Jetblue Airways Corporation",
+        "docket_number": "2:24-cv-00518",
+        "court": "District Court, C.D. California",
+        "date_filed": "2024-01-19"
+      },
+      {
+        "case_name": "Luis Lesama Rodriguez v. Jetblue Airways Corporation",
+        "docket_number": "2:23-cv-08742",
+        "court": "District Court, C.D. California",
+        "date_filed": "2023-10-17"
+      },
+      {
+        "case_name": "Kapitanski v. Jet Aviation Flight Services, Inc.",
+        "docket_number": "3:23-cv-04900",
+        "court": "District Court, N.D. California",
+        "date_filed": "2023-09-25"
+      },
+      {
+        "case_name": "Wilfred McCauley v. Delta Air Lines, Inc.",
+        "docket_number": "2:23-cv-07079",
+        "court": "District Court, C.D. California",
+        "date_filed": "2023-08-28"
+      },
+      {
+        "case_name": "Pok v. JetBlue Airways Corporation",
+        "docket_number": "3:23-cv-01438",
+        "court": "District Court, S.D. California",
+        "date_filed": "2023-08-07"
+      },
+      {
+        "case_name": "Berg v. Unifi Aviation, LLC",
+        "docket_number": "3:23-cv-01334",
+        "court": "District Court, S.D. California",
+        "date_filed": "2023-07-20"
+      },
+      {
+        "case_name": "Wyatt v. Unifi Aviation, LLC",
+        "docket_number": "3:23-cv-01241",
+        "court": "District Court, S.D. California",
+        "date_filed": "2023-07-05"
+      },
+      {
+        "case_name": "Storm v. Aramark Management Services Limited Partnership",
+        "docket_number": "1:23-cv-00315",
+        "court": "District Court, E.D. California",
+        "date_filed": "2023-03-02"
+      },
+      {
+        "case_name": "Maria Wiley v. AmerisourceBergen Drug Corporation",
+        "docket_number": "5:23-cv-00116",
+        "court": "District Court, C.D. California",
+        "date_filed": "2023-01-23"
+      },
+      {
+        "case_name": "Elam v. Caliber Holdings Corporation",
+        "docket_number": "3:23-cv-00181",
+        "court": "District Court, S.D. Illinois",
+        "date_filed": "2023-01-20"
+      },
+      {
+        "case_name": "Edward Townsend v. M and S Enterprise LLC",
+        "docket_number": "2:23-cv-00038",
+        "court": "District Court, C.D. California",
+        "date_filed": "2023-01-04"
+      }
+    ],
+    "sample_truncated": true
+  },
+  "vs_you": {
+    "matters": [
+      29
+    ],
+    "entries_analyzed": 0,
+    "patterns": {
+      "motion_to_dismiss": 0,
+      "summary_judgment": 0,
+      "discovery_motion": 0,
+      "motion_to_strike": 0,
+      "sanctions": 0,
+      "settlement": 0,
+      "voluntary_dismissal": 0,
+      "default": 0,
+      "appeal": 0
+    }
+  },
+  "caveats": [
+    "Name-based RECAP search can conflate attorneys with common names; pin --attorney-id when ambiguous.",
+    "History is a docket sample (up to ~60 most recent), not an exhaustive record.",
+    "Outcome signals (settlement/dismissal mentions) are directional, not adjudicated results.",
+    "Motion patterns cover only matters with locally synced docket entries."
+  ]
+}
