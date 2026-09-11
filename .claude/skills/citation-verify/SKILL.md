@@ -20,7 +20,8 @@ Do not mark a citation VERIFIED from memory. Run the funnel and record evidence.
    npm run citations:lookup:p0                      # plaintiff-only UNVERIFIED
    ```  
    → `citation_lookup_multisource.json` or `citation_lookup_matterNN.json`  
-   Allowlisted Bing web search runs automatically when CL/CAP miss or disagree. A web hit is **PARTIAL at most** and is never overlaid as VERIFIED by itself.
+   Allowlisted Bing web search runs automatically when CL/CAP miss or disagree. A web hit is **PARTIAL at most** and is never overlaid as VERIFIED by itself.  
+   Pin API: `POST /api/rest/v4/citation-lookup/` when `COURTLISTENER_API_TOKEN` is set (env or gitignored `.env`). Unauthenticated CL search is corroboration only. **Never commit the token. Never paste it into a PR.**
 
 3. **Overlay** — fold lookup consensus into `citation_verification_rounds.json`  
    ```bash
@@ -54,9 +55,10 @@ Do not mark a citation VERIFIED from memory. Run the funnel and record evidence.
 
 | Source | Status |
 |---|---|
-| CourtListener `/api/rest/v4/search/` | OK (unauthenticated) |
+| CourtListener `/api/rest/v4/citation-lookup/` | Pin API when `COURTLISTENER_API_TOKEN` is set; skipped if unset |
+| CourtListener `/api/rest/v4/search/` | OK (unauthenticated); corroboration only |
 | CAP `static.case.law` CasesMetadata + HTML | OK |
-| `api.case.law` JSON / CL citation-lookup | Need auth |
+| `api.case.law` JSON | Need auth |
 | Bing HTML (allowlisted hosts, pin + name) | Tie-breaker only; `PARTIAL` at most; not overlaid alone |
 
 ## Artifacts

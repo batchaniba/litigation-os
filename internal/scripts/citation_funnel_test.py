@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import importlib.util
+import os
 import sys
 import unittest
 from pathlib import Path
@@ -171,6 +172,159 @@ class WebFilterTest(unittest.TestCase):
             ),
         )
         self.assertEqual(lookup.consensus_for(result), "PARTIAL")
+
+
+class CitationLookupApiTest(unittest.TestCase):
+    def test_status_200_resolves_cluster(self):
+        rows = [
+            {
+                "citation": "521 U.S. 399",
+                "normalized_citations": ["521 U.S. 399"],
+                "status": 200,
+                "error_message": "",
+                "clusters": [
+                    {
+                        "case_name": "Richardson v. McKnight",
+                        "absolute_url": "/opinion/118142/richardson-v-mcknight/",
+                        "citations": [{"volume": 521, "reporter": "U.S.", "page": "399"}],
+                    }
+                ],
+            }
+        ]
+        hit = lookup.citation_lookup_hit(
+            rows,
+            "Richardson v. McKnight, 521 U.S. 399",
+            "Richardson v. McKnight",
+            http_status=200,
+            url="https://www.courtlistener.com/api/rest/v4/citation-lookup/",
+        )
+        self.assertTrue(hit.found)
+        self.assertEqual(hit.source, "courtlistener_citation")
+        self.assertEqual(hit.case_name, "Richardson v. McKnight")
+        self.assertIn("/opinion/118142/richardson-v-mcknight/", hit.url)
+
+    def test_status_404_is_not_found(self):
+        rows = [
+            {
+                "citation": "66 Cal. App. 5th 200",
+                "normalized_citations": ["66 Cal. App. 5th 200"],
+                "status": 404,
+                "error_message": "Citation not found: '66 Cal. App. 5th 200'",
+                "clusters": [],
+            }
+        ]
+        hit = lookup.citation_lookup_hit(
+            rows,
+            "In re Leman, 66 Cal.App.5th 200",
+            "In re Leman",
+            http_status=200,
+            url="https://www.courtlistener.com/api/rest/v4/citation-lookup/",
+        )
+        self.assertFalse(hit.found)
+        self.assertIn("Citation not found", hit.notes)
+
+    def test_token_status_does_not_echo_secret(self):
+        old = os.environ.get("COURTLISTENER_API_TOKEN")
+        os.environ["COURTLISTENER_API_TOKEN"] = "super-secret-token-value"
+        try:
+            status = lookup.courtlistener_token_status()
+            self.assertNotIn("super-secret-token-value", status)
+            self.assertIn("configured", status)
+        finally:
+            if old is None:
+                del os.environ["COURTLISTENER_API_TOKEN"]
+            else:
+                os.environ["COURTLISTENER_API_TOKEN"] = old
+
+    def test_pin_plus_pin_is_found(self):
+        result = lookup.LookupResult(
+            query="Richardson v. McKnight, 521 U.S. 399",
+            case_name_guess="Richardson v. McKnight",
+            reporter_pin="521 U.S. 399",
+            wl_pin=None,
+        )
+        result.sources.append(
+            lookup.SourceHit(
+                source="courtlistener_citation",
+                found=True,
+                case_name="Richardson v. McKnight",
+                citations=["521 U.S. 399"],
+            )
+        )
+        result.sources.append(
+            lookup.SourceHit(
+                source="case.law_static",
+                found=True,
+                case_name="Richardson v. McKnight",
+                citations=["521 U.S. 399"],
+            )
+        )
+        self.assertEqual(lookup.consensus_for(result), "FOUND")
+
+    def test_citation_lookup_alone_is_partial(self):
+        result = lookup.LookupResult(
+            query="Dart Cherokee Basin Operating Co., LLC v. Owens, 574 U.S. 81",
+            case_name_guess="Dart Cherokee Basin Operating Co., LLC v. Owens",
+            reporter_pin="574 U.S. 81",
+            wl_pin=None,
+        )
+        result.sources.append(
+            lookup.SourceHit(
+                source="courtlistener_citation",
+                found=True,
+                case_name="Dart Cherokee Basin Operating Co. v. Owens",
+                citations=["574 U.S. 81"],
+            )
+        )
+        result.sources.append(
+            lookup.SourceHit(source="case.law_static", found=False, url=""),
+        )
+        self.assertEqual(lookup.consensus_for(result), "PARTIAL")
+
+    def test_search_without_pin_is_partial(self):
+        result = lookup.LookupResult(
+            query="Richardson v. McKnight, 521 U.S. 399",
+            case_name_guess="Richardson v. McKnight",
+            reporter_pin="521 U.S. 399",
+            wl_pin=None,
+        )
+        result.sources.append(
+            lookup.SourceHit(
+                source="courtlistener",
+                found=True,
+                case_name="Richardson v. McKnight",
+                citations=["521 U.S. 399"],
+            )
+        )
+        result.sources.append(
+            lookup.SourceHit(source="case.law_static", found=False, url=""),
+        )
+        self.assertEqual(lookup.consensus_for(result), "PARTIAL")
+
+    def test_cap_plus_search_is_found(self):
+        result = lookup.LookupResult(
+            query="Richardson v. McKnight, 521 U.S. 399",
+            case_name_guess="Richardson v. McKnight",
+            reporter_pin="521 U.S. 399",
+            wl_pin=None,
+        )
+        result.sources.append(
+            lookup.SourceHit(
+                source="courtlistener",
+                found=True,
+                case_name="Richardson v. McKnight",
+                citations=["521 U.S. 399"],
+            )
+        )
+        result.sources.append(
+            lookup.SourceHit(
+                source="case.law_static",
+                found=True,
+                case_name="Richardson v. McKnight",
+                citations=["521 U.S. 399"],
+            )
+        )
+        self.assertEqual(lookup.consensus_for(result), "FOUND")
 
 
 if __name__ == "__main__":

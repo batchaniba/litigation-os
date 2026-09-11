@@ -419,11 +419,11 @@ Authority quality is a liability surface: claims are cognizable and motions to d
 | Stage | Command | Output |
 |---|---|---|
 | 1. Index | `npm run citations:index` | `internal/docs/citation_index.json` / `CITATION_INDEX.md` — every cite keyed to page + filing role |
-| 2. Lookup | `npm run citations:lookup:matter -- --matter N` or `citations:lookup:p0` | CourtListener + CAP `static.case.law`; allowlisted Bing web search as a tie-breaker (`PARTIAL` at most) → `citation_lookup_*.json` |
+| 2. Lookup | `npm run citations:lookup:matter -- --matter N` or `citations:lookup:p0` | CourtListener citation-lookup (if `COURTLISTENER_API_TOKEN` is set) + CAP `static.case.law`; CL search and allowlisted Bing as corroboration (`PARTIAL` at most) → `citation_lookup_*.json` |
 | 3. Overlay | `npm run citations:overlay -- FILE.json` or `citations:overlay:existing` | Fold lookup consensus into `citation_verification_rounds.json` (existence `FOUND` / compatible `PARTIAL` / OCR `CAPTION_MISMATCH` can clear `UNVERIFIED`; proposition `MISCITED` / `MISCHARACTERIZED` stays; web-search-only hits are not overlaid) |
 | 4. Ledger + gate | `npm run citations:verify` then `citations:check` | `citation_verification.json` / `CITATION_VERIFICATION.md`; CI fails on **new** fabricated cites in plaintiff filings |
 
-Controls (reconfirm when batching): *Richardson v. McKnight*, 521 U.S. 399 must resolve; *In re Leman*, 66 Cal.App.5th 200 must not. Justia is Cloudflare-blocked here; Google Scholar is unreliable; prefer CourtListener search + CAP static metadata/HTML.
+Controls (reconfirm when batching): *Richardson v. McKnight*, 521 U.S. 399 must resolve; *In re Leman*, 66 Cal.App.5th 200 must not. Justia is Cloudflare-blocked here; Google Scholar is unreliable. Prefer CourtListener **citation-lookup** (token from `COURTLISTENER_API_TOKEN` / `.env`, never committed) plus CAP static metadata; unauthenticated CL search is corroboration only.
 
 ### Scoreboard (paired authorities)
 
