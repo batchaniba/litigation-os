@@ -40,6 +40,15 @@ EXEC_DATE = "September 14, 2026"
 MAIL_FROM = "San Jose, California"
 NEW_NAME = "Brendan Ngwa Nforbi"
 NEW_NAME_CAPS = "BRENDAN NGWA NFORBI"
+FIRST_NAME = "Brendan"
+LAST_NAME = "Ngwa Nforbi"
+BOLD_FIRST = f"<<b:{FIRST_NAME}>>"
+BOLD_LAST = f"<<b:{LAST_NAME}>>"
+BOLD_NAME = f"{BOLD_FIRST} {BOLD_LAST}"
+BOLD_NAME_CAPS = "<<b:BRENDAN>> <<b:NGWA NFORBI>>"
+FIRST_LAST_GLOSS = (
+    f"first name {BOLD_FIRST}, last name {BOLD_LAST}"
+)
 SIG_LINE = "___________________________________"
 HELP_DESK = (
     DOCS
@@ -125,7 +134,7 @@ CASES: list[NameCase] = [
             "I conferred with Deputy Attorney General Haiyang A. Li, counsel "
             "of record for Defendant Captain G. Serrato. He stated that "
             "Defendant will not oppose a request that the Clerk identify "
-            f"Plaintiff as {NEW_NAME}. He did not agree to enter a Civil "
+            f"Plaintiff as {BOLD_NAME}. He did not agree to enter a Civil "
             "L.R. 7-12 stipulation. That is why this motion is not "
             "accompanied by a stipulation."
         ),
@@ -192,7 +201,7 @@ CASES: list[NameCase] = [
             "I conferred with Blaze Van Dine and Eric Martinez of Sims, "
             "Lawrence & Broghammer, counsel for Defendants. They stated "
             "Defendants will not oppose a request that the Clerk identify "
-            f"Plaintiff as {NEW_NAME} so long as the paper makes clear that "
+            f"Plaintiff as {BOLD_NAME} so long as the paper makes clear that "
             "the two name forms are one person. This motion and this "
             "declaration do that. They did not agree to enter a Civil L.R. "
             "7-12 stipulation. That is why this motion is not accompanied "
@@ -347,7 +356,7 @@ CASES: list[NameCase] = [
             "and is the attorney named in Plaintiff's pending Civil L.R. "
             "7-11 motion that he accept service for Officer Meza-Gonzalez "
             "(Dkt. 13). He stated he will not oppose a request that the "
-            f"Clerk identify Plaintiff as {NEW_NAME}. He has not filed a "
+            f"Clerk identify Plaintiff as {BOLD_NAME}. He has not filed a "
             "notice of appearance in this action. His statement is "
             "non-opposition to this caption request. It is not a notice of "
             "appearance and not acceptance of service. A Civil L.R. 7-12 "
@@ -606,7 +615,7 @@ def build_motion(case: NameCase) -> Path:
     )
     d.blank_line()
     d.write_wrapped(
-        f"Plaintiff {NEW_NAME}, appearing in propria persona and presently "
+        f"Plaintiff {BOLD_NAME}, appearing in propria persona and presently "
         f"identified on this docket as {case.current_docket_name}, moves under "
         "Civil Local Rule 7-11 for an order conforming the docket name. This "
         "is Plaintiff's request. It is not a Civil L.R. 7-12 stipulation.",
@@ -620,8 +629,8 @@ def build_motion(case: NameCase) -> Path:
     d.write_wrapped(
         f"The Clerk shall amend the docket, the short title, the CM/ECF "
         f"party record, and the caption of this action so that Plaintiff is "
-        f"identified as <<b:{NEW_NAME}>> — first name Brendan, last name "
-        f"Ngwa Nforbi — matching Plaintiff's existing PACER account (login "
+        f"identified as {BOLD_NAME} — {FIRST_LAST_GLOSS} — matching "
+        f"Plaintiff's existing PACER account (login "
         f"bngwanforbi). This is a clean swap of the party name. Subsequent "
         f"papers shall use that caption.",
         first_indent=0,
@@ -632,7 +641,7 @@ def build_motion(case: NameCase) -> Path:
     d.write_line("THE TWO NAMES ARE ONE PERSON", bold=True, center=True)
     d.blank_line()
     d.write_wrapped(
-        f"{NEW_NAME} is the same natural person as {case.current_docket_name}"
+        f"{BOLD_NAME} is the same natural person as {case.current_docket_name}"
         f"{_aka_other(case)}. The names are one person. This motion does not "
         "add, drop, or substitute any party. It is not an amendment of any "
         "claim, defense, or operative pleading. It is not a Fed. R. Civ. P. "
@@ -660,8 +669,9 @@ def build_motion(case: NameCase) -> Path:
         "Plaintiff recently learned that this District permits pro se "
         "litigants to e-file. Good cause exists to conform the docket name "
         "so that login can be linked. Among other things, e-filing will "
-        "prevent the delay inherent in mailing papers from Stockton to the "
-        "Clerk and to counsel; it will put each paper on the docket the "
+        "prevent the delay inherent in mailing papers to the Clerk and to "
+        "counsel, wherever those papers are sent from; it will put each "
+        "paper on the docket the "
         "day it is filed rather than days later in the mail; it will let "
         "counsel of record receive service the same day; and it will let "
         "Plaintiff prosecute these five open N.D. Cal. actions on one "
@@ -735,7 +745,7 @@ def build_declaration(case: NameCase) -> Path:
     d.write_line("DECLARATION OF BRENDAN NGWA NFORBI", bold=True, center=True)
     d.blank_line()
     d.write_wrapped(
-        f"I, {NEW_NAME_CAPS}, declare as follows:",
+        f"I, {BOLD_NAME_CAPS}, declare as follows:",
         first_indent=0,
     )
     d.blank_line()
@@ -775,8 +785,9 @@ def build_declaration(case: NameCase) -> Path:
         "litigants to e-file. That is why I asked the ECF Help Desk on "
         "September 1, 2026 to link PACER login bngwanforbi. Until the "
         "docket name matches, I must mail papers. Mailing introduces "
-        "delay: transit time from Stockton to the Clerk and to counsel, "
-        "weekend and holiday lag, and the risk that a paper reaches the "
+        "delay wherever the papers are sent from: transit time to the "
+        "Clerk and to counsel, weekend and holiday lag, and the risk that "
+        "a paper reaches the "
         "Clerk or counsel after the date I sent it. I have five open "
         "actions in this District. Conforming the name so I can e-file "
         "will avoid that delay, let the Clerk and counsel receive papers "
@@ -830,14 +841,14 @@ def build_order(case: NameCase) -> Path:
     d.write_wrapped(
         f"1.  The Clerk shall amend the docket, the short title, the "
         f"CM/ECF party record, and the caption of this action so that "
-        f"Plaintiff is identified as <<b:{NEW_NAME}>> (first name Brendan; "
-        f"last name Ngwa Nforbi), matching PACER login bngwanforbi. "
+        f"Plaintiff is identified as {BOLD_NAME} ({FIRST_LAST_GLOSS}), "
+        f"matching PACER login bngwanforbi. "
         f"Subsequent papers shall use that caption.",
         first_indent=0,
     )
     d.blank_line()
     d.write_wrapped(
-        f"2.  {NEW_NAME} is the same natural person previously identified "
+        f"2.  {BOLD_NAME} is the same natural person previously identified "
         f"on this docket as {case.current_docket_name}. This Order does not "
         "add, drop, or substitute any party and does not amend any claim "
         "or defense.",
