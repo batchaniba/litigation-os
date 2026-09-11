@@ -3,38 +3,581 @@
   "requested": {
     "docket_number": "5:25-cv-02931",
     "court": "cacd",
-    "entries": "64,75"
+    "entries": "list"
   },
   "docket": {
     "id": 71869110,
     "court": "cacd"
   },
-  "fetched_at": "2026-09-11T22:59:11.971Z",
+  "fetched_at": "2026-09-11T23:11:22.594Z",
   "error": null,
   "documents": [
+    {
+      "entry_number": 1,
+      "entry_id": 443000710,
+      "description": "NOTICE OF REMOVAL from San Bernadino Superior Court, case number CIVRS2508108 Receipt No: ACACDC-40835309 - Fee: $405, filed by Defendants Korn Ferry and Korn Ferry (US) Korn Ferry. (Attachments: # 1 Declaration, # 2 Civil Cover Sheet, # 3 Supplement, # 4 Supplement, # 5 Supplement) (Attorney John K. Ly added to party Korn Ferry(pty:dft))(Ly, John) (Entered: 11/03/2025)",
+      "date_filed": "2025-11-03",
+      "status": "listed"
+    },
+    {
+      "entry_number": 2,
+      "entry_id": 443605894,
+      "description": "CONSTITUTIONAL OBJECTION to Filing Restrictions for Pro Se Litigants filed by Plaintiff Nicholas A Ventura. (gk) (Entered: 11/10/2025)",
+      "date_filed": "2025-11-05",
+      "status": "listed"
+    },
+    {
+      "entry_number": 3,
+      "entry_id": 443727899,
+      "description": "NOTICE OF MOTION AND MOTION to Dismiss Case filed by Defendants Korn Ferry and Korn Ferry (US) Korn Ferry. (Attachments: # 1 Declaration, # 2 Proposed Order, # 3 Supplement Proof of Service) (Ly, John) (Entered: 11/10/2025)",
+      "date_filed": "2025-11-10",
+      "status": "listed"
+    },
+    {
+      "entry_number": 4,
+      "entry_id": 443731353,
+      "description": "NOTICE OF ASSIGNMENT to a U.S. Magistrate Judge and Declination of Consent. This case has been randomly assigned to Magistrate Judge Sheri Pym. (jtil) (Entered: 11/10/2025)",
+      "date_filed": "2025-11-10",
+      "status": "listed"
+    },
+    {
+      "entry_number": null,
+      "entry_id": 443731357,
+      "description": "",
+      "date_filed": "2025-11-10",
+      "status": "listed"
+    },
+    {
+      "entry_number": 5,
+      "entry_id": 444158396,
+      "description": "Notice filed by Defendants Korn Ferry and Korn Ferry (US) Korn Ferry, Korn Ferry (US). (Attachments: # 1 Declaration)(Ly, John) (Entered: 11/14/2025)",
+      "date_filed": "2025-11-14",
+      "status": "listed"
+    },
+    {
+      "entry_number": null,
+      "entry_id": 444179239,
+      "description": "",
+      "date_filed": "2025-11-14",
+      "status": "listed"
+    },
+    {
+      "entry_number": 7,
+      "entry_id": 444190029,
+      "description": "NOTICE OF REASSIGNMENT of case from Magistrate Judge Sheri Pym to Judge Serena R. Murillo for all further proceedings. Any discovery matters that may be referred to a Magistrate Judge are assigned to U.S. Magistrate Judge David T. Bristow. The case number will now reflect the initials of the transferee Judges 5:25-cv-02931-SRM(DTBx). (mba) (Entered: 11/14/2025)",
+      "date_filed": "2025-11-14",
+      "status": "listed"
+    },
+    {
+      "entry_number": 8,
+      "entry_id": 444506793,
+      "description": "Constitutional OBJECTION to Filing Restrictions for Pro Se Litigants filed by Plaintiff Nicholas A Ventura. (es) (Entered: 11/18/2025)",
+      "date_filed": "2025-11-05",
+      "status": "listed"
+    },
+    {
+      "entry_number": 9,
+      "entry_id": 444536474,
+      "description": "Notice of Appearance or Withdrawal of Counsel: for attorney Nathan D. Chapman counsel for Defendants Randsatd North America Inc., Randstad US LLC. Adding Nathan D. Chapman as counsel of record for Randstad US, LLC and Randstad North America, Inc. for the reason indicated in the G-123 Notice. Filed by Defendants Randstad US, LLC and Randstad North America, Inc. (Attorney Nathan D. Chapman added to party Randsatd North America Inc.(pty:dft), Attorney Nathan D. Chapman added to party Randstad US LLC(pty:dft))(Chapman, Nathan) (Entered: 11/18/2025)",
+      "date_filed": "2025-11-18",
+      "status": "listed"
+    },
+    {
+      "entry_number": 10,
+      "entry_id": 444657027,
+      "description": "WITHDRAWN, see doc 27 - Plaintiff's Motion to Remand and Memorandum of Points and Authorities in Support Thereof filed by Plaintiff Nicholas A Ventura. (es) Modified on 1/6/2026 (lom). (Entered: 11/19/2025)",
+      "date_filed": "2025-10-14",
+      "status": "listed"
+    },
+    {
+      "entry_number": 11,
+      "entry_id": 444863782,
+      "description": "Plaintiff's Motion to Remand and Memorandum of Points and Authorities in Support Thereof filed by Plaintiff Nicholas A Ventura. (es) (Entered: 11/20/2025)",
+      "date_filed": "2025-11-14",
+      "status": "listed"
+    },
+    {
+      "entry_number": 12,
+      "entry_id": 445379455,
+      "description": "Notice of Supplement to Defendants Korn Ferry and Korn Ferry (US)'s Notice of Removal filed by Defendants Randsatd North America Inc., Randstad US LLC. (Attachments: # 1 Exhibit A - Demurrer)(Chapman, Nathan) (Entered: 11/25/2025)",
+      "date_filed": "2025-11-25",
+      "status": "listed"
+    },
+    {
+      "entry_number": 6,
+      "entry_id": 445799896,
+      "description": "Declination of Consent form received on 11/14/2025 was submitted within deadline set forth in L.R. 73-2.1. THERE IS NO PDF DOCUMENT ASSOCIATED WITH THIS ENTRY. (dc) TEXT ONLY ENTRY (Entered: 11/14/2025)",
+      "date_filed": "2025-11-14",
+      "status": "listed"
+    },
+    {
+      "entry_number": null,
+      "entry_id": 445799904,
+      "description": "CONFORMED COPY OF COMPLAINT filed by Plaintiff Nicholas A Ventura in San Bernardino Superior Court on 9/25/2025, attached as Exhibit A. (jtil)",
+      "date_filed": "2025-11-03",
+      "status": "listed"
+    },
+    {
+      "entry_number": 13,
+      "entry_id": 446227173,
+      "description": "OPPOSITION TO DEFENDANTS' MOTION to Dismiss Case and Demurrer 3 filed by Plaintiff Nicholas A Ventura. (Attachments: # 1 [Prop] Order)(lom) (Entered: 12/04/2025)",
+      "date_filed": "2025-12-04",
+      "status": "listed"
+    },
+    {
+      "entry_number": 15,
+      "entry_id": 446233765,
+      "description": "Opposition to Plaintiff's Motion for Remand Opposition re: NOTICE OF MOTION AND MOTION to Remand Case to 11, NOTICE OF MOTION AND MOTION to Remand Case to 10 filed by Defendants Korn Ferry, Korn Ferry (US). (Attachments: # 1 Declaration Ly Declaration, # 2 Exhibit A, # 3 Exhibit B, # 4 Exhibit C, # 5 Exhibit D, # 6 Exhibit E, # 7 Exhibit F, # 8 Exhibit G, # 9 Exhibit H, # 10 Exhibit I)(Ly, John) (Entered: 12/04/2025)",
+      "date_filed": "2025-12-04",
+      "status": "listed"
+    },
+    {
+      "entry_number": 14,
+      "entry_id": 446233769,
+      "description": "NOTICE OF MOTION re NOTICE OF MOTION AND MOTION to Dismiss Case 3 filed by Defendants Korn Ferry, Korn Ferry (US). Motion set for hearing on 1/28/2025 at 01:30 PM before Judge Serena R. Murillo. (Ly, John) (Entered: 12/04/2025)",
+      "date_filed": "2025-12-04",
+      "status": "listed"
+    },
+    {
+      "entry_number": 16,
+      "entry_id": 446615420,
+      "description": "CIVIL STANDING ORDER by Judge Serena R. Murillo. (gga) (Entered: 12/09/2025)",
+      "date_filed": "2025-12-09",
+      "status": "listed"
+    },
+    {
+      "entry_number": 17,
+      "entry_id": 446684948,
+      "description": "MOTION for Pro Se Litigant to electronically file documents in a specific case filed by Plaintiff Nicholas A Ventura. (lom) (Entered: 12/09/2025)",
+      "date_filed": "2025-12-05",
+      "status": "listed"
+    },
+    {
+      "entry_number": 18,
+      "entry_id": 446968021,
+      "description": "MOTION for Pro Se Litigant to electronically file documents in a specific case filed by Plaintiff Nicholas A Ventura. (lom) (Entered: 12/11/2025)",
+      "date_filed": "2025-12-09",
+      "status": "listed"
+    },
+    {
+      "entry_number": 19,
+      "entry_id": 447279183,
+      "description": "ORDER RE APPLICATION FOR PERMISSIONFOR ELECTRONIC FILING 17 18 by Judge Serena R. Murillo. Plaintiff's Motions for Pro Se Litigant to electronically file documents (ECF 17 and 18) are denied without prejudice. Plaintiff shall file the Application for Permission for Electronic Filing (CV-005). (lom) (Entered: 12/15/2025)",
+      "date_filed": "2025-12-15",
+      "status": "listed"
+    },
+    {
+      "entry_number": 20,
+      "entry_id": 447566803,
+      "description": "APPLICATION for Pro Se Litigant to electronically file documents in a specific case filed by Plaintiff Nicholas A Ventura. (lom) (Entered: 12/17/2025)",
+      "date_filed": "2025-12-15",
+      "status": "listed"
+    },
+    {
+      "entry_number": 21,
+      "entry_id": 447659415,
+      "description": "ORDER by Judge Serena R. Murillo: granting 20 APPLICATION for Pro Se Electronic Filing. The applicant must register to use the Courts CM/ECF System within five (5) days of being served with this order. Registration information is available at the Pro Se Litigant E-Filing web page located on the Courts website. Upon registering, the applicant will receive a CM/ECF login and password that will allow him/her to file non-sealed documents electronically in this case only. Any documents being submitted under seal must be manually filed with the Clerk. (lom) (Entered: 12/18/2025)",
+      "date_filed": "2025-12-18",
+      "status": "listed"
+    },
+    {
+      "entry_number": 22,
+      "entry_id": 447671927,
+      "description": "Notice of Appearance or Withdrawal of Counsel: for attorney Felton T Newell, Jr counsel for Defendant Hirewell LLC. Adding Felton Newell as counsel of record for Hirewell LLC for the reason indicated in the G-123 Notice. Filed by Defendant Hirewell LLC. (Attorney Felton T Newell, Jr added to party Hirewell LLC(pty:dft))(Newell, Felton) (Entered: 12/18/2025)",
+      "date_filed": "2025-12-18",
+      "status": "listed"
+    },
+    {
+      "entry_number": 23,
+      "entry_id": 448010044,
+      "description": "PLAINTIFF'S OPPOSITION TO DEFENDANTS' MOTION TO DISMISS 3 AND DENURR filed by Plaintiff Nicholas A. Ventura. (Attachments: # 1 [Prop] Order)(lom) (Entered: 12/22/2025)",
+      "date_filed": "2025-12-03",
+      "status": "listed"
+    },
+    {
+      "entry_number": 24,
+      "entry_id": 448239108,
+      "description": "First NOTICE OF MOTION AND MOTION to AMEND Complaint - (Discovery) in response to First Motions to Dimiss and Demurr by Defendants Korn Ferry and Randstad filed by Nicholas A. Ventura in pro se Nicholas A. Ventura. Motion set for hearing on 1/28/2026 at 01:30 PM before Judge Serena R. Murillo. (Attachments: # 1 Proposed Order Proposed Order Granting Leave to Amend) (Ventura, Nicholas) (Entered: 12/23/2025)",
+      "date_filed": "2025-12-23",
+      "status": "listed"
+    },
+    {
+      "entry_number": 25,
+      "entry_id": 448997084,
+      "description": "APPLICATION for Pro Se Litigant to electronically file documents in a specific case filed by Plaintiff Nicholas A. Ventura. (sh) (Entered: 12/31/2025)",
+      "date_filed": "2025-12-17",
+      "status": "listed"
+    },
+    {
+      "entry_number": 27,
+      "entry_id": 448999885,
+      "description": "NOTICE OF WITHDRAWAL OF MOTION TO REMAND 10 filed by Plaintiff Nicholas A. Ventura. (sh) (Entered: 12/31/2025)",
+      "date_filed": "2025-12-17",
+      "status": "listed"
+    },
+    {
+      "entry_number": 26,
+      "entry_id": 448999894,
+      "description": "MOTION FOR ALTERNATIVE SERVICE OF PROCESS VIA EMAIL filed by Plaintiff Nicholas A. Ventura. (Attachments: # 1 Proposed Order) (sh) (Entered: 12/31/2025)",
+      "date_filed": "2025-12-17",
+      "status": "listed"
+    },
+    {
+      "entry_number": null,
+      "entry_id": 449375367,
+      "description": "",
+      "date_filed": "2026-01-06",
+      "status": "listed"
+    },
+    {
+      "entry_number": 30,
+      "entry_id": 449457130,
+      "description": "Notice of Joinder to Defendants Korn Ferry and Korn Ferry (US)'s Amended Motion to Dismiss Plaintiff's Complaint filed by Defendants Randsatd North America Inc., Randstad US LLC. (Chapman, Nathan) (Entered: 01/06/2026)",
+      "date_filed": "2026-01-06",
+      "status": "listed"
+    },
+    {
+      "entry_number": 31,
+      "entry_id": 449770325,
+      "description": "Notice of Joinder to Defendants Korn Ferry and Korn Ferry US's Amended Motion to Dismiss Plaintiff's Complaint filed by Defendant Hirewell LLC. (Newell, Felton) (Entered: 01/09/2026)",
+      "date_filed": "2026-01-08",
+      "status": "listed"
+    },
+    {
+      "entry_number": 32,
+      "entry_id": 450873240,
+      "description": "ORDER by Judge Serena R. Murillo: granting 25 APPLICATION for Pro Se Electronic Filing. The applicant must register to use the Courts CM/ECF System within five (5) days of being served with this order. Registration information is available at the Pro Se Litigant E- Filing web page located on the Courts website. Upon registering, the applicant will receive a CM/ECF login and password that will allow him/her to file non- sealed documents electronically in this case only. Any documents being submitted under seal must be manually filed with the Clerk. (lom) (Entered: 01/20/2026)",
+      "date_filed": "2026-01-20",
+      "status": "listed"
+    },
+    {
+      "entry_number": 29,
+      "entry_id": 451226329,
+      "description": "TEXT ENTRY (IN CHAMBERS) ORDER by Judge Serena R. Murillo. On the Court's own motion, the hearing on the Motion to Amend Complaint 24 is continued to 2/18/2026 at 01:30 p.m. THERE IS NO PDF DOCUMENT ASSOCIATED WITH THIS ENTRY.(gga) (Entered: 01/06/2026)",
+      "date_filed": "2026-01-06",
+      "status": "listed"
+    },
+    {
+      "entry_number": 28,
+      "entry_id": 451226330,
+      "description": "TEXT ENTRY (IN CHAMBERS) ORDER by Judge Serena R. Murillo. On the Court's own motion, the hearing on the Motion to Dismiss Case 3 and the Motion to Remand Case 11 is continued to 2/18/2026 at 01:30 p.m. THERE IS NO PDF DOCUMENT ASSOCIATED WITH THIS ENTRY. (gga) (Entered: 01/06/2026)",
+      "date_filed": "2026-01-06",
+      "status": "listed"
+    },
+    {
+      "entry_number": 33,
+      "entry_id": 451879920,
+      "description": "",
+      "date_filed": "2026-01-28",
+      "status": "listed"
+    },
+    {
+      "entry_number": 34,
+      "entry_id": 451894346,
+      "description": "",
+      "date_filed": "2026-01-28",
+      "status": "listed"
+    },
+    {
+      "entry_number": 35,
+      "entry_id": 451964976,
+      "description": "",
+      "date_filed": "2026-01-28",
+      "status": "listed"
+    },
+    {
+      "entry_number": 36,
+      "entry_id": 452752365,
+      "description": "",
+      "date_filed": "2026-02-04",
+      "status": "listed"
+    },
+    {
+      "entry_number": null,
+      "entry_id": 453754230,
+      "description": "",
+      "date_filed": "2026-02-12",
+      "status": "listed"
+    },
+    {
+      "entry_number": 39,
+      "entry_id": 454762492,
+      "description": "",
+      "date_filed": "2026-02-23",
+      "status": "listed"
+    },
+    {
+      "entry_number": 38,
+      "entry_id": 454762586,
+      "description": "",
+      "date_filed": "2026-02-23",
+      "status": "listed"
+    },
+    {
+      "entry_number": 40,
+      "entry_id": 455588587,
+      "description": "",
+      "date_filed": "2026-03-02",
+      "status": "listed"
+    },
+    {
+      "entry_number": 41,
+      "entry_id": 456585973,
+      "description": "",
+      "date_filed": "2026-03-10",
+      "status": "listed"
+    },
+    {
+      "entry_number": 42,
+      "entry_id": 456816351,
+      "description": "",
+      "date_filed": "2026-03-11",
+      "status": "listed"
+    },
+    {
+      "entry_number": 43,
+      "entry_id": 457193108,
+      "description": "",
+      "date_filed": "2026-03-14",
+      "status": "listed"
+    },
+    {
+      "entry_number": 44,
+      "entry_id": 457612320,
+      "description": "",
+      "date_filed": "2026-03-18",
+      "status": "listed"
+    },
+    {
+      "entry_number": 45,
+      "entry_id": 457656490,
+      "description": "",
+      "date_filed": "2026-03-18",
+      "status": "listed"
+    },
+    {
+      "entry_number": 46,
+      "entry_id": 458086668,
+      "description": "",
+      "date_filed": "2026-03-21",
+      "status": "listed"
+    },
+    {
+      "entry_number": 47,
+      "entry_id": 458925283,
+      "description": "",
+      "date_filed": "2026-03-28",
+      "status": "listed"
+    },
+    {
+      "entry_number": 48,
+      "entry_id": 458925294,
+      "description": "",
+      "date_filed": "2026-03-28",
+      "status": "listed"
+    },
+    {
+      "entry_number": 49,
+      "entry_id": 458925364,
+      "description": "",
+      "date_filed": "2026-03-28",
+      "status": "listed"
+    },
+    {
+      "entry_number": 51,
+      "entry_id": 459235420,
+      "description": "",
+      "date_filed": "2026-03-31",
+      "status": "listed"
+    },
+    {
+      "entry_number": 50,
+      "entry_id": 459235555,
+      "description": "",
+      "date_filed": "2026-03-31",
+      "status": "listed"
+    },
+    {
+      "entry_number": null,
+      "entry_id": 459238579,
+      "description": "",
+      "date_filed": "2026-03-31",
+      "status": "listed"
+    },
+    {
+      "entry_number": 53,
+      "entry_id": 460108130,
+      "description": "",
+      "date_filed": "2026-04-08",
+      "status": "listed"
+    },
+    {
+      "entry_number": null,
+      "entry_id": 460309527,
+      "description": "",
+      "date_filed": "2026-04-09",
+      "status": "listed"
+    },
+    {
+      "entry_number": 55,
+      "entry_id": 460475068,
+      "description": "",
+      "date_filed": "2026-04-11",
+      "status": "listed"
+    },
+    {
+      "entry_number": 56,
+      "entry_id": 460496994,
+      "description": "",
+      "date_filed": "2026-04-12",
+      "status": "listed"
+    },
+    {
+      "entry_number": 57,
+      "entry_id": 462003725,
+      "description": "",
+      "date_filed": "2026-04-26",
+      "status": "listed"
+    },
+    {
+      "entry_number": 58,
+      "entry_id": 463697012,
+      "description": "",
+      "date_filed": "2026-05-11",
+      "status": "listed"
+    },
+    {
+      "entry_number": 59,
+      "entry_id": 463957693,
+      "description": "",
+      "date_filed": "2026-05-13",
+      "status": "listed"
+    },
+    {
+      "entry_number": null,
+      "entry_id": 464058821,
+      "description": "",
+      "date_filed": "2026-05-14",
+      "status": "listed"
+    },
+    {
+      "entry_number": 61,
+      "entry_id": 464088311,
+      "description": "",
+      "date_filed": "2026-05-14",
+      "status": "listed"
+    },
+    {
+      "entry_number": 62,
+      "entry_id": 464906181,
+      "description": "",
+      "date_filed": "2026-05-21",
+      "status": "listed"
+    },
+    {
+      "entry_number": 63,
+      "entry_id": 466742051,
+      "description": "",
+      "date_filed": "2026-06-08",
+      "status": "listed"
+    },
     {
       "entry_number": 64,
       "entry_id": 467187625,
       "description": "",
       "date_filed": "2026-06-11",
-      "document_number": "64",
-      "attachment_number": null,
-      "pacer_doc_id": "031048029154",
-      "is_available": false,
-      "status": "unavailable",
-      "file": null
+      "status": "listed"
+    },
+    {
+      "entry_number": 65,
+      "entry_id": 467313678,
+      "description": "",
+      "date_filed": "2026-06-12",
+      "status": "listed"
+    },
+    {
+      "entry_number": 66,
+      "entry_id": 467327096,
+      "description": "",
+      "date_filed": "2026-06-12",
+      "status": "listed"
+    },
+    {
+      "entry_number": 67,
+      "entry_id": 471503058,
+      "description": "",
+      "date_filed": "2026-07-20",
+      "status": "listed"
+    },
+    {
+      "entry_number": 68,
+      "entry_id": 472577409,
+      "description": "",
+      "date_filed": "2026-07-29",
+      "status": "listed"
+    },
+    {
+      "entry_number": 69,
+      "entry_id": 473626726,
+      "description": "",
+      "date_filed": "2026-08-07",
+      "status": "listed"
+    },
+    {
+      "entry_number": 70,
+      "entry_id": 474491901,
+      "description": "",
+      "date_filed": "2026-08-14",
+      "status": "listed"
+    },
+    {
+      "entry_number": 71,
+      "entry_id": 474753475,
+      "description": "",
+      "date_filed": "2026-08-17",
+      "status": "listed"
+    },
+    {
+      "entry_number": 72,
+      "entry_id": 474758255,
+      "description": "",
+      "date_filed": "2026-08-17",
+      "status": "listed"
+    },
+    {
+      "entry_number": null,
+      "entry_id": 475041652,
+      "description": "",
+      "date_filed": "2026-08-19",
+      "status": "listed"
     },
     {
       "entry_number": 75,
       "entry_id": 475435384,
       "description": "",
       "date_filed": "2026-08-21",
-      "document_number": "75",
-      "attachment_number": null,
-      "pacer_doc_id": "031048675049",
-      "is_available": false,
-      "status": "unavailable",
-      "file": null
+      "status": "listed"
+    },
+    {
+      "entry_number": 74,
+      "entry_id": 475435423,
+      "description": "",
+      "date_filed": "2026-08-21",
+      "status": "listed"
+    },
+    {
+      "entry_number": 76,
+      "entry_id": 476908249,
+      "description": "",
+      "date_filed": "2026-09-03",
+      "status": "listed"
+    },
+    {
+      "entry_number": 77,
+      "entry_id": 477608352,
+      "description": "",
+      "date_filed": "2026-09-10",
+      "status": "listed"
     }
   ]
 }
