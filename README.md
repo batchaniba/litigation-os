@@ -451,10 +451,12 @@ Federal matters bind to a stable CourtListener `docket_id` and ingest new PACER/
 
 ```bash
 npm run court:resolve              # bind docket_id (Search API; token optional)
-npm run court:sync                 # new entries; needs COURTLISTENER_TOKEN
+npm run court:sync -- --bootstrap  # first ingest: matters 24, 25, 26, 28, 29, 32, 33
+npm run court:sync -- --active-only
+npm run court:sync -- --since 2026-07-01 --bootstrap
 ```
 
-Store the token as a GitHub Actions repository secret. Never put it in a `VITE_*` variable. Design notes: [`COURTLISTENER.md`](internal/docs/COURTLISTENER.md).
+Empty cursors refuse a full historical crawl unless you pass `--bootstrap`, `--active-only`, `--matter N`, or `--all`. Store `COURTLISTENER_TOKEN` as a GitHub Actions repository secret (`COURTLISTENER_API_TOKEN` is accepted as an alias). Never put it in a `VITE_*` variable. Design notes: [`COURTLISTENER.md`](internal/docs/COURTLISTENER.md).
 
 [↑ Contents](#contents)
 
@@ -488,9 +490,9 @@ npm run citations:index       # rebuild page-keyed citation index from PDFs
 npm run citations:verify      # rebuild verification ledger
 npm run citations:check       # known-bad gate (also run by validate)
 npm run citations:queue       # print P0 plaintiff-only UNVERIFIED queue
-npm run citations:lookup:matter -- --matter 20   # CourtListener + CAP probe for one matter
+npm run citations:lookup:matter -- --matter 20   # Citation Lookup + CAP probe for one matter
 npm run court:resolve             # bind federal matters to CourtListener docket_id
-npm run court:sync                # incremental docket entries (needs COURTLISTENER_TOKEN)
+npm run court:sync -- --bootstrap # first ingest of the seven live federal matters
 npm run scaffold:matter -- 34 "Newanforbi v. Example"
 ```
 

@@ -134,7 +134,7 @@ This allows the same codebase to deploy to both:
 
 ### `.github/workflows/courtlistener-sync.yml`
 
-Hourly (`17 * * * *`) plus `workflow_dispatch`. Needs repository secret `COURTLISTENER_TOKEN` (never a `VITE_*` variable).
+Hourly (`17 * * * *`) plus `workflow_dispatch`. Needs repository secret `COURTLISTENER_TOKEN` (never a `VITE_*` variable). The sync step is `npm run court:sync -- --bootstrap` so empty cursors do not backfill dismissed federal dockets.
 
 ```
 1. Checkout (same sparse skip of the PDF tree as CI)
