@@ -7,60 +7,67 @@ const isNum = (v) => typeof v === "number" && !Number.isNaN(v);
 const isInt = (v) => Number.isInteger(v);
 const isBool = (v) => typeof v === "boolean";
 const isStrArray = (v) => Array.isArray(v) && v.every(isStr);
+const isObj = (v) => v !== null && typeof v === "object" && !Array.isArray(v);
 
-/** Field definitions: [validator, required] */
-const FIELDS = {
-  number: [(v) => isInt(v) && v > 0, true],
-  caption: [isNonEmptyStr, true],
-  case_no: [isStr, true],
-  court: [isNonEmptyStr, true],
-  claims: [isStr, true],
-  status: [isStr, true],
-  status_label: [isStr, true],
-  lifecycle: [isStr, true],
-  proceeding: [isStr, true],
-  phase: [isStr, true],
-  filed: [isStr, true],
-  judge: [isStr, true],
-  cluster: [isInt, true],
-  type: [isStr, true],
-  defendants: [isStr, true],
-  archived: [isBool, true],
-  badge: [isStr, true],
-  causes: [isStrArray, true],
-  key_facts: [isStr, true],
-  procedural_status: [isStr, true],
-  damages: [isStr, true],
-  risk: [isStr, true],
-  evidence: [isStrArray, true],
-  documents: [
-    (v) => Array.isArray(v) && v.every((d) => d && isStr(d.path) && d.path.startsWith("/documents/")),
-    true,
-  ],
+/** Required fields: [validator] */
+const REQUIRED = {
+  number: (v) => isInt(v) && v > 0,
+  caption: isNonEmptyStr,
+  case_no: isStr,
+  court: isNonEmptyStr,
+  claims: isStr,
+  status: isStr,
+  lifecycle: isStr,
+  proceeding: isStr,
+  phase: isStr,
+  filed: isStr,
+  judge: isStr,
+  cluster: isInt,
+  type: isStr,
+  defendants: isStr,
+  archived: isBool,
+  causes: isStrArray,
+  key_facts: isStr,
+  procedural_status: isStr,
+  damages: isStr,
+  risk: isStr,
+  evidence: isStrArray,
+  documents: (v) =>
+    Array.isArray(v) &&
+    v.every((d) => isObj(d) && isStr(d.path) && d.path.startsWith("/documents/")),
 };
 
-const OPTIONAL_FIELDS = {
-  courtlistener: [
-    (v) =>
-      v && typeof v === "object" &&
-      (v.court_id === undefined || isStr(v.court_id)) &&
-      (v.docket_id === undefined || isNum(v.docket_id)) &&
-      (v.docket_url === undefined || isStr(v.docket_url)),
-    false,
-  ],
+/** Optional fields: [validator] */
+const OPTIONAL = {
+  status_label: isStr,
+  badge: isStr,
+  courtlistener: (v) =>
+    isObj(v) &&
+    (v.court_id === undefined || isStr(v.court_id)) &&
+    (v.docket_id === undefined || isNum(v.docket_id)) &&
+    (v.docket_url === undefined || isStr(v.docket_url)),
+  note: isStr,
+  policy_limits: isObj,
+  serviceTracking: isObj,
 };
 
 /** Validate a parsed matter JSON; returns an array of human-readable issues (empty = valid). */
 export function validateMatter(data) {
   const issues = [];
-  if (!data || typeof data !== "object") return ["matter must be an object"];
-  for (const [field, [check, required]] of Object.entries({ ...FIELDS, ...OPTIONAL_FIELDS })) {
+  if (!isObj(data)) return ["matter must be an object"];
+  for (const [field, check] of Object.entries(REQUIRED)) {
     const v = data[field];
     if (v === undefined) {
-      if (required) issues.push(`${field}: missing required field`);
-      continue;
+      issues.push(`${field}: missing required field`);
+    } else if (!check(v)) {
+      issues.push(`${field}: invalid value`);
     }
-    if (!check(v)) issues.push(`${field}: invalid value`);
+  }
+  for (const [field, check] of Object.entries(OPTIONAL)) {
+    const v = data[field];
+    if (v !== undefined && !check(v)) {
+      issues.push(`${field}: invalid value`);
+    }
   }
   return issues;
 }
