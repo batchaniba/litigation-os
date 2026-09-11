@@ -1,30 +1,26 @@
 # Document store
 
-`internal/public/documents/` is ~660 MB of filed PDFs (and growing). Nothing
-is pruned. Vite's `publicDir` copies that tree wholesale into `dist/`, so
-every clone, every default CI checkout, and every production build used to
-move the whole library — even on the ~4 commits/day that only touch matter
-JSON.
+Filed PDFs live on the `documents` branch. `main` keeps the catalogs
+(`registry.json`, `manifest.json`) and gitignores the bytes. Local
+`internal/public/documents/` is filled with `npm run documents:pull`.
+`/documents/...` URLs do not change.
 
 Git LFS does not fix this. GitHub's free LFS quota is 1 GB of bandwidth a
-month; one Vercel build plus a couple of CI runs would exhaust it, and the
-blobs would still download whenever a job needed a working tree.
+month; one Vercel build plus a couple of CI runs would exhaust it.
 
-## What stays in git
+## What stays on main
 
 | File | Role |
 |---|---|
 | `internal/src/data/documents/registry.json` | Editorial catalog: path → label + owning matter |
 | `internal/src/data/documents/manifest.json` | Physical inventory: path → size + sha256 |
-
-The PDFs themselves stay in git **for now** so local `npm run dev`, Vercel,
-and GitHub Pages keep serving `/documents/...` with no extra account. What
-changed is that **most CI no longer checks them out or copies them**.
+| `internal/public/documents/README.md` | How to pull / push the store |
 
 ## Day to day — adding a filing
 
-Same desk as before. The new file still goes in the matter folder and on
-`documents[]`. The derived catalog (registry + manifest) refreshes on commit.
+Same desk. The PDF still goes in the matter folder. Git ignores the bytes
+on `main`; the hook pushes them to `origin/documents` when the inventory
+changes.
 
 ```bash
 # 1. Drop the PDF next to the others
@@ -33,100 +29,80 @@ Same desk as before. The new file still goes in the matter folder and on
 # 2. Point the matter record at it (path + optional filed / label override)
 #    internal/src/data/matters/NN.json → documents[]
 
-# 3. Commit. The pre-commit hook runs npm run sync:all, hashes *only the
-#    new/resized file*, and stages registry.json + manifest.json.
-git add internal/public/documents/matter-NN/"Your Filing (Date).pdf" \
-        internal/src/data/matters/NN.json
+# 3. Commit the matter JSON (do not git add -f the PDF).
+git add internal/src/data/matters/NN.json
 git commit -m "Add Matter NN filing"
 ```
 
-Data CI never sees the bytes. It checks that the path is in the committed
-manifest. The documents job runs only because this commit touched
-`internal/public/documents/` (or the inventory scripts), and it hashes the
-tree. Production (Vercel / GH Pages) still copies `publicDir` wholesale, so
-the live `/documents/...` URL works without a new host.
+The pre-commit hook runs `npm run sync:all` (hashes *only the new/resized
+file*), and if `manifest.json` changed it runs `npm run documents:push`.
+Data CI never sees the bytes. GitHub Pages checks out `documents` before
+`vite build`. Vercel rewrites `/documents/:path*` to
+https://newanforbi.github.io/interactive-litigation-portfolio/documents/:path*
+so the live site keeps the same paths without copying 660 MB on every
+Vercel build.
 
-If the hook is skipped (`git commit --no-verify`), data CI fails with
-`path not in document manifest — run npm run sync:manifest`. Run that, commit
-the JSON, push again.
+If the hook is skipped (`git commit --no-verify`):
+
+```bash
+npm run sync:manifest
+npm run documents:push
+git add internal/src/data/documents/manifest.json internal/src/data/documents/registry.json
+```
 
 In-place rewrite of an existing PDF that happens to keep the same byte size
-is the one case the incremental write will not notice. `npm run sync:manifest -- --full` (or the documents job) rehashes everything. Court filings almost
-never land that way — a new file or a larger file is the normal path.
+is the one case the incremental write will not notice. `npm run sync:manifest -- --full` rehashes everything.
 
-Do **not** put new PDFs anywhere else (repo root, `internal/assets/`, a
-sidecar folder). `validate-portfolio` still wants `/documents/...`.
+Do **not** put new PDFs anywhere else, and do not `git add -f` them onto
+`main`.
 
 ## Two CI paths
 
 **Data job** (`.github/workflows/ci.yml` → `build-and-validate`):
 
-- Sparse-checkout excludes `internal/public/documents/`.
+- Sparse-checkout excludes `internal/public/documents/` (and `main` no
+  longer tracks those files).
 - `PORTFOLIO_SKIP_DISK_DOCS=1` — `validate-portfolio` treats a path as real
   when it is in the committed manifest (and the registry).
 - `VITE_COPY_DOCUMENTS=0` — Vite copies `internal/public/` *except*
-  `documents/` (logos, short-link slugs, `robots.txt`).
+  `documents/`.
 - Still runs lint, typecheck, the JS bundle, citations gate, and tests.
 
 **Documents job** (`.github/workflows/documents.yml`):
 
-- Full checkout, path-filtered. Runs when the PDF tree, the manifest, or
-  the inventory scripts change — not on ordinary matter-data commits.
+- Checks out this ref for scripts, then `ref: documents` for the PDF tree.
 - Hashes every file, checks `%PDF` magic, rejects byte-identical duplicates
   inside one matter folder, warns on orphans.
-- No `npm ci`; `validate-portfolio.mjs` is Node builtins + local modules.
 
-Production deploy (Vercel and `.github/workflows/deploy-gh-pages.yml`) still
-checks out the tree and copies it into `dist/`. That cost is paid once per
-`main` push, not on every branch push.
+**GitHub Pages** checks out `documents` into `internal/public/documents`
+before `npm run build`, so `dist/documents/` is still the full library.
 
-## Local workflow
-
-Default `npm run validate` still reads the files on disk. After you drop or
-replace a PDF:
+## After clone
 
 ```bash
-npm run sync:registry    # path → label
-npm run sync:manifest    # path → size + sha256
-npm run validate
+npm install
+npm run documents:pull
+npm run dev
 ```
 
-`npm run sync:all` now includes the manifest. `npm run build` locally is
-unchanged (documents still land in `dist/`).
+`prepare` / `npm ci` do **not** pull. Data CI must stay off the 660 MB tree.
 
-To exercise the CI data path:
+## History
 
-```bash
-PORTFOLIO_SKIP_DISK_DOCS=1 VITE_COPY_DOCUMENTS=0 npm run validate
-VITE_COPY_DOCUMENTS=0 npm run build
-```
+Removing the files from the `main` tree makes **shallow** clones and Vercel
+checkouts small. A full clone of `main` still contains the historical blobs
+until a coordinated `git filter-repo`. Do not rewrite history until every
+clone has switched to `documents:pull`.
 
-## Phase 2 — get the binaries out of the default clone
-
-CI is no longer the growth curve. **Vercel and a full `git clone` still pay
-660 MB**, and that number only goes up. The remaining move:
-
-1. Host the tree outside this repo — a sibling repository, or one GitHub
-   Release tarball (`tar -C internal/public -cf documents.tar documents`).
-2. Gitignore `internal/public/documents/**` except folder READMEs / `.gitkeep`.
-3. Add `npm run documents:pull` that unpacks the archive into the same path
-   so `/documents/...` URLs do not change.
-4. Point Vercel and GH Pages build commands at pull-then-`vite build`.
-5. Keep the manifest in this repo. Data CI stays sparse. The documents job
-   checks out the store, not this tree.
-
-Do **not** rewrite history until every clone has switched. `git filter-repo`
-to drop the PDFs is a coordinated cutover, not a first step.
-
-A cheaper follow-up inside this repo: stop committing the ~47 MB of
-short-link slug copies under `internal/public/*.pdf`. Point Vercel redirects
-at the `/documents/...` source and delete the duplicates.
+A cheaper follow-up: the ~47 MB of short-link slug copies under
+`internal/public/*.pdf` can become redirects to the `/documents/...`
+sources.
 
 ## Why not the other options
 
 | Option | Why it loses |
 |---|---|
 | Git LFS | Bandwidth quota; every deploy still downloads every blob |
-| `fetch-depth: 1` alone | Helps history, not the current tree (already in use) |
+| `fetch-depth: 1` alone | Helps history, not the current tree |
 | Leaving PDFs in `publicDir` and deleting after copy | Still copies 660 MB |
 | Serving from a random CDN with new URLs | Breaks matter links, short-links, and the registry id |

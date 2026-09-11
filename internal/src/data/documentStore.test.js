@@ -12,6 +12,7 @@ import {
   skipViteDocumentCopy,
   urlFromPublicRel,
 } from "../../scripts/lib/document-store.mjs";
+import { PAGES_DOCUMENTS_ORIGIN, vercelSpaRewrites } from "../../scripts/lib/documents-branch.mjs";
 
 describe("skipDiskDocs", () => {
   it("reads the flag from argv or env", () => {
@@ -69,6 +70,17 @@ describe("copyPublicExceptDocumentsFilter", () => {
         publicRoot,
       ),
     ).toBe(false);
+  });
+});
+
+describe("vercelSpaRewrites", () => {
+  it("proxies /documents/* to GitHub Pages ahead of the SPA fallback", () => {
+    const rewrites = vercelSpaRewrites();
+    expect(rewrites[0]).toEqual({
+      source: "/documents/:path*",
+      destination: `${PAGES_DOCUMENTS_ORIGIN}/:path*`,
+    });
+    expect(rewrites[1]).toEqual({ source: "/(.*)", destination: "/index.html" });
   });
 });
 

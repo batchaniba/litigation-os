@@ -651,6 +651,10 @@
   ],
   "rewrites": [
     {
+      "source": "/documents/:path*",
+      "destination": "https://newanforbi.github.io/interactive-litigation-portfolio/documents/:path*"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }

@@ -21,9 +21,21 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v7
         with:
-          # Production still ships the PDF tree inside dist/. Data-only CI
-          # excludes it; this deploy job cannot. See DOCUMENT_STORE.md.
           fetch-depth: 1
+
+      - name: Checkout document store
+        uses: actions/checkout@v7
+        with:
+          ref: documents
+          fetch-depth: 1
+          path: .document-store
+
+      - name: Place PDFs
+        run: |
+          rm -rf internal/public/documents
+          mkdir -p internal/public
+          mv .document-store/internal/public/documents internal/public/documents
+          rm -rf .document-store
 
       - name: Setup Node
         uses: actions/setup-node@v7

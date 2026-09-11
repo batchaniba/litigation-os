@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1094,
-  "totalBytes": 725392867,
+  "fileCount": 1095,
+  "totalBytes": 725393349,
   "files": [
     {
       "path": "/documents/_form-library/ao440-blank-template.pdf",
@@ -5472,6 +5472,11 @@
       "path": "/documents/opinions/Newanforbi v Smith - USDC NDCal - Order Directing Service Aug 26 2026.pdf",
       "size": 134726,
       "sha256": "79355d28b4741e9e26e2f3d5b89bf37ef4f3af1bbfece3567e83a91778cc7488"
+    },
+    {
+      "path": "/documents/README.md",
+      "size": 482,
+      "sha256": "fd9e068ec788a0c4e54aed9d8a9c38785dd84abb50547253f85eef61c3ecbd9b"
     }
   ]
 }

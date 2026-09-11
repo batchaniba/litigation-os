@@ -13,6 +13,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadManifest, manifestByPath, skipDiskDocs } from "./lib/document-store.mjs";
+import { vercelSpaRewrites } from "./lib/documents-branch.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(__dirname, "../..");
@@ -78,7 +79,7 @@ function buildVercelJson(links) {
   return {
     redirects,
     headers,
-    rewrites: [{ source: "/(.*)", destination: "/index.html" }],
+    rewrites: vercelSpaRewrites(),
   };
 }
 
