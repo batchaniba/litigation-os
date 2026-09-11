@@ -16,7 +16,7 @@ on:
         required: false
         type: string
       entries:
-        description: 'Entry numbers CSV (e.g. "64,68,69,75") or "all"'
+        description: 'Entry numbers CSV (e.g. "64,68,69,75") or "list" (discover entries, no downloads)'
         required: true
         type: string
       label:

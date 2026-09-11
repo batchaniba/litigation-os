@@ -11,7 +11,7 @@
 // Usage:
 //   node fetch-recap-briefs.mjs --docket-number 5:25-cv-02931 --court cacd \
 //     --entries 64,68,69,75 --label ventura-randstad --out /tmp/briefs
-//   --entries "all" downloads every entry with available RECAP docs.
+//   --entries "list" lists every entry (numbers + descriptions) without downloading.
 
 import { mkdir, writeFile } from "node:fs/promises";
 import { join } from "node:path";
@@ -101,11 +101,18 @@ async function main() {
   }
   const docket =
     dockets.find((d) => String(d.docket_number) === String(DOCKET_NUMBER)) ?? dockets[0];
+  // v4 search hits carry docket_id (not id) — see bindingFromHit in resolve-dockets.
+  const docketId = docket.docket_id ?? docket.id ?? null;
+  if (!docketId) {
+    await fail(
+      `search hit for "${DOCKET_NUMBER}" has no docket_id (keys: ${Object.keys(docket).join(",")})`,
+    );
+  }
   manifest.docket = {
-    id: docket.id,
+    id: docketId,
     case_name: docket.case_name,
     docket_number: docket.docket_number,
-    court: docket.court,
+    court: docket.court_id ?? docket.court,
   };
   console.log(
     `docket: ${docket.case_name} (${docket.docket_number}) id=${docket.id} court=${docket.court}`,
@@ -122,13 +129,25 @@ async function main() {
             .map((n) => Number(String(n).trim()))
             .filter(Number.isFinite),
         );
-  if (ENTRIES_RAW === "all") {
-    throw new Error('--entries "all" is disabled in budget-saver mode; pass explicit entry numbers');
+  const LIST_ONLY = ENTRIES_RAW === "list";
+  if (LIST_ONLY) {
+    // Discovery mode: full entry listing into the manifest, no downloads.
+    const entries = await client.listDocketEntries({ docketId });
+    manifest.documents = entries.map((e) => ({
+      entry_number: e.entry_number,
+      entry_id: e.id,
+      description: e.description,
+      date_filed: e.date_filed,
+      status: "listed",
+    }));
+    await writeFile(join(dir, "manifest.json"), JSON.stringify(manifest, null, 2));
+    console.log(`listed ${entries.length} entries -> ${dir}/manifest.json`);
+    return;
   }
   const wanted = [];
   for (const n of nums) {
     // Exact entry_number filter: one cheap call per entry instead of full pagination.
-    const params = new URLSearchParams({ docket: String(docket.id), entry_number: String(n) });
+    const params = new URLSearchParams({ docket: String(docketId), entry_number: String(n) });
     let url = `${CL_BASE}/docket-entries/?${params}`;
     let matched = null;
     while (url && !matched) {
