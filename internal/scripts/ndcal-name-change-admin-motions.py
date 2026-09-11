@@ -10,9 +10,9 @@ Live posture as of September 11, 2026:
 - Matter 24 / 32: Li will not stipulate; will not oppose if the paper
   makes clear Nforbi and Newanforbi are the same person. Recite that.
   His 32 statement is not an appearance and not acceptance of service.
-- Matter 28: Martinez will review a quieter stipulation; he does not
-  intend to oppose a motion. File this 7-11 only if he declines the
-  revised counterpart.
+- Matter 28: Martinez will not oppose a motion; he will not sign a
+  stipulation. File the quiet 7-11 (ECF / PACER only). Do not list
+  dates. Do not send him another counterpart.
 - Matter 29: Amazon is agreeable if both name forms are confirmed.
   Accurate asked for that confirmation and a government ID. Do not
   send an ID. Do not recite non-opposition until it is on the email
@@ -91,6 +91,7 @@ class NameCase:
     email_to: list[str] = field(default_factory=list)
     email_extra: str = ""
     caption_short: str = ""
+    quiet: bool = False
 
 
 CASES: list[NameCase] = [
@@ -195,42 +196,33 @@ CASES: list[NameCase] = [
             "Counsel for Shannon Smith, LCSW, and HOPE Psychotherapy, Inc.",
         ],
         conferral_decl=(
-            "I conferred with Blaze Van Dine and Eric Martinez of Sims, "
+            "I conferred with Blaze Van Dine and Eric T. Martinez of Sims, "
             "Lawrence & Broghammer, counsel for Defendants. On September "
-            "11, 2026 Mr. Martinez wrote that he does not intend to oppose "
-            "a request that the Clerk identify Plaintiff as "
-            f"{NEW_NAME}, and that he would review a revised stipulation. "
-            "A revised counterpart was sent. No Civil L.R. 7-12 "
-            "stipulation was executed. That is why this motion is not "
-            "accompanied by a stipulation. This motion and this "
-            "declaration make clear that the two name forms are one person."
+            "11, 2026 Mr. Martinez wrote that he has no intention of "
+            "opposing a motion requesting that Plaintiff's name on the "
+            "docket be modified. He did not agree to a Civil L.R. 7-12 "
+            "stipulation. That is why this motion is not accompanied by a "
+            "stipulation."
         ),
         motion_conferral=(
-            "Plaintiff conferred with Blaze Van Dine and Eric Martinez. "
-            "Mr. Martinez stated he does not intend to oppose this request. "
-            "A revised stipulation was offered. None was executed. Section "
-            "II and the accompanying declaration make clear that the two "
-            "name forms are one person. The accompanying declaration "
-            "satisfies Civil L.R. 7-11(a)."
+            "Plaintiff conferred with Blaze Van Dine and Eric T. Martinez. "
+            "Mr. Martinez stated he has no intention of opposing this "
+            "request. He did not agree to a Civil L.R. 7-12 stipulation. "
+            "The accompanying declaration satisfies Civil L.R. 7-11(a)."
         ),
-        preserve=[
-            "Defendants' September 21, 2026 deadline to answer or otherwise "
-            "respond (from the August 31, 2026 accepted service)",
-            "the October 15, 2026 joint case management statement",
-            "the October 22, 2026 initial case management conference",
-        ],
+        preserve=[],
         unopposed=True,
-        short_slug="name-28",
+        short_slug="hope-name-motion",
         email_to=[
             "blaze@sims-law.net",
             "emartinez@sims-law.net",
             "slb-eservice@sims-law.net",
         ],
         email_extra=(
-            "You said you do not intend to oppose. I am not asking you to "
-            "sign. This motion is the fallback if the revised stipulation "
-            "does not go on file.\n"
+            "You said you do not intend to oppose a motion. I am filing "
+            "this request with the Court. I am not asking you to sign.\n"
         ),
+        quiet=True,
         caption_short="NEWANFORBI v. SMITH",
     ),
     NameCase(
@@ -687,17 +679,32 @@ def build_motion(case: NameCase) -> Path:
     d.blank_line()
     d.ensure_space(3)
     d.write_line("V.", bold=True, center=True)
-    d.write_line("NOTHING ELSE MOVES", bold=True, center=True)
-    d.blank_line()
-    d.write_wrapped(
-        "All prior filings, proofs of service, acceptances of service, "
-        "orders, and related-case determinations remain effective as to the "
-        "same person. No party need be re-served. <<b:No other date or "
-        "deadline in this action is modified.>> This motion is not a stay "
-        "of discovery. Expressly unchanged, without limitation: "
-        f"{'; '.join(case.preserve)}.",
-        first_indent=0,
-    )
+    if case.quiet:
+        d.write_line("THIS REQUEST IS LIMITED TO THE DOCKET NAME", bold=True, center=True)
+        d.blank_line()
+        d.write_wrapped(
+            "This request is made so that the Clerk can identify Plaintiff "
+            "by the name on his PACER account and the ECF Help Desk can "
+            "link that account for pro se e-filing. It does not add, drop, "
+            "or substitute any party. It does not amend any claim or "
+            "defense. All prior filings, proofs of service, acceptances of "
+            "service, and orders remain effective as to the same person. "
+            "No party need be re-served by reason of this caption change.",
+            first_indent=0,
+        )
+    else:
+        d.write_line("NOTHING ELSE MOVES", bold=True, center=True)
+        d.blank_line()
+        preserved = "; ".join(case.preserve) if case.preserve else "the existing schedule"
+        d.write_wrapped(
+            "All prior filings, proofs of service, acceptances of service, "
+            "orders, and related-case determinations remain effective as to the "
+            "same person. No party need be re-served. <<b:No other date or "
+            "deadline in this action is modified.>> This motion is not a stay "
+            "of discovery. Expressly unchanged, without limitation: "
+            f"{preserved}.",
+            first_indent=0,
+        )
     d.blank_line()
     d.write_wrapped(
         "Nothing in this motion is a waiver of any claim, defense, "
@@ -770,13 +777,21 @@ def build_declaration(case: NameCase) -> Path:
         first_indent=0,
     )
     d.blank_line()
-    d.write_wrapped(
-        "5.  I am not asking the Court to move any deadline, hearing, "
-        "conference, pending motion, or discovery obligation. After the "
-        "Clerk updates the party name I will ask the ECF Help Desk to link "
-        "PACER login bngwanforbi for pro se e-filing.",
-        first_indent=0,
-    )
+    if case.quiet:
+        d.write_wrapped(
+            "5.  After the Clerk updates the party name I will ask the ECF "
+            "Help Desk to link PACER login bngwanforbi for pro se e-filing. "
+            "That is the reason for this request.",
+            first_indent=0,
+        )
+    else:
+        d.write_wrapped(
+            "5.  I am not asking the Court to move any deadline, hearing, "
+            "conference, pending motion, or discovery obligation. After the "
+            "Clerk updates the party name I will ask the ECF Help Desk to link "
+            "PACER login bngwanforbi for pro se e-filing.",
+            first_indent=0,
+        )
     d.blank_line()
     _sign_for(d, case, declaration=True)
     d.save()
@@ -832,8 +847,12 @@ def build_order(case: NameCase) -> Path:
     )
     d.blank_line()
     d.write_wrapped(
-        "4.  No deadline, hearing, conference, pending motion, or discovery "
-        "obligation is modified.",
+        "4.  This Order grants no other relief."
+        if case.quiet
+        else (
+            "4.  No deadline, hearing, conference, pending motion, or discovery "
+            "obligation is modified."
+        ),
         first_indent=0,
     )
     d.blank_line()
@@ -930,11 +949,11 @@ This is a request to the Court. It is not a stipulation.
 
 {posture}
 {("" if not case.email_extra else chr(10) + case.email_extra)}
-The two name forms are one person. No deadline, hearing, or pending
-motion moves.
+The two name forms are one person. The request is so I can e-file
+on PACER login bngwanforbi.
 
 After the Clerk updates the party name I will ask the ECF Help Desk
-to link PACER login bngwanforbi for pro se e-filing.
+to link that account.
 
 Thank you,
 {NEW_NAME}

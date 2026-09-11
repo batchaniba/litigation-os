@@ -321,6 +321,16 @@
       "permanent": false
     },
     {
+      "source": "/hope-name-motion",
+      "destination": "/hope-name-motion.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/hope-name-motion/",
+      "destination": "/hope-name-motion.pdf",
+      "permanent": false
+    },
+    {
       "source": "/name-29",
       "destination": "/name-29.pdf",
       "permanent": false
@@ -637,6 +647,15 @@
         {
           "key": "Content-Disposition",
           "value": "attachment; filename=\"Stipulation and Proposed Order - Conform Plaintiff's Name to Brendan Ngwa Nforbi (Plaintiff Counterpart - not yet agreed) (September 11, 2026).pdf\"; filename*=UTF-8''Stipulation%20and%20Proposed%20Order%20-%20Conform%20Plaintiff's%20Name%20to%20Brendan%20Ngwa%20Nforbi%20%28Plaintiff%20Counterpart%20-%20not%20yet%20agreed%29%20%28September%2011%2C%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/hope-name-motion.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Name Conform Administrative Motion Packet - Brendan Ngwa Nforbi (September 11, 2026).pdf\"; filename*=UTF-8''Name%20Conform%20Administrative%20Motion%20Packet%20-%20Brendan%20Ngwa%20Nforbi%20%28September%2011%2C%202026%29.pdf"
         }
       ]
     },
