@@ -45,7 +45,8 @@ FIRST_NAME = "Brendan"
 LAST_NAME = "Ngwa Nforbi"
 BOLD_NFORBI = "<<b:Nforbi>>"
 BOLD_LAST = f"Ngwa {BOLD_NFORBI}"
-# The full requested name stays roman. Bold only the last-name token Nforbi.
+BOLD_NGEHSI = "<<b:Ngehsi Newanforbi>>"
+# The full requested name stays roman. Bold the other docket-name tokens.
 BOLD_NAME = NEW_NAME
 BOLD_NAME_CAPS = NEW_NAME_CAPS
 FIRST_LAST_GLOSS = (
@@ -240,7 +241,7 @@ CASES: list[NameCase] = [
         ],
         email_extra=(
             "This is the request we discussed September 10: same person as "
-            "Brendan Ngehsi Newanforbi; PACER login bngwanforbi; September 21, "
+            "Ngehsi Newanforbi; PACER login bngwanforbi; September 21, "
             "October 15, and October 22 stay put. I am not asking you to "
             "stipulate or to sign.\n"
         ),
@@ -583,13 +584,16 @@ def _bold_nforbi_name(name: str) -> str:
     )
 
 
-def _same_person_line() -> str:
-    """Requested name plus every docket form, Nforbi listed on its own."""
+def _aka_clause() -> str:
+    """The other docket forms, each bolded; no leading Brendan on Newanforbi."""
     return (
-        f"{BOLD_NAME} is the same natural person as "
-        f"Ngwa {BOLD_NFORBI} and as {BOLD_NFORBI} and as "
-        "Brendan Ngehsi Newanforbi."
+        f"<<b:Ngwa Nforbi>> and as {BOLD_NFORBI} and as {BOLD_NGEHSI}"
     )
+
+
+def _same_person_line() -> str:
+    """Requested name plus every other docket form."""
+    return f"{BOLD_NAME} is the same natural person as {_aka_clause()}."
 
 
 def _pacer_name_ask(case: NameCase) -> str:
@@ -857,8 +861,7 @@ def build_declaration(case: NameCase) -> Path:
     d.blank_line()
     d.write_wrapped(
         f"4.  I, {BOLD_NAME}, am the same natural person as "
-        f"Ngwa {BOLD_NFORBI} and as {BOLD_NFORBI} and as "
-        "Brendan Ngehsi Newanforbi."
+        f"{_aka_clause()}."
         f"{_pacer_name_ask(case)} I am not asking the "
         "Court to add, drop, or substitute any party.",
         first_indent=0,
