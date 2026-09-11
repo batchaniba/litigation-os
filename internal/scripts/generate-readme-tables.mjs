@@ -311,6 +311,8 @@ const citationScoreboard = citationVerification
       `Paired authorities: **${citationVerification.corpusAuthorities ?? "—"}**. ` +
         `P0 (plaintiff-only UNVERIFIED): **${citationVerification.queue?.plaintiffOnlyUnverified ?? "—"}**. ` +
         `P1 (plaintiff-only bad status): **${citationVerification.queue?.plaintiffOnlyBad ?? "—"}**. ` +
+        `UNVERIFIED includes opposing-counsel and court-order cites (P3). ` +
+        `The desk is P0, then P1. Existence VERIFIED is not a holding check. ` +
         `Ledger date: ${citationVerification.generatedDate || "—"}.`,
     ].join("\n")
   : [

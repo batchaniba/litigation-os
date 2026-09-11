@@ -17,13 +17,21 @@ Do not mark a citation VERIFIED from memory. Run the funnel and record evidence.
    ```bash
    npm run citations:lookup                         # controls + high-risk batch
    npm run citations:lookup:matter -- --matter N    # one matter's authorities
+   npm run citations:lookup:p0                      # plaintiff-only UNVERIFIED
    ```  
-   → `citation_lookup_multisource.json` or `citation_lookup_matterNN.json`
+   → `citation_lookup_multisource.json` or `citation_lookup_matterNN.json`  
+   Allowlisted Bing web search runs automatically when CL/CAP miss or disagree. A web hit is **PARTIAL at most** and is never overlaid as VERIFIED by itself.
 
 3. **Overlay** — fold lookup consensus into `citation_verification_rounds.json`  
+   ```bash
+   npm run citations:overlay -- internal/docs/citation_lookup_matter25.json
+   npm run citations:overlay:existing
+   ```  
    - `FOUND` + prior `UNVERIFIED` → `VERIFIED` (existence only)  
-   - `CAPTION_MISMATCH` with wrong case at pin → `MISCITED`  
-   - Prior `MISCHARACTERIZED` / proposition-`MISCITED` **stays** even if the pin exists  
+  - `CAPTION_MISMATCH` with truncated/OCR name of the same case → `VERIFIED` (existence; official caption in notes)  
+  - `CAPTION_MISMATCH` with no party-name overlap (wrong case at pin) → **not overlaid**; mark `MISCITED` by hand  
+  - Prior `MISCHARACTERIZED` / proposition-`MISCITED` **stays** even if the pin exists
+   - Web-search-only `PARTIAL` is **not** overlaid  
    - Never downgrade a table-page `VERIFIED` solely because CL’s first hit differs
 
 4. **Ledger + gate**  
@@ -49,8 +57,7 @@ Do not mark a citation VERIFIED from memory. Run the funnel and record evidence.
 | CourtListener `/api/rest/v4/search/` | OK (unauthenticated) |
 | CAP `static.case.law` CasesMetadata + HTML | OK |
 | `api.case.law` JSON / CL citation-lookup | Need auth |
-| Justia | Cloudflare 403 |
-| Google Scholar | Unreliable (often 403) |
+| Bing HTML (allowlisted hosts, pin + name) | Tie-breaker only; `PARTIAL` at most; not overlaid alone |
 
 ## Artifacts
 

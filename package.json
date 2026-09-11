@@ -41,6 +41,10 @@
     "citations:lookup": "python3 internal/scripts/lookup-citations.py --batch all",
     "citations:lookup:matter": "python3 internal/scripts/lookup-citations.py",
     "citations:lookup:matter28": "python3 internal/scripts/lookup-citations.py --matter 28",
+    "citations:lookup:p0": "python3 internal/scripts/lookup-citations.py --p0 --out internal/docs/citation_lookup_p0.json",
+    "citations:overlay": "python3 internal/scripts/overlay-citation-lookups.py",
+    "citations:overlay:existing": "python3 internal/scripts/overlay-citation-lookups.py --existing",
+    "citations:test": "python3 internal/scripts/citation_funnel_test.py",
     "extract:matter1": "node internal/scripts/extract-matter-pdfs.mjs"
   },
   "dependencies": {

@@ -2,9 +2,8 @@
 """Fold lookup-citations.py consensus into citation_verification_rounds.json.
 
 Usage:
-  python3 internal/scripts/overlay-citation-lookups.py \\
-      internal/docs/citation_lookup_matter25.json \\
-      internal/docs/citation_lookup_p0_25263233.json
+  python3 internal/scripts/overlay-citation-lookups.py FILE.json [...]
+  python3 internal/scripts/overlay-citation-lookups.py --existing
 
 Rules (citation-verify skill + this overlay):
   FOUND + prior UNVERIFIED → VERIFIED (existence only)
@@ -18,70 +17,122 @@ Rules (citation-verify skill + this overlay):
   Prior MISCHARACTERIZED / proposition-MISCITED stays
   Never downgrade a table-page VERIFIED
   NOT_FOUND is left alone (a miss is not a fabrication)
+  Web-search-only PARTIAL is left alone (allowlisted SERP is not a pin match)
 """
 from __future__ import annotations
 
 import json
-import re
 import sys
 from pathlib import Path
+
+_SCRIPTS = Path(__file__).resolve().parent
+if str(_SCRIPTS) not in sys.path:
+    sys.path.insert(0, str(_SCRIPTS))
+
+from lib.citation_keys import case_name_key, names_overlap, normalize_authority_key, reporter_pin_key
 
 ROOT = Path(__file__).resolve().parents[1]
 ROUNDS = ROOT / "docs" / "citation_verification_rounds.json"
 LEDGER = ROOT / "docs" / "citation_verification.json"
+DOCS = ROOT / "docs"
+ROUND_ID = "12-funnel"
+
+SKIP_PRIOR = {"MISCHARACTERIZED", "MISCITED", "NOT_FOUND", "VERIFIED"}
 
 
-def slug(s: str) -> str:
-    return re.sub(r"[^a-z0-9]+", " ", (s or "").lower()).strip()
-
-
-def key_of(citation: str) -> str:
-    c = re.sub(r"^(See|see|SEE)\s+", "", (citation or "").strip())
-    return slug(c)
-
-
-def load_prior_status() -> dict[str, str]:
+def load_prior() -> tuple[dict[str, str], dict[str, str], dict[str, list[str]]]:
+    """Maps: full key → status, pin → status, pin → ledger citation strings."""
+    by_key: dict[str, str] = {}
+    by_pin: dict[str, str] = {}
+    cites_by_pin: dict[str, list[str]] = {}
     if not LEDGER.exists():
-        return {}
+        return by_key, by_pin, cites_by_pin
     data = json.loads(LEDGER.read_text())
-    out = {}
     for row in data.get("authorities") or data.get("results") or []:
         cite = row.get("citation")
         status = row.get("status")
-        if cite and status:
-            out[key_of(cite)] = status
-    return out
+        if not cite or not status:
+            continue
+        by_key[normalize_authority_key(cite)] = status
+        pin = reporter_pin_key(cite)
+        if pin:
+            by_pin.setdefault(pin, status)
+            cites_by_pin.setdefault(pin, []).append(cite)
+    return by_key, by_pin, cites_by_pin
 
 
 def sources_note(row: dict) -> str:
     urls = []
-    for s in row.get("sources") or []:
-        if s.get("found") and s.get("url"):
-            urls.append(s["url"])
+    for source in row.get("sources") or []:
+        if not isinstance(source, dict):
+            continue
+        if source.get("found") and source.get("url"):
+            urls.append(source["url"])
     return (" Sources: " + " ; ".join(urls) + ".") if urls else ""
 
 
-def overlay_row(lookup: dict, prior: dict[str, str]) -> dict | None:
+def prior_status_for(lookup: dict, by_key: dict[str, str], by_pin: dict[str, str]) -> str | None:
+    query = lookup.get("query") or ""
+    status = by_key.get(normalize_authority_key(query))
+    if status:
+        return status
+    pin = reporter_pin_key(query) or reporter_pin_key(str(lookup.get("reporter_pin") or lookup.get("wl_pin") or ""))
+    if pin and pin in by_pin:
+        return by_pin[pin]
+    return None
+
+
+def ledger_citation_for(lookup: dict, cites_by_pin: dict[str, list[str]]) -> str:
+    query = lookup.get("query") or ""
+    pin = reporter_pin_key(query) or reporter_pin_key(str(lookup.get("reporter_pin") or lookup.get("wl_pin") or ""))
+    if pin:
+        cites = cites_by_pin.get(pin) or []
+        if len(cites) == 1:
+            return cites[0]
+        query_name = case_name_key(query)
+        for cite in cites:
+            if case_name_key(cite) == query_name or query_name in case_name_key(cite) or case_name_key(cite) in query_name:
+                return cite
+    return query
+
+
+def web_only_partial(lookup: dict) -> bool:
+    if lookup.get("consensus") != "PARTIAL":
+        return False
+    found = [s for s in (lookup.get("sources") or []) if isinstance(s, dict) and s.get("found")]
+    if not found:
+        return True
+    return all(s.get("source") == "web_search" for s in found)
+
+
+def overlay_row(
+    lookup: dict,
+    by_key: dict[str, str],
+    by_pin: dict[str, str],
+    cites_by_pin: dict[str, list[str]],
+) -> dict | None:
     query = lookup.get("query") or ""
     consensus = lookup.get("consensus")
-    prior_status = prior.get(key_of(query))
-    if prior_status in {"MISCHARACTERIZED", "MISCITED", "NOT_FOUND", "VERIFIED"}:
+    prior_status = prior_status_for(lookup, by_key, by_pin)
+    if prior_status in SKIP_PRIOR:
+        return None
+    if web_only_partial(lookup):
         return None
     matched = lookup.get("matched_name") or ""
     pin = lookup.get("reporter_pin") or lookup.get("wl_pin") or ""
+    query_name = query
 
     cap_notes = " ".join(
-        s.get("notes") or ""
+        (s.get("notes") or "")
         for s in (lookup.get("sources") or [])
-        if s.get("source") == "case.law_static"
+        if isinstance(s, dict) and s.get("source") == "case.law_static"
     )
-    # Volume exists on CAP but this first_page is not in it — the pin is wrong.
     if "No case with first_page=" in cap_notes and "Devenpeck" in query:
         return {
-            "citation": query,
+            "citation": ledger_citation_for(lookup, cites_by_pin),
             "status": "MISCITED",
-            "source": "Round 11 CAP volume check",
-            "round": "11-p0-ocr-alias",
+            "source": "Round 12 CAP volume check",
+            "round": ROUND_ID,
             "notes": (
                 "Devenpeck v. Alford is 543 U.S. 146 (2004). This string points at a page "
                 "that is not in that volume (543 U.S. 11) or at an impossible early U.S. "
@@ -89,17 +140,21 @@ def overlay_row(lookup: dict, prior: dict[str, str]) -> dict | None:
             ),
         }
 
+    # Wrong case at the pin is a human MISCITED, not an OCR fold.
+    if consensus == "CAPTION_MISMATCH" and matched and not names_overlap(query_name, matched):
+        return None
+
     if consensus in {"FOUND", "CAPTION_MISMATCH"} or (
         consensus == "PARTIAL" and lookup.get("matched_name") and "Devenpeck" not in query
     ):
         official = matched or "the queried caption"
         src = (
-            "Round 11 CourtListener + CAP lookup"
+            "Round 12 CourtListener + CAP lookup"
             if consensus == "FOUND"
             else (
-                "Round 11 pin resolves; official caption differs from index string"
+                "Round 12 pin resolves; official caption differs from index string"
                 if consensus == "CAPTION_MISMATCH"
-                else "Round 11 single-source lookup (CourtListener or CAP)"
+                else "Round 12 single-source lookup (CourtListener or CAP)"
             )
         )
         extra = ""
@@ -108,10 +163,10 @@ def overlay_row(lookup: dict, prior: dict[str, str]) -> dict | None:
                 f" Index string is truncated or OCR-variant; official caption is {official}."
             )
         return {
-            "citation": query,
+            "citation": ledger_citation_for(lookup, cites_by_pin),
             "status": "VERIFIED",
             "source": src,
-            "round": "11-p0-ocr-alias",
+            "round": ROUND_ID,
             "notes": (
                 f"Existence only. Pin {pin or '(none)'} is {official}."
                 f"{extra}{sources_note(lookup)} Characterization still needs opinion text."
@@ -120,27 +175,61 @@ def overlay_row(lookup: dict, prior: dict[str, str]) -> dict | None:
     return None
 
 
+def existing_lookup_files() -> list[Path]:
+    return sorted(DOCS.glob("citation_lookup*.json"))
+
+
 def main(argv: list[str]) -> int:
-    if not argv:
-        print("usage: overlay-citation-lookups.py <lookup.json> [...]", file=sys.stderr)
+    args = list(argv)
+    use_existing = False
+    if "--existing" in args:
+        use_existing = True
+        args = [a for a in args if a != "--existing"]
+    paths = [Path(a) for a in args]
+    if use_existing:
+        paths.extend(existing_lookup_files())
+    if not paths:
+        print(
+            "usage: overlay-citation-lookups.py [--existing] <lookup.json> [...]",
+            file=sys.stderr,
+        )
         return 2
-    prior = load_prior_status()
+    by_key, by_pin, cites_by_pin = load_prior()
     rounds = json.loads(ROUNDS.read_text())
-    existing_keys = {key_of(r["citation"]) for r in rounds.get("results") or []}
+    existing_keys = {normalize_authority_key(r["citation"]) for r in rounds.get("results") or []}
+    existing_pins = {
+        reporter_pin_key(r["citation"])
+        for r in rounds.get("results") or []
+        if reporter_pin_key(r["citation"])
+    }
     added = []
-    for path in argv:
-        payload = json.loads(Path(path).read_text())
+    for path in paths:
+        payload = json.loads(path.read_text())
         for row in payload.get("results") or []:
-            overlay = overlay_row(row, prior)
+            overlay = overlay_row(row, by_key, by_pin, cites_by_pin)
             if not overlay:
                 continue
-            k = key_of(overlay["citation"])
-            if k in existing_keys:
+            k = normalize_authority_key(overlay["citation"])
+            pin = reporter_pin_key(overlay["citation"])
+            if k in existing_keys or (pin and pin in existing_pins):
                 continue
             rounds.setdefault("results", []).append(overlay)
             existing_keys.add(k)
+            if pin:
+                existing_pins.add(pin)
             added.append(overlay)
-            prior[k] = overlay["status"]
+            by_key[k] = overlay["status"]
+            if pin:
+                by_pin[pin] = overlay["status"]
+    if added:
+        method = rounds.get("method") or ""
+        note = (
+            " Round 12: npm run citations:overlay folds lookup JSON (FOUND / "
+            "compatible PARTIAL / OCR CAPTION_MISMATCH) into existence-only VERIFIED; "
+            "web-search-only hits are not overlaid."
+        )
+        if "Round 12:" not in method:
+            rounds["method"] = (method.rstrip() + note).strip()
     ROUNDS.write_text(json.dumps(rounds, indent=2) + "\n")
     print(json.dumps({"added": len(added), "byStatus": {
         s: sum(1 for r in added if r["status"] == s) for s in ("VERIFIED", "MISCITED")

@@ -419,8 +419,8 @@ Authority quality is a liability surface: claims are cognizable and motions to d
 | Stage | Command | Output |
 |---|---|---|
 | 1. Index | `npm run citations:index` | `internal/docs/citation_index.json` / `CITATION_INDEX.md` — every cite keyed to page + filing role |
-| 2. Lookup | `npm run citations:lookup:matter -- --matter N` | CourtListener + CAP `static.case.law` existence probe → `citation_lookup_matterNN.json` |
-| 3. Overlay | edit `citation_verification_rounds.json` | Fold lookup consensus into statuses (existence `FOUND` can clear `UNVERIFIED`; proposition `MISCITED` / `MISCHARACTERIZED` stays) |
+| 2. Lookup | `npm run citations:lookup:matter -- --matter N` or `citations:lookup:p0` | CourtListener + CAP `static.case.law`; allowlisted Bing web search as a tie-breaker (`PARTIAL` at most) → `citation_lookup_*.json` |
+| 3. Overlay | `npm run citations:overlay -- FILE.json` or `citations:overlay:existing` | Fold lookup consensus into `citation_verification_rounds.json` (existence `FOUND` / compatible `PARTIAL` / OCR `CAPTION_MISMATCH` can clear `UNVERIFIED`; proposition `MISCITED` / `MISCHARACTERIZED` stays; web-search-only hits are not overlaid) |
 | 4. Ledger + gate | `npm run citations:verify` then `citations:check` | `citation_verification.json` / `CITATION_VERIFICATION.md`; CI fails on **new** fabricated cites in plaintiff filings |
 
 Controls (reconfirm when batching): *Richardson v. McKnight*, 521 U.S. 399 must resolve; *In re Leman*, 66 Cal.App.5th 200 must not. Justia is Cloudflare-blocked here; Google Scholar is unreliable; prefer CourtListener search + CAP static metadata/HTML.
@@ -430,13 +430,13 @@ Controls (reconfirm when batching): *Richardson v. McKnight*, 521 U.S. 399 must 
 <!-- PORTFOLIO:CITATION_SCOREBOARD:START -->
 | Status | Count |
 |---|---|
-| VERIFIED | 460 |
-| MISCITED | 30 |
+| VERIFIED | 500 |
+| MISCITED | 31 |
 | MISCHARACTERIZED | 6 |
 | NOT_FOUND | 6 |
-| UNVERIFIED | 485 |
+| UNVERIFIED | 444 |
 
-Paired authorities: **987**. P0 (plaintiff-only UNVERIFIED): **8**. P1 (plaintiff-only bad status): **30**. Ledger date: 2026-09-09.
+Paired authorities: **987**. P0 (plaintiff-only UNVERIFIED): **8**. P1 (plaintiff-only bad status): **30**. UNVERIFIED includes opposing-counsel and court-order cites (P3). The desk is P0, then P1. Existence VERIFIED is not a holding check. Ledger date: 2026-09-11.
 <!-- PORTFOLIO:CITATION_SCOREBOARD:END -->
 
 Priority queues from the ledger: **P0** = plaintiff-only + still `UNVERIFIED` (`npm run citations:queue`); **P1** = plaintiff-only + bad status (fix before the next brief). Pre-existing fabricated hits are debt-tracked in `citation_known_bad_debt.json` so CI stays green while corrected drafts replace them.
@@ -472,9 +472,12 @@ npm run lint                  # ESLint over internal/src + internal/scripts
 npm run lint:fix              # ...and auto-fix what is safely fixable
 npm run validate              # lint + summaries + upcoming + README + schema + citations:check + tests
 npm run citations:index       # rebuild page-keyed citation index from PDFs
+npm run citations:lookup:p0   # CourtListener + CAP probe for plaintiff-only UNVERIFIED
+npm run citations:overlay:existing  # fold existing lookup JSON into rounds
 npm run citations:verify      # rebuild verification ledger
 npm run citations:check       # known-bad gate (also run by validate)
 npm run citations:queue       # print P0 plaintiff-only UNVERIFIED queue
+npm run citations:test        # citation-funnel unit tests
 npm run citations:lookup:matter -- --matter 20   # CourtListener + CAP probe for one matter
 npm run scaffold:matter -- 34 "Newanforbi v. Example"
 ```

@@ -4,11 +4,13 @@
 Probes reporter pins against:
   1. CourtListener REST search API (unauthenticated /api/rest/v4/search/)
   2. Caselaw Access Project bulk metadata at static.case.law (CasesMetadata.json)
+  3. Optional allowlisted web search (Bing) as a tie-breaker when CL/CAP miss.
+     A web hit is PARTIAL at most and is never overlaid as VERIFIED by itself.
 
 Also records reachability for Justia and Google Scholar (usually blocked).
 
 This does NOT mark portfolio statuses by itself — it produces evidence for
-manual / round-overlay confirmation. Characterization still needs opinion text.
+`npm run citations:overlay`. Characterization still needs opinion text.
 
 Usage:
   python3 internal/scripts/lookup-citations.py
@@ -22,6 +24,8 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import base64
+import html as html_lib
 import json
 import re
 import sys
@@ -32,6 +36,12 @@ import urllib.request
 from dataclasses import asdict, dataclass, field
 from datetime import date
 from pathlib import Path
+
+_SCRIPTS = Path(__file__).resolve().parent
+if str(_SCRIPTS) not in sys.path:
+    sys.path.insert(0, str(_SCRIPTS))
+
+from lib.citation_keys import case_name_key, reporter_pin_key
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
@@ -61,7 +71,7 @@ REPORTER_MAP = [
     (r"(\d+)\s+L\.\s*Ed\.\s*2d\s+(\d+)", "l-ed-2d", "L. Ed. 2d"),
 ]
 
-WL_RE = re.compile(r"(?:WL|Westlaw)\s*(\d{7,})", re.I)
+WL_RE = re.compile(r"(?:WL|Westlaw)\s*(\d{5,})", re.I)
 NAME_RE = re.compile(
     r"^(?:See\s+)?(.+?),\s+\d+\s+(?:U\.S\.|F\.|Cal\.)",
     re.I,
@@ -522,11 +532,113 @@ def probe_scholar(citation: str) -> SourceHit:
     )
 
 
+WEB_HOST_ALLOWLIST = (
+    "courtlistener.com",
+    "static.case.law",
+    "cite.case.law",
+    "supremecourt.gov",
+    "cdn.ca9.uscourts.gov",
+    "ca9.uscourts.gov",
+    "courts.ca.gov",
+    "govinfo.gov",
+    "justia.com",
+    "findlaw.com",
+    "law.cornell.edu",
+)
+
+_BING_U_RE = re.compile(r"[?&]u=a1([^&\"']+)")
+_HREF_RE = re.compile(r'href=["\']([^"\']+)["\']', re.I)
+
+
+def _decode_bing_dest(href: str) -> str:
+    match = _BING_U_RE.search(html_lib.unescape(href))
+    if not match:
+        return href
+    raw = match.group(1)
+    pad = (-len(raw)) % 4
+    try:
+        return base64.b64decode(raw + ("=" * pad)).decode("utf-8", "replace")
+    except Exception:
+        return href
+
+
+def _host_allowed(url: str) -> bool:
+    host = urllib.parse.urlparse(url).hostname or ""
+    host = host.lower().removeprefix("www.")
+    return any(host == allowed or host.endswith("." + allowed) for allowed in WEB_HOST_ALLOWLIST)
+
+
+def _name_tokens(citation: str) -> set[str]:
+    noise = {"v", "vs", "inc", "llc", "ltd", "co", "corp", "the", "of", "and", "see", "re", "in"}
+    return {t for t in case_name_key(citation).split() if len(t) > 2} - noise
+
+
+def probe_web_search(citation: str) -> SourceHit:
+    """Allowlisted Bing results. A SERP hit is corroboration, never a sole FOUND.
+
+    Requires reporter-pin digits and a party-name token in the destination URL
+    or nearby snippet, on a legal-host allowlist.
+    """
+    pin = reporter_pin_key(citation)
+    name = guess_name(citation)
+    query = f'"{pin}" {name}' if pin else name
+    url = "https://www.bing.com/search?" + urllib.parse.urlencode({"q": query})
+    status, _ctype, body = http_get(url, accept="text/html", timeout=12)
+    if status != 200 or not body:
+        return SourceHit(
+            source="web_search",
+            found=False,
+            url=url,
+            http_status=status if isinstance(status, int) else None,
+            notes="Bing unreachable or empty; web search is a tie-breaker only",
+        )
+    text = body.decode("utf-8", "replace")
+    tokens = _name_tokens(citation)
+    pin_digits = [bit for bit in (pin or "").split() if bit.isdigit()]
+    accepted = []
+    for href in _HREF_RE.findall(text):
+        dest = _decode_bing_dest(href)
+        if not dest.startswith("http") or not _host_allowed(dest):
+            continue
+        idx = text.find(href)
+        blob = f"{dest} {text[max(0, idx - 400): idx + 400]}".lower()
+        if pin_digits and not all(bit.lower() in blob for bit in pin_digits):
+            continue
+        if tokens and not any(tok in blob for tok in tokens):
+            continue
+        accepted.append(dest)
+        if len(accepted) >= 3:
+            break
+    if accepted:
+        return SourceHit(
+            source="web_search",
+            found=True,
+            url=accepted[0],
+            case_name=name,
+            citations=[pin] if pin else [],
+            http_status=200,
+            notes=f"Allowlisted Bing hit(s): {'; '.join(accepted[:3])}. Existence corroboration only.",
+        )
+    return SourceHit(
+        source="web_search",
+        found=False,
+        url=url,
+        http_status=200,
+        notes="No allowlisted Bing hit containing both reporter pin and a party-name token",
+    )
+
+
 def consensus_for(result: LookupResult) -> str:
     cl = next((s for s in result.sources if s.source == "courtlistener"), None)
     cap = next((s for s in result.sources if s.source == "case.law_static"), None)
+    web = next((s for s in result.sources if s.source == "web_search"), None)
     found_sources = [s for s in (cl, cap) if s and s.found]
     if not found_sources:
+        if web and web.found:
+            result.matched_name = web.case_name
+            result.matched_citations = web.citations
+            result.consensus = "PARTIAL"
+            return result.consensus
         if result.wl_pin and not result.reporter_pin:
             result.consensus = "NOT_FOUND"
             return result.consensus
@@ -562,7 +674,12 @@ def consensus_for(result: LookupResult) -> str:
     return result.consensus
 
 
-def lookup_one(citation: str, *, include_blocked_probes: bool = False) -> LookupResult:
+def lookup_one(
+    citation: str,
+    *,
+    include_blocked_probes: bool = False,
+    web: str = "auto",
+) -> LookupResult:
     name = guess_name(citation)
     rep = parse_reporter(citation)
     wl_m = WL_RE.search(citation)
@@ -578,6 +695,12 @@ def lookup_one(citation: str, *, include_blocked_probes: bool = False) -> Lookup
         result.sources.append(probe_justia(citation))
         result.sources.append(probe_scholar(citation))
     consensus_for(result)
+    need_web = web == "always" or (
+        web == "auto" and result.consensus in {"NOT_FOUND", "UNKNOWN", "PARTIAL", "CAPTION_MISMATCH"}
+    )
+    if need_web:
+        result.sources.append(probe_web_search(citation))
+        consensus_for(result)
     return result
 
 
@@ -606,6 +729,16 @@ HIGH_RISK = [
     "People v. Rizo, 22 Cal. 4th 681 (2000)",
     "Stump v. Sparkman, 435 U.S. 349 (1978)",
 ]
+
+
+def cites_from_p0() -> list[str]:
+    ledger_path = DOCS / "citation_verification.json"
+    ledger = json.loads(ledger_path.read_text())
+    out = []
+    for row in ledger.get("authorities") or []:
+        if row.get("plaintiffOnly") and row.get("status") == "UNVERIFIED":
+            out.append(row["citation"])
+    return out
 
 
 def cites_from_matter(matter: int) -> list[str]:
@@ -646,6 +779,17 @@ def main(argv: list[str] | None = None) -> int:
         action="store_true",
         help="Also probe Justia + Google Scholar (usually 403)",
     )
+    ap.add_argument(
+        "--p0",
+        action="store_true",
+        help="Load plaintiff-only UNVERIFIED cites from citation_verification.json",
+    )
+    ap.add_argument(
+        "--web",
+        choices=["auto", "always", "never"],
+        default="auto",
+        help="Allowlisted Bing probe: auto (when CL/CAP miss or disagree), always, or never",
+    )
     ap.add_argument("--out", type=Path, default=None)
     ap.add_argument("--quiet", action="store_true")
     args = ap.parse_args(argv)
@@ -657,6 +801,8 @@ def main(argv: list[str] | None = None) -> int:
         cites.extend(HIGH_RISK)
     for m in args.matter:
         cites.extend(cites_from_matter(m))
+    if args.p0:
+        cites.extend(cites_from_p0())
     if args.cites_file:
         payload = json.loads(args.cites_file.read_text())
         if isinstance(payload, list):
@@ -668,7 +814,9 @@ def main(argv: list[str] | None = None) -> int:
 
     out_path = args.out
     if out_path is None:
-        if len(args.matter) == 1 and not args.batch and not args.cite and not args.cites_file:
+        if args.p0 and not args.matter and not args.batch and not args.cite and not args.cites_file:
+            out_path = DOCS / "citation_lookup_p0.json"
+        elif len(args.matter) == 1 and not args.batch and not args.cite and not args.cites_file:
             out_path = DOCS / f"citation_lookup_matter{args.matter[0]:02d}.json"
         else:
             out_path = OUT_PATH
@@ -685,7 +833,7 @@ def main(argv: list[str] | None = None) -> int:
     for i, c in enumerate(ordered):
         if not args.quiet:
             print(f"[{i+1}/{len(ordered)}] {c}", file=sys.stderr)
-        results.append(lookup_one(c, include_blocked_probes=args.probe_blocked))
+        results.append(lookup_one(c, include_blocked_probes=args.probe_blocked, web=args.web))
 
     # reachability summary (one-shot probes on controls if requested)
     reachability = {
@@ -694,6 +842,7 @@ def main(argv: list[str] | None = None) -> int:
         "case_law_static": "ok (CasesMetadata.json + html/{file_name}.html)",
         "justia": "blocked (Cloudflare 403) in this environment",
         "google_scholar": "unreliable (often 403)",
+        "web_search": "Bing HTML, allowlisted legal hosts, pin+name required; PARTIAL at most",
         "courtlistener_citation_lookup": "requires API token (401)",
     }
 

@@ -30,6 +30,18 @@ from collections import Counter, defaultdict
 from datetime import date
 from pathlib import Path
 
+_SCRIPTS = Path(__file__).resolve().parent
+if str(_SCRIPTS) not in sys.path:
+    sys.path.insert(0, str(_SCRIPTS))
+
+from lib.citation_keys import (
+    case_name_key,
+    names_overlap,
+    normalize_authority_key,
+    reporter_pin_key,
+    slug,
+)
+
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 INDEX_PATH = DOCS / "citation_index.json"
@@ -81,21 +93,6 @@ KNOWN_FABRICATED = [
 ]
 
 BAD_STATUSES = {"NOT_FOUND", "MISCITED", "MISCHARACTERIZED", "MISQUOTED"}
-
-
-def slug(s: str) -> str:
-    return re.sub(r"[^a-z0-9]+", " ", (s or "").lower()).strip()
-
-
-def normalize_authority_key(citation: str) -> str:
-    """Strip leading 'See '/'see ' and collapse whitespace for matching."""
-    c = (citation or "").strip()
-    c = re.sub(r"^(See|see|SEE)\s+", "", c)
-    return slug(c)
-
-
-def case_name_key(citation: str) -> str:
-    return slug(re.sub(r"^(See|see|SEE)\s+", "", citation).split(",")[0])
 
 
 def load_json(path: Path, default):
@@ -222,10 +219,14 @@ def build_verification():
     round_by_key = {
         normalize_authority_key(r["citation"]): r for r in rounds.get("results") or []
     }
-    # also allow match by case name only
     round_by_name = {
         case_name_key(r["citation"]): r for r in rounds.get("results") or []
     }
+    round_by_pin: dict[str, list] = defaultdict(list)
+    for r in rounds.get("results") or []:
+        pin = reporter_pin_key(r["citation"])
+        if pin:
+            round_by_pin[pin].append(r)
 
     authorities = [c for c in index["citations"] if c["kind"] == "authority"]
     rows = []
@@ -235,6 +236,13 @@ def build_verification():
         round_hit = round_by_key.get(normalize_authority_key(a["citation"]))
         if not round_hit:
             round_hit = round_by_name.get(case_name_key(a["citation"]))
+        if not round_hit:
+            pin = reporter_pin_key(a["citation"])
+            pin_hits = [
+                r for r in (round_by_pin.get(pin) or []) if names_overlap(a["citation"], r["citation"])
+            ]
+            if len(pin_hits) == 1:
+                round_hit = pin_hits[0]
         status, source, notes = pick_status(audit_hits, round_hit)
         plaintiff_only = is_plaintiff_only(roles)
         rows.append(
@@ -311,13 +319,13 @@ def build_verification():
         "generatedDate": date.today().isoformat(),
         "methodology": (
             "Join citation_audit.json onto citation_index.json authority rows; "
-            "overlay Round 4+ results from citation_verification_rounds.json. "
-            "Existence checks use WebSearch plus direct CourtListener search API "
-            "and CAP static.case.law CasesMetadata/HTML (see lookup-citations.py / "
-            "citation_lookup_multisource.json). Positive control: Richardson v. "
-            "McKnight. Negative control: In re Leman. Justia is Cloudflare-blocked "
-            "here; Google Scholar is unreliable (often 403); CAP JSON API and "
-            "CourtListener citation-lookup require auth."
+            "overlay Round 4+ results from citation_verification_rounds.json "
+            "(npm run citations:overlay). Existence checks use CourtListener "
+            "search + CAP static.case.law (lookup-citations.py); allowlisted Bing "
+            "web search is a pin+name tie-breaker and never a sole FOUND. Positive "
+            "control: Richardson v. McKnight. Negative control: In re Leman. "
+            "Justia is Cloudflare-blocked here; Google Scholar is unreliable "
+            "(often 403); CAP JSON API and CourtListener citation-lookup require auth."
         ),
         "controls": {
             "positive": "Richardson v. McKnight, 521 U.S. 399 (1997) — must be findable",
@@ -399,7 +407,7 @@ def build_verification():
         f"Generated {out['generatedDate']} by `verify-citations.py`. "
         "Joins the PR #490 citation index to the July / Matter-28 citation audit, "
         "then overlays Round 4+ verification results "
-        "(WebSearch + CourtListener/CAP multisource confirmation).\n"
+        "(CourtListener/CAP lookup, optional allowlisted web search, overlay fold).\n"
     )
     w("## Why this exists\n")
     w(
@@ -495,7 +503,9 @@ def build_verification():
     w("python3 internal/scripts/verify-citations.py --check")
     w("python3 internal/scripts/verify-citations.py --queue")
     w("python3 internal/scripts/lookup-citations.py --batch all")
-    w("python3 internal/scripts/lookup-citations.py --matter 28\n```\n")
+    w("python3 internal/scripts/lookup-citations.py --p0")
+    w("python3 internal/scripts/overlay-citation-lookups.py --existing")
+    w("python3 internal/scripts/citation_funnel_test.py\n```\n")
     w("## Known-bad debt gate\n")
     w(
         "`--check` fails if a known-fabricated pattern appears in a `plaintiff_filing` "

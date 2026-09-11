@@ -162,7 +162,17 @@ Direct probes via `internal/scripts/lookup-citations.py` (CourtListener `/api/re
 - Round 5b: all Matter 28 authorities → `citation_lookup_matter28.json` (Matter 28 UNVERIFIED → 0)
 - Justia remains Cloudflare-blocked; Scholar unreliable; CAP JSON API / CL citation-lookup need auth
 
+## Round 12 — Overlay + pin join + web as tie-breaker (Sept. 11, 2026)
+
+The lookups already existed (`citation_lookup_matter24.json`, Matter 26, Serrato order, etc.). They were not folded into the ledger because overlay was a hand-edit of `citation_verification_rounds.json`, and OCR spacing (`F. 3d` vs `F.3d`) missed the join.
+
+- Shared keys: `internal/scripts/lib/citation_keys.py` (OCR-tolerant reporter pins, Westlaw 5+ digits)
+- Overlay: `npm run citations:overlay` / `citations:overlay:existing` — FOUND / compatible PARTIAL / OCR CAPTION_MISMATCH → existence-only VERIFIED; prior MISCHARACTERIZED / proposition-MISCITED stays; web-search-only PARTIAL is not overlaid; a CAPTION_MISMATCH with no party-name overlap is left for a human (wrong case at the pin)
+- Lookup: `npm run citations:lookup:p0`; `--web auto|always|never` (default auto). Allowlisted Bing is a pin+name tie-breaker and never a sole `FOUND`
+- Tests: `npm run citations:test`
+- Desk remains P0 (plaintiff-only UNVERIFIED) then P1. Do not grind P3 opposing/court cites. Existence ≠ holding.
+
 ---
 
-*Report prepared: July 12, 2026; Round 2/3 Matter 28 additions Aug. 9, 2026; Round 5/5b multisource Aug. 9, 2026*
-*Methodology: five parallel citation-extraction and web-verification passes across the litigant's motion practice (complaints, FACs, oppositions, replies, demurrers, writ briefs, habeas petitions) in 18 of 24 matters with uploaded pleadings, cross-verified against CourtListener, Justia, Google Scholar, Casetext, and official California statutory text. Round 2–4 used WebSearch against primary-source URLs after positive/negative method controls. Round 5+ adds direct CourtListener search + CAP static.case.law metadata/HTML where reachable.*
+*Report prepared: July 12, 2026; Round 2/3 Matter 28 additions Aug. 9, 2026; Round 5/5b multisource Aug. 9, 2026; Round 12 overlay/pin-join Sept. 11, 2026*
+*Methodology: five parallel citation-extraction and web-verification passes across the litigant's motion practice (complaints, FACs, oppositions, replies, demurrers, writ briefs, habeas petitions) in 18 of 24 matters with uploaded pleadings, cross-verified against CourtListener, Justia, Google Scholar, Casetext, and official California statutory text. Round 2–4 used WebSearch against primary-source URLs after positive/negative method controls. Round 5+ adds direct CourtListener search + CAP static.case.law metadata/HTML where reachable. Round 12 folds those lookups through pin-join overlay; web search is corroboration only.*

@@ -1,6 +1,6 @@
 {
   "round": "2026-08-09 Round 4 \u2014 portfolio P0 (batches A\u2013D; LACW WL correction); Round 5 multisource (CourtListener + CAP); Round 5b Matter 28 full funnel; Round 6 spot-check of the Matter 33 conformed complaint (3:26-cv-08272-LJC, Dkt. 1) page-43 immunity sentence; Round 7 authorities cited in the Serrato IFP screening order (Matter 24, Dkt. 5) after OCR made that scan searchable; Round 8 \u2014 OCR tranche (16 plaintiff filings + court orders: Matters 5/12/15/25/26/33, Barocio opinion); Round 9 \u2014 Matter 24 Serrato Opp v4 final citation/quotation verification pass (2026-08-27); Round 10 \u2014 Matter 26 hybrid UPS MTD opposition (Claude structure + Cursor caution), 2026-08-28; Round 11 \u2014 P0 plaintiff-only queue after OCR-alias index rebuild (Matters 25/26/32/33 plus remaining portfolio P0), 2026-09-06",
-  "method": "Round 4: WebSearch after Richardson(+) / Leman(\u2212) controls. Round 5: CourtListener /api/rest/v4/search/ + CAP static.case.law for controls/high-risk. Round 5b: all Matter 28 indexed authorities through lookup-citations.py --matter 28 (\u2192 citation_lookup_matter28.json). Justia Cloudflare-blocked; Scholar unreliable; api.case.law JSON and CL citation-lookup need auth. Existence FOUND does not clear prior MISCHARACTERIZED/MISCITED proposition problems. Table-page F.3d pins can host multiple dispositions \u2014 do not treat first CL hit as unique. Round 7: the June 29, 2026 Serrato IFP/screening order was an image-only scan contributing nothing to the index until internal/scripts/ocr-text-layer.py added a text layer; its authorities were then probed through lookup-citations.py (\u2192 citation_lookup_serrato_order.json) behind the same Richardson(+) / Leman(\u2212) controls. These are a court's own citations, so they carry role court_order and never enter the plaintiff-only P0/P1 queues. Round 8: after ocr-text-layer.py on the 16-document plaintiff_filing/court_order tranche, probed new P0 Matter 12/15 authorities (citation_lookup_matter12_p0.json) and Barocio screening-order authorities (citation_lookup_barocio_order.json). McCorkle manually confirmed on CourtListener when CAP lacked cal2d/70. Round 9: Matter 24 Opposition v4 \u2014 npm citations:index + citations:lookup:matter --matter 24 (\u2192 citation_lookup_matter24.json); quote needles checked against CAP static.case.law HTML (Whittlestone/Lopez/Noll/Perry/Twombly/Iqbal/Wade/Knievel/Erickson/Ford) and CA9 PDF (Capp); fixed Garity miscitation, Whittlestone non-opinion paraphrase, Perry/Twombly wording, and removed unused Lewis/Shanks TOA entries; Bureerong manually FOUND on CL+CAP. Round 10: Matter 26 hybrid opposition \u2014 npm citations:index + citations:lookup:matter --matter 26 (\u2192 citation_lookup_matter26.json); Cal. App. 5th pins for Williams (40 Cal. App. 5th 280) and Quinn (121 Cal. App. 5th 1124) confirmed by direct CourtListener search when the reporter probe missed (CAP static lacks those volumes). Mendoza quotes checked against the published opinion (anti-SLAPP; 1658-59). Cel-Tech 183 quote is UPS's own. Round 11: build-citation-index.py OCR_PAGE_FIXES (Califomia/DUl/MedinOy/TorreSy/Knudsen/Devenpeck 3 U.S.\u2192543 U.S. etc.) dropped P0 70\u219254; lookup-citations.py \u2192 citation_lookup_p0.json (FOUND 28, CAPTION_MISMATCH 14, PARTIAL 3, NOT_FOUND 7, UNKNOWN 2); overlay-citation-lookups.py folded FOUND + same-case OCR mismatches + Gonzalez/Hertz PARTIAL into VERIFIED (existence only) and marked both Devenpeck mispins MISCITED (real case is 543 U.S. 146). NOT_FOUND/UNKNOWN left UNVERIFIED (a miss is not a fabrication). Controls were not re-probed this pass.",
+  "method": "Round 4: WebSearch after Richardson(+) / Leman(\u2212) controls. Round 5: CourtListener /api/rest/v4/search/ + CAP static.case.law for controls/high-risk. Round 5b: all Matter 28 indexed authorities through lookup-citations.py --matter 28 (\u2192 citation_lookup_matter28.json). Justia Cloudflare-blocked; Scholar unreliable; api.case.law JSON and CL citation-lookup need auth. Existence FOUND does not clear prior MISCHARACTERIZED/MISCITED proposition problems. Table-page F.3d pins can host multiple dispositions \u2014 do not treat first CL hit as unique. Round 7: the June 29, 2026 Serrato IFP/screening order was an image-only scan contributing nothing to the index until internal/scripts/ocr-text-layer.py added a text layer; its authorities were then probed through lookup-citations.py (\u2192 citation_lookup_serrato_order.json) behind the same Richardson(+) / Leman(\u2212) controls. These are a court's own citations, so they carry role court_order and never enter the plaintiff-only P0/P1 queues. Round 8: after ocr-text-layer.py on the 16-document plaintiff_filing/court_order tranche, probed new P0 Matter 12/15 authorities (citation_lookup_matter12_p0.json) and Barocio screening-order authorities (citation_lookup_barocio_order.json). McCorkle manually confirmed on CourtListener when CAP lacked cal2d/70. Round 9: Matter 24 Opposition v4 \u2014 npm citations:index + citations:lookup:matter --matter 24 (\u2192 citation_lookup_matter24.json); quote needles checked against CAP static.case.law HTML (Whittlestone/Lopez/Noll/Perry/Twombly/Iqbal/Wade/Knievel/Erickson/Ford) and CA9 PDF (Capp); fixed Garity miscitation, Whittlestone non-opinion paraphrase, Perry/Twombly wording, and removed unused Lewis/Shanks TOA entries; Bureerong manually FOUND on CL+CAP. Round 10: Matter 26 hybrid opposition \u2014 npm citations:index + citations:lookup:matter --matter 26 (\u2192 citation_lookup_matter26.json); Cal. App. 5th pins for Williams (40 Cal. App. 5th 280) and Quinn (121 Cal. App. 5th 1124) confirmed by direct CourtListener search when the reporter probe missed (CAP static lacks those volumes). Mendoza quotes checked against the published opinion (anti-SLAPP; 1658-59). Cel-Tech 183 quote is UPS's own. Round 11: build-citation-index.py OCR_PAGE_FIXES (Califomia/DUl/MedinOy/TorreSy/Knudsen/Devenpeck 3 U.S.\u2192543 U.S. etc.) dropped P0 70\u219254; lookup-citations.py \u2192 citation_lookup_p0.json (FOUND 28, CAPTION_MISMATCH 14, PARTIAL 3, NOT_FOUND 7, UNKNOWN 2); overlay-citation-lookups.py folded FOUND + same-case OCR mismatches + Gonzalez/Hertz PARTIAL into VERIFIED (existence only) and marked both Devenpeck mispins MISCITED (real case is 543 U.S. 146). NOT_FOUND/UNKNOWN left UNVERIFIED (a miss is not a fabrication). Controls were not re-probed this pass. Round 12: npm run citations:overlay folds lookup JSON (FOUND / compatible PARTIAL / OCR CAPTION_MISMATCH) into existence-only VERIFIED; web-search-only hits are not overlaid.",
   "controls": {
     "positive": {
       "citation": "Richardson v. McKnight, 521 U.S. 399 (1997)",
@@ -2999,6 +2999,153 @@
       "source": "Round 11 CourtListener + CAP lookup",
       "notes": "Existence only. Pin 319 F.3d 672 is White v. FCI USA, Inc.. Sources: https://www.courtlistener.com/opinion/29940/white-v-fci-usa-inc/ ; https://static.case.law/f3d/319/html/0672-01.html. Characterization still needs opinion text.",
       "round": "11-p0-ocr-alias"
+    },
+    {
+      "citation": "Albright v. Oliver, 510 U.S. 266 (1994)",
+      "status": "VERIFIED",
+      "source": "Round 12 CourtListener + CAP lookup",
+      "round": "12-funnel",
+      "notes": "Existence only. Pin 510 U.S. 266 is Albright v. Oliver. Sources: https://www.courtlistener.com/opinion/112924/albright-v-oliver/ ; https://static.case.law/us/510/html/0266-01.html. Characterization still needs opinion text."
+    },
+    {
+      "citation": "Florer v. Congregation Pidyon Shevuyim, N.A, 639 F. 3d 916",
+      "status": "VERIFIED",
+      "source": "Round 12 CourtListener + CAP lookup",
+      "round": "12-funnel",
+      "notes": "Existence only. Pin 639 F.3d 916 is Florer v. Congregation Pidyon Shevuyim, NA. Sources: https://www.courtlistener.com/opinion/145591/florer-v-congregation-pidyon-shevuyim-na/ ; https://static.case.law/f3d/639/html/0916-01.html. Characterization still needs opinion text."
+    },
+    {
+      "citation": "Lathus v. City of Huntington Beach, 56 F. 4th 1238",
+      "status": "VERIFIED",
+      "source": "Round 12 pin resolves; official caption differs from index string",
+      "round": "12-funnel",
+      "notes": "Existence only. Pin 56 F.4th 1238 is Shayna Lathus v. City of Huntington Beach. Index string is truncated or OCR-variant; official caption is Shayna Lathus v. City of Huntington Beach. Sources: https://www.courtlistener.com/opinion/9368384/shayna-lathus-v-city-of-huntington-beach/. Characterization still needs opinion text."
+    },
+    {
+      "citation": "Broam v. Bogan, 320 F. 3d 1023",
+      "status": "VERIFIED",
+      "source": "Round 12 CourtListener + CAP lookup",
+      "round": "12-funnel",
+      "notes": "Existence only. Pin 320 F.3d 1023 is Broam v. Bogan. Sources: https://www.courtlistener.com/opinion/8437289/broam-v-bogan/ ; https://static.case.law/f3d/320/html/1023-01.html. Characterization still needs opinion text."
+    },
+    {
+      "citation": "Wilder v. Virginia Hosp. Ass'n, 496 U.S. 498 (1990)",
+      "status": "VERIFIED",
+      "source": "Round 12 CourtListener + CAP lookup",
+      "round": "12-funnel",
+      "notes": "Existence only. Pin 496 U.S. 498 is Wilder v. Virginia Hospital Ass'n. Sources: https://www.courtlistener.com/opinion/112461/wilder-v-virginia-hospital-assn/ ; https://static.case.law/us/496/html/0498-01.html. Characterization still needs opinion text."
+    },
+    {
+      "citation": "Ashcroft v. Al-Kidd, 563 U.S. 731 (2011)",
+      "status": "VERIFIED",
+      "source": "Round 12 CourtListener + CAP lookup",
+      "round": "12-funnel",
+      "notes": "Existence only. Pin 563 U.S. 731 is Ashcroft v. al-Kidd. Sources: https://www.courtlistener.com/opinion/217703/ashcroft-v-al-kidd/ ; https://static.case.law/us/563/html/0731-01.html. Characterization still needs opinion text."
+    },
+    {
+      "citation": "Bostock v. Clayton Cnty, 590 U.S. 644 (2020)",
+      "status": "VERIFIED",
+      "source": "Round 12 pin resolves; official caption differs from index string",
+      "round": "12-funnel",
+      "notes": "Existence only. Pin 590 U.S. 644 is Bostock v. Clayton County. Index string is truncated or OCR-variant; official caption is Bostock v. Clayton County. Sources: https://www.courtlistener.com/opinion/4760997/bostock-v-clayton-county/. Characterization still needs opinion text."
+    },
+    {
+      "citation": "Dismiss. See Paulsen v. CNF Inc, 559 F. 3d 1061",
+      "status": "VERIFIED",
+      "source": "Round 12 pin resolves; official caption differs from index string",
+      "round": "12-funnel",
+      "notes": "Existence only. Pin 559 F.3d 1061 is Paulsen v. CNF INC.. Index string is truncated or OCR-variant; official caption is Paulsen v. CNF INC.. Sources: https://www.courtlistener.com/opinion/1389232/paulsen-v-cnf-inc/ ; https://static.case.law/f3d/559/html/1061-01.html. Characterization still needs opinion text."
+    },
+    {
+      "citation": "Fantasy, Inc. v. Fogerty, 984 F. 2d 1524",
+      "status": "VERIFIED",
+      "source": "Round 12 CourtListener + CAP lookup",
+      "round": "12-funnel",
+      "notes": "Existence only. Pin 984 F.2d 1524 is Fantasy, Inc. v. Fogerty. Sources: https://www.courtlistener.com/opinion/599277/fantasy-inc-v-fogerty/ ; https://static.case.law/f2d/984/html/1524-01.html. Characterization still needs opinion text."
+    },
+    {
+      "citation": "Felarca v. Birgeneau, 891 F. 3d 809",
+      "status": "VERIFIED",
+      "source": "Round 12 CourtListener + CAP lookup",
+      "round": "12-funnel",
+      "notes": "Existence only. Pin 891 F.3d 809 is Felarca v. Birgeneau. Sources: https://www.courtlistener.com/opinion/4502868/yvette-felarca-v-robert-birgeneau/ ; https://static.case.law/f3d/891/html/0809-01.html. Characterization still needs opinion text."
+    },
+    {
+      "citation": "Mangindin v. Washington Mut. Bank, 637 F.Supp. 2d 700",
+      "status": "VERIFIED",
+      "source": "Round 12 CourtListener + CAP lookup",
+      "round": "12-funnel",
+      "notes": "Existence only. Pin 637 F. Supp. 2d 700 is Mangindin v. Washington Mutual Bank. Sources: https://www.courtlistener.com/opinion/2342348/mangindin-v-washington-mutual-bank/ ; https://static.case.law/f-supp-2d/637/html/0700-01.html. Characterization still needs opinion text."
+    },
+    {
+      "citation": "Sidney-Vinstein v. A.H. Robins Co, 697 F. 2d 880",
+      "status": "VERIFIED",
+      "source": "Round 12 CourtListener + CAP lookup",
+      "round": "12-funnel",
+      "notes": "Existence only. Pin 697 F.2d 880 is Sidney-Vinstein v. A.H. Robins Co.. Sources: https://www.courtlistener.com/opinion/8926587/sidney-vinstein-v-ah-robins-co/ ; https://static.case.law/f2d/697/html/0880-01.html. Characterization still needs opinion text."
+    },
+    {
+      "citation": "Smith v. Adepa, 81 F. 4th 994",
+      "status": "VERIFIED",
+      "source": "Round 12 pin resolves; official caption differs from index string",
+      "round": "12-funnel",
+      "notes": "Existence only. Pin 81 F.4th 994 is Paulette Smith v. Edward Agdeppa. Index string is truncated or OCR-variant; official caption is Paulette Smith v. Edward Agdeppa. Sources: https://www.courtlistener.com/opinion/9423443/paulette-smith-v-edward-agdeppa/. Characterization still needs opinion text."
+    },
+    {
+      "citation": "Conroy v. Regents of, 45 Cal. 4th 1244 (2009)",
+      "status": "VERIFIED",
+      "source": "Round 12 pin resolves; official caption differs from index string",
+      "round": "12-funnel",
+      "notes": "Existence only. Pin 45 Cal. 4th 1244 is Conroy v. Regents of University of California. Index string is truncated or OCR-variant; official caption is Conroy v. Regents of University of California. Sources: https://www.courtlistener.com/opinion/2507043/conroy-v-regents-of-university-of-california/ ; https://static.case.law/cal-4th/45/html/1244-01.html. Characterization still needs opinion text."
+    },
+    {
+      "citation": "Khan v. CitiMortgage, Inc, 975 F. Supp. 2d 1127",
+      "status": "VERIFIED",
+      "source": "Round 12 CourtListener + CAP lookup",
+      "round": "12-funnel",
+      "notes": "Existence only. Pin 975 F. Supp. 2d 1127 is Khan v. Citimortgage Inc.. Sources: https://www.courtlistener.com/opinion/8728686/khan-v-citimortgage-inc/ ; https://static.case.law/f-supp-2d/975/html/1127-01.html. Characterization still needs opinion text."
+    },
+    {
+      "citation": "Quiroz v. Seventh Ave. Ctr, 140 Cal.App. 4th 1256",
+      "status": "VERIFIED",
+      "source": "Round 12 pin resolves; official caption differs from index string",
+      "round": "12-funnel",
+      "notes": "Existence only. Pin 140 Cal. App. 4th 1256 is Quiroz v. Seventh Avenue Center. Index string is truncated or OCR-variant; official caption is Quiroz v. Seventh Avenue Center. Sources: https://www.courtlistener.com/opinion/2304466/quiroz-v-seventh-avenue-center/ ; https://static.case.law/cal-app-4th/140/html/1256-01.html. Characterization still needs opinion text."
+    },
+    {
+      "citation": "Rubio v. Capital One Bank, 572 F.Supp. 2d 1157",
+      "status": "VERIFIED",
+      "source": "Round 12 CourtListener + CAP lookup",
+      "round": "12-funnel",
+      "notes": "Existence only. Pin 572 F. Supp. 2d 1157 is Rubio v. Capital One Bank (USA), N.A.. Sources: https://www.courtlistener.com/opinion/2310775/rubio-v-capital-one-bank-usa-na/ ; https://static.case.law/f-supp-2d/572/html/1157-01.html. Characterization still needs opinion text."
+    },
+    {
+      "citation": "Shvarts v. Budget Group, Inc, 81 Cal.App. 4th 1153",
+      "status": "VERIFIED",
+      "source": "Round 12 CourtListener + CAP lookup",
+      "round": "12-funnel",
+      "notes": "Existence only. Pin 81 Cal. App. 4th 1153 is Shvarts v. Budget Group, Inc.. Sources: https://www.courtlistener.com/opinion/2246768/shvarts-v-budget-group-inc/ ; https://static.case.law/cal-app-4th/81/html/1153-01.html. Characterization still needs opinion text."
+    },
+    {
+      "citation": "Smith v. State Farm Mutual Automobile Ins. Co, 93 Cal.App. 4th 700",
+      "status": "VERIFIED",
+      "source": "Round 12 CourtListener + CAP lookup",
+      "round": "12-funnel",
+      "notes": "Existence only. Pin 93 Cal. App. 4th 700 is Smith v. State Farm Mutual Automobile Insurance. Sources: https://www.courtlistener.com/opinion/2282385/smith-v-state-farm-mutual-automobile-insurance/ ; https://static.case.law/cal-app-4th/93/html/0700-01.html. Characterization still needs opinion text."
+    },
+    {
+      "citation": "Station & Auto. Repair Ass\u2019n v. Am. Home Assur. Co, 62 Cal. App. 4th 1166 (1998)",
+      "status": "VERIFIED",
+      "source": "Round 12 pin resolves; official caption differs from index string",
+      "round": "12-funnel",
+      "notes": "Existence only. Pin 62 Cal. App. 4th 1166 is California Service Station & Automobile Repair Ass'n v. American Home Assurance Co.. Index string is truncated or OCR-variant; official caption is California Service Station & Automobile Repair Ass'n v. American Home Assurance Co.. Sources: https://www.courtlistener.com/opinion/2244282/california-service-station-automobile-repair-assn-v-american-home/ ; https://static.case.law/cal-app-4th/62/html/1166-01.html. Characterization still needs opinion text."
+    },
+    {
+      "citation": "Henderson ex rel. Henderson v. Shinseki, 562 U.S. 428",
+      "status": "VERIFIED",
+      "source": "Round 12 CourtListener + CAP lookup",
+      "round": "12-funnel",
+      "notes": "Existence only. Pin 562 U.S. 428 is Henderson v. Shinseki. Sources: https://www.courtlistener.com/opinion/205712/henderson-v-shinseki/ ; https://static.case.law/us/562/html/0428-01.html. Characterization still needs opinion text."
     }
   ],
   "multisourceConfirmation": {
