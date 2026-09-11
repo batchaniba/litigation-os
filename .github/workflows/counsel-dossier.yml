@@ -67,6 +67,19 @@ jobs:
             exit 1
           fi
 
+      - name: Smoke-test dossier imports
+        # No args: the command must reach its usage check (exit 2) only after
+        # all imports resolve. A broken import exits 1 instead.
+        run: |
+          set +e
+          npm run intel:counsel -- > /tmp/dossier-smoke.log 2>&1
+          code=$?
+          cat /tmp/dossier-smoke.log
+          if [ "$code" -ne 2 ]; then
+            echo "::error::dossier smoke test exited $code, expected 2"
+            exit 1
+          fi
+
       - name: Build dossier
         run: |
           ARGS=(--name "${{ inputs.name }}")
