@@ -423,7 +423,7 @@ Authority quality is a liability surface: claims are cognizable and motions to d
 | 3. Overlay | `npm run citations:overlay -- FILE.json` or `citations:overlay:existing` | Fold lookup consensus into `citation_verification_rounds.json` (existence `FOUND` / compatible `PARTIAL` / OCR `CAPTION_MISMATCH` can clear `UNVERIFIED`; proposition `MISCITED` / `MISCHARACTERIZED` stays; web-search-only hits are not overlaid) |
 | 4. Ledger + gate | `npm run citations:verify` then `citations:check` | `citation_verification.json` / `CITATION_VERIFICATION.md`; CI fails on **new** fabricated cites in plaintiff filings |
 
-Controls (reconfirm when batching): *Richardson v. McKnight*, 521 U.S. 399 must resolve; *In re Leman*, 66 Cal.App.5th 200 must not. Justia is Cloudflare-blocked here; Google Scholar is unreliable. Prefer CourtListener **citation-lookup** (token from `COURTLISTENER_API_TOKEN` / `.env`, never committed) plus CAP static metadata; unauthenticated CL search is corroboration only.
+Controls (reconfirm when batching): *Richardson v. McKnight*, 521 U.S. 399 must resolve; *In re Leman*, 66 Cal.App.5th 200 must not. Justia is Cloudflare-blocked here; Google Scholar is unreliable. Prefer CourtListener **citation-lookup** (token from `COURTLISTENER_API_TOKEN` / `.env`) plus CAP static metadata; unauthenticated CL search is corroboration only.
 
 ### Scoreboard (paired authorities)
 

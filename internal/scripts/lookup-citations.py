@@ -12,9 +12,9 @@ Also records reachability for Justia and Google Scholar (usually blocked).
 This does NOT mark portfolio statuses by itself — it produces evidence for
 `npm run citations:overlay`. Characterization still needs opinion text.
 
-Set COURTLISTENER_API_TOKEN (env or gitignored .env) to enable POST
+Set COURTLISTENER_API_TOKEN (env or `.env`) to enable POST
 `/api/rest/v4/citation-lookup/` — the pin API. Unauthenticated search stays
-as corroboration. Do not commit the token.
+as corroboration.
 
 Usage:
   python3 internal/scripts/lookup-citations.py
