@@ -702,6 +702,11 @@
       "ownerMatter": 12
     },
     {
+      "path": "/documents/matter-12/EMAIL_DRAFT_Stanislaus_Sheriff_Diamond_Osmani_41230_Sep9_2026.txt",
+      "label": "EMAIL DRAFT — Stanislaus additional service on Saliman Osmani only (levy 2026003531; POS item 6d; not yet sent)",
+      "ownerMatter": 12
+    },
+    {
       "path": "/documents/matter-12/EMAIL_DRAFT_Stanislaus_Sheriff_Diamond_Reservice_Aug31_2026.txt",
       "label": "EMAIL_DRAFT_Stanislaus_Sheriff_Diamond_Reservice_Aug31_2026.txt",
       "ownerMatter": 12
@@ -757,6 +762,11 @@
       "ownerMatter": 12
     },
     {
+      "path": "/documents/matter-12/POS010 Proof of Service - Diamond Truck Sales (Levying Officer File No. 2026003531).pdf",
+      "label": "POS-010 Proof of Service — Diamond Truck Sales, Inc. (levy 2026003531; personal service Sept. 8, 2026 on Musdaqem Usmani/Manager; item 6 as individual — do not treat as cured)",
+      "ownerMatter": 12
+    },
+    {
       "path": "/documents/matter-12/reservice-packets-aug31/1_SER-001_Alpine_Truck_Sales_Kern.pdf",
       "label": "1_SER-001_Alpine_Truck_Sales_Kern",
       "ownerMatter": 12
@@ -778,6 +788,26 @@
     },
     {
       "path": "/documents/matter-12/reservice-packets-aug31/4_Stanislaus_Credit_Card_Authorization_Diamond.pdf",
+      "label": "4_Stanislaus_Credit_Card_Authorization_Diamond",
+      "ownerMatter": 12
+    },
+    {
+      "path": "/documents/matter-12/reservice-packets-sep9/1_SER-001_Diamond_Saliman_Osmani_Stanislaus.pdf",
+      "label": "SER-001 — Diamond Truck Sales, Inc. additional service on Saliman Osmani only (3b(2) blank; flattened Sept. 9, 2026)",
+      "ownerMatter": 12
+    },
+    {
+      "path": "/documents/matter-12/reservice-packets-sep9/2_FW-003_Order_on_Court_Fee_Waiver.pdf",
+      "label": "2_FW-003_Order_on_Court_Fee_Waiver",
+      "ownerMatter": 12
+    },
+    {
+      "path": "/documents/matter-12/reservice-packets-sep9/3_Summons_FAC.pdf",
+      "label": "3_Summons_FAC",
+      "ownerMatter": 12
+    },
+    {
+      "path": "/documents/matter-12/reservice-packets-sep9/4_Stanislaus_Credit_Card_Authorization_Diamond.pdf",
       "label": "4_Stanislaus_Credit_Card_Authorization_Diamond",
       "ownerMatter": 12
     },

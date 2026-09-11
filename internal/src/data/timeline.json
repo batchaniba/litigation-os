@@ -744,7 +744,7 @@
   },
   {
     "date": "Sep. 2, 2026",
-    "event": "DRAFTED, NOT YET SENT \u2014 Reply to Gulomjon Azimov granting his September 1 request: the August 31 meet-and-confer response date moves from September 4 to Friday, September 11, 2026. He must pick (A) Notice of Acknowledgment of Receipt / stipulated acceptance of the Amended Summons and FAC, or (B) sheriff re-service on the SOS agents. Silence on September 11 means path (B). Does not change the December 11, 2026 at-issue CMC. Do not put GitHub raws in the email. \u2014 Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094)",
+    "event": "DRAFTED, NOT YET SENT \u2014 Reply to Gulomjon Azimov granting his September 1 request: the August 31 meet-and-confer response date moves from September 4 to Friday, September 11, 2026. He must pick (A) Notice of Acknowledgment of Receipt / stipulated acceptance of the Amended Summons and FAC, or (B) sheriff re-service on the SOS agents. Silence on September 11 means path (B). Notes that Stanislaus has returned a proof of attempted personal service on Diamond at Turlock and that Alpine remains for Kern; path (B) is still required unless he elects (A). Does not change the December 11, 2026 at-issue CMC. Do not put GitHub raws in the email. Do not volunteer the CCP \u00a7 412.30 item-6 defect. \u2014 Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094)",
     "matters": [
       12
     ],
@@ -753,6 +753,30 @@
     "filed": false,
     "actor": "you",
     "source": "/documents/matter-12/EMAIL_DRAFT_Azimov_Extend_Service_Response_to_Sep11.txt"
+  },
+  {
+    "date": "Sep. 8, 2026",
+    "event": "STANISLAUS POS RETURNED — levy 2026003531, certified Sept. 9, 2026. Deputy P. Heaney personally delivered the Amended Summons (SUM-100) and First Amended Complaint on Sept. 8, 2026 at 9:35 a.m. to Musdaqem Usmani/Manager at 1201 S. Soderquist Road, Turlock, party named Diamond Truck Sales, Inc. POS-010 item 6 completed “as an individual defendant,” not on behalf of the corporation under CCP § 416.10. Right entity and right Diamond address; not SOS agent Saliman Osmani. Same family of trap as the clerk’s July 30 Alpine rejection (Usmani/Manager at Soderquist; Alpine also had the wrong lot). Do not start Diamond’s 30-day clock. Do not default on this proof. File it as diligence. Alpine Kern service on Sheran Osmani remains underway. — Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094)",
+    "matters": [
+      12
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": false,
+    "actor": "agency",
+    "source": "/documents/matter-12/POS010 Proof of Service - Diamond Truck Sales (Levying Officer File No. 2026003531).pdf"
+  },
+  {
+    "date": "Sep. 9, 2026",
+    "event": "DRAFTED, NOT YET SENT \u2014 Email to Stanislaus Civil (civilfax@stansheriff.com, Lu) for additional personal service of the Amended Summons and FAC on Saliman Osmani only, same Turlock address. Keep levy 2026003531 as written (do not change Usmani). New SER-001 blanks 3b(2), names the SOS agent in 3b(3), and instructs POS-010 item 6d / summons Notice on behalf of Diamond Truck Sales, Inc. under CCP \u00a7 416.10 \u2014 not 6a as an individual. The Aug. 31 request invited the trap by saying serve a manager or the agent. File 3531 as diligence; do not start Diamond\u2019s clock on it. Alpine stays Kern. \u2014 Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094)",
+    "matters": [
+      12
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-12/EMAIL_DRAFT_Stanislaus_Sheriff_Diamond_Osmani_41230_Sep9_2026.txt"
   },
   {
     "date": "Sep. 11, 2026",
