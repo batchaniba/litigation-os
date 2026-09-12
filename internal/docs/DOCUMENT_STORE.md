@@ -78,7 +78,10 @@ The jobs below stay as written.
   inside one matter folder, warns on orphans.
 
 **GitHub Pages** checks out `documents` into `internal/public/documents`
-before `npm run build`, so `dist/documents/` is still the full library.
+before `npm run build`, so `dist/documents/` is still the full library. It
+runs on a schedule and on dispatch, not on every push to `main`;
+`npm run documents:push` dispatches it after uploading new PDFs. See
+[VERCEL_DEPLOYS.md](VERCEL_DEPLOYS.md) for the deploy cadence.
 
 ## After clone
 
