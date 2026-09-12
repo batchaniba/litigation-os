@@ -1,4 +1,25 @@
 {
   "version": 1,
-  "candidates": []
+  "candidates": [
+    {
+      "matter": 24,
+      "candidate_type": "ambiguous_timeline_match",
+      "trigger_entry": 21,
+      "courtlistener_entry_id": 476221254,
+      "proposed_date": "2026-08-28",
+      "confidence": 0.4,
+      "reason": "Dkt. 21 matches 2 timeline rows on the same date; provenance not auto-attached.",
+      "status": "pending"
+    },
+    {
+      "matter": 26,
+      "candidate_type": "ambiguous_timeline_match",
+      "trigger_entry": 11,
+      "courtlistener_entry_id": 477003665,
+      "proposed_date": "2026-09-04",
+      "confidence": 0.4,
+      "reason": "Dkt. 11 matches 2 timeline rows on the same date; provenance not auto-attached.",
+      "status": "pending"
+    }
+  ]
 }

@@ -1,5 +1,1652 @@
 [
   {
+    "date": "Sep. 10, 2026",
+    "event": "FILED \u2014 Dkt. 16 Certificate of Interested Entities, Corporate Disclosure Statement, or Rule 7.1 Disclosures",
+    "matters": [
+      33
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73742123,
+      "docket_entry_id": 477581314,
+      "recap_document_id": 493180103,
+      "entry_number": 16
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Sep. 10, 2026",
+    "event": "FILED \u2014 Dkt. 17 Strike",
+    "matters": [
+      33
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73742123,
+      "docket_entry_id": 477581195,
+      "recap_document_id": 493179983,
+      "entry_number": 17
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Sep. 10, 2026",
+    "event": "FILED \u2014 Notice of Appearance/Substitution/Change/Withdrawal of Attorney",
+    "matters": [
+      33
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73742123,
+      "docket_entry_id": 477540615,
+      "recap_document_id": 493138390
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Sep. 8, 2026",
+    "event": "ORDER \u2014 Dkt. 13 Order on Motion to Relate Case",
+    "matters": [
+      33
+    ],
+    "type": "order",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73742123,
+      "docket_entry_id": 477237410,
+      "recap_document_id": 492826432,
+      "entry_number": 13
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Sep. 8, 2026",
+    "event": "FILED \u2014 Clerk's Notice re: Consent or Declination",
+    "matters": [
+      33
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "court",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73742123,
+      "docket_entry_id": 477214258,
+      "recap_document_id": 492802854
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Sep. 4, 2026",
+    "event": "FILED \u2014 Dkt. 11 Answer to Complaint",
+    "matters": [
+      33
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73742123,
+      "docket_entry_id": 477051026,
+      "recap_document_id": 492631211,
+      "entry_number": 11
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Aug. 27, 2026",
+    "event": "FILED \u2014 Dkt. 10 Notice (Other)",
+    "matters": [
+      33
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73742123,
+      "docket_entry_id": 476010238,
+      "recap_document_id": 491559687,
+      "entry_number": 10
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Aug. 26, 2026",
+    "event": "FILED \u2014 Dkt. 8 Relate Case",
+    "matters": [
+      33
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73742123,
+      "docket_entry_id": 475933556,
+      "recap_document_id": 491480948,
+      "entry_number": 8
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Aug. 18, 2026",
+    "event": "FILED \u2014 Dkt. 5 Amended Complaint",
+    "matters": [
+      33
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73742123,
+      "docket_entry_id": 474948896,
+      "recap_document_id": 490465416,
+      "entry_number": 5
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Aug. 18, 2026",
+    "event": "FILED \u2014 Dkt. 6 Amended Complaint",
+    "matters": [
+      33
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73742123,
+      "docket_entry_id": 474948872,
+      "recap_document_id": 490465392,
+      "entry_number": 6
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Aug. 18, 2026",
+    "event": "FILED \u2014 Dkt. 7 Summons Returned Executed",
+    "matters": [
+      33
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73742123,
+      "docket_entry_id": 474948755,
+      "recap_document_id": 490465275,
+      "entry_number": 7
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Aug. 10, 2026",
+    "event": "FILED \u2014 Dkt. 1 Complaint",
+    "matters": [
+      33
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73742123,
+      "docket_entry_id": 473889096,
+      "recap_document_id": 489369537,
+      "entry_number": 1
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Aug. 10, 2026",
+    "event": "FILED \u2014 Dkt. 2 Summons Issued",
+    "matters": [
+      33
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73742123,
+      "docket_entry_id": 473889060,
+      "recap_document_id": 489369500,
+      "entry_number": 2
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Aug. 10, 2026",
+    "event": "FILED \u2014 Dkt. 3 Consent/Declination to Proceed Before a US Magistrate Judge",
+    "matters": [
+      33
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "court",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73742123,
+      "docket_entry_id": 473888919,
+      "recap_document_id": 489369359,
+      "entry_number": 3
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Aug. 10, 2026",
+    "event": "ORDER \u2014 Dkt. 4 Initial Case Management Scheduling Order with ADR Deadlines",
+    "matters": [
+      33
+    ],
+    "type": "order",
+    "upcoming": false,
+    "filed": true,
+    "actor": "court",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73742123,
+      "docket_entry_id": 473888858,
+      "recap_document_id": 489369299,
+      "entry_number": 4
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Sep. 9, 2026",
+    "event": "FILED \u2014 Dkt. 14 Certificate/Proof of Service",
+    "matters": [
+      32
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74220629,
+      "docket_entry_id": 477429741,
+      "recap_document_id": 493023972,
+      "entry_number": 14
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Sep. 1, 2026",
+    "event": "FILED \u2014 Dkt. 12 Summons Returned Executed",
+    "matters": [
+      32
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74220629,
+      "docket_entry_id": 476512173,
+      "recap_document_id": 492076785,
+      "entry_number": 12
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Aug. 26, 2026",
+    "event": "FILED \u2014 Dkt. 10 Notice (Other)",
+    "matters": [
+      32
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74220629,
+      "docket_entry_id": 475919100,
+      "recap_document_id": 491466043,
+      "entry_number": 10
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Aug. 26, 2026",
+    "event": "FILED \u2014 Dkt. 11 Summons Returned Unexecuted",
+    "matters": [
+      32
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74220629,
+      "docket_entry_id": 475919073,
+      "recap_document_id": 491466016,
+      "entry_number": 11
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Aug. 24, 2026",
+    "event": "FILED \u2014 Case Assigned/Reassigned",
+    "matters": [
+      32
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74220629,
+      "docket_entry_id": 475612536,
+      "recap_document_id": 491150128
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Aug. 24, 2026",
+    "event": "ORDER \u2014 Dkt. 8 Order Relating Case",
+    "matters": [
+      32
+    ],
+    "type": "order",
+    "upcoming": false,
+    "filed": true,
+    "actor": "court",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74220629,
+      "docket_entry_id": 475586351,
+      "recap_document_id": 491123251,
+      "entry_number": 8
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Aug. 20, 2026",
+    "event": "FILED \u2014 Dkt. 7 Notice (Other)",
+    "matters": [
+      32
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74220629,
+      "docket_entry_id": 475245764,
+      "recap_document_id": 490771916,
+      "entry_number": 7
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Aug. 18, 2026",
+    "event": "FILED \u2014 Dkt. 6 Amended Complaint",
+    "matters": [
+      32
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74220629,
+      "docket_entry_id": 474882035,
+      "recap_document_id": 490396247,
+      "entry_number": 6
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Aug. 11, 2026",
+    "event": "FILED \u2014 Dkt. 1 Complaint",
+    "matters": [
+      32
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74220629,
+      "docket_entry_id": 474037861,
+      "recap_document_id": 489525501,
+      "entry_number": 1
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Aug. 11, 2026",
+    "event": "FILED \u2014 Dkt. 2 Consent/Declination to Proceed Before a US Magistrate Judge",
+    "matters": [
+      32
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "court",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74220629,
+      "docket_entry_id": 474037833,
+      "recap_document_id": 489525473,
+      "entry_number": 2
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Aug. 11, 2026",
+    "event": "FILED \u2014 Dkt. 3 Summons Issued",
+    "matters": [
+      32
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74220629,
+      "docket_entry_id": 474037772,
+      "recap_document_id": 489525412,
+      "entry_number": 3
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Aug. 11, 2026",
+    "event": "ORDER \u2014 Dkt. 4 Initial Case Management Scheduling Order with ADR Deadlines",
+    "matters": [
+      32
+    ],
+    "type": "order",
+    "upcoming": false,
+    "filed": true,
+    "actor": "court",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74220629,
+      "docket_entry_id": 474037741,
+      "recap_document_id": 489525381,
+      "entry_number": 4
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Sep. 11, 2026",
+    "event": "FILED \u2014 Dkt. 16 Certificate/Proof of Service",
+    "matters": [
+      29
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74725653,
+      "docket_entry_id": 477681470,
+      "recap_document_id": 493284008,
+      "entry_number": 16
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Sep. 11, 2026",
+    "event": "FILED \u2014 Dkt. 15 Consent/Declination to Proceed Before a US Magistrate Judge",
+    "matters": [
+      29
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "court",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74725653,
+      "docket_entry_id": 477674834,
+      "recap_document_id": 493277058,
+      "entry_number": 15
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Sep. 4, 2026",
+    "event": "FILED \u2014 Dkt. 12 Certificate/Proof of Service",
+    "matters": [
+      29
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74725653,
+      "docket_entry_id": 477048822,
+      "recap_document_id": 492628986,
+      "entry_number": 12
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Sep. 4, 2026",
+    "event": "FILED \u2014 Electronic Filing Error",
+    "matters": [
+      29
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74725653,
+      "docket_entry_id": 477042768,
+      "recap_document_id": 492622821
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Sep. 3, 2026",
+    "event": "FILED \u2014 Dkt. 10 Certificate/Proof of Service",
+    "matters": [
+      29
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74725653,
+      "docket_entry_id": 476897276,
+      "recap_document_id": 492472932,
+      "entry_number": 10
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Sep. 3, 2026",
+    "event": "ORDER \u2014 Dkt. 9 Initial Case Management Scheduling Order with ADR Deadlines",
+    "matters": [
+      29
+    ],
+    "type": "order",
+    "upcoming": false,
+    "filed": true,
+    "actor": "court",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74725653,
+      "docket_entry_id": 476827813,
+      "recap_document_id": 492401773,
+      "entry_number": 9
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Sep. 3, 2026",
+    "event": "FILED \u2014 Electronic Filing Error",
+    "matters": [
+      29
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74725653,
+      "docket_entry_id": 476827808,
+      "recap_document_id": 492401767
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Sep. 2, 2026",
+    "event": "ORDER \u2014 Dkt. 7 Stipulation without Proposed Order",
+    "matters": [
+      29
+    ],
+    "type": "order",
+    "upcoming": false,
+    "filed": true,
+    "actor": "court",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74725653,
+      "docket_entry_id": 476698741,
+      "recap_document_id": 492269486,
+      "entry_number": 7
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Sep. 1, 2026",
+    "event": "ORDER \u2014 Dkt. 6 Stipulation without Proposed Order",
+    "matters": [
+      29
+    ],
+    "type": "order",
+    "upcoming": false,
+    "filed": true,
+    "actor": "court",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74725653,
+      "docket_entry_id": 476537604,
+      "recap_document_id": 492103015,
+      "entry_number": 6
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Aug. 31, 2026",
+    "event": "FILED \u2014 ~Util - Case Assigned by Intake",
+    "matters": [
+      29
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74725653,
+      "docket_entry_id": 476435472,
+      "recap_document_id": 491997838
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Aug. 31, 2026",
+    "event": "FILED \u2014 Dkt. 4 Certificate/Proof of Service",
+    "matters": [
+      29
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74725653,
+      "docket_entry_id": 476414325,
+      "recap_document_id": 491976313,
+      "entry_number": 4
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Sep. 10, 2026",
+    "event": "FILED \u2014 Dkt. 14 Certificate of Interested Entities, Corporate Disclosure Statement, or Rule 7.1 Disclosures",
+    "matters": [
+      28
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73646240,
+      "docket_entry_id": 477508375,
+      "recap_document_id": 493104988,
+      "entry_number": 14
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Aug. 31, 2026",
+    "event": "FILED \u2014 Dkt. 12 Summons Issued",
+    "matters": [
+      28
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73646240,
+      "docket_entry_id": 476449007,
+      "recap_document_id": 492011539,
+      "entry_number": 12
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Aug. 26, 2026",
+    "event": "ORDER \u2014 Dkt. 11 ORDER REGARDING PAYMENT OF FILING FEE AND 2 APPLICATION TO PROCEED IN FORMA PAUPERIS. Signed by Judge Lisa J. Cisneros on 8/26/2026. (bns, COURT STAFF) (Filed on 8/26/2026)Any non-CM/ECF Participants have been served by\u2026",
+    "matters": [
+      28
+    ],
+    "type": "order",
+    "upcoming": false,
+    "filed": true,
+    "actor": "court",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73646240,
+      "docket_entry_id": 475832003,
+      "recap_document_id": 491377465,
+      "entry_number": 11
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Aug. 6, 2026",
+    "event": "FILED \u2014 Dkt. 10 Certificate/Proof of Service",
+    "matters": [
+      28
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73646240,
+      "docket_entry_id": 473555426,
+      "recap_document_id": 489024108,
+      "entry_number": 10
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Jul. 31, 2026",
+    "event": "FILED \u2014 Dkt. 9 Notice (Other)",
+    "matters": [
+      28
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73646240,
+      "docket_entry_id": 472834732,
+      "recap_document_id": 488280505,
+      "entry_number": 9
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Jul. 28, 2026",
+    "event": "FILED \u2014 Dkt. 8 Receipt",
+    "matters": [
+      28
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73646240,
+      "docket_entry_id": 472434092,
+      "recap_document_id": 487867621,
+      "entry_number": 8
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Jul. 23, 2026",
+    "event": "ORDER \u2014 Dkt. 7 Order on Motion for Protective Order",
+    "matters": [
+      28
+    ],
+    "type": "order",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73646240,
+      "docket_entry_id": 471968760,
+      "recap_document_id": 487387224,
+      "entry_number": 7
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Jul. 21, 2026",
+    "event": "FILED \u2014 Remark",
+    "matters": [
+      28
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73646240,
+      "docket_entry_id": 471655258,
+      "recap_document_id": 487065247
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Jul. 21, 2026",
+    "event": "FILED \u2014 Dkt. 1 Complaint",
+    "matters": [
+      28
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73646240,
+      "docket_entry_id": 471591611,
+      "recap_document_id": 487000455,
+      "entry_number": 1
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Jul. 21, 2026",
+    "event": "FILED \u2014 Dkt. 2 Proceed In Forma Pauperis",
+    "matters": [
+      28
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73646240,
+      "docket_entry_id": 471591598,
+      "recap_document_id": 487000442,
+      "entry_number": 2
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Jul. 21, 2026",
+    "event": "FILED \u2014 Dkt. 3 Proposed Summons",
+    "matters": [
+      28
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73646240,
+      "docket_entry_id": 471591590,
+      "recap_document_id": 487000434,
+      "entry_number": 3
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Jul. 21, 2026",
+    "event": "ORDER \u2014 Dkt. 4 Initial Case Management Scheduling Order with ADR Deadlines",
+    "matters": [
+      28
+    ],
+    "type": "order",
+    "upcoming": false,
+    "filed": true,
+    "actor": "court",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73646240,
+      "docket_entry_id": 471591574,
+      "recap_document_id": 487000418,
+      "entry_number": 4
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Jul. 21, 2026",
+    "event": "FILED \u2014 Dkt. 5 Consent/Declination to Proceed Before a US Magistrate Judge",
+    "matters": [
+      28
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "court",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73646240,
+      "docket_entry_id": 471591564,
+      "recap_document_id": 487000408,
+      "entry_number": 5
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Jul. 21, 2026",
+    "event": "ORDER \u2014 Dkt. 6 Protective Order",
+    "matters": [
+      28
+    ],
+    "type": "order",
+    "upcoming": false,
+    "filed": true,
+    "actor": "court",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73646240,
+      "docket_entry_id": 471591426,
+      "recap_document_id": 487000260,
+      "entry_number": 6
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Sep. 11, 2026",
+    "event": "FILED \u2014 Dkt. 13 Opposition to Motion",
+    "matters": [
+      26
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74680795,
+      "docket_entry_id": 477696114,
+      "recap_document_id": 493299053,
+      "entry_number": 13
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Sep. 10, 2026",
+    "event": "ORDER \u2014 Minute Order AND Order on Motion for Extension of Time AND ~Util - 1 Set/Reset Deadlines and Hearings",
+    "matters": [
+      26
+    ],
+    "type": "order",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74680795,
+      "docket_entry_id": 477596709,
+      "recap_document_id": 493195828
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Sep. 10, 2026",
+    "event": "FILED \u2014 Service by Mail",
+    "matters": [
+      26
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74680795,
+      "docket_entry_id": 477596705,
+      "recap_document_id": 493195824
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Aug. 31, 2026",
+    "event": "FILED \u2014 Dkt. 10 Opposition to Motion",
+    "matters": [
+      26
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74680795,
+      "docket_entry_id": 476365951,
+      "recap_document_id": 491926647,
+      "entry_number": 10
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Aug. 27, 2026",
+    "event": "ORDER \u2014 Minute Order AND ~Util - 1 Terminate Deadlines and Hearings",
+    "matters": [
+      26
+    ],
+    "type": "order",
+    "upcoming": false,
+    "filed": true,
+    "actor": "court",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74680795,
+      "docket_entry_id": 476090014,
+      "recap_document_id": 491642394
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Aug. 27, 2026",
+    "event": "FILED \u2014 Service by Mail",
+    "matters": [
+      26
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74680795,
+      "docket_entry_id": 476090003,
+      "recap_document_id": 491642383
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Aug. 24, 2026",
+    "event": "FILED \u2014 Dkt. 6 Certificate / Proof of Service",
+    "matters": [
+      26
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74680795,
+      "docket_entry_id": 475576602,
+      "recap_document_id": 491113340,
+      "entry_number": 6
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Aug. 20, 2026",
+    "event": "FILED \u2014 Dkt. 3 Certificate / Proof of Service",
+    "matters": [
+      26
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74680795,
+      "docket_entry_id": 475279623,
+      "recap_document_id": 490807108,
+      "entry_number": 3
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Aug. 20, 2026",
+    "event": "FILED \u2014 Service by Mail",
+    "matters": [
+      26
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74680795,
+      "docket_entry_id": 475276186,
+      "recap_document_id": 490803541
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Sep. 8, 2026",
+    "event": "ORDER \u2014 Dkt. 8 Order AND ~Util - 1 Set/Reset Deadlines and Hearings",
+    "matters": [
+      25
+    ],
+    "type": "order",
+    "upcoming": false,
+    "filed": true,
+    "actor": "court",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74699765,
+      "docket_entry_id": 477263490,
+      "recap_document_id": 492853180,
+      "entry_number": 8
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Sep. 8, 2026",
+    "event": "FILED \u2014 Service by Mail",
+    "matters": [
+      25
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74699765,
+      "docket_entry_id": 477263479,
+      "recap_document_id": 492853170
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Sep. 11, 2026",
+    "event": "FILED \u2014 Dkt. 27 Consent/Declination to Proceed Before a US Magistrate Judge",
+    "matters": [
+      24
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "court",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73504901,
+      "docket_entry_id": 477731643,
+      "recap_document_id": 493335322,
+      "entry_number": 27
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Sep. 10, 2026",
+    "event": "FILED \u2014 Dkt. 26 Certificate of Interested Entities, Corporate Disclosure Statement, or Rule 7.1 Disclosures",
+    "matters": [
+      24
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73504901,
+      "docket_entry_id": 477559697,
+      "recap_document_id": 493157826,
+      "entry_number": 26
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Sep. 3, 2026",
+    "event": "ORDER \u2014 Dkt. 22 Stipulation and Proposed Order",
+    "matters": [
+      24
+    ],
+    "type": "order",
+    "upcoming": false,
+    "filed": true,
+    "actor": "court",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73504901,
+      "docket_entry_id": 476893826,
+      "recap_document_id": 492469383,
+      "entry_number": 22
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Aug. 27, 2026",
+    "event": "FILED \u2014 Dkt. 20 Opposition/Response to Motion",
+    "matters": [
+      24
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73504901,
+      "docket_entry_id": 476094343,
+      "recap_document_id": 491646794,
+      "entry_number": 20
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Aug. 27, 2026",
+    "event": "FILED \u2014 Dkt. 19 Relate Case",
+    "matters": [
+      24
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73504901,
+      "docket_entry_id": 476047847,
+      "recap_document_id": 491598299,
+      "entry_number": 19
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Aug. 26, 2026",
+    "event": "FILED \u2014 Dkt. 18 Dismiss",
+    "matters": [
+      24
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73504901,
+      "docket_entry_id": 475941274,
+      "recap_document_id": 491489386,
+      "entry_number": 18
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Aug. 24, 2026",
+    "event": "ORDER \u2014 Dkt. 17 Order on Administrative Motion per Civil Local Rule 7-11",
+    "matters": [
+      24
+    ],
+    "type": "order",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73504901,
+      "docket_entry_id": 475586405,
+      "recap_document_id": 491123305,
+      "entry_number": 17
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Aug. 20, 2026",
+    "event": "FILED \u2014 Dkt. 16 Administrative Motion per Civil Local Rule 7-11",
+    "matters": [
+      24
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73504901,
+      "docket_entry_id": 475259992,
+      "recap_document_id": 490786918,
+      "entry_number": 16
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Aug. 7, 2026",
+    "event": "FILED \u2014 Dkt. 15 Summons Returned Executed",
+    "matters": [
+      24
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73504901,
+      "docket_entry_id": 473695663,
+      "recap_document_id": 489169613,
+      "entry_number": 15
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Jul. 21, 2026",
+    "event": "FILED \u2014 Dkt. 14 Remark",
+    "matters": [
+      24
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73504901,
+      "docket_entry_id": 471647507,
+      "recap_document_id": 487057324,
+      "entry_number": 14
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Jul. 15, 2026",
+    "event": "FILED \u2014 Dkt. 13 Notice (Other)",
+    "matters": [
+      24
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73504901,
+      "docket_entry_id": 471001679,
+      "recap_document_id": 486394524,
+      "entry_number": 13
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Jul. 15, 2026",
+    "event": "FILED \u2014 Dkt. 11 Notice of Change of Address",
+    "matters": [
+      24
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73504901,
+      "docket_entry_id": 470997190,
+      "recap_document_id": 486389920,
+      "entry_number": 11
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Jul. 14, 2026",
+    "event": "FILED \u2014 Dkt. 9 Notice of Change of Address",
+    "matters": [
+      24
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73504901,
+      "docket_entry_id": 470843459,
+      "recap_document_id": 486232670,
+      "entry_number": 9
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Jun. 29, 2026",
+    "event": "FILED \u2014 Dkt. 8 Consent/Declination to Proceed Before a US Magistrate Judge",
+    "matters": [
+      24
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "court",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73504901,
+      "docket_entry_id": 469197971,
+      "recap_document_id": 484524147,
+      "entry_number": 8
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Jun. 29, 2026",
+    "event": "FILED \u2014 Dkt. 6 Summons Issued",
+    "matters": [
+      24
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73504901,
+      "docket_entry_id": 469141535,
+      "recap_document_id": 484463751,
+      "entry_number": 6
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Jun. 29, 2026",
+    "event": "ORDER \u2014 Dkt. 5 Order on Motion for Leave to Proceed In Forma Pauperis",
+    "matters": [
+      24
+    ],
+    "type": "order",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73504901,
+      "docket_entry_id": 469127016,
+      "recap_document_id": 484448620,
+      "entry_number": 5
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Jun. 18, 2026",
+    "event": "ORDER \u2014 Dkt. 4 Initial Case Management Scheduling Order with ADR Deadlines",
+    "matters": [
+      24
+    ],
+    "type": "order",
+    "upcoming": false,
+    "filed": true,
+    "actor": "court",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73504901,
+      "docket_entry_id": 468066612,
+      "recap_document_id": 483343947,
+      "entry_number": 4
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Jun. 18, 2026",
+    "event": "FILED \u2014 Dkt. 1 Complaint",
+    "matters": [
+      24
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73504901,
+      "docket_entry_id": 468056874,
+      "recap_document_id": 483334109,
+      "entry_number": 1
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Jun. 18, 2026",
+    "event": "FILED \u2014 Dkt. 2 Proceed In Forma Pauperis",
+    "matters": [
+      24
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73504901,
+      "docket_entry_id": 468056871,
+      "recap_document_id": 483334106,
+      "entry_number": 2
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
+    "date": "Jun. 18, 2026",
+    "event": "FILED \u2014 Dkt. 3 Proposed Summons",
+    "matters": [
+      24
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "unknown",
+    "source_type": "courtlistener",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73504901,
+      "docket_entry_id": 468056865,
+      "recap_document_id": 483334100,
+      "entry_number": 3
+    },
+    "verified_at": "2026-09-12T15:34:55.504Z"
+  },
+  {
     "date": "Sep. 11, 2026",
     "event": "FILED \u2014 Dkt. 28 Clerk's Notice of Impending Reassignment to a U.S. District Judge in Newanforbi v. Serrato (4:26-cv-05953-ASK). At least one party did not consent to magistrate-judge jurisdiction, so the case leaves Mag. Judge Ajay S. Krishnan for a district judge; the reassignment order to follow. All Krishnan hearing dates vacated, including the Sep. 30 MTD hearing (re-notice to follow); the case-number suffix will change from -ASK.",
     "matters": [
@@ -12,7 +1659,14 @@
     "source": "User-supplied PDF: Newanforbi-Serrato_-_CLERK_S_NOTICE_of_Impending_Reassignment_to_U.S._District_Judge.pdf (Clerk's Notice, Dkt. 28, filed Sep. 11, 2026; declaration of service by Andy Marquez, CA AG office)",
     "source_type": "portfolio",
     "confidence": "high",
-    "verified_at": "2026-09-11"
+    "verified_at": "2026-09-11",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73504901,
+      "docket_entry_id": 477742738,
+      "recap_document_id": 493346527,
+      "entry_number": 28
+    }
   },
   {
     "date": "Sep. 11, 2026",
@@ -104,7 +1758,14 @@
     "source": "/documents/matter-24/Dkt 25 - Order Continuing Initial CMC (Filed Sep 9 2026).pdf",
     "source_type": "court_order",
     "confidence": "high",
-    "verified_at": "2026-09-11"
+    "verified_at": "2026-09-11",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73504901,
+      "docket_entry_id": 477394612,
+      "recap_document_id": 492988297,
+      "entry_number": 25
+    }
   },
   {
     "date": "Sep. 10, 2026",
@@ -241,7 +1902,14 @@
     "source": "/documents/matter-29/Dkt 14 - Accurate Background Consent to Magistrate Judge Jurisdiction (Filed Sep 10 2026).pdf",
     "source_type": "portfolio",
     "confidence": "medium",
-    "verified_at": "2026-09-11"
+    "verified_at": "2026-09-11",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74725653,
+      "docket_entry_id": 477597486,
+      "recap_document_id": 493196611,
+      "entry_number": 14
+    }
   },
   {
     "date": "Sep. 9, 2026",
@@ -448,7 +2116,14 @@
     "source": "/documents/matter-29/Dkt 13 - Plaintiff's Certification of Conflicts (Filed Sep 9 2026).pdf",
     "source_type": "portfolio",
     "confidence": "medium",
-    "verified_at": "2026-09-11"
+    "verified_at": "2026-09-11",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74725653,
+      "docket_entry_id": 477449219,
+      "recap_document_id": 493043709,
+      "entry_number": 13
+    }
   },
   {
     "date": "Sep. 9, 2026",
@@ -463,7 +2138,14 @@
     "source": "/documents/matter-32/ndcal/Dkt 15 - Plaintiff's Certification of Conflicts (Filed Sep 9 2026).pdf",
     "source_type": "portfolio",
     "confidence": "medium",
-    "verified_at": "2026-09-11"
+    "verified_at": "2026-09-11",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74220629,
+      "docket_entry_id": 477449104,
+      "recap_document_id": 493043594,
+      "entry_number": 15
+    }
   },
   {
     "date": "Sep. 8, 2026",
@@ -984,7 +2666,14 @@
     "source": "/documents/matter-26/PACER Docket Report - E.D. Cal. 2-26-cv-02847-DAD-CKD (Sep 4 2026).pdf",
     "source_type": "pacer",
     "confidence": "high",
-    "verified_at": "2026-09-11"
+    "verified_at": "2026-09-11",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74680795,
+      "docket_entry_id": 475576648,
+      "recap_document_id": 491113386,
+      "entry_number": 5
+    }
   },
   {
     "date": "Aug. 26, 2026",
@@ -999,7 +2688,14 @@
     "source": "/documents/matter-26/PACER Docket Report - E.D. Cal. 2-26-cv-02847-DAD-CKD (Sep 4 2026).pdf",
     "source_type": "pacer",
     "confidence": "high",
-    "verified_at": "2026-09-11"
+    "verified_at": "2026-09-11",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74680795,
+      "docket_entry_id": 475940646,
+      "recap_document_id": 491488753,
+      "entry_number": 7
+    }
   },
   {
     "date": "Aug. 27, 2026",
@@ -1014,7 +2710,14 @@
     "source": "/documents/matter-26/PACER Docket Report - E.D. Cal. 2-26-cv-02847-DAD-CKD (Sep 4 2026).pdf",
     "source_type": "pacer",
     "confidence": "high",
-    "verified_at": "2026-09-11"
+    "verified_at": "2026-09-11",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74680795,
+      "docket_entry_id": 476096654,
+      "recap_document_id": 491649164,
+      "entry_number": 9
+    }
   },
   {
     "date": "Oct. 7, 2026",
@@ -1058,7 +2761,14 @@
     "source": "/documents/matter-33/ndcal/Dkt 09 - Proof of Service - FAC Dkt 06 Mailed to Candelaria and Gordon (CONFORMED, Filed Aug 26 2026).pdf",
     "source_type": "portfolio",
     "confidence": "medium",
-    "verified_at": "2026-09-11"
+    "verified_at": "2026-09-11",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73742123,
+      "docket_entry_id": 475933491,
+      "recap_document_id": 491480883,
+      "entry_number": 9
+    }
   },
   {
     "date": "Sep. 3, 2026",
@@ -1132,7 +2842,14 @@
     "source": "/documents/matter-32/ndcal/Dkt 13 - Administrative Motion Packet - DAG Li to Accept Service (Filed Sep 3 2026).pdf",
     "source_type": "portfolio",
     "confidence": "medium",
-    "verified_at": "2026-09-11"
+    "verified_at": "2026-09-11",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74220629,
+      "docket_entry_id": 476904856,
+      "recap_document_id": 492480829,
+      "entry_number": 13
+    }
   },
   {
     "date": "Sep. 8, 2026",
@@ -1401,7 +3118,14 @@
     "source": "/documents/matter-29/Dkt 08 - Accurate Background Corporate Disclosure and Certification of Conflicts (Filed Sep 2 2026).pdf",
     "source_type": "portfolio",
     "confidence": "medium",
-    "verified_at": "2026-09-11"
+    "verified_at": "2026-09-11",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74725653,
+      "docket_entry_id": 476712185,
+      "recap_document_id": 492283231,
+      "entry_number": 8
+    }
   },
   {
     "date": "Sep. 2, 2026",
@@ -1737,7 +3461,14 @@
     "source": "/documents/matter-25/Dkt 04 - Answer to Complaint (Filed Aug 31 2026).pdf",
     "source_type": "portfolio",
     "confidence": "medium",
-    "verified_at": "2026-09-11"
+    "verified_at": "2026-09-11",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74699765,
+      "docket_entry_id": 476379427,
+      "recap_document_id": 491940371,
+      "entry_number": 4
+    }
   },
   {
     "date": "Aug. 31, 2026",
@@ -2004,7 +3735,14 @@
     "source": "/documents/matter-29/Dkt 01 - Notice of Removal (Filed Aug 31 2026).pdf",
     "source_type": "portfolio",
     "confidence": "medium",
-    "verified_at": "2026-09-11"
+    "verified_at": "2026-09-11",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74725653,
+      "docket_entry_id": 476401817,
+      "recap_document_id": 491963668,
+      "entry_number": 1
+    }
   },
   {
     "date": "Aug. 31, 2026",
@@ -2019,7 +3757,14 @@
     "source": "/documents/matter-29/Dkt 02 - Notice of Removal Exhibits 1-11 (Filed Aug 31 2026).pdf",
     "source_type": "portfolio",
     "confidence": "medium",
-    "verified_at": "2026-09-11"
+    "verified_at": "2026-09-11",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74725653,
+      "docket_entry_id": 476401660,
+      "recap_document_id": 491963512,
+      "entry_number": 2
+    }
   },
   {
     "date": "Aug. 31, 2026",
@@ -2034,7 +3779,14 @@
     "source": "/documents/matter-29/Dkt 03 - Certification of Interested Entities or Persons (Filed Aug 31 2026).pdf",
     "source_type": "portfolio",
     "confidence": "medium",
-    "verified_at": "2026-09-11"
+    "verified_at": "2026-09-11",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74725653,
+      "docket_entry_id": 476414357,
+      "recap_document_id": 491976345,
+      "entry_number": 3
+    }
   },
   {
     "date": "Aug. 31, 2026",
@@ -2821,7 +4573,14 @@
     "actor": "you",
     "source_type": "portfolio",
     "confidence": "medium",
-    "verified_at": "2026-09-11"
+    "verified_at": "2026-09-11",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74220629,
+      "docket_entry_id": 474798686,
+      "recap_document_id": 490310059,
+      "entry_number": 5
+    }
   },
   {
     "date": "Aug. 17, 2026",
@@ -4887,7 +6646,14 @@
     "actor": "agency",
     "source_type": "manual",
     "confidence": "low",
-    "verified_at": "2026-09-11"
+    "verified_at": "2026-09-11",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73504901,
+      "docket_entry_id": 469141505,
+      "recap_document_id": 484463721,
+      "entry_number": 7
+    }
   },
   {
     "date": "Jul. 1, 2026",
@@ -5001,7 +6767,14 @@
     "source": "/documents/matter-24/Dkt 24 - Joint Case Management Conference Statement (Filed Sep 8 2026).pdf",
     "source_type": "portfolio",
     "confidence": "medium",
-    "verified_at": "2026-09-11"
+    "verified_at": "2026-09-11",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73504901,
+      "docket_entry_id": 477298681,
+      "recap_document_id": 492888980,
+      "entry_number": 24
+    }
   },
   {
     "date": "Sep. 8, 2026",
@@ -5017,7 +6790,14 @@
     "source": "/documents/matter-24/Dkt 23 - Related Case Order - Candelaria Not Related (Filed Sep 8 2026).pdf",
     "source_type": "court_order",
     "confidence": "high",
-    "verified_at": "2026-09-11"
+    "verified_at": "2026-09-11",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73504901,
+      "docket_entry_id": 477233081,
+      "recap_document_id": 492822006,
+      "entry_number": 23
+    }
   },
   {
     "date": "Sep. 8, 2026",
@@ -7458,7 +9238,14 @@
     "actor": "you",
     "source_type": "portfolio",
     "confidence": "medium",
-    "verified_at": "2026-09-11"
+    "verified_at": "2026-09-11",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73504901,
+      "docket_entry_id": 470997212,
+      "recap_document_id": 486389942,
+      "entry_number": 10
+    }
   },
   {
     "date": "Jul. 15, 2026",
@@ -7472,7 +9259,14 @@
     "actor": "you",
     "source_type": "portfolio",
     "confidence": "medium",
-    "verified_at": "2026-09-11"
+    "verified_at": "2026-09-11",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73504901,
+      "docket_entry_id": 470997169,
+      "recap_document_id": 486389899,
+      "entry_number": 12
+    }
   },
   {
     "date": "Aug. 20, 2026",
@@ -7485,7 +9279,14 @@
     "source": "/documents/matter-26/Notice of Removal to Federal Court - United Parcel Service Inc (E.D. Cal. 1-26-at-03195) (Aug 20 2026).pdf",
     "source_type": "portfolio",
     "confidence": "medium",
-    "verified_at": "2026-09-11"
+    "verified_at": "2026-09-11",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74680795,
+      "docket_entry_id": 475276255,
+      "recap_document_id": 490803610,
+      "entry_number": 1
+    }
   },
   {
     "date": "Aug. 20, 2026",
@@ -7896,7 +9697,14 @@
     "source": "/documents/matter-29/Dkt 11 - Plaintiff's Consent to Magistrate Judge Jurisdiction (Filed Sep 3 2026).pdf",
     "source_type": "portfolio",
     "confidence": "medium",
-    "verified_at": "2026-09-11"
+    "verified_at": "2026-09-11",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 74725653,
+      "docket_entry_id": 476904530,
+      "recap_document_id": 492480502,
+      "entry_number": 11
+    }
   },
   {
     "date": "Sep. 3, 2026",
@@ -7911,7 +9719,14 @@
     "source": "/documents/matter-28/Dkt 13 - Proof of Service of Rule 4 Packet on SLB (Filed Sep 3 2026).pdf",
     "source_type": "portfolio",
     "confidence": "medium",
-    "verified_at": "2026-09-11"
+    "verified_at": "2026-09-11",
+    "external": {
+      "provider": "courtlistener",
+      "docket_id": 73646240,
+      "docket_entry_id": 476897202,
+      "recap_document_id": 492472858,
+      "entry_number": 13
+    }
   },
   {
     "date": "Sep. 4, 2026",
