@@ -9,7 +9,7 @@
     "docket_url": "/docket/74680795/ps-newanforbi-v-united-parcel-service-inc/"
   },
   "claims": "PC §290.46(j)(2)(E) Violation, Failure to Hire (Tameny), ICRAA, Invasion of Privacy, Negligence Per Se, UCL §17200",
-  "status": "Live MTD is Dkt. 9, hearing Oct. 7, 2026, 10:00 a.m., Courtroom 24 (CKD) before Magistrate Judge Delaney (Zoom). Dkt. 10 opposition on file (Aug. 28). Dkt. 12 (Sep. 10) GRANTED Dkt. 11; UPS reply due Sep. 14, 2026. Plaintiff's mailed opposition to Dkt. 11 delivered Sep. 10, 11:16 a.m. (USPS) — not on docket as of 5:51 p.m. pull; moot as to the extension. Dkt. 7 / Oct. 5 Drozd setting vacated (Dkt. 8). UPS declined MJ jurisdiction (Dkt. 5). Rule 15 window through Sep. 16.",
+  "status": "Live MTD is Dkt. 9, hearing Oct. 7, 2026, 10:00 a.m., Courtroom 24 (CKD) before Magistrate Judge Delaney (Zoom). Dkt. 10 opposition on file (Aug. 28). Dkt. 12 (Sep. 10) GRANTED Dkt. 11; UPS reply due Sep. 14, 2026. $250k settlement demand (emailed Aug. 31 to UPS counsel Mott and Daskas, Martenson Law; supersedes July 12 $85k figure) expires Sep. 14, 2026, 5:00 p.m. PT — same day the Dkt. 9 reply is due. Demand rests on UPS's own ECF No. 7 Exhibit A (incorporated by reference); early settlement conference before M.J. Delaney offered. Rule 15 window through Sep. 16.",
   "lifecycle": "active",
   "proceeding": "federal_civil",
   "phase": "mtd_briefing",
@@ -86,10 +86,6 @@
     },
     {
       "path": "/documents/matter-26/UPS Demand Packet Newanforbi.pdf"
-    },
-    {
-      "path": "/documents/matter-26/Settlement Demand Email - United Parcel Service Inc (Aug 31 2026).pdf",
-      "filed": false
     },
     {
       "path": "/documents/matter-26/Notice of Case Assignment and Scheduling Information.pdf"
@@ -253,6 +249,10 @@
     },
     {
       "path": "/documents/matter-26/Proof of Service - Consent to Magistrate Judge Jurisdiction - UPS (E.D. Cal. 2-26-cv-02847) (Sep 1 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-26/Settlement Demand Email - United Parcel Service Inc (Aug 31 2026).pdf",
       "filed": false
     }
   ],
