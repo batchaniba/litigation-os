@@ -7,9 +7,28 @@
 //
 // See internal/docs/DOCUMENT_STORE.md.
 // ==========================================================
+import { execFileSync } from "node:child_process";
 import { pullDocuments, pushDocuments, seedDocumentsBranch } from "./lib/documents-branch.mjs";
 
 const command = process.argv[2] ?? "";
+const PAGES_WORKFLOW = "deploy-gh-pages.yml";
+
+// GitHub Pages is the origin for /documents/*, and its workflow no longer runs
+// on every push to main. The `documents` branch carries no workflow file, so a
+// push there cannot trigger it either; ask for the rebuild explicitly. Best
+// effort: the next scheduled run picks it up anyway.
+function requestPagesRebuild() {
+  try {
+    execFileSync("gh", ["workflow", "run", PAGES_WORKFLOW, "--ref", "main"], { stdio: "ignore" });
+    console.log(`OK — requested GitHub Pages rebuild (${PAGES_WORKFLOW}).`);
+  } catch {
+    console.log(
+      `note: could not dispatch ${PAGES_WORKFLOW} (gh CLI missing or not signed in). ` +
+        "The next scheduled Pages run will publish the new PDFs; to publish now, run:\n" +
+        `  gh workflow run ${PAGES_WORKFLOW} --ref main`,
+    );
+  }
+}
 
 try {
   if (command === "pull") {
@@ -19,6 +38,7 @@ try {
     const result = pushDocuments();
     if (result.pushed) {
       console.log(`OK — pushed document store ${result.commit.slice(0, 12)}.`);
+      requestPagesRebuild();
     } else {
       console.log("OK — document store already matches the working tree.");
     }
