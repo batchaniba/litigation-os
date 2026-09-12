@@ -9,89 +9,156 @@ CMC Oct. 22, 2026.
 explicitly flagged, defense's previewed grounds tested one by one, nothing characterized beyond
 what a source supports.
 
-> **The headline finding is in § 1.** It is a document-level discrepancy between the Matter 5
-> tentative ruling and the signed order, and it goes to the heart of the res judicata defense.
+> **The headline finding is in § 1**, and as of Sept. 12, 2026 it is no longer an inference. The
+> San Joaquin **minute order** and **register of actions** confirm that the adjudicated ground was
+> jurisdictional exhaustion, and that **no judgment was ever entered**. Defense counsel's lead
+> ground rests on a merits recital in an order its own firm drafted.
 
 ---
 
-## 1. The finding that decides the res judicata ground
+## 1. The res judicata ground, now resolved against the defense on the court's own record
 
 Defense counsel's previewed ground #1 is that Matter 5 "was resolved **on the merits and in
-Defendants' favor**," so every claim here is precluded. **The Matter 5 record does not say that.**
+Defendants' favor**," so every claim here is precluded. **The San Joaquin record — including the
+court's own minute order and register of actions, obtained Sept. 12, 2026 — does not support that,
+and affirmatively contradicts it in two independent ways.**
 
-### 1.1 What the court actually ruled — the tentative
+### 1.1 The minute order records what the court actually decided
 
-`matter-05/Tentative Ruling on Demurrer (posted July 13, 2026, hearing July 15, 2026).pdf`,
-quoted verbatim:
+`Minute Order — Demurrer Sustained WOLA (San Joaquin Sup. Ct., July 15, 2026)`, the court's own
+record prepared by the courtroom clerk, quoted verbatim:
 
-> "The court having read and considered Defendants' Demurrer to Plaintiff's First Amended Complaint
+> "Date: 07/15/2026 09:00 AM  Case Number: STK-CV-UF-2026-0001032 … Event Type: Demurrer
+> Department: 10A … Presiding Judge: George J. Abdallah. Plaintiff, Brenden Nghesi Newanforbi,
+> appears Pro Se. Private Attorney, Blaze Van-Dine, appears for Defendant, HOPE Program … and …
+> Katie Palacios …
+>
+> **Oral argument was requested by Plaintiff, Pro se. Matter submitted with argument.**
+>
+> **The Court affirmed the tentative ruling as follows:**
+>
+> The court having read and considered Defendants' Demurrer to Plaintiff's First Amended Complaint
 > (FAC), Plaintiff's Opposition and Defendants' Reply rules as follows. The court agrees with
 > Defendants' analysis and the authorities cited in their Motion and Reply that **exhaustion of
 > administrative remedies herein is a jurisdictional requirement** to the filing of Plaintiff's FAC.
 > The court finds Plaintiff **failed to meet this jurisdictional requirement** prior to the filing of
 > his FAC. Therefore, Defendants' Demurrer is GRANTED WITHOUT LEAVE TO AMEND.
 >
-> Hon. George J. Abdallah, Jr., Judge of the Superior Court"
+> Hon. George J. Abdallah, Jr., Judge of the Superior Court
+>
+> Demurrer to First Amended Complaint is sustained without leave to amend.
+> **The Case Management Conference set at 8:45 AM on October 13, 2026 remains as previously
+> ordered.**
+> **The formal order was signed this date.**"
 
-The stated ground is **failure to exhaust administrative remedies, expressly characterized as
-jurisdictional.** Not insufficiency of the facts. Not the merits of any cause of action.
+The July 10, 2026 tentative, separately produced, is **word-for-word identical** on the operative
+reasoning. So: argument was heard, and the court then **affirmed the exhaustion ruling**. The
+adjudicated ground is **failure to exhaust administrative remedies, expressly characterized as
+jurisdictional**.
 
-### 1.2 What the signed order says — drafted by the defense
+### 1.2 The signed formal order recites a different ground — and the defense wrote it
 
-`matter-05/Order Sustaining Demurrer to FAC WOLA - Jul 15 2026.pdf` is captioned, on its own face,
-**"[PROPOSED] ORDER ON DEFENDANTS KATIE PALACIOS AND HOPE PROGRAM'S DEMURRER"** — i.e. a
-defense-prepared form, on Sims, Lawrence & Broghammer letterhead (Cynthia G. Lawrence, Bryan L.
+`matter-05/Order Sustaining Demurrer to FAC WOLA - Jul 15 2026.pdf` is captioned on its own face
+**"[PROPOSED] ORDER,"** on Sims, Lawrence & Broghammer letterhead (Cynthia G. Lawrence, Bryan L.
 Malone, **Blaze Van Dine**). Its operative line:
 
 > "The demurrer to the First Amended Complaint is sustained without leave to amend **on the grounds
 > that the First Amended Complaint fails to allege facts sufficient to state any cause of action.**"
 
-**That is a different ground than the court gave.** "Fails to allege facts sufficient to state any
-cause of action" is a merits formulation that would support claim preclusion. "Failed to meet a
-jurisdictional exhaustion requirement" is not.
+That is a merits formulation. It is not the ground the court announced, affirmed after argument, and
+recorded in its minutes.
 
-### 1.3 Why the difference is dispositive
+**State this precisely, because there is a real nuance.** Under California practice, where a minute
+order contemplates a formal written order, **the formal order is generally the operative, appealable
+document** — so the argument is *not* "the minute order overrides the signed order." The argument is
+narrower and stronger: for preclusion purposes what governs is **the actual basis of the decision**,
+and the court's contemporaneous record shows that basis was jurisdictional exhaustion. A proposed
+order prepared by the prevailing party cannot enlarge the ruling the court actually made. A federal
+court determining preclusive effect looks at the whole state record — tentative, minute order, and
+formal order together.
 
-A dismissal for failure to exhaust administrative remedies is **not a judgment on the merits** and
-does not support claim preclusion — it is functionally a jurisdictional dismissal. The defense's own
-previewed framing depends entirely on the recharacterized language in the order it drafted.
+### 1.3 There is no judgment. The register of actions proves it.
 
-Note the continuity: **Van Dine appeared for Palacios and HOPE at the July 15 demurrer hearing**,
-prepared the proposed order, and is now the lawyer invoking that order as a merits adjudication
-against a different defendant in a different court.
+The San Joaquin public-portal **Documents** list for CV-2026-0001032, covering every filing from
+Feb. 10 through July 15, 2026, contains: Complaint; Summons Issued and Filed; Civil Case Cover Sheet;
+Fee Waiver — Initial Order (Grant); Notice of Case Assignment; two Proofs of Service of Summons;
+Complaint — Amended; Demurrer with two Requests for Judicial Notice and Declarations; Objections;
+Opposition; Proof — Electronic Service; Stipulation and Order; Reply; Declaration;
+**Ruling — Tentative (07/10/2026)**; Notice — Change of Name/Address (07/13/2026);
+**Order (07/15/2026)**; and Notice of Court Hearing (07/15/2026).
 
-### 1.4 Three independent defects in the preclusion defense
+**There is no "Judgment" entry. No judgment of dismissal. Nothing styled as a judgment at all.**
 
-1. **Ground mismatch (§ 1.1–1.2).** For preclusion, what matters is the **actual basis** of the
-   decision. The reasoned ruling says exhaustion/jurisdiction.
-2. **No final judgment located.** California claim preclusion requires a **final judgment**. An
-   order sustaining a demurrer without leave to amend is **not itself appealable** — a party appeals
-   from the **judgment of dismissal** entered on it. **No judgment of dismissal appears anywhere in
-   the Matter 5 document set** (18 files reviewed). If none was entered, preclusion has not attached
-   at all.
-3. **Smith was not a Matter 5 party.** Matter 5 defendants were **Katie Palacios** (site/clinical
-   director, LMFT 44555) and **HOPE Psychotherapy, Inc.** Matter 28 adds **Shannon Smith, LCSW**,
-   CEO and Founder, in his individual capacity. As to HOPE, identity of parties is satisfied; as to
-   Smith, the defense must establish **privity**, which is contestable for an individual-capacity
-   claim premised on his own personal approval of policy.
+The **Filings** tab is equally telling:
 
-**What is genuinely at risk even so.** Matter 5 pleaded **Bane Act § 52.1** and **fraud /
-intentional misrepresentation** against **HOPE** — the same two claims now re-pleaded against HOPE
-here. If a judgment was entered and the merits characterization sticks, those two counts against
-HOPE are the most exposed. The § 1983 and RICO counts were not pleaded in Matter 5, but California's
-primary-rights doctrine can reach claims that **could have been** brought, and state courts have
-concurrent jurisdiction over both — so "I didn't plead it there" is not by itself an answer.
+> "Brenden Nghesi Newanforbi vs Katie Palacios, Clinical Director, et al. — **Disposed as Case
+> Disposed on 07/15/2026**"
+> "Complaint - Other Tort: Fraud (16) filed on 02/10/2026 — Disposed as Case Disposed
+> **Disposition Undefined** on 07/15/2026"
+> "Case Disposed 07/15/2026" — Reopened: *(blank)*
 
-### 1.5 The single highest-value action item
+California claim preclusion requires a **final judgment on the merits**. An order sustaining a
+demurrer without leave to amend is **not itself appealable**; a party appeals from the **judgment of
+dismissal** entered on it. Here the docket shows an **order** and an administrative case-management
+disposition marked **"Disposition Undefined"** — and **no judgment**. On this record, **claim
+preclusion has not attached at all**, independent of the ground question in §§ 1.1–1.2.
 
-**Obtain (a) the San Joaquin register of actions for STK-CV-UF-2026-0001032 to determine whether a
-judgment of dismissal was ever entered, and (b) the reporter's transcript or minute order for the
-July 15, 2026 hearing.** Plaintiff filed a Notice of Intent to Appear and Argue the tentative, and
-the order recites that argument was heard — so the tiebreaker between the tentative's reasoning and
-the proposed order's language is what the court said on the record. Those two documents decide
-ground #1.
+**And the court kept the case on calendar.** The same minute order provides that "the Case Management
+Conference set at 8:45 AM on **October 13, 2026** remains as previously ordered" — a provision
+affirmatively inconsistent with a final termination on July 15. It may prove to be a clerical
+carryover, but it is in the court's own minute order and it is worth putting in front of Judge
+Cisneros.
 
----
+### 1.4 Smith was never a party; and the register confirms who was
+
+The register's party list for Matter 5:
+
+> "Plaintiff Newanforbi, Brenden Nghesi · Defendant Katie Palacios, Clinical Director · Defendant
+> HOPE Program (Stockton California), an individual · Defendant **HOPE Psycotherapy, Inc., d/b/a HOPE
+> Program, a California corporation**" [misspelling in the register]
+
+So **HOPE Psychotherapy, Inc. was a Matter 5 party** — identity of parties is satisfied as to HOPE.
+**Shannon Smith, LCSW appears nowhere.** For the individual-capacity count premised on Smith's own
+approval of policy, the defense must establish **privity**, which is contestable.
+
+### 1.5 The federal claims have no exhaustion requirement at all
+
+Even if the state exhaustion ruling were given every effect the defense wants, it cannot reach the
+§ 1983 counts. ***Patsy v. Board of Regents***, 457 U.S. 496 (1982): **exhaustion of state
+administrative remedies is not a prerequisite to a § 1983 action.** The Court reversed the Fifth
+Circuit's contrary holding. The only carve-out is **42 U.S.C. § 1997e** (PLRA), a narrow exhaustion
+requirement for **adult prisoners** — and Plaintiff is a **parolee at liberty**, not incarcerated or
+detained in a facility. **Verify the PLRA "prisoner" point before briefing it**; the *Patsy* rule
+itself is foundational.
+
+So the state court's exhaustion ruling, whatever its preclusive reach over the state tort theories,
+is not a basis to dismiss the federal claims.
+
+### 1.6 What remains genuinely at risk
+
+Do not read §§ 1.1–1.5 as "res judicata is a non-issue." Two real exposures survive:
+
+1. **Issue preclusion on exhaustion itself.** The state court decided Plaintiff had not exhausted as
+   of the FAC's filing. That determination may well be preclusive **as to that issue** — it just is
+   not a merits adjudication of any cause of action.
+2. **The Bane Act and fraud counts against HOPE.** Matter 5 pleaded **Bane Act § 52.1** and
+   **fraud/intentional misrepresentation** against **HOPE**, the same defendant, and was classified
+   on the cover sheet as "Other Tort: **Fraud** (16)." If a judgment is later entered and the merits
+   characterization is credited, those two counts are the most exposed. Note the defense can cure the
+   finality defect simply by going back and getting a judgment entered — **that is the single thing
+   most likely to change this analysis, and it is within their control.**
+
+### 1.7 Archive these documents
+
+The five documents obtained Sept. 12, 2026 are not yet in the portfolio. Add them to
+`internal/public/documents/matter-05/` via `npm run documents:push`, suggested names:
+
+- `Minute Order - Demurrer Sustained WOLA (San Joaquin Sup. Ct., Jul 15 2026).pdf`
+- `Tentative Ruling on Demurrer (San Joaquin Sup. Ct., Jul 10 2026).pdf`
+- `Register of Actions - Documents Tab (CV-2026-0001032, retrieved Sep 12 2026).pdf`
+- `Register of Actions - Filings and Disposition Tab (CV-2026-0001032, retrieved Sep 12 2026).pdf`
+
+They are the evidentiary basis for §§ 1.1–1.4 and should travel with the matter.
 
 ## 2. The pleaded theory, from the complaint
 
@@ -176,7 +243,7 @@ He asked Plaintiff to dismiss or give dates by Sept. 10; Martinez memorialized t
 
 | # | Ground | Assessment |
 |---|---|---|
-| 1 | **Res judicata** | **Weakest ground, and it is their lead.** See § 1 — the reasoned ruling was jurisdictional exhaustion, no judgment of dismissal has been located, and Smith was not a party. |
+| 1 | **Res judicata** | **Weakest ground, and it is their lead.** See § 1: the court affirmed a jurisdictional-exhaustion tentative after argument (minute order), **no judgment appears in the register**, Smith was never a party, and *Patsy* forecloses any exhaustion requirement for § 1983. What survives is issue preclusion on exhaustion and exposure on the Bane Act and fraud counts against HOPE (§ 1.6). |
 | 2 | **No state action** | **Should fail on the pleadings.** *West v. Atkins*, 487 U.S. 42 (1988): a private physician under contract to provide care to inmates acts under color of state law. Ninth Circuit extends this to private psychiatric and custodial contractors (*Jensen v. Lane County*, 222 F.3d 570; *Halvorsen v. Baird*, 146 F.3d 680 — both VERIFIED SAFE in the portfolio's own audit). HOPE is a CASOMB-certified CDCR vendor exercising **delegated authority to report treatment status that gates parole discharge** — a traditional state function, performed under contract, with state-conferred power over liberty. |
 | 3 | **First Amendment retaliation** — cites *Ariz. Students' Ass'n v. Ariz. Bd. of Regents*, 824 F.3d 858, 867 (9th Cir. 2016) | **Contestable but survivable.** The pleaded facts are a labeling of Plaintiff as "ringleader" and "abhorrent" **to his parole agents** — the people with power over his liberty — after he complained. Chilling effect on a parolee is measured against a person of ordinary firmness *in that position*. **Cite not individually verified this pass.** |
 | 4 | **Due process** — cites *Kildare v. Saenz*, 325 F.3d 1078, 1085 (9th Cir. 2003) | **The citation is a poor fit, and I would say so.** *Kildare* is a **Social Security SSDI/SSI** case about **mandamus jurisdiction and exhaustion**: the Ninth Circuit held appellants failed the third mandamus requirement because administrative review was an adequate alternative remedy, and six of seven had obtained benefits administratively. It is not a custodial-liberty-interest case. The on-point line is *Neal v. Shimoda*, 131 F.3d 818 (9th Cir. 1997) (sex-offender classification implicates a liberty interest), plus *Vitek*, *Morrissey*, *Sandin* — all VERIFIED SAFE in the portfolio's audit. |
@@ -283,8 +350,17 @@ one dry footnote in opposition — it signals recycled briefing.
 - **Individually unverified authorities:** *Ariz. Students' Ass'n* 824 F.3d 858; *DZ Reserve*
   96 F.4th 1223; *Zetz* 398 F. Supp. 3d 700; *Cedric Kushner* 533 U.S. 158; *West v. Atkins*
   487 U.S. 42 (well known, but not checked this pass); § 3008**(d)(2)** exact text.
-- **Matter 5 register of actions / judgment of dismissal** — not in the document set (§ 1.5).
-- **Matter 5 July 15, 2026 hearing transcript or minute order** — not in the document set (§ 1.5).
+- **Whether a parolee is a "prisoner" under 42 U.S.C. § 1997e** (§ 1.5). The *Patsy* rule is
+  verified; the PLRA carve-out's inapplicability to a parolee at liberty is my reading of the
+  statutory definition, not a verified holding. Check it before briefing.
+- **Whether a judgment has been entered in Matter 5 since Sept. 12, 2026.** The register is a
+  snapshot. Re-pull it before filing — the defense can cure the finality defect by obtaining a
+  judgment, and that is the one move most likely to change § 1.3.
+- ~~Matter 5 register of actions / judgment of dismissal~~ — **OBTAINED Sept. 12, 2026** (§ 1.3).
+  The register shows an Order and a "Disposition Undefined" case disposition, and **no judgment**.
+- ~~Matter 5 July 15, 2026 minute order~~ — **OBTAINED Sept. 12, 2026** (§ 1.1). The court affirmed
+  the exhaustion tentative after hearing argument. **The reporter's transcript is still not in hand**
+  and remains the only further corroboration available if the defense disputes the minute order.
 - **Whether an MTD is on file in Matter 28 yet** — as of the Sept. 4, 2026 PACER deadlines report in
   the archive, no. Confirm on PACER before the Sept. 21 date.
 - ***In re Dwyer*** — see § 2.2.
@@ -293,24 +369,32 @@ one dry footnote in opposition — it signals recycled briefing.
 
 ## 7. Ranked follow-ups
 
-1. **Pull the San Joaquin register of actions for STK-CV-UF-2026-0001032** and determine whether a
-   **judgment of dismissal** was entered after the July 15 order. If not, res judicata has not
-   attached and ground #1 collapses on finality alone.
-2. **Order the July 15, 2026 reporter's transcript / minute order.** It resolves tentative-vs-order
-   (§ 1.3) — the difference between a jurisdictional dismissal and a merits adjudication.
+1. **Re-pull the San Joaquin register of actions immediately before filing.** As of Sept. 12, 2026
+   there is no judgment (§ 1.3). The defense can cure that by getting one entered, and the finality
+   argument is only as good as the docket on the day you file.
+2. **Order the July 15, 2026 reporter's transcript.** The minute order already records that the
+   court affirmed the exhaustion tentative after argument; the transcript is the belt-and-suspenders
+   version if the defense disputes it.
 3. **Get the *In re Dwyer* order and transcript from the San Mateo clerk** (§ 2.2). Verify the
-   caption, the docket number, the "vitiates" quote, and who actually testified.
+   caption, docket number, the "vitiates" quote, and who actually testified. Highest-risk item in
+   the complaint.
 4. **Pin Penal Code § 3008(d)(2)'s text** and confirm it says what ¶ 2 and ACSOL describe.
-5. **Re-run the Matter 28 sweep** once Actions billing clears (§ 6).
-6. **Rule 9(b)-proof the fraud count**: name the speaker, the document, the date, and the
-   representation for each alleged misrepresentation — the count's real exposure is particularity,
-   not theory.
-7. **Decide the wage-loss allocation between Matter 26 and Matter 28** before the defense does
+5. **Confirm the PLRA "prisoner" point** for the *Patsy* argument (§ 1.5).
+6. **Re-run the Matter 28 CourtListener sweep** once Actions billing clears (§ 6).
+7. **Rule 9(b)-proof the fraud count**: name the speaker, document, date, and representation for
+   each alleged misrepresentation. Particularity, not theory, is that count's exposure — and it is
+   also the count most exposed on preclusion (§ 1.6).
+8. **Decide the wage-loss allocation between Matter 26 and Matter 28** before the defense does
    (§ 4).
-
----
+9. **Archive the five Sept. 12 documents** to `matter-05/` (§ 1.7).
 
 ## Sources
+
+**Primary, obtained Sept. 12, 2026 and read in full (not yet archived — see § 1.7):** San Joaquin
+Superior Court **Minute Order, Demurrer Sustained WOLA (July 15, 2026)**; **Tentative Ruling on
+Demurrer (July 10, 2026)**; and the San Joaquin public-portal **register of actions** for
+CV-2026-0001032 (Documents tab ×2 and Filings/Disposition tab), retrieved from
+`prod-portal-ecourt-sanjoaquincounty-ca.journaltech.com`.
 
 **Primary, read in this repository (`documents` branch):** Matter 28 — as-filed complaint, Dkt. 11
 order directing service, Doc 9 notice (image-only, no text layer), the Sept. 3–10 2026
