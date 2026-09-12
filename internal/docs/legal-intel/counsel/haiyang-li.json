@@ -1,0 +1,215 @@
+{
+  "version": 2,
+  "name": "Haiyang Li",
+  "attorney_id": null,
+  "firm": "California Attorney General",
+  "linked_matters": [
+    24
+  ],
+  "generated_at": "2026-09-12T16:10:31.118Z",
+  "source": "courtlistener",
+  "identity": {
+    "level": "name-based",
+    "label": "Name-based match (no CourtListener attorney ID). Client and subject signals are directional; pin --attorney-id to verify."
+  },
+  "history": {
+    "dockets_found": 11,
+    "courts": {
+      "District Court, C.D. California": 10,
+      "District Court, S.D. California": 1
+    },
+    "date_range": {
+      "earliest": "2001-10-18",
+      "latest": "2025-05-14"
+    },
+    "sample": [
+      {
+        "case_name": "Angela Rivera v. Robert Doe",
+        "docket_number": "2:25-cv-04335",
+        "court": "District Court, C.D. California",
+        "date_filed": "2025-05-14"
+      },
+      {
+        "case_name": "Ryan P. Walters v. State of California",
+        "docket_number": "8:24-cv-00196",
+        "court": "District Court, C.D. California",
+        "date_filed": "2024-01-29"
+      },
+      {
+        "case_name": "Christopher Urquijo v. State of California",
+        "docket_number": "5:22-cv-02133",
+        "court": "District Court, C.D. California",
+        "date_filed": "2022-11-30"
+      },
+      {
+        "case_name": "Cole Wilkins v. State of California",
+        "docket_number": "8:20-cv-02417",
+        "court": "District Court, C.D. California",
+        "date_filed": "2020-12-23"
+      },
+      {
+        "case_name": "Nancy Carolyn Wood v. City of Santa Ana",
+        "docket_number": "8:18-cv-00643",
+        "court": "District Court, C.D. California",
+        "date_filed": "2018-04-19"
+      },
+      {
+        "case_name": "Kathy Craig v. County of Orange",
+        "docket_number": "8:17-cv-00491",
+        "court": "District Court, C.D. California",
+        "date_filed": "2017-03-17"
+      },
+      {
+        "case_name": "The Whitewater Draw Natural Resource Conservation District v. Johnson",
+        "docket_number": "3:16-cv-02583",
+        "court": "District Court, S.D. California",
+        "date_filed": "2016-10-17"
+      },
+      {
+        "case_name": "Michael Lawrence Lhevan v. Todd Spitzer",
+        "docket_number": "8:16-cv-01367",
+        "court": "District Court, C.D. California",
+        "date_filed": "2016-07-22"
+      },
+      {
+        "case_name": "Aquelina Farias v. National Railroad Passenger Corporation",
+        "docket_number": "8:15-cv-00633",
+        "court": "District Court, C.D. California",
+        "date_filed": "2015-04-21"
+      },
+      {
+        "case_name": "Valerie Allen v. City of Los Angeles",
+        "docket_number": "2:10-cv-04695",
+        "court": "District Court, C.D. California",
+        "date_filed": "2010-06-24"
+      },
+      {
+        "case_name": "Fred Pierce v. County of Orange et",
+        "docket_number": "8:01-cv-00981",
+        "court": "District Court, C.D. California",
+        "date_filed": "2001-10-18"
+      }
+    ],
+    "sample_truncated": false
+  },
+  "clients": {
+    "cases_parsed": 11,
+    "defendants": [
+      {
+        "name": "State of California",
+        "count": 3
+      },
+      {
+        "name": "County of Orange et",
+        "count": 2
+      },
+      {
+        "name": "City of Los Angeles",
+        "count": 1
+      },
+      {
+        "name": "City of Santa Ana",
+        "count": 1
+      },
+      {
+        "name": "Johnson",
+        "count": 1
+      },
+      {
+        "name": "National Railroad Passenger Corporation",
+        "count": 1
+      },
+      {
+        "name": "Robert Doe",
+        "count": 1
+      },
+      {
+        "name": "Todd Spitzer",
+        "count": 1
+      }
+    ],
+    "plaintiffs": [
+      {
+        "name": "Angela Rivera",
+        "count": 1
+      },
+      {
+        "name": "Aquelina Farias",
+        "count": 1
+      },
+      {
+        "name": "Christopher Urquijo",
+        "count": 1
+      },
+      {
+        "name": "Cole Wilkins",
+        "count": 1
+      },
+      {
+        "name": "Fred Pierce",
+        "count": 1
+      },
+      {
+        "name": "Kathy Craig",
+        "count": 1
+      },
+      {
+        "name": "Michael Lawrence Lhevan",
+        "count": 1
+      },
+      {
+        "name": "Nancy Carolyn Wood",
+        "count": 1
+      },
+      {
+        "name": "Ryan P. Walters",
+        "count": 1
+      },
+      {
+        "name": "The Whitewater Draw Natural Resource Conservation District",
+        "count": 1
+      },
+      {
+        "name": "Valerie Allen",
+        "count": 1
+      }
+    ],
+    "top_defendant": {
+      "name": "State of California",
+      "count": 3
+    }
+  },
+  "subjects": {
+    "tags": {},
+    "primary": null,
+    "screening_ecosystem": {
+      "detected": false,
+      "matched_cra_clients": []
+    },
+    "note": "Keyword heuristic over sampled case names; directional, not a legal determination."
+  },
+  "vs_you": {
+    "matters": [
+      24
+    ],
+    "entries_analyzed": 0,
+    "patterns": {
+      "motion_to_dismiss": 0,
+      "summary_judgment": 0,
+      "discovery_motion": 0,
+      "motion_to_strike": 0,
+      "sanctions": 0,
+      "settlement": 0,
+      "voluntary_dismissal": 0,
+      "default": 0,
+      "appeal": 0
+    }
+  },
+  "caveats": [
+    "Name-based RECAP search can conflate attorneys with common names; pin --attorney-id when ambiguous.",
+    "History is a docket sample (up to ~60 most recent), not an exhaustive record.",
+    "Client and subject signals are keyword heuristics over sampled case names; directional, not adjudicated.",
+    "Outcome signals (settlement/dismissal mentions) are directional, not adjudicated results.",
+    "Motion patterns cover only matters with locally synced docket entries."
+  ]
+}

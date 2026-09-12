@@ -345,5 +345,12 @@
       "served": true,
       "dateServed": "August 5, 2026 at 10:20 a.m. (USMS; Doc. 15 filed Aug. 6, 2026)"
     }
+  ],
+  "opposing_counsel": [
+    {
+      "name": "Haiyang Li",
+      "dossier": "counsel/haiyang-li.json",
+      "firm": "California Attorney General"
+    }
   ]
 }
