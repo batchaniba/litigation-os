@@ -1,6 +1,21 @@
 [
   {
     "date": "Sep. 11, 2026",
+    "event": "FILED \u2014 Dkt. 28 Clerk's Notice of Impending Reassignment to a U.S. District Judge in Newanforbi v. Serrato (4:26-cv-05953-ASK). At least one party did not consent to magistrate-judge jurisdiction, so the case leaves Mag. Judge Ajay S. Krishnan for a district judge; the reassignment order to follow. All Krishnan hearing dates vacated, including the Sep. 30 MTD hearing (re-notice to follow); the case-number suffix will change from -ASK.",
+    "matters": [
+      24
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "court",
+    "source": "User-supplied PDF: Newanforbi-Serrato_-_CLERK_S_NOTICE_of_Impending_Reassignment_to_U.S._District_Judge.pdf (Clerk's Notice, Dkt. 28, filed Sep. 11, 2026; declaration of service by Andy Marquez, CA AG office)",
+    "source_type": "portfolio",
+    "confidence": "high",
+    "verified_at": "2026-09-11"
+  },
+  {
+    "date": "Sep. 11, 2026",
     "event": "RECEIVED \u2014 Eric T. Martinez (Sims, Lawrence & Broghammer) memorialized the September 10 Rule 12(b)(6) meet-and-confer in Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC). Defendants' position: res judicata from the state-court order; allegations insufficient. Parties did not agree whether the prior order was on the merits; informal resolution not attainable; meet-and-confer exhausted; formal motion practice unavoidable. On the name request: no intention of opposing a motion; will not sign the then-current stipulation; wants more background on the two name forms and why the correction is needed; wants the date-by-date \"nothing moves\" list removed, especially expired dates. Quiet counterpart and covering email are drafted (internal/docs/name-conform/). Do not debate the Rule 12 memorialization in the name email. Answer still September 21. Service emails must include slb-eservice@sims-law.net. Do not treat as a signed stipulation.",
     "matters": [
       28
@@ -7811,9 +7826,9 @@
   },
   {
     "date": "Sep. 30, 2026",
-    "event": "Hearing on Defendant Serrato's Motion to Dismiss FAC (Dkt. 18) \u2014 1:30 p.m., Mag. Ajay S. Krishnan, Oakland Courtroom 4, 3rd Floor \u2014 Newanforbi v. Serrato (4:26-cv-05953-ASK). Reset from Sep. 16 by Clerk's Notice Dkt. 21 (filed Aug. 28) because the motion was noticed on less than 35 days (Civil L.R. 7-2(a)).",
+    "event": "VACATED \u2014 Hearing on Defendant Serrato's Motion to Dismiss FAC (Dkt. 18) \u2014 1:30 p.m., Mag. Ajay S. Krishnan, Oakland Courtroom 4, 3rd Floor \u2014 Newanforbi v. Serrato (4:26-cv-05953-ASK). Reset from Sep. 16 by Clerk's Notice Dkt. 21 (filed Aug. 28) because the motion was noticed on less than 35 days (Civil L.R. 7-2(a)). Dkt. 28 (Clerk's Notice of Impending Reassignment, filed Sep. 11, 2026) vacated all hearings before Mag. Krishnan; the hearing must be re-noticed before the newly assigned district judge.",
     "source": "/documents/matter-24/Clerk's Notice Resetting Hearing on Motion to Dismiss (Dkt 21, Filed Aug 28 2026).pdf",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "you",
     "type": "hearing",
     "matters": [
