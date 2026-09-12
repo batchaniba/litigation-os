@@ -1,4 +1,4 @@
-# One-off § 290.46 full-text sweep over CourtListener opinions + RECAP.
+# CourtListener research sweeps: § 290.46 full-text, and Matter 28 citation verification.
 #
 # Runs here rather than in the agent session because COURTLISTENER_TOKEN is a
 # repository secret and the agent container's egress policy blocks
@@ -6,7 +6,7 @@
 #
 # Triggers only on changes to the sweep script or this file, so the commit it
 # makes (which touches only the JSON output) cannot retrigger it.
-name: PC 290.46 sweep
+name: CourtListener research sweeps
 
 on:
   workflow_dispatch:
@@ -15,6 +15,7 @@ on:
       - claude/ca-penal-290-46-research-fn3w2x
     paths:
       - internal/scripts/courtlistener/sweep-290-46.mjs
+      - internal/scripts/courtlistener/sweep-matter28.mjs
       - .github/workflows/pc-290-46-sweep.yml
 
 permissions:
@@ -49,8 +50,11 @@ jobs:
           fi
           echo "COURTLISTENER_TOKEN is present (${#COURTLISTENER_TOKEN} chars)."
 
-      - name: Run sweep
+      - name: Run 290.46 sweep
         run: node internal/scripts/courtlistener/sweep-290-46.mjs
+
+      - name: Run Matter 28 verification sweep
+        run: node internal/scripts/courtlistener/sweep-matter28.mjs
 
       - name: Commit results
         run: |
@@ -59,7 +63,8 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           # Stage first: git diff ignores untracked files, so diffing before adding
           # reports "no change" on the very first run and silently drops the result.
-          git add internal/docs/legal-intel/recon/290-46-recap-sweep.json
+          git add internal/docs/legal-intel/recon/290-46-recap-sweep.json \
+                  internal/docs/legal-intel/recon/matter-28-verification-sweep.json
           if git diff --cached --quiet; then
             echo "No change in sweep output."
             exit 0
