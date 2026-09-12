@@ -6,7 +6,7 @@ Filed PDFs live on the `documents` branch. `main` keeps the catalogs
 `/documents/...` URLs do not change.
 
 Git LFS does not fix this. GitHub's free LFS quota is 1 GB of bandwidth a
-month; one Vercel build plus a couple of CI runs would exhaust it.
+month; a handful of Vercel builds would exhaust it.
 
 ## What stays on main
 
@@ -36,8 +36,7 @@ git commit -m "Add Matter NN filing"
 
 The pre-commit hook runs `npm run sync:all` (hashes *only the new/resized
 file*), and if `manifest.json` changed it runs `npm run documents:push`.
-Data CI never sees the bytes. GitHub Pages checks out `documents` before
-`vite build`. Vercel rewrites `/documents/:path*` to
+Nothing on `main` ever sees the bytes. Vercel rewrites `/documents/:path*` to
 https://newanforbi.github.io/interactive-litigation-portfolio/documents/:path*
 so the live site keeps the same paths without copying 660 MB on every
 Vercel build.
@@ -56,29 +55,28 @@ is the one case the incremental write will not notice. `npm run sync:manifest --
 Do **not** put new PDFs anywhere else, and do not `git add -f` them onto
 `main`.
 
-## Two CI paths
+## Where the checks run now
 
-Those workflows run on `push` / `pull_request` (plus manual dispatch).
-The jobs below stay as written.
+There is no GitHub Actions CI. The checks the old data job ran live in the
+git hooks:
 
-**Data job** (`.github/workflows/ci.yml` → `build-and-validate`):
+- **pre-commit** syncs registry + manifest when PDFs or the catalog are
+  staged, hashes only new/resized files, checks `%PDF` magic, and pushes
+  `origin/documents` when the inventory changes.
+- **pre-push** runs `validate-portfolio`, which treats a document path as
+  real when it is in the committed manifest and registry
+  (`PORTFOLIO_SKIP_DISK_DOCS=1` is set automatically when the tree is not on
+  disk). Vercel builds set the same flag plus `VITE_COPY_DOCUMENTS=0`.
 
-- Sparse-checkout excludes `internal/public/documents/` (and `main` no
-  longer tracks those files).
-- `PORTFOLIO_SKIP_DISK_DOCS=1` — `validate-portfolio` treats a path as real
-  when it is in the committed manifest (and the registry).
-- `VITE_COPY_DOCUMENTS=0` — Vite copies `internal/public/` *except*
-  `documents/`.
-- Still runs lint, typecheck, the JS bundle, citations gate, and tests.
+## Publishing the library
 
-**Documents job** (`.github/workflows/documents.yml`):
-
-- Checks out this ref for scripts, then `ref: documents` for the PDF tree.
-- Hashes every file, checks `%PDF` magic, rejects byte-identical duplicates
-  inside one matter folder, warns on orphans.
-
-**GitHub Pages** checks out `documents` into `internal/public/documents`
-before `npm run build`, so `dist/documents/` is still the full library.
+GitHub Pages was the public origin for `/documents/*` and was deployed by an
+Actions workflow that no longer exists. The Pages site still serves whatever
+was last deployed, and the Vercel rewrite still points at it, so every
+existing link works. **New PDFs are not published** until a replacement
+origin is in place. The intended replacement is a Cloudflare R2 bucket
+(free egress, no Actions) fed by `documents:push` and fronted by the same
+Vercel rewrite; see the note in `internal/docs/VERCEL_DEPLOYS.md`.
 
 ## After clone
 
@@ -88,7 +86,7 @@ npm run documents:pull
 npm run dev
 ```
 
-`prepare` / `npm ci` do **not** pull. Data CI must stay off the 660 MB tree.
+`prepare` / `npm ci` do **not** pull. Vercel builds must stay off the 660 MB tree.
 
 ## History
 

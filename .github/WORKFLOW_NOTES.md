@@ -32,8 +32,8 @@ These scripts are **load-bearing** and ensure data consistency:
 - **Output**: `upcoming.json` — filtered subset of timeline events
 - **Failure mode**: If stale, upcoming deadlines won't appear on the dashboard
 
-#### 3. `npm run validate` (CI gate)
-- **When**: Runs in CI before build, and before GitHub Pages deployment
+#### 3. `npm run validate` (the gate)
+- **When**: By hand before a PR. The `pre-push` hook runs the same checks (minus coverage thresholds) on every push to a code branch; there is no CI.
 - **What it does**: Comprehensive portfolio integrity checks:
   - Validates matter JSON schema (required fields, types, lifecycle/phase consistency)
   - Checks timeline references (all matter numbers exist)
@@ -42,7 +42,7 @@ These scripts are **load-bearing** and ensure data consistency:
   - Reports orphan documents and missing `filed` status
   - Re-checks that summaries.json, upcoming.json, and README are current
 - **Why**: Prevents silent data corruption. A missing document or broken reference should fail the build.
-- **Failure mode**: Build stops; forces developer to fix the issue
+- **Failure mode**: The push is refused; fix the issue (or `SKIP_PORTFOLIO_GATE=1` for a genuine emergency)
 
 #### 4. `npm run generate:readme` (README sync)
 - **When**: Manually run by developer (not automatic)
@@ -75,19 +75,22 @@ These are optional and not part of the build pipeline:
 
 ## Workflow Files
 
-### `.github/workflows/ci.yml`
-
-Runs on every push to any branch:
+There is **no CI** and no deploy workflow. GitHub Actions was dropped in
+September 2026 (billing) and the gate moved to `.githooks/pre-push`:
 
 ```
-1. Checkout
-2. Setup Node 22
-3. npm ci (install dependencies)
-4. npm run typecheck (TypeScript check)
-5. npm run validate (CRITICAL: data integrity gate)
-6. npm run test (Vitest suite)
-7. npm run build (vite build)
+1. npm run lint
+2. npm run typecheck
+3. node internal/scripts/validate-portfolio.mjs   (CRITICAL: data integrity gate)
+4. node internal/scripts/test-golden.mjs
+5. npx vitest run                                  (includes the prose-ceiling tests)
+6. python3 internal/scripts/verify-citations.py --check
 ```
+
+`PORTFOLIO_SKIP_DISK_DOCS=1` is set automatically when the PDF tree is not on
+disk. Production deploys are scheduled from a Cloudflare Worker, not from
+pushes; see `internal/docs/VERCEL_DEPLOYS.md`. The only workflows that remain
+are the CourtListener ones, listed below. Do not add others.
 
 ### Dependabot (`.github/dependabot.yml`)
 
@@ -100,37 +103,6 @@ Configured for parallel human + bot work:
 - **`open-pull-requests-limit: 8`** (npm) / **3** (Actions, pip).
 
 If a Dependabot PR still looks stuck after a large `main` merge, comment `@dependabot recreate` on that PR (you need push access). `@dependabot rebase` is enough when the only issue is a content conflict.
-
-**Why this order?**
-- Typecheck first (fast, catches syntax errors early)
-- Validate before build (prevents corrupted data from being bundled)
-- Tests after validate (tests assume valid data)
-- Build last (most expensive step, only after all checks pass)
-
-### `.github/workflows/deploy-gh-pages.yml`
-
-Runs on push to `main` and manual dispatch:
-
-```
-1-6: Same as CI (checkout, setup, install, typecheck, validate, test)
-7. npm run build with GITHUB_PAGES=true (sets base path to /interactive-litigation-portfolio/)
-8. Upload dist/ to GitHub Pages artifact
-9. Deploy to GitHub Pages
-```
-
-**Key difference**: Sets environment variable `GITHUB_PAGES=true` so vite.config.js can set the correct base path:
-
-```javascript
-export default defineConfig({
-  base: process.env.GITHUB_PAGES === 'true' 
-    ? '/interactive-litigation-portfolio/' 
-    : '/',
-})
-```
-
-This allows the same codebase to deploy to both:
-- **Vercel** (https://interactive-litigation-portfolio.vercel.app) — base: `/`
-- **GitHub Pages** (https://newanforbi.github.io/interactive-litigation-portfolio/) — base: `/interactive-litigation-portfolio/`
 
 ### `.github/workflows/courtlistener-sync.yml`
 
@@ -168,7 +140,7 @@ Tests validate:
 
 ## Troubleshooting
 
-### "npm run validate failed" in CI
+### "npm run validate failed" / pre-push refused
 
 **Common causes:**
 1. Matter JSON file missing a required field → Fix the JSON file
@@ -186,12 +158,12 @@ npm run generate:readme
 npm run validate
 ```
 
-### Deployment fails but CI passes
+### Production is stale
 
-If CI passes but GitHub Pages deployment fails:
-1. Check that `GITHUB_PAGES=true` is set (see deploy-gh-pages.yml)
-2. Check that router basename is using `BASE_URL` correctly (see vite.config.js, main.tsx)
-3. Check GitHub Pages settings (should be set to "Deploy from a branch")
+Vercel does not deploy on push. Check the deploy worker's cron ran
+(`internal/workers/vercel-deploy-cron/`), or force a deploy:
+`curl -X POST -H "authorization: Bearer $DEPLOY_TRIGGER_TOKEN" "https://<worker>/deploy?force=1"`.
+`/version.json` on the live site shows which commit is deployed.
 
 ### Matter appears in dashboard but not in README
 
@@ -200,30 +172,25 @@ Run `npm run generate:readme` to regenerate README tables from current matter da
 ## Data Flow Diagram
 
 ```
-Developer commits → GitHub
+Developer commits (pre-commit hook syncs registry/manifest/README/vercel.json)
        ↓
-  CI Workflow runs
+Developer pushes (pre-push hook)
        ↓
-  Typecheck passes?
+  Lint + typecheck pass?
        ↓ YES
-  Validate passes?
+  validate-portfolio passes?
        ├─ Check matter JSON schema
        ├─ Check timeline references
-       ├─ Check document paths
-       ├─ Cross-check damages/fees
-       └─ Ensure summaries/upcoming/README current
+       ├─ Check document paths (manifest when PDFs not on disk)
+       └─ Cross-check damages/fees/coverage
        ↓ YES
-  Tests pass?
+  Golden math + unit suite + citation gate pass?
        ↓ YES
-  Build passes?
-       ↓ YES
-  ✅ CI passes
+  Push accepted → PR → main
        ↓
-       ├─→ Regular branch: CI-only
-       │
-       └─→ main branch:
-           Deploy to GitHub Pages
-           (with GITHUB_PAGES=true for correct base path)
+Cloudflare cron (4x/day) sees main ahead of production → POSTs Vercel Deploy Hook
+       ↓
+Vercel Ignored Build Step: build inputs changed? → vite build → production
 ```
 
 ## Key Takeaways
@@ -231,6 +198,5 @@ Developer commits → GitHub
 1. **The validate script is critical** — It's the only place that checks cross-module consistency before code lands.
 2. **Data sync runs in prebuild** — Ensures summaries and upcoming lists are always fresh on every build.
 3. **README tables are generated, not edited** — Use `npm run generate:readme` to keep docs in sync with source of truth (matter JSON + timeline).
-4. **GitHub Pages needs GITHUB_PAGES=true** — Without it, all routes fail because the base path is wrong.
+4. **Nothing deploys on push** — production advances from the scheduled Deploy Hook; `/version.json` tells you what is live.
 5. **Tests catch regressions** — Router basename bugs are easy to introduce; tests prevent them.
-Copilot cloud agent access test - safe to delete this line.

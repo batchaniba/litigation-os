@@ -1,0 +1,666 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "git": {
+    "deploymentEnabled": false
+  },
+  "redirects": [
+    {
+      "source": "/fedex-consent",
+      "destination": "/fedex-consent.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/fedex-consent/",
+      "destination": "/fedex-consent.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/ups-opp",
+      "destination": "/ups-opp.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/ups-opp/",
+      "destination": "/ups-opp.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/ups-consent",
+      "destination": "/ups-consent.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/ups-consent/",
+      "destination": "/ups-consent.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/amazon-consent",
+      "destination": "/amazon-consent.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/amazon-consent/",
+      "destination": "/amazon-consent.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/accurate-stip",
+      "destination": "/accurate-stip.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/accurate-stip/",
+      "destination": "/accurate-stip.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/accurate-sig-notice",
+      "destination": "/accurate-sig-notice.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/accurate-sig-notice/",
+      "destination": "/accurate-sig-notice.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/meza-li-service",
+      "destination": "/meza-li-service.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/meza-li-service/",
+      "destination": "/meza-li-service.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/habeas-discharge",
+      "destination": "/habeas-discharge.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/habeas-discharge/",
+      "destination": "/habeas-discharge.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/hc-004",
+      "destination": "/hc-004.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/hc-004/",
+      "destination": "/hc-004.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/serrato-complaint",
+      "destination": "/serrato-complaint.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/serrato-complaint/",
+      "destination": "/serrato-complaint.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/serrato-mtd",
+      "destination": "/serrato-mtd.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/serrato-mtd/",
+      "destination": "/serrato-mtd.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/serrato-opp",
+      "destination": "/serrato-opp.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/serrato-opp/",
+      "destination": "/serrato-opp.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/ups-complaint",
+      "destination": "/ups-complaint.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/ups-complaint/",
+      "destination": "/ups-complaint.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/ups-mtd",
+      "destination": "/ups-mtd.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/ups-mtd/",
+      "destination": "/ups-mtd.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/fedex-complaint",
+      "destination": "/fedex-complaint.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/fedex-complaint/",
+      "destination": "/fedex-complaint.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/fedex-answer",
+      "destination": "/fedex-answer.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/fedex-answer/",
+      "destination": "/fedex-answer.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/cand-strike",
+      "destination": "/cand-strike.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/cand-strike/",
+      "destination": "/cand-strike.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/cand-strike-packet",
+      "destination": "/cand-strike-packet.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/cand-strike-packet/",
+      "destination": "/cand-strike-packet.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/ups-ext-opp",
+      "destination": "/ups-ext-opp.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/ups-ext-opp/",
+      "destination": "/ups-ext-opp.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/ross-title-packet",
+      "destination": "/ross-title-packet.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/ross-title-packet/",
+      "destination": "/ross-title-packet.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/ross-title",
+      "destination": "/ross-title.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/ross-title/",
+      "destination": "/ross-title.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/ross-title-decl",
+      "destination": "/ross-title-decl.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/ross-title-decl/",
+      "destination": "/ross-title-decl.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/ross-title-order",
+      "destination": "/ross-title-order.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/ross-title-order/",
+      "destination": "/ross-title-order.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/ross-title-ex-a-cover",
+      "destination": "/ross-title-ex-a-cover.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/ross-title-ex-a-cover/",
+      "destination": "/ross-title-ex-a-cover.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/ross-title-ex-a",
+      "destination": "/ross-title-ex-a.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/ross-title-ex-a/",
+      "destination": "/ross-title-ex-a.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/ross-title-ex-b-cover",
+      "destination": "/ross-title-ex-b-cover.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/ross-title-ex-b-cover/",
+      "destination": "/ross-title-ex-b-cover.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/ross-title-ex-b",
+      "destination": "/ross-title-ex-b.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/ross-title-ex-b/",
+      "destination": "/ross-title-ex-b.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/ross-title-ex-c-cover",
+      "destination": "/ross-title-ex-c-cover.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/ross-title-ex-c-cover/",
+      "destination": "/ross-title-ex-c-cover.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/ross-title-ex-c",
+      "destination": "/ross-title-ex-c.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/ross-title-ex-c/",
+      "destination": "/ross-title-ex-c.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/name-24",
+      "destination": "/name-24.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/name-24/",
+      "destination": "/name-24.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/name-28",
+      "destination": "/name-28.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/name-28/",
+      "destination": "/name-28.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/name-29",
+      "destination": "/name-29.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/name-29/",
+      "destination": "/name-29.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/name-32",
+      "destination": "/name-32.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/name-32/",
+      "destination": "/name-32.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/name-33",
+      "destination": "/name-33.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/name-33/",
+      "destination": "/name-33.pdf",
+      "permanent": false
+    }
+  ],
+  "headers": [
+    {
+      "source": "/fedex-consent.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Consent to Magistrate Judge Jurisdiction - Federal Express (E.D. Cal. 2-26-cv-02881) (Aug 28 2026).pdf\"; filename*=UTF-8''Consent%20to%20Magistrate%20Judge%20Jurisdiction%20-%20Federal%20Express%20%28E.D.%20Cal.%202-26-cv-02881%29%20%28Aug%2028%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/ups-opp.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Dkt 10 - Plaintiff's Opposition to UPS Rule 12(b)(6) Motion to Dismiss (Filed Aug 28 2026).pdf\"; filename*=UTF-8''Dkt%2010%20-%20Plaintiff's%20Opposition%20to%20UPS%20Rule%2012%28b%29%286%29%20Motion%20to%20Dismiss%20%28Filed%20Aug%2028%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/ups-consent.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Consent to Magistrate Judge Jurisdiction - United Parcel Service (E.D. Cal. 2-26-cv-02847) (Sep 1 2026).pdf\"; filename*=UTF-8''Consent%20to%20Magistrate%20Judge%20Jurisdiction%20-%20United%20Parcel%20Service%20%28E.D.%20Cal.%202-26-cv-02847%29%20%28Sep%201%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/amazon-consent.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Consent to Magistrate Judge Jurisdiction - Amazon (N.D. Cal. 3-26-cv-09249-ASK) (Sep 1 2026).pdf\"; filename*=UTF-8''Consent%20to%20Magistrate%20Judge%20Jurisdiction%20-%20Amazon%20%28N.D.%20Cal.%203-26-cv-09249-ASK%29%20%28Sep%201%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/accurate-stip.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Stipulation to Extend Time for Accurate Background to Respond (Plaintiff Counterpart, Sep 1 2026).pdf\"; filename*=UTF-8''Stipulation%20to%20Extend%20Time%20for%20Accurate%20Background%20to%20Respond%20%28Plaintiff%20Counterpart%2C%20Sep%201%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/accurate-sig-notice.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Letter - Seyfarth May Not Affix Plaintiff's Signature (Accurate Stipulation) (Sep 1 2026).pdf\"; filename*=UTF-8''Letter%20-%20Seyfarth%20May%20Not%20Affix%20Plaintiff's%20Signature%20%28Accurate%20Stipulation%29%20%28Sep%201%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/meza-li-service.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Administrative Motion Packet - DAG Li to Accept Service for Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (Sep 1 2026).pdf\"; filename*=UTF-8''Administrative%20Motion%20Packet%20-%20DAG%20Li%20to%20Accept%20Service%20for%20Meza-Gonzalez%20%28N.D.%20Cal.%204-26-cv-08271-ASK%29%20%28Sep%201%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/habeas-discharge.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Petition for Writ of Habeas Corpus (filed Apr. 3, 2026).pdf\"; filename*=UTF-8''Petition%20for%20Writ%20of%20Habeas%20Corpus%20%28filed%20Apr.%203%2C%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/hc-004.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"HC-004 Notice and Request for Ruling (Habeas Corpus, Executed Sep 1 2026).pdf\"; filename*=UTF-8''HC-004%20Notice%20and%20Request%20for%20Ruling%20%28Habeas%20Corpus%2C%20Executed%20Sep%201%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/serrato-complaint.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"First Amended Complaint (Doc 10, Filed Jul 15 2026).pdf\"; filename*=UTF-8''First%20Amended%20Complaint%20%28Doc%2010%2C%20Filed%20Jul%2015%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/serrato-mtd.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Defendant Serrato Motion to Dismiss FAC and Strike (Aug 26 2026).pdf\"; filename*=UTF-8''Defendant%20Serrato%20Motion%20to%20Dismiss%20FAC%20and%20Strike%20%28Aug%2026%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/serrato-opp.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Opposition to Serrato MTD with Proof of Service by Email (Aug 27 2026).pdf\"; filename*=UTF-8''Opposition%20to%20Serrato%20MTD%20with%20Proof%20of%20Service%20by%20Email%20%28Aug%2027%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/ups-complaint.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Newanforbi v UPS Complaint.pdf\"; filename*=UTF-8''Newanforbi%20v%20UPS%20Complaint.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/ups-mtd.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Dkt 07 - UPS Rule 12(b)(6) Motion to Dismiss with Exhibits Notice Declaration and Certificate of Service (Filed Aug 26 2026).pdf\"; filename*=UTF-8''Dkt%2007%20-%20UPS%20Rule%2012%28b%29%286%29%20Motion%20to%20Dismiss%20with%20Exhibits%20Notice%20Declaration%20and%20Certificate%20of%20Service%20%28Filed%20Aug%2026%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/fedex-complaint.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Newanforbi v FedEx Complaint.pdf\"; filename*=UTF-8''Newanforbi%20v%20FedEx%20Complaint.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/fedex-answer.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Dkt 04 - Answer to Complaint (Filed Aug 31 2026).pdf\"; filename*=UTF-8''Dkt%2004%20-%20Answer%20to%20Complaint%20%28Filed%20Aug%2031%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/cand-strike.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Plaintiff Motion to Strike Answer (N.D. Cal. 3-26-cv-08272-LJC) (Sep 5 2026).pdf\"; filename*=UTF-8''Plaintiff%20Motion%20to%20Strike%20Answer%20%28N.D.%20Cal.%203-26-cv-08272-LJC%29%20%28Sep%205%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/cand-strike-packet.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Plaintiff Motion to Strike Answer Packet with Proposed Order (N.D. Cal. 3-26-cv-08272-LJC) (Sep 5 2026).pdf\"; filename*=UTF-8''Plaintiff%20Motion%20to%20Strike%20Answer%20Packet%20with%20Proposed%20Order%20%28N.D.%20Cal.%203-26-cv-08272-LJC%29%20%28Sep%205%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/ups-ext-opp.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Opposition to UPS Consent Motion for Extension of Time to File Reply (Sep 4 2026).pdf\"; filename*=UTF-8''Opposition%20to%20UPS%20Consent%20Motion%20for%20Extension%20of%20Time%20to%20File%20Reply%20%28Sep%204%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/ross-title-packet.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Request to Correct Case Title Packet (Request with Exhibits, Declaration, Proposed Order) (Sep 10 2026).pdf\"; filename*=UTF-8''Request%20to%20Correct%20Case%20Title%20Packet%20%28Request%20with%20Exhibits%2C%20Declaration%2C%20Proposed%20Order%29%20%28Sep%2010%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/ross-title.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Request to Correct Case Title - Clerical Party-Order Error (Sep 10 2026).pdf\"; filename*=UTF-8''Request%20to%20Correct%20Case%20Title%20-%20Clerical%20Party-Order%20Error%20%28Sep%2010%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/ross-title-decl.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Declaration ISO Request to Correct Case Title (Sep 10 2026).pdf\"; filename*=UTF-8''Declaration%20ISO%20Request%20to%20Correct%20Case%20Title%20%28Sep%2010%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/ross-title-order.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"[Proposed] Order Correcting Case Title - 26CV501995 (Sep 10 2026).pdf\"; filename*=UTF-8''%5BProposed%5D%20Order%20Correcting%20Case%20Title%20-%2026CV501995%20%28Sep%2010%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/ross-title-ex-a-cover.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Exhibit A Cover - Complaint Caption Page (26CV501995).pdf\"; filename*=UTF-8''Exhibit%20A%20Cover%20-%20Complaint%20Caption%20Page%20%2826CV501995%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/ross-title-ex-a.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Exhibit A - Complaint Caption Page (26CV501995).pdf\"; filename*=UTF-8''Exhibit%20A%20-%20Complaint%20Caption%20Page%20%2826CV501995%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/ross-title-ex-b-cover.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Exhibit B Cover - Public Portal Wrong Title (26CV501995).pdf\"; filename*=UTF-8''Exhibit%20B%20Cover%20-%20Public%20Portal%20Wrong%20Title%20%2826CV501995%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/ross-title-ex-b.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Santa Clara Public Portal - 26CV501995 Caption Does 2 through 20 (Sep 8 2026).pdf\"; filename*=UTF-8''Santa%20Clara%20Public%20Portal%20-%2026CV501995%20Caption%20Does%202%20through%2020%20%28Sep%208%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/ross-title-ex-c-cover.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Exhibit C Cover - One Legal Order 29111713 Title (26CV501995).pdf\"; filename*=UTF-8''Exhibit%20C%20Cover%20-%20One%20Legal%20Order%2029111713%20Title%20%2826CV501995%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/ross-title-ex-c.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"One Legal Order 29111713 Status - Wrong Case Title Does 2 through 20 (Sep 8 2026).pdf\"; filename*=UTF-8''One%20Legal%20Order%2029111713%20Status%20-%20Wrong%20Case%20Title%20Does%202%20through%2020%20%28Sep%208%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/name-24.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Name Conform Administrative Motion Packet - Serrato (N.D. Cal. 4-26-cv-05953-ASK) (September 14, 2026).pdf\"; filename*=UTF-8''Name%20Conform%20Administrative%20Motion%20Packet%20-%20Serrato%20%28N.D.%20Cal.%204-26-cv-05953-ASK%29%20%28September%2014%2C%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/name-28.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Name Conform Administrative Motion Packet - Smith (N.D. Cal. 3-26-cv-07504-LJC) (September 14, 2026).pdf\"; filename*=UTF-8''Name%20Conform%20Administrative%20Motion%20Packet%20-%20Smith%20%28N.D.%20Cal.%203-26-cv-07504-LJC%29%20%28September%2014%2C%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/name-29.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Name Conform Administrative Motion Packet - Amazon (N.D. Cal. 4-26-cv-09249-ASK) (September 14, 2026).pdf\"; filename*=UTF-8''Name%20Conform%20Administrative%20Motion%20Packet%20-%20Amazon%20%28N.D.%20Cal.%204-26-cv-09249-ASK%29%20%28September%2014%2C%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/name-32.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Name Conform Administrative Motion Packet - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 14, 2026).pdf\"; filename*=UTF-8''Name%20Conform%20Administrative%20Motion%20Packet%20-%20Meza-Gonzalez%20%28N.D.%20Cal.%204-26-cv-08271-ASK%29%20%28September%2014%2C%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/name-33.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Name Conform Administrative Motion Packet - Candelaria (N.D. Cal. 3-26-cv-08272-LJC) (September 14, 2026).pdf\"; filename*=UTF-8''Name%20Conform%20Administrative%20Motion%20Packet%20-%20Candelaria%20%28N.D.%20Cal.%203-26-cv-08272-LJC%29%20%28September%2014%2C%202026%29.pdf"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/documents/:path*",
+      "destination": "https://newanforbi.github.io/interactive-litigation-portfolio/documents/:path*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

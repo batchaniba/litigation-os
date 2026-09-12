@@ -208,7 +208,7 @@ def occurrence_locs(a: dict, limit: int = 8) -> list[dict]:
     return locs
 
 
-def build_verification():
+def build_verification(write: bool = True):
     index = load_json(INDEX_PATH, None)
     if not index:
         raise SystemExit(f"Missing {INDEX_PATH} — run build-citation-index.py first")
@@ -504,8 +504,9 @@ def build_verification():
         "corrected drafts are prepared; **new** introductions fail the gate.\n"
     )
 
-    OUT_JSON.write_text(json.dumps(out, indent=2) + "\n")
-    OUT_MD.write_text("\n".join(md) + "\n")
+    if write:
+        OUT_JSON.write_text(json.dumps(out, indent=2) + "\n")
+        OUT_MD.write_text("\n".join(md) + "\n")
     return out
 
 
@@ -605,9 +606,12 @@ def main() -> int:
     queue_only = "--queue" in sys.argv
     seed_debt = "--seed-debt" in sys.argv
 
-    out = build_verification()
-    print(f"Wrote {OUT_JSON} ({OUT_JSON.stat().st_size:,} bytes)")
-    print(f"Wrote {OUT_MD} ({OUT_MD.stat().st_size:,} bytes)")
+    # --check is a gate (pre-push hook); it must not touch the working tree.
+    # Everything else regenerates the ledger and its Markdown twin.
+    out = build_verification(write=not check_only)
+    if not check_only:
+        print(f"Wrote {OUT_JSON} ({OUT_JSON.stat().st_size:,} bytes)")
+        print(f"Wrote {OUT_MD} ({OUT_MD.stat().st_size:,} bytes)")
 
     if seed_debt or not DEBT_PATH.exists():
         debt = seed_debt_from_live(out)

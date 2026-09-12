@@ -35,8 +35,9 @@ internal/public/documents/**
 !.env.example
 
 # Generated at build time (prebuild). Do not commit.
+# (vercel.json is also generated — by sync:short-links — but IS committed:
+# Vercel reads git.deploymentEnabled from the repo at push time.)
 internal/src/data/matters/summaries.json
 internal/src/data/matters/document-index.json
 internal/src/data/upcoming.json
-vercel.json
 internal/public/*/index.html

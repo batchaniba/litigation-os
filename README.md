@@ -374,11 +374,12 @@ Plaintiff is representing himself pro se across all 39 matters. The figures belo
 
 ## Tech Stack
 
-- **Languages:** TypeScript + JavaScript (the app, mid-migration to TS — new modules should be `.ts`/`.tsx`), CSS, Python 3.11 (the document-automation scripts), YAML (CI workflows)
+- **Languages:** TypeScript + JavaScript (the app, mid-migration to TS — new modules should be `.ts`/`.tsx`), CSS, Python 3.11 (the document-automation scripts), YAML (the three CourtListener workflows)
 - **Framework:** React 19
 - **Build tool:** Vite 8
-- **Linting:** ESLint 9 flat config (`eslint.config.js`) for JS/TS, ruff (`pyproject.toml`) for Python — both enforced in CI
-- **Deployment:** Vercel (primary) + GitHub Pages (mirror)
+- **Linting:** ESLint 9 flat config (`eslint.config.js`) for JS/TS, ruff (`pyproject.toml`) for Python — ESLint runs in the `pre-push` hook; run `ruff check .` by hand
+- **Deployment:** Vercel, on a schedule (see Deployment). GitHub Pages holds the last-published PDF library only.
+- **CI:** none. The `pre-push` hook runs the gate locally; see [Local Development](#local-development).
 - **Fonts:** Cormorant Garamond (headings), DM Sans (UI)
 - **Styling:** `internal/src/styles/app.css` + component styles
 - **Matter data:** one JSON file per matter under `internal/src/data/matters/` (shell uses `summaries.json`; full records lazy-load). Structured fields (prefer over parsing prose `status`):
@@ -386,7 +387,7 @@ Plaintiff is representing himself pro se across all 39 matters. The figures belo
   - `proceeding` — track: `state_civil` | `federal_civil` | `mandate` | `habeas`
   - `phase` — current stage on that track (e.g. `demurrer`, `fr_pending`, `under_submission`, `responsive_deadline`; `terminal` when disposed)
 - **Timeline:** `internal/src/data/timeline.json` (full log) + generated `upcoming.json` for the shell deadline clock
-- **Documents:** `internal/public/documents/` (Matter 32: `from-01|02|20|24/` + N.D. Cal. filing under `ndcal/`; Matter 33: `incident|from-07|from-08|opinions/` + N.D. Cal. filing under `ndcal/`; blank Judicial Council templates and the portfolio Proof of Service form under `_form-library/` (see `_form-library/README.md`)). The tree is ~660 MB and growing; data CI sparse-checkouts around it and checks paths against `internal/src/data/documents/manifest.json`. See [DOCUMENT_STORE.md](internal/docs/DOCUMENT_STORE.md).
+- **Documents:** `internal/public/documents/` (Matter 32: `from-01|02|20|24/` + N.D. Cal. filing under `ndcal/`; Matter 33: `incident|from-07|from-08|opinions/` + N.D. Cal. filing under `ndcal/`; blank Judicial Council templates and the portfolio Proof of Service form under `_form-library/` (see `_form-library/README.md`)). The tree is ~660 MB and growing; without it on disk, `PORTFOLIO_SKIP_DISK_DOCS=1` checks paths against `internal/src/data/documents/manifest.json` (the `pre-push` hook sets this automatically). See [DOCUMENT_STORE.md](internal/docs/DOCUMENT_STORE.md).
 
 ### Prose length budgets
 
@@ -418,7 +419,7 @@ Authority quality is a liability surface: claims are cognizable and motions to d
 | 1. Index | `npm run citations:index` | `internal/docs/citation_index.json` / `CITATION_INDEX.md` — every cite keyed to page + filing role |
 | 2. Lookup | `npm run citations:lookup:matter -- --matter N` | CourtListener + CAP `static.case.law` existence probe → `citation_lookup_matterNN.json` |
 | 3. Overlay | edit `citation_verification_rounds.json` | Fold lookup consensus into statuses (existence `FOUND` can clear `UNVERIFIED`; proposition `MISCITED` / `MISCHARACTERIZED` stays) |
-| 4. Ledger + gate | `npm run citations:verify` then `citations:check` | `citation_verification.json` / `CITATION_VERIFICATION.md`; CI fails on **new** fabricated cites in plaintiff filings |
+| 4. Ledger + gate | `npm run citations:verify` then `citations:check` | `citation_verification.json` / `CITATION_VERIFICATION.md`; the `pre-push` gate fails on **new** fabricated cites in plaintiff filings |
 
 Controls (reconfirm when batching): *Richardson v. McKnight*, 521 U.S. 399 must resolve; *In re Leman*, 66 Cal.App.5th 200 must not. Justia is Cloudflare-blocked here; Google Scholar is unreliable; prefer CourtListener search + CAP static metadata/HTML.
 
@@ -436,7 +437,7 @@ Controls (reconfirm when batching): *Richardson v. McKnight*, 521 U.S. 399 must 
 Paired authorities: **987**. P0 (plaintiff-only UNVERIFIED): **8**. P1 (plaintiff-only bad status): **30**. Ledger date: 2026-09-09.
 <!-- PORTFOLIO:CITATION_SCOREBOARD:END -->
 
-Priority queues from the ledger: **P0** = plaintiff-only + still `UNVERIFIED` (`npm run citations:queue`); **P1** = plaintiff-only + bad status (fix before the next brief). Pre-existing fabricated hits are debt-tracked in `citation_known_bad_debt.json` so CI stays green while corrected drafts replace them.
+Priority queues from the ledger: **P0** = plaintiff-only + still `UNVERIFIED` (`npm run citations:queue`); **P1** = plaintiff-only + bad status (fix before the next brief). Pre-existing fabricated hits are debt-tracked in `citation_known_bad_debt.json` so the gate stays green while corrected drafts replace them.
 
 Full reports: [`CITATION_INDEX.md`](internal/docs/CITATION_INDEX.md) · [`CITATION_AUDIT.md`](internal/docs/CITATION_AUDIT.md) · [`CITATION_VERIFICATION.md`](internal/docs/CITATION_VERIFICATION.md) · Matter 28 safe list [`MATTER_28_SAFE_CITE_LIST.md`](internal/docs/MATTER_28_SAFE_CITE_LIST.md). Claude Code sessions pick this up through the `citation-verify` skill in `.claude/skills/`.
 
@@ -455,7 +456,7 @@ npm run court:sync -- --active-only
 npm run court:sync -- --since 2026-07-01 --bootstrap
 ```
 
-Empty cursors refuse a full historical crawl unless you pass `--bootstrap`, `--active-only`, `--matter N`, or `--all`. Store `COURTLISTENER_TOKEN` as a GitHub Actions repository secret (`COURTLISTENER_API_TOKEN` is accepted as an alias). Never put it in a `VITE_*` variable. Design notes: [`COURTLISTENER.md`](internal/docs/COURTLISTENER.md).
+Empty cursors refuse a full historical crawl unless you pass `--bootstrap`, `--active-only`, `--matter N`, or `--all`. Store `COURTLISTENER_TOKEN` as a GitHub Actions repository secret (the CourtListener workflows are the only Actions left in the repo) (`COURTLISTENER_API_TOKEN` is accepted as an alias). Never put it in a `VITE_*` variable. Design notes: [`COURTLISTENER.md`](internal/docs/COURTLISTENER.md).
 
 [↑ Contents](#contents)
 
@@ -537,14 +538,15 @@ need them:
 
 ```bash
 python3 -m pip install -r requirements.txt   # reportlab, pypdf, pymupdf, …
-ruff check .                                 # lint (same rules CI enforces)
+ruff check .                                 # lint (not run by any hook — run it yourself)
 internal/scripts/ensure-pdf-tools.sh         # tesseract-ocr + the same pip install
 ```
 
 OCR (`internal/scripts/ocr-text-layer.py` and `internal/scripts/pdf-audit/ocr.py`)
 needs the `tesseract` binary on `PATH`. `ensure-pdf-tools.sh` installs it via
-`apt-get` when missing (Debian/Ubuntu) and is safe to re-run. CI's Python job
-is ruff + `compileall` only — it does not install tesseract or the PDF libraries.
+`apt-get` when missing (Debian/Ubuntu) and is safe to re-run. Nothing automated
+lints or runs the Python scripts; `ruff check .` and `python -m compileall -q internal/scripts`
+are the manual equivalents of the old CI job.
 
 ## Build
 
@@ -553,15 +555,15 @@ npm run build   # outputs to dist/ (copies public/documents unless VITE_COPY_DOC
 npm run preview # preview the production build locally
 ```
 
-CI sets `VITE_COPY_DOCUMENTS=0` and `PORTFOLIO_SKIP_DISK_DOCS=1` so the default build job does not check out or copy the PDF library. GitHub Pages attaches `origin/documents` before `vite build`. Vercel rewrites `/documents/*` to that Pages origin. Details: [DOCUMENT_STORE.md](internal/docs/DOCUMENT_STORE.md).
+Vercel builds with `VITE_COPY_DOCUMENTS=0` and `PORTFOLIO_SKIP_DISK_DOCS=1` so they never fetch or copy the PDF library; `/documents/*` is rewritten to the GitHub Pages origin that holds the last-published copy. Details: [DOCUMENT_STORE.md](internal/docs/DOCUMENT_STORE.md).
 
 ## Deployment
 
-**Vercel** builds and deploys automatically on every push to `main` — no extra config, served from the domain root. `/documents/:path*` is rewritten to the GitHub Pages copy of the library so the Vercel build does not copy 660 MB of PDFs. After a fresh clone, run `npm run documents:pull` before `npm run dev`.
+**Vercel** serves production from the domain root, but **does not deploy on push**. The committed `vercel.json` sets `git.deploymentEnabled: false`; production advances when the scheduled Deploy Hook fires (Cloudflare Worker in `internal/workers/vercel-deploy-cron/`, four times a day, only if `main` is ahead of what is live) or when you trigger it by hand. Vercel's Ignored Build Step runs `internal/scripts/vercel-ignore-build.sh`, which skips any build whose inputs did not change. `/documents/:path*` is rewritten to the GitHub Pages copy of the library so the Vercel build does not copy 660 MB of PDFs. Dashboard settings, cost model, and the "deploy now" commands are in [VERCEL_DEPLOYS.md](internal/docs/VERCEL_DEPLOYS.md). After a fresh clone, run `npm run documents:pull` before `npm run dev`.
 
-**GitHub Pages** deploys via `.github/workflows/deploy-gh-pages.yml`. The job checks out the `documents` branch into `internal/public/documents/` before `vite build`. Because GitHub Pages serves this repo as a project site under a subpath (`/interactive-litigation-portfolio/`) rather than a domain root, `vite.config.js` conditionally sets `base` from a `GITHUB_PAGES` env var the workflow sets at build time — Vercel builds leave it unset and get `base: '/'` as before. One-time setup: in the repo's **Settings → Pages**, set **Source** to **GitHub Actions**.
+**GitHub Pages** is no longer deployed. There is no GitHub Actions CI or deploy workflow in this repo; the only workflows left are the CourtListener ones. `https://newanforbi.github.io/interactive-litigation-portfolio/documents/` still serves the PDF library as of its last Actions deploy, and the Vercel rewrite still points there, so existing filing links keep working. New PDFs pushed with `npm run documents:push` land on the `documents` branch but are **not** published until a replacement host for the library is chosen (Cloudflare R2 behind the same `/documents/*` rewrite is the intended next step). `vite.config.js` keeps the `GITHUB_PAGES` base-path switch for a manual Pages build if one is ever needed.
 
-GitHub Actions (CI, documents integrity, Pages deploy) are **dispatch-only** until billing/spending is restored. They do not run on push or pull request. Vercel Git integration is separate and still deploys. Restore the `push` / `pull_request` triggers in `.github/workflows/*.yml` when runners can start again.
+**Pre-push gate.** With CI gone, `.githooks/pre-push` is the only automated check before `main`: lint, typecheck, `validate-portfolio`, golden damages math, the unit suite, and the fabricated-citation gate. `npm run prepare` installs it. `SKIP_PORTFOLIO_GATE=1 git push` bypasses it for emergencies only. Branch protection on `main` must **not** require status checks, since nothing reports any.
 
 ---
 
