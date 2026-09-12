@@ -418,129 +418,129 @@ const matter_damages_raw = [
   {
     number: 25,
     claims: "PC §290.46(j), Wrongful Failure to Hire, ICRAA, Invasion of Privacy, Negligence Per Se, UCL",
-    risk: "Favorable on the law but pled on information and belief — no admitted-basis letter or recovered background report, unlike Matters 22/23; strongest evidence is the application-to-denial notice trail (2 pre-adverse notices, 5 reminders)",
-    settlement_note: "No wage documentation (never employed) caps economic damages relative to Matter 22; statutory penalty and fee-shifting are the main leverage points",
+    risk: "Source-proof case. FedEx answered, but the actual First Advantage report is not yet in hand. Lerma shows the §290.46 theory can fail if the report proves ordinary court-record sourcing rather than Megan's Law data; UPS shows the opposite if the report identifies the California registry as the adverse source.",
+    settlement_note: "No automatic $25,000 §290.46 floor. ICRAA may provide actual damages or $10,000, whichever is greater, if a qualifying violation is proven. Plaintiff is pro se, so his own litigation time is not modeled as accrued recoverable attorney fees.",
     conservative: 40000,
     moderate: 95000,
     aggressive: 220000,
     components: [
       {
-        label: "PC §290.46(j)(4)(A) Statutory Penalty",
-        conservative: 25000,
-        moderate: 40000,
-        aggressive: 75000
+        label: "PC §290.46(j)(4)(A) — actual/additional damages and civil-penalty scenario (civil penalty capped at $25,000; not a floor)",
+        conservative: 5000,
+        moderate: 20000,
+        aggressive: 50000
       },
       {
         label: "Emotional Distress / Lost Opportunity",
-        conservative: 8000,
-        moderate: 25000,
+        conservative: 15000,
+        moderate: 35000,
+        aggressive: 70000
+      },
+      {
+        label: "ICRAA §1786.50 scenario — actual damages or $10,000 minimum if a qualifying violation is proven; possible punitive damages for grossly negligent/willful violation",
+        conservative: 10000,
+        moderate: 20000,
+        aggressive: 40000
+      },
+      {
+        label: "Punitive / Exemplary Damages Scenario (requires proof of willfulness/malice and financial-condition evidence where applicable)",
+        conservative: 10000,
+        moderate: 20000,
         aggressive: 60000
       },
       {
-        label: "ICRAA Statutory + Punitive",
-        conservative: 2000,
-        moderate: 5000,
-        aggressive: 10000
-      },
-      {
-        label: "Punitive (Civ. Code §3294)",
+        label: "Plaintiff Attorney Fees Accrued While Pro Se",
         conservative: 0,
-        moderate: 10000,
-        aggressive: 45000
-      },
-      {
-        label: "Fees — PC §290.46(j)(4)(A) / ICRAA",
-        conservative: 5000,
-        moderate: 15000,
-        aggressive: 30000
+        moderate: 0,
+        aggressive: 0
       }
     ]
   },
   {
     number: 26,
     claims: "PC §290.46(j), Wrongful Failure to Hire, ICRAA, Invasion of Privacy, Negligence Per Se, UCL",
-    risk: "Favorable on the law but pled on information and belief, as with Matter 25; limitations period preserved by July 15, 2026 filing (16 days ahead of the July 31, 2026 two-year cutoff from the July 31, 2024 adverse action)",
-    settlement_note: "Limitations period risk eliminated by timely filing; no wage documentation (never employed) caps economic damages relative to Matter 22; statutory penalty and fee-shifting are the main leverage points",
+    risk: "Lead §290.46 test case. UPS lodged Exhibit A: ordinary criminal search No Record Found / Eligible; registry components Decisional; overall INELIGIBLE; source-of-record line identifies the California Sex Offender Registry. Main fights are derivative-source/national-index treatment, §290.46(j)(3) authorization, and the undefined person-at-risk exception.",
+    settlement_note: "No automatic $25,000 §290.46 floor. The strength comes from UPS's own report and use concession, not from a statutory minimum. Plaintiff is pro se, so his own time is not counted as accrued recoverable fees.",
     conservative: 35000,
     moderate: 85000,
     aggressive: 200000,
     components: [
       {
-        label: "PC §290.46(j)(4)(A) Statutory Penalty",
-        conservative: 25000,
-        moderate: 35000,
-        aggressive: 65000
+        label: "PC §290.46(j)(4)(A) — actual/additional damages and civil-penalty scenario (civil penalty capped at $25,000; not a floor)",
+        conservative: 5000,
+        moderate: 20000,
+        aggressive: 45000
       },
       {
         label: "Emotional Distress / Lost Opportunity",
-        conservative: 5000,
-        moderate: 20000,
+        conservative: 10000,
+        moderate: 25000,
         aggressive: 55000
       },
       {
-        label: "ICRAA Statutory + Punitive",
-        conservative: 2000,
-        moderate: 5000,
-        aggressive: 10000
-      },
-      {
-        label: "Punitive (Civ. Code §3294)",
-        conservative: 0,
-        moderate: 10000,
-        aggressive: 40000
-      },
-      {
-        label: "Fees — PC §290.46(j)(4)(A) / ICRAA",
-        conservative: 3000,
-        moderate: 15000,
+        label: "ICRAA §1786.50 scenario — actual damages or $10,000 minimum if a qualifying violation is proven",
+        conservative: 10000,
+        moderate: 20000,
         aggressive: 30000
+      },
+      {
+        label: "Punitive / Exemplary Damages Scenario",
+        conservative: 10000,
+        moderate: 20000,
+        aggressive: 70000
+      },
+      {
+        label: "Plaintiff Attorney Fees Accrued While Pro Se",
+        conservative: 0,
+        moderate: 0,
+        aggressive: 0
       }
     ]
   },
   {
     number: 27,
     claims: "PC §290.46(j), Wrongful Termination / Failure to Employ (Tameny), FCRA, ICRAA, UCL",
-    risk: "Extremely favorable — Plaintiff holds the actual InfoMart BGC report (Order No. 15780719): all 7 county/state criminal searches and federal criminal returned No Record; registry is the only flagged item; Billing Code 'RK LOGISTICS' and Client Package 'RK Logistics' in report header prove RK Logistics configured the criteria triggering 'NEEDS APPROVAL, PER CLIENT CRITERIA.' Rehire email establishes employment relationship existed at time of BGC — stronger Tameny posture than the pure failure-to-hire cases in Matters 25/26. Wage rate confirmed at $28.50/hr, 42.5 hrs/week (Mon–Fri 2:30 PM–11:00 PM), generating overtime each week; actual lost wages eclipse the §290.46(j)(4)(A) $25,000 statutory floor within approximately 6.5 months, making actual-damages the operative measure. RK Logistics denied liability Jul. 21, 2026 on two grounds — neither disturbs this posture: its employer-status argument reaches only the Tameny claim (not the other five causes of action) and is undercut by its own Transportation Manager's written rejection email; its MVR-based defense cites a commercial (Class A) disqualification inapplicable to the non-commercial Class C position at issue, predating Plaintiff's Jun. 11, 2026 Class C reissue. Randstad's own exposure — the FCRA waiting-period violation — is untouched by either defense and remains unanswered.",
-    settlement_note: "Fifth PC §290.46(j) matter in portfolio; pattern evidence across five employers strengthens willfulness showing on all. Two-defendant structure (Randstad US, LLC as employer of record + RK Logistics Group, Inc. as criteria-setting end client) creates cross-pressure: each defendant is incentivized to attribute the adverse decision to the other. Punitive exposure is amplified by both defendants' substantial net worth — Randstad is a subsidiary of a global staffing company; RK Logistics serves the semiconductor and EV supply chain. Rehire posture + documented wage rate produces back pay and front pay exposure not present in Matters 25/26.",
-    conservative: 179838,
-    moderate: 437095,
-    aggressive: 834352,
+    risk: "Strong source proof, disputed causation. InfoMart shows every ordinary criminal search clear and the California sex-offender result as the sole adverse hit. RK-branded criteria fields support involvement but do not alone prove statutory use; the contemporaneous MVR email is a real competing explanation. FCRA analysis must audit whether InfoMart's July 13 notice is a §1681k CRA public-record notice and whether Randstad separately supplied the §1681b(b)(3)(A) materials; there is no fixed five-business-day statutory waiting period.",
+    settlement_note: "Two-defendant cross-pressure remains valuable, but valuation should not assume a $25,000 §290.46 floor, a five-day FCRA violation, or accrued pro se attorney fees. Lost-wage assumptions remain scenario-dependent on whether the rehire/placement was operative.",
+    conservative: 154838,
+    moderate: 387095,
+    aggressive: 734352,
     components: [
       {
-        label: "Lost Wages — Back Pay ($28.50/hr × 42.5 hrs/wk incl. weekly OT at 1.5x; $1,246.88/wk: conservative 12 mo. / moderate 18 mo. / aggressive 24 mo.)",
+        label: "Lost Wages — Back Pay ($28.50/hr × 42.5 hrs/wk incl. weekly OT; scenario assumptions)",
         conservative: 64838,
         moderate: 97257,
         aggressive: 129676
       },
       {
-        label: "Front Pay — Future Lost Earnings (conservative: none / moderate: 12 additional mo. / aggressive: 24 additional mo.)",
+        label: "Front Pay — Future Lost Earnings Scenario",
         conservative: 0,
         moderate: 64838,
         aggressive: 129676
       },
       {
-        label: "Emotional Distress — Wrongful rescission of accepted rehire position; fifth cumulative §290.46(j) employment denial compounds distress narrative",
+        label: "Emotional Distress — rehire/placement loss",
         conservative: 25000,
         moderate: 50000,
         aggressive: 75000
       },
       {
-        label: "FCRA / ICRAA Statutory + Punitive (willful noncompliance; InfoMart report itself contains FCRA Summary of Rights and CA ICRA Notice — parties had constructive notice of the statutory framework at the moment of use)",
+        label: "FCRA / ICRAA Scenario — depends on actual notice package, transportation exception, and qualifying ICRAA violation",
         conservative: 15000,
         moderate: 25000,
         aggressive: 50000
       },
       {
-        label: "Punitive (Civ. Code §3294) — Two corporate defendants with independent net worth exposure; fifth repeat §290.46(j) violation supports willfulness finding; 'NEEDS APPROVAL, PER CLIENT CRITERIA' shows deliberate criteria configuration, not inadvertent use",
+        label: "Punitive / Exemplary Damages Scenario — requires proof of causation and willfulness",
         conservative: 50000,
         moderate: 150000,
         aggressive: 350000
       },
       {
-        label: "Attorney Fees — PC §290.46(j)(4)(A) mandatory fee-shifting + FCRA + ICRAA",
-        conservative: 25000,
-        moderate: 50000,
-        aggressive: 100000
+        label: "Plaintiff Attorney Fees Accrued While Pro Se",
+        conservative: 0,
+        moderate: 0,
+        aggressive: 0
       }
     ]
   },
@@ -593,42 +593,42 @@ const matter_damages_raw = [
   },
   {
     number: 29,
-    claims: "PC §290.46(j)(2)(E) Violation, FCRA, ICRAA, Invasion of Privacy, UCL §17200, IIED",
-    risk: "Extremely favorable on liability if the anticipated adverse action occurs — PC §290.46(j)(2)(E) categorically prohibits registry use; BGC delay is consistent with registry-flag review; a pattern across the four confirmed prior instances (22, 25, 26, 27) compounds willfulness; Amazon's size and documented hiring pipeline maximize punitive and fee exposure",
-    settlement_note: "Would be the fifth confirmed PC §290.46(j) adverse action in the portfolio (after 22, 25, 26, 27) if the pending BGC results in one; post-Lerma settlement (Sept. 29, 2023) willfulness is the dominant settlement driver — Amazon and Accurate Background cannot claim good faith after settling an identical class action; Amazon's $500B+ net worth and Accurate Background's role as repeat defendant create substantial punitive exposure; pre-adverse notice once issued triggers FCRA 5-business-day waiting period before adverse action. Lerma v. Amazon.com Services, LLC et al., No. 8:22-cv-01727 (C.D. Cal.) is the key analogous settlement.",
+    claims: "PC §290.46(j)(2)(E) Violation, Fair Chance Act, FCRA, ICRAA, Invasion of Privacy, UCL §17200, IIED",
+    risk: "Evidence-dependent. The lost shift is concrete, but the actual Accurate report and formal decision basis are not yet in hand. Lerma is a direct warning against inferring Megan's Law sourcing from timing alone. Under Mendoza, Accurate has a substantial §290.46 defense if it merely reports information; FCRA/ICRAA are the stronger natural vendor theories.",
+    settlement_note: "Lerma settled in 2023 after its Megan's Law count had been dismissed; do not use that settlement as a §290.46 willfulness admission. No automatic $25,000 §290.46 floor and no accrued pro se fee component.",
     conservative: 30000,
     moderate: 75000,
     aggressive: 180000,
     components: [
       {
-        label: "PC §290.46(j)(4)(A) Statutory Penalty (per-violation minimum $25,000; post-Lerma willfulness eliminates any reduction below statutory floor)",
-        conservative: 25000,
-        moderate: 30000,
-        aggressive: 50000
+        label: "PC §290.46(j)(4)(A) scenario — no automatic $25,000 floor; civil penalty capped at $25,000",
+        conservative: 10000,
+        moderate: 15000,
+        aggressive: 35000
       },
       {
-        label: "Emotional Distress — fifth confirmed cumulative PC §290.46(j) employment denial if this one occurs; compounding dignitary harm narrative across Randstad, FedEx, UPS, Pilot; IIED claim supported by ongoing pattern",
-        conservative: 3000,
+        label: "Emotional Distress / Lost Shift",
+        conservative: 5000,
         moderate: 20000,
         aggressive: 50000
       },
       {
-        label: "ICRAA Statutory (Accurate Background as reporting agency; failure to follow proper notice/disclosure procedures; Accurate Background named defendant in Lerma — post-settlement repeat violation supports willful noncompliance finding)",
-        conservative: 1000,
-        moderate: 5000,
-        aggressive: 10000
+        label: "ICRAA §1786.50 scenario — qualifying violation could support actual damages or $10,000 minimum, plus possible punitive damages",
+        conservative: 10000,
+        moderate: 20000,
+        aggressive: 35000
       },
       {
-        label: "Punitive Damages (Civ. Code §3294 — post-Lerma willfulness: Amazon and Accurate Background settled identical §290.46(j) claim Sept. 2023 and continued the same BGC practice; three-year post-settlement repetition is strongest possible willfulness predicate; Amazon's market capitalization supports meaningful punitive multiplier)",
-        conservative: 0,
-        moderate: 15000,
+        label: "Punitive / Exemplary Damages Scenario — requires source, causation, and willfulness proof",
+        conservative: 5000,
+        moderate: 20000,
         aggressive: 60000
       },
       {
-        label: "Attorney Fees — PC §290.46(j)(4)(A) mandatory fee-shifting; FCRA; ICRAA",
-        conservative: 1000,
-        moderate: 5000,
-        aggressive: 10000
+        label: "Plaintiff Attorney Fees Accrued While Pro Se",
+        conservative: 0,
+        moderate: 0,
+        aggressive: 0
       }
     ]
   },
