@@ -15,7 +15,7 @@ export const damages_table = [
     { category: "PC §290.46(j) Violation + Wrongful Termination (Matter 22)", matters: [22], conservative: 220000, moderate: 525000, aggressive: 1000000 },
     { category: "42 USC §1983 — Arbitrary U Visa Certification Denial & Retaliation (Matter 24)", matters: [24], conservative: 75000, moderate: 200000, aggressive: 450000 },
     { category: "PC §290.46(j) Failure to Hire — FedEx / UPS (Matters 25, 26)", matters: [25, 26], conservative: 75000, moderate: 180000, aggressive: 420000 },
-    { category: "PC §290.46(j) — Wrongful Termination / Failure to Employ — Randstad / RK Logistics (Matter 27)", matters: [27], conservative: 180000, moderate: 437000, aggressive: 835000 },
+    { category: "PC §290.46(j) — Wrongful Termination / Failure to Employ — Randstad / RK Logistics (Matter 27)", matters: [27], conservative: 155000, moderate: 387000, aggressive: 734000 },
     { category: "§1983 Monell / Individual + Bane Act + RICO — Shannon Smith / HOPE (Matter 28)", matters: [28], conservative: 249000, moderate: 666000, aggressive: 1510000 },
     { category: "PC §290.46(j) Failure to Hire — Amazon (Matter 29)", matters: [29], conservative: 30000, moderate: 75000, aggressive: 180000 },
     { category: "§1983 Retaliation, Due Process, Bane Act & IIED — Moua (Matter 30)", matters: [30], conservative: 90000, moderate: 225000, aggressive: 525000 },
