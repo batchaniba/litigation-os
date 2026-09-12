@@ -1,13 +1,17 @@
 {
-  "version": 1,
+  "version": 2,
   "name": "Andrew P. Frederick",
   "attorney_id": null,
-  "firm": "Morgan, Lewis & Bockius LLP",
+  "firm": null,
   "linked_matters": [
     29
   ],
-  "generated_at": "2026-09-11T21:58:15.825Z",
+  "generated_at": "2026-09-11T23:42:20.433Z",
   "source": "courtlistener",
+  "identity": {
+    "level": "name-based",
+    "label": "Name-based match (no CourtListener attorney ID). Client and subject signals are directional; pin --attorney-id to verify."
+  },
   "history": {
     "dockets_found": 60,
     "courts": {
@@ -177,6 +181,186 @@
     ],
     "sample_truncated": true
   },
+  "clients": {
+    "cases_parsed": 25,
+    "defendants": [
+      {
+        "name": "Delta Air Lines, Inc.",
+        "count": 5
+      },
+      {
+        "name": "JetBlue Airways Corporation",
+        "count": 4
+      },
+      {
+        "name": "Unifi Aviation, LLC",
+        "count": 3
+      },
+      {
+        "name": "AmerisourceBergen Drug Corporation",
+        "count": 2
+      },
+      {
+        "name": "American Airlines, Inc.",
+        "count": 1
+      },
+      {
+        "name": "Aramark Campus LLC",
+        "count": 1
+      },
+      {
+        "name": "Aramark Management Services Limited Partnership",
+        "count": 1
+      },
+      {
+        "name": "Brenntag Pacific, Inc.",
+        "count": 1
+      },
+      {
+        "name": "Caliber Holdings Corporation",
+        "count": 1
+      },
+      {
+        "name": "Cencora, Inc.",
+        "count": 1
+      },
+      {
+        "name": "JanCo FS 3, LLC",
+        "count": 1
+      },
+      {
+        "name": "Jet Aviation Flight Services, Inc.",
+        "count": 1
+      },
+      {
+        "name": "M and S Enterprise LLC",
+        "count": 1
+      },
+      {
+        "name": "Pearce Services, LLC",
+        "count": 1
+      },
+      {
+        "name": "World Courier, Inc.",
+        "count": 1
+      }
+    ],
+    "plaintiffs": [
+      {
+        "name": "Aric Lemons",
+        "count": 1
+      },
+      {
+        "name": "Ayala",
+        "count": 1
+      },
+      {
+        "name": "Berg",
+        "count": 1
+      },
+      {
+        "name": "Biddle III",
+        "count": 1
+      },
+      {
+        "name": "Carlos Pulido",
+        "count": 1
+      },
+      {
+        "name": "Edward Townsend",
+        "count": 1
+      },
+      {
+        "name": "Elam",
+        "count": 1
+      },
+      {
+        "name": "Griffin",
+        "count": 1
+      },
+      {
+        "name": "Hugger",
+        "count": 1
+      },
+      {
+        "name": "James Smith",
+        "count": 1
+      },
+      {
+        "name": "Kapitanski",
+        "count": 1
+      },
+      {
+        "name": "Luis Lesama Rodriguez",
+        "count": 1
+      },
+      {
+        "name": "Malaspina",
+        "count": 1
+      },
+      {
+        "name": "Maria Prado",
+        "count": 1
+      },
+      {
+        "name": "Maria Wiley",
+        "count": 1
+      },
+      {
+        "name": "Mireya Martinez",
+        "count": 1
+      },
+      {
+        "name": "Pok",
+        "count": 1
+      },
+      {
+        "name": "Rachel Liebregt",
+        "count": 1
+      },
+      {
+        "name": "Sandhu",
+        "count": 1
+      },
+      {
+        "name": "Stephanie La Grow",
+        "count": 1
+      },
+      {
+        "name": "Storm",
+        "count": 1
+      },
+      {
+        "name": "Valdovinos",
+        "count": 1
+      },
+      {
+        "name": "Wilfred McCauley",
+        "count": 1
+      },
+      {
+        "name": "William McMillan",
+        "count": 1
+      },
+      {
+        "name": "Wyatt",
+        "count": 1
+      }
+    ],
+    "top_defendant": {
+      "name": "Delta Air Lines, Inc.",
+      "count": 5
+    }
+  },
+  "subjects": {
+    "tags": {},
+    "primary": null,
+    "screening_ecosystem": {
+      "detected": false,
+      "matched_cra_clients": []
+    },
+    "note": "Keyword heuristic over sampled case names; directional, not a legal determination."
+  },
   "vs_you": {
     "matters": [
       29
@@ -197,6 +381,7 @@
   "caveats": [
     "Name-based RECAP search can conflate attorneys with common names; pin --attorney-id when ambiguous.",
     "History is a docket sample (up to ~60 most recent), not an exhaustive record.",
+    "Client and subject signals are keyword heuristics over sampled case names; directional, not adjudicated.",
     "Outcome signals (settlement/dismissal mentions) are directional, not adjudicated results.",
     "Motion patterns cover only matters with locally synced docket entries."
   ]
