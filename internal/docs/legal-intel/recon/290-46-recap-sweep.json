@@ -1,0 +1,840 @@
+{
+  "generated_at": "2026-09-12T17:57:15.581Z",
+  "purpose": "Docket-level and opinion-level full-text sweep for California Penal Code 290.46, closing gap 3 of the 2026-09-12 employment-use case survey.",
+  "api": "CourtListener REST v4 /search/",
+  "queries": [
+    {
+      "id": "opinions-subdiv-j",
+      "type": "o",
+      "q": "\"290.46(j)\"",
+      "count": 0,
+      "returned": 0,
+      "hits": []
+    },
+    {
+      "id": "opinions-subdiv-l",
+      "type": "o",
+      "q": "\"290.46(l)\"",
+      "count": 71,
+      "returned": 20,
+      "hits": [
+        {
+          "caseName": "Commonwealth v. Hall",
+          "court": "Commonwealth Court of Pennsylvania",
+          "dateFiled": "1997-04-02",
+          "docketNumber": "No. 1639 C.D. 1996",
+          "status": "Published",
+          "citation": [
+            "692 A.2d 283",
+            "1997 Pa. Commw. LEXIS 135",
+            "1997 WL 149188"
+          ],
+          "absoluteUrl": "https://www.courtlistener.com/opinion/5134390/commonwealth-v-hall/"
+        },
+        {
+          "caseName": "Commonwealth v. Diehl",
+          "court": "Supreme Court of Pennsylvania",
+          "dateFiled": "1992-09-18",
+          "docketNumber": "23 W.D. Appeal Docket 1991",
+          "status": "Published",
+          "citation": [
+            "615 A.2d 690",
+            "532 Pa. 214",
+            "1992 Pa. LEXIS 438"
+          ],
+          "absoluteUrl": "https://www.courtlistener.com/opinion/1975172/commonwealth-v-diehl/"
+        },
+        {
+          "caseName": "Simon Curtis Tunstall v. Frank X. Hopkins, Nsp Warden Herbert Maschner, Isp Warden",
+          "court": "Court of Appeals for the Eighth Circuit",
+          "dateFiled": "2002-11-13",
+          "docketNumber": "01-2730",
+          "status": "Published",
+          "citation": [
+            "306 F.3d 601"
+          ],
+          "absoluteUrl": "https://www.courtlistener.com/opinion/779396/simon-curtis-tunstall-v-frank-x-hopkins-nsp-warden-herbert-maschner-isp/"
+        },
+        {
+          "caseName": "Bradford Exchange A.G. v. Department of Revenue",
+          "court": "Appellate Court of Illinois",
+          "dateFiled": "1987-04-23",
+          "docketNumber": "Nos. 86—1036, 86—2277 cons.",
+          "status": "Published",
+          "citation": [
+            "155 Ill. App. 3d 674",
+            "108 Ill. Dec. 155",
+            "508 N.E.2d 316",
+            "1987 Ill. App. LEXIS 2471"
+          ],
+          "absoluteUrl": "https://www.courtlistener.com/opinion/7115218/bradford-exchange-ag-v-department-of-revenue/"
+        },
+        {
+          "caseName": "United States v. Harry Lynn Hall",
+          "court": "Court of Appeals for the Third Circuit",
+          "dateFiled": "1992-11-12",
+          "docketNumber": "92-7265",
+          "status": "Published",
+          "citation": [
+            "979 F.2d 320",
+            "1992 U.S. App. LEXIS 29832",
+            "1992 WL 328976"
+          ],
+          "absoluteUrl": "https://www.courtlistener.com/opinion/594709/united-states-v-harry-lynn-hall/"
+        },
+        {
+          "caseName": "UNITED STATES of America, Plaintiff-Appellant, v. Hernan RAMIREZ, Defendant-Appellee",
+          "court": "Court of Appeals for the Ninth Circuit",
+          "dateFiled": "1996-08-02",
+          "docketNumber": "16-35526",
+          "status": "Published",
+          "citation": [
+            "91 F.3d 1297",
+            "96 Cal. Daily Op. Serv. 5747",
+            "96 Daily Journal DAR 9407",
+            "1996 U.S. App. LEXIS 18925"
+          ],
+          "absoluteUrl": "https://www.courtlistener.com/opinion/723873/united-states-of-america-plaintiff-appellant-v-hernan-ramirez/"
+        },
+        {
+          "caseName": "United States v. Chin",
+          "court": "District Court, E.D. New York",
+          "dateFiled": "1994-07-25",
+          "docketNumber": "No. CR-92-407 (DRH)",
+          "status": "Published",
+          "citation": [
+            "859 F. Supp. 48",
+            "1994 U.S. Dist. LEXIS 10532",
+            "1994 WL 394767"
+          ],
+          "absoluteUrl": "https://www.courtlistener.com/opinion/8725801/united-states-v-chin/"
+        },
+        {
+          "caseName": "Commonwealth v. Cambric",
+          "court": "Supreme Court of Pennsylvania",
+          "dateFiled": "1977-12-23",
+          "docketNumber": "36",
+          "status": "Published",
+          "citation": [
+            "380 A.2d 1224",
+            "475 Pa. 454",
+            "1977 Pa. LEXIS 916"
+          ],
+          "absoluteUrl": "https://www.courtlistener.com/opinion/1560761/commonwealth-v-cambric/"
+        },
+        {
+          "caseName": "United States v. Geary David Powell, United States of America v. James F. Barfield, United States of America v. Bill Barfield",
+          "court": "Court of Appeals for the Eighth Circuit",
+          "dateFiled": "1985-09-04",
+          "docketNumber": "84-2430",
+          "status": "Published",
+          "citation": [
+            "771 F.2d 1173",
+            "1985 U.S. App. LEXIS 21717"
+          ],
+          "absoluteUrl": "https://www.courtlistener.com/opinion/457766/united-states-v-geary-david-powell-united-states-of-america-v-james-f/"
+        },
+        {
+          "caseName": "Commonwealth v. Jones",
+          "court": "Supreme Court of Pennsylvania",
+          "dateFiled": "1995-05-12",
+          "docketNumber": "",
+          "status": "Published",
+          "citation": [
+            "658 A.2d 746",
+            "540 Pa. 442",
+            "1995 Pa. LEXIS 310"
+          ],
+          "absoluteUrl": "https://www.courtlistener.com/opinion/1972354/commonwealth-v-jones/"
+        },
+        {
+          "caseName": "United States v. Ritchie Daryl Lavender, United States of America v. Jerry Eugene Ross",
+          "court": "Court of Appeals for the Fourth Circuit",
+          "dateFiled": "1979-07-09",
+          "docketNumber": "78-5209, 78-5210",
+          "status": "Published",
+          "citation": [
+            "602 F.2d 639",
+            "1979 U.S. App. LEXIS 13335"
+          ],
+          "absoluteUrl": "https://www.courtlistener.com/opinion/368299/united-states-v-ritchie-daryl-lavender-united-states-of-america-v-jerry/"
+        },
+        {
+          "caseName": "School District No. 3J v. City of Wilsonville",
+          "court": "Court of Appeals of Oregon",
+          "dateFiled": "1987-09-09",
+          "docketNumber": "84-12-165; CA A39158",
+          "status": "Published",
+          "citation": [
+            "742 P.2d 59",
+            "87 Or. App. 246"
+          ],
+          "absoluteUrl": "https://www.courtlistener.com/opinion/1368975/school-district-no-3j-v-city-of-wilsonville/"
+        },
+        {
+          "caseName": "Commonwealth v. Fairell",
+          "court": "Supreme Court of Pennsylvania",
+          "dateFiled": "1977-12-23",
+          "docketNumber": "232 and 248",
+          "status": "Published",
+          "citation": [
+            "381 A.2d 1258",
+            "476 Pa. 128",
+            "1977 Pa. LEXIS 951"
+          ],
+          "absoluteUrl": "https://www.courtlistener.com/opinion/2347775/commonwealth-v-fairell/"
+        },
+        {
+          "caseName": "Commonwealth v. Dollman",
+          "court": "Supreme Court of Pennsylvania",
+          "dateFiled": "1988-05-20",
+          "docketNumber": "6 W.D. Appeal Docket, 1987",
+          "status": "Published",
+          "citation": [
+            "541 A.2d 319",
+            "518 Pa. 86",
+            "1988 Pa. LEXIS 153"
+          ],
+          "absoluteUrl": "https://www.courtlistener.com/opinion/1919135/commonwealth-v-dollman/"
+        },
+        {
+          "caseName": "Commonwealth v. Sample",
+          "court": "Supreme Court of Pennsylvania",
+          "dateFiled": "1983-11-18",
+          "docketNumber": "367",
+          "status": "Published",
+          "citation": [
+            "468 A.2d 799",
+            "321 Pa. Super. 457",
+            "1983 Pa. Super. LEXIS 4271"
+          ],
+          "absoluteUrl": "https://www.courtlistener.com/opinion/2275063/commonwealth-v-sample/"
+        },
+        {
+          "caseName": "Commonwealth v. Thomas",
+          "court": "Supreme Court of Pennsylvania",
+          "dateFiled": "1985-09-13",
+          "docketNumber": "273",
+          "status": "Published",
+          "citation": [
+            "498 A.2d 1345",
+            "346 Pa. Super. 11",
+            "1985 Pa. Super. LEXIS 8024"
+          ],
+          "absoluteUrl": "https://www.courtlistener.com/opinion/2160452/commonwealth-v-thomas/"
+        },
+        {
+          "caseName": "Commonwealth v. Carter",
+          "court": "Supreme Court of Pennsylvania",
+          "dateFiled": "1978-10-05",
+          "docketNumber": "569",
+          "status": "Published",
+          "citation": [
+            "393 A.2d 13",
+            "481 Pa. 495",
+            "1978 Pa. LEXIS 961"
+          ],
+          "absoluteUrl": "https://www.courtlistener.com/opinion/1540858/commonwealth-v-carter/"
+        },
+        {
+          "caseName": "United States v. Maurice Deteige Sheppard",
+          "court": "Court of Appeals for the Fifth Circuit",
+          "dateFiled": "1990-05-14",
+          "docketNumber": "89-1422",
+          "status": "Published",
+          "citation": [
+            "901 F.2d 1230",
+            "1990 U.S. App. LEXIS 7837",
+            "1990 WL 61313"
+          ],
+          "absoluteUrl": "https://www.courtlistener.com/opinion/540344/united-states-v-maurice-deteige-sheppard/"
+        },
+        {
+          "caseName": "Commonwealth v. Balog",
+          "court": "Supreme Court of Pennsylvania",
+          "dateFiled": "1990-06-19",
+          "docketNumber": "1224",
+          "status": "Published",
+          "citation": [
+            "576 A.2d 1092",
+            "395 Pa. Super. 158",
+            "1990 Pa. Super. LEXIS 1350"
+          ],
+          "absoluteUrl": "https://www.courtlistener.com/opinion/1435496/commonwealth-v-balog/"
+        },
+        {
+          "caseName": "Harry Dino Word, A/K/A Harry Dino Hurd v. United States",
+          "court": "Court of Appeals for the Eighth Circuit",
+          "dateFiled": "1979-10-01",
+          "docketNumber": "79-1171",
+          "status": "Published",
+          "citation": [
+            "604 F.2d 1127"
+          ],
+          "absoluteUrl": "https://www.courtlistener.com/opinion/369267/harry-dino-word-aka-harry-dino-hurd-v-united-states/"
+        }
+      ]
+    },
+    {
+      "id": "opinions-mlw-employment",
+      "type": "o",
+      "q": "\"Megan's Law\" employment \"290.46\"",
+      "count": 6,
+      "returned": 6,
+      "hits": [
+        {
+          "caseName": "Doe v. Brown",
+          "court": "California Court of Appeal",
+          "dateFiled": "2009-09-03",
+          "docketNumber": "D053982",
+          "status": "Published",
+          "citation": [
+            "177 Cal. App. 4th 408",
+            "99 Cal. Rptr. 3d 209",
+            "2009 Cal. App. LEXIS 1479"
+          ],
+          "absoluteUrl": "https://www.courtlistener.com/opinion/2275664/doe-v-brown/"
+        },
+        {
+          "caseName": "Doe v. California Dept. of Justice",
+          "court": "California Court of Appeal",
+          "dateFiled": "2009-05-07",
+          "docketNumber": "D053176",
+          "status": "Published",
+          "citation": [
+            "173 Cal. App. 4th 1095",
+            "93 Cal. Rptr. 3d 736",
+            "2009 Cal. App. LEXIS 710"
+          ],
+          "absoluteUrl": "https://www.courtlistener.com/opinion/2245175/doe-v-california-dept-of-justice/"
+        },
+        {
+          "caseName": "People v. J.C. (In re J.C.)",
+          "court": "California Court of Appeal, 5th District",
+          "dateFiled": "2017-08-02",
+          "docketNumber": "C080391",
+          "status": "Published",
+          "citation": [
+            "221 Cal. Rptr. 3d 579",
+            "13 Cal. App. 5th 1201",
+            "2017 WL 3276339",
+            "2017 Cal. App. LEXIS 672"
+          ],
+          "absoluteUrl": "https://www.courtlistener.com/opinion/6238951/people-v-jc-in-re-jc/"
+        },
+        {
+          "caseName": "Opinion No. (2006)",
+          "court": "California Attorney General Reports",
+          "dateFiled": "2006-04-27",
+          "docketNumber": null,
+          "status": "Published",
+          "citation": [],
+          "absoluteUrl": "https://www.courtlistener.com/opinion/3279059/opinion-no-2006/"
+        },
+        {
+          "caseName": "Mendoza v. ADP Screening & Selection Services, Inc.",
+          "court": "California Court of Appeal",
+          "dateFiled": "2010-03-23",
+          "docketNumber": "B214653",
+          "status": "Published",
+          "citation": [
+            "182 Cal. App. 4th 1644",
+            "107 Cal. Rptr. 3d 294",
+            "2010 Cal. App. LEXIS 383"
+          ],
+          "absoluteUrl": "https://www.courtlistener.com/opinion/2276792/mendoza-v-adp-screening-selection-services-inc/"
+        },
+        {
+          "caseName": "Cross v. Cooper",
+          "court": "California Court of Appeal",
+          "dateFiled": "2011-07-11",
+          "docketNumber": "No. H033164",
+          "status": "Published",
+          "citation": [
+            "197 Cal. App. 4th 357",
+            "127 Cal. Rptr. 3d 903",
+            "2011 Cal. App. LEXIS 899"
+          ],
+          "absoluteUrl": "https://www.courtlistener.com/opinion/5810408/cross-v-cooper/"
+        }
+      ]
+    },
+    {
+      "id": "recap-subdiv-j2E",
+      "type": "r",
+      "q": "\"290.46(j)(2)(E)\"",
+      "count": 2,
+      "returned": 2,
+      "hits": [
+        {
+          "caseName": "Roberto Sandoval Carrillo v. The Vons Companies, Inc.",
+          "court": "District Court, C.D. California",
+          "dateFiled": "2025-01-31",
+          "docketNumber": "8:25-cv-00191",
+          "docketId": 69602414,
+          "assignedTo": "Serena R. Murillo",
+          "dateTerminated": null,
+          "absoluteUrl": "https://www.courtlistener.com/docket/69602414/roberto-sandoval-carrillo-v-the-vons-companies-inc/",
+          "matchedFilings": [
+            {
+              "entryNumber": 1,
+              "description": "Complaint (Attorney Civil Case Opening)",
+              "dateFiled": "2025-01-31",
+              "snippet": "                                     Case 8:25-cv-00191-SRM-KES                Document 1   Filed 01/31/25   Page 1 of 20 Page ID\n                                                                                     #:1\n\n\n\n                                                    1    RAY KIM LAW, APC\n                                                         Raymond Y. Kim (SBN 251210)\n                                                    2    112 E. Amerige Ave., Suite 240\n                               "
+            }
+          ]
+        },
+        {
+          "caseName": "Miguel Lerma, Jr. v. Amazon.com Services, LLC",
+          "court": "District Court, C.D. California",
+          "dateFiled": "2022-09-21",
+          "docketNumber": "8:22-cv-01727",
+          "docketId": 65366322,
+          "assignedTo": "Fred W. Slaughter",
+          "dateTerminated": "2023-09-29",
+          "absoluteUrl": "https://www.courtlistener.com/docket/65366322/miguel-lerma-jr-v-amazoncom-services-llc/",
+          "matchedFilings": [
+            {
+              "entryNumber": 24,
+              "description": "Memorandum of Points and Authorities in Support of Defendants' Motion to Di",
+              "dateFiled": "2022-12-15",
+              "snippet": "        Case 8:22-cv-01727-FWS-JDE Document 24-1 Filed 12/15/22 Page 1 of 18 Page ID #:161\n\n\n\n                    1   MORGAN, LEWIS & BOCKIUS LLP\n                        Andrew P. Frederick, Bar No. 284832\n                    2   andrew.frederick@morganlewis.com\n                        Ashlee N. Cherry, Bar No. 312731\n                    3   ashlee.cherry@morganlewis.com\n                        Aleksandr Markelov, Bar No. 319235\n                    4   aleksandr.markelov@morganlewis.com\n        "
+            },
+            {
+              "entryNumber": 1,
+              "description": "Complaint (Attorney Civil Case Opening)",
+              "dateFiled": "2022-09-21",
+              "snippet": "                                     Case 8:22-cv-01727-FWS-JDE Document 1 Filed 09/21/22 Page 1 of 19 Page ID #:1\n\n\n\n\n                                                   1    RAY KIM LAW, APC\n                                                        Raymond Y. Kim (SBN 251210)\n                                                   2    355 South Grand Avenue, Suite 2450\n                                                        Los Angeles, CA 90071\n                                                   3   "
+            },
+            {
+              "entryNumber": 20,
+              "description": "Amended Complaint/Petition",
+              "dateFiled": "2022-11-15",
+              "snippet": "                           Case 8:22-cv-01727-FWS-JDE Document 20 Filed 11/15/22 Page 1 of 23 Page ID #:69\n\n\n\n\n                                                  1    RAY KIM LAW, APC\n                                                       Raymond Y. Kim (SBN 251210)\n                                                  2    355 South Grand Avenue, Suite 2450\n                                                       Los Angeles, CA 90071\n                                                  3    Telephone: 8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recap-subdiv-j",
+      "type": "r",
+      "q": "\"290.46(j)\"",
+      "count": 7,
+      "returned": 7,
+      "hits": [
+        {
+          "caseName": "Roberto Sandoval Carrillo v. The Vons Companies, Inc.",
+          "court": "District Court, C.D. California",
+          "dateFiled": "2025-01-31",
+          "docketNumber": "8:25-cv-00191",
+          "docketId": 69602414,
+          "assignedTo": "Serena R. Murillo",
+          "dateTerminated": null,
+          "absoluteUrl": "https://www.courtlistener.com/docket/69602414/roberto-sandoval-carrillo-v-the-vons-companies-inc/",
+          "matchedFilings": [
+            {
+              "entryNumber": 1,
+              "description": "Complaint (Attorney Civil Case Opening)",
+              "dateFiled": "2025-01-31",
+              "snippet": "                                     Case 8:25-cv-00191-SRM-KES                Document 1   Filed 01/31/25   Page 1 of 20 Page ID\n                                                                                     #:1\n\n\n\n                                                    1    RAY KIM LAW, APC\n                                                         Raymond Y. Kim (SBN 251210)\n                                                    2    112 E. Amerige Ave., Suite 240\n                               "
+            }
+          ]
+        },
+        {
+          "caseName": "Faith Wilson v. City of Pomona",
+          "court": "District Court, C.D. California",
+          "dateFiled": "2024-03-30",
+          "docketNumber": "2:24-cv-02605",
+          "docketId": 68394370,
+          "assignedTo": "Dean D. Pregerson",
+          "dateTerminated": "2024-08-02",
+          "absoluteUrl": "https://www.courtlistener.com/docket/68394370/faith-wilson-v-city-of-pomona/",
+          "matchedFilings": [
+            {
+              "entryNumber": 21,
+              "description": "Dismiss Case",
+              "dateFiled": "2024-06-11",
+              "snippet": "Case 2:24-cv-02605-DDP-PVC Document 21 Filed 06/11/24 Page 1 of 7 Page ID #:75\n\n\n\n 1\n 2\n 3                                                                        O\n 4\n 5\n 6\n 7\n 8                         UNITED STATES DISTRICT COURT\n 9                        CENTRAL DISTRICT OF CALIFORNIA\n10\n11   FAITH WILSON,                     )   Case No. CV 24-02605 DDP (PVCx)\n                                       )\n12                     Plaintiff,      )\n                                       )\n13        "
+            }
+          ]
+        },
+        {
+          "caseName": "Ingenus Pharmaceuticals, LLC v. Accord Healthcare, Inc.",
+          "court": "District Court, D. Delaware",
+          "dateFiled": "2023-04-03",
+          "docketNumber": "1:23-cv-00377",
+          "docketId": 67126244,
+          "assignedTo": "Jennifer L. Hall",
+          "dateTerminated": "2025-04-01",
+          "absoluteUrl": "https://www.courtlistener.com/docket/67126244/ingenus-pharmaceuticals-llc-v-accord-healthcare-inc/",
+          "matchedFilings": [
+            {
+              "entryNumber": 79,
+              "description": "Exhibit 1 - 16",
+              "dateFiled": "2025-02-26",
+              "snippet": "Case 1:23-cv-00377-JLH   Document 79-1 Filed 02/26/25   Page 1 of 317 PageID #:\n                                    1570\n\n\n\n\n                           EXHIBIT 1\n           Statement of Uncontested Facts\n\n\n         REDACTED PUBLIC VERSION\n\fCase 1:23-cv-00377-JLH          Document 79-1 Filed 02/26/25             Page 2 of 317 PageID #:\n                                           1571\n\n\n\n\n  I. NATURE OF THE DISPUTE\n\n         1.   Plaintiffs Ingenus Pharmaceuticals LLC (“Ingenus”) and Leiutis Pharma"
+            }
+          ]
+        },
+        {
+          "caseName": "Miguel Lerma, Jr. v. Amazon.com Services, LLC",
+          "court": "District Court, C.D. California",
+          "dateFiled": "2022-09-21",
+          "docketNumber": "8:22-cv-01727",
+          "docketId": 65366322,
+          "assignedTo": "Fred W. Slaughter",
+          "dateTerminated": "2023-09-29",
+          "absoluteUrl": "https://www.courtlistener.com/docket/65366322/miguel-lerma-jr-v-amazoncom-services-llc/",
+          "matchedFilings": [
+            {
+              "entryNumber": 23,
+              "description": "Memorandum of Points and Authorities",
+              "dateFiled": "2022-12-15",
+              "snippet": "Case 8:22-cv-01727-FWS-JDE Document 23-1 Filed 12/15/22 Page 1 of 28 Page ID #:107\n\n\n\n    1    Ronald I. Raether, Bar No. 303118\n         ron.raether@troutman.com\n    2    TROUTMAN PEPPER HAMILTON SANDERS LLP\n         5 Park Plaza, Suite 1400\n    3    Irvine, CA 92614-2545\n         Telephone: 949.622.2700\n    4    Facsimile: 949.622.2739\n    5    Jessica Lohr, Bar No. 302348\n         jessica.lohr@troutman.com\n    6    TROUTMAN PEPPER HAMILTON SANDERS LLP\n         11682 El Camino Real, Suite 400\n"
+            },
+            {
+              "entryNumber": 24,
+              "description": "Memorandum of Points and Authorities in Support of Defendants' Motion to Di",
+              "dateFiled": "2022-12-15",
+              "snippet": "        Case 8:22-cv-01727-FWS-JDE Document 24-1 Filed 12/15/22 Page 1 of 18 Page ID #:161\n\n\n\n                    1   MORGAN, LEWIS & BOCKIUS LLP\n                        Andrew P. Frederick, Bar No. 284832\n                    2   andrew.frederick@morganlewis.com\n                        Ashlee N. Cherry, Bar No. 312731\n                    3   ashlee.cherry@morganlewis.com\n                        Aleksandr Markelov, Bar No. 319235\n                    4   aleksandr.markelov@morganlewis.com\n        "
+            },
+            {
+              "entryNumber": 36,
+              "description": "Dismiss AND Dismiss",
+              "dateFiled": "2023-05-26",
+              "snippet": "    Case 8:22-cv-01727-FWS-JDE Document 36 Filed 05/26/23 Page 1 of 14 Page ID #:320\n\n       __________________________________________________________________\n                            UNITED STATES DISTRICT COURT\n                           CENTRAL DISTRICT OF CALIFORNIA\n\n                                   CIVIL MINUTES – GENERAL\n\nCase No.: 8:22-cv-01727-FWS-JDE                                         Date: May 26, 2023\nTitle: Miguel Lerma, Jr. v. Amazon.com Services, LLC et al.\n\n\nPresent: HO"
+            }
+          ]
+        },
+        {
+          "caseName": "People of Los Angeles County Who Are Being Penally Confined in Pre-Trial Detention Because of and Dependent Upon Their Inability To Pay Bail v. Alejandro Villanueva",
+          "court": "District Court, C.D. California",
+          "dateFiled": "2022-04-15",
+          "docketNumber": "2:22-cv-02538",
+          "docketId": 63241003,
+          "assignedTo": "Michael Walter Fitzgerald",
+          "dateTerminated": "2022-10-07",
+          "absoluteUrl": "https://www.courtlistener.com/docket/63241003/people-of-los-angeles-county-who-are-being-penally-confined-in-pre-trial/",
+          "matchedFilings": [
+            {
+              "entryNumber": 23,
+              "description": "",
+              "dateFiled": "2022-05-06",
+              "snippet": "Case 2:22-cv-02538-DMG-JEM Document 23-3 Filed 05/06/22 Page 1 of 193 Page ID\n                                  #:210\n\n\n\n\n                          Exhibit C\n\f       Case 2:22-cv-02538-DMG-JEM Document 23-3 Filed 05/06/22 Page 2 of 193 Page ID\n                                         #:211\ni< >\n/\nz\nL\n*\na\nm\n*\n§\ni\n01\n\n\n\n\n                  O\n                                            a\n                                m           m\n                                            >\n                     "
+            }
+          ]
+        },
+        {
+          "caseName": "United Therapeutics Corporation v. Liquidia Technologies, Inc.",
+          "court": "District Court, D. Delaware",
+          "dateFiled": "2020-06-04",
+          "docketNumber": "1:20-cv-00755",
+          "docketId": 17225404,
+          "assignedTo": "Richard Gibson Andrews",
+          "dateTerminated": "2022-09-09",
+          "absoluteUrl": "https://www.courtlistener.com/docket/17225404/united-therapeutics-corporation-v-liquidia-technologies-inc/",
+          "matchedFilings": [
+            {
+              "entryNumber": 365,
+              "description": "Redacted Document",
+              "dateFiled": "2022-03-18",
+              "snippet": "Case 1:20-cv-00755-RGA Document 365 Filed 03/18/22 Page 1 of 1158 PageID #: 31582\n\n\n\n\n                          IN THE UNITED STATES DISTRICT COURT\n                              FOR THE DISTRICT OF DELAWARE\n\n\n   UNITED THERAPEUTICS                          )\n   CORPORATION,                                 )\n                                                )\n                         Plaintiff,             )\n                                                ) C.A. No. 20-755 (RGA)\n          v.       "
+            }
+          ]
+        },
+        {
+          "caseName": "City of Combs Tx v. East Rio Hondo Water",
+          "court": "District Court, S.D. Texas",
+          "dateFiled": "2002-09-04",
+          "docketNumber": "1:02-cv-00169",
+          "docketId": 4397180,
+          "assignedTo": null,
+          "dateTerminated": "2003-10-28",
+          "absoluteUrl": "https://www.courtlistener.com/docket/4397180/city-of-combs-tx-v-east-rio-hondo-water/",
+          "matchedFilings": [
+            {
+              "entryNumber": 11,
+              "description": "Motion for Reconsideration",
+              "dateFiled": "2002-12-19",
+              "snippet": "Case 1:02-cv-00169 Document 11 Filed in TXSD on 12;1`9/2002 Page 1 of 88 //\n\nIN THE UNITED sTATEs DISTRICT CoURT using wm n;sm¢ scm\nFoR THE SoUTHERN DISTRICT 0F TEXAS S°a\"i\"§*\"‘ [\"*’J °* mm\nBROWNSVILLE DIVIsIoN\nDEC 1 9 2002\n\nCITY OF COMBES, TEXAS, OLGA\nMONTES, Individually and in her\nCapacity as Alderman for the city of\nCombes, Texas, ANTONIO\nHERNANDEZ and MARIAN\nHERNANDEZ,\n\nPlaintiffs\n\nrv;zchaes N. mizby\nClerk of Court\n\nCIVIL ACTION NO. B-02-169\n\nVS.\n\nEAST RIO HONDO WATER SUPPLY\nCORPORATION, B."
+            },
+            {
+              "entryNumber": 14,
+              "description": "Response in Opposition to Motion",
+              "dateFiled": "2002-12-27",
+              "snippet": "Case 1:02-cv-00169 Docunl§nt 14 Filed in TXSD on 12/27/209§ Page 1 of 87 /$[\n\ng\n\nIN THE UNITED sTATEs DISTRICT coURT U\"'E'¢§,'r'f.‘*‘\"‘ t ‘§“'§,wl'f,'i\nFoR THE soUTHERN DISTRICT 0F TEXAS EI‘LES'° °\"“\nBROWNSVILLE DIVISION DEC 2 7 2002\ncITY 0F cOMBES, TEXAS, OLGA Michm N. umw\nMONTES, Individually and in her clerk of COU|'£\n\nCapacity as Alderman for the City of\nCombes, Texas, ANTONIO\nHERNANDEZ and MARIAN\nHERNANDEZ,\n\nPlaintiffs\n\nCIVIL ACTION NO. B-02-169\n\nVS.\n\nEAST RIO HONDO WATER SUPPLY\nCORPORATION"
+            },
+            {
+              "entryNumber": 23,
+              "description": "Motion to Dismiss",
+              "dateFiled": "2003-02-04",
+              "snippet": "Case 1 :02-cv-00169 Document 23\n\nFiled in TXSD On 02/94/2003 Page 1 Of 126\n\nQ»':\n\nIN THE UNITED STATES DISTRICT COURT U\"i’~°’¢ 3***'>.* 5?»\"““' dam\n\nS,¢.';= w z =)z':r,£ f :€ 5\nFoR THE sOUTHERN DISTRICT 0F TEXAS ‘ “ §.: :u \" n §\nBROWNSVILLE DIVISION ,\nFEB` 0 4 ZUUJ\ncer OF cOMBES, TEXAS, 0LGA michael N. mnw\nMONTES, Individuauy and in her BEN 9* sam\n\nCapacity as Alderman for the City of\nCombes, Texas, ANTONIO\nHERNANDEZ and MARIAN\nHERNANDEZ,\n\nPlaintiffs\n\nVS.\n\nEAST RIO HONDO WATER SUPPLY\nCORPORATION"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recap-subdiv-l",
+      "type": "r",
+      "q": "\"290.46(l)\"",
+      "count": 5,
+      "returned": 5,
+      "hits": [
+        {
+          "caseName": "Thomson Reuters Enterprise Centre GmbH v. ROSS Intelligence Inc.",
+          "court": "District Court, D. Delaware",
+          "dateFiled": "2020-05-06",
+          "docketNumber": "1:20-cv-00613",
+          "docketId": 17131648,
+          "assignedTo": "Stephanos Bibas",
+          "dateTerminated": null,
+          "absoluteUrl": "https://www.courtlistener.com/docket/17131648/thomson-reuters-enterprise-centre-gmbh-v-ross-intelligence-inc/",
+          "matchedFilings": [
+            {
+              "entryNumber": 690,
+              "description": "Exhibit 16 part 2",
+              "dateFiled": "2024-10-01",
+              "snippet": "                                                                                                                                                                                                                                                                                                                                                          Length Differential\n                                          WKNS Topic + Key                                                                            "
+            }
+          ]
+        },
+        {
+          "caseName": "(PS) Mitchell v. Brown",
+          "court": "District Court, E.D. California",
+          "dateFiled": "2014-12-29",
+          "docketNumber": "2:14-cv-02993",
+          "docketId": 5954605,
+          "assignedTo": "Morrison C. England Jr.",
+          "dateTerminated": "2016-04-21",
+          "absoluteUrl": "https://www.courtlistener.com/docket/5954605/ps-mitchell-v-brown/",
+          "matchedFilings": [
+            {
+              "entryNumber": 19,
+              "description": "",
+              "dateFiled": "2015-06-30",
+              "snippet": "     Case 2:14-cv-02993-MCE-AC Document 19 Filed 06/30/15 Page 1 of 13\n\n 1\n\n 2\n\n 3\n\n 4\n\n 5\n\n 6\n\n 7\n\n 8                                   UNITED STATES DISTRICT COURT\n 9                          FOR THE EASTERN DISTRICT OF CALIFORNIA\n10\n\n11   RODERICK L. MITCHELL,                              No. 2:14-cv-2993 MCE AC (PS)\n12                      Plaintiff,\n13          v.                                          FINDINGS AND RECOMMENDATIONS\n14   JERRY BROWN, GOVERNOR OF\n     CALIFORNIA, et al.,\n15\n"
+            }
+          ]
+        },
+        {
+          "caseName": "Donaleski v. Wal-Mart Stores, Inc.",
+          "court": "District Court, E.D. California",
+          "dateFiled": "2008-01-29",
+          "docketNumber": "2:08-cv-00219",
+          "docketId": 5805571,
+          "assignedTo": "John A. Mendez",
+          "dateTerminated": "2009-05-08",
+          "absoluteUrl": "https://www.courtlistener.com/docket/5805571/donaleski-v-wal-mart-stores-inc/",
+          "matchedFilings": [
+            {
+              "entryNumber": 46,
+              "description": "",
+              "dateFiled": "2009-05-08",
+              "snippet": " 1\n\n 2\n\n 3\n\n 4\n\n 5\n\n 6\n\n 7\n\n 8                   IN THE UNITED STATES DISTRICT COURT\n 9                 FOR THE EASTERN DISTRICT OF CALIFORNIA\n10\n\n11   JAMES DONALESKI,                      Case No. 2:08-cv-00219-JAM-JFM\n12                                           ORDER GRANTING DEFENDANT’S\n               Plaintiff,\n                                            MOTION FOR SUMMARY JUDGMENT\n13\n         v.\n14\n     WAL-MART STORES, INC., and DOES\n15   1 through 20, inclusive,\n16\n              Defenda"
+            }
+          ]
+        },
+        {
+          "caseName": "Adamski v. Martis",
+          "court": "District Court, N.D. California",
+          "dateFiled": "2007-06-25",
+          "docketNumber": "5:07-cv-03307",
+          "docketId": 4167702,
+          "assignedTo": "Ronald M. Whyte",
+          "dateTerminated": "2007-08-09",
+          "absoluteUrl": "https://www.courtlistener.com/docket/4167702/adamski-v-martis/",
+          "matchedFilings": [
+            {
+              "entryNumber": 20,
+              "description": "Order on Ex Parte Application",
+              "dateFiled": "2007-07-09",
+              "snippet": "                                               Case 5:07-cv-03307-RMW          Document 20        Filed 07/09/2007       Page 1 of 10\n\n\n\n                                           1\n                                           2\n                                           3                                                                       E-FILED:            7/9/07\n                                           4\n                                           5\n                                         "
+            }
+          ]
+        },
+        {
+          "caseName": "Pastrana v. Local 9509, Communications Workers of America, AFL-CIO",
+          "court": "District Court, S.D. California",
+          "dateFiled": "2006-09-01",
+          "docketNumber": "3:06-cv-01779",
+          "docketId": 5983762,
+          "assignedTo": null,
+          "dateTerminated": "2011-08-08",
+          "absoluteUrl": "https://www.courtlistener.com/docket/5983762/pastrana-v-local-9509-communications-workers-of-america-afl-cio/",
+          "matchedFilings": [
+            {
+              "entryNumber": 93,
+              "description": "",
+              "dateFiled": "2008-11-20",
+              "snippet": "Case 3:06-cv-01779-BTM-MDD Document 93 Filed 11/20/08 PageID.4404 Page 1 of 21\n\n\n\n   1\n   2\n   3\n   4\n   5\n   6\n   7\n   8\n   9\n  10                       UNITED STATES DISTRICT COURT\n  11                    SOUTHERN DISTRICT OF CALIFORNIA\n  12\n  13   ALBERTO PASTRANA,                             CASE NO: 06-CV-1779 W(AJB)\n  14\n                                        Plaintiff,   ORDER GRANTING IN-PART\n  15                                                 AND DENYING IN-PART\n  16            v.    "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recap-mlw-website",
+      "type": "r",
+      "q": "\"Megan's Law website\" employment",
+      "count": 1,
+      "returned": 1,
+      "hits": [
+        {
+          "caseName": "The Roman Catholic Bishop of Oakland",
+          "court": "United States Bankruptcy Court, N.D. California",
+          "dateFiled": "2023-05-08",
+          "docketNumber": "23-40523",
+          "docketId": 67345466,
+          "assignedTo": "William J. Lafferty",
+          "dateTerminated": null,
+          "absoluteUrl": "https://www.courtlistener.com/docket/67345466/the-roman-catholic-bishop-of-oakland/",
+          "matchedFilings": [
+            {
+              "entryNumber": 235,
+              "description": "Exhibit B",
+              "dateFiled": "2023-07-14",
+              "snippet": "EXHIBIT B\n\nCase: 23-40523 Doc# 235-2 Filed: 07/14/23 Entered: 07/14/23 13:09:06 Pagel\nof 22\n\f10\n1\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n\nCasé¢\n\nMAT A\n\nFILED\nALAMEDA COUNTY\n\nCLERK OF THE SUPERIOR COURT\n\nWi i\n\nBy.\nDajnaty\nSUPERIOR COURT OF THE STATE OF CALIFORNIA\nIN AND FOR THE COUNTY OF ALAMEDA\nCoordinated Proceeding No. JCCP 5108\nSpecial Title (Rule 3.550) [PROPOSED] ORDER APPROVING C.C.P.\nNORTHERN CALIFORNIA CLERGY _ | 340-1(g) AND (m) CERTIFICATE FORMS\nCASES\n\nJudge: Hon. Winifred "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recap-parallel-290-4",
+      "type": "r",
+      "q": "\"290.4(d)\"",
+      "count": 7,
+      "returned": 7,
+      "hits": [
+        {
+          "caseName": "In Re: Ivantis, Inc.",
+          "court": "District Court, D. Delaware",
+          "dateFiled": "2023-08-10",
+          "docketNumber": "1:23-mc-00373",
+          "docketId": 67683295,
+          "assignedTo": "Gregory B. Williams",
+          "dateTerminated": "2024-01-02",
+          "absoluteUrl": "https://www.courtlistener.com/docket/67683295/in-re-ivantis-inc/",
+          "matchedFilings": [
+            {
+              "entryNumber": 29,
+              "description": "",
+              "dateFiled": "2023-07-21",
+              "snippet": "Case 1:23-mc-00373-GBW Document 29 Filed 07/21/23 Page 1 of 32 PageID #: 275\n\n\n\n\n                IN THE UNITED STATES DISTRICT COURT\n               FOR THE NORTHERN DISTRICT OF GEORGIA\n                          ATLANTA DIVISION\n\n SIGHT SCIENCES, INC.,\n\n               Plaintiff,             Case No.: 1:23mi59-LMM-JCF\n      v.                              Underlying Litigation:\n IVANTIS, INC., ALCON RESEARCH Case No. 21:1317-GBW-SRF\n LLC, ALCON VISION, LLC, and   United States District Court\n ALCO"
+            }
+          ]
+        },
+        {
+          "caseName": "Andrews v. D'Souza",
+          "court": "District Court, N.D. Georgia",
+          "dateFiled": "2022-10-26",
+          "docketNumber": "1:22-cv-04259",
+          "docketId": 65639379,
+          "assignedTo": "Steven Daniel Grimberg",
+          "dateTerminated": "2026-07-30",
+          "absoluteUrl": "https://www.courtlistener.com/docket/65639379/andrews-v-dsouza/",
+          "matchedFilings": [
+            {
+              "entryNumber": 250,
+              "description": "Statement of Material Facts",
+              "dateFiled": "2024-12-20",
+              "snippet": "   Case 1:22-cv-04259-SDG                  Document 250-1            Filed 12/20/24         Page 1 of 63\n\n\n\n\n                    IN THE UNITED STATES DISTRICT COURT\n                   FOR THE NORTHERN DISTRICT OF GEORGIA\n                             ATLANTA DIVISION\n\n\n\n              MARK ANDREWS,\n\n                              Plaintiff,\n                      v.                                Case No. 1:22-cv-04259-SDG\n\n              DINESH D'SOUZA, et al.,\n\n                              Defenda"
+            }
+          ]
+        },
+        {
+          "caseName": "Netlist, Inc. v. SAMSUNG ELECTRONICS CO., LTD.",
+          "court": "District Court, E.D. Texas",
+          "dateFiled": "2021-12-20",
+          "docketNumber": "2:21-cv-00463",
+          "docketId": 61631188,
+          "assignedTo": "James Rodney Gilstrap",
+          "dateTerminated": "2023-08-11",
+          "absoluteUrl": "https://www.courtlistener.com/docket/61631188/netlist-inc-v-samsung-electronics-co-ltd/",
+          "matchedFilings": [
+            {
+              "entryNumber": 661,
+              "description": "Reply to Response to Motion",
+              "dateFiled": "2025-01-29",
+              "snippet": "Case 2:21-cv-00463-JRG        Document 661 Filed 01/29/25    Page 1 of 13 PageID #:\n                                        89596\n\n\n                         IN THE UNITED STATES DISTRICT COURT\n                          FOR THE EASTERN DISTRICT OF TEXAS\n                                  MARSHALL DIVISION\n\n\n\nNETLIST, INC.                                  Civil Case No. 2:21cv463-JRG\n\n            Plaintiff,                         JURY TRIAL DEMANDED\n\nv.\n\nSAMSUNG ELECTRONICS CO., LTD.,\nSAMSUNG ELEC"
+            }
+          ]
+        },
+        {
+          "caseName": "VALSARTAN LOSARTAN AND IRBESARTAN PRODUCTS LIABILITY LITIGATION",
+          "court": "District Court, D. New Jersey",
+          "dateFiled": "2019-02-14",
+          "docketNumber": "1:19-md-02875",
+          "docketId": 14819816,
+          "assignedTo": "Renee Marie Bumb",
+          "dateTerminated": null,
+          "absoluteUrl": "https://www.courtlistener.com/docket/14819816/valsartan-losartan-and-irbesartan-products-liability-litigation/",
+          "matchedFilings": [
+            {
+              "entryNumber": 2292,
+              "description": "Exhibit 10 -- Najafi Dep",
+              "dateFiled": "2023-03-13",
+              "snippet": "Case 1:19-md-02875-RMB-SAK   Document 2292-12   Filed 03/13/23   Page 1 of 54\n                              PageID: 80614\n\n\n\n\n               EXHIBIT 10\n\fCase 1:19-md-02875-RMB-SAK    Document 2292-12         Filed 03/13/23    Page 2 of 54\n                               PageID: 80615\n\n\n                                                                        Page 265\n\n 1                           UNITED STATES DISTRICT COURT\n                             DISTRICT OF NEW JERSEY\n 2                    "
+            }
+          ]
+        },
+        {
+          "caseName": "SOUTHERN POVERTY LAW CENTER v. U.S. DEPARTMENT OF HOMELAND SECURITY",
+          "court": "District Court, District of Columbia",
+          "dateFiled": "2018-04-04",
+          "docketNumber": "1:18-cv-00760",
+          "docketId": 6354631,
+          "assignedTo": "Colleen Kollar-Kotelly",
+          "dateTerminated": "2023-04-20",
+          "absoluteUrl": "https://www.courtlistener.com/docket/6354631/southern-poverty-law-center-v-us-department-of-homeland-security/",
+          "matchedFilings": [
+            {
+              "entryNumber": 47,
+              "description": "Memorandum in Support",
+              "dateFiled": "2018-09-26",
+              "snippet": " Case 1:18-cv-00760-CKK-RMM Document 47-1 Filed 09/26/18 Page 1 of 35\n\n\n\n\n                       UNITED STATES DISTRICT COURT\n                       FOR THE DISTRICT OF COLUMBIA\n\n\nSOUTHERN POVERTY LAW CENTER,\n\n          Plaintiff,\n\n     v.\n                                       Civil A. No. 18-0760 (CKK)\nU.S. DEPARTMENT OF HOMELAND\nSECURITY, et al.,\n\n          Defendants.\n\n\n\n\n     MEMORANDUM OF POINTS AND AUTHORITIES IN SUPPORT OF\n      DEFENDANTS’ MOTION TO SEVER AND TRANSFER VENUE\n\n\n\n\n        "
+            }
+          ]
+        },
+        {
+          "caseName": "Michael McGroarty v. American Background Information Services Inc",
+          "court": "District Court, C.D. California",
+          "dateFiled": "2008-10-03",
+          "docketNumber": "5:08-cv-01360",
+          "docketId": 5752167,
+          "assignedTo": "Virginia A. Phillips",
+          "dateTerminated": "2009-04-08",
+          "absoluteUrl": "https://www.courtlistener.com/docket/5752167/michael-mcgroarty-v-american-background-information-services-inc/",
+          "matchedFilings": [
+            {
+              "entryNumber": 21,
+              "description": "",
+              "dateFiled": "2009-04-08",
+              "snippet": "CaSe\n\nLC®\\`|O\\UTIJ>LA->[\\)l-\"\n\nw w m w m w w w w w w w w w H H w H H\nm q m m » w w w o w m q m m h w w w o\n\n \n\n5:08-CV-01360-VAP-OP Document 21 Filed 04/08/09 Page 1 of 12 Page |D #:279\n\nUNITED STATES DISTRICT COURT\nCENTRAL DISTRICT OF CALIFORNIA\n\ncase No. EDcv 08-1360`-vAP\n\nMICHAEL MCGROARTY, and\n(OPx)\n\non behalf of all others\nsimilarly situated,\n[Motion filed on March 2,\n\n2009]\n\nORDER GRANTING MOTION FOR\nJUDGMENT CN THE PLEADINGS\n\nPlaintiff,\nv.\n\nAMERICAN BACKGROUND\nINFORMATION SERVICES,\nINC., "
+            }
+          ]
+        },
+        {
+          "caseName": "Donaleski v. Wal-Mart Stores, Inc.",
+          "court": "District Court, E.D. California",
+          "dateFiled": "2008-01-29",
+          "docketNumber": "2:08-cv-00219",
+          "docketId": 5805571,
+          "assignedTo": "John A. Mendez",
+          "dateTerminated": "2009-05-08",
+          "absoluteUrl": "https://www.courtlistener.com/docket/5805571/donaleski-v-wal-mart-stores-inc/",
+          "matchedFilings": [
+            {
+              "entryNumber": 46,
+              "description": "",
+              "dateFiled": "2009-05-08",
+              "snippet": " 1\n\n 2\n\n 3\n\n 4\n\n 5\n\n 6\n\n 7\n\n 8                   IN THE UNITED STATES DISTRICT COURT\n 9                 FOR THE EASTERN DISTRICT OF CALIFORNIA\n10\n\n11   JAMES DONALESKI,                      Case No. 2:08-cv-00219-JAM-JFM\n12                                           ORDER GRANTING DEFENDANT’S\n               Plaintiff,\n                                            MOTION FOR SUMMARY JUDGMENT\n13\n         v.\n14\n     WAL-MART STORES, INC., and DOES\n15   1 through 20, inclusive,\n16\n              Defenda"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
