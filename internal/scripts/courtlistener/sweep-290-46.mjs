@@ -21,13 +21,21 @@ const OUT_PATH = path.join(OUT_DIR, "290-46-recap-sweep.json");
 const MIN_INTERVAL_MS = 13_000;
 
 // type=o searches opinion text; type=r searches RECAP filings (complaints, briefs).
+//
+// A bare "290.46" is useless: CourtListener tokenizes it so it also matches the
+// dollar amount $290.46, and the first sweep drowned in bankruptcy claim schedules
+// (540 RECAP "hits", almost all noise). Query the subdivision strings instead. Both
+// numberings are searched because the employment restriction sat at (l) before the
+// renumbering and at (j)(2)(E) after it, so old and new filings spell it differently.
 const QUERIES = [
-  { id: "opinions-bare", type: "o", q: '"290.46"' },
-  { id: "opinions-employment", type: "o", q: '"290.46" employment' },
-  { id: "recap-bare", type: "r", q: '"290.46"' },
-  { id: "recap-employment", type: "r", q: '"290.46" employment' },
-  { id: "recap-subdivision", type: "r", q: '"290.46(j)(2)(E)"' },
-  { id: "recap-megans-law-employment", type: "r", q: '"Megan\'s Law" employment "background check"' },
+  { id: "opinions-subdiv-j", type: "o", q: '"290.46(j)"' },
+  { id: "opinions-subdiv-l", type: "o", q: '"290.46(l)"' },
+  { id: "opinions-mlw-employment", type: "o", q: '"Megan\'s Law" employment "290.46"' },
+  { id: "recap-subdiv-j2E", type: "r", q: '"290.46(j)(2)(E)"' },
+  { id: "recap-subdiv-j", type: "r", q: '"290.46(j)"' },
+  { id: "recap-subdiv-l", type: "r", q: '"290.46(l)"' },
+  { id: "recap-mlw-website", type: "r", q: '"Megan\'s Law website" employment' },
+  { id: "recap-parallel-290-4", type: "r", q: '"290.4(d)"' },
 ];
 
 const dryRun = process.argv.includes("--dry-run");

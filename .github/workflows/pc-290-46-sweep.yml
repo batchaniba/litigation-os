@@ -57,10 +57,12 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet -- internal/docs/legal-intel/recon/290-46-recap-sweep.json; then
+          # Stage first: git diff ignores untracked files, so diffing before adding
+          # reports "no change" on the very first run and silently drops the result.
+          git add internal/docs/legal-intel/recon/290-46-recap-sweep.json
+          if git diff --cached --quiet; then
             echo "No change in sweep output."
             exit 0
           fi
-          git add internal/docs/legal-intel/recon/290-46-recap-sweep.json
           git commit -m "chore(intel): CourtListener 290.46 full-text sweep results"
           git push origin HEAD:"${{ github.ref_name }}"
