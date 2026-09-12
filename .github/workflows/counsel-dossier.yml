@@ -8,8 +8,8 @@ on:
   workflow_dispatch:
     inputs:
       name:
-        description: 'Opposing counsel full name (e.g. "Nathan D. Chapman")'
-        required: true
+        description: 'Opposing counsel full name (e.g. "Nathan D. Chapman"). Omit to auto-discover from the matter''s bound docket parties.'
+        required: false
         type: string
       firm:
         description: 'Firm name (e.g. "Kabat Chapman & Ozmer LLP")'
@@ -82,7 +82,8 @@ jobs:
 
       - name: Build dossier
         run: |
-          ARGS=(--name "${{ inputs.name }}")
+          ARGS=()
+          if [ -n "${{ inputs.name }}" ]; then ARGS+=(--name "${{ inputs.name }}"); fi
           if [ -n "${{ inputs.firm }}" ]; then ARGS+=(--firm "${{ inputs.firm }}"); fi
           if [ -n "${{ inputs.matter }}" ]; then ARGS+=(--matter "${{ inputs.matter }}"); fi
           if [ -n "${{ inputs.attorney_id }}" ]; then ARGS+=(--attorney-id "${{ inputs.attorney_id }}"); fi
