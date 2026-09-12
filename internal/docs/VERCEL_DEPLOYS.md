@@ -57,8 +57,7 @@ GitHub Pages rewrite, and
 
 Vercel reads that key from the repository at push time, so the file must be
 committed even though it is generated. The pre-commit hook re-runs the
-generator when the catalog changes, and CI fails if the committed copy is
-stale. Do not hand-edit it.
+generator when the catalog changes. Do not hand-edit it.
 
 ### `internal/scripts/vercel-ignore-build.sh`
 
@@ -94,12 +93,30 @@ short-link outputs before `npm run dev` / `typecheck` / `test`. On Vercel it
 exits immediately: `prebuild` runs the same scripts a moment later and paying
 for them twice bought nothing.
 
-### GitHub Pages
+### GitHub Pages and the PDF library
 
-`deploy-gh-pages.yml` no longer runs on every push to `main`. It runs on the
-same schedule as the worker and on dispatch; `npm run documents:push`
-dispatches it after uploading new PDFs (the `documents` branch has no
-workflow file, so a push there cannot trigger it directly).
+There is no GitHub Actions CI or Pages deploy any more (only the three
+CourtListener workflows remain). Pages still serves the last-published copy
+of `/documents/*`, and the Vercel rewrite still points at it, so existing
+links work. New PDFs pushed to the `documents` branch are **not published**
+until a replacement origin exists.
+
+Intended replacement: a Cloudflare R2 bucket with public access, fed by
+`npm run documents:push` (incremental, from `manifest.json` sha256s) and
+fronted by the same `/documents/:path*` rewrite in `vercel.json`
+(`PAGES_DOCUMENTS_ORIGIN` in `internal/scripts/lib/documents-branch.mjs` is
+the single place that origin is defined). R2 has free egress and no
+per-build cost, and it keeps the "same desk" workflow: drop the PDF in the
+matter folder, commit, the hook pushes.
+
+### Where the gate went
+
+The checks the CI job ran now run in `.githooks/pre-push`: lint, typecheck,
+`validate-portfolio`, golden damages math, the unit suite, and the
+fabricated-citation gate. The committed `vercel.json` drift check that CI
+used to do is covered by the pre-commit hook regenerating the file whenever
+the short-link catalog changes. Branch protection on `main` must not require
+status checks; nothing reports any.
 
 ## Deploying now
 
