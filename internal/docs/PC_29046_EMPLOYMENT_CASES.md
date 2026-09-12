@@ -1,511 +1,724 @@
-# Penal Code § 290.46 employment-use cases
+# Penal Code § 290.46 employment-use authority and litigation matrix
 
-Research memo. Compiled September 12, 2026. Scope: every located case that applies
-California's Megan's Law website employment-use restriction — historically
-§ 290.46(l), currently § 290.46(j) — to an employment decision, plus the
-§ 290.4(d) parallel and ICRAA pairings.
+Research memorandum. Updated September 12, 2026.
 
-**This is not a cite-from-memory document.** Each case is tagged
-`PRIMARY` / `SECONDARY` / `UNVERIFIED` against the source actually read.
+Scope: California Penal Code § 290.46's restriction on using Megan's Law
+internet-site information for employment decisions, the historical subsection
+numbering, the parallel § 290.4 restriction, related ICRAA/FCRA issues, and the
+portfolio's Matters 25, 26, 27, and 29.
 
----
+This memo supersedes earlier portfolio shorthand that treated a private
+settlement as a merits ruling, described § 290.46(j)(4)(A) as creating a
+$25,000 damages floor, stated that "person at risk" was defined in § 290.45,
+or dated the Lerma settlement to 2026.
 
-## How to use this memo
+## Source-confidence legend
 
-- A case is a **merits decision on § 290.46** only if a court ruled on that
-  claim itself (12(b)(6), JOP, anti-SLAPP probability-of-prevailing, or SJ).
-- Mendoza's "cause of action, if any, lies against his prospective employer"
-  is anti-SLAPP dictum about *who* can be sued, not a holding that an employer
-  who used the website is liable.
-- Donaleski is the only located decision that reached summary judgment on an
-  **employer** § 290.46 claim. It granted judgment for the employer.
-- No located published or unpublished order holds an employer liable for using
-  Megan's Law website information to hire, fire, or refuse to hire.
+- **PRIMARY VERIFIED** — court opinion/order, statute, docket entry, or filing
+  actually reviewed.
+- **REPOSITORY PRIMARY** — a primary filing/order is stored in this repository
+  and summarized here; quote-check the stored PDF before filing a quotation.
+- **SECONDARY VERIFIED** — reliable news/practitioner source used for a fact
+  such as confidential-settlement status.
+- **UNVERIFIED LEAD** — candidate matter located by docket/news/search but the
+  operative pleading/order has not been obtained and read.
 
----
-
-## 1. Statute numbering — (l) versus (j)
-
-The employment-use restriction and the civil-remedy paragraph have moved.
-
-| Era | Employment bar | Civil remedy | Source |
-|---|---|---|---|
-| AB 488 (Stats. 2004, ch. 745) as enacted | originally numbered in the (j) block in contemporaneous practitioner write-ups (Littler 2004) | same block | Littler ASAP (2004); chaptered bill text on leginfo |
-| *Donaleski* (May 2009) and *Mendoza* (Mar. 2010) | **(l)(2)(E)** | **(l)(4)(A)** | Donaleski Dkt. 46; *Mendoza*, 182 Cal.App.4th at 1648, 1655–56 |
-| Current (DOJ Megan's Law site; FindLaw / Justia 2024–26 reprints) | **(j)(2)(E)** | **(j)(4)(A)** | meganslaw.ca.gov "Penalties for Misuse"; Cal. Penal Code § 290.46 (current) |
-
-The portfolio's live matters correctly plead current **(j)**. Older opinions
-and *Donaleski* correctly plead the then-operative **(l)**. They are the same
-prohibition. Do not treat a (j)/(l) mismatch as a different statute.
-
-The parallel 900-number / CD-ROM registry statute is **§ 290.4(d)(2)(E)** and
-**(d)(4)(A)** — same "use" / "employment" / damages structure. *Mendoza* and
-*Donaleski* litigated both together.
+Do not call a matter a § 290.46 merits decision unless the court actually ruled
+on the § 290.46 / § 290.4 claim.
 
 ---
 
-## 2. Method and coverage
+## 1. Current statute and numbering
 
-Searched (September 12, 2026):
+Current Penal Code § 290.46(j):
 
-- CourtListener Search API (unauthenticated): `type=o` `"290.46"` (196
-  opinion clusters); `type=r` `"290.46"` and `"Penal Code section 290.46"`;
-  `type=d` for the known captions. Tokened `/dockets/{id}/` and citation-lookup
-  were **not available** in this environment (`COURTLISTENER_TOKEN` unset).
-- CourtListener HTML dockets for Donaleski (id 5805571), McGroarty (5752167),
-  Pastrana (5983762), Lerma (65366322), Walker (68917268), Proctor (67777779).
-- Govinfo USCOURTS package `USCOURTS-caed-2_08-cv-00219` (Donaleski Dkt. 46
-  PDF extracted).
-- News: Reuters, Bloomberg Law, Law360, JDP / ACSOL write-ups of *Lerma*.
-- Practitioner: Littler (2004), Jones Day (Feb. 2009), AALRR / Proskauer (2010),
-  Seyfarth Cal-Peculiarities (2015 blog + 2023–25 treatise), CalChamber (2016).
-- Web search 2020–2026: "Megan's Law" + employment + lawsuit/settlement.
+- **(j)(1)** authorizes use of information disclosed pursuant to the section
+  only to protect a "person at risk."
+- **(j)(2)(E)** prohibits use of information disclosed pursuant to the section
+  for purposes relating to **Employment**, except as authorized under (j)(1) or
+  another provision of law.
+- **(j)(3)** preserves otherwise-authorized access/use under specified statutes,
+  including Penal Code §§ 11105 and 11105.3 and Labor Code § 432.7.
+- **(j)(4)(A)** supplies civil remedies.
+- **(j)(4)(B)** authorizes preventive relief for a pattern or practice of
+  misuse.
 
-**Opinion-corpus finding:** of 196 CourtListener opinion clusters containing
-`"290.46"`, the only cluster whose text is an employment-decision application
-of the civil-liability provision is *Mendoza*. *Donaleski*, *McGroarty*, and
-*Lerma* are unpublished district orders and are **not** in that opinion index.
+Older opinions use **§ 290.46(l)** for the same use restrictions and remedies.
+Do not treat the historical (l) citations in Donaleski, Pastrana, or Mendoza as
+a different substantive rule.
 
-**Not found as named-case alerts:** Ogletree, Fisher Phillips, Lexology, and
-OnLabor pieces that name a specific § 290.46 employment case. Searched; empty.
-Seyfarth is the treatise that names *Donaleski*. AALRR / Proskauer name
-*Mendoza*. Bloomberg / Law360 / Reuters name *Lerma*.
+### 1.1 Remedy correction — no $25,000 floor
+
+Section 290.46(j)(4)(A) does **not** say "actual damages or $25,000, whichever
+is greater."
+
+The current structure is:
+
+1. actual damages;
+2. an additional amount determined by the trier of fact, not exceeding three
+   times actual damages and not less than $250;
+3. attorney's fees; and
+4. exemplary damages **or** a civil penalty not exceeding $25,000.
+
+Accordingly, portfolio valuation rows may use a $25,000 civil-penalty *scenario*
+but must not describe $25,000 as a mandatory statutory floor.
+
+### 1.2 "Person at risk" correction
+
+The current text of § 290.46 uses the phrase **"person at risk"** but does not
+define it. The prior portfolio statement that § 290.45(a)(8) supplies a
+definition is incorrect and should not be repeated.
+
+Mendoza contains defense-favorable dictum that "a strong argument might be
+made" that employees are persons at risk whom an employer has a duty to
+protect from a sexually violent predator. The court did not decide that issue.
+No located employment decision definitively defines the phrase.
+
+### 1.3 Attorney General Opinion 05-301
+
+**PRIMARY VERIFIED.** California Attorney General Opinion No. 05-301 (2006)
+concerned housing, not employment, and is not binding judicial precedent. It is
+nonetheless useful statutory-construction authority.
+
+The Attorney General called subdivision (j) "unequivocal" and reasoned that a
+prohibited-purpose use may proceed only to protect a person at risk or when a
+specific provision of law authorizes the use. This supports a narrow reading of
+the "other provision of law" escape hatch and is useful against a theory that
+general permission to procure criminal-history information automatically
+authorizes use of Megan's Law website information.
 
 ---
 
-## 3. Cases that ruled on the § 290.46 (or § 290.4) claim
+## 2. Direct judicial applications
 
-### 3.1 *Mendoza v. ADP Screening & Selection Services, Inc.*
+### 2.1 Pastrana v. Local 9509, Communications Workers of America, AFL-CIO
 
-| Field | Value |
-|---|---|
-| Caption | *William Mendoza v. ADP Screening and Selection Services, Inc.* |
-| Court | Cal. Ct. App., 2d Dist., Div. 8 |
-| Docket | B214653 (trial: L.A. Super. Ct.; minute order Jan. 9, 2009, Hon. Emilie H. Elias) |
-| Opinion | 182 Cal.App.4th 1644, 107 Cal.Rptr.3d 294 (Mar. 23, 2010) (Bigelow, P.J.; Rubin, J.; Lichtman, J.*) |
-| Publication | **Published** |
-| Posture | Appeal from an anti-SLAPP special motion to strike (CCP § 425.16), **not** 12(b)(6) and **not** summary judgment |
-| Disposition of the § 290.4 / § 290.46 count | Struck. Plaintiff could not show a probability of prevailing **as a matter of law** because a screening company that accesses, compiles, and republishes MLW information does not "use" it |
-| Other counts | ICRAA § 1786.20(c) struck (MLW inquiry is not an EEO violation). Declaratory-relief count fell with the first two. Class allegations were not reached. Discovery denied. Mandatory anti-SLAPP fees $42,593.75 at trial; fees on appeal awarded, amount to be set on remand |
-| Settlement | None. Affirmed with costs to SASS |
-| Source | `PRIMARY` as to the published opinion text (read via a full-text reprint matching 182 Cal.App.4th 1644). Official reporter PDF was Cloudflare-blocked |
+**Pastrana v. Local 9509, Communications Workers of America, AFL-CIO, et al.**
+S.D. Cal. No. 06-CV-1779 W(AJB) / 06cv1779 BTM(AJB).
+Hon. Thomas J. Whelan.
+Summary-judgment order dated November 19, 2008 (later docket references use
+November 20, 2008 / Dkt. 93).
+Unpublished.
 
-Exact language (182 Cal.App.4th at 1658–59):
+**Status: PRIMARY VERIFIED as to the opinion text reviewed in this research.**
 
-> "We are satisfied that, in creating statutory liability for the 'use' of the
-> information disclosed on the MLW, the Legislature did not intend to extend
-> that liability to persons, including businesses, who merely reproduce or
-> republish such information, without actually acting on the information. …
-> His cause of action, if any, lies against his prospective employer, and not
+Claims included:
+1. hybrid § 301 / duty-of-fair-representation theory;
+2. § 290.46 claim; and
+3. wrongful termination in violation of public policy predicated on § 290.46.
+
+The employer was Pacific Bell. Supervisors learned of the plaintiff's Megan's
+Law listing. The job involved entering private residences.
+
+The court did **not** hold that § 290.46 generally permits employment use.
+Instead, it held that § 290.46's savings provision preserved an independently
+authorized use under Penal Code § 11105(c)(10)(A), which permitted specified
+public utilities to obtain/use criminal-history information regarding employees
+who enter private residences.
+
+Key holding:
+
+> "PacBell was exempted from that provision by section 11105(c)(10)(A) and
+> therefore cannot be held liable for its use of the Website."
+
+Disposition:
+- first cause of action: summary judgment denied;
+- second and third causes of action: summary judgment granted.
+
+**Portfolio lesson:** Pastrana is the strongest existing example of the
+"other provision of law" defense, but only because the defendant identified a
+specific affirmative statutory authorization fitting the job.
+
+**Correction:** Earlier PR #761 text incorrectly treated Pastrana as a likely
+miscitation and not a § 290.46 case. That was wrong.
+
+---
+
+### 2.2 Donaleski v. Wal-Mart Stores, Inc.
+
+**James Donaleski v. Wal-Mart Stores, Inc., et al.**
+E.D. Cal. No. 2:08-cv-00219-JAM-JFM.
+Hon. John A. Mendez.
+Dkt. 46, May 8, 2009.
+2009 WL 1296257.
+Unpublished.
+
+**Status: PRIMARY VERIFIED (GovInfo order).**
+
+Plaintiff asserted Penal Code §§ 290.4(d) and 290.46(l), plus negligence.
+
+Local personnel learned of the plaintiff's Megan's Law listing. Wal-Mart then
+conducted an independent investigation. The Home Office Committee that made the
+termination decision did not consult the website, was not told the plaintiff
+appeared on it, and relied on the plaintiff's own written statements about his
+convictions.
+
+The court held that § 290.46 does not prevent an employer from independently
+investigating and obtaining conviction information from lawful sources merely
+because someone earlier learned that the person appeared on the website.
+
+Disposition:
+
+> "Because Plaintiff has not presented any genuine issue of material fact that
+> Wal-Mart violated California Penal Code ('CPC') § 290.4(d) and 290.46(l) by
+> using the Website for an employment decision, his Penal Code claims fail as
+> a matter of law."
+
+Summary judgment was granted for Wal-Mart.
+
+**Portfolio lesson:** source and decisionmaker causation matter. Website
+awareness does not taint a later decision genuinely based on independent
+lawful information.
+
+---
+
+### 2.3 Mendoza v. ADP Screening & Selection Services, Inc.
+
+**William Mendoza v. ADP Screening and Selection Services, Inc.**
+182 Cal.App.4th 1644, 107 Cal.Rptr.3d 294 (2010).
+California Court of Appeal, Second District, Division Eight.
+No. B214653.
+Decided March 23, 2010.
+Published.
+
+**Status: PRIMARY VERIFIED.**
+
+Posture: anti-SLAPP probability-of-prevailing analysis, not summary judgment.
+
+The defendant was a background-screening company. It accessed Megan's Law
+information and transmitted it to a prospective employer. The Court of Appeal
+held that a business that merely reproduces or republishes the information,
+without itself acting on it, is not the statutory "user" contemplated by the
+civil-liability provision.
+
+Key language:
+
+> "His cause of action, if any, lies against his prospective employer, and not
 > SASS."
 
-And at 1657:
+The court affirmed the order striking the complaint. It also affirmed rejection
+of the ICRAA § 1786.20(c) theory.
 
-> "the statutory liability created by the MLW statute should be limited to
-> employers who 'use' information disclosed on the MLW as a basis for an
-> employment decision."
+**Important limits:**
+- the prospective employer was not a party;
+- Mendoza does not itself impose employer liability;
+- it does strongly distinguish an employer that *acts* on the information from
+  a CRA that merely transmits it;
+- its "person at risk" discussion is dictum.
 
-**What this is not.** The prospective employer was never a party. The court
-did not hold that an employer who used the website is liable. It held that
-*this CRA* was not a statutory "user." The ICRAA count was § 1786.20(c)
-(inquiry that would violate EEO law), **not** the seven-year rule in
-§ 1786.18(a)(7).
-
-**§ 290.4 pairing.** Count 1 pleaded violations of **both** § 290.4 and
-§ 290.46. The same "use" vs. "republish" analysis disposed of both.
-
----
-
-### 3.2 *Donaleski v. Wal-Mart Stores, Inc.*
-
-| Field | Value |
-|---|---|
-| Caption | *James Donaleski v. Wal-Mart Stores, Inc., and Does 1 through 20* |
-| Court | E.D. Cal. (removed from San Joaquin Super. Ct., filed there Jan. 2, 2008) |
-| Docket | **2:08-cv-00219-JAM-JFM** (CL docket id 5805571) |
-| Judge | Hon. John A. Mendez; Magistrate John F. Moulds |
-| Filed / terminated | Removed Jan. 29, 2008 / terminated May 8, 2009 |
-| Publication | **Unpublished** district order. Westlaw: 2009 WL 1296257. Not in CourtListener's opinion corpus. PDF on govinfo: `USCOURTS-caed-2_08-cv-00219-1.pdf` = Dkt. 46 |
-| Claims | (1) Cal. Penal Code §§ **290.4(d)** and **290.46(l)**; (2) negligence. At-will employee. Diversity. Prayer included civil penalty / statutory / general / economic damages > $75,000 |
-| Posture | Defendant's Rule 56 motion. Submitted on the briefs (L.R. 78-230(h)) |
-| Disposition | **Summary judgment for Wal-Mart on both counts.** Dkt. 46 (May 8, 2009): "Defendant's motion for summary judgment is GRANTED." Dkt. 54 (June 26, 2009): stipulation waiving fees and costs granted |
-| Settlement | None on the merits. Fee-and-cost waiver after judgment |
-| Source | `PRIMARY` (Dkt. 46 PDF extracted from govinfo) |
-
-Facts the court treated as undisputed (Dkt. 46 at 2–4):
-
-- Wal-Mart hired Donaleski in 1995; he told the store of the sex-offense
-  conviction that year; it gave him a leave for incarceration and rehired him.
-- In December 2006 a coworker, after a relative recognized a photo, looked
-  Donaleski up on the Megan's Law website and the listing reached local
-  managers. In-house protocol told the California investigator **not** to
-  consult the state registry. Fermin "did not review the Website or consult
-  the registry."
-- In January 2007 Donaleski wrote an Associate Statement disclosing the
-  § 288(a) charges and two felony convictions involving 13-year-old
-  stepdaughters. A Home Office Committee of three senior HR professionals
-  reviewed **only those statements**, "did not ask, nor were they aware that
-  Plaintiff is displayed on the Website," and voted to terminate in April 2007
-  "Based solely on Plaintiff's self-disclosed criminal history."
-
-Exact disposition of the Penal Code claim (Dkt. 46 at 8–11):
-
-> "Here, the undisputed facts show that Wal-Mart did not violate the
-> California Penal Code. The statutory language of the CPC does not prevent
-> an employer from engaging in an independent investigation and obtaining
-> personal information from the ex-offender even if the employer is aware
-> that the ex-offender's information is displayed on the Website. …
-
-> "The Committee did not consult the Website or utilize the specific
-> information disclosed on the Website in rendering a termination decision.
-> Rather, the Committee terminated Donaleski following an independent
-> investigation which confirmed his felony conviction. …
-
-> "Because Plaintiff has not presented any genuine issue of material fact
-> that Wal-Mart violated California Penal Code ('CPC') § 290.4(d) and
-> 290.46(l) by using the Website for an employment decision, his Penal Code
-> claims fail as a matter of law. Accordingly, Defendant's motion for
-> summary judgment on Plaintiff's first cause of action for violation of the
-> Penal Code is GRANTED."
-
-The negligence count fell with the statutory count: "Wal-Mart did not 'use'
-the Website for purposes relating to employment." The court declined to reach
-Wal-Mart's as-applied constitutional challenge.
-
-**What this is.** A merits SJ ruling on the **employer** § 290.46(l) /
-§ 290.4(d) claim. Holding: no liability where the decisionmaker did not
-consult or use the website and instead used the employee's own written
-disclosure of the conviction, even if a coworker first learned of the listing
-from the website without management direction.
-
-**What this is not.** It is not a holding that an employer may use the
-website. It is the opposite fact pattern.
+**Portfolio lesson:** employer-side § 290.46 theories fit Mendoza better than
+vendor-side theories. A CRA defendant becomes materially more exposed only if
+discovery shows it did more than report — e.g., it itself adjudicated,
+suppressed, held, or acted upon the information.
 
 ---
 
-### 3.3 *McGroarty v. American Background Information Services, Inc.*
+### 2.4 Lerma v. Amazon.com Services, LLC
 
-| Field | Value |
-|---|---|
-| Caption | *Michael McGroarty v. American Background Information Services Inc* |
-| Court | C.D. Cal. |
-| Docket | **5:08-cv-01360** (also styled 08-CV-1360). CL docket id 5752167 |
-| Judge | Hon. Virginia A. Phillips; Magistrate Oswald Parada |
-| Filed / terminated | Oct. 3, 2008 (notice of removal) / Apr. 8, 2009 |
-| Cause / NOS | 28 U.S.C. § 1441 removal; "Other Statutory Actions"; federal question |
-| Publication | **Unpublished.** 2009 WL 980417 (Apr. 8, 2009). **Not** in CourtListener's opinion corpus. Govinfo package for this docket was not located |
-| Posture | Defendant's motion for **judgment on the pleadings** (Dkt. 13) |
-| Disposition (docket text, `PRIMARY`) | Apr. 8, 2009: "ORDER by Judge Virginia A. Phillips GRANTING MOTION for Judgment on the Pleadings 13 … the Court GRANTS Defendant's Motion for Judgment on the Pleadings and dismisses Plaintiff's Complaint, **with prejudice**." Concurrent judgment: "Plaintiff's Complaint is DISMISSED WITH PREJUDICE" |
-| Settlement | None. Judgment on the pleadings |
-| Opinion text | **`UNVERIFIED` against the order body.** This environment could not retrieve 2009 WL 980417 |
+**Miguel Lerma, Jr. v. Amazon.com Services, LLC, Amazon Logistics, Inc.,
+Accurate Background, LLC**
+C.D. Cal. No. 8:22-cv-01727-FWS-JDE.
+Hon. Fred W. Slaughter.
+Filed September 21, 2022.
 
-**What can be said from a primary source:** a CRA defendant won JOP and the
-complaint was dismissed with prejudice. That is a merits disposition of
-whatever the complaint pleaded.
+**Status: REPOSITORY PRIMARY as to the stored Dkt. 36 and docket; public
+docket/news independently confirm the disposition and settlement chronology.**
 
-**What cannot be said from a primary source:** the elements, the "use"
-analysis, or whether § 290.46 was the only count. Those appear in *Lerma*
-defense briefing (Accurate Dkt. 23-1), which treats *McGroarty* as holding
-that a CRA does not "use" MLW information by putting it in a consumer report.
-That characterization is `SECONDARY` (adversary brief). It is consistent with
-*Mendoza* one year later, but do not quote *McGroarty* for a holding until
-the order is in hand.
+FAC claims included:
+- Megan's Law / Penal Code § 290.46;
+- Fair Chance Act, Gov. Code § 12952;
+- ICRAA;
+- FCRA; and
+- UCL.
 
----
+On May 26, 2023, Dkt. 36 granted the defendants' motions to dismiss and
+dismissed without prejudice:
+- the first cause of action (Megan's Law);
+- the fourth cause of action (FCRA); and
+- the fifth cause of action (UCL).
 
-### 3.4 *Lerma v. Amazon.com Services, LLC*
+The repository's copy of Dkt. 36 records the dispositive source problem:
+Accurate's report showed the disqualifying criminal information came from
+ordinary Orange County criminal-court records, while the National Sex Offender
+Database Search returned **"NO RECORD FOUND."**
 
-| Field | Value |
-|---|---|
-| Caption | *Miguel Lerma, Jr. v. Amazon.com Services, LLC; Amazon Logistics, Inc.; Accurate Background, LLC* (Accurate also appeared as Accurate Background, Inc.) |
-| Court | C.D. Cal. |
-| Docket | **8:22-cv-01727-FWS-JDE** (CL docket id 65366322) |
-| Judge | Hon. Fred W. Slaughter; Magistrate John D. Early |
-| Counsel | Plaintiff: Raymond Yoon Ho Kim (Ray Kim Law). Amazon: Andrew P. Frederick (Morgan Lewis). Accurate: Jessica R. Ellis Lohr |
-| Filed / terminated | Sept. 21, 2022 / Sept. 29, 2023 (dismissal on notice of settlement); Oct. 26, 2023 FRCP 41(a)(1)(A)(ii) stipulation |
-| Cause / NOS | 15 U.S.C. § 1681 FCRA; 442 Civil Rights: Jobs |
-| Publication | **Unpublished** minute order. Not in the CL opinion corpus |
-| Claims in the FAC (from docket + contemporaneous news) | (1) Megan's Law / § 290.46; (2)–(3) surviving claims that included a Fair Chance Act (Gov. Code § 12952) theory against Amazon; (4) FCRA; (5) UCL. Proposed class. Accurate was the CRA |
-| 12(b)(6) | Dkt. 36 (May 26, 2023), `PRIMARY` docket text |
+No SAC was filed. Amazon later answered the surviving Fair Chance Act claim.
+The parties filed a notice of settlement September 21, 2023; the case was
+dismissed September 29, 2023, followed by a stipulated dismissal October 26,
+2023. Public reporting states the settlement terms were confidential.
 
-Exact Dkt. 36 docket entry:
+**Corrections:**
+- the settlement was in **2023**, not 2026;
+- the § 290.46 count had already been dismissed;
+- do not describe the settlement as Amazon paying to resolve the Megan's Law
+  claim;
+- the settlement may be useful as Fair Chance Act / notice history, not as a
+  § 290.46 liability admission.
 
-> "MINUTES ORDER GRANTING Defendants' Motions to Dismiss 23, 24 by Judge
-> Fred W. Slaughter: The court GRANTS the Motions and DISMISSES WITHOUT
-> PREJUDICE the first cause of action (violation of Megans Law), fourth
-> cause of action (violation of FCRA), and fifth cause of action (violation
-> of the UCL) of the FAC. Plaintiff must file a Second Amended Complaint,
-> if any, within thirty (30) days of the date of notice of this Order."
-
-What survived at the pleading stage: the claims **not** listed in that
-sentence — including the Fair Chance Act theory against Amazon. Amazon
-**answered the FAC** on August 23, 2023 (Dkt. 45). No SAC was filed.
-
-**Settlement (public):**
-
-- Dkt. 46 (Sept. 21, 2023): Amazon's notice of settlement.
-- Dkt. 47 (Sept. 29, 2023): dismissed **without prejudice**; 30-day
-  jurisdiction to reopen if the settlement failed.
-- Dkt. 48 (Oct. 26, 2023): FRCP 41(a)(1)(A)(ii) stipulation to dismiss.
-- Bloomberg Law (Sept. 2023): counsel Ray Kim said settlement details were
-  **confidential**. Law360: Amazon "reached a deal" on a suit "accusing the
-  e-commerce giant of illegally using information about his prior rape
-  conviction." JDP / ACSOL (industry reprints): Amazon "filed a notice
-  stating that it had agreed to settle the lawsuit under the California
-  Fair Chance Act (FCA)." Dollar terms are not public.
-
-**Correction to the known-case list in the prompt.** The case did **not**
-settle "~Sept. 2026." It settled in **September 2023** and was dismissed
-September 29, 2023. The § 290.46 claim was **already dead at the pleading
-stage**. The settlement is not a Megan's Law judgment against Amazon or
-Accurate.
-
-**Why the Megan's Law count died — `SECONDARY` as to the order's reasoning.**
-This run did not retrieve the Dkt. 36 PDF. The portfolio's Matter 29 file,
-which ingested that PDF, records that Accurate's report showed a National
-Sex Offender Database search of **"no record found"** and that the
-disqualifying convictions came from ordinary criminal court records. That
-is a sourcing holding (website vs. court records), not a holding that an
-employer may use the website. Flag until the PDF is re-read in this file.
-
-**ICRAA / seven-year pairing.** Contemporaneous Reuters / Background Partners
-coverage: Lerma also alleged Accurate reported convictions more than seven
-years old (FCRA / California reporting limits). The FCRA count was dismissed
-without prejudice in the same Dkt. 36. That is the cleanest located example
-of a § 290.46 claim **pled alongside** a seven-year reporting claim. It is
-not a merits decision on § 1786.18(a)(7).
+**Portfolio lesson:** obtain the actual screening report. Lerma is the warning
+against inferring Megan's Law sourcing from timing alone.
 
 ---
 
-## 4. Known-list item that is not a § 290.46 case
+## 3. Additional direct or potentially direct cases
 
-### 4.1 *Pastrana v. Local 9509, CWA* — citation looks off
+### 3.1 McGroarty v. American Background Information Services, Inc.
 
-| Field | Value |
-|---|---|
-| Caption | *Pastrana v. Local 9509, Communications Workers of America, AFL-CIO* (AT&T / PacBell also a defendant) |
-| Court | S.D. Cal. |
-| Docket | **3:06-cv-01779** (also 06cv1779 W (AJB)). CL docket id 5983762 |
-| Judge | Hon. Thomas J. Whelan (later orders also by Hon. Barry Ted Moskowitz); Magistrate Anthony J. Battaglia / William V. Gallo |
-| Filed / terminated | Sept. 1, 2006 / Aug. 8, 2011 |
-| Cause | 29 U.S.C. § 185 (LMRA hybrid / duty of fair representation) |
-| 2008 U.S. Dist. LEXIS 94612 | This is the **November 19, 2008** SJ order (Dkt. 93, entered Nov. 20): "ORDER Granting In Part and Denying In Part 71 Motion for Summary Judgment; Granting In Part and Denying In Part 74 Motion for Summary Judgment. … Summary judgment is denied as to Pastrana's first cause of action. Summary judgment is granted as to Pastrana's second and third causes of action. Based on the after-acquired evidence doctrine, Pastrana's damage claims are limited …" |
+C.D. Cal. No. 5:08-cv-01360.
+Hon. Virginia A. Phillips.
+Judgment on the pleadings granted April 8, 2009; complaint dismissed with
+prejudice. 2009 WL 980417.
 
-**Do not present *Pastrana* as a § 290.46 merits decision.**
+**Status: PRIMARY VERIFIED as to docket disposition; UNVERIFIED as to the
+order's reasoning in this memo.**
 
-Nothing on the CourtListener docket, the 2007 privilege order (2007 WL
-2900477 / 2007 U.S. Dist. LEXIS 73219), or the secondary privilege / labor
-write-ups mentions Megan's Law, § 290.46, or a sex-offender registry.
+Later adversary briefing characterizes McGroarty as another CRA "use" case.
+Until the order body is obtained and read, do not quote a holding from it.
 
-The cite entered the § 290.46 literature because **Donaleski Dkt. 46 at 8–9
-cited it**:
+### 3.2 Short v. Christina Development Corporation / Christina Properties
 
-> "The statutory language of the CPC does not prevent an employer from
-> engaging in an independent investigation and obtaining personal information
-> from the ex-offender even if the employer is aware that the ex-offender's
-> information is displayed on the Website. *Pastrana v. Local 9509, Communs.
-> Workers of Am.*, 2008 U.S. Dist. LEXIS 94612 (S.D. Cal. Nov. 19, 2008) at
-> \*36."
+L.A. Superior Court employment litigation, including case No. 23VECV00203
+consolidated into 22STCV28564.
+Hon. Elaine Lu.
 
-That pin was **not verified** against the *Pastrana* order body (PDF not
-retrieved). On the docket description, \*36 is inside an after-acquired-
-evidence / hybrid-LMRA SJ ruling. Unless that page independently discusses
-§ 290.46 — and no source says it does — *Donaleski*'s use of *Pastrana* is
-a miscitation. Repeat the docket facts; do not repeat the *Donaleski*
-proposition as if *Pastrana* decided it.
+The second amended complaint included a seventh cause captioned as use of
+Megan's Law information to terminate employment under Penal Code
+§ 290.4(d)(1)(E). That citation appears facially off; the employment-purpose
+restriction is in the (d)(2) structure.
 
----
+A tentative demurrer ruling noted that defendants did not challenge that
+statutory cause and allowed the alleged statutory violation to serve as a UCL
+"unlawful" predicate.
 
-## 5. Docket-level / complaint-level matters (no § 290.46 merits ruling)
+**Status: PRIMARY/COURT-TENTATIVE verified for the ruling located.**
+**Not a merits ruling on the Megan's Law count.**
 
-### 5.1 *Walker v. Ronin Staffing LLC* (and UCLA Health / Regents / Sterling)
+### 3.3 Walker v. Ronin Staffing LLC et al.
 
-| Field | Value |
-|---|---|
-| Caption | *Gregory Walker et al. v. Ronin Staffing LLC et al.* |
-| Court | C.D. Cal. |
-| Docket | **2:24-cv-05669** (CL docket id 68917268) |
-| Judge | Hon. Consuelo Bland Marshall; Magistrate Stephanie S. Christensen (after recusal of the first MJ) |
-| Filed | July 3, 2024. **Still open** as of the Sept. 11, 2026 CL last-filing stamp |
-| NOS / cause | 442 Civil Rights: Jobs; 42 U.S.C. § 2000e |
-| Counsel | Plaintiff: Raymond Yoon Ho Kim (same counsel as *Lerma*). Sterling Infosystems: Jasmine J. Stanzick (Seyfarth). Ronin: Ellenoff Grossman / Linda Guthmann Krieger |
-| Parties | Ronin Staffing LLC; UCLA Health; The Regents of the University of California; Sterling Infosystems, Inc. (**terminated Oct. 30, 2024**); later docket activity also names Vaya Workforce Solutions, LLC |
-| Publication | Docket only. No opinion in the CL opinion corpus |
+C.D. Cal. No. 2:24-cv-05669-CBM-SSC.
+Hon. Consuelo B. Marshall; M.J. Stephanie S. Christensen.
+Active through September 2026.
 
-**§ 290.46 in the complaint: `UNVERIFIED`.** The complaint PDF was not
-retrieved (RECAP HTML timed out; no token). The user's statement that the
-complaint pleads § 290.46 is **plausible** (same plaintiff's counsel as
-*Lerma*; a CRA defendant; employment NOS) but is not confirmed against the
-pleading in this run.
+**Status: docket verified; operative § 290.46 pleading/ruling not fully
+verified in this research.**
 
-**No merits ruling on § 290.46 was located.** A judgment-on-the-pleadings
-paper was filed August 20, 2026 (docket label only). This run did not
-retrieve that motion or any order on it. Do not treat *Walker* as a
-§ 290.46 decision.
+No located § 290.46 merits ruling. Do not cite Walker as precedent.
 
----
+### 3.4 Sandoval Carrillo v. The Vons Companies, Inc., et al.
 
-### 5.2 *Jacob Proctor v. Sally Beauty Holdings Inc.* — unverified RECAP hit
+C.D. Cal. No. 8:25-cv-00191-SRM-KES.
+Hon. Serena R. Murillo.
 
-| Field | Value |
-|---|---|
-| Caption | *Jacob Proctor v. Sally Beauty Holdings Inc.* |
-| Court | C.D. Cal. (removed from Orange County Super. Ct. **30-2023-01339515-CU-WT-CJC**) |
-| Docket | **8:23-cv-01677** (CL docket id 67777779) |
-| Judge | Hon. David O. Carter; Magistrate Douglas F. McCormick |
-| Filed / terminated | Removed Sept. 8, 2023 / Feb. 14, 2024 |
-| NOS | 442 Civil Rights: Jobs; diversity |
+Class/employment docket located; class-discovery activity verified.
 
-CourtListener `type=r` for `"Penal Code section 290.46"` returned this
-docket. **The complaint was not opened.** Cause on the docket is a
-wrongful-termination removal. Treat as an **unverified candidate**, not as
-a § 290.46 case, until the state complaint (Removal Ex. A) is read.
+**Status: high-priority UNVERIFIED LEAD for the specific § 290.46 pleading.**
+No located § 290.46 merits ruling.
 
----
+### 3.5 Garza v. Starbucks Corporation, et al.
 
-### 5.3 Portfolio matters that plead current § 290.46(j) — no merits ruling
+Fresno County Superior Court No. 26CECG00942.
+Complaint filed February 24, 2026.
 
-These are live or recently terminated plaintiff-side cases. None has a
-judicial ruling on the § 290.46 count as of this memo.
+The complaint alleges that a district manager referenced a customer having
+found the plaintiff on Megan's Law and that a manager later handed the
+plaintiff a Megan's Law printout while terminating him. The pleaded causes are
+Fair Chance Act / criminal-history discrimination, failure to prevent, and
+wrongful termination; § 290.46 appears as an alleged statutory violation or
+public-policy predicate rather than a separately captioned count.
 
-| Matter | Caption | Court / no. | Status (portfolio) |
-|---|---|---|---|
-| 22 | *Newanforbi v. Pilot Travel Centers LLC* | San Joaquin Super. Ct. STK-CV-UWT-2026-0007649 | Settled July 14, 2026; CIV-110 dismissal with prejudice entered Aug. 6, 2026. Portfolio records **$35,000**. The settlement agreement itself was not retrieved; treat the dollar figure as portfolio-internal unless a public filing recites it |
-| 25 | *Newanforbi v. Federal Express Corp.* | San Joaquin Super. Ct. STK-CV-UWT-2026-0009118 | Filed / served; no merits order |
-| 26 | *Newanforbi v. United Parcel Service, Inc.* | San Joaquin Super. Ct. STK-CV-UWT-2026-0009113; removal activity in E.D. Cal. **2:26-cv-02847-DAD-CKD** (UPS MTD briefing in the citation index quotes § 290.46(j)(2)(E) and denies California-website access) | Pleading / MTD stage. **Not a ruling** |
-| 27 | *Newanforbi v. Randstad US, LLC and RK Logistics Group, Inc.* | Alameda Super. Ct. 26CV199902 | Pleading stage |
-| 29 | *Newanforbi v. Amazon.com Services, LLC and Accurate Background LLC* | Removed to N.D. Cal. **3:26-cv-09249-ASK** | Pleading stage after Aug. 31, 2026 removal |
-| 31 | *Newanforbi v. First Advantage* (vendor) | (see matter file) | FCRA/ICRAA vendor theory; § 290.46 used as negligence-per-se predicate, not as the load-bearing CRA count |
-| 36–39 | AT&T / Home Depot / Swift / Best Buy packets | San Joaquin walk-up packets | Unfiled or newly filed per portfolio; no § 290.46 order |
+**Status: PRIMARY VERIFIED complaint; no merits ruling found.**
 
-CourtListener `type=r` `"Newanforbi" 290.46` returned **zero** hits. These
-are state filings (and one recent federal removal) that RECAP has not
-indexed as 290.46 opinions.
+### 3.6 Hotek v. The CBM Group
+
+Courthouse News reported a Placer County employment complaint alleging that
+Megan's Law information was copied, circulated, and followed by termination.
+
+**Status: SECONDARY / chronology problem.** The article date and narrative
+dates appear inconsistent. No primary complaint/case number/disposition was
+located. Do not count it as precedent.
+
+### 3.7 Proctor v. Sally Beauty Holdings Inc.
+
+C.D. Cal. No. 8:23-cv-01677, removed from Orange County Superior Court.
+A RECAP string hit surfaced the docket.
+
+**Status: UNVERIFIED LEAD.** Do not count as a § 290.46 case until the operative
+state complaint is obtained.
 
 ---
 
-## 6. Related authorities that are not employment-decision applications
+## 4. What the existing authority actually establishes
 
-Do not cite these as "§ 290.46 employment cases."
+### Pastrana — specific statutory authorization
+An employer can prevail where another statute affirmatively authorizes the
+relevant use for the job at issue.
 
-| Case | What it actually is |
-|---|---|
-| *Cross v. Cooper*, 197 Cal.App.4th 357 (2011) | Housing / neighbor disclosure / anti-SLAPP. Quotes the then-(l) prohibition, including the employment line, as statutory background. **Not an employment decision** |
-| *Doe v. California Dept. of Justice*, 173 Cal.App.4th 1095 (2009); *Doe v. Brown*, 177 Cal.App.4th 408 (2009); *Yohner v. California Dept. of Justice*, 237 Cal.App.4th 1 (2015) | Challenges to website listing / exclusion. Not hiring or firing |
-| *Doe v. Harris*, 57 Cal.4th 64 (2013); *People v. Mosley*, 60 Cal.4th 1044 (2015) | Registration / punishment. Not civil employment use |
-| *Richardson v. Becerra* (9th Cir. 2020) (FindLaw) | Pro se constitutional challenge to SORA / § 290.46 publication. Affirmed dismissal. Not an employment-use civil action |
-| 89 Ops.Cal.Atty.Gen. 85 (2006) | AG opinion, cited in *Mendoza* at 1659: registered sex offenders are not a FEHA protected class for **housing**. *Mendoza* extended that logic to employment EEO for the ICRAA § 1786.20(c) count |
-| *Towner v. County of Ventura*, Cal. Ct. App. B306283 (Apr. 28, 2021) | Appeared in a `"290.46" employment` opinion search; not confirmed as an employment-use civil action. `UNVERIFIED` — do not cite |
-| *Vlasek v. Wal-Mart Stores, Inc.*, No. H-07-0386 (S.D. Tex. 2008) | Texas discharge of a registrant. **Not** California § 290.46 |
-| *Rogers v. Bonta*, E.D. Cal. 2:22-cv-00314 and 2:22-cv-01157 | RECAP hits for "Penal Code section 290.46"; registry / AG challenges, not employer-defendant hiring cases |
-| *Adamski v. Martis*, N.D. Cal. 5:07-cv-03307 | RECAP hit for the statute string. Not confirmed as employment-use. `UNVERIFIED` |
+### Donaleski — independent source / independent decisionmaker
+Megan's Law awareness does not automatically contaminate a later decision
+based on independently obtained lawful conviction information.
 
----
+### Mendoza — who is the statutory "user"
+A CRA that merely reproduces/transmits information is not necessarily a user;
+the employer that actually acts on the information is the more natural target.
 
-## 7. § 290.4(d)(4)(A) and ICRAA § 1786.18(a)(7)
+### Lerma — source attribution can kill the claim at pleading
+When the incorporated report itself shows ordinary court records supplied the
+adverse information and the sex-offender search returned no record, a contrary
+Megan's Law sourcing allegation need not be accepted.
 
-**§ 290.4** (the older DOJ 900-number / CD-ROM registry) uses the same
-"use … for … Employment" prohibition and the same civil-remedy paragraph at
-**(d)(4)(A)**. Located cases that actually litigated it with § 290.46:
+### Combined negative-space rule
+No located decision holds that an ordinary private employer may be *proven* to
+have used California Megan's Law website information for an employment
+decision and nevertheless escape liability merely because it had a generalized
+"safety" concern.
 
-- *Mendoza* — both statutes in count 1; both fail on the CRA "use" holding.
-- *Donaleski* — both statutes in count 1; both fail on SJ because the
-  committee did not use the website.
-
-No other case was found in which § 290.4(d)(4)(A) was the standalone
-employment-use claim.
-
-**ICRAA § 1786.18(a)(7)** (seven-year reporting bar) was **not** the ICRAA
-count in *Mendoza* (*Mendoza* used § 1786.20(c)). The pairing the prompt
-asked for — seven-year rule **plus** § 290.46 — is the *Lerma* pleading /
-news description (FCRA / California reporting limits on old convictions),
-dismissed without prejudice in Dkt. 36, never adjudicated. Portfolio
-Matters 25, 26, 27, 29, and 31 plead that pairing now. No court has written
-an opinion that decides both together.
+No located decision imposes a final § 290.46 damages judgment against an
+employer either. The field remains exceptionally sparse.
 
 ---
 
-## 8. News and practitioner alerts that name cases (2020–2026 and earlier)
+## 5. Matter-by-matter § 290.46 matrix
 
-| Source | Date | Case named | Notes |
-|---|---|---|---|
-| Littler ASAP, "California's New Megan's Law Website…" | 2004 | none | Describes then-(j)(2) employment bar. No lawsuit |
-| Jones Day Commentary, "The Megan's Law Web Site: California Employers Beware" | Feb. 2009 | none | Pre-*Donaleski*. Analyzes then-(l) vs. Labor Code § 432.7 |
-| AALRR Labor & Employment Law Blog | Mar. 2010 | **Mendoza** | CRA not a "user" |
-| Proskauer California Employment Law Update | May 2010 | **Mendoza** | Same; notes $42,593.75 fee award |
-| Metropolitan News, "C.A.: Screener Can Pass On 'Megan's Law' Information" | Mar. 25, 2010 | **Mendoza** | Trial judge Elias; Bigelow opinion |
-| Seyfarth / CalPeculiarities blog | July 30, 2015 | none by name | Statute explainer |
-| CalChamber Alert | Mar. 18, 2016 | none | Still cites (l)(2)(E) / (l)(4)(A) |
-| Seyfarth *Cal-Peculiarities* 2023, 2024, 2025 eds. | 2023–25 | **Donaleski**, 2009 WL 1296257, at \*3–4 | Accurate paraphrase of the SJ holding (coworker website look-up; independent investigation; conviction, not listing) |
-| Reuters | Sept. 23, 2022 | **Lerma** | Filing story |
-| Bloomberg Law | Sept. 2022 / Sept. 2023 | **Lerma** | Filing + confidential settlement |
-| Law360 Employment Authority (Emmy Freedman) | Sept. 22, 2023 | **Lerma** | Settlement notice |
-| JDP / ACSOL reprints | Oct. 2023 | **Lerma** (anonymized as "large online retailer") | Says the deal was framed as a Fair Chance Act settlement; Megan's Law count already dismissed |
+### Matter 26 — UPS — lead statutory-development case
 
-No 2024–2026 news item was found that reports a new published or even
-unpublished § 290.46 employment merits ruling. *Walker* has no news hit that
-quotes § 290.46.
+**Newanforbi v. United Parcel Service, Inc.**
+E.D. Cal. No. 2:26-cv-02847-DAD-CKD.
 
----
+Current record:
+- First Advantage ordinary criminal component: **No Record Found / Eligible**.
+- Sex-offender components: **Decisional**.
+- Overall adjudication: **INELIGIBLE**.
+- Returned registry detail states:
+  **"SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY."**
+- UPS's motion states it used information derived from the background report in
+  making the non-hire decision.
 
-## 9. Scoreboard
+This makes UPS materially different from Lerma and Donaleski.
 
-### Merits decisions on the employment-use claim
+#### Three unresolved questions capable of producing a significant opinion
 
-| Case | Who was sued | Vehicle | § 290.46 result | Published? |
-|---|---|---|---|---|
-| *Mendoza* (2010) | CRA only | Anti-SLAPP | Dead as a matter of law (CRA is not a "user") | Yes |
-| *Donaleski* (2009) | Employer | Rule 56 | Dead — decisionmaker did not use the website | No (WL / govinfo) |
-| *McGroarty* (2009) | CRA | Rule 12(c) | Complaint dismissed **with prejudice** | No (WL); order body not in this file |
-| *Lerma* (2023) | Employer + CRA | Rule 12(b)(6) | Megan's Law count dismissed **without prejudice**; not repled | No (minute order) |
+1. **Derivative-source question** — Does information remain § 290.46
+   information when the identified source of record is California's Sex
+   Offender Registry but the vendor retrieved it through a national index?
+2. **Authorization question** — Does § 290.46(j)(3) merely preserve separately
+   authorized uses, or can Labor Code § 432.7 create a broad safe harbor for a
+   voluntary employment screen?
+3. **Person-at-risk question** — What does the undefined exception encompass
+   in ordinary employment screening?
 
-### Not merits decisions
+A district-court ruling would be persuasive authority. A published Ninth
+Circuit ruling could become binding federal appellate precedent. A later
+certified question to the California Supreme Court could produce controlling
+California-law precedent.
 
-*Pastrana* (miscited in *Donaleski*). *Walker* (complaint unverified; no
-order). *Proctor* (RECAP string-hit only). All Newanforbi / portfolio
-matters. *Cross v. Cooper* and the *Doe* / *Yohner* website cases.
+#### Priority discovery
 
-### Employer liability
+- complete native First Advantage report and metadata;
+- Centralized Adjudication Team audit trail;
+- adjudication rules that converted component scores into INELIGIBLE;
+- identities of human/automated decisionmakers;
+- screens actually presented to those decisionmakers;
+- UPS–First Advantage configuration for registry searches;
+- final decision code/reason;
+- any asserted independent basis for non-hire.
 
-**Zero** located decisions impose § 290.46 / § 290.4 damages on an employer
-for an employment decision. The two employer-side merits rulings
-(*Donaleski* SJ; *Lerma* 12(b)(6)) both dismissed the claim. *Mendoza*'s
-"lies against his prospective employer" sentence is an invitation to sue
-someone else, not a judgment against that someone.
-
----
-
-## 10. Open gaps (say so, do not fill them)
-
-1. **McGroarty 2009 WL 980417 order body** — docket disposition is primary;
-   holding language is not.
-2. **Lerma Dkt. 36 PDF** — minute-order result is primary; sourcing rationale
-   is secondary (portfolio ingest of that PDF).
-3. **Walker complaint and the Aug. 20, 2026 JOP papers** — not retrieved.
-4. **Proctor** removal Exhibit A — not retrieved.
-5. **Pastrana \*36** — not retrieved; the *Donaleski* cite looks wrong.
-6. **California superior-court dockets** that never hit RECAP (almost all
-   state filings). A Westlaw/Lexis "290.46 /p employment" run on unpublished
-   Cal. Super. Ct. and Cal. App. unpublished would still be worth doing with
-   a paid terminal. This run did not have one.
-7. **CourtListener authenticated RECAP PDFs** — token was not in the
-   environment. HTML dockets and the public search API were used instead.
-8. **Ogletree / Fisher Phillips / Lexology / OnLabor** — no named-case alert
-   found. Absence is a search result, not proof they never wrote one behind
-   a paywall.
+**Current assessment:** strongest pure § 290.46 legal vehicle in the portfolio.
 
 ---
 
-## 11. Source list (primary)
+### Matter 27 — Randstad / RK Logistics
 
-- *Mendoza v. ADP Screening & Selection Servs., Inc.*, 182 Cal.App.4th 1644
-  (2010) (full opinion text).
-- *Donaleski v. Wal-Mart Stores, Inc.*, No. 2:08-cv-00219-JAM-JFM, Dkt. 46
-  (E.D. Cal. May 8, 2009), govinfo `USCOURTS-caed-2_08-cv-00219-1.pdf`
-  (2009 WL 1296257).
-- CourtListener dockets: 5805571 (Donaleski), 5752167 (McGroarty), 5983762
-  (Pastrana), 65366322 (Lerma), 68917268 (Walker), 67777779 (Proctor).
-- *Lerma* Dkt. 36 / 45 / 46 / 47 / 48 docket text (CL HTML, last updated
-  July 30, 2025).
-- Cal. Penal Code §§ 290.4(d), 290.46 (current (j) reprint; historical (l)
-  as quoted in *Mendoza* and *Donaleski*).
+**Newanforbi v. Randstad US, LLC et al.**
+Alameda Superior Court No. 26CV199902.
+
+Documented evidence:
+- Randstad "Rehired" status;
+- InfoMart Order 15780719;
+- Billing Code: RK LOGISTICS;
+- Business Unit: RIS RK Logistics Fremont;
+- Client Package: RK Logistics;
+- every criminal-court / federal search clear;
+- sex-offender component is the only adverse hit;
+- "Subject is a registered Sex Offender in California";
+- "NEEDS APPROVAL, PER CLIENT CRITERIA";
+- termination July 15;
+- separate contemporaneous RK MVR explanation.
+
+#### Randstad
+The statutory-use chain is strong because Randstad ordered/received the
+screening and implemented the termination. The principal causation fight is
+registry result versus the competing MVR explanation.
+
+#### RK Logistics
+The RK-branded report fields strongly support involvement in screening
+criteria. They do **not**, standing alone, conclusively establish that an RK
+human viewed the registry result or made the final decision because of it.
+
+Replace "RK is the decision-making entity" with:
+> the report strongly supports that RK participated in or controlled relevant
+> screening criteria; access logs and decision records remain necessary to
+> establish statutory "use."
+
+#### Priority discovery
+- InfoMart portal/access logs;
+- client-package configuration and adjudication criteria;
+- decision/audit history;
+- communications among Randstad, RK, Watkins, Altares, and InfoMart;
+- exact MVR receipt/open/forward timestamps;
+- termination reason code and HR workflow.
+
+---
+
+### Matter 25 — FedEx
+
+**Newanforbi v. Federal Express Corporation**
+E.D. Cal. No. 2:26-cv-02881-DAD-SCR.
+
+Known:
+- First Advantage pre-adverse/adverse sequence;
+- final non-hire;
+- FedEx answered rather than moving to dismiss.
+
+Missing:
+- the actual report;
+- registry-source field;
+- adjudication code;
+- proof tying a registry result to the decision.
+
+FedEx therefore remains a **source-proof case**. The first discovery objective
+should be the exact report as furnished to FedEx, all component results,
+source-of-record fields, adjudication status/reason codes, and audit history.
+
+Possible outcomes:
+- UPS-type report -> § 290.46 strength increases sharply;
+- Lerma-type report -> claim should be narrowed or dropped;
+- mixed sources -> causation becomes the fight.
+
+Tameny failure-to-hire is independently vulnerable under California law and
+should not be treated as the load-bearing claim.
+
+---
+
+### Matter 29 — Amazon / Accurate Background
+
+**Newanforbi v. Amazon.com Services, LLC et al.**
+N.D. Cal. No. 4:26-cv-09249-ASK.
+
+Known:
+- conditional offer and training dates;
+- Accurate screening initiated;
+- extended screening delay;
+- confirmed shift later disappeared;
+- actual Accurate report not yet in hand;
+- formal adverse-action basis not yet confirmed.
+
+#### Amazon
+§ 290.46 remains plausible but evidence-dependent. Lerma makes the missing
+source link the central issue.
+
+#### Accurate
+Mendoza creates a serious § 290.46 obstacle if Accurate merely reported the
+information. FCRA/ICRAA are the more natural vendor-side claims unless
+discovery shows Accurate itself adjudicated, suppressed, held, or acted upon
+the registry information.
+
+#### Fair Chance Act
+Treat as potentially strong **if** Amazon's records show it considered criminal
+history and made a preliminary adverse decision without the required
+individualized assessment. Do not call it independently proven before the
+decision record is obtained.
+
+#### Priority discovery
+- Accurate screening Y94611404 and every component;
+- National Sex Offender Database result;
+- California source/provenance;
+- adjudication codes;
+- Amazon-facing status and timestamps;
+- shift-removal reason;
+- Amazon decision/audit history;
+- Amazon–Accurate communications.
+
+---
+
+## 6. FCRA corrections for the employment cluster
+
+### 6.1 No hard five-business-day statutory waiting period
+
+15 U.S.C. § 1681b(b)(3)(A) requires the employer, before taking adverse action
+based in whole or in part on a consumer report, to provide:
+- a copy of the report; and
+- the prescribed summary of rights.
+
+The statute itself does **not** state a fixed five-business-day waiting period.
+Portfolio language stating a statutory "five-business-day rule" or an
+"earliest compliant adverse-action date" should be removed.
+
+Where timing matters, plead/analyze whether the applicant received the
+required materials and a meaningful opportunity to respond under the governing
+authority rather than inventing a fixed statutory clock.
+
+### 6.2 InfoMart's July 13 Matter 27 notice may be § 1681k notice, not the employer's § 1681b(b)(3) package
+
+15 U.S.C. § 1681k(a)(1) requires a CRA that reports adverse public-record
+information for employment purposes either to notify the consumer when the
+public-record information is reported to the user, including the recipient's
+name/address, or to maintain strict procedures for completeness/currency.
+
+The July 13 InfoMart "Notice to Consumer for Employment Purposes" says InfoMart
+is reporting criminal or other public-record information to Randstad. That
+language fits § 1681k's CRA-side notice structure.
+
+Do not automatically label that document Randstad's § 1681b(b)(3)(A)
+pre-adverse package. Determine whether Randstad separately sent:
+- the actual report; and
+- the FCRA summary of rights
+before termination.
+
+If it did not, the FCRA theory may be a missing-employer-pre-adverse-materials
+theory rather than a "waited only two days instead of five" theory.
+
+### 6.3 Transportation-applicant exception
+
+Section 1681b(b)(3)(B)-(C) provides a different procedure for certain applicants
+who:
+1. apply for transportation-regulated positions within the statutory scope; and
+2. interacted with the employer only by mail, telephone, computer, or similar
+   means when the report was procured.
+
+For qualifying applicants, the statute provides post-adverse notice mechanics
+within three business days in lieu of ordinary (b)(3)(A).
+
+Before asserting ordinary § 1681b(b)(3)(A) procedure in a driver/logistics
+case, test the transportation exception against the actual position and
+interaction history.
+
+---
+
+## 7. ICRAA remedy correction
+
+Civil Code § 1786.50(a) provides, for qualifying failures to comply with ICRAA:
+- actual damages or **$10,000, whichever is greater** (except class actions);
+- costs and reasonable attorney's fees in a successful action.
+
+If the violation is grossly negligent or willful, § 1786.50(b) permits
+additional punitive damages.
+
+There is no general "$5,000 punitive cap" in § 1786.50.
+
+Portfolio models should distinguish this real $10,000-or-actual-damages
+structure from § 290.46's non-floor $25,000 civil-penalty ceiling.
+
+---
+
+## 8. Fee-shifting modeling
+
+The statutes may authorize attorney's fees, but the plaintiff is currently pro
+se. Do not model the plaintiff's own litigation time as already-accrued
+recoverable attorney's fees.
+
+Portfolio valuation should distinguish:
+- **current accrued recoverable plaintiff attorney fees:** none while pro se,
+  absent later qualifying counsel/incurred fees;
+- **future fee exposure:** possible if counsel later appears and recoverable
+  fees are actually incurred;
+- **defense transaction cost:** real settlement pressure but not plaintiff
+  compensatory damages.
+
+---
+
+## 9. Settlement evidence is not precedent
+
+### Pilot / Matter 22
+The $35,000 portfolio-recorded settlement is useful negotiation intelligence.
+It is **not** a merits adjudication of § 290.46.
+
+Preferred language:
+> Matter 22 demonstrates that a registry-based employment dispute can generate
+> early settlement value, but there was no merits adjudication of § 290.46.
+
+### Lerma
+The 2023 confidential settlement resolved the case after the Megan's Law count
+had already been dismissed. Do not use the settlement as proof of § 290.46
+liability or willfulness.
+
+---
+
+## 10. Practical claim architecture
+
+| Theory | UPS | FedEx | Randstad | RK | Amazon | Accurate |
+|---|---|---|---|---|---|---|
+| § 290.46 | **Core** | Core after source discovery | **Core** | Core, use discovery needed | Evidence-dependent | Secondary; Mendoza problem |
+| Tameny | failure-to-hire vulnerable | failure-to-hire vulnerable | strongest here if employment relationship established | joint-employer issue | not central | N/A |
+| ICRAA | independent | independent | independent | role-dependent | independent | **core vendor theory** |
+| FCRA | report/adverse procedure | report/adverse procedure | audit actual pre-adverse materials; no fake 5-day rule | role-dependent | live | **core vendor theory** |
+| UCL | derivative + federal equitable limits | same | stronger state posture | same | Sonner/equitable standing issue | same |
+| Fair Chance Act | — | — | — | — | evidence-dependent, potentially significant | generally employer-facing |
+
+Negligence per se should generally be treated as an evidentiary doctrine rather
+than a standalone cause of action.
+
+---
+
+## 11. Research watchlist
+
+### Verified or high-priority
+- Pastrana
+- Donaleski
+- Mendoza
+- Lerma
+- McGroarty (obtain full order body)
+- Short
+- Walker
+- Sandoval Carrillo
+- Garza
+- Proctor
+- Hotek
+
+### Searches that did not reveal a separate additional merits case
+Targeted searches of Littler, Ogletree, Fisher Phillips, Lexology, OnLabor,
+Bloomberg Law, Law360, HR press, CourtListener, and web results did not reveal
+another verified § 290.46 employment merits decision beyond the authorities
+cataloged above.
+
+Absence from these searches is not proof that a sealed, unpublished, or
+paywalled state-court ruling does not exist.
+
+---
+
+## 12. Branch/PR integration notes
+
+Relevant branches checked before this memo was finalized:
+
+- `cursor/pc-29046-employment-cases-01d0` — this research branch / PR #761.
+  Its original Pastrana conclusion was corrected here.
+- `intel/matter-26-settlement-demand` — contains UPS settlement-demand status
+  and timeline only; not folded into this doctrine PR.
+- `automation/courtlistener-sync` — sync-state / docket automation; no
+  doctrine changes imported.
+- `cursor/courtlistener-bridge-6107` — larger CourtListener/intelligence
+  infrastructure branch; intentionally kept separate.
+- Randstad/Amazon procedural branches — checked for overlap; no research
+  doctrine imported.
+
+This PR should remain the source-of-truth research/correction layer. Procedural
+or settlement-only branch changes should merge independently.
+
+---
+
+## 13. Bottom line
+
+The modern § 290.46 employment field is sparse but no longer mysterious:
+
+- **Pastrana:** specific statutory authorization can defeat liability.
+- **Donaleski:** independent lawful sourcing / independent decisionmaking can
+  defeat causation.
+- **Mendoza:** the actor who actually uses the information is the statutory
+  focus; a mere CRA republisher is different.
+- **Lerma:** the report's source attribution can defeat the claim at pleading.
+
+Against that backdrop, **UPS is the portfolio's strongest candidate to produce
+new law** because its own lodged report identifies the California Sex Offender
+Registry as the source of the only adverse/decisional registry record while
+the ordinary criminal component returned no record. The unresolved
+national-index/source question is materially different from the fact patterns
+resolved in the existing cases.
