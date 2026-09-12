@@ -1,0 +1,22 @@
+name = "ilp-vercel-deploy-cron"
+main = "worker.mjs"
+compatibility_date = "2026-09-12"
+
+# Production deploys of the portfolio site run from this cron, not from
+# every push to main (vercel.json sets git.deploymentEnabled=false).
+# Times are UTC. 13/17/21/01 UTC = 06:00 / 10:00 / 14:00 / 18:00 Pacific
+# during PDT; one hour later in PST. See README.md.
+[triggers]
+crons = ["0 1,13,17,21 * * *"]
+
+# Secrets are NOT stored here. Set them with:
+#   wrangler secret put VERCEL_DEPLOY_HOOK_URL   # Vercel -> Settings -> Git -> Deploy Hooks (branch: main)
+#   wrangler secret put GITHUB_TOKEN             # optional: fine-grained PAT, this repo, Contents: read
+#   wrangler secret put DEPLOY_TRIGGER_TOKEN     # optional: bearer token for manual POST /deploy
+[vars]
+GITHUB_REPO = "newanforbi/interactive-litigation-portfolio"
+GITHUB_BRANCH = "main"
+# Public origin of the production site. When set (and GITHUB_TOKEN is set),
+# the worker reads /version.json and skips the hook if production already
+# has main's HEAD. Leave empty to fire the hook on every tick.
+SITE_URL = ""

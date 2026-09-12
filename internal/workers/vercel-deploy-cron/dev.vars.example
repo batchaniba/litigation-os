@@ -1,0 +1,11 @@
+# Local dev only. Copy to `.dev.vars` (gitignored by wrangler convention) and
+# fill in — NEVER commit real secrets.
+#
+#   cp dev.vars.example .dev.vars
+#   wrangler dev --test-scheduled
+#   curl "http://localhost:8787/__scheduled?cron=0+1,13,17,21+*+*+*"
+
+VERCEL_DEPLOY_HOOK_URL = "https://api.vercel.com/v1/integrations/deploy/prj_.../..."
+GITHUB_TOKEN = "paste-a-contents-read-token"
+DEPLOY_TRIGGER_TOKEN = "paste-openssl-rand-hex-32-output"
+SITE_URL = "https://your-production-domain.example"

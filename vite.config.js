@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import fs from 'node:fs/promises'
 import path from 'node:path'
+import { execSync } from 'node:child_process'
 import {
   PUBLIC_ROOT,
   copyPublicExceptDocumentsFilter,
@@ -27,6 +28,37 @@ function copyPublicExceptDocuments() {
   }
 }
 
+// dist/version.json records which commit a deployment was built from. The
+// scheduled deploy worker (internal/workers/vercel-deploy-cron/) compares it
+// with main's HEAD and only fires the Deploy Hook when production is behind.
+// Vercel and GitHub Actions expose the SHA in env; local builds ask git.
+function buildCommitInfo() {
+  const sha =
+    process.env.VERCEL_GIT_COMMIT_SHA ||
+    process.env.GITHUB_SHA ||
+    (() => {
+      try {
+        return execSync('git rev-parse HEAD', { stdio: ['ignore', 'pipe', 'ignore'] }).toString().trim()
+      } catch {
+        return null
+      }
+    })()
+  const ref = process.env.VERCEL_GIT_COMMIT_REF || process.env.GITHUB_REF_NAME || null
+  return { sha, ref, builtAt: new Date().toISOString() }
+}
+
+function writeVersionJson() {
+  return {
+    name: 'write-version-json',
+    apply: 'build',
+    async writeBundle(options) {
+      const outDir = options.dir ?? path.resolve('dist')
+      await fs.mkdir(outDir, { recursive: true })
+      await fs.writeFile(path.join(outDir, 'version.json'), `${JSON.stringify(buildCommitInfo(), null, 2)}\n`)
+    },
+  }
+}
+
 // GitHub Pages serves this as a project site at /interactive-litigation-portfolio/,
 // while Vercel serves it from the domain root. The GH Pages workflow sets
 // GITHUB_PAGES=true at build time; Vercel builds leave it unset.
@@ -34,6 +66,7 @@ export default defineConfig({
   plugins: [
     react({ jsxRuntime: 'automatic' }),
     skipDocuments ? copyPublicExceptDocuments() : null,
+    writeVersionJson(),
   ].filter(Boolean),
   publicDir: skipDocuments ? false : 'internal/public',
   base: process.env.GITHUB_PAGES === 'true' ? '/interactive-litigation-portfolio/' : '/',
