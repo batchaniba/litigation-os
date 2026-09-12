@@ -22,11 +22,12 @@
 # with no analytical relationship to these defendants. Two problems
 # with that figure drove this revision:
 #
-#   1. In these four matters the Pen. Code § 290.46(j)(4)(A) remedy is
-#      itself "actual damages or $25,000, whichever is greater" — a
-#      COMPENSATORY figure. Noticing punitive damages at the identical
-#      $25,000 puts the same number on both sides of the ledger and
-#      invites a prove-up court to read the punitive request as
+#   1. Pen. Code § 290.46(j)(4)(A) does NOT create an "actual damages
+#      or $25,000, whichever is greater" compensatory floor. It permits
+#      actual damages, an additional amount of at least $250 up to three
+#      times actuals, attorney's fees, and exemplary damages OR a civil
+#      penalty not exceeding $25,000. The $25,000 number is therefore a
+#      ceiling on one statutory civil-penalty option, not a floor.
 #      duplicative of the statutory penalty.
 #   2. Section 425.115 caps punitive damages recoverable ON DEFAULT and
 #      cannot be raised once default is entered, so an under-set figure
