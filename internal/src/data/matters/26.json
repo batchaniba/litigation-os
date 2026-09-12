@@ -253,5 +253,12 @@
     }
   ],
   "archived": false,
-  "status_label": "Dkt. 12: UPS reply by Sep. 14 — hearing Oct. 7"
+  "status_label": "Dkt. 12: UPS reply by Sep. 14 — hearing Oct. 7",
+  "opposing_counsel": [
+    {
+      "name": "Vanessa W. Mott",
+      "dossier": "counsel/vanessa-w-mott.json",
+      "firm": "Martenson, Hasbrouck & Simon LLP"
+    }
+  ]
 }
