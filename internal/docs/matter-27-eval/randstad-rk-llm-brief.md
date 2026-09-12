@@ -8,7 +8,7 @@ You are asked to evaluate the **strength** of this California employment / backg
 1. Liability odds on the core Penal Code § 290.46(j)(2)(E) claim against (a) Randstad and (b) RK Logistics, separately.
 2. Whether RK’s two defenses (not the employer; MVR not registry) actually kill the case or only some claims.
 3. A settlement range that is **not** anchored to Plaintiff’s $55,000 / $85,000 numbers. Ignore those numbers until the end, then say whether they look cheap, fair, or rich given the file.
-4. What you would **not** give away for free (extensions, dropping a defendant, dropping below the statutory floor).
+4. What you would **not** give away for free (extensions, dropping a defendant, or making unsupported valuation concessions).
 
 ## Case caption and clocks (as of Friday, August 28, 2026, morning Pacific)
 
@@ -81,7 +81,7 @@ No answer, no demurrer, no § 430.41 letter as of August 28. First move was to h
 
 Portfolio internal model (Matter 27.json):
 
-- Conservative ~$45,000 (statutory floor + modest distress; few or no paid shifts).
+- Conservative ~$45,000 (scenario value, not a statutory floor; modest distress; few or no paid shifts).
 - Moderate ~$110,000.
 - Aggressive ~$250,000 (stacking + punitives + two defendants).
 
