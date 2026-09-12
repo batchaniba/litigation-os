@@ -48,9 +48,9 @@ All current and future matters follow the [Stipulation Defense — Plaintiff-Fir
 | Active / Open | 20 |
 | — of which Settled | 1 (Matter 22 — Newanforbi v. Pilot Travel Centers LLC, Jul. 14, 2026) |
 | Dismissed / Closed / Abandoned | 19 |
-| Aggregate Exposure (Conservative) | ~$1,511,000+ |
-| Aggregate Exposure (Moderate) | ~$3,662,000+ |
-| Aggregate Exposure (Aggressive) | ~$8,099,000+ |
+| Aggregate Exposure (Conservative) | ~$1,486,000+ |
+| Aggregate Exposure (Moderate) | ~$3,612,000+ |
+| Aggregate Exposure (Aggressive) | ~$7,998,000+ |
 | Last Updated | September 7, 2026 |
 <!-- PORTFOLIO:OVERVIEW_TABLE:END -->
 
@@ -296,7 +296,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | PC §290.46(j) Violation + Wrongful Termination (Matter 22) | 22 | $220,000 | $525,000 | $1,000,000 |
 | 42 USC §1983 — Arbitrary U Visa Certification Denial & Retaliation (Matter 24) | 24 | $75,000 | $200,000 | $450,000 |
 | PC §290.46(j) Failure to Hire — FedEx / UPS (Matters 25, 26) | 25, 26 | $75,000 | $180,000 | $420,000 |
-| PC §290.46(j) — Wrongful Termination / Failure to Employ — Randstad / RK Logistics (Matter 27) | 27 | $180,000 | $437,000 | $835,000 |
+| PC §290.46(j) — Wrongful Termination / Failure to Employ — Randstad / RK Logistics (Matter 27) | 27 | $155,000 | $387,000 | $734,000 |
 | §1983 Monell / Individual + Bane Act + RICO — Shannon Smith / HOPE (Matter 28) | 28 | $249,000 | $666,000 | $1,510,000 |
 | PC §290.46(j) Failure to Hire — Amazon (Matter 29) | 29 | $30,000 | $75,000 | $180,000 |
 | §1983 Retaliation, Due Process, Bane Act & IIED — Moua (Matter 30) | 30 | $90,000 | $225,000 | $525,000 |
