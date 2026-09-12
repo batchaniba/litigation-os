@@ -4,7 +4,7 @@
   "case_no": "26CV199902",
   "court": "Alameda Sup. Ct.",
   "claims": "PC §290.46(j)(2)(E) Violation, Wrongful Termination in Violation of Public Policy, ICRAA, Invasion of Privacy, Negligence Per Se (Evid. Code §669), UCL §17200",
-  "status": "Served July 30, 2026; POS-010s accepted Aug. 7. Amended §425.115 notices personally served Aug. 21; POS-040s filed Sept. 9. Sept. 9: Garcia/Williams POS courtesy; Williams further-extension ask declined; InfoMart to Williams; $55k/$85k withdrawn. Sept. 10: Garcia asks RK to Sept. 30 — declined 10:42 a.m.; Tod Gurney renews at 4:47 p.m. (coverage still pending / just getting up to speed) — decline draft on file; Sept. 14 remains. Randstad answer Sept. 15; RK Sept. 14 (no further). CIV-100s hold to Sept. 15 (RK) / Sept. 16 (Randstad) if the docket is empty. CMC Dec. 17, 2026.",
+  "status": "Served July 30, 2026; POS-010s accepted Aug. 7. Amended §425.115 notices personally served Aug. 21; POS-040s filed Sept. 9. Sept. 9: $55k/$85k withdrawn. Sept. 10: Garcia/Gurney Sept. 30 asks declined; Sept. 14 remains. Randstad answer Sept. 15; RK Sept. 14 (no further). Sept. 12: $40,000 final early global demand ready (Williams/Chapman/Garcia/Gurney). Clocks stay Sept. 14/15 — no Sept. 18 extension. CIV-100s file-if-silent Sept. 15 (RK) / Sept. 16 (Randstad) if eCourt is empty. Offer open through 5:00 p.m. PT Sept. 18 even after a filing. CMC Dec. 17, 2026.",
   "lifecycle": "active",
   "proceeding": "state_civil",
   "phase": "responsive_deadline",
@@ -74,7 +74,8 @@
     "SENT — Gmail to Chadwick L. Williams (cc Nathan Chapman), Sept. 9, 2026, 1:54 p.m., courtesy copies of the filed Randstad POS-040 and Randstad Amended CCP §425.115 notice; September 15 unchanged; asked to meet and confer Sept. 9 or 10. Williams replied 1:56 p.m.: he can talk today; call his direct line (404) 400-7306.",
     "SENT — Gmail to Chadwick L. Williams (cc Nathan Chapman), Sept. 9, 2026, 2:33 p.m., InfoMart Order No. 15780719 (15780719Final_Profile.PDF). Evid. Code §1152 / FRE 408. Did not restate the withdrawn $55,000/$85,000 figures.",
     "SENT — Gmail to Chadwick L. Williams (cc Nathan Chapman), Sept. 9, 2026, 2:57 p.m., reply on the settlement-demand thread: withdraws the Aug. 19 / Aug. 28 $55,000 Randstad-only / $85,000 global demands; September 15 remains; no replacement number. Evid. Code §1152 / FRE 408.",
-    "Counsel research dossier — Chadwick L. Williams / Nathan D. Chapman (Kabat Chapman & Ozmer LLP) at internal/docs/counsel/kcoz/WILLIAMS_CHAPMAN.md. Identity and role only (Williams email voice / Georgia; Chapman working attorney / California-barred on the firm bio). PACER pulls lodged: Charter Communications, Inc. v. Myla, D. Conn. 3:25-cv-00025-SFR; We Got U LLC v. Leonard, N.D. Ga. 1:26-cv-03474-VMC; Sullivan v. Maloof, N.D. Ga. 1:25-cv-02006-JPB (Williams-only; Dkt. 30 is his first signed brief — settlement/cost/clock, not We Got U heat). Not related cases. Do not email this firm about the research."
+    "Counsel research dossier — Chadwick L. Williams / Nathan D. Chapman (Kabat Chapman & Ozmer LLP) at internal/docs/counsel/kcoz/WILLIAMS_CHAPMAN.md. Identity and role only (Williams email voice / Georgia; Chapman working attorney / California-barred on the firm bio). PACER pulls lodged: Charter Communications, Inc. v. Myla, D. Conn. 3:25-cv-00025-SFR; We Got U LLC v. Leonard, N.D. Ga. 1:26-cv-03474-VMC; Sullivan v. Maloof, N.D. Ga. 1:25-cv-02006-JPB (Williams-only; Dkt. 30 is his first signed brief — settlement/cost/clock, not We Got U heat). Not related cases. Do not email this firm about the research.",
+    "DRAFT (unsent) — Final early global settlement demand, Sept. 12, 2026: $40,000.00 global; wire in seven business days; joint written acceptance; expires 5:00 p.m. PT Sept. 18. September 14 (RK) and September 15 (Randstad) unchanged. No extension. CIV-100s file-if-silent Sept. 15/16 if the docket is empty. Generator: internal/scripts/matter27-global-demand-sep12.py. Letter and cover: internal/docs/matter-27-eval/. Do not send any draft that extends either clock through September 18. Evid. Code §1152 / FRE 408."
   ],
   "documents": [
     {
@@ -324,7 +325,7 @@
     }
   ],
   "archived": false,
-  "status_label": "Gurney renews RK to Sept. 30 — decline; CIV-100 hold 15/16",
+  "status_label": "$40k global ready — clocks stay 14/15; no Sept. 18 gift",
   "opposing_counsel": [
     {
       "name": "Nathan D. Chapman",
