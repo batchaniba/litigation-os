@@ -1,0 +1,13 @@
+name = "ilp-courtlistener-webhook"
+main = "worker.mjs"
+compatibility_date = "2026-09-12"
+
+# Secrets are NOT stored here. Set them with:
+#   wrangler secret put GITHUB_TOKEN         # PAT able to POST repository_dispatch
+#   wrangler secret put WEBHOOK_PATH_SECRET   # long random path component (openssl rand -hex 32)
+#
+# SKIP_IP_CHECK exists only for local testing and for CourtListener's dashboard
+# "send test event" control (test events don't come from the egress IPs).
+# Production must always run with "false".
+[vars]
+SKIP_IP_CHECK = "false"

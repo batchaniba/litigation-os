@@ -1,0 +1,12 @@
+# Local dev only. Copy to `.dev.vars` (gitignored by wrangler convention) and
+# fill in — NEVER commit real secrets.
+#
+#   cp dev.vars.example .dev.vars
+#   wrangler dev
+#
+# With SKIP_IP_CHECK=true, localhost curl tests skip the egress-IP allowlist
+# (your machine is not CourtListener). Production must keep it "false".
+
+GITHUB_TOKEN = "paste-a-dispatch-capable-token"
+WEBHOOK_PATH_SECRET = "paste-openssl-rand-hex-32-output"
+SKIP_IP_CHECK = "true"
