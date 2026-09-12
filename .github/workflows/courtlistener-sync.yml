@@ -1,7 +1,14 @@
 name: CourtListener Sync
 
-# Hourly reconciliation plus manual dispatch. Automation never writes to main:
-# it maintains automation/courtlistener-sync and opens/updates one standing PR.
+# Webhook-driven reconciliation plus a polling backstop. A Cloudflare Worker
+# (internal/workers/courtlistener-webhook/) translates CourtListener docket
+# webhook events into repository_dispatch events ("courtlistener-webhook"),
+# so sync runs on docket changes instead of on a fixed schedule. The cron
+# below is only a safety net for events the webhook misses or that arrive
+# while the webhook endpoint is disabled.
+#
+# Automation never writes to main: it maintains automation/courtlistener-sync
+# and opens/updates one standing PR.
 #
 # Runners are currently paused while GitHub billing/spending limit is blocking
 # jobs. The schedule is in place so sync resumes when Actions can start again.
@@ -10,8 +17,10 @@ name: CourtListener Sync
 
 on:
   workflow_dispatch:
+  repository_dispatch:
+    types: [courtlistener-webhook]
   schedule:
-    - cron: "17 * * * *"
+    - cron: "17 */6 * * *"
 
 permissions:
   contents: write
@@ -49,6 +58,12 @@ jobs:
         with:
           node-version: 22
           cache: npm
+
+      - name: Webhook dispatch context
+        if: github.event_name == 'repository_dispatch'
+        run: |
+          echo "dispatch event_type=${{ github.event.action }}"
+          echo 'client_payload=${{ toJson(github.event.client_payload) }}'
 
       - name: Install dependencies
         run: npm ci
