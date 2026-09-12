@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1198,
-  "totalBytes": 863576765,
+  "fileCount": 1199,
+  "totalBytes": 863622121,
   "files": [
     {
       "path": "/documents/README.md",
@@ -842,6 +842,11 @@
       "path": "/documents/matter-05/Meet and Confer Letter 061626.pdf",
       "size": 16575,
       "sha256": "6d29490554898d6072447f6efe43d1043facd136a9eeff3e082f7dd5632fc8f6"
+    },
+    {
+      "path": "/documents/matter-05/Minute Order - Demurrer Sustained WOLA (Jul 15 2026).pdf",
+      "size": 45356,
+      "sha256": "376f114d6d990f4a46b70f4d78c3b231887486f43b0419d5f9cbd3c357188393"
     },
     {
       "path": "/documents/matter-05/Notice of Change of Address (July 7, 2026).pdf",
