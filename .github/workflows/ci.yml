@@ -51,6 +51,16 @@ jobs:
       - name: Build
         run: npm run build
 
+      # prebuild regenerates vercel.json from the short-link catalog. The file
+      # is committed (Vercel reads git.deploymentEnabled from the repo), so a
+      # diff here means someone edited the catalog without the pre-commit hook.
+      - name: vercel.json matches short-link catalog
+        run: |
+          git diff --exit-code -- vercel.json || {
+            echo "::error::vercel.json is stale — run 'npm run sync:short-links' and commit the result"
+            exit 1
+          }
+
       - name: Golden-file tests (damages/fee math)
         run: npm run test:golden
 

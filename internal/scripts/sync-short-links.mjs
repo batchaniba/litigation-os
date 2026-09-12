@@ -5,6 +5,11 @@
 // Catalog: internal/public/short-links.json
 // Writes:  vercel.json  and  internal/public/{slug}/index.html
 //
+// vercel.json is COMMITTED (it carries git.deploymentEnabled, which Vercel
+// must read from the repo at push time); the slug landings are gitignored
+// and rebuilt by prebuild. The pre-commit hook re-runs this script when the
+// catalog changes, and CI fails if the committed vercel.json is stale.
+//
 // Usage:
 //   npm run sync:short-links
 //   npm run sync:short-links -- --check
@@ -77,6 +82,13 @@ function buildVercelJson(links) {
     });
   }
   return {
+    $schema: "https://openapi.vercel.sh/vercel.json",
+    // Production is deployed by the scheduled Deploy Hook
+    // (internal/workers/vercel-deploy-cron/), not by every push to main.
+    // Vercel reads this key from the committed file at push time, which is
+    // why vercel.json is tracked even though this script regenerates it.
+    // See internal/docs/VERCEL_DEPLOYS.md.
+    git: { deploymentEnabled: false },
     redirects,
     headers,
     rewrites: vercelSpaRewrites(),
