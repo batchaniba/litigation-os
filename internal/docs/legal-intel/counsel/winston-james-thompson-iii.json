@@ -1,0 +1,64 @@
+{
+  "version": 2,
+  "name": "Winston James Thompson , III",
+  "attorney_id": 288063,
+  "firm": "California Attorney General",
+  "linked_matters": [
+    24
+  ],
+  "generated_at": "2026-09-12T16:14:39.461Z",
+  "source": "courtlistener",
+  "identity": {
+    "level": "verified",
+    "label": "Pinned to CourtListener attorney ID 288063"
+  },
+  "history": {
+    "dockets_found": 0,
+    "courts": {},
+    "date_range": {
+      "earliest": null,
+      "latest": null
+    },
+    "sample": [],
+    "sample_truncated": false
+  },
+  "clients": {
+    "cases_parsed": 0,
+    "defendants": [],
+    "plaintiffs": [],
+    "top_defendant": null
+  },
+  "subjects": {
+    "tags": {},
+    "primary": null,
+    "screening_ecosystem": {
+      "detected": false,
+      "matched_cra_clients": []
+    },
+    "note": "Keyword heuristic over sampled case names; directional, not a legal determination."
+  },
+  "vs_you": {
+    "matters": [
+      24
+    ],
+    "entries_analyzed": 0,
+    "patterns": {
+      "motion_to_dismiss": 0,
+      "summary_judgment": 0,
+      "discovery_motion": 0,
+      "motion_to_strike": 0,
+      "sanctions": 0,
+      "settlement": 0,
+      "voluntary_dismissal": 0,
+      "default": 0,
+      "appeal": 0
+    }
+  },
+  "caveats": [
+    "Name-based RECAP search can conflate attorneys with common names; pin --attorney-id when ambiguous.",
+    "History is a docket sample (up to ~60 most recent), not an exhaustive record.",
+    "Client and subject signals are keyword heuristics over sampled case names; directional, not adjudicated.",
+    "Outcome signals (settlement/dismissal mentions) are directional, not adjudicated results.",
+    "Motion patterns cover only matters with locally synced docket entries."
+  ]
+}

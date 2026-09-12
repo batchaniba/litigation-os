@@ -345,5 +345,13 @@
       "served": true,
       "dateServed": "August 5, 2026 at 10:20 a.m. (USMS; Doc. 15 filed Aug. 6, 2026)"
     }
+  ],
+  "opposing_counsel": [
+    {
+      "name": "Winston James Thompson , III",
+      "dossier": "counsel/winston-james-thompson-iii.json",
+      "attorney_id": 288063,
+      "firm": "California Attorney General"
+    }
   ]
 }
