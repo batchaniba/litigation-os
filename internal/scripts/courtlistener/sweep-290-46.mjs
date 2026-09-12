@@ -1,0 +1,136 @@
+// Full-text sweep for Penal Code § 290.46 across CourtListener opinions and RECAP.
+//
+// Closes the one gap the 2026-09-12 § 290.46 case survey could not: a docket-level
+// search for complaints and briefing that cite the statute where no opinion exists.
+// Runs in GitHub Actions because that is where COURTLISTENER_TOKEN lives; the agent
+// container's egress policy blocks courtlistener.com outright.
+//
+// Usage:
+//   node internal/scripts/courtlistener/sweep-290-46.mjs
+//   node internal/scripts/courtlistener/sweep-290-46.mjs --dry-run   # no writes
+
+import { mkdirSync, writeFileSync } from "node:fs";
+import path from "node:path";
+import { budgetAllows, createClient, readCourtListenerToken } from "./client.mjs";
+import { REPO_ROOT } from "./io.mjs";
+
+const OUT_DIR = path.join(REPO_ROOT, "internal/docs/legal-intel/recon");
+const OUT_PATH = path.join(OUT_DIR, "290-46-recap-sweep.json");
+
+// CourtListener's minute budget is 5/min, so space requests well clear of it.
+const MIN_INTERVAL_MS = 13_000;
+
+// type=o searches opinion text; type=r searches RECAP filings (complaints, briefs).
+const QUERIES = [
+  { id: "opinions-bare", type: "o", q: '"290.46"' },
+  { id: "opinions-employment", type: "o", q: '"290.46" employment' },
+  { id: "recap-bare", type: "r", q: '"290.46"' },
+  { id: "recap-employment", type: "r", q: '"290.46" employment' },
+  { id: "recap-subdivision", type: "r", q: '"290.46(j)(2)(E)"' },
+  { id: "recap-megans-law-employment", type: "r", q: '"Megan\'s Law" employment "background check"' },
+];
+
+const dryRun = process.argv.includes("--dry-run");
+
+function summarize(type, row) {
+  if (type === "o") {
+    return {
+      caseName: row.caseName ?? null,
+      court: row.court ?? row.court_id ?? null,
+      dateFiled: row.dateFiled ?? null,
+      docketNumber: row.docketNumber ?? null,
+      status: row.status ?? null,
+      citation: row.citation ?? null,
+      absoluteUrl: row.absolute_url ? `https://www.courtlistener.com${row.absolute_url}` : null,
+    };
+  }
+  // RECAP rows nest matched filings under recap_documents.
+  const docs = Array.isArray(row.recap_documents) ? row.recap_documents : [];
+  return {
+    caseName: row.caseName ?? null,
+    court: row.court ?? row.court_id ?? null,
+    dateFiled: row.dateFiled ?? null,
+    docketNumber: row.docketNumber ?? null,
+    docketId: row.docket_id ?? null,
+    assignedTo: row.assignedTo ?? null,
+    dateTerminated: row.dateTerminated ?? null,
+    absoluteUrl: row.docket_absolute_url
+      ? `https://www.courtlistener.com${row.docket_absolute_url}`
+      : null,
+    matchedFilings: docs.map((doc) => ({
+      entryNumber: doc.entry_number ?? null,
+      description: doc.short_description ?? doc.description ?? null,
+      dateFiled: doc.entry_date_filed ?? null,
+      snippet: doc.snippet ?? null,
+    })),
+  };
+}
+
+async function main() {
+  const token = readCourtListenerToken();
+  if (!token) {
+    console.error("COURTLISTENER_TOKEN is not set. The search API needs it for RECAP text.");
+    process.exit(1);
+  }
+  const client = createClient({ token, minIntervalMs: MIN_INTERVAL_MS });
+
+  // Repo convention: check the usage endpoint first and refuse to run blind.
+  let usage;
+  try {
+    usage = await client.getApiUsage();
+  } catch (err) {
+    console.error(`Could not read /api-usage/: ${err.message}. Refusing to run.`);
+    process.exit(1);
+  }
+  const budget = budgetAllows(usage, { minDaily: QUERIES.length * 2, minHourly: 2 });
+  if (!budget.ok) {
+    console.error(`Quota too low to sweep: ${budget.reason}`);
+    process.exit(1);
+  }
+  console.log(
+    `Quota OK — daily ${budget.remaining.daily}, hourly ${budget.remaining.hourly}, minute ${budget.remaining.minute}`,
+  );
+
+  const results = [];
+  for (const query of QUERIES) {
+    const params = new URLSearchParams({ type: query.type, q: query.q, page_size: "20" });
+    if (query.type === "r") params.set("order_by", "dateFiled desc");
+    const url = `https://www.courtlistener.com/api/rest/v4/search/?${params}`;
+    try {
+      const page = await client.request(url, { auth: true });
+      const rows = Array.isArray(page?.results) ? page.results : [];
+      console.log(`[${query.id}] type=${query.type} q=${query.q} -> ${page?.count ?? rows.length} hits`);
+      for (const row of rows) console.log(`    ${row.caseName ?? "?"} | ${row.court ?? "?"} | ${row.dateFiled ?? "?"}`);
+      results.push({
+        ...query,
+        count: page?.count ?? null,
+        returned: rows.length,
+        hits: rows.map((row) => summarize(query.type, row)),
+      });
+    } catch (err) {
+      console.error(`[${query.id}] FAILED: ${err.message}`);
+      results.push({ ...query, error: err.message });
+    }
+  }
+
+  const payload = {
+    generated_at: new Date().toISOString(),
+    purpose:
+      "Docket-level and opinion-level full-text sweep for California Penal Code 290.46, closing gap 3 of the 2026-09-12 employment-use case survey.",
+    api: "CourtListener REST v4 /search/",
+    queries: results,
+  };
+
+  if (dryRun) {
+    console.log("--dry-run: not writing");
+    return;
+  }
+  mkdirSync(OUT_DIR, { recursive: true });
+  writeFileSync(OUT_PATH, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
+  console.log(`Wrote ${path.relative(REPO_ROOT, OUT_PATH)}`);
+}
+
+main().catch((err) => {
+  console.error(err);
+  process.exit(1);
+});
