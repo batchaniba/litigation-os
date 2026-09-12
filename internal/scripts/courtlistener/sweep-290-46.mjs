@@ -38,6 +38,16 @@ const QUERIES = [
   { id: "recap-parallel-290-4", type: "r", q: '"290.4(d)"' },
 ];
 
+// Dockets whose entry list the survey needs in full. Carrillo is the live
+// employment case whose complaint pleads (j)(2)(E) and whose posture is unknown;
+// Pastrana's Nov. 2008 order is cited portfolio-wide as a defense summary-judgment
+// win, but the docket labels it "granting in part and denying in part", so the
+// entries decide which is right.
+const DOCKETS = [
+  { id: 69602414, label: "Roberto Sandoval Carrillo v. The Vons Companies, Inc. (8:25-cv-00191)" },
+  { id: 5983762, label: "Pastrana v. Local 9509, CWA, AFL-CIO (3:06-cv-01779)" },
+];
+
 const dryRun = process.argv.includes("--dry-run");
 
 function summarize(type, row) {
@@ -121,12 +131,37 @@ async function main() {
     }
   }
 
+  const dockets = [];
+  for (const d of DOCKETS) {
+    try {
+      const entries = await client.listDocketEntries({ docketId: d.id });
+      console.log(`\n[docket ${d.id}] ${d.label} -> ${entries.length} entries`);
+      for (const e of entries) {
+        const desc = String(e.description ?? "").replace(/\s+/g, " ").slice(0, 220);
+        console.log(`    #${e.entry_number ?? "?"} [${e.date_filed ?? "?"}] ${desc}`);
+      }
+      dockets.push({
+        ...d,
+        entryCount: entries.length,
+        entries: entries.map((e) => ({
+          entryNumber: e.entry_number ?? null,
+          dateFiled: e.date_filed ?? null,
+          description: String(e.description ?? "").replace(/\s+/g, " ") || null,
+        })),
+      });
+    } catch (err) {
+      console.error(`[docket ${d.id}] FAILED: ${err.message}`);
+      dockets.push({ ...d, error: err.message });
+    }
+  }
+
   const payload = {
     generated_at: new Date().toISOString(),
     purpose:
       "Docket-level and opinion-level full-text sweep for California Penal Code 290.46, closing gap 3 of the 2026-09-12 employment-use case survey.",
     api: "CourtListener REST v4 /search/",
     queries: results,
+    dockets,
   };
 
   if (dryRun) {
