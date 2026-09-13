@@ -1,0 +1,86 @@
+{
+  "version": 2,
+  "name": "Vanessa W. Mott",
+  "attorney_id": null,
+  "firm": "Martenson, Hasbrouck & Simon LLP",
+  "linked_matters": [
+    26
+  ],
+  "generated_at": "2026-09-12T16:15:51.190Z",
+  "source": "courtlistener",
+  "identity": {
+    "level": "name-based",
+    "label": "Name-based match (no CourtListener attorney ID). Client and subject signals are directional; pin --attorney-id to verify."
+  },
+  "history": {
+    "dockets_found": 1,
+    "courts": {
+      "District Court, E.D. California": 1
+    },
+    "date_range": {
+      "earliest": "2021-10-26",
+      "latest": "2021-10-26"
+    },
+    "sample": [
+      {
+        "case_name": "Romero v. California Highway Patrol",
+        "docket_number": "2:21-cv-01978",
+        "court": "District Court, E.D. California",
+        "date_filed": "2021-10-26"
+      }
+    ],
+    "sample_truncated": false
+  },
+  "clients": {
+    "cases_parsed": 1,
+    "defendants": [
+      {
+        "name": "California Highway Patrol",
+        "count": 1
+      }
+    ],
+    "plaintiffs": [
+      {
+        "name": "Romero",
+        "count": 1
+      }
+    ],
+    "top_defendant": {
+      "name": "California Highway Patrol",
+      "count": 1
+    }
+  },
+  "subjects": {
+    "tags": {},
+    "primary": null,
+    "screening_ecosystem": {
+      "detected": false,
+      "matched_cra_clients": []
+    },
+    "note": "Keyword heuristic over sampled case names; directional, not a legal determination."
+  },
+  "vs_you": {
+    "matters": [
+      26
+    ],
+    "entries_analyzed": 0,
+    "patterns": {
+      "motion_to_dismiss": 0,
+      "summary_judgment": 0,
+      "discovery_motion": 0,
+      "motion_to_strike": 0,
+      "sanctions": 0,
+      "settlement": 0,
+      "voluntary_dismissal": 0,
+      "default": 0,
+      "appeal": 0
+    }
+  },
+  "caveats": [
+    "Name-based RECAP search can conflate attorneys with common names; pin --attorney-id when ambiguous.",
+    "History is a docket sample (up to ~60 most recent), not an exhaustive record.",
+    "Client and subject signals are keyword heuristics over sampled case names; directional, not adjudicated.",
+    "Outcome signals (settlement/dismissal mentions) are directional, not adjudicated results.",
+    "Motion patterns cover only matters with locally synced docket entries."
+  ]
+}
