@@ -48,6 +48,16 @@ Caveats, stated in every dossier:
 - History is a sample, not an exhaustive record.
 - Settlement/dismissal mentions are directional signals, not adjudicated outcomes.
 
+## Judicial dossiers
+
+Judge docket audits live at `internal/docs/legal-intel/judges/<slug>-<year>.md`. They are
+hand-built research dossiers (not `intel:counsel` output): case-type breakdown of the judge's
+observed docket for the year, notable cases, and behavioral patterns relevant to the
+portfolio's matters before that judge.
+
+- [Lisa J. Cisneros — 2026 docket audit](../internal/docs/legal-intel/judges/lisa-j-cisneros-2026.md)
+  (N.D. Cal. magistrate judge; presides over Matters 28 and 33)
+
 ## Roadmap
 
 - **Ninth Circuit precedent radar** - weekly `court:ca9` published-opinion scan
