@@ -203,37 +203,58 @@ does not merely disappoint a parolee — it **removes the discretion the statute
 **Flagged:** the exact text of **subdivision (d)(2)** specifically was not retrieved (leginfo is
 egress-blocked — § 6). The general § 3008 requirement is verified; pin (d)(2) before quoting it.
 
-### 2.2 *In re Dwyer* — substance corroborated, citation NOT verified
+### 2.2 *In re Dwyer* — VERIFIED IN FULL (this section supersedes the earlier flag)
 
-The complaint's ¶ 2 rests on ***In re Dwyer*, No. SC-080355A (San Mateo County Super. Ct., Mar. 20,
-2023)**, where the court allegedly found HOPE's policy "vitiates the Legislature's directive" under
-§ 3008(d)(2), and where **Dr. Cristina Loree**, HOPE's Executive Director of Clinical Training,
-allegedly testified that HOPE requires continuous treatment until parole discharge.
-
-**Independently corroborated — the event happened.** ACSOL reported in **March 2023** that a San
-Mateo County Superior Court judge ruled a parolee registrant was no longer required to participate in
-an additional treatment program, after a hearing at which **a CDCR representative testified that "a
-sex offender cannot successfully 'complete' a sex offender management treatment program"** while on
-parole, and that the decision rested on **§ 3008(d)(2)**, which authorizes courts to disapprove
-further participation as a parole condition.
-
-**NOT verified, and each matters:**
+**Correction to the first version of this memo.** The first pass flagged the *Dwyer* citation as
+unverified and advised against briefing the "vitiates" quote and the Loree attribution. **That
+caution is withdrawn. Every element is now verified**, because the **endorsed-filed order is
+attached as Exhibit B to the Matter 19 habeas petition** in this portfolio
+(`matter-19/Petition for Writ of Habeas Corpus (filed Apr. 3, 2026).pdf`).
 
 | Element | Status |
 |---|---|
-| A March 2023 San Mateo ruling on § 3008(d)(2) treatment participation | **Corroborated** (ACSOL) |
-| Case name "*In re Dwyer*" | **Unverified** |
-| Docket "No. SC-080355A" | **Unverified** |
-| The quote "vitiates the Legislature's directive" | **Unverified** |
-| Testimony attributed to **Dr. Cristina Loree of HOPE** | **Unverified, and in tension with the source** — ACSOL attributes the testimony to a **CDCR representative**, not a HOPE clinician |
+| Caption — ***In re Frederick Dwyer, On Habeas Corpus*** | **VERIFIED** |
+| Docket — **No. SC-080355A / HC-3020** | **VERIFIED** (both numbers, as the complaint gives them) |
+| Court / date — San Mateo County Super. Ct., **endorsed filed MAR 20 2023** | **VERIFIED** |
+| Judge — **Hon. Elizabeth M. Hill** (e-signed 2023.03.20 12:24:08, Redwood City) | **VERIFIED** (new) |
+| The "vitiates the Legislature's directive" quote | **VERIFIED verbatim** |
+| **Dr. Cristina Loree**, HOPE's Executive Director, testified | **VERIFIED** |
 
-Both attributions could be true (multiple witnesses at one hearing), but **do not brief the Loree
-attribution or the "vitiates" quote until the Dwyer order and transcript are in hand.** A
-trial-court order is unreported; it must come from the San Mateo clerk. Given this portfolio's
-history — see § 5 — an unverified trial-court quote carrying this much weight is the highest-risk
-item in the complaint.
+**The verified holding, quoted from the order:**
 
----
+> "Both the CASOMB provider and the Division of Adult Parole Operations take the position that a sex
+> offender cannot successfully 'complete' a sex offender management treatment program short of being
+> discharged from parole. The discretion conferred by statute on the Division of Adult Parole
+> Operations and this CASOMB provider is apparently being exercised in all cases to require
+> participation in a sex offender management program for the entire term of parole, apparently
+> without reference to the individualized performance of each parolee. **Discretion exercised in that
+> fashion vitiates the Legislature's directive** that program participation should last at least one
+> year and 'up to' the entire parole term…"
+
+And the court's footnote 1, which is the blanket-policy finding in miniature:
+
+> "While Dr. Loree's testimony established that HOPE conducted both static and dynamic risk
+> assessments on intake, the testimony also established that **all offenders had to complete the seven
+> module 'pre-treatment' phase, and all were placed into the twelve module maintenance phase
+> regardless of score.** There was apparently no evaluation as to whether maintenance or aftercare
+> placement was appropriate…"
+
+**Why this is now the strongest single document in the Matter 28 file.** It is a judicial finding,
+after a **contested evidentiary hearing** (Mar. 9, 2023) at which **HOPE's own Executive Director of
+Clinical Training testified**, that HOPE applied its phases **without regard to individual risk
+scores** and that HOPE and DAPO both took the position that completion before discharge is
+impossible. That is Matter 28's blanket-policy allegation, found as fact, against this defendant,
+three years before this complaint — which also goes directly to **Smith's knowledge** for the
+individual-capacity count.
+
+> **⚠ One thing the complaint does not say, and should.** *Dwyer*'s **disposition denied the writ**:
+> "For the foregoing reasons, the Petition for Writ of Habeas Corpus is HEREBY DENIED." The court
+> then granted the operative relief under a different authority — "Pursuant to the authority granted
+> by Penal Code § 3008(d)(2), the Court disapproves any further participation in a sex offender
+> management program as a condition of parole, and fixes the length of the … program … as terminating
+> on March 20, 2023." Cite *Dwyer* for its **findings**, never as a habeas grant. If the defense
+> reads the order before you characterize it, "the petition was denied" is the first thing they will
+> say.
 
 ## 3. Defense's seven previewed grounds, tested
 
@@ -363,7 +384,8 @@ one dry footnote in opposition — it signals recycled briefing.
   and remains the only further corroboration available if the defense disputes the minute order.
 - **Whether an MTD is on file in Matter 28 yet** — as of the Sept. 4, 2026 PACER deadlines report in
   the archive, no. Confirm on PACER before the Sept. 21 date.
-- ***In re Dwyer*** — see § 2.2.
+- ***In re Dwyer*** — **now verified in full** (§ 2.2). Only the underlying **March 9, 2023
+  evidentiary-hearing transcript** remains unobtained.
 
 ---
 
@@ -375,9 +397,10 @@ one dry footnote in opposition — it signals recycled briefing.
 2. **Order the July 15, 2026 reporter's transcript.** The minute order already records that the
    court affirmed the exhaustion tentative after argument; the transcript is the belt-and-suspenders
    version if the defense disputes it.
-3. **Get the *In re Dwyer* order and transcript from the San Mateo clerk** (§ 2.2). Verify the
-   caption, docket number, the "vitiates" quote, and who actually testified. Highest-risk item in
-   the complaint.
+3. ~~Get the *In re Dwyer* order from the San Mateo clerk~~ — **DONE.** The endorsed-filed order is
+   Exhibit B to the Matter 19 habeas petition and every element is verified (§ 2.2). Remaining: the
+   **March 9, 2023 evidentiary-hearing transcript**, which would give Loree's testimony verbatim
+   rather than through Judge Hill's findings — worth having for Smith's knowledge.
 4. **Pin Penal Code § 3008(d)(2)'s text** and confirm it says what ¶ 2 and ACSOL describe.
 5. **Confirm the PLRA "prisoner" point** for the *Patsy* argument (§ 1.5).
 6. **Re-run the Matter 28 CourtListener sweep** once Actions billing clears (§ 6).
