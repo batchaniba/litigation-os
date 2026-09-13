@@ -1,5 +1,19 @@
 [
   {
+    "date": "Sep. 12, 2026",
+    "event": "DRAFT (unsent) — Final early global settlement demand in Newanforbi v. Randstad US, LLC et al. (26CV199902): $40,000.00 to resolve all claims against both named defendants and Does. Wire within seven business days of written joint acceptance. Expires 5:00 p.m. PT Sept. 18, 2026, and may be accepted after a filing. The RK Logistics Group, Inc. remains due Sept. 14; Randstad US, LLC remains due Sept. 15. This draft does not extend either clock and is not a CIV-100 hold. File-if-silent stays Sept. 15 (RK) / Sept. 16 (Randstad) if eCourt is empty. Do not send the Sept. 11 $40k text that gifted both defendants through Sept. 18. Generator: internal/scripts/matter27-global-demand-sep12.py. Evid. Code §1152 / FRE 408.",
+    "matters": [
+      27
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source_type": "manual",
+    "confidence": "high",
+    "verified_at": "2026-09-12"
+  },
+  {
     "date": "Sep. 11, 2026",
     "event": "FILED — Dkt. 28 Clerk's Notice of Impending Reassignment to a U.S. District Judge in Newanforbi v. Serrato (4:26-cv-05953-ASK). At least one party did not consent to magistrate-judge jurisdiction, so the case leaves Mag. Judge Ajay S. Krishnan for a district judge; the reassignment order to follow. All Krishnan hearing dates vacated, including the Sep. 30 MTD hearing (re-notice to follow); the case-number suffix will change from -ASK.",
     "matters": [
