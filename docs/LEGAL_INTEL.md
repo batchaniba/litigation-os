@@ -57,6 +57,12 @@ portfolio's matters before that judge.
 
 - [Lisa J. Cisneros — 2026 docket audit](../internal/docs/legal-intel/judges/lisa-j-cisneros-2026.md)
   (N.D. Cal. magistrate judge; presides over Matters 28 and 33)
+- [Dale A. Drozd — 2026 docket audit](../internal/docs/legal-intel/judges/dale-a-drozd-2026.md)
+  (E.D. Cal. district judge; presides over Matters 25 and 26)
+- [Sean C. Riordan — 2026 docket audit](../internal/docs/legal-intel/judges/sean-c-riordan-2026.md)
+  (E.D. Cal. magistrate judge; referral MJ in Matter 25)
+- [Carolyn K. Delaney — 2026 docket audit](../internal/docs/legal-intel/judges/carolyn-k-delaney-2026.md)
+  (E.D. Cal. chief magistrate judge; referral MJ in Matter 26; hears the Oct. 7 UPS MTD)
 
 ## Roadmap
 
