@@ -8098,6 +8098,20 @@
     "source": "/documents/matter-40/First Advantage Profile Advantage Order WPS-361214148 - Status 1 (Sep 14 2026).jpg"
   },
   {
+    "date": "Sep. 14, 2026",
+    "event": "SOS BIZFILE \u2014 California Secretary of State search 'TaskUs' (11:12 a.m.) returned three hits, no TaskUs, Inc. TASKUS HOLDINGS, INC. (3828721): Active Delaware out-of-state stock corporation, CA filing Sep. 23, 2015, agent C T Corporation System. TASKUS USA, LLC (201729810166): Active Delaware LLC, CA filing Oct. 17, 2017, agent C T Corporation System. TASKUS, LLC (200826810086): Converted Out California LLC formed Sep. 22, 2008, last listed agent Bryce Maddock. The two Active drawers show standing SOS/FTB/Agent/VCFCF Good and principal/mailing 1650 Independence, 100, New Braunfels \u2014 the same Texas address as the offer letter. If this ripens: keep TaskUs, LLC as the named employer; serve USA LLC and Holdings on CT Corp; do not serve Maddock as if the CA LLC were still active. Pull conversion documents and a Delaware search for the surviving TaskUs, LLC / TaskUs, Inc.",
+    "matters": [
+      40
+    ],
+    "type": "event",
+    "upcoming": false,
+    "actor": "you",
+    "source_type": "manual",
+    "confidence": "high",
+    "verified_at": "2026-09-14",
+    "source": "/documents/matter-40/TaskUs - CA SOS BIZFILE Search Results (Sep 14 2026).pdf"
+  },
+  {
     "date": "Sep. 17, 2026",
     "event": "WATCH \u2014 First Advantage saliva-drug-test schedule for TaskUs Holdings, Inc. expires 11:49 a.m. Eastern (Schedule ID 96558696; LabCorp-Milpitas). A missed collection is a non-registry basis they can use. Complete or diary it.",
     "matters": [

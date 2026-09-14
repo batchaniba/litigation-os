@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1212,
-  "totalBytes": 866098934,
+  "fileCount": 1215,
+  "totalBytes": 866406497,
   "files": [
     {
       "path": "/documents/_form-library/ao440-blank-template.pdf",
@@ -5972,6 +5972,21 @@
       "path": "/documents/matter-40/Review Your Offer Letter - Uber AV Teammate (Sep 14 2026).pdf",
       "size": 71061,
       "sha256": "d2b971dedbe902842524199743ff387917a61929b59907054df53bed9af0559a"
+    },
+    {
+      "path": "/documents/matter-40/TaskUs - CA SOS BIZFILE Search Results (Sep 14 2026).pdf",
+      "size": 91542,
+      "sha256": "d8116e3a81d2689cc2aa8da89b0accb3e682dad3cf8790d3718c1f56b97180d5"
+    },
+    {
+      "path": "/documents/matter-40/TaskUs Holdings Inc - CA SOS BIZFILE (Sep 14 2026).pdf",
+      "size": 107051,
+      "sha256": "022b35398447c21f7d4391ab57d45075661195e2c7b4da825eaf2076219f1627"
+    },
+    {
+      "path": "/documents/matter-40/TaskUs USA LLC - CA SOS BIZFILE (Sep 14 2026).pdf",
+      "size": 108970,
+      "sha256": "f0fe1ed9d46fc1fa4afa6301a2a32b736113f25fdb9be21e8cc4da92a5a88792"
     },
     {
       "path": "/documents/matter-40/TaskUs Welcome Graphic (Sep 14 2026).jpg",
