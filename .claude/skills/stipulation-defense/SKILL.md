@@ -105,7 +105,8 @@ Do not mark up their file as the filing paper. Read it for the number of
 days, the named party, and every date that would chain off the event.
 Then write the counterpart from the template. If their draft already has
 a conformed `/s/ Brendan…`, the covering letter or email says they may
-not affix it — Matter 29 Accurate.
+not affix it — Matter 29 Accurate. Attach the counterpart. Never put a
+GitHub or repo URL in anything that leaves the house.
 
 Before he signs, say out loud:
 
@@ -156,6 +157,7 @@ Covering email: the extension is acceptable on those terms; do not
 apply, reproduce, or file my signature; file the PDF or use the Word
 if your e-filing workflow requires it; leave my block blank on any
 version you prepare; the September 11 demand date is unchanged.
+Attach the files. Never put a GitHub or repo URL in the email.
 
 Accurate, September 1: same five paragraphs, Accurate only, same
 September 22 date, same default reservation. Seyfarth's draft already
