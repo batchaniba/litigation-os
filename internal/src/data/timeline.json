@@ -230,12 +230,12 @@
   },
   {
     "date": "Sep. 14, 2026",
-    "event": "UPS reply deadline (extended) \u2014 Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). Dkt. 12 (Sep. 10) grants Dkt. 11; Defendant's reply brief on the live Dkt. 9 MTD shall be filed by September 14, 2026. Supersedes the L.R. 230(d) Sep. 8 clock. Hearing remains Oct. 7, 2026, 10:00 a.m., Courtroom 24 (CKD), Judge Delaney. This is UPS's clock.",
+    "event": "SATISFIED \u2014 Dkt. 14 filed Sep. 14, 2026. UPS reply deadline (extended) \u2014 Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). Dkt. 12 (Sep. 10) grants Dkt. 11; Defendant's reply brief on the live Dkt. 9 MTD shall be filed by September 14, 2026. Supersedes the L.R. 230(d) Sep. 8 clock. Hearing remains Oct. 7, 2026, 10:00 a.m., Courtroom 24 (CKD), Judge Delaney. This is UPS's clock.",
     "matters": [
       26
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "opposing",
     "source": "/documents/matter-26/PACER Docket Report - E.D. Cal. 2-26-cv-02847-DAD-CKD (Sep 10 2026).pdf",
     "source_type": "pacer",
@@ -8109,5 +8109,20 @@
     "confidence": "high",
     "verified_at": "2026-09-14",
     "source": "/documents/matter-40/Offer of Temporary Employment - TaskUs LLC (Sep 14 2026).pdf"
+  },
+  {
+    "date": "Sep. 14, 2026",
+    "event": "FILED \u2014 Dkt. 14 Defendant United Parcel Service, Inc.'s Reply in Support of Its Rule 12(b)(6) Motion to Dismiss (ECF No. 9) in Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). 6 pages plus certificate of service, signed by Vanessa W. Mott; filed on the Dkt. 12 extended deadline, so MTD briefing is closed. Core reframe: Exhibit A searched the National Sex Offender Registry ('Record Found'); the California-registry notation is characterized as incidental and the California registry as 'never searched' \u2014 Exhibit A's own 'SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY' sentence is not quoted or explained. Invokes the Lab. Code \u00a7432.7(n) safe harbor and asserts Gov. Code \u00a712952 compliance for the 'obtained pursuant to procedures otherwise provided for under federal, state, or local law' carve-out. Argues complaint \u00b618 and the Exhibit B p.27 'I agree' clickwrap concede ICRAA compliance, and collapses the ICRAA claim into the \u00a7290.46 sourcing dispute. Sole authority cited is Crownholm v. Moore (12(b)(6) standard) \u2014 no Donaleski, Pastrana, Mendoza, Williams, Gilberg, or Walker. Seeks dismissal with prejudice. Oct. 7, 2026 hearing (10:00 a.m., Courtroom 24, CKD, Judge Delaney) unchanged.",
+    "matters": [
+      26
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "opposing",
+    "source": "/documents/matter-26/Dkt 14 - UPS Reply in Support of Rule 12(b)(6) Motion to Dismiss (Filed Sep 14 2026).pdf",
+    "source_type": "portfolio",
+    "confidence": "high",
+    "verified_at": "2026-09-14"
   }
 ]
