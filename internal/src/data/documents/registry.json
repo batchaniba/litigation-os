@@ -5065,6 +5065,21 @@
       "path": "/documents/opinions/Newanforbi v Smith - USDC NDCal - Order Directing Service Aug 26 2026.pdf",
       "label": "Opinion copy — Mag. Cisneros Order Directing Service (Aug. 26, 2026)",
       "ownerMatter": null
+    },
+    {
+      "path": "/documents/matter-40/Review Your Offer Letter - Uber AV Teammate (Sep 14 2026).pdf",
+      "label": "Review Your Offer Letter - Uber AV Teammate (Sep 14 2026)",
+      "ownerMatter": 40
+    },
+    {
+      "path": "/documents/matter-40/WorkDay Task - CIAA Questionnaire - Uber AV Teammate (Sep 14 2026).pdf",
+      "label": "WorkDay Task - CIAA Questionnaire - Uber AV Teammate (Sep 14 2026)",
+      "ownerMatter": 40
+    },
+    {
+      "path": "/documents/matter-40/WorkDay Task - Welcome Message - Uber AV Teammate (Sep 14 2026).pdf",
+      "label": "WorkDay Task - Welcome Message - Uber AV Teammate (Sep 14 2026)",
+      "ownerMatter": 40
     }
   ]
 }
