@@ -670,6 +670,23 @@ const lawyer_fees_raw = [
       mid: 5180
     },
     notes: "Sep. 6 true-up, then lock: 25-page signed four-count verified complaint (ICRAA, CCRAA alternative, UCL, § 290). Report contents and use are I&B, pleaded like Home Depot, on Best Buy's own offer, vendor, and screen. Packet is 34 pages. CM-010, FW-001, FW-003, and SUM-100 plus the Filing Packet are billed as in Matters 36/37. Application, $22.60 offer, authorization, and First Advantage drug-test emails carry forward. First Advantage is not a named defendant. Unfiled; no demand or CRD charge."
+  },
+  {
+    number: 40,
+    type: "State — prospective employment monitoring (TaskUs offer, pre-dispute)",
+    documentsCount: 3,
+    totalPagesReal: 37,
+    hours: {
+      low: 1,
+      high: 2.5,
+      mid: 1.75
+    },
+    cost: {
+      low: 280,
+      high: 700,
+      mid: 490
+    },
+    notes: "Sep. 14, 2026 intake: TaskUs USA LLC offer (Teammate, Team Lead QA) via Adobe Sign; U.S. background consent and TaskUs Holdings NDA/invention-assignment executed the same day. 1-page offer letter + 35-page signatory packet + welcome graphic. No vendor named, no report, no adverse action — monitoring file."
   }
 ];
 
@@ -677,9 +694,9 @@ export const lawyer_fees = lawyer_fees_raw.map((row) => withMatterIdentity(row))
 
 export const lawyer_fees_summary = {
   analysisDate: "2026-09-06",
-  totalMatters: 39,
-  totalDocumentsAnalyzed: 641,
-  totalPagesReal: 7207,
+  totalMatters: 40,
+  totalDocumentsAnalyzed: 644,
+  totalPagesReal: 7244,
   methodology: {
     blendedHourlyRate: 280,
     rateRange: { seniorPartner: [350, 450], midAssociate: [250, 350], paralegal: [150, 200] },
