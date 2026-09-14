@@ -8126,6 +8126,20 @@
     "source": "/documents/matter-40/TaskUs TA Ops - Start Date Administrative Hold (Sep 14 2026).pdf"
   },
   {
+    "date": "Sep. 14, 2026",
+    "event": "CAPTION REORDERED \u2014 Matter 40 lead defendant is Uber Technologies, Inc. (d/b/a Uber). Caption is Brendan Ngwa Nforbi v. Uber Technologies, Inc. Uber AV remains the WorkDay campaign title (R_2608_10812 / C261051599), not a legal entity. Theory is end-client / joint employer (Matter 27 RK Logistics pattern). The 2810.5 still names TaskUs, LLC as hiring employer and does not list Uber as the entity for whom the work is performed. TaskUs entities stay on the defendant list as staffing / offer-letter employers. Pull Uber CA SOS before service.",
+    "matters": [
+      40
+    ],
+    "type": "event",
+    "upcoming": false,
+    "actor": "you",
+    "source_type": "manual",
+    "confidence": "high",
+    "verified_at": "2026-09-14",
+    "source": "/documents/matter-40/Review Your Offer Letter - Uber AV Teammate (Sep 14 2026).pdf"
+  },
+  {
     "date": "Sep. 17, 2026",
     "event": "WATCH \u2014 First Advantage saliva-drug-test schedule for TaskUs Holdings, Inc. expires 11:49 a.m. Eastern (Schedule ID 96558696; LabCorp-Milpitas). A missed collection is a non-registry basis they can use. Complete or diary it.",
     "matters": [

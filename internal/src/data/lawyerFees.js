@@ -673,7 +673,7 @@ const lawyer_fees_raw = [
   },
   {
     number: 40,
-    type: "State — prospective employment monitoring (TaskUs, LLC offer, pre-dispute)",
+    type: "State — prospective employment monitoring (Uber Technologies, Inc. lead; TaskUs staffing; pre-dispute)",
     documentsCount: 15,
     totalPagesReal: 66,
     hours: {
