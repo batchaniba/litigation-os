@@ -1,0 +1,70 @@
+{
+  "archived": false,
+  "caption": "Brendan Ngwa Nforbi v. TaskUs, LLC",
+  "case_no": "TBD",
+  "causes": [
+    "[PROSPECTIVE] Penal Code §290.46(j)(2)(E) — if TaskUs obtains or uses California sex offender registry information in the hiring decision",
+    "[PROSPECTIVE] ICRAA, Civ. Code §§1786.16 and 1786.40 — authorization/disclosure and adverse-action compliance on a consumer or investigative consumer report",
+    "[PROSPECTIVE] FCRA, 15 U.S.C. §§1681b(b)(3) and 1681d — pre-adverse/adverse notice duties if a consumer report drives the decision",
+    "[PROSPECTIVE] UCL, Bus. & Prof. Code §17200 — unlawful prong borrowing any of the above violations"
+  ],
+  "claims": "PC §290.46(j)(2)(E) (prospective — use of registry info in hiring); ICRAA §§1786.16, 1786.40 (prospective); FCRA §§1681b(b)(3), 1681d (prospective); UCL §17200 (prospective)",
+  "cluster": 5,
+  "court": "TBD (pre-dispute — offer received Sep. 14, 2026)",
+  "damages": "Prospective. Offer of Temporary Employment (TaskUs, LLC, signed Sep. 14, 2026) states $22.00 per hour, non-exempt, San Jose delivery; anticipated assignment Sep. 23, 2026 through on or around Dec. 4, 2026; $1,000 retention bonus if still employed in good standing on Dec. 4. Statutory framework if the claim ripens: Penal Code §290.46(j)(4)(A) (actual or treble damages, $250 floor, fees, exemplary damages); ICRAA §§1786.50, 1786.52; FCRA §§1681n, 1681o; UCL restitution. No valuation until adverse action, if any.",
+  "defendants": "TaskUs, LLC (prospective; offer-letter employer, 1650 Independence Drive, Ste 100, New Braunfels, TX 78132); TaskUs USA LLC (prospective; background-consent recipient); TaskUs Holdings, Inc. (NDA counterparty); TaskUs, Inc. (Mutual Arbitration Agreement counterparty). First Advantage is named in the California medical-release for drug/alcohol testing; it is a prospective vendor defendant if a consumer/registry report from First Advantage drives a non-hire. Uber AV is the WorkDay campaign (R_2608_10812), not a named prospective defendant on this packet — the 2810.5 does not list Uber as the entity for whom the work is performed. DOES 1–10 for other hiring decision-makers if adverse action follows.",
+  "documents": [
+    {
+      "path": "/documents/matter-40/Offer of Temporary Employment - TaskUs LLC (Sep 14 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-40/Offer Letter - Teammate Team Lead QA (Sep 14 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-40/USA Additional Signatory Documents - External Candidate (Sep 14 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-40/TaskUs Welcome Graphic (Sep 14 2026).jpg",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-40/Review Your Offer Letter - Uber AV Teammate (Sep 14 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-40/WorkDay Task - CIAA Questionnaire - Uber AV Teammate (Sep 14 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-40/WorkDay Task - Welcome Message - Uber AV Teammate (Sep 14 2026).pdf",
+      "filed": false
+    }
+  ],
+  "evidence": [
+    "Offer of Temporary Employment — TaskUs, LLC, Teammate, $22.00/hour, anticipated start Sep. 23, 2026 / completion on or around Dec. 4, 2026; signed Brendan Ngwa Nforbi Sep. 14, 2026, 8:21 a.m. PDT (Adobe Sign)",
+    "DLSE Form 2810.5 — hiring employer TaskUs, LLC; start Sep. 23, 2026; $22.00/hour; San Jose",
+    "California Authorization for Release of Medical Information — drug/alcohol testing 'as facilitated by First Advantage and/or its network of authorized laboratories' (offer packet p. 9)",
+    "United States Background Consent Form — signed Sep. 14, 2026; unnamed 'Company' may release screening information to TaskUs USA LLC; not a standalone ICRAA/FCRA consumer-report disclosure",
+    "Non-Disclosure and Invention Assignment Agreement — TaskUs Holdings, Inc., executed Sep. 14, 2026 (California Appendix A modifications apply)",
+    "Mutual Arbitration Agreement — TaskUs, Inc.; signed in the Sep. 14, 2026 signatory packet; Covered Claims include 'background check form or process'; FAA with Texas fallback",
+    "WorkDay email — 'Review Your Offer Letter' (Sep. 14, 2026, 6:50 a.m.): 'Uber AV Teammate (SJ: 09/23/2026)'",
+    "WorkDay email — 'A Task Awaits You: CIAA Questionnaire' (Sep. 14, 2026, 8:28 a.m.): R_2608_10812 / C261051599",
+    "WorkDay email — 'A Task Awaits You: Welcome Message' (Sep. 14, 2026, 8:32 a.m.): same requisition"
+  ],
+  "filed": "Not yet filed",
+  "judge": "TBD",
+  "key_facts": "On Sep. 14, 2026, TaskUs, LLC sent Brendan Ngwa Nforbi a signed Offer of Temporary Employment as a Teammate at $22.00 per hour (non-exempt), location USA - San Jose - San Jose (Delivery). Anticipated assignment Sep. 23, 2026 through on or around Dec. 4, 2026; $1,000 retention bonus if still employed in good standing on Dec. 4. Orientation Sep. 23–25 at 1631 N 1st Street, Suite 200, San Jose; production depot 3030 Corvin Dr., Santa Clara; closed-course training in Sonoma. The offer is at-will, contingent on job-related background screening and a Fair Chance Act process for conviction history, and says screening usually takes two weeks and employment may begin while screening is pending. The same day he signed the United States Background Consent Form (release of screening information to TaskUs USA LLC), the TaskUs Holdings, Inc. NDA/invention-assignment, and a Mutual Arbitration Agreement with TaskUs, Inc. whose covered claims include the background-check form or process. Page 9 of the offer is a California medical-release for drug/alcohol testing facilitated by First Advantage. That is not a consumer-report authorization. No ICRAA/FCRA standalone disclosure is in this packet, no registry or criminal consumer report has been furnished, and no adverse action has occurred. WorkDay requisition R_2608_10812 is 'Uber AV Teammate (SJ: 09/23/2026)' (candidate C261051599). Uber AV is the client campaign. It is not named as the 2810.5 'other entity' and is not treated as a defendant on this packet.",
+  "lifecycle": "pre_filing",
+  "note": "Prospective Cluster 5 employment matter. Ripens only if a non-hire or rescission rests on registry information. First Advantage is in the packet for drug/alcohol testing; user also records FA as conducting the background search. Do not collapse the drug screen into a Megan's Law consumer report. Watch: the missing standalone ICRAA §1786.16 / FCRA consumer-report authorization; pre-adverse and adverse notice cadence if a report issues; whether any rescission cites NSOPW, Megan's Law, or SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY. Calendar Sep. 23 (anticipated start). If he starts, this is no longer a failure-to-hire file. Uber AV stays a campaign watch until a decision-file shows Uber set a registry screen or jointly made the hire/no-hire call. The MAA is live; a 290.46 / ICRAA / FCRA non-hire is the fight they will try to send to arbitration.",
+  "number": 40,
+  "phase": "pre_filing",
+  "procedural_status": "PENDING / pre-dispute. No complaint, no demand, no CRD charge. Offer of Temporary Employment accepted Sep. 14, 2026. Anticipated start Sep. 23, 2026. Next: preserve any pre-adverse/adverse notices and the missing consumer-report disclosure if it arrives; do not treat a drug-screen FA letter as the registry report.",
+  "proceeding": "state_civil",
+  "risk": "Monitoring file, not a claim. First Advantage is named for drug/alcohol testing; a consumer/registry report from FA would make the 25/26 notice format turnkey, but use is still unproven and no such report is in hand. Mutual Arbitration Agreement (TaskUs, Inc.) covers 'background check form or process' — California Appendix A on the NDA does not erase that. Split entities (TaskUs, LLC / USA LLC / Holdings / Inc.) will matter for who obtained and who used a report. Uber is a campaign, not a defendant, on this packet.",
+  "status": "PENDING — TaskUs, LLC Offer of Temporary Employment signed Sep. 14, 2026 (Teammate, $22/hour, San Jose; start Sep. 23 / end ~Dec. 4). First Advantage named on the California drug/alcohol medical-release; no consumer report furnished; no adverse action. MAA signed. Monitoring for pre-adverse/adverse notices and Sep. 23 start. Uber AV is the WorkDay campaign (R_2608_10812), not a named defendant.",
+  "status_label": "Pending — monitoring",
+  "type": "State"
+}

@@ -670,6 +670,23 @@ const lawyer_fees_raw = [
       mid: 5180
     },
     notes: "Sep. 6 true-up, then lock: 25-page signed four-count verified complaint (ICRAA, CCRAA alternative, UCL, § 290). Report contents and use are I&B, pleaded like Home Depot, on Best Buy's own offer, vendor, and screen. Packet is 34 pages. CM-010, FW-001, FW-003, and SUM-100 plus the Filing Packet are billed as in Matters 36/37. Application, $22.60 offer, authorization, and First Advantage drug-test emails carry forward. First Advantage is not a named defendant. Unfiled; no demand or CRD charge."
+  },
+  {
+    number: 40,
+    type: "State — prospective employment monitoring (TaskUs, LLC offer, pre-dispute)",
+    documentsCount: 7,
+    totalPagesReal: 50,
+    hours: {
+      low: 1,
+      high: 2.5,
+      mid: 1.75
+    },
+    cost: {
+      low: 280,
+      high: 700,
+      mid: 490
+    },
+    notes: "Sep. 14, 2026 packet true-up: operative 10-page Offer of Temporary Employment (TaskUs, LLC, $22/hour) + Workday 1-page stub + 35-page signatory packet (background consent to TaskUs USA LLC; NDA/TaskUs Holdings; MAA/TaskUs, Inc.) + welcome graphic + 3 WorkDay Uber AV campaign emails. First Advantage named only on the drug/alcohol medical-release. No consumer report, no adverse action — monitoring file."
   }
 ];
 
@@ -677,13 +694,13 @@ export const lawyer_fees = lawyer_fees_raw.map((row) => withMatterIdentity(row))
 
 export const lawyer_fees_summary = {
   analysisDate: "2026-09-06",
-  totalMatters: 39,
-  totalDocumentsAnalyzed: 641,
-  totalPagesReal: 7207,
+  totalMatters: 40,
+  totalDocumentsAnalyzed: 648,
+  totalPagesReal: 7257,
   methodology: {
     blendedHourlyRate: 280,
     rateRange: { seniorPartner: [350, 450], midAssociate: [250, 350], paralegal: [150, 200] },
-    note: "Every PDF in public/documents/matter-XX/ was measured with pdfinfo for real page counts (poppler-utils), then classified by document type (complaint, motion/opposition/reply, discovery, writ/habeas, declaration, administrative, evidence) and priced using the hours-per-page/per-document conversions in docs/LAWYER_FEES_CALCULATOR.md. Opposing counsel's filings are billed only at a light review rate, never at drafting rate. Duplicate packs (opposition-pack-10, conformed copies, from-* stores) are billed incrementally. Matters with no uploaded PDFs are estimated conservatively from matter JSON status text. Aug. 28, 2026 true-up: Matter 20 Whitman tentative + reply review; Matter 24 Serrato Opp v4 / related-case motions / MTD review; Matter 26 UPS ECF 7 review + 17-page opposition; Matter 28 Dkt. 11 + QI research (HOPE discovery stays on Matter 5); Matter 32 process-server bundle; Matter 35 Ross CT / summons-first service packets. Sep. 5, 2026: Matter 36 adds the AT&T hiring record, formal offer, findings memorandum, and 32-page verified-complaint review draft. Sep. 6, 2026: Matters 36–39 true-up to executed San Joaquin packets (CM-010, FW-001, FW-003, SUM-100, signed complaints, walk-up assemblies).",
+    note: "Every PDF in public/documents/matter-XX/ was measured with pdfinfo for real page counts (poppler-utils), then classified by document type (complaint, motion/opposition/reply, discovery, writ/habeas, declaration, administrative, evidence) and priced using the hours-per-page/per-document conversions in docs/LAWYER_FEES_CALCULATOR.md. Opposing counsel's filings are billed only at a light review rate, never at drafting rate. Duplicate packs (opposition-pack-10, conformed copies, from-* stores) are billed incrementally. Matters with no uploaded PDFs are estimated conservatively from matter JSON status text. Aug. 28, 2026 true-up: Matter 20 Whitman tentative + reply review; Matter 24 Serrato Opp v4 / related-case motions / MTD review; Matter 26 UPS ECF 7 review + 17-page opposition; Matter 28 Dkt. 11 + QI research (HOPE discovery stays on Matter 5); Matter 32 process-server bundle; Matter 35 Ross CT / summons-first service packets. Sep. 5, 2026: Matter 36 adds the AT&T hiring record, formal offer, findings memorandum, and 32-page verified-complaint review draft. Sep. 6, 2026: Matters 36–39 true-up to executed San Joaquin packets (CM-010, FW-001, FW-003, SUM-100, signed complaints, walk-up assemblies). Sep. 14, 2026: Matter 40 packet true-up — 10-page TaskUs, LLC offer + signatory packet + WorkDay emails (7 files / 50 pages).",
   },
   totalEstimatedHours: { low: 3097.8, high: 5205.2, mid: 4144 },
   totalEstimatedCost: { low: 867384, high: 1457456, mid: 1160320 },
