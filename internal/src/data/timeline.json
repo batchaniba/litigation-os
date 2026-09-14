@@ -8013,7 +8013,7 @@
   },
   {
     "date": "Sep. 14, 2026",
-    "event": "PENDING MATTER OPENED \u2014 TaskUs USA LLC offer of employment received (Teammate, Team Lead QA) via Adobe Sign; U.S. background consent form and TaskUs Holdings, Inc. NDA/invention-assignment agreement signed the same day. No background-check vendor identified, no report furnished, no adverse action. Monitoring for pre-adverse/adverse notices; prospective PC \u00a7290.46(j) / ICRAA / FCRA / UCL theories if the hiring decision turns on registry information.",
+    "event": "PENDING MATTER OPENED \u2014 TaskUs, LLC Offer of Temporary Employment signed (Teammate, $22.00/hour, non-exempt, San Jose delivery; anticipated start Sep. 23, 2026 / completion on or around Dec. 4, 2026; $1,000 retention if still employed in good standing Dec. 4). Same-day: United States Background Consent (release of screening information to TaskUs USA LLC), TaskUs Holdings, Inc. NDA/invention-assignment, and Mutual Arbitration Agreement with TaskUs, Inc. (Covered Claims include the background-check form or process; FAA with Texas fallback). First Advantage is named in the California medical-release for drug/alcohol testing (offer p. 9) \u2014 that is not a consumer-report authorization. No standalone ICRAA/FCRA disclosure in this packet, no consumer or registry report furnished, no adverse action. Uber AV is the WorkDay campaign (R_2608_10812 / C261051599), not a named defendant. Monitoring for pre-adverse/adverse notices and the Sep. 23 start; prospective PC \u00a7290.46(j) / ICRAA / FCRA / UCL if the hiring decision turns on registry information.",
     "matters": [
       40
     ],
@@ -8023,6 +8023,34 @@
     "source_type": "manual",
     "confidence": "high",
     "verified_at": "2026-09-14",
-    "source": "/documents/matter-40/Offer Letter - Teammate Team Lead QA (Sep 14 2026).pdf"
+    "source": "/documents/matter-40/Offer of Temporary Employment - TaskUs LLC (Sep 14 2026).pdf"
+  },
+  {
+    "date": "Sep. 14, 2026",
+    "event": "PACKET TRUE-UP \u2014 Operative 10-page Offer of Temporary Employment (TaskUs, LLC) added to Matter 40. Corrects the Workday one-page stub: hiring employer is TaskUs, LLC; pay is $22/hour; the Mutual Arbitration Agreement is signed; First Advantage appears only as the drug/alcohol lab network, not as a proven Megan's Law consumer-reporting vendor on this packet. Caption is Brendan Ngwa Nforbi v. TaskUs, LLC.",
+    "matters": [
+      40
+    ],
+    "type": "event",
+    "upcoming": false,
+    "actor": "you",
+    "source_type": "manual",
+    "confidence": "high",
+    "verified_at": "2026-09-14",
+    "source": "/documents/matter-40/Offer of Temporary Employment - TaskUs LLC (Sep 14 2026).pdf"
+  },
+  {
+    "date": "Sep. 23, 2026",
+    "event": "WATCH \u2014 Anticipated TaskUs, LLC start date (Teammate; orientation 1631 N 1st Street, Suite 200, San Jose, Sep. 23\u201325; production depot 3030 Corvin Drive, Santa Clara). If Plaintiff starts, this is no longer a failure-to-hire file. Watch for pre-adverse/adverse notices and any rescission citing NSOPW, Megan's Law, or SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY.",
+    "matters": [
+      40
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you",
+    "source_type": "manual",
+    "confidence": "high",
+    "verified_at": "2026-09-14",
+    "source": "/documents/matter-40/Offer of Temporary Employment - TaskUs LLC (Sep 14 2026).pdf"
   }
 ]
