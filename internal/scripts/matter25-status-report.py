@@ -9,8 +9,7 @@ conference for Thursday, October 8, 2026, 11:00 a.m., and requires each party
 to file a status report not later than 14 days before (September 24). Because
 Plaintiff is pro se, the matter is referred under E.D. Cal. L.R. 302(c)(21).
 
-Plaintiff's individual report under Dkt. 8. It does not move any
-court-set date.
+Plaintiff's individual report under Dkt. 8.
 
     python3 internal/scripts/matter25-status-report.py \\
         [--date "September 14, 2026"] [--mailed-from "Milpitas, California"]
@@ -210,9 +209,8 @@ CONTENT = [
      "is the consumer-reporting agency that generated the notices and "
      "the report. Plaintiff reserves the right to amend to name First "
      "Advantage, or to identify a Doe, after the report and the "
-     "decision-file are produced. Plaintiff does not waive joinder by "
-     "filing this report. Plaintiff does not ask the Court to stay this "
-     "action while any other case proceeds."),
+     "decision-file are produced. Plaintiff does not ask the Court to "
+     "stay this action while any other case proceeds."),
 
     ("HEADER", "V.\nAMENDMENT OF THE PLEADINGS"),
 
@@ -225,8 +223,7 @@ CONTENT = [
      "does not presently intend to drop a claim. Plaintiff proposes "
      "December 18, 2026, as the last date to amend or join parties "
      "without a showing of good cause. That date is after initial "
-     "disclosures and the first wave of documents. It does not compress "
-     "Plaintiff's time, and it is a date certain."),
+     "disclosures and the first wave of documents."),
 
     ("HEADER", "VI.\nJURISDICTION AND VENUE"),
 
@@ -254,11 +251,8 @@ CONTENT = [
      "No change to the form of Rule 26(a)(1) disclosures is needed. "
      "Plaintiff will serve initial disclosures on October 22, 2026 -- "
      "fourteen days after the conference -- and asks that Defendant "
-     "serve the same day. That is a date certain. Plaintiff does not "
-     "agree to delay disclosures until a later motion, a later "
-     "conference, or a date that runs from an event that has not "
-     "occurred. A further discovery conference should be set only if a "
-     "dispute remains after the parties confer live."),
+     "serve the same day. A further discovery conference should be set "
+     "only if a dispute remains after the parties confer live."),
 
     ("SUBHEAD", "B.  Subjects, phasing, and cutoff"),
 
@@ -312,8 +306,7 @@ CONTENT = [
      "lost opportunity and on screening practice. Plaintiff proposes: "
      "opening expert disclosures under Rule 26(a)(2) on May 14, 2027; "
      "rebuttal disclosures on June 11, 2027; expert discovery closed "
-     "June 25, 2027. Those are dates certain. They do not reset from "
-     "the conference or from a later order."),
+     "June 25, 2027."),
 
     ("SUBHEAD", "D.  ESI and privilege"),
 
@@ -343,10 +336,8 @@ CONTENT = [
      "before a Local Rule 251 motion."),
 
     ("PARA",
-     "Plaintiff does not invite a delayed Rule 12(c) motion as a "
-     "substitute for an answer that is already on file. If Defendant "
-     "later moves, Plaintiff will oppose on the schedule the Local "
-     "Rules set. This report does not extend any defense clock."),
+     "If Defendant later moves, Plaintiff will oppose on the schedule "
+     "the Local Rules set."),
 
     ("HEADER", "IX.\nUNNECESSARY PROOF AND RULE 702"),
 
@@ -364,8 +355,7 @@ CONTENT = [
 
     ("PARA",
      "Plaintiff proposes Thursday, September 16, 2027, at 11:00 a.m., "
-     "or the first available date the Court sets. That is a date "
-     "certain. It does not float from the trial date."),
+     "or the first available date the Court sets."),
 
     ("HEADER", "XI.\nTRIAL"),
 
@@ -439,10 +429,9 @@ CONTENT = [
     ("PARA",
      "Plaintiff proposes the week of November 16, 2026, or the first "
      "available date thereafter -- after the October 22 disclosures and "
-     "with time to exchange the report and the decision-file. That is "
-     "a date-certain window. It does not reset from the October 8 "
-     "conference. If the Court prefers a later date, Plaintiff asks "
-     "that the order name the date."),
+     "with time to exchange the report and the decision-file. If the "
+     "Court prefers a later date, Plaintiff asks that the order name "
+     "the date."),
 
     ("PARA",
      "Plaintiff does not stipulate to the District Judge acting as "
