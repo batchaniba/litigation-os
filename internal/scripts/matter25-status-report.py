@@ -249,9 +249,9 @@ CONTENT = [
 
     ("PARA",
      "No change to the form of Rule 26(a)(1) disclosures is needed. "
-     "Plaintiff will serve initial disclosures on October 22, 2026 -- "
-     "fourteen days after the conference -- and asks that Defendant "
-     "serve the same day. A further discovery conference should be set "
+     "Plaintiff will serve initial disclosures on October 8, 2026 -- "
+     "the day of the conference -- and asks that Defendant serve the "
+     "same day. A further discovery conference should be set "
      "only if a dispute remains after the parties confer live."),
 
     ("SUBHEAD", "B.  Subjects, phasing, and cutoff"),
@@ -295,7 +295,7 @@ CONTENT = [
      "screening policy, and, if needed, a First Advantage custodian). "
      "Plaintiff will serve a Rule 45 subpoena on First Advantage for "
      "the report and the transmittal file. Plaintiff proposes a fact-"
-     "discovery cutoff of April 16, 2027. No change to the numerical "
+     "discovery cutoff of February 12, 2027. No change to the numerical "
      "limits in Rules 30, 33, and 36 is requested. Plaintiff does not "
      "agree to a discovery stay."),
 
@@ -304,9 +304,9 @@ CONTENT = [
     ("PARA",
      "Plaintiff may disclose an economist or human-resources expert on "
      "lost opportunity and on screening practice. Plaintiff proposes: "
-     "opening expert disclosures under Rule 26(a)(2) on May 14, 2027; "
-     "rebuttal disclosures on June 11, 2027; expert discovery closed "
-     "June 25, 2027."),
+     "opening expert disclosures under Rule 26(a)(2) on March 12, 2027; "
+     "rebuttal disclosures on April 9, 2027; expert discovery closed "
+     "April 23, 2027."),
 
     ("SUBHEAD", "D.  ESI and privilege"),
 
@@ -329,7 +329,7 @@ CONTENT = [
      "or the decision-file is withheld, and may move for summary "
      "judgment after the close of fact discovery. Defendant may file a "
      "dispositive motion. Plaintiff proposes that all non-discovery "
-     "motions be heard by Thursday, August 12, 2027, at 10:00 a.m., on "
+     "motions be heard by Thursday, June 10, 2027, at 10:00 a.m., on "
      "Judge Riordan's civil-motion calendar, or the first available "
      "Thursday thereafter. Discovery disputes should use Judge "
      "Riordan's informal two-page letter and telephone conference "
@@ -354,14 +354,14 @@ CONTENT = [
     ("HEADER", "X.\nFINAL PRETRIAL CONFERENCE"),
 
     ("PARA",
-     "Plaintiff proposes Thursday, September 16, 2027, at 11:00 a.m., "
+     "Plaintiff proposes Thursday, July 15, 2027, at 11:00 a.m., "
      "or the first available date the Court sets."),
 
     ("HEADER", "XI.\nTRIAL"),
 
     ("PARA",
      "Plaintiff demanded a jury. Plaintiff estimates three to four "
-     "court days. Plaintiff proposes Tuesday, October 12, 2027, or the "
+     "court days. Plaintiff proposes Tuesday, August 10, 2027, or the "
      "first available trial date thereafter. The case is an individual "
      "failure-to-hire action. It is not a class action and is not "
      "suitable for the Judicial Panel on Multidistrict Litigation."),
@@ -427,8 +427,8 @@ CONTENT = [
      "the entire conference."),
 
     ("PARA",
-     "Plaintiff proposes the week of November 16, 2026, or the first "
-     "available date thereafter -- after the October 22 disclosures and "
+     "Plaintiff proposes the week of November 2, 2026, or the first "
+     "available date thereafter -- after the October 8 disclosures and "
      "with time to exchange the report and the decision-file. If the "
      "Court prefers a later date, Plaintiff asks that the order name "
      "the date."),
@@ -464,36 +464,36 @@ CONTENT = [
     ("SUBHEAD", "Plaintiff's proposed dates"),
 
     ("LIST_ITEM",
-     "Rule 26(a)(1) initial disclosures:  October 22, 2026"),
+     "Rule 26(a)(1) initial disclosures:  October 8, 2026"),
 
     ("LIST_ITEM",
      "Last day to amend or join parties:  December 18, 2026"),
 
     ("LIST_ITEM",
      "Settlement conference before Judge Riordan:  week of "
-     "November 16, 2026, or first available date thereafter"),
+     "November 2, 2026, or first available date thereafter"),
 
     ("LIST_ITEM",
-     "Fact-discovery cutoff:  April 16, 2027"),
+     "Fact-discovery cutoff:  February 12, 2027"),
 
     ("LIST_ITEM",
-     "Opening expert disclosures:  May 14, 2027"),
+     "Opening expert disclosures:  March 12, 2027"),
 
     ("LIST_ITEM",
-     "Rebuttal expert disclosures:  June 11, 2027"),
+     "Rebuttal expert disclosures:  April 9, 2027"),
 
     ("LIST_ITEM",
-     "Expert-discovery cutoff:  June 25, 2027"),
+     "Expert-discovery cutoff:  April 23, 2027"),
 
     ("LIST_ITEM",
-     "Last day to hear non-discovery motions:  August 12, 2027, "
+     "Last day to hear non-discovery motions:  June 10, 2027, "
      "10:00 a.m."),
 
     ("LIST_ITEM",
-     "Final pretrial conference:  September 16, 2027, 11:00 a.m."),
+     "Final pretrial conference:  July 15, 2027, 11:00 a.m."),
 
     ("LIST_ITEM",
-     "Jury trial (3-4 court days):  October 12, 2027, or first "
+     "Jury trial (3-4 court days):  August 10, 2027, or first "
      "available date thereafter"),
 ]
 
