@@ -436,19 +436,19 @@ const lawyer_fees_raw = [
   {
     number: 26,
     type: "State — PC §290.46(j) / ICRAA / Wrongful Failure to Hire (removed to E.D. Cal.)",
-    documentsCount: 51,
-    totalPagesReal: 541,
+    documentsCount: 52,
+    totalPagesReal: 549,
     hours: {
-      low: 75,
-      high: 136,
-      mid: 105.5
+      low: 75.5,
+      high: 137,
+      mid: 106.25
     },
     cost: {
-      low: 21000,
-      high: 38080,
-      mid: 29540
+      low: 21140,
+      high: 38360,
+      mid: 29750
     },
-    notes: "Aug. 31 true-up: clerk-stamped Dkt. 10 opposition (Filed Aug. 28, 20 pp.) is the filed counterpart of the already-billed unfiled draft — incremental stamp-review only, not a second briefing. Proposed order remains unfiled (Drozd Standing Order I.E). Aug. 28 true-up of the ECF 7 MTD pack and opposition-pack-10 duplicates carries forward."
+    notes: "Sep. 14, 2026: Dkt. 14 UPS reply (6 pp.) + Dkt. 14-1 COS (2 pp.) billed at opposing-counsel light review only, not drafting rate. Aug. 31 true-up: clerk-stamped Dkt. 10 opposition (Filed Aug. 28, 20 pp.) is the filed counterpart of the already-billed unfiled draft — incremental stamp-review only, not a second briefing. Proposed order remains unfiled (Drozd Standing Order I.E). Aug. 28 true-up of the ECF 7 MTD pack and opposition-pack-10 duplicates carries forward."
   },
   {
     number: 27,
@@ -693,21 +693,21 @@ const lawyer_fees_raw = [
 export const lawyer_fees = lawyer_fees_raw.map((row) => withMatterIdentity(row));
 
 export const lawyer_fees_summary = {
-  analysisDate: "2026-09-06",
+  analysisDate: "2026-09-14",
   totalMatters: 40,
-  totalDocumentsAnalyzed: 650,
-  totalPagesReal: 7261,
+  totalDocumentsAnalyzed: 651,
+  totalPagesReal: 7269,
   methodology: {
     blendedHourlyRate: 280,
     rateRange: { seniorPartner: [350, 450], midAssociate: [250, 350], paralegal: [150, 200] },
-    note: "Every PDF in public/documents/matter-XX/ was measured with pdfinfo for real page counts (poppler-utils), then classified by document type (complaint, motion/opposition/reply, discovery, writ/habeas, declaration, administrative, evidence) and priced using the hours-per-page/per-document conversions in docs/LAWYER_FEES_CALCULATOR.md. Opposing counsel's filings are billed only at a light review rate, never at drafting rate. Duplicate packs (opposition-pack-10, conformed copies, from-* stores) are billed incrementally. Matters with no uploaded PDFs are estimated conservatively from matter JSON status text. Aug. 28, 2026 true-up: Matter 20 Whitman tentative + reply review; Matter 24 Serrato Opp v4 / related-case motions / MTD review; Matter 26 UPS ECF 7 review + 17-page opposition; Matter 28 Dkt. 11 + QI research (HOPE discovery stays on Matter 5); Matter 32 process-server bundle; Matter 35 Ross CT / summons-first service packets. Sep. 5, 2026: Matter 36 adds the AT&T hiring record, formal offer, findings memorandum, and 32-page verified-complaint review draft. Sep. 6, 2026: Matters 36–39 true-up to executed San Joaquin packets (CM-010, FW-001, FW-003, SUM-100, signed complaints, walk-up assemblies). Sep. 14, 2026: Matter 40 — 10-page TaskUs, LLC offer + signatory packet + WorkDay emails + First Advantage Profile Advantage invite and saliva-drug-test notice (9 files / 54 pages).",
+    note: "Every PDF in public/documents/matter-XX/ was measured with pdfinfo for real page counts (poppler-utils), then classified by document type (complaint, motion/opposition/reply, discovery, writ/habeas, declaration, administrative, evidence) and priced using the hours-per-page/per-document conversions in docs/LAWYER_FEES_CALCULATOR.md. Opposing counsel's filings are billed only at a light review rate, never at drafting rate. Duplicate packs (opposition-pack-10, conformed copies, from-* stores) are billed incrementally. Matters with no uploaded PDFs are estimated conservatively from matter JSON status text. Aug. 28, 2026 true-up: Matter 20 Whitman tentative + reply review; Matter 24 Serrato Opp v4 / related-case motions / MTD review; Matter 26 UPS ECF 7 review + 17-page opposition; Matter 28 Dkt. 11 + QI research (HOPE discovery stays on Matter 5); Matter 32 process-server bundle; Matter 35 Ross CT / summons-first service packets. Sep. 5, 2026: Matter 36 adds the AT&T hiring record, formal offer, findings memorandum, and 32-page verified-complaint review draft. Sep. 6, 2026: Matters 36–39 true-up to executed San Joaquin packets (CM-010, FW-001, FW-003, SUM-100, signed complaints, walk-up assemblies). Sep. 14, 2026: Matter 40 — 10-page TaskUs, LLC offer + signatory packet + WorkDay emails + First Advantage Profile Advantage invite and saliva-drug-test notice (9 files / 54 pages). Same day: Matter 26 Dkt. 14 UPS reply + Dkt. 14-1 COS (8 pages, light review).",
   },
-  totalEstimatedHours: { low: 3097.8, high: 5205.2, mid: 4144 },
-  totalEstimatedCost: { low: 867384, high: 1457456, mid: 1160320 },
+  totalEstimatedHours: { low: 3098.3, high: 5206.2, mid: 4144.75 },
+  totalEstimatedCost: { low: 867524, high: 1457736, mid: 1160530 },
   byCluster: {
     cluster1: { label: "CHP / DUI / DMV", matters: [1, 2, 7, 8, 20, 24, 32, 33], costLow: 172676, costMid: 230272, costHigh: 287868 },
     cluster2: { label: "Parole Retaliation / HOPE", matters: [3, 4, 5, 6, 11, 13, 14, 15, 16, 17, 18, 21, 28, 30, 34], costLow: 469672, costMid: 619192, costHigh: 772912 },
-    cluster3: { label: "Consumer Fraud / Employment", matters: [12, 22, 23, 25, 26, 27, 29, 31, 36, 37, 38, 39], costLow: 169176, costMid: 233506, costHigh: 297836 },
+    cluster3: { label: "Consumer Fraud / Employment", matters: [12, 22, 23, 25, 26, 27, 29, 31, 36, 37, 38, 39], costLow: 169316, costMid: 233716, costHigh: 298116 },
     cluster4: { label: "Administrative Writs & Habeas", matters: [9, 10, 19], costLow: 41580, costMid: 57890, costHigh: 74200 },
     cluster6: { label: "Public Accommodation / Unruh", matters: [35], costLow: 14280, costMid: 19460, costHigh: 24640 },
   },

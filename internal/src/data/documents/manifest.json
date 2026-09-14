@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1210,
-  "totalBytes": 865783131,
+  "fileCount": 1217,
+  "totalBytes": 866791058,
   "files": [
     {
       "path": "/documents/_form-library/ao440-blank-template.pdf",
@@ -2412,6 +2412,11 @@
       "path": "/documents/matter-26/Dkt 11 - UPS Consent Motion for Extension of Time to File Reply (Filed Sep 4 2026).pdf",
       "size": 295890,
       "sha256": "52ef957af1995d0d958586fde9e64e62dac966a61475b15a23049c4beb338819"
+    },
+    {
+      "path": "/documents/matter-26/Dkt 14 - UPS Reply in Support of Rule 12(b)(6) Motion to Dismiss (Filed Sep 14 2026).pdf",
+      "size": 318621,
+      "sha256": "6691a589942498269a5080d2fb19d154bd46f8f577453bf0e992eadd52587d9d"
     },
     {
       "path": "/documents/matter-26/Final Adverse Action Notification regarding your application with UPS.pdf",
@@ -5944,6 +5949,16 @@
       "sha256": "f7352d8a9d84de9964f1330b851a1f0cc8833247c3efeb2855805edbdd24738e"
     },
     {
+      "path": "/documents/matter-40/First Advantage Profile Advantage Order WPS-361214148 - Status 1 (Sep 14 2026).jpg",
+      "size": 208668,
+      "sha256": "9e99bd5d83ce125af9f70a800c2814fa96e4b5a6af1d9f2a74998585174912da"
+    },
+    {
+      "path": "/documents/matter-40/First Advantage Profile Advantage Order WPS-361214148 - Status 2 (Sep 14 2026).jpg",
+      "size": 107135,
+      "sha256": "eaa5a9f717f8d8af12c36971a1e470b63d0b6143d55f0f2ca5e4922e93d784fe"
+    },
+    {
       "path": "/documents/matter-40/First Advantage Screening Notification - TaskUs Holdings Saliva Drug Test (Sep 14 2026).pdf",
       "size": 48065,
       "sha256": "a65113f4aad37759095465d468163daadba65a9c99be058a8c2a67a09c223aa9"
@@ -5962,6 +5977,26 @@
       "path": "/documents/matter-40/Review Your Offer Letter - Uber AV Teammate (Sep 14 2026).pdf",
       "size": 71061,
       "sha256": "d2b971dedbe902842524199743ff387917a61929b59907054df53bed9af0559a"
+    },
+    {
+      "path": "/documents/matter-40/TaskUs - CA SOS BIZFILE Search Results (Sep 14 2026).pdf",
+      "size": 91542,
+      "sha256": "d8116e3a81d2689cc2aa8da89b0accb3e682dad3cf8790d3718c1f56b97180d5"
+    },
+    {
+      "path": "/documents/matter-40/TaskUs Holdings Inc - CA SOS BIZFILE (Sep 14 2026).pdf",
+      "size": 107051,
+      "sha256": "022b35398447c21f7d4391ab57d45075661195e2c7b4da825eaf2076219f1627"
+    },
+    {
+      "path": "/documents/matter-40/TaskUs TA Ops - Start Date Administrative Hold (Sep 14 2026).pdf",
+      "size": 65940,
+      "sha256": "7b39e5e08a1bd255832de367f345da014fe777c81e9a2d4bd41bcead0ac0cc7c"
+    },
+    {
+      "path": "/documents/matter-40/TaskUs USA LLC - CA SOS BIZFILE (Sep 14 2026).pdf",
+      "size": 108970,
+      "sha256": "f0fe1ed9d46fc1fa4afa6301a2a32b736113f25fdb9be21e8cc4da92a5a88792"
     },
     {
       "path": "/documents/matter-40/TaskUs Welcome Graphic (Sep 14 2026).jpg",

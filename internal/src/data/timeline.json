@@ -1,5 +1,20 @@
 [
   {
+    "date": "Sep. 14, 2026",
+    "event": "FILED \u2014 Dkt. 14 Defendant United Parcel Service, Inc.'s Reply in Support of its 12(b)(6) Motion to Dismiss (6 pp.), with Dkt. 14-1 Certificate of Service (2 pp.), in Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). Filed 09/14/26. Hearing remains Oct. 7, 2026, 10:00 a.m., Courtroom 24 (CKD), Magistrate Judge Delaney (Zoom). Walks back ECF 7's 'not a single reference to any California based sex offender registry': NSOR was searched; Record Found; NSOR result 'indicating that Plaintiff was also included on the California Sex Offender Registry.' Denies accessing the Megan's Law website. Concession: 'when UPS learned that Plaintiff was included on the National Sex Offender Registry, it used that information when making its employment decisions related to Plaintiff.' Argues Labor Code 432.7(n) as a safe harbor (writes 432.9(n), quotes 432.7(n)) plus Gov't Code \u00a7 12952; collapses ICRAA into the \u00a7 290.46(j) theory; asks dismissal with prejudice. COS mail by Elaine Nguyen to Brendan Ngehsi Newanforbi, 1455 Cat Tail Drive, Stockton, CA 95204; email listed bnn.cdla@gmail.com (wrong extra 'a'; real is bnn.cdl@gmail.com). Mail, so prejudice is weak. This filing is not a response to the $250k demand, which remains open until 5:00 p.m. PT Sep. 14.",
+    "matters": [
+      26
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "opposing",
+    "source": "/documents/matter-26/Dkt 14 - UPS Reply in Support of Rule 12(b)(6) Motion to Dismiss (Filed Sep 14 2026).pdf",
+    "source_type": "pacer",
+    "confidence": "high",
+    "verified_at": "2026-09-14"
+  },
+  {
     "date": "Sep. 12, 2026",
     "event": "DRAFT (unsent) \u2014 Final early global settlement demand in Newanforbi v. Randstad US, LLC et al. (26CV199902): $40,000.00 to resolve all claims against both named defendants and Does. Wire within seven business days of written joint acceptance. Expires 5:00 p.m. PT Sept. 18, 2026, and may be accepted after a filing. The RK Logistics Group, Inc. remains due Sept. 14; Randstad US, LLC remains due Sept. 15. This draft does not extend either clock and is not a CIV-100 hold. File-if-silent stays Sept. 15 (RK) / Sept. 16 (Randstad) if eCourt is empty. Do not send the Sept. 11 $40k text that gifted both defendants through Sept. 18. Generator: internal/scripts/matter27-global-demand-sep12.py. Evid. Code \u00a71152 / FRE 408.",
     "matters": [
@@ -230,12 +245,12 @@
   },
   {
     "date": "Sep. 14, 2026",
-    "event": "UPS reply deadline (extended) \u2014 Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). Dkt. 12 (Sep. 10) grants Dkt. 11; Defendant's reply brief on the live Dkt. 9 MTD shall be filed by September 14, 2026. Supersedes the L.R. 230(d) Sep. 8 clock. Hearing remains Oct. 7, 2026, 10:00 a.m., Courtroom 24 (CKD), Judge Delaney. This is UPS's clock.",
+    "event": "SATISFIED \u2014 UPS reply deadline (extended) \u2014 Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). Dkt. 12 (Sep. 10) grants Dkt. 11; Defendant's reply brief on the live Dkt. 9 MTD shall be filed by September 14, 2026. SATISFIED by Dkt. 14, filed Sep. 14, 2026. Hearing remains Oct. 7, 2026, 10:00 a.m., Courtroom 24 (CKD), Judge Delaney.",
     "matters": [
       26
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "opposing",
     "source": "/documents/matter-26/PACER Docket Report - E.D. Cal. 2-26-cv-02847-DAD-CKD (Sep 10 2026).pdf",
     "source_type": "pacer",
@@ -1032,7 +1047,7 @@
   },
   {
     "date": "Oct. 7, 2026",
-    "event": "HEARING \u2014 Defendant UPS's Rule 12(b)(6) Motion to Dismiss (ECF No. 9), Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD), 10:00 a.m., Courtroom 24 (CKD) before Magistrate Judge Carolyn K. Delaney. Delaney civil law-and-motion is Zoom on Wednesdays at 10:00 a.m. Opposition is on file as Dkt. 10 (filed Aug. 28, 2026, to Dkt. 9). Dkt. 12 (Sep. 10) granted Dkt. 11; UPS reply due Sep. 14. Dkt. 10 opposition to the MTD remains on file.",
+    "event": "HEARING \u2014 Defendant UPS's Rule 12(b)(6) Motion to Dismiss (ECF No. 9), Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD), 10:00 a.m., Courtroom 24 (CKD) before Magistrate Judge Carolyn K. Delaney. Delaney civil law-and-motion is Zoom on Wednesdays at 10:00 a.m. Opposition is on file as Dkt. 10 (filed Aug. 28, 2026, to Dkt. 9). Dkt. 14 reply filed Sep. 14 (Dkt. 14-1 COS).",
     "matters": [
       26
     ],
@@ -8013,7 +8028,7 @@
   },
   {
     "date": "Sep. 14, 2026",
-    "event": "DEADLINE \u2014 Plaintiff's $250,000.00 settlement demand to UPS (sent Aug. 31, 2026) expires at 5:00 p.m. Pacific Time; written response requested to bnn.cdl@gmail.com. UPS's reply in support of its Rule 12(b)(6) motion (Dkt. 9) is also due Sep. 14, 2026.",
+    "event": "DEADLINE \u2014 Plaintiff's $250,000.00 settlement demand to UPS (sent Aug. 31, 2026) expires at 5:00 p.m. Pacific Time; written response requested to bnn.cdl@gmail.com. UPS filed Dkt. 14 the same day; that filing is not a settlement response. Demand remains open until 5:00 p.m. PT.",
     "matters": [
       26
     ],
