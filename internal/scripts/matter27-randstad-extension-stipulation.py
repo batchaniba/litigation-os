@@ -52,6 +52,14 @@ OUT_ORDER_DOCX = MATTER27 / (
     "[Proposed] Order Extending Time for Randstad to Respond "
     "(Plaintiff Counterpart, Sep 14 2026).docx"
 )
+OUT_COMBINED = MATTER27 / (
+    "Stipulation and Proposed Order Extending Time for Randstad to Respond "
+    "(Plaintiff Counterpart, Sep 14 2026).pdf"
+)
+OUT_COMBINED_DOCX = MATTER27 / (
+    "Stipulation and Proposed Order Extending Time for Randstad to Respond "
+    "(Plaintiff Counterpart, Sep 14 2026).docx"
+)
 
 EXEC_DATE = "September 14, 2026"
 CASE_NO = "26CV199902"
@@ -461,6 +469,37 @@ def build_order_docx(path: Path) -> None:
     doc.save(str(path))
 
 
+def merge_pdfs(out: Path, *inputs: Path) -> None:
+    try:
+        import pymupdf
+    except ImportError:
+        import fitz as pymupdf
+    dst = pymupdf.open()
+    for src_path in inputs:
+        src = pymupdf.open(src_path)
+        dst.insert_pdf(src)
+        src.close()
+    out.parent.mkdir(parents=True, exist_ok=True)
+    dst.save(str(out))
+    dst.close()
+
+
+def merge_docx(out: Path, first: Path, second: Path) -> None:
+    from copy import deepcopy
+
+    Document, _align, _spacing, qn, _Inches, _Pt = _docx_helpers()
+    doc = Document(str(first))
+    doc.add_page_break()
+    other = Document(str(second))
+    body = doc.element.body
+    for child in list(other.element.body):
+        if child.tag == qn("w:sectPr"):
+            continue
+        body.append(deepcopy(child))
+    out.parent.mkdir(parents=True, exist_ok=True)
+    doc.save(str(out))
+
+
 def main() -> None:
     build_stipulation(OUT_STIP)
     print(f"Wrote {OUT_STIP}")
@@ -470,6 +509,10 @@ def main() -> None:
     print(f"Wrote {OUT_STIP_DOCX}")
     build_order_docx(OUT_ORDER_DOCX)
     print(f"Wrote {OUT_ORDER_DOCX}")
+    merge_pdfs(OUT_COMBINED, OUT_STIP, OUT_ORDER)
+    print(f"Wrote {OUT_COMBINED}")
+    merge_docx(OUT_COMBINED_DOCX, OUT_STIP_DOCX, OUT_ORDER_DOCX)
+    print(f"Wrote {OUT_COMBINED_DOCX}")
 
 
 if __name__ == "__main__":
