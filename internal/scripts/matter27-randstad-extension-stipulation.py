@@ -16,6 +16,10 @@ the number Plaintiff already put in writing on September 12: Randstad US,
 LLC only, through and including September 18, 2026. A second extension
 needs a court order. The proposed order is no broader than the stipulation.
 
+Plaintiff e-signs both the PDF and the Word file as
+"/s/ Brendan Ngehsi Newanforbi". Do not embed the loops stamp — Word was
+cropping it.
+
   python3 internal/scripts/matter27-randstad-extension-stipulation.py
 """
 from __future__ import annotations
@@ -29,11 +33,6 @@ sys.path.insert(0, str(SCRIPT_DIR))
 sys.path.insert(0, str(SCRIPT_DIR / "lib"))
 
 from pleading_paper import CONTENT_LEFT, PleadingPaper  # noqa: E402
-from signature_stamp import (  # noqa: E402
-    SIGNATURE_ASPECT,
-    SIGNATURE_NATIVE_PX,
-    SIGNATURE_PATH,
-)
 
 ROOT = SCRIPT_DIR.parent
 MATTER27 = ROOT / "public/documents/matter-27"
@@ -167,22 +166,12 @@ def _caption(d: PleadingPaper, right_title: list[tuple[str, bool, bool]]) -> Non
 
 
 def _plaintiff_sign_block(d: PleadingPaper) -> None:
-    d.ensure_space(8)
+    d.ensure_space(6)
     d.write_line(f"Dated: {EXEC_DATE}")
     d.blank_line()
-    d.blank_line()
-    d.blank_line()
-    d.draw_signature_image(
-        SIGNATURE_PATH,
-        SIGNATURE_NATIVE_PX[0],
-        SIGNATURE_NATIVE_PX[1],
-        SIG_LINE,
-        width=220,
-        x_offset=15,
-    )
-    d.write_line(SIG_LINE, right=True, right_margin_offset=20)
-    d.write_line("BRENDAN NGEHSI NEWANFORBI", bold=True, right=True, right_margin_offset=20)
-    d.write_line("Plaintiff, In Pro Per", right=True, right_margin_offset=20)
+    d.write_line("/s/ Brendan Ngehsi Newanforbi", bold=True)
+    d.write_line("BRENDAN NGEHSI NEWANFORBI", bold=True)
+    d.write_line("Plaintiff, In Pro Per")
 
 
 def _counsel_sign_block(d: PleadingPaper) -> None:
@@ -421,15 +410,9 @@ def build_stip_docx(path: Path) -> None:
     add_para(doc, "")
     add_para(doc, f"Dated: {EXEC_DATE}")
     add_para(doc, "")
-    add_para(doc, "")
-    sig_width = Inches(220 / 72)
-    sig_height = Inches((220 / 72) * SIGNATURE_ASPECT)
-    sig_p = add_para(doc, "", right=True)
-    run = sig_p.add_run()
-    run.add_picture(SIGNATURE_PATH, width=sig_width, height=sig_height)
-    add_para(doc, SIG_LINE, right=True)
-    add_para(doc, "BRENDAN NGEHSI NEWANFORBI", bold=True, right=True)
-    add_para(doc, "Plaintiff, In Pro Per", right=True)
+    add_para(doc, "/s/ Brendan Ngehsi Newanforbi", bold=True)
+    add_para(doc, "BRENDAN NGEHSI NEWANFORBI", bold=True)
+    add_para(doc, "Plaintiff, In Pro Per")
     add_para(doc, "")
     add_para(doc, "Dated: ________________")
     add_para(doc, "")
@@ -479,8 +462,6 @@ def build_order_docx(path: Path) -> None:
 
 
 def main() -> None:
-    if not Path(SIGNATURE_PATH).is_file():
-        raise SystemExit(f"Missing signature image: {SIGNATURE_PATH}")
     build_stipulation(OUT_STIP)
     print(f"Wrote {OUT_STIP}")
     build_order(OUT_ORDER)
