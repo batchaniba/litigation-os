@@ -1,5 +1,20 @@
 [
   {
+    "date": "Sep. 14, 2026",
+    "event": "DRAFTED (unfiled) — Plaintiff's Status Report in Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR), dated September 14, 2026, executed in Milpitas. Covers every Dkt. 8 topic: service complete (July 24 Sheriff / CT); joinder reserved as to First Advantage; amendment cutoff December 18, 2026; diversity / no remand; Rule 26(f) plan with date-certain disclosures October 22, 2026, fact cutoff April 16, 2027, experts May 14 / June 11 / June 25, 2027; related case UPS 2:26-cv-02847 disclosed, no consolidation; settlement conference requested before Judge Riordan the week of November 16, 2026; Plaintiff stipulates to the assigned magistrate as settlement judge, not to Judge Drozd if Drozd will try the case. Not a stipulation. Due September 24. Serve Kray by mail from Milpitas. Appear October 8 Zoom. Do not treat as filed.",
+    "matters": [
+      25
+    ],
+    "type": "event",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-25/Plaintiff's Status Report (E.D. Cal. 2-26-cv-02881) (Sep 14 2026).pdf",
+    "source_type": "portfolio",
+    "confidence": "high",
+    "verified_at": "2026-09-14"
+  },
+  {
     "date": "Sep. 12, 2026",
     "event": "DRAFT (unsent) — Final early global settlement demand in Newanforbi v. Randstad US, LLC et al. (26CV199902): $40,000.00 to resolve all claims against both named defendants and Does. Wire within seven business days of written joint acceptance. Expires 5:00 p.m. PT Sept. 18, 2026, and may be accepted after a filing. The RK Logistics Group, Inc. remains due Sept. 14; Randstad US, LLC remains due Sept. 15. This draft does not extend either clock and is not a CIV-100 hold. File-if-silent stays Sept. 15 (RK) / Sept. 16 (Randstad) if eCourt is empty. Do not send the Sept. 11 $40k text that gifted both defendants through Sept. 18. Generator: internal/scripts/matter27-global-demand-sep12.py. Evid. Code §1152 / FRE 408.",
     "matters": [

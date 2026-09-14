@@ -9,7 +9,7 @@
     "docket_url": "/docket/74699765/ps-newanforbi-v-federal-express-corp/"
   },
   "claims": "PC §290.46(j)(2)(E) Violation, Failure to Hire (Tameny), ICRAA, Invasion of Privacy, Negligence Per Se, UCL §17200",
-  "status": "PACER 09/08 history confirms the Aug. 31 answer is Dkt. 4. Dkt. 8's 'ECF No. 5' is a miscite — Dkt. 5 is a magistrate consent/decline. Status reports Sep. 24; Zoom Oct. 8. Pull Dkts. 5–7 before treating the Sep. 1 mailing as unfiled.",
+  "status": "Plaintiff's Dkt. 8 status report is drafted (Sep. 14, Milpitas; unfiled; due Sep. 24). PACER 09/08 history confirms the Aug. 31 answer is Dkt. 4. Dkt. 8's 'ECF No. 5' is a miscite — Dkt. 5 is a magistrate consent/decline. Zoom Oct. 8. Pull Dkts. 5–7 before treating the Sep. 1 mailing as unfiled.",
   "status_label": "Status reports Sep. 24; Zoom Oct. 8",
   "lifecycle": "active",
   "proceeding": "federal_civil",
@@ -183,6 +183,14 @@
     },
     {
       "path": "/documents/matter-25/Proof of Service - Consent to Magistrate Judge Jurisdiction - FedEx (E.D. Cal. 2-26-cv-02881) (Sep 1 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-25/Plaintiff's Status Report (E.D. Cal. 2-26-cv-02881) (Sep 14 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-25/Proof of Service - Plaintiff's Status Report (E.D. Cal. 2-26-cv-02881) (Sep 14 2026).pdf",
       "filed": false
     }
   ],
