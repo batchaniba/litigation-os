@@ -8083,6 +8083,21 @@
     "source": "/documents/matter-40/First Advantage Screening Notification - TaskUs Holdings Saliva Drug Test (Sep 14 2026).pdf"
   },
   {
+    "date": "Sep. 14, 2026",
+    "event": "FIRST ADVANTAGE ORDER LIVE \u2014 Profile Advantage Order ID WPS-361214148 (portal name Brendan Ngwanforbi). As of ~10:20 a.m. PDT: Completed \u2014 MVR; Federal Felony And Misdemeanor; PRICPGS; FADV National Criminal File; Social Security Verification. In Progress \u2014 Felony Including Misdemeanor; PRINSOS (FA national sex-offender search; the 25/26 NSOR analogue). Portal will not display the report until the order completes. A green check is not a result and is not a registry hit. Download the instant it closes \u2014 the FedEx/UPS portal links expired.",
+    "matters": [
+      40,
+      31
+    ],
+    "type": "event",
+    "upcoming": false,
+    "actor": "opposing",
+    "source_type": "manual",
+    "confidence": "high",
+    "verified_at": "2026-09-14",
+    "source": "/documents/matter-40/First Advantage Profile Advantage Order WPS-361214148 - Status 1 (Sep 14 2026).jpg"
+  },
+  {
     "date": "Sep. 17, 2026",
     "event": "WATCH \u2014 First Advantage saliva-drug-test schedule for TaskUs Holdings, Inc. expires 11:49 a.m. Eastern (Schedule ID 96558696; LabCorp-Milpitas). A missed collection is a non-registry basis they can use. Complete or diary it.",
     "matters": [
