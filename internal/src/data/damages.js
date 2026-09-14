@@ -1003,7 +1003,7 @@ const matter_damages_raw = [
   {
     number: 40,
     claims: "PC §290.46(j) / ICRAA / FCRA / UCL — TaskUs, LLC offer (prospective)",
-    risk: "Pre-dispute monitoring file: TaskUs, LLC Offer of Temporary Employment signed Sep. 14, 2026 ($22/hour; start Sep. 23 / end ~Dec. 4). First Advantage is named for drug/alcohol testing, not as a consumer-reporting agency on this packet. No standalone ICRAA/FCRA disclosure, no report, no adverse action. Mutual Arbitration Agreement (TaskUs, Inc.) is signed and covers the background-check form or process. Ripens only if a non-hire or rescission turns on registry information.",
+    risk: "Pre-dispute monitoring file: TaskUs, LLC offer signed Sep. 14, 2026. First Advantage Profile Advantage background check invited the same morning (same CRA as Matters 25/26; expected report format similar if not identical). Separate saliva drug test ordered for TaskUs Holdings, Inc. No report furnished yet, no adverse action. MAA signed. Ripens only if a non-hire or rescission turns on registry information.",
     settlement_note: "No valuation — no adverse action. Prospective statutory framework only. Do not treat the MAA as a no-arbitration file.",
     conservative: 0,
     moderate: 0,
