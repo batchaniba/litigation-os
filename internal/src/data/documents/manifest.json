@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1208,
-  "totalBytes": 865672038,
+  "fileCount": 1210,
+  "totalBytes": 865783131,
   "files": [
     {
       "path": "/documents/_form-library/ao440-blank-template.pdf",
@@ -5937,6 +5937,16 @@
       "path": "/documents/matter-39/Verified Complaint - Ngwa Nforbi v Best Buy Co Inc (Sep 8 2026).pdf",
       "size": 290362,
       "sha256": "dc5cf3976d65ae7d0e30a6b355d82d08873025bb0dc9b16ca541b20dc0e94bec"
+    },
+    {
+      "path": "/documents/matter-40/First Advantage Invite - TaskUs Background Screening (Sep 14 2026).pdf",
+      "size": 63028,
+      "sha256": "f7352d8a9d84de9964f1330b851a1f0cc8833247c3efeb2855805edbdd24738e"
+    },
+    {
+      "path": "/documents/matter-40/First Advantage Screening Notification - TaskUs Holdings Saliva Drug Test (Sep 14 2026).pdf",
+      "size": 48065,
+      "sha256": "a65113f4aad37759095465d468163daadba65a9c99be058a8c2a67a09c223aa9"
     },
     {
       "path": "/documents/matter-40/Offer Letter - Teammate Team Lead QA (Sep 14 2026).pdf",
