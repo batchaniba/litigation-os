@@ -1003,7 +1003,7 @@ const matter_damages_raw = [
   {
     number: 40,
     claims: "PC §290.46(j) / ICRAA / FCRA / UCL — TaskUs, LLC offer (prospective)",
-    risk: "Pre-dispute monitoring file: TaskUs, LLC offer signed Sep. 14, 2026. First Advantage Profile Advantage Order WPS-361214148 in progress (PRINSOS / NSOR analogue still running; report not viewable). Separate saliva drug test for TaskUs Holdings, Inc. CA SOS: offer-letter TaskUs, LLC (200826810086) Converted Out; USA LLC and Holdings Active Delaware entities via C T Corporation System. No adverse action. MAA signed. Ripens only if a non-hire or rescission turns on registry information.",
+    risk: "Pre-dispute monitoring file: TaskUs, LLC offer signed Sep. 14, 2026. Same-day TA Ops hold of the Sep. 23 start pending the FA background screening report — not a denial, not FCRA pre-adverse. Order WPS-361214148 in progress (PRINSOS still running; report not viewable). Saliva drug test still expires Sep. 17. CA SOS: TaskUs, LLC Converted Out; USA LLC and Holdings Active via CT Corp. Damages $0 until adverse action.",
     settlement_note: "No valuation — no adverse action. Prospective statutory framework only. Do not treat the MAA as a no-arbitration file.",
     conservative: 0,
     moderate: 0,

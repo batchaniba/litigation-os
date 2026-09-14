@@ -8112,6 +8112,20 @@
     "source": "/documents/matter-40/TaskUs - CA SOS BIZFILE Search Results (Sep 14 2026).pdf"
   },
   {
+    "date": "Sep. 14, 2026",
+    "event": "START DATE ON HOLD \u2014 TA Ops US (taops.us@taskus.com, cc Liz Ramirez) emailed at 11:24 a.m.: 'Important Update Regarding Your Application with TaskUs.' Places the Sep. 23 start on a 'standard administrative hold while final onboarding reviews are completed, including the processing of your background screening report.' Application 'remains in a pending status.' Directs him to monitor First Advantage (Customer Support 800-888-5773). Not a pre-adverse notice and not a denial. First employer-side writing that the FA report is holding the start \u2014 sent while Order WPS-361214148 was still open (PRINSOS In Progress as of ~10:20 a.m.). The offer had said employment may begin while screening is pending. Do not skip the Sep. 17 saliva collection; they did not cancel it. Sep. 23 is no longer a show-up date.",
+    "matters": [
+      40
+    ],
+    "type": "event",
+    "upcoming": false,
+    "actor": "opposing",
+    "source_type": "manual",
+    "confidence": "high",
+    "verified_at": "2026-09-14",
+    "source": "/documents/matter-40/TaskUs TA Ops - Start Date Administrative Hold (Sep 14 2026).pdf"
+  },
+  {
     "date": "Sep. 17, 2026",
     "event": "WATCH \u2014 First Advantage saliva-drug-test schedule for TaskUs Holdings, Inc. expires 11:49 a.m. Eastern (Schedule ID 96558696; LabCorp-Milpitas). A missed collection is a non-registry basis they can use. Complete or diary it.",
     "matters": [
@@ -8127,16 +8141,16 @@
   },
   {
     "date": "Sep. 23, 2026",
-    "event": "WATCH \u2014 Anticipated TaskUs, LLC start date (Teammate; orientation 1631 N 1st Street, Suite 200, San Jose, Sep. 23\u201325; production depot 3030 Corvin Drive, Santa Clara). If Plaintiff starts, this is no longer a failure-to-hire file. Watch for pre-adverse/adverse notices and any rescission citing NSOPW, Megan's Law, or SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY.",
+    "event": "START ON HOLD \u2014 The Sep. 23 anticipated TaskUs start (orientation 1631 N 1st Street, Suite 200, San Jose, Sep. 23\u201325) is no longer operative. TA Ops US placed it on administrative hold Sep. 14, 11:24 a.m. pending the First Advantage background screening report. Do not treat Sep. 23 as a show-up date. Watch for a new start date, a First Advantage pre-adverse/adverse notice, or a rescission citing NSOPW, Megan's Law, or SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY.",
     "matters": [
       40
     ],
-    "type": "deadline",
-    "upcoming": true,
-    "actor": "you",
+    "type": "event",
+    "upcoming": false,
+    "actor": "opposing",
     "source_type": "manual",
     "confidence": "high",
     "verified_at": "2026-09-14",
-    "source": "/documents/matter-40/Offer of Temporary Employment - TaskUs LLC (Sep 14 2026).pdf"
+    "source": "/documents/matter-40/TaskUs TA Ops - Start Date Administrative Hold (Sep 14 2026).pdf"
   }
 ]

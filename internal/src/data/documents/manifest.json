@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1215,
-  "totalBytes": 866406497,
+  "fileCount": 1216,
+  "totalBytes": 866472437,
   "files": [
     {
       "path": "/documents/_form-library/ao440-blank-template.pdf",
@@ -5982,6 +5982,11 @@
       "path": "/documents/matter-40/TaskUs Holdings Inc - CA SOS BIZFILE (Sep 14 2026).pdf",
       "size": 107051,
       "sha256": "022b35398447c21f7d4391ab57d45075661195e2c7b4da825eaf2076219f1627"
+    },
+    {
+      "path": "/documents/matter-40/TaskUs TA Ops - Start Date Administrative Hold (Sep 14 2026).pdf",
+      "size": 65940,
+      "sha256": "7b39e5e08a1bd255832de367f345da014fe777c81e9a2d4bd41bcead0ac0cc7c"
     },
     {
       "path": "/documents/matter-40/TaskUs USA LLC - CA SOS BIZFILE (Sep 14 2026).pdf",
