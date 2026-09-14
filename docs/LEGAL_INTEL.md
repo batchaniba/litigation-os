@@ -63,6 +63,8 @@ portfolio's matters before that judge.
   (E.D. Cal. magistrate judge; referral MJ in Matter 25)
 - [Carolyn K. Delaney — 2026 docket audit](../internal/docs/legal-intel/judges/carolyn-k-delaney-2026.md)
   (E.D. Cal. chief magistrate judge; referral MJ in Matter 26; hears the Oct. 7 UPS MTD)
+- [Karin S. Schwartz — 2026 docket audit](../internal/docs/legal-intel/judges/karin-schwartz-2026.md)
+  (Alameda County Superior Court, Dept. 20; presides over Matter 27)
 
 ## Roadmap
 
