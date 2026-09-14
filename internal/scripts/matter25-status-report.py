@@ -65,7 +65,7 @@ PLAINTIFF_BLOCK = [
 ]
 
 COURT_LINE1 = "UNITED STATES DISTRICT COURT"
-COURT_LINE2 = "EASTERN DISTRICT OF CALIFORNIA -- SACRAMENTO DIVISION"
+COURT_LINE2 = "EASTERN DISTRICT OF CALIFORNIA"
 
 CAPTION_LEFT = [
     ("BRENDAN NGEHSI NEWANFORBI,", True, False),
@@ -236,7 +236,7 @@ CONTENT = [
      "Subject-matter jurisdiction is diversity, 28 U.S.C. sections 1332 "
      "and 1441. Defendant removed on that basis. Plaintiff does not "
      "seek remand. Personal jurisdiction is not disputed. Venue is "
-     "proper in this District and the Sacramento Division because the "
+     "proper in this District because the "
      "application, screening, and denial concerned California employment "
      "and the state action was filed in San Joaquin County. Local Rule "
      "120(d). Plaintiff is not aware of a venue motion."),
