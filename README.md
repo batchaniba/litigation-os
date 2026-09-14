@@ -176,7 +176,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | 24 | Newanforbi v. Serrato | 4:26-cv-05953-ASK | USDC N.D. Cal. | Federal | MTD Sep. 30 VACATED — reassignment pending; CMC continued |
 | 25 | Newanforbi v. Federal Express Corporation | 2:26-cv-02881-DAD-SCR | USDC E.D. Cal. (Sacramento Div.) | Federal | Status reports Sep. 24; Zoom Oct. 8 |
 | 26 | Newanforbi v. United Parcel Service, Inc. | 2:26-cv-02847-DAD-CKD | USDC E.D. Cal. (Sacramento Div.) | Federal | Dkt. 12: UPS reply by Sep. 14 — hearing Oct. 7 |
-| 27 | Newanforbi v. Randstad, et al. | 26CV199902 | Alameda Sup. Ct. (Rene C. Davidson Courthouse) | State | $25k SENT — Randstad stip DO NOT SIGN |
+| 27 | Newanforbi v. Randstad, et al. | 26CV199902 | Alameda Sup. Ct. (Rene C. Davidson Courthouse) | State | CIV-141 + counterpart — neither stamped |
 | 28 | Newanforbi v. Shannon Smith, LCSW, CEO, et al. | 3:26-cv-07504-LJC | USDC N.D. Cal. | Federal | M&C exhausted — answer Sep. 21 |
 | 29 | Newanforbi v. Amazon.com Services, LLC | 4:26-cv-09249-ASK | USDC N.D. Cal. (Oakland; formerly 3:26-cv-09249-ASK) | Federal | Plaintiff consent filed — both answers Sep. 22 |
 | 30 | Newanforbi v. Moua, et al. | TBD | USDC N.D. Cal. | Federal | Pre-filing — GCA claim pending; Moua-only complaint ready |
@@ -238,7 +238,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | Sep. 14, 2026 | 26 | DEADLINE — Plaintiff's $250,000.00 settlement demand to UPS (sent Aug. 31, 2026) expires at 5:00 p.m. Pacific Time; written response requested to bnn.cdl@gmail.com. |
 | Sep. 15, 2026 | 27 | FILE IF SILENT — e-file CIV-100 Request for Entry of Default as to The RK Logistics Group, Inc. (clerk default only, item 1c). First fileable the day after RK's last agreed Sept. 14 response date. |
 | Sep. 15, 2026 | 27 | Extended responsive-pleading deadline — Randstad US, LLC only, Newanforbi v. Randstad US, LLC et al. (26CV199902); 15 days past the Aug. 31, 2026 computed deadline, agreed on the Aug. 18, 2026 call with Chadwick L. |
-| Sep. 16, 2026 | 27 | FILE IF SILENT — e-file CIV-100 Request for Entry of Default as to Randstad US, LLC (clerk default only, item 1c). First fileable the day after Randstad's operative response date. |
+| Sep. 16, 2026 | 27 | FILE IF SILENT — e-file CIV-100 Request for Entry of Default as to Randstad US, LLC (clerk default only, item 1c). First fileable the day after Randstad's operative response date. That date remains September 15. |
 | Sep. 16, 2026 | 26 | Rule 15(a)(1)(B) amendment-as-of-right window — Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). UPS served the MTD by mail Aug. 26, 2026 (ECF 7-3). 21 days after service is Sep. 16 |
 | Sep. 16, 2026 | 30 | Anticipated filing date (computed) — Complaint v9 (Moua and DOES 1-10), Newanforbi v. Moua, et al. (Matter 30); 15 days after the anticipated Sep. 1, 2026 deemed rejection |
 | Sep. 17, 2026 | 40 | WATCH — First Advantage saliva-drug-test schedule for TaskUs Holdings, Inc. expires 11:49 a.m. Eastern (Schedule ID 96558696; LabCorp-Milpitas). A missed collection is a non-registry basis they can use. |
