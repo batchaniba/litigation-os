@@ -2,32 +2,55 @@
 name: stipulation-defense
 description: >
   Draft, review, counter, or refuse a stipulation, extension, stay,
-  continuance, or proposed order. LOCKED: every stipulation in any matter
-  is drafted most favorably to Plaintiff. Defense clocks are shortened or
-  held. Plaintiff's own clocks are not compressed. Do not sign counsel's
-  paper. Do not move more than they asked. Copy TEMPLATE.md, fill the
-  brackets, use CLAUSES.md verbatim where it fits. Portfolio-wide, not
-  Matter 29.
+  continuance, or proposed order that would move a defense clock, waive
+  a right, expand their relief, or put his signature on their paper.
+  Do not use this skill on status reports, oppositions, complaints,
+  hearing notes, or other ordinary Plaintiff papers. Use discretion:
+  be firm on extra time, stays, waivers, and counsel's /s/; treat
+  authenticity, name corrections he already wants, and court-asked
+  magistrate-settlement yes as ordinary. When it applies: plaintiff-
+  favorable terms, shorten or hold defense clocks, do not compress
+  his, do not sign counsel's paper, do not expand their ask. Copy
+  TEMPLATE.md. Portfolio-wide, not Matter 29.
 ---
 
 # Stipulation defense
 
-LOCKED. Portfolio-wide. Do not sign counsel's draft. Do not "just give them
-the thirty days." Do not invent a friendlier paper. Do not expand their
-ask.
+Use this skill when the work is the deal paper: a stipulation, extension,
+stay, continuance, or proposed order that would move a defense clock,
+waive a right, expand their relief, or put his signature on counsel's
+draft.
+
+Do not use it on ordinary Plaintiff papers. Status reports, oppositions,
+complaints, hearing notes, and discovery plans are not stipulations. Do
+not recite "this is not a stipulation," "counsel may not affix," or
+"does not extend any defense clock" on those papers. Write the paper as
+the paper it is.
+
+Use discretion. Extra defense time, a stay, a waiver, a floating reset,
+or a conformed `/s/` on their Word file: be firm. Authenticity of their
+own records, a name correction he already wants, advancing a hearing onto
+his live calendar, or answering the Court's magistrate-as-settlement-judge
+question: ordinary. If he has already agreed a number, write that number.
+Do not paste the full counterpart machine onto every "can we stipulate."
+
+When this skill applies: do not sign counsel's draft. Do not "just give
+them the thirty days." Do not invent a friendlier paper. Do not expand
+their ask.
 
 Copy `.claude/skills/stipulation-defense/TEMPLATE.md`. Fill every
 `[bracket]`. Delete unused clauses. Drop-in language is in `CLAUSES.md`.
 Do not add a new style. Terms match the worked examples below — those
 examples are history, not a new filing.
 
-The user appears in propria persona. A stipulation is a concession. Draft
-it as if the other side will later quote every word against him.
+The user appears in propria persona. When the paper is a concession,
+draft it as if the other side will later quote every word against him.
 
-**Time runs against Plaintiff.** Evidence degrades, custodians leave,
-retention windows close, and delay favors whoever holds the documents.
-Never agree to a continuance as a courtesy. Never volunteer extra days.
-Never let the paper drift longer in his hands than it arrived.
+**Time runs against Plaintiff** on a defense-time ask. Evidence degrades,
+custodians leave, retention windows close, and delay favors whoever holds
+the documents. Do not agree to that kind of continuance as a courtesy.
+Do not volunteer extra days. Do not let their extension paper drift
+longer in his hands than it arrived.
 
 ## The lock
 
