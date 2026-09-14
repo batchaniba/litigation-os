@@ -999,6 +999,16 @@ const matter_damages_raw = [
         aggressive: 5000
       }
     ]
+  },
+  {
+    number: 40,
+    claims: "PC §290.46(j) / ICRAA / FCRA / UCL — TaskUs offer (prospective)",
+    risk: "Pre-dispute monitoring file: offer received and background consent signed Sep. 14, 2026; no vendor identified, no report, no adverse action. Ripens only if the hiring decision turns on registry information.",
+    settlement_note: "No valuation — no adverse action. Prospective statutory framework only.",
+    conservative: 0,
+    moderate: 0,
+    aggressive: 0,
+    components: []
   }
 ];
 
