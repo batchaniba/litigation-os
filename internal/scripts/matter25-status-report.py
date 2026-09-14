@@ -12,7 +12,7 @@ Plaintiff is pro se, the matter is referred under E.D. Cal. L.R. 302(c)(21).
 Plaintiff's individual report under Dkt. 8.
 
     python3 internal/scripts/matter25-status-report.py \\
-        [--date "September 14, 2026"] [--mailed-from "Milpitas, California"]
+        [--date "September 14, 2026"] [--mailed-from "San Jose, California"]
 """
 
 from __future__ import annotations
@@ -47,7 +47,7 @@ DEFAULT_POS_OUT = OUT_DIR / (
 
 DEFAULT_EXEC_DATE = "September 14, 2026"
 DEFAULT_SIGNED_CITY = "Milpitas, California"
-DEFAULT_MAILED_FROM = "Milpitas, California"
+DEFAULT_MAILED_FROM = "San Jose, California"
 ARTIFACTS_DIR = Path("/opt/cursor/artifacts")
 FOOTER = (
     "PLAINTIFF'S STATUS REPORT -- "
