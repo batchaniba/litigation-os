@@ -41,7 +41,7 @@ const outcomes_raw = {
       counsel: "Chadwick L. Williams, Esq. (Kabat Chapman & Ozmer LLP)",
       counsel_email: "cwilliams@kcozlaw.com",
       response_status: "pending",
-      notes: "Live ask is the Aug. 19 transmitted demand: $55,000.00 Randstad-only, or $85,000.00 globally with The RK Logistics Group, Inc., restated in the Aug. 28 letter. Inclusive, payable within 15 business days after a signed agreement. Response due 5:00 p.m. PT Sept. 8, 2026 (self-imposed; one week before Randstad's Sept. 15 answer date). Williams said Aug. 28 he would attempt to respond by Sept. 4. The unsent Aug. 18 $250,000 letter stays unsent. Pleading clocks: Randstad Sept. 15 (Aug. 18 15-day extension with Williams); RK Logistics Sept. 14 (Garcia request granted; no further). Evid. Code §1152 / FRE 408. Case No. 26CV199902, Hon. Karin Schwartz, Dept. 20; CMC Dec. 17, 2026."
+      notes: "Live ask is the Aug. 19 transmitted demand: $55,000.00 Randstad-only, or $85,000.00 globally with The RK Logistics Group, Inc., restated in the Aug. 28 letter. Inclusive, payable within 15 business days after a signed agreement. Response due 5:00 p.m. PT Sept. 8, 2026 (self-imposed; one week before Randstad's Sept. 15 answer date). Williams said Aug. 28 he would attempt to respond by Sept. 4. The unsent Aug. 18 $250,000 letter stays unsent. Pleading clocks: Randstad Sept. 15 (Aug. 18 15-day extension with Williams); RK Logistics Sept. 14 (Garcia request granted; no further). Evid. Code §1152 / FRE 408. Case No. 26CV199902, Hon. Thomas Weathers, Dept. 20, Rene C. Davidson Courthouse (reassigned Aug. 7, 2026 from Hon. Karin Schwartz); CMC Dec. 17, 2026."
     },
     {
       matter: 27,
