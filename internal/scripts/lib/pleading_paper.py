@@ -268,16 +268,33 @@ class PleadingPaper:
         lines_consumed = int(consumed_height / LINE_SPACING) + 1
         self.current_line = start_line + lines_consumed
 
+    def write_respectfully_submitted(self, right_margin_offset=20):
+        """Standard closer. ``draw_signature_image`` supplies the gap
+        between this line and the stamp; do not add your own blank lines
+        unless you want extra air."""
+        self.write_line(
+            "Respectfully submitted,",
+            right=True,
+            right_margin_offset=right_margin_offset,
+        )
+
     def draw_signature_image(self, image_path, img_w_px, img_h_px, line_text,
                               width=210, right_margin_offset=20, x_offset=0,
-                              height_scale=1.15):
+                              height_scale=1.15, above_lines=2):
         """Draw the canonical signature centered over an underscore signature
         line at the current line position, then advance past it. Call this
         immediately before writing the underscore line itself with
         write_line(line_text, right=True, right_margin_offset=...).
         ``x_offset`` shifts the stamp right (positive) or left (negative)
         from geometric center, in points. ``height_scale`` stretches the
-        stamp upward from the line without changing width."""
+        stamp upward from the line without changing width.
+        ``above_lines`` (default 2) leaves air between the preceding text
+        — usually "Respectfully submitted," — and the stamp, which draws
+        upward from the underscore."""
+        extra = max(0, int(above_lines))
+        self.ensure_space(extra + 4)
+        for _ in range(extra):
+            self.blank_line()
         self._ensure_line()
         y = self._line_y(self.current_line)
         img_h = width * (img_h_px / img_w_px) * height_scale

@@ -540,12 +540,11 @@ def _render_body(d: PleadingPaper, content: list[tuple[str, str]]) -> None:
 
 
 def _signature(d: PleadingPaper, exec_date: str, signed_city: str) -> None:
-    d.ensure_space(11)
+    d.ensure_space(13)
     d.write_line(f"Dated: {exec_date}")
     d.write_line(f"       {signed_city}")
     d.blank_line()
-    d.write_line("Respectfully submitted,", right=True, right_margin_offset=20)
-    d.blank_line()
+    d.write_respectfully_submitted()
     d.draw_signature_image(
         SIGNATURE_PATH,
         SIGNATURE_NATIVE_PX[0],
