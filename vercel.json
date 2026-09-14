@@ -15,6 +15,16 @@
       "permanent": false
     },
     {
+      "source": "/fedex-status-report",
+      "destination": "/fedex-status-report.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/fedex-status-report/",
+      "destination": "/fedex-status-report.pdf",
+      "permanent": false
+    },
+    {
       "source": "/ups-opp",
       "destination": "/ups-opp.pdf",
       "permanent": false
@@ -352,6 +362,15 @@
         {
           "key": "Content-Disposition",
           "value": "attachment; filename=\"Consent to Magistrate Judge Jurisdiction - Federal Express (E.D. Cal. 2-26-cv-02881) (Aug 28 2026).pdf\"; filename*=UTF-8''Consent%20to%20Magistrate%20Judge%20Jurisdiction%20-%20Federal%20Express%20%28E.D.%20Cal.%202-26-cv-02881%29%20%28Aug%2028%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/fedex-status-report.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Plaintiff's Status Report (E.D. Cal. 2-26-cv-02881) (Sep 14 2026).pdf\"; filename*=UTF-8''Plaintiff's%20Status%20Report%20%28E.D.%20Cal.%202-26-cv-02881%29%20%28Sep%2014%202026%29.pdf"
         }
       ]
     },
