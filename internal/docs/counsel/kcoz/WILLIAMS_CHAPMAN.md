@@ -112,7 +112,7 @@ Williams asking for your number before he appears is the aggressive part that is
 
 ## Matter 27 — live file (this desk)
 
-Portfolio matter **27**. Alameda Super. Ct. **26CV199902**, Hon. Karin Schwartz, Dept. 20. CMC December 17, 2026.
+Portfolio matter **27**. Alameda Super. Ct. **26CV199902**, Hon. Thomas Weathers, Dept. 20, Rene C. Davidson Courthouse (reassigned August 7, 2026 from Hon. Karin Schwartz). CMC December 17, 2026.
 
 | Date | What happened |
 |---|---|
@@ -134,7 +134,7 @@ Append below. Newest PACER pull first after the live matter. Schema twin: `cases
 | | |
 |---|---|
 | Court / no. | Alameda Super. Ct. 26CV199902 |
-| Judge | Hon. Karin Schwartz, Dept. 20 |
+| Judge | Hon. Thomas Weathers, Dept. 20, Rene C. Davidson Courthouse (reassigned Aug. 7, 2026 from Hon. Karin Schwartz) |
 | Filed | July 20, 2026 (complaint); summons accepted July 21 |
 | Side | Defense — **Randstad US, LLC** (staffing / employer of record). Not RK Logistics. |
 | Nature | PC § 290.46(j)(2)(E), Tameny, ICRAA, privacy, negligence per se, UCL |

@@ -12,7 +12,7 @@ You are asked to evaluate the **strength** of this California employment / backg
 
 ## Case caption and clocks (as of Friday, August 28, 2026, morning Pacific)
 
-- Court: Alameda Superior Court, Case No. **26CV199902**, Hon. Karin Schwartz, Dept. 20.
+- Court: Alameda Superior Court, Case No. **26CV199902**, Hon. Thomas Weathers, Dept. 20, Rene C. Davidson Courthouse (reassigned August 7, 2026 from Hon. Karin Schwartz).
 - Plaintiff: Brendan Ngehsi Newanforbi, in pro per.
 - Defendants: Randstad US, LLC (staffing / employer of record) and The RK Logistics Group, Inc. (end client / 3PL; Newark/Fremont CA).
 - Complaint e-filed July 20, 2026 (verified). Served July 30, 2026 on both via Sacramento Sheriff / CSC. POS-010s accepted August 7.

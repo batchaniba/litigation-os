@@ -6232,6 +6232,20 @@
   },
   {
     "date": "Aug. 7, 2026",
+    "event": "ASSIGNMENT \u2014 Newanforbi v. Randstad US, LLC et al. (Alameda Sup. Ct. 26CV199902) reassigned to Rene C. Davidson Courthouse, Department 20, Hon. Thomas Weathers. Supersedes the July 20, 2026 Notice of Case Assignment to Hon. Karin Schwartz, Dept. 20. CMC remains Dec. 17, 2026, 3:00 p.m., Dept. 20, now before Judge Weathers. Does not move the Sept. 14 / Sept. 15 responsive clocks.",
+    "matters": [
+      27
+    ],
+    "type": "event",
+    "upcoming": false,
+    "actor": "court",
+    "source_type": "manual",
+    "confidence": "high",
+    "verified_at": "2026-09-14",
+    "source": "/documents/matter-27/Randstad Notice of Case Assignment.pdf"
+  },
+  {
+    "date": "Aug. 7, 2026",
     "event": "AMENDED CCP \u00a7425.115 Notices of Amount of Punitive Damages Sought executed for Federal Express Corporation ($250,000.00), United Parcel Service, Inc. ($250,000.00), Randstad US, LLC ($500,000.00), and The RK Logistics Group, Inc. ($500,000.00), each expressly superseding the Aug. 4, 2026 $25,000.00 notice in full \u2014 that figure was a placeholder copied from Matter 12 and collided with the Pen. Code \u00a7290.46(j)(4)(A) $25,000 statutory floor that supplies these actions' compensatory backbone; \u00a7425.115 caps punitive damages recoverable on default and cannot be raised once default is entered. Replacement SER-001s executed the same day; not yet submitted",
     "matters": [
       25,
@@ -7291,7 +7305,7 @@
   },
   {
     "date": "Dec. 17, 2026",
-    "event": "Case Management Conference, Newanforbi v. Randstad US LLC and RK Logistics Group, Inc. (Matter 27) \u2014 Hon. Karin Schwartz, Dept. 20, 3:00 p.m.; setting stated in the CCP \u00a7425.115 punitive-damages notices served Aug. 4, 2026",
+    "event": "Case Management Conference, Newanforbi v. Randstad US LLC and RK Logistics Group, Inc. (Matter 27) \u2014 Hon. Thomas Weathers, Dept. 20, Rene C. Davidson Courthouse, 3:00 p.m.",
     "matters": [
       27
     ],
