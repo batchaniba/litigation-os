@@ -1,7 +1,7 @@
 {
   "version": 1,
   "fileCount": 1201,
-  "totalBytes": 864243567,
+  "totalBytes": 864243314,
   "files": [
     {
       "path": "/documents/_form-library/ao440-blank-template.pdf",
@@ -2260,8 +2260,8 @@
     },
     {
       "path": "/documents/matter-25/Plaintiff's Status Report (E.D. Cal. 2-26-cv-02881) (Sep 14 2026).pdf",
-      "size": 427156,
-      "sha256": "ee1e53d8cc451b708aeaa306b21285eb991d9567690eb9a81b0710941192f6b7"
+      "size": 426903,
+      "sha256": "f24a0bbf093bf6dbb3c83294c4c0adf893c74d59facddb6a1680a28e45a9a3d0"
     },
     {
       "path": "/documents/matter-25/Proof of Service - Consent to Magistrate Judge Jurisdiction - FedEx (E.D. Cal. 2-26-cv-02881) (Aug 28 2026).pdf",
@@ -2276,7 +2276,7 @@
     {
       "path": "/documents/matter-25/Proof of Service - Plaintiff's Status Report (E.D. Cal. 2-26-cv-02881) (Sep 14 2026).pdf",
       "size": 194290,
-      "sha256": "5620c0240dae4255264b86f0d7a9aa372d0a9324ba6d3978c17f04db39064426"
+      "sha256": "c9a9c3ad6a727da3efb70aec6bcf70f5ea58bc1fa32c11e95609e846295b278a"
     },
     {
       "path": "/documents/matter-25/REMINDER - FedEx Pre-Adverse Employment Action Notice 2.pdf",

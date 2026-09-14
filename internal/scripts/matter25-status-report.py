@@ -9,8 +9,8 @@ conference for Thursday, October 8, 2026, 11:00 a.m., and requires each party
 to file a status report not later than 14 days before (September 24). Because
 Plaintiff is pro se, the matter is referred under E.D. Cal. L.R. 302(c)(21).
 
-This is Plaintiff's individual report. It is not a stipulation. It does not
-sign counsel's paper. It does not move any court-set date.
+Plaintiff's individual report under Dkt. 8. It does not move any
+court-set date.
 
     python3 internal/scripts/matter25-status-report.py \\
         [--date "September 14, 2026"] [--mailed-from "Milpitas, California"]
@@ -124,9 +124,7 @@ CONTENT = [
      "Status (Pretrial Scheduling) Conference (Dkt. 8, dated September 4, "
      "2026; filed September 8, 2026). Dkt. 8 directs each party to file a "
      "separate report not later than fourteen days before the October 8, "
-     "2026 conference. This is Plaintiff's paper. It is not a joint "
-     "report. It is not a stipulation. Plaintiff does not authorize "
-     "counsel to affix his signature to any counterpart counsel prepares."),
+     "2026 conference. This is Plaintiff's report."),
 
     ("HEADER", "I.\nINTRODUCTION"),
 
