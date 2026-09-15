@@ -41,7 +41,7 @@ DEFAULT_OUT = (
 
 DOC_TITLE_FOOTER = (
     "COMPLAINT FOR DAMAGES -- NGWA NFORBI v. SWIFT TRANSPORTATION CO. OF "
-    "ARIZONA LLC (E.D. Cal. REVIEW DRAFT)"
+    "ARIZONA LLC (E.D. Cal.)"
 )
 
 COURT_LINE1 = "UNITED STATES DISTRICT COURT"
@@ -84,24 +84,9 @@ CAPTION_RIGHT = [
     ("      Code section 17200", False, False),
     ("", False, False),
     ("[Jury Trial Demanded]", False, True),
-    ("", False, False),
-    ("[REVIEW DRAFT -- FILE ON OR", True, False),
-    ("BEFORE SEPTEMBER 26, 2026]", True, False),
 ]
 
 CONTENT = [
-    (
-        "NOTICE",
-        "REVIEW DRAFT -- NOT FOR FILING UNTIL PLAINTIFF SIGNS. File in this "
-        "Court on or before September 26, 2026 if the September 26, 2023 "
-        "pre-adverse letter is accrual. The October 5, 2023 post-adverse "
-        "letter is October 5, 2026. This complaint pleads diversity and "
-        "supplemental jurisdiction. It does not plead the Fair Credit "
-        "Reporting Act as a count. No count uses a delayed-discovery date of "
-        "May 29, 2026. Serve Swift's current California Secretary of State "
-        "agent, not a terminal. Do not republish identifiers from the "
-        "decrypted packet.",
-    ),
     (
         "PARA",
         "Plaintiff BRENDAN NGWA NFORBI, appearing in propria persona, alleges "
@@ -145,13 +130,16 @@ CONTENT = [
     (
         "PARA",
         "4. Plaintiff alleges, on information and belief and as an ultimate "
-        "fact, that Swift used preliminary sex-offender-registry information "
-        "from that still-Processing NSOPW component -- including information "
-        "disclosed pursuant to Penal Code section 290.46 or a derivative "
-        "national compilation whose source was the California registry -- in "
-        "whole or in part in the October 5, 2023 decision. The vendor "
-        "adjudication log, any later NSOPW return, and the decision-maker "
-        "communications are exclusively in Defendants' possession.",
+        "fact, that the in-process NSOPW component was drawing California "
+        "Megan's Law website / California Department of Justice registry "
+        "data concerning Plaintiff, and that Swift used that preliminary "
+        "output, in whole or in part, in the October 5, 2023 decision. "
+        "NSOPW is not automatically information disclosed pursuant to Penal "
+        "Code section 290.46. The printed snapshots do not contain a "
+        "completed hit or the words 'SOURCE OF RECORD: CALIFORNIA SEX "
+        "OFFENDER REGISTRY.' The vendor adjudication log, any later NSOPW "
+        "return, and the decision-maker communications are exclusively in "
+        "Defendants' possession.",
     ),
     (
         "PARA",
@@ -181,8 +169,7 @@ CONTENT = [
         "7. Plaintiff does not name Knight-Swift Transportation Holdings, "
         "Inc., merely as parent. He does not presently name Asurint, "
         "Tenstreet, DriverIQ / Cisive, or Equifax as defendants. Robin "
-        "Kaufman and Matt Hutto are witnesses. This complaint is unverified. "
-        "No count uses a delayed-discovery date of May 29, 2026.",
+        "Kaufman and Matt Hutto are witnesses. This complaint is unverified.",
     ),
     ("HEADER", "JURISDICTION AND VENUE"),
     (
@@ -217,17 +204,15 @@ CONTENT = [
     (
         "PARA",
         "11. The amount in controversy exceeds $75,000, exclusive of interest "
-        "and costs. Plaintiff seeks, in the aggregate and without double "
-        "recovery: the remedies authorized by Penal Code section "
-        "290.46(j)(4)(A), including actual damages, any amount the trier of "
-        "fact determines not exceeding three times actual damage and not "
-        "less than $250, attorney's fees, exemplary damages, or a civil "
-        "penalty not exceeding $25,000; ICRAA actual damages or $10,000, "
-        "whichever is greater, and punitive damages if the statutory showing "
-        "is met; lost Class A Driver employment according to proof; and "
-        "emotional-distress damages according to proof. The file does not "
-        "state a wage rate. Plaintiff does not invent one. He alleges in "
-        "good faith that those aggregated claims exceed $75,000.",
+        "and costs. Plaintiff seeks, without double recovery, lost Class A "
+        "Driver employment according to proof, emotional-distress damages "
+        "according to proof, and the actual, additional, fee, and exemplary "
+        "remedies authorized by Penal Code section 290.46(j)(4)(A). He does "
+        "not rely on the statute's optional civil-penalty slice, and he does "
+        "not rely on ICRAA's $10,000 statutory floor, to manufacture the "
+        "jurisdictional amount. The file does not state a wage rate. "
+        "Plaintiff does not invent one. He alleges in good faith that those "
+        "aggregated claims exceed $75,000.",
     ),
     (
         "PARA",
@@ -334,8 +319,7 @@ CONTENT = [
         "have known of the violation. The 2023 letters described consumer "
         "reports and named agencies. They did not advise that an "
         "investigative consumer report had been obtained. The face of this "
-        "complaint does not establish the discovery date as a complete bar. "
-        "No count uses May 29, 2026.",
+        "complaint does not establish the discovery date as a complete bar.",
     ),
     (
         "PARA",
@@ -477,42 +461,25 @@ CONTENT = [
     ),
     (
         "PARA",
-        "42. Plaintiff alleges, on information and belief, that between the "
-        "September 26 snapshots and the October 5 decision, Swift or a vendor "
-        "acting for Swift obtained, displayed, scored, or was informed of "
-        "preliminary information from that in-process NSOPW component citing "
-        "a sex-offender registry -- including information disclosed pursuant "
-        "to Penal Code section 290.46 -- and used that preliminary "
-        "information in whole or in part in the denial.",
+        "42. Plaintiff alleges, on information and belief and as an ultimate "
+        "fact, that between the September 26 snapshots and the October 5 "
+        "decision, the in-process NSOPW component was drawing California "
+        "Megan's Law website / California Department of Justice registry "
+        "data concerning Plaintiff, and that Swift used that preliminary "
+        "output, in whole or in part, in the October 5, 2023 denial.",
     ),
     (
         "PARA",
-        "43. Plaintiff possesses a First Advantage employment background "
-        "report concerning himself generated for United Parcel Service. In "
-        "that report, ordinary criminal-search components returned "
-        "non-adverse results, while the sex-offender-registry component was "
-        "the adverse or decisional component and expressly identified the "
-        "source of record as the California Sex Offender Registry.",
+        "43. On information and belief, the same consumer, screened in the "
+        "same period for employment, returned California-registry source "
+        "fields. Plaintiff does not allege that any other employer's report "
+        "is Swift's report, does not allege that Asurint, Tenstreet, or "
+        "DriverIQ is First Advantage, and does not attach or describe those "
+        "reports as if they were Swift's report.",
     ),
     (
         "PARA",
-        "44. In a separate First Advantage employment screening for Federal "
-        "Express Corporation, FedEx later admitted in its responsive pleading "
-        "that the report identified Plaintiff as a California registrant.",
-    ),
-    (
-        "PARA",
-        "45. Plaintiff does not allege that UPS's or FedEx's report is "
-        "Swift's report, and he does not allege that Asurint, Tenstreet, or "
-        "DriverIQ is First Advantage. He alleges those comparator records "
-        "because they concern the same consumer, the same underlying "
-        "California registry entry, and the same type of employment "
-        "background screening contemporaneous with Swift's decision. They "
-        "are not attached to this complaint.",
-    ),
-    (
-        "PARA",
-        "46. Searching a public website is not a free pass. Subdivision "
+        "44. Searching a public website is not a free pass. Subdivision "
         "(j)(3)'s reference to publicly available information does not "
         "authorize employment use of Megan's Law disclosures. Information "
         "disclosed pursuant to Penal Code section 290.46 does not lose that "
@@ -521,7 +488,7 @@ CONTENT = [
     ),
     (
         "PARA",
-        "47. Alternative explanations -- a failed Clearinghouse result, a "
+        "45. Alternative explanations -- a failed Clearinghouse result, a "
         "driving-record or crash disqualification, a lawful criminal-history "
         "adjudication under a statute that actually authorizes the use, a CDL "
         "defect, or a withdrawal of the application -- can be tested against "
@@ -529,14 +496,14 @@ CONTENT = [
     ),
     (
         "PARA",
-        "48. If production later shows a completed NSOPW returning no record "
+        "46. If production later shows a completed NSOPW returning no record "
         "and no preliminary registry use, Count One will stand or fall on "
         "that file after production. Counts Two and Three do not depend on "
         "proving a completed registry hit.",
     ),
     (
         "PARA",
-        "49. The use was not to protect a person at risk within the meaning "
+        "47. The use was not to protect a person at risk within the meaning "
         "of section 290.46(j)(1). A general commercial-driver assignment is "
         "not, without more, that narrow authorization. FMCSA authorization "
         "to query the Clearinghouse or PSP is not authorization to use "
@@ -545,20 +512,20 @@ CONTENT = [
     ("SUBHEAD", "E. Harm"),
     (
         "PARA",
-        "50. As a result of the decision, Plaintiff lost the Class A Driver "
+        "48. As a result of the decision, Plaintiff lost the Class A Driver "
         "opportunity, including the wages and benefits of that position, "
         "according to proof and subject to mitigation. The file does not "
         "state a wage rate. Plaintiff does not invent one.",
     ),
     (
         "PARA",
-        "51. He also suffered emotional distress, humiliation, and anxiety "
+        "49. He also suffered emotional distress, humiliation, and anxiety "
         "from an unexplained denial he is informed and believes rested on a "
         "status the Legislature has forbidden employers to use.",
     ),
     (
         "PARA",
-        "52. Plaintiff has sought replacement employment and does not claim "
+        "50. Plaintiff has sought replacement employment and does not claim "
         "a guaranteed lifetime expectancy from an unaccepted driver "
         "application. Economic damages will be limited to losses proven with "
         "reasonable certainty and without double recovery against other "
@@ -573,45 +540,45 @@ CONTENT = [
     ),
     (
         "PARA",
-        "53. Plaintiff realleges paragraphs 1 through 52. This count is a "
+        "51. Plaintiff realleges paragraphs 1 through 50. This count is a "
         "liability created by statute. It is timely under Code of Civil "
         "Procedure section 338(a) from the September 26 / October 5, 2023 "
         "employment use. This count does not plead a delayed-discovery date.",
     ),
     (
         "PARA",
-        "54. Penal Code section 290.46(j)(2)(E) prohibits use of information "
+        "52. Penal Code section 290.46(j)(2)(E) prohibits use of information "
         "disclosed pursuant to section 290.46 for purposes relating to "
         "employment except as authorized by paragraph (1) or another "
         "provision of law.",
     ),
     (
         "PARA",
-        "55. Plaintiff alleges, on information and belief and as an ultimate "
-        "fact, that Swift used preliminary information from the still-"
-        "Processing NSOPW component citing a sex-offender registry -- "
-        "including information disclosed pursuant to section 290.46 "
-        "concerning Plaintiff -- in whole or in part in the Class A Driver "
-        "decision. The user is the employer that takes the information into "
-        "account, not a vendor that merely retrieves it.",
+        "53. Plaintiff alleges, on information and belief and as an ultimate "
+        "fact, that the in-process NSOPW component was drawing California "
+        "Megan's Law website / California Department of Justice registry "
+        "data concerning Plaintiff, and that Swift used that preliminary "
+        "output, in whole or in part, in the Class A Driver decision. The "
+        "user is the employer that takes the information into account, not a "
+        "vendor that merely retrieves it.",
     ),
     (
         "PARA",
-        "56. Plaintiff does not allege that the printed snapshots contain a "
+        "54. Plaintiff does not allege that the printed snapshots contain a "
         "completed NSOPW hit or the words 'SOURCE OF RECORD: CALIFORNIA SEX "
         "OFFENDER REGISTRY.' The use alleged is the use of preliminary "
         "registry information from that in-process component.",
     ),
     (
         "PARA",
-        "57. The use related directly to employment. It was not authorized "
+        "55. The use related directly to employment. It was not authorized "
         "by section 290.46(j)(1) or by any other provision of law applicable "
         "to that application. It was a substantial factor in the decision "
         "and caused the loss alleged.",
     ),
     (
         "PARA",
-        "58. Plaintiff seeks the remedies authorized by section "
+        "56. Plaintiff seeks the remedies authorized by section "
         "290.46(j)(4)(A), including actual damages, any amount the trier of "
         "fact determines not exceeding three times actual damage and not "
         "less than $250, attorney's fees, exemplary damages, or a civil "
@@ -626,10 +593,10 @@ CONTENT = [
         "Cal. Civ. Code sections 1786.40 and 1786.50\n"
         "Against Swift Transportation Co. of Arizona LLC",
     ),
-    ("PARA", "59. Plaintiff realleges paragraphs 1 through 52."),
+    ("PARA", "57. Plaintiff realleges paragraphs 1 through 50."),
     (
         "PARA",
-        "60. On information and belief, one or more of the agencies Swift "
+        "58. On information and belief, one or more of the agencies Swift "
         "named assembled or evaluated information concerning Plaintiff's "
         "character, general reputation, personal characteristics, or mode of "
         "living for employment purposes, and Swift was the user of that "
@@ -637,7 +604,7 @@ CONTENT = [
     ),
     (
         "PARA",
-        "61. Civil Code section 1786.40(a) required Swift, when employment "
+        "59. Civil Code section 1786.40(a) required Swift, when employment "
         "was denied under circumstances in which an investigative consumer "
         "report had been obtained, to advise Plaintiff of that fact and "
         "supply the investigative consumer reporting agency's name and "
@@ -647,22 +614,21 @@ CONTENT = [
     ),
     (
         "PARA",
-        "62. This section 1786.40 omission is pleaded as a separate act from "
+        "60. This section 1786.40 omission is pleaded as a separate act from "
         "Count One. Plaintiff does not allege that section 1786.40 required "
         "Swift to identify the decisive component or to complete the NSOPW "
-        "search. This count does not plead a delayed-discovery date of May "
-        "29, 2026.",
+        "search. This count does not plead a delayed-discovery date.",
     ),
     (
         "PARA",
-        "63. This count does not depend on proving Penal Code section "
+        "61. This count does not depend on proving Penal Code section "
         "290.46(j). If Defendants establish that the reports were ordinary "
         "consumer reports and not investigative, this count does not apply. "
         "Plaintiff does not presently plead a CCRAA count.",
     ),
     (
         "PARA",
-        "64. Under Civil Code section 1786.50, Plaintiff seeks actual "
+        "62. Under Civil Code section 1786.50, Plaintiff seeks actual "
         "damages or $10,000, whichever is greater, together with costs and "
         "any attorney's fees recoverable if counsel later appears, and "
         "punitive damages if the violation is proven grossly negligent or "
@@ -675,10 +641,10 @@ CONTENT = [
         "Cal. Bus. & Prof. Code section 17200\n"
         "Against Swift Transportation Co. of Arizona LLC",
     ),
-    ("PARA", "65. Plaintiff realleges paragraphs 1 through 64."),
+    ("PARA", "63. Plaintiff realleges paragraphs 1 through 62."),
     (
         "PARA",
-        "66. Swift engaged in unlawful practices by violating, to the extent "
+        "64. Swift engaged in unlawful practices by violating, to the extent "
         "proven, Penal Code section 290.46(j)(2)(E) and Civil Code section "
         "1786.40. It engaged in unfair practices because the gravity of "
         "denying employment on a criterion the Legislature has forbidden, or "
@@ -688,7 +654,7 @@ CONTENT = [
     ),
     (
         "PARA",
-        "67. Plaintiff suffered injury in fact and lost money or property "
+        "65. Plaintiff suffered injury in fact and lost money or property "
         "through the lost Swift employment opportunity, reliance "
         "expenditures, and employment-search costs to be proven. He seeks "
         "restitution only of vested money or property Swift acquired, not "
@@ -696,7 +662,7 @@ CONTENT = [
     ),
     (
         "PARA",
-        "68. On information and belief, Swift continues to use the same or "
+        "66. On information and belief, Swift continues to use the same or "
         "similar standardized screening procedures for California driver "
         "applicants. Plaintiff seeks injunctive relief requiring Swift to "
         "cease prohibited employment use of California registry information "
@@ -767,15 +733,15 @@ def dump_markdown(path: Path) -> None:
     lines = [
         "# Matter 38 — E.D. Cal. filing complaint review draft",
         "",
-        "Generated from `internal/scripts/matter38-edca-complaint.py`. "
-        "REVIEW DRAFT. File on or before **September 26, 2026** if the "
-        "pre-adverse letter is accrual.",
+        "<!-- Internal generator header. Not part of the pleading. Do not print on page one. -->",
         "",
-        "Forum: United States District Court, Eastern District of "
-        "California — Sacramento Division (L.R. 120(d)). Subject-matter "
-        "jurisdiction is 28 U.S.C. §§ 1332 and 1367. FCRA is **not** "
-        "pleaded as a count. May 29, 2026 is **not** pleaded. LLC members "
-        "and a wage rate are **not** invented.",
+        "Generated from `internal/scripts/matter38-edca-complaint.py`. "
+        "File on or before **September 26, 2026** if the pre-adverse letter "
+        "is accrual. FCRA is not a count. Do not invent LLC members or a "
+        "wage rate. Count One is I&B that the in-process NSOPW component was "
+        "drawing California Megan's Law / DOJ registry data and that Swift "
+        "used that preliminary output on October 5. If Count One fails, "
+        "ICRAA's $10,000 does not independently establish $75,000 AIC.",
         "",
         "---",
         "",

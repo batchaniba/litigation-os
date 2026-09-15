@@ -28,8 +28,11 @@ Forum: **U.S. District Court, Eastern District of California — Sacramento Divi
 ## Do not
 
 - Plead FCRA as a count
+- Caption: no “[REVIEW DRAFT — NOT FOR FILING]” on page one of a file-ready PDF
 - Plead May 29, 2026
+- Name Lerma, Donaleski, Pilot, Sheppard, Toscano, or Lazar in the complaint
 - Invent LLC members or a wage rate
+- Use ICRAA’s $10,000 or the optional $25,000 civil penalty to manufacture AIC
 - Attach UPS’s or FedEx’s First Advantage report as Swift’s report
 - Publish or attach the decrypted pre-adverse packet
 - Name Asurint / Tenstreet / DriverIQ / Equifax as defendants without an independent CRA theory

@@ -28,15 +28,21 @@ Diversity is pleaded without invented members:
 - Swift is a Delaware LLC (CA SOS entity **201014710033**; Knight-Swift SEC Exhibit 21.1 lists the Arizona LLC as a Delaware subsidiary — that is **not** a complete membership roll and is **not** a reason to name the parent).
 - Swift’s own letter uses a Phoenix address. That is a fact about the letter, not a *Hertz* principal-place-of-business shortcut for LLC citizenship.
 - On information and belief, no member is a California citizen. If Swift contests, they disclose members under Rule 7.1.
-- Amount in controversy is pleaded in good faith from the **aggregate** of Penal Code § 290.46(j)(4)(A) remedies, ICRAA $10,000 (or actual, whichever greater), lost Class A employment **according to proof**, and emotional distress. **Do not invent a wage rate.** Portfolio settlement valuation remains $45,000 / $65,000 / $90,000; that range is not the pleaded AIC.
+- Amount in controversy is pleaded in good faith from **lost Class A employment according to proof**, emotional distress, and Penal Code § 290.46(j)(4)(A) actual/additional/fee/exemplary remedies. **Do not invent a wage rate.** Do **not** use ICRAA’s $10,000 floor or the optional $25,000 civil penalty to manufacture AIC. Portfolio settlement valuation remains $45,000 / $65,000 / $90,000. If Count One fails, be ready for a 12(b)(1) on amount in controversy.
 
 ## Counts (three)
 
 | # | Claim | Why it stays |
 |---|--------|----------------|
-| 1 | PC § 290.46(j)(2)(E) / (j)(4)(A) | Load-bearing. I&B that Swift used **preliminary** registry information from still-Processing NSOPW. UPS/FedEx are same-consumer comparators, not Swift’s report. CCP § 338(a) from Sept. 26 / Oct. 5, 2023 use. |
+| 1 | PC § 290.46(j)(2)(E) / (j)(4)(A) | Load-bearing **if** I&B holds. Ultimate fact: the in-process NSOPW component was drawing California Megan’s Law / DOJ registry data, and Swift used that preliminary output on October 5. Printed snapshots show Processing, no completed hit, no California source-of-record line. NSOPW is not automatically § 290.46 information. If the log shows a completed no-record and no preliminary use, drop this count and keep ICRAA / UCL. CCP § 338(a) from Sept. 26 / Oct. 5, 2023. File by **September 26, 2026**. |
 | 2 | ICRAA §§ 1786.40 / 1786.50 | Oct. 5 letter names agencies and says consumer reports influenced the decision; it does not give the investigative-report advice. Independent of a completed hit. § 1786.52 is a fact question; **do not plead May 29**. |
 | 3 | UCL § 17200 | Four-year § 17208 clock (to ~Sept. 26, 2027). Kept because there is no FCRA / contract path. Restitution of vested money only; not unearned future wages. |
+
+## Signing gate (applied)
+
+- Count 1 stays, pleaded as I&B that the in-process NSOPW was drawing California Megan's Law / DOJ registry data and that Swift used that preliminary output on October 5. Snapshots still admitted: Processing, no completed hit, no California source line. NSOPW is not automatically § 290.46. If the log is a completed no-record, drop Count 1 and keep ICRAA / UCL.
+- No May 29. No *Lerma* in the complaint. Comparators are one I&B sentence. Caption has no `[REVIEW DRAFT]` banner.
+- AIC is lost Class A according to proof plus Count 1 actual/additional/fee/exemplary. Do not invent a wage. Do not use ICRAA $10,000 or the optional $25,000 civil penalty to manufacture $75,000.
 
 ## What was dropped from the September 8 packet
 
@@ -70,9 +76,9 @@ Do not attach UPS or FedEx First Advantage reports as Swift’s report. Do not p
 ## Do not
 
 - Plead FCRA as a count to manufacture § 1331
-- Plead May 29
+- Caption: no “[REVIEW DRAFT — NOT FOR FILING]” on page one of a file-ready PDF
 - Invent LLC members or a *Hertz* PPB shortcut for LLC citizenship
-- Invent a wage rate
+- Invent a wage rate to manufacture AIC. If Count One fails, ICRAA $10,000 does not get to $75,000
 - Name Pilot, Lerma, Sheppard, Toscano, or Lazar in the complaint
 - Treat Clearinghouse / PSP / CDLIS as Megan’s Law
 - Force § 290.46 if the adjudication log later shows a completed NSOPW no-record and no preliminary use — then keep ICRAA / UCL
