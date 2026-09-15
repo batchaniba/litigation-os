@@ -40,7 +40,7 @@ Plaintiff BRENDAN NGWA NFORBI (“Plaintiff”), appearing in propria persona, a
 
 2. The First Advantage relationship is not pleaded from guesswork alone. Public federal-court records contain a Home Depot-branded “BACKGROUND CHECK DISCLOSURE AND AUTHORIZATION” identifying First Advantage as the consumer reporting agency Home Depot would use to procure California investigative consumer reports. Other federal litigation describes First Advantage furnishing a consumer report to Home Depot for a prospective employee, and First Advantage itself later publicly featured a Home Depot representative in a program devoted to workforce screening practices. The precise order, package, transmission, and adjudication records for Plaintiff’s screening are in Home Depot’s and First Advantage’s possession.
 
-3. On information and belief, First Advantage prepared and furnished Plaintiff’s employment background report to Home Depot in connection with the Tracy hire, and Home Depot received and used that report. After the background check, Home Depot ceased the onboarding process and ended, withdrew, or prevented Plaintiff from beginning or continuing the accepted Tracy employment on or about **[DECISION DATE OR NARROWEST SUPPORTED DATE WINDOW]**.
+3. On information and belief, First Advantage prepared and furnished Plaintiff’s employment background report to Home Depot in connection with the Tracy hire, and Home Depot received and used that report. After the background check, Home Depot ceased the onboarding process and ended, withdrew, or prevented Plaintiff from beginning or continuing the accepted Tracy employment on or about on or about August 2024.
 
 4. Before taking that adverse employment action, Home Depot did not provide Plaintiff a copy of the First Advantage report and did not provide the written Summary of Rights required by the Fair Credit Reporting Act (“FCRA”), 15 U.S.C. § 1681b(b)(3)(A). Home Depot thereby deprived Plaintiff of the statutory pre-decision opportunity to review the report, dispute its contents with the consumer reporting agency, and respond before the employment decision became final.
 
@@ -82,7 +82,7 @@ Plaintiff BRENDAN NGWA NFORBI (“Plaintiff”), appearing in propria persona, a
 
 ## A. The Tracy Hire and Onboarding
 
-20. On or about **[HIRE / OFFER DATE OR SUPPORTED WINDOW]**, Home Depot hired Plaintiff for work at its Tracy distribution / fulfillment operation at 5395 Hopkins Road.
+20. On or about August 2024, Home Depot hired Plaintiff for work at its Tracy distribution / fulfillment operation at 5395 Hopkins Road.
 
 21. Plaintiff accepted the employment and began onboarding. The position was not a Department of Transportation-regulated position within the limited exception described in 15 U.S.C. § 1681b(b)(3)(B)-(C). **[VERIFY BEFORE FILING.]**
 
@@ -90,7 +90,7 @@ Plaintiff BRENDAN NGWA NFORBI (“Plaintiff”), appearing in propria persona, a
 
 ## B. The First Advantage Report and Information Within Defendants’ Control
 
-23. On information and belief, First Advantage prepared an employment consumer report concerning Plaintiff at Home Depot’s request in or about **[MONTH / YEAR OR NARROWER SUPPORTED WINDOW]** and furnished or made that report available to Home Depot through First Advantage’s employer-screening platform.
+23. On information and belief, First Advantage prepared an employment consumer report concerning Plaintiff at Home Depot’s request in or about August 2024 and furnished or made that report available to Home Depot through First Advantage’s employer-screening platform.
 
 24. Plaintiff does not presently possess Home Depot’s copy of that report or its complete First Advantage order file. Home Depot and First Advantage possess the precise order date, completion date, client/requestor profile, package identifier, component results, source fields, adjudication status, client criteria, access history, and transmission history.
 
@@ -106,7 +106,7 @@ Plaintiff BRENDAN NGWA NFORBI (“Plaintiff”), appearing in propria persona, a
 
 29. After the report was completed and transmitted, Home Depot ceased the onboarding process and stopped Plaintiff from beginning or continuing work at the Tracy facility.
 
-30. The adverse action occurred on or about **[DATE / NARROWEST SUPPORTED WINDOW]**, after the First Advantage report had been completed and made available to Home Depot.
+30. The adverse action occurred on or about August 2024, after the First Advantage report had been completed and made available to Home Depot.
 
 31. Home Depot did not identify to Plaintiff any independent post-report event that caused the accepted employment to end. Plaintiff alleges that Home Depot used the report, in whole or in part, in making the decision.
 
