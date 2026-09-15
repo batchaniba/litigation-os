@@ -32,7 +32,6 @@ from pleading_paper import (  # noqa: E402
     COURT_LINE1,
     PleadingPaper,
 )
-from pos050 import ProofOfElectronicService, fill_pos050  # noqa: E402
 from short_link import publish_short_link  # noqa: E402
 from signature_stamp import SIGNATURE_NATIVE_PX, SIGNATURE_PATH  # noqa: E402
 import pymupdf  # noqa: E402
@@ -47,7 +46,8 @@ EXEC_PLACE = "Milpitas, California"
 POS_DATE = "09/15/2026"
 CMC_DATE = "October 28, 2026"
 CMC_TIME = "4:00 p.m."
-PRODUCTION_DATE = "October 20, 2026"
+RESPONSE_DATE = "October 19, 2026"
+PRODUCTION_DATE = "October 19, 2026"
 
 COURT_LINE2 = "COUNTY OF ALAMEDA"
 DOC_TITLE_FOOTER = (
@@ -61,7 +61,7 @@ RFP_PATH = MATTER20 / (
     "Request for Production of Documents Set One - CHP (Sep 15 2026).pdf"
 )
 POS_PATH = MATTER20 / (
-    "Proof of Service - RFP Set One CHP (Sep 15 2026).pdf"
+    "Proof of Electronic Service - RFP Set One CHP (Sep 15 2026).pdf"
 )
 EMAIL_PATH = MATTER20 / "EMAIL_DRAFT_Ing_RFP_Set_One_CHP.txt"
 PACKET_PATH = MATTER20 / (
@@ -76,7 +76,7 @@ Subject: Newanforbi v. California Highway Patrol et al., No. 26CV191136 — Peti
 
 Attach:
 - Request for Production of Documents Set One - CHP (Sep 15 2026).pdf
-- Proof of Service - RFP Set One CHP (Sep 15 2026).pdf
+- Proof of Electronic Service - RFP Set One CHP (Sep 15 2026).pdf
 
 ---
 
@@ -84,7 +84,7 @@ Ms. Ing:
 
 Please find enclosed Petitioner's Request for Production of Documents, Set One, directed to Respondent California Highway Patrol, together with proof of electronic service.
 
-The Demand is limited to surviving Count 1. It seeks the WAR913372 warrant packet, the November 1, 2024 blood-draw chain of custody and toxicology, and the file of the April 9, 2026 U-visa certification request and April 20, 2026 denial. Electronic production to bnn.cdl@gmail.com is requested. Written responses and production are due as stated in the Demand. If this Demand is served today, Petitioner identifies {PRODUCTION_DATE} as the inspection date.
+The Demand is limited to surviving Count 1. It seeks the WAR913372 warrant packet, the November 1, 2024 blood-draw chain of custody and toxicology, and the file of the April 9, 2026 U-visa certification request and April 20, 2026 denial. Electronic production to bnn.cdl@gmail.com is requested. Written responses and production are due as stated in the Demand. If this Demand is served today, written responses and production are due {RESPONSE_DATE}.
 
 This is a discovery demand. It is not being filed with the Court.
 
@@ -334,12 +334,14 @@ def build_rfp(path: Path) -> Path:
     )
     _para(
         d,
-        "9.  \"POSSESSION, CUSTODY, OR CONTROL\" includes DOCUMENTS YOU have "
-        "the legal right or practical ability to obtain, including records "
-        "YOU submitted to the California Department of Justice, Bureau of "
-        "Forensic Services, or another laboratory, and records YOU can "
-        "obtain from the Alameda County Superior Court warrant file for "
-        "WAR913372.",
+        "9.  \"POSSESSION, CUSTODY, OR CONTROL\" means DOCUMENTS in YOUR "
+        "actual possession or custody, or that YOU have a legal right to "
+        "obtain on demand. It does not include a record merely because YOU "
+        "might be able to request a copy from an independent custodian. If "
+        "the Alameda County Superior Court, the Department of Justice, Bureau "
+        "of Forensic Services, or another independent custodian exclusively "
+        "holds a responsive DOCUMENT, state that fact and IDENTIFY the "
+        "custodian.",
         first_indent=0,
     )
     _para(
@@ -356,12 +358,11 @@ def build_rfp(path: Path) -> Path:
     _para(
         d,
         "A.  Time of production.  Serve a written response and produce the "
-        "DOCUMENTS on or before the date that is thirty (30) days after "
-        "service of this Demand, plus any additional time provided by Code "
-        f"of Civil Procedure section 1010.6. If this Demand is served on "
-        f"{EXEC_DATE}, Petitioner identifies {PRODUCTION_DATE} as a "
-        "reasonable date for inspection and production. If service occurs "
-        "later, the statutory date controls.",
+        "DOCUMENTS within the time required by Code of Civil Procedure "
+        "sections 2031.260 and 1010.6. If this Demand is electronically "
+        f"served on {EXEC_DATE}, written responses and production are due "
+        f"{RESPONSE_DATE}. If service occurs later, the statutory deadline "
+        "controls.",
         first_indent=0,
     )
     _para(
@@ -391,13 +392,13 @@ def build_rfp(path: Path) -> Path:
     )
     _para(
         d,
-        "D.  Privilege.  If YOU withhold any DOCUMENT, provide a privilege "
-        "log identifying the DOCUMENT, the privilege claimed (including "
-        "Evidence Code section 1040, if asserted), the date, author, "
-        "recipients, and a description sufficient to test the claim. Produce "
-        "all non-privileged portions. Official-information privilege is not "
-        "an automatic bar to law-enforcement records; it must be invoked "
-        "with the showing section 1040 requires.",
+        "D.  Privilege.  If YOU withhold any DOCUMENT based on privilege or "
+        "work product, comply with Code of Civil Procedure section 2031.240 "
+        "and provide sufficient factual information to evaluate the claim, "
+        "including a privilege log if necessary. Produce all reasonably "
+        "segregable non-privileged portions. If Evidence Code section 1040 "
+        "is asserted, state the basis for the claim with sufficient "
+        "specificity to permit evaluation.",
         first_indent=0,
     )
     _para(
@@ -419,21 +420,23 @@ def build_rfp(path: Path) -> Path:
     )
     _para(
         d,
-        "G.  Scope of custody.  These requests reach DOCUMENTS in YOUR "
-        "POSSESSION, CUSTODY, OR CONTROL. They do not seek peace-officer "
-        "personnel files, Pitchess material, training histories, or "
-        "DOCUMENTS concerning unrelated stops. They do not notice any "
-        "deposition.",
+        "G.  Scope and Pitchess carveout.  These requests reach DOCUMENTS in "
+        "YOUR POSSESSION, CUSTODY, OR CONTROL. They do not seek peace-officer "
+        "personnel records, citizen-complaint investigation files, or other "
+        "records subject to Evidence Code sections 1043 through 1045; "
+        "training histories; or DOCUMENTS concerning unrelated stops. To the "
+        "extent a responsive record is withheld as Pitchess material, state "
+        "that basis without disclosing protected contents. This Set One does "
+        "not notice any deposition.",
         first_indent=0,
     )
     _para(
         d,
-        "H.  Protective order.  Do not withhold non-privileged DOCUMENTS "
-        "pending a protective order. If YOU contend a DOCUMENT requires "
-        "confidentiality protection, meet and confer in writing. Petitioner "
-        "will negotiate use in this proceeding and in the related federal "
-        "actions arising from the INCIDENT, and will not agree to a return-"
-        "or-destroy clause that bars that use.",
+        "H.  Protective order.  If YOU contend a responsive, non-privileged "
+        "DOCUMENT requires confidentiality protection, identify the claimed "
+        "basis and meet and confer promptly regarding an appropriate "
+        "protective order. Nothing in this instruction requires disclosure "
+        "of privileged or statutorily protected material.",
         first_indent=0,
     )
 
@@ -504,36 +507,34 @@ def build_rfp(path: Path) -> Path:
     _request(
         d,
         7,
-        "COMMUNICATIONS, from November 1, 2024 through the date of YOUR "
-        "response to this Demand, concerning: (a) the WARRANT; (b) the "
-        "blood draw from PETITIONER and the laboratory testing of that "
-        "blood; (c) whether to seek, file, refer, or decline criminal "
-        "charges arising from the INCIDENT; or (d) the CERTIFICATION "
-        "REQUEST or the DENIAL. This request includes COMMUNICATIONS with "
-        "the Alameda County District Attorney's Office, the Department of "
-        "Justice, Bureau of Forensic Services or any other laboratory, "
-        "Officer Meza-Gonzalez, Officer Melano, Captain Serrato, and any "
-        "other CHP personnel. It does not seek COMMUNICATIONS about "
-        "unrelated investigations.",
+        "Non-privileged operational COMMUNICATIONS from November 1, 2024 "
+        "through April 20, 2026 concerning: (a) the WARRANT; (b) the blood "
+        "draw from PETITIONER and laboratory testing of that blood; (c) the "
+        "transmittal, receipt, routing, or review of any laboratory result; "
+        "(d) whether to refer criminal charges arising from the INCIDENT; "
+        "or (e) the CERTIFICATION REQUEST or DENIAL. This request includes "
+        "responsive communications with the Alameda County District "
+        "Attorney's Office, the Department of Justice or laboratory, and CHP "
+        "personnel. It excludes attorney-client communications, attorney work "
+        "product, communications created solely for this litigation, and "
+        "communications about unrelated investigations.",
     )
     _request(
         d,
         8,
-        "The complete file of DOCUMENTS that Captain G. Serrato or YOU "
-        "considered, reviewed, possessed, or had available when evaluating "
-        "the CERTIFICATION REQUEST and issuing the DENIAL, including: "
-        "(a) the April 9, 2026 request and all attachments; (b) the "
+        "The non-Pitchess certification-decision file that Captain G. "
+        "Serrato or YOU considered, reviewed, or actually had available when "
+        "evaluating the CERTIFICATION REQUEST and issuing the DENIAL, "
+        "including: (a) the April 9, 2026 request and attachments; (b) the "
         "April 10, 2026 communication from Lieutenant Gary Paul; (c) the "
-        "April 20, 2026 DENIAL and every draft; (d) the complete citizen-"
-        "complaint and internal file used in that evaluation (including "
-        "CHP Complaint Assignment, File No. 202400898 or POST Case No. "
-        "PUBLIC-26-000371, to the extent reviewed or available); (e) the "
-        "CHP Form 202, DS-367, Detention Certificate (Dublin CHP-01991, "
-        "November 5, 2024), and dashcam or transcript, to the extent "
-        "reviewed or available and not already produced in complete form; "
-        "and (f) any note, routing slip, checklist, or legal guidance "
-        "(including Attorney General Information Bulletin DLE-2024-05) "
-        "used in the evaluation.",
+        "April 20, 2026 DENIAL and drafts; (d) CHP Form 202, DS-367, the "
+        "November 5, 2024 Detention Certificate, and dashcam or transcript, "
+        "to the extent reviewed or actually available and not already "
+        "produced in complete form; and (e) any non-privileged note, routing "
+        "slip, checklist, or legal guidance used in the certification "
+        "evaluation. This request expressly excludes peace-officer personnel "
+        "records, citizen-complaint investigation files, and other records "
+        "subject to Evidence Code sections 1043 through 1045.",
     )
 
     _heading(d, "IV.  RESERVATION")
@@ -553,44 +554,55 @@ def build_rfp(path: Path) -> Path:
     return path
 
 
-def rfp_pos_fields() -> ProofOfElectronicService:
-    return ProofOfElectronicService(
-        name="Brendan Ngehsi Newanforbi",
-        street="1455 Cat Tail Drive",
-        city="Stockton",
-        state="CA",
-        zip_code="95204",
-        phone="(209) 801-4442",
-        email="bnn.cdl@gmail.com",
-        attorney_for="Petitioner in pro per",
-        county="ALAMEDA",
-        court_street="1225 Fallon Street",
-        court_mailing="1225 Fallon Street",
-        court_city_zip="Oakland, CA 94612",
-        court_branch="Rene C. Davidson Alameda County Courthouse",
-        petitioner="Brendan Ngehsi Newanforbi",
-        respondent="California Highway Patrol, et al.",
-        case_number="26CV191136",
-        judicial_officer="Hon. Jenna M. Whitman",
-        department="25",
-        residence_address="1455 Cat Tail Drive, Stockton, CA 95204",
-        server_e_address="bnn.cdl@gmail.com",
-        document_titles=[
-            "PETITIONER'S REQUEST FOR PRODUCTION OF DOCUMENTS, SET ONE, "
-            "TO RESPONDENT CALIFORNIA HIGHWAY PATROL",
-        ],
-        person_served="Vanessa K. Ing",
-        on_behalf_of="Respondent California Highway Patrol",
-        person_e_address="Vanessa.Ing@doj.ca.gov",
-        service_date=POS_DATE,
-        signature_date=POS_DATE,
-        printed_name="Brendan Ngehsi Newanforbi",
-        stamp_signature=True,
-    )
-
-
 def build_pos(path: Path) -> Path:
-    return fill_pos050(path, rfp_pos_fields())
+    """Build a party-signed proof of electronic service under CCP § 1013b.
+
+    POS-050 is not used because its printed declaration states the server is
+    not a party to the action. Petitioner is a party and may electronically
+    serve discovery, so this proof states the true facts without that
+    inapplicable preprinted representation.
+    """
+    path.parent.mkdir(parents=True, exist_ok=True)
+    d = PleadingPaper(str(path), doc_title_footer=(
+        "PROOF OF ELECTRONIC SERVICE — RFP SET ONE (CHP) — "
+        "NEWANFORBI v. CHP, ET AL., 26CV191136"
+    ))
+    _header(d)
+    _caption(d)
+    d.write_line("PROOF OF ELECTRONIC SERVICE", bold=True, center=True)
+    d.blank_line()
+    _para(
+        d,
+        "I, Brendan Ngehsi Newanforbi, am over the age of 18 and am the "
+        "Petitioner in this action. My electronic service address is "
+        "bnn.cdl@gmail.com.",
+    )
+    _para(
+        d,
+        f"On {EXEC_DATE}, I electronically served PETITIONER'S REQUEST FOR "
+        "PRODUCTION OF DOCUMENTS, SET ONE, TO RESPONDENT CALIFORNIA HIGHWAY "
+        "PATROL by transmitting a true copy by electronic mail to Vanessa K. "
+        "Ing, counsel for Respondent California Highway Patrol, at "
+        "Vanessa.Ing@doj.ca.gov, with a courtesy copy to "
+        "Mark.Beckington@doj.ca.gov.",
+    )
+    _para(
+        d,
+        "The electronic transmission was made from bnn.cdl@gmail.com. I did "
+        "not receive, within a reasonable time after transmission, any "
+        "electronic message or other indication that the transmission was "
+        "unsuccessful.",
+    )
+    _para(
+        d,
+        f"I declare under penalty of perjury under the laws of the State of "
+        f"California that the foregoing is true and correct. Executed on "
+        f"{EXEC_DATE}, at {EXEC_PLACE}.",
+    )
+    d.write_respectfully_submitted()
+    _sign(d, f"Dated: {EXEC_DATE}")
+    d.save()
+    return path
 
 
 def build_email(path: Path) -> Path:
