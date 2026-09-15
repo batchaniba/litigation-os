@@ -916,7 +916,7 @@ const matter_damages_raw = [
     number: 38,
     claims: "ICRAA / UCL / § 290.46(j) I&B — Swift Class A Driver / Oct. 5, 2023 denial",
     risk: "Significant. Written post-adverse admits consumer-report use, so ICRAA is the load-bearing path. The 290 count is I&B that Swift used preliminary NSOPW information while that component remained Processing.",
-    settlement_note: "Post-favorable-MTD settlement range. Weakest of the four on 290; ICRAA still settles if the pleading survives. No demand. File before Sept. 26, 2026 if the pre-adverse is accrual.",
+    settlement_note: "Post-favorable-MTD settlement range. Weakest of the four on 290; ICRAA still settles if the pleading survives. No demand. File in E.D. Cal. Sacramento before Sept. 26, 2026 if the pre-adverse is accrual.",
     conservative: 45000,
     moderate: 65000,
     aggressive: 90000,

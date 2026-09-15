@@ -1,7 +1,7 @@
 [
   {
     "date": "Sep. 15, 2026",
-    "event": "DRAFT (unsigned / unserved) — Matter 38 San Joaquin filing complaint: Class A Driver; NSOPW remained Processing; no completed hit; no California source-of-record line. Three counts (Pen. Code § 290.46, ICRAA, UCL). Not an E.D. Cal. FCRA clone. No May 29. No § 1332. File on or before September 26, 2026 if the pre-adverse is accrual. Generators: internal/scripts/matter38-filing-complaint.py and matter38-inspection-demands.py. September 8 verified packet remains unfiled historical work product.",
+    "event": "DRAFT (unsigned / unserved) — Matter 38 E.D. Cal. Sacramento diversity complaint: Class A Driver; NSOPW remained Processing; no completed hit; no California source-of-record line. Three counts (Pen. Code § 290.46, ICRAA, UCL) on 28 U.S.C. §§ 1332 / 1367. No FCRA count. No May 29. No invented LLC members. File on or before September 26, 2026 if the pre-adverse is accrual. Generators: internal/scripts/matter38-edca-complaint.py and matter38-inspection-demands.py. September 8 verified San Joaquin packet remains unfiled historical work product.",
     "matters": [
       38
     ],
@@ -15,7 +15,7 @@
   },
   {
     "date": "Sep. 15, 2026",
-    "event": "NEXT — Sign and send Matter 38 inspection demands, then walk up the San Joaquin complaint on or before September 26, 2026: (1) Asurint consumer-file / ICRAA §§ 1786.10, 1786.22 request to P.O. Box 14730, Cleveland, OH 44114 (letter 76326281-1916808); (2) Swift Labor Code § 1198.5 personnel-file request to the current California SOS agent, not a terminal. Do not treat the drafts as served until they go out. Count 1's § 338(a) outer bound is September 26, 2026 if accrual is the pre-adverse.",
+    "event": "NEXT — Sign and send Matter 38 inspection demands, then walk up the E.D. Cal. Sacramento complaint on or before September 26, 2026: (1) Asurint consumer-file / ICRAA §§ 1786.10, 1786.22 request to P.O. Box 14730, Cleveland, OH 44114 (letter 76326281-1916808); (2) Swift Labor Code § 1198.5 personnel-file request to the current California SOS agent, not a terminal. Official JS-44 / AO-440 / AO-239, not CM-010 / SUM-100. Do not treat the drafts as served until they go out. Count 1's § 338(a) outer bound is September 26, 2026 if accrual is the pre-adverse.",
     "matters": [
       38
     ],
@@ -2828,7 +2828,7 @@
   },
   {
     "date": "Sep. 8, 2026",
-    "event": "HISTORICAL / NEVER CLERK-FILED — Executed verified San Joaquin complaint against Swift Transportation Co. of Arizona LLC for a Class A Driver role (Matter 38), dated September 8, 2026, with CM-010, SUM-100, and FW-001. Never reached the clerk. Superseded as the live pleading by the September 15, 2026 three-count filing redraft. NSOPW remained Processing. Serve the current SOS agent, not a terminal. File before September 26 if accrual is the pre-adverse.",
+    "event": "HISTORICAL / NEVER CLERK-FILED — Executed verified San Joaquin complaint against Swift Transportation Co. of Arizona LLC for a Class A Driver role (Matter 38), dated September 8, 2026, with CM-010, SUM-100, and FW-001. Never reached the clerk. Superseded as the live pleading by the September 15, 2026 three-count E.D. Cal. Sacramento diversity redraft. NSOPW remained Processing. Serve the current SOS agent, not a terminal. File before September 26 if accrual is the pre-adverse.",
     "matters": [
       38
     ],
@@ -2870,7 +2870,7 @@
   },
   {
     "date": "Sep. 26, 2026",
-    "event": "OUTER BOUND — CCP § 338(a) three-year statutory-liability clock on the Swift § 290.46(j) / ICRAA counts if accrual is the Sept. 26, 2023 pre-adverse email. Post-adverse is Oct. 5, 2023 (Oct. 5, 2026). This is a limitations argument sourced to the Swift FCRA emails, not a court-ordered deadline. File before the earlier date.",
+    "event": "OUTER BOUND — CCP § 338(a) three-year statutory-liability clock on the Swift § 290.46(j) / ICRAA counts if accrual is the Sept. 26, 2023 pre-adverse email. Post-adverse is Oct. 5, 2023 (Oct. 5, 2026). Walk up the E.D. Cal. Sacramento complaint before the earlier date. This is a limitations argument sourced to the Swift FCRA emails, not a court-ordered deadline.",
     "matters": [
       38
     ],

@@ -5,9 +5,9 @@
 The September 8, 2026 San Joaquin packet is work product only. It was never
 clerk-filed. Do not treat it as the live pleading.
 
-Live filing review draft: ``internal/scripts/matter38-filing-complaint.py``.
-That generator is not LOCKED. File on or before September 26, 2026. Do not
-stamp Matter 38 LOCKED.
+Live filing review draft: ``internal/scripts/matter38-edca-complaint.py``.
+That generator is not LOCKED. File in E.D. Cal., Sacramento Division, on or
+before September 26, 2026. Do not stamp Matter 38 LOCKED.
 
 This script remains for provenance of the unfiled verified packet.
 """
