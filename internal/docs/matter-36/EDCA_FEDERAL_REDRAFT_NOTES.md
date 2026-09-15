@@ -1,70 +1,99 @@
-# Matter 36 — E.D. Cal. federal redraft notes
+# Matter 36 — E.D. Cal. Federal Redraft v3 Notes
 
-**Not LOCKED.** Live generator: `internal/scripts/matter36-edca-complaint.py`.
-San Joaquin ten-count packet (`matter36-att-complaint.py`) is historical and was never clerk-filed.
+## Current architecture
 
-## What this case is
+Opening complaint:
+1. FCRA § 1681b(b)(3)(A)
+2. ICRAA §§ 1786.40 / 1786.50
+3. Penal Code § 290.46(j)(2)(E) / (j)(4)(A)
 
-May 28, 2026, AT&T Mobility Services LLC issued a written Retail Sales Consultant offer for Lodi (2439 W. Kettleman Lane): **$24.95/hour**, **$13,700** annual target variable (prorated part-time), tentative start **June 15, 2026**, reporting to **Orville R. Bell**, requisition **R-106742**, candidate **C-1690172**. Workday marked the offer official at **10:13 a.m.** Onboarding tasks dropped at **10:15–10:17 a.m.** The First Advantage consumer-report task (**AT&T Non Management**, account **132156**) dropped at **10:19 a.m.** Recruiter **Richard Patterson** texted at **12:23 p.m.** that the hiring manager no longer wanted to proceed; the stated reason was failed Spanish. Plaintiff’s reply is not a waiver.
+Reserved rather than opening counts:
+- breach of contract
+- implied covenant
+- promissory estoppel
+- negligent misrepresentation
+- FCRA § 1681b(b)(2)(A)
+- ICRAA § 1786.16
+- Fair Chance / FEHA
+- First Advantage vendor claims
 
-The Spanish ACTFL OPIc via LTI expired **May 25, 2026**. The offer issued **after** that window. Offer contingencies do **not** list Spanish.
+## Why v3 narrows the case
 
-## Forum
+The prior seven-count draft carried independent employment-offer theories for leverage, but the hostile California-law audit showed they are not presently the cleanest pleading.
 
-E.D. Cal. Sacramento. 28 U.S.C. § 1331 (FCRA) + § 1367 (state claims). Local Rule 120(d): Lodi / San Joaquin. **Do not plead § 1332.** AT&T Mobility Services LLC membership is unknown; do not invent Delaware / Texas citizenship for an LLC.
+### Implied covenant
+Under Guz / Foley, an implied-covenant claim cannot create a good-cause restriction or substantive employment security that the contract itself does not contain. If the offer is at-will, the covenant is especially vulnerable and can also be duplicative of contract.
 
-## Counts (seven)
+### Promissory estoppel
+Sheppard / Toscano are strongest where the new hire materially changed position—quitting a prior job, relocating, or similar detrimental reliance. The present AT&T file confirms acceptance, onboarding, and disclosure of personal information, but not yet that level of economic reliance.
 
-| # | Claim | Why it stays |
-|---|--------|----------------|
-| 1 | FCRA § 1681b(b)(3)(A) | Employment CRA use; two-hour sequence; no copy/SoR before 12:23 |
-| 2 | ICRAA §§ 1786.40 / 1786.50 | Distinct California omission at adverse action; 10:19 task ≠ § 1786.40 advice |
-| 3 | PC § 290.46(j)(2)(E) / (j)(4)(A) | I&B ultimate facts + UPS/FedEx same-consumer comparators; two-hour sequence as factual basis. CCP § 338(a) from **May 28, 2026 use → May 28, 2029** |
-| 4 | Breach of contract | Written offer with price, start date, worksite, manager — not a letter of intent |
-| 5 | Implied covenant | Using a closed Spanish window / CRA two-hour sequence to gut the bargain |
-| 6 | Promissory estoppel | If no contract, the same writing still induced reliance |
-| 7 | Negligent misrepresentation | Offer after the Spanish window closed; CRA as if a live hire |
+### Contract
+A formal offer exists, but California's at-will presumption and any incorporated withdrawal/arbitration terms must be audited before pleading an independent expectation-damages theory.
 
-## What was dropped from the San Joaquin packet
+### Negligent misrepresentation
+Potentially viable if internal records show AT&T issued an “official” offer despite already having a disqualifying Spanish result or lacking approval, but present records do not establish that fact. Reserve until the LTI / AT&T audit.
 
-- UCL (remedy overlap; keep if a later filing needs restitution-only)
-- CCRAA (no AT&T report in hand showing consumer-credit use)
-- Intentional fraud / concealment (Rule 9; reserve)
-- FEHA / Fair Chance (no CRD)
-- FCRA § 1681m(a) (employment use is (b)(3)(A))
-- FCRA § 1681b(b)(2)(A) until the authorization package is in hand
-- First Advantage as defendant
-- Diversity § 1332
-- Verification, `/s/`, DOES 1–20 as named defendants
+The written offer remains powerful evidence of accepted employment and damages even without separate contract counts.
 
-## May 29, 2026 — do not plead it
+## Federal hook
 
-Matter 36’s events are **May 28, 2026**. Filing in September 2026 is about four months later. Every clock is open without delayed discovery:
+FCRA supplies § 1331 original jurisdiction. No delayed-discovery theory is needed: all operative events are May 28, 2026.
 
-- FCRA two-year / five-year: ~May 28, 2028 / ~May 28, 2031
-- ICRAA § 1786.52: ~May 28, 2028
-- PC § 290.46 under CCP § 338(a): **May 28, 2029**
-- Contract four-year: ~May 28, 2030
+Do not plead diversity until every member of AT&T Mobility Services LLC is identified.
 
-Pleading May 29 here would look like Pilot-filing gamesmanship (the next day) and is unnecessary. Plaintiff already had the First Advantage task at 10:19 a.m. the same morning. **No May 29 section anywhere on Matter 36.**
+## Article III / Dutta
 
-## Service
+The complaint affirmatively pleads tangible economic injury: loss of an accepted $24.95/hour position.
 
-Serve the **current California Secretary of State agent** for AT&T Mobility Services LLC. Do not serve the Lodi store. Several AT&T entities list Corporation Service Company, 2710 Gateway Oaks Drive, Suite 150N, Sacramento, CA 95833 — **confirm the Mobility Services LLC listing on the SOS site before service. Do not invent CSC.**
+The statutory pre-adverse-process injury is additionally tied to the concrete opportunity to inspect any registry source before the decision.
 
-## Inspection / personnel (parallel, not attachments to the complaint)
+Defense will cite Dutta if the Spanish result was an independently sufficient disqualifier. The critical records are:
+- actual Spanish score;
+- passing threshold;
+- timestamp AT&T received it;
+- whether failure automatically required rejection;
+- whether AT&T knew it before the 10:13 offer;
+- whether FADV furnished a report before 12:23.
 
-- First Advantage file (FCRA § 1681h / ICRAA § 1786.22): P.O. Box 105292, Atlanta, GA 30348-5292. Employer AT&T; date May 28, 2026; account **132156**.
-- AT&T personnel / applicant file (Lab. Code § 1198.5): current SOS agent, not the Lodi store. Worksite 2439 W. Kettleman is for venue and facts only.
+## First Advantage gate
 
-Do not attach UPS or FedEx First Advantage reports as AT&T’s report.
+The 10:19 invitation confirms the screening workflow. It does **not** prove a consumer report had been completed/furnished by 12:23.
 
-## Do not
+The complaint therefore alleges report furnishing/use on information and belief and expressly treats FADV timing logs as the key proof.
 
-- Name Pilot, Lerma, Sheppard, Toscano, or Lazar in the complaint
-- Concede the Spanish failure
-- Treat retail sales as DOT (b)(3)(B)–(C)
-- Affix `/s/` on Plaintiff’s paper
-- Plead 1332 with invented LLC members
-- Force § 290.46 if the AT&T report later shows ordinary court records and no California-registry source — then keep FCRA / ICRAA / contract
-- Stamp this matter LOCKED
+If records show no consumer-report result was furnished before 12:23:
+- FCRA Count One requires reassessment;
+- ICRAA Count Two requires reassessment;
+- § 290.46 Count Three requires reassessment.
+
+Do not call the invitation itself a consumer report.
+
+## Spanish explanation
+
+Patterson's 12:23 text is preserved as AT&T's contemporaneous stated reason.
+
+Do not plead it as admitted true.
+Do not plead it as proven pretext.
+
+The case asks which reasons actually drove the decision and when AT&T possessed each piece of information.
+
+## § 290.46 source
+
+Same-consumer UPS/FedEx First Advantage records support plausibility, not proof.
+
+Lerma is expressly addressed: if the AT&T-specific report is properly before the Court and contradicts registry sourcing, the claim must conform.
+
+## § 290.46 limitations
+
+The alleged use is May 28, 2026.
+
+A September 2026 filing is within either a one-year penalty characterization or a three-year statutory-liability characterization. There is no reason to ask the Court now to decide the unresolved characterization or to plead an artificial outside date.
+
+## Highest-value prefiling records
+
+1. First Advantage complete AT&T order / report / component timestamps.
+2. AT&T access / adjudication / decision logs.
+3. LTI score and transmission timestamp.
+4. AT&T Spanish threshold and policy.
+5. Complete offer / incorporated at-will / arbitration / withdrawal terms.
+6. Exact AT&T legal employer/report-user entity.
