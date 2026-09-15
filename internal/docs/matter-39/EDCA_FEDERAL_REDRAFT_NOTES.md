@@ -1,4 +1,4 @@
-# Matter 39 — Federal Redraft v3 Notes
+# Matter 39 — Federal Redraft v4 Notes
 
 ## Current architecture
 
@@ -54,14 +54,9 @@ Best Buy is stronger than Home Depot on vendor identity because First Advantage 
 
 The actual Best Buy background report remains missing, so source and use remain I&B.
 
-## Lerma / Donaleski
+## Registry-source defense (notes only — not the complaint)
 
-The complaint is source-specific.
-
-- Donaleski: independent lawful conviction sourcing is not the same as use of § 290.46-disclosed information.
-- Lerma: a transaction-specific report can defeat the registry theory if it actually shows ordinary court-record sourcing and no registry hit.
-
-The complaint therefore does not argue that public conviction records can never be considered. It argues that public conviction records alone do not prove which source First Advantage used in Best Buy's unproduced report.
+Do **not** name *Lerma* or *Donaleski* in the complaint. Distinguish them when they file an RJN: Lerma was decided after that employer's report was in the record. The complaint says only that Plaintiff does not possess Best Buy's report and does not allege its source-field wording as known fact. Independent lawful sourcing is different from Megan's Law website use. If the Best Buy-specific report contradicts registry sourcing, the claim must conform.
 
 ## Contract / estoppel
 
@@ -73,16 +68,11 @@ The offer remains contingent, at-will issues may sharply limit damages, and the 
 
 ## Arbitration
 
-The October 13 application communication references an arbitration policy.
+The October 13 application communication references an arbitration policy. The PDF of that policy is not in the file.
 
-Obtain the actual policy before filing. Do not assume:
-- scope;
-- assent;
-- delegation;
-- enforceability;
-- affiliate coverage.
+Do **not** plead the clause into the complaint. Do not plead unconscionability. Do not attach the email recital as an exhibit. Fight the motion to compel when it comes.
 
-Expect a motion to compel if the policy applies.
+Obtain the actual policy before filing so Plaintiff is not surprised. Do not assume scope, assent, delegation, enforceability, or affiliate coverage.
 
 ## Highest-value prefiling steps
 
