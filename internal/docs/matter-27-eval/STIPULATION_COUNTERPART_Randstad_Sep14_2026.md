@@ -1,6 +1,6 @@
 # Stipulation — Matter 27 Randstad response extension (Sep. 14, 2026)
 
-Matter 27 — Newanforbi v. Randstad, et al. (Alameda Super. Ct. No. 26CV199902). Extension. Not yet signed as a filed paper — Plaintiff counterpart drafted; covering email unsent until he says it goes.
+Matter 27 — Newanforbi v. Randstad, et al. (Alameda Super. Ct. No. 26CV199902). Extension. Chapman wet-signed the Plaintiff counterpart the afternoon of September 14. Moskow served it at 4:37 p.m. Proposed order still unsigned. No clerk stamp. Not an entered order.
 
 Canonical blank: `.claude/skills/stipulation-defense/TEMPLATE.md`
 Clauses: `.claude/skills/stipulation-defense/CLAUSES.md`
@@ -68,6 +68,23 @@ Counsel block blank until they sign (Nathan D. Chapman, SBN 338735).
 ## If they refuse the counterpart
 
 Do not sign theirs. Let the September 15 Randstad clock run, or oppose. Matter 26 is the opposition posture when they caption consent he did not give.
+
+---
+
+## Afternoon papers (September 14, 2026)
+
+| Paper | Time | What it is | Calendar |
+|---|---|---|---|
+| Tai Gmail + Gurney CIV-141 | 4:21 p.m. | RK automatic-extension declaration (SBN 199813). POS email only. FOR COURT USE ONLY empty. | Do not treat Oct. 14 as live. Do not CIV-100 RK until eCourt is checked. The "Sept. 9 15-day ask" recital is off the record (Garcia/Gurney asked Sept. 30). |
+| Moskow Gmail + executed counterpart | 4:37 p.m. | Plaintiff counterpart Chapman wet-signed. Proposed order unsigned. Court EFS unchecked. | Sept. 18 is not operative until filed AND ordered. Randstad remains Sept. 15. Do not retire the unfiled counterpart. |
+
+### Diff — executed packet vs what he signed
+
+Terms match. Weathers / Dept. 20. CRC 3.110(d) second shot recited. RK unchanged. Default reserved. `/s/ Brendan Ngehsi Newanforbi` intact. Chapman ink plus handwritten September 14, 2026. Moskow POS added as page 6 (email checked; court EFS unchecked). Proposed order still blank for Weathers. No clerk stamp.
+
+### Effectiveness
+
+Signed (both sides) ≠ filed ≠ ordered. CRC 3.110(d) already spent August 18. Counterpart ¶6 says the paper is not an operative deadline until signed, filed, and the Court enters an order. Keep September 15 upcoming.
 
 ---
 

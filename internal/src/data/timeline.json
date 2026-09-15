@@ -1,6 +1,50 @@
 [
   {
     "date": "Sep. 14, 2026",
+    "event": "RECEIVED — Alexandra Moskow (Kabat Chapman & Ozmer LLP; amoskow@kcozlaw.com; to Plaintiff; cc Nathan Chapman, Chadwick L. Williams, Windy Thor) emailed at 4:37 p.m. in Newanforbi v. Randstad US, LLC et al. (26CV199902), attaching the executed Plaintiff counterpart (filename on the email: 2026.09.14 [Newanforbi] Stipulation and Proposed Order Extending Time for Randstad to Respond.pdf). Diff versus the signed counterpart: terms, Weathers / Dept. 20 caption, CRC 3.110(d) second-shot recital, RK-unchanged, default reserved, and /s/ Brendan Ngehsi Newanforbi match. Chapman wet signature plus handwritten September 14, 2026. Moskow proof of service (page 6): email checked; the Court's Electronic Filing System box unchecked. Proposed order still unsigned by Hon. Thomas Weathers. No clerk stamp. Counterpart paragraph 6 and CRC 3.110(d): September 18 is not an operative deadline until the paper is filed AND the Court enters an order. Do not retire the unfiled counterpart. Do not flip Randstad off September 15. This paper does not move The RK Logistics Group, Inc. and is not an acceptance of the September 12 $25,000 demand. Evid. Code §1152 / FRE 408 as to the demand.",
+    "matters": [
+      27
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "filed": false,
+    "actor": "opposing",
+    "source": "/documents/matter-27/Gmail - Moskow Serves Executed Randstad Counterpart (Sep 14 2026).pdf",
+    "source_type": "portfolio",
+    "confidence": "high",
+    "verified_at": "2026-09-14"
+  },
+  {
+    "date": "Sep. 14, 2026",
+    "event": "RECEIVED — Karen Tai (Garcia & Gurney, ALC; ktai@garciagurney.com; to Plaintiff; cc Chadwick L. Williams, Melinda Garcia, Nathan Chapman, Tod Gurney, Tai, Pol Minguet, Shinae Kim) emailed at 4:21 p.m. in Newanforbi v. Randstad US, LLC et al. (26CV199902): 'Please see attached.' Attachment named CIV 141-signed.pdf. Tod C. Gurney, SBN 199813, for The RK Logistics Group, Inc. Judicial Council CIV-141 (Rev. January 1, 2019). Item 1: RK was served with a complaint. Item 2: responsive pleading due 9/14/2026; intends a demurrer, motion to strike, or motion for judgment on the pleadings; claims the first automatic 30-day extension under CCP §430.41(a)(2). Explanation: September 9 email that the firm had just been retained, requested a 15-day extension, Plaintiff responded the next day and denied it, and counsel lacked time to meet and confer. That 15-day recitation is off the record — Garcia (10:23 a.m.) and Gurney (4:47 p.m.) on September 10 asked through September 30. Signed Gurney September 14, 2026. Karen Tai proof of service: EMAIL only (mail and overnight unchecked) on Plaintiff and Williams. FOR COURT USE ONLY is empty; no clerk stamp; no docket number. If the clerk accepted it on eCourt today, the statute would carry RK to October 14, 2026 (Wednesday). Do not invent that date as live. Do not CIV-100 RK. Williams's Randstad paper does not move this clock.",
+    "matters": [
+      27
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "filed": false,
+    "actor": "opposing",
+    "source": "/documents/matter-27/Gmail - Tai Serves CIV-141 RK Automatic Extension (Sep 14 2026).pdf",
+    "source_type": "portfolio",
+    "confidence": "high",
+    "verified_at": "2026-09-14"
+  },
+  {
+    "date": "Oct. 14, 2026",
+    "event": "WATCH — Conditional only. If Tod Gurney's September 14 CIV-141 for The RK Logistics Group, Inc. in Newanforbi v. Randstad US, LLC et al. (26CV199902) was filed and served on or before the September 14 response date, CCP §430.41(a)(2) would automatically extend RK's time to demur, move to strike, or move for judgment on the pleadings by 30 days, to this date. The served copy has no clerk stamp and an empty FOR COURT USE ONLY box. Do not treat October 14 as operative until eCourt shows the accepted filing. Not a CIV-100 hold by itself.",
+    "matters": [
+      27
+    ],
+    "type": "deadline",
+    "upcoming": false,
+    "actor": "opposing",
+    "source": "/documents/matter-27/CIV-141 Declaration of Demurring or Moving Party - The RK Logistics Group Inc (Gurney, Sep 14 2026).pdf",
+    "source_type": "portfolio",
+    "confidence": "medium",
+    "verified_at": "2026-09-14"
+  },
+  {
+    "date": "Sep. 14, 2026",
     "event": "RECEIVED — Chadwick L. Williams (Kabat Chapman & Ozmer LLP; cc Nathan Chapman) emailed at 2:03 p.m. in Newanforbi v. Randstad US, LLC et al. (26CV199902): thanks for the $25,000 offer; conferring with Randstad; attaches a stipulation and proposed order 'we discussed'; asks permission to add Plaintiff's e-signature and file. Counsel draft is Randstad US, LLC only, through September 18, 2026, to answer, move, or otherwise respond. Caption still names Hon. Karin Schwartz, Dept. 20 (stale — operative assignment is Hon. Thomas Weathers, Dept. 20, Aug. 7). Recites the Aug. 18 15-day to Sept. 15; recites that the parties 'have agreed' to Sept. 18; says no previous requests have been made with the Court (conceals the spent CRC 3.110(d) shot); reserves 'rights or defenses' without Plaintiff's default right; Chapman /s/ already on their Word; Plaintiff's block blank. Proposed order recites 'good cause appearing therein.' DO NOT SIGN. E-sign refused. Plaintiff counterpart pending (generator: internal/scripts/matter27-randstad-extension-stipulation.py). Proposed dates are not operative until a signed counterpart is filed and the Court enters an order. This paper does not move The RK Logistics Group, Inc. Evid. Code §1152 / FRE 408 as to the demand; the stipulation is a clock paper, not an acceptance.",
     "matters": [
       27
