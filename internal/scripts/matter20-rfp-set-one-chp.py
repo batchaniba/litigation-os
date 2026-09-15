@@ -33,7 +33,9 @@ from pleading_paper import (  # noqa: E402
     PleadingPaper,
 )
 from pos050 import ProofOfElectronicService, fill_pos050  # noqa: E402
+from short_link import publish_short_link  # noqa: E402
 from signature_stamp import SIGNATURE_NATIVE_PX, SIGNATURE_PATH  # noqa: E402
+import pymupdf  # noqa: E402
 
 SIGNATURE_IMG = SIGNATURE_PATH
 SIG_IMG_W_PX, SIG_IMG_H_PX = SIGNATURE_NATIVE_PX
@@ -62,6 +64,11 @@ POS_PATH = MATTER20 / (
     "Proof of Service - RFP Set One CHP (Sep 15 2026).pdf"
 )
 EMAIL_PATH = MATTER20 / "EMAIL_DRAFT_Ing_RFP_Set_One_CHP.txt"
+PACKET_PATH = MATTER20 / (
+    "Request for Production of Documents Set One - CHP with POS "
+    "(Sep 15 2026).pdf"
+)
+SHORT_LINK_SLUG = "chp-rfp"
 
 COVER_EMAIL = f"""To: Vanessa.Ing@doj.ca.gov
 Cc: Mark.Beckington@doj.ca.gov
@@ -592,6 +599,18 @@ def build_email(path: Path) -> Path:
     return path
 
 
+def build_packet(rfp: Path, pos: Path, dest: Path) -> Path:
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    out = pymupdf.open()
+    for src_path in (rfp, pos):
+        src = pymupdf.open(src_path)
+        out.insert_pdf(src)
+        src.close()
+    out.save(dest)
+    out.close()
+    return dest
+
+
 def main() -> None:
     if not os.path.isfile(SIGNATURE_IMG):
         raise SystemExit(f"Missing universal signature: {SIGNATURE_IMG}")
@@ -599,9 +618,13 @@ def main() -> None:
     build_rfp(RFP_PATH)
     build_pos(POS_PATH)
     build_email(EMAIL_PATH)
+    build_packet(RFP_PATH, POS_PATH, PACKET_PATH)
+    short = publish_short_link(PACKET_PATH, SHORT_LINK_SLUG)
     print(f"SUCCESS! Generated: {RFP_PATH}")
     print(f"SUCCESS! Generated: {POS_PATH}")
     print(f"SUCCESS! Generated: {EMAIL_PATH}")
+    print(f"SUCCESS! Generated: {PACKET_PATH}")
+    print(f"SUCCESS! Short-link PDF: {short}")
     if not FILED_STATUS:
         print("NOTE: FILED_STATUS is False -- not yet served. Do not e-file.")
 

@@ -403,6 +403,16 @@
       "source": "/candelaria-fac/",
       "destination": "/candelaria-fac.pdf",
       "permanent": false
+    },
+    {
+      "source": "/chp-rfp",
+      "destination": "/chp-rfp.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/chp-rfp/",
+      "destination": "/chp-rfp.pdf",
+      "permanent": false
     }
   ],
   "headers": [
@@ -763,6 +773,15 @@
         {
           "key": "Content-Disposition",
           "value": "attachment; filename=\"Dkt 06 - First Amended Complaint (CONFORMED, Filed Aug 17 2026).pdf\"; filename*=UTF-8''Dkt%2006%20-%20First%20Amended%20Complaint%20%28CONFORMED%2C%20Filed%20Aug%2017%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/chp-rfp.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Request for Production of Documents Set One - CHP with POS (Sep 15 2026).pdf\"; filename*=UTF-8''Request%20for%20Production%20of%20Documents%20Set%20One%20-%20CHP%20with%20POS%20%28Sep%2015%202026%29.pdf"
         }
       ]
     }
