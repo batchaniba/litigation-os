@@ -10,7 +10,7 @@ Generated from `internal/scripts/matter38-edca-complaint.py`. File on or before 
 
 BRENDAN NGWA NFORBI, Plaintiff, in propria persona, v. SWIFT TRANSPORTATION CO. OF ARIZONA LLC, a Delaware limited liability company, d/b/a SWIFT TRANSPORTATION.
 
-United States District Court, Eastern District of California — Sacramento Division. Unverified. Demand for jury trial.
+United States District Court, Eastern District of California. Unverified. Demand for jury trial.
 
 Plaintiff BRENDAN NGWA NFORBI, appearing in propria persona, alleges against Defendant SWIFT TRANSPORTATION CO. OF ARIZONA LLC ('Swift') as follows:
 
