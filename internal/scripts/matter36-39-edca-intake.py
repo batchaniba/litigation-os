@@ -18,6 +18,7 @@ Walk-up order (IFP original proceeding):
   1. JS 44
   2. AO 239
   3. AO 440
+  4. Complaint (v4 E.D. Cal. pleading; not the San Joaquin verified complaint)
 
 Left blank for the clerk / process server: civil action number, JS 44 office-use
 strip, AO 440 clerk date and deputy-clerk signature, and the AO 440 proof-of-
@@ -32,6 +33,7 @@ record the morning of service. Do not serve a store, warehouse, or terminal.
 from __future__ import annotations
 
 import io
+import runpy
 import shutil
 import sys
 from pathlib import Path
@@ -335,7 +337,11 @@ def build_js44(case: dict, out: Path) -> Path:
     _set_named(page, "S8judge[0]", RELATED_JUDGE)
     _set_named(page, "S8docket[0]", RELATED_DOCKET)
     _set_named(page, "date[0]", EXEC_DATE_SHORT)
-    stamp_on_pdf_line(page, 230.0, 430.0, 737.0, whiteout=False)
+    # JS 44 sig widget is Rect(219, 726.58, 594.50, 737.38). The printed
+    # "SIGNATURE OF ATTORNEY OF RECORD" occupies x=219–350, y=715–725. A
+    # 200-pt stamp on the left of the line is ~34 pt tall and covers that
+    # label. Sit a ~85-pt mark on the blank right of the caption instead.
+    stamp_on_pdf_line(page, 360.0, 445.0, 737.2, whiteout=False)
     _save(doc, out)
     print(f"Wrote {out}")
     return out
@@ -480,13 +486,17 @@ def flatten_packet(sources: list[Path], out: Path) -> Path:
     writer = PdfWriter()
     for source in sources:
         pdf = pdfium.PdfDocument(str(source))
-        pdf.init_forms()
-        for page in pdf:
-            page.flatten()
-        buffer = io.BytesIO()
-        pdf.save(buffer)
-        buffer.seek(0)
-        writer.append(PdfReader(buffer))
+        try:
+            pdf.init_forms()
+            for page in pdf:
+                page.flatten()
+            buffer = io.BytesIO()
+            pdf.save(buffer)
+            buffer.seek(0)
+            writer.append(PdfReader(buffer))
+        except RuntimeError:
+            # Reportlab pleadings have no AcroForm; append as-is.
+            writer.append(str(source))
     with open(out, "wb") as fh:
         writer.write(fh)
     print(f"Wrote {out} ({len(writer.pages)} pages)")
@@ -499,6 +509,10 @@ def main() -> None:
             raise SystemExit(f"Missing template: {template}")
     if not Path(SIGNATURE_PATH).is_file():
         raise SystemExit(f"Missing signature: {SIGNATURE_PATH}")
+
+    complaints = runpy.run_path(
+        str(SCRIPT_DIR / "matter36-39-edca-complaints.py")
+    )
 
     for case in CASES:
         out_dir = _out_dir(case["number"])
@@ -518,8 +532,9 @@ def main() -> None:
             out_dir
             / f"AO 440 Summons - {case['defendant_js44']} (E.D. Cal.) ({date}).pdf",
         )
+        complaint = complaints["build_complaint"](case["number"], out_dir)
         flatten_packet(
-            [js44, ifp, summons],
+            [js44, ifp, summons, complaint],
             out_dir
             / (
                 "E.D. Cal. Intake Packet (print copy) - "
