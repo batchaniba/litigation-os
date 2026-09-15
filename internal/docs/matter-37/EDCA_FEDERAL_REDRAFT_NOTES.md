@@ -1,4 +1,4 @@
-# Matter 37 — Federal Redraft v3 Notes
+# Matter 37 — Federal Redraft v4 Notes
 
 ## Bottom line
 
@@ -40,19 +40,13 @@ The claim remains information-and-belief but has a concrete basis:
 - accepted Tracy hire;
 - background screen intervened;
 - Home Depot then ended onboarding;
-- Home Depot public federal-court materials identify First Advantage as its California employment-screening CRA;
-- UPS and FedEx same-consumer First Advantage records show that CRA retrieving/reporting Plaintiff's California registry information.
+- one public Home Depot–First Advantage disclosure (*Ford* Ex. 1).
 
-The UPS/FedEx reports remain comparators, not substitutes.
+The complaint keeps that one disclosure. It does not plead *Bolton*, the 2019 webinar, or other-docket sociology. UPS/FedEx same-consumer records, if used at all, are one sentence of I&B plausibility. They are not Home Depot's report and are not attached.
 
-## Lerma / Donaleski
+## Registry-source defense (notes only — not the complaint)
 
-The complaint expressly acknowledges both defense concepts.
-
-- Donaleski: independent lawful sourcing is different from use of § 290.46-disclosed information.
-- Lerma: when the transaction-specific report is in the record and contradicts registry sourcing, the report controls.
-
-The v3 draft does **not** say a defendant can never present its report on a Rule 12 motion. It says general public conviction records do not establish the source used in an unproduced Home Depot-specific report.
+Do **not** name *Lerma* or *Donaleski* in the complaint. Distinguish them when they file an RJN: Lerma was decided after that employer's report was in the record. The complaint says only that Plaintiff does not possess Home Depot's report and does not allege its source-field wording as known fact. Independent lawful sourcing is different from Megan's Law website use. If the Home Depot-specific report contradicts registry sourcing, the claim must conform. Do not say a defendant can never present its report on a Rule 12 motion.
 
 ## Highest-value prefiling step
 

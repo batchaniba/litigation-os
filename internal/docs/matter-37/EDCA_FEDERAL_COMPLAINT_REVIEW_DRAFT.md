@@ -1,8 +1,10 @@
-# Matter 37 — E.D. Cal. Federal Complaint Review Draft v3
+# Matter 37 — E.D. Cal. Federal Complaint Review Draft v4
 
-> **REVIEW DRAFT — NOT FOR FILING UNTIL THE HOME DEPOT / FIRST ADVANTAGE FILE-INSPECTION REQUESTS ARE SERVED OR A FINAL RULE 11 SOURCE AUDIT IS COMPLETED.**
->
-> This v3 draft deliberately does **not** plead FCRA or ICRAA claims on the present record. The current file does not establish a truthful factual discovery date that safely avoids the two-year limitations issues identified in the hostile audit. Those theories are reserved for amendment only if later records support timeliness. The opening federal theory is diversity jurisdiction plus California Penal Code § 290.46(j).
+<!-- Internal generator header. Not part of the pleading. Do not print on page one. -->
+
+Opening theory is diversity plus Penal Code § 290.46(j). FCRA and ICRAA stay off the opening complaint: there is no truthful factual discovery date to carry the two-year clocks, and May 29, 2026 is not used. One public Home Depot–First Advantage disclosure (*Ford* Ex. 1). No other-docket sociology. Do not name the C.D. Cal. registry-source dismissal in the pleading.
+
+---
 
 BRENDAN NGWA NFORBI  
 Plaintiff, In Propria Persona  
@@ -42,9 +44,9 @@ Plaintiff BRENDAN NGWA NFORBI, appearing in propria persona, alleges:
 
 5. Plaintiff does not allege that Home Depot was prohibited from considering independently obtained conviction information from an otherwise lawful source. The claim is source-specific: Plaintiff alleges that Home Depot used information disclosed pursuant to § 290.46 itself.
 
-6. The transaction-specific report, source fields, adjudication information, access history, and decision records are presently within Home Depot's and the screening vendor's possession.
+6. Plaintiff does not possess Home Depot's transaction-specific report and does not allege its source-field wording as known fact. The report, source fields, adjudication information, access history, and decision records are presently within Home Depot's and the screening vendor's possession.
 
-# II. JURISDICTION, STANDING, AND VENUE
+# II. JURISDICTION AND VENUE
 
 7. This Court has original jurisdiction under 28 U.S.C. § 1332(a). Plaintiff is a citizen of California.
 
@@ -90,93 +92,75 @@ Plaintiff BRENDAN NGWA NFORBI, appearing in propria persona, alleges:
 
 25. That allegation is not based solely on the fact that another employer used First Advantage.
 
-26. In *Ford v. Home Depot U.S.A., Inc.*, No. 3:19-cv-00754-AJB-LL (S.D. Cal.), a Home Depot-branded Background Check Disclosure and Authorization filed as an exhibit identifies First Advantage Background Services Corp. as the consumer reporting agency Home Depot would use to procure California investigative consumer reports.
+26. In *Ford v. Home Depot U.S.A., Inc.*, No. 3:19-cv-00754-AJB-LL (S.D. Cal.), a Home Depot-branded Background Check Disclosure and Authorization filed as Exhibit 1 identifies First Advantage Background Services Corp. as the consumer reporting agency Home Depot would use to procure California investigative consumer reports, directs background-report requests to Home Depot care of First Advantage, and describes a pre-adverse process involving a report and a summary of FCRA rights.
 
-27. The same Home Depot-branded document directs background-report requests to Home Depot care of First Advantage and describes a pre-adverse process involving a report and summary of FCRA rights.
-
-28. In *Bolton v. First Advantage LNS Screening Solutions, Inc.*, No. 1:14-cv-05735 (S.D.N.Y.), the public federal record describes a First Advantage report furnished to prospective employer Home Depot.
-
-29. First Advantage has also publicly identified Home Depot personnel in workforce-screening programming, further corroborating an institutional screening relationship.
-
-30. These public records provide a concrete factual basis to allege First Advantage's role on information and belief while the transaction-specific order and report remain in Home Depot's and First Advantage's possession.
+27. That public Home Depot–First Advantage disclosure is a concrete factual basis to allege First Advantage's role on information and belief while the transaction-specific order and report remain in Home Depot's and First Advantage's possession.
 
 # VI. FACTUAL BASIS FOR REGISTRY SOURCE AND USE
 
-31. Plaintiff possesses a First Advantage employment background report concerning himself generated for United Parcel Service during the surrounding period.
+28. On information and belief, the same CRA, screening this same consumer in the same period, returned California-registry source fields. Plaintiff does not allege that any other employer's report is Home Depot's report, and he does not attach or describe those reports as if they were.
 
-32. In that report, ordinary criminal-search components returned non-adverse results while the sex-offender-registry component was adverse or decisional and expressly identified the source of record as the California Sex Offender Registry.
+29. On information and belief, First Advantage prepared or furnished an employment-screening report or result concerning Plaintiff to Home Depot in connection with the Tracy hire.
 
-33. In a separate First Advantage employment screen for Federal Express Corporation, FedEx later admitted in its responsive pleading that the report identified Plaintiff as a California registrant.
+30. On information and belief, that Home Depot-specific screening contained information concerning Plaintiff disclosed pursuant to Penal Code § 290.46, including Plaintiff's California registry information.
 
-34. Plaintiff does not allege that the UPS or FedEx report is Home Depot's report. Those records concern the same consumer, the same CRA, the same underlying California registry entry, and the same general type of employment screening. They supply factual support for the information-and-belief allegation; they do not substitute for Home Depot's report.
+31. On information and belief, Home Depot received, accessed, considered, or used that § 290.46 information in deciding whether Plaintiff would begin or continue the accepted Tracy employment.
 
-35. On information and belief, First Advantage prepared or furnished an employment-screening report or result concerning Plaintiff to Home Depot in connection with the Tracy hire.
+32. Plaintiff alleges that the § 290.46 information was a substantial factor in Home Depot's decision.
 
-36. On information and belief, that Home Depot-specific screening contained information concerning Plaintiff disclosed pursuant to Penal Code § 290.46, including Plaintiff's California registry information.
+33. The factual basis includes the accepted hire, the intervening background screen, Plaintiff's contemporaneous California registry listing, the public Home Depot–First Advantage disclosure, the cessation of onboarding after the screen, and the absence of a communicated independent reason.
 
-37. On information and belief, Home Depot received, accessed, considered, or used that § 290.46 information in deciding whether Plaintiff would begin or continue the accepted Tracy employment.
+34. The precise source-field wording, screening package, adjudication code, access timestamp, internal reason code, and decisionmaker identity are matters recorded in Home Depot's and First Advantage's systems.
 
-38. Plaintiff alleges that the § 290.46 information was a substantial factor in Home Depot's decision.
+# VII. SOURCE-SPECIFIC LIMIT OF THE CLAIM
 
-39. The factual basis includes the accepted hire, the intervening background screen, Plaintiff's contemporaneous California registry listing, First Advantage's demonstrated reporting of the same Plaintiff's California registry information in other employment screens, the cessation of onboarding after the screen, and the absence of a communicated independent reason.
+35. Plaintiff does not plead a claim based on the abstract existence of his conviction or registration status. He pleads actual use of information disclosed pursuant to § 290.46.
 
-40. The precise source-field wording, screening package, adjudication code, access timestamp, internal reason code, and decisionmaker identity are matters recorded in Home Depot's and First Advantage's systems.
+36. Independently obtained court-record information is different from prohibited employment use of Megan's Law website information. This complaint alleges the latter.
 
-# VII. SOURCE-SPECIFIC DEFENSES DO NOT DEFEAT THE PLEADING
-
-41. Plaintiff recognizes that California law does not prohibit an employer from learning independently obtained information merely because similar information is also displayed on the Megan's Law website.
-
-42. Plaintiff therefore does not plead a claim based on the abstract existence of his conviction or registration status. He pleads actual use of information disclosed pursuant to § 290.46.
-
-43. *Donaleski v. Wal-Mart Stores, Inc.* is consistent with that distinction: independently obtained information is different from prohibited use of website-disclosed information.
-
-44. *Lerma v. Amazon.com Services, LLC*, No. 8:22-cv-01727 (C.D. Cal.), likewise does not resolve the source issue on the present record. There, the transaction-specific report was before the court and showed ordinary court-record sourcing and no relevant sex-offender-registry result.
-
-45. Home Depot's transaction-specific report is not presently before Plaintiff. General public conviction records do not establish which source First Advantage used in Home Depot's report.
-
-46. If the Home Depot-specific report is properly considered and contradicts Plaintiff's information-and-belief allegation, Plaintiff's theory must conform to that document. Until then, source remains a factual issue supported by the allegations above.
+37. If the Home Depot-specific report is properly considered and contradicts Plaintiff's information-and-belief allegation, Plaintiff's theory must conform to that document.
 
 # VIII. STATUTE OF LIMITATIONS
 
-47. The alleged prohibited employment use occurred on or about August 2024.
+38. The alleged prohibited employment use occurred on or about August 2024.
 
-48. Plaintiff seeks the compensatory, additional, exemplary, and fee remedies authorized by Penal Code § 290.46(j)(4)(A) for the statutory liability alleged here.
+39. Plaintiff seeks the compensatory, additional, exemplary, and fee remedies authorized by Penal Code § 290.46(j)(4)(A) for the statutory liability alleged here.
 
-49. Plaintiff proceeds on the three-year limitations period for a liability created by statute under Code of Civil Procedure § 338(a), which places an August 2024 employment-use claim within the limitations period in September 2026.
+40. Plaintiff proceeds on the three-year limitations period for a liability created by statute under Code of Civil Procedure § 338(a), which places an August 2024 employment-use claim within the limitations period in September 2026.
 
-50. Because § 290.46(j)(4)(A) also contains an optional civil-penalty remedy, Plaintiff does not rely on that civil-penalty remedy to establish timeliness and does not seek it in this opening complaint. Nothing in this pleading asks the Court to apply a penalty-specific limitations period to the compensatory/remedial statutory liability asserted.
+41. Because § 290.46(j)(4)(A) also contains an optional civil-penalty remedy, Plaintiff does not rely on that civil-penalty remedy to establish timeliness and does not seek it in this opening complaint.
 
 # IX. CAUSE OF ACTION
 ## Unauthorized Employment Use of Information Disclosed Pursuant to Penal Code § 290.46
 ### Penal Code § 290.46(j)(2)(E), (j)(4)(A)
 
-51. Plaintiff realleges paragraphs 1 through 50.
+42. Plaintiff realleges paragraphs 1 through 41.
 
-52. Plaintiff is a person as to whom information is disclosed on California's Megan's Law internet website established pursuant to Penal Code § 290.46.
+43. Plaintiff is a person as to whom information is disclosed on California's Megan's Law internet website established pursuant to Penal Code § 290.46.
 
-53. Section 290.46(j)(2)(E) prohibits use of information disclosed pursuant to § 290.46 for purposes relating to employment except where authorized by § 290.46(j)(1) or another provision of law.
+44. Section 290.46(j)(2)(E) prohibits use of information disclosed pursuant to § 290.46 for purposes relating to employment except where authorized by § 290.46(j)(1) or another provision of law.
 
-54. On information and belief, information disclosed pursuant to § 290.46 concerning Plaintiff was furnished or made available to Home Depot through its employment-screening process.
+45. On information and belief, information disclosed pursuant to § 290.46 concerning Plaintiff was furnished or made available to Home Depot through its employment-screening process.
 
-55. On information and belief, Home Depot received, accessed, considered, and used that information for a purpose relating to employment.
+46. On information and belief, Home Depot received, accessed, considered, and used that information for a purpose relating to employment.
 
-56. The use was a substantial factor in Home Depot's decision to deny, withdraw, end, prevent, or not finalize Plaintiff's accepted Tracy employment.
+47. The use was a substantial factor in Home Depot's decision to deny, withdraw, end, prevent, or not finalize Plaintiff's accepted Tracy employment.
 
-57. Plaintiff is unaware of any law authorizing Home Depot to use information disclosed pursuant to § 290.46 for this warehouse, distribution, or fulfillment position.
+48. Plaintiff is unaware of any law authorizing Home Depot to use information disclosed pursuant to § 290.46 for this warehouse, distribution, or fulfillment position.
 
-58. Home Depot thereby violated Penal Code § 290.46(j)(2)(E).
+49. Home Depot thereby violated Penal Code § 290.46(j)(2)(E).
 
-59. Penal Code § 290.46(j)(4)(A) authorizes actual damages, an additional amount within the statutory range, attorney's fees, and exemplary damages upon the required showing, among other remedies.
+50. Penal Code § 290.46(j)(4)(A) authorizes actual damages, an additional amount within the statutory range, attorney's fees, and exemplary damages upon the required showing, among other remedies.
 
-60. Plaintiff does not seek preventive relief under § 290.46(j)(4)(B) in this opening complaint.
+51. Plaintiff does not seek preventive relief under § 290.46(j)(4)(B) in this opening complaint.
 
 # X. DAMAGES
 
-61. Plaintiff suffered economic harm including lost employment compensation, lost earning opportunity, and other consequential loss according to proof.
+52. Plaintiff suffered economic harm including lost employment compensation, lost earning opportunity, and other consequential loss according to proof.
 
-62. Plaintiff seeks actual damages and the additional and exemplary relief legally available under § 290.46(j)(4)(A), without duplicative recovery.
+53. Plaintiff seeks actual damages and the additional and exemplary relief legally available under § 290.46(j)(4)(A), without duplicative recovery.
 
-63. Plaintiff does not presently assign an invented hourly wage, weekly-hours figure, or employment duration unsupported by the current record.
+54. Plaintiff does not presently assign an invented hourly wage, weekly-hours figure, or employment duration unsupported by the current record.
 
 # XI. PRAYER FOR RELIEF
 
@@ -207,15 +191,3 @@ Respectfully submitted,
 ___________________________________  
 BRENDAN NGWA NFORBI  
 Plaintiff, In Propria Persona
-
----
-
-# Filing gates — remove before filing
-
-1. **Transaction-specific report:** serve the First Advantage inspection demand and Home Depot personnel-file demand first if practicable.
-2. **Entity:** confirm Home Depot U.S.A., Inc. was the employer/report user.
-3. **Diversity:** reconfirm Delaware incorporation and Atlanta principal place of business from current authoritative records.
-4. **Amount in controversy:** preserve the good-faith basis using actual economic loss plus the non-penalty remedies available under § 290.46(j)(4)(A); do not invent hours or tenure.
-5. **Source:** if the Home Depot-specific report is obtained, replace information-and-belief allegations with exact source wording after a hostile contradiction audit.
-6. **FCRA / ICRAA:** do not add Counts under 15 U.S.C. § 1681b(b)(3)(A) or Civ. Code § 1786.40 unless a truthful factual discovery chronology establishes timeliness. Later legal understanding is not a substitute for discovery of violation facts.
-7. **Service:** reconfirm the current California Secretary of State agent immediately before filing/service.
