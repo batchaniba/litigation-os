@@ -8,7 +8,7 @@ You are asked to evaluate the **strength** of this California employment / backg
 1. Liability odds on the core Penal Code § 290.46(j)(2)(E) claim against (a) Randstad and (b) RK Logistics, separately.
 2. Whether RK’s two defenses (not the employer; MVR not registry) actually kill the case or only some claims.
 3. A settlement range that is **not** anchored to Plaintiff’s $55,000 / $85,000 numbers. Ignore those numbers until the end, then say whether they look cheap, fair, or rich given the file.
-4. What you would **not** give away for free (extensions, dropping a defendant, dropping below the statutory floor).
+4. What you would **not** give away for free (extensions, dropping a defendant, or making unsupported valuation concessions).
 
 ## Case caption and clocks (as of Friday, August 28, 2026, morning Pacific)
 
@@ -50,13 +50,13 @@ July 20 pre-filing demands were **$85,000 each** defendant, deadline August 2. R
 6. Criminal searches (Fresno, San Joaquin, Santa Clara, Stanislaus, Clark NV, New York, Sheridan WY): **No Record.** Federal: No Record. OFAC / OIG / GSA: clear.
 7. Sole adverse item: National Sex Offender Search — California — **“Subject is a registered Sex Offender in California.”**
 8. July 13, 1:31 p.m.: InfoMart FCRA “Notice to Consumer for Employment Purposes” (pre-adverse).
-9. July 15: Randstad terminates. **Two business days** after the July 13 notice (FCRA commonly treated as requiring at least five business days before final adverse action).
+9. July 15: Randstad terminates **two business days** after the July 13 InfoMart notice. Do not call this a statutory five-business-day violation: §1681b(b)(3)(A) has no fixed five-day period, and the InfoMart wording may fit the CRA public-record notice in §1681k rather than Randstad's employer-side pre-adverse package. Audit whether Randstad separately supplied the report and summary of rights before adverse action, and test any transportation-applicant exception.
 10. July 15, 8:26 a.m.: RK Transportation Manager Jack Altares email (produced with Garcia’s letter): “Brendan's MVR came back and unfortunately, we will not be able to move forward with him as a driver for RK.”
 11. SambaSafety MVR (order date July 14) shows a **Class A / CMV** chemical-test refusal DQ (eff. 12/1/2024) and a related suspension (eff. 2/20/2025, cleared 5/19/2026). The job posting was **non-commercial Class C**. Plaintiff has a Class C reissue dated June 11, 2026 (not in the public packet — PII).
 
 ## Causes of action (verified complaint)
 
-1. Penal Code § 290.46(j)(2)(E) — use of Megan’s Law registry info for employment. Complaint prayer cites **(j)(5)** for treble / $250 min / fees / exemplary / civil penalty not exceeding $25,000. Portfolio internal notes instead cite **(j)(4)(A)** as actual damages **or $25,000, whichever is greater**, plus fees. **Look up the current statute. Do not trust either numbering blindly.**
+1. Penal Code § 290.46(j)(2)(E) — use of Megan’s Law registry info for employment. Complaint prayer cites **(j)(5)** for treble / $250 min / fees / exemplary / civil penalty not exceeding $25,000. Current portfolio research confirms **(j)(4)(A)** is the civil-remedy paragraph, but it does **not** say actual damages or $25,000, whichever is greater. It provides actual damages; an additional amount of at least $250 up to three times actuals; attorney's fees; and exemplary damages or a civil penalty not exceeding $25,000.
 2. Tameny wrongful termination in violation of public policy (against all defendants).
 3. ICRAA, Civ. Code § 1786 et seq. (complaint cites § 1786.50: actual or $10,000 per violation, punitives, fees).
 4. Invasion of privacy, Cal. Const. Art. I, § 1.
@@ -81,7 +81,7 @@ No answer, no demurrer, no § 430.41 letter as of August 28. First move was to h
 
 Portfolio internal model (Matter 27.json):
 
-- Conservative ~$45,000 (statutory floor + modest distress; few or no paid shifts).
+- Conservative ~$45,000 (scenario value, not a statutory floor; modest distress; few or no paid shifts).
 - Moderate ~$110,000.
 - Aggressive ~$250,000 (stacking + punitives + two defendants).
 
@@ -96,7 +96,7 @@ If Plaintiff worked **no** paid shifts, lost wages are weak and the case looks m
 - Short relationship (rehired July 7, out July 15).
 - RK has a facially lawful **safety/MVR** story; a factfinder could believe Altares.
 - Joint-employer / “use” of registry info is the fight on RK.
-- FCRA five-day issue is stronger on **procedure** than on the Penal Code “use” element.
+- FCRA procedure needs a document-level audit: determine whether the July 13 InfoMart notice is §1681k CRA notice, whether Randstad separately supplied the §1681b(b)(3)(A) report/rights package, and whether any transportation-applicant exception applies. Do not assume a fixed five-business-day rule.
 - § 425.115 notices not yet personally served.
 - $55k / $85k email is now in defense counsel’s hands; it will be used in negotiation even after it expires (not at trial, § 1152).
 
@@ -113,7 +113,7 @@ If Plaintiff worked **no** paid shifts, lost wages are weak and the case looks m
 
 Plaintiff’s question is: **should I give in cheap?** Default answer unless the documents compel otherwise: **no.** Reasons to test:
 
-- $55,000 is approximately the **conservative** band for **one** defendant, while two defendants are in the case and a statutory floor in the $25,000 neighborhood (if (j)(4)(A) is the live text) already does a lot of that work.
+- Do not anchor to a nonexistent $25,000 §290.46 floor. Section 290.46(j)(4)(A) instead allows actual damages, an additional amount of at least $250 up to three times actuals, fees, and exemplary damages or a civil penalty up to $25,000. ICRAA §1786.50 has the separate actual-or-$10,000 structure if a qualifying violation is proven.
 - Chad’s September 4 ask is an attempt to **keep a dying fuse alive** without paying. He waited until the morning the offer dies.
 - Granting RK a September 14 extension the same week would give **both** defendants time and kill the only hard clock (August 31).
 - After 2:00 p.m. PT August 28, the correct posture is: no open number; next number comes from **them**; litigation clocks unchanged.
