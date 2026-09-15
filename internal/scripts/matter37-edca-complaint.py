@@ -80,10 +80,11 @@ CAPTION_RIGHT = [
 CONTENT = [
     (
         "NOTICE",
-        "REVIEW DRAFT -- NOT FOR FILING. Fill the FCRA/ICRAA discovery date "
-        "in paragraphs 44 through 47, confirm the Tracy position is not "
-        "DOT-excepted, and have Plaintiff sign before any filing. Serve CSC, "
-        "not 5395 Hopkins Road.",
+        "REVIEW DRAFT -- NOT FOR FILING. Confirm that May 29, 2026 is the "
+        "first date Plaintiff understood Penal Code section 290.46(j)(2)(E) "
+        "and the Tracy events as a report-based statutory violation. Confirm "
+        "the Tracy position is not DOT-excepted, and have Plaintiff sign "
+        "before any filing. Serve CSC, not 5395 Hopkins Road.",
     ),
     (
         "PARA",
@@ -522,12 +523,14 @@ CONTENT = [
     (
         "PARA",
         "44. At the time Home Depot stopped the onboarding process in 2024, "
-        "Plaintiff knew that the employment opportunity had ended. Home Depot "
-        "did not give him the consumer report, identify First Advantage, "
-        "disclose the report's contents, provide the statutory pre-adverse "
-        "package, or otherwise reveal the report-based statutory violations "
-        "alleged here. The 2024 employment result is not itself discovery of "
-        "the FCRA or ICRAA omissions.",
+        "Plaintiff knew that the employment opportunity had ended. That is "
+        "when he knew he had been harmed in the ordinary sense: he had lost "
+        "the accepted Tracy hire. Home Depot did not give him the consumer "
+        "report, identify First Advantage, disclose the report's contents, "
+        "provide the statutory pre-adverse package, or advise him that an "
+        "investigative consumer report had been obtained. The 2024 employment "
+        "result is not discovery of the FCRA, ICRAA, or Penal Code section "
+        "290.46 violations alleged here.",
     ),
     (
         "PARA",
@@ -535,31 +538,32 @@ CONTENT = [
         "Advantage report or First Advantage's Home Depot-specific consumer "
         "file. First Advantage reports generated for other employers, and "
         "public records identifying First Advantage as a Home Depot vendor, "
-        "are not a substitute for discovery of what Home Depot obtained and "
-        "used in this transaction. Those materials support the "
-        "information-and-belief allegations in this Complaint; they do not "
-        "fill the FCRA/ICRAA discovery date.",
+        "support the information-and-belief allegations about what Home "
+        "Depot's screen contained. They are not Home Depot's report, and they "
+        "are not pleaded as the discovery event.",
     ),
     (
         "PARA",
-        "46. Plaintiff has prepared statutory inspection requests to First "
+        "46. On or about May 29, 2026, Plaintiff first learned that Penal "
+        "Code section 290.46(j)(2)(E) prohibits use of information disclosed "
+        "pursuant to section 290.46 for purposes relating to employment, and "
+        "first understood that the Tracy background-check cessation was a "
+        "report-based statutory violation rather than an unexplained non-hire. "
+        "Until that date, Home Depot's silence had disclosed only the "
+        "employment result. Plaintiff does not allege that May 29, 2026 is "
+        "the date he first knew he had lost the job.",
+    ),
+    (
+        "PARA",
+        "47. This action is filed within two years after that discovery and "
+        "within five years after the FCRA violation occurred. See 15 U.S.C. "
+        "section 1681p; Cal. Civ. Code section 1786.52. The Penal Code "
+        "section 290.46(j)(4)(A) claim is a liability created by statute "
+        "timely under Code of Civil Procedure section 338(a) as well. "
+        "Plaintiff has prepared statutory inspection requests to First "
         "Advantage under Civil Code sections 1786.10 and 1786.22, and a "
-        "personnel-file request to Home Depot under Labor Code section 1198.5, "
-        "to obtain the transaction-specific records. Those requests have not "
-        "yet been treated as served. If they produce the Home Depot-specific "
-        "report or file, that production may supply the precise discovery "
-        "event. Plaintiff does not invent a discovery date in this review "
-        "draft.",
-    ),
-    (
-        "PARA",
-        "47. Before filing, Plaintiff will insert the true date and event by "
-        "which he first discovered the FCRA and ICRAA violations alleged in "
-        "Counts One and Two. This action will be filed within two years after "
-        "that discovery and within five years after the FCRA violation "
-        "occurred. See 15 U.S.C. section 1681p; Cal. Civ. Code section "
-        "1786.52. Do not file this Complaint with a blank or bracketed "
-        "discovery date.",
+        "personnel-file request to Home Depot under Labor Code section 1198.5. "
+        "Those requests have not yet been treated as served.",
     ),
     (
         "SUBHEAD",

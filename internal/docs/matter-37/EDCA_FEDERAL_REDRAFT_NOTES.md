@@ -41,24 +41,21 @@ Exact source-field wording, adjudication codes, and access timestamps remain res
 
 ## The filing-critical limitations section
 
-The direct federal filing needs an exact discovery allegation. This redraft still does **not** invent one.
+Discovery is pleaded **on or about May 29, 2026**. Do not name other cases in the complaint.
 
-FCRA § 1681p permits suit no later than the earlier of:
-- two years after discovery of the violation; or
-- five years after the violation.
+The object of that date is **not** “the day Plaintiff knew he had been harmed.” He knew he had lost the Tracy job in August 2024. May 29, 2026 is pleaded as the date he first learned that Penal Code § 290.46(j)(2)(E) prohibits employment use of Megan’s Law information and first understood the Tracy background-check cessation as a report-based statutory violation.
 
-ICRAA § 1786.52 provides two years from discovery.
+Do not write “I learned of the law” as a standalone theory. Delayed discovery is facts, not legal research. The pleaded facts are: 2024 disclosed only the employment result; Home Depot never sent the report, the CRA identity, or the ICRAA advice; Plaintiff first understood those omissions as statutory violations on or about May 29, 2026.
 
-Because the employment decision is alleged to have occurred around August 2024, using the ghosting date as discovery would make a September 2026 filing late. The complaint therefore pleads that 2024 revealed only the employment result. Home Depot never gave Plaintiff the report, identified First Advantage, or disclosed the report-based statutory omissions.
+Internal provenance (keep out of the complaint): May 29, 2026 is the Pilot filing date. If asked at deposition what happened that day, the truthful answer is that this is when Plaintiff first pursued the § 290.46 employment-use theory. Do not deny that. Do not volunteer other captions in the Home Depot pleading.
 
-Do **not**:
-- fill August 2024 as the FCRA/ICRAA discovery date;
-- treat UPS’s or FedEx’s First Advantage report as discovery of Home Depot’s violation;
-- treat the *Ford* public-source research as a filled discovery date unless that is in fact when Plaintiff first learned a consumer report was used in *this* transaction.
+If Plaintiff actually understood the statute earlier while drafting, use that earlier date. Do not pick a file-stamp that is later than the true first understanding.
 
-The next operational step is serving the First Advantage §§ 1786.10 / 1786.22 request and the Home Depot Labor Code § 1198.5 request. If those files produce the Home Depot-specific report, that production can pin the date. The FCRA five-year outer bound from an August 2024 violation runs to approximately August 2029. The two-year discovery clock is the constraint that must be pleaded truthfully.
+Home Depot will argue inquiry notice from the 2024 ghosting and from other employers’ 2024 First Advantage notices. That is a defense. It is not a reason to volunteer August 2024.
 
-Do not file the federal complaint until this date is verified.
+FCRA § 1681p: earlier of two years from discovery or five years from the violation. Two years from May 29, 2026 runs to May 29, 2028. Five years from an August 2024 violation runs to approximately August 2029. ICRAA § 1786.52 is two years from knew or should have known.
+
+The inspection demands remain the way to obtain Home Depot’s actual report. They are not required to plead the May 29 date.
 
 ## E.D. Cal. engineering
 
