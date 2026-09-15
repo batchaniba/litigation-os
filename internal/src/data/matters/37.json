@@ -3,6 +3,9 @@
   "caption": "Brendan Ngwa Nforbi v. Home Depot U.S.A., Inc.",
   "case_no": "TBD",
   "court": "USDC E.D. Cal. — Sacramento Division (proposed direct filing)",
+  "courtlistener": {
+    "court_id": "caed"
+  },
   "claims": "FCRA § 1681b(b)(3)(A); ICRAA Civ. Code §§ 1786.40/1786.50; Penal Code § 290.46(j)(2)(E)/(j)(4)(A)",
   "status": "FEDERAL REDRAFT — E.D. Cal. Sacramento complaint now pleads § 1331 plus alternative § 1332; warehouse/fulfillment (not DOT); CSC service; and § 290.46 source/use as I&B ultimate facts. Inspection demands are drafted but unsigned/unserved. Discovery date remains the filing gate.",
   "status_label": "Federal redraft — pre-filing",
