@@ -2,7 +2,7 @@
   "number": 32,
   "caption": "Nforbi v. Meza-Gonzalez, et al",
   "case_no": "3:26-cv-08271-PHK",
-  "court": "USDC N.D. Cal. (related to Serrato 4:26-cv-05953-ASK per Aug. 24, 2026 order; also related Candelaria 3:26-cv-08272-LJC)",
+  "court": "USDC N.D. Cal. (related to Serrato 3:26-cv-05953-CRB per Aug. 24, 2026 order; also related Candelaria 3:26-cv-08272-LJC)",
   "courtlistener": {
     "court_id": "cand",
     "docket_id": 74220629,
@@ -17,7 +17,7 @@
   "note": "N.D. Cal. § 1983 action docketed Aug. 10, 2026 as No. 3:26-cv-08271-PHK (ndcal/). Also document store for Matters 1, 2, 20, and 24 under matter-32/from-NN/. Nov. 1 / Candelaria APS evidence in Matter 33.",
   "badge": "FAC FILED",
   "filed": "August 10, 2026 (docketed; intake packet signed Aug. 7, 2026)",
-  "judge": "Hon. Ajay S. Krishnan, U.S. Magistrate Judge (N.D. Cal.) — reassigned Aug. 24, 2026 from Mag. Kang (related to Serrato 4:26-cv-05953-ASK)",
+  "judge": "Hon. Ajay S. Krishnan, U.S. Magistrate Judge (N.D. Cal.) — reassigned Aug. 24, 2026 from Mag. Kang (related to Serrato 3:26-cv-05953-CRB)",
   "cluster": 1,
   "type": "Federal",
   "defendants": "Santiago Meza-Gonzalez (CHP #023295), individually; Jose Melano (CHP #023054), individually; and DOES 1–10 — N.D. Cal. operative complaint (Aug. 7, 2026). State-court Matter 2 tracks the same officers under a False Imprisonment / Battery / Bane Act caption.",

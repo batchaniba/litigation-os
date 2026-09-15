@@ -1,7 +1,7 @@
 {
   "number": 24,
   "caption": "Newanforbi v. Serrato",
-  "case_no": "4:26-cv-05953-ASK",
+  "case_no": "3:26-cv-05953-CRB",
   "court": "USDC N.D. Cal.",
   "courtlistener": {
     "court_id": "cand",
@@ -9,13 +9,13 @@
     "docket_url": "/docket/73504901/ngehsi-newanforbi-v-serrato/"
   },
   "claims": "42 USC 1983: Fourteenth Amendment (Substantive & Procedural Due Process), First Amendment (Retaliation); Declaratory Relief",
-  "status": "Reassignment pending: Dkt. 28 (filed Sep. 11) vacated all hearings before Mag. Krishnan, including the Sep. 30 MTD hearing (Dkt. 21) — re-notice before the new district judge once assigned; case-number suffix changes from -ASK. CMC continued per Dkt. 25 to 14 days after the final order on Dkt. 18; Sep. 8 disclosure/JCMS/ADR dates reset from that conference. Rule 26(a)(1) exchanged Sep. 8–9 — do not file. Name-conform: Li will not stipulate but will not oppose a 7-11 if Nforbi and Newanforbi are the same person.",
-  "status_label": "MTD Sep. 30 VACATED — reassignment pending; CMC continued",
+  "status": "Reassigned Sep. 14 to Senior U.S. District Judge Charles R. Breyer as 3:26-cv-05953-CRB (Dkt. 29) after Defendant declined magistrate jurisdiction. MTD hearing reset to Nov. 20, 2026 at 10:00 a.m. via Zoom webinar (Dkt. 30). Briefing schedule unchanged (Reply due Sep. 16). CMC continued per Dkt. 25 to 14 days after final order on Dkt. 18; disclosures exchanged Sep. 8–9. Name-conform: Li will not oppose a 7-11 confirming same person.",
+  "status_label": "MTD Nov. 20 (Judge Breyer) — reassigned; CMC continued",
   "lifecycle": "active",
   "proceeding": "federal_civil",
   "phase": "mtd_briefing",
   "filed": "June 17, 2026",
-  "judge": "Reassignment pending — Clerk's Notice of Impending Reassignment to a U.S. District Judge filed Sep. 11, 2026 (Dkt. 28); case leaving Mag. Judge Ajay S. Krishnan. New judge and case-number suffix TBD.",
+  "judge": "Hon. Charles R. Breyer, Senior U.S. District Judge (N.D. Cal.) — reassigned Sep. 14, 2026 (Dkt. 29) following Defendant's magistrate declination (Dkt. 27).",
   "cluster": 1,
   "type": "Federal",
   "defendants": "Captain G. Serrato, Commander, Dublin Area, California Highway Patrol (individual and official capacities)",
@@ -52,23 +52,23 @@
       "filed": true
     },
     {
-      "path": "/documents/matter-24/Name Conform Administrative Motion Packet - Serrato (N.D. Cal. 4-26-cv-05953-ASK) (September 14, 2026).pdf",
+      "path": "/documents/matter-24/Name Conform Administrative Motion Packet - Serrato (N.D. Cal. 3-26-cv-05953-CRB) (September 15, 2026).pdf",
       "filed": false
     },
     {
-      "path": "/documents/matter-24/Administrative Motion - Conform Plaintiff's Name - Serrato (N.D. Cal. 4-26-cv-05953-ASK) (September 14, 2026).pdf",
+      "path": "/documents/matter-24/Administrative Motion - Conform Plaintiff's Name - Serrato (N.D. Cal. 3-26-cv-05953-CRB) (September 15, 2026).pdf",
       "filed": false
     },
     {
-      "path": "/documents/matter-24/Declaration ISO Administrative Motion - Conform Plaintiff's Name - Serrato (N.D. Cal. 4-26-cv-05953-ASK) (September 14, 2026).pdf",
+      "path": "/documents/matter-24/Declaration ISO Administrative Motion - Conform Plaintiff's Name - Serrato (N.D. Cal. 3-26-cv-05953-CRB) (September 15, 2026).pdf",
       "filed": false
     },
     {
-      "path": "/documents/matter-24/Proposed Order - Conform Plaintiff's Name - Serrato (N.D. Cal. 4-26-cv-05953-ASK) (September 14, 2026).pdf",
+      "path": "/documents/matter-24/Proposed Order - Conform Plaintiff's Name - Serrato (N.D. Cal. 3-26-cv-05953-CRB) (September 15, 2026).pdf",
       "filed": false
     },
     {
-      "path": "/documents/matter-24/Proof of Service - Name Conform Administrative Motion - Serrato (N.D. Cal. 4-26-cv-05953-ASK) (September 14, 2026).pdf",
+      "path": "/documents/matter-24/Proof of Service - Name Conform Administrative Motion - Serrato (N.D. Cal. 3-26-cv-05953-CRB) (September 15, 2026).pdf",
       "filed": false
     },
     {
@@ -76,7 +76,7 @@
       "filed": false
     },
     {
-      "path": "/documents/matter-24/Exhibit A Cover - ECF Help Desk - Serrato (N.D. Cal. 4-26-cv-05953-ASK) (September 14, 2026).pdf",
+      "path": "/documents/matter-24/Exhibit A Cover - ECF Help Desk - Serrato (N.D. Cal. 3-26-cv-05953-CRB) (September 15, 2026).pdf",
       "filed": false
     },
     {

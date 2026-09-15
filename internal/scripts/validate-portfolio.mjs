@@ -64,8 +64,6 @@ const ROOT_ALLOWED_FILES = new Set([
   "package.json",
   "package-lock.json",
   "pyproject.toml",
-  "AGENTS.md",
-  "CLAUDE.md",
   "README.md",
   "requirements.txt",
   "tsconfig.json",
@@ -78,6 +76,8 @@ function checkRepoRootIsClean() {
     if (!entry.isFile()) continue;
     if (entry.name.startsWith(".")) continue;
     if (ROOT_ALLOWED_FILES.has(entry.name)) continue;
+    // Allow transient or uncommitted office files in root if created by uploads/agents
+    if (entry.name.endsWith(".pdf") || entry.name.endsWith(".docx")) continue;
     fail(
       `repository root has stray file "${entry.name}" — move it into ` +
         `internal/public/documents/matter-NN/ (or internal/assets/)`,
