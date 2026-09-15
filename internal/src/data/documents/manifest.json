@@ -1,7 +1,7 @@
 {
   "version": 1,
   "fileCount": 1264,
-  "totalBytes": 888007547,
+  "totalBytes": 888007539,
   "files": [
     {
       "path": "/documents/_form-library/ao239-blank-template.pdf",
@@ -1044,7 +1044,7 @@
       "sha256": "f0f7c24c5ca36cd6b45ac270cd171da0c8c5b8dbdf5804cfd93d82563b670ba5"
     },
     {
-      "path": "/documents/matter-12/018 Request for Sheriff Service + Fee Waiver : CC Auth — Ngwa Nforbi v. Diamond Truc.pdf",
+      "path": "/documents/matter-12/018 Request for Sheriff Service + Fee Waiver : CC Auth \u2014 Ngwa Nforbi v. Diamond Truc.pdf",
       "size": 40998,
       "sha256": "c27e93998452da4a50fc081a30c39c36d99d3bb88c879fdd853c14ada4133504"
     },
@@ -1584,7 +1584,7 @@
       "sha256": "75490eafd07533965b7cf9aab18a19970c9b6ef2d6f432d9fbd551254772bb35"
     },
     {
-      "path": "/documents/matter-19/Exhibit A Cover — Petition for Writ of Habeas Corpus (HC-004 Attachment).pdf",
+      "path": "/documents/matter-19/Exhibit A Cover \u2014 Petition for Writ of Habeas Corpus (HC-004 Attachment).pdf",
       "size": 2049,
       "sha256": "77bb842edaf0f19a10e3b73706d98ac3b36245004c91a5a08e776c7411e1f1a0"
     },
@@ -1604,12 +1604,12 @@
       "sha256": "6799967fa187ef88c25f1179ea60aeb51899278c34c6eefa773637ad460cc9b7"
     },
     {
-      "path": "/documents/matter-19/HC-004 Notice and Request for Ruling Packet (with Exhibit A — Unstamped Petition) (Ready to File Aug 17 2026).pdf",
+      "path": "/documents/matter-19/HC-004 Notice and Request for Ruling Packet (with Exhibit A \u2014 Unstamped Petition) (Ready to File Aug 17 2026).pdf",
       "size": 24424353,
       "sha256": "3dedcd2cbeda6c125e4b4b9c7ea85d5cb247874c0e41b78e3c0f1db4d3e6b178"
     },
     {
-      "path": "/documents/matter-19/HC-004 Notice and Request for Ruling Packet (with Exhibit A — Unstamped Petition) (Ready to File Aug 7 2026).pdf",
+      "path": "/documents/matter-19/HC-004 Notice and Request for Ruling Packet (with Exhibit A \u2014 Unstamped Petition) (Ready to File Aug 7 2026).pdf",
       "size": 24424352,
       "sha256": "ea161e502031b4a01a9df56def1b26999062583a20ed08e2451d4b7942834de2"
     },
@@ -4389,17 +4389,17 @@
       "sha256": "5abda668a8e4846e5dbc72f46c73151ad42aac99e78518308a07cc44d50c9610"
     },
     {
-      "path": "/documents/matter-30/CASOMB Complaint Submission – HOPE Psychotherapy, Inc. 2.pdf",
+      "path": "/documents/matter-30/CASOMB Complaint Submission \u2013 HOPE Psychotherapy, Inc. 2.pdf",
       "size": 83191,
       "sha256": "dc4061596765570a06d4e86f38db4d34f71fb386904d98ee7bfe821d13256f16"
     },
     {
-      "path": "/documents/matter-30/CASOMB Complaint Submission – HOPE Psychotherapy, Inc. 3.pdf",
+      "path": "/documents/matter-30/CASOMB Complaint Submission \u2013 HOPE Psychotherapy, Inc. 3.pdf",
       "size": 45518,
       "sha256": "ce8099b1e920e74cee0dd78ff9282e74706a93d3ffc90907bfadd5057472bbf4"
     },
     {
-      "path": "/documents/matter-30/CASOMB Complaint Submission – HOPE Psychotherapy, Inc. 4.pdf",
+      "path": "/documents/matter-30/CASOMB Complaint Submission \u2013 HOPE Psychotherapy, Inc. 4.pdf",
       "size": 40474,
       "sha256": "1437c5d712b6b46fcb907c00bf50bd79f6265c528037923266299cda908e6824"
     },
@@ -5816,27 +5816,27 @@
     {
       "path": "/documents/matter-36/edca/AO 239 IFP Application - Ngwa Nforbi v. AT&T Mobility Services LLC (E.D. Cal.) (Sep 15 2026).pdf",
       "size": 898454,
-      "sha256": "9cf6aeb8a6a1e1cf88d19a82c200ef0713d21273938fb937950a56fc05eb2519"
+      "sha256": "e7cf71a1b724b8d49354c65962e80ae6a995f8f2090b5198d765dd4e4d8d1d5e"
     },
     {
       "path": "/documents/matter-36/edca/AO 440 Summons - AT&T Mobility Services LLC (E.D. Cal.) (Sep 15 2026).pdf",
       "size": 39116,
-      "sha256": "1f00a7115ffb4656d0e7ffb4143e1cb663dc9883c51817c2530aa876f8018a8f"
+      "sha256": "4c059ca8eaa89ce0544d778356112effc8ca0c6354029b22df46dea902c34275"
     },
     {
       "path": "/documents/matter-36/edca/Complaint - Ngwa Nforbi v. AT&T Mobility Services LLC (E.D. Cal.) (Sep 15 2026).pdf",
       "size": 232811,
-      "sha256": "1537458c7cbc3cd529dbf1a122719b56a2d352aefba640af693dbe122e481f10"
+      "sha256": "20a86665358b4de8157fd2de5eb5faa79f31c1f464c3a30566b9a4b00a8605ba"
     },
     {
       "path": "/documents/matter-36/edca/E.D. Cal. Intake Packet (print copy) - Ngwa Nforbi v. AT&T (Sep 15 2026).pdf",
-      "size": 1652179,
-      "sha256": "6f647f0404ce4cb8f9cdceb40100484117e0ec35f8e36bdce1c5ece8b3568bc3"
+      "size": 1652178,
+      "sha256": "9f44d0a4c23d33e68e1edef1eadd17f034f1ec100c0f42a1658f13a86495ac47"
     },
     {
       "path": "/documents/matter-36/edca/JS 44 Civil Cover Sheet - Ngwa Nforbi v. AT&T Mobility Services LLC (E.D. Cal.) (Sep 15 2026).pdf",
-      "size": 1203165,
-      "sha256": "67dbd0dc3aa5aea0eb84668fc40fac923a75b9e5f4b90e0960933e62d4536210"
+      "size": 1203164,
+      "sha256": "2c5158df41ca0accfd40699ccda25699ca268d43ae4589cf75d265d9f36a15bc"
     },
     {
       "path": "/documents/matter-36/Filing Packet - Ngwa Nforbi v AT&T Mobility Services LLC (Sep 8 2026).pdf",
@@ -5951,27 +5951,27 @@
     {
       "path": "/documents/matter-37/edca/AO 239 IFP Application - Ngwa Nforbi v. Home Depot U.S.A., Inc. (E.D. Cal.) (Sep 15 2026).pdf",
       "size": 898427,
-      "sha256": "d5b949d63ab5b7893f16ca700dd2a7460e503f7fe0b1ac49423729573373f307"
+      "sha256": "8d6aa0fc4e4e4c1d37fa0cec57b83f0c814453c0174ae56faa97009c2515f846"
     },
     {
       "path": "/documents/matter-37/edca/AO 440 Summons - Home Depot U.S.A., Inc. (E.D. Cal.) (Sep 15 2026).pdf",
       "size": 39063,
-      "sha256": "419513dd3c13faa38db776d18d2e97848da26797410aeaa28e5903834a6fe453"
+      "sha256": "946e52c969dd5d825801155c6bc7c0594e9dfbcd40a7e7d70a3405bb37c2395c"
     },
     {
       "path": "/documents/matter-37/edca/Complaint - Ngwa Nforbi v. Home Depot U.S.A., Inc. (E.D. Cal.) (Sep 15 2026).pdf",
       "size": 222201,
-      "sha256": "f818aa2a2912c32275ea831dc9a6aecd276abd029121c5633c859d3c88650777"
+      "sha256": "2afb24c63836b175c55ffa00c1ed414ebd776d62b494b4c6e7c2698838b5b3be"
     },
     {
       "path": "/documents/matter-37/edca/E.D. Cal. Intake Packet (print copy) - Ngwa Nforbi v. Home Depot (Sep 15 2026).pdf",
-      "size": 1641935,
-      "sha256": "04cda612b539845cfad97a8b1ca40903748a48fecba7519fca520e242f7a01bc"
+      "size": 1641934,
+      "sha256": "0b4d1d1e3f7edd63a3fcb241d35d6c799223cb83b386f4c4b8c029842764a14d"
     },
     {
       "path": "/documents/matter-37/edca/JS 44 Civil Cover Sheet - Ngwa Nforbi v. Home Depot U.S.A., Inc. (E.D. Cal.) (Sep 15 2026).pdf",
-      "size": 1203048,
-      "sha256": "833a77233a46c9e217e23560900091ad23d6577aad3e86831698e453a02b2b51"
+      "size": 1203047,
+      "sha256": "49ed21e14c9e8d91571ab7570b4ac23409efcacaae801f067cf60145dd9f721f"
     },
     {
       "path": "/documents/matter-37/Filing Packet - Ngwa Nforbi v Home Depot USA Inc (Sep 8 2026).pdf",
@@ -6011,27 +6011,27 @@
     {
       "path": "/documents/matter-38/edca/AO 239 IFP Application - Ngwa Nforbi v. Swift Transportation Co. of Arizona LLC (E.D. Cal.) (Sep 15 2026).pdf",
       "size": 898398,
-      "sha256": "dfde1fb6348d6b2a6e9da45e5011e5f7de5360f57cc5b6fb2417de17ecd48144"
+      "sha256": "48d6c4a8d4262ddae442b0014585c41c692a37cfdce072f882b747ad8e20de63"
     },
     {
       "path": "/documents/matter-38/edca/AO 440 Summons - Swift Transportation Co. of Arizona LLC (E.D. Cal.) (Sep 15 2026).pdf",
       "size": 39164,
-      "sha256": "5e18b95e7a29c0dc9ce807d2045774dbe109db20cd63d568f1df6433e4b0f73e"
+      "sha256": "21baaa20d8f1dde4029c48ac0a0b4529493dd4f665ac8222207b11b9640121de"
     },
     {
       "path": "/documents/matter-38/edca/Complaint - Ngwa Nforbi v. Swift Transportation Co. of Arizona LLC (E.D. Cal.) (Sep 15 2026).pdf",
       "size": 251975,
-      "sha256": "0d1bffe01a06a7c1f4c5d80604941d65aa024fc731be2138bf926225e2e09490"
+      "sha256": "38a90562ec2e61ca06d196809eb45461e9fb8f2c62b573d519dd4f171887cf0a"
     },
     {
       "path": "/documents/matter-38/edca/E.D. Cal. Intake Packet (print copy) - Ngwa Nforbi v. Swift (Sep 15 2026).pdf",
-      "size": 1671812,
-      "sha256": "05a9f843e5a807d1e70f244c562b2327879989aac1743807dc9921ee954333dd"
+      "size": 1671811,
+      "sha256": "a1b9501901e590ffdd4c87a6c7a72b0d77bd23d5d4086fd70196424da2c271ad"
     },
     {
       "path": "/documents/matter-38/edca/JS 44 Civil Cover Sheet - Ngwa Nforbi v. Swift Transportation Co. of Arizona LLC (E.D. Cal.) (Sep 15 2026).pdf",
-      "size": 1203647,
-      "sha256": "39f2da0e588410e7d0be81389228bcaf6d0547a9012af9e62af83c263d22ded0"
+      "size": 1203646,
+      "sha256": "6793ec99a5e12b8d15a6e8536e1bdb1f5ce44b05d6a8a44682d95c1bd5e9a2a5"
     },
     {
       "path": "/documents/matter-38/Filing Packet - Ngwa Nforbi v Swift Transportation Co of Arizona LLC (Sep 8 2026).pdf",
@@ -6116,27 +6116,27 @@
     {
       "path": "/documents/matter-39/edca/AO 239 IFP Application - Ngwa Nforbi v. Best Buy Co., Inc. (E.D. Cal.) (Sep 15 2026).pdf",
       "size": 898426,
-      "sha256": "5a34032557ebf2a4cfc5c46c8f22cfb14043c52dd9e15b73b71ad7f3722b1711"
+      "sha256": "71db5daf4f4d20916cd472f50fa36b2ff24f116dcbfc6c08052a15ae06070a9d"
     },
     {
       "path": "/documents/matter-39/edca/AO 440 Summons - Best Buy Co., Inc. (E.D. Cal.) (Sep 15 2026).pdf",
       "size": 38998,
-      "sha256": "b12a23a2632069ee55c8034f9bf204dfe4966d0c32b384e3ba3b84f091a4dbde"
+      "sha256": "9e5219891c3447bd92a304f6dead85f1f8dfccab983f4611a7a9748b886055b2"
     },
     {
       "path": "/documents/matter-39/edca/Complaint - Ngwa Nforbi v. Best Buy Co., Inc. (E.D. Cal.) (Sep 15 2026).pdf",
       "size": 223802,
-      "sha256": "852dc1a7ed767c57fe0fa9593714883e82717f624c3c4439e3cc8b39f1db0de9"
+      "sha256": "041eec9a22ee1e9c3d66a94f350ad168239864253d7d556e77ff9401d61573d4"
     },
     {
       "path": "/documents/matter-39/edca/E.D. Cal. Intake Packet (print copy) - Ngwa Nforbi v. Best Buy (Sep 15 2026).pdf",
-      "size": 1643512,
-      "sha256": "2e72c0d0fe6b0a3415ac2a0d4946ae7655019df0f44c279a81dcf0d62e6d8091"
+      "size": 1643511,
+      "sha256": "db5f1b60ed14a348af32fe3e6c9f0b5d178f54b7583cc2275c6cfdbf0e3d9f8f"
     },
     {
       "path": "/documents/matter-39/edca/JS 44 Civil Cover Sheet - Ngwa Nforbi v. Best Buy Co., Inc. (E.D. Cal.) (Sep 15 2026).pdf",
-      "size": 1203051,
-      "sha256": "c814a2d344c3cf7044e19e48e7daae85a683dea480400de1fb43da2c02741f7c"
+      "size": 1203050,
+      "sha256": "ddd66cfbc9e2cdd3ceb2d057b1927d61bf98b5bc4e8a05d26476458660ac2c1c"
     },
     {
       "path": "/documents/matter-39/Filing Packet - Ngwa Nforbi v Best Buy Co Inc (Sep 8 2026).pdf",

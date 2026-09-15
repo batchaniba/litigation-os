@@ -43,7 +43,13 @@ from pypdf import PdfReader, PdfWriter
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPT_DIR))
-from signature_stamp import SIGNATURE_PATH, stamp_on_pdf_line  # noqa: E402
+sys.path.insert(0, str(SCRIPT_DIR / "lib"))
+from short_link import publish_short_link  # noqa: E402
+from signature_stamp import (  # noqa: E402
+    SIGNATURE_NATIVE_PX,
+    SIGNATURE_PATH,
+    stamp_on_pdf_line,
+)
 
 ROOT = SCRIPT_DIR.parents[1]
 DOCS = ROOT / "internal/public/documents"
@@ -87,6 +93,7 @@ CASES = [
         "number": 36,
         "stem": "Ngwa Nforbi v. AT&T Mobility Services LLC",
         "packet_stem": "Ngwa Nforbi v. AT&T",
+        "slug": "edca-att",
         "defendant_js44": "AT&T Mobility Services LLC",
         "defendant_block": (
             "AT&T Mobility Services LLC, a Delaware limited liability company"
@@ -118,6 +125,7 @@ CASES = [
         "number": 37,
         "stem": "Ngwa Nforbi v. Home Depot U.S.A., Inc.",
         "packet_stem": "Ngwa Nforbi v. Home Depot",
+        "slug": "edca-home-depot",
         "defendant_js44": "Home Depot U.S.A., Inc.",
         "defendant_block": "Home Depot U.S.A., Inc., a Delaware corporation",
         "jurisdiction": JURIS_DIVERSITY,
@@ -148,6 +156,7 @@ CASES = [
         "number": 38,
         "stem": "Ngwa Nforbi v. Swift Transportation Co. of Arizona LLC",
         "packet_stem": "Ngwa Nforbi v. Swift",
+        "slug": "edca-swift",
         "defendant_js44": "Swift Transportation Co. of Arizona LLC",
         "defendant_block": (
             "Swift Transportation Co. of Arizona LLC, a Delaware limited "
@@ -182,6 +191,7 @@ CASES = [
         "number": 39,
         "stem": "Ngwa Nforbi v. Best Buy Co., Inc.",
         "packet_stem": "Ngwa Nforbi v. Best Buy",
+        "slug": "edca-best-buy",
         "defendant_js44": "Best Buy Co., Inc.",
         "defendant_block": "Best Buy Co., Inc., a Minnesota corporation",
         "jurisdiction": JURIS_DIVERSITY,
@@ -287,6 +297,24 @@ def _set_combo(page: pymupdf.Page, text: str) -> None:
     raise SystemExit("ComboBox not found")
 
 
+def _stamp_js44_signature(page: pymupdf.Page) -> None:
+    """Sit a native-aspect mark on the signature rule, right of the caption.
+
+    JS 44 sig widget is Rect(219, 726.58, 594.50, 737.38). The printed
+    "SIGNATURE OF ATTORNEY OF RECORD" occupies x=219.6–350.3, y=715.2–724.6.
+    stamp_on_pdf_line's 1.15 height scale plus an 85-pt width still pokes
+    the loops into that caption. Native aspect at 62 pt keeps the top of
+    the mark at ~y=728, on the rule and clear of the label.
+    """
+    sw, sh = SIGNATURE_NATIVE_PX
+    width = 62.0
+    height = width * (sh / sw)
+    x0 = 358.0
+    y_line = 737.2
+    rect = pymupdf.Rect(x0, y_line - height, x0 + width, y_line)
+    page.insert_image(rect, filename=SIGNATURE_PATH, keep_proportion=False)
+
+
 def _save(doc: pymupdf.Document, path: Path) -> None:
     tmp = path.with_suffix(path.suffix + ".tmp")
     doc.save(str(tmp), garbage=4, deflate=True)
@@ -337,11 +365,7 @@ def build_js44(case: dict, out: Path) -> Path:
     _set_named(page, "S8judge[0]", RELATED_JUDGE)
     _set_named(page, "S8docket[0]", RELATED_DOCKET)
     _set_named(page, "date[0]", EXEC_DATE_SHORT)
-    # JS 44 sig widget is Rect(219, 726.58, 594.50, 737.38). The printed
-    # "SIGNATURE OF ATTORNEY OF RECORD" occupies x=219–350, y=715–725. A
-    # 200-pt stamp on the left of the line is ~34 pt tall and covers that
-    # label. Sit a ~85-pt mark on the blank right of the caption instead.
-    stamp_on_pdf_line(page, 360.0, 445.0, 737.2, whiteout=False)
+    _stamp_js44_signature(page)
     _save(doc, out)
     print(f"Wrote {out}")
     return out
@@ -533,7 +557,7 @@ def main() -> None:
             / f"AO 440 Summons - {case['defendant_js44']} (E.D. Cal.) ({date}).pdf",
         )
         complaint = complaints["build_complaint"](case["number"], out_dir)
-        flatten_packet(
+        packet = flatten_packet(
             [js44, ifp, summons, complaint],
             out_dir
             / (
@@ -541,6 +565,8 @@ def main() -> None:
                 f"{case['packet_stem']} ({date}).pdf"
             ),
         )
+        short = publish_short_link(packet, case["slug"])
+        print(f"  short-link /{case['slug']} -> {short.name}")
 
 
 if __name__ == "__main__":
