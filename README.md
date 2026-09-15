@@ -174,14 +174,14 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | 20 | Newanforbi v. California Highway Patrol, et al. | 26CV191136 | Alameda Sup. Ct. | State | Leave to amend Count 4 — due Sep. 20 |
 | 22 | Newanforbi v. Pilot Travel Centers LLC | STK-CV-UWT-2026-0007649 | San Joaquin Sup. Ct. | State | Settled Jul. 14, 2026 ($35,000) |
 | 24 | Newanforbi v. Serrato | 3:26-cv-05953-CRB | USDC N.D. Cal. | Federal | Reassigned to Judge Breyer — MTD Nov. 20; CMC continued |
-| 25 | Newanforbi v. Federal Express Corporation | 2:26-cv-02881-DAD-SCR | USDC E.D. Cal. (Sacramento Div.) | Federal | Status reports Sep. 24; Zoom Oct. 8 |
+| 25 | Newanforbi v. Federal Express Corporation | 2:26-cv-02881-DAD-SCR | USDC E.D. Cal. (Sacramento Div.) | Federal | Report mailed Sep. 14; Zoom Oct. 8 |
 | 26 | Newanforbi v. United Parcel Service, Inc. | 2:26-cv-02847-DAD-CKD | USDC E.D. Cal. (Sacramento Div.) | Federal | Dkt. 14 reply filed Sep. 14 — MTD hearing Oct. 7 |
-| 27 | Newanforbi v. Randstad, et al. | 26CV199902 | Alameda Sup. Ct. (Rene C. Davidson Courthouse) | State | $40k global ready — clocks stay 14/15; no Sept. 18 gift |
+| 27 | Newanforbi v. Randstad, et al. | 26CV199902 | Alameda Sup. Ct. (Rene C. Davidson Courthouse) | State | CIV-141 + counterpart — neither stamped |
 | 28 | Newanforbi v. Shannon Smith, LCSW, CEO, et al. | 3:26-cv-07504-LJC | USDC N.D. Cal. | Federal | M&C exhausted — answer Sep. 21 |
 | 29 | Newanforbi v. Amazon.com Services, LLC | 4:26-cv-09249-ASK | USDC N.D. Cal. (Oakland; formerly 3:26-cv-09249-ASK) | Federal | Plaintiff consent filed — both answers Sep. 22 |
 | 30 | Newanforbi v. Moua, et al. | TBD | USDC N.D. Cal. | Federal | Pre-filing — GCA claim pending; Moua-only complaint ready |
 | 31 | Newanforbi v. First Advantage LLC | TBD | San Joaquin Sup. Ct. (anticipated) | State | Pre-filing |
-| 32 | Nforbi v. Meza-Gonzalez, et al | 3:26-cv-08271-PHK | USDC N.D. Cal. (related to Serrato 3:26-cv-05953-CRB per Aug. 24, 2026 order; also related Candelaria 3:26-cv-08272-LJC) | Federal | File Meza POS; send Li availability |
+| 32 | Nforbi v. Meza-Gonzalez, et al | 3:26-cv-08271-PHK | USDC N.D. Cal. (related to Serrato 3:26-cv-05953-CRB per Aug. 24, 2026 order; also related Candelaria 3:26-cv-08272-LJC) | Federal | Meza POS filed Sep. 14; send Li return |
 | 33 | Nforbi v. Candelaria et al. | 3:26-cv-08272-LJC | USDC N.D. Cal. (San Francisco Div.) | Federal | AG answered; name stip accepted — wait to file |
 | 34 | Newanforbi v. Counseling and Psychotherapy Center, Inc., et al. | TBD | USDC N.D. Cal. (San Jose Div.) / Santa Clara Sup. Ct. | Federal | Pre-filing — intake & compliance monitoring |
 | 35 | Ngwa Nforbi v. Ross Stores, Inc., et al. | 26CV501995 | Santa Clara Sup. Ct. (Downtown / First Street) | State | File caption request — then serve Ross ~Oct 25 |

@@ -393,6 +393,16 @@
       "source": "/name-33/",
       "destination": "/name-33.pdf",
       "permanent": false
+    },
+    {
+      "source": "/candelaria-fac",
+      "destination": "/candelaria-fac.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/candelaria-fac/",
+      "destination": "/candelaria-fac.pdf",
+      "permanent": false
     }
   ],
   "headers": [
@@ -744,6 +754,15 @@
         {
           "key": "Content-Disposition",
           "value": "attachment; filename=\"Name Conform Administrative Motion Packet - Candelaria (N.D. Cal. 3-26-cv-08272-LJC) (September 14, 2026).pdf\"; filename*=UTF-8''Name%20Conform%20Administrative%20Motion%20Packet%20-%20Candelaria%20%28N.D.%20Cal.%203-26-cv-08272-LJC%29%20%28September%2014%2C%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/candelaria-fac.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Dkt 06 - First Amended Complaint (CONFORMED, Filed Aug 17 2026).pdf\"; filename*=UTF-8''Dkt%2006%20-%20First%20Amended%20Complaint%20%28CONFORMED%2C%20Filed%20Aug%2017%202026%29.pdf"
         }
       ]
     }
