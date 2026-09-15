@@ -198,6 +198,26 @@ CONTENT = [
     ),
     (
         "PARA",
+        "9A. Plaintiff has Article III standing. His injury is concrete and "
+        "particularized and is not a bare procedural violation. Best Buy's "
+        "conduct caused Plaintiff two real-world harms: the loss of the "
+        "accepted Tracy warehouse position and its compensation at $22.60 per "
+        "hour, a tangible economic injury; and the deprivation of the "
+        "pre-adverse review-and-response opportunity that 15 U.S.C. section "
+        "1681b(b)(3)(A) exists to protect. That deprivation is not abstract. "
+        "Had Best Buy furnished the report and the written Summary of Rights "
+        "before it acted, Plaintiff could have identified that the report "
+        "contained his California registry information and advised Best Buy, "
+        "before the decision became final, that Penal Code section "
+        "290.46(j)(2)(E) prohibited use of that information — an intervention "
+        "that bore directly on the very decision that ended his employment. "
+        "See TransUnion LLC v. Ramirez, 594 U.S. 413 (2021). Each injury is "
+        "fairly traceable to Best Buy's conduct and redressable by the relief "
+        "sought, and each independently supports Plaintiff's standing on "
+        "Counts One, Two, and Three.",
+    ),
+    (
+        "PARA",
         "10. Venue is proper in the Eastern District of California under "
         "28 U.S.C. section 1391(b)(2) because a substantial part of the events "
         "giving rise to the claims occurred in Tracy, San Joaquin County, "
@@ -632,6 +652,27 @@ CONTENT = [
         "Best Buy and was a substantial factor in the adverse employment "
         "action.",
     ),
+    (
+        "PARA",
+        "55A. On a motion to dismiss, the source and contents of Best Buy's "
+        "First Advantage report cannot be resolved against Plaintiff. Judicial "
+        "notice of the existence of Plaintiff's public court or conviction "
+        "records would establish neither the source nor the contents of that "
+        "unproduced report, and the truth of matters asserted within any "
+        "judicially noticed record is not admitted by its notice. Which source "
+        "Best Buy's report in fact drew upon — ordinary court records or "
+        "information disclosed pursuant to Penal Code section 290.46 — is a "
+        "factual question outside the pleadings and outside anything the Court "
+        "may judicially notice. Lerma v. Amazon.com Services, LLC, "
+        "No. 8:22-cv-01727 (C.D. Cal.), dismissed a comparable registry count "
+        "only after the employer's report was in the record and showed "
+        "ordinary court records and a national sex-offender search returning "
+        "no California-registry entry. That disposition turned on the report. "
+        "Best Buy's report is not before the Court, and Plaintiff does not "
+        "allege its contents as a known fact. A defendant may not obtain "
+        "dismissal by withholding the one document that would confirm or "
+        "refute the inference Plaintiff pleads on information and belief.",
+    ),
     ("HEADER", "FIRST CAUSE OF ACTION"),
     (
         "SUBHEAD",
@@ -681,13 +722,22 @@ CONTENT = [
         "PARA",
         "63. Best Buy's noncompliance was negligent within the meaning of "
         "15 U.S.C. section 1681o and, on proof, willful within the meaning of "
-        "15 U.S.C. section 1681n. Willfulness is plausibly supported by Best "
-        "Buy's own October 17, 2023 authorization, which named First Advantage "
-        "and required background-check authorization the same afternoon as a "
-        "written job offer, demonstrating corporate awareness that it was "
-        "procuring an employment consumer report. Plaintiff does not presently "
-        "plead a claim under 15 U.S.C. section 1681b(b)(2)(A). Plaintiff "
-        "pleads negligence and willfulness in the alternative.",
+        "15 U.S.C. section 1681n. Willfulness under section 1681n includes "
+        "reckless disregard of the statute's requirements. See Safeco Ins. Co. "
+        "of America v. Burr, 551 U.S. 47 (2007). It is plausibly supported "
+        "here by Best Buy's status as a large and sophisticated national "
+        "retailer that procures employment background reports at scale under "
+        "standardized screening procedures; by Best Buy's own October 17, 2023 "
+        "authorization, which named First Advantage and required "
+        "background-check authorization the same afternoon as a written job "
+        "offer, demonstrating corporate awareness that it was procuring an "
+        "employment consumer report; and by the settled and unambiguous "
+        "character of the section 1681b(b)(3)(A) pre-adverse-notice "
+        "requirement, which is not subject to any objectively reasonable "
+        "reading that would excuse furnishing neither the report nor the "
+        "Summary of Rights before acting. Plaintiff does not presently plead a "
+        "claim under 15 U.S.C. section 1681b(b)(2)(A). Plaintiff pleads "
+        "negligence and willfulness in the alternative.",
     ),
     (
         "PARA",
@@ -764,7 +814,7 @@ CONTENT = [
     ),
     (
         "PARA",
-        "72. Plaintiff realleges paragraphs 1 through 43 and 48 through 55. "
+        "72. Plaintiff realleges paragraphs 1 through 43 and 48 through 55A. "
         "Plaintiff does not reallege paragraphs 44 through 47. This count is a "
         "liability created by statute. It is timely under Code of Civil "
         "Procedure section 338(a) from the on-or-about October 2023 employment "
