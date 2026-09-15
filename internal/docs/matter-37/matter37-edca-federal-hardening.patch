@@ -1,0 +1,76 @@
+diff --git a/internal/scripts/matter37-edca-complaint.py b/internal/scripts/matter37-edca-complaint.py
+index b1257d4..3e008d9 100644
+--- a/internal/scripts/matter37-edca-complaint.py
++++ b/internal/scripts/matter37-edca-complaint.py
+@@ -208,6 +208,26 @@ CONTENT = [
+         "presently plead a specific hourly wage because no wage rate for this "
+         "hire is in the record.",
+     ),
++    (
++        "PARA",
++        "10A. Plaintiff has Article III standing. His injury is concrete and "
++        "particularized and is not a bare procedural violation. Home Depot's "
++        "conduct caused Plaintiff two real-world harms: the loss of the "
++        "accepted Tracy employment and the compensation that position would "
++        "have provided, according to proof, a tangible economic injury; and "
++        "the deprivation of the pre-adverse review-and-response opportunity "
++        "that 15 U.S.C. section 1681b(b)(3)(A) exists to protect. That "
++        "deprivation is not abstract. Had Home Depot furnished the report and "
++        "the written Summary of Rights before it acted, Plaintiff could have "
++        "identified that the report contained his California registry "
++        "information and advised Home Depot, before the decision became final, "
++        "that Penal Code section 290.46(j)(2)(E) prohibited use of that "
++        "information — an intervention that bore directly on the very decision "
++        "that ended his employment. See TransUnion LLC v. Ramirez, 594 U.S. "
++        "413 (2021). Each injury is fairly traceable to Home Depot's conduct "
++        "and redressable by the relief sought, and each independently supports "
++        "Plaintiff's standing on Counts One, Two, and Three.",
++    ),
+     (
+         "PARA",
+         "11. Venue is proper in the Eastern District of California under "
+@@ -682,7 +702,13 @@ CONTENT = [
+         "PARA",
+         "63. Home Depot's noncompliance was negligent within the meaning of "
+         "15 U.S.C. section 1681o and, on proof, willful within the meaning of "
+-        "15 U.S.C. section 1681n. Willfulness is plausibly supported by Home "
++        "15 U.S.C. section 1681n. Willfulness under section 1681n includes "
++        "reckless disregard of the statute's requirements, and the "
++        "pre-adverse-notice duty to furnish the report and the Summary of "
++        "Rights is settled and unambiguous, not subject to any objectively "
++        "reasonable reading that would excuse the bypass alleged. See Safeco "
++        "Ins. Co. of America v. Burr, 551 U.S. 47 (2007). Willfulness is "
++        "further supported by Home "
+         "Depot's own publicly filed background-check form, which expressly "
+         "recognized that before information from a consumer or investigative "
+         "consumer report is used to make an adverse employment decision, Home "
+@@ -819,6 +845,29 @@ CONTENT = [
+         "information disclosed pursuant to section 290.46 for the Tracy "
+         "warehouse, distribution, and fulfillment position.",
+     ),
++    (
++        "PARA",
++        "78A. On a motion to dismiss, the source and contents of Home Depot's "
++        "First Advantage report cannot be resolved against Plaintiff. That "
++        "Home Depot could, in the abstract, have obtained criminal-history "
++        "information from ordinary court records does not establish that it "
++        "did so, or that it refrained from using the registry-derived "
++        "information First Advantage returned; subdivision (j)(2)(E) is "
++        "violated by the use that in fact occurred. Judicial notice of the "
++        "existence of Plaintiff's public court or conviction records would "
++        "establish neither the source nor the contents of Home Depot's "
++        "unproduced report, and the truth of matters asserted within any "
++        "judicially noticed record is not admitted by its notice. Lerma v. "
++        "Amazon.com Services, LLC, No. 8:22-cv-01727 (C.D. Cal.), dismissed a "
++        "comparable registry count only after the employer's report was in the "
++        "record and showed ordinary court records and a national sex-offender "
++        "search returning no California-registry entry. That disposition "
++        "turned on the report. Home Depot's report is not before the Court, "
++        "and Plaintiff does not allege its contents as a known fact. A "
++        "defendant may not obtain dismissal by withholding the one document "
++        "that would confirm or refute the inference Plaintiff pleads on "
++        "information and belief.",
++    ),
+     (
+         "PARA",
+         "79. Home Depot thereby violated section 290.46(j)(2)(E).",
