@@ -1,5 +1,20 @@
 [
   {
+    "date": "Sep. 15, 2026",
+    "event": "DRAFTED — Petitioner's Request for Production of Documents, Set One, to Respondent California Highway Patrol in Newanforbi v. CHP et al. (26CV191136). Directed to surviving Count 1: WAR913372 warrant packet, November 1, 2024 blood/toxicology, and the April 2026 I-918B certification file. Not yet served. Serve electronically on DAG Ing. Do not e-file (CRC 3.250). Do not notice Meza or Melano with this send.",
+    "matters": [
+      20
+    ],
+    "type": "discovery",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-20/Request for Production of Documents Set One - CHP (Sep 15 2026).pdf",
+    "source_type": "portfolio",
+    "confidence": "high",
+    "verified_at": "2026-09-15"
+  },
+  {
     "date": "Sep. 10, 2026",
     "event": "FILED — Dkt. 16 Certificate of Interested Entities, Corporate Disclosure Statement, or Rule 7.1 Disclosures",
     "matters": [
@@ -1928,7 +1943,7 @@
       26
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "opposing",
     "source": "/documents/matter-26/PACER Docket Report - E.D. Cal. 2-26-cv-02847-DAD-CKD (Sep 10 2026).pdf",
     "source_type": "pacer",
@@ -5084,7 +5099,7 @@
       27
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "opposing",
     "source": "/documents/matter-27/Gmail - RK Logistics Extension Request to Sep 14 (Aug 21 2026).pdf",
     "source_type": "portfolio",
@@ -10069,7 +10084,7 @@
       26
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "you",
     "source_type": "manual",
     "confidence": "high",
