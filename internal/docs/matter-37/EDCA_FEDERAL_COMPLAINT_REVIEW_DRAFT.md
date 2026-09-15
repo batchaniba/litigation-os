@@ -122,9 +122,9 @@ Plaintiff BRENDAN NGWA NFORBI (“Plaintiff”), appearing in propria persona, a
 
 36. Before the adverse action became final, Home Depot did not provide Plaintiff the written description of FCRA rights prescribed by 15 U.S.C. § 1681g(c)(3).
 
-37. Plaintiff therefore was not given the report and statutory rights information before Home Depot acted on the report. He lost the statutory opportunity to review the exact information Home Depot was considering and to dispute it with First Advantage before the employment decision.
+37. Plaintiff therefore was not given the report and statutory rights information before Home Depot acted on the report. Had Home Depot complied, Plaintiff would have been able, before the employment decision became final, to identify that the report contained his California registry information, challenge or explain the report as appropriate, and advise Home Depot that Penal Code § 290.46(j)(2)(E) prohibited use of information disclosed pursuant to § 290.46 for this employment purpose.
 
-38. Home Depot’s failure caused concrete injury. Plaintiff lost an accepted employment opportunity and resulting wages and benefits, and he was denied the information and pre-decision process Congress required before an employer may take adverse action based in whole or in part on a consumer report.
+38. Home Depot’s failure caused concrete injury. Plaintiff lost an accepted employment opportunity and resulting wages and benefits. The omitted pre-adverse process was directly tied to that injury because it deprived Plaintiff of the opportunity to identify and challenge Home Depot’s contemplated use of the same registry information that Plaintiff alleges Home Depot was legally prohibited from using for the employment decision.
 
 ## E. Home Depot Did Not Provide the ICRAA Adverse-Action Advice
 
@@ -132,7 +132,7 @@ Plaintiff BRENDAN NGWA NFORBI (“Plaintiff”), appearing in propria persona, a
 
 40. When Home Depot denied, withdrew, ended, or prevented the employment under circumstances in which the First Advantage investigative consumer report had been obtained, Home Depot did not advise Plaintiff that the report had been obtained and did not supply First Advantage’s name and address.
 
-41. The omission alleged in paragraph 38 is distinct from the FCRA omission alleged in Count One. Count One concerns Home Depot’s failure **before adverse action** to furnish the report and federal Summary of Rights. Count Two concerns Home Depot’s separate California duty, upon denying employment under circumstances in which an investigative report was obtained, to advise Plaintiff and identify the investigative consumer reporting agency.
+41. The omission alleged in paragraph 40 is distinct from the FCRA omission alleged in Count One. Count One concerns Home Depot’s failure **before adverse action** to furnish the report and federal Summary of Rights. Count Two concerns Home Depot’s separate California duty, upon denying employment under circumstances in which an investigative report was obtained, to advise Plaintiff and identify the investigative consumer reporting agency.
 
 ## F. Discovery of the Violations and Timeliness
 
@@ -212,11 +212,11 @@ Plaintiff BRENDAN NGWA NFORBI (“Plaintiff”), appearing in propria persona, a
 
 71. Section 290.46(j)(2)(E) prohibits use of information disclosed pursuant to § 290.46 for purposes relating to employment except as authorized by paragraph (1) or another provision of law.
 
-72. Plaintiff is informed and believes, and on that basis alleges, that the First Advantage report furnished to Home Depot contained information disclosed pursuant to Penal Code § 290.46, including Plaintiff’s California registry listing or registry-derived information.
+72. Plaintiff alleges, on information and belief and as an ultimate fact, that the First Advantage report furnished to Home Depot contained information disclosed pursuant to Penal Code § 290.46, including Plaintiff’s California registry information.
 
-73. Home Depot received and used the First Advantage report for an employment purpose.
+73. Plaintiff alleges, on information and belief and as an ultimate fact, that Home Depot received, accessed, considered, and used that § 290.46 information for a purpose relating to employment.
 
-74. Plaintiff is informed and believes that the registry information was a substantial factor in Home Depot’s decision to deny, withdraw, end, or prevent Plaintiff’s Tracy employment. The basis for that allegation is stated in paragraphs 23 through 28 and includes the timing of the screen and adverse action, Plaintiff’s contemporaneous registry listing, the absence of a communicated independent reason, and the screening records uniquely within Home Depot’s and First Advantage’s possession.
+74. Plaintiff alleges that the § 290.46 information was a substantial factor in Home Depot’s decision to deny, withdraw, end, or prevent Plaintiff’s Tracy employment. The factual basis is stated in paragraphs 23 through 30 and 45 through 52, including First Advantage’s reporting of this same Plaintiff’s California registry information in comparator employment screens, Home Depot’s procurement of the intervening background check, the cessation of onboarding after that screen, and the absence of any communicated independent reason.
 
 75. The pleaded use was not authorized by § 290.46(j)(1), and Plaintiff is unaware of another law authorizing Home Depot to use information disclosed pursuant to § 290.46 for the Tracy warehouse / fulfillment position.
 
@@ -271,7 +271,7 @@ Plaintiff, In Propria Persona
 1. **First Advantage identity:** Public federal-court and First Advantage materials now provide a concrete Rule 11 basis to plead First Advantage as Home Depot’s CRA on information and belief. A transaction-specific Home Depot record would upgrade that allegation from I&B to direct documentary fact.
 2. **Report contents/source:** The complaint deliberately alleges on information and belief that Home Depot’s First Advantage report contained Plaintiff’s § 290.46 information. UPS/FedEx comparator facts are pleaded as the factual basis that makes that allegation plausible; their exact labels are not attributed to Home Depot. If the Home Depot-specific report is obtained before filing, replace the I&B source allegation with its exact wording.
 3. **Adjudication:** The complaint alleges that the registry information was material and a substantial factor in Home Depot’s decision. Do not attribute a specific “Decisional,” “Ineligible,” or client-criteria label to Home Depot unless its own record supplies that wording.
-4. **Discovery date:** Paragraphs 40–42 are a filing-critical limitations section. Insert the real date and event by which Plaintiff first discovered the FCRA / ICRAA violation. FCRA uses the earlier of two years from discovery or five years from violation; ICRAA provides two years from discovery.
+4. **Discovery date:** Paragraphs 42–44 are a filing-critical limitations section. Insert the real date and event by which Plaintiff first discovered the FCRA / ICRAA violation. FCRA uses the earlier of two years from discovery or five years from violation; ICRAA provides two years from discovery.
 5. **DOT exception:** Confirm the Tracy position was not within 15 U.S.C. § 1681b(b)(3)(B)-(C). If it was a DOT-regulated driving position with only remote interaction, rewrite Count One.
 6. **Exhibit A:** If the Home Depot-specific First Advantage report is obtained before filing, consider attaching it only after a hostile contradiction audit and redaction under Fed. R. Civ. P. 5.2. If it is not obtained, do not attach another employer’s report as a substitute.
 7. **Entity:** Confirm the report / onboarding documents identify HOME DEPOT U.S.A., INC. as the employer or user. If a different Home Depot affiliate ordered or used the report, fix the defendant before filing.
