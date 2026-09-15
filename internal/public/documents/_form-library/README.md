@@ -75,6 +75,7 @@ After adding an entry, copy the packet to `internal/public/{slug}.pdf`
 | File | Use |
 |---|---|
 | `ao440-blank-template.pdf` | AO 440 summons |
+| `ao239-blank-template.pdf` | AO 239 IFP long form (non-prisoner) |
 | `js44-civil-cover-sheet-blank-template.pdf` | JS 44 / JS-CAND 44 |
 | `edcal-mj-consent-declination-blank-template.pdf` | E.D. Cal. MJ consent (consentmagweb) |
 | `ndcal-mj-consent-declination-blank-template.pdf` | N.D. Cal. MJ consent |
