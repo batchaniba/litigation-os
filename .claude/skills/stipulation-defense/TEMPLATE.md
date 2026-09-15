@@ -129,6 +129,8 @@ file my signature. I respectfully ask that you not request that again.
 I have signed the enclosed counterpart myself (PDF and Word). Please
 file the PDF, or use the Word file if your e-filing workflow requires
 it. Leave my signature block blank on any version you prepare.
+Attach the files. Never put a GitHub, raw.githubusercontent, or repo
+URL in this email or on the papers.
 
 [Any Plaintiff clock that stays: demand date, CMC, default right.]
 [Any consideration they owe by a date certain.]

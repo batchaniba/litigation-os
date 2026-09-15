@@ -1,0 +1,22 @@
+---
+description: Never put GitHub or repo URLs in anything that leaves the house.
+alwaysApply: true
+---
+
+# No GitHub to outsiders — LOCKED
+
+Never put a GitHub, `raw.githubusercontent.com`, git-repo, document-store,
+or portfolio URL in anything Plaintiff will send or file: covering emails,
+letters, stipulations, pleadings, proofs of service, or attachments' visible
+text.
+
+- Attach the PDF or Word. Do not "point them at" a link.
+- Do not paste `github.com/newanforbi/...` or any other repo path.
+- A download link in the agent chat for **him** is fine. It does not go in
+  the email.
+- If a draft already has a repo URL, strip it before he sends. Do not
+  leave it "just this once."
+
+September 14, 2026 Randstad follow-up is why it exists, not its only case.
+Portfolio-wide. Cursor, Claude Code, Copilot, and any other agent reading
+this repo.

@@ -17,3 +17,9 @@ For project structure and existing development workflows, consult README.md and 
 ## Counsel dossiers
 
 Opposing-counsel identity/role research lives under `internal/docs/counsel/`. Seeded: Kabat Chapman & Ozmer (Williams / Chapman) at [`internal/docs/counsel/kcoz/`](internal/docs/counsel/kcoz/). Append PACER pulls there. Those dockets are not related cases. Do not email counsel about the research.
+
+## No GitHub to outsiders
+
+Never put a GitHub, `raw.githubusercontent.com`, git-repo, or document-store
+URL in anything Plaintiff will send or file. Attach the file. A download
+link in the agent chat for him is fine. It does not go in the email.
