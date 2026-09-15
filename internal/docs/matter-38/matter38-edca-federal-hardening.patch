@@ -1,0 +1,60 @@
+diff --git a/internal/scripts/matter38-edca-complaint.py b/internal/scripts/matter38-edca-complaint.py
+index 1d12a99..70a0d6a 100644
+--- a/internal/scripts/matter38-edca-complaint.py
++++ b/internal/scripts/matter38-edca-complaint.py
+@@ -236,6 +236,24 @@ CONTENT = [
+         "same Class A Driver application, screening, and denial as the "
+         "controversy over which original jurisdiction is invoked.",
+     ),
++    (
++        "PARA",
++        "12A. Plaintiff has Article III standing on each count. His injury is "
++        "concrete and particularized, not a bare statutory violation. Swift's "
++        "conduct caused Plaintiff a real-world, tangible harm: the denial of "
++        "the Class A Driver employment opportunity and its wages and benefits, "
++        "according to proof. That injury is fairly traceable to Swift's "
++        "alleged use of registry-derived screening information in denying the "
++        "position, and it is redressable by the damages sought. The Civil Code "
++        "section 1786.40 omission pleaded in Count Two is likewise concrete: "
++        "by not advising Plaintiff, when it denied him, that an investigative "
++        "consumer report had been obtained, Swift deprived him of the timely "
++        "opportunity to learn a report existed, inspect and dispute it, and "
++        "respond before the October 5, 2023 decision became final — a "
++        "deprivation tied directly to the lost employment, not a naked "
++        "procedural grievance. See TransUnion LLC v. Ramirez, 594 U.S. 413 "
++        "(2021).",
++    ),
+     (
+         "PARA",
+         "13. This Court has personal jurisdiction over Swift because Swift "
+@@ -609,6 +627,30 @@ CONTENT = [
+         "to that application. It was a substantial factor in the decision "
+         "and caused the loss alleged.",
+     ),
++    (
++        "PARA",
++        "57A. On a motion to dismiss, the source, contents, and use of Swift's "
++        "screening records cannot be resolved against Plaintiff. Those records "
++        "— including the NSOPW component and any registry-source fields — are "
++        "in Swift's and its vendors' exclusive possession and are not before "
++        "the Court. Judicial notice of the existence of Plaintiff's public "
++        "court or conviction records would establish neither the source nor "
++        "the contents of what Swift in fact obtained and considered, and the "
++        "truth of matters asserted within any judicially noticed record is not "
++        "admitted by its notice. That Swift could, in the abstract, have "
++        "obtained criminal-history information from another lawful source does "
++        "not establish that it did, or that the registry-derived information "
++        "Plaintiff alleges was not used. Lerma v. Amazon.com Services, LLC, "
++        "No. 8:22-cv-01727 (C.D. Cal.), dismissed a comparable registry count "
++        "only after the employer's completed report was in the record and "
++        "showed ordinary court records and a national sex-offender search "
++        "returning no California-registry entry. That disposition turned on "
++        "the produced report. Swift's screening records are not before the "
++        "Court, and Plaintiff does not allege their contents as a known fact. "
++        "A defendant may not obtain dismissal by withholding the records that "
++        "would confirm or refute the inference Plaintiff pleads on information "
++        "and belief.",
++    ),
+     (
+         "PARA",
+         "58. Plaintiff seeks the remedies authorized by section "
