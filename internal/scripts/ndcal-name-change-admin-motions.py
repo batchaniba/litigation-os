@@ -108,6 +108,8 @@ class NameCase:
     # If set (24/28), change this middle+last token to Ngwa Nforbi.
     # Leave empty on Amazon — that packet stays on the generic ask.
     from_name_token: str = ""
+    judge_title: str = "United States Magistrate Judge"
+    exec_date: str = EXEC_DATE
 
     @property
     def file_tag(self) -> str:
@@ -120,8 +122,9 @@ CASES: list[NameCase] = [
         matter=24,
         slug="serrato",
         out_dir=DOCS / "matter-24",
-        case_no="4:26-cv-05953-ASK",
-        judge="Hon. Ajay S. Krishnan",
+        case_no="3:26-cv-05953-CRB",
+        judge="Hon. Charles R. Breyer",
+        judge_title="United States District Judge",
         footer="ADMIN. MOTION TO CONFORM PLAINTIFF'S NAME -- NEWANFORBI v. SERRATO",
         current_docket_name="Brendan Ngehsi Newanforbi",
         caption_left=[
@@ -168,8 +171,8 @@ CASES: list[NameCase] = [
             "the continued initial case management conference (Dkt. 25: "
             "fourteen days after the final order on Defendant's motion to "
             "dismiss)",
-            "the September 30, 2026 hearing on Defendant's motion to dismiss "
-            "(Dkt. 18 / Dkt. 21)",
+            "the November 20, 2026 hearing on Defendant's motion to dismiss "
+            "(Dkt. 18 / Dkt. 30)",
             "the Rule 26(a)(1), Joint CMC Statement, and ADR-certification "
             "dates reset by Dkt. 25 to run from that continued conference",
             "Defendant's pending motion (Dkt. 18) and Plaintiff's opposition",
@@ -180,6 +183,7 @@ CASES: list[NameCase] = [
         email_to=["Haiyang.Li@doj.ca.gov"],
         caption_short="NEWANFORBI v. SERRATO",
         from_name_token="Ngehsi Newanforbi",
+        exec_date="September 15, 2026",
     ),
     NameCase(
         matter=28,
@@ -420,7 +424,7 @@ CASES: list[NameCase] = [
         unopposed=True,
         short_slug="name-32",
         file_short="Meza-Gonzalez",
-        extra_right=[("Related: 4:26-cv-05953-ASK", False, False)],
+        extra_right=[("Related: 3:26-cv-05953-CRB", False, False)],
         email_to=["Haiyang.Li@doj.ca.gov"],
         email_extra=(
             "Your statement is recited as non-opposition to this caption "
@@ -549,10 +553,10 @@ def _sign_for(d: PleadingPaper, case: NameCase, *, declaration: bool = False) ->
     d.ensure_space(10)
     if declaration:
         d.write_line("I declare under penalty of perjury that the foregoing")
-        d.write_line(f"is true and correct. Signed on {EXEC_DATE},")
+        d.write_line(f"is true and correct. Signed on {case.exec_date},")
         d.write_line("at Milpitas, California.")
     else:
-        d.write_line(f"Dated: {EXEC_DATE}")
+        d.write_line(f"Dated: {case.exec_date}")
         d.blank_line()
         d.write_line("Respectfully submitted,", right=True, right_margin_offset=20)
     d.blank_line()
@@ -682,41 +686,41 @@ def _caption_title() -> list[str]:
 def _motion_path(case: NameCase) -> Path:
     return case.out_dir / (
         f"Administrative Motion - Conform Plaintiff's Name - "
-        f"{case.file_tag} ({EXEC_DATE}).pdf"
+        f"{case.file_tag} ({case.exec_date}).pdf"
     )
 
 
 def _decl_path(case: NameCase) -> Path:
     return case.out_dir / (
         f"Declaration ISO Administrative Motion - Conform Plaintiff's Name - "
-        f"{case.file_tag} ({EXEC_DATE}).pdf"
+        f"{case.file_tag} ({case.exec_date}).pdf"
     )
 
 
 def _order_path(case: NameCase) -> Path:
     return case.out_dir / (
         f"Proposed Order - Conform Plaintiff's Name - "
-        f"{case.file_tag} ({EXEC_DATE}).pdf"
+        f"{case.file_tag} ({case.exec_date}).pdf"
     )
 
 
 def _pos_path(case: NameCase) -> Path:
     return case.out_dir / (
         f"Proof of Service - Name Conform Administrative Motion - "
-        f"{case.file_tag} ({EXEC_DATE}).pdf"
+        f"{case.file_tag} ({case.exec_date}).pdf"
     )
 
 
 def _packet_path(case: NameCase) -> Path:
     return case.out_dir / (
         f"Name Conform Administrative Motion Packet - "
-        f"{case.file_tag} ({EXEC_DATE}).pdf"
+        f"{case.file_tag} ({case.exec_date}).pdf"
     )
 
 
 def _cover_path(case: NameCase) -> Path:
     return case.out_dir / (
-        f"Exhibit A Cover - ECF Help Desk - {case.file_tag} ({EXEC_DATE}).pdf"
+        f"Exhibit A Cover - ECF Help Desk - {case.file_tag} ({case.exec_date}).pdf"
     )
 
 
@@ -974,9 +978,8 @@ def build_order(case: NameCase) -> Path:
     )
     d.blank_line()
     _body(d,
-        f"2.  {_same_person_line()} "
-        f"{BOLD_NAME} is the same natural person previously identified "
-        f"on this docket as {case.current_docket_name}. "
+        f"2.  {BOLD_NAME} is the same natural person as {_aka_clause()} "
+        f"and previously identified on this docket as {case.current_docket_name}. "
         "This Order does not add, drop, or substitute any party and does "
         "not amend any claim or defense.",
         first_indent=0,
@@ -1004,7 +1007,7 @@ def build_order(case: NameCase) -> Path:
     d.blank_line()
     d.write_line(SIG_LINE)
     d.write_line(case.judge)
-    d.write_line("United States Magistrate Judge")
+    d.write_line(case.judge_title)
     d.save()
     return path
 
@@ -1043,7 +1046,7 @@ def build_pos(case: NameCase) -> Path:
             defendant_lines=case.defendant_pos_lines,
             defendant_role="Defendant",
             case_number=case.case_no,
-            service_date=EXEC_DATE,
+            service_date=case.exec_date,
             document_title=title,
             mailing_location=MAIL_FROM,
             recipients=case.pos_recipients,
@@ -1128,7 +1131,13 @@ def main() -> None:
         raise SystemExit(f"Missing signature image: {SIGNATURE_PATH}")
     if not HELP_DESK.is_file():
         raise SystemExit(f"Missing Help Desk exhibit: {HELP_DESK}")
-    for case in CASES:
+    targets = CASES
+    if "--matter" in sys.argv:
+        idx = sys.argv.index("--matter")
+        if idx + 1 < len(sys.argv):
+            m_num = int(sys.argv[idx + 1])
+            targets = [c for c in CASES if c.matter == m_num]
+    for case in targets:
         motion = build_motion(case)
         decl = build_declaration(case)
         cover = build_exhibit_cover(case)
