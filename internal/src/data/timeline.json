@@ -1,5 +1,65 @@
 [
   {
+    "date": "Nov. 20, 2026",
+    "event": "HEARING \u2014 Defendant Serrato's Motion to Dismiss FAC (Dkt. 18) \u2014 10:00 a.m., Zoom webinar, San Francisco, Hon. Charles R. Breyer \u2014 Newanforbi v. Serrato (3:26-cv-05953-CRB). Set by Clerk's Notice Dkt. 30 (filed Sep. 14) after Dkt. 29 reassignment. Appearance list to crbcrd@cand.uscourts.gov by Nov. 16, 2026, 3:00 p.m. Opposition is Dkt. 20 (filed Aug. 27). Do not treat the vacated Sep. 30 Krishnan date as live.",
+    "matters": [
+      24
+    ],
+    "type": "hearing",
+    "upcoming": true,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-24/ECF Docket Report - N.D. Cal. 3-26-cv-05953-CRB (Pulled Sep 14 2026).pdf",
+    "source_type": "pacer",
+    "confidence": "high",
+    "verified_at": "2026-09-14"
+  },
+  {
+    "date": "Sep. 15, 2026",
+    "event": "DRAFTED (unfiled) \u2014 Civil L.R. 7-11 administrative motion to conform Plaintiff's docket name from Brendan Ngehsi Newanforbi to Brendan Ngwa Nforbi in Newanforbi v. Serrato (3:26-cv-05953-CRB). Caption now San Francisco / Judge Breyer after Dkt. 29. Same person; PACER bngwanforbi; Help Desk Sep. 1 is Exhibit A. Li will not oppose if Nforbi and Newanforbi are the same person; no 7-12 stipulation. Nothing else moves, including the Nov. 20, 2026 MTD hearing (Dkt. 30) and Dkt. 20 opposition. Supersedes the Sep. 14 ASK packet for this action only. Do not treat as filed. After entry, re-ask the ECF Help Desk to link bngwanforbi.",
+    "matters": [
+      24
+    ],
+    "type": "event",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-24/Name Conform Administrative Motion Packet - Serrato (N.D. Cal. 3-26-cv-05953-CRB) (September 15, 2026).pdf",
+    "source_type": "portfolio",
+    "confidence": "high",
+    "verified_at": "2026-09-15"
+  },
+  {
+    "date": "Sep. 14, 2026",
+    "event": "FILED \u2014 Dkt. 29 Order Reassigning Case in Newanforbi v. Serrato. Text-only. Reassigned at random under General Order 44 to Judge Charles R. Breyer, San Francisco Division. Case number is now 3:26-cv-05953-CRB. Mag. Judge Ajay S. Krishnan no longer assigned. All hearing and trial dates vacated; existing briefing schedules unchanged. Motions must be re-noticed before Judge Breyer.",
+    "matters": [
+      24
+    ],
+    "type": "order",
+    "upcoming": false,
+    "filed": true,
+    "actor": "court",
+    "source": "/documents/matter-24/ECF Docket Report - N.D. Cal. 3-26-cv-05953-CRB (Pulled Sep 14 2026).pdf",
+    "source_type": "pacer",
+    "confidence": "high",
+    "verified_at": "2026-09-14"
+  },
+  {
+    "date": "Sep. 14, 2026",
+    "event": "FILED \u2014 Dkt. 30 Clerk's Notice (text-only) in Newanforbi v. Serrato (3:26-cv-05953-CRB). Motion to Dismiss (Dkt. 18) hearing set for November 20, 2026, 10:00 a.m., San Francisco Zoom webinar before Judge Charles R. Breyer. Access at cand.uscourts.gov/crb. Appearance names/emails to crbcrd@cand.uscourts.gov by November 16, 2026, 3:00 p.m. Photographing, recording, and rebroadcasting prohibited (Civ. L.R. 77-3(d)).",
+    "matters": [
+      24
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "court",
+    "source": "/documents/matter-24/ECF Docket Report - N.D. Cal. 3-26-cv-05953-CRB (Pulled Sep 14 2026).pdf",
+    "source_type": "pacer",
+    "confidence": "high",
+    "verified_at": "2026-09-14"
+  },
+  {
     "date": "Sep. 12, 2026",
     "event": "DRAFT (unsent) \u2014 Final early global settlement demand in Newanforbi v. Randstad US, LLC et al. (26CV199902): $40,000.00 to resolve all claims against both named defendants and Does. Wire within seven business days of written joint acceptance. Expires 5:00 p.m. PT Sept. 18, 2026, and may be accepted after a filing. The RK Logistics Group, Inc. remains due Sept. 14; Randstad US, LLC remains due Sept. 15. This draft does not extend either clock and is not a CIV-100 hold. File-if-silent stays Sept. 15 (RK) / Sept. 16 (Randstad) if eCourt is empty. Do not send the Sept. 11 $40k text that gifted both defendants through Sept. 18. Generator: internal/scripts/matter27-global-demand-sep12.py. Evid. Code \u00a71152 / FRE 408.",
     "matters": [
@@ -88,7 +148,7 @@
   },
   {
     "date": "Sep. 14, 2026",
-    "event": "DRAFTED (unfiled) \u2014 Civil L.R. 7-11 administrative motions (not 7-12 stipulations) to conform Plaintiff's docket name to Brendan Ngwa Nforbi in the N.D. Cal. actions where a stipulation is not going on file. Clean swap; same person; PACER bngwanforbi; Help Desk Sep. 1 attached as Exhibit A. No deadline, hearing, or pending motion moves. Do not file Matter 33 while the September 10 McMahon-revision authorization is live. Matter 28 is the fallback if Martinez declines the quiet counterpart. Matters 24 and 32: recite Li's non-opposition; his 32 statement is not an appearance. Matter 29: do not recite non-opposition until it is on the email record after the name confirmation; do not send Accurate a government ID. Dated Sep. 14. Do not treat as filed. After entry, re-ask the ECF Help Desk to link bngwanforbi.",
+    "event": "DRAFTED (unfiled) \u2014 Civil L.R. 7-11 administrative motions (not 7-12 stipulations) to conform Plaintiff's docket name to Brendan Ngwa Nforbi in the N.D. Cal. actions where a stipulation is not going on file. Clean swap; same person; PACER bngwanforbi; Help Desk Sep. 1 attached as Exhibit A. No deadline, hearing, or pending motion moves. Do not file Matter 33 while the September 10 McMahon-revision authorization is live. Matter 28 is the fallback if Martinez declines the quiet counterpart. Matter 32: recite Li's non-opposition; his 32 statement is not an appearance. Matter 29: do not recite non-opposition until it is on the email record after the name confirmation; do not send Accurate a government ID. Dated Sep. 14. The Serrato (Matter 24) packet is superseded by the Sep. 15 CRB packet after Dkt. 29 reassignment. Do not treat as filed.",
     "matters": [
       24,
       28,
@@ -171,7 +231,7 @@
   },
   {
     "date": "After MTD order",
-    "event": "WATCH \u2014 Reset initial CMC in Newanforbi v. Serrato (4:26-cv-05953-ASK). Dkt. 25 sets it fourteen (14) days after the final order on Defendant's motion to dismiss (Dkt. 18; hearing Sep. 30). No date certain. Disclosure, JCMS, and ADR-certification dates run from that conference. Do not invent a calendar date.",
+    "event": "WATCH \u2014 Reset initial CMC in Newanforbi v. Serrato (3:26-cv-05953-CRB). Dkt. 25 sets it fourteen (14) days after the final order on Defendant's motion to dismiss (Dkt. 18; hearing Nov. 20, 2026, 10:00 a.m. Zoom before Judge Breyer per Dkt. 30). No date certain. Disclosure, JCMS, and ADR-certification dates run from that conference. Do not invent a calendar date.",
     "matters": [
       24
     ],

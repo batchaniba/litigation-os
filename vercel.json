@@ -305,6 +305,36 @@
       "permanent": false
     },
     {
+      "source": "/name-24-motion",
+      "destination": "/name-24-motion.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/name-24-motion/",
+      "destination": "/name-24-motion.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/name-24-decl",
+      "destination": "/name-24-decl.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/name-24-decl/",
+      "destination": "/name-24-decl.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/name-24-order",
+      "destination": "/name-24-order.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/name-24-order/",
+      "destination": "/name-24-order.pdf",
+      "permanent": false
+    },
+    {
       "source": "/name-28",
       "destination": "/name-28.pdf",
       "permanent": false
@@ -612,7 +642,34 @@
       "headers": [
         {
           "key": "Content-Disposition",
-          "value": "attachment; filename=\"Name Conform Administrative Motion Packet - Serrato (N.D. Cal. 4-26-cv-05953-ASK) (September 14, 2026).pdf\"; filename*=UTF-8''Name%20Conform%20Administrative%20Motion%20Packet%20-%20Serrato%20%28N.D.%20Cal.%204-26-cv-05953-ASK%29%20%28September%2014%2C%202026%29.pdf"
+          "value": "attachment; filename=\"Name Conform Administrative Motion Packet - Serrato (N.D. Cal. 3-26-cv-05953-CRB) (September 15, 2026).pdf\"; filename*=UTF-8''Name%20Conform%20Administrative%20Motion%20Packet%20-%20Serrato%20%28N.D.%20Cal.%203-26-cv-05953-CRB%29%20%28September%2015%2C%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/name-24-motion.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Administrative Motion - Conform Plaintiff's Name - Serrato (N.D. Cal. 3-26-cv-05953-CRB) (September 15, 2026).pdf\"; filename*=UTF-8''Administrative%20Motion%20-%20Conform%20Plaintiff's%20Name%20-%20Serrato%20%28N.D.%20Cal.%203-26-cv-05953-CRB%29%20%28September%2015%2C%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/name-24-decl.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Declaration ISO Administrative Motion - Conform Plaintiff's Name - Serrato (N.D. Cal. 3-26-cv-05953-CRB) (September 15, 2026).pdf\"; filename*=UTF-8''Declaration%20ISO%20Administrative%20Motion%20-%20Conform%20Plaintiff's%20Name%20-%20Serrato%20%28N.D.%20Cal.%203-26-cv-05953-CRB%29%20%28September%2015%2C%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/name-24-order.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Proposed Order - Conform Plaintiff's Name - Serrato (N.D. Cal. 3-26-cv-05953-CRB) (September 15, 2026).pdf\"; filename*=UTF-8''Proposed%20Order%20-%20Conform%20Plaintiff's%20Name%20-%20Serrato%20%28N.D.%20Cal.%203-26-cv-05953-CRB%29%20%28September%2015%2C%202026%29.pdf"
         }
       ]
     },
