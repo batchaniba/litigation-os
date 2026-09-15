@@ -544,7 +544,7 @@ CONTENT = [
     (
         "PARA",
         "55. On information and belief, AT&T's rescission was based in whole "
-        "or in part on the First Advantage report or screening process.",
+        "or in part on a consumer report furnished by First Advantage.",
     ),
     (
         "PARA",
@@ -627,11 +627,13 @@ CONTENT = [
     ),
     (
         "PARA",
-        "66. Plaintiff realleges paragraphs 1 through 51. This count is a "
-        "liability created by statute. It is timely under Code of Civil "
-        "Procedure section 338(a) from the May 28, 2026 employment use. Three "
-        "years from May 28, 2026 is May 28, 2029. This count does not plead a "
-        "delayed-discovery date.",
+        "66. Plaintiff realleges paragraphs 1 through 51. The alleged "
+        "employment use occurred on May 28, 2026. This action is timely under "
+        "any potentially applicable one-year or three-year California "
+        "limitations period. Plaintiff therefore need not ask the Court at the "
+        "pleading stage to choose between Code of Civil Procedure sections "
+        "340(a) and 338(a), and he does not rely on delayed discovery for this "
+        "count.",
     ),
     (
         "PARA",
@@ -666,6 +668,19 @@ CONTENT = [
         "Plaintiff is unaware of another law authorizing AT&T to use "
         "information disclosed pursuant to section 290.46 for this "
         "retail-sales hiring decision.",
+    ),
+    (
+        "PARA",
+        "70A. Lerma v. Amazon.com Services, LLC, No. 8:22-cv-01727 "
+        "(C.D. Cal.), does not resolve the source question on the present "
+        "pleadings. In Lerma, the transaction-specific background report was "
+        "before the court and showed ordinary court-record sourcing and no "
+        "sex-offender-registry hit. Here, AT&T's transaction-specific report "
+        "is not presently before Plaintiff. General public conviction records "
+        "do not establish what source First Advantage used in AT&T's report. "
+        "If the AT&T-specific report is properly considered and contradicts "
+        "Plaintiff's information-and-belief allegation, the claim must conform "
+        "to that document; absent that report, source remains a factual issue.",
     ),
     (
         "PARA",
