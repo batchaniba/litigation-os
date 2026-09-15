@@ -14,7 +14,7 @@ This is the federal-question anchor.
 
 The theory is deliberately narrow: Home Depot procured a First Advantage consumer report for employment purposes and took adverse action based in whole or in part on it without first giving Plaintiff (1) the report and (2) the written Summary of Rights.
 
-This is materially stronger once the Home Depot-specific report is in hand because the pleading no longer has to infer that a consumer report existed or identify the CRA on information and belief.
+The public-source record now materially strengthens this count even before the Home Depot-specific report is obtained. A Home Depot-branded background-check disclosure filed as an exhibit in *Ford v. Home Depot U.S.A., Inc.*, S.D. Cal. No. 3:19-cv-00754, identifies First Advantage Background Services Corp. as the CRA Home Depot would use for California investigative consumer reports and expressly states that Home Depot would provide the report and FCRA rights summary before adverse action. That supports both the vendor allegation and corporate knowledge of the pre-adverse requirement. The transaction-specific report remains necessary to prove what happened in Plaintiff's individual screening.
 
 ### Count 2 — ICRAA §§ 1786.40 / 1786.50, Home Depot
 
@@ -71,6 +71,42 @@ Do not file the federal complaint until this date is verified.
 - Complaint is intentionally unverified. Rule 11 supplies the federal certification; there is no strategic need to convert every information-and-belief allegation into a verification issue.
 - Keep the pleading concise. Save *Donaleski*, *Lerma*, *Dutta*, *Walker*, and the UPS/Randstad comparison record for motion practice unless a short citation becomes necessary.
 - Do not plead another employer’s First Advantage report as proof of what the Home Depot report says.
+
+## Public-source vendor upgrade
+
+The First Advantage identity is no longer a bare placeholder.
+
+The record now includes:
+
+- a Home Depot-branded California disclosure in *Ford* identifying First Advantage as Home Depot's CRA;
+- *Bolton v. First Advantage LNS Screening Solutions, Inc.*, S.D.N.Y. No. 1:14-cv-05735, recounting a First Advantage report furnished to prospective employer Home Depot in July 2013;
+- First Advantage's December 2019 public workforce-screening webinar featuring a Home Depot representative; and
+- later publicly indexed Home Depot / First Advantage reports and applicant accounts corroborating continuity.
+
+The complaint therefore pleads First Advantage as Home Depot's CRA **on information and belief with a stated factual basis**. It still does not allege a Home Depot-specific source field, adjudication code, or registry component as known fact.
+
+The supporting research and discovery targets are collected in `FIRST_ADVANTAGE_HOME_DEPOT_PUBLIC_SOURCE_MEMO.md`.
+
+## Maximum-value discovery plan
+
+If the complaint gets through Rule 12, the first discovery should be aimed at converting every information-and-belief allegation into a binary document fact:
+
+1. complete Home Depot applicant/personnel file;
+2. actual 2024 disclosure and authorization;
+3. full First Advantage report and all versions;
+4. order/profile/package metadata;
+5. component results and raw source fields;
+6. client-specific adjudication matrix;
+7. ATS status and reason codes;
+8. access and transmission logs;
+9. pre-adverse/adverse-action workflow logs;
+10. Home Depot–First Advantage contract/SOW and California screening configuration;
+11. all communications regarding Plaintiff's screen and hire;
+12. First Advantage consumer file and Home Depot user certification.
+
+The central objective is to learn whether the report says, in substance: **California registry source → adverse/decisional result → Home Depot access/use → employment stopped.**
+
+A second high-value target is Plaintiff's actual 2024 Home Depot disclosure/authorization. The *Ford* litigation challenged Home Depot's older standardized form under FCRA § 1681b(b)(2)(A). Do not add that count now, but if Plaintiff's 2024 form is materially similar, audit it for a separate stand-alone disclosure claim and additional willfulness evidence.
 
 ## Report-dependent upgrades
 
