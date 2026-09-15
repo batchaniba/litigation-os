@@ -2,7 +2,7 @@
 
 <!-- Internal generator header. Not part of the pleading. Do not print on page one. -->
 
-This v4 draft keeps the three May 28, 2026 screening counts. No delayed-discovery date. *Lerma* is not named in the pleading; distinguish it if they file an RJN. Safeco willfulness is one damages paragraph, not a count. Contract / covenant / estoppel / misrepresentation remain reserved.
+This v4 draft keeps the three May 28, 2026 screening counts. No delayed-discovery date. Do not name the C.D. Cal. registry-source dismissal in the pleading; distinguish it if they file an RJN. Safeco willfulness is one damages paragraph, not a count. Contract / covenant / estoppel / misrepresentation remain reserved.
 
 ---
 
