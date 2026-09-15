@@ -1,5 +1,34 @@
 [
   {
+    "date": "Sep. 15, 2026",
+    "event": "DRAFT (unsigned / unserved) — Matter 39 E.D. Cal. federal complaint: Tracy warehouse General Warehouse Worker / 2nd Shift at $22.60, requisition 928556BR; First Advantage named in Best Buy's own October 17, 2023 emails; diversity § 1332 in the alternative; current SOS-agent service. Counts 1–2 plead FCRA/ICRAA process-omission discovery on or about May 29, 2026. Count 3 does not use that date; it is timely under CCP § 338(a) from the October 2023 use (outer bound October 17, 2026). Inspection demands drafted for Plaintiff to sign. Generators: internal/scripts/matter39-edca-complaint.py and matter39-inspection-demands.py. September 8 San Joaquin packet remains unfiled historical work product.",
+    "matters": [
+      39
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source_type": "manual",
+    "confidence": "high",
+    "verified_at": "2026-09-15"
+  },
+  {
+    "date": "Sep. 15, 2026",
+    "event": "NEXT — Sign and send Matter 39 inspection demands before filing the E.D. Cal. complaint: (1) First Advantage consumer-file / ICRAA §§ 1786.10, 1786.22 request to P.O. Box 105292, Atlanta, GA 30348; (2) Best Buy Labor Code § 1198.5 personnel-file request to the current California SOS agent, not 6653 Hopkins Road. Do not treat the drafts as served until they go out. Count 3's § 338(a) outer bound is October 17, 2026 if accrual is the offer / same-day screen week.",
+    "matters": [
+      39
+    ],
+    "type": "deadline",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-39/Job Offer - Best Buy General Warehouse Worker 2nd Shift (Oct 17 2023).pdf",
+    "source_type": "portfolio",
+    "confidence": "high",
+    "verified_at": "2026-09-15"
+  },
+  {
     "date": "Sep. 10, 2026",
     "event": "FILED — Dkt. 16 Certificate of Interested Entities, Corporate Disclosure Statement, or Rule 7.1 Disclosures",
     "matters": [
@@ -2855,7 +2884,7 @@
   },
   {
     "date": "Oct. 17, 2026",
-    "event": "OUTER BOUND — CCP § 338(a) three-year statutory-liability clock on the Best Buy § 290.46(j) count if accrual is the Oct. 17, 2023 offer / same-day screen week. The file has no dated rejection. This is a limitations argument sourced to the offer email, not a court-ordered deadline. Confirm the actual decision date.",
+    "event": "OUTER BOUND — CCP § 338(a) three-year statutory-liability clock on the Best Buy § 290.46(j) count if accrual is the Oct. 17, 2023 offer / same-day screen week. The federal redraft does not use May 29, 2026 for this count. The file has no dated rejection. This is a limitations argument sourced to the offer email, not a court-ordered deadline. Confirm the actual decision date.",
     "matters": [
       39
     ],
