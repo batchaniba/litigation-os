@@ -1,12 +1,17 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Matter 39 — verified complaint, Best Buy Co., Inc. / First Advantage.
+"""Matter 39 — HISTORICAL state-court verified complaint generator.
 
-LOCKED after the September 8, 2026 execute. Do not rewrite pleading prose
-unless a new Best Buy or First Advantage document appears. This complaint
-stands on Best Buy's own file. Do not weave other employers' reports.
+SUPERSEDED AS FILING STRATEGY. The September 8, 2026 San Joaquin packet was
+executed but never filed. The active review draft is the direct E.D. Cal.
+federal complaint at:
+internal/docs/matter-39/EDCA_FEDERAL_COMPLAINT_REVIEW_DRAFT.md
 
-San Joaquin Superior Court. Penal Code § 290.46(j) is the load-bearing count.
+Retain this generator only as historical work product; do not execute or file
+its output unless the portfolio strategy is deliberately changed back to
+state court.
+
+Original San Joaquin theory: Penal Code § 290.46(j) is the load-bearing count.
 The October 17, 2023 warehouse offer, background authorization, and First
 Advantage drug-test order are in the file. The employment decision and the
 background report are not. Registry use is information and belief.
