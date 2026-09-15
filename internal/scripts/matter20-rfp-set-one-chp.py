@@ -97,10 +97,10 @@ Plaintiff, In Propria Persona
 Note to self (do not send this footer):
 Draft of {EXEC_DATE}. NOT YET TRANSMITTED.
 - Attach the two PDFs. Do not paste the Demand into the email body.
-- Do not e-file the Demand or the POS-050. CRC 3.250. The September 8 lodging POS was rejected at the portal; do not repeat that.
+- Do not e-file the Demand or proof of service. CRC 3.250. The September 8 lodging POS was rejected at the portal; do not repeat that.
 - Do not cc Department 25.
 - Cc Mark.Beckington@doj.ca.gov because he was on Ms. Ing's September 10 thread. To: Vanessa.Ing@doj.ca.gov is the service address.
-- If you send after September 15, regenerate so the Demand signature date and the POS-050 service date match the send date, or hand-correct both before sending.
+- If you send after September 15, regenerate so the Demand signature date, response date, and proof-of-service date match the actual send date.
 - Do not mention Matter 32, Franks, qualified immunity, punitive damages, or depositions in the email.
 - Do not notice Meza or Melano with this send. Documents first.
 - Do not convert Count 4 into a damages prayer to "open" this discovery. Count 1 already supports it.
