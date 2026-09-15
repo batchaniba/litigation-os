@@ -1,6 +1,79 @@
 [
   {
     "date": "Sep. 14, 2026",
+    "event": "RECEIVED — Chadwick L. Williams (Kabat Chapman & Ozmer LLP; cc Nathan Chapman) emailed at 2:03 p.m. in Newanforbi v. Randstad US, LLC et al. (26CV199902): thanks for the $25,000 offer; conferring with Randstad; attaches a stipulation and proposed order 'we discussed'; asks permission to add Plaintiff's e-signature and file. Counsel draft is Randstad US, LLC only, through September 18, 2026, to answer, move, or otherwise respond. Caption still names Hon. Karin Schwartz, Dept. 20 (stale — operative assignment is Hon. Thomas Weathers, Dept. 20, Aug. 7). Recites the Aug. 18 15-day to Sept. 15; recites that the parties 'have agreed' to Sept. 18; says no previous requests have been made with the Court (conceals the spent CRC 3.110(d) shot); reserves 'rights or defenses' without Plaintiff's default right; Chapman /s/ already on their Word; Plaintiff's block blank. Proposed order recites 'good cause appearing therein.' DO NOT SIGN. E-sign refused. Plaintiff counterpart pending (generator: internal/scripts/matter27-randstad-extension-stipulation.py). Proposed dates are not operative until a signed counterpart is filed and the Court enters an order. This paper does not move The RK Logistics Group, Inc. Evid. Code §1152 / FRE 408 as to the demand; the stipulation is a clock paper, not an acceptance.",
+    "matters": [
+      27
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "filed": false,
+    "actor": "opposing",
+    "source": "/documents/matter-27/Gmail - $25k Global Demand Sent Sep 12 and Williams Stipulation Ask (Sep 14 2026).pdf",
+    "source_type": "portfolio",
+    "confidence": "high",
+    "verified_at": "2026-09-14"
+  },
+  {
+    "date": "Sep. 14, 2026",
+    "event": "PHONE — Chadwick L. Williams and Plaintiff spoke earlier than 2:03 p.m. in Newanforbi v. Randstad US, LLC et al. (26CV199902). Recited in Williams's 2:03 p.m. email: 'As we discussed earlier today, we are conferring with our client and will get back to you as soon as possible. In the meantime, I've attached the stipulation and proposed order we discussed.' Do not treat the call, the attached drafts, or ongoing talks as a further extension. Randstad remains September 15, 2026, until a signed counterpart is filed and the Court orders September 18. RK Logistics is not in that paper.",
+    "matters": [
+      27
+    ],
+    "type": "event",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-27/Gmail - $25k Global Demand Sent Sep 12 and Williams Stipulation Ask (Sep 14 2026).pdf",
+    "source_type": "portfolio",
+    "confidence": "high",
+    "verified_at": "2026-09-14"
+  },
+  {
+    "date": "Sep. 12, 2026",
+    "event": "SENT — Gmail, 8:00 a.m., to Chadwick L. Williams, Melinda Garcia, Nathan Chapman, and Tod Gurney (cc Karen Tai, Pol Minguet, Shinae Kim) in Newanforbi v. Randstad US, LLC et al. (26CV199902). Subject: $25k Global - Newanforbi v. Randstad, et al — 26CV199902. $25,000 to resolve all claims against Randstad US, LLC and The RK Logistics Group, Inc., including all Doe defendants. Wire within seven business days after written acceptance. Both defendants receive an extension to demur or otherwise respond through September 18, 2026. Demand expires automatically at 5:00 p.m. Pacific on September 18, 2026. Attachment named $25K Global Settlement Demand - Sep 11 2026.pdf (letter PDF not in this upload; Gmail print is the cover). This is the text that went out — not the house $40k draft that held the Sept. 14/15 clocks. Evid. Code §1152 / FRE 408. Do not treat the gifted clocks as court-ordered; they are Plaintiff's writing.",
+    "matters": [
+      27
+    ],
+    "type": "settlement",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-27/Gmail - $25k Global Demand Sent Sep 12 and Williams Stipulation Ask (Sep 14 2026).pdf",
+    "source_type": "portfolio",
+    "confidence": "high",
+    "verified_at": "2026-09-14"
+  },
+  {
+    "date": "Sep. 18, 2026",
+    "event": "EXPIRES — $25,000 final early global settlement demand in Newanforbi v. Randstad US, LLC et al. (26CV199902), sent Sept. 12, 2026, 8:00 a.m. Expires automatically at 5:00 p.m. Pacific Time. Williams Sept. 14, 2:03 p.m.: conferring with client; not an acceptance. The pending Randstad stipulation counterpart is not an acceptance and does not move this date. Evid. Code §1152 / FRE 408.",
+    "matters": [
+      27
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-27/Gmail - $25k Global Demand Sent Sep 12 and Williams Stipulation Ask (Sep 14 2026).pdf",
+    "source_type": "portfolio",
+    "confidence": "high",
+    "verified_at": "2026-09-14"
+  },
+  {
+    "date": "Sep. 12, 2026",
+    "event": "DRAFT (unsent) — House $40,000.00 final early global settlement demand in Newanforbi v. Randstad US, LLC et al. (26CV199902): clocks stay Sept. 14 (RK) / Sept. 15 (Randstad); no Sept. 18 gift. Generator: internal/scripts/matter27-global-demand-sep12.py. Letter and cover: internal/docs/matter-27-eval/. THIS TEXT DID NOT GO OUT. The sent Gmail (Sept. 12, 8:00 a.m.) is $25,000 with both defendants offered through September 18. Keep this row as the house draft that was not transmitted. Evid. Code §1152 / FRE 408.",
+    "matters": [
+      27
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source_type": "manual",
+    "confidence": "high",
+    "verified_at": "2026-09-14"
+  },
+  {
+    "date": "Sep. 14, 2026",
     "event": "MAILED — Plaintiff's status report in Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR), required by Dkt. 8 not later than 14 days before the Oct. 8 Zoom conference (calendar due Sep. 24). Plaintiff mailed the report September 14, 2026. Not yet clerk-stamped; do not assign a docket number until PACER shows it. FedEx (Allison A. Kray) still owes its own status report by September 24. Oct. 8 Zoom is unchanged.",
     "matters": [
       25
