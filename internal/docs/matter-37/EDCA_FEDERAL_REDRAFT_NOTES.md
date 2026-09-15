@@ -121,3 +121,32 @@ If the report also shows:
 then plead those exact fields and let the report carry causation. Avoid adjectives when the document can do the work.
 
 If the report instead shows ordinary court records as the operative adverse source and no California-registry sourcing, do **not** force the § 290.46 theory. Rebuild around the FCRA / ICRAA process claims and whatever the actual report supports.
+
+
+## Rule 12(b)(6) engineering — affirmative fact, not conditional theory
+
+The federal complaint now pleads the critical § 290.46 elements as **ultimate facts on information and belief**:
+
+- First Advantage furnished Home Depot Plaintiff's § 290.46 information;
+- Home Depot received, accessed, considered, and used that information;
+- the use was for a purpose relating to employment; and
+- the registry information was a substantial factor in the adverse employment decision.
+
+The complaint does not plead those elements as “possibly true depending on discovery.” Discovery is reserved for the evidentiary details — precise source-field wording, adjudication code, access timestamps, reason codes, and decisionmaker identity.
+
+That distinction matters under *Soo Park v. Thompson*, 851 F.3d 910, 928–29 (9th Cir. 2017): the plausibility standard does not bar information-and-belief pleading where the relevant facts are peculiarly within the defendant's possession and the belief is supported by factual information making the inference plausible.
+
+### Comparator architecture
+
+The complaint now pleads the UPS and FedEx First Advantage screenings as **comparators concerning the same consumer and same CRA**, not as Home Depot's report:
+
+- UPS: First Advantage report concerning Plaintiff during the same general period; ordinary criminal searches non-adverse; sex-offender-registry component adverse/decisional; source expressly identified as California Sex Offender Registry.
+- FedEx: separate First Advantage employment screen; FedEx later admitted in its responsive pleading that the report identified Plaintiff as a California registrant.
+
+The underlying California registry entry is employer-invariant. What can vary by employer is the package, configuration, and presentation. Those comparator facts make the allegation that First Advantage's Home Depot screen contained the same California registry information substantially more concrete than a naked inference.
+
+### FCRA injury / Dutta distinction
+
+The FCRA allegations are now tied to the lost employment itself. Plaintiff alleges that if Home Depot had furnished the report and Summary of Rights before adverse action, he could have identified the California-registry source and objected that § 290.46(j)(2)(E) prohibited Home Depot from using that information for the employment decision.
+
+That is designed to distinguish *Dutta v. State Farm*, 895 F.3d 1166 (9th Cir. 2018), where the missing pre-adverse process could not have changed the outcome because an accurate, independently disqualifying credit item remained. Here, the pleaded theory is that the information driving the decision was itself legally prohibited from employment use.
