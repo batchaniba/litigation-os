@@ -2,40 +2,41 @@
   "number": 37,
   "caption": "Brendan Ngwa Nforbi v. Home Depot U.S.A., Inc.",
   "case_no": "TBD",
-  "court": "San Joaquin Sup. Ct. (executed packet; not yet filed)",
-  "claims": "ICRAA § 1786.40 (I&B); CCRAA § 1785.20.5 (alternative); UCL § 17200; Penal Code § 290.46(j) (I&B — report contents and use)",
-  "status": "EXECUTED (unfiled) — four-count San Joaquin complaint against Home Depot U.S.A., Inc. Plaintiff accepted the Tracy DC hire, began onboarding, then was ghosted. Hire date is I&B on or about August 2024. § 290 is the fourth count. Serve CSC, not the Tracy building.",
-  "status_label": "Executed — unfiled",
+  "court": "USDC E.D. Cal. — Sacramento Division (proposed diversity filing)",
+  "claims": "Penal Code § 290.46(j)(2)(E)/(j)(4)(A) — diversity-first federal review draft; FCRA/ICRAA reserved pending truthful limitations chronology",
+  "status": "FEDERAL REDRAFT v3 — diversity-first §290.46 complaint on current main. FCRA/ICRAA removed from the opening draft after hostile limitations audit; May 29 legal-theory awareness is not used as a discovery date.",
+  "status_label": "Federal redraft v3 — limitations hardened",
   "lifecycle": "pre_filing",
-  "proceeding": "state_civil",
+  "proceeding": "federal_civil",
   "phase": "pre_filing",
   "filed": "Not yet filed",
   "judge": "TBD",
   "cluster": 3,
-  "type": "State",
+  "type": "Federal",
   "archived": false,
-  "note": "LOCKED. Packet is signed for September 8, 2026 filing. Do not treat as filed until clerk-stamped. Do not rewrite pleading prose unless a new Home Depot document appears. Plaintiff accepted the hire, began onboarding, and was then ghosted. Hire timing remains I&B on or about August 2024. Report contents and use are I&B. Title, shift, and pay are still not in the file. Tameny/IIED/FEHA omitted. FCRA omitted. Serve CSC, not the Tracy building. § 290.46(j) is the last count on page one.",
+  "note": "PR replacement branch matter37-edca-federal-redraft-v3. Opening federal complaint now proceeds under 28 U.S.C. §1332 + Penal Code §290.46 only. The prior v2 FCRA/ICRAA counts relied on a May 29, 2026 'first understood' theory that the internal notes tied to later pursuit of the legal theory rather than a concrete factual discovery event; those counts are therefore reserved unless a truthful factual discovery chronology establishes timeliness. §290.46 is pleaded as remedial statutory liability under CCP §338(a); opening prayer does not seek or rely on the optional civil-penalty remedy, avoiding an unnecessary §340(a) fight. Highest-value prefiling step remains obtaining the Home Depot-specific First Advantage report/source fields.",
   "defendants": "Home Depot U.S.A., Inc., a Delaware corporation, d/b/a The Home Depot and The Home Depot Distribution Center (likely legal employer for the Tracy fulfillment center at 5395 Hopkins Road); DOES 1–20 for the actual employing affiliate, screening vendor, and decision-makers. The Home Depot, Inc. parent is not named merely as parent. The Tracy building is a worksite, not a defendant.",
   "causes": [
-    "[INDEPENDENT PATH] ICRAA, Civ. Code §§ 1786.40 and 1786.50 — if an investigative report was obtained before the ghosting without source advice; pleaded to reach discovery even if the § 290 count later fails on the report; Plaintiff confirms no 1786.40 advice arrived; 1786.52 discovery date does not appear on the face of the pleading",
-    "[ALTERNATIVE] CCRAA, Civ. Code §§ 1785.20.5 and 1785.31 — if the report was an ordinary consumer credit report rather than investigative; no copy or rights notice before the ghosting",
-    "[DERIVATIVE / EQUITABLE] UCL § 17200 — unlawful and unfair prongs borrowing § 290.46(j); restitution limited to vested money/property",
-    "[PLEADED ON INFORMATION AND BELIEF] Penal Code § 290.46(j) — last count on page one; known facts are the hire, acceptance, onboarding, background check, ghost, contemporaneous Megan's Law listing, and exclusive control of the file; report contents and Home Depot's use are I&B on that basis; report not attached because Home Depot has not produced it",
-    "[OMITTED] Tameny / IIED — two-year CCP § 335.1 clock likely closed if the decision was August 2024; not the load-bearing claim",
-    "[OMITTED] FCRA — reserved; pleading it now would create a federal question without a named vendor or pre-adverse packet",
-    "[PRESERVED, NOT PLEADED] FEHA and Fair Chance Act — no CRD right-to-sue in the record"
+    "[OPENING FEDERAL CLAIM] Penal Code § 290.46(j)(2)(E), (j)(4)(A) — I&B allegation that Home Depot used information disclosed through California's Megan's Law site for the Tracy employment decision; diversity jurisdiction; compensatory/additional/exemplary remedies pleaded without relying on civil penalty.",
+    "[RESERVED] FCRA § 1681b(b)(3)(A) — do not add unless a truthful factual discovery chronology survives §1681p actual/constructive-discovery analysis.",
+    "[RESERVED] ICRAA §§ 1786.40/1786.50 — do not add unless a truthful factual discovery chronology survives §1786.52.",
+    "[OMITTED] UCL, CCRAA, Tameny, IIED, FCRA §1681m(a), Fair Chance Act/FEHA, and First Advantage as an opening defendant."
   ],
   "key_facts": "On or about August 2024, Plaintiff was hired to work at The Home Depot distribution/fulfillment center at 5395 Hopkins Road, Tracy, CA 95377. He accepted the position and began onboarding. Home Depot ran a background check. Thereafter Home Depot ghosted him. Plaintiff is a registrant. The report is in Home Depot's files. Plaintiff does not possess it and does not allege its contents as a known fact. On information and belief — hire, screen, unexplained ghost, contemporaneous Megan's Law listing, exclusive control of the file — the report contained information disclosed pursuant to Penal Code § 290.46 and Home Depot used that information, in whole or in part, to ghost him. The claim is Home Depot's own report and decision, not off a different employer's file. No offer letter, time records, wage statements, vendor name, or adverse-action notice is in the portfolio. Labor Code § 1198.5 inspection has not yet been demanded. Serve CSC, not the Tracy building.",
-  "procedural_status": "LOCKED. Executed verified complaint and San Joaquin intake dated September 8, 2026; signed, not yet filed. The 290 count is I&B that Home Depot's own report contained registry information and Home Depot used it to ghost Plaintiff — not off a different employer's file. Serve CSC, not 5395 Hopkins Road. Do not bury Serrato disclosures that day.",
+  "procedural_status": "Pre-filing v3 federal redraft on branch matter37-edca-federal-redraft-v3. Supersedes stale v2 PR #795 for review purposes. Existing Sep. 8 San Joaquin packet remains historical/unfiled. Serve First Advantage and Home Depot inspection/personnel demands before filing if practicable; then hostile-audit the actual source fields.",
   "damages": "No wage rate or duration is in the record. Portfolio valuation is the post-favorable-MTD settlement range: $50,000 / $70,000 / $90,000. That assumes the pleading survives demurrer with the well-pleaded I&B report-and-use allegations taken as true. Do not import UPS/Pilot numbers. Contingent statutory remedies: Penal Code § 290.46(j)(4)(A) actual/treble with a $250 floor, fees, exemplary damages, or a civil penalty capped at $25,000; ICRAA § 1786.50 actual damages or $10,000, whichever is greater.",
-  "risk": "The file still has no Home Depot offer, report, or notice. Report contents and use are now I&B, supported by hire, screen, unexplained ghost, contemporaneous Megan's Law listing, and exclusive control of the file. A demurrer must take well-pleaded I&B as true; Lerma cannot run without Home Depot's report in the record. If production later shows court records and no California-registry source, the 290 count dies then. Vendor still unnamed. ICRAA remains the backup path. CCP § 340(a) remains a defense argument on the civil-penalty piece. Tameny is omitted. Naming the Tracy building or serving the warehouse instead of CSC would be party/service defects.",
+  "risk": "Primary merits risk remains source/use: no Home Depot-specific First Advantage report is yet in hand. Public Home Depot/FADV materials plus UPS/FedEx same-consumer comparators support I&B but do not substitute for the transaction-specific report. Lerma becomes dispositive if the actual report contradicts registry sourcing. Donaleski permits independent lawful sourcing. Federal jurisdiction is diversity-first; amount in controversy must remain supportable in good faith from actual economic loss plus non-penalty §290.46 remedies. FCRA/ICRAA are not filing-ready on the current limitations record and are reserved rather than forced through a May 29 legal-awareness date.",
   "evidence": [
     "Plaintiff's statement — hire on or about August 2024 at 5395 Hopkins Road, Tracy; accepted; began onboarding; Home Depot ran a background check; then ghosted; report contents and use are I&B (no independent paper in the folder)",
     "Public description of the Tracy fulfillment center at 5395 Hopkins Road (worksite identification only)",
     "Penal Code § 290.46(j)(1), (j)(2)(E), (j)(4)(A)-(B)",
     "Code Civ. Proc. §§ 425.10, 452 — notice pleading; liberal construction of facts exclusively in Defendants' possession",
     "Labor Code § 1198.5 — personnel-file inspection if Plaintiff was an employee; not yet demanded",
-    "Lerma v. Amazon, C.D. Cal. 8:22-cv-01727, Dkt. 36 — dismissal after the employer's report was in the record; cannot be replicated on demurrer while Home Depot withholds the report"
+    "Lerma v. Amazon, C.D. Cal. 8:22-cv-01727, Dkt. 36 — dismissal after the employer's report was in the record; cannot be replicated on demurrer while Home Depot withholds the report",
+    "v3 limitations audit — FCRA/ICRAA opening counts removed/reserved because current record does not establish a defensible factual discovery date within two years; May 29 legal-theory awareness retired",
+    "v3 diversity-first architecture — Home Depot DE incorporation / GA PPB; §290.46 remedial/additional/exemplary relief used for AIC, not optional civil penalty",
+    "v3 complaint — internal/docs/matter-37/EDCA_FEDERAL_COMPLAINT_REVIEW_DRAFT.md",
+    "v3 notes — internal/docs/matter-37/EDCA_FEDERAL_REDRAFT_NOTES.md"
   ],
   "documents": [
     {
@@ -62,5 +63,8 @@
       "path": "/documents/matter-37/FW-003 Order on Court Fee Waiver - Ngwa Nforbi v Home Depot USA Inc (Sep 8 2026).pdf",
       "filed": false
     }
-  ]
+  ],
+  "courtlistener": {
+    "court_id": "caed"
+  }
 }
