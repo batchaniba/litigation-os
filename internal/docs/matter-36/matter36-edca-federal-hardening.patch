@@ -1,0 +1,86 @@
+diff --git a/internal/scripts/matter36-edca-complaint.py b/internal/scripts/matter36-edca-complaint.py
+index 6459d13..9e9539d 100644
+--- a/internal/scripts/matter36-edca-complaint.py
++++ b/internal/scripts/matter36-edca-complaint.py
+@@ -207,6 +207,25 @@ CONTENT = [
+         "28 U.S.C. section 1391(b)(2) because a substantial part of the events "
+         "occurred in Lodi, San Joaquin County, California.",
+     ),
++    (
++        "PARA",
++        "12A. Plaintiff has Article III standing. His injury is concrete and "
++        "particularized and is not a bare procedural violation. AT&T's conduct "
++        "caused Plaintiff two real-world harms: the loss of the accepted Lodi "
++        "Retail Sales Consultant position and its compensation at $24.95 per "
++        "hour, a tangible economic injury; and the deprivation of the "
++        "pre-adverse review-and-response opportunity that 15 U.S.C. section "
++        "1681b(b)(3)(A) exists to protect. That deprivation is not abstract. "
++        "Had AT&T furnished the report and the written Summary of Rights before "
++        "the 12:23 p.m. rescission, Plaintiff could have identified that the "
++        "report contained his California registry information and advised AT&T, "
++        "before the decision became final, that Penal Code section "
++        "290.46(j)(2)(E) prohibited use of that information — an intervention "
++        "that bore directly on the very decision that ended his employment. "
++        "See TransUnion LLC v. Ramirez, 594 U.S. 413 (2021). Each injury is "
++        "fairly traceable to AT&T's conduct and redressable by the relief "
++        "sought, and each independently supports Plaintiff's standing.",
++    ),
+     (
+         "PARA",
+         "13. Under Eastern District of California Local Rule 120(d), civil "
+@@ -547,12 +566,20 @@ CONTENT = [
+         "PARA",
+         "58. AT&T's noncompliance was negligent within the meaning of "
+         "15 U.S.C. section 1681o and, on proof, willful within the meaning of "
+-        "section 1681n. Willfulness is plausibly supported by AT&T's own "
+-        "10:19 a.m. First Advantage task, which referenced FCRA disclosure "
+-        "and authorization the same morning AT&T rescinded the offer without "
+-        "the report or rights summary. Plaintiff does not presently plead a "
+-        "claim under section 1681b(b)(2)(A). Plaintiff pleads negligence and "
+-        "willfulness in the alternative.",
++        "section 1681n. Willfulness under section 1681n includes reckless "
++        "disregard of the statute's requirements. See Safeco Ins. Co. of "
++        "America v. Burr, 551 U.S. 47 (2007). It is plausibly supported here "
++        "by AT&T's status as a large and sophisticated national employer that "
++        "procures employment background reports at scale under standardized, "
++        "automated procedures; by AT&T's own 10:19 a.m. First Advantage task, "
++        "which referenced FCRA disclosure and authorization the same morning "
++        "AT&T rescinded the offer without the report or rights summary; and by "
++        "the settled and unambiguous character of the section 1681b(b)(3)(A) "
++        "pre-adverse-notice requirement, which is not subject to any "
++        "objectively reasonable reading that would excuse furnishing neither "
++        "the report nor the Summary of Rights before acting. Plaintiff does "
++        "not presently plead a claim under section 1681b(b)(2)(A). Plaintiff "
++        "pleads negligence and willfulness in the alternative.",
+     ),
+     (
+         "PARA",
+@@ -651,6 +678,28 @@ CONTENT = [
+         "information disclosed pursuant to section 290.46 for this "
+         "retail-sales hiring decision.",
+     ),
++    (
++        "PARA",
++        "70A. On a motion to dismiss, the source and contents of AT&T's First "
++        "Advantage report cannot be resolved against Plaintiff. That AT&T "
++        "could, in the abstract, have obtained criminal-history information "
++        "from ordinary court records does not establish that it did so, or "
++        "that it refrained from using the registry-derived information First "
++        "Advantage returned; subdivision (j)(2)(E) is violated by the use that "
++        "in fact occurred. Judicial notice of the existence of Plaintiff's "
++        "public court or conviction records would establish neither the source "
++        "nor the contents of AT&T's unproduced report, and the truth of "
++        "matters asserted within any judicially noticed record is not admitted "
++        "by its notice. Lerma v. Amazon.com Services, LLC, No. 8:22-cv-01727 "
++        "(C.D. Cal.), dismissed a comparable registry count only after the "
++        "employer's report was in the record and showed ordinary court records "
++        "and a national sex-offender search returning no California-registry "
++        "entry. That disposition turned on the report. AT&T's report is not "
++        "before the Court, and Plaintiff does not allege its contents as a "
++        "known fact. A defendant may not obtain dismissal by withholding the "
++        "one document that would confirm or refute the inference Plaintiff "
++        "pleads on information and belief.",
++    ),
+     (
+         "PARA",
+         "71. AT&T thereby violated section 290.46(j)(2)(E). Plaintiff seeks "
