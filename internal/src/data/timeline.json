@@ -1,34 +1,5 @@
 [
   {
-    "date": "Sep. 15, 2026",
-    "event": "DRAFT (unsigned / unserved) — Matter 36 E.D. Cal. federal complaint: Lodi Retail Sales Consultant at $24.95/hour, $13,700 target variable, tentative June 15, 2026 start, requisition R-106742 / candidate C-1690172; First Advantage AT&T Non Management task at 10:19 a.m. account 132156; Patterson rescission text at 12:23 p.m. Seven counts. No May 29 delayed-discovery date. No diversity § 1332. Serve current SOS agent, not 2439 W. Kettleman Lane. Generators: internal/scripts/matter36-edca-complaint.py and matter36-inspection-demands.py. September 8 San Joaquin packet remains unfiled historical work product.",
-    "matters": [
-      36
-    ],
-    "type": "correspondence",
-    "upcoming": false,
-    "filed": false,
-    "actor": "you",
-    "source_type": "manual",
-    "confidence": "high",
-    "verified_at": "2026-09-15"
-  },
-  {
-    "date": "Sep. 15, 2026",
-    "event": "NEXT — Sign and send Matter 36 inspection demands before filing the E.D. Cal. complaint: (1) First Advantage consumer-file / ICRAA §§ 1786.10, 1786.22 request to P.O. Box 105292, Atlanta, GA 30348-5292 (AT&T Non Management; account 132156; May 28, 2026); (2) AT&T Labor Code § 1198.5 personnel-file request to the current California SOS agent, not 2439 W. Kettleman Lane. Do not treat the drafts as served until they go out. No count uses May 29, 2026. Count 3's § 338(a) outer bound is May 28, 2029.",
-    "matters": [
-      36
-    ],
-    "type": "deadline",
-    "upcoming": false,
-    "filed": false,
-    "actor": "you",
-    "source": "/documents/matter-36/Welcome to AT&T! Retail Offer Letter 2026-05-28.pdf",
-    "source_type": "portfolio",
-    "confidence": "high",
-    "verified_at": "2026-09-15"
-  },
-  {
     "date": "Sep. 10, 2026",
     "event": "FILED — Dkt. 16 Certificate of Interested Entities, Corporate Disclosure Statement, or Rule 7.1 Disclosures",
     "matters": [
@@ -2856,7 +2827,7 @@
   },
   {
     "date": "Sep. 8, 2026",
-    "event": "HISTORICAL / NEVER CLERK-FILED — Executed verified San Joaquin complaint against AT&T Mobility Services LLC (Matter 36), dated September 8, 2026, with CM-010, SUM-100, and FW-001. Never reached the clerk. Superseded as the live pleading by the September 15, 2026 E.D. Cal. federal redraft. First Advantage is not a named defendant. Serve the current SOS agent, not a store.",
+    "event": "FILE-READY (optional vs Serrato) — Executed verified complaint against AT&T Mobility Services LLC (Matter 36), dated September 8, 2026, with CM-010, SUM-100, and FW-001 (5b / $0, UPS/FedEx grant pattern). First Advantage is not a named defendant. Not yet filed. Plaintiff confirmed Workday acceptance, onboarding, reliance, and nonreceipt. Serve the current SOS agent, not a store. Serrato Rule 26(a)(1) went to Li Sep. 8 at 8:59 p.m. These remain optional unfiled. FCRA is pleaded and may permit removal.",
     "matters": [
       36
     ],
@@ -3346,7 +3317,7 @@
   },
   {
     "date": "May 28, 2026",
-    "event": "AT&T OFFER AND SAME-DAY RESCISSION — Workday emailed “Welcome to the team” at 10:13 a.m. and stated AT&T was officially offering R-106742 Bilingual Spanish Retail Sales Consultant. The written offer lists $24.95/hour, $13,700 target variable, tentative June 15 start, reporting to Orville R. Bell at 2439 W. Kettleman Lane; contingencies omit Spanish. Workday issued three offer/onboarding tasks at 10:15–10:17 a.m.; First Advantage invited Plaintiff to begin AT&T Non Management screening at 10:19 a.m., account 132156. At 12:23 p.m., recruiter Richard Patterson texted that the manager no longer wanted to proceed because the role needed a Spanish speaker and Plaintiff did not pass the Spanish assessment. Plaintiff confirmed Workday acceptance and onboarding. The AT&T First Advantage report, Spanish score, and a completed background-report copy are not in the file.",
+    "event": "AT&T OFFER AND SAME-DAY RESCISSION — Workday emailed “Welcome to the team” at 10:13 a.m. and stated AT&T was officially offering R-106742 Bilingual Spanish Retail Sales Consultant. Workday issued three offer/onboarding tasks at 10:15–10:17 a.m.; First Advantage invited Plaintiff to begin AT&T Non Management screening at 10:19 a.m. At 12:23 p.m., recruiter Richard Patterson texted that the manager no longer wanted to proceed because the role needed a Spanish speaker and Plaintiff did not pass the Spanish assessment. The file does not contain the formal offer terms, acceptance audit, test score, or a completed background report.",
     "matters": [
       36
     ],
