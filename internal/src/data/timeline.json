@@ -1,6 +1,64 @@
 [
   {
     "date": "Sep. 14, 2026",
+    "event": "MAILED — Plaintiff's status report in Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR), required by Dkt. 8 not later than 14 days before the Oct. 8 Zoom conference (calendar due Sep. 24). Plaintiff mailed the report September 14, 2026. Not yet clerk-stamped; do not assign a docket number until PACER shows it. FedEx (Allison A. Kray) still owes its own status report by September 24. Oct. 8 Zoom is unchanged.",
+    "matters": [
+      25
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-25/Dkt 08 - Order Setting Status Conference (Filed Sep 8 2026).pdf",
+    "source_type": "court_order",
+    "confidence": "high",
+    "verified_at": "2026-09-14"
+  },
+  {
+    "date": "Sep. 14, 2026",
+    "event": "FILED — Rule 4(l) return for Santiago Meza-Gonzalez in Nforbi v. Meza-Gonzalez et al. (N.D. Cal. 4:26-cv-08271-ASK): Daniel Fischer / Run With It Declaration of Service and Declaration of Reasonable Diligence (order 15645547). Substitute service Aug. 27, 2026, 1:30 p.m., Kim S. - H.R. at CHP Modesto Area, 4030 Kiernan Ave. Plaintiff reports the return was filed September 14, 2026. Docket number unconfirmed until PACER. CCP §415.20 mailing follow-up is still not on the face of the return — do not start Meza's FRCP 12 clock from Aug. 27. Copy of the filed return to DAG Li is still unsent.",
+    "matters": [
+      32
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "you",
+    "source": "/documents/matter-32/ndcal/Run With It - Declaration of Service and Diligence - Meza-Gonzalez (Order 15645547, Signed Sep 3 2026).pdf",
+    "source_type": "court_order",
+    "confidence": "high",
+    "verified_at": "2026-09-14"
+  },
+  {
+    "date": "Sep. 24, 2026",
+    "event": "WATCH — FedEx status reports in Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR). Dkt. 8: not later than 14 days before the Oct. 8 Zoom (Sep. 24). Plaintiff mailed his report September 14; confirm clerk stamp / docket number on PACER. Defendant Federal Express Corporation (Allison A. Kray, allison.kray@fedex.com) still must file. Both-party obligation is not complete until FedEx's report is on the docket. Oct. 8 Zoom unchanged.",
+    "matters": [
+      25
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-25/Dkt 08 - Order Setting Status Conference (Filed Sep 8 2026).pdf",
+    "source_type": "court_order",
+    "confidence": "high",
+    "verified_at": "2026-09-11"
+  },
+  {
+    "date": "Sep. 8, 2026",
+    "event": "SATISFIED — Rule 4(l) return for Santiago Meza-Gonzalez (Daniel Fischer Declaration of Service + Diligence, Run With It order 15645547). Plaintiff reports it was filed September 14, 2026. Confirm clerk stamp / docket number on PACER. Copy DAG Li remains unsent. CCP §415.20 mailing follow-up is not on the face of this return.",
+    "matters": [
+      32
+    ],
+    "type": "deadline",
+    "upcoming": false,
+    "actor": "you",
+    "source": "/documents/matter-32/ndcal/Run With It - Declaration of Service and Diligence - Meza-Gonzalez (Order 15645547, Signed Sep 3 2026).pdf",
+    "source_type": "court_order",
+    "confidence": "high",
+    "verified_at": "2026-09-11"
+  },
+  {
+    "date": "Sep. 14, 2026",
     "event": "DRAFTED (unfiled) — Plaintiff's Status Report in Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR), dated September 14, 2026, executed in Milpitas. Covers every Dkt. 8 topic: service complete (July 24 Sheriff / CT); joinder reserved as to First Advantage; amendment cutoff December 18, 2026; diversity / no remand; Rule 26(f) plan with disclosures October 8, 2026, fact cutoff February 12, 2027, experts March 12 / April 9 / April 23, 2027; related case UPS 2:26-cv-02847 disclosed, no consolidation; settlement conference requested before Judge Riordan the week of November 2, 2026; Plaintiff stipulates to the assigned magistrate as settlement judge, not to Judge Drozd if Drozd will try the case. Due September 24. Serve Kray by mail from San Jose. Appear October 8 Zoom. Do not treat as filed.",
     "matters": [
       25
