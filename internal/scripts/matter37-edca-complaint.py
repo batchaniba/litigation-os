@@ -81,8 +81,8 @@ CONTENT = [
     (
         "NOTICE",
         "REVIEW DRAFT -- NOT FOR FILING. Confirm that May 29, 2026 is the "
-        "first date Plaintiff understood Penal Code section 290.46(j)(2)(E) "
-        "and the Tracy events as a report-based statutory violation. Confirm "
+        "first date Plaintiff understood the FCRA and ICRAA process omissions "
+        "in the Tracy screen. Count Three does not use that date. Confirm "
         "the Tracy position is not DOT-excepted, and have Plaintiff sign "
         "before any filing. Serve CSC, not 5395 Hopkins Road.",
     ),
@@ -518,7 +518,7 @@ CONTENT = [
     ),
     (
         "SUBHEAD",
-        "F. Discovery of the Violations and Timeliness",
+        "F. Discovery of the FCRA and ICRAA Violations\nand Timeliness",
     ),
     (
         "PARA",
@@ -529,8 +529,8 @@ CONTENT = [
         "report, identify First Advantage, disclose the report's contents, "
         "provide the statutory pre-adverse package, or advise him that an "
         "investigative consumer report had been obtained. The 2024 employment "
-        "result is not discovery of the FCRA, ICRAA, or Penal Code section "
-        "290.46 violations alleged here.",
+        "result is not discovery of the FCRA or ICRAA violations alleged in "
+        "Counts One and Two.",
     ),
     (
         "PARA",
@@ -540,26 +540,25 @@ CONTENT = [
         "public records identifying First Advantage as a Home Depot vendor, "
         "support the information-and-belief allegations about what Home "
         "Depot's screen contained. They are not Home Depot's report, and they "
-        "are not pleaded as the discovery event.",
+        "are not pleaded as the discovery event for Counts One and Two.",
     ),
     (
         "PARA",
-        "46. On or about May 29, 2026, Plaintiff first learned that Penal "
-        "Code section 290.46(j)(2)(E) prohibits use of information disclosed "
-        "pursuant to section 290.46 for purposes relating to employment, and "
-        "first understood that the Tracy background-check cessation was a "
-        "report-based statutory violation rather than an unexplained non-hire. "
-        "Until that date, Home Depot's silence had disclosed only the "
-        "employment result. Plaintiff does not allege that May 29, 2026 is "
-        "the date he first knew he had lost the job.",
+        "46. On or about May 29, 2026, Plaintiff first understood that Home "
+        "Depot had obtained a consumer report and an investigative consumer "
+        "report in connection with the Tracy hire and had taken adverse "
+        "action without providing the FCRA pre-adverse package or the Civil "
+        "Code section 1786.40 advice. Until that date, Home Depot's silence "
+        "had disclosed only the employment result. That is the date of "
+        "discovery of the violations alleged in Counts One and Two. Plaintiff "
+        "does not allege that May 29, 2026 is the date he first knew he had "
+        "lost the job.",
     ),
     (
         "PARA",
-        "47. This action is filed within two years after that discovery and "
-        "within five years after the FCRA violation occurred. See 15 U.S.C. "
-        "section 1681p; Cal. Civ. Code section 1786.52. The Penal Code "
-        "section 290.46(j)(4)(A) claim is a liability created by statute "
-        "timely under Code of Civil Procedure section 338(a) as well. "
+        "47. Counts One and Two are filed within two years after that "
+        "discovery and within five years after the FCRA violation occurred. "
+        "See 15 U.S.C. section 1681p; Cal. Civ. Code section 1786.52. "
         "Plaintiff has prepared statutory inspection requests to First "
         "Advantage under Civil Code sections 1786.10 and 1786.22, and a "
         "personnel-file request to Home Depot under Labor Code section 1198.5. "
@@ -644,7 +643,7 @@ CONTENT = [
         "Fair Credit Reporting Act -- 15 U.S.C. section 1681b(b)(3)(A)\n"
         "Against Home Depot U.S.A., Inc.",
     ),
-    ("PARA", "56. Plaintiff realleges paragraphs 1 through 55."),
+    ("PARA", "56. Plaintiff realleges paragraphs 1 through 55, including paragraphs 44 through 47 as to this count."),
     (
         "PARA",
         "57. Plaintiff was a 'consumer,' the First Advantage report was a "
@@ -715,7 +714,7 @@ CONTENT = [
         "Cal. Civ. Code sections 1786.40, 1786.50\n"
         "Against Home Depot U.S.A., Inc.",
     ),
-    ("PARA", "65. Plaintiff realleges paragraphs 1 through 55."),
+    ("PARA", "65. Plaintiff realleges paragraphs 1 through 55, including paragraphs 44 through 47 as to this count."),
     (
         "PARA",
         "66. The First Advantage employment background report was an "
@@ -768,7 +767,14 @@ CONTENT = [
         "Cal. Penal Code section 290.46(j)(2)(E) and (j)(4)(A)\n"
         "Against Home Depot U.S.A., Inc.",
     ),
-    ("PARA", "72. Plaintiff realleges paragraphs 1 through 55."),
+    (
+        "PARA",
+        "72. Plaintiff realleges paragraphs 1 through 43 and 48 through 55. "
+        "Plaintiff does not reallege paragraphs 44 through 47. This count is a "
+        "liability created by statute. It is timely under Code of Civil "
+        "Procedure section 338(a) from the on-or-about August 2024 employment "
+        "use.",
+    ),
     (
         "PARA",
         "73. Penal Code section 290.46(j)(1) authorizes use of information "

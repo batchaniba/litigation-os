@@ -41,15 +41,17 @@ Exact source-field wording, adjudication codes, and access timestamps remain res
 
 ## The filing-critical limitations section
 
-Discovery is pleaded **on or about May 29, 2026**. Do not name other cases in the complaint.
+May 29, 2026 is pleaded **only for Counts One and Two** (FCRA and ICRAA). Do not name other cases in the complaint.
 
-The object of that date is **not** “the day Plaintiff knew he had been harmed.” He knew he had lost the Tracy job in August 2024. May 29, 2026 is pleaded as the date he first learned that Penal Code § 290.46(j)(2)(E) prohibits employment use of Megan’s Law information and first understood the Tracy background-check cessation as a report-based statutory violation.
+Count Three (Penal Code § 290.46) does **not** reallege paragraphs 44–47 and does **not** use May 29. It is timely under CCP § 338(a) from the on-or-about August 2024 employment use (about August 2027).
 
-Do not write “I learned of the law” as a standalone theory. Delayed discovery is facts, not legal research. The pleaded facts are: 2024 disclosed only the employment result; Home Depot never sent the report, the CRA identity, or the ICRAA advice; Plaintiff first understood those omissions as statutory violations on or about May 29, 2026.
+For Counts One and Two, the object of May 29 is **not** “the day Plaintiff knew he had been harmed.” He knew he had lost the Tracy job in August 2024. May 29, 2026 is pleaded as the date he first understood that Home Depot had obtained a consumer / investigative report and had skipped the FCRA pre-adverse package and the ICRAA § 1786.40 advice.
 
-Internal provenance (keep out of the complaint): May 29, 2026 is the Pilot filing date. If asked at deposition what happened that day, the truthful answer is that this is when Plaintiff first pursued the § 290.46 employment-use theory. Do not deny that. Do not volunteer other captions in the Home Depot pleading.
+Do not write “I learned of the law” as a standalone theory. Delayed discovery is facts, not legal research.
 
-If Plaintiff actually understood the statute earlier while drafting, use that earlier date. Do not pick a file-stamp that is later than the true first understanding.
+Internal provenance (keep out of the complaint): May 29, 2026 is the Pilot filing date. If asked at deposition what happened that day, the truthful answer is that this is when Plaintiff first pursued the employment-screening statutory theory. Do not deny that. Do not volunteer other captions in the Home Depot pleading.
+
+If Plaintiff actually understood the FCRA/ICRAA omissions earlier while drafting, use that earlier date for Counts One and Two.
 
 Home Depot will argue inquiry notice from the 2024 ghosting and from other employers’ 2024 First Advantage notices. That is a defense. It is not a reason to volunteer August 2024.
 

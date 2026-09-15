@@ -1,6 +1,6 @@
 # Matter 37 — E.D. Cal. Federal Complaint Review Draft
 
-> **REVIEW DRAFT — NOT FOR FILING YET.** This version is engineered for a direct federal filing in the Eastern District of California, Sacramento Division. It affirmatively pleads, on information and belief and with stated factual support, that Home Depot used information disclosed pursuant to Penal Code § 290.46 for an employment purpose. Comparator First Advantage records are pleaded as factual support for that inference, not as substitutes for Home Depot's transaction-specific records. Discovery of the statutory violations is pleaded as on or about May 29, 2026 — not the August 2024 employment result, and not “the day Plaintiff knew he had been harmed.” Do not name other cases in this section.
+> **REVIEW DRAFT — NOT FOR FILING YET.** This version is engineered for a direct federal filing in the Eastern District of California, Sacramento Division. It affirmatively pleads, on information and belief and with stated factual support, that Home Depot used information disclosed pursuant to Penal Code § 290.46 for an employment purpose. Comparator First Advantage records are pleaded as factual support for that inference, not as substitutes for Home Depot's transaction-specific records. May 29, 2026 is pleaded as discovery of the FCRA and ICRAA counts only. The Penal Code count uses CCP § 338(a) from the August 2024 use and does not reallege that date.
 
 Generate the pleading-paper PDF with:
 
@@ -142,15 +142,15 @@ Plaintiff BRENDAN NGWA NFORBI (“Plaintiff”), appearing in propria persona, a
 
 43. The omission alleged in paragraph 42 is distinct from the FCRA omission alleged in Count One. Count One concerns Home Depot’s failure **before adverse action** to furnish the report and federal Summary of Rights. Count Two concerns Home Depot’s separate California duty, upon denying employment under circumstances in which an investigative report was obtained, to advise Plaintiff and identify the investigative consumer reporting agency.
 
-## F. Discovery of the Violations and Timeliness
+## F. Discovery of the FCRA and ICRAA Violations and Timeliness
 
-44. At the time Home Depot stopped the onboarding process in 2024, Plaintiff knew that the employment opportunity had ended. That is when he knew he had been harmed in the ordinary sense: he had lost the accepted Tracy hire. Home Depot did not give him the consumer report, identify First Advantage, disclose the report’s contents, provide the statutory pre-adverse package, or advise him that an investigative consumer report had been obtained. The 2024 employment result is not discovery of the FCRA, ICRAA, or Penal Code § 290.46 violations alleged here.
+44. At the time Home Depot stopped the onboarding process in 2024, Plaintiff knew that the employment opportunity had ended. That is when he knew he had been harmed in the ordinary sense: he had lost the accepted Tracy hire. Home Depot did not give him the consumer report, identify First Advantage, disclose the report’s contents, provide the statutory pre-adverse package, or advise him that an investigative consumer report had been obtained. The 2024 employment result is not discovery of the FCRA or ICRAA violations alleged in Counts One and Two.
 
-45. Plaintiff still does not possess Home Depot’s copy of the First Advantage report or First Advantage’s Home Depot-specific consumer file. First Advantage reports generated for other employers, and public records identifying First Advantage as a Home Depot vendor, support the information-and-belief allegations about what Home Depot’s screen contained. They are not Home Depot’s report, and they are not pleaded as the discovery event.
+45. Plaintiff still does not possess Home Depot’s copy of the First Advantage report or First Advantage’s Home Depot-specific consumer file. First Advantage reports generated for other employers, and public records identifying First Advantage as a Home Depot vendor, support the information-and-belief allegations about what Home Depot’s screen contained. They are not Home Depot’s report, and they are not pleaded as the discovery event for Counts One and Two.
 
-46. On or about May 29, 2026, Plaintiff first learned that Penal Code § 290.46(j)(2)(E) prohibits use of information disclosed pursuant to § 290.46 for purposes relating to employment, and first understood that the Tracy background-check cessation was a report-based statutory violation rather than an unexplained non-hire. Until that date, Home Depot’s silence had disclosed only the employment result. Plaintiff does not allege that May 29, 2026 is the date he first knew he had lost the job.
+46. On or about May 29, 2026, Plaintiff first understood that Home Depot had obtained a consumer report and an investigative consumer report in connection with the Tracy hire and had taken adverse action without providing the FCRA pre-adverse package or the Civil Code § 1786.40 advice. Until that date, Home Depot’s silence had disclosed only the employment result. That is the date of discovery of the violations alleged in Counts One and Two. Plaintiff does not allege that May 29, 2026 is the date he first knew he had lost the job.
 
-47. This action is filed within two years after that discovery and within five years after the FCRA violation occurred. See 15 U.S.C. § 1681p; Cal. Civ. Code § 1786.52. The Penal Code § 290.46(j)(4)(A) claim is a liability created by statute timely under Code of Civil Procedure § 338(a) as well. Plaintiff has prepared statutory inspection requests to First Advantage under Civil Code §§ 1786.10 and 1786.22, and a personnel-file request to Home Depot under Labor Code § 1198.5. Those requests have not yet been treated as served.
+47. Counts One and Two are filed within two years after that discovery and within five years after the FCRA violation occurred. See 15 U.S.C. § 1681p; Cal. Civ. Code § 1786.52. Plaintiff has prepared statutory inspection requests to First Advantage under Civil Code §§ 1786.10 and 1786.22, and a personnel-file request to Home Depot under Labor Code § 1198.5. Those requests have not yet been treated as served.
 
 ## G. California Registry Information and Home Depot’s Use
 
@@ -174,7 +174,7 @@ Plaintiff BRENDAN NGWA NFORBI (“Plaintiff”), appearing in propria persona, a
 ## Fair Credit Reporting Act — 15 U.S.C. § 1681b(b)(3)(A)  
 ### Against Home Depot U.S.A., Inc.
 
-56. Plaintiff realleges paragraphs 1 through 55.
+56. Plaintiff realleges paragraphs 1 through 55, including paragraphs 44 through 47 as to this count.
 
 57. Plaintiff was a “consumer,” the First Advantage report was a “consumer report,” Home Depot procured or caused it to be procured for “employment purposes,” and Home Depot was a “person” using the report within the meaning of the FCRA.
 
@@ -197,7 +197,7 @@ Plaintiff BRENDAN NGWA NFORBI (“Plaintiff”), appearing in propria persona, a
 ### Cal. Civ. Code §§ 1786.40, 1786.50  
 ### Against Home Depot U.S.A., Inc.
 
-65. Plaintiff realleges paragraphs 1 through 55.
+65. Plaintiff realleges paragraphs 1 through 55, including paragraphs 44 through 47 as to this count.
 
 66. The First Advantage employment background report was an investigative consumer report within ICRAA.
 
@@ -216,7 +216,7 @@ Plaintiff BRENDAN NGWA NFORBI (“Plaintiff”), appearing in propria persona, a
 ### Cal. Penal Code § 290.46(j)(2)(E) and (j)(4)(A)  
 ### Against Home Depot U.S.A., Inc.
 
-72. Plaintiff realleges paragraphs 1 through 55.
+72. Plaintiff realleges paragraphs 1 through 43 and 48 through 55. Plaintiff does not reallege paragraphs 44 through 47. This count is a liability created by statute. It is timely under Code of Civil Procedure § 338(a) from the on-or-about August 2024 employment use.
 
 73. Penal Code § 290.46(j)(1) authorizes use of information disclosed pursuant to § 290.46 only to protect a person at risk, except as otherwise authorized by law.
 
@@ -281,7 +281,7 @@ Plaintiff, In Propria Persona
 1. **First Advantage identity:** Public federal-court and First Advantage materials now provide a concrete Rule 11 basis to plead First Advantage as Home Depot’s CRA on information and belief. A transaction-specific Home Depot record would upgrade that allegation from I&B to direct documentary fact.
 2. **Report contents/source:** The complaint deliberately alleges on information and belief that Home Depot’s First Advantage report contained Plaintiff’s § 290.46 information. UPS/FedEx comparator facts are pleaded as the factual basis that makes that allegation plausible; their exact labels are not attributed to Home Depot. If the Home Depot-specific report is obtained before filing, replace the I&B source allegation with its exact wording.
 3. **Adjudication:** The complaint alleges that the registry information was material and a substantial factor in Home Depot’s decision. Do not attribute a specific “Decisional,” “Ineligible,” or client-criteria label to Home Depot unless its own record supplies that wording.
-4. **Discovery date:** Paragraphs 44–47 plead discovery **on or about May 29, 2026**, when Plaintiff first learned of Penal Code § 290.46(j)(2)(E) and first understood the Tracy cessation as a report-based statutory violation. Do **not** write that May 29 is when he knew he had been harmed — that was August 2024. Do **not** name other cases in the complaint. If Plaintiff actually understood the statute earlier while drafting, use that earlier date; do not pick a file-stamp date that is later than the true first understanding. FCRA uses the earlier of two years from discovery or five years from violation; ICRAA provides two years from knew-or-should-have-known. Home Depot will argue inquiry notice from the 2024 ghosting and from other employers’ 2024 First Advantage notices. That is a defense. It is not a reason to volunteer August 2024.
+4. **Discovery date:** Paragraphs 44–47 and Counts One and Two plead discovery **on or about May 29, 2026** of the FCRA and ICRAA process violations, not of the 2024 injury. Count Three does not reallege those paragraphs and does not use May 29. It runs on CCP § 338(a) from the August 2024 use (about August 2027). Do **not** name other cases in the complaint. If Plaintiff actually understood the FCRA/ICRAA omissions earlier while drafting, use that earlier date for Counts One and Two.
 5. **DOT exception:** The Tracy site is a warehouse / distribution / fulfillment DC, not a commercial-driving assignment. Paragraph 23 pleads that the (b)(3)(B)-(C) exception does not apply. If a later Home Depot document shows a DOT-regulated driving position with only remote interaction, rewrite Count One.
 6. **Service:** Serve CSC at 2710 Gateway Oaks Drive, Suite 150N, Sacramento, CA 95833. Do not serve 5395 Hopkins Road.
 7. **Exhibit A:** If the Home Depot-specific First Advantage report is obtained before filing, consider attaching it only after a hostile contradiction audit and redaction under Fed. R. Civ. P. 5.2. If it is not obtained, do not attach another employer’s report as a substitute.

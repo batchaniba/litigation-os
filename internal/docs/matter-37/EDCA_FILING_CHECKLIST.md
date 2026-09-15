@@ -8,7 +8,7 @@ Not a substitute for the complaint. Use this after the discovery date is filled.
    - First Advantage inspection demand (`INSPECTION_DEMAND_FIRST_ADVANTAGE.md`)
    - Home Depot Labor Code § 1198.5 demand (`PERSONNEL_FILE_DEMAND_HOME_DEPOT.md`) to **CSC**, not Tracy
 2. Calendar 30 days for the personnel-file response. If the Home Depot-specific First Advantage report arrives, replace Count 3 I&B source/use language with the exact fields after a hostile contradiction audit.
-3. Confirm paragraphs 44–47: discovery **on or about May 29, 2026** of the statutory violations, not of the 2024 injury. If Plaintiff understood § 290.46(j)(2)(E) earlier while drafting, use that earlier date. Do not name other cases in the complaint.
+3. Confirm paragraphs 44–47: May 29, 2026 is discovery of **Counts One and Two only** (FCRA / ICRAA), not of the 2024 injury. Count Three does not use that date. If Plaintiff understood the process omissions earlier while drafting, use that earlier date for Counts One and Two. Do not name other cases in the complaint.
 4. Confirm the Tracy assignment was warehouse / fulfillment, not a DOT-regulated driving job.
 
 ## File in Sacramento (E.D. Cal. Local Rule 120(d))

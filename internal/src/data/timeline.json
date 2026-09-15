@@ -1,7 +1,7 @@
 [
   {
     "date": "Sep. 15, 2026",
-    "event": "DRAFT (unsigned / unserved) — Matter 37 E.D. Cal. federal complaint review draft hardened: warehouse/fulfillment (not DOT) Tracy DC; diversity § 1332 pleaded in the alternative without inventing a wage rate; CSC service address; chronology no longer states First Advantage registry reporting as known fact; Harris v. Home Depot, 114 F. Supp. 3d 868, used only as FCRA-sophistication color. Inspection demands under Civ. Code §§ 1786.10/1786.22 (First Advantage) and Labor Code § 1198.5 (Home Depot via CSC) are drafted for Plaintiff to sign. Discovery date remains a filing gate; do not use August 2024. Generators: internal/scripts/matter37-edca-complaint.py and matter37-inspection-demands.py. September 8 San Joaquin packet remains unfiled historical work product.",
+    "event": "DRAFT (unsigned / unserved) — Matter 37 E.D. Cal. federal complaint: warehouse/fulfillment (not DOT) Tracy DC; diversity § 1332 in the alternative; CSC service; § 290.46 source/use as I&B ultimate facts. Counts 1–2 plead FCRA/ICRAA process-omission discovery on or about May 29, 2026. Count 3 does not use that date; it is timely under CCP § 338(a) from the August 2024 use. Inspection demands drafted for Plaintiff to sign. Generators: internal/scripts/matter37-edca-complaint.py and matter37-inspection-demands.py. September 8 San Joaquin packet remains unfiled historical work product.",
     "matters": [
       37
     ],
