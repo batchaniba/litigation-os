@@ -1,4 +1,1967 @@
 {
   "version": 1,
-  "entries": []
+  "entries": [
+    {
+      "matter": 24,
+      "courtlistener_docket_id": 73504901,
+      "courtlistener_entry_id": 468056865,
+      "entry_number": 3,
+      "date_filed": "2026-06-18",
+      "description": "Proposed Summons",
+      "documents": [
+        {
+          "recap_document_id": 483334100,
+          "document_number": "3",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "55a56f25c9389b5622bf6b966fba359a694bb1e6b4830eeb7e797af7fd202ec6"
+    },
+    {
+      "matter": 24,
+      "courtlistener_docket_id": 73504901,
+      "courtlistener_entry_id": 468056871,
+      "entry_number": 2,
+      "date_filed": "2026-06-18",
+      "description": "Proceed In Forma Pauperis",
+      "documents": [
+        {
+          "recap_document_id": 483334106,
+          "document_number": "2",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "375ce4175ea26e050d7d9dd19b495c53dd6f9cd0389aeeb474b28794c274f0dc"
+    },
+    {
+      "matter": 24,
+      "courtlistener_docket_id": 73504901,
+      "courtlistener_entry_id": 468056874,
+      "entry_number": 1,
+      "date_filed": "2026-06-18",
+      "description": "Complaint",
+      "documents": [
+        {
+          "recap_document_id": 483334109,
+          "document_number": "1",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "6db6dc49a1acd0c6354882b45890451a1b515ffc420b348e52a839ae831b6e6a"
+    },
+    {
+      "matter": 24,
+      "courtlistener_docket_id": 73504901,
+      "courtlistener_entry_id": 468066612,
+      "entry_number": 4,
+      "date_filed": "2026-06-18",
+      "description": "Initial Case Management Scheduling Order with ADR Deadlines",
+      "documents": [
+        {
+          "recap_document_id": 483343947,
+          "document_number": "4",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "8d11e60c5637e6089fbf834e6050af9e67729e4a65cb0324c89e40b41300f732"
+    },
+    {
+      "matter": 24,
+      "courtlistener_docket_id": 73504901,
+      "courtlistener_entry_id": 469127016,
+      "entry_number": 5,
+      "date_filed": "2026-06-29",
+      "description": "Order on Motion for Leave to Proceed In Forma Pauperis",
+      "documents": [
+        {
+          "recap_document_id": 484448620,
+          "document_number": "5",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "046b2015dad07cbd63d848e5fcc3439aa19944f1dff0db5ffc31fc49afcc4ada"
+    },
+    {
+      "matter": 24,
+      "courtlistener_docket_id": 73504901,
+      "courtlistener_entry_id": 469141505,
+      "entry_number": 7,
+      "date_filed": "2026-06-29",
+      "description": "Remark",
+      "documents": [
+        {
+          "recap_document_id": 484463721,
+          "document_number": "7",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "4532cdaf92c1b57c6e15698bee2328e3191c43337c68ed8511bc524c33bab9f2"
+    },
+    {
+      "matter": 24,
+      "courtlistener_docket_id": 73504901,
+      "courtlistener_entry_id": 469141535,
+      "entry_number": 6,
+      "date_filed": "2026-06-29",
+      "description": "Summons Issued",
+      "documents": [
+        {
+          "recap_document_id": 484463751,
+          "document_number": "6",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "2ab82abec8a36cb27e072d2170b39592d2f512b48eb38fe67f389df8b00130b2"
+    },
+    {
+      "matter": 24,
+      "courtlistener_docket_id": 73504901,
+      "courtlistener_entry_id": 469197971,
+      "entry_number": 8,
+      "date_filed": "2026-06-29",
+      "description": "Consent/Declination to Proceed Before a US Magistrate Judge",
+      "documents": [
+        {
+          "recap_document_id": 484524147,
+          "document_number": "8",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "7cd2de4179554a6c4dd302e46d08950c050169bcdb13e408104a514115426f1d"
+    },
+    {
+      "matter": 24,
+      "courtlistener_docket_id": 73504901,
+      "courtlistener_entry_id": 470843459,
+      "entry_number": 9,
+      "date_filed": "2026-07-14",
+      "description": "Notice of Change of Address",
+      "documents": [
+        {
+          "recap_document_id": 486232670,
+          "document_number": "9",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "cbd5da2fceb270d9738024362eb89330199296904dd490d0f7ef8fb63b757585"
+    },
+    {
+      "matter": 24,
+      "courtlistener_docket_id": 73504901,
+      "courtlistener_entry_id": 470997169,
+      "entry_number": 12,
+      "date_filed": "2026-07-15",
+      "description": "Errata",
+      "documents": [
+        {
+          "recap_document_id": 486389899,
+          "document_number": "12",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "ae96d62f8925495904388e1209db0b277e18426e95c448cfc24bf95beefe942c"
+    },
+    {
+      "matter": 24,
+      "courtlistener_docket_id": 73504901,
+      "courtlistener_entry_id": 470997190,
+      "entry_number": 11,
+      "date_filed": "2026-07-15",
+      "description": "Notice of Change of Address",
+      "documents": [
+        {
+          "recap_document_id": 486389920,
+          "document_number": "11",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "eb53031eaaff43bbc3a6367dad3629ef107d7fbba664346c18cf70c488bb8ca5"
+    },
+    {
+      "matter": 24,
+      "courtlistener_docket_id": 73504901,
+      "courtlistener_entry_id": 470997212,
+      "entry_number": 10,
+      "date_filed": "2026-07-15",
+      "description": "Amended Complaint",
+      "documents": [
+        {
+          "recap_document_id": 486389942,
+          "document_number": "10",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "25817becec56509a6ca7919e88a618f231703975b7c002241f266cfff64a72f0"
+    },
+    {
+      "matter": 24,
+      "courtlistener_docket_id": 73504901,
+      "courtlistener_entry_id": 471001679,
+      "entry_number": 13,
+      "date_filed": "2026-07-15",
+      "description": "Notice (Other)",
+      "documents": [
+        {
+          "recap_document_id": 486394524,
+          "document_number": "13",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "fb99e5f5c0b839747af2d74ddb3846dc6b1fa065615d174cc4ebd984534c9d7e"
+    },
+    {
+      "matter": 24,
+      "courtlistener_docket_id": 73504901,
+      "courtlistener_entry_id": 471647507,
+      "entry_number": 14,
+      "date_filed": "2026-07-21",
+      "description": "Remark",
+      "documents": [
+        {
+          "recap_document_id": 487057324,
+          "document_number": "14",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "144aa15bee1607a1a0c5ce108de3c8d2499a51b3c21637d09098f1a0797c0bea"
+    },
+    {
+      "matter": 24,
+      "courtlistener_docket_id": 73504901,
+      "courtlistener_entry_id": 473695663,
+      "entry_number": 15,
+      "date_filed": "2026-08-07",
+      "description": "Summons Returned Executed",
+      "documents": [
+        {
+          "recap_document_id": 489169613,
+          "document_number": "15",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "892417813897c798ba33f5494cd8019be8ea7e010bb7d8c93465ed5da35cdb81"
+    },
+    {
+      "matter": 24,
+      "courtlistener_docket_id": 73504901,
+      "courtlistener_entry_id": 475259992,
+      "entry_number": 16,
+      "date_filed": "2026-08-20",
+      "description": "Administrative Motion per Civil Local Rule 7-11",
+      "documents": [
+        {
+          "recap_document_id": 490786918,
+          "document_number": "16",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "5e9657711b1d119f138952d8452076f7b36de02b3b864142ee0fd2c427e1b214"
+    },
+    {
+      "matter": 24,
+      "courtlistener_docket_id": 73504901,
+      "courtlistener_entry_id": 475586405,
+      "entry_number": 17,
+      "date_filed": "2026-08-24",
+      "description": "Order on Administrative Motion per Civil Local Rule 7-11",
+      "documents": [
+        {
+          "recap_document_id": 491123305,
+          "document_number": "17",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "6db1f8711ec09f643a662303d86c5f9ca4d61a842f661d5276129b115ba8dbc4"
+    },
+    {
+      "matter": 24,
+      "courtlistener_docket_id": 73504901,
+      "courtlistener_entry_id": 475941274,
+      "entry_number": 18,
+      "date_filed": "2026-08-26",
+      "description": "Dismiss",
+      "documents": [
+        {
+          "recap_document_id": 491489386,
+          "document_number": "18",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "7ee52be3aed09c2372fcd2dca328e27809f787f8c8c10a99470cdad9bd66f1f0"
+    },
+    {
+      "matter": 24,
+      "courtlistener_docket_id": 73504901,
+      "courtlistener_entry_id": 476047847,
+      "entry_number": 19,
+      "date_filed": "2026-08-27",
+      "description": "Relate Case",
+      "documents": [
+        {
+          "recap_document_id": 491598299,
+          "document_number": "19",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "41f947ec9a9809fbed023827eec3d588e85c016d9478844471440790253acf9c"
+    },
+    {
+      "matter": 24,
+      "courtlistener_docket_id": 73504901,
+      "courtlistener_entry_id": 476094343,
+      "entry_number": 20,
+      "date_filed": "2026-08-27",
+      "description": "Opposition/Response to Motion",
+      "documents": [
+        {
+          "recap_document_id": 491646794,
+          "document_number": "20",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "e2daae8bf2276a0fb93787569d7fce6b8fe78c65c2128839bd9b05ea5dccd12e"
+    },
+    {
+      "matter": 24,
+      "courtlistener_docket_id": 73504901,
+      "courtlistener_entry_id": 476221254,
+      "entry_number": 21,
+      "date_filed": "2026-08-28",
+      "description": "Clerk's Notice AND ~Util - Set Motion and Deadlines/Hearings",
+      "documents": [
+        {
+          "recap_document_id": 491777867,
+          "document_number": "21",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "dff24e2ee3660a8023e1b4aa5513801a3a805a14b6bcba1c18126f025ba96779"
+    },
+    {
+      "matter": 24,
+      "courtlistener_docket_id": 73504901,
+      "courtlistener_entry_id": 476893826,
+      "entry_number": 22,
+      "date_filed": "2026-09-03",
+      "description": "Stipulation and Proposed Order",
+      "documents": [
+        {
+          "recap_document_id": 492469383,
+          "document_number": "22",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "54023f3636770b60aa1904015e043760ee869571a04c55f238324de4af363e41"
+    },
+    {
+      "matter": 24,
+      "courtlistener_docket_id": 73504901,
+      "courtlistener_entry_id": 477233081,
+      "entry_number": 23,
+      "date_filed": "2026-09-08",
+      "description": "Order on Motion to Relate Case",
+      "documents": [
+        {
+          "recap_document_id": 492822006,
+          "document_number": "23",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "be0139409ad0e88c2c21b222b922ce1867cce45215a18af3f50315ab207f87e5"
+    },
+    {
+      "matter": 24,
+      "courtlistener_docket_id": 73504901,
+      "courtlistener_entry_id": 477298681,
+      "entry_number": 24,
+      "date_filed": "2026-09-08",
+      "description": "Joint Case Management Statement",
+      "documents": [
+        {
+          "recap_document_id": 492888980,
+          "document_number": "24",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "a1aad56adcefcf6543cfd3e2ed4ab9ccadb107ddbf24dabd91aeb9977ab8476f"
+    },
+    {
+      "matter": 24,
+      "courtlistener_docket_id": 73504901,
+      "courtlistener_entry_id": 477394612,
+      "entry_number": 25,
+      "date_filed": "2026-09-09",
+      "description": "1 - Terminate Deadlines AND Order AND ~Util - Terminate Motions",
+      "documents": [
+        {
+          "recap_document_id": 492988297,
+          "document_number": "25",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "0b08aca28ad1edc4187ff653fd902c9e1fe84bc80276da36c93249c6637488e3"
+    },
+    {
+      "matter": 24,
+      "courtlistener_docket_id": 73504901,
+      "courtlistener_entry_id": 477559697,
+      "entry_number": 26,
+      "date_filed": "2026-09-10",
+      "description": "Certificate of Interested Entities, Corporate Disclosure Statement, or Rule 7.1 Disclosures",
+      "documents": [
+        {
+          "recap_document_id": 493157826,
+          "document_number": "26",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "6305fe585294fdc6f51b4ae3eb1fd76a7ec408872d70dfbbe331285d7b42a306"
+    },
+    {
+      "matter": 24,
+      "courtlistener_docket_id": 73504901,
+      "courtlistener_entry_id": 477731643,
+      "entry_number": 27,
+      "date_filed": "2026-09-11",
+      "description": "Consent/Declination to Proceed Before a US Magistrate Judge",
+      "documents": [
+        {
+          "recap_document_id": 493335322,
+          "document_number": "27",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "13bec1938025c0b653876caa228cdfe7a6e5201b03bb3a51003afcc633d821f8"
+    },
+    {
+      "matter": 24,
+      "courtlistener_docket_id": 73504901,
+      "courtlistener_entry_id": 477742738,
+      "entry_number": 28,
+      "date_filed": "2026-09-11",
+      "description": "Clerk's Notice of Impending Reassignment",
+      "documents": [
+        {
+          "recap_document_id": 493346527,
+          "document_number": "28",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "a24baf0205b4a6e90ab65822e07ff938415d859e137841ec37a10437ab0e8dfa"
+    },
+    {
+      "matter": 25,
+      "courtlistener_docket_id": 74699765,
+      "courtlistener_entry_id": 476379427,
+      "entry_number": 4,
+      "date_filed": "2026-08-31",
+      "description": "Answer to Complaint",
+      "documents": [
+        {
+          "recap_document_id": 491940371,
+          "document_number": "4",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "8d8ac352cb069b19b0bf601112b1fca3e71043cbac66cb47dfed44842e46c3c2"
+    },
+    {
+      "matter": 25,
+      "courtlistener_docket_id": 74699765,
+      "courtlistener_entry_id": 477263479,
+      "entry_number": null,
+      "date_filed": "2026-09-08",
+      "description": "Service by Mail",
+      "documents": [
+        {
+          "recap_document_id": 492853170,
+          "document_number": "",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "e62547758d3d612adde7504b777aeab488905545e5cc042dce250472995bc9d9"
+    },
+    {
+      "matter": 25,
+      "courtlistener_docket_id": 74699765,
+      "courtlistener_entry_id": 477263490,
+      "entry_number": 8,
+      "date_filed": "2026-09-08",
+      "description": "Order AND ~Util - 1 Set/Reset Deadlines and Hearings",
+      "documents": [
+        {
+          "recap_document_id": 492853180,
+          "document_number": "8",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "ceae5baa455e3bb3d89eb201125fbc3369d5911c907f4ab315968457ce15b236"
+    },
+    {
+      "matter": 26,
+      "courtlistener_docket_id": 74680795,
+      "courtlistener_entry_id": 475276186,
+      "entry_number": null,
+      "date_filed": "2026-08-20",
+      "description": "Service by Mail",
+      "documents": [
+        {
+          "recap_document_id": 490803541,
+          "document_number": "",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "4669f71c22f46af176b34fe09f1ee3785cb555a5e4dc51f4f8e69a3eabde410b"
+    },
+    {
+      "matter": 26,
+      "courtlistener_docket_id": 74680795,
+      "courtlistener_entry_id": 475276255,
+      "entry_number": 1,
+      "date_filed": "2026-08-20",
+      "description": "Notice of Removal",
+      "documents": [
+        {
+          "recap_document_id": 490803610,
+          "document_number": "1",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "07f4475d61bb4414f6e0a659ddf897a8ac7db3f47bd16b950ab39415160bd50c"
+    },
+    {
+      "matter": 26,
+      "courtlistener_docket_id": 74680795,
+      "courtlistener_entry_id": 475279623,
+      "entry_number": 3,
+      "date_filed": "2026-08-20",
+      "description": "Certificate / Proof of Service",
+      "documents": [
+        {
+          "recap_document_id": 490807108,
+          "document_number": "3",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "c1ca660f016949bfd174c7c2b8f80977ef00b6649293f99da54c429f7d306379"
+    },
+    {
+      "matter": 26,
+      "courtlistener_docket_id": 74680795,
+      "courtlistener_entry_id": 475576602,
+      "entry_number": 6,
+      "date_filed": "2026-08-24",
+      "description": "Certificate / Proof of Service",
+      "documents": [
+        {
+          "recap_document_id": 491113340,
+          "document_number": "6",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "3f7a9b9f6bad3dbdfe8af1d3d64280f70d9bba6170ffd8814eeb3d62da2df27c"
+    },
+    {
+      "matter": 26,
+      "courtlistener_docket_id": 74680795,
+      "courtlistener_entry_id": 475576648,
+      "entry_number": 5,
+      "date_filed": "2026-08-24",
+      "description": "Notice (Other)",
+      "documents": [
+        {
+          "recap_document_id": 491113386,
+          "document_number": "5",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "63b9114d30d3b7a809ea7c1899c0a6166d6f09b88e9cf2214c0fd3985fa079e6"
+    },
+    {
+      "matter": 26,
+      "courtlistener_docket_id": 74680795,
+      "courtlistener_entry_id": 475940646,
+      "entry_number": 7,
+      "date_filed": "2026-08-26",
+      "description": "Dismiss",
+      "documents": [
+        {
+          "recap_document_id": 491488753,
+          "document_number": "7",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "2305c9ad2fa101a37b5f76f6d91d86ef6453416fa97fa999e24b9a1a11a90b75"
+    },
+    {
+      "matter": 26,
+      "courtlistener_docket_id": 74680795,
+      "courtlistener_entry_id": 476090003,
+      "entry_number": null,
+      "date_filed": "2026-08-27",
+      "description": "Service by Mail",
+      "documents": [
+        {
+          "recap_document_id": 491642383,
+          "document_number": "",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "865bd0589d5914d2c861d0334916f118eff1f1d2b97361399a437f25a27b7543"
+    },
+    {
+      "matter": 26,
+      "courtlistener_docket_id": 74680795,
+      "courtlistener_entry_id": 476090014,
+      "entry_number": null,
+      "date_filed": "2026-08-27",
+      "description": "Minute Order AND ~Util - 1 Terminate Deadlines and Hearings",
+      "documents": [
+        {
+          "recap_document_id": 491642394,
+          "document_number": "",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "a97806f125aa44dbf71d201152b8f1983248ee8655181dc04149c59d15de386e"
+    },
+    {
+      "matter": 26,
+      "courtlistener_docket_id": 74680795,
+      "courtlistener_entry_id": 476096654,
+      "entry_number": 9,
+      "date_filed": "2026-08-27",
+      "description": "Dismiss",
+      "documents": [
+        {
+          "recap_document_id": 491649164,
+          "document_number": "9",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "b0011ca17fe7440bdcc490f4eb6eb47ed0ac406da931bb767f87c7bac663cef5"
+    },
+    {
+      "matter": 26,
+      "courtlistener_docket_id": 74680795,
+      "courtlistener_entry_id": 476365951,
+      "entry_number": 10,
+      "date_filed": "2026-08-31",
+      "description": "Opposition to Motion",
+      "documents": [
+        {
+          "recap_document_id": 491926647,
+          "document_number": "10",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "1caec574a9cf40174c3e200628f64fc1e40b970e5045bc116ffc3ef28ba803d4"
+    },
+    {
+      "matter": 26,
+      "courtlistener_docket_id": 74680795,
+      "courtlistener_entry_id": 477003665,
+      "entry_number": 11,
+      "date_filed": "2026-09-04",
+      "description": "Extension of Time",
+      "documents": [
+        {
+          "recap_document_id": 492582439,
+          "document_number": "11",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "26912e9bc8a4be12b6f54343b372cd4025227341c529a2d6690e7fb06d8315b9"
+    },
+    {
+      "matter": 26,
+      "courtlistener_docket_id": 74680795,
+      "courtlistener_entry_id": 477596705,
+      "entry_number": null,
+      "date_filed": "2026-09-10",
+      "description": "Service by Mail",
+      "documents": [
+        {
+          "recap_document_id": 493195824,
+          "document_number": "",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "a6d7f168f01e751dd1ea3418416044b1cdc6a32dcddc9e60ee264382be542210"
+    },
+    {
+      "matter": 26,
+      "courtlistener_docket_id": 74680795,
+      "courtlistener_entry_id": 477596709,
+      "entry_number": null,
+      "date_filed": "2026-09-10",
+      "description": "Minute Order AND Order on Motion for Extension of Time AND ~Util - 1 Set/Reset Deadlines and Hearings",
+      "documents": [
+        {
+          "recap_document_id": 493195828,
+          "document_number": "",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "ac447634c3935dbf2fbb746f523c95f22edb413eef6307340c53fafe2f7728d5"
+    },
+    {
+      "matter": 26,
+      "courtlistener_docket_id": 74680795,
+      "courtlistener_entry_id": 477696114,
+      "entry_number": 13,
+      "date_filed": "2026-09-11",
+      "description": "Opposition to Motion",
+      "documents": [
+        {
+          "recap_document_id": 493299053,
+          "document_number": "13",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "a333d1c21f374e154b809d525820755aa6954b1ba6b8ae5f808172b4f08d39a6"
+    },
+    {
+      "matter": 28,
+      "courtlistener_docket_id": 73646240,
+      "courtlistener_entry_id": 471591426,
+      "entry_number": 6,
+      "date_filed": "2026-07-21",
+      "description": "Protective Order",
+      "documents": [
+        {
+          "recap_document_id": 487000260,
+          "document_number": "6",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "8609fd93460c3a1f485ef7808064ecab7b7f9ca620c979d91a2c23a57f0e5102"
+    },
+    {
+      "matter": 28,
+      "courtlistener_docket_id": 73646240,
+      "courtlistener_entry_id": 471591564,
+      "entry_number": 5,
+      "date_filed": "2026-07-21",
+      "description": "Consent/Declination to Proceed Before a US Magistrate Judge",
+      "documents": [
+        {
+          "recap_document_id": 487000408,
+          "document_number": "5",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "90c12c550b0bae74ed948ea1822b468a82a98af6b69d738fb7e807290ba91dbc"
+    },
+    {
+      "matter": 28,
+      "courtlistener_docket_id": 73646240,
+      "courtlistener_entry_id": 471591574,
+      "entry_number": 4,
+      "date_filed": "2026-07-21",
+      "description": "Initial Case Management Scheduling Order with ADR Deadlines",
+      "documents": [
+        {
+          "recap_document_id": 487000418,
+          "document_number": "4",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "720729b17c39f14bc8b4ffccb124249c9d69fa786ed4473feabb82528b19ab04"
+    },
+    {
+      "matter": 28,
+      "courtlistener_docket_id": 73646240,
+      "courtlistener_entry_id": 471591590,
+      "entry_number": 3,
+      "date_filed": "2026-07-21",
+      "description": "Proposed Summons",
+      "documents": [
+        {
+          "recap_document_id": 487000434,
+          "document_number": "3",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "837d70acfc3c35fb19b4486d1093be2e92b9cc8fe25f37599ef46a709dd89df6"
+    },
+    {
+      "matter": 28,
+      "courtlistener_docket_id": 73646240,
+      "courtlistener_entry_id": 471591598,
+      "entry_number": 2,
+      "date_filed": "2026-07-21",
+      "description": "Proceed In Forma Pauperis",
+      "documents": [
+        {
+          "recap_document_id": 487000442,
+          "document_number": "2",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "f9637f0e682d3e65266e85a8881d3f465a6063671c1f737259e93722ded90642"
+    },
+    {
+      "matter": 28,
+      "courtlistener_docket_id": 73646240,
+      "courtlistener_entry_id": 471591611,
+      "entry_number": 1,
+      "date_filed": "2026-07-21",
+      "description": "Complaint",
+      "documents": [
+        {
+          "recap_document_id": 487000455,
+          "document_number": "1",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "1aafd9017c49b0842ac85df692b2752d29ebf47b716ce4d493cf37a7e1615667"
+    },
+    {
+      "matter": 28,
+      "courtlistener_docket_id": 73646240,
+      "courtlistener_entry_id": 471655258,
+      "entry_number": null,
+      "date_filed": "2026-07-21",
+      "description": "Remark",
+      "documents": [
+        {
+          "recap_document_id": 487065247,
+          "document_number": "",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "249e936871abac684fd3f6f478695854b472628e20321212a7874f76291b038c"
+    },
+    {
+      "matter": 28,
+      "courtlistener_docket_id": 73646240,
+      "courtlistener_entry_id": 471968760,
+      "entry_number": 7,
+      "date_filed": "2026-07-23",
+      "description": "Order on Motion for Protective Order",
+      "documents": [
+        {
+          "recap_document_id": 487387224,
+          "document_number": "7",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "6a6c041b75452431524d1a403c7428a4f2c4fb2590127a3d322b616b27519a49"
+    },
+    {
+      "matter": 28,
+      "courtlistener_docket_id": 73646240,
+      "courtlistener_entry_id": 472434092,
+      "entry_number": 8,
+      "date_filed": "2026-07-28",
+      "description": "Receipt",
+      "documents": [
+        {
+          "recap_document_id": 487867621,
+          "document_number": "8",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "3960cf89f881500501d5f1e430cdac783f6a1986273ee4a8e54160be1b60fb71"
+    },
+    {
+      "matter": 28,
+      "courtlistener_docket_id": 73646240,
+      "courtlistener_entry_id": 472834732,
+      "entry_number": 9,
+      "date_filed": "2026-07-31",
+      "description": "Notice (Other)",
+      "documents": [
+        {
+          "recap_document_id": 488280505,
+          "document_number": "9",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "c37e637d2e788dbebe9a9fb6e7a022cbf1b78142813cb718d3cdb950ab47977b"
+    },
+    {
+      "matter": 28,
+      "courtlistener_docket_id": 73646240,
+      "courtlistener_entry_id": 473555426,
+      "entry_number": 10,
+      "date_filed": "2026-08-06",
+      "description": "Certificate/Proof of Service",
+      "documents": [
+        {
+          "recap_document_id": 489024108,
+          "document_number": "10",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "5d5380d0b010f67328bc5cfb2104634225dea56564efb8e250dd02580a33b1c4"
+    },
+    {
+      "matter": 28,
+      "courtlistener_docket_id": 73646240,
+      "courtlistener_entry_id": 475832003,
+      "entry_number": 11,
+      "date_filed": "2026-08-26",
+      "description": "ORDER REGARDING PAYMENT OF FILING FEE AND  2  APPLICATION TO PROCEED IN FORMA PAUPERIS.  Signed by Judge Lisa J. Cisneros on 8/26/2026.  (bns, COURT STAFF) (Filed on 8/26/2026)Any non-CM/ECF Participants have been served by First Class Mail to the addresses of record listed on the Notice of Electronic Filing (NEF)",
+      "documents": [
+        {
+          "recap_document_id": 491377465,
+          "document_number": "11",
+          "is_available": true,
+          "filepath_local": "recap/gov.uscourts.cand.474676/gov.uscourts.cand.474676.11.0.pdf"
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "5a6cbea60181954bf019a359d98fe41e3467d3e8f1547b025da6b8960fb07a1c"
+    },
+    {
+      "matter": 28,
+      "courtlistener_docket_id": 73646240,
+      "courtlistener_entry_id": 476449007,
+      "entry_number": 12,
+      "date_filed": "2026-08-31",
+      "description": "Summons Issued",
+      "documents": [
+        {
+          "recap_document_id": 492011539,
+          "document_number": "12",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "8cafc5df74879710e88f1c34e8ac9f6a597636069c57e146fb4a1ab35f97cc06"
+    },
+    {
+      "matter": 28,
+      "courtlistener_docket_id": 73646240,
+      "courtlistener_entry_id": 476897202,
+      "entry_number": 13,
+      "date_filed": "2026-09-03",
+      "description": "Summons Returned Executed",
+      "documents": [
+        {
+          "recap_document_id": 492472858,
+          "document_number": "13",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "326b1171ca81a8f88a062622d2bcf7b68f53c2779cd72a3e4bb6cddc3dae55a1"
+    },
+    {
+      "matter": 28,
+      "courtlistener_docket_id": 73646240,
+      "courtlistener_entry_id": 477508375,
+      "entry_number": 14,
+      "date_filed": "2026-09-10",
+      "description": "Certificate of Interested Entities, Corporate Disclosure Statement, or Rule 7.1 Disclosures",
+      "documents": [
+        {
+          "recap_document_id": 493104988,
+          "document_number": "14",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "0c4533a3690e8fbcaf82cea47fb220399940c5f7b2209d7600ee209e96f33044"
+    },
+    {
+      "matter": 29,
+      "courtlistener_docket_id": 74725653,
+      "courtlistener_entry_id": 476401660,
+      "entry_number": 2,
+      "date_filed": "2026-08-31",
+      "description": "Exhibits",
+      "documents": [
+        {
+          "recap_document_id": 491963512,
+          "document_number": "2",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "87159cf9aac7bc99c58b447011d316231043fe4920c5b47d93799d26124b3ebe"
+    },
+    {
+      "matter": 29,
+      "courtlistener_docket_id": 74725653,
+      "courtlistener_entry_id": 476401817,
+      "entry_number": 1,
+      "date_filed": "2026-08-31",
+      "description": "Notice of Removal",
+      "documents": [
+        {
+          "recap_document_id": 491963668,
+          "document_number": "1",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "3984a85c0ae9608cd42784593b6de6f7735f64ae7b2006b3f6c104308211f89c"
+    },
+    {
+      "matter": 29,
+      "courtlistener_docket_id": 74725653,
+      "courtlistener_entry_id": 476414325,
+      "entry_number": 4,
+      "date_filed": "2026-08-31",
+      "description": "Certificate/Proof of Service",
+      "documents": [
+        {
+          "recap_document_id": 491976313,
+          "document_number": "4",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "ef53c8b18fd0d39b33b3e87b294a68f2d6c54c965999e8102de5a8420432d2d6"
+    },
+    {
+      "matter": 29,
+      "courtlistener_docket_id": 74725653,
+      "courtlistener_entry_id": 476414357,
+      "entry_number": 3,
+      "date_filed": "2026-08-31",
+      "description": "Certificate of Interested Entities, Corporate Disclosure Statement, or Rule 7.1 Disclosures",
+      "documents": [
+        {
+          "recap_document_id": 491976345,
+          "document_number": "3",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "172295bb52b0af98669e08b03cba671d83c7d070239ff9b9a1443b2d912b496b"
+    },
+    {
+      "matter": 29,
+      "courtlistener_docket_id": 74725653,
+      "courtlistener_entry_id": 476435472,
+      "entry_number": null,
+      "date_filed": "2026-08-31",
+      "description": "~Util - Case Assigned by Intake",
+      "documents": [
+        {
+          "recap_document_id": 491997838,
+          "document_number": "",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "553630704a093e2f7b66517abb81ee34f26dfcf176187f6f1a1db271698e8488"
+    },
+    {
+      "matter": 29,
+      "courtlistener_docket_id": 74725653,
+      "courtlistener_entry_id": 476537604,
+      "entry_number": 6,
+      "date_filed": "2026-09-01",
+      "description": "Stipulation without Proposed Order",
+      "documents": [
+        {
+          "recap_document_id": 492103015,
+          "document_number": "6",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "cf022c6c2649105a1f4459c843afd825ebe107992b5bb8b50ede789d3d90058b"
+    },
+    {
+      "matter": 29,
+      "courtlistener_docket_id": 74725653,
+      "courtlistener_entry_id": 476698741,
+      "entry_number": 7,
+      "date_filed": "2026-09-02",
+      "description": "Stipulation without Proposed Order",
+      "documents": [
+        {
+          "recap_document_id": 492269486,
+          "document_number": "7",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "b4e7bf27f44ea703609f7159a0ed8efed83ec2fec28983b0469327c7bff4e8f6"
+    },
+    {
+      "matter": 29,
+      "courtlistener_docket_id": 74725653,
+      "courtlistener_entry_id": 476712185,
+      "entry_number": 8,
+      "date_filed": "2026-09-02",
+      "description": "Certificate of Interested Entities, Corporate Disclosure Statement, or Rule 7.1 Disclosures",
+      "documents": [
+        {
+          "recap_document_id": 492283231,
+          "document_number": "8",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "5b5519308c49ace6c044a1c897304056e655df2451d08eb566874788f2bc4ee6"
+    },
+    {
+      "matter": 29,
+      "courtlistener_docket_id": 74725653,
+      "courtlistener_entry_id": 476827808,
+      "entry_number": null,
+      "date_filed": "2026-09-03",
+      "description": "Electronic Filing Error",
+      "documents": [
+        {
+          "recap_document_id": 492401767,
+          "document_number": "",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "c9d4ec37b733f3fa5288f4ace83cc5d4605626b5b14001271b411731f2784502"
+    },
+    {
+      "matter": 29,
+      "courtlistener_docket_id": 74725653,
+      "courtlistener_entry_id": 476827813,
+      "entry_number": 9,
+      "date_filed": "2026-09-03",
+      "description": "Initial Case Management Scheduling Order with ADR Deadlines",
+      "documents": [
+        {
+          "recap_document_id": 492401773,
+          "document_number": "9",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "0b5190b87d6740941c8d5051fa42690a97a5c3fd9721323aeeb0be2e96830483"
+    },
+    {
+      "matter": 29,
+      "courtlistener_docket_id": 74725653,
+      "courtlistener_entry_id": 476897276,
+      "entry_number": 10,
+      "date_filed": "2026-09-03",
+      "description": "Certificate/Proof of Service",
+      "documents": [
+        {
+          "recap_document_id": 492472932,
+          "document_number": "10",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "2d9a258411321cc06ac79abbd4c63cc7a6e9cfa98041ed11b4db9b4c910a9775"
+    },
+    {
+      "matter": 29,
+      "courtlistener_docket_id": 74725653,
+      "courtlistener_entry_id": 476904530,
+      "entry_number": 11,
+      "date_filed": "2026-09-03",
+      "description": "Consent/Declination to Proceed Before a US Magistrate Judge",
+      "documents": [
+        {
+          "recap_document_id": 492480502,
+          "document_number": "11",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "4fb8d9d729352d85d325d85bdcb66fdab8addd5bfe9e197f69ab5f917628bc2e"
+    },
+    {
+      "matter": 29,
+      "courtlistener_docket_id": 74725653,
+      "courtlistener_entry_id": 477042768,
+      "entry_number": null,
+      "date_filed": "2026-09-04",
+      "description": "Electronic Filing Error",
+      "documents": [
+        {
+          "recap_document_id": 492622821,
+          "document_number": "",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "8578c2b59184f40f8c99bc97eb27b7647422a0d2eb5880151f29530785ad953e"
+    },
+    {
+      "matter": 29,
+      "courtlistener_docket_id": 74725653,
+      "courtlistener_entry_id": 477048822,
+      "entry_number": 12,
+      "date_filed": "2026-09-04",
+      "description": "Certificate/Proof of Service",
+      "documents": [
+        {
+          "recap_document_id": 492628986,
+          "document_number": "12",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "46a18b86a13265342d038f77adb2740b7e8cd299b1f9ebfca2debaa40583cf13"
+    },
+    {
+      "matter": 29,
+      "courtlistener_docket_id": 74725653,
+      "courtlistener_entry_id": 477449219,
+      "entry_number": 13,
+      "date_filed": "2026-09-09",
+      "description": "Certificate of Interested Entities, Corporate Disclosure Statement, or Rule 7.1 Disclosures",
+      "documents": [
+        {
+          "recap_document_id": 493043709,
+          "document_number": "13",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "87eb2ffd44d2f33053ac49b38af82d0954e25b852666ec12f7922ed67d3cad1c"
+    },
+    {
+      "matter": 29,
+      "courtlistener_docket_id": 74725653,
+      "courtlistener_entry_id": 477597486,
+      "entry_number": 14,
+      "date_filed": "2026-09-10",
+      "description": "Consent/Declination to Proceed Before a US Magistrate Judge",
+      "documents": [
+        {
+          "recap_document_id": 493196611,
+          "document_number": "14",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "a0fd8795ce0bf457826a9d28d3322a3b490bb83d3f8be8aaa556d5daef693395"
+    },
+    {
+      "matter": 29,
+      "courtlistener_docket_id": 74725653,
+      "courtlistener_entry_id": 477674834,
+      "entry_number": 15,
+      "date_filed": "2026-09-11",
+      "description": "Consent/Declination to Proceed Before a US Magistrate Judge",
+      "documents": [
+        {
+          "recap_document_id": 493277058,
+          "document_number": "15",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "69a8e71ab326a6fdc5bcc8cb67b2ed856cdfbdfc5a7937aac6b764f2de9ee6d7"
+    },
+    {
+      "matter": 29,
+      "courtlistener_docket_id": 74725653,
+      "courtlistener_entry_id": 477681470,
+      "entry_number": 16,
+      "date_filed": "2026-09-11",
+      "description": "Certificate/Proof of Service",
+      "documents": [
+        {
+          "recap_document_id": 493284008,
+          "document_number": "16",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "be380595a49f5e8fa41fa56c90bf4edee7bbc6e42e9fb777085112c67a4c420f"
+    },
+    {
+      "matter": 32,
+      "courtlistener_docket_id": 74220629,
+      "courtlistener_entry_id": 474037741,
+      "entry_number": 4,
+      "date_filed": "2026-08-11",
+      "description": "Initial Case Management Scheduling Order with ADR Deadlines",
+      "documents": [
+        {
+          "recap_document_id": 489525381,
+          "document_number": "4",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "0007f3a4ea30678304fc78a2cde0c51d1b0e5c46fe04bf3db0e8feebec546ec1"
+    },
+    {
+      "matter": 32,
+      "courtlistener_docket_id": 74220629,
+      "courtlistener_entry_id": 474037772,
+      "entry_number": 3,
+      "date_filed": "2026-08-11",
+      "description": "Summons Issued",
+      "documents": [
+        {
+          "recap_document_id": 489525412,
+          "document_number": "3",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "db28c8d4deb7292eff26467153aaa8e766066837ddc09e1c7fe7c38e1c8ea7d1"
+    },
+    {
+      "matter": 32,
+      "courtlistener_docket_id": 74220629,
+      "courtlistener_entry_id": 474037833,
+      "entry_number": 2,
+      "date_filed": "2026-08-11",
+      "description": "Consent/Declination to Proceed Before a US Magistrate Judge",
+      "documents": [
+        {
+          "recap_document_id": 489525473,
+          "document_number": "2",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "d6c3c1f5791c095bd5211eddc37c79a7d5a40f61cff3e63a0af6a48374fac955"
+    },
+    {
+      "matter": 32,
+      "courtlistener_docket_id": 74220629,
+      "courtlistener_entry_id": 474037861,
+      "entry_number": 1,
+      "date_filed": "2026-08-11",
+      "description": "Complaint",
+      "documents": [
+        {
+          "recap_document_id": 489525501,
+          "document_number": "1",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "c4769731942d2a61a099e2bfec608e1a0e3e5b6c9ce503e9538ad49c1370805b"
+    },
+    {
+      "matter": 32,
+      "courtlistener_docket_id": 74220629,
+      "courtlistener_entry_id": 474798686,
+      "entry_number": 5,
+      "date_filed": "2026-08-17",
+      "description": "Amended Complaint",
+      "documents": [
+        {
+          "recap_document_id": 490310059,
+          "document_number": "5",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "5394e9d43d6863131011fbf75f319aee20c46e694d8c553ef1c35b371fdcf27a"
+    },
+    {
+      "matter": 32,
+      "courtlistener_docket_id": 74220629,
+      "courtlistener_entry_id": 474882035,
+      "entry_number": 6,
+      "date_filed": "2026-08-18",
+      "description": "Amended Complaint",
+      "documents": [
+        {
+          "recap_document_id": 490396247,
+          "document_number": "6",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "8d387d8094054149bb4f704bfc5ca4c5e24e781f4265304e7a8fa5f9ffd1317b"
+    },
+    {
+      "matter": 32,
+      "courtlistener_docket_id": 74220629,
+      "courtlistener_entry_id": 475245764,
+      "entry_number": 7,
+      "date_filed": "2026-08-20",
+      "description": "Notice (Other)",
+      "documents": [
+        {
+          "recap_document_id": 490771916,
+          "document_number": "7",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "d10d8640f0ab7669010d1b7657e426da2b4409618d302860064f33f915379af6"
+    },
+    {
+      "matter": 32,
+      "courtlistener_docket_id": 74220629,
+      "courtlistener_entry_id": 475586351,
+      "entry_number": 8,
+      "date_filed": "2026-08-24",
+      "description": "Order Relating Case",
+      "documents": [
+        {
+          "recap_document_id": 491123251,
+          "document_number": "8",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "4e7fb50d447152f51419a34d4366b4e037882633da72f8afcdf98ff7bddf1ceb"
+    },
+    {
+      "matter": 32,
+      "courtlistener_docket_id": 74220629,
+      "courtlistener_entry_id": 475612536,
+      "entry_number": null,
+      "date_filed": "2026-08-24",
+      "description": "Case Assigned/Reassigned",
+      "documents": [
+        {
+          "recap_document_id": 491150128,
+          "document_number": "",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "fac27e297e59182ccf74a9ffa1627e154a7de827d9d9682eb161bb1e49d6a26c"
+    },
+    {
+      "matter": 32,
+      "courtlistener_docket_id": 74220629,
+      "courtlistener_entry_id": 475919073,
+      "entry_number": 11,
+      "date_filed": "2026-08-26",
+      "description": "Summons Returned Unexecuted",
+      "documents": [
+        {
+          "recap_document_id": 491466016,
+          "document_number": "11",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "78ba2d545348f06c2b64cea3a97b3b87ce24bae1cdf2bf9c47c8accba4d902c0"
+    },
+    {
+      "matter": 32,
+      "courtlistener_docket_id": 74220629,
+      "courtlistener_entry_id": 475919100,
+      "entry_number": 10,
+      "date_filed": "2026-08-26",
+      "description": "Notice (Other)",
+      "documents": [
+        {
+          "recap_document_id": 491466043,
+          "document_number": "10",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "f8e1acf5b9d132387be145c9598cd64a3c5a57f56a8ce0fa877856419e464794"
+    },
+    {
+      "matter": 32,
+      "courtlistener_docket_id": 74220629,
+      "courtlistener_entry_id": 476512173,
+      "entry_number": 12,
+      "date_filed": "2026-09-01",
+      "description": "Summons Returned Executed",
+      "documents": [
+        {
+          "recap_document_id": 492076785,
+          "document_number": "12",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "aee6eac3650bcbf61105f3ce4501e4d9e104633e89ab10b74961ba5260b03145"
+    },
+    {
+      "matter": 32,
+      "courtlistener_docket_id": 74220629,
+      "courtlistener_entry_id": 476904856,
+      "entry_number": 13,
+      "date_filed": "2026-09-03",
+      "description": "Administrative Motion per Civil Local Rule 7-11",
+      "documents": [
+        {
+          "recap_document_id": 492480829,
+          "document_number": "13",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "d8f3ea546a1c6b0433b6ddd53ec8d9777c9d3079d6f481b60a3c771e13789993"
+    },
+    {
+      "matter": 32,
+      "courtlistener_docket_id": 74220629,
+      "courtlistener_entry_id": 477429741,
+      "entry_number": 14,
+      "date_filed": "2026-09-09",
+      "description": "Certificate/Proof of Service",
+      "documents": [
+        {
+          "recap_document_id": 493023972,
+          "document_number": "14",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "8c6f908eef5e71fd6379413c4458aa19b40135dd25b0b8470963cc63fae3001d"
+    },
+    {
+      "matter": 32,
+      "courtlistener_docket_id": 74220629,
+      "courtlistener_entry_id": 477449104,
+      "entry_number": 15,
+      "date_filed": "2026-09-09",
+      "description": "Certificate of Interested Entities, Corporate Disclosure Statement, or Rule 7.1 Disclosures",
+      "documents": [
+        {
+          "recap_document_id": 493043594,
+          "document_number": "15",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "dc1cfbbb0077c4f1e7f18797a4d196749abdcb07dbe817e466ded58076a64a60"
+    },
+    {
+      "matter": 33,
+      "courtlistener_docket_id": 73742123,
+      "courtlistener_entry_id": 473888858,
+      "entry_number": 4,
+      "date_filed": "2026-08-10",
+      "description": "Initial Case Management Scheduling Order with ADR Deadlines",
+      "documents": [
+        {
+          "recap_document_id": 489369299,
+          "document_number": "4",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "1c4c156ee6a679ad78c050dc45eae4eb95f857343c35a92f58fb14b544519366"
+    },
+    {
+      "matter": 33,
+      "courtlistener_docket_id": 73742123,
+      "courtlistener_entry_id": 473888919,
+      "entry_number": 3,
+      "date_filed": "2026-08-10",
+      "description": "Consent/Declination to Proceed Before a US Magistrate Judge",
+      "documents": [
+        {
+          "recap_document_id": 489369359,
+          "document_number": "3",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "b74dc5bbe3b88dbfad69c2da44337066cadc001af06552d250ee9cc382b946c2"
+    },
+    {
+      "matter": 33,
+      "courtlistener_docket_id": 73742123,
+      "courtlistener_entry_id": 473889060,
+      "entry_number": 2,
+      "date_filed": "2026-08-10",
+      "description": "Summons Issued",
+      "documents": [
+        {
+          "recap_document_id": 489369500,
+          "document_number": "2",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "a9cdae57c928f06a2a1ae737adcef1cf1c3063a090ed8e3e4434bfdae0bf71f5"
+    },
+    {
+      "matter": 33,
+      "courtlistener_docket_id": 73742123,
+      "courtlistener_entry_id": 473889096,
+      "entry_number": 1,
+      "date_filed": "2026-08-10",
+      "description": "Complaint",
+      "documents": [
+        {
+          "recap_document_id": 489369537,
+          "document_number": "1",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "de8e20f0be18839a244a84f24699e52c1a904f6dae5aca3f6fb3df351076c156"
+    },
+    {
+      "matter": 33,
+      "courtlistener_docket_id": 73742123,
+      "courtlistener_entry_id": 474948755,
+      "entry_number": 7,
+      "date_filed": "2026-08-18",
+      "description": "Summons Returned Executed",
+      "documents": [
+        {
+          "recap_document_id": 490465275,
+          "document_number": "7",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "ef72207f290a8484355c01a6354f0050daad4d82da92b4c52f3e95cc717a1a8e"
+    },
+    {
+      "matter": 33,
+      "courtlistener_docket_id": 73742123,
+      "courtlistener_entry_id": 474948872,
+      "entry_number": 6,
+      "date_filed": "2026-08-18",
+      "description": "Amended Complaint",
+      "documents": [
+        {
+          "recap_document_id": 490465392,
+          "document_number": "6",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "1c160b0c03b435c021de5a35dc8c00a6a04e3551869359627bdc34cc180d967b"
+    },
+    {
+      "matter": 33,
+      "courtlistener_docket_id": 73742123,
+      "courtlistener_entry_id": 474948896,
+      "entry_number": 5,
+      "date_filed": "2026-08-18",
+      "description": "Amended Complaint",
+      "documents": [
+        {
+          "recap_document_id": 490465416,
+          "document_number": "5",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "034cd70a072d2a70614f322bf48f88b388a4a60e4a5e6f6545b3cae23362e840"
+    },
+    {
+      "matter": 33,
+      "courtlistener_docket_id": 73742123,
+      "courtlistener_entry_id": 475933491,
+      "entry_number": 9,
+      "date_filed": "2026-08-26",
+      "description": "Certificate/Proof of Service",
+      "documents": [
+        {
+          "recap_document_id": 491480883,
+          "document_number": "9",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "37d108b02e28c0074c8826c1efde6d902c110c40a94992428233f20b19809bdd"
+    },
+    {
+      "matter": 33,
+      "courtlistener_docket_id": 73742123,
+      "courtlistener_entry_id": 475933556,
+      "entry_number": 8,
+      "date_filed": "2026-08-26",
+      "description": "Relate Case",
+      "documents": [
+        {
+          "recap_document_id": 491480948,
+          "document_number": "8",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "92bf2c8d9bdb41432fa3c6c08a20596a3d031b9d2b366f48e8425ba16b445a18"
+    },
+    {
+      "matter": 33,
+      "courtlistener_docket_id": 73742123,
+      "courtlistener_entry_id": 476010238,
+      "entry_number": 10,
+      "date_filed": "2026-08-27",
+      "description": "Notice (Other)",
+      "documents": [
+        {
+          "recap_document_id": 491559687,
+          "document_number": "10",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "8136f03f49999921fe3f0ca61580b999f01c576e831b854a3ab8b7c1aefdd227"
+    },
+    {
+      "matter": 33,
+      "courtlistener_docket_id": 73742123,
+      "courtlistener_entry_id": 477051026,
+      "entry_number": 11,
+      "date_filed": "2026-09-04",
+      "description": "Answer to Complaint",
+      "documents": [
+        {
+          "recap_document_id": 492631211,
+          "document_number": "11",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "a13442756eb5fee8c196c771e3c66b6437cb449096a0a92818f42350ceb7cd20"
+    },
+    {
+      "matter": 33,
+      "courtlistener_docket_id": 73742123,
+      "courtlistener_entry_id": 477214258,
+      "entry_number": null,
+      "date_filed": "2026-09-08",
+      "description": "Clerk's Notice re: Consent or Declination",
+      "documents": [
+        {
+          "recap_document_id": 492802854,
+          "document_number": "",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "44e5435dfdfd10e495db4744d79b93cf5295ba2dcec7fecc209f3441ea58bd09"
+    },
+    {
+      "matter": 33,
+      "courtlistener_docket_id": 73742123,
+      "courtlistener_entry_id": 477237410,
+      "entry_number": 13,
+      "date_filed": "2026-09-08",
+      "description": "Order on Motion to Relate Case",
+      "documents": [
+        {
+          "recap_document_id": 492826432,
+          "document_number": "13",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "abd9d796dbf227dd372b17ac9dee40dcfa8671501aa33030a191a622b9b2b44d"
+    },
+    {
+      "matter": 33,
+      "courtlistener_docket_id": 73742123,
+      "courtlistener_entry_id": 477540615,
+      "entry_number": null,
+      "date_filed": "2026-09-10",
+      "description": "Notice of Appearance/Substitution/Change/Withdrawal of Attorney",
+      "documents": [
+        {
+          "recap_document_id": 493138390,
+          "document_number": "",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "aab658cc6ea4883f6e1c8e52e28b287dd3520560d3348a7cdbe5cbec930d6cd0"
+    },
+    {
+      "matter": 33,
+      "courtlistener_docket_id": 73742123,
+      "courtlistener_entry_id": 477581195,
+      "entry_number": 17,
+      "date_filed": "2026-09-10",
+      "description": "Strike",
+      "documents": [
+        {
+          "recap_document_id": 493179983,
+          "document_number": "17",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "73e3b7aefb53f6b79d4e4fdebab38a4e8c9617b9b2d756f71ebcce2209644693"
+    },
+    {
+      "matter": 33,
+      "courtlistener_docket_id": 73742123,
+      "courtlistener_entry_id": 477581314,
+      "entry_number": 16,
+      "date_filed": "2026-09-10",
+      "description": "Certificate of Interested Entities, Corporate Disclosure Statement, or Rule 7.1 Disclosures",
+      "documents": [
+        {
+          "recap_document_id": 493180103,
+          "document_number": "16",
+          "is_available": false,
+          "filepath_local": null
+        }
+      ],
+      "ingested_at": "2026-09-12T15:34:55.504Z",
+      "hash": "7ea1435778a9df5bcfd749bd8d6a6bdc357e320e0884e9e43e37c1654b40cfac"
+    }
+  ]
 }
