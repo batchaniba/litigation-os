@@ -159,3 +159,130 @@ Expect these attacks:
 - parallel state action / abstention.
 
 The complaint should remain in review status until the first five have affirmative factual answers.
+
+
+# Dismiss-state / refile-federal consequences
+
+## Core consequence
+
+If Plaintiff voluntarily dismisses STK-CV-UF-2026-0001094 now and files a new E.D. Cal. complaint, the federal case is a **new action with a September 2026 commencement date**. The February 13, 2026 state filing date does not automatically carry over.
+
+That matters most for claims whose original limitations periods may already have expired or be close to expiration.
+
+## Claim-by-claim effect
+
+| Claim | Effect of fresh federal filing now |
+|---|---|
+| Civil RICO | Probably still timely under a conservative spring-2027 outside posture, but must independently state a viable federal claim |
+| UVTA | Timing appears favorable if transfers occurred in 2025–2026 |
+| Sales contract | Likely timely until approximately Apr. 4, 2027 absent a valid shortening clause |
+| UCL | Likely timely through approximately Apr. 4, 2027 |
+| Fraud / concealment | Highest fresh-filing limitations risk |
+| Negligent misrepresentation | Potentially even greater limitations risk |
+
+## Voluntary dismissal does not safely preserve the sales-contract claim
+
+Commercial Code § 2725 gives four years for breach of a sales contract, generally from tender.
+
+Its six-month savings provision does **not** apply where the earlier action ended by voluntary discontinuance.
+
+Therefore:
+- existing state action: filed Feb. 13, 2026;
+- ordinary outside sales-contract date: approximately Apr. 4, 2027;
+- a federal refiling in Sep. 2026 is probably still timely;
+- but voluntarily dismissing and later suffering another dismissal after Apr. 2027 could create serious limitations exposure.
+
+## Fraud is the major danger
+
+The existing Feb. 13, 2026 filing was within three years even if Defendants argue fraud accrual/inquiry notice began around the April 2023 sale and immediate mechanical failure.
+
+A fresh Sep. 2026 federal fraud count may require a later truthful discovery date under CCP § 338(d) or an equitable-tolling theory.
+
+That would hand Defendants a limitations argument they do not presently have against the timely state filing.
+
+Do not assume that:
+- voluntary dismissal;
+- prior timely filing; or
+- general equitable-tolling principles
+
+will automatically preserve a newly filed fraud claim.
+
+## Federal-jurisdiction failure scenario
+
+Because diversity is unavailable, a standalone federal complaint depends on RICO as the original-jurisdiction anchor.
+
+The principal failure mode is:
+
+1. Plaintiff dismisses the state case.
+2. Plaintiff files RICO + UVTA + successor + contract + fraud + UCL in E.D. Cal.
+3. Defendants move under Rule 12(b)(6) / Rule 9(b).
+4. Court dismisses RICO for deficient predicates, enterprise, pattern, distinctness, operation/management, or limitations.
+5. With no federal claim remaining, the Court may decline supplemental jurisdiction under 28 U.S.C. § 1367(c)(3).
+6. Plaintiff must then return the California claims to state court after having voluntarily surrendered the Feb. 13, 2026 pending action.
+
+Section 1367(d) generally tolls state limitations while supplemental claims are pending in federal court and for a statutory period afterward, but it does not cure a state claim that was already untimely when the federal action was filed.
+
+This is the principal reason not to dismiss before RICO is complaint-grade.
+
+## Costs consequence
+
+A California voluntary dismissal can make defendants prevailing parties for ordinary recoverable costs under CCP § 1032, subject to applicable rules and any contractual/statutory fee provisions.
+
+Do not assume dismissal is cost-neutral.
+
+## Preferred routes
+
+### Route 1 — state amendment + possible removal
+
+Keep the February 13, 2026 action alive.
+
+Develop:
+- Rule 9(b) predicates;
+- UVTA transfer facts;
+- successor evidence.
+
+Then seek leave to amend in San Joaquin.
+
+If the amended complaint adds a viable RICO claim, Defendants may obtain a federal-question removal window under 28 U.S.C. § 1446(b)(3).
+
+Advantages:
+- preserves original state filing;
+- keeps state claims alive even if RICO later fails;
+- avoids making RICO the sole jurisdictional parachute.
+
+Disadvantage:
+- Plaintiff cannot compel Defendants to remove.
+
+### Route 2 — negotiated federal refiling
+
+Before dismissing, obtain a signed stipulation/agreement addressing:
+
+- dismissal without prejudice;
+- specified tolling;
+- waiver of any limitations defense based solely on time between Feb. 13, 2026 and federal filing;
+- preservation of only limitations defenses that existed as of Feb. 13, 2026;
+- acceptance/waiver of federal service;
+- no objection to federal refiling based solely on the voluntary state dismissal;
+- treatment of state-court costs.
+
+If defense counsel agrees to this, direct federal refiling becomes substantially safer.
+
+### Route 3 — unilateral dismissal and refiling
+
+This is the highest-risk route.
+
+Do not use it unless:
+- RICO is Rule 9(b)-ready;
+- fraud limitations have an independently supportable discovery chronology;
+- the sales-contract period remains open;
+- state/federal claim-preservation consequences are fully audited.
+
+## Current recommendation
+
+**Do not dismiss STK-CV-UF-2026-0001094 yet.**
+
+The present state filing is valuable because it preserves a February 13, 2026 commencement date while the new federal anchor remains under development.
+
+The cleanest sequence is:
+
+> preserve state action → complete RICO predicate reconstruction → develop transfer evidence → prepare SAC / federal complaint → choose state amendment plus potential removal or a negotiated tolling/refiling agreement.
