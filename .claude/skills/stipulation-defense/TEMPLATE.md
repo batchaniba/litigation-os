@@ -140,10 +140,9 @@ URL in this email or on the papers.
 
 Please confirm by reply when it is on file, and send the conformed copy.
 
-Regards,
-Brendan Ngehsi Newanforbi
-(209) 801-4442
-bnn.cdl@gmail.com
+Thank you,
+Brendan Ngwa Nforbi
+Plaintiff, In Propria Persona
 
 ---
 

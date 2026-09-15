@@ -227,7 +227,7 @@ CASES: list[NameCase] = [
             "person as Brendan Ngehsi Newanforbi. If you want a change, "
             "send a redline.\n"
         ),
-        short_slug="name-28",
+        short_slug="hope-name-stip",
         quiet=True,
     ),
     NameCase(
@@ -889,8 +889,7 @@ redline and I will look at it.
 {("" if not case.email_extra else chr(10) + case.email_extra)}
 Thank you,
 {NEW_NAME}
-(209) 801-4442
-bnn.cdl@gmail.com
+Plaintiff, In Propria Persona
 """
     else:
         body = f"""To: {to}
@@ -919,8 +918,7 @@ does not itself turn e-filing on.
 
 Thank you,
 {NEW_NAME}
-(209) 801-4442
-bnn.cdl@gmail.com
+Plaintiff, In Propria Persona
 """
     path.write_text(body)
     return path
