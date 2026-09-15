@@ -24,18 +24,9 @@ That distinction is intentional. Civil Code § 1786.52(a) contains an anti-dupli
 
 ### Count 3 — Penal Code § 290.46(j), Home Depot
 
-This becomes the merits centerpiece if the Home Depot-specific First Advantage report affirmatively identifies the California registry as the source of the adverse item.
+The complaint now pleads source and use as **ultimate facts on information and belief**, with UPS/FedEx same-consumer First Advantage comparators as the factual basis. It does not wait for the Home Depot-specific report to state the claim, and it does not pretend those comparator reports are Home Depot's report.
 
-The complaint is designed to plead:
-
-1. exact report source;
-2. exact component result;
-3. exact adjudication / client criterion;
-4. other components’ actual results;
-5. chronology from report completion to adverse action; and
-6. Home Depot’s use.
-
-That moves Matter 37 away from the old “hire + screen + ghost + inference” posture toward the document-driven structure used in Pilot, Randstad/RK, and UPS.
+Exact source-field wording, adjudication codes, and access timestamps remain reserved for discovery. If the Home Depot-specific First Advantage report is obtained before filing, replace the I&B source allegation with its exact wording after a hostile contradiction audit. That is an upgrade, not a precondition to stating Count 3.
 
 ## Claims intentionally omitted
 
@@ -50,7 +41,7 @@ That moves Matter 37 away from the old “hire + screen + ghost + inference” p
 
 ## The filing-critical limitations section
 
-The direct federal filing needs an exact discovery allegation.
+The direct federal filing needs an exact discovery allegation. This redraft still does **not** invent one.
 
 FCRA § 1681p permits suit no later than the earlier of:
 - two years after discovery of the violation; or
@@ -58,19 +49,29 @@ FCRA § 1681p permits suit no later than the earlier of:
 
 ICRAA § 1786.52 provides two years from discovery.
 
-Because the employment decision is alleged to have occurred around August 2024 and the proposed federal filing is in September 2026, the complaint must plead the **true** later discovery date and the event that revealed the violation. The strongest supported formulation is that the 2024 ghosting revealed only the employment result, while Home Depot’s failure to provide the report / identify the CRA concealed the report-based statutory violation until Plaintiff later obtained the Home Depot-specific First Advantage material.
+Because the employment decision is alleged to have occurred around August 2024, using the ghosting date as discovery would make a September 2026 filing late. The complaint therefore pleads that 2024 revealed only the employment result. Home Depot never gave Plaintiff the report, identified First Advantage, or disclosed the report-based statutory omissions.
+
+Do **not**:
+- fill August 2024 as the FCRA/ICRAA discovery date;
+- treat UPS’s or FedEx’s First Advantage report as discovery of Home Depot’s violation;
+- treat the *Ford* public-source research as a filled discovery date unless that is in fact when Plaintiff first learned a consumer report was used in *this* transaction.
+
+The next operational step is serving the First Advantage §§ 1786.10 / 1786.22 request and the Home Depot Labor Code § 1198.5 request. If those files produce the Home Depot-specific report, that production can pin the date. The FCRA five-year outer bound from an August 2024 violation runs to approximately August 2029. The two-year discovery clock is the constraint that must be pleaded truthfully.
 
 Do not file the federal complaint until this date is verified.
 
 ## E.D. Cal. engineering
 
 - Federal question: 28 U.S.C. § 1331 + FCRA.
+- Diversity in the alternative: 28 U.S.C. § 1332(a) — Delaware corporation, Atlanta principal place of business, California plaintiff. Amount in controversy is pleaded in the aggregate without inventing a wage rate.
 - Supplemental jurisdiction: 28 U.S.C. § 1367(a).
 - Venue: 28 U.S.C. § 1391(b)(2).
 - San Joaquin County places the action in the Sacramento side of E.D. Cal. under Local Rule 120(d).
+- Serve CSC at 2710 Gateway Oaks Drive, Suite 150N, Sacramento, CA 95833. Do not serve the Tracy warehouse.
 - Complaint is intentionally unverified. Rule 11 supplies the federal certification; there is no strategic need to convert every information-and-belief allegation into a verification issue.
 - Keep the pleading concise. Save *Donaleski*, *Lerma*, *Dutta*, *Walker*, and the UPS/Randstad comparison record for motion practice unless a short citation becomes necessary.
 - Do not plead another employer’s First Advantage report as proof of what the Home Depot report says.
+- Generate the review-draft PDF with `python3 internal/scripts/matter37-edca-complaint.py`. Use official JS-44 / AO-440 / AO-239 forms; do not homemade them.
 
 ## Public-source vendor upgrade
 
@@ -150,3 +151,20 @@ The underlying California registry entry is employer-invariant. What can vary by
 The FCRA allegations are now tied to the lost employment itself. Plaintiff alleges that if Home Depot had furnished the report and Summary of Rights before adverse action, he could have identified the California-registry source and objected that § 290.46(j)(2)(E) prohibited Home Depot from using that information for the employment decision.
 
 That is designed to distinguish *Dutta v. State Farm*, 895 F.3d 1166 (9th Cir. 2018), where the missing pre-adverse process could not have changed the outcome because an accurate, independently disqualifying credit item remained. Here, the pleaded theory is that the information driving the decision was itself legally prohibited from employment use.
+
+## Pleading repairs in this revision
+
+- **Former chronology paragraph (old ¶49):** no longer states as known fact that “First Advantage reported Plaintiff’s registry information.” The sequence now carries the same I&B qualifier used in Count 3. A contrary sentence was MTD bait.
+- **DOT / (b)(3)(B)-(C):** the Tracy site is a warehouse, distribution, and fulfillment DC. The complaint now pleads that the position was not a commercial-driving assignment and that the FCRA driving exception does not apply. Rewrite only if a later Home Depot document shows a DOT-regulated driving job.
+- **Count 3 posture:** source and use are pleaded as I&B ultimate facts with comparator support. They are not labeled “[REPORT-CONDITIONED]” in the matter record. Exact source-field wording remains reserved for discovery.
+- **Willfulness color:** *Harris v. Home Depot U.S.A., Inc.*, 114 F. Supp. 3d 868 (N.D. Cal. 2015), is pleaded only as additional evidence that Home Depot is a sophisticated FCRA employment-screening user. It is a standalone-disclosure decision. It is **not** a § 1681b(b)(2)(A) claim in this complaint and is not treated as a holding that Home Depot violated § 1681b(b)(3)(A) in Plaintiff’s transaction.
+
+## Pre-filing inspection (highest-value next step)
+
+Unsigned demand drafts:
+
+- `internal/docs/matter-37/INSPECTION_DEMAND_FIRST_ADVANTAGE.md`
+- `internal/docs/matter-37/PERSONNEL_FILE_DEMAND_HOME_DEPOT.md`
+- generator: `internal/scripts/matter37-inspection-demands.py`
+
+Serve First Advantage at the Ford-form consumer address (P.O. Box 105292, Atlanta, GA 30348). Serve Home Depot at CSC, not 5395 Hopkins Road. Plaintiff signs. Do not treat the drafts as served until they go out.

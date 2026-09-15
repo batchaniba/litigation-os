@@ -174,6 +174,12 @@ Seek:
 14. Dispute history, if any.
 15. Data dictionary defining Home Depot-specific status codes and THD profile names.
 
+## Willfulness color — Harris (not a new count)
+
+*Harris v. Home Depot U.S.A., Inc.*, 114 F. Supp. 3d 868 (N.D. Cal. 2015), Case No. 15-cv-01058-VC, denied Home Depot’s motion to dismiss an FCRA standalone-disclosure claim under 15 U.S.C. § 1681b(b)(2)(A). CourtListener: https://www.courtlistener.com/opinion/7314355/harris-v-home-depot-usa-inc/
+
+Use *Harris* only as additional evidence that Home Depot is a sophisticated FCRA user of employment consumer reports. Do **not** add a § 1681b(b)(2)(A) count unless Plaintiff’s actual 2024 Home Depot disclosure/authorization is in hand and audited. *Harris* is not a holding that Home Depot violated § 1681b(b)(3)(A) in this transaction. The *Ford* form remains the better willfulness document for the pre-adverse count because it expressly recites the report-plus-Summary-of-Rights process.
+
 ## Additional claim preserved by this research
 
 The Ford exhibit makes one additional issue worth investigating: **FCRA § 1681b(b)(2)(A)**.

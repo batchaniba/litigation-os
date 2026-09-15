@@ -1,5 +1,33 @@
 [
   {
+    "date": "Sep. 15, 2026",
+    "event": "DRAFT (unsigned / unserved) — Matter 37 E.D. Cal. federal complaint review draft hardened: warehouse/fulfillment (not DOT) Tracy DC; diversity § 1332 pleaded in the alternative without inventing a wage rate; CSC service address; chronology no longer states First Advantage registry reporting as known fact; Harris v. Home Depot, 114 F. Supp. 3d 868, used only as FCRA-sophistication color. Inspection demands under Civ. Code §§ 1786.10/1786.22 (First Advantage) and Labor Code § 1198.5 (Home Depot via CSC) are drafted for Plaintiff to sign. Discovery date remains a filing gate; do not use August 2024. Generators: internal/scripts/matter37-edca-complaint.py and matter37-inspection-demands.py. September 8 San Joaquin packet remains unfiled historical work product.",
+    "matters": [
+      37
+    ],
+    "type": "correspondence",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source_type": "manual",
+    "confidence": "high",
+    "verified_at": "2026-09-15"
+  },
+  {
+    "date": "Sep. 15, 2026",
+    "event": "NEXT — Sign and send Matter 37 inspection demands before filing the E.D. Cal. complaint: (1) First Advantage consumer-file / ICRAA §§ 1786.10, 1786.22 request to P.O. Box 105292, Atlanta, GA 30348; (2) Home Depot Labor Code § 1198.5 personnel-file request to CSC, 2710 Gateway Oaks Drive, Suite 150N, Sacramento, CA 95833. Do not serve 5395 Hopkins Road. Do not treat the drafts as served until they go out. If the Home Depot-specific report arrives, upgrade Count 3 from I&B to the exact fields after a hostile audit, then fill the true FCRA/ICRAA discovery date.",
+    "matters": [
+      37
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "filed": false,
+    "actor": "you",
+    "source_type": "manual",
+    "confidence": "high",
+    "verified_at": "2026-09-15"
+  },
+  {
     "date": "Sep. 12, 2026",
     "event": "DRAFT (unsent) \u2014 Final early global settlement demand in Newanforbi v. Randstad US, LLC et al. (26CV199902): $40,000.00 to resolve all claims against both named defendants and Does. Wire within seven business days of written joint acceptance. Expires 5:00 p.m. PT Sept. 18, 2026, and may be accepted after a filing. The RK Logistics Group, Inc. remains due Sept. 14; Randstad US, LLC remains due Sept. 15. This draft does not extend either clock and is not a CIV-100 hold. File-if-silent stays Sept. 15 (RK) / Sept. 16 (Randstad) if eCourt is empty. Do not send the Sept. 11 $40k text that gifted both defendants through Sept. 18. Generator: internal/scripts/matter27-global-demand-sep12.py. Evid. Code \u00a71152 / FRE 408.",
     "matters": [
