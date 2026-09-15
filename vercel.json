@@ -185,16 +185,6 @@
       "permanent": false
     },
     {
-      "source": "/candelaria-fac",
-      "destination": "/candelaria-fac.pdf",
-      "permanent": false
-    },
-    {
-      "source": "/candelaria-fac/",
-      "destination": "/candelaria-fac.pdf",
-      "permanent": false
-    },
-    {
       "source": "/ups-ext-opp",
       "destination": "/ups-ext-opp.pdf",
       "permanent": false
@@ -315,6 +305,36 @@
       "permanent": false
     },
     {
+      "source": "/name-24-motion",
+      "destination": "/name-24-motion.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/name-24-motion/",
+      "destination": "/name-24-motion.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/name-24-decl",
+      "destination": "/name-24-decl.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/name-24-decl/",
+      "destination": "/name-24-decl.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/name-24-order",
+      "destination": "/name-24-order.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/name-24-order/",
+      "destination": "/name-24-order.pdf",
+      "permanent": false
+    },
+    {
       "source": "/name-28",
       "destination": "/name-28.pdf",
       "permanent": false
@@ -322,6 +342,26 @@
     {
       "source": "/name-28/",
       "destination": "/name-28.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/hope-name-stip",
+      "destination": "/hope-name-stip.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/hope-name-stip/",
+      "destination": "/hope-name-stip.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/hope-name-motion",
+      "destination": "/hope-name-motion.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/hope-name-motion/",
+      "destination": "/hope-name-motion.pdf",
       "permanent": false
     },
     {
@@ -352,6 +392,16 @@
     {
       "source": "/name-33/",
       "destination": "/name-33.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/candelaria-fac",
+      "destination": "/candelaria-fac.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/candelaria-fac/",
+      "destination": "/candelaria-fac.pdf",
       "permanent": false
     }
   ],
@@ -519,15 +569,6 @@
       ]
     },
     {
-      "source": "/candelaria-fac.pdf",
-      "headers": [
-        {
-          "key": "Content-Disposition",
-          "value": "attachment; filename=\"Dkt 06 - First Amended Complaint (CONFORMED, Filed Aug 17 2026).pdf\"; filename*=UTF-8''Dkt%2006%20-%20First%20Amended%20Complaint%20%28CONFORMED%2C%20Filed%20Aug%2017%202026%29.pdf"
-        }
-      ]
-    },
-    {
       "source": "/ups-ext-opp.pdf",
       "headers": [
         {
@@ -636,11 +677,56 @@
       ]
     },
     {
+      "source": "/name-24-motion.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Administrative Motion - Conform Plaintiff's Name - Serrato (N.D. Cal. 3-26-cv-05953-CRB) (September 15, 2026).pdf\"; filename*=UTF-8''Administrative%20Motion%20-%20Conform%20Plaintiff's%20Name%20-%20Serrato%20%28N.D.%20Cal.%203-26-cv-05953-CRB%29%20%28September%2015%2C%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/name-24-decl.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Declaration ISO Administrative Motion - Conform Plaintiff's Name - Serrato (N.D. Cal. 3-26-cv-05953-CRB) (September 15, 2026).pdf\"; filename*=UTF-8''Declaration%20ISO%20Administrative%20Motion%20-%20Conform%20Plaintiff's%20Name%20-%20Serrato%20%28N.D.%20Cal.%203-26-cv-05953-CRB%29%20%28September%2015%2C%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/name-24-order.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Proposed Order - Conform Plaintiff's Name - Serrato (N.D. Cal. 3-26-cv-05953-CRB) (September 15, 2026).pdf\"; filename*=UTF-8''Proposed%20Order%20-%20Conform%20Plaintiff's%20Name%20-%20Serrato%20%28N.D.%20Cal.%203-26-cv-05953-CRB%29%20%28September%2015%2C%202026%29.pdf"
+        }
+      ]
+    },
+    {
       "source": "/name-28.pdf",
       "headers": [
         {
           "key": "Content-Disposition",
           "value": "attachment; filename=\"Name Conform Administrative Motion Packet - Smith (N.D. Cal. 3-26-cv-07504-LJC) (September 14, 2026).pdf\"; filename*=UTF-8''Name%20Conform%20Administrative%20Motion%20Packet%20-%20Smith%20%28N.D.%20Cal.%203-26-cv-07504-LJC%29%20%28September%2014%2C%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/hope-name-stip.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Stipulation and Proposed Order - Conform Plaintiff's Name to Brendan Ngwa Nforbi (Plaintiff Counterpart - not yet agreed) (September 11, 2026).pdf\"; filename*=UTF-8''Stipulation%20and%20Proposed%20Order%20-%20Conform%20Plaintiff's%20Name%20to%20Brendan%20Ngwa%20Nforbi%20%28Plaintiff%20Counterpart%20-%20not%20yet%20agreed%29%20%28September%2011%2C%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/hope-name-motion.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Civil L.R. 7-11 Administrative Motion Packet - Conform Plaintiff's Docket Name to Brendan Ngwa Nforbi for PACER ECF E-Filing Access (Newanforbi v. Smith and HOPE, N.D. Cal. 3-26-cv-07504-LJC) (September 14, 2026).pdf\"; filename*=UTF-8''Civil%20L.R.%207-11%20Administrative%20Motion%20Packet%20-%20Conform%20Plaintiff's%20Docket%20Name%20to%20Brendan%20Ngwa%20Nforbi%20for%20PACER%20ECF%20E-Filing%20Access%20%28Newanforbi%20v.%20Smith%20and%20HOPE%2C%20N.D.%20Cal.%203-26-cv-07504-LJC%29%20%28September%2014%2C%202026%29.pdf"
         }
       ]
     },
@@ -668,6 +754,15 @@
         {
           "key": "Content-Disposition",
           "value": "attachment; filename=\"Name Conform Administrative Motion Packet - Candelaria (N.D. Cal. 3-26-cv-08272-LJC) (September 14, 2026).pdf\"; filename*=UTF-8''Name%20Conform%20Administrative%20Motion%20Packet%20-%20Candelaria%20%28N.D.%20Cal.%203-26-cv-08272-LJC%29%20%28September%2014%2C%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/candelaria-fac.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Dkt 06 - First Amended Complaint (CONFORMED, Filed Aug 17 2026).pdf\"; filename*=UTF-8''Dkt%2006%20-%20First%20Amended%20Complaint%20%28CONFORMED%2C%20Filed%20Aug%2017%202026%29.pdf"
         }
       ]
     }

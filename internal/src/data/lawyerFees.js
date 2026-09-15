@@ -465,7 +465,7 @@ const lawyer_fees_raw = [
       high: 33096,
       mid: 26306
     },
-    notes: "Substantial increment now that the complaint has actually been e-filed and RK Logistics has responded, plus service now confirmed. Thirteen new documents since the pre-filing estimate (25 total, 110 real pages, +52 pages): the e-filing confirmation packet (Civil Case Cover Sheet, Fee Waiver, Order on Fee Waiver, Notice of Confirmation of E-Filing, Notice of Case Assignment, Notice of CMC, and two SUM-100 versions plus the blank template) billed as light administrative/procedural tasks (0.5–2 hr/doc, per methodology); a duplicate filed copy of the 19-page Complaint billed only incrementally per the near-duplicate rule; the 12-page Garcia & Gurney response letter, billed above the standard opposing-counsel light-review rate to account for the substantive rebuttal analysis it required (comparing the SambaSafety Class A/Class C license distinction and the Jack Altares email against the letter's employer-status argument), plus its 1-page Gmail transmittal; and the 2-page Sacramento County Sheriff Civil File Status confirming Jul. 30, 2026 dual service, billed as a light administrative/status document. Prior 12-document, 58-page base (19-page Verified Complaint, two 4-page demand letters, 15-page InfoMart report, CA SOS records, Gmail demand transmittals, onboarding emails, and the 5-page SER-001) carries forward unchanged. Randstad's August 2 demand response remains outstanding; responsive pleadings are now due August 31, 2026, and any demurrer/meet-and-confer practice will add a further increment."
+    notes: "Sep. 14 afternoon increment: Tai Gmail (1 p.) + Gurney CIV-141 (2 pp.) and Moskow Gmail (1 p.) + executed counterpart (6 pp.) billed at opposing-counsel light review only — served papers, not entered orders. Morning increment: Williams/Chapman counsel stipulation and proposed order plus the two-page Gmail print ($25k sent Sep. 12 / e-sign ask Sep. 14) billed at opposing-counsel light review only, not drafting rate. Plaintiff counterpart (3-page stipulation + 2-page proposed order) is Plaintiff's own paper. Prior increment: complaint e-filed and RK Logistics responded, plus service confirmed. Thirteen new documents since the pre-filing estimate (25 total, 110 real pages, +52 pages): the e-filing confirmation packet (Civil Case Cover Sheet, Fee Waiver, Order on Fee Waiver, Notice of Confirmation of E-Filing, Notice of Case Assignment, Notice of CMC, and two SUM-100 versions plus the blank template) billed as light administrative/procedural tasks (0.5–2 hr/doc, per methodology); a duplicate filed copy of the 19-page Complaint billed only incrementally per the near-duplicate rule; the 12-page Garcia & Gurney response letter, billed above the standard opposing-counsel light-review rate to account for the substantive rebuttal analysis it required (comparing the SambaSafety Class A/Class C license distinction and the Jack Altares email against the letter's employer-status argument), plus its 1-page Gmail transmittal; and the 2-page Sacramento County Sheriff Civil File Status confirming Jul. 30, 2026 dual service, billed as a light administrative/status document. Prior 12-document, 58-page base (19-page Verified Complaint, two 4-page demand letters, 15-page InfoMart report, CA SOS records, Gmail demand transmittals, onboarding emails, and the 5-page SER-001) carries forward unchanged. Randstad's August 2 demand response remains outstanding; responsive pleadings are now due August 31, 2026, and any demurrer/meet-and-confer practice will add a further increment."
   },
   {
     number: 28,
@@ -673,9 +673,9 @@ const lawyer_fees_raw = [
   },
   {
     number: 40,
-    type: "State — prospective employment monitoring (TaskUs, LLC offer, pre-dispute)",
-    documentsCount: 9,
-    totalPagesReal: 54,
+    type: "State — prospective employment monitoring (Uber Technologies, Inc. lead; TaskUs staffing; pre-dispute)",
+    documentsCount: 15,
+    totalPagesReal: 66,
     hours: {
       low: 1,
       high: 2.5,
@@ -686,7 +686,7 @@ const lawyer_fees_raw = [
       high: 700,
       mid: 490
     },
-    notes: "Sep. 14, 2026: 10-page TaskUs, LLC offer ($22/hour) + Workday stub + 35-page signatory packet (MAA signed) + welcome graphic + 3 WorkDay emails + First Advantage Profile Advantage BGC invite (2 pp.) + FA saliva-drug-test screening notification for TaskUs Holdings (2 pp.). Same CRA as Matters 25/26. No consumer report furnished yet, no adverse action — monitoring file."
+    notes: "Sep. 14, 2026: 10-page TaskUs, LLC offer + Workday stub + 35-page signatory packet + welcome graphic + 3 WorkDay emails + FA Profile Advantage invite + FA saliva-drug-test notice + 2 Profile Advantage portal screenshots (Order WPS-361214148; PRINSOS still In Progress) + 3 CA SOS bizfile printouts + TA Ops start-date administrative hold (11:24 a.m.; not a denial). Same CRA as Matters 25/26. Report not yet viewable — monitoring file.",
   }
 ];
 
@@ -695,12 +695,12 @@ export const lawyer_fees = lawyer_fees_raw.map((row) => withMatterIdentity(row))
 export const lawyer_fees_summary = {
   analysisDate: "2026-09-06",
   totalMatters: 40,
-  totalDocumentsAnalyzed: 650,
-  totalPagesReal: 7261,
+  totalDocumentsAnalyzed: 656,
+  totalPagesReal: 7273,
   methodology: {
     blendedHourlyRate: 280,
     rateRange: { seniorPartner: [350, 450], midAssociate: [250, 350], paralegal: [150, 200] },
-    note: "Every PDF in public/documents/matter-XX/ was measured with pdfinfo for real page counts (poppler-utils), then classified by document type (complaint, motion/opposition/reply, discovery, writ/habeas, declaration, administrative, evidence) and priced using the hours-per-page/per-document conversions in docs/LAWYER_FEES_CALCULATOR.md. Opposing counsel's filings are billed only at a light review rate, never at drafting rate. Duplicate packs (opposition-pack-10, conformed copies, from-* stores) are billed incrementally. Matters with no uploaded PDFs are estimated conservatively from matter JSON status text. Aug. 28, 2026 true-up: Matter 20 Whitman tentative + reply review; Matter 24 Serrato Opp v4 / related-case motions / MTD review; Matter 26 UPS ECF 7 review + 17-page opposition; Matter 28 Dkt. 11 + QI research (HOPE discovery stays on Matter 5); Matter 32 process-server bundle; Matter 35 Ross CT / summons-first service packets. Sep. 5, 2026: Matter 36 adds the AT&T hiring record, formal offer, findings memorandum, and 32-page verified-complaint review draft. Sep. 6, 2026: Matters 36–39 true-up to executed San Joaquin packets (CM-010, FW-001, FW-003, SUM-100, signed complaints, walk-up assemblies). Sep. 14, 2026: Matter 40 — 10-page TaskUs, LLC offer + signatory packet + WorkDay emails + First Advantage Profile Advantage invite and saliva-drug-test notice (9 files / 54 pages).",
+    note: "Every PDF in public/documents/matter-XX/ was measured with pdfinfo for real page counts (poppler-utils), then classified by document type (complaint, motion/opposition/reply, discovery, writ/habeas, declaration, administrative, evidence) and priced using the hours-per-page/per-document conversions in docs/LAWYER_FEES_CALCULATOR.md. Opposing counsel's filings are billed only at a light review rate, never at drafting rate. Duplicate packs (opposition-pack-10, conformed copies, from-* stores) are billed incrementally. Matters with no uploaded PDFs are estimated conservatively from matter JSON status text. Aug. 28, 2026 true-up: Matter 20 Whitman tentative + reply review; Matter 24 Serrato Opp v4 / related-case motions / MTD review; Matter 26 UPS ECF 7 review + 17-page opposition; Matter 28 Dkt. 11 + QI research (HOPE discovery stays on Matter 5); Matter 32 process-server bundle; Matter 35 Ross CT / summons-first service packets. Sep. 5, 2026: Matter 36 adds the AT&T hiring record, formal offer, findings memorandum, and 32-page verified-complaint review draft. Sep. 6, 2026: Matters 36–39 true-up to executed San Joaquin packets (CM-010, FW-001, FW-003, SUM-100, signed complaints, walk-up assemblies). Sep. 14, 2026: Matter 40 — TaskUs, LLC offer + FA Order WPS-361214148 + CA SOS + TA Ops start-date hold (15 files / 66 pages).",
   },
   totalEstimatedHours: { low: 3097.8, high: 5205.2, mid: 4144 },
   totalEstimatedCost: { low: 867384, high: 1457456, mid: 1160320 },

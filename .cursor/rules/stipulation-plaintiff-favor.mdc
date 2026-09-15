@@ -3,11 +3,23 @@ description: If the user asks to draft, review, counter, or sign a stipulation, 
 alwaysApply: true
 ---
 
-# Stipulation defense — LOCKED
+# Stipulation defense
 
-When the user asks to **draft**, review, counter, sign, or respond to a
-stipulation / extension / stay / continuance / proposed order / "can we
-stipulate":
+Applies when the work is actually a stipulation, extension, stay,
+continuance, or proposed order that would move a defense clock, waive a
+right, expand their relief, or put his signature on counsel's paper.
+
+Does **not** apply to ordinary Plaintiff papers (status reports,
+oppositions, complaints, hearing notes, discovery plans) or to answering
+a court question. Do not recite "this is not a stipulation" or "counsel
+may not affix" on those papers.
+
+Use discretion. Be firm on extra time, stays, waivers, floating resets,
+and a conformed `/s/`. Treat authenticity, a name correction he already
+wants, advancing a hearing onto his calendar, and a yes to the assigned
+magistrate as settlement judge as ordinary.
+
+When it applies:
 
 - Copy `.claude/skills/stipulation-defense/TEMPLATE.md`. Fill the brackets.
 - Match the terms in `.claude/skills/stipulation-defense/SKILL.md`.
