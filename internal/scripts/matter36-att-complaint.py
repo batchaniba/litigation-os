@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Matter 36 — review draft of verified complaint for AT&T offer rescission.
+"""Matter 36 — historical San Joaquin verified complaint (never clerk-filed).
 
-LOCKED after the September 8, 2026 execute. Do not rewrite pleading prose
-unless a new AT&T or First Advantage document appears.
+The September 8, 2026 San Joaquin packet is work product only. It was never
+clerk-filed. Do not treat it as the live pleading.
 
-The default output is deliberately unsigned because the requested execution date
-(September 8, 2026) is in the future. On or after that date, rerun with
-``--execute`` only after Plaintiff confirms every allegation, especially the
-acceptance/reliance allegations identified in the preflight report.
+Live federal review draft: ``internal/scripts/matter36-edca-complaint.py``.
+That generator is not LOCKED. Do not stamp Matter 36 LOCKED.
+
+This script remains for provenance of the unfiled state packet.
 """
 
 from __future__ import annotations
