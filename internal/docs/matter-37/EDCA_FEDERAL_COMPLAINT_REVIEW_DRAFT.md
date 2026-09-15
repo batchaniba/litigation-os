@@ -2,7 +2,7 @@
 
 <!-- Internal generator header. Not part of the pleading. Do not print on page one. -->
 
-Opening theory is diversity plus Penal Code § 290.46(j). FCRA and ICRAA stay off the opening complaint: there is no truthful factual discovery date to carry the two-year clocks, and May 29, 2026 is not used. One public Home Depot–First Advantage disclosure (*Ford* Ex. 1). No other-docket sociology. Do not name the C.D. Cal. registry-source dismissal in the pleading.
+Opening theory is diversity plus Penal Code § 290.46(j). FCRA and ICRAA stay off the opening complaint: there is no truthful factual discovery date to carry the two-year clocks. One public Home Depot–First Advantage disclosure (*Ford* Ex. 1). No other-docket sociology. Do not name the C.D. Cal. registry-source dismissal in the pleading.
 
 ---
 

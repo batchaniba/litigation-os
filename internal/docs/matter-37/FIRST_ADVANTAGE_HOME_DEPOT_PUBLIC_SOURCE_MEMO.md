@@ -4,7 +4,7 @@
 
 The public record is sufficient to plead, on information and belief, that First Advantage Background Services Corp. was Home Depot's employment-screening CRA during the relevant period. It is not sufficient by itself to plead the contents of Plaintiff's 2024 Home Depot-specific report as known fact.
 
-The hierarchy matters. The strongest materials are federal-court records and First Advantage's own public statement. Applicant posts and publicly uploaded reports are useful corroboration and search-term intelligence, but should not carry the complaint.
+**Complaint uses *Ford* Exhibit 1 only.** *Bolton*, the 2019 webinar, applicant posts, and other-docket sociology stay in this memo. They do not go in the pleading.
 
 ## Tier 1 — complaint-grade public basis
 
