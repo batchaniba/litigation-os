@@ -5,7 +5,7 @@
   "court": "San Joaquin Sup. Ct. (executed packet; not yet filed)",
   "claims": "ICRAA § 1786.40 (I&B); CCRAA § 1785.20.5 (alternative); UCL § 17200; Penal Code § 290.46(j) (I&B — report contents and use)",
   "status": "EXECUTED (unfiled) — four-count San Joaquin complaint against Home Depot U.S.A., Inc. Plaintiff accepted the Tracy DC hire, began onboarding, then was ghosted. Hire date is I&B on or about August 2024. § 290 is the fourth count. Serve CSC, not the Tracy building.",
-  "status_label": "Executed — unfiled",
+  "status_label": "EDCA intake drafted Sep. 15 — unfiled",
   "lifecycle": "pre_filing",
   "proceeding": "state_civil",
   "phase": "pre_filing",
@@ -38,6 +38,22 @@
     "Lerma v. Amazon, C.D. Cal. 8:22-cv-01727, Dkt. 36 — dismissal after the employer's report was in the record; cannot be replicated on demurrer while Home Depot withholds the report"
   ],
   "documents": [
+    {
+      "path": "/documents/matter-37/edca/E.D. Cal. Intake Packet (print copy) - Ngwa Nforbi v. Home Depot (Sep 15 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-37/edca/JS 44 Civil Cover Sheet - Ngwa Nforbi v. Home Depot U.S.A., Inc. (E.D. Cal.) (Sep 15 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-37/edca/AO 239 IFP Application - Ngwa Nforbi v. Home Depot U.S.A., Inc. (E.D. Cal.) (Sep 15 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-37/edca/AO 440 Summons - Home Depot U.S.A., Inc. (E.D. Cal.) (Sep 15 2026).pdf",
+      "filed": false
+    },
     {
       "path": "/documents/matter-37/Filing Packet - Ngwa Nforbi v Home Depot USA Inc (Sep 8 2026).pdf",
       "filed": false

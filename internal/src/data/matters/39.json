@@ -5,7 +5,7 @@
   "court": "San Joaquin Sup. Ct. (executed packet; not yet filed)",
   "claims": "ICRAA § 1786.40 (I&B); CCRAA § 1785.20.5 (alternative); UCL § 17200; Penal Code § 290.46(j) (I&B — report contents and use)",
   "status": "EXECUTED (unfiled) — four-count San Joaquin complaint against Best Buy Co., Inc. Plaintiff accepted the Tracy warehouse offer at 6653 Hopkins Road, completed the drug screen (I&B clean), then was ghosted. First Advantage is not a named defendant. § 290 is the fourth count.",
-  "status_label": "Executed — unfiled",
+  "status_label": "EDCA intake drafted Sep. 15 — unfiled",
   "lifecycle": "pre_filing",
   "proceeding": "state_civil",
   "phase": "pre_filing",
@@ -43,6 +43,22 @@
     "Lerma v. Amazon, C.D. Cal. 8:22-cv-01727, Dkt. 36 — dismissal after the employer's report was in the record and showed ordinary court records, not a pleading-stage inference from an unattached report"
   ],
   "documents": [
+    {
+      "path": "/documents/matter-39/edca/E.D. Cal. Intake Packet (print copy) - Ngwa Nforbi v. Best Buy (Sep 15 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-39/edca/JS 44 Civil Cover Sheet - Ngwa Nforbi v. Best Buy Co., Inc. (E.D. Cal.) (Sep 15 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-39/edca/AO 239 IFP Application - Ngwa Nforbi v. Best Buy Co., Inc. (E.D. Cal.) (Sep 15 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-39/edca/AO 440 Summons - Best Buy Co., Inc. (E.D. Cal.) (Sep 15 2026).pdf",
+      "filed": false
+    },
     {
       "path": "/documents/matter-39/Filing Packet - Ngwa Nforbi v Best Buy Co Inc (Sep 8 2026).pdf",
       "filed": false

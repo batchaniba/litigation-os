@@ -5,7 +5,7 @@
   "court": "San Joaquin Sup. Ct. (executed packet; not yet filed)",
   "claims": "ICRAA § 1786.40; CCRAA § 1785.20.5 (alternative); UCL § 17200; Penal Code § 290.46(j) (I&B — preliminary NSOPW / registry)",
   "status": "EXECUTED (unfiled) — four-count San Joaquin complaint against Swift Transportation Co. of Arizona LLC for a Class A Driver role, signed for September 8, 2026. NSOPW remained Processing. CM-010, SUM-100, FW-001, and FW-003 are in the packet. § 290 is the fourth count. File before September 26 if accrual is the pre-adverse.",
-  "status_label": "Executed — unfiled",
+  "status_label": "EDCA intake drafted Sep. 15 — unfiled",
   "lifecycle": "pre_filing",
   "proceeding": "state_civil",
   "phase": "pre_filing",
@@ -44,6 +44,22 @@
     "Lerma v. Amazon, C.D. Cal. 8:22-cv-01727, Dkt. 36 — dismissal after a completed NSOR no-record; this packet's furnished snapshots show NSOPW still Processing, and the 290 count is I&B preliminary use from that in-process component"
   ],
   "documents": [
+    {
+      "path": "/documents/matter-38/edca/E.D. Cal. Intake Packet (print copy) - Ngwa Nforbi v. Swift (Sep 15 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-38/edca/JS 44 Civil Cover Sheet - Ngwa Nforbi v. Swift Transportation Co. of Arizona LLC (E.D. Cal.) (Sep 15 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-38/edca/AO 239 IFP Application - Ngwa Nforbi v. Swift Transportation Co. of Arizona LLC (E.D. Cal.) (Sep 15 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-38/edca/AO 440 Summons - Swift Transportation Co. of Arizona LLC (E.D. Cal.) (Sep 15 2026).pdf",
+      "filed": false
+    },
     {
       "path": "/documents/matter-38/Filing Packet - Ngwa Nforbi v Swift Transportation Co of Arizona LLC (Sep 8 2026).pdf",
       "filed": false
