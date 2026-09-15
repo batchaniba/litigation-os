@@ -44,6 +44,8 @@ Plaintiff BRENDAN NGWA NFORBI, appearing in propria persona, alleges against Def
 
 12. Venue is proper in the Eastern District of California under 28 U.S.C. section 1391(b)(2) because a substantial part of the events occurred in Lodi, San Joaquin County, California.
 
+12A. Plaintiff has Article III standing. His injury is concrete and particularized and is not a bare procedural violation. AT&T's conduct caused Plaintiff the loss of the accepted Lodi Retail Sales Consultant position and its compensation at $24.95 per hour, a tangible economic injury. Plaintiff also lost the pre-adverse review-and-response opportunity protected by 15 U.S.C. section 1681b(b)(3)(A). Had AT&T furnished the report and Summary of Rights before acting, Plaintiff could have identified and challenged any California-registry source before the employment decision became final. See *TransUnion LLC v. Ramirez*, 594 U.S. 413 (2021). These injuries are fairly traceable to the conduct alleged and redressable by the relief sought.
+
 13. Under Eastern District of California Local Rule 120(d), civil actions arising in San Joaquin County are commenced in the Sacramento Division.
 
 ## PARTIES
@@ -150,13 +152,13 @@ Plaintiff BRENDAN NGWA NFORBI, appearing in propria persona, alleges against Def
 
 54. Under 15 U.S.C. section 1681b(b)(3)(A), before taking adverse action based in whole or in part on an employment consumer report, the person intending to take the adverse action must provide the consumer (i) a copy of the report and (ii) a written description of the consumer's rights under the FCRA.
 
-55. On information and belief, AT&T's rescission was based in whole or in part on the First Advantage report or screening process.
+55. On information and belief, AT&T's rescission was based in whole or in part on a consumer report furnished by First Advantage.
 
 56. AT&T did not provide the report or the written Summary of Rights before the 12:23 p.m. adverse action.
 
 57. AT&T therefore violated section 1681b(b)(3)(A). This count is timely under 15 U.S.C. section 1681p. The violation occurred on May 28, 2026. This count does not plead a delayed-discovery date.
 
-58. AT&T's noncompliance was negligent within the meaning of 15 U.S.C. section 1681o and, on proof, willful within the meaning of section 1681n. Willfulness is plausibly supported by AT&T's own 10:19 a.m. First Advantage task, which referenced FCRA disclosure and authorization the same morning AT&T rescinded the offer without the report or rights summary. Plaintiff does not presently plead a claim under section 1681b(b)(2)(A). Plaintiff pleads negligence and willfulness in the alternative.
+58. AT&T's noncompliance was negligent within the meaning of 15 U.S.C. section 1681o and, on proof, willful within the meaning of section 1681n. Willfulness includes reckless disregard of the FCRA's requirements. See *Safeco Ins. Co. of America v. Burr*, 551 U.S. 47 (2007). AT&T's own First Advantage workflow referenced FCRA disclosure and authorization immediately before the alleged adverse action, supporting an inference that AT&T knew it was administering an employment consumer-report process. Plaintiff pleads negligence and willfulness in the alternative and does not presently assert a section 1681b(b)(2)(A) claim.
 
 59. As a direct result, Plaintiff lost the accepted Lodi employment and the statutory opportunity to review and respond to the report before the decision. If willfulness is proven, Plaintiff also seeks statutory and punitive damages authorized by section 1681n.
 
@@ -180,7 +182,7 @@ Plaintiff BRENDAN NGWA NFORBI, appearing in propria persona, alleges against Def
 
 ### Unauthorized Employment Use of Registry Information / Cal. Penal Code section 290.46(j)(2)(E) and (j)(4)(A) / Against AT&T Mobility Services LLC
 
-66. Plaintiff realleges paragraphs 1 through 51. This count is a liability created by statute. It is timely under Code of Civil Procedure section 338(a) from the May 28, 2026 employment use. Three years from May 28, 2026 is May 28, 2029. This count does not plead a delayed-discovery date.
+66. Plaintiff realleges paragraphs 1 through 51. The alleged employment use occurred on May 28, 2026. This action is timely under any potentially applicable one-year or three-year California limitations period. Plaintiff therefore need not ask the Court at the pleading stage to choose between Code of Civil Procedure sections 340(a) and 338(a), and he does not rely on delayed discovery for this count.
 
 67. Penal Code section 290.46(j)(2)(E) prohibits use of information disclosed pursuant to section 290.46 for purposes relating to employment except as authorized by paragraph (1) or another provision of law.
 
@@ -189,6 +191,8 @@ Plaintiff BRENDAN NGWA NFORBI, appearing in propria persona, alleges against Def
 69. Plaintiff alleges that the registry information was a substantial factor in AT&T's decision to rescind the accepted offer. The factual basis includes the two-hour sequence after the First Advantage order, the already-closed Spanish-assessment window, the official offer that did not list Spanish as a contingency, Plaintiff's contemporaneous California registry listing, First Advantage's demonstrated reporting of that same California registry information in other employment screens of Plaintiff, and the absence of any primary language-score document in the communications to Plaintiff.
 
 70. The pleaded use was not authorized by section 290.46(j)(1), and Plaintiff is unaware of another law authorizing AT&T to use information disclosed pursuant to section 290.46 for this retail-sales hiring decision.
+
+70A. *Lerma v. Amazon.com Services, LLC*, No. 8:22-cv-01727 (C.D. Cal.), does not resolve the source question on the present pleadings. In *Lerma*, the transaction-specific background report was before the court and showed ordinary court-record sourcing and no sex-offender-registry hit. Here, AT&T's transaction-specific report is not presently before Plaintiff. General public conviction records do not establish what source First Advantage used in AT&T's report. If the AT&T-specific report is properly considered and contradicts Plaintiff's information-and-belief allegation, the claim must conform to that document; absent that report, source remains a factual issue.
 
 71. AT&T thereby violated section 290.46(j)(2)(E). Plaintiff seeks the civil remedies authorized by section 290.46(j)(4)(A), without duplicative recovery. Plaintiff does not presently seek preventive relief under section 290.46(j)(4)(B).
 
