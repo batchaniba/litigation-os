@@ -1,6 +1,77 @@
 [
   {
     "date": "Sep. 14, 2026",
+    "event": "FIRST ADVANTAGE ORDER LIVE — Profile Advantage Order ID WPS-361214148 (portal name Brendan Ngwanforbi). As of ~10:20 a.m. PDT: Completed — MVR; Federal Felony And Misdemeanor; PRICPGS; FADV National Criminal File; Social Security Verification. In Progress — Felony Including Misdemeanor; PRINSOS (FA national sex-offender search; the 25/26 NSOR analogue). Portal will not display the report until the order completes. A green check is not a result and is not a registry hit. Download the instant it closes — the FedEx/UPS portal links expired.",
+    "matters": [
+      40,
+      31
+    ],
+    "type": "event",
+    "upcoming": false,
+    "actor": "opposing",
+    "source_type": "manual",
+    "confidence": "high",
+    "verified_at": "2026-09-14",
+    "source": "/documents/matter-40/First Advantage Profile Advantage Order WPS-361214148 - Status 1 (Sep 14 2026).jpg"
+  },
+  {
+    "date": "Sep. 14, 2026",
+    "event": "SOS BIZFILE — California Secretary of State search 'TaskUs' (11:12 a.m.) returned three hits, no TaskUs, Inc. TASKUS HOLDINGS, INC. (3828721): Active Delaware out-of-state stock corporation, CA filing Sep. 23, 2015, agent C T Corporation System. TASKUS USA, LLC (201729810166): Active Delaware LLC, CA filing Oct. 17, 2017, agent C T Corporation System. TASKUS, LLC (200826810086): Converted Out California LLC formed Sep. 22, 2008, last listed agent Bryce Maddock. The two Active drawers show standing SOS/FTB/Agent/VCFCF Good and principal/mailing 1650 Independence, 100, New Braunfels — the same Texas address as the offer letter. If this ripens: keep TaskUs, LLC as the named employer; serve USA LLC and Holdings on CT Corp; do not serve Maddock as if the CA LLC were still active. Pull conversion documents and a Delaware search for the surviving TaskUs, LLC / TaskUs, Inc.",
+    "matters": [
+      40
+    ],
+    "type": "event",
+    "upcoming": false,
+    "actor": "you",
+    "source_type": "manual",
+    "confidence": "high",
+    "verified_at": "2026-09-14",
+    "source": "/documents/matter-40/TaskUs - CA SOS BIZFILE Search Results (Sep 14 2026).pdf"
+  },
+  {
+    "date": "Sep. 14, 2026",
+    "event": "START DATE ON HOLD — TA Ops US (taops.us@taskus.com, cc Liz Ramirez) emailed at 11:24 a.m.: 'Important Update Regarding Your Application with TaskUs.' Places the Sep. 23 start on a 'standard administrative hold while final onboarding reviews are completed, including the processing of your background screening report.' Application 'remains in a pending status.' Directs him to monitor First Advantage (Customer Support 800-888-5773). Not a pre-adverse notice and not a denial. First employer-side writing that the FA report is holding the start — sent while Order WPS-361214148 was still open (PRINSOS In Progress as of ~10:20 a.m.). The offer had said employment may begin while screening is pending. Do not skip the Sep. 17 saliva collection; they did not cancel it. Sep. 23 is no longer a show-up date.",
+    "matters": [
+      40
+    ],
+    "type": "event",
+    "upcoming": false,
+    "actor": "opposing",
+    "source_type": "manual",
+    "confidence": "high",
+    "verified_at": "2026-09-14",
+    "source": "/documents/matter-40/TaskUs TA Ops - Start Date Administrative Hold (Sep 14 2026).pdf"
+  },
+  {
+    "date": "Sep. 14, 2026",
+    "event": "CAPTION REORDERED — Matter 40 lead defendant is Uber Technologies, Inc. (d/b/a Uber). Caption is Brendan Ngwa Nforbi v. Uber Technologies, Inc. Uber AV remains the WorkDay campaign title (R_2608_10812 / C261051599), not a legal entity. Theory is end-client / joint employer (Matter 27 RK Logistics pattern). The 2810.5 still names TaskUs, LLC as hiring employer and does not list Uber as the entity for whom the work is performed. TaskUs entities stay on the defendant list as staffing / offer-letter employers. Pull Uber CA SOS before service.",
+    "matters": [
+      40
+    ],
+    "type": "event",
+    "upcoming": false,
+    "actor": "you",
+    "source_type": "manual",
+    "confidence": "high",
+    "verified_at": "2026-09-14",
+    "source": "/documents/matter-40/Review Your Offer Letter - Uber AV Teammate (Sep 14 2026).pdf"
+  },
+  {
+    "date": "Sep. 23, 2026",
+    "event": "START ON HOLD — The Sep. 23 anticipated TaskUs start (orientation 1631 N 1st Street, Suite 200, San Jose, Sep. 23–25) is no longer operative. TA Ops US placed it on administrative hold Sep. 14, 11:24 a.m. pending the First Advantage background screening report. Do not treat Sep. 23 as a show-up date. Watch for a new start date, a First Advantage pre-adverse/adverse notice, or a rescission citing NSOPW, Megan's Law, or SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY.",
+    "matters": [
+      40
+    ],
+    "type": "event",
+    "upcoming": false,
+    "actor": "opposing",
+    "source_type": "manual",
+    "confidence": "high",
+    "verified_at": "2026-09-14",
+    "source": "/documents/matter-40/TaskUs TA Ops - Start Date Administrative Hold (Sep 14 2026).pdf"
+  },
+  {
+    "date": "Sep. 14, 2026",
     "event": "FILED — Dkt. 29 ORDER REASSIGNING CASE in Newanforbi v. Serrato (now 3:26-cv-05953-CRB). Reassigned via proportionate, random and blind system per General Order No. 44 to Hon. Charles R. Breyer, U.S. District Judge (San Francisco); Mag. Judge Ajay S. Krishnan no longer assigned. All future filings bear updated initials; all hearing and trial dates vacated; existing briefing schedules unchanged; motions must be renoticed before Judge Breyer. Judge Breyer participates in the Cameras in the Courtroom Pilot Project (GO 65). Text-only entry; no document associated.",
     "matters": [
       24
@@ -274,7 +345,7 @@
   },
   {
     "date": "Sep. 14, 2026",
-    "event": "SATISFIED \u2014 Dkt. 14 filed Sep. 14, 2026. UPS reply deadline (extended) \u2014 Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). Dkt. 12 (Sep. 10) grants Dkt. 11; Defendant's reply brief on the live Dkt. 9 MTD shall be filed by September 14, 2026. Supersedes the L.R. 230(d) Sep. 8 clock. Hearing remains Oct. 7, 2026, 10:00 a.m., Courtroom 24 (CKD), Judge Delaney. This is UPS's clock.",
+    "event": "SATISFIED — Dkt. 14 filed Sep. 14, 2026. UPS reply deadline (extended) — Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). Dkt. 12 (Sep. 10) grants Dkt. 11; Defendant's reply brief on the live Dkt. 9 MTD shall be filed by September 14, 2026. Supersedes the L.R. 230(d) Sep. 8 clock. Hearing remains Oct. 7, 2026, 10:00 a.m., Courtroom 24 (CKD), Judge Delaney. This is UPS's clock.",
     "matters": [
       26
     ],
@@ -8156,7 +8227,7 @@
   },
   {
     "date": "Sep. 14, 2026",
-    "event": "FILED \u2014 Dkt. 14 Defendant United Parcel Service, Inc.'s Reply in Support of Its Rule 12(b)(6) Motion to Dismiss (ECF No. 9) in Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). 6 pages plus certificate of service, signed by Vanessa W. Mott; filed on the Dkt. 12 extended deadline, so MTD briefing is closed. Core reframe: Exhibit A searched the National Sex Offender Registry ('Record Found'); the California-registry notation is characterized as incidental and the California registry as 'never searched' \u2014 Exhibit A's own 'SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY' sentence is not quoted or explained. Invokes the Lab. Code \u00a7432.7(n) safe harbor and asserts Gov. Code \u00a712952 compliance for the 'obtained pursuant to procedures otherwise provided for under federal, state, or local law' carve-out. Argues complaint \u00b618 and the Exhibit B p.27 'I agree' clickwrap concede ICRAA compliance, and collapses the ICRAA claim into the \u00a7290.46 sourcing dispute. Sole authority cited is Crownholm v. Moore (12(b)(6) standard) \u2014 no Donaleski, Pastrana, Mendoza, Williams, Gilberg, or Walker. Seeks dismissal with prejudice. Oct. 7, 2026 hearing (10:00 a.m., Courtroom 24, CKD, Judge Delaney) unchanged.",
+    "event": "FILED — Dkt. 14 Defendant United Parcel Service, Inc.'s Reply in Support of Its Rule 12(b)(6) Motion to Dismiss (ECF No. 9) in Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). 6 pages plus certificate of service, signed by Vanessa W. Mott; filed on the Dkt. 12 extended deadline, so MTD briefing is closed. Core reframe: Exhibit A searched the National Sex Offender Registry ('Record Found'); the California-registry notation is characterized as incidental and the California registry as 'never searched' — Exhibit A's own 'SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY' sentence is not quoted or explained. Invokes the Lab. Code §432.7(n) safe harbor and asserts Gov. Code §12952 compliance for the 'obtained pursuant to procedures otherwise provided for under federal, state, or local law' carve-out. Argues complaint ¶18 and the Exhibit B p.27 'I agree' clickwrap concede ICRAA compliance, and collapses the ICRAA claim into the §290.46 sourcing dispute. Sole authority cited is Crownholm v. Moore (12(b)(6) standard) — no Donaleski, Pastrana, Mendoza, Williams, Gilberg, or Walker. Seeks dismissal with prejudice. Oct. 7, 2026 hearing (10:00 a.m., Courtroom 24, CKD, Judge Delaney) unchanged.",
     "matters": [
       26
     ],

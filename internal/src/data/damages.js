@@ -1002,8 +1002,8 @@ const matter_damages_raw = [
   },
   {
     number: 40,
-    claims: "PC §290.46(j) / ICRAA / FCRA / UCL — TaskUs, LLC offer (prospective)",
-    risk: "Pre-dispute monitoring file: TaskUs, LLC offer signed Sep. 14, 2026. First Advantage Profile Advantage background check invited the same morning (same CRA as Matters 25/26; expected report format similar if not identical). Separate saliva drug test ordered for TaskUs Holdings, Inc. No report furnished yet, no adverse action. MAA signed. Ripens only if a non-hire or rescission turns on registry information.",
+    claims: "PC §290.46(j) / ICRAA / FCRA / UCL — Uber Technologies, Inc. (lead) / TaskUs staffing (prospective)",
+    risk: "Pre-dispute monitoring file. Caption: Brendan Ngwa Nforbi v. Uber Technologies, Inc. TaskUs, LLC offer signed Sep. 14, 2026; same-day TA Ops hold of the Sep. 23 start pending the FA report — not a denial, not FCRA pre-adverse. Order WPS-361214148 in progress (PRINSOS still running). Saliva still expires Sep. 17. Damages $0 until adverse action.",
     settlement_note: "No valuation — no adverse action. Prospective statutory framework only. Do not treat the MAA as a no-arbitration file.",
     conservative: 0,
     moderate: 0,
