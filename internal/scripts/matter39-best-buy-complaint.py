@@ -2,18 +2,18 @@
 # -*- coding: utf-8 -*-
 """Matter 39 — verified complaint, Best Buy Co., Inc. / First Advantage.
 
-Historical San Joaquin work product. The September 8, 2026 packet was never
-clerk-filed. The live draft is the E.D. Cal. generator:
-
-    python3 internal/scripts/matter39-edca-complaint.py
-
-This state complaint stands on Best Buy's own file. Do not weave other
-employers' reports as Best Buy's report.
+LOCKED after the September 8, 2026 execute. Do not rewrite pleading prose
+unless a new Best Buy or First Advantage document appears. This complaint
+stands on Best Buy's own file. Do not weave other employers' reports.
 
 San Joaquin Superior Court. Penal Code § 290.46(j) is the load-bearing count.
 The October 17, 2023 warehouse offer, background authorization, and First
 Advantage drug-test order are in the file. The employment decision and the
 background report are not. Registry use is information and belief.
+
+Default output is unsigned. On or after September 8, 2026, rerun with
+``--execute`` only after Plaintiff confirms the decision, the notices, and
+whether he signed the offer or completed the drug screen.
 
     python3 internal/scripts/matter39-best-buy-complaint.py
     python3 internal/scripts/matter39-best-buy-complaint.py --execute
