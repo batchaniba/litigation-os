@@ -1,10 +1,18 @@
 # Stipulation Defense — Plaintiff-First Standing Policy
 
-Effective September 9, 2026. Applies to every current and future matter in the Interactive Litigation Portfolio, in every forum, and to drafting, reviewing, redlining, recommending, and recording any stipulation or agreement with defense.
+Effective September 9, 2026. Applies to every current and future matter in the Interactive Litigation Portfolio, in every forum, when the work is actually a stipulation or defense agreement.
+
+## Scope and discretion
+
+This policy governs drafting, reviewing, redlining, recommending, and recording a stipulation, extension, stay, continuance, or proposed order that would move a defense clock, waive a right, expand their relief, or put Plaintiff's signature on counsel's paper.
+
+It does not govern ordinary Plaintiff papers: status reports, oppositions, complaints, hearing notes, discovery plans, or answering a court question (for example, whether he will use the assigned magistrate as settlement judge). Do not import this voice into those papers. Do not recite "this is not a stipulation," "counsel may not affix his signature," "does not extend any defense clock," or "date certain / does not reset from the conference" unless the paper is the deal itself.
+
+Use discretion among actual stipulations. Be firm when they ask for extra time, extra parties, a stay, a waiver, a floating reset, or his `/s/` on their draft. Do not run the full counterpart, audit, and covering-email machine on every "can we stipulate." Authenticity of their own records, a name correction he already wants, advancing a hearing onto his live calendar, and a yes to the assigned magistrate as settlement judge are ordinary. Match the temperature to the ask. If he has already agreed a number, write that number without a lecture.
 
 ## Governing instruction
 
-Draft every stipulation in the terms most favorable to Plaintiff that the applicable procedure and record support. Optimize timing, substantive rights, procedural position, enforceability, and litigation leverage. Defense's proposed wording is a proposal to scrutinize, not the default template. This policy continues until Plaintiff changes it; a case-specific exception does not change the portfolio-wide default.
+When this policy applies, draft the stipulation in the terms most favorable to Plaintiff that the applicable procedure and record support. Optimize timing, substantive rights, procedural position, enforceability, and litigation leverage. Defense's proposed wording is a proposal to scrutinize, not the default template. This policy continues until Plaintiff changes it; a case-specific exception does not change the portfolio-wide default.
 
 ## Timelines
 

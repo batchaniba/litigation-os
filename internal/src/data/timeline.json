@@ -1,6 +1,35 @@
 [
   {
     "date": "Sep. 14, 2026",
+    "event": "DRAFTED (unfiled) — Plaintiff's Status Report in Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR), dated September 14, 2026, executed in Milpitas. Covers every Dkt. 8 topic: service complete (July 24 Sheriff / CT); joinder reserved as to First Advantage; amendment cutoff December 18, 2026; diversity / no remand; Rule 26(f) plan with disclosures October 8, 2026, fact cutoff February 12, 2027, experts March 12 / April 9 / April 23, 2027; related case UPS 2:26-cv-02847 disclosed, no consolidation; settlement conference requested before Judge Riordan the week of November 2, 2026; Plaintiff stipulates to the assigned magistrate as settlement judge, not to Judge Drozd if Drozd will try the case. Due September 24. Serve Kray by mail from San Jose. Appear October 8 Zoom. Do not treat as filed.",
+    "matters": [
+      25
+    ],
+    "type": "event",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-25/Plaintiff's Status Report (E.D. Cal. 2-26-cv-02881) (Sep 14 2026).pdf",
+    "source_type": "portfolio",
+    "confidence": "high",
+    "verified_at": "2026-09-14"
+  },
+  {
+    "date": "Sep. 14, 2026",
+    "event": "UPS reply deadline (extended) — Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). Dkt. 12 (Sep. 10) grants Dkt. 11; Defendant's reply brief on the live Dkt. 9 MTD shall be filed by September 14, 2026. Supersedes the L.R. 230(d) Sep. 8 clock. Hearing remains Oct. 7, 2026, 10:00 a.m., Courtroom 24 (CKD), Judge Delaney. This is UPS's clock.",
+    "matters": [
+      26
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "opposing",
+    "source": "/documents/matter-26/PACER Docket Report - E.D. Cal. 2-26-cv-02847-DAD-CKD (Sep 10 2026).pdf",
+    "source_type": "pacer",
+    "confidence": "high",
+    "verified_at": "2026-09-11"
+  },
+  {
+    "date": "Sep. 14, 2026",
     "event": "FIRST ADVANTAGE ORDER LIVE — Profile Advantage Order ID WPS-361214148 (portal name Brendan Ngwanforbi). As of ~10:20 a.m. PDT: Completed — MVR; Federal Felony And Misdemeanor; PRICPGS; FADV National Criminal File; Social Security Verification. In Progress — Felony Including Misdemeanor; PRINSOS (FA national sex-offender search; the 25/26 NSOR analogue). Portal will not display the report until the order completes. A green check is not a result and is not a registry hit. Download the instant it closes — the FedEx/UPS portal links expired.",
     "matters": [
       40,

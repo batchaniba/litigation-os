@@ -1,6 +1,8 @@
 # Plaintiff-protective clause library
 
-Drop-in language. Adapt the bracketed terms. Keep the operative words.
+Drop-in language for stipulation papers only. Adapt the bracketed terms.
+Keep the operative words. Do not paste these recitals into status reports,
+oppositions, or other ordinary Plaintiff filings.
 Canonical skill: `.claude/skills/stipulation-defense/SKILL.md`.
 
 ## 1. Continue the event only

@@ -1,5 +1,8 @@
 # Stipulation — copy this, fill the brackets, delete unused clauses
 
+Use only when the work is the deal paper. Not for status reports or
+other ordinary Plaintiff filings.
+
 Matter [N] — [short caption] ([court] No. [case number]). [extension / stay / continue event only / advance hearing / other]. [not yet signed / signed — counterpart only / filed].
 
 Canonical blank: `.claude/skills/stipulation-defense/TEMPLATE.md`
