@@ -535,13 +535,19 @@ CONTENT = [
     ),
     (
         "PARA",
-        "41. Alternative explanations — a safety incident, a no-show, a failed "
-        "drug screen, a lawful criminal-history adjudication under Labor Code "
-        "section 432.7 or another authorizing statute, or a business "
-        "slowdown — can be tested against a discrete set of records. Plaintiff "
-        "will seek the personnel file, time and pay records, background-check "
-        "order and report, adjudication notes, and communications of the "
-        "decision-maker.",
+        "41. The decision is susceptible to proof against a discrete and "
+        "identifiable set of records. Any lawful alternative ground Home Depot "
+        "may later assert — a safety incident, a no-show, a failed drug "
+        "screen, a criminal-history adjudication under Labor Code section "
+        "432.7 or another authorizing statute, or a business slowdown — would "
+        "appear in that record if it existed, and none was communicated to "
+        "Plaintiff at the time. Plaintiff will seek the personnel file, time "
+        "and pay records, background-check order and report, adjudication "
+        "notes, and communications of the decision-maker. That an employer "
+        "could, in the abstract, decline an applicant for a lawful reason does "
+        "not defeat the well-pleaded inference, drawn from the facts alleged "
+        "and taken as true on demurrer, that this decision rested on "
+        "information disclosed pursuant to section 290.46.",
     ),
     (
         "PARA",
@@ -563,15 +569,38 @@ CONTENT = [
         "pleading-stage dismissal by withholding the one document that would "
         "confirm or refute the inference."
     ),
+    (
+        "PARA",
+        "42A. Nor can a demurrer be rescued by a request for judicial notice of "
+        "Plaintiff's public court or conviction records. Judicial notice of the "
+        "existence of such records establishes neither the source nor the "
+        "contents of Home Depot's unproduced report, and the truth of matters "
+        "asserted within judicially noticed records is not admitted by their "
+        "notice. Which source Home Depot's report in fact drew upon — ordinary "
+        "court records or information disclosed pursuant to section 290.46 — is "
+        "a fact outside the four corners of this Complaint and outside anything "
+        "a court may judicially notice. That a lawful alternative source of "
+        "criminal-history information may exist in the abstract does not "
+        "establish that Home Depot used one; subdivision (j)(2)(E) is violated "
+        "by the use that in fact occurred, which the report in Defendants' "
+        "possession will show.",
+    ),
     ("SUBHEAD", "D. Knowledge, Concealment, and Harm"),
     (
         "PARA",
-        "43. Home Depot knew or should have known that employment use of "
-        "Megan's Law information is prohibited. The registry website displays "
-        "that warning. Home Depot is a sophisticated employer with dedicated "
-        "background-check and legal functions. On information and belief, its "
-        "vendor contracts and adjudication guides address or should address "
-        "California registry restrictions.",
+        "43. Home Depot knew, or acting with conscious disregard should have "
+        "known, that using information disclosed pursuant to section 290.46 for "
+        "a purpose relating to employment is prohibited. The California Megan's "
+        "Law website displays that express prohibition on its face to every "
+        "user who accesses it. Home Depot is a large and sophisticated employer "
+        "that maintains dedicated background-check, adjudication, and legal "
+        "functions and screens applicants at scale under standardized "
+        "procedures. On information and belief, its vendor contracts and "
+        "adjudication guidelines address, or in the exercise of ordinary care "
+        "should address, California's registry-use restrictions. On the facts "
+        "alleged, the violation was willful and knowing, or at minimum in "
+        "reckless disregard of Plaintiff's rights, within the meaning of Penal "
+        "Code section 290.46(j)(4)(A).",
     ),
     (
         "PARA",
