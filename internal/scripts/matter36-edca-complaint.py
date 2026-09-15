@@ -209,6 +209,20 @@ CONTENT = [
     ),
     (
         "PARA",
+        "12A. Plaintiff has Article III standing. His injury is concrete and "
+        "particularized and is not a bare procedural violation. AT&T's conduct "
+        "caused Plaintiff the loss of the accepted Lodi Retail Sales Consultant "
+        "position and its compensation at $24.95 per hour, a tangible economic "
+        "injury. Plaintiff also lost the pre-adverse review-and-response "
+        "opportunity protected by 15 U.S.C. section 1681b(b)(3)(A). Had AT&T "
+        "furnished the report and Summary of Rights before acting, Plaintiff "
+        "could have identified and challenged any California-registry source "
+        "before the employment decision became final. See TransUnion LLC v. "
+        "Ramirez, 594 U.S. 413 (2021). These injuries are fairly traceable to "
+        "the conduct alleged and redressable by the relief sought.",
+    ),
+    (
+        "PARA",
         "13. Under Eastern District of California Local Rule 120(d), civil "
         "actions arising in San Joaquin County are commenced in the Sacramento "
         "Division.",
@@ -547,12 +561,14 @@ CONTENT = [
         "PARA",
         "58. AT&T's noncompliance was negligent within the meaning of "
         "15 U.S.C. section 1681o and, on proof, willful within the meaning of "
-        "section 1681n. Willfulness is plausibly supported by AT&T's own "
-        "10:19 a.m. First Advantage task, which referenced FCRA disclosure "
-        "and authorization the same morning AT&T rescinded the offer without "
-        "the report or rights summary. Plaintiff does not presently plead a "
-        "claim under section 1681b(b)(2)(A). Plaintiff pleads negligence and "
-        "willfulness in the alternative.",
+        "section 1681n. Willfulness includes reckless disregard of the FCRA's "
+        "requirements. See Safeco Ins. Co. of America v. Burr, 551 U.S. 47 "
+        "(2007). AT&T's own First Advantage workflow referenced FCRA disclosure "
+        "and authorization immediately before the alleged adverse action, "
+        "supporting an inference that AT&T knew it was administering an "
+        "employment consumer-report process. Plaintiff pleads negligence and "
+        "willfulness in the alternative and does not presently assert a "
+        "section 1681b(b)(2)(A) claim.",
     ),
     (
         "PARA",
