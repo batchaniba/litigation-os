@@ -1,5 +1,35 @@
 [
   {
+    "date": "Sep. 14, 2026",
+    "event": "MAILED — Plaintiff's status report in Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR), required by Dkt. 8 not later than 14 days before the Oct. 8 Zoom conference (calendar due Sep. 24). Plaintiff mailed the report September 14, 2026. Not yet clerk-stamped; do not assign a docket number until PACER shows it. FedEx (Allison A. Kray) still owes its own status report by September 24. Oct. 8 Zoom is unchanged.",
+    "matters": [
+      25
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-25/Dkt 08 - Order Setting Status Conference (Filed Sep 8 2026).pdf",
+    "source_type": "court_order",
+    "confidence": "high",
+    "verified_at": "2026-09-14"
+  },
+  {
+    "date": "Sep. 14, 2026",
+    "event": "FILED — Rule 4(l) return for Santiago Meza-Gonzalez in Nforbi v. Meza-Gonzalez et al. (N.D. Cal. 4:26-cv-08271-ASK): Daniel Fischer / Run With It Declaration of Service and Declaration of Reasonable Diligence (order 15645547). Substitute service Aug. 27, 2026, 1:30 p.m., Kim S. - H.R. at CHP Modesto Area, 4030 Kiernan Ave. Plaintiff reports the return was filed September 14, 2026. Docket number unconfirmed until PACER. CCP §415.20 mailing follow-up is still not on the face of the return — do not start Meza's FRCP 12 clock from Aug. 27. Copy of the filed return to DAG Li is still unsent.",
+    "matters": [
+      32
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "you",
+    "source": "/documents/matter-32/ndcal/Run With It - Declaration of Service and Diligence - Meza-Gonzalez (Order 15645547, Signed Sep 3 2026).pdf",
+    "source_type": "court_order",
+    "confidence": "high",
+    "verified_at": "2026-09-14"
+  },
+  {
     "date": "Sep. 12, 2026",
     "event": "DRAFT (unsent) \u2014 Final early global settlement demand in Newanforbi v. Randstad US, LLC et al. (26CV199902): $40,000.00 to resolve all claims against both named defendants and Does. Wire within seven business days of written joint acceptance. Expires 5:00 p.m. PT Sept. 18, 2026, and may be accepted after a filing. The RK Logistics Group, Inc. remains due Sept. 14; Randstad US, LLC remains due Sept. 15. This draft does not extend either clock and is not a CIV-100 hold. File-if-silent stays Sept. 15 (RK) / Sept. 16 (Randstad) if eCourt is empty. Do not send the Sept. 11 $40k text that gifted both defendants through Sept. 18. Generator: internal/scripts/matter27-global-demand-sep12.py. Evid. Code \u00a71152 / FRE 408.",
     "matters": [
@@ -318,7 +348,7 @@
   },
   {
     "date": "Sep. 24, 2026",
-    "event": "DEADLINE \u2014 Status reports due in Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR), not later than 14 days before the Oct. 8 Zoom conference (Dkt. 8). Cover service, joinder, amendment, jurisdiction/venue, anticipated motions, a Rule 26(f) discovery plan including expert disclosure, cutoffs and trial estimate, related cases, settlement conference, and whether the parties will stipulate to the assigned magistrate as settlement judge. Both parties file. FedEx counsel: Allison A. Kray (allison.kray@fedex.com).",
+    "event": "WATCH \u2014 FedEx status reports in Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR). Dkt. 8: not later than 14 days before the Oct. 8 Zoom (Sep. 24). Plaintiff mailed his report September 14; confirm clerk stamp / docket number on PACER. Defendant Federal Express Corporation (Allison A. Kray, allison.kray@fedex.com) still must file. Both-party obligation is not complete until FedEx's report is on the docket. Oct. 8 Zoom unchanged.",
     "matters": [
       25
     ],
@@ -1150,7 +1180,7 @@
   },
   {
     "date": "Sep. 8, 2026",
-    "event": "RECEIVED \u2014 signed Run With It Declaration of Service and Declaration of Reasonable Diligence (order 15645547; Daniel Fischer, independent contractor, PO Box 691237, Stockton, CA 95269; fee $134.00) for Santiago Meza-Gonzalez (CHP #023295), individually, Nforbi v. Meza-Gonzalez et al. (3:26-cv-08271-PHK / 4:26-cv-08271-ASK). Substitute service Aug. 27, 2026, 1:30 p.m., at CHP Modesto Area, 4030 Kiernan Ave, Modesto, CA 95356, left with Kim S. - H.R. after unsuccessful attempts Aug. 25 (4:00 p.m.) and Aug. 26 (10:15 a.m.). Packet: summons, Dkt. 5 FAC, Notice Identifying Operative FAC, Dkt. 4 CMC/ADR order. Signed Sep. 3, 2026. Unfiled Rule 4(l) return. CCP \u00a7415.20 mailing follow-up is not on the face of the return \u2014 do not start Meza's FRCP 12 clock from Aug. 27 until mailing is confirmed or Li accepts service.",
+    "event": "RECEIVED \u2014 signed Run With It Declaration of Service and Declaration of Reasonable Diligence (order 15645547; Daniel Fischer, independent contractor, PO Box 691237, Stockton, CA 95269; fee $134.00) for Santiago Meza-Gonzalez (CHP #023295), individually, Nforbi v. Meza-Gonzalez et al. (3:26-cv-08271-PHK / 4:26-cv-08271-ASK). Substitute service Aug. 27, 2026, 1:30 p.m., at CHP Modesto Area, 4030 Kiernan Ave, Modesto, CA 95356, left with Kim S. - H.R. after unsuccessful attempts Aug. 25 (4:00 p.m.) and Aug. 26 (10:15 a.m.). Packet: summons, Dkt. 5 FAC, Notice Identifying Operative FAC, Dkt. 4 CMC/ADR order. Signed Sep. 3, 2026. Plaintiff reports the Rule 4(l) return was filed September 14, 2026 (docket number unconfirmed until PACER). CCP \u00a7415.20 mailing follow-up is not on the face of the return \u2014 do not start Meza's FRCP 12 clock from Aug. 27 until mailing is confirmed or Li accepts service.",
     "matters": [
       32
     ],
@@ -1165,7 +1195,7 @@
   },
   {
     "date": "Sep. 8, 2026",
-    "event": "FILE \u2014 Rule 4(l) return for Santiago Meza-Gonzalez (Daniel Fischer Declaration of Service + Diligence, Run With It order 15645547). Mail or e-file as Summons Returned Executed. Do not wait on Dkt. 13. If ECF is still not live, mail the original to the N.D. Cal. San Jose clerk the same way Dkt. 13 went in. Copy DAG Li. CCP \u00a7415.20 mailing follow-up is not on the face of this return.",
+    "event": "SATISFIED \u2014 Rule 4(l) return for Santiago Meza-Gonzalez (Daniel Fischer Declaration of Service + Diligence, Run With It order 15645547). Plaintiff reports it was filed September 14, 2026. Confirm clerk stamp / docket number on PACER. Copy DAG Li remains unsent. CCP \u00a7415.20 mailing follow-up is not on the face of this return.",
     "matters": [
       32
     ],
@@ -1179,7 +1209,7 @@
   },
   {
     "date": "Sep. 8, 2026",
-    "event": "STILL UNSENT (follow-up) \u2014 Revised Li FAC-service email attaching the signed Fischer / Run With It Declaration of Service and Diligence (order 15645547) and naming Kim S. - H.R. as the person who accepted at CHP Modesto Area on Aug. 27. The September 3, 11:48 a.m. FAC-service email already went (without the signed return). Send this revision when the Rule 4(l) return is filed, or with it. Do not put GitHub raws in the e-mail. Do not treat CCP \u00a7415.20 as complete until mailing is confirmed. Availability for this week's service call is a separate reply on the Serrato thread.",
+    "event": "STILL UNSENT (follow-up) \u2014 Revised Li FAC-service email attaching the signed Fischer / Run With It Declaration of Service and Diligence (order 15645547) and naming Kim S. - H.R. as the person who accepted at CHP Modesto Area on Aug. 27. The September 3, 11:48 a.m. FAC-service email already went (without the signed return). The Rule 4(l) return is now filed as of September 14, 2026 \u2014 this revision is ripe. Do not put GitHub raws in the e-mail. Do not treat CCP \u00a7415.20 as complete until mailing is confirmed.",
     "matters": [
       32
     ],
@@ -1209,7 +1239,7 @@
   },
   {
     "date": "Sep. 3, 2026",
-    "event": "SENT \u2014 E-mail to DAG Haiyang A. Li, September 3, 2026, 11:48 a.m., reporting service of the Dkt. 5 FAC in Nforbi v. Meza-Gonzalez et al. (N.D. Cal. 4:26-cv-08271-ASK): Melano by first-class mail Aug. 21 from San Jose to CHP South Sacramento (6 Massie Court); Meza-Gonzalez substitute-served Aug. 27 at CHP Modesto Area (4030 Kiernan Ave) per Run With It order 15645547 (person apparently in charge). The 11:48 a.m. send said the signed process-server return was not yet in hand. Quoted in the Sep. 7 Serrato Gmail print. The later Fischer-return revision is a separate follow-up and remains unsent.",
+    "event": "SENT \u2014 E-mail to DAG Haiyang A. Li, September 3, 2026, 11:48 a.m., reporting service of the Dkt. 5 FAC in Nforbi v. Meza-Gonzalez et al. (N.D. Cal. 4:26-cv-08271-ASK): Melano by first-class mail Aug. 21 from San Jose to CHP South Sacramento (6 Massie Court); Meza-Gonzalez substitute-served Aug. 27 at CHP Modesto Area (4030 Kiernan Ave) per Run With It order 15645547 (person apparently in charge). The 11:48 a.m. send said the signed process-server return was not yet in hand. Quoted in the Sep. 7 Serrato Gmail print. The Fischer-return revision remains unsent even after the September 14 filing of the Rule 4(l) return.",
     "matters": [
       32
     ],
@@ -1519,7 +1549,7 @@
   },
   {
     "date": "Sep. 1, 2026",
-    "event": "FILED \u2014 Dkt. 13 / 13-1 / 13-2 / 13-3 Plaintiff's Civil L.R. 7-11 Administrative Motion for an Order Directing Deputy Attorney General Haiyang A. Li to Accept Service of Process on Behalf of Defendant Santiago Meza-Gonzalez, Nforbi v. Meza-Gonzalez et al. (N.D. Cal. 4:26-cv-08271-ASK). Packet mailed Sep. 1 from San Jose; clerk-stamped FILED / RECEIVED Sep. 3, 2026, San Jose. Do not treat as unfiled. The signed Meza Rule 4(l) return is a separate paper and is still unfiled.",
+    "event": "FILED \u2014 Dkt. 13 / 13-1 / 13-2 / 13-3 Plaintiff's Civil L.R. 7-11 Administrative Motion for an Order Directing Deputy Attorney General Haiyang A. Li to Accept Service of Process on Behalf of Defendant Santiago Meza-Gonzalez, Nforbi v. Meza-Gonzalez et al. (N.D. Cal. 4:26-cv-08271-ASK). Packet mailed Sep. 1 from San Jose; clerk-stamped FILED / RECEIVED Sep. 3, 2026, San Jose. Do not treat as unfiled. The signed Meza Rule 4(l) return is a separate paper; Plaintiff reports it was filed September 14, 2026 (docket number unconfirmed until PACER).",
     "matters": [
       32
     ],
