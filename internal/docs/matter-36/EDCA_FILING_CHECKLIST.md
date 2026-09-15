@@ -1,4 +1,4 @@
-# Matter 36 — E.D. Cal. Filing Checklist v3
+# Matter 36 — E.D. Cal. Filing Checklist v4
 
 ## Mandatory gates
 
@@ -29,10 +29,11 @@ Add only if:
 
 - [ ] Dutta: can AT&T show Spanish failure independently required rejection?
 - [ ] Report timing: was a report/result actually furnished before 12:23?
-- [ ] Lerma: does the actual AT&T report contradict California-registry sourcing?
-- [ ] Donaleski: was the relevant information independently sourced instead?
+- [ ] Source: does the actual AT&T report contradict California-registry sourcing? Distinguish *Lerma* in opposition to any RJN; do not name it in the complaint.
+- [ ] Independently sourced conviction information vs. Megan's Law website use.
 - [ ] Article III: preserve tangible job-loss injury and traceability.
-- [ ] Safeco: plead willfulness only as alternative and do not overstate knowledge before report evidence.
+- [ ] Safeco: one willfulness paragraph as a damages theory, not a count. Do not overstate knowledge before report evidence.
+- [ ] Caption: no “[REVIEW DRAFT — NOT FOR FILING]” on page one of a file-ready PDF.
 
 ## Federal packet
 

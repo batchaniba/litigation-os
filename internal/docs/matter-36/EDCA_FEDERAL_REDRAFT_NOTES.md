@@ -1,4 +1,4 @@
-# Matter 36 — E.D. Cal. Federal Redraft v3 Notes
+# Matter 36 — E.D. Cal. Federal Redraft v4 Notes
 
 ## Current architecture
 
@@ -79,15 +79,19 @@ The case asks which reasons actually drove the decision and when AT&T possessed 
 
 ## § 290.46 source
 
-Same-consumer UPS/FedEx First Advantage records support plausibility, not proof.
+Same-consumer UPS/FedEx First Advantage records support plausibility, not proof. The complaint uses one sentence of I&B. It does not attach or describe those reports as AT&T's report.
 
-Lerma is expressly addressed: if the AT&T-specific report is properly before the Court and contradicts registry sourcing, the claim must conform.
+Do **not** name *Lerma* in the complaint. Distinguish it when they file an RJN: Lerma was decided after that employer's report was in the record. This complaint says only that Plaintiff does not possess AT&T's report and does not allege its source-field wording as known fact. If the AT&T-specific report is properly before the Court and contradicts registry sourcing, the claim must conform.
 
 ## § 290.46 limitations
 
 The alleged use is May 28, 2026.
 
 A September 2026 filing is within either a one-year penalty characterization or a three-year statutory-liability characterization. There is no reason to ask the Court now to decide the unresolved characterization or to plead an artificial outside date.
+
+## Safeco
+
+Willfulness is a damages theory under § 1681n, one paragraph: AT&T's own First Advantage workflow referenced FCRA disclosure; acting without the copy is reckless disregard if that was the policy on the form. Do not write a Safeco treatise and do not plead willfulness as a count.
 
 ## Highest-value prefiling records
 

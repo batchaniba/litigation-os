@@ -13,7 +13,9 @@ The former contract / covenant / estoppel / negligent-misrepresentation counts
 are reserved pending the complete offer, at-will/arbitration terms, and
 detrimental-reliance / LTI records.
 
-Do not regenerate the superseded seven-count complaint.
+v4 signing-gate: no Lerma in the complaint; no REVIEW DRAFT banner on the caption;
+Safeco willfulness is one paragraph, not a count. Do not regenerate the superseded
+seven-count complaint.
 """
 
 raise SystemExit(
