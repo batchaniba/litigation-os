@@ -67,6 +67,8 @@ portfolio's matters before that judge.
   (Alameda County Superior Court, Dept. 20; presides over Matter 27)
 - [Charles R. Breyer — CourtListener docket audit](../internal/docs/legal-intel/judges/charles-r-breyer.md)
   (N.D. Cal. senior district judge; no portfolio matter currently assigned; Uber MDL + Newsom v. Trump)
+- [Dale A. Drozd — hand-pulled objections playbook](../internal/docs/legal-intel/judges/dale-a-drozd-hand.md)
+  (E.D. Cal. district judge; presides over Matters 25 and 26; F&R-adoption patterns, *Smith v. GIS* background-check record, and the UPS MTD objections playbook; companion to the 2026 docket audit)
 
 ## Roadmap
 
