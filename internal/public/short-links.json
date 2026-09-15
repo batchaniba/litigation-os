@@ -8,12 +8,6 @@
       "title": "Consent to Magistrate Judge Jurisdiction \u2014 Newanforbi v. Federal Express Corporation"
     },
     {
-      "slug": "fedex-status-report",
-      "source": "/documents/matter-25/Plaintiff's Status Report (E.D. Cal. 2-26-cv-02881) (Sep 14 2026).pdf",
-      "downloadName": "Plaintiff's Status Report (E.D. Cal. 2-26-cv-02881) (Sep 14 2026).pdf",
-      "title": "Plaintiff's Status Report \u2014 Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR)"
-    },
-    {
       "slug": "ups-opp",
       "source": "/documents/matter-26/Dkt 10 - Plaintiff's Opposition to UPS Rule 12(b)(6) Motion to Dismiss (Filed Aug 28 2026).pdf",
       "downloadName": "Dkt 10 - Plaintiff's Opposition to UPS Rule 12(b)(6) Motion to Dismiss (Filed Aug 28 2026).pdf",
@@ -116,12 +110,6 @@
       "title": "Full Filing Packet \u2014 Motion, [Proposed] Order, POS \u2014 Nforbi v. Candelaria et al. (N.D. Cal. 3:26-cv-08272-LJC)"
     },
     {
-      "slug": "candelaria-fac",
-      "source": "/documents/matter-33/ndcal/Dkt 06 - First Amended Complaint (CONFORMED, Filed Aug 17 2026).pdf",
-      "downloadName": "Dkt 06 - First Amended Complaint (CONFORMED, Filed Aug 17 2026).pdf",
-      "title": "Operative FAC (Dkt. 6) \u2014 Nforbi v. Candelaria et al. (N.D. Cal. 3:26-cv-08272-LJC)"
-    },
-    {
       "slug": "ups-ext-opp",
       "source": "/documents/matter-26/Opposition to UPS Consent Motion for Extension of Time to File Reply (Sep 4 2026).pdf",
       "downloadName": "Opposition to UPS Consent Motion for Extension of Time to File Reply (Sep 4 2026).pdf",
@@ -191,7 +179,25 @@
       "slug": "name-24",
       "source": "/documents/matter-24/Name Conform Administrative Motion Packet - Serrato (N.D. Cal. 3-26-cv-05953-CRB) (September 15, 2026).pdf",
       "downloadName": "Name Conform Administrative Motion Packet - Serrato (N.D. Cal. 3-26-cv-05953-CRB) (September 15, 2026).pdf",
-      "title": "7-11 name-conform motion \u2014 Ngehsi Newanforbi to Ngwa Nforbi \u2014 Serrato (N.D. Cal. 3:26-cv-05953-CRB)"
+      "title": "7-11 name-conform packet \u2014 Ngehsi Newanforbi to Ngwa Nforbi \u2014 Serrato (N.D. Cal. 3:26-cv-05953-CRB)"
+    },
+    {
+      "slug": "name-24-motion",
+      "source": "/documents/matter-24/Administrative Motion - Conform Plaintiff's Name - Serrato (N.D. Cal. 3-26-cv-05953-CRB) (September 15, 2026).pdf",
+      "downloadName": "Administrative Motion - Conform Plaintiff's Name - Serrato (N.D. Cal. 3-26-cv-05953-CRB) (September 15, 2026).pdf",
+      "title": "7-11 administrative motion \u2014 conform Plaintiff's name \u2014 Serrato (N.D. Cal. 3:26-cv-05953-CRB)"
+    },
+    {
+      "slug": "name-24-decl",
+      "source": "/documents/matter-24/Declaration ISO Administrative Motion - Conform Plaintiff's Name - Serrato (N.D. Cal. 3-26-cv-05953-CRB) (September 15, 2026).pdf",
+      "downloadName": "Declaration ISO Administrative Motion - Conform Plaintiff's Name - Serrato (N.D. Cal. 3-26-cv-05953-CRB) (September 15, 2026).pdf",
+      "title": "Declaration ISO name-conform motion \u2014 Serrato (N.D. Cal. 3:26-cv-05953-CRB)"
+    },
+    {
+      "slug": "name-24-order",
+      "source": "/documents/matter-24/Proposed Order - Conform Plaintiff's Name - Serrato (N.D. Cal. 3-26-cv-05953-CRB) (September 15, 2026).pdf",
+      "downloadName": "Proposed Order - Conform Plaintiff's Name - Serrato (N.D. Cal. 3-26-cv-05953-CRB) (September 15, 2026).pdf",
+      "title": "[Proposed] order conforming Plaintiff's name \u2014 Serrato (N.D. Cal. 3:26-cv-05953-CRB)"
     },
     {
       "slug": "name-28",

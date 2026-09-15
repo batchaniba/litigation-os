@@ -1,5 +1,79 @@
 [
   {
+    "date": "Nov. 20, 2026",
+    "event": "HEARING — Defendant Serrato's Motion to Dismiss FAC (Dkt. 18) — 10:00 a.m., Zoom webinar, San Francisco, Hon. Charles R. Breyer — Newanforbi v. Serrato (3:26-cv-05953-CRB). Set by Clerk's Notice Dkt. 30 (filed Sep. 14) after Dkt. 29 reassignment. Appearance list to crbcrd@cand.uscourts.gov by Nov. 16, 2026, 3:00 p.m. Opposition is Dkt. 20 (filed Aug. 27). Do not treat the vacated Sep. 30 Krishnan date as live.",
+    "matters": [
+      24
+    ],
+    "type": "hearing",
+    "upcoming": true,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-24/ECF Docket Report - N.D. Cal. 3-26-cv-05953-CRB (Pulled Sep 14 2026).pdf",
+    "source_type": "pacer",
+    "confidence": "high",
+    "verified_at": "2026-09-14"
+  },
+  {
+    "date": "Sep. 15, 2026",
+    "event": "DRAFTED (unfiled) — Civil L.R. 7-11 administrative motion to conform Plaintiff's docket name from Brendan Ngehsi Newanforbi to Brendan Ngwa Nforbi in Newanforbi v. Serrato (3:26-cv-05953-CRB). Caption now San Francisco / Judge Breyer after Dkt. 29. Same person; PACER bngwanforbi; Help Desk Sep. 1 is Exhibit A. Li will not oppose if Nforbi and Newanforbi are the same person; no 7-12 stipulation. Nothing else moves, including the Nov. 20, 2026 MTD hearing (Dkt. 30) and Dkt. 20 opposition. Supersedes the Sep. 14 ASK packet for this action only. Do not treat as filed. After entry, re-ask the ECF Help Desk to link bngwanforbi.",
+    "matters": [
+      24
+    ],
+    "type": "event",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-24/Name Conform Administrative Motion Packet - Serrato (N.D. Cal. 3-26-cv-05953-CRB) (September 15, 2026).pdf",
+    "source_type": "portfolio",
+    "confidence": "high",
+    "verified_at": "2026-09-15"
+  },
+  {
+    "date": "Sep. 14, 2026",
+    "event": "FILED — Dkt. 29 Order Reassigning Case in Newanforbi v. Serrato. Text-only. Reassigned at random under General Order 44 to Judge Charles R. Breyer, San Francisco Division. Case number is now 3:26-cv-05953-CRB. Mag. Judge Ajay S. Krishnan no longer assigned. All hearing and trial dates vacated; existing briefing schedules unchanged. Motions must be re-noticed before Judge Breyer.",
+    "matters": [
+      24
+    ],
+    "type": "order",
+    "upcoming": false,
+    "filed": true,
+    "actor": "court",
+    "source": "/documents/matter-24/ECF Docket Report - N.D. Cal. 3-26-cv-05953-CRB (Pulled Sep 14 2026).pdf",
+    "source_type": "pacer",
+    "confidence": "high",
+    "verified_at": "2026-09-14"
+  },
+  {
+    "date": "Sep. 14, 2026",
+    "event": "FILED — Dkt. 30 Clerk's Notice (text-only) in Newanforbi v. Serrato (3:26-cv-05953-CRB). Motion to Dismiss (Dkt. 18) hearing set for November 20, 2026, 10:00 a.m., San Francisco Zoom webinar before Judge Charles R. Breyer. Access at cand.uscourts.gov/crb. Appearance names/emails to crbcrd@cand.uscourts.gov by November 16, 2026, 3:00 p.m. Photographing, recording, and rebroadcasting prohibited (Civ. L.R. 77-3(d)).",
+    "matters": [
+      24
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "court",
+    "source": "/documents/matter-24/ECF Docket Report - N.D. Cal. 3-26-cv-05953-CRB (Pulled Sep 14 2026).pdf",
+    "source_type": "pacer",
+    "confidence": "high",
+    "verified_at": "2026-09-14"
+  },
+  {
+    "date": "After MTD order",
+    "event": "WATCH — Reset initial CMC in Newanforbi v. Serrato (3:26-cv-05953-CRB). Dkt. 25 sets it fourteen (14) days after the final order on Defendant's motion to dismiss (Dkt. 18; hearing Nov. 20, 2026, 10:00 a.m. Zoom before Judge Breyer per Dkt. 30). No date certain. Disclosure, JCMS, and ADR-certification dates run from that conference. Do not invent a calendar date.",
+    "matters": [
+      24
+    ],
+    "type": "hearing",
+    "upcoming": false,
+    "actor": "you",
+    "source": "/documents/matter-24/Dkt 25 - Order Continuing Initial CMC (Filed Sep 9 2026).pdf",
+    "source_type": "court_order",
+    "confidence": "high",
+    "verified_at": "2026-09-11"
+  },
+  {
     "date": "Sep. 14, 2026",
     "event": "RECEIVED — Alexandra Moskow (Kabat Chapman & Ozmer LLP; amoskow@kcozlaw.com; to Plaintiff; cc Nathan Chapman, Chadwick L. Williams, Windy Thor) emailed at 4:37 p.m. in Newanforbi v. Randstad US, LLC et al. (26CV199902), attaching the executed Plaintiff counterpart (filename on the email: 2026.09.14 [Newanforbi] Stipulation and Proposed Order Extending Time for Randstad to Respond.pdf). Diff versus the signed counterpart: terms, Weathers / Dept. 20 caption, CRC 3.110(d) second-shot recital, RK-unchanged, default reserved, and /s/ Brendan Ngehsi Newanforbi match. Chapman wet signature plus handwritten September 14, 2026. Moskow proof of service (page 6): email checked; the Court's Electronic Filing System box unchecked. Proposed order still unsigned by Hon. Thomas Weathers. No clerk stamp. Counterpart paragraph 6 and CRC 3.110(d): September 18 is not an operative deadline until the paper is filed AND the Court enters an order. Do not retire the unfiled counterpart. Do not flip Randstad off September 15. This paper does not move The RK Logistics Group, Inc. and is not an acceptance of the September 12 $25,000 demand. Evid. Code §1152 / FRE 408 as to the demand.",
     "matters": [
