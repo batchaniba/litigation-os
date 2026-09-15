@@ -1,104 +1,93 @@
-# Matter 39 — E.D. Cal. Federal Redraft Notes
+# Matter 39 — Federal Redraft v3 Notes
 
-## Objective
+## Current architecture
 
-Replace the never-filed September 8, 2026 San Joaquin packet with a federal-first review draft engineered for a direct filing in the U.S. District Court for the Eastern District of California, Sacramento Division.
+The opening Best Buy federal complaint is now **diversity-first and § 290.46-only**.
 
-The state packet remains historical work product only. It was never clerk-filed.
+Opening claim:
+- Penal Code § 290.46(j)(2)(E) / (j)(4)(A)
 
-Do **not** stamp this matter LOCKED. The live draft is `internal/scripts/matter39-edca-complaint.py`. Keep editing until Plaintiff signs and files.
+Reserved:
+- FCRA § 1681b(b)(3)(A)
+- ICRAA §§ 1786.40 / 1786.50
 
-## Recommended claim architecture
+## Why FCRA / ICRAA were removed from the opening complaint
 
-### Count 1 — FCRA § 1681b(b)(3)(A), Best Buy
+The prior draft used May 29, 2026 as the date Plaintiff first “understood” the FCRA and ICRAA process omissions.
 
-This is the federal-question anchor.
+That theory is not strong enough on the current record. Best Buy identified First Advantage in the October 17, 2023 hiring transaction itself, and Plaintiff knew the accepted job disappeared after the screening process. FCRA § 1681p can be triggered by actual or constructive discovery of the facts constituting a violation; later legal research or later pursuit of a statutory theory does not create a new discovery date.
 
-The theory is deliberately narrow: Best Buy procured a First Advantage consumer report for employment purposes and took adverse action based in whole or in part on it without first giving Plaintiff (1) the report and (2) the written Summary of Rights.
+ICRAA § 1786.52 likewise uses a two-year discovery rule.
 
-Vendor identity is documentary, not a public-source inference. Best Buy's own October 17, 2023 authorization named First Advantage Consumer Center, and First Advantage ordered a Best Buy drug test the same afternoon (Q09078711; account BEST BUY 11759586). The transaction-specific report remains necessary to prove what the screen contained.
+Accordingly, neither count belongs in a top-tier opening complaint unless a truthful factual chronology supports timeliness. If later records establish such facts, amendment can be evaluated.
 
-### Count 2 — ICRAA §§ 1786.40 / 1786.50, Best Buy
+## Diversity
 
-Use ICRAA for a **different omission** from Count 1: when employment was denied under circumstances in which an investigative report had been obtained, Best Buy failed to advise Plaintiff and supply the CRA's name and address **at adverse action**.
+Plaintiff is a California citizen.
 
-Naming First Advantage on the earlier authorization is not the § 1786.40 advice. Civil Code § 1786.52(a) bars an ICRAA § 1786.50 suit for the **same act or omission** already the subject of an FCRA §§ 1681n / 1681o action. Do **not** add FCRA § 1681m(a).
+Best Buy Co., Inc. is a Minnesota corporation with its principal place of business in Richfield, Minnesota.
 
-### Count 3 — Penal Code § 290.46(j), Best Buy
+The amount in controversy is pleaded from:
+- actual lost employment compensation at the documented $22.60 hourly rate according to proof;
+- consequential economic loss;
+- the non-penalty additional relief available under § 290.46(j)(4)(A);
+- exemplary damages if the required showing is made.
 
-Source and use are **ultimate facts on information and belief**, with UPS/FedEx same-consumer First Advantage comparators as additional factual basis. Best Buy's own file already supplies the written offer, named vendor, same-day screen, and ghost. Do not attach a UPS or FedEx report as Best Buy's report.
+The complaint does not invent weekly hours, a start date, or tenure, and it does not rely on FCRA/ICRAA or the optional § 290.46 civil penalty to cross $75,000.
 
-**Count 3 does not use May 29.** It is timely under CCP § 338(a) from the October 2023 *use*. Three years from October 17, 2023 is **October 17, 2026**. That is the filing-critical clock on this count. Count 3 realleges ¶¶ 1–43 and 48–55 only — **not** ¶¶ 44–47.
+## § 290.46 limitations
 
-## Claims intentionally omitted
+The alleged use occurred on or after October 17, 2023.
 
-- **UCL § 17200:** omitted. Federal standing/remedy side fight; limited upside.
-- **CCRAA:** omitted unless the Best Buy product is an ordinary consumer credit report.
-- **Tameny / IIED / contract / estoppel:** omitted. A two-year CCP § 335.1 clock from an October 2023 decision closed in October 2025.
-- **FEHA / Fair Chance Act:** no CRD right-to-sue in the record.
-- **FCRA § 1681b(b)(2)(A):** reserved. California disclosure PDFs were attached to the offer sequence but are not in this upload. Audit them if they arrive; do not plead a standalone-disclosure count without the form.
-- **FCRA § 1681m(a):** omitted to avoid § 1786.52(a) overlap with ICRAA § 1786.40.
-- **First Advantage as a defendant:** not yet. Add only if Best Buy-specific records support an independent CRA violation.
-- **Prospective injunction / § 290.46(j)(4)(B):** omitted from the opening complaint.
-- **DOES / Best Buy Stores, L.P.:** omitted from the opening federal caption. If the report or personnel file shows a different employing affiliate, fix the defendant before filing.
+The opening complaint proceeds under CCP § 338(a) for remedial statutory liability and should be filed before **October 17, 2026** if Plaintiff elects to proceed on this theory.
 
-## The filing-critical limitations section
+Because § 290.46(j)(4)(A) also contains an optional civil-penalty remedy that could invite a § 340(a) characterization argument, the opening complaint does not seek or rely on that civil penalty.
 
-May 29, 2026 is pleaded **only for Counts One and Two** (FCRA and ICRAA). Do not name other cases in the complaint.
+## Why the § 290.46 factual posture remains strong
 
-Count Three does **not** reallege paragraphs 44–47 and does **not** use May 29.
+Best Buy is stronger than Home Depot on vendor identity because First Advantage is transaction-specific:
+- Best Buy's October 17 background authorization identified First Advantage.
+- First Advantage issued the Best Buy-specific drug-test order the same afternoon.
+- Best Buy expressly confirmed Plaintiff accepted the offer.
+- Plaintiff completed the required screen.
+- Best Buy then stopped the hire without communicating an independent reason.
 
-For Counts One and Two, May 29 is **not** “the day Plaintiff knew he had been harmed.” He knew he had lost the Tracy job in October 2023. May 29, 2026 is the date he first understood that Best Buy had obtained a consumer / investigative report and had skipped the FCRA pre-adverse package and the ICRAA § 1786.40 advice.
+The actual Best Buy background report remains missing, so source and use remain I&B.
 
-Do **not** plead that Plaintiff first learned First Advantage's identity on May 29. Best Buy named First Advantage on October 17, 2023. That fact stays in the chronology. Delayed discovery is of the *process omissions*, not of the vendor's name.
+## Lerma / Donaleski
 
-Do not write “I learned of the law” as a standalone theory.
+The complaint is source-specific.
 
-Internal provenance (keep out of the complaint): May 29, 2026 is the Pilot filing date. If asked at deposition what happened that day, the truthful answer is that this is when Plaintiff first pursued the employment-screening statutory theory. Do not deny that. Do not volunteer other captions in the Best Buy pleading.
+- Donaleski: independent lawful conviction sourcing is not the same as use of § 290.46-disclosed information.
+- Lerma: a transaction-specific report can defeat the registry theory if it actually shows ordinary court-record sourcing and no registry hit.
 
-If Plaintiff actually understood the FCRA/ICRAA omissions earlier while drafting, use that earlier date for Counts One and Two.
+The complaint therefore does not argue that public conviction records can never be considered. It argues that public conviction records alone do not prove which source First Advantage used in Best Buy's unproduced report.
 
-Best Buy will argue inquiry notice from the October 2023 ghosting **and** from having named First Advantage on day one. That is a stronger inquiry-notice defense than Home Depot. It is a defense. It is not a reason to volunteer October 2023 as FCRA/ICRAA discovery.
+## Contract / estoppel
 
-FCRA § 1681p: earlier of two years from discovery or five years from the violation. Two years from May 29, 2026 runs to May 29, 2028. Five years from an October 17, 2023 violation runs to approximately October 17, 2028. ICRAA § 1786.52 is two years from knew or should have known.
+The previous notes incorrectly treated contract / estoppel as facially barred by a two-year CCP § 335.1 period.
 
-Count 3: CCP § 338(a) three years from the use. If accrual is the October 17, 2023 offer / same-day screen week, the outer bound is **October 17, 2026**. File Count 3 before that date. Do not try to save Count 3 with May 29.
+A claim founded on a written contract can implicate CCP § 337's four-year period. That correction does **not** mean a contract count should automatically be added.
 
-## E.D. Cal. engineering
+The offer remains contingent, at-will issues may sharply limit damages, and the present record does not establish substantial reliance such as quitting another job, relocating, or incurring significant expenses. For now, contract / estoppel are **reserved rather than time-barred**.
 
-- Federal question: 28 U.S.C. § 1331 + FCRA.
-- Diversity in the alternative: 28 U.S.C. § 1332(a) — Minnesota corporation, Richfield principal place of business, California plaintiff. Amount in controversy aggregates the offered $22.60 hourly rate according to proof plus statutory remedies. Do not invent hours or a start date. The offer states neither.
-- Supplemental jurisdiction: 28 U.S.C. § 1367(a).
-- Venue: 28 U.S.C. § 1391(b)(2).
-- San Joaquin County places the action in the Sacramento side of E.D. Cal. under Local Rule 120(d).
-- Serve the current California SOS agent, not 6653 Hopkins Road. Public records in other jurisdictions and an older Prop 65 notice use C T Corporation System. Confirm the SOS listing immediately before service. Do not invent CSC. Do not serve Jose Tapia's phone number.
-- Complaint is intentionally unverified. Rule 11 supplies the federal certification.
-- Arbitration: the October 13, 2023 application email recites an arbitration policy. The policy PDF is not in this upload. Best Buy will move to compel. That is a defense, not a claim. Do not volunteer a waiver in the complaint.
-- Generate the review-draft PDF with `python3 internal/scripts/matter39-edca-complaint.py`. Use official JS-44 / AO-440 / AO-239 forms; do not homemade them.
+## Arbitration
 
-## Maximum-value discovery plan
+The October 13 application communication references an arbitration policy.
 
-1. complete Best Buy applicant/personnel file;
-2. actual October 17, 2023 disclosure and authorization PDFs;
-3. full First Advantage report and all versions;
-4. order/profile/package metadata, including Q09078711 / account 11759586;
-5. component results and raw source fields;
-6. client-specific adjudication matrix;
-7. ATS status and reason codes;
-8. access and transmission logs;
-9. pre-adverse/adverse-action workflow logs;
-10. Best Buy–First Advantage contract/SOW and California screening configuration;
-11. all communications regarding Plaintiff's screen and hire, including Jose Tapia and Daisy Calvary;
-12. First Advantage consumer file and Best Buy user certification.
+Obtain the actual policy before filing. Do not assume:
+- scope;
+- assent;
+- delegation;
+- enforceability;
+- affiliate coverage.
 
-If the Best Buy report shows ordinary court records as the operative adverse source and no California-registry sourcing, do **not** force the § 290.46 theory.
+Expect a motion to compel if the policy applies.
 
-## Pre-filing inspection (highest-value next step)
+## Highest-value prefiling steps
 
-Unsigned demand drafts:
-
-- `internal/docs/matter-39/INSPECTION_DEMAND_FIRST_ADVANTAGE.md`
-- `internal/docs/matter-39/PERSONNEL_FILE_DEMAND_BEST_BUY.md`
-- generator: `internal/scripts/matter39-inspection-demands.py`
-
-Serve First Advantage at the address Best Buy itself used: P.O. Box 105292, Atlanta, GA 30348. Serve Best Buy through the current SOS agent, not 6653 Hopkins Road. Plaintiff signs. Do not treat the drafts as served until they go out.
+1. Serve/complete the First Advantage inspection request.
+2. Serve/complete Best Buy's personnel-file request.
+3. Obtain the arbitration policy.
+4. Confirm the actual Best Buy employing/report-user entity.
+5. File before October 17, 2026 if the § 338(a) theory is used.
