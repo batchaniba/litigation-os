@@ -385,6 +385,26 @@
       "permanent": false
     },
     {
+      "source": "/meza-41520-mail",
+      "destination": "/meza-41520-mail.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/meza-41520-mail/",
+      "destination": "/meza-41520-mail.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/meza-41520-filing",
+      "destination": "/meza-41520-filing.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/meza-41520-filing/",
+      "destination": "/meza-41520-filing.pdf",
+      "permanent": false
+    },
+    {
       "source": "/name-33",
       "destination": "/name-33.pdf",
       "permanent": false
@@ -745,6 +765,24 @@
         {
           "key": "Content-Disposition",
           "value": "attachment; filename=\"Name Conform Administrative Motion Packet - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 14, 2026).pdf\"; filename*=UTF-8''Name%20Conform%20Administrative%20Motion%20Packet%20-%20Meza-Gonzalez%20%28N.D.%20Cal.%204-26-cv-08271-ASK%29%20%28September%2014%2C%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/meza-41520-mail.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"CCP 415.20(b) Mailing Bundle - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 17, 2026).pdf\"; filename*=UTF-8''CCP%20415.20%28b%29%20Mailing%20Bundle%20-%20Meza-Gonzalez%20%28N.D.%20Cal.%204-26-cv-08271-ASK%29%20%28September%2017%2C%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/meza-41520-filing.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"CCP 415.20(b) Mailing Filing Packet - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 17, 2026).pdf\"; filename*=UTF-8''CCP%20415.20%28b%29%20Mailing%20Filing%20Packet%20-%20Meza-Gonzalez%20%28N.D.%20Cal.%204-26-cv-08271-ASK%29%20%28September%2017%2C%202026%29.pdf"
         }
       ]
     },

@@ -1865,7 +1865,7 @@
   },
   {
     "date": "Sep. 14, 2026",
-    "event": "FILED — Rule 4(l) return for Santiago Meza-Gonzalez in Nforbi v. Meza-Gonzalez et al. (N.D. Cal. 4:26-cv-08271-ASK): Daniel Fischer / Run With It Declaration of Service and Declaration of Reasonable Diligence (order 15645547). Substitute service Aug. 27, 2026, 1:30 p.m., Kim S. - H.R. at CHP Modesto Area, 4030 Kiernan Ave. Plaintiff reports the return was filed September 14, 2026. Docket number unconfirmed until PACER. CCP §415.20 mailing follow-up is still not on the face of the return — do not start Meza's FRCP 12 clock from Aug. 27. Copy of the filed return to DAG Li is still unsent.",
+    "event": "FILED — Dkt. 16 / 16-1 Rule 4(l) return for Santiago Meza-Gonzalez in Nforbi v. Meza-Gonzalez et al. (N.D. Cal. 4:26-cv-08271-ASK): Daniel Fischer / Run With It Declaration of Service and Declaration of Reasonable Diligence (order 15645547). Substitute service Aug. 27, 2026, 1:30 p.m., Kim S. - H.R. at CHP Modesto Area, 4030 Kiernan Ave. Diligence only — no mail date. CCP §415.20 mailing follow-up is still not on the face of the return — do not start Meza's FRCP 12 clock from Aug. 27. Do not treat Sep. 17 as a default date. Copy of the filed return to DAG Li is still unsent.",
     "matters": [
       32
     ],
@@ -1894,7 +1894,7 @@
   },
   {
     "date": "Sep. 8, 2026",
-    "event": "SATISFIED — Rule 4(l) return for Santiago Meza-Gonzalez (Daniel Fischer Declaration of Service + Diligence, Run With It order 15645547). Plaintiff reports it was filed September 14, 2026. Confirm clerk stamp / docket number on PACER. Copy DAG Li remains unsent. CCP §415.20 mailing follow-up is not on the face of this return.",
+    "event": "SATISFIED — Rule 4(l) return for Santiago Meza-Gonzalez filed September 14, 2026 as Dkt. 16 / 16-1 (Daniel Fischer Declaration of Service + Diligence, Run With It order 15645547). Copy DAG Li remains unsent. CCP §415.20 mailing follow-up is not on the face of this return.",
     "matters": [
       32
     ],
@@ -10146,6 +10146,20 @@
     "confidence": "high",
     "verified_at": "2026-09-14",
     "source": "/documents/matter-40/First Advantage Screening Notification - TaskUs Holdings Saliva Drug Test (Sep 14 2026).pdf"
+  },
+  {
+    "date": "Sep. 17, 2026",
+    "event": "MAIL — CCP § 415.20(b) first-class follow-up to Dkt. 16 / 16-1 for Santiago Meza-Gonzalez in Nforbi v. Meza-Gonzalez et al. (N.D. Cal. 4:26-cv-08271-ASK). Envelope to Meza at CHP Modesto Area, 4030 Kiernan Avenue, Modesto, CA 95356: cover letter + Meza summons (Dkt. 3 p.2) + Dkt. 5 FAC + operative-FAC notice + Dkt. 4 CMC/ADR order. Preferred mailer is any adult non-party (CCP § 414.10); Plaintiff may mail rather than skip. Same day: keep the USPS receipt, sign the matching declaration, file declaration + Exhibit A + POS with the San Jose clerk, serve Li / Melano / Meza, send Li the covering email. Do not treat this day as a default date. Li has no 12(a) duty. Dkt. 13 stays on file. If mailed Sep. 16 or Sep. 17, service completes on the 10th day after mailing and Rule 12(a) runs to Monday, October 19, 2026 — do not write that date on papers Li or Meza will see.",
+    "matters": [
+      32
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-32/ndcal/CCP 415.20(b) Mailing Bundle - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 17, 2026).pdf",
+    "source_type": "manual",
+    "confidence": "high",
+    "verified_at": "2026-09-16"
   },
   {
     "date": "Sep. 23, 2026",
