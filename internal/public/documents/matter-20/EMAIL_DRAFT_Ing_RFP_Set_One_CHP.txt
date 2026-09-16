@@ -3,8 +3,8 @@ Cc: Mark.Beckington@doj.ca.gov
 Subject: Newanforbi v. California Highway Patrol et al., No. 26CV191136 — Petitioner's Request for Production of Documents, Set One
 
 Attach:
-- Request for Production of Documents Set One - CHP (Sep 15 2026).pdf
-- Proof of Service - RFP Set One CHP (Sep 15 2026).pdf
+- Request for Production of Documents Set One - CHP (Sep 16 2026).pdf
+- Proof of Electronic Service - RFP Set One CHP (Sep 16 2026).pdf
 
 ---
 
@@ -12,7 +12,7 @@ Ms. Ing:
 
 Please find enclosed Petitioner's Request for Production of Documents, Set One, directed to Respondent California Highway Patrol, together with proof of electronic service.
 
-The Demand is limited to surviving Count 1. It seeks the WAR913372 warrant packet, the November 1, 2024 blood-draw chain of custody and toxicology, and the file of the April 9, 2026 U-visa certification request and April 20, 2026 denial. Electronic production to bnn.cdl@gmail.com is requested. Written responses and production are due as stated in the Demand. If this Demand is served today, Petitioner identifies October 20, 2026 as the inspection date.
+The Demand is limited to surviving Count 1. It seeks the WAR913372 warrant packet, the November 1, 2024 blood-draw chain of custody and toxicology, and the file of the April 9, 2026 U-visa certification request and April 20, 2026 denial. Electronic production to bnn.cdl@gmail.com is requested. Written responses and production are due as stated in the Demand. If this Demand is served today, written responses and production are due October 20, 2026.
 
 This is a discovery demand. It is not being filed with the Court.
 
@@ -23,12 +23,13 @@ Plaintiff, In Propria Persona
 
 ---
 Note to self (do not send this footer):
-Draft of September 15, 2026. NOT YET TRANSMITTED.
-- Attach the two PDFs. Do not paste the Demand into the email body.
-- Do not e-file the Demand or the POS-050. CRC 3.250. The September 8 lodging POS was rejected at the portal; do not repeat that.
+Draft of September 16, 2026. NOT YET TRANSMITTED.
+- Attach the two PDFs named above. Do not paste the Demand into the email body. Do not send the combined "with POS" packet as a substitute for the two attachments.
+- The proof is a party-signed CCP § 1013b certificate. Do not substitute Judicial Council POS-050; that form recites the server is not a party.
+- Do not e-file the Demand or proof of service. CRC 3.250. The September 8 lodging POS was rejected at the portal; do not repeat that.
 - Do not cc Department 25.
-- Cc Mark.Beckington@doj.ca.gov because he was on Ms. Ing's September 10 thread. To: Vanessa.Ing@doj.ca.gov is the service address.
-- If you send after September 15, regenerate so the Demand signature date and the POS-050 service date match the send date, or hand-correct both before sending.
+- Cc Mark.Beckington@doj.ca.gov because he was on Ms. Ing's September 10 thread. To: Vanessa.Ing@doj.ca.gov is the service address. That address is on the proof.
+- If you send after September 16, regenerate so the Demand signature date, response date, and proof-of-service date match the actual send date.
 - Do not mention Matter 32, Franks, qualified immunity, punitive damages, or depositions in the email.
 - Do not notice Meza or Melano with this send. Documents first.
 - Do not convert Count 4 into a damages prayer to "open" this discovery. Count 1 already supports it.
