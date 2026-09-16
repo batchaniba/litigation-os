@@ -32,7 +32,6 @@ from pleading_paper import (  # noqa: E402
     COURT_LINE1,
     PleadingPaper,
 )
-from short_link import publish_short_link  # noqa: E402
 from signature_stamp import SIGNATURE_NATIVE_PX, SIGNATURE_PATH  # noqa: E402
 import pymupdf  # noqa: E402
 
@@ -41,13 +40,15 @@ SIG_IMG_W_PX, SIG_IMG_H_PX = SIGNATURE_NATIVE_PX
 
 FILED_STATUS = False
 
-EXEC_DATE = "September 15, 2026"
-EXEC_PLACE = "Milpitas, California"
-POS_DATE = "09/15/2026"
+EXEC_DATE = "September 16, 2026"
+EXEC_PLACE = "Stockton, California"
 CMC_DATE = "October 28, 2026"
 CMC_TIME = "4:00 p.m."
-RESPONSE_DATE = "October 19, 2026"
-PRODUCTION_DATE = "October 19, 2026"
+# CCP § 2031.260 (30 days) from Sep. 16, computed under CCP § 12, plus
+# two court days under CCP § 1010.6 for electronic service: Tuesday,
+# October 20, 2026. Indigenous Peoples' Day is October 12.
+RESPONSE_DATE = "October 20, 2026"
+PRODUCTION_DATE = "October 20, 2026"
 
 COURT_LINE2 = "COUNTY OF ALAMEDA"
 DOC_TITLE_FOOTER = (
@@ -58,25 +59,24 @@ SIG_LINE = "___________________________________"
 REPO_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, "..", ".."))
 MATTER20 = Path(REPO_ROOT) / "internal" / "public" / "documents" / "matter-20"
 RFP_PATH = MATTER20 / (
-    "Request for Production of Documents Set One - CHP (Sep 15 2026).pdf"
+    "Request for Production of Documents Set One - CHP (Sep 16 2026).pdf"
 )
 POS_PATH = MATTER20 / (
-    "Proof of Electronic Service - RFP Set One CHP (Sep 15 2026).pdf"
+    "Proof of Electronic Service - RFP Set One CHP (Sep 16 2026).pdf"
 )
 EMAIL_PATH = MATTER20 / "EMAIL_DRAFT_Ing_RFP_Set_One_CHP.txt"
 PACKET_PATH = MATTER20 / (
     "Request for Production of Documents Set One - CHP with POS "
-    "(Sep 15 2026).pdf"
+    "(Sep 16 2026).pdf"
 )
-SHORT_LINK_SLUG = "chp-rfp"
 
 COVER_EMAIL = f"""To: Vanessa.Ing@doj.ca.gov
 Cc: Mark.Beckington@doj.ca.gov
 Subject: Newanforbi v. California Highway Patrol et al., No. 26CV191136 — Petitioner's Request for Production of Documents, Set One
 
 Attach:
-- Request for Production of Documents Set One - CHP (Sep 15 2026).pdf
-- Proof of Electronic Service - RFP Set One CHP (Sep 15 2026).pdf
+- Request for Production of Documents Set One - CHP (Sep 16 2026).pdf
+- Proof of Electronic Service - RFP Set One CHP (Sep 16 2026).pdf
 
 ---
 
@@ -96,11 +96,12 @@ Plaintiff, In Propria Persona
 ---
 Note to self (do not send this footer):
 Draft of {EXEC_DATE}. NOT YET TRANSMITTED.
-- Attach the two PDFs. Do not paste the Demand into the email body.
+- Attach the two PDFs named above. Do not paste the Demand into the email body. Do not send the combined "with POS" packet as a substitute for the two attachments.
+- The proof is a party-signed CCP § 1013b certificate. Do not substitute Judicial Council POS-050; that form recites the server is not a party.
 - Do not e-file the Demand or proof of service. CRC 3.250. The September 8 lodging POS was rejected at the portal; do not repeat that.
 - Do not cc Department 25.
-- Cc Mark.Beckington@doj.ca.gov because he was on Ms. Ing's September 10 thread. To: Vanessa.Ing@doj.ca.gov is the service address.
-- If you send after September 15, regenerate so the Demand signature date, response date, and proof-of-service date match the actual send date.
+- Cc Mark.Beckington@doj.ca.gov because he was on Ms. Ing's September 10 thread. To: Vanessa.Ing@doj.ca.gov is the service address. That address is on the proof.
+- If you send after September 16, regenerate so the Demand signature date, response date, and proof-of-service date match the actual send date.
 - Do not mention Matter 32, Franks, qualified immunity, punitive damages, or depositions in the email.
 - Do not notice Meza or Melano with this send. Documents first.
 - Do not convert Count 4 into a damages prayer to "open" this discovery. Count 1 already supports it.
@@ -130,7 +131,7 @@ def _header(d: PleadingPaper) -> None:
     d.blank_line()
 
 
-def _caption(d: PleadingPaper) -> None:
+def _caption(d: PleadingPaper, *, proof: bool = False) -> None:
     left = [
         ("BRENDAN NGEHSI NEWANFORBI,", True, False),
         ("", False, False),
@@ -146,13 +147,22 @@ def _caption(d: PleadingPaper) -> None:
         ("", False, False),
         ("                          Respondents.", False, False),
     ]
+    if proof:
+        title = [
+            ("PROOF OF ELECTRONIC SERVICE", True, False),
+            ("[Code Civ. Proc. § 1013b]", False, False),
+        ]
+    else:
+        title = [
+            ("PETITIONER'S REQUEST FOR", True, False),
+            ("PRODUCTION OF DOCUMENTS,", True, False),
+            ("SET ONE, TO RESPONDENT", True, False),
+            ("CALIFORNIA HIGHWAY PATROL", True, False),
+        ]
     right = [
         ("Case No. 26CV191136", False, False),
         ("", False, False),
-        ("PETITIONER'S REQUEST FOR", True, False),
-        ("PRODUCTION OF DOCUMENTS,", True, False),
-        ("SET ONE, TO RESPONDENT", True, False),
-        ("CALIFORNIA HIGHWAY PATROL", True, False),
+        *title,
         ("", False, False),
         (f"CMC:  {CMC_DATE}", False, False),
         (f"Time:  {CMC_TIME}", False, False),
@@ -372,7 +382,7 @@ def build_rfp(path: Path) -> Path:
         "that is not reasonably converted to PDF. Bates-stamp each page. If "
         "YOU elect physical production, the place of inspection is 1455 Cat "
         "Tail Drive, Stockton, California 95204, between 10:00 a.m. and "
-        "4:00 p.m. on the production date. Related activity: copying, "
+        f"4:00 p.m. on {PRODUCTION_DATE}. Related activity: copying, "
         "scanning, and photographing. Code Civ. Proc. § 2031.030(c).",
         first_indent=0,
     )
@@ -568,38 +578,64 @@ def build_pos(path: Path) -> Path:
         "NEWANFORBI v. CHP, ET AL., 26CV191136"
     ))
     _header(d)
-    _caption(d)
+    _caption(d, proof=True)
     d.write_line("PROOF OF ELECTRONIC SERVICE", bold=True, center=True)
+    d.write_line("[Code Civ. Proc. § 1013b]", center=True)
     d.blank_line()
     _para(
         d,
-        "I, Brendan Ngehsi Newanforbi, am over the age of 18 and am the "
-        "Petitioner in this action. My electronic service address is "
-        "bnn.cdl@gmail.com.",
+        "I, Brendan Ngehsi Newanforbi, declare:",
+        first_indent=0,
     )
     _para(
         d,
-        f"On {EXEC_DATE}, I electronically served PETITIONER'S REQUEST FOR "
-        "PRODUCTION OF DOCUMENTS, SET ONE, TO RESPONDENT CALIFORNIA HIGHWAY "
-        "PATROL by transmitting a true copy by electronic mail to Vanessa K. "
-        "Ing, counsel for Respondent California Highway Patrol, at "
-        "Vanessa.Ing@doj.ca.gov, with a courtesy copy to "
-        "Mark.Beckington@doj.ca.gov.",
+        "1.  I am over the age of 18 years and am the Petitioner in this "
+        "action. I am a party. My electronic service address is "
+        "bnn.cdl@gmail.com. My mailing address is 1455 Cat Tail Drive, "
+        "Stockton, California 95204.",
+        first_indent=0,
     )
     _para(
         d,
-        "The electronic transmission was made from bnn.cdl@gmail.com. I did "
-        "not receive, within a reasonable time after transmission, any "
-        "electronic message or other indication that the transmission was "
-        "unsuccessful.",
+        f"2.  On {EXEC_DATE}, I electronically served the following "
+        "document:",
+        first_indent=0,
     )
     _para(
         d,
-        f"I declare under penalty of perjury under the laws of the State of "
-        f"California that the foregoing is true and correct. Executed on "
+        "Petitioner's Request for Production of Documents, Set One, to "
+        "Respondent California Highway Patrol",
+        first_indent=36,
+    )
+    _para(
+        d,
+        "by transmitting a true copy by electronic mail from "
+        "bnn.cdl@gmail.com to Vanessa K. Ing, Deputy Attorney General, "
+        "counsel of record for Respondent California Highway Patrol, at "
+        "Vanessa.Ing@doj.ca.gov.",
+        first_indent=0,
+    )
+    _para(
+        d,
+        "3.  I transmitted a courtesy copy of the same document to "
+        "Mark.Beckington@doj.ca.gov. Mr. Beckington is not the addressee of "
+        "service.",
+        first_indent=0,
+    )
+    _para(
+        d,
+        "4.  I did not receive, within a reasonable time after the "
+        "transmission, any electronic message or other indication that the "
+        "transmission was unsuccessful.",
+        first_indent=0,
+    )
+    _para(
+        d,
+        "5.  I declare under penalty of perjury under the laws of the State "
+        f"of California that the foregoing is true and correct. Executed on "
         f"{EXEC_DATE}, at {EXEC_PLACE}.",
+        first_indent=0,
     )
-    d.write_respectfully_submitted()
     _sign(d, f"Dated: {EXEC_DATE}")
     d.save()
     return path
@@ -631,12 +667,10 @@ def main() -> None:
     build_pos(POS_PATH)
     build_email(EMAIL_PATH)
     build_packet(RFP_PATH, POS_PATH, PACKET_PATH)
-    short = publish_short_link(PACKET_PATH, SHORT_LINK_SLUG)
     print(f"SUCCESS! Generated: {RFP_PATH}")
     print(f"SUCCESS! Generated: {POS_PATH}")
     print(f"SUCCESS! Generated: {EMAIL_PATH}")
     print(f"SUCCESS! Generated: {PACKET_PATH}")
-    print(f"SUCCESS! Short-link PDF: {short}")
     if not FILED_STATUS:
         print("NOTE: FILED_STATUS is False -- not yet served. Do not e-file.")
 
