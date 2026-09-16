@@ -4317,8 +4317,23 @@
     "verified_at": "2026-09-16"
   },
   {
+    "date": "Sep. 16, 2026",
+    "event": "READY — Default-judgment prove-up packet as to Randstad US, LLC only in Newanforbi v. Randstad US, LLC et al. (Alameda Super. Ct. No. 26CV199902). CIV-100 requests court judgment for default previously entered 09/16/2026 (Deputy Pesko); JUD-100 proposed several judgment; CIV-110 dismisses Does 1–20 without prejudice; declaration ISO with Exhibits A–I. Kim ask: Civ. Code §1786.50 $10,000 + Pen. Code §290.46 additional $10,000 (1× ICRAA as actuals stand-in) + $25,000 civil penalty + $543.70 prejudgment interest (7% × 63/365 from July 15, 2026) = $45,543.70. Served CCP §425.115 $500,000 recited as cap; $0 punitive asked. Costs waived (FW-003). No CCP §425.11; general damages and lost wages omitted. Fees $0. CCP §579 several judgment; The RK Logistics Group, Inc. remains. Generator: internal/scripts/matter27-randstad-prove-up-packet.py. Not yet filed. Mail CCP §587 copies to Williams and CSC with the CIV-100.",
+    "matters": [
+      27
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-27/Default Judgment Prove-Up Packet - Randstad US LLC (Court Judgment, Sep 16 2026).pdf",
+    "source_type": "portfolio",
+    "confidence": "high",
+    "verified_at": "2026-09-16"
+  },
+  {
     "date": "Oct. 31, 2026",
-    "event": "CRC 3.110(h) — obtain a default judgment as to Randstad US, LLC within 45 days after entry of default (entered Sep. 16, 2026), unless the court grants more time. Oct. 31, 2026 is a Saturday; CCP §12a carries to Monday, Nov. 2, 2026 if the clerk is closed. This is not a clerk money judgment. Prove-up is a later filing. Item 2 of the entered CIV-100 is blank. Do not attach a new 425.115; the amended notices were personally served Aug. 21, 2026.",
+    "event": "CRC 3.110(h) — obtain a default judgment as to Randstad US, LLC within 45 days after entry of default (entered Sep. 16, 2026), unless the court grants more time. Oct. 31, 2026 is a Saturday; CCP §12a carries to Monday, Nov. 2, 2026 if the clerk is closed. Prove-up packet is prepared (not yet filed): $45,543.70. Do not attach a new 425.115; the amended notices were personally served Aug. 21, 2026.",
     "matters": [
       27
     ],

@@ -176,7 +176,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | 24 | Newanforbi v. Serrato | 3:26-cv-05953-CRB | USDC N.D. Cal. (San Francisco Division) | Federal | MTD Nov. 20 10:00 a.m. Zoom (Breyer); CMC continued |
 | 25 | Newanforbi v. Federal Express Corporation | 2:26-cv-02881-DAD-SCR | USDC E.D. Cal. (Sacramento Div.) | Federal | Report mailed Sep. 14; Zoom Oct. 8 |
 | 26 | Newanforbi v. United Parcel Service, Inc. | 2:26-cv-02847-DAD-CKD | USDC E.D. Cal. (Sacramento Div.) | Federal | Dkt. 14 reply filed — hearing Oct. 7 |
-| 27 | Newanforbi v. Randstad, et al. | 26CV199902 | Alameda Sup. Ct. (Rene C. Davidson Courthouse) | State | Randstad default entered 9/16 — not RK |
+| 27 | Newanforbi v. Randstad, et al. | 26CV199902 | Alameda Sup. Ct. (Rene C. Davidson Courthouse) | State | Randstad prove-up ready — not RK |
 | 28 | Newanforbi v. Shannon Smith, LCSW, CEO, et al. | 3:26-cv-07504-LJC | USDC N.D. Cal. | Federal | M&C exhausted — answer Sep. 21 |
 | 29 | Newanforbi v. Amazon.com Services, LLC | 4:26-cv-09249-ASK | USDC N.D. Cal. (Oakland; formerly 3:26-cv-09249-ASK) | Federal | Plaintiff consent filed — both answers Sep. 22 |
 | 30 | Newanforbi v. Moua, et al. | TBD | USDC N.D. Cal. | Federal | Pre-filing — GCA claim pending; Moua-only complaint ready |

@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1244,
-  "totalBytes": 871892303,
+  "fileCount": 1251,
+  "totalBytes": 878932724,
   "files": [
     {
       "path": "/documents/_form-library/ao440-blank-template.pdf",
@@ -12,6 +12,11 @@
       "path": "/documents/_form-library/civ100-blank-template.pdf",
       "size": 170634,
       "sha256": "9bd74f5b9d67ef00998986c1755383cb06ef9de7519130a100be28d991019e15"
+    },
+    {
+      "path": "/documents/_form-library/civ110-blank-template.pdf",
+      "size": 1358627,
+      "sha256": "95f8d4a98e5bf4d5383b62886413f54b1e8b9e59e4be1daa9d2e26662e64e774"
     },
     {
       "path": "/documents/_form-library/cm010-blank-template.pdf",
@@ -47,6 +52,11 @@
       "path": "/documents/_form-library/js44-civil-cover-sheet-blank-template.pdf",
       "size": 891309,
       "sha256": "8128d7deb3f60194a0af3f8e0baa2ca7c226fd0f888464f318904399581c51b6"
+    },
+    {
+      "path": "/documents/_form-library/jud100-blank-template.pdf",
+      "size": 134413,
+      "sha256": "5561524d6bda15b38e03c76e693240f755c459b12a05ad61121d245bf4fde6e3"
     },
     {
       "path": "/documents/_form-library/ndcal-mj-consent-declination-blank-template.pdf",
@@ -1039,7 +1049,7 @@
       "sha256": "f0f7c24c5ca36cd6b45ac270cd171da0c8c5b8dbdf5804cfd93d82563b670ba5"
     },
     {
-      "path": "/documents/matter-12/018 Request for Sheriff Service + Fee Waiver : CC Auth \u2014 Ngwa Nforbi v. Diamond Truc.pdf",
+      "path": "/documents/matter-12/018 Request for Sheriff Service + Fee Waiver : CC Auth — Ngwa Nforbi v. Diamond Truc.pdf",
       "size": 40998,
       "sha256": "c27e93998452da4a50fc081a30c39c36d99d3bb88c879fdd853c14ada4133504"
     },
@@ -1579,7 +1589,7 @@
       "sha256": "75490eafd07533965b7cf9aab18a19970c9b6ef2d6f432d9fbd551254772bb35"
     },
     {
-      "path": "/documents/matter-19/Exhibit A Cover \u2014 Petition for Writ of Habeas Corpus (HC-004 Attachment).pdf",
+      "path": "/documents/matter-19/Exhibit A Cover — Petition for Writ of Habeas Corpus (HC-004 Attachment).pdf",
       "size": 2049,
       "sha256": "77bb842edaf0f19a10e3b73706d98ac3b36245004c91a5a08e776c7411e1f1a0"
     },
@@ -1599,12 +1609,12 @@
       "sha256": "6799967fa187ef88c25f1179ea60aeb51899278c34c6eefa773637ad460cc9b7"
     },
     {
-      "path": "/documents/matter-19/HC-004 Notice and Request for Ruling Packet (with Exhibit A \u2014 Unstamped Petition) (Ready to File Aug 17 2026).pdf",
+      "path": "/documents/matter-19/HC-004 Notice and Request for Ruling Packet (with Exhibit A — Unstamped Petition) (Ready to File Aug 17 2026).pdf",
       "size": 24424353,
       "sha256": "3dedcd2cbeda6c125e4b4b9c7ea85d5cb247874c0e41b78e3c0f1db4d3e6b178"
     },
     {
-      "path": "/documents/matter-19/HC-004 Notice and Request for Ruling Packet (with Exhibit A \u2014 Unstamped Petition) (Ready to File Aug 7 2026).pdf",
+      "path": "/documents/matter-19/HC-004 Notice and Request for Ruling Packet (with Exhibit A — Unstamped Petition) (Ready to File Aug 7 2026).pdf",
       "size": 24424352,
       "sha256": "ea161e502031b4a01a9df56def1b26999062583a20ed08e2451d4b7942834de2"
     },
@@ -2704,6 +2714,11 @@
       "sha256": "aadb5dfe236478181d75777327f8495ccc8be8cfed54e37abaf52285439e006d"
     },
     {
+      "path": "/documents/matter-27/[Proposed] Judgment (JUD-100) - Randstad US LLC (Default Prove-Up, Sep 16 2026).pdf",
+      "size": 173023,
+      "sha256": "4009adfe4ed61a3aec7cabe8e0ce5ed889d8c0a7501afa6407ccaf29f4f1dacc"
+    },
+    {
       "path": "/documents/matter-27/[Proposed] Order Extending Time for Randstad to Respond (Plaintiff Counterpart, Sep 14 2026).docx",
       "size": 38596,
       "sha256": "364b307842e8b00792810d3b3de16e6a7881cf2e50f05258e91b880d9a582dfb"
@@ -2729,6 +2744,11 @@
       "sha256": "de6941dec8ec0582afcbed483e15e71093150d9b511aa2719ae26a8d32da5b32"
     },
     {
+      "path": "/documents/matter-27/CIV-100 Request for Court Judgment - Randstad US LLC (Default Previously Entered, Sep 16 2026).pdf",
+      "size": 501849,
+      "sha256": "64e0aff617cf9b8ab7bcb43b23a23b0037e9ee280ec2dede4866d2dcf651866f"
+    },
+    {
       "path": "/documents/matter-27/CIV-100 Request for Entry of Default - Randstad US LLC (Clerk Default Only, Sep 16 2026).pdf",
       "size": 499956,
       "sha256": "308d421aa32e166f4a2b12a3dddd12720a37e923345c49be2045a75cdda08677"
@@ -2744,6 +2764,11 @@
       "sha256": "b9e97a2b5730af8f7ff6582a7b828e0c24f6f81ec2fbb4367af86a766d2da4cd"
     },
     {
+      "path": "/documents/matter-27/CIV-110 Request for Dismissal of Does 1-20 (Without Prejudice, Executed Sep 16 2026).pdf",
+      "size": 1657169,
+      "sha256": "8d070fc9dbf60de89e36e3640c638760d57f23a618f30a7de517e43718884b0c"
+    },
+    {
       "path": "/documents/matter-27/CIV-141 Declaration of Demurring or Moving Party - The RK Logistics Group Inc (Gurney, Sep 14 2026).pdf",
       "size": 847978,
       "sha256": "353cc46244d9b79edd4c8aa9d2591884e33ba12829b790da1f91d0ed11ab8baa"
@@ -2757,6 +2782,16 @@
       "path": "/documents/matter-27/Complete Filing Packet - Newanforbi v Randstad US LLC et al (Jul 20-21 2026).pdf",
       "size": 2728606,
       "sha256": "95e2feb37ede8046ddd53adba5b8e0608674943ffe82cba72491aa6b508cda32"
+    },
+    {
+      "path": "/documents/matter-27/Declaration of Brendan Ngehsi Newanforbi ISO Default Judgment by Court - Randstad US LLC (Sep 16 2026).pdf",
+      "size": 229722,
+      "sha256": "eefe31b21ecb669d8f6ae6e66167ebf5de1a2b54709f283a9c476f4892be28d8"
+    },
+    {
+      "path": "/documents/matter-27/Default Judgment Prove-Up Packet - Randstad US LLC (Court Judgment, Sep 16 2026).pdf",
+      "size": 2985618,
+      "sha256": "239ee319933de824ebdeb629e2e61dc20ebbe278e5a0f87017a2da73ba3ffd12"
     },
     {
       "path": "/documents/matter-27/DO NOT SIGN - Randstad Proposed Order re Extension (Counsel Draft Sep 14 2026).docx",
@@ -4389,17 +4424,17 @@
       "sha256": "5abda668a8e4846e5dbc72f46c73151ad42aac99e78518308a07cc44d50c9610"
     },
     {
-      "path": "/documents/matter-30/CASOMB Complaint Submission \u2013 HOPE Psychotherapy, Inc. 2.pdf",
+      "path": "/documents/matter-30/CASOMB Complaint Submission – HOPE Psychotherapy, Inc. 2.pdf",
       "size": 83191,
       "sha256": "dc4061596765570a06d4e86f38db4d34f71fb386904d98ee7bfe821d13256f16"
     },
     {
-      "path": "/documents/matter-30/CASOMB Complaint Submission \u2013 HOPE Psychotherapy, Inc. 3.pdf",
+      "path": "/documents/matter-30/CASOMB Complaint Submission – HOPE Psychotherapy, Inc. 3.pdf",
       "size": 45518,
       "sha256": "ce8099b1e920e74cee0dd78ff9282e74706a93d3ffc90907bfadd5057472bbf4"
     },
     {
-      "path": "/documents/matter-30/CASOMB Complaint Submission \u2013 HOPE Psychotherapy, Inc. 4.pdf",
+      "path": "/documents/matter-30/CASOMB Complaint Submission – HOPE Psychotherapy, Inc. 4.pdf",
       "size": 40474,
       "sha256": "1437c5d712b6b46fcb907c00bf50bd79f6265c528037923266299cda908e6824"
     },
