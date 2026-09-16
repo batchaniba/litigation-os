@@ -1,24 +1,24 @@
 #!/usr/bin/env python3
 """Matter 27 — clerk's Request for Entry of Default (CIV-100) as to each defendant.
 
-Alameda Super. Ct. No. 26CV199902, Dept. 20 (Hon. Karin Schwartz).
+Alameda Super. Ct. No. 26CV199902, Dept. 20 (Hon. Thomas Weathers).
 
 These are clerk-default papers only. They do not ask for a clerk's judgment or
-a court judgment. CCP §425.115 notices have been e-filed but not personally
-served, so punitive damages cannot ride a default. Prove-up is a later filing.
+a court judgment. Punitive damages stay off the CIV-100 (no item 2 money);
+the amended CCP §425.115 notices were personally served August 21, 2026.
 
-Do not e-file until:
-  - RK Logistics: after September 14, 2026, if nothing is on the docket
-    (answer, demurrer, or CIV-141). First fileable date: September 15, 2026.
-  - Randstad: after September 15, 2026, same check. First fileable date:
-    September 16, 2026.
+Randstad US, LLC: default ENTERED September 16, 2026 (conformed CIV-100 on
+file). Do not regenerate over that stamped copy. CRC 3.110(h) then runs 45
+days from entry to obtain a default judgment.
 
-Plaintiff granted those dates by party agreement. Filing earlier would break
-the extension. CRC 3.110(h) then gives ten days to request default.
+The RK Logistics Group, Inc.: still HOLD. Do not e-file until eCourt is
+checked for Gurney's September 14 CIV-141 (or an answer / demurrer /
+stipulation). Prepared papers are dated September 15, 2026.
 
   python3 internal/scripts/matter27-request-for-default.py
 
-FILED_STATUS: False until e-filed and the CCP §587 copies have been mailed.
+FILED_STATUS: Randstad entered 09/16/2026; RK remains False until e-filed
+and the CCP §587 copies have been mailed.
 """
 from __future__ import annotations
 
@@ -337,43 +337,36 @@ HOLD_PATH = REPO / "internal" / "docs" / (
     "HOLD - Request for Default Randstad and RK (do not file until deadline).txt"
 )
 
-HOLD_TEXT = """HOLD — do not e-file these CIV-100s until the response dates pass and the docket is still empty.
+HOLD_TEXT = """HOLD — RK Logistics CIV-100 only. Randstad default is already entered.
 
 Matter 27 — Newanforbi v. Randstad US, LLC et al., Alameda Super. Ct. No. 26CV199902
-Dept. 20, Hon. Karin Schwartz.
+Dept. 20, Hon. Thomas Weathers.
 
-These are clerk's requests for ENTRY OF DEFAULT only (CIV-100 item 1c). They do not
-ask for a clerk's judgment or a court judgment. Punitive damages stay off these
-CIV-100s because they are clerk-default only (no item 2 money). The amended
-CCP §425.115 notices were personally served August 21, 2026; POS-040s were
-filed September 9, 2026. Do not attach the 425.115 notices to the CIV-100s.
+Randstad US, LLC — DONE
+- CIV-100 (item 1c only) Electronically Received 09/16/2026 06:28 AM.
+- FILE stamp 09/16/2026, Deputy S. Pesko. Default ENTERED as requested on 09/16/2026.
+- No clerk's judgment. No court judgment. No item 2 money.
+- CRC 3.110(h): obtain a default judgment within 45 days of entry
+  (Oct. 31, 2026; CCP §12a to Mon. Nov. 2 if the clerk is closed Saturday).
+- Same-day CCP §587 mailing was declared to Williams and CSC. Mail the copies
+  if that has not already gone out.
 
-When to file
-- The RK Logistics Group, Inc. — after September 14, 2026. Papers are dated
-  September 15, 2026.
-- Randstad US, LLC — after September 15, 2026. Papers are dated September 16, 2026.
+The RK Logistics Group, Inc. — still HOLD
+- Do not e-file the RK CIV-100 until eCourt shows no accepted CIV-141, answer,
+  demurrer, motion to strike, or stipulation. Tai served Gurney's CIV-141 on
+  Sept. 14; the served copy had no clerk stamp.
+- Prepared papers remain dated September 15, 2026.
+- Same-day mailing if filed: Melinda Garcia, Garcia & Gurney, ALC, 6600 Koll
+  Center Parkway, Suite 200, Pleasanton, CA 94566; and RK c/o CSC - Lawyers
+  Incorporating Service, 2710 Gateway Oaks Drive, Suite 150N, Sacramento,
+  CA 95833.
 
-Do not file if the eCourt docket that morning shows an answer, a demurrer, a
-motion to strike, a CIV-141 (automatic 30-day §430.41 extension), or a filed
-stipulation extending time. Check One Legal / Alameda eCourt the morning of
-filing. Plaintiff granted those dates; filing earlier breaks the agreement.
-
-CRC 3.110(h) then gives ten days after the time to respond has elapsed.
-
-Same-day mailing (CCP §587) — first-class, postage prepaid
-- RK: Melinda Garcia, Garcia & Gurney, ALC, 6600 Koll Center Parkway, Suite 200,
-  Pleasanton, CA 94566; and The RK Logistics Group, Inc., c/o CSC - Lawyers
-  Incorporating Service, 2710 Gateway Oaks Drive, Suite 150N, Sacramento, CA 95833.
-- Randstad: Chadwick L. Williams, Kabat Chapman & Ozmer LLP, 1150 Spring Street
-  NW, Suite 800, Atlanta, GA 30309; and Randstad US, LLC at the same CSC address.
-
-E-file on Alameda / One Legal as Request for Default (or the clerk's closest
-document type). Do not attach the 425.115 notices. POS-010s are already accepted
-(Aug. 7). Mail the CIV-100 copies the same day.
+Do not attach the 425.115 notices to a clerk-default CIV-100. The amended
+notices were personally served August 21, 2026; POS-040s filed September 9.
 
 Files
+- internal/public/documents/matter-27/CIV-100 Request for Entry of Default - Randstad US LLC (Default Entered, Filed Sep 16 2026).pdf
 - internal/public/documents/matter-27/CIV-100 Request for Entry of Default - RK Logistics Group Inc (Clerk Default Only, Sep 15 2026).pdf
-- internal/public/documents/matter-27/CIV-100 Request for Entry of Default - Randstad US LLC (Clerk Default Only, Sep 16 2026).pdf
 """
 
 
@@ -383,7 +376,7 @@ def main() -> None:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     HOLD_PATH.write_text(HOLD_TEXT)
     print(f"Wrote {HOLD_PATH.relative_to(REPO)}")
-    for target in (RK, RANDSTAD):
+    for target in (RK,):
         doc = fill_civ100(target)
         out = OUT_DIR / target.out_name
         tmp = out.with_suffix(out.suffix + ".tmp")
