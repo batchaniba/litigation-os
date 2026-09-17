@@ -1,0 +1,133 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://portfolio.local/index/schema.json",
+  "title": "Litigation portfolio machine graph",
+  "description": "Contract, not a throttle. Types so two agents write the same shape. docket.json is how to find a hearing without reading a diary. events.jsonl is append-only — do not rewrite history in procedural_status. Never invent a docket number; if dkt is null, say so. filed is a field, not a vibe. The index is the front door. status_label maxLength is a UI chip. An overdue next_clock is a fact. Do not fabricate the docket.",
+  "x-contract": {
+    "events_append_only": true,
+    "invent_docket_numbers": false,
+    "docket_line_ceiling": null,
+    "events_line_ceiling": null,
+    "status_label_chars": 60,
+    "overdue_fails_schema": false,
+    "agent_output_caps": false
+  },
+  "type": "object",
+  "properties": {
+    "matter": { "$ref": "#/$defs/matterIdentity" },
+    "docket": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/docketRow" }
+    },
+    "clocks": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/clock" }
+    },
+    "indexEntry": { "$ref": "#/$defs/indexEntry" }
+  },
+  "$defs": {
+    "matterIdentity": {
+      "type": "object",
+      "required": [
+        "number",
+        "caption",
+        "case_no",
+        "court",
+        "lifecycle",
+        "proceeding",
+        "phase",
+        "cluster",
+        "type",
+        "filed",
+        "judge",
+        "archived"
+      ],
+      "properties": {
+        "number": { "type": "integer", "minimum": 1 },
+        "caption": { "type": "string", "minLength": 1 },
+        "case_no": { "type": "string" },
+        "former_case_no": { "type": "string" },
+        "court": { "type": "string", "minLength": 1 },
+        "lifecycle": { "type": "string" },
+        "proceeding": { "type": "string" },
+        "phase": { "type": "string" },
+        "cluster": { "type": "integer" },
+        "related": {
+          "type": "array",
+          "items": { "type": "integer" }
+        },
+        "same_incident": { "type": "string" },
+        "type": { "type": "string" },
+        "filed": { "type": "string" },
+        "judge": { "type": "string" },
+        "judge_id": { "type": "string" },
+        "last_updated": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$", "description": "Last date the matter identity record was touched. Staleness metadata for agents and the fuse board." },
+        "status_label": { "type": "string", "maxLength": 60 },
+        "courtlistener": { "type": "object" }
+      }
+    },
+    "docketRow": {
+      "type": "object",
+      "required": ["path"],
+      "properties": {
+        "dkt": { "type": ["integer", "null"] },
+        "date": { "type": ["string", "null"] },
+        "filer": { "type": "string" },
+        "type": { "type": "string" },
+        "title": { "type": "string" },
+        "path": { "type": "string", "pattern": "^/documents/" },
+        "filed": { "type": "boolean" },
+        "operative": { "type": "boolean" },
+        "packet": { "type": "string" },
+        "superseded_by": { "type": "string" }
+      }
+    },
+    "clock": {
+      "type": "object",
+      "required": ["id", "kind", "status"],
+      "properties": {
+        "id": { "type": "string" },
+        "date": { "type": ["string", "null"] },
+        "kind": { "type": "string" },
+        "status": {
+          "type": "string",
+          "enum": ["open", "set", "contingent", "vacated", "satisfied", "undated"]
+        },
+        "source_dkt": { "type": ["integer", "null"] },
+        "title": { "type": "string" }
+      }
+    },
+    "indexEntry": {
+      "type": "object",
+      "required": ["number", "path", "layout", "case_no", "phase", "lifecycle"],
+      "properties": {
+        "number": { "type": "integer" },
+        "path": { "type": "string" },
+        "layout": { "enum": ["split", "legacy"] },
+        "case_no": { "type": "string" },
+        "phase": { "type": "string" },
+        "lifecycle": { "type": "string" },
+        "next_clock": { "type": ["object", "null"] },
+        "overdue": { "type": "boolean" }
+      }
+    },
+    "documentSidecar": {
+      "type": "object",
+      "required": ["path", "doc_type"],
+      "properties": {
+        "path": { "type": "string" },
+        "dkt": { "type": ["integer", "null"] },
+        "date": { "type": ["string", "null"] },
+        "author": { "type": "string" },
+        "pages": { "type": ["integer", "null"] },
+        "doc_type": { "type": "string" },
+        "cites": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "holds_one_liner": { "type": "string" },
+        "extract": { "enum": ["pdftotext", "hand", "pending"] }
+      }
+    }
+  }
+}

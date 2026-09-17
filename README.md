@@ -173,22 +173,22 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | 19 | Newanforbi v. Macomber | C2604791 | Santa Clara Sup. Ct. | State | HC-004 filed Sep. 1 — ruling due Oct. 1 |
 | 20 | Newanforbi v. California Highway Patrol, et al. | 26CV191136 | Alameda Sup. Ct. | State | Leave to amend Count 4 — due Sep. 20 |
 | 22 | Newanforbi v. Pilot Travel Centers LLC | STK-CV-UWT-2026-0007649 | San Joaquin Sup. Ct. | State | Settled Jul. 14, 2026 ($35,000) |
-| 24 | Newanforbi v. Serrato | 3:26-cv-05953-CRB | USDC N.D. Cal. (San Francisco Division) | Federal | MTD Nov. 20 10:00 a.m. Zoom (Breyer); CMC continued |
+| 24 | Newanforbi v. Serrato | 3:26-cv-05953-CRB | USDC N.D. Cal. (San Francisco Division) | Federal | MTD Nov. 20 Zoom — briefing closed |
 | 25 | Newanforbi v. Federal Express Corporation | 2:26-cv-02881-DAD-SCR | USDC E.D. Cal. (Sacramento Div.) | Federal | Report mailed Sep. 14; Zoom Oct. 8 |
 | 26 | Newanforbi v. United Parcel Service, Inc. | 2:26-cv-02847-DAD-CKD | USDC E.D. Cal. (Sacramento Div.) | Federal | Dkt. 14 reply filed — hearing Oct. 7 |
-| 27 | Newanforbi v. Randstad, et al. | 26CV199902 | Alameda Sup. Ct. (Rene C. Davidson Courthouse) | State | Randstad default entered 9/16 — not RK |
+| 27 | Newanforbi v. Randstad, et al. | 26CV199902 | Alameda Sup. Ct. (Rene C. Davidson Courthouse) | State | RK appeared — Randstad silent Sep. 15 |
 | 28 | Newanforbi v. Shannon Smith, LCSW, CEO, et al. | 3:26-cv-07504-LJC | USDC N.D. Cal. | Federal | M&C exhausted — answer Sep. 21 |
 | 29 | Newanforbi v. Amazon.com Services, LLC | 4:26-cv-09249-ASK | USDC N.D. Cal. (Oakland; formerly 3:26-cv-09249-ASK) | Federal | Plaintiff consent filed — both answers Sep. 22 |
-| 30 | Newanforbi v. Moua, et al. | TBD | USDC N.D. Cal. | Federal | Pre-filing — GCA claim pending; Moua-only complaint ready |
-| 31 | Newanforbi v. First Advantage LLC | TBD | San Joaquin Sup. Ct. (anticipated) | State | Pre-filing |
-| 32 | Nforbi v. Meza-Gonzalez, et al | 3:26-cv-08271-PHK | USDC N.D. Cal. (related to Serrato 3:26-cv-05953-CRB per Aug. 24, 2026 order; also related Candelaria 3:26-cv-08272-LJC) | Federal | Meza POS filed Sep. 14; send Li return |
+| 30 | Newanforbi v. Moua, et al. | TBD | USDC N.D. Cal. | Federal | Pre-filing — Moua v9 ready; GCA window open |
+| 31 | Newanforbi v. First Advantage LLC | TBD | San Joaquin Sup. Ct. (anticipated) | State | Pre-filing — no demand or complaint yet |
+| 32 | Nforbi v. Meza-Gonzalez, et al | 4:26-cv-08271-ASK | USDC N.D. Cal. (Oakland; 4:26-cv-08271-ASK; opened as 3:26-cv-08271-PHK; related Serrato 3:26-cv-05953-CRB and Candelaria 3:26-cv-08272-LJC) | Federal | 415.20 papers Sep. 16 — file decl after mail |
 | 33 | Nforbi v. Candelaria et al. | 3:26-cv-08272-LJC | USDC N.D. Cal. (San Francisco Div.) | Federal | AG answered; name stip accepted — wait to file |
 | 34 | Newanforbi v. Counseling and Psychotherapy Center, Inc., et al. | TBD | USDC N.D. Cal. (San Jose Div.) / Santa Clara Sup. Ct. | Federal | Pre-filing — intake & compliance monitoring |
 | 35 | Ngwa Nforbi v. Ross Stores, Inc., et al. | 26CV501995 | Santa Clara Sup. Ct. (Downtown / First Street) | State | File caption request — then serve Ross ~Oct 25 |
-| 36 | Brendan Ngwa Nforbi v. AT&T Mobility Services LLC | TBD | San Joaquin Sup. Ct. (executed packet; not yet filed) | State | Executed — unfiled |
-| 37 | Brendan Ngwa Nforbi v. Home Depot U.S.A., Inc. | TBD | San Joaquin Sup. Ct. (executed packet; not yet filed) | State | Executed — unfiled |
-| 38 | Brendan Ngwa Nforbi v. Swift Transportation Co. of Arizona LLC | TBD | San Joaquin Sup. Ct. (executed packet; not yet filed) | State | Executed — unfiled |
-| 39 | Brendan Ngwa Nforbi v. Best Buy Co., Inc. | TBD | San Joaquin Sup. Ct. (executed packet; not yet filed) | State | Executed — unfiled |
+| 36 | Brendan Ngwa Nforbi v. AT&T Mobility Services LLC | TBD | USDC E.D. Cal. (Sep. 16 walk-up; unfiled) / San Joaquin Sup. Ct. (Sep. 8 packet LOCKED, unfiled) | Federal | EDCA walk-up Sep. 16 — unfiled |
+| 37 | Brendan Ngwa Nforbi v. Home Depot U.S.A., Inc. | TBD | USDC E.D. Cal. (Sep. 16 walk-up; unfiled) / San Joaquin Sup. Ct. (Sep. 8 packet LOCKED, unfiled) | Federal | EDCA walk-up Sep. 16 — unfiled |
+| 38 | Brendan Ngwa Nforbi v. Swift Transportation Co. of Arizona LLC | TBD | USDC E.D. Cal. (Sep. 16 walk-up; unfiled) / San Joaquin Sup. Ct. (Sep. 8 packet LOCKED, unfiled) | Federal | EDCA walk-up Sep. 16 — unfiled |
+| 39 | Brendan Ngwa Nforbi v. Best Buy Co., Inc. | TBD | USDC E.D. Cal. (Sep. 16 walk-up; unfiled) / San Joaquin Sup. Ct. (Sep. 8 packet LOCKED, unfiled) | Federal | EDCA walk-up Sep. 16 — unfiled |
 | 40 | Brendan Ngwa Nforbi v. Uber Technologies, Inc. | TBD | TBD (pre-dispute — offer received Sep. 14, 2026) | State | Pending — start on hold |
 <!-- PORTFOLIO:ACTIVE_MATTERS:END -->
 
@@ -233,14 +233,15 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 <!-- PORTFOLIO:UPCOMING_DEADLINES:START -->
 | Date | Matter | Event |
 |---|---|---|
+| Sep. 16, 2026 | 27 | FILE IF SILENT — e-file CIV-100 Request for Entry of Default as to Randstad US, LLC (clerk default only, item 1c). First fileable the day after Randstad's Sept. 15 response date. |
 | Sep. 16, 2026 | 26 | Rule 15(a)(1)(B) amendment-as-of-right window — Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). UPS served the MTD by mail Aug. 26, 2026 (ECF 7-3). 21 days after service is Sep. 16 |
 | Sep. 16, 2026 | 30 | Anticipated filing date (computed) — Complaint v9 (Moua and DOES 1-10), Newanforbi v. Moua, et al. (Matter 30); 15 days after the anticipated Sep. 1, 2026 deemed rejection |
+| Sep. 17, 2026 | 32 | FILE — signed 415.20(b) declaration + Exhibit A USPS receipt + POS in Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK) after the September 16 postmark. San Jose clerk. Serve Li / Melano / Meza. |
 | Sep. 17, 2026 | 40 | WATCH — First Advantage saliva-drug-test schedule for TaskUs Holdings, Inc. expires 11:49 a.m. Eastern (Schedule ID 96558696; LabCorp-Milpitas). A missed collection is a non-registry basis they can use. |
 | Sep. 18, 2026 | 27 | EXPIRES — $25,000 final early global settlement demand in Newanforbi v. Randstad US, LLC et al. (26CV199902), sent Sept. 12, 2026, 8:00 a.m. Expires automatically at 5:00 p.m. Pacific Time. |
 | Sep. 20, 2026 | 20 | AMENDMENT DUE (optional) — if Petitioner elects to amend Count 4, file and serve an amended Petition within 20 days of notice of entry of the August 29, 2026 Whitman order. |
 | Sep. 21, 2026 | 28 | Responsive pleading deadline (computed) — Shannon Smith, LCSW, and HOPE Psychotherapy, Inc., Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504-LJC) |
 | Sep. 21, 2026 | 26 | 28 U.S.C. §1447(c) remand window closes (computed) — Newanforbi v. United Parcel Service, Inc., USDC E.D. Cal. No. 1:26-at-03195. |
-| Sep. 21, 2026 | 28 | Responsive pleading deadline (computed) — Shannon Smith, LCSW, and HOPE Psychotherapy, Inc., Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504-LJC) |
 | Sep. 22, 2026 | 33 | WATCH — Defendants' consent or declination to magistrate-judge jurisdiction due in Nforbi v. Candelaria et al. (3:26-cv-08272-LJC). Set by Dkt. 12 (Sep. 8, text-only clerk's notice). |
 | Sep. 22, 2026 | 29 | Accurate Background LLC responsive pleading deadline (extended) — Newanforbi v. Amazon.com Services, LLC et al. (Matter 29, N.D. Cal. No. 4:26-cv-09249-ASK). |
 | Sep. 22, 2026 | 29 | Amazon.com Services, LLC responsive pleading deadline (extended) — Newanforbi v. Amazon.com Services, LLC et al. (Matter 29, N.D. Cal. No. 4:26-cv-09249-ASK). |
@@ -257,23 +258,22 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | Oct. 15, 2026 | 28 | Case Management Statement due — Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504), USDC N.D. Cal. |
 | Oct. 16, 2026 | 20 | Hearing on CHP demurrer and the individual respondents' joinders/demurrers to the Petition for Writ of Mandate, Newanforbi v. California Highway Patrol, et al. (Matter 20) — Dept. 25 |
 | Oct. 17, 2026 | 39 | OUTER BOUND — CCP § 338(a) three-year statutory-liability clock on the Best Buy § 290.46(j) count if accrual is the Oct. 17, 2023 offer / same-day screen week. The file has no dated rejection. |
+| Oct. 19, 2026 | 32 | WATCH — Meza-Gonzalez Rule 12(a) responsive deadline (computed from a September 16, 2026 CCP § 415.20(b) mailing) in Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK). |
+| Oct. 20, 2026 | 20 | WATCH — CHP written responses to RFP Set One (Count 1) in Newanforbi v. CHP et al. (26CV191136). Clock is October 20 if the September 16 email to Ing is valid electronic service |
 | Oct. 22, 2026 | 33 | Deadline to file ADR Certification (ADR L.R. 3) and to meet and confer regarding initial disclosures, early settlement, ADR process selection, and a discovery plan (Fed. R. Civ. P. 26(f)) — Nforbi v. |
 | Oct. 22, 2026 | 28 | Initial Case Management Conference — Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504), 1:30 PM, Hon. Lisa J. Cisneros, San Francisco (videoconference only) |
 | Oct. 23, 2026 | 20 | Continued hearing on the Dutra joinder and demurrer to the Petition for Writ of Mandate, Newanforbi v. California Highway Patrol, et al. (Matter 20) — Dept. 25 |
 | Oct. 25, 2026 | 35 | OPEN TASK — Serve Ross Stores, Inc. and Ross Dress for Less, Inc. in Matter 35 (26CV501995) with the Verified Complaint, issued Summons, ADR Information Sheet, and clerk-stamped CV-5012 Civil Lawsuit Notice (via C T… |
 | Oct. 28, 2026 | 20 | Case Management Conference (continued from Sep. 2, 2026) — Newanforbi v. CHP et al. (26CV191136), 4:00 p.m., Dept. 25, Rene C. Davidson Courthouse, Hon. Jenna M. Whitman. |
-| Oct. 31, 2026 | 27 | CRC 3.110(h) — obtain a default judgment as to Randstad US, LLC within 45 days after entry of default (entered Sep. 16, 2026), unless the court grants more time. Oct. 31, 2026 is a Saturday |
 | Nov. 1, 2026 | 1, 2, 32 | CCP §335.1 two-year statute of limitations (computed) backstop, running from the Nov. 1, 2024 incident. (1) Matter 1's Fourth Amendment §1983 claim (borrowed two-year period): Matter 1 was voluntarily dismissed without… |
 | Nov. 5, 2026 | 33 | Deadline to make initial disclosures (Fed. R. Civ. P. 26(a)(1)) and to file the Joint Case Management Statement (Standing Order for All Judges of the Northern District of California) — Nforbi v. |
 | Nov. 10, 2026 | 29 | Deadline to file ADR Certification (ADR L.R. 3) and to meet and confer regarding initial disclosures, early settlement, ADR process selection, and a discovery plan (Fed. R. Civ. P. 26(f)) — Newanforbi v. |
 | Nov. 12, 2026 | 33 | Initial Case Management Conference, 1:30 p.m. by Zoom (cand.uscourts.gov/ljc) before Magistrate Judge Lisa J. Cisneros — Nforbi v. Candelaria et al. (3:26-cv-08272-LJC), set by the Dkt. 4 order. |
 | Nov. 12, 2026 | 32 | Deadline to file ADR Certification (ADR L.R. 3) and to meet and confer regarding initial disclosures, early settlement, ADR process selection, and a discovery plan (Fed. R. Civ. P. 26(f)) — Nforbi v. |
+| Nov. 16, 2026 | 24 | DEADLINE — Appearance list for the Nov. 20, 2026 Serrato MTD Zoom (Dkt. 18 / Dkt. 30) is due to crbcrd@cand.uscourts.gov by 3:00 p.m. Pacific. Names and emails. Newanforbi v. Serrato (3:26-cv-05953-CRB). |
 | Nov. 20, 2026 | 24 | HEARING — Defendant Serrato's Motion to Dismiss FAC (Dkt. 18) — 10:00 a.m., Zoom webinar, San Francisco, Hon. Charles R. Breyer — Newanforbi v. Serrato (3:26-cv-05953-CRB). |
-| Nov. 20, 2026 | 24 | HEARING — Motion to Dismiss FAC (Dkt. 18) in Newanforbi v. Serrato (3:26-cv-05953-CRB), 10:00 a.m., San Francisco videoconference only (Zoom webinar) before Hon. Charles R. Breyer. |
 | Nov. 24, 2026 | 29 | Deadline to make initial disclosures (Fed. R. Civ. P. 26(a)(1)) and to file the Joint Case Management Statement (Standing Order for All Judges of the Northern District of California) — Newanforbi v. |
-| Nov. 25, 2026 | 32 | Deadline to make initial disclosures (Fed. R. Civ. P. 26(a)(1)) and to file the Joint Case Management Statement (Standing Order for All Judges of the Northern District of California) — Nforbi v. |
 | Dec. 1, 2026 | 29 | Initial Case Management Conference, 1:30 p.m. by Zoom (cand.uscourts.gov/ask) before Magistrate Judge Ajay S. Krishnan — Newanforbi v. Amazon.com Services, LLC et al. (4:26-cv-09249-ASK), set by Dkt. 9. |
-| Dec. 2, 2026 | 32 | Initial Case Management Conference, 11:00 a.m., Courtroom F, 450 Golden Gate Ave., San Francisco, before Magistrate Judge Peter H. Kang — Nforbi v. Meza-Gonzalez, et al. (3:26-cv-08271-PHK), set by the Dkt. 4 order. |
 | Dec. 11, 2026 | 12 | Further Case Management Conference, 8:30 AM, Dept. 11B, Hon. Robert T. Waters — Ngwa Nforbi v. |
 | Dec. 17, 2026 | 27 | Case Management Conference, Newanforbi v. Randstad US LLC and RK Logistics Group, Inc. (Matter 27) — Hon. Thomas Weathers, Dept. 20, Rene C. Davidson Courthouse, 3:00 p.m. |
 | Jan. 12, 2027 | 35 | OPEN TASK — Matter 35 (26CV501995) meet-and-confer with appearing parties at least 30 calendar days before the Feb. 11, 2027 CMC (Santa Clara Civil Lawsuit Notice / local CMC rules). |
@@ -310,7 +310,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | N.D. Cal. §1983 Nforbi v. Candelaria et al. (Matter 33, 3:26-cv-08272-LJC) — pleaded >$214k; $0 here to avoid double-count w/ M7 | 33 | $0 | $0 | $0 |
 | §1983 Monell / Individual + Bane Act — Counseling & Psychotherapy Center (Matter 34) | 34 | $0 | $0 | $0 |
 | Unruh / False Imprisonment / Negligent Training — Ross Stores (Matter 35) | 35 | $115,000 | $345,000 | $1,035,000 |
-| San Joaquin executed packets — favorable-MTD settlement (Matters 36–39) | 36, 37, 38, 39 | $235,000 | $360,000 | $485,000 |
+| FCRA / §290 failure-to-hire — AT&T / Home Depot / Swift / Best Buy (36–39) | 36, 37, 38, 39 | $235,000 | $360,000 | $485,000 |
 | **Portfolio Total (pre-deduplication)** | | **$1,485,672** | **$3,612,072** | **$7,998,272** |
 <!-- PORTFOLIO:DAMAGES_SUMMARY:END -->
 
@@ -386,33 +386,18 @@ Plaintiff is representing himself pro se across all 40 matters. The figures belo
 - **CI:** none. The `pre-push` hook runs the gate locally; see [Local Development](#local-development).
 - **Fonts:** Cormorant Garamond (headings), DM Sans (UI)
 - **Styling:** `internal/src/styles/app.css` + component styles
-- **Matter data:** one JSON file per matter under `internal/src/data/matters/` (shell uses `summaries.json`; full records lazy-load). Structured fields (prefer over parsing prose `status`):
+- **Matter data:** `internal/src/data/matters/NN.json` (legacy) or `NN/` (split: identity + sibling tables). Index: `internal/src/data/index/matters.json`. Shell uses `summaries.json`; full records lazy-load. Structured fields (prefer over parsing prose `status`):
   - `lifecycle` — disposition: `active` | `pre_filing` | `settled` | `dismissed` | `abandoned` | `closed`
   - `proceeding` — track: `state_civil` | `federal_civil` | `mandate` | `habeas`
   - `phase` — current stage on that track (e.g. `demurrer`, `fr_pending`, `under_submission`, `responsive_deadline`; `terminal` when disposed)
 - **Timeline:** `internal/src/data/timeline.json` (full log) + generated `upcoming.json` for the shell deadline clock
-- **Documents:** `internal/public/documents/` (Matter 32: `from-01|02|20|24/` + N.D. Cal. filing under `ndcal/`; Matter 33: `incident|from-07|from-08|opinions/` + N.D. Cal. filing under `ndcal/`; blank Judicial Council templates and the portfolio Proof of Service form under `_form-library/` (see `_form-library/README.md`)). The tree is ~660 MB and growing; without it on disk, `PORTFOLIO_SKIP_DISK_DOCS=1` checks paths against `internal/src/data/documents/manifest.json` (the `pre-push` hook sets this automatically). See [DOCUMENT_STORE.md](internal/docs/DOCUMENT_STORE.md).
+- **Documents:** `internal/public/documents/` (Matter 32: `from-01|02|20|24/` + N.D. Cal. filing under `ndcal/`; Matter 33: `incident|from-07|from-08|opinions/` + N.D. Cal. filing under `ndcal/`; blank Judicial Council templates and the portfolio Proof of Service form under `_form-library/` (see `_form-library/README.md`)). The tree is ~660 MB and growing. Pull one matter with `npm run documents:pull -- --matter 24`. Without the tree on disk, `PORTFOLIO_SKIP_DISK_DOCS=1` checks paths against `internal/src/data/documents/manifest.json` (the `pre-push` hook sets this automatically). See [DOCUMENT_STORE.md](internal/docs/DOCUMENT_STORE.md).
 
-### Prose length budgets
+### Graph (records, not a diary)
 
-The free-prose matter fields carry word budgets, defined in `internal/src/utils/proseBudget.ts` and mirrored for scripts in `internal/scripts/prose-budget.mjs`:
+Crawl `internal/src/data/index/matters.json`, then the sibling file the question needs. `events.jsonl` is append-only. Never invent a docket number. `{filed: true, dkt: 18}` is on file; a draft is not. README tables are generated (`npm run generate:readme`) — do not keep them in sync by hand. Split a matter when you touch it (`npm run matter:split -- NN --replace`). Schema is a contract for shape (`internal/src/data/index/schema.json`), not a speed limit. `status_label` is a 60-character UI chip. Legacy `NN.json` prose still has word ratchets until split; the way out is to split, not to raise the number.
 
-| Field | Target | Enforcement |
-| --- | --- | --- |
-| `key_facts` | 350 words | warning over target, test failure over ceiling |
-| `procedural_status` | 400 words | warning over target, test failure over ceiling |
-| `risk` | 150 words | warning over target, test failure over ceiling |
-| `status` | 60 words | warning over target, test failure over ceiling |
-| `status_label` | 60 **characters** | validator error (`STATUS_LABEL_MAX`) |
-
-Targets are advisory — `npm run validate` warns but still exits zero, because trimming legal prose is an editorial decision. Ceilings are a ratchet pinned just above the current worst record and enforced by `proseBudget.test.js`, so prose can only get shorter. **When you trim a matter, lower its field's ceiling to match the new worst case.**
-
-Two rules keep prose inside budget:
-
-1. **Dated docket entries belong in `timeline.json`, not in `procedural_status`.** The timeline already carries them and feeds the derived status labels, badges, and deadline clock. Prose that restates the timeline is the largest single source of length.
-2. **Don't duplicate `status` across modules.** `matter_damages[]` and `lawyer_fees[]` each used to carry their own hand-maintained `status` copy; both now render `effectiveStatusLabel()` from the matter record instead, so there is one source of truth.
-
-On screen, prose over ~320 characters renders through `CollapsibleProse`, which clamps to a few lines with a "Show full …" toggle. Nothing is truncated in the DOM — print, find-in-page, and the Markdown export still see the whole record.
+On screen, prose over ~320 characters renders through `CollapsibleProse`, which clamps to a few lines with a "Show full …" toggle. That is display only. Nothing is truncated in the DOM — print, find-in-page, and the Markdown export still see the whole record.
 
 ## Citation Verification
 
@@ -470,7 +455,7 @@ Empty cursors refuse a full historical crawl unless you pass `--bootstrap`, `--a
 
 ```bash
 npm install
-npm run documents:pull   # fill internal/public/documents/ from origin/documents
+npm run documents:pull -- --matter 24   # one matter; omit flags for the whole tree
 npm run dev
 ```
 
@@ -484,6 +469,7 @@ npm run sync:summaries        # rebuild light matter summaries + document search
 npm run sync:registry         # rebuild path → label catalog
 npm run sync:manifest         # sha256 inventory of public/documents (hashes only new/resized files)
 npm run documents:pull        # restore PDFs from the documents branch (after clone)
+npm run documents:pull -- --matter 24   # one matter folder only
 npm run documents:push        # publish local PDFs to origin/documents
 npm run sync:upcoming         # rebuild upcoming.json from timeline.json for the shell
 npm run generate:readme       # regenerate marked README tables from portfolio data
@@ -559,13 +545,13 @@ npm run build   # outputs to dist/ (copies public/documents unless VITE_COPY_DOC
 npm run preview # preview the production build locally
 ```
 
-Vercel builds with `VITE_COPY_DOCUMENTS=0` and `PORTFOLIO_SKIP_DISK_DOCS=1` so they never fetch or copy the PDF library; `/documents/*` is rewritten to the GitHub Pages origin that holds the last-published copy. Details: [DOCUMENT_STORE.md](internal/docs/DOCUMENT_STORE.md).
+Vercel builds with `VITE_COPY_DOCUMENTS=0` and `PORTFOLIO_SKIP_DISK_DOCS=1` so they never fetch or copy the PDF library. `/documents/*` still has a rewrite target, but GitHub Pages 404s; phone taps are the slug copies on Vercel until R2 is live. Details: [DOCUMENT_STORE.md](internal/docs/DOCUMENT_STORE.md).
 
 ## Deployment
 
-**Vercel** serves production from the domain root, but **does not deploy on push**. The committed `vercel.json` sets `git.deploymentEnabled: false`; production advances when the scheduled Deploy Hook fires (Cloudflare Worker in `internal/workers/vercel-deploy-cron/`, four times a day, only if `main` is ahead of what is live) or when you trigger it by hand. Vercel's Ignored Build Step runs `internal/scripts/vercel-ignore-build.sh`, which skips any build whose inputs did not change. `/documents/:path*` is rewritten to the GitHub Pages copy of the library so the Vercel build does not copy 660 MB of PDFs. Dashboard settings, cost model, and the "deploy now" commands are in [VERCEL_DEPLOYS.md](internal/docs/VERCEL_DEPLOYS.md). After a fresh clone, run `npm run documents:pull` before `npm run dev`.
+**Vercel** serves production from the domain root, but **does not deploy on push**. The committed `vercel.json` sets `git.deploymentEnabled: false`; production advances when the scheduled Deploy Hook fires (Cloudflare Worker in `internal/workers/vercel-deploy-cron/`, four times a day, only if `main` is ahead of what is live) or when you trigger it by hand. Vercel's Ignored Build Step runs `internal/scripts/vercel-ignore-build.sh`, which skips any build whose inputs did not change. Phone-tap PDFs are the `/{slug}.pdf` copies on Vercel. Dashboard settings, cost model, and the "deploy now" commands are in [VERCEL_DEPLOYS.md](internal/docs/VERCEL_DEPLOYS.md). After a fresh clone, `npm run documents:pull -- --matter N` fills one folder; omit the flag for the whole tree.
 
-**GitHub Pages** is no longer deployed. There is no GitHub Actions CI or deploy workflow in this repo; the only workflows left are the CourtListener ones. `https://newanforbi.github.io/interactive-litigation-portfolio/documents/` still serves the PDF library as of its last Actions deploy, and the Vercel rewrite still points there, so existing filing links keep working. New PDFs pushed with `npm run documents:push` land on the `documents` branch but are **not** published until a replacement host for the library is chosen (Cloudflare R2 behind the same `/documents/*` rewrite is the intended next step). `vite.config.js` keeps the `GITHUB_PAGES` base-path switch for a manual Pages build if one is ever needed.
+**GitHub Pages** is no longer deployed and the host 404s. Do not point new taps at it. New PDFs pushed with `npm run documents:push` land on the `documents` branch. Cloudflare R2 behind the same `/documents/*` rewrite is the intended public origin; only after it returns 200 should slug copies leave `main`. `vite.config.js` keeps the `GITHUB_PAGES` base-path switch for a manual Pages build if one is ever needed.
 
 **Pre-push gate.** With CI gone, `.githooks/pre-push` is the only automated check before `main`: lint, typecheck, `validate-portfolio`, golden damages math, the unit suite, and the fabricated-citation gate. `npm run prepare` installs it. `SKIP_PORTFOLIO_GATE=1 git push` bypasses it for emergencies only. Branch protection on `main` must **not** require status checks, since nothing reports any.
 

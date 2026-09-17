@@ -350,6 +350,12 @@ Randstad US, LLC — DONE
   (Oct. 31, 2026; CCP §12a to Mon. Nov. 2 if the clerk is closed Saturday).
 - Same-day CCP §587 mailing was declared to Williams and CSC. Mail the copies
   if that has not already gone out.
+- Prove-up packet is prepared (not yet filed): CIV-100 court judgment + JUD-100
+  + CIV-110 Does + declaration + Exhibits A–I. $45,543.70 ($10,000 ICRAA
+  + $10,000 Penal Code additional + $25,000 civil penalty + $543.70 interest;
+  $500,000 CCP 425.115 cap recited, $0 punitive asked). Generator:
+  internal/scripts/matter27-randstad-prove-up-packet.py. Mail a new §587 copy
+  of the judgment CIV-100 when it is filed.
 
 The RK Logistics Group, Inc. — still HOLD
 - Do not e-file the RK CIV-100 until eCourt shows no accepted CIV-141, answer,
@@ -367,6 +373,7 @@ notices were personally served August 21, 2026; POS-040s filed September 9.
 Files
 - internal/public/documents/matter-27/CIV-100 Request for Entry of Default - Randstad US LLC (Default Entered, Filed Sep 16 2026).pdf
 - internal/public/documents/matter-27/CIV-100 Request for Entry of Default - RK Logistics Group Inc (Clerk Default Only, Sep 15 2026).pdf
+- internal/public/documents/matter-27/Default Judgment Prove-Up Packet - Randstad US LLC (Court Judgment, Sep 16 2026).pdf
 """
 
 

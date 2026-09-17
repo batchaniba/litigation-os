@@ -1,0 +1,862 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Matter 38 — E.D. Cal. federal complaint review draft (Swift).
+
+REVIEW DRAFT. Not LOCKED. File in the United States District Court for the
+Eastern District of California, Sacramento Division, on or before
+September 26, 2026 if accrual is the pre-adverse letter. Post-adverse outer
+bound is October 5, 2026.
+
+Subject-matter jurisdiction is 28 U.S.C. sections 1332 and 1367. FCRA is
+not pleaded as a count: Swift sent FCRA-captioned letters in 2023, so the
+two-year section 1681p clock from those letters closed, and the role is
+Class A Driver. Do not invent LLC members or a wage rate. No count uses a
+May 29, 2026 delayed-discovery date.
+
+The September 8, 2026 verified San Joaquin packet is historical work
+product; it was never clerk-filed.
+
+    python3 internal/scripts/matter38-edca-complaint.py
+    python3 internal/scripts/matter38-edca-complaint.py --dump-md
+"""
+
+from __future__ import annotations
+
+import os
+import sys
+from pathlib import Path
+
+SCRIPT_DIR = Path(__file__).resolve().parent
+sys.path.insert(0, str(SCRIPT_DIR / "lib"))
+
+from pleading_paper import CONTENT_LEFT, PleadingPaper  # noqa: E402
+
+ROOT = SCRIPT_DIR.parents[1]
+DEFAULT_OUT = (
+    ROOT
+    / "internal/public/documents/matter-38"
+    / "EDCA Complaint Review Draft - Ngwa Nforbi v Swift Transportation"
+    " Co of Arizona LLC (Sep 15 2026).pdf"
+)
+
+DOC_TITLE_FOOTER = (
+    "COMPLAINT FOR DAMAGES -- NGWA NFORBI v. SWIFT TRANSPORTATION CO. OF "
+    "ARIZONA LLC (E.D. Cal.)"
+)
+
+COURT_LINE1 = "UNITED STATES DISTRICT COURT"
+COURT_LINE2 = "EASTERN DISTRICT OF CALIFORNIA -- SACRAMENTO DIVISION"
+
+PLAINTIFF_BLOCK = [
+    ("BRENDAN NGWA NFORBI", "Times-Bold", 12),
+    ("Plaintiff, In Propria Persona", "Times-Roman", 12),
+    ("1455 Cat Tail Drive", "Times-Roman", 12),
+    ("Stockton, CA 95204", "Times-Roman", 12),
+    ("Telephone: (209) 801-4442", "Times-Roman", 12),
+    ("E-mail: bnn.cdl@gmail.com", "Times-Roman", 12),
+]
+
+CAPTION_LEFT = [
+    ("BRENDAN NGWA NFORBI,", True, False),
+    ("", False, False),
+    ("                          Plaintiff,", False, False),
+    ("", False, False),
+    ("       v.", False, False),
+    ("", False, False),
+    ("SWIFT TRANSPORTATION CO. OF", True, False),
+    ("ARIZONA LLC, a Delaware limited", True, False),
+    ("liability company, d/b/a SWIFT", True, False),
+    ("TRANSPORTATION,", True, False),
+    ("", False, False),
+    ("                          Defendant.", False, False),
+]
+
+CAPTION_RIGHT = [
+    ("Case No. ________________", False, False),
+    ("", False, False),
+    ("COMPLAINT FOR DAMAGES", True, False),
+    ("", False, False),
+    ("(1) Cal. Penal Code", False, False),
+    ("      section 290.46(j);", False, False),
+    ("(2) ICRAA, Cal. Civ. Code", False, False),
+    ("      sections 1786.40, 1786.50;", False, False),
+    ("(3) UCL, Cal. Bus. & Prof.", False, False),
+    ("      Code section 17200", False, False),
+    ("", False, False),
+    ("[Jury Trial Demanded]", False, True),
+]
+
+CONTENT = [
+    (
+        "PARA",
+        "Plaintiff BRENDAN NGWA NFORBI, appearing in propria persona, alleges "
+        "against Defendant SWIFT TRANSPORTATION CO. OF ARIZONA LLC ('Swift') "
+        "as follows:",
+    ),
+    ("HEADER", "INTRODUCTION"),
+    (
+        "PARA",
+        "1. In September 2023, Plaintiff applied to Swift for a Class A "
+        "Driver position. On September 26, 2023, Swift sent a password-"
+        "protected pre-adverse packet. The National Sex Offender Public "
+        "Website component of that packet remained 'Processing' on every "
+        "snapshot furnished to Plaintiff. On October 5, 2023, Swift sent a "
+        "post-adverse letter stating that it had decided not to employ him "
+        "based in whole or in part on consumer reports from Asurint, "
+        "Tenstreet, DriverIQ, FMCSA-DOT, and Equifax Work Number.",
+    ),
+    (
+        "PARA",
+        "2. The September 26 packet has been decrypted. Plaintiff alleges "
+        "its adjudication results as known facts. He does not republish "
+        "Social Security, date-of-birth, CDL, or telephone identifiers from "
+        "that packet. National criminal without a sex-offender component "
+        "returned Clear. Federal criminal returned Clear. Completed county "
+        "criminal searches returned Clear. NSOPW remained Processing. The "
+        "furnished packet contains neither a completed NSOPW hit nor a "
+        "completed NSOPW no-record, and it does not state 'SOURCE OF RECORD: "
+        "CALIFORNIA SEX OFFENDER REGISTRY.' FMCSA Clearinghouse returned "
+        "Driver Not Prohibited.",
+    ),
+    (
+        "PARA",
+        "3. What the packet does contain -- a Class A commercial driver's "
+        "license, an April 22, 2022 improper-lane moving violation with zero "
+        "points, PSP inspection history, and a CDLIS license-identity match "
+        "-- is not information disclosed pursuant to Penal Code section "
+        "290.46. Those components do not themselves explain a registry-based "
+        "denial.",
+    ),
+    (
+        "PARA",
+        "4. Plaintiff alleges, on information and belief and as an ultimate "
+        "fact, that the in-process NSOPW component was drawing California "
+        "Megan's Law website / California Department of Justice registry "
+        "data concerning Plaintiff, and that Swift used that preliminary "
+        "output, in whole or in part, in the October 5, 2023 decision. "
+        "NSOPW is not automatically information disclosed pursuant to Penal "
+        "Code section 290.46. The printed snapshots do not contain a "
+        "completed hit or the words 'SOURCE OF RECORD: CALIFORNIA SEX "
+        "OFFENDER REGISTRY.' The vendor adjudication log, any later NSOPW "
+        "return, and the decision-maker communications are exclusively in "
+        "Defendants' possession.",
+    ),
+    (
+        "PARA",
+        "5. Federal motor-carrier screening does not swallow this claim. The "
+        "Clearinghouse and Pre-Employment Screening Program concern drug-and-"
+        "alcohol violations and crash or inspection history. They are not "
+        "Penal Code section 290.46 disclosures. An employer that may lawfully "
+        "obtain ordinary safety records is not thereby authorized to use "
+        "Megan's Law website information for employment. Penal Code section "
+        "290.46(j)(3) says so.",
+    ),
+    (
+        "PARA",
+        "6. This complaint does not plead the Fair Credit Reporting Act as a "
+        "count. Swift sent FCRA-captioned pre-adverse and post-adverse "
+        "letters in 2023. The two-year FCRA discovery clock from those "
+        "letters would have closed in 2025. The position is a Class A "
+        "commercial-driver assignment. Subject-matter jurisdiction is "
+        "diversity and supplemental jurisdiction, not a time-barred FCRA "
+        "claim. Plaintiff does not presently plead 15 U.S.C. section "
+        "1681b(b)(3)(A) or the DOT-driver notice provisions. He reserves "
+        "amendment if production shows a timely FCRA claim that those letters "
+        "did not cure.",
+    ),
+    (
+        "PARA",
+        "7. Plaintiff does not name Knight-Swift Transportation Holdings, "
+        "Inc., merely as parent. He does not presently name Asurint, "
+        "Tenstreet, DriverIQ / Cisive, or Equifax as defendants. Robin "
+        "Kaufman and Matt Hutto are witnesses. This complaint is unverified.",
+    ),
+    ("HEADER", "JURISDICTION AND VENUE"),
+    (
+        "PARA",
+        "8. This Court has original subject-matter jurisdiction under "
+        "28 U.S.C. section 1332(a)(1) because this is a civil action between "
+        "citizens of different States and the amount in controversy exceeds "
+        "$75,000, exclusive of interest and costs.",
+    ),
+    (
+        "PARA",
+        "9. Plaintiff is a citizen of California. He resides in Stockton, "
+        "San Joaquin County, California, and is domiciled in California.",
+    ),
+    (
+        "PARA",
+        "10. Defendant SWIFT TRANSPORTATION CO. OF ARIZONA LLC is a Delaware "
+        "limited liability company. The California Secretary of State records "
+        "it as a foreign Delaware limited liability company, entity "
+        "201014710033. A public SEC Exhibit 21.1 of Knight-Swift "
+        "Transportation Holdings, Inc., lists Swift Transportation Co. of "
+        "Arizona, LLC as a Delaware limited-liability-company subsidiary. "
+        "That listing is not a complete membership roll, and it is not a "
+        "pleading that Knight-Swift is a defendant or a member. Swift's own "
+        "October 5, 2023 letter uses 2200 South 75th Avenue, Phoenix, "
+        "Arizona. The citizenship of a limited liability company is the "
+        "citizenship of each of its members. Plaintiff does not invent those "
+        "members. On information and belief, no member of Swift is a citizen "
+        "of California. If Swift contests complete diversity, it can disclose "
+        "its members under Federal Rule of Civil Procedure 7.1.",
+    ),
+    (
+        "PARA",
+        "11. The amount in controversy exceeds $75,000, exclusive of interest "
+        "and costs. Plaintiff seeks, without double recovery, lost Class A "
+        "Driver employment according to proof, emotional-distress damages "
+        "according to proof, and the actual, additional, fee, and exemplary "
+        "remedies authorized by Penal Code section 290.46(j)(4)(A). He does "
+        "not rely on the statute's optional civil-penalty slice, and he does "
+        "not rely on ICRAA's $10,000 statutory floor, to manufacture the "
+        "jurisdictional amount. The file does not state a wage rate. "
+        "Plaintiff does not invent one. He alleges in good faith that those "
+        "aggregated claims exceed $75,000.",
+    ),
+    (
+        "PARA",
+        "12. This Court has supplemental jurisdiction over the California "
+        "claims under 28 U.S.C. section 1367(a) because they arise from the "
+        "same Class A Driver application, screening, and denial as the "
+        "controversy over which original jurisdiction is invoked.",
+    ),
+    (
+        "PARA",
+        "13. This Court has personal jurisdiction over Swift because Swift "
+        "recruited Plaintiff, a California resident; caused consumer reports "
+        "to be procured about him; sent the pre-adverse and post-adverse "
+        "communications to him in California; and is, on information and "
+        "belief, qualified to transact business in California.",
+    ),
+    (
+        "PARA",
+        "14. Venue is proper in this District under 28 U.S.C. section "
+        "1391(b)(2) because a substantial part of the events giving rise to "
+        "the claims occurred in San Joaquin County, California, where "
+        "Plaintiff resides, received the recruiting and screening "
+        "communications, and received the adverse-action letters.",
+    ),
+    (
+        "PARA",
+        "15. Under Eastern District of California Local Rule 120(d), civil "
+        "actions arising in San Joaquin County are commenced in the "
+        "Sacramento Division.",
+    ),
+    ("HEADER", "PARTIES"),
+    (
+        "PARA",
+        "16. Plaintiff BRENDAN NGWA NFORBI is a natural person and a citizen "
+        "of California, residing in Stockton, San Joaquin County, "
+        "California. He is also identified in records as Brendan Ngehsi Ngwa "
+        "Nforbi and Brendan Ngehsi Ngwanforbi. Those name variants refer to "
+        "Plaintiff.",
+    ),
+    (
+        "PARA",
+        "17. Plaintiff is required to register under Penal Code section 290. "
+        "At all times relevant, information identifying him appeared on "
+        "California's Megan's Law website operated pursuant to Penal Code "
+        "section 290.46.",
+    ),
+    (
+        "PARA",
+        "18. Defendant SWIFT TRANSPORTATION CO. OF ARIZONA LLC is a Delaware "
+        "limited liability company doing business as Swift Transportation. "
+        "Its October 5, 2023 letter lists 2200 South 75th Avenue, Phoenix, "
+        "Arizona 85043. On September 25, 2023, the FMCSA Clearinghouse "
+        "identified the querying employer as SWIFT TRANSPORTATION CO OF "
+        "ARIZONA LLC, USDOT number 54283.",
+    ),
+    (
+        "PARA",
+        "19. Plaintiff will serve Swift through its designated agent for "
+        "service of process on the California Secretary of State record as of "
+        "the date of service. Public listings have used National Registered "
+        "Agents, Inc. Plaintiff will confirm the current listing immediately "
+        "before service. Service is not to be made at a terminal or a "
+        "recruiter's phone number.",
+    ),
+    (
+        "PARA",
+        "20. Asurint, Tenstreet, LLC, DriverIQ / Cisive, FMCSA, and Equifax "
+        "Workforce Solutions / The Work Number are named in Swift's own "
+        "October 5 letter as sources of consumer reports. They are inspection "
+        "targets and fact witnesses, not presently named as defendants.",
+    ),
+    (
+        "PARA",
+        "21. Robin Kaufman and Matt Hutto communicated as Swift driver "
+        "recruiters. They are percipient witnesses, not presently named as "
+        "defendants. Matt Hutto's message used a Class A Recruiting address "
+        "while stating it was sent on behalf of Swift Transportation Co. of "
+        "Arizona LLC by Tenstreet, LLC, 120 West 3rd Street, Tulsa, Oklahoma.",
+    ),
+    ("HEADER", "TIMELINESS"),
+    (
+        "PARA",
+        "22. Penal Code section 290.46 does not prescribe its own limitations "
+        "period. Count One is a liability created by statute, timely under "
+        "Code of Civil Procedure section 338(a). Three years from September "
+        "26, 2023, is September 26, 2026. Three years from October 5, 2023, "
+        "is October 5, 2026. This complaint is prepared to be filed inside "
+        "both dates. Plaintiff does not plead a delayed-discovery date for "
+        "this count.",
+    ),
+    (
+        "PARA",
+        "23. Plaintiff does not concede that Code of Civil Procedure section "
+        "335.1 or section 340(a) supplies the period for Count One. The "
+        "actual-damages and discretionary enhancement in section "
+        "290.46(j)(4)(A) are a liability created by statute, not an action "
+        "upon a statute for a penalty. The labeled civil-penalty slice is "
+        "pleaded in the alternative and is not the sole theory.",
+    ),
+    (
+        "PARA",
+        "24. Civil Code section 1786.52 requires that an ICRAA action be "
+        "brought within two years from the date the plaintiff knew or should "
+        "have known of the violation. The 2023 letters described consumer "
+        "reports and named agencies. They did not advise that an "
+        "investigative consumer report had been obtained. The face of this "
+        "complaint does not establish the discovery date as a complete bar.",
+    ),
+    (
+        "PARA",
+        "25. The Unfair Competition Law claim is timely under Business and "
+        "Professions Code section 17208's four-year period. That period is "
+        "independent of any shorter period that may apply to a borrowed "
+        "predicate.",
+    ),
+    ("HEADER", "FACTUAL ALLEGATIONS"),
+    ("SUBHEAD", "A. The Swift Application"),
+    (
+        "PARA",
+        "26. On Friday, September 22, 2023, at 3:02 p.m., Robin Kaufman, "
+        "identifying herself as a Swift Transportation Driver Recruiter, "
+        "emailed Plaintiff that she had received his information and asked "
+        "him to complete the full application. The message was sent on "
+        "behalf of Swift Transportation Co. of Arizona LLC by Tenstreet, LLC.",
+    ),
+    (
+        "PARA",
+        "27. That evening at 10:03 p.m., Matt Hutto, also identifying himself "
+        "as a Swift Driver Recruiter, emailed that he was trying to reach "
+        "Plaintiff, asked him to complete the full driver application, and "
+        "gave 803-564-3092 as a return number.",
+    ),
+    (
+        "PARA",
+        "28. The application was for a Class A Driver position. The file "
+        "does not contain the completed application, a written offer, a "
+        "terminal assignment, or a rate of pay. Plaintiff does not invent "
+        "those figures.",
+    ),
+    ("SUBHEAD", "B. The September 25, 2023 Screen"),
+    (
+        "PARA",
+        "29. On Monday, September 25, 2023, at 11:54 a.m., Tenstreet notified "
+        "Plaintiff that a DriverIQ employment background document ordered in "
+        "connection with Swift was available in Driver Pulse.",
+    ),
+    (
+        "PARA",
+        "30. Four minutes later, the FMCSA Office of Safety Programs emailed "
+        "that SWIFT TRANSPORTATION CO OF ARIZONA LLC (USDOT 54283) had "
+        "requested access to Plaintiff's FMCSA Drug and Alcohol Clearinghouse "
+        "record.",
+    ),
+    (
+        "PARA",
+        "31. At 1:20 p.m. the same day, Tenstreet notified Plaintiff that his "
+        "Clearinghouse result ordered by Swift was available. The decrypted "
+        "pre-adverse packet includes a Clearinghouse result of Driver Not "
+        "Prohibited, with no open violations.",
+    ),
+    (
+        "PARA",
+        "32. The Clearinghouse query proves Swift was then treating Plaintiff "
+        "as a prospective commercial-driver hire. It is not a Penal Code "
+        "section 290.46 disclosure.",
+    ),
+    ("SUBHEAD", "C. The Pre-Adverse and Post-Adverse Letters"),
+    (
+        "PARA",
+        "33. On Tuesday, September 26, 2023, at 3:09 a.m., Swift Recruiting "
+        "(recruitadmin@swifttrans.com) emailed a message titled 'Swift "
+        "Transportation - FCRA,' stating that an important communication was "
+        "attached as Pre_Adverse_Action_Letter_76326281-1916808-encrypted.pdf "
+        "and that the password was the last four digits of Plaintiff's Social "
+        "Security number.",
+    ),
+    (
+        "PARA",
+        "34. The pre-adverse attachment has been decrypted. It is a composite "
+        "screening packet. It includes completed criminal-file components "
+        "returning Clear, an NSOPW component that remained Processing on "
+        "every snapshot, a Clearinghouse result of Driver Not Prohibited, an "
+        "MVR, PSP inspection history, and CDLIS information.",
+    ),
+    (
+        "PARA",
+        "35. On Thursday, October 5, 2023, at 3:09 a.m., Swift Recruiting "
+        "emailed a second 'Swift Transportation - FCRA' message attaching "
+        "Post_Adverse_Action_Letter_76326281-1916809_em.pdf.",
+    ),
+    (
+        "PARA",
+        "36. The enclosed letter is on Swift Transportation Co. of Arizona "
+        "LLC letterhead, dated October 5, 2023, 5:09 a.m., addressed to "
+        "Brendan Ngehsi Nforbi at 1455 Cat Tail Drive, Stockton, California "
+        "95204. It states that offers of employment at Swift are contingent "
+        "upon successful completion of a background check, and that the "
+        "letter serves as notification that Swift had decided not to employ "
+        "Plaintiff based in whole or in part on a consumer report.",
+    ),
+    (
+        "PARA",
+        "37. The letter states that Asurint (Cleveland, Ohio), Tenstreet "
+        "(Tulsa, Oklahoma), DriverIQ (Tulsa, Oklahoma; disputes at Cisive), "
+        "FMCSA-DOT, and The Work Number / Equifax Workforce Solutions "
+        "provided consumer reports which, in whole or in part, influenced the "
+        "employment decision.",
+    ),
+    (
+        "PARA",
+        "38. The October 5 letter says a copy of the consumer report and a "
+        "Summary of Rights were attached. The decrypted September 26 packet "
+        "is the report-side paper in Plaintiff's files. It does not contain "
+        "a completed NSOPW result, a California Sex Offender Registry source "
+        "line, or a separate later Asurint, Tenstreet, or DriverIQ printout "
+        "showing a completed registry hit.",
+    ),
+    (
+        "PARA",
+        "39. Civil Code section 1786.40(a) required, if an investigative "
+        "consumer report had been obtained, that Swift advise Plaintiff that "
+        "an investigative consumer report had been obtained and supply the "
+        "agency's name and address. The October 5 letter named agencies and "
+        "stated that consumer reports influenced the decision. It did not "
+        "advise that an investigative consumer report had been obtained. "
+        "Naming agencies is not that advice.",
+    ),
+    (
+        "SUBHEAD",
+        "D. Screening Inference, Comparators, and Pretext",
+    ),
+    (
+        "PARA",
+        "40. Plaintiff is a person as to whom information is disclosed on "
+        "California's Megan's Law website. That website, and the statute that "
+        "created it, warn that the information may not be used for employment.",
+    ),
+    (
+        "PARA",
+        "41. Swift ordered an NSOPW sex-offender-website search. That "
+        "component remained Processing on every snapshot in the packet sent "
+        "with the pre-adverse notice. Swift then denied employment based in "
+        "whole or in part on consumer reports. The completed criminal, "
+        "Clearinghouse, and MVR components in the packet do not themselves "
+        "explain a registry-based denial.",
+    ),
+    (
+        "PARA",
+        "42. Plaintiff alleges, on information and belief and as an ultimate "
+        "fact, that between the September 26 snapshots and the October 5 "
+        "decision, the in-process NSOPW component was drawing California "
+        "Megan's Law website / California Department of Justice registry "
+        "data concerning Plaintiff, and that Swift used that preliminary "
+        "output, in whole or in part, in the October 5, 2023 denial.",
+    ),
+    (
+        "PARA",
+        "43. On information and belief, the same consumer, screened in the "
+        "same period for employment, returned California-registry source "
+        "fields. Plaintiff does not allege that any other employer's report "
+        "is Swift's report, does not allege that Asurint, Tenstreet, or "
+        "DriverIQ is First Advantage, and does not attach or describe those "
+        "reports as if they were Swift's report.",
+    ),
+    (
+        "PARA",
+        "44. Searching a public website is not a free pass. Subdivision "
+        "(j)(3)'s reference to publicly available information does not "
+        "authorize employment use of Megan's Law disclosures. Information "
+        "disclosed pursuant to Penal Code section 290.46 does not lose that "
+        "character because a vendor also searched NSOPW or another public "
+        "sex-offender compilation.",
+    ),
+    (
+        "PARA",
+        "45. Alternative explanations -- a failed Clearinghouse result, a "
+        "driving-record or crash disqualification, a lawful criminal-history "
+        "adjudication under a statute that actually authorizes the use, a CDL "
+        "defect, or a withdrawal of the application -- can be tested against "
+        "a discrete set of records in Swift's and its vendors' possession.",
+    ),
+    (
+        "PARA",
+        "46. If production later shows a completed NSOPW returning no record "
+        "and no preliminary registry use, Count One will stand or fall on "
+        "that file after production. Counts Two and Three do not depend on "
+        "proving a completed registry hit.",
+    ),
+    (
+        "PARA",
+        "47. The use was not to protect a person at risk within the meaning "
+        "of section 290.46(j)(1). A general commercial-driver assignment is "
+        "not, without more, that narrow authorization. FMCSA authorization "
+        "to query the Clearinghouse or PSP is not authorization to use "
+        "Megan's Law website information.",
+    ),
+    ("SUBHEAD", "E. Harm"),
+    (
+        "PARA",
+        "48. As a result of the decision, Plaintiff lost the Class A Driver "
+        "opportunity, including the wages and benefits of that position, "
+        "according to proof and subject to mitigation. The file does not "
+        "state a wage rate. Plaintiff does not invent one.",
+    ),
+    (
+        "PARA",
+        "49. He also suffered emotional distress, humiliation, and anxiety "
+        "from an unexplained denial he is informed and believes rested on a "
+        "status the Legislature has forbidden employers to use.",
+    ),
+    (
+        "PARA",
+        "50. Plaintiff has sought replacement employment and does not claim "
+        "a guaranteed lifetime expectancy from an unaccepted driver "
+        "application. Economic damages will be limited to losses proven with "
+        "reasonable certainty and without double recovery against other "
+        "dockets that arise from different employers and different decisions.",
+    ),
+    ("HEADER", "FIRST CAUSE OF ACTION"),
+    (
+        "SUBHEAD",
+        "Unauthorized Employment Use of Registry Information\n"
+        "Cal. Penal Code section 290.46(j)(2)(E) and (j)(4)(A)\n"
+        "Against Swift Transportation Co. of Arizona LLC",
+    ),
+    (
+        "PARA",
+        "51. Plaintiff realleges paragraphs 1 through 50. This count is a "
+        "liability created by statute. It is timely under Code of Civil "
+        "Procedure section 338(a) from the September 26 / October 5, 2023 "
+        "employment use. This count does not plead a delayed-discovery date.",
+    ),
+    (
+        "PARA",
+        "52. Penal Code section 290.46(j)(2)(E) prohibits use of information "
+        "disclosed pursuant to section 290.46 for purposes relating to "
+        "employment except as authorized by paragraph (1) or another "
+        "provision of law.",
+    ),
+    (
+        "PARA",
+        "53. Plaintiff alleges, on information and belief and as an ultimate "
+        "fact, that the in-process NSOPW component was drawing California "
+        "Megan's Law website / California Department of Justice registry "
+        "data concerning Plaintiff, and that Swift used that preliminary "
+        "output, in whole or in part, in the Class A Driver decision. The "
+        "user is the employer that takes the information into account, not a "
+        "vendor that merely retrieves it.",
+    ),
+    (
+        "PARA",
+        "54. Plaintiff does not allege that the printed snapshots contain a "
+        "completed NSOPW hit or the words 'SOURCE OF RECORD: CALIFORNIA SEX "
+        "OFFENDER REGISTRY.' The use alleged is the use of preliminary "
+        "registry information from that in-process component.",
+    ),
+    (
+        "PARA",
+        "55. The use related directly to employment. It was not authorized "
+        "by section 290.46(j)(1) or by any other provision of law applicable "
+        "to that application. It was a substantial factor in the decision "
+        "and caused the loss alleged.",
+    ),
+    (
+        "PARA",
+        "56. Plaintiff seeks the remedies authorized by section "
+        "290.46(j)(4)(A), including actual damages, any amount the trier of "
+        "fact determines not exceeding three times actual damage and not "
+        "less than $250, attorney's fees, exemplary damages, or a civil "
+        "penalty not exceeding $25,000. The $25,000 figure is a cap on the "
+        "civil penalty, not a substitute floor. He does not presently allege "
+        "a pattern or practice sufficient for subdivision (j)(4)(B).",
+    ),
+    ("HEADER", "SECOND CAUSE OF ACTION"),
+    (
+        "SUBHEAD",
+        "California Investigative Consumer Reporting Agencies Act\n"
+        "Cal. Civ. Code sections 1786.40 and 1786.50\n"
+        "Against Swift Transportation Co. of Arizona LLC",
+    ),
+    ("PARA", "57. Plaintiff realleges paragraphs 1 through 50."),
+    (
+        "PARA",
+        "58. On information and belief, one or more of the agencies Swift "
+        "named assembled or evaluated information concerning Plaintiff's "
+        "character, general reputation, personal characteristics, or mode of "
+        "living for employment purposes, and Swift was the user of that "
+        "information before the October 5, 2023 decision.",
+    ),
+    (
+        "PARA",
+        "59. Civil Code section 1786.40(a) required Swift, when employment "
+        "was denied under circumstances in which an investigative consumer "
+        "report had been obtained, to advise Plaintiff of that fact and "
+        "supply the investigative consumer reporting agency's name and "
+        "address. Swift's October 5 letter named agencies and cities. It "
+        "did not advise that an investigative consumer report had been "
+        "obtained.",
+    ),
+    (
+        "PARA",
+        "60. This section 1786.40 omission is pleaded as a separate act from "
+        "Count One. Plaintiff does not allege that section 1786.40 required "
+        "Swift to identify the decisive component or to complete the NSOPW "
+        "search. This count does not plead a delayed-discovery date.",
+    ),
+    (
+        "PARA",
+        "61. This count does not depend on proving Penal Code section "
+        "290.46(j). If Defendants establish that the reports were ordinary "
+        "consumer reports and not investigative, this count does not apply. "
+        "Plaintiff does not presently plead a CCRAA count.",
+    ),
+    (
+        "PARA",
+        "62. Under Civil Code section 1786.50, Plaintiff seeks actual "
+        "damages or $10,000, whichever is greater, together with costs and "
+        "any attorney's fees recoverable if counsel later appears, and "
+        "punitive damages if the violation is proven grossly negligent or "
+        "willful.",
+    ),
+    ("HEADER", "THIRD CAUSE OF ACTION"),
+    (
+        "SUBHEAD",
+        "Unlawful and Unfair Business Practices\n"
+        "Cal. Bus. & Prof. Code section 17200\n"
+        "Against Swift Transportation Co. of Arizona LLC",
+    ),
+    ("PARA", "63. Plaintiff realleges paragraphs 1 through 62."),
+    (
+        "PARA",
+        "64. Swift engaged in unlawful practices by violating, to the extent "
+        "proven, Penal Code section 290.46(j)(2)(E) and Civil Code section "
+        "1786.40. It engaged in unfair practices because the gravity of "
+        "denying employment on a criterion the Legislature has forbidden, or "
+        "on consumer reports without the investigative-report advice the "
+        "statute required, outweighs any utility of taking adverse action "
+        "while a sex-offender-website component remained Processing.",
+    ),
+    (
+        "PARA",
+        "65. Plaintiff suffered injury in fact and lost money or property "
+        "through the lost Swift employment opportunity, reliance "
+        "expenditures, and employment-search costs to be proven. He seeks "
+        "restitution only of vested money or property Swift acquired, not "
+        "unearned future wages.",
+    ),
+    (
+        "PARA",
+        "66. On information and belief, Swift continues to use the same or "
+        "similar standardized screening procedures for California driver "
+        "applicants. Plaintiff seeks injunctive relief requiring Swift to "
+        "cease prohibited employment use of California registry information "
+        "in California recruiting and to preserve and disclose the source "
+        "and audit trail of Plaintiff's screening, together with restitution "
+        "under Business and Professions Code section 17203.",
+    ),
+    ("HEADER", "PRAYER FOR RELIEF"),
+    (
+        "PARA",
+        "WHEREFORE, Plaintiff prays for judgment against Defendant as follows:",
+    ),
+    (
+        "LIST_ITEM",
+        "A. Actual, consequential, and economic damages according to proof, "
+        "without double recovery;",
+    ),
+    (
+        "LIST_ITEM",
+        "B. The remedies authorized by Penal Code section 290.46(j)(4)(A);",
+    ),
+    (
+        "LIST_ITEM",
+        "C. ICRAA actual damages or $10,000, whichever is greater, and "
+        "punitive damages upon the showing required by Civil Code section "
+        "1786.50, if that count is proven;",
+    ),
+    (
+        "LIST_ITEM",
+        "D. Restitution under Business and Professions Code section 17203 of "
+        "vested money or property Defendant acquired, not unearned future "
+        "wages, and injunctive relief;",
+    ),
+    (
+        "LIST_ITEM",
+        "E. Costs of suit and attorney's fees only to the extent authorized "
+        "and recoverable, including if counsel later appears;",
+    ),
+    (
+        "LIST_ITEM",
+        "F. Prejudgment and post-judgment interest as allowed by law; and",
+    ),
+    (
+        "LIST_ITEM",
+        "G. Such other and further relief as the Court deems just and proper.",
+    ),
+    ("HEADER", "DEMAND FOR JURY TRIAL"),
+    (
+        "PARA",
+        "Plaintiff demands a trial by jury on all issues so triable.",
+    ),
+]
+
+SIGNATURE_BLOCK = [
+    ("", ""),
+    ("left", "Dated: ____________________"),
+    ("", ""),
+    ("right", "Respectfully submitted,"),
+    ("", ""),
+    ("", ""),
+    ("right", "___________________________________"),
+    ("right", "BRENDAN NGWA NFORBI"),
+    ("right", "Plaintiff, In Propria Persona"),
+]
+
+
+def dump_markdown(path: Path) -> None:
+    lines = [
+        "# Matter 38 — E.D. Cal. filing complaint review draft",
+        "",
+        "<!-- Internal generator header. Not part of the pleading. Do not print on page one. -->",
+        "",
+        "Generated from `internal/scripts/matter38-edca-complaint.py`. "
+        "File on or before **September 26, 2026** if the pre-adverse letter "
+        "is accrual. FCRA is not a count. Do not invent LLC members or a "
+        "wage rate. Count One is I&B that the in-process NSOPW component was "
+        "drawing California Megan's Law / DOJ registry data and that Swift "
+        "used that preliminary output on October 5. If Count One fails, "
+        "ICRAA's $10,000 does not independently establish $75,000 AIC.",
+        "",
+        "---",
+        "",
+        "## Caption",
+        "",
+        "BRENDAN NGWA NFORBI, Plaintiff, in propria persona, v. SWIFT "
+        "TRANSPORTATION CO. OF ARIZONA LLC, a Delaware limited liability "
+        "company, d/b/a SWIFT TRANSPORTATION.",
+        "",
+        "United States District Court, Eastern District of California — "
+        "Sacramento Division. Unverified. Demand for jury trial.",
+        "",
+    ]
+    for kind, text in CONTENT:
+        if kind == "NOTICE":
+            lines.extend([f"> **{text}**", ""])
+        elif kind == "HEADER":
+            lines.extend([f"## {text}", ""])
+        elif kind == "SUBHEAD":
+            heading = " / ".join(
+                part.strip() for part in text.split("\n") if part.strip()
+            )
+            lines.extend([f"### {heading}", ""])
+        elif kind in ("PARA", "LIST_ITEM"):
+            lines.extend([text, ""])
+        else:
+            raise ValueError(f"unknown content kind {kind!r}")
+    lines.extend(
+        [
+            "---",
+            "",
+            "Dated: ____________________",
+            "",
+            "Respectfully submitted,",
+            "",
+            "___________________________________",
+            "",
+            "BRENDAN NGWA NFORBI",
+            "",
+            "Plaintiff, In Propria Persona",
+            "",
+        ]
+    )
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text("\n".join(lines), encoding="utf-8")
+    print(f"Wrote {path}")
+
+
+def main() -> None:
+    if "--dump-md" in sys.argv:
+        dump_markdown(
+            ROOT / "internal/docs/matter-38" / "FILING_COMPLAINT_REVIEW_DRAFT.md"
+        )
+        return
+    out = Path(os.path.abspath(sys.argv[1] if len(sys.argv) > 1 else DEFAULT_OUT))
+    out.parent.mkdir(parents=True, exist_ok=True)
+    d = PleadingPaper(str(out), doc_title_footer=DOC_TITLE_FOOTER)
+
+    c = d.c
+    atty_y = d._line_y(0)
+    for i, (txt, fn, sz) in enumerate(PLAINTIFF_BLOCK):
+        c.setFont(fn, sz)
+        c.drawString(CONTENT_LEFT, atty_y - i * 15, txt)
+    d.current_line = 4
+    d.blank_line()
+
+    d.write_line(COURT_LINE1, bold=True, center=True)
+    d.write_line(COURT_LINE2, bold=True, center=True)
+    d.blank_line()
+
+    d.draw_caption_block(
+        CAPTION_LEFT, CAPTION_RIGHT, caption_size=10, tight_lh=13, boxed=True
+    )
+    d.blank_line()
+
+    for kind, text in CONTENT:
+        if kind == "NOTICE":
+            d.ensure_space(7)
+            d.write_wrapped(text, bold=True)
+            d.blank_line()
+        elif kind == "HEADER":
+            lines = text.split("\n")
+            d.ensure_space(len(lines) + 3)
+            for line in lines:
+                d.write_line(line, bold=True, center=True)
+            d.blank_line()
+        elif kind == "SUBHEAD":
+            lines = text.split("\n")
+            d.ensure_space(len(lines) + 3)
+            for line in lines:
+                d.write_line(line, bold=True)
+            d.blank_line()
+        elif kind == "PARA":
+            d.write_wrapped(text, first_indent=36)
+            d.blank_line()
+        elif kind == "LIST_ITEM":
+            d.write_wrapped(text, indent=36, first_indent=0)
+            d.blank_line()
+        else:
+            raise ValueError(f"unknown content kind {kind!r}")
+
+    d.ensure_space(len(SIGNATURE_BLOCK))
+    for align, text in SIGNATURE_BLOCK:
+        if align == "":
+            d.blank_line()
+        elif align == "left":
+            d.write_line(text)
+        elif align == "right":
+            d.write_line(text, right=True, right_margin_offset=20)
+        else:
+            raise ValueError(f"unknown signature alignment {align!r}")
+
+    d.save()
+    print(f"Wrote {out}")
+
+
+if __name__ == "__main__":
+    main()

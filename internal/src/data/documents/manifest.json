@@ -1,8 +1,23 @@
 {
   "version": 1,
-  "fileCount": 1244,
-  "totalBytes": 871892303,
+  "fileCount": 1286,
+  "totalBytes": 903692509,
   "files": [
+    {
+      "path": "/documents/README.md",
+      "size": 482,
+      "sha256": "fd9e068ec788a0c4e54aed9d8a9c38785dd84abb50547253f85eef61c3ecbd9b"
+    },
+    {
+      "path": "/documents/_form-library/README.md",
+      "size": 4011,
+      "sha256": "f61b4b51be66c7cbe8d7336d187ebf9bfaa32d3b54f52f227019ac293e22a794"
+    },
+    {
+      "path": "/documents/_form-library/ao239-blank-template.pdf",
+      "size": 552785,
+      "sha256": "670a3dbe41546b78c17e113b0571472ce975839726ed2b1af650d2a64cf3d21d"
+    },
     {
       "path": "/documents/_form-library/ao440-blank-template.pdf",
       "size": 25380,
@@ -12,6 +27,11 @@
       "path": "/documents/_form-library/civ100-blank-template.pdf",
       "size": 170634,
       "sha256": "9bd74f5b9d67ef00998986c1755383cb06ef9de7519130a100be28d991019e15"
+    },
+    {
+      "path": "/documents/_form-library/civ110-blank-template.pdf",
+      "size": 1358627,
+      "sha256": "95f8d4a98e5bf4d5383b62886413f54b1e8b9e59e4be1daa9d2e26662e64e774"
     },
     {
       "path": "/documents/_form-library/cm010-blank-template.pdf",
@@ -49,6 +69,11 @@
       "sha256": "8128d7deb3f60194a0af3f8e0baa2ca7c226fd0f888464f318904399581c51b6"
     },
     {
+      "path": "/documents/_form-library/jud100-blank-template.pdf",
+      "size": 134413,
+      "sha256": "5561524d6bda15b38e03c76e693240f755c459b12a05ad61121d245bf4fde6e3"
+    },
+    {
       "path": "/documents/_form-library/ndcal-mj-consent-declination-blank-template.pdf",
       "size": 584223,
       "sha256": "2f65a065f0a8160bef942d0da3d2582c59c1d6a38a8270bdd1eb509051a833af"
@@ -67,11 +92,6 @@
       "path": "/documents/_form-library/proof-of-service-blank-template.pdf",
       "size": 2743,
       "sha256": "0bf16e67f5e762d291f00ea20156d99818f69137d38fb5a6e5a3f7b7a68476ea"
-    },
-    {
-      "path": "/documents/_form-library/README.md",
-      "size": 3942,
-      "sha256": "dd9928b37e12226270d59ced91bab9c804df90a3d62842a95ea76d7c958d5943"
     },
     {
       "path": "/documents/_form-library/ser001-blank-template.pdf",
@@ -399,6 +419,11 @@
       "sha256": "28edb37f12dbbb61b7431c035b57a5fe0f773645b8b8a4442e21f8d626c30743"
     },
     {
+      "path": "/documents/_migrated/handoff/Stanislaus-CC-Authorization-Meza-Gonzalez-Aug12-2026.pdf",
+      "size": 1853852,
+      "sha256": "0a1d3dd64569233836de78c5a059ade49d13e890bf5ef6ec6c79eb1fa3598851"
+    },
+    {
       "path": "/documents/_migrated/handoff/ao398-meza-waiver-request/AO398-Meza-Waiver-Request-FILLED-SIGNED.pdf",
       "size": 268778,
       "sha256": "2c9b403692dc280a481ab4c1c2eceb6e59088068f22beadf5389612fa156e02e"
@@ -417,11 +442,6 @@
       "path": "/documents/_migrated/handoff/meza-docket-bundle-81/Meza-Docket-Bundle-81pp.pdf",
       "size": 5391607,
       "sha256": "75344b79b311d1991bf3469a2b2e060074f40a65a0ed4b9d1b6eb16c66214140"
-    },
-    {
-      "path": "/documents/_migrated/handoff/Stanislaus-CC-Authorization-Meza-Gonzalez-Aug12-2026.pdf",
-      "size": 1853852,
-      "sha256": "0a1d3dd64569233836de78c5a059ade49d13e890bf5ef6ec6c79eb1fa3598851"
     },
     {
       "path": "/documents/_migrated/public/accurate-sig-notice.pdf",
@@ -614,11 +634,6 @@
       "sha256": "8962667be1e037e2b85dfa25bd47691b6c9184a4fba8ab13ba66e64fe4ad60ce"
     },
     {
-      "path": "/documents/matter-03/8_fed_derrickFAC.pdf",
-      "size": 928865,
-      "sha256": "5fd57e16898c6ce12522727b5265e5e1589c9b54558faf3e9f16a36008553464"
-    },
-    {
       "path": "/documents/matter-03/8_Jscott.pdf",
       "size": 30882,
       "sha256": "18b62a5f65fce391ed41101cb55c498bdd571aab12c3e614bac0ace91528860e"
@@ -629,14 +644,14 @@
       "sha256": "39d4a58266c78dc10bd2c302f4bb5da360529d841cb3fe9c4d0c646c2e0cb490"
     },
     {
-      "path": "/documents/matter-03/8_Mbeard.pdf",
-      "size": 62736,
-      "sha256": "a49f4162e5c1afeb2d189515e8cb153cad24534d843aa721db4b746c496c83e7"
-    },
-    {
       "path": "/documents/matter-03/8_MTQ.pdf",
       "size": 2803910,
       "sha256": "5ab8d66d2774fdf11eef9936a90d0a66f4df37fc2825e8a5edc3178f85042b0a"
+    },
+    {
+      "path": "/documents/matter-03/8_Mbeard.pdf",
+      "size": 62736,
+      "sha256": "a49f4162e5c1afeb2d189515e8cb153cad24534d843aa721db4b746c496c83e7"
     },
     {
       "path": "/documents/matter-03/8_OpM4L.pdf",
@@ -649,9 +664,19 @@
       "sha256": "97f35b2a4820962e446aceee528d9ddcef2167d6f14559dd34dd3be67441af38"
     },
     {
+      "path": "/documents/matter-03/8_fed_derrickFAC.pdf",
+      "size": 928865,
+      "sha256": "5fd57e16898c6ce12522727b5265e5e1589c9b54558faf3e9f16a36008553464"
+    },
+    {
       "path": "/documents/matter-03/8_reply.pdf",
       "size": 239696,
       "sha256": "cd21dfabecb566f46bb3713a0f7d3667e706b8398f08d54894408d93f4454cfc"
+    },
+    {
+      "path": "/documents/matter-03/DRAFT - Notice of Voluntary Dismissal - Katie Palacios (pre-filing).pdf",
+      "size": 5855,
+      "sha256": "f977fdaf963d5954ae7162a92b015e5dce16a542e46c2c011d430e0b442f9edb"
     },
     {
       "path": "/documents/matter-03/DerrickM4L1.pdf",
@@ -667,11 +692,6 @@
       "path": "/documents/matter-03/DerrickM4LReply.pdf",
       "size": 70267,
       "sha256": "dd2ad3199051bd09917e57ebfa7fa3b4f6e91017c66749e556ec7c6388c05d73"
-    },
-    {
-      "path": "/documents/matter-03/DRAFT - Notice of Voluntary Dismissal - Katie Palacios (pre-filing).pdf",
-      "size": 5855,
-      "sha256": "f977fdaf963d5954ae7162a92b015e5dce16a542e46c2c011d430e0b442f9edb"
     },
     {
       "path": "/documents/matter-03/Ex-Parte Derrick.pdf",
@@ -754,6 +774,21 @@
       "sha256": "d788660146eac9e9630ad2fb56db10c25d70cc2d0adc42255c74011ad6d3d26f"
     },
     {
+      "path": "/documents/matter-05/DISC001_SEC_4a2 HOPE1.pdf",
+      "size": 841204,
+      "sha256": "012a665329fd82bc2a55c36ed53394da083589338061f8ec5eb0f7ec963bfcf8"
+    },
+    {
+      "path": "/documents/matter-05/DISC001_SEC_4a2 Palacios .pdf",
+      "size": 472597,
+      "sha256": "4713029b0c04b1fd7a372b7a24d1ae5c75d63931505d362047b1906ed99a9916"
+    },
+    {
+      "path": "/documents/matter-05/DRFT HOPE resp plntf RFA1.pdf",
+      "size": 421233,
+      "sha256": "cfe3f3c0a2449cd919ee0df50c7bfe20c636f2a800aa16a477d4e283bb1a6d56"
+    },
+    {
       "path": "/documents/matter-05/Declaration Pal ISO Opposition.pdf",
       "size": 148367,
       "sha256": "c4195fe10e6c2c55c17eb6ba550e39b875496245b2dad5cd9994cd93801bab64"
@@ -774,6 +809,11 @@
       "sha256": "114da62a7dee6a58f3cf87353dbb8d23a4e063de7333903fc149e75daf4e6f93"
     },
     {
+      "path": "/documents/matter-05/Demurrer-RJN (NEWpal) (052226)).pdf",
+      "size": 4116213,
+      "sha256": "1413cbf40fca68a37ea049b91bf50e96c9fc830f0bddee24d1fb20104716cacb"
+    },
+    {
       "path": "/documents/matter-05/Demurrer-Reply (NEWpal) (070726).pdf",
       "size": 251165,
       "sha256": "9b5ac9ff783331412581953287f4c8b253ae44420941fc6ad542f4c08e0d47e4"
@@ -782,26 +822,6 @@
       "path": "/documents/matter-05/Demurrer-Reply Decl (NEWpal) (070726).pdf",
       "size": 558480,
       "sha256": "bee66cabb6bd76bd2cb573b0f5a10ff15a038379d4afe594ff6f58201e931805"
-    },
-    {
-      "path": "/documents/matter-05/Demurrer-RJN (NEWpal) (052226)).pdf",
-      "size": 4116213,
-      "sha256": "1413cbf40fca68a37ea049b91bf50e96c9fc830f0bddee24d1fb20104716cacb"
-    },
-    {
-      "path": "/documents/matter-05/DISC001_SEC_4a2 HOPE1.pdf",
-      "size": 841204,
-      "sha256": "012a665329fd82bc2a55c36ed53394da083589338061f8ec5eb0f7ec963bfcf8"
-    },
-    {
-      "path": "/documents/matter-05/DISC001_SEC_4a2 Palacios .pdf",
-      "size": 472597,
-      "sha256": "4713029b0c04b1fd7a372b7a24d1ae5c75d63931505d362047b1906ed99a9916"
-    },
-    {
-      "path": "/documents/matter-05/DRFT HOPE resp plntf RFA1.pdf",
-      "size": 421233,
-      "sha256": "cfe3f3c0a2449cd919ee0df50c7bfe20c636f2a800aa16a477d4e283bb1a6d56"
     },
     {
       "path": "/documents/matter-05/Evidentiary Pal Objections to Defendants RJN.pdf",
@@ -984,14 +1004,14 @@
       "sha256": "712d1352e9e290a0a0bc9b9dffd45921f0f3457ad97c8efd44586e2a9de1d86f"
     },
     {
-      "path": "/documents/matter-09/WOM_Opening Brief.pdf",
-      "size": 291941,
-      "sha256": "55901edb7eafed6145b977da7904eacb2d3052947327994e7a4a876d6a11ba23"
-    },
-    {
       "path": "/documents/matter-09/WOM-Case Assignment.pdf",
       "size": 53782,
       "sha256": "4c2f969e39c3b72dd275261b2983b8495938ea1780fcad87420c95bd15c8d1f8"
+    },
+    {
+      "path": "/documents/matter-09/WOM-Fee Waiver.pdf",
+      "size": 118554,
+      "sha256": "de25ee37e4b5d36de08acb9cd965c9e21aadf42806b8e5bb7ecef8fba5d8cd53"
     },
     {
       "path": "/documents/matter-09/WOM-efile.pdf",
@@ -999,9 +1019,9 @@
       "sha256": "0f55aeb0cfc442078775a86911f023d51a4a7a5c98c99ffebe0e6749cc25deab"
     },
     {
-      "path": "/documents/matter-09/WOM-Fee Waiver.pdf",
-      "size": 118554,
-      "sha256": "de25ee37e4b5d36de08acb9cd965c9e21aadf42806b8e5bb7ecef8fba5d8cd53"
+      "path": "/documents/matter-09/WOM_Opening Brief.pdf",
+      "size": 291941,
+      "sha256": "55901edb7eafed6145b977da7904eacb2d3052947327994e7a4a876d6a11ba23"
     },
     {
       "path": "/documents/matter-10/Notice of Change of Address (July 7, 2026).pdf",
@@ -1044,6 +1064,41 @@
       "sha256": "c27e93998452da4a50fc081a30c39c36d99d3bb88c879fdd853c14ada4133504"
     },
     {
+      "path": "/documents/matter-12/1094 AT138-EJ125 Application and Order for Appearance and Examination (Blank Form).pdf",
+      "size": 173986,
+      "sha256": "6fc6ab5c8c593c20adedb8f0cfcb0465b752df7ee977ba5967433774b221455d"
+    },
+    {
+      "path": "/documents/matter-12/1094 AT138-EJ125 Application and Order for Appearance and Examination (Draft, Pending Judgment Entry).pdf",
+      "size": 180558,
+      "sha256": "f8d966a4def817881760ba39b45c964a55770fc4b6d213cc3c1461892e90667f"
+    },
+    {
+      "path": "/documents/matter-12/1094 AT167-EJ152 Memorandum of Garnishee (Blank Form).pdf",
+      "size": 64145,
+      "sha256": "e2a1a15b748788fafcb2768c878b5ef0e58e3f65545dc8fa9ba4937c8aa7a339"
+    },
+    {
+      "path": "/documents/matter-12/1094 AT167-EJ152 Memorandum of Garnishee - Alpine Truck Sales - Bank of Stockton (Draft, Pending Levy).pdf",
+      "size": 109654,
+      "sha256": "fd2c6ab2670df79d9d273af59d057a8e6aa7ab2354c5799c80bb14970ee875b0"
+    },
+    {
+      "path": "/documents/matter-12/1094 AT167-EJ152 Memorandum of Garnishee - Alpine Truck Sales - JPMorgan Chase (Draft, Pending Levy).pdf",
+      "size": 109682,
+      "sha256": "479d85ce7e8bba7886181bd99c76b52689b5faa3d7dba9a484d896955ba0506f"
+    },
+    {
+      "path": "/documents/matter-12/1094 AT167-EJ152 Memorandum of Garnishee - Diamond Truck Sales - Bank of Stockton (Draft, Pending Levy).pdf",
+      "size": 109656,
+      "sha256": "98d74a5cdb97e8abc84ca968b6d21fea5d2f62ee646363f3af4c03d8da37260e"
+    },
+    {
+      "path": "/documents/matter-12/1094 AT167-EJ152 Memorandum of Garnishee - Diamond Truck Sales - JPMorgan Chase (Draft, Pending Levy).pdf",
+      "size": 109684,
+      "sha256": "18cabb70eddbaee5517eb04263c705f993a0a8300b51661801b8250667e9bbe7"
+    },
+    {
       "path": "/documents/matter-12/1094 Alpine Default Judgment Packet (Compensatory Only, Hearing Hand-Up Aug 12 2026).pdf",
       "size": 3401550,
       "sha256": "9b9087dee1b4cee4f9eae6692c63a77941da4bfd3f5fc2d42db25f146a6cf851"
@@ -1072,41 +1127,6 @@
       "path": "/documents/matter-12/1094 Amended Complaint.pdf",
       "size": 1026817,
       "sha256": "e03a7fff90c676ca556a02afbcbda1ab37a59bf8bc89ac301dbcbde92f7585ac"
-    },
-    {
-      "path": "/documents/matter-12/1094 AT138-EJ125 Application and Order for Appearance and Examination (Blank Form).pdf",
-      "size": 173986,
-      "sha256": "6fc6ab5c8c593c20adedb8f0cfcb0465b752df7ee977ba5967433774b221455d"
-    },
-    {
-      "path": "/documents/matter-12/1094 AT138-EJ125 Application and Order for Appearance and Examination (Draft, Pending Judgment Entry).pdf",
-      "size": 180558,
-      "sha256": "f8d966a4def817881760ba39b45c964a55770fc4b6d213cc3c1461892e90667f"
-    },
-    {
-      "path": "/documents/matter-12/1094 AT167-EJ152 Memorandum of Garnishee - Alpine Truck Sales - Bank of Stockton (Draft, Pending Levy).pdf",
-      "size": 109654,
-      "sha256": "fd2c6ab2670df79d9d273af59d057a8e6aa7ab2354c5799c80bb14970ee875b0"
-    },
-    {
-      "path": "/documents/matter-12/1094 AT167-EJ152 Memorandum of Garnishee - Alpine Truck Sales - JPMorgan Chase (Draft, Pending Levy).pdf",
-      "size": 109682,
-      "sha256": "479d85ce7e8bba7886181bd99c76b52689b5faa3d7dba9a484d896955ba0506f"
-    },
-    {
-      "path": "/documents/matter-12/1094 AT167-EJ152 Memorandum of Garnishee - Diamond Truck Sales - Bank of Stockton (Draft, Pending Levy).pdf",
-      "size": 109656,
-      "sha256": "98d74a5cdb97e8abc84ca968b6d21fea5d2f62ee646363f3af4c03d8da37260e"
-    },
-    {
-      "path": "/documents/matter-12/1094 AT167-EJ152 Memorandum of Garnishee - Diamond Truck Sales - JPMorgan Chase (Draft, Pending Levy).pdf",
-      "size": 109684,
-      "sha256": "18cabb70eddbaee5517eb04263c705f993a0a8300b51661801b8250667e9bbe7"
-    },
-    {
-      "path": "/documents/matter-12/1094 AT167-EJ152 Memorandum of Garnishee (Blank Form).pdf",
-      "size": 64145,
-      "sha256": "e2a1a15b748788fafcb2768c878b5ef0e58e3f65545dc8fa9ba4937c8aa7a339"
     },
     {
       "path": "/documents/matter-12/1094 CIV-110 Request for Dismissal of Does 1-20 (Without Prejudice, Executed Aug 12 2026).pdf",
@@ -1214,14 +1234,14 @@
       "sha256": "bdd3c4b92e16420b572b82d5479b70f504243a75881eba6aa97eb366ad2bfa53"
     },
     {
-      "path": "/documents/matter-12/1094 POS010 Proof of Service of Summons - Alpine (July 1, 2026).jpeg",
-      "size": 1720480,
-      "sha256": "112c2fdf6d19a15d88591374d2612d9f01e5ce801648bf33c474e2dcbbac0b26"
-    },
-    {
       "path": "/documents/matter-12/1094 POS010 Proof of Service of Summons (Blank Form).pdf",
       "size": 118438,
       "sha256": "09b82292b517ea81b7a223a6902f44206645ce6ea8c5ede5b54b8d51bfddfa38"
+    },
+    {
+      "path": "/documents/matter-12/1094 POS010 Proof of Service of Summons - Alpine (July 1, 2026).jpeg",
+      "size": 1720480,
+      "sha256": "112c2fdf6d19a15d88591374d2612d9f01e5ce801648bf33c474e2dcbbac0b26"
     },
     {
       "path": "/documents/matter-12/1094 POS010 Proof of Service of Summons 2.pdf",
@@ -1299,6 +1319,11 @@
       "sha256": "178c2094de3fb9ff6b71a32d8b1dd24da32c575e08b4b67aa81c9133a627c9be"
     },
     {
+      "path": "/documents/matter-12/DTS Default Judgment Packet.pdf",
+      "size": 2522678,
+      "sha256": "11070df7c93a9e437de42612606c6f2fdfc017d8d057e34f3eb27ccd887aca3c"
+    },
+    {
       "path": "/documents/matter-12/Diamond Truck Sales Inc - CA SOS BIZFILE Screenshot (Aug 28 2026).jpg",
       "size": 362599,
       "sha256": "abb2510f439660114b928650a28e654081a54404179885ab269420b247c1be92"
@@ -1307,11 +1332,6 @@
       "path": "/documents/matter-12/Diamond Truck Sales Inc - CA SOS Registered Agent for Service of Process (Aug 28 2026).pdf",
       "size": 364816,
       "sha256": "99642553a5b632acec5ecb1bef6bc23772e79a815e258d2e30f85074526c91ba"
-    },
-    {
-      "path": "/documents/matter-12/DTS Default Judgment Packet.pdf",
-      "size": 2522678,
-      "sha256": "11070df7c93a9e437de42612606c6f2fdfc017d8d057e34f3eb27ccd887aca3c"
     },
     {
       "path": "/documents/matter-12/EMAIL_DRAFT_Azimov_Extend_Service_Response_to_Sep11.txt",
@@ -1399,6 +1419,36 @@
       "sha256": "c40d82beb29e74d6209408fe4c9d22f2fb148b1280aa3fb78c88914c0012b7bf"
     },
     {
+      "path": "/documents/matter-12/SER-001 Request for Sheriff to Serve Court Papers - Alpine Truck Sales (Stanislaus, Aug 3 2026).pdf",
+      "size": 360535,
+      "sha256": "f3f151a104e5b4e59ec2c9b92a9378997bb4429611c48ea9a574889849319123"
+    },
+    {
+      "path": "/documents/matter-12/SER-001 Request for Sheriff to Serve Court Papers - Diamond Truck Sales (Stanislaus, Aug 3 2026).pdf",
+      "size": 360195,
+      "sha256": "c26b125f1c65b3db229993f91dee487845bfe62722dfaa6d4210cd16abc15f7a"
+    },
+    {
+      "path": "/documents/matter-12/Stanislaus Sheriff - SER-001 is blank (Lu, Aug 31 2026).pdf",
+      "size": 54761,
+      "sha256": "b6b1e569f113d45bade0113601939bdc208b81fae089afe4aafc27fe8fd74b69"
+    },
+    {
+      "path": "/documents/matter-12/Stanislaus Sheriff Service Packet - Alpine Truck Sales (SER-001, FW-003, CCP 425.115) (Aug 3 2026).pdf",
+      "size": 290650,
+      "sha256": "4c2dbada15eae4f70e56a29d5fae1e44ffe3adf719a33df769fca134eddba70e"
+    },
+    {
+      "path": "/documents/matter-12/Stanislaus Sheriff Service Packet - Diamond Truck Sales (SER-001, FW-003, CCP 425.115) (Aug 3 2026).pdf",
+      "size": 290152,
+      "sha256": "a581d66abc75cc8ff1dd2be03e5933688973890337513b60289a357ccbf99f37"
+    },
+    {
+      "path": "/documents/matter-12/USPS eReceipt - Priority Mail Default Packets to Stockton Court (Jul 31 2026, Tracking 9505511460056212983268).pdf",
+      "size": 217927,
+      "sha256": "2e145b8af79bdf2a345fe63e406b3c5f60a14a9c1275bf0de6e1bac0f6899166"
+    },
+    {
       "path": "/documents/matter-12/reservice-packets-aug31/1_SER-001_Alpine_Truck_Sales_Kern.pdf",
       "size": 443053,
       "sha256": "547d0ff4b11e4beeba48ef28428b7092b0b71bf30e18ea06f24f4161b30736ef"
@@ -1444,49 +1494,19 @@
       "sha256": "9411c895fa4f3abbde5b31ae784af5b08d22a4d6275c605f0f22c911a09e5b31"
     },
     {
-      "path": "/documents/matter-12/SER-001 Request for Sheriff to Serve Court Papers - Alpine Truck Sales (Stanislaus, Aug 3 2026).pdf",
-      "size": 360535,
-      "sha256": "f3f151a104e5b4e59ec2c9b92a9378997bb4429611c48ea9a574889849319123"
-    },
-    {
-      "path": "/documents/matter-12/SER-001 Request for Sheriff to Serve Court Papers - Diamond Truck Sales (Stanislaus, Aug 3 2026).pdf",
-      "size": 360195,
-      "sha256": "c26b125f1c65b3db229993f91dee487845bfe62722dfaa6d4210cd16abc15f7a"
-    },
-    {
-      "path": "/documents/matter-12/Stanislaus Sheriff - SER-001 is blank (Lu, Aug 31 2026).pdf",
-      "size": 54761,
-      "sha256": "b6b1e569f113d45bade0113601939bdc208b81fae089afe4aafc27fe8fd74b69"
-    },
-    {
-      "path": "/documents/matter-12/Stanislaus Sheriff Service Packet - Alpine Truck Sales (SER-001, FW-003, CCP 425.115) (Aug 3 2026).pdf",
-      "size": 290650,
-      "sha256": "4c2dbada15eae4f70e56a29d5fae1e44ffe3adf719a33df769fca134eddba70e"
-    },
-    {
-      "path": "/documents/matter-12/Stanislaus Sheriff Service Packet - Diamond Truck Sales (SER-001, FW-003, CCP 425.115) (Aug 3 2026).pdf",
-      "size": 290152,
-      "sha256": "a581d66abc75cc8ff1dd2be03e5933688973890337513b60289a357ccbf99f37"
-    },
-    {
-      "path": "/documents/matter-12/USPS eReceipt - Priority Mail Default Packets to Stockton Court (Jul 31 2026, Tracking 9505511460056212983268).pdf",
-      "size": 217927,
-      "sha256": "2e145b8af79bdf2a345fe63e406b3c5f60a14a9c1275bf0de6e1bac0f6899166"
-    },
-    {
       "path": "/documents/matter-14/Newanforbi v Urrea.pdf",
       "size": 107759,
       "sha256": "5478ec0c9e9f9d917ce67cb265d814b47b007fd13df770ae5e77968b90872c43"
     },
     {
-      "path": "/documents/matter-15/5417 Clerk s Certificate of Service by Mail.pdf",
-      "size": 77204,
-      "sha256": "ace7f67eb16c9597bc585faa6963daf2806ac4d88732d87efd46dca7c7958564"
-    },
-    {
       "path": "/documents/matter-15/5417 CM010 Civil Case Cover Sheet.pdf",
       "size": 175500,
       "sha256": "4f3995f364286efa4c5acbafdb43e44b8f92ed300b1d4c5d4ee278f0c9510007"
+    },
+    {
+      "path": "/documents/matter-15/5417 Clerk s Certificate of Service by Mail.pdf",
+      "size": 77204,
+      "sha256": "ace7f67eb16c9597bc585faa6963daf2806ac4d88732d87efd46dca7c7958564"
     },
     {
       "path": "/documents/matter-15/5417 Complaint.pdf",
@@ -1509,14 +1529,14 @@
       "sha256": "4a38693652aa701b00939df8fd9bf1b78e9982e042026e684405cc5e8e03e84b"
     },
     {
-      "path": "/documents/matter-15/Dodd.pdf",
-      "size": 174593,
-      "sha256": "ba36fd227b9f64edb89fa48ebb68533fb5b7dbd34d759861c84dc540b2970eee"
-    },
-    {
       "path": "/documents/matter-15/DODD.pdf",
       "size": 18866163,
       "sha256": "ede8aac1bf91e6ae7419ce2c087d0c346b006e7a02823c4c56a3e7076c501639"
+    },
+    {
+      "path": "/documents/matter-15/Dodd.pdf",
+      "size": 174593,
+      "sha256": "ba36fd227b9f64edb89fa48ebb68533fb5b7dbd34d759861c84dc540b2970eee"
     },
     {
       "path": "/documents/matter-15/Newanforbi v Dodd RECALIBRATED.pdf",
@@ -1674,6 +1694,11 @@
       "sha256": "06508235ccde8f532743b5c4b3c89e6a3693e50db3210b07707ca33927d7378d"
     },
     {
+      "path": "/documents/matter-20/Proof of Electronic Service - RFP Set One CHP (Sep 16 2026).pdf",
+      "size": 197744,
+      "sha256": "d46c5eeb770d330a6d66a336b11a76ab136fcae9a02d5a91d9c130176e1db5e2"
+    },
+    {
       "path": "/documents/matter-20/Proof of Service - Notice of Lodging Nov 1 2024 CHP Dashcam (Sep 8 2026).pdf",
       "size": 358731,
       "sha256": "274dee78d5d476e0e2f796b62de850137426dffa28f64e643cc14c0c764444b2"
@@ -1684,14 +1709,34 @@
       "sha256": "f37303950c92331bab159e5bb6787987ec306b396a0127fc0cbcdf3f4349c3e0"
     },
     {
+      "path": "/documents/matter-20/Proof of Service by First-Class Mail - RFP Set One CHP (Sep 16 2026).pdf",
+      "size": 199084,
+      "sha256": "69bceb3491f656979a95052f0046b451917fc3d2d2aca5e4ef6a48a444e56bab"
+    },
+    {
       "path": "/documents/matter-20/Request for Production of Documents Set One - CHP (Sep 15 2026).pdf",
       "size": 223418,
       "sha256": "6eeaeee9ab521e4452705e3fe1f2fd9006d26c64416605ec960db79f29aa3cdb"
     },
     {
+      "path": "/documents/matter-20/Request for Production of Documents Set One - CHP (Sep 16 2026).pdf",
+      "size": 224556,
+      "sha256": "9728db9053ea01339c71387ab37c213883da9773fa5f3800c32847a979943e38"
+    },
+    {
+      "path": "/documents/matter-20/Request for Production of Documents Set One - CHP with Mail POS (Sep 16 2026).pdf",
+      "size": 421840,
+      "sha256": "793ce2b72ae8a5dc89aeec5cbd30e6bef0605b99dc90d661cc87258aaf9ddbaa"
+    },
+    {
       "path": "/documents/matter-20/Request for Production of Documents Set One - CHP with POS (Sep 15 2026).pdf",
       "size": 534667,
       "sha256": "2dba0eaeca4c05b28e15ec7ff624b829870b881c84ba6685dd8299e2b3c71a42"
+    },
+    {
+      "path": "/documents/matter-20/Request for Production of Documents Set One - CHP with POS (Sep 16 2026).pdf",
+      "size": 420543,
+      "sha256": "e56eb9ebe34646718ffc076e960428e8773b3a4adf2b04d3cd9ad5b8e914ca2f"
     },
     {
       "path": "/documents/matter-20/Stipulation to Advance Hearing Date.docx",
@@ -1702,11 +1747,6 @@
       "path": "/documents/matter-21/Complaint.pdf",
       "size": 126382,
       "sha256": "8cacf7e1425473e3d68e3ecac933167c6a5e5e6512b6c661fc2ce600cdd53e30"
-    },
-    {
-      "path": "/documents/matter-22/Checkr Consumer Report - Pilot Travel Centers (Dec 23 2025).pdf",
-      "size": 41945,
-      "sha256": "76d27191d49e6d2bbbab4ebbf3dc471262f90a8fb3bb985ed2ce0957502f5af9"
     },
     {
       "path": "/documents/matter-22/CIV-110 Request for Dismissal - Entire Action With Prejudice (Pilot, CONFORMED, Dismissal Entered Aug 6 2026).pdf",
@@ -1727,6 +1767,11 @@
       "path": "/documents/matter-22/CM-200 Proof of Service by First-Class Mail + USPS Certificate of Mailing (Pilot, Signed Aug 5 2026).pdf",
       "size": 173182,
       "sha256": "7f4a5c9df659d640f582ef3ca8bd19fc90e000786a0c9ce50e293301e93757fa"
+    },
+    {
+      "path": "/documents/matter-22/Checkr Consumer Report - Pilot Travel Centers (Dec 23 2025).pdf",
+      "size": 41945,
+      "sha256": "76d27191d49e6d2bbbab4ebbf3dc471262f90a8fb3bb985ed2ce0957502f5af9"
     },
     {
       "path": "/documents/matter-22/Confidential Settlement Agreement and Release - Pilot (Signed Jul 14 2026).pdf",
@@ -1779,14 +1824,14 @@
       "sha256": "865e404c12cfd5694bfc47541a0abb76a9dffd2b85b6b5c89d5c75234caa0dd1"
     },
     {
-      "path": "/documents/matter-22/offer_letter_2025-12-10.pdf",
-      "size": 39450,
-      "sha256": "70911750b56a7bdc838c87a5a12902683d5aa29777e7eef4928f42151b54dbb4"
-    },
-    {
       "path": "/documents/matter-22/Post-adverse action notice - Pilot Travel Centers LLC 2.pdf",
       "size": 46584,
       "sha256": "10d40639ead04e0b9981b816cced8288659ac17f3d99af3be89bc9a1767bef21"
+    },
+    {
+      "path": "/documents/matter-22/offer_letter_2025-12-10.pdf",
+      "size": 39450,
+      "sha256": "70911750b56a7bdc838c87a5a12902683d5aa29777e7eef4928f42151b54dbb4"
     },
     {
       "path": "/documents/matter-23/HireRight Report to Macy's Corporate Services (Pre-Employment - BGC). Subject- C 2.pdf",
@@ -1834,6 +1879,21 @@
       "sha256": "4713860e9ea2ca351dcd5747bb74c81ffd0a533f908c275f94a26e21e7c01930"
     },
     {
+      "path": "/documents/matter-24/DRAFT - Administrative Motion to Consider Whether Cases Should Be Related (pre-filing).pdf",
+      "size": 16442,
+      "sha256": "ef9dcfa851881a1174f62aaeb8f2cb35721e51bc51e7f3daabd08f8060a5332c"
+    },
+    {
+      "path": "/documents/matter-24/DRAFT - Declaration ISO Administrative Motion to Relate Cases (pre-filing).pdf",
+      "size": 6670,
+      "sha256": "cc7c3c5222c728242397663da263b56680f767259afe3a0d9f16d7d8eed64c50"
+    },
+    {
+      "path": "/documents/matter-24/DRAFT - Proposed Order Granting Administrative Motion to Relate Cases (pre-filing).pdf",
+      "size": 5174,
+      "sha256": "b1f5437473726f873c88ec4e631dd26cf46ea135eec0fe8ee3738adf5cd7067f"
+    },
+    {
       "path": "/documents/matter-24/Declaration ISO Administrative Motion - Conform Plaintiff's Name - Serrato (N.D. Cal. 3-26-cv-05953-CRB) (September 15, 2026).pdf",
       "size": 202620,
       "sha256": "6ea0be0388b659d34bb501a24f4005da3bce48b34bff478a6d1e6202d4837438"
@@ -1872,21 +1932,6 @@
       "path": "/documents/matter-24/Dkt 25 - Order Continuing Initial CMC (Filed Sep 9 2026).pdf",
       "size": 203347,
       "sha256": "aed7cb2695cf0859ebf0798fe96f79830c54326e49549663b1eb568f78f3f36a"
-    },
-    {
-      "path": "/documents/matter-24/DRAFT - Administrative Motion to Consider Whether Cases Should Be Related (pre-filing).pdf",
-      "size": 16442,
-      "sha256": "ef9dcfa851881a1174f62aaeb8f2cb35721e51bc51e7f3daabd08f8060a5332c"
-    },
-    {
-      "path": "/documents/matter-24/DRAFT - Declaration ISO Administrative Motion to Relate Cases (pre-filing).pdf",
-      "size": 6670,
-      "sha256": "cc7c3c5222c728242397663da263b56680f767259afe3a0d9f16d7d8eed64c50"
-    },
-    {
-      "path": "/documents/matter-24/DRAFT - Proposed Order Granting Administrative Motion to Relate Cases (pre-filing).pdf",
-      "size": 5174,
-      "sha256": "b1f5437473726f873c88ec4e631dd26cf46ea135eec0fe8ee3738adf5cd7067f"
     },
     {
       "path": "/documents/matter-24/ECF Docket Report - N.D. Cal. 3-26-cv-05953-CRB (Pulled Sep 14 2026).pdf",
@@ -2044,11 +2089,6 @@
       "sha256": "3c4d81995412a7ac5144ee41f144ddafe759ac20c615d39a02e288769a4ee9d1"
     },
     {
-      "path": "/documents/matter-24/Opposition to Serrato MTD FAC and Strike v4 - Pleading Paper (Sep 2 2026).pdf",
-      "size": 280630,
-      "sha256": "d1ce4761a36a4a3fbe8496bb6a4e01b834d6840c50b3b2b706c803d2f9e18f9a"
-    },
-    {
       "path": "/documents/matter-24/Opposition to Serrato MTD FAC and Strike v4 (Sep 2 2026).docx",
       "size": 61686,
       "sha256": "f038ea008dd72000f98c3988e01353995f15442b49400527c462b8b663f236a3"
@@ -2057,6 +2097,11 @@
       "path": "/documents/matter-24/Opposition to Serrato MTD FAC and Strike v4 (Sep 2 2026).pdf",
       "size": 130812,
       "sha256": "9501fa024fca2bcde3326a72fb2412b1cfb019487434574add4ceef7b4360bf1"
+    },
+    {
+      "path": "/documents/matter-24/Opposition to Serrato MTD FAC and Strike v4 - Pleading Paper (Sep 2 2026).pdf",
+      "size": 280630,
+      "sha256": "d1ce4761a36a4a3fbe8496bb6a4e01b834d6840c50b3b2b706c803d2f9e18f9a"
     },
     {
       "path": "/documents/matter-24/Opposition to Serrato MTD with Proof of Service by Email (Aug 27 2026).pdf",
@@ -2244,9 +2289,9 @@
       "sha256": "d05990906bc8e4e357532a58356355dd8bfecbe1290a9eef34789204940dd60e"
     },
     {
-      "path": "/documents/matter-25/Federal Express Corporation Application Completed!.pdf",
-      "size": 55235,
-      "sha256": "3a961f3f748204a889adae30397e1069c245f2d50f26c74f23786c65254af480"
+      "path": "/documents/matter-25/FW-003 Order on Court Fee Waiver - GRANTED (Jul 15 2026).pdf",
+      "size": 362497,
+      "sha256": "e53a5acb9848d672b7b4c7a7a17503c8a973166b637ff746097ca57295e3f7fe"
     },
     {
       "path": "/documents/matter-25/FedEx Adverse Employment Action Notice.pdf",
@@ -2269,9 +2314,9 @@
       "sha256": "a8c60724cc1ab84123a5b4904591313fbf19855b1e1195bd0ebd11d3b5741227"
     },
     {
-      "path": "/documents/matter-25/FW-003 Order on Court Fee Waiver - GRANTED (Jul 15 2026).pdf",
-      "size": 362497,
-      "sha256": "e53a5acb9848d672b7b4c7a7a17503c8a973166b637ff746097ca57295e3f7fe"
+      "path": "/documents/matter-25/Federal Express Corporation Application Completed!.pdf",
+      "size": 55235,
+      "sha256": "3a961f3f748204a889adae30397e1069c245f2d50f26c74f23786c65254af480"
     },
     {
       "path": "/documents/matter-25/Gmail - SER-001 Service Request Emailed to LASD Civil Process (Aug 4 2026) - CCP 425.115 Notice.pdf",
@@ -2384,6 +2429,11 @@
       "sha256": "a7a0fb301f9f7ede1e35e9e47e8145febd2e0c136c5a0e713a323ae222bfb602"
     },
     {
+      "path": "/documents/matter-26/Amended Notice Regarding Caption and Request for Intradistrict Reassignment (E.D. Cal. 1-26-at-03195) (Aug 21 2026).pdf",
+      "size": 33914,
+      "sha256": "90db2967a627581a26213180e070c4905632b3003d0b3ee934169501651aafe1"
+    },
+    {
       "path": "/documents/matter-26/Amended Notice of Amount of Punitive Damages Sought (CCP 425.115) - United Parcel Service Inc (Aug 17 2026).pdf",
       "size": 19293,
       "sha256": "270aac82ea6231b8c1f30771ad1a0a23f31e151204db7d81f9a6cdbf2e4f41d2"
@@ -2392,11 +2442,6 @@
       "path": "/documents/matter-26/Amended Notice of Amount of Punitive Damages Sought (CCP 425.115) - United Parcel Service Inc (Aug 7 2026).pdf",
       "size": 16267,
       "sha256": "68573d1e63d7c626e0a5f5a0a48751033a04772abc9814cc8525eaa40f903248"
-    },
-    {
-      "path": "/documents/matter-26/Amended Notice Regarding Caption and Request for Intradistrict Reassignment (E.D. Cal. 1-26-at-03195) (Aug 21 2026).pdf",
-      "size": 33914,
-      "sha256": "90db2967a627581a26213180e070c4905632b3003d0b3ee934169501651aafe1"
     },
     {
       "path": "/documents/matter-26/Complaint - Filed Copy p.1, Court-Stamped (Jul 15 2026).pdf",
@@ -2479,14 +2524,14 @@
       "sha256": "6691a589942498269a5080d2fb19d154bd46f8f577453bf0e992eadd52587d9d"
     },
     {
-      "path": "/documents/matter-26/Final Adverse Action Notification regarding your application with UPS.pdf",
-      "size": 37995,
-      "sha256": "ade092007b8786fd9491a9e5b9bc323853346c4ce3118b6b51456f4009a9ff6e"
-    },
-    {
       "path": "/documents/matter-26/FW-003 Order on Court Fee Waiver - GRANTED (Jul 15 2026).pdf",
       "size": 366355,
       "sha256": "19eeef7530549a1ce46587aeab72f1d649b475d190898429f8e5d90de34a77ca"
+    },
+    {
+      "path": "/documents/matter-26/Final Adverse Action Notification regarding your application with UPS.pdf",
+      "size": 37995,
+      "sha256": "ade092007b8786fd9491a9e5b9bc323853346c4ce3118b6b51456f4009a9ff6e"
     },
     {
       "path": "/documents/matter-26/Newanforbi v UPS Complaint.pdf",
@@ -2532,56 +2577,6 @@
       "path": "/documents/matter-26/Opposition to UPS Rule 12(b)(6) Motion to Dismiss (E.D. Cal. 2-26-cv-02847) (Sep 9 2026).pdf",
       "size": 467406,
       "sha256": "e63959d1c516acddb7331d89b7b105266717749962675cae57122c644d327dcf"
-    },
-    {
-      "path": "/documents/matter-26/opposition-pack-10/01_UPS_MTD_Complete_ECF_7_7-1_7-2_7-3.pdf",
-      "size": 1100510,
-      "sha256": "5844e2bdb4936fe9280eda13b057a256125bedf1dd6ddad041264d34f6e719c1"
-    },
-    {
-      "path": "/documents/matter-26/opposition-pack-10/02_Exhibit_A_First_Advantage_Report_and_Key_Findings.pdf",
-      "size": 129757,
-      "sha256": "4453d9894966b0ddaa57a7090093760d5938b83c89eaa19a8f3bce16c8cc15ae"
-    },
-    {
-      "path": "/documents/matter-26/opposition-pack-10/03_Complaint_and_Summons.pdf",
-      "size": 480615,
-      "sha256": "a20d28db48f6ca85f75bf492fe64d000c6d45f4b77cfedf84a967dbbab01a10c"
-    },
-    {
-      "path": "/documents/matter-26/opposition-pack-10/04_First_Advantage_Adverse_Action_Notices.pdf",
-      "size": 150518,
-      "sha256": "bee21cabff874896a4ae2da8dfa6186487e2c048f8d07fb8af1d8b651a0e7019"
-    },
-    {
-      "path": "/documents/matter-26/opposition-pack-10/05_UPS_Demand_Packet.pdf",
-      "size": 393843,
-      "sha256": "c8de78ff138a0b55ac62b67db539ae45a720f353d1de4c8129487dc998d9ed21"
-    },
-    {
-      "path": "/documents/matter-26/opposition-pack-10/06_Notice_of_Removal_Dkt01.pdf",
-      "size": 1892107,
-      "sha256": "d83850181b135d69011a91a1b565af92f1bf45912252f6968d260bfd8db7b268"
-    },
-    {
-      "path": "/documents/matter-26/opposition-pack-10/07_Initial_Scheduling_Order_Dkt02.pdf",
-      "size": 165189,
-      "sha256": "101c8369cb4b92156fbe9afa5d25a45934625157dc80f5618f90414f1f7b85d3"
-    },
-    {
-      "path": "/documents/matter-26/opposition-pack-10/08_Service_Papers_POS010_and_UPS_COS.pdf",
-      "size": 255614,
-      "sha256": "edd0f97e49eccd8d3bd17a7d585abb8c9c296f07672f8e1fb9288b327a6ba73d"
-    },
-    {
-      "path": "/documents/matter-26/opposition-pack-10/09_PACER_Docket_and_History.pdf",
-      "size": 245051,
-      "sha256": "0ea9c0ee99618b8e0534b1de5253dad752c85f21b096bcb58392732e256cd051"
-    },
-    {
-      "path": "/documents/matter-26/opposition-pack-10/10_Opposition_Roadmap.pdf",
-      "size": 2776,
-      "sha256": "867144f907d9f7701bc97706aeddd38d6f809878ea2017af7c0995d7308ddafe"
     },
     {
       "path": "/documents/matter-26/PACER Deadlines-Hearings - E.D. Cal. 2-26-cv-02847-DAD-CKD (Sep 4 2026).pdf",
@@ -2649,14 +2644,9 @@
       "sha256": "4d475e174506a043f7d644f29879111f2b62122bf4a78f5bb116862e09e4ce32"
     },
     {
-      "path": "/documents/matter-26/Sacramento County Sheriff Civil File Status - Service Confirmed (Jul 25 2026).pdf",
-      "size": 113537,
-      "sha256": "2586c9960138ea466aefd176369ce01f0b54929aec69003bd7dbbbd49c134414"
-    },
-    {
-      "path": "/documents/matter-26/Sacramento County Sheriff E-Filing Order O26005511 (SUBMITTED, Aug 3 2026) - CCP 425.115 Notice.pdf",
-      "size": 91155,
-      "sha256": "778e6974c85e2138d6c4d05e7de34b5bb21abe7cc552c1492a803f0fad113d4a"
+      "path": "/documents/matter-26/SER-001 Request for Sheriff to Serve Court Papers (Jul 20 2026).pdf",
+      "size": 500174,
+      "sha256": "43ba4a3c9c0dfc006610b6b1114ed7095287f2dfe85b5bd5b4f66d1210964e9f"
     },
     {
       "path": "/documents/matter-26/SER-001 Request for Sheriff to Serve Court Papers - United Parcel Service Inc (Amended CCP 425.115 Notice) (Aug 7 2026).pdf",
@@ -2669,19 +2659,24 @@
       "sha256": "9c69585cc0b9bbb8fdca48ac6e0bcd7842a26dfe4a2adb6fc592dee4e9e14f48"
     },
     {
-      "path": "/documents/matter-26/SER-001 Request for Sheriff to Serve Court Papers (Jul 20 2026).pdf",
-      "size": 500174,
-      "sha256": "43ba4a3c9c0dfc006610b6b1114ed7095287f2dfe85b5bd5b4f66d1210964e9f"
+      "path": "/documents/matter-26/SUM-100 Summons - United Parcel Service Inc (Jul 15 2026).pdf",
+      "size": 218255,
+      "sha256": "d54607592e57ab1bd493a989fb7cd03a271a7cc4791ee2e28d184f9026981852"
+    },
+    {
+      "path": "/documents/matter-26/Sacramento County Sheriff Civil File Status - Service Confirmed (Jul 25 2026).pdf",
+      "size": 113537,
+      "sha256": "2586c9960138ea466aefd176369ce01f0b54929aec69003bd7dbbbd49c134414"
+    },
+    {
+      "path": "/documents/matter-26/Sacramento County Sheriff E-Filing Order O26005511 (SUBMITTED, Aug 3 2026) - CCP 425.115 Notice.pdf",
+      "size": 91155,
+      "sha256": "778e6974c85e2138d6c4d05e7de34b5bb21abe7cc552c1492a803f0fad113d4a"
     },
     {
       "path": "/documents/matter-26/Settlement Demand Email - United Parcel Service Inc (Aug 31 2026).pdf",
       "size": 38233,
       "sha256": "d06426daa7ec155e6319890558e5d484ab2a7bdc8e7c1b9af63dbc5f84186ce3"
-    },
-    {
-      "path": "/documents/matter-26/SUM-100 Summons - United Parcel Service Inc (Jul 15 2026).pdf",
-      "size": 218255,
-      "sha256": "d54607592e57ab1bd493a989fb7cd03a271a7cc4791ee2e28d184f9026981852"
     },
     {
       "path": "/documents/matter-26/UPS Demand Packet Newanforbi.pdf",
@@ -2704,14 +2699,54 @@
       "sha256": "aadb5dfe236478181d75777327f8495ccc8be8cfed54e37abaf52285439e006d"
     },
     {
-      "path": "/documents/matter-27/[Proposed] Order Extending Time for Randstad to Respond (Plaintiff Counterpart, Sep 14 2026).docx",
-      "size": 38596,
-      "sha256": "364b307842e8b00792810d3b3de16e6a7881cf2e50f05258e91b880d9a582dfb"
+      "path": "/documents/matter-26/opposition-pack-10/01_UPS_MTD_Complete_ECF_7_7-1_7-2_7-3.pdf",
+      "size": 1100510,
+      "sha256": "5844e2bdb4936fe9280eda13b057a256125bedf1dd6ddad041264d34f6e719c1"
     },
     {
-      "path": "/documents/matter-27/[Proposed] Order Extending Time for Randstad to Respond (Plaintiff Counterpart, Sep 14 2026).pdf",
-      "size": 5667,
-      "sha256": "8394f76cf5bccf48dae12b94f60a0e845b29b3fa6ac49bc54a5bc777fc60aaed"
+      "path": "/documents/matter-26/opposition-pack-10/02_Exhibit_A_First_Advantage_Report_and_Key_Findings.pdf",
+      "size": 129757,
+      "sha256": "4453d9894966b0ddaa57a7090093760d5938b83c89eaa19a8f3bce16c8cc15ae"
+    },
+    {
+      "path": "/documents/matter-26/opposition-pack-10/03_Complaint_and_Summons.pdf",
+      "size": 480615,
+      "sha256": "a20d28db48f6ca85f75bf492fe64d000c6d45f4b77cfedf84a967dbbab01a10c"
+    },
+    {
+      "path": "/documents/matter-26/opposition-pack-10/04_First_Advantage_Adverse_Action_Notices.pdf",
+      "size": 150518,
+      "sha256": "bee21cabff874896a4ae2da8dfa6186487e2c048f8d07fb8af1d8b651a0e7019"
+    },
+    {
+      "path": "/documents/matter-26/opposition-pack-10/05_UPS_Demand_Packet.pdf",
+      "size": 393843,
+      "sha256": "c8de78ff138a0b55ac62b67db539ae45a720f353d1de4c8129487dc998d9ed21"
+    },
+    {
+      "path": "/documents/matter-26/opposition-pack-10/06_Notice_of_Removal_Dkt01.pdf",
+      "size": 1892107,
+      "sha256": "d83850181b135d69011a91a1b565af92f1bf45912252f6968d260bfd8db7b268"
+    },
+    {
+      "path": "/documents/matter-26/opposition-pack-10/07_Initial_Scheduling_Order_Dkt02.pdf",
+      "size": 165189,
+      "sha256": "101c8369cb4b92156fbe9afa5d25a45934625157dc80f5618f90414f1f7b85d3"
+    },
+    {
+      "path": "/documents/matter-26/opposition-pack-10/08_Service_Papers_POS010_and_UPS_COS.pdf",
+      "size": 255614,
+      "sha256": "edd0f97e49eccd8d3bd17a7d585abb8c9c296f07672f8e1fb9288b327a6ba73d"
+    },
+    {
+      "path": "/documents/matter-26/opposition-pack-10/09_PACER_Docket_and_History.pdf",
+      "size": 245051,
+      "sha256": "0ea9c0ee99618b8e0534b1de5253dad752c85f21b096bcb58392732e256cd051"
+    },
+    {
+      "path": "/documents/matter-26/opposition-pack-10/10_Opposition_Roadmap.pdf",
+      "size": 2776,
+      "sha256": "867144f907d9f7701bc97706aeddd38d6f809878ea2017af7c0995d7308ddafe"
     },
     {
       "path": "/documents/matter-27/15780719Final_Profile.PDF",
@@ -2719,14 +2754,24 @@
       "sha256": "d8a2b75750f56a2760d2650a56ca668ece4424e576e03fe877641a2fe94d16f3"
     },
     {
+      "path": "/documents/matter-27/Amended Notice of Amount of Punitive Damages Sought (CCP 425.115) - RK Logistics Group Inc (Aug 7 2026).pdf",
+      "size": 17604,
+      "sha256": "de6941dec8ec0582afcbed483e15e71093150d9b511aa2719ae26a8d32da5b32"
+    },
+    {
       "path": "/documents/matter-27/Amended Notice of Amount of Punitive Damages Sought (CCP 425.115) - Randstad US LLC (Aug 7 2026).pdf",
       "size": 17598,
       "sha256": "d8ce3d6ecc69de5b4bb37ed1fe4ae1bed07d0dda3f6d461f99614dda6af727a1"
     },
     {
-      "path": "/documents/matter-27/Amended Notice of Amount of Punitive Damages Sought (CCP 425.115) - RK Logistics Group Inc (Aug 7 2026).pdf",
-      "size": 17604,
-      "sha256": "de6941dec8ec0582afcbed483e15e71093150d9b511aa2719ae26a8d32da5b32"
+      "path": "/documents/matter-27/CIV-100 Request for Court Judgment - Randstad US LLC (Default Previously Entered, Sep 16 2026).pdf",
+      "size": 501849,
+      "sha256": "64e0aff617cf9b8ab7bcb43b23a23b0037e9ee280ec2dede4866d2dcf651866f"
+    },
+    {
+      "path": "/documents/matter-27/CIV-100 Request for Entry of Default - RK Logistics Group Inc (Clerk Default Only, Sep 15 2026).pdf",
+      "size": 499973,
+      "sha256": "b9e97a2b5730af8f7ff6582a7b828e0c24f6f81ec2fbb4367af86a766d2da4cd"
     },
     {
       "path": "/documents/matter-27/CIV-100 Request for Entry of Default - Randstad US LLC (Clerk Default Only, Sep 16 2026).pdf",
@@ -2739,9 +2784,9 @@
       "sha256": "b63386887bbd354beb6e9b1ec2cc0bf2b6003b6f70cab819434d206428d4008b"
     },
     {
-      "path": "/documents/matter-27/CIV-100 Request for Entry of Default - RK Logistics Group Inc (Clerk Default Only, Sep 15 2026).pdf",
-      "size": 499973,
-      "sha256": "b9e97a2b5730af8f7ff6582a7b828e0c24f6f81ec2fbb4367af86a766d2da4cd"
+      "path": "/documents/matter-27/CIV-110 Request for Dismissal of Does 1-20 (Without Prejudice, Executed Sep 16 2026).pdf",
+      "size": 1657169,
+      "sha256": "8d070fc9dbf60de89e36e3640c638760d57f23a618f30a7de517e43718884b0c"
     },
     {
       "path": "/documents/matter-27/CIV-141 Declaration of Demurring or Moving Party - The RK Logistics Group Inc (Gurney, Sep 14 2026).pdf",
@@ -2767,6 +2812,16 @@
       "path": "/documents/matter-27/DO NOT SIGN - Randstad Stipulation re Answer Deadline (Counsel Draft Sep 14 2026).docx",
       "size": 52463,
       "sha256": "4cdf4dd938efbd4a6daf87175ec9573f72dc0a2dfc0b4d2107063dba038bd62c"
+    },
+    {
+      "path": "/documents/matter-27/Declaration of Brendan Ngehsi Newanforbi ISO Default Judgment by Court - Randstad US LLC (Sep 16 2026).pdf",
+      "size": 229722,
+      "sha256": "eefe31b21ecb669d8f6ae6e66167ebf5de1a2b54709f283a9c476f4892be28d8"
+    },
+    {
+      "path": "/documents/matter-27/Default Judgment Prove-Up Packet - Randstad US LLC (Court Judgment, Sep 16 2026).pdf",
+      "size": 2985618,
+      "sha256": "239ee319933de824ebdeb629e2e61dc20ebbe278e5a0f87017a2da73ba3ffd12"
     },
     {
       "path": "/documents/matter-27/EMAIL_DRAFT_Garcia_Courtesy_Copies_Filed_POS040_425115.txt",
@@ -2829,14 +2884,14 @@
       "sha256": "67c6943c0694382d0c14ac04e862f7752d587066cc3fb7cda2ebf74617869947"
     },
     {
-      "path": "/documents/matter-27/Gmail - Demand Sent to Randstad (Jul 20 2026).pdf",
-      "size": 87876,
-      "sha256": "9a03b9d96b04ba8e87d789e59e1c30391bb9daf3b56a587b8a88a9b17aabf53c"
-    },
-    {
       "path": "/documents/matter-27/Gmail - Demand Sent to RK Logistics (Jul 20 2026).pdf",
       "size": 87841,
       "sha256": "d3caa9a2e8cc67dfda3464d7efb616596bb196b8daa44d6a34f9af973653d8f0"
+    },
+    {
+      "path": "/documents/matter-27/Gmail - Demand Sent to Randstad (Jul 20 2026).pdf",
+      "size": 87876,
+      "sha256": "9a03b9d96b04ba8e87d789e59e1c30391bb9daf3b56a587b8a88a9b17aabf53c"
     },
     {
       "path": "/documents/matter-27/Gmail - Garcia Courtesy Copies Filed POS040 425115 (Sep 9 2026).pdf",
@@ -2859,14 +2914,14 @@
       "sha256": "82f68a31f2c09b4af91bcd9ebb12465265b2817e29f4a45160b492b38d96a0ed"
     },
     {
-      "path": "/documents/matter-27/Gmail - Response to PreFiling Demand for Settlement.pdf",
-      "size": 190617,
-      "sha256": "6efb8eef632792379b78572ff1ae2cd4d653c78e3ceee700e2d1289fae3988c6"
-    },
-    {
       "path": "/documents/matter-27/Gmail - RK Logistics Extension Request to Sep 14 (Aug 21 2026).pdf",
       "size": 156800,
       "sha256": "022d87c97148052c91991cd92b3af0eb7eeb508721d6c38d0e81b5091e383213"
+    },
+    {
+      "path": "/documents/matter-27/Gmail - Response to PreFiling Demand for Settlement.pdf",
+      "size": 190617,
+      "sha256": "6efb8eef632792379b78572ff1ae2cd4d653c78e3ceee700e2d1289fae3988c6"
     },
     {
       "path": "/documents/matter-27/Gmail - Tai Serves CIV-141 RK Automatic Extension (Sep 14 2026).pdf",
@@ -2924,14 +2979,14 @@
       "sha256": "b0eea5aa5f8cdfafa7d610ee48240762bfe91d508057387ddabfa39fcdf4998c"
     },
     {
-      "path": "/documents/matter-27/Notice of Amount of Punitive Damages Sought (CCP 425.115) - Randstad US LLC (Aug 4 2026).pdf",
-      "size": 15705,
-      "sha256": "c9ffddae17800660fbe691cfd730a344ed200c444c2780db017ddc84d63e55fd"
-    },
-    {
       "path": "/documents/matter-27/Notice of Amount of Punitive Damages Sought (CCP 425.115) - RK Logistics Group Inc (Aug 4 2026).pdf",
       "size": 15715,
       "sha256": "01ff3bfd2a4e8abe5608e8686aaf203320f679ec28aedecf198b33aae2f88421"
+    },
+    {
+      "path": "/documents/matter-27/Notice of Amount of Punitive Damages Sought (CCP 425.115) - Randstad US LLC (Aug 4 2026).pdf",
+      "size": 15705,
+      "sha256": "c9ffddae17800660fbe691cfd730a344ed200c444c2780db017ddc84d63e55fd"
     },
     {
       "path": "/documents/matter-27/Notice of Confirmation of Electronic Filing - Amended Punitive Damages Notices Accepted (Aug 6 2026).pdf",
@@ -2954,14 +3009,19 @@
       "sha256": "819091d306b4c64d1ea4144aec1e0671f1b088efb85dd944d8fea69302900a2b"
     },
     {
+      "path": "/documents/matter-27/POS-010 Proof of Service of Summons - RK Logistics Group Inc (Served Jul 30 2026, Levying Officer 2026026857).pdf",
+      "size": 87229,
+      "sha256": "a36b15c6d076b763e425a9943444c0b51d55013f07cb8df31bd51557acc7b757"
+    },
+    {
       "path": "/documents/matter-27/POS-010 Proof of Service of Summons - Randstad US LLC (Served Jul 30 2026, Levying Officer 2026026857).pdf",
       "size": 86906,
       "sha256": "61637257c2ccbbffa9a18ac16bcb40f5c83fd3dfa3d1410fb6546e014525fce6"
     },
     {
-      "path": "/documents/matter-27/POS-010 Proof of Service of Summons - RK Logistics Group Inc (Served Jul 30 2026, Levying Officer 2026026857).pdf",
-      "size": 87229,
-      "sha256": "a36b15c6d076b763e425a9943444c0b51d55013f07cb8df31bd51557acc7b757"
+      "path": "/documents/matter-27/POS-040 Proof of Service - Amended CCP 425.115 Notice - RK Logistics Group Inc (Served Aug 21 2026, Filed Sep 9 2026, Levying Officer 2026028894).pdf",
+      "size": 66299,
+      "sha256": "8504202bef57b6d8f188231141eb8d12763d2619464427ea26f46103745c362d"
     },
     {
       "path": "/documents/matter-27/POS-040 Proof of Service - Amended CCP 425.115 Notice - Randstad US LLC (Served Aug 21 2026, Filed Sep 9 2026, Levying Officer 2026028894).pdf",
@@ -2974,14 +3034,14 @@
       "sha256": "8a01c23470d89c4eb04831f93bf2d3db49844c5b0d11267e33dd0f083f656ce7"
     },
     {
-      "path": "/documents/matter-27/POS-040 Proof of Service - Amended CCP 425.115 Notice - RK Logistics Group Inc (Served Aug 21 2026, Filed Sep 9 2026, Levying Officer 2026028894).pdf",
-      "size": 66299,
-      "sha256": "8504202bef57b6d8f188231141eb8d12763d2619464427ea26f46103745c362d"
-    },
-    {
       "path": "/documents/matter-27/POS-040 Proof of Service - Amended CCP 425.115 Notice - The RK Logistics Group Inc (Sheriff 4-page packet, Served Aug 21 2026, Levying Officer 2026028894).pdf",
       "size": 113278,
       "sha256": "b83c4e09d3332d9742434eae0548d8ea550419c19e33353a89d4233ec4f83405"
+    },
+    {
+      "path": "/documents/matter-27/Pre-Filing Demand Letter - RK Logistics Group Inc (Jul 20 2026).pdf",
+      "size": 10326,
+      "sha256": "c3485dbfaf530b2f825229c41f80a7c8d2db2957dfd7b45a7792f38438801c38"
     },
     {
       "path": "/documents/matter-27/Pre-Filing Demand Letter - Randstad US LLC (Jul 20 2026).pdf",
@@ -2989,9 +3049,9 @@
       "sha256": "1e5b8e1d4628529b7c13b336edc62e44d074cb730437888fa0984883ea6fe09e"
     },
     {
-      "path": "/documents/matter-27/Pre-Filing Demand Letter - RK Logistics Group Inc (Jul 20 2026).pdf",
-      "size": 10326,
-      "sha256": "c3485dbfaf530b2f825229c41f80a7c8d2db2957dfd7b45a7792f38438801c38"
+      "path": "/documents/matter-27/RK Logistics Group Inc - CA SOS Registered Agent for Service of Process.pdf",
+      "size": 896404,
+      "sha256": "0469772347761a52049ae6e6d7127cb700db09ac18ece543e83e3f62c5cc0fb5"
     },
     {
       "path": "/documents/matter-27/Randstad Civil Case Cover Sheet.pdf",
@@ -3034,39 +3094,9 @@
       "sha256": "88e180106cb165c639f011960efdd28185894b9146c163f421519e24b0475b6c"
     },
     {
-      "path": "/documents/matter-27/RK Logistics Group Inc - CA SOS Registered Agent for Service of Process.pdf",
-      "size": 896404,
-      "sha256": "0469772347761a52049ae6e6d7127cb700db09ac18ece543e83e3f62c5cc0fb5"
-    },
-    {
-      "path": "/documents/matter-27/Sacramento County Sheriff Civil File Status - Service Confirmed (Aug 1 2026).pdf",
-      "size": 115966,
-      "sha256": "1b67e29ed7a7f0e0c566b627f016b0b1ffe7357872d355218585c4602ba7729c"
-    },
-    {
-      "path": "/documents/matter-27/Sacramento County Sheriff E-Filing Order O26005291 (PROCESSED, Jul 27 2026).pdf",
-      "size": 37693,
-      "sha256": "f93e39f146dd954a72b3bd1eecb734a01371704254a55afebb586018ac84fc2a"
-    },
-    {
-      "path": "/documents/matter-27/Sacramento County Sheriff E-Filing Order O26005511 (SUBMITTED, Aug 3 2026) - CCP 425.115 Notices.pdf",
-      "size": 91155,
-      "sha256": "778e6974c85e2138d6c4d05e7de34b5bb21abe7cc552c1492a803f0fad113d4a"
-    },
-    {
-      "path": "/documents/matter-27/SER-001 Request for Sheriff to Serve Court Papers - Randstad US LLC (Amended CCP 425.115 Notice) (Aug 7 2026).pdf",
-      "size": 360961,
-      "sha256": "dc01996450501099042bf9e145c6b4a0357a3ee5379430798a1cd23f73fd2f20"
-    },
-    {
-      "path": "/documents/matter-27/SER-001 Request for Sheriff to Serve Court Papers - Randstad US LLC (CCP 425.115 Notice) (Aug 4 2026).pdf",
-      "size": 360070,
-      "sha256": "673c25ecbcc85c42ab83e8a1fbd8d339beeb38cb5ee35d6ff3b0fc63c5dbb363"
-    },
-    {
-      "path": "/documents/matter-27/SER-001 Request for Sheriff to Serve Court Papers - Randstad US LLC (Jul 24 2026).pdf",
-      "size": 205958,
-      "sha256": "6ef583a53c01bb081e77d4725e6d0a558d5f6b8be16d5f5c3c4f72006755f596"
+      "path": "/documents/matter-27/SER-001 Request for Sheriff to Serve Court Papers (Jul 20 2026).pdf",
+      "size": 484632,
+      "sha256": "27e5493b4823cb0b7718ad9de1710abc47c65a5bc1115b15ecc7ee445ac8100d"
     },
     {
       "path": "/documents/matter-27/SER-001 Request for Sheriff to Serve Court Papers - RK Logistics Group Inc (Amended CCP 425.115 Notice) (Aug 7 2026).pdf",
@@ -3084,9 +3114,49 @@
       "sha256": "6e7e7f261f36e198de1b6bbb432eb3e4445bcf940ec077aa7af80c887921bac0"
     },
     {
-      "path": "/documents/matter-27/SER-001 Request for Sheriff to Serve Court Papers (Jul 20 2026).pdf",
-      "size": 484632,
-      "sha256": "27e5493b4823cb0b7718ad9de1710abc47c65a5bc1115b15ecc7ee445ac8100d"
+      "path": "/documents/matter-27/SER-001 Request for Sheriff to Serve Court Papers - Randstad US LLC (Amended CCP 425.115 Notice) (Aug 7 2026).pdf",
+      "size": 360961,
+      "sha256": "dc01996450501099042bf9e145c6b4a0357a3ee5379430798a1cd23f73fd2f20"
+    },
+    {
+      "path": "/documents/matter-27/SER-001 Request for Sheriff to Serve Court Papers - Randstad US LLC (CCP 425.115 Notice) (Aug 4 2026).pdf",
+      "size": 360070,
+      "sha256": "673c25ecbcc85c42ab83e8a1fbd8d339beeb38cb5ee35d6ff3b0fc63c5dbb363"
+    },
+    {
+      "path": "/documents/matter-27/SER-001 Request for Sheriff to Serve Court Papers - Randstad US LLC (Jul 24 2026).pdf",
+      "size": 205958,
+      "sha256": "6ef583a53c01bb081e77d4725e6d0a558d5f6b8be16d5f5c3c4f72006755f596"
+    },
+    {
+      "path": "/documents/matter-27/SUM100 Newanforbi v Randstad (Corrected for Resubmission).pdf",
+      "size": 1245985,
+      "sha256": "4b80d9c0034ba1e27a57a6061d23f9abe0ff30482466f0bed4a34226dd9d052f"
+    },
+    {
+      "path": "/documents/matter-27/SUM100 Newanforbi v Randstad (ELECTRONICALLY FILED Jul 21 2026).pdf",
+      "size": 1257149,
+      "sha256": "c10e643568ca92bb797f8e2a2f3d0f2f01ca0327415e1c451cdbbbb44e50415b"
+    },
+    {
+      "path": "/documents/matter-27/SUM100 Newanforbi v Randstad.pdf",
+      "size": 55424,
+      "sha256": "a34469837a8c47b2f5d6c36cf745de32e203e0fa2cf69227e9037a67131df4cc"
+    },
+    {
+      "path": "/documents/matter-27/Sacramento County Sheriff Civil File Status - Service Confirmed (Aug 1 2026).pdf",
+      "size": 115966,
+      "sha256": "1b67e29ed7a7f0e0c566b627f016b0b1ffe7357872d355218585c4602ba7729c"
+    },
+    {
+      "path": "/documents/matter-27/Sacramento County Sheriff E-Filing Order O26005291 (PROCESSED, Jul 27 2026).pdf",
+      "size": 37693,
+      "sha256": "f93e39f146dd954a72b3bd1eecb734a01371704254a55afebb586018ac84fc2a"
+    },
+    {
+      "path": "/documents/matter-27/Sacramento County Sheriff E-Filing Order O26005511 (SUBMITTED, Aug 3 2026) - CCP 425.115 Notices.pdf",
+      "size": 91155,
+      "sha256": "778e6974c85e2138d6c4d05e7de34b5bb21abe7cc552c1492a803f0fad113d4a"
     },
     {
       "path": "/documents/matter-27/Settlement Demand - Randstad US LLC (Aug 28 2026).pdf",
@@ -3119,24 +3189,29 @@
       "sha256": "262451406d7a2365d3ea92c0c2116c8ed841f962bf7971346e1370225997fe57"
     },
     {
-      "path": "/documents/matter-27/SUM100 Newanforbi v Randstad (Corrected for Resubmission).pdf",
-      "size": 1245985,
-      "sha256": "4b80d9c0034ba1e27a57a6061d23f9abe0ff30482466f0bed4a34226dd9d052f"
-    },
-    {
-      "path": "/documents/matter-27/SUM100 Newanforbi v Randstad (ELECTRONICALLY FILED Jul 21 2026).pdf",
-      "size": 1257149,
-      "sha256": "c10e643568ca92bb797f8e2a2f3d0f2f01ca0327415e1c451cdbbbb44e50415b"
-    },
-    {
-      "path": "/documents/matter-27/SUM100 Newanforbi v Randstad.pdf",
-      "size": 55424,
-      "sha256": "a34469837a8c47b2f5d6c36cf745de32e203e0fa2cf69227e9037a67131df4cc"
-    },
-    {
       "path": "/documents/matter-27/Welcome to Randstad.pdf",
       "size": 83979,
       "sha256": "477439c1f28efd4a877ea8a3719680233b984ac1cdd1728d6135a9cb16a2efcd"
+    },
+    {
+      "path": "/documents/matter-27/[Proposed] Judgment (JUD-100) - Randstad US LLC (Default Prove-Up, Sep 16 2026).pdf",
+      "size": 173023,
+      "sha256": "4009adfe4ed61a3aec7cabe8e0ce5ed889d8c0a7501afa6407ccaf29f4f1dacc"
+    },
+    {
+      "path": "/documents/matter-27/[Proposed] Order Extending Time for Randstad to Respond (Plaintiff Counterpart, Sep 14 2026).docx",
+      "size": 38596,
+      "sha256": "364b307842e8b00792810d3b3de16e6a7881cf2e50f05258e91b880d9a582dfb"
+    },
+    {
+      "path": "/documents/matter-27/[Proposed] Order Extending Time for Randstad to Respond (Plaintiff Counterpart, Sep 14 2026).pdf",
+      "size": 5667,
+      "sha256": "8394f76cf5bccf48dae12b94f60a0e845b29b3fa6ac49bc54a5bc777fc60aaed"
+    },
+    {
+      "path": "/documents/matter-28/AO 440 Summons Issued - Shannon Smith and HOPE Psychotherapy (N.D. Cal. 3-26-cv-07504-LJC) (Aug 31 2026).pdf",
+      "size": 940850,
+      "sha256": "169e74d548e450789d820d1f4801513b32543ce49f97d02b062039a4fc7eb47d"
     },
     {
       "path": "/documents/matter-28/Administrative Motion - Conform Plaintiff's Name - Smith (N.D. Cal. 3-26-cv-07504-LJC) (September 14, 2026).pdf",
@@ -3147,41 +3222,6 @@
       "path": "/documents/matter-28/Amended Certificate of Service (re Dkt 9, dated Jul 31 2026).pdf",
       "size": 16986,
       "sha256": "dba4828e5ce5c795513dcb2bc91e1fd82e55fb062417f5a89daf4233fc4c1d2f"
-    },
-    {
-      "path": "/documents/matter-28/amended-summons-for-issuance/00_Request_for_Issuance_of_Amended_Summons.pdf",
-      "size": 282284,
-      "sha256": "dd32455da91e6b6263946e12a2209d78c410b86875b395fa0a6b32041a060371"
-    },
-    {
-      "path": "/documents/matter-28/amended-summons-for-issuance/01_Amended_Summons_Shannon_Smith.pdf",
-      "size": 16796,
-      "sha256": "b090b9d07a455196eff905205fd58ea74f5a589b4c1b29456e378d0d3da0bdf0"
-    },
-    {
-      "path": "/documents/matter-28/amended-summons-for-issuance/01a_Exhibit_A_Cover.pdf",
-      "size": 2169,
-      "sha256": "eb853b7434d77767fc318dc0853890168403b9f5ce35e8e3a14713d3980d3a8d"
-    },
-    {
-      "path": "/documents/matter-28/amended-summons-for-issuance/02_Amended_Summons_HOPE_Psychotherapy.pdf",
-      "size": 16807,
-      "sha256": "b4ffc0d64007fb588118c966dc940e45c3bcff0584672f7bea1348544b95f342"
-    },
-    {
-      "path": "/documents/matter-28/amended-summons-for-issuance/02a_Exhibit_B_Cover.pdf",
-      "size": 2168,
-      "sha256": "b64df0b584e79b18f3ce8f255e3257140adfc5d0561c8ef85cd71aeedddfbdf7"
-    },
-    {
-      "path": "/documents/matter-28/amended-summons-for-issuance/COMPLETE_Amended_Summons_Packet_for_Clerk.pdf",
-      "size": 318024,
-      "sha256": "c6157a213a3ee62927dd7cf62ab1887ab495fe06b4c8599126dd40086f42c23e"
-    },
-    {
-      "path": "/documents/matter-28/AO 440 Summons Issued - Shannon Smith and HOPE Psychotherapy (N.D. Cal. 3-26-cv-07504-LJC) (Aug 31 2026).pdf",
-      "size": 940850,
-      "sha256": "169e74d548e450789d820d1f4801513b32543ce49f97d02b062039a4fc7eb47d"
     },
     {
       "path": "/documents/matter-28/Certification of Conflicts Interested Entities and Persons (Smith HOPE) (Sep 4 2026).pdf",
@@ -3274,6 +3314,11 @@
       "sha256": "9d53f465ca1c10a8a1d8cfb30e71d11ee8f9dd0dca2f1e31ebd6326de3d08d02"
     },
     {
+      "path": "/documents/matter-28/Gmail - RE request to stipulate to docket name correction - Martinez (Sep 10 2026).pdf",
+      "size": 112347,
+      "sha256": "4aa410921c968a2fcdc48d6491525531cb01d9644e0961b755e6c46aad6ea80c"
+    },
+    {
       "path": "/documents/matter-28/Gmail - Re Contains JavaScript Re Newanforbi v Palacios re Stipulated Protective Order (Jun 2026).pdf",
       "size": 1975641,
       "sha256": "c8c520b34943c9542a9515d588c06890ead62710c977c7dbcfc4c4cbbfcaff22"
@@ -3282,11 +3327,6 @@
       "path": "/documents/matter-28/Gmail - Re Pro se e-filing one account two name forms - CAND ECF Help Desk (Received Sep 1 2026).pdf",
       "size": 72999,
       "sha256": "65fce46f57738d9d17960a6a70bfed263368209f511ab2eb98f383a2e5f9884f"
-    },
-    {
-      "path": "/documents/matter-28/Gmail - RE request to stipulate to docket name correction - Martinez (Sep 10 2026).pdf",
-      "size": 112347,
-      "sha256": "4aa410921c968a2fcdc48d6491525531cb01d9644e0961b755e6c46aad6ea80c"
     },
     {
       "path": "/documents/matter-28/HOPE Discovery (Matter 5)/1_HOPE_Clinical_Operational_Manual_9_24_24_225349_pg_1_to_90.pdf",
@@ -3369,14 +3409,14 @@
       "sha256": "041eb36686f23249cf4c607d84a68b452d41325fcb98bf5664c5febf61684ab6"
     },
     {
-      "path": "/documents/matter-28/Pay.gov Filing Fee Payment Confirmation (Jul 24 2026).pdf",
-      "size": 78818,
-      "sha256": "b0302da9d4371678dd016185d346e941dec86bc03a7dcc9cde7efa6dcd2672c6"
-    },
-    {
       "path": "/documents/matter-28/PROMPT_Test_Van_Dine_12b6_Grounds.txt",
       "size": 6691,
       "sha256": "c7f3c96f6679e5bee9b0f62d1fe36d3529eba1919db856902f3d7144f3b05270"
+    },
+    {
+      "path": "/documents/matter-28/Pay.gov Filing Fee Payment Confirmation (Jul 24 2026).pdf",
+      "size": 78818,
+      "sha256": "b0302da9d4371678dd016185d346e941dec86bc03a7dcc9cde7efa6dcd2672c6"
     },
     {
       "path": "/documents/matter-28/Proof of Service - Certification of Conflicts (Smith HOPE) (Sep 4 2026).pdf",
@@ -3414,14 +3454,54 @@
       "sha256": "ab076273ddb8d658c81785f21b897af373f741ed4704ca75d0e67e81df6ed1fd"
     },
     {
-      "path": "/documents/matter-28/research/Cal. Code Regs. Tit. 15 sec. 3574 - Sex Offender Treatment.pdf",
-      "size": 1054313,
-      "sha256": "267c3253f033c5b047e8a15c2401b93cda4f48728f6ac3fc528d914dfaea37bd"
+      "path": "/documents/matter-28/Service Packet Emailed to SLB (Issued Summons Complaint Dkt 1-1 Dkt 4 Dkt 11) (Aug 31 2026).pdf",
+      "size": 3569331,
+      "sha256": "667123addaa9951634856e9fb2bd28b49e94c897c1d5d1d99e47fb8ebdf8017f"
+    },
+    {
+      "path": "/documents/matter-28/Stipulated Protective Order SIGNED.pdf",
+      "size": 237043,
+      "sha256": "62e9a8fbec681c06582316962596af7e2f9401ffa08ab36e19dc0f6070cb7403"
+    },
+    {
+      "path": "/documents/matter-28/amended-summons-for-issuance/00_Request_for_Issuance_of_Amended_Summons.pdf",
+      "size": 282284,
+      "sha256": "dd32455da91e6b6263946e12a2209d78c410b86875b395fa0a6b32041a060371"
+    },
+    {
+      "path": "/documents/matter-28/amended-summons-for-issuance/01_Amended_Summons_Shannon_Smith.pdf",
+      "size": 16796,
+      "sha256": "b090b9d07a455196eff905205fd58ea74f5a589b4c1b29456e378d0d3da0bdf0"
+    },
+    {
+      "path": "/documents/matter-28/amended-summons-for-issuance/01a_Exhibit_A_Cover.pdf",
+      "size": 2169,
+      "sha256": "eb853b7434d77767fc318dc0853890168403b9f5ce35e8e3a14713d3980d3a8d"
+    },
+    {
+      "path": "/documents/matter-28/amended-summons-for-issuance/02_Amended_Summons_HOPE_Psychotherapy.pdf",
+      "size": 16807,
+      "sha256": "b4ffc0d64007fb588118c966dc940e45c3bcff0584672f7bea1348544b95f342"
+    },
+    {
+      "path": "/documents/matter-28/amended-summons-for-issuance/02a_Exhibit_B_Cover.pdf",
+      "size": 2168,
+      "sha256": "b64df0b584e79b18f3ce8f255e3257140adfc5d0561c8ef85cd71aeedddfbdf7"
+    },
+    {
+      "path": "/documents/matter-28/amended-summons-for-issuance/COMPLETE_Amended_Summons_Packet_for_Clerk.pdf",
+      "size": 318024,
+      "sha256": "c6157a213a3ee62927dd7cf62ab1887ab495fe06b4c8599126dd40086f42c23e"
     },
     {
       "path": "/documents/matter-28/research/CASOMB Provider Treatment Completion Liability and Litigation Strategy.pdf",
       "size": 1906854,
       "sha256": "90dfae4d4c50ca0c445a3e475a069c411fd456a3ed282b7160c421c8850dc5f2"
+    },
+    {
+      "path": "/documents/matter-28/research/Cal. Code Regs. Tit. 15 sec. 3574 - Sex Offender Treatment.pdf",
+      "size": 1054313,
+      "sha256": "267c3253f033c5b047e8a15c2401b93cda4f48728f6ac3fc528d914dfaea37bd"
     },
     {
       "path": "/documents/matter-28/research/Executive Report - Qualified Immunity for Private CDCR Contractors.pdf",
@@ -3457,11 +3537,6 @@
       "path": "/documents/matter-28/research/Threshold Argument - No Qualified Immunity for Private Contractor CEO.pdf",
       "size": 115250,
       "sha256": "f8e4f657ffcf3606066d72359c90e9d09884b7db1ca3ccd809eb5872917065bf"
-    },
-    {
-      "path": "/documents/matter-28/Service Packet Emailed to SLB (Issued Summons Complaint Dkt 1-1 Dkt 4 Dkt 11) (Aug 31 2026).pdf",
-      "size": 3569331,
-      "sha256": "667123addaa9951634856e9fb2bd28b49e94c897c1d5d1d99e47fb8ebdf8017f"
     },
     {
       "path": "/documents/matter-28/service-packet-slb/00_Cover_Sheet.pdf",
@@ -3509,11 +3584,6 @@
       "sha256": "0c4eb0cbe0e0f607570f71c83b5d50cdc2fd4bcbc3cc5d023f10c5db611ed0c5"
     },
     {
-      "path": "/documents/matter-28/Stipulated Protective Order SIGNED.pdf",
-      "size": 237043,
-      "sha256": "62e9a8fbec681c06582316962596af7e2f9401ffa08ab36e19dc0f6070cb7403"
-    },
-    {
       "path": "/documents/matter-29/Accurate Background - Notification of Electronic Communication (Y94611404).pdf",
       "size": 136743,
       "sha256": "ff7a548f9c1bf278fd6ee131160911ec549f8c6137cf5a46cca34a00eb34eb91"
@@ -3559,16 +3629,6 @@
       "sha256": "89613f91c23f6daaaa19589b6e199f949f82f5bb4321c9b6b4762ca222b4ebfe"
     },
     {
-      "path": "/documents/matter-29/Certificate of Service to Plaintiff of Order Setting Initial CMC (Sep 8 2026).pdf",
-      "size": 225999,
-      "sha256": "115071cfd12bd33db53c6a2131acb8c9eb70f98622109aae8f7d48ce5d97f88a"
-    },
-    {
-      "path": "/documents/matter-29/Certification of Conflicts Interested Entities and Persons (Amazon Accurate) (Sep 4 2026).pdf",
-      "size": 391269,
-      "sha256": "f2d357a28b158390a9e46ecdb34f9d5cd59c128ac2372d03e43425178f95ce1a"
-    },
-    {
       "path": "/documents/matter-29/CM-010 Civil Case Cover Sheet - AS FILED (Jul 28 2026).pdf",
       "size": 127225,
       "sha256": "e6a2301dab313c062a4a1c28151042f7b01f037f3cb80444ab3a9c9cebfe1af8"
@@ -3577,6 +3637,16 @@
       "path": "/documents/matter-29/CM010 Newanforbi v Amazon.pdf",
       "size": 246997,
       "sha256": "70ca5ff61a3b5d12754b50e4e9f668540d9c36551c1a80b1d1ecb57dcd88daee"
+    },
+    {
+      "path": "/documents/matter-29/Certificate of Service to Plaintiff of Order Setting Initial CMC (Sep 8 2026).pdf",
+      "size": 225999,
+      "sha256": "115071cfd12bd33db53c6a2131acb8c9eb70f98622109aae8f7d48ce5d97f88a"
+    },
+    {
+      "path": "/documents/matter-29/Certification of Conflicts Interested Entities and Persons (Amazon Accurate) (Sep 4 2026).pdf",
+      "size": 391269,
+      "sha256": "f2d357a28b158390a9e46ecdb34f9d5cd59c128ac2372d03e43425178f95ce1a"
     },
     {
       "path": "/documents/matter-29/Complaint for Damages - AS FILED, Case No. 26CV201554 (Jul 28 2026).pdf",
@@ -3714,11 +3784,6 @@
       "sha256": "fef46a50488ec19e1b5cde5e87893a2a16d7f99c5b484644824f205f70fe5f0a"
     },
     {
-      "path": "/documents/matter-29/Gmail - [E-SERVICE] Stipulation to Extend Time for Amazon to Respond (Sep 1 2026).pdf",
-      "size": 56277,
-      "sha256": "f7ade0102e4b8c015205cb7e2e0dd7cce33404d6bcea016c9de3a9bddb58e72b"
-    },
-    {
       "path": "/documents/matter-29/Gmail - Accurate Extension Offer and Stipulation Thread (Aug 31-Sep 1 2026).pdf",
       "size": 70595,
       "sha256": "3fdbd62dd3b904fc91336479f99819d7ca71170273ec40879c60bb63422a11f2"
@@ -3747,6 +3812,11 @@
       "path": "/documents/matter-29/Gmail - USPS eReceipt - Filing Fee Money Order and Postage (Aug 3 2026).pdf",
       "size": 323043,
       "sha256": "bcb521622a9bf3ac8eae0783f0205cf5a45564c5607cddedfe1b097faa15effa"
+    },
+    {
+      "path": "/documents/matter-29/Gmail - [E-SERVICE] Stipulation to Extend Time for Amazon to Respond (Sep 1 2026).pdf",
+      "size": 56277,
+      "sha256": "f7ade0102e4b8c015205cb7e2e0dd7cce33404d6bcea016c9de3a9bddb58e72b"
     },
     {
       "path": "/documents/matter-29/I-9 Form and Audit Log (SSN redacted).pdf",
@@ -3812,6 +3882,236 @@
       "path": "/documents/matter-29/Information regarding your Amazon application.pdf",
       "size": 87460,
       "sha256": "5ea061318b182576bcc3bf6de20b4f8caabcb84e685dd5446a786e07b2f90a28"
+    },
+    {
+      "path": "/documents/matter-29/Letter - Seyfarth May Not Affix Plaintiff's Signature (Accurate Stipulation) (Sep 1 2026).docx",
+      "size": 235075,
+      "sha256": "e46059a5687315fbf72e6ab35e159b704c26e7e5f318334f61fae70b28e8ce46"
+    },
+    {
+      "path": "/documents/matter-29/Letter - Seyfarth May Not Affix Plaintiff's Signature (Accurate Stipulation) (Sep 1 2026).pdf",
+      "size": 194689,
+      "sha256": "d7a17d420668e5dc6ea675e0e5bea20c832c74e4a95233b62654af3fe8e7ff39"
+    },
+    {
+      "path": "/documents/matter-29/Letter to Court Clerk - Filing Fee Paid in Full, Fee Waiver Hearing Moot (Aug 3 2026).pdf",
+      "size": 13884,
+      "sha256": "380329cc3bd3c3a65b95507da116ed65addee14ebd818c469fcb42086a846fac"
+    },
+    {
+      "path": "/documents/matter-29/Name Conform Administrative Motion Packet - Amazon (N.D. Cal. 4-26-cv-09249-ASK) (September 14, 2026).pdf",
+      "size": 677358,
+      "sha256": "e8d46c17b273b5879b5f17cbeaacac132368074e992fb2fea842cc290d9220f0"
+    },
+    {
+      "path": "/documents/matter-29/Newanforbi_v_Amazon_Complaint.pdf",
+      "size": 179999,
+      "sha256": "995baee8ec913884b9e0141e7c5d5d42e84dd0325d68a3338a2f807497532b5b"
+    },
+    {
+      "path": "/documents/matter-29/Notice of Amount of Punitive Damages Sought (CCP 425.115) - Accurate Background LLC (Aug 4 2026).pdf",
+      "size": 15686,
+      "sha256": "52d5d85ca4005c86e54690cb8ba3d89f29794632a416c346e8453bcf00b3c3bb"
+    },
+    {
+      "path": "/documents/matter-29/Notice of Amount of Punitive Damages Sought (CCP 425.115) - Accurate Background LLC (Aug 7 2026).pdf",
+      "size": 15688,
+      "sha256": "7ac5da9fbdfab8ed1c57407c59272d3069c0ae1165fbac0df2e6698f324c1a76"
+    },
+    {
+      "path": "/documents/matter-29/Notice of Amount of Punitive Damages Sought (CCP 425.115) - Amazon.com Services LLC (Aug 4 2026).pdf",
+      "size": 15737,
+      "sha256": "62dafa706b1f68fa26d950d915923d23ac7c4174c75b40bf824e8e304e5ce748"
+    },
+    {
+      "path": "/documents/matter-29/Notice of Amount of Punitive Damages Sought (CCP 425.115) - Amazon.com Services LLC (Aug 7 2026).pdf",
+      "size": 15738,
+      "sha256": "ec02087953675dc11966741d2d26d484842ec72b207865fda993a13132e2a9c9"
+    },
+    {
+      "path": "/documents/matter-29/Notice of Appearance - Amazon.com Services LLC (Morgan Lewis, Filed Aug 24 2026).pdf",
+      "size": 231560,
+      "sha256": "2a6a1c8608b5de7f5178d3d64b04aea987adeb8d0cf55a5275d78318973a87d0"
+    },
+    {
+      "path": "/documents/matter-29/Notice of Case Assignment - Case No. 26CV201554, Hon. Jamilah Jefferson Dept 520 (Jul 29 2026).pdf",
+      "size": 830798,
+      "sha256": "7aabde4cf919c278c2e801912bc254c60b71a64c4346266f337802988675a576"
+    },
+    {
+      "path": "/documents/matter-29/Notice of Case Management Conference - Jan 6 2027 Dept 520 (Jul 29 2026).pdf",
+      "size": 419928,
+      "sha256": "4a53322c6b7f35d3504946f9884fe1a153b47c1aa3600329936bf6260a6888b0"
+    },
+    {
+      "path": "/documents/matter-29/Notice of Confirmation of Electronic Filing - Case No. 26CV201554, all documents ACCEPTED (Jul 29 2026).pdf",
+      "size": 46882,
+      "sha256": "1668265ee00d031d039d789cdae611f648eec849e69a089bb6f3136d24eadeff"
+    },
+    {
+      "path": "/documents/matter-29/Notice of Confirmation of Electronic Filing - Fee Payment and Punitive Notices Accepted (Aug 6 2026).pdf",
+      "size": 47161,
+      "sha256": "c02f8b05df47a89568eed66ef913e149abf1dab48be0428ec59c1254fb40e37a"
+    },
+    {
+      "path": "/documents/matter-29/Notice of Payment of Filing Fee and Withdrawal of Fee Waiver Request as Moot (Aug 7 2026).pdf",
+      "size": 26928,
+      "sha256": "7441157b5a1e6b889fc692e04bc2cdf62ab16e069af0863fbbbd898cbe07e863"
+    },
+    {
+      "path": "/documents/matter-29/One Legal Order Receipt - eFiling Confirmation 35236062 (Jul 28 2026).pdf",
+      "size": 47507,
+      "sha256": "a66e9c0b123ba652fb2fa92fcdbfd7e9095b0fa44550c45a339a6a584c6c3191"
+    },
+    {
+      "path": "/documents/matter-29/Opening Settlement Demand - Amazon.com Services LLC (Aug 31 2026).pdf",
+      "size": 211995,
+      "sha256": "f8f59e5c44579e3bbae170d03b1a5d2b496057e7a120384921e975480f4a9446"
+    },
+    {
+      "path": "/documents/matter-29/PACER Docket Report - N.D. Cal. 4-26-cv-09249-ASK (Sep 4 2026).pdf",
+      "size": 191151,
+      "sha256": "cd84516f492cfebb57e4b6858622cd09cc18e62e0f3718d551d6f09f6418e7c0"
+    },
+    {
+      "path": "/documents/matter-29/Proof of Service - Certification of Conflicts (Amazon Accurate) (Sep 4 2026).pdf",
+      "size": 195505,
+      "sha256": "713384a3aa15fe85783b93fb43df58b7f2ac3d9102a4a1fcf516e595d49a58fa"
+    },
+    {
+      "path": "/documents/matter-29/Proof of Service - Consent to Magistrate Judge Jurisdiction - Amazon (N.D. Cal. 3-26-cv-09249-ASK) (Sep 1 2026).pdf",
+      "size": 194453,
+      "sha256": "7bf265bfc04d5f2aa2ec3e7520c636f49c48bb429f3d66fe99f1f4b1f2fa003b"
+    },
+    {
+      "path": "/documents/matter-29/Proof of Service - Name Conform Administrative Motion - Amazon (N.D. Cal. 4-26-cv-09249-ASK) (September 14, 2026).pdf",
+      "size": 194405,
+      "sha256": "8a380632dcf0d981c4212b94cc15467237418cec8f7513476eb11a1afdb95387"
+    },
+    {
+      "path": "/documents/matter-29/Proof of Service Accurate Background.pdf",
+      "size": 155277,
+      "sha256": "a1c567be3288a82fae3d2838476db0f1e308d2941d530d09a8f65dc1c4bb9168"
+    },
+    {
+      "path": "/documents/matter-29/Proposed Order - Conform Plaintiff's Name - Amazon (N.D. Cal. 4-26-cv-09249-ASK) (September 14, 2026).pdf",
+      "size": 6445,
+      "sha256": "da3d14d9597dd045657a15f2ab1ec6c00f3b96e8e1bb7db4ea2bbab7a89e44d3"
+    },
+    {
+      "path": "/documents/matter-29/Reminder Pre-Hire Appointment Email (Jul 4, 2026).pdf",
+      "size": 194247,
+      "sha256": "cf09d32b6913d5185fb24e2c8b692be91b1f70cf5eb1322341bcb5e2a8a9a1d4"
+    },
+    {
+      "path": "/documents/matter-29/Reminder Pre-Hire Appointment Email (Jul 6, 2026).pdf",
+      "size": 194231,
+      "sha256": "038fbb79f42a5532532965a79c45e08da9dcd7ff547f5365997339c214046d32"
+    },
+    {
+      "path": "/documents/matter-29/Reminder from Amazon.com, Inc. and its affiliates!.pdf",
+      "size": 364378,
+      "sha256": "0a966f31a28a9e3a5462818fc8ad4e0e95d0b902a26aa6654d3c85a5910d14a1"
+    },
+    {
+      "path": "/documents/matter-29/SER-001 Request for Sheriff to Serve Court Papers - Accurate Background LLC (CCP 425.115 Notice) (Aug 17 2026).pdf",
+      "size": 174243,
+      "sha256": "accce9eb77cef9e4c315e7ec3834037e2a63875369f49f01458b5e461d546cd5"
+    },
+    {
+      "path": "/documents/matter-29/SER-001 Request for Sheriff to Serve Court Papers - Accurate Background LLC (CCP 425.115 Notice) (Aug 4 2026).pdf",
+      "size": 360640,
+      "sha256": "7502a9952ddb1ca4ea13001e7568c00f2ec5b545fe963c4f73f9916ffffa6d00"
+    },
+    {
+      "path": "/documents/matter-29/SER-001 Request for Sheriff to Serve Court Papers - Accurate Background LLC (CCP 425.115 Notice) (Aug 7 2026).pdf",
+      "size": 360642,
+      "sha256": "2a71723a5901d376793b7855fd3b64b8143cb22e4fc6aea5b8c9f14c1a21f4a0"
+    },
+    {
+      "path": "/documents/matter-29/SER-001 Request for Sheriff to Serve Court Papers - Accurate Background LLC (executed Jul 29 2026).pdf",
+      "size": 352586,
+      "sha256": "549e0c7f0d41c2222fff2eb1767cbf6c24cc170caf3c48f260b86f6a5ab143af"
+    },
+    {
+      "path": "/documents/matter-29/SER-001 Request for Sheriff to Serve Court Papers - Amazon.com Services LLC (CCP 425.115 Notice) (Aug 17 2026).pdf",
+      "size": 174216,
+      "sha256": "d39397900a63d435dd05cfacb35492a9e5f1de50f1102e3a63f94ea464aed30b"
+    },
+    {
+      "path": "/documents/matter-29/SER-001 Request for Sheriff to Serve Court Papers - Amazon.com Services LLC (CCP 425.115 Notice) (Aug 4 2026).pdf",
+      "size": 360940,
+      "sha256": "ec9741c58ef8f1355edda6a4e765ab24b12c20fc8bc8afedbcab09ce4e0740dd"
+    },
+    {
+      "path": "/documents/matter-29/SER-001 Request for Sheriff to Serve Court Papers - Amazon.com Services LLC (CCP 425.115 Notice) (Aug 7 2026).pdf",
+      "size": 360942,
+      "sha256": "babe23721ea8cdb341f3eb4cfa8b692c4bd26cd1f17c57b2b660f790eb62efe2"
+    },
+    {
+      "path": "/documents/matter-29/SER-001 Request for Sheriff to Serve Court Papers - Amazon.com Services LLC (executed Jul 29 2026).pdf",
+      "size": 352600,
+      "sha256": "fc7a54015e3211f331057270e73749a54a7df991da12549bd6d5324cfda61e5c"
+    },
+    {
+      "path": "/documents/matter-29/SUM-100 Summons - AS FILED (Jul 28 2026).pdf",
+      "size": 1128261,
+      "sha256": "9d563029877827b628b141e663cbc9a66dead4275703a21240808b307ae5f2c6"
+    },
+    {
+      "path": "/documents/matter-29/SUM100 Newanforbi v Amazon.pdf",
+      "size": 55335,
+      "sha256": "5abda668a8e4846e5dbc72f46c73151ad42aac99e78518308a07cc44d50c9610"
+    },
+    {
+      "path": "/documents/matter-29/Sacramento County Sheriff Civil File Status - Amazon.com Services LLC Service Confirmed (Aug 3 2026).pdf",
+      "size": 112792,
+      "sha256": "f5bf848e2ec021c791a5a1ac1ee2e2d59ecfe1882bb401685af984834c880ef2"
+    },
+    {
+      "path": "/documents/matter-29/Sacramento County Sheriff E-Filing Order O26005379 (PROCESSED, ACCEPTED, Jul 29 2026).pdf",
+      "size": 95010,
+      "sha256": "955c486954982f3532a733ecb94ff2348d0c05a798b687181e5cec6030038c83"
+    },
+    {
+      "path": "/documents/matter-29/Sacramento County Sheriff E-Filing Order O26005379 (SUBMITTED, Jul 29 2026).pdf",
+      "size": 78814,
+      "sha256": "25a762b5852c5ce88c13a7af2f8d0d3c3b5c31617d056a070c01bb161a6cff17"
+    },
+    {
+      "path": "/documents/matter-29/Service Packet Sent to LA Process Servers - Summons, Complaint, Notice of Case Assignment, Notice of CMC (32 pp, Jul 29 2026).pdf",
+      "size": 2506281,
+      "sha256": "fcecae90d3348234a0a97b10ad5683e7fb3bbca5af2b9d54d6c05ce4589a6f15"
+    },
+    {
+      "path": "/documents/matter-29/Seyfarth Draft - Stipulation to Extend Accurate Time to Respond (328376958.1) (Sep 1 2026).docx",
+      "size": 64231,
+      "sha256": "7f0b713f0ee9521e035efd2488ab80af53c9ba2ac98235d55196f668ee395e76"
+    },
+    {
+      "path": "/documents/matter-29/Stipulation to Extend Time for Accurate Background to Respond (Plaintiff Counterpart, Sep 1 2026).docx",
+      "size": 236169,
+      "sha256": "1728181128ecc94eb1073c665c80ad4c27029fe0216f03af03beaf7cf0f64407"
+    },
+    {
+      "path": "/documents/matter-29/Stipulation to Extend Time for Accurate Background to Respond (Plaintiff Counterpart, Sep 1 2026).pdf",
+      "size": 197602,
+      "sha256": "e900eb3e28b5acc478a3a15733d7ffdc4ef41d72bd9b83f37c5710e8394cecb9"
+    },
+    {
+      "path": "/documents/matter-29/Stipulation to Extend Time for Amazon to Respond (Executed Sep 1 2026).pdf",
+      "size": 299745,
+      "sha256": "0ecf3ebe521afc808d892b606c50deada824ec3085416575da87f2fb3ae0b1b9"
+    },
+    {
+      "path": "/documents/matter-29/Stipulation to Extend Time for Amazon to Respond (Plaintiff Counterpart, Aug 31 2026).docx",
+      "size": 236164,
+      "sha256": "4cdd12d2331afa8db7f7bfb0a8b34e659d4f563d5bc5ef815ee50b85a0bcdbc6"
+    },
+    {
+      "path": "/documents/matter-29/Stipulation to Extend Time for Amazon to Respond (Plaintiff Counterpart, Aug 31 2026).pdf",
+      "size": 197528,
+      "sha256": "39da6c0f62e4976217603cf87ed8acfc2414914c841f0a4d69623403efa5b720"
     },
     {
       "path": "/documents/matter-29/lerma-v-amazon/Dkt 01 - Class Action Complaint (Sep 21, 2022).pdf",
@@ -4159,236 +4459,6 @@
       "sha256": "6927e492d2b895bec452164f77b60482e12cf9d026d51e1468750b8705515e9a"
     },
     {
-      "path": "/documents/matter-29/Letter - Seyfarth May Not Affix Plaintiff's Signature (Accurate Stipulation) (Sep 1 2026).docx",
-      "size": 235075,
-      "sha256": "e46059a5687315fbf72e6ab35e159b704c26e7e5f318334f61fae70b28e8ce46"
-    },
-    {
-      "path": "/documents/matter-29/Letter - Seyfarth May Not Affix Plaintiff's Signature (Accurate Stipulation) (Sep 1 2026).pdf",
-      "size": 194689,
-      "sha256": "d7a17d420668e5dc6ea675e0e5bea20c832c74e4a95233b62654af3fe8e7ff39"
-    },
-    {
-      "path": "/documents/matter-29/Letter to Court Clerk - Filing Fee Paid in Full, Fee Waiver Hearing Moot (Aug 3 2026).pdf",
-      "size": 13884,
-      "sha256": "380329cc3bd3c3a65b95507da116ed65addee14ebd818c469fcb42086a846fac"
-    },
-    {
-      "path": "/documents/matter-29/Name Conform Administrative Motion Packet - Amazon (N.D. Cal. 4-26-cv-09249-ASK) (September 14, 2026).pdf",
-      "size": 677358,
-      "sha256": "e8d46c17b273b5879b5f17cbeaacac132368074e992fb2fea842cc290d9220f0"
-    },
-    {
-      "path": "/documents/matter-29/Newanforbi_v_Amazon_Complaint.pdf",
-      "size": 179999,
-      "sha256": "995baee8ec913884b9e0141e7c5d5d42e84dd0325d68a3338a2f807497532b5b"
-    },
-    {
-      "path": "/documents/matter-29/Notice of Amount of Punitive Damages Sought (CCP 425.115) - Accurate Background LLC (Aug 4 2026).pdf",
-      "size": 15686,
-      "sha256": "52d5d85ca4005c86e54690cb8ba3d89f29794632a416c346e8453bcf00b3c3bb"
-    },
-    {
-      "path": "/documents/matter-29/Notice of Amount of Punitive Damages Sought (CCP 425.115) - Accurate Background LLC (Aug 7 2026).pdf",
-      "size": 15688,
-      "sha256": "7ac5da9fbdfab8ed1c57407c59272d3069c0ae1165fbac0df2e6698f324c1a76"
-    },
-    {
-      "path": "/documents/matter-29/Notice of Amount of Punitive Damages Sought (CCP 425.115) - Amazon.com Services LLC (Aug 4 2026).pdf",
-      "size": 15737,
-      "sha256": "62dafa706b1f68fa26d950d915923d23ac7c4174c75b40bf824e8e304e5ce748"
-    },
-    {
-      "path": "/documents/matter-29/Notice of Amount of Punitive Damages Sought (CCP 425.115) - Amazon.com Services LLC (Aug 7 2026).pdf",
-      "size": 15738,
-      "sha256": "ec02087953675dc11966741d2d26d484842ec72b207865fda993a13132e2a9c9"
-    },
-    {
-      "path": "/documents/matter-29/Notice of Appearance - Amazon.com Services LLC (Morgan Lewis, Filed Aug 24 2026).pdf",
-      "size": 231560,
-      "sha256": "2a6a1c8608b5de7f5178d3d64b04aea987adeb8d0cf55a5275d78318973a87d0"
-    },
-    {
-      "path": "/documents/matter-29/Notice of Case Assignment - Case No. 26CV201554, Hon. Jamilah Jefferson Dept 520 (Jul 29 2026).pdf",
-      "size": 830798,
-      "sha256": "7aabde4cf919c278c2e801912bc254c60b71a64c4346266f337802988675a576"
-    },
-    {
-      "path": "/documents/matter-29/Notice of Case Management Conference - Jan 6 2027 Dept 520 (Jul 29 2026).pdf",
-      "size": 419928,
-      "sha256": "4a53322c6b7f35d3504946f9884fe1a153b47c1aa3600329936bf6260a6888b0"
-    },
-    {
-      "path": "/documents/matter-29/Notice of Confirmation of Electronic Filing - Case No. 26CV201554, all documents ACCEPTED (Jul 29 2026).pdf",
-      "size": 46882,
-      "sha256": "1668265ee00d031d039d789cdae611f648eec849e69a089bb6f3136d24eadeff"
-    },
-    {
-      "path": "/documents/matter-29/Notice of Confirmation of Electronic Filing - Fee Payment and Punitive Notices Accepted (Aug 6 2026).pdf",
-      "size": 47161,
-      "sha256": "c02f8b05df47a89568eed66ef913e149abf1dab48be0428ec59c1254fb40e37a"
-    },
-    {
-      "path": "/documents/matter-29/Notice of Payment of Filing Fee and Withdrawal of Fee Waiver Request as Moot (Aug 7 2026).pdf",
-      "size": 26928,
-      "sha256": "7441157b5a1e6b889fc692e04bc2cdf62ab16e069af0863fbbbd898cbe07e863"
-    },
-    {
-      "path": "/documents/matter-29/One Legal Order Receipt - eFiling Confirmation 35236062 (Jul 28 2026).pdf",
-      "size": 47507,
-      "sha256": "a66e9c0b123ba652fb2fa92fcdbfd7e9095b0fa44550c45a339a6a584c6c3191"
-    },
-    {
-      "path": "/documents/matter-29/Opening Settlement Demand - Amazon.com Services LLC (Aug 31 2026).pdf",
-      "size": 211995,
-      "sha256": "f8f59e5c44579e3bbae170d03b1a5d2b496057e7a120384921e975480f4a9446"
-    },
-    {
-      "path": "/documents/matter-29/PACER Docket Report - N.D. Cal. 4-26-cv-09249-ASK (Sep 4 2026).pdf",
-      "size": 191151,
-      "sha256": "cd84516f492cfebb57e4b6858622cd09cc18e62e0f3718d551d6f09f6418e7c0"
-    },
-    {
-      "path": "/documents/matter-29/Proof of Service - Certification of Conflicts (Amazon Accurate) (Sep 4 2026).pdf",
-      "size": 195505,
-      "sha256": "713384a3aa15fe85783b93fb43df58b7f2ac3d9102a4a1fcf516e595d49a58fa"
-    },
-    {
-      "path": "/documents/matter-29/Proof of Service - Consent to Magistrate Judge Jurisdiction - Amazon (N.D. Cal. 3-26-cv-09249-ASK) (Sep 1 2026).pdf",
-      "size": 194453,
-      "sha256": "7bf265bfc04d5f2aa2ec3e7520c636f49c48bb429f3d66fe99f1f4b1f2fa003b"
-    },
-    {
-      "path": "/documents/matter-29/Proof of Service - Name Conform Administrative Motion - Amazon (N.D. Cal. 4-26-cv-09249-ASK) (September 14, 2026).pdf",
-      "size": 194405,
-      "sha256": "8a380632dcf0d981c4212b94cc15467237418cec8f7513476eb11a1afdb95387"
-    },
-    {
-      "path": "/documents/matter-29/Proof of Service Accurate Background.pdf",
-      "size": 155277,
-      "sha256": "a1c567be3288a82fae3d2838476db0f1e308d2941d530d09a8f65dc1c4bb9168"
-    },
-    {
-      "path": "/documents/matter-29/Proposed Order - Conform Plaintiff's Name - Amazon (N.D. Cal. 4-26-cv-09249-ASK) (September 14, 2026).pdf",
-      "size": 6445,
-      "sha256": "da3d14d9597dd045657a15f2ab1ec6c00f3b96e8e1bb7db4ea2bbab7a89e44d3"
-    },
-    {
-      "path": "/documents/matter-29/Reminder from Amazon.com, Inc. and its affiliates!.pdf",
-      "size": 364378,
-      "sha256": "0a966f31a28a9e3a5462818fc8ad4e0e95d0b902a26aa6654d3c85a5910d14a1"
-    },
-    {
-      "path": "/documents/matter-29/Reminder Pre-Hire Appointment Email (Jul 4, 2026).pdf",
-      "size": 194247,
-      "sha256": "cf09d32b6913d5185fb24e2c8b692be91b1f70cf5eb1322341bcb5e2a8a9a1d4"
-    },
-    {
-      "path": "/documents/matter-29/Reminder Pre-Hire Appointment Email (Jul 6, 2026).pdf",
-      "size": 194231,
-      "sha256": "038fbb79f42a5532532965a79c45e08da9dcd7ff547f5365997339c214046d32"
-    },
-    {
-      "path": "/documents/matter-29/Sacramento County Sheriff Civil File Status - Amazon.com Services LLC Service Confirmed (Aug 3 2026).pdf",
-      "size": 112792,
-      "sha256": "f5bf848e2ec021c791a5a1ac1ee2e2d59ecfe1882bb401685af984834c880ef2"
-    },
-    {
-      "path": "/documents/matter-29/Sacramento County Sheriff E-Filing Order O26005379 (PROCESSED, ACCEPTED, Jul 29 2026).pdf",
-      "size": 95010,
-      "sha256": "955c486954982f3532a733ecb94ff2348d0c05a798b687181e5cec6030038c83"
-    },
-    {
-      "path": "/documents/matter-29/Sacramento County Sheriff E-Filing Order O26005379 (SUBMITTED, Jul 29 2026).pdf",
-      "size": 78814,
-      "sha256": "25a762b5852c5ce88c13a7af2f8d0d3c3b5c31617d056a070c01bb161a6cff17"
-    },
-    {
-      "path": "/documents/matter-29/SER-001 Request for Sheriff to Serve Court Papers - Accurate Background LLC (CCP 425.115 Notice) (Aug 17 2026).pdf",
-      "size": 174243,
-      "sha256": "accce9eb77cef9e4c315e7ec3834037e2a63875369f49f01458b5e461d546cd5"
-    },
-    {
-      "path": "/documents/matter-29/SER-001 Request for Sheriff to Serve Court Papers - Accurate Background LLC (CCP 425.115 Notice) (Aug 4 2026).pdf",
-      "size": 360640,
-      "sha256": "7502a9952ddb1ca4ea13001e7568c00f2ec5b545fe963c4f73f9916ffffa6d00"
-    },
-    {
-      "path": "/documents/matter-29/SER-001 Request for Sheriff to Serve Court Papers - Accurate Background LLC (CCP 425.115 Notice) (Aug 7 2026).pdf",
-      "size": 360642,
-      "sha256": "2a71723a5901d376793b7855fd3b64b8143cb22e4fc6aea5b8c9f14c1a21f4a0"
-    },
-    {
-      "path": "/documents/matter-29/SER-001 Request for Sheriff to Serve Court Papers - Accurate Background LLC (executed Jul 29 2026).pdf",
-      "size": 352586,
-      "sha256": "549e0c7f0d41c2222fff2eb1767cbf6c24cc170caf3c48f260b86f6a5ab143af"
-    },
-    {
-      "path": "/documents/matter-29/SER-001 Request for Sheriff to Serve Court Papers - Amazon.com Services LLC (CCP 425.115 Notice) (Aug 17 2026).pdf",
-      "size": 174216,
-      "sha256": "d39397900a63d435dd05cfacb35492a9e5f1de50f1102e3a63f94ea464aed30b"
-    },
-    {
-      "path": "/documents/matter-29/SER-001 Request for Sheriff to Serve Court Papers - Amazon.com Services LLC (CCP 425.115 Notice) (Aug 4 2026).pdf",
-      "size": 360940,
-      "sha256": "ec9741c58ef8f1355edda6a4e765ab24b12c20fc8bc8afedbcab09ce4e0740dd"
-    },
-    {
-      "path": "/documents/matter-29/SER-001 Request for Sheriff to Serve Court Papers - Amazon.com Services LLC (CCP 425.115 Notice) (Aug 7 2026).pdf",
-      "size": 360942,
-      "sha256": "babe23721ea8cdb341f3eb4cfa8b692c4bd26cd1f17c57b2b660f790eb62efe2"
-    },
-    {
-      "path": "/documents/matter-29/SER-001 Request for Sheriff to Serve Court Papers - Amazon.com Services LLC (executed Jul 29 2026).pdf",
-      "size": 352600,
-      "sha256": "fc7a54015e3211f331057270e73749a54a7df991da12549bd6d5324cfda61e5c"
-    },
-    {
-      "path": "/documents/matter-29/Service Packet Sent to LA Process Servers - Summons, Complaint, Notice of Case Assignment, Notice of CMC (32 pp, Jul 29 2026).pdf",
-      "size": 2506281,
-      "sha256": "fcecae90d3348234a0a97b10ad5683e7fb3bbca5af2b9d54d6c05ce4589a6f15"
-    },
-    {
-      "path": "/documents/matter-29/Seyfarth Draft - Stipulation to Extend Accurate Time to Respond (328376958.1) (Sep 1 2026).docx",
-      "size": 64231,
-      "sha256": "7f0b713f0ee9521e035efd2488ab80af53c9ba2ac98235d55196f668ee395e76"
-    },
-    {
-      "path": "/documents/matter-29/Stipulation to Extend Time for Accurate Background to Respond (Plaintiff Counterpart, Sep 1 2026).docx",
-      "size": 236169,
-      "sha256": "1728181128ecc94eb1073c665c80ad4c27029fe0216f03af03beaf7cf0f64407"
-    },
-    {
-      "path": "/documents/matter-29/Stipulation to Extend Time for Accurate Background to Respond (Plaintiff Counterpart, Sep 1 2026).pdf",
-      "size": 197602,
-      "sha256": "e900eb3e28b5acc478a3a15733d7ffdc4ef41d72bd9b83f37c5710e8394cecb9"
-    },
-    {
-      "path": "/documents/matter-29/Stipulation to Extend Time for Amazon to Respond (Executed Sep 1 2026).pdf",
-      "size": 299745,
-      "sha256": "0ecf3ebe521afc808d892b606c50deada824ec3085416575da87f2fb3ae0b1b9"
-    },
-    {
-      "path": "/documents/matter-29/Stipulation to Extend Time for Amazon to Respond (Plaintiff Counterpart, Aug 31 2026).docx",
-      "size": 236164,
-      "sha256": "4cdd12d2331afa8db7f7bfb0a8b34e659d4f563d5bc5ef815ee50b85a0bcdbc6"
-    },
-    {
-      "path": "/documents/matter-29/Stipulation to Extend Time for Amazon to Respond (Plaintiff Counterpart, Aug 31 2026).pdf",
-      "size": 197528,
-      "sha256": "39da6c0f62e4976217603cf87ed8acfc2414914c841f0a4d69623403efa5b720"
-    },
-    {
-      "path": "/documents/matter-29/SUM-100 Summons - AS FILED (Jul 28 2026).pdf",
-      "size": 1128261,
-      "sha256": "9d563029877827b628b141e663cbc9a66dead4275703a21240808b307ae5f2c6"
-    },
-    {
-      "path": "/documents/matter-29/SUM100 Newanforbi v Amazon.pdf",
-      "size": 55335,
-      "sha256": "5abda668a8e4846e5dbc72f46c73151ad42aac99e78518308a07cc44d50c9610"
-    },
-    {
       "path": "/documents/matter-30/CASOMB Complaint Submission \u2013 HOPE Psychotherapy, Inc. 2.pdf",
       "size": 83191,
       "sha256": "dc4061596765570a06d4e86f38db4d34f71fb386904d98ee7bfe821d13256f16"
@@ -4684,14 +4754,14 @@
       "sha256": "e7af1c4254484879ce4d69df51236a019de5ae63e8dcbd7e6737804869d5decc"
     },
     {
-      "path": "/documents/matter-32/from-20/Filing Receipt - One Legal.pdf",
-      "size": 48125,
-      "sha256": "54bd40c85a6cc34dfb1ae01aa19e01a5fd6d84895e89f792fdfd5b45cf11c169"
-    },
-    {
       "path": "/documents/matter-32/from-20/FW-003 Order on Court Fee Waiver - GRANTED (Jun 3 2026).pdf",
       "size": 845936,
       "sha256": "d1839ae4909c7b9392b9b1486a63aa9a66e80e8c538074101978a2f93d83f12c"
+    },
+    {
+      "path": "/documents/matter-32/from-20/Filing Receipt - One Legal.pdf",
+      "size": 48125,
+      "sha256": "54bd40c85a6cc34dfb1ae01aa19e01a5fd6d84895e89f792fdfd5b45cf11c169"
     },
     {
       "path": "/documents/matter-32/from-20/Gmail - Alameda Superior Court EPOST - 26CV191136 Whitman Order (Aug 31 2026).pdf",
@@ -4854,14 +4924,14 @@
       "sha256": "7df7174adf7b99fd1653fa260f43748f76a240396883fa5296f06525b6f9b5f0"
     },
     {
-      "path": "/documents/matter-32/from-24/Nd Cal IFP Application.pdf",
-      "size": 292535,
-      "sha256": "593c1ff02f58b0af9aef71475d470d5e7ac4e11dca45e73c74f4e2456b1f6a14"
-    },
-    {
       "path": "/documents/matter-32/from-24/ND Cal ISC and Magistrate Consent form.pdf",
       "size": 471696,
       "sha256": "949604118c25907cb6fe181c324de6d4c6d0d5e28e9acf6e05440a460d99d9cd"
+    },
+    {
+      "path": "/documents/matter-32/from-24/Nd Cal IFP Application.pdf",
+      "size": 292535,
+      "sha256": "593c1ff02f58b0af9aef71475d470d5e7ac4e11dca45e73c74f4e2456b1f6a14"
     },
     {
       "path": "/documents/matter-32/from-24/Nd Cal Proposed Summons.pdf",
@@ -4872,21 +4942,6 @@
       "path": "/documents/matter-32/from-24/Notice of Change of Address (July 7, 2026).pdf",
       "size": 35119,
       "sha256": "cdffa28277aa69bbdd4aa68b4970ed96ded472bb2a9793d78c7d76dfa5e09f9f"
-    },
-    {
-      "path": "/documents/matter-32/ndcal/Administrative Motion - Conform Plaintiff's Name - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 14, 2026).pdf",
-      "size": 205473,
-      "sha256": "309c2dc12982ba3790c814686bdf2ab03398c2a28705e3a34fa2d9b28693a9a1"
-    },
-    {
-      "path": "/documents/matter-32/ndcal/Administrative Motion - DAG Li to Accept Service for Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (Sep 1 2026).pdf",
-      "size": 211338,
-      "sha256": "9f9eb8bc291a45b475b837672605c522793ddfa0ffc7b89c767839ae4f6590a4"
-    },
-    {
-      "path": "/documents/matter-32/ndcal/Administrative Motion Packet - DAG Li to Accept Service for Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (Sep 1 2026).pdf",
-      "size": 1052443,
-      "sha256": "a4f6745dc9c8eefbd4d112981f6b1c63c935740c456ce84f94d2492748d1486f"
     },
     {
       "path": "/documents/matter-32/ndcal/AO 440 Summons - Jose Melano (N.D. Cal.) (Aug 7 2026).pdf",
@@ -4907,6 +4962,31 @@
       "path": "/documents/matter-32/ndcal/AO399-Meza-Waiver-Form-COPY-1.pdf",
       "size": 260356,
       "sha256": "7dc5eb20d85487247f64bdf5b41bddd356616718a2bb5517d646a083596af3d5"
+    },
+    {
+      "path": "/documents/matter-32/ndcal/Administrative Motion - Conform Plaintiff's Name - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 14, 2026).pdf",
+      "size": 205473,
+      "sha256": "309c2dc12982ba3790c814686bdf2ab03398c2a28705e3a34fa2d9b28693a9a1"
+    },
+    {
+      "path": "/documents/matter-32/ndcal/Administrative Motion - DAG Li to Accept Service for Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (Sep 1 2026).pdf",
+      "size": 211338,
+      "sha256": "9f9eb8bc291a45b475b837672605c522793ddfa0ffc7b89c767839ae4f6590a4"
+    },
+    {
+      "path": "/documents/matter-32/ndcal/Administrative Motion Packet - DAG Li to Accept Service for Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (Sep 1 2026).pdf",
+      "size": 1052443,
+      "sha256": "a4f6745dc9c8eefbd4d112981f6b1c63c935740c456ce84f94d2492748d1486f"
+    },
+    {
+      "path": "/documents/matter-32/ndcal/CCP 415.20(b) Mailing Bundle - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 17, 2026).pdf",
+      "size": 3279649,
+      "sha256": "fb7822fb20c8d9e101509d38a7d512e4f5171530b121d8a3d922d233e70251e9"
+    },
+    {
+      "path": "/documents/matter-32/ndcal/CCP 415.20(b) Mailing Filing Packet - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 17, 2026).pdf",
+      "size": 397339,
+      "sha256": "ba500f8cd1a9453b2e8f550514b320fe44ca8c2b3d4ec5a4131e3f2c067d0072"
     },
     {
       "path": "/documents/matter-32/ndcal/Certification of Conflicts Interested Entities and Persons (Meza Melano) (Sep 4 2026).pdf",
@@ -4934,6 +5014,16 @@
       "sha256": "f6f543dba7528dae2b5981f264df1b9e89b6b9ef1658b805da684b45589a93e0"
     },
     {
+      "path": "/documents/matter-32/ndcal/DRAFT - Exhibit A Cover Page - Serrato Related-Cases Admin Motion.pdf",
+      "size": 2268,
+      "sha256": "f5a0eece4dd61cde16428edd9dcd92446eeea715050a61443d9440aa872ae7cc"
+    },
+    {
+      "path": "/documents/matter-32/ndcal/DRAFT - Notice of Filing of Administrative Motion to Relate Cases (Meza-Gonzalez).pdf",
+      "size": 6292,
+      "sha256": "2900ef58cf1bc6a13ca3c4fad5644d4b91318c8495c3519914b5838a9a1dda0c"
+    },
+    {
       "path": "/documents/matter-32/ndcal/Declaration ISO Administrative Motion - Conform Plaintiff's Name - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 14, 2026).pdf",
       "size": 202038,
       "sha256": "53d0a05d4c14b479b141a74a4c9d3b69de67bc71f2188171dc553d94304623fa"
@@ -4942,6 +5032,11 @@
       "path": "/documents/matter-32/ndcal/Declaration ISO Administrative Motion - DAG Li to Accept Service (Meza-Gonzalez) (Sep 1 2026).pdf",
       "size": 208333,
       "sha256": "96619dfe497aa39f367cc7ec55e5891b4bb343d8858e9e1b4a241e8807c76a38"
+    },
+    {
+      "path": "/documents/matter-32/ndcal/Declaration of Mailing - CCP 415.20(b) Follow-Up to Dkt 16 - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 16, 2026).pdf",
+      "size": 201280,
+      "sha256": "a681de8d821b6a710a117bcd931eab55f3b044cfb56ebbe2c817a8ca0ff5eacf"
     },
     {
       "path": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
@@ -5024,14 +5119,9 @@
       "sha256": "baeab402d7bbc0e3c801e0fc3511c061f8b30c66d81e8a1b685442c238412426"
     },
     {
-      "path": "/documents/matter-32/ndcal/DRAFT - Exhibit A Cover Page - Serrato Related-Cases Admin Motion.pdf",
-      "size": 2268,
-      "sha256": "f5a0eece4dd61cde16428edd9dcd92446eeea715050a61443d9440aa872ae7cc"
-    },
-    {
-      "path": "/documents/matter-32/ndcal/DRAFT - Notice of Filing of Administrative Motion to Relate Cases (Meza-Gonzalez).pdf",
-      "size": 6292,
-      "sha256": "2900ef58cf1bc6a13ca3c4fad5644d4b91318c8495c3519914b5838a9a1dda0c"
+      "path": "/documents/matter-32/ndcal/EMAIL_DRAFT_Li_CCP_41520_Mailing_Meza.txt",
+      "size": 1087,
+      "sha256": "21f7eed1d9918ba14113f83eae337b75b2aefa06af180e6423bd495f15101b4e"
     },
     {
       "path": "/documents/matter-32/ndcal/EMAIL_DRAFT_Li_FAC_Service_Melano_and_Meza.txt",
@@ -5099,14 +5189,14 @@
       "sha256": "7ec9895545970afca9970e4b7f7bed23d10dae1110d8a709be7501ae42cb4783"
     },
     {
-      "path": "/documents/matter-32/ndcal/FAC Ngwa Nforbi v Meza-Gonzalez and Melano NDCal (as submitted Aug 10 2026, superseded).pdf",
-      "size": 83005,
-      "sha256": "e36aa839a4c6495d0bd1792ce6663a5d8bfc7ba6917d5c8a6ade2f157905b24c"
-    },
-    {
       "path": "/documents/matter-32/ndcal/FAC Ngwa Nforbi v Meza-Gonzalez and Melano NDCal (Aug 11 2026).pdf",
       "size": 84087,
       "sha256": "1006f617dfe3a4e9b3583235637a9b057dd20abb749f1b7ea2bfd61a8f8c7e4e"
+    },
+    {
+      "path": "/documents/matter-32/ndcal/FAC Ngwa Nforbi v Meza-Gonzalez and Melano NDCal (as submitted Aug 10 2026, superseded).pdf",
+      "size": 83005,
+      "sha256": "e36aa839a4c6495d0bd1792ce6663a5d8bfc7ba6917d5c8a6ade2f157905b24c"
     },
     {
       "path": "/documents/matter-32/ndcal/JS 44 Civil Cover Sheet - Ngwa Nforbi v. Meza-Gonzalez (N.D. Cal.) (Aug 7 2026).pdf",
@@ -5184,6 +5274,11 @@
       "sha256": "cb6f8d8ebda5902ca3da7225f7d70215771f84669f5d7e5b631e7018cb2a3700"
     },
     {
+      "path": "/documents/matter-32/ndcal/Proof of Service Packet - FAC Dkt 05 Mailed to Melano with Exhibit A (Aug 21 2026).pdf",
+      "size": 263132,
+      "sha256": "2cc4d1d5cd8ee5f5cb69d6e8f2daaa0d1522c0c8cca36af012da1d01700da0e6"
+    },
+    {
       "path": "/documents/matter-32/ndcal/Proof of Service of Summons - Jose Melano (C&P Process Server original, clerk-stamped Aug 31 2026).pdf",
       "size": 703952,
       "sha256": "c4cbfae7fd84f02bb9d085f7baddbace2a392b5e9151b1d0cf1a8e0694a52b51"
@@ -5192,11 +5287,6 @@
       "path": "/documents/matter-32/ndcal/Proof of Service of Summons - Jose Melano (C&P Process Server return, Aug 14 2026).pdf",
       "size": 291437,
       "sha256": "f85f1868746e90d1fb522d85894ef411d40787992e6044f89ba6d74127e71b4b"
-    },
-    {
-      "path": "/documents/matter-32/ndcal/Proof of Service Packet - FAC Dkt 05 Mailed to Melano with Exhibit A (Aug 21 2026).pdf",
-      "size": 263132,
-      "sha256": "2cc4d1d5cd8ee5f5cb69d6e8f2daaa0d1522c0c8cca36af012da1d01700da0e6"
     },
     {
       "path": "/documents/matter-32/ndcal/Proposed Order - Conform Plaintiff's Name - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 14, 2026).pdf",
@@ -5319,14 +5409,14 @@
       "sha256": "52b85b347dee912b0089714edf8655d925c925a75e24e00e8a2127b94bd7341d"
     },
     {
-      "path": "/documents/matter-33/from-08/Court Minutes - Fee Waiver Hearing DENIED, Non-Appearance (Jul 17 2026).pdf",
-      "size": 84484,
-      "sha256": "2e382ad87b9d2383813d475ed00398b17c017d4780a74434662ea78119b7cb75"
-    },
-    {
       "path": "/documents/matter-33/from-08/Court Minutes (Jul 17 2026) and Civil Case Cover Sheet CM-010 pp.2-3.pdf",
       "size": 73441,
       "sha256": "2b6557993454b04b7d871be8dea9f5510dbd7558911b20031318d68e147ec011"
+    },
+    {
+      "path": "/documents/matter-33/from-08/Court Minutes - Fee Waiver Hearing DENIED, Non-Appearance (Jul 17 2026).pdf",
+      "size": 84484,
+      "sha256": "2e382ad87b9d2383813d475ed00398b17c017d4780a74434662ea78119b7cb75"
     },
     {
       "path": "/documents/matter-33/from-08/Newanforbi v. Candelaria Mandamus.pdf",
@@ -5359,19 +5449,14 @@
       "sha256": "7dd92be7e30290cf1341e6502f75e5a483061ec4e7d4e727f69123e67d4fb1f3"
     },
     {
-      "path": "/documents/matter-33/incident/Discovery-Response.pdf",
-      "size": 770403,
-      "sha256": "2d2312ca30c15f34a2d6b7c6acf4d466885f14bce1bfdfdf83d8e86886498943"
-    },
-    {
       "path": "/documents/matter-33/incident/DS2044 Notification of Discovery 34739340.pdf",
       "size": 1619521,
       "sha256": "9fcc0c53450352e0388c68a846731afa1904687a144f53fb87514d17f05527a3"
     },
     {
-      "path": "/documents/matter-33/incident/ds367 ngwanforbi f7953179.pdf",
-      "size": 6108709,
-      "sha256": "432ecc55cbac370b49053b364713b52ed0b00785a604f87040b1f163bd5d824f"
+      "path": "/documents/matter-33/incident/Discovery-Response.pdf",
+      "size": 770403,
+      "sha256": "2d2312ca30c15f34a2d6b7c6acf4d466885f14bce1bfdfdf83d8e86886498943"
     },
     {
       "path": "/documents/matter-33/incident/Exhibit_A_CHP_Video_Transcript.pdf",
@@ -5379,9 +5464,9 @@
       "sha256": "3750927a89170c8d4702cb7dfab4d2b96fda1e31d7662ffc524e07763d1b6660"
     },
     {
-      "path": "/documents/matter-33/ndcal/Administrative Motion - Conform Plaintiff's Name - Candelaria (N.D. Cal. 3-26-cv-08272-LJC) (September 14, 2026).pdf",
-      "size": 205495,
-      "sha256": "15350b2602e89d008cbd435560f4c5844639d6a35912ded8037e6e39a5c116a5"
+      "path": "/documents/matter-33/incident/ds367 ngwanforbi f7953179.pdf",
+      "size": 6108709,
+      "sha256": "432ecc55cbac370b49053b364713b52ed0b00785a604f87040b1f163bd5d824f"
     },
     {
       "path": "/documents/matter-33/ndcal/AO 440 Summons - Diana Candelaria (N.D. Cal.) (Aug 7 2026).pdf",
@@ -5392,6 +5477,11 @@
       "path": "/documents/matter-33/ndcal/AO 440 Summons - Steve Gordon (N.D. Cal.) (Aug 7 2026).pdf",
       "size": 45646,
       "sha256": "6fb117412908880c1ff785b56c12894332704381b0e3c52e4ab63f6fe9dd58ab"
+    },
+    {
+      "path": "/documents/matter-33/ndcal/Administrative Motion - Conform Plaintiff's Name - Candelaria (N.D. Cal. 3-26-cv-08272-LJC) (September 14, 2026).pdf",
+      "size": 205495,
+      "sha256": "15350b2602e89d008cbd435560f4c5844639d6a35912ded8037e6e39a5c116a5"
     },
     {
       "path": "/documents/matter-33/ndcal/Certification of Conflicts Interested Entities and Persons (Candelaria Gordon) (Sep 4 2026).pdf",
@@ -5609,9 +5699,9 @@
       "sha256": "cd8fe0be7b6ac5100c47c1a45b4a479a266539de0b3a1936a9ea2a5f8beedebc"
     },
     {
-      "path": "/documents/matter-35/[Proposed] Order Correcting Case Title - 26CV501995 (Sep 10 2026).pdf",
-      "size": 4913,
-      "sha256": "859b493d697bd48afa975e677aa008fd4b46e4febb3fbbd843ca44f676e7f47a"
+      "path": "/documents/matter-35/CM-010 Civil Case Cover Sheet (CONFORMED, Filed Aug 26 2026) - 26CV501995.pdf",
+      "size": 2089557,
+      "sha256": "73c132a36114ddb9ba356c9ce67a86c668705803860c030e1f41d19b8e0b9646"
     },
     {
       "path": "/documents/matter-35/CM-010 Civil Case Cover Sheet - Ngwa Nforbi v Ross Stores (Aug 26 2026).pdf",
@@ -5619,19 +5709,9 @@
       "sha256": "14936ee1cfc25d7009a7bba0814b1cd13e195ef07399181376373dadc40a8e7d"
     },
     {
-      "path": "/documents/matter-35/CM-010 Civil Case Cover Sheet (CONFORMED, Filed Aug 26 2026) - 26CV501995.pdf",
-      "size": 2089557,
-      "sha256": "73c132a36114ddb9ba356c9ce67a86c668705803860c030e1f41d19b8e0b9646"
-    },
-    {
       "path": "/documents/matter-35/CV-5003 ADR Information Sheet - Civil Division (Santa Clara).pdf",
       "size": 168183,
       "sha256": "2dd77d8623daaa2db478e7035faba47aec3c2b724aa8903786e11305188f2f90"
-    },
-    {
-      "path": "/documents/matter-35/CV-5012 Civil Lawsuit Notice (blank for clerk) - Aug 26 2026.pdf",
-      "size": 178419,
-      "sha256": "caa311fa9218b59abbdef18fe9a9a98f6060180dcb76e2cd1e9a3cb18a03ee81"
     },
     {
       "path": "/documents/matter-35/CV-5012 Civil Lawsuit Notice (Clerk-Stamped) - 26CV501995.pdf",
@@ -5639,19 +5719,24 @@
       "sha256": "140867041557e5a1a4bebb4bdfdf4b5023e45758fb19941077ed8422a653bc12"
     },
     {
+      "path": "/documents/matter-35/CV-5012 Civil Lawsuit Notice (blank for clerk) - Aug 26 2026.pdf",
+      "size": 178419,
+      "sha256": "caa311fa9218b59abbdef18fe9a9a98f6060180dcb76e2cd1e9a3cb18a03ee81"
+    },
+    {
       "path": "/documents/matter-35/Declaration ISO Request to Correct Case Title (Sep 10 2026).pdf",
       "size": 197601,
       "sha256": "cc9f49f00aa0be084d2c4afb6eec81b1a83005f01ac3625c66cfc0b55d68093c"
     },
     {
-      "path": "/documents/matter-35/Email Draft - Process Server CT Corporation Service (Ross Stores Inc and Ross Dress for Less Inc) (Aug 27 2026).txt",
-      "size": 2045,
-      "sha256": "88b4e5e3aa299900f3a222b2df4961d6854ffbdd43cac20af49c056576e54b5c"
-    },
-    {
       "path": "/documents/matter-35/EMAIL_DRAFT_One_Legal_Correct_Case_Title_Party_Order.txt",
       "size": 2375,
       "sha256": "ebeff0cae36264659b2081175db7f5df13b9a490c26e2bb5a5ce29884a0b97bf"
+    },
+    {
+      "path": "/documents/matter-35/Email Draft - Process Server CT Corporation Service (Ross Stores Inc and Ross Dress for Less Inc) (Aug 27 2026).txt",
+      "size": 2045,
+      "sha256": "88b4e5e3aa299900f3a222b2df4961d6854ffbdd43cac20af49c056576e54b5c"
     },
     {
       "path": "/documents/matter-35/Exhibit A - Complaint Caption Page (26CV501995).pdf",
@@ -5719,6 +5804,16 @@
       "sha256": "ebb311175348887169759bc6774e9eb08ef5c45e536da989dc552e81ecc1b93f"
     },
     {
+      "path": "/documents/matter-35/SUM-100 Summons (ISSUED, Filed Aug 26 2026) - 26CV501995.pdf",
+      "size": 326660,
+      "sha256": "5f72982967bc90bbaa2ff8f6ddd87f4b216c84267f5111c7d8188962edc3e4c6"
+    },
+    {
+      "path": "/documents/matter-35/SUM-100 Summons - Ngwa Nforbi v Ross Stores (Aug 26 2026).pdf",
+      "size": 61092,
+      "sha256": "8481281a012e356489c1d2d631b26120c366d103958e316e4bfe5774f5bb687a"
+    },
+    {
       "path": "/documents/matter-35/Santa Clara Public Portal - 26CV501995 Caption Does 2 through 20 (Sep 8 2026).pdf",
       "size": 60087,
       "sha256": "1d8d88c5afa71b6177fbd7fc6ed3f6ccf6247e6b5779781e12959d20c525a3f8"
@@ -5734,14 +5829,9 @@
       "sha256": "36ed0ce15ac85ef6bb111bb32843d10214772806c8d7cc7f18eb15cbac7d9f44"
     },
     {
-      "path": "/documents/matter-35/SUM-100 Summons - Ngwa Nforbi v Ross Stores (Aug 26 2026).pdf",
-      "size": 61092,
-      "sha256": "8481281a012e356489c1d2d631b26120c366d103958e316e4bfe5774f5bb687a"
-    },
-    {
-      "path": "/documents/matter-35/SUM-100 Summons (ISSUED, Filed Aug 26 2026) - 26CV501995.pdf",
-      "size": 326660,
-      "sha256": "5f72982967bc90bbaa2ff8f6ddd87f4b216c84267f5111c7d8188962edc3e4c6"
+      "path": "/documents/matter-35/Verified Complaint (CONFORMED, Filed Aug 26 2026) - 26CV501995.pdf",
+      "size": 260654,
+      "sha256": "5d317da9597a626c6c23860b62c4c50610f5c132378b5d0ea439ee2f63ec1646"
     },
     {
       "path": "/documents/matter-35/Verified Complaint - Ngwa Nforbi v Ross Stores Inc et al (Aug 26 2026).pdf",
@@ -5749,9 +5839,9 @@
       "sha256": "3724414b3ef14e98e5553109db85b5c7890f9f524e137c30330d62ee2789e1d6"
     },
     {
-      "path": "/documents/matter-35/Verified Complaint (CONFORMED, Filed Aug 26 2026) - 26CV501995.pdf",
-      "size": 260654,
-      "sha256": "5d317da9597a626c6c23860b62c4c50610f5c132378b5d0ea439ee2f63ec1646"
+      "path": "/documents/matter-35/[Proposed] Order Correcting Case Title - 26CV501995 (Sep 10 2026).pdf",
+      "size": 4913,
+      "sha256": "859b493d697bd48afa975e677aa008fd4b46e4febb3fbbd843ca44f676e7f47a"
     },
     {
       "path": "/documents/matter-36/A Task Awaits You- Change Government Identifiers - Job Application- Brendan Ngwa.pdf",
@@ -5769,6 +5859,16 @@
       "sha256": "1c645f41c25fc440c081e165a9e5f66e1f39e9477ee6d9dde18d5b076d44d9b7"
     },
     {
+      "path": "/documents/matter-36/AT&T Bilingual Spanish Retail Sales Consultant LODI Interview request.pdf",
+      "size": 108203,
+      "sha256": "8f2dd435de8f7c5d076cf3e5853eba72233fe3ac724db04877482164a41be088"
+    },
+    {
+      "path": "/documents/matter-36/AT&T Retail Sales Consultant STOCKTON PACIFIC Interview request.pdf",
+      "size": 107946,
+      "sha256": "9ad6602640db41297c0da1b08636a314010d7f8d6c789b1875b9ea5f55b09e02"
+    },
+    {
       "path": "/documents/matter-36/Action Required for Bilingual Spanish Retail Sales Consultant.pdf",
       "size": 39162,
       "sha256": "e29e0ff3ca873eff454ec65266318796102fcd446388b551a685c330c97a2e3b"
@@ -5782,16 +5882,6 @@
       "path": "/documents/matter-36/Application Received - R-107776 Retail Sales Consultant.pdf",
       "size": 526800,
       "sha256": "3d259e431edca5f4f8a6e908fd3fb3c4bcd6f546aa74ab034a857aea69660197"
-    },
-    {
-      "path": "/documents/matter-36/AT&T Bilingual Spanish Retail Sales Consultant LODI Interview request.pdf",
-      "size": 108203,
-      "sha256": "8f2dd435de8f7c5d076cf3e5853eba72233fe3ac724db04877482164a41be088"
-    },
-    {
-      "path": "/documents/matter-36/AT&T Retail Sales Consultant STOCKTON PACIFIC Interview request.pdf",
-      "size": 107946,
-      "sha256": "9ad6602640db41297c0da1b08636a314010d7f8d6c789b1875b9ea5f55b09e02"
     },
     {
       "path": "/documents/matter-36/CANCELED Brendan Ngwa Nforbi AT&T HireVue In Person Interview 2.pdf",
@@ -5814,11 +5904,6 @@
       "sha256": "0b46dc232259dff6c9ae7bc60f5ac3b16d58acd940d9232cda29f461e5f95f41"
     },
     {
-      "path": "/documents/matter-36/Filing Packet - Ngwa Nforbi v AT&T Mobility Services LLC (Sep 8 2026).pdf",
-      "size": 1110897,
-      "sha256": "70225009051ce6b76a8abc6e61f37c92e516c35264eb64265f54221b593fdc34"
-    },
-    {
       "path": "/documents/matter-36/FW-001 Request to Waive Court Fees - Ngwa Nforbi v AT&T Mobility Services LLC (Sep 8 2026).pdf",
       "size": 386339,
       "sha256": "cb52b339b10775cc49fb777c0c76ea0216292f41a7bd031efb96b9ce7f55d129"
@@ -5827,6 +5912,11 @@
       "path": "/documents/matter-36/FW-003 Order on Court Fee Waiver - Ngwa Nforbi v AT&T Mobility Services LLC (Sep 8 2026).pdf",
       "size": 191775,
       "sha256": "489f5f4f23c1abf19e3bf6c18caf627a8ddf400472a6f470f8e502d53efc284e"
+    },
+    {
+      "path": "/documents/matter-36/Filing Packet - Ngwa Nforbi v AT&T Mobility Services LLC (Sep 8 2026).pdf",
+      "size": 1110897,
+      "sha256": "70225009051ce6b76a8abc6e61f37c92e516c35264eb64265f54221b593fdc34"
     },
     {
       "path": "/documents/matter-36/IMG_8093.png",
@@ -5849,6 +5939,11 @@
       "sha256": "c2793590e9a074fcbd6a23e800fc0b51f417e0b63bbbb127808c07228df894d7"
     },
     {
+      "path": "/documents/matter-36/SUM-100 Summons - Ngwa Nforbi v AT&T Mobility Services LLC (Sep 8 2026).pdf",
+      "size": 75416,
+      "sha256": "f99bc4b9d521b0fb65c8e61ed7b136c9b94a08cddb7f328a1cc34073cb5ad2a5"
+    },
+    {
       "path": "/documents/matter-36/Scheduled in-person interview with AT&T 2.pdf",
       "size": 141839,
       "sha256": "8784b0964fbf98979043d3e4ba7f97d0fbc5a4ef2ae8bb53f4cd464dac93234d"
@@ -5867,11 +5962,6 @@
       "path": "/documents/matter-36/Scheduled in-person interview with AT&T.pdf",
       "size": 150883,
       "sha256": "f1bedc98a7f2e6e0a691e509173b8adedb58c27d0f876341cc682d47b40803f1"
-    },
-    {
-      "path": "/documents/matter-36/SUM-100 Summons - Ngwa Nforbi v AT&T Mobility Services LLC (Sep 8 2026).pdf",
-      "size": 75416,
-      "sha256": "f99bc4b9d521b0fb65c8e61ed7b136c9b94a08cddb7f328a1cc34073cb5ad2a5"
     },
     {
       "path": "/documents/matter-36/Verified Complaint - Ngwa Nforbi v AT&T Mobility Services LLC (Sep 8 2026).pdf",
@@ -5919,14 +6009,44 @@
       "sha256": "9942b02e0d596c34df4a1d8821b1aade3b226f89d693ec825f1ed18f4b428c1d"
     },
     {
+      "path": "/documents/matter-36/edca/AO 239 IFP Application - Ngwa Nforbi v. AT&T Mobility Services LLC (E.D. Cal.) (Sep 16 2026).pdf",
+      "size": 898453,
+      "sha256": "6847357c362ec7df338d62ca16dc2eeae7897e79ad16e4e53f2304f13ac33094"
+    },
+    {
+      "path": "/documents/matter-36/edca/AO 440 Summons - AT&T Mobility Services LLC (E.D. Cal.) (Sep 16 2026).pdf",
+      "size": 39116,
+      "sha256": "f0f54e08dd613b998c276de51cca458d70bd8e133ac9b00bd0df7bd7d87b1299"
+    },
+    {
+      "path": "/documents/matter-36/edca/Complaint - Ngwa Nforbi v. AT&T Mobility Services LLC (E.D. Cal.) (Sep 16 2026).pdf",
+      "size": 232787,
+      "sha256": "fc1e22ea143e1b91cc1c31ee498665ccb6ca7e7444485f305bf4851fba0cf54e"
+    },
+    {
+      "path": "/documents/matter-36/edca/Consent to Magistrate Judge Jurisdiction - Matters 36-39 (E.D. Cal.) (Sep 16 2026).pdf",
+      "size": 1372818,
+      "sha256": "d28f2d65583fc60914ad37e16d5718072d58711c62909dbd2f1743827f99b54f"
+    },
+    {
+      "path": "/documents/matter-36/edca/Consent to Magistrate Judge Jurisdiction - Ngwa Nforbi v. AT&T Mobility Services LLC (E.D. Cal.) (Sep 16 2026).pdf",
+      "size": 347006,
+      "sha256": "678f6994be51fd90272e18a21cd48f6a227e0f466b4c619ba690782f1bf4a4bd"
+    },
+    {
+      "path": "/documents/matter-36/edca/E.D. Cal. Intake Packet (print copy) - Ngwa Nforbi v. AT&T (Sep 16 2026).pdf",
+      "size": 1652153,
+      "sha256": "567dcbbc5adf35186d03b6287c925a6ec4cbfa569ee2cef8b824749d572e446c"
+    },
+    {
+      "path": "/documents/matter-36/edca/JS 44 Civil Cover Sheet - Ngwa Nforbi v. AT&T Mobility Services LLC (E.D. Cal.) (Sep 16 2026).pdf",
+      "size": 1203164,
+      "sha256": "7b05a1417ec2f8fe6877b4797e9e3275ea1be04dba712066539649846dfe0e71"
+    },
+    {
       "path": "/documents/matter-37/CM-010 Civil Case Cover Sheet - Ngwa Nforbi v Home Depot USA Inc (Sep 8 2026).pdf",
       "size": 494971,
       "sha256": "8cc469cd3930af5d3c612a12407750ed35da970804be3a17550798b87c21f04a"
-    },
-    {
-      "path": "/documents/matter-37/Filing Packet - Ngwa Nforbi v Home Depot USA Inc (Sep 8 2026).pdf",
-      "size": 1072505,
-      "sha256": "ba2157c849b70060c7cc4ad8f7161beb03570f594973f2f28d48e35af3f6fc77"
     },
     {
       "path": "/documents/matter-37/FW-001 Request to Waive Court Fees - Ngwa Nforbi v Home Depot USA Inc (Sep 8 2026).pdf",
@@ -5939,6 +6059,11 @@
       "sha256": "20965e63df43d95ba3677db240cae0abd9c6b832fe71d8de0fcbb54bbd7d5bff"
     },
     {
+      "path": "/documents/matter-37/Filing Packet - Ngwa Nforbi v Home Depot USA Inc (Sep 8 2026).pdf",
+      "size": 1072505,
+      "sha256": "ba2157c849b70060c7cc4ad8f7161beb03570f594973f2f28d48e35af3f6fc77"
+    },
+    {
       "path": "/documents/matter-37/SUM-100 Summons - Ngwa Nforbi v Home Depot USA Inc (Sep 8 2026).pdf",
       "size": 75407,
       "sha256": "b72e371f4756a407ee5755c4faf8884b3564addc31884b0057dfae5bbdcf8273"
@@ -5949,6 +6074,36 @@
       "sha256": "8fb9dec2622af38868af51965487549f9eae793a7ebb9d0c1b97b07140039549"
     },
     {
+      "path": "/documents/matter-37/edca/AO 239 IFP Application - Ngwa Nforbi v. Home Depot U.S.A., Inc. (E.D. Cal.) (Sep 16 2026).pdf",
+      "size": 898426,
+      "sha256": "4af195e984ca09956d8a004915a8eb26ae3519f02a2d432cfb258a4a1f10f63c"
+    },
+    {
+      "path": "/documents/matter-37/edca/AO 440 Summons - Home Depot U.S.A., Inc. (E.D. Cal.) (Sep 16 2026).pdf",
+      "size": 39063,
+      "sha256": "3cca2529cf059e166e3daf531940cb31f23099a6c941c821d889e1b12aecead9"
+    },
+    {
+      "path": "/documents/matter-37/edca/Complaint - Ngwa Nforbi v. Home Depot U.S.A., Inc. (E.D. Cal.) (Sep 16 2026).pdf",
+      "size": 222173,
+      "sha256": "5fc653a706fd7b5cbffc8a9489006ce3acac5c828155960c6fd6dca79fa58f4e"
+    },
+    {
+      "path": "/documents/matter-37/edca/Consent to Magistrate Judge Jurisdiction - Ngwa Nforbi v. Home Depot U.S.A., Inc. (E.D. Cal.) (Sep 16 2026).pdf",
+      "size": 347003,
+      "sha256": "54a3f62c04b1f5550cc7815760cd3778818b0f1be5f372ae8e0e72d6b5ffc5ce"
+    },
+    {
+      "path": "/documents/matter-37/edca/E.D. Cal. Intake Packet (print copy) - Ngwa Nforbi v. Home Depot (Sep 16 2026).pdf",
+      "size": 1641905,
+      "sha256": "4684209e834510d34d4e17f5436ea71592b6c0597b696442beaa62cb5c154df1"
+    },
+    {
+      "path": "/documents/matter-37/edca/JS 44 Civil Cover Sheet - Ngwa Nforbi v. Home Depot U.S.A., Inc. (E.D. Cal.) (Sep 16 2026).pdf",
+      "size": 1203047,
+      "sha256": "bb4699c69227c54526c80652ae5896342b74ee0312c6bbc497ef7b59b63ae080"
+    },
+    {
       "path": "/documents/matter-38/Application Received - Swift Transportation (Sep 22 2023).pdf",
       "size": 156366,
       "sha256": "78e669280b44d7ed43f80f0c2afc3c48e6d2512384d73b331eb6fb2602ea99e6"
@@ -5957,11 +6112,6 @@
       "path": "/documents/matter-38/CM-010 Civil Case Cover Sheet - Ngwa Nforbi v Swift Transportation Co of Arizona LLC (Sep 8 2026).pdf",
       "size": 494984,
       "sha256": "a14bae78641cd67162b65304659f6b3c2f91b4c1176ca967b2d01c2f086c3716"
-    },
-    {
-      "path": "/documents/matter-38/Filing Packet - Ngwa Nforbi v Swift Transportation Co of Arizona LLC (Sep 8 2026).pdf",
-      "size": 1075764,
-      "sha256": "efde3ac8b3732e9831013803151489722af4caf30a82fcbdfb7582d761a96282"
     },
     {
       "path": "/documents/matter-38/FMCSA Clearinghouse Consent Requested - Swift (Sep 25 2023).pdf",
@@ -5982,6 +6132,11 @@
       "path": "/documents/matter-38/FW-003 Order on Court Fee Waiver - Ngwa Nforbi v Swift Transportation Co of Arizona LLC (Sep 8 2026).pdf",
       "size": 191787,
       "sha256": "d327b1c5f2b32b70f76fcabb991d1b6aa71a431b8d75c2262f64f34d4c014cf2"
+    },
+    {
+      "path": "/documents/matter-38/Filing Packet - Ngwa Nforbi v Swift Transportation Co of Arizona LLC (Sep 8 2026).pdf",
+      "size": 1075764,
+      "sha256": "efde3ac8b3732e9831013803151489722af4caf30a82fcbdfb7582d761a96282"
     },
     {
       "path": "/documents/matter-38/Post-Adverse Action Letter - Swift (Oct 5 2023).pdf",
@@ -6024,6 +6179,36 @@
       "sha256": "b68afd92db380777f3f46099d4323f35bba1ed3100cff527ce3b49615b2934cd"
     },
     {
+      "path": "/documents/matter-38/edca/AO 239 IFP Application - Ngwa Nforbi v. Swift Transportation Co. of Arizona LLC (E.D. Cal.) (Sep 16 2026).pdf",
+      "size": 898397,
+      "sha256": "dc2a03b8130146920536040cdc6c5fd1a0226010088072d0ac8de6613c3ebd12"
+    },
+    {
+      "path": "/documents/matter-38/edca/AO 440 Summons - Swift Transportation Co. of Arizona LLC (E.D. Cal.) (Sep 16 2026).pdf",
+      "size": 39164,
+      "sha256": "19672eb5f9ce1966e8840cebe0357820edd602f5b9244718d10bd2529c02b866"
+    },
+    {
+      "path": "/documents/matter-38/edca/Complaint - Ngwa Nforbi v. Swift Transportation Co. of Arizona LLC (E.D. Cal.) (Sep 16 2026).pdf",
+      "size": 251953,
+      "sha256": "80efc1e858aa4d0a7fb56064dbf22b64f3e639ce3e6f080f04beb1edfa168b64"
+    },
+    {
+      "path": "/documents/matter-38/edca/Consent to Magistrate Judge Jurisdiction - Ngwa Nforbi v. Swift Transportation Co. of Arizona LLC (E.D. Cal.) (Sep 16 2026).pdf",
+      "size": 347015,
+      "sha256": "806ee022ff8ea3a8885531aad0b58db90b6ef6cf8560a6f1eefec0101ab137d4"
+    },
+    {
+      "path": "/documents/matter-38/edca/E.D. Cal. Intake Packet (print copy) - Ngwa Nforbi v. Swift (Sep 16 2026).pdf",
+      "size": 1671788,
+      "sha256": "f209b5f14929f3278395b4d31f7d16a2f9cf4ecec1700ea6c65dbdb2197f88ad"
+    },
+    {
+      "path": "/documents/matter-38/edca/JS 44 Civil Cover Sheet - Ngwa Nforbi v. Swift Transportation Co. of Arizona LLC (E.D. Cal.) (Sep 16 2026).pdf",
+      "size": 1203646,
+      "sha256": "081f0c0346661c0790b826dbf90341345caf79398466860dbf20a1309f949407"
+    },
+    {
       "path": "/documents/matter-39/Background Authorization Consent Confirmation (Oct 17 2023).pdf",
       "size": 76730,
       "sha256": "1f34cf18dc8c0ea108334081ee6818311ea8ee92a592a9ce8719e8d8a0bdd7f4"
@@ -6039,16 +6224,6 @@
       "sha256": "1a34c7468d5db5e76828f7cb7be11536a80b7ef872bc3eca6e3966c33997d7c8"
     },
     {
-      "path": "/documents/matter-39/Filing Packet - Ngwa Nforbi v Best Buy Co Inc (Sep 8 2026).pdf",
-      "size": 1074295,
-      "sha256": "9cf66d43f42788adb2ae50d28036e1fdf7f5c234ba4d3abbca105a5e4c2e2bf5"
-    },
-    {
-      "path": "/documents/matter-39/First Advantage Best Buy Drug Test (Oct 17 2023).pdf",
-      "size": 60548,
-      "sha256": "419bcec78f271b3abb6244925571d3d0a26307ab96d9a264845d1a667f25d32f"
-    },
-    {
       "path": "/documents/matter-39/FW-001 Request to Waive Court Fees - Ngwa Nforbi v Best Buy Co Inc (Sep 8 2026).pdf",
       "size": 386329,
       "sha256": "dabe3f38d9cbdd42dfbb1852b75081aeea2dc970dd8fa2041199831b434e0368"
@@ -6057,6 +6232,16 @@
       "path": "/documents/matter-39/FW-003 Order on Court Fee Waiver - Ngwa Nforbi v Best Buy Co Inc (Sep 8 2026).pdf",
       "size": 191765,
       "sha256": "e6e5cd44277e061bd6e074bd231688f026d0f872f8c65c412da58575207597fc"
+    },
+    {
+      "path": "/documents/matter-39/Filing Packet - Ngwa Nforbi v Best Buy Co Inc (Sep 8 2026).pdf",
+      "size": 1074295,
+      "sha256": "9cf66d43f42788adb2ae50d28036e1fdf7f5c234ba4d3abbca105a5e4c2e2bf5"
+    },
+    {
+      "path": "/documents/matter-39/First Advantage Best Buy Drug Test (Oct 17 2023).pdf",
+      "size": 60548,
+      "sha256": "419bcec78f271b3abb6244925571d3d0a26307ab96d9a264845d1a667f25d32f"
     },
     {
       "path": "/documents/matter-39/Job Offer - Best Buy General Warehouse Worker 2nd Shift (Oct 17 2023).pdf",
@@ -6077,6 +6262,36 @@
       "path": "/documents/matter-39/Verified Complaint - Ngwa Nforbi v Best Buy Co Inc (Sep 8 2026).pdf",
       "size": 290362,
       "sha256": "dc5cf3976d65ae7d0e30a6b355d82d08873025bb0dc9b16ca541b20dc0e94bec"
+    },
+    {
+      "path": "/documents/matter-39/edca/AO 239 IFP Application - Ngwa Nforbi v. Best Buy Co., Inc. (E.D. Cal.) (Sep 16 2026).pdf",
+      "size": 898425,
+      "sha256": "e2d539d7fabd3600eeeea42fe098b5ca402c4698de3bb948a2fc1ec3231aed94"
+    },
+    {
+      "path": "/documents/matter-39/edca/AO 440 Summons - Best Buy Co., Inc. (E.D. Cal.) (Sep 16 2026).pdf",
+      "size": 38998,
+      "sha256": "556bfee47fc7202376c5941b821d390d1c1466bb3161dd99789ec257cf0b3966"
+    },
+    {
+      "path": "/documents/matter-39/edca/Complaint - Ngwa Nforbi v. Best Buy Co., Inc. (E.D. Cal.) (Sep 16 2026).pdf",
+      "size": 223776,
+      "sha256": "a351bc39489c0f7c01da163bf52e7b4ed670c7c538c71069bbf4092872c11d3a"
+    },
+    {
+      "path": "/documents/matter-39/edca/Consent to Magistrate Judge Jurisdiction - Ngwa Nforbi v. Best Buy Co., Inc. (E.D. Cal.) (Sep 16 2026).pdf",
+      "size": 346999,
+      "sha256": "f4be162786acf7f0f75793bdc77becdb32b50d9f8a05bdacab64321b798315f9"
+    },
+    {
+      "path": "/documents/matter-39/edca/E.D. Cal. Intake Packet (print copy) - Ngwa Nforbi v. Best Buy (Sep 16 2026).pdf",
+      "size": 1643484,
+      "sha256": "e4fd85e20f12174bce183227b80929174b3629e4dc926f9439abfa1ec63e4e9e"
+    },
+    {
+      "path": "/documents/matter-39/edca/JS 44 Civil Cover Sheet - Ngwa Nforbi v. Best Buy Co., Inc. (E.D. Cal.) (Sep 16 2026).pdf",
+      "size": 1203050,
+      "sha256": "f7af1ca2404c62d5a10c40c34ff0dce82e136d15c15436de5cba15efa2781609"
     },
     {
       "path": "/documents/matter-40/First Advantage Invite - TaskUs Background Screening (Sep 14 2026).pdf",
@@ -6217,11 +6432,6 @@
       "path": "/documents/opinions/Newanforbi v Smith - USDC NDCal - Order Directing Service Aug 26 2026.pdf",
       "size": 134726,
       "sha256": "79355d28b4741e9e26e2f3d5b89bf37ef4f3af1bbfece3567e83a91778cc7488"
-    },
-    {
-      "path": "/documents/README.md",
-      "size": 482,
-      "sha256": "fd9e068ec788a0c4e54aed9d8a9c38785dd84abb50547253f85eef61c3ecbd9b"
     }
   ]
 }

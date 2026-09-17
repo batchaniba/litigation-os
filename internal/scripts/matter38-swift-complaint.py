@@ -1,23 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Matter 38 — verified complaint, Swift Transportation Co. of Arizona LLC.
+"""Matter 38 — historical San Joaquin verified complaint (never clerk-filed).
 
-LOCKED after the September 8, 2026 execute. Do not rewrite pleading prose
-unless a new Swift or vendor document appears.
+The September 8, 2026 San Joaquin packet is work product only. It was never
+clerk-filed. Do not treat it as the live pleading.
 
-San Joaquin Superior Court. The decrypted Sept. 26, 2023 pre-adverse packet
-is in hand. NSOPW remained Processing on every snapshot furnished to
-Plaintiff. The furnished packet contains neither a completed hit nor a
-completed no-record. Plaintiff pleads on information and belief that Swift
-used preliminary sex-offender-registry information from that in-process
-component, in whole or in part, in the denial. ICRAA and UCL remain
-independent paths.
+Live filing review draft: ``internal/scripts/matter38-edca-complaint.py``.
+That generator is not LOCKED. File in E.D. Cal., Sacramento Division, on or
+before September 26, 2026. Do not stamp Matter 38 LOCKED.
 
-Default output is unsigned. On or after September 8, 2026, rerun with
-``--execute`` only after Plaintiff confirms the role.
-
-    python3 internal/scripts/matter38-swift-complaint.py
-    python3 internal/scripts/matter38-swift-complaint.py --execute
+This script remains for provenance of the unfiled verified packet.
 """
 
 from __future__ import annotations

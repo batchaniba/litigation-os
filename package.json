@@ -21,10 +21,12 @@
     "court:resolve": "node internal/scripts/courtlistener/resolve-dockets.mjs",
     "court:sync": "node internal/scripts/courtlistener/sync-dockets.mjs",
     "dev": "vite",
+    "docs:fetch": "node internal/scripts/fetch-doc.mjs",
     "documents:pull": "node internal/scripts/documents-store.mjs pull",
     "documents:push": "node internal/scripts/documents-store.mjs push",
     "documents:seed": "node internal/scripts/documents-store.mjs seed",
     "extract:matter1": "node internal/scripts/extract-matter-pdfs.mjs",
+    "fuse:board": "node internal/scripts/generate-fuse-board.mjs",
     "generate:readme": "node internal/scripts/generate-readme-tables.mjs",
     "index:build": "python3 internal/scripts/build-document-index.py",
     "index:search": "python3 internal/scripts/search-documents.py",
@@ -39,7 +41,10 @@
     "retire:upcoming": "node internal/scripts/retire-upcoming.mjs",
     "scaffold:matter": "node internal/scripts/scaffold-matter.mjs",
     "sync:all": "node internal/scripts/sync-all.mjs",
-    "sync:derived": "npm run sync:summaries && npm run sync:upcoming && npm run sync:short-links",
+    "sync:derived": "npm run sync:summaries && npm run sync:upcoming && npm run sync:short-links && npm run sync:index",
+    "sync:index": "node internal/scripts/sync-machine-index.mjs",
+    "matter:split": "node internal/scripts/split-matter.mjs",
+    "check:sidecars": "node internal/scripts/check-document-sidecars.mjs",
     "sync:manifest": "node internal/scripts/sync-document-manifest.mjs",
     "sync:registry": "node internal/scripts/sync-document-registry.mjs",
     "sync:short-links": "node internal/scripts/sync-short-links.mjs",
@@ -49,7 +54,7 @@
     "test:coverage": "vitest run --coverage",
     "test:golden": "node internal/scripts/test-golden.mjs",
     "typecheck": "tsc --noEmit",
-    "validate": "npm run lint && node internal/scripts/sync-document-registry.mjs --check && node internal/scripts/generate-readme-tables.mjs --check && node internal/scripts/validate-portfolio.mjs && npm run citations:check && npm run test:coverage"
+    "validate": "npm run lint && node internal/scripts/sync-document-registry.mjs --check && node internal/scripts/generate-readme-tables.mjs --check && node internal/scripts/sync-machine-index.mjs --check && node internal/scripts/validate-portfolio.mjs && npm run citations:check && npm run test:coverage"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

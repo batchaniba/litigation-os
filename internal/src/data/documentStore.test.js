@@ -12,7 +12,16 @@ import {
   skipViteDocumentCopy,
   urlFromPublicRel,
 } from "../../scripts/lib/document-store.mjs";
-import { PAGES_DOCUMENTS_ORIGIN, vercelSpaRewrites } from "../../scripts/lib/documents-branch.mjs";
+import {
+  PAGES_DOCUMENTS_ORIGIN,
+  documentsArchivePaths,
+  encodeDocumentsPath,
+  isDocumentsSource,
+  matterDocumentsFolder,
+  pagesDocumentUrl,
+  parseDocumentsPullArgs,
+  vercelSpaRewrites,
+} from "../../scripts/lib/documents-branch.mjs";
 
 describe("skipDiskDocs", () => {
   it("reads the flag from argv or env", () => {
@@ -81,6 +90,66 @@ describe("vercelSpaRewrites", () => {
       destination: `${PAGES_DOCUMENTS_ORIGIN}/:path*`,
     });
     expect(rewrites[1]).toEqual({ source: "/(.*)", destination: "/index.html" });
+  });
+});
+
+describe("short-link documents URLs", () => {
+  const upsOpp =
+    "/documents/matter-26/Dkt 10 - Plaintiff's Opposition to UPS Rule 12(b)(6) Motion to Dismiss (Filed Aug 28 2026).pdf";
+
+  it("detects /documents/ sources", () => {
+    expect(isDocumentsSource(upsOpp)).toBe(true);
+    expect(isDocumentsSource("/hope-name-stip.pdf")).toBe(false);
+  });
+
+  it("encodes parentheses so Vercel destinations stay valid", () => {
+    const encoded = encodeDocumentsPath(upsOpp);
+    expect(encoded).not.toMatch(/[()]/);
+    expect(encoded).toContain("12%28b%29%286%29");
+    expect(encoded.startsWith("/documents/matter-26/")).toBe(true);
+  });
+
+  it("builds an encoded Pages URL from a documents source", () => {
+    const url = pagesDocumentUrl(upsOpp);
+    expect(url.startsWith(`${PAGES_DOCUMENTS_ORIGIN}/matter-26/`)).toBe(true);
+    expect(url).toContain("%28b%29");
+    expect(url).not.toMatch(/[()]/);
+  });
+});
+
+describe("documents:pull args", () => {
+  it("parses comma-separated and repeated --matter flags", () => {
+    expect(parseDocumentsPullArgs(["--matter", "24"])).toMatchObject({
+      matters: [24],
+      forms: false,
+      list: false,
+    });
+    expect(parseDocumentsPullArgs(["--matter", "20,24", "--forms"])).toEqual({
+      matters: [20, 24],
+      forms: true,
+      opinions: false,
+      list: false,
+      help: false,
+    });
+    expect(parseDocumentsPullArgs(["--matter=32", "--matter", "24", "--opinions"]).matters).toEqual([
+      24, 32,
+    ]);
+  });
+
+  it("rejects a missing or non-integer matter", () => {
+    expect(() => parseDocumentsPullArgs(["--matter"])).toThrow(/needs a number/);
+    expect(() => parseDocumentsPullArgs(["--matter", "fac"])).toThrow(/Invalid matter number/);
+    expect(() => parseDocumentsPullArgs(["--wat"])).toThrow(/Unknown documents:pull flag/);
+  });
+
+  it("builds sparse archive paths and leaves a full pull as null", () => {
+    expect(documentsArchivePaths({})).toBeNull();
+    expect(matterDocumentsFolder(5)).toBe("matter-05");
+    expect(documentsArchivePaths({ matters: [24], forms: true })).toEqual([
+      "internal/public/documents/matter-24",
+      "internal/public/documents/_form-library",
+      "internal/public/documents/README.md",
+    ]);
   });
 });
 
