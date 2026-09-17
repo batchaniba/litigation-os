@@ -17,6 +17,8 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
+import { isDatedLiveClock } from "../../internal/scripts/lib/upcoming-from-clocks.mjs";
+
 const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..", "..");
 const MATTERS_DIR = path.join(REPO_ROOT, "internal/src/data/matters");
 const INDEX_PATH = path.join(REPO_ROOT, "internal/src/data/index/matters.json");
@@ -91,9 +93,14 @@ for (const n of [...numbers].sort((a, b) => a - b)) {
       `);`,
   );
 
-  // clocks: all split rows when present; otherwise the folded index next_clock.
+  // clocks: only live, dated split rows; otherwise the folded index next_clock.
+  // D1 has no clock-status column, so retired rows must be excluded at seed time.
   out.push(`DELETE FROM clocks WHERE matter_number = ${n};`);
-  const rows = clocks.length ? clocks : nc.date ? [{ title: nc.title, date: nc.date, kind: nc.kind }] : [];
+  const rows = clocks.length
+    ? clocks.filter(isDatedLiveClock)
+    : nc.date
+      ? [{ title: nc.title, date: nc.date, kind: nc.kind }]
+      : [];
   for (const c of rows) {
     if (!c || !c.date) continue;
     out.push(
