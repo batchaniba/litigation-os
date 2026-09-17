@@ -31,3 +31,16 @@ CREATE TABLE IF NOT EXISTS documents (
   size          INTEGER
 );
 CREATE INDEX IF NOT EXISTS idx_documents_matter ON documents(matter_number);
+
+-- Append-only trail of every mutating operation (writes.mjs recordAudit).
+-- actor = the API key name that authorized the write; ok = 1 success, 0 error.
+CREATE TABLE IF NOT EXISTS audit (
+  id      INTEGER PRIMARY KEY AUTOINCREMENT,
+  ts      TEXT NOT NULL,      -- ISO-8601 UTC
+  actor   TEXT,               -- API_KEYS name that authorized it
+  action  TEXT,               -- e.g. putDocument | upsertMatter | deleteDocument
+  target  TEXT,               -- sha256 / matter number / clock key
+  detail  TEXT,               -- JSON blob of the change
+  ok      INTEGER             -- 1 = applied, 0 = failed
+);
+CREATE INDEX IF NOT EXISTS idx_audit_ts ON audit(ts);
