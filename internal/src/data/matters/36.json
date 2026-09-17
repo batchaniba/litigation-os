@@ -5,7 +5,7 @@
   "court": "San Joaquin Sup. Ct. (executed packet; not yet filed)",
   "claims": "FCRA § 1681b(b)(3); ICRAA § 1786.40; CCRAA § 1785.20.5 (alternative); Breach of Contract; Implied Covenant; Promissory Estoppel; Negligent Misrepresentation; Fraud / Concealment; UCL § 17200; Penal Code § 290.46(j)",
   "status": "EXECUTED (unfiled) — ten-count San Joaquin complaint against AT&T Mobility Services LLC, signed for September 8, 2026. Plaintiff confirmed Workday acceptance, onboarding, and nonreceipt. First Advantage is not a named defendant. CM-010, SUM-100, FW-001, and FW-003 are in the packet. § 290 is the tenth count.",
-  "status_label": "EDCA intake drafted Sep. 15 — unfiled",
+  "status_label": "EDCA intake drafted Sep. 16 — unfiled",
   "lifecycle": "pre_filing",
   "proceeding": "state_civil",
   "phase": "pre_filing",
@@ -52,23 +52,23 @@
   ],
   "documents": [
     {
-      "path": "/documents/matter-36/edca/E.D. Cal. Intake Packet (print copy) - Ngwa Nforbi v. AT&T (Sep 15 2026).pdf",
+      "path": "/documents/matter-36/edca/E.D. Cal. Intake Packet (print copy) - Ngwa Nforbi v. AT&T (Sep 16 2026).pdf",
       "filed": false
     },
     {
-      "path": "/documents/matter-36/edca/JS 44 Civil Cover Sheet - Ngwa Nforbi v. AT&T Mobility Services LLC (E.D. Cal.) (Sep 15 2026).pdf",
+      "path": "/documents/matter-36/edca/JS 44 Civil Cover Sheet - Ngwa Nforbi v. AT&T Mobility Services LLC (E.D. Cal.) (Sep 16 2026).pdf",
       "filed": false
     },
     {
-      "path": "/documents/matter-36/edca/AO 239 IFP Application - Ngwa Nforbi v. AT&T Mobility Services LLC (E.D. Cal.) (Sep 15 2026).pdf",
+      "path": "/documents/matter-36/edca/AO 239 IFP Application - Ngwa Nforbi v. AT&T Mobility Services LLC (E.D. Cal.) (Sep 16 2026).pdf",
       "filed": false
     },
     {
-      "path": "/documents/matter-36/edca/AO 440 Summons - AT&T Mobility Services LLC (E.D. Cal.) (Sep 15 2026).pdf",
+      "path": "/documents/matter-36/edca/AO 440 Summons - AT&T Mobility Services LLC (E.D. Cal.) (Sep 16 2026).pdf",
       "filed": false
     },
     {
-      "path": "/documents/matter-36/edca/Complaint - Ngwa Nforbi v. AT&T Mobility Services LLC (E.D. Cal.) (Sep 15 2026).pdf",
+      "path": "/documents/matter-36/edca/Complaint - Ngwa Nforbi v. AT&T Mobility Services LLC (E.D. Cal.) (Sep 16 2026).pdf",
       "filed": false
     },
     {

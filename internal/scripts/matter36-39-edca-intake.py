@@ -59,8 +59,8 @@ JS44_TEMPLATE = FORMS / "js44-civil-cover-sheet-blank-template.pdf"
 AO440_TEMPLATE = FORMS / "ao440-blank-template.pdf"
 AO239_TEMPLATE = FORMS / "ao239-blank-template.pdf"
 
-EXEC_DATE = "September 15, 2026"
-EXEC_DATE_SHORT = "09/15/2026"
+EXEC_DATE = "September 16, 2026"
+EXEC_DATE_SHORT = "09/16/2026"
 PLAINTIFF_PRINT = "Brendan Ngwa Nforbi"
 # JS 44 I.(a) — Last Name, First Name, Title Case (not ALL CAPS).
 PLAINTIFF_JS44 = "Ngwa Nforbi, Brendan"
@@ -540,7 +540,7 @@ def main() -> None:
 
     for case in CASES:
         out_dir = _out_dir(case["number"])
-        date = "Sep 15 2026"
+        date = "Sep 16 2026"
         js44 = build_js44(
             case,
             out_dir

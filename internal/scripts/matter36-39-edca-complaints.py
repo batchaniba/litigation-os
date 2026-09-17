@@ -9,7 +9,7 @@ Authoritative prose lives in:
   internal/docs/matter-38/FILING_COMPLAINT_REVIEW_DRAFT.md
   internal/docs/matter-39/EDCA_FEDERAL_COMPLAINT_REVIEW_DRAFT.md
 
-File-ready PDF: September 15, 2026 date, canonical signature, no review-draft
+File-ready PDF: September 16, 2026 date, canonical signature, no review-draft
 banner, no Lerma in the caption. Does not reprint the San Joaquin verified
 complaints (wrong court).
 
@@ -31,7 +31,7 @@ from signature_stamp import SIGNATURE_NATIVE_PX, SIGNATURE_PATH  # noqa: E402
 
 ROOT = SCRIPT_DIR.parents[1]
 DOCS = ROOT / "internal/public/documents"
-EXEC_DATE = "September 15, 2026"
+EXEC_DATE = "September 16, 2026"
 SIG_LINE = "___________________________________"
 SIGNOFF_NAME = "BRENDAN NGWA NFORBI"
 SIGNOFF_ROLE = "Plaintiff, In Propria Persona"
@@ -67,7 +67,7 @@ SPECS = {
         "draft": ROOT / "internal/docs/matter-36/EDCA_FEDERAL_COMPLAINT_REVIEW_DRAFT.md",
         "filename": (
             "Complaint - Ngwa Nforbi v. AT&T Mobility Services LLC "
-            "(E.D. Cal.) (Sep 15 2026).pdf"
+            "(E.D. Cal.) (Sep 16 2026).pdf"
         ),
         "footer": (
             "COMPLAINT FOR DAMAGES -- NGWA NFORBI v. AT&T MOBILITY "
@@ -105,7 +105,7 @@ SPECS = {
         "draft": ROOT / "internal/docs/matter-37/EDCA_FEDERAL_COMPLAINT_REVIEW_DRAFT.md",
         "filename": (
             "Complaint - Ngwa Nforbi v. Home Depot U.S.A., Inc. "
-            "(E.D. Cal.) (Sep 15 2026).pdf"
+            "(E.D. Cal.) (Sep 16 2026).pdf"
         ),
         "footer": (
             "COMPLAINT FOR DAMAGES -- NGWA NFORBI v. HOME DEPOT U.S.A., "
@@ -138,7 +138,7 @@ SPECS = {
         "draft": ROOT / "internal/docs/matter-38/FILING_COMPLAINT_REVIEW_DRAFT.md",
         "filename": (
             "Complaint - Ngwa Nforbi v. Swift Transportation Co. of "
-            "Arizona LLC (E.D. Cal.) (Sep 15 2026).pdf"
+            "Arizona LLC (E.D. Cal.) (Sep 16 2026).pdf"
         ),
         "footer": (
             "COMPLAINT FOR DAMAGES -- NGWA NFORBI v. SWIFT TRANSPORTATION "
@@ -177,7 +177,7 @@ SPECS = {
         "draft": ROOT / "internal/docs/matter-39/EDCA_FEDERAL_COMPLAINT_REVIEW_DRAFT.md",
         "filename": (
             "Complaint - Ngwa Nforbi v. Best Buy Co., Inc. "
-            "(E.D. Cal.) (Sep 15 2026).pdf"
+            "(E.D. Cal.) (Sep 16 2026).pdf"
         ),
         "footer": (
             "COMPLAINT FOR DAMAGES -- NGWA NFORBI v. BEST BUY CO., INC. "

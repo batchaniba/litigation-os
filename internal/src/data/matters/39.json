@@ -5,7 +5,7 @@
   "court": "San Joaquin Sup. Ct. (executed packet; not yet filed)",
   "claims": "ICRAA § 1786.40 (I&B); CCRAA § 1785.20.5 (alternative); UCL § 17200; Penal Code § 290.46(j) (I&B — report contents and use)",
   "status": "EXECUTED (unfiled) — four-count San Joaquin complaint against Best Buy Co., Inc. Plaintiff accepted the Tracy warehouse offer at 6653 Hopkins Road, completed the drug screen (I&B clean), then was ghosted. First Advantage is not a named defendant. § 290 is the fourth count.",
-  "status_label": "EDCA intake drafted Sep. 15 — unfiled",
+  "status_label": "EDCA intake drafted Sep. 16 — unfiled",
   "lifecycle": "pre_filing",
   "proceeding": "state_civil",
   "phase": "pre_filing",
@@ -44,23 +44,23 @@
   ],
   "documents": [
     {
-      "path": "/documents/matter-39/edca/E.D. Cal. Intake Packet (print copy) - Ngwa Nforbi v. Best Buy (Sep 15 2026).pdf",
+      "path": "/documents/matter-39/edca/E.D. Cal. Intake Packet (print copy) - Ngwa Nforbi v. Best Buy (Sep 16 2026).pdf",
       "filed": false
     },
     {
-      "path": "/documents/matter-39/edca/JS 44 Civil Cover Sheet - Ngwa Nforbi v. Best Buy Co., Inc. (E.D. Cal.) (Sep 15 2026).pdf",
+      "path": "/documents/matter-39/edca/JS 44 Civil Cover Sheet - Ngwa Nforbi v. Best Buy Co., Inc. (E.D. Cal.) (Sep 16 2026).pdf",
       "filed": false
     },
     {
-      "path": "/documents/matter-39/edca/AO 239 IFP Application - Ngwa Nforbi v. Best Buy Co., Inc. (E.D. Cal.) (Sep 15 2026).pdf",
+      "path": "/documents/matter-39/edca/AO 239 IFP Application - Ngwa Nforbi v. Best Buy Co., Inc. (E.D. Cal.) (Sep 16 2026).pdf",
       "filed": false
     },
     {
-      "path": "/documents/matter-39/edca/AO 440 Summons - Best Buy Co., Inc. (E.D. Cal.) (Sep 15 2026).pdf",
+      "path": "/documents/matter-39/edca/AO 440 Summons - Best Buy Co., Inc. (E.D. Cal.) (Sep 16 2026).pdf",
       "filed": false
     },
     {
-      "path": "/documents/matter-39/edca/Complaint - Ngwa Nforbi v. Best Buy Co., Inc. (E.D. Cal.) (Sep 15 2026).pdf",
+      "path": "/documents/matter-39/edca/Complaint - Ngwa Nforbi v. Best Buy Co., Inc. (E.D. Cal.) (Sep 16 2026).pdf",
       "filed": false
     },
     {
