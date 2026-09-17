@@ -3,6 +3,24 @@
     "dkt": null,
     "date": null,
     "filer": "plaintiff",
+    "type": "summons",
+    "title": "AO 440 Summons - Home Depot U.S.A., Inc. (E.D. Cal.) (Sep 16 2026)",
+    "path": "/documents/matter-37/edca/AO 440 Summons - Home Depot U.S.A., Inc. (E.D. Cal.) (Sep 16 2026).pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "other",
+    "title": "Complaint - Ngwa Nforbi v. Home Depot U.S.A., Inc. (E.D. Cal.) (Sep 16 2026)",
+    "path": "/documents/matter-37/edca/Complaint - Ngwa Nforbi v. Home Depot U.S.A., Inc. (E.D. Cal.) (Sep 16 2026).pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
     "type": "other",
     "title": "Verified Complaint - Ngwa Nforbi v Home Depot USA Inc (Sep 8 2026)",
     "path": "/documents/matter-37/Verified Complaint - Ngwa Nforbi v Home Depot USA Inc (Sep 8 2026).pdf",

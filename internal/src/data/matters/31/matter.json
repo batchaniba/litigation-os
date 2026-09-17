@@ -1,10 +1,12 @@
 {
   "number": 31,
+  "last_updated": "2026-09-16",
   "caption": "Newanforbi v. First Advantage LLC",
   "case_no": "TBD",
   "court": "San Joaquin Sup. Ct. (anticipated)",
   "claims": "FCRA § 1681b(b), FCRA § 1681e(b), ICRAA, Negligence Per Se, UCL § 17200",
   "status": "IDENTIFIED VIA PORTFOLIO GAP ANALYSIS (Jul. 30, 2026) — NOT YET FILED; no demand letter sent; no complaint drafted. Opened as a candidate matter after a document-level review found First Advantage LLC named as the background-check vendor in both Matter 25 (FedEx) and Matter 26 (UPS), yet never itself named as a defendant, unlike the comparable vendors in the same cluster (Accurate Background — Matter 29; HireRight — Matter 23).",
+  "status_label": "Pre-filing — no demand or complaint yet",
   "lifecycle": "pre_filing",
   "proceeding": "state_civil",
   "phase": "pre_filing",

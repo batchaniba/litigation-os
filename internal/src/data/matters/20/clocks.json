@@ -1,6 +1,17 @@
 [
   {
-    "id": "20-hearing-1",
+    "id": "20-deadline-1",
+    "date": "2026-10-20",
+    "date_label": "Oct. 20, 2026",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": null,
+    "title": "WATCH — CHP written responses to RFP Set One (Count 1) in Newanforbi v. CHP et al. (26CV191136). Clock is October 20 if the September 16 email to Ing is valid…",
+    "actor": "opposing",
+    "source": "/documents/matter-20/Request for Production of Documents Set One - CHP with Mail POS (Sep 16 2026).pdf"
+  },
+  {
+    "id": "20-hearing-2",
     "date": "2026-10-28",
     "date_label": "Oct. 28, 2026",
     "kind": "hearing",
@@ -11,7 +22,7 @@
     "source": "/documents/matter-32/from-20/Order Sustaining Demurrer In Part - Whitman (Aug 29 2026) (Notice of Entry Aug 31 2026).pdf"
   },
   {
-    "id": "20-deadline-2",
+    "id": "20-deadline-3",
     "date": "2026-10-13",
     "date_label": "Oct. 13, 2026",
     "kind": "deadline",
@@ -22,7 +33,7 @@
     "source": "/documents/matter-32/from-20/Notice of Case Management Conference.pdf"
   },
   {
-    "id": "20-deadline-3",
+    "id": "20-deadline-4",
     "date": "2026-09-20",
     "date_label": "Sep. 20, 2026",
     "kind": "deadline",
@@ -33,7 +44,7 @@
     "source": "/documents/matter-32/from-20/Order Sustaining Demurrer In Part - Whitman (Aug 29 2026) (Notice of Entry Aug 31 2026).pdf"
   },
   {
-    "id": "20-deadline-4",
+    "id": "20-deadline-5",
     "date": "2026-10-16",
     "date_label": "Oct. 16, 2026",
     "kind": "deadline",
@@ -44,7 +55,7 @@
     "source": "/documents/matter-32/from-20/Serrato Notice of Joinder and Demurrer.pdf"
   },
   {
-    "id": "20-deadline-5",
+    "id": "20-deadline-6",
     "date": "2026-10-23",
     "date_label": "Oct. 23, 2026",
     "kind": "deadline",

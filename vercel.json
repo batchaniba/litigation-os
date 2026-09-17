@@ -385,6 +385,36 @@
       "permanent": false
     },
     {
+      "source": "/meza-41520-decl",
+      "destination": "/meza-41520-decl.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/meza-41520-decl/",
+      "destination": "/meza-41520-decl.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/meza-41520-mail",
+      "destination": "/meza-41520-mail.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/meza-41520-mail/",
+      "destination": "/meza-41520-mail.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/meza-41520-filing",
+      "destination": "/meza-41520-filing.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/meza-41520-filing/",
+      "destination": "/meza-41520-filing.pdf",
+      "permanent": false
+    },
+    {
       "source": "/name-33",
       "destination": "/name-33.pdf",
       "permanent": false
@@ -402,6 +432,106 @@
     {
       "source": "/candelaria-fac/",
       "destination": "/candelaria-fac.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/chp-rfp-mail",
+      "destination": "/chp-rfp-mail.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/chp-rfp-mail/",
+      "destination": "/chp-rfp-mail.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/edca-att",
+      "destination": "/edca-att.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/edca-att/",
+      "destination": "/edca-att.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/edca-home-depot",
+      "destination": "/edca-home-depot.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/edca-home-depot/",
+      "destination": "/edca-home-depot.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/edca-swift",
+      "destination": "/edca-swift.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/edca-swift/",
+      "destination": "/edca-swift.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/edca-best-buy",
+      "destination": "/edca-best-buy.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/edca-best-buy/",
+      "destination": "/edca-best-buy.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/edca-att-consent",
+      "destination": "/edca-att-consent.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/edca-att-consent/",
+      "destination": "/edca-att-consent.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/edca-home-depot-consent",
+      "destination": "/edca-home-depot-consent.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/edca-home-depot-consent/",
+      "destination": "/edca-home-depot-consent.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/edca-swift-consent",
+      "destination": "/edca-swift-consent.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/edca-swift-consent/",
+      "destination": "/edca-swift-consent.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/edca-best-buy-consent",
+      "destination": "/edca-best-buy-consent.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/edca-best-buy-consent/",
+      "destination": "/edca-best-buy-consent.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/edca-mj-consents",
+      "destination": "/edca-mj-consents.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/edca-mj-consents/",
+      "destination": "/edca-mj-consents.pdf",
       "permanent": false
     }
   ],
@@ -749,6 +879,33 @@
       ]
     },
     {
+      "source": "/meza-41520-decl.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Declaration of Mailing - CCP 415.20(b) Follow-Up to Dkt 16 - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 16, 2026).pdf\"; filename*=UTF-8''Declaration%20of%20Mailing%20-%20CCP%20415.20%28b%29%20Follow-Up%20to%20Dkt%2016%20-%20Meza-Gonzalez%20%28N.D.%20Cal.%204-26-cv-08271-ASK%29%20%28September%2016%2C%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/meza-41520-mail.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"CCP 415.20(b) Mailing Bundle - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 17, 2026).pdf\"; filename*=UTF-8''CCP%20415.20%28b%29%20Mailing%20Bundle%20-%20Meza-Gonzalez%20%28N.D.%20Cal.%204-26-cv-08271-ASK%29%20%28September%2017%2C%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/meza-41520-filing.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"CCP 415.20(b) Mailing Filing Packet - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 17, 2026).pdf\"; filename*=UTF-8''CCP%20415.20%28b%29%20Mailing%20Filing%20Packet%20-%20Meza-Gonzalez%20%28N.D.%20Cal.%204-26-cv-08271-ASK%29%20%28September%2017%2C%202026%29.pdf"
+        }
+      ]
+    },
+    {
       "source": "/name-33.pdf",
       "headers": [
         {
@@ -763,6 +920,96 @@
         {
           "key": "Content-Disposition",
           "value": "attachment; filename=\"Dkt 06 - First Amended Complaint (CONFORMED, Filed Aug 17 2026).pdf\"; filename*=UTF-8''Dkt%2006%20-%20First%20Amended%20Complaint%20%28CONFORMED%2C%20Filed%20Aug%2017%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/chp-rfp-mail.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Request for Production of Documents Set One - CHP with Mail POS (Sep 16 2026).pdf\"; filename*=UTF-8''Request%20for%20Production%20of%20Documents%20Set%20One%20-%20CHP%20with%20Mail%20POS%20%28Sep%2016%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/edca-att.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"E.D. Cal. Complete Packet - Ngwa Nforbi v. AT&T (Sep 16 2026).pdf\"; filename*=UTF-8''E.D.%20Cal.%20Complete%20Packet%20-%20Ngwa%20Nforbi%20v.%20AT%26T%20%28Sep%2016%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/edca-home-depot.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"E.D. Cal. Complete Packet - Ngwa Nforbi v. Home Depot (Sep 16 2026).pdf\"; filename*=UTF-8''E.D.%20Cal.%20Complete%20Packet%20-%20Ngwa%20Nforbi%20v.%20Home%20Depot%20%28Sep%2016%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/edca-swift.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"E.D. Cal. Complete Packet - Ngwa Nforbi v. Swift (Sep 16 2026).pdf\"; filename*=UTF-8''E.D.%20Cal.%20Complete%20Packet%20-%20Ngwa%20Nforbi%20v.%20Swift%20%28Sep%2016%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/edca-best-buy.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"E.D. Cal. Complete Packet - Ngwa Nforbi v. Best Buy (Sep 16 2026).pdf\"; filename*=UTF-8''E.D.%20Cal.%20Complete%20Packet%20-%20Ngwa%20Nforbi%20v.%20Best%20Buy%20%28Sep%2016%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/edca-att-consent.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Consent to Magistrate Judge Jurisdiction - Ngwa Nforbi v. AT&T Mobility Services LLC (E.D. Cal.) (Sep 16 2026).pdf\"; filename*=UTF-8''Consent%20to%20Magistrate%20Judge%20Jurisdiction%20-%20Ngwa%20Nforbi%20v.%20AT%26T%20Mobility%20Services%20LLC%20%28E.D.%20Cal.%29%20%28Sep%2016%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/edca-home-depot-consent.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Consent to Magistrate Judge Jurisdiction - Ngwa Nforbi v. Home Depot U.S.A., Inc. (E.D. Cal.) (Sep 16 2026).pdf\"; filename*=UTF-8''Consent%20to%20Magistrate%20Judge%20Jurisdiction%20-%20Ngwa%20Nforbi%20v.%20Home%20Depot%20U.S.A.%2C%20Inc.%20%28E.D.%20Cal.%29%20%28Sep%2016%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/edca-swift-consent.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Consent to Magistrate Judge Jurisdiction - Ngwa Nforbi v. Swift Transportation Co. of Arizona LLC (E.D. Cal.) (Sep 16 2026).pdf\"; filename*=UTF-8''Consent%20to%20Magistrate%20Judge%20Jurisdiction%20-%20Ngwa%20Nforbi%20v.%20Swift%20Transportation%20Co.%20of%20Arizona%20LLC%20%28E.D.%20Cal.%29%20%28Sep%2016%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/edca-best-buy-consent.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Consent to Magistrate Judge Jurisdiction - Ngwa Nforbi v. Best Buy Co., Inc. (E.D. Cal.) (Sep 16 2026).pdf\"; filename*=UTF-8''Consent%20to%20Magistrate%20Judge%20Jurisdiction%20-%20Ngwa%20Nforbi%20v.%20Best%20Buy%20Co.%2C%20Inc.%20%28E.D.%20Cal.%29%20%28Sep%2016%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/edca-mj-consents.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Consent to Magistrate Judge Jurisdiction - Matters 36-39 (E.D. Cal.) (Sep 16 2026).pdf\"; filename*=UTF-8''Consent%20to%20Magistrate%20Judge%20Jurisdiction%20-%20Matters%2036-39%20%28E.D.%20Cal.%29%20%28Sep%2016%202026%29.pdf"
         }
       ]
     }

@@ -138,6 +138,15 @@
     "dkt": null,
     "date": null,
     "filer": "plaintiff",
+    "type": "other",
+    "title": "CIV-100 Request for Entry of Default - Randstad US LLC (Default Entered, Filed Sep 16 2026)",
+    "path": "/documents/matter-27/CIV-100 Request for Entry of Default - Randstad US LLC (Default Entered, Filed Sep 16 2026).pdf",
+    "filed": true
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
     "type": "stipulation",
     "title": "Gmail - $25k Global Demand Sent Sep 12 and Williams Stipulation Ask (Sep 14 2026)",
     "path": "/documents/matter-27/Gmail - $25k Global Demand Sent Sep 12 and Williams Stipulation Ask (Sep 14 2026).pdf",

@@ -3,6 +3,24 @@
     "dkt": null,
     "date": null,
     "filer": "plaintiff",
+    "type": "summons",
+    "title": "AO 440 Summons - AT&T Mobility Services LLC (E.D. Cal.) (Sep 16 2026)",
+    "path": "/documents/matter-36/edca/AO 440 Summons - AT&T Mobility Services LLC (E.D. Cal.) (Sep 16 2026).pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "other",
+    "title": "Complaint - Ngwa Nforbi v. AT&T Mobility Services LLC (E.D. Cal.) (Sep 16 2026)",
+    "path": "/documents/matter-36/edca/Complaint - Ngwa Nforbi v. AT&T Mobility Services LLC (E.D. Cal.) (Sep 16 2026).pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
     "type": "other",
     "title": "Verified Complaint - Ngwa Nforbi v AT&T Mobility Services LLC (Sep 8 2026)",
     "path": "/documents/matter-36/Verified Complaint - Ngwa Nforbi v AT&T Mobility Services LLC (Sep 8 2026).pdf",

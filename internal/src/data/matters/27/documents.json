@@ -245,6 +245,10 @@
     "filed": false
   },
   {
+    "path": "/documents/matter-27/CIV-100 Request for Entry of Default - Randstad US LLC (Default Entered, Filed Sep 16 2026).pdf",
+    "filed": true
+  },
+  {
     "path": "/documents/matter-27/Gmail - $25k Global Demand Sent Sep 12 and Williams Stipulation Ask (Sep 14 2026).pdf",
     "filed": false
   },
@@ -298,6 +302,26 @@
   },
   {
     "path": "/documents/matter-27/Stipulation and Proposed Order Extending Time for Randstad to Respond (Executed Counterpart, Chapman signed, Sep 14 2026).pdf",
+    "filed": false
+  },
+  {
+    "path": "/documents/matter-27/CIV-100 Request for Court Judgment - Randstad US LLC (Default Previously Entered, Sep 16 2026).pdf",
+    "filed": false
+  },
+  {
+    "path": "/documents/matter-27/[Proposed] Judgment (JUD-100) - Randstad US LLC (Default Prove-Up, Sep 16 2026).pdf",
+    "filed": false
+  },
+  {
+    "path": "/documents/matter-27/CIV-110 Request for Dismissal of Does 1-20 (Without Prejudice, Executed Sep 16 2026).pdf",
+    "filed": false
+  },
+  {
+    "path": "/documents/matter-27/Declaration of Brendan Ngehsi Newanforbi ISO Default Judgment by Court - Randstad US LLC (Sep 16 2026).pdf",
+    "filed": false
+  },
+  {
+    "path": "/documents/matter-27/Default Judgment Prove-Up Packet - Randstad US LLC (Court Judgment, Sep 16 2026).pdf",
     "filed": false
   }
 ]

@@ -12,14 +12,14 @@
   },
   {
     "id": "27-deadline-2",
-    "date": "2026-09-16",
-    "date_label": "Sep. 16, 2026",
+    "date": "2026-10-31",
+    "date_label": "Oct. 31, 2026",
     "kind": "deadline",
     "status": "open",
     "source_dkt": null,
-    "title": "FILE IF SILENT — e-file CIV-100 Request for Entry of Default as to Randstad US, LLC (clerk default only, item 1c). First fileable the day after Randstad's…",
+    "title": "CRC 3.110(h) — obtain a default judgment as to Randstad US, LLC within 45 days after entry of default (entered Sep. 16, 2026), unless the court grants more…",
     "actor": "you",
-    "source": "/documents/matter-27/CIV-100 Request for Entry of Default - Randstad US LLC (Clerk Default Only, Sep 16 2026).pdf"
+    "source": "/documents/matter-27/CIV-100 Request for Entry of Default - Randstad US LLC (Default Entered, Filed Sep 16 2026).pdf"
   },
   {
     "id": "27-deadline-3",

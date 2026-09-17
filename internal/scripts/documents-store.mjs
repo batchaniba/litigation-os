@@ -2,19 +2,37 @@
 // ==========================================================
 // Move PDF bytes to the `documents` branch so main stays small.
 //
-//   npm run documents:pull   # after clone, fill internal/public/documents/
-//   npm run documents:push   # after adding a filing (pre-commit also runs this)
+//   npm run documents:pull                # whole tree
+//   npm run documents:pull -- --matter 24 # one matter folder
+//   npm run documents:push                # after adding a filing (pre-commit also runs this)
 //
 // See internal/docs/DOCUMENT_STORE.md.
 // ==========================================================
-import { pullDocuments, pushDocuments, seedDocumentsBranch } from "./lib/documents-branch.mjs";
+import {
+  DOCUMENTS_PULL_USAGE,
+  parseDocumentsPullArgs,
+  pullDocuments,
+  pushDocuments,
+  seedDocumentsBranch,
+} from "./lib/documents-branch.mjs";
 
 const command = process.argv[2] ?? "";
 
 try {
   if (command === "pull") {
-    pullDocuments();
-    console.log("OK — document tree restored from origin/documents.");
+    const opts = parseDocumentsPullArgs(process.argv.slice(3));
+    if (opts.help) {
+      process.stdout.write(DOCUMENTS_PULL_USAGE);
+      process.exit(0);
+    }
+    const result = pullDocuments(opts);
+    if (result.list) {
+      process.stdout.write(`${result.list.join("\n")}\n`);
+    } else if (result.paths.length === 1 && result.paths[0].endsWith("/documents")) {
+      console.log("OK — document tree restored from origin/documents.");
+    } else {
+      console.log(`OK — pulled ${result.paths.join(", ")} from origin/documents.`);
+    }
   } else if (command === "push") {
     const result = pushDocuments();
     if (result.pushed) {
@@ -31,6 +49,7 @@ try {
     }
   } else {
     console.error("Usage: node internal/scripts/documents-store.mjs <pull|push|seed>");
+    console.error("       npm run documents:pull -- --help");
     process.exit(2);
   }
 } catch (error) {

@@ -66,6 +66,7 @@ const indexMatters = matters.map((m) => {
     phase: m.phase,
     next_clock,
     overdue,
+    last_updated: m.last_updated ?? null,
     files,
   };
 });

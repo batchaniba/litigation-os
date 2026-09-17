@@ -25,6 +25,7 @@
         "source_dkt": null
       },
       "overdue": false,
+      "last_updated": "2026-09-16",
       "files": [
         "claims.json",
         "clocks.json",
@@ -62,6 +63,7 @@
         "source_dkt": null
       },
       "overdue": false,
+      "last_updated": "2026-09-16",
       "files": [
         "claims.json",
         "clocks.json",
@@ -92,6 +94,7 @@
       "phase": "terminal",
       "next_clock": null,
       "overdue": false,
+      "last_updated": "2026-09-16",
       "files": [
         "claims.json",
         "clocks.json",
@@ -122,6 +125,7 @@
       "phase": "terminal",
       "next_clock": null,
       "overdue": false,
+      "last_updated": "2026-09-16",
       "files": [
         "claims.json",
         "clocks.json",
@@ -152,6 +156,7 @@
       "phase": "terminal",
       "next_clock": null,
       "overdue": false,
+      "last_updated": "2026-09-16",
       "files": [
         "claims.json",
         "clocks.json",
@@ -182,6 +187,7 @@
       "phase": "terminal",
       "next_clock": null,
       "overdue": false,
+      "last_updated": "2026-09-16",
       "files": [
         "claims.json",
         "clocks.json",
@@ -212,6 +218,7 @@
       "phase": "terminal",
       "next_clock": null,
       "overdue": false,
+      "last_updated": "2026-09-16",
       "files": [
         "claims.json",
         "clocks.json",
@@ -242,6 +249,7 @@
       "phase": "terminal",
       "next_clock": null,
       "overdue": false,
+      "last_updated": "2026-09-16",
       "files": [
         "claims.json",
         "clocks.json",
@@ -272,6 +280,7 @@
       "phase": "terminal",
       "next_clock": null,
       "overdue": false,
+      "last_updated": "2026-09-16",
       "files": [
         "claims.json",
         "clocks.json",
@@ -302,6 +311,7 @@
       "phase": "terminal",
       "next_clock": null,
       "overdue": false,
+      "last_updated": "2026-09-16",
       "files": [
         "claims.json",
         "clocks.json",
@@ -332,6 +342,7 @@
       "phase": "terminal",
       "next_clock": null,
       "overdue": false,
+      "last_updated": "2026-09-16",
       "files": [
         "claims.json",
         "clocks.json",
@@ -369,6 +380,7 @@
         "source_dkt": null
       },
       "overdue": false,
+      "last_updated": "2026-09-16",
       "files": [
         "claims.json",
         "clocks.json",
@@ -399,6 +411,7 @@
       "phase": "terminal",
       "next_clock": null,
       "overdue": false,
+      "last_updated": "2026-09-16",
       "files": [
         "claims.json",
         "clocks.json",
@@ -429,6 +442,7 @@
       "phase": "terminal",
       "next_clock": null,
       "overdue": false,
+      "last_updated": "2026-09-16",
       "files": [
         "claims.json",
         "clocks.json",
@@ -459,6 +473,7 @@
       "phase": "terminal",
       "next_clock": null,
       "overdue": false,
+      "last_updated": "2026-09-16",
       "files": [
         "claims.json",
         "clocks.json",
@@ -489,6 +504,7 @@
       "phase": "terminal",
       "next_clock": null,
       "overdue": false,
+      "last_updated": "2026-09-16",
       "files": [
         "claims.json",
         "clocks.json",
@@ -519,6 +535,7 @@
       "phase": "terminal",
       "next_clock": null,
       "overdue": false,
+      "last_updated": "2026-09-16",
       "files": [
         "claims.json",
         "clocks.json",
@@ -549,6 +566,7 @@
       "phase": "terminal",
       "next_clock": null,
       "overdue": false,
+      "last_updated": "2026-09-16",
       "files": [
         "claims.json",
         "clocks.json",
@@ -586,6 +604,7 @@
         "source_dkt": null
       },
       "overdue": false,
+      "last_updated": "2026-09-16",
       "files": [
         "claims.json",
         "clocks.json",
@@ -615,7 +634,7 @@
       "proceeding": "mandate",
       "phase": "writ_ruling",
       "next_clock": {
-        "id": "20-deadline-3",
+        "id": "20-deadline-4",
         "date": "2026-09-20",
         "kind": "deadline",
         "status": "open",
@@ -623,6 +642,7 @@
         "source_dkt": null
       },
       "overdue": false,
+      "last_updated": "2026-09-16",
       "files": [
         "claims.json",
         "clocks.json",
@@ -653,6 +673,7 @@
       "phase": "terminal",
       "next_clock": null,
       "overdue": false,
+      "last_updated": "2026-09-16",
       "files": [
         "claims.json",
         "clocks.json",
@@ -683,6 +704,7 @@
       "phase": "terminal",
       "next_clock": null,
       "overdue": false,
+      "last_updated": "2026-09-16",
       "files": [
         "claims.json",
         "clocks.json",
@@ -713,6 +735,7 @@
       "phase": "terminal",
       "next_clock": null,
       "overdue": false,
+      "last_updated": "2026-09-16",
       "files": [
         "claims.json",
         "clocks.json",
@@ -757,6 +780,7 @@
         "source_dkt": 30
       },
       "overdue": false,
+      "last_updated": "2026-09-16",
       "files": [
         "claims.json",
         "clocks.json",
@@ -794,6 +818,7 @@
         "source_dkt": 8
       },
       "overdue": false,
+      "last_updated": "2026-09-16",
       "files": [
         "claims.json",
         "clocks.json",
@@ -831,6 +856,7 @@
         "source_dkt": 7
       },
       "overdue": false,
+      "last_updated": "2026-09-16",
       "files": [
         "claims.json",
         "clocks.json",
@@ -858,16 +884,17 @@
       "same_incident": null,
       "lifecycle": "active",
       "proceeding": "state_civil",
-      "phase": "responsive_deadline",
+      "phase": "default",
       "next_clock": {
-        "id": "27-deadline-2",
-        "date": "2026-09-16",
+        "id": "27-deadline-1",
+        "date": "2026-09-18",
         "kind": "deadline",
         "status": "open",
-        "title": "FILE IF SILENT — e-file CIV-100 Request for Entry of Default as to Randstad US, LLC (clerk default only, item 1c). First fileable the day after Randstad's…",
+        "title": "EXPIRES — $25,000 final early global settlement demand in Newanforbi v. Randstad US, LLC et al. (26CV199902), sent Sept. 12, 2026, 8:00 a.m. Expires…",
         "source_dkt": null
       },
       "overdue": false,
+      "last_updated": "2026-09-16",
       "files": [
         "claims.json",
         "clocks.json",
@@ -905,6 +932,7 @@
         "source_dkt": null
       },
       "overdue": false,
+      "last_updated": "2026-09-16",
       "files": [
         "claims.json",
         "clocks.json",
@@ -942,6 +970,7 @@
         "source_dkt": 7
       },
       "overdue": false,
+      "last_updated": "2026-09-16",
       "files": [
         "claims.json",
         "clocks.json",
@@ -979,6 +1008,7 @@
         "source_dkt": null
       },
       "overdue": false,
+      "last_updated": "2026-09-16",
       "files": [
         "claims.json",
         "clocks.json",
@@ -1009,6 +1039,7 @@
       "phase": "pre_filing",
       "next_clock": null,
       "overdue": false,
+      "last_updated": "2026-09-16",
       "files": [
         "claims.json",
         "clocks.json",
@@ -1028,8 +1059,8 @@
       "path": "internal/src/data/matters/32/",
       "layout": "split",
       "caption": "Nforbi v. Meza-Gonzalez, et al",
-      "case_no": "3:26-cv-08271-PHK",
-      "court": "USDC N.D. Cal. (related to Serrato 3:26-cv-05953-CRB per Aug. 24, 2026 order; also related Candelaria 3:26-cv-08272-LJC)",
+      "case_no": "4:26-cv-08271-ASK",
+      "court": "USDC N.D. Cal. (Oakland; 4:26-cv-08271-ASK; opened as 3:26-cv-08271-PHK; related Serrato 3:26-cv-05953-CRB and Candelaria 3:26-cv-08272-LJC)",
       "judge": "Hon. Ajay S. Krishnan, U.S. Magistrate Judge (N.D. Cal.) — reassigned Aug. 24, 2026 from Mag. Kang (related to Serrato 3:26-cv-05953-CRB)",
       "cluster": 1,
       "related": [],
@@ -1038,14 +1069,15 @@
       "proceeding": "federal_civil",
       "phase": "responsive_deadline",
       "next_clock": {
-        "id": "32-deadline-4",
-        "date": "2026-11-01",
+        "id": "32-deadline-1",
+        "date": "2026-09-17",
         "kind": "deadline",
         "status": "open",
-        "title": "CCP §335.1 two-year statute of limitations (computed) backstop, running from the Nov. 1, 2024 incident. (1) Matter 1's Fourth Amendment §1983 claim (borrowed…",
-        "source_dkt": null
+        "title": "FILE — signed 415.20(b) declaration + Exhibit A USPS receipt + POS in Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK) after the September 16 postmark. San…",
+        "source_dkt": 16
       },
       "overdue": false,
+      "last_updated": "2026-09-16",
       "files": [
         "claims.json",
         "clocks.json",
@@ -1083,6 +1115,7 @@
         "source_dkt": 12
       },
       "overdue": false,
+      "last_updated": "2026-09-16",
       "files": [
         "claims.json",
         "clocks.json",
@@ -1113,6 +1146,7 @@
       "phase": "pre_filing",
       "next_clock": null,
       "overdue": false,
+      "last_updated": "2026-09-16",
       "files": [
         "claims.json",
         "clocks.json",
@@ -1150,6 +1184,7 @@
         "source_dkt": null
       },
       "overdue": false,
+      "last_updated": "2026-09-16",
       "files": [
         "claims.json",
         "clocks.json",
@@ -1170,16 +1205,17 @@
       "layout": "split",
       "caption": "Brendan Ngwa Nforbi v. AT&T Mobility Services LLC",
       "case_no": "TBD",
-      "court": "San Joaquin Sup. Ct. (executed packet; not yet filed)",
+      "court": "USDC E.D. Cal. (Sep. 16 walk-up; unfiled) / San Joaquin Sup. Ct. (Sep. 8 packet LOCKED, unfiled)",
       "judge": "TBD",
       "cluster": 3,
       "related": [],
       "same_incident": null,
       "lifecycle": "pre_filing",
-      "proceeding": "state_civil",
+      "proceeding": "federal_civil",
       "phase": "pre_filing",
       "next_clock": null,
       "overdue": false,
+      "last_updated": "2026-09-16",
       "files": [
         "claims.json",
         "clocks.json",
@@ -1200,16 +1236,17 @@
       "layout": "split",
       "caption": "Brendan Ngwa Nforbi v. Home Depot U.S.A., Inc.",
       "case_no": "TBD",
-      "court": "San Joaquin Sup. Ct. (executed packet; not yet filed)",
+      "court": "USDC E.D. Cal. (Sep. 16 walk-up; unfiled) / San Joaquin Sup. Ct. (Sep. 8 packet LOCKED, unfiled)",
       "judge": "TBD",
       "cluster": 3,
       "related": [],
       "same_incident": null,
       "lifecycle": "pre_filing",
-      "proceeding": "state_civil",
+      "proceeding": "federal_civil",
       "phase": "pre_filing",
       "next_clock": null,
       "overdue": false,
+      "last_updated": "2026-09-16",
       "files": [
         "claims.json",
         "clocks.json",
@@ -1230,13 +1267,13 @@
       "layout": "split",
       "caption": "Brendan Ngwa Nforbi v. Swift Transportation Co. of Arizona LLC",
       "case_no": "TBD",
-      "court": "San Joaquin Sup. Ct. (executed packet; not yet filed)",
+      "court": "USDC E.D. Cal. (Sep. 16 walk-up; unfiled) / San Joaquin Sup. Ct. (Sep. 8 packet LOCKED, unfiled)",
       "judge": "TBD",
       "cluster": 3,
       "related": [],
       "same_incident": null,
       "lifecycle": "pre_filing",
-      "proceeding": "state_civil",
+      "proceeding": "federal_civil",
       "phase": "pre_filing",
       "next_clock": {
         "id": "38-deadline-1",
@@ -1247,6 +1284,7 @@
         "source_dkt": null
       },
       "overdue": false,
+      "last_updated": "2026-09-16",
       "files": [
         "claims.json",
         "clocks.json",
@@ -1267,13 +1305,13 @@
       "layout": "split",
       "caption": "Brendan Ngwa Nforbi v. Best Buy Co., Inc.",
       "case_no": "TBD",
-      "court": "San Joaquin Sup. Ct. (executed packet; not yet filed)",
+      "court": "USDC E.D. Cal. (Sep. 16 walk-up; unfiled) / San Joaquin Sup. Ct. (Sep. 8 packet LOCKED, unfiled)",
       "judge": "TBD",
       "cluster": 3,
       "related": [],
       "same_incident": null,
       "lifecycle": "pre_filing",
-      "proceeding": "state_civil",
+      "proceeding": "federal_civil",
       "phase": "pre_filing",
       "next_clock": {
         "id": "39-deadline-1",
@@ -1284,6 +1322,7 @@
         "source_dkt": null
       },
       "overdue": false,
+      "last_updated": "2026-09-16",
       "files": [
         "claims.json",
         "clocks.json",
@@ -1321,6 +1360,7 @@
         "source_dkt": null
       },
       "overdue": false,
+      "last_updated": "2026-09-16",
       "files": [
         "claims.json",
         "clocks.json",

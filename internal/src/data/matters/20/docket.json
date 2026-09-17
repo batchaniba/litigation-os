@@ -2,6 +2,15 @@
   {
     "dkt": null,
     "date": null,
+    "filer": "plaintiff",
+    "type": "proof_of_service",
+    "title": "Proof of Service by First-Class Mail - RFP Set One CHP (Sep 16 2026)",
+    "path": "/documents/matter-20/Proof of Service by First-Class Mail - RFP Set One CHP (Sep 16 2026).pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
     "filer": "court",
     "type": "order",
     "title": "FW-003 Order on Court Fee Waiver - GRANTED (One Legal download, Jun 3 2026)",

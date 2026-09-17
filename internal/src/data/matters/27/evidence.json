@@ -271,5 +271,19 @@
     "path": null,
     "what_it_proves": "RECEIVED — Alexandra Moskow (Kabat Chapman & Ozmer LLP; amoskow@kcozlaw.com; to Plaintiff; cc Chapman, Williams, Windy Thor), Sept. 14, 2026, 4:37 p.m.: attaches the executed Plaintiff counterpart. Diff vs signed paper: terms, Weathers caption, and /s/ Brendan Ngehsi Newanforbi match; Chapman wet signature plus handwritten September 14, 2026; Moskow POS page 6 (email checked; court EFS unchecked); proposed order still unsigned by Weathers; no clerk stamp. CRC 3.110(d) and counterpart ¶6: September 18 is not operative until filed AND ordered. Do not retire the unfiled counterpart. Do not flip Randstad off Sept. 15. This paper does not move RK and is not an acceptance of the $25k demand.",
     "transcript_path": null
+  },
+  {
+    "id": "e40",
+    "label": "FILED / ENTERED — CIV-100 Request for Entry of Default as to Randstad US, LLC (item 1c only). Electronically Received 09/16/2026 06:28 AM. Alameda FILE stamp 09/16/2026, Deputy S. Pesko. FOR COURT USE ONLY (1) checked: Default entered as requested on 09/16/2026. No clerk's judgment, no court judgment, no item 2 money. Does not default RK.",
+    "path": null,
+    "what_it_proves": "FILED / ENTERED — CIV-100 Request for Entry of Default as to Randstad US, LLC (item 1c only). Electronically Received 09/16/2026 06:28 AM. Alameda FILE stamp 09/16/2026, Deputy S. Pesko. FOR COURT USE ONLY (1) checked: Default entered as requested on 09/16/2026. No clerk's judgment, no court judgment, no item 2 money. Does not default RK.",
+    "transcript_path": null
+  },
+  {
+    "id": "e41",
+    "label": "READY — Default-judgment prove-up packet as to Randstad US, LLC only (Sep. 16, 2026). CIV-100 court judgment for default previously entered; JUD-100; CIV-110 Does 1–20 without prejudice; declaration ISO; Exhibits A–I. Kim ask: $10,000 ICRAA + $10,000 Penal Code additional (1× ICRAA as actuals stand-in) + $25,000 civil penalty + $543.70 interest = $45,543.70. Served §425.115 $500,000 recited as cap; $0 punitive asked. Costs waived. No 425.11; ED and lost wages omitted. Fees $0. Several judgment under CCP §579; RK remains. Generator: internal/scripts/matter27-randstad-prove-up-packet.py. Not yet filed.",
+    "path": null,
+    "what_it_proves": "READY — Default-judgment prove-up packet as to Randstad US, LLC only (Sep. 16, 2026). CIV-100 court judgment for default previously entered; JUD-100; CIV-110 Does 1–20 without prejudice; declaration ISO; Exhibits A–I. Kim ask: $10,000 ICRAA + $10,000 Penal Code additional (1× ICRAA as actuals stand-in) + $25,000 civil penalty + $543.70 interest = $45,543.70. Served §425.115 $500,000 recited as cap; $0 punitive asked. Costs waived. No 425.11; ED and lost wages omitted. Fees $0. Several judgment under CCP §579; RK remains. Generator: internal/scripts/matter27-randstad-prove-up-packet.py. Not yet filed.",
+    "transcript_path": null
   }
 ]

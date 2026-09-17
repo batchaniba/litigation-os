@@ -31,6 +31,7 @@ const TIMELINE_PATH = path.join(REPO_ROOT, "internal/src/data/timeline.json");
 
 const IDENTITY_KEYS = [
   "number",
+  "last_updated",
   "caption",
   "case_no",
   "former_case_no",

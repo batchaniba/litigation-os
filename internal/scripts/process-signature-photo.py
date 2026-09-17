@@ -1,41 +1,28 @@
 #!/usr/bin/env python3
-"""Clean the photographed signature into the canonical transparent PNG.
+"""Historical: photographed loops mark → archived canonical PNG.
 
-Source is a low-resolution JPEG of the abstract-loops mark (lots of empty
-top canvas, JPEG ringing, thin aliased strokes). This script:
-
-  1. crops to the ink
-  2. upscales 12× (LANCZOS) so the PDF stamp downsamples instead of upsamples
-  3. closes tiny JPEG gaps, then a light erode so the stroke is slightly
-     thinner than a raw threshold of the photo
-  4. Gaussian-blurs then re-thresholds a solid core so 12× stair-steps round
-     off, keeping a short alpha fringe for PDF downsampling
-  5. writes dark-charcoal-on-transparent RGBA (not pure #000)
+Superseded. The live stamp is internal/assets/signature/
+brendan-newanforbi-signature.png, produced by extract-signature-scan.py.
+Running this script must not overwrite that file; it only rebuilds the
+archived photograph at *-v2-photo-loops.png.
 
 Does not restamp any already-filed PDF.
-
-    python3 internal/scripts/process-signature-photo.py
 """
 from __future__ import annotations
 
-import shutil
 from pathlib import Path
 
 import numpy as np
 from PIL import Image, ImageFilter
 
 REPO = Path(__file__).resolve().parents[2]
-SRC_JPG = REPO / "internal/assets/signature/brendan-newanforbi-signature-source.jpg"
-OUT_PNG = REPO / "internal/assets/signature/brendan-newanforbi-signature.png"
-ARCHIVE_PNG = (
-    REPO / "internal/assets/signature/brendan-newanforbi-signature-v1-abstract-loops.png"
+SRC_JPG = (
+    REPO / "internal/assets/signature/brendan-newanforbi-signature-source-v2-photo.jpg"
 )
-
-# Upload that produced this revision (copied into SRC_JPG on first run).
-UPLOAD = Path(
-    "/home/ubuntu/.cursor/projects/workspace/assets/"
-    "01a04771-bab9-7745-9d75-515118915e3c.jpg"
+OUT_PNG = (
+    REPO / "internal/assets/signature/brendan-newanforbi-signature-v2-photo-loops.png"
 )
+CANONICAL_PNG = REPO / "internal/assets/signature/brendan-newanforbi-signature.png"
 
 INK_MAX = 210  # grayscale; below this is treated as ink
 CROP_PAD = 6
@@ -47,20 +34,6 @@ CORE_T = 212  # blur luminance at/above this becomes solid ink
 ALPHA_FLOOR = 22  # below this, treat as background
 INK_RGB = 40  # charcoal, not pure black — dials down visual weight
 TRIM_PAD = 12
-
-
-def _ensure_source() -> None:
-    SRC_JPG.parent.mkdir(parents=True, exist_ok=True)
-    if SRC_JPG.is_file():
-        return
-    if not UPLOAD.is_file():
-        raise SystemExit(f"Missing signature source: {SRC_JPG} and {UPLOAD}")
-    shutil.copy2(UPLOAD, SRC_JPG)
-
-
-def _archive_previous() -> None:
-    if OUT_PNG.is_file() and not ARCHIVE_PNG.is_file():
-        shutil.copy2(OUT_PNG, ARCHIVE_PNG)
 
 
 def _crop_ink(gray: Image.Image) -> Image.Image:
@@ -106,8 +79,10 @@ def _to_rgba(alpha_img: Image.Image) -> Image.Image:
 
 
 def main() -> None:
-    _ensure_source()
-    _archive_previous()
+    if OUT_PNG.resolve() == CANONICAL_PNG.resolve():
+        raise SystemExit("refusing to overwrite the canonical scan stamp")
+    if not SRC_JPG.is_file():
+        raise SystemExit(f"Missing archived photo source: {SRC_JPG}")
     gray = Image.open(SRC_JPG).convert("L")
     crop = _crop_ink(gray)
     hi = crop.resize(

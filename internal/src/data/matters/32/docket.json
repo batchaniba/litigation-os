@@ -1,5 +1,14 @@
 [
   {
+    "dkt": 16,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "other",
+    "title": "Declaration of Mailing - CCP 415.20(b) Follow-Up to Dkt 16 - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 16, 2026)",
+    "path": "/documents/matter-32/ndcal/Declaration of Mailing - CCP 415.20(b) Follow-Up to Dkt 16 - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 16, 2026).pdf",
+    "filed": false
+  },
+  {
     "dkt": null,
     "date": null,
     "filer": "plaintiff",
@@ -348,7 +357,8 @@
     "type": "motion_to_dismiss",
     "title": "CHP Motion To Dismiss",
     "path": "/documents/matter-32/from-01/CHP Motion To Dismiss.pdf",
-    "filed": false
+    "filed": false,
+    "label": "[M1] CHP Motion to Dismiss (Dec. 10, 2025)"
   },
   {
     "dkt": null,
@@ -357,7 +367,8 @@
     "type": "order",
     "title": "Notice of Supplemental Authority - Serrato Order - July 7 2026",
     "path": "/documents/matter-32/from-01/Notice of Supplemental Authority - Serrato Order - July 7 2026.pdf",
-    "filed": false
+    "filed": false,
+    "label": "[M1] Notice of Supplemental Authority — Serrato Order (Jul. 7, 2026)"
   },
   {
     "dkt": null,
@@ -366,7 +377,8 @@
     "type": "motion_to_dismiss",
     "title": "Opposition for Motion to Dismiss",
     "path": "/documents/matter-32/from-01/Opposition for Motion to Dismiss.pdf",
-    "filed": false
+    "filed": false,
+    "label": "[M1] Opposition to Motion to Dismiss (Dec. 22, 2025)"
   },
   {
     "dkt": null,
@@ -375,7 +387,8 @@
     "type": "reply",
     "title": "Reply - CHP",
     "path": "/documents/matter-32/from-01/Reply - CHP.pdf",
-    "filed": false
+    "filed": false,
+    "label": "[M1] Reply — CHP (Jan. 5, 2026)"
   },
   {
     "dkt": null,
@@ -384,7 +397,8 @@
     "type": "other",
     "title": "Notice of Voluntary Dismissal Without Prejudice (Aug 11 2026)",
     "path": "/documents/matter-32/from-01/Notice of Voluntary Dismissal Without Prejudice (Aug 11 2026).pdf",
-    "filed": true
+    "filed": true,
+    "label": "[M1] Notice of Voluntary Dismissal Without Prejudice (executed Aug. 11, 2026; redated from the Aug. 7, 2026 draft; e-filed Aug. 15, 2026) — FRCP 41(a)(1)(A)(i)"
   },
   {
     "dkt": null,
@@ -393,7 +407,8 @@
     "type": "opposition",
     "title": "Opposition to Motion for U-visa certification",
     "path": "/documents/matter-32/from-02/Opposition to Motion for U-visa certification.pdf",
-    "filed": false
+    "filed": false,
+    "label": "[M2] Defendants' Opposition to Plaintiff's Motion for U-Visa Certification (filed June 5, 2026)"
   },
   {
     "dkt": null,
@@ -402,7 +417,8 @@
     "type": "reply",
     "title": "Reply ISO UVisa Cert 10pg",
     "path": "/documents/matter-32/from-02/Reply ISO UVisa Cert 10pg.pdf",
-    "filed": false
+    "filed": false,
+    "label": "[M2] Plaintiff's Reply in Support of Motion for U-Visa Certification (filed June 8, 2026)"
   },
   {
     "dkt": null,
@@ -411,7 +427,8 @@
     "type": "other",
     "title": "Request for Dismissal Without Prejudice (Draft, Aug 11 2026)",
     "path": "/documents/matter-32/from-02/Request for Dismissal Without Prejudice (Draft, Aug 11 2026).pdf",
-    "filed": true
+    "filed": true,
+    "label": "[M2] Request for Dismissal Without Prejudice (executed Aug. 11, 2026; filed Aug. 15, 2026) — Code Civ. Proc. § 581(b)(1), (c)"
   },
   {
     "dkt": null,
@@ -420,7 +437,8 @@
     "type": "order",
     "title": "Notice of Supplemental Authority - Serrato Order - ELECTRONICALLY FILED Jul 9 2026",
     "path": "/documents/matter-33/from-07/Notice of Supplemental Authority - Serrato Order - ELECTRONICALLY FILED Jul 9 2026.pdf",
-    "filed": false
+    "filed": false,
+    "label": "[M7] Notice of Supplemental Authority — Serrato Order, ELECTRONICALLY FILED (Document 9, Jul. 9, 2026)"
   },
   {
     "dkt": null,
@@ -429,7 +447,8 @@
     "type": "order",
     "title": "Notice of Supplemental Authority - Serrato Order - July 7 2026",
     "path": "/documents/matter-33/from-07/Notice of Supplemental Authority - Serrato Order - July 7 2026.pdf",
-    "filed": false
+    "filed": false,
+    "label": "[M7] Notice of Supplemental Authority — Serrato Order, draft (superseded by the electronically filed version below)"
   },
   {
     "dkt": null,
@@ -438,7 +457,8 @@
     "type": "order",
     "title": "AG Proposed Order on Demurrer",
     "path": "/documents/matter-32/from-20/AG Proposed Order on Demurrer.pdf",
-    "filed": false
+    "filed": false,
+    "label": "[M20] AG Proposed Order on Demurrer"
   },
   {
     "dkt": null,
@@ -447,7 +467,8 @@
     "type": "opposition",
     "title": "Alameda Sheriff Service Packet - Eric Dutra (SER-001, FW-003, Opposition-MPA) (Aug 3 2026)",
     "path": "/documents/matter-32/from-20/Alameda Sheriff Service Packet - Eric Dutra (SER-001, FW-003, Opposition-MPA) (Aug 3 2026).pdf",
-    "filed": false
+    "filed": false,
+    "label": "[M20] Alameda Sheriff service packet — Eric Dutra (SER-001 + FW-003 Order on Court Fee Waiver + Opposition/MPA; Aug. 3, 2026; MAILED to Alameda County Sheriff Civil for service at CHP Dublin Area, 4999 Gleason Drive)"
   },
   {
     "dkt": null,
@@ -456,7 +477,8 @@
     "type": "opposition",
     "title": "Alameda Sheriff Service Packet - G Serrato (SER-001, FW-003, Opposition-MPA) (Aug 3 2026)",
     "path": "/documents/matter-32/from-20/Alameda Sheriff Service Packet - G Serrato (SER-001, FW-003, Opposition-MPA) (Aug 3 2026).pdf",
-    "filed": false
+    "filed": false,
+    "label": "[M20] Alameda Sheriff service packet — G. Serrato / Gerardo Serrato (SER-001 + FW-003 Order on Court Fee Waiver + Opposition/MPA; Aug. 3, 2026; MAILED to Alameda County Sheriff Civil for service at CHP Dublin Area, 4999 Gleason Drive)"
   },
   {
     "dkt": null,
@@ -465,7 +487,8 @@
     "type": "opposition",
     "title": "Alameda Sheriff Service Packet - Gary Paul (SER-001, FW-003, Opposition-MPA) (Aug 3 2026)",
     "path": "/documents/matter-32/from-20/Alameda Sheriff Service Packet - Gary Paul (SER-001, FW-003, Opposition-MPA) (Aug 3 2026).pdf",
-    "filed": false
+    "filed": false,
+    "label": "[M20] Alameda Sheriff service packet — Gary Paul (SER-001 + FW-003 Order on Court Fee Waiver + Opposition/MPA; Aug. 3, 2026; MAILED to Alameda County Sheriff Civil for service at CHP Dublin Area, 4999 Gleason Drive)"
   },
   {
     "dkt": null,
@@ -474,7 +497,8 @@
     "type": "opposition",
     "title": "Declaration of Petitioner ISO Opposition",
     "path": "/documents/matter-32/from-20/Declaration of Petitioner ISO Opposition.pdf",
-    "filed": false
+    "filed": false,
+    "label": "[M20] Declaration of Petitioner ISO Opposition"
   },
   {
     "dkt": null,
@@ -483,7 +507,8 @@
     "type": "order",
     "title": "FW-003 Order on Court Fee Waiver - GRANTED (Jun 3 2026)",
     "path": "/documents/matter-32/from-20/FW-003 Order on Court Fee Waiver - GRANTED (Jun 3 2026).pdf",
-    "filed": false
+    "filed": false,
+    "label": "[M20] FW-003 Order on Court Fee Waiver — GRANTED (Alameda Sup. Ct.; clerk electronic service Jun. 3, 2026, 10:45 AM PDT)"
   },
   {
     "dkt": null,
@@ -492,7 +517,8 @@
     "type": "order",
     "title": "Joint Stipulation to Advance Hearing Dates - Individual Respondents; Proposed Order",
     "path": "/documents/matter-32/from-20/Joint Stipulation to Advance Hearing Dates - Individual Respondents; Proposed Order.pdf",
-    "filed": false
+    "filed": false,
+    "label": "[M20] Joint Stipulation to Advance Dates of Hearings on Demurrers of Individual Respondents; [Proposed] Order (filed July 30, 2026)"
   },
   {
     "dkt": null,
@@ -501,7 +527,8 @@
     "type": "opposition",
     "title": "Opposition to Demurrer",
     "path": "/documents/matter-32/from-20/Opposition to Demurrer.pdf",
-    "filed": false
+    "filed": false,
+    "label": "[M20] Opposition to Demurrer (filed July 13, 2026)"
   },
   {
     "dkt": null,
@@ -510,7 +537,8 @@
     "type": "opposition",
     "title": "Opposition-to-Individual-Respondents-Demurrers",
     "path": "/documents/matter-32/from-20/Opposition-to-Individual-Respondents-Demurrers.pdf",
-    "filed": false
+    "filed": false,
+    "label": "[M20] Opposition to Individual Respondents' Demurrers and Joinders; MPA — signed and dated July 31, 2026; courtesy copy emailed to DAG Vanessa Ing; SER-001 sheriff service packets prepared for CHP (Sacramento Sheriff → CHP HQ) and Serrato/Paul/Dutra (Alameda Sheriff Civil → CHP Dublin duty station) under fee waiver (rebuts Serrato/Paul/Dutra's 'not a certifying official' argument under PC §679.10(b) by leading with Pet. ¶¶14-16's express 'is a certifying official' allegations and citing Exhibits 11/13 for the assignment letter and Paul's email; incorporates the July 13, 2026 Opposition to CHP's Demurrer by reference for the joinder-based arguments)"
   },
   {
     "dkt": null,
@@ -519,7 +547,8 @@
     "type": "opposition",
     "title": "Proof of Service - Opposition to Demurrer",
     "path": "/documents/matter-32/from-20/Proof of Service - Opposition to Demurrer.pdf",
-    "filed": false
+    "filed": false,
+    "label": "[M20] Proof of Service — Opposition to Demurrer"
   },
   {
     "dkt": null,
@@ -528,7 +557,8 @@
     "type": "order",
     "title": "Proposed Order Granting Joinders; Sustaining Demurrers - Individual Respondents",
     "path": "/documents/matter-32/from-20/Proposed Order Granting Joinders; Sustaining Demurrers - Individual Respondents.pdf",
-    "filed": false
+    "filed": false,
+    "label": "[M20] [Proposed] Order Granting Joinders of Individual Respondents; Sustaining Demurrers to Petition (submitted by Individual Respondents, unsigned, July 30, 2026)"
   },
   {
     "dkt": null,
@@ -537,7 +567,8 @@
     "type": "order",
     "title": "Proposed Order Overruling Demurrer",
     "path": "/documents/matter-32/from-20/Proposed Order Overruling Demurrer.pdf",
-    "filed": false
+    "filed": false,
+    "label": "[M20] Proposed Order Overruling Demurrer"
   },
   {
     "dkt": null,
@@ -546,7 +577,8 @@
     "type": "summons",
     "title": "Summons on Petition",
     "path": "/documents/matter-32/from-20/Summons on Petition.pdf",
-    "filed": false
+    "filed": false,
+    "label": "[M20] Summons on Petition (issued June 3, 2026)"
   },
   {
     "dkt": null,
@@ -555,7 +587,8 @@
     "type": "summons",
     "title": "Nd Cal Proposed Summons",
     "path": "/documents/matter-32/from-24/Nd Cal Proposed Summons.pdf",
-    "filed": false
+    "filed": false,
+    "label": "[M24] Proposed Summons — N.D. Cal. (Captain G. Serrato)"
   },
   {
     "dkt": null,

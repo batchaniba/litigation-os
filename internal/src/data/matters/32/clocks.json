@@ -1,39 +1,28 @@
 [
   {
     "id": "32-deadline-1",
-    "date": "2026-11-12",
-    "date_label": "Nov. 12, 2026",
+    "date": "2026-09-17",
+    "date_label": "Sep. 17, 2026",
     "kind": "deadline",
     "status": "open",
-    "source_dkt": 4,
-    "title": "Deadline to file ADR Certification (ADR L.R. 3) and to meet and confer regarding initial disclosures, early settlement, ADR process selection, and a discovery…",
+    "source_dkt": 16,
+    "title": "FILE — signed 415.20(b) declaration + Exhibit A USPS receipt + POS in Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK) after the September 16 postmark. San…",
     "actor": "you",
-    "source": "/documents/matter-32/ndcal/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026).pdf"
+    "source": "/documents/matter-32/ndcal/Declaration of Mailing - CCP 415.20(b) Follow-Up to Dkt 16 - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 16, 2026).pdf"
   },
   {
     "id": "32-deadline-2",
-    "date": "2026-11-25",
-    "date_label": "Nov. 25, 2026",
+    "date": "2026-10-19",
+    "date_label": "Oct. 19, 2026",
     "kind": "deadline",
     "status": "open",
-    "source_dkt": 4,
-    "title": "Deadline to make initial disclosures (Fed. R. Civ. P. 26(a)(1)) and to file the Joint Case Management Statement (Standing Order for All Judges of the Northern…",
-    "actor": "you",
-    "source": "/documents/matter-32/ndcal/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026).pdf"
+    "source_dkt": 16,
+    "title": "WATCH — Meza-Gonzalez Rule 12(a) responsive deadline (computed from a September 16, 2026 CCP § 415.20(b) mailing) in Nforbi v. Meza-Gonzalez et al.…",
+    "actor": "opposing",
+    "source": "/documents/matter-32/ndcal/Declaration of Mailing - CCP 415.20(b) Follow-Up to Dkt 16 - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 16, 2026).pdf"
   },
   {
-    "id": "32-hearing-3",
-    "date": "2026-12-02",
-    "date_label": "Dec. 2, 2026",
-    "kind": "hearing",
-    "status": "open",
-    "source_dkt": 4,
-    "title": "Initial Case Management Conference, 11:00 a.m., Courtroom F, 450 Golden Gate Ave., San Francisco, before Magistrate Judge Peter H. Kang — Nforbi v.…",
-    "actor": "you",
-    "source": "/documents/matter-32/ndcal/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026).pdf"
-  },
-  {
-    "id": "32-deadline-4",
+    "id": "32-deadline-3",
     "date": "2026-11-01",
     "date_label": "Nov. 1, 2026",
     "kind": "deadline",
@@ -42,5 +31,16 @@
     "title": "CCP §335.1 two-year statute of limitations (computed) backstop, running from the Nov. 1, 2024 incident. (1) Matter 1's Fourth Amendment §1983 claim (borrowed…",
     "actor": "you",
     "source": "/documents/matter-33/incident/Arrest Report.pdf"
+  },
+  {
+    "id": "32-deadline-4",
+    "date": "2026-09-17",
+    "date_label": "Sep. 17, 2026",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": 16,
+    "title": "MAIL — CCP § 415.20(b) first-class follow-up to Dkt. 16 / 16-1 for Santiago Meza-Gonzalez in Nforbi v. Meza-Gonzalez et al. (N.D. Cal. 4:26-cv-08271-ASK).…",
+    "actor": "you",
+    "source": "/documents/matter-32/ndcal/CCP 415.20(b) Mailing Bundle - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 17, 2026).pdf"
   }
 ]
