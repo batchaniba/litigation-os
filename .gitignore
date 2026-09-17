@@ -37,6 +37,12 @@ internal/public/documents/**
 .env.*
 !.env.example
 
+# D1 seed SQL is generated from canonical repo JSON at reseed time.
+# Do not commit snapshots: they can drift behind clocks.json / the manifest.
+/seed.sql
+/workers/doc-api/seed.sql
+/workers/doc-api/seed-chunk-*.sql
+
 # Generated at build time (prebuild). Do not commit.
 # (vercel.json is also generated — by sync:short-links — but IS committed:
 # Vercel reads git.deploymentEnabled from the repo at push time.)
