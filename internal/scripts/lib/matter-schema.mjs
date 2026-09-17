@@ -64,6 +64,7 @@ const OPTIONAL = {
   same_incident: isStr,
   former_case_no: isStr,
   judge_id: isStr,
+  last_updated: (v) => isStr(v) && /^\d{4}-\d{2}-\d{2}$/.test(v),
 };
 
 /** Validate a parsed matter JSON; returns an array of human-readable issues (empty = valid). */
