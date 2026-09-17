@@ -7,6 +7,8 @@
 //   GET /matters/<n>       -> one matter + clocks + documents (mirrors getMatter)
 //   GET /upcoming?days=14  -> clock rows due within window (mirrors upcomingDeadlines)
 //   GET /fuse              -> { fuse, wait, parked } (mirrors getFuseBoard)
+//   POST /admin/reseed     -> guarded D1 re-apply of seed.sql
+//                             (Authorization: Bearer <RESEED_SECRET>)
 //
 // R2 is reached through the DOCS *binding* — this file contains no keys,
 // tokens, or secrets. D1 is optional at runtime: data routes return
@@ -280,12 +282,44 @@ async function buildDigest(env, cron) {
   };
 }
 
+// --- admin: D1 self-reseed --------------------------------------------------
+// POST /admin/reseed with `Authorization: Bearer <RESEED_SECRET>` and the
+// seed.sql text as the body (one `INSERT ...;` per line, see seed.mjs).
+// Applies the statements to the D1 binding in small batches, so the
+// `d1-reseed.yml` workflow can keep D1 in sync with the repo after every
+// portfolio-data merge. Fail-closed: 503 when RESEED_SECRET is not
+// configured on the Worker, 403 on a bearer mismatch.
+async function handleReseed(request, env) {
+  if (!env.RESEED_SECRET) return json({ error: "reseed_not_configured" }, 503);
+  const auth = request.headers.get("authorization") || "";
+  if (auth !== `Bearer ${env.RESEED_SECRET}`)
+    return json({ error: "forbidden" }, 403);
+  if (!env.DB) return json({ error: "d1_not_provisioned" }, 503);
+  const body = await request.text();
+  const statements = body
+    .split("\n")
+    .map((l) => l.trim())
+    .filter((l) => /^INSERT\s/i.test(l));
+  let applied = 0;
+  for (let i = 0; i < statements.length; i += 50) {
+    const chunk = statements.slice(i, i + 50);
+    await env.DB.batch(chunk.map((sql) => env.DB.prepare(sql)));
+    applied += chunk.length;
+  }
+  return json({ ok: true, statements: applied });
+}
+
 // --- entrypoint ---------------------------------------------------------------
 
 export default {
   async fetch(request, env, _ctx) {
     const url = new URL(request.url);
     const path = url.pathname;
+    if (path === "/admin/reseed") {
+      if (request.method !== "POST")
+        return json({ error: "method_not_allowed" }, 405);
+      return handleReseed(request, env);
+    }
     if (request.method !== "GET") return json({ error: "method_not_allowed" }, 405);
 
     if (path === "/health") return json({ ok: true, bucket: BUCKET });
