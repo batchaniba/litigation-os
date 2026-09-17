@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1251,
-  "totalBytes": 874577773,
+  "fileCount": 1252,
+  "totalBytes": 874779053,
   "files": [
     {
       "path": "/documents/README.md",
@@ -4952,6 +4952,11 @@
       "path": "/documents/matter-32/ndcal/Declaration ISO Administrative Motion - DAG Li to Accept Service (Meza-Gonzalez) (Sep 1 2026).pdf",
       "size": 208333,
       "sha256": "96619dfe497aa39f367cc7ec55e5891b4bb343d8858e9e1b4a241e8807c76a38"
+    },
+    {
+      "path": "/documents/matter-32/ndcal/Declaration of Mailing - CCP 415.20(b) Follow-Up to Dkt 16 - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 16, 2026).pdf",
+      "size": 201280,
+      "sha256": "a681de8d821b6a710a117bcd931eab55f3b044cfb56ebbe2c817a8ca0ff5eacf"
     },
     {
       "path": "/documents/matter-32/ndcal/Declaration of Mailing - CCP 415.20(b) Follow-Up to Dkt 16 - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 17, 2026).pdf",

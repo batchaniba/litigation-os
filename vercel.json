@@ -385,6 +385,16 @@
       "permanent": false
     },
     {
+      "source": "/meza-41520-decl",
+      "destination": "/meza-41520-decl.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/meza-41520-decl/",
+      "destination": "/meza-41520-decl.pdf",
+      "permanent": false
+    },
+    {
       "source": "/meza-41520-mail",
       "destination": "/meza-41520-mail.pdf",
       "permanent": false
@@ -765,6 +775,15 @@
         {
           "key": "Content-Disposition",
           "value": "attachment; filename=\"Name Conform Administrative Motion Packet - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 14, 2026).pdf\"; filename*=UTF-8''Name%20Conform%20Administrative%20Motion%20Packet%20-%20Meza-Gonzalez%20%28N.D.%20Cal.%204-26-cv-08271-ASK%29%20%28September%2014%2C%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/meza-41520-decl.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Declaration of Mailing - CCP 415.20(b) Follow-Up to Dkt 16 - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 16, 2026).pdf\"; filename*=UTF-8''Declaration%20of%20Mailing%20-%20CCP%20415.20%28b%29%20Follow-Up%20to%20Dkt%2016%20-%20Meza-Gonzalez%20%28N.D.%20Cal.%204-26-cv-08271-ASK%29%20%28September%2016%2C%202026%29.pdf"
         }
       ]
     },

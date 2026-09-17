@@ -9,11 +9,12 @@ This packet is the missing mailing.
 
   python3 internal/scripts/matter32-meza-41520-mailing.py
   python3 internal/scripts/matter32-meza-41520-mailing.py \\
-      --date "September 17, 2026" --mailed-from "San Jose, California"
+      --date "September 16, 2026" --mailed-from "San Jose, California"
+      --declaration-only
 
 Date the papers the day the envelope actually goes in the mail. POS is
 valid only if mailed that day from the stated city. Do not treat
-September 17 as a default date against Meza or Li.
+September 16 as a default date against Meza or Li.
 """
 
 from __future__ import annotations
@@ -44,7 +45,7 @@ from signature_stamp import SIGNATURE_NATIVE_PX, SIGNATURE_PATH  # noqa: E402
 ROOT = SCRIPT_DIR.parent
 OUT_DIR = ROOT / "public/documents/matter-32/ndcal"
 
-DEFAULT_DATE = "September 17, 2026"
+DEFAULT_DATE = "September 16, 2026"
 DEFAULT_MAILED_FROM = "San Jose, California"
 SHORT_MAIL = "meza-41520-mail"
 SHORT_FILING = "meza-41520-filing"
@@ -252,9 +253,7 @@ def _plaintiff_decl_content(exec_date: str, mailed_from: str) -> list[tuple[str,
         (
             "LIST_ITEM",
             f"4.  On {exec_date}, I placed a true copy of the same papers listed "
-            "in paragraph 2, together with a cover letter identifying them as "
-            "the California Code of Civil Procedure section 415.20(b) follow-up "
-            "copies, in a sealed envelope addressed to:",
+            "in paragraph 2 in a sealed envelope addressed to:",
         ),
         (
             "LIST_ITEM",
@@ -284,7 +283,8 @@ def _plaintiff_decl_content(exec_date: str, mailed_from: str) -> list[tuple[str,
         (
             "LIST_ITEM",
             "6.  The action is against Meza-Gonzalez in his individual capacity. "
-            "The envelope did not include a copy of Document 16 itself.",
+            "The envelope did not include a copy of Document 16 itself and did "
+            "not include a cover letter.",
         ),
         (
             "LIST_ITEM",
@@ -330,11 +330,10 @@ def _nonparty_decl_content(exec_date: str, mailed_from: str) -> list[tuple[str, 
         (
             "LIST_ITEM",
             f"4.  On {exec_date}, I placed a true copy of the same papers listed "
-            "in paragraph 2, together with Plaintiff's cover letter identifying "
-            "them as the California Code of Civil Procedure section 415.20(b) "
-            "follow-up copies, in a sealed envelope addressed to Santiago "
+            "in paragraph 2 in a sealed envelope addressed to Santiago "
             "Meza-Gonzalez, California Highway Patrol, Modesto Area, 4030 "
-            "Kiernan Avenue, Modesto, CA 95356.",
+            "Kiernan Avenue, Modesto, CA 95356. The envelope did not include "
+            "a cover letter.",
         ),
         (
             "LIST_ITEM",
@@ -806,15 +805,39 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--date", default=DEFAULT_DATE)
     parser.add_argument("--mailed-from", default=DEFAULT_MAILED_FROM)
+    parser.add_argument(
+        "--declaration-only",
+        action="store_true",
+        help="Write only the mailing declarations; skip the Meza envelope bundle.",
+    )
     args = parser.parse_args()
 
     if not Path(SIGNATURE_PATH).is_file():
         raise SystemExit(f"Missing universal signature: {SIGNATURE_PATH}")
-    for src in (SUMMONS, FAC, NOTICE, CMC):
-        if not src.is_file():
-            raise SystemExit(f"Missing source filing: {src}")
+    if not args.declaration_only:
+        for src in (SUMMONS, FAC, NOTICE, CMC):
+            if not src.is_file():
+                raise SystemExit(f"Missing source filing: {src}")
 
     outs = paths_for(args.date)
+    if args.declaration_only:
+        OUT_DIR.mkdir(parents=True, exist_ok=True)
+        build_declaration(
+            outs["plaintiff_decl"],
+            caption_right=PLAINTIFF_CAPTION_RIGHT,
+            footer=DECL_FOOTER,
+            content=_plaintiff_decl_content(args.date, args.mailed_from),
+            exec_date=args.date,
+            mailed_from=args.mailed_from,
+            plaintiff=True,
+        )
+        print(f"plaintiff decl: {outs['plaintiff_decl']}")
+        print(
+            f"FILED_STATUS=False; execution date={args.date}; "
+            f"mailed from={args.mailed_from}; declaration-only"
+        )
+        return
+
     write_cover_letter(outs["cover_letter"], args.date)
     extract_meza_summons(outs["meza_summons"])
     build_declaration(
