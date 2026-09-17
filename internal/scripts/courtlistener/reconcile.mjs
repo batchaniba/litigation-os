@@ -10,6 +10,12 @@ import {
   formatTimelineDate,
   inferFactType,
 } from "./entries.mjs";
+import { loadDocketRules } from "./rules.mjs";
+
+// Family 3 extraction: interpretation strategy lives in
+// internal/src/data/rules/docket-interpretation.json. This module only
+// renders those rules.
+const RULES = loadDocketRules();
 
 function cleanExternal(external) {
   const out = {};
@@ -37,7 +43,7 @@ function tokenize(text) {
       .replace(/[^a-z0-9]+/g, " ")
       .trim()
       .split(/\s+/)
-      .filter((word) => word.length > 2),
+      .filter((word) => word.length > RULES.timelineMatch.tokenMinLengthExclusive),
   );
 }
 
@@ -59,23 +65,25 @@ function eventDocketNumber(event) {
   return fromExternal == null ? null : Number(fromExternal);
 }
 
-const PLAUSIBLE_SIMILARITY = 0.18;
-
 export function scoreTimelineMatch(event, { dateFiled, description, factType }) {
+  const M = RULES.timelineMatch;
   const expectedDate = formatTimelineDate(dateFiled);
   const dateMatch = Boolean(expectedDate && event.date === expectedDate);
   const typeMatch = Boolean(factType && event.type === factType);
   const similarity = descriptionSimilarity(event.event, description);
   let score = 0;
-  if (dateMatch) score += 3;
-  if (typeMatch) score += 2;
-  if (similarity >= 0.25) score += 2;
-  else if (similarity >= PLAUSIBLE_SIMILARITY) score += 1;
+  if (dateMatch) score += M.dateWeight;
+  if (typeMatch) score += M.typeWeight;
+  if (similarity >= M.strongSimilarityThreshold) score += M.strongSimilarityWeight;
+  else if (similarity >= M.plausibleSimilarityThreshold) score += M.plausibleSimilarityWeight;
   return { score, dateMatch, typeMatch, similarity };
 }
 
 function isPlausible(scored) {
-  return Boolean(scored.dateMatch && (scored.typeMatch || scored.similarity >= PLAUSIBLE_SIMILARITY));
+  return Boolean(
+    scored.dateMatch &&
+      (scored.typeMatch || scored.similarity >= RULES.timelineMatch.plausibleSimilarityThreshold),
+  );
 }
 
 /**
@@ -187,9 +195,9 @@ export function reconcileEntries({
           trigger_entry: normalized.entry_number,
           courtlistener_entry_id: normalized.courtlistener_entry_id,
           proposed_date: normalized.date_filed,
-          confidence: 0.4,
+          confidence: RULES.timelineMatch.ambiguousConfidence,
           reason: `Dkt. ${normalized.entry_number} matches ${match.matches.length} timeline rows on the same date; provenance not auto-attached.`,
-          status: "pending",
+          status: RULES.review.pendingStatus,
         };
         const dup = nextReview.candidates.some(
           (row) =>
@@ -222,7 +230,7 @@ export function reconcileEntries({
         proposed_date: deadline.proposed_date,
         confidence: deadline.confidence,
         reason: deadline.reason,
-        status: "pending",
+        status: RULES.review.pendingStatus,
       };
       const dup = nextReview.candidates.some(
         (row) =>

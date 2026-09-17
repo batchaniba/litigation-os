@@ -1,0 +1,1285 @@
+{
+ "version": 1,
+ "generated": "2026-09-17",
+ "note": "Golden outputs captured from pre-extraction code. Do not hand-edit expected values; regenerate only against code whose behavior was intentionally changed.",
+ "cases": [
+  {
+   "id": "factType/minute-order",
+   "fn": "inferFactType",
+   "args": [
+    "MINUTE ORDER denying in part the motion to dismiss"
+   ],
+   "expected": "order"
+  },
+  {
+   "id": "factType/order-granting",
+   "fn": "inferFactType",
+   "args": [
+    "ORDER GRANTING MOTION TO DISMISS"
+   ],
+   "expected": "order"
+  },
+  {
+   "id": "factType/findings-recommendations",
+   "fn": "inferFactType",
+   "args": [
+    "Findings and Recommendations of the Magistrate Judge"
+   ],
+   "expected": "order"
+  },
+  {
+   "id": "factType/opinion",
+   "fn": "inferFactType",
+   "args": [
+    "Opinion issued by the Court"
+   ],
+   "expected": "order"
+  },
+  {
+   "id": "factType/hearing-notice",
+   "fn": "inferFactType",
+   "args": [
+    "NOTICE OF HEARING on Defendant's Motion to Dismiss"
+   ],
+   "expected": "hearing"
+  },
+  {
+   "id": "factType/conference",
+   "fn": "inferFactType",
+   "args": [
+    "Scheduling Conference set for October 8, 2026"
+   ],
+   "expected": "hearing"
+  },
+  {
+   "id": "factType/calendar",
+   "fn": "inferFactType",
+   "args": [
+    "Calendar call held"
+   ],
+   "expected": "hearing"
+  },
+  {
+   "id": "factType/mtd-filing",
+   "fn": "inferFactType",
+   "args": [
+    "MOTION TO DISMISS filed by Defendant"
+   ],
+   "expected": "filing"
+  },
+  {
+   "id": "factType/pos",
+   "fn": "inferFactType",
+   "args": [
+    "PROOF OF SERVICE of Summons"
+   ],
+   "expected": "filing"
+  },
+  {
+   "id": "factType/empty",
+   "fn": "inferFactType",
+   "args": [
+    ""
+   ],
+   "expected": "filing"
+  },
+  {
+   "id": "factType/proposed-order",
+   "fn": "inferFactType",
+   "args": [
+    "Stipulation and [Proposed] Order extending time"
+   ],
+   "expected": "order"
+  },
+  {
+   "id": "factType/ordered-word-is-not-order",
+   "fn": "inferFactType",
+   "args": [
+    "ORDERED that the hearing on the motion is continued"
+   ],
+   "expected": "hearing"
+  },
+  {
+   "id": "factActor/mtd-defendant",
+   "fn": "inferFactActor",
+   "args": [
+    "MOTION TO DISMISS filed by Defendant Shannon Smith"
+   ],
+   "expected": "opposing"
+  },
+  {
+   "id": "factActor/minute-order",
+   "fn": "inferFactActor",
+   "args": [
+    "MINUTE ORDER"
+   ],
+   "expected": "court"
+  },
+  {
+   "id": "factActor/judge-order",
+   "fn": "inferFactActor",
+   "args": [
+    "ORDER by Judge Charles R. Breyer"
+   ],
+   "expected": "court"
+  },
+  {
+   "id": "factActor/clerk",
+   "fn": "inferFactActor",
+   "args": [
+    "Clerk's Notice of Reassignment"
+   ],
+   "expected": "court"
+  },
+  {
+   "id": "factActor/plaintiff-opposition",
+   "fn": "inferFactActor",
+   "args": [
+    "Plaintiff's Opposition to Motion to Dismiss"
+   ],
+   "expected": "you"
+  },
+  {
+   "id": "factActor/defendant-reply",
+   "fn": "inferFactActor",
+   "args": [
+    "Defendant's Reply in Support of Motion to Dismiss"
+   ],
+   "expected": "opposing"
+  },
+  {
+   "id": "factActor/appeal",
+   "fn": "inferFactActor",
+   "args": [
+    "NOTICE OF APPEAL"
+   ],
+   "expected": "unknown"
+  },
+  {
+   "id": "factActor/order-on-mtd",
+   "fn": "inferFactActor",
+   "args": [
+    "ORDER ON MOTION TO DISMISS"
+   ],
+   "expected": "opposing"
+  },
+  {
+   "id": "factActor/bare-mtd",
+   "fn": "inferFactActor",
+   "args": [
+    "Motion to dismiss for failure to state a claim"
+   ],
+   "expected": "opposing"
+  },
+  {
+   "id": "factActor/empty",
+   "fn": "inferFactActor",
+   "args": [
+    ""
+   ],
+   "expected": "unknown"
+  },
+  {
+   "id": "factActor/joint-statement",
+   "fn": "inferFactActor",
+   "args": [
+    "Joint Case Management Statement"
+   ],
+   "expected": "unknown"
+  },
+  {
+   "id": "factPrefix/order",
+   "fn": "factPrefix",
+   "args": [
+    "order"
+   ],
+   "expected": "ORDER"
+  },
+  {
+   "id": "factPrefix/hearing",
+   "fn": "factPrefix",
+   "args": [
+    "hearing"
+   ],
+   "expected": "SET"
+  },
+  {
+   "id": "factPrefix/filing",
+   "fn": "factPrefix",
+   "args": [
+    "filing"
+   ],
+   "expected": "FILED"
+  },
+  {
+   "id": "deadline/within-days-shall-file",
+   "fn": "detectDeadlineCandidate",
+   "args": [
+    "ORDER. Plaintiff shall file an amended complaint within 21 days.",
+    "2026-09-11"
+   ],
+   "expected": {
+    "candidate_type": "deadline",
+    "proposed_date": "2026-10-02",
+    "confidence": 0.7,
+    "reason": "Order or entry states an obligation within 21 days."
+   }
+  },
+  {
+   "id": "deadline/explicit-iso",
+   "fn": "detectDeadlineCandidate",
+   "args": [
+    "Opposition due 2026-10-15.",
+    "2026-09-11"
+   ],
+   "expected": {
+    "candidate_type": "deadline",
+    "proposed_date": "2026-10-15",
+    "confidence": 0.9,
+    "reason": "Entry states a due date of 2026-10-15."
+   }
+  },
+  {
+   "id": "deadline/explicit-month-name",
+   "fn": "detectDeadlineCandidate",
+   "args": [
+    "Reply brief due on or before October 20, 2026.",
+    "2026-09-11"
+   ],
+   "expected": {
+    "candidate_type": "deadline",
+    "proposed_date": "2026-10-20",
+    "confidence": 0.9,
+    "reason": "Entry states a due date of October 20, 2026."
+   }
+  },
+  {
+   "id": "deadline/hearing-date-not-deadline",
+   "fn": "detectDeadlineCandidate",
+   "args": [
+    "Hearing set for November 20, 2026 at 10:00 a.m.",
+    "2026-09-11"
+   ],
+   "expected": null
+  },
+  {
+   "id": "deadline/within-days-shall-serve",
+   "fn": "detectDeadlineCandidate",
+   "args": [
+    "Defendant shall serve responses within 30 days.",
+    "2026-08-01"
+   ],
+   "expected": {
+    "candidate_type": "deadline",
+    "proposed_date": "2026-08-31",
+    "confidence": 0.7,
+    "reason": "Order or entry states an obligation within 30 days."
+   }
+  },
+  {
+   "id": "deadline/date-not-adjacent-to-trigger",
+   "fn": "detectDeadlineCandidate",
+   "args": [
+    "The deadline to amend is Sep. 5, 2026.",
+    "2026-08-01"
+   ],
+   "expected": null
+  },
+  {
+   "id": "deadline/explicit-abbrev-month",
+   "fn": "detectDeadlineCandidate",
+   "args": [
+    "Opposition deadline Sep. 5, 2026.",
+    "2026-08-01"
+   ],
+   "expected": {
+    "candidate_type": "deadline",
+    "proposed_date": "2026-09-05",
+    "confidence": 0.9,
+    "reason": "Entry states a due date of Sep. 5, 2026."
+   }
+  },
+  {
+   "id": "deadline/month-only",
+   "fn": "detectDeadlineCandidate",
+   "args": [
+    "Status conference in December 2026.",
+    "2026-09-11"
+   ],
+   "expected": null
+  },
+  {
+   "id": "deadline/within-days-no-trigger",
+   "fn": "detectDeadlineCandidate",
+   "args": [
+    "File the joint report within 14 days",
+    "2026-09-01"
+   ],
+   "expected": null
+  },
+  {
+   "id": "deadline/within-days-must",
+   "fn": "detectDeadlineCandidate",
+   "args": [
+    "Plaintiff must respond within 21 days of this order.",
+    "2026-09-11"
+   ],
+   "expected": {
+    "candidate_type": "deadline",
+    "proposed_date": "2026-10-02",
+    "confidence": 0.7,
+    "reason": "Order or entry states an obligation within 21 days."
+   }
+  },
+  {
+   "id": "deadline/explicit-no-later-than",
+   "fn": "detectDeadlineCandidate",
+   "args": [
+    "Response due no later than 2026-12-01.",
+    "2026-09-11"
+   ],
+   "expected": {
+    "candidate_type": "deadline",
+    "proposed_date": "2026-12-01",
+    "confidence": 0.9,
+    "reason": "Entry states a due date of 2026-12-01."
+   }
+  },
+  {
+   "id": "deadline/within-days-amended-complaint",
+   "fn": "detectDeadlineCandidate",
+   "args": [
+    "Amended complaint due within 60 days of service.",
+    "2026-01-15"
+   ],
+   "expected": {
+    "candidate_type": "deadline",
+    "proposed_date": "2026-03-16",
+    "confidence": 0.7,
+    "reason": "Order or entry states an obligation within 60 days."
+   }
+  },
+  {
+   "id": "similarity/partial",
+   "fn": "descriptionSimilarity",
+   "args": [
+    "MOTION TO DISMISS",
+    "MOTION TO DISMISS filed by Defendant"
+   ],
+   "expected": 0.5
+  },
+  {
+   "id": "similarity/identical",
+   "fn": "descriptionSimilarity",
+   "args": [
+    "PROOF OF SERVICE",
+    "PROOF OF SERVICE"
+   ],
+   "expected": 1
+  },
+  {
+   "id": "similarity/none",
+   "fn": "descriptionSimilarity",
+   "args": [
+    "Hearing on the motion",
+    "Stipulation extending time"
+   ],
+   "expected": 0
+  },
+  {
+   "id": "similarity/empty-tokens",
+   "fn": "descriptionSimilarity",
+   "args": [
+    "a",
+    "b"
+   ],
+   "expected": 0
+  },
+  {
+   "id": "similarity/probe-low",
+   "fn": "descriptionSimilarity",
+   "args": [
+    "FILED Dkt 15 Motion to Dismiss",
+    "Motion hearing on dismissal schedule"
+   ],
+   "expected": 0.14285714285714285
+  },
+  {
+   "id": "similarity/probe-mid",
+   "fn": "descriptionSimilarity",
+   "args": [
+    "FILED Dkt 15 Motion to Dismiss FAC",
+    "Opposition to the motion to dismiss filed"
+   ],
+   "expected": 0.42857142857142855
+  },
+  {
+   "id": "similarity/probe-band",
+   "fn": "descriptionSimilarity",
+   "args": [
+    "FILED Dkt 15 Motion to Dismiss FAC",
+    "Motion to dismiss opposition brief reply memorandum"
+   ],
+   "expected": 0.2222222222222222
+  },
+  {
+   "id": "match/full",
+   "fn": "scoreTimelineMatch",
+   "args": [
+    {
+     "date": "Sep. 11, 2026",
+     "event": "FILED — Dkt. 15 Motion to Dismiss",
+     "type": "filing"
+    },
+    {
+     "dateFiled": "2026-09-11",
+     "description": "MOTION TO DISMISS filed by Defendant",
+     "factType": "filing"
+    }
+   ],
+   "expected": {
+    "score": 7,
+    "dateMatch": true,
+    "typeMatch": true,
+    "similarity": 0.6
+   }
+  },
+  {
+   "id": "match/date-mismatch",
+   "fn": "scoreTimelineMatch",
+   "args": [
+    {
+     "date": "Sep. 11, 2026",
+     "event": "FILED — Dkt. 15 Motion to Dismiss",
+     "type": "filing"
+    },
+    {
+     "dateFiled": "2026-09-12",
+     "description": "MOTION TO DISMISS filed by Defendant",
+     "factType": "filing"
+    }
+   ],
+   "expected": {
+    "score": 4,
+    "dateMatch": false,
+    "typeMatch": true,
+    "similarity": 0.6
+   }
+  },
+  {
+   "id": "match/type-mismatch",
+   "fn": "scoreTimelineMatch",
+   "args": [
+    {
+     "date": "Sep. 11, 2026",
+     "event": "FILED — Dkt. 15 Motion to Dismiss",
+     "type": "filing"
+    },
+    {
+     "dateFiled": "2026-09-11",
+     "description": "MOTION TO DISMISS filed by Defendant",
+     "factType": "order"
+    }
+   ],
+   "expected": {
+    "score": 5,
+    "dateMatch": true,
+    "typeMatch": false,
+    "similarity": 0.6
+   }
+  },
+  {
+   "id": "match/low-similarity",
+   "fn": "scoreTimelineMatch",
+   "args": [
+    {
+     "date": "Sep. 11, 2026",
+     "event": "FILED — Dkt. 15 Motion to Dismiss",
+     "type": "filing"
+    },
+    {
+     "dateFiled": "2026-09-11",
+     "description": "Proof of service filed",
+     "factType": "filing"
+    }
+   ],
+   "expected": {
+    "score": 5,
+    "dateMatch": true,
+    "typeMatch": true,
+    "similarity": 0.16666666666666666
+   }
+  },
+  {
+   "id": "match/mid-similarity",
+   "fn": "scoreTimelineMatch",
+   "args": [
+    {
+     "date": "Sep. 11, 2026",
+     "event": "FILED — Dkt. 15 Motion to Dismiss FAC",
+     "type": "filing"
+    },
+    {
+     "dateFiled": "2026-09-11",
+     "description": "Opposition to the motion to dismiss filed",
+     "factType": "filing"
+    }
+   ],
+   "expected": {
+    "score": 7,
+    "dateMatch": true,
+    "typeMatch": true,
+    "similarity": 0.42857142857142855
+   }
+  },
+  {
+   "id": "match/band-similarity",
+   "fn": "scoreTimelineMatch",
+   "args": [
+    {
+     "date": "Sep. 11, 2026",
+     "event": "FILED — Dkt. 15 Motion to Dismiss FAC",
+     "type": "filing"
+    },
+    {
+     "dateFiled": "2026-09-11",
+     "description": "Motion to dismiss opposition brief reply memorandum",
+     "factType": "filing"
+    }
+   ],
+   "expected": {
+    "score": 6,
+    "dateMatch": true,
+    "typeMatch": true,
+    "similarity": 0.2222222222222222
+   }
+  },
+  {
+   "id": "findMatch/entry-id-hit",
+   "fn": "findMatchingTimelineEvent",
+   "args": [
+    [
+     {
+      "date": "Sep. 11, 2026",
+      "event": "FILED — Dkt. 15 Motion to Dismiss",
+      "matters": [
+       28
+      ],
+      "type": "filing",
+      "external": {
+       "docket_entry_id": 111
+      }
+     }
+    ],
+    {
+     "matter": 28,
+     "entryId": 111,
+     "entryNumber": 15,
+     "dateFiled": "2026-09-11",
+     "description": "MOTION TO DISMISS",
+     "factType": "filing"
+    }
+   ],
+   "expected": {
+    "index": 0,
+    "event": {
+     "date": "Sep. 11, 2026",
+     "event": "FILED — Dkt. 15 Motion to Dismiss",
+     "matters": [
+      28
+     ],
+     "type": "filing",
+     "external": {
+      "docket_entry_id": 111
+     }
+    },
+    "via": "entry_id",
+    "ambiguous": false
+   }
+  },
+  {
+   "id": "findMatch/dkt-date-type",
+   "fn": "findMatchingTimelineEvent",
+   "args": [
+    [
+     {
+      "date": "Sep. 3, 2026",
+      "event": "FILED — Dkt. 13 Proof of Service in Newanforbi v. Smith",
+      "matters": [
+       28
+      ],
+      "type": "filing"
+     }
+    ],
+    {
+     "matter": 28,
+     "entryId": 555,
+     "entryNumber": 13,
+     "dateFiled": "2026-09-03",
+     "description": "PROOF OF SERVICE",
+     "factType": "filing"
+    }
+   ],
+   "expected": {
+    "index": 0,
+    "event": {
+     "date": "Sep. 3, 2026",
+     "event": "FILED — Dkt. 13 Proof of Service in Newanforbi v. Smith",
+     "matters": [
+      28
+     ],
+     "type": "filing"
+    },
+    "via": "dkt_date_type",
+    "ambiguous": false,
+    "score": 7,
+    "dateMatch": true,
+    "typeMatch": true,
+    "similarity": 0.3333333333333333
+   }
+  },
+  {
+   "id": "findMatch/ambiguous",
+   "fn": "findMatchingTimelineEvent",
+   "args": [
+    [
+     {
+      "date": "Aug. 26, 2026",
+      "event": "FILED — Dkt. 18 Motion to Dismiss FAC",
+      "matters": [
+       24
+      ],
+      "type": "filing"
+     },
+     {
+      "date": "Aug. 26, 2026",
+      "event": "SET — Dkt. 18 hearing on the motion to dismiss FAC",
+      "matters": [
+       24
+      ],
+      "type": "hearing"
+     }
+    ],
+    {
+     "matter": 24,
+     "entryId": 1800,
+     "entryNumber": 18,
+     "dateFiled": "2026-08-26",
+     "description": "MOTION to Dismiss",
+     "factType": "filing"
+    }
+   ],
+   "expected": {
+    "ambiguous": true,
+    "matches": [
+     {
+      "index": 0,
+      "event": {
+       "date": "Aug. 26, 2026",
+       "event": "FILED — Dkt. 18 Motion to Dismiss FAC",
+       "matters": [
+        24
+       ],
+       "type": "filing"
+      },
+      "via": "dkt_date_type",
+      "ambiguous": false,
+      "score": 7,
+      "dateMatch": true,
+      "typeMatch": true,
+      "similarity": 0.4
+     },
+     {
+      "index": 1,
+      "event": {
+       "date": "Aug. 26, 2026",
+       "event": "SET — Dkt. 18 hearing on the motion to dismiss FAC",
+       "matters": [
+        24
+       ],
+       "type": "hearing"
+      },
+      "via": "dkt_date_type",
+      "ambiguous": false,
+      "score": 5,
+      "dateMatch": true,
+      "typeMatch": false,
+      "similarity": 0.2857142857142857
+     }
+    ],
+    "via": "dkt_ambiguous"
+   }
+  },
+  {
+   "id": "findMatch/none",
+   "fn": "findMatchingTimelineEvent",
+   "args": [
+    [
+     {
+      "date": "Sep. 11, 2026",
+      "event": "FILED — Dkt. 15 Motion to Dismiss",
+      "matters": [
+       28
+      ],
+      "type": "filing"
+     }
+    ],
+    {
+     "matter": 28,
+     "entryId": 999,
+     "entryNumber": 99,
+     "dateFiled": "2026-09-11",
+     "description": "SOMETHING ELSE",
+     "factType": "order"
+    }
+   ],
+   "expected": null
+  },
+  {
+   "id": "reconcile/mtd-fact-once",
+   "fn": "reconcileEntries",
+   "args": [
+    {
+     "timeline": [],
+     "normalizedEntries": [
+      {
+       "matter": 28,
+       "courtlistener_docket_id": 73646240,
+       "courtlistener_entry_id": 99887766,
+       "entry_number": 15,
+       "date_filed": "2026-09-11",
+       "description": "MOTION TO DISMISS filed by Defendant Shannon Smith",
+       "documents": [],
+       "ingested_at": "2026-09-11T08:00:00Z",
+       "hash": "203045b892604481e0ef6a8c7be8035f0f16d2302e1353b63c54f9d12cb899b6"
+      }
+     ]
+    }
+   ],
+   "expected": {
+    "timeline": [
+     {
+      "date": "Sep. 11, 2026",
+      "event": "FILED — Dkt. 15 MOTION TO DISMISS filed by Defendant Shannon Smith",
+      "matters": [
+       28
+      ],
+      "type": "filing",
+      "upcoming": false,
+      "filed": true,
+      "actor": "opposing",
+      "source_type": "courtlistener",
+      "external": {
+       "provider": "courtlistener",
+       "docket_id": 73646240,
+       "docket_entry_id": 99887766,
+       "entry_number": 15
+      },
+      "verified_at": "2026-09-11T08:00:00Z"
+     }
+    ],
+    "ledger": {
+     "version": 1,
+     "entries": [
+      {
+       "matter": 28,
+       "courtlistener_docket_id": 73646240,
+       "courtlistener_entry_id": 99887766,
+       "entry_number": 15,
+       "date_filed": "2026-09-11",
+       "description": "MOTION TO DISMISS filed by Defendant Shannon Smith",
+       "documents": [],
+       "ingested_at": "2026-09-11T08:00:00Z",
+       "hash": "203045b892604481e0ef6a8c7be8035f0f16d2302e1353b63c54f9d12cb899b6"
+      }
+     ]
+    },
+    "review": {
+     "version": 1,
+     "candidates": []
+    },
+    "stats": {
+     "seen": 1,
+     "skipped": 0,
+     "factsAdded": 1,
+     "provenanceAttached": 0,
+     "candidatesAdded": 0,
+     "ambiguousQueued": 0
+    }
+   }
+  },
+  {
+   "id": "reconcile/deadline-to-review",
+   "fn": "reconcileEntries",
+   "args": [
+    {
+     "timeline": [],
+     "normalizedEntries": [
+      {
+       "matter": 28,
+       "courtlistener_docket_id": 73646240,
+       "courtlistener_entry_id": 17,
+       "entry_number": 17,
+       "date_filed": "2026-09-11",
+       "description": "ORDER. Plaintiff shall file an amended complaint within 21 days.",
+       "documents": [],
+       "ingested_at": "2026-09-11T08:00:00Z",
+       "hash": "71b883ac20a6f64896827329983045179acde1937be388ea89478b19be264572"
+      }
+     ]
+    }
+   ],
+   "expected": {
+    "timeline": [
+     {
+      "date": "Sep. 11, 2026",
+      "event": "ORDER — Dkt. 17 ORDER. Plaintiff shall file an amended complaint within 21 days.",
+      "matters": [
+       28
+      ],
+      "type": "order",
+      "upcoming": false,
+      "filed": true,
+      "actor": "court",
+      "source_type": "courtlistener",
+      "external": {
+       "provider": "courtlistener",
+       "docket_id": 73646240,
+       "docket_entry_id": 17,
+       "entry_number": 17
+      },
+      "verified_at": "2026-09-11T08:00:00Z"
+     }
+    ],
+    "ledger": {
+     "version": 1,
+     "entries": [
+      {
+       "matter": 28,
+       "courtlistener_docket_id": 73646240,
+       "courtlistener_entry_id": 17,
+       "entry_number": 17,
+       "date_filed": "2026-09-11",
+       "description": "ORDER. Plaintiff shall file an amended complaint within 21 days.",
+       "documents": [],
+       "ingested_at": "2026-09-11T08:00:00Z",
+       "hash": "71b883ac20a6f64896827329983045179acde1937be388ea89478b19be264572"
+      }
+     ]
+    },
+    "review": {
+     "version": 1,
+     "candidates": [
+      {
+       "matter": 28,
+       "candidate_type": "deadline",
+       "trigger_entry": 17,
+       "courtlistener_entry_id": 17,
+       "proposed_date": "2026-10-02",
+       "confidence": 0.7,
+       "reason": "Order or entry states an obligation within 21 days.",
+       "status": "pending"
+      }
+     ]
+    },
+    "stats": {
+     "seen": 1,
+     "skipped": 0,
+     "factsAdded": 1,
+     "provenanceAttached": 0,
+     "candidatesAdded": 1,
+     "ambiguousQueued": 0
+    }
+   }
+  },
+  {
+   "id": "bootstrap-matters",
+   "value": "BOOTSTRAP_MATTERS",
+   "expected": [
+    24,
+    25,
+    26,
+    28,
+    29,
+    32,
+    33
+   ]
+  },
+  {
+   "id": "filer/defendant-mtd",
+   "fn": "guessFiler",
+   "args": [
+    "Defendant's Motion to Dismiss",
+    true
+   ],
+   "expected": "defendant"
+  },
+  {
+   "id": "filer/minute-order",
+   "fn": "guessFiler",
+   "args": [
+    "MINUTE ORDER",
+    true
+   ],
+   "expected": "court"
+  },
+  {
+   "id": "filer/clerk-notice",
+   "fn": "guessFiler",
+   "args": [
+    "Clerk's Notice of Reassignment",
+    true
+   ],
+   "expected": "court"
+  },
+  {
+   "id": "filer/draft-unfiled",
+   "fn": "guessFiler",
+   "args": [
+    "draft - settlement email",
+    false
+   ],
+   "expected": "plaintiff"
+  },
+  {
+   "id": "filer/gmail-unfiled",
+   "fn": "guessFiler",
+   "args": [
+    "gmail thread with counsel",
+    false
+   ],
+   "expected": "plaintiff"
+  },
+  {
+   "id": "filer/opposition-mtd",
+   "fn": "guessFiler",
+   "args": [
+    "Opposition to Motion to Dismiss",
+    true
+   ],
+   "expected": "defendant"
+  },
+  {
+   "id": "filer/reply-iso",
+   "fn": "guessFiler",
+   "args": [
+    "Reply iso Motion to Dismiss",
+    true
+   ],
+   "expected": "defendant"
+  },
+  {
+   "id": "filer/demurrer",
+   "fn": "guessFiler",
+   "args": [
+    "Demurrer",
+    true
+   ],
+   "expected": "defendant"
+  },
+  {
+   "id": "filer/notice-resetting",
+   "fn": "guessFiler",
+   "args": [
+    "Notice Resetting Hearing",
+    true
+   ],
+   "expected": "court"
+  },
+  {
+   "id": "filer/court-order",
+   "fn": "guessFiler",
+   "args": [
+    "Court's scheduling order",
+    true
+   ],
+   "expected": "court"
+  },
+  {
+   "id": "filer/ag-space",
+   "fn": "guessFiler",
+   "args": [
+    "AG reply brief",
+    true
+   ],
+   "expected": "defendant"
+  },
+  {
+   "id": "filer/dag",
+   "fn": "guessFiler",
+   "args": [
+    "DAG Li's reply brief",
+    true
+   ],
+   "expected": "defendant"
+  },
+  {
+   "id": "filer/fac-default",
+   "fn": "guessFiler",
+   "args": [
+    "First Amended Complaint",
+    true
+   ],
+   "expected": "plaintiff"
+  },
+  {
+   "id": "doctype/fac",
+   "fn": "guessDocType",
+   "args": [
+    "First Amended Complaint",
+    10
+   ],
+   "expected": "amended_complaint"
+  },
+  {
+   "id": "doctype/fac-abbrev",
+   "fn": "guessDocType",
+   "args": [
+    "FAC - redlined",
+    10
+   ],
+   "expected": "amended_complaint"
+  },
+  {
+   "id": "doctype/complaint-dkt1",
+   "fn": "guessDocType",
+   "args": [
+    "Complaint",
+    1
+   ],
+   "expected": "complaint"
+  },
+  {
+   "id": "doctype/complaint-dkt2",
+   "fn": "guessDocType",
+   "args": [
+    "Complaint",
+    2
+   ],
+   "expected": "other"
+  },
+  {
+   "id": "doctype/mtd",
+   "fn": "guessDocType",
+   "args": [
+    "Motion to Dismiss",
+    7
+   ],
+   "expected": "motion_to_dismiss"
+  },
+  {
+   "id": "doctype/mtd-beats-reply",
+   "fn": "guessDocType",
+   "args": [
+    "MTD reply",
+    9
+   ],
+   "expected": "motion_to_dismiss"
+  },
+  {
+   "id": "doctype/mtd-beats-opposition",
+   "fn": "guessDocType",
+   "args": [
+    "Opposition to Defendant's MTD",
+    8
+   ],
+   "expected": "motion_to_dismiss"
+  },
+  {
+   "id": "doctype/reply",
+   "fn": "guessDocType",
+   "args": [
+    "Reply brief",
+    12
+   ],
+   "expected": "reply"
+  },
+  {
+   "id": "doctype/order",
+   "fn": "guessDocType",
+   "args": [
+    "Order granting motion",
+    null
+   ],
+   "expected": "order"
+  },
+  {
+   "id": "doctype/summons",
+   "fn": "guessDocType",
+   "args": [
+    "Summons issued",
+    2
+   ],
+   "expected": "summons"
+  },
+  {
+   "id": "doctype/pos",
+   "fn": "guessDocType",
+   "args": [
+    "Proof of Service",
+    3
+   ],
+   "expected": "proof_of_service"
+  },
+  {
+   "id": "doctype/pos-abbrev",
+   "fn": "guessDocType",
+   "args": [
+    "POS - Smith",
+    4
+   ],
+   "expected": "proof_of_service"
+  },
+  {
+   "id": "doctype/stipulation",
+   "fn": "guessDocType",
+   "args": [
+    "Stipulation to extend",
+    5
+   ],
+   "expected": "stipulation"
+  },
+  {
+   "id": "doctype/gmail",
+   "fn": "guessDocType",
+   "args": [
+    "Gmail - demand letter",
+    null
+   ],
+   "expected": "correspondence"
+  },
+  {
+   "id": "doctype/email",
+   "fn": "guessDocType",
+   "args": [
+    "Email to opposing counsel",
+    null
+   ],
+   "expected": "correspondence"
+  },
+  {
+   "id": "doctype/other",
+   "fn": "guessDocType",
+   "args": [
+    "Random exhibit",
+    20
+   ],
+   "expected": "other"
+  },
+  {
+   "id": "doctype/opposition",
+   "fn": "guessDocType",
+   "args": [
+    "Opposition to Motion for Summary Judgment",
+    14
+   ],
+   "expected": "opposition"
+  },
+  {
+   "id": "packet/ask",
+   "fn": "packetFlag",
+   "args": [
+    "internal/public/documents/matter-24/4-26-cv-05953-ASK/Name Conform Packet.pdf"
+   ],
+   "expected": "ask-packet"
+  },
+  {
+   "id": "packet/crb",
+   "fn": "packetFlag",
+   "args": [
+    "internal/public/documents/matter-24/3-26-cv-05953-CRB/Name Conform Packet.pdf"
+   ],
+   "expected": "crb-packet"
+  },
+  {
+   "id": "packet/none",
+   "fn": "packetFlag",
+   "args": [
+    "internal/public/documents/matter-26/Dkt 7 Motion to Dismiss.pdf"
+   ],
+   "expected": null
+  },
+  {
+   "id": "docketRow/fac-operative",
+   "fn": "toDocketRow",
+   "args": [
+    {
+     "path": "internal/public/documents/matter-24/Dkt 10 First Amended Complaint.pdf",
+     "filed": true
+    }
+   ],
+   "expected": {
+    "dkt": 10,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "amended_complaint",
+    "title": "Dkt 10 First Amended Complaint",
+    "path": "internal/public/documents/matter-24/Dkt 10 First Amended Complaint.pdf",
+    "filed": true,
+    "operative": true
+   }
+  },
+  {
+   "id": "docketRow/ask-packet-superseded",
+   "fn": "toDocketRow",
+   "args": [
+    {
+     "path": "internal/public/documents/matter-24/4-26-cv-05953-ASK/Name Conform Packet.pdf",
+     "filed": true
+    }
+   ],
+   "expected": {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "other",
+    "title": "Name Conform Packet",
+    "path": "internal/public/documents/matter-24/4-26-cv-05953-ASK/Name Conform Packet.pdf",
+    "filed": true,
+    "packet": "ask-packet",
+    "superseded_by": "crb-packet",
+    "operative": false
+   }
+  },
+  {
+   "id": "docketRow/crb-packet-operative",
+   "fn": "toDocketRow",
+   "args": [
+    {
+     "path": "internal/public/documents/matter-24/3-26-cv-05953-CRB/Dkt 10 First Amended Complaint.pdf",
+     "filed": true
+    }
+   ],
+   "expected": {
+    "dkt": 10,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "amended_complaint",
+    "title": "Dkt 10 First Amended Complaint",
+    "path": "internal/public/documents/matter-24/3-26-cv-05953-CRB/Dkt 10 First Amended Complaint.pdf",
+    "filed": true,
+    "operative": true,
+    "packet": "crb-packet"
+   }
+  },
+  {
+   "id": "docketRow/mtd",
+   "fn": "toDocketRow",
+   "args": [
+    {
+     "path": "internal/public/documents/matter-26/Dkt 7 Motion to Dismiss.pdf",
+     "filed": true
+    }
+   ],
+   "expected": {
+    "dkt": 7,
+    "date": null,
+    "filer": "defendant",
+    "type": "motion_to_dismiss",
+    "title": "Dkt 7 Motion to Dismiss",
+    "path": "internal/public/documents/matter-26/Dkt 7 Motion to Dismiss.pdf",
+    "filed": true
+   }
+  }
+ ]
+}

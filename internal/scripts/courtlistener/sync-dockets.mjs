@@ -28,9 +28,10 @@ import {
   writeTimeline,
 } from "./io.mjs";
 import { reconcileEntries } from "./reconcile.mjs";
+import { loadDocketRules } from "./rules.mjs";
 
 /** Live federal matters for the first controlled ingest. Historical / dismissed dockets stay off this list. */
-export const BOOTSTRAP_MATTERS = Object.freeze([24, 25, 26, 28, 29, 32, 33]);
+export const BOOTSTRAP_MATTERS = Object.freeze([...loadDocketRules().bootstrapMatters]);
 export const ACTIVE_LIFECYCLES = new Set(["active", "pre_filing"]);
 
 export function parseArgs(argv) {

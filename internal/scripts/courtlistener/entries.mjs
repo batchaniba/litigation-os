@@ -2,6 +2,12 @@
 // Confirmed filings/orders are objective. Deadlines stay candidates until approved.
 
 import { createHash } from "node:crypto";
+import { loadDocketRules, matchFirstRule } from "./rules.mjs";
+
+// Family 3 extraction: interpretation strategy lives in
+// internal/src/data/rules/docket-interpretation.json. This module only
+// renders those rules.
+const RULES = loadDocketRules();
 
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
@@ -75,23 +81,11 @@ export function normalizeDocketEntry(raw, { matter, docketId, ingestedAt }) {
 }
 
 export function inferFactType(text) {
-  const value = String(text ?? "");
-  if (/\b(?:minute\s+order|order|opinion|findings?\s+and\s+recommendations?)\b/i.test(value)) {
-    return "order";
-  }
-  if (/\b(?:hearing|conference|calendar)\b/i.test(value)) return "hearing";
-  return "filing";
+  return matchFirstRule(RULES.factTypeRules, text)?.factType ?? "filing";
 }
 
 export function inferFactActor(text) {
-  const value = String(text ?? "");
-  if (/\b(?:order|clerk|court|magistrate|judge)\b/i.test(value) && !/\bmotion\b/i.test(value)) {
-    return "court";
-  }
-  if (/\b(?:defendant|respondent|opposing)\b/i.test(value)) return "opposing";
-  if (/\bplaintiff\b/i.test(value)) return "you";
-  if (/\bmotion\s+to\s+dismiss\b/i.test(value)) return "opposing";
-  return "unknown";
+  return matchFirstRule(RULES.factActorRules, text)?.actor ?? "unknown";
 }
 
 export function factPrefix(type) {
@@ -100,46 +94,43 @@ export function factPrefix(type) {
   return "FILED";
 }
 
-const EXPLICIT_DATE_RE =
-  /\b(?:due|deadline|on or before|no later than)\s+(?:on\s+|by\s+)?(\d{4}-\d{2}-\d{2}|[A-Z][a-z]{2,8}\.?\s+\d{1,2},\s+\d{4})/i;
-const WITHIN_DAYS_RE = /\bwithin\s+(\d+)\s+days?\b/i;
-const SHALL_FILE_RE = /\bshall\s+(?:file|serve|respond|amend|submit)\b/i;
+export function detectDeadlineCandidate(text, dateFiled) {
+  const value = String(text ?? "");
+  const explicit = RULES.deadlineCandidates.explicitDate;
+  const stated = explicit.re.exec(value);
+  if (stated) {
+    const proposed = toIsoDate(stated[1]);
+    if (proposed) {
+      return {
+        candidate_type: "deadline",
+        proposed_date: proposed,
+        confidence: explicit.confidence,
+        reason: explicit.reasonTemplate.replace("{date}", stated[1]),
+      };
+    }
+  }
+  const within = RULES.deadlineCandidates.withinDays;
+  const found = within.re.exec(value);
+  if (found && within.requiredAny.some((re) => re.test(value))) {
+    const days = Number(found[1]);
+    const proposed = addCalendarDays(dateFiled, days);
+    if (proposed) {
+      return {
+        candidate_type: "deadline",
+        proposed_date: proposed,
+        confidence: within.confidence,
+        reason: within.reasonTemplate.replace("{days}", String(days)),
+      };
+    }
+  }
+  return null;
+}
 
 function toIsoDate(value) {
   if (/^\d{4}-\d{2}-\d{2}$/.test(value)) return value;
   const parsed = new Date(String(value).replace(/\./g, ""));
   if (Number.isNaN(parsed.getTime())) return null;
   return `${parsed.getFullYear()}-${String(parsed.getMonth() + 1).padStart(2, "0")}-${String(parsed.getDate()).padStart(2, "0")}`;
-}
-
-export function detectDeadlineCandidate(text, dateFiled) {
-  const value = String(text ?? "");
-  const explicit = value.match(EXPLICIT_DATE_RE);
-  if (explicit) {
-    const proposed = toIsoDate(explicit[1]);
-    if (proposed) {
-      return {
-        candidate_type: "deadline",
-        proposed_date: proposed,
-        confidence: 0.9,
-        reason: `Entry states a due date of ${explicit[1]}.`,
-      };
-    }
-  }
-  const within = value.match(WITHIN_DAYS_RE);
-  if (within && (SHALL_FILE_RE.test(value) || /\b(?:due|deadline|must|amended complaint)\b/i.test(value))) {
-    const days = Number(within[1]);
-    const proposed = addCalendarDays(dateFiled, days);
-    if (proposed) {
-      return {
-        candidate_type: "deadline",
-        proposed_date: proposed,
-        confidence: 0.7,
-        reason: `Order or entry states an obligation within ${days} days.`,
-      };
-    }
-  }
-  return null;
 }
 
 function clip(text, max = 220) {
@@ -159,7 +150,9 @@ export function buildTimelineEvent(normalized, { verifiedAt } = {}) {
     event: `${factPrefix(type)} — ${dkt}${clip(normalized.description) || "docket entry"}`.trim(),
     matters: [normalized.matter],
     type,
-    upcoming: false,
+    // Family 3 policy (rules/docket-interpretation.json): deadlines from
+    // docket text never become live calendar clocks on their own.
+    upcoming: RULES.policies.autoUpcomingFromDocket === true,
     filed: true,
     actor,
     source_type: "courtlistener",
