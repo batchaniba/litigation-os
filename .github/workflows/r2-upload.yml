@@ -1,0 +1,72 @@
+name: R2 Document Upload
+
+# Upload-only mirror: pushes to the `documents` branch copy new/changed PDFs
+# to the Cloudflare R2 `litigation-documents` bucket. Never deletes from R2.
+# Key scheme: sha256/<first2>/<rest>.pdf (content-addressed, idempotent —
+# the same scheme as the one-time migration, so `npm run docs:fetch` keeps
+# resolving). The manifest on main stays the index; this workflow only
+# moves bytes.
+#
+# House-rule exception (AGENTS.md): the only non-CourtListener Actions
+# workflow, approved 2026-09-16. Follow-up B (retiring the `documents`
+# branch) stays open until this has proven itself.
+
+on:
+  push:
+    branches: [documents]
+    paths:
+      - "internal/public/documents/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: r2-upload-documents
+  cancel-in-progress: false
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+      R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+      R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+      R2_BUCKET: ${{ secrets.R2_BUCKET }}
+    steps:
+      - name: Checkout documents branch
+        uses: actions/checkout@v7
+        with:
+          ref: documents
+          fetch-depth: 0
+          filter: blob:none
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /internal/public/documents/
+            /internal/scripts/r2-upload.py
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install boto3
+        run: pip install boto3
+
+      - name: Collect PDFs to upload
+        run: |
+          BEFORE="${{ github.event.before }}"
+          if [ "$BEFORE" = "0000000000000000000000000000000000000000" ] \
+             || [ -z "$BEFORE" ] \
+             || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            # New branch history or manual run: reconcile everything.
+            git ls-files 'internal/public/documents/**' | grep -i '\.pdf$' > /tmp/upload-list.txt || true
+          else
+            git diff --name-only --diff-filter=ACM "$BEFORE" "${{ github.sha }}" \
+              -- 'internal/public/documents/**' | grep -i '\.pdf$' > /tmp/upload-list.txt || true
+          fi
+          wc -l /tmp/upload-list.txt
+
+      - name: Upload to R2
+        run: python3 internal/scripts/r2-upload.py --list /tmp/upload-list.txt
