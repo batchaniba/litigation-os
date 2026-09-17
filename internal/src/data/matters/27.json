@@ -1,10 +1,15 @@
 {
   "number": 27,
+  "last_updated": "2026-09-16",
   "caption": "Newanforbi v. Randstad, et al.",
   "case_no": "26CV199902",
   "court": "Alameda Sup. Ct. (Rene C. Davidson Courthouse)",
   "claims": "PC §290.46(j)(2)(E) Violation, Wrongful Termination in Violation of Public Policy, ICRAA, Invasion of Privacy, Negligence Per Se (Evid. Code §669), UCL §17200",
+<<<<<<< HEAD
   "status": "Clerk Pesko ENTERED default as to Randstad US, LLC on Sep. 16, 2026. Prove-up packet ready: $45,000 itemized ($10k ICRAA + $10k PC additional + $25k penalty) + $543.70 interest = $45,543.70. 425.115 $500k cap recited; $0 punitive asked. Do not CIV-100 RK until eCourt on Gurney's CIV-141. $25k global expires 5:00 p.m. PT Sep. 18. CRC 3.110(h) Oct. 31 / Nov. 2. CMC Dec. 17, Weathers.",
+=======
+  "status": "Tai served Gurney's CIV-141 for RK at 4:21 p.m. (unstamped; do not treat Oct. 14 as live). Moskow served the Chapman-signed counterpart at 4:37 p.m. (order unsigned). Do not CIV-100 RK. Randstad's Sept. 15 clock lapsed — CIV-100 Randstad is file-if-silent Sept. 16 if eCourt is empty. $25k global expires 5:00 p.m. PT Sept. 18. CMC Dec. 17, Weathers.",
+>>>>>>> origin/main
   "lifecycle": "active",
   "proceeding": "state_civil",
   "phase": "default",
@@ -413,7 +418,11 @@
     }
   ],
   "archived": false,
+<<<<<<< HEAD
   "status_label": "Randstad prove-up ready — not RK",
+=======
+  "status_label": "RK appeared — Randstad silent Sep. 15",
+>>>>>>> origin/main
   "opposing_counsel": [
     {
       "name": "Nathan D. Chapman",

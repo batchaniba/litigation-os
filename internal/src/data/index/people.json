@@ -1,0 +1,68 @@
+{
+  "people": [
+    {
+      "id": "haiyang-li",
+      "name": "Haiyang A. Li",
+      "kind": "counsel",
+      "bar": "CA 288063",
+      "email": "Haiyang.Li@doj.ca.gov",
+      "card": "internal/docs/legal-intel/counsel/haiyang-li.json",
+      "appears_in": [24, 32, 2]
+    },
+    {
+      "id": "vanessa-ing",
+      "name": "Vanessa Ing",
+      "kind": "counsel",
+      "email": "vanessa.ing@doj.ca.gov",
+      "appears_in": [20]
+    },
+    {
+      "id": "chadwick-l-williams",
+      "name": "Chadwick L. Williams",
+      "kind": "counsel",
+      "card": "internal/docs/legal-intel/counsel/chadwick-l-williams.json",
+      "appears_in": [27]
+    },
+    {
+      "id": "nathan-d-chapman",
+      "name": "Nathan D. Chapman",
+      "kind": "counsel",
+      "card": "internal/docs/legal-intel/counsel/nathan-d-chapman.json",
+      "appears_in": [27]
+    },
+    {
+      "id": "tod-gurney",
+      "name": "Tod C. Gurney",
+      "kind": "counsel",
+      "card": "internal/docs/legal-intel/counsel/tod-gurney-hand.md",
+      "appears_in": [27]
+    },
+    {
+      "id": "daniel-fischer",
+      "name": "Daniel Fischer",
+      "kind": "process_server",
+      "firm": "Run With It",
+      "appears_in": [32]
+    },
+    {
+      "id": "charles-r-breyer",
+      "name": "Hon. Charles R. Breyer",
+      "kind": "judge",
+      "card": "internal/docs/legal-intel/judges/charles-r-breyer.md",
+      "appears_in": [24]
+    },
+    {
+      "id": "jenna-m-whitman",
+      "name": "Hon. Jenna M. Whitman",
+      "kind": "judge",
+      "appears_in": [20]
+    },
+    {
+      "id": "william-mcmahon",
+      "name": "William J. McMahon",
+      "kind": "counsel",
+      "card": "internal/docs/legal-intel/counsel/william-mcmahon-hand.md",
+      "appears_in": [33]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+CHP dashcam / MVARS transcript — November 1, 2024, I-580 East, Livermore.
+Window: 00:54:36–01:57:10. Incident RJ68845.
+
+Anchors agents may cite:
+- RJ68845#t=00:54:36 — encounter window opens.
+- RJ68845#t=01:12:04 — odor of alcohol was never verbalized on the recording.
+
+Four report claims the transcript disproves:
+1. "strong distinct odor of an alcoholic beverage" — never verbalized during the 62-minute encounter.
+2. "slurred" speech — contradicted by coherent, articulate speech throughout.
+3. "seemed very confused and disoriented" — Plaintiff correctly identified his location and read highway signs.
+4. "BEVERAGE PRESENT: YES" — only liquid found was urine in a cup.
+
+PDF: /documents/matter-33/incident/Exhibit_A_CHP_Video_Transcript.pdf
+This sidecar is a hand extract of the proof points. Replace with pdftotext when the documents branch is pulled.

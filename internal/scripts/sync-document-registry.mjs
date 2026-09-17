@@ -14,6 +14,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { loadMatters, MATTERS_DIR, matterFileName } from "./load-matters.mjs";
+import { docketPath, writeJson } from "./lib/matter-layout.mjs";
 import {
   REGISTRY_PATH,
   labelFromPath,
@@ -130,7 +131,7 @@ function migrateMatterDocuments(matter) {
 }
 
 function matterPayload(matter) {
-  const { __sourceFile, ...rest } = matter;
+  const { __sourceFile, __layout, __sourceDir, ...rest } = matter;
   const migrated = {
     ...rest,
     documents: migrateMatterDocuments(matter),
@@ -172,6 +173,26 @@ function checkRegistryFresh() {
 
   for (const matter of matters) {
     const expected = matterPayload(matter);
+    if (matter.__layout === "split") {
+      const filePath = docketPath(MATTERS_DIR, matter.number);
+      if (!fs.existsSync(filePath)) {
+        console.error(`Matter ${matter.number}: missing docket.json`);
+        ok = false;
+        continue;
+      }
+      for (const [i, doc] of (matter.documents ?? []).entries()) {
+        if (!doc?.path) {
+          console.error(`Matter ${matter.number} documents[${i}]: missing path`);
+          ok = false;
+          continue;
+        }
+        if (!byPath.has(doc.path) && !diskPaths.has(doc.path)) {
+          console.error(`Matter ${matter.number} documents[${i}]: path not in registry: ${doc.path}`);
+          ok = false;
+        }
+      }
+      continue;
+    }
     const filePath = path.join(MATTERS_DIR, matterFileName(matter.number));
     const actual = fs.readFileSync(filePath, "utf8");
     if (actual !== expected) {
@@ -235,14 +256,36 @@ fs.writeFileSync(REGISTRY_PATH, registryPayload);
 let rewritten = 0;
 let overridesKept = 0;
 for (const matter of matters) {
-  const payload = matterPayload(matter);
-  const filePath = path.join(MATTERS_DIR, matterFileName(matter.number));
-  const before = fs.readFileSync(filePath, "utf8");
-  if (before !== payload) {
-    fs.writeFileSync(filePath, payload);
-    rewritten += 1;
+  const migratedDocs = migrateMatterDocuments(matter);
+  if (matter.__layout === "split") {
+    const filePath = docketPath(MATTERS_DIR, matter.number);
+    const docket = JSON.parse(fs.readFileSync(filePath, "utf8"));
+    const byPathDocs = new Map(migratedDocs.map((d) => [d.path, d]));
+    let changed = false;
+    const next = docket.map((row) => {
+      const migrated = byPathDocs.get(row.path);
+      if (!migrated) return row;
+      const out = { ...row, path: migrated.path };
+      if (typeof migrated.filed === "boolean") out.filed = migrated.filed;
+      if (migrated.label) out.label = migrated.label;
+      else delete out.label;
+      if (JSON.stringify(out) !== JSON.stringify(row)) changed = true;
+      return out;
+    });
+    if (changed) {
+      writeJson(filePath, next);
+      rewritten += 1;
+    }
+  } else {
+    const payload = matterPayload(matter);
+    const filePath = path.join(MATTERS_DIR, matterFileName(matter.number));
+    const before = fs.readFileSync(filePath, "utf8");
+    if (before !== payload) {
+      fs.writeFileSync(filePath, payload);
+      rewritten += 1;
+    }
   }
-  for (const doc of migrateMatterDocuments(matter)) {
+  for (const doc of migratedDocs) {
     if (doc.label) overridesKept += 1;
   }
 }
