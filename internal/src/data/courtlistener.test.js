@@ -183,6 +183,9 @@ describe("reconcileEntries", () => {
     const first = reconcileEntries({ timeline: [], normalizedEntries: [mtd] });
     expect(first.stats.factsAdded).toBe(1);
     expect(first.timeline[0].upcoming).toBe(false);
+    expect(first.splitEvents).toHaveLength(1);
+    expect(first.splitEvents[0].upcoming).toBe(false);
+    expect(first.splitEvents[0].dkt).toBe(15);
     const second = reconcileEntries({
       timeline: first.timeline,
       ledger: first.ledger,
@@ -291,7 +294,16 @@ describe("reconcileEntries", () => {
       trigger_entry: 17,
       proposed_date: "2026-10-02",
       status: "pending",
+      proposed_clock: {
+        matter: 28,
+        id: "28-deadline-cl-17",
+        date: "2026-10-02",
+        kind: "deadline",
+        status: "open",
+        source_dkt: 17,
+      },
     });
+    expect(result.splitEvents[0].upcoming).toBe(false);
     expect(result.timeline.some((event) => event.upcoming === true)).toBe(false);
   });
 });

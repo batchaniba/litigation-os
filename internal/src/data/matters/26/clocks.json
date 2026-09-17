@@ -15,11 +15,12 @@
     "date": "2026-09-16",
     "date_label": "Sep. 16, 2026",
     "kind": "deadline",
-    "status": "open",
+    "status": "satisfied",
     "source_dkt": 7,
     "title": "Rule 15(a)(1)(B) amendment-as-of-right window — Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). UPS served the MTD by mail Aug. 26, 2026…",
     "actor": "you",
-    "source": "/documents/matter-26/Dkt 07-3 - Certificate of Service (Filed Aug 26 2026).pdf"
+    "source": "/documents/matter-26/Dkt 07-3 - Certificate of Service (Filed Aug 26 2026).pdf",
+    "retired_reason": "Standing on Dkt. 10; not amending as of right. Hearing remains Oct. 7 on Dkt. 9."
   },
   {
     "id": "26-deadline-3",

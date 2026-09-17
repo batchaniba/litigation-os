@@ -805,7 +805,29 @@
      "provenanceAttached": 0,
      "candidatesAdded": 0,
      "ambiguousQueued": 0
-    }
+    },
+    "splitEvents": [
+     {
+      "ts": "2026-09-11T00:00:00-07:00",
+      "date": "Sep. 11, 2026",
+      "matter": 28,
+      "matters": [28],
+      "type": "filing",
+      "title": "FILED — Dkt. 15 MOTION TO DISMISS filed by Defendant Shannon Smith",
+      "path": null,
+      "dkt": 15,
+      "filed": true,
+      "actor": "opposing",
+      "source_type": "courtlistener",
+      "upcoming": false,
+      "external": {
+       "provider": "courtlistener",
+       "docket_id": 73646240,
+       "docket_entry_id": 99887766,
+       "entry_number": 15
+      }
+     }
+    ]
    }
   },
   {
@@ -878,7 +900,16 @@
        "proposed_date": "2026-10-02",
        "confidence": 0.7,
        "reason": "Order or entry states an obligation within 21 days.",
-       "status": "pending"
+       "status": "pending",
+       "proposed_clock": {
+        "matter": 28,
+        "id": "28-deadline-cl-17",
+        "date": "2026-10-02",
+        "kind": "deadline",
+        "title": "Order or entry states an obligation within 21 days.",
+        "status": "open",
+        "source_dkt": 17
+       }
       }
      ]
     },
@@ -889,7 +920,29 @@
      "provenanceAttached": 0,
      "candidatesAdded": 1,
      "ambiguousQueued": 0
-    }
+    },
+    "splitEvents": [
+     {
+      "ts": "2026-09-11T00:00:00-07:00",
+      "date": "Sep. 11, 2026",
+      "matter": 28,
+      "matters": [28],
+      "type": "order",
+      "title": "ORDER — Dkt. 17 ORDER. Plaintiff shall file an amended complaint within 21 days.",
+      "path": null,
+      "dkt": 17,
+      "filed": true,
+      "actor": "court",
+      "source_type": "courtlistener",
+      "upcoming": false,
+      "external": {
+       "provider": "courtlistener",
+       "docket_id": 73646240,
+       "docket_entry_id": 17,
+       "entry_number": 17
+      }
+     }
+    ]
    }
   },
   {
