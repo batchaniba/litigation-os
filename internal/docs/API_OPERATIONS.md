@@ -72,10 +72,10 @@ write with a machine-readable reason when they fail.
 | Operation | Signature | Invariants enforced |
 |---|---|---|
 | `recordTimelineEvent` | `({date, type, actor, matters[], title, source?, upcoming}) -> event id` | date parses; `upcoming:true` requires `source`; no duplicate `(date, type, matters)` upcoming event exists (the #826 rule); `last_updated` bumped on touched matters |
-| `retireUpcomingEvent` | `({eventId, reason}) -> ok` | flips `upcoming` true→false only; records `superseded_by` / `retired_reason`; never deletes |
+| `retireUpcomingEvent` | `({eventId, reason}) -> ok` | tombs `events.jsonl`; matching `clocks.json` row → `satisfied`; never deletes |
 | `setNextClock` | `({matter, clock}) -> ok` | split matters write `clocks.json`, never timeline prose; legacy write timeline; exactly one open clock per kind per matter |
 | `updateMatterIdentity` | `({n, patch}) -> ok` | schema-validated; `matter.json` stays ≤80 lines / 8KB; `last_updated` = today |
-| `catalogDocument` | `({matter, path, sha256, size}) -> ok` | manifest + registry updated together (the #762 lesson: one without the other fails CI); R2 key derived, never supplied |
+| `catalogDocument` | `({matter, path, sha256, size}) -> ok` | manifest + registry updated together; R2 key derived, never supplied; HEADs R2 when configured |
 | `scaffoldMatter` | `({n, caption}) -> paths` | wraps `scaffold-matter.mjs`; `n` unused; layout recorded in index |
 | `splitMatter` | `({n}) -> paths` | wraps `split-matter.mjs`; refuses if already split |
 

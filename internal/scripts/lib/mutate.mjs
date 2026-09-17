@@ -16,7 +16,8 @@ import { validateMatter } from "./matter-schema.mjs";
 import { loadSplitMatter, paddedMatterNumber } from "./matter-layout.mjs";
 import { MATTER_LIFECYCLES } from "../matter-lifecycle.mjs";
 import { MATTER_PHASES } from "../matter-proceeding.mjs";
-import { keyForSha256 } from "./r2-client.mjs";
+import { isConfigured as r2IsConfigured, keyForSha256, objectExists } from "./r2-client.mjs";
+import { DEAD_CLOCK_STATUSES } from "./upcoming-from-clocks.mjs";
 import { REPO_ROOT } from "./root.mjs";
 import { matterByNumber } from "./query.mjs";
 
@@ -237,6 +238,22 @@ export function retireUpcomingEvent({ matter, date, reason } = {}) {
       path.join(REPO_ROOT, `${splitDirRel(n)}/events.jsonl`),
       `${JSON.stringify(tombstone)}\n`,
     );
+    const clockRel = `${splitDirRel(n)}/clocks.json`;
+    const clocks = readJSON(clockRel);
+    const liveOnDay = clocks.filter(
+      (c) => c.date === key && !DEAD_CLOCK_STATUSES.has(c.status),
+    );
+    let matched = liveOnDay;
+    if (liveOnDay.length > 1) {
+      matched = liveOnDay.filter((c) =>
+        orig.title.startsWith(String(c.title ?? "").replace(/…$/, "").trim()),
+      );
+    }
+    if (matched.length === 1) {
+      matched[0].status = "satisfied";
+      matched[0].retired_reason = reason;
+      writeJSON(clockRel, clocks);
+    }
     bumpLastUpdated(n);
     return { ok: true, policy: WRITE_POLICY, retired: { matter: n, ts: orig.ts, title: orig.title, reason } };
   }
@@ -389,7 +406,7 @@ export function updateMatterIdentity({ n, patch } = {}) {
 /** Catalog one document across all three stores — manifest, registry, and
  *  the matter's documents[] — or none. The R2 key is derived from the
  *  sha256, never supplied. (The #762 invariant, now structural.) */
-export function catalogDocument({
+export async function catalogDocument({
   matter,
   path: docPath,
   sha256,
@@ -408,6 +425,10 @@ export function catalogDocument({
     fail("matter label override must differ from the registry canonical label (or omit it)");
   }
   const r2Key = keyForSha256(sha256.toLowerCase());
+  if (r2IsConfigured()) {
+    const exists = await objectExists(r2Key);
+    if (!exists) fail(`R2 object missing: ${r2Key} — PUT the bytes before cataloging`);
+  }
 
   const manifest = readJSON("internal/src/data/documents/manifest.json");
   if (!manifest.files.some((f) => f.sha256.toLowerCase() === sha256.toLowerCase())) {

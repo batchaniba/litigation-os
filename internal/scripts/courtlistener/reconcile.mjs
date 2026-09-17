@@ -9,6 +9,8 @@ import {
   docketNumberFromEventText,
   formatTimelineDate,
   inferFactType,
+  proposedClockFromDeadline,
+  splitEventFromNormalized,
 } from "./entries.mjs";
 import { loadDocketRules } from "./rules.mjs";
 
@@ -159,6 +161,7 @@ export function reconcileEntries({
     candidatesAdded: 0,
     ambiguousQueued: 0,
   };
+  const splitEvents = [];
 
   for (const normalized of normalizedEntries ?? []) {
     stats.seen += 1;
@@ -218,10 +221,13 @@ export function reconcileEntries({
         const event = { ...fact, external: cleanExternal(fact.external) };
         nextTimeline.unshift(event);
         stats.factsAdded += 1;
+        const split = splitEventFromNormalized(normalized, event);
+        if (split) splitEvents.push(split);
       }
     }
 
     if (deadline) {
+      const proposed_clock = proposedClockFromDeadline(normalized, deadline);
       const candidate = {
         matter: normalized.matter,
         candidate_type: deadline.candidate_type,
@@ -231,6 +237,7 @@ export function reconcileEntries({
         confidence: deadline.confidence,
         reason: deadline.reason,
         status: RULES.review.pendingStatus,
+        ...(proposed_clock ? { proposed_clock } : {}),
       };
       const dup = nextReview.candidates.some(
         (row) =>
@@ -246,5 +253,5 @@ export function reconcileEntries({
     }
   }
 
-  return { timeline: nextTimeline, ledger: nextLedger, review: nextReview, stats };
+  return { timeline: nextTimeline, ledger: nextLedger, review: nextReview, stats, splitEvents };
 }

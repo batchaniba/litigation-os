@@ -68,9 +68,12 @@ git commit -m "Add Matter NN filing"
 
 The pre-commit hook runs `npm run sync:all` (hashes *only the new/resized
 file*), and if `manifest.json` changed it runs `npm run documents:push`.
-Nothing on `main` ever sees the **library** bytes. Vercel still rewrites
-`/documents/:path*` toward GitHub Pages, but that origin is a 404 (the
-Actions deploy is gone). Do not point phone taps at it.
+Nothing on `main` ever sees the **library** bytes. Vercel rewrites
+`/documents/:path*` to the Cloudflare Worker
+(`https://litigation-doc-api.ss8sxswwkt.workers.dev/documents`), which maps
+path → sha256 and serves the R2 object. That rewrite is not a claim of HTTP
+200. Do not point phone taps at it until a live GET of the Serrato FAC
+**and** a current mailing packet returns 200.
 
 Short-link taps (`/serrato-opp`, `/habeas-discharge`) stay as identical
 copies at `internal/public/{slug}.pdf` on `main`, with Content-Disposition
@@ -142,10 +145,12 @@ to `documents` once that YAML is on the branch). Upload-only; never deletes.
 Do not retire the branch until a reconcile run has proven itself.
 
 GitHub Pages was the public origin for `/documents/*`. The Actions workflow
-is gone and the Pages host now 404s. **Phone taps do not use it.** They stay
-as slug copies on Vercel until a **public** R2 (or rewrite) origin returns
-HTTP 200 for the Serrato FAC and a current mailing packet. Then `/{slug}`
-can rewrite to encoded `/documents/...` and the copies leave `main`.
+is gone and the Pages host 404s. The Vercel rewrite now targets the Worker
+path map. **Phone taps do not use it.** They stay as slug copies on Vercel
+until a **public** GET of the Serrato FAC and a current mailing packet
+returns HTTP 200. Then `/{slug}` can rewrite to encoded `/documents/...`
+and the copies leave `main`. Do not claim 200 in the README until that
+check lands.
 
 ## After clone
 

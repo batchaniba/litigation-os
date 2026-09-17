@@ -25,9 +25,11 @@ try {
       process.stdout.write(DOCUMENTS_PULL_USAGE);
       process.exit(0);
     }
-    const result = pullDocuments(opts);
+    const result = await pullDocuments(opts);
     if (result.list) {
       process.stdout.write(`${result.list.join("\n")}\n`);
+    } else if (result.via === "r2") {
+      console.log(`OK — pulled ${result.count} files from R2.`);
     } else if (result.paths.length === 1 && result.paths[0].endsWith("/documents")) {
       console.log("OK — document tree restored from origin/documents.");
     } else {

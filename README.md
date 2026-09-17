@@ -233,8 +233,6 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 <!-- PORTFOLIO:UPCOMING_DEADLINES:START -->
 | Date | Matter | Event |
 |---|---|---|
-| Sep. 16, 2026 | 26 | Rule 15(a)(1)(B) amendment-as-of-right window — Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). UPS served the MTD by mail Aug. 26, 2026… |
-| Sep. 16, 2026 | 30 | Anticipated filing date (computed) — Complaint v9 (Moua and DOES 1-10), Newanforbi v. Moua, et al. (Matter 30); 15 days after the anticipated Sep. 1, 2026… |
 | Sep. 17, 2026 | 32 | FILE — signed 415.20(b) declaration + Exhibit A USPS receipt + POS in Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK) after the September 16 postmark. San… |
 | Sep. 17, 2026 | 32 | MAIL — CCP § 415.20(b) first-class follow-up to Dkt. 16 / 16-1 for Santiago Meza-Gonzalez in Nforbi v. Meza-Gonzalez et al. (N.D. Cal. 4:26-cv-08271-ASK).… |
 | Sep. 17, 2026 | 40 | WATCH — First Advantage saliva-drug-test schedule for TaskUs Holdings, Inc. expires 11:49 a.m. Eastern (Schedule ID 96558696; LabCorp-Milpitas). A missed… |
@@ -380,7 +378,7 @@ Plaintiff is representing himself pro se across all 40 matters. The figures belo
 - **Framework:** React 19
 - **Build tool:** Vite 8
 - **Linting:** ESLint 9 flat config (`eslint.config.js`) for JS/TS, ruff (`pyproject.toml`) for Python — ESLint runs in the `pre-push` hook; run `ruff check .` by hand
-- **Deployment:** Vercel, on a schedule (see Deployment). GitHub Pages holds the last-published PDF library only.
+- **Deployment:** Vercel, on a schedule (see Deployment). `/documents/*` rewrites to the Cloudflare Worker path map; slug copies stay on Vercel until that origin returns 200.
 - **CI:** none. The `pre-push` hook runs the gate locally; see [Local Development](#local-development).
 - **Fonts:** Cormorant Garamond (headings), DM Sans (UI)
 - **Styling:** `internal/src/styles/app.css` + component styles
@@ -543,13 +541,13 @@ npm run build   # outputs to dist/ (copies public/documents unless VITE_COPY_DOC
 npm run preview # preview the production build locally
 ```
 
-Vercel builds with `VITE_COPY_DOCUMENTS=0` and `PORTFOLIO_SKIP_DISK_DOCS=1` so they never fetch or copy the PDF library; `/documents/*` is rewritten to the GitHub Pages origin that holds the last-published copy. Details: [DOCUMENT_STORE.md](internal/docs/DOCUMENT_STORE.md).
+Vercel builds with `VITE_COPY_DOCUMENTS=0` and `PORTFOLIO_SKIP_DISK_DOCS=1` so they never fetch or copy the PDF library; `/documents/*` is rewritten to the Cloudflare Worker path map. Details: [DOCUMENT_STORE.md](internal/docs/DOCUMENT_STORE.md).
 
 ## Deployment
 
-**Vercel** serves production from the domain root, but **does not deploy on push**. The committed `vercel.json` sets `git.deploymentEnabled: false`; production advances when the scheduled Deploy Hook fires (Cloudflare Worker in `internal/workers/vercel-deploy-cron/`, four times a day, only if `main` is ahead of what is live) or when you trigger it by hand. Vercel's Ignored Build Step runs `internal/scripts/vercel-ignore-build.sh`, which skips any build whose inputs did not change. `/documents/:path*` is rewritten to the GitHub Pages copy of the library so the Vercel build does not copy 660 MB of PDFs. Dashboard settings, cost model, and the "deploy now" commands are in [VERCEL_DEPLOYS.md](internal/docs/VERCEL_DEPLOYS.md). After a fresh clone, run `npm run documents:pull` before `npm run dev`.
+**Vercel** serves production from the domain root, but **does not deploy on push**. The committed `vercel.json` sets `git.deploymentEnabled: false`; production advances when the scheduled Deploy Hook fires (Cloudflare Worker in `internal/workers/vercel-deploy-cron/`, four times a day, only if `main` is ahead of what is live) or when you trigger it by hand. Vercel's Ignored Build Step runs `internal/scripts/vercel-ignore-build.sh`, which skips any build whose inputs did not change. `/documents/:path*` is rewritten to the Cloudflare Worker (`https://litigation-doc-api.ss8sxswwkt.workers.dev/documents`), which maps path → sha256 and reads R2. That rewrite is the destination, not a proven HTTP 200; phone-tap slug copies stay on Vercel until a live GET of the Serrato FAC and a current mailing packet returns 200. Dashboard settings, cost model, and the "deploy now" commands are in [VERCEL_DEPLOYS.md](internal/docs/VERCEL_DEPLOYS.md). After a fresh clone, run `npm run documents:pull` before `npm run dev`.
 
-**GitHub Pages** is no longer deployed. There is no GitHub Actions CI or deploy workflow in this repo; the only workflows left are the CourtListener ones. `https://newanforbi.github.io/interactive-litigation-portfolio/documents/` still serves the PDF library as of its last Actions deploy, and the Vercel rewrite still points there, so existing filing links keep working. New PDFs pushed with `npm run documents:push` land on the `documents` branch but are **not** published until a replacement host for the library is chosen (Cloudflare R2 behind the same `/documents/*` rewrite is the intended next step). `vite.config.js` keeps the `GITHUB_PAGES` base-path switch for a manual Pages build if one is ever needed.
+**GitHub Pages** is no longer deployed. There is no GitHub Actions CI. Remaining workflows are CourtListener, R2 upload, and Worker deploy. `https://newanforbi.github.io/interactive-litigation-portfolio/documents/` 404s. New PDFs pushed with `npm run documents:push` land on the `documents` branch and, when `R2_*` is set, on R2 plus the path index. `vite.config.js` keeps the `GITHUB_PAGES` base-path switch for a manual Pages build if one is ever needed.
 
 **Pre-push gate.** With CI gone, `.githooks/pre-push` is the only automated check before `main`: lint, typecheck, `validate-portfolio`, golden damages math, the unit suite, and the fabricated-citation gate. `npm run prepare` installs it. `SKIP_PORTFOLIO_GATE=1 git push` bypasses it for emergencies only. Branch protection on `main` must **not** require status checks, since nothing reports any.
 

@@ -1,0 +1,32 @@
+import { describe, expect, it } from "vitest";
+import {
+  buildPathIndex,
+  contentDispositionForPath,
+  documentsKeyFromUrl,
+  sha256ForPath,
+} from "./documents.mjs";
+
+const SHA = "a".repeat(64);
+
+describe("documents path map", () => {
+  it("normalizes encoded /documents paths", () => {
+    expect(documentsKeyFromUrl("/documents/matter-26/foo.pdf")).toBe(
+      "/documents/matter-26/foo.pdf",
+    );
+    expect(
+      documentsKeyFromUrl("/documents/matter-26/Dkt%2010%20%28Filed%29.pdf"),
+    ).toBe("/documents/matter-26/Dkt 10 (Filed).pdf");
+  });
+
+  it("resolves sha256 from the committed manifest map", () => {
+    const index = buildPathIndex([{ path: "/documents/matter-26/foo.pdf", sha256: SHA }]);
+    expect(sha256ForPath(index, "/documents/matter-26/foo.pdf")).toBe(SHA);
+    expect(sha256ForPath(index, "/missing.pdf")).toBeNull();
+  });
+
+  it("names Content-Disposition from the court filename, not the hash", () => {
+    expect(contentDispositionForPath("/documents/matter-32/ndcal/Declaration.pdf")).toBe(
+      'inline; filename="Declaration.pdf"',
+    );
+  });
+});

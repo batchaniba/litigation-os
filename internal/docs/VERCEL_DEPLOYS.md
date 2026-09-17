@@ -48,8 +48,9 @@ Team → **Settings → Billing → Spend Management**
 ### `vercel.json` (committed, generated)
 
 `npm run sync:short-links` writes it from `internal/public/short-links.json`:
-short-link redirects to `/{slug}.pdf` (Vercel-hosted copies, until R2 is
-live), `Content-Disposition` headers, the `/documents/*` rewrite target, and
+short-link redirects to `/{slug}.pdf` (Vercel-hosted copies, until a public
+documents origin returns 200), `Content-Disposition` headers, the
+`/documents/*` rewrite to the Cloudflare Worker, and
 
 ```json
 "git": { "deploymentEnabled": false }
@@ -95,16 +96,21 @@ for them twice bought nothing.
 
 ### GitHub Pages and the PDF library
 
-There is no GitHub Actions CI or Pages deploy any more (only the three
-CourtListener workflows remain). The Pages host now 404s. Phone taps are
-the `/{slug}.pdf` copies on Vercel, not that rewrite.
+There is no GitHub Actions CI or Pages deploy. CourtListener, R2 upload, and
+Worker deploy are the remaining workflows. The Pages host 404s. The Vercel
+`/documents/:path*` rewrite targets the Cloudflare Worker path map
+(`https://litigation-doc-api.ss8sxswwkt.workers.dev/documents`). That is the
+destination, not a proven 200. Phone taps stay the `/{slug}.pdf` copies on
+Vercel until a live GET of the Serrato FAC and a current mailing packet
+returns 200.
 
 **R2 migration (2026-09-17):** bucket `litigation-documents` holds 1,198 source
 PDFs as 1,139 unique sha256 objects (793.6 MB), ETag-verified. Fetch with
-`npm run docs:fetch <sha256>` (`internal/scripts/fetch-doc.mjs`). Secrets are
-in the repo Actions store. The `documents` branch is the cold backup until
-`documents:push` also uploads to R2. Public `/documents/:path*` rewrite still
-waits on HTTP 200 from a public origin; do not drop slug copies until then.
+`npm run docs:fetch <sha256>` (`internal/scripts/fetch-doc.mjs`). Pull prefers
+R2 when `R2_*` is set (`npm run documents:pull`). Secrets are in the repo
+Actions store. The `documents` branch is the cold backup; `documents:push`
+also PUTs to R2 and publishes `index/path-to-sha256.json` when configured.
+Do not drop slug copies until the public origin returns HTTP 200.
 See `internal/docs/DOCUMENT_STORE.md`.
 
 ### Where the gate went

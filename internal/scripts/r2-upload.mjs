@@ -2,29 +2,33 @@
 // Upload-only mirror: local PDFs → Cloudflare R2.
 //
 //   node internal/scripts/r2-upload.mjs --list <file>
+//   node internal/scripts/r2-upload.mjs --index
 //
 // Key scheme: sha256/<first2>/<rest>.pdf (same as the 2026-09-17 migration,
 // so `npm run docs:fetch <sha256>` keeps resolving). HEAD skip when ETag
 // matches local MD5. After PUT, HEAD again and require the match.
+// --index PUTs index/path-to-sha256.json from main's manifest.
 // Never deletes from R2. Exits 1 if any file fails.
 import fs from "node:fs";
 import path from "node:path";
 import { createHash } from "node:crypto";
 import { headEtag, keyForSha256, putObject } from "./lib/r2-client.mjs";
+import { MANIFEST_PATH } from "./lib/document-store.mjs";
 
 const REPO_ROOT = process.env.REPO_ROOT || process.cwd();
 const CONCURRENCY = 8;
+const PATH_INDEX_KEY = "index/path-to-sha256.json";
 
-if (process.argv[2] !== "--list" || !process.argv[3]) {
-  console.error("usage: node internal/scripts/r2-upload.mjs --list <file>");
-  process.exit(2);
+async function putPathIndex() {
+  const manifest = JSON.parse(fs.readFileSync(MANIFEST_PATH, "utf8"));
+  const index = {};
+  for (const file of manifest.files ?? []) {
+    if (file?.path && file?.sha256) index[file.path] = String(file.sha256).toLowerCase();
+  }
+  const body = Buffer.from(`${JSON.stringify(index)}\n`, "utf8");
+  await putObject(PATH_INDEX_KEY, body, { contentType: "application/json" });
+  console.log(JSON.stringify({ status: "index_uploaded", key: PATH_INDEX_KEY, paths: Object.keys(index).length }));
 }
-
-const paths = fs
-  .readFileSync(process.argv[3], "utf8")
-  .split("\n")
-  .map((line) => line.trim())
-  .filter(Boolean);
 
 async function processOne(rel) {
   const log = { path: rel };
@@ -75,6 +79,22 @@ async function mapLimit(items, limit, fn) {
   );
   return out;
 }
+
+const mode = process.argv[2];
+if (mode === "--index") {
+  await putPathIndex();
+  process.exit(0);
+}
+if (mode !== "--list" || !process.argv[3]) {
+  console.error("usage: node internal/scripts/r2-upload.mjs --list <file>\n       node internal/scripts/r2-upload.mjs --index");
+  process.exit(2);
+}
+
+const paths = fs
+  .readFileSync(process.argv[3], "utf8")
+  .split("\n")
+  .map((line) => line.trim())
+  .filter(Boolean);
 
 const results = await mapLimit(paths, CONCURRENCY, processOne);
 let failed = 0;

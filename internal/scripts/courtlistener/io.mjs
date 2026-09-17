@@ -4,6 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { writeJsonAscii } from "../lib/write-json-ascii.mjs";
+import { paddedMatterNumber } from "../lib/matter-layout.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 export const REPO_ROOT = path.resolve(__dirname, "..", "..", "..");
@@ -67,6 +68,45 @@ export function writeReview(review) {
 
 export function writeSyncState(state) {
   writeJsonUtf8(SYNC_STATE_PATH, state);
+}
+
+export function splitEventsPath(matter) {
+  return path.join(MATTERS_DIR, paddedMatterNumber(matter), "events.jsonl");
+}
+
+/** Append CourtListener facts to split events.jsonl. Skips missing files and
+ *  rows whose docket_entry_id is already logged. Never writes clocks.json. */
+export function appendSplitEvents(rows) {
+  const byMatter = new Map();
+  for (const row of rows ?? []) {
+    if (!Number.isInteger(row?.matter)) continue;
+    if (!byMatter.has(row.matter)) byMatter.set(row.matter, []);
+    byMatter.get(row.matter).push(row);
+  }
+  let appended = 0;
+  for (const [matter, group] of byMatter) {
+    const filePath = splitEventsPath(matter);
+    if (!fs.existsSync(filePath)) continue;
+    const seen = new Set();
+    for (const line of fs.readFileSync(filePath, "utf8").split("\n").filter(Boolean)) {
+      try {
+        const id = JSON.parse(line).external?.docket_entry_id;
+        if (id != null) seen.add(Number(id));
+      } catch {
+        /* leave a corrupt line in place */
+      }
+    }
+    const lines = [];
+    for (const row of group) {
+      const id = row.external?.docket_entry_id;
+      if (id != null && seen.has(Number(id))) continue;
+      if (id != null) seen.add(Number(id));
+      lines.push(JSON.stringify(row));
+      appended += 1;
+    }
+    if (lines.length) fs.appendFileSync(filePath, `${lines.join("\n")}\n`);
+  }
+  return appended;
 }
 
 export function insertBinding(matter, binding) {

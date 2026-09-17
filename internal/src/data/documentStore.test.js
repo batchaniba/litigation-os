@@ -83,7 +83,7 @@ describe("copyPublicExceptDocumentsFilter", () => {
 });
 
 describe("vercelSpaRewrites", () => {
-  it("proxies /documents/* to GitHub Pages ahead of the SPA fallback", () => {
+  it("proxies /documents/* to the Cloudflare Worker ahead of the SPA fallback", () => {
     const rewrites = vercelSpaRewrites();
     expect(rewrites[0]).toEqual({
       source: "/documents/:path*",
@@ -109,9 +109,10 @@ describe("short-link documents URLs", () => {
     expect(encoded.startsWith("/documents/matter-26/")).toBe(true);
   });
 
-  it("builds an encoded Pages URL from a documents source", () => {
+  it("builds an encoded Worker URL from a documents source", () => {
     const url = pagesDocumentUrl(upsOpp);
     expect(url.startsWith(`${PAGES_DOCUMENTS_ORIGIN}/matter-26/`)).toBe(true);
+    expect(PAGES_DOCUMENTS_ORIGIN).toContain("workers.dev/documents");
     expect(url).toContain("%28b%29");
     expect(url).not.toMatch(/[()]/);
   });

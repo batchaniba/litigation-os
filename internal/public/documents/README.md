@@ -9,5 +9,6 @@ npm run documents:push   # after adding or replacing a filing
 ```
 
 The pre-commit hook runs `documents:push` when `manifest.json` changes.
-Matter JSON still lists paths under `/documents/...`; the live site keeps
-those URLs (GitHub Pages serves the files; Vercel rewrites to Pages).
+Matter JSON still lists paths under `/documents/...`; Vercel rewrites those
+URLs to the Cloudflare Worker path map. Phone-tap slugs stay as copies on
+`main` until that origin returns HTTP 200.

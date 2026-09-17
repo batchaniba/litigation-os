@@ -12,7 +12,7 @@ by design, there is nowhere to leak them from.
 | File | Purpose |
 |---|---|
 | `wrangler.toml` | Worker config: `DOCS` R2 binding → `litigation-documents`, `DB` D1 binding, UTC cron triggers for the digests. `database_id` is a placeholder until D1 is created. |
-| `src/index.mjs` | The Worker. Document routes (`/doc/<sha256>`, `/doc/<sha256>/meta`) + D1-backed data routes (`/matters`, `/matters/<n>`, `/upcoming?days=14`, `/fuse`) mirroring the `npm run q` op shapes, a guarded `POST /admin/reseed` endpoint (Bearer `RESEED_SECRET`; re-applies seed.sql to D1 in batches), plus a `scheduled` handler (daily fuse digest ~08:08 PT, Monday roll call ~07:08 PT) that POSTs to `ALERT_WEBHOOK` when set, else logs. |
+| `src/index.mjs` | The Worker. Document routes (`/documents/<path>` via the path→sha256 index, `/doc/<sha256>`, `/doc/<sha256>/meta`) + D1-backed data routes (`/matters`, `/matters/<n>`, `/upcoming?days=14`, `/fuse`) mirroring the `npm run q` op shapes, a guarded `POST /admin/reseed` endpoint (Bearer `RESEED_SECRET`; manual D1 re-apply of seed.sql), plus a `scheduled` handler (daily fuse digest ~08:08 PT, Monday roll call ~07:08 PT) that POSTs to `ALERT_WEBHOOK` when set, else logs. |
 | `schema.sql` | Idempotent D1 schema: `matters`, `clocks`, `documents`. |
 | `seed.mjs` | Node script → stdout. Reads repo JSON (split `matters/NN/` preferred, legacy `NN.json` fallback, folded `next_clock` from the index, documents from the manifest) and emits idempotent INSERTs. Never writes to the repo. |
 
@@ -29,19 +29,18 @@ workflow-only, never visible to agents. Manual deploys still work:
 cd workers/doc-api
 wrangler deploy
 wrangler secret put ALERT_WEBHOOK   # optional; without it digests go to the Worker logs
-wrangler secret put RESEED_SECRET   # required for POST /admin/reseed; same value as the repo secret
+wrangler secret put RESEED_SECRET   # optional; only for a manual POST /admin/reseed
 ```
 
 ## D1 re-seed
 
-`.github/workflows/d1-reseed.yml` keeps D1 in sync with the repo: on every
-portfolio-data merge to `main` it regenerates `seed.sql` (`node seed.mjs`)
-and POSTs it to `/admin/reseed` with the `RESEED_SECRET` bearer. The
-endpoint applies the statements idempotently in batches of 50 and is
-fail-closed (503 when the secret isn't configured, 403 on mismatch).
-Manual re-seed still works: `node seed.mjs > seed.sql`, then POST the file
-(or paste chunks into the D1 console — keep pastes ≤ ~80KB with no `--`
-comment lines; the console strips newlines).
+D1 is a second copy of the graph. Nothing reseeds it on merge. When it
+needs a refresh: `node seed.mjs > seed.sql`, then POST the file to
+`/admin/reseed` with the `RESEED_SECRET` bearer (or paste chunks into the
+D1 console — keep pastes ≤ ~80KB with no `--` comment lines; the console
+strips newlines). The endpoint applies the statements idempotently in
+batches of 50 and is fail-closed (503 when the secret isn't configured,
+403 on mismatch).
 
 Re-seed after the manifest or matter data changes (`node seed.mjs` again —
 statements are idempotent). Cron times in `wrangler.toml` are UTC
@@ -63,5 +62,4 @@ documented in the file.
 - `ALERT_WEBHOOK` secret (optional — without it, the scheduled digests go to
   the Worker logs instead of posting anywhere).
 - `CLOUDFLARE_API_TOKEN` repo secret (required for `cloudflare-deploy.yml`).
-- `RESEED_SECRET` repo secret + matching Worker secret (required for
-  `d1-reseed.yml` / `POST /admin/reseed`).
+- `RESEED_SECRET` Worker secret (required for a manual `POST /admin/reseed`).

@@ -26,6 +26,10 @@ export function keyForSha256(sha256) {
   return `sha256/${h.slice(0, 2)}/${h.slice(2)}.pdf`;
 }
 
+export function isConfigured() {
+  return Boolean(ACCESS_KEY && SECRET_KEY && ACCOUNT);
+}
+
 export function assertConfigured() {
   const missing = [
     ["R2_ACCESS_KEY_ID", ACCESS_KEY],

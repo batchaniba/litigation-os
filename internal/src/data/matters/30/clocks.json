@@ -4,11 +4,12 @@
     "date": "2026-09-16",
     "date_label": "Sep. 16, 2026",
     "kind": "deadline",
-    "status": "open",
+    "status": "satisfied",
     "source_dkt": null,
     "title": "Anticipated filing date (computed) — Complaint v9 (Moua and DOES 1-10), Newanforbi v. Moua, et al. (Matter 30); 15 days after the anticipated Sep. 1, 2026…",
     "actor": "agency",
-    "source": "/documents/matter-30/Complaint v9 Newanforbi v Moua NDCAL.pdf"
+    "source": "/documents/matter-30/Complaint v9 Newanforbi v Moua NDCAL.pdf",
+    "retired_reason": "Anticipated Sep. 16 filing was not confirmed as filed. Outer GCA window remains Mar. 1, 2027."
   },
   {
     "id": "30-deadline-2",
