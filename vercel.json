@@ -443,6 +443,56 @@
       "source": "/edca-best-buy/",
       "destination": "/edca-best-buy.pdf",
       "permanent": false
+    },
+    {
+      "source": "/edca-att-consent",
+      "destination": "/edca-att-consent.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/edca-att-consent/",
+      "destination": "/edca-att-consent.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/edca-home-depot-consent",
+      "destination": "/edca-home-depot-consent.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/edca-home-depot-consent/",
+      "destination": "/edca-home-depot-consent.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/edca-swift-consent",
+      "destination": "/edca-swift-consent.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/edca-swift-consent/",
+      "destination": "/edca-swift-consent.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/edca-best-buy-consent",
+      "destination": "/edca-best-buy-consent.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/edca-best-buy-consent/",
+      "destination": "/edca-best-buy-consent.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/edca-mj-consents",
+      "destination": "/edca-mj-consents.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/edca-mj-consents/",
+      "destination": "/edca-mj-consents.pdf",
+      "permanent": false
     }
   ],
   "headers": [
@@ -839,6 +889,51 @@
         {
           "key": "Content-Disposition",
           "value": "attachment; filename=\"E.D. Cal. Complete Packet - Ngwa Nforbi v. Best Buy (Sep 16 2026).pdf\"; filename*=UTF-8''E.D.%20Cal.%20Complete%20Packet%20-%20Ngwa%20Nforbi%20v.%20Best%20Buy%20%28Sep%2016%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/edca-att-consent.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Consent to Magistrate Judge Jurisdiction - Ngwa Nforbi v. AT&T Mobility Services LLC (E.D. Cal.) (Sep 16 2026).pdf\"; filename*=UTF-8''Consent%20to%20Magistrate%20Judge%20Jurisdiction%20-%20Ngwa%20Nforbi%20v.%20AT%26T%20Mobility%20Services%20LLC%20%28E.D.%20Cal.%29%20%28Sep%2016%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/edca-home-depot-consent.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Consent to Magistrate Judge Jurisdiction - Ngwa Nforbi v. Home Depot U.S.A., Inc. (E.D. Cal.) (Sep 16 2026).pdf\"; filename*=UTF-8''Consent%20to%20Magistrate%20Judge%20Jurisdiction%20-%20Ngwa%20Nforbi%20v.%20Home%20Depot%20U.S.A.%2C%20Inc.%20%28E.D.%20Cal.%29%20%28Sep%2016%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/edca-swift-consent.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Consent to Magistrate Judge Jurisdiction - Ngwa Nforbi v. Swift Transportation Co. of Arizona LLC (E.D. Cal.) (Sep 16 2026).pdf\"; filename*=UTF-8''Consent%20to%20Magistrate%20Judge%20Jurisdiction%20-%20Ngwa%20Nforbi%20v.%20Swift%20Transportation%20Co.%20of%20Arizona%20LLC%20%28E.D.%20Cal.%29%20%28Sep%2016%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/edca-best-buy-consent.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Consent to Magistrate Judge Jurisdiction - Ngwa Nforbi v. Best Buy Co., Inc. (E.D. Cal.) (Sep 16 2026).pdf\"; filename*=UTF-8''Consent%20to%20Magistrate%20Judge%20Jurisdiction%20-%20Ngwa%20Nforbi%20v.%20Best%20Buy%20Co.%2C%20Inc.%20%28E.D.%20Cal.%29%20%28Sep%2016%202026%29.pdf"
+        }
+      ]
+    },
+    {
+      "source": "/edca-mj-consents.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Consent to Magistrate Judge Jurisdiction - Matters 36-39 (E.D. Cal.) (Sep 16 2026).pdf\"; filename*=UTF-8''Consent%20to%20Magistrate%20Judge%20Jurisdiction%20-%20Matters%2036-39%20%28E.D.%20Cal.%29%20%28Sep%2016%202026%29.pdf"
         }
       ]
     }
