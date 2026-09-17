@@ -1,0 +1,23 @@
+{
+  "summary": "42 USC 1983: 4A Search/Seizure, Due Process, Monell",
+  "counts": [
+    {
+      "id": 1,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Unreasonable Search and Seizure (4th Amend.)"
+    },
+    {
+      "id": 2,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Violation of Due Process (14th Amend.)"
+    },
+    {
+      "id": 3,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Monell Liability"
+    }
+  ]
+}

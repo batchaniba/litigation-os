@@ -1,0 +1,20 @@
+{
+  "number": 16,
+  "caption": "Newanforbi v. Rojo",
+  "case_no": "TBD (San Joaquin Sup. Ct.)",
+  "court": "San Joaquin Sup. Ct.",
+  "claims": "Bane Act, IIED, Negligence",
+  "status": "NOT PURSUING — Voluntarily Dismissed",
+  "status_label": "Abandoned — voluntarily dismissed",
+  "lifecycle": "abandoned",
+  "proceeding": "state_civil",
+  "phase": "terminal",
+  "filed": "July 7, 2026",
+  "judge": "TBD",
+  "cluster": 2,
+  "type": "State",
+  "badge": "ABANDONED",
+  "archived": true,
+  "key_facts": "State-law action arising from the November 17–21, 2025 denial of Plaintiff's request to attend his parents' nineteenth church anniversary in Reno, Nevada. Plaintiff submitted a church flyer, pre-purchased bus ticket, travel dates, destination, and religious purpose on November 17. On November 19, Agent Rojo confirmed receipt by telephone and texted, 'Okay thank you I'll submit that pass and see what administration says.' After delaying a decision through November 20, Rojo arrived as Plaintiff's family was departing on November 21 and communicated Noguchi's denial, citing an unpublished office policy limiting out-of-state travel to an emergency or death in the family and raising the ankle monitor for the first time. The timing foreclosed meaningful review or accommodation. The complaint asserts Bane Act, IIED, and negligence claims based on the delayed, coercively timed denial.",
+  "procedural_status": "Canonical chronology is clocks.json, docket.json, and events.jsonl. Do not reconstruct dates from README."
+}

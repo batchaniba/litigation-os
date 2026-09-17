@@ -1,0 +1,23 @@
+{
+  "number": 11,
+  "caption": "Newanforbi v. Macomber",
+  "case_no": "TBD (USDC E.D. Cal.)",
+  "court": "USDC E.D. Cal.",
+  "courtlistener": {
+    "court_id": "caed"
+  },
+  "claims": "42 USC 1983: Procedural Due Process (Policy 19-03)",
+  "status": "DISMISSED WITH PREJUDICE — Notice of Voluntary Dismissal filed June 29, 2026 (FRCP 41(a)(1)(A)(i)); self-executing",
+  "status_label": "Dismissed with prejudice — Jun. 29, 2026",
+  "lifecycle": "dismissed",
+  "proceeding": "federal_civil",
+  "phase": "terminal",
+  "filed": "March 2, 2026",
+  "judge": "TBD",
+  "cluster": 2,
+  "type": "Federal",
+  "badge": "DISMISSED",
+  "archived": true,
+  "key_facts": "Challenges CDCR's enforcement of Policy 19-03's categorical 6.5-year bar after Section 3574 adoption (April 2025). Noguchi cited Policy 19-03 as sole basis: 'only completed approximately 4 years of the required 6.5 years.' No Section 3574 analysis. LS/CMI 5 vs. threshold 11. Form 602 exhausted through 3 levels. Equitable relief only.",
+  "procedural_status": "Canonical chronology is clocks.json, docket.json, and events.jsonl. Do not reconstruct dates from README."
+}

@@ -1,0 +1,23 @@
+{
+  "summary": "Habeas Corpus (PC §3008(d)(2); 15 CCR §3574) — Treatment Termination",
+  "counts": [
+    {
+      "id": 1,
+      "status": "live",
+      "theory_ids": [],
+      "title": "PC §3008(d)(2)"
+    },
+    {
+      "id": 2,
+      "status": "live",
+      "theory_ids": [],
+      "title": "15 CCR §3574"
+    },
+    {
+      "id": 3,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Challenge to compelled treatment as unlawful restraint"
+    }
+  ]
+}

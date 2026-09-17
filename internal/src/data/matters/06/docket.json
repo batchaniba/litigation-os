@@ -1,0 +1,20 @@
+[
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "other",
+    "title": "Complaint",
+    "path": "/documents/matter-06/Complaint.pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "other",
+    "title": "HOPE Federal Complaint",
+    "path": "/documents/matter-06/HOPE Federal Complaint.pdf",
+    "filed": false
+  }
+]

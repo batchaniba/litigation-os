@@ -1,0 +1,29 @@
+[
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "other",
+    "title": "Verified Complaint - Ngwa Nforbi v AT&T Mobility Services LLC (Sep 8 2026)",
+    "path": "/documents/matter-36/Verified Complaint - Ngwa Nforbi v AT&T Mobility Services LLC (Sep 8 2026).pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "summons",
+    "title": "SUM-100 Summons - Ngwa Nforbi v AT&T Mobility Services LLC (Sep 8 2026)",
+    "path": "/documents/matter-36/SUM-100 Summons - Ngwa Nforbi v AT&T Mobility Services LLC (Sep 8 2026).pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "court",
+    "type": "order",
+    "title": "FW-003 Order on Court Fee Waiver - Ngwa Nforbi v AT&T Mobility Services LLC (Sep 8 2026)",
+    "path": "/documents/matter-36/FW-003 Order on Court Fee Waiver - Ngwa Nforbi v AT&T Mobility Services LLC (Sep 8 2026).pdf",
+    "filed": false
+  }
+]

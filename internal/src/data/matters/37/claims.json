@@ -1,0 +1,47 @@
+{
+  "summary": "ICRAA § 1786.40 (I&B); CCRAA § 1785.20.5 (alternative); UCL § 17200; Penal Code § 290.46(j) (I&B — report contents and use)",
+  "counts": [
+    {
+      "id": 1,
+      "status": "live",
+      "theory_ids": [],
+      "title": "[INDEPENDENT PATH] ICRAA, Civ. Code §§ 1786.40 and 1786.50 — if an investigative report was obtained before the ghosting without source advice; pleaded to reach discovery even if the § 290 count later fails on the report; Plaintiff confirms no 1786.40 advice arrived; 1786.52 discovery date does not appear on the face of the pleading"
+    },
+    {
+      "id": 2,
+      "status": "live",
+      "theory_ids": [],
+      "title": "[ALTERNATIVE] CCRAA, Civ. Code §§ 1785.20.5 and 1785.31 — if the report was an ordinary consumer credit report rather than investigative; no copy or rights notice before the ghosting"
+    },
+    {
+      "id": 3,
+      "status": "live",
+      "theory_ids": [],
+      "title": "[DERIVATIVE / EQUITABLE] UCL § 17200 — unlawful and unfair prongs borrowing § 290.46(j); restitution limited to vested money/property"
+    },
+    {
+      "id": 4,
+      "status": "live",
+      "theory_ids": [],
+      "title": "[PLEADED ON INFORMATION AND BELIEF] Penal Code § 290.46(j) — last count on page one; known facts are the hire, acceptance, onboarding, background check, ghost, contemporaneous Megan's Law listing, and exclusive control of the file; report contents and Home Depot's use are I&B on that basis; report not attached because Home Depot has not produced it"
+    },
+    {
+      "id": 5,
+      "status": "live",
+      "theory_ids": [],
+      "title": "[OMITTED] Tameny / IIED — two-year CCP § 335.1 clock likely closed if the decision was August 2024; not the load-bearing claim"
+    },
+    {
+      "id": 6,
+      "status": "live",
+      "theory_ids": [],
+      "title": "[OMITTED] FCRA — reserved; pleading it now would create a federal question without a named vendor or pre-adverse packet"
+    },
+    {
+      "id": 7,
+      "status": "live",
+      "theory_ids": [],
+      "title": "[PRESERVED, NOT PLEADED] FEHA and Fair Chance Act — no CRD right-to-sue in the record"
+    }
+  ]
+}

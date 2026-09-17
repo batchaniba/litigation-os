@@ -29,7 +29,12 @@ describe("prose length budgets", () => {
     expect(wordCount(undefined)).toBe(0);
   });
 
-  it("keeps every legacy prose field under its ceiling", () => {
+  it("treats prose word counts as a report, not a schema fail, once every matter is split", () => {
+    expect(matters.every((m) => m.__layout === "split")).toBe(true);
+    expect(GRAPH_CONTRACT.agentOutputCaps).toBe(false);
+  });
+
+  it("keeps every leftover legacy prose field under its ceiling", () => {
     const breaches = [];
     for (const matter of matters) {
       if (matter.__layout === "split") continue;

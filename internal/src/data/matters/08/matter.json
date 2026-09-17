@@ -1,0 +1,21 @@
+{
+  "number": 8,
+  "caption": "Newanforbi v. Candelaria, et al.",
+  "case_no": "26WM000135",
+  "court": "Sacramento Sup. Ct.",
+  "claims": "Writ of Administrative Mandate (CCP §§1094.5, 473(d); Veh. Code §13559) — Set aside void APS Decision",
+  "status": "NOT PURSUING — fee-payment deadline (~Jul. 27, 2026) lapsed by deliberate choice after the Santa Clara transfer made Sacramento litigation impractical. Underlying CDL-suspension theory remains live in Matter 7. PDFs under Matter 33/from-08/.",
+  "status_label": "Abandoned — fee-payment deadline lapsed Jul. 27, 2026",
+  "lifecycle": "abandoned",
+  "proceeding": "mandate",
+  "phase": "terminal",
+  "filed": "May 18, 2026",
+  "judge": "TBD (Dept. 10C)",
+  "cluster": 1,
+  "type": "State",
+  "badge": "ABANDONED",
+  "archived": true,
+  "note": "Fee deadline lapsed ~Jul. 27, 2026 — not pursued further; Matter 7 remains the live vehicle for the same underlying theory. PDF set relocated to Matter 33 on August 7, 2026.",
+  "key_facts": "Verified Petition for Writ of Administrative Mandate challenging DMV APS Decision (Feb. 11, 2025, APS Case No. 34739340) suspending Class A CDL (License F7953179) for one year (Feb. 20, 2025 – Feb. 19, 2026). Central dispositive fact: Dublin CHP issued PC §849(b)(1) Detention Certificate (CHP Case No. RJ68845, Nov. 5, 2024) more than two months before the Jan. 24, 2025 APS hearing, certifying the Nov. 1, 2024 stop was 'a detention only, not an arrest.' APS jurisdiction under Veh. Code §13353(a)(1) is conditioned on a 'lawful arrest' — a predicate irrevocably destroyed by CHP's own agency-issued certificate before the hearing ever occurred. Respondent Candelaria's four-page Decision never once mentions the Detention Certificate and dismisses all petitioner's arguments as 'unpersuasive' without analysis. Dashcam transcript (00:54:36 – 01:57:10) shows: (1) liquid identified as urine, not alcohol, at 00:58:51 by Officer Melano ('This is piss'); (2) Officer Meza-Gonzalez declines to smell the cup; (3) no officer contemporaneously verbalizes alcohol odor in 62 minutes of recording; (4) walk-and-turn abandoned due to 'uneven ground'; (5) officers acknowledge no pass/fail FST standard (01:09:52); (6) PAS test expressly optional (01:10:54); (7) arrest ordered one second after lawful PAS refusal. DS-367 sworn claim of 'strong distinct odor of an alcoholic beverage' directly contradicted by dashcam. No accusatory pleading filed by Alameda County DA. Petitioner submitted five-page Personal Statement (Dec. 9, 2024) citing Terry v. Ohio, Mercer v. DMV, People v. Sanders, PC §§849(b)(1), 849(c), 849.5, 851.6(a). CDL suspension caused loss of commercial driving employment; CDL loss cited as aggravating factor in Nov. 2025 Discharge Review (Matter 9). Monetary consequential damages reserved for federal action (2:26-cv-00983-DC-CSK).",
+  "procedural_status": "Canonical chronology is clocks.json, docket.json, and events.jsonl. Do not reconstruct dates from README."
+}

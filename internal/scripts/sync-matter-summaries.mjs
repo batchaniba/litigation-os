@@ -3,7 +3,7 @@
 // Build light matter summaries for the SPA shell bundle.
 //
 // Full prose (status, key_facts, procedural_status, damages, risk, evidence)
-// and document lists stay in NN.json (lazy-loaded on expand/detail).
+// and document lists stay in the split matter folder (lazy-loaded on expand/detail).
 // Document labels resolve through documents/registry.json (path is the id).
 // Shell badges use status_label / effectiveStatusLabel instead of status.
 // A slim document-index.json is generated for global search.
@@ -26,7 +26,7 @@ const registry = loadRegistry();
 const registryPaths = registryByPath(registry);
 
 const HEAVY = new Set([
-  // Full procedural narrative — lazy-load with NN.json. Shell uses
+  // Full procedural narrative — lazy-load with the split folder. Shell uses
   // status_label / effectiveStatusLabel instead.
   "status",
   "key_facts",
@@ -36,6 +36,8 @@ const HEAVY = new Set([
   "evidence",
   "documents",
   "__sourceFile",
+  "__sourceDir",
+  "__layout",
 ]);
 
 function toSummary(matter) {

@@ -1,0 +1,29 @@
+[
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "motion_to_dismiss",
+    "title": "SLB Opposition to MTD",
+    "path": "/documents/matter-03/SLB Opposition to MTD.pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "court",
+    "type": "motion_to_dismiss",
+    "title": "Newanforbi v Derrick - USDC EDCal - MTD Order Jul 24 2026",
+    "path": "/documents/opinions/Newanforbi v Derrick - USDC EDCal - MTD Order Jul 24 2026.pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "other",
+    "title": "Notice of Voluntary Dismissal - Katie Palacios (Filed Aug 20 2026)",
+    "path": "/documents/matter-03/Notice of Voluntary Dismissal - Katie Palacios (Filed Aug 20 2026).pdf",
+    "filed": true
+  }
+]

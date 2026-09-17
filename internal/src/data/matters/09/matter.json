@@ -1,0 +1,20 @@
+{
+  "number": 9,
+  "caption": "Newanforbi v. Macomber",
+  "case_no": "26WM000028",
+  "court": "Sacramento Sup. Ct.",
+  "claims": "Writ of Mandate (CCP §1085)",
+  "status": "Closed — Demurrer Hearing 05/29/2026, Dept. 13A",
+  "status_label": "Closed — demurrer sustained May 29, 2026",
+  "lifecycle": "closed",
+  "proceeding": "mandate",
+  "phase": "terminal",
+  "filed": "January 30, 2026",
+  "judge": "Hon. James P. Arguelles",
+  "cluster": 4,
+  "type": "State",
+  "badge": "DENIED",
+  "archived": true,
+  "key_facts": "Challenges the December 1, 2025 Discharge Review Report. CDCR abused discretion: facial scoring errors in Form 1502-DR, retaliatory input from compromised agents, wrong legal standard, blanket denial based on treatment non-completion. The report was authored November 14 and electronically approved November 19, 2025; December 1 is the form's printed Discharge Review Date used in the operative pleading.",
+  "procedural_status": "Canonical chronology is clocks.json, docket.json, and events.jsonl. Do not reconstruct dates from README."
+}

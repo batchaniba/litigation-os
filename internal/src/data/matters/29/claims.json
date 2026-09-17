@@ -1,0 +1,47 @@
+{
+  "summary": "PC §290.46(j)(2)(E) Violation, Fair Chance Act (Gov. Code §12952), FCRA, ICRAA, Invasion of Privacy, UCL §17200, IIED",
+  "counts": [
+    {
+      "id": 1,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Violation of Cal. Penal Code § 290.46(j)(2)(E) — categorical prohibition on registry information use for employment"
+    },
+    {
+      "id": 2,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Violation of California Fair Chance Act (Cal. Gov. Code § 12952) — failure to individually assess registry/conviction history against the specific duties of the job before denying employment"
+    },
+    {
+      "id": 3,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Violation of Fair Credit Reporting Act (15 U.S.C. §1681 et seq.)"
+    },
+    {
+      "id": 4,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Violation of ICRAA (Cal. Civ. Code § 1786 et seq.)"
+    },
+    {
+      "id": 5,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Invasion of Privacy (Cal. Const., Art. I, § 1)"
+    },
+    {
+      "id": 6,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Unlawful Business Practices (Bus. & Prof. Code § 17200 et seq.)"
+    },
+    {
+      "id": 7,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Intentional Infliction of Emotional Distress"
+    }
+  ]
+}

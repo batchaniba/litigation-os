@@ -1,0 +1,25 @@
+{
+  "number": 1,
+  "caption": "Newanforbi v. CHP et al.",
+  "case_no": "2:25-cv-01460-DC-CSK",
+  "court": "USDC E.D. Cal.",
+  "courtlistener": {
+    "court_id": "caed",
+    "docket_id": 70393737,
+    "docket_url": "/docket/70393737/ps-newanforbi-v-state-of-california/"
+  },
+  "claims": "42 USC 1983: 4A Search/Seizure, Due Process, Monell",
+  "status": "CASE CLOSED — E.D. Cal. No. 2:25-cv-01460-DC-CSK terminated (confirmed Aug. 26, 2026). Notice of Voluntary Dismissal Without Prejudice filed Aug. 15, 2026 (FRCP 41(a)(1)(A)(i); self-executing — no Defendant had served an answer or MSJ). Mooted the pending Apr. 20, 2026 F&R and Objections before District Judge Coggins ruled. Claims against Meza-Gonzalez and Melano refiled in N.D. Cal. as Matter 32 (No. 3:26-cv-08271-PHK, docketed Aug. 10, 2026, before this dismissal).",
+  "status_label": "Closed — E.D. Cal.; refiled as Matter 32",
+  "lifecycle": "dismissed",
+  "proceeding": "federal_civil",
+  "phase": "terminal",
+  "filed": "May 27, 2025",
+  "judge": "Hon. Dena M. Coggins",
+  "cluster": 1,
+  "type": "Federal",
+  "badge": "DISMISSED",
+  "archived": true,
+  "key_facts": "On November 1, 2024 at approximately 12:54 AM, Plaintiff — a CDL commercial truck driver — was lawfully parked on the I-580 East shoulder in Livermore, CA, resting in a rental Tesla Model Y. CHP Officers Meza-Gonzalez (#023295) and Melano (#023054) approached under the pretext of a welfare check. (Incident PDFs — Arrest Report, DS-367, dashcam transcript, DMV discovery packet — are owned by Matter 32 and cross-referenced below.) Upon spotting a cup in the center console, one officer speculated 'I think it's booze' — pivoting to a DUI investigation with no articulable facts; the cup did not contain alcohol. Without consent or a warrant, Officer Melano searched the interior; the only item recovered was an empty container found during the search itself, not in plain view beforehand. Plaintiff showed no signs of impairment yet was handcuffed and transported for chemical testing. The CHP arrest report fabricated observations of slurred speech and alcohol odor directly contradicted by dashcam footage (Exhibit A); the Alameda County DA declined to file any charges. Post-arrest, Plaintiff was held five days on a parole violation hold without arraignment, confined with a menacing homicide suspect. The chemical refusal designation triggered a Class A CDL suspension through February 2026, causing over a year of lost commercial driving wages.",
+  "procedural_status": "Canonical chronology is clocks.json, docket.json, and events.jsonl. Do not reconstruct dates from README."
+}

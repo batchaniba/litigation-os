@@ -1,0 +1,41 @@
+{
+  "summary": "PC §290.46(j)(2)(E) Violation, Failure to Hire (Tameny), ICRAA, Invasion of Privacy, Negligence Per Se, UCL §17200",
+  "counts": [
+    {
+      "id": 1,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Violation of Cal. Penal Code § 290.46(j)(2)(E)"
+    },
+    {
+      "id": 2,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Failure to Hire in Violation of Public Policy (Tameny)"
+    },
+    {
+      "id": 3,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Violation of ICRAA (Cal. Civ. Code § 1786 et seq.)"
+    },
+    {
+      "id": 4,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Invasion of Privacy (Cal. Const., Art. I, § 1)"
+    },
+    {
+      "id": 5,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Negligence Per Se"
+    },
+    {
+      "id": 6,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Unlawful Business Practices (Bus. & Prof. Code § 17200 et seq.)"
+    }
+  ]
+}

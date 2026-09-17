@@ -1,0 +1,47 @@
+{
+  "summary": "PC §290.46(j) Violation, Wrongful Termination, FCRA, ICRAA, UCL §17200, IIED, NIED",
+  "counts": [
+    {
+      "id": 1,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Violation of Penal Code Section 290.46(j) — Unlawful Use of Sex Offender Registry Information for Employment"
+    },
+    {
+      "id": 2,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Wrongful Termination in Violation of Public Policy (Tameny)"
+    },
+    {
+      "id": 3,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Violation of Fair Credit Reporting Act (15 U.S.C. §1681 et seq.)"
+    },
+    {
+      "id": 4,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Violation of California Investigative Consumer Reporting Agencies Act (Civ. Code §1786 et seq.)"
+    },
+    {
+      "id": 5,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Unfair Business Practices (Bus. & Prof. Code §17200)"
+    },
+    {
+      "id": 6,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Intentional Infliction of Emotional Distress"
+    },
+    {
+      "id": 7,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Negligent Infliction of Emotional Distress"
+    }
+  ]
+}

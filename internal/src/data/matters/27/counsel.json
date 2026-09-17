@@ -1,0 +1,25 @@
+{
+  "appearances": [
+    {
+      "id": null,
+      "name": "Nathan D. Chapman",
+      "firm": "Kabat Chapman & Ozmer LLP",
+      "dossier": "counsel/nathan-d-chapman.json",
+      "attorney_id": null
+    },
+    {
+      "id": null,
+      "name": "Chadwick L. Williams",
+      "firm": "Kabat Chapman & Ozmer LLP",
+      "dossier": "counsel/chadwick-l-williams.json",
+      "attorney_id": null
+    },
+    {
+      "id": null,
+      "name": "Tod C. Gurney",
+      "firm": "Garcia & Gurney, ALC",
+      "dossier": null,
+      "attorney_id": null
+    }
+  ]
+}

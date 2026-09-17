@@ -1,0 +1,35 @@
+{
+  "summary": "Writ of Administrative Mandate (CCP §§1094.5, 473(d); Veh. Code §13559) — Set aside void APS Decision",
+  "counts": [
+    {
+      "id": 1,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Count I — Want of Statutory Predicate: No 'Lawful Arrest' (Veh. Code §13353(a)(1); CCP §1094.5(b)) — APS refusal suspension lacks 'lawful arrest' predicate; PC §849(b)(1) Detention Certificate (Nov. 5, 2024) irrevocably destroyed that predicate before the Jan. 24, 2025 hearing"
+    },
+    {
+      "id": 2,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Count II — Failure to Proceed in the Manner Required by Law (CCP §1094.5(b); Topanga Ass'n v. County of L.A., 11 Cal.3d 506) — Decision does not mention Detention Certificate; dismisses arguments as 'unpersuasive' without analysis; mischaracterizes record; never applies Mercer v. DMV or People v. Sanders"
+    },
+    {
+      "id": 3,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Count III — Findings Unsupported by the Weight of the Evidence (CCP §1094.5(c); Berlinghieri v. DMV, 33 Cal.3d 392) — Dashcam audio directly contradicts DS-367's 'strong distinct odor of alcohol'; only liquid identified on scene was urine; no objective signs of impairment on video; walk-and-turn abandoned by officers; no pass/fail FST standard"
+    },
+    {
+      "id": 4,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Count IV — Structural Bias — Unconstitutional Dual-Role Framework (U.S. Const. 14th Amend.; Cal. Const. art. I §7) — DMV hearing officer serves as both advocate and adjudicator; structural error under Knudsen v. DMV (no showing of actual prejudice required); framework condemned in Cal. DUI Lawyers Ass'n v. DMV, Knudsen, Clarke v. Gordon"
+    },
+    {
+      "id": 5,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Count V — Excess of Jurisdiction — Adjudication of a Non-Existent Subject Matter (CCP §1094.5(b)) — Decision void; rendered in clear absence of jurisdiction over subject matter that did not legally exist at time of hearing"
+    }
+  ]
+}

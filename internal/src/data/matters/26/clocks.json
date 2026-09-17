@@ -1,0 +1,35 @@
+[
+  {
+    "id": "26-hearing-1",
+    "date": "2026-10-07",
+    "date_label": "Oct. 7, 2026",
+    "kind": "hearing",
+    "status": "open",
+    "source_dkt": 10,
+    "title": "HEARING — Defendant UPS's Rule 12(b)(6) Motion to Dismiss (ECF No. 9), Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD), 10:00 a.m., Courtroom…",
+    "actor": "you",
+    "source": "/documents/matter-26/PACER Deadlines-Hearings - E.D. Cal. 2-26-cv-02847-DAD-CKD (Sep 4 2026).pdf"
+  },
+  {
+    "id": "26-deadline-2",
+    "date": "2026-09-16",
+    "date_label": "Sep. 16, 2026",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": 7,
+    "title": "Rule 15(a)(1)(B) amendment-as-of-right window — Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). UPS served the MTD by mail Aug. 26, 2026…",
+    "actor": "you",
+    "source": "/documents/matter-26/Dkt 07-3 - Certificate of Service (Filed Aug 26 2026).pdf"
+  },
+  {
+    "id": "26-deadline-3",
+    "date": "2026-09-21",
+    "date_label": "Sep. 21, 2026",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": 1,
+    "title": "28 U.S.C. §1447(c) remand window closes (computed) — Newanforbi v. United Parcel Service, Inc., USDC E.D. Cal. No. 1:26-at-03195. Thirty days from the Aug. 20,…",
+    "actor": "you",
+    "source": "/documents/matter-26/Dkt 01 - Notice of Removal as Docketed, E.D. Cal. Sacramento (Aug 20 2026).pdf"
+  }
+]

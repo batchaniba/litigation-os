@@ -1,0 +1,26 @@
+{
+  "number": 3,
+  "caption": "Newanforbi v. Derrick et al.",
+  "case_no": "2:26-cv-00004-DJC-JDP",
+  "court": "USDC E.D. Cal.",
+  "courtlistener": {
+    "court_id": "caed",
+    "docket_id": 72104727,
+    "docket_url": "/docket/72104727/ps-newanforbi-v-derrick/"
+  },
+  "claims": "42 USC 1983: 1A Retaliation, 14A Equal Protection, Due Process",
+  "status": "CASE CLOSED — E.D. Cal. No. 2:26-cv-00004-DJC-JDP terminated (confirmed Aug. 26, 2026). Derrick/Noguchi dismissed Jul. 22 under Rule 41(a)(1)(A)(i); Palacios dismissed Aug. 20–21 under Rule 41(a)(1)(A)(i) in response to Mag. Peterson's Aug. 13 OSC (ECF No. 33); OSC discharged and docket closed. No further action.",
+  "status_label": "Closed — E.D. Cal. 2:26-cv-00004",
+  "lifecycle": "abandoned",
+  "proceeding": "federal_civil",
+  "phase": "terminal",
+  "filed": "January 5, 2026",
+  "judge": "Hon. Daniel J. Calabretta / Mag. Peterson",
+  "cluster": 2,
+  "type": "Federal",
+  "badge": "ABANDONED",
+  "archived": true,
+  "note": "Palacios's MTD GRANTED Jul. 24; FAC dismissed w/ leave to amend by Aug. 7. Jul. 22 dismissal of Derrick/Noguchi was valid as a matter of right (no answer/MSJ served). Aug. 20, 2026 Notice of Voluntary Dismissal of Katie Palacios filed (Rule 41(a)(1)(A)(i)). CASE CLOSED Aug. 26, 2026 — OSC discharged; E.D. Cal. docket terminated.",
+  "key_facts": "Derrick told Plaintiff at their first meeting (Jan. 2025): 'You do not have freedom of speech. Not in HOPE group you don't.' — preceded by: 'it would not be good for you if you didn't stop.' Plaintiff had been in HOPE group ~5 years despite completing all homework multiple times; group repeatedly reset due to clinician turnover. Derrick and Palacios jointly revoked the standard 10-minute grace period (Apr. 2025), stating: 'You are clearly abusing the 10-minute as an excuse to show up late.' FedEx job (Mar. 2025, $20/hr): Plaintiff was denied a scheduling accommodation and forced to resign (~Apr. 17, 2025); lost wages ≥ $1,500; ongoing ~$600/week. CTM (mid-2025): Palacios labeled Plaintiff 'ringleader' whose speech encouraged others; Derrick gave a negative oral report focused on Plaintiff's speech; Noguchi denied reassignment on the spot despite actual knowledge of the retaliatory conflict. Chilling effect documented: Plaintiff abandoned a Form 22 reassignment request when Derrick appeared and said 'You're just finding something to complain about, huh?' — Plaintiff stuttered and could not speak. Nov. 2025 Discharge Review incorporated 'disruptive'/'ringleader' characterizations; Noguchi reviewed and approved. Comparator A (white male, same HOPE program/agent): received 1–2 min home visits, casino trip approved, Derrick personally helped file grievances — no threats or escalation. Comparator B (Black male, supervised by Derrick): Derrick stated certain offenders 'should be lined up and shot'; cited out of bounds at family park gatherings → arrest and custody. Both comparators provided sworn declarations under 28 U.S.C. § 1746.",
+  "procedural_status": "Canonical chronology is clocks.json, docket.json, and events.jsonl. Do not reconstruct dates from README."
+}

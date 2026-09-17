@@ -1,0 +1,23 @@
+{
+  "summary": "Bane Act, IIED, Negligence",
+  "counts": [
+    {
+      "id": 1,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Bane Act (Civ. Code §52.1)"
+    },
+    {
+      "id": 2,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Intentional Infliction of Emotional Distress"
+    },
+    {
+      "id": 3,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Negligence"
+    }
+  ]
+}

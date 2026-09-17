@@ -1,0 +1,20 @@
+{
+  "number": 35,
+  "caption": "Ngwa Nforbi v. Ross Stores, Inc., et al.",
+  "case_no": "26CV501995",
+  "court": "Santa Clara Sup. Ct. (Downtown / First Street)",
+  "claims": "Unruh Civil Rights Act (Civ. Code §§51, 51.5, 52); False Imprisonment; Negligent Training and Supervision",
+  "status": "One Legal said ask Santa Clara to fix the Does-first short title. FILE three Sep. 10 papers on 26CV501995: Request with Exhibits A–C, Declaration, [Proposed] Order. Do not amend. Serve both Ross entities via CT Corp by ~Oct. 25.",
+  "status_label": "File caption request — then serve Ross ~Oct 25",
+  "lifecycle": "active",
+  "proceeding": "state_civil",
+  "phase": "service",
+  "filed": "E-filed Aug. 26, 2026, 2:06 AM PT via One Legal (Confirmation #35442871; Filing Order #29111713; Court Env. #24948831). Clerk-accepted same day; case number 26CV501995 assigned; summons issued (Deputy M. Suarez).",
+  "judge": "Hon. Vince Parrett, Dept. 16 (Santa Clara Superior Court — Downtown)",
+  "cluster": 6,
+  "type": "State",
+  "badge": "FILED",
+  "archived": false,
+  "key_facts": "On August 25, 2026, at approximately 8:45 p.m., Plaintiff (a Black man) purchased a Celsius energy drink at Sprouts Farmers Market, 111 E. El Camino Real, Sunnyvale, and retained the register receipt. Approximately five minutes later, at about 8:50 p.m., he entered the adjacent Ross Dress for Less at 119 E. El Camino Real already holding the brightly colored can in his open right hand—plain view, no concealment. He browsed men's clothing, selected nothing, and at about 9:00 p.m. walked toward the exit empty-handed of Ross merchandise. DOE 1, a white female loss-prevention employee (~55), physically stepped directly into his path, blocked the only exit, and asked whether he had paid for the drink. No employee had seen him take anything from Ross; no concealment; no Ross merchandise missing or recovered; no EAS alarm; no receipt requested; no search; no police. When Plaintiff asked whether Ross sells Celsius, DOE 1 answered \"Yeah, sometimes.\" A white cashier nearby remained silent and did not intervene. DOE 1 then asserted \"I'm allowed to do that.\" The detention lasted ~three minutes and was witnessed by an Indian couple (~30s–40s) near the exit; surveillance cameras are believed to have captured entry and the stop. Plaintiff alleges consumer racial profiling / \"shopping while Black\": race as a substantial motivating factor, no probable cause under Pen. Code §490.5(f), and merchant's privilege inapplicable. Harm includes public humiliation as a presumed thief, ongoing anxiety entering retail stores with loss-prevention staff, and denial of equal public-accommodation privileges under Unruh.",
+  "procedural_status": "Canonical chronology is clocks.json, docket.json, and events.jsonl. Do not reconstruct dates from README."
+}

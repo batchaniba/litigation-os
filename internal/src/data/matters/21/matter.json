@@ -1,0 +1,25 @@
+{
+  "number": 21,
+  "caption": "Newanforbi v. Rojo et al.",
+  "case_no": "2:26-cv-00193-DC-CKD",
+  "court": "USDC E.D. Cal.",
+  "courtlistener": {
+    "court_id": "caed",
+    "docket_id": 72182274,
+    "docket_url": "/docket/72182274/ps-newanforbi-v-rojo/"
+  },
+  "claims": "42 USC 1983: Free Exercise Clause (First Amendment), Due Process (Fourteenth Amendment)",
+  "status": "DISMISSED WITH PREJUDICE — Notice of Voluntary Dismissal filed June 29, 2026 (FRCP 41(a)(1)(A)(i)); self-executing",
+  "status_label": "Dismissed with prejudice — Jun. 29, 2026",
+  "lifecycle": "dismissed",
+  "proceeding": "federal_civil",
+  "phase": "terminal",
+  "filed": "January 22, 2026",
+  "judge": "TBD",
+  "cluster": 2,
+  "type": "Federal",
+  "badge": "DISMISSED",
+  "archived": true,
+  "key_facts": "Plaintiff is a practicing Christian whose faith is sincere and central to his identity. Plaintiff's parents are pastors operating a church in Reno, Nevada; participation in significant church events, including anniversary celebrations, is core to his religious devotion and family life. In 2021, while under a different supervising agent, Plaintiff was granted permission to travel to Reno to attend a church service at the same church, demonstrating that such religious travel is consistent with legitimate parole supervision objectives and poses no threat to public safety or rehabilitation. On November 17, 2025, Plaintiff personally submitted a complete travel request packet to Defendant Rojo at the Stockton Parole Unit complying with all published CDCR parole travel requirements: official church anniversary flyer documenting the religious nature of the event, a pre-purchased Greyhound bus ticket, and a written request specifying dates, destination, and religious and familial purpose. On November 19, 2025, Rojo confirmed by telephone that she had received the request and stated that she would submit it to administration for approval. That same morning, Plaintiff provided Rojo with the address of the Reno hotel where he would be staying. Rojo responded by text: 'Okay thank you I'll submit that pass and see what administration says.' These representations reasonably induced Plaintiff to believe his request was being processed in good faith and that a timely decision would be communicated. On November 20, 2025, Plaintiff requested a status update; Rojo responded that she would visit Plaintiff that day but did not do so and provided no explanation. On November 21, 2025 — the day of departure — Rojo continued to delay communication until Plaintiff's family was preparing to leave for Reno. Only when Rojo arrived at Plaintiff's residence as his family was physically departing did she inform him that the travel request had been denied by Defendant Gary Noguchi. Rojo stated that the denial was based on an alleged office policy limiting out-of-state travel to 'an emergency or a death in the family.' This alleged policy appears nowhere in CDCR's published parole conditions. Defendants did not provide Plaintiff with any written policy, regulation, directive, or citation supporting the denial. Rojo additionally cited Plaintiff's ankle monitor as justification for the first time at the moment of denial, despite days of prior communications in which this concern was never raised. The ankle monitor had never previously been cited as an impediment to travel, and Defendants proposed no means by which its use could be accommodated for the approved trip, such as confirming connectivity in Reno. The timing of the denial foreclosed any meaningful opportunity for administrative review, appeal, or alternative accommodation. Defendants' decision was communicated internally prior to its disclosure to Plaintiff, despite repeated representations that the request remained under review. Defendants provided no notice, standards, or opportunity to be heard prior to denial. Upon information and belief, parolees under Defendants' supervision were permitted to travel out of state for non-religious purposes under comparable or less restrictive circumstances, establishing disparate treatment of religious travel.",
+  "procedural_status": "Canonical chronology is clocks.json, docket.json, and events.jsonl. Do not reconstruct dates from README."
+}

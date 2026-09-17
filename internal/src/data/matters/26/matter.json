@@ -1,0 +1,25 @@
+{
+  "number": 26,
+  "caption": "Newanforbi v. United Parcel Service, Inc.",
+  "case_no": "2:26-cv-02847-DAD-CKD",
+  "court": "USDC E.D. Cal. (Sacramento Div.)",
+  "courtlistener": {
+    "court_id": "caed",
+    "docket_id": 74680795,
+    "docket_url": "/docket/74680795/ps-newanforbi-v-united-parcel-service-inc/"
+  },
+  "claims": "PC §290.46(j)(2)(E) Violation, Failure to Hire (Tameny), ICRAA, Invasion of Privacy, Negligence Per Se, UCL §17200",
+  "status": "Live MTD is Dkt. 9, hearing Oct. 7, 2026, 10:00 a.m., Courtroom 24 (CKD) before Magistrate Judge Delaney (Zoom). Dkt. 10 opposition on file (Aug. 28). Dkt. 14 reply filed Sep. 14 (Dkt. 14-1 COS). $250k settlement demand (emailed Aug. 31 to Mott and Daskas; supersedes July 12 $85k) expires Sep. 14, 2026, 5:00 p.m. PT. Demand rests on UPS's own ECF No. 7 Exhibit A; early settlement conference before M.J. Delaney offered. Rule 15 window through Sep. 16.",
+  "status_label": "Dkt. 14 reply filed — hearing Oct. 7",
+  "lifecycle": "active",
+  "proceeding": "federal_civil",
+  "phase": "mtd_briefing",
+  "filed": "July 15, 2026",
+  "judge": "Hon. Dale A. Drozd, D.J.; Hon. Carolyn K. Delaney, M.J.",
+  "cluster": 3,
+  "type": "Federal",
+  "badge": "MTD",
+  "archived": false,
+  "key_facts": "In or around mid-2024, Plaintiff applied for a position in UPS's delivery and logistics operations in California. As part of its standard pre-employment screening, UPS initiated a background check through First Advantage (fadv.com). On July 22, 2024 at 9:57 AM, Plaintiff received a 'Pre Adverse Action Notification regarding your application with UPS' from First Advantage (DoNotReply@fadv.com) directing him to review the report for 'UNITED PARCEL SERVICE' via a secure portal link. Reminder notices followed on July 23, 2024 (10:00 AM) and July 27, 2024 (10:00 AM). On July 31, 2024 at 9:57 AM — nine days after the original pre-adverse notice — Plaintiff received a 'Final Adverse Action Notification regarding your application with UPS,' confirming UPS had taken final adverse action, definitively denying him employment. UPS provided no written communication identifying any basis for the denial other than the background screening report; no other disqualifying information existed in Plaintiff's application. Plaintiff is a registrant on California's Megan's Law sex offender registry, and alleges on information and belief that the First Advantage report disclosed that status to UPS (together with a statutory disclaimer warning that the information could not lawfully be used for employment purposes) and that UPS used it as the basis for the denial, in violation of Penal Code § 290.46(j)(2)(E).",
+  "procedural_status": "Canonical chronology is clocks.json, docket.json, and events.jsonl. Do not reconstruct dates from README."
+}

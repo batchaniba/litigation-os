@@ -1,0 +1,19 @@
+{
+  "defendants_label": "Randstad US, LLC (d/b/a Randstad General Staffing; Randstad Inhouse Services); RK Logistics Group, Inc. (end client / joint employer directing placement decision); and DOES 1 through 20, inclusive",
+  "serviceTracking": [
+    {
+      "name": "Randstad US, LLC",
+      "title": "Defendant (registered agent CSC - Lawyers Incorporating Service)",
+      "location": "Sacramento County",
+      "served": true,
+      "dateServed": "July 30, 2026 (Josh Swindell / Authorized Agent)"
+    },
+    {
+      "name": "The RK Logistics Group, Inc.",
+      "title": "Defendant (registered agent CSC - Lawyers Incorporating Service)",
+      "location": "Sacramento County",
+      "served": true,
+      "dateServed": "July 30, 2026 (Josh Swindell / Authorized Agent)"
+    }
+  ]
+}

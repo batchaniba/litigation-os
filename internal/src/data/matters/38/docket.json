@@ -1,0 +1,29 @@
+[
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "other",
+    "title": "Verified Complaint - Ngwa Nforbi v Swift Transportation Co of Arizona LLC (Sep 8 2026)",
+    "path": "/documents/matter-38/Verified Complaint - Ngwa Nforbi v Swift Transportation Co of Arizona LLC (Sep 8 2026).pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "summons",
+    "title": "SUM-100 Summons - Ngwa Nforbi v Swift Transportation Co of Arizona LLC (Sep 8 2026)",
+    "path": "/documents/matter-38/SUM-100 Summons - Ngwa Nforbi v Swift Transportation Co of Arizona LLC (Sep 8 2026).pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "court",
+    "type": "order",
+    "title": "FW-003 Order on Court Fee Waiver - Ngwa Nforbi v Swift Transportation Co of Arizona LLC (Sep 8 2026)",
+    "path": "/documents/matter-38/FW-003 Order on Court Fee Waiver - Ngwa Nforbi v Swift Transportation Co of Arizona LLC (Sep 8 2026).pdf",
+    "filed": false
+  }
+]

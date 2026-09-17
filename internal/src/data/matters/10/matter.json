@@ -1,0 +1,20 @@
+{
+  "number": 10,
+  "caption": "Newanforbi v. Macomber",
+  "case_no": "C2602632",
+  "court": "Santa Clara Sup. Ct.",
+  "claims": "Habeas Corpus (PC §3008(d)(2); 15 CCR §3574) — Treatment Termination",
+  "status": "CLOSED — Order Denying Petition Without Prejudice (April 27, 2026)",
+  "status_label": "Closed — petition denied w/o prejudice Apr. 27, 2026",
+  "lifecycle": "closed",
+  "proceeding": "habeas",
+  "phase": "terminal",
+  "filed": "February 23, 2026",
+  "judge": "Hon. Robert Hawk",
+  "cluster": 4,
+  "type": "State",
+  "badge": "DENIED",
+  "archived": true,
+  "key_facts": "On parole since Dec. 2020. Over 5 years of treatment. No new convictions, no revocations, low risk. Repeated clinician turnover and administrative resets. No good-cause finding issued for continued retention.",
+  "procedural_status": "Canonical chronology is clocks.json, docket.json, and events.jsonl. Do not reconstruct dates from README."
+}

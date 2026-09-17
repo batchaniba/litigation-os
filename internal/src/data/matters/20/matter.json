@@ -1,0 +1,20 @@
+{
+  "number": 20,
+  "caption": "Newanforbi v. California Highway Patrol, et al.",
+  "case_no": "26CV191136",
+  "court": "Alameda Sup. Ct.",
+  "claims": "Writ of Mandate (CCP §1085; PC §679.10) — U Visa Certification; Declaratory Relief (CCP §1060)",
+  "status": "Whitman order entered Aug. 29, 2026 (notice of entry Aug. 31): Count 1 overruled; Counts 2–3 WOLA; Count 4 with leave. Dashcam lodging served on Ing Sep. 8, 10:06 p.m. (Notice, Declaration, POS-050). Portal POS reject still stands. Optional Count 4 amend by Sep. 20. CMC Oct. 28, 4:00 p.m., Dept. 25.",
+  "status_label": "Leave to amend Count 4 — due Sep. 20",
+  "lifecycle": "active",
+  "proceeding": "mandate",
+  "phase": "writ_ruling",
+  "filed": "May 29, 2026",
+  "judge": "Hon. Jenna M. Whitman, Dept. 25",
+  "cluster": 1,
+  "type": "State",
+  "badge": "LEAVE TO AMEND",
+  "archived": false,
+  "key_facts": "On April 9, 2026, Petitioner submitted a formal request for U Nonimmigrant Status Certification (Form I-918 Supplement B) to CHP pursuant to 8 U.S.C. §1101(a)(15)(U) and California Penal Code §679.10, seeking certification as a victim of qualifying criminal activity. On April 20, 2026, eleven days later, CHP Commander G. Serrato denied the certification in a five-sentence conclusory letter that: (1) identifies no specific statutory element that Petitioner fails to satisfy; (2) does not name a single enumerated qualifying offense considered or rejected; (3) does not engage with CHP's own dashcam recording; (4) does not reconcile the conclusion with CHP's own PC §851.6 detention certificate; and (5) does not acknowledge or apply the statutory rebuttable presumption of helpfulness. Petitioner is a victim of multiple enumerated qualifying offenses under 8 U.S.C. §1101(a)(15)(U)(iii): false imprisonment/unlawful criminal restraint, felonious assault/battery, obstruction of justice, and perjury. Evidence is overwhelming: (1) CHP's own dashcam audio-video recording (November 1, 2024, I-580 East, Livermore) directly contradicts CHP's own sworn arrest report on four material points — the asserted 'strong distinct odor of an alcoholic beverage,' 'slurred' speech, 'very confused and disoriented' demeanor, and 'beverage present: yes'; (2) CHP's own PC §851.6 detention certificate (issued November 5, 2024) reclassifies the arrest as 'a detention only, not an arrest' for 'insufficient grounds for making a criminal complaint'; (3) no criminal charges were ever filed by the Alameda County DA; (4) Petitioner has fully cooperated with every investigative channel — filed citizen complaint, POST complaint, participated in DMV proceedings, obtained and produced the dashcam transcript. The statutory rebuttable presumption of helpfulness (PC §679.10(h)) attaches and is uncontroverted. CHP's April 20, 2026 denial is: (a) based on an incorrect legal standard; (b) made without applying the rebuttable presumption of helpfulness; (c) wholly unsupported by and irreconcilable with the agency's own contemporaneous documentary record; and (d) inconsistent with PC §679.10(k)'s explicit instruction that prosecution and conviction are not required.",
+  "procedural_status": "Canonical chronology is clocks.json, docket.json, and events.jsonl. Do not reconstruct dates from README."
+}

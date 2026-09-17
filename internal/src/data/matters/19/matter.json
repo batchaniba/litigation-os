@@ -1,0 +1,19 @@
+{
+  "number": 19,
+  "caption": "Newanforbi v. Macomber",
+  "case_no": "C2604791",
+  "court": "Santa Clara Sup. Ct.",
+  "claims": "Habeas Corpus — Immediate Discharge from Parole (Pen. Code §1473; PC §§3000, 3001, 3008(d)(2); 15 CCR §3574)",
+  "status": "HC-004 Notice and Request for Ruling filed in person September 1, 2026. CRC 4.551(a)(6)(B) requires the presiding judge, if the notice is complete and the court has failed to rule, to calendar a decision within 30 days of that filing — through October 1, 2026. The August 1 ruling deadline had already lapsed. Petition remains pending.",
+  "status_label": "HC-004 filed Sep. 1 — ruling due Oct. 1",
+  "lifecycle": "active",
+  "proceeding": "habeas",
+  "phase": "under_submission",
+  "filed": "April 3, 2026",
+  "judge": "Hon. Robert Hawk",
+  "cluster": 4,
+  "type": "State",
+  "archived": false,
+  "key_facts": "Petitioner (CDC No. BF3571) has been on parole since Dec. 2, 2020 following a 6-year term for PC §§289(a)(1)(A), 220(a)(1); registerable offense carries a 10-year statutory parole maximum (controlling discharge date Dec. 2, 2030) but Petitioner seeks earned discharge under PC §3008(d)(2)/15 CCR §3574. Over 5 years on parole: zero revocations, zero new arrests/offenses, CSRA score 2 (low risk), LS/CMI score 5 (Level 2 Below Average Risk — less than half the §3574(f)(1) retention threshold of 11), Stable-2007 score 6. Only incidents were four minor 2025 technical violations (missed HOPE sessions, uncharged GPS device), all resolved by verbal reprimand or PACT referral, never revocation. On Dec. 1, 2025, CDCR conducted a discharge review: Agent Long Moua recommended 'Retain on Parole'; Unit Supervisor Gary Noguchi and Parole Administrator Keely Dodd concurred, citing (a) Policy 19-03's 6.5-year 'time-served' minimum (only ~4 of 6.5 years served), (b) 'incomplete treatment' under HOPE, (c) the technical violations, and (d) unemployment — the last two years of which was itself state-induced: Parole Agent Derrick and HOPE Director Katie Palacios denied a scheduling accommodation for a March 2025 FedEx Office offer ($20/hr), forcing Petitioner's resignation around April 17, 2025, after which the Department cited the resulting joblessness as an aggravating factor. Petitioner argues Policy 19-03 is an unadopted 'underground regulation' that impermissibly converts §3008(d)(2)'s discretionary 'up to' the entire parole term into a mandatory 6.5-year minimum (In re Gadlin (2020) 10 Cal.5th 915; In re Leman (2021) 66 Cal.App.5th 200), and that CDCR used the obsolete Form 1502-DR instead of the Form 3043 mandated by 15 CCR §3574(f) (effective April 17, 2025), bypassing objective actuarial thresholds and the requirement that treatment status be decoupled from discharge eligibility (§3574(e)). Discloses (per Cal. Rules of Court, rule 4.552) a prior, factually distinct habeas petition filed in this Court in April/May 2025 (three-year vs. ten-year parole-term issue), denied by Judge Geffon on August 27, 2025 — not a bar to this petition under the successive-petition doctrine (In re Clark (1993) 5 Cal.4th 750) because it raises new claims based on the Dec. 1, 2025 denial and the newly effective §3574. Government Tort Claim presented Feb. 10, 2026, preserving damages arising from the unlawful restraint. Companion to Matters 9, 10, 11, and 15, which arise from the same administrative record — as of July 24, 2026, all four have closed (Matter 9 demurrer sustained; Matter 10 denied without prejudice; Matter 11 dismissed with prejudice; Matter 15 dismissed with prejudice for safety reasons), making this the sole surviving vehicle for the entire Nov./Dec. 2025 discharge-review challenge. This matter's pending ruling (due by Aug. 1, 2026 per the Order Extending Time) now carries the full weight of that challenge alone.",
+  "procedural_status": "Canonical chronology is clocks.json, docket.json, and events.jsonl. Do not reconstruct dates from README."
+}

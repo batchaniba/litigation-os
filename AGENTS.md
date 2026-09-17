@@ -1,6 +1,8 @@
 # Crawl
 
-`internal/src/data/index/matters.json` is the front door. Then fetch only the sibling you need from `internal/src/data/matters/NN/` (`matter.json`, `docket.json`, `clocks.json`, `events.jsonl`, …). Legacy `NN.json` stays canonical until split — split it when you touch that matter (`node internal/scripts/split-matter.mjs NN --replace`).
+`internal/src/data/index/matters.json` is the front door. Then fetch only the sibling you need from `internal/src/data/matters/NN/` (`matter.json`, `docket.json`, `clocks.json`, `documents.json`, `events.jsonl`, …). Every matter is split.
+
+`docket.json` is pleadings. `documents.json` is the file inventory. `clocks.json` is the live calendar — not `timeline.json`.
 
 `events.jsonl` is append-only. Do not rewrite it. Do not move the log into `procedural_status`.
 

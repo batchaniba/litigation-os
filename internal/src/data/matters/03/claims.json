@@ -1,0 +1,23 @@
+{
+  "summary": "42 USC 1983: 1A Retaliation, 14A Equal Protection, Due Process",
+  "counts": [
+    {
+      "id": 1,
+      "status": "live",
+      "theory_ids": [],
+      "title": "First Amendment Retaliation"
+    },
+    {
+      "id": 2,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Equal Protection (race-based)"
+    },
+    {
+      "id": 3,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Substantive Due Process — Arbitrary Abuse of Power"
+    }
+  ]
+}

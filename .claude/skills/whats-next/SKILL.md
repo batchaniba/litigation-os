@@ -1,12 +1,12 @@
 ---
 name: whats-next
-description: Answer "what's next on the list for me to do?" and every variation of it — "what's next", "what do I need to do", "what's on my plate", "what am I working on next", "what's due", "what's coming up", "anything overdue?", "where do I stand", "what should I file next", "what's my next deadline", "give me my to-do list", "next action", "what's on deck this week". Runs the portfolio's next-actions monitor over timeline.json and matters/summaries.json and reports the ranked queue: overdue items first, then this week, then the horizon. Use whenever the user asks what they should be doing next in this litigation portfolio, or asks about upcoming deadlines, hearings, or filings without naming a specific matter.
+description: Answer "what's next on the list for me to do?" and every variation of it — "what's next", "what do I need to do", "what's on my plate", "what am I working on next", "what's due", "what's coming up", "anything overdue?", "where do I stand", "what should I file next", "what's my next deadline", "give me my to-do list", "next action", "what's on deck this week". Runs the portfolio's next-actions monitor over clocks.json and matters/summaries.json and reports the ranked queue: overdue items first, then this week, then the horizon. Use whenever the user asks what they should be doing next in this litigation portfolio, or asks about upcoming deadlines, hearings, or filings without naming a specific matter.
 ---
 
 # What's next
 
 The portfolio already knows what's due. Never answer this question from memory,
-from the README, or by reading `timeline.json` by eye — the README tables and
+from the README, or by reading `clocks.json` by eye — the README tables and
 `upcoming.json` are generated snapshots, and reading dates by hand is how a
 deadline gets missed. Run the monitor.
 
@@ -32,9 +32,9 @@ Pick the horizon from how the question was asked:
 
 ## How the queue is ranked
 
-1. **PAST DUE** — dated before today but still `upcoming: true` in the timeline.
-   Either the obligation was missed or the timeline entry was never retired
-   after it was satisfied. Both are worth saying out loud.
+1. **PAST DUE** — dated before today but still live in `clocks.json`.
+   Either the obligation was missed or the clock was never satisfied/vacated
+   after it was done. Both are worth saying out loud.
 2. **Next 3 days**, **This week**, then the rest of the horizon.
 3. Inside each band, the user's own obligations come before clocks that run
    against someone else.
