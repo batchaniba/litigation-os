@@ -392,34 +392,9 @@ Plaintiff is representing himself pro se across all 40 matters. The figures belo
 - **Timeline:** `internal/src/data/timeline.json` (full log) + generated `upcoming.json` for the shell deadline clock
 - **Documents:** `internal/public/documents/` (Matter 32: `from-01|02|20|24/` + N.D. Cal. filing under `ndcal/`; Matter 33: `incident|from-07|from-08|opinions/` + N.D. Cal. filing under `ndcal/`; blank Judicial Council templates and the portfolio Proof of Service form under `_form-library/` (see `_form-library/README.md`)). The tree is ~660 MB and growing; without it on disk, `PORTFOLIO_SKIP_DISK_DOCS=1` checks paths against `internal/src/data/documents/manifest.json` (the `pre-push` hook sets this automatically). See [DOCUMENT_STORE.md](internal/docs/DOCUMENT_STORE.md).
 
-### Limits (fetch and UI — not the case)
+### Graph (records, not a diary)
 
-The graph does **not** put a line ceiling on the case. `docket.json` and `events.jsonl` grow. Policy lives in `GRAPH_LIMITS` (`internal/src/data/matters/assembleMatter.js`) and `internal/src/data/index/schema.json` `x-limits`.
-
-| Limit | Applies to | Why |
-| --- | --- | --- |
-| 80 lines / 8KB | split `NN/matter.json` only | first tool call; put the docket in siblings |
-| none | `docket.json`, `events.jsonl`, clocks, claims, damages, evidence | the log |
-| 60 **characters** | `status_label` (every matter) | UI chip (`STATUS_LABEL_MAX`) |
-| word target / ceiling | unsplit `NN.json` prose only | diary ratchet until the file is split |
-| none | overdue `next_clock` | a fact to surface, not a schema failure |
-| none | agent output | do not add length caps on work product |
-
-Legacy free-prose fields still carry word budgets in `internal/src/utils/proseBudget.ts` (mirrored in `internal/scripts/prose-budget.mjs`). Split matters skip those ceilings.
-
-| Field | Target | Enforcement (legacy `NN.json` only) |
-| --- | --- | --- |
-| `key_facts` | 350 words | warning over target, test failure over ceiling |
-| `procedural_status` | 400 words | warning over target, test failure over ceiling |
-| `risk` | 150 words | warning over target, test failure over ceiling |
-| `status` | 60 words | warning over target, test failure over ceiling |
-
-Targets are advisory — `npm run validate` warns but still exits zero, because trimming legal prose is an editorial decision. Ceilings are a ratchet pinned just above the current worst **unsplit** record. **When you trim a legacy matter, lower its field's ceiling to match the new worst case.** The way out of a diary ceiling is to split the matter (`npm run matter:split -- NN --replace`), not to raise the number.
-
-Two rules keep unsplit prose inside budget:
-
-1. **Dated docket entries belong in `timeline.json` / `clocks.json`, not in `procedural_status`.** The timeline already carries them and feeds the derived status labels, badges, and deadline clock. Prose that restates the timeline is the largest single source of length.
-2. **Don't duplicate `status` across modules.** `matter_damages[]` and `lawyer_fees[]` each used to carry their own hand-maintained `status` copy; both now render `effectiveStatusLabel()` from the matter record instead, so there is one source of truth.
+Crawl `internal/src/data/index/matters.json`, then the sibling file the question needs. `events.jsonl` is append-only. Never invent a docket number. `{filed: true, dkt: 18}` is on file; a draft is not. README tables are generated (`npm run generate:readme`) — do not keep them in sync by hand. Split a matter when you touch it (`npm run matter:split -- NN --replace`). Schema is a contract for shape (`internal/src/data/index/schema.json`), not a speed limit. `status_label` is a 60-character UI chip. Legacy `NN.json` prose still has word ratchets until split; the way out is to split, not to raise the number.
 
 On screen, prose over ~320 characters renders through `CollapsibleProse`, which clamps to a few lines with a "Show full …" toggle. That is display only. Nothing is truncated in the DOM — print, find-in-page, and the Markdown export still see the whole record.
 

@@ -1,7 +1,6 @@
 #!/bin/sh
-# Incremental pre-commit: only refresh the derived snapshots whose
-# sources were staged. Build-time outputs (summaries.json, upcoming.json,
-# short-links, vercel.json, slug landings) are gitignored — never synced here.
+# Derived snapshots stay generated, not hand-edited. Run the generators
+# whenever you want. This hook runs them when their sources are staged.
 set -e
 repo_root="$(git rev-parse --show-toplevel)"
 cd "$repo_root"

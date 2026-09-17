@@ -1,5 +1,5 @@
 # Repository Instructions
 
-Follow [AGENTS.md](AGENTS.md). That file is the crawl contract and the standing locks.
+Crawl contract: [AGENTS.md](AGENTS.md). Standing locks live in `.cursor/rules/` (skip PR **#666**, plaintiff-first stipulations, email close, no GitHub URLs to outsiders).
 
 Skip GitHub **PR #666**. Do not review, comment, update, rebase, merge, close, re-open, label, or push to its branch.

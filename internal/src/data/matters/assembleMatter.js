@@ -2,10 +2,8 @@
 // validator, and summaries still consume. Agents should fetch the sibling
 // files directly; this projection exists so the dashboard does not fork.
 //
-// Limits live here as data because they are fetch/UI budgets, not style.
-// Assessment: keep a cap on the *first* file an agent opens. Do not cap the
-// case. docket.json / events.jsonl / claims / damages / evidence grow. An
-// overdue clock is a fact. Do not add output-length caps on agent work.
+// Schema is a contract (same shape), not a speed limit. events.jsonl is
+// append-only. Never invent a docket number. filed is a field.
 
 const isObj = (v) => v !== null && typeof v === "object" && !Array.isArray(v);
 
@@ -25,31 +23,25 @@ export const SPLIT_OPTIONAL_JSON = ["prose.json"];
 export const EVENTS_FILE = "events.jsonl";
 
 /**
- * Portfolio-wide limit policy. Cap the first fetch, not the case.
- *
- * Keep: identity file size (one tool call), status_label width (UI chip),
- * word ceilings on unsplit NN.json diaries, a short index next_clock title
- * when the source is a timeline blob.
- * Drop: line/word ceilings on docket, events, clocks, claims, damages,
- * evidence; schema failure for overdue clocks; agent output-length caps.
+ * Graph contract. Not a throttle on the portfolio or on filing.
+ * The only hard no: do not fabricate the docket; events.jsonl is append-only.
  */
-export const GRAPH_LIMITS = Object.freeze({
-  identity: Object.freeze({ lines: 80, bytes: 8 * 1024 }),
+export const GRAPH_CONTRACT = Object.freeze({
+  eventsAppendOnly: true,
+  inventDocketNumbers: false,
   statusLabelChars: 60,
-  /** Legacy timeline blobs copied into index/matters.json. Split clocks.json titles are not sliced. */
+  /** Index is a front door; legacy timeline blobs get a short title. Split clocks.json titles are not sliced. */
   indexNextClockTitleChars: 240,
-  /** Splitter only: long key_facts stay in prose.json. Not a validator ceiling. */
+  /** Splitter only: long key_facts stay in prose.json. */
   identityKeyFactsChars: 800,
   docketLineCeiling: null,
   eventsLineCeiling: null,
-  splitProseWordCeilings: false,
-  legacyProseWordCeilings: true,
   overdueFailsSchema: false,
   agentOutputCaps: false,
 });
 
-/** Identity-file fetch budget. Not a prose style ceiling. */
-export const MATTER_JSON_BUDGET = GRAPH_LIMITS.identity;
+/** @deprecated alias — contract, not a limit policy */
+export const GRAPH_LIMITS = GRAPH_CONTRACT;
 
 export function paddedMatterNumber(number) {
   return String(number).padStart(2, "0");

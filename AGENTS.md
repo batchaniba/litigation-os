@@ -1,43 +1,11 @@
-# Repository Instructions
+# Crawl
 
-Crawl this repo as a graph. Do not reconstruct a docket from README or from `status` / `procedural_status`.
+`internal/src/data/index/matters.json` is the front door. Then fetch only the sibling you need from `internal/src/data/matters/NN/` (`matter.json`, `docket.json`, `clocks.json`, `events.jsonl`, …). Legacy `NN.json` stays canonical until split — split it when you touch that matter (`node internal/scripts/split-matter.mjs NN --replace`).
 
-## Crawl order
+`events.jsonl` is append-only. Do not rewrite it. Do not move the log into `procedural_status`.
 
-1. `internal/src/data/index/matters.json` — every matter: path, case_no, phase, next_clock, layout.
-2. Split layout: fetch only the sibling files the question needs (`clocks.json`, `docket.json`, `events.jsonl`, `claims.json`, …). Identity is `matter.json`.
-3. Legacy layout: `internal/src/data/matters/NN.json` is still canonical until split. Split it with `node internal/scripts/split-matter.mjs NN --replace` when prose is blocking you.
-4. People, clusters, citations: `internal/src/data/index/{people,clusters,citations}.json`.
-5. Schema and limits: `internal/src/data/index/schema.json`.
+Never invent a docket number. If `dkt` is null, say so. `{filed: true, dkt: 18}` is on file; a draft is not.
 
-## Truth
+PDFs live on the `documents` branch. This branch has `.txt` / `.meta.json` sidecars. A PDF without a sidecar is not searchable here.
 
-- Never treat README as live.
-- Never invent a docket number. If `dkt` is null, say so.
-- `clocks.json` (split) or index `next_clock` wins over prose. Vacated clocks are not live.
-- Operative pleading is the docket row with `"operative": true`. ASK vs CRB name-conform packets: CRB supersedes; they are not two cases.
-- PDF bytes live on the `documents` branch. Search `.txt` / `.meta.json` sidecars on this branch.
-- Do not put GitHub or repo URLs in anything Plaintiff will send or file.
-
-## Limits (what exists, and why)
-
-Cap the first fetch, not the case. Numbers live in `GRAPH_LIMITS` (`assembleMatter.js`) and `index/schema.json` `x-limits`.
-
-- **Keep:** `matter.json` ≤80 lines / 8KB (identity fetch). `status_label` ≤60 characters (UI chip). Word ceilings on unsplit `NN.json` diaries. Index `next_clock.title` ≤240 characters when the source is a timeline blob.
-- **Do not add:** line or word ceilings on `docket.json`, `events.jsonl`, `clocks.json`, claims, damages, or evidence. Schema failure for an overdue `next_clock`. Output-length caps on agent work. Literary line limits on the case.
-
-## Standing locks
-
-- Skip GitHub PR **#666**.
-- Actual stipulations / extensions / stays: read `internal/docs/STIPULATION_DEFENSE.md`. Plaintiff-first. Do not import that voice into ordinary Plaintiff papers.
-- Email close after the valediction:
-
-```
-Brendan Ngwa Nforbi
-Plaintiff, In Propria Persona
-```
-
-No phone, no email address, no "In Pro Per."
-- Counsel research: `internal/docs/counsel/` and `internal/docs/legal-intel/counsel/*.json`. Those dockets are not related cases. Do not email counsel about the research.
-- No GitHub Actions CI except the CourtListener workflows. The gate is local (`npm run validate` / pre-push).
-- Node (`.mjs`) for hooks and `npm run`. Python is one-off document generation, not the build.
+Schema (shape, not a speed limit): `internal/src/data/index/schema.json`.

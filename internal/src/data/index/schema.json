@@ -2,16 +2,13 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://portfolio.local/index/schema.json",
   "title": "Litigation portfolio machine graph",
-  "description": "Limits policy: cap the first fetch, not the case. See x-limits. matter.json must stay small so an agent can load identity without swallowing the docket. events.jsonl and docket.json grow without a line ceiling. clocks.json wins over status/procedural_status. status_label stays ≤60 characters because it is a UI chip, not a diary. Word ceilings on prose apply only to legacy NN.json files; split matters move dates into tables instead of shrinking paragraphs. An overdue next_clock on an active matter is a fact to surface, not a schema failure. Do not cap agent output.",
-  "x-limits": {
-    "identity_lines": 80,
-    "identity_bytes": 8192,
+  "description": "Contract, not a throttle. Types so two agents write the same shape. docket.json is how to find a hearing without reading a diary. events.jsonl is append-only — do not rewrite history in procedural_status. Never invent a docket number; if dkt is null, say so. filed is a field, not a vibe. The index is the front door. status_label maxLength is a UI chip. An overdue next_clock is a fact. Do not fabricate the docket.",
+  "x-contract": {
+    "events_append_only": true,
+    "invent_docket_numbers": false,
     "docket_line_ceiling": null,
     "events_line_ceiling": null,
     "status_label_chars": 60,
-    "index_next_clock_title_chars": 240,
-    "legacy_prose_word_ceilings": true,
-    "split_prose_word_ceilings": false,
     "overdue_fails_schema": false,
     "agent_output_caps": false
   },

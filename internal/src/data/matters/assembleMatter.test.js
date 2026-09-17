@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import fs from "node:fs";
 import path from "node:path";
 import { loadMatters, MATTERS_DIR } from "../../../scripts/load-matters.mjs";
-import { assembleSplitMatter, GRAPH_LIMITS, MATTER_JSON_BUDGET } from "./assembleMatter.js";
+import { assembleSplitMatter, GRAPH_CONTRACT } from "./assembleMatter.js";
 
 describe("machine-first matter graph", () => {
   const matters = loadMatters();
@@ -30,16 +30,19 @@ describe("machine-first matter graph", () => {
     const docket = JSON.parse(fs.readFileSync(path.join(dir, "docket.json"), "utf8"));
     const fac = docket.find((row) => row.operative === true);
     expect(fac.dkt).toBe(10);
+    expect(fac.filed).toBe(true);
     const ask = docket.filter((row) => row.packet === "ask-packet");
     expect(ask.length).toBeGreaterThan(0);
     expect(ask.every((row) => row.superseded_by === "crb-packet")).toBe(true);
-    const identity = fs.readFileSync(path.join(dir, "matter.json"), "utf8");
-    expect(identity.split(/\n/).length).toBeLessThanOrEqual(MATTER_JSON_BUDGET.lines);
-    expect(fs.readFileSync(path.join(dir, "docket.json"), "utf8").split(/\n/).length).toBeGreaterThan(
-      MATTER_JSON_BUDGET.lines,
-    );
-    expect(GRAPH_LIMITS.docketLineCeiling).toBeNull();
-    expect(GRAPH_LIMITS.eventsLineCeiling).toBeNull();
+    const events = fs.readFileSync(path.join(dir, "events.jsonl"), "utf8").trim().split(/\n/);
+    expect(events.every((line) => JSON.parse(line))).toBe(true);
+    const identityLines = fs.readFileSync(path.join(dir, "matter.json"), "utf8").split(/\n/).length;
+    const docketLines = fs.readFileSync(path.join(dir, "docket.json"), "utf8").split(/\n/).length;
+    expect(docketLines).toBeGreaterThan(identityLines);
+    expect(GRAPH_CONTRACT.eventsAppendOnly).toBe(true);
+    expect(GRAPH_CONTRACT.inventDocketNumbers).toBe(false);
+    expect(GRAPH_CONTRACT.docketLineCeiling).toBeNull();
+    expect(GRAPH_CONTRACT.eventsLineCeiling).toBeNull();
   });
 
   it("does not fold prose.json into the assembled projection", () => {

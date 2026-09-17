@@ -11,8 +11,8 @@ import {
 
 export {
   EVENTS_FILE,
+  GRAPH_CONTRACT,
   GRAPH_LIMITS,
-  MATTER_JSON_BUDGET,
   SPLIT_JSON_FILES,
   assembleSplitMatter,
   paddedMatterNumber,
