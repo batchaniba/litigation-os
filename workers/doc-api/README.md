@@ -7,6 +7,16 @@ keys**: the Worker reaches the `litigation-documents` bucket through an
 R2 *binding*. No key pairs, tokens, or secrets exist in this directory —
 by design, there is nowhere to leak them from.
 
+## Who gets what
+
+| Audience | What they get |
+|---|---|
+| ChatGPT / Grok / any third-party chat | This Worker URL. `/matters`, `/fuse`, `/upcoming`, `/doc/<sha256>`, `/doc/<sha256>/meta`, `/documents/<path>`. Zero credentials. |
+| Cursor on the laptop | The Worker for reads. `~/.config/r2/env` only for writes (`documents:push`). |
+| Direct R2 (rare) | A **read-only** API token scoped to `litigation-documents`, minted in the Cloudflare dashboard and revocable. Never the admin pair. |
+
+Admin keys live in exactly two places: the laptop env file (mode 600) and this Worker's `DOCS` binding. Do not paste them into a chatbot, git, or Actions. If the public reads bother you, put one rotatable bearer on the read routes — still not the Cloudflare keys. See `.cursor/rules/worker-not-keys.mdc`.
+
 ## What's here
 
 | File | Purpose |

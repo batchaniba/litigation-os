@@ -146,9 +146,16 @@ npm run docs:fetch <sha256> -- --out /tmp/doc.pdf
 ```
 
 On the laptop those variables are exported from `~/.config/r2/env` (mode 600).
-Shells on that machine source it. Cloud agents do not have that file unless
-the environment image does — they read `R2_*` from the process environment
-or they cannot fetch. Never paste keys into chat, files, or memory.
+Shells on that machine source it. **Do not give those keys to ChatGPT, Grok,
+or any third-party chat.** Point them at the Worker
+(`https://litigation-doc-api.ss8sxswwkt.workers.dev`) — `/matters`, `/fuse`,
+`/doc/<sha256>`, `/doc/<sha256>/meta`, `/documents/<path>`. Cursor reads the
+env file for writes or calls the Worker for reads. Cloud agents without the
+file call the Worker; they never ask him to paste admin keys into chat.
+If a chat needs a secret at all, one rotatable Worker bearer — not the
+Cloudflare pair. Direct R2, if ever: a read-only token scoped to
+`litigation-documents`. Admin keys live in exactly two places: that env
+file and the Worker's bindings. See `.cursor/rules/worker-not-keys.mdc`.
 
 The helper re-hashes the bytes client-side and refuses to write on mismatch.
 `origin/documents` is a cold backup. Incremental upload is

@@ -110,6 +110,9 @@ Do not add workflow YAML. Do not add `.github/dependabot.yml`. Dependabot
 version updates now run on GitHub Actions runners and a spending limit that
 blocks Actions will block them (or put jobs back in the Actions tab).
 
+External AIs get the Worker (`https://litigation-doc-api.ss8sxswwkt.workers.dev`),
+not R2 admin keys. See `.cursor/rules/worker-not-keys.mdc`.
+
 ## Dependency updates (no Actions)
 
 Weekly on the laptop:
