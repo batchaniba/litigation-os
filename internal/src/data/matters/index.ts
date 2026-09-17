@@ -71,7 +71,7 @@ export function loadMatter(number: number): Promise<Matter> {
         claims: parts.claims as object | undefined,
         damages: parts.damages as object | string | undefined,
         evidence: parts.evidence as object[] | string[] | undefined,
-      }) as Matter & { documents?: MatterDocumentRef[] };
+      }) as unknown as Matter & { documents?: MatterDocumentRef[] };
       return finishMatter(assembled);
     });
   }
