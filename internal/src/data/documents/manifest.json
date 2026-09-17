@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1291,
-  "totalBytes": 904062941,
+  "fileCount": 1293,
+  "totalBytes": 904420007,
   "files": [
     {
       "path": "/documents/README.md",
@@ -2749,6 +2749,11 @@
       "sha256": "867144f907d9f7701bc97706aeddd38d6f809878ea2017af7c0995d7308ddafe"
     },
     {
+      "path": "/documents/matter-27/$25k Global Settlement - Email Thread with Williams (Sep 12-17 2026).pdf",
+      "size": 87171,
+      "sha256": "933f70d65475cdf8aef62c6265a6d521a9ae716823e3e4fc4b6873a4010c6ed4"
+    },
+    {
       "path": "/documents/matter-27/15780719Final_Profile.PDF",
       "size": 594832,
       "sha256": "d8a2b75750f56a2760d2650a56ca668ece4424e576e03fe877641a2fe94d16f3"
@@ -3187,6 +3192,11 @@
       "path": "/documents/matter-27/Stipulation to Extend Time for Randstad to Respond (Plaintiff Counterpart, Sep 14 2026).pdf",
       "size": 9356,
       "sha256": "262451406d7a2365d3ea92c0c2116c8ed841f962bf7971346e1370225997fe57"
+    },
+    {
+      "path": "/documents/matter-27/Stipulation to Set Aside and Vacate Entry of Default (Executed, Entered Sep 17 2026).pdf",
+      "size": 269895,
+      "sha256": "aab6ff8c91b329acdf1bb12f55b40af85279f3909c853e281b1dd5a0d636e2a0"
     },
     {
       "path": "/documents/matter-27/Welcome to Randstad.pdf",
