@@ -10,6 +10,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { createHash } from "node:crypto";
 import { todayKey, dateKeyFromLabel } from "./next-actions.mjs";
+import { paddedMatterNumber } from "./matter-layout.mjs";
 import { getObject, keyForSha256 } from "./r2-client.mjs";
 
 const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../..");
@@ -91,7 +92,10 @@ export function getTimeline({ matter, since, upcomingOnly = false, limit = 200 }
     const m = matterByNumber(n);
     if (!m) throw new Error(`no matter ${n} in index`);
     if (m.layout === "split") {
-      const p = path.join(REPO_ROOT, `internal/src/data/matters/${n}/events.jsonl`);
+      const p = path.join(
+        REPO_ROOT,
+        `internal/src/data/matters/${paddedMatterNumber(n)}/events.jsonl`,
+      );
       events = fs
         .readFileSync(p, "utf8")
         .split("\n")
