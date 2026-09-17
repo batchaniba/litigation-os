@@ -25,7 +25,7 @@ Admin keys live in exactly two places: the laptop env file (mode 600) and this W
 | `src/index.mjs` | The Worker. `/doc/<sha256>` (immutable cache) and `/documents/<path>` (60s cache, path index then D1) plus D1 data routes, guarded `/admin/reseed`, and the scheduled digests. |
 | `src/documents.mjs` | Path → sha256 helpers shared with `r2-upload.mjs --index`. A later row at the same path wins (redraft). |
 | `schema.sql` | Idempotent D1 schema: `matters`, `clocks`, `documents`. |
-| `seed.mjs` | Node script → stdout. Reads repo JSON (split `matters/NN/` preferred, legacy `NN.json` fallback, folded `next_clock` from the index, documents from the manifest) and emits idempotent INSERTs. Never writes to the repo. |
+| `seed.mjs` | Node script → stdout. Reads repo JSON (split `matters/NN/` preferred, legacy `NN.json` fallback, folded `next_clock` from the index, documents from the manifest) and emits idempotent INSERTs. Split clock rows use the portfolio's canonical live-clock predicate, so `satisfied` and `vacated` clocks are never copied into D1. Never writes to the repo. |
 
 ## Deploy
 
@@ -45,12 +45,19 @@ deploy time (`wrangler d1 list`) or wrangler will prompt.
 ## D1 re-seed
 
 D1 is a second copy of the graph. Nothing reseeds it on merge. When it
-needs a refresh: `node seed.mjs > seed.sql`, then POST the file to
-`/admin/reseed` with the `RESEED_SECRET` bearer (or paste chunks into the
-D1 console — keep pastes ≤ ~80KB with no `--` comment lines; the console
-strips newlines). The endpoint applies the statements idempotently in
-batches of 50 and is fail-closed (503 when the secret isn't configured,
-403 on mismatch).
+needs a refresh: generate a fresh local snapshot with `node seed.mjs > seed.sql`,
+then POST that file to `/admin/reseed` with the `RESEED_SECRET` bearer (or
+paste chunks into the D1 console — keep pastes ≤ ~80KB with no `--` comment
+lines; the console strips newlines). The endpoint applies the statements
+idempotently in batches of 50 and is fail-closed (503 when the secret isn't
+configured, 403 on mismatch).
+
+`seed.sql` and any `seed-chunk-*.sql` files are local generated artifacts and
+are gitignored. Do not commit them: a checked-in snapshot can drift behind
+`clocks.json`, the matter index, or the document manifest. The generator is
+the source of truth for the D1 copy and emits only live, dated split clock
+rows; retired `satisfied`/`vacated` history stays in git but not in D1's live
+`clocks` table.
 
 Re-seed after the manifest or matter data changes (`node seed.mjs` again —
 statements are idempotent). Cron times in `wrangler.toml` are UTC
@@ -64,7 +71,7 @@ documented in the file.
   happy path (PDF bytes, ETag passthrough), 400 on bad hash, JSON 404 on
   missing object, `/doc/<sha256>/meta`, `/matters`, `/matters/26`,
   `/upcoming?days=14`, `/fuse`, and 503 `d1_not_provisioned` with no DB.
-- `seed.mjs` runs against the checkout: 40 matters, clock rows, and
+- `seed.mjs` runs against the checkout: 40 matters, live clock rows, and
   manifest document rows emitted; SQL is single-quote-safe.
 
 ## Not yet done
