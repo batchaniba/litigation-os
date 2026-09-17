@@ -1,0 +1,15 @@
+{
+  "path": "/documents/matter-32/ndcal/Declaration of Mailing - CCP 415.20(b) Follow-Up to Dkt 16 - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 17, 2026).pdf",
+  "dkt": null,
+  "date": "2026-09-17",
+  "author": "Brendan Ngwa Nforbi",
+  "pages": 3,
+  "doc_type": "declaration of mailing",
+  "cites": [
+    "Cal. Code Civ. Proc. \u00a7 415.20(b)",
+    "Fed. R. Civ. P. 4(e)(1)"
+  ],
+  "holds_one_liner": "Plaintiff-signed CCP \u00a7 415.20(b) mailing declaration dated September 17, 2026. No cover letter. San Jose first-class to 4030 Kiernan Avenue.",
+  "extract": "pypdf",
+  "note": "Unfiled. Date the papers the day the envelope is mailed."
+}

@@ -181,7 +181,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | 29 | Newanforbi v. Amazon.com Services, LLC | 4:26-cv-09249-ASK | USDC N.D. Cal. (Oakland; formerly 3:26-cv-09249-ASK) | Federal | Plaintiff consent filed — both answers Sep. 22 |
 | 30 | Newanforbi v. Moua, et al. | TBD | USDC N.D. Cal. | Federal | Pre-filing — Moua v9 ready; GCA window open |
 | 31 | Newanforbi v. First Advantage LLC | TBD | San Joaquin Sup. Ct. (anticipated) | State | Pre-filing — no demand or complaint yet |
-| 32 | Nforbi v. Meza-Gonzalez, et al | 4:26-cv-08271-ASK | USDC N.D. Cal. (Oakland; 4:26-cv-08271-ASK; opened as 3:26-cv-08271-PHK; related Serrato 3:26-cv-05953-CRB and Candelaria 3:26-cv-08272-LJC) | Federal | 415.20 papers Sep. 16 — file decl after mail |
+| 32 | Nforbi v. Meza-Gonzalez, et al | 4:26-cv-08271-ASK | USDC N.D. Cal. (Oakland; 4:26-cv-08271-ASK; opened as 3:26-cv-08271-PHK; related Serrato 3:26-cv-05953-CRB and Candelaria 3:26-cv-08272-LJC) | Federal | 415.20 papers Sep. 17 — mail then file decl |
 | 33 | Nforbi v. Candelaria et al. | 3:26-cv-08272-LJC | USDC N.D. Cal. (San Francisco Div.) | Federal | AG answered; name stip accepted — wait to file |
 | 34 | Newanforbi v. Counseling and Psychotherapy Center, Inc., et al. | TBD | USDC N.D. Cal. (San Jose Div.) / Santa Clara Sup. Ct. | Federal | Pre-filing — intake & compliance monitoring |
 | 35 | Ngwa Nforbi v. Ross Stores, Inc., et al. | 26CV501995 | Santa Clara Sup. Ct. (Downtown / First Street) | State | File caption request — then serve Ross ~Oct 25 |
@@ -235,7 +235,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 |---|---|---|
 | Sep. 16, 2026 | 26 | Rule 15(a)(1)(B) amendment-as-of-right window — Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). UPS served the MTD by mail Aug. 26, 2026… |
 | Sep. 16, 2026 | 30 | Anticipated filing date (computed) — Complaint v9 (Moua and DOES 1-10), Newanforbi v. Moua, et al. (Matter 30); 15 days after the anticipated Sep. 1, 2026… |
-| Sep. 17, 2026 | 32 | FILE — signed 415.20(b) declaration + Exhibit A USPS receipt + POS in Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK) after the September 16 postmark. San… |
+| Sep. 17, 2026 | 32 | FILE — signed 415.20(b) declaration + Exhibit A USPS receipt + POS in Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK) after the September 17 postmark. San… |
 | Sep. 17, 2026 | 32 | MAIL — CCP § 415.20(b) first-class follow-up to Dkt. 16 / 16-1 for Santiago Meza-Gonzalez in Nforbi v. Meza-Gonzalez et al. (N.D. Cal. 4:26-cv-08271-ASK).… |
 | Sep. 17, 2026 | 40 | WATCH — First Advantage saliva-drug-test schedule for TaskUs Holdings, Inc. expires 11:49 a.m. Eastern (Schedule ID 96558696; LabCorp-Milpitas). A missed… |
 | Sep. 18, 2026 | 27 | EXPIRES — $25,000 final early global settlement demand in Newanforbi v. Randstad US, LLC et al. (26CV199902), sent Sept. 12, 2026, 8:00 a.m. Expires… |
@@ -256,7 +256,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | Oct. 15, 2026 | 28 | Case Management Statement due — Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504), USDC N.D. Cal. |
 | Oct. 16, 2026 | 20 | Hearing on CHP demurrer and the individual respondents' joinders/demurrers to the Petition for Writ of Mandate, Newanforbi v. California Highway Patrol, et al.… |
 | Oct. 17, 2026 | 39 | OUTER BOUND — CCP § 338(a) three-year statutory-liability clock on the Best Buy § 290.46(j) count if accrual is the Oct. 17, 2023 offer / same-day screen week.… |
-| Oct. 19, 2026 | 32 | WATCH — Meza-Gonzalez Rule 12(a) responsive deadline (computed from a September 16, 2026 CCP § 415.20(b) mailing) in Nforbi v. Meza-Gonzalez et al.… |
+| Oct. 19, 2026 | 32 | WATCH — Meza-Gonzalez Rule 12(a) responsive deadline (computed from a September 17, 2026 CCP § 415.20(b) mailing) in Nforbi v. Meza-Gonzalez et al.… |
 | Oct. 20, 2026 | 20 | WATCH — CHP written responses to RFP Set One (Count 1) in Newanforbi v. CHP et al. (26CV191136). Clock is October 20 if the September 16 email to Ing is valid… |
 | Oct. 22, 2026 | 28 | Initial Case Management Conference — Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504), 1:30 PM, Hon. Lisa J. Cisneros, San Francisco… |
 | Oct. 22, 2026 | 33 | Deadline to file ADR Certification (ADR L.R. 3) and to meet and confer regarding initial disclosures, early settlement, ADR process selection, and a discovery… |

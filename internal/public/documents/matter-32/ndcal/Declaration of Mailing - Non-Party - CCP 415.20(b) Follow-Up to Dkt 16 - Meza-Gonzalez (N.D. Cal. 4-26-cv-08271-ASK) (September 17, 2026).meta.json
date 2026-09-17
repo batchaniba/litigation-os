@@ -1,0 +1,15 @@
+{
+  "path": "/documents/matter-32/ndcal/Declaration of Mailing - Non-Party - CCP 415.20(b) Follow-Up to Dkt 16 - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 17, 2026).pdf",
+  "dkt": null,
+  "date": "2026-09-17",
+  "author": "Brendan Ngwa Nforbi",
+  "pages": 3,
+  "doc_type": "declaration of mailing",
+  "cites": [
+    "Cal. Code Civ. Proc. \u00a7 415.20(b)",
+    "Fed. R. Civ. P. 4(e)(1)"
+  ],
+  "holds_one_liner": "Blank non-party mailer declaration dated September 17, 2026 for CCP \u00a7 415.20(b) follow-up to Dkt. 16.",
+  "extract": "pypdf",
+  "note": "Unfiled. Date the papers the day the envelope is mailed."
+}

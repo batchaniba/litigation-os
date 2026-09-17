@@ -1,0 +1,15 @@
+{
+  "path": "/documents/matter-32/ndcal/Exhibit A Cover - USPS Receipt - CCP 415.20(b) Mailing Meza-Gonzalez (September 17, 2026).pdf",
+  "dkt": null,
+  "date": "2026-09-17",
+  "author": "Brendan Ngwa Nforbi",
+  "pages": 1,
+  "doc_type": "exhibit",
+  "cites": [
+    "Cal. Code Civ. Proc. \u00a7 415.20(b)",
+    "Fed. R. Civ. P. 4(e)(1)"
+  ],
+  "holds_one_liner": "Exhibit A cover for the USPS receipt of the September 17, 2026 CCP \u00a7 415.20(b) mailing.",
+  "extract": "pypdf",
+  "note": "Unfiled. Date the papers the day the envelope is mailed."
+}

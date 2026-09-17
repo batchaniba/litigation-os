@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1286,
-  "totalBytes": 903692509,
+  "fileCount": 1291,
+  "totalBytes": 904062941,
   "files": [
     {
       "path": "/documents/README.md",
@@ -4980,13 +4980,18 @@
     },
     {
       "path": "/documents/matter-32/ndcal/CCP 415.20(b) Mailing Bundle - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 17, 2026).pdf",
-      "size": 3279649,
-      "sha256": "fb7822fb20c8d9e101509d38a7d512e4f5171530b121d8a3d922d233e70251e9"
+      "size": 3086177,
+      "sha256": "3d47a25c7458f2d968464b52e66ef53fc05fb34aa3d0aab4064df490d7ca2d10"
     },
     {
       "path": "/documents/matter-32/ndcal/CCP 415.20(b) Mailing Filing Packet - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 17, 2026).pdf",
-      "size": 397339,
-      "sha256": "ba500f8cd1a9453b2e8f550514b320fe44ca8c2b3d4ec5a4131e3f2c067d0072"
+      "size": 474684,
+      "sha256": "701d64e373617e0c48836edc3901f971b197e01fbad02b364f99dcee504d8a54"
+    },
+    {
+      "path": "/documents/matter-32/ndcal/CCP_41520_MAILING_INSTRUCTIONS_Meza.txt",
+      "size": 1474,
+      "sha256": "c3ccba81c00762987d1dc77208aa2ccba1915c071d6dc972f48179d94afdf573"
     },
     {
       "path": "/documents/matter-32/ndcal/Certification of Conflicts Interested Entities and Persons (Meza Melano) (Sep 4 2026).pdf",
@@ -5037,6 +5042,16 @@
       "path": "/documents/matter-32/ndcal/Declaration of Mailing - CCP 415.20(b) Follow-Up to Dkt 16 - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 16, 2026).pdf",
       "size": 201280,
       "sha256": "a681de8d821b6a710a117bcd931eab55f3b044cfb56ebbe2c817a8ca0ff5eacf"
+    },
+    {
+      "path": "/documents/matter-32/ndcal/Declaration of Mailing - CCP 415.20(b) Follow-Up to Dkt 16 - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 17, 2026).pdf",
+      "size": 240024,
+      "sha256": "4b9eecfbe5e24812249d7cc6f587fe9831dab4126b24c65a8ea52f5a5ced06ca"
+    },
+    {
+      "path": "/documents/matter-32/ndcal/Declaration of Mailing - Non-Party - CCP 415.20(b) Follow-Up to Dkt 16 - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 17, 2026).pdf",
+      "size": 8499,
+      "sha256": "b02660bf8507ea00566a15d96afe09e6419129f91e19b2877ac95d086b497615"
     },
     {
       "path": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
@@ -5154,6 +5169,11 @@
       "sha256": "a20b8291b72f901021c0e24e03c9b93d28131d083af9c9731f7b9222e21ad0db"
     },
     {
+      "path": "/documents/matter-32/ndcal/Exhibit A Cover - USPS Receipt - CCP 415.20(b) Mailing Meza-Gonzalez (September 17, 2026).pdf",
+      "size": 2142,
+      "sha256": "e82aff5184afeb20945117647a4e221d68d211dffc07ab2abb3c78d45bc4c8c9"
+    },
+    {
       "path": "/documents/matter-32/ndcal/Exhibit A Cover - USPS eReceipt FAC Service on Melano (Aug 21 2026).pdf",
       "size": 2187,
       "sha256": "88a7b719acf67e215a8d2e07da3ed6ef4c73f862c57241395c45931454e7d360"
@@ -5262,6 +5282,11 @@
       "path": "/documents/matter-32/ndcal/Proof of Service - Certification of Conflicts (Meza Melano) (Sep 4 2026).pdf",
       "size": 195587,
       "sha256": "3a0569fb5a9f282bbb1ef430a4ef75828b2f04042bd94b1a93b8ab4bb9a2a43d"
+    },
+    {
+      "path": "/documents/matter-32/ndcal/Proof of Service - Declaration of Mailing CCP 415.20(b) - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 17, 2026).pdf",
+      "size": 234420,
+      "sha256": "57bb49de241ea0813028b585fefd005f19af8bfa833ee7d030d08257d8d875fa"
     },
     {
       "path": "/documents/matter-32/ndcal/Proof of Service - FAC Dkt 05 Mailed to Melano (Aug 21 2026).pdf",
