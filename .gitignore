@@ -44,3 +44,6 @@ internal/src/data/matters/summaries.json
 internal/src/data/matters/document-index.json
 internal/src/data/upcoming.json
 internal/public/*/index.html
+
+# personal Claude Code overrides (permission grants for private doc store)
+.claude/settings.local.json
