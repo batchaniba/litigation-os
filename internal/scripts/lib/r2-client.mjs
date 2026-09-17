@@ -26,6 +26,13 @@ export function keyForSha256(sha256) {
   return `sha256/${h.slice(0, 2)}/${h.slice(2)}.pdf`;
 }
 
+/** Text-sidecar key for a PDF sha256: text/<first2>/<rest>.txt (poppler extraction). */
+export function keyForSha256Text(sha256) {
+  const h = sha256.toLowerCase();
+  if (!/^[0-9a-f]{64}$/.test(h)) throw new Error("expected a 64-char hex sha256");
+  return `text/${h.slice(0, 2)}/${h.slice(2)}.txt`;
+}
+
 export function isConfigured() {
   return Boolean(ACCESS_KEY && SECRET_KEY && ACCOUNT);
 }

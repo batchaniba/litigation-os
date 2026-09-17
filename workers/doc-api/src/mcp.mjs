@@ -6,14 +6,16 @@
 // connectors, …) use the portfolio's R2 documents and D1 data without ever
 // handling R2 keys: the Worker reaches the bucket through its binding.
 //
-// Read-only by design (v1): the same read operations as `npm run q` / the
-// stdio server in internal/mcp. PDF bytes are not embedded in tool results —
-// fetchDocument returns the /doc/<sha256> download URL and the model fetches
-// it over HTTP. CORS is open so browser-based clients can call it.
+// Read-only by design: the same read operations as `npm run q` / the
+// stdio server in internal/mcp. Document contents come back as tool results —
+// readDocumentText returns pre-extracted PDF text inline (no separate fetch),
+// and fetchDocument returns the /doc/<sha256> download URL for raw PDF bytes
+// when those are needed. CORS is open so browser-based clients can call it.
 
 import {
   HttpError,
   fuseData,
+  getDocText,
   getMatterData,
   headDocObject,
   listMattersData,
@@ -21,7 +23,7 @@ import {
   upcomingData,
 } from "./data.mjs";
 
-const SERVER = { name: "litigation-doc-api", version: "1.1.0" };
+const SERVER = { name: "litigation-doc-api", version: "1.2.0" };
 // Newest first; the initialize handshake negotiates the client's version
 // when we speak it, otherwise our newest.
 const PROTOCOLS = ["2025-06-18", "2025-03-26", "2024-11-05"];
@@ -179,6 +181,24 @@ const TOOLS = [
       const meta = await headDocObject(ctx.env, sha256);
       return { ...meta, url: docUrl(ctx, meta.sha256) };
     },
+  },  {
+    name: "readDocumentText",
+    description:
+      "Read a document's contents as extracted text, paginated. Takes the 64-char manifest sha256 (from searchDocuments/getMatterDocs) and returns the text inline — no separate fetch needed. This is the preferred way to read a document; use fetchDocument only when raw PDF bytes are required.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        sha256: { type: "string", pattern: "^[0-9a-fA-F]{64}$", description: "64 hex chars." },
+        offset: { type: "integer", description: "Character offset into the extracted text. Default 0." },
+        limit: {
+          type: "integer",
+          description: "Max characters to return, 1-100000. Default 20000.",
+          default: 20000,
+        },
+      },
+      required: ["sha256"],
+    },
+    run: async ({ sha256, offset, limit }, ctx) => getDocText(ctx.env, sha256, offset, limit),
   },
 ];
 
