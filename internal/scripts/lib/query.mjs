@@ -7,13 +7,11 @@
 // they will eventually be refactored to import from.
 import fs from "node:fs";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
 import { createHash } from "node:crypto";
 import { todayKey, dateKeyFromLabel } from "./next-actions.mjs";
 import { paddedMatterNumber } from "./matter-layout.mjs";
 import { getObject, keyForSha256 } from "./r2-client.mjs";
-
-const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../..");
+import { REPO_ROOT } from "./root.mjs";
 const readJSON = (rel) => JSON.parse(fs.readFileSync(path.join(REPO_ROOT, rel), "utf8"));
 
 let _index = null;
@@ -96,11 +94,22 @@ export function getTimeline({ matter, since, upcomingOnly = false, limit = 200 }
         REPO_ROOT,
         `internal/src/data/matters/${paddedMatterNumber(n)}/events.jsonl`,
       );
-      events = fs
+      const rows = fs
         .readFileSync(p, "utf8")
         .split("\n")
         .filter(Boolean)
-        .map((line) => JSON.parse(line))
+        .map((line) => JSON.parse(line));
+      // Retire tombstones (appended by retireUpcomingEvent) hide the events
+      // they supersede. The log stays append-only; the read view filters.
+      const retireKey = (ts, title) => JSON.stringify([ts, title]);
+      const retired = new Set(
+        rows
+          .filter((e) => e.type === "retire" && e.supersedes_ts && e.supersedes_title)
+          .map((e) => retireKey(e.supersedes_ts, e.supersedes_title)),
+      );
+      events = rows
+        .filter((e) => e.type !== "retire")
+        .filter((e) => !retired.has(retireKey(e.ts, e.title)))
         .map((e) => ({ date: e.ts?.slice(0, 10) ?? null, ...e }));
     } else {
       events = timeline().filter((e) => (e.matters ?? []).includes(n));
@@ -108,7 +117,12 @@ export function getTimeline({ matter, since, upcomingOnly = false, limit = 200 }
   } else {
     events = timeline();
   }
-  const keyOf = (e) => e.dateKey ?? (e.date ? dateKeyFromLabel(e.date) : null);
+  const keyOf = (e) => {
+    if (e.dateKey) return e.dateKey;
+    if (!e.date) return null;
+    if (/^\d{4}-\d{2}-\d{2}$/.test(e.date)) return e.date;
+    return dateKeyFromLabel(e.date);
+  };
   return events
     .filter((e) => !upcomingOnly || e.upcoming === true)
     .filter((e) => !since || (keyOf(e) ?? "0000-00-00") >= since)

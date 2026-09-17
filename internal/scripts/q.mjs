@@ -16,12 +16,21 @@ import {
   getClusters,
   getMatterDocs,
 } from "./lib/query.mjs";
+import {
+  recordTimelineEvent,
+  retireUpcomingEvent,
+  setNextClock,
+  updateMatterIdentity,
+  catalogDocument,
+  scaffoldMatter,
+  splitMatter,
+} from "./lib/mutate.mjs";
 
 const OPS = {
   getMatter: { fn: getMatter, args: ["n"] },
   listMatters: { fn: listMatters, opts: true },
   upcomingDeadlines: { fn: upcomingDeadlines, opts: true },
-  getTimeline: { fn: getTimeline, opts: true },
+  getTimeline: { fn: getTimeline, opts: true, bool: ["upcomingOnly"] },
   getFuseBoard: { fn: getFuseBoard, opts: true },
   fetchDocument: { fn: fetchDocument, args: ["sha256"], flags: ["out"] },
   searchDocuments: { fn: searchDocuments, args: ["query"], flags: ["limit"] },
@@ -29,7 +38,35 @@ const OPS = {
   getJudgeDossier: { fn: getJudgeDossier, args: ["name"] },
   getClusters: { fn: getClusters },
   getMatterDocs: { fn: getMatterDocs, args: ["n"] },
+  // --- writes (Stage 1b): validated before touching disk ---
+  recordTimelineEvent: { fn: recordTimelineEvent, opts: true, json: ["matters"], bool: ["upcoming", "filed"] },
+  retireUpcomingEvent: { fn: retireUpcomingEvent, opts: true },
+  setNextClock: { fn: setNextClock, opts: true, int: ["source_dkt"] },
+  updateMatterIdentity: { fn: updateMatterIdentity, opts: true, json: ["patch"], int: ["n"] },
+  catalogDocument: { fn: catalogDocument, opts: true, int: ["matter", "size"], bool: ["filed"] },
+  scaffoldMatter: { fn: scaffoldMatter, opts: true, int: ["n"] },
+  splitMatter: { fn: splitMatter, opts: true, int: ["n"] },
 };
+
+function coerce(spec, params) {
+  const out = { ...params };
+  for (const k of spec.json ?? []) {
+    if (typeof out[k] === "string") {
+      try {
+        out[k] = JSON.parse(out[k]);
+      } catch {
+        throw new Error(`--${k} must be JSON`);
+      }
+    }
+  }
+  for (const k of spec.int ?? []) {
+    if (out[k] !== undefined) out[k] = Number(out[k]);
+  }
+  for (const k of spec.bool ?? []) {
+    if (typeof out[k] === "string") out[k] = out[k].toLowerCase() === "true";
+  }
+  return out;
+}
 
 function usage() {
   console.error(`Usage: npm run q <op> [--key value] [...]\n\nOperations:\n${Object.keys(OPS).map((o) => `  ${o}`).join("\n")}`);
@@ -54,7 +91,7 @@ try {
   const { fn, args = [], opts = false, flags = [] } = OPS[op];
   let result;
   if (opts) {
-    result = await fn(params);
+    result = await fn(coerce(OPS[op], params));
   } else if (args.length) {
     const values = args.map((a, i) => positional[i] ?? params[a]);
     if (values.some((v) => v === undefined)) usage();
