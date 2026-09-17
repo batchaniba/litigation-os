@@ -24,7 +24,7 @@ export const damages_table = [
     { category: "N.D. Cal. §1983 Nforbi v. Candelaria et al. (Matter 33, 3:26-cv-08272-LJC) — pleaded >$214k; $0 here to avoid double-count w/ M7", matters: [33], conservative: 0, moderate: 0, aggressive: 0 },
     { category: "§1983 Monell / Individual + Bane Act — Counseling & Psychotherapy Center (Matter 34)", matters: [34], conservative: 0, moderate: 0, aggressive: 0 },
     { category: "Unruh / False Imprisonment / Negligent Training — Ross Stores (Matter 35)", matters: [35], conservative: 115000, moderate: 345000, aggressive: 1035000 },
-    { category: "San Joaquin executed packets — favorable-MTD settlement (Matters 36–39)", matters: [36, 37, 38, 39], conservative: 235000, moderate: 360000, aggressive: 485000 }
+    { category: "FCRA / §290 failure-to-hire — AT&T / Home Depot / Swift / Best Buy (36–39)", matters: [36, 37, 38, 39], conservative: 235000, moderate: 360000, aggressive: 485000 }
 ];
 // Matters 3, 5, and 15 are excluded/reduced above (abandoned/dismissed Jul. 2026):
 // - Matter 3 (Derrick, ABANDONED): its Lost Income, Emotional Distress, Punitive, and Fees
@@ -826,7 +826,7 @@ const matter_damages_raw = [
   },
   {
     number: 36,
-    claims: "FCRA / ICRAA / Contract / Estoppel / § 290.46(j) — executed San Joaquin packet",
+    claims: "FCRA / ICRAA / Contract / Estoppel / § 290.46(j) — E.D. Cal. walk-up / San Joaquin locked",
     risk: "Favorable on contract and estoppel at demurrer: written $24.95 offer, Workday acceptance, onboarding, two-hour rescission. 290/FCRA/ICRAA remain information and belief until the AT&T report is produced. FCRA invites federal-question removal.",
     settlement_note: "Post-favorable-MTD settlement range if the pleading survives demurrer. Strongest of the four. No demand has been sent. Do not treat as a confirming-report valuation — 290 still needs the AT&T file.",
     conservative: 90000,
@@ -916,7 +916,7 @@ const matter_damages_raw = [
     number: 38,
     claims: "ICRAA / UCL / § 290.46(j) I&B — Swift Class A Driver / Oct. 5, 2023 denial",
     risk: "Significant. Written post-adverse admits consumer-report use, so ICRAA is the load-bearing path. The 290 count is I&B that Swift used preliminary NSOPW information while that component remained Processing.",
-    settlement_note: "Post-favorable-MTD settlement range. Weakest of the four on 290; ICRAA still settles if the pleading survives. No demand. File before Sept. 26, 2026 if the pre-adverse is accrual.",
+    settlement_note: "Post-favorable-MTD settlement range. Weakest of the four on 290; ICRAA still settles if the pleading survives. No demand. File in E.D. Cal. Sacramento before Sept. 26, 2026 if the pre-adverse is accrual.",
     conservative: 45000,
     moderate: 65000,
     aggressive: 90000,

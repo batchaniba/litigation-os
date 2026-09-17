@@ -1,0 +1,51 @@
+[
+  {
+    "id": "mtd-hearing",
+    "date": "2026-11-20",
+    "time": "10:00",
+    "tz": "America/Los_Angeles",
+    "kind": "hearing",
+    "status": "set",
+    "source_dkt": 30,
+    "title": "MTD FAC (Dkt. 18) Zoom before Judge Breyer",
+    "actor": "you"
+  },
+  {
+    "id": "appearance-notice",
+    "date": "2026-11-16",
+    "time": "15:00",
+    "tz": "America/Los_Angeles",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": 30,
+    "title": "Email appearance names to crbcrd@cand.uscourts.gov",
+    "actor": "you"
+  },
+  {
+    "id": "cmc-after-mtd",
+    "date": null,
+    "kind": "cmc",
+    "status": "contingent",
+    "source_dkt": 25,
+    "title": "CMC 14 days after final order on Dkt. 18 — no date certain",
+    "actor": "you"
+  },
+  {
+    "id": "name-conform-711",
+    "date": null,
+    "kind": "filing",
+    "status": "open",
+    "source_dkt": null,
+    "title": "Unfiled Civil L.R. 7-11 name-conform packet (CRB caption). ASK packet is superseded.",
+    "actor": "you"
+  },
+  {
+    "id": "mtd-hearing-sep30",
+    "date": "2026-09-30",
+    "kind": "hearing",
+    "status": "vacated",
+    "source_dkt": 28,
+    "title": "Krishnan Sep. 30 MTD hearing vacated by Dkt. 28/29. Do not treat as live.",
+    "actor": "court"
+  }
+]

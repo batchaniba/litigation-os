@@ -57,8 +57,14 @@ const OPTIONAL = {
         isNonEmptyStr(c.name) &&
         (c.attorney_id === undefined || isNum(c.attorney_id)) &&
         (c.firm === undefined || isStr(c.firm)) &&
-        (c.dossier === undefined || isStr(c.dossier)),
+        (c.dossier === undefined || isStr(c.dossier)) &&
+        (c.counsel_id === undefined || isStr(c.counsel_id)),
     ),
+  related: (v) => Array.isArray(v) && v.every(isInt),
+  same_incident: isStr,
+  former_case_no: isStr,
+  judge_id: isStr,
+  last_updated: (v) => isStr(v) && /^\d{4}-\d{2}-\d{2}$/.test(v),
 };
 
 /** Validate a parsed matter JSON; returns an array of human-readable issues (empty = valid). */

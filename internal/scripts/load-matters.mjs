@@ -1,28 +1,47 @@
 // Shared Node-side loader for matter JSON records.
-// Vite uses import.meta.glob in internal/src/data/matters/index.js;
-// plain Node (validate, scaffold) reads the same files via fs.
-import fs from "node:fs";
+// Vite uses import.meta.glob in internal/src/data/matters/index.ts;
+// plain Node (validate, scaffold, index) reads the same files via fs.
+//
+// Two layouts, portfolio-wide:
+//   legacy — internal/src/data/matters/NN.json
+//   split  — internal/src/data/matters/NN/{matter,docket,clocks,...}.json
+// Split a matter when you touch it. This loader still returns the assembled
+// Matter shape so the dashboard and existing scripts do not fork.
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { validateMatter } from "./lib/matter-schema.mjs";
+import {
+  legacyMatterPath,
+  listMatterSources,
+  loadSplitMatter,
+  paddedMatterNumber,
+  readJson,
+} from "./lib/matter-layout.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 export const MATTERS_DIR = path.resolve(__dirname, "../src/data/matters");
 
 export function loadMatters() {
-  const files = fs
-    .readdirSync(MATTERS_DIR)
-    .filter((name) => /^\d{2}\.json$/.test(name))
-    .sort();
-
-  const cases = files.map((name) => {
-    const raw = fs.readFileSync(path.join(MATTERS_DIR, name), "utf8");
-    const matter = JSON.parse(raw);
+  const sources = listMatterSources(MATTERS_DIR);
+  const seen = new Set();
+  const cases = sources.map((source) => {
+    if (seen.has(source.number)) {
+      throw new Error(
+        `Matter ${source.number} has both ${paddedMatterNumber(source.number)}.json and a split folder — keep one layout`,
+      );
+    }
+    seen.add(source.number);
+    const matter =
+      source.layout === "split"
+        ? loadSplitMatter(source.dir)
+        : Object.assign(readJson(source.abs), {
+            __sourceFile: source.rel,
+            __layout: "legacy",
+          });
     const issues = validateMatter(matter);
     if (issues.length) {
-      throw new Error(`matters/${name} failed schema validation:\n  - ${issues.join("\n  - ")}`);
+      throw new Error(`matters/${source.rel} failed schema validation:\n  - ${issues.join("\n  - ")}`);
     }
-    matter.__sourceFile = name;
     return matter;
   });
 
@@ -31,5 +50,13 @@ export function loadMatters() {
 }
 
 export function matterFileName(number) {
-  return `${String(number).padStart(2, "0")}.json`;
+  return `${paddedMatterNumber(number)}.json`;
 }
+
+export function matterSourceRel(number, layout = "legacy") {
+  return layout === "split"
+    ? `${paddedMatterNumber(number)}/matter.json`
+    : matterFileName(number);
+}
+
+export { legacyMatterPath, paddedMatterNumber };

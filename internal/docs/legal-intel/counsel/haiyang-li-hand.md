@@ -3,7 +3,7 @@
 **Subject:** Haiyang A. Li, Deputy Attorney General, California Department of Justice
 **Opposing in:** M24 — *Newanforbi v. Serrato* (N.D. Cal. 4:26-cv-05953-ASK); M32 — *Nforbi v. Meza-Gonzalez* (N.D. Cal.; see case-number note below)
 **Co-addressee** (with William McMahon) of the user's $250,000 global settlement offer expiring **Sept. 25, 2026, 5:00 p.m. Pacific**
-**Live deadline:** Li's reply brief in Serrato due **Sept. 16, 2026**
+**Live:** Li's reply brief in Serrato (Dkt. 18) was **served Sept. 16, 2026, 4:36 p.m. PT** — the Sept. 16 reply deadline is satisfied. (Stub touched 2026-09-16.)
 **Built:** September 13, 2026. Public sources only: CA State Bar, CourtListener/RECAP-indexed dockets, Justia, UMich Civil Rights Clearinghouse docket archive, CA DOJ, salary/aggregator records, and the repo's own filed documents (Serrato MTD brief read in full). No paid PACER.
 
 **Confidence legend.** VERIFIED = pinned to a signature block, an official record, or a document read in full this pass. DIRECTIONAL = name-match or prior-pull attribution that fits the career arc but was not independently re-pulled this pass. Anything weaker is labeled.
