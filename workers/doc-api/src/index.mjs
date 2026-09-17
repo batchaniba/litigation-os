@@ -8,6 +8,7 @@
 //   GET /matters/<n>       -> one matter + clocks + documents (mirrors getMatter)
 //   GET /upcoming?days=14  -> clock rows due within window (mirrors upcomingDeadlines)
 //   GET /fuse              -> { fuse, wait, parked } (mirrors getFuseBoard)
+//   GET|POST /mcp          -> remote MCP (search_documents, fetch_document, …)
 //   POST /admin/reseed     -> guarded D1 re-apply of seed.sql
 //                             (Authorization: Bearer <RESEED_SECRET>)
 //
@@ -25,6 +26,7 @@ import {
   documentsKeyFromUrl,
   sha256ForPath,
 } from "./documents.mjs";
+import { handleMcp } from "./mcp.mjs";
 
 const BUCKET = "litigation-documents";
 const HEX64 = /^[0-9a-fA-F]{64}$/;
@@ -358,6 +360,7 @@ export default {
   async fetch(request, env, _ctx) {
     const url = new URL(request.url);
     const path = url.pathname;
+    if (path === "/mcp") return handleMcp(request, env);
     if (path === "/admin/reseed") {
       if (request.method !== "POST")
         return json({ error: "method_not_allowed" }, 405);
@@ -365,7 +368,7 @@ export default {
     }
     if (request.method !== "GET") return json({ error: "method_not_allowed" }, 405);
 
-    if (path === "/health") return json({ ok: true, bucket: BUCKET });
+    if (path === "/health") return json({ ok: true, bucket: BUCKET, mcp: "/mcp" });
 
     let m;
     if ((m = path.match(/^\/doc\/([^/]+)\/meta$/))) return docMeta(env, m[1]);

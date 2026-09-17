@@ -12,7 +12,7 @@ account credentials, or `~/.config/r2/env`. Point them at the Worker:
 
 Read routes (HTTPS, no credentials): `/health`, `/matters`, `/matters/<n>`,
 `/fuse`, `/upcoming`, `/doc/<sha256>`, `/doc/<sha256>/meta`,
-`/documents/<path>`.
+`/documents/<path>`, `/mcp`.
 
 The Worker is the API in front of R2. Keys stay server-side in the `DOCS`
 binding. Pasting admin keys into a chatbot sends them to someone else's

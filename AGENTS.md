@@ -60,7 +60,7 @@ link in the agent chat for him is fine. It does not go in the email.
 Do not give ChatGPT, Grok, or any third-party chat R2 admin keys or
 `~/.config/r2/env`. Point them at
 `https://litigation-doc-api.ss8sxswwkt.workers.dev`
-(`/matters`, `/fuse`, `/doc/<sha256>`, `/doc/<sha256>/meta`, `/documents/<path>`).
+(`/matters`, `/fuse`, `/doc/<sha256>`, `/doc/<sha256>/meta`, `/documents/<path>`, `/mcp`).
 The Worker binds R2; keys stay server-side. Cursor reads `~/.config/r2/env`
 for writes or calls the Worker for reads. If a chat needs a secret, a
 rotatable Worker bearer — never the Cloudflare admin pair. Direct R2, if

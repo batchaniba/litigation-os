@@ -11,7 +11,7 @@ by design, there is nowhere to leak them from.
 
 | Audience | What they get |
 |---|---|
-| ChatGPT / Grok / any third-party chat | This Worker URL. `/matters`, `/fuse`, `/upcoming`, `/doc/<sha256>`, `/doc/<sha256>/meta`, `/documents/<path>`. Zero credentials. |
+| ChatGPT / Grok / any third-party chat | This Worker URL. `/matters`, `/fuse`, `/upcoming`, `/doc/<sha256>`, `/doc/<sha256>/meta`, `/documents/<path>`, `/mcp`. Zero credentials. |
 | Cursor on the laptop | The Worker for reads. `~/.config/r2/env` only for writes (`documents:push`). |
 | Direct R2 (rare) | A **read-only** API token scoped to `litigation-documents`, minted in the Cloudflare dashboard and revocable. Never the admin pair. |
 
@@ -22,7 +22,8 @@ Admin keys live in exactly two places: the laptop env file (mode 600) and this W
 | File | Purpose |
 |---|---|
 | `wrangler.toml` | Worker config: `DOCS` R2 binding → `litigation-documents`, `DB` D1 binding, UTC cron triggers for the digests. `database_id` is a placeholder until D1 is created. |
-| `src/index.mjs` | The Worker. `/doc/<sha256>` (immutable cache) and `/documents/<path>` (60s cache, path index then D1) plus D1 data routes, guarded `/admin/reseed`, and the scheduled digests. |
+| `src/index.mjs` | The Worker. `/doc/<sha256>` (immutable cache) and `/documents/<path>` (60s cache, path index then D1) plus D1 data routes, `/mcp`, guarded `/admin/reseed`, and the scheduled digests. |
+| `src/mcp.mjs` | Stateless Streamable-HTTP MCP. `search_documents`, `fetch_document`, `list_matters`, `get_matter`, `upcoming_deadlines`, `get_fuse_board`. Read-only; no keys. |
 | `src/documents.mjs` | Path → sha256 helpers shared with `r2-upload.mjs --index`. A later row at the same path wins (redraft). |
 | `schema.sql` | Idempotent D1 schema: `matters`, `clocks`, `documents`. |
 | `seed.mjs` | Node script → stdout. Reads repo JSON (split `matters/NN/` preferred, legacy `NN.json` fallback, folded `next_clock` from the index, documents from the manifest) and emits idempotent INSERTs. Never writes to the repo. |
@@ -42,6 +43,20 @@ wrangler secret put RESEED_SECRET   # required for POST /admin/reseed
 `wrangler.toml` keeps a placeholder `database_id`. Resolve it by name at
 deploy time (`wrangler d1 list`) or wrangler will prompt.
 
+## Remote MCP
+
+`POST /mcp` is a public, authless, **read-only** MCP server on this Worker
+(Cloudflare skill: tools on Workers, clients at `https://<worker>.workers.dev/mcp`).
+It is **not** a second Worker: the same `DOCS` / `DB` bindings back the tools,
+so nothing new holds R2 keys.
+
+`fetch_document` returns catalog metadata and public `/doc/<sha256>` URLs, not
+PDF bytes. Laptop stdio MCP (`npm run mcp`) is the write surface.
+
+Cursor: [cursor.com/agents](https://cursor.com/agents) → **+** → MCP Servers →
+Add MCP → URL `https://litigation-doc-api.ss8sxswwkt.workers.dev/mcp` (HTTP).
+OAuth is not on this cut (same as the existing public HTTP reads).
+
 ## D1 re-seed
 
 D1 is a second copy of the graph. Nothing reseeds it on merge. When it
@@ -59,11 +74,15 @@ documented in the file.
 
 ## Verified (2026-09-17)
 
-- `node --check` passes on `src/index.mjs` and `seed.mjs`; `wrangler.toml` parses.
+- `node --check` passes on `src/index.mjs`, `src/mcp.mjs`, and `seed.mjs`; `wrangler.toml` parses.
 - Route harness against mocked R2/D1 bindings: `/health`, `/doc/<sha256>`
   happy path (PDF bytes, ETag passthrough), 400 on bad hash, JSON 404 on
   missing object, `/doc/<sha256>/meta`, `/matters`, `/matters/26`,
   `/upcoming?days=14`, `/fuse`, and 503 `d1_not_provisioned` with no DB.
+- MCP harness: `POST /mcp` initialize + `tools/list` + `search_documents` /
+  `fetch_document` / `get_matter` / `get_fuse_board`; missing args → -32602;
+  unbound D1 → `isError`; GET `/mcp` discovery; OPTIONS CORS; POST `/health`
+  still 405.
 - `seed.mjs` runs against the checkout: 40 matters, clock rows, and
   manifest document rows emitted; SQL is single-quote-safe.
 
