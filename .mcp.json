@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "litigation-docs": {
+      "type": "http",
+      "url": "https://litigation-doc-api.ss8sxswwkt.workers.dev/mcp"
+    }
+  }
+}
