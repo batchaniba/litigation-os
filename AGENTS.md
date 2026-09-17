@@ -8,6 +8,7 @@ Crawl this repo as a graph. Do not reconstruct a docket from README or from `sta
 
 ## Crawl order
 
+0. Prefer the query interface over raw JSON: `npm run q <op>` (reads like `getMatter`, `upcomingDeadlines`, `getFuseBoard`, `getTimeline`; writes like `recordTimelineEvent`, `setNextClock`, `catalogDocument`) or the MCP server (`npm run mcp`). Writes validate before touching disk and land on the working tree for review. Drop to raw files only when an op can't express the question.
 1. `internal/src/data/index/matters.json` — every matter: path, case_no, phase, next_clock, last_updated.
 2. Fetch only the sibling files the question needs (`clocks.json`, `docket.json`, `events.jsonl`, `claims.json`, …). Identity is `matter.json`.
 3. People, clusters, citations: `internal/src/data/index/{people,clusters,citations}.json`.
@@ -17,7 +18,7 @@ Crawl this repo as a graph. Do not reconstruct a docket from README or from `sta
 
 - Never treat README as live.
 - Never invent a docket number. If `dkt` is null, say so.
-- `clocks.json` (split) or index `next_clock` wins over prose. Vacated clocks are not live.
+- `clocks.json` or index `next_clock` wins over prose. Vacated clocks are not live.
 - `events.jsonl` is append-only. Do not rewrite it.
 - Operative pleading is the docket row with `"operative": true`. ASK vs CRB name-conform packets: CRB supersedes; they are not two cases.
 - PDF bytes live in Cloudflare R2 (`litigation-documents` bucket, key `sha256/<first2>/<rest>.pdf` — deterministic from the manifest sha256). Fetch one with `npm run docs:fetch <sha256>` (needs `R2_*` env; bytes are re-hashed client-side). Search `.txt` / `.meta.json` sidecars on this branch. The `documents` branch is a cold backup.

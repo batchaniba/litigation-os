@@ -23,6 +23,7 @@
     "dev": "vite",
     "docs:fetch": "node internal/scripts/fetch-doc.mjs",
     "q": "node internal/scripts/q.mjs",
+    "mcp": "node internal/mcp/server.mjs",
     "documents:pull": "node internal/scripts/documents-store.mjs pull",
     "documents:push": "node internal/scripts/documents-store.mjs push",
     "documents:seed": "node internal/scripts/documents-store.mjs seed",
