@@ -110,18 +110,34 @@ git hooks:
   (`PORTFOLIO_SKIP_DISK_DOCS=1` is set automatically when the tree is not on
   disk). Vercel builds set the same flag plus `VITE_COPY_DOCUMENTS=0`.
 
-## Publishing the library
+## Publishing the library — R2 migration (2026-09-17)
+
+Cloudflare R2 bucket `litigation-documents` now holds the store: **1,198 PDFs
+from the `documents` branch → 1,139 unique objects / 793.6 MB** after
+content-hash dedup. Every object was ETag-verified against source bytes at
+migration time. GitHub Actions secrets for the bucket are live.
+
+Key scheme (deterministic from `manifest.json` `sha256`):
+`sha256/<first two hex chars>/<remaining hex>.pdf`.
+
+Fetch one file without cloning the branch:
+
+```bash
+npm run docs:fetch <sha256>            # needs R2_ACCOUNT_ID / R2_ACCESS_KEY_ID /
+                                       # R2_SECRET_ACCESS_KEY / R2_BUCKET
+npm run docs:fetch <sha256> -- --out /tmp/doc.pdf
+```
+
+The helper re-hashes the bytes client-side and refuses to write on mismatch.
+`origin/documents` is a cold backup. Incremental `documents:push` → R2 on
+every new PDF is the remaining workflow; do not retire the branch until that
+is proven.
 
 GitHub Pages was the public origin for `/documents/*`. The Actions workflow
-is gone and the Pages host now 404s. **Phone taps do not use it.** They are
-the slug copies on Vercel. New PDFs on the `documents` branch are on the
-desk after `documents:pull`; they are not on a public `/documents/...` URL
-until R2 (or another live origin) is in place.
-
-The intended replacement is a Cloudflare R2 bucket (free egress, no Actions)
-fed by `documents:push` and fronted by the same Vercel rewrite; see
-`internal/docs/VERCEL_DEPLOYS.md`. After R2 answers 200, drop the slug
-copies.
+is gone and the Pages host now 404s. **Phone taps do not use it.** They stay
+as slug copies on Vercel until a **public** R2 (or rewrite) origin returns
+HTTP 200 for the Serrato FAC and a current mailing packet. Then `/{slug}`
+can rewrite to encoded `/documents/...` and the copies leave `main`.
 
 ## After clone
 

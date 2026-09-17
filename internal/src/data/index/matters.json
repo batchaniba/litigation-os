@@ -1,0 +1,988 @@
+{
+  "generated": true,
+  "today": "2026-09-16",
+  "matters": [
+    {
+      "number": 1,
+      "path": "internal/src/data/matters/01.json",
+      "layout": "legacy",
+      "caption": "Newanforbi v. CHP et al.",
+      "case_no": "2:25-cv-01460-DC-CSK",
+      "court": "USDC E.D. Cal.",
+      "judge": "Hon. Dena M. Coggins",
+      "cluster": 1,
+      "related": [],
+      "same_incident": null,
+      "lifecycle": "dismissed",
+      "proceeding": "federal_civil",
+      "phase": "terminal",
+      "next_clock": {
+        "id": null,
+        "date": "2026-11-01",
+        "kind": "deadline",
+        "status": "open",
+        "title": "CCP §335.1 two-year statute of limitations (computed) backstop, running from the Nov. 1, 2024 incident. (1) Matter 1's Fourth Amendment §1983 claim (borrowed two-year period): Matter 1 was voluntarily dismissed without prejudice Aug. 15, 20",
+        "source_dkt": null
+      },
+      "overdue": false,
+      "last_updated": "2026-09-16",
+      "files": [
+        "01.json"
+      ]
+    },
+    {
+      "number": 2,
+      "path": "internal/src/data/matters/02.json",
+      "layout": "legacy",
+      "caption": "Newanforbi v. Meza-Gonzalez et al.",
+      "case_no": "26CV168913",
+      "court": "Alameda Sup. Ct.",
+      "judge": "Hon. Marc Fickes",
+      "cluster": 1,
+      "related": [],
+      "same_incident": null,
+      "lifecycle": "dismissed",
+      "proceeding": "state_civil",
+      "phase": "terminal",
+      "next_clock": {
+        "id": null,
+        "date": "2026-11-01",
+        "kind": "deadline",
+        "status": "open",
+        "title": "CCP §335.1 two-year statute of limitations (computed) backstop, running from the Nov. 1, 2024 incident. (1) Matter 1's Fourth Amendment §1983 claim (borrowed two-year period): Matter 1 was voluntarily dismissed without prejudice Aug. 15, 20",
+        "source_dkt": null
+      },
+      "overdue": false,
+      "last_updated": "2026-09-16",
+      "files": [
+        "02.json"
+      ]
+    },
+    {
+      "number": 3,
+      "path": "internal/src/data/matters/03.json",
+      "layout": "legacy",
+      "caption": "Newanforbi v. Derrick et al.",
+      "case_no": "2:26-cv-00004-DJC-JDP",
+      "court": "USDC E.D. Cal.",
+      "judge": "Hon. Daniel J. Calabretta / Mag. Peterson",
+      "cluster": 2,
+      "related": [],
+      "same_incident": null,
+      "lifecycle": "abandoned",
+      "proceeding": "federal_civil",
+      "phase": "terminal",
+      "next_clock": null,
+      "overdue": false,
+      "last_updated": "2026-09-16",
+      "files": [
+        "03.json"
+      ]
+    },
+    {
+      "number": 4,
+      "path": "internal/src/data/matters/04.json",
+      "layout": "legacy",
+      "caption": "Newanforbi v. Derrick et al.",
+      "case_no": "TBD",
+      "court": "San Joaquin Sup. Ct.",
+      "judge": "TBD",
+      "cluster": 2,
+      "related": [],
+      "same_incident": null,
+      "lifecycle": "abandoned",
+      "proceeding": "state_civil",
+      "phase": "terminal",
+      "next_clock": null,
+      "overdue": false,
+      "last_updated": "2026-09-16",
+      "files": [
+        "04.json"
+      ]
+    },
+    {
+      "number": 5,
+      "path": "internal/src/data/matters/05.json",
+      "layout": "legacy",
+      "caption": "Newanforbi v. Palacios et al.",
+      "case_no": "STK-CV-UF-2026-0001032",
+      "court": "San Joaquin Sup. Ct.",
+      "judge": "Hon. George J. Abdallah, Dept. 10A",
+      "cluster": 2,
+      "related": [],
+      "same_incident": null,
+      "lifecycle": "dismissed",
+      "proceeding": "state_civil",
+      "phase": "terminal",
+      "next_clock": null,
+      "overdue": false,
+      "last_updated": "2026-09-16",
+      "files": [
+        "05.json"
+      ]
+    },
+    {
+      "number": 6,
+      "path": "internal/src/data/matters/06.json",
+      "layout": "legacy",
+      "caption": "Newanforbi v. HOPE et al.",
+      "case_no": "2:26-cv-00195-TLN-AC",
+      "court": "USDC E.D. Cal.",
+      "judge": "Hon. Troy L. Nunley / Mag. Allison Claire",
+      "cluster": 2,
+      "related": [],
+      "same_incident": null,
+      "lifecycle": "dismissed",
+      "proceeding": "federal_civil",
+      "phase": "terminal",
+      "next_clock": null,
+      "overdue": false,
+      "last_updated": "2026-09-16",
+      "files": [
+        "06.json"
+      ]
+    },
+    {
+      "number": 7,
+      "path": "internal/src/data/matters/07.json",
+      "layout": "legacy",
+      "caption": "Newanforbi v. Candelaria",
+      "case_no": "2:26-cv-00983-DC-CSK",
+      "court": "USDC E.D. Cal.",
+      "judge": "Hon. Dena M. Coggins (referred to Magistrate Judge Chi Soo Kim) — same district/magistrate pair as Matter 1, per the shared \"DC-CSK\" case-number suffix",
+      "cluster": 1,
+      "related": [],
+      "same_incident": null,
+      "lifecycle": "dismissed",
+      "proceeding": "federal_civil",
+      "phase": "terminal",
+      "next_clock": null,
+      "overdue": false,
+      "last_updated": "2026-09-16",
+      "files": [
+        "07.json"
+      ]
+    },
+    {
+      "number": 8,
+      "path": "internal/src/data/matters/08.json",
+      "layout": "legacy",
+      "caption": "Newanforbi v. Candelaria, et al.",
+      "case_no": "26WM000135",
+      "court": "Sacramento Sup. Ct.",
+      "judge": "TBD (Dept. 10C)",
+      "cluster": 1,
+      "related": [],
+      "same_incident": null,
+      "lifecycle": "abandoned",
+      "proceeding": "mandate",
+      "phase": "terminal",
+      "next_clock": null,
+      "overdue": false,
+      "last_updated": "2026-09-16",
+      "files": [
+        "08.json"
+      ]
+    },
+    {
+      "number": 9,
+      "path": "internal/src/data/matters/09.json",
+      "layout": "legacy",
+      "caption": "Newanforbi v. Macomber",
+      "case_no": "26WM000028",
+      "court": "Sacramento Sup. Ct.",
+      "judge": "Hon. James P. Arguelles",
+      "cluster": 4,
+      "related": [],
+      "same_incident": null,
+      "lifecycle": "closed",
+      "proceeding": "mandate",
+      "phase": "terminal",
+      "next_clock": null,
+      "overdue": false,
+      "last_updated": "2026-09-16",
+      "files": [
+        "09.json"
+      ]
+    },
+    {
+      "number": 10,
+      "path": "internal/src/data/matters/10.json",
+      "layout": "legacy",
+      "caption": "Newanforbi v. Macomber",
+      "case_no": "C2602632",
+      "court": "Santa Clara Sup. Ct.",
+      "judge": "Hon. Robert Hawk",
+      "cluster": 4,
+      "related": [],
+      "same_incident": null,
+      "lifecycle": "closed",
+      "proceeding": "habeas",
+      "phase": "terminal",
+      "next_clock": null,
+      "overdue": false,
+      "last_updated": "2026-09-16",
+      "files": [
+        "10.json"
+      ]
+    },
+    {
+      "number": 11,
+      "path": "internal/src/data/matters/11.json",
+      "layout": "legacy",
+      "caption": "Newanforbi v. Macomber",
+      "case_no": "TBD (USDC E.D. Cal.)",
+      "court": "USDC E.D. Cal.",
+      "judge": "TBD",
+      "cluster": 2,
+      "related": [],
+      "same_incident": null,
+      "lifecycle": "dismissed",
+      "proceeding": "federal_civil",
+      "phase": "terminal",
+      "next_clock": null,
+      "overdue": false,
+      "last_updated": "2026-09-16",
+      "files": [
+        "11.json"
+      ]
+    },
+    {
+      "number": 12,
+      "path": "internal/src/data/matters/12.json",
+      "layout": "legacy",
+      "caption": "Brendan Ngwa Nforbi v. Diamond Truck Sales, Inc.",
+      "case_no": "STK-CV-UF-2026-0001094",
+      "court": "San Joaquin Sup. Ct.",
+      "judge": "Hon. Robert T. Waters",
+      "cluster": 5,
+      "related": [],
+      "same_incident": null,
+      "lifecycle": "active",
+      "proceeding": "state_civil",
+      "phase": "service",
+      "next_clock": {
+        "id": null,
+        "date": "2026-12-11",
+        "kind": "hearing",
+        "status": "open",
+        "title": "Further Case Management Conference, 8:30 AM, Dept. 11B, Hon. Robert T. Waters — Ngwa Nforbi v. Diamond Truck Sales, Inc. et al. (STK-CV-UF-2026-0001094), set at the Aug. 12, 2026 CMC after defense counsel disputed service; parties waived no",
+        "source_dkt": null
+      },
+      "overdue": false,
+      "last_updated": "2026-09-16",
+      "files": [
+        "12.json"
+      ]
+    },
+    {
+      "number": 13,
+      "path": "internal/src/data/matters/13.json",
+      "layout": "legacy",
+      "caption": "Newanforbi v. Urrea et al.",
+      "case_no": "2:26-cv-00190-DC-SCR",
+      "court": "USDC E.D. Cal.",
+      "judge": "Hon. Dena M. Coggins / Mag. Riordan",
+      "cluster": 2,
+      "related": [],
+      "same_incident": null,
+      "lifecycle": "dismissed",
+      "proceeding": "federal_civil",
+      "phase": "terminal",
+      "next_clock": null,
+      "overdue": false,
+      "last_updated": "2026-09-16",
+      "files": [
+        "13.json"
+      ]
+    },
+    {
+      "number": 14,
+      "path": "internal/src/data/matters/14.json",
+      "layout": "legacy",
+      "caption": "Newanforbi v. Urrea et al.",
+      "case_no": "TBD (San Joaquin Sup. Ct.)",
+      "court": "San Joaquin Sup. Ct.",
+      "judge": "TBD",
+      "cluster": 2,
+      "related": [],
+      "same_incident": null,
+      "lifecycle": "abandoned",
+      "proceeding": "mandate",
+      "phase": "terminal",
+      "next_clock": null,
+      "overdue": false,
+      "last_updated": "2026-09-16",
+      "files": [
+        "14.json"
+      ]
+    },
+    {
+      "number": 15,
+      "path": "internal/src/data/matters/15.json",
+      "layout": "legacy",
+      "caption": "Newanforbi v. California Department of Corrections and Rehabilitation, et al.",
+      "case_no": "STK-CV-UPI-2026-5417",
+      "court": "San Joaquin Sup. Ct.",
+      "judge": "Hon. Jayne Lee, Dept. 10C",
+      "cluster": 2,
+      "related": [],
+      "same_incident": null,
+      "lifecycle": "abandoned",
+      "proceeding": "state_civil",
+      "phase": "terminal",
+      "next_clock": null,
+      "overdue": false,
+      "last_updated": "2026-09-16",
+      "files": [
+        "15.json"
+      ]
+    },
+    {
+      "number": 16,
+      "path": "internal/src/data/matters/16.json",
+      "layout": "legacy",
+      "caption": "Newanforbi v. Rojo",
+      "case_no": "TBD (San Joaquin Sup. Ct.)",
+      "court": "San Joaquin Sup. Ct.",
+      "judge": "TBD",
+      "cluster": 2,
+      "related": [],
+      "same_incident": null,
+      "lifecycle": "abandoned",
+      "proceeding": "state_civil",
+      "phase": "terminal",
+      "next_clock": null,
+      "overdue": false,
+      "last_updated": "2026-09-16",
+      "files": [
+        "16.json"
+      ]
+    },
+    {
+      "number": 17,
+      "path": "internal/src/data/matters/17.json",
+      "layout": "legacy",
+      "caption": "Newanforbi v. Maloney et al.",
+      "case_no": "2:26-cv-00194-DAD-SCR",
+      "court": "USDC E.D. Cal.",
+      "judge": "Hon. Dale A. Drozd / Mag. Riordan",
+      "cluster": 2,
+      "related": [],
+      "same_incident": null,
+      "lifecycle": "dismissed",
+      "proceeding": "federal_civil",
+      "phase": "terminal",
+      "next_clock": null,
+      "overdue": false,
+      "last_updated": "2026-09-16",
+      "files": [
+        "17.json"
+      ]
+    },
+    {
+      "number": 18,
+      "path": "internal/src/data/matters/18.json",
+      "layout": "legacy",
+      "caption": "Newanforbi v. Barocio",
+      "case_no": "2:26-cv-00191-DJC-CSK (PC)",
+      "court": "USDC E.D. Cal.",
+      "judge": "Hon. Daniel J. Calabretta / Mag. Chi Soo Kim",
+      "cluster": 2,
+      "related": [],
+      "same_incident": null,
+      "lifecycle": "dismissed",
+      "proceeding": "federal_civil",
+      "phase": "terminal",
+      "next_clock": null,
+      "overdue": false,
+      "last_updated": "2026-09-16",
+      "files": [
+        "18.json"
+      ]
+    },
+    {
+      "number": 19,
+      "path": "internal/src/data/matters/19.json",
+      "layout": "legacy",
+      "caption": "Newanforbi v. Macomber",
+      "case_no": "C2604791",
+      "court": "Santa Clara Sup. Ct.",
+      "judge": "Hon. Robert Hawk",
+      "cluster": 4,
+      "related": [],
+      "same_incident": null,
+      "lifecycle": "active",
+      "proceeding": "habeas",
+      "phase": "under_submission",
+      "next_clock": {
+        "id": null,
+        "date": "2026-10-01",
+        "kind": "deadline",
+        "status": "open",
+        "title": "Habeas ruling calendar (computed) — Newanforbi v. Macomber (C2604791). CRC 4.551(a)(6)(B) runs 30 days from the September 1, 2026 in-person filing of the HC-004, if the presiding judge determines the notice is complete and the court has fai",
+        "source_dkt": null
+      },
+      "overdue": false,
+      "last_updated": "2026-09-16",
+      "files": [
+        "19.json"
+      ]
+    },
+    {
+      "number": 20,
+      "path": "internal/src/data/matters/20.json",
+      "layout": "legacy",
+      "caption": "Newanforbi v. California Highway Patrol, et al.",
+      "case_no": "26CV191136",
+      "court": "Alameda Sup. Ct.",
+      "judge": "Hon. Jenna M. Whitman, Dept. 25",
+      "cluster": 1,
+      "related": [],
+      "same_incident": null,
+      "lifecycle": "active",
+      "proceeding": "mandate",
+      "phase": "writ_ruling",
+      "next_clock": {
+        "id": null,
+        "date": "2026-09-20",
+        "kind": "deadline",
+        "status": "open",
+        "title": "AMENDMENT DUE (optional) — if Petitioner elects to amend Count 4, file and serve an amended Petition within 20 days of notice of entry of the August 29, 2026 Whitman order. Clerk served notice of entry August 31, 2026 (CCP §1010.6 e-service",
+        "source_dkt": null
+      },
+      "overdue": false,
+      "last_updated": "2026-09-16",
+      "files": [
+        "20.json"
+      ]
+    },
+    {
+      "number": 21,
+      "path": "internal/src/data/matters/21.json",
+      "layout": "legacy",
+      "caption": "Newanforbi v. Rojo et al.",
+      "case_no": "2:26-cv-00193-DC-CKD",
+      "court": "USDC E.D. Cal.",
+      "judge": "TBD",
+      "cluster": 2,
+      "related": [],
+      "same_incident": null,
+      "lifecycle": "dismissed",
+      "proceeding": "federal_civil",
+      "phase": "terminal",
+      "next_clock": null,
+      "overdue": false,
+      "last_updated": "2026-09-16",
+      "files": [
+        "21.json"
+      ]
+    },
+    {
+      "number": 22,
+      "path": "internal/src/data/matters/22.json",
+      "layout": "legacy",
+      "caption": "Newanforbi v. Pilot Travel Centers LLC",
+      "case_no": "STK-CV-UWT-2026-0007649",
+      "court": "San Joaquin Sup. Ct.",
+      "judge": "TBD",
+      "cluster": 3,
+      "related": [],
+      "same_incident": null,
+      "lifecycle": "settled",
+      "proceeding": "state_civil",
+      "phase": "terminal",
+      "next_clock": null,
+      "overdue": false,
+      "last_updated": "2026-09-16",
+      "files": [
+        "22.json"
+      ]
+    },
+    {
+      "number": 23,
+      "path": "internal/src/data/matters/23.json",
+      "layout": "legacy",
+      "caption": "Newanforbi v. Macy's Inc. et al.",
+      "case_no": "TBD",
+      "court": "San Joaquin Sup. Ct.",
+      "judge": "TBD",
+      "cluster": 3,
+      "related": [],
+      "same_incident": null,
+      "lifecycle": "abandoned",
+      "proceeding": "state_civil",
+      "phase": "terminal",
+      "next_clock": null,
+      "overdue": false,
+      "last_updated": "2026-09-16",
+      "files": [
+        "23.json"
+      ]
+    },
+    {
+      "number": 24,
+      "path": "internal/src/data/matters/24/",
+      "layout": "split",
+      "caption": "Newanforbi v. Serrato",
+      "case_no": "3:26-cv-05953-CRB",
+      "court": "USDC N.D. Cal. (San Francisco Division)",
+      "judge": "Hon. Charles R. Breyer",
+      "cluster": 1,
+      "related": [
+        1,
+        2,
+        7,
+        20,
+        32,
+        33
+      ],
+      "same_incident": "RJ68845",
+      "lifecycle": "active",
+      "proceeding": "federal_civil",
+      "phase": "mtd_briefing",
+      "next_clock": {
+        "id": "appearance-notice",
+        "date": "2026-11-16",
+        "kind": "deadline",
+        "status": "open",
+        "title": "Email appearance names to crbcrd@cand.uscourts.gov",
+        "source_dkt": 30
+      },
+      "overdue": false,
+      "last_updated": "2026-09-16",
+      "files": [
+        "claims.json",
+        "clocks.json",
+        "counsel.json",
+        "damages.json",
+        "docket.json",
+        "events.jsonl",
+        "evidence.json",
+        "matter.json",
+        "parties.json",
+        "prose.json"
+      ]
+    },
+    {
+      "number": 25,
+      "path": "internal/src/data/matters/25.json",
+      "layout": "legacy",
+      "caption": "Newanforbi v. Federal Express Corporation",
+      "case_no": "2:26-cv-02881-DAD-SCR",
+      "court": "USDC E.D. Cal. (Sacramento Div.)",
+      "judge": "Hon. Dale A. Drozd, D.J.; Hon. Sean C. Riordan, M.J.",
+      "cluster": 3,
+      "related": [],
+      "same_incident": null,
+      "lifecycle": "active",
+      "proceeding": "federal_civil",
+      "phase": "cmc",
+      "next_clock": {
+        "id": null,
+        "date": "2026-09-24",
+        "kind": "deadline",
+        "status": "open",
+        "title": "WATCH — FedEx status reports in Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR). Dkt. 8: not later than 14 days before the Oct. 8 Zoom (Sep. 24). Plaintiff mailed his report September 14; confirm clerk stamp / do",
+        "source_dkt": null
+      },
+      "overdue": false,
+      "last_updated": "2026-09-16",
+      "files": [
+        "25.json"
+      ]
+    },
+    {
+      "number": 26,
+      "path": "internal/src/data/matters/26.json",
+      "layout": "legacy",
+      "caption": "Newanforbi v. United Parcel Service, Inc.",
+      "case_no": "2:26-cv-02847-DAD-CKD",
+      "court": "USDC E.D. Cal. (Sacramento Div.)",
+      "judge": "Hon. Dale A. Drozd, D.J.; Hon. Carolyn K. Delaney, M.J.",
+      "cluster": 3,
+      "related": [],
+      "same_incident": null,
+      "lifecycle": "active",
+      "proceeding": "federal_civil",
+      "phase": "mtd_briefing",
+      "next_clock": {
+        "id": null,
+        "date": "2026-09-16",
+        "kind": "deadline",
+        "status": "open",
+        "title": "Rule 15(a)(1)(B) amendment-as-of-right window — Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). UPS served the MTD by mail Aug. 26, 2026 (ECF 7-3). 21 days after service is Sep. 16; Rule 6(d) may add 3 days for mail servi",
+        "source_dkt": null
+      },
+      "overdue": false,
+      "last_updated": "2026-09-16",
+      "files": [
+        "26.json"
+      ]
+    },
+    {
+      "number": 27,
+      "path": "internal/src/data/matters/27.json",
+      "layout": "legacy",
+      "caption": "Newanforbi v. Randstad, et al.",
+      "case_no": "26CV199902",
+      "court": "Alameda Sup. Ct. (Rene C. Davidson Courthouse)",
+      "judge": "Hon. Thomas Weathers, Dept. 20",
+      "cluster": 3,
+      "related": [],
+      "same_incident": null,
+      "lifecycle": "active",
+      "proceeding": "state_civil",
+      "phase": "responsive_deadline",
+      "next_clock": {
+        "id": null,
+        "date": "2026-09-16",
+        "kind": "deadline",
+        "status": "open",
+        "title": "FILE IF SILENT — e-file CIV-100 Request for Entry of Default as to Randstad US, LLC (clerk default only, item 1c). First fileable the day after Randstad's Sept. 15 response date. Check Alameda eCourt / One Legal that morning: do not file if",
+        "source_dkt": null
+      },
+      "overdue": false,
+      "last_updated": "2026-09-16",
+      "files": [
+        "27.json"
+      ]
+    },
+    {
+      "number": 28,
+      "path": "internal/src/data/matters/28.json",
+      "layout": "legacy",
+      "caption": "Newanforbi v. Shannon Smith, LCSW, CEO, et al.",
+      "case_no": "3:26-cv-07504-LJC",
+      "court": "USDC N.D. Cal.",
+      "judge": "Hon. Lisa J. Cisneros",
+      "cluster": 2,
+      "related": [],
+      "same_incident": null,
+      "lifecycle": "active",
+      "proceeding": "federal_civil",
+      "phase": "responsive_deadline",
+      "next_clock": {
+        "id": null,
+        "date": "2026-09-21",
+        "kind": "deadline",
+        "status": "open",
+        "title": "Responsive pleading deadline (computed) — Shannon Smith, LCSW, and HOPE Psychotherapy, Inc., Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504-LJC); 21 days from the August 31, 2026 service date Van Dine accepted (FRCP 12(a)(1)(",
+        "source_dkt": null
+      },
+      "overdue": false,
+      "last_updated": "2026-09-16",
+      "files": [
+        "28.json"
+      ]
+    },
+    {
+      "number": 29,
+      "path": "internal/src/data/matters/29.json",
+      "layout": "legacy",
+      "caption": "Newanforbi v. Amazon.com Services, LLC",
+      "case_no": "4:26-cv-09249-ASK",
+      "court": "USDC N.D. Cal. (Oakland; formerly 3:26-cv-09249-ASK)",
+      "judge": "Hon. Ajay S. Krishnan, U.S. Magistrate Judge (N.D. Cal.)",
+      "cluster": 3,
+      "related": [],
+      "same_incident": null,
+      "lifecycle": "active",
+      "proceeding": "federal_civil",
+      "phase": "responsive_deadline",
+      "next_clock": {
+        "id": null,
+        "date": "2026-09-22",
+        "kind": "deadline",
+        "status": "open",
+        "title": "Accurate Background LLC responsive pleading deadline (extended) — Newanforbi v. Amazon.com Services, LLC et al. (Matter 29, N.D. Cal. No. 4:26-cv-09249-ASK). Dkt. 7 (filed Sep. 2) extends Accurate only through and including September 22, 20",
+        "source_dkt": null
+      },
+      "overdue": false,
+      "last_updated": "2026-09-16",
+      "files": [
+        "29.json"
+      ]
+    },
+    {
+      "number": 30,
+      "path": "internal/src/data/matters/30.json",
+      "layout": "legacy",
+      "caption": "Newanforbi v. Moua, et al.",
+      "case_no": "TBD",
+      "court": "USDC N.D. Cal.",
+      "judge": "TBD",
+      "cluster": 2,
+      "related": [],
+      "same_incident": null,
+      "lifecycle": "pre_filing",
+      "proceeding": "federal_civil",
+      "phase": "pre_filing",
+      "next_clock": {
+        "id": null,
+        "date": "2026-09-16",
+        "kind": "deadline",
+        "status": "open",
+        "title": "Anticipated filing date (computed) — Complaint v9 (Moua and DOES 1-10), Newanforbi v. Moua, et al. (Matter 30); 15 days after the anticipated Sep. 1, 2026 deemed rejection; within the 2-year §1983 personal-injury limitations period and the ",
+        "source_dkt": null
+      },
+      "overdue": false,
+      "last_updated": "2026-09-16",
+      "files": [
+        "30.json"
+      ]
+    },
+    {
+      "number": 31,
+      "path": "internal/src/data/matters/31.json",
+      "layout": "legacy",
+      "caption": "Newanforbi v. First Advantage LLC",
+      "case_no": "TBD",
+      "court": "San Joaquin Sup. Ct. (anticipated)",
+      "judge": "TBD",
+      "cluster": 3,
+      "related": [],
+      "same_incident": null,
+      "lifecycle": "pre_filing",
+      "proceeding": "state_civil",
+      "phase": "pre_filing",
+      "next_clock": null,
+      "overdue": false,
+      "last_updated": "2026-09-16",
+      "files": [
+        "31.json"
+      ]
+    },
+    {
+      "number": 32,
+      "path": "internal/src/data/matters/32.json",
+      "layout": "legacy",
+      "caption": "Nforbi v. Meza-Gonzalez, et al",
+      "case_no": "3:26-cv-08271-PHK",
+      "court": "USDC N.D. Cal. (related to Serrato 3:26-cv-05953-CRB per Aug. 24, 2026 order; also related Candelaria 3:26-cv-08272-LJC)",
+      "judge": "Hon. Ajay S. Krishnan, U.S. Magistrate Judge (N.D. Cal.) — reassigned Aug. 24, 2026 from Mag. Kang (related to Serrato 3:26-cv-05953-CRB)",
+      "cluster": 1,
+      "related": [],
+      "same_incident": null,
+      "lifecycle": "active",
+      "proceeding": "federal_civil",
+      "phase": "responsive_deadline",
+      "next_clock": {
+        "id": null,
+        "date": "2026-11-01",
+        "kind": "deadline",
+        "status": "open",
+        "title": "CCP §335.1 two-year statute of limitations (computed) backstop, running from the Nov. 1, 2024 incident. (1) Matter 1's Fourth Amendment §1983 claim (borrowed two-year period): Matter 1 was voluntarily dismissed without prejudice Aug. 15, 20",
+        "source_dkt": null
+      },
+      "overdue": false,
+      "last_updated": "2026-09-16",
+      "files": [
+        "32.json"
+      ]
+    },
+    {
+      "number": 33,
+      "path": "internal/src/data/matters/33.json",
+      "layout": "legacy",
+      "caption": "Nforbi v. Candelaria et al.",
+      "case_no": "3:26-cv-08272-LJC",
+      "court": "USDC N.D. Cal. (San Francisco Div.)",
+      "judge": "Hon. Lisa J. Cisneros (Magistrate Judge)",
+      "cluster": 1,
+      "related": [],
+      "same_incident": null,
+      "lifecycle": "active",
+      "proceeding": "federal_civil",
+      "phase": "pleadings",
+      "next_clock": {
+        "id": null,
+        "date": "2026-09-22",
+        "kind": "deadline",
+        "status": "open",
+        "title": "WATCH — Defendants' consent or declination to magistrate-judge jurisdiction due in Nforbi v. Candelaria et al. (3:26-cv-08272-LJC). Set by Dkt. 12 (Sep. 8, text-only clerk's notice). Dkt. 14 is a second notice filed in the wrong case — DISR",
+        "source_dkt": null
+      },
+      "overdue": false,
+      "last_updated": "2026-09-16",
+      "files": [
+        "33.json"
+      ]
+    },
+    {
+      "number": 34,
+      "path": "internal/src/data/matters/34.json",
+      "layout": "legacy",
+      "caption": "Newanforbi v. Counseling and Psychotherapy Center, Inc., et al.",
+      "case_no": "TBD",
+      "court": "USDC N.D. Cal. (San Jose Div.) / Santa Clara Sup. Ct.",
+      "judge": "TBD",
+      "cluster": 2,
+      "related": [],
+      "same_incident": null,
+      "lifecycle": "pre_filing",
+      "proceeding": "federal_civil",
+      "phase": "pre_filing",
+      "next_clock": null,
+      "overdue": false,
+      "last_updated": "2026-09-16",
+      "files": [
+        "34.json"
+      ]
+    },
+    {
+      "number": 35,
+      "path": "internal/src/data/matters/35.json",
+      "layout": "legacy",
+      "caption": "Ngwa Nforbi v. Ross Stores, Inc., et al.",
+      "case_no": "26CV501995",
+      "court": "Santa Clara Sup. Ct. (Downtown / First Street)",
+      "judge": "Hon. Vince Parrett, Dept. 16 (Santa Clara Superior Court — Downtown)",
+      "cluster": 6,
+      "related": [],
+      "same_incident": null,
+      "lifecycle": "active",
+      "proceeding": "state_civil",
+      "phase": "service",
+      "next_clock": {
+        "id": null,
+        "date": "2026-10-25",
+        "kind": "deadline",
+        "status": "open",
+        "title": "OPEN TASK — Serve Ross Stores, Inc. and Ross Dress for Less, Inc. in Matter 35 (26CV501995) with the Verified Complaint, issued Summons, ADR Information Sheet, and clerk-stamped CV-5012 Civil Lawsuit Notice (via C T Corporation System, 330 ",
+        "source_dkt": null
+      },
+      "overdue": false,
+      "last_updated": "2026-09-16",
+      "files": [
+        "35.json"
+      ]
+    },
+    {
+      "number": 36,
+      "path": "internal/src/data/matters/36.json",
+      "layout": "legacy",
+      "caption": "Brendan Ngwa Nforbi v. AT&T Mobility Services LLC",
+      "case_no": "TBD",
+      "court": "San Joaquin Sup. Ct. (executed packet; not yet filed)",
+      "judge": "TBD",
+      "cluster": 3,
+      "related": [],
+      "same_incident": null,
+      "lifecycle": "pre_filing",
+      "proceeding": "state_civil",
+      "phase": "pre_filing",
+      "next_clock": null,
+      "overdue": false,
+      "last_updated": "2026-09-16",
+      "files": [
+        "36.json"
+      ]
+    },
+    {
+      "number": 37,
+      "path": "internal/src/data/matters/37.json",
+      "layout": "legacy",
+      "caption": "Brendan Ngwa Nforbi v. Home Depot U.S.A., Inc.",
+      "case_no": "TBD",
+      "court": "San Joaquin Sup. Ct. (executed packet; not yet filed)",
+      "judge": "TBD",
+      "cluster": 3,
+      "related": [],
+      "same_incident": null,
+      "lifecycle": "pre_filing",
+      "proceeding": "state_civil",
+      "phase": "pre_filing",
+      "next_clock": null,
+      "overdue": false,
+      "last_updated": "2026-09-16",
+      "files": [
+        "37.json"
+      ]
+    },
+    {
+      "number": 38,
+      "path": "internal/src/data/matters/38.json",
+      "layout": "legacy",
+      "caption": "Brendan Ngwa Nforbi v. Swift Transportation Co. of Arizona LLC",
+      "case_no": "TBD",
+      "court": "San Joaquin Sup. Ct. (executed packet; not yet filed)",
+      "judge": "TBD",
+      "cluster": 3,
+      "related": [],
+      "same_incident": null,
+      "lifecycle": "pre_filing",
+      "proceeding": "state_civil",
+      "phase": "pre_filing",
+      "next_clock": {
+        "id": null,
+        "date": "2026-09-26",
+        "kind": "deadline",
+        "status": "open",
+        "title": "OUTER BOUND — CCP § 338(a) three-year statutory-liability clock on the Swift § 290.46(j) / ICRAA counts if accrual is the Sept. 26, 2023 pre-adverse email. Post-adverse is Oct. 5, 2023 (Oct. 5, 2026). This is a limitations argument sourced ",
+        "source_dkt": null
+      },
+      "overdue": false,
+      "last_updated": "2026-09-16",
+      "files": [
+        "38.json"
+      ]
+    },
+    {
+      "number": 39,
+      "path": "internal/src/data/matters/39.json",
+      "layout": "legacy",
+      "caption": "Brendan Ngwa Nforbi v. Best Buy Co., Inc.",
+      "case_no": "TBD",
+      "court": "San Joaquin Sup. Ct. (executed packet; not yet filed)",
+      "judge": "TBD",
+      "cluster": 3,
+      "related": [],
+      "same_incident": null,
+      "lifecycle": "pre_filing",
+      "proceeding": "state_civil",
+      "phase": "pre_filing",
+      "next_clock": {
+        "id": null,
+        "date": "2026-10-17",
+        "kind": "deadline",
+        "status": "open",
+        "title": "OUTER BOUND — CCP § 338(a) three-year statutory-liability clock on the Best Buy § 290.46(j) count if accrual is the Oct. 17, 2023 offer / same-day screen week. The file has no dated rejection. This is a limitations argument sourced to the o",
+        "source_dkt": null
+      },
+      "overdue": false,
+      "last_updated": "2026-09-16",
+      "files": [
+        "39.json"
+      ]
+    },
+    {
+      "number": 40,
+      "path": "internal/src/data/matters/40.json",
+      "layout": "legacy",
+      "caption": "Brendan Ngwa Nforbi v. Uber Technologies, Inc.",
+      "case_no": "TBD",
+      "court": "TBD (pre-dispute — offer received Sep. 14, 2026)",
+      "judge": "TBD",
+      "cluster": 5,
+      "related": [],
+      "same_incident": null,
+      "lifecycle": "pre_filing",
+      "proceeding": "state_civil",
+      "phase": "pre_filing",
+      "next_clock": {
+        "id": null,
+        "date": "2026-09-17",
+        "kind": "deadline",
+        "status": "open",
+        "title": "WATCH — First Advantage saliva-drug-test schedule for TaskUs Holdings, Inc. expires 11:49 a.m. Eastern (Schedule ID 96558696; LabCorp-Milpitas). A missed collection is a non-registry basis they can use. Complete or diary it.",
+        "source_dkt": null
+      },
+      "overdue": false,
+      "last_updated": "2026-09-16",
+      "files": [
+        "40.json"
+      ]
+    }
+  ]
+}

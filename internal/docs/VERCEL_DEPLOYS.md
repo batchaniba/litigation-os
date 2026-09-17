@@ -97,17 +97,15 @@ for them twice bought nothing.
 
 There is no GitHub Actions CI or Pages deploy any more (only the three
 CourtListener workflows remain). The Pages host now 404s. Phone taps are
-the `/{slug}.pdf` copies on Vercel, not that rewrite. New PDFs on the
-`documents` branch are unpublished until R2 (or another live origin)
-returns 200.
+the `/{slug}.pdf` copies on Vercel, not that rewrite.
 
-Intended replacement: a Cloudflare R2 bucket with public access, fed by
-`npm run documents:push` (incremental, from `manifest.json` sha256s) and
-fronted by the same `/documents/:path*` rewrite in `vercel.json`
-(`PAGES_DOCUMENTS_ORIGIN` in `internal/scripts/lib/documents-branch.mjs` is
-the single place that origin is defined). R2 has free egress and no
-per-build cost, and it keeps the "same desk" workflow: drop the PDF in the
-matter folder, commit, the hook pushes.
+**R2 migration (2026-09-17):** bucket `litigation-documents` holds 1,198 source
+PDFs as 1,139 unique sha256 objects (793.6 MB), ETag-verified. Fetch with
+`npm run docs:fetch <sha256>` (`internal/scripts/fetch-doc.mjs`). Secrets are
+in the repo Actions store. The `documents` branch is the cold backup until
+`documents:push` also uploads to R2. Public `/documents/:path*` rewrite still
+waits on HTTP 200 from a public origin; do not drop slug copies until then.
+See `internal/docs/DOCUMENT_STORE.md`.
 
 ### Where the gate went
 

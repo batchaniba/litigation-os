@@ -1,24 +1,18 @@
 /**
- * Length budgets for the free-prose matter fields.
+ * Length budgets for the free-prose matter fields on **legacy** NN.json files.
  *
- * `status_label` has had a hard 60-char cap since it went in; the long-form
- * prose fields never got one, and drifted — the portfolio median is ~280–420
- * words with outliers past 1,600. These budgets close that gap.
+ * Split matters (`NN/matter.json` plus sibling tables) are not under these
+ * word ceilings. Split a matter when you touch it. `events.jsonl` is
+ * append-only. `docket.json` has no line cap.
  *
- * Two levels, deliberately:
- *   target  — the length the field should be written to. Exceeding it is a
- *             validator warning, not an error: trimming legal prose is an
- *             editorial decision, not something a build should force.
- *   ceiling — a ratchet pinned just above today's worst record. Exceeding it
- *             fails the test suite, so prose can only get shorter over time.
+ * `status_label` remains a 60-char UI chip on every matter.
  *
- * When you trim a matter, lower the ceiling to match the new worst case.
+ * Two levels on legacy prose, deliberately:
+ *   target  — authoring length. Exceeding it is a validator warning.
+ *   ceiling — ratchet pinned just above today's worst unsplit record.
  *
  * Dated docket entries do not belong in `procedural_status` / `status` — they
- * belong in timeline.json, which already carries them and feeds derived status
- * labels. Prose that restates the timeline is the single largest source of
- * length here. `docketLogIssues` warns when status/procedural_status still
- * look like a docket log (caps heads, SERVED/COMPUTED markers, dense dates).
+ * belong in clocks.json / events.jsonl / timeline.json.
  */
 
 export interface ProseBudget {
@@ -42,10 +36,10 @@ export const PROSE_FIELDS = Object.keys(PROSE_BUDGETS) as ProseField[];
 
 /** What to do about an over-budget field, per field. */
 export const PROSE_HINTS: Record<ProseField, string> = {
-  key_facts: "keep to the operative facts; dated docket entries belong in timeline.json",
-  procedural_status: "move dated docket entries into timeline.json — it already carries them",
+  key_facts: "keep to the operative facts; dated docket entries belong in timeline.json or clocks.json",
+  procedural_status: "move dated docket entries into clocks.json / timeline.json — split the matter if this field is a diary",
   risk: "keep to the defense theory and its answer; drop the procedural recap",
-  status: "one posture sentence; the detail belongs in procedural_status / timeline.json",
+  status: "one posture sentence; the detail belongs in clocks.json / timeline.json",
 };
 
 export function wordCount(value: unknown): number {
