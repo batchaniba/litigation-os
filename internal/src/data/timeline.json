@@ -1,5 +1,125 @@
 [
   {
+    "date": "Sep. 16, 2026",
+    "event": "EXECUTED — CCP § 415.20(b) declaration of mailing dated September 16, 2026, for Santiago Meza-Gonzalez in Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK). Cover letter removed from the Meza envelope. Contents recited: Meza summons, Dkt. 5 FAC, operative-FAC notice, Dkt. 4 CMC/ADR order. File the signed declaration + Exhibit A USPS receipt + POS with the San Jose clerk after the postmark; serve Li. Do not start Meza's FRCP 12 clock until mailing is confirmed. If mailed September 16, service completes on the tenth day and Rule 12(a) runs to Monday, October 19, 2026.",
+    "matters": [
+      32
+    ],
+    "type": "service",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-32/ndcal/Declaration of Mailing - CCP 415.20(b) Follow-Up to Dkt 16 - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 16, 2026).pdf",
+    "source_type": "portfolio",
+    "confidence": "high",
+    "verified_at": "2026-09-16"
+  },
+  {
+    "date": "Sep. 17, 2026",
+    "event": "FILE — signed 415.20(b) declaration + Exhibit A USPS receipt + POS in Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK) after the September 16 postmark. San Jose clerk. Serve Li / Melano / Meza. Send Li the covering email with the filed Fischer return (Dkt. 16 / 16-1). Do not put a GitHub URL in that email.",
+    "matters": [
+      32
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-32/ndcal/Declaration of Mailing - CCP 415.20(b) Follow-Up to Dkt 16 - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 16, 2026).pdf",
+    "source_type": "portfolio",
+    "confidence": "high",
+    "verified_at": "2026-09-16"
+  },
+  {
+    "date": "Oct. 19, 2026",
+    "event": "WATCH — Meza-Gonzalez Rule 12(a) responsive deadline (computed from a September 16, 2026 CCP § 415.20(b) mailing) in Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK). Service completes on the tenth day after mailing (~September 26); 21 days lands Monday, October 19. Live only if the envelope was postmarked September 16. Li has no 12(a) duty. Dkt. 13 remains pending.",
+    "matters": [
+      32
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "opposing",
+    "source": "/documents/matter-32/ndcal/Declaration of Mailing - CCP 415.20(b) Follow-Up to Dkt 16 - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 16, 2026).pdf",
+    "source_type": "portfolio",
+    "confidence": "medium",
+    "verified_at": "2026-09-16"
+  },
+  {
+    "date": "Sep. 16, 2026",
+    "event": "SENT — RFP Set One (Count 1 only) emailed to DAG Vanessa K. Ing in Newanforbi v. CHP et al. (26CV191136), about 5:15 p.m. Pacific. First-class mail packet to Ing at 455 Golden Gate Avenue, Suite 11000, San Francisco, CA 94102-7004 uses a CCP § 1013(a) mail POS, not the email POS. One envelope to Ing covers CHP. Beckington is courtesy only. Written responses ~October 20 if electronic service holds; ~October 21 if mail starts the clock.",
+    "matters": [
+      20
+    ],
+    "type": "service",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-20/Request for Production of Documents Set One - CHP with Mail POS (Sep 16 2026).pdf",
+    "source_type": "portfolio",
+    "confidence": "high",
+    "verified_at": "2026-09-16"
+  },
+  {
+    "date": "Oct. 20, 2026",
+    "event": "WATCH — CHP written responses to RFP Set One (Count 1) in Newanforbi v. CHP et al. (26CV191136). Clock is October 20 if the September 16 email to Ing is valid electronic service; about October 21 if the first-class mailing starts the clock (CCP § 1013(a) adds five calendar days).",
+    "matters": [
+      20
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "opposing",
+    "source": "/documents/matter-20/Request for Production of Documents Set One - CHP with Mail POS (Sep 16 2026).pdf",
+    "source_type": "portfolio",
+    "confidence": "medium",
+    "verified_at": "2026-09-16"
+  },
+  {
+    "date": "Sep. 16, 2026",
+    "event": "SERVED — Haiyang A. Li served the reply in support of the Dkt. 18 motion to dismiss the FAC in Newanforbi v. Serrato (3:26-cv-05953-CRB), about 4:36 p.m. Pacific. Timely under the Dkt. 21 briefing schedule (reply September 16). Briefing is closed. No sur-reply (Civ. L.R. 7-3(d)). Hearing remains November 20, 2026, 10:00 a.m. Zoom before Judge Breyer (Dkt. 30).",
+    "matters": [
+      24
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": false,
+    "actor": "opposing",
+    "source": "/documents/matter-24/ECF Docket Report - N.D. Cal. 3-26-cv-05953-CRB (Pulled Sep 14 2026).pdf",
+    "source_type": "portfolio",
+    "confidence": "medium",
+    "verified_at": "2026-09-16"
+  },
+  {
+    "date": "Nov. 16, 2026",
+    "event": "DEADLINE — Appearance list for the Nov. 20, 2026 Serrato MTD Zoom (Dkt. 18 / Dkt. 30) is due to crbcrd@cand.uscourts.gov by 3:00 p.m. Pacific. Names and emails. Newanforbi v. Serrato (3:26-cv-05953-CRB).",
+    "matters": [
+      24
+    ],
+    "type": "deadline",
+    "upcoming": true,
+    "actor": "you",
+    "source": "/documents/matter-24/ECF Docket Report - N.D. Cal. 3-26-cv-05953-CRB (Pulled Sep 14 2026).pdf",
+    "source_type": "pacer",
+    "confidence": "high",
+    "verified_at": "2026-09-16"
+  },
+  {
+    "date": "Sep. 16, 2026",
+    "event": "EXECUTED (unfiled) — E.D. Cal. walk-up packets for Matters 36–39 dated September 16, 2026 (complaint, JS 44, AO 239, AO 440, magistrate consent CONSENT-checked). San Joaquin September 8 packets remain LOCKED and unfiled. Do not treat as filed until clerk-stamped. Do not serve the defendants with the magistrate consents.",
+    "matters": [
+      36,
+      37,
+      38,
+      39
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-36/edca/E.D. Cal. Intake Packet (print copy) - Ngwa Nforbi v. AT&T (Sep 16 2026).pdf",
+    "source_type": "portfolio",
+    "confidence": "high",
+    "verified_at": "2026-09-16"
+  },
+  {
     "date": "Sep. 10, 2026",
     "event": "FILED — Dkt. 16 Certificate of Interested Entities, Corporate Disclosure Statement, or Rule 7.1 Disclosures",
     "matters": [
@@ -1648,7 +1768,7 @@
   },
   {
     "date": "Sep. 30, 2026",
-    "event": "Hearing on Defendant Serrato's Motion to Dismiss FAC (Dkt. 18) — 1:30 p.m., Mag. Ajay S. Krishnan, Oakland Courtroom 4, 3rd Floor — Newanforbi v. Serrato (4:26-cv-05953-ASK). Reset from Sep. 16 by Clerk's Notice Dkt. 21 (filed Aug. 28) because the motion was noticed on less than 35 days (Civil L.R. 7-2(a)).",
+    "event": "VACATED — Hearing on Defendant Serrato's Motion to Dismiss FAC (Dkt. 18) — 1:30 p.m., Mag. Ajay S. Krishnan, Oakland Courtroom 4, 3rd Floor — Newanforbi v. Serrato (4:26-cv-05953-ASK). Reset from Sep. 16 by Clerk's Notice Dkt. 21 (filed Aug. 28) because the motion was noticed on less than 35 days (Civil L.R. 7-2(a)). Dkt. 28/29 vacated Krishnan hearings; live date is Nov. 20, 2026, 10:00 a.m. Zoom (Dkt. 30).",
     "source": "/documents/matter-24/Clerk's Notice Resetting Hearing on Motion to Dismiss (Dkt 21, Filed Aug 28 2026).pdf",
     "upcoming": false,
     "actor": "you",
@@ -2038,12 +2158,12 @@
   },
   {
     "date": "Nov. 20, 2026",
-    "event": "HEARING — Motion to Dismiss FAC (Dkt. 18) in Newanforbi v. Serrato (3:26-cv-05953-CRB), 10:00 a.m., San Francisco videoconference only (Zoom webinar) before Hon. Charles R. Breyer. Re-noticed by Clerk's Notice Dkt. 30 (filed Sep. 14, 2026) after reassignment from Mag. Krishnan; Sep. 30 hearing vacated by Dkt. 28. Appearance notice to crbcrd@cand.uscourts.gov by Nov. 16, 2026, 3:00 p.m.",
+    "event": "MERGED — duplicate of the live Nov. 20 Breyer hearing entry. HEARING — Motion to Dismiss FAC (Dkt. 18) in Newanforbi v. Serrato (3:26-cv-05953-CRB), 10:00 a.m., San Francisco videoconference only (Zoom webinar) before Hon. Charles R. Breyer. Re-noticed by Clerk's Notice Dkt. 30 (filed Sep. 14, 2026) after reassignment from Mag. Krishnan; Sep. 30 hearing vacated by Dkt. 28. Appearance notice to crbcrd@cand.uscourts.gov by Nov. 16, 2026, 3:00 p.m.",
     "matters": [
       24
     ],
     "type": "hearing",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "court",
     "source": "/documents/matter-24/ECF Docket Report - N.D. Cal. 3-26-cv-05953-CRB (Pulled Sep 14 2026).pdf",
     "source_type": "pacer",
@@ -4289,7 +4409,7 @@
   },
   {
     "date": "Sep. 15, 2026",
-    "event": "FILE IF SILENT — e-file CIV-100 Request for Entry of Default as to The RK Logistics Group, Inc. (clerk default only, item 1c). First fileable the day after RK's Sept. 14 response date. Check Alameda eCourt / One Legal that morning: do not file if an answer, demurrer, motion to strike, CIV-141, or stipulation is on the docket. Document type ≈ Request for Default. Do not attach the 425.115 notices. Same-day CCP §587 first-class mail to Melinda Garcia (Garcia & Gurney, 6600 Koll Center Parkway, Suite 200, Pleasanton, CA 94566) and to RK c/o CSC, 2710 Gateway Oaks Drive, Suite 150N, Sacramento, CA 95833.",
+    "event": "LAPSED — DO NOT FILE. FILE IF SILENT — e-file CIV-100 Request for Entry of Default as to The RK Logistics Group, Inc. (clerk default only, item 1c). First fileable the day after RK's Sept. 14 response date. Check Alameda eCourt / One Legal that morning: do not file if an answer, demurrer, motion to strike, CIV-141, or stipulation is on the docket. Document type ≈ Request for Default. Do not attach the 425.115 notices. Same-day CCP §587 first-class mail to Melinda Garcia (Garcia & Gurney, 6600 Koll Center Parkway, Suite 200, Pleasanton, CA 94566) and to RK c/o CSC, 2710 Gateway Oaks Drive, Suite 150N, Sacramento, CA 95833. Gurney served a CIV-141 for RK; status on 27.json is do-not-default-RK.",
     "matters": [
       27
     ],
@@ -5051,7 +5171,7 @@
   },
   {
     "date": "Sep. 15, 2026",
-    "event": "Extended responsive-pleading deadline — Randstad US, LLC only, Newanforbi v. Randstad US, LLC et al. (26CV199902); 15 days past the Aug. 31, 2026 computed deadline, agreed on the Aug. 18, 2026 call with Chadwick L. Williams (Kabat Chapman & Ozmer LLP) and confirmed in his 2:11 p.m. email the same day. Party agreement only — no stipulation is on file with the court, so the docket will still show the Aug. 31 date. The RK Logistics Group, Inc.'s deadline is now Sept. 14, 2026 (Garcia request granted; no further extension).",
+    "event": "LAPSED — Extended responsive-pleading deadline — Randstad US, LLC only, Newanforbi v. Randstad US, LLC et al. (26CV199902); 15 days past the Aug. 31, 2026 computed deadline, agreed on the Aug. 18, 2026 call with Chadwick L. Williams (Kabat Chapman & Ozmer LLP) and confirmed in his 2:11 p.m. email the same day. Party agreement only — no stipulation is on file with the court, so the docket will still show the Aug. 31 date. The RK Logistics Group, Inc.'s deadline is now Sept. 14, 2026 (Garcia request granted; no further extension). Clock ran September 15. CIV-100 Randstad is the live file-if-silent if eCourt is empty.",
     "matters": [
       27
     ],
@@ -5415,13 +5535,13 @@
   },
   {
     "date": "Nov. 12, 2026",
-    "event": "Deadline to file ADR Certification (ADR L.R. 3) and to meet and confer regarding initial disclosures, early settlement, ADR process selection, and a discovery plan (Fed. R. Civ. P. 26(f)) — Nforbi v. Meza-Gonzalez, et al. (3:26-cv-08271-PHK), per the Dkt. 4 Order Setting Initial Case Management Conference and ADR Deadlines. Both defendants served Aug. 14, 2026, well ahead of this date.",
+    "event": "VACATED pending Krishnan reset — Deadline to file ADR Certification (ADR L.R. 3) and to meet and confer regarding initial disclosures, early settlement, ADR process selection, and a discovery plan (Fed. R. Civ. P. 26(f)) — Nforbi v. Meza-Gonzalez, et al. (4:26-cv-08271-ASK), per the Dkt. 4 Order Setting Initial Case Management Conference and ADR Deadlines. Both defendants served Aug. 14, 2026, well ahead of this date.",
     "matters": [
       32
     ],
     "type": "deadline",
     "source": "/documents/matter-32/ndcal/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026).pdf",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "you",
     "source_type": "court_order",
     "confidence": "high",
@@ -5429,13 +5549,13 @@
   },
   {
     "date": "Nov. 25, 2026",
-    "event": "Deadline to make initial disclosures (Fed. R. Civ. P. 26(a)(1)) and to file the Joint Case Management Statement (Standing Order for All Judges of the Northern District of California) — Nforbi v. Meza-Gonzalez, et al. (3:26-cv-08271-PHK), per the Dkt. 4 order; one week before the initial case management conference",
+    "event": "VACATED pending Krishnan reset — Deadline to make initial disclosures (Fed. R. Civ. P. 26(a)(1)) and to file the Joint Case Management Statement (Standing Order for All Judges of the Northern District of California) — Nforbi v. Meza-Gonzalez, et al. (4:26-cv-08271-ASK), per the Dkt. 4 order; one week before the initial case management conference",
     "matters": [
       32
     ],
     "type": "deadline",
     "source": "/documents/matter-32/ndcal/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026).pdf",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "you",
     "source_type": "court_order",
     "confidence": "high",
@@ -5443,13 +5563,13 @@
   },
   {
     "date": "Dec. 2, 2026",
-    "event": "Initial Case Management Conference, 11:00 a.m., Courtroom F, 450 Golden Gate Ave., San Francisco, before Magistrate Judge Peter H. Kang — Nforbi v. Meza-Gonzalez, et al. (3:26-cv-08271-PHK), set by the Dkt. 4 order. If this date moves, the Nov. 12 and Nov. 25, 2026 deadlines shift with it unless the court orders otherwise",
+    "event": "VACATED — Initial Case Management Conference, 11:00 a.m., Courtroom F, 450 Golden Gate Ave., San Francisco, before Magistrate Judge Peter H. Kang — Nforbi v. Meza-Gonzalez, et al. (3:26-cv-08271-PHK), set by the Dkt. 4 order. If this date moves, the Nov. 12 and Nov. 25, 2026 deadlines shift with it unless the court orders otherwise Related-case order (Aug. 24) said this CMC would be rescheduled; Krishnan has not reset it.",
     "matters": [
       32
     ],
     "type": "hearing",
     "source": "/documents/matter-32/ndcal/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026).pdf",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "you",
     "source_type": "court_order",
     "confidence": "high",
@@ -10023,7 +10143,7 @@
   },
   {
     "date": "Sep. 21, 2026",
-    "event": "Responsive pleading deadline (computed) — Shannon Smith, LCSW, and HOPE Psychotherapy, Inc., Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504-LJC); 21 days from the August 31, 2026 service date Van Dine accepted (FRCP 12(a)(1)(A)(i)). Falls on a Monday; no weekend/holiday extension applies.",
+    "event": "MERGED — duplicate Smith/HOPE Sep. 21 clock. Responsive pleading deadline (computed) — Shannon Smith, LCSW, and HOPE Psychotherapy, Inc., Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504-LJC); 21 days from the August 31, 2026 service date Van Dine accepted (FRCP 12(a)(1)(A)(i)). Falls on a Monday; no weekend/holiday extension applies.",
     "matters": [
       28
     ],
