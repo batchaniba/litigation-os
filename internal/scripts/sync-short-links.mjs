@@ -1,14 +1,14 @@
 #!/usr/bin/env node
 // ==========================================================
-// Short public PDF taps. Catalog: internal/public/short-links.json
+// Short public PDF taps → long Content-Disposition filenames.
 //
-// /documents/... sources rewrite on Vercel to the Pages (later R2) origin
-// with each path segment encoded so court-style parentheses never appear
-// in a Vercel destination. Public-root leftovers stay as /{slug}.pdf on
-// main (hope-name-stip, hope-name-motion).
+// Catalog: internal/public/short-links.json
+// Writes:  vercel.json  and  internal/public/{slug}/index.html
 //
-// Writes: vercel.json and internal/public/{slug}/index.html
-// vercel.json is COMMITTED (git.deploymentEnabled). Landings are gitignored.
+// vercel.json is COMMITTED (it carries git.deploymentEnabled, which Vercel
+// must read from the repo at push time); the slug landings are gitignored
+// and rebuilt by prebuild. The pre-commit hook re-runs this script when the
+// catalog changes, and CI fails if the committed vercel.json is stale.
 //
 // Usage:
 //   npm run sync:short-links
@@ -17,13 +17,8 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { loadManifest, manifestByPath } from "./lib/document-store.mjs";
-import {
-  encodeDocumentsPath,
-  isDocumentsSource,
-  pagesDocumentUrl,
-  vercelSpaRewrites,
-} from "./lib/documents-branch.mjs";
+import { loadManifest, manifestByPath, skipDiskDocs } from "./lib/document-store.mjs";
+import { vercelSpaRewrites } from "./lib/documents-branch.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(__dirname, "../..");
@@ -41,13 +36,8 @@ function contentDisposition(downloadName) {
   return `attachment; filename="${quoted}"; filename*=UTF-8''${encoded}`;
 }
 
-function landingHref(link) {
-  if (isDocumentsSource(link.source)) return encodeDocumentsPath(link.source);
-  return `/${link.slug}.pdf`;
-}
-
 function landingHtml(link) {
-  const href = landingHref(link);
+  const href = `../${link.slug}.pdf`;
   const title = link.title || link.downloadName;
   return `<!doctype html>
 <html lang="en">
@@ -82,22 +72,14 @@ function escapeHtml(value) {
 function buildVercelJson(links) {
   const redirects = [];
   const headers = [];
-  const slugRewrites = [];
   for (const link of links) {
-    if (isDocumentsSource(link.source)) {
-      const dest = pagesDocumentUrl(link.source);
-      for (const source of [`/${link.slug}`, `/${link.slug}/`, `/${link.slug}.pdf`]) {
-        slugRewrites.push({ source, destination: dest });
-      }
-    } else {
-      const dest = `/${link.slug}.pdf`;
-      redirects.push({ source: `/${link.slug}`, destination: dest, permanent: false });
-      redirects.push({ source: `/${link.slug}/`, destination: dest, permanent: false });
-      headers.push({
-        source: dest,
-        headers: [{ key: "Content-Disposition", value: contentDisposition(link.downloadName) }],
-      });
-    }
+    const dest = `/${link.slug}.pdf`;
+    redirects.push({ source: `/${link.slug}`, destination: dest, permanent: false });
+    redirects.push({ source: `/${link.slug}/`, destination: dest, permanent: false });
+    headers.push({
+      source: dest,
+      headers: [{ key: "Content-Disposition", value: contentDisposition(link.downloadName) }],
+    });
   }
   return {
     $schema: "https://openapi.vercel.sh/vercel.json",
@@ -109,7 +91,7 @@ function buildVercelJson(links) {
     git: { deploymentEnabled: false },
     redirects,
     headers,
-    rewrites: [...slugRewrites, ...vercelSpaRewrites()],
+    rewrites: vercelSpaRewrites(),
   };
 }
 
@@ -120,6 +102,7 @@ if (!fs.existsSync(CATALOG)) {
 
 const catalog = JSON.parse(fs.readFileSync(CATALOG, "utf8"));
 const links = catalog.links;
+const skipDisk = skipDiskDocs();
 const documentManifestByPath = manifestByPath(loadManifest());
 if (!Array.isArray(links) || links.length === 0) {
   console.error("short-links.json must have a non-empty links array");
@@ -146,20 +129,20 @@ for (const link of links) {
     console.error(`short-link "${link.slug}" downloadName must end in .pdf`);
     process.exit(1);
   }
-  if (isDocumentsSource(link.source)) {
+  const pdfPath = path.join(PUBLIC_ROOT, `${link.slug}.pdf`);
+  if (!fs.existsSync(pdfPath)) {
+    console.error(`Missing ${path.relative(process.cwd(), pdfPath)} — generator must copy the packet to this slug`);
+    process.exit(1);
+  }
+  const sourcePath = path.join(PUBLIC_ROOT, link.source.replace(/^\//, ""));
+  if (skipDisk && String(link.source).startsWith("/documents/")) {
     if (!documentManifestByPath.has(link.source)) {
       console.error(`Missing catalog source in document manifest: ${link.source}`);
       process.exit(1);
     }
-  } else {
-    const sourcePath = path.join(PUBLIC_ROOT, link.source.replace(/^\//, ""));
-    const slugPath = path.join(PUBLIC_ROOT, `${link.slug}.pdf`);
-    if (!fs.existsSync(sourcePath) && !fs.existsSync(slugPath)) {
-      console.error(
-        `Missing public-root short-link "${link.slug}" (${path.relative(process.cwd(), sourcePath)})`,
-      );
-      process.exit(1);
-    }
+  } else if (!fs.existsSync(sourcePath)) {
+    console.error(`Missing catalog source ${path.relative(process.cwd(), sourcePath)}`);
+    process.exit(1);
   }
 }
 

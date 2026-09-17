@@ -15,8 +15,8 @@ month; a handful of Vercel builds would exhaust it.
 | `internal/src/data/documents/registry.json` | Editorial catalog: path → label + owning matter |
 | `internal/src/data/documents/manifest.json` | Physical inventory: path → size + sha256 |
 | `internal/public/documents/README.md` | How to pull / push the store |
-| `internal/public/short-links.json` | Phone-tap slugs → `/documents/...` sources |
-| `internal/public/hope-name-stip.pdf` / `hope-name-motion.pdf` | Desk leftovers not yet on `documents` |
+| `internal/public/short-links.json` | Phone-tap slugs |
+| `internal/public/{slug}.pdf` | Vercel-hosted tap copies — keep until R2 returns 200 |
 
 ## Working set — do not pull the whole room
 
@@ -68,16 +68,20 @@ git commit -m "Add Matter NN filing"
 
 The pre-commit hook runs `npm run sync:all` (hashes *only the new/resized
 file*), and if `manifest.json` changed it runs `npm run documents:push`.
-Nothing on `main` ever sees the bytes. Vercel rewrites `/documents/:path*` to
-https://newanforbi.github.io/interactive-litigation-portfolio/documents/:path*
-so the live site keeps the same paths without copying 660 MB on every
-Vercel build.
+Nothing on `main` ever sees the **library** bytes. Vercel still rewrites
+`/documents/:path*` toward GitHub Pages, but that origin is a 404 (the
+Actions deploy is gone). Do not point phone taps at it.
 
-Short-link taps (`/serrato-opp`, `/habeas-discharge`) **rewrite** to that
-same origin, with each path segment encoded so court-style parentheses
-never appear in a Vercel destination. Do not copy a second PDF to
-`internal/public/{slug}.pdf`. Add the catalog row and run
-`npm run sync:short-links`. Old `/{slug}.pdf` bookmarks follow the rewrite.
+Short-link taps (`/serrato-opp`, `/habeas-discharge`) stay as identical
+copies at `internal/public/{slug}.pdf` on `main`, with Content-Disposition
+set to the long filename. Vercel rejects some court-style paths as redirect
+destinations (parentheses, especially `(b)`). Generator: `publish_short_link`
+in `internal/scripts/lib/short_link.py`. After adding a catalog row, run
+`npm run sync:short-links`.
+
+Do **not** drop those copies until a live documents origin (Cloudflare R2)
+returns HTTP 200 for the Serrato FAC **and** a current mailing packet. Then
+`/{slug}` can rewrite to encoded `/documents/...` and the copies leave `main`.
 
 If the hook is skipped (`git commit --no-verify`):
 
@@ -108,17 +112,16 @@ git hooks:
 
 ## Publishing the library
 
-GitHub Pages was the public origin for `/documents/*` and was deployed by an
-Actions workflow that no longer exists. The Pages site still serves whatever
-was last deployed, and the Vercel rewrite still points at it, so every
-existing link works. **New PDFs are not published** until a replacement
-origin is in place. Short-link taps follow the same origin, so a packet that
-is only on `documents` is on the desk immediately and on the public tap
-when Pages/R2 catches up.
+GitHub Pages was the public origin for `/documents/*`. The Actions workflow
+is gone and the Pages host now 404s. **Phone taps do not use it.** They are
+the slug copies on Vercel. New PDFs on the `documents` branch are on the
+desk after `documents:pull`; they are not on a public `/documents/...` URL
+until R2 (or another live origin) is in place.
 
 The intended replacement is a Cloudflare R2 bucket (free egress, no Actions)
-fed by `documents:push` and fronted by the same Vercel rewrite; see the note
-in `internal/docs/VERCEL_DEPLOYS.md`.
+fed by `documents:push` and fronted by the same Vercel rewrite; see
+`internal/docs/VERCEL_DEPLOYS.md`. After R2 answers 200, drop the slug
+copies.
 
 ## After clone
 

@@ -58,12 +58,12 @@ describe("public path helpers", () => {
 describe("copyPublicExceptDocumentsFilter", () => {
   const publicRoot = "/repo/internal/public";
 
-  it("keeps the public root, logos, and leftover public-root PDFs", () => {
+  it("keeps the public root, logos, and short-link slugs", () => {
     expect(copyPublicExceptDocumentsFilter(publicRoot, publicRoot)).toBe(true);
     expect(copyPublicExceptDocumentsFilter(path.join(publicRoot, "logo-dark.webp"), publicRoot)).toBe(
       true,
     );
-    expect(copyPublicExceptDocumentsFilter(path.join(publicRoot, "hope-name-stip.pdf"), publicRoot)).toBe(
+    expect(copyPublicExceptDocumentsFilter(path.join(publicRoot, "fedex-consent.pdf"), publicRoot)).toBe(
       true,
     );
     expect(copyPublicExceptDocumentsFilter(path.join(publicRoot, "branding"), publicRoot)).toBe(true);

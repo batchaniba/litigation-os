@@ -48,9 +48,8 @@ Team → **Settings → Billing → Spend Management**
 ### `vercel.json` (committed, generated)
 
 `npm run sync:short-links` writes it from `internal/public/short-links.json`:
-short-link **rewrites** to the encoded Pages URL for `/documents/...`
-sources (so `main` does not carry slug PDF copies), leftover public-root
-redirects, the `/documents/*` → GitHub Pages rewrite, and
+short-link redirects to `/{slug}.pdf` (Vercel-hosted copies, until R2 is
+live), `Content-Disposition` headers, the `/documents/*` rewrite target, and
 
 ```json
 "git": { "deploymentEnabled": false }
@@ -97,10 +96,10 @@ for them twice bought nothing.
 ### GitHub Pages and the PDF library
 
 There is no GitHub Actions CI or Pages deploy any more (only the three
-CourtListener workflows remain). Pages still serves the last-published copy
-of `/documents/*`, and the Vercel rewrite still points at it, so existing
-links work. New PDFs pushed to the `documents` branch are **not published**
-until a replacement origin exists.
+CourtListener workflows remain). The Pages host now 404s. Phone taps are
+the `/{slug}.pdf` copies on Vercel, not that rewrite. New PDFs on the
+`documents` branch are unpublished until R2 (or another live origin)
+returns 200.
 
 Intended replacement: a Cloudflare R2 bucket with public access, fed by
 `npm run documents:push` (incremental, from `manifest.json` sha256s) and
