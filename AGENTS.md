@@ -61,7 +61,12 @@ Do not give ChatGPT, Grok, or any third-party chat R2 admin keys or
 `~/.config/r2/env`. Point them at
 `https://litigation-doc-api.ss8sxswwkt.workers.dev`
 (`/matters`, `/fuse`, `/doc/<sha256>`, `/doc/<sha256>/meta`, `/documents/<path>`).
-The Worker binds R2; keys stay server-side. Cursor reads `~/.config/r2/env`
+The Worker binds R2; keys stay server-side.
+
+The document store lives on Cloudflare: PDFs in R2 (the
+`litigation-documents` bucket), matter metadata in D1, served by the
+`litigation-doc-api` Worker.
+ Cursor reads `~/.config/r2/env`
 for writes or calls the Worker for reads. If a chat needs a secret, a
 rotatable Worker bearer — never the Cloudflare admin pair. Direct R2, if
 ever: a read-only token scoped to `litigation-documents`. Admin keys live
