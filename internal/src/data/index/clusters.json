@@ -1,0 +1,30 @@
+{
+  "clusters": [
+    {
+      "id": "chp-nov2024",
+      "label": "CHP November 1, 2024 Encounter & U Visa Certification",
+      "matters": [
+        1,
+        2,
+        7,
+        20,
+        24,
+        32,
+        33
+      ],
+      "thesis": "Five live dockets in four courts — plus Matter 32 as the Meza-Gonzalez / CHP-cluster PDF home and Matter 33 as the Candelaria / DMV APS PDF home — run off one 62-minute traffic-shoulder encounter. The same dashcam, the same Penal Code § 849(b)(1) Detention Certificate, and the same April 20, 2026 certification denial are the operative proof across the cluster. That concentration is the portfolio's greatest source of leverage and its greatest source of exposure: a favorable finding on the shared record propagates across every member, and an adverse or inconsistent one does the same."
+    },
+    {
+      "id": "megan-law-employment",
+      "label": "Penal Code §290.46(j) employment cluster",
+      "matters": [
+        22,
+        25,
+        26,
+        27,
+        29
+      ],
+      "thesis": "Five dockets turn on whether an employer or screening vendor used California Megan's Law registry information to deny or end work. A construction of §290.46(j)(2)(E) in one of them — especially the live UPS motion — travels immediately to FedEx, Randstad/RK, and Amazon. Pilot (Matter 22) is the resolved analog on the same text."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "citations": [
+    {
+      "id": "perry-v-sindermann",
+      "cite": "Perry v. Sindermann, 408 U.S. 593 (1972)",
+      "card": "internal/docs/legal-intel/doctrine/perry-v-sindermann.json",
+      "matters": [24]
+    },
+    {
+      "id": "greenup-v-rodman",
+      "cite": "Greenup v. Rodman, 42 Cal. 3d 822 (1986)",
+      "matters": [12]
+    },
+    {
+      "id": "pc-679.10",
+      "cite": "Cal. Penal Code § 679.10",
+      "matters": [2, 20, 24]
+    },
+    {
+      "id": "pc-290.46",
+      "cite": "Cal. Penal Code § 290.46(j)",
+      "matters": [22, 25, 26, 27, 29]
+    },
+    {
+      "id": "franks-v-delaware",
+      "cite": "Franks v. Delaware, 438 U.S. 154 (1978)",
+      "matters": [32]
+    },
+    {
+      "id": "mercer-v-dmv",
+      "cite": "Mercer v. DMV, 53 Cal. 3d 753 (1991)",
+      "matters": [1, 2, 7, 8, 32, 33]
+    }
+  ]
+}

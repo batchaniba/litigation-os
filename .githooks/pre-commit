@@ -1,7 +1,6 @@
 #!/bin/sh
-# Incremental pre-commit: only refresh the derived snapshots whose
-# sources were staged. Build-time outputs (summaries.json, upcoming.json,
-# short-links, vercel.json, slug landings) are gitignored — never synced here.
+# Derived snapshots stay generated, not hand-edited. Run the generators
+# whenever you want. This hook runs them when their sources are staged.
 set -e
 repo_root="$(git rev-parse --show-toplevel)"
 cd "$repo_root"
@@ -13,24 +12,44 @@ docs_changed=0
 printf '%s\n' "$staged" | grep -Eq '^(internal/public/documents/|internal/src/data/documents/registry\.json)' && docs_changed=1
 
 readme_changed=0
-printf '%s\n' "$staged" | grep -Eq '^(internal/src/data/(timeline\.json|matters/[0-9]{2}\.json|damages\.js|lawyerFees\.js))' && readme_changed=1
+printf '%s\n' "$staged" | grep -Eq '^(internal/src/data/(timeline\.json|matters/[0-9]{2}(\.json|/)|damages\.js|lawyerFees\.js))' && readme_changed=1
+
+index_changed=0
+printf '%s\n' "$staged" | grep -Eq '^(internal/src/data/(timeline\.json|matters/|crossMatter\.json)|internal/scripts/sync-machine-index\.mjs)' && index_changed=1
 
 # vercel.json is generated from the short-link catalog but committed, because
 # Vercel reads git.deploymentEnabled from the repo at push time.
 vercel_changed=0
 printf '%s\n' "$staged" | grep -Eq '^(internal/public/short-links\.json|internal/scripts/sync-short-links\.mjs|internal/scripts/lib/documents-branch\.mjs)$' && vercel_changed=1
 
-[ "$docs_changed" -eq 0 ] && [ "$readme_changed" -eq 0 ] && [ "$vercel_changed" -eq 0 ] && exit 0
+[ "$docs_changed" -eq 0 ] && [ "$readme_changed" -eq 0 ] && [ "$vercel_changed" -eq 0 ] && [ "$index_changed" -eq 0 ] && exit 0
 
 if [ "$docs_changed" -eq 1 ]; then
-  echo "pre-commit: document sources staged — syncing registry + manifest"
+  echo "pre-commit: document sources staged — syncing registry"
   npm run sync:registry
-  npm run sync:manifest
-  if ! git diff --quiet -- internal/src/data/documents/manifest.json 2>/dev/null; then
-    echo "pre-commit: document inventory changed — pushing origin/documents"
-    npm run documents:push
+  node internal/scripts/check-document-sidecars.mjs --staged
+  skip_manifest=0
+  if [ "${PORTFOLIO_SKIP_MANIFEST:-}" = "1" ] || [ "${PORTFOLIO_SKIP_DISK_DOCS:-}" = "1" ]; then
+    skip_manifest=1
   fi
-  git add -- internal/src/data/documents/registry.json internal/src/data/documents/manifest.json
+  if [ "$skip_manifest" -eq 0 ]; then
+    echo "pre-commit: syncing document manifest"
+    npm run sync:manifest
+    if ! git diff --quiet -- internal/src/data/documents/manifest.json 2>/dev/null; then
+      echo "pre-commit: document inventory changed — pushing origin/documents"
+      npm run documents:push
+    fi
+    git add -- internal/src/data/documents/registry.json internal/src/data/documents/manifest.json
+  else
+    echo "pre-commit: skipping sync:manifest (sparse documents tree)"
+    git add -- internal/src/data/documents/registry.json
+  fi
+fi
+
+if [ "$index_changed" -eq 1 ]; then
+  echo "pre-commit: matter graph sources staged — regenerating index/"
+  npm run sync:index
+  git add -- internal/src/data/index/matters.json internal/src/data/index/clusters.json
 fi
 
 if [ "$readme_changed" -eq 1 ]; then

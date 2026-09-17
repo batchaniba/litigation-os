@@ -249,6 +249,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | Sep. 24, 2026 | 25 | WATCH — FedEx status reports in Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR). Dkt. 8: not later than 14 days before the Oct. 8 Zoom (Sep. 24). Plaintiff mailed his report September 14 |
 | Sep. 24, 2026 | 25 | DEADLINE — Status reports due in Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR), not later than 14 days before the Oct. 8 Zoom conference (Dkt. 8). |
 | Sep. 26, 2026 | 38 | OUTER BOUND — CCP § 338(a) three-year statutory-liability clock on the Swift § 290.46(j) / ICRAA counts if accrual is the Sept. 26, 2023 pre-adverse email. Post-adverse is Oct. 5, 2023 (Oct. 5, 2026). |
+| Sep. 30, 2026 | 24 | Hearing on Defendant Serrato's Motion to Dismiss FAC (Dkt. 18) — 1:30 p.m., Mag. Ajay S. Krishnan, Oakland Courtroom 4, 3rd Floor — Newanforbi v. Serrato (4:26-cv-05953-ASK). |
 | Sep. 30, 2026 | 29 | 28 U.S.C. §1447(c) remand window closes (computed) — Newanforbi v. Amazon.com Services, LLC et al., USDC N.D. Cal. No. 3:26-cv-09249-ASK. |
 | Oct. 1, 2026 | 19 | Habeas ruling calendar (computed) — Newanforbi v. Macomber (C2604791). |
 | Oct. 7, 2026 | 26 | HEARING — Defendant UPS's Rule 12(b)(6) Motion to Dismiss (ECF No. 9), Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD), 10:00 a.m., Courtroom 24 (CKD) before Magistrate Judge Carolyn K. Delaney. |
@@ -268,6 +269,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | Nov. 5, 2026 | 33 | Deadline to make initial disclosures (Fed. R. Civ. P. 26(a)(1)) and to file the Joint Case Management Statement (Standing Order for All Judges of the Northern District of California) — Nforbi v. |
 | Nov. 10, 2026 | 29 | Deadline to file ADR Certification (ADR L.R. 3) and to meet and confer regarding initial disclosures, early settlement, ADR process selection, and a discovery plan (Fed. R. Civ. P. 26(f)) — Newanforbi v. |
 | Nov. 12, 2026 | 33 | Initial Case Management Conference, 1:30 p.m. by Zoom (cand.uscourts.gov/ljc) before Magistrate Judge Lisa J. Cisneros — Nforbi v. Candelaria et al. (3:26-cv-08272-LJC), set by the Dkt. 4 order. |
+| Nov. 12, 2026 | 32 | Deadline to file ADR Certification (ADR L.R. 3) and to meet and confer regarding initial disclosures, early settlement, ADR process selection, and a discovery plan (Fed. R. Civ. P. 26(f)) — Nforbi v. |
 | Nov. 16, 2026 | 24 | DEADLINE — Appearance list for the Nov. 20, 2026 Serrato MTD Zoom (Dkt. 18 / Dkt. 30) is due to crbcrd@cand.uscourts.gov by 3:00 p.m. Pacific. Names and emails. Newanforbi v. Serrato (3:26-cv-05953-CRB). |
 | Nov. 20, 2026 | 24 | HEARING — Defendant Serrato's Motion to Dismiss FAC (Dkt. 18) — 10:00 a.m., Zoom webinar, San Francisco, Hon. Charles R. Breyer — Newanforbi v. Serrato (3:26-cv-05953-CRB). |
 | Nov. 24, 2026 | 29 | Deadline to make initial disclosures (Fed. R. Civ. P. 26(a)(1)) and to file the Joint Case Management Statement (Standing Order for All Judges of the Northern District of California) — Newanforbi v. |
@@ -384,33 +386,18 @@ Plaintiff is representing himself pro se across all 40 matters. The figures belo
 - **CI:** none. The `pre-push` hook runs the gate locally; see [Local Development](#local-development).
 - **Fonts:** Cormorant Garamond (headings), DM Sans (UI)
 - **Styling:** `internal/src/styles/app.css` + component styles
-- **Matter data:** one JSON file per matter under `internal/src/data/matters/` (shell uses `summaries.json`; full records lazy-load). Structured fields (prefer over parsing prose `status`):
+- **Matter data:** `internal/src/data/matters/NN.json` (legacy) or `NN/` (split: identity + sibling tables). Index: `internal/src/data/index/matters.json`. Shell uses `summaries.json`; full records lazy-load. Structured fields (prefer over parsing prose `status`):
   - `lifecycle` — disposition: `active` | `pre_filing` | `settled` | `dismissed` | `abandoned` | `closed`
   - `proceeding` — track: `state_civil` | `federal_civil` | `mandate` | `habeas`
   - `phase` — current stage on that track (e.g. `demurrer`, `fr_pending`, `under_submission`, `responsive_deadline`; `terminal` when disposed)
 - **Timeline:** `internal/src/data/timeline.json` (full log) + generated `upcoming.json` for the shell deadline clock
 - **Documents:** `internal/public/documents/` (Matter 32: `from-01|02|20|24/` + N.D. Cal. filing under `ndcal/`; Matter 33: `incident|from-07|from-08|opinions/` + N.D. Cal. filing under `ndcal/`; blank Judicial Council templates and the portfolio Proof of Service form under `_form-library/` (see `_form-library/README.md`)). The tree is ~660 MB and growing; without it on disk, `PORTFOLIO_SKIP_DISK_DOCS=1` checks paths against `internal/src/data/documents/manifest.json` (the `pre-push` hook sets this automatically). See [DOCUMENT_STORE.md](internal/docs/DOCUMENT_STORE.md).
 
-### Prose length budgets
+### Graph (records, not a diary)
 
-The free-prose matter fields carry word budgets, defined in `internal/src/utils/proseBudget.ts` and mirrored for scripts in `internal/scripts/prose-budget.mjs`:
+Crawl `internal/src/data/index/matters.json`, then the sibling file the question needs. `events.jsonl` is append-only. Never invent a docket number. `{filed: true, dkt: 18}` is on file; a draft is not. README tables are generated (`npm run generate:readme`) — do not keep them in sync by hand. Split a matter when you touch it (`npm run matter:split -- NN --replace`). Schema is a contract for shape (`internal/src/data/index/schema.json`), not a speed limit. `status_label` is a 60-character UI chip. Legacy `NN.json` prose still has word ratchets until split; the way out is to split, not to raise the number.
 
-| Field | Target | Enforcement |
-| --- | --- | --- |
-| `key_facts` | 350 words | warning over target, test failure over ceiling |
-| `procedural_status` | 400 words | warning over target, test failure over ceiling |
-| `risk` | 150 words | warning over target, test failure over ceiling |
-| `status` | 60 words | warning over target, test failure over ceiling |
-| `status_label` | 60 **characters** | validator error (`STATUS_LABEL_MAX`) |
-
-Targets are advisory — `npm run validate` warns but still exits zero, because trimming legal prose is an editorial decision. Ceilings are a ratchet pinned just above the current worst record and enforced by `proseBudget.test.js`, so prose can only get shorter. **When you trim a matter, lower its field's ceiling to match the new worst case.**
-
-Two rules keep prose inside budget:
-
-1. **Dated docket entries belong in `timeline.json`, not in `procedural_status`.** The timeline already carries them and feeds the derived status labels, badges, and deadline clock. Prose that restates the timeline is the largest single source of length.
-2. **Don't duplicate `status` across modules.** `matter_damages[]` and `lawyer_fees[]` each used to carry their own hand-maintained `status` copy; both now render `effectiveStatusLabel()` from the matter record instead, so there is one source of truth.
-
-On screen, prose over ~320 characters renders through `CollapsibleProse`, which clamps to a few lines with a "Show full …" toggle. Nothing is truncated in the DOM — print, find-in-page, and the Markdown export still see the whole record.
+On screen, prose over ~320 characters renders through `CollapsibleProse`, which clamps to a few lines with a "Show full …" toggle. That is display only. Nothing is truncated in the DOM — print, find-in-page, and the Markdown export still see the whole record.
 
 ## Citation Verification
 

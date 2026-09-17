@@ -405,6 +405,16 @@
       "permanent": false
     },
     {
+      "source": "/chp-rfp-mail",
+      "destination": "/chp-rfp-mail.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/chp-rfp-mail/",
+      "destination": "/chp-rfp-mail.pdf",
+      "permanent": false
+    },
+    {
       "source": "/edca-att",
       "destination": "/edca-att.pdf",
       "permanent": false

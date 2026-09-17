@@ -1784,7 +1784,7 @@
       24
     ],
     "type": "hearing",
-    "upcoming": true,
+    "upcoming": false,
     "filed": false,
     "actor": "you",
     "source": "/documents/matter-24/ECF Docket Report - N.D. Cal. 3-26-cv-05953-CRB (Pulled Sep 14 2026).pdf",
@@ -2494,7 +2494,7 @@
       25
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "you",
     "source": "/documents/matter-25/Dkt 08 - Order Setting Status Conference (Filed Sep 8 2026).pdf",
     "source_type": "court_order",
