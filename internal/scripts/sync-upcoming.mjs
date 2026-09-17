@@ -3,7 +3,8 @@
 // Build light upcoming-deadline list for the SPA shell bundle.
 //
 // Live calendar is clocks.json (open/set, dated, including overdue).
-// timeline.json stays the archive; CourtListener still writes it.
+// timeline.json stays the archive. CourtListener appends split events.jsonl
+// and parks deadline text as proposed_clock in review.json — never clocks.json.
 //
 // Usage:
 //   npm run sync:upcoming           # write upcoming.json

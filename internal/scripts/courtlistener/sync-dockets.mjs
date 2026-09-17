@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 // Incremental docket sync for bound federal matters.
-// New entries become ledger rows + optional timeline facts. Deadlines go to review.json.
+// New entries become ledger rows + timeline archive facts + split events.jsonl.
+// Deadline text becomes a review candidate with proposed_clock for setNextClock.
+// Never writes clocks.json and never sets upcoming:true.
 //
 // Usage:
 //   npm run court:sync -- --bootstrap
@@ -22,6 +24,7 @@ import {
   loadReview,
   loadSyncState,
   loadTimeline,
+  appendSplitEvents,
   writeLedger,
   writeReview,
   writeSyncState,
@@ -182,6 +185,7 @@ export async function syncDockets({
     if (result.stats.factsAdded || result.stats.provenanceAttached) {
       writeTimeline(result.timeline);
     }
+    if (result.splitEvents?.length) appendSplitEvents(result.splitEvents);
     if (result.stats.seen) writeLedger(result.ledger);
     if (result.stats.candidatesAdded) writeReview(result.review);
     writeSyncState(nextSync);

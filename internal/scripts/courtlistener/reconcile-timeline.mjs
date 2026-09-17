@@ -8,8 +8,9 @@ import { fileURLToPath } from "node:url";
 function main() {
   console.log(
     "Deadline candidates stay in internal/src/data/courtlistener/review.json until approved.\n" +
-      "New docket rows enter the ledger and timeline through npm run court:sync.\n" +
-      "This command does not copy review candidates into timeline.json.",
+      "They carry proposed_clock for `npm run q setNextClock`; they are not clocks.\n" +
+      "New docket rows enter the ledger, timeline.json, and split events.jsonl through npm run court:sync.\n" +
+      "This command does not copy review candidates into clocks.json or timeline.json.",
   );
 }
 

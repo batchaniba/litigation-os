@@ -185,3 +185,44 @@ export function classifyNormalized(normalized) {
     deadline: detectDeadlineCandidate(normalized.description, normalized.date_filed),
   };
 }
+
+/** Split-matter events.jsonl row. Never upcoming — clocks.json is the calendar. */
+export function splitEventFromNormalized(normalized, fact) {
+  if (!fact) return null;
+  const iso = String(normalized.date_filed ?? "").slice(0, 10);
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(iso)) return null;
+  return {
+    ts: `${iso}T00:00:00-07:00`,
+    date: fact.date,
+    matter: normalized.matter,
+    matters: [normalized.matter],
+    type: fact.type,
+    title: fact.event,
+    path: null,
+    dkt: normalized.entry_number ?? null,
+    filed: true,
+    actor: fact.actor,
+    source_type: "courtlistener",
+    upcoming: false,
+    external: fact.external,
+  };
+}
+
+/** Args for `setNextClock`. Review only — never written to clocks.json here. */
+export function proposedClockFromDeadline(normalized, deadline) {
+  if (!deadline?.proposed_date) return null;
+  const dkt = normalized.entry_number;
+  const id =
+    dkt != null
+      ? `${normalized.matter}-deadline-cl-${dkt}`
+      : `${normalized.matter}-deadline-cl-${normalized.courtlistener_entry_id ?? "unk"}`;
+  return {
+    matter: normalized.matter,
+    id,
+    date: deadline.proposed_date,
+    kind: "deadline",
+    title: deadline.reason,
+    status: "open",
+    ...(dkt != null ? { source_dkt: dkt } : {}),
+  };
+}

@@ -17,6 +17,7 @@ import { loadSplitMatter, paddedMatterNumber } from "./matter-layout.mjs";
 import { MATTER_LIFECYCLES } from "../matter-lifecycle.mjs";
 import { MATTER_PHASES } from "../matter-proceeding.mjs";
 import { keyForSha256 } from "./r2-client.mjs";
+import { DEAD_CLOCK_STATUSES } from "./upcoming-from-clocks.mjs";
 import { REPO_ROOT } from "./root.mjs";
 import { matterByNumber } from "./query.mjs";
 
@@ -237,6 +238,22 @@ export function retireUpcomingEvent({ matter, date, reason } = {}) {
       path.join(REPO_ROOT, `${splitDirRel(n)}/events.jsonl`),
       `${JSON.stringify(tombstone)}\n`,
     );
+    const clockRel = `${splitDirRel(n)}/clocks.json`;
+    const clocks = readJSON(clockRel);
+    const liveOnDay = clocks.filter(
+      (c) => c.date === key && !DEAD_CLOCK_STATUSES.has(c.status),
+    );
+    let matched = liveOnDay;
+    if (liveOnDay.length > 1) {
+      matched = liveOnDay.filter((c) =>
+        orig.title.startsWith(String(c.title ?? "").replace(/…$/, "").trim()),
+      );
+    }
+    if (matched.length === 1) {
+      matched[0].status = "satisfied";
+      matched[0].retired_reason = reason;
+      writeJSON(clockRel, clocks);
+    }
     bumpLastUpdated(n);
     return { ok: true, policy: WRITE_POLICY, retired: { matter: n, ts: orig.ts, title: orig.title, reason } };
   }
