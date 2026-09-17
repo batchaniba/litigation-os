@@ -553,6 +553,8 @@ Vercel builds with `VITE_COPY_DOCUMENTS=0` and `PORTFOLIO_SKIP_DISK_DOCS=1` so t
 
 **Pre-push gate.** There are no GitHub Actions workflows. `.githooks/pre-push` is the only automated check before `main`: lint, typecheck, `validate-portfolio`, golden damages math, the unit suite, and the fabricated-citation gate. `npm run prepare` installs it. `SKIP_PORTFOLIO_GATE=1 git push` bypasses it for emergencies only. Branch protection on `main` must **not** require status checks; nothing reports any.
 
+**Dependencies.** Do not restore Dependabot (it runs on Actions runners). Weekly: `npm run deps:outdated`, then `npm run deps:update` for in-range npm. Optional PR factory is the Mend Renovate GitHub App using `.github/renovate.json` — see [WORKFLOW_NOTES.md](.github/WORKFLOW_NOTES.md).
+
 ---
 
 *Confidential — Attorney Work Product*
