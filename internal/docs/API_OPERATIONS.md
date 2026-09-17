@@ -75,7 +75,7 @@ write with a machine-readable reason when they fail.
 | `retireUpcomingEvent` | `({eventId, reason}) -> ok` | flips `upcoming` true→false only; records `superseded_by` / `retired_reason`; never deletes |
 | `setNextClock` | `({matter, clock}) -> ok` | split matters write `clocks.json`, never timeline prose; legacy write timeline; exactly one open clock per kind per matter |
 | `updateMatterIdentity` | `({n, patch}) -> ok` | schema-validated; `matter.json` stays ≤80 lines / 8KB; `last_updated` = today |
-| `catalogDocument` | `({matter, path, sha256, size}) -> ok` | manifest + registry updated together (the #762 lesson: one without the other fails CI); R2 key derived, never supplied |
+| `catalogDocument` | `({matter, path, sha256, size}) -> ok` | manifest + registry updated together (the #762 lesson: one without the other fails CI); same path + new sha256 replaces the row (a redraft); R2 key derived, never supplied |
 | `scaffoldMatter` | `({n, caption}) -> paths` | wraps `scaffold-matter.mjs`; `n` unused; layout recorded in index |
 | `splitMatter` | `({n}) -> paths` | wraps `split-matter.mjs`; refuses if already split |
 

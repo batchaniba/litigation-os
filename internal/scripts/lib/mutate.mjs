@@ -388,7 +388,9 @@ export function updateMatterIdentity({ n, patch } = {}) {
 
 /** Catalog one document across all three stores — manifest, registry, and
  *  the matter's documents[] — or none. The R2 key is derived from the
- *  sha256, never supplied. (The #762 invariant, now structural.) */
+ *  sha256, never supplied. (The #762 invariant, now structural.)
+ *  Same path + new sha256 replaces the row (a redraft), so the Worker
+ *  path index can move `/documents/...` to the new object. */
 export function catalogDocument({
   matter,
   path: docPath,
@@ -410,11 +412,16 @@ export function catalogDocument({
   const r2Key = keyForSha256(sha256.toLowerCase());
 
   const manifest = readJSON("internal/src/data/documents/manifest.json");
-  if (!manifest.files.some((f) => f.sha256.toLowerCase() === sha256.toLowerCase())) {
-    manifest.files.push({ path: docPath, size, sha256: sha256.toLowerCase() });
-    manifest.fileCount = manifest.files.length;
-    manifest.totalBytes = manifest.files.reduce((s, f) => s + f.size, 0);
+  const hash = sha256.toLowerCase();
+  const pathHit = manifest.files.find((f) => f.path === docPath);
+  if (pathHit) {
+    pathHit.size = size;
+    pathHit.sha256 = hash;
+  } else {
+    manifest.files.push({ path: docPath, size, sha256: hash });
   }
+  manifest.fileCount = manifest.files.length;
+  manifest.totalBytes = manifest.files.reduce((s, f) => s + f.size, 0);
   const registry = readJSON("internal/src/data/documents/registry.json");
   const regHit = registry.documents.find((d) => d.path === docPath);
   if (regHit) {

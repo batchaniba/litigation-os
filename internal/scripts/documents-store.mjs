@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 // ==========================================================
-// Move PDF bytes to the `documents` branch so main stays small.
+// Document store: R2 is live bytes; origin/documents is the cold backup.
 //
-//   npm run documents:pull                # whole tree
+//   npm run documents:pull                # whole tree (R2 if R2_* set)
 //   npm run documents:pull -- --matter 24 # one matter folder
-//   npm run documents:push                # after adding a filing (pre-commit also runs this)
+//   npm run documents:push                # after adding or replacing a filing
 //
 // See internal/docs/DOCUMENT_STORE.md.
 // ==========================================================
@@ -25,9 +25,11 @@ try {
       process.stdout.write(DOCUMENTS_PULL_USAGE);
       process.exit(0);
     }
-    const result = pullDocuments(opts);
+    const result = await pullDocuments(opts);
     if (result.list) {
       process.stdout.write(`${result.list.join("\n")}\n`);
+    } else if (result.via === "r2") {
+      console.log(`OK — pulled ${result.count} files from R2.`);
     } else if (result.paths.length === 1 && result.paths[0].endsWith("/documents")) {
       console.log("OK — document tree restored from origin/documents.");
     } else {
@@ -36,9 +38,16 @@ try {
   } else if (command === "push") {
     const result = pushDocuments();
     if (result.pushed) {
-      console.log(`OK — pushed document store ${result.commit.slice(0, 12)}.`);
+      console.log(`OK — pushed document store ${String(result.commit).slice(0, 12)}.`);
     } else {
-      console.log("OK — document store already matches the working tree.");
+      console.log("OK — origin/documents already matches the working tree.");
+    }
+    if (result.r2?.uploaded) {
+      console.log(`OK — published ${result.r2.count} PDFs to R2 and refreshed the path index.`);
+    } else if (result.r2?.reason === "r2_unconfigured") {
+      console.warn(
+        "R2 skipped (no R2_* in the environment). Bytes are on origin/documents until `npm run documents:push` runs with credentials, or the r2-upload workflow runs.",
+      );
     }
   } else if (command === "seed") {
     const result = seedDocumentsBranch();

@@ -1,9 +1,15 @@
 # Document store
 
-Filed PDFs live on the `documents` branch. `main` keeps the catalogs
+Filed PDFs live in Cloudflare R2. `main` keeps the catalogs
 (`registry.json`, `manifest.json`) and gitignores the bytes. Local
 `internal/public/documents/` is filled with `npm run documents:pull`.
-`/documents/...` URLs do not change.
+`/documents/...` URLs do not change: a redraft at the same path gets a
+new sha256 object and the path index moves to it. Old objects stay
+(upload-only, never deletes).
+
+The `documents` git branch is a cold backup. Do not retire it until a
+public Worker `GET /documents/...` returns HTTP 200 for the Serrato FAC
+**and** a current mailing packet.
 
 Git LFS does not fix this. GitHub's free LFS quota is 1 GB of bandwidth a
 month; a handful of Vercel builds would exhaust it.
@@ -48,40 +54,47 @@ on the desk:
 git worktree add ../portfolio-documents documents
 ```
 
-## Day to day — adding a filing
+## Day to day — adding or replacing a filing
 
-Same desk. The PDF still goes in the matter folder. Git ignores the bytes
-on `main`; the hook pushes them to `origin/documents` when the inventory
-changes.
+Same desk as before. Drop the PDF in the matter folder, or overwrite the
+file at the same path if you need to change it. `main` never takes the
+library bytes. With `R2_*` in the environment, the hook publishes to
+Cloudflare (new object + path-index update) so `/documents/matter-NN/...`
+keeps working after a redraft.
 
 ```bash
-# 1. Drop the PDF next to the others
+# 1. Drop the PDF next to the others — or replace the existing file
 #    internal/public/documents/matter-NN/Your Filing (Date).pdf
 
 # 2. Point the matter record at it (path + optional filed / label override)
-#    internal/src/data/matters/NN.json → documents[]
+#    internal/src/data/matters/NN/documents.json  (split) or NN.json
 
 # 3. Commit the matter JSON (do not git add -f the PDF).
-git add internal/src/data/matters/NN.json
+git add internal/src/data/matters/NN/
 git commit -m "Add Matter NN filing"
 ```
 
-The pre-commit hook runs `npm run sync:all` (hashes *only the new/resized
-file*), and if `manifest.json` changed it runs `npm run documents:push`.
-Nothing on `main` ever sees the **library** bytes. Vercel still rewrites
-`/documents/:path*` toward GitHub Pages, but that origin is a 404 (the
-Actions deploy is gone). Do not point phone taps at it.
+The pre-commit hook hashes *only the new/resized file* and, if
+`manifest.json` changed, runs `npm run documents:push`. That command:
 
-Short-link taps (`/serrato-opp`, `/habeas-discharge`) stay as identical
-copies at `internal/public/{slug}.pdf` on `main`, with Content-Disposition
-set to the long filename. Vercel rejects some court-style paths as redirect
-destinations (parentheses, especially `(b)`). Generator: `publish_short_link`
-in `internal/scripts/lib/short_link.py`. After adding a catalog row, run
-`npm run sync:short-links`.
+1. Updates `origin/documents` (cold backup).
+2. PUTs each local PDF to R2 at `sha256/<first2>/<rest>.pdf` (HEAD-skip if present).
+3. PUTs `index/path-to-sha256.json` so the Worker path still names the court file.
 
-Do **not** drop those copies until a live documents origin (Cloudflare R2)
-returns HTTP 200 for the Serrato FAC **and** a current mailing packet. Then
-`/{slug}` can rewrite to encoded `/documents/...` and the copies leave `main`.
+A same-path replacement is a new sha256. The index overwrites that path.
+The previous object stays in the bucket.
+
+If `R2_*` is missing (typical cloud agent), the git branch still updates
+and the `r2-upload.yml` job on a `manifest.json` push to `main` does the
+PUT + index. The hook prints a warning when it skips R2.
+
+Vercel rewrites `/documents/:path*` to
+`https://litigation-doc-api.ss8sxswwkt.workers.dev/documents/:path*`.
+That returns PDF bytes only after the Worker is deployed with this path
+route **and** the path index is in R2. Phone taps stay as
+`internal/public/{slug}.pdf` copies until that origin returns HTTP 200
+for the Serrato FAC and a current mailing packet. Do not point them at
+GitHub Pages (404).
 
 If the hook is skipped (`git commit --no-verify`):
 
@@ -137,15 +150,17 @@ Never paste keys into chat, files, or memory.
 
 The helper re-hashes the bytes client-side and refuses to write on mismatch.
 `origin/documents` is a cold backup. Incremental upload is
-`.github/workflows/r2-upload.yml` (`workflow_dispatch` from main, or a push
-to `documents` once that YAML is on the branch). Upload-only; never deletes.
-Do not retire the branch until a reconcile run has proven itself.
+`.github/workflows/r2-upload.yml` (`workflow_dispatch`, a `documents`
+branch push, or a `manifest.json` push to `main`) plus `documents:push`
+when `R2_*` is set. Upload-only; never deletes. Do not retire the branch
+until a public `GET /documents/...` has returned 200 for the Serrato FAC
+and a current mailing packet.
 
 GitHub Pages was the public origin for `/documents/*`. The Actions workflow
 is gone and the Pages host now 404s. **Phone taps do not use it.** They stay
-as slug copies on Vercel until a **public** R2 (or rewrite) origin returns
-HTTP 200 for the Serrato FAC and a current mailing packet. Then `/{slug}`
-can rewrite to encoded `/documents/...` and the copies leave `main`.
+as slug copies on Vercel until the Worker path origin returns HTTP 200.
+Then `/{slug}` can rewrite to encoded `/documents/...` and the copies leave
+`main`.
 
 ## After clone
 

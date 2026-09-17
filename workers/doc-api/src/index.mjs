@@ -3,6 +3,7 @@
 //   GET /health            -> { ok, bucket }
 //   GET /doc/<sha256>      -> R2 PDF bytes (application/pdf, ETag passthrough)
 //   GET /doc/<sha256>/meta -> { sha256, size, etag } from R2 HEAD
+//   GET /documents/<path>  -> path index (or D1) → sha256 object (court filename)
 //   GET /matters           -> D1 matter rows (mirrors `npm run q listMatters`)
 //   GET /matters/<n>       -> one matter + clocks + documents (mirrors getMatter)
 //   GET /upcoming?days=14  -> clock rows due within window (mirrors upcomingDeadlines)
@@ -19,8 +20,17 @@
 // from D1 with zero dependencies. POSTs JSON to ALERT_WEBHOOK when set,
 // otherwise console.log.
 
+import {
+  contentDispositionForPath,
+  documentsKeyFromUrl,
+  sha256ForPath,
+} from "./documents.mjs";
+
 const BUCKET = "litigation-documents";
 const HEX64 = /^[0-9a-fA-F]{64}$/;
+const PATH_INDEX_KEY = "index/path-to-sha256.json";
+const HASH_CACHE = "public, max-age=31536000, immutable";
+const PATH_CACHE = "public, max-age=60";
 
 const json = (data, status = 200) =>
   new Response(JSON.stringify(data), {
@@ -42,7 +52,7 @@ function r2Ready(env) {
   return !!env.DOCS;
 }
 
-async function serveDoc(env, sha) {
+async function serveDoc(env, sha, { disposition, cacheControl = HASH_CACHE } = {}) {
   if (!r2Ready(env)) return json({ error: "r2_not_bound" }, 503);
   const clean = sha.toLowerCase();
   if (!HEX64.test(clean)) return json({ error: "sha256 must be 64 hex chars" }, 400);
@@ -50,9 +60,43 @@ async function serveDoc(env, sha) {
   if (!obj) return json({ error: "not_found", sha256: clean }, 404);
   const headers = new Headers();
   headers.set("content-type", "application/pdf");
+  headers.set("cache-control", cacheControl);
+  if (disposition) headers.set("content-disposition", disposition);
   if (obj.httpEtag) headers.set("etag", obj.httpEtag);
   if (obj.size != null) headers.set("content-length", String(obj.size));
   return new Response(obj.body, { headers });
+}
+
+async function loadPathIndex(env) {
+  if (!r2Ready(env)) return null;
+  const obj = await env.DOCS.get(PATH_INDEX_KEY);
+  if (!obj) return null;
+  try {
+    return await obj.json();
+  } catch {
+    return null;
+  }
+}
+
+async function sha256FromD1(env, docPath) {
+  const rows = await dbAll(env, `SELECT sha256 FROM documents WHERE path = ?`, [docPath]);
+  const hit = rows?.[0]?.sha256;
+  return typeof hit === "string" ? hit.toLowerCase() : null;
+}
+
+async function serveDocumentsPath(env, pathname) {
+  const docPath = documentsKeyFromUrl(pathname);
+  const index = await loadPathIndex(env);
+  let sha = sha256ForPath(index, pathname);
+  if (!sha) sha = await sha256FromD1(env, docPath);
+  if (!sha) {
+    if (!index) return json({ error: "path_index_missing", path: docPath }, 503);
+    return json({ error: "not_found", path: docPath }, 404);
+  }
+  return serveDoc(env, sha, {
+    disposition: contentDispositionForPath(pathname),
+    cacheControl: PATH_CACHE,
+  });
 }
 
 async function docMeta(env, sha) {
@@ -328,6 +372,9 @@ export default {
     if ((m = path.match(/^\/doc\/([^/]+)\/meta$/))) return docMeta(env, m[1]);
     if ((m = path.match(/^\/doc\/([^/]+)$/))) return serveDoc(env, m[1]);
     if (path.startsWith("/doc/")) return json({ error: "sha256 must be 64 hex chars" }, 400);
+    if (path === "/documents" || path.startsWith("/documents/")) {
+      return serveDocumentsPath(env, path);
+    }
 
     if (path === "/matters") return listMatters(env);
     if ((m = path.match(/^\/matters\/(\d{1,2})$/))) return getMatter(env, Number(m[1]));
