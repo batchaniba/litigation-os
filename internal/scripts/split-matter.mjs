@@ -54,6 +54,7 @@ const IDENTITY_KEYS = [
   "note",
   "key_facts",
   "procedural_status",
+  "policy_limits",
 ];
 
 const CLOCK_TITLE_CHARS = 160;
