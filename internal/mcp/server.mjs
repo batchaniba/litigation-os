@@ -40,7 +40,7 @@ const TOOLS = [
   },
   {
     name: "getTimeline",
-    description: "Events, newest first. Split matters read events.jsonl, legacy read timeline.json.",
+    description: "Events, newest first. Split matters read events.jsonl.",
     fn: (p) => query.getTimeline(p),
     schema: {
       matter: { type: "integer" },
