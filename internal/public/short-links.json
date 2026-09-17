@@ -258,6 +258,66 @@
       "source": "/documents/matter-33/ndcal/Dkt 06 - First Amended Complaint (CONFORMED, Filed Aug 17 2026).pdf",
       "downloadName": "Dkt 06 - First Amended Complaint (CONFORMED, Filed Aug 17 2026).pdf",
       "title": "Operative FAC (Dkt. 6) \u2014 Nforbi v. Candelaria et al. (N.D. Cal. 3:26-cv-08272-LJC)"
+    },
+    {
+      "slug": "chp-rfp-mail",
+      "source": "/documents/matter-20/Request for Production of Documents Set One - CHP with Mail POS (Sep 16 2026).pdf",
+      "downloadName": "Request for Production of Documents Set One - CHP with Mail POS (Sep 16 2026).pdf",
+      "title": "Mail-service packet \u2014 RFP Set One to CHP with CCP \u00a7 1013(a) proof (Alameda 26CV191136)"
+    },
+    {
+      "slug": "edca-att",
+      "source": "/documents/matter-36/edca/E.D. Cal. Intake Packet (print copy) - Ngwa Nforbi v. AT&T (Sep 16 2026).pdf",
+      "downloadName": "E.D. Cal. Complete Packet - Ngwa Nforbi v. AT&T (Sep 16 2026).pdf",
+      "title": "E.D. Cal. complete packet \u2014 Ngwa Nforbi v. AT&T Mobility Services LLC"
+    },
+    {
+      "slug": "edca-home-depot",
+      "source": "/documents/matter-37/edca/E.D. Cal. Intake Packet (print copy) - Ngwa Nforbi v. Home Depot (Sep 16 2026).pdf",
+      "downloadName": "E.D. Cal. Complete Packet - Ngwa Nforbi v. Home Depot (Sep 16 2026).pdf",
+      "title": "E.D. Cal. complete packet \u2014 Ngwa Nforbi v. Home Depot U.S.A., Inc."
+    },
+    {
+      "slug": "edca-swift",
+      "source": "/documents/matter-38/edca/E.D. Cal. Intake Packet (print copy) - Ngwa Nforbi v. Swift (Sep 16 2026).pdf",
+      "downloadName": "E.D. Cal. Complete Packet - Ngwa Nforbi v. Swift (Sep 16 2026).pdf",
+      "title": "E.D. Cal. complete packet \u2014 Ngwa Nforbi v. Swift Transportation Co. of Arizona LLC"
+    },
+    {
+      "slug": "edca-best-buy",
+      "source": "/documents/matter-39/edca/E.D. Cal. Intake Packet (print copy) - Ngwa Nforbi v. Best Buy (Sep 16 2026).pdf",
+      "downloadName": "E.D. Cal. Complete Packet - Ngwa Nforbi v. Best Buy (Sep 16 2026).pdf",
+      "title": "E.D. Cal. complete packet \u2014 Ngwa Nforbi v. Best Buy Co., Inc."
+    },
+    {
+      "slug": "edca-att-consent",
+      "source": "/documents/matter-36/edca/Consent to Magistrate Judge Jurisdiction - Ngwa Nforbi v. AT&T Mobility Services LLC (E.D. Cal.) (Sep 16 2026).pdf",
+      "downloadName": "Consent to Magistrate Judge Jurisdiction - Ngwa Nforbi v. AT&T Mobility Services LLC (E.D. Cal.) (Sep 16 2026).pdf",
+      "title": "E.D. Cal. magistrate consent \u2014 Ngwa Nforbi v. AT&T Mobility Services LLC"
+    },
+    {
+      "slug": "edca-home-depot-consent",
+      "source": "/documents/matter-37/edca/Consent to Magistrate Judge Jurisdiction - Ngwa Nforbi v. Home Depot U.S.A., Inc. (E.D. Cal.) (Sep 16 2026).pdf",
+      "downloadName": "Consent to Magistrate Judge Jurisdiction - Ngwa Nforbi v. Home Depot U.S.A., Inc. (E.D. Cal.) (Sep 16 2026).pdf",
+      "title": "E.D. Cal. magistrate consent \u2014 Ngwa Nforbi v. Home Depot U.S.A., Inc."
+    },
+    {
+      "slug": "edca-swift-consent",
+      "source": "/documents/matter-38/edca/Consent to Magistrate Judge Jurisdiction - Ngwa Nforbi v. Swift Transportation Co. of Arizona LLC (E.D. Cal.) (Sep 16 2026).pdf",
+      "downloadName": "Consent to Magistrate Judge Jurisdiction - Ngwa Nforbi v. Swift Transportation Co. of Arizona LLC (E.D. Cal.) (Sep 16 2026).pdf",
+      "title": "E.D. Cal. magistrate consent \u2014 Ngwa Nforbi v. Swift Transportation Co. of Arizona LLC"
+    },
+    {
+      "slug": "edca-best-buy-consent",
+      "source": "/documents/matter-39/edca/Consent to Magistrate Judge Jurisdiction - Ngwa Nforbi v. Best Buy Co., Inc. (E.D. Cal.) (Sep 16 2026).pdf",
+      "downloadName": "Consent to Magistrate Judge Jurisdiction - Ngwa Nforbi v. Best Buy Co., Inc. (E.D. Cal.) (Sep 16 2026).pdf",
+      "title": "E.D. Cal. magistrate consent \u2014 Ngwa Nforbi v. Best Buy Co., Inc."
+    },
+    {
+      "slug": "edca-mj-consents",
+      "source": "/documents/matter-36/edca/Consent to Magistrate Judge Jurisdiction - Matters 36-39 (E.D. Cal.) (Sep 16 2026).pdf",
+      "downloadName": "Consent to Magistrate Judge Jurisdiction - Matters 36-39 (E.D. Cal.) (Sep 16 2026).pdf",
+      "title": "E.D. Cal. magistrate consents \u2014 AT&T, Home Depot, Swift, Best Buy (print set)"
     }
   ]
 }

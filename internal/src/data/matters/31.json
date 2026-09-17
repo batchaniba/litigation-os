@@ -1,5 +1,6 @@
 {
   "number": 31,
+  "last_updated": "2026-09-16",
   "caption": "Newanforbi v. First Advantage LLC",
   "case_no": "TBD",
   "court": "San Joaquin Sup. Ct. (anticipated)",
@@ -56,5 +57,6 @@
       "label": "First Advantage Adverse Employment Action Notice re: FedEx application (Mar. 19, 2025) — cross-referenced from Matter 25"
     }
   ],
-  "archived": false
+  "archived": false,
+  "status_label": "Pre-filing — no demand or complaint yet"
 }
