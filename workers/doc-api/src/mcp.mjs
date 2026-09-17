@@ -6,11 +6,15 @@
 // connectors, …) use the portfolio's R2 documents and D1 data without ever
 // handling R2 keys: the Worker reaches the bucket through its binding.
 //
-// Read-only by design: the same read operations as `npm run q` / the
-// stdio server in internal/mcp. Document contents come back as tool results —
+// Read tools mirror `npm run q` / the stdio server in internal/mcp.
 // readDocumentText returns pre-extracted PDF text inline (no separate fetch),
 // and fetchDocument returns the /doc/<sha256> download URL for raw PDF bytes
 // when those are needed. CORS is open so browser-based clients can call it.
+//
+// v2 adds write tools (create/update/delete over matters, clocks, and the
+// document manifest). Writes require an "rw" Bearer <redacted> (see auth.mjs) and
+// are recorded to the D1 `audit` table. Document *bytes* are uploaded over
+// REST (PUT /doc/<sha256>), not JSON-RPC.
 
 import {
   HttpError,
@@ -22,8 +26,20 @@ import {
   searchDocumentsData,
   upcomingData,
 } from "./data.mjs";
+import { resolveAccess } from "./auth.mjs";
+import {
+  addClock,
+  deleteClock,
+  deleteDocBytes,
+  deleteDocumentRow,
+  deleteMatter,
+  patchMatter,
+  recordAudit,
+  upsertDocumentRow,
+  upsertMatter,
+} from "./writes.mjs";
 
-const SERVER = { name: "litigation-doc-api", version: "1.2.0" };
+const SERVER = { name: "litigation-doc-api", version: "2.0.0" };
 // Newest first; the initialize handshake negotiates the client's version
 // when we speak it, otherwise our newest.
 const PROTOCOLS = ["2025-06-18", "2025-03-26", "2024-11-05"];
@@ -60,7 +76,7 @@ const withUrls = (ctx, docs) =>
 
 const LIFECYCLES = ["active", "pre_filing", "dismissed", "abandoned", "closed", "settled"];
 
-// Every tool is run(args, ctx) -> plain data. ctx = { env, origin }.
+// Every tool is run(args, ctx) -> plain data. ctx = { env, origin, access }.
 const TOOLS = [
   {
     name: "listMatters",
@@ -200,6 +216,144 @@ const TOOLS = [
     },
     run: async ({ sha256, offset, limit }, ctx) => getDocText(ctx.env, sha256, offset, limit),
   },
+  // --- write tools (scope "rw"; enforced in callTool, audited) --------------
+  // Byte upload is NOT here — a PDF over JSON-RPC would be base64-bloated and
+  // some documents are >20 MB. Upload bytes with `PUT /doc/<sha256>` (REST),
+  // then register/point the manifest row with registerDocument.
+  {
+    name: "registerDocument",
+    write: true,
+    description:
+      "Create or update a document manifest row (sha256 -> matter/path/size). Does not move bytes; PUT /doc/<sha256> uploads those.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        sha256: { type: "string", pattern: "^[0-9a-fA-F]{64}$", description: "64 hex chars." },
+        matter_number: { type: "integer", description: "Owning matter, or omit for an unscoped file." },
+        path: { type: "string", description: "Manifest path, e.g. /documents/matter-26/Foo.pdf" },
+        size: { type: "integer", description: "Byte size." },
+      },
+      required: ["sha256"],
+    },
+    run: (a, ctx) => upsertDocumentRow(ctx.env, a),
+  },
+  {
+    name: "deleteDocument",
+    write: true,
+    description:
+      "Delete a document: removes the D1 manifest row and (unless keepBytes) the R2 bytes. Requires confirm:true.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        sha256: { type: "string", pattern: "^[0-9a-fA-F]{64}$", description: "64 hex chars." },
+        keepBytes: { type: "boolean", description: "Keep the R2 object; drop only the manifest row." },
+        confirm: { type: "boolean", description: "Must be true — deletes are irreversible." },
+      },
+      required: ["sha256", "confirm"],
+    },
+    run: async ({ sha256, keepBytes, confirm }, ctx) => {
+      if (confirm !== true) throw new HttpError(400, { error: "confirm must be true to delete" });
+      const row = await deleteDocumentRow(ctx.env, sha256);
+      const bytes = keepBytes ? { kept: true } : await deleteDocBytes(ctx.env, sha256);
+      return { ...row, bytes };
+    },
+  },
+  {
+    name: "upsertMatter",
+    write: true,
+    description:
+      "Create or fully replace a matter row keyed by number (caption, case_no, court, phase, status_label, judge, lifecycle, next_clock_title, next_clock_date).",
+    inputSchema: {
+      type: "object",
+      properties: {
+        number: { type: "integer", description: "Matter number (key)." },
+        caption: { type: "string" },
+        case_no: { type: "string" },
+        court: { type: "string" },
+        phase: { type: "string" },
+        status_label: { type: "string" },
+        judge: { type: "string" },
+        lifecycle: { type: "string", enum: LIFECYCLES },
+        next_clock_title: { type: "string" },
+        next_clock_date: { type: "string", description: "YYYY-MM-DD" },
+      },
+      required: ["number"],
+    },
+    run: (a, ctx) => upsertMatter(ctx.env, a),
+  },
+  {
+    name: "updateMatter",
+    write: true,
+    description:
+      "Patch only the given fields on an existing matter (e.g. correct a stale status_label). 404 if the matter is unknown.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        n: { type: "integer", description: "Matter number to patch." },
+        caption: { type: "string" },
+        case_no: { type: "string" },
+        court: { type: "string" },
+        phase: { type: "string" },
+        status_label: { type: "string" },
+        judge: { type: "string" },
+        lifecycle: { type: "string", enum: LIFECYCLES },
+        next_clock_title: { type: "string" },
+        next_clock_date: { type: "string", description: "YYYY-MM-DD" },
+      },
+      required: ["n"],
+    },
+    run: ({ n, ...patch }, ctx) => patchMatter(ctx.env, n, patch),
+  },
+  {
+    name: "deleteMatter",
+    write: true,
+    description:
+      "Delete a matter row. Refuses if it still owns clocks/documents unless cascade:true (which removes those D1 rows; R2 bytes are left). Requires confirm:true.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        n: { type: "integer", description: "Matter number." },
+        cascade: { type: "boolean", description: "Also delete its clocks and document rows." },
+        confirm: { type: "boolean", description: "Must be true — deletes are irreversible." },
+      },
+      required: ["n", "confirm"],
+    },
+    run: ({ n, cascade, confirm }, ctx) => {
+      if (confirm !== true) throw new HttpError(400, { error: "confirm must be true to delete" });
+      return deleteMatter(ctx.env, n, { cascade: cascade === true });
+    },
+  },
+  {
+    name: "addClock",
+    write: true,
+    description: "Add a clock (deadline/hearing) to a matter.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        matter_number: { type: "integer" },
+        title: { type: "string" },
+        date: { type: "string", description: "YYYY-MM-DD" },
+        kind: { type: "string", description: "deadline | hearing | expiry | conference | ..." },
+      },
+      required: ["matter_number", "title"],
+    },
+    run: (a, ctx) => addClock(ctx.env, a),
+  },
+  {
+    name: "deleteClock",
+    write: true,
+    description: "Delete clock rows matching a matter + title (+ date if given).",
+    inputSchema: {
+      type: "object",
+      properties: {
+        matter_number: { type: "integer" },
+        title: { type: "string" },
+        date: { type: "string", description: "YYYY-MM-DD (optional narrower match)" },
+      },
+      required: ["matter_number", "title"],
+    },
+    run: (a, ctx) => deleteClock(ctx.env, a),
+  },
 ];
 
 const byName = new Map(TOOLS.map((t) => [t.name, t]));
@@ -208,20 +362,49 @@ async function callTool(name, args, ctx) {
   const tool = byName.get(name);
   if (!tool) return rpcErr(null, -32602, `unknown tool: ${name}`);
   const a = args && typeof args === "object" ? args : {};
+
+  // Scope gate. Write tools need an "rw" token; reads need canRead (open
+  // unless the Worker locks reads down). -32003 = auth denied.
+  const access = ctx.access;
+  if (tool.write) {
+    if (!access.configured)
+      return rpcErr(null, -32003, "writes disabled: API_KEYS is not configured on the Worker");
+    if (!access.canWrite)
+      return rpcErr(null, -32003, access.hasToken ? "forbidden: rw scope required" : "unauthorized: bearer token required");
+  } else if (!access.canRead) {
+    return rpcErr(null, -32003, "unauthorized: bearer token required");
+  }
+
   for (const key of tool.inputSchema.required ?? []) {
     if (a[key] === undefined) return rpcErr(null, -32602, `missing required argument: ${key}`);
   }
+
+  const target = () => a.sha256 ?? a.n ?? a.number ?? a.matter_number ?? null;
+
   return tool
     .run(a, ctx)
-    .then((data) => rpcOk(null, { content: [{ type: "text", text: JSON.stringify(data) }] }))
-    .catch((e) => {
-      // 400s are client input errors; 404/503 surface as tool-level errors
-      // with the payload, mirroring the stdio server's isError shape.
+    .then(async (data) => {
+      if (tool.write)
+        await recordAudit(ctx.env, { actor: access.actor, action: name, target: target(), detail: a, ok: true });
+      return rpcOk(null, { content: [{ type: "text", text: JSON.stringify(data) }] });
+    })
+    .catch(async (e) => {
+      if (tool.write)
+        await recordAudit(ctx.env, {
+          actor: access.actor,
+          action: name,
+          target: target(),
+          detail: { args: a, error: e instanceof HttpError ? e.body : e?.message },
+          ok: false,
+        });
+      // 400s are client input errors; 404/409/503 surface as tool-level
+      // errors with the payload, mirroring the stdio server's isError shape.
       if (e instanceof HttpError && e.status === 400)
         return rpcErr(null, -32602, e.body.error ?? "invalid params");
-      const payload = {
-        error: e instanceof HttpError ? (e.body.error ?? `http_${e.status}`) : (e?.message ?? "internal_error"),
-      };
+      const payload =
+        e instanceof HttpError && e.body && typeof e.body === "object"
+          ? { ...e.body, error: e.body.error ?? `http_${e.status}` }
+          : { error: e?.message ?? "internal_error" };
       return rpcOk(null, {
         content: [{ type: "text", text: JSON.stringify(payload) }],
         isError: true,
@@ -274,7 +457,8 @@ export async function handleMcp(request, env) {
     return json(rpcErr(null, -32700, "parse error"), 400);
   }
 
-  const ctx = { env, origin: new URL(request.url).origin };
+  const access = await resolveAccess(request, env);
+  const ctx = { env, origin: new URL(request.url).origin, access };
   if (Array.isArray(body)) {
     const out = [];
     for (const m of body) {

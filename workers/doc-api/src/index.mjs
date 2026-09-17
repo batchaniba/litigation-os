@@ -1,8 +1,10 @@
 // Cloudflare Worker: litigation portfolio document + data API.
 //
 //   GET /health            -> { ok, bucket }
-//   GET /doc/<sha256>      -> R2 PDF bytes (application/pdf, ETag passthrough)
-//   GET /doc/<sha256>/meta -> { sha256, size, etag } from R2 HEAD
+//   GET  /doc/<sha256>      -> R2 PDF bytes (application/pdf, ETag passthrough)
+//   GET  /doc/<sha256>/meta -> { sha256, size, etag } from R2 HEAD
+//   PUT  /doc/<sha256>      -> upload bytes (rw) + upsert manifest row
+//   DELETE /doc/<sha256>?confirm=1 -> remove manifest row + R2 bytes (rw)
 //   GET /matters           -> D1 matter rows (mirrors `npm run q listMatters`)
 //   GET /matters/<n>       -> one matter + clocks + documents (mirrors getMatter)
 //   GET /upcoming?days=14  -> clock rows due within window (mirrors upcomingDeadlines)
@@ -34,6 +36,14 @@ import {
   upcomingData,
 } from "./data.mjs";
 import { handleMcp } from "./mcp.mjs";
+import { resolveAccess, requireWrite } from "./auth.mjs";
+import {
+  deleteDocBytes,
+  deleteDocumentRow,
+  putDocBytes,
+  recordAudit,
+  upsertDocumentRow,
+} from "./writes.mjs";
 
 const BUCKET = "litigation-documents";
 
@@ -104,6 +114,90 @@ async function handleReseed(request, env) {
   return json({ ok: true, statements: applied });
 }
 
+// --- document writes (rw scope) ---------------------------------------------
+// PUT /doc/<sha256>?matter=<n>&path=<path>[&verify=false]  body = PDF bytes
+//   -> R2 put (sha verified against the key by default) + manifest upsert.
+// DELETE /doc/<sha256>?confirm=1[&keepBytes=true]
+//   -> manifest row + R2 bytes removed. confirm=1 is mandatory.
+// Bytes live on REST (not MCP) because a PDF over JSON-RPC would be
+// base64-bloated and some documents are >20 MB.
+
+async function putDoc(request, env, sha, url, access) {
+  try {
+    requireWrite(access);
+  } catch (e) {
+    return json(e.body, e.status);
+  }
+  try {
+    const bytes = await request.arrayBuffer();
+    const verify = url.searchParams.get("verify") !== "false";
+    const matterParam = url.searchParams.get("matter");
+    const pathParam = url.searchParams.get("path");
+    const put = await putDocBytes(env, sha, bytes, { verify });
+    const row = await upsertDocumentRow(env, {
+      sha256: put.sha256,
+      matter_number: matterParam != null && matterParam !== "" ? Number(matterParam) : null,
+      path: pathParam,
+      size: put.size,
+    });
+    await recordAudit(env, {
+      actor: access.actor,
+      action: "putDocument",
+      target: put.sha256,
+      detail: { matter: matterParam, path: pathParam, size: put.size },
+      ok: true,
+    });
+    return json({ ok: true, ...put, row }, 201);
+  } catch (e) {
+    if (e instanceof HttpError) {
+      await recordAudit(env, {
+        actor: access.actor,
+        action: "putDocument",
+        target: sha,
+        detail: { error: e.body },
+        ok: false,
+      });
+      return json(e.body, e.status);
+    }
+    throw e;
+  }
+}
+
+async function deleteDoc(env, sha, url, access) {
+  try {
+    requireWrite(access);
+  } catch (e) {
+    return json(e.body, e.status);
+  }
+  if (url.searchParams.get("confirm") !== "1")
+    return json({ error: "confirm=1 required to delete" }, 400);
+  try {
+    const keepBytes = url.searchParams.get("keepBytes") === "true";
+    const row = await deleteDocumentRow(env, sha);
+    const bytes = keepBytes ? { kept: true } : await deleteDocBytes(env, sha);
+    await recordAudit(env, {
+      actor: access.actor,
+      action: "deleteDocument",
+      target: sha,
+      detail: { keepBytes },
+      ok: true,
+    });
+    return json({ ok: true, ...row, bytes });
+  } catch (e) {
+    if (e instanceof HttpError) {
+      await recordAudit(env, {
+        actor: access.actor,
+        action: "deleteDocument",
+        target: sha,
+        detail: { error: e.body },
+        ok: false,
+      });
+      return json(e.body, e.status);
+    }
+    throw e;
+  }
+}
+
 // --- entrypoint ---------------------------------------------------------------
 
 export default {
@@ -118,11 +212,24 @@ export default {
         return json({ error: "method_not_allowed" }, 405);
       return handleReseed(request, env);
     }
+
+    const access = await resolveAccess(request, env);
+    let m;
+
+    // Mutating document routes (PUT/DELETE) are matched before the GET guard.
+    if ((m = path.match(/^\/doc\/([^/]+)$/))) {
+      if (request.method === "PUT") return putDoc(request, env, m[1], url, access);
+      if (request.method === "DELETE") return deleteDoc(env, m[1], url, access);
+    }
+
     if (request.method !== "GET") return json({ error: "method_not_allowed" }, 405);
 
-    if (path === "/health") return json({ ok: true, bucket: BUCKET });
+    if (path === "/health") return json({ ok: true, bucket: BUCKET }); // open
 
-    let m;
+    // Every read below honors the read gate (open unless the Worker locks
+    // reads down with API_KEYS + PUBLIC_READ != "true").
+    if (!access.canRead) return json({ error: "unauthorized" }, 401);
+
     if ((m = path.match(/^\/doc\/([^/]+)\/meta$/))) return docMeta(env, m[1]);
     if ((m = path.match(/^\/doc\/([^/]+)$/))) return serveDoc(env, m[1]);
     if (path.startsWith("/doc/")) return json({ error: "sha256 must be 64 hex chars" }, 400);

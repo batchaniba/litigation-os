@@ -14,8 +14,10 @@ by design, there is nowhere to leak them from.
 | `wrangler.toml` | Worker config: `DOCS` R2 binding → `litigation-documents`, `DB` D1 binding, UTC cron triggers for the digests. `database_id` is a placeholder until D1 is created. |
 | `src/index.mjs` | The Worker. Document routes (`/doc/<sha256>`, `/doc/<sha256>/meta`) + D1-backed data routes (`/matters`, `/matters/<n>`, `/upcoming?days=14`, `/fuse`) mirroring the `npm run q` op shapes, a `POST /mcp` MCP endpoint (Streamable HTTP, stateless JSON-RPC — see below), a guarded `POST /admin/reseed` endpoint (Bearer `RESEED_SECRET`; re-applies seed.sql to D1 in batches), plus a `scheduled` handler (daily fuse digest ~08:08 PT, Monday roll call ~07:08 PT) that POSTs to `ALERT_WEBHOOK` when set, else logs. |
 | `src/data.mjs` | Shared data layer: R2/D1 access and the portfolio query ops. Both the REST routes and the MCP tools call into it, so the two surfaces can't drift. Throws `HttpError` (400/404/503) on mapped failures. |
-| `src/mcp.mjs` | MCP endpoint handler: `initialize` / `ping` / `tools/list` / `tools/call` over the read ops. CORS-open (`*`) so browser-based clients work. |
-| `schema.sql` | Idempotent D1 schema: `matters`, `clocks`, `documents`. |
+| `src/mcp.mjs` | MCP endpoint handler: `initialize` / `ping` / `tools/list` / `tools/call` over the read ops **and the v2 write tools** (scope-gated, audited). CORS-open (`*`) so browser-based clients work. |
+| `src/auth.mjs` | Scoped bearer-token auth. Tokens live only as SHA-256 hashes inside the `API_KEYS` Worker secret; scope `r` / `rw`. Resolves what a caller may do; surfaces gate with `requireRead` / `requireWrite`. |
+| `src/writes.mjs` | Write data layer (C/U/D): R2 byte put/delete, D1 upsert/patch/delete over matters, clocks, and the document manifest, plus best-effort `recordAudit`. |
+| `schema.sql` | Idempotent D1 schema: `matters`, `clocks`, `documents`, and the `audit` trail. |
 | `seed.mjs` | Node script → stdout. Reads repo JSON (split `matters/NN/` preferred, legacy `NN.json` fallback, folded `next_clock` from the index, documents from the manifest) and emits idempotent INSERTs. Never writes to the repo. |
 
 ## Deploy
@@ -73,7 +75,7 @@ and gets a plain JSON response — no SSE stream, no session ids. Protocol
 versions negotiated: `2025-06-18`, `2025-03-26`, `2024-11-05`. CORS is open
 (`*`) so browser-based clients (Claude/ChatGPT web connectors) can call it.
 
-**Read-only by design.** Eight tools, mirroring the stdio server in
+**Read tools.** Eight tools, mirroring the stdio server in
 `internal/mcp` and the `npm run q` ops, backed by the same D1/R2 bindings:
 
 | Tool | Args | Returns |
@@ -94,16 +96,81 @@ written by `internal/scripts/extract-doc-text.mjs` and kept in sync by
 never has to fetch PDF bytes over HTTP. `fetchDocument` stays for the cases
 that need raw bytes (`application/pdf`). Timelines, counsel/judge dossiers,
 and the cluster map are not in D1, so they are not tools yet — a seed
-expansion could add them later. Writes are intentionally absent: remote
-writes have no working tree to land on for review.
+expansion could add them later.
 
-Connect from any MCP client with the URL
-`https://litigation-doc-api.ss8sxswwkt.workers.dev/mcp`, no auth:
+**Write tools (v2).** Create / update / delete over matters, clocks, and the
+document manifest. Each needs an `rw` token (see **Auth & scopes**) and is
+written to the `audit` table. Document *bytes* go over REST (`PUT /doc`), not
+JSON-RPC — a base64 PDF over the wire is wasteful and some documents are
+>20 MB.
 
-- **Claude Code:** `claude mcp add --transport http litigation-portfolio https://litigation-doc-api.ss8sxswwkt.workers.dev/mcp`
-- **Cursor:** Settings → MCP → Add server → paste the URL (Streamable HTTP).
-- **Claude Desktop:** remote server entry in `claude_desktop_config.json`.
-- **claude.ai / ChatGPT:** add as a custom connector with the URL.
+| Tool | Args | Effect |
+|---|---|---|
+| `upsertMatter` | `number`, + any matter fields | create or replace a matter row |
+| `updateMatter` | `n`, + fields to patch | patch only the given columns (e.g. fix a stale `status_label`); 404 if unknown |
+| `deleteMatter` | `n`, `confirm`, `cascade?` | delete a matter; refuses if it owns clocks/docs unless `cascade` |
+| `addClock` | `matter_number`, `title`, `date?`, `kind?` | add a deadline/hearing |
+| `deleteClock` | `matter_number`, `title`, `date?` | remove matching clock rows |
+| `registerDocument` | `sha256`, `matter_number?`, `path?`, `size?` | upsert a manifest row (bytes uploaded separately) |
+| `deleteDocument` | `sha256`, `confirm`, `keepBytes?` | remove the manifest row and (unless `keepBytes`) the R2 bytes |
+
+## Auth & scopes
+
+Reads shipped open and stay that way by default. Writes require a **scoped
+bearer token**. Tokens exist only as SHA-256 hashes inside the `API_KEYS`
+Worker secret — a JSON map of `{ "<sha256-of-token>": { "name", "scope" } }`
+— so the plaintext never lives in this repo or the D1/R2 stores. Scope is
+`r` (read) or `rw` (read + write).
+
+Behavior is fail-safe:
+
+- **`API_KEYS` unset** → reads open (unchanged); **writes hard-refused**
+  (`503 auth_not_configured`). You can't get a writable-but-open API by
+  accident.
+- **`API_KEYS` set** → writes need an `rw` token; reads need any valid token
+  **unless** `PUBLIC_READ="true"`, which keeps reads open while gating writes.
+
+Recommended rollout — do **not** break existing read clients:
+
+```bash
+cd workers/doc-api
+# 1) mint a token locally, store only its hash in the secret:
+TOKEN=$(openssl rand -hex 32)
+HASH=$(printf %s "$TOKEN" | shasum -a 256 | cut -d' ' -f1)
+printf '{"%s":{"name":"cursor","scope":"rw"}}' "$HASH" | wrangler secret put API_KEYS
+wrangler secret put PUBLIC_READ   # value: true   (keep reads open for now)
+# 2) hand $TOKEN to the agent that needs write access. Rotate by editing the
+#    secret; revoke by removing the entry. Never commit $TOKEN.
+```
+
+Later, drop `PUBLIC_READ` and issue `r` tokens to lock reads down too. Every
+write records `{ ts, actor, action, target, detail, ok }` to `audit` —
+`actor` is the key's `name`, so you can see which agent changed what.
+
+## Write API — REST
+
+```
+PUT    /doc/<sha256>?matter=<n>&path=<path>[&verify=false]   body = PDF bytes   (rw)
+DELETE /doc/<sha256>?confirm=1[&keepBytes=true]                                  (rw)
+```
+
+`PUT` verifies the uploaded bytes hash to `<sha256>` (the R2 key) before
+storing, then upserts the manifest row. `DELETE` needs `confirm=1`.
+
+## Connecting clients
+
+URL: `https://litigation-doc-api.ss8sxswwkt.workers.dev/mcp`. For read-only
+use while `PUBLIC_READ` is on, no header is needed; for writes (or once reads
+are locked), send `Authorization: Bearer <token>`.
+
+- **Claude Code:** `claude mcp add --transport http litigation-portfolio https://litigation-doc-api.ss8sxswwkt.workers.dev/mcp --header "Authorization: Bearer <token>"`
+- **Cursor:** Settings → MCP → Add server → Streamable HTTP URL, and set an `Authorization` header in the server entry.
+- **Claude Desktop:** remote server entry in `claude_desktop_config.json` with a `headers` map.
+- **claude.ai / ChatGPT:** add as a custom connector with the URL (+ auth header where the connector supports it).
+
+The same token model applies to every client — access is decided at the
+Worker, not per-agent, so any MCP-capable model or agent gets identical CRUD
+with its own scoped token.
 
 ## Not yet done
 
@@ -112,3 +179,7 @@ Connect from any MCP client with the URL
 - `CLOUDFLARE_API_TOKEN` repo secret (required for `cloudflare-deploy.yml`).
 - `RESEED_SECRET` repo secret + matching Worker secret (required for
   `d1-reseed.yml` / `POST /admin/reseed`).
+- `API_KEYS` Worker secret (required to enable write tools / the REST write
+  API; without it writes are refused). `PUBLIC_READ` Worker var (`"true"` to
+  keep reads open once `API_KEYS` is set). Apply the `audit` table with
+  `wrangler d1 execute litigation-portfolio --remote --file=schema.sql`.
