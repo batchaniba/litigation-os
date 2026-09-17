@@ -26,8 +26,9 @@ cd interactive-litigation-portfolio
 git worktree add ../portfolio-documents documents
 # OR: git fetch origin documents:documents
 
-# 2. Restore the document store
-npm run documents:pull   # pulls documents branch into internal/public/documents/
+# 2. Restore the document store (whole tree, or one matter)
+npm run documents:pull -- --matter 24
+# npm run documents:pull   # whole origin/documents tree
 
 # 3. Install and build
 npm ci

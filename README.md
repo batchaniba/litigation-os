@@ -391,7 +391,7 @@ Plaintiff is representing himself pro se across all 40 matters. The figures belo
   - `proceeding` — track: `state_civil` | `federal_civil` | `mandate` | `habeas`
   - `phase` — current stage on that track (e.g. `demurrer`, `fr_pending`, `under_submission`, `responsive_deadline`; `terminal` when disposed)
 - **Timeline:** `internal/src/data/timeline.json` (full log) + generated `upcoming.json` for the shell deadline clock
-- **Documents:** `internal/public/documents/` (Matter 32: `from-01|02|20|24/` + N.D. Cal. filing under `ndcal/`; Matter 33: `incident|from-07|from-08|opinions/` + N.D. Cal. filing under `ndcal/`; blank Judicial Council templates and the portfolio Proof of Service form under `_form-library/` (see `_form-library/README.md`)). The tree is ~660 MB and growing; without it on disk, `PORTFOLIO_SKIP_DISK_DOCS=1` checks paths against `internal/src/data/documents/manifest.json` (the `pre-push` hook sets this automatically). See [DOCUMENT_STORE.md](internal/docs/DOCUMENT_STORE.md).
+- **Documents:** `internal/public/documents/` (Matter 32: `from-01|02|20|24/` + N.D. Cal. filing under `ndcal/`; Matter 33: `incident|from-07|from-08|opinions/` + N.D. Cal. filing under `ndcal/`; blank Judicial Council templates and the portfolio Proof of Service form under `_form-library/` (see `_form-library/README.md`)). The tree is ~660 MB and growing. Pull one matter with `npm run documents:pull -- --matter 24`. Without the tree on disk, `PORTFOLIO_SKIP_DISK_DOCS=1` checks paths against `internal/src/data/documents/manifest.json` (the `pre-push` hook sets this automatically). See [DOCUMENT_STORE.md](internal/docs/DOCUMENT_STORE.md).
 
 ### Graph (records, not a diary)
 
@@ -455,7 +455,7 @@ Empty cursors refuse a full historical crawl unless you pass `--bootstrap`, `--a
 
 ```bash
 npm install
-npm run documents:pull   # fill internal/public/documents/ from origin/documents
+npm run documents:pull -- --matter 24   # one matter; omit flags for the whole tree
 npm run dev
 ```
 
@@ -469,6 +469,7 @@ npm run sync:summaries        # rebuild light matter summaries + document search
 npm run sync:registry         # rebuild path → label catalog
 npm run sync:manifest         # sha256 inventory of public/documents (hashes only new/resized files)
 npm run documents:pull        # restore PDFs from the documents branch (after clone)
+npm run documents:pull -- --matter 24   # one matter folder only
 npm run documents:push        # publish local PDFs to origin/documents
 npm run sync:upcoming         # rebuild upcoming.json from timeline.json for the shell
 npm run generate:readme       # regenerate marked README tables from portfolio data
@@ -544,13 +545,13 @@ npm run build   # outputs to dist/ (copies public/documents unless VITE_COPY_DOC
 npm run preview # preview the production build locally
 ```
 
-Vercel builds with `VITE_COPY_DOCUMENTS=0` and `PORTFOLIO_SKIP_DISK_DOCS=1` so they never fetch or copy the PDF library; `/documents/*` is rewritten to the GitHub Pages origin that holds the last-published copy. Details: [DOCUMENT_STORE.md](internal/docs/DOCUMENT_STORE.md).
+Vercel builds with `VITE_COPY_DOCUMENTS=0` and `PORTFOLIO_SKIP_DISK_DOCS=1` so they never fetch or copy the PDF library. `/documents/*` still has a rewrite target, but GitHub Pages 404s; phone taps are the slug copies on Vercel until R2 is live. Details: [DOCUMENT_STORE.md](internal/docs/DOCUMENT_STORE.md).
 
 ## Deployment
 
-**Vercel** serves production from the domain root, but **does not deploy on push**. The committed `vercel.json` sets `git.deploymentEnabled: false`; production advances when the scheduled Deploy Hook fires (Cloudflare Worker in `internal/workers/vercel-deploy-cron/`, four times a day, only if `main` is ahead of what is live) or when you trigger it by hand. Vercel's Ignored Build Step runs `internal/scripts/vercel-ignore-build.sh`, which skips any build whose inputs did not change. `/documents/:path*` is rewritten to the GitHub Pages copy of the library so the Vercel build does not copy 660 MB of PDFs. Dashboard settings, cost model, and the "deploy now" commands are in [VERCEL_DEPLOYS.md](internal/docs/VERCEL_DEPLOYS.md). After a fresh clone, run `npm run documents:pull` before `npm run dev`.
+**Vercel** serves production from the domain root, but **does not deploy on push**. The committed `vercel.json` sets `git.deploymentEnabled: false`; production advances when the scheduled Deploy Hook fires (Cloudflare Worker in `internal/workers/vercel-deploy-cron/`, four times a day, only if `main` is ahead of what is live) or when you trigger it by hand. Vercel's Ignored Build Step runs `internal/scripts/vercel-ignore-build.sh`, which skips any build whose inputs did not change. Phone-tap PDFs are the `/{slug}.pdf` copies on Vercel. Dashboard settings, cost model, and the "deploy now" commands are in [VERCEL_DEPLOYS.md](internal/docs/VERCEL_DEPLOYS.md). After a fresh clone, `npm run documents:pull -- --matter N` fills one folder; omit the flag for the whole tree.
 
-**GitHub Pages** is no longer deployed. There is no GitHub Actions CI or deploy workflow in this repo; the only workflows left are the CourtListener ones. `https://newanforbi.github.io/interactive-litigation-portfolio/documents/` still serves the PDF library as of its last Actions deploy, and the Vercel rewrite still points there, so existing filing links keep working. New PDFs pushed with `npm run documents:push` land on the `documents` branch but are **not** published until a replacement host for the library is chosen (Cloudflare R2 behind the same `/documents/*` rewrite is the intended next step). `vite.config.js` keeps the `GITHUB_PAGES` base-path switch for a manual Pages build if one is ever needed.
+**GitHub Pages** is no longer deployed and the host 404s. Do not point new taps at it. New PDFs pushed with `npm run documents:push` land on the `documents` branch. Cloudflare R2 behind the same `/documents/*` rewrite is the intended public origin; only after it returns 200 should slug copies leave `main`. `vite.config.js` keeps the `GITHUB_PAGES` base-path switch for a manual Pages build if one is ever needed.
 
 **Pre-push gate.** With CI gone, `.githooks/pre-push` is the only automated check before `main`: lint, typecheck, `validate-portfolio`, golden damages math, the unit suite, and the fabricated-citation gate. `npm run prepare` installs it. `SKIP_PORTFOLIO_GATE=1 git push` bypasses it for emergencies only. Branch protection on `main` must **not** require status checks, since nothing reports any.
 

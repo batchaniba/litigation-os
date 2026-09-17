@@ -15,6 +15,38 @@ month; a handful of Vercel builds would exhaust it.
 | `internal/src/data/documents/registry.json` | Editorial catalog: path → label + owning matter |
 | `internal/src/data/documents/manifest.json` | Physical inventory: path → size + sha256 |
 | `internal/public/documents/README.md` | How to pull / push the store |
+| `internal/public/short-links.json` | Phone-tap slugs |
+| `internal/public/{slug}.pdf` | Vercel-hosted tap copies — keep until R2 returns 200 |
+
+## Working set — do not pull the whole room
+
+A Cloud Agent or a laptop answering one matter should not extract ~660 MB.
+
+```bash
+npm run documents:pull -- --matter 24          # Serrato folder only
+npm run documents:pull -- --matter 20,24       # two matters
+npm run documents:pull -- --matter 24 --forms  # plus _form-library
+npm run documents:pull -- --list               # folders on origin/documents
+npm run documents:pull                         # whole tree (rare)
+```
+
+Sparse pulls **merge** into whatever is already on disk. They do not delete
+other matter folders. `PORTFOLIO_SKIP_DISK_DOCS=1` (set automatically by
+pre-push when no `matter-*` folders exist) treats the committed manifest as
+the inventory, so validate does not need bytes.
+
+Thin clone (history on the remote, current `main` tree only):
+
+```bash
+git clone --filter=blob:none <url>
+```
+
+Two worktrees, one repo — desk vs file room, never `checkout documents`
+on the desk:
+
+```bash
+git worktree add ../portfolio-documents documents
+```
 
 ## Day to day — adding a filing
 
@@ -36,10 +68,20 @@ git commit -m "Add Matter NN filing"
 
 The pre-commit hook runs `npm run sync:all` (hashes *only the new/resized
 file*), and if `manifest.json` changed it runs `npm run documents:push`.
-Nothing on `main` ever sees the bytes. Vercel rewrites `/documents/:path*` to
-https://newanforbi.github.io/interactive-litigation-portfolio/documents/:path*
-so the live site keeps the same paths without copying 660 MB on every
-Vercel build.
+Nothing on `main` ever sees the **library** bytes. Vercel still rewrites
+`/documents/:path*` toward GitHub Pages, but that origin is a 404 (the
+Actions deploy is gone). Do not point phone taps at it.
+
+Short-link taps (`/serrato-opp`, `/habeas-discharge`) stay as identical
+copies at `internal/public/{slug}.pdf` on `main`, with Content-Disposition
+set to the long filename. Vercel rejects some court-style paths as redirect
+destinations (parentheses, especially `(b)`). Generator: `publish_short_link`
+in `internal/scripts/lib/short_link.py`. After adding a catalog row, run
+`npm run sync:short-links`.
+
+Do **not** drop those copies until a live documents origin (Cloudflare R2)
+returns HTTP 200 for the Serrato FAC **and** a current mailing packet. Then
+`/{slug}` can rewrite to encoded `/documents/...` and the copies leave `main`.
 
 If the hook is skipped (`git commit --no-verify`):
 
@@ -68,21 +110,40 @@ git hooks:
   (`PORTFOLIO_SKIP_DISK_DOCS=1` is set automatically when the tree is not on
   disk). Vercel builds set the same flag plus `VITE_COPY_DOCUMENTS=0`.
 
-## Publishing the library
+## Publishing the library — R2 migration (2026-09-17)
 
-GitHub Pages was the public origin for `/documents/*` and was deployed by an
-Actions workflow that no longer exists. The Pages site still serves whatever
-was last deployed, and the Vercel rewrite still points at it, so every
-existing link works. **New PDFs are not published** until a replacement
-origin is in place. The intended replacement is a Cloudflare R2 bucket
-(free egress, no Actions) fed by `documents:push` and fronted by the same
-Vercel rewrite; see the note in `internal/docs/VERCEL_DEPLOYS.md`.
+Cloudflare R2 bucket `litigation-documents` now holds the store: **1,198 PDFs
+from the `documents` branch → 1,139 unique objects / 793.6 MB** after
+content-hash dedup. Every object was ETag-verified against source bytes at
+migration time. GitHub Actions secrets for the bucket are live.
+
+Key scheme (deterministic from `manifest.json` `sha256`):
+`sha256/<first two hex chars>/<remaining hex>.pdf`.
+
+Fetch one file without cloning the branch:
+
+```bash
+npm run docs:fetch <sha256>            # needs R2_ACCOUNT_ID / R2_ACCESS_KEY_ID /
+                                       # R2_SECRET_ACCESS_KEY / R2_BUCKET
+npm run docs:fetch <sha256> -- --out /tmp/doc.pdf
+```
+
+The helper re-hashes the bytes client-side and refuses to write on mismatch.
+`origin/documents` is a cold backup. Incremental `documents:push` → R2 on
+every new PDF is the remaining workflow; do not retire the branch until that
+is proven.
+
+GitHub Pages was the public origin for `/documents/*`. The Actions workflow
+is gone and the Pages host now 404s. **Phone taps do not use it.** They stay
+as slug copies on Vercel until a **public** R2 (or rewrite) origin returns
+HTTP 200 for the Serrato FAC and a current mailing packet. Then `/{slug}`
+can rewrite to encoded `/documents/...` and the copies leave `main`.
 
 ## After clone
 
 ```bash
 npm install
-npm run documents:pull
+npm run documents:pull -- --matter 24   # or omit flags for the whole tree
 npm run dev
 ```
 
@@ -94,10 +155,6 @@ Removing the files from the `main` tree makes **shallow** clones and Vercel
 checkouts small. A full clone of `main` still contains the historical blobs
 until a coordinated `git filter-repo`. Do not rewrite history until every
 clone has switched to `documents:pull`.
-
-A cheaper follow-up: the ~47 MB of short-link slug copies under
-`internal/public/*.pdf` can become redirects to the `/documents/...`
-sources.
 
 ## Why not the other options
 

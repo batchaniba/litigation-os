@@ -37,7 +37,46 @@ Brendan Ngwa Nforbi
 Plaintiff, In Propria Persona
 ```
 
-No phone, no email address, no "In Pro Per."
-- Counsel research: `internal/docs/counsel/` and `internal/docs/legal-intel/counsel/*.json`. Those dockets are not related cases. Do not email counsel about the research.
-- No GitHub Actions CI except the CourtListener workflows. The gate is local (`npm run validate` / pre-push).
-- Node (`.mjs`) for hooks and `npm run`. Python is one-off document generation, not the build.
+No phone, no email address, no "In Pro Per" on the close.
+
+## Counsel dossiers
+
+Opposing-counsel identity/role research lives under `internal/docs/counsel/`. Seeded: Kabat Chapman & Ozmer (Williams / Chapman) at [`internal/docs/counsel/kcoz/`](internal/docs/counsel/kcoz/). Append PACER pulls there. Those dockets are not related cases. Do not email counsel about the research.
+
+## No GitHub to outsiders
+
+Never put a GitHub, `raw.githubusercontent.com`, git-repo, or document-store
+URL in anything Plaintiff will send or file. Attach the file. A download
+link in the agent chat for him is fine. It does not go in the email.
+
+## No CI — the gate is local
+
+There is no GitHub Actions CI. The only workflows left are the CourtListener
+ones (`courtlistener-sync`, `counsel-dossier`, `intel-fetch-briefs`); do not
+add others. The checks the old CI job ran now run in the `pre-push` hook
+(installed by `npm run prepare`): lint, typecheck, `validate-portfolio`,
+golden damages math, the unit suite, and the fabricated-citation gate.
+Before opening a PR, run `npm run validate` yourself and say so in the PR
+body. Production deploys are scheduled, not per-push; see
+`internal/docs/VERCEL_DEPLOYS.md`.
+
+## Runtime boundary: Python vs Node
+
+`internal/scripts/` contains two runtimes. Do not mix them.
+
+**Node (.mjs)** — the build/validation/sync pipeline. These run in the git
+hooks and `npm run` scripts:
+- `validate-portfolio.mjs` — data validation (pre-push gate)
+- `sync-*.mjs` — derived data generation (registry, manifest, summaries, upcoming, short-links)
+- `documents-store.mjs` — `npm run documents:pull -- --matter N` for one folder. R2 holds the bytes (`npm run docs:fetch`); phone-tap slug PDFs stay on `main` until a public origin returns 200.
+- `load-matters.mjs`, `lib/matter-schema.mjs` — shared loaders and schemas
+- `courtlistener/*.mjs` — docket sync
+
+**Python (.py)** — one-off document generation and filling. These are
+matter-specific utilities (e.g. `fill-matter-12-*.py`, `build-citation-index.py`)
+run manually by Aliko. They are **not** part of the build, the hooks, or any npm script.
+
+Rules:
+- New automation that runs in the hooks or `npm run` must be Node (.mjs).
+- Python scripts must not be added to `package.json` scripts or workflow steps.
+- Shared logic (matter loading, validation) lives in Node; do not duplicate it in Python.

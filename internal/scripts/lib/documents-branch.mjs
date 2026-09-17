@@ -6,6 +6,7 @@ import path from "node:path";
 import { DOCUMENTS_ROOT, REPO_ROOT } from "./document-store.mjs";
 
 export const DOCUMENTS_BRANCH = "documents";
+export const DOCUMENTS_GIT_PREFIX = "internal/public/documents";
 
 /**
  * GitHub Pages project URL for the PDF tree after a GITHUB_PAGES build.
@@ -22,6 +23,101 @@ export function vercelSpaRewrites() {
     },
     { source: "/(.*)", destination: "/index.html" },
   ];
+}
+
+export function isDocumentsSource(source) {
+  return String(source).startsWith("/documents/");
+}
+
+/** Encode each path segment so Vercel destinations never contain raw `(`. */
+export function encodePathSegment(segment) {
+  return encodeURIComponent(segment).replace(/[!'()*]/g, (char) => {
+    return `%${char.charCodeAt(0).toString(16).toUpperCase()}`;
+  });
+}
+
+export function encodeDocumentsPath(source) {
+  const trimmed = String(source).replace(/^\//, "");
+  return `/${trimmed.split("/").map(encodePathSegment).join("/")}`;
+}
+
+export function pagesDocumentUrl(source) {
+  if (!isDocumentsSource(source)) {
+    throw new Error(`pagesDocumentUrl expects a /documents/ path, got ${source}`);
+  }
+  const rest = String(source).slice("/documents/".length);
+  return `${PAGES_DOCUMENTS_ORIGIN}/${rest.split("/").map(encodePathSegment).join("/")}`;
+}
+
+export function matterDocumentsFolder(n) {
+  return `matter-${String(n).padStart(2, "0")}`;
+}
+
+function parseMatterList(raw) {
+  return String(raw)
+    .split(",")
+    .map((part) => part.trim())
+    .filter(Boolean)
+    .map((part) => {
+      const n = Number(part);
+      if (!Number.isInteger(n) || n < 1 || n > 99) {
+        throw new Error(`Invalid matter number: ${part}`);
+      }
+      return n;
+    });
+}
+
+/**
+ * Parse `documents:pull` flags from argv after the `pull` verb.
+ * @param {string[]} args
+ */
+export function parseDocumentsPullArgs(args) {
+  const result = {
+    matters: [],
+    forms: false,
+    opinions: false,
+    list: false,
+    help: false,
+  };
+  for (let i = 0; i < args.length; i++) {
+    const token = args[i];
+    if (token === "--list") {
+      result.list = true;
+    } else if (token === "--forms" || token === "--form-library") {
+      result.forms = true;
+    } else if (token === "--opinions") {
+      result.opinions = true;
+    } else if (token === "--help" || token === "-h") {
+      result.help = true;
+    } else if (token === "--matter" || token === "-m") {
+      const value = args[++i];
+      if (!value || value.startsWith("-")) {
+        throw new Error("--matter needs a number (e.g. --matter 24 or --matter 20,24)");
+      }
+      result.matters.push(...parseMatterList(value));
+    } else if (token.startsWith("--matter=")) {
+      result.matters.push(...parseMatterList(token.slice("--matter=".length)));
+    } else {
+      throw new Error(`Unknown documents:pull flag: ${token}`);
+    }
+  }
+  result.matters = [...new Set(result.matters)].sort((a, b) => a - b);
+  return result;
+}
+
+/**
+ * Git-archive pathspecs for a sparse pull. `null` means the whole tree.
+ * @param {{ matters?: number[], forms?: boolean, opinions?: boolean }} opts
+ * @returns {string[] | null}
+ */
+export function documentsArchivePaths({ matters = [], forms = false, opinions = false } = {}) {
+  const sparse = matters.length > 0 || forms || opinions;
+  if (!sparse) return null;
+  const paths = matters.map((n) => `${DOCUMENTS_GIT_PREFIX}/${matterDocumentsFolder(n)}`);
+  if (forms) paths.push(`${DOCUMENTS_GIT_PREFIX}/_form-library`);
+  if (opinions) paths.push(`${DOCUMENTS_GIT_PREFIX}/opinions`);
+  paths.push(`${DOCUMENTS_GIT_PREFIX}/README.md`);
+  return paths;
 }
 
 function git(args, { cwd = REPO_ROOT, env, input, stdio } = {}) {
@@ -101,6 +197,15 @@ export function remoteDocumentsRootTree() {
   }
 }
 
+export function listDocumentsStoreFolders() {
+  const out = git([
+    "ls-tree",
+    "--name-only",
+    `origin/${DOCUMENTS_BRANCH}:${DOCUMENTS_GIT_PREFIX}`,
+  ]);
+  return out.split("\n").filter(Boolean).sort();
+}
+
 function commitTree(tree, message, parents = []) {
   const args = ["commit-tree", tree];
   for (const parent of parents) {
@@ -132,24 +237,61 @@ export function seedDocumentsBranch() {
   return { created: true, commit };
 }
 
-export function pullDocuments() {
+/**
+ * Restore PDF bytes from origin/documents.
+ * Default: the whole tree. Pass `{ matters: [24] }` (and optional forms /
+ * opinions) to extract only those folders. Sparse pulls merge into whatever
+ * is already on disk; they do not delete other matter folders.
+ *
+ * @param {{ matters?: number[], forms?: boolean, opinions?: boolean, list?: boolean }} [opts]
+ */
+export function pullDocuments(opts = {}) {
   const tip = fetchDocumentsBranch();
   if (!tip) {
     throw new Error(
       `origin/${DOCUMENTS_BRANCH} is missing — run npm run documents:push from a clone that still has the PDF tree`,
     );
   }
+  if (opts.list) {
+    return { list: listDocumentsStoreFolders() };
+  }
+  const archivePaths = documentsArchivePaths(opts);
   fs.mkdirSync(path.dirname(DOCUMENTS_ROOT), { recursive: true });
-  const archive = execFileSync(
-    "git",
-    ["archive", `origin/${DOCUMENTS_BRANCH}`, "internal/public/documents"],
-    { cwd: REPO_ROOT },
-  );
+  const gitArgs = [
+    "archive",
+    `origin/${DOCUMENTS_BRANCH}`,
+    ...(archivePaths ?? [DOCUMENTS_GIT_PREFIX]),
+  ];
+  let archive;
+  try {
+    archive = execFileSync("git", gitArgs, {
+      cwd: REPO_ROOT,
+      maxBuffer: 1024 * 1024 * 1024,
+    });
+  } catch (error) {
+    const detail = error instanceof Error && "stderr" in error
+      ? String(error.stderr || error.message)
+      : String(error);
+    if (archivePaths) {
+      let available;
+      try {
+        available = listDocumentsStoreFolders().join(", ");
+      } catch {
+        available = "(could not list origin/documents)";
+      }
+      throw new Error(
+        `Could not pull ${archivePaths.join(", ")}.\n${detail.trim()}\nAvailable: ${available}`,
+        { cause: error },
+      );
+    }
+    throw error;
+  }
   execFileSync("tar", ["-x", "-C", REPO_ROOT], {
     cwd: REPO_ROOT,
     input: archive,
     stdio: ["pipe", "inherit", "inherit"],
   });
+  return { paths: archivePaths ?? [DOCUMENTS_GIT_PREFIX] };
 }
 
 export function pushDocuments() {
@@ -167,3 +309,16 @@ export function pushDocuments() {
   });
   return { pushed: true, commit };
 }
+
+export const DOCUMENTS_PULL_USAGE = `Usage: npm run documents:pull -- [flags]
+
+  (no flags)          restore the whole origin/documents tree (~660 MB)
+  --matter 24         only matter-24/ (repeat or comma-separate: --matter 20,24)
+  --forms             also _form-library/
+  --opinions          also opinions/
+  --list              print folders on origin/documents and exit
+  -h, --help          this text
+
+Sparse pulls merge into the working tree; they do not delete other matter
+folders. See internal/docs/DOCUMENT_STORE.md.
+`;
