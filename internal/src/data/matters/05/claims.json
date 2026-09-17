@@ -1,0 +1,47 @@
+{
+  "summary": "Fraud/Intentional Misrepresentation, Negligence (incl. Negligence Per Se), IIED, Intentional Interference w/ Prospective Econ. Adv., Bane Act (§52.1), Declaratory Relief, UCL (§17200)",
+  "counts": [
+    {
+      "id": 1,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Count 1 — Fraud / Intentional Misrepresentation (against all defendants): intake misrepresentations (March 2021); Akins group representation (November 2022); January 2024 group representation; June 2024 false homework statement; CTM 'partial homework' submissions to CDCR (November 2022–February 2026)"
+    },
+    {
+      "id": 2,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Count 2 — Negligence, including Negligence Per Se (against all defendants): PC §3008(d)(2) and 15 CCR §3574(f)(1) violated; special relationship under Giraldo; failure to maintain accurate homework records; false reporting of partial completion to CDCR"
+    },
+    {
+      "id": 3,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Count 3 — IIED (against all defendants): continued post-Dwyer blanket retention; false 'not completed' characterizations to CDCR; June 2024 false homework denial; August 2025 retaliatory CTM statements ('disruptive,' 'ringleader,' 'abhorrent,' 'acting job')"
+    },
+    {
+      "id": 4,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Count 4 — Intentional Interference with Prospective Economic Advantage (against all defendants): disruption of CDL carrier relationships (United Road, Keurig Dr Pepper, Tiger Lines LLC, US-1 Shorthaul, Lazer Spot Inc., Centerline Drivers); $109,408 documented 2022-2024 losses"
+    },
+    {
+      "id": 5,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Count 5 — Bane Act, Civ. Code §52.1 (against all defendants): interference with PC §3008(d)(2) and 15 CCR §3574(f)(1) rights through coercion; Palacios's August 2025 intimidation; $25,000 statutory damages per violation"
+    },
+    {
+      "id": 6,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Count 6 — Declaratory Relief: judicial declaration that HOPE's blanket retention policy is unlawful; permanent injunction requiring individualized assessment per published CASOMB criteria"
+    },
+    {
+      "id": 7,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Count 7 — UCL, Bus. & Prof. Code §17200 (against all defendants): blanket retention policy = unlawful business practice; false partial-homework reporting = unfair business practice; restitution of all fees wrongfully retained"
+    }
+  ]
+}

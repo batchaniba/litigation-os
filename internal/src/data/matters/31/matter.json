@@ -1,0 +1,22 @@
+{
+  "number": 31,
+  "last_updated": "2026-09-16",
+  "caption": "Newanforbi v. First Advantage LLC",
+  "case_no": "TBD",
+  "court": "San Joaquin Sup. Ct. (anticipated)",
+  "claims": "FCRA § 1681b(b), FCRA § 1681e(b), ICRAA, Negligence Per Se, UCL § 17200",
+  "status": "IDENTIFIED VIA PORTFOLIO GAP ANALYSIS (Jul. 30, 2026) — NOT YET FILED; no demand letter sent; no complaint drafted. Opened as a candidate matter after a document-level review found First Advantage LLC named as the background-check vendor in both Matter 25 (FedEx) and Matter 26 (UPS), yet never itself named as a defendant, unlike the comparable vendors in the same cluster (Accurate Background — Matter 29; HireRight — Matter 23).",
+  "status_label": "Pre-filing — no demand or complaint yet",
+  "lifecycle": "pre_filing",
+  "proceeding": "state_civil",
+  "phase": "pre_filing",
+  "filed": "Not yet filed",
+  "judge": "TBD",
+  "cluster": 3,
+  "type": "State",
+  "badge": "PENDING",
+  "archived": false,
+  "note": "Vendor-side companion to Matters 25/26 — same underlying reports, different defendant theory. Matter 40 (TaskUs) is a third First Advantage employment screen: Profile Advantage Order WPS-361214148, PRINSOS (NSOR analogue) still In Progress as of Sep. 14, 2026. Not a third registry-flagged instance until that component returns a result and a report issues.",
+  "key_facts": "First Advantage (fadv.com) is the background-screening vendor that ran the pre-employment background check underlying both Matter 25 (Newanforbi v. Federal Express Corporation) and Matter 26 (Newanforbi v. United Parcel Service, Inc.), and it is First Advantage — not the employer — that generated and transmitted every notice in both adverse-action sequences under its own letterhead (DoNotReply@fadv.com). A third First Advantage employment screen is now running for TaskUs (Matter 40): Profile Advantage invite Sep. 14, 2026 from do_not_reply@fadv.com; expected report format similar if not identical to the 25/26 product. That sequence has not yet produced a report or adverse notice. For UPS: Pre Adverse Action Notification, July 22, 2024, 9:57 AM, followed by reminder notices July 23 and July 27, 2024, and a Final Adverse Action Notification July 31, 2024, 9:57 AM. For FedEx: Pre-Adverse Employment Action Notice, March 10, 2025, 1:44 PM, a duplicate notice March 11, 2025 to a second email address, five further reminder notices between March 11 and March 16, 2025, and a final Adverse Employment Action Notice March 19, 2025, 1:47 PM. Both sequences follow an identical template and cadence roughly eight months apart, and both are alleged (on information and belief, per Matters 25/26) to have disclosed Plaintiff's Megan's Law registry status — information Penal Code § 290.46(j)(2)(E) categorically bars from employment use — to the requesting employer. Unlike Matter 29 (Amazon/Accurate Background) and the abandoned Matter 23 (Macy's/HireRight), where the vendor was named alongside the employer in a single action, First Advantage was never joined as a defendant in either Matter 25 or Matter 26, despite generating the registry-flagged report in both.",
+  "procedural_status": "Canonical chronology is clocks.json, docket.json, and events.jsonl. Do not reconstruct dates from README."
+}

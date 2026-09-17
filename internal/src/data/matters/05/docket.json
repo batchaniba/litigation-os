@@ -1,0 +1,101 @@
+[
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "other",
+    "title": "BBS Complaint Palacios LMFT 44555",
+    "path": "/documents/matter-05/BBS Complaint Palacios LMFT 44555.pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "other",
+    "title": "CASOMB Complaint - HOPE Program",
+    "path": "/documents/matter-05/CASOMB Complaint - HOPE Program.pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "other",
+    "title": "CASOMB Complaint Continuation Sheet ",
+    "path": "/documents/matter-05/CASOMB Complaint Continuation Sheet .pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "summons",
+    "title": "Summons + Complaint - Newanforbi v. Palacios, et al. ",
+    "path": "/documents/matter-05/Summons + Complaint - Newanforbi v. Palacios, et al. .pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "defendant",
+    "type": "opposition",
+    "title": "Opposition to Demurrer Pal",
+    "path": "/documents/matter-05/Opposition to Demurrer Pal.pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "opposition",
+    "title": "Declaration Pal ISO Opposition",
+    "path": "/documents/matter-05/Declaration Pal ISO Opposition.pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "opposition",
+    "title": "RJN Pal ISO Opposition",
+    "path": "/documents/matter-05/RJN Pal ISO Opposition.pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "court",
+    "type": "order",
+    "title": "Stipulated Protective Order SIGNED",
+    "path": "/documents/matter-05/Stipulated Protective Order SIGNED.pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "defendant",
+    "type": "reply",
+    "title": "Demurrer-Reply (NEWpal) (070726)",
+    "path": "/documents/matter-05/Demurrer-Reply (NEWpal) (070726).pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "defendant",
+    "type": "reply",
+    "title": "Demurrer-Reply Decl (NEWpal) (070726)",
+    "path": "/documents/matter-05/Demurrer-Reply Decl (NEWpal) (070726).pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "defendant",
+    "type": "amended_complaint",
+    "title": "Order Sustaining Demurrer to FAC WOLA - Jul 15 2026",
+    "path": "/documents/matter-05/Order Sustaining Demurrer to FAC WOLA - Jul 15 2026.pdf",
+    "filed": false
+  }
+]

@@ -143,75 +143,12 @@
     "date": null,
     "filer": "plaintiff",
     "type": "other",
-    "title": "EMAIL_DRAFT_Name_Conform_Admin_Motion_serrato",
-    "path": "/documents/matter-24/EMAIL_DRAFT_Name_Conform_Admin_Motion_serrato.txt",
-    "filed": false
-  },
-  {
-    "dkt": null,
-    "date": null,
-    "filer": "plaintiff",
-    "type": "other",
     "title": "Exhibit A Cover - ECF Help Desk - Serrato (N.D. Cal. 4-26-cv-05953-ASK) (September 14, 2026)",
     "path": "/documents/matter-24/Exhibit A Cover - ECF Help Desk - Serrato (N.D. Cal. 4-26-cv-05953-ASK) (September 14, 2026).pdf",
     "filed": false,
     "packet": "ask-packet",
     "superseded_by": "crb-packet",
     "operative": false
-  },
-  {
-    "dkt": null,
-    "date": null,
-    "filer": "plaintiff",
-    "type": "correspondence",
-    "title": "Gmail - Re Pro se e-filing one account two name forms - CAND ECF Help Desk (Received Sep 1 2026)",
-    "path": "/documents/matter-28/Gmail - Re Pro se e-filing one account two name forms - CAND ECF Help Desk (Received Sep 1 2026).pdf",
-    "filed": false
-  },
-  {
-    "dkt": null,
-    "date": null,
-    "filer": "plaintiff",
-    "type": "correspondence",
-    "title": "Gmail - Serrato Initial Disclosures from Montufar (Received Sep 9 2026)",
-    "path": "/documents/matter-24/Gmail - Serrato Initial Disclosures from Montufar (Received Sep 9 2026).pdf",
-    "filed": false
-  },
-  {
-    "dkt": null,
-    "date": null,
-    "filer": "defendant",
-    "type": "other",
-    "title": "Defendant Serrato's Rule 26(a)(1) Initial Disclosures (Dated Sep 8, Served Sep 9 2026)",
-    "path": "/documents/matter-24/Defendant Serrato's Rule 26(a)(1) Initial Disclosures (Dated Sep 8, Served Sep 9 2026).pdf",
-    "filed": false
-  },
-  {
-    "dkt": null,
-    "date": null,
-    "filer": "plaintiff",
-    "type": "correspondence",
-    "title": "Gmail - Newanforbi v Serrato - Guardado Service of Joint CMC Statement (Sep 8 2026)",
-    "path": "/documents/matter-24/Gmail - Newanforbi v Serrato - Guardado Service of Joint CMC Statement (Sep 8 2026).pdf",
-    "filed": false
-  },
-  {
-    "dkt": null,
-    "date": null,
-    "filer": "plaintiff",
-    "type": "other",
-    "title": "Joint CMC Statement - Service Copy (Sep 8 2026)",
-    "path": "/documents/matter-24/Joint CMC Statement - Service Copy (Sep 8 2026).pdf",
-    "filed": false
-  },
-  {
-    "dkt": null,
-    "date": null,
-    "filer": "plaintiff",
-    "type": "correspondence",
-    "title": "Gmail - Newanforbi v Serrato - Rule 26(a)(1) Initial Disclosures to Li (Sent Sep 8 2026)",
-    "path": "/documents/matter-24/Gmail - Newanforbi v Serrato - Rule 26(a)(1) Initial Disclosures to Li (Sent Sep 8 2026).pdf",
-    "filed": false
   },
   {
     "dkt": 24,
@@ -230,33 +167,6 @@
     "title": "Dkt 23 - Related Case Order - Candelaria Not Related (Filed Sep 8 2026)",
     "path": "/documents/matter-24/Dkt 23 - Related Case Order - Candelaria Not Related (Filed Sep 8 2026).pdf",
     "filed": true
-  },
-  {
-    "dkt": null,
-    "date": null,
-    "filer": "plaintiff",
-    "type": "other",
-    "title": "EMAIL_DRAFT_Li_JCMS_Portion_and_Rule26_Disclosures",
-    "path": "/documents/matter-24/EMAIL_DRAFT_Li_JCMS_Portion_and_Rule26_Disclosures.txt",
-    "filed": false
-  },
-  {
-    "dkt": null,
-    "date": null,
-    "filer": "plaintiff",
-    "type": "other",
-    "title": "Plaintiff's Rule 26(a)(1) Initial Disclosures (Sep 8 2026)",
-    "path": "/documents/matter-24/Plaintiff's Rule 26(a)(1) Initial Disclosures (Sep 8 2026).pdf",
-    "filed": false
-  },
-  {
-    "dkt": null,
-    "date": null,
-    "filer": "plaintiff",
-    "type": "other",
-    "title": "Plaintiff's Portion of Joint Case Management Statement (Sep 8 2026)",
-    "path": "/documents/matter-24/Plaintiff's Portion of Joint Case Management Statement (Sep 8 2026).pdf",
-    "filed": false
   },
   {
     "dkt": null,
@@ -289,42 +199,6 @@
     "dkt": null,
     "date": null,
     "filer": "plaintiff",
-    "type": "other",
-    "title": "EMAIL_DRAFT_Li_Agree_JCMS_Fallback_if_Dkt_22_Unsigned",
-    "path": "/documents/matter-24/EMAIL_DRAFT_Li_Agree_JCMS_Fallback_if_Dkt_22_Unsigned.txt",
-    "filed": false
-  },
-  {
-    "dkt": null,
-    "date": null,
-    "filer": "plaintiff",
-    "type": "correspondence",
-    "title": "Gmail - Ngehsi Newanforbi v Serrato - Li Meza Melano service call availability (Sep 7 2026)",
-    "path": "/documents/matter-24/Gmail - Ngehsi Newanforbi v Serrato - Li Meza Melano service call availability (Sep 7 2026).pdf",
-    "filed": false
-  },
-  {
-    "dkt": null,
-    "date": null,
-    "filer": "plaintiff",
-    "type": "other",
-    "title": "EMAIL_DRAFT_Li_Availability_Meza_Melano_Service_Call",
-    "path": "/documents/matter-24/EMAIL_DRAFT_Li_Availability_Meza_Melano_Service_Call.txt",
-    "filed": false
-  },
-  {
-    "dkt": null,
-    "date": null,
-    "filer": "plaintiff",
-    "type": "other",
-    "title": "Certification of Conflicts Interested Entities and Persons (Serrato) (Sep 4 2026)",
-    "path": "/documents/matter-24/Certification of Conflicts Interested Entities and Persons (Serrato) (Sep 4 2026).pdf",
-    "filed": false
-  },
-  {
-    "dkt": null,
-    "date": null,
-    "filer": "plaintiff",
     "type": "proof_of_service",
     "title": "Proof of Service - Certification of Conflicts (Serrato) (Sep 4 2026)",
     "path": "/documents/matter-24/Proof of Service - Certification of Conflicts (Serrato) (Sep 4 2026).pdf",
@@ -349,15 +223,6 @@
     "filed": true
   },
   {
-    "dkt": null,
-    "date": null,
-    "filer": "plaintiff",
-    "type": "other",
-    "title": "1 2",
-    "path": "/documents/matter-32/from-24/1 2.pdf",
-    "filed": false
-  },
-  {
     "dkt": 4,
     "date": null,
     "filer": "court",
@@ -376,15 +241,6 @@
     "filed": true
   },
   {
-    "dkt": null,
-    "date": null,
-    "filer": "plaintiff",
-    "type": "other",
-    "title": "ND Cal ISC and Magistrate Consent form",
-    "path": "/documents/matter-32/from-24/ND Cal ISC and Magistrate Consent form.pdf",
-    "filed": false
-  },
-  {
     "dkt": 6,
     "date": null,
     "filer": "plaintiff",
@@ -401,15 +257,6 @@
     "title": "Consent to Magistrate Judge Jurisdiction (Doc 8, Filed Jun 29 2026)",
     "path": "/documents/matter-24/Consent to Magistrate Judge Jurisdiction (Doc 8, Filed Jun 29 2026).pdf",
     "filed": true
-  },
-  {
-    "dkt": null,
-    "date": null,
-    "filer": "plaintiff",
-    "type": "other",
-    "title": "Nd Cal IFP Application",
-    "path": "/documents/matter-32/from-24/Nd Cal IFP Application.pdf",
-    "filed": false
   },
   {
     "dkt": null,
@@ -440,15 +287,6 @@
     "filed": true
   },
   {
-    "dkt": null,
-    "date": null,
-    "filer": "plaintiff",
-    "type": "other",
-    "title": "Notice of Change of Address (July 7, 2026)",
-    "path": "/documents/matter-32/from-24/Notice of Change of Address (July 7, 2026).pdf",
-    "filed": false
-  },
-  {
     "dkt": 15,
     "date": null,
     "filer": "plaintiff",
@@ -465,33 +303,6 @@
     "title": "Administrative Motion to Consider Whether Cases Should Be Related - Serrato and Meza-Gonzalez (Filed Aug 20 2026)",
     "path": "/documents/matter-24/Administrative Motion to Consider Whether Cases Should Be Related - Serrato and Meza-Gonzalez (Filed Aug 20 2026).pdf",
     "filed": true
-  },
-  {
-    "dkt": null,
-    "date": null,
-    "filer": "plaintiff",
-    "type": "other",
-    "title": "DRAFT - Administrative Motion to Consider Whether Cases Should Be Related (pre-filing)",
-    "path": "/documents/matter-24/DRAFT - Administrative Motion to Consider Whether Cases Should Be Related (pre-filing).pdf",
-    "filed": false
-  },
-  {
-    "dkt": null,
-    "date": null,
-    "filer": "plaintiff",
-    "type": "other",
-    "title": "DRAFT - Declaration ISO Administrative Motion to Relate Cases (pre-filing)",
-    "path": "/documents/matter-24/DRAFT - Declaration ISO Administrative Motion to Relate Cases (pre-filing).pdf",
-    "filed": false
-  },
-  {
-    "dkt": null,
-    "date": null,
-    "filer": "court",
-    "type": "order",
-    "title": "DRAFT - Proposed Order Granting Administrative Motion to Relate Cases (pre-filing)",
-    "path": "/documents/matter-24/DRAFT - Proposed Order Granting Administrative Motion to Relate Cases (pre-filing).pdf",
-    "filed": false
   },
   {
     "dkt": null,
@@ -521,49 +332,13 @@
     "filed": false
   },
   {
-    "dkt": 18,
-    "date": "2026-08-26",
+    "dkt": null,
+    "date": null,
     "filer": "defendant",
-    "type": "motion_to_dismiss",
+    "type": "amended_complaint",
     "title": "Defendant Serrato Motion to Dismiss FAC and Strike (Aug 26 2026)",
     "path": "/documents/matter-24/Defendant Serrato Motion to Dismiss FAC and Strike (Aug 26 2026).pdf",
     "filed": true
-  },
-  {
-    "dkt": null,
-    "date": null,
-    "filer": "plaintiff",
-    "type": "amended_complaint",
-    "title": "Opposition to Serrato MTD FAC and Strike v2 (draft)",
-    "path": "/documents/matter-24/Opposition to Serrato MTD FAC and Strike v2 (draft).docx",
-    "filed": false
-  },
-  {
-    "dkt": null,
-    "date": null,
-    "filer": "defendant",
-    "type": "other",
-    "title": "Mailing Photo - Envelope to Haiyang Li DAG (Notice) (Aug 21 2026)",
-    "path": "/documents/matter-24/Mailing Photo - Envelope to Haiyang Li DAG (Notice) (Aug 21 2026).jpeg",
-    "filed": false
-  },
-  {
-    "dkt": null,
-    "date": null,
-    "filer": "defendant",
-    "type": "other",
-    "title": "Mailing Photo - Envelope to Haiyang Li DAG (Amended) (Aug 21 2026)",
-    "path": "/documents/matter-24/Mailing Photo - Envelope to Haiyang Li DAG (Amended) (Aug 21 2026).jpeg",
-    "filed": false
-  },
-  {
-    "dkt": null,
-    "date": null,
-    "filer": "court",
-    "type": "other",
-    "title": "Mailing Photo - Envelope to NDCal Clerk San Jose (Aug 21 2026)",
-    "path": "/documents/matter-24/Mailing Photo - Envelope to NDCal Clerk San Jose (Aug 21 2026).jpeg",
-    "filed": false
   },
   {
     "dkt": null,
@@ -602,10 +377,10 @@
     "filed": false
   },
   {
-    "dkt": 20,
-    "date": "2026-08-27",
+    "dkt": null,
+    "date": null,
     "filer": "plaintiff",
-    "type": "opposition",
+    "type": "motion_to_dismiss",
     "title": "Opposition to Serrato MTD with Proof of Service by Email (Aug 27 2026)",
     "path": "/documents/matter-24/Opposition to Serrato MTD with Proof of Service by Email (Aug 27 2026).pdf",
     "filed": true
@@ -636,15 +411,6 @@
     "title": "Clerk's Notice Resetting Hearing on Motion to Dismiss (Dkt 21, Filed Aug 28 2026)",
     "path": "/documents/matter-24/Clerk's Notice Resetting Hearing on Motion to Dismiss (Dkt 21, Filed Aug 28 2026).pdf",
     "filed": true
-  },
-  {
-    "dkt": null,
-    "date": null,
-    "filer": "plaintiff",
-    "type": "proof_of_service",
-    "title": "Notice of Supplemental Authority - Whitman Tentative with POS (Aug 31 2026)",
-    "path": "/documents/matter-24/Notice of Supplemental Authority - Whitman Tentative with POS (Aug 31 2026).pdf",
-    "filed": false
   },
   {
     "dkt": null,
@@ -686,15 +452,6 @@
     "dkt": null,
     "date": null,
     "filer": "plaintiff",
-    "type": "motion_to_dismiss",
-    "title": "Notice of Supplemental Authority - Whitman Tentative - Serrato MTD (Aug 31 2026)",
-    "path": "/documents/matter-24/Notice of Supplemental Authority - Whitman Tentative - Serrato MTD (Aug 31 2026).pdf",
-    "filed": false
-  },
-  {
-    "dkt": null,
-    "date": null,
-    "filer": "plaintiff",
     "type": "proof_of_service",
     "title": "Proof of Service by Email - Notice of Supplemental Authority Whitman (Aug 31 2026)",
     "path": "/documents/matter-24/Proof of Service by Email - Notice of Supplemental Authority Whitman (Aug 31 2026).pdf",
@@ -705,44 +462,8 @@
     "date": null,
     "filer": "plaintiff",
     "type": "proof_of_service",
-    "title": "Notice of Supplemental Authority - Whitman Tentative with POS (Aug 28 2026)",
-    "path": "/documents/matter-24/Notice of Supplemental Authority - Whitman Tentative with POS (Aug 28 2026).pdf",
-    "filed": false
-  },
-  {
-    "dkt": null,
-    "date": null,
-    "filer": "plaintiff",
-    "type": "motion_to_dismiss",
-    "title": "Notice of Supplemental Authority - Whitman Tentative - Serrato MTD (Aug 28 2026)",
-    "path": "/documents/matter-24/Notice of Supplemental Authority - Whitman Tentative - Serrato MTD (Aug 28 2026).pdf",
-    "filed": false
-  },
-  {
-    "dkt": null,
-    "date": null,
-    "filer": "plaintiff",
-    "type": "other",
-    "title": "Exhibit A Cover - Whitman Tentative Ruling (Aug 27 2026)",
-    "path": "/documents/matter-24/Exhibit A Cover - Whitman Tentative Ruling (Aug 27 2026).pdf",
-    "filed": false
-  },
-  {
-    "dkt": null,
-    "date": null,
-    "filer": "plaintiff",
-    "type": "proof_of_service",
     "title": "Proof of Service by Email - Notice of Supplemental Authority Whitman (Aug 28 2026)",
     "path": "/documents/matter-24/Proof of Service by Email - Notice of Supplemental Authority Whitman (Aug 28 2026).pdf",
-    "filed": false
-  },
-  {
-    "dkt": null,
-    "date": null,
-    "filer": "plaintiff",
-    "type": "correspondence",
-    "title": "Gmail - Pro se e-filing one account two name forms - CAND ECF Help Desk (Sent Sep 1 2026)",
-    "path": "/documents/matter-28/Gmail - Pro se e-filing one account two name forms - CAND ECF Help Desk (Sent Sep 1 2026).pdf",
     "filed": false
   },
   {

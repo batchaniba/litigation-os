@@ -1,0 +1,18 @@
+{
+  "appearances": [
+    {
+      "id": null,
+      "name": "Blaze Van Dine",
+      "firm": "Sims Lawrence & Broghammer",
+      "dossier": "counsel/blaze-van-dine.json",
+      "attorney_id": null
+    },
+    {
+      "id": null,
+      "name": "Eric Thomas Martinez",
+      "firm": null,
+      "dossier": "counsel/eric-thomas-martinez.json",
+      "attorney_id": null
+    }
+  ]
+}

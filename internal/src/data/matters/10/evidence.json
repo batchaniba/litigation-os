@@ -1,0 +1,30 @@
+[
+  {
+    "id": "e01",
+    "label": "Form 1502-DR",
+    "path": null,
+    "what_it_proves": "Form 1502-DR",
+    "transcript_path": null
+  },
+  {
+    "id": "e02",
+    "label": "CSRA score docs",
+    "path": null,
+    "what_it_proves": "CSRA score docs",
+    "transcript_path": null
+  },
+  {
+    "id": "e03",
+    "label": "Compliance history",
+    "path": null,
+    "what_it_proves": "Compliance history",
+    "transcript_path": null
+  },
+  {
+    "id": "e04",
+    "label": "15 CCR 3574",
+    "path": null,
+    "what_it_proves": "15 CCR 3574",
+    "transcript_path": null
+  }
+]

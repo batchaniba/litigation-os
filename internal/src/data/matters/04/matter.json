@@ -1,0 +1,21 @@
+{
+  "number": 4,
+  "last_updated": "2026-09-16",
+  "caption": "Newanforbi v. Derrick et al.",
+  "case_no": "TBD",
+  "court": "San Joaquin Sup. Ct.",
+  "claims": "IIED, Bane Act, Intentional/Negligent Econ. Interference, Negligent Supervision, NIED",
+  "status": "NOT PURSUING — Voluntarily Dismissed",
+  "status_label": "Abandoned — voluntarily dismissed",
+  "lifecycle": "abandoned",
+  "proceeding": "state_civil",
+  "phase": "terminal",
+  "filed": "May 29, 2026",
+  "judge": "TBD",
+  "cluster": 2,
+  "type": "State",
+  "badge": "ABANDONED",
+  "archived": true,
+  "key_facts": "State law parallel to Matter 3. Bane Act claim based on Derrick's speech suppression threats and witness intimidation. Intentional and negligent economic interference: documented FedEx relationship ($20/hr) destroyed. Negligent supervision: Noguchi had actual knowledge of retaliation and failed to intervene. CDCR vicariously liable under §815.2(a). Must file within 6 months of deemed rejection (~Sep. 2026).",
+  "procedural_status": "Canonical chronology is clocks.json, docket.json, and events.jsonl. Do not reconstruct dates from README."
+}

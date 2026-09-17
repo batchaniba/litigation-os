@@ -1,0 +1,68 @@
+[
+  {
+    "id": "29-hearing-1",
+    "date": "2026-12-01",
+    "date_label": "Dec. 1, 2026",
+    "kind": "hearing",
+    "status": "open",
+    "source_dkt": 9,
+    "title": "Initial Case Management Conference, 1:30 p.m. by Zoom (cand.uscourts.gov/ask) before Magistrate Judge Ajay S. Krishnan — Newanforbi v. Amazon.com Services, LLC…",
+    "actor": "agency",
+    "source": "/documents/matter-29/Dkt 09 - Order Setting Initial CMC and ADR Deadlines (Filed Sep 3 2026).pdf"
+  },
+  {
+    "id": "29-deadline-2",
+    "date": "2026-11-24",
+    "date_label": "Nov. 24, 2026",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": 9,
+    "title": "Deadline to make initial disclosures (Fed. R. Civ. P. 26(a)(1)) and to file the Joint Case Management Statement (Standing Order for All Judges of the Northern…",
+    "actor": "you",
+    "source": "/documents/matter-29/Dkt 09 - Order Setting Initial CMC and ADR Deadlines (Filed Sep 3 2026).pdf"
+  },
+  {
+    "id": "29-deadline-3",
+    "date": "2026-11-10",
+    "date_label": "Nov. 10, 2026",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": 9,
+    "title": "Deadline to file ADR Certification (ADR L.R. 3) and to meet and confer regarding initial disclosures, early settlement, ADR process selection, and a discovery…",
+    "actor": "you",
+    "source": "/documents/matter-29/Dkt 09 - Order Setting Initial CMC and ADR Deadlines (Filed Sep 3 2026).pdf"
+  },
+  {
+    "id": "29-deadline-4",
+    "date": "2026-09-22",
+    "date_label": "Sep. 22, 2026",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": 7,
+    "title": "Accurate Background LLC responsive pleading deadline (extended) — Newanforbi v. Amazon.com Services, LLC et al. (Matter 29, N.D. Cal. No. 4:26-cv-09249-ASK).…",
+    "actor": "opposing",
+    "source": "/documents/matter-29/Dkt 07 - Stipulation to Extend Time for Accurate Background to Respond (Filed Sep 2 2026).pdf"
+  },
+  {
+    "id": "29-deadline-5",
+    "date": "2026-09-22",
+    "date_label": "Sep. 22, 2026",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": 6,
+    "title": "Amazon.com Services, LLC responsive pleading deadline (extended) — Newanforbi v. Amazon.com Services, LLC et al. (Matter 29, N.D. Cal. No. 4:26-cv-09249-ASK).…",
+    "actor": "opposing",
+    "source": "/documents/matter-29/Dkt 06 - Stipulation to Extend Time for Amazon to Respond (Filed Sep 1 2026).pdf"
+  },
+  {
+    "id": "29-deadline-6",
+    "date": "2026-09-30",
+    "date_label": "Sep. 30, 2026",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": 1,
+    "title": "28 U.S.C. §1447(c) remand window closes (computed) — Newanforbi v. Amazon.com Services, LLC et al., USDC N.D. Cal. No. 3:26-cv-09249-ASK. Thirty days from the…",
+    "actor": "you",
+    "source": "/documents/matter-29/Dkt 01 - Notice of Removal (Filed Aug 31 2026).pdf"
+  }
+]

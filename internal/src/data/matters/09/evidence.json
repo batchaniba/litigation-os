@@ -1,0 +1,30 @@
+[
+  {
+    "id": "e01",
+    "label": "Admin. Record",
+    "path": null,
+    "what_it_proves": "Admin. Record",
+    "transcript_path": null
+  },
+  {
+    "id": "e02",
+    "label": "Form 1502-DR",
+    "path": null,
+    "what_it_proves": "Form 1502-DR",
+    "transcript_path": null
+  },
+  {
+    "id": "e03",
+    "label": "Opening Brief",
+    "path": null,
+    "what_it_proves": "Opening Brief",
+    "transcript_path": null
+  },
+  {
+    "id": "e04",
+    "label": "Proof of Service (04/13/2026)",
+    "path": null,
+    "what_it_proves": "Proof of Service (04/13/2026)",
+    "transcript_path": null
+  }
+]

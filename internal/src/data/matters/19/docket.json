@@ -1,0 +1,20 @@
+[
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "court",
+    "type": "order",
+    "title": "Newanforbi Habeas - Santa Clara Sup Ct - Order Extending Time Jul 2 2026",
+    "path": "/documents/opinions/Newanforbi Habeas - Santa Clara Sup Ct - Order Extending Time Jul 2 2026.pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "other",
+    "title": "HC-004 Notice and Request for Ruling (Habeas Corpus, Executed Sep 1 2026)",
+    "path": "/documents/matter-19/HC-004 Notice and Request for Ruling (Habeas Corpus, Executed Sep 1 2026).pdf",
+    "filed": true
+  }
+]

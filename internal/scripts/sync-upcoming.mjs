@@ -2,8 +2,8 @@
 // ==========================================================
 // Build light upcoming-deadline list for the SPA shell bundle.
 //
-// Full timeline stays in timeline.json and is only imported by
-// route/search chunks that need the complete event log.
+// Live calendar is clocks.json (open/set, dated, including overdue).
+// timeline.json stays the archive; CourtListener still writes it.
 //
 // Usage:
 //   npm run sync:upcoming           # write upcoming.json
@@ -12,25 +12,17 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { MATTERS_DIR } from "./load-matters.mjs";
+import { loadAllClocks } from "./lib/load-clocks.mjs";
+import { todayKey } from "./lib/next-actions.mjs";
+import { clocksToUpcomingEvents } from "./lib/upcoming-from-clocks.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = path.resolve(__dirname, "../src/data");
-const TIMELINE = path.join(DATA_DIR, "timeline.json");
 const OUT = path.join(DATA_DIR, "upcoming.json");
 const checkOnly = process.argv.includes("--check");
 
-if (!fs.existsSync(TIMELINE)) {
-  console.error(`Missing ${path.relative(process.cwd(), TIMELINE)}`);
-  process.exit(1);
-}
-
-const timeline = JSON.parse(fs.readFileSync(TIMELINE, "utf8"));
-if (!Array.isArray(timeline)) {
-  console.error("timeline.json must be an array");
-  process.exit(1);
-}
-
-const upcoming = timeline.filter((event) => event?.upcoming === true);
+const upcoming = clocksToUpcomingEvents(loadAllClocks(MATTERS_DIR), { today: todayKey() });
 const payload = `${JSON.stringify(upcoming, null, 2)}\n`;
 
 if (checkOnly) {

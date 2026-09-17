@@ -1,0 +1,24 @@
+[
+  {
+    "id": "30-deadline-1",
+    "date": "2026-09-16",
+    "date_label": "Sep. 16, 2026",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": null,
+    "title": "Anticipated filing date (computed) — Complaint v9 (Moua and DOES 1-10), Newanforbi v. Moua, et al. (Matter 30); 15 days after the anticipated Sep. 1, 2026…",
+    "actor": "agency",
+    "source": "/documents/matter-30/Complaint v9 Newanforbi v Moua NDCAL.pdf"
+  },
+  {
+    "id": "30-deadline-2",
+    "date": "2027-03-01",
+    "date_label": "Mar. 1, 2027",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": null,
+    "title": "OUTER STATUTE OF LIMITATIONS (computed) — Government Claims Act six-month suit-filing window for the Bane Act and IIED state-law claims, Newanforbi v. Moua, et…",
+    "actor": "agency",
+    "source": "/documents/matter-30/Complaint v9 Newanforbi v Moua NDCAL.pdf"
+  }
+]

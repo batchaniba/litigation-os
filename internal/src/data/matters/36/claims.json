@@ -1,0 +1,65 @@
+{
+  "summary": "FCRA § 1681b(b)(3); ICRAA § 1786.40; CCRAA § 1785.20.5 (alternative); Breach of Contract; Implied Covenant; Promissory Estoppel; Negligent Misrepresentation; Fraud / Concealment; UCL § 17200; Penal Code § 290.46(j)",
+  "counts": [
+    {
+      "id": 1,
+      "status": "live",
+      "theory_ids": [],
+      "title": "[PLEADED ON INFORMATION AND BELIEF] FCRA, 15 U.S.C. § 1681b(b)(3)(A) — against AT&T if a consumer report contributed to rescission; invites federal-question removal; Plaintiff confirms no report/rights notice arrived before 12:23 p.m.; § 1681b(b)(2) standalone disclosure reserved until the authorization package is in hand"
+    },
+    {
+      "id": 2,
+      "status": "live",
+      "theory_ids": [],
+      "title": "[INDEPENDENT PATH] ICRAA, Civ. Code §§ 1786.40 and 1786.50 — against AT&T as user; vendor First Advantage is not a named defendant; same-day screen, no 1786.40 advice at rescission; §§ 1786.10 / 1786.22 inspection not yet demanded; 1786.16 reserved until the exact authorization package is in hand"
+    },
+    {
+      "id": 3,
+      "status": "live",
+      "theory_ids": [],
+      "title": "[ALTERNATIVE] CCRAA, Civ. Code §§ 1785.20.5 and 1785.31 — if the First Advantage product was an ordinary consumer credit report rather than investigative; no copy or rights notice before 12:23"
+    },
+    {
+      "id": 4,
+      "status": "live",
+      "theory_ids": [],
+      "title": "[ALTERNATIVE] Breach of Written Contract and Implied Covenant — Plaintiff accepted through Workday and began onboarding"
+    },
+    {
+      "id": 5,
+      "status": "live",
+      "theory_ids": [],
+      "title": "[ALTERNATIVE] Promissory Estoppel — official offer, compensation, tentative start date, accepted onboarding, and reliance"
+    },
+    {
+      "id": 6,
+      "status": "live",
+      "theory_ids": [],
+      "title": "[ALTERNATIVE] Negligent Misrepresentation — official offer after assessment period if AT&T already treated the Spanish result as disqualifying or lacked grounds to represent approval"
+    },
+    {
+      "id": 7,
+      "status": "live",
+      "theory_ids": [],
+      "title": "[ALTERNATIVE / DISCOVERY DEPENDENT] Intentional Misrepresentation and Concealment — requires internal proof of knowledge, intent, reliance, and managing-agent involvement for corporate punitive damages"
+    },
+    {
+      "id": 8,
+      "status": "live",
+      "theory_ids": [],
+      "title": "[DERIVATIVE / EQUITABLE] UCL § 17200 — unlawful, unfair, and fraudulent prongs; restitution limited to vested money/property and injunction subject to standing and adequate-remedy proof"
+    },
+    {
+      "id": 9,
+      "status": "live",
+      "theory_ids": [],
+      "title": "[PLEADED ON INFORMATION AND BELIEF] Penal Code § 290.46(j) — last count on page one; two-hour chronology, First Advantage order, contemporaneous Megan's Law listing, and absence of required adverse-action notices; AT&T report is not attached; Lerma cannot be decided on the face of this complaint"
+    },
+    {
+      "id": 10,
+      "status": "live",
+      "theory_ids": [],
+      "title": "[PRESERVED, NOT PLEADED] FEHA and Fair Chance Act — do not plead without CRD exhaustion/right-to-sue and supporting score or criminal-history-use evidence"
+    }
+  ]
+}

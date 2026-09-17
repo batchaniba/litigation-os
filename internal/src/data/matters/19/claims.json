@@ -1,0 +1,35 @@
+{
+  "summary": "Habeas Corpus — Immediate Discharge from Parole (Pen. Code §1473; PC §§3000, 3001, 3008(d)(2); 15 CCR §3574)",
+  "counts": [
+    {
+      "id": 1,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Habeas Corpus — Immediate and Unconditional Discharge from Parole (Pen. Code §1473)"
+    },
+    {
+      "id": 2,
+      "status": "live",
+      "theory_ids": [],
+      "title": "CDCR Policy 19-03 is an invalid underground regulation (Gov. Code §11342.600; Tidewater Marine v. Bradshaw) and exceeds statutory authority under PC §3008(d)(2)"
+    },
+    {
+      "id": 3,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Use of obsolete Form 1502-DR instead of mandated Form 3043 violates 15 CCR §3574(f) (Accardi doctrine)"
+    },
+    {
+      "id": 4,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Substantive Due Process — no individualized finding of current dangerousness (In re Lawrence; In re Taylor)"
+    },
+    {
+      "id": 5,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Procedural Due Process — no notice, no hearing, no neutral decision-maker, no CTM meeting"
+    }
+  ]
+}

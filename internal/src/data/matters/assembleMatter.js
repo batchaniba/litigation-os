@@ -18,7 +18,7 @@ export const SPLIT_JSON_FILES = [
   "evidence.json",
 ];
 
-export const SPLIT_OPTIONAL_JSON = ["prose.json"];
+export const SPLIT_OPTIONAL_JSON = ["prose.json", "documents.json"];
 
 export const EVENTS_FILE = "events.jsonl";
 
@@ -107,6 +107,7 @@ function riskToString(damages, matter, fallback) {
  *   damages?: object|string,
  *   evidence?: object[]|string[],
  *   prose?: object,
+ *   documents?: object[],
  * }} parts
  */
 export function assembleSplitMatter(parts) {
@@ -118,7 +119,8 @@ export function assembleSplitMatter(parts) {
   const parties = isObj(parts.parties) ? parts.parties : {};
   const counsel = isObj(parts.counsel) ? parts.counsel : {};
 
-  const documents = docketToDocuments(docket);
+  const inventory = docketToDocuments(asArray(parts.documents));
+  const documents = inventory.length ? inventory : docketToDocuments(docket);
   const evidenceStrings = evidenceToStrings(evidence);
   const causes = claimsToCauses(claims);
   const appearances = asArray(counsel.appearances);

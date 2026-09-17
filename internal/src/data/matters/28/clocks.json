@@ -1,0 +1,35 @@
+[
+  {
+    "id": "28-deadline-1",
+    "date": "2026-09-21",
+    "date_label": "Sep. 21, 2026",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": null,
+    "title": "Responsive pleading deadline (computed) — Shannon Smith, LCSW, and HOPE Psychotherapy, Inc., Newanforbi v. Shannon Smith, LCSW, CEO, et al.…",
+    "actor": "opposing",
+    "source": "/documents/matter-28/Proof of Service - SLB Accepted Service for Smith and HOPE (N.D. Cal. 3-26-cv-07504-LJC) (Sep 2 2026).pdf"
+  },
+  {
+    "id": "28-deadline-2",
+    "date": "2026-10-15",
+    "date_label": "Oct. 15, 2026",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": 1,
+    "title": "Case Management Statement due — Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504), USDC N.D. Cal.",
+    "actor": "you",
+    "source": "/documents/matter-28/Service Packet Emailed to SLB (Issued Summons Complaint Dkt 1-1 Dkt 4 Dkt 11) (Aug 31 2026).pdf"
+  },
+  {
+    "id": "28-hearing-3",
+    "date": "2026-10-22",
+    "date_label": "Oct. 22, 2026",
+    "kind": "hearing",
+    "status": "open",
+    "source_dkt": 1,
+    "title": "Initial Case Management Conference — Newanforbi v. Shannon Smith, LCSW, CEO, et al. (3:26-cv-07504), 1:30 PM, Hon. Lisa J. Cisneros, San Francisco…",
+    "actor": "you",
+    "source": "/documents/matter-28/Service Packet Emailed to SLB (Issued Summons Complaint Dkt 1-1 Dkt 4 Dkt 11) (Aug 31 2026).pdf"
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "defendants_label": "Ross Stores, Inc. (Delaware corporation; CA SOS State ID 01642535; 5130 Hacienda Drive, Dublin, CA 94568); Ross Dress for Less, Inc. (Virginia corporation; CA Doc. No. 2642531; same Dublin HQ; owns/operates Sunnyvale Store); DOE 1 (white female loss-prevention employee ~55 who blocked Plaintiff's exit); and DOES 2 through 20, inclusive (cashier and other agents/employees whose true names are unknown). Agent for service (info. and belief): C T Corporation System, 330 N. Brand Blvd., Suite 700, Glendale, CA 91203.",
+  "serviceTracking": [
+    {
+      "name": "Ross Stores, Inc.",
+      "title": "Corporate Defendant (agent for service — C T Corporation System, info. and belief)",
+      "location": "Glendale, CA (C T Corporation System)",
+      "served": false,
+      "dateServed": null,
+      "note": "Serve Complaint + issued Summons + ADR Information Sheet + clerk-stamped CV-5012 by ~Oct. 25, 2026 (60 days from Aug. 26 filing); then file POS-010."
+    },
+    {
+      "name": "Ross Dress for Less, Inc.",
+      "title": "Corporate Defendant (agent for service — C T Corporation System, info. and belief)",
+      "location": "Glendale, CA (C T Corporation System)",
+      "served": false,
+      "dateServed": null,
+      "note": "Same service packet and deadline as Ross Stores, Inc."
+    }
+  ]
+}

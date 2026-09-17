@@ -1,0 +1,59 @@
+{
+  "summary": "Writ of Mandate, False Imprisonment, Bane Act, IIED, Negligent Supervision",
+  "counts": [
+    {
+      "id": 1,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Writ of Mandate (CCP §1085)"
+    },
+    {
+      "id": 2,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Declaratory Relief (CCP §1060)"
+    },
+    {
+      "id": 3,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Injunctive Relief"
+    },
+    {
+      "id": 4,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Violation of California Constitution Article I, §13"
+    },
+    {
+      "id": 5,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Violation of California Constitution Article I, §7"
+    },
+    {
+      "id": 6,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Tom Bane Civil Rights Act (Civ. Code §52.1)"
+    },
+    {
+      "id": 7,
+      "status": "live",
+      "theory_ids": [],
+      "title": "False Imprisonment"
+    },
+    {
+      "id": 8,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Intentional Infliction of Emotional Distress"
+    },
+    {
+      "id": 9,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Negligent Violation of Mandatory Duty (Gov. Code §815.6)"
+    }
+  ]
+}

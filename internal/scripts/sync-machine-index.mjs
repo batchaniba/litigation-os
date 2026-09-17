@@ -7,81 +7,15 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadMatters, MATTERS_DIR } from "./load-matters.mjs";
-import { dateKeyFromLabel, todayKey } from "./lib/next-actions.mjs";
-import { GRAPH_CONTRACT, loadJsonIfPresent, paddedMatterNumber } from "./lib/matter-layout.mjs";
-import { matterRefsInclude } from "../src/utils/matterRefs.js";
+import { todayKey } from "./lib/next-actions.mjs";
+import { loadJsonIfPresent, paddedMatterNumber } from "./lib/matter-layout.mjs";
+import { nextFromClocks } from "./lib/upcoming-from-clocks.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(__dirname, "../..");
 const INDEX_DIR = path.join(REPO_ROOT, "internal/src/data/index");
-const TIMELINE_PATH = path.join(REPO_ROOT, "internal/src/data/timeline.json");
 const CROSS_PATH = path.join(REPO_ROOT, "internal/src/data/crossMatter.json");
 const checkOnly = process.argv.includes("--check");
-
-const CLOCK_RANK = {
-  open: 0,
-  set: 0,
-  overdue: 0,
-  contingent: 2,
-  undated: 3,
-  vacated: 9,
-  satisfied: 9,
-};
-
-function clockSortDate(clock) {
-  return clock.date || clock.date_label || "9999-99-99";
-}
-
-function liveClocks(clocks) {
-  return clocks.filter((c) => !["vacated", "satisfied"].includes(c.status));
-}
-
-function nextFromClocks(clocks, today) {
-  const live = liveClocks(clocks).slice().sort((a, b) => {
-    const rank = (CLOCK_RANK[a.status] ?? 5) - (CLOCK_RANK[b.status] ?? 5);
-    if (rank) return rank;
-    return String(clockSortDate(a)).localeCompare(String(clockSortDate(b)));
-  });
-  const dated = live.find((c) => c.date);
-  const chosen = dated ?? live[0] ?? null;
-  if (!chosen) return { next_clock: null, overdue: false };
-  const overdue = Boolean(chosen.date && chosen.date < today && chosen.status !== "contingent");
-  return {
-    next_clock: {
-      id: chosen.id,
-      date: chosen.date ?? null,
-      kind: chosen.kind,
-      status: overdue ? "overdue" : chosen.status,
-      title: chosen.title,
-      source_dkt: chosen.source_dkt ?? null,
-    },
-    overdue,
-  };
-}
-
-function nextFromTimeline(timeline, number, today) {
-  const rows = timeline.filter(
-    (row) => row.upcoming === true && matterRefsInclude(row.matters, number),
-  );
-  const dated = rows
-    .map((row) => ({ row, date: dateKeyFromLabel(row.date) }))
-    .filter((x) => x.date)
-    .sort((a, b) => a.date.localeCompare(b.date));
-  const chosen = dated[0];
-  if (!chosen) return { next_clock: null, overdue: false };
-  const overdue = chosen.date < today;
-  return {
-    next_clock: {
-      id: null,
-      date: chosen.date,
-      kind: chosen.row.type ?? "event",
-      status: overdue ? "overdue" : "open",
-      title: String(chosen.row.event ?? "").slice(0, GRAPH_CONTRACT.indexNextClockTitleChars),
-      source_dkt: null,
-    },
-    overdue,
-  };
-}
 
 function writeIfChanged(filePath, payload) {
   const next = `${JSON.stringify(payload, null, 2)}\n`;
@@ -98,7 +32,6 @@ function writeIfChanged(filePath, payload) {
 }
 
 const matters = loadMatters();
-const timeline = JSON.parse(fs.readFileSync(TIMELINE_PATH, "utf8"));
 const cross = JSON.parse(fs.readFileSync(CROSS_PATH, "utf8"));
 const today = todayKey();
 
@@ -112,9 +45,7 @@ const indexMatters = matters.map((m) => {
     layout === "split"
       ? loadJsonIfPresent(path.join(MATTERS_DIR, paddedMatterNumber(m.number), "clocks.json")) ?? []
       : [];
-  const fromClocks = layout === "split" ? nextFromClocks(clocks, today) : { next_clock: null, overdue: false };
-  const fromTimeline = nextFromTimeline(timeline, m.number, today);
-  const picked = fromClocks.next_clock ? fromClocks : fromTimeline;
+  const { next_clock, overdue } = nextFromClocks(clocks, today);
   const files =
     layout === "split"
       ? fs.readdirSync(path.join(MATTERS_DIR, paddedMatterNumber(m.number))).sort()
@@ -133,8 +64,8 @@ const indexMatters = matters.map((m) => {
     lifecycle: m.lifecycle,
     proceeding: m.proceeding,
     phase: m.phase,
-    next_clock: picked.next_clock,
-    overdue: picked.overdue,
+    next_clock,
+    overdue,
     last_updated: m.last_updated ?? null,
     files,
   };

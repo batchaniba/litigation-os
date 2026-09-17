@@ -45,6 +45,45 @@ describe("machine-first matter graph", () => {
     expect(GRAPH_CONTRACT.eventsLineCeiling).toBeNull();
   });
 
+  it("splits every numbered matter; leftover NN.json is not the layout", () => {
+    const leftovers = fs
+      .readdirSync(MATTERS_DIR)
+      .filter((name) => /^\d{2}\.json$/.test(name));
+    expect(leftovers).toEqual([]);
+    expect(matters.every((m) => m.__layout === "split")).toBe(true);
+    for (const matter of matters) {
+      const dir = path.join(MATTERS_DIR, String(matter.number).padStart(2, "0"));
+      for (const name of ["matter.json", "docket.json", "clocks.json", "documents.json", "events.jsonl"]) {
+        expect(fs.existsSync(path.join(dir, name)), `matter ${matter.number} ${name}`).toBe(true);
+      }
+    }
+  });
+
+  it("keeps Matter 24 docket as pleadings, inventory in documents.json", () => {
+    const dir = path.join(MATTERS_DIR, "24");
+    const docket = JSON.parse(fs.readFileSync(path.join(dir, "docket.json"), "utf8"));
+    const documents = JSON.parse(fs.readFileSync(path.join(dir, "documents.json"), "utf8"));
+    expect(docket.length).toBeLessThan(documents.length);
+    expect(docket.every((row) => !/\.(jpe?g|png|gif|webp)$/i.test(row.path ?? ""))).toBe(true);
+    const assembled = matters.find((m) => m.number === 24);
+    expect(assembled.documents.length).toBe(documents.length);
+  });
+
+  it("prefers documents.json inventory over docket rows for the SPA file list", () => {
+    const assembled = assembleSplitMatter({
+      matter: { number: 99, procedural_status: "see clocks" },
+      docket: [{ path: "/documents/matter-99/complaint.pdf", filed: true, dkt: 1 }],
+      documents: [
+        { path: "/documents/matter-99/complaint.pdf", filed: true },
+        { path: "/documents/matter-99/mailing.jpg" },
+      ],
+    });
+    expect(assembled.documents).toEqual([
+      { path: "/documents/matter-99/complaint.pdf", filed: true },
+      { path: "/documents/matter-99/mailing.jpg" },
+    ]);
+  });
+
   it("does not fold prose.json into the assembled projection", () => {
     const assembled = assembleSplitMatter({
       matter: {

@@ -1,18 +1,9 @@
 /**
- * Length budgets for the free-prose matter fields on **legacy** NN.json files.
+ * Advisory length budgets for free-prose matter fields.
  *
- * Split matters (`NN/matter.json` plus sibling tables) are not under these
- * word ceilings. Split a matter when you touch it. `events.jsonl` is
- * append-only. `docket.json` has no line cap.
- *
- * `status_label` remains a 60-char UI chip on every matter.
- *
- * Two levels on legacy prose, deliberately:
- *   target  — authoring length. Exceeding it is a validator warning.
- *   ceiling — ratchet pinned just above today's worst unsplit record.
- *
- * Dated docket entries do not belong in `procedural_status` / `status` — they
- * belong in clocks.json / events.jsonl / timeline.json.
+ * Every numbered matter is split. Word counts are not a schema fail —
+ * run `npm run report:prose`. `events.jsonl` is append-only. `docket.json`
+ * has no line cap. `status_label` remains a 60-char UI chip.
  */
 
 export interface ProseBudget {

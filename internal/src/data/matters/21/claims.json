@@ -1,0 +1,17 @@
+{
+  "summary": "42 USC 1983: Free Exercise Clause (First Amendment), Due Process (Fourteenth Amendment)",
+  "counts": [
+    {
+      "id": 1,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Count I — Violation of Free Exercise Clause (First Amendment)"
+    },
+    {
+      "id": 2,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Count II — Violation of Due Process Clause (Fourteenth Amendment)"
+    }
+  ]
+}

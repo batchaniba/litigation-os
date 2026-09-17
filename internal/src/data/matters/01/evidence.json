@@ -1,0 +1,86 @@
+[
+  {
+    "id": "e01",
+    "label": "CHP arrest report",
+    "path": null,
+    "what_it_proves": "CHP arrest report",
+    "transcript_path": null
+  },
+  {
+    "id": "e02",
+    "label": "Chemical test advisements",
+    "path": null,
+    "what_it_proves": "Chemical test advisements",
+    "transcript_path": null
+  },
+  {
+    "id": "e03",
+    "label": "Administrative chemical refusal designation",
+    "path": null,
+    "what_it_proves": "Administrative chemical refusal designation",
+    "transcript_path": null
+  },
+  {
+    "id": "e04",
+    "label": "Class A CDL suspension record (through February 2026)",
+    "path": null,
+    "what_it_proves": "Class A CDL suspension record (through February 2026)",
+    "transcript_path": null
+  },
+  {
+    "id": "e05",
+    "label": "Field sobriety test results",
+    "path": null,
+    "what_it_proves": "Field sobriety test results",
+    "transcript_path": null
+  },
+  {
+    "id": "e06",
+    "label": "Rental Tesla Model Y (vehicle)",
+    "path": null,
+    "what_it_proves": "Rental Tesla Model Y (vehicle)",
+    "transcript_path": null
+  },
+  {
+    "id": "e07",
+    "label": "Empty container recovered during warrantless search",
+    "path": null,
+    "what_it_proves": "Empty container recovered during warrantless search",
+    "transcript_path": null
+  },
+  {
+    "id": "e08",
+    "label": "DA declination to file charges",
+    "path": null,
+    "what_it_proves": "DA declination to file charges",
+    "transcript_path": null
+  },
+  {
+    "id": "e09",
+    "label": "CHP Video Transcript (Exhibit A — dashcam footage)",
+    "path": null,
+    "what_it_proves": "CHP Video Transcript (Exhibit A — dashcam footage)",
+    "transcript_path": null
+  },
+  {
+    "id": "e10",
+    "label": "CHP Discovery Response",
+    "path": null,
+    "what_it_proves": "CHP Discovery Response",
+    "transcript_path": null
+  },
+  {
+    "id": "e11",
+    "label": "CHP post-incident correspondence (characterizing arrest as 'detention')",
+    "path": null,
+    "what_it_proves": "CHP post-incident correspondence (characterizing arrest as 'detention')",
+    "transcript_path": null
+  },
+  {
+    "id": "e12",
+    "label": "Centerline Wage Reference (CDL wage documentation)",
+    "path": null,
+    "what_it_proves": "Centerline Wage Reference (CDL wage documentation)",
+    "transcript_path": null
+  }
+]

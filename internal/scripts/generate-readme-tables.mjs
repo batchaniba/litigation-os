@@ -3,8 +3,9 @@
 // Regenerate marked README sections from portfolio data.
 //
 // Source of truth:
-//   - internal/src/data/matters/NN.json or NN/  (matter tables + counts)
-//   - internal/src/data/timeline.json    (upcoming deadlines)
+//   - internal/src/data/matters/NN/      (matter tables + counts)
+//   - internal/src/data/matters/NN/clocks.json  (upcoming deadlines)
+//   - internal/src/data/timeline.json    (status-label derivation; archive)
 //   - internal/src/data/damages.js       (damages summary + aggregates)
 //   - internal/src/data/lawyerFees.js    (attorney-fees cluster table)
 //
@@ -20,7 +21,10 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
-import { loadMatters } from "./load-matters.mjs";
+import { loadMatters, MATTERS_DIR } from "./load-matters.mjs";
+import { loadAllClocks } from "./lib/load-clocks.mjs";
+import { todayKey } from "./lib/next-actions.mjs";
+import { clocksToUpcomingEvents } from "./lib/upcoming-from-clocks.mjs";
 import { isSettledLifecycle, lifecycleLabel, readmeBucket } from "./matter-lifecycle.mjs";
 import { effectiveStatusLabel } from "./status-label.mjs";
 import { formatMatterRefs, parseMatterRefs } from "../src/utils/matterRefs.js";
@@ -219,8 +223,7 @@ const closedTable = [
   ),
 ].join("\n");
 
-const upcoming = timeline
-  .filter((t) => t.upcoming === true)
+const upcoming = clocksToUpcomingEvents(loadAllClocks(MATTERS_DIR), { today: todayKey() })
   .map((t, i) => ({ ...t, _i: i, _d: parsePortfolioDate(t.date) }))
   .sort((a, b) => {
     if (a._d && b._d) return a._d - b._d || a._i - b._i;
