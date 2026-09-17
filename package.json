@@ -20,6 +20,8 @@
     "court:reconcile": "node internal/scripts/courtlistener/reconcile-timeline.mjs",
     "court:resolve": "node internal/scripts/courtlistener/resolve-dockets.mjs",
     "court:sync": "node internal/scripts/courtlistener/sync-dockets.mjs",
+    "deps:outdated": "node internal/scripts/deps-outdated.mjs",
+    "deps:update": "node internal/scripts/deps-outdated.mjs --apply",
     "dev": "vite",
     "docs:fetch": "node internal/scripts/fetch-doc.mjs",
     "q": "node internal/scripts/q.mjs",

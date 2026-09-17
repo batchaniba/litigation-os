@@ -103,8 +103,35 @@ Laptop jobs that used to be Actions:
 | R2 upload + path index | `npm run documents:push` |
 | Worker deploy | `cd workers/doc-api && wrangler deploy` |
 | D1 reseed | `node workers/doc-api/seed.mjs > seed.sql` then POST `/admin/reseed` |
+| Dependency report | `npm run deps:outdated` |
+| In-range npm bump | `npm run deps:update` |
 
-Do not add workflow YAML. Do not add Dependabot.
+Do not add workflow YAML. Do not add `.github/dependabot.yml`. Dependabot
+version updates now run on GitHub Actions runners and a spending limit that
+blocks Actions will block them (or put jobs back in the Actions tab).
+
+## Dependency updates (no Actions)
+
+Weekly on the laptop:
+
+```bash
+npm run deps:outdated   # npm wanted/latest + requirements.txt floors vs PyPI
+npm run deps:update     # npm update (lockfile, in-range only)
+```
+
+Majors are printed, not applied. Keep peer groups together (React stack,
+Vitest stack). TypeScript majors stay ignored until typescript-eslint peers
+TS 7+. `deps:outdated` exits 1 when something is stale so a missed week is
+visible. Python floors live in `requirements.txt`; bump the `>=` line by
+hand after the report.
+
+Optional PR factory, still off Actions: install the
+[Mend Renovate GitHub App](https://github.com/apps/renovate) on **this
+repository only**, choose **Renovate only**, and leave GitHub Actions
+disabled. Mend hosts the scan; `.github/renovate.json` already encodes the old
+Dependabot groups (weekly npm, monthly pip, no `github-actions` manager).
+Mend clones the private repo for the scan and deletes it afterward — if
+that is unacceptable, stay on the laptop commands.
 
 
 ## Testing

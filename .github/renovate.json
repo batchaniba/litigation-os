@@ -1,0 +1,69 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "enabledManagers": ["npm", "pip_requirements"],
+  "timezone": "America/Los_Angeles",
+  "schedule": ["* 6-9 * * 1"],
+  "prConcurrentLimit": 8,
+  "rebaseWhen": "conflicted",
+  "rangeStrategy": "bump",
+  "labels": ["dependencies"],
+  "dependencyDashboard": true,
+  "pip_requirements": {
+    "fileMatch": ["(^|/)requirements\\.txt$"],
+    "schedule": ["* 6-9 1 * *"]
+  },
+  "packageRules": [
+    {
+      "description": "typescript-eslint@8 peers typescript <6.1",
+      "matchPackageNames": ["typescript"],
+      "matchUpdateTypes": ["major"],
+      "enabled": false
+    },
+    {
+      "groupName": "dev-tooling",
+      "matchPackageNames": [
+        "/^eslint/",
+        "/^@eslint\\//",
+        "typescript-eslint",
+        "/^@testing-library\\//",
+        "jsdom",
+        "globals"
+      ],
+      "matchUpdateTypes": ["minor", "patch"]
+    },
+    {
+      "groupName": "build-tooling",
+      "matchPackageNames": ["vite", "/^@vitejs\\//", "typescript"],
+      "matchUpdateTypes": ["minor", "patch"]
+    },
+    {
+      "groupName": "react-ecosystem",
+      "matchPackageNames": [
+        "react",
+        "react-dom",
+        "/^react-router/",
+        "@types/react",
+        "@types/react-dom"
+      ],
+      "matchUpdateTypes": ["minor", "patch"]
+    },
+    {
+      "description": "Keep peer-locked Vitest updates together",
+      "groupName": "vitest-stack",
+      "matchPackageNames": ["vitest", "/^@vitest\\//"]
+    },
+    {
+      "description": "react-router v8 peers react/react-dom directly",
+      "groupName": "react-stack",
+      "matchPackageNames": [
+        "react",
+        "react-dom",
+        "/^react-router/",
+        "@types/react",
+        "@types/react-dom"
+      ],
+      "matchUpdateTypes": ["major"]
+    }
+  ]
+}

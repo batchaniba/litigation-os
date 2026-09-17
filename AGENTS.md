@@ -69,6 +69,7 @@ Laptop replacements (need the relevant env, never paste keys into chat):
 - R2 bytes + path index: `npm run documents:push` (`R2_*` from `~/.config/r2/env`)
 - Worker: `cd workers/doc-api && wrangler deploy`
 - D1: `node workers/doc-api/seed.mjs > seed.sql`, then POST `/admin/reseed`
+- Dependencies: `npm run deps:outdated` / `npm run deps:update` (do not restore Dependabot; it runs on Actions runners). Optional PR factory is the Mend Renovate GitHub App + `.github/renovate.json`, not a workflow.
 
 Production deploys are the Vercel Deploy Hook from the Cloudflare cron, not
 per-push; see `internal/docs/VERCEL_DEPLOYS.md`.
