@@ -1,0 +1,32 @@
+---
+description: External AIs get the doc-api Worker URL, never R2 admin keys.
+alwaysApply: true
+---
+
+# Worker, not keys — LOCKED
+
+Do not give ChatGPT, Grok, or any third-party chat R2 admin keys, Cloudflare
+account credentials, or `~/.config/r2/env`. Point them at the Worker:
+
+`https://litigation-doc-api.ss8sxswwkt.workers.dev`
+
+Read routes (HTTPS, no credentials): `/health`, `/matters`, `/matters/<n>`,
+`/fuse`, `/upcoming`, `/doc/<sha256>`, `/doc/<sha256>/meta`,
+`/documents/<path>`.
+
+The Worker is the API in front of R2. Keys stay server-side in the `DOCS`
+binding. Pasting admin keys into a chatbot sends them to someone else's
+servers, into logs, possibly into training data. There is no unsee.
+
+- **Cursor on the laptop:** source `~/.config/r2/env` for writes
+  (`documents:push`), or call the Worker like everyone else for reads.
+  No keys in chat, no git, no Actions.
+- **If a chat needs a secret at all:** one rotatable Worker bearer on the
+  read routes — not the Cloudflare keys. If something truly needs direct
+  R2, mint a **read-only** token scoped to `litigation-documents` and
+  revoke it if it leaks. Never share the admin pair.
+- Admin keys live in exactly two places: the laptop `~/.config/r2/env`
+  (mode 600) and the Worker's bindings.
+
+Portfolio-wide. Cursor, Claude Code, Copilot, and any other agent reading
+this repo.

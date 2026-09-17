@@ -55,6 +55,19 @@ Never put a GitHub, `raw.githubusercontent.com`, git-repo, or document-store
 URL in anything Plaintiff will send or file. Attach the file. A download
 link in the agent chat for him is fine. It does not go in the email.
 
+## Worker, not keys
+
+Do not give ChatGPT, Grok, or any third-party chat R2 admin keys or
+`~/.config/r2/env`. Point them at
+`https://litigation-doc-api.ss8sxswwkt.workers.dev`
+(`/matters`, `/fuse`, `/doc/<sha256>`, `/doc/<sha256>/meta`, `/documents/<path>`).
+The Worker binds R2; keys stay server-side. Cursor reads `~/.config/r2/env`
+for writes or calls the Worker for reads. If a chat needs a secret, a
+rotatable Worker bearer — never the Cloudflare admin pair. Direct R2, if
+ever: a read-only token scoped to `litigation-documents`. Admin keys live
+in exactly two places: the laptop env file and the Worker's bindings.
+See `.cursor/rules/worker-not-keys.mdc`.
+
 ## No GitHub Actions
 
 Do not add `.github/workflows/`. The spending limit already refuses every job.
@@ -63,7 +76,7 @@ The checks the old CI job ran live in the `pre-push` hook (installed by
 the unit suite, and the fabricated-citation gate. Before opening a PR, run
 `npm run validate` yourself and say so in the PR body.
 
-Laptop replacements (need the relevant env, never paste keys into chat):
+Laptop replacements (never paste keys into chat; other AIs get the Worker URL, not `R2_*`):
 
 - CourtListener: `npm run court:sync -- --bootstrap` (token in gitignored `.env`)
 - R2 bytes + path index: `npm run documents:push` (`R2_*` from `~/.config/r2/env`)
