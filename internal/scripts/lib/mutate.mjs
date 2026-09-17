@@ -13,7 +13,7 @@ import path from "node:path";
 import { execFileSync } from "node:child_process";
 import { todayKey, dateKeyFromLabel, ACTORS } from "./next-actions.mjs";
 import { validateMatter } from "./matter-schema.mjs";
-import { loadSplitMatter } from "./matter-layout.mjs";
+import { loadSplitMatter, paddedMatterNumber } from "./matter-layout.mjs";
 import { MATTER_LIFECYCLES } from "../matter-lifecycle.mjs";
 import { MATTER_PHASES } from "../matter-proceeding.mjs";
 import { keyForSha256 } from "./r2-client.mjs";
@@ -55,12 +55,14 @@ function parseDateInput(value) {
   return { key, label: String(value).trim() };
 }
 
+function splitDirRel(n) {
+  return `internal/src/data/matters/${paddedMatterNumber(n)}`;
+}
+
 function matterFileRel(n) {
   const m = matterByNumber(n);
   if (!m) fail(`no matter ${n} in index`);
-  return m.layout === "split"
-    ? `internal/src/data/matters/${m.number}/matter.json`
-    : m.path;
+  return m.layout === "split" ? `${splitDirRel(n)}/matter.json` : m.path;
 }
 
 function bumpLastUpdated(n) {
@@ -72,7 +74,7 @@ function bumpLastUpdated(n) {
 
 const splitRows = (n) =>
   fs
-    .readFileSync(path.join(REPO_ROOT, `internal/src/data/matters/${n}/events.jsonl`), "utf8")
+    .readFileSync(path.join(REPO_ROOT, `${splitDirRel(n)}/events.jsonl`), "utf8")
     .split("\n")
     .filter(Boolean)
     .map((line) => JSON.parse(line));
@@ -154,7 +156,7 @@ export function recordTimelineEvent({
       ...(source_type ? { source_type } : {}),
     };
     fs.appendFileSync(
-      path.join(REPO_ROOT, `internal/src/data/matters/${n}/events.jsonl`),
+      path.join(REPO_ROOT, `${splitDirRel(n)}/events.jsonl`),
       `${JSON.stringify(row)}\n`,
     );
     created.push({ store: "events.jsonl", matter: n, event: row });
@@ -232,7 +234,7 @@ export function retireUpcomingEvent({ matter, date, reason } = {}) {
       reason,
     };
     fs.appendFileSync(
-      path.join(REPO_ROOT, `internal/src/data/matters/${n}/events.jsonl`),
+      path.join(REPO_ROOT, `${splitDirRel(n)}/events.jsonl`),
       `${JSON.stringify(tombstone)}\n`,
     );
     bumpLastUpdated(n);
@@ -298,7 +300,7 @@ export function setNextClock({
     });
   }
 
-  const rel = `internal/src/data/matters/${n}/clocks.json`;
+  const rel = `${splitDirRel(n)}/clocks.json`;
   const clocks = readJSON(rel);
   const idx = clocks.findIndex((c) => c.id === id);
   const clock = {
