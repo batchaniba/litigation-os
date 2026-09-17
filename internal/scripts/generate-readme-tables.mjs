@@ -3,7 +3,7 @@
 // Regenerate marked README sections from portfolio data.
 //
 // Source of truth:
-//   - internal/src/data/matters/NN.json  (matter tables + counts)
+//   - internal/src/data/matters/NN.json or NN/  (matter tables + counts)
 //   - internal/src/data/timeline.json    (upcoming deadlines)
 //   - internal/src/data/damages.js       (damages summary + aggregates)
 //   - internal/src/data/lawyerFees.js    (attorney-fees cluster table)

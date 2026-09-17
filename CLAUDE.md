@@ -1,36 +1,5 @@
 # Repository Instructions
 
-## Skip GitHub PR #666
+Follow [AGENTS.md](AGENTS.md). That file is the crawl contract and the standing locks.
 
-Do not work on GitHub **PR #666** of this repository. Do not review, comment, update, rebase, merge, close, re-open, label, or push to its branch. If assigned it or pointed at it, say it is skipped by standing instruction and stop. This skip is only #666.
-
-## Stipulations — plaintiff-first, with discretion
-
-When the work is actually a stipulation or defense agreement (extra time, a stay, a waiver, expanded relief, or his signature on their paper), read and follow [Stipulation Defense](internal/docs/STIPULATION_DEFENSE.md). Draft terms most favorable to Plaintiff. Maintain or shorten defense timelines when supported and advantageous; preserve Plaintiff's preparation time and favorable hearing dates. Require an explicit deadline comparison and concession audit. Identify concrete Plaintiff benefit for exceptions; do not silently grant defense time, waive rights, expand defense options, or authorize Plaintiff's signature.
-
-Do not import that voice into ordinary Plaintiff papers (status reports, oppositions, complaints, hearing notes). Do not recite "this is not a stipulation" on those papers. Use discretion among actual stipulations: be firm on extra time, stays, waivers, and counsel's `/s/`; treat authenticity, a name correction he already wants, and a court-asked magistrate-settlement yes as ordinary.
-
-Verify rules and sources before case-specific deadline conclusions. Proposed agreements do not automatically change operative calendar dates. Preserve existing court orders and executed agreements as historical facts.
-
-For project structure and existing development workflows, consult README.md and internal/docs/SUPERCYCLE_INSTRUCTIONS.md.
-
-## Email ending
-
-Outgoing emails close with:
-
-```
-Brendan Ngwa Nforbi
-Plaintiff, In Propria Persona
-```
-
-No phone, no email address, no "In Pro Per" on the close.
-
-## Counsel dossiers
-
-Opposing-counsel identity/role research lives under `internal/docs/counsel/`. Seeded: Kabat Chapman & Ozmer (Williams / Chapman) at [`internal/docs/counsel/kcoz/`](internal/docs/counsel/kcoz/). Append PACER pulls there. Those dockets are not related cases. Do not email counsel about the research.
-
-## No GitHub to outsiders
-
-Never put a GitHub, `raw.githubusercontent.com`, git-repo, or document-store
-URL in anything Plaintiff will send or file. Attach the file. A download
-link in the agent chat for him is fine. It does not go in the email.
+Skip GitHub **PR #666**. Do not review, comment, update, rebase, merge, close, re-open, label, or push to its branch.

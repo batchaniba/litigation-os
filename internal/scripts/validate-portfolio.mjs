@@ -19,6 +19,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { loadMatters, MATTERS_DIR } from "./load-matters.mjs";
+import { MATTER_JSON_BUDGET } from "./lib/matter-layout.mjs";
 import { MATTER_LIFECYCLES, archivedFromLifecycle, isTerminalLifecycle } from "./matter-lifecycle.mjs";
 import {
   MATTER_PHASES,
@@ -198,7 +199,8 @@ for (const m of cases) {
   matterRecords.set(m.number, m);
   const source = m.__sourceFile ?? "?.json";
   const tag = `Matter ${m.number ?? "<no number>"} (${m.caption ?? "<no caption>"}) [${source}]`;
-  const expectedName = `${String(m.number).padStart(2, "0")}.json`;
+  const padded = String(m.number).padStart(2, "0");
+  const expectedName = m.__layout === "split" ? `${padded}/matter.json` : `${padded}.json`;
 
   if (m.number == null) {
     fail(`${tag}: missing required field "number"`);
@@ -212,6 +214,24 @@ for (const m of cases) {
     }
   }
 
+  if (m.__layout === "split" && m.__sourceDir) {
+    const identityPath = path.join(m.__sourceDir, "matter.json");
+    if (fs.existsSync(identityPath)) {
+      const raw = fs.readFileSync(identityPath, "utf8");
+      const lines = raw.split(/\n/).length;
+      if (lines > MATTER_JSON_BUDGET.lines) {
+        fail(
+          `${tag}: matter.json is ${lines} lines, budget ${MATTER_JSON_BUDGET.lines} — keep identity small and put the docket in sibling files`,
+        );
+      }
+      if (Buffer.byteLength(raw, "utf8") > MATTER_JSON_BUDGET.bytes) {
+        fail(
+          `${tag}: matter.json is ${Buffer.byteLength(raw, "utf8")} bytes, budget ${MATTER_JSON_BUDGET.bytes} — first fetch must fit`,
+        );
+      }
+    }
+  }
+
   for (const [field, type] of REQUIRED_MATTER_FIELDS) {
     if (!(field in m)) {
       fail(`${tag}: missing required field "${field}"`);
@@ -220,16 +240,19 @@ for (const m of cases) {
     }
   }
 
-  // Free-prose length budgets. Over-target is advisory (trimming legal prose is
-  // an editorial call); over-ceiling is a hard regression and fails below.
-  for (const issue of proseBudgetIssues(m)) {
-    if (issue.level === "over-ceiling") {
-      fail(
-        `${tag}: ${issue.field} is ${issue.words} words, ceiling ${issue.ceiling} — prose may not get ` +
-          `longer than the recorded worst case; ${PROSE_HINTS[issue.field]}`,
-      );
-    } else {
-      warn(`${tag}: ${issue.field} is ${issue.words} words, target ${issue.target} — ${PROSE_HINTS[issue.field]}`);
+  // GRAPH_LIMITS: prose word ceilings apply to legacy NN.json diaries only.
+  // Split matters moved dates into clocks/docket/events — no word/line ceiling
+  // on those tables. Overdue next_clock is a fact in the index, not a fail.
+  if (m.__layout !== "split") {
+    for (const issue of proseBudgetIssues(m)) {
+      if (issue.level === "over-ceiling") {
+        fail(
+          `${tag}: ${issue.field} is ${issue.words} words, ceiling ${issue.ceiling} — prose may not get ` +
+            `longer than the recorded worst case; ${PROSE_HINTS[issue.field]}`,
+        );
+      } else {
+        warn(`${tag}: ${issue.field} is ${issue.words} words, target ${issue.target} — ${PROSE_HINTS[issue.field]}`);
+      }
     }
   }
 
@@ -504,7 +527,8 @@ for (const [i, t] of timeline.entries()) {
 // its prose (defendants, key_facts, procedural_status, or related_actions).
 
 function relatedActionsText(m) {
-  return [m.defendants, m.key_facts, m.procedural_status, m.damages, m.risk, m.caption].join(" ");
+  const related = Array.isArray(m.related) ? m.related.map((n) => `Matter ${n}`).join(" ") : "";
+  return [m.defendants, m.key_facts, m.procedural_status, m.damages, m.risk, m.caption, related].join(" ");
 }
 
 const GENERIC_DEFENDANT_WORDS = new Set([
