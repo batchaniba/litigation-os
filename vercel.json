@@ -1017,7 +1017,7 @@
   "rewrites": [
     {
       "source": "/documents/:path*",
-      "destination": "https://newanforbi.github.io/interactive-litigation-portfolio/documents/:path*"
+      "destination": "https://litigation-doc-api.ss8sxswwkt.workers.dev/documents/:path*"
     },
     {
       "source": "/(.*)",

@@ -3,17 +3,26 @@ import { execFileSync } from "node:child_process";
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
-import { DOCUMENTS_ROOT, REPO_ROOT } from "./document-store.mjs";
+import {
+  DOCUMENTS_ROOT,
+  MANIFEST_PATH,
+  REPO_ROOT,
+  diskFromUrl,
+  walkFiles,
+} from "./document-store.mjs";
+import { getObject, isConfigured as r2IsConfigured, keyForSha256 } from "./r2-client.mjs";
 
 export const DOCUMENTS_BRANCH = "documents";
 export const DOCUMENTS_GIT_PREFIX = "internal/public/documents";
 
 /**
- * GitHub Pages project URL for the PDF tree after a GITHUB_PAGES build.
- * Vercel rewrites /documents/:path* here so the live site keeps the same paths.
+ * Public documents origin. Vercel rewrites /documents/:path* here.
+ * Bytes are R2; this hostname is the Worker that maps path → sha256.
  */
-export const PAGES_DOCUMENTS_ORIGIN =
-  "https://newanforbi.github.io/interactive-litigation-portfolio/documents";
+export const DOCUMENTS_ORIGIN =
+  "https://litigation-doc-api.ss8sxswwkt.workers.dev/documents";
+/** @deprecated alias — Pages no longer serves the library. */
+export const PAGES_DOCUMENTS_ORIGIN = DOCUMENTS_ORIGIN;
 
 export function vercelSpaRewrites() {
   return [
@@ -245,7 +254,75 @@ export function seedDocumentsBranch() {
  *
  * @param {{ matters?: number[], forms?: boolean, opinions?: boolean, list?: boolean }} [opts]
  */
-export function pullDocuments(opts = {}) {
+function manifestFilesForPull(opts = {}) {
+  const manifest = JSON.parse(fs.readFileSync(MANIFEST_PATH, "utf8"));
+  const prefixes = [];
+  for (const n of opts.matters ?? []) {
+    prefixes.push(`/documents/${matterDocumentsFolder(n)}/`);
+  }
+  if (opts.forms) prefixes.push("/documents/_form-library/");
+  if (opts.opinions) prefixes.push("/documents/opinions/");
+  const files = manifest.files ?? [];
+  if (!prefixes.length) return files.filter((f) => String(f.path ?? "").startsWith("/documents/"));
+  return files.filter((f) => prefixes.some((p) => String(f.path ?? "").startsWith(p)));
+}
+
+async function pullDocumentsFromR2(opts = {}) {
+  const files = manifestFilesForPull(opts).filter((f) =>
+    String(f.path ?? "").toLowerCase().endsWith(".pdf"),
+  );
+  fs.mkdirSync(path.dirname(DOCUMENTS_ROOT), { recursive: true });
+  for (const file of files) {
+    const { body } = await getObject(keyForSha256(file.sha256));
+    const dest = diskFromUrl(file.path);
+    fs.mkdirSync(path.dirname(dest), { recursive: true });
+    fs.writeFileSync(dest, body);
+  }
+  const paths = (opts.matters ?? []).map((n) => `matter-${String(n).padStart(2, "0")}`);
+  if (opts.forms) paths.push("_form-library");
+  if (opts.opinions) paths.push("opinions");
+  return { paths: paths.length ? paths : [DOCUMENTS_GIT_PREFIX], via: "r2", count: files.length };
+}
+
+function uploadWorkingTreeToR2() {
+  const pdfs = walkFiles(DOCUMENTS_ROOT).filter((abs) => /\.pdf$/i.test(abs));
+  if (pdfs.length) {
+    const list = path.join(os.tmpdir(), `ilp-r2-${process.pid}.txt`);
+    fs.writeFileSync(
+      list,
+      `${pdfs.map((abs) => path.relative(REPO_ROOT, abs).split(path.sep).join("/")).join("\n")}\n`,
+    );
+    execFileSync("node", ["internal/scripts/r2-upload.mjs", "--list", list], {
+      cwd: REPO_ROOT,
+      stdio: "inherit",
+    });
+  }
+  execFileSync("node", ["internal/scripts/r2-upload.mjs", "--index"], {
+    cwd: REPO_ROOT,
+    stdio: "inherit",
+  });
+  return { uploaded: true, count: pdfs.length };
+}
+
+/**
+ * Restore PDF bytes. Prefers R2 (manifest sha256) when credentials are in
+ * the environment; otherwise origin/documents. Sparse pulls merge.
+ */
+export async function pullDocuments(opts = {}) {
+  if (opts.list) {
+    const tip = fetchDocumentsBranch();
+    if (!tip) {
+      throw new Error(
+        `origin/${DOCUMENTS_BRANCH} is missing — run npm run documents:push from a clone that still has the PDF tree`,
+      );
+    }
+    return { list: listDocumentsStoreFolders() };
+  }
+  if (r2IsConfigured()) return pullDocumentsFromR2(opts);
+  return pullDocumentsFromGit(opts);
+}
+
+export function pullDocumentsFromGit(opts = {}) {
   const tip = fetchDocumentsBranch();
   if (!tip) {
     throw new Error(
@@ -297,17 +374,25 @@ export function pullDocuments(opts = {}) {
 export function pushDocuments() {
   const parent = fetchDocumentsBranch();
   const tree = writeWorkingDocumentsRootTree();
-  if (parent) {
-    const remoteTree = remoteDocumentsRootTree();
-    if (remoteTree === tree) return { pushed: false, commit: parent };
+  let commit = parent;
+  let pushed = false;
+  const remoteTree = parent ? remoteDocumentsRootTree() : null;
+  if (!parent || remoteTree !== tree) {
+    commit = pushDocumentsTree(tree, {
+      parent,
+      message: parent
+        ? "Update document store."
+        : "Seed document store from the working tree.",
+    });
+    pushed = true;
   }
-  const commit = pushDocumentsTree(tree, {
-    parent,
-    message: parent
-      ? "Update document store."
-      : "Seed document store from the working tree.",
-  });
-  return { pushed: true, commit };
+  // Publish to R2 even when the git tree is already in sync. Matching
+  // origin/documents was skipping the PUT, so replacements and new drafts
+  // stayed on the branch and never reached Cloudflare.
+  const r2 = r2IsConfigured()
+    ? uploadWorkingTreeToR2()
+    : { uploaded: false, reason: "r2_unconfigured" };
+  return { pushed, commit, r2 };
 }
 
 export const DOCUMENTS_PULL_USAGE = `Usage: npm run documents:pull -- [flags]

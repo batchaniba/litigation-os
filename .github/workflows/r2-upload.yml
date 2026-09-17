@@ -10,13 +10,19 @@ name: R2 Document Upload
 # Uploader is Node (`internal/scripts/r2-upload.mjs`), not Python.
 #
 # Push-to-documents only fires if this YAML is also on `documents`.
-# `workflow_dispatch` from main works immediately (checks out both refs).
+# A manifest change on main (the usual draft commit) also runs a full
+# HEAD-skip upload + path-index PUT so replacements reach R2 even when
+# the YAML is missing from the documents branch. `workflow_dispatch`
+# from main checks out both refs.
 
 on:
   push:
-    branches: [documents]
+    branches: [main, documents]
     paths:
       - "internal/public/documents/**"
+      - "internal/src/data/documents/manifest.json"
+      - "internal/scripts/r2-upload.mjs"
+      - "internal/scripts/lib/r2-client.mjs"
   workflow_dispatch:
 
 permissions:
@@ -56,6 +62,9 @@ jobs:
           sparse-checkout: |
             /internal/scripts/r2-upload.mjs
             /internal/scripts/lib/r2-client.mjs
+            /internal/scripts/lib/document-store.mjs
+            /internal/src/data/documents/manifest.json
+            /workers/doc-api/src/documents.mjs
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -66,9 +75,11 @@ jobs:
         working-directory: docs-tree
         run: |
           BEFORE="${{ github.event.before }}"
+          REF="${{ github.ref }}"
           if [ "$BEFORE" = "0000000000000000000000000000000000000000" ] \
              || [ -z "$BEFORE" ] \
-             || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+             || [ "${{ github.event_name }}" = "workflow_dispatch" ] \
+             || [ "$REF" = "refs/heads/main" ]; then
             git ls-files 'internal/public/documents/**' | grep -i '\.pdf$' > /tmp/upload-list.txt || true
           else
             git diff --name-only --diff-filter=ACM "$BEFORE" "${{ github.sha }}" \
@@ -80,3 +91,8 @@ jobs:
         env:
           REPO_ROOT: ${{ github.workspace }}/docs-tree
         run: node src/internal/scripts/r2-upload.mjs --list /tmp/upload-list.txt
+
+      - name: Publish path → sha256 index
+        env:
+          REPO_ROOT: ${{ github.workspace }}/src
+        run: node src/internal/scripts/r2-upload.mjs --index

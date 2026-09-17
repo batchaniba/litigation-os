@@ -21,7 +21,7 @@ Crawl this repo as a graph. Do not reconstruct a docket from README or from `sta
 - `clocks.json` or index `next_clock` wins over prose. Vacated clocks are not live.
 - `events.jsonl` is append-only. Do not rewrite it.
 - Operative pleading is the docket row with `"operative": true`. ASK vs CRB name-conform packets: CRB supersedes; they are not two cases.
-- PDF bytes live in Cloudflare R2 (`litigation-documents` bucket, key `sha256/<first2>/<rest>.pdf` — deterministic from the manifest sha256). Fetch one with `npm run docs:fetch <sha256>` (needs `R2_*` env; bytes are re-hashed client-side). Search `.txt` / `.meta.json` sidecars on this branch. The `documents` branch is a cold backup.
+- PDF bytes live in Cloudflare R2 (`litigation-documents` bucket, key `sha256/<first2>/<rest>.pdf` — deterministic from the manifest sha256). Draft or replace a file under `internal/public/documents/matter-NN/`; `npm run documents:push` (needs `R2_*`) PUTs the bytes and rewrites `index/path-to-sha256.json` so the same `/documents/...` path serves the new object. Fetch one with `npm run docs:fetch <sha256>` (bytes are re-hashed client-side). Search `.txt` / `.meta.json` sidecars on this branch. The `documents` branch is a cold backup.
 - `R2_*` comes from the environment. Never paste keys into chat, files, or memory.
 - Do not put GitHub or repo URLs in anything Plaintiff will send or file.
 
@@ -80,8 +80,8 @@ body. Production deploys are scheduled, not per-push; see
 hooks and `npm run` scripts:
 - `validate-portfolio.mjs` — data validation (pre-push gate)
 - `sync-*.mjs` — derived data generation (registry, manifest, summaries, upcoming, short-links)
-- `documents-store.mjs` — `npm run documents:pull -- --matter N` for one folder. R2 holds the bytes (`npm run docs:fetch`); phone-tap slug PDFs stay on `main` until a public origin returns 200.
-- `r2-upload.mjs` / `lib/r2-client.mjs` — `documents` branch → R2 (`r2-upload.yml`)
+- `documents-store.mjs` — `npm run documents:pull -- --matter N` (R2 when `R2_*` is set, else the git branch). `documents:push` updates the cold `documents` branch and, with credentials, PUTs PDFs + the path index to R2. Phone-tap slug PDFs stay on `main` until a public `/documents/...` origin returns 200.
+- `r2-upload.mjs` / `lib/r2-client.mjs` — PDF bytes + `index/path-to-sha256.json` → R2 (`r2-upload.yml`)
 - `load-matters.mjs`, `lib/matter-schema.mjs` — shared loaders and schemas
 - `courtlistener/*.mjs` — docket sync
 

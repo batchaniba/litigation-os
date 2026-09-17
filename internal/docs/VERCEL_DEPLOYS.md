@@ -102,9 +102,10 @@ the `/{slug}.pdf` copies on Vercel, not that rewrite.
 **R2 migration (2026-09-17):** bucket `litigation-documents` holds 1,198 source
 PDFs as 1,139 unique sha256 objects (793.6 MB), ETag-verified. Fetch with
 `npm run docs:fetch <sha256>` (`internal/scripts/fetch-doc.mjs`). Secrets are
-in the repo Actions store. The `documents` branch is the cold backup until
-`documents:push` also uploads to R2. Public `/documents/:path*` rewrite still
-waits on HTTP 200 from a public origin; do not drop slug copies until then.
+in the repo Actions store. `documents:push` also uploads to R2 and rewrites
+the path index when `R2_*` is set. Public `/documents/:path*` rewrites to
+the Worker; do not drop slug copies until that origin returns HTTP 200 for
+the Serrato FAC and a current mailing packet.
 See `internal/docs/DOCUMENT_STORE.md`.
 
 ### Where the gate went
