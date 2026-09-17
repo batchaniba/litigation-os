@@ -64,11 +64,29 @@ RFP_PATH = MATTER20 / (
 POS_PATH = MATTER20 / (
     "Proof of Electronic Service - RFP Set One CHP (Sep 16 2026).pdf"
 )
+MAIL_POS_PATH = MATTER20 / (
+    "Proof of Service by First-Class Mail - RFP Set One CHP (Sep 16 2026).pdf"
+)
 EMAIL_PATH = MATTER20 / "EMAIL_DRAFT_Ing_RFP_Set_One_CHP.txt"
 PACKET_PATH = MATTER20 / (
     "Request for Production of Documents Set One - CHP with POS "
     "(Sep 16 2026).pdf"
 )
+MAIL_PACKET_PATH = MATTER20 / (
+    "Request for Production of Documents Set One - CHP with Mail POS "
+    "(Sep 16 2026).pdf"
+)
+# Same calendar day as the emailed Demand. If the envelope is posted later,
+# change MAIL_DATE and regenerate so the mail proof matches the postmark.
+MAIL_DATE = EXEC_DATE
+MAIL_PLACE = "Stockton, California"
+ING_MAIL_LINES = [
+    "Vanessa K. Ing",
+    "Deputy Attorney General",
+    "Office of the Attorney General",
+    "455 Golden Gate Avenue, Suite 11000",
+    "San Francisco, CA 94102-7004",
+]
 
 COVER_EMAIL = f"""To: Vanessa.Ing@doj.ca.gov
 Cc: Mark.Beckington@doj.ca.gov
@@ -131,7 +149,7 @@ def _header(d: PleadingPaper) -> None:
     d.blank_line()
 
 
-def _caption(d: PleadingPaper, *, proof: bool = False) -> None:
+def _caption(d: PleadingPaper, *, proof: str | bool = False) -> None:
     left = [
         ("BRENDAN NGEHSI NEWANFORBI,", True, False),
         ("", False, False),
@@ -147,10 +165,16 @@ def _caption(d: PleadingPaper, *, proof: bool = False) -> None:
         ("", False, False),
         ("                          Respondents.", False, False),
     ]
-    if proof:
+    if proof in (True, "email"):
         title = [
             ("PROOF OF ELECTRONIC SERVICE", True, False),
             ("[Code Civ. Proc. § 1013b]", False, False),
+        ]
+    elif proof == "mail":
+        title = [
+            ("PROOF OF SERVICE BY", True, False),
+            ("FIRST-CLASS MAIL", True, False),
+            ("[Code Civ. Proc. §§ 1013(a), 1013a]", False, False),
         ]
     else:
         title = [
@@ -641,6 +665,82 @@ def build_pos(path: Path) -> Path:
     return path
 
 
+def build_mail_pos(path: Path) -> Path:
+    """Build a party-signed first-class mail proof under CCP §§ 1013(a), 1013a.
+
+    One addressee only: Vanessa K. Ing at the Golden Gate office already on
+    the Matter 20 papers. Do not name Beckington, Serrato's station, CHP
+    Headquarters, Haiyang Li, or Department 25. POS-030 is not used because
+    its printed declaration states the server is not a party.
+    """
+    path.parent.mkdir(parents=True, exist_ok=True)
+    d = PleadingPaper(str(path), doc_title_footer=(
+        "PROOF OF SERVICE BY FIRST-CLASS MAIL — RFP SET ONE (CHP) — "
+        "NEWANFORBI v. CHP, ET AL., 26CV191136"
+    ))
+    _header(d)
+    _caption(d, proof="mail")
+    d.write_line("PROOF OF SERVICE BY FIRST-CLASS MAIL", bold=True, center=True)
+    d.write_line("[Code Civ. Proc. §§ 1013(a), 1013a]", center=True)
+    d.blank_line()
+    _para(
+        d,
+        "I, Brendan Ngehsi Newanforbi, declare:",
+        first_indent=0,
+    )
+    _para(
+        d,
+        "1.  I am over the age of 18 years and am the Petitioner in this "
+        "action. I am a party. I am a resident of San Joaquin County, "
+        "California, the county in which the mailing described below "
+        "occurs. My mailing address is 1455 Cat Tail Drive, Stockton, "
+        "California 95204.",
+        first_indent=0,
+    )
+    _para(
+        d,
+        f"2.  On {MAIL_DATE}, I served the following document:",
+        first_indent=0,
+    )
+    _para(
+        d,
+        "Petitioner's Request for Production of Documents, Set One, to "
+        "Respondent California Highway Patrol",
+        first_indent=36,
+    )
+    _para(
+        d,
+        "by placing a true copy in a sealed envelope, with first-class "
+        "postage fully prepaid, addressed to the person named below, and "
+        "depositing that envelope in the United States mail at "
+        f"{MAIL_PLACE}, pursuant to Code of Civil Procedure section "
+        "1013, subdivision (a):",
+        first_indent=0,
+    )
+    for line in ING_MAIL_LINES:
+        d.write_line(line, indent=36)
+    d.blank_line()
+    _para(
+        d,
+        "Attorney of record for Respondent California Highway Patrol and "
+        "Respondent G. Serrato in Alameda Superior Court Case No. "
+        "26CV191136. This is the only addressee of service. One envelope "
+        "to this address covers the Demand directed to Respondent "
+        "California Highway Patrol.",
+        first_indent=0,
+    )
+    _para(
+        d,
+        "3.  I declare under penalty of perjury under the laws of the State "
+        f"of California that the foregoing is true and correct. Executed on "
+        f"{MAIL_DATE}, at {MAIL_PLACE}.",
+        first_indent=0,
+    )
+    _sign(d, f"Dated: {MAIL_DATE}")
+    d.save()
+    return path
+
+
 def build_email(path: Path) -> Path:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(COVER_EMAIL, encoding="utf-8")
@@ -665,12 +765,16 @@ def main() -> None:
     MATTER20.mkdir(parents=True, exist_ok=True)
     build_rfp(RFP_PATH)
     build_pos(POS_PATH)
+    build_mail_pos(MAIL_POS_PATH)
     build_email(EMAIL_PATH)
     build_packet(RFP_PATH, POS_PATH, PACKET_PATH)
+    build_packet(RFP_PATH, MAIL_POS_PATH, MAIL_PACKET_PATH)
     print(f"SUCCESS! Generated: {RFP_PATH}")
     print(f"SUCCESS! Generated: {POS_PATH}")
+    print(f"SUCCESS! Generated: {MAIL_POS_PATH}")
     print(f"SUCCESS! Generated: {EMAIL_PATH}")
     print(f"SUCCESS! Generated: {PACKET_PATH}")
+    print(f"SUCCESS! Generated: {MAIL_PACKET_PATH}")
     if not FILED_STATUS:
         print("NOTE: FILED_STATUS is False -- not yet served. Do not e-file.")
 
