@@ -3,22 +3,14 @@
 //   GET /health            -> { ok, bucket }
 //   GET /doc/<sha256>      -> R2 PDF bytes (application/pdf, ETag passthrough)
 //   GET /doc/<sha256>/meta -> { sha256, size, etag } from R2 HEAD
-//   GET /documents/<path>  -> path index (or D1) → sha256 object (court filename)
-//   GET /matters           -> D1 matter rows (mirrors `npm run q listMatters`)
-//   GET /matters/<n>       -> one matter + clocks + documents (mirrors getMatter)
-//   GET /upcoming?days=14  -> clock rows due within window (mirrors upcomingDeadlines)
-//   GET /fuse              -> { fuse, wait, parked } (mirrors getFuseBoard)
+//   GET /documents/<path>  -> path index (or D1 documents_by_path) → sha256 object
+//   GET /matters           -> D1 matter rows
+//   GET /matters/<n>       -> one matter + clocks + documents
+//   GET /upcoming?days=14  -> open clock rows due within window
+//   GET /fuse              -> { fuse, wait, parked }
 //   POST /admin/reseed     -> guarded D1 re-apply of seed.sql
-//                             (Authorization: Bearer <RESEED_SECRET>)
 //
-// R2 is reached through the DOCS *binding* — this file contains no keys,
-// tokens, or secrets. D1 is optional at runtime: data routes return
-// 503 { error: "d1_not_provisioned" } when the DB binding is absent, so the
-// document routes work before D1 is ever seeded.
-//
-// scheduled(): daily fuse digest (~08:08 PT) and Monday roll call, computed
-// from D1 with zero dependencies. POSTs JSON to ALERT_WEBHOOK when set,
-// otherwise console.log.
+// R2 is reached through the DOCS *binding* — this file contains no keys.
 
 import {
   contentDispositionForPath,
@@ -31,6 +23,7 @@ const HEX64 = /^[0-9a-fA-F]{64}$/;
 const PATH_INDEX_KEY = "index/path-to-sha256.json";
 const HASH_CACHE = "public, max-age=31536000, immutable";
 const PATH_CACHE = "public, max-age=60";
+const CLOSED_CLOCK = "('satisfied','retired','cancelled','canceled','vacated')";
 
 const json = (data, status = 200) =>
   new Response(JSON.stringify(data), {
@@ -45,8 +38,6 @@ const addDays = (key, n) => {
   d.setUTCDate(d.getUTCDate() + n);
   return d.toISOString().slice(0, 10);
 };
-
-// --- R2 -----------------------------------------------------------------
 
 function r2Ready(env) {
   return !!env.DOCS;
@@ -79,8 +70,16 @@ async function loadPathIndex(env) {
 }
 
 async function sha256FromD1(env, docPath) {
-  const rows = await dbAll(env, `SELECT sha256 FROM documents WHERE path = ?`, [docPath]);
-  const hit = rows?.[0]?.sha256;
+  const byPath = await dbAll(
+    env,
+    `SELECT sha256 FROM documents_by_path WHERE path = ?`,
+    [docPath],
+  );
+  let hit = byPath?.[0]?.sha256;
+  if (!hit) {
+    const legacy = await dbAll(env, `SELECT sha256 FROM documents WHERE path = ?`, [docPath]);
+    hit = legacy?.[0]?.sha256;
+  }
   return typeof hit === "string" ? hit.toLowerCase() : null;
 }
 
@@ -89,10 +88,7 @@ async function serveDocumentsPath(env, pathname) {
   const index = await loadPathIndex(env);
   let sha = sha256ForPath(index, pathname);
   if (!sha) sha = await sha256FromD1(env, docPath);
-  if (!sha) {
-    if (!index) return json({ error: "path_index_missing", path: docPath }, 503);
-    return json({ error: "not_found", path: docPath }, 404);
-  }
+  if (!sha) return json({ error: "not_found", path: docPath }, 404);
   return serveDoc(env, sha, {
     disposition: contentDispositionForPath(pathname),
     cacheControl: PATH_CACHE,
@@ -108,16 +104,14 @@ async function docMeta(env, sha) {
   return json({ sha256: clean, size: head.size ?? null, etag: head.httpEtag ?? null });
 }
 
-// --- D1 -------------------------------------------------------------------
-
 async function dbAll(env, sql, params = []) {
   if (!env.DB) return null;
   try {
     const res = await env.DB.prepare(sql).bind(...params).all();
     return res.results ?? [];
   } catch (e) {
-    // Binding exists but our schema was never applied (e.g. fresh local D1).
     if (/no such table/i.test(e?.message ?? "")) return null;
+    if (/no such column/i.test(e?.message ?? "")) return null;
     throw e;
   }
 }
@@ -171,18 +165,34 @@ async function getMatter(env, n) {
   if (!rows.length) return json({ error: "not_found", matter: n }, 404);
   const r = rows[0];
   const today = utcToday();
-  const clocks =
+  let clocks =
     (await dbAll(
       env,
-      `SELECT title, date, kind FROM clocks WHERE matter_number = ? ORDER BY date`,
+      `SELECT title, date, kind, status FROM clocks WHERE matter_number = ? ORDER BY date`,
       [n],
     )) ?? [];
-  const documents =
+  if (!clocks.length) {
+    clocks =
+      (await dbAll(
+        env,
+        `SELECT title, date, kind FROM clocks WHERE matter_number = ? ORDER BY date`,
+        [n],
+      )) ?? [];
+  }
+  let documents =
     (await dbAll(
       env,
-      `SELECT sha256, path, size FROM documents WHERE matter_number = ? ORDER BY path`,
+      `SELECT sha256, path, size FROM documents_by_path WHERE matter_number = ? ORDER BY path`,
       [n],
     )) ?? [];
+  if (!documents.length) {
+    documents =
+      (await dbAll(
+        env,
+        `SELECT sha256, path, size FROM documents WHERE matter_number = ? ORDER BY path`,
+        [n],
+      )) ?? [];
+  }
   return json({
     number: r.number,
     caption: r.caption,
@@ -198,7 +208,8 @@ async function getMatter(env, n) {
       title: c.title,
       date: c.date,
       kind: c.kind,
-      overdue: !!c.date && c.date < today,
+      status: c.status ?? null,
+      overdue: !!c.date && c.date < today && !CLOSED_CLOCK.includes(`'${String(c.status ?? "").toLowerCase()}'`),
     })),
     documents,
     document_count: documents.length,
@@ -211,14 +222,26 @@ async function upcoming(env, params) {
   days = Math.min(90, Math.max(1, Math.round(days)));
   const today = utcToday();
   const horizon = addDays(today, days);
-  const rows = await dbAll(
+  let rows = await dbAll(
     env,
-    `SELECT c.matter_number AS number, c.title, c.date, c.kind,
+    `SELECT c.matter_number AS number, c.title, c.date, c.kind, c.status,
             m.caption, m.lifecycle
      FROM clocks c JOIN matters m ON m.number = c.matter_number
-     WHERE c.date <= ? ORDER BY c.date, c.matter_number`,
+     WHERE c.date <= ?
+       AND lower(ifnull(c.status, 'open')) NOT IN ${CLOSED_CLOCK}
+     ORDER BY c.date, c.matter_number`,
     [horizon],
   );
+  if (rows === null) {
+    rows = await dbAll(
+      env,
+      `SELECT c.matter_number AS number, c.title, c.date, c.kind,
+              m.caption, m.lifecycle
+       FROM clocks c JOIN matters m ON m.number = c.matter_number
+       WHERE c.date <= ? ORDER BY c.date, c.matter_number`,
+      [horizon],
+    );
+  }
   if (!rows) return json({ error: "d1_not_provisioned" }, 503);
   return json(
     rows.map((r) => ({
@@ -260,8 +283,6 @@ async function fuse(env, params) {
     .sort((a, b) => a.number - b.number);
   return json({ generated: today, today, horizon, fuse: fuseRows, wait, parked });
 }
-
-// --- scheduled digests ------------------------------------------------------
 
 function isRollcallCron(cron) {
   const parts = String(cron || "").trim().split(/\s+/);
@@ -326,12 +347,6 @@ async function buildDigest(env, cron) {
   };
 }
 
-// --- admin: D1 self-reseed --------------------------------------------------
-// POST /admin/reseed with `Authorization: Bearer <RESEED_SECRET>` and the
-// seed.sql text as the body (one `INSERT ...;` per line, see seed.mjs).
-// Applies the statements to the D1 binding in small batches. Run
-// `node seed.mjs` on the laptop and POST the file. Fail-closed: 503 when
-// RESEED_SECRET is not configured on the Worker, 403 on a bearer mismatch.
 async function handleReseed(request, env) {
   if (!env.RESEED_SECRET) return json({ error: "reseed_not_configured" }, 503);
   const auth = request.headers.get("authorization") || "";
@@ -342,7 +357,7 @@ async function handleReseed(request, env) {
   const statements = body
     .split("\n")
     .map((l) => l.trim())
-    .filter((l) => /^INSERT\s/i.test(l));
+    .filter((l) => /^(INSERT|DELETE)\s/i.test(l));
   let applied = 0;
   for (let i = 0; i < statements.length; i += 50) {
     const chunk = statements.slice(i, i + 50);
@@ -351,8 +366,6 @@ async function handleReseed(request, env) {
   }
   return json({ ok: true, statements: applied });
 }
-
-// --- entrypoint ---------------------------------------------------------------
 
 export default {
   async fetch(request, env, _ctx) {
