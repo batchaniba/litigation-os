@@ -32,7 +32,7 @@ concurrency:
 
 jobs:
   sync:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, hatch-vm]
     env:
       PORTFOLIO_SKIP_DISK_DOCS: "1"
       PORTFOLIO_SKIP_MANIFEST: "1"
