@@ -8,11 +8,14 @@
 // so `npm run docs:fetch <sha256>` keeps resolving). HEAD skip when ETag
 // matches local MD5. After PUT, HEAD again and require the match.
 // --index PUTs index/path-to-sha256.json from main's manifest.
+// Every push also ensures the text/<sha>.txt sidecar (lib/doc-text.mjs;
+// best-effort — a text failure never fails the PDF push).
 // Never deletes from R2. Exits 1 if any file fails.
 import fs from "node:fs";
 import path from "node:path";
 import { createHash } from "node:crypto";
 import { headEtag, keyForSha256, putObject } from "./lib/r2-client.mjs";
+import { ensureTextSidecar } from "./lib/doc-text.mjs";
 import { MANIFEST_PATH } from "./lib/document-store.mjs";
 import { buildPathIndex } from "../../workers/doc-api/src/documents.mjs";
 
@@ -55,6 +58,11 @@ async function processOne(rel) {
     if (lastError) throw lastError;
     if ((await headEtag(key)) !== md5hex) throw new Error("ETag mismatch after PUT");
     log.status = "uploaded";
+    try {
+      log.text_status = await ensureTextSidecar(sha256, data);
+    } catch (error) {
+      log.text_status = `failed: ${String(error instanceof Error ? error.message : error).slice(0, 120)}`;
+    }
     return log;
   } catch (error) {
     log.status = "failed";

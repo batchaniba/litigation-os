@@ -21,6 +21,10 @@ export class HttpError extends Error {
 }
 
 export const keyForSha256 = (sha) => `sha256/${sha.slice(0, 2)}/${sha.slice(2)}.pdf`;
+export const keyForSha256Text = (sha) => {
+  const c = String(sha ?? "").toLowerCase();
+  return `text/${c.slice(0, 2)}/${c.slice(2)}.txt`;
+};
 export const utcToday = () => new Date().toISOString().slice(0, 10);
 export const addDays = (key, n) => {
   const d = new Date(`${key}T12:00:00Z`);
@@ -64,6 +68,33 @@ export async function headDocObject(env, sha) {
   const head = await env.DOCS.head(keyForSha256(clean));
   if (!head) throw new HttpError(404, { error: "not_found", sha256: clean });
   return { sha256: clean, size: head.size ?? null, etag: head.httpEtag ?? null };
+}
+
+// Reads the pre-extracted text sidecar for one PDF: text/<first2>/<rest>.txt
+// (poppler `pdftotext -layout`, written by internal/scripts/extract-doc-text.mjs
+// and kept in sync by internal/scripts/r2-upload.mjs; an empty file means the
+// PDF had no text layer). Returns a paginated slice so agents read document
+// contents as tool results instead of fetching PDF bytes over HTTP.
+// Throws 503 when unbound, 400 on a bad hash, 404 when no sidecar exists yet.
+export async function getDocText(env, sha, offset = 0, limit = 20000) {
+  if (!r2Ready(env)) throw new HttpError(503, { error: "r2_not_bound" });
+  const clean = cleanSha(sha);
+  const obj = await env.DOCS.get(keyForSha256Text(clean));
+  if (!obj) throw new HttpError(404, { error: "text_not_extracted", sha256: clean });
+  const text = await obj.text();
+  const total = text.length;
+  const start = Math.min(Math.max(0, Math.trunc(Number(offset) || 0)), total);
+  const len = Math.min(Math.max(1, Math.trunc(Number(limit) || 20000)), 100000);
+  const slice = text.slice(start, start + len);
+  return {
+    sha256: clean,
+    total_chars: total,
+    offset: start,
+    limit: len,
+    returned_chars: slice.length,
+    truncated: start + slice.length < total,
+    text: slice,
+  };
 }
 
 // --- D1 ---------------------------------------------------------------------

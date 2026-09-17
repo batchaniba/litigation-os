@@ -73,7 +73,7 @@ and gets a plain JSON response — no SSE stream, no session ids. Protocol
 versions negotiated: `2025-06-18`, `2025-03-26`, `2024-11-05`. CORS is open
 (`*`) so browser-based clients (Claude/ChatGPT web connectors) can call it.
 
-**Read-only by design (v1).** Seven tools, mirroring the stdio server in
+**Read-only by design.** Eight tools, mirroring the stdio server in
 `internal/mcp` and the `npm run q` ops, backed by the same D1/R2 bindings:
 
 | Tool | Args | Returns |
@@ -85,12 +85,17 @@ versions negotiated: `2025-06-18`, `2025-03-26`, `2024-11-05`. CORS is open
 | `getMatterDocs` | `n` | manifest rows with download `url`s |
 | `searchDocuments` | `query`, `limit=20` | substring over manifest paths + matter captions, with `url`s |
 | `fetchDocument` | `sha256` | `{ sha256, size, etag, url }` — fetch the bytes with `GET url` |
+| `readDocumentText` | `sha256`, `offset=0`, `limit=20000` | `{ sha256, total_chars, offset, limit, returned_chars, truncated, text }` — extracted PDF text, inline |
 
-PDF bytes are never embedded in tool results; `fetchDocument` returns the
-`/doc/<sha256>` URL and the model GETs it (`application/pdf`). Timelines,
-counsel/judge dossiers, and the cluster map are not in D1, so they are not
-tools yet — a seed expansion could add them later. Writes are intentionally
-absent: remote writes have no working tree to land on for review.
+`readDocumentText` is the preferred way to *read* a document: it serves the
+pre-extracted text sidecar (`text/<first2>/<rest>.txt` in the same R2 bucket,
+written by `internal/scripts/extract-doc-text.mjs` and kept in sync by
+`internal/scripts/r2-upload.mjs`) as paginated tool-result text, so the model
+never has to fetch PDF bytes over HTTP. `fetchDocument` stays for the cases
+that need raw bytes (`application/pdf`). Timelines, counsel/judge dossiers,
+and the cluster map are not in D1, so they are not tools yet — a seed
+expansion could add them later. Writes are intentionally absent: remote
+writes have no working tree to land on for review.
 
 Connect from any MCP client with the URL
 `https://litigation-doc-api.ss8sxswwkt.workers.dev/mcp`, no auth:

@@ -21,7 +21,7 @@ Crawl this repo as a graph. Do not reconstruct a docket from README or from `sta
 - `clocks.json` or index `next_clock` wins over prose. Vacated clocks are not live.
 - `events.jsonl` is append-only. Do not rewrite it.
 - Operative pleading is the docket row with `"operative": true`. ASK vs CRB name-conform packets: CRB supersedes; they are not two cases.
-- PDF bytes live in Cloudflare R2 (`litigation-documents` bucket, key `sha256/<first2>/<rest>.pdf` — deterministic from the manifest sha256). Draft or replace a file under `internal/public/documents/matter-NN/`; `npm run documents:push` (needs `R2_*`) PUTs the bytes and rewrites `index/path-to-sha256.json` so the same `/documents/...` path serves the new object. Fetch one with `npm run docs:fetch <sha256>` (bytes are re-hashed client-side). Search `.txt` / `.meta.json` sidecars on this branch. The `documents` branch is a cold backup.
+- PDF bytes live in Cloudflare R2 (`litigation-documents` bucket, key `sha256/<first2>/<rest>.pdf` — deterministic from the manifest sha256). Draft or replace a file under `internal/public/documents/matter-NN/`; `npm run documents:push` (needs `R2_*`) PUTs the bytes and rewrites `index/path-to-sha256.json` so the same `/documents/...` path serves the new object. Fetch one with `npm run docs:fetch <sha256>` (bytes are re-hashed client-side). Search `.txt` / `.meta.json` sidecars on this branch. Pre-extracted text sidecars live at `text/<first2>/<rest>.txt` in the same bucket (poppler `pdftotext -layout`; `internal/scripts/extract-doc-text.mjs` backfills, `r2-upload.mjs` keeps them in sync) and are served by the Worker's `readDocumentText` MCP tool. The `documents` branch is a cold backup.
 - `R2_*` comes from the environment. Never paste keys into chat, files, or memory.
 - Do not put GitHub or repo URLs in anything Plaintiff will send or file.
 
@@ -61,12 +61,7 @@ Do not give ChatGPT, Grok, or any third-party chat R2 admin keys or
 `~/.config/r2/env`. Point them at
 `https://litigation-doc-api.ss8sxswwkt.workers.dev`
 (`/matters`, `/fuse`, `/doc/<sha256>`, `/doc/<sha256>/meta`, `/documents/<path>`).
-The Worker binds R2; keys stay server-side.
-
-The document store lives on Cloudflare: PDFs in R2 (the
-`litigation-documents` bucket), matter metadata in D1, served by the
-`litigation-doc-api` Worker.
- Cursor reads `~/.config/r2/env`
+The Worker binds R2; keys stay server-side. Cursor reads `~/.config/r2/env`
 for writes or calls the Worker for reads. If a chat needs a secret, a
 rotatable Worker bearer — never the Cloudflare admin pair. Direct R2, if
 ever: a read-only token scoped to `litigation-documents`. Admin keys live
@@ -81,10 +76,12 @@ agent (Claude Code, Cursor, Claude Desktop, ChatGPT, Grok) points its client
 at that URL and gets read-only tools over the same store: `listMatters`,
 `getMatter`, `upcomingDeadlines`, `getFuseBoard`, `getMatterDocs`,
 `searchDocuments`, `fetchDocument` (returns size/ETag plus the
-`GET /doc/<sha256>` download URL — PDF bytes are never embedded in tool
-results). This is the preferred way for an external model to fetch
-documents: no R2 keys, no repo clone, no credentials of any kind. Local
-agents with `R2_*` keep using `npm run docs:fetch` and the query interface.
+`GET /doc/<sha256>` download URL), and `readDocumentText` (returns the
+document's extracted text inline, paginated — the preferred way for an
+external model to *read* a document, so it never has to fetch PDF bytes over
+HTTP). This is the preferred way for an external model to fetch documents:
+no R2 keys, no repo clone, no credentials of any kind. Local agents with
+`R2_*` keep using `npm run docs:fetch` and the query interface.
 
 ## No GitHub Actions
 
