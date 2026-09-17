@@ -2,17 +2,17 @@
   "number": 37,
   "caption": "Brendan Ngwa Nforbi v. Home Depot U.S.A., Inc.",
   "case_no": "TBD",
-  "court": "San Joaquin Sup. Ct. (executed packet; not yet filed)",
+  "court": "USDC E.D. Cal. (Sep. 16 walk-up; unfiled) / San Joaquin Sup. Ct. (Sep. 8 packet LOCKED, unfiled)",
   "claims": "ICRAA § 1786.40 (I&B); CCRAA § 1785.20.5 (alternative); UCL § 17200; Penal Code § 290.46(j) (I&B — report contents and use)",
-  "status": "EXECUTED (unfiled) — four-count San Joaquin complaint against Home Depot U.S.A., Inc. Plaintiff accepted the Tracy DC hire, began onboarding, then was ghosted. Hire date is I&B on or about August 2024. § 290 is the fourth count. Serve CSC, not the Tracy building.",
-  "status_label": "EDCA intake drafted Sep. 16 — unfiled",
+  "status": "EXECUTED (unfiled) — E.D. Cal. walk-up packet dated September 16, 2026 (complaint, JS 44, AO 239, AO 440, magistrate consent CONSENT-checked). San Joaquin September 8 packet remains LOCKED and unfiled. Do not serve the defendant with the consent form.",
+  "status_label": "EDCA walk-up Sep. 16 — unfiled",
   "lifecycle": "pre_filing",
-  "proceeding": "state_civil",
+  "proceeding": "federal_civil",
   "phase": "pre_filing",
   "filed": "Not yet filed",
   "judge": "TBD",
   "cluster": 3,
-  "type": "State",
+  "type": "Federal",
   "archived": false,
   "note": "LOCKED. Packet is signed for September 8, 2026 filing. Do not treat as filed until clerk-stamped. Do not rewrite pleading prose unless a new Home Depot document appears. Plaintiff accepted the hire, began onboarding, and was then ghosted. Hire timing remains I&B on or about August 2024. Report contents and use are I&B. Title, shift, and pay are still not in the file. Tameny/IIED/FEHA omitted. FCRA omitted. Serve CSC, not the Tracy building. § 290.46(j) is the last count on page one.",
   "defendants": "Home Depot U.S.A., Inc., a Delaware corporation, d/b/a The Home Depot and The Home Depot Distribution Center (likely legal employer for the Tracy fulfillment center at 5395 Hopkins Road); DOES 1–20 for the actual employing affiliate, screening vendor, and decision-makers. The Home Depot, Inc. parent is not named merely as parent. The Tracy building is a worksite, not a defendant.",
@@ -86,5 +86,8 @@
       "path": "/documents/matter-37/FW-003 Order on Court Fee Waiver - Ngwa Nforbi v Home Depot USA Inc (Sep 8 2026).pdf",
       "filed": false
     }
-  ]
+  ],
+  "courtlistener": {
+    "court_id": "caed"
+  }
 }

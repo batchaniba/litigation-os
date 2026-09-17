@@ -2,17 +2,17 @@
   "number": 39,
   "caption": "Brendan Ngwa Nforbi v. Best Buy Co., Inc.",
   "case_no": "TBD",
-  "court": "San Joaquin Sup. Ct. (executed packet; not yet filed)",
+  "court": "USDC E.D. Cal. (Sep. 16 walk-up; unfiled) / San Joaquin Sup. Ct. (Sep. 8 packet LOCKED, unfiled)",
   "claims": "ICRAA § 1786.40 (I&B); CCRAA § 1785.20.5 (alternative); UCL § 17200; Penal Code § 290.46(j) (I&B — report contents and use)",
-  "status": "EXECUTED (unfiled) — four-count San Joaquin complaint against Best Buy Co., Inc. Plaintiff accepted the Tracy warehouse offer at 6653 Hopkins Road, completed the drug screen (I&B clean), then was ghosted. First Advantage is not a named defendant. § 290 is the fourth count.",
-  "status_label": "EDCA intake drafted Sep. 16 — unfiled",
+  "status": "EXECUTED (unfiled) — E.D. Cal. walk-up packet dated September 16, 2026 (complaint, JS 44, AO 239, AO 440, magistrate consent CONSENT-checked). San Joaquin September 8 packet remains LOCKED and unfiled. Do not serve the defendant with the consent form.",
+  "status_label": "EDCA walk-up Sep. 16 — unfiled",
   "lifecycle": "pre_filing",
-  "proceeding": "state_civil",
+  "proceeding": "federal_civil",
   "phase": "pre_filing",
   "filed": "Not yet filed",
   "judge": "TBD",
   "cluster": 3,
-  "type": "State",
+  "type": "Federal",
   "archived": false,
   "note": "LOCKED. Packet is signed for September 8, 2026 filing. Do not treat as filed until clerk-stamped. Do not rewrite pleading prose unless a new Best Buy or First Advantage document appears. Plaintiff accepted the Oct. 17, 2023 offer, completed the drug screening, and on information and belief that screen came back clean; Best Buy then ghosted him. Warehouse is 6653 Hopkins Road, Tracy, CA 95377. Application confirmation recites an arbitration policy; Best Buy will move to compel; the policy PDF is not in this upload. Serve the current SOS agent for Best Buy, not a warehouse. Best Buy Stores, L.P. is a DOE. First Advantage is not a named defendant. § 290.46(j) is the last count on page one.",
   "defendants": "Best Buy Co., Inc., a Minnesota corporation, d/b/a Best Buy (authorization and drug-test order use 7601 Penn Ave. South, Richfield, MN 55423); DOES 1–20 for any First Advantage furnishing affiliate, Best Buy Stores, L.P. or other employing affiliate, and decision-makers. First Advantage Background Services Corp. is a fact witness and inspection target, not a named defendant. First Advantage Corporation parent is not named. Jose Tapia (GM) and Daisy Calvary are witnesses.",
@@ -111,5 +111,8 @@
       "path": "/documents/matter-39/Best Buy Drug Screen Reminder (Oct 17 2023).pdf",
       "filed": false
     }
-  ]
+  ],
+  "courtlistener": {
+    "court_id": "caed"
+  }
 }

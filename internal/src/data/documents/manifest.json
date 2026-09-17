@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1269,
-  "totalBytes": 890768172,
+  "fileCount": 1278,
+  "totalBytes": 896111294,
   "files": [
     {
       "path": "/documents/_form-library/ao239-blank-template.pdf",
@@ -1679,6 +1679,11 @@
       "sha256": "06508235ccde8f532743b5c4b3c89e6a3693e50db3210b07707ca33927d7378d"
     },
     {
+      "path": "/documents/matter-20/Proof of Electronic Service - RFP Set One CHP (Sep 16 2026).pdf",
+      "size": 197744,
+      "sha256": "d46c5eeb770d330a6d66a336b11a76ab136fcae9a02d5a91d9c130176e1db5e2"
+    },
+    {
       "path": "/documents/matter-20/Proof of Service - Notice of Lodging Nov 1 2024 CHP Dashcam (Sep 8 2026).pdf",
       "size": 358731,
       "sha256": "274dee78d5d476e0e2f796b62de850137426dffa28f64e643cc14c0c764444b2"
@@ -1689,14 +1694,34 @@
       "sha256": "f37303950c92331bab159e5bb6787987ec306b396a0127fc0cbcdf3f4349c3e0"
     },
     {
+      "path": "/documents/matter-20/Proof of Service by First-Class Mail - RFP Set One CHP (Sep 16 2026).pdf",
+      "size": 199084,
+      "sha256": "69bceb3491f656979a95052f0046b451917fc3d2d2aca5e4ef6a48a444e56bab"
+    },
+    {
       "path": "/documents/matter-20/Request for Production of Documents Set One - CHP (Sep 15 2026).pdf",
       "size": 223418,
       "sha256": "6eeaeee9ab521e4452705e3fe1f2fd9006d26c64416605ec960db79f29aa3cdb"
     },
     {
+      "path": "/documents/matter-20/Request for Production of Documents Set One - CHP (Sep 16 2026).pdf",
+      "size": 224556,
+      "sha256": "9728db9053ea01339c71387ab37c213883da9773fa5f3800c32847a979943e38"
+    },
+    {
+      "path": "/documents/matter-20/Request for Production of Documents Set One - CHP with Mail POS (Sep 16 2026).pdf",
+      "size": 421840,
+      "sha256": "793ce2b72ae8a5dc89aeec5cbd30e6bef0605b99dc90d661cc87258aaf9ddbaa"
+    },
+    {
       "path": "/documents/matter-20/Request for Production of Documents Set One - CHP with POS (Sep 15 2026).pdf",
       "size": 534667,
       "sha256": "2dba0eaeca4c05b28e15ec7ff624b829870b881c84ba6685dd8299e2b3c71a42"
+    },
+    {
+      "path": "/documents/matter-20/Request for Production of Documents Set One - CHP with POS (Sep 16 2026).pdf",
+      "size": 420543,
+      "sha256": "e56eb9ebe34646718ffc076e960428e8773b3a4adf2b04d3cd9ad5b8e914ca2f"
     },
     {
       "path": "/documents/matter-20/Stipulation to Advance Hearing Date.docx",
@@ -4909,6 +4934,16 @@
       "sha256": "7dc5eb20d85487247f64bdf5b41bddd356616718a2bb5517d646a083596af3d5"
     },
     {
+      "path": "/documents/matter-32/ndcal/CCP 415.20(b) Mailing Bundle - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 17, 2026).pdf",
+      "size": 3279649,
+      "sha256": "fb7822fb20c8d9e101509d38a7d512e4f5171530b121d8a3d922d233e70251e9"
+    },
+    {
+      "path": "/documents/matter-32/ndcal/CCP 415.20(b) Mailing Filing Packet - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 17, 2026).pdf",
+      "size": 397339,
+      "sha256": "ba500f8cd1a9453b2e8f550514b320fe44ca8c2b3d4ec5a4131e3f2c067d0072"
+    },
+    {
       "path": "/documents/matter-32/ndcal/Certification of Conflicts Interested Entities and Persons (Meza Melano) (Sep 4 2026).pdf",
       "size": 391335,
       "sha256": "708f384d44e516c8203a4c2972016949d195d4fc0ad95853fc7782f32d046c2f"
@@ -4942,6 +4977,11 @@
       "path": "/documents/matter-32/ndcal/Declaration ISO Administrative Motion - DAG Li to Accept Service (Meza-Gonzalez) (Sep 1 2026).pdf",
       "size": 208333,
       "sha256": "96619dfe497aa39f367cc7ec55e5891b4bb343d8858e9e1b4a241e8807c76a38"
+    },
+    {
+      "path": "/documents/matter-32/ndcal/Declaration of Mailing - CCP 415.20(b) Follow-Up to Dkt 16 - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 16, 2026).pdf",
+      "size": 201280,
+      "sha256": "a681de8d821b6a710a117bcd931eab55f3b044cfb56ebbe2c817a8ca0ff5eacf"
     },
     {
       "path": "/documents/matter-32/ndcal/Dkt 01 - Complaint (CONFORMED, Filed Aug 10 2026).pdf",
@@ -5032,6 +5072,11 @@
       "path": "/documents/matter-32/ndcal/DRAFT - Notice of Filing of Administrative Motion to Relate Cases (Meza-Gonzalez).pdf",
       "size": 6292,
       "sha256": "2900ef58cf1bc6a13ca3c4fad5644d4b91318c8495c3519914b5838a9a1dda0c"
+    },
+    {
+      "path": "/documents/matter-32/ndcal/EMAIL_DRAFT_Li_CCP_41520_Mailing_Meza.txt",
+      "size": 1087,
+      "sha256": "21f7eed1d9918ba14113f83eae337b75b2aefa06af180e6423bd495f15101b4e"
     },
     {
       "path": "/documents/matter-32/ndcal/EMAIL_DRAFT_Li_FAC_Service_Melano_and_Meza.txt",

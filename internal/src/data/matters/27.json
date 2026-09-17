@@ -4,7 +4,7 @@
   "case_no": "26CV199902",
   "court": "Alameda Sup. Ct. (Rene C. Davidson Courthouse)",
   "claims": "PC §290.46(j)(2)(E) Violation, Wrongful Termination in Violation of Public Policy, ICRAA, Invasion of Privacy, Negligence Per Se (Evid. Code §669), UCL §17200",
-  "status": "Tai served Gurney's CIV-141 for RK at 4:21 p.m. (no clerk stamp; do not treat Oct. 14 as live). Moskow served the Chapman-signed Plaintiff counterpart at 4:37 p.m. (order unsigned; court EFS unchecked). Sept. 18 is not operative until filed and ordered. Randstad remains Sept. 15. Do not CIV-100 RK. $25k global expires 5:00 p.m. PT Sept. 18. CMC Dec. 17, Weathers.",
+  "status": "Tai served Gurney's CIV-141 for RK at 4:21 p.m. (unstamped; do not treat Oct. 14 as live). Moskow served the Chapman-signed counterpart at 4:37 p.m. (order unsigned). Do not CIV-100 RK. Randstad's Sept. 15 clock lapsed — CIV-100 Randstad is file-if-silent Sept. 16 if eCourt is empty. $25k global expires 5:00 p.m. PT Sept. 18. CMC Dec. 17, Weathers.",
   "lifecycle": "active",
   "proceeding": "state_civil",
   "phase": "responsive_deadline",
@@ -387,7 +387,7 @@
     }
   ],
   "archived": false,
-  "status_label": "CIV-141 + counterpart — neither stamped",
+  "status_label": "RK appeared — Randstad silent Sep. 15",
   "opposing_counsel": [
     {
       "name": "Nathan D. Chapman",

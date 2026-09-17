@@ -2,17 +2,17 @@
   "number": 36,
   "caption": "Brendan Ngwa Nforbi v. AT&T Mobility Services LLC",
   "case_no": "TBD",
-  "court": "San Joaquin Sup. Ct. (executed packet; not yet filed)",
+  "court": "USDC E.D. Cal. (Sep. 16 walk-up; unfiled) / San Joaquin Sup. Ct. (Sep. 8 packet LOCKED, unfiled)",
   "claims": "FCRA § 1681b(b)(3); ICRAA § 1786.40; CCRAA § 1785.20.5 (alternative); Breach of Contract; Implied Covenant; Promissory Estoppel; Negligent Misrepresentation; Fraud / Concealment; UCL § 17200; Penal Code § 290.46(j)",
-  "status": "EXECUTED (unfiled) — ten-count San Joaquin complaint against AT&T Mobility Services LLC, signed for September 8, 2026. Plaintiff confirmed Workday acceptance, onboarding, and nonreceipt. First Advantage is not a named defendant. CM-010, SUM-100, FW-001, and FW-003 are in the packet. § 290 is the tenth count.",
-  "status_label": "EDCA intake drafted Sep. 16 — unfiled",
+  "status": "EXECUTED (unfiled) — E.D. Cal. walk-up packet dated September 16, 2026 (complaint, JS 44, AO 239, AO 440, magistrate consent CONSENT-checked). San Joaquin September 8 packet remains LOCKED and unfiled. Do not serve the defendant with the consent form.",
+  "status_label": "EDCA walk-up Sep. 16 — unfiled",
   "lifecycle": "pre_filing",
-  "proceeding": "state_civil",
+  "proceeding": "federal_civil",
   "phase": "pre_filing",
   "filed": "Not yet filed",
   "judge": "TBD",
   "cluster": 3,
-  "type": "State",
+  "type": "Federal",
   "archived": false,
   "note": "LOCKED. Packet is signed for September 8, 2026 filing. Do not treat as filed until clerk-stamped. Do not rewrite pleading prose unless a new AT&T or First Advantage document appears. Plaintiff confirmed Workday acceptance, onboarding, reliance, and nonreceipt of pre-adverse materials. First Advantage is not a named defendant. § 1786.16 is reserved, not pleaded. § 290.46(j) is the last count on page one.",
   "defendants": "AT&T Mobility Services LLC (likely legal employer for the Mobility Orange Retail Sales Consultant role; AT&T Inc. not named merely as parent); DOES 1–20 for the actual AT&T employing/decisionmaking entity, any First Advantage furnishing affiliate, manager, adjudication personnel, and other responsible actors. First Advantage Background Services Corp. is a fact witness and inspection target, not a named defendant. Richard Patterson is treated as an AT&T recruiter and percipient witness, not presently named individually.",
@@ -211,5 +211,8 @@
       "path": "/documents/matter-36/FW-003 Order on Court Fee Waiver - Ngwa Nforbi v AT&T Mobility Services LLC (Sep 8 2026).pdf",
       "filed": false
     }
-  ]
+  ],
+  "courtlistener": {
+    "court_id": "caed"
+  }
 }
