@@ -60,7 +60,12 @@ link in the agent chat for him is fine. It does not go in the email.
 There is no GitHub Actions CI. The only workflows left are the CourtListener
 ones (`courtlistener-sync`, `counsel-dossier`, `intel-fetch-briefs`) and the
 R2 document-upload job (`r2-upload.yml`: `documents` branch → R2, upload-only,
-never deletes; Node `r2-upload.mjs`; approved 2026-09-16). Do not add others. The checks the old CI job ran now run in the `pre-push` hook
+never deletes; Node `r2-upload.mjs`; approved 2026-09-16), and the two
+Cloudflare jobs (`cloudflare-deploy.yml`: main → `wrangler deploy` the doc-api
+Worker when `workers/doc-api/**` changes; `d1-reseed.yml`: regenerates the D1
+seed from repo data and POSTs it to the Worker's guarded `/admin/reseed`
+endpoint when portfolio data changes; both approved 2026-09-17). Do not add
+others. The checks the old CI job ran now run in the `pre-push` hook
 (installed by `npm run prepare`): lint, typecheck, `validate-portfolio`,
 golden damages math, the unit suite, and the fabricated-citation gate.
 Before opening a PR, run `npm run validate` yourself and say so in the PR
