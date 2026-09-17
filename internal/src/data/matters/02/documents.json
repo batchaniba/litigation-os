@@ -15,7 +15,8 @@
     "path": "/documents/matter-32/from-02/Notice of Case Management Conference.pdf"
   },
   {
-    "path": "/documents/matter-32/from-02/Ex Parte Application for Extension of Time to Serve Pleading and Orders.pdf"
+    "path": "/documents/matter-32/from-02/Ex Parte Application for Extension of Time to Serve Pleading and Orders.pdf",
+    "filed": true
   },
   {
     "path": "/documents/matter-32/from-02/RECEIPT.pdf"
@@ -44,7 +45,8 @@
     "path": "/documents/matter-32/from-02/Opposition to Motion for U-visa certification.pdf"
   },
   {
-    "path": "/documents/matter-32/from-02/Reply ISO UVisa Cert 10pg.pdf"
+    "path": "/documents/matter-32/from-02/Reply ISO UVisa Cert 10pg.pdf",
+    "filed": true
   },
   {
     "path": "/documents/matter-32/from-02/Notice of Change of Address (July 7, 2026).pdf"
@@ -52,6 +54,6 @@
   {
     "path": "/documents/matter-32/from-02/Request for Dismissal Without Prejudice (Draft, Aug 11 2026).pdf",
     "filed": true,
-    "label": "Request for Dismissal Without Prejudice (executed Aug. 11, 2026; filed Aug. 15, 2026) — Code Civ. Proc. § 581(b)(1), (c); entire action; filed on portfolio pleading paper — confirm clerk accepted in lieu of Judicial Council Form CIV-110"
+    "label": "Request for Dismissal Without Prejudice (executed Aug. 11, 2026; filed Aug. 15, 2026) \u2014 Code Civ. Proc. \u00a7 581(b)(1), (c); entire action; filed on portfolio pleading paper \u2014 confirm clerk accepted in lieu of Judicial Council Form CIV-110"
   }
 ]
