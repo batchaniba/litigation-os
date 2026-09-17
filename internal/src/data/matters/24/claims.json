@@ -1,0 +1,29 @@
+{
+  "summary": "42 USC 1983: Fourteenth Amendment (Substantive & Procedural Due Process), First Amendment (Retaliation); Declaratory Relief",
+  "counts": [
+    {
+      "id": 1,
+      "status": "live",
+      "theory_ids": ["sdp-67910", "perry-v-sindermann"],
+      "title": "Count I — 42 U.S.C. § 1983 Damages: Fourteenth Amendment -- Substantive Due Process — Arbitrary and Conscience-Shocking Denial of Mandatory U Visa Certification Duty"
+    },
+    {
+      "id": 2,
+      "status": "live",
+      "theory_ids": ["pdp-67910", "mathews-v-eldridge"],
+      "title": "Count II — 42 U.S.C. § 1983 Damages: Fourteenth Amendment -- Procedural Due Process — Deprivation Without Constitutionally Adequate Process"
+    },
+    {
+      "id": 3,
+      "status": "live",
+      "theory_ids": ["first-amendment-retaliation", "perry-v-sindermann", "mt-healthy"],
+      "title": "Count III — 42 U.S.C. § 1983 Damages: First Amendment -- Retaliation for Protected Petitioning Activity"
+    },
+    {
+      "id": 4,
+      "status": "live",
+      "theory_ids": ["declaratory-2201"],
+      "title": "Count IV — Declaratory Relief (28 U.S.C. §§ 2201-2202) — Declaring Denial Unconstitutional and Plaintiff's Entitlement to Certification"
+    }
+  ]
+}

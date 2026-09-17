@@ -1650,7 +1650,7 @@
     "date": "Sep. 30, 2026",
     "event": "Hearing on Defendant Serrato's Motion to Dismiss FAC (Dkt. 18) — 1:30 p.m., Mag. Ajay S. Krishnan, Oakland Courtroom 4, 3rd Floor — Newanforbi v. Serrato (4:26-cv-05953-ASK). Reset from Sep. 16 by Clerk's Notice Dkt. 21 (filed Aug. 28) because the motion was noticed on less than 35 days (Civil L.R. 7-2(a)).",
     "source": "/documents/matter-24/Clerk's Notice Resetting Hearing on Motion to Dismiss (Dkt 21, Filed Aug 28 2026).pdf",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "you",
     "type": "hearing",
     "matters": [
@@ -1928,7 +1928,7 @@
       26
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "opposing",
     "source": "/documents/matter-26/PACER Docket Report - E.D. Cal. 2-26-cv-02847-DAD-CKD (Sep 10 2026).pdf",
     "source_type": "pacer",
@@ -4294,7 +4294,7 @@
       27
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "you",
     "source": "/documents/matter-27/CIV-100 Request for Entry of Default - RK Logistics Group Inc (Clerk Default Only, Sep 15 2026).pdf",
     "source_type": "portfolio",
@@ -5056,7 +5056,7 @@
       27
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "opposing",
     "source": "/documents/matter-27/Letter Confirming 15-Day Extension of Randstad's Time to Respond (Aug 18 2026).pdf",
     "source_type": "portfolio",
@@ -5084,7 +5084,7 @@
       27
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "opposing",
     "source": "/documents/matter-27/Gmail - RK Logistics Extension Request to Sep 14 (Aug 21 2026).pdf",
     "source_type": "portfolio",
@@ -10069,7 +10069,7 @@
       26
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "you",
     "source_type": "manual",
     "confidence": "high",
