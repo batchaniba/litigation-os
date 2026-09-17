@@ -57,8 +57,9 @@ link in the agent chat for him is fine. It does not go in the email.
 ## No CI — the gate is local
 
 There is no GitHub Actions CI. The only workflows left are the CourtListener
-ones (`courtlistener-sync`, `counsel-dossier`, `intel-fetch-briefs`); do not
-add others. The checks the old CI job ran now run in the `pre-push` hook
+ones (`courtlistener-sync`, `counsel-dossier`, `intel-fetch-briefs`) and the
+R2 document-upload job (`r2-upload.yml`: `documents` branch → R2, upload-only,
+never deletes; Node `r2-upload.mjs`; approved 2026-09-16). Do not add others. The checks the old CI job ran now run in the `pre-push` hook
 (installed by `npm run prepare`): lint, typecheck, `validate-portfolio`,
 golden damages math, the unit suite, and the fabricated-citation gate.
 Before opening a PR, run `npm run validate` yourself and say so in the PR
@@ -74,6 +75,7 @@ hooks and `npm run` scripts:
 - `validate-portfolio.mjs` — data validation (pre-push gate)
 - `sync-*.mjs` — derived data generation (registry, manifest, summaries, upcoming, short-links)
 - `documents-store.mjs` — `npm run documents:pull -- --matter N` for one folder. R2 holds the bytes (`npm run docs:fetch`); phone-tap slug PDFs stay on `main` until a public origin returns 200.
+- `r2-upload.mjs` / `lib/r2-client.mjs` — `documents` branch → R2 (`r2-upload.yml`)
 - `load-matters.mjs`, `lib/matter-schema.mjs` — shared loaders and schemas
 - `courtlistener/*.mjs` — docket sync
 
