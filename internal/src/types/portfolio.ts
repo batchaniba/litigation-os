@@ -98,6 +98,8 @@ export interface MatterSummary {
   filed: string;
   judge: string;
   cluster: number;
+  related?: number[];
+  same_incident?: string;
   type: MatterType | string;
   defendants: string;
   causes: string[];

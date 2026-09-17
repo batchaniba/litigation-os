@@ -1,14 +1,12 @@
 {
   "number": 36,
+  "last_updated": "2026-09-16",
   "caption": "Brendan Ngwa Nforbi v. AT&T Mobility Services LLC",
   "case_no": "TBD",
-  "court": "USDC E.D. Cal. — Sacramento Division (proposed direct filing)",
-  "courtlistener": {
-    "court_id": "caed"
-  },
-  "claims": "FCRA § 1681b(b)(3)(A); ICRAA §§1786.40/1786.50; Penal Code §290.46(j)(2)(E)/(j)(4)(A) — v3 opening counts",
-  "status": "FEDERAL REDRAFT v3 — E.D. Cal. Sacramento; narrowed to three statutory counts after hostile at-will/reliance audit. Contract/covenant/estoppel/misrepresentation reserved pending complete offer and reliance records.",
-  "status_label": "Federal redraft v3 — top-tier audit",
+  "court": "USDC E.D. Cal. (Sep. 16 walk-up; unfiled) / San Joaquin Sup. Ct. (Sep. 8 packet LOCKED, unfiled)",
+  "claims": "FCRA § 1681b(b)(3); ICRAA § 1786.40; CCRAA § 1785.20.5 (alternative); Breach of Contract; Implied Covenant; Promissory Estoppel; Negligent Misrepresentation; Fraud / Concealment; UCL § 17200; Penal Code § 290.46(j)",
+  "status": "EXECUTED (unfiled) — E.D. Cal. walk-up packet dated September 16, 2026 (complaint, JS 44, AO 239, AO 440, magistrate consent CONSENT-checked). San Joaquin September 8 packet remains LOCKED and unfiled. Do not serve the defendant with the consent form.",
+  "status_label": "EDCA walk-up Sep. 16 — unfiled",
   "lifecycle": "pre_filing",
   "proceeding": "federal_civil",
   "phase": "pre_filing",
@@ -17,20 +15,24 @@
   "cluster": 3,
   "type": "Federal",
   "archived": false,
-  "note": "Current source of truth is PR #802 v4 markdown complaint. Opening claims: FCRA adverse action, ICRAA adverse-action advice, and §290.46. No delayed-discovery date. Do not name Lerma in the complaint. Safeco willfulness is one paragraph, not a count. No REVIEW DRAFT banner on the caption. The prior contract/implied-covenant/promissory-estoppel/negligent-misrepresentation counts remain reserved. FADV report timing before 12:23 and LTI Spanish score/receipt timing are the decisive factual gates. Federal PDF generator is intentionally disabled until filing gates are cleared.",
-  "defendants": "AT&T Mobility Services LLC, a Delaware limited liability company, is the proposed sole opening defendant as employer/user of the report and party to the May 28, 2026 written offer. AT&T Inc. is not named merely as parent. First Advantage Background Services Corp. is pleaded as AT&T's CRA from the May 28, 10:19 a.m. task (AT&T Non Management, account 132156) and remains a nonparty discovery source unless AT&T-specific records support an independent CRA claim. Richard Patterson and Orville R. Bell are witnesses, not presently named.",
+  "note": "LOCKED. Packet is signed for September 8, 2026 filing. Do not treat as filed until clerk-stamped. Do not rewrite pleading prose unless a new AT&T or First Advantage document appears. Plaintiff confirmed Workday acceptance, onboarding, reliance, and nonreceipt of pre-adverse materials. First Advantage is not a named defendant. § 1786.16 is reserved, not pleaded. § 290.46(j) is the last count on page one.",
+  "defendants": "AT&T Mobility Services LLC (likely legal employer for the Mobility Orange Retail Sales Consultant role; AT&T Inc. not named merely as parent); DOES 1–20 for the actual AT&T employing/decisionmaking entity, any First Advantage furnishing affiliate, manager, adjudication personnel, and other responsible actors. First Advantage Background Services Corp. is a fact witness and inspection target, not a named defendant. Richard Patterson is treated as an AT&T recruiter and percipient witness, not presently named individually.",
   "causes": [
-    "[FEDERAL ANCHOR] FCRA §1681b(b)(3)(A) — I&B that AT&T based rescission in whole or part on a consumer report furnished before 12:23; no pre-adverse report/Summary of Rights; tangible accepted-job loss pleaded for Article III.",
-    "[STATE] ICRAA §§1786.40/1786.50 — I&B report obtained; no adverse-action advice identifying First Advantage; distinct omission from FCRA pre-adverse process.",
-    "[STATE] Penal Code §290.46(j)(2)(E)/(j)(4)(A) — I&B California-registry source/use; one-sentence same-consumer comparator; Plaintiff does not possess AT&T's report and does not allege source-field wording as known fact.",
-    "[RESERVED] FCRA §1681b(b)(2)(A) / ICRAA §1786.16 — inspect actual authorization package first.",
-    "[RESERVED] Contract, implied covenant, promissory estoppel, negligent misrepresentation — require complete offer/at-will/arbitration terms and concrete reliance/internal-score proof before addition.",
-    "[RESERVED] Fair Chance/FEHA, intentional fraud/concealment, First Advantage vendor claims — add only on independent prerequisites/evidence."
+    "[PLEADED ON INFORMATION AND BELIEF] FCRA, 15 U.S.C. § 1681b(b)(3)(A) — against AT&T if a consumer report contributed to rescission; invites federal-question removal; Plaintiff confirms no report/rights notice arrived before 12:23 p.m.; § 1681b(b)(2) standalone disclosure reserved until the authorization package is in hand",
+    "[INDEPENDENT PATH] ICRAA, Civ. Code §§ 1786.40 and 1786.50 — against AT&T as user; vendor First Advantage is not a named defendant; same-day screen, no 1786.40 advice at rescission; §§ 1786.10 / 1786.22 inspection not yet demanded; 1786.16 reserved until the exact authorization package is in hand",
+    "[ALTERNATIVE] CCRAA, Civ. Code §§ 1785.20.5 and 1785.31 — if the First Advantage product was an ordinary consumer credit report rather than investigative; no copy or rights notice before 12:23",
+    "[ALTERNATIVE] Breach of Written Contract and Implied Covenant — Plaintiff accepted through Workday and began onboarding",
+    "[ALTERNATIVE] Promissory Estoppel — official offer, compensation, tentative start date, accepted onboarding, and reliance",
+    "[ALTERNATIVE] Negligent Misrepresentation — official offer after assessment period if AT&T already treated the Spanish result as disqualifying or lacked grounds to represent approval",
+    "[ALTERNATIVE / DISCOVERY DEPENDENT] Intentional Misrepresentation and Concealment — requires internal proof of knowledge, intent, reliance, and managing-agent involvement for corporate punitive damages",
+    "[DERIVATIVE / EQUITABLE] UCL § 17200 — unlawful, unfair, and fraudulent prongs; restitution limited to vested money/property and injunction subject to standing and adequate-remedy proof",
+    "[PLEADED ON INFORMATION AND BELIEF] Penal Code § 290.46(j) — last count on page one; two-hour chronology, First Advantage order, contemporaneous Megan's Law listing, and absence of required adverse-action notices; AT&T report is not attached; Lerma cannot be decided on the face of this complaint",
+    "[PRESERVED, NOT PLEADED] FEHA and Fair Chance Act — do not plead without CRD exhaustion/right-to-sue and supporting score or criminal-history-use evidence"
   ],
-  "key_facts": "On May 16, 2026, Plaintiff submitted two AT&T applications: R-107776 Retail Sales Consultant at Stockton Pacific and R-106742 Bilingual Spanish Retail Sales Consultant at Lodi. Both advanced through interviews. LTI provided an ACTFL Telephone OPIc Spanish test expiring May 25; the record still lacks the score, audio, threshold, receipt time, and decision notes. On May 28 at 10:13 a.m., Workday officially offered R-106742: Retail Sales Consultant reporting to Orville R. Bell at 2439 W. Kettleman Lane, $24.95/hour paid biweekly, $13,700 annual target variable compensation prorated for part-time hours, tentative June 15 start, candidate C-1690172. Contingencies omit Spanish. Workday issued onboarding tasks at 10:15–10:17 a.m.; First Advantage sent the AT&T Non Management screening task (account 132156) at 10:19 a.m. At 12:23 p.m., Patterson texted that the manager no longer wanted to proceed because Plaintiff did not pass Spanish. Plaintiff accepted through Workday, began onboarding, and received no pre-adverse report or rights summary. Report contents and use are I&B ultimate facts. No count uses a delayed-discovery date.",
-  "procedural_status": "Pre-filing federal v3 on PR #802. Three opening statutory counts. Must audit First Advantage order/report/transmission timing and LTI Spanish score/AT&T receipt timing before filing. Confirm entity/SOS agent and use official federal forms.",
-  "damages": "The offer confirms $24.95/hour, biweekly pay, a $13,700 annual variable-compensation target prorated for part-time hours, and a tentative June 15, 2026 start. It does not state weekly hours; those figures are not invented. Federal draft seeks nonduplicative actual/compensatory damages according to proof; FCRA remedies under §§ 1681n/1681o; ICRAA actual damages or $10,000, whichever is greater; Penal Code § 290.46(j)(4)(A) remedies; and contract/estoppel expectation or reliance damages. Portfolio valuation remains the post-favorable-MTD settlement range: $90,000 / $135,000 / $175,000. Do not plead § 1332 amount-in-controversy on invented LLC citizenship.",
-  "risk": "Best current federal posture in the 36/37/39 set because all limitations clocks are fresh. Main merits risk: no proof yet that any consumer-report result was furnished before the 12:23 rescission; if none was, all three opening screening counts materially weaken. Second risk: AT&T's contemporaneous Spanish explanation could establish an independent disqualifier under Dutta if the score was received and automatically disqualifying. §290 remains source-specific; Lerma controls if the actual AT&T report contradicts registry sourcing. At-will and reliance law make the former four employment-offer fallback counts weaker, so they are reserved rather than used to dilute the opening complaint.",
+  "key_facts": "On May 16, 2026, Plaintiff submitted two AT&T applications: R-107776 Retail Sales Consultant at Stockton Pacific and R-106742 Bilingual Spanish Retail Sales Consultant at Lodi. Both advanced through interviews. LTI then provided an ACTFL Telephone OPIc Spanish test expiring May 25 and stated that the rating would go to AT&T Taleo; the record still lacks the score, audio, threshold, receipt time, and decision notes. On May 28 at 10:13 a.m., Workday officially offered Plaintiff R-106742. The two-page offer identifies the position as Retail Sales Consultant reporting to Orville R. Bell at 2439 W. Kettleman Lane, $24.95/hour paid biweekly, $13,700 annual target variable compensation prorated for part-time hours, and a tentative June 15 start. It lists acceptance, hiring documents, work authorization, applicable export/rehire checks, absence of restrictive agreements, and satisfactory standardized background checks as contingencies; it does not list Spanish proficiency, at-will status, arbitration, weekly hours, or an unrestricted withdrawal right. Workday issued onboarding tasks at 10:15–10:17, and First Advantage sent a screening task at 10:19. At 12:23, Patterson texted that “the manager” no longer wanted to proceed because Plaintiff did not pass Spanish. Plaintiff accepted the offer through Workday, began onboarding, and received no pre-adverse report or rights summary. The sequence proves an offer, acceptance, and abrupt rescission. Registry use and report transmission remain information and belief.",
+  "procedural_status": "LOCKED. Executed verified complaint and San Joaquin intake dated September 8, 2026; signed, not yet filed. Plaintiff confirmed Workday acceptance, onboarding, reliance, and nonreceipt. First Advantage is not a named defendant. § 1786.16 is reserved, not pleaded from the 10:19 task. § 290.46(j) is the tenth count. CCRAA is pleaded in the alternative to ICRAA. Lerma cannot run on an unattached AT&T report. FCRA may permit removal. Serve the current AT&T agent, not a store. Do not bury Serrato disclosures that day.",
+  "damages": "The offer confirms $24.95/hour, biweekly pay, a $13,700 annual variable-compensation target prorated for part-time hours, and a tentative June 15, 2026 start. It does not state weekly hours. Plaintiff accepted and began onboarding. Portfolio valuation is the post-favorable-MTD settlement range: $90,000 / $135,000 / $175,000. That assumes the pleading survives demurrer on contract and estoppel. 290/FCRA remain I&B until the AT&T report is produced. Statutory remedies if use is proven: Penal Code § 290.46(j)(4)(A) actual/treble with a $250 floor, fees, exemplary damages, or a civil penalty up to $25,000; ICRAA § 1786.50 actual damages or $10,000, whichever is greater; FCRA remedies depend on negligent or willful violation.",
+  "risk": "Strongest of the four on paper: written offer, $24.95, start date, two-hour rescission, confirmed Workday acceptance and onboarding, and a named vendor that is not a defendant. Lerma cannot run at demurrer without the AT&T report. If production shows no report before 12:23, 290/FCRA/ICRAA thin out; contract and estoppel still stand on the confirmed acceptance. FCRA invites federal-question removal; diversity removal is independently likely. Fraud remains discovery-dependent. FEHA omitted absent CRD.",
   "evidence": [
     "Workday application receipt — R-107776 Retail Sales Consultant, Stockton Pacific; May 16, 2026 at 1:15 p.m.",
     "Modern Hire Virtual Job Tryout invitation — Stockton Pacific; May 16, 2026 at 1:15 p.m.; 120-hour completion window",
@@ -42,21 +44,42 @@
     "LTI ACTFL Telephone OPIc instructions — May 22, 2026 at 11:37 a.m.; Spanish speaking test; expires May 25; rating supplied to AT&T Taleo",
     "Workday “Welcome to the team” email — May 28, 2026 at 10:13 a.m.; official offer for R-106742",
     "Workday offer-process task emails — review documents at 10:15 a.m.; government identifiers at 10:16 a.m.; personal information at 10:17 a.m.",
-    "First Advantage task invitation for AT&T Non Management — May 28, 2026 at 10:19 a.m.; FCRA disclosure/authorization and optional ID.me language; account 132156",
-    "SMS screenshot attributed to Richard Patterson AT&T — May 28, 2026 at 12:23 p.m.; manager would not proceed because a Spanish speaker was needed and Plaintiff did not pass the Spanish assessment; Plaintiff’s acknowledgment preserved and is not a waiver",
+    "First Advantage task invitation for AT&T Non Management — May 28, 2026 at 10:19 a.m.; FCRA disclosure/authorization and optional ID.me language",
+    "SMS screenshot attributed to Richard Patterson AT&T — May 28, 2026 at 12:23 p.m.; manager would not proceed because a Spanish speaker was needed and Plaintiff did not pass the Spanish assessment; Plaintiff’s acknowledgment preserved",
     "Formal AT&T Retail Offer Letter — May 28, 2026; Retail Sales Consultant reporting to Orville R. Bell at Lodi; $24.95/hour; $13,700 annual target variable compensation prorated for part-time hours; tentative June 15 start; listed contingencies omit Spanish passage",
-    "FCRA 15 U.S.C. §§ 1681b(b)(3)(A), 1681n, 1681o, 1681p",
-    "ICRAA Civ. Code §§ 1786.40, 1786.50, 1786.52",
-    "Penal Code § 290.46(j)(1), (j)(2)(E), (j)(4)(A)",
-    "E.D. Cal. Local Rule 120(d) — San Joaquin County civil actions commence on the Sacramento side",
-    "Civ. Code §§ 1786.10, 1786.22 — First Advantage file inspection; drafted, not yet served",
-    "Labor Code § 1198.5 — AT&T personnel-file inspection; drafted, serve current SOS agent, not the Lodi store",
-    "Lerma v. Amazon, C.D. Cal. 8:22-cv-01727, Dkt. 36 — dismissal after the employer's report was in the record, not a pleading-stage inference from an unattached report",
-    "v3 hostile audit — opening complaint narrowed to FCRA / ICRAA / §290.46; contract/covenant/estoppel/negligent-misrepresentation reserved",
-    "v3 Article III / Dutta hardening — tangible accepted-job loss plus pre-adverse opportunity; Spanish independent-disqualifier defense expressly preserved",
-    "v3 §290 limitations — May 28, 2026 use is timely under either a potential one-year or three-year characterization; no need to select a period now"
+    "Code Civ. Proc. §§ 425.10, 452 — notice pleading; liberal construction of facts exclusively in Defendants' possession",
+    "Civ. Code §§ 1786.10, 1786.22 — First Advantage file inspection; not yet demanded",
+    "Lerma v. Amazon, C.D. Cal. 8:22-cv-01727, Dkt. 36 — dismissal after the employer's report was in the record, not a pleading-stage inference from an unattached report"
   ],
   "documents": [
+    {
+      "path": "/documents/matter-36/edca/E.D. Cal. Intake Packet (print copy) - Ngwa Nforbi v. AT&T (Sep 16 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-36/edca/Consent to Magistrate Judge Jurisdiction - Ngwa Nforbi v. AT&T Mobility Services LLC (E.D. Cal.) (Sep 16 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-36/edca/Consent to Magistrate Judge Jurisdiction - Matters 36-39 (E.D. Cal.) (Sep 16 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-36/edca/JS 44 Civil Cover Sheet - Ngwa Nforbi v. AT&T Mobility Services LLC (E.D. Cal.) (Sep 16 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-36/edca/AO 239 IFP Application - Ngwa Nforbi v. AT&T Mobility Services LLC (E.D. Cal.) (Sep 16 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-36/edca/AO 440 Summons - AT&T Mobility Services LLC (E.D. Cal.) (Sep 16 2026).pdf",
+      "filed": false
+    },
+    {
+      "path": "/documents/matter-36/edca/Complaint - Ngwa Nforbi v. AT&T Mobility Services LLC (E.D. Cal.) (Sep 16 2026).pdf",
+      "filed": false
+    },
     {
       "path": "/documents/matter-36/Application Received - R-107776 Retail Sales Consultant.pdf",
       "filed": false
@@ -189,5 +212,8 @@
       "path": "/documents/matter-36/FW-003 Order on Court Fee Waiver - Ngwa Nforbi v AT&T Mobility Services LLC (Sep 8 2026).pdf",
       "filed": false
     }
-  ]
+  ],
+  "courtlistener": {
+    "court_id": "caed"
+  }
 }
