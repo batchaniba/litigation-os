@@ -1,0 +1,24 @@
+# Cloudflare Worker: litigation portfolio document + data API
+# Reads R2 via a *binding* — no keys or secrets anywhere in this repo.
+
+name = "litigation-doc-api"
+main = "src/index.mjs"
+compatibility_date = "2026-09-17"
+
+[[r2_buckets]]
+binding = "DOCS"
+bucket_name = "litigation-documents"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "litigation-portfolio"
+# Fill in after: wrangler d1 create litigation-portfolio
+database_id = "REPLACE_WITH_D1_DATABASE_ID"
+
+[triggers]
+# UTC approximations of America/Los_Angeles wall-clock times.
+# 08:08 PT daily fuse digest  -> 15:08 UTC in PDT (16:08 UTC in PST)
+# 07:08 PT Monday roll call   -> 14:08 UTC in PDT (15:08 UTC in PST)
+# The scheduled handler also double-checks the weekday, so a one-hour
+# seasonal shift only moves the fire time, never the digest type.
+crons = ["8 15 * * *", "8 14 * * 1"]
