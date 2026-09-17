@@ -21,6 +21,7 @@ const steps = [
   ...(skipManifest ? [] : [["sync:manifest", ["npm", "run", "sync:manifest"]]]),
   ["sync:summaries", ["npm", "run", "sync:summaries"]],
   ["sync:upcoming", ["npm", "run", "sync:upcoming"]],
+  ["sync:index", ["npm", "run", "sync:index"]],
   ["sync:short-links", ["npm", "run", "sync:short-links"]],
   ["generate:readme", ["npm", "run", "generate:readme"]],
 ];

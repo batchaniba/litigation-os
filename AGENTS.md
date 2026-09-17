@@ -1,67 +1,43 @@
 # Repository Instructions
 
-## Skip GitHub PR #666
+Crawl this repo as a graph. Do not reconstruct a docket from README or from `status` / `procedural_status`.
 
-Do not work on, review, comment on, update, rebase, merge, close, re-open, label, or push to **PR #666** (`https://github.com/newanforbi/interactive-litigation-portfolio/pull/666`). If assigned it or pointed at it, say it is skipped by standing instruction and stop. This skip is only #666.
+## Crawl order
 
-## Stipulations — plaintiff-first, with discretion
+1. `internal/src/data/index/matters.json` — every matter: path, case_no, phase, next_clock, layout.
+2. Split layout: fetch only the sibling files the question needs (`clocks.json`, `docket.json`, `events.jsonl`, `claims.json`, …). Identity is `matter.json`.
+3. Legacy layout: `internal/src/data/matters/NN.json` is still canonical until split. Split it with `node internal/scripts/split-matter.mjs NN --replace` when prose is blocking you.
+4. People, clusters, citations: `internal/src/data/index/{people,clusters,citations}.json`.
+5. Schema and limits: `internal/src/data/index/schema.json`.
 
-When the work is actually a stipulation or defense agreement (extra time, a stay, a waiver, expanded relief, or his signature on their paper), read and follow [Stipulation Defense](internal/docs/STIPULATION_DEFENSE.md). Draft terms most favorable to Plaintiff. Maintain or shorten defense timelines when supported and advantageous; preserve Plaintiff's preparation time and favorable hearing dates. Require an explicit deadline comparison and concession audit. Identify concrete Plaintiff benefit for exceptions; do not silently grant defense time, waive rights, expand defense options, or authorize Plaintiff's signature.
+## Truth
 
-Do not import that voice into ordinary Plaintiff papers (status reports, oppositions, complaints, hearing notes). Do not recite "this is not a stipulation" on those papers. Use discretion among actual stipulations: be firm on extra time, stays, waivers, and counsel's `/s/`; treat authenticity, a name correction he already wants, and a court-asked magistrate-settlement yes as ordinary.
+- Never treat README as live.
+- Never invent a docket number. If `dkt` is null, say so.
+- `clocks.json` (split) or index `next_clock` wins over prose. Vacated clocks are not live.
+- Operative pleading is the docket row with `"operative": true`. ASK vs CRB name-conform packets: CRB supersedes; they are not two cases.
+- PDF bytes live in Cloudflare R2 (`litigation-documents` bucket, key `sha256/<first2>/<rest>.pdf` — deterministic from the manifest sha256). Fetch one with `npm run docs:fetch <sha256>` (needs `R2_*` env; bytes are re-hashed client-side). Search `.txt` / `.meta.json` sidecars on this branch. The `documents` branch is a cold backup.
+- Do not put GitHub or repo URLs in anything Plaintiff will send or file.
 
-Verify rules and sources before case-specific deadline conclusions. Proposed agreements do not automatically change operative calendar dates. Preserve existing court orders and executed agreements as historical facts.
+## Limits (what exists, and why)
 
-For project structure and existing development workflows, consult README.md and internal/docs/SUPERCYCLE_INSTRUCTIONS.md.
+Cap the first fetch, not the case. Numbers live in `GRAPH_LIMITS` (`assembleMatter.js`) and `index/schema.json` `x-limits`.
 
-## Email ending
+- **Keep:** `matter.json` ≤80 lines / 8KB (identity fetch). `status_label` ≤60 characters (UI chip). Word ceilings on unsplit `NN.json` diaries. Index `next_clock.title` ≤240 characters when the source is a timeline blob.
+- **Do not add:** line or word ceilings on `docket.json`, `events.jsonl`, `clocks.json`, claims, damages, or evidence. Schema failure for an overdue `next_clock`. Output-length caps on agent work. Literary line limits on the case.
 
-Outgoing emails close with:
+## Standing locks
+
+- Skip GitHub PR **#666**.
+- Actual stipulations / extensions / stays: read `internal/docs/STIPULATION_DEFENSE.md`. Plaintiff-first. Do not import that voice into ordinary Plaintiff papers.
+- Email close after the valediction:
 
 ```
 Brendan Ngwa Nforbi
 Plaintiff, In Propria Persona
 ```
 
-No phone, no email address, no "In Pro Per" on the close.
-
-## Counsel dossiers
-
-Opposing-counsel identity/role research lives under `internal/docs/counsel/`. Seeded: Kabat Chapman & Ozmer (Williams / Chapman) at [`internal/docs/counsel/kcoz/`](internal/docs/counsel/kcoz/). Append PACER pulls there. Those dockets are not related cases. Do not email counsel about the research.
-
-## No GitHub to outsiders
-
-Never put a GitHub, `raw.githubusercontent.com`, git-repo, or document-store
-URL in anything Plaintiff will send or file. Attach the file. A download
-link in the agent chat for him is fine. It does not go in the email.
-
-## No CI — the gate is local
-
-There is no GitHub Actions CI. The only workflows left are the CourtListener
-ones (`courtlistener-sync`, `counsel-dossier`, `intel-fetch-briefs`); do not
-add others. The checks the old CI job ran now run in the `pre-push` hook
-(installed by `npm run prepare`): lint, typecheck, `validate-portfolio`,
-golden damages math, the unit suite, and the fabricated-citation gate.
-Before opening a PR, run `npm run validate` yourself and say so in the PR
-body. Production deploys are scheduled, not per-push; see
-`internal/docs/VERCEL_DEPLOYS.md`.
-
-## Runtime boundary: Python vs Node
-
-`internal/scripts/` contains two runtimes. Do not mix them.
-
-**Node (.mjs)** — the build/validation/sync pipeline. These run in the git
-hooks and `npm run` scripts:
-- `validate-portfolio.mjs` — data validation (pre-push gate)
-- `sync-*.mjs` — derived data generation (registry, manifest, summaries, upcoming, short-links)
-- `load-matters.mjs`, `lib/matter-schema.mjs` — shared loaders and schemas
-- `courtlistener/*.mjs` — docket sync
-
-**Python (.py)** — one-off document generation and filling. These are
-matter-specific utilities (e.g. `fill-matter-12-*.py`, `build-citation-index.py`)
-run manually by Aliko. They are **not** part of the build, the hooks, or any npm script.
-
-Rules:
-- New automation that runs in the hooks or `npm run` must be Node (.mjs).
-- Python scripts must not be added to `package.json` scripts or workflow steps.
-- Shared logic (matter loading, validation) lives in Node; do not duplicate it in Python.
+No phone, no email address, no "In Pro Per."
+- Counsel research: `internal/docs/counsel/` and `internal/docs/legal-intel/counsel/*.json`. Those dockets are not related cases. Do not email counsel about the research.
+- No GitHub Actions CI except the CourtListener workflows. The gate is local (`npm run validate` / pre-push).
+- Node (`.mjs`) for hooks and `npm run`. Python is one-off document generation, not the build.

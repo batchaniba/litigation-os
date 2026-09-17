@@ -13,10 +13,10 @@ export const PROSE_BUDGETS = {
 export const PROSE_FIELDS = Object.keys(PROSE_BUDGETS);
 
 export const PROSE_HINTS = {
-  key_facts: "keep to the operative facts; dated docket entries belong in timeline.json",
-  procedural_status: "move dated docket entries into timeline.json — it already carries them",
+  key_facts: "keep to the operative facts; dated docket entries belong in timeline.json or clocks.json",
+  procedural_status: "move dated docket entries into clocks.json / timeline.json — split the matter if this field is a diary",
   risk: "keep to the defense theory and its answer; drop the procedural recap",
-  status: "one posture sentence; the detail belongs in procedural_status / timeline.json",
+  status: "one posture sentence; the detail belongs in clocks.json / timeline.json",
 };
 
 export function wordCount(value) {

@@ -1,5 +1,6 @@
 {
   "number": 30,
+  "last_updated": "2026-09-16",
   "caption": "Newanforbi v. Moua, et al.",
   "case_no": "TBD",
   "court": "USDC N.D. Cal.",
@@ -7,8 +8,8 @@
     "court_id": "cand"
   },
   "claims": "42 U.S.C. §1983 First Amendment Retaliation, §1983 Fourteenth Amendment Due Process, Bane Act Cal. Civ. Code §52.1, IIED",
-  "status": "Pre-complaint — verified Complaint v9 (Moua + DOES) ready for anticipated Sep. 16, 2026 N.D. Cal. filing after the Jul. 18 Government Claims Act claim is deemed rejected (~Sep. 1). Noguchi/Rojo were served under an earlier draft but dropped from the operative pleading by design. Macy's employment ended by resignation July 31, 2026, expressly attributed to the Santa Clara transfer.",
-  "status_label": "Pre-filing — GCA claim pending; Moua-only complaint ready",
+  "status": "Pre-complaint — verified Complaint v9 (Moua + DOES) ready. Jul. 18 Government Claims Act claim is deemed rejected ~Sep. 1, 2026; the six-month suit window for state-law claims runs to ~Mar. 1, 2027. Anticipated N.D. Cal. filing date of Sep. 16 has not been confirmed as filed. Noguchi/Rojo dropped from the operative pleading by design.",
+  "status_label": "Pre-filing — Moua v9 ready; GCA window open",
   "lifecycle": "pre_filing",
   "proceeding": "federal_civil",
   "phase": "pre_filing",
