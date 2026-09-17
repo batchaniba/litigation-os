@@ -1,6 +1,6 @@
 {
   "generated": true,
-  "today": "2026-09-16",
+  "today": "2026-09-17",
   "matters": [
     {
       "number": 1,
@@ -851,11 +851,11 @@
         "id": "26-deadline-2",
         "date": "2026-09-16",
         "kind": "deadline",
-        "status": "open",
+        "status": "overdue",
         "title": "Rule 15(a)(1)(B) amendment-as-of-right window — Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). UPS served the MTD by mail Aug. 26, 2026…",
         "source_dkt": 7
       },
-      "overdue": false,
+      "overdue": true,
       "last_updated": "2026-09-16",
       "files": [
         "claims.json",
@@ -1003,11 +1003,11 @@
         "id": "30-deadline-1",
         "date": "2026-09-16",
         "kind": "deadline",
-        "status": "open",
+        "status": "overdue",
         "title": "Anticipated filing date (computed) — Complaint v9 (Moua and DOES 1-10), Newanforbi v. Moua, et al. (Matter 30); 15 days after the anticipated Sep. 1, 2026…",
         "source_dkt": null
       },
-      "overdue": false,
+      "overdue": true,
       "last_updated": "2026-09-16",
       "files": [
         "claims.json",
@@ -1073,11 +1073,11 @@
         "date": "2026-09-17",
         "kind": "deadline",
         "status": "open",
-        "title": "FILE — signed 415.20(b) declaration + Exhibit A USPS receipt + POS in Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK) after the September 16 postmark. San…",
+        "title": "FILE — signed 415.20(b) declaration + Exhibit A USPS receipt + POS in Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK) after the September 17 postmark. San…",
         "source_dkt": 16
       },
       "overdue": false,
-      "last_updated": "2026-09-16",
+      "last_updated": "2026-09-17",
       "files": [
         "claims.json",
         "clocks.json",

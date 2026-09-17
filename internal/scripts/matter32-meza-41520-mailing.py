@@ -9,12 +9,12 @@ This packet is the missing mailing.
 
   python3 internal/scripts/matter32-meza-41520-mailing.py
   python3 internal/scripts/matter32-meza-41520-mailing.py \\
-      --date "September 16, 2026" --mailed-from "San Jose, California"
+      --date "September 17, 2026" --mailed-from "San Jose, California"
       --declaration-only
 
 Date the papers the day the envelope actually goes in the mail. POS is
 valid only if mailed that day from the stated city. Do not treat
-September 16 as a default date against Meza or Li.
+September 17 as a default date against Meza or Li.
 """
 
 from __future__ import annotations
@@ -45,8 +45,9 @@ from signature_stamp import SIGNATURE_NATIVE_PX, SIGNATURE_PATH  # noqa: E402
 ROOT = SCRIPT_DIR.parent
 OUT_DIR = ROOT / "public/documents/matter-32/ndcal"
 
-DEFAULT_DATE = "September 16, 2026"
+DEFAULT_DATE = "September 17, 2026"
 DEFAULT_MAILED_FROM = "San Jose, California"
+SHORT_DECL = "meza-41520-decl"
 SHORT_MAIL = "meza-41520-mail"
 SHORT_FILING = "meza-41520-filing"
 
@@ -623,11 +624,11 @@ def write_instructions_pdf(path: Path, exec_date: str, mailed_from: str) -> Path
 
     line("What goes in the Meza envelope (first-class, postage prepaid)", 12, True, 16)
     line("Use the assembled mailing bundle, or print these in this order:", 10.5)
-    line("  1. Cover letter (signed) — one page")
-    line("  2. Issued Meza summons only (Dkt. 3, page 2 — 4030 Kiernan Ave.)")
-    line("  3. First Amended Complaint, Dkt. 5 (21 pages)")
-    line("  4. Notice Identifying the Operative FAC (2 pages)")
-    line("  5. CMC / ADR order, Dkt. 4 (2 pages)")
+    line("  1. Issued Meza summons only (Dkt. 3, page 2 — 4030 Kiernan Ave.)")
+    line("  2. First Amended Complaint, Dkt. 5 (21 pages)")
+    line("  3. Notice Identifying the Operative FAC (2 pages)")
+    line("  4. CMC / ADR order, Dkt. 4 (2 pages)")
+    line("No cover letter in this envelope.")
     line("Address: Santiago Meza-Gonzalez / CHP Modesto Area /", 10.5)
     line("4030 Kiernan Avenue / Modesto, CA 95356", 10.5)
     line("That is the place where Fischer left the copies. The statute requires", 10.5)
@@ -688,11 +689,11 @@ ENVELOPE TO MEZA (first-class, postage prepaid)
   4030 Kiernan Avenue
   Modesto, CA 95356
 
-  1. Cover letter
-  2. Meza summons only (Dkt. 3 page 2)
-  3. FAC Dkt. 5
-  4. Notice identifying the operative FAC
-  5. CMC/ADR order Dkt. 4
+  1. Meza summons only (Dkt. 3 page 2)
+  2. FAC Dkt. 5
+  3. Notice identifying the operative FAC
+  4. CMC/ADR order Dkt. 4
+  No cover letter.
 
 Do not enclose Dkt. 16, this sheet, the declaration, or any URL.
 
@@ -885,7 +886,6 @@ def main() -> None:
 
     n_mail = assemble(
         [
-            outs["cover_letter"],
             outs["meza_summons"],
             FAC,
             NOTICE,
@@ -901,6 +901,7 @@ def main() -> None:
         ],
         outs["filing_packet"],
     )
+    publish_short_link(outs["plaintiff_decl"], SHORT_DECL)
     publish_short_link(outs["mail_bundle"], SHORT_MAIL)
     publish_short_link(outs["filing_packet"], SHORT_FILING)
 
@@ -916,7 +917,7 @@ def main() -> None:
     print(f"filing packet:  {outs['filing_packet']} ({n_file} pp.)")
     print(f"email:          {outs['email']}")
     print(f"how-to:         {outs['how_to']}")
-    print(f"short links:    /{SHORT_MAIL}  /{SHORT_FILING}")
+    print(f"short links:    /{SHORT_DECL}  /{SHORT_MAIL}  /{SHORT_FILING}")
     print(
         f"FILED_STATUS=False; execution date={args.date}; "
         f"mailed from={args.mailed_from}"
