@@ -68,6 +68,19 @@ ever: a read-only token scoped to `litigation-documents`. Admin keys live
 in exactly two places: the laptop env file and the Worker's bindings.
 See `.cursor/rules/worker-not-keys.mdc`.
 
+### MCP endpoint — the document-fetch path for external models
+
+`POST https://litigation-doc-api.ss8sxswwkt.workers.dev/mcp` — stateless
+Streamable HTTP (JSON-RPC 2.0, no auth, CORS `*`). Any MCP-capable model or
+agent (Claude Code, Cursor, Claude Desktop, ChatGPT, Grok) points its client
+at that URL and gets read-only tools over the same store: `listMatters`,
+`getMatter`, `upcomingDeadlines`, `getFuseBoard`, `getMatterDocs`,
+`searchDocuments`, `fetchDocument` (returns size/ETag plus the
+`GET /doc/<sha256>` download URL — PDF bytes are never embedded in tool
+results). This is the preferred way for an external model to fetch
+documents: no R2 keys, no repo clone, no credentials of any kind. Local
+agents with `R2_*` keep using `npm run docs:fetch` and the query interface.
+
 ## No GitHub Actions
 
 Do not add `.github/workflows/`. The spending limit already refuses every job.
