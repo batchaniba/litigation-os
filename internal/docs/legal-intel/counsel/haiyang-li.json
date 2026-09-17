@@ -1,0 +1,25 @@
+{
+  "id": "haiyang-li",
+  "name": "Haiyang A. Li",
+  "bar": "CA 288063",
+  "admitted": "2012-12-07",
+  "status": "active",
+  "role": "Deputy Attorney General",
+  "office": "California Department of Justice",
+  "address": "300 South Spring Street, Suite 1702, Los Angeles, CA 90013-1230",
+  "phone": "(213) 269-6404",
+  "email": "Haiyang.Li@doj.ca.gov",
+  "supervisor": "Elizabeth S. Angres",
+  "appears_in": [24, 32, 2],
+  "last_move": {
+    "ts": "2026-09-16T16:36:00-07:00",
+    "matter": 24,
+    "type": "served",
+    "title": "Reply ISO MTD FAC (Dkt. 18)"
+  },
+  "predicted": {
+    "reply_pillars": ["discretion-no-entitlement", "qualified-immunity-wesby"],
+    "silence": ["perry-v-sindermann", "mt-healthy", "roth-entitlement"]
+  },
+  "hand": "internal/docs/legal-intel/counsel/haiyang-li-hand.md"
+}
