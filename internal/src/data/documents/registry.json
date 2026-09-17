@@ -2057,6 +2057,11 @@
       "ownerMatter": 26
     },
     {
+      "path": "/documents/matter-27/[Proposed] Judgment (JUD-100) - Randstad US LLC (Default Prove-Up, Sep 16 2026).pdf",
+      "label": "[Proposed] JUD-100 — Randstad US, LLC only. Damages $45,000 ($10k ICRAA + $10k PC additional + $25k penalty) + interest $543.70 at 7% = $45,543.70. 425.115 $500k cap recited; $0 punitive asked. Several judgment CCP §579; RK remains; Does dismissed. Executed Sep. 16, 2026. Not yet filed.",
+      "ownerMatter": 27
+    },
+    {
       "path": "/documents/matter-27/[Proposed] Order Extending Time for Randstad to Respond (Plaintiff Counterpart, Sep 14 2026).docx",
       "label": "[Proposed] Order Extending Time for Randstad to Respond (Plaintiff Counterpart, Sep 14 2026)",
       "ownerMatter": 27
@@ -2082,13 +2087,28 @@
       "ownerMatter": 27
     },
     {
+      "path": "/documents/matter-27/CIV-100 Request for Court Judgment - Randstad US LLC (Default Previously Entered, Sep 16 2026).pdf",
+      "label": "CIV-100 Request for Court Judgment — Randstad US, LLC (default previously entered 09/16/2026; item 2 $45,000 demand + $543.70 interest = $45,543.70; costs waived; $0 punitive; executed Sep. 16, 2026). Not yet filed.",
+      "ownerMatter": 27
+    },
+    {
       "path": "/documents/matter-27/CIV-100 Request for Entry of Default - Randstad US LLC (Clerk Default Only, Sep 16 2026).pdf",
-      "label": "CIV-100 Request for Entry of Default — Randstad US, LLC (clerk default only, item 1c; dated Sep. 16, 2026) — HOLD: do not e-file until after Sept. 15, and only if eCourt shows no answer / demurrer / CIV-141 / stipulation. No judgment request. Same-day CCP §587 mail to Williams and CSC.",
+      "label": "CIV-100 Request for Entry of Default — Randstad US, LLC (item 1c; dated Sep. 16, 2026) — unstamped working copy. Superseded by the FILE-stamped entered copy the same day.",
+      "ownerMatter": 27
+    },
+    {
+      "path": "/documents/matter-27/CIV-100 Request for Entry of Default - Randstad US LLC (Default Entered, Filed Sep 16 2026).pdf",
+      "label": "CIV-100 Request for Entry of Default — Randstad US, LLC. Alameda FILE stamp 09/16/2026 (Deputy S. Pesko). Default ENTERED 09/16/2026. Item 1c only; no clerk or court judgment. Electronically Received 06:28 AM.",
       "ownerMatter": 27
     },
     {
       "path": "/documents/matter-27/CIV-100 Request for Entry of Default - RK Logistics Group Inc (Clerk Default Only, Sep 15 2026).pdf",
       "label": "CIV-100 Request for Entry of Default — The RK Logistics Group, Inc. (clerk default only, item 1c; dated Sep. 15, 2026) — HOLD: do not e-file until after Sept. 14, and only if eCourt shows no answer / demurrer / CIV-141 / stipulation. No judgment request. Same-day CCP §587 mail to Garcia and CSC.",
+      "ownerMatter": 27
+    },
+    {
+      "path": "/documents/matter-27/CIV-110 Request for Dismissal of Does 1-20 (Without Prejudice, Executed Sep 16 2026).pdf",
+      "label": "CIV-110 Request for Dismissal of Does 1–20 without prejudice (not Randstad; not RK). Fee-waiver declaration: recovering $10,000+. Executed Sep. 16, 2026. Not yet filed.",
       "ownerMatter": 27
     },
     {
@@ -2104,6 +2124,16 @@
     {
       "path": "/documents/matter-27/Complete Filing Packet - Newanforbi v Randstad US LLC et al (Jul 20-21 2026).pdf",
       "label": "Complete Filing Packet — Civil Case Cover Sheet, filed Summons, filed Complaint, Notice of Case Assignment, and Notice of Case Management Conference, merged for service (Jul. 20–21, 2026)",
+      "ownerMatter": 27
+    },
+    {
+      "path": "/documents/matter-27/Declaration of Brendan Ngehsi Newanforbi ISO Default Judgment by Court - Randstad US LLC (Sep 16 2026).pdf",
+      "label": "Declaration ISO default judgment by court as to Randstad US, LLC (CRC 3.1800 / CCP §§579, 585(b), (d)). Kim ask $45,543.70; served §425.115 $500k cap recited, $0 punitive asked. Executed Sep. 16, 2026. Not yet filed.",
+      "ownerMatter": 27
+    },
+    {
+      "path": "/documents/matter-27/Default Judgment Prove-Up Packet - Randstad US LLC (Court Judgment, Sep 16 2026).pdf",
+      "label": "Randstad default-judgment prove-up packet (CIV-100 court judgment, JUD-100, CIV-110 Does, declaration, Exhibits A–I). $45,543.70 itemized; 425.115 $500k cap recited, $0 punitive asked. Generator: matter27-randstad-prove-up-packet.py. Not yet filed. Do not default RK.",
       "ownerMatter": 27
     },
     {

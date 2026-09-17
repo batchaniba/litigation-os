@@ -2043,7 +2043,7 @@
   },
   {
     "date": "Sep. 14, 2026",
-    "event": "UPS reply deadline (extended) — Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). Dkt. 12 (Sep. 10) grants Dkt. 11; Defendant's reply brief on the live Dkt. 9 MTD shall be filed by September 14, 2026. Supersedes the L.R. 230(d) Sep. 8 clock. Hearing remains Oct. 7, 2026, 10:00 a.m., Courtroom 24 (CKD), Judge Delaney. This is UPS's clock.",
+    "event": "LAPSED — UPS reply deadline (extended) — Newanforbi v. United Parcel Service, Inc. (2:26-cv-02847-DAD-CKD). Dkt. 12 (Sep. 10) grants Dkt. 11; Defendant's reply brief on the live Dkt. 9 MTD was due September 14, 2026. Hearing remains Oct. 7, 2026, 10:00 a.m., Courtroom 24 (CKD), Judge Delaney. Confirm on PACER whether the reply was filed.",
     "matters": [
       26
     ],
@@ -2053,7 +2053,7 @@
     "source": "/documents/matter-26/PACER Docket Report - E.D. Cal. 2-26-cv-02847-DAD-CKD (Sep 10 2026).pdf",
     "source_type": "pacer",
     "confidence": "high",
-    "verified_at": "2026-09-11"
+    "verified_at": "2026-09-16"
   },
   {
     "date": "Sep. 14, 2026",
@@ -4394,7 +4394,7 @@
   },
   {
     "date": "Sep. 8, 2026",
-    "event": "EXECUTED (UNFILED / HOLD) — Clerk's Requests for Entry of Default (CIV-100 item 1c only) prepared as to The RK Logistics Group, Inc. (dated Sep. 15) and Randstad US, LLC (dated Sep. 16). No clerk's judgment, no court judgment, no item 2 money, no prove-up. Do not e-file until after each granted response date, and only if eCourt that morning shows no answer, demurrer, CIV-141, or stipulation. Same-day CCP §587 first-class mailing to counsel and CSC (2710 Gateway Oaks Drive, Suite 150N, Sacramento, CA 95833). Amended §425.115 notices were personally served Aug. 21, 2026 (POS-040s filed Sept. 9, 2026); punitives may ride a later default judgment, but stay off these clerk-default CIV-100s. CRC 3.110(h) then gives ten days.",
+    "event": "EXECUTED — Clerk's Requests for Entry of Default (CIV-100 item 1c only) prepared as to The RK Logistics Group, Inc. (dated Sep. 15) and Randstad US, LLC (dated Sep. 16). No clerk's judgment, no court judgment, no item 2 money. Randstad's request was later filed and default was entered Sep. 16, 2026 (see that day's FILED / ENTERED row). RK remains unfiled: do not CIV-100 RK until eCourt is checked on Gurney's CIV-141. Amended §425.115 notices were personally served Aug. 21, 2026; punitives may ride a later default judgment, but stay off the clerk-default CIV-100s.",
     "matters": [
       27
     ],
@@ -4409,7 +4409,7 @@
   },
   {
     "date": "Sep. 15, 2026",
-    "event": "LAPSED — DO NOT FILE. FILE IF SILENT — e-file CIV-100 Request for Entry of Default as to The RK Logistics Group, Inc. (clerk default only, item 1c). First fileable the day after RK's Sept. 14 response date. Check Alameda eCourt / One Legal that morning: do not file if an answer, demurrer, motion to strike, CIV-141, or stipulation is on the docket. Document type ≈ Request for Default. Do not attach the 425.115 notices. Same-day CCP §587 first-class mail to Melinda Garcia (Garcia & Gurney, 6600 Koll Center Parkway, Suite 200, Pleasanton, CA 94566) and to RK c/o CSC, 2710 Gateway Oaks Drive, Suite 150N, Sacramento, CA 95833. Gurney served a CIV-141 for RK; status on 27.json is do-not-default-RK.",
+    "event": "DID NOT FILE — CIV-100 as to The RK Logistics Group, Inc. stayed off the docket. Tai served Gurney's CIV-141 on Sept. 14 (no clerk stamp on the served copy). Do not e-file RK default until eCourt shows no accepted CIV-141, answer, demurrer, motion to strike, or stipulation. The prepared Sep. 15 papers remain a HOLD.",
     "matters": [
       27
     ],
@@ -4419,21 +4419,51 @@
     "source": "/documents/matter-27/CIV-100 Request for Entry of Default - RK Logistics Group Inc (Clerk Default Only, Sep 15 2026).pdf",
     "source_type": "portfolio",
     "confidence": "medium",
-    "verified_at": "2026-09-11"
+    "verified_at": "2026-09-16"
   },
   {
     "date": "Sep. 16, 2026",
-    "event": "FILE IF SILENT — e-file CIV-100 Request for Entry of Default as to Randstad US, LLC (clerk default only, item 1c). First fileable the day after Randstad's Sept. 15 response date. Check Alameda eCourt / One Legal that morning: do not file if an answer, demurrer, motion to strike, CIV-141, or stipulation is on the docket. Document type ≈ Request for Default. Do not attach the 425.115 notices. Same-day CCP §587 first-class mail to Chadwick L. Williams (Kabat Chapman & Ozmer LLP, 1150 Spring Street NW, Suite 800, Atlanta, GA 30309) and to Randstad c/o CSC, 2710 Gateway Oaks Drive, Suite 150N, Sacramento, CA 95833.",
+    "event": "FILED / ENTERED — CIV-100 Request for Entry of Default as to Randstad US, LLC (item 1c only) in Newanforbi v. Randstad US, LLC et al. (Alameda Super. Ct. No. 26CV199902). Electronically Received 09/16/2026 06:28 AM. FILE stamp 09/16/2026, Superior Court of California, County of Alameda, Deputy S. Pesko for Chad Finke, Executive Officer/Clerk. FOR COURT USE ONLY item (1) checked: Default entered as requested on 09/16/2026. No clerk's judgment, no court judgment, no item 2 money. Same-day CCP §587 mailing declared to Chadwick L. Williams (Kabat Chapman & Ozmer LLP, 1150 Spring Street NW, Suite 800, Atlanta, GA 30309) and Randstad US, LLC c/o CSC, 2710 Gateway Oaks Drive, Suite 150N, Sacramento, CA 95833. Does not default The RK Logistics Group, Inc. CRC 3.110(h): obtain a default judgment within 45 days of entry unless the court extends.",
+    "matters": [
+      27
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": true,
+    "actor": "court",
+    "source": "/documents/matter-27/CIV-100 Request for Entry of Default - Randstad US LLC (Default Entered, Filed Sep 16 2026).pdf",
+    "source_type": "court_order",
+    "confidence": "high",
+    "verified_at": "2026-09-16"
+  },
+  {
+    "date": "Sep. 16, 2026",
+    "event": "READY — Default-judgment prove-up packet as to Randstad US, LLC only in Newanforbi v. Randstad US, LLC et al. (Alameda Super. Ct. No. 26CV199902). CIV-100 requests court judgment for default previously entered 09/16/2026 (Deputy Pesko); JUD-100 proposed several judgment; CIV-110 dismisses Does 1–20 without prejudice; declaration ISO with Exhibits A–I. Kim ask: Civ. Code §1786.50 $10,000 + Pen. Code §290.46 additional $10,000 (1× ICRAA as actuals stand-in) + $25,000 civil penalty + $543.70 prejudgment interest (7% × 63/365 from July 15, 2026) = $45,543.70. Served CCP §425.115 $500,000 recited as cap; $0 punitive asked. Costs waived (FW-003). No CCP §425.11; general damages and lost wages omitted. Fees $0. CCP §579 several judgment; The RK Logistics Group, Inc. remains. Generator: internal/scripts/matter27-randstad-prove-up-packet.py. Not yet filed. Mail CCP §587 copies to Williams and CSC with the CIV-100.",
+    "matters": [
+      27
+    ],
+    "type": "filing",
+    "upcoming": false,
+    "filed": false,
+    "actor": "you",
+    "source": "/documents/matter-27/Default Judgment Prove-Up Packet - Randstad US LLC (Court Judgment, Sep 16 2026).pdf",
+    "source_type": "portfolio",
+    "confidence": "high",
+    "verified_at": "2026-09-16"
+  },
+  {
+    "date": "Oct. 31, 2026",
+    "event": "CRC 3.110(h) — obtain a default judgment as to Randstad US, LLC within 45 days after entry of default (entered Sep. 16, 2026), unless the court grants more time. Oct. 31, 2026 is a Saturday; CCP §12a carries to Monday, Nov. 2, 2026 if the clerk is closed. Prove-up packet is prepared (not yet filed): $45,543.70. Do not attach a new 425.115; the amended notices were personally served Aug. 21, 2026.",
     "matters": [
       27
     ],
     "type": "deadline",
     "upcoming": true,
     "actor": "you",
-    "source": "/documents/matter-27/CIV-100 Request for Entry of Default - Randstad US LLC (Clerk Default Only, Sep 16 2026).pdf",
-    "source_type": "portfolio",
-    "confidence": "medium",
-    "verified_at": "2026-09-11"
+    "source": "/documents/matter-27/CIV-100 Request for Entry of Default - Randstad US LLC (Default Entered, Filed Sep 16 2026).pdf",
+    "source_type": "court_order",
+    "confidence": "high",
+    "verified_at": "2026-09-16"
   },
   {
     "date": "Aug. 19, 2026",
@@ -5181,7 +5211,7 @@
     "source": "/documents/matter-27/Letter Confirming 15-Day Extension of Randstad's Time to Respond (Aug 18 2026).pdf",
     "source_type": "portfolio",
     "confidence": "medium",
-    "verified_at": "2026-09-11"
+    "verified_at": "2026-09-16"
   },
   {
     "date": "Sep. 9, 2026",
@@ -5209,7 +5239,7 @@
     "source": "/documents/matter-27/Gmail - RK Logistics Extension Request to Sep 14 (Aug 21 2026).pdf",
     "source_type": "portfolio",
     "confidence": "medium",
-    "verified_at": "2026-09-11"
+    "verified_at": "2026-09-16"
   },
   {
     "date": "Aug. 17, 2026",
@@ -10184,7 +10214,7 @@
   },
   {
     "date": "Sep. 14, 2026",
-    "event": "DEADLINE — Plaintiff's $250,000.00 settlement demand to UPS (sent Aug. 31, 2026) expires at 5:00 p.m. Pacific Time; written response requested to bnn.cdl@gmail.com. UPS's reply in support of its Rule 12(b)(6) motion (Dkt. 9) is also due Sep. 14, 2026.",
+    "event": "LAPSED — Plaintiff's $250,000.00 settlement demand to UPS (sent Aug. 31, 2026) expired at 5:00 p.m. Pacific Time on Sep. 14, 2026. UPS's reply in support of its Rule 12(b)(6) motion (Dkt. 9) was also due that day.",
     "matters": [
       26
     ],
@@ -10193,7 +10223,7 @@
     "actor": "you",
     "source_type": "manual",
     "confidence": "high",
-    "verified_at": "2026-09-12",
+    "verified_at": "2026-09-16",
     "source": "/documents/matter-26/Settlement Demand Email - United Parcel Service Inc (Aug 31 2026).pdf"
   },
   {
