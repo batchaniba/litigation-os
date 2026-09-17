@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 // Split a legacy NN.json into NN/{matter,docket,clocks,parties,counsel,claims,damages,evidence,events,prose}.
-// Portfolio-wide: any matter can be split. Does not invent docket numbers.
+// Any matter, whenever it is touched. Not cluster-gated. Does not invent docket numbers.
+// events.jsonl is append-only after the first split.
 //
 //   node internal/scripts/split-matter.mjs 24
 //   node internal/scripts/split-matter.mjs 24 --replace
@@ -11,7 +12,7 @@ import { MATTERS_DIR } from "./load-matters.mjs";
 import { dateKeyFromLabel } from "./lib/next-actions.mjs";
 import {
   EVENTS_FILE,
-  GRAPH_LIMITS,
+  GRAPH_CONTRACT,
   inferDocketNumber,
   paddedMatterNumber,
 } from "../src/data/matters/assembleMatter.js";
@@ -139,7 +140,7 @@ function toClocks(timeline, number) {
         kind: row.type ?? "event",
         status: date ? "open" : "undated",
         source_dkt: inferDocketNumber(row.source ?? "", row.event ?? ""),
-        title: String(row.event ?? "").slice(0, GRAPH_LIMITS.indexNextClockTitleChars),
+        title: String(row.event ?? "").slice(0, GRAPH_CONTRACT.indexNextClockTitleChars),
         actor: row.actor ?? null,
         source: row.source ?? null,
       };
@@ -172,8 +173,8 @@ function slimMatter(raw) {
   // First fetch stays small. Full diary lands in prose.json.
   out.procedural_status =
     "Canonical chronology is clocks.json, docket.json, and events.jsonl. Do not reconstruct dates from README.";
-  if (typeof raw.key_facts === "string" && raw.key_facts.length > GRAPH_LIMITS.identityKeyFactsChars) {
-    const keep = GRAPH_LIMITS.identityKeyFactsChars - 80;
+  if (typeof raw.key_facts === "string" && raw.key_facts.length > GRAPH_CONTRACT.identityKeyFactsChars) {
+    const keep = GRAPH_CONTRACT.identityKeyFactsChars - 80;
     out.key_facts = `${raw.key_facts.slice(0, keep).replace(/\s+\S*$/, "")} See evidence.json and prose.json.`;
   }
   return out;

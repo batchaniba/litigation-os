@@ -17,9 +17,10 @@
 // ==========================================================
 import fs from "node:fs";
 import path from "node:path";
+import { execSync } from "node:child_process";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { loadMatters, MATTERS_DIR } from "./load-matters.mjs";
-import { MATTER_JSON_BUDGET } from "./lib/matter-layout.mjs";
+import { EVENTS_FILE } from "./lib/matter-layout.mjs";
 import { MATTER_LIFECYCLES, archivedFromLifecycle, isTerminalLifecycle } from "./matter-lifecycle.mjs";
 import {
   MATTER_PHASES,
@@ -94,6 +95,56 @@ function fail(msg) {
 }
 function warn(msg) {
   warnings.push(msg);
+}
+
+function checkSplitHardRules(dir, tag) {
+  const eventsPath = path.join(dir, EVENTS_FILE);
+  if (fs.existsSync(eventsPath)) {
+    const current = fs.readFileSync(eventsPath, "utf8");
+    const rel = path.relative(REPO_ROOT, eventsPath).split(path.sep).join("/");
+    for (const [i, line] of current.split(/\n/).entries()) {
+      if (!line.trim()) continue;
+      try {
+        JSON.parse(line);
+      } catch {
+        fail(`${tag}: ${EVENTS_FILE} line ${i + 1} is not JSON`);
+      }
+    }
+    try {
+      const previous = execSync(`git show HEAD:${rel}`, {
+        encoding: "utf8",
+        stdio: ["ignore", "pipe", "pipe"],
+      });
+      if (previous && current !== previous && !current.startsWith(previous)) {
+        fail(`${tag}: ${EVENTS_FILE} is append-only — do not rewrite history in the log`);
+      }
+    } catch {
+      // New file, or not yet in HEAD.
+    }
+  }
+
+  const docketPath = path.join(dir, "docket.json");
+  if (!fs.existsSync(docketPath)) return;
+  let docket;
+  try {
+    docket = JSON.parse(fs.readFileSync(docketPath, "utf8"));
+  } catch {
+    fail(`${tag}: docket.json is not JSON`);
+    return;
+  }
+  if (!Array.isArray(docket)) {
+    fail(`${tag}: docket.json must be an array`);
+    return;
+  }
+  for (const [i, row] of docket.entries()) {
+    if (row == null || typeof row !== "object") continue;
+    if (row.dkt != null && !Number.isInteger(row.dkt)) {
+      fail(`${tag}: docket.json[${i}] dkt must be an integer or null — do not invent a docket number`);
+    }
+    if ("filed" in row && typeof row.filed !== "boolean") {
+      fail(`${tag}: docket.json[${i}] filed must be a boolean`);
+    }
+  }
 }
 
 checkRepoRootIsClean();
@@ -215,21 +266,7 @@ for (const m of cases) {
   }
 
   if (m.__layout === "split" && m.__sourceDir) {
-    const identityPath = path.join(m.__sourceDir, "matter.json");
-    if (fs.existsSync(identityPath)) {
-      const raw = fs.readFileSync(identityPath, "utf8");
-      const lines = raw.split(/\n/).length;
-      if (lines > MATTER_JSON_BUDGET.lines) {
-        fail(
-          `${tag}: matter.json is ${lines} lines, budget ${MATTER_JSON_BUDGET.lines} — keep identity small and put the docket in sibling files`,
-        );
-      }
-      if (Buffer.byteLength(raw, "utf8") > MATTER_JSON_BUDGET.bytes) {
-        fail(
-          `${tag}: matter.json is ${Buffer.byteLength(raw, "utf8")} bytes, budget ${MATTER_JSON_BUDGET.bytes} — first fetch must fit`,
-        );
-      }
-    }
+    checkSplitHardRules(m.__sourceDir, tag);
   }
 
   for (const [field, type] of REQUIRED_MATTER_FIELDS) {
@@ -240,9 +277,8 @@ for (const m of cases) {
     }
   }
 
-  // GRAPH_LIMITS: prose word ceilings apply to legacy NN.json diaries only.
-  // Split matters moved dates into clocks/docket/events — no word/line ceiling
-  // on those tables. Overdue next_clock is a fact in the index, not a fail.
+  // Legacy NN.json still has a prose ratchet until split. Split when touched.
+  // Overdue next_clock is a fact in the index, not a fail.
   if (m.__layout !== "split") {
     for (const issue of proseBudgetIssues(m)) {
       if (issue.level === "over-ceiling") {

@@ -5,8 +5,8 @@
 // Two layouts, portfolio-wide:
 //   legacy — internal/src/data/matters/NN.json
 //   split  — internal/src/data/matters/NN/{matter,docket,clocks,...}.json
-// Agents fetch the split files by path. This loader still returns the
-// assembled Matter shape so the dashboard and existing scripts do not fork.
+// Split a matter when you touch it. This loader still returns the assembled
+// Matter shape so the dashboard and existing scripts do not fork.
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { validateMatter } from "./lib/matter-schema.mjs";

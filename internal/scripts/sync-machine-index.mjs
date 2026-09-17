@@ -8,7 +8,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadMatters, MATTERS_DIR } from "./load-matters.mjs";
 import { dateKeyFromLabel, todayKey } from "./lib/next-actions.mjs";
-import { GRAPH_LIMITS, loadJsonIfPresent, paddedMatterNumber } from "./lib/matter-layout.mjs";
+import { GRAPH_CONTRACT, loadJsonIfPresent, paddedMatterNumber } from "./lib/matter-layout.mjs";
 import { matterRefsInclude } from "../src/utils/matterRefs.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -76,7 +76,7 @@ function nextFromTimeline(timeline, number, today) {
       date: chosen.date,
       kind: chosen.row.type ?? "event",
       status: overdue ? "overdue" : "open",
-      title: String(chosen.row.event ?? "").slice(0, GRAPH_LIMITS.indexNextClockTitleChars),
+      title: String(chosen.row.event ?? "").slice(0, GRAPH_CONTRACT.indexNextClockTitleChars),
       source_dkt: null,
     },
     overdue,

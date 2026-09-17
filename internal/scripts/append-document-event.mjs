@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Append one events.jsonl row when a file lands in documents/matter-N/.
-// Split matters only. Legacy matters keep timeline.json until they split.
+// Split matters only. Append-only — never rewrite the log.
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
