@@ -55,22 +55,23 @@ Never put a GitHub, `raw.githubusercontent.com`, git-repo, or document-store
 URL in anything Plaintiff will send or file. Attach the file. A download
 link in the agent chat for him is fine. It does not go in the email.
 
-## No CI — the gate is local
+## No GitHub Actions
 
-There is no GitHub Actions CI. The only workflows left are the CourtListener
-ones (`courtlistener-sync`, `counsel-dossier`, `intel-fetch-briefs`) and the
-R2 document-upload job (`r2-upload.yml`: `documents` branch → R2, upload-only,
-never deletes; Node `r2-upload.mjs`; approved 2026-09-16), and the two
-Cloudflare jobs (`cloudflare-deploy.yml`: main → `wrangler deploy` the doc-api
-Worker when `workers/doc-api/**` changes; `d1-reseed.yml`: regenerates the D1
-seed from repo data and POSTs it to the Worker's guarded `/admin/reseed`
-endpoint when portfolio data changes; both approved 2026-09-17). Do not add
-others. The checks the old CI job ran now run in the `pre-push` hook
-(installed by `npm run prepare`): lint, typecheck, `validate-portfolio`,
-golden damages math, the unit suite, and the fabricated-citation gate.
-Before opening a PR, run `npm run validate` yourself and say so in the PR
-body. Production deploys are scheduled, not per-push; see
-`internal/docs/VERCEL_DEPLOYS.md`.
+Do not add `.github/workflows/`. The spending limit already refuses every job.
+The checks the old CI job ran live in the `pre-push` hook (installed by
+`npm run prepare`): lint, typecheck, `validate-portfolio`, golden damages math,
+the unit suite, and the fabricated-citation gate. Before opening a PR, run
+`npm run validate` yourself and say so in the PR body.
+
+Laptop replacements (need the relevant env, never paste keys into chat):
+
+- CourtListener: `npm run court:sync -- --bootstrap` (token in gitignored `.env`)
+- R2 bytes + path index: `npm run documents:push` (`R2_*` from `~/.config/r2/env`)
+- Worker: `cd workers/doc-api && wrangler deploy`
+- D1: `node workers/doc-api/seed.mjs > seed.sql`, then POST `/admin/reseed`
+
+Production deploys are the Vercel Deploy Hook from the Cloudflare cron, not
+per-push; see `internal/docs/VERCEL_DEPLOYS.md`.
 
 ## Runtime boundary: Python vs Node
 
@@ -81,7 +82,7 @@ hooks and `npm run` scripts:
 - `validate-portfolio.mjs` — data validation (pre-push gate)
 - `sync-*.mjs` — derived data generation (registry, manifest, summaries, upcoming, short-links)
 - `documents-store.mjs` — `npm run documents:pull -- --matter N` (R2 when `R2_*` is set, else the git branch). `documents:push` updates the cold `documents` branch and, with credentials, PUTs PDFs + the path index to R2. Phone-tap slug PDFs stay on `main` until a public `/documents/...` origin returns 200.
-- `r2-upload.mjs` / `lib/r2-client.mjs` — PDF bytes + `index/path-to-sha256.json` → R2 (`r2-upload.yml`)
+- `r2-upload.mjs` / `lib/r2-client.mjs` — PDF bytes + `index/path-to-sha256.json` → R2 (called by `documents:push`)
 - `load-matters.mjs`, `lib/matter-schema.mjs` — shared loaders and schemas
 - `courtlistener/*.mjs` — docket sync
 
@@ -91,5 +92,5 @@ run manually by Aliko. They are **not** part of the build, the hooks, or any npm
 
 Rules:
 - New automation that runs in the hooks or `npm run` must be Node (.mjs).
-- Python scripts must not be added to `package.json` scripts or workflow steps.
+- Python scripts must not be added to `package.json` scripts. Do not add GitHub Actions workflows.
 - Shared logic (matter loading, validation) lives in Node; do not duplicate it in Python.

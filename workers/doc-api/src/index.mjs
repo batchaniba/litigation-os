@@ -329,10 +329,9 @@ async function buildDigest(env, cron) {
 // --- admin: D1 self-reseed --------------------------------------------------
 // POST /admin/reseed with `Authorization: Bearer <RESEED_SECRET>` and the
 // seed.sql text as the body (one `INSERT ...;` per line, see seed.mjs).
-// Applies the statements to the D1 binding in small batches, so the
-// `d1-reseed.yml` workflow can keep D1 in sync with the repo after every
-// portfolio-data merge. Fail-closed: 503 when RESEED_SECRET is not
-// configured on the Worker, 403 on a bearer mismatch.
+// Applies the statements to the D1 binding in small batches. Run
+// `node seed.mjs` on the laptop and POST the file. Fail-closed: 503 when
+// RESEED_SECRET is not configured on the Worker, 403 on a bearer mismatch.
 async function handleReseed(request, env) {
   if (!env.RESEED_SECRET) return json({ error: "reseed_not_configured" }, 503);
   const auth = request.headers.get("authorization") || "";

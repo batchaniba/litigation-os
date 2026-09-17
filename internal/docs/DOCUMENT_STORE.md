@@ -85,8 +85,12 @@ A same-path replacement is a new sha256. The index overwrites that path.
 The previous object stays in the bucket.
 
 If `R2_*` is missing (typical cloud agent), the git branch still updates
-and the `r2-upload.yml` job on a `manifest.json` push to `main` does the
-PUT + index. The hook prints a warning when it skips R2.
+and the hook prints a warning. Publish bytes from the laptop:
+
+```bash
+# ~/.config/r2/env sourced
+npm run documents:push
+```
 
 Vercel rewrites `/documents/:path*` to
 `https://litigation-doc-api.ss8sxswwkt.workers.dev/documents/:path*`.
@@ -112,7 +116,7 @@ Do **not** put new PDFs anywhere else, and do not `git add -f` them onto
 
 ## Where the checks run now
 
-There is no GitHub Actions CI. The checks the old data job ran live in the
+There is no GitHub Actions. The checks the old data job ran live in the
 git hooks:
 
 - **pre-commit** syncs registry + manifest when PDFs or the catalog are
@@ -128,7 +132,7 @@ git hooks:
 Cloudflare R2 bucket `litigation-documents` now holds the store: **1,198 PDFs
 from the `documents` branch → 1,139 unique objects / 793.6 MB** after
 content-hash dedup. Every object was ETag-verified against source bytes at
-migration time. GitHub Actions secrets for the bucket are live.
+migration time.
 
 Key scheme (deterministic from `manifest.json` `sha256`):
 `sha256/<first two hex chars>/<remaining hex>.pdf`.
@@ -144,23 +148,19 @@ npm run docs:fetch <sha256> -- --out /tmp/doc.pdf
 On the laptop those variables are exported from `~/.config/r2/env` (mode 600).
 Shells on that machine source it. Cloud agents do not have that file unless
 the environment image does — they read `R2_*` from the process environment
-or they cannot fetch. GitHub Actions secrets hold the same values for
-`r2-upload.yml` and are workflow-only; an agent cannot read them back.
-Never paste keys into chat, files, or memory.
+or they cannot fetch. Never paste keys into chat, files, or memory.
 
 The helper re-hashes the bytes client-side and refuses to write on mismatch.
 `origin/documents` is a cold backup. Incremental upload is
-`.github/workflows/r2-upload.yml` (`workflow_dispatch`, a `documents`
-branch push, or a `manifest.json` push to `main`) plus `documents:push`
-when `R2_*` is set. Upload-only; never deletes. Do not retire the branch
-until a public `GET /documents/...` has returned 200 for the Serrato FAC
-and a current mailing packet.
+`npm run documents:push` (or `node internal/scripts/r2-upload.mjs --list`
+/ `--index`) with `R2_*` set. Upload-only; never deletes. Do not retire the
+branch until a public `GET /documents/...` has returned 200 for the Serrato
+FAC and a current mailing packet.
 
-GitHub Pages was the public origin for `/documents/*`. The Actions workflow
-is gone and the Pages host now 404s. **Phone taps do not use it.** They stay
-as slug copies on Vercel until the Worker path origin returns HTTP 200.
-Then `/{slug}` can rewrite to encoded `/documents/...` and the copies leave
-`main`.
+GitHub Pages was the public origin for `/documents/*`. That host 404s.
+**Phone taps do not use it.** They stay as slug copies on Vercel until the
+Worker path origin returns HTTP 200. Then `/{slug}` can rewrite to encoded
+`/documents/...` and the copies leave `main`.
 
 ## After clone
 

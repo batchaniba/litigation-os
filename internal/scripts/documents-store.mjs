@@ -46,7 +46,7 @@ try {
       console.log(`OK — published ${result.r2.count} PDFs to R2 and refreshed the path index.`);
     } else if (result.r2?.reason === "r2_unconfigured") {
       console.warn(
-        "R2 skipped (no R2_* in the environment). Bytes are on origin/documents until `npm run documents:push` runs with credentials, or the r2-upload workflow runs.",
+        "R2 skipped (no R2_* in the environment). Bytes are on origin/documents until `npm run documents:push` runs with credentials.",
       );
     }
   } else if (command === "seed") {

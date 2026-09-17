@@ -1,12 +1,18 @@
-# CourtListener webhook -> GitHub dispatch adapter
+# CourtListener webhook adapter (dormant)
+
+GitHub Actions is gone. This worker's `repository_dispatch` has **no
+listener**. Leave the Worker in place if it is already deployed, but do not
+expect a sync run. Docket ingest is `npm run court:sync` on the laptop.
+
+The rest of this file is the original dispatch design, kept as history.
+
+---
 
 A tiny [Cloudflare Worker](https://developers.cloudflare.com/workers/) that receives
 [CourtListener webhook events](https://www.courtlistener.com/help/api/webhooks/) and
 translates them into a `repository_dispatch` on
-`newanforbi/interactive-litigation-portfolio` (event type `courtlistener-webhook`),
-so the [CourtListener sync workflow](../../../.github/workflows/courtlistener-sync.yml)
-runs on docket changes instead of on a fixed hourly poll. The schedule is kept at
-every 6 hours purely as a backstop for events the webhook misses.
+`newanforbi/interactive-litigation-portfolio` (event type `courtlistener-webhook`).
+That workflow YAML was deleted 2026-09-17.
 
 ## How it works
 
@@ -98,12 +104,12 @@ The repo's `npm run court:resolve` step prints the bound docket IDs.
   that proves the path secret and IP check are live.
 - **CourtListener test event:** use the "send test event" control in the
   Webhooks panel. Test events don't come from the egress IPs, so temporarily
-  allow them: `npx wrangler secret put SKIP_IP_CHECK` → `true`, send the test,
-  confirm a `courtlistener-webhook` dispatch run appears under the repo's
-  Actions tab, then set `SKIP_IP_CHECK` back to `false` (`npx wrangler deploy`
-  isn't needed — secrets take effect immediately).
-- **Real event:** the next filing on any subscribed docket should trigger a
-  sync run within seconds, visible in Actions as a `repository_dispatch` run.
+  allow them: `npx wrangler secret put SKIP_IP_CHECK` → `true`, send the test.
+  The Worker still POSTs `repository_dispatch`; **nothing in the repo listens**
+  (Actions YAML is gone). Then set `SKIP_IP_CHECK` back to `false`
+  (`npx wrangler deploy` isn't needed — secrets take effect immediately).
+- **Real event:** the next filing on a subscribed docket still hits this Worker.
+  Docket ingest is `npm run court:sync` on the laptop, not a dispatch run.
 
 ## Files
 

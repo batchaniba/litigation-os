@@ -1,11 +1,11 @@
 // Minimal Cloudflare R2 client — node builtins only (no dependencies).
 //
-// Reads credentials from the environment (never from the repo):
+// Credentials come from the environment (never from the repo):
 //   R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY, R2_ACCOUNT_ID
 //   R2_BUCKET (defaults to "litigation-documents")
 //
-// In CI these come from GitHub Actions secrets. For local/agent use they are
-// handed over per task and never stored. This module never prints them.
+// On the laptop these are sourced from ~/.config/r2/env. This module never
+// prints them.
 //
 // Document keys are content-addressed: keyForSha256(h) ===
 //   `sha256/<first2 hex>/<remaining hex>.pdf`
@@ -41,7 +41,7 @@ export function assertConfigured() {
   if (missing.length) {
     throw new Error(
       `R2 credentials not configured (missing ${missing.join(", ")}). ` +
-        `In CI these are GitHub Actions secrets; locally, export them for one command only.`
+        `Export them for one command only (laptop: source ~/.config/r2/env).`
     );
   }
 }

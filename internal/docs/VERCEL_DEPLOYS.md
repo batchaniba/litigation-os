@@ -95,27 +95,24 @@ for them twice bought nothing.
 
 ### GitHub Pages and the PDF library
 
-There is no GitHub Actions CI or Pages deploy any more (only the three
-CourtListener workflows remain). The Pages host now 404s. Phone taps are
-the `/{slug}.pdf` copies on Vercel, not that rewrite.
+There is no GitHub Actions and no Pages deploy. The Pages host 404s. Phone
+taps are the `/{slug}.pdf` copies on Vercel.
 
-**R2 migration (2026-09-17):** bucket `litigation-documents` holds 1,198 source
-PDFs as 1,139 unique sha256 objects (793.6 MB), ETag-verified. Fetch with
-`npm run docs:fetch <sha256>` (`internal/scripts/fetch-doc.mjs`). Secrets are
-in the repo Actions store. `documents:push` also uploads to R2 and rewrites
-the path index when `R2_*` is set. Public `/documents/:path*` rewrites to
-the Worker; do not drop slug copies until that origin returns HTTP 200 for
-the Serrato FAC and a current mailing packet.
-See `internal/docs/DOCUMENT_STORE.md`.
+**R2:** bucket `litigation-documents` holds 1,198 source PDFs as 1,139 unique
+sha256 objects (793.6 MB), ETag-verified. Fetch with `npm run docs:fetch
+<sha256>`. `documents:push` uploads to R2 and rewrites the path index when
+`R2_*` is set. Public `/documents/:path*` rewrites to the Worker; do not drop
+slug copies until that origin returns HTTP 200 for the Serrato FAC and a
+current mailing packet. See `internal/docs/DOCUMENT_STORE.md`.
 
 ### Where the gate went
 
-The checks the CI job ran now run in `.githooks/pre-push`: lint, typecheck,
+The checks the old CI job ran now run in `.githooks/pre-push`: lint, typecheck,
 `validate-portfolio`, golden damages math, the unit suite, and the
-fabricated-citation gate. The committed `vercel.json` drift check that CI
-used to do is covered by the pre-commit hook regenerating the file whenever
-the short-link catalog changes. Branch protection on `main` must not require
-status checks; nothing reports any.
+fabricated-citation gate. The committed `vercel.json` drift check is covered
+by the pre-commit hook regenerating the file whenever the short-link catalog
+changes. Branch protection on `main` must not require status checks; nothing
+reports any.
 
 ## Deploying now
 

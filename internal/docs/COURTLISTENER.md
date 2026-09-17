@@ -26,7 +26,9 @@ Phases not in this branch: webhook HTTP endpoint, RECAP document ingest, citatio
 
 ## Token
 
-Store `COURTLISTENER_TOKEN` as a **GitHub Actions repository secret** and in a gitignored `.env` for local `court:sync` / `citations:lookup`. `COURTLISTENER_API_TOKEN` is a deprecated alias for the same value.
+Store `COURTLISTENER_TOKEN` in a gitignored `.env` for local `court:sync` /
+`citations:lookup`. `COURTLISTENER_API_TOKEN` is a deprecated alias for the
+same value.
 
 Never put it in a `VITE_*` variable, a Vite-loaded env file, or any file the browser bundle can see. The Node client throws if it finds a `VITE_*` CourtListener token.
 
@@ -51,7 +53,12 @@ npm run court:reconcile               # reminder: candidates stay in review.json
 
 Empty cursors refuse a full historical backfill. Pass `--bootstrap`, `--active-only`, `--matter N`, or `--all`. `--since YYYY-MM-DD` is sent as `date_filed__gte` so a first pull does not paginate 2025 closed cases.
 
-The hourly workflow runs `--bootstrap`, not `--all`.
+The hourly workflow is gone (no GitHub Actions). On the laptop:
+
+```bash
+npm run court:resolve
+npm run court:sync -- --bootstrap
+```
 
 ## Data
 
@@ -82,4 +89,7 @@ Helpers live in `internal/scripts/courtlistener/webhook.mjs`. `applyPayloadEntri
 
 ## Standing automation PR
 
-`.github/workflows/courtlistener-sync.yml` runs hourly (`17 * * * *`) and on `workflow_dispatch`. It resolves, syncs, runs `sync:all` + tests, and opens or updates **one** PR from `automation/courtlistener-sync`. Inspect that PR the same way as any other agent branch.
+There is no GitHub Actions workflow. Run `court:resolve` / `court:sync` on the
+laptop and open a PR by hand if the working tree should be reviewed before
+`main`. Deadline candidates stay in `review.json` until someone copies them
+into `timeline.json` / `clocks.json`.

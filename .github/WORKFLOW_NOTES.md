@@ -4,6 +4,9 @@
 
 This repository uses a multi-stage data pipeline to keep the interactive litigation portfolio in sync across the SPA bundle, README documentation, and validation gates.
 
+There are **no GitHub Actions workflows**. Do not add `.github/workflows/`.
+The spending limit already refuses every job. The gate is `.githooks/pre-push`.
+
 ## Data Sync Scripts
 
 ### Essential Scripts (must run in every build)
@@ -75,8 +78,9 @@ These are optional and not part of the build pipeline:
 
 ## Workflow Files
 
-There is **no CI** and no deploy workflow. GitHub Actions was dropped in
-September 2026 (billing) and the gate moved to `.githooks/pre-push`:
+There is **no CI** and no `.github/workflows/`. GitHub Actions was dropped in
+September 2026 (billing; the remaining jobs then failed with “Actions budget
+is preventing further use”) and the gate is `.githooks/pre-push`:
 
 ```
 1. npm run lint
@@ -89,41 +93,23 @@ September 2026 (billing) and the gate moved to `.githooks/pre-push`:
 
 `PORTFOLIO_SKIP_DISK_DOCS=1` is set automatically when the PDF tree is not on
 disk. Production deploys are scheduled from a Cloudflare Worker, not from
-pushes; see `internal/docs/VERCEL_DEPLOYS.md`. The only workflows that remain
-are the CourtListener ones, listed below. Do not add others.
+pushes; see `internal/docs/VERCEL_DEPLOYS.md`.
 
-### Dependabot (`.github/dependabot.yml`)
+Laptop jobs that used to be Actions:
 
-Configured for parallel human + bot work:
+| Job | Command |
+|---|---|
+| CourtListener sync | `npm run court:sync -- --bootstrap` |
+| R2 upload + path index | `npm run documents:push` |
+| Worker deploy | `cd workers/doc-api && wrangler deploy` |
+| D1 reseed | `node workers/doc-api/seed.mjs > seed.sql` then POST `/admin/reseed` |
 
-- **`rebase-strategy: auto`** on npm, github-actions, and pip — when a Dependabot PR conflicts with `main`, Dependabot rebases it instead of leaving it `DIRTY`.
-- **Grouped minor/patch** updates (dev tooling, build tooling, React ecosystem, Actions, pip) so routine bumps arrive as a few weekly PRs rather than a dozen stale branches.
-- **Peer-locked majors are grouped** (`react-majors`, `vitest-majors`) so Dependabot cannot open half-upgrades that fail `npm ci`.
-- **TypeScript majors ignored** until `typescript-eslint` supports TS 7+.
-- **`open-pull-requests-limit: 8`** (npm) / **3** (Actions, pip).
-
-If a Dependabot PR still looks stuck after a large `main` merge, comment `@dependabot recreate` on that PR (you need push access). `@dependabot rebase` is enough when the only issue is a content conflict.
-
-### `.github/workflows/courtlistener-sync.yml`
-
-Hourly (`17 * * * *`) plus `workflow_dispatch`. Needs repository secret `COURTLISTENER_TOKEN` (never a `VITE_*` variable). The sync step is `npm run court:sync -- --bootstrap` so empty cursors do not backfill dismissed federal dockets.
-
-```
-1. Checkout (same sparse skip of the PDF tree as CI)
-2. npm ci
-3. npm run court:resolve     # bind new federal dockets; skip already-bound IDs
-4. npm run court:sync        # incremental docket entries
-5. npm run sync:all
-6. npm test
-7. Open/update standing PR from automation/courtlistener-sync
-```
-
-The job does **not** commit to `main`. Deadline candidates stay in `internal/src/data/courtlistener/review.json` until someone copies them into `timeline.json`. See `internal/docs/COURTLISTENER.md`.
+Do not add workflow YAML. Do not add Dependabot.
 
 
 ## Testing
 
-Tests run in CI (both workflows) and can be run locally:
+Tests run in the pre-push hook and locally:
 
 ```bash
 npm run test          # Run once

@@ -9,8 +9,8 @@
 // the file is refused if the hash does not match.
 //
 // Credentials come from the environment (R2_ACCESS_KEY_ID,
-// R2_SECRET_ACCESS_KEY, R2_ACCOUNT_ID, R2_BUCKET) — in CI these are GitHub
-// Actions secrets; locally they are handed over per task and never stored.
+// R2_SECRET_ACCESS_KEY, R2_ACCOUNT_ID, R2_BUCKET). Export them for one
+// command only. Never store them in the repo.
 import { createHash } from "node:crypto";
 import { writeFileSync } from "node:fs";
 import { assertConfigured, getObject, keyForSha256 } from "./lib/r2-client.mjs";

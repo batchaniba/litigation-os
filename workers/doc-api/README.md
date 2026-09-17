@@ -19,30 +19,28 @@ by design, there is nowhere to leak them from.
 
 ## Deploy
 
-Deploys run from `main` via `.github/workflows/cloudflare-deploy.yml`
-(path-filtered to `workers/doc-api/**`; also `workflow_dispatch`). The
-workflow resolves the D1 `database_id` by name at deploy time, so
-`wrangler.toml` keeps its placeholder. Needs the repo secret
-`CLOUDFLARE_API_TOKEN` (custom token: Workers Scripts Edit + D1 Edit) —
-workflow-only, never visible to agents. Manual deploys still work:
+There is no GitHub Actions job. From a machine that is logged into wrangler
+(Workers Scripts Edit + D1 Edit on the token):
 
 ```bash
 cd workers/doc-api
 wrangler deploy
 wrangler secret put ALERT_WEBHOOK   # optional; without it digests go to the Worker logs
-wrangler secret put RESEED_SECRET   # required for POST /admin/reseed; same value as the repo secret
+wrangler secret put RESEED_SECRET   # required for POST /admin/reseed
 ```
+
+`wrangler.toml` keeps a placeholder `database_id`. Resolve it by name at
+deploy time (`wrangler d1 list`) or wrangler will prompt.
 
 ## D1 re-seed
 
-`.github/workflows/d1-reseed.yml` keeps D1 in sync with the repo: on every
-portfolio-data merge to `main` it regenerates `seed.sql` (`node seed.mjs`)
-and POSTs it to `/admin/reseed` with the `RESEED_SECRET` bearer. The
-endpoint applies the statements idempotently in batches of 50 and is
-fail-closed (503 when the secret isn't configured, 403 on mismatch).
-Manual re-seed still works: `node seed.mjs > seed.sql`, then POST the file
-(or paste chunks into the D1 console — keep pastes ≤ ~80KB with no `--`
-comment lines; the console strips newlines).
+D1 is a second copy of the graph. Nothing reseeds it on merge. When it
+needs a refresh: `node seed.mjs > seed.sql`, then POST the file to
+`/admin/reseed` with the `RESEED_SECRET` bearer (or paste chunks into the
+D1 console — keep pastes ≤ ~80KB with no `--` comment lines; the console
+strips newlines). The endpoint applies the statements idempotently in
+batches of 50 and is fail-closed (503 when the secret isn't configured,
+403 on mismatch).
 
 Re-seed after the manifest or matter data changes (`node seed.mjs` again —
 statements are idempotent). Cron times in `wrangler.toml` are UTC
@@ -61,8 +59,6 @@ documented in the file.
 
 ## Not yet done
 
-- `ALERT_WEBHOOK` secret (optional — without it, the scheduled digests go to
-  the Worker logs instead of posting anywhere).
-- `CLOUDFLARE_API_TOKEN` repo secret (required for `cloudflare-deploy.yml`).
-- `RESEED_SECRET` repo secret + matching Worker secret (required for
-  `d1-reseed.yml` / `POST /admin/reseed`).
+- `ALERT_WEBHOOK` Worker secret (optional — without it, the scheduled
+  digests go to the Worker logs instead of posting anywhere).
+- `RESEED_SECRET` Worker secret (required for a manual `POST /admin/reseed`).

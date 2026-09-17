@@ -4,9 +4,9 @@
 // docket entry numbers, resolves the CourtListener docket, lists its entries,
 // and downloads every available RECAP PDF for the requested entries.
 //
-// Runs in CI where COURTLISTENER_TOKEN exists. Writes PDFs + manifest.json to
-// --out/<label>/. Never touches main; the workflow commits results to the
-// `documents` branch (filed-paper store).
+// Run on the laptop where COURTLISTENER_TOKEN exists. Writes PDFs +
+// manifest.json to --out/<label>/. Never touches main; `npm run documents:push`
+// puts the PDFs on R2 and the cold `documents` branch.
 //
 // Usage:
 //   node fetch-recap-briefs.mjs --docket-number 5:25-cv-02931 --court cacd \
