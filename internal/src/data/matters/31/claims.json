@@ -1,0 +1,35 @@
+{
+  "summary": "FCRA § 1681b(b), FCRA § 1681e(b), ICRAA, Negligence Per Se, UCL § 17200",
+  "counts": [
+    {
+      "id": 1,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Violation of the Fair Credit Reporting Act, 15 U.S.C. § 1681b(b)(1) — Furnishing a Consumer Report for Employment Purposes Without a Permissible/Certified Purpose"
+    },
+    {
+      "id": 2,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Violation of the Fair Credit Reporting Act, 15 U.S.C. § 1681e(b) — Failure to Follow Reasonable Procedures to Assure Maximum Possible Accuracy"
+    },
+    {
+      "id": 3,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Violation of the California Investigative Consumer Reporting Agencies Act (Cal. Civ. Code § 1786 et seq.)"
+    },
+    {
+      "id": 4,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Negligence Per Se (Evid. Code § 669; predicate duty: Cal. Penal Code § 290.46(j)(2)(E))"
+    },
+    {
+      "id": 5,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Unlawful Business Practices (Bus. & Prof. Code § 17200 et seq.)"
+    }
+  ]
+}

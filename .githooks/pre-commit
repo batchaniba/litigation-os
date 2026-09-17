@@ -47,9 +47,10 @@ if [ "$docs_changed" -eq 1 ]; then
 fi
 
 if [ "$index_changed" -eq 1 ]; then
-  echo "pre-commit: matter graph sources staged — regenerating index/"
+  echo "pre-commit: matter graph sources staged — regenerating index/ and upcoming.json"
   npm run sync:index
-  git add -- internal/src/data/index/matters.json internal/src/data/index/clusters.json
+  npm run sync:upcoming
+  git add -- internal/src/data/index/matters.json internal/src/data/index/clusters.json internal/src/data/upcoming.json
 fi
 
 if [ "$readme_changed" -eq 1 ]; then

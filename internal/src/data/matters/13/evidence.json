@@ -1,0 +1,23 @@
+[
+  {
+    "id": "e01",
+    "label": "Detention records",
+    "path": null,
+    "what_it_proves": "Detention records",
+    "transcript_path": null
+  },
+  {
+    "id": "e02",
+    "label": "Parole conditions",
+    "path": null,
+    "what_it_proves": "Parole conditions",
+    "transcript_path": null
+  },
+  {
+    "id": "e03",
+    "label": "Lack of nexus documentation",
+    "path": null,
+    "what_it_proves": "Lack of nexus documentation",
+    "transcript_path": null
+  }
+]

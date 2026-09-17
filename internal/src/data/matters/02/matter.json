@@ -1,0 +1,21 @@
+{
+  "number": 2,
+  "last_updated": "2026-09-16",
+  "caption": "Newanforbi v. Meza-Gonzalez et al.",
+  "case_no": "26CV168913",
+  "court": "Alameda Sup. Ct.",
+  "claims": "False Imprisonment, Battery, Bane Act",
+  "status": "DISMISSED WITHOUT PREJUDICE — Request for Dismissal filed Aug. 15, 2026 (Code Civ. Proc. §581(b)(1),(c); entire action), taking the unruled-on U-Visa Certification Motion with it. [FLAGGED: no successor docket carries the state-law theories or the State/CHP defendant forward — see risk field.]",
+  "status_label": "Dismissed w/o prejudice — Aug. 15, 2026",
+  "lifecycle": "dismissed",
+  "proceeding": "state_civil",
+  "phase": "terminal",
+  "filed": "February 4, 2026",
+  "judge": "Hon. Marc Fickes",
+  "cluster": 1,
+  "type": "State",
+  "badge": "DISMISSED",
+  "archived": true,
+  "key_facts": "Parallel state tort action from same Nov. 1, 2024 CHP encounter. Bane Act claim targets coerced waiver of PAS refusal right. Fabricated report constitutes independent wrongfulness. U-visa certification motion: Plaintiff seeks judicial certification under 8 U.S.C. § 1101(a)(15)(U) and Cal. Pen. Code § 679.10, establishing victim status and helpfulness in detection/investigation of qualifying criminal activity (false imprisonment, unlawful restraint, obstruction of justice, perjury, felonious assault).",
+  "procedural_status": "Canonical chronology is clocks.json, docket.json, and events.jsonl. Do not reconstruct dates from README."
+}

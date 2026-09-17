@@ -1,0 +1,23 @@
+{
+  "summary": "42 U.S.C. § 1983: Procedural Due Process — Three Counts: (I) Damages against HOPE; (II) Injunctive/Declaratory Relief against HOPE & Macomber; (III) Delegation Without Safeguards against both",
+  "counts": [
+    {
+      "id": 1,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Count I — 42 U.S.C. § 1983 Damages: Procedural Due Process (14th Amend.) — HOPE denied Plaintiff meaningful opportunity to be heard before discharge review; HOPE fabricated '10-year parole term' ineligibility rule; eight documented facial defects in Form 1502-DR; financial conflict of interest — HOPE billed CDCR ~$10,600/year per retained parolee (against HOPE Psychotherapy, Inc. for compensatory, nominal, and punitive damages)"
+    },
+    {
+      "id": 2,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Count II — 42 U.S.C. § 1983 Declaratory & Injunctive Relief (Ex parte Young): (a) HOPE's blanket retention policy violates procedural due process — judicially condemned in In re Dwyer (San Mateo Super. Ct. Mar. 20, 2023) and ACSOL v. Macomber (L.A. Super. Ct. Dec. 13, 2023); (b) CDCR's discharge review framework violates Cal. Penal Code §§ 3001(a)(2) and 3008(d)(2) and 15 CCR § 3574 (against HOPE and Macomber, official capacity)"
+    },
+    {
+      "id": 3,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Count III — 42 U.S.C. § 1983 Delegation Without Safeguards: CDCR delegated discharge authority to a financially conflicted private vendor (HOPE) without adequate procedural safeguards — HOPE's financial interest in retention creates structural bias that taints the entire discharge review framework (against HOPE and Macomber, official capacity)"
+    }
+  ]
+}

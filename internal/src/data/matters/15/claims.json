@@ -1,0 +1,29 @@
+{
+  "summary": "Negligence, False Imprisonment, IIED, Breach of Mandatory Duty",
+  "counts": [
+    {
+      "id": 1,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Count 1 — Negligence; Negligent Undertaking (Gov. Code §820(a)) against all defendants — voluntary election to conduct discharge review created ministerial duty of care; operational/clerical failures (wrong parolee name, obsolete form, fabricated rules, non-service) are not discretionary; §820.2 immunity inapplicable"
+    },
+    {
+      "id": 2,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Count 2 — False Imprisonment against all defendants — Nov. 19, 2025 void instrument (names 'Eagan') supplies no lawful privilege; continuing restraint (GPS, curfew, warrantless searches) accruing $100/day from Nov. 19, 2025"
+    },
+    {
+      "id": 3,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Count 3 — IIED against individual defendants (Dodd, Noguchi, Rojo) — extreme and outrageous to strip liberty through instrument adjudicating another person by name; at minimum reckless disregard; punitive damages under Civ. Code §3294"
+    },
+    {
+      "id": 4,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Count 4 — Breach of Mandatory Duty (Gov. Code §815.6) against CDCR — 15 CCR §§3720–3722 impose mandatory 'shall' duties on form, scoring, documentation, and service when review is conducted; Apr. 17, 2025 §3574 amendments reinforce individualized-process duties"
+    }
+  ]
+}

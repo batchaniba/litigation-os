@@ -7,11 +7,8 @@
 import { execSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
 import { DOCUMENTS_ROOT, loadManifest } from "./lib/document-store.mjs";
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const REPO_ROOT = path.resolve(__dirname, "../..");
 const stagedOnly = process.argv.includes("--staged");
 
 function sidecarPaths(pdfPath) {

@@ -69,13 +69,10 @@ portfolio's matters before that judge.
   (N.D. Cal. senior district judge; no portfolio matter currently assigned; Uber MDL + Newsom v. Trump)
 - [Dale A. Drozd — hand-pulled objections playbook](../internal/docs/legal-intel/judges/dale-a-drozd-hand.md)
   (E.D. Cal. district judge; presides over Matters 25 and 26; F&R-adoption patterns, *Smith v. GIS* background-check record, and the UPS MTD objections playbook; companion to the 2026 docket audit)
-<<<<<<< HEAD
 - [Carolyn K. Delaney — hand-pulled MTD playbook](../internal/docs/legal-intel/judges/carolyn-k-delaney-hand.md)
   (E.D. Cal. chief magistrate judge; referral MJ in Matter 26; papers-over-podcast motion practice, the leave-to-amend ladder, claim-by-claim F&R architecture, and the UPS MTD tactical playbook; companion to the 2026 docket audit)
-=======
 - [Sean C. Riordan — hand-pulled conference playbook](../internal/docs/legal-intel/judges/sean-c-riordan-hand.md)
   (E.D. Cal. magistrate judge; referral MJ in Matter 25; the Oct. 8 status/scheduling conference playbook — 14-point status-report checklist, scheduling-order anatomy from the *Fitzgibbon v. Experian* FCRA comparator, standing-order rules, and settlement practice; companion to the 2026 docket audit)
->>>>>>> 8099e0e5 (Intel: hand-pulled Judge Sean C. Riordan conference playbook)
 
 ## Roadmap
 

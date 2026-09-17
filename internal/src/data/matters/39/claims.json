@@ -1,0 +1,47 @@
+{
+  "summary": "ICRAA § 1786.40 (I&B); CCRAA § 1785.20.5 (alternative); UCL § 17200; Penal Code § 290.46(j) (I&B — report contents and use)",
+  "counts": [
+    {
+      "id": 1,
+      "status": "live",
+      "theory_ids": [],
+      "title": "[INDEPENDENT PATH] ICRAA, Civ. Code §§ 1786.40 and 1786.50 — against Best Buy as user; vendor First Advantage is not a named defendant; written offer accepted, drug screen completed, no 1786.40 advice in the file; ghosting is the adverse action; 1786.52 discovery date does not appear on the face of the pleading"
+    },
+    {
+      "id": 2,
+      "status": "live",
+      "theory_ids": [],
+      "title": "[ALTERNATIVE] CCRAA, Civ. Code §§ 1785.20.5 and 1785.31 — if the First Advantage product was an ordinary consumer credit report rather than investigative; no copy or rights notice before the ghosting"
+    },
+    {
+      "id": 3,
+      "status": "live",
+      "theory_ids": [],
+      "title": "[DERIVATIVE / EQUITABLE] UCL § 17200 — unlawful and unfair prongs borrowing § 290.46(j); restitution limited to vested money/property"
+    },
+    {
+      "id": 4,
+      "status": "live",
+      "theory_ids": [],
+      "title": "[PLEADED ON INFORMATION AND BELIEF] Penal Code § 290.46(j) — last count on page one; pleaded like Home Depot: the First Advantage report contained § 290.46 information and Best Buy used it; basis is written offer, named FADV, same-day screen, contemporaneous Megan's Law listing, and exclusive control; Lerma cannot be decided on the face of this complaint"
+    },
+    {
+      "id": 5,
+      "status": "live",
+      "theory_ids": [],
+      "title": "[OMITTED] Tameny / IIED / contract / estoppel — two-year CCP § 335.1 clock from an Oct. 2023 decision would have closed in 2025; no signed offer audit in the file"
+    },
+    {
+      "id": 6,
+      "status": "live",
+      "theory_ids": [],
+      "title": "[OMITTED] FCRA — reserved; pleading it now would create a federal question without a Best Buy report or adverse packet, and a two-year discovery clock from late-2023 knowledge of non-hire is a defense argument"
+    },
+    {
+      "id": 7,
+      "status": "live",
+      "theory_ids": [],
+      "title": "[PRESERVED, NOT PLEADED] FEHA and Fair Chance Act — no CRD right-to-sue in the record"
+    }
+  ]
+}

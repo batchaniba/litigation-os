@@ -4,10 +4,9 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { inferDocketNumber, paddedMatterNumber } from "../src/data/matters/assembleMatter.js";
+import { inferDocketNumber } from "../src/data/matters/assembleMatter.js";
 import { EVENTS_FILE, isSplitMatterDir, splitMatterDir } from "./lib/matter-layout.mjs";
 import { MATTERS_DIR } from "./load-matters.mjs";
-import { DOCUMENTS_ROOT } from "./lib/document-store.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(__dirname, "../..");

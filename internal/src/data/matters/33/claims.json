@@ -1,0 +1,29 @@
+{
+  "summary": "42 U.S.C. § 1983 — APS impartial-adjudicator / fair hearing; declaratory and injunctive relief (vacatur of APS 34739340) — Dkt. 6 (FAC filed Aug. 17, 2026) is the court pleading of record; also Candelaria / DMV APS PDF home for Matters 7/8",
+  "counts": [
+    {
+      "id": 1,
+      "status": "live",
+      "theory_ids": [],
+      "title": "42 U.S.C. § 1983 — Denial of an impartial adjudicator (procedural due process)"
+    },
+    {
+      "id": 2,
+      "status": "live",
+      "theory_ids": [],
+      "title": "42 U.S.C. § 1983 — Denial of a fair hearing (procedural due process)"
+    },
+    {
+      "id": 3,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Declaratory relief — 28 U.S.C. §§ 2201–2202 (vacatur of APS Decision 34739340)"
+    },
+    {
+      "id": 4,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Injunctive / Ex parte Young relief vs. DMV Director Gordon (official capacity)"
+    }
+  ]
+}

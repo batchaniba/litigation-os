@@ -1,0 +1,16 @@
+[
+  {
+    "id": "e01",
+    "label": "Parole records",
+    "path": null,
+    "what_it_proves": "Parole records",
+    "transcript_path": null
+  },
+  {
+    "id": "e02",
+    "label": "Supervision documentation",
+    "path": null,
+    "what_it_proves": "Supervision documentation",
+    "transcript_path": null
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "number": 36,
+  "last_updated": "2026-09-16",
+  "caption": "Brendan Ngwa Nforbi v. AT&T Mobility Services LLC",
+  "case_no": "TBD",
+  "court": "USDC E.D. Cal. (Sep. 16 walk-up; unfiled) / San Joaquin Sup. Ct. (Sep. 8 packet LOCKED, unfiled)",
+  "courtlistener": {
+    "court_id": "caed"
+  },
+  "claims": "FCRA § 1681b(b)(3); ICRAA § 1786.40; CCRAA § 1785.20.5 (alternative); Breach of Contract; Implied Covenant; Promissory Estoppel; Negligent Misrepresentation; Fraud / Concealment; UCL § 17200; Penal Code § 290.46(j)",
+  "status": "EXECUTED (unfiled) — E.D. Cal. walk-up packet dated September 16, 2026 (complaint, JS 44, AO 239, AO 440, magistrate consent CONSENT-checked). San Joaquin September 8 packet remains LOCKED and unfiled. Do not serve the defendant with the consent form.",
+  "status_label": "EDCA walk-up Sep. 16 — unfiled",
+  "lifecycle": "pre_filing",
+  "proceeding": "federal_civil",
+  "phase": "pre_filing",
+  "filed": "Not yet filed",
+  "judge": "TBD",
+  "cluster": 3,
+  "type": "Federal",
+  "archived": false,
+  "note": "LOCKED. Packet is signed for September 8, 2026 filing. Do not treat as filed until clerk-stamped. Do not rewrite pleading prose unless a new AT&T or First Advantage document appears. Plaintiff confirmed Workday acceptance, onboarding, reliance, and nonreceipt of pre-adverse materials. First Advantage is not a named defendant. § 1786.16 is reserved, not pleaded. § 290.46(j) is the last count on page one.",
+  "key_facts": "On May 16, 2026, Plaintiff submitted two AT&T applications: R-107776 Retail Sales Consultant at Stockton Pacific and R-106742 Bilingual Spanish Retail Sales Consultant at Lodi. Both advanced through interviews. LTI then provided an ACTFL Telephone OPIc Spanish test expiring May 25 and stated that the rating would go to AT&T Taleo; the record still lacks the score, audio, threshold, receipt time, and decision notes. On May 28 at 10:13 a.m., Workday officially offered Plaintiff R-106742. The two-page offer identifies the position as Retail Sales Consultant reporting to Orville R. Bell at 2439 W. Kettleman Lane, $24.95/hour paid biweekly, $13,700 annual target variable compensation prorated for part-time hours, and a tentative June 15 start. It lists acceptance, hiring documents, work authorization, applicable export/rehire checks, absence of restrictive agreements, and satisfactory standardized background checks as contingencies; it does not list Spanish proficiency, at-will status, arbitration, weekly hours, or an unrestricted withdrawal right. Workday issued onboarding tasks at 10:15–10:17, and First Advantage sent a screening task at 10:19. At 12:23, Patterson texted that “the manager” no longer wanted to proceed because Plaintiff did not pass Spanish. Plaintiff accepted the offer through Workday, began onboarding, and received no pre-adverse report or rights summary. The sequence proves an offer, acceptance, and abrupt rescission. Registry use and report transmission remain information and belief.",
+  "procedural_status": "Canonical chronology is clocks.json, docket.json, and events.jsonl. Do not reconstruct dates from README."
+}

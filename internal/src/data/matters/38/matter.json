@@ -1,0 +1,24 @@
+{
+  "number": 38,
+  "last_updated": "2026-09-16",
+  "caption": "Brendan Ngwa Nforbi v. Swift Transportation Co. of Arizona LLC",
+  "case_no": "TBD",
+  "court": "USDC E.D. Cal. (Sep. 16 walk-up; unfiled) / San Joaquin Sup. Ct. (Sep. 8 packet LOCKED, unfiled)",
+  "courtlistener": {
+    "court_id": "caed"
+  },
+  "claims": "ICRAA § 1786.40; CCRAA § 1785.20.5 (alternative); UCL § 17200; Penal Code § 290.46(j) (I&B — preliminary NSOPW / registry)",
+  "status": "EXECUTED (unfiled) — E.D. Cal. walk-up packet dated September 16, 2026 (complaint, JS 44, AO 239, AO 440, magistrate consent CONSENT-checked). San Joaquin September 8 packet remains LOCKED and unfiled. Do not serve the defendant with the consent form. File the federal packet before September 26 if the pre-adverse is accrual.",
+  "status_label": "EDCA walk-up Sep. 16 — unfiled",
+  "lifecycle": "pre_filing",
+  "proceeding": "federal_civil",
+  "phase": "pre_filing",
+  "filed": "Not yet filed",
+  "judge": "TBD",
+  "cluster": 3,
+  "type": "Federal",
+  "archived": false,
+  "note": "LOCKED. Packet is signed for September 8, 2026 filing. Do not treat as filed until clerk-stamped. Do not rewrite pleading prose unless a new Swift or vendor document appears. The role is Class A Driver. The furnished snapshots show NSOPW Processing — neither a completed hit nor a completed no-record, and not SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY. Serve the current SOS agent (likely NRAI), not a terminal. Knight-Swift parent is not named. Do not publish the decrypted packet; it contains SSN last-four, DOB, CDL, and phones. § 290.46(j) is the last count on page one.",
+  "key_facts": "The role was Class A Driver. On Sept. 22, 2023, Swift driver recruiters Robin Kaufman and Matt Hutto emailed Plaintiff through Tenstreet about completing a Class A Driver application. On Sept. 25, Tenstreet posted a DriverIQ employment document and an FMCSA Clearinghouse result; FMCSA emailed that SWIFT TRANSPORTATION CO OF ARIZONA LLC (USDOT 54283) had requested Clearinghouse access. On Sept. 26, Swift Recruiting emailed an encrypted pre-adverse letter, later decrypted. On Oct. 5, Swift sent a post-adverse letter stating it had decided not to employ Plaintiff based in whole or in part on consumer reports from Asurint, Tenstreet, DriverIQ, FMCSA-DOT, and Equifax Work Number. The decrypted packet is pleaded as known fact: National Criminal without Sex Offender Clear; federal criminal Clear; completed county criminal Clear; NSOPW remained Processing on every snapshot furnished to Plaintiff; the furnished packet contains neither a completed hit nor a completed no-record, and no California source-of-record line; Clearinghouse Driver Not Prohibited. The file does not contain a written offer, a terminal assignment, or a rate of pay. The § 290 count is information and belief that Swift used preliminary sex-offender-registry information from that in-process NSOPW component, in whole or in part, in the denial. What the completed criminal / MVR / PSP / CDLIS components contain is not information disclosed pursuant to Penal Code § 290.46. Do not treat this packet as proof that Home Depot, Best Buy, or AT&T used the registry.",
+  "procedural_status": "Canonical chronology is clocks.json, docket.json, and events.jsonl. Do not reconstruct dates from README."
+}

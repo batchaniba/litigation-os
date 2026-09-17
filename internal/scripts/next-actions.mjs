@@ -2,9 +2,10 @@
 // ==========================================================
 // Answer "what's next on the list for me to do?" from portfolio data.
 //
-// Reads timeline.json (upcoming: true) + matters/summaries.json, ranks by
+// Reads clocks.json (live calendar) + matters/summaries.json, ranks by
 // urgency and by who the clock runs against, and prints a queue. Nothing is
 // written to disk, so this output can never go stale the way a synced file can.
+// timeline.json is the archive; CourtListener still writes it.
 //
 // Usage:
 //   npm run next                  # next 30 days, your obligations first
@@ -17,11 +18,13 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { MATTERS_DIR } from "./load-matters.mjs";
+import { loadAllClocks } from "./lib/load-clocks.mjs";
 import { buildQueue, todayKey } from "./lib/next-actions.mjs";
+import { clocksToUpcomingEvents } from "./lib/upcoming-from-clocks.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = path.resolve(__dirname, "../src/data");
-const TIMELINE = path.join(DATA_DIR, "timeline.json");
 const SUMMARIES = path.join(DATA_DIR, "matters/summaries.json");
 const CROSS_MATTER = path.join(DATA_DIR, "crossMatter.json");
 
@@ -47,18 +50,21 @@ if (matterRaw !== null && !Number.isFinite(matterFilter)) {
   process.exit(1);
 }
 
-for (const file of [TIMELINE, SUMMARIES, CROSS_MATTER]) {
+for (const file of [SUMMARIES, CROSS_MATTER]) {
   if (!fs.existsSync(file)) {
     console.error(`Missing ${path.relative(process.cwd(), file)}`);
     process.exit(1);
   }
 }
 
-const timeline = JSON.parse(fs.readFileSync(TIMELINE, "utf8"));
 const summaries = JSON.parse(fs.readFileSync(SUMMARIES, "utf8"));
 const clusters = JSON.parse(fs.readFileSync(CROSS_MATTER, "utf8")).clusters ?? [];
 const today = todayKey();
-const queue = buildQueue(timeline, summaries, { today, horizonDays, clusters });
+const upcoming = clocksToUpcomingEvents(loadAllClocks(MATTERS_DIR), {
+  today,
+  includeUndated: true,
+});
+const queue = buildQueue(upcoming, summaries, { today, horizonDays, clusters });
 
 const matchesFilter = (item) => matterFilter === null || item.matters.includes(matterFilter);
 const matchesActor = (item) => !mineOnly || item.actor === "you" || item.actor === "unknown";
@@ -146,11 +152,11 @@ if (gaps.length > 0) {
 
 if (retired.length > 0) {
   console.log(
-    `\nSkipped ${retired.length} upcoming flag(s) on archived/closed matters — clear upcoming in timeline.json.`,
+    `\nSkipped ${retired.length} clock(s) on archived/closed matters — satisfy or vacate them in clocks.json.`,
   );
 }
 
 console.log(
-  "\nSource: internal/src/data/timeline.json (upcoming: true) + matters/summaries.json.",
+  "\nSource: internal/src/data/matters/NN/clocks.json + matters/summaries.json.",
 );
 console.log("Deadlines are as recorded in the portfolio — confirm against the docket before relying on one.");

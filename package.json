@@ -50,11 +50,12 @@
     "sync:short-links": "node internal/scripts/sync-short-links.mjs",
     "sync:summaries": "node internal/scripts/sync-matter-summaries.mjs",
     "sync:upcoming": "node internal/scripts/sync-upcoming.mjs",
+    "report:prose": "node internal/scripts/report-prose.mjs",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
     "test:golden": "node internal/scripts/test-golden.mjs",
     "typecheck": "tsc --noEmit",
-    "validate": "npm run lint && node internal/scripts/sync-document-registry.mjs --check && node internal/scripts/generate-readme-tables.mjs --check && node internal/scripts/sync-machine-index.mjs --check && node internal/scripts/validate-portfolio.mjs && npm run citations:check && npm run test:coverage"
+    "validate": "npm run lint && node internal/scripts/sync-document-registry.mjs --check && node internal/scripts/sync-upcoming.mjs --check && node internal/scripts/generate-readme-tables.mjs --check && node internal/scripts/sync-machine-index.mjs --check && node internal/scripts/validate-portfolio.mjs && npm run citations:check && npm run test:coverage"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

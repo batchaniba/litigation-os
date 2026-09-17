@@ -2,11 +2,11 @@
 // Vite uses import.meta.glob in internal/src/data/matters/index.ts;
 // plain Node (validate, scaffold, index) reads the same files via fs.
 //
-// Two layouts, portfolio-wide:
-//   legacy — internal/src/data/matters/NN.json
-//   split  — internal/src/data/matters/NN/{matter,docket,clocks,...}.json
-// Split a matter when you touch it. This loader still returns the assembled
-// Matter shape so the dashboard and existing scripts do not fork.
+// Two layouts, portfolio-wide. Every numbered matter is currently split.
+//   split  — internal/src/data/matters/NN/{matter,docket,clocks,documents,...}.json
+//   legacy — internal/src/data/matters/NN.json (still loadable if a new file lands)
+// This loader returns the assembled Matter shape so the dashboard and existing
+// scripts do not fork.
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { validateMatter } from "./lib/matter-schema.mjs";

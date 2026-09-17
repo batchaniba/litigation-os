@@ -1,0 +1,19 @@
+{
+  "defendants_label": "Amazon.com Services, LLC (Amazon fulfillment and warehouse operations; principal employer entity for Amazon fulfillment center workers in California); Accurate Background LLC (consumer reporting agency; conducted the background check on Amazon's behalf under shortcode 45996; prior co-defendant with Amazon in Lerma v. Amazon.com Services, LLC et al., No. 8:22-cv-01727 (C.D. Cal.) — the PC §290.46(j) claim in that case was dismissed at the pleading stage in May 2023, not settled; the case ultimately settled in Sept. 2023 on a surviving Fair Chance Act claim against Amazon only, see key_facts); and DOES 1–10, inclusive",
+  "serviceTracking": [
+    {
+      "name": "Amazon.com Services, LLC",
+      "title": "Defendant (registered agent CSC - Lawyers Incorporating Service)",
+      "location": "Sacramento County",
+      "served": true,
+      "dateServed": "July 31, 2026 (Rebecca Vang / Authorized Agent)"
+    },
+    {
+      "name": "Accurate Background LLC",
+      "title": "Defendant (registered agent CT Corporation System)",
+      "location": "Los Angeles County (private process server)",
+      "served": true,
+      "dateServed": "July 31, 2026 (Jaqueline Mejia, Agent, served by Sarah Thompson)"
+    }
+  ]
+}

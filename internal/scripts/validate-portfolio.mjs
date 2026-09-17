@@ -33,7 +33,6 @@ import {
   effectiveStatusLabel,
   isRedundantStatusLabelOverride,
 } from "./status-label.mjs";
-import { PROSE_HINTS, docketLogIssues, proseBudgetIssues } from "./prose-budget.mjs";
 import { loadRegistry, registryByPath } from "./lib/document-registry.mjs";
 import { pdfReadableProblem } from "./lib/pdfMagic.mjs";
 import { matterRefsInclude, parseMatterRefs } from "../src/utils/matterRefs.js";
@@ -124,26 +123,57 @@ function checkSplitHardRules(dir, tag) {
   }
 
   const docketPath = path.join(dir, "docket.json");
-  if (!fs.existsSync(docketPath)) return;
-  let docket;
+  if (fs.existsSync(docketPath)) {
+    let docket;
+    try {
+      docket = JSON.parse(fs.readFileSync(docketPath, "utf8"));
+    } catch {
+      fail(`${tag}: docket.json is not JSON`);
+      docket = null;
+    }
+    if (docket && !Array.isArray(docket)) {
+      fail(`${tag}: docket.json must be an array`);
+    } else if (Array.isArray(docket)) {
+      for (const [i, row] of docket.entries()) {
+        if (row == null || typeof row !== "object") continue;
+        if (row.dkt != null && !Number.isInteger(row.dkt)) {
+          fail(`${tag}: docket.json[${i}] dkt must be an integer or null — do not invent a docket number`);
+        }
+        if ("filed" in row && typeof row.filed !== "boolean") {
+          fail(`${tag}: docket.json[${i}] filed must be a boolean`);
+        }
+        if (typeof row.path === "string" && /\.(jpe?g|png|gif|webp)$/i.test(row.path)) {
+          fail(`${tag}: docket.json[${i}] is an image — pleadings only; inventory belongs in documents.json`);
+        }
+      }
+    }
+  }
+
+  const clocksPath = path.join(dir, "clocks.json");
+  if (!fs.existsSync(clocksPath)) return;
+  let clocks;
   try {
-    docket = JSON.parse(fs.readFileSync(docketPath, "utf8"));
+    clocks = JSON.parse(fs.readFileSync(clocksPath, "utf8"));
   } catch {
-    fail(`${tag}: docket.json is not JSON`);
+    fail(`${tag}: clocks.json is not JSON`);
     return;
   }
-  if (!Array.isArray(docket)) {
-    fail(`${tag}: docket.json must be an array`);
+  if (!Array.isArray(clocks)) {
+    fail(`${tag}: clocks.json must be an array`);
     return;
   }
-  for (const [i, row] of docket.entries()) {
+  for (const [i, row] of clocks.entries()) {
     if (row == null || typeof row !== "object") continue;
-    if (row.dkt != null && !Number.isInteger(row.dkt)) {
-      fail(`${tag}: docket.json[${i}] dkt must be an integer or null — do not invent a docket number`);
+    if (typeof row.id !== "string" || !row.id.trim()) {
+      fail(`${tag}: clocks.json[${i}] id must be a non-empty string`);
     }
-    if ("filed" in row && typeof row.filed !== "boolean") {
-      fail(`${tag}: docket.json[${i}] filed must be a boolean`);
+    if (row.date != null && !/^\d{4}-\d{2}-\d{2}$/.test(row.date)) {
+      fail(`${tag}: clocks.json[${i}] date must be YYYY-MM-DD or null`);
     }
+    if (row.source_dkt != null && !Number.isInteger(row.source_dkt)) {
+      fail(`${tag}: clocks.json[${i}] source_dkt must be an integer or null — do not invent a docket number`);
+    }
+    // Overdue is a fact. Do not fail the schema because a clock's date has passed.
   }
 }
 
@@ -277,30 +307,8 @@ for (const m of cases) {
     }
   }
 
-  // Legacy NN.json still has a prose ratchet until split. Split when touched.
-  // Overdue next_clock is a fact in the index, not a fail.
-  if (m.__layout !== "split") {
-    for (const issue of proseBudgetIssues(m)) {
-      if (issue.level === "over-ceiling") {
-        fail(
-          `${tag}: ${issue.field} is ${issue.words} words, ceiling ${issue.ceiling} — prose may not get ` +
-            `longer than the recorded worst case; ${PROSE_HINTS[issue.field]}`,
-        );
-      } else {
-        warn(`${tag}: ${issue.field} is ${issue.words} words, target ${issue.target} — ${PROSE_HINTS[issue.field]}`);
-      }
-    }
-  }
-
-  // Docket-log heuristic: status / procedural_status that still read like a
-  // filing chronology (dense dates, SERVED/COMPUTED markers, caps heads).
-  // Advisory — legal nuance sometimes needs dates; timeline.json owns the log.
-  for (const issue of docketLogIssues(m)) {
-    warn(
-      `${tag}: ${issue.field} looks like a docket log (${issue.hits.join(", ")}; ${issue.words}w) — ` +
-        `dated beats belong in timeline.json; keep narrative judgment in prose`,
-    );
-  }
+  // Word-count ceilings are advisory (`npm run report:prose`). Split identity
+  // is records, not a diary. Overdue next_clock is a fact in the index, not a fail.
 
   // status_label is an optional hand override. When omitted, badges/strip/README
   // derive a label from phase + the next posture-ranked timeline event.
@@ -518,7 +526,9 @@ for (const [i, t] of timeline.entries()) {
     if (!dateKey) {
       fail(`${tag}: upcoming event date must use the format "Mon. D, YYYY"`);
     } else if (dateKey < today) {
-      fail(`${tag}: past event is still marked upcoming (today is ${today} in ${DEADLINE_TIME_ZONE})`);
+      warn(
+        `${tag}: past event is still marked upcoming on timeline.json (today is ${today} in ${DEADLINE_TIME_ZONE}) — live calendar is clocks.json`,
+      );
     }
     const src = typeof t.source === "string" ? t.source.trim() : "";
     if (!src) {

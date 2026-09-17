@@ -1,0 +1,18 @@
+{
+  "appearances": [
+    {
+      "id": null,
+      "name": "Jasmine J. Stanzick",
+      "firm": "Seyfarth Shaw LLP",
+      "dossier": "counsel/jasmine-j-stanzick.json",
+      "attorney_id": null
+    },
+    {
+      "id": null,
+      "name": "Andrew P. Frederick",
+      "firm": "Morgan, Lewis & Bockius LLP",
+      "dossier": "counsel/andrew-p-frederick.json",
+      "attorney_id": null
+    }
+  ]
+}

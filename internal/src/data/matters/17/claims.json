@@ -1,0 +1,17 @@
+{
+  "summary": "42 USC 1983: Civil Rights",
+  "counts": [
+    {
+      "id": 1,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Civil Rights Violation"
+    },
+    {
+      "id": 2,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Declaratory and Injunctive Relief"
+    }
+  ]
+}

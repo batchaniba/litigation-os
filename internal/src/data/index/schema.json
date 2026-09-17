@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://portfolio.local/index/schema.json",
   "title": "Litigation portfolio machine graph",
-  "description": "Contract, not a throttle. Types so two agents write the same shape. docket.json is how to find a hearing without reading a diary. events.jsonl is append-only — do not rewrite history in procedural_status. Never invent a docket number; if dkt is null, say so. filed is a field, not a vibe. The index is the front door. status_label maxLength is a UI chip. An overdue next_clock is a fact. Do not fabricate the docket.",
+  "description": "Contract, not a throttle. Types so two agents write the same shape. docket.json is pleadings. documents.json is the file inventory. clocks.json is the live calendar. events.jsonl is append-only — do not rewrite history in procedural_status. Never invent a docket number; if dkt is null, say so. filed is a field, not a vibe. The index is the front door. status_label maxLength is a UI chip. An overdue next_clock is a fact. Do not fabricate the docket.",
   "x-contract": {
     "events_append_only": true,
     "invent_docket_numbers": false,

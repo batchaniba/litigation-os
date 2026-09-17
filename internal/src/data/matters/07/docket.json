@@ -1,0 +1,30 @@
+[
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "court",
+    "type": "order",
+    "title": "Notice of Supplemental Authority - Serrato Order - July 7 2026",
+    "path": "/documents/matter-33/from-07/Notice of Supplemental Authority - Serrato Order - July 7 2026.pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "court",
+    "type": "order",
+    "title": "Notice of Supplemental Authority - Serrato Order - ELECTRONICALLY FILED Jul 9 2026",
+    "path": "/documents/matter-33/from-07/Notice of Supplemental Authority - Serrato Order - ELECTRONICALLY FILED Jul 9 2026.pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "other",
+    "title": "Notice of Voluntary Dismissal Without Prejudice (Aug 11 2026)",
+    "path": "/documents/matter-33/from-07/Notice of Voluntary Dismissal Without Prejudice (Aug 11 2026).pdf",
+    "filed": true,
+    "label": "Notice of Voluntary Dismissal Without Prejudice (executed Aug. 11, 2026; e-filed Aug. 15, 2026) — FRCP 41(a)(1)(A)(i); entire action; neither Defendant served or appeared"
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "defendants_label": "Diana Candelaria (DMV Driver Safety Hearing Officer), individually; Steve Gordon, Director, California DMV, in his official capacity; and DOES 1–10 — Dkt. 1 complaint. Matter 7 (E.D. Cal.) and Matter 8 (state mandate, abandoned) are the prior Candelaria tracks.",
+  "serviceTracking": [
+    {
+      "name": "Diana Candelaria",
+      "title": "Defendant (DMV Driver Safety Hearing Officer, individually)",
+      "location": "DMV Legal Affairs Division, Mail Station C128, Sacramento",
+      "served": true,
+      "dateServed": "August 14, 2026 (Sacramento County Sheriff, per SER-001 request e-signed Aug. 13, 2026)"
+    },
+    {
+      "name": "Steve Gordon",
+      "title": "Defendant (Director, California DMV, official capacity)",
+      "location": "DMV Legal Affairs Division, Mail Station C128, Sacramento",
+      "served": true,
+      "dateServed": "August 14, 2026 (Sacramento County Sheriff, per SER-001 request e-signed Aug. 13, 2026)"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "summary": "IIED, Bane Act, Intentional/Negligent Econ. Interference, Negligent Supervision, NIED",
+  "counts": [
+    {
+      "id": 1,
+      "status": "live",
+      "theory_ids": [],
+      "title": "IIED"
+    },
+    {
+      "id": 2,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Bane Act (Civ. Code §52.1)"
+    },
+    {
+      "id": 3,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Intentional Interference w/ Econ. Adv."
+    },
+    {
+      "id": 4,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Negligent Interference w/ Econ. Adv."
+    },
+    {
+      "id": 5,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Negligent Supervision"
+    },
+    {
+      "id": 6,
+      "status": "live",
+      "theory_ids": [],
+      "title": "NIED"
+    }
+  ]
+}

@@ -6,8 +6,10 @@
 // lives in internal/scripts/next-actions.mjs.
 //
 // Two things drive the queue:
-//   1. timeline.json entries flagged `upcoming: true` (dated obligations)
+//   1. live clocks.json rows (open/set, dated, including overdue; callers convert)
 //   2. active matters with no dated obligation at all (coverage gaps)
+// The converter lives in upcoming-from-clocks.mjs. buildQueue still takes
+// timeline-shaped rows so fixture tests stay local.
 // ==========================================================
 
 const MONTHS = new Map([
@@ -38,6 +40,17 @@ export function dateKeyFromLabel(value) {
   const day = Number(match[2]);
   if (day < 1 || day > 31) return null;
   return `${match[3]}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+}
+
+const MONTH_ABBR = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+/** "2026-11-20" -> "Nov. 20, 2026" */
+export function dateLabelFromKey(key) {
+  const match = String(key ?? "").match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (!match) return null;
+  const month = MONTH_ABBR[Number(match[2]) - 1];
+  if (!month) return null;
+  return `${month}. ${Number(match[3])}, ${match[1]}`;
 }
 
 /** Today in a given IANA zone as an ISO day key. Portfolio dates are all PT. */

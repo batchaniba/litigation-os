@@ -1,0 +1,44 @@
+[
+  {
+    "id": "e01",
+    "label": "Form 1502-DR",
+    "path": null,
+    "what_it_proves": "Form 1502-DR",
+    "transcript_path": null
+  },
+  {
+    "id": "e02",
+    "label": "Policy 19-03",
+    "path": null,
+    "what_it_proves": "Policy 19-03",
+    "transcript_path": null
+  },
+  {
+    "id": "e03",
+    "label": "Section 3574/NCR 25-01",
+    "path": null,
+    "what_it_proves": "Section 3574/NCR 25-01",
+    "transcript_path": null
+  },
+  {
+    "id": "e04",
+    "label": "Form 602 grievance",
+    "path": null,
+    "what_it_proves": "Form 602 grievance",
+    "transcript_path": null
+  },
+  {
+    "id": "e05",
+    "label": "LS/CMI documentation",
+    "path": null,
+    "what_it_proves": "LS/CMI documentation",
+    "transcript_path": null
+  },
+  {
+    "id": "e06",
+    "label": "Dwyer/ACSOL decisions",
+    "path": null,
+    "what_it_proves": "Dwyer/ACSOL decisions",
+    "transcript_path": null
+  }
+]

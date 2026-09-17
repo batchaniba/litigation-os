@@ -1,0 +1,48 @@
+[
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "defendant",
+    "type": "motion_to_dismiss",
+    "title": "CHP Motion To Dismiss",
+    "path": "/documents/matter-32/from-01/CHP Motion To Dismiss.pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "defendant",
+    "type": "motion_to_dismiss",
+    "title": "Opposition for Motion to Dismiss",
+    "path": "/documents/matter-32/from-01/Opposition for Motion to Dismiss.pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "reply",
+    "title": "Reply - CHP",
+    "path": "/documents/matter-32/from-01/Reply - CHP.pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "court",
+    "type": "order",
+    "title": "Notice of Supplemental Authority - Serrato Order - July 7 2026",
+    "path": "/documents/matter-32/from-01/Notice of Supplemental Authority - Serrato Order - July 7 2026.pdf",
+    "filed": false
+  },
+  {
+    "dkt": null,
+    "date": null,
+    "filer": "plaintiff",
+    "type": "other",
+    "title": "Notice of Voluntary Dismissal Without Prejudice (Aug 11 2026)",
+    "path": "/documents/matter-32/from-01/Notice of Voluntary Dismissal Without Prejudice (Aug 11 2026).pdf",
+    "filed": true,
+    "label": "Notice of Voluntary Dismissal Without Prejudice (executed Aug. 11, 2026; redated from the Aug. 7, 2026 draft; e-filed Aug. 15, 2026) — FRCP 41(a)(1)(A)(i); entire action"
+  }
+]

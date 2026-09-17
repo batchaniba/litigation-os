@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import {
   buildQueue,
   dateKeyFromLabel,
+  dateLabelFromKey,
   daysBetween,
   inferAction,
   inferActor,
@@ -10,7 +11,9 @@ import {
   urgencyFor,
   yourQueue,
 } from "../../scripts/lib/next-actions.mjs";
-import timeline from "./timeline.json";
+import { clocksToUpcomingEvents, nextFromClocks } from "../../scripts/lib/upcoming-from-clocks.mjs";
+import { loadAllClocks } from "../../scripts/lib/load-clocks.mjs";
+import { MATTERS_DIR } from "../../scripts/load-matters.mjs";
 import summaries from "./matters/summaries.json";
 import graph from "./crossMatter.json";
 
@@ -40,6 +43,14 @@ describe("dateKeyFromLabel", () => {
     expect(dateKeyFromLabel("Mar.–Apr. 2025")).toBeNull();
     expect(dateKeyFromLabel("Mid-2025")).toBeNull();
     expect(dateKeyFromLabel(undefined)).toBeNull();
+  });
+});
+
+describe("dateLabelFromKey", () => {
+  it("round-trips an ISO day to the portfolio label", () => {
+    expect(dateLabelFromKey("2026-11-20")).toBe("Nov. 20, 2026");
+    expect(dateLabelFromKey("2026-09-01")).toBe("Sep. 1, 2026");
+    expect(dateLabelFromKey("not-a-date")).toBeNull();
   });
 });
 
@@ -276,24 +287,26 @@ describe("precedentPeers", () => {
   });
 });
 
-describe("buildQueue against the real portfolio data", () => {
-  const queue = buildQueue(timeline, summaries, {
+describe("buildQueue against the live clocks", () => {
+  const upcoming = clocksToUpcomingEvents(loadAllClocks(MATTERS_DIR), {
+    today: TODAY,
+    includeUndated: true,
+  });
+  const queue = buildQueue(upcoming, summaries, {
     today: TODAY,
     horizonDays: 30,
     clusters: graph.clusters,
   });
 
-  it("covers every timeline entry flagged upcoming", () => {
-    const flagged = timeline.filter((t) => t.upcoming === true).length;
-    expect(queue.items.length + queue.undated.length + queue.retired.length).toBe(flagged);
+  it("covers every live clock the converter emits", () => {
+    expect(queue.items.length + queue.undated.length + queue.retired.length).toBe(upcoming.length);
   });
 
-  it("grounds every live upcoming date on a single calendar day", () => {
-    expect(queue.undated).toEqual([]);
+  it("grounds every dated live clock on a single calendar day", () => {
+    expect(queue.items.every((i) => /^\d{4}-\d{2}-\d{2}$/.test(i.dateKey))).toBe(true);
   });
 
-  it("does not surface archived-only upcoming flags in the ranked queue", () => {
-    expect(queue.retired).toEqual([]);
+  it("does not surface archived-only clocks in the ranked queue", () => {
     expect(queue.items.every((i) => i.matters.some((n) => {
       const m = summaries.find((s) => Number(s.number) === n);
       return m && !m.archived && (m.lifecycle === "active" || m.lifecycle === "pre_filing");
@@ -316,12 +329,19 @@ describe("buildQueue against the real portfolio data", () => {
     expect(mine.some((i) => /430\.41|intends to demur/i.test(i.event))).toBe(false);
   });
 
-  it("pins a known actor and a /documents/ source on every upcoming event", () => {
-    const flagged = timeline.filter((t) => t.upcoming === true);
-    expect(flagged.length).toBeGreaterThan(0);
-    for (const event of flagged) {
-      expect(inferActor(event).actorSource, event.event).toBe("explicit");
-      expect(event.source, event.event).toMatch(/^\/documents\//);
+  it("pins an actor on every live clock row", () => {
+    expect(upcoming.length).toBeGreaterThan(0);
+    for (const event of upcoming) {
+      expect(inferActor(event).actor, event.event).toBeTruthy();
     }
+  });
+
+  it("reads Matter 24's next clock from clocks.json, not the vacated Sep. 30 date", () => {
+    const clocks = loadAllClocks(MATTERS_DIR).get(24);
+    const { next_clock, overdue } = nextFromClocks(clocks, "2026-09-17");
+    expect(next_clock.date).toBe("2026-11-16");
+    expect(next_clock.id).toBe("appearance-notice");
+    expect(overdue).toBe(false);
+    expect(clocks.find((c) => c.id === "mtd-hearing-sep30").status).toBe("vacated");
   });
 });

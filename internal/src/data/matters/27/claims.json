@@ -1,0 +1,41 @@
+{
+  "summary": "PC §290.46(j)(2)(E) Violation, Wrongful Termination in Violation of Public Policy, ICRAA, Invasion of Privacy, Negligence Per Se (Evid. Code §669), UCL §17200",
+  "counts": [
+    {
+      "id": 1,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Violation of Cal. Penal Code § 290.46(j)(2)(E)"
+    },
+    {
+      "id": 2,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Wrongful Termination in Violation of Public Policy"
+    },
+    {
+      "id": 3,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Violation of ICRAA (Cal. Civ. Code § 1786 et seq.)"
+    },
+    {
+      "id": 4,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Invasion of Privacy (Cal. Const., Art. I, § 1)"
+    },
+    {
+      "id": 5,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Negligence Per Se (Evid. Code § 669)"
+    },
+    {
+      "id": 6,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Unlawful Business Practices (Bus. & Prof. Code § 17200 et seq.)"
+    }
+  ]
+}
