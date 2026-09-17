@@ -7,7 +7,7 @@
 //   summaries.json         ← matter JSON
 //   document-index.json    ← matter JSON + registry
 //   upcoming.json          ← timeline.json (upcoming: true)
-//   vercel.json / slugs    ← short-links.json
+//   vercel.json            ← short-links.json (rewrites, not slug PDF copies)
 //   README.md tables       ← matters + timeline + damages
 //
 // Usage: npm run sync:all

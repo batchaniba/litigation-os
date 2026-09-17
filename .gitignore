@@ -29,6 +29,12 @@ internal/public/documents/**
 !internal/public/documents/README.md
 !internal/public/documents/.gitkeep
 
+# Short-link slug copies rewrite to /documents/... — do not re-add them to main.
+# The two HOPE packets are not on the documents branch yet.
+internal/public/*.pdf
+!internal/public/hope-name-stip.pdf
+!internal/public/hope-name-motion.pdf
+
 # Local CourtListener token. Never a VITE_* name.
 .env
 .env.*

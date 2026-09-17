@@ -1,5 +1,5 @@
 {
-  "doc": "Phone-tappable PDF links. Vercel rejects some court-style paths as redirect destinations (parentheses, especially '(b)'). Serve an identical copy at /{slug}.pdf and set Content-Disposition to the portfolio filename so Save As keeps the long name. After editing this file run: node internal/scripts/sync-short-links.mjs",
+  "doc": "Phone-tappable PDF links. /documents/... sources rewrite on Vercel to the Pages origin with each path segment encoded (raw parentheses are invalid Vercel destinations). Public-root leftovers stay as /{slug}.pdf on main. After editing this file run: npm run sync:short-links",
   "links": [
     {
       "slug": "fedex-consent",
@@ -213,7 +213,7 @@
     },
     {
       "slug": "hope-name-motion",
-      "source": "/Civil L.R. 7-11 Administrative Motion Packet - Conform Plaintiff's Docket Name to Brendan Ngwa Nforbi for PACER ECF E-Filing Access (Newanforbi v. Smith and HOPE, N.D. Cal. 3-26-cv-07504-LJC) (September 14, 2026).pdf",
+      "source": "/hope-name-motion.pdf",
       "downloadName": "Civil L.R. 7-11 Administrative Motion Packet - Conform Plaintiff's Docket Name to Brendan Ngwa Nforbi for PACER ECF E-Filing Access (Newanforbi v. Smith and HOPE, N.D. Cal. 3-26-cv-07504-LJC) (September 14, 2026).pdf",
       "title": "Civil L.R. 7-11 administrative motion to conform Plaintiff's docket name to Brendan Ngwa Nforbi for PACER ECF e-filing \u2014 Newanforbi v. Smith / HOPE (3:26-cv-07504-LJC)"
     },

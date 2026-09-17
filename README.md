@@ -390,7 +390,7 @@ Plaintiff is representing himself pro se across all 40 matters. The figures belo
   - `proceeding` — track: `state_civil` | `federal_civil` | `mandate` | `habeas`
   - `phase` — current stage on that track (e.g. `demurrer`, `fr_pending`, `under_submission`, `responsive_deadline`; `terminal` when disposed)
 - **Timeline:** `internal/src/data/timeline.json` (full log) + generated `upcoming.json` for the shell deadline clock
-- **Documents:** `internal/public/documents/` (Matter 32: `from-01|02|20|24/` + N.D. Cal. filing under `ndcal/`; Matter 33: `incident|from-07|from-08|opinions/` + N.D. Cal. filing under `ndcal/`; blank Judicial Council templates and the portfolio Proof of Service form under `_form-library/` (see `_form-library/README.md`)). The tree is ~660 MB and growing; without it on disk, `PORTFOLIO_SKIP_DISK_DOCS=1` checks paths against `internal/src/data/documents/manifest.json` (the `pre-push` hook sets this automatically). See [DOCUMENT_STORE.md](internal/docs/DOCUMENT_STORE.md).
+- **Documents:** `internal/public/documents/` (Matter 32: `from-01|02|20|24/` + N.D. Cal. filing under `ndcal/`; Matter 33: `incident|from-07|from-08|opinions/` + N.D. Cal. filing under `ndcal/`; blank Judicial Council templates and the portfolio Proof of Service form under `_form-library/` (see `_form-library/README.md`)). The tree is ~660 MB and growing. Pull one matter with `npm run documents:pull -- --matter 24`. Without the tree on disk, `PORTFOLIO_SKIP_DISK_DOCS=1` checks paths against `internal/src/data/documents/manifest.json` (the `pre-push` hook sets this automatically). See [DOCUMENT_STORE.md](internal/docs/DOCUMENT_STORE.md).
 
 ### Prose length budgets
 
@@ -469,7 +469,7 @@ Empty cursors refuse a full historical crawl unless you pass `--bootstrap`, `--a
 
 ```bash
 npm install
-npm run documents:pull   # fill internal/public/documents/ from origin/documents
+npm run documents:pull -- --matter 24   # one matter; omit flags for the whole tree
 npm run dev
 ```
 
@@ -483,6 +483,7 @@ npm run sync:summaries        # rebuild light matter summaries + document search
 npm run sync:registry         # rebuild path → label catalog
 npm run sync:manifest         # sha256 inventory of public/documents (hashes only new/resized files)
 npm run documents:pull        # restore PDFs from the documents branch (after clone)
+npm run documents:pull -- --matter 24   # one matter folder only
 npm run documents:push        # publish local PDFs to origin/documents
 npm run sync:upcoming         # rebuild upcoming.json from timeline.json for the shell
 npm run generate:readme       # regenerate marked README tables from portfolio data

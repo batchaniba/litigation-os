@@ -54,6 +54,7 @@ body. Production deploys are scheduled, not per-push; see
 hooks and `npm run` scripts:
 - `validate-portfolio.mjs` — data validation (pre-push gate)
 - `sync-*.mjs` — derived data generation (registry, manifest, summaries, upcoming, short-links)
+- `documents-store.mjs` — `npm run documents:pull -- --matter N` for one folder; do not copy slug PDFs onto `main`
 - `load-matters.mjs`, `lib/matter-schema.mjs` — shared loaders and schemas
 - `courtlistener/*.mjs` — docket sync
 

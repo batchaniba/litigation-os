@@ -48,8 +48,9 @@ Team → **Settings → Billing → Spend Management**
 ### `vercel.json` (committed, generated)
 
 `npm run sync:short-links` writes it from `internal/public/short-links.json`:
-short-link redirects, `Content-Disposition` headers, the `/documents/*` →
-GitHub Pages rewrite, and
+short-link **rewrites** to the encoded Pages URL for `/documents/...`
+sources (so `main` does not carry slug PDF copies), leftover public-root
+redirects, the `/documents/*` → GitHub Pages rewrite, and
 
 ```json
 "git": { "deploymentEnabled": false }
