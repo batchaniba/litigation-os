@@ -55,6 +55,17 @@ describe("GET /documents/<path>", () => {
     expect(res.status).toBe(200);
   });
 
+  it("returns JSON 404 with the court path when neither index nor D1 has it", async () => {
+    const res = await worker.fetch(
+      new Request(`https://example.test${DOC_PATH}`),
+      envWith({}),
+    );
+    expect(res.status).toBe(404);
+    const body = await res.json();
+    expect(body.error).toBe("not_found");
+    expect(body.path).toBe(DOC_PATH);
+  });
+
   it("hash URLs stay immutable", async () => {
     const res = await worker.fetch(
       new Request(`https://example.test/doc/${SHA}`),
