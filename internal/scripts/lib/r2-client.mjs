@@ -144,6 +144,7 @@ export async function putObject(key, body, { contentType = "application/pdf" } =
   const contentMd5 = createHash("md5").update(body).digest("base64");
   const res = await r2Request("PUT", key, body, {
     "Content-Type": contentType,
+    "Content-Length": String(Buffer.byteLength(body)),
     "Content-MD5": contentMd5,
   });
   if (res.status !== 200 && res.status !== 204) {
