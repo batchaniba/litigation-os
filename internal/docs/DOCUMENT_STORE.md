@@ -129,9 +129,10 @@ npm run docs:fetch <sha256> -- --out /tmp/doc.pdf
 ```
 
 The helper re-hashes the bytes client-side and refuses to write on mismatch.
-`origin/documents` is a cold backup. Incremental `documents:push` → R2 on
-every new PDF is the remaining workflow; do not retire the branch until that
-is proven.
+`origin/documents` is a cold backup. Incremental upload is
+`.github/workflows/r2-upload.yml` (`workflow_dispatch` from main, or a push
+to `documents` once that YAML is on the branch). Upload-only; never deletes.
+Do not retire the branch until a reconcile run has proven itself.
 
 GitHub Pages was the public origin for `/documents/*`. The Actions workflow
 is gone and the Pages host now 404s. **Phone taps do not use it.** They stay
