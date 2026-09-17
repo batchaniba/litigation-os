@@ -22,6 +22,7 @@ Crawl this repo as a graph. Do not reconstruct a docket from README or from `sta
 - `events.jsonl` is append-only. Do not rewrite it.
 - Operative pleading is the docket row with `"operative": true`. ASK vs CRB name-conform packets: CRB supersedes; they are not two cases.
 - PDF bytes live in Cloudflare R2 (`litigation-documents` bucket, key `sha256/<first2>/<rest>.pdf` — deterministic from the manifest sha256). Fetch one with `npm run docs:fetch <sha256>` (needs `R2_*` env; bytes are re-hashed client-side). Search `.txt` / `.meta.json` sidecars on this branch. The `documents` branch is a cold backup.
+- Agent R2 access: `R2_*` env comes from `~/.config/r2/env` (600 perms, auto-sourced by shells; set once 2026-09-17 and verified: auth, sha256-verified fetch, manifest reconcile, upload dry-run). Never paste keys into chat, files, or memory — read them from env. The GitHub Actions secrets hold the same values for `r2-upload.yml` but are workflow-only; no agent can read them back.
 - Do not put GitHub or repo URLs in anything Plaintiff will send or file.
 
 ## Limits (what exists, and why)
