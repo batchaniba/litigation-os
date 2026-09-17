@@ -38,19 +38,23 @@ async function processOne(sha256) {
   return log;
 }
 
-async function mapLimit(items, limit, fn) {
-  const out = [];
+async function mapLimit(items, limit, fn, onItem) {
   let i = 0;
+  let done = 0;
   const n = Math.min(limit, items.length) || 0;
+  const results = new Array(items.length);
   await Promise.all(
     Array.from({ length: n }, async () => {
       while (i < items.length) {
         const idx = i++;
-        out[idx] = await fn(items[idx]);
+        const log = await fn(items[idx]);
+        results[idx] = log;
+        done += 1;
+        onItem(log, done, items.length);
       }
     }),
   );
-  return out;
+  return results;
 }
 
 let shas;
@@ -76,11 +80,14 @@ if (process.argv[2] === "--list" && process.argv[3]) {
     .map((f) => f.sha256.toLowerCase());
 }
 
-const results = await mapLimit(shas, CONCURRENCY, processOne);
 let failed = 0;
-for (const log of results) {
-  console.log(JSON.stringify(log));
-  if (log.status === "failed") failed += 1;
-}
+await mapLimit(shas, CONCURRENCY, processOne, (log, done, total) => {
+  if (log.status === "failed") {
+    failed += 1;
+    console.log(JSON.stringify(log));
+  } else if (done % 50 === 0 || done === total) {
+    console.error(`progress: ${done}/${total} (${failed} failed so far)`);
+  }
+});
 console.error(`done: ${shas.length} pdfs, ${failed} failed`);
 process.exit(failed ? 1 : 0);
