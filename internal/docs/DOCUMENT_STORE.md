@@ -128,6 +128,13 @@ npm run docs:fetch <sha256>            # needs R2_ACCOUNT_ID / R2_ACCESS_KEY_ID 
 npm run docs:fetch <sha256> -- --out /tmp/doc.pdf
 ```
 
+On the laptop those variables are exported from `~/.config/r2/env` (mode 600).
+Shells on that machine source it. Cloud agents do not have that file unless
+the environment image does — they read `R2_*` from the process environment
+or they cannot fetch. GitHub Actions secrets hold the same values for
+`r2-upload.yml` and are workflow-only; an agent cannot read them back.
+Never paste keys into chat, files, or memory.
+
 The helper re-hashes the bytes client-side and refuses to write on mismatch.
 `origin/documents` is a cold backup. Incremental upload is
 `.github/workflows/r2-upload.yml` (`workflow_dispatch` from main, or a push
