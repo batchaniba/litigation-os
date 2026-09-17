@@ -31,7 +31,7 @@ function copyPublicExceptDocuments() {
 // dist/version.json records which commit a deployment was built from. The
 // scheduled deploy worker (internal/workers/vercel-deploy-cron/) compares it
 // with main's HEAD and only fires the Deploy Hook when production is behind.
-// Vercel and GitHub Actions expose the SHA in env; local builds ask git.
+// Vercel exposes the SHA in env; local builds ask git. GITHUB_SHA is a leftover fallback.
 function buildCommitInfo() {
   const sha =
     process.env.VERCEL_GIT_COMMIT_SHA ||

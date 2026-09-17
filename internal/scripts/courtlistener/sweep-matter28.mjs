@@ -7,8 +7,9 @@
 //   2. Pull the docket entries for this case and the earlier federal HOPE case (Matter 6),
 //      so the res judicata timeline rests on dockets rather than on counsel's characterization.
 //
-// Runs in GitHub Actions: COURTLISTENER_TOKEN is a repository secret and the agent
-// container's egress policy blocks courtlistener.com.
+// Run on the laptop: COURTLISTENER_TOKEN in gitignored `.env`. There is no
+// GitHub Actions job. The cloud-agent container's egress policy blocks
+// courtlistener.com.
 
 import { mkdirSync, writeFileSync } from "node:fs";
 import path from "node:path";

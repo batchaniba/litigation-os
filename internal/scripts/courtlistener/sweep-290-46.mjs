@@ -2,8 +2,9 @@
 //
 // Closes the one gap the 2026-09-12 § 290.46 case survey could not: a docket-level
 // search for complaints and briefing that cite the statute where no opinion exists.
-// Runs in GitHub Actions because that is where COURTLISTENER_TOKEN lives; the agent
-// container's egress policy blocks courtlistener.com outright.
+// Run on the laptop: COURTLISTENER_TOKEN in gitignored `.env`. There is no
+// GitHub Actions job. The cloud-agent container's egress policy blocks
+// courtlistener.com outright.
 //
 // Usage:
 //   node internal/scripts/courtlistener/sweep-290-46.mjs

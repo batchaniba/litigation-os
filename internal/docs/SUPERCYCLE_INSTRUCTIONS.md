@@ -48,8 +48,9 @@ A comprehensive guide for building single-page data-heavy dashboards using the S
 - **Date Handling:** Native JavaScript Date API (PDT-aware utility functions)
 
 ### Deployment
-- **Hosting:** GitHub Pages (static site)
-- **CI/CD:** GitHub Actions workflow
+- **Hosting:** Vercel (production). GitHub Pages is not deployed.
+- **Gate:** `.githooks/pre-push`. No GitHub Actions.
+- **Production:** Cloudflare `vercel-deploy-cron` POSTs the Vercel Deploy Hook when `main` is ahead.
 - **Build Output:** `dist/` folder
 
 ### Dependencies
@@ -411,17 +412,16 @@ export default defineConfig({
 })
 ```
 
-**CI/CD (GitHub Actions):**
-- Workflows are currently `workflow_dispatch` only (billing/spending limit)
-- Restore `push` / `pull_request` in `.github/workflows/*.yml` when runners work
-- Builds with `npm run build`
-- Deploys `dist/` to GitHub Pages (when the Pages workflow is run)
+**Deploy:**
+- There is no GitHub Actions. Gate is `.githooks/pre-push`.
+- Vercel production is the Deploy Hook cron (`internal/workers/vercel-deploy-cron/`).
+- Worker: `cd workers/doc-api && wrangler deploy` on the laptop.
 
 **Manual Deployment:**
 1. Ensure local build succeeds: `npm run build`
 2. Commit changes to `main` (or merge PR)
-3. GitHub Actions auto-deploys (check Actions tab)
-4. Live at: https://newanforbi.github.io/interactive-litigation-portfolio/
+3. Wait for the Deploy Hook cron, or POST it by hand (`internal/docs/VERCEL_DEPLOYS.md`)
+4. Live at the Vercel production host (not GitHub Pages)
 
 ---
 
@@ -692,12 +692,12 @@ prepared_date: "Jun. 30, 2026",
 2. Verify `useContext(ThemeContext)` import
 3. Restart dev server if theme colors edited in ThemeContext.jsx
 
-### Issue: Build succeeds locally but fails on GitHub
+### Issue: Pre-push refuses a commit that built locally
 
 **Common causes:**
-1. **Base path mismatch:** Check `vite.config.js` has `base: '/interactive-litigation-portfolio/'`
-2. **Missing env vars:** Some builds inject secrets; check `.github/workflows/`
-3. **Node version:** Ensure GitHub Actions uses compatible Node version
+1. **Stale generated files:** run `npm run sync:all` then `npm run generate:readme`
+2. **Missing env on the laptop:** CourtListener / R2 / wrangler live in gitignored env files, not in the repo
+3. **Node version:** use the version in `.nvmrc` / `package.json` engines
 
 ---
 

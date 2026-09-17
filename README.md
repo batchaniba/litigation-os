@@ -434,7 +434,7 @@ Full reports: [`CITATION_INDEX.md`](internal/docs/CITATION_INDEX.md) · [`CITATI
 
 ## CourtListener bridge
 
-Federal matters bind to a stable CourtListener `docket_id` and ingest new PACER/RECAP entries as portfolio facts. Confirmed filings and orders can enter [`timeline.json`](internal/src/data/timeline.json). **Deadlines cannot** — they land in [`courtlistener/review.json`](internal/src/data/courtlistener/review.json) until approved. Automation never writes to `main`; it maintains `automation/courtlistener-sync` and a standing PR.
+Federal matters bind to a stable CourtListener `docket_id` and ingest new PACER/RECAP entries as portfolio facts. Confirmed filings and orders can enter [`timeline.json`](internal/src/data/timeline.json). **Deadlines cannot** — they land in [`courtlistener/review.json`](internal/src/data/courtlistener/review.json) until approved. Run the sync on the laptop; it does not write to `main` from a workflow.
 
 ```bash
 npm run court:resolve              # bind docket_id (Search API; token optional)
@@ -443,7 +443,7 @@ npm run court:sync -- --active-only
 npm run court:sync -- --since 2026-07-01 --bootstrap
 ```
 
-Empty cursors refuse a full historical crawl unless you pass `--bootstrap`, `--active-only`, `--matter N`, or `--all`. Store `COURTLISTENER_TOKEN` as a GitHub Actions repository secret (the CourtListener workflows are the only Actions left in the repo) (`COURTLISTENER_API_TOKEN` is accepted as an alias). Never put it in a `VITE_*` variable. Design notes: [`COURTLISTENER.md`](internal/docs/COURTLISTENER.md).
+Empty cursors refuse a full historical crawl unless you pass `--bootstrap`, `--active-only`, `--matter N`, or `--all`. Store `COURTLISTENER_TOKEN` in a gitignored `.env` (`COURTLISTENER_API_TOKEN` is accepted as an alias). Never put it in a `VITE_*` variable. Design notes: [`COURTLISTENER.md`](internal/docs/COURTLISTENER.md).
 
 [↑ Contents](#contents)
 
@@ -551,7 +551,7 @@ Vercel builds with `VITE_COPY_DOCUMENTS=0` and `PORTFOLIO_SKIP_DISK_DOCS=1` so t
 
 **GitHub Pages** is no longer deployed. Phone taps are the `/{slug}.pdf` copies on Vercel. New PDFs from `npm run documents:push` go to R2 (when `R2_*` is set) and to the `documents` branch as a cold backup. The Worker serves `/documents/<path>` after the path index is published. `vite.config.js` keeps the `GITHUB_PAGES` base-path switch for a manual Pages build if one is ever needed.
 
-**Pre-push gate.** With CI gone, `.githooks/pre-push` is the only automated check before `main`: lint, typecheck, `validate-portfolio`, golden damages math, the unit suite, and the fabricated-citation gate. `npm run prepare` installs it. `SKIP_PORTFOLIO_GATE=1 git push` bypasses it for emergencies only. Branch protection on `main` must **not** require status checks, since nothing reports any.
+**Pre-push gate.** There are no GitHub Actions workflows. `.githooks/pre-push` is the only automated check before `main`: lint, typecheck, `validate-portfolio`, golden damages math, the unit suite, and the fabricated-citation gate. `npm run prepare` installs it. `SKIP_PORTFOLIO_GATE=1 git push` bypasses it for emergencies only. Branch protection on `main` must **not** require status checks; nothing reports any.
 
 ---
 
