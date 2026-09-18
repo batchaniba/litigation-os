@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1301,
-  "totalBytes": 905586198,
+  "fileCount": 1302,
+  "totalBytes": 905657987,
   "files": [
     {
       "path": "/documents/README.md",
@@ -6507,6 +6507,11 @@
       "path": "/documents/matter-40/Offer of Temporary Employment - TaskUs LLC - Adobe Signed (Sep 14 2026).pdf",
       "size": 577746,
       "sha256": "10b73b1d03062b7c20a16d82c1a66e41345dd8565f3ba5623787a812ae722a81"
+    },
+    {
+      "path": "/documents/matter-40/Complaint Review Draft - Ngwa Nforbi v Uber Technologies Inc (N.D. Cal. San Jose) (Sep 18 2026).pdf",
+      "size": 71789,
+      "sha256": "8a2f0963f7073e0ecf8ff6a4f9b53f370b0e68a1dd7721815e39efaf6e52045a"
     }
   ]
 }
