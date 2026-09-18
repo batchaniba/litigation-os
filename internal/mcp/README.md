@@ -3,7 +3,16 @@
 `server.mjs` exposes the portfolio operation catalog
 (`internal/docs/API_OPERATIONS.md`) as MCP tools over stdio. Same operations
 as `npm run q`, richer transport for agent clients. Dependency-free (node
-builtins only).
+builtins only). Laptop-only: it can write the working tree.
+
+External chats (ChatGPT, Grok, Cloud Agents without the repo) do **not**
+get this stdio server. They get the read-only remote MCP on the existing
+document Worker:
+
+`https://litigation-doc-api.ss8sxswwkt.workers.dev/mcp`
+
+That path is tools on `litigation-doc-api` (R2 + D1 bindings), not a second
+Worker and not this stdio process. See `workers/doc-api/README.md`.
 
 ## Run
 

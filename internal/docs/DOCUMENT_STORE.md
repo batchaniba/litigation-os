@@ -149,7 +149,7 @@ On the laptop those variables are exported from `~/.config/r2/env` (mode 600).
 Shells on that machine source it. **Do not give those keys to ChatGPT, Grok,
 or any third-party chat.** Point them at the Worker
 (`https://litigation-doc-api.ss8sxswwkt.workers.dev`) — `/matters`, `/fuse`,
-`/doc/<sha256>`, `/doc/<sha256>/meta`, `/documents/<path>`. Cursor reads the
+`/doc/<sha256>`, `/doc/<sha256>/meta`, `/documents/<path>`, `/mcp`. Cursor reads the
 env file for writes or calls the Worker for reads. Cloud agents without the
 file call the Worker; they never ask him to paste admin keys into chat.
 If a chat needs a secret at all, one rotatable Worker bearer — not the
