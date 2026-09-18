@@ -188,7 +188,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | 37 | Brendan Ngwa Nforbi v. Home Depot U.S.A., Inc. | TBD | USDC E.D. Cal. (Sep. 16 walk-up; unfiled) / San Joaquin Sup. Ct. (Sep. 8 packet LOCKED, unfiled) | Federal | EDCA walk-up Sep. 16 — unfiled |
 | 38 | Brendan Ngwa Nforbi v. Swift Transportation Co. of Arizona LLC | TBD | USDC E.D. Cal. (Sep. 16 walk-up; unfiled) / San Joaquin Sup. Ct. (Sep. 8 packet LOCKED, unfiled) | Federal | EDCA walk-up Sep. 16 — unfiled |
 | 39 | Brendan Ngwa Nforbi v. Best Buy Co., Inc. | TBD | USDC E.D. Cal. (Sep. 16 walk-up; unfiled) / San Joaquin Sup. Ct. (Sep. 8 packet LOCKED, unfiled) | Federal | EDCA walk-up Sep. 16 — unfiled |
-| 40 | Brendan Ngwa Nforbi v. Uber Technologies, Inc. | TBD | USDC N.D. Cal. (division by Court designation) | Federal | ND Cal premier — Uber + TaskUs Holdings/USA |
+| 40 | Brendan Ngwa Nforbi v. Uber Technologies, Inc., et al. | TBD | USDC N.D. Cal. (division by Court designation) | Federal | ND Cal premier — Uber + TaskUs Holdings/USA |
 <!-- PORTFOLIO:ACTIVE_MATTERS:END -->
 
 *Settled matters stay in the table above until dismissal is entered — a settlement resolves the merits, but the matter is still open on the docket. Their Status column reads "Settled" (see the Overview count above for which ones).*

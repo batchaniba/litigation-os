@@ -1341,7 +1341,7 @@
       "number": 40,
       "path": "internal/src/data/matters/40/",
       "layout": "split",
-      "caption": "Brendan Ngwa Nforbi v. Uber Technologies, Inc.",
+      "caption": "Brendan Ngwa Nforbi v. Uber Technologies, Inc., et al.",
       "case_no": "TBD",
       "court": "USDC N.D. Cal. (division by Court designation)",
       "judge": "TBD",
@@ -1353,7 +1353,7 @@
       "phase": "pre_filing",
       "next_clock": null,
       "overdue": false,
-      "last_updated": "2026-09-17",
+      "last_updated": "2026-09-24",
       "files": [
         "claims.json",
         "clocks.json",
