@@ -1,35 +1,35 @@
 {
-  "summary": "FCRA §1681b(b)(3)(A) (lead / federal question); PC §290.46(j)(2)(E) use; ICRAA §§1786.40, 1786.50; UCL §17200; wrongful refusal to hire / withholding of accepted employment in violation of public policy — Uber end client / joint employer + TaskUs staffing entities (N.D. Cal. San Jose)",
+  "summary": "FCRA \u00a71681b(b)(3)(A) (lead); PC \u00a7290.46(j)(2)(E) use; ICRAA; UCL; wrongful refusal/withholding \u2014 Uber + TaskUs Holdings (N.D. Cal.; LLC/USA in DOES)",
   "counts": [
     {
       "id": 1,
       "status": "live",
       "theory_ids": [],
-      "title": "FCRA, 15 U.S.C. §1681b(b)(3)(A) — adverse action based on consumer report without pre-adverse copy / Summary of Rights"
+      "title": "FCRA, 15 U.S.C. \u00a71681b(b)(3)(A) \u2014 adverse action based on consumer report without pre-adverse copy / Summary of Rights"
     },
     {
       "id": 2,
       "status": "live",
       "theory_ids": [],
-      "title": "Penal Code §290.46(j)(2)(E), (j)(4)(A) — unauthorized employment use of California registry information (Order WPS-361214148; Sep. 14 hold pending FA report)"
+      "title": "Penal Code \u00a7290.46(j)(2)(E), (j)(4)(A) \u2014 unauthorized employment use of California registry information (Order WPS-361214148; Sep. 14 hold pending FA report)"
     },
     {
       "id": 3,
       "status": "live",
       "theory_ids": [],
-      "title": "ICRAA, Civ. Code §§1786.40, 1786.50 — employment denial without §1786.40 advice"
+      "title": "ICRAA, Civ. Code \u00a7\u00a71786.40, 1786.50 \u2014 employment denial without \u00a71786.40 advice"
     },
     {
       "id": 4,
       "status": "live",
       "theory_ids": [],
-      "title": "UCL, Bus. & Prof. Code §17200 — unlawful prong borrowing the above"
+      "title": "UCL, Bus. & Prof. Code \u00a717200 \u2014 unlawful prong borrowing the above"
     },
     {
       "id": 5,
       "status": "live",
       "theory_ids": [],
-      "title": "Wrongful refusal to hire / withholding of accepted Uber AV Teammate employment in violation of public policy (§290.46(j))"
+      "title": "Wrongful refusal to hire / withholding of accepted Uber AV Teammate employment in violation of public policy (\u00a7290.46(j))"
     }
   ]
 }

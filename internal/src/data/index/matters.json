@@ -1343,7 +1343,7 @@
       "layout": "split",
       "caption": "Brendan Ngwa Nforbi v. Uber Technologies, Inc.",
       "case_no": "TBD",
-      "court": "USDC N.D. Cal. — San Jose Division (Civil L.R. 3-2; Santa Clara assignment)",
+      "court": "USDC N.D. Cal. (division by Court designation)",
       "judge": "TBD",
       "cluster": 5,
       "related": [],
@@ -1353,7 +1353,7 @@
       "phase": "pre_filing",
       "next_clock": null,
       "overdue": false,
-      "last_updated": "2026-09-17",
+      "last_updated": "2026-09-18",
       "files": [
         "claims.json",
         "clocks.json",

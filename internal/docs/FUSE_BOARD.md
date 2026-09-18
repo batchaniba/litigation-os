@@ -45,5 +45,5 @@
 | M37 | Brendan Ngwa Nforbi v. Home Depot U.S.A., Inc. | no live clock | — |
 | M38 | Brendan Ngwa Nforbi v. Swift Transportation Co. of Arizona LLC | 2026-09-26 | OUTER BOUND — CCP § 338(a) three-year statutory-liability clock on the Swift § 290.46(j) / ICRAA counts if accrual is the Sept. 26, 2023 pre-adverse email.… |
 | M39 | Brendan Ngwa Nforbi v. Best Buy Co., Inc. | 2026-10-17 | OUTER BOUND — CCP § 338(a) three-year statutory-liability clock on the Best Buy § 290.46(j) count if accrual is the Oct. 17, 2023 offer / same-day screen week.… |
-| M40 | Brendan Ngwa Nforbi v. Uber Technologies, Inc. | no live clock | N.D. Cal. San Jose complaint draft (FCRA + §290 use) — not filed |
+| M40 | Brendan Ngwa Nforbi v. Uber Technologies, Inc. | no live clock | N.D. Cal. complaint draft (Uber + TaskUs Holdings) — not filed |
 

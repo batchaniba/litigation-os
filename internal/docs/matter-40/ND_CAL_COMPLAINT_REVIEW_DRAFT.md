@@ -3,7 +3,7 @@
 <!-- Internal generator header. Not part of the pleading. Do not print on page one. -->
 
 **Caption:** Brendan Ngwa Nforbi v. Uber Technologies, Inc., et al.  
-**Forum:** United States District Court, Northern District of California — **San Jose Division** (assignment location Santa Clara County; Civil L.R. 3-2(c)/(e))  
+**Forum:** United States District Court, Northern District of California (division designation by the Court; venue facts include Santa Clara County assignment location)  
 **Drafted:** September 17, 2026  
 **Supersedes:** San Joaquin state draft in `VERIFIED_COMPLAINT_REVIEW_DRAFT.md` for filing posture (keep that file only as state-court alternate)
 
@@ -32,7 +32,7 @@
 
 **Bottom line:** This is the cluster's strongest *pleading-stage* § 290.46 package to date on source + employer writing. It is engineered to get past a *Lerma*-style source dismissal and a 25/26-style "all I&B" dismissal. It is not engineered to pretend Uber or saliva are risk-free.
 
-**Before execute:** Uber CA SOS / agent; TaskUs service list (LLC Converted Out); Civil Cover Sheet San Jose; JS-CAND; magistrate consent form; Exhibits A–E; Plaintiff reads every paragraph.
+**Before execute:** Uber CA SOS / agent; TaskUs Holdings service (C T); Civil Cover Sheet / JS-CAND (let the Court designate division); magistrate consent form; Exhibits A–E; Plaintiff reads every paragraph.
 
 ---
 
@@ -43,7 +43,6 @@ Stockton, California 95204
 
 # UNITED STATES DISTRICT COURT
 # NORTHERN DISTRICT OF CALIFORNIA
-# SAN JOSE DIVISION
 
 **BRENDAN NGWA NFORBI,**  
 Plaintiff,
@@ -51,8 +50,6 @@ Plaintiff,
 v.
 
 **UBER TECHNOLOGIES, INC.,** a Delaware corporation;  
-**TASKUS, LLC,** a Delaware limited liability company;  
-**TASKUS USA, LLC,** a Delaware limited liability company;  
 **TASKUS HOLDINGS, INC.,** a Delaware corporation; and  
 **DOES 1 through 20,** inclusive,  
 Defendants.
@@ -87,7 +84,7 @@ Plaintiff BRENDAN NGWA NFORBI, appearing in propria persona, alleges:
 
 6. Defendants never restored the September 23 start. They never issued a Fair Chance restoration. The accepted Uber AV Teammate assignment was withheld and effectively rescinded.
 
-7. Uber Technologies, Inc. is named because the only assignment offered was Uber's branded AV Teammate campaign and because — on information and belief — **Uber set the First Advantage search criteria / screening package** TaskUs ran for that campaign, including the national sex-offender components that returned California-registry SOURCE OF RECORD information. TaskUs staffed the campaign for Uber's benefit. Uber is pleaded as end client and joint employer. TaskUs entities are pleaded as the staffing, consent, and report-recipient employers.
+7. Uber Technologies, Inc. is named because the only assignment offered was Uber's branded AV Teammate campaign and because — on information and belief — **Uber set the First Advantage search criteria / screening package** used for that campaign, including the national sex-offender components that returned California-registry SOURCE OF RECORD information. TaskUs Holdings, Inc. is named because First Advantage furnished Order WPS-361214148 to **TASKUS HOLDINGS INC USA** and because TaskUs Holdings is the active staffing affiliate that received and used that report. Uber is pleaded as end client and joint employer.
 
 8. A separate saliva drug-test schedule (Schedule ID 96558696) was ordered the same day. That product is not the consumer report. The September 14 hold named the **background screening report**, not the saliva test. Saliva confirmation later failed on September 16. The chronology confirms that the September 14 hold was not based on a saliva miss.
 
@@ -99,29 +96,25 @@ Plaintiff BRENDAN NGWA NFORBI, appearing in propria persona, alleges:
 
 11. This Court has supplemental jurisdiction under 28 U.S.C. § 1367(a) over Counts Two through Five because they arise from the same offer, screening, hold, report, and withheld start.
 
-12. Plaintiff does not presently invoke diversity jurisdiction. Several Defendants are limited liability companies or corporations whose complete citizenship has not been established for every member or for purposes of § 1332.
+12. Plaintiff does not presently invoke diversity jurisdiction. The complete citizenship of every Defendant has not been established for purposes of § 1332.
 
 13. Plaintiff has Article III standing. He alleges a concrete economic injury — the loss of the accepted Uber AV Teammate assignment at the documented $22.00 hourly rate and the associated retention-bonus opportunity — fairly traceable to the report-based employment actions alleged and redressable by damages.
 
-14. Venue is proper in this District under 28 U.S.C. § 1391(b)(2) because a substantial part of the events giving rise to the claims occurred here: the offered assignment was **USA - San Jose - San Jose (Delivery)**; the WorkDay campaign was **Uber AV Teammate (SJ: 09/23/2026)**; and the employment Defendants sought to place Plaintiff into Northern District operations.
-
-15. Under Civil Local Rule 3-2(c) and (e), this action is assigned to the **San Jose Division** because a substantial part of the events occurred in Santa Clara County.
+14. Venue is proper in this District under 28 U.S.C. § 1391(b)(2) because a substantial part of the events giving rise to the claims occurred here: the offered assignment was **USA - San Jose - San Jose (Delivery)**; the WorkDay campaign was **Uber AV Teammate (SJ: 09/23/2026)**; and the employment Defendants sought to place Plaintiff into Northern District operations. Division assignment is for the Court.
 
 # III. PARTIES
 
-16. Plaintiff Brendan Ngwa Nforbi is a natural person and California resident. He is a person as to whom information is disclosed through California's Megan's Law internet website operated under Penal Code § 290.46.
+15. Plaintiff Brendan Ngwa Nforbi is a natural person and California resident. He is a person as to whom information is disclosed through California's Megan's Law internet website operated under Penal Code § 290.46.
 
-17. Defendant Uber Technologies, Inc. ("Uber") is a Delaware corporation that does business in this District. Uber is the end client and joint employer on the WorkDay campaign titled **Uber AV Teammate (SJ: 09/23/2026)**, requisition **R_2608_10812**, candidate **C261051599**. "Uber AV" is a campaign title, not a separate legal entity named as a defendant.
+16. Defendant Uber Technologies, Inc. ("Uber") is a Delaware corporation that does business in this District. Uber is the end client and joint employer on the WorkDay campaign titled **Uber AV Teammate (SJ: 09/23/2026)**, requisition **R_2608_10812**, candidate **C261051599**. "Uber AV" is a campaign title, not a separate legal entity named as a defendant.
 
-18. Defendant TaskUs, LLC is a Delaware limited liability company. It issued the September 14, 2026 Offer of Temporary Employment naming itself as the hiring "Company." California Secretary of State records reflect Entity No. 200826810086 with status Converted Out; Plaintiff names the offer-letter employer and will serve the surviving or active affiliate(s) according to proof.
+17. Defendant TaskUs Holdings, Inc. ("TaskUs Holdings") is a Delaware corporation registered in California (Entity No. 3828721). First Advantage's September 15, 2026 consumer disclosure identifies the report recipient as **TASKUS HOLDINGS INC USA**, Client Account Number **417722USA**, at 1650 Independence Drive, Ste 100, New Braunfels, Texas — the same address on the offer letter. TaskUs Holdings is the named employer on the First Advantage saliva-drug-test order and the Adobe Sign / NDA counterparty on the onboarding packet.
 
-19. Defendant TaskUs USA, LLC is a Delaware limited liability company registered in California (Entity No. 201729810166). Plaintiff's United States Background Consent Form authorized release of screening information to TaskUs USA LLC.
+18. The September 14 Offer of Temporary Employment was issued in the name of TaskUs, LLC. California Secretary of State records reflect that TaskUs, LLC (Entity No. 200826810086) has status Converted Out. Plaintiff's United States Background Consent Form authorized release of screening information to TaskUs USA LLC, an active Delaware limited liability company registered in California. Those names identify the offer-letter employer and the consent recipient. They are not separately captioned. On information and belief, TaskUs Holdings and its affiliates operated as a single staffing enterprise for this Uber AV Teammate placement; TaskUs Holdings received the California-registry-sourced report and is sued for that use and the related employment hold.
 
-20. Defendant TaskUs Holdings, Inc. is a Delaware corporation registered in California (Entity No. 3828721). First Advantage's September 15, 2026 consumer disclosure identifies the report recipient as **TASKUS HOLDINGS INC USA**, Client Account Number **417722USA**, at 1650 Independence Drive, Ste 100, New Braunfels, Texas — the same address on the offer letter.
+19. Plaintiff is ignorant of the true names of DOES 1 through 20 and will amend when ascertained. DOES include TaskUs, LLC; TaskUs USA, LLC; TaskUs, Inc.; any other TaskUs affiliate that adjudicated or used the report or issued the hold; any Uber operating affiliate that directed the AV Teammate placement or screening; and any person who received, accessed, or used the California-registry-sourced information for an employment purpose on this hire.
 
-21. Plaintiff is ignorant of the true names of DOES 1 through 20 and will amend when ascertained. DOES include any Uber operating affiliate that directed the AV Teammate placement or screening; any TaskUs affiliate that adjudicated or used the report; and any person who received, accessed, or used the California-registry-sourced information for an employment purpose on this hire.
-
-22. At all relevant times, each Defendant was the agent, employee, joint employer, joint venturer, and/or alter ego of the others with respect to the Uber AV Teammate placement and screening, and acted within the course and scope of that relationship. TaskUs recruited, offered, and screened Plaintiff for placement onto Uber's campaign. Uber received the benefit of that staffing arrangement. On information and belief grounded in the facts below, Uber set, specified, or approved the First Advantage background-search criteria and package used for Uber AV Teammate placements — including the national sex-offender / PRINSOS / NSOR components that returned California-registry SOURCE OF RECORD information — and controlled or shared control over the campaign requisition, start authorization, and use of those screening results.
+20. At all relevant times, each Defendant was the agent, employee, joint employer, joint venturer, and/or alter ego of the others with respect to the Uber AV Teammate placement and screening, and acted within the course and scope of that relationship. TaskUs Holdings and its affiliates recruited, offered, and screened Plaintiff for placement onto Uber's campaign. Uber received the benefit of that staffing arrangement. On information and belief grounded in the facts below, Uber set, specified, or approved the First Advantage background-search criteria and package used for Uber AV Teammate placements — including the national sex-offender / PRINSOS / NSOR components that returned California-registry SOURCE OF RECORD information — and controlled or shared control over the campaign requisition, start authorization, and use of those screening results.
 
 # IV. THE UBER AV TEAMMATE OFFER
 
@@ -196,7 +189,7 @@ Plaintiff BRENDAN NGWA NFORBI, appearing in propria persona, alleges:
 
 43. That information is information disclosed pursuant to Penal Code § 290.46.
 
-44. On information and belief, grounded in Exhibits C and D and the Uber AV Teammate campaign facts alleged above, TaskUs, LLC, TaskUs USA, LLC, TaskUs Holdings, Inc., and Uber received, accessed, considered, shared, and/or used that California-registry-sourced information for purposes relating to Plaintiff's Uber AV Teammate employment — including maintaining the September 14 hold, refusing to restore the September 23 start, and withholding or rescinding the accepted assignment.
+44. On information and belief, grounded in Exhibits C and D and the Uber AV Teammate campaign facts alleged above, TaskUs Holdings and Uber received, accessed, considered, shared, and/or used that California-registry-sourced information for purposes relating to Plaintiff's Uber AV Teammate employment — including maintaining the September 14 hold, refusing to restore the September 23 start, and withholding or rescinding the accepted assignment.
 
 45. The September 14 hold email and the September 15 consumer disclosure supply the link: Defendants froze the start because of the background report, and that report — when disclosed — expressly sourced the sex-offender component to the California registry.
 
@@ -225,7 +218,7 @@ Plaintiff BRENDAN NGWA NFORBI, appearing in propria persona, alleges:
 
 53. The anticipated work was San Jose delivery on Uber's AV campaign. The offer packet supplied orientation and production locations for that campaign assignment.
 
-54. TaskUs functioned as the staffing / payroll / offer-letter employer. Uber functioned as the end client whose branded campaign created the temporary need for Teammates and whose Northern District operations would receive Plaintiff's labor.
+54. TaskUs Holdings and its affiliates functioned as the staffing / payroll / offer-letter employer enterprise. Uber functioned as the end client whose branded campaign created the temporary need for Teammates and whose Northern District operations would receive Plaintiff's labor.
 
 55. On information and belief, grounded in Exhibits A through D and the campaign branding:
 
@@ -234,7 +227,7 @@ Plaintiff BRENDAN NGWA NFORBI, appearing in propria persona, alleges:
 - TaskUs ran that Uber-specified package as the staffing vendor for Uber's campaign;  
 - Uber received, was entitled to receive, or caused TaskUs to obtain and use First Advantage screening results — including the California-registry-sourced component — before authorizing Plaintiff's start on Uber's campaign;  
 - TaskUs's September 14 hold pending the background report was taken in the course of staffing Uber's campaign and for Uber's benefit; and  
-- Uber and the TaskUs Defendants are joint employers and/or agents of one another with respect to the hiring decision on this placement.
+- Uber and TaskUs Holdings are joint employers and/or agents of one another with respect to the hiring decision on this placement.
 
 56. Uber's campaign created the only job offered; Uber's search criteria produced the California-registry-sourced hit on Order WPS-361214148; and TaskUs froze the start pending that report.
 
@@ -407,5 +400,5 @@ Plaintiff, In Propria Persona
 ## Service targets (confirm before summons)
 
 - Uber Technologies, Inc. — California registered agent (pull SOS before issue)  
-- TaskUs USA, LLC / TaskUs Holdings, Inc. — C T Corporation System (CA)  
-- TaskUs, LLC — do **not** serve Converted Out CA LLC agent Maddock; serve surviving/active affiliate per proof  
+- TaskUs Holdings, Inc. — C T Corporation System (CA)  
+- Do **not** serve TaskUs, LLC Converted Out agent Maddock; LLC/USA stay in DOES unless amended  

@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Matter 40 — N.D. Cal. San Jose complaint PDF (review draft for print).
+"""Matter 40 — N.D. Cal. complaint PDF (review draft for print).
 
 Source of truth:
   internal/docs/matter-40/ND_CAL_COMPLAINT_REVIEW_DRAFT.md
 
 Strips the internal MTD memo / exhibit-packet notes. Plaintiff signs.
 No REVIEW DRAFT banner on the caption. No phone/email on the close
-(caption address block matches the markdown draft).
+(caption address block matches the markdown draft). No division line —
+the Northern District designates division.
 
     python3 internal/scripts/matter40-ndcal-complaint.py
 """
@@ -32,12 +33,12 @@ DEFAULT_OUT = (
     ROOT
     / "internal/public/documents/matter-40"
     / "Complaint - Ngwa Nforbi v Uber Technologies Inc "
-    "(N.D. Cal. San Jose) (Sep 18 2026).pdf"
+    "(N.D. Cal.) (Sep 18 2026).pdf"
 )
 
 DOC_TITLE_FOOTER = (
     "COMPLAINT FOR DAMAGES -- NGWA NFORBI v. UBER TECHNOLOGIES, INC., ET AL. "
-    "(N.D. Cal. -- San Jose)"
+    "(N.D. Cal.)"
 )
 
 EXEC_DATE = "September 18, 2026"
@@ -45,7 +46,6 @@ SIG_LINE = "___________________________________"
 
 COURT_LINE1 = "UNITED STATES DISTRICT COURT"
 COURT_LINE2 = "NORTHERN DISTRICT OF CALIFORNIA"
-COURT_LINE3 = "SAN JOSE DIVISION"
 
 PLAINTIFF_BLOCK = [
     ("BRENDAN NGWA NFORBI", "Times-Bold", 12),
@@ -63,10 +63,6 @@ CAPTION_LEFT = [
     ("", False, False),
     ("UBER TECHNOLOGIES, INC., a", True, False),
     ("Delaware corporation;", True, False),
-    ("TASKUS, LLC, a Delaware limited", True, False),
-    ("liability company;", True, False),
-    ("TASKUS USA, LLC, a Delaware", True, False),
-    ("limited liability company;", True, False),
     ("TASKUS HOLDINGS, INC., a", True, False),
     ("Delaware corporation; and", True, False),
     ("DOES 1 through 20, inclusive,", True, False),
@@ -257,7 +253,6 @@ def main() -> None:
 
     d.write_line(COURT_LINE1, bold=True, center=True)
     d.write_line(COURT_LINE2, bold=True, center=True)
-    d.write_line(COURT_LINE3, bold=True, center=True)
     d.blank_line()
 
     d.draw_caption_block(
