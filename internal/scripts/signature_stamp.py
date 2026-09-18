@@ -1,13 +1,16 @@
 # Portfolio universal signature: brendan-newanforbi-signature.png
-# Wet-ink loops mark from an August 26, 2026 page-1 scan: zoomed 8×, then
-# non-ink painted out pixel-by-pixel (not a tight rectangle crop) by
-# extract-signature-scan.py (charcoal on transparent). Use this for all
-# generated filings that need a signature affixed rather than a typed name.
-# Supersedes the photographed loops mark and the CIV-100 4b extract. Do not
-# use the older cropped pen asset under internal/scripts/assets/. Prior
-# stamps are archived next to this file as *-v3-bbox-crop.png,
-# *-v2-photo-loops.png, *-v1-abstract-loops.png, and *-4b-civ100.png.
-# The originating scan is not stored.
+# Photographed loops mark (restored as de facto Sep. 18, 2026). Cropped /
+# upscaled / thickened by process-signature-photo.py (black on transparent).
+# Use this for all generated filings that need a signature affixed rather
+# than a typed name. Do not use the older cropped pen asset under
+# internal/scripts/assets/.
+#
+# Archives next to this file (newest first):
+#   *-v4-painted-wet.png     — Aug. 26 wet-mark with non-ink painted out
+#   *-v3-bbox-crop.png       — first Aug. 26 wet-mark bbox crop
+#   *-v2-photo-loops.png     — same bytes as the restored canonical
+#   *-v1-abstract-loops.png  — earlier 1450×360 loops stamp
+#   *-4b-civ100.png          — CIV-100 4b extract
 import struct
 from pathlib import Path
 
