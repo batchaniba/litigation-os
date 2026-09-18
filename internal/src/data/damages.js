@@ -1002,9 +1002,9 @@ const matter_damages_raw = [
   },
   {
     number: 40,
-    claims: "CLOSED — saliva non-registry off-ramp (no §290.46(j) / ICRAA / FCRA / UCL claim on this hire)",
-    risk: "CLOSED. FA Schedule ID 96558696 confirmation failed Sep. 16; schedule expired Sep. 17 without collection. No FCRA pre-adverse, no registry-based rescission. Damages $0 — claim never ripened.",
-    settlement_note: "No valuation — hire closed on non-registry off-ramp. Do not plead as §290.46(j) failure-to-hire.",
+    claims: "CLOSED hire — employer §290.46(j) not ripe; FA WPS-361214148 is Matter 31's 3rd CA-registry furnish",
+    risk: "Hire closed on saliva off-ramp. FA Order WPS-361214148 (Sep. 15) furnishes SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY to TaskUs Holdings — Matter 31 inventory. No TaskUs adverse-action letter yet. Damages $0 on M40 until registry use shown.",
+    settlement_note: "No M40 valuation until TaskUs registry-based adverse action. Vendor claim lives on Matter 31.",
     conservative: 0,
     moderate: 0,
     aggressive: 0,

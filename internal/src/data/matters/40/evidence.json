@@ -110,5 +110,12 @@
     "path": "/documents/matter-40/First Advantage Action Required - TaskUs Holdings Saliva Confirmation Failed (Sep 16 2026).pdf",
     "what_it_proves": "First Advantage Action Required (Sep. 16, 2026, 3:05 p.m.) — saliva schedule confirmation failed for Schedule ID 96558696; the non-registry off-ramp that closed the TaskUs hire loop when the schedule expired Sep. 17 without collection",
     "transcript_path": null
+  },
+  {
+    "id": "e17",
+    "label": "First Advantage consumer disclosure (Sep. 15, 2026) — Order WPS-361214148 to TASKUS HOLDINGS INC USA (Client Account 417722USA). NSOR component: Record Source NATIONAL SEX OFFENDER REGISTRY; Date of Search Sep. 14, 2026; Sentence 'SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY. SENTENCE: REGISTERED SEX OFFENDER.' Cover letter: results are not acceptance or rejection.",
+    "path": "/documents/matter-40/First Advantage Consumer Disclosure - TaskUs Holdings Order WPS-361214148 (Sep 15 2026).pdf",
+    "what_it_proves": "First Advantage furnished to TaskUs Holdings Inc USA an employment consumer report whose sex-offender component expressly states SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY — same architecture as Matters 25/26; third Matter 31 furnishing instance. Not itself TaskUs adverse action.",
+    "transcript_path": null
   }
 ]

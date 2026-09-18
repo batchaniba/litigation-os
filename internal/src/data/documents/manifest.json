@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1295,
-  "totalBytes": 904510835,
+  "fileCount": 1296,
+  "totalBytes": 904722303,
   "files": [
     {
       "path": "/documents/README.md",
@@ -6477,6 +6477,11 @@
       "path": "/documents/matter-40/First Advantage Action Required - TaskUs Holdings Saliva Confirmation Failed (Sep 16 2026).pdf",
       "size": 42641,
       "sha256": "e0402438fc3c37dc258906fd95c1cf0ff8df4f83222900db40597d3c85cf1bc1"
+    },
+    {
+      "path": "/documents/matter-40/First Advantage Consumer Disclosure - TaskUs Holdings Order WPS-361214148 (Sep 15 2026).pdf",
+      "size": 211468,
+      "sha256": "2172d145f11f9d8ccb984718d3deebc1b19973878f04fcf8f22b85ccb3b552fc"
     }
   ]
 }

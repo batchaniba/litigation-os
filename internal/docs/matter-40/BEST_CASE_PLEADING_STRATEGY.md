@@ -1,7 +1,7 @@
 # Matter 40 — Best-Case Pleading and Discovery Strategy
 
 **Matter:** Brendan Ngwa Nforbi v. Uber Technologies, Inc. (TaskUs staffing)  
-**Status:** CLOSED — saliva non-registry off-ramp (Schedule ID 96558696 confirmation failed Sep. 16; expired Sep. 17 without collection). Do not plead this hire as a §290.46(j) failure-to-hire.  
+**Status:** CLOSED hire on saliva off-ramp; FA Order WPS-361214148 (Sep. 15) now shows SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY to TaskUs Holdings (Matter 31 third furnish). Employer §290.46(j) still needs TaskUs use / adverse action.  
 **Prepared:** September 14, 2026 (status true-up September 17, 2026)  
 **Purpose:** Historical — strongest fact pattern / pleading architecture *if* TaskUs / First Advantage had produced the same registry-source pattern. That contingency did not ripen on this hire.
 
