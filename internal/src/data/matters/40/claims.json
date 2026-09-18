@@ -1,35 +1,35 @@
 {
-  "summary": "Maximum-value v2: FCRA §1681b(b)(2)(A) procurement disclosure + ICRAA §1786.16 are audit-gated; FCRA §1681b(b)(3), PC §290.46(j), and ICRAA §1786.40 are reserved for verified post-report adverse/use facts. UCL and Tameny failure-to-hire dropped.",
+  "summary": "Premier Sep. 24: FCRA §1681b(b)(2)(A) + ICRAA §1786.16 procurement; FCRA §1681b(b)(3) post-report; PC §290.46(j) actual use; ICRAA §1786.40 — Uber + TaskUs Holdings + TaskUs USA (no UCL/Tameny; no exhibits)",
   "counts": [
     {
       "id": 1,
-      "status": "audit_gate",
+      "status": "live",
       "theory_ids": [],
       "title": "FCRA 15 U.S.C. §1681b(b)(2)(A) — employment consumer-report procurement without compliant standalone disclosure"
     },
     {
       "id": 2,
-      "status": "audit_gate",
+      "status": "live",
       "theory_ids": [],
-      "title": "ICRAA Civ. Code §§1786.16, 1786.50 — defective/missing pre-procurement investigative-report disclosure"
+      "title": "ICRAA Civ. Code §§1786.16, 1786.50 — defective/missing pre-procurement investigative-report disclosure (§1786.2(c))"
     },
     {
       "id": 3,
-      "status": "post_report_gate",
+      "status": "live",
       "theory_ids": [],
-      "title": "FCRA 15 U.S.C. §1681b(b)(3)(A) — post-report adverse action without pre-adverse report / Summary of Rights"
+      "title": "FCRA 15 U.S.C. §1681b(b)(3)(A) — post-report adverse action (hold maintained; Sep. 23 start never restored) without pre-adverse copy / Summary of Rights"
     },
     {
       "id": 4,
-      "status": "actual_use_gate",
+      "status": "live",
       "theory_ids": [],
-      "title": "Penal Code §290.46(j)(2)(E), (j)(4)(A) — actual employment use of California-registry-sourced information"
+      "title": "Penal Code §290.46(j)(2)(E), (j)(4)(A) — actual employment use of California-registry-sourced information (SOURCE OF RECORD known fact; not (j)(1))"
     },
     {
       "id": 5,
-      "status": "denial_gate",
+      "status": "live",
       "theory_ids": [],
-      "title": "ICRAA Civ. Code §§1786.40, 1786.50 — denial-time advice requirements"
+      "title": "ICRAA Civ. Code §§1786.40, 1786.50 — denial-time advice after post-report withholding"
     }
   ],
   "dropped": [
@@ -38,8 +38,8 @@
       "reason": "Low incremental value; expected wages are a poor restitution fit and the equitable claim adds an avoidable Rule 12 target."
     },
     {
-      "title": "Wrongful refusal/failure to hire in violation of public policy",
-      "reason": "Williams v. Sacramento River Cats requires a preexisting employment relationship for the Tameny tort."
+      "title": "Wrongful refusal/failure to hire in violation of public policy (Tameny)",
+      "reason": "Williams v. Sacramento River Cats / Haney require a preexisting employment relationship; zero incremental remedy beyond §290.46(j)(4)(A)."
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1304,
-  "totalBytes": 906179162,
+  "fileCount": 1305,
+  "totalBytes": 906469025,
   "files": [
     {
       "path": "/documents/README.md",
@@ -6522,6 +6522,11 @@
       "path": "/documents/matter-40/Complaint - Ngwa Nforbi v Uber Technologies Inc (N.D. Cal.) (Sep 18 2026).pdf",
       "size": 260022,
       "sha256": "bd8e7584ddd84a2b153091950751aba6ee96cc36bcd8eb35b6dd83fca6312abb"
+    },
+    {
+      "path": "/documents/matter-40/Complaint - Ngwa Nforbi v Uber Technologies Inc (N.D. Cal.) (Sep 24 2026).pdf",
+      "size": 289863,
+      "sha256": "28839cd88fa88f414a8df4342e9204292e84af2c940e493f3a4fbe49e11cd498"
     }
   ]
 }

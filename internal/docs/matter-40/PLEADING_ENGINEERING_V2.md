@@ -1,166 +1,89 @@
-# Matter 40 — Pleading Engineering v2.1 — Maximum-Value Rebuild
+# Matter 40 — Pleading Engineering v3 (premier)
 
-**PR:** #861  
-**Branch:** cursor/matter-40-close-taskus-loop-29a6  
-**Operative review draft:** internal/docs/matter-40/ND_CAL_COMPLAINT_REVIEW_DRAFT_V2.md  
-**Record cutoff:** September 17, 2026
+**PR:** [#861](https://github.com/newanforbi/interactive-litigation-portfolio/pull/861)  
+**Sister review:** [#863](https://github.com/newanforbi/interactive-litigation-portfolio/pull/863) (exhibits refused; Tameny cut / ICRAA harden / statute tracking adopted)  
+**Branch:** `cursor/matter-40-close-taskus-loop-29a6`  
+**Operative rewrite:** `internal/docs/matter-40/ND_CAL_COMPLAINT_REVIEW_DRAFT_V2.md`  
+**Docs map:** `internal/docs/matter-40/SUPPORTING_DOCS_INDEX.md`  
+**Date:** September 24, 2026
 
-This memo replaces the earlier five-count filing theory.
+This memo is not for filing.
 
-## 1. Core change
+---
 
-The old v2 over-concentrated value in the idea that the September 14 hold already supplied the FCRA adverse action and § 290.46 use.
+## 1. Merge rule
 
-That is vulnerable because PRINSOS was still In Progress when the hold issued, the California-registry-sourced result was furnished September 15, the saliva-confirmation failure arrived September 16, and the anticipated September 23 start is still in the future as of the record cutoff.
-
-The rebuild separates two categories.
-
-### Procurement-side claims
-
-Potentially complete when Order WPS-361214148 was procured:
-
-1. FCRA § 1681b(b)(2)(A) — standalone employment disclosure / authorization architecture.
-2. ICRAA § 1786.16 — California standalone investigative-report disclosure requirements.
-
-Both are **audit-gated**. The repo identifies a United States Background Consent Form but no separate compliant FCRA/ICRAA disclosure. Do not assume an unseen Profile Advantage screen did not exist.
-
-### Adverse-use claims
-
-These require a verified post-furnishing employment event:
-
-3. FCRA § 1681b(b)(3)(A).
-4. Penal Code § 290.46(j)(2)(E).
-5. ICRAA § 1786.40 if employment is actually denied.
-
-The September 14 hold remains evidence that background screening affected release of the start. It is not treated as adverse action based on a completed registry result.
-
-## 2. Why procurement materially improves leverage
-
-FCRA § 1681b(b)(2)(A) regulates procurement itself. If the complete authorization flow lacks the required standalone disclosure, liability does not turn on whether the registry, saliva test, MVR, or another screening component caused the later employment outcome.
-
-ICRAA § 1786.16 is also important. In **Parsonage v. Wal-Mart Associates, Inc., D083831 (Cal. Ct. App. Feb. 4, 2026)**, the court enforced the standalone disclosure requirements and held that Civil Code § 1786.50 supplies the statutory $10,000 alternative to actual damages in an individual action under California law.
-
-Federal Article III remains a separate forum issue. The cleanest federal posture is obtained once concrete economic injury from a post-report employment decision is also present.
-
-## 3. Claims removed from the lean complaint
-
-### Tameny / wrongful failure to hire — remove
-
-**Williams v. Sacramento River Cats Baseball Club, LLC, 40 Cal.App.5th 280 (2019)** requires a preexisting employment relationship for the common-law Tameny tort. An accepted offer improves damages proof, but it should not be used to plead around Williams.
-
-If Plaintiff actually begins work and is later terminated, reassess.
-
-### UCL — remove
-
-The UCL adds little monetary leverage in this posture. Expected future wages are a poor restitution fit and the complaint already seeks legal/statutory remedies. Keeping the UCL invites an avoidable equitable-remedy fight.
-
-### ICRAA § 1786.40 — gate
-
-Use only after an actual employment denial and only if the denial-time advice required by the statute was not given.
-
-## 4. § 290.46 — actual use, not transmission
-
-The report expressly says:
-
-> SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY.
-
-That sharply improves source proof.
-
-But **Mendoza v. ADP Screening & Selection Services, Inc., 182 Cal.App.4th 1644 (2010)** distinguishes republication by a screening company from an employer's actual use of the information as the basis for an employment decision.
-
-Therefore:
-
-- do not treat First Advantage's furnishing alone as prohibited employment use;
-- do not treat the September 14 hold as use of a completed California-registry result;
-- identify the actual post-September-15 decision actor and the conduct showing the registry information was applied.
-
-The complaint should answer: **who used it, when, and what employment decision did that use cause?**
-
-## 5. September 15–16 is the value center
-
-Timeline:
-
-- Sep. 14 ~10:20 a.m. — PRINSOS In Progress.
-- Sep. 14 11:24 a.m. — TaskUs holds start pending background report.
-- Sep. 15 — First Advantage furnishes report to TASKUS HOLDINGS INC USA; California registry source expressly identified.
-- Sep. 16 3:05 p.m. — saliva confirmation failure.
-- Sep. 17 — saliva schedule expires.
-
-Highest-value missing proof:
-
-1. First Advantage transmission/access timestamps.
-2. TaskUs access and audit logs.
-3. adjudication matrix output.
-4. WorkDay status changes.
-5. eligibility codes.
-6. TA Ops / BGV messages.
-7. Uber start-authorization or veto records.
-8. Uber↔TaskUs package configuration.
-
-A registry-triggered review, consider, ineligible, hold-extension, or start-veto event **before the saliva failure** would materially strengthen both FCRA causation and § 290.46 actual use.
-
-## 6. Actor-specific pleading
-
-### TaskUs USA, LLC
-
-The background-consent/release paperwork identifies TaskUs USA. If the disclosure audit supports procurement claims, it should not remain buried in DOES.
-
-### TaskUs Holdings, Inc.
-
-First Advantage identifies TASKUS HOLDINGS INC USA as the report-recipient account. Holdings is also tied to other onboarding documents.
-
-### TaskUs, LLC
-
-Offer-letter entity; California record is Converted Out. Preserve its factual role but do not serve the former agent by habit.
-
-### Uber Technologies, Inc.
-
-Keep Uber only to the extent evidence supports campaign-level control or actual use. Campaign branding proves the assignment, not report receipt or statutory use.
-
-Do not use alter-ego boilerplate without corporate-separateness facts.
-
-## 7. Damages engineering
-
-- FCRA: negligent and willful noncompliance in the alternative; §§ 1681n and 1681o according to proof.
-- ICRAA: preserve § 1786.50 actual-or-statutory relief, fees/costs, and punitive damages upon the required showing.
-- § 290.46(j)(4)(A): plead actual damages; the additional statutory amount determined by the trier of fact subject to the statutory cap/floor; attorney's fees; exemplary damages and/or civil penalty according to proof.
-- Economic loss: the offer proves the $22 hourly rate, anticipated assignment window, and $1,000 retention opportunity. It does **not** prove 40 guaranteed weekly hours. Do not invent them.
-
-## 8. Filing timing
-
-As of September 17, do not plead that a September 23 start "never occurred."
-
-Activate the post-report counts only after one of these occurs:
-
-1. unequivocal pre-adverse/final adverse or rescission communication;
-2. documented post-report ineligible/decision code;
-3. September 23 passes and the record supports a report-based refusal to release the start;
-4. other evidence proves actual post-report use.
-
-If only disclosure-form defects remain, reassess Article III and forum strategy before filing.
-
-## 9. Current count architecture
-
-| Count | Theory | Status |
+| Source | Kept | Refused |
 |---|---|---|
-| 1 | FCRA § 1681b(b)(2)(A) procurement disclosure | Audit gate |
-| 2 | ICRAA § 1786.16 / § 1786.50 | Audit gate |
-| 3 | FCRA § 1681b(b)(3)(A) | Post-report action gate |
-| 4 | Penal Code § 290.46(j)(2)(E) | Actual-use gate |
-| 5 | ICRAA § 1786.40 | Denial gate |
+| #861 max-value rebuild | Procurement lead (§ 1681b(b)(2)(A) + § 1786.16); Sep. 14 hold = context; drop UCL + Tameny; TaskUs USA in caption; Mendoza actual-use discipline; actor pleading; no 40-hour invent; no exhibits | `[VERIFY]` placeholders left in the printable body |
+| #863 | Drop Tameny; § 1786.2(c); § 1681a(d)/(k); § 290.46(j)(1) negation; (j)(4)(A) remedies; 2PM–11PM; § 1391(b)(1)+(b)(2) | Attached Exhibits A–D |
+| Sep. 24 unlock | Post-report counts live: Sep. 23 start passed without restoration after Sep. 15 furnish | — |
 
-Dropped: UCL; Tameny failure-to-hire.
+---
 
-## 10. Do-not-do list
+## 2. Why Sep. 24 unlocks the gated counts
 
-- Do not file v1 by habit.
-- Do not allege a September 23 non-start before September 23.
-- Do not describe the September 14 hold as adverse action based on a completed report.
-- Do not turn First Advantage transmission into employer "use" under § 290.46.
-- Do not hide the saliva event.
-- Do not plead Uber use from branding alone.
-- Do not use alter ego as boilerplate.
-- Do not bury TaskUs USA in DOES if the disclosure audit makes it a procurement actor.
-- Do not calculate 40-hour lost wages absent schedule proof.
-- Do not attach the evidence stack at pleading.
-- Do not serve TaskUs, LLC's former agent merely because that name appears on the offer.
+The max-value memo refused to plead a September 23 non-start before September 23. As of the premier filing date:
+
+> report arrives September 15 with `SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY` → hold stays up → September 23 start never restored → no pre-adverse copy / Summary of Rights → no Fair Chance restoration.
+
+That is use of *a report*, not anticipation of a report, and it is the post-report trigger item 3 in the gated architecture.
+
+---
+
+## 3. Count architecture (live)
+
+| Count | Theory | Defendants |
+|---|---|---|
+| 1 | FCRA § 1681b(b)(2)(A) procurement disclosure | TaskUs Holdings, TaskUs USA, procuring DOES |
+| 2 | ICRAA § 1786.16 / § 1786.50 (+ § 1786.2(c)) | TaskUs Holdings, TaskUs USA, procuring DOES |
+| 3 | FCRA § 1681b(b)(3)(A) post-report | TaskUs Holdings, TaskUs USA, Uber, user DOES |
+| 4 | Penal Code § 290.46(j)(2)(E) actual use | TaskUs Holdings, TaskUs USA, Uber, use DOES |
+| 5 | ICRAA § 1786.40 denial-time advice | TaskUs Holdings, TaskUs USA, denial DOES |
+
+Dropped: UCL; Tameny (*Williams* / *Haney*).
+
+---
+
+## 4. Authorities carried forward
+
+- **Parsonage v. Wal-Mart Associates, Inc.**, D083831 (Cal. Ct. App. Feb. 4, 2026): § 1786.16 standalone; § 1786.50 statutory alternative.
+- **Williams v. Sacramento River Cats Baseball Club, LLC**, 40 Cal.App.5th 280 (2019): no Tameny failure-to-hire without preexisting employment.
+- **Mendoza v. ADP Screening & Selection Services, Inc.**, 182 Cal.App.4th 1644 (2010): republication ≠ employer use.
+- **Haney v. Aramark**, 121 Cal.App.4th 623, 641: Tameny requires employment + discharge (#863).
+
+---
+
+## 5. What still can lose
+
+1. **Compel arbitration (TaskUs).** Expect this first. Uber nonsignatory is why Uber stays captioned.
+2. **Disclosure audit.** Defense may produce a Profile Advantage standalone screen. Counts One/Two narrow if it exists.
+3. **Uber joint employer.** Package-spec is plausible, not bulletproof.
+4. **Saliva RJN / causation.** Fact contest; Twombly does not require eliminating every rival theory.
+5. **Service.** Do not serve Maddock on Converted Out TaskUs, LLC. Holdings and USA via C T. Confirm Uber CA SOS before summons.
+
+---
+
+## 6. Do-not-do list before execute
+
+- Do **not** attach offer / hold / FA disclosure / saliva emails at filing.
+- Do not print “San Jose Division” in the caption.
+- Do not name First Advantage as a defendant in this case.
+- Do not revive UCL or Tameny.
+- Do not treat First Advantage transmission alone as § 290.46 use.
+- Do not invent a 40-hour week.
+- Do not serve TaskUs, LLC / Maddock.
+- Plaintiff reads every paragraph against the supporting-docs index before signature.
+- Date lock: **September 24, 2026**.
+
+---
+
+## 7. Filing packet
+
+- Civil Cover Sheet (JS-CAND)
+- Complaint (premier; no exhibits)
+- AO 440 summons — Uber Technologies, Inc.
+- AO 440 summons — TaskUs Holdings, Inc.
+- AO 440 summons — TaskUs USA, LLC
+- Magistrate consent / declination
+- Corporate disclosure when Defendants appear

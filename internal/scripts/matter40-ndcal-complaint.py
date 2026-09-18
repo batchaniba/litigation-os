@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Matter 40 — N.D. Cal. complaint PDF (review draft for print).
+"""Matter 40 — N.D. Cal. complaint PDF (premier review draft for print).
 
 Source of truth:
-  internal/docs/matter-40/ND_CAL_COMPLAINT_REVIEW_DRAFT.md
+  internal/docs/matter-40/ND_CAL_COMPLAINT_REVIEW_DRAFT_V2.md
 
-Strips the internal MTD memo / exhibit-packet notes. Plaintiff signs.
+Strips the internal MTD memo / supporting-docs notes. Plaintiff signs.
 No REVIEW DRAFT banner on the caption. No phone/email on the close
 (caption address block matches the markdown draft). No division line —
-the Northern District designates division.
+the Northern District designates division. No exhibits attached.
 
     python3 internal/scripts/matter40-ndcal-complaint.py
 """
@@ -28,12 +28,12 @@ from pleading_paper import CONTENT_LEFT, PleadingPaper  # noqa: E402
 from signature_stamp import SIGNATURE_NATIVE_PX, SIGNATURE_PATH  # noqa: E402
 
 ROOT = SCRIPT_DIR.parents[1]
-MD_PATH = ROOT / "internal/docs/matter-40/ND_CAL_COMPLAINT_REVIEW_DRAFT.md"
+MD_PATH = ROOT / "internal/docs/matter-40/ND_CAL_COMPLAINT_REVIEW_DRAFT_V2.md"
 DEFAULT_OUT = (
     ROOT
     / "internal/public/documents/matter-40"
     / "Complaint - Ngwa Nforbi v Uber Technologies Inc "
-    "(N.D. Cal.) (Sep 18 2026).pdf"
+    "(N.D. Cal.) (Sep 24 2026).pdf"
 )
 
 DOC_TITLE_FOOTER = (
@@ -41,7 +41,7 @@ DOC_TITLE_FOOTER = (
     "(N.D. Cal.)"
 )
 
-EXEC_DATE = "September 18, 2026"
+EXEC_DATE = "September 24, 2026"
 SIG_LINE = "___________________________________"
 
 COURT_LINE1 = "UNITED STATES DISTRICT COURT"
@@ -64,7 +64,9 @@ CAPTION_LEFT = [
     ("UBER TECHNOLOGIES, INC., a", True, False),
     ("Delaware corporation;", True, False),
     ("TASKUS HOLDINGS, INC., a", True, False),
-    ("Delaware corporation; and", True, False),
+    ("Delaware corporation;", True, False),
+    ("TASKUS USA, LLC, a Delaware", True, False),
+    ("limited liability company; and", True, False),
     ("DOES 1 through 20, inclusive,", True, False),
     ("", False, False),
     ("                          Defendants.", False, False),
@@ -75,19 +77,18 @@ CAPTION_RIGHT = [
     ("", False, False),
     ("COMPLAINT FOR DAMAGES", True, False),
     ("", False, False),
-    ("(1) Fair Credit Reporting Act,", False, False),
-    ("      15 U.S.C. section", False, False),
-    ("      1681b(b)(3)(A);", False, False),
-    ("(2) Penal Code section", False, False),
+    ("(1) FCRA, 15 U.S.C.", False, False),
+    ("      section 1681b(b)(2)(A);", False, False),
+    ("(2) ICRAA, Civ. Code", False, False),
+    ("      sections 1786.16,", False, False),
+    ("      1786.50;", False, False),
+    ("(3) FCRA, 15 U.S.C.", False, False),
+    ("      section 1681b(b)(3)(A);", False, False),
+    ("(4) Penal Code section", False, False),
     ("      290.46(j)(2)(E), (j)(4)(A);", False, False),
-    ("(3) ICRAA, Civ. Code", False, False),
-    ("      sections 1786.40, 1786.50;", False, False),
-    ("(4) UCL, Bus. & Prof. Code", False, False),
-    ("      section 17200;", False, False),
-    ("(5) Wrongful refusal /", False, False),
-    ("      withholding of accepted", False, False),
-    ("      employment in violation", False, False),
-    ("      of public policy", False, False),
+    ("(5) ICRAA, Civ. Code", False, False),
+    ("      sections 1786.40,", False, False),
+    ("      1786.50", False, False),
     ("", False, False),
     ("DEMAND FOR JURY TRIAL", True, False),
 ]
@@ -133,7 +134,10 @@ def extract_pleading_body(md: str) -> str:
         "\n## Document inventory",
         "\n---\n\n## Exhibit list",
         "\n## Exhibit list",
+        "\n## Exhibits (filed",
         "\n## Filing packet",
+        "\n## Supporting documents",
+        "\n# INTERNAL POST-DRAFT",
     ):
         cidx = body.find(cut)
         if cidx > 0:
@@ -189,9 +193,8 @@ def parse_content(body: str) -> list[tuple[str, str]]:
         if not line.strip():
             flush()
             continue
-        if line.startswith("# XVIII.") or line.startswith("# XVII.") or line.startswith("# I."):
+        if re.match(r"^# (I|V?I{0,3}|IX|X{0,3}V?I{0,3})\.", line):
             flush()
-            # multi-line headers: collect # and following ## / ### until blank handled by mode
             title = line.lstrip("# ").strip()
             content.append(("HEADER", title))
             continue

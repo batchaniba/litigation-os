@@ -1,7 +1,10 @@
-# Matter 40 — Supporting Documents Index — v2.1
+# Matter 40 — Supporting Documents Index — premier (Sep. 24)
 
 **Not an exhibit list. Do not attach to the pleading.**  
-**Complaint:** ND_CAL_COMPLAINT_REVIEW_DRAFT_V2.md
+**Complaint (operative):** `ND_CAL_COMPLAINT_REVIEW_DRAFT_V2.md` (premier; Sep. 24, 2026; no exhibits; UCL/Tameny dropped; TaskUs USA captioned)  
+**Paths:** `/documents/matter-40/…` in the portfolio (also listed in `internal/src/data/matters/40/documents.json`)
+
+Use this table when reading the premier draft against paper. Paragraph numbers shifted with the Sep. 24 unlock — re-check against the live draft before cite-checking.
 
 ## A. Core evidence
 
