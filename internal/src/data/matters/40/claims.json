@@ -1,29 +1,35 @@
 {
-  "summary": "CLOSED without ripening — saliva non-registry off-ramp. Prospective PC §290.46(j)(2)(E), ICRAA, FCRA, and UCL counts never matured; no registry-based adverse action on this hire.",
+  "summary": "PC §290.46(j)(2)(E) use (lead); FCRA §1681b(b)(3)(A); ICRAA §§1786.40, 1786.50; UCL §17200; wrongful refusal to hire / withholding of accepted employment in violation of public policy — Uber end client / joint employer + TaskUs staffing entities",
   "counts": [
     {
       "id": 1,
-      "status": "abandoned",
+      "status": "live",
       "theory_ids": [],
-      "title": "[PROSPECTIVE] Penal Code §290.46(j)(2)(E) — if Uber or TaskUs obtains or uses California sex offender registry information in the hiring decision"
+      "title": "Penal Code §290.46(j)(2)(E), (j)(4)(A) — unauthorized employment use of California registry information (Order WPS-361214148; Sep. 14 hold pending FA report)"
     },
     {
       "id": 2,
-      "status": "abandoned",
+      "status": "live",
       "theory_ids": [],
-      "title": "[PROSPECTIVE] ICRAA, Civ. Code §§1786.16 and 1786.40 — authorization/disclosure and adverse-action compliance on a consumer or investigative consumer report"
+      "title": "FCRA, 15 U.S.C. §1681b(b)(3)(A) — adverse action based on consumer report without pre-adverse copy / Summary of Rights"
     },
     {
       "id": 3,
-      "status": "abandoned",
+      "status": "live",
       "theory_ids": [],
-      "title": "[PROSPECTIVE] FCRA, 15 U.S.C. §§1681b(b)(3) and 1681d — pre-adverse/adverse notice duties if a consumer report drives the decision"
+      "title": "ICRAA, Civ. Code §§1786.40, 1786.50 — employment denial without §1786.40 advice"
     },
     {
       "id": 4,
-      "status": "abandoned",
+      "status": "live",
       "theory_ids": [],
-      "title": "[PROSPECTIVE] UCL, Bus. & Prof. Code §17200 — unlawful prong borrowing any of the above violations"
+      "title": "UCL, Bus. & Prof. Code §17200 — unlawful prong borrowing the above"
+    },
+    {
+      "id": 5,
+      "status": "live",
+      "theory_ids": [],
+      "title": "Wrongful refusal to hire / withholding of accepted Uber AV Teammate employment in violation of public policy (§290.46(j))"
     }
   ]
 }

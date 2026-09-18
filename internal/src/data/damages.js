@@ -1002,9 +1002,9 @@ const matter_damages_raw = [
   },
   {
     number: 40,
-    claims: "CLOSED hire — employer §290.46(j) not ripe; FA WPS-361214148 is Matter 31's 3rd CA-registry furnish",
-    risk: "Hire closed on saliva off-ramp. FA Order WPS-361214148 (Sep. 15) furnishes SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY to TaskUs Holdings — Matter 31 inventory. No TaskUs adverse-action letter yet. Damages $0 on M40 until registry use shown.",
-    settlement_note: "No M40 valuation until TaskUs registry-based adverse action. Vendor claim lives on Matter 31.",
+    claims: "PC §290.46(j) use (lead) — Uber joint employer + TaskUs; FCRA / ICRAA / UCL / Tameny-style withholding",
+    risk: "Draft complaint: Sep. 14 hold pending FA report + Sep. 15 WPS-361214148 CA-registry source. MAA compel risk. Saliva is their causation story. Valuation from $22/hr assignment window + statutory remedies.",
+    settlement_note: "No demand sent yet. Draft on disk; not filed.",
     conservative: 0,
     moderate: 0,
     aggressive: 0,
