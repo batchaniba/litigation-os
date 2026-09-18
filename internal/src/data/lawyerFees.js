@@ -673,7 +673,7 @@ const lawyer_fees_raw = [
   },
   {
     number: 40,
-    type: "State — closed employment monitoring (Uber Technologies, Inc. lead; TaskUs staffing; non-registry off-ramp)",
+    type: "Federal — N.D. Cal. San Jose complaint draft (Uber Technologies, Inc. lead; TaskUs staffing; FCRA + §290.46 use)",
     documentsCount: 18,
     totalPagesReal: 75,
     hours: {
@@ -686,7 +686,7 @@ const lawyer_fees_raw = [
       high: 840,
       mid: 560
     },
-    notes: "CLOSED hire on saliva off-ramp; FA Order WPS-361214148 consumer disclosure (Sep. 15, 6 pp) shows SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY to TaskUs Holdings — Matter 31 third furnish. Sep. 14 packet + Sep. 16 Reminder/Action Required. No TaskUs adverse-action letter yet.",
+    notes: "N.D. Cal. San Jose draft on disk (FCRA lead + §290.46 use). FA Order WPS-361214148 consumer disclosure (Sep. 15, 6 pp) shows SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY to TaskUs Holdings — Matter 31 third furnish. Sep. 14 packet + Sep. 16 Reminder/Action Required. Hire closed on saliva off-ramp; no TaskUs adverse-action letter yet.",
   }
 ];
 
