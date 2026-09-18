@@ -429,9 +429,7 @@ This makes UPS materially different from Lerma and Donaleski.
 1. **Derivative-source question** — Does information remain § 290.46
    information when the identified source of record is California's Sex
    Offender Registry but the vendor retrieved it through a national index?
-2. **Authorization question** — Does § 290.46(j)(3) merely preserve separately
-   authorized uses, or can Labor Code § 432.7 create a broad safe harbor for a
-   voluntary employment screen?
+2. **Authorization question** — § 290.46(j)(3) preserves separately authorized uses, including authorized access/use under Labor Code § 432.7. Current § 432.7(m)–(n) is not a blanket permission for every employer to use conviction information: it preserves particular-conviction inquiries or background checks where another federal/state/local law actually requires the inquiry, restriction, or hiring prohibition. Force UPS to identify that external law. Current FMCSA materials require MVR, safety-history, and applicable drug/alcohol Clearinghouse inquiries, but this research pass located no general federal motor-carrier rule requiring an ordinary freight employer to query California's sex-offender registry.
 3. **Person-at-risk question** — What does the undefined exception encompass
    in ordinary employment screening?
 
