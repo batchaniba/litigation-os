@@ -129,6 +129,8 @@ def extract_pleading_body(md: str) -> str:
     body = md[idx:]
     # Cut at exhibit list / second --- after signature
     for cut in (
+        "\n---\n\n## Document inventory",
+        "\n## Document inventory",
         "\n---\n\n## Exhibit list",
         "\n## Exhibit list",
         "\n## Filing packet",
@@ -287,20 +289,6 @@ def main() -> None:
             d.blank_line()
         else:
             raise ValueError(f"unknown content kind {kind!r}")
-
-    # Exhibit list (short — for print packet reference)
-    d.ensure_space(10)
-    d.write_line("EXHIBITS", bold=True, center=True)
-    d.blank_line()
-    for row in (
-        "Exhibit A  Offer of Temporary Employment -- TaskUs, LLC (Sep. 14, 2026)",
-        "Exhibit B  WorkDay -- Review Your Offer Letter / Uber AV Teammate (Sep. 14, 2026)",
-        "Exhibit C  TA Ops US -- Start Date Administrative Hold (Sep. 14, 2026, 11:24 a.m.)",
-        "Exhibit D  First Advantage Consumer Disclosure -- Order WPS-361214148 (Sep. 15, 2026)",
-        "Exhibit E  First Advantage Action Required -- Saliva Schedule ID 96558696 (Sep. 16, 2026)",
-    ):
-        d.write_wrapped(row, first_indent=0, indent=0)
-        d.blank_line()
 
     if not Path(SIGNATURE_PATH).is_file():
         raise SystemExit(f"Missing house signature: {SIGNATURE_PATH}")

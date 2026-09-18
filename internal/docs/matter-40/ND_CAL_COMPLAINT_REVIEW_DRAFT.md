@@ -32,7 +32,7 @@
 
 **Bottom line:** This is the cluster's strongest *pleading-stage* § 290.46 package to date on source + employer writing. It is engineered to get past a *Lerma*-style source dismissal and a 25/26-style "all I&B" dismissal. It is not engineered to pretend Uber or saliva are risk-free.
 
-**Before execute:** Uber CA SOS / agent; TaskUs Holdings service (C T); Civil Cover Sheet / JS-CAND (let the Court designate division); magistrate consent form; Exhibits A–E; Plaintiff reads every paragraph.
+**Before execute:** Uber CA SOS / agent; TaskUs Holdings service (C T); Civil Cover Sheet / JS-CAND (let the Court designate division); magistrate consent form; Plaintiff reads every paragraph. Do **not** attach the offer / hold / FA disclosure / saliva emails to the complaint at filing — produce in discovery or as needed.
 
 ---
 
@@ -156,7 +156,7 @@ Plaintiff BRENDAN NGWA NFORBI, appearing in propria persona, alleges:
 
 33. The email stated that TaskUs had placed Plaintiff's start date on a "standard administrative hold while final onboarding reviews are completed, **including the processing of your background screening report**," that the scheduled start must be adjusted pending completion of that process, that Plaintiff should monitor First Advantage, and that the application "remains in a pending status."
 
-34. A true and correct copy of that email is attached as **Exhibit C**.
+34. That email is in Plaintiff's possession and will be produced as appropriate.
 
 35. The September 14 email is TaskUs's contemporaneous statement that the **First Advantage background screening report** was the reason the accepted September 23 Uber AV Teammate start was frozen. Defendants did not provide Plaintiff a copy of the consumer report or a written Summary of Rights before that hold.
 
@@ -175,7 +175,7 @@ Plaintiff BRENDAN NGWA NFORBI, appearing in propria persona, alleges:
 > STE 100  
 > NEW BRAUNFELS, TX 78132-3832
 
-40. A true and correct copy of that consumer disclosure, including the enclosed registry component, is attached as **Exhibit D**.
+40. That consumer disclosure, including the enclosed registry component, is in Plaintiff's possession and will be produced as appropriate.
 
 41. The enclosed national sex offender registry component of Order WPS-361214148 states, among other things:
 
@@ -189,7 +189,7 @@ Plaintiff BRENDAN NGWA NFORBI, appearing in propria persona, alleges:
 
 43. That information is information disclosed pursuant to Penal Code § 290.46.
 
-44. On information and belief, grounded in Exhibits C and D and the Uber AV Teammate campaign facts alleged above, TaskUs Holdings and Uber received, accessed, considered, shared, and/or used that California-registry-sourced information for purposes relating to Plaintiff's Uber AV Teammate employment — including maintaining the September 14 hold, refusing to restore the September 23 start, and withholding or rescinding the accepted assignment.
+44. On information and belief, grounded in the September 14 hold, the September 15 consumer disclosure, and the Uber AV Teammate campaign facts alleged above, TaskUs Holdings and Uber received, accessed, considered, shared, and/or used that California-registry-sourced information for purposes relating to Plaintiff's Uber AV Teammate employment — including maintaining the September 14 hold, refusing to restore the September 23 start, and withholding or rescinding the accepted assignment.
 
 45. The September 14 hold email and the September 15 consumer disclosure supply the link: Defendants froze the start because of the background report, and that report — when disclosed — expressly sourced the sex-offender component to the California registry.
 
@@ -197,7 +197,7 @@ Plaintiff BRENDAN NGWA NFORBI, appearing in propria persona, alleges:
 
 46. On September 14, 2026, at approximately 8:49 a.m., First Advantage separately ordered a Saliva Drug Test Full Service NonDOT for employer TaskUs Holdings, Inc. (Schedule ID **96558696**).
 
-47. On September 16, 2026, First Advantage sent a Reminder and then an "Action Required" email stating that Plaintiff's saliva schedule confirmation could not be successfully completed. The schedule expired September 17, 2026, without collection. A true and correct copy of the Action Required email is attached as **Exhibit E**.
+47. On September 16, 2026, First Advantage sent a Reminder and then an "Action Required" email stating that Plaintiff's saliva schedule confirmation could not be successfully completed. The schedule expired September 17, 2026, without collection.
 
 48. Plaintiff does not collapse the saliva product into the consumer report.
 
@@ -208,11 +208,11 @@ Plaintiff BRENDAN NGWA NFORBI, appearing in propria persona, alleges:
 - did not name the saliva test; and  
 - remained operative after First Advantage furnished the California-registry-sourced report on September 15.
 
-50. The California-registry-sourced information in Order WPS-361214148 was a substantial factor in Defendants' freezing and withholding of the accepted Uber AV Teammate assignment, as shown by Exhibits C and D.
+50. The California-registry-sourced information in Order WPS-361214148 was a substantial factor in Defendants' freezing and withholding of the accepted Uber AV Teammate assignment, as shown by the September 14 hold and the September 15 consumer disclosure.
 
 # IX. UBER AS END CLIENT / JOINT EMPLOYER
 
-51. Every candidate-facing WorkDay communication that announced the offer identified the position as **Uber AV Teammate**, not a generic TaskUs role. A true and correct copy of the September 14 WorkDay offer email is attached as **Exhibit B**.
+51. Every candidate-facing WorkDay communication that announced the offer identified the position as **Uber AV Teammate**, not a generic TaskUs role.
 
 52. The requisition identifier is R_2608_10812 / C261051599 — Uber AV Teammate (SJ: 09/23/2026).
 
@@ -220,7 +220,7 @@ Plaintiff BRENDAN NGWA NFORBI, appearing in propria persona, alleges:
 
 54. TaskUs Holdings and its affiliates functioned as the staffing / payroll / offer-letter employer enterprise. Uber functioned as the end client whose branded campaign created the temporary need for Teammates and whose Northern District operations would receive Plaintiff's labor.
 
-55. On information and belief, grounded in Exhibits A through D and the campaign branding:
+55. On information and belief, grounded in the offer packet, the September 14 hold, the September 15 consumer disclosure, and the campaign branding:
 
 - Uber directed or approved the Uber AV Teammate requisition, headcount, San Jose location, and September 23, 2026 start cohort;  
 - **Uber set, specified, or approved the First Advantage search criteria and screening package** TaskUs ordered for Uber AV Teammate placements — including the national sex-offender / PRINSOS / NSOR search components that returned the California Sex Offender Registry SOURCE OF RECORD line on Order WPS-361214148;  
@@ -271,7 +271,7 @@ Plaintiff BRENDAN NGWA NFORBI, appearing in propria persona, alleges:
 
 72. The count is timely. The conduct occurred September 14–17, 2026.
 
-73. Noncompliance was negligent and, on proof, willful under 15 U.S.C. § 1681n. First Advantage's consumer disclosure and FCRA Summary of Rights package (Exhibit D) shows the regulated character of the report Defendants used.
+73. Noncompliance was negligent and, on proof, willful under 15 U.S.C. § 1681n. First Advantage's consumer disclosure and FCRA Summary of Rights package on Order WPS-361214148 shows the regulated character of the report Defendants used.
 
 74. Plaintiff seeks relief authorized by 15 U.S.C. §§ 1681n and 1681o according to proof.
 
@@ -306,7 +306,7 @@ Plaintiff BRENDAN NGWA NFORBI, appearing in propria persona, alleges:
 
 87. Plaintiff does not presently seek preventive relief under § 290.46(j)(4)(B).
 
-88. This Count is limited to use of information disclosed pursuant to § 290.46, as shown by Exhibit D's SOURCE OF RECORD field.
+88. This Count is limited to use of information disclosed pursuant to § 290.46, as shown by the SOURCE OF RECORD field on Order WPS-361214148.
 
 # XIV. COUNT THREE
 ## California Investigative Consumer Reporting Agencies Act
@@ -379,20 +379,20 @@ Plaintiff, In Propria Persona
 
 ---
 
-## Exhibit list (attach at execute)
+## Document inventory (internal — do not attach to the complaint at filing)
 
-| Ex. | Document |
+| Doc | Document |
 |---|---|
-| A | Offer of Temporary Employment — TaskUs, LLC (Sep. 14, 2026) |
-| B | WorkDay email — Review Your Offer Letter / Uber AV Teammate (Sep. 14, 2026) |
-| C | TA Ops US — Start Date Administrative Hold (Sep. 14, 2026, 11:24 a.m.) |
-| D | First Advantage Consumer Disclosure — Order WPS-361214148 (Sep. 15, 2026) |
-| E | First Advantage Action Required — Saliva Schedule ID 96558696 (Sep. 16, 2026) |
+| Offer | Offer of Temporary Employment — TaskUs, LLC (Sep. 14, 2026) |
+| WorkDay | Review Your Offer Letter / Uber AV Teammate (Sep. 14, 2026) |
+| Hold | TA Ops US — Start Date Administrative Hold (Sep. 14, 2026, 11:24 a.m.) |
+| FA disclosure | First Advantage Consumer Disclosure — Order WPS-361214148 (Sep. 15, 2026) |
+| Saliva | First Advantage Action Required — Saliva Schedule ID 96558696 (Sep. 16, 2026) |
 
 ## Filing packet (N.D. Cal.)
 
 - Civil Cover Sheet (JS-CAND / AO 440 as required)  
-- Complaint + Exhibits A–E  
+- Complaint (no exhibits attached at pleading stage)  
 - Summons (AO 440) for each named Defendant  
 - Magistrate Judge Jurisdiction consent/declination form  
 - Corporate Disclosure if/when Defendants appear  
