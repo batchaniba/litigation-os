@@ -35,9 +35,9 @@
 
 19            Plaintiff BRENDAN NGWA NFORBI, appearing in propria persona, requests that the
 
-20   Clerk enter the defaults of Defendants Santiago Meza-Gonzalez and Jose Melano under Federal
+20   Clerk enter the defaults of Defendants Santiago Meza-Gonzalez and Jose Melano under
 
-21   Rule of Civil Procedure 55(a). The facts are in the accompanying declaration.
+21   Federal Rule of Civil Procedure 55(a). The facts are in the accompanying declaration.
 
 22
 
@@ -65,9 +65,9 @@
 
  5          As to Defendant Santiago Meza-Gonzalez, Document 16 is a summons returned
 
- 6   executed. The docket entry states that Meza-Gonzalez was served on August 27, 2026, and that
+ 6   executed. The docket entry states that Meza-Gonzalez was served on August 27, 2026, and
 
- 7   his answer was due September 17, 2026.
+ 7   that his answer was due September 17, 2026.
 
  8
 
@@ -77,9 +77,9 @@
 
 11
 
-12          As of the date of this request, neither Melano nor Meza-Gonzalez has filed an answer, a
+12          As of the date of this request, neither Melano nor Meza-Gonzalez has filed an answer,
 
-13   Rule 12 motion, or any other paper pleading or defending against the First Amended
+13   a Rule 12 motion, or any other paper pleading or defending against the First Amended
 
 14   Complaint. Neither defendant has appeared. No attorney has appeared for either defendant on
 
@@ -222,21 +222,21 @@
 
 26
 
-27      3. On August 31, 2026, the Clerk entered Document 12: Summons Returned Executed as to
+27      3. On August 31, 2026, the Clerk entered Document 12: Summons Returned Executed as
 
-28      Jose Melano. Document 12 states that Melano was served on August 14, 2026, and that his
+28      to Jose Melano. Document 12 states that Melano was served on August 14, 2026, and that
 
                                                   Page 1
           DECLARATION ISO REQUEST FOR ENTRY OF DEFAULT -- NFORBI v. MEZA-GONZALEZ ET AL.
- 1   answer was due September 4, 2026. The underlying AO 440 return (also filed as Dkt. 5-1)
+ 1   his answer was due September 4, 2026. The underlying AO 440 return (also filed as Dkt.
 
- 2   shows service by Clifford Black of C&P Process Server on Officer Reed at California
+ 2   5-1) shows service by Clifford Black of C&P Process Server on Officer Reed at California
 
- 3   Highway Patrol, South Sacramento Area, 6 Massie Court, Sacramento, California 95823, on
+ 3   Highway Patrol, South Sacramento Area, 6 Massie Court, Sacramento, California 95823,
 
- 4   August 14, 2026. Officer Reed is designated by law to accept service of process on behalf
+ 4   on August 14, 2026. Officer Reed is designated by law to accept service of process on
 
- 5   of the California Highway Patrol at that station.
+ 5   behalf of the California Highway Patrol at that station.
 
  6
 
@@ -246,13 +246,13 @@
 
  9   August 27, 2026, and that his answer was due September 17, 2026. Document 16 attaches
 
-10   the Declaration of Service and Declaration of Reasonable Diligence of Daniel Fischer (Run
+10   the Declaration of Service and Declaration of Reasonable Diligence of Daniel Fischer
 
-11   With It order 15645547), reflecting substituted delivery at California Highway Patrol,
+11   (Run With It order 15645547), reflecting substituted delivery at California Highway
 
-12   Modesto Area, 4030 Kiernan Avenue, Modesto, California 95356, on August 27, 2026,
+12   Patrol, Modesto Area, 4030 Kiernan Avenue, Modesto, California 95356, on August 27,
 
-13   after attempts on August 25 and August 26, 2026.
+13   2026, after attempts on August 25 and August 26, 2026.
 
 14
 
@@ -268,11 +268,11 @@
 
 20
 
-21   6. The time for Melano to plead or otherwise defend, as stated on Document 12 (September
+21   6. The time for Melano to plead or otherwise defend, as stated on Document 12
 
-22   4, 2026), has expired. The time for Meza-Gonzalez to plead or otherwise defend, as stated
+22   (September 4, 2026), has expired. The time for Meza-Gonzalez to plead or otherwise
 
-23   on Document 16 (September 17, 2026), has expired.
+23   defend, as stated on Document 16 (September 17, 2026), has expired.
 
 24
 
@@ -415,9 +415,9 @@
 
  7
 
- 8   (Proposed form submitted September 18, 2026. The Clerk may enter default by text-only docket entry.)
+ 8   (Proposed form submitted September 18, 2026. The Clerk may enter default by text-only
 
- 9
+ 9   docket entry.)
 
 10
 

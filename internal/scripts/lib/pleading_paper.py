@@ -99,7 +99,7 @@ class PleadingPaper:
         c.setFont("Helvetica", 10)
         c.drawCentredString(center_x, FOOTER_PAGE_Y, f"Page {self.page_num}")
         if self.doc_title_footer:
-            avail_footer_width = CONTENT_RIGHT - VERT_LINE_LEFT - 4
+            avail_footer_width = CONTENT_RIGHT - VERT_LINE_LEFT - 8
             footer_size = 9
             while footer_size > 6 and c.stringWidth(self.doc_title_footer, "Helvetica", footer_size) > avail_footer_width:
                 footer_size -= 0.5
@@ -123,13 +123,23 @@ class PleadingPaper:
     def write_line(self, text, bold=False, font="Times-Roman", size=FONT_SIZE,
                    italic=False, center=False, right=False, indent=0,
                    underline=False, right_margin_offset=0):
-        self._ensure_line()
-        y = self._line_y(self.current_line)
-        c = self.c
         if bold and italic: fn = "Times-BoldItalic"
         elif bold: fn = "Times-Bold"
         elif italic: fn = "Times-Italic"
         else: fn = font
+        # Left-aligned long lines must wrap inside the right vertical rule.
+        # Center/right lines are caller-controlled (captions, sign-off).
+        if not center and not right and not underline:
+            avail = CONTENT_WIDTH - indent - 16
+            if self.c.stringWidth(text, fn, size) > avail:
+                self.write_wrapped(
+                    text, bold=bold, font=font, size=size, italic=italic,
+                    indent=indent, first_indent=0, right_inset=16,
+                )
+                return
+        self._ensure_line()
+        y = self._line_y(self.current_line)
+        c = self.c
         c.setFont(fn, size)
         x = CONTENT_LEFT + indent
         if center:
@@ -153,7 +163,7 @@ class PleadingPaper:
         self.current_line += 1
 
     def write_wrapped(self, text, bold=False, font="Times-Roman", size=FONT_SIZE,
-                      italic=False, indent=0, first_indent=36, right_inset=10):
+                      italic=False, indent=0, first_indent=36, right_inset=16):
         # right_inset keeps glyphs from visually kissing or crossing the right rule.
         avail = CONTENT_WIDTH - indent - right_inset
         segs = self._parse_segments(text)
@@ -250,7 +260,7 @@ class PleadingPaper:
                 elif ri: fn = "Times-Italic"
                 else: fn = "Times-Roman"
                 size = caption_size
-                avail = CONTENT_RIGHT - right_col_x - 4
+                avail = CONTENT_RIGHT - right_col_x - 8
                 while size > 7 and c.stringWidth(rt, fn, size) > avail:
                     size -= 0.25
                 c.setFont(fn, size)
