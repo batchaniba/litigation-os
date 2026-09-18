@@ -13,11 +13,11 @@ ENVELOPE TO MEZA (first-class, postage prepaid)
   4030 Kiernan Avenue
   Modesto, CA 95356
 
-  1. Cover letter
-  2. Meza summons only (Dkt. 3 page 2)
-  3. FAC Dkt. 5
-  4. Notice identifying the operative FAC
-  5. CMC/ADR order Dkt. 4
+  1. Meza summons only (Dkt. 3 page 2)
+  2. FAC Dkt. 5
+  3. Notice identifying the operative FAC
+  4. CMC/ADR order Dkt. 4
+  No cover letter.
 
 Do not enclose Dkt. 16, this sheet, the declaration, or any URL.
 
