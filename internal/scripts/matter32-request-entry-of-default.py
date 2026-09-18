@@ -472,12 +472,6 @@ def build_proposed_entry(out: Path, exec_date: str) -> Path:
     d.write_line("___________________________________________")
     d.write_line("Clerk, United States District Court")
     d.write_line("Northern District of California")
-    d.blank_line()
-    d.write_line(
-        f"(Proposed form submitted {exec_date}. The Clerk may enter "
-        "default by text-only docket entry.)",
-        italic=True,
-    )
     d.save()
     return out
 
