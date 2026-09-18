@@ -473,12 +473,11 @@ def build_proposed_entry(out: Path, exec_date: str) -> Path:
     d.write_line("Clerk, United States District Court")
     d.write_line("Northern District of California")
     d.blank_line()
-    d.write_wrapped(
-        f"(Proposed form submitted {exec_date}. The Clerk may enter "
-        "default by text-only docket entry.)",
+    # Two short italic lines — never one long write that can cross the rule.
+    d.write_line(f"(Proposed form submitted {exec_date}.)", italic=True)
+    d.write_line(
+        "(The Clerk may enter default by text-only docket entry.)",
         italic=True,
-        first_indent=0,
-        right_inset=16,
     )
     d.save()
     return out
