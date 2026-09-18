@@ -20,16 +20,18 @@ import sys
 from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).resolve().parent
+sys.path.insert(0, str(SCRIPT_DIR))
 sys.path.insert(0, str(SCRIPT_DIR / "lib"))
 
 from pleading_paper import CONTENT_LEFT, PleadingPaper  # noqa: E402
+from signature_stamp import SIGNATURE_NATIVE_PX, SIGNATURE_PATH  # noqa: E402
 
 ROOT = SCRIPT_DIR.parents[1]
 MD_PATH = ROOT / "internal/docs/matter-40/ND_CAL_COMPLAINT_REVIEW_DRAFT.md"
 DEFAULT_OUT = (
     ROOT
     / "internal/public/documents/matter-40"
-    / "Complaint Review Draft - Ngwa Nforbi v Uber Technologies Inc "
+    / "Complaint - Ngwa Nforbi v Uber Technologies Inc "
     "(N.D. Cal. San Jose) (Sep 18 2026).pdf"
 )
 
@@ -37,6 +39,9 @@ DOC_TITLE_FOOTER = (
     "COMPLAINT FOR DAMAGES -- NGWA NFORBI v. UBER TECHNOLOGIES, INC., ET AL. "
     "(N.D. Cal. -- San Jose)"
 )
+
+EXEC_DATE = "September 18, 2026"
+SIG_LINE = "___________________________________"
 
 COURT_LINE1 = "UNITED STATES DISTRICT COURT"
 COURT_LINE2 = "NORTHERN DISTRICT OF CALIFORNIA"
@@ -91,16 +96,7 @@ CAPTION_RIGHT = [
     ("DEMAND FOR JURY TRIAL", True, False),
 ]
 
-SIGNATURE_BLOCK = [
-    ("left", "Dated: __________________"),
-    ("", ""),
-    ("left", "Respectfully submitted,"),
-    ("", ""),
-    ("", ""),
-    ("left", "___________________________________"),
-    ("left", "BRENDAN NGWA NFORBI"),
-    ("left", "Plaintiff, In Propria Persona"),
-]
+SIGNATURE_BLOCK = None  # dated + house stamp drawn in main()
 
 
 def _strip_md(s: str) -> str:
@@ -225,6 +221,9 @@ def parse_content(body: str) -> list[tuple[str, str]]:
         if line.strip() in {"BRENDAN NGWA NFORBI", "Plaintiff, In Propria Persona"}:
             flush()
             continue
+        if line.strip().startswith("Dated: September"):
+            flush()
+            continue
         if mode is None:
             mode = "PARA"
         buf.append(line)
@@ -304,18 +303,29 @@ def main() -> None:
         d.write_wrapped(row, first_indent=0, indent=0)
         d.blank_line()
 
-    d.ensure_space(len([x for x in SIGNATURE_BLOCK if x[0] != ""]) + 4)
-    for align, text in SIGNATURE_BLOCK:
-        if align == "":
-            d.blank_line()
-        elif align == "left":
-            d.write_line(text)
-        else:
-            raise ValueError(align)
+    if not Path(SIGNATURE_PATH).is_file():
+        raise SystemExit(f"Missing house signature: {SIGNATURE_PATH}")
+
+    d.ensure_space(10)
+    d.write_line(f"Dated: {EXEC_DATE}")
+    d.blank_line()
+    d.write_respectfully_submitted()
+    d.draw_signature_image(
+        SIGNATURE_PATH,
+        SIGNATURE_NATIVE_PX[0],
+        SIGNATURE_NATIVE_PX[1],
+        SIG_LINE,
+        width=220,
+        x_offset=15,
+    )
+    d.write_line(SIG_LINE, right=True, right_margin_offset=20)
+    d.write_line("BRENDAN NGWA NFORBI", bold=True, right=True, right_margin_offset=20)
+    d.write_line("Plaintiff, In Propria Persona", right=True, right_margin_offset=20)
 
     d.save()
     print(f"Wrote {out}")
     print(f"Pages: {d.page_num}")
+    print(f"Dated: {EXEC_DATE}; house signature affixed from {SIGNATURE_PATH}")
 
 
 if __name__ == "__main__":
