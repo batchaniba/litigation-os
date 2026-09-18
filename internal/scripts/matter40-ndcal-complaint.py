@@ -274,7 +274,11 @@ def main() -> None:
             lines = [ln for ln in text.split("\n") if ln.strip()]
             d.ensure_space(len(lines) + 2)
             for line in lines:
-                d.write_line(line.upper() if len(line) < 80 else line, bold=True, center=True)
+                # Keep short Roman numerals centered; wrap long titles instead of truncating.
+                if len(line) <= 48:
+                    d.write_line(line, bold=True, center=True)
+                else:
+                    d.write_wrapped(f"<<b:{line}>>", first_indent=0, indent=0)
             d.blank_line()
         elif kind == "SUBHEAD":
             d.ensure_space(3)

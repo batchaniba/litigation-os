@@ -79,7 +79,7 @@ Plaintiff BRENDAN NGWA NFORBI, appearing in propria persona, alleges:
 
 3. The same day, First Advantage Background Services Corp. ("First Advantage") opened Profile Advantage Order **WPS-361214148** for employment screening on that hire.
 
-4. At 11:24 a.m. on September 14, 2026 — while Order WPS-361214148 was still open and its national sex-offender component (PRINSOS) was still In Progress — TaskUs Talent Acquisition Operations placed Plaintiff's start on a "standard administrative hold" expressly **"including the processing of your background screening report."** That is Defendants' own writing that the First Advantage report stopped the accepted Uber AV Teammate start.
+4. At 11:24 a.m. on September 14, 2026 — while Order WPS-361214148 was still open and its national sex-offender component (PRINSOS) was still In Progress — TaskUs Talent Acquisition Operations placed Plaintiff's start on a "standard administrative hold" expressly **"including the processing of your background screening report."** TaskUs thereby identified the processing of Plaintiff's background screening report as a basis for freezing the accepted start.
 
 5. On September 15, 2026, First Advantage issued a consumer disclosure stating it was reporting public-record information concerning Plaintiff to **TASKUS HOLDINGS INC USA**. The enclosed national sex offender registry component of Order WPS-361214148 states, verbatim:
 
@@ -91,7 +91,7 @@ Plaintiff BRENDAN NGWA NFORBI, appearing in propria persona, alleges:
 
 8. A separate saliva drug-test schedule (Schedule ID 96558696) was ordered the same day. That product is not the consumer report. The September 14 hold named the **background screening report**, not the saliva test. Saliva confirmation later failed on September 16. The chronology confirms that the September 14 hold was not based on a saliva miss.
 
-9. First Advantage is the CRA that generated Order WPS-361214148. It is not named as a defendant in this Complaint. Claims arising from First Advantage's furnishing of California-registry-sourced employment reports are not waived.
+9. First Advantage is the CRA that generated Order WPS-361214148. It is not named as a defendant in this Complaint. Plaintiff reserves all claims against First Advantage arising from its furnishing of California-registry-sourced employment reports.
 
 # II. JURISDICTION AND VENUE
 
@@ -140,7 +140,7 @@ Plaintiff BRENDAN NGWA NFORBI, appearing in propria persona, alleges:
 
 25. Plaintiff accepted the offer the same day. The Adobe Acrobat Sign signature request for that offer packet was sent by **John Malones** (`john.malones@taskus.com`) on September 14, 2026, at approximately 6:55 a.m. Plaintiff completed the Adobe Sign packet the same morning (completion notice Reply-To: John Malones / TaskUs Holdings Inc) and signed the United States Background Consent Form, the TaskUs Holdings, Inc. non-disclosure / invention-assignment agreement, and related onboarding documents.
 
-26. DLSE Form 2810.5 identified TaskUs, LLC as the hiring employer. It did not list Uber as the entity for whom the work would be performed. That wage notice does not erase Uber's end-client / joint-employer role on a campaign Uber branded as its own.
+26. DLSE Form 2810.5 identified TaskUs, LLC as the hiring employer. It did not list Uber as the entity for whom the work would be performed. Uber remains the end client and joint employer on the Uber-branded campaign as alleged herein.
 
 27. The only assignment offered was the Uber AV Teammate campaign. Without Uber's campaign, there was no Teammate placement for Plaintiff to accept.
 
@@ -157,7 +157,7 @@ Plaintiff BRENDAN NGWA NFORBI, appearing in propria persona, alleges:
 
 31. The portal stated the report was not viewable until the order completed. A component marked Completed is not itself a result and is not a registry hit.
 
-# VI. THE SEPTEMBER 14 HOLD — EMPLOYER WRITING THAT THE BACKGROUND REPORT STOPPED THE START
+# VI. THE SEPTEMBER 14 ADMINISTRATIVE HOLD
 
 32. On September 14, 2026, at 11:24 a.m., TA Ops US (taops.us@taskus.com), copying **Liz Ramirez** (`liz.ramirez02@taskus.com`), emailed Plaintiff "Important Update Regarding Your Application with TaskUs."
 
@@ -165,7 +165,7 @@ Plaintiff BRENDAN NGWA NFORBI, appearing in propria persona, alleges:
 
 34. A true and correct copy of that email is attached as **Exhibit C**.
 
-35. That email is not a First Advantage pre-adverse template and not a final adverse-action form notice. It is Defendants' contemporaneous statement that the **First Advantage background screening report** was the reason the accepted September 23 Uber AV Teammate start was frozen.
+35. The September 14 email is TaskUs's contemporaneous statement that the **First Advantage background screening report** was the reason the accepted September 23 Uber AV Teammate start was frozen. Defendants did not provide Plaintiff a copy of the consumer report or a written Summary of Rights before that hold.
 
 36. The hold issued approximately one hour after the portal snapshot showing PRINSOS still In Progress, and before First Advantage's September 15 consumer disclosure.
 
@@ -173,7 +173,7 @@ Plaintiff BRENDAN NGWA NFORBI, appearing in propria persona, alleges:
 
 38. Freezing an accepted start date, placing the application in pending status, and withholding the Uber AV Teammate assignment are adverse employment actions and purposes relating to employment.
 
-# VII. THE SEPTEMBER 15 CONSUMER DISCLOSURE — KNOWN SOURCE FACT
+# VII. THE SEPTEMBER 15 CONSUMER DISCLOSURE
 
 39. On September 15, 2026, First Advantage issued a consumer disclosure letter to Plaintiff at his Stockton address. The letter advised that First Advantage was reporting public-record information concerning Plaintiff to:
 
@@ -231,7 +231,7 @@ Plaintiff BRENDAN NGWA NFORBI, appearing in propria persona, alleges:
 
 - Uber directed or approved the Uber AV Teammate requisition, headcount, San Jose location, and September 23, 2026 start cohort;  
 - **Uber set, specified, or approved the First Advantage search criteria and screening package** TaskUs ordered for Uber AV Teammate placements — including the national sex-offender / PRINSOS / NSOR search components that returned the California Sex Offender Registry SOURCE OF RECORD line on Order WPS-361214148;  
-- TaskUs ran that Uber-specified package as the staffing vendor for Uber's campaign; Uber did not merely receive a generic TaskUs default screen;  
+- TaskUs ran that Uber-specified package as the staffing vendor for Uber's campaign;  
 - Uber received, was entitled to receive, or caused TaskUs to obtain and use First Advantage screening results — including the California-registry-sourced component — before authorizing Plaintiff's start on Uber's campaign;  
 - TaskUs's September 14 hold pending the background report was taken in the course of staffing Uber's campaign and for Uber's benefit; and  
 - Uber and the TaskUs Defendants are joint employers and/or agents of one another with respect to the hiring decision on this placement.
@@ -240,9 +240,9 @@ Plaintiff BRENDAN NGWA NFORBI, appearing in propria persona, alleges:
 
 57. Penal Code § 290.46(j)(2)(E) prohibits use of § 290.46-disclosed information "for purposes relating to employment." Using that information to freeze or deny placement onto Uber's AV Teammate campaign is such a purpose, whether the offer letter is on TaskUs letterhead or Uber's.
 
-58. The 2810.5's naming of TaskUs, LLC is a wage-notice fact. It is not a joint-employer safe harbor and does not place Uber beyond § 290.46(j).
+58. The Form 2810.5's naming of TaskUs, LLC is a wage-notice fact. It does not preclude Uber's liability under Penal Code § 290.46(j) as end client and joint employer on the Uber AV Teammate campaign.
 
-# X. NO STATUTORY AUTHORIZATION; NO PRE-ADVERSE PACKAGE BEFORE THE HOLD
+# X. NO STATUTORY AUTHORIZATION; NO PRE-ADVERSE DISCLOSURE BEFORE THE HOLD
 
 59. Plaintiff is unaware of any statute authorizing Defendants to use information disclosed pursuant to Penal Code § 290.46 for this Teammate / Uber AV delivery assignment.
 
@@ -256,7 +256,7 @@ Plaintiff BRENDAN NGWA NFORBI, appearing in propria persona, alleges:
 
 63. Plaintiff lost an accepted temporary assignment at $22.00 per hour from September 23, 2026 through on or around December 4, 2026, and lost the opportunity to earn the $1,000 retention bonus if still employed in good standing on December 4.
 
-64. Plaintiff does not invent weekly hours the offer does not guarantee. Damages will be proved according to the offer, the assignment schedule, and proof.
+64. Damages for lost wages will be proved according to the offer terms, the assignment schedule, and proof at trial.
 
 65. Plaintiff also seeks statutory remedies authorized by the FCRA, Penal Code § 290.46(j)(4)(A), and ICRAA, without double recovery.
 
@@ -313,7 +313,7 @@ Plaintiff BRENDAN NGWA NFORBI, appearing in propria persona, alleges:
 
 87. Plaintiff does not presently seek preventive relief under § 290.46(j)(4)(B).
 
-88. Plaintiff does not allege that Defendants were barred from considering lawfully and independently obtained conviction information from a non-§ 290.46 source. This Count is based on use of information disclosed pursuant to § 290.46 itself, as shown by Exhibit D's SOURCE OF RECORD field.
+88. This Count is limited to use of information disclosed pursuant to § 290.46, as shown by Exhibit D's SOURCE OF RECORD field.
 
 # XIV. COUNT THREE
 ## California Investigative Consumer Reporting Agencies Act
@@ -330,7 +330,7 @@ Plaintiff BRENDAN NGWA NFORBI, appearing in propria persona, alleges:
 
 93. Defendants did not provide the § 1786.40 advice at the time of that employment action.
 
-94. This alleged omission is distinct from Count One's federal pre-adverse omission.
+94. The § 1786.40 omission alleged here is separate from the FCRA pre-adverse omission alleged in Count One.
 
 95. Plaintiff seeks the remedies authorized by Civil Code § 1786.50 according to proof.
 
@@ -368,7 +368,7 @@ C. Relief authorized by Penal Code § 290.46(j)(4)(A);
 D. Relief authorized by Civil Code § 1786.50;  
 E. Restitution and injunctive relief under Bus. & Prof. Code § 17200;  
 F. Exemplary damages according to proof where authorized;  
-G. Taxable costs and attorney's fees only where authorized, including if counsel later appears;  
+G. Taxable costs and attorney's fees where authorized by statute or rule;  
 H. Prejudgment and postjudgment interest as allowed by law; and  
 I. Such other nonduplicative relief as the Court deems proper.
 
