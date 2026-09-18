@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1296,
-  "totalBytes": 904722303,
+  "fileCount": 1301,
+  "totalBytes": 905586198,
   "files": [
     {
       "path": "/documents/README.md",
@@ -6482,6 +6482,31 @@
       "path": "/documents/matter-40/First Advantage Consumer Disclosure - TaskUs Holdings Order WPS-361214148 (Sep 15 2026).pdf",
       "size": 211468,
       "sha256": "2172d145f11f9d8ccb984718d3deebc1b19973878f04fcf8f22b85ccb3b552fc"
+    },
+    {
+      "path": "/documents/matter-40/Adobe Sign - Signature Requested by John Malones - Uber AV Offer (Sep 14 2026).pdf",
+      "size": 45634,
+      "sha256": "b479673abb73920dcd2505dfa9fe4a109023b68c7f696f8bedaa9281fe38a8a9"
+    },
+    {
+      "path": "/documents/matter-40/Adobe Sign - You Signed Offer - Reply-To John Malones (Sep 14 2026).pdf",
+      "size": 50168,
+      "sha256": "05ab2ea15aa776f53bc32699d5704ab6086f68368a2cc797795cf4f80d04256d"
+    },
+    {
+      "path": "/documents/matter-40/TaskUs TA Ops - Action Required Today Onboarding Tasks (Sep 14 2026).pdf",
+      "size": 109167,
+      "sha256": "983c3773b49396bb6508ff6a9dd4db63931d5f50ad6e2a573e2664ae63677664"
+    },
+    {
+      "path": "/documents/matter-40/TaskUs TA Ops - Start Date Administrative Hold with Cc Liz Ramirez (Sep 14 2026).pdf",
+      "size": 81180,
+      "sha256": "5d0966b49eef1a19e036d32c53018d608b3727efbe777d05309f2b23b831558c"
+    },
+    {
+      "path": "/documents/matter-40/Offer of Temporary Employment - TaskUs LLC - Adobe Signed (Sep 14 2026).pdf",
+      "size": 577746,
+      "sha256": "10b73b1d03062b7c20a16d82c1a66e41345dd8565f3ba5623787a812ae722a81"
     }
   ]
 }
