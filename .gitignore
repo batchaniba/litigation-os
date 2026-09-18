@@ -47,3 +47,9 @@ internal/public/*/index.html
 
 # personal Claude Code overrides (permission grants for private doc store)
 .claude/settings.local.json
+
+# D1 seed SQL is generated from canonical repo JSON at reseed time.
+# Do not commit snapshots: they can drift behind clocks.json / the manifest.
+/seed.sql
+/workers/doc-api/seed.sql
+/workers/doc-api/seed-chunk-*.sql
