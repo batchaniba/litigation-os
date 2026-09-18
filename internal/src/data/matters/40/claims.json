@@ -1,35 +1,45 @@
 {
-  "summary": "FCRA \u00a71681b(b)(3)(A) (lead); PC \u00a7290.46(j)(2)(E) use; ICRAA; UCL; wrongful refusal/withholding \u2014 Uber + TaskUs Holdings (N.D. Cal.; LLC/USA in DOES)",
+  "summary": "Maximum-value v2: FCRA §1681b(b)(2)(A) procurement disclosure + ICRAA §1786.16 are audit-gated; FCRA §1681b(b)(3), PC §290.46(j), and ICRAA §1786.40 are reserved for verified post-report adverse/use facts. UCL and Tameny failure-to-hire dropped.",
   "counts": [
     {
       "id": 1,
-      "status": "live",
+      "status": "audit_gate",
       "theory_ids": [],
-      "title": "FCRA, 15 U.S.C. \u00a71681b(b)(3)(A) \u2014 adverse action based on consumer report without pre-adverse copy / Summary of Rights"
+      "title": "FCRA 15 U.S.C. §1681b(b)(2)(A) — employment consumer-report procurement without compliant standalone disclosure"
     },
     {
       "id": 2,
-      "status": "live",
+      "status": "audit_gate",
       "theory_ids": [],
-      "title": "Penal Code \u00a7290.46(j)(2)(E), (j)(4)(A) \u2014 unauthorized employment use of California registry information (Order WPS-361214148; Sep. 14 hold pending FA report)"
+      "title": "ICRAA Civ. Code §§1786.16, 1786.50 — defective/missing pre-procurement investigative-report disclosure"
     },
     {
       "id": 3,
-      "status": "live",
+      "status": "post_report_gate",
       "theory_ids": [],
-      "title": "ICRAA, Civ. Code \u00a7\u00a71786.40, 1786.50 \u2014 employment denial without \u00a71786.40 advice"
+      "title": "FCRA 15 U.S.C. §1681b(b)(3)(A) — post-report adverse action without pre-adverse report / Summary of Rights"
     },
     {
       "id": 4,
-      "status": "live",
+      "status": "actual_use_gate",
       "theory_ids": [],
-      "title": "UCL, Bus. & Prof. Code \u00a717200 \u2014 unlawful prong borrowing the above"
+      "title": "Penal Code §290.46(j)(2)(E), (j)(4)(A) — actual employment use of California-registry-sourced information"
     },
     {
       "id": 5,
-      "status": "live",
+      "status": "denial_gate",
       "theory_ids": [],
-      "title": "Wrongful refusal to hire / withholding of accepted Uber AV Teammate employment in violation of public policy (\u00a7290.46(j))"
+      "title": "ICRAA Civ. Code §§1786.40, 1786.50 — denial-time advice requirements"
+    }
+  ],
+  "dropped": [
+    {
+      "title": "UCL, Bus. & Prof. Code §17200",
+      "reason": "Low incremental value; expected wages are a poor restitution fit and the equitable claim adds an avoidable Rule 12 target."
+    },
+    {
+      "title": "Wrongful refusal/failure to hire in violation of public policy",
+      "reason": "Williams v. Sacramento River Cats requires a preexisting employment relationship for the Tameny tort."
     }
   ]
 }
