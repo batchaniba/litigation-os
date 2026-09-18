@@ -96,5 +96,19 @@
     "path": null,
     "what_it_proves": "Email from TA Ops US (taops.us@taskus.com, cc Liz Ramirez, liz.ramirez02@taskus.com), Sep. 14, 2026, 11:24 a.m. — 'Important Update Regarding Your Application with TaskUs.' Places the Sep. 23 start on a 'standard administrative hold while final onboarding reviews are completed, including the processing of your background screening report.' Application 'remains in a pending status.' Directs him to watch First Advantage and gives FA Customer Support 800-888-5773. Not a pre-adverse notice (no report, no FCRA summary of rights, not from DoNotReply@fadv.com) and not a denial.",
     "transcript_path": null
+  },
+  {
+    "id": "e15",
+    "label": "First Advantage Reminder (Sep. 16, 2026, 9:57 a.m.) — Saliva Drug Test Full Service NonDOT; Schedule ID 96558696; LabCorp Web COC 610727488; LabCorp-Milpitas; expires Sep. 17, 2026, 11:49 a.m. Eastern; employer TaskUs Holdings, Inc.; cc taops-bgvglobal@taskus.com",
+    "path": "/documents/matter-40/First Advantage Reminder - TaskUs Holdings Saliva Drug Test (Sep 16 2026).pdf",
+    "what_it_proves": "First Advantage Reminder (Sep. 16, 2026, 9:57 a.m.) — Saliva Drug Test Full Service NonDOT; Schedule ID 96558696; LabCorp Web COC 610727488; LabCorp-Milpitas; expires Sep. 17, 2026, 11:49 a.m. Eastern; employer TaskUs Holdings, Inc.; cc taops-bgvglobal@taskus.com",
+    "transcript_path": null
+  },
+  {
+    "id": "e16",
+    "label": "First Advantage Action Required (Sep. 16, 2026, 3:05 p.m.) — 'Your confirmation could not be successfully completed' for Schedule ID 96558696 (TaskUs Holdings, Inc. saliva); directs call to Scheduling Center 866-682-4166; schedule still set to expire Sep. 17, 2026, 11:49 a.m. Eastern; cc taops-bgvglobal@taskus.com",
+    "path": "/documents/matter-40/First Advantage Action Required - TaskUs Holdings Saliva Confirmation Failed (Sep 16 2026).pdf",
+    "what_it_proves": "First Advantage Action Required (Sep. 16, 2026, 3:05 p.m.) — saliva schedule confirmation failed for Schedule ID 96558696; the non-registry off-ramp that closed the TaskUs hire loop when the schedule expired Sep. 17 without collection",
+    "transcript_path": null
   }
 ]

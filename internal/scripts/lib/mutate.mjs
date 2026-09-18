@@ -20,6 +20,7 @@ import { keyForSha256 } from "./r2-client.mjs";
 import { DEAD_CLOCK_STATUSES } from "./upcoming-from-clocks.mjs";
 import { REPO_ROOT } from "./root.mjs";
 import { matterByNumber } from "./query.mjs";
+import { writeJsonAscii } from "./write-json-ascii.mjs";
 
 const SOURCE_TYPES = new Set(["portfolio", "courtlistener", "pacer", "email", "court_order", "manual"]);
 
@@ -32,8 +33,16 @@ export const WRITE_POLICY =
 const MONTH_ABBR = ["Jan.", "Feb.", "Mar.", "Apr.", "May", "Jun.", "Jul.", "Aug.", "Sep.", "Oct.", "Nov.", "Dec."];
 
 const readJSON = (rel) => JSON.parse(fs.readFileSync(path.join(REPO_ROOT, rel), "utf8"));
-const writeJSON = (rel, obj) =>
-  fs.writeFileSync(path.join(REPO_ROOT, rel), `${JSON.stringify(obj, null, 2)}\n`);
+const ASCII_JSON = new Set([
+  "internal/src/data/documents/manifest.json",
+  "internal/src/data/documents/registry.json",
+  "internal/src/data/timeline.json",
+]);
+const writeJSON = (rel, obj) => {
+  const abs = path.join(REPO_ROOT, rel);
+  if (ASCII_JSON.has(rel)) writeJsonAscii(abs, obj);
+  else fs.writeFileSync(abs, `${JSON.stringify(obj, null, 2)}\n`);
+};
 
 const fail = (message, detail) => {
   const error = new Error(message);
@@ -254,6 +263,24 @@ export function retireUpcomingEvent({ matter, date, reason } = {}) {
       matched[0].retired_reason = reason;
       writeJSON(clockRel, clocks);
     }
+    // Split matters keep a stale upcoming mirror in timeline.json for
+    // pre-split readers / validate leftover checks — clear it too.
+    const tl = readJSON("internal/src/data/timeline.json");
+    let tlChanged = false;
+    for (const e of tl) {
+      const mats = (e.matters ?? []).map(Number).filter((x) => Number.isFinite(x));
+      if (!mats.includes(n) || e.upcoming !== true) continue;
+      const eventText = String(e.event ?? e.title ?? "");
+      const clockTitle = String(orig.title ?? "");
+      const prefix = clockTitle.replace(/…$/, "").trim();
+      if (eventText === clockTitle || (prefix && eventText.startsWith(prefix))) {
+        e.upcoming = false;
+        e.retired_reason = reason;
+        e.retired_date = todayKey();
+        tlChanged = true;
+      }
+    }
+    if (tlChanged) writeJSON("internal/src/data/timeline.json", tl);
     bumpLastUpdated(n);
     return { ok: true, policy: WRITE_POLICY, retired: { matter: n, ts: orig.ts, title: orig.title, reason } };
   }
@@ -447,20 +474,34 @@ export function catalogDocument({
   } else {
     registry.documents.push({ path: docPath, label, ownerMatter: n });
   }
-  const rel = matterFileRel(n);
-  const data = readJSON(rel);
-  data.documents ??= [];
-  const matHit = data.documents.find((d) => d.path === docPath);
   const matEntry = { path: docPath, filed: !!filed };
   if (matterLabel !== undefined) matEntry.label = matterLabel;
-  if (matHit) Object.assign(matHit, matEntry);
-  else data.documents.push(matEntry);
-  data.last_updated = todayKey();
-  validateIdentityWrite(n, matterByNumber(n).layout, data);
-
-  writeJSON("internal/src/data/documents/manifest.json", manifest);
-  writeJSON("internal/src/data/documents/registry.json", registry);
-  writeJSON(rel, data);
+  const m = matterByNumber(n);
+  if (m.layout === "split") {
+    const docsRel = `${splitDirRel(n)}/documents.json`;
+    const docs = readJSON(docsRel);
+    if (!Array.isArray(docs)) fail(`matter ${n} documents.json must be an array`);
+    const matHit = docs.find((d) => d.path === docPath);
+    if (matHit) Object.assign(matHit, matEntry);
+    else docs.push(matEntry);
+    writeJSON("internal/src/data/documents/manifest.json", manifest);
+    writeJSON("internal/src/data/documents/registry.json", registry);
+    writeJSON(docsRel, docs);
+    bumpLastUpdated(n);
+    validateIdentityWrite(n, m.layout, readJSON(matterFileRel(n)));
+  } else {
+    const rel = matterFileRel(n);
+    const data = readJSON(rel);
+    data.documents ??= [];
+    const matHit = data.documents.find((d) => d.path === docPath);
+    if (matHit) Object.assign(matHit, matEntry);
+    else data.documents.push(matEntry);
+    data.last_updated = todayKey();
+    validateIdentityWrite(n, m.layout, data);
+    writeJSON("internal/src/data/documents/manifest.json", manifest);
+    writeJSON("internal/src/data/documents/registry.json", registry);
+    writeJSON(rel, data);
+  }
   return { ok: true, policy: WRITE_POLICY, r2Key, path: docPath };
 }
 

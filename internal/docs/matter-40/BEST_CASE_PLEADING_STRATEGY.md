@@ -1,9 +1,9 @@
 # Matter 40 — Best-Case Pleading and Discovery Strategy
 
-**Matter:** Brendan Ngwa Nforbi v. TaskUs, LLC  
-**Status:** Prospective / pre-dispute monitoring  
-**Prepared:** September 14, 2026  
-**Purpose:** Identify the strongest fact pattern, pleading architecture, and discovery posture if the pending TaskUs / First Advantage screening produces the same registry-source pattern already documented elsewhere in the portfolio.
+**Matter:** Brendan Ngwa Nforbi v. Uber Technologies, Inc. (TaskUs staffing)  
+**Status:** CLOSED — saliva non-registry off-ramp (Schedule ID 96558696 confirmation failed Sep. 16; expired Sep. 17 without collection). Do not plead this hire as a §290.46(j) failure-to-hire.  
+**Prepared:** September 14, 2026 (status true-up September 17, 2026)  
+**Purpose:** Historical — strongest fact pattern / pleading architecture *if* TaskUs / First Advantage had produced the same registry-source pattern. That contingency did not ripen on this hire.
 
 ---
 

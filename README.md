@@ -45,9 +45,9 @@ All current and future matters follow the [Stipulation Defense — Plaintiff-Fir
 | Representation | Pro Se / In Propria Persona |
 | Jurisdictions | USDC E.D. Cal., USDC N.D. Cal., San Joaquin Sup. Ct., Alameda Sup. Ct., Sacramento Sup. Ct., Santa Clara Sup. Ct. |
 | Total Matters | 40 |
-| Active / Open | 21 |
+| Active / Open | 20 |
 | — of which Settled | 1 (Matter 22 — Newanforbi v. Pilot Travel Centers LLC, Jul. 14, 2026) |
-| Dismissed / Closed / Abandoned | 19 |
+| Dismissed / Closed / Abandoned | 20 |
 | Aggregate Exposure (Conservative) | ~$1,486,000+ |
 | Aggregate Exposure (Moderate) | ~$3,612,000+ |
 | Aggregate Exposure (Aggressive) | ~$7,998,000+ |
@@ -55,7 +55,7 @@ All current and future matters follow the [Stipulation Defense — Plaintiff-Fir
 <!-- PORTFOLIO:OVERVIEW_TABLE:END -->
 
 <!-- PORTFOLIO:CLOSED_COUNT_NOTE:START -->
-*Of the 19 dismissed/closed/abandoned matters: 7 abandoned, 10 dismissed, 2 otherwise closed (structured `lifecycle` on each matter JSON). See [All Matters](#all-matters) below for the full disposition table. Pre-filing matters stay in the Active table.*
+*Of the 20 dismissed/closed/abandoned matters: 8 abandoned, 10 dismissed, 2 otherwise closed (structured `lifecycle` on each matter JSON). See [All Matters](#all-matters) below for the full disposition table. Pre-filing matters stay in the Active table.*
 <!-- PORTFOLIO:CLOSED_COUNT_NOTE:END -->
 
 > **Housing status:** Homeless since July 2, 2026 — a direct consequence of a retaliatory inter-county parole transfer (Stockton → Santa Clara) imposed immediately after filing Matter 15 (*Newanforbi v. CDCR, et al.*). The transfer caused loss of Stockton family housing; Matters 3, 9, and 19 are also potential retaliatory predicate acts.
@@ -142,7 +142,7 @@ Three equitable proceedings seeking court orders directing CDCR to act — no to
 
 ### Cluster 5 — Employment / Statutory Violation (Matters 22, 25, 26, 27, 29, 31, 36-40)
 
-Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibition on using sex offender registry information for employment purposes — against separate employers across a 30-month window, plus a sixth matter (31) asserting vendor-side FCRA/ICRAA liability against the background-check company that supplied two of those registry-flagged reports. Matters 36-39 are executed San Joaquin packets (AT&T, Home Depot, Swift, Best Buy) prepared for a September 8, 2026 walk-up and still unfiled as of September 7, 2026. Matter 40 (Uber Technologies, Inc. / TaskUs staffing) is a prospective monitoring file — Offer of Temporary Employment signed September 14, 2026 ($22/hour); same-day TA Ops hold of the September 23 start pending the First Advantage report (Order WPS-361214148; PRINSOS still running); MAA signed; no report viewable and no adverse action yet. (Matters 32 and 33 are CHP / DMV APS filings — see Cluster 1.)
+Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibition on using sex offender registry information for employment purposes — against separate employers across a 30-month window, plus a sixth matter (31) asserting vendor-side FCRA/ICRAA liability against the background-check company that supplied two of those registry-flagged reports. Matters 36-39 are executed San Joaquin packets (AT&T, Home Depot, Swift, Best Buy) prepared for a September 8, 2026 walk-up and still unfiled as of September 7, 2026. Matter 40 (Uber Technologies, Inc. / TaskUs staffing) is **CLOSED** — the TaskUs hire ended on the saliva non-registry off-ramp (FA Schedule ID 96558696 confirmation failed September 16; schedule expired September 17 without collection); no registry-based adverse action. (Matters 32 and 33 are CHP / DMV APS filings — see Cluster 1.)
 
 - **Matter 22** (Newanforbi v. Pilot Travel Centers LLC) — **SETTLED July 14, 2026** — San Joaquin Superior Court (STK-CV-UWT-2026-0007649). Wrongful termination; Defendant's own Post-Adverse Action Notice admitted registry as sole termination basis. Resolved pro se in under seven weeks from filing, before service was completed. First portfolio settlement. Closing out August 2026: CM-200 Notice of Settlement / CIV-110 request for dismissal mailed August 3, 2026; POS completed August 5, 2026.
 - **Matter 25** (Newanforbi v. Federal Express Corporation) — San Joaquin Superior Court (STK-CV-UWT-2026-0009118); PC §290.46(j) failure to hire; First Advantage BGC ran March 2025; final adverse action March 19, 2025; complaint filed July 15, 2026; assigned to Dept. 10B, Hon. Blanca Banuelos; CMC January 14, 2027. **SERVED July 24, 2026** on Ct Corporation System; responsive pleading due August 24, 2026.
@@ -150,7 +150,7 @@ Five matters asserting Penal Code § 290.46(j)(2)(E) — the categorical prohibi
 - **Matter 27** (Newanforbi v. Randstad US, LLC and RK Logistics Group, Inc.) — Alameda Superior Court, Case No. **26CV199902**, Hon. Thomas Weathers, Dept. 20, Rene C. Davidson Courthouse (reassigned August 7, 2026 from Hon. Karin Schwartz); PC §290.46(j) / FCRA / ICRAA / Tameny wrongful termination. Rehired July 7, 2026; InfoMart BGC shows Billing Code "RK LOGISTICS" with registry as the sole adverse flag; Randstad terminated July 15, 2026, two business days after the FCRA pre-adverse notice. Verified Complaint e-filed July 20, 2026. **On July 21, 2026, RK Logistics denied the $85,000 demand through counsel Garcia & Gurney, ALC**, arguing (1) Randstad was the employer and (2) the rejection was MVR-based — neither ground reaches Randstad, and the MVR defense cites a commercial Class A disqualification inapplicable to the Class C position. **SERVED July 30, 2026** on both defendants. Amended CCP §425.115 notices ($500,000 each) personally served August 21, 2026; POS-040s filed September 9, 2026. Randstad's responsive pleading is extended to September 15, 2026; Williams asked September 9 for a further extension and was declined. The August 19 / August 28 $55,000 / $85,000 demands were withdrawn by email September 9, 2026, 2:57 p.m. RK Logistics was granted to September 14, 2026 (single extension; no further).
 - **Matter 29** (Newanforbi v. Amazon.com Services, LLC and Accurate Background LLC) — **REMOVED Aug. 31, 2026** from Alameda Superior Court **26CV201554** (Hon. Jamilah Jefferson, Dept. 520) to USDC N.D. Cal. **3:26-cv-09249-ASK** (U.S. Magistrate Judge Ajay S. Krishnan). Federal-question removal under 28 U.S.C. §§ 1331, 1441, 1446 on the FCRA count; Accurate Background consented (Exhibit 11, Jasmine J. Stanzick / Seyfarth Shaw, dated Aug. 28). Counsel: Andrew P. Frederick (Morgan Lewis). **CASE FILED July 28, 2026**; **BOTH DEFENDANTS SERVED July 31, 2026**. FRCP 81(c) response due **September 8, 2026** (7 days after removal landed on Labor Day; FRCP 6(a)(1)(C) roll). State CMC Jan. 6, 2027 and the Aug. 31 state answer are moot; §425.115 notices are a dead letter federally. **Lerma posture (corrected):** in *Lerma v. Amazon.com Services, LLC et al.*, No. 8:22-cv-01727 (C.D. Cal.), the PC §290.46(j) claim was **dismissed at the pleading stage (May 26, 2023)**; the case later settled (Sept. 29, 2023) on a surviving Fair Chance Act claim against Amazon only — useful Fair Chance / notice precedent, not a settled Megan's Law judgment against these defendants.
 - **Matter 31** (Newanforbi v. First Advantage LLC) — anticipated San Joaquin Superior Court; FCRA §1681b(b) / FCRA §1681e(b) / ICRAA / Negligence Per Se / UCL §17200. **Identified July 30, 2026 via portfolio gap analysis**; not yet filed and no demand letter sent. First Advantage generated the registry-flagged reports underlying Matters 25 and 26 — additive vendor liability, not a duplicate of the employer-side claims.
-- **Matter 40** (Brendan Ngwa Nforbi v. Uber Technologies, Inc.) — **PENDING / pre-dispute monitoring.** Caption leads with Uber as end client / joint employer on the Uber AV Teammate campaign; TaskUs entities remain as the staffing / offer-letter employers. Offer of Temporary Employment signed September 14, 2026 (Teammate, $22/hour, San Jose). Same day, 11:24 a.m.: TA Ops US placed the September 23 start on a **standard administrative hold** pending the First Advantage background screening report — not a denial and not a pre-adverse notice. Order **WPS-361214148** is live (PRINSOS still In Progress; report not viewable). Saliva drug test still expires September 17. MAA signed. CA SOS: **TaskUs, LLC (200826810086) Converted Out**; USA LLC and Holdings Active via C T Corporation System. Uber CA SOS not yet pulled.
+- **Matter 40** (Brendan Ngwa Nforbi v. Uber Technologies, Inc.) — **CLOSED / abandoned.** Caption led with Uber as end client / joint employer on the Uber AV Teammate campaign; TaskUs entities were the staffing / offer-letter employers. Offer signed September 14, 2026; same-day TA Ops administrative hold of the September 23 start pending the First Advantage report. On September 16, First Advantage sent a Reminder and then an Action Required email — saliva Schedule ID **96558696** confirmation could not be completed. The schedule expired September 17 without collection (**non-registry off-ramp**). No FCRA pre-adverse, no adverse-action notice, no registry-based rescission. Do not plead this hire as a §290.46(j) failure-to-hire. CA SOS: **TaskUs, LLC (200826810086) Converted Out**; USA LLC and Holdings Active via C T Corporation System.
 
 ### Cluster 6 — Public Accommodation / Unruh (Matter 35)
 
@@ -176,7 +176,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | 24 | Newanforbi v. Serrato | 3:26-cv-05953-CRB | USDC N.D. Cal. (San Francisco Division) | Federal | MTD Nov. 20 10:00 a.m. Zoom (Breyer); CMC continued |
 | 25 | Newanforbi v. Federal Express Corporation | 2:26-cv-02881-DAD-SCR | USDC E.D. Cal. (Sacramento Div.) | Federal | Report mailed Sep. 14; Zoom Oct. 8 |
 | 26 | Newanforbi v. United Parcel Service, Inc. | 2:26-cv-02847-DAD-CKD | USDC E.D. Cal. (Sacramento Div.) | Federal | Dkt. 14 reply filed — hearing Oct. 7 |
-| 27 | Newanforbi v. Randstad, et al. | 26CV199902 | Alameda Sup. Ct. (Rene C. Davidson Courthouse) | State | Randstad prove-up ready — not RK |
+| 27 | Newanforbi v. Randstad, et al. | 26CV199902 | Alameda Sup. Ct. (Rene C. Davidson Courthouse) | State | Default vacated — $25k deal in principle |
 | 28 | Newanforbi v. Shannon Smith, LCSW, CEO, et al. | 3:26-cv-07504-LJC | USDC N.D. Cal. | Federal | M&C exhausted — answer Sep. 21 |
 | 29 | Newanforbi v. Amazon.com Services, LLC | 4:26-cv-09249-ASK | USDC N.D. Cal. (Oakland; formerly 3:26-cv-09249-ASK) | Federal | Plaintiff consent filed — both answers Sep. 22 |
 | 30 | Newanforbi v. Moua, et al. | TBD | USDC N.D. Cal. | Federal | Pre-filing — Moua v9 ready; GCA window open |
@@ -189,7 +189,6 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | 37 | Brendan Ngwa Nforbi v. Home Depot U.S.A., Inc. | TBD | USDC E.D. Cal. (Sep. 16 walk-up; unfiled) / San Joaquin Sup. Ct. (Sep. 8 packet LOCKED, unfiled) | Federal | EDCA walk-up Sep. 16 — unfiled |
 | 38 | Brendan Ngwa Nforbi v. Swift Transportation Co. of Arizona LLC | TBD | USDC E.D. Cal. (Sep. 16 walk-up; unfiled) / San Joaquin Sup. Ct. (Sep. 8 packet LOCKED, unfiled) | Federal | EDCA walk-up Sep. 16 — unfiled |
 | 39 | Brendan Ngwa Nforbi v. Best Buy Co., Inc. | TBD | USDC E.D. Cal. (Sep. 16 walk-up; unfiled) / San Joaquin Sup. Ct. (Sep. 8 packet LOCKED, unfiled) | Federal | EDCA walk-up Sep. 16 — unfiled |
-| 40 | Brendan Ngwa Nforbi v. Uber Technologies, Inc. | TBD | TBD (pre-dispute — offer received Sep. 14, 2026) | State | Pending — start on hold |
 <!-- PORTFOLIO:ACTIVE_MATTERS:END -->
 
 *Settled matters stay in the table above until dismissal is entered — a settlement resolves the merits, but the matter is still open on the docket. Their Status column reads "Settled" (see the Overview count above for which ones).*
@@ -220,6 +219,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | 18 | Newanforbi v. Barocio | 2:26-cv-00191-DJC-CSK (PC) | USDC E.D. Cal. | Dismissed with prejudice — Jun. 29, 2026 |
 | 21 | Newanforbi v. Rojo et al. | 2:26-cv-00193-DC-CKD | USDC E.D. Cal. | Dismissed with prejudice — Jun. 29, 2026 |
 | 23 | Newanforbi v. Macy's Inc. et al. | TBD | San Joaquin Sup. Ct. | Abandoned — no adverse action occurred |
+| 40 | Brendan Ngwa Nforbi v. Uber Technologies, Inc. | TBD | TBD (pre-dispute — offer received Sep. 14, 2026) | **ABANDONED** — Closed — saliva confirmation failed |
 <!-- PORTFOLIO:CLOSED_MATTERS:END -->
 
 [↑ Contents](#contents)
@@ -235,7 +235,6 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 |---|---|---|
 | Sep. 17, 2026 | 32 | FILE — signed 415.20(b) declaration + Exhibit A USPS receipt + POS in Nforbi v. Meza-Gonzalez et al. (4:26-cv-08271-ASK) after the September 17 postmark. San… |
 | Sep. 17, 2026 | 32 | MAIL — CCP § 415.20(b) first-class follow-up to Dkt. 16 / 16-1 for Santiago Meza-Gonzalez in Nforbi v. Meza-Gonzalez et al. (N.D. Cal. 4:26-cv-08271-ASK).… |
-| Sep. 17, 2026 | 40 | WATCH — First Advantage saliva-drug-test schedule for TaskUs Holdings, Inc. expires 11:49 a.m. Eastern (Schedule ID 96558696; LabCorp-Milpitas). A missed… |
 | Sep. 18, 2026 | 27 | EXPIRES — $25,000 final early global settlement demand in Newanforbi v. Randstad US, LLC et al. (26CV199902), sent Sept. 12, 2026, 8:00 a.m. Expires… |
 | Sep. 20, 2026 | 20 | AMENDMENT DUE (optional) — if Petitioner elects to amend Count 4, file and serve an amended Petition within 20 days of notice of entry of the August 29, 2026… |
 | Sep. 21, 2026 | 26 | 28 U.S.C. §1447(c) remand window closes (computed) — Newanforbi v. United Parcel Service, Inc., USDC E.D. Cal. No. 1:26-at-03195. Thirty days from the Aug. 20,… |
@@ -243,8 +242,8 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | Sep. 22, 2026 | 29 | Accurate Background LLC responsive pleading deadline (extended) — Newanforbi v. Amazon.com Services, LLC et al. (Matter 29, N.D. Cal. No. 4:26-cv-09249-ASK).… |
 | Sep. 22, 2026 | 29 | Amazon.com Services, LLC responsive pleading deadline (extended) — Newanforbi v. Amazon.com Services, LLC et al. (Matter 29, N.D. Cal. No. 4:26-cv-09249-ASK).… |
 | Sep. 22, 2026 | 33 | WATCH — Defendants' consent or declination to magistrate-judge jurisdiction due in Nforbi v. Candelaria et al. (3:26-cv-08272-LJC). Set by Dkt. 12 (Sep. 8,… |
-| Sep. 23, 2026 | 40 | WATCH — Anticipated TaskUs, LLC start date (Teammate; orientation 1631 N 1st Street, Suite 200, San Jose, Sep. 23–25; production depot 3030 Corvin Drive, Santa… |
 | Sep. 24, 2026 | 25 | WATCH — FedEx status reports in Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR). Dkt. 8: not later than 14 days before the Oct. 8… |
+| Sep. 25, 2026 | 27 | Randstad US, LLC to file and serve its response to the Complaint — per Stipulation to Set Aside and Vacate Entry of Default, entered Sep. 17, 2026 (Newanforbi v. Randstad US, LLC et al., 26CV199902) |
 | Sep. 26, 2026 | 38 | OUTER BOUND — CCP § 338(a) three-year statutory-liability clock on the Swift § 290.46(j) / ICRAA counts if accrual is the Sept. 26, 2023 pre-adverse email.… |
 | Sep. 30, 2026 | 29 | 28 U.S.C. §1447(c) remand window closes (computed) — Newanforbi v. Amazon.com Services, LLC et al., USDC N.D. Cal. No. 3:26-cv-09249-ASK. Thirty days from the… |
 | Oct. 1, 2026 | 19 | Habeas ruling calendar (computed) — Newanforbi v. Macomber (C2604791). CRC 4.551(a)(6)(B) runs 30 days from the September 1, 2026 in-person filing of the… |
@@ -261,7 +260,6 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | Oct. 23, 2026 | 20 | Continued hearing on the Dutra joinder and demurrer to the Petition for Writ of Mandate, Newanforbi v. California Highway Patrol, et al. (Matter 20) — Dept.… |
 | Oct. 25, 2026 | 35 | OPEN TASK — Serve Ross Stores, Inc. and Ross Dress for Less, Inc. in Matter 35 (26CV501995) with the Verified Complaint, issued Summons, ADR Information Sheet,… |
 | Oct. 28, 2026 | 20 | Case Management Conference (continued from Sep. 2, 2026) — Newanforbi v. CHP et al. (26CV191136), 4:00 p.m., Dept. 25, Rene C. Davidson Courthouse, Hon. Jenna… |
-| Oct. 31, 2026 | 27 | CRC 3.110(h) — obtain a default judgment as to Randstad US, LLC within 45 days after entry of default (entered Sep. 16, 2026), unless the court grants more… |
 | Nov. 1, 2026 | 1, 2, 32 | CCP §335.1 two-year statute of limitations (computed) backstop, running from the Nov. 1, 2024 incident. (1) Matter 1's Fourth Amendment §1983 claim (borrowed… |
 | Nov. 5, 2026 | 33 | Deadline to make initial disclosures (Fed. R. Civ. P. 26(a)(1)) and to file the Joint Case Management Statement (Standing Order for All Judges of the Northern… |
 | Nov. 10, 2026 | 29 | Deadline to file ADR Certification (ADR L.R. 3) and to meet and confer regarding initial disclosures, early settlement, ADR process selection, and a discovery… |

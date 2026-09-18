@@ -1,27 +1,27 @@
 {
-  "summary": "PC §290.46(j)(2)(E) (prospective — use of registry info in hiring); ICRAA §§1786.16, 1786.40 (prospective); FCRA §§1681b(b)(3), 1681d (prospective); UCL §17200 (prospective)",
+  "summary": "CLOSED without ripening — saliva non-registry off-ramp. Prospective PC §290.46(j)(2)(E), ICRAA, FCRA, and UCL counts never matured; no registry-based adverse action on this hire.",
   "counts": [
     {
       "id": 1,
-      "status": "live",
+      "status": "abandoned",
       "theory_ids": [],
       "title": "[PROSPECTIVE] Penal Code §290.46(j)(2)(E) — if Uber or TaskUs obtains or uses California sex offender registry information in the hiring decision"
     },
     {
       "id": 2,
-      "status": "live",
+      "status": "abandoned",
       "theory_ids": [],
       "title": "[PROSPECTIVE] ICRAA, Civ. Code §§1786.16 and 1786.40 — authorization/disclosure and adverse-action compliance on a consumer or investigative consumer report"
     },
     {
       "id": 3,
-      "status": "live",
+      "status": "abandoned",
       "theory_ids": [],
       "title": "[PROSPECTIVE] FCRA, 15 U.S.C. §§1681b(b)(3) and 1681d — pre-adverse/adverse notice duties if a consumer report drives the decision"
     },
     {
       "id": 4,
-      "status": "live",
+      "status": "abandoned",
       "theory_ids": [],
       "title": "[PROSPECTIVE] UCL, Bus. & Prof. Code §17200 — unlawful prong borrowing any of the above violations"
     }
