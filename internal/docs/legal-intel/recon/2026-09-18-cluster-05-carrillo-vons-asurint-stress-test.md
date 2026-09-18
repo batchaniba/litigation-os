@@ -155,6 +155,33 @@ Cluster lesson:
 
 ---
 
+
+# 5A. Stress test: "any other provision of law" / Labor Code § 432.7 is not a universal escape hatch
+
+Current § 290.46(j)(2) permits employment-related use if authorized by paragraph (1) **or any other provision of law**, and § 290.46(j)(3) specifically says the section does not affect authorized access to or use of information pursuant to listed statutes including Labor Code § 432.7.
+
+That cross-reference should not be read as a blanket rule that every employer may use Megan's Law information merely because § 432.7 allows consideration of some convictions.
+
+Current Labor Code § 432.7 is primarily a **restriction** on employer use of certain arrest / diversion / sealed or dismissed records. Its relevant exceptions are narrower:
+
+- subdivision (m) permits inquiry concerning a **particular conviction** where federal/state law requires the employer to obtain that conviction information, requires a firearm, prohibits someone with that conviction from the position, or prohibits the employer from hiring them;
+- subdivision (n) preserves compliance where the employer is actually **required by law** to conduct criminal background checks or restrict employment based on criminal history.
+
+Therefore, if a Cluster 5 defendant invokes § 432.7, force it to identify the external law that creates the requirement / prohibition for the actual job. A company background-check policy is not itself the external law.
+
+### Transportation matters
+
+Current FMCSA materials require motor carriers to investigate driving records, safety-performance history, and—where applicable—drug/alcohol Clearinghouse status. FMCSA guidance also states that a felony conviction does **not necessarily disqualify** a CDL holder from CMV operation unless the governing disqualification rules apply. Nothing located in this pass creates a general federal motor-carrier requirement to query California's sex-offender registry for ordinary freight-driver employment.
+
+That matters to UPS / FedEx / Swift / RK:
+
+- a required MVR, prior-employer safety inquiry, or Clearinghouse query can be lawful and mandatory;
+- it does not automatically authorize use of Megan's Law website-derived information;
+- Defendants should identify the precise statute/regulation if they contend the particular conviction or registration status legally disqualified Plaintiff.
+
+By contrast, *Pastrana* involved a genuinely specific authorization: a public utility and a statute expressly permitting criminal-history access for employees who enter private residences.
+
+
 # 6. Matter-by-matter "person at risk" stress test
 
 ## Matter 26 — UPS
