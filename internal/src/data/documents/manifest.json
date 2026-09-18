@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1293,
-  "totalBytes": 904420007,
+  "fileCount": 1305,
+  "totalBytes": 906480632,
   "files": [
     {
       "path": "/documents/README.md",
@@ -6467,6 +6467,66 @@
       "path": "/documents/opinions/Newanforbi v Smith - USDC NDCal - Order Directing Service Aug 26 2026.pdf",
       "size": 134726,
       "sha256": "79355d28b4741e9e26e2f3d5b89bf37ef4f3af1bbfece3567e83a91778cc7488"
+    },
+    {
+      "path": "/documents/matter-40/First Advantage Reminder - TaskUs Holdings Saliva Drug Test (Sep 16 2026).pdf",
+      "size": 48187,
+      "sha256": "74f3085baf78b4edc63101190b972a14983defac16c16a5b88791088577c0261"
+    },
+    {
+      "path": "/documents/matter-40/First Advantage Action Required - TaskUs Holdings Saliva Confirmation Failed (Sep 16 2026).pdf",
+      "size": 42641,
+      "sha256": "e0402438fc3c37dc258906fd95c1cf0ff8df4f83222900db40597d3c85cf1bc1"
+    },
+    {
+      "path": "/documents/matter-40/First Advantage Consumer Disclosure - TaskUs Holdings Order WPS-361214148 (Sep 15 2026).pdf",
+      "size": 211468,
+      "sha256": "2172d145f11f9d8ccb984718d3deebc1b19973878f04fcf8f22b85ccb3b552fc"
+    },
+    {
+      "path": "/documents/matter-40/Adobe Sign - Signature Requested by John Malones - Uber AV Offer (Sep 14 2026).pdf",
+      "size": 45634,
+      "sha256": "b479673abb73920dcd2505dfa9fe4a109023b68c7f696f8bedaa9281fe38a8a9"
+    },
+    {
+      "path": "/documents/matter-40/Adobe Sign - You Signed Offer - Reply-To John Malones (Sep 14 2026).pdf",
+      "size": 50168,
+      "sha256": "05ab2ea15aa776f53bc32699d5704ab6086f68368a2cc797795cf4f80d04256d"
+    },
+    {
+      "path": "/documents/matter-40/TaskUs TA Ops - Action Required Today Onboarding Tasks (Sep 14 2026).pdf",
+      "size": 109167,
+      "sha256": "983c3773b49396bb6508ff6a9dd4db63931d5f50ad6e2a573e2664ae63677664"
+    },
+    {
+      "path": "/documents/matter-40/TaskUs TA Ops - Start Date Administrative Hold with Cc Liz Ramirez (Sep 14 2026).pdf",
+      "size": 81180,
+      "sha256": "5d0966b49eef1a19e036d32c53018d608b3727efbe777d05309f2b23b831558c"
+    },
+    {
+      "path": "/documents/matter-40/Offer of Temporary Employment - TaskUs LLC - Adobe Signed (Sep 14 2026).pdf",
+      "size": 577746,
+      "sha256": "10b73b1d03062b7c20a16d82c1a66e41345dd8565f3ba5623787a812ae722a81"
+    },
+    {
+      "path": "/documents/matter-40/Complaint Review Draft - Ngwa Nforbi v Uber Technologies Inc (N.D. Cal. San Jose) (Sep 18 2026).pdf",
+      "size": 71789,
+      "sha256": "8a2f0963f7073e0ecf8ff6a4f9b53f370b0e68a1dd7721815e39efaf6e52045a"
+    },
+    {
+      "path": "/documents/matter-40/Complaint - Ngwa Nforbi v Uber Technologies Inc (N.D. Cal. San Jose) (Sep 18 2026).pdf",
+      "size": 261153,
+      "sha256": "0f9058a7d5c5f18cd29fa18329c503bb210439465a9e8fcf6852696667352c7b"
+    },
+    {
+      "path": "/documents/matter-40/Complaint - Ngwa Nforbi v Uber Technologies Inc (N.D. Cal.) (Sep 18 2026).pdf",
+      "size": 260022,
+      "sha256": "bd8e7584ddd84a2b153091950751aba6ee96cc36bcd8eb35b6dd83fca6312abb"
+    },
+    {
+      "path": "/documents/matter-40/Complaint - Ngwa Nforbi v Uber Technologies Inc (N.D. Cal.) (Sep 24 2026).pdf",
+      "size": 301470,
+      "sha256": "f44bc13f0697a4b95f2d7a1461ede6fd82af7b101ef013e349a59937508d9814"
     }
   ]
 }

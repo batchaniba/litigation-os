@@ -1,9 +1,9 @@
 # Matter 40 — Best-Case Pleading and Discovery Strategy
 
-**Matter:** Brendan Ngwa Nforbi v. TaskUs, LLC  
-**Status:** Prospective / pre-dispute monitoring  
-**Prepared:** September 14, 2026  
-**Purpose:** Identify the strongest fact pattern, pleading architecture, and discovery posture if the pending TaskUs / First Advantage screening produces the same registry-source pattern already documented elsewhere in the portfolio.
+**Matter:** Brendan Ngwa Nforbi v. Uber Technologies, Inc. (TaskUs staffing)  
+**Status:** Operative filing draft is N.D. Cal. San Jose — `ND_CAL_COMPLAINT_REVIEW_DRAFT.md` (FCRA lead + §290.46 use; Sep. 18, 2026). San Joaquin `VERIFIED_COMPLAINT_REVIEW_DRAFT.md` kept as alternate only.  
+**Prepared:** September 14, 2026 (status true-up September 18, 2026)  
+**Purpose:** Strategy memo for the §290.46 / FCRA package now reflected in the N.D. Cal. draft. Registry-source contingency ripened on Sep. 15 via Order WPS-361214148 (`SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY`).
 
 ---
 

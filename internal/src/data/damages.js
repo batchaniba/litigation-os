@@ -1002,9 +1002,9 @@ const matter_damages_raw = [
   },
   {
     number: 40,
-    claims: "PC §290.46(j) / ICRAA / FCRA / UCL — Uber Technologies, Inc. (lead) / TaskUs staffing (prospective)",
-    risk: "Pre-dispute monitoring file. Caption: Brendan Ngwa Nforbi v. Uber Technologies, Inc. TaskUs, LLC offer signed Sep. 14, 2026; same-day TA Ops hold of the Sep. 23 start pending the FA report — not a denial, not FCRA pre-adverse. Order WPS-361214148 in progress (PRINSOS still running). Saliva still expires Sep. 17. Damages $0 until adverse action.",
-    settlement_note: "No valuation — no adverse action. Prospective statutory framework only. Do not treat the MAA as a no-arbitration file.",
+    claims: "FCRA §1681b(b)(3) (lead) — N.D. Cal. San Jose; PC §290.46(j) use — Uber joint employer + TaskUs; ICRAA / UCL / Tameny-style withholding",
+    risk: "N.D. Cal. draft: Sep. 14 hold pending FA report + Sep. 15 WPS-361214148 CA-registry source. Strong on source/use vs TaskUs; thinner on Uber joint employer and saliva causation. Expect MAA compel before merits MTD. Valuation from $22/hr assignment window + statutory remedies.",
+    settlement_note: "No demand sent yet. N.D. Cal. San Jose draft on disk; not filed.",
     conservative: 0,
     moderate: 0,
     aggressive: 0,

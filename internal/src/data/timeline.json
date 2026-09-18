@@ -10290,12 +10290,14 @@
       40
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "you",
     "source_type": "manual",
     "confidence": "high",
     "verified_at": "2026-09-14",
-    "source": "/documents/matter-40/First Advantage Screening Notification - TaskUs Holdings Saliva Drug Test (Sep 14 2026).pdf"
+    "source": "/documents/matter-40/First Advantage Screening Notification - TaskUs Holdings Saliva Drug Test (Sep 14 2026).pdf",
+    "retired_reason": "TaskUs loop closed. FA Schedule ID 96558696 confirmation failed Sep. 16 (Action Required email); schedule expired Sep. 17 without collection \u2014 non-registry off-ramp. No registry-based adverse action on this hire.",
+    "retired_date": "2026-09-17"
   },
   {
     "date": "Sep. 17, 2026",
@@ -10318,12 +10320,14 @@
       40
     ],
     "type": "deadline",
-    "upcoming": true,
+    "upcoming": false,
     "actor": "you",
     "source_type": "manual",
     "confidence": "high",
     "verified_at": "2026-09-14",
-    "source": "/documents/matter-40/Offer of Temporary Employment - TaskUs LLC (Sep 14 2026).pdf"
+    "source": "/documents/matter-40/Offer of Temporary Employment - TaskUs LLC (Sep 14 2026).pdf",
+    "retired_reason": "TaskUs loop closed. Sep. 23 start was already on TA Ops admin hold; saliva confirmation failed Sep. 16 and the schedule expired without collection. Start date is not operative.",
+    "retired_date": "2026-09-17"
   },
   {
     "date": "Sep. 14, 2026",

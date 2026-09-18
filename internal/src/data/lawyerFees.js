@@ -673,20 +673,20 @@ const lawyer_fees_raw = [
   },
   {
     number: 40,
-    type: "State — prospective employment monitoring (Uber Technologies, Inc. lead; TaskUs staffing; pre-dispute)",
-    documentsCount: 15,
-    totalPagesReal: 66,
+    type: "Federal — N.D. Cal. San Jose complaint draft (Uber Technologies, Inc. lead; TaskUs staffing; FCRA + §290.46 use)",
+    documentsCount: 18,
+    totalPagesReal: 75,
     hours: {
-      low: 1,
-      high: 2.5,
-      mid: 1.75
+      low: 1.25,
+      high: 3,
+      mid: 2
     },
     cost: {
-      low: 280,
-      high: 700,
-      mid: 490
+      low: 350,
+      high: 840,
+      mid: 560
     },
-    notes: "Sep. 14, 2026: 10-page TaskUs, LLC offer + Workday stub + 35-page signatory packet + welcome graphic + 3 WorkDay emails + FA Profile Advantage invite + FA saliva-drug-test notice + 2 Profile Advantage portal screenshots (Order WPS-361214148; PRINSOS still In Progress) + 3 CA SOS bizfile printouts + TA Ops start-date administrative hold (11:24 a.m.; not a denial). Same CRA as Matters 25/26. Report not yet viewable — monitoring file.",
+    notes: "N.D. Cal. San Jose draft on disk (FCRA lead + §290.46 use). FA Order WPS-361214148 consumer disclosure (Sep. 15, 6 pp) shows SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY to TaskUs Holdings — Matter 31 third furnish. Sep. 14 packet + Sep. 16 Reminder/Action Required. Hire closed on saliva off-ramp; no TaskUs adverse-action letter yet.",
   }
 ];
 
@@ -700,7 +700,7 @@ export const lawyer_fees_summary = {
   methodology: {
     blendedHourlyRate: 280,
     rateRange: { seniorPartner: [350, 450], midAssociate: [250, 350], paralegal: [150, 200] },
-    note: "Every PDF in public/documents/matter-XX/ was measured with pdfinfo for real page counts (poppler-utils), then classified by document type (complaint, motion/opposition/reply, discovery, writ/habeas, declaration, administrative, evidence) and priced using the hours-per-page/per-document conversions in docs/LAWYER_FEES_CALCULATOR.md. Opposing counsel's filings are billed only at a light review rate, never at drafting rate. Duplicate packs (opposition-pack-10, conformed copies, from-* stores) are billed incrementally. Matters with no uploaded PDFs are estimated conservatively from matter JSON status text. Aug. 28, 2026 true-up: Matter 20 Whitman tentative + reply review; Matter 24 Serrato Opp v4 / related-case motions / MTD review; Matter 26 UPS ECF 7 review + 17-page opposition; Matter 28 Dkt. 11 + QI research (HOPE discovery stays on Matter 5); Matter 32 process-server bundle; Matter 35 Ross CT / summons-first service packets. Sep. 5, 2026: Matter 36 adds the AT&T hiring record, formal offer, findings memorandum, and 32-page verified-complaint review draft. Sep. 6, 2026: Matters 36–39 true-up to executed San Joaquin packets (CM-010, FW-001, FW-003, SUM-100, signed complaints, walk-up assemblies). Sep. 14, 2026: Matter 40 — TaskUs, LLC offer + FA Order WPS-361214148 + CA SOS + TA Ops start-date hold (15 files / 66 pages).",
+    note: "Every PDF in public/documents/matter-XX/ was measured with pdfinfo for real page counts (poppler-utils), then classified by document type (complaint, motion/opposition/reply, discovery, writ/habeas, declaration, administrative, evidence) and priced using the hours-per-page/per-document conversions in docs/LAWYER_FEES_CALCULATOR.md. Opposing counsel's filings are billed only at a light review rate, never at drafting rate. Duplicate packs (opposition-pack-10, conformed copies, from-* stores) are billed incrementally. Matters with no uploaded PDFs are estimated conservatively from matter JSON status text. Aug. 28, 2026 true-up: Matter 20 Whitman tentative + reply review; Matter 24 Serrato Opp v4 / related-case motions / MTD review; Matter 26 UPS ECF 7 review + 17-page opposition; Matter 28 Dkt. 11 + QI research (HOPE discovery stays on Matter 5); Matter 32 process-server bundle; Matter 35 Ross CT / summons-first service packets. Sep. 5, 2026: Matter 36 adds the AT&T hiring record, formal offer, findings memorandum, and 32-page verified-complaint review draft. Sep. 6, 2026: Matters 36–39 true-up to executed San Joaquin packets (CM-010, FW-001, FW-003, SUM-100, signed complaints, walk-up assemblies). Sep. 14, 2026: Matter 40 — TaskUs, LLC offer + FA Order WPS-361214148 + CA SOS + TA Ops start-date hold. Sep. 17, 2026: Matter 40 CLOSED hire on saliva off-ramp; FA Order WPS-361214148 consumer disclosure documents CA-registry source to TaskUs Holdings (18 files / 75 pages).",
   },
   totalEstimatedHours: { low: 3097.8, high: 5205.2, mid: 4144 },
   totalEstimatedCost: { low: 867384, high: 1457456, mid: 1160320 },

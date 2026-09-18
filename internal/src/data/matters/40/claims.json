@@ -1,29 +1,45 @@
 {
-  "summary": "PC §290.46(j)(2)(E) (prospective — use of registry info in hiring); ICRAA §§1786.16, 1786.40 (prospective); FCRA §§1681b(b)(3), 1681d (prospective); UCL §17200 (prospective)",
+  "summary": "Premier Sep. 24: FCRA §1681b(b)(2)(A) + ICRAA §1786.16 procurement; FCRA §1681b(b)(3) post-report; PC §290.46(j) actual use; ICRAA §1786.40 — Uber + TaskUs Holdings + TaskUs USA (no UCL/Tameny; no exhibits)",
   "counts": [
     {
       "id": 1,
       "status": "live",
       "theory_ids": [],
-      "title": "[PROSPECTIVE] Penal Code §290.46(j)(2)(E) — if Uber or TaskUs obtains or uses California sex offender registry information in the hiring decision"
+      "title": "FCRA 15 U.S.C. §1681b(b)(2)(A) — employment consumer-report procurement without compliant standalone disclosure"
     },
     {
       "id": 2,
       "status": "live",
       "theory_ids": [],
-      "title": "[PROSPECTIVE] ICRAA, Civ. Code §§1786.16 and 1786.40 — authorization/disclosure and adverse-action compliance on a consumer or investigative consumer report"
+      "title": "ICRAA Civ. Code §§1786.16, 1786.50 — defective/missing pre-procurement investigative-report disclosure (§1786.2(c))"
     },
     {
       "id": 3,
       "status": "live",
       "theory_ids": [],
-      "title": "[PROSPECTIVE] FCRA, 15 U.S.C. §§1681b(b)(3) and 1681d — pre-adverse/adverse notice duties if a consumer report drives the decision"
+      "title": "FCRA 15 U.S.C. §1681b(b)(3)(A) — post-report adverse action (hold maintained; Sep. 23 start never restored) without pre-adverse copy / Summary of Rights"
     },
     {
       "id": 4,
       "status": "live",
       "theory_ids": [],
-      "title": "[PROSPECTIVE] UCL, Bus. & Prof. Code §17200 — unlawful prong borrowing any of the above violations"
+      "title": "Penal Code §290.46(j)(2)(E), (j)(4)(A) — actual employment use of California-registry-sourced information (SOURCE OF RECORD known fact; not (j)(1))"
+    },
+    {
+      "id": 5,
+      "status": "live",
+      "theory_ids": [],
+      "title": "ICRAA Civ. Code §§1786.40, 1786.50 — denial-time advice after post-report withholding"
+    }
+  ],
+  "dropped": [
+    {
+      "title": "UCL, Bus. & Prof. Code §17200",
+      "reason": "Low incremental value; expected wages are a poor restitution fit and the equitable claim adds an avoidable Rule 12 target."
+    },
+    {
+      "title": "Wrongful refusal/failure to hire in violation of public policy (Tameny)",
+      "reason": "Williams v. Sacramento River Cats / Haney require a preexisting employment relationship; zero incremental remedy beyond §290.46(j)(4)(A)."
     }
   ]
 }
