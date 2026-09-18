@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Extract signature 4b (CIV-100 p.2, item 7, 15 June 2026) to an archive PNG.
 
-This is historical. The canonical stamp is the August 26, 2026 scan crop at
-internal/assets/signature/brendan-newanforbi-signature.png, produced by
-extract-signature-scan.py. Running this script must not overwrite that file.
+This is historical. The canonical stamp is the photographed loops mark at
+internal/assets/signature/brendan-newanforbi-signature.png (rebuild with
+process-signature-photo.py). Running this script must not overwrite that file.
 
 Source: matter-12/014a CIV100 Request for Entry of Default or Default
 Judgment.pdf, page 2, native 1-bit scan (1701×2215). The mark sits on
