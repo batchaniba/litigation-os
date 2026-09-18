@@ -7,8 +7,9 @@ Source of truth:
 
 Strips the internal MTD memo / supporting-docs notes. Plaintiff signs.
 No REVIEW DRAFT banner on the caption. No phone/email on the close
-(caption address block matches the markdown draft). No division line —
-the Northern District designates division. No exhibits attached.
+(caption address block matches the markdown draft). SAN JOSE DIVISION
+on the page-one court header only (not in the caption box). No exhibits
+attached.
 
     python3 internal/scripts/matter40-ndcal-complaint.py
 """
@@ -46,6 +47,7 @@ SIG_LINE = "___________________________________"
 
 COURT_LINE1 = "UNITED STATES DISTRICT COURT"
 COURT_LINE2 = "NORTHERN DISTRICT OF CALIFORNIA"
+COURT_LINE3 = "SAN JOSE DIVISION"
 
 PLAINTIFF_BLOCK = [
     ("BRENDAN NGWA NFORBI", "Times-Bold", 12),
@@ -258,6 +260,7 @@ def main() -> None:
 
     d.write_line(COURT_LINE1, bold=True, center=True)
     d.write_line(COURT_LINE2, bold=True, center=True)
+    d.write_line(COURT_LINE3, bold=True, center=True)
     d.blank_line()
 
     d.draw_caption_block(
@@ -296,7 +299,7 @@ def main() -> None:
     if not Path(SIGNATURE_PATH).is_file():
         raise SystemExit(f"Missing house signature: {SIGNATURE_PATH}")
 
-    d.ensure_space(10)
+    d.ensure_space(8)
     d.write_line(f"Dated: {EXEC_DATE}")
     d.blank_line()
     d.write_respectfully_submitted()
@@ -307,6 +310,7 @@ def main() -> None:
         SIG_LINE,
         width=220,
         x_offset=15,
+        above_lines=1,
     )
     d.write_line(SIG_LINE, right=True, right_margin_offset=20)
     d.write_line("BRENDAN NGWA NFORBI", bold=True, right=True, right_margin_offset=20)
