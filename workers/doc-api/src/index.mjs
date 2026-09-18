@@ -152,10 +152,18 @@ async function putDoc(request, env, sha, url, access) {
     return json(e.body, e.status);
   }
   try {
+    // path is required: it feeds the NOT NULL documents.path column in D1.
+    // Validate before reading the body or writing any bytes to R2 so a
+    // missing path can never leave orphaned objects behind a 500.
+    const pathParam = url.searchParams.get("path");
+    if (!pathParam)
+      return json(
+        { error: "path query param is required (D1 documents.path is NOT NULL)" },
+        400,
+      );
     const bytes = await request.arrayBuffer();
     const verify = url.searchParams.get("verify") !== "false";
     const matterParam = url.searchParams.get("matter");
-    const pathParam = url.searchParams.get("path");
     const put = await putDocBytes(env, sha, bytes, { verify });
     const row = await upsertDocumentRow(env, {
       sha256: put.sha256,
