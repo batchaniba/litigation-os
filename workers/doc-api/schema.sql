@@ -19,8 +19,13 @@ CREATE TABLE IF NOT EXISTS clocks (
   matter_number INTEGER NOT NULL,
   title         TEXT,
   date          TEXT,     -- YYYY-MM-DD
-  kind          TEXT      -- deadline | hearing | expiry | conference | ...
+  kind          TEXT,     -- deadline | hearing | expiry | conference | ...
+  status        TEXT      -- open | satisfied | retired | cancelled | vacated
 );
+-- Existing D1 keeps working: queries fall back when the column is absent.
+-- To backfill it: wrangler d1 execute litigation-portfolio --remote \
+--   --command "ALTER TABLE clocks ADD COLUMN status TEXT"   (ignore duplicate-column)
+-- then re-run the seed so every clock row carries its repo status.
 CREATE INDEX IF NOT EXISTS idx_clocks_date   ON clocks(date);
 CREATE INDEX IF NOT EXISTS idx_clocks_matter ON clocks(matter_number);
 
@@ -31,6 +36,17 @@ CREATE TABLE IF NOT EXISTS documents (
   size          INTEGER
 );
 CREATE INDEX IF NOT EXISTS idx_documents_matter ON documents(matter_number);
+
+-- Path is the identity. Same sha256 may appear on a slug and a court path,
+-- so path lookups get their own table (GET /documents/<path> reads it).
+CREATE TABLE IF NOT EXISTS documents_by_path (
+  path          TEXT PRIMARY KEY,
+  sha256        TEXT NOT NULL,
+  matter_number INTEGER,
+  size          INTEGER
+);
+CREATE INDEX IF NOT EXISTS idx_documents_by_path_sha ON documents_by_path(sha256);
+CREATE INDEX IF NOT EXISTS idx_documents_by_path_matter ON documents_by_path(matter_number);
 
 -- Append-only trail of every mutating operation (writes.mjs recordAudit).
 -- actor = the API key name that authorized the write; ok = 1 success, 0 error.

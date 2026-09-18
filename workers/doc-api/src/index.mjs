@@ -3,6 +3,7 @@
 //   GET /health            -> { ok, bucket }
 //   GET  /doc/<sha256>      -> R2 PDF bytes (application/pdf, ETag passthrough)
 //   GET  /doc/<sha256>/meta -> { sha256, size, etag } from R2 HEAD
+//   GET  /documents/<path> -> path index (or D1 documents_by_path) -> PDF bytes
 //   PUT  /doc/<sha256>      -> upload bytes (rw) + upsert manifest row
 //   DELETE /doc/<sha256>?confirm=1 -> remove manifest row + R2 bytes (rw)
 //   GET /matters           -> D1 matter rows (mirrors `npm run q listMatters`)
@@ -34,6 +35,7 @@ import {
   headDocObject,
   listMattersData,
   upcomingData,
+  sha256ForDocumentPath,
 } from "./data.mjs";
 import { handleMcp } from "./mcp.mjs";
 import { resolveAccess, requireWrite } from "./auth.mjs";
@@ -44,6 +46,7 @@ import {
   recordAudit,
   upsertDocumentRow,
 } from "./writes.mjs";
+import { contentDispositionForPath } from "./documents.mjs";
 
 const BUCKET = "litigation-documents";
 
@@ -67,14 +70,34 @@ const route = (op) => async (...args) => {
 
 // --- R2 routes --------------------------------------------------------------
 
-async function serveDoc(env, sha) {
+const HASH_CACHE = "public, max-age=31536000, immutable";
+const PATH_CACHE = "public, max-age=60";
+
+// Hash-addressed bytes are immutable; path-addressed bytes are revalidatable
+// (the same court path can be re-filed under a new sha256).
+async function serveDoc(env, sha, { cacheControl = HASH_CACHE, disposition } = {}) {
   try {
     const { obj } = await getDocObject(env, sha);
     const headers = new Headers();
     headers.set("content-type", "application/pdf");
+    headers.set("cache-control", cacheControl);
+    if (disposition) headers.set("content-disposition", disposition);
     if (obj.httpEtag) headers.set("etag", obj.httpEtag);
     if (obj.size != null) headers.set("content-length", String(obj.size));
     return new Response(obj.body, { headers });
+  } catch (e) {
+    if (e instanceof HttpError) return json(e.body, e.status);
+    throw e;
+  }
+}
+
+async function serveDocumentsPath(env, pathname) {
+  try {
+    const { sha256 } = await sha256ForDocumentPath(env, pathname);
+    return serveDoc(env, sha256, {
+      cacheControl: PATH_CACHE,
+      disposition: contentDispositionForPath(pathname),
+    });
   } catch (e) {
     if (e instanceof HttpError) return json(e.body, e.status);
     throw e;
@@ -233,6 +256,9 @@ export default {
     if ((m = path.match(/^\/doc\/([^/]+)\/meta$/))) return docMeta(env, m[1]);
     if ((m = path.match(/^\/doc\/([^/]+)$/))) return serveDoc(env, m[1]);
     if (path.startsWith("/doc/")) return json({ error: "sha256 must be 64 hex chars" }, 400);
+
+    if (path === "/documents" || path.startsWith("/documents/"))
+      return serveDocumentsPath(env, path);
 
     if (path === "/matters") return listMatters(env);
     if ((m = path.match(/^\/matters\/(\d{1,2})$/))) return getMatter(env, Number(m[1]));

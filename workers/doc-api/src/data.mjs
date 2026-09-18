@@ -1,3 +1,5 @@
+import { documentsKeyFromUrl, sha256ForPath } from "./documents.mjs";
+
 // Shared data layer for the litigation-doc-api Worker: R2 + D1 access and
 // the portfolio query operations. Used by the REST routes (index.mjs) and
 // the MCP endpoint (mcp.mjs).
@@ -38,6 +40,14 @@ export function parseDays(value, fallback = 14) {
   if (!Number.isFinite(days)) days = fallback;
   return Math.min(90, Math.max(1, Math.round(days)));
 }
+
+// Clock statuses that no longer count as "upcoming". The D1 clocks table may
+// predate the status column — every query that filters on it falls back to
+// the unfiltered form when the column is absent.
+const CLOSED_CLOCK_SQL = "('satisfied','retired','cancelled','canceled','vacated')";
+const CLOSED_CLOCK = new Set(["satisfied", "retired", "cancelled", "canceled", "vacated"]);
+const isClosedStatus = (s) => CLOSED_CLOCK.has(String(s ?? "open").toLowerCase());
+const noStatusColumn = (e) => /no such column/i.test(e?.message ?? "");
 
 function cleanSha(sha) {
   const c = String(sha ?? "").toLowerCase();
@@ -171,12 +181,23 @@ export async function getMatterData(env, n) {
   if (!rows.length) throw new HttpError(404, { error: "not_found", matter: n });
   const r = rows[0];
   const today = utcToday();
-  const clocks =
-    (await dbAll(
-      env,
-      `SELECT title, date, kind FROM clocks WHERE matter_number = ? ORDER BY date`,
-      [n],
-    )) ?? [];
+  let clocks;
+  try {
+    clocks =
+      (await dbAll(
+        env,
+        `SELECT title, date, kind, status FROM clocks WHERE matter_number = ? ORDER BY date`,
+        [n],
+      )) ?? [];
+  } catch (e) {
+    if (!noStatusColumn(e)) throw e;
+    clocks =
+      (await dbAll(
+        env,
+        `SELECT title, date, kind FROM clocks WHERE matter_number = ? ORDER BY date`,
+        [n],
+      )) ?? [];
+  }
   const documents =
     (await dbAll(
       env,
@@ -189,7 +210,8 @@ export async function getMatterData(env, n) {
       title: c.title,
       date: c.date,
       kind: c.kind,
-      overdue: !!c.date && c.date < today,
+      status: c.status ?? null,
+      overdue: !!c.date && c.date < today && !isClosedStatus(c.status),
     })),
     documents,
     document_count: documents.length,
@@ -202,16 +224,30 @@ export async function upcomingData(env, days) {
   const window = parseDays(days);
   const today = utcToday();
   const horizon = addDays(today, window);
-  const rows = needDb(
-    await dbAll(
+  let rows;
+  try {
+    rows = await dbAll(
+      env,
+      `SELECT c.matter_number AS number, c.title, c.date, c.kind,
+              m.caption, m.lifecycle
+       FROM clocks c JOIN matters m ON m.number = c.matter_number
+       WHERE c.date <= ?
+         AND lower(ifnull(c.status, 'open')) NOT IN ${CLOSED_CLOCK_SQL}
+       ORDER BY c.date, c.matter_number`,
+      [horizon],
+    );
+  } catch (e) {
+    if (!noStatusColumn(e)) throw e;
+    rows = await dbAll(
       env,
       `SELECT c.matter_number AS number, c.title, c.date, c.kind,
               m.caption, m.lifecycle
        FROM clocks c JOIN matters m ON m.number = c.matter_number
        WHERE c.date <= ? ORDER BY c.date, c.matter_number`,
       [horizon],
-    ),
-  );
+    );
+  }
+  rows = needDb(rows);
   return rows.map((r) => ({
     number: r.number,
     caption: r.caption,
@@ -221,6 +257,35 @@ export async function upcomingData(env, days) {
     kind: r.kind,
     title: r.title,
   }));
+}
+
+export const PATH_INDEX_KEY = "index/path-to-sha256.json";
+
+// Path -> sha256 for GET /documents/<path>: the R2 path index first, then the
+// D1 documents_by_path table (path is the identity — one sha256 can live
+// under many court paths), then the legacy sha256-PK documents table.
+// Throws 404 { error: "not_found", path } when nothing has the path.
+export async function sha256ForDocumentPath(env, pathname) {
+  const docPath = documentsKeyFromUrl(pathname);
+  if (r2Ready(env)) {
+    try {
+      const obj = await env.DOCS.get(PATH_INDEX_KEY);
+      const sha = sha256ForPath(obj ? await obj.json().catch(() => null) : null, pathname);
+      if (sha) return { sha256: sha, path: docPath };
+    } catch {
+      // fall through to D1
+    }
+  }
+  if (env.DB) {
+    const byPath = await dbAll(env, `SELECT sha256 FROM documents_by_path WHERE path = ?`, [docPath]);
+    let hit = byPath?.[0]?.sha256;
+    if (!hit) {
+      const legacy = await dbAll(env, `SELECT sha256 FROM documents WHERE path = ?`, [docPath]);
+      hit = legacy?.[0]?.sha256;
+    }
+    if (typeof hit === "string" && hit) return { sha256: hit.toLowerCase(), path: docPath };
+  }
+  throw new HttpError(404, { error: "not_found", path: docPath });
 }
 
 // Mirrors getFuseBoard: { fuse, wait, parked } partitioned off the folded

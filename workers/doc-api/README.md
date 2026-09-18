@@ -52,6 +52,31 @@ statements are idempotent). Cron times in `wrangler.toml` are UTC
 approximations of PT wall clock; they shift an hour with daylight saving,
 documented in the file.
 
+## Path-addressed documents & clock statuses
+
+`GET /documents/<path>` serves a PDF by its portfolio path (e.g.
+`/documents/matter-24/First Amended Complaint.pdf`), resolved through the R2
+`index/path-to-sha256.json` path index, then the D1 `documents_by_path`
+table (path is the identity — one sha256 can live under many court paths),
+then the legacy sha256-PK `documents` table. Path-addressed bytes carry
+`Cache-Control: public, max-age=60` (revalidatable: the same court path can
+be re-filed under a new sha256) and an inline `Content-Disposition`
+filename; hash-addressed `/doc/<sha256>` bytes stay immutable.
+
+Clocks carry a `status` (`open | satisfied | retired | cancelled |
+vacated`, seeded from `clocks.json`). `/upcoming` and the folded
+`next_clock_*` exclude non-open clocks, so satisfied/retired/vacated rows no
+longer leak into the fuse board. On a D1 that predates the column the
+queries fall back to the unfiltered form; to backfill:
+
+```bash
+wrangler d1 execute litigation-portfolio --remote \
+  --command "ALTER TABLE clocks ADD COLUMN status TEXT"   # ignore duplicate-column
+wrangler d1 execute litigation-portfolio --remote --file=schema.sql
+node seed.mjs > seed.sql
+wrangler d1 execute litigation-portfolio --remote --file=seed.sql
+```
+
 ## Verified (2026-09-17)
 
 - `node --check` passes on `src/index.mjs` and `seed.mjs`; `wrangler.toml` parses.
