@@ -66,7 +66,7 @@ Plaintiff BRENDAN NGWA NFORBI, appearing in propria persona, alleges:
 
 5. On September 14, 2026, First Advantage Background Services Corp. (“First Advantage”) initiated employment screening through Profile Advantage, Order **WPS-361214148**.
 
-6. The preserved onboarding packet includes a United States Background Consent Form. That form is a consent/release document. It is not a standalone disclosure consisting solely of the disclosure required by 15 U.S.C. § 1681b(b)(2)(A), and it does not itself supply the pre-procurement content required by Civil Code § 1786.16. Plaintiff did not receive, before procurement, a separate compliant FCRA or ICRAA standalone disclosure.
+6. The written offer itself stated that “[t]he Company will provide required standalone disclosures and obtain required authorizations before obtaining a consumer or investigative consumer report.” The preserved onboarding packet includes a United States Background Consent Form. That form is a consent/release document authorizing release of screening information to TaskUs USA, LLC. It is not a standalone disclosure consisting solely of the disclosure required by 15 U.S.C. § 1681b(b)(2)(A), and it does not itself supply the pre-procurement content required by Civil Code § 1786.16. Plaintiff did not receive, before procurement, a separate compliant FCRA or ICRAA standalone disclosure.
 
 7. At approximately 10:20 a.m. PDT on September 14, the Profile Advantage portal showed several screening components complete, while the felony-including-misdemeanor component and **PRINSOS**, First Advantage’s national sex-offender component, remained In Progress.
 
@@ -164,11 +164,11 @@ Plaintiff BRENDAN NGWA NFORBI, appearing in propria persona, alleges:
 
 44. The report was procured for employment purposes. TaskUs Holdings and TaskUs USA procured or caused the report to be procured and received or were entitled to receive its results. Their exact contractual allocation is information primarily within Defendants’ knowledge and is pleaded in the alternative under Rule 8(d).
 
-45. Plaintiff’s preserved documents include a United States Background Consent Form permitting release of screening information to TaskUs USA, LLC.
+45. The written Offer of Temporary Employment stated that the Company would provide required standalone disclosures and obtain required authorizations before obtaining a consumer or investigative consumer report.
 
-46. That preserved form does not itself contain all of the content required of a standalone FCRA disclosure and does not itself identify all information required by ICRAA § 1786.16.
+46. Plaintiff’s preserved documents include a United States Background Consent Form permitting release of screening information to TaskUs USA, LLC. That form is a release/consent. It does not itself contain all of the content required of a standalone FCRA disclosure and does not itself identify all information required by ICRAA § 1786.16.
 
-47. Before procurement, Defendants did not provide Plaintiff a separate compliant document that consisted solely of the disclosure required by 15 U.S.C. § 1681b(b)(2)(A) and that informed him that a consumer report could be obtained for employment purposes.
+47. Before procurement, Defendants did not provide Plaintiff a separate compliant document that consisted solely of the disclosure required by 15 U.S.C. § 1681b(b)(2)(A) and that informed him that a consumer report could be obtained for employment purposes — notwithstanding the offer’s promise that such standalone disclosures would be provided.
 
 48. Before procurement, Defendants likewise did not provide Plaintiff a compliant ICRAA standalone disclosure identifying the investigative consumer reporting agency actually conducting the investigation and providing the required California-specific information.
 
@@ -307,7 +307,7 @@ Plaintiff BRENDAN NGWA NFORBI, appearing in propria persona, alleges:
 
 90. Section 1681b(b)(2)(A) requires a clear and conspicuous written disclosure, made before procurement, in a document consisting solely of the disclosure, that a consumer report may be obtained for employment purposes, together with written authorization.
 
-91. Before procurement, Defendants did not provide Plaintiff a compliant standalone disclosure satisfying § 1681b(b)(2)(A). The preserved United States Background Consent Form is a consent/release, not that standalone disclosure.
+91. Before procurement, Defendants did not provide Plaintiff a compliant standalone disclosure satisfying § 1681b(b)(2)(A). The preserved United States Background Consent Form is a consent/release, not that standalone disclosure. The offer’s own promise that required standalone disclosures would be provided before obtaining a consumer or investigative consumer report was not kept.
 
 92. Defendants nevertheless caused First Advantage to procure and furnish Order WPS-361214148.
 
