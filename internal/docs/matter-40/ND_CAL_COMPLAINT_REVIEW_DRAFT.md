@@ -1,0 +1,408 @@
+# Matter 40 — N.D. Cal. Complaint Review Draft v1
+
+<!-- Internal generator header. Not part of the pleading. Do not print on page one. -->
+
+**Caption:** Brendan Ngwa Nforbi v. Uber Technologies, Inc., et al.  
+**Forum:** United States District Court, Northern District of California — **San Jose Division** (assignment location Santa Clara County; Civil L.R. 3-2(c)/(e))  
+**Drafted:** September 17, 2026  
+**Supersedes:** San Joaquin state draft in `VERIFIED_COMPLAINT_REVIEW_DRAFT.md` for filing posture (keep that file only as state-court alternate)
+
+## MTD engineering memo (internal — not for filing)
+
+**Question:** Is this engineered to survive Rule 12(b)(6)?
+
+**Short answer:** On the **§ 290.46(j) source and use elements against the TaskUs report-recipients**, yes — materially better than Matters 25/26 at filing and designed to clear the *Lerma* report-source kill shot. On **Uber as joint employer** and on **saliva causation**, it is built to survive as *plausible*, not as bulletproof. Expect a compel-arbitration motion from TaskUs before or instead of a pure merits MTD.
+
+| Attack | Cluster lesson | How this draft answers |
+|---|---|---|
+| Source pled on I&B (*Lerma* / FedEx-UPS filing weakness) | Actual report controls; I&B source dies | Plead Order **WPS-361214148** as **known fact**: Sentence field quotes `SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY` |
+| Use / causation conclusory (Adv. Review on 25/26) | Need anchoring employer writing | Quote Sep. 14 **11:24 a.m.** TA Ops hold: start frozen **"including the processing of your background screening report"** — while PRINSOS still In Progress |
+| Alternative explanation (drug screen, MVR, etc.) | Twombly does not require eliminating every rival theory, but hide-the-ball loses credibility | Dedicated saliva section: product separate; hold **predates** Sep. 16 confirmation failure and **names the BGC**, not saliva |
+| UPS-style "NSOR only / California never searched" | Quote the Sentence field; do not let them recharacterize without the document | Attach Ex. D; plead the Sentence line verbatim; allege California-registry disclosure under § 290.46 |
+| Weak counts that invite free strikes | Drop Invasion of Privacy / Negligence Per Se | Not pleaded |
+| Joint-employer bare labels (*Iqbal*) | Need campaign-specific facts | WorkDay title **Uber AV Teammate (SJ: 09/23/2026)**, requisition R_2608_10812, San Jose delivery assignment — Uber branded the only job offered |
+| FCRA as jurisdiction hook | Lead with federal question | Count One = FCRA § 1681b(b)(3)(A); § 290.46 supplemental |
+| Arbitration first | TaskUs, Inc. MAA covers background-check form/process | Not volunteered as a claim defect; motion practice. Uber nonsignatory remains live |
+
+**What still can lose or narrow at 12(b)(6):**
+1. **Uber** — court may find joint-employer facts thin without the staffing contract and dismiss Uber with leave; the WorkDay branding is the best present anchor.
+2. **Adverse action timing** — defense will say the Sep. 14 hold is "standard admin" not report-based use, and that no final adverse letter issued. The hold's own words and the never-restored start are the answer; a court that demands a FA-template "Final Adverse Action" notice could require amendment.
+3. **Saliva** — if they RJN the Action Required email and argue independent cause, the court should not resolve that factual contest on 12(b)(6) if the BGC-use theory remains plausible (*Twombly* / *Iqbal*).
+4. **Compel** — TaskUs may never reach merits MTD.
+
+**Bottom line:** This is the cluster's strongest *pleading-stage* § 290.46 package to date on source + employer writing. It is engineered to get past a *Lerma*-style source dismissal and a 25/26-style "all I&B" dismissal. It is not engineered to pretend Uber or saliva are risk-free.
+
+**Before execute:** Uber CA SOS / agent; TaskUs service list (LLC Converted Out); Civil Cover Sheet San Jose; JS-CAND; magistrate consent form; Exhibits A–E; Plaintiff reads every paragraph.
+
+---
+
+BRENDAN NGWA NFORBI  
+Plaintiff, In Propria Persona  
+1455 Cat Tail Drive  
+Stockton, California 95204  
+
+# UNITED STATES DISTRICT COURT
+# NORTHERN DISTRICT OF CALIFORNIA
+# SAN JOSE DIVISION
+
+**BRENDAN NGWA NFORBI,**  
+Plaintiff,
+
+v.
+
+**UBER TECHNOLOGIES, INC.,** a Delaware corporation;  
+**TASKUS, LLC,** a Delaware limited liability company;  
+**TASKUS USA, LLC,** a Delaware limited liability company;  
+**TASKUS HOLDINGS, INC.,** a Delaware corporation; and  
+**DOES 1 through 20,** inclusive,  
+Defendants.
+
+Case No. __________________
+
+# COMPLAINT FOR DAMAGES
+
+1. Fair Credit Reporting Act — 15 U.S.C. § 1681b(b)(3)(A)  
+2. Unauthorized Employment Use of Information Disclosed Pursuant to Penal Code § 290.46 — Penal Code § 290.46(j)(2)(E), (j)(4)(A)  
+3. California Investigative Consumer Reporting Agencies Act — Civ. Code §§ 1786.40, 1786.50  
+4. Unfair Competition Law — Bus. & Prof. Code § 17200  
+5. Wrongful Refusal to Hire / Withholding of Accepted Employment in Violation of Public Policy
+
+**DEMAND FOR JURY TRIAL**
+
+Plaintiff BRENDAN NGWA NFORBI, appearing in propria persona, alleges:
+
+# I. NATURE OF THE ACTION
+
+1. This action arises from Defendants' employment use of Plaintiff's California sex offender registry information and from their failure to follow federal and California consumer-report adverse-action rules when they froze and withheld his accepted start on Uber's AV Teammate campaign.
+
+2. On September 14, 2026, TaskUs, LLC offered Plaintiff temporary employment as a Teammate on the campaign titled **Uber AV Teammate (SJ: 09/23/2026)** at $22.00 per hour, anticipated start September 23, 2026. Plaintiff accepted the same day.
+
+3. The same day, First Advantage Background Services Corp. ("First Advantage") opened Profile Advantage Order **WPS-361214148** for employment screening on that hire.
+
+4. At 11:24 a.m. on September 14, 2026 — while Order WPS-361214148 was still open and its national sex-offender component (PRINSOS) was still In Progress — TaskUs Talent Acquisition Operations placed Plaintiff's start on a "standard administrative hold" expressly **"including the processing of your background screening report."** That is Defendants' own writing that the First Advantage report stopped the accepted Uber AV Teammate start.
+
+5. On September 15, 2026, First Advantage issued a consumer disclosure stating it was reporting public-record information concerning Plaintiff to **TASKUS HOLDINGS INC USA**. The enclosed national sex offender registry component of Order WPS-361214148 states, verbatim:
+
+> SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY. SENTENCE: REGISTERED SEX OFFENDER
+
+6. Defendants never restored the September 23 start. They never issued a Fair Chance restoration. The accepted Uber AV Teammate assignment was withheld and effectively rescinded.
+
+7. Uber Technologies, Inc. is named because the only assignment offered was Uber's branded AV Teammate campaign. TaskUs staffed that campaign for Uber's benefit. Uber is pleaded as end client and joint employer. TaskUs entities are pleaded as the staffing, consent, and report-recipient employers.
+
+8. A separate saliva drug-test schedule (Schedule ID 96558696) was ordered the same day. That product is not the consumer report. The September 14 hold named the **background screening report**, not the saliva test. Saliva confirmation later failed on September 16. Defendants may try to recast the non-hire as a drug-screen miss. The chronology defeats that as the September 14 hold basis.
+
+9. First Advantage is the CRA that generated Order WPS-361214148. It is not named as a defendant in this Complaint. Vendor claims arising from First Advantage's furnishing of California-registry-sourced employment reports are preserved in a companion matter and are not waived.
+
+# II. JURISDICTION AND VENUE
+
+10. This Court has federal-question jurisdiction under 28 U.S.C. § 1331 because Count One arises under the Fair Credit Reporting Act.
+
+11. This Court has supplemental jurisdiction under 28 U.S.C. § 1367(a) over Counts Two through Five because they arise from the same offer, screening, hold, report, and withheld start.
+
+12. Plaintiff does not presently invoke diversity jurisdiction. Several Defendants are limited liability companies or corporations whose complete citizenship has not been established for every member or for purposes of § 1332.
+
+13. Plaintiff has Article III standing. He alleges a concrete economic injury — the loss of the accepted Uber AV Teammate assignment at the documented $22.00 hourly rate and the associated retention-bonus opportunity — fairly traceable to the report-based employment actions alleged and redressable by damages.
+
+14. Venue is proper in this District under 28 U.S.C. § 1391(b)(2) because a substantial part of the events giving rise to the claims occurred here: the offered assignment was **USA - San Jose - San Jose (Delivery)**; the WorkDay campaign was **Uber AV Teammate (SJ: 09/23/2026)**; and the employment Defendants sought to place Plaintiff into Northern District operations.
+
+15. Under Civil Local Rule 3-2(c) and (e), this action is assigned to the **San Jose Division** because a substantial part of the events occurred in Santa Clara County.
+
+# III. PARTIES
+
+16. Plaintiff Brendan Ngwa Nforbi is a natural person and California resident. He is a person as to whom information is disclosed through California's Megan's Law internet website operated under Penal Code § 290.46.
+
+17. Defendant Uber Technologies, Inc. ("Uber") is a Delaware corporation that does business in this District. Uber is the end client and joint employer on the WorkDay campaign titled **Uber AV Teammate (SJ: 09/23/2026)**, requisition **R_2608_10812**, candidate **C261051599**. "Uber AV" is a campaign title, not a separate legal entity named as a defendant.
+
+18. Defendant TaskUs, LLC is a Delaware limited liability company. It issued the September 14, 2026 Offer of Temporary Employment naming itself as the hiring "Company." California Secretary of State records reflect Entity No. 200826810086 with status Converted Out; Plaintiff names the offer-letter employer and will serve the surviving or active affiliate(s) according to proof.
+
+19. Defendant TaskUs USA, LLC is a Delaware limited liability company registered in California (Entity No. 201729810166). Plaintiff's United States Background Consent Form authorized release of screening information to TaskUs USA LLC.
+
+20. Defendant TaskUs Holdings, Inc. is a Delaware corporation registered in California (Entity No. 3828721). First Advantage's September 15, 2026 consumer disclosure identifies the report recipient as **TASKUS HOLDINGS INC USA**, Client Account Number **417722USA**, at 1650 Independence Drive, Ste 100, New Braunfels, Texas — the same address on the offer letter.
+
+21. Plaintiff is ignorant of the true names of DOES 1 through 20 and will amend when ascertained. DOES include any Uber operating affiliate that directed the AV Teammate placement or screening; any TaskUs affiliate that adjudicated or used the report; and any person who received, accessed, or used the California-registry-sourced information for an employment purpose on this hire.
+
+22. At all relevant times, each Defendant was the agent, employee, joint employer, joint venturer, and/or alter ego of the others with respect to the Uber AV Teammate placement and screening, and acted within the course and scope of that relationship. TaskUs recruited, offered, and screened Plaintiff for placement onto Uber's campaign. Uber received the benefit of that staffing arrangement and, on information and belief grounded in the facts below, controlled or shared control over the campaign requisition, start authorization, and use of background-screening results for Uber AV Teammate placements.
+
+# IV. THE UBER AV TEAMMATE OFFER
+
+23. On September 14, 2026, at approximately 6:50 a.m., WorkDay emailed Plaintiff from taskus@myworkday.com: "Congratulations! We are pleased to make you an offer for the **Uber AV Teammate (SJ: 09/23/2026)** position."
+
+24. The same day, TaskUs, LLC issued a written Offer of Temporary Employment stating, among other things:
+
+- hiring employer: TaskUs, LLC;  
+- position: Teammate;  
+- base pay: $22.00 per hour, non-exempt;  
+- location: **USA - San Jose - San Jose (Delivery)**;  
+- anticipated assignment: September 23, 2026 through on or around December 4, 2026;  
+- retention bonus: $1,000 if still employed in good standing on December 4, 2026;  
+- employment at-will and contingent on job-related background screening and a Fair Chance Act process for conviction history;  
+- screening usually takes two weeks and **employment may begin while screening is pending**.
+
+25. Plaintiff accepted the offer the same day and signed the United States Background Consent Form, the TaskUs Holdings, Inc. non-disclosure / invention-assignment agreement, and related onboarding documents.
+
+26. DLSE Form 2810.5 identified TaskUs, LLC as the hiring employer. It did not list Uber as the entity for whom the work would be performed. That wage notice does not erase Uber's end-client / joint-employer role on a campaign Uber branded as its own.
+
+27. The only assignment offered was the Uber AV Teammate campaign. Without Uber's campaign, there was no Teammate placement for Plaintiff to accept.
+
+# V. FIRST ADVANTAGE ORDER WPS-361214148
+
+28. On September 14, 2026, at approximately 6:50 a.m., First Advantage emailed Plaintiff from do_not_reply@fadv.com inviting him to start a Profile Advantage background check.
+
+29. The same day, Profile Advantage opened Order **WPS-361214148** (portal candidate name Brendan Ngwanforbi).
+
+30. As of approximately 10:20 a.m. PDT on September 14, 2026, the portal showed:
+
+- Completed: MVR; Federal Felony And Misdemeanor; PRICPGS; FADV National Criminal File; Social Security Verification;  
+- In Progress: Felony Including Misdemeanor; **PRINSOS** (First Advantage's national sex-offender search).
+
+31. The portal stated the report was not viewable until the order completed. A component marked Completed is not itself a result and is not a registry hit.
+
+# VI. THE SEPTEMBER 14 HOLD — EMPLOYER WRITING THAT THE BACKGROUND REPORT STOPPED THE START
+
+32. On September 14, 2026, at 11:24 a.m., TA Ops US (taops.us@taskus.com), copying Liz Ramirez, emailed Plaintiff "Important Update Regarding Your Application with TaskUs."
+
+33. The email stated that TaskUs had placed Plaintiff's start date on a "standard administrative hold while final onboarding reviews are completed, **including the processing of your background screening report**," that the scheduled start must be adjusted pending completion of that process, that Plaintiff should monitor First Advantage, and that the application "remains in a pending status."
+
+34. A true and correct copy of that email is attached as **Exhibit C**.
+
+35. That email is not a First Advantage pre-adverse template and not a final adverse-action form notice. It is Defendants' contemporaneous statement that the **First Advantage background screening report** was the reason the accepted September 23 Uber AV Teammate start was frozen.
+
+36. The hold issued approximately one hour after the portal snapshot showing PRINSOS still In Progress, and before First Advantage's September 15 consumer disclosure.
+
+37. The hold contradicted the offer's statement that employment may begin while screening is pending.
+
+38. Freezing an accepted start date, placing the application in pending status, and withholding the Uber AV Teammate assignment are adverse employment actions and purposes relating to employment.
+
+# VII. THE SEPTEMBER 15 CONSUMER DISCLOSURE — KNOWN SOURCE FACT
+
+39. On September 15, 2026, First Advantage issued a consumer disclosure letter to Plaintiff at his Stockton address. The letter advised that First Advantage was reporting public-record information concerning Plaintiff to:
+
+> TASKUS HOLDINGS INC USA  
+> 1650 INDEPENDENCE DR  
+> STE 100  
+> NEW BRAUNFELS, TX 78132-3832
+
+40. A true and correct copy of that consumer disclosure, including the enclosed registry component, is attached as **Exhibit D**.
+
+41. The enclosed national sex offender registry component of Order WPS-361214148 states, among other things:
+
+- Record Source: **NATIONAL SEX OFFENDER REGISTRY**;  
+- Type of Search: NATIONAL SEX OFFENDER REGISTRY SEARCH-DEPT OF JUSTICE;  
+- Date of Search: 09/14/2026;  
+- Name on File: NGWANFORBI, BRENDAN NGEHSI;  
+- Sentence: **SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY. SENTENCE: REGISTERED SEX OFFENDER**.
+
+42. Plaintiff therefore alleges as **known fact** — not on information and belief — that First Advantage furnished to TaskUs Holdings Inc USA employment-screening information expressly sourced to the California Sex Offender Registry.
+
+43. That information is information disclosed pursuant to Penal Code § 290.46.
+
+44. On information and belief, grounded in Exhibits C and D and the Uber AV Teammate campaign facts alleged above, TaskUs, LLC, TaskUs USA, LLC, TaskUs Holdings, Inc., and Uber received, accessed, considered, shared, and/or used that California-registry-sourced information for purposes relating to Plaintiff's Uber AV Teammate employment — including maintaining the September 14 hold, refusing to restore the September 23 start, and withholding or rescinding the accepted assignment.
+
+45. Plaintiff does not presently possess Defendants' internal adjudication matrix, access logs, or reason codes. Those records are within Defendants' and First Advantage's control. Exhibits C and D already supply the pleading-stage link: Defendants froze the start because of the background report, and that report — when disclosed — expressly sourced the sex-offender component to the California registry.
+
+# VIII. THE SALIVA PRODUCT IS SEPARATE — ANTICIPATED ALTERNATIVE-CAUSE DEFENSE
+
+46. On September 14, 2026, at approximately 8:49 a.m., First Advantage separately ordered a Saliva Drug Test Full Service NonDOT for employer TaskUs Holdings, Inc. (Schedule ID **96558696**).
+
+47. On September 16, 2026, First Advantage sent a Reminder and then an "Action Required" email stating that Plaintiff's saliva schedule confirmation could not be successfully completed. The schedule expired September 17, 2026, without collection. A true and correct copy of the Action Required email is attached as **Exhibit E**.
+
+48. Plaintiff does not collapse the saliva product into the consumer report.
+
+49. Defendants may contend that the non-hire rests solely on the missed saliva collection. That contention does not erase the September 14 hold. The hold:
+
+- issued on September 14, before any saliva confirmation failure;  
+- expressly named the **background screening report**;  
+- did not name the saliva test; and  
+- remained operative after First Advantage furnished the California-registry-sourced report on September 15.
+
+50. If Defendants later prove that a completed saliva miss independently and inevitably ended the hire without any use of the California-registry-sourced report, that proof may bear on causation. Rule 12(b)(6) does not require Plaintiff to litigate that factual contest in the Complaint. Plaintiff alleges a plausible report-based use theory supported by Exhibits C and D.
+
+# IX. UBER AS END CLIENT / JOINT EMPLOYER — FACTS, NOT LABELS
+
+51. Every candidate-facing WorkDay communication that announced the offer identified the position as **Uber AV Teammate**, not a generic TaskUs role. A true and correct copy of the September 14 WorkDay offer email is attached as **Exhibit B**.
+
+52. The requisition identifier is R_2608_10812 / C261051599 — Uber AV Teammate (SJ: 09/23/2026).
+
+53. The anticipated work was San Jose delivery on Uber's AV campaign. The offer packet supplied orientation and production locations for that campaign assignment.
+
+54. TaskUs functioned as the staffing / payroll / offer-letter employer. Uber functioned as the end client whose branded campaign created the temporary need for Teammates and whose Northern District operations would receive Plaintiff's labor.
+
+55. On information and belief, grounded in Exhibits A through D and the campaign branding:
+
+- Uber directed or approved the Uber AV Teammate requisition, headcount, San Jose location, and September 23, 2026 start cohort;  
+- Uber required or shared control over background-screening standards applicable to Uber AV Teammate placements;  
+- Uber received, was entitled to receive, or caused TaskUs to obtain and use First Advantage screening results — including the California-registry-sourced component — before authorizing Plaintiff's start on Uber's campaign;  
+- TaskUs's September 14 hold pending the background report was taken in the course of staffing Uber's campaign and for Uber's benefit; and  
+- Uber and the TaskUs Defendants are joint employers and/or agents of one another with respect to the hiring decision on this placement.
+
+56. Penal Code § 290.46(j)(2)(E) prohibits use of § 290.46-disclosed information "for purposes relating to employment." Using that information to freeze or deny placement onto Uber's AV Teammate campaign is such a purpose, whether the offer letter is on TaskUs letterhead or Uber's.
+
+57. The 2810.5's naming of TaskUs, LLC is a wage-notice fact. It is not a joint-employer safe harbor and does not place Uber beyond § 290.46(j).
+
+# X. NO STATUTORY AUTHORIZATION; NO PRE-ADVERSE PACKAGE BEFORE THE HOLD
+
+58. Plaintiff is unaware of any statute authorizing Defendants to use information disclosed pursuant to Penal Code § 290.46 for this Teammate / Uber AV delivery assignment.
+
+59. Before freezing the start and withholding the assignment, Defendants did not provide Plaintiff a copy of the First Advantage consumer report and a written Summary of Rights as required by 15 U.S.C. § 1681b(b)(3)(A) for employment adverse action based in whole or in part on a consumer report.
+
+60. Defendants did not, at the time of the employment denial or withholding, advise Plaintiff under Civil Code § 1786.40 that an investigative consumer report had been obtained and supply First Advantage's name and address.
+
+61. The offer referenced a Fair Chance Act process for conviction history. Defendants did not provide Plaintiff a Fair Chance notice restoring the start or an individualized assessment stating that California-registry information was disregarded.
+
+# XI. DAMAGES
+
+62. Plaintiff lost an accepted temporary assignment at $22.00 per hour from September 23, 2026 through on or around December 4, 2026, and lost the opportunity to earn the $1,000 retention bonus if still employed in good standing on December 4.
+
+63. Plaintiff does not invent weekly hours the offer does not guarantee. Damages will be proved according to the offer, the assignment schedule, and proof.
+
+64. Plaintiff also seeks statutory remedies authorized by the FCRA, Penal Code § 290.46(j)(4)(A), and ICRAA, without double recovery.
+
+# XII. COUNT ONE
+## Fair Credit Reporting Act — 15 U.S.C. § 1681b(b)(3)(A)
+### Against All Defendants
+
+65. Plaintiff realleges paragraphs 1 through 64.
+
+66. Plaintiff was a consumer. Defendants procured or caused a consumer report to be procured for employment purposes and were persons using the report within the meaning of the FCRA.
+
+67. Before taking adverse action based in whole or in part on an employment consumer report, § 1681b(b)(3)(A) requires the person intending to take the action to provide the consumer a copy of the report and a written description of FCRA rights.
+
+68. Defendants' freezing of the accepted start, pending-status hold, and withholding of the Uber AV Teammate assignment were adverse employment actions based in whole or in part on the First Advantage consumer report (Order WPS-361214148).
+
+69. Defendants did not provide Plaintiff a copy of that report and the written Summary of Rights before taking those actions.
+
+70. Defendants thereby violated § 1681b(b)(3)(A).
+
+71. The count is timely. The conduct occurred September 14–17, 2026.
+
+72. Noncompliance was negligent and, on proof, willful. Willfulness is pleaded as a damages theory under 15 U.S.C. § 1681n, not as a separate count. First Advantage's own consumer disclosure and FCRA Summary of Rights package (Exhibit D) shows the regulated character of the report Defendants used.
+
+73. Plaintiff seeks relief authorized by 15 U.S.C. §§ 1681n and 1681o according to proof.
+
+# XIII. COUNT TWO
+## Unauthorized Employment Use of Information Disclosed Pursuant to Penal Code § 290.46
+### Penal Code § 290.46(j)(2)(E), (j)(4)(A)
+### Against All Defendants
+
+74. Plaintiff realleges paragraphs 1 through 64.
+
+75. Plaintiff is a person as to whom information is disclosed through California's Megan's Law internet website.
+
+76. Section 290.46(j)(2)(E) prohibits use of information disclosed pursuant to § 290.46 for purposes relating to employment except where statutorily authorized.
+
+77. First Advantage furnished to TaskUs Holdings Inc USA, on Order WPS-361214148, information concerning Plaintiff whose sex-offender component expressly states SOURCE OF RECORD: CALIFORNIA SEX OFFENDER REGISTRY.
+
+78. That information is information disclosed pursuant to Penal Code § 290.46.
+
+79. Defendants used that information for purposes relating to employment, including by placing and maintaining the September 14 administrative hold pending the background screening report, refusing to restore the September 23 Uber AV Teammate start, and withholding or rescinding Plaintiff's accepted assignment.
+
+80. The California-registry-sourced information was a substantial factor in those employment actions.
+
+81. Uber used, caused the use of, or is jointly liable for the use of that information for purposes relating to employment on its Uber AV Teammate campaign, as end client and joint employer.
+
+82. Plaintiff is unaware of another law authorizing use of § 290.46-disclosed information for this assignment.
+
+83. The use occurred on and after September 14–15, 2026. This action is timely.
+
+84. Defendants thereby violated Penal Code § 290.46(j)(2)(E).
+
+85. Plaintiff seeks the remedies authorized by § 290.46(j)(4)(A), including actual damages or the statutory minimum, treble damages according to proof, exemplary damages according to proof, and fees and costs as authorized — without duplicative recovery.
+
+86. Plaintiff does not presently seek preventive relief under § 290.46(j)(4)(B).
+
+87. Plaintiff does not allege that Defendants were barred from considering lawfully and independently obtained conviction information from a non-§ 290.46 source. This Count is based on use of information disclosed pursuant to § 290.46 itself, as shown by Exhibit D's SOURCE OF RECORD field.
+
+# XIV. COUNT THREE
+## California Investigative Consumer Reporting Agencies Act
+### Civil Code §§ 1786.40, 1786.50
+### Against All Defendants
+
+88. Plaintiff realleges paragraphs 1 through 64.
+
+89. On information and belief, the First Advantage Profile Advantage employment background report was an investigative consumer report under ICRAA.
+
+90. Civil Code § 1786.40 requires the user, when employment is denied under circumstances in which an investigative consumer report was obtained, to advise the consumer and supply the name and address of the investigative consumer reporting agency.
+
+91. Defendants denied, withheld, or refused to proceed with Plaintiff's accepted employment under circumstances in which they had obtained the First Advantage investigative consumer report.
+
+92. Defendants did not provide the § 1786.40 advice at the time of that employment action.
+
+93. This alleged omission is distinct from Count One's federal pre-adverse omission.
+
+94. Plaintiff seeks the remedies authorized by Civil Code § 1786.50 according to proof.
+
+# XV. COUNT FOUR
+## Unfair Competition Law — Bus. & Prof. Code § 17200
+### Against All Defendants
+
+95. Plaintiff realleges paragraphs 1 through 64.
+
+96. Defendants' conduct was unlawful under the UCL because it violated the FCRA, Penal Code § 290.46(j)(2)(E), and/or ICRAA as alleged.
+
+97. Plaintiff lost money or property — the accepted wage opportunity and retention-bonus opportunity — as a result.
+
+98. Plaintiff seeks restitution and injunctive relief as authorized by the UCL, without duplicative recovery.
+
+# XVI. COUNT FIVE
+## Wrongful Refusal to Hire / Withholding of Accepted Employment in Violation of Public Policy
+### Against All Defendants
+
+99. Plaintiff realleges paragraphs 1 through 64.
+
+100. California public policy, expressed in Penal Code § 290.46(j), forbids using Megan's Law registry information for employment purposes.
+
+101. Defendants refused to hire Plaintiff into, or withheld Plaintiff from, the accepted Uber AV Teammate assignment in violation of that public policy by using California-registry-sourced information from Order WPS-361214148.
+
+102. Plaintiff seeks tort damages according to proof, without duplicative recovery.
+
+# XVII. PRAYER FOR RELIEF
+
+WHEREFORE, Plaintiff requests:
+
+A. Actual and compensatory damages according to proof;  
+B. Relief authorized by 15 U.S.C. §§ 1681n and 1681o;  
+C. Relief authorized by Penal Code § 290.46(j)(4)(A);  
+D. Relief authorized by Civil Code § 1786.50;  
+E. Restitution and injunctive relief under Bus. & Prof. Code § 17200;  
+F. Exemplary damages according to proof where authorized;  
+G. Taxable costs and attorney's fees only where authorized, including if counsel later appears;  
+H. Prejudgment and postjudgment interest as allowed by law; and  
+I. Such other nonduplicative relief as the Court deems proper.
+
+# XVIII. JURY DEMAND
+
+Plaintiff demands trial by jury on all issues so triable.
+
+Dated: __________________
+
+Respectfully submitted,
+
+___________________________________  
+BRENDAN NGWA NFORBI  
+Plaintiff, In Propria Persona
+
+---
+
+## Exhibit list (attach at execute)
+
+| Ex. | Document |
+|---|---|
+| A | Offer of Temporary Employment — TaskUs, LLC (Sep. 14, 2026) |
+| B | WorkDay email — Review Your Offer Letter / Uber AV Teammate (Sep. 14, 2026) |
+| C | TA Ops US — Start Date Administrative Hold (Sep. 14, 2026, 11:24 a.m.) |
+| D | First Advantage Consumer Disclosure — Order WPS-361214148 (Sep. 15, 2026) |
+| E | First Advantage Action Required — Saliva Schedule ID 96558696 (Sep. 16, 2026) |
+
+## Filing packet (N.D. Cal.)
+
+- Civil Cover Sheet (JS-CAND / AO 440 as required)  
+- Complaint + Exhibits A–E  
+- Summons (AO 440) for each named Defendant  
+- Magistrate Judge Jurisdiction consent/declination form  
+- Corporate Disclosure if/when Defendants appear  
+
+## Service targets (confirm before summons)
+
+- Uber Technologies, Inc. — California registered agent (pull SOS before issue)  
+- TaskUs USA, LLC / TaskUs Holdings, Inc. — C T Corporation System (CA)  
+- TaskUs, LLC — do **not** serve Converted Out CA LLC agent Maddock; serve surviving/active affiliate per proof  

@@ -1,17 +1,17 @@
 {
-  "summary": "PC §290.46(j)(2)(E) use (lead); FCRA §1681b(b)(3)(A); ICRAA §§1786.40, 1786.50; UCL §17200; wrongful refusal to hire / withholding of accepted employment in violation of public policy — Uber end client / joint employer + TaskUs staffing entities",
+  "summary": "FCRA §1681b(b)(3)(A) (lead / federal question); PC §290.46(j)(2)(E) use; ICRAA §§1786.40, 1786.50; UCL §17200; wrongful refusal to hire / withholding of accepted employment in violation of public policy — Uber end client / joint employer + TaskUs staffing entities (N.D. Cal. San Jose)",
   "counts": [
     {
       "id": 1,
       "status": "live",
       "theory_ids": [],
-      "title": "Penal Code §290.46(j)(2)(E), (j)(4)(A) — unauthorized employment use of California registry information (Order WPS-361214148; Sep. 14 hold pending FA report)"
+      "title": "FCRA, 15 U.S.C. §1681b(b)(3)(A) — adverse action based on consumer report without pre-adverse copy / Summary of Rights"
     },
     {
       "id": 2,
       "status": "live",
       "theory_ids": [],
-      "title": "FCRA, 15 U.S.C. §1681b(b)(3)(A) — adverse action based on consumer report without pre-adverse copy / Summary of Rights"
+      "title": "Penal Code §290.46(j)(2)(E), (j)(4)(A) — unauthorized employment use of California registry information (Order WPS-361214148; Sep. 14 hold pending FA report)"
     },
     {
       "id": 3,

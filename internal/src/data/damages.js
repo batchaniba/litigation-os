@@ -1002,9 +1002,9 @@ const matter_damages_raw = [
   },
   {
     number: 40,
-    claims: "PC §290.46(j) use (lead) — Uber joint employer + TaskUs; FCRA / ICRAA / UCL / Tameny-style withholding",
-    risk: "Draft complaint: Sep. 14 hold pending FA report + Sep. 15 WPS-361214148 CA-registry source. MAA compel risk. Saliva is their causation story. Valuation from $22/hr assignment window + statutory remedies.",
-    settlement_note: "No demand sent yet. Draft on disk; not filed.",
+    claims: "FCRA §1681b(b)(3) (lead) — N.D. Cal. San Jose; PC §290.46(j) use — Uber joint employer + TaskUs; ICRAA / UCL / Tameny-style withholding",
+    risk: "N.D. Cal. draft: Sep. 14 hold pending FA report + Sep. 15 WPS-361214148 CA-registry source. Strong on source/use vs TaskUs; thinner on Uber joint employer and saliva causation. Expect MAA compel before merits MTD. Valuation from $22/hr assignment window + statutory remedies.",
+    settlement_note: "No demand sent yet. N.D. Cal. San Jose draft on disk; not filed.",
     conservative: 0,
     moderate: 0,
     aggressive: 0,

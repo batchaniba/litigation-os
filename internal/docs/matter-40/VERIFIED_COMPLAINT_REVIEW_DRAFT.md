@@ -1,6 +1,8 @@
-# Matter 40 — Verified Complaint Review Draft v1
+# Matter 40 — Verified Complaint Review Draft v1 (state-court alternate)
 
 <!-- Internal generator header. Not part of the pleading. Do not print on page one. -->
+
+**SUPERSEDED as filing posture** by `ND_CAL_COMPLAINT_REVIEW_DRAFT.md` (N.D. Cal. — San Jose Division; Sep. 18, 2026). Keep this file only as the San Joaquin alternate if federal filing is abandoned.
 
 **Caption:** Brendan Ngwa Nforbi v. Uber Technologies, Inc., et al.  
 **Forum (draft):** San Joaquin Superior Court (Plaintiff resides Stockton; assignment was San Jose — confirm venue before execute)  
@@ -9,7 +11,7 @@
 
 **Draft posture:** Plead § 290.46(j)(2)(E) **use** from the Sep. 14 hold (expressly pending the FA background report) continuing after the Sep. 15 California-registry furnish to TaskUs Holdings. Uber is named as end client / joint employer on the Uber AV Teammate campaign. Saliva is pleaded as a separate product and anticipated defense — not as the Sep. 14 hold basis. First Advantage is the CRA, not a named defendant (Matter 31). MAA with TaskUs, Inc. exists; do not volunteer it into the caption fight — they will move to compel.
 
-**Before execute:** (1) pull Uber CA SOS / registered agent; (2) confirm TaskUs entity service list (LLC Converted Out — do not serve Maddock); (3) decide San Joaquin vs. Santa Clara venue; (4) attach Exhibits A–E as the offer, WorkDay Uber AV email, TA Ops hold, FA consumer disclosure, and saliva Action Required; (5) Plaintiff reads every paragraph.
+**Before execute (state alternate only):** (1) pull Uber CA SOS / registered agent; (2) confirm TaskUs entity service list (LLC Converted Out — do not serve Maddock); (3) decide San Joaquin vs. Santa Clara venue; (4) attach Exhibits A–E as the offer, WorkDay Uber AV email, TA Ops hold, FA consumer disclosure, and saliva Action Required; (5) Plaintiff reads every paragraph.
 
 ---
 
