@@ -1,19 +1,34 @@
 #!/usr/bin/env python3
-"""Historical: photographed loops mark → archived canonical PNG.
+"""Photographed loops mark → canonical + archive PNG.
 
-Superseded. The live stamp is internal/assets/signature/
-brendan-newanforbi-signature.png, produced by extract-signature-scan.py.
-Running this script must not overwrite that file; it only rebuilds the
-archived photograph at *-v2-photo-loops.png.
+Live stamp: internal/assets/signature/brendan-newanforbi-signature.png
+Archive copy: *-v2-photo-loops.png
+Source photo: *-source-v2-photo.jpg
+
+Restored as the portfolio canonical September 18, 2026 after the August 26
+wet-ink / house stamp was deleted. Pixel guards refuse paper-plate /
+form-rule junk so those artifacts cannot become the live stamp again.
 
 Does not restamp any already-filed PDF.
+
+    python3 internal/scripts/process-signature-photo.py
 """
 from __future__ import annotations
 
+import sys
 from pathlib import Path
 
 import numpy as np
-from PIL import Image, ImageFilter
+from PIL import Image, ImageDraw, ImageFilter
+
+SCRIPT_DIR = Path(__file__).resolve().parent
+sys.path.insert(0, str(SCRIPT_DIR / "lib"))
+sys.path.insert(0, str(SCRIPT_DIR))
+
+from signature_quality import (  # noqa: E402
+    assert_house_assets_gone,
+    validate_signature_rgba,
+)
 
 REPO = Path(__file__).resolve().parents[2]
 SRC_JPG = (
@@ -23,16 +38,19 @@ OUT_PNG = (
     REPO / "internal/assets/signature/brendan-newanforbi-signature-v2-photo-loops.png"
 )
 CANONICAL_PNG = REPO / "internal/assets/signature/brendan-newanforbi-signature.png"
+PREVIEW_PNG = (
+    REPO / "internal/assets/signature/brendan-newanforbi-signature-preview.png"
+)
 
-INK_MAX = 210  # grayscale; below this is treated as ink
+INK_MAX = 210
 CROP_PAD = 6
 SCALE = 12
-CLOSE_SIZE = 3  # morphological close only; do not dilate
-ERODE_SIZE = 5  # slight thin after close (odd Max/Min neighborhood)
+CLOSE_SIZE = 3
+ERODE_SIZE = 5
 BLUR = 3.0
-CORE_T = 212  # blur luminance at/above this becomes solid ink
-ALPHA_FLOOR = 22  # below this, treat as background
-INK_RGB = 40  # charcoal, not pure black — dials down visual weight
+CORE_T = 212
+ALPHA_FLOOR = 22
+INK_RGB = 40
 TRIM_PAD = 12
 
 
@@ -78,23 +96,49 @@ def _to_rgba(alpha_img: Image.Image) -> Image.Image:
     return Image.fromarray(rgba, "RGBA")
 
 
+def _write_preview(rgba: Image.Image) -> None:
+    bg = Image.new("RGBA", rgba.size, (255, 255, 255, 255))
+    rgb = Image.alpha_composite(bg, rgba).convert("RGB")
+    draw = ImageDraw.Draw(rgb)
+    w, h = rgb.size
+    y = h - max(8, h // 20)
+    draw.line(
+        (int(w * 0.05), y, int(w * 0.95), y),
+        fill=(0, 0, 0),
+        width=max(2, h // 200),
+    )
+    rgb.save(PREVIEW_PNG, optimize=True)
+
+
 def main() -> None:
-    if OUT_PNG.resolve() == CANONICAL_PNG.resolve():
-        raise SystemExit("refusing to overwrite the canonical scan stamp")
+    try:
+        assert_house_assets_gone()
+    except ValueError as exc:
+        raise SystemExit(str(exc)) from exc
+
     if not SRC_JPG.is_file():
-        raise SystemExit(f"Missing archived photo source: {SRC_JPG}")
+        raise SystemExit(f"Missing photo source: {SRC_JPG}")
     gray = Image.open(SRC_JPG).convert("L")
     crop = _crop_ink(gray)
     hi = crop.resize(
         (crop.size[0] * SCALE, crop.size[1] * SCALE), Image.Resampling.LANCZOS
     )
     rgba = _to_rgba(_mask(hi))
+    try:
+        validate_signature_rgba(np.asarray(rgba), label="rebuild")
+    except ValueError as exc:
+        raise SystemExit(f"rebuild failed quality gate: {exc}") from exc
+
     rgba.save(OUT_PNG, optimize=True)
+    rgba.save(CANONICAL_PNG, optimize=True)
+    _write_preview(rgba)
     print(
-        f"wrote {OUT_PNG} {rgba.size[0]}×{rgba.size[1]}  "
+        f"wrote {OUT_PNG.name} and {CANONICAL_PNG.name} "
+        f"{rgba.size[0]}×{rgba.size[1]}  "
         f"aspect={rgba.size[1]/rgba.size[0]:.4f}  "
         f"from crop {crop.size}"
     )
+    print(f"preview: {PREVIEW_PNG}")
 
 
 if __name__ == "__main__":
