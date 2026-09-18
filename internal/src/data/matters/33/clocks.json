@@ -11,6 +11,26 @@
     "source": "/documents/matter-33/ndcal/PACER Docket Report - N.D. Cal. 3-26-cv-08272-LJC (Sep 9 2026).pdf"
   },
   {
+    "id": "33-deadline-5",
+    "date": "2026-09-23",
+    "date_label": "Sep. 23, 2026",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": 17,
+    "title": "WATCH — Opposition to Dkt. 17 motion to strike due in Nforbi v. Candelaria et al. (3:26-cv-08272-LJC). PACER Deadlines/Hearings Sep. 18 sets Response (Mandatory) 2026-09-23. Civil L.R. 7-3(a). Not enlarged.",
+    "actor": "opposing"
+  },
+  {
+    "id": "33-deadline-6",
+    "date": "2026-09-30",
+    "date_label": "Sep. 30, 2026",
+    "kind": "deadline",
+    "status": "open",
+    "source_dkt": 17,
+    "title": "WATCH — Reply ISO opposition to Dkt. 17 motion to strike due in Nforbi v. Candelaria et al. (3:26-cv-08272-LJC). PACER Deadlines/Hearings Sep. 18 sets Reply 2026-09-30. Civil L.R. 7-3(c).",
+    "actor": "opposing"
+  },
+  {
     "id": "33-deadline-2",
     "date": "2026-10-22",
     "date_label": "Oct. 22, 2026",
@@ -36,10 +56,12 @@
     "id": "33-hearing-4",
     "date": "2026-11-12",
     "date_label": "Nov. 12, 2026",
+    "time": "13:30",
+    "tz": "America/Los_Angeles",
     "kind": "hearing",
     "status": "open",
     "source_dkt": 4,
-    "title": "Initial Case Management Conference, 1:30 p.m. by Zoom (cand.uscourts.gov/ljc) before Magistrate Judge Lisa J. Cisneros — Nforbi v. Candelaria et al.…",
+    "title": "Initial Case Management Conference and Dkt. 17 motion-to-strike hearing, 1:30 p.m. by Zoom (cand.uscourts.gov/ljc) before Magistrate Judge Lisa J. Cisneros — Nforbi v. Candelaria et al. (3:26-cv-08272-LJC). Same slot (PACER Sep. 18).",
     "actor": "you",
     "source": "/documents/matter-33/ndcal/Dkt 04 - Order Setting Initial Case Management Conference and ADR Deadlines (Aug 10 2026).pdf"
   }

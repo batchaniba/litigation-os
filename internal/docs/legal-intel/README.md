@@ -28,7 +28,7 @@ Research input for briefs. Not a brief. If a page does not change a sentence abo
 | 30 Moua | *not yet* | [02](clusters/02-hope-parole-locked-facts.md) | Pre-filing; GCA window |
 | 31 First Advantage | *not yet* | [05](clusters/05-screening-locked-facts.md) | Limitations diary only |
 | 32 Officers | [32](matters/32.md) | [01](clusters/01-nov1-locked-facts.md) | Meza service clean-up; send Li the return |
-| 33 Candelaria | [33](matters/33.md) | [01](clusters/01-nov1-locked-facts.md) | MJ consent/declination Sep. 22 |
+| 33 Candelaria | [33](matters/33.md) | [01](clusters/01-nov1-locked-facts.md) | MJ consent Sep. 22; Dkt. 17 opp. Sep. 23 |
 | 35 Ross | [35](matters/35.md) | — | Caption request; serve CT Corp ~Oct. 25 |
 | 36–39 unfiled | [36–39](matters/36-39.md) | [05](clusters/05-screening-locked-facts.md) | Shared card until each has a case number |
 | 22 Pilot | archive | [05](clusters/05-screening-locked-facts.md) | Settled Jul. 14, 2026 |

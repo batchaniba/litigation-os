@@ -1,12 +1,12 @@
 [
   {
-    "dkt": null,
-    "date": null,
+    "dkt": 18,
+    "date": "2026-09-14",
     "filer": "plaintiff",
     "type": "order",
-    "title": "REVISED Stipulation and Proposed Order to Correct Plaintiff's Name on the Docket (McMahon markup, Sep 10 2026)",
+    "title": "Dkt 18 - Stipulation and Proposed Order to Correct Plaintiff's Name on the Docket (Filed Sep 14 2026, 9:58 a.m. PDT; McMahon revised file)",
     "path": "/documents/matter-33/ndcal/REVISED Stipulation and Proposed Order to Correct Plaintiff's Name on the Docket (McMahon markup, Sep 10 2026).docx",
-    "filed": false
+    "filed": true
   },
   {
     "dkt": null,
@@ -69,6 +69,15 @@
     "type": "amended_complaint",
     "title": "Dkt 09 - Proof of Service - FAC Dkt 06 Mailed to Candelaria and Gordon (CONFORMED, Filed Aug 26 2026)",
     "path": "/documents/matter-33/ndcal/Dkt 09 - Proof of Service - FAC Dkt 06 Mailed to Candelaria and Gordon (CONFORMED, Filed Aug 26 2026).pdf",
+    "filed": true
+  },
+  {
+    "dkt": 16,
+    "date": "2026-09-10",
+    "filer": "plaintiff",
+    "type": "other",
+    "title": "Dkt 16 - Certificate of Interested Entities (Civil L.R. 3-15) (Filed Sep 10 2026, 2:24 p.m. PDT; working copy dated Sep 4)",
+    "path": "/documents/matter-33/ndcal/Certification of Conflicts Interested Entities and Persons (Candelaria Gordon) (Sep 4 2026).pdf",
     "filed": true
   },
   {
