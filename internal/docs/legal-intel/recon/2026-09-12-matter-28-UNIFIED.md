@@ -227,6 +227,10 @@ Penal Code § 3008 is the statutory hook: the certified professional, in consult
 - Do not lead the opposition with *Merrill* and skip preclusion.
 - Penal Code § 9003(c) immunizes certified professionals for **patients’** crimes, not the vendor’s own constitutional torts.
 - Matter 26 and Matter 28 both claim CDL wage loss. Decide the allocation before an opponent frames double recovery (#765 § 4).
+- Do not brief *Meinhardt* as a deeming-an-order-is-a-judgment case. 16 Cal.5th 643 **rejects** that rule (appealability; admin mandate).
+- Do not brief *Estate of Esche* as a QI-threshold holding. Published holding is no interlocutory jurisdiction over a good-faith defense.
+- Do not cite *Wicklund* (unpublished No. 12-35294; 623 F. App'x 338 is a bad reporter cite).
+- If they cite *Blackwell* (24-cv-06494-BLF), lead with the missing Order of Dismissal With Prejudice. Not Cisneros.
 
 ---
 
@@ -265,6 +269,7 @@ None of the research PRs corrected the dashboard. Still wrong if pasted into an 
 | § 290.46 employment-use survey + sweep scripts | #765 other half | **Not absorbed.** That is Matter 26. Leave #765 open for it. |
 | Res judicata kill | #767 (this PR) | Replaced by this file. |
 | Sept. 19 MTD-prep supplement | this pass | `2026-09-19-matter-28-mtd-prep.md`. Closes UNIFIED § 14 holes that change a Monday opposition. |
+| Sept. 19 CL / web verification | this pass (evening) | `2026-09-19-matter-28-cl-web-verification.md`. CDN / CL pass #880/#881 could not run. Corrects *Meinhardt*; confirms *Esche* is jurisdictional; reads *Wicklund*; official *Horn* cite; *Blackwell* Ex. 4; Cisneros MTD dockets. |
 
 ---
 
@@ -290,18 +295,22 @@ Existence checked on CourtListener `type=o` (unauthenticated) 2026-09-12 unless 
 | *Merrill v. Mental Health Sys.* | S.D. Cal. 3:16-cv-01090 (Sept. 13, 2016) | Most dangerous state-action analog | #763 PRIMARY |
 | *Schreiber Distrib.* | 806 F.2d 1393 (9th Cir. **1986**) | Leave to amend, not 2004 | #765 |
 | *Diaz v. Gates* | 420 F.3d 897 (9th Cir. 2005) (en banc) | RICO standing for lost wages | #765. *Horn* confirms the no-personal-injury-bar side |
-| *Medical Marijuana v. Horn* | 604 U.S. ___ (Apr. 2, 2025) | No antecedent-personal-injury bar. Does **not** decide that “business” includes employment | PRIMARY slip op. (2026-09-19) |
+| *Medical Marijuana v. Horn* | **604 U.S. 593** (Apr. 2, 2025) | No antecedent-personal-injury bar. Does **not** decide that “business” includes employment | PRIMARY slip op. + LII / U.S. Reports page proof (2026-09-19 evening) |
+| *ASARCO, LLC v. Union Pac. R.R.* | 765 F.3d 999, 1004 (9th Cir. 2014) | Affirmative defense at 12(b)(6) only if an obvious bar on the face of the complaint | CL FOUND. Pin SECONDARY until F.3d page re-opened |
+| *Meinhardt v. City of Sunnyvale* | 16 Cal.5th 643 (2024) | Appeal clock runs from a document titled “judgment.” Do **not** brief as deeming | PRIMARY (2026-09-19 evening). Admin mandate only |
 
 ---
 
 ## 14. Still open
 
-Closed on 2026-09-19 (see `2026-09-19-matter-28-mtd-prep.md`): PLRA parolee / *Page* / *Talamantes*; § 3008(d)(2) text + 15 C.C.R. § 3574; *Gross v. Samudio* retrieved and distinguished; *Rawson* cert denied Oct. 4, 2021; *Horn* slip op. verified (narrower than the survey); *Sullivan* cite-checked (do not use as a demurrer-as-judgment case); Van Dine's *Ariz. Students' Ass'n*, *DZ Reserve*, *Zetz*, *Cedric Kushner* existence-checked.
+Closed on 2026-09-19 morning (see `2026-09-19-matter-28-mtd-prep.md`): PLRA parolee / *Page* / *Talamantes*; § 3008(d)(2) text + 15 C.C.R. § 3574; *Gross v. Samudio* retrieved and distinguished; *Rawson* cert denied Oct. 4, 2021; *Horn* slip op. verified (narrower than the survey); *Sullivan* cite-checked (do not use as a demurrer-as-judgment case); Van Dine's *Ariz. Students' Ass'n*, *DZ Reserve*, *Zetz*, *Cedric Kushner* existence-checked.
+
+Closed on 2026-09-19 evening (see `2026-09-19-matter-28-cl-web-verification.md` — the CDN/CL pass PRs #880/#881 could not run): *Meinhardt* 16 Cal.5th 643 **rejects** deeming an order a judgment (corrects #881); *Esche* published holding is no interlocutory jurisdiction over a good-faith defense (safe-cite MISCHARACTERIZED stands); *Wicklund* is unpublished No. 12-35294, not 623 F. App'x 338 — drop; *Horn* official cite **604 U.S. 593**; *Blackwell* RJN needed the dismissal-with-prejudice order; *ASARCO* / *Lee* / *Khoja* existence-checked; § 3574 emergency 10/14/24 / permanent 4/17/25 vs. conduct dates; Cisneros **does** decide MTDs (*Frankovich* denied; *D.J.* granted with leave) — opinions unread; Van Dine RECAP is government-adjacent contractors, no SOMP § 1983 MTD; vendor-damages zero reconfirmed.
 
 Still open:
 
 1. Whether a notice of appeal was filed in Matter 5 — irrelevant if there is no judgment.
-2. *Valvo* / *Beazell* / *Sartor* / *Lippert* / *Patsy* full-text PDFs. *Valvo* existence reconfirmed.
+2. *Valvo* / *Beazell* / *Sartor* / *Lippert* / *Patsy* / *ASARCO* full-text reporter PDFs. *Valvo* existence reconfirmed; *ASARCO* pin 1004 is SECONDARY.
 3. *Dwyer* evidentiary-hearing transcript. Endorsed order is Exhibit B to the Matter 19 habeas; Loree attribution stays inside Judge Hill's recitation.
 4. Whether Van Dine moves for a judgment in Dept. 10A. Watch the Stockton portal. Re-pull the register the morning the opposition is drafted.
 5. Matter 6 still undisclosed on the Matter 28 docket.

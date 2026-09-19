@@ -21,6 +21,7 @@ This file does two jobs. First, it inventories the Shannon research already on d
 | Page-keyed SAFE / DO-NOT-USE | `internal/docs/MATTER_28_SAFE_CITE_LIST.md` |
 | Cisneros habits | `legal-intel/judges/lisa-j-cisneros-2026.md` |
 | **PLRA parolee, § 3008(d)(2) text, *Gross*, *Horn*, *Sullivan*, 15 C.C.R. § 3574, Van Dine cite-check** | **This file** |
+| **CL / CDN verification (*Esche*, *Wicklund*, *Meinhardt*, *Blackwell* Ex. 4, Cisneros MTD dockets)** | `2026-09-19-matter-28-cl-web-verification.md` |
 
 ---
 
@@ -209,7 +210,7 @@ Existence via CourtListener `type=o` (unauthenticated) 2026-09-19 unless noted.
 | 15 C.C.R. § 3574(d), (e)(2), (f) | — | May complete before discharge; written good-cause retention | PRIMARY (Cornell LII) |
 | *Gross v. Samudio* | 630 F. App'x 772 (10th Cir. 2015) | Distinguish: admission refusal, public-function only | PRIMARY (10th Cir. CDN PDF) |
 | *Rawson* cert | No. 20-1287 (denied Oct. 4, 2021) | 975 F.3d 742 is final | PRIMARY (SCOTUS docket) |
-| *Horn* | 604 U.S. ___ (Apr. 2, 2025) | No antecedent-personal-injury bar | PRIMARY (slip op.) |
+| *Horn* | 604 U.S. 593 (Apr. 2, 2025) | No antecedent-personal-injury bar | PRIMARY (slip op. + official reporter) |
 | *Sullivan* | 15 Cal.4th 288, 304 (1997) | One-final-judgment definition only; not a demurrer case | CL FOUND |
 | *Valvo* | 67 Cal.App.3d 887 (1977) | Existence reconfirmed; pin still needs reporter PDF | CL FOUND |
 | *Ariz. Students' Ass'n* | 824 F.3d 858 (9th Cir. 2016) | Their 1A cite; reversed dismissal | PRIMARY (CDN PDF) |
@@ -252,11 +253,16 @@ Carry forward from UNIFIED § 9. Additions from this pass in **bold**.
 
 ## 8. Still open after this pass
 
+Evening CL / CDN verification (the pass #880/#881 could not run) is in `2026-09-19-matter-28-cl-web-verification.md`. That file **corrects** #881's *Meinhardt* deeming paragraph, **confirms** the safe-cite *Esche* flag, **reads** *Wicklund* (drop it), and fills the Cisneros-does-decide-MTDs hole at the docket level.
+
+Still open after both September 19 passes:
+
 1. Dept. 10A — whether Van Dine moves for a § 581d judgment, and whether a notice of appeal exists (irrelevant until there is a judgment).
-2. *Valvo* / *Beazell* / *Sartor* / *Lippert* / *Patsy* full-text PDFs. Existence is not the holding.
+2. *Valvo* / *Beazell* / *Sartor* / *Lippert* / *Patsy* / *ASARCO* full-text reporter PDFs. Existence is not the pin.
 3. *Merrill* subsequent history after the 60-day jurisdictional discovery.
 4. Authenticated CourtListener sweep (`sweep-matter28.mjs`) — token was unset here; unauthenticated search ran instead.
 5. *Dwyer* evidentiary-hearing transcript (Mar. 9, 2023). The endorsed order is already Exhibit B to the Matter 19 habeas.
-6. Whether an MTD is on file the morning of Sept. 21 — RECAP as of this compile still ends at Dkt. 14.
+6. Cisneros opinion **text** in *Frankovich* / *D.J.* / *Vicious Brands* — docket disposition only.
+7. Whether an MTD is on file the morning of Sept. 21 — RECAP as of this compile still ends at Dkt. 14.
 
 Nothing here changes the September 21 answer, the October 15 CMC statement, or the October 22 CMC. No PACER was accessed. Nothing was filed.
