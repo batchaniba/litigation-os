@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1429,
-  "totalBytes": 941970140,
+  "fileCount": 1441,
+  "totalBytes": 943083196,
   "files": [
     {
       "path": "/documents/README.md",
@@ -7147,6 +7147,66 @@
       "path": "/documents/matter-29/varela-v-accurate/Dkt 01-1 - Civil Cover Sheet (Jan 21, 2026).meta.json",
       "size": 469,
       "sha256": "bf445f4d0e0b8b7ac811ec9c8ba8dfae6e22958a52e840fd3d61c3463bba453a"
+    },
+    {
+      "path": "/documents/matter-29/walker-v-ronin-staffing/Dkt 01 - Class Action Complaint (Jul 3, 2024).pdf",
+      "size": 590623,
+      "sha256": "1ad15d840b32fb611524cce95bb21772225741bd720451384b7a1b63f318d3f9"
+    },
+    {
+      "path": "/documents/matter-29/walker-v-ronin-staffing/Dkt 14 - Sterling Answer and Affirmative Defenses - Stanzick (Sep 12, 2024).pdf",
+      "size": 177133,
+      "sha256": "aa08995514042021df20b7d3aeacf847d1d60104bc55d71c74916f2414f7d4c1"
+    },
+    {
+      "path": "/documents/matter-29/walker-v-ronin-staffing/Dkt 16 - Stipulation to Dismiss Sterling Without Prejudice (Oct 29, 2024).pdf",
+      "size": 87668,
+      "sha256": "ea0e7ed35e614c75a5e3b9552742ac3a94058b525a4d84b38ae315851b584f6f"
+    },
+    {
+      "path": "/documents/matter-29/walker-v-ronin-staffing/Dkt 16-1 - Proposed Order Dismissing Sterling Without Prejudice (Oct 29, 2024).pdf",
+      "size": 73318,
+      "sha256": "90a7a6f04f45386ecfb397831b623caf97d0ff142d5d5ea1ab99696553ffcb5a"
+    },
+    {
+      "path": "/documents/matter-29/walker-v-ronin-staffing/Dkt 01 - Class Action Complaint (Jul 3, 2024).meta.json",
+      "size": 338,
+      "sha256": "3dc46320e2580149c8bd0f9d925e04650d07510d4e46fb88b501ab708328cc94"
+    },
+    {
+      "path": "/documents/matter-29/walker-v-ronin-staffing/Dkt 01 - Class Action Complaint (Jul 3, 2024).txt",
+      "size": 87658,
+      "sha256": "629293987fdac16b05111b981209b77efb84586c63f994a232931a254d53813a"
+    },
+    {
+      "path": "/documents/matter-29/walker-v-ronin-staffing/Dkt 14 - Sterling Answer and Affirmative Defenses - Stanzick (Sep 12, 2024).meta.json",
+      "size": 374,
+      "sha256": "07bae7983cc69d358253fde81641891b98314fd91bbbde1c2015dcd7247325ed"
+    },
+    {
+      "path": "/documents/matter-29/walker-v-ronin-staffing/Dkt 14 - Sterling Answer and Affirmative Defenses - Stanzick (Sep 12, 2024).txt",
+      "size": 84011,
+      "sha256": "38b1fbfd1a0904165215e29183ca887656890eade89641a69bb33a871f56b115"
+    },
+    {
+      "path": "/documents/matter-29/walker-v-ronin-staffing/Dkt 16 - Stipulation to Dismiss Sterling Without Prejudice (Oct 29, 2024).meta.json",
+      "size": 375,
+      "sha256": "d35a7ec3a40b4d354be4ebcd481f3eaeb3f7b845deb754731497be715deaf5b9"
+    },
+    {
+      "path": "/documents/matter-29/walker-v-ronin-staffing/Dkt 16 - Stipulation to Dismiss Sterling Without Prejudice (Oct 29, 2024).txt",
+      "size": 8941,
+      "sha256": "36a61803099d6325baa8922a54bca1475e9f83e0fea17b8d89308921776f4171"
+    },
+    {
+      "path": "/documents/matter-29/walker-v-ronin-staffing/Dkt 16-1 - Proposed Order Dismissing Sterling Without Prejudice (Oct 29, 2024).meta.json",
+      "size": 385,
+      "sha256": "bfa7d8d7e001b31f0fea62d2a10c427d153c9401ee19a39a580f6a6cb0a40d27"
+    },
+    {
+      "path": "/documents/matter-29/walker-v-ronin-staffing/Dkt 16-1 - Proposed Order Dismissing Sterling Without Prejudice (Oct 29, 2024).txt",
+      "size": 2232,
+      "sha256": "84d283240cdc27f9da16e07a7efed0dcbe515b0033414ded31b6ab5c21891799"
     }
   ]
 }
