@@ -6,6 +6,8 @@ Probes reporter pins against:
      COURTLISTENER_TOKEN is set — the pin API (200 / 404 / 400 / 300)
   2. CourtListener REST search API (unauthenticated /api/rest/v4/search/) as corroboration
   3. Caselaw Access Project bulk metadata at static.case.law (CasesMetadata.json)
+  4. (opt-in --probe-extra) govinfo.gov search API (USCOURTS collection) and
+     cdn.ca9.uscourts.gov (9th Circuit opinion PDFs) — sketch probes, 2026-09-19
 
 Also records reachability for Justia and Google Scholar (usually blocked).
 
@@ -822,6 +824,161 @@ def probe_scholar(citation: str) -> SourceHit:
     )
 
 
+# ---------------------------------------------------------------------------
+# Extra probes (sketch, 2026-09-19) — opt-in via --probe-extra.
+#
+# Sources isolated from the Matter 28 primary-source verification prompt
+# (see internal/docs/citation_verification_sources.json):
+#
+#   govinfo  — GPO's official API. The ONLY authoritative source for unbound
+#              U.S. Reports cites (e.g. Medical Marijuana v. Horn, 604 U.S. ___),
+#              which no reporter PDF, CAP record, or slip-opinion mirror on the
+#              standard probes can resolve yet.
+#   ca9_cdn  — cdn.ca9.uscourts.gov, the 9th Circuit's own opinion PDFs.
+#              Docket-addressable, not citation-addressable, so this probe does
+#              a two-step: CourtListener search -> (docketNumber, dateFiled) ->
+#              candidate datastore URL.
+#
+# Sketch status: function shapes and URL patterns are drafted; the govinfo JSON
+# field names and the exact ca9 datastore filename conventions need a
+# live-response confirmation pass before these count as production probes.
+# They return evidence only — consensus_for() is intentionally untouched.
+# ---------------------------------------------------------------------------
+
+GOVINFO_SEARCH = "https://api.govinfo.gov/search"
+GOVINFO_API_KEY_ENV = "GOVINFO_API_KEY"
+CA9_DATASTORE = "https://cdn.ca9.uscourts.gov/datastore/opinions"
+
+_FEDERAL_REPORTER_SLUGS = {"us", "f2d", "f3d", "f4th", "f-supp-2d", "f-supp-3d", "s-ct"}
+_UNBOUND_US_RE = re.compile(r"\bU\.?\s*S\.?\s*_{2,}\b")
+_CA9_COURT_TAGS = {"ninth circuit", "ca9", "9th cir."}
+
+
+def govinfo_api_key() -> str:
+    """GOVINFO_API_KEY if set, else the public DEMO_KEY (rate-limited)."""
+    return os.environ.get(GOVINFO_API_KEY_ENV) or "DEMO_KEY"
+
+
+def probe_govinfo(citation: str) -> SourceHit:
+    """Sketch: query the govinfo search API (USCOURTS collection) for a pin."""
+    rep = parse_reporter(citation)
+    unbound = bool(_UNBOUND_US_RE.search(citation))
+    if not rep and not unbound:
+        return SourceHit(
+            source="govinfo", found=False, url=GOVINFO_SEARCH,
+            notes="skipped: no federal reporter pin and not an unbound U.S. cite",
+        )
+    if rep and rep["slug"] not in _FEDERAL_REPORTER_SLUGS:
+        return SourceHit(
+            source="govinfo", found=False, url=GOVINFO_SEARCH,
+            notes=f"skipped: reporter slug {rep['slug']!r} is not a federal reporter",
+        )
+    query = rep["pin"] if rep else f'"{guess_name(citation)}"'
+    url = GOVINFO_SEARCH + "?" + urllib.parse.urlencode({
+        "historical": "true",
+        "offsetMark": "*",
+        "pageSize": "10",
+        "query": query,
+        "api_key": govinfo_api_key(),
+    })
+    status, ctype, body = http_get(url)
+    if status != 200:
+        return SourceHit(
+            source="govinfo", found=False, url=url,
+            http_status=status if isinstance(status, int) else None,
+            notes="govinfo search unreachable or errored",
+        )
+    try:
+        data = json.loads(body)
+    except json.JSONDecodeError:
+        return SourceHit(
+            source="govinfo", found=False, url=url, http_status=200,
+            notes="govinfo returned non-JSON",
+        )
+    # Sketch note: confirm these field names against a live response.
+    hits = [
+        r for r in (data.get("results") or [])
+        if (r.get("collectionCode") or "").upper() == "USCOURTS"
+    ]
+    if not hits:
+        return SourceHit(
+            source="govinfo", found=False, url=url, http_status=200,
+            notes=f"no USCOURTS hits for query {query!r}",
+        )
+    top = hits[0]
+    dl = top.get("download") or {}
+    pdf = dl.get("pdfLink") or ""
+    return SourceHit(
+        source="govinfo",
+        found=True,
+        url=pdf or url,
+        case_name=top.get("title") or "",
+        http_status=200,
+        notes=(
+            f"USCOURTS packageId={top.get('packageId')!r}; query={query!r} "
+            "(sketch: pin-vs-title match not asserted)"
+        ),
+    )
+
+
+def _ca9_resolve_docket(citation: str, name_guess: str):
+    """Sketch: citation -> (docket, yyyy, mm, dd) via CourtListener search.
+
+    Only accepts 9th Circuit results. Returns None when nothing resolves.
+    """
+    rep = parse_reporter(citation)
+    q = f'"{rep["pin"]}"' if rep else f'"{name_guess}"'
+    url = CL_SEARCH + "?" + urllib.parse.urlencode({"type": "o", "q": q})
+    status, ctype, body = http_get(url)
+    if status != 200:
+        return None
+    try:
+        data = json.loads(body)
+    except json.JSONDecodeError:
+        return None
+    for r in data.get("results") or []:
+        court = str(r.get("court") or "").lower()
+        if not any(tag in court for tag in _CA9_COURT_TAGS):
+            continue
+        docket = (r.get("docketNumber") or "").strip()
+        filed = (r.get("dateFiled") or "")[:10]
+        if docket and re.match(r"^\d{4}-\d{2}-\d{2}$", filed):
+            y, m, d = filed.split("-")
+            return docket, y, m, d
+    return None
+
+
+def probe_ca9(citation: str) -> SourceHit:
+    """Sketch: verify a cite against the 9th Circuit's own opinion PDFs."""
+    rep = parse_reporter(citation)
+    if not rep or rep["slug"] not in {"f2d", "f3d", "f4th"}:
+        return SourceHit(
+            source="ca9_cdn", found=False, url=CA9_DATASTORE,
+            notes="skipped: needs a federal appellate reporter pin (name-only resolution is too noisy)",
+        )
+    name = guess_name(citation)
+    resolved = _ca9_resolve_docket(citation, name)
+    if not resolved:
+        return SourceHit(
+            source="ca9_cdn", found=False, url=CA9_DATASTORE,
+            notes="could not resolve a 9th Circuit docket number via CourtListener search",
+        )
+    docket, y, m, d = resolved
+    pdf_url = f"{CA9_DATASTORE}/{y}/{m}/{d}/{docket}.pdf"
+    status, ctype, body = http_get(pdf_url, accept="application/pdf")
+    if status == 200 and ((ctype or "").startswith("application/pdf") or body[:4] == b"%PDF"):
+        return SourceHit(
+            source="ca9_cdn", found=True, url=pdf_url,
+            case_name=name, http_status=200,
+            notes=f"docket {docket} resolved; opinion PDF fetched from the 9th Circuit datastore",
+        )
+    return SourceHit(
+        source="ca9_cdn", found=False, url=pdf_url,
+        http_status=status if isinstance(status, int) else None,
+        notes=f"docket {docket} resolved but datastore PDF not fetched (sketch: filename convention unconfirmed)",
+    )
+
+
 def consensus_for(result: LookupResult) -> str:
     pin = next((s for s in result.sources if s.source == "courtlistener_citation"), None)
     cl = next((s for s in result.sources if s.source == "courtlistener"), None)
@@ -872,6 +1029,7 @@ def lookup_one(
     citation: str,
     *,
     include_blocked_probes: bool = False,
+    include_extra_probes: bool = False,
     citation_lookup: str = "auto",
 ) -> LookupResult:
     name = guess_name(citation)
@@ -911,6 +1069,9 @@ def lookup_one(
     if include_blocked_probes:
         result.sources.append(probe_justia(citation))
         result.sources.append(probe_scholar(citation))
+    if include_extra_probes:
+        result.sources.append(probe_govinfo(citation))
+        result.sources.append(probe_ca9(citation))
     consensus_for(result)
     return result
 
@@ -981,6 +1142,11 @@ def main(argv: list[str] | None = None) -> int:
         help="Also probe Justia + Google Scholar (usually 403)",
     )
     ap.add_argument(
+        "--probe-extra",
+        action="store_true",
+        help="Also probe govinfo.gov (GPO API) + cdn.ca9.uscourts.gov (9th Cir. PDFs) — sketch probes, evidence only",
+    )
+    ap.add_argument(
         "--citation-lookup",
         choices=["auto", "always", "never"],
         default="auto",
@@ -1029,6 +1195,7 @@ def main(argv: list[str] | None = None) -> int:
             lookup_one(
                 c,
                 include_blocked_probes=args.probe_blocked,
+                include_extra_probes=args.probe_extra,
                 citation_lookup=args.citation_lookup,
             )
         )
@@ -1045,6 +1212,8 @@ def main(argv: list[str] | None = None) -> int:
             if courtlistener_token()
             else "unset — citation-lookup skipped (set COURTLISTENER_TOKEN)"
         ),
+        "govinfo": "opt-in --probe-extra (GOVINFO_API_KEY or DEMO_KEY)",
+        "ca9_cdn": "opt-in --probe-extra (docket-addressable via CourtListener resolver)",
     }
 
     out = {
