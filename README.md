@@ -430,6 +430,8 @@ Priority queues from the ledger: **P0** = plaintiff-only + still `UNVERIFIED` (`
 
 Full reports: [`CITATION_INDEX.md`](internal/docs/CITATION_INDEX.md) · [`CITATION_AUDIT.md`](internal/docs/CITATION_AUDIT.md) · [`CITATION_VERIFICATION.md`](internal/docs/CITATION_VERIFICATION.md) · Matter 28 safe list [`MATTER_28_SAFE_CITE_LIST.md`](internal/docs/MATTER_28_SAFE_CITE_LIST.md). Claude Code sessions pick this up through the `citation-verify` skill in `.claude/skills/`.
 
+**KeyCite treatment flags (Westlaw).** The scripted funnel covers existence + pin verification; KeyCite treatment flags are the one gap no free source fills. Westlaw access runs only through the San Diego Law Library's Patron Access (never the generic westlaw.com door, which demands a registration key), and it is not scriptable — treatment checks are manual browser spot-checks, batched per frozen draft. Full entry route, seat limits, URL patterns, and the post-draft workflow: [`WESTLAW_PATRON_ACCESS.md`](internal/docs/WESTLAW_PATRON_ACCESS.md).
+
 [↑ Contents](#contents)
 
 ---
