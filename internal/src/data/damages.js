@@ -19,7 +19,7 @@ export const damages_table = [
     { category: "§1983 Monell / Individual + Bane Act + RICO — Shannon Smith / HOPE (Matter 28)", matters: [28], conservative: 249000, moderate: 666000, aggressive: 1510000 },
     { category: "PC §290.46(j) Failure to Hire — Amazon (Matter 29)", matters: [29], conservative: 30000, moderate: 75000, aggressive: 180000 },
     { category: "§1983 Retaliation, Due Process, Bane Act & IIED — Moua (Matter 30)", matters: [30], conservative: 90000, moderate: 225000, aggressive: 525000 },
-    { category: "FCRA / ICRAA Vendor Liability — First Advantage LLC (Matter 31)", matters: [31], conservative: 30000, moderate: 89000, aggressive: 205000 },
+    { category: "Conditional CRA Investigation — First Advantage LLC (Matter 31)", matters: [31], conservative: 0, moderate: 0, aggressive: 0 },
     { category: "N.D. Cal. §1983 Meza-Gonzalez (Matter 32) — pleaded >$214k; $0 here to avoid double-count w/ M1/M2", matters: [32], conservative: 0, moderate: 0, aggressive: 0 },
     { category: "N.D. Cal. §1983 Nforbi v. Candelaria et al. (Matter 33, 3:26-cv-08272-LJC) — pleaded >$214k; $0 here to avoid double-count w/ M7", matters: [33], conservative: 0, moderate: 0, aggressive: 0 },
     { category: "§1983 Monell / Individual + Bane Act — Counseling & Psychotherapy Center (Matter 34)", matters: [34], conservative: 0, moderate: 0, aggressive: 0 },
@@ -687,42 +687,18 @@ const matter_damages_raw = [
   },
   {
     number: 31,
-    claims: "FCRA §1681b(b), FCRA §1681e(b), ICRAA, Negligence Per Se, UCL §17200",
-    risk: "Favorable pattern (same vendor, two registry-flagged reports, two employers, 8 months apart) but untested theory in this portfolio — reaches the CRA rather than the employer that used the report; still constrained by the same information-and-belief gap affecting Matters 25/26 pending discovery of the underlying reports",
-    settlement_note: "Deliberately excludes Emotional Distress / Lost Opportunity — already claimed against FedEx (Matter 25) and UPS (Matter 26) for these same two denials; this matter's exposure is additive (vendor-specific ICRAA/FCRA statutory penalties), not a duplicate of the employer-side claims",
-    conservative: 30000,
-    moderate: 89000,
-    aggressive: 205000,
+    claims: "Conditional CRA theories — FCRA §1681b(b)(1) / §1681e(b) / §1681k / ICRAA only if an independent vendor-specific breach is proven",
+    risk: "HIGH / NOT YET VALUATION-READY. Mendoza defeats direct §290.46 liability for mere CRA republication and rejects the parallel ICRAA §1786.20(c) Megan's-Law-as-EEO theory. Frazier/Muir/Williams also caution that employer-defined CRA adjudication and automated notices do not make First Advantage the final employment decisionmaker. Need the actual reports, employer certifications, service/delegation agreements, §1681k procedures/notices, accuracy record, and audit logs before pricing.",
+    settlement_note: "September 18 stress test supersedes the former $30k/$89k/$205k vendor model. Do not treat employer misuse as automatically additive CRA damages or double-count the same FedEx/UPS lost-opportunity injury. Reprice only after identifying a First Advantage-specific statutory violation.",
+    conservative: 0,
+    moderate: 0,
+    aggressive: 0,
     components: [
       {
-        label: "ICRAA Statutory Damages (Civ. Code §1786.50(a)(1) — not less than $10,000 per willful violation; two independent furnishing events, UPS Jul. 2024 and FedEx Mar. 2025)",
-        conservative: 20000,
-        moderate: 30000,
-        aggressive: 50000
-      },
-      {
-        label: "FCRA Statutory Damages (15 U.S.C. §1681n — willful noncompliance, $100–$1,000 per violation per report furnished; two reports)",
-        conservative: 2000,
-        moderate: 4000,
-        aggressive: 10000
-      },
-      {
-        label: "FCRA §1681e(b) Reasonable-Procedures Failure — Actual Damages (failure to exclude/flag categorically prohibited registry information despite First Advantage's own statutory disclaimer already printed on its notices)",
+        label: "UNPRICED — identify vendor-specific breach first (certification, accuracy, §1681k, reinvestigation, delegated duty, or independent decision authority)",
         conservative: 0,
-        moderate: 15000,
-        aggressive: 40000
-      },
-      {
-        label: "Punitive Damages (Civ. Code §3294 / ICRAA willfulness — same vendor, two separate adverse actions eight months apart, evidencing a systemic practice rather than an isolated error)",
-        conservative: 0,
-        moderate: 20000,
-        aggressive: 60000
-      },
-      {
-        label: "Attorney Fees (ICRAA Civ. Code §1786.50(a)(2) mandatory fee-shifting + FCRA §1681n/o)",
-        conservative: 8000,
-        moderate: 20000,
-        aggressive: 45000
+        moderate: 0,
+        aggressive: 0
       }
     ]
   },

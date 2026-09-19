@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1308,
-  "totalBytes": 906004811,
+  "fileCount": 1416,
+  "totalBytes": 934268033,
   "files": [
     {
       "path": "/documents/README.md",
@@ -4124,6 +4124,111 @@
       "sha256": "39da6c0f62e4976217603cf87ed8acfc2414914c841f0a4d69623403efa5b720"
     },
     {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 01 - Complaint (Jan 31, 2025).meta.json",
+      "size": 375,
+      "sha256": "1b0a291fce64cafdc233170b08853e3c4305c534d357d5b3f44ae0250bdaadd0"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 01 - Complaint (Jan 31, 2025).pdf",
+      "size": 296354,
+      "sha256": "b813536b52fa472bc00a65e745533f54ac8b87299e0e47cae704f2665c9a87ec"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 01 - Complaint (Jan 31, 2025).txt",
+      "size": 82513,
+      "sha256": "7dcaf81a5f439533bf2af71db6c9d477af2de8f620e46941e502dd0bbd6c9dd3"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 55 - Motion for Class Certification (Jan 14, 2026).meta.json",
+      "size": 381,
+      "sha256": "955bb43863c2dae6871eb38b787757bc5736bc2d86aef4802b45a07332b4ace9"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 55 - Motion for Class Certification (Jan 14, 2026).pdf",
+      "size": 762749,
+      "sha256": "103a375aaf796240fe2f748f6edaf9a212306203b1184f1e3f4777b9cdece6b9"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 55 - Motion for Class Certification (Jan 14, 2026).txt",
+      "size": 75153,
+      "sha256": "56bbea2244c34322ec921441b24585a7f8fe7eb901391fcef1695aa07fdbf4ca"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56 - Vons Opposition to Class Certification (Feb 18, 2026).meta.json",
+      "size": 361,
+      "sha256": "818016e7e1a41ed465fc76e495fff13d05243504ec56cb8ec50770a8bee52cc6"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56 - Vons Opposition to Class Certification (Feb 18, 2026).pdf",
+      "size": 569899,
+      "sha256": "99a77f892e84df664184dea6527683ba24759aa803d25ee9adeeb5d6d836a3ad"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56 - Vons Opposition to Class Certification (Feb 18, 2026).txt",
+      "size": 128034,
+      "sha256": "190f2fa81bdebac7ed09e3b56c804905581f9469037c77f43816f76b1193b406"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 57 - Asurint Opposition to Class Certification - Stanzick (Feb 18, 2026).meta.json",
+      "size": 405,
+      "sha256": "da31cc5988736ad2663cb87ff811cbdca8afd38ae8bb858437a6274c64ba74fb"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 57 - Asurint Opposition to Class Certification - Stanzick (Feb 18, 2026).pdf",
+      "size": 255973,
+      "sha256": "2aaa9f887a7fce4bb53c6e0d625e7d6c50fabdece786d52459bb69a313eba5ea"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 57 - Asurint Opposition to Class Certification - Stanzick (Feb 18, 2026).txt",
+      "size": 82200,
+      "sha256": "d759bf65975b9b2e284f3ba8869f88a316d38dfdbc21328d0d364dc768e9bb1b"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 58 - Reply ISO Class Certification (Mar 25, 2026).meta.json",
+      "size": 326,
+      "sha256": "76e484aed06589f88bca4f754cd769b63d6c71feaf113049d8ad2d100ac37b5e"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 58 - Reply ISO Class Certification (Mar 25, 2026).pdf",
+      "size": 302469,
+      "sha256": "6b8e68ca49f5df9ce651d62fc37970b27d996f422d5f2ef6463d181b4365b68b"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 58 - Reply ISO Class Certification (Mar 25, 2026).txt",
+      "size": 32473,
+      "sha256": "929a1c9c39f77017a4698aed2f6cdc58d113f5d3a8dc10bf377bd9e832aa797f"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 59 - Reply ISO Class Certification (Mar 25, 2026).meta.json",
+      "size": 347,
+      "sha256": "17531c3a4ce654998cb3bcef96476e0dcd74fdb9b6afa208a4e5501a9ee39829"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 59 - Reply ISO Class Certification (Mar 25, 2026).pdf",
+      "size": 278247,
+      "sha256": "dc9b1879b5b273c706b1161250c4e281496b223aeaaca6bc46b10a223a258f01"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 59 - Reply ISO Class Certification (Mar 25, 2026).txt",
+      "size": 26357,
+      "sha256": "cb0f98c89938c0363002e9ffe81fb70dbfdf2b5f132ac59f5ee38fdee9d8d55a"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Docket History (as of Sep 18, 2026).meta.json",
+      "size": 423,
+      "sha256": "bd25c1d22e0dd0f4c78b01f212f54eaaab4f8d8ef7669773c94a93ebae20c09a"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Docket History (as of Sep 18, 2026).pdf",
+      "size": 169012,
+      "sha256": "0448821fb2384a246968a3647efd0083cdbc6b82c230949911e7f3d5a231cb67"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Docket History (as of Sep 18, 2026).txt",
+      "size": 11884,
+      "sha256": "6e57829001d6ac6762fc9727e66c2d2262ee6fb20e60829f1a64a982140a09a7"
+    },
+    {
       "path": "/documents/matter-29/lerma-v-amazon/Dkt 01 - Class Action Complaint (Sep 21, 2022).pdf",
       "size": 307991,
       "sha256": "a1830f777ef43dac877e09ec43373efda525e8bfd2a601204e819b0ae38137f5"
@@ -4467,6 +4572,441 @@
       "path": "/documents/matter-29/lerma-v-amazon/Docket Sheet (as of Jul 27, 2026).pdf",
       "size": 291565,
       "sha256": "6927e492d2b895bec452164f77b60482e12cf9d026d51e1468750b8705515e9a"
+    },
+    {
+      "path": "/documents/matter-29/martin-v-assurehire/Dkt 01 - Complaint (Apr 20, 2026).meta.json",
+      "size": 500,
+      "sha256": "ea070eeeeecd8417db392b7a652f30933a2b9b49cb9b123129ff6e21e1a61252"
+    },
+    {
+      "path": "/documents/matter-29/martin-v-assurehire/Dkt 01 - Complaint (Apr 20, 2026).pdf",
+      "size": 2286765,
+      "sha256": "6cdfedde0b2bcc65215023527cf449a230fb94171044b5410ad03af598afc125"
+    },
+    {
+      "path": "/documents/matter-29/martin-v-assurehire/Dkt 01 - Complaint (Apr 20, 2026).txt",
+      "size": 10300,
+      "sha256": "5db8cce462b4796989249a529352197f4fc7df666a854e2d4136591283f31b4e"
+    },
+    {
+      "path": "/documents/matter-29/martin-v-assurehire/Docket Sheet (as of Sep 18, 2026).meta.json",
+      "size": 448,
+      "sha256": "a0a8efcd754d1af385d1fad82b206b316e11bc0ba92604870862d5dbabe896e9"
+    },
+    {
+      "path": "/documents/matter-29/martin-v-assurehire/Docket Sheet (as of Sep 18, 2026).pdf",
+      "size": 137303,
+      "sha256": "cd03527b66a69052bab7cb738c5580a6efcc1dae08048c2676c3365e6f1f8dad"
+    },
+    {
+      "path": "/documents/matter-29/martin-v-assurehire/Docket Sheet (as of Sep 18, 2026).txt",
+      "size": 7084,
+      "sha256": "01b6de75970fc6a150d9c9c5e6ba8aa07a4243b83612a10e7fbb64ab7f8adb96"
+    },
+    {
+      "path": "/documents/matter-29/rangel-v-accurate/Dkt 01 - Complaint (Aug 1, 2025).meta.json",
+      "size": 530,
+      "sha256": "feda04a527585d8672602b62e144df3eba19de107e0f692b566156929f63203a"
+    },
+    {
+      "path": "/documents/matter-29/rangel-v-accurate/Dkt 01 - Complaint (Aug 1, 2025).pdf",
+      "size": 1089727,
+      "sha256": "d08d2bbaf49c14d49af380874f63dc8fe5b9d0a5c7236dba81de53d30be51258"
+    },
+    {
+      "path": "/documents/matter-29/rangel-v-accurate/Dkt 01 - Complaint (Aug 1, 2025).txt",
+      "size": 45987,
+      "sha256": "dd9091f0efc99208458e83cf4269ed1d01b799e76c80e0ba975e2081b0111ec0"
+    },
+    {
+      "path": "/documents/matter-29/rangel-v-accurate/Dkt 08 - Defendant's Answer and Affirmative Defenses (Sep 26, 2025).meta.json",
+      "size": 697,
+      "sha256": "1102283953e2638c0a89eed6d28580d9d0183f72f0eabe9189b7698b3296b01a"
+    },
+    {
+      "path": "/documents/matter-29/rangel-v-accurate/Dkt 08 - Defendant's Answer and Affirmative Defenses (Sep 26, 2025).pdf",
+      "size": 107317,
+      "sha256": "d768d65c91bf2f44b4a37434da8b9d9c701bdaafb22549553c7d0672314a4d9f"
+    },
+    {
+      "path": "/documents/matter-29/rangel-v-accurate/Dkt 08 - Defendant's Answer and Affirmative Defenses (Sep 26, 2025).txt",
+      "size": 50887,
+      "sha256": "4554428b703e704ea551934b34a0b2575c5cf8bdc6407c725b82debe1851d51d"
+    },
+    {
+      "path": "/documents/matter-29/rangel-v-accurate/Dkt 13 - Notice of Settlement (Dec 1, 2025).meta.json",
+      "size": 420,
+      "sha256": "14ec27f3a38b9d3c7c291540f6b5296f4a2046c280b66d0830504ffec667e888"
+    },
+    {
+      "path": "/documents/matter-29/rangel-v-accurate/Dkt 13 - Notice of Settlement (Dec 1, 2025).pdf",
+      "size": 216220,
+      "sha256": "83c060e4fdfd3888de2bdc72a48ba2417d1c8485cc94a6f27b05feec89a4ffc5"
+    },
+    {
+      "path": "/documents/matter-29/rangel-v-accurate/Dkt 13 - Notice of Settlement (Dec 1, 2025).txt",
+      "size": 2518,
+      "sha256": "ce5e7f29ca1bb2544fab2a69e012dfdebaacc8299ad089933ce9832d5cc680cd"
+    },
+    {
+      "path": "/documents/matter-29/rangel-v-accurate/Docket Sheet (as of Sep 18, 2026).meta.json",
+      "size": 350,
+      "sha256": "6c91431d928a67127dc23465537478686b65e71ad9a23618ee02a642a8df7c04"
+    },
+    {
+      "path": "/documents/matter-29/rangel-v-accurate/Docket Sheet (as of Sep 18, 2026).pdf",
+      "size": 186306,
+      "sha256": "110b18873cd7c5b3a67fa5c65f5c69913b7227678cb956c23df79713d7d47384"
+    },
+    {
+      "path": "/documents/matter-29/rangel-v-accurate/Docket Sheet (as of Sep 18, 2026).txt",
+      "size": 12200,
+      "sha256": "7e1fbde01445196638797d5a4b87833862e765ce41d177bb7cfa6a43b852f1de"
+    },
+    {
+      "path": "/documents/matter-29/rosenberg-v-first-advantage/Dkt 15 - Defendant's Answer and Affirmative Defenses (Sep 16, 2026).meta.json",
+      "size": 657,
+      "sha256": "774b25d49454a2d9b5c388ee4902bdeb402b34f76fe0760393010f400c342a7a"
+    },
+    {
+      "path": "/documents/matter-29/rosenberg-v-first-advantage/Dkt 15 - Defendant's Answer and Affirmative Defenses (Sep 16, 2026).pdf",
+      "size": 456477,
+      "sha256": "f6afa644199550a5a52c248cd06e15bf475f9b4a447640192b2d480c69ddfcfb"
+    },
+    {
+      "path": "/documents/matter-29/rosenberg-v-first-advantage/Dkt 15 - Defendant's Answer and Affirmative Defenses (Sep 16, 2026).txt",
+      "size": 45539,
+      "sha256": "eab1f93c0046c2364278a9e01b6f27bdf3bec99dbdc7ae0e8faf7fac1ae044e9"
+    },
+    {
+      "path": "/documents/matter-29/rosenberg-v-first-advantage/Docket Sheet (as of Sep 18, 2026).meta.json",
+      "size": 396,
+      "sha256": "bd4ed5ca2b8e02595473bcbcc77aa1e53b96801c86d9e69604cdbd491c9889fa"
+    },
+    {
+      "path": "/documents/matter-29/rosenberg-v-first-advantage/Docket Sheet (as of Sep 18, 2026).pdf",
+      "size": 203122,
+      "sha256": "01354eb14195b549df076e42e926212d42abb17149686ee4bac492b3f30785ec"
+    },
+    {
+      "path": "/documents/matter-29/rosenberg-v-first-advantage/Docket Sheet (as of Sep 18, 2026).txt",
+      "size": 13749,
+      "sha256": "a2c0dd71b02cebdfbf492cc80a35695a8eaa90dcb77a3d87dd35543a33bdc777"
+    },
+    {
+      "path": "/documents/matter-29/santee-v-accurate/Dkt 01 - Complaint (Oct 21, 2025).meta.json",
+      "size": 438,
+      "sha256": "09e743a62633b8cc094429c9751140c82c4917018cd29063894d2d83a8d2c8e4"
+    },
+    {
+      "path": "/documents/matter-29/santee-v-accurate/Dkt 01 - Complaint (Oct 21, 2025).pdf",
+      "size": 180989,
+      "sha256": "b93636312eb411dfba152d5421c805c650e938b61b9a772e4405d18a12b8b57d"
+    },
+    {
+      "path": "/documents/matter-29/santee-v-accurate/Dkt 01 - Complaint (Oct 21, 2025).txt",
+      "size": 22397,
+      "sha256": "6ea80bbbb2efec98bddfcb2dab7655b5698419959d404b0c14cfc999afba0bfa"
+    },
+    {
+      "path": "/documents/matter-29/santee-v-accurate/Dkt 14 - Defendant's Answer and Affirmative Defenses (Dec 22, 2025).meta.json",
+      "size": 479,
+      "sha256": "1b4fe883bd905fae41d1af8c622af26f49f460459857d44ee3b7a8e814a682cf"
+    },
+    {
+      "path": "/documents/matter-29/santee-v-accurate/Dkt 14 - Defendant's Answer and Affirmative Defenses (Dec 22, 2025).pdf",
+      "size": 237858,
+      "sha256": "7e5084d11d6cd97e7c92b6db37f4096160690898b6d8e0e915dbcdb410c552f8"
+    },
+    {
+      "path": "/documents/matter-29/santee-v-accurate/Dkt 14 - Defendant's Answer and Affirmative Defenses (Dec 22, 2025).txt",
+      "size": 47406,
+      "sha256": "4d05730dd272aa2cb37a25d71c84d77cfc974d41984be1c19c6b6a3905e3c093"
+    },
+    {
+      "path": "/documents/matter-29/santee-v-accurate/Dkt 18 - Plaintiff's Acceptance of Rule 68 Offer of Judgment (Dec 23, 2025).meta.json",
+      "size": 414,
+      "sha256": "220fd5b2b9fee116cfbacdb2bf7e1d1e5a31a3c644f259bb7df14213bdef6926"
+    },
+    {
+      "path": "/documents/matter-29/santee-v-accurate/Dkt 18 - Plaintiff's Acceptance of Rule 68 Offer of Judgment (Dec 23, 2025).pdf",
+      "size": 99363,
+      "sha256": "80719930dc93c73245625c410837d53816fb779414b46e3849590f20b2f7fb02"
+    },
+    {
+      "path": "/documents/matter-29/santee-v-accurate/Dkt 18 - Plaintiff's Acceptance of Rule 68 Offer of Judgment (Dec 23, 2025).txt",
+      "size": 1669,
+      "sha256": "9adba2f06d21b900f425f1dc9dc80009b1e7631ba20a6f2bc8c50455c0ef0c8e"
+    },
+    {
+      "path": "/documents/matter-29/santee-v-accurate/Dkt 18-1 - Defendant's Rule 68 Offer of Judgment - $10,000 plus fees (Dec 15, 2025).meta.json",
+      "size": 456,
+      "sha256": "004d5483817944b03a84acbdf6d0b3a48567419dd9674804169c45fb22267fd2"
+    },
+    {
+      "path": "/documents/matter-29/santee-v-accurate/Dkt 18-1 - Defendant's Rule 68 Offer of Judgment - $10,000 plus fees (Dec 15, 2025).pdf",
+      "size": 34393,
+      "sha256": "d8ef9ad607eeb090d626b0a9b62ae33950df5b731a1062790d2fe6710d81328b"
+    },
+    {
+      "path": "/documents/matter-29/santee-v-accurate/Dkt 18-1 - Defendant's Rule 68 Offer of Judgment - $10,000 plus fees (Dec 15, 2025).txt",
+      "size": 6458,
+      "sha256": "f05bca5a8b48590f41c2112a6bbbae30e3b42f152e33ee6108e3f98216ccc7a7"
+    },
+    {
+      "path": "/documents/matter-29/santee-v-accurate/Dkt 21 - Plaintiff's Motion for Attorney's Fees (Jan 8, 2026).meta.json",
+      "size": 389,
+      "sha256": "c08622f9ed900f5ed2ee34573307a7636db2273ae2706d80e493b0b306bdbd4b"
+    },
+    {
+      "path": "/documents/matter-29/santee-v-accurate/Dkt 21 - Plaintiff's Motion for Attorney's Fees (Jan 8, 2026).pdf",
+      "size": 195616,
+      "sha256": "4702453ab97287edf33119db54e80a0b78b1b564834a0b61972d01117019f08e"
+    },
+    {
+      "path": "/documents/matter-29/santee-v-accurate/Dkt 21 - Plaintiff's Motion for Attorney's Fees (Jan 8, 2026).txt",
+      "size": 5585,
+      "sha256": "e6fb5013409a7482e982321f3617364e2cb6d2200e4ee72e00d7806edb3f32db"
+    },
+    {
+      "path": "/documents/matter-29/santee-v-accurate/Dkt 21-1 - Exhibit to Fees Motion - blank as filed (Jan 8, 2026).meta.json",
+      "size": 351,
+      "sha256": "9ea1cca738257b4f5eabbf8b32c44693f97e4efeaf9dc719868f5650169ad217"
+    },
+    {
+      "path": "/documents/matter-29/santee-v-accurate/Dkt 21-1 - Exhibit to Fees Motion - blank as filed (Jan 8, 2026).pdf",
+      "size": 2395861,
+      "sha256": "6c94d23eeb179ac30c9f0b94f0845672e78f1234f1b273ec8236dca3096702ad"
+    },
+    {
+      "path": "/documents/matter-29/santee-v-accurate/Dkt 21-1 - Exhibit to Fees Motion - blank as filed (Jan 8, 2026).txt",
+      "size": 744,
+      "sha256": "18d85795c507cfda6b6c8bae1814c4dc6ed704e4092bc355a45beda277c729df"
+    },
+    {
+      "path": "/documents/matter-29/santee-v-accurate/Dkt 21-2 - Billing Activities Export ISO Fees Motion (Jan 8, 2026).meta.json",
+      "size": 370,
+      "sha256": "98545d34cc378e1884eada63dc2f3f525a7dce395d50621ad2288c67a5c7c46e"
+    },
+    {
+      "path": "/documents/matter-29/santee-v-accurate/Dkt 21-2 - Billing Activities Export ISO Fees Motion (Jan 8, 2026).pdf",
+      "size": 72604,
+      "sha256": "af47a1f73c745cbc30673ad5abd649e54876f653d63bb5b9eaef661917bb320e"
+    },
+    {
+      "path": "/documents/matter-29/santee-v-accurate/Dkt 21-2 - Billing Activities Export ISO Fees Motion (Jan 8, 2026).txt",
+      "size": 20292,
+      "sha256": "830036b5881804e93a8cca22374f677e60473d31472393a1ad70f923dbdf6d17"
+    },
+    {
+      "path": "/documents/matter-29/santee-v-accurate/Docket Sheet (as of Sep 18, 2026).meta.json",
+      "size": 350,
+      "sha256": "0ce933a27ba322c8bd0e6956b3dbe5da711e47883e113e54815383b78eaec6b5"
+    },
+    {
+      "path": "/documents/matter-29/santee-v-accurate/Docket Sheet (as of Sep 18, 2026).pdf",
+      "size": 160967,
+      "sha256": "57625cd6a5a629771af95d10b31db4bc16413738b7915799ac9d49901c8cb51a"
+    },
+    {
+      "path": "/documents/matter-29/santee-v-accurate/Docket Sheet (as of Sep 18, 2026).txt",
+      "size": 13383,
+      "sha256": "7a55d99261768e6bf927bce14852fca3b5e0db759f5f79f9fa97002513b7b1c8"
+    },
+    {
+      "path": "/documents/matter-29/stanzick-searches/C.D. Cal. Attorney Search - Stanzick (Sep 18, 2026).meta.json",
+      "size": 394,
+      "sha256": "8162a55a8255b3f587358071520f9e834495ef1f75d57a907e7433f46748ff76"
+    },
+    {
+      "path": "/documents/matter-29/stanzick-searches/C.D. Cal. Attorney Search - Stanzick (Sep 18, 2026).pdf",
+      "size": 119961,
+      "sha256": "35e4952c5d36926606b92898790933c79ef06970ce86eebb36fae67e4e313af3"
+    },
+    {
+      "path": "/documents/matter-29/stanzick-searches/C.D. Cal. Attorney Search - Stanzick (Sep 18, 2026).txt",
+      "size": 8773,
+      "sha256": "8769dfb54405f50cad48a4c9d5dd8e97289293edfceaeb9e506f262ab41432b4"
+    },
+    {
+      "path": "/documents/matter-29/stanzick-searches/E.D. Cal. Attorney Search - Stanzick (Sep 18, 2026).meta.json",
+      "size": 371,
+      "sha256": "dcb3a7da6c4356536bd642d693e22b7490aba731c433df46be6672cd994cd8c1"
+    },
+    {
+      "path": "/documents/matter-29/stanzick-searches/E.D. Cal. Attorney Search - Stanzick (Sep 18, 2026).pdf",
+      "size": 103104,
+      "sha256": "a29ba97308c3fb7757b618ae5fde99417ee68083492450044b22ccf0e271760a"
+    },
+    {
+      "path": "/documents/matter-29/stanzick-searches/E.D. Cal. Attorney Search - Stanzick (Sep 18, 2026).txt",
+      "size": 2453,
+      "sha256": "4dcd6c42303f222924fb42718896a6c1a9958203c840d34555ab34c14e4f9e1e"
+    },
+    {
+      "path": "/documents/matter-29/stanzick-searches/N.D. Cal. Attorney Search - Stanzick (Sep 18, 2026).meta.json",
+      "size": 495,
+      "sha256": "52f04c88410bc9363653ac40c9e4094b6e01aa57171831f47693c92d604a2240"
+    },
+    {
+      "path": "/documents/matter-29/stanzick-searches/N.D. Cal. Attorney Search - Stanzick (Sep 18, 2026).pdf",
+      "size": 111857,
+      "sha256": "b2502d57e65104812b83fc4639337e96fa54ad652f7b9c1803d896a02b72cbcc"
+    },
+    {
+      "path": "/documents/matter-29/stanzick-searches/N.D. Cal. Attorney Search - Stanzick (Sep 18, 2026).txt",
+      "size": 3808,
+      "sha256": "ccf479def3621db952476cd3f6a38b5b3fc9182a8e55f94997b1ff6c58f49d94"
+    },
+    {
+      "path": "/documents/matter-29/stanzick-searches/S.D. Cal. Attorney Search - Stanzick (Sep 18, 2026).meta.json",
+      "size": 383,
+      "sha256": "33642abd43a1cce5ae531e31b89d6b8038cb83f046251ce1aefb5ed6da03fe09"
+    },
+    {
+      "path": "/documents/matter-29/stanzick-searches/S.D. Cal. Attorney Search - Stanzick (Sep 18, 2026).pdf",
+      "size": 118179,
+      "sha256": "f93f9cb9c52327eb3de1be46105588c77fdb704c263d15f6d2dc72599a69001c"
+    },
+    {
+      "path": "/documents/matter-29/stanzick-searches/S.D. Cal. Attorney Search - Stanzick (Sep 18, 2026).txt",
+      "size": 2861,
+      "sha256": "115a1a1b7550af03bb290a43d8c7329bd7446409cd86a9169cf8185d79ba18a1"
+    },
+    {
+      "path": "/documents/matter-29/varela-v-accurate/Dkt 01 - Complaint (Jan 21, 2026).meta.json",
+      "size": 492,
+      "sha256": "96524544894ca9a2567115999825497ba3fa7ded3bc229187103ad8880e7ad29"
+    },
+    {
+      "path": "/documents/matter-29/varela-v-accurate/Dkt 01 - Complaint (Jan 21, 2026).pdf",
+      "size": 249612,
+      "sha256": "ba8a6cd3d6078ab9d14955de5d2128c555bac195133323c81f82580bc3c64586"
+    },
+    {
+      "path": "/documents/matter-29/varela-v-accurate/Dkt 01 - Complaint (Jan 21, 2026).txt",
+      "size": 19292,
+      "sha256": "d801d64d4f54b786aaf64b7666a80af0fd7adc00554d91aa90005af113645a14"
+    },
+    {
+      "path": "/documents/matter-29/varela-v-accurate/Dkt 13 - Defendant's Answer and Affirmative Defenses (Mar 30, 2026).meta.json",
+      "size": 558,
+      "sha256": "63e78e0f462abd9b92e84af5d3771ef45b3d3744eb43c0ec71007cebd18a4c4a"
+    },
+    {
+      "path": "/documents/matter-29/varela-v-accurate/Dkt 13 - Defendant's Answer and Affirmative Defenses (Mar 30, 2026).pdf",
+      "size": 450746,
+      "sha256": "262c1d6b14f9b5e81d018bd45b7624733caf882f4eeab4918b1b1f42f3fecfa3"
+    },
+    {
+      "path": "/documents/matter-29/varela-v-accurate/Dkt 13 - Defendant's Answer and Affirmative Defenses (Mar 30, 2026).txt",
+      "size": 34615,
+      "sha256": "44df10cebbfe4044040731bfdd332264e07046ca8122ca3dd7e0e4fa945457bb"
+    },
+    {
+      "path": "/documents/matter-29/varela-v-accurate/Dkt 15 - Joint Rule 26(f) Report (Apr 23, 2026).meta.json",
+      "size": 467,
+      "sha256": "4c4c6599a996930fc771c79a4e3c651f2b930e0ba15498966c55a177df20d0de"
+    },
+    {
+      "path": "/documents/matter-29/varela-v-accurate/Dkt 15 - Joint Rule 26(f) Report (Apr 23, 2026).pdf",
+      "size": 245409,
+      "sha256": "a21f39abecee9c8bfaa79dced21e115331a9bd3f52c258aff5278fa97d73ee20"
+    },
+    {
+      "path": "/documents/matter-29/varela-v-accurate/Dkt 15 - Joint Rule 26(f) Report (Apr 23, 2026).txt",
+      "size": 19634,
+      "sha256": "e540b8ba2f6e9794c87e9afc78cb20dc6d986902729d7358959f2dd10fabf2cd"
+    },
+    {
+      "path": "/documents/matter-29/varela-v-accurate/Dkt 15-1 - Pretrial Dates Worksheet (Apr 23, 2026).meta.json",
+      "size": 369,
+      "sha256": "d304a0e268495ffe8a2ab8d33a3415ecbdda47a60a0d880298107760ec837449"
+    },
+    {
+      "path": "/documents/matter-29/varela-v-accurate/Dkt 15-1 - Pretrial Dates Worksheet (Apr 23, 2026).pdf",
+      "size": 137891,
+      "sha256": "4b6c13093160b767ea88f4246c90fa83daf1f3dd8401b357efffa9fe91ccfd8a"
+    },
+    {
+      "path": "/documents/matter-29/varela-v-accurate/Dkt 15-1 - Pretrial Dates Worksheet (Apr 23, 2026).txt",
+      "size": 3311,
+      "sha256": "5813dee865ef2c139b1ec59f537707a34b6be02a057fb861321a5784f59f1c85"
+    },
+    {
+      "path": "/documents/matter-29/varela-v-accurate/Dkt 23 - Ex Parte Application re Rule 60(b) with Settlement Agreement Ex. A (Jun 19, 2026).meta.json",
+      "size": 540,
+      "sha256": "e6e60d918895c48057eeca1f4f1f1582cc35668ada62584f9d6db5160af3f1db"
+    },
+    {
+      "path": "/documents/matter-29/varela-v-accurate/Dkt 23 - Ex Parte Application re Rule 60(b) with Settlement Agreement Ex. A (Jun 19, 2026).pdf",
+      "size": 14143637,
+      "sha256": "4d7e2f0c7e43f96c8e9ce0f406b328dce0d76109ff2cf6ff9067513d5bb16597"
+    },
+    {
+      "path": "/documents/matter-29/varela-v-accurate/Dkt 23 - Ex Parte Application re Rule 60(b) with Settlement Agreement Ex. A (Jun 19, 2026).txt",
+      "size": 120262,
+      "sha256": "d753d962dbf6c99b70306022236af4ce0ff3f7f7fea36dd4339f0cbf5f3aa79b"
+    },
+    {
+      "path": "/documents/matter-29/varela-v-accurate/Dkt 25 - Defendant's Opposition to Ex Parte Application (Jul 1, 2026).meta.json",
+      "size": 500,
+      "sha256": "4575b92d901c94928f5a32ea718a151644aba0ed8031362a399706bb5ab2d3cd"
+    },
+    {
+      "path": "/documents/matter-29/varela-v-accurate/Dkt 25 - Defendant's Opposition to Ex Parte Application (Jul 1, 2026).pdf",
+      "size": 225041,
+      "sha256": "0e7e21d339185363307357a172525da83d381945b4907a810f1ea08ce2b5a3bd"
+    },
+    {
+      "path": "/documents/matter-29/varela-v-accurate/Dkt 25 - Defendant's Opposition to Ex Parte Application (Jul 1, 2026).txt",
+      "size": 14254,
+      "sha256": "1c3012b4a6b13799c305a1cdc84340a14fb6ff29dfe1fa49d099bbbdd55bc847"
+    },
+    {
+      "path": "/documents/matter-29/varela-v-accurate/Docket Sheet (as of Sep 18, 2026).meta.json",
+      "size": 349,
+      "sha256": "0fe2e16575202f659ceb58e0c9ec72a58c1787a34a930a24c95b2ccc675ea487"
+    },
+    {
+      "path": "/documents/matter-29/varela-v-accurate/Docket Sheet (as of Sep 18, 2026).pdf",
+      "size": 162758,
+      "sha256": "35638db3cfc2bb308c17a78a6086576efac32f9b32fc2c35629d8084b9efaf90"
+    },
+    {
+      "path": "/documents/matter-29/varela-v-accurate/Docket Sheet (as of Sep 18, 2026).txt",
+      "size": 14760,
+      "sha256": "8c314311fef1066394cc189588484193d56aaa991b0ec9e97e3ff6716939ecaf"
+    },
+    {
+      "path": "/documents/matter-29/walker-v-ronin-staffing/Docket Report (as of Sep 18, 2026).meta.json",
+      "size": 364,
+      "sha256": "7f499c5abb17ac93bbb5fbeb9ffa93b1d8ba2a2688bfa09260c4c0a733eb8cf9"
+    },
+    {
+      "path": "/documents/matter-29/walker-v-ronin-staffing/Docket Report (as of Sep 18, 2026).pdf",
+      "size": 251226,
+      "sha256": "ebfbeeb0017ebe1773e5de8de1ea5a1754a7b5b7d6095ba436f25d7a858d0322"
+    },
+    {
+      "path": "/documents/matter-29/walker-v-ronin-staffing/Docket Report (as of Sep 18, 2026).txt",
+      "size": 59724,
+      "sha256": "c49da7cd10ea1a6f070881a2b2d085f43c8b2728e11f11ef5debc2d474a90ece"
+    },
+    {
+      "path": "/documents/matter-29/walker-v-ronin-staffing/Docket Report - History (as of Sep 18, 2026).meta.json",
+      "size": 382,
+      "sha256": "247fe0f01a3176b7c15e54b7f6d65eed3d739679aafaf4bd1fdb906075a27f08"
+    },
+    {
+      "path": "/documents/matter-29/walker-v-ronin-staffing/Docket Report - History (as of Sep 18, 2026).pdf",
+      "size": 167455,
+      "sha256": "29d73b2e2e6e4a3000890b7672c80d7f324849f7ddf42f3573cf63ee1a2501d8"
+    },
+    {
+      "path": "/documents/matter-29/walker-v-ronin-staffing/Docket Report - History (as of Sep 18, 2026).txt",
+      "size": 16669,
+      "sha256": "e017ca878aac68c58def9536a30e3b0cf52d5a76b1488912cbe45803fe4c55b8"
     },
     {
       "path": "/documents/matter-30/CASOMB Complaint Submission – HOPE Psychotherapy, Inc. 2.pdf",
