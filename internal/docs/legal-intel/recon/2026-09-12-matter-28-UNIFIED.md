@@ -3,6 +3,8 @@
 
 **Compiled 2026-09-12. This is the briefing spine.** Doctrinal research memorandum; not legal advice; requester is pro se.
 
+> **September 18, 2026 update:** For the current MTD-opposition strategy, read `2026-09-18-matter-28-mtd-opposition-deep-research.md` next. It adds the permanent 15 C.C.R. § 3574 / current CDCR CTM-Form 3043 architecture, *Estate of Esche* (9th Cir. 2025) on private-party qualified immunity, *Wicklund* on community-supervision retaliation, a narrower due-process theory, and the post-*Horn* RICO proximate-cause analysis. The September 12 preclusion work remains controlling unless the state-court record changes.
+
 It folds four same-day Shannon drafts into one sequence: the five-track memo (PR #763, merged), the vendor-damages catalog (PR #764), the Matter 5 docket addendum (PR #766), the res judicata kill (PR #767), and the 12(b)(6) survey that landed on PR #765 next to the § 290.46 employment work. Where those drafts conflict, this file says so and picks.
 
 Martinez named the first paper on September 11: res judicata plus insufficiency. Answer still **September 21**. Do not dismiss.
