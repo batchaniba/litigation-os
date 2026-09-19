@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1483,
-  "totalBytes": 950212776,
+  "fileCount": 1501,
+  "totalBytes": 956025439,
   "files": [
     {
       "path": "/documents/README.md",
@@ -7417,6 +7417,96 @@
       "path": "/documents/matter-40/Complaint - Ngwa Nforbi v Uber Technologies Inc (N.D. Cal.) (Sep 24 2026).meta.json",
       "size": 306,
       "sha256": "22c9a8401884d8942564780b52db3c4a4c9b6181e9a52fea6766c287b68091de"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-2 - Ex 1 Vons SOP Criminal Conviction Histories California (Feb 18, 2026).pdf",
+      "size": 858192,
+      "sha256": "739802d241be951a565dc78849ac065fbe9fb31ee845364d014e38df7a9c6cd8"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-3 - Ex 2 Deposition of Toni North PMK Vons (Oct 29, 2025) (Filed Feb 18, 2026).pdf",
+      "size": 964995,
+      "sha256": "afbfcf3b8d81f8692c4b70bfcd45923bd0f9df7048e091ad43af481242e7f311"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-5 - Ex 4 Vons Second Supplemental Responses to Interrogatories Set One (Feb 18, 2026).pdf",
+      "size": 863323,
+      "sha256": "5c7799ccd2343a16d60b7a46efebb77ca87e87574854722e2eecdb1cb67b8cc0"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-6 - Ex 5 Video Deposition of Roberto Sandoval Carrillo (Oct 23, 2025) (Filed Feb 18, 2026).pdf",
+      "size": 927120,
+      "sha256": "43c15192467eb447ad848cea77fc4bd352b7ea4c6a991004511fa36c372d208d"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-7 - Ex 6 Carrillo Candidate Profile REDACTED (Feb 18, 2026).pdf",
+      "size": 1269347,
+      "sha256": "ba48bf0421ee51a49cb75b1ba83b7dac60a74d50f9c6cedc05906eb16f46cfe5"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-8 - Ex 7 Legendary Service Commitment (Feb 18, 2026).pdf",
+      "size": 707758,
+      "sha256": "002766df3210a7e1e4d61dbc16b8c48d39b877a414745d21693f2dace080c2a5"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-6 - Ex 5 Video Deposition of Roberto Sandoval Carrillo (Oct 23, 2025) (Filed Feb 18, 2026).txt",
+      "size": 52977,
+      "sha256": "db6dd768b5577e6c0ca03f971e30ee16ad831157667b2e2fedecf98721b727c2"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-6 - Ex 5 Video Deposition of Roberto Sandoval Carrillo (Oct 23, 2025) (Filed Feb 18, 2026).meta.json",
+      "size": 367,
+      "sha256": "9262d16516b5d97d6d48c82fed2d6926bccbd2b17aed4b50aceebeb73e7b3aa0"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-5 - Ex 4 Vons Second Supplemental Responses to Interrogatories Set One (Feb 18, 2026).meta.json",
+      "size": 369,
+      "sha256": "14230f4096bed7704f154e7ba6c020e649032670da65e2040081e81fb08c0d6a"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-8 - Ex 7 Legendary Service Commitment (Feb 18, 2026).meta.json",
+      "size": 337,
+      "sha256": "181c819b43d6f6355a8a3d1b4acddea1f530e29205cb4c4d315e0d32c365522e"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-2 - Ex 1 Vons SOP Criminal Conviction Histories California (Feb 18, 2026).txt",
+      "size": 6018,
+      "sha256": "8112cb1437db81631395910526453f6f10c5c8f703fe9e2442aa4f4d65040452"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-2 - Ex 1 Vons SOP Criminal Conviction Histories California (Feb 18, 2026).meta.json",
+      "size": 368,
+      "sha256": "4fdc5b4a964a7990505cb89f6b17dcef1aeefbd2f133ae68ef7a812c1bcd4bee"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-7 - Ex 6 Carrillo Candidate Profile REDACTED (Feb 18, 2026).meta.json",
+      "size": 346,
+      "sha256": "f13b16d4d74fb7397f0eaab1d85b2a1dd8925363c81e03af4deedfe25c340480"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-3 - Ex 2 Deposition of Toni North PMK Vons (Oct 29, 2025) (Filed Feb 18, 2026).txt",
+      "size": 59010,
+      "sha256": "26242e0c1ad6dfff3c4597b8d55d891bf5e68085f825b2e50aeb46f9342fd7a1"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-5 - Ex 4 Vons Second Supplemental Responses to Interrogatories Set One (Feb 18, 2026).txt",
+      "size": 67915,
+      "sha256": "14b0e0cc331caf726b4bf28d61cb7ff3aadfc1ecdafe8510b6f2a566bd8f7484"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-8 - Ex 7 Legendary Service Commitment (Feb 18, 2026).txt",
+      "size": 3219,
+      "sha256": "60a0a5d5b9b7dbbe7768f888c84851094e0eef918e473ee4614f1942c19832c2"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-7 - Ex 6 Carrillo Candidate Profile REDACTED (Feb 18, 2026).txt",
+      "size": 30647,
+      "sha256": "2c429f94611dde072b028a35bd40f407151f1ae4653b97b7499b9602da4973e8"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-3 - Ex 2 Deposition of Toni North PMK Vons (Oct 29, 2025) (Filed Feb 18, 2026).meta.json",
+      "size": 355,
+      "sha256": "01f582f5bfb1d0659158033677e28bf6aabd253ca0c345eedd7da2c902ee04ad"
     }
   ]
 }
