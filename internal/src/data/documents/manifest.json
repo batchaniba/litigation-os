@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1441,
-  "totalBytes": 943083196,
+  "fileCount": 1465,
+  "totalBytes": 947023065,
   "files": [
     {
       "path": "/documents/README.md",
@@ -7207,6 +7207,126 @@
       "path": "/documents/matter-29/walker-v-ronin-staffing/Dkt 16-1 - Proposed Order Dismissing Sterling Without Prejudice (Oct 29, 2024).txt",
       "size": 2232,
       "sha256": "84d283240cdc27f9da16e07a7efed0dcbe515b0033414ded31b6ab5c21891799"
+    },
+    {
+      "path": "/documents/matter-33/ndcal/PACER Docket History - N.D. Cal. 3-26-cv-08272-LJC (as of Sep 10 2026).pdf",
+      "size": 112647,
+      "sha256": "e97d392f5dcf491622136eb27b0f03181dd2bda3ef55a2f5d63e104de0db4493"
+    },
+    {
+      "path": "/documents/matter-32/ndcal/Dkt 17 Packet - Request for Clerk Entry of Default Meza-Gonzalez and Melano (Sep 18 2026).pdf",
+      "size": 1988118,
+      "sha256": "95ceeea690c42976ea29fdfbacf7b926fe862bd74baf326b39341ca2a9cf41e7"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 15 - Vons Answer to Class Action Complaint (Apr 8, 2025).pdf",
+      "size": 204962,
+      "sha256": "b516472fe6b9da2556429b7367b3e2fdf285390499b954f58f223f5790929060"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 19 - Asurint Answer and Affirmative Defenses - Stanzick (May 30, 2025).pdf",
+      "size": 227933,
+      "sha256": "55b800369cfc832694cf110617c09b5dbc21ace60d1d5f66fe2f272cb2d81076"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 27 - Stipulated Protective Order (Sep 18, 2025).pdf",
+      "size": 206808,
+      "sha256": "3332a5f0e8b00da5fbb66d9b0942bd3d76aca4e519c0b909013e27ff878bb7e2"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 62 - Transcript of Motion Hearing (Apr 15, 2026) (Filed May 29, 2026).pdf",
+      "size": 217181,
+      "sha256": "2fb4fb00ca41af1f9eba4b5b964c36cd4022b777a1a3077bf81be1b614f29855"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 64 - Vons Additional Request for Judicial Notice (Sep 15, 2026).pdf",
+      "size": 59524,
+      "sha256": "860b3f719280a890e0b97da90266bf96a853ff86cf677c747eafe98753db8838"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 64-1 - Exhibit A to Vons Additional RJN (Sep 15, 2026).pdf",
+      "size": 628141,
+      "sha256": "cca2b93dfcb69a1a3f3c8926d6975c2e8971016e16abe6a5a87ec49559e9a65a"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 64-1 - Exhibit A to Vons Additional RJN (Sep 15, 2026).meta.json",
+      "size": 322,
+      "sha256": "3a1703c2639151fcd60279e92480818d0fcd73cf0f3facfe4eb776a1181fcd99"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 62 - Transcript of Motion Hearing (Apr 15, 2026) (Filed May 29, 2026).meta.json",
+      "size": 328,
+      "sha256": "e6015c8aec4dffb43e709ed06d564e2f498e674cf847685ffc87849a8285b5aa"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 64 - Vons Additional Request for Judicial Notice (Sep 15, 2026).txt",
+      "size": 10569,
+      "sha256": "875b91ca6039a41d5f5e43925f743752dcac613034a1c74ddcc764b686146f60"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 64-1 - Exhibit A to Vons Additional RJN (Sep 15, 2026).txt",
+      "size": 5746,
+      "sha256": "094585a2103ca92d36bea7159db08ff8ea9cba1989a331fd175bfc2e5b94d002"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 27 - Stipulated Protective Order (Sep 18, 2025).meta.json",
+      "size": 309,
+      "sha256": "bc1b4d4eb3539ab0aae1b76a1cef30b3e5dc4be029bc373fc92348ebc516ea80"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 15 - Vons Answer to Class Action Complaint (Apr 8, 2025).txt",
+      "size": 49585,
+      "sha256": "e4941233433182662c3cc5d4ab4ef44806782785a4be425e27b4385acc916970"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 19 - Asurint Answer and Affirmative Defenses - Stanzick (May 30, 2025).meta.json",
+      "size": 330,
+      "sha256": "0a972859bb497a8301ef200894369de2d46ac9fdf5bf39db022c00e2a1b310e1"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 64 - Vons Additional Request for Judicial Notice (Sep 15, 2026).meta.json",
+      "size": 315,
+      "sha256": "c22625fbdf082f7550c5d31d7f74dcee14a9730c2fd55a82f336b38404bab403"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 19 - Asurint Answer and Affirmative Defenses - Stanzick (May 30, 2025).txt",
+      "size": 89302,
+      "sha256": "027c23d8577d9f103c83619f65166e8c8b66ec044cc2e60dfd36ba804bac3bff"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 27 - Stipulated Protective Order (Sep 18, 2025).txt",
+      "size": 34368,
+      "sha256": "cbdf3f0fc1b0af969644aa1f56a27b9f6526c86005ae2c58d8183f47b1faa7d4"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 15 - Vons Answer to Class Action Complaint (Apr 8, 2025).meta.json",
+      "size": 301,
+      "sha256": "cc25f7d6ad0aa0788d81d5b222cd3a84dc19ed2f88806ec0c579fbb7a826a8fd"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 62 - Transcript of Motion Hearing (Apr 15, 2026) (Filed May 29, 2026).txt",
+      "size": 80735,
+      "sha256": "497815daa4ebcfbd468e6f266ff65fbf26a8eba2fc097a2bd7d8bd58f61938fb"
+    },
+    {
+      "path": "/documents/matter-32/ndcal/Dkt 17 Packet - Request for Clerk Entry of Default Meza-Gonzalez and Melano (Sep 18 2026).txt",
+      "size": 17240,
+      "sha256": "dfae002d665766380bca9674cb8feb6746b31618007cbf0c74b2fb2bfc2f41fd"
+    },
+    {
+      "path": "/documents/matter-32/ndcal/Dkt 17 Packet - Request for Clerk Entry of Default Meza-Gonzalez and Melano (Sep 18 2026).meta.json",
+      "size": 340,
+      "sha256": "25658988b340b6f18a074a2eb484db75ac1d2cf286d1dc75db183f8468e381f6"
+    },
+    {
+      "path": "/documents/matter-33/ndcal/PACER Docket History - N.D. Cal. 3-26-cv-08272-LJC (as of Sep 10 2026).txt",
+      "size": 4462,
+      "sha256": "80ef678b21e46df9d15ad4e5b52ec8d3940c43b8430f16f0a65dea34f87a4f00"
+    },
+    {
+      "path": "/documents/matter-33/ndcal/PACER Docket History - N.D. Cal. 3-26-cv-08272-LJC (as of Sep 10 2026).meta.json",
+      "size": 303,
+      "sha256": "5ac75cfeffd79d8bccea375e7ef11b798d6c9ddd0bf5b0f8c3c4ad749feb9b3a"
     }
   ]
 }

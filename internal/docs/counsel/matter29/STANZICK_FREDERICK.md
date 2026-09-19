@@ -145,3 +145,5 @@ Watch for:
 - 2026-09-19 (batch 5): Lodged *Varela v. Accurate Background, Inc.*, 5:26-cv-00258-KK-DTB (C.D. Cal.) Dkt. 1-1 civil cover sheet (Jan. 21, 2026; Stephen T. Jones). PACER download was titled "Cover sheet Davis.pdf" — form is Varela. Nine Santee / Varela dups discarded (already under `santee-v-accurate` / `varela-v-accurate`).
 
 - 2026-09-19 (batch 6): Lodged *Walker v. Ronin Staffing LLC et al.*, 2:24-cv-05669-CBM-SSC (C.D. Cal.) — complaint (Dkt. 1), Sterling answer signed by Jasmine J. Stanzick (Dkt. 14, Sep. 12, 2024), and stipulation + proposed order dismissing Sterling without prejudice (Dkt. 16 / 16-1, Oct. 29, 2024). Six dups discarded (Stanzick C.D. Cal. search; Walker dockets; Varela docket/answer/complaint).
+
+- 2026-09-19 (batch 7): Lodged *Carrillo v. Vons / Asurint*, 8:25-cv-00191-SRM-KES — Vons answer (Dkt. 15), Asurint answer signed by Stanzick (Dkt. 19), stipulated protective order (Dkt. 27), class-cert hearing transcript (Dkt. 62), and Vons additional RJN + Ex. A (Dkt. 64 / 64-1). Also lodged Matter 32 Dkt. 17 default packet and Matter 33 Candelaria PACER docket history (as of Sep 10). Two Carrillo reply dups discarded.
