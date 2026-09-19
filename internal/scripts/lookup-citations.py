@@ -1,13 +1,33 @@
 #!/usr/bin/env python3
-"""Multi-source citation existence lookup (CourtListener + CAP static.case.law).
+"""Multi-source citation existence lookup (offline bulk oracle + CourtListener + CAP).
 
-Probes reporter pins against:
+Probe order:
+  0. cl_bulk_offline — CourtListener bulk citations table (local SQLite,
+     exact (volume, reporter, page) triple). Existence only; cannot
+     fuzzy-match, so it cannot launder a fabricated cite. A miss is not
+     NOT_FOUND (quarterly snapshot) — it falls through to live probes.
   1. CourtListener Citation Lookup (POST /api/rest/v4/citation-lookup/) when
      COURTLISTENER_TOKEN is set — the pin API (200 / 404 / 400 / 300)
   2. CourtListener REST search API (unauthenticated /api/rest/v4/search/) as corroboration
   3. Caselaw Access Project bulk metadata at static.case.law (CasesMetadata.json)
+  4. (opt-in --probe-extra) govinfo.gov search API (USCOURTS collection; POST +
+     name-match) and cdn.ca9.uscourts.gov (9th Circuit PDFs; opinions then
+     memoranda). Evidence only — does not vote in consensus. Unbound U.S.
+     Reports slips (*Horn*) are supremecourt.gov, not USCOURTS.
 
 Also records reachability for Justia and Google Scholar (usually blocked).
+
+Consensus vocabulary: FOUND / NOT_FOUND / UNRESOLVED / PARTIAL /
+CAPTION_MISMATCH / BLOCKED / UNKNOWN. NOT_FOUND requires every applicable
+live pin source to have run and missed (incl. an explicit citation-lookup 404);
+anything less is UNRESOLVED. A skipped bulk DB never blocks a citation-lookup
+404. Name-only search hits (no reporter/WL pin behind them) cap at PARTIAL.
+
+Pin confidence is separate from existence: only CAP reporter HTML
+page-label anchors or an official preliminary-print/bound PDF confirm a
+reporter pin (PRIMARY). Pins confirmed through CourtListener plain_text,
+govinfo/ca9/courts.ca.gov slip PDFs, or unbound U.S. cites are SECONDARY
+by construction.
 
 This does NOT mark portfolio statuses by itself — it produces evidence for
 manual / round-overlay confirmation. Characterization still needs opinion text.
@@ -19,6 +39,7 @@ Usage:
   python3 internal/scripts/lookup-citations.py --batch high-risk
   python3 internal/scripts/lookup-citations.py --matter 28
   python3 internal/scripts/lookup-citations.py --cites-file /tmp/cites.json
+  python3 internal/scripts/lookup-citations.py --cite "765 F.3d 999" --probe-extra
 """
 
 from __future__ import annotations
@@ -57,6 +78,7 @@ REPORTER_MAP = [
     (r"(\d+)\s+F\.\s*2d\s+(\d+)", "f2d", "F.2d"),
     (r"(\d+)\s+F\.\s*3d\s+(\d+)", "f3d", "F.3d"),
     (r"(\d+)\s+F\.\s*4th\s+(\d+)", "f4th", "F.4th"),
+    (r"(\d+)\s+F\.\s*App'?x\s+(\d+)", "f-appx", "F. App'x"),
     (r"(\d+)\s+F\.\s*Supp\.\s*2d\s+(\d+)", "f-supp-2d", "F. Supp. 2d"),
     (r"(\d+)\s+F\.\s*Supp\.\s*3d\s+(\d+)", "f-supp-3d", "F. Supp. 3d"),
     (r"(\d+)\s+M\.?\s*J\.?\s+(\d+)", "mj", "M.J."),
@@ -66,6 +88,7 @@ REPORTER_MAP = [
     (r"(\d+)\s+Cal\.\s*5th\s+(\d+)", "cal-5th", "Cal. 5th"),
     (r"(\d+)\s+Cal\.\s*4th\s+(\d+)", "cal-4th", "Cal. 4th"),
     (r"(\d+)\s+Cal\.\s*3d\s+(\d+)", "cal-3d", "Cal. 3d"),
+    (r"(\d+)\s+Cal\.\s*2d\s+(\d+)", "cal-2d", "Cal. 2d"),
     (r"(\d+)\s+S\.\s*Ct\.\s+(\d+)", "s-ct", "S. Ct."),
     (r"(\d+)\s+L\.\s*Ed\.\s*2d\s+(\d+)", "l-ed-2d", "L. Ed. 2d"),
 ]
@@ -75,6 +98,41 @@ NAME_RE = re.compile(
     r"^(?:See\s+)?(.+?),\s+\d+\s+(?:U\.S\.|F\.|Cal\.)",
     re.I,
 )
+
+# Offline existence oracle: CourtListener bulk citations table (public S3).
+# Build once with: python3 internal/scripts/build-bulk-citation-index.py
+# DB lives outside the repo. A miss is not NOT_FOUND (quarterly cutoff).
+BULK_SNAPSHOT = "2026-06-30"
+BULK_S3_URL = (
+    "https://com-courtlistener-storage.s3.amazonaws.com"
+    f"/bulk-data/citations-{BULK_SNAPSHOT}.csv.bz2"
+)
+BULK_SQLITE_ENV = "CL_BULK_SQLITE"
+BULK_SQLITE_DEFAULT = str(
+    Path.home() / "workspace/legal-research/citation-bulk/citations.sqlite"
+)
+BULK_REPORTER = {
+    "U.S.": "U.S.",
+    "S. Ct.": "S. Ct.",
+    "L. Ed. 2d": "L. Ed. 2d",
+    "F.2d": "F.2d",
+    "F.3d": "F.3d",
+    "F.4th": "F.4th",
+    "F. App'x": "F. App'x",
+    "F. Supp. 2d": "F. Supp. 2d",
+    "F. Supp. 3d": "F. Supp. 3d",
+    "F.R.D.": "F.R.D.",
+    "M.J.": "M.J.",
+    "Cal. 2d": "Cal. 2d",
+    "Cal. 3d": "Cal. 3d",
+    "Cal. 4th": "Cal. 4th",
+    "Cal. 5th": "Cal. 5th",
+    "Cal. App. 3d": "Cal. App. 3d",
+    "Cal. App. 4th": "Cal. App. 4th",
+    "Cal. App. 5th": "Cal. App. 5th",
+}
+
+_bulk_db_ok: bool | None = None
 
 
 @dataclass
@@ -86,6 +144,10 @@ class SourceHit:
     citations: list[str] = field(default_factory=list)
     notes: str = ""
     http_status: int | None = None
+    # True when the hit came from a caption/name search with no reporter- or
+    # WL-pin match behind it. Name-only hits can never produce FOUND alone:
+    # they cap at PARTIAL (the fuzzy path that launders fabricated captions).
+    name_only: bool = False
 
 
 @dataclass
@@ -95,7 +157,7 @@ class LookupResult:
     reporter_pin: str | None
     wl_pin: str | None
     sources: list[SourceHit] = field(default_factory=list)
-    consensus: str = "UNKNOWN"  # FOUND / NOT_FOUND / PARTIAL / BLOCKED / UNKNOWN
+    consensus: str = "UNKNOWN"  # FOUND / NOT_FOUND / UNRESOLVED / PARTIAL / CAPTION_MISMATCH / BLOCKED / UNKNOWN
     matched_name: str = ""
     matched_citations: list[str] = field(default_factory=list)
 
@@ -178,7 +240,53 @@ def http_post_form(
     return last
 
 
-def _dotenv_token() -> str | None:
+def http_post_json(
+    url: str,
+    payload: dict,
+    *,
+    headers: dict[str, str] | None = None,
+    timeout: int = 45,
+    retries: int = 3,
+):
+    last = (-1, "error", b"")
+    body_bytes = json.dumps(payload).encode()
+    for attempt in range(retries):
+        req_headers = {
+            "User-Agent": UA,
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+        }
+        if headers:
+            req_headers.update(headers)
+        req = urllib.request.Request(url, data=body_bytes, headers=req_headers, method="POST")
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                return r.status, r.headers.get("Content-Type", ""), r.read()
+        except urllib.error.HTTPError as e:
+            body = b""
+            try:
+                body = e.read()
+            except Exception:
+                pass
+            last = (e.code, str(e.reason), body)
+            if e.code in (429, 502, 503, 504) and attempt + 1 < retries:
+                wait = 2.0 * (attempt + 1)
+                if e.code == 429:
+                    wait = 65.0
+                time.sleep(wait)
+                continue
+            return last
+        except Exception as e:
+            last = (-1, type(e).__name__, str(e).encode())
+            if attempt + 1 < retries:
+                time.sleep(0.75 * (attempt + 1))
+                continue
+            return last
+    return last
+
+
+def _dotenv_value(*keys: str) -> str | None:
+    wanted = {k.strip() for k in keys}
     for path in (ROOT.parent / ".env", ROOT / ".env"):
         if not path.is_file():
             continue
@@ -195,12 +303,16 @@ def _dotenv_token() -> str | None:
             key, sep, val = line.partition("=")
             if not sep:
                 continue
-            if key.strip() not in {CL_TOKEN_ENV, CL_TOKEN_ENV_ALT}:
+            if key.strip() not in wanted:
                 continue
             val = val.strip().strip("'").strip('"')
             if val:
                 return val
     return None
+
+
+def _dotenv_token() -> str | None:
+    return _dotenv_value(CL_TOKEN_ENV, CL_TOKEN_ENV_ALT)
 
 
 def courtlistener_token() -> str | None:
@@ -235,6 +347,89 @@ def parse_reporter(citation: str):
                 "pin": f"{vol} {label} {page}",
             }
     return None
+
+
+def bulk_db_path() -> Path | None:
+    """SQLite index path, or None when it has not been built."""
+    global _bulk_db_ok
+    if _bulk_db_ok is False:
+        return None
+    p = Path(os.environ.get(BULK_SQLITE_ENV) or BULK_SQLITE_DEFAULT)
+    if p.is_file():
+        _bulk_db_ok = True
+        return p
+    _bulk_db_ok = False
+    return None
+
+
+def probe_bulk_offline(citation: str) -> SourceHit:
+    """Step 0: exact (volume, reporter, page) existence check, offline."""
+    rep = parse_reporter(citation)
+    db = bulk_db_path()
+    if not rep:
+        return SourceHit(
+            source="cl_bulk_offline",
+            found=False,
+            notes="skipped: no reporter pin to form a (volume, reporter, page) triple",
+        )
+    if db is None:
+        return SourceHit(
+            source="cl_bulk_offline",
+            found=False,
+            notes=(
+                "skipped: bulk SQLite index not built "
+                "(run internal/scripts/build-bulk-citation-index.py)"
+            ),
+        )
+    reporter = BULK_REPORTER.get(rep["label"])
+    if not reporter:
+        return SourceHit(
+            source="cl_bulk_offline",
+            found=False,
+            notes=f"skipped: reporter {rep['label']!r} has no bulk-table string mapping",
+        )
+    import sqlite3
+
+    try:
+        con = sqlite3.connect(f"file:{db}?mode=ro", uri=True)
+        rows = con.execute(
+            "SELECT cluster_id, cite_type FROM citations "
+            "WHERE reporter = ? AND volume = ? AND page = ?",
+            (reporter, str(rep["volume"]), str(rep["page"])),
+        ).fetchall()
+        con.close()
+    except Exception as e:
+        return SourceHit(
+            source="cl_bulk_offline",
+            found=False,
+            notes=f"bulk index read error: {type(e).__name__}",
+        )
+    if not rows:
+        return SourceHit(
+            source="cl_bulk_offline",
+            found=False,
+            notes=(
+                f"triple ({rep['volume']}, {reporter}, {rep['page']}) absent from "
+                f"{BULK_SNAPSHOT} snapshot — not NOT_FOUND (quarterly cutoff); "
+                "falls through to live probes"
+            ),
+        )
+    cluster_ids = sorted({r[0] for r in rows})
+    first = cluster_ids[0]
+    notes = (
+        f"exact triple hit in {BULK_SNAPSHOT} snapshot: "
+        f"{len(rows)} row(s), {len(cluster_ids)} cluster(s); "
+        "existence only — caption/pin/holdings unverified"
+    )
+    if len(cluster_ids) > 1:
+        notes += "; multiple clusters share this page (table-page collision — disambiguate by caption)"
+    return SourceHit(
+        source="cl_bulk_offline",
+        found=True,
+        url=f"https://www.courtlistener.com/api/rest/v4/clusters/{first}/",
+        citations=[rep["pin"]],
+        notes=notes,
+    )
 
 
 def guess_name(citation: str) -> str:
@@ -733,6 +928,7 @@ def lookup_courtlistener(citation: str, name_guess: str) -> SourceHit:
             # Accept rules:
             # - reporter pin: require cite_match (name-only is insufficient)
             # - WL-only: require wl_match
+            # - neither: require name_match, flagged name_only (caps at PARTIAL)
             accept = False
             if rep and cite_match:
                 accept = True
@@ -740,6 +936,7 @@ def lookup_courtlistener(citation: str, name_guess: str) -> SourceHit:
                 accept = True
             elif not rep and not wl and name_match:
                 accept = True
+            name_only_hit = bool(accept and not rep and not wl)
 
             if accept:
                 hit = SourceHit(
@@ -751,8 +948,10 @@ def lookup_courtlistener(citation: str, name_guess: str) -> SourceHit:
                     notes=(
                         f"Search q={q!r}; cite_match={cite_match}; "
                         f"wl_match={wl_match}; name_match={name_match}"
+                        + ("; NAME-ONLY (no pin behind this hit)" if name_only_hit else "")
                     ),
                     http_status=200,
+                    name_only=name_only_hit,
                 )
                 if (cite_match or wl_match) and name_match:
                     return hit
@@ -822,24 +1021,298 @@ def probe_scholar(citation: str) -> SourceHit:
     )
 
 
+# ---------------------------------------------------------------------------
+# Extra probes — opt-in via --probe-extra. Live-confirmed 2026-09-19.
+#
+# See internal/docs/citation_verification_sources.json.
+#
+#   govinfo  — GPO Search Service. POST JSON. Ranking is not a citator:
+#              name-match required before found=True. USCOURTS does not
+#              host unbound U.S. Reports slips (*Horn* is supremecourt.gov).
+#   ca9_cdn  — cdn.ca9.uscourts.gov. Docket-addressable. Two-step:
+#              CourtListener search → strip "No. " → opinions PDF, then
+#              memoranda PDF. Pre-~2010 published opinions often 404.
+#
+# Evidence only — consensus_for() is intentionally untouched.
+# ---------------------------------------------------------------------------
+
+GOVINFO_SEARCH = "https://api.govinfo.gov/search"
+GOVINFO_API_KEY_ENV = "GOVINFO_API_KEY"
+CA9_DATASTORE = "https://cdn.ca9.uscourts.gov/datastore"
+CA9_OPINIONS = f"{CA9_DATASTORE}/opinions"
+CA9_MEMORANDA = f"{CA9_DATASTORE}/memoranda"
+
+_FEDERAL_REPORTER_SLUGS = {"us", "f2d", "f3d", "f4th", "f-supp-2d", "f-supp-3d", "s-ct"}
+_UNBOUND_US_RE = re.compile(r"\bU\.?\s*S\.?\s*_{2,}\b")
+_CA9_COURT_TAGS = {"ninth circuit", "ca9", "9th cir."}
+_CA9_NO_PREFIX = re.compile(r"^(?:no\.?\s*)+", re.I)
+
+
+def is_unbound_us(citation: str) -> bool:
+    return bool(_UNBOUND_US_RE.search(citation))
+
+
+def govinfo_api_key() -> str:
+    """GOVINFO_API_KEY if set, else the public DEMO_KEY (rate-limited)."""
+    return (
+        (os.environ.get(GOVINFO_API_KEY_ENV) or "").strip()
+        or _dotenv_value(GOVINFO_API_KEY_ENV)
+        or "DEMO_KEY"
+    )
+
+
+def govinfo_search_payload(query: str) -> dict:
+    """POST body for api.govinfo.gov/search (Search Service, 2023+)."""
+    return {
+        "query": query,
+        "pageSize": 10,
+        "offsetMark": "*",
+        "historical": True,
+        "resultLevel": "default",
+    }
+
+
+def govinfo_query_for(citation: str) -> str | None:
+    """USCOURTS field query, or None when this probe should skip."""
+    if is_unbound_us(citation):
+        return None
+    rep = parse_reporter(citation)
+    if not rep or rep["slug"] not in _FEDERAL_REPORTER_SLUGS:
+        return None
+    return f'collection:(USCOURTS) "{rep["pin"]}"'
+
+
+def govinfo_pick_named_hit(results: list, citation: str) -> dict | None:
+    """First USCOURTS row whose title matches the caption. Not hits[0]."""
+    name = guess_name(citation)
+    if not name:
+        return None
+    for row in results or []:
+        if (row.get("collectionCode") or "").upper() != "USCOURTS":
+            continue
+        title = row.get("title") or ""
+        if title and names_compatible(name, title):
+            return row
+    return None
+
+
+def probe_govinfo(citation: str) -> SourceHit:
+    """POST the govinfo Search Service; FOUND only on a caption match."""
+    if is_unbound_us(citation):
+        return SourceHit(
+            source="govinfo",
+            found=False,
+            url=GOVINFO_SEARCH,
+            notes=(
+                "skipped: unbound U.S. Reports — USCOURTS does not host slips; "
+                "authoritative source is supremecourt.gov (see citation_verification_sources.json)"
+            ),
+        )
+    query = govinfo_query_for(citation)
+    if not query:
+        rep = parse_reporter(citation)
+        if rep:
+            return SourceHit(
+                source="govinfo",
+                found=False,
+                url=GOVINFO_SEARCH,
+                notes=f"skipped: reporter slug {rep['slug']!r} is not a federal reporter",
+            )
+        return SourceHit(
+            source="govinfo",
+            found=False,
+            url=GOVINFO_SEARCH,
+            notes="skipped: no federal reporter pin",
+        )
+    payload = govinfo_search_payload(query)
+    status, ctype, body = http_post_json(
+        GOVINFO_SEARCH,
+        payload,
+        headers={"X-Api-Key": govinfo_api_key()},
+    )
+    if status != 200:
+        return SourceHit(
+            source="govinfo",
+            found=False,
+            url=GOVINFO_SEARCH,
+            http_status=status if isinstance(status, int) else None,
+            notes="govinfo POST search unreachable or errored",
+        )
+    try:
+        data = json.loads(body)
+    except json.JSONDecodeError:
+        return SourceHit(
+            source="govinfo",
+            found=False,
+            url=GOVINFO_SEARCH,
+            http_status=200,
+            notes="govinfo returned non-JSON",
+        )
+    rows = data.get("results") or []
+    # GET-shaped {message} with no results — the discarded sketch.
+    if not rows and data.get("message") and "results" not in data:
+        return SourceHit(
+            source="govinfo",
+            found=False,
+            url=GOVINFO_SEARCH,
+            http_status=200,
+            notes="govinfo returned {message} with no results (GET-shaped; need POST JSON)",
+        )
+    uscourts_n = sum(
+        1 for r in rows if (r.get("collectionCode") or "").upper() == "USCOURTS"
+    )
+    hit = govinfo_pick_named_hit(rows, citation)
+    if not hit:
+        return SourceHit(
+            source="govinfo",
+            found=False,
+            url=GOVINFO_SEARCH,
+            http_status=200,
+            notes=(
+                f"no caption match for {guess_name(citation)!r} among {uscourts_n} "
+                f"USCOURTS hits (query={query!r}; ranking is not a citator)"
+            ),
+        )
+    dl = hit.get("download") or {}
+    pdf = dl.get("pdfLink") or ""
+    return SourceHit(
+        source="govinfo",
+        found=True,
+        url=pdf or hit.get("resultLink") or GOVINFO_SEARCH,
+        case_name=hit.get("title") or "",
+        http_status=200,
+        notes=f"USCOURTS packageId={hit.get('packageId')!r}; query={query!r}; name-matched",
+    )
+
+
+def ca9_strip_docket(docket: str) -> str:
+    """CourtListener docketNumber is often 'No. 13-35356'; CDN file is 13-35356.pdf."""
+    s = (docket or "").strip()
+    s = _CA9_NO_PREFIX.sub("", s)
+    s = s.split(",")[0].strip()
+    s = s.split(";")[0].strip()
+    return s
+
+
+def ca9_pdf_candidates(docket: str, year: str, month: str, day: str) -> list[tuple[str, str]]:
+    """opinions first, then memoranda. Live 2026-09-19: Wicklund is memoranda."""
+    slug = ca9_strip_docket(docket)
+    y, m, d = year, month, day
+    return [
+        ("opinions", f"{CA9_OPINIONS}/{y}/{m}/{d}/{slug}.pdf"),
+        ("memoranda", f"{CA9_MEMORANDA}/{y}/{m}/{d}/{slug}.pdf"),
+    ]
+
+
+def _ca9_resolve_docket(citation: str, name_guess: str):
+    """citation → (docket, yyyy, mm, dd) via CourtListener search. 9th Cir. only."""
+    rep = parse_reporter(citation)
+    q = f'"{rep["pin"]}"' if rep else f'"{name_guess}"'
+    url = CL_SEARCH + "?" + urllib.parse.urlencode({"type": "o", "q": q})
+    status, ctype, body = http_get(url)
+    if status != 200:
+        return None
+    try:
+        data = json.loads(body)
+    except json.JSONDecodeError:
+        return None
+    for r in data.get("results") or []:
+        court = str(r.get("court") or "").lower()
+        if not any(tag in court for tag in _CA9_COURT_TAGS):
+            continue
+        raw = (r.get("docketNumber") or "").strip()
+        docket = ca9_strip_docket(raw)
+        filed = (r.get("dateFiled") or "")[:10]
+        if docket and re.match(r"^\d{4}-\d{2}-\d{2}$", filed):
+            y, m, d = filed.split("-")
+            return docket, y, m, d
+    return None
+
+
+def probe_ca9(citation: str) -> SourceHit:
+    """Fetch the 9th Circuit CDN PDF after resolving a docket on CourtListener."""
+    rep = parse_reporter(citation)
+    if not rep or rep["slug"] not in {"f2d", "f3d", "f4th"}:
+        return SourceHit(
+            source="ca9_cdn",
+            found=False,
+            url=CA9_OPINIONS,
+            notes="skipped: needs a federal appellate reporter pin (name-only resolution is too noisy)",
+        )
+    name = guess_name(citation)
+    resolved = _ca9_resolve_docket(citation, name)
+    if not resolved:
+        return SourceHit(
+            source="ca9_cdn",
+            found=False,
+            url=CA9_OPINIONS,
+            notes="could not resolve a 9th Circuit docket number via CourtListener search",
+        )
+    docket, y, m, d = resolved
+    last_status = None
+    last_url = CA9_OPINIONS
+    tried = []
+    for kind, pdf_url in ca9_pdf_candidates(docket, y, m, d):
+        tried.append(kind)
+        last_url = pdf_url
+        status, ctype, body = http_get(pdf_url, accept="application/pdf")
+        last_status = status if isinstance(status, int) else None
+        if status == 200 and ((ctype or "").startswith("application/pdf") or body[:4] == b"%PDF"):
+            return SourceHit(
+                source="ca9_cdn",
+                found=True,
+                url=pdf_url,
+                case_name=name,
+                http_status=200,
+                notes=f"docket {docket} resolved; {kind} PDF fetched from the 9th Circuit datastore",
+            )
+    return SourceHit(
+        source="ca9_cdn",
+        found=False,
+        url=last_url,
+        http_status=last_status,
+        notes=(
+            f"docket {docket} resolved but CDN PDF 404 after {', '.join(tried)} "
+            f"(pre-~2010 published opinions often missing)"
+        ),
+    )
+
+
 def consensus_for(result: LookupResult) -> str:
     pin = next((s for s in result.sources if s.source == "courtlistener_citation"), None)
     cl = next((s for s in result.sources if s.source == "courtlistener"), None)
     cap = next((s for s in result.sources if s.source == "case.law_static"), None)
+    bulk = next((s for s in result.sources if s.source == "cl_bulk_offline"), None)
+
+    def _skipped(s: SourceHit | None) -> bool:
+        return s is None or "skipped" in (s.notes or "").lower()
+
     if pin and pin.found and pin.case_name and names_compatible(result.case_name_guess, pin.case_name):
         result.matched_name = pin.case_name
         result.matched_citations = pin.citations
         result.consensus = "FOUND"
         return result.consensus
-    found_sources = [s for s in (pin, cl, cap) if s and s.found]
+
+    found_sources = [s for s in (pin, cl, cap, bulk) if s and s.found]
     if not found_sources:
-        if result.wl_pin and not result.reporter_pin:
+        # NOT_FOUND only when live pin sources actually ran and missed.
+        # A skipped probe (no token, volume metadata unavailable) is UNRESOLVED.
+        # Bulk skip never blocks an explicit citation-lookup 404 — most
+        # environments will not have the quarterly SQLite index.
+        pin_404 = bool(pin and not pin.found and "404" in (pin.notes or ""))
+        live_pin_sources = [s for s in (pin, cl, cap) if s is not None]
+        any_skipped = any(_skipped(s) for s in live_pin_sources)
+        if pin_404 and not any_skipped and (result.reporter_pin or result.wl_pin):
             result.consensus = "NOT_FOUND"
             return result.consensus
-        if result.reporter_pin:
-            result.consensus = "NOT_FOUND"
-            return result.consensus
-        result.consensus = "UNKNOWN"
+        result.consensus = "UNRESOLVED"
+        return result.consensus
+
+    if all(s.name_only for s in found_sources):
+        primary = found_sources[0]
+        result.matched_name = primary.case_name
+        result.matched_citations = primary.citations
+        result.consensus = "PARTIAL"
         return result.consensus
 
     # Prefer CAP/CL name that matches the query; otherwise surface mismatch.
@@ -872,6 +1345,7 @@ def lookup_one(
     citation: str,
     *,
     include_blocked_probes: bool = False,
+    include_extra_probes: bool = False,
     citation_lookup: str = "auto",
 ) -> LookupResult:
     name = guess_name(citation)
@@ -886,6 +1360,8 @@ def lookup_one(
     use_lookup = citation_lookup == "always" or (
         citation_lookup == "auto" and bool(courtlistener_token())
     )
+    # Step 0: offline exact-triple existence check. A miss is not NOT_FOUND.
+    result.sources.append(probe_bulk_offline(citation))
     cite_hit = None
     if use_lookup:
         cite_hit = lookup_courtlistener_citation(citation, name)
@@ -911,6 +1387,9 @@ def lookup_one(
     if include_blocked_probes:
         result.sources.append(probe_justia(citation))
         result.sources.append(probe_scholar(citation))
+    if include_extra_probes:
+        result.sources.append(probe_govinfo(citation))
+        result.sources.append(probe_ca9(citation))
     consensus_for(result)
     return result
 
@@ -981,6 +1460,11 @@ def main(argv: list[str] | None = None) -> int:
         help="Also probe Justia + Google Scholar (usually 403)",
     )
     ap.add_argument(
+        "--probe-extra",
+        action="store_true",
+        help="Also probe govinfo (POST + name-match) and CA9 CDN (opinions then memoranda). Evidence only; does not vote in consensus",
+    )
+    ap.add_argument(
         "--citation-lookup",
         choices=["auto", "always", "never"],
         default="auto",
@@ -1029,6 +1513,7 @@ def main(argv: list[str] | None = None) -> int:
             lookup_one(
                 c,
                 include_blocked_probes=args.probe_blocked,
+                include_extra_probes=args.probe_extra,
                 citation_lookup=args.citation_lookup,
             )
         )
@@ -1044,6 +1529,13 @@ def main(argv: list[str] | None = None) -> int:
             "configured (COURTLISTENER_TOKEN)"
             if courtlistener_token()
             else "unset — citation-lookup skipped (set COURTLISTENER_TOKEN)"
+        ),
+        "govinfo": "opt-in --probe-extra (POST JSON + name-match; GOVINFO_API_KEY or DEMO_KEY)",
+        "ca9_cdn": "opt-in --probe-extra (CL docket → strip No. → opinions then memoranda)",
+        "cl_bulk_offline": (
+            f"wired ({BULK_SNAPSHOT} SQLite)"
+            if bulk_db_path()
+            else "skipped — run internal/scripts/build-bulk-citation-index.py"
         ),
     }
 
@@ -1076,7 +1568,7 @@ def main(argv: list[str] | None = None) -> int:
             "wrote": str(out_path),
             "counts": {
                 c: sum(1 for r in results if r.consensus == c)
-                for c in ("FOUND", "CAPTION_MISMATCH", "NOT_FOUND", "PARTIAL", "UNKNOWN")
+                for c in ("FOUND", "CAPTION_MISMATCH", "NOT_FOUND", "UNRESOLVED", "PARTIAL", "UNKNOWN")
             },
         }, indent=2))
     return 0

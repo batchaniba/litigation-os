@@ -104,3 +104,9 @@ handling existence + pin verification from free sources.
 - No charge warnings, no CAPTCHA / bot checks, no rate limiting observed on Patron
   Access. No case content was copied or downloaded — URLs and structural observations
   only.
+
+## See also
+
+- `internal/docs/CITATION_SOURCE_SURVEY.md` — free-source survey; Westlaw is MANUAL ONLY
+- `internal/docs/citation_verification_sources.json` — catalog row `westlaw_patron_prose`
+- `internal/docs/legal-intel/recon/2026-09-19-matter-28-keycite-westlaw.md` — 27/27 UNIFIED KeyCite
