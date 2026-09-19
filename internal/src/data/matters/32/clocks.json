@@ -37,10 +37,11 @@
     "date": "2026-09-17",
     "date_label": "Sep. 17, 2026",
     "kind": "deadline",
-    "status": "open",
+    "status": "satisfied",
     "source_dkt": 16,
     "title": "MAIL — CCP § 415.20(b) first-class follow-up to Dkt. 16 / 16-1 for Santiago Meza-Gonzalez in Nforbi v. Meza-Gonzalez et al. (N.D. Cal. 4:26-cv-08271-ASK).…",
     "actor": "you",
-    "source": "/documents/matter-32/ndcal/CCP 415.20(b) Mailing Bundle - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 17, 2026).pdf"
+    "source": "/documents/matter-32/ndcal/CCP 415.20(b) Mailing Bundle - Meza-Gonzalez (N.D. Cal. 4-26-cv-08271-ASK) (September 17, 2026).pdf",
+    "retired_reason": "MAIL executed (CCP § 415.20(b) first-class follow-up to Dkt. 16 / 16-1). Papers exist. FILE of the signed declaration + Exhibit A + POS remains unfiled (dkt null). Do not invent a filing."
   }
 ]

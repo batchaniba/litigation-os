@@ -8,6 +8,40 @@ Opposition-prep research only. Generated from Round 2–3 `citation_audit.json` 
 | **CAUTION** | Real, but distinguish, fix form, or do not treat as binding |
 | **DO NOT USE** | MISCITED / MISCHARACTERIZED / NOT_FOUND — remove before filing |
 
+## KeyCite overlay — UNIFIED 27 (2026-09-19)
+
+Treatment, not existence. Yellow ≠ MISCITED. Source: [`legal-intel/recon/2026-09-19-matter-28-keycite-westlaw.md`](legal-intel/recon/2026-09-19-matter-28-keycite-westlaw.md). 27/27 names confirmed. 2 NONE (both *Chavez*). 19 yellow. Four deep-dives KEEP (*Perez*, *DKN*, *Neal*, *Costello*) — each flag concerns a point other than the memo's cited proposition. *Chavez v. Robinson*, 12 F.4th 978 stays **MISCHARACTERIZED**: KeyCite NONE does not clear the QI-reversal proposition error.
+
+| Citation | Flag | Briefing note |
+| --- | --- | --- |
+| Goddard, 14 Cal.2d 47 | YELLOW | Distinguished-by noise. KEEP. |
+| Berri, 43 Cal.2d 856 | YELLOW | Distinguished-by noise. KEEP. |
+| Valvo, 67 Cal.App.3d 887 | YELLOW | Distinguished-by noise. KEEP. |
+| Taylor v. Sturgell, 553 U.S. 880 | YELLOW | Routine not-followed / declined-to-extend. KEEP. |
+| Allen v. McCurry, 449 U.S. 90 | YELLOW | Routine not-followed / declined-to-extend. KEEP. |
+| Migra, 465 U.S. 75 | YELLOW | Declined-to-extend noise. KEEP. |
+| Semtek, 531 U.S. 497 | YELLOW | Not-followed-as-dicta / declined-to-extend. KEEP. |
+| Costello, 365 U.S. 265 | YELLOW | Deep-dive KEEP — *Daifullah* doubts only the loose "jurisdictional" label, not Rule 41(b) precondition≠merits. |
+| DKN Holdings, 61 Cal.4th 813 | YELLOW | Deep-dive KEEP — *Samara* does not cut the privity holding at 824–26. |
+| Boeken, 48 Cal.4th 788 | YELLOW | Distinguished-by noise. KEEP. |
+| Keidatz, 39 Cal.2d 826 | YELLOW | Distinguished-by noise. KEEP. |
+| Beazell, 59 Cal.2d 577 | YELLOW | Distinguished-by noise. KEEP. |
+| Sartor, 136 Cal.App.3d 322 | YELLOW | Declined-to-extend noise. KEEP. |
+| Sullivan, 15 Cal.4th 288 | YELLOW | Not-followed / declined-to-extend. KEEP. |
+| Perez, 27 Cal.3d 875 | YELLOW | Deep-dive KEEP — "superseded by statute" is the small-claims CE exception, not prematurity≠merits at 882–83. |
+| Chavez v. Robinson, 12 F.4th 978 | NONE | Treatment-clean. **Still MISCHARACTERIZED** — do not claim QI-denial reversal. |
+| Chavez v. Robinson, 817 F.3d 1162 | NONE | Treatment-clean. |
+| Diaz v. Gates, 420 F.3d 897 | YELLOW | Out-of-circuit disagreement. KEEP. |
+| Kay, 504 F.3d 803 | YELLOW | One declined-to-extend. KEEP. |
+| Kildare, 325 F.3d 1078 | YELLOW | Called-into-doubt / distinguished. KEEP. |
+| Neal v. Shimoda, 131 F.3d 818 | YELLOW | Deep-dive KEEP — unpublished *Garcia* disagreement is burden-of-proof, which *Neal* left open. |
+| Gonzales, 739 F.3d 1226 | YELLOW | Distinguished-by noise. KEEP. |
+| Furnace, 838 F.3d 1019 | YELLOW | Distinguished-by noise. KEEP. |
+| Franklin & Franklin, 85 Cal.App.4th 1168 | YELLOW | Distinguished-by noise. KEEP. |
+| Anza, 547 U.S. 451 | YELLOW | Declined-to-extend noise. KEEP. |
+| Cedric Kushner, 533 U.S. 158 | YELLOW | Not-followed / declined-to-extend. KEEP. |
+| Swift, 384 F.3d 1184 | YELLOW | Distinguished-by noise. KEEP. |
+
 ### Briefing leads (after cleanup)
 
 - **Theory A (no QI / threshold):** Richardson v. McKnight; Halvorsen v. Baird; Clement v. City of Glendale; Ace Beverage Co. v. Lockheed Info. Mgmt. Servs.; Danielson v. Inslee (distinguish Filarsky v. Delia; cite Estate of Esche only for its reasoning, not as a QI-threshold holding)
@@ -24,7 +58,7 @@ Opposition-prep research only. Generated from Round 2–3 `citation_audit.json` 
 | Dunford v. Rovi Corp., 2015 WL 13752958 (N.D. Cal. 2015) | NOT_FOUND | DROP — no such case; use Foltz, 331 F.3d at 1131 |
 | Condit v. Dunne, 225 F.R.D. 100 (S.D.N.Y. 2004) | MISCITED | DROP quote attribution — re-pin to Foltz, 331 F.3d at 1131 |
 | Collins v. Moore, 81 F.3d 167 (9th Cir. 1996) | NOT_FOUND | DROP — citation does not exist at 81 F.3d 167 |
-| Chavez v. Robinson, 12 F.4th 978 (9th Cir. 2021) | MISCHARACTERIZED | DO NOT claim QI-denial reversal — Ninth Circuit affirmed dismissal |
+| Chavez v. Robinson, 12 F.4th 978 (9th Cir. 2021) | MISCHARACTERIZED | DO NOT claim QI-denial reversal — Ninth Circuit affirmed dismissal. KeyCite NONE (2026-09-19) does not clear this. |
 | United States v. Johnson, 2012 WL 5279672 (9th Cir. 2012) [as printed]; also No. 11-30256 | MISCITED | FIX reporter — use 697 F.3d 1249 / 2012 WL 5328597 (not WL 5279672) |
 | Johnson v. City of Grants Pass, 50 F.4th 787 (9th Cir. 2022) | MISCITED | DROP for due-process / 'illusory procedures' proposition |
 | Edmo v. Corizon, Inc., 935 F.3d 757 (9th Cir. 2019) | MISCHARACTERIZED | SOFTEN — individualized deliberate-indifference holding, not per se blanket ban |

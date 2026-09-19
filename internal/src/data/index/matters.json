@@ -884,17 +884,17 @@
       "same_incident": null,
       "lifecycle": "active",
       "proceeding": "state_civil",
-      "phase": "default",
+      "phase": "responsive_deadline",
       "next_clock": {
-        "id": "27-deadline-1",
-        "date": "2026-09-18",
+        "id": "27-deadline-4",
+        "date": "2026-09-25",
         "kind": "deadline",
-        "status": "overdue",
-        "title": "EXPIRES — $25,000 final early global settlement demand in Newanforbi v. Randstad US, LLC et al. (26CV199902), sent Sept. 12, 2026, 8:00 a.m. Expires…",
+        "status": "open",
+        "title": "Randstad US, LLC to file and serve its response to the Complaint — per Stipulation to Set Aside and Vacate Entry of Default, entered Sep. 17, 2026 (Newanforbi v. Randstad US, LLC et al., 26CV199902)",
         "source_dkt": null
       },
-      "overdue": true,
-      "last_updated": "2026-09-17",
+      "overdue": false,
+      "last_updated": "2026-09-19",
       "files": [
         "claims.json",
         "clocks.json",
@@ -1077,7 +1077,7 @@
         "source_dkt": 16
       },
       "overdue": true,
-      "last_updated": "2026-09-18",
+      "last_updated": "2026-09-19",
       "files": [
         "claims.json",
         "clocks.json",
@@ -1352,15 +1352,15 @@
       "proceeding": "state_civil",
       "phase": "pre_filing",
       "next_clock": {
-        "id": "40-deadline-1",
-        "date": "2026-09-17",
+        "id": "40-deadline-2",
+        "date": "2026-09-23",
         "kind": "deadline",
-        "status": "overdue",
-        "title": "WATCH — First Advantage saliva-drug-test schedule for TaskUs Holdings, Inc. expires 11:49 a.m. Eastern (Schedule ID 96558696; LabCorp-Milpitas). A missed…",
+        "status": "open",
+        "title": "WATCH — Anticipated TaskUs, LLC start date (Teammate; orientation 1631 N 1st Street, Suite 200, San Jose, Sep. 23–25; production depot 3030 Corvin Drive, Santa…",
         "source_dkt": null
       },
-      "overdue": true,
-      "last_updated": "2026-09-16",
+      "overdue": false,
+      "last_updated": "2026-09-19",
       "files": [
         "claims.json",
         "clocks.json",
