@@ -44,14 +44,17 @@ Do not mark a citation VERIFIED from memory. Run the funnel and record evidence.
 
 ## Source reachability (this cloud environment)
 
+Live source survey (controls, star pagination, cliffs, traps): `internal/docs/CITATION_SOURCE_SURVEY.md` (2026-09-19).
+
 | Source | Status |
 |---|---|
-| CourtListener `/api/rest/v4/search/` | OK (unauthenticated) |
+| CourtListener `/api/rest/v4/search/` | OK (unauthenticated). Use fielded `citation:"…"` plus caption — bare `q=` returns citing cases. |
 | CourtListener `/api/rest/v4/citation-lookup/` | Needs `COURTLISTENER_TOKEN` (alias: `COURTLISTENER_API_TOKEN`) |
-| CAP `static.case.law` CasesMetadata + HTML | OK |
-| `api.case.law` JSON | Need auth |
+| CAP `static.case.law` CasesMetadata + HTML | OK inside the scan window (U.S. through 2014; no F.4th; Cal.App.5th only vols 1–11). Star pagination lives here. |
+| `api.case.law` JSON | Retired 2024-09-05 (HTML docs redirect, not a lookup) |
 | Justia | Cloudflare 403 |
 | Google Scholar | Unreliable (often 403) |
+| Casetext | 410 Gone (shuttered 2025-04-01) |
 
 ## Artifacts
 
