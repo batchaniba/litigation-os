@@ -1,0 +1,36 @@
+PLAINTIFF COPY — DO NOT FILE — DO NOT MAIL THIS SHEET TO DEFENDANTS
+Nforbi v. Meza-Gonzalez et al., 4:26-cv-08271-ASK
+Papers dated September 18, 2026. City of mailing: San Jose, California.
+
+WHAT THIS IS
+  Rule 55(a) request for the Clerk to ENTER DEFAULT as to Melano and Meza.
+  Not a Rule 55(b) motion for default judgment. Damages stay for later.
+
+FILE WITH THE CLERK (San Jose / Oakland as applicable)
+  1. Request for Clerk's Entry of Default
+  2. Declaration of Brendan Ngwa Nforbi
+  3. [Proposed] Clerk's Entry of Default
+  4. Proof of Service
+
+SERVE THE SAME DAY (first-class mail)
+  Li (Spring Street + email courtesy)
+  Melano @ CHP South Sacramento
+  Meza @ CHP Modesto
+  Use the POS. Send Li the covering email. No GitHub. No repo URL.
+
+DOCKET ANCHORS (Sep. 18, 2026 ECF)
+  Melano — Dkt. 12: served 8/14/2026, answer due 9/4/2026 (clean)
+  Meza   — Dkt. 16: served 8/27/2026, answer due 9/17/2026 (ECF face)
+
+LEAVE ON FILE
+  Dkt. 13 (Li accept-service admin motion). Do not withdraw it.
+  Sep. 17 § 415.20(b) mailing papers — still file those if not filed;
+  they strengthen Meza service even if the Clerk enters on Dkt. 16.
+
+IF THE CLERK ENTERS ONLY AS TO MELANO
+  That is still a win. Re-present Meza after the § 415.20 mailing is on
+  the docket, or after Dkt. 13 is granted.
+
+DO NOT
+  Do not ask for default judgment in this packet.
+  Do not put a GitHub or portfolio URL in the email or the filing.
