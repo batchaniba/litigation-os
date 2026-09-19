@@ -55,6 +55,7 @@ Live source survey (controls, star pagination, cliffs, traps): `internal/docs/CI
 | Justia | Cloudflare 403 |
 | Google Scholar | Unreliable (often 403) |
 | Casetext | 410 Gone (shuttered 2025-04-01) |
+| Westlaw Patron Access for Pro Se | Plaintiff has it (2026-09-19). MANUAL ONLY — KeyCite / bare WL / post-cliff pins. Never wire; never put OnePass in chat. |
 
 ## Artifacts
 

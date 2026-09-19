@@ -823,7 +823,9 @@ Do not wait for CAP. CAP's U.S. series ends 2014.
 
 **3D. Free negative-treatment flags**
 
-**No.** The honest server-side answer is: read the later citing cases yourself, or walk into a county law library and run KeyCite / Shepard's. CourtListener's graph is a reading list, not a treatment flag.
+**No free flag from a server.** CourtListener's graph is a reading list, not a treatment flag.
+
+**As of 2026-09-19 Plaintiff has KeyCite in a browser** via Westlaw Patron Access for Pro Se. That is the workaround: open the case, read Negative Treatment / History / Citing References (or search `kc {cite}`). Still not something a script can call.
 
 ---
 
@@ -844,7 +846,7 @@ These are **public** law libraries. You do not need to be a lawyer. You usually 
 | **Fresno County Law Library** | **WestlawNext + KeyCite** on site. CEB OnLaw, HeinOnline, Nolo. **Cannot save** from library computers; **print $0.15/page only**. | Confirm before travel (databases page fetched; hours not on that page) | Not stated | Print only; no save |
 | **Witkin State Law Library** (California State Library), 914 Capitol Mall, Sacramento | **Westlaw on-site only.** CEB OnLaw on-site. HeinOnline remote for people who qualify for a State Library card (state employees / certain officials — **not a general public remote Westlaw grant**). Public may use reading-room terminals. | Mon–Fri 9:30–4:30 | Walk-in reading room | On-site |
 
-**Also relevant, not fully hour-checked this session:** Riverside County Law Library has advertised a **Westlaw Pro Se remote** pilot — that is one of the few *remote* Westlaw paths open to non-lawyers, session-limited; confirm current rules before relying. Contra Costa, San Joaquin, Stanislaus, San Mateo, Marin, Solano, Yolo, Placer, Kern, Monterey, Butte follow the same county-law-library statute pattern (on-site Westlaw and/or Lexis). Call first.
+**Remote Westlaw Patron Access for Pro Se — now in Plaintiff's hands (2026-09-19).** Screenshots reached the live `next.westlaw.com` home after the Thomson Reuters click-wrap on `ess.thomsonreuters.com`. This is the library remote pilot (Riverside and San Diego publish it; enter through that library's link, not a bare Westlaw URL). Shared seats (often 2). Sign Off when done. Personal pro se use only. **Do not put the OnePass in chat or in the pipeline.** Contra Costa, San Joaquin, Stanislaus, San Mateo, Marin, Solano, Yolo, Placer, Kern, Monterey, Butte still follow the on-site Westlaw/Lexis pattern unless they join the same pilot.
 
 **4B. Federal courthouse public terminals and court libraries**
 
@@ -865,6 +867,7 @@ These are **public** law libraries. You do not need to be a lawyer. You usually 
 | Fastcase as a state-bar member benefit generally | **No — bar members only** |
 | California State Library remote databases | **Mostly state employees / officials.** Westlaw is on-site only. |
 | University / law-school Westlaw or Lexis | **Closed to the public** (student/faculty licenses) |
+| **Westlaw Patron Access for Pro Se** (library remote pilot; OnePass) | **Yes — Plaintiff has this as of 2026-09-19.** Personal non-commercial use. Not a server source. |
 | LII / CourtListener / CAP | Yes, already free; not a citator |
 | PACER fee exemption | Separate application; not a citator |
 
@@ -975,11 +978,11 @@ Use this order. Stop when the stopping rule fires. Existence ≠ holding.
 
 5. **Docket-only (C6):** require `court_id` (or circuit). Construct the court's own PDF if the pattern is known (CA4 `{docket}.u.pdf`; CA9 needs date). Never search a bare `24-6244`.
 
-6. **WL-only (C5):** **stop.** No free source this session resolved a bare WL number that lacked a reporter parallel. Library Westlaw, or leave UNRESOLVED.
+6. **WL-only (C5):** server **stop.** No free source this session resolved a bare WL number. **Manual:** look it up on Westlaw Patron Access for Pro Se (this account). If you also have a docket+court+date, fetch the court's PDF as well.
 
-7. **Negative control / fabrication:** if step 1 is 404/count=0 and step 2 (in-window) misses → NOT_FOUND. Do not run a fuzzy name search "to be helpful."
+7. **Negative control / fabrication:** if step 1 is 404/count=0 and step 2 (in-window) misses → NOT_FOUND. Do not run a fuzzy name search "to be helpful." A Westlaw miss on a well-formed cite is strong NOT_FOUND.
 
-8. **Treatment:** do not ask this pipeline. Library KeyCite/Shepard's, or read later cases from the CL graph (token) knowing that is not a citator.
+8. **Treatment:** do not ask the *server* pipeline. **Manual:** KeyCite on this Westlaw account (Negative Treatment / History / `kc {cite}`). CL's graph is still only a reading list.
 
 ### (2) Every source that could not be reached (and what was tried)
 
@@ -1002,7 +1005,8 @@ Use this order. Stop when the stopping rule fires. Existence ≠ holding.
 | CA9 CDN directory indexes | GET | 200, 0 bytes (no listing) |
 | Casetext | GET | 410 Gone |
 | AnyLaw | GET | "System Upgrade" |
-| Westlaw / Lexis / Shepard's / KeyCite | not attempted (subscription) | — |
+| Westlaw Patron Access for Pro Se from this server | not attempted (login + license; Plaintiff reached it in a phone browser) | — |
+| Lexis / Shepard's | not attempted (on-site library) | — |
 | Authenticated Fastcase / vLex opinion text | login wall | — |
 
 ### (3) The honest gaps
@@ -1011,10 +1015,10 @@ Jobs that **cannot** be done for free from a headless server:
 
 | Job | Cannot do | Realistic workaround |
 |---|---|---|
-| Confirm a **pin** to F.3d / F.4th / Cal.5th / Cal.App.5th after CAP's cliff | No free star pages for post-2018/2019 bound volumes | In-person Official Reports / Westlaw at a county law library; or cite the **slip / vendor-neutral ¶** and mark the reporter pin SECONDARY |
-| Resolve a **bare WL number** with no reporter parallel | C5 `2016 WL 4761808` → nothing anywhere this session. `westlawCite:` on CL is empty. | County law library Westlaw. If you also have a docket+court+date, fetch the court's PDF instead and stop using the WL number as the existence key |
-| **Negative treatment** (reversed, overruled, vacated, depublished) | No free flag source | Shepard's on Lexis or KeyCite on Westlaw at Alameda / SF / Santa Clara / Fresno / Sac (Lexis) / Witkin. Or read every later citing case from CL's graph and say you did that, not that you Shepardized |
-| **California depublication / review-granted / "not citable"** | Free sites serve the old text with no banner | Supreme Court orders + Official Reports status, or a library citator. Do not cite unpublished CA opinions (CRC 8.1115) just because CL/CAP/Justia showed the PDF |
+| Confirm a **pin** to F.3d / F.4th / Cal.5th / Cal.App.5th after CAP's cliff | No free star pages for post-2018/2019 bound volumes **from a server** | **This Westlaw account** (reporter view / star pages). Or cite the **slip / vendor-neutral ¶** and mark the reporter pin SECONDARY |
+| Resolve a **bare WL number** with no reporter parallel | C5 `2016 WL 4761808` → nothing on free sources. `westlawCite:` on CL is empty. | **This Westlaw account.** If you also have a docket+court+date, fetch the court's PDF as a parallel |
+| **Negative treatment** (reversed, overruled, vacated, depublished) | No free flag from a server | **KeyCite on this Westlaw account.** Shepard's remains available on-site at Alameda / SF / Santa Clara / Sac / Witkin. CL's graph is still not a citator |
+| **California depublication / review-granted / "not citable"** | Free sites serve the old text with no banner | **KeyCite History** on this Westlaw account, plus the Supreme Court orders. Do not cite unpublished CA opinions (CRC 8.1115) just because CL/CAP/Justia showed the PDF |
 | **Google Scholar How Cited** from a server | 403 | Manual browser on a residential IP, or skip |
 | **Justia / FindLaw / OpenJurist** as probes | Cloudflare | Manual only |
 | **Current-Term official U.S. Reports page** before the prelim issues | Only slip pages exist | Cite `___ U.S. ___` + docket, or wait for the prelim PDF on supremecourt.gov |
@@ -1036,4 +1040,55 @@ Jobs that **cannot** be done for free from a headless server:
 
 ---
 
-*Generated 2026-09-19. Re-run `node internal/scripts/survey-citation-sources.mjs` before trusting reachability; Cloudflare and 410s move.*
+```
+SOURCE: Westlaw Patron Access for Pro Se (Thomson Reuters library remote pilot)
+URL TESTED: Not fetched from this server. Plaintiff screenshots 2026-09-19:
+           ess.thomsonreuters.com landing ("WESTLAW PATRON ACCESS FOR PRO SE
+           (for non-commercial use)" + Access Westlaw);
+           next.westlaw.com click-wrap; next.westlaw.com home after agree.
+REACHABLE FROM A SERVER?: NO — login + JS + library-issued OnePass
+HTTP RESULT: Not attempted from the datacenter (would be a license and
+  credential violation). Plaintiff's phone session reached the live home page.
+ACCESS: in-person-only at most county libraries; this product is the *remote*
+  exception for self-represented litigants via a participating library link
+  (Riverside and San Diego publish the same pilot; other counties may).
+  Not a personal paid subscription. Not bar-membership-gated.
+API OR URL PATTERN: search only after login. No constructible reporter URL
+  for a headless probe. Re-enter through the *library* remote link, not a
+  bookmarked next.westlaw.com.
+RESPONSE FORMAT: HTML SPA (next.westlaw.com)
+RATE LIMIT: Shared seats — commonly 2 concurrent users per library. Sign Off
+  or the seat holds ~7–15 minutes. San Diego publishes 20 downloads/session
+  and 150/day across both seats; after that, print only.
+COVERAGE: Remote package = primary state and federal law (cases, statutes,
+  regulations, trial-court orders). Home page this session showed Cases,
+  Topics & Key Numbers, Trial Court Orders, Statutes & Court Rules,
+  Regulations, Administrative Decisions, Practical Law, Secondary Sources,
+  FormFinder, Briefs, Jury Verdicts, Dockets. On-site Westlaw at the same
+  libraries has more secondary sources than the remote pilot.
+STAR PAGINATION?: YES on Westlaw case views (star pages / official reporter
+  pagination). Not screenshotted this session — confirm on the first case
+  opened. Pins taken from Westlaw reporter view are the accepted confirmation
+  when CAP has no *page-label.
+UNPUBLISHED DISPOSITIONS?: Yes. This is how a bare WL number (C5) gets resolved.
+  F. App'x and unreported orders are in the cases collection.
+SUBSEQUENT HISTORY?: **KeyCite** — Negative Treatment / History / Citing
+  References tabs on the case. Type `kc {cite}` in the search box. This is
+  the only real citator now in Plaintiff's hands. Not an API.
+CONTROL RESULTS: C1–C7 not run on this account this session.
+  First manual jobs: KeyCite the live authorities; resolve 2016 WL 4761808;
+  confirm any F.3d/F.4th/Cal.App.5th pin past CAP's cliff.
+LICENSE: Click-wrap affirmed on screen (quoted): personal pro se use only;
+  not on behalf of a firm, company, government, or nonprofit; no competitive
+  analysis or benchmarking; agree to Patron Access for Pro Se terms.
+  That matches this portfolio. It does not authorize automation, sharing the
+  OnePass, or feeding the account into a probe script.
+FAILURE MODE: Going directly to westlaw.com / next.westlaw.com next time
+  (library pages say the remote link is required). Treating a KeyCite "cited
+  by" count as a holding. Pasting credentials into chat.
+VERDICT: MANUAL ONLY
+WHY: This is the missing citator and the WL-number resolver. It must stay
+  in a logged-in browser. Do not wire it.
+```
+
+*Generated 2026-09-19; Westlaw Patron Access for Pro Se added the same day from Plaintiff's screenshots. Re-run `node internal/scripts/survey-citation-sources.mjs` before trusting reachability; Cloudflare and 410s move.*

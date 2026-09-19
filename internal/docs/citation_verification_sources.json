@@ -1,8 +1,8 @@
 {
-  "generated": "2026-09-19 (wired: cl_bulk_offline step-0 oracle, govinfo POST + name-match, UNRESOLVED vs NOT_FOUND, name-only cap at PARTIAL, pin confidence rules, honest gaps)",
+  "generated": "2026-09-19 (wired: cl_bulk_offline step-0 oracle, govinfo POST + name-match, UNRESOLVED vs NOT_FOUND, name-only cap at PARTIAL, pin confidence rules, honest gaps; westlaw_patron_prose recorded as MANUAL ONLY — Plaintiff reached live KeyCite 2026-09-19)",
   "non_case_law_excluded": [
-    "leginfo.legislature.ca.gov (statutes \u2014 used for Pen. Code \u00a7 3008 verbatim)",
-    "OAL / CDCR rulemaking pages (regulations \u2014 OAL Matter 2025-0321-01C pinned 15 CCR \u00a7 3574 effective date)",
+    "leginfo.legislature.ca.gov (statutes — used for Pen. Code § 3008 verbatim)",
+    "OAL / CDCR rulemaking pages (regulations — OAL Matter 2025-0321-01C pinned 15 CCR § 3574 effective date)",
     "CDCR Form 3043 (agency form, not publicly openable as standalone)"
   ],
   "scope": "Case-law citation verification sources isolated from the Matter 28 primary-source verification prompt (2026-09-19). Rule 2 of the prompt gives the preference order; 'proven_in_run' marks sources a verification worker actually read successfully during the 2026-09-19 run.",
@@ -16,7 +16,7 @@
       "proven_in_run": true,
       "provenance": "Downloaded + indexed 2026-09-19 from this VM (127MB bz2); HEAD verified 200, Accept-Ranges. Reporter strings verified Bluebook-form (U.S., F.3d, F. App'x, S. Ct., Cal. 5th ...).",
       "wired": true,
-      "wire_notes": "Step 0 in lookup-citations.py (probe_bulk_offline) via build-bulk-citation-index.py. Answers existence only; cannot fuzzy-match so it cannot launder a fabricated cite. Miss != NOT_FOUND (quarterly cutoff) \u2014 falls through to live probes."
+      "wire_notes": "Step 0 in lookup-citations.py (probe_bulk_offline) via build-bulk-citation-index.py. Answers existence only; cannot fuzzy-match so it cannot launder a fabricated cite. Miss != NOT_FOUND (quarterly cutoff) — falls through to live probes."
     },
     {
       "base_url": "https://www.courtlistener.com/api/rest/v4/",
@@ -25,7 +25,7 @@
       "name": "CourtListener",
       "prompt_rule2_rank": 5,
       "proven_in_run": true,
-      "provenance": "Opinions search used for Wicklund v. Idaho (zero results \u2014 confirmed unreported)",
+      "provenance": "Opinions search used for Wicklund v. Idaho (zero results — confirmed unreported)",
       "wire_notes": "Already probed by lookup-citations.py (citation lookup + search). No change needed.",
       "wired": true
     },
@@ -103,18 +103,18 @@
       "prompt_rule2_rank": 1,
       "proven_in_run": false,
       "provenance": null,
-      "wire_notes": "No public API. Highest marginal value: unbound cites like Horn 604 U.S. ___ (no reporter page exists yet) \u2014 slip opinions are the only authoritative source.",
+      "wire_notes": "No public API. Highest marginal value: unbound cites like Horn 604 U.S. ___ (no reporter page exists yet) — slip opinions are the only authoritative source.",
       "wired": false
     },
     {
       "base_url": "https://www.law.cornell.edu/supremecourt/text/",
       "coverage": "SCOTUS opinions, citation-addressable HTML",
       "id": "cornell_lii_scotus",
-      "name": "Cornell LII \u2014 Supreme Court",
+      "name": "Cornell LII — Supreme Court",
       "prompt_rule2_rank": 8,
       "proven_in_run": false,
       "provenance": null,
-      "wire_notes": "URL pattern /supremecourt/text/<volume>/<page> (e.g. /521/399 for Richardson). Citation-addressable with no lookup step \u2014 cheapest SCOTUS probe to add.",
+      "wire_notes": "URL pattern /supremecourt/text/<volume>/<page> (e.g. /521/399 for Richardson). Citation-addressable with no lookup step — cheapest SCOTUS probe to add.",
       "wired": false
     },
     {
@@ -136,7 +136,7 @@
       "prompt_rule2_rank": 7,
       "proven_in_run": false,
       "provenance": null,
-      "wire_notes": "No API; HTML scraping only. Lowest priority \u2014 duplicates CAP/CourtListener coverage.",
+      "wire_notes": "No API; HTML scraping only. Lowest priority — duplicates CAP/CourtListener coverage.",
       "wired": false
     },
     {
@@ -147,24 +147,39 @@
       "prompt_rule2_rank": null,
       "proven_in_run": true,
       "provenance": "Estate of Esche (9th Cir. Sept. 29, 2025) read in full from .../estate-of-jill-ann-esche-v-bunuel-jordana-10679498-1e95b21f039a/pdf",
-      "wire_notes": "Opaque IDs (.../<slug>/<id>/pdf); not systematically addressable. Manual fallback only \u2014 do not build a probe around it.",
+      "wire_notes": "Opaque IDs (.../<slug>/<id>/pdf); not systematically addressable. Manual fallback only — do not build a probe around it.",
       "wired": false
+    },
+    {
+      "id": "westlaw_patron_prose",
+      "name": "Westlaw Patron Access for Pro Se (library remote pilot)",
+      "base_url": "https://next.westlaw.com/",
+      "coverage": "Primary state and federal law on the remote package (cases, statutes, regulations, trial-court orders, Key Numbers). Secondary sources are thinner than on-site Westlaw. KeyCite is a case-page feature (Negative Treatment / History / Citing References), not a public API.",
+      "prompt_rule2_rank": null,
+      "proven_in_run": false,
+      "provenance": "Plaintiff reached the live Westlaw home 2026-09-19 via ess.thomsonreuters.com after the Patron Access for Pro Se click-wrap (screenshots: landing, next.westlaw.com agree, home). Controls not yet run on this account.",
+      "wire_notes": "MANUAL ONLY. Enter through the issuing library's remote link, not a bare next.westlaw.com bookmark. Shared seats (often 2); Sign Off or the seat holds 7–15 minutes. San Diego publishes a 20-doc/session and 150-doc/day download cap. Never put OnePass in chat, git, or a probe script. Personal pro se use only — that matches this portfolio; it does not authorize automation or source-benchmarking.",
+      "wired": false,
+      "survey_verdict": "MANUAL ONLY — closes WL / pin-after-cliff / KeyCite gaps"
     }
   ],
   "wiring_recommendation": {
-    "note": "The four already-wired sources (CourtListener, CAP, Justia, Scholar) cover nearly all published cases. New probes add marginal value in three spots only.",
+    "note": "The four already-wired sources (CourtListener, CAP, Justia, Scholar) cover nearly all published cases. New probes add marginal value in three spots only. Plaintiff now has Westlaw Patron Access for Pro Se in a browser — that is the manual KeyCite / bare-WL / post-cliff pin step, not a server probe.",
     "priority_order": [
-      "govinfo (official API \u2014 most robust new probe)",
+      "govinfo (official API — most robust new probe)",
       "ca9_cdn (docket-addressable; portfolio's heaviest circuit)",
       "supremecourt_gov slip opinions (only authoritative source for unbound U.S. cites, e.g. Horn 604 U.S. ___)",
       "cornell_lii_scotus (citation-addressable, cheapest to add)",
       "courts_ca_gov + scocal (Cal. direct PDFs as fallback)"
+    ],
+    "do_not_wire": [
+      "westlaw_patron_prose (logged-in browser only; license forbids competing/benchmarking use; no credentials in the pipeline)"
     ]
   },
   "honest_gaps": [
-    "No free Westlaw-number resolver: WL pins (e.g. 2021 WL 1034838) cannot be resolved offline; CourtListener sometimes carries them, no guarantee.",
-    "No programmatic negative-treatment flags from free sources: KeyCite/Shepard's need Westlaw/Lexis. Only verified remote route: San Diego Law Library pro-se Westlaw pilot (2 concurrent seats, OnePass).",
-    "California depublication can silently stale CourtListener's 'Published' label \u2014 treat publication status as provisional for Cal. cases.",
+    "No free Westlaw-number resolver: WL pins (e.g. 2021 WL 1034838) cannot be resolved offline; CourtListener sometimes carries them, no guarantee. Manual as of 2026-09-19: Plaintiff has Westlaw Patron Access for Pro Se — look up the WL number in that browser, do not scrape.",
+    "No programmatic negative-treatment flags from free sources: KeyCite/Shepard's must not be wired. Plaintiff reached live KeyCite 2026-09-19 via library remote Patron Access for Pro Se (shared seats, often 2; OnePass — never store). San Diego publishes 20-doc/session and 150-doc/day download caps.",
+    "California depublication can silently stale CourtListener's 'Published' label — treat publication status as provisional for Cal. cases.",
     "Bulk offline snapshot is quarterly (2026-06-30): post-cutoff cases are invisible to the oracle; a bulk miss is UNRESOLVED, never NOT_FOUND.",
     "CAP static is frozen ~2018: no post-2018 state-court coverage; live CAP API retired 2024-09-05.",
     "CourtListener May-2026 throttle: new accounts 5/min, 50/hr, 125/day; citation-lookup 60 valid cites/min, 250 citations/request.",
@@ -191,7 +206,7 @@
       },
       {
         "control": "C4 In re Hudson, 1 Cal.App. 4th 1 (2006)",
-        "cap": "cal-app-4th/1 first_page=1 -> 'Weidenfeller v. Star & Garter' \u2014 fabricated cite caught (wrong case at pin)",
+        "cap": "cal-app-4th/1 first_page=1 -> 'Weidenfeller v. Star & Garter' — fabricated cite caught (wrong case at pin)",
         "verdict": "pass (negative control caught)"
       },
       {
