@@ -1,5 +1,7 @@
 # Citation-verification source survey
 
+Machine-readable companion (wired / opt-in / gap, plus these control results): `internal/docs/citation_verification_sources.json`.
+
 Live-tested 2026-09-19 from a headless datacenter IP (plain HTTPS, no JavaScript, no credentials except where a 401 proved a token is required). This is infrastructure, not legal advice. It does not verify any portfolio brief.
 
 **Control set used**

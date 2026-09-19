@@ -44,7 +44,7 @@ Do not mark a citation VERIFIED from memory. Run the funnel and record evidence.
 
 ## Source reachability (this cloud environment)
 
-Live source survey (controls, star pagination, cliffs, traps): `internal/docs/CITATION_SOURCE_SURVEY.md` (2026-09-19).
+Live source survey (controls, star pagination, cliffs, traps): `internal/docs/CITATION_SOURCE_SURVEY.md` (2026-09-19). Wired/opt-in/gap catalog: `internal/docs/citation_verification_sources.json`.
 
 | Source | Status |
 |---|---|
