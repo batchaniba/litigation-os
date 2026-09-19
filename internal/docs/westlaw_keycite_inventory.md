@@ -466,15 +466,15 @@ First: _Regents v. Roth, 408 U.S. 564_ · Last: _2019 WL 6619348_
 |[ ]|330|Drum v. San Fernando Valley Bar Assn, 182 Cal.App.4th 247|UNVERIFIED|5|2||||
 |[ ]|331|Elsner v. Uveges, 34 Cal.4th 915|UNVERIFIED|5|2||||
 |[ ]|332|Hahn v. Mirda, 147 Cal.App.4th 740|UNVERIFIED|5|2||||
-|[ ]|333|Herrera v. Deutsche Bank National Trust Co, 196 Cal.App.4th 1366|UNVERIFIED|5|2||||
-|[ ]|334|In re Estrada, 47 Cal.App.4th 1688|UNVERIFIED|5|2||||
+|[ ]|333|Herrera v. Deutsche Bank National Trust Co, 196 Cal.App.4th 1366|VERIFIED|5|2|Y|KEEP|Yellow - "Declined to Extend by" Holmes v. HSBC Bank USA, 2014 WL 99018, at *4 (Cal.App. 2 Dist. Jan. 10, 2014): Herrera's wrongful-foreclosure holding (no judicial notice that the bank was beneficiary based on recorded substitution/assignment recitations) held inapplicable to MERS-authority facts. Passage read.|
+|[ ]|334|In re Estrada, 47 Cal.App.4th 1688|VERIFIED|5|2|N|KEEP|No KeyCite flag (flag check only; treating documents not opened, quota conserved).|
 |[ ]|335|Joslin v. H.A.S. Ins. Brokerage, 184 Cal.App.3d 369|VERIFIED|5|2||||
-|[ ]|336|Landeros v. Flood, 17 Cal.3d 399|UNVERIFIED|5|2||||
+|[ ]|336|Landeros v. Flood, 17 Cal.3d 399|VERIFIED|5|2|Y|KEEP|Yellow - "Superseded by Statute as Stated in" Avivi v. Centro Medico Urgente Med. Ctr., 159 Cal.App.4th 463, 469 (Cal.App. 2 Dist. Jan. 14, 2008): physician liability for failure to diagnose/report child abuse superseded by the Child Abuse and Neglect Reporting Act (citing People v. Davis). Passage read.|
 |[ ]|337|Mangini v. R.J. Reynolds Tobacco Co, 7 Cal.4th 1057|VERIFIED|5|2||||
 |[ ]|338|People v. Woodell, 17 Cal.4th 448|VERIFIED|5|2||||
 |[ ]|339|Ross v. Creel Printing, 100 Cal.App.4th 736|VERIFIED|5|2||||
 |[ ]|340|Silva v. Di Vittorio, 658 F.3d 1090|VERIFIED|30|2||||
-|[ ]|341|Taylor v. Superior Court, 24 Cal.3d 890|UNVERIFIED|5|2||||
+|[ ]|341|Taylor v. Superior Court, 24 Cal.3d 890|VERIFIED|5|2|Y|KEEP|Yellow - "Declined to Follow by" Bolsta v. Johnson, 176 Vt. 602, 848 A.2d 306, 309-310 (Vt. Mar. 4, 2004): Vermont declined Taylor's per se rule that drunk driving = malice for punitive damages; actual bad motive required. Passage read.|
 |[ ]|342|Wilkinson v. Dotson, 544 U.S. 74|VERIFIED|5|2||||
 
 ## Session 18 — rows 343-362 (20 cites)
@@ -511,33 +511,33 @@ First: _Regents v. Roth, 408 U.S. 564_ · Last: _2019 WL 6619348_
 |[ ]|365|Venegas v. County of Los Angeles, 153 Cal.App.4th 1230|VERIFIED|30|1||||
 |[ ]|366|Villiarimo v. Aloha Island Air, 281 F.3d 1054|VERIFIED|30|1||||
 |[ ]|367|Zahrey v. Coffey, 221 F.3d 342|VERIFIED|30|1||||
-|[ ]|368|Kim v. Westmoore Partners, 201 Cal.App.4th 267|UNVERIFIED|12|11||||
+|[ ]|368|Kim v. Westmoore Partners, 201 Cal.App.4th 267|VERIFIED|12|11|Y|KEEP|Yellow - "Distinguished by" Wang v. EOS Petro, Inc., 2023 WL 178372, at *6 (Cal.App. 2 Dist. Jan. 13, 2023): plaintiffs' declarations sufficed for default-judgment damages prove-up, unlike Kim. Passage read.|
 |[ ]|369|Richardson v. McKnight, 521 U.S. 399|VERIFIED|28|11||||
-|[ ]|370|People v. Thompson, 38 Cal.4th 811|UNVERIFIED|20, 24, 32|10||||
-|[ ]|371|Garber & Assocs. v. Eskandarian, 150 Cal.App.4th 813|UNVERIFIED|12|9||||
-|[ ]|372|Espinoza v. Shiomoto, 10 Cal.App.5th 85|UNVERIFIED|20, 24, 32|8||||
-|[ ]|373|Redfearn v. Trader Joe's Co, 20 Cal.App.5th 989|UNVERIFIED|20, 24, 32|8||||
-|[ ]|374|Aubry v. Tri-City Hosp. Dist, 2 Cal.4th 962|UNVERIFIED|5, 20, 24, 32|7||||
+|[ ]|370|People v. Thompson, 38 Cal.4th 811|VERIFIED|20, 24, 32|10|Y|KEEP|Yellow - "Disagreement Recognized by" Knowles v. City of Benicia, 785 F.Supp.2d 936, 947 (E.D. Cal. Mar. 25, 2011): the 9th Circuit (Hopkins v. Bonvicino) disagreed with Thompson's Welsh distinction -- misdemeanor DUI investigation is not an exigent circumstance justifying warrantless home entry. Passage read.|
+|[ ]|371|Garber & Assocs. v. Eskandarian, 150 Cal.App.4th 813|VERIFIED|12|9|Y|KEEP|Yellow - "Distinguished by" Wells Fargo Bank, N.A. v. GMAC Mortg. USA Corp., 2010 WL 2881099, at *4 n.5 (Cal.App. 2 Dist. July 23, 2010): Garber (default cuts off a party's right to participate) distinguished -- it didn't address judgment on the pleadings against a defaulted defendant while other defendants remain. Passage read.|
+|[ ]|372|Espinoza v. Shiomoto, 10 Cal.App.5th 85|VERIFIED|20, 24, 32|8|Y|KEEP|Yellow - "Disagreed With by" People v. Bolourchi, 103 Cal.App.5th 243, 269 (Cal.App. 1 Dist. June 28, 2024): disagreed with Espinoza's post-Birchfield analysis -- an evidentiary consequence (consciousness-of-guilt instruction) for refusing a blood test is permissible. Passage read.|
+|[ ]|373|Redfearn v. Trader Joe's Co, 20 Cal.App.5th 989|VERIFIED|20, 24, 32|8|R|REPLACE/DELETE|RED - "Disapproved of by" Ixchel Pharma, LLC v. Biogen, Inc., 9 Cal.5th 1130, 1148 (Cal. Aug. 3, 2020): disapproved Redfearn's rule that interference with at-will contracts needs no independent wrongfulness; independent wrongfulness is required. Cited in matters 20, 24, 32. Passage read.|
+|[ ]|374|Aubry v. Tri-City Hosp. Dist, 2 Cal.4th 962|VERIFIED|5, 20, 24, 32|7|Y|KEEP|Yellow - "Distinguished by" Duke v. Superior Court, 18 Cal.App.5th 490, 499 (Cal.App. 5 Dist. Nov. 21, 2017): distinguished Aubry's waiver rule (amending after demurrer waives review) -- where only some causes of action were dismissed (no final judgment), amending wouldn't forfeit review. (KeyCite list read.)|
 |[ ]|375|Filarsky v. Delia, 566 U.S. 377|VERIFIED|28|7||||
-|[ ]|376|Griset v. Fair Political Practices Commission, 25 Cal.4th 688|UNVERIFIED|20, 32|7||||
-|[ ]|377|Ramirez v. Cnty. of San Bernardino, 806 F.3d 1002|UNVERIFIED|18, 33|7||||
-|[ ]|378|896 F.2d 1542|UNVERIFIED|33|6||||
-|[ ]|379|Barnes v. AT, 718 F. Supp. 2d 1167|UNVERIFIED|33|6||||
-|[ ]|380|Del E. Webb Corp. v. Structural Materials Co, 123 Cal.App.3d 593|UNVERIFIED|20, 24, 32|6||||
+|[ ]|376|Griset v. Fair Political Practices Commission, 25 Cal.4th 688|VERIFIED|20, 32|7|Y|KEEP|Yellow - "Declined to Extend by" In re J.M., 103 Cal.App.5th 745, 755-756 (Cal.App. 3 Dist. July 12, 2024): declined to extend Griset's remittitur-jurisdiction/finality rule to bar retroactive application of ameliorative sentencing statutes (Estrada) on remand. (KeyCite list read.)|
+|[ ]|377|Ramirez v. Cnty. of San Bernardino, 806 F.3d 1002|VERIFIED|18, 33|7|Y|KEEP|Yellow - "Overruling Recognized by" Marcos v. United States Dep't of the Navy, 2023 WL 6283257, at *2 (D.Hawai'i Sep. 26, 2023): recognized Forsyth (the authority Ramirez quoted for "amended complaint supersedes the original") was overruled on other grounds by Lacey v. Maricopa County (en banc 2012). (KeyCite list read.)|
+|[ ]|378|896 F.2d 1542|VERIFIED|33|6|Y|KEEP|Yellow -- bare cite resolved: Hal Roach Studios, Inc. v. Richard Feiner & Co., Inc., 896 F.2d 1542 (9th Cir. 1989). "Abrogation Recognized by" Himes v. Hadjadj, 2020 WL 4582676, at *4 (S.D. Cal. Aug. 10, 2020): Hal Roach's 12(b)(6) rule (considering material submitted with the complaint) was abrogated in part on other grounds by Twombly/Iqbal plausibility. (KeyCite list read.)|
+|[ ]|379|Barnes v. AT, 718 F. Supp. 2d 1167|VERIFIED|33|6|Y|KEEP|Yellow - "Disagreed With by" Craten v. Foster Poultry Farms Inc., 2016 WL 3457899, at *2-*3 (D. Ariz. June 24, 2016): disagreed with Barnes -- Twombly/Iqbal plausibility does not govern affirmative defenses; the "fair notice" standard applies. (KeyCite list read.)|
+|[ ]|380|Del E. Webb Corp. v. Structural Materials Co, 123 Cal.App.3d 593|VERIFIED|20, 24, 32|6|Y|KEEP|Yellow - "Disagreement Recognized by" Briarwood Capital, LLC v. Lennar Homes of California, Inc., 2010 WL 4873505, at *9 n.4 (Cal.App. 4 Dist. Dec. 1, 2010): recognized (via Garcia v. Sterling) that Del E. Webb's rule allowing judicial notice of the truth of a pleading party's allegations/affidavits on demurrer is a misunderstanding -- courts can't notice hearsay allegations as true merely because they're in a court record. (KeyCite list read.)|
 |[ ]|381|Foltz v. State Farm Mut. Auto. Ins. Co, 331 F.3d 1122|VERIFIED|28, 29|6||||
-|[ ]|382|Goncharov v. Uber Techs., 19 Cal.App.5th 1157|UNVERIFIED|20, 24, 32|6||||
+|[ ]|382|Goncharov v. Uber Techs., 19 Cal.App.5th 1157|VERIFIED|20, 24, 32|6|Y|KEEP|Yellow - "Distinguished by" TruConnect Communications, Inc. v. Maximus Inc., 91 Cal.App.5th 497, 513 (Cal.App. 1 Dist. May 11, 2023): distinguished Goncharov's Pub. Util. Code section 1759(a) CPUC-preemption rule -- a damages suit against private contractors for past injuries wouldn't conflict with a CPUC order or interfere with CPUC duties. (KeyCite list read.)|
 
 ## Session 20 — rows 383-402 (20 cites)
 
 |done|#|Search|Status|Matters|Uses|Flag N/Y/R|Keep/Drop|Notes|
 |---|---|---|---|---|---|---|---|---|
 |[ ]|383|Jensen v. Lane County, 222 F.3d 570|VERIFIED|3, 28|6||||
-|[ ]|384|Sch. & Hosp. v. Halderman, 465 U.S. 89|UNVERIFIED|7, 33|6||||
-|[ ]|385|Starr v. Baca, 652 F.3d 1202|UNVERIFIED|3, 18, 29|6||||
+|[ ]|384|Sch. & Hosp. v. Halderman, 465 U.S. 89|VERIFIED|7, 33|6|Y|KEEP|Yellow - "Superseded by Statute as Stated in" Francisco v. Kline, 2026 WL 1880182, at *5 (E.D. Pa. June 30, 2026): notes Pennhurst's Eleventh Amendment bar was superseded by statute on other grounds -- 28 U.S.C. section 1367 (supplemental jurisdiction). Flag-level only; worth a full read -- a 2026 federal decision treats Pennhurst as superseded. (KeyCite list read.)|
+|[ ]|385|Starr v. Baca, 652 F.3d 1202|VERIFIED|3, 18, 29|6|Y|KEEP|Yellow - "Declined to Extend by" Mounce v. Vitt, 2024 WL 52999, at *6 (D. Or. Jan. 4, 2024): declined to extend Starr's deliberate-indifference supervisory-liability standard -- a supervisor's general role/title alone, without evidence of personal involvement or deliberate indifference to the specific deprivation, is insufficient. (KeyCite list read.)|
 |[ ]|386|Will v. Michigan Dept, 491 U.S. 58|VERIFIED|1, 32, 33|6||||
 |[ ]|387|2024 WL 4163081|VERIFIED|7, 8, 32, 33|5||||
-|[ ]|388|35 Cal.3d 197|UNVERIFIED|5, 20, 32|5||||
-|[ ]|389|Albright v. Oliver, 510 U.S. 266|UNVERIFIED|3, 24|5||||
+|[ ]|388|35 Cal.3d 197|VERIFIED|5, 20, 32|5|R|REPLACE/DELETE|RED -- bare cite resolved: Committee On Children's Television, Inc. v. General Foods Corp., 35 Cal.3d 197 (Cal. 1983). "Superseded by Statute as Stated in" Branick v. Downey Savings & Loan Assn., 39 Cal.4th 235, 243 (Cal. July 24, 2006): Prop. 64 superseded Children's Television's rule that organizations could sue on behalf of the general public under the UCL -- now only persons with injury in fact and lost money or property may sue. Cited in matters 5, 20, 32. (KeyCite list read.)|
+|[ ]|389|Albright v. Oliver, 510 U.S. 266|VERIFIED|3, 24|5|Y|KEEP|Yellow flag confirmed in KeyCite; treating-document detail NOT obtained -- document limit hit before the document opened. Needs a fresh patron session.|
 |[ ]|390|Greenup v. Rodman, 42 Cal.3d 822|UNVERIFIED|12|5||||
 |[ ]|391|North Oakland Medical Clinic v. Rogers, 65 Cal.App.4th 824|UNVERIFIED|12|5||||
 |[ ]|392|People v. Sanders, 31 Cal.4th 318|VERIFIED|7, 8, 32, 33|5||||
