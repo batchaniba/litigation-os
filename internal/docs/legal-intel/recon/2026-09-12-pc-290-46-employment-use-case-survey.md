@@ -852,7 +852,10 @@ and order caption in this memo that is not from a locally held PDF comes from th
 
 **Primary, read in full (this repository, `documents` branch):** *Lerma v. Amazon* Dkts. 1, 20,
 23-1, 23-2, 24-1, 26, 27, 28, 36, 43–48 and docket sheet, at
-`internal/public/documents/matter-29/lerma-v-amazon/`; *Newanforbi v. UPS* complaint, Dkt. 7 and
+`internal/public/documents/matter-29/lerma-v-amazon/`. Frederick's signed packet (Dkts. 24,
+24-1, 27, 36) is also lodged in the playbook at
+`internal/docs/counsel/frederick-stanzick/sources/8-22-cv-01727-Lerma-v-Amazon/`.
+*Newanforbi v. UPS* complaint, Dkt. 7 and
 exhibits, Dkts. 10–11, and the Sept. 9, 2026 opposition, at
 `internal/public/documents/matter-26/`.
 

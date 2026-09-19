@@ -38,7 +38,7 @@ Closed shells (1, 2, 5, 7, 8, 15) stay off this table. They appear only on the c
 ## Existing research (appendices)
 
 - Counsel hands: `counsel/`
-- Frederick–Stanzick Playbook (Matter 29 two-desk + *Carrillo* papers): [`../counsel/frederick-stanzick/`](../counsel/frederick-stanzick/)
+- Frederick–Stanzick Playbook (Matter 29 two-desk + *Lerma* / *Carrillo* papers): [`../counsel/frederick-stanzick/`](../counsel/frederick-stanzick/)
 - Judge memos: `judges/` — check assignment before using
 - Dated surveys: `recon/`
 - Portfolio impeachment map: [`../CROSS_MATTER_RISK_INDEX.md`](../CROSS_MATTER_RISK_INDEX.md) (dated Jul. 11, 2026 — refresh against live captions)

@@ -25,7 +25,7 @@
       "phone": null,
       "california_bar_no": "284832",
       "bio_url": null,
-      "notes": "Matter 29 counsel for Amazon.com Services, LLC. Management-side employment generalist. Not on Carrillo. Bar No. 284832 appears on Lerma-era Morgan Lewis blocks; pin before citing."
+      "notes": "Matter 29 counsel for Amazon.com Services, LLC. Signed Lerma Dkt. 24 / 24-1 / 27 (Amazon MTD that killed §290.46 on sourcing). Bar No. 284832 confirmed on those blocks. Co-signed with Ashlee N. Cherry (SBN 312731) and Aleksandr Markelov (SBN 319235). Not on Carrillo."
     },
     {
       "id": "drury",
@@ -66,6 +66,35 @@
       ],
       "usable_as": "The case this playbook is for.",
       "not_a_holding": "Do not treat the live demand figures as findings in this research file."
+    },
+    {
+      "id": "lerma-v-amazon-cdcal-2022",
+      "kind": "portfolio_transfer",
+      "matter": 29,
+      "caption": "Miguel Lerma, Jr. v. Amazon.com Services, LLC et al.",
+      "docket_short_title": "Lerma v. Amazon",
+      "court": "C.D. Cal.",
+      "case_no": "8:22-cv-01727-FWS-JDE",
+      "judge": "Hon. Fred W. Slaughter; Mag. John D. Early",
+      "filed": "2022-09-21",
+      "terminated": "2023-10-26",
+      "side": "defense",
+      "client": "Amazon.com Services, LLC and Amazon Logistics, Inc.",
+      "nature": "Class action: PC §290.46; Fair Chance Act §12952; ICRAA; FCRA §1681b(b)(1); UCL",
+      "stanzick_role": "none — Accurate was Jessica Lohr / Troutman",
+      "frederick_role": "Signed Dkt. 24, 24-1 (Dec. 15, 2022) and Dkt. 27 (Feb. 2, 2023). SBN 284832.",
+      "employer_counsel": "Morgan, Lewis & Bockius (Frederick, Cherry, Markelov) for Amazon",
+      "plaintiff_counsel": "Raymond Y. Kim (SBN 251210), Ray Kim Law — same counsel as Carrillo v. Vons",
+      "outcome": "Dkt. 36 (May 26, 2023) dismissed Megan's Law, FCRA, UCL without prejudice on sourcing. Fair Chance survived; settled Sept. 21, 2023 (Dkt. 46); stipulation to dismiss Oct. 26, 2023 (Dkt. 48).",
+      "sources": [
+        "internal/docs/counsel/frederick-stanzick/sources/8-22-cv-01727-Lerma-v-Amazon/",
+        "/documents/matter-29/lerma-v-amazon/Dkt 24 - Amazon's Motion to Dismiss Claims One and Five (Dec 15, 2022).pdf",
+        "/documents/matter-29/lerma-v-amazon/Dkt 24-1 - Amazon's Memorandum ISO Motion to Dismiss (Dec 15, 2022).pdf",
+        "/documents/matter-29/lerma-v-amazon/Dkt 27 - Amazon's Reply ISO Motion to Dismiss (Feb 2, 2023).pdf",
+        "/documents/matter-29/lerma-v-amazon/Dkt 36 - ORDER GRANTING Motions to Dismiss - Megan's Law, FCRA, UCL Claims Dismissed (May 26, 2023).pdf"
+      ],
+      "usable_as": "Frederick's signed Amazon MTD template: incorporation of the report, website-use-only §290.46, field-by-field court-record comparison, NSOR no-record-found, Sonner UCL, Fair Chance left standing.",
+      "not_a_holding": "Not a Civil L.R. 3-12 / CRC 3.300 related case. Not a holding that Amazon may use the Megan's Law website. Not Mendoza authority (Dkt. 36 n.1 ducked it). Not a settled-liability admission on §290.46. Full 69-file docket already in the manifest — do not PACER-pull again."
     },
     {
       "id": "carrillo-v-vons-cdcal-2025",

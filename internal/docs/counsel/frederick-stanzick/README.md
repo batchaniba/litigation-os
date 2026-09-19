@@ -6,11 +6,11 @@ This is the playbook. Identity/role intelligence and lodged comparator briefs li
 
 | File | What it is |
 |---|---|
-| [`PLAYBOOK.md`](PLAYBOOK.md) | Read this. Two-desk comparison, *Carrillo* argument inventory, the seam between the defenses. |
+| [`PLAYBOOK.md`](PLAYBOOK.md) | Read this. Two-desk comparison, *Lerma* (Frederick) and *Carrillo* (Stanzick) argument inventories, the seam. |
 | [`cases.json`](cases.json) | Append-only machine cards. One object per docket. |
-| [`sources/`](sources/) | Lodged PACER prints. Not served on the public site. Seeded: *Carrillo v. Vons / Asurint* class-cert set (Dkts. 1, 55–59). |
+| [`sources/`](sources/) | Lodged PACER prints. Not served on the public site. Seeded: *Lerma* Frederick MTD packet (Dkts. 24, 24-1, 27, 36); *Carrillo* class-cert set (Dkts. 1, 55–59). |
 
-The same six *Carrillo* PDFs are also cataloged on Matter 29 as comparator inventory (same pattern as *Lerma*) at `/documents/matter-29/carrillo-v-vons/`. Searchable sidecars sit next to those paths. The playbook `sources/` copies are the counsel-research lodge.
+*Carrillo* is also cataloged at `/documents/matter-29/carrillo-v-vons/`. The full *Lerma* docket (69 PDFs) already lives at `/documents/matter-29/lerma-v-amazon/` — do not PACER-pull it again. Playbook `sources/` copies are the counsel-research lodge.
 
 ## How to add the next case
 
@@ -30,6 +30,15 @@ Identity and role intelligence only. A docket where they appeared for someone el
 - The older pointer at [`../matter29/`](../matter29/) redirects here. Do not keep a second living copy.
 
 ## Seeded sources
+
+*Miguel Lerma, Jr. v. Amazon.com Services, LLC*, C.D. Cal. No. **8:22-cv-01727-FWS-JDE** (Slaughter, J.) — **Frederick signed**:
+
+| Dkt | Paper | Date | Why it is here |
+|---|---|---|---|
+| 24 | Amazon notice of motion (Claims 1 and 5) | Dec. 15, 2022 | Cover. Website-use-only theory in four pages. |
+| **24-1** | **Amazon memorandum** | Dec. 15, 2022 | **The winning brief.** Incorporation + court-record sourcing. Fair Chance left standing (n.1). |
+| **27** | **Amazon reply** | Feb. 2, 2023 | Field-by-field court-record vs website comparison; NSOR "NO RECORD FOUND"; *Schneider* on unpled facts; *Sonner* concession. |
+| 36 | Order granting both MTDs | May 26, 2023 | Already cataloged. Megan's Law / FCRA / UCL dismissed without prejudice. |
 
 *Sandoval Carrillo v. The Vons Companies, Inc.*, C.D. Cal. No. **8:25-cv-00191-SRM-KES** (Murillo, J.):
 

@@ -47,7 +47,7 @@ No phone, no email address, no "In Pro Per" on the close.
 
 ## Counsel dossiers
 
-Opposing-counsel identity/role research lives under `internal/docs/counsel/`. Seeded: Kabat Chapman & Ozmer (Williams / Chapman) at [`internal/docs/counsel/kcoz/`](internal/docs/counsel/kcoz/); Frederick–Stanzick Playbook (Matter 29 two-desk + *Carrillo* papers) at [`internal/docs/counsel/frederick-stanzick/`](internal/docs/counsel/frederick-stanzick/). Append PACER pulls there. Those dockets are not related cases. Do not email counsel about the research.
+Opposing-counsel identity/role research lives under `internal/docs/counsel/`. Seeded: Kabat Chapman & Ozmer (Williams / Chapman) at [`internal/docs/counsel/kcoz/`](internal/docs/counsel/kcoz/); Frederick–Stanzick Playbook (Matter 29 two-desk + *Lerma* / *Carrillo* papers) at [`internal/docs/counsel/frederick-stanzick/`](internal/docs/counsel/frederick-stanzick/). Append PACER pulls there. Those dockets are not related cases. Do not email counsel about the research.
 
 ## No GitHub to outsiders
 

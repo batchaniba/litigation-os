@@ -54,7 +54,7 @@ Two-desk counsel research for Amazon (Andrew P. Frederick / Morgan Lewis) and Ac
 
 - [Playbook](../internal/docs/counsel/frederick-stanzick/PLAYBOOK.md)
 - [Index and how to add the next case](../internal/docs/counsel/frederick-stanzick/README.md)
-- Seeded sources: *Carrillo v. Vons / Asurint*, C.D. Cal. 8:25-cv-00191 (Stanzick signed the Asurint class-cert opposition)
+- Seeded sources: *Lerma v. Amazon*, C.D. Cal. 8:22-cv-01727 (Frederick signed the Amazon MTD that killed § 290.46 on sourcing); *Carrillo v. Vons / Asurint*, C.D. Cal. 8:25-cv-00191 (Stanzick signed the Asurint class-cert opposition)
 
 ## Judicial dossiers
 

@@ -223,6 +223,10 @@ Filed September 21, 2022.
 
 **Status: REPOSITORY PRIMARY as to the stored Dkt. 36 and docket; public
 docket/news independently confirm the disposition and settlement chronology.**
+Frederick's signed briefs behind that order (Dkt. 24-1 memorandum; Dkt. 27
+reply) are now in the Frederick–Stanzick Playbook at
+`internal/docs/counsel/frederick-stanzick/sources/8-22-cv-01727-Lerma-v-Amazon/`
+and on the Matter 29 curated list. Do not PACER-pull the 69-file docket again.
 
 FAC claims included:
 - Megan's Law / Penal Code § 290.46;
