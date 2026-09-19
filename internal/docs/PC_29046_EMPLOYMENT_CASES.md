@@ -309,10 +309,39 @@ No located § 290.46 merits ruling. Do not cite Walker as precedent.
 C.D. Cal. No. 8:25-cv-00191-SRM-KES.
 Hon. Serena R. Murillo.
 
-Class/employment docket located; class-discovery activity verified.
+**Status: PRIMARY FILING PACKET REVIEWED; no located merits ruling.**
 
-**Status: high-priority UNVERIFIED LEAD for the specific § 290.46 pleading.**
-No located § 290.46 merits ruling.
+The portfolio now contains full-text copies of:
+- Dkt. 1 class-action complaint;
+- Dkt. 55 motion for class certification;
+- Dkt. 56 Vons opposition;
+- Dkt. 57 Asurint opposition;
+- Dkt. 58 reply to Vons;
+- Dkt. 59 reply to Asurint.
+
+Path:
+`internal/public/documents/cluster-05/carrillo-vons-asurint/`.
+
+The class-certification papers represent that discovery produced:
+- employer / CRA data identifying a proposed multi-applicant SOR cohort;
+- standardized "Highest Crime: Sex Offender" coding;
+- standardized adverse-action notices identifying SOR information;
+- Vons corporate-witness testimony;
+- aggregate outcome evidence.
+
+Vons' merits defense invokes § 290.46(j)(1)'s "person at risk" authorization and argues that safety / individualized job circumstances defeat common liability.
+
+Asurint invokes *Mendoza* and FCRA § 1681b(b)(1), arguing:
+- a CRA that merely republishes registry information is not the statutory § 290.46 "user";
+- Vons supplied the required FCRA employer certification;
+- the CRA need not police every downstream employment decision.
+
+**Critical limitation:** these are party positions / discovery representations, not holdings. No public order adjudicating the § 290.46 merits or granting / denying class certification was located in the September 18, 2026 research pass.
+
+**Portfolio lesson:** Carrillo is now the best live **discovery / defense roadmap** for Cluster 5, especially corporate adjudication data and the employer "person at risk" defense. It does **not** cure *Mendoza*'s vendor-side obstacle.
+
+See:
+`internal/docs/legal-intel/recon/2026-09-18-cluster-05-carrillo-vons-asurint-stress-test.md`.
 
 ### 3.5 Garza v. Starbucks Corporation, et al.
 
@@ -400,9 +429,7 @@ This makes UPS materially different from Lerma and Donaleski.
 1. **Derivative-source question** — Does information remain § 290.46
    information when the identified source of record is California's Sex
    Offender Registry but the vendor retrieved it through a national index?
-2. **Authorization question** — Does § 290.46(j)(3) merely preserve separately
-   authorized uses, or can Labor Code § 432.7 create a broad safe harbor for a
-   voluntary employment screen?
+2. **Authorization question** — § 290.46(j)(3) preserves separately authorized uses, including authorized access/use under Labor Code § 432.7. Current § 432.7(m)–(n) is not a blanket permission for every employer to use conviction information: it preserves particular-conviction inquiries or background checks where another federal/state/local law actually requires the inquiry, restriction, or hiring prohibition. Force UPS to identify that external law. Current FMCSA materials require MVR, safety-history, and applicable drug/alcohol Clearinghouse inquiries, but this research pass located no general federal motor-carrier rule requiring an ordinary freight employer to query California's sex-offender registry.
 3. **Person-at-risk question** — What does the undefined exception encompass
    in ordinary employment screening?
 
