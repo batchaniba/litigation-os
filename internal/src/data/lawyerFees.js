@@ -687,6 +687,23 @@ const lawyer_fees_raw = [
       mid: 490
     },
     notes: "Sep. 14, 2026: 10-page TaskUs, LLC offer + Workday stub + 35-page signatory packet + welcome graphic + 3 WorkDay emails + FA Profile Advantage invite + FA saliva-drug-test notice + 2 Profile Advantage portal screenshots (Order WPS-361214148; PRINSOS still In Progress) + 3 CA SOS bizfile printouts + TA Ops start-date administrative hold (11:24 a.m.; not a denial). Same CRA as Matters 25/26. Report not yet viewable — monitoring file.",
+  },
+  {
+    number: 41,
+    type: "State — prospective employment monitoring (Nuro, Inc.; pre-dispute)",
+    documentsCount: 15,
+    totalPagesReal: 34,
+    hours: {
+      low: 1,
+      high: 2.5,
+      mid: 1.75
+    },
+    cost: {
+      low: 280,
+      high: 700,
+      mid: 490
+    },
+    notes: "Sep. 9–18, 2026: Indeed application + Greenhouse auto-reply + GoodTime scheduling flow (Elizabeth Gonzalez) + Sep. 16 Google Meet interview (James Craig) + Sep. 17 driving-eval advance with license-requirements/MVR email (Crystal Garcia) + Sep. 18 driving eval + DocuSign NDA/site-visit waiver (Michelle Nguyen). Checkr vendor is user-stated, unconfirmed. No background-check authorization, no report, no adverse action — monitoring file.",
   }
 ];
 

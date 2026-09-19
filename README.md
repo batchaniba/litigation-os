@@ -44,13 +44,13 @@ All current and future matters follow the [Stipulation Defense — Plaintiff-Fir
 | Plaintiff | Brendan Ngehsi Newanforbi |
 | Representation | Pro Se / In Propria Persona |
 | Jurisdictions | USDC E.D. Cal., USDC N.D. Cal., San Joaquin Sup. Ct., Alameda Sup. Ct., Sacramento Sup. Ct., Santa Clara Sup. Ct. |
-| Total Matters | 40 |
-| Active / Open | 21 |
+| Total Matters | 41 |
+| Active / Open | 22 |
 | — of which Settled | 1 (Matter 22 — Newanforbi v. Pilot Travel Centers LLC, Jul. 14, 2026) |
 | Dismissed / Closed / Abandoned | 19 |
-| Aggregate Exposure (Conservative) | ~$1,486,000+ |
-| Aggregate Exposure (Moderate) | ~$3,612,000+ |
-| Aggregate Exposure (Aggressive) | ~$7,998,000+ |
+| Aggregate Exposure (Conservative) | ~$1,456,000+ |
+| Aggregate Exposure (Moderate) | ~$3,523,000+ |
+| Aggregate Exposure (Aggressive) | ~$7,793,000+ |
 | Last Updated | September 7, 2026 |
 <!-- PORTFOLIO:OVERVIEW_TABLE:END -->
 
@@ -180,7 +180,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | 28 | Newanforbi v. Shannon Smith, LCSW, CEO, et al. | 3:26-cv-07504-LJC | USDC N.D. Cal. | Federal | M&C exhausted — answer Sep. 21 |
 | 29 | Newanforbi v. Amazon.com Services, LLC | 4:26-cv-09249-ASK | USDC N.D. Cal. (Oakland; formerly 3:26-cv-09249-ASK) | Federal | Plaintiff consent filed — both answers Sep. 22 |
 | 30 | Newanforbi v. Moua, et al. | TBD | USDC N.D. Cal. | Federal | Pre-filing — Moua v9 ready; GCA window open |
-| 31 | Newanforbi v. First Advantage LLC | TBD | San Joaquin Sup. Ct. (anticipated) | State | Pre-filing — no demand or complaint yet |
+| 31 | Newanforbi v. First Advantage LLC | TBD | San Joaquin Sup. Ct. (anticipated) | State | Pre-filing — conditional vendor-liability investigation |
 | 32 | Nforbi v. Meza-Gonzalez, et al | 4:26-cv-08271-ASK | USDC N.D. Cal. (Oakland; 4:26-cv-08271-ASK; opened as 3:26-cv-08271-PHK; related Serrato 3:26-cv-05953-CRB and Candelaria 3:26-cv-08272-LJC) | Federal | Rule 55(a) default packet drafted Sep. 18 |
 | 33 | Nforbi v. Candelaria et al. | 3:26-cv-08272-LJC | USDC N.D. Cal. (San Francisco Div.) | Federal | Dkt. 17 MTS; opp. Sep. 23; name corrected |
 | 34 | Newanforbi v. Counseling and Psychotherapy Center, Inc., et al. | TBD | USDC N.D. Cal. (San Jose Div.) / Santa Clara Sup. Ct. | Federal | Pre-filing — intake & compliance monitoring |
@@ -190,6 +190,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | 38 | Brendan Ngwa Nforbi v. Swift Transportation Co. of Arizona LLC | TBD | USDC E.D. Cal. (Sep. 16 walk-up; unfiled) / San Joaquin Sup. Ct. (Sep. 8 packet LOCKED, unfiled) | Federal | EDCA walk-up Sep. 16 — unfiled |
 | 39 | Brendan Ngwa Nforbi v. Best Buy Co., Inc. | TBD | USDC E.D. Cal. (Sep. 16 walk-up; unfiled) / San Joaquin Sup. Ct. (Sep. 8 packet LOCKED, unfiled) | Federal | EDCA walk-up Sep. 16 — unfiled |
 | 40 | Brendan Ngwa Nforbi v. Uber Technologies, Inc. | TBD | TBD (pre-dispute — offer received Sep. 14, 2026) | State | Pending — start on hold |
+| 41 | Brendan Ngwa Nforbi v. Nuro, Inc. | TBD | TBD (pre-dispute — application Sep. 9, 2026) | State | Pending — pre-background-check |
 <!-- PORTFOLIO:ACTIVE_MATTERS:END -->
 
 *Settled matters stay in the table above until dismissal is entered — a settlement resolves the merits, but the matter is still open on the docket. Their Status column reads "Settled" (see the Overview count above for which ones).*
@@ -247,6 +248,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | Sep. 23, 2026 | 40 | WATCH — Anticipated TaskUs, LLC start date (Teammate; orientation 1631 N 1st Street, Suite 200, San Jose, Sep. 23–25; production depot 3030 Corvin Drive, Santa… |
 | Sep. 24, 2026 | 25 | WATCH — FedEx status reports in Newanforbi v. Federal Express Corporation (E.D. Cal. 2:26-cv-02881-DAD-SCR). Dkt. 8: not later than 14 days before the Oct. 8… |
 | Sep. 25, 2026 | 27 | Randstad US, LLC to file and serve its response to the Complaint — per Stipulation to Set Aside and Vacate Entry of Default, entered Sep. 17, 2026 (Newanforbi v. Randstad US, LLC et al., 26CV199902) |
+| Sep. 25, 2026 | 41 | WATCH — one week post-driving-eval: check for any Checkr background-check authorization/disclosure email from Nuro. None signed as of Sep. 18, 2026. The vendor step is the next event in the sequence. |
 | Sep. 26, 2026 | 38 | OUTER BOUND — CCP § 338(a) three-year statutory-liability clock on the Swift § 290.46(j) / ICRAA counts if accrual is the Sept. 26, 2023 pre-adverse email.… |
 | Sep. 30, 2026 | 29 | 28 U.S.C. §1447(c) remand window closes (computed) — Newanforbi v. Amazon.com Services, LLC et al., USDC N.D. Cal. No. 3:26-cv-09249-ASK. Thirty days from the… |
 | Sep. 30, 2026 | 33 | WATCH — Reply ISO opposition to Dkt. 17 motion to strike due in Nforbi v. Candelaria et al. (3:26-cv-08272-LJC). PACER Deadlines/Hearings Sep. 18 sets Reply 2026-09-30. Civil L.R. 7-3(c). |
@@ -303,13 +305,13 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | §1983 Monell / Individual + Bane Act + RICO — Shannon Smith / HOPE (Matter 28) | 28 | $249,000 | $666,000 | $1,510,000 |
 | PC §290.46(j) Failure to Hire — Amazon (Matter 29) | 29 | $30,000 | $75,000 | $180,000 |
 | §1983 Retaliation, Due Process, Bane Act & IIED — Moua (Matter 30) | 30 | $90,000 | $225,000 | $525,000 |
-| FCRA / ICRAA Vendor Liability — First Advantage LLC (Matter 31) | 31 | $30,000 | $89,000 | $205,000 |
+| Conditional CRA Investigation — First Advantage LLC (Matter 31) | 31 | $0 | $0 | $0 |
 | N.D. Cal. §1983 Meza-Gonzalez (Matter 32) — pleaded >$214k; $0 here to avoid double-count w/ M1/M2 | 32 | $0 | $0 | $0 |
 | N.D. Cal. §1983 Nforbi v. Candelaria et al. (Matter 33, 3:26-cv-08272-LJC) — pleaded >$214k; $0 here to avoid double-count w/ M7 | 33 | $0 | $0 | $0 |
 | §1983 Monell / Individual + Bane Act — Counseling & Psychotherapy Center (Matter 34) | 34 | $0 | $0 | $0 |
 | Unruh / False Imprisonment / Negligent Training — Ross Stores (Matter 35) | 35 | $115,000 | $345,000 | $1,035,000 |
 | FCRA / §290 failure-to-hire — AT&T / Home Depot / Swift / Best Buy (36–39) | 36, 37, 38, 39 | $235,000 | $360,000 | $485,000 |
-| **Portfolio Total (pre-deduplication)** | | **$1,485,672** | **$3,612,072** | **$7,998,272** |
+| **Portfolio Total (pre-deduplication)** | | **$1,455,672** | **$3,523,072** | **$7,793,272** |
 <!-- PORTFOLIO:DAMAGES_SUMMARY:END -->
 
 *Note: The portfolio total reflects independent per-defendant exposure across all matters before deduplication of shared economic events (e.g., the same CDL wage-loss period underlying Matters 1, 2, 7, 15). Per-matter settlement negotiations treat each defendant independently.*
