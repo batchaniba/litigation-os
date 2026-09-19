@@ -315,9 +315,9 @@ First: _Regents v. Roth, 408 U.S. 564_ · Last: _2019 WL 6619348_
 |[ ]|209|Rubio v. Capital One Bank, 572 F. Supp. 2d 1157|UNVERIFIED|26|3||||
 |[ ]|210|Saleh v. Nike, 562 F. Supp. 3d 503|UNVERIFIED|26|3||||
 |[ ]|211|Shvarts v. Budget Group, 81 Cal.App.4th 1153|UNVERIFIED|26|3||||
-|[ ]|212|Smith v. State Farm Mutual Automobile Ins. Co, 93 Cal.App.4th 700|UNVERIFIED|26|3||||
+|[x]|212|Smith v. State Farm Mutual Automobile Ins. Co, 93 Cal.App.4th 700|Y — Disagreed With: Davis v. Ford Motor Credit Co. LLC, 179 Cal.App.4th 581, 594-598 (Cal.App. 2d Dist., 2009): same division rejected Smith's pre-Cel-Tech balancing test for consumer UCL "unfair," adopting FTC/Camacho test instead. Directly touches cited proposition. HN 21, 22|26|3|Y|||
 |[ ]|213|Soliman v. Philip Morris Inc, 311 F.3d 966|VERIFIED|26|3||||
-|[ ]|214|Station & Auto. Repair Ass’n v. Am. Home Assur. Co, 62 Cal.App.4th 1166|UNVERIFIED|26|3||||
+|[x]|214|Station & Auto. Repair Ass’n v. Am. Home Assur. Co, 62 Cal.App.4th 1166|Y — Distinguished: Sullivan's Stone Factory, Inc. v. State Compensation Ins. Fund, 2009 WL 1396429 (Cal.App. 4th Dist.): distinguished Service Station's "no duty to disclose pricing information" negligence holding in the fraud context (court reserved fraud could be based on such duty). Narrows proposition to non-fraud claims. HN 4, 5|26|3|Y|||
 |[ ]|215|United States v. Knights, 534 U.S. 112|VERIFIED|19|3||||
 |[ ]|216|Urbino v. Orkins Servs. Of Cal., 726 F.3d 1118|VERIFIED|26|3||||
 |[ ]|217|2012 WL 3101659|VERIFIED|29|2||||
@@ -336,7 +336,7 @@ First: _Regents v. Roth, 408 U.S. 564_ · Last: _2019 WL 6619348_
 |[ ]|225|Burns v. Windsor Ins. Co, 31 F.3d 1092|VERIFIED|25|2||||
 |[ ]|226|Carloss v. County of Alameda, 242 Cal.App.4th 116|VERIFIED|20, 32|2||||
 |[ ]|227|Cervantes v. City of San Diego, 5 F.3d 1273|VERIFIED|29|2||||
-|[ ]|228|Chambers v. Herrera, 78 F.4th 1100|UNVERIFIED|1, 32|2||||
+|[x]|228|Chambers v. Herrera, 78 F.4th 1100|N — clean; Negative Treatment (0)|1, 32|2|N|||
 |[ ]|229|Collins v. Virginia, 17 U.S. 586|VERIFIED|32|2||||
 |[ ]|230|County of Sacramento v. Lewis, 523 U.S. 10|VERIFIED|24, 32|2||||
 |[ ]|231|Daniels-Hall v. Nat’l Educ. Ass’n, 629 F.3d 992|VERIFIED|29|2||||
@@ -360,7 +360,7 @@ First: _Regents v. Roth, 408 U.S. 564_ · Last: _2019 WL 6619348_
 |[ ]|244|Shoyoye v. County of Los Angeles, 203 Cal.App.4th 947|VERIFIED|2, 30, 32|2||||
 |[ ]|245|Sonner v. Premier Nutrition Corporation, 49 F.4th 1300|VERIFIED|29|2||||
 |[ ]|246|Warner Constr. Corp. v. City of Los Angeles, 2 Cal.3d 285|VERIFIED|12|2||||
-|[ ]|247|White v. Ultramar, 21 Cal.4th 563|UNVERIFIED|5, 12|2||||
+|[x]|247|White v. Ultramar, 21 Cal.4th 563|Y — Declined to Follow: Monsanto Co. v. Behar, 417 So.3d 383, 390 n.3 (Fla.App. 3 Dist., 2025): Fla's statutory punitive-damage standard differs from White's managing-agent rule. Touches cited proposition. HN 10|5, 12|2|Y|||
 |[ ]|248|2005 WL 2435900|VERIFIED|29|1||||
 |[ ]|249|805 F. Supp. 2d 932|VERIFIED|29|1||||
 |[ ]|250|Angus v. Shiley, 989 F.2d 142|VERIFIED|25|1||||
@@ -432,15 +432,15 @@ First: _Regents v. Roth, 408 U.S. 564_ · Last: _2019 WL 6619348_
 |done|#|Search|Status|Matters|Uses|Flag N/Y/R|Keep/Drop|Notes|
 |---|---|---|---|---|---|---|---|---|
 |[ ]|303|Aryeh v. Canon Business Solutions, 55 Cal.4th 1185|VERIFIED|15|15||||
-|[ ]|304|Sullivan v. County of Los Angeles, 12 Cal.3d 710|UNVERIFIED|15|13||||
+|[x]|304|Sullivan v. County of Los Angeles, 12 Cal.3d 710|Y — Declined to Extend: Aubry v. Tri-City Hospital Dist., 2 Cal.4th 962, 969 n.5 (1992): refused to extend §815.6 intentional-violation-of-mandatory-duty rule to awarding-body prevailing-wage enforcement. No headnote listed|15|13|Y|||
 |[ ]|305|Hughes v. Pair, 46 Cal.4th 1035|VERIFIED|5, 15, 16, 30|11||||
-|[ ]|306|Alcorn v. Anbro Engineering, 2 Cal.3d 493|UNVERIFIED|5, 15, 16|10||||
+|[x]|306|Alcorn v. Anbro Engineering, 2 Cal.3d 493|Y — Declined to Follow: GTE Southwest, Inc. v. Bruce, 998 S.W.2d 605, 612-13 (Tex. 1999): Texas Supreme Court rejected Alcorn's lenient employment-context IIED scrutiny, adopting the strict approach ("We agree with the approach taken by these courts"). Touches IIED proposition|5, 15, 16|10|Y|||
 |[ ]|307|AIDS Healthcare Foundation v. L.A. County Dept, 197 Cal.App.4th 693|VERIFIED|9|9||||
 |[ ]|308|Rodriguez v. Solis, 1 Cal.App.4th 495|VERIFIED|9|9||||
 |[ ]|309|Rhodes v. Robinson, 408 F.3d 559|VERIFIED|3, 18, 30|7||||
 |[ ]|310|Hotel & Motel Ass'n v. Industrial Welfare Comm'n, 25 Cal.3d 200|VERIFIED|9|6||||
 |[ ]|311|Morris v. Williams, 67 Cal.2d 733|VERIFIED|9|6||||
-|[ ]|312|In re Crow, 4 Cal.3d 613|UNVERIFIED|5, 9|4||||
+|[x]|312|In re Crow, 4 Cal.3d 613|Y — Declined to Extend: In re Gutierrez, 51 Cal.App.4th 1704, 1709-10 (Cal.Ct.App. 2d Dist., Div. 7, 1997): petitioner's reliance "unjustified" — Crow ordered a new trial on habeas, unlike the mere relitigation permission here. HN 3, 18|5, 9|4|Y|||
 |[ ]|313|Monell v. Dept. of Soc. Servs, 436 U.S. 658|VERIFIED|9|4||||
 |[ ]|314|Sosinsky v. Grant, 6 Cal.App.4th 1548|VERIFIED|5|4||||
 |[ ]|315|Wright v. State of California, 122 Cal.App.4th 659|VERIFIED|5, 10|4||||
@@ -448,7 +448,7 @@ First: _Regents v. Roth, 408 U.S. 564_ · Last: _2019 WL 6619348_
 |[ ]|317|Day v. Sharp, 50 Cal.App.3d 904|UNVERIFIED|5|3||||
 |[ ]|318|England v. Louisiana State Bd, 375 U.S. 411|VERIFIED|9|3||||
 |[ ]|319|Foster v. Sexton, 61 Cal.App.5th 998|UNVERIFIED|5|3||||
-|[ ]|320|In re Faucette, 253 Cal.App.2d 338|UNVERIFIED|9|3||||
+|[x]|320|In re Faucette, 253 Cal.App.2d 338|N — clean; Negative Treatment (0)|9|3|N|||
 |[ ]|321|In re Stevens, 119 Cal.App.4th 1228|VERIFIED|5, 15|3||||
 |[ ]|322|In re Walters, 15 Cal.3d 738|UNVERIFIED|9|3||||
 
@@ -461,11 +461,11 @@ First: _Regents v. Roth, 408 U.S. 564_ · Last: _2019 WL 6619348_
 |[ ]|325|McCorkle v. City of Los Angeles, 70 Cal.2d 252|VERIFIED|15|3||||
 |[ ]|326|Spencer v. Peters, 857 F.3d 789|VERIFIED|30|3||||
 |[ ]|327|Thornton v. Brown, 757 F.3d 834|VERIFIED|30|3||||
-|[ ]|328|Aaronoff v. Martinez-Senftner, 136 Cal.App.4th 910|UNVERIFIED|5|2||||
-|[ ]|329|Bardin v. DaimlerChrysler Corp, 136 Cal.App.4th 1255|UNVERIFIED|5|2||||
-|[ ]|330|Drum v. San Fernando Valley Bar Assn, 182 Cal.App.4th 247|UNVERIFIED|5|2||||
-|[ ]|331|Elsner v. Uveges, 34 Cal.4th 915|UNVERIFIED|5|2||||
-|[ ]|332|Hahn v. Mirda, 147 Cal.App.4th 740|UNVERIFIED|5|2||||
+|[x]|328|Aaronoff v. Martinez-Senftner, 136 Cal.App.4th 910|Y — Distinguished: A.M. v. Ventura Unified School Dist., 3 Cal.App.5th 1252, 1261 (Cal.Ct.App. 2d Dist., Div. 6, 2016): Aaronoff's §340.1(b)(2) revival bar inapplicable where minor plaintiff sued timely under §340.1(a)(2). HN 3, 4|5|2|Y|||
+|[x]|329|Bardin v. DaimlerChrysler Corp, 136 Cal.App.4th 1255|Y — Superseded by Statute as Stated in Safaie v. Jacuzzi Whirlpool Bath, Inc., 2008 WL 4868653, at *10-11 (Cal.Ct.App. 4th Dist., Div. 1, 2008): Proposition 64 added injury-in-fact standing, displacing Bardin's pre-2004 "no individualized reliance" UCL rule. HN 6|5|2|Y|||
+|[x]|330|Drum v. San Fernando Valley Bar Assn, 182 Cal.App.4th 247|Y — Disagreement Recognized: Starks v. Geico Indemnity Co., 2015 WL 12942282, at *6 (C.D. Cal. 2015): Drum's FTC-test framing of the UCL unfair prong rejected per Ninth Circuit's Lozano; tethering test applied instead. HN 4, 8, 9|5|2|Y|||
+|[x]|331|Elsner v. Uveges, 34 Cal.4th 915|Y — Declined to Extend: Iversen v. California Village Homeowners Assn., 123 Cal.Rptr.3d 360, 366-369 (Cal.Ct.App. 2d Dist., Div. 5, 2011): Elsner's Cal-OSHA admissibility holding not extended to impose a duty toward a non-employee independent contractor. HN 3, 10, 18|5|2|Y|||
+|[x]|332|Hahn v. Mirda, 147 Cal.App.4th 740|Y — Distinguished: Schmidt v. Universal Pain Management, Inc., 2018 WL 4561239, at *6 n.6 (Cal.Ct.App. 2d Dist., Div. 7, 2018): Hahn "did not involve lack of informed consent," so inapposite to the informed-consent claim. HN 7|5|2|Y|||
 |[ ]|333|Herrera v. Deutsche Bank National Trust Co, 196 Cal.App.4th 1366|VERIFIED|5|2|Y|KEEP|Yellow - "Declined to Extend by" Holmes v. HSBC Bank USA, 2014 WL 99018, at *4 (Cal.App. 2 Dist. Jan. 10, 2014): Herrera's wrongful-foreclosure holding (no judicial notice that the bank was beneficiary based on recorded substitution/assignment recitations) held inapplicable to MERS-authority facts. Passage read.|
 |[ ]|334|In re Estrada, 47 Cal.App.4th 1688|VERIFIED|5|2|N|KEEP|No KeyCite flag (flag check only; treating documents not opened, quota conserved).|
 |[ ]|335|Joslin v. H.A.S. Ins. Brokerage, 184 Cal.App.3d 369|VERIFIED|5|2||||
@@ -538,38 +538,38 @@ First: _Regents v. Roth, 408 U.S. 564_ · Last: _2019 WL 6619348_
 |[ ]|387|2024 WL 4163081|VERIFIED|7, 8, 32, 33|5||||
 |[ ]|388|35 Cal.3d 197|VERIFIED|5, 20, 32|5|R|REPLACE/DELETE|RED -- bare cite resolved: Committee On Children's Television, Inc. v. General Foods Corp., 35 Cal.3d 197 (Cal. 1983). "Superseded by Statute as Stated in" Branick v. Downey Savings & Loan Assn., 39 Cal.4th 235, 243 (Cal. July 24, 2006): Prop. 64 superseded Children's Television's rule that organizations could sue on behalf of the general public under the UCL -- now only persons with injury in fact and lost money or property may sue. Cited in matters 5, 20, 32. (KeyCite list read.)|
 |[ ]|389|Albright v. Oliver, 510 U.S. 266|VERIFIED|3, 24|5|Y|KEEP|Yellow flag confirmed in KeyCite; treating-document detail NOT obtained -- document limit hit before the document opened. Needs a fresh patron session.|
-|[ ]|390|Greenup v. Rodman, 42 Cal.3d 822|UNVERIFIED|12|5||||
-|[ ]|391|North Oakland Medical Clinic v. Rogers, 65 Cal.App.4th 824|UNVERIFIED|12|5||||
+|[x]|390|Greenup v. Rodman, 42 Cal.3d 822|Y — Disagreement Recognized: Akdot v. Olabuenaga, 2011 WL 5832152 (Cal.App.2d, fn.1) notes Van Sickle v. Gilbert, 196 Cal.App.4th 1495, 1529 criticized Greenup's 580-notice sub-holding (excess-jurisdiction damages request as notice of default amount); Akdot held criticism inapplicable pre-unification. Demand-ceiling rule intact. HN 2,3|12|5|Y|||
+|[x]|391|North Oakland Medical Clinic v. Rogers, 65 Cal.App.4th 824|Y — Disagreed With: Kivel v. McInerney, 2021 WL 1015819 (Cal.App.4th Div.1): "we disagree with it and decline to adopt it" — rejects prejudgment-interest-by-pre-judgment-motion rule (65 Cal.App.4th at 831), follows Watson. HN 1,7,8|12|5|Y|||
 |[ ]|392|People v. Sanders, 31 Cal.4th 318|VERIFIED|7, 8, 32, 33|5||||
 |[ ]|393|Wyatt v. Cole, 504 U.S. 158|VERIFIED|28|5||||
-|[ ]|394|Clark v. Am. Honda Motor Co, 528 F. Supp. 3d 1108|UNVERIFIED|29|4||||
-|[ ]|395|County of San Diego v. State of California, 164 Cal.App.4th 580|UNVERIFIED|20, 32|4||||
-|[ ]|396|Felder v. Casey, 487 U.S. 131|UNVERIFIED|33|4||||
-|[ ]|397|Ferdik v. Bonzelet, 963 F.2d 1258|UNVERIFIED|33|4||||
-|[ ]|398|Florer v. Congregation Pidyon Shevuyim, 639 F.3d 916|UNVERIFIED|3, 24|4||||
+|[x]|394|Clark v. Am. Honda Motor Co, 528 F. Supp. 3d 1108|Y — Distinguished: Johnson v. Estension Logistics, LLC, 2022 WL 1843213 (C.D.Cal.): Clark plaintiffs failed to plead inadequate legal remedy (Sonner); Johnson complaint alleged ongoing unlawful conduct. Fact-distinguish only. HN 25|29|4|Y|||
+|[x]|395|County of San Diego v. State of California, 164 Cal.App.4th 580|Y — Declined to Extend: New Livable California v. ABAG, 59 Cal.App.5th 709, 717 (2020): prejudice need not be alleged for declaratory/injunctive relief under Gov. Code 54960/54960.1. Touches cited prejudice-pleading point|20, 32|4|Y|||
+|[x]|396|Felder v. Casey, 487 U.S. 131|Y — Superseded by Statute as Stated in Suncoast Post-Tension, Ltd. v. Scoppa, 2014 WL 12596471 (S.D.Tex.): Felder's federal-procedural-law point (487 U.S. at 151) superseded by PLRA, 42 U.S.C. 1997e(a) — prison-exhaustion context only; Erie proposition untouched|33|4|Y|||
+|[x]|397|Ferdik v. Bonzelet, 963 F.2d 1258|Y — Called into Doubt: Pagtalunan v. Galaza, 291 F.3d 639, 643 (9th Cir. 2002): Yourish "eroded the persuasive force" of Ferdik, 963 F.2d at 1262 (extra time to amend as less drastic alternative). Weakens Rule 41(b) factor-4 proposition. HN 5,8|33|4|Y|||
+|[x]|398|Florer v. Congregation Pidyon Shevuyim, 639 F.3d 916|Y — Declined to Extend: Hernandez v. AFSCME California, 424 F.Supp.3d 912, 920-21 (E.D.Cal. 2019): Florer, 639 F.3d at 923, is an example where the state-policy prong was NOT met. Distinguishes state-action proposition. HN 3|3, 24|4|Y|||
 |[ ]|399|Franklin v. Fox, 312 F.3d 423|VERIFIED|3, 28|4||||
 |[ ]|400|Halvorsen v. Baird, 146 F.3d 680|VERIFIED|28|4||||
-|[ ]|401|Hamilton v. Shearson-Lehman American Express, 813 F.2d 1532|UNVERIFIED|1, 3, 6, 7, 32, 33|4||||
+|[x]|401|Hamilton v. Shearson-Lehman American Express, 813 F.2d 1532|Y — Not Followed on State Law Grounds: Quanto Intern. Co. v. Lloyd, 897 S.W.2d 482, 487 (Tex.App. 1995): FRCP 41 differs from Tex. R. Civ. P. 162; motion to compel arbitration is affirmative relief under Texas law. Directly rejects cited proposition in Texas context. HN 5|1, 3, 6, 7, 32, 33|4|Y|||
 |[ ]|402|Hansen v. Black, 885 F.2d 642|VERIFIED|3, 18, 24|4||||
 
 ## Session 21 — rows 403-422 (20 cites)
 
 |done|#|Search|Status|Matters|Uses|Flag N/Y/R|Keep/Drop|Notes|
 |---|---|---|---|---|---|---|---|---|
-|[ ]|403|Martinez v. California, 444 U.S. 277|UNVERIFIED|33|4||||
+|[x]|403|Martinez v. California, 444 U.S. 277|Y — Distinguished: Black Earth Meat Market, LLC v. Village of Black Earth, 834 F.3d 841, 850 (7th Cir. 2016): Martinez, 444 U.S. at 284, held "similarly inapposite" to attenuated chain. Distinguishes 1983 causation proposition. HN 7|33|4|Y|||
 |[ ]|404|Phillips v. Gen. Motors Corp, 307 F.3d 1206|MISCITED|28, 29|4||||
-|[ ]|405|Sprewell v. Golden State Warriors, 266 F.3d 979|UNVERIFIED|29|4||||
+|[x]|405|Sprewell v. Golden State Warriors, 266 F.3d 979|Y — Declined to Extend: Perez v. Padilla, 2017 WL 915296 (E.D.Cal.): Sprewell, 266 F.3d at 988, does not mean unappealed RVR disciplinary findings have preclusive effect. Limits 12(b)(6) contradicted-allegations proposition. HN 13|29|4|Y|||
 |[ ]|406|Vitek v. Jones, 445 U.S. 480|VERIFIED|28|4||||
-|[ ]|407|Wyshak v. City Nat'l Bank, 607 F.2d 824|UNVERIFIED|33|4||||
-|[ ]|408|Yvanova v. New Century Mortg. Corp, 62 Cal.4th 919|UNVERIFIED|20, 32|4||||
-|[ ]|409|2009 WL 980417|UNVERIFIED|29|3||||
-|[ ]|410|2017 WL 7049527|UNVERIFIED|29|3||||
-|[ ]|411|2019 WL 4243221|UNVERIFIED|29|3||||
-|[ ]|412|234 Cal.App.4th 166|UNVERIFIED|20, 32|3||||
-|[ ]|413|Benavidez v. County of San Diego, 993 F.3d 1134|UNVERIFIED|32|3||||
-|[ ]|414|Clark v. Superior Court, 50 Cal.4th 605|UNVERIFIED|29|3||||
-|[ ]|415|Commercial Space Mgmt. Co. v. Boeing Co, 193 F.3d 1074|UNVERIFIED|1, 6, 7, 32, 33|3||||
-|[ ]|416|Crowe v. County of San Diego, 608 F.3d 406|UNVERIFIED|1, 32|3||||
+|[x]|407|Wyshak v. City Nat'l Bank, 607 F.2d 824|Y — Disagreed With: Loi Nguyen v. Durham School Services, 358 F.Supp.3d 1056, 1060-61 (C.D.Cal. 2019): questions Wyshak's Conley-based fair-notice grounding (607 F.2d at 827); Twiqbal plausibility doesn't extend to affirmative defenses. HN 5,7|33|4|Y|||
+|[x]|408|Yvanova v. New Century Mortg. Corp, 62 Cal.4th 919|Y — Declined to Follow: Ames v. JP Morgan Chase Bank, 298 Ga. 732, 742 n.8 (2016): notes Yvanova (62 Cal.4th at 923-24) limits void-assignment claims to post-foreclosure but decides under Georgia law (no debtor standing). Touches standing proposition. HN 18|20, 32|4|Y|||
+|[x]|409|2009 WL 980417|RESOLVED — McGroarty v. American Background Information Services, Inc., C.D. Cal., 2009 (2009 WL 980417) — clean|29|3|N|||
+|[x]|410|2017 WL 7049527|RESOLVED — Marc Marchioli v. Pre-employ.com, Inc., Eisenhower Medical Center, C.D. Cal., 2017 (2017 WL 7049527) — clean|29|3|N|||
+|[x]|411|2019 WL 4243221|RESOLVED — Akins v. Seterus, Inc., E.D. Cal., Sept. 6, 2019 (2019 WL 4243221) — clean|29|3|N|||
+|[x]|412|234 Cal.App.4th 166|RESOLVED — Linda Vista Village San Diego Homeowners Assn., Inc. v. Tecolote Investors, LLC (Cal.App. 4th Dist., Div. 1, Jan. 27, 2015) (234 Cal.App.4th 166) — Y: Distinguished by Berdan Holdings, LLC v. Absolute USA, Inc., 2023 WL 2259244 (Cal.App. 2d Dist.): Hoadley/Kerber (nullum tempus) cases incl. Linda Vista inapplicable. Touches statute-of-limitations proposition. HN 2|20, 32|3|Y|||
+|[x]|413|Benavidez v. County of San Diego, 993 F.3d 1134|Y — Declined to Extend: Fink v. Ohannessian, 2023 WL 4680782 (C.D. Cal.): held Benavidez's Rooker-Feldman extrinsic-fraud discussion "inapplicable" to standalone fraud-on-the-court claim. Limits the exception's reach. HN 9, 14|32|3|Y|||
+|[x]|414|Clark v. Superior Court, 50 Cal.4th 605|Y — Declined to Extend: American Master Lease LLC v. Idanta Partners, Ltd., 225 Cal.App.4th 1451, 1483 n.21 (2014): Clark's rule that UCL restitution = restoration of money taken from plaintiff "inapplicable" to nonrestitutionary disgorgement for aiding/abetting breach of fiduciary duty. HN 4, 5|29|3|Y|||
+|[x]|415|Commercial Space Mgmt. Co. v. Boeing Co, 193 F.3d 1074|Y — Distinguished: Koji IP, LLC v. Renesas Electronics America, Inc., 2026 WL 793025 (N.D. Cal.): called reliance on Commercial Space "misplaced" — its two-dismissal holding didn't apply to a post-dismissal sanctions dispute. Touches two-dismissal proposition. HN 1, 3, 9|1, 6, 7, 32, 33|3|Y|||
+|[x]|416|Crowe v. County of San Diego, 608 F.3d 406|Y — Disagreed With: Halley v. Huckaby, 902 F.3d 1136 (10th Cir. 2018): familial-association claims ARE governed by shocks-the-conscience standard, disagreeing with Crowe, 608 F.3d at 441 n.23. Directly touches cited proposition. HN 14, 52|1, 32|3|Y|||
 |[ ]|417|Fantasy Inc. v. Fogerty, 984 F.2d 1524|UNVERIFIED|24, 33|3||||
 |[ ]|418|In re Tobacco Cases II, 240 Cal.App.4th 779|UNVERIFIED|29|3||||
 |[ ]|419|Johnson v. Duffy, 588 F.2d 740|VERIFIED|18, 24|3||||

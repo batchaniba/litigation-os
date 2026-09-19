@@ -84,3 +84,49 @@ Row 334 (Batch 2) — *In re Estrada*, 47 Cal.App.4th 1688 — no KeyCite flag (
 - Row 389 — *Albright v. Oliver*, 510 U.S. 266: yellow flag confirmed, treating-document detail not obtained (document limit hit at the end of the Batch 2 session); a fresh patron session finishes it.
 - Proposition sweeps for the reds: Medina (matters 1, 2, 7, 8, 32, 33), Lee (18, 24, 29), Lent (5, 14, 15, 19), Ford (24), Bureerong (1, 24, 32), Redfearn (20, 24, 32 — Ixchel replaces the at-will interference rule), Children's Television (5, 20, 32 — Prop. 64 killed public-interest UCL standing).
 - Singleton v. Gates depth read (row 63 Lopez red) — offered, awaiting word.
+
+## Batch 3 — rows 390–416 (COMPLETE, 2026-09-19, Clark County Law Library door)
+
+Session 1 (3 rows: 390, 391, 394 — all yellow; document limit hit at row 395) and Session 2 (fresh sign-in; rows 395–411 verified, limit hit at row 411 — its name, *Akins v. Seterus, Inc.*, was read from the title bar) and Session 3 (rows 412–416). One visit per cite; seat stayed logged in at the end per the user's instruction.
+
+- **Row 390 — 390.** Y. Greenup v. Rodman, 42 Cal.3d 822
+- **Row 391 — 391.** Y. North Oakland Medical Clinic v. Rogers, 65 Cal.App.4th 824
+- **Row 394 — 394.** Y. Clark v. Am. Honda Motor Co, 528 F. Supp. 3d 1108
+- **Row 395 — 395.** Y. County of San Diego v. State of California, 164 Cal.App.4th 580
+- **Row 396 — 396.** Y. Felder v. Casey, 487 U.S. 131
+- **Row 397 — 397.** Y. Ferdik v. Bonzelet, 963 F.2d 1258
+- **Row 398 — 398.** Y. Florer v. Congregation Pidyon Shevuyim, 639 F.3d 916
+- **Row 401 — 401.** Y. Hamilton v. Shearson-Lehman American Express, 813 F.2d 1532
+- **Row 403 — 403.** Y. Martinez v. California, 444 U.S. 277
+- **Row 405 — 405.** Y. Sprewell v. Golden State Warriors, 266 F.3d 979
+- **Row 407 — 407.** Y. Wyshak v. City Nat'l Bank, 607 F.2d 824
+- **Row 408 — 408.** Y. Yvanova v. New Century Mortg. Corp, 62 Cal.4th 919
+- **Row 409 — 409.** N. 2009 WL 980417
+- **Row 410 — 410.** N. 2017 WL 7049527
+- **Row 411 — 411.** N. 2019 WL 4243221
+- **Row 412 — 412.** Y. 234 Cal.App.4th 166
+- **Row 413 — 413.** Y. Benavidez v. County of San Diego, 993 F.3d 1134
+- **Row 414 — 414.** Y. Clark v. Superior Court, 50 Cal.4th 605
+- **Row 415 — 415.** Y. Commercial Space Mgmt. Co. v. Boeing Co, 193 F.3d 1074
+- **Row 416 — 416.** Y. Crowe v. County of San Diego, 608 F.3d 406
+
+
+## Batch 2 side-chat rows — 212, 214, 228, 247, 304, 306, 312, 320, 328, 329, 330, 331, 332 (COMPLETE, 2026-09-19, Clark County door)
+
+- **Row 212 — 212.** Y. Smith v. State Farm Mutual Automobile Ins. Co, 93 Cal.App.4th 700
+- **Row 214 — 214.** Y. Station & Auto. Repair Ass’n v. Am. Home Assur. Co, 62 Cal.App.4th 1166
+- **Row 228 — 228.** N. Chambers v. Herrera, 78 F.4th 1100
+- **Row 247 — 247.** Y. White v. Ultramar, 21 Cal.4th 563
+- **Row 304 — 304.** Y. Sullivan v. County of Los Angeles, 12 Cal.3d 710
+- **Row 306 — 306.** Y. Alcorn v. Anbro Engineering, 2 Cal.3d 493
+- **Row 312 — 312.** Y. In re Crow, 4 Cal.3d 613
+- **Row 320 — 320.** N. In re Faucette, 253 Cal.App.2d 338
+- **Row 328 — 328.** Y. Aaronoff v. Martinez-Senftner, 136 Cal.App.4th 910
+- **Row 329 — 329.** Y. Bardin v. DaimlerChrysler Corp, 136 Cal.App.4th 1255
+- **Row 330 — 330.** Y. Drum v. San Fernando Valley Bar Assn, 182 Cal.App.4th 247
+- **Row 331 — 331.** Y. Elsner v. Uveges, 34 Cal.4th 915
+- **Row 332 — 332.** Y. Hahn v. Mirda, 147 Cal.App.4th 740
+
+
+Note: rows 333, 334, 336, 341, 368, 370, 371 were independently re-verified via the Clark County door on 2026-09-19 and confirmed the Riverside session's findings — the inventory keeps the richer Riverside passage-read notes.
+
