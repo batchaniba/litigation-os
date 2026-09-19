@@ -20,6 +20,7 @@ Martinez named the first paper on September 11: res judicata plus insufficiency.
 | Rule 12 gateway write-up | `2026-09-19-matter-28-mtd-opposition-supplement.md` (#880) |
 | Cisneros leave-to-amend / standing-order pins | `2026-09-18-matter-28-mtd-prep.md` (#881). ***Meinhardt* paragraph in that file is inverted — use § 5.1 here.** |
 | Closest vendor analogs (*Wilson* / *Lovelace*), *Gawara* / *Asmus*, *Harmoni* | `2026-09-19-matter-28-courtlistener-web-verification.md` (#882) |
+| Primary-source verification log (ITEM 1A–5D) | `2026-09-19-matter-28-primary-source-verification.md`. Holdings and quotes only. Do not draft from it. |
 | Page-keyed SAFE / DO-NOT-USE | `internal/docs/MATTER_28_SAFE_CITE_LIST.md` |
 | § 290.46 employer-use research (Matter 26) | **Stays on PR #765.** Not this case. |
 
