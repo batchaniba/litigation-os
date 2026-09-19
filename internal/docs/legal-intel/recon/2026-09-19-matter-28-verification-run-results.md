@@ -116,14 +116,15 @@ CONTRADICTS THE PROMPT?: No. The structural point stands: Judge Abdallah's recor
 SOURCE READ: search summaries of the CDCR rulemaking record and NCR 25-01
 STATUS: PARTIALLY VERIFIED — **highest-value item in this run**
 HOLDING / TEXT:
-- **Section 3574 became effective April 17, 2025.**
+- **CORRECTED 2026-09-19 (PR #882 cross-check, independently confirmed).** § 3574 was **filed and operative as an EMERGENCY regulation on October 14, 2024**, refiled March 24, 2025, with the Certificate of Compliance filed **April 17, 2025**. This run originally reported April 17, 2025 as the operative date and expressly recorded that no emergency or predecessor version was located. That was wrong, and the error ran the wrong way: **the February 20, 2025 grace-period revocation IS within the regulation's operative period.**
 - Rulemaking: NCR 25-01, notice dated **January 3, 2025**; public comment period January 3 – February 19, 2025; public hearing **February 20, 2025** in Elk Grove.
 - The rulemaking adopts § 3574 "regarding Sex Offender Treatment," defines the treatment phases, and "establish[es] a review process in which a supervised person may be able to complete their treatment," pursuant to Pen. Code § 3008(d).
 - Confirmed operative content (from the prior pass): supervised persons **may complete** the program **before discharge from parole**; **"[t]he review of the sex offender management program completion is independent of whether the supervised person should be discharged from parole"**; the CTM reviews treatment progress, dynamic risk factors, polygraph results, community reintegration, response to parole supervision, supervision category, and relevant individual case factors; retention requires **good cause**, in writing, **signed by the treatment provider and parole agent** on **CDCR Form 3043 (Rev. 11/24)**, delivered within **30 calendar days**.
 EXACT QUOTE: as above. (pin: subdivision letters **not** confirmed this run)
 PIN CONFIDENCE: SECONDARY
 PUBLISHED?: N/A — regulation
-EXPRESSLY NOT DECIDED: **No earlier emergency or predecessor version was located.** If § 3574 was *adopted* rather than *amended*, there may be no predecessor at all — which means there was no equivalent written-good-cause retention requirement before April 17, 2025.
+EXPRESSLY NOT DECIDED: Subdivision lettering still unconfirmed. **The "no predecessor located" finding is retracted** — see the correction above.
+**ADDED FROM THE PR #882 CROSS-CHECK, independently confirmed:** the program has **three phases — Curriculum, Maintenance, and Aftercare** — and the **Aftercare Phase is VOLUNTARY**: it is for supervised persons who "voluntarily continue their participation ... after they have successfully completed the curriculum and maintenance phases or persons who have been discharged from parole supervision," and those "voluntarily participating in the aftercare phase are **responsible for any costs** associated with participation." That is directly adverse to HOPE_000294's full-supervision-term aftercare rationale, and the self-pay clause is a separate problem for any allegation that HOPE billed CDCR for aftercare. Pin the subdivision (reported as (a)(3)) before briefing.
 CONTRADICTS THE PROMPT?: No, but it **confirms and sharpens the date caveat, and this cuts against Plaintiff** — see the closing list.
 
 ### ITEM: 3B — Penal Code § 3008(d)(1) and (d)(2)
@@ -203,10 +204,11 @@ CONTRADICTS THE PROMPT?: **Yes, and it contradicts the portfolio.** Since Septem
 9. **Restatement (Second) of Judgments § 20** reference inside *Heath* n.4 — not located.
 10. **5C *Merrill*** — the docket sequence is unknown; only a remand order surfaced.
 11. **5D** — Shannon Smith's BBS license record.
+12. **Missed entirely in this run, supplied by PR #882:** the § 3574 emergency-regulation history; § 3574's voluntary-Aftercare subdivision; and *Wilson v. Azinkhan* (C.D. Cal. 2017) and *Lovelace v. Oregon* (D. Or. 2009), reported there as the closest adverse sex-offender-treatment state-action line. None of the three surfaced here. **Neither Wilson nor Lovelace has been read in this session — treat both as UNVERIFIED until they are.**
 
 ## LIST (2) — WHAT CUTS AGAINST PLAINTIFF
 
-1. **§ 3574 took effect April 17, 2025 — after the February 20, 2025 grace-period revocation.** The regulation cannot be used to characterize that act, and if § 3574 was newly *adopted* rather than amended, there may have been **no written-good-cause retention requirement in force at all** when the earliest pleaded conduct occurred. The August 19, 2025 statements and the November 14, 2025 Form 1502-DR are covered; the February act is not. Any pleading that implies otherwise is vulnerable, and it is the kind of error a defense reply exploits.
+1. ~~**§ 3574 took effect April 17, 2025 — after the February 20, 2025 grace-period revocation.**~~ **RETRACTED.** The emergency regulation was operative **October 14, 2024**, so all three anchor dates — Feb. 20, 2025, Aug. 19, 2025, and Nov. 14, 2025 — fall inside its operative period. This item is withdrawn; it was the product of an incomplete search, not of the record. **The date caveat carried in the Sep. 19 supplement and verification pass is narrower than stated there and should be read against this correction.** The residual caution is real but small: brief the **emergency** version for pre-April-2025 conduct and confirm its text matched the permanent version on the points relied on.
 
 2. **The general-demurrer rule is the rule; the technical-defect carve-out is the exception.** *Pollock* confirms a judgment after a **general** demurrer **is** on the merits. Van Dine's was almost certainly a general demurrer. *Goddard* gives the escape hatch, but it is an exception that has to be earned on the actual ground decided — not a default.
 

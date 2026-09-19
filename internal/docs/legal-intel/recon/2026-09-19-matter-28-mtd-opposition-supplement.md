@@ -142,11 +142,11 @@ This is the strongest single piece of the state-action theory, and better than t
 
 It also supplies a clean procedural-due-process spine: a mandatory written good-cause determination, on a specified form, signed by both the provider and the agent, delivered to the supervised person within 30 days. Those are ascertainable process requirements — allege which ones were not met and what false inputs drove the ones that were.
 
-**Date caveat — do not skip this.** NCR 25-01 is dated January 3, 2025, and the permanent regulation took effect during 2025. The cluster-2 locked facts put the grace-period revocation at **February 20, 2025** and Form 1502-DR at **November 14, 2025**; the "ringleader"/"abhorrent" statements are **August 19, 2025**. Some of that conduct may predate § 3574's operative date. Before briefing:
+**Date caveat — NARROWED 2026-09-19, read this version.** An earlier draft of this section warned that § 3574 might postdate the earliest pleaded conduct. A PR #882 cross-check, independently confirmed, establishes that **§ 3574 was filed and operative as an EMERGENCY regulation on October 14, 2024**, refiled March 24, 2025, Certificate of Compliance April 17, 2025. **All three anchor dates — Feb. 20, 2025, Aug. 19, 2025, Nov. 14, 2025 — are inside the operative period.** The residual caution is only this: for pre-April-2025 conduct, cite the **emergency** version and confirm its text matched the permanent version on the points relied on. NCR 25-01 is dated January 3, 2025. The cluster-2 locked facts put the grace-period revocation at **February 20, 2025** and Form 1502-DR at **November 14, 2025**; the "ringleader"/"abhorrent" statements are **August 19, 2025**. Some of that conduct may predate § 3574's operative date. Before briefing:
 
-- Pin the **operative date** of § 3574 from the OAL filing, not from the notice date.
-- For conduct predating it, rely on § 3008(d)(2) (in force since 2012) and the emergency/predecessor regulation, not on § 3574.
-- Do not allege that § 3574 governed a CTM that happened before it took effect. That is exactly the kind of overclaim the safe-cite discipline exists to prevent.
+- Cite the **emergency** version (operative Oct. 14, 2024) for conduct before April 17, 2025, and confirm its text on the points relied on.
+- § 3008(d)(2) has assigned the duration determination to the certified professional since 2012 and covers any gap.
+- **Also now in play: § 3574 makes the Aftercare Phase VOLUNTARY** — for persons who "voluntarily continue" after successfully completing the Curriculum and Maintenance phases, or who have been discharged from parole — and those participants are "responsible for any costs associated with participation." That is directly adverse to HOPE_000294's full-supervision-term aftercare rationale, and the self-pay clause is a separate problem for any allegation that HOPE billed CDCR for aftercare. Pin the subdivision before briefing.
 
 ---
 
