@@ -18,6 +18,7 @@ Rules (citation-verify skill + this overlay):
   Prior MISCHARACTERIZED / proposition-MISCITED stays
   Never downgrade a table-page VERIFIED
   NOT_FOUND is left alone (a miss is not a fabrication)
+  UNRESOLVED is left alone (pin sources were skipped or incomplete)
 """
 from __future__ import annotations
 

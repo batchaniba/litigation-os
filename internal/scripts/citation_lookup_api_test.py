@@ -166,7 +166,100 @@ class ExtraProbeHelpersTest(unittest.TestCase):
             ],
         )
         lookup.consensus_for(result)
+        # Extra probes must not produce FOUND *or* a finished negative.
+        self.assertEqual(result.consensus, "UNRESOLVED")
+
+
+class ConsensusAndReporterMapTest(unittest.TestCase):
+    def test_parses_cal_2d_and_f_appx(self):
+        goddard = lookup.parse_reporter("Goddard, 14 Cal.2d 47")
+        self.assertIsNotNone(goddard)
+        self.assertEqual(goddard["slug"], "cal-2d")
+        self.assertEqual(goddard["pin"], "14 Cal. 2d 47")
+        paul = lookup.parse_reporter("United States v. Paul, 239 F. App'x 353")
+        self.assertIsNotNone(paul)
+        self.assertEqual(paul["slug"], "f-appx")
+        self.assertEqual(paul["pin"], "239 F. App'x 353")
+
+    def test_pin_404_without_skipped_live_sources_is_not_found(self):
+        result = lookup.LookupResult(
+            query="In re Leman, 66 Cal.App.5th 200",
+            case_name_guess="In re Leman",
+            reporter_pin="66 Cal. App. 5th 200",
+            wl_pin=None,
+            sources=[
+                lookup.SourceHit(
+                    source="courtlistener_citation",
+                    found=False,
+                    notes="Citation-lookup 404 for 66 Cal. App. 5th 200",
+                ),
+                lookup.SourceHit(
+                    source="case.law_static",
+                    found=False,
+                    notes="No case with first_page=200 in CAP volume cal-app-5th/66",
+                ),
+                lookup.SourceHit(
+                    source="courtlistener",
+                    found=False,
+                    notes="No cite/name match in queries",
+                ),
+                lookup.SourceHit(
+                    source="cl_bulk_offline",
+                    found=False,
+                    notes="skipped: bulk SQLite index not built",
+                ),
+            ],
+        )
+        lookup.consensus_for(result)
         self.assertEqual(result.consensus, "NOT_FOUND")
+
+    def test_skipped_citation_lookup_is_unresolved(self):
+        result = lookup.LookupResult(
+            query="In re Leman, 66 Cal.App.5th 200",
+            case_name_guess="In re Leman",
+            reporter_pin="66 Cal. App. 5th 200",
+            wl_pin=None,
+            sources=[
+                lookup.SourceHit(
+                    source="courtlistener_citation",
+                    found=False,
+                    notes="skipped (citation-lookup disabled or no COURTLISTENER_TOKEN)",
+                ),
+                lookup.SourceHit(
+                    source="case.law_static",
+                    found=False,
+                    notes="Volume metadata unavailable for cal-app-5th/66",
+                ),
+            ],
+        )
+        lookup.consensus_for(result)
+        self.assertEqual(result.consensus, "UNRESOLVED")
+
+    def test_name_only_hits_cap_at_partial(self):
+        result = lookup.LookupResult(
+            query="Some Invented Caption",
+            case_name_guess="Some Invented Caption",
+            reporter_pin=None,
+            wl_pin=None,
+            sources=[
+                lookup.SourceHit(
+                    source="courtlistener",
+                    found=True,
+                    case_name="Some Invented Caption",
+                    name_only=True,
+                    notes="NAME-ONLY (no pin behind this hit)",
+                ),
+            ],
+        )
+        lookup.consensus_for(result)
+        self.assertEqual(result.consensus, "PARTIAL")
+
+    def test_bulk_without_db_is_skipped_not_not_found(self):
+        lookup._bulk_db_ok = None
+        hit = lookup.probe_bulk_offline("Richardson v. McKnight, 521 U.S. 399")
+        self.assertFalse(hit.found)
+        self.assertIn("skipped", hit.notes.lower())
+        self.assertNotIn("NOT_FOUND", hit.notes)
 
 
 if __name__ == "__main__":

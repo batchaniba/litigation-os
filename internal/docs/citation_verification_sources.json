@@ -1,11 +1,22 @@
 {
-  "generated": "2026-09-19",
+  "generated": "2026-09-19 (follow-up: #888 live govinfo/CA9 probes kept; cl_bulk_offline step-0 oracle; UNRESOLVED vs NOT_FOUND; name-only cap at PARTIAL; pin confidence rules; westlaw_patron_prose MANUAL ONLY; live survey folded)",
   "live_confirmation": {
     "date": "2026-09-19",
     "govinfo": {
       "method": "POST application/json to https://api.govinfo.gov/search?api_key=...",
       "get_returns": "JSON {message} with no results array — sketch GET probe was a miss",
-      "fields_confirmed": ["results", "count", "offsetMark", "title", "packageId", "granuleId", "collectionCode", "dateIssued", "download.pdfLink", "resultLink"],
+      "fields_confirmed": [
+        "results",
+        "count",
+        "offsetMark",
+        "title",
+        "packageId",
+        "granuleId",
+        "collectionCode",
+        "dateIssued",
+        "download.pdfLink",
+        "resultLink"
+      ],
       "ranking": "Noisy. collection:(USCOURTS) \"765 F.3d 999\" returned 234 hits whose first page was unrelated E.D. Wash. cases. Name-match required before found=True.",
       "not_for_unbound_scotus": "USCOURTS does not host Medical Marijuana v. Horn. Slip PDF https://www.supremecourt.gov/opinions/24pdf/23-365_6k47.pdf is the authoritative source."
     },
@@ -14,8 +25,22 @@
       "filename_confirmed": "https://cdn.ca9.uscourts.gov/datastore/opinions/YYYY/MM/DD/{docket}.pdf",
       "strip_no_prefix": "CourtListener docketNumber is often 'No. 13-35356'; CDN file is 13-35356.pdf. 'No. 13-35356.pdf' 404s.",
       "memoranda_sibling": "https://cdn.ca9.uscourts.gov/datastore/memoranda/YYYY/MM/DD/{docket}.pdf — Wicklund 12-35294 2015-11-23 200 OK",
-      "live_hits": ["ASARCO 13-35356 2014-08-27 opinions 200", "Esche 24-6244 2025-09-29 opinions 200", "Wicklund 12-35294 2015-11-23 memoranda 200"],
-      "live_misses": ["Lee 98-55807 2001-05-04 opinions 404", "Palomar 91-56165 1993-03-30 opinions 404", "ASARCO companion 13-35355 on 2014-08-27 404"]
+      "live_hits": [
+        "ASARCO 13-35356 2014-08-27 opinions 200",
+        "Esche 24-6244 2025-09-29 opinions 200",
+        "Wicklund 12-35294 2015-11-23 memoranda 200"
+      ],
+      "live_misses": [
+        "Lee 98-55807 2001-05-04 opinions 404",
+        "Palomar 91-56165 1993-03-30 opinions 404",
+        "ASARCO companion 13-35355 on 2014-08-27 404"
+      ]
+    },
+    "westlaw_patron_prose": {
+      "date": "2026-09-19",
+      "access": "Library remote pilot via San Diego Law Library → Westlaw Remote for Pro Se (productid=RPA). Not a personal paid subscription. Not reachable from a datacenter and must not be wired.",
+      "evidence": "Plaintiff screenshots reached next.westlaw.com home after the Patron Access for Pro Se click-wrap. Playbook: WESTLAW_PATRON_ACCESS.md. Matter 28 UNIFIED KeyCite: legal-intel/recon/2026-09-19-matter-28-keycite-westlaw.md.",
+      "license": "Personal pro se use only; no competitive analysis or benchmarking; never put OnePass in chat, git, or a probe script."
     }
   },
   "non_case_law_excluded": [
@@ -25,27 +50,235 @@
   ],
   "scope": "Case-law citation verification sources isolated from the Matter 28 primary-source verification prompt (2026-09-19). Rule 2 of the prompt gives the preference order; 'proven_in_run' marks sources a verification worker actually read successfully during the 2026-09-19 run.",
   "sources": [
-    {"id": "courtlistener", "name": "CourtListener", "base_url": "https://www.courtlistener.com/api/rest/v4/", "coverage": "Federal + state opinions; citation-lookup and full-text search APIs", "prompt_rule2_rank": 5, "proven_in_run": true, "provenance": "Opinions search used for Wicklund v. Idaho (zero results — confirmed unreported)", "wire_notes": "Already probed by lookup-citations.py (citation lookup + search). No change needed.", "wired": true},
-    {"id": "cap_static", "name": "Caselaw Access Project (static.case.law)", "base_url": "https://static.case.law/", "coverage": "Reporter PDFs for published state/federal cases (citation-addressable)", "prompt_rule2_rank": null, "proven_in_run": true, "provenance": "Pollock 112 Cal.App.4th 1416 and Sain v. Wood 512 F.3d 886 read from reporter PDFs", "wire_notes": "Already probed by lookup-citations.py (lookup_cap). No change needed.", "wired": true},
-    {"id": "justia", "name": "Justia (law.justia.com + docs.justia.com)", "base_url": "https://law.justia.com/", "coverage": "Federal/state opinions (HTML) + federal docket PDFs via docs.justia.com", "prompt_rule2_rank": 6, "proven_in_run": true, "provenance": "Wicklund memo, Valvo 67 Cal.App.3d 887 read in full; Merrill S.D. Cal. orders via docs.justia.com", "wire_notes": "Already probed by lookup-citations.py (probe_justia). Usually Cloudflare 403 in this environment.", "wired": true},
-    {"id": "scholar", "name": "Google Scholar", "base_url": "https://scholar.google.com/", "coverage": "Case-law full-text search fallback", "prompt_rule2_rank": null, "proven_in_run": false, "provenance": null, "wire_notes": "Already probed by lookup-citations.py (probe_scholar). Unreliable 403.", "wired": true},
-    {"id": "govinfo", "name": "govinfo.gov (GPO)", "base_url": "https://www.govinfo.gov/", "coverage": "Federal opinions incl. USCOURTS collection; official API with key", "prompt_rule2_rank": 4, "proven_in_run": false, "provenance": "2026-09-19 live POST confirmed field names; ranking too noisy to treat first hit as the pin. Not the Horn source.", "wire_notes": "Wired behind --probe-extra: POST JSON + X-Api-Key, names_compatible required, unbound U.S. slips skipped. Do not enable by default. Do not use for Horn.", "wired": "opt-in"},
-    {"id": "ca9_cdn", "name": "Ninth Circuit opinions (cdn.ca9.uscourts.gov)", "base_url": "https://cdn.ca9.uscourts.gov/datastore/opinions/", "coverage": "9th Circuit published + memorandum dispositions (docket-addressable PDFs)", "prompt_rule2_rank": 2, "proven_in_run": true, "provenance": "ASARCO 13-35356 and Esche 24-6244 PDFs 200; Wicklund memo under /memoranda/; Lee/Palomar-era CDN 404.", "wire_notes": "Wired behind --probe-extra: strip 'No. ', opinions then memoranda. Pre-~2010 published opinions often missing. Does not vote in consensus.", "wired": "opt-in"},
-    {"id": "courts_ca_gov", "name": "California Courts opinions (courts.ca.gov)", "base_url": "https://www.courts.ca.gov/opinions/documents/", "coverage": "Cal. Supreme Court + Courts of Appeal opinions (PDF)", "prompt_rule2_rank": 3, "proven_in_run": true, "provenance": "Meinhardt (2024) 16 Cal.5th 643 read in full from .../opinions/documents/S274147.PDF", "wire_notes": "URL pattern .../documents/<DOCKET>.PDF (e.g. S274147.PDF). Docket-addressable; needs docket-number lookup step. Still unwired.", "wired": false},
-    {"id": "supremecourt_gov", "name": "U.S. Supreme Court (supremecourt.gov)", "base_url": "https://www.supremecourt.gov/opinions/", "coverage": "Slip opinions + bound-volume PDFs; authoritative for unbound U.S. Reports cites", "prompt_rule2_rank": 1, "proven_in_run": true, "provenance": "Horn slip 200 at /opinions/24pdf/23-365_6k47.pdf", "wire_notes": "No public API. Filename is docket-hash, not citation-addressable. Highest remaining unwired source for unbound U.S. cites.", "wired": false},
-    {"id": "cornell_lii_scotus", "name": "Cornell LII — Supreme Court", "base_url": "https://www.law.cornell.edu/supremecourt/text/", "coverage": "SCOTUS opinions, citation-addressable HTML", "prompt_rule2_rank": 8, "proven_in_run": false, "provenance": null, "wire_notes": "URL pattern /supremecourt/text/<volume>/<page> (e.g. /521/399 for Richardson). Citation-addressable with no lookup step. Will not have unbound slips.", "wired": false},
-    {"id": "scocal", "name": "scocal.stanford.edu (Cal. Supreme Court)", "base_url": "https://scocal.stanford.edu/opinion/", "coverage": "Cal. Supreme Court opinions, full HTML text", "prompt_rule2_rank": null, "proven_in_run": true, "provenance": "Goddard 14 Cal.2d 47 read in full", "wire_notes": "Slug-addressable HTML. Needs cite-to-slug resolution; useful fallback when CAP lags (Cal. 2d is not in REPORTER_MAP).", "wired": false},
-    {"id": "findlaw", "name": "FindLaw Caselaw", "base_url": "https://caselaw.findlaw.com/", "coverage": "Federal/state opinions, HTML", "prompt_rule2_rank": 7, "proven_in_run": false, "provenance": null, "wire_notes": "No API; HTML scraping only. Lowest priority — duplicates CAP/CourtListener coverage.", "wired": false},
-    {"id": "alldocket", "name": "alldocket.com", "base_url": "http://alldocket.com/api/cases/", "coverage": "Federal opinion/docket PDFs (RECAP-derived)", "prompt_rule2_rank": null, "proven_in_run": true, "provenance": "Estate of Esche (9th Cir. Sept. 29, 2025) read in full from alldocket PDF path", "wire_notes": "Opaque IDs; not systematically addressable. Manual fallback only — do not build a probe around it.", "wired": false}
+    {
+      "id": "cl_bulk_offline",
+      "name": "CourtListener bulk citations table (offline SQLite oracle)",
+      "base_url": "https://com-courtlistener-storage.s3.amazonaws.com/bulk-data/citations-2026-06-30.csv.bz2",
+      "coverage": "~13M citation rows (2026-06-30 snapshot, quarterly); exact (volume, reporter, page) -> cluster_id",
+      "prompt_rule2_rank": 0,
+      "proven_in_run": true,
+      "provenance": "Downloaded + indexed 2026-09-19 from this VM (127MB bz2); HEAD verified 200, Accept-Ranges. Reporter strings verified Bluebook-form (U.S., F.3d, F. App'x, S. Ct., Cal. 5th ...).",
+      "wired": true,
+      "wire_notes": "Step 0 in lookup-citations.py (probe_bulk_offline) via build-bulk-citation-index.py. Answers existence only; cannot fuzzy-match so it cannot launder a fabricated cite. Miss != NOT_FOUND (quarterly cutoff) — falls through to live probes."
+    },
+    {
+      "id": "courtlistener",
+      "name": "CourtListener",
+      "base_url": "https://www.courtlistener.com/api/rest/v4/",
+      "coverage": "Federal + state opinions; citation-lookup and full-text search APIs",
+      "prompt_rule2_rank": 5,
+      "proven_in_run": true,
+      "provenance": "Opinions search used for Wicklund v. Idaho (zero results — confirmed unreported)",
+      "wire_notes": "Already probed by lookup-citations.py (citation lookup + search). No change needed.",
+      "wired": true
+    },
+    {
+      "id": "cap_static",
+      "name": "Caselaw Access Project (static.case.law)",
+      "base_url": "https://static.case.law/",
+      "coverage": "Official-reporter HTML/JSON. Cliff: U.S. through 2014 (no vol 604); F.3d ~2019; F. App'x ~2018 vols 1–714; no F.4th slug; Cal.2d present; Cal.5th only vol 1; Cal.App.5th only vols 1–11.",
+      "prompt_rule2_rank": null,
+      "proven_in_run": true,
+      "provenance": "Pollock 112 Cal.App.4th 1416 and Sain v. Wood 512 F.3d 886 read from reporter PDFs",
+      "wire_notes": "Already probed by lookup-citations.py (lookup_cap). Only free star-pagination source. 404 past the cliff is coverage, not NOT_FOUND. api.case.law retired 2024-09-05. REPORTER_MAP now includes cal-2d and F. App'x.",
+      "wired": true
+    },
+    {
+      "id": "justia",
+      "name": "Justia (law.justia.com + docs.justia.com)",
+      "base_url": "https://law.justia.com/",
+      "coverage": "Federal/state opinions (HTML) + federal docket PDFs via docs.justia.com",
+      "prompt_rule2_rank": 6,
+      "proven_in_run": true,
+      "provenance": "Wicklund memo, Valvo 67 Cal.App.3d 887 read in full; Merrill S.D. Cal. orders via docs.justia.com",
+      "wire_notes": "Already probed by lookup-citations.py (probe_justia). Usually Cloudflare 403 in this environment.",
+      "wired": true
+    },
+    {
+      "id": "scholar",
+      "name": "Google Scholar",
+      "base_url": "https://scholar.google.com/",
+      "coverage": "Case-law full-text search fallback",
+      "prompt_rule2_rank": null,
+      "proven_in_run": false,
+      "provenance": null,
+      "wire_notes": "Already probed by lookup-citations.py (probe_scholar). Unreliable 403.",
+      "wired": true
+    },
+    {
+      "id": "govinfo",
+      "name": "govinfo.gov (GPO)",
+      "base_url": "https://www.govinfo.gov/",
+      "coverage": "Federal opinions incl. USCOURTS collection; official API with key",
+      "prompt_rule2_rank": 4,
+      "proven_in_run": false,
+      "provenance": "2026-09-19 live POST confirmed field names; ranking too noisy to treat first hit as the pin. Not the Horn source.",
+      "wire_notes": "Wired behind --probe-extra: POST JSON + X-Api-Key, names_compatible required, unbound U.S. slips skipped. Do not enable by default. Do not use for Horn.",
+      "wired": "opt-in"
+    },
+    {
+      "id": "ca9_cdn",
+      "name": "Ninth Circuit opinions (cdn.ca9.uscourts.gov)",
+      "base_url": "https://cdn.ca9.uscourts.gov/datastore/opinions/",
+      "coverage": "9th Circuit published + memorandum dispositions (docket-addressable PDFs)",
+      "prompt_rule2_rank": 2,
+      "proven_in_run": true,
+      "provenance": "ASARCO 13-35356 and Esche 24-6244 PDFs 200; Wicklund memo under /memoranda/; Lee/Palomar-era CDN 404.",
+      "wire_notes": "Wired behind --probe-extra: strip 'No. ', opinions then memoranda. Pre-~2010 published opinions often missing. Does not vote in consensus.",
+      "wired": "opt-in"
+    },
+    {
+      "id": "courts_ca_gov",
+      "name": "California Courts opinions (courts.ca.gov)",
+      "base_url": "https://www.courts.ca.gov/opinions/documents/",
+      "coverage": "Cal. Supreme Court + Courts of Appeal opinions (PDF)",
+      "prompt_rule2_rank": 3,
+      "proven_in_run": true,
+      "provenance": "Meinhardt (2024) 16 Cal.5th 643 read in full from .../opinions/documents/S274147.PDF",
+      "wire_notes": "URL pattern .../documents/<DOCKET>.PDF (e.g. S274147.PDF). Docket-addressable; needs docket-number lookup step. Still unwired.",
+      "wired": false
+    },
+    {
+      "id": "supremecourt_gov",
+      "name": "U.S. Supreme Court (supremecourt.gov)",
+      "base_url": "https://www.supremecourt.gov/opinions/",
+      "coverage": "Slip opinions + bound-volume PDFs; authoritative for unbound U.S. Reports cites",
+      "prompt_rule2_rank": 1,
+      "proven_in_run": true,
+      "provenance": "Horn slip 200 at /opinions/24pdf/23-365_6k47.pdf",
+      "wire_notes": "No public API. Filename is docket-hash, not citation-addressable. Highest remaining unwired source for unbound U.S. cites.",
+      "wired": false
+    },
+    {
+      "id": "cornell_lii_scotus",
+      "name": "Cornell LII — Supreme Court",
+      "base_url": "https://www.law.cornell.edu/supremecourt/text/",
+      "coverage": "SCOTUS opinions, citation-addressable HTML",
+      "prompt_rule2_rank": 8,
+      "proven_in_run": false,
+      "provenance": null,
+      "wire_notes": "URL pattern /supremecourt/text/<volume>/<page> (e.g. /521/399 for Richardson). Citation-addressable with no lookup step. Will not have unbound slips.",
+      "wired": false
+    },
+    {
+      "id": "scocal",
+      "name": "scocal.stanford.edu (Cal. Supreme Court)",
+      "base_url": "https://scocal.stanford.edu/opinion/",
+      "coverage": "Cal. Supreme Court opinions, full HTML text",
+      "prompt_rule2_rank": null,
+      "proven_in_run": true,
+      "provenance": "Goddard 14 Cal.2d 47 read in full",
+      "wire_notes": "Slug-addressable HTML. Needs cite-to-slug resolution. CAP has Cal.2d (survey C4 FOUND); lookup-citations.py now maps cal-2d. Optional fallback.",
+      "wired": false
+    },
+    {
+      "id": "findlaw",
+      "name": "FindLaw Caselaw",
+      "base_url": "https://caselaw.findlaw.com/",
+      "coverage": "Federal/state opinions, HTML",
+      "prompt_rule2_rank": 7,
+      "proven_in_run": false,
+      "provenance": null,
+      "wire_notes": "No API; HTML scraping only. Lowest priority — duplicates CAP/CourtListener coverage.",
+      "wired": false
+    },
+    {
+      "id": "alldocket",
+      "name": "alldocket.com",
+      "base_url": "http://alldocket.com/api/cases/",
+      "coverage": "Federal opinion/docket PDFs (RECAP-derived)",
+      "prompt_rule2_rank": null,
+      "proven_in_run": true,
+      "provenance": "Estate of Esche (9th Cir. Sept. 29, 2025) read in full from alldocket PDF path",
+      "wire_notes": "Opaque IDs; not systematically addressable. Manual fallback only — do not build a probe around it.",
+      "wired": false
+    },
+    {
+      "id": "westlaw_patron_prose",
+      "name": "Westlaw Patron Access for Pro Se (library remote pilot)",
+      "base_url": "https://next.westlaw.com/",
+      "coverage": "Primary state and federal law on the remote package (cases, statutes, regulations, trial-court orders, Key Numbers). Secondary sources are thinner than on-site Westlaw. KeyCite is a case-page feature (Negative Treatment / History / Citing References), not a public API.",
+      "prompt_rule2_rank": null,
+      "proven_in_run": false,
+      "provenance": "Plaintiff reached the live Westlaw home 2026-09-19 via ess.thomsonreuters.com after the Patron Access for Pro Se click-wrap (screenshots: landing, next.westlaw.com agree, home). Controls not yet run on this account.",
+      "wire_notes": "MANUAL ONLY. Enter through the issuing library's remote link, not a bare next.westlaw.com bookmark. Shared seats (often 2); Sign Off or the seat holds 7–15 minutes. San Diego publishes a 20-doc/session and 150-doc/day download cap. Never put OnePass in chat, git, or a probe script. Personal pro se use only — that matches this portfolio; it does not authorize automation or source-benchmarking.",
+      "wired": false,
+      "survey_verdict": "MANUAL ONLY — closes WL / pin-after-cliff / KeyCite gaps"
+    }
   ],
   "wiring_recommendation": {
-    "note": "The four already-wired sources cover published pins. New probes add value only where CAP/CL miss: recent CA9 CDN PDFs, district USCOURTS packages, and SCOTUS slips.",
+    "note": "The already-wired sources cover published pins inside CAP's window. govinfo POST + CA9 CDN stay opt-in evidence only (do not vote). Plaintiff has Westlaw Patron Access for Pro Se in a browser — that is the manual KeyCite / bare-WL / post-cliff pin step, not a server probe.",
     "priority_order": [
       "ca9_cdn (filename confirmed; opt-in probe now fetches opinions + memoranda)",
       "supremecourt_gov slip opinions (only authoritative source for unbound U.S. cites such as Horn)",
       "govinfo POST + name-match (official API, but ranking is not a citator)",
       "cornell_lii_scotus (citation-addressable bound U.S. Reports)",
       "courts_ca_gov + scocal (Cal. direct PDFs / Cal. 2d fallback)"
+    ],
+    "do_not_wire": [
+      "westlaw_patron_prose (logged-in browser only; license forbids competing/benchmarking use; no credentials in the pipeline)",
+      "casetext (410 Gone, 2025-04-01)",
+      "api.case.law (retired 2024-09-05)",
+      "vlex guessed /vid/ (200 wrong case)",
+      "alldocket (opaque IDs)"
+    ]
+  },
+  "survey": "internal/docs/CITATION_SOURCE_SURVEY.md",
+  "survey_probe": "internal/scripts/survey-citation-sources.mjs",
+  "patron_access": "internal/docs/WESTLAW_PATRON_ACCESS.md",
+  "pin_confidence_rules": {
+    "PRIMARY": "CAP static reporter HTML page-label anchors; official preliminary-print / bound-volume PDFs (e.g. supremecourt.gov revised PDFs carrying official U.S. pagination).",
+    "SECONDARY": "Everything else by construction: CourtListener plain_text pins, govinfo / ca9 CDN / courts.ca.gov slip PDFs, unbound U.S. cites (suggest S. Ct. / L. Ed. 2d parallel).",
+    "note": "Pin confidence is separate from existence. The offline oracle and pin APIs answer existence; only PRIMARY sources confirm the reporter pin."
+  },
+  "honest_gaps": [
+    "No free Westlaw-number resolver: WL pins (e.g. 2021 WL 1034838) cannot be resolved offline; CourtListener sometimes carries them, no guarantee. Manual as of 2026-09-19: Plaintiff has Westlaw Patron Access for Pro Se — look up the WL number in that browser, do not scrape.",
+    "No programmatic negative-treatment flags from free sources: KeyCite/Shepard's must not be wired. Plaintiff reached live KeyCite 2026-09-19 via library remote Patron Access for Pro Se (shared seats, often 2; OnePass — never store). San Diego publishes 20-doc/session and 150-doc/day download caps.",
+    "California depublication can silently stale CourtListener's 'Published' label — treat publication status as provisional for Cal. cases.",
+    "Bulk offline snapshot is quarterly (2026-06-30): post-cutoff cases are invisible to the oracle; a bulk miss is UNRESOLVED, never NOT_FOUND.",
+    "CAP static is frozen ~2018: no post-2018 state-court coverage; live CAP API retired 2024-09-05.",
+    "CourtListener May-2026 throttle: new accounts 5/min, 50/hr, 125/day; citation-lookup 60 valid cites/min, 250 citations/request.",
+    "supremecourt.gov has no public API; unbound U.S. cites (e.g. Horn 604 U.S. ___) resolve only via slip/preliminary-print PDFs there."
+  ],
+  "control_matrix_2026_09_19": {
+    "run_from": "hatch VM, 2026-09-19 ~02:00 PDT",
+    "results": [
+      {
+        "control": "C1 Swift v. California, 384 F.3d 1184",
+        "openjurist_by_path": "200 OK",
+        "cap": "f3d/384 first_page=1184 -> 'Swift v. California', file 1184-01; page-label anchors present (PRIMARY pin)",
+        "verdict": "pass"
+      },
+      {
+        "control": "C2 Richardson v. McKnight, 521 U.S. 399",
+        "openjurist_by_path": "200 OK (521/us/399)",
+        "verdict": "pass"
+      },
+      {
+        "control": "C4 In re Hudson, 1 Cal.App. 4th 1 (2006)",
+        "cap": "cal-app-4th/1 first_page=1 -> 'Weidenfeller v. Star & Garter' — fabricated cite caught (wrong case at pin)",
+        "verdict": "pass (negative control caught)"
+      },
+      {
+        "control": "govinfo search",
+        "finding": "GET rejected; POST JSON works; ranking is full-text noise (top USCOURTS hits for 'Medical Marijuana Horn' are unrelated dockets); /packages/USCOURTS-ca9-24-06244/summary -> 404",
+        "verdict": "probe hardened: name-match required, POST body"
+      },
+      {
+        "control": "ca9 CDN",
+        "finding": "Esche 24-6244 + Wicklund 12-35294 fetched 200 OK this morning",
+        "verdict": "pass"
+      },
+      {
+        "control": "courts.ca.gov",
+        "finding": "Meinhardt (2024) 16 Cal.5th 643 PDF read in full this morning",
+        "verdict": "pass"
+      },
+      {
+        "control": "supremecourt.gov Horn revised PDF (604 U.S. 593 pagination)",
+        "finding": "survey-verified 2026-09-19; NOT re-verified from this VM",
+        "verdict": "documented, not re-tested"
+      }
     ]
   }
 }
