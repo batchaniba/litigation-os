@@ -28,14 +28,21 @@ the research memo this skeleton draws on (`MTD-PREP-2026-09-18.md`).
    is the single highest-leverage move in this filing.
 3. **Cite clean.** Standing Order § E.4: failure to verify citations "may be grounds for sanctions
    and/or striking a filing." Every cite below is verification-tagged in the research memo.
-   Re-verify pins before filing (three pins are SECONDARY: *Zetz* 713, *Schreiber* 1400–01,
-   *DZ Reserve* 1233).
+   Re-verify pins before filing (three pins are SECONDARY: *Zetz* 713 — now UNVERIFIABLE, do
+   not cite without a readable source; *Schreiber* 1400–01, *DZ Reserve* 1233). Full
+   verification report (2026-09-19, local workspace only, not in the repo):
+   `~/workspace/legal-research/matter-28-mtd-prep/VERIFICATION-P2P5-2026-09-19.md`.
 4. **Calendar:** opposition due **14 days after the motion is filed** (Civil L.R. 7-3). Her
    Standing Order § E.2: failure to timely oppose "may be construed as consent" to granting the
    motion. File nothing outside the briefing without leave — she strikes sur-replies and
    "supplemental authority" notices under L.R. 7-3(c) (*Gold Club*).
 5. **Matter 6 disclosure:** the undisclosed overlapping habeas matter must be disclosed on the
    record; do not voluntarily dismiss Matter 28 (*Semtek* nullity rule per base memo).
+6. **Standing rule: rebut only what is filed.** This skeleton contains no anticipatory
+   counter-authority sections (*Blackwell*, *Gross*, deeming-doctrine pre-buttals removed
+   2026-09-19). The distinguishers for unfiled authority live in the local-only countermemo
+   (`~/workspace/legal-research/matter-28-mtd-prep/COUNTERMEMO-unfiled-authorities.md`) —
+   they are research, never repo content.
 
 ---
 
@@ -67,47 +74,61 @@ the research memo this skeleton draws on (`MTD-PREP-2026-09-18.md`).
    **re-pull the morning of filing** — Van Dine can cure this by getting a judgment entered).
    Demand judicial notice of the *actual* prior-judgment documents (minute order, register),
    not defendants' characterization of them.
+   - *Valvo v. Univ. of S. California*, 67 Cal.App.3d 887, 892 n.3 (1977) (PRIMARY, verified):
+     "Until entry of judgment, a ruling on a demurrer is not res judicata and may be
+     reconsidered and changed by the trial court."
+   - *Meinhardt v. City of Sunnyvale* (2024) 16 Cal.5th 643 (PRIMARY, read in full): bright-line
+     rule that operative events run from entry of a document denominated "judgment," not from
+     the filing of an "order" — quoting *Berri v. Superior Court* (1955) 43 Cal.2d 856, 860 for
+     the proposition that an order sustaining a demurrer without leave to amend "is not
+     appealable as it is not the final judgment in the case." (Caveat: *Meinhardt* is an
+     appealability case, not a preclusion case — use it for judgment-formalism only. The
+     Court preserved the one-way practice of deeming an order a judgment to *save* a premature
+     appeal; it rejected deeming as a way to *cut off* rights.)
 2. **Not on the merits.** The demurrer was sustained on **failure to exhaust administrative
-   remedies**, which the court itself called a **"jurisdictional requirement"** to filing.
+   remedies** — a pleading/formal defect (the FAC omitted the exhaustion allegation), not an
+   adjudication that the facts alleged fail to state a cause of action.
+   - *Goddard v. Security Title Ins. & Guar. Co.*, 14 Cal.2d 47, 52–53 (1939) (PRIMARY,
+     verified): "But even a judgment on general demurrer may not be on the merits, for the
+     defects set up may be technical or formal, and the plaintiff may in such case by a
+     different pleading eliminate them or correct the omissions and allege facts constituting a
+     good cause of action, in proper form. Where such a new and sufficient complaint is filed,
+     the prior judgment on demurrer will not be a bar." An exhaustion defect is exactly the
+     kind of formal, curable-by-repleading defect *Goddard* excepts — this is the whole
+     merits-element argument.
    - *Heath v. Cleary*, 708 F.2d 1376, 1380 n.4 (9th Cir. 1983) (PRIMARY): an exhaustion-based
      state ruling precludes nothing — "the only issue necessarily decided by the court was the
      propriety of granting mandamus relief in light of Heath's failure to pursue administrative
      remedies."
    - *Perez v. City of San Bruno* (state exhaustion as jurisdictional precondition) — see base
      memo for the precise holding.
-   - BAP memorandum (2012, SECONDARY): a demurrer sustained WOLA is a judgment on the merits
-     **"as long as the order was based on the merits (or lack thereof) of the claims asserted
-     and not on some formal defect"** (citing *Goddard*, 14 Cal.2d 47, 52; *Pollock v. Univ. of
-     S. California*, 112 Cal.App.4th 1416 (2003)) — the formal-defect line.
    - *Costello v. United States*, 365 U.S. 265 (1961) (Restatement § 20 analogy): dismissals
      resting on a threshold defect are not on the merits.
+   - **Do not cite *Pollock* for a general-vs-special demurrer preclusion distinction — the
+     passage does not exist in the opinion** (verified by full-text search of 112 Cal.App.4th
+     1416; the distinction is a *Goddard* point, not a *Pollock* point).
+   - **Do not frame Matter 5 as a subject-matter-jurisdiction dismissal.** *Kim v. Konad USA
+     Distribution, Inc.* (2014) 226 Cal.App.4th 1336 (published) holds exhaustion does not
+     affect fundamental subject matter jurisdiction and is forfeited if not timely raised.
+     Quote the minute order's own "jurisdictional requirement" language as a fact about what
+     the state court *said*; argue the defect was formal/pleading under *Goddard* — not that
+     the court lacked jurisdiction.
+   - Internal caution: adverse bar-effect authorities on this point are verified and cataloged
+     in the local-only verification file (§ 0 ¶ 3). They are the defense's ammunition, not
+     yours — do not cite them in the opposition.
 3. **Smith was not a party to Matter 5.** The state defendants were HOPE Psychotherapy, Inc.,
    Katie Palacios, and Does — not Shannon Smith. Party-identity element fails as to her.
 
-### B. Anticipated counter-authority — neutralize preemptively
-
-- ***Blackwell v. Carrington Mortgage Servs.*, No. 24-cv-06494-BLF (N.D. Cal. Jan. 22, 2025)
-  (Freeman, J.)** — pro se, res judicata 12(b)(6) granted **without leave**. **Two clean
-  distinguishers:** (a) *Blackwell* anchored preclusion on a **separate Order of Dismissal With
-  Prejudice** — no such order exists in Matter 5; (b) the *Blackwell* demurrer was for **failure
-  to state a claim**, while Matter 5's was for **exhaustion** ("jurisdictional requirement").
-  Pair with binding *Heath* n.4.
-- ***Meinhardt v. City of Sunnyvale* (2024) 16 Cal.5th 643, 654–55** — the deeming doctrine
-  (demurrer WOLA treated as "final judgment" when sufficiently final). **One paragraph, not
-  more:** the doctrine was articulated for **appealability, not preclusion** — and even a
-  deemed judgment on an exhaustion ground is still not **on the merits** under *Perez* /
-  *Heath* n.4 / *Costello*. Address it before they spring it.
-- If a judgment **has** been entered since Sept 12: fall back to the merits-element argument
-  (defects 2 and 3 are judgment-independent) plus the **privity point** — Smith was not a
-  party and is not in privity with the state defendants on an exhaustion-based dismissal.
-
-### C. Affirmative alternative asks (end the res judicata section with these)
+### B. Affirmative alternative asks (end the res judicata section with these)
 
 - In the alternative, **defer ruling on preclusion until summary judgment** — judicial economy
   counsels against deciding claim/issue preclusion on a 12(b)(6) where the prior record is
   incomplete and the state register is in flux. Cisneros has never decided preclusion on a
   12(b)(6) on the public record; in *this* case Dkt. 11 left preclusion to the defendants.
 - Request leave to amend to plead the Matter 5 record with precision.
+- If a judgment **has** been entered since Sept 12: fall back to the merits-element argument
+  (defects 2 and 3 are judgment-independent) plus the **privity point** — Smith was not a
+  party and is not in privity with the state defendants on an exhaustion-based dismissal.
 
 ---
 
@@ -128,22 +149,15 @@ the research memo this skeleton draws on (`MTD-PREP-2026-09-18.md`).
    individual sex-offender therapist; tension point for any defense cite. **Do not cite *Chavez*
    as a QI denial** — it *granted* QI to the therapist.
 
-### B. If they cite *Gross v. Samudio*, No. 14-1248 (10th Cir. Oct. 27, 2015) (nonprecedential)
+### B. Qualified immunity (if raised — peripheral unless they claim state action)
 
-Answer in three moves: (a) **nonprecedential, Tenth Circuit, 2015** — persuasive only
-(FRAP 32.1); (b) it turned on **pleading insufficiency** ("conclusory allegations… simply
-because Colorado had contracts with the treatment providers"), not a categorical rule that
-private vendors can never be state actors; (c) it did not involve a CEO sued for a **blanket
-corporate policy** or a statute vesting the completion determination in the vendor.
-Distinguish also on *Wittner v. Banner Health* (relied-on in *Gross*) — no liberty-vesting
-statute there.
-
-### C. Qualified immunity (if raised — peripheral unless they claim state action)
-
-- Private contractors' QI is the *Richardson v. McKnight* / *Filarsky v. Delia* line; *Filarsky*
-  limits QI to those "retained on a temporary or occasional basis" — not a systematic
-  government vendor. No Cisneros 12(b)(6) QI ruling found (UNVERIFIED); QI is fact-bound and
-  rarely resolved at the pleading stage.
+- Private contractors' QI is governed by *Richardson v. McKnight* (no QI for private prison
+  guards in a "systematically organized" private operation) and *Filarsky v. Delia* (QI for a
+  private attorney retained to assist the government). Which side of that line a long-term
+  CDCR treatment contractor falls on is unresolved — no 2024–2026 federal decision applies
+  *Richardson*/*Filarsky* to a private treatment contractor's QI (verified absence). Argue
+  *Richardson*; do not concede the line. No Cisneros 12(b)(6) QI ruling found (UNVERIFIED);
+  QI is fact-bound and rarely resolved at the pleading stage.
 
 ---
 
@@ -187,12 +201,13 @@ statute there.
 defense-in-depth: oppose the dismissal **and** make the leave-to-amend proffer so strong it
 becomes the example of why dismissal must be without prejudice.
 
-1. **Rule 9(b) proffer — give her exactly what *Zetz* demands.** *Zetz v. Boston Scientific
-   Corp.*, 398 F. Supp. 3d 700, 713 (E.D. Cal. 2019) (PRIMARY; pin 713 SECONDARY): fraud must be
-   pleaded with **who, what, when, where, how**; the counts there were dismissed **with leave to
-   amend**. In the opposition (and the attached proposed FAC), name for each alleged
-   misrepresentation: the **speaker**, the **document or communication**, the **date**, and the
-   **specific representation** — the who/what/when/where/how grid, one row per representation.
+1. **Rule 9(b) proffer — give her exactly what fraud pleading demands.** *Zetz v. Boston
+   Scientific Corp.*, 398 F. Supp. 3d 700 (E.D. Cal. 2019): **pin 713 UNVERIFIABLE — do not
+   cite that pin without a readable source; re-verify before filing.** The who/what/when/
+   where/how standard itself is settled; in the opposition (and the attached proposed FAC),
+   name for each alleged misrepresentation: the **speaker**, the **document or communication**,
+   the **date**, and the **specific representation** — the who/what/when/where/how grid, one
+   row per representation.
 2. **Reliance inference:** *DZ Reserve v. Meta Platforms, Inc.*, 96 F.4th 1223, 1233 (9th Cir.
    2024) (PRIMARY; pin 1233 SECONDARY) — a uniform misrepresentation communicated to all class
    members supports an inference of reliance; a defendant may not defeat reliance by arguing the
@@ -255,5 +270,9 @@ becomes the example of why dismissal must be without prejudice.
 
 ---
 
-*Skeleton prepared from the Sept 12 base research and the 2026-09-18 MTD-prep memo. Adjust to
-the as-filed motion. Workspace copy only — nothing written to the repo.*
+*Skeleton prepared from the Sept 12 base research and the 2026-09-18 MTD-prep memo. Reworked
+2026-09-19 against the primary-source verification report: preclusion section rebuilt on
+*Goddard* + no-judgment (Pollock general-vs-special passage removed as nonexistent; Kim v.
+Konad handled); anticipatory counter-authority sections removed per standing rule (rebut only
+what is filed — distinguishers in the local-only countermemo); Zetz pin flagged unverifiable.
+Adjust to the as-filed motion.*
