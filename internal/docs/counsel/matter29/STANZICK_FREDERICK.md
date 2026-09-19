@@ -139,3 +139,5 @@ Watch for:
 
 - 2026-09-19: Lodged Frederick PACER attorney queries (C.D. Cal. 52 cases; E.D. Cal. 6 cases, including live *Wade v. Amazon.com Services LLC*, 1:26-cv-02381-JLT-SAB) and the *Wade* Notice of Removal packet (Frederick / Sbrocca signed). Sources under `sources/` and `/documents/matter-29/counsel-frederick/`.
 - 2026-09-19 (batch 2): Lodged Frederick N.D. Cal. PACER attorney query (40 cases). C.D. Cal. / E.D. Cal. queries already lodged same day.
+
+- 2026-09-19 (batch 3): Lodged *Williams v. Accurate Background, LLC*, 1:23-cv-00175 (N.D. Ill.) — docket, complaint, and Accurate answer (Dkt. 12, Mar. 2, 2023) signed by John W. Drury with Jasmine J. Stanzick on the block (Seyfarth Chicago). Also lodged Stanzick PACER attorney queries for N.D. Ill. (65 cases) and S.D. Ill. (5 cases). Rangel complaint/answer/settlement/docket and Carrillo docket history were already in the catalog — discarded as dupes.

@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1421,
-  "totalBytes": 936904178,
+  "fileCount": 1426,
+  "totalBytes": 938198469,
   "files": [
     {
       "path": "/documents/README.md",
@@ -7107,6 +7107,31 @@
       "path": "/documents/matter-33/ndcal/Gmail - McMahon requests 5-day extension on MTS response (Sep 18 2026).pdf",
       "size": 47602,
       "sha256": "2e51a1c8088c85791b3eb72f08b4ef35d8b78cf491a98d78b507d8305a1bee0a"
+    },
+    {
+      "path": "/documents/matter-29/williams-v-accurate/Docket Sheet - Williams v Accurate (N.D. Ill. 1-23-cv-00175, as of Sep 18 2026).pdf",
+      "size": 179686,
+      "sha256": "f0db0f33ff7d784fb37604104cb900c4071fa1d265ce7f480efe8f97f0569595"
+    },
+    {
+      "path": "/documents/matter-29/williams-v-accurate/Dkt 01 - Complaint (Jan 11 2023).pdf",
+      "size": 775744,
+      "sha256": "5a5037f973bb390d3d8c5ed784068c8979a200f9a60dfc6516215c9ee93bed83"
+    },
+    {
+      "path": "/documents/matter-29/williams-v-accurate/Dkt 12 - Accurate Answer and Affirmative Defenses - Drury Stanzick (Mar 2 2023).pdf",
+      "size": 84403,
+      "sha256": "0c28898793f052a618b41f83d1dd09faa3c3d4e00f3503dc7e1d7c42deaf6039"
+    },
+    {
+      "path": "/documents/matter-29/stanzick-searches/N.D. Ill. Attorney Search - Jasmine Jane Stanzick (Sep 18 2026).pdf",
+      "size": 134494,
+      "sha256": "4f832e3148113e316e32ea8f7b1383b6a7b8b922c09326ebd2b991cefbb7bf27"
+    },
+    {
+      "path": "/documents/matter-29/stanzick-searches/S.D. Ill. Attorney Search - Jasmine J. Stanzick (Sep 18 2026).pdf",
+      "size": 119964,
+      "sha256": "7ec1265682bb31cb737a806261d404dc2286af7881c927a5d3bcabe291101f0b"
     }
   ]
 }
