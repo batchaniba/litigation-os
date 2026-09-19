@@ -1009,6 +1009,16 @@ const matter_damages_raw = [
     moderate: 0,
     aggressive: 0,
     components: []
+  },
+  {
+    number: 41,
+    claims: "PC §290.46(j) / ICRAA / FCRA / CA Fair Chance Act / UCL — Nuro, Inc. (prospective); Checkr vendor (user-stated, unconfirmed)",
+    risk: "Pre-dispute monitoring file. Caption: Brendan Ngwa Nforbi v. Nuro, Inc. Applied Sep. 9, 2026 (Autonomous Vehicle Operator, SF overnight, 12-month); driving eval completed Sep. 18. No Checkr authorization/disclosure signed, no report, no adverse action. Nuro's Sep. 17 license-requirements email pins MVR screening as the job-related criterion. Damages $0 until adverse action.",
+    settlement_note: "No valuation — no adverse action. Prospective statutory framework only.",
+    conservative: 0,
+    moderate: 0,
+    aggressive: 0,
+    components: []
   }
 ];
 

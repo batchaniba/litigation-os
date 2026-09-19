@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1293,
-  "totalBytes": 904420007,
+  "fileCount": 1308,
+  "totalBytes": 906004811,
   "files": [
     {
       "path": "/documents/README.md",
@@ -1059,7 +1059,7 @@
       "sha256": "f0f7c24c5ca36cd6b45ac270cd171da0c8c5b8dbdf5804cfd93d82563b670ba5"
     },
     {
-      "path": "/documents/matter-12/018 Request for Sheriff Service + Fee Waiver : CC Auth \u2014 Ngwa Nforbi v. Diamond Truc.pdf",
+      "path": "/documents/matter-12/018 Request for Sheriff Service + Fee Waiver : CC Auth — Ngwa Nforbi v. Diamond Truc.pdf",
       "size": 40998,
       "sha256": "c27e93998452da4a50fc081a30c39c36d99d3bb88c879fdd853c14ada4133504"
     },
@@ -1599,7 +1599,7 @@
       "sha256": "75490eafd07533965b7cf9aab18a19970c9b6ef2d6f432d9fbd551254772bb35"
     },
     {
-      "path": "/documents/matter-19/Exhibit A Cover \u2014 Petition for Writ of Habeas Corpus (HC-004 Attachment).pdf",
+      "path": "/documents/matter-19/Exhibit A Cover — Petition for Writ of Habeas Corpus (HC-004 Attachment).pdf",
       "size": 2049,
       "sha256": "77bb842edaf0f19a10e3b73706d98ac3b36245004c91a5a08e776c7411e1f1a0"
     },
@@ -1619,12 +1619,12 @@
       "sha256": "6799967fa187ef88c25f1179ea60aeb51899278c34c6eefa773637ad460cc9b7"
     },
     {
-      "path": "/documents/matter-19/HC-004 Notice and Request for Ruling Packet (with Exhibit A \u2014 Unstamped Petition) (Ready to File Aug 17 2026).pdf",
+      "path": "/documents/matter-19/HC-004 Notice and Request for Ruling Packet (with Exhibit A — Unstamped Petition) (Ready to File Aug 17 2026).pdf",
       "size": 24424353,
       "sha256": "3dedcd2cbeda6c125e4b4b9c7ea85d5cb247874c0e41b78e3c0f1db4d3e6b178"
     },
     {
-      "path": "/documents/matter-19/HC-004 Notice and Request for Ruling Packet (with Exhibit A \u2014 Unstamped Petition) (Ready to File Aug 7 2026).pdf",
+      "path": "/documents/matter-19/HC-004 Notice and Request for Ruling Packet (with Exhibit A — Unstamped Petition) (Ready to File Aug 7 2026).pdf",
       "size": 24424352,
       "sha256": "ea161e502031b4a01a9df56def1b26999062583a20ed08e2451d4b7942834de2"
     },
@@ -4469,17 +4469,17 @@
       "sha256": "6927e492d2b895bec452164f77b60482e12cf9d026d51e1468750b8705515e9a"
     },
     {
-      "path": "/documents/matter-30/CASOMB Complaint Submission \u2013 HOPE Psychotherapy, Inc. 2.pdf",
+      "path": "/documents/matter-30/CASOMB Complaint Submission – HOPE Psychotherapy, Inc. 2.pdf",
       "size": 83191,
       "sha256": "dc4061596765570a06d4e86f38db4d34f71fb386904d98ee7bfe821d13256f16"
     },
     {
-      "path": "/documents/matter-30/CASOMB Complaint Submission \u2013 HOPE Psychotherapy, Inc. 3.pdf",
+      "path": "/documents/matter-30/CASOMB Complaint Submission – HOPE Psychotherapy, Inc. 3.pdf",
       "size": 45518,
       "sha256": "ce8099b1e920e74cee0dd78ff9282e74706a93d3ffc90907bfadd5057472bbf4"
     },
     {
-      "path": "/documents/matter-30/CASOMB Complaint Submission \u2013 HOPE Psychotherapy, Inc. 4.pdf",
+      "path": "/documents/matter-30/CASOMB Complaint Submission – HOPE Psychotherapy, Inc. 4.pdf",
       "size": 40474,
       "sha256": "1437c5d712b6b46fcb907c00bf50bd79f6265c528037923266299cda908e6824"
     },
@@ -6402,6 +6402,81 @@
       "path": "/documents/matter-40/WorkDay Task - Welcome Message - Uber AV Teammate (Sep 14 2026).pdf",
       "size": 73543,
       "sha256": "ca354ebb9d1844051480c63b84b7c5561ae46ba00c78b8c4bcc5c364eb498456"
+    },
+    {
+      "path": "/documents/matter-41/Availability for Google Meet Interviews - Nuro (Sep 10 2026) (2).pdf",
+      "size": 81556,
+      "sha256": "2ba8ff8954489324394340dbf57386944d9af3fa9be89066f8a9c1f045e0f248"
+    },
+    {
+      "path": "/documents/matter-41/Availability for Google Meet Interviews - Nuro (Sep 10 2026).pdf",
+      "size": 109156,
+      "sha256": "89db8c6233b27c584159763973171850f2585652099a4fb65daf7599527c948d"
+    },
+    {
+      "path": "/documents/matter-41/DocuSign - NDA and Site Visit Liability Waiver - Nuro (Sep 18 2026).pdf",
+      "size": 273974,
+      "sha256": "fd8f9f07b36aee7a961752d6916a67a0655d642a9027db0c29c53ab185d88855"
+    },
+    {
+      "path": "/documents/matter-41/Driving Evaluation Onsite - License Requirements and MVR Notice (Sep 17 2026).pdf",
+      "size": 131291,
+      "sha256": "655db3498e078a40cd38955e36c4e315891f2956334aacee75999981effff39a"
+    },
+    {
+      "path": "/documents/matter-41/Google Meet Interview Invitation - Nuro (Sep 15 2026).pdf",
+      "size": 53032,
+      "sha256": "222d9e4c102128694b05ac04792500fcd11471d06886de8ee621d1e754f53857"
+    },
+    {
+      "path": "/documents/matter-41/Indeed Application - Autonomous Vehicle Operator San Francisco Overnight Shift (Sep 9 2026).pdf",
+      "size": 144166,
+      "sha256": "de4cff1eaaddc2f5887c61adb998a3589e3fb1d2ba30c588e74b1ba3c7342f57"
+    },
+    {
+      "path": "/documents/matter-41/Interview Feedback Survey - Nuro (Sep 16 2026).pdf",
+      "size": 53941,
+      "sha256": "2b6a054f56a2a2c5007db766a8db6659500563d59ecaa9ee97f8081d43512b55"
+    },
+    {
+      "path": "/documents/matter-41/Interview Feedback Survey - Nuro (Sep 18 2026).pdf",
+      "size": 54120,
+      "sha256": "79d21c3679134cfc6096a16c8db0dc9677d3693e3e622005b3771e010aaee055"
+    },
+    {
+      "path": "/documents/matter-41/Interview Reminder - Nuro (Sep 16 2026).pdf",
+      "size": 63930,
+      "sha256": "3efd683c42621c5cd957fb25d232cc9bc833de5649ad468f156fa907dedbd68a"
+    },
+    {
+      "path": "/documents/matter-41/Reminder to Schedule Interview - Nuro (Sep 11 2026) (2).pdf",
+      "size": 68431,
+      "sha256": "432f8d3cc05251092bb41cd774f2524285cad8a8cc50b29363355dd53e9407c8"
+    },
+    {
+      "path": "/documents/matter-41/Reminder to Schedule Interview - Nuro (Sep 11 2026).pdf",
+      "size": 68431,
+      "sha256": "013c25b652490d4996e68d32e28545c5cdceafc7de9258c3003b04a73e9d9dbb"
+    },
+    {
+      "path": "/documents/matter-41/SF Driving Evaluation Confirmation (Sep 17 2026).pdf",
+      "size": 304849,
+      "sha256": "5ace59519145c3dc413d95b65793674464cb1e90a6dfa2b8a64d9313bab4c183"
+    },
+    {
+      "path": "/documents/matter-41/SF In-Person Onsite Invitation - Driving Evaluation (Sep 17 2026).pdf",
+      "size": 50366,
+      "sha256": "f2fb66868ccc34c3b30a8c40036f822e416ddf3b2a288e365ef5910c271b3eb5"
+    },
+    {
+      "path": "/documents/matter-41/Thank You for Applying - Nuro Greenhouse (Sep 9 2026).pdf",
+      "size": 31612,
+      "sha256": "175385b8c806f70220cdccaec894396b836b50ffb00af80585cae3a48dc5439e"
+    },
+    {
+      "path": "/documents/matter-41/Video Interview Confirmation - Nuro (Sep 15 2026).pdf",
+      "size": 95949,
+      "sha256": "e1b1993ae3dc2883a9f885e513c8a8f3bf2277b74a0f452d167aaf26e681f286"
     },
     {
       "path": "/documents/opinions/Newanforbi Habeas - Santa Clara Sup Ct - Order Extending Time Jul 2 2026.pdf",
