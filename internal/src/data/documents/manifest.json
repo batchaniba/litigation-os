@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1417,
-  "totalBytes": 934399036,
+  "fileCount": 1421,
+  "totalBytes": 936904178,
   "files": [
     {
       "path": "/documents/README.md",
@@ -7087,6 +7087,26 @@
       "path": "/documents/matter-29/counsel-frederick/PACER - N.D. Cal. Attorney Query - Andrew Paul Frederick (Sep 18 2026).pdf",
       "size": 131003,
       "sha256": "ef13cfa261bfcc9f5a9ff74904d0ee6fa0a1d557f3bdc573e5bbd3b27acadba2"
+    },
+    {
+      "path": "/documents/matter-29/counsel-frederick/PACER - C.D. Cal. Attorney Query - Andrew P Frederick (Sep 18 2026).pdf",
+      "size": 134945,
+      "sha256": "2248194727660735038b988986bed013eee80c01dcca4f0282bfc1263985d1e3"
+    },
+    {
+      "path": "/documents/matter-29/counsel-frederick/PACER - E.D. Cal. Attorney Query - Andrew Paul Frederick (Sep 18 2026).pdf",
+      "size": 119411,
+      "sha256": "609547ab970f35f486b8358dd96903bdab7b199533287163b965e68c2cd3b5d9"
+    },
+    {
+      "path": "/documents/matter-29/counsel-frederick/Wade v Amazon - Notice of Removal Packet (E.D. Cal. 1-26-cv-02381, Filed Mar 27 2026).pdf",
+      "size": 2203184,
+      "sha256": "1b3164370433f2cb0db4e8486837bfd17ac99d566d76dfc2e7b99d11b4214d87"
+    },
+    {
+      "path": "/documents/matter-33/ndcal/Gmail - McMahon requests 5-day extension on MTS response (Sep 18 2026).pdf",
+      "size": 47602,
+      "sha256": "2e51a1c8088c85791b3eb72f08b4ef35d8b78cf491a98d78b507d8305a1bee0a"
     }
   ]
 }
