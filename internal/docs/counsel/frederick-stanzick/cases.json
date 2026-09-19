@@ -196,6 +196,37 @@
       ],
       "usable_as": "Same Matter 29 client (Accurate) on Stanzick's desk: answer-not-MTD posture, entity precision (LLC vs Inc.), individual FCRA/CCRAA — contrast Kim §290.46 class files. Settlement exit pattern matches hand dossier.",
       "not_a_holding": "Not a related case. Not a §290.46 merits template. Dismissal with prejudice is settlement, not adjudication. Do not cite as holding in Matter 29."
+    },
+    {
+      "id": "santee-v-accurate-cdcal-2025",
+      "kind": "pacer_pull",
+      "matter": null,
+      "caption": "Johnny Denzel Santee v. Accurate Background, Inc.",
+      "docket_short_title": "Santee v. Accurate",
+      "court": "C.D. Cal.",
+      "case_no": "8:25-cv-02447-FWS-JDE",
+      "judge": "Hon. Fred W. Slaughter",
+      "filed": "2025-10-21",
+      "terminated": "2025-12-23 (Rule 68 acceptance; fee motion Jan. 2026)",
+      "side": "defense",
+      "client": "Accurate Background, LLC",
+      "nature": "Individual FCRA + CCRAA — not §290.46 / Fair Chance class",
+      "stanzick_role": "Signed answer (Dkt. 14, Dec. 22, 2025) and Rule 68 offer (Dkt. 18-1, Dec. 23, 2025). SBN 354704.",
+      "frederick_role": "none",
+      "plaintiff_counsel": "Andrew J. Gramajo (complaint); Stephen T. Jones (Rule 68 acceptance and fee motion)",
+      "outcome": "Rule 68 offer $10,000 + fees/costs; plaintiff acceptance Dkt. 18 (Dec. 23, 2025); fee motion Dkt. 21 (Jan. 8, 2026). Dismissal order not in lodge.",
+      "sources": [
+        "internal/docs/counsel/frederick-stanzick/sources/8-25-cv-02447-Santee-v-Accurate/",
+        "/documents/matter-29/santee-v-accurate-background/Dkt 01 - Complaint for FCRA Violations (Oct 21, 2025).pdf",
+        "/documents/matter-29/santee-v-accurate-background/Dkt 14 - Accurate Answer and Affirmative Defenses (Dec 22, 2025).pdf",
+        "/documents/matter-29/santee-v-accurate-background/Dkt 18-1 - Accurate Rule 68 Offer of Judgment (Dec 23, 2025).pdf",
+        "/documents/matter-29/santee-v-accurate-background/Dkt 18 - Plaintiff Acceptance of Rule 68 Offer (Dec 23, 2025).pdf",
+        "/documents/matter-29/santee-v-accurate-background/Dkt 21 - Plaintiff Motion for Attorneys Fees Under Rule 68 (Jan 8, 2026).pdf",
+        "/documents/matter-29/santee-v-accurate-background/Dkt 21-1 - Exhibit to Fee Motion (Jan 8, 2026).pdf",
+        "/documents/matter-29/santee-v-accurate-background/Dkt 21-2 - Billing Activities Export ISO Fee Motion (Jan 8, 2026).pdf"
+      ],
+      "usable_as": "Stanzick Accurate answer + next-day Rule 68 ($10k) on individual FCRA/CCRAA; same Slaughter division as Lerma; settlement shape not merits.",
+      "not_a_holding": "Not a related case. Rule 68 is a negotiated exit, not FCRA adjudication. Do not cite in Matter 29 filings."
     }
   ]
 }

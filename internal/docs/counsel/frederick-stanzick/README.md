@@ -8,7 +8,7 @@ This is the playbook. Identity/role intelligence and lodged comparator briefs li
 |---|---|
 | [`PLAYBOOK.md`](PLAYBOOK.md) | Read this. Two-desk comparison, *Lerma* (Frederick) and *Carrillo* (Stanzick) argument inventories, the seam. |
 | [`cases.json`](cases.json) | Append-only machine cards. One object per docket. |
-| [`sources/`](sources/) | Lodged PACER prints. Not served on the public site. Seeded: *Lerma* Frederick MTD packet; *Carrillo* set; *Walker v. Ronin*; *Varela v. Accurate* (Dkts. 1, 1-1, 13, 15, 15-1, 25). |
+| [`sources/`](sources/) | Lodged PACER prints. Not served on the public site. Seeded: *Lerma*; *Carrillo*; *Walker*; *Varela*; *Santee v. Accurate* (Rule 68 set). |
 
 *Carrillo* is also cataloged at `/documents/matter-29/carrillo-v-vons/`. The full *Lerma* docket (69 PDFs) already lives at `/documents/matter-29/lerma-v-amazon/` — do not PACER-pull it again. Playbook `sources/` copies are the counsel-research lodge.
 
@@ -64,3 +64,12 @@ Identity and role intelligence only. A docket where they appeared for someone el
 | 13 | Accurate answer | Mar. 30, 2026 | **Stanzick signed.** LLC vs Inc. caption; answer-not-MTD |
 | 15 / 15-1 | Joint Rule 26(f) + schedule | Apr. 23, 2026 | Discovery posture before hand-dossier stipulation |
 | 25 | Opposition to ex parte | Jul. 1, 2026 | **Stanzick signed.** Dkt. 22 dismissal with prejudice **not** in lodge |
+
+*Johnny Denzel Santee v. Accurate Background, Inc.*, C.D. Cal. No. **8:25-cv-02447-FWS-JDE** (Slaughter, J.) — `/documents/matter-29/santee-v-accurate-background/`:
+
+| Dkt | Paper | Date | Why it is here |
+|---|---|---|---|
+| 1 | Complaint | Oct. 21, 2025 | Gramajo; individual FCRA + CCRAA |
+| 14 | Accurate answer | Dec. 22, 2025 | **Stanzick signed** |
+| 18-1 / 18 | Rule 68 offer + acceptance | Dec. 23, 2025 | **Stanzick offer** $10k; Jones acceptance |
+| 21 / 21-1 / 21-2 | Fee motion + exhibits | Jan. 8, 2026 | Post-Rule 68 fees |

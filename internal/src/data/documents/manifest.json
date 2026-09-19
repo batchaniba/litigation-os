@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1315,
-  "totalBytes": 914437808,
+  "fileCount": 1322,
+  "totalBytes": 917654492,
   "files": [
     {
       "path": "/documents/README.md",
@@ -6577,6 +6577,41 @@
       "path": "/documents/matter-29/varela-v-accurate-background/Dkt 25 - Opposition to Plaintiff Ex Parte Application (Jul 1, 2026).pdf",
       "size": 225041,
       "sha256": "0e7e21d339185363307357a172525da83d381945b4907a810f1ea08ce2b5a3bd"
+    },
+    {
+      "path": "/documents/matter-29/santee-v-accurate-background/Dkt 01 - Complaint for FCRA Violations (Oct 21, 2025).pdf",
+      "size": 180989,
+      "sha256": "b93636312eb411dfba152d5421c805c650e938b61b9a772e4405d18a12b8b57d"
+    },
+    {
+      "path": "/documents/matter-29/santee-v-accurate-background/Dkt 14 - Accurate Answer and Affirmative Defenses (Dec 22, 2025).pdf",
+      "size": 237858,
+      "sha256": "7e5084d11d6cd97e7c92b6db37f4096160690898b6d8e0e915dbcdb410c552f8"
+    },
+    {
+      "path": "/documents/matter-29/santee-v-accurate-background/Dkt 18-1 - Accurate Rule 68 Offer of Judgment (Dec 23, 2025).pdf",
+      "size": 34393,
+      "sha256": "d8ef9ad607eeb090d626b0a9b62ae33950df5b731a1062790d2fe6710d81328b"
+    },
+    {
+      "path": "/documents/matter-29/santee-v-accurate-background/Dkt 18 - Plaintiff Acceptance of Rule 68 Offer (Dec 23, 2025).pdf",
+      "size": 99363,
+      "sha256": "80719930dc93c73245625c410837d53816fb779414b46e3849590f20b2f7fb02"
+    },
+    {
+      "path": "/documents/matter-29/santee-v-accurate-background/Dkt 21 - Plaintiff Motion for Attorneys Fees Under Rule 68 (Jan 8, 2026).pdf",
+      "size": 195616,
+      "sha256": "4702453ab97287edf33119db54e80a0b78b1b564834a0b61972d01117019f08e"
+    },
+    {
+      "path": "/documents/matter-29/santee-v-accurate-background/Dkt 21-1 - Exhibit to Fee Motion (Jan 8, 2026).pdf",
+      "size": 2395861,
+      "sha256": "6c94d23eeb179ac30c9f0b94f0845672e78f1234f1b273ec8236dca3096702ad"
+    },
+    {
+      "path": "/documents/matter-29/santee-v-accurate-background/Dkt 21-2 - Billing Activities Export ISO Fee Motion (Jan 8, 2026).pdf",
+      "size": 72604,
+      "sha256": "af47a1f73c745cbc30673ad5abd649e54876f653d63bb5b9eaef661917bb320e"
     }
   ]
 }

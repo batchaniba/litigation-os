@@ -79,6 +79,12 @@ C.D. Cal. **5:26-cv-00258-KK-DTB** (Judge Kato): Stephen Jones / FCRA Attorneys 
 
 **Use for Matter 29:** Confirms Accurate is a **repeat Stanzick client** and that many Accurate files **answer and litigate discovery**, then **exit by stipulation** — not necessarily by Rule 12 or class-cert order. Do not treat *Varela* as a Megan's Law forecast; do treat it as **desk culture** (entity naming, FCRA/CCRAA denial boilerplate, ex parte friction). Papers: `/documents/matter-29/varela-v-accurate-background/`.
 
+### *Santee v. Accurate* — answer, then Rule 68 in six weeks (Oct.–Dec. 2025)
+
+C.D. Cal. **8:25-cv-02447-FWS-JDE** (Judge **Fred W. Slaughter** — same judge as *Lerma*): individual FCRA + CCRAA against Accurate. Stanzick signed the **answer (Dkt. 14, Dec. 22, 2025)**. **Next day**, Accurate served a **Rule 68 offer (Dkt. 18-1)** — **$10,000** plus court-determined fees/costs, conditioned on **dismissal with prejudice** of all claims. Jones accepted same day (Dkt. 18). Fee motion followed (Dkts. 21, 21-1, 21-2, Jan. 8, 2026). Not § 290.46; not a class.
+
+**Use for Matter 29:** Concrete **Accurate + Stanzick settlement mechanics** on the FCRA/CCRAA track — fast Rule 68 after answer, not a merits order. Pairs with *Varela* (stipulation) and contrasts with *Carrillo* (litigated class cert). Do not cite as a related case or as proof Accurate will Rule 68 Matter 29; cite internally as **observed exit pattern** on individual BGC files. Papers: `/documents/matter-29/santee-v-accurate-background/`.
+
 ### N.D. California mechanics — the *Boyer* laboratory
 
 In *Boyer v. First Advantage* (N.D. Cal.), Stanzick handled removal mechanics: notice of removal, corporate disclosure, interested-entity certification, magistrate consent/declination, ADR certification. First Advantage **answered**, then litigated through ADR toward SJ / class-cert. A September 22 **answer** would still fit that pattern. *Carrillo* shows she will also brief a full Rule 23 opposition when the case gets there. Those are not the same moment.
