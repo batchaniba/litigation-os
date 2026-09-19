@@ -8,7 +8,7 @@ This is the playbook. Identity/role intelligence and lodged comparator briefs li
 |---|---|
 | [`PLAYBOOK.md`](PLAYBOOK.md) | Read this. Two-desk comparison, *Lerma* (Frederick) and *Carrillo* (Stanzick) argument inventories, the seam. |
 | [`cases.json`](cases.json) | Append-only machine cards. One object per docket. |
-| [`sources/`](sources/) | Lodged PACER prints. Not served on the public site. Seeded: *Lerma* Frederick MTD packet; *Carrillo* set; *Walker v. Ronin* (Dkts. 1, 14, 16, 16-1). |
+| [`sources/`](sources/) | Lodged PACER prints. Not served on the public site. Seeded: *Lerma* Frederick MTD packet; *Carrillo* set; *Walker v. Ronin*; *Varela v. Accurate* (Dkts. 1, 1-1, 13, 15, 15-1, 25). |
 
 *Carrillo* is also cataloged at `/documents/matter-29/carrillo-v-vons/`. The full *Lerma* docket (69 PDFs) already lives at `/documents/matter-29/lerma-v-amazon/` — do not PACER-pull it again. Playbook `sources/` copies are the counsel-research lodge.
 
@@ -55,3 +55,12 @@ Identity and role intelligence only. A docket where they appeared for someone el
 | 27 | Stipulated protective order | Sep. 18, 2025 | Joint; Stanzick/Drury on Asurint block |
 | 62 | Class-cert hearing transcript | Apr. 15, 2026 | Oral argument; **no written order in lodge** |
 | 64 / 64-1 | Vons supplemental RJN + exhibit | Sep. 15, 2026 | Post-hearing Littler RJN (employer analog) |
+
+*Stephen Varela v. Accurate Background, Inc.*, C.D. Cal. No. **5:26-cv-00258-KK-DTB** (Kato, J.) — catalog also at `/documents/matter-29/varela-v-accurate-background/`:
+
+| Dkt | Paper | Date | Why it is here |
+|---|---|---|---|
+| 1 / 1-1 | Complaint + exhibit | Jan. 21, 2026 | Jones / FCRA Attorneys individual FCRA + CCRAA (not Kim §290.46 class) |
+| 13 | Accurate answer | Mar. 30, 2026 | **Stanzick signed.** LLC vs Inc. caption; answer-not-MTD |
+| 15 / 15-1 | Joint Rule 26(f) + schedule | Apr. 23, 2026 | Discovery posture before hand-dossier stipulation |
+| 25 | Opposition to ex parte | Jul. 1, 2026 | **Stanzick signed.** Dkt. 22 dismissal with prejudice **not** in lodge |

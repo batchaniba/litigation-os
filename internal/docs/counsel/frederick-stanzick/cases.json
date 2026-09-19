@@ -166,6 +166,36 @@
       ],
       "usable_as": "Kim §290.46 pleading (staffing/UCLA); Stanzick answer-then-Stanexit on Sterling — compare Carrillo and Boyer.",
       "not_a_holding": "Not a related case. Not a merits win. Without-prejudice dismissal is not adjudication. Not Walker v. Fred Meyer, 953 F.3d 1082 (ICRAA)."
+    },
+    {
+      "id": "varela-v-accurate-cdcal-2026",
+      "kind": "pacer_pull",
+      "matter": null,
+      "caption": "Stephen Varela v. Accurate Background, Inc.",
+      "docket_short_title": "Varela v. Accurate",
+      "court": "C.D. Cal.",
+      "case_no": "5:26-cv-00258-KK-DTB",
+      "judge": "Hon. Kenly Kiya Kato",
+      "filed": "2026-01-21",
+      "terminated": "2026 (joint stipulation of dismissal with prejudice — Dkt. 22 per hand dossier; not in lodge)",
+      "side": "defense",
+      "client": "Accurate Background, LLC (answer names LLC; complaint names Inc.)",
+      "nature": "Individual FCRA + CCRAA — not §290.46 / Fair Chance class",
+      "stanzick_role": "Signed answer (Dkt. 13, Mar. 30, 2026), Rule 26(f) (Dkt. 15), ex parte opposition (Dkt. 25, Jul. 1, 2026). SBN 354704.",
+      "frederick_role": "none",
+      "plaintiff_counsel": "Stephen T. Jones (SBN 361613), FCRA Attorneys — not Ray Kim",
+      "outcome": "Hand dossier: settled — joint stipulation of dismissal with prejudice (Dkt. 22). Lodge has pre-dismissal papers only.",
+      "sources": [
+        "internal/docs/counsel/frederick-stanzick/sources/5-26-cv-00258-Varela-v-Accurate/",
+        "/documents/matter-29/varela-v-accurate-background/Dkt 01 - Complaint for FCRA Violations (Jan 21, 2026).pdf",
+        "/documents/matter-29/varela-v-accurate-background/Dkt 01-1 - Exhibit to Complaint (Jan 21, 2026).pdf",
+        "/documents/matter-29/varela-v-accurate-background/Dkt 13 - Accurate Answer and Affirmative Defenses (Mar 30, 2026).pdf",
+        "/documents/matter-29/varela-v-accurate-background/Dkt 15 - Joint Rule 26(f) Report (Apr 23, 2026).pdf",
+        "/documents/matter-29/varela-v-accurate-background/Dkt 15-1 - Schedule of Pretrial Dates (Apr 23, 2026).pdf",
+        "/documents/matter-29/varela-v-accurate-background/Dkt 25 - Opposition to Plaintiff Ex Parte Application (Jul 1, 2026).pdf"
+      ],
+      "usable_as": "Same Matter 29 client (Accurate) on Stanzick's desk: answer-not-MTD posture, entity precision (LLC vs Inc.), individual FCRA/CCRAA — contrast Kim §290.46 class files. Settlement exit pattern matches hand dossier.",
+      "not_a_holding": "Not a related case. Not a §290.46 merits template. Dismissal with prejudice is settlement, not adjudication. Do not cite as holding in Matter 29."
     }
   ]
 }

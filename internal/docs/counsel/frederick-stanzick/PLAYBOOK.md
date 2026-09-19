@@ -73,6 +73,12 @@ Ray Kim class complaint (Jul. 3, 2024), C.D. Cal. **2:24-cv-05669-CBM-SSC**: § 
 
 **Use:** Same Kim + Stanzick pairing as *Carrillo*, different posture — **early CRA exit** after answer, not a litigated class-cert record. Do not read Sterling's dismissal as a Stanzick "win on the law"; read it as **entity removal / settlement shape**. Papers: `/documents/matter-29/walker-v-ronin-staffing/`.
 
+### *Varela v. Accurate* — same client, different statute (Jan.–Jul. 2026)
+
+C.D. Cal. **5:26-cv-00258-KK-DTB** (Judge Kato): Stephen Jones / FCRA Attorneys individual **FCRA + CCRAA** case against **Accurate** — not Ray Kim, not § 290.46, not a class. Stanzick signed the **answer (Dkt. 13, Mar. 30, 2026)** (Accurate Background **LLC**, noting complaint's "Inc." misname), the **joint Rule 26(f) report (Dkts. 15, 15-1)**, and an **opposition to plaintiff's ex parte application (Dkt. 25, Jul. 1, 2026)**. The hand dossier records a later **joint stipulation of dismissal with prejudice (Dkt. 22)** — that paper is **not** in this lodge.
+
+**Use for Matter 29:** Confirms Accurate is a **repeat Stanzick client** and that many Accurate files **answer and litigate discovery**, then **exit by stipulation** — not necessarily by Rule 12 or class-cert order. Do not treat *Varela* as a Megan's Law forecast; do treat it as **desk culture** (entity naming, FCRA/CCRAA denial boilerplate, ex parte friction). Papers: `/documents/matter-29/varela-v-accurate-background/`.
+
 ### N.D. California mechanics — the *Boyer* laboratory
 
 In *Boyer v. First Advantage* (N.D. Cal.), Stanzick handled removal mechanics: notice of removal, corporate disclosure, interested-entity certification, magistrate consent/declination, ADR certification. First Advantage **answered**, then litigated through ADR toward SJ / class-cert. A September 22 **answer** would still fit that pattern. *Carrillo* shows she will also brief a full Rule 23 opposition when the case gets there. Those are not the same moment.
