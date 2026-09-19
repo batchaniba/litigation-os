@@ -307,12 +307,20 @@ No located § 290.46 merits ruling. Do not cite Walker as precedent.
 ### 3.4 Sandoval Carrillo v. The Vons Companies, Inc., et al.
 
 C.D. Cal. No. 8:25-cv-00191-SRM-KES.
-Hon. Serena R. Murillo.
+Hon. Serena R. Murillo; Mag. Karen E. Scott.
+Plaintiff's counsel: Raymond Y. Kim (same as *Lerma*).
+CRA counsel: John W. Drury and Jasmine J. Stanzick (Seyfarth) for Asurint.
+Employer counsel: Littler Mendelson for Vons.
 
-Class/employment docket located; class-discovery activity verified.
+Complaint (Dkt. 1, Jan. 31, 2025) pleads § 290.46(j)(2)(E), Fair Chance Act
+§ 12952, FCRA § 1681b(b)(1), and UCL. Class-cert motion (Dkt. 55, Jan. 14,
+2026) and oppositions/replies (Dkts. 56–59, Feb.–Mar. 2026) are in the
+portfolio at `/documents/matter-29/carrillo-v-vons/` and in the
+Frederick–Stanzick Playbook sources. No class-cert or merits order is in
+this lodge.
 
-**Status: high-priority UNVERIFIED LEAD for the specific § 290.46 pleading.**
-No located § 290.46 merits ruling.
+**Status: PRIMARY VERIFIED complaint and class-cert briefing.**
+**Not a merits ruling on the Megan's Law count.** Not a related case.
 
 ### 3.5 Garza v. Starbucks Corporation, et al.
 

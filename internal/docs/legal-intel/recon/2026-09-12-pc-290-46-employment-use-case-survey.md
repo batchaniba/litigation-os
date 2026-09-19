@@ -534,6 +534,15 @@ ruling. I also could not confirm any relationship between this case and the sepa
 FCRA/ICRAA standalone-disclosure matter against Vons described at § 4.3 — **do not assume they are
 the same case.**
 
+**Update (2026-09-19).** The PACER pull this section asked for is now in the portfolio:
+Dkts. 1, 55, 56, 57, 58, and 59, lodged at
+`internal/docs/counsel/frederick-stanzick/sources/8-25-cv-00191-Carrillo-v-Vons/`
+and cataloged at `/documents/matter-29/carrillo-v-vons/`. The complaint is a class
+action on § 290.46(j)(2)(E), Fair Chance § 12952, FCRA § 1681b(b)(1), and UCL.
+Stanzick signed Asurint's class-cert opposition (Dkt. 57). Still **no merits
+ruling**. Not a related case. Read the playbook, not this September 12 flag, for
+the claims and the argument inventory.
+
 ### 2.9 *Newanforbi v. United Parcel Service, Inc.* — live, no ruling yet (Matter 26)
 
 | | |

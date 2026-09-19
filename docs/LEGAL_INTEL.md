@@ -48,6 +48,14 @@ Caveats, stated in every dossier:
 - History is a sample, not an exhaustive record.
 - Settlement/dismissal mentions are directional signals, not adjudicated outcomes.
 
+## Frederick–Stanzick Playbook (Matter 29)
+
+Two-desk counsel research for Amazon (Andrew P. Frederick / Morgan Lewis) and Accurate (Jasmine J. Stanzick / Seyfarth), plus lodged comparator briefs. Not a related-case disclosure.
+
+- [Playbook](../internal/docs/counsel/frederick-stanzick/PLAYBOOK.md)
+- [Index and how to add the next case](../internal/docs/counsel/frederick-stanzick/README.md)
+- Seeded sources: *Carrillo v. Vons / Asurint*, C.D. Cal. 8:25-cv-00191 (Stanzick signed the Asurint class-cert opposition)
+
 ## Judicial dossiers
 
 Judge docket audits live at `internal/docs/legal-intel/judges/<slug>-<year>.md`. They are

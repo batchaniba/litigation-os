@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1293,
-  "totalBytes": 904420007,
+  "fileCount": 1299,
+  "totalBytes": 906885698,
   "files": [
     {
       "path": "/documents/README.md",
@@ -6467,6 +6467,36 @@
       "path": "/documents/opinions/Newanforbi v Smith - USDC NDCal - Order Directing Service Aug 26 2026.pdf",
       "size": 134726,
       "sha256": "79355d28b4741e9e26e2f3d5b89bf37ef4f3af1bbfece3567e83a91778cc7488"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 01 - Class Action Complaint (Jan 31, 2025).pdf",
+      "size": 296354,
+      "sha256": "b813536b52fa472bc00a65e745533f54ac8b87299e0e47cae704f2665c9a87ec"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 55 - Plaintiff's Motion for Class Certification (Jan 14, 2026).pdf",
+      "size": 762749,
+      "sha256": "103a375aaf796240fe2f748f6edaf9a212306203b1184f1e3f4777b9cdece6b9"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56 - Vons Opposition to Class Certification (Feb 18, 2026).pdf",
+      "size": 569899,
+      "sha256": "99a77f892e84df664184dea6527683ba24759aa803d25ee9adeeb5d6d836a3ad"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 57 - Asurint Opposition to Class Certification (Feb 18, 2026).pdf",
+      "size": 255973,
+      "sha256": "2aaa9f887a7fce4bb53c6e0d625e7d6c50fabdece786d52459bb69a313eba5ea"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 58 - Plaintiff's Reply to Vons Opposition (Mar 25, 2026).pdf",
+      "size": 302469,
+      "sha256": "6b8e68ca49f5df9ce651d62fc37970b27d996f422d5f2ef6463d181b4365b68b"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 59 - Plaintiff's Reply to Asurint Opposition (Mar 25, 2026).pdf",
+      "size": 278247,
+      "sha256": "dc9b1879b5b273c706b1161250c4e281496b223aeaaca6bc46b10a223a258f01"
     }
   ]
 }
