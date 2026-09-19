@@ -232,7 +232,7 @@ First: _Regents v. Roth, 408 U.S. 564_ · Last: _2019 WL 6619348_
 |done|#|Search|Status|Matters|Uses|Flag N/Y/R|Keep/Drop|Notes|
 |---|---|---|---|---|---|---|---|---|
 |[ ]|143|Noll v. Carlson, 809 F.2d 1446|VERIFIED|24, 26|6||||
-|[ ]|144|Wilkerson v. Butler, 229 F.R.D. 166|VERIFIED|1, 24, 32|6||||
+|[x]|144|Wilkerson v. Butler, 229 F.R.D. 166|VERIFIED (Volusia door, 2026-09-19 ~15:35 PDT) — YELLOW flag|1, 24, 32|6|Y|KEEP|YELLOW on the CORRECTED cite (229 F.R.D. 166, E.D. Cal., June 30, 2005): Negative Treatment (4) — 2 "Declined to Follow by" (Sanchez v. J.C. Penney Properties, 2007 WL 2221043, E.D. Cal. (HN 14 - Rule 8 pleading standard); Sirois v. East West Partners, 285 F.Supp.3d 1152, D. Haw. 2018 (HNs 7, 11, 12 - Rule 12(f) immaterial/scandalous matter)), 1 "Overruling Recognized by" (Won Kyung Hwang v. Ohso Clean, 2013 WL 1632697, N.D. Cal. (HN 9 - superfluous Rule 12(f) allegations)), 1 "Distinguished by" (Thomas v. Hickman, 2007 WL 470611, E.D. Cal. (HNs 18, 19, 20 - IIED elements)). All peripheral to Wilkerson's core Rule 12(f) motion-to-strike holding. KeyCite-list level. Row CLOSED — cite correction stands.
 |[ ]|145|2019 WL 6619348|VERIFIED|7, 32, 33|5||||
 |[ ]|146|Barnett v. Fireman's Fund Ins. Co, 90 Cal.App.4th 500|UNVERIFIED|20, 32|5||||
 |[ ]|147|Bd. of Educ. v. Doyle, 429 U.S. 274|VERIFIED|24, 30|5||||
@@ -570,20 +570,20 @@ First: _Regents v. Roth, 408 U.S. 564_ · Last: _2019 WL 6619348_
 |[ ]|414|Clark v. Superior Court, 50 Cal.4th 605|UNVERIFIED|29|3||||
 |[ ]|415|Commercial Space Mgmt. Co. v. Boeing Co, 193 F.3d 1074|UNVERIFIED|1, 6, 7, 32, 33|3||||
 |[ ]|416|Crowe v. County of San Diego, 608 F.3d 406|UNVERIFIED|1, 32|3||||
-|[ ]|417|Fantasy Inc. v. Fogerty, 984 F.2d 1524|UNVERIFIED|24, 33|3||||
-|[ ]|418|In re Tobacco Cases II, 240 Cal.App.4th 779|UNVERIFIED|29|3||||
+|[x]|417|Fantasy Inc. v. Fogerty, 984 F.2d 1524|VERIFIED (Volusia door, 2026-09-19 ~15:35 PDT); operative passage in treating document READ|24, 33|3|R|REPLACE/DELETE|RED: "Judgment Reversed by" Fogerty v. Fantasy, Inc., 510 U.S. 517 (Mar. 1, 1994). The Supreme Court REJECTED the 9th Circuit's "dual standard" for 17 U.S.C. sec. 505 attorney's fees: "Prevailing plaintiffs and prevailing defendants must be treated alike under sec. 505; attorney's fees are to be awarded to prevailing parties only as a matter of the court's discretion." (510 U.S. at 518, 534). The 9th Cir. opinion is dead law — cite 510 U.S. 517. Operative passage read. 9 peripheral negative citing refs (distinguished/overruling-recognized), list level.
+|[x]|418|In re Tobacco Cases II, 240 Cal.App.4th 779|VERIFIED (Volusia door, 2026-09-19 ~15:35 PDT) — YELLOW flag|29|3|Y|KEEP|YELLOW: 6 "Distinguished by" (incl. "Most Negative" De La Torre v. Cashcall, 2026 WL 551024, Cal.App. 1 Dist. Feb. 27, 2026, HNs 17, 20) — all peripheral UCL restitution-measure headnote applications; no negative direct history; core holding intact. KeyCite-list level. Westlaw name: In re Tobacco Cases II, 240 Cal.App.4th 779 (Ct. App. 4th Dist., Div. 1, Cal., Sept. 28, 2015).
 |[ ]|419|Johnson v. Duffy, 588 F.2d 740|VERIFIED|18, 24|3||||
-|[ ]|420|Kamakana v. City and Cnty, 447 F.3d 1172|UNVERIFIED|29|3||||
-|[ ]|421|Katzberg v. Regents of Univ, 29 Cal.4th 300|UNVERIFIED|33|3||||
-|[ ]|422|People v. Reyes, 195 Cal.App.4th 946|UNVERIFIED|1, 2, 7, 8, 32, 33|3||||
+|[x]|420|Kamakana v. City and Cnty, 447 F.3d 1172|VERIFIED (Volusia door, 2026-09-19 ~15:35 PDT) — YELLOW flag|29|3|Y|KEEP|YELLOW: 15 citing refs — "Disagreement Recognized by" Matter of the Application of WP Company LLC, 201 F.Supp.3d 109 (D.D.C. Aug. 18, 2016) (out-of-circuit district court, on the "traditionally kept secret" exception) + 4 "Declined to Extend by" + 10 "Distinguished by." None challenge Kamakana's core compelling-reasons/good-cause sealing standard. KeyCite-list level. Confirmed Westlaw name: Kamakana v. City and County of Honolulu, 447 F.3d 1172 (9th Cir., May 17, 2006).
+|[x]|421|Katzberg v. Regents of Univ, 29 Cal.4th 300|VERIFIED (Volusia door, 2026-09-19 ~15:35 PDT); operative passage in treating document READ|33|3|Y|KEEP|YELLOW: "Declined to Follow by" Baldwin v. City of Estherville, 915 N.W.2d 259 (Iowa, June 29, 2018) — "Most Negative"; 1 "Called into Doubt by" (Ignat v. Yum! Brands, 154 Cal.Rptr.3d 275), 4 "Declined to Extend by," 10 "Distinguished by," 1 "Limitation of Holding Recognized by." Baldwin is an IOWA decision surveying state constitutional-tort regimes — it treats Katzberg as the exemplar of the restrictive approach while Iowa went the other way; it does NOT undermine Katzberg's authority in California. Passage read (915 N.W.2d at 272, 280). Note: Baldwin itself is yellow-flagged ("Superseded by Statute as Stated in Dickey v. Mahaska Health Partnership, S.D. Iowa, Dec. 7, 2023"). Core holding (no direct damages claim for state-constitutional violations in California) intact. KeyCite-list level otherwise. Westlaw name: Katzberg v. Regents of University of California, 29 Cal.4th 300 (Cal. Nov. 27, 2002).
+|[x]|422|People v. Reyes, 195 Cal.App.4th 946|VERIFIED (Volusia door, 2026-09-19 ~15:35 PDT) — DOES NOT EXIST|1, 2, 7, 8, 32, 33|3|?|DO NOT CITE — CORRECT CITE FIRST|NOT FOUND as written on Westlaw. "195 Cal.App.4th 946" resolves to Knapp v. AT&T Wireless Services, Inc., 195 Cal.App.4th 932 (Ct. App. 4th Dist., Div. 3, Apr. 25, 2011); exact-phrase search for "People v. Reyes" + cite returned no California case (only unrelated 68 V.I. 432). Correct the cite in the portfolio before KeyCite. Matters: 1, 2, 7, 8, 32, 33.
 
 ## Session 22 — rows 423-442 (20 cites)
 
 |done|#|Search|Status|Matters|Uses|Flag N/Y/R|Keep/Drop|Notes|
 |---|---|---|---|---|---|---|---|---|
-|[ ]|423|Pinto Lake MHP LLC v. County of Santa Cruz, 56 Cal.App.5th 1006|UNVERIFIED|20, 32|3||||
-|[ ]|424|Somers v. Apple Inc, 729 F.3d 953|UNVERIFIED|3, 29|3||||
-|[ ]|425|Thomas v. Dillard, 818 F.3d 864|UNVERIFIED|32|3||||
+|[x]|423|Pinto Lake MHP LLC v. County of Santa Cruz, 56 Cal.App.5th 1006|VERIFIED (Volusia door, 2026-09-19 ~15:35 PDT) — YELLOW flag|20, 32|3|Y|KEEP|YELLOW: 1 "Declined to Extend by" Doe v. Regents of University of California, 295 Cal.Rptr.3d 625 (Cal.App. 1 Dist. June 24, 2022), HNs 12, 14 (necessary parties in mandamus/declaratory action) — peripheral; core holding intact. KeyCite-list level. Westlaw name matches: 56 Cal.App.5th 1006, 271 Cal.Rptr.3d 9 (6th Dist., Oct. 30, 2020).
+|[x]|424|Somers v. Apple Inc, 729 F.3d 953|VERIFIED (Volusia door, 2026-09-19 ~15:35 PDT) — YELLOW flag|3, 29|3|Y|KEEP|YELLOW: 3 "Distinguished by" (incl. "Most Negative" In re Juul Labs, Inc. Antitrust Litigation, 555 F.Supp.3d 932, N.D. Cal. Aug. 19, 2021, HN 16 — itself yellow-flagged) — all peripheral antitrust-injury applications; core holding intact. KeyCite-list level. Westlaw name: Somers v. Apple, Inc., 729 F.3d 953 (9th Cir., Sept. 3, 2013).
+|[x]|425|Thomas v. Dillard, 818 F.3d 864|VERIFIED (Volusia door, 2026-09-19 ~15:35 PDT) — YELLOW flag|32|3|Y|KEEP|YELLOW: 5 "Distinguished by" (incl. "Most Negative" United States v. Ortiz, 2024 WL 418622, C.D. Cal. Feb. 5, 2024) — all fact-specific Fourth Amendment/Terry-frisk applications; core holding intact. KeyCite-list level. Westlaw name: Thomas v. Dillard, 818 F.3d 864 (9th Cir., Apr. 5, 2016; amended May 5, 2016).
 |[ ]|426|U.S. v. Corinthian Colleges, 655 F.3d 984|UNVERIFIED|29|3||||
 |[ ]|427|W. Mining Council v. Watt, 643 F.2d 618|UNVERIFIED|7, 29, 33|3||||
 |[ ]|428|12 Cal.App.5th 1043|UNVERIFIED|20, 32|2||||
