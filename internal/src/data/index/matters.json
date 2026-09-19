@@ -1,6 +1,6 @@
 {
   "generated": true,
-  "today": "2026-09-18",
+  "today": "2026-09-19",
   "matters": [
     {
       "number": 1,
@@ -889,11 +889,11 @@
         "id": "27-deadline-1",
         "date": "2026-09-18",
         "kind": "deadline",
-        "status": "open",
+        "status": "overdue",
         "title": "EXPIRES — $25,000 final early global settlement demand in Newanforbi v. Randstad US, LLC et al. (26CV199902), sent Sept. 12, 2026, 8:00 a.m. Expires…",
         "source_dkt": null
       },
-      "overdue": false,
+      "overdue": true,
       "last_updated": "2026-09-17",
       "files": [
         "claims.json",
@@ -970,7 +970,7 @@
         "source_dkt": 7
       },
       "overdue": false,
-      "last_updated": "2026-09-19",
+      "last_updated": "2026-09-18",
       "files": [
         "claims.json",
         "clocks.json",
@@ -1361,6 +1361,44 @@
       },
       "overdue": true,
       "last_updated": "2026-09-16",
+      "files": [
+        "claims.json",
+        "clocks.json",
+        "counsel.json",
+        "damages.json",
+        "docket.json",
+        "documents.json",
+        "events.jsonl",
+        "evidence.json",
+        "matter.json",
+        "parties.json",
+        "prose.json"
+      ]
+    },
+    {
+      "number": 41,
+      "path": "internal/src/data/matters/41/",
+      "layout": "split",
+      "caption": "Brendan Ngwa Nforbi v. Nuro, Inc.",
+      "case_no": "TBD",
+      "court": "TBD (pre-dispute — application Sep. 9, 2026)",
+      "judge": "TBD",
+      "cluster": 5,
+      "related": [],
+      "same_incident": null,
+      "lifecycle": "pre_filing",
+      "proceeding": "state_civil",
+      "phase": "pre_filing",
+      "next_clock": {
+        "id": "41-watch-1",
+        "date": "2026-09-25",
+        "kind": "deadline",
+        "status": "open",
+        "title": "WATCH — one week post-driving-eval: check for any Checkr background-check authorization/disclosure email from Nuro. None signed as of Sep. 18, 2026. The vendor step is the next event in the sequence.",
+        "source_dkt": null
+      },
+      "overdue": false,
+      "last_updated": "2026-09-18",
       "files": [
         "claims.json",
         "clocks.json",
