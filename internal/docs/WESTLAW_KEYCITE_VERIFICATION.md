@@ -1,28 +1,24 @@
 # Westlaw KeyCite Verification — Session Report (2026-09-19)
 
-Rows 1–138 verified (row 139 partial) via San Diego Law Library Westlaw Remote for Pro Se; rows 333–389 verified via Riverside County Law Library Westlaw Remote for Pro Se (OnePass productid=RPA for both; fresh SMS 2FA each session; signed off after every batch). Per-row detail: `internal/docs/westlaw_keycite_inventory.md`. **Rows 139–145 and row 389's treatment detail still pending (document-limit blocks, see below).**
+Rows 1–138 verified (row 139 partial) via San Diego Law Library Westlaw Remote for Pro Se; rows 333–389 verified via Riverside County Law Library Westlaw Remote for Pro Se (OnePass productid=RPA for both; fresh SMS 2FA each session; signed off after every batch). Per-row detail: `internal/docs/westlaw_keycite_inventory.md`. **Rows 141–146, 156–157, 164, 174, 177, 180, 172 verified plus row 389's treatment detail via Volusia County Law Library door (2026-09-19 evening); row 164's operative passage read and row 172 verified clean after a sign-out/sign-in reset (2026-09-19 ~15:12 PDT).**
 
 ## Method
 
 KeyCite = treatment, not existence. Yellow ≠ miscited. A clean flag doesn't clear a proposition error. For adverse (yellow/red) flags the treating document was opened and the operative passage read with pinpoints; rows without adverse treatment were marked from the KeyCite flag.
 
-## RED flags — proposition-limited (do not wholesale-replace)
-
-Independent audit 2026-09-19: KeyCite red is **treatment of a holding**, not a kill of the case. Yellow ≠ miscited. Do not overwrite a live proposition because a later opinion recognized overruling **on other grounds**.
+## RED flags — replace or remove in filings
 
 | Row | Case | Treatment | Cited in matters | What to do |
 |---|---|---|---|---|
-| 26 | Johnson v. City of Grants Pass, 50 F.4th 787 | Amended and superseded on denial of rehearing en banc by 72 F.4th 868 (9th Cir. July 5, 2023); SCOTUS reversed, 603 U.S. 520 (2024). | 28 | **Replace the 50 F.4th 787 pin.** Cite 72 F.4th 868 only as history, or *City of Grants Pass v. Johnson*, 603 U.S. 520. This is a real replace. |
-| 63 | Lopez v. Smith, 203 F.3d 1122 | "Overruling Recognized by" *Singleton v. Gates*, 2026 WL 1494029, at *2 (9th Cir. May 28, 2026), HNs 6, 8 — operative passages read | 7, 18, 24, 26 | **KEEP.** *Singleton* cites Lopez 1131 "*overruled on other grounds by Peralta*." Portfolio use is leave-to-amend (1131 / 1137 quoting *Noll*). Do **not** replace Lopez with *Singleton*. Parenthetical: *overruled on other grounds by Peralta v. Dillard*, 744 F.3d 1076 (9th Cir. 2014) (en banc). |
-| 89 | People v. Medina, 6 Cal.3d 484 | "Disapproved of by" *Kowis v. Howard* (1992), 3 Cal.4th 898–99 — rejected Medina's "sole possible ground" exception; a summary writ denial never establishes law of the case. Medina's fn. 6 is dead. Passage read. | 1, 2, 7, 8, 32, 33 | **KEEP the core.** *Kowis* cites Medina 490 **favorably**. Kill **fn. 6 only** (no law-of-the-case from a summary writ denial). Do **not** remove Medina from 1, 2, 7, 8, 32, 33. |
-| 99 | Lee v. City of Los Angeles, 250 F.3d 668 | "Overruling Recognized by" *Adom v. Cal. Dep't of Corrections* (9th Cir. Sept. 8, 2026) — Lee's heightened §1983 pleading standard (HN 5) overruled; plausibility pleading governs. Passage read. | 18, 24, 29 | **KEEP judicial notice and Title II.** *Adom* still cites Lee 691 (Title II) and *Galbraith* on other grounds. Drop **heightened §1983 pleading only**. Do **not** replace Lee. |
-| 105 | People v. Lent, 15 Cal.3d 481 | "Superseded by Statute as Stated in" *People v. Moran*, 1 Cal.5th 398, at 403 n.6 — Lent's misdemeanor-impeachment holding superseded by Prop 8 truth-in-evidence (Cal. Const. art. I, §28(f)); the probation-condition test is intact. Passage read. | 5, 14, 15, 19 | **KEEP 486** (probation-condition test). Drop impeachment-only. *Moran* 403 n.6 is the dead use. |
-| 110 | Ford v. City of Yakima, 706 F.3d 1188 | "Abrogated by" *Nieves v. Bartlett*, 587 U.S. 391, at 397, 402–08 — retaliatory-arrest plaintiffs must generally plead and prove absence of probable cause (narrow comparator exception at 407–08). Ford's but-for rule is dead. Passage read. | 24 | **KEEP as history.** Retaliatory-arrest framing must come from *Nieves*, not Ford's but-for / probable-cause-irrelevant rule. |
-| 131 | Bureerong v. Uvawas, 922 F. Supp. 1450 | "Abrogation Recognized by" *IMEX Leader, Inc. v. Zest US Wholesale*, 2023 WL 2626968 (C.D. Cal. 2023), at *10 — *Whittlestone* abrogated Bureerong's use of Rule 12(f) to strike claims/prayers for relief; 12(f) covers only insufficient defenses and redundant/immaterial/impertinent/scandalous matter. | 1, 24, 32 | **KEEP except 1479 n.34.** Do not cite Bureerong to strike claims or prayers. Other uses (facts / trafficking background) are not killed. |
-| 373 | Redfearn v. Trader Joe's Co., 20 Cal.App.5th 989 | "Disapproved of by" *Ixchel Pharma, LLC v. Biogen, Inc.*, 9 Cal.5th 1130, 1148 (Cal. Aug. 3, 2020) — Ixchel disapproved Redfearn's rule that interference with at-will contracts needs no independent wrongfulness; independent wrongfulness is required. Passage read. | 20, 24, 32 | **KEEP except at-will-no-wrongfulness.** On that point cite *Ixchel* (and *Popescu* is in the same disapproval). Sweep 20, 24, 32 for the dead rule only. |
-| 388 | Committee On Children's Television, Inc. v. General Foods Corp., 35 Cal.3d 197 (Cal. 1983) | "Superseded by Statute as Stated in" *Branick v. Downey Savings & Loan Assn.*, 39 Cal.4th 235, 243 (Cal. July 24, 2006) — Branick states Children's Television's rule (organizations could sue on behalf of the general public under the UCL) was superseded by Proposition 64: now only persons with injury in fact and lost money or property may sue. KeyCite-list level. | 5, 20, 32 | **KEEP except public-interest UCL standing.** That rule is dead — *Kwikset* / *Branick* / Prop 64. Other Children's Television propositions are not killed. Sweep 5, 20, 32 for standing only. |
-
-**Not a wholesale kill — row 32 *County of Contra Costa*, 177 Cal.App.3d 62.** Inventory KeyCite says "Abrogated by" *Dep't of Finance*, 122 Cal.Rptr.2d 447 (later 100 Cal.App.4th 598, review granted; see also 30 Cal.4th 727). The mandate / subvention line is messy. Do **not** write "remove Contra Costa." Flag the pin and read the proposition before any filing use.
+| 63 | Lopez v. Smith, 203 F.3d 1122 | "Overruling Recognized by" *Singleton v. Gates*, 2026 WL 1494029, at *2 (9th Cir. May 28, 2026), HNs 6, 8 — operative passages read | 7, 18, 24, 26 | Replace with Singleton. (Depth read of Singleton offered — pending.) |
+| 89 | People v. Medina, 6 Cal.3d 484 | "Disapproved of by" *Kowis v. Howard* (1992), 3 Cal.4th 898–99 — rejected Medina's "sole possible ground" exception; a summary writ denial never establishes law of the case. Medina's fn. 6 is dead. Passage read. | 1, 2, 7, 8, 32, 33 | Remove; sweep propositions in 1, 2, 7, 8, 32, 33. (Depth read offered — pending.) |
+| 99 | Lee v. City of Los Angeles, 250 F.3d 668 | "Overruling Recognized by" *Adom v. Cal. Dep't of Corrections* (9th Cir. Sept. 8, 2026) — Lee's heightened §1983 pleading standard (HN 5) overruled; plausibility pleading governs. Passage read. | 18, 24, 29 | Replace; cleanup pass for 18, 24, 29 pending. |
+| 105 | People v. Lent, 15 Cal.3d 481 | "Superseded by Statute as Stated in" *People v. Moran*, 1 Cal.5th 398, at 403 n.6 — Lent's misdemeanor-impeachment holding superseded by Prop 8 truth-in-evidence (Cal. Const. art. I, §28(f)); the probation-condition test is intact. Passage read. | 5, 14, 15, 19 | Only the impeachment proposition dies; cleanup pass pending. |
+| 110 | Ford v. City of Yakima, 706 F.3d 1188 | "Abrogated by" *Nieves v. Bartlett*, 587 U.S. 391, at 397, 402–08 — retaliatory-arrest plaintiffs must generally plead and prove absence of probable cause (narrow comparator exception at 407–08). Ford's but-for rule is dead. Passage read. | 24 | Retaliatory-arrest framing must come from *Nieves*, not Ford. |
+| 131 | Bureerong v. Uvawas, 922 F. Supp. 1450 | "Abrogation Recognized by" *IMEX Leader, Inc. v. Zest US Wholesale*, 2023 WL 2626968 (C.D. Cal. 2023), at *10 — *Whittlestone* abrogated Bureerong's use of Rule 12(f) to strike claims/prayers for relief; 12(f) covers only insufficient defenses and redundant/immaterial/impertinent/scandalous matter. | 1, 24, 32 | Do not cite for striking claims or relief; cleanup pass pending. |
+| 373 | Redfearn v. Trader Joe's Co., 20 Cal.App.5th 989 | "Disapproved of by" *Ixchel Pharma, LLC v. Biogen, Inc.*, 9 Cal.5th 1130, 1148 (Cal. Aug. 3, 2020) — Ixchel disapproved Redfearn's rule that interference with at-will contracts needs no independent wrongfulness; independent wrongfulness is required. Passage read. | 20, 24, 32 | Replace with *Ixchel* on the at-will interference point; sweep propositions in 20, 24, 32. |
+| 143 | Noll v. Carlson, 809 F.2d 1446 (9th Cir. 1986) | "Superseded by Statute as Stated in" *Pamplin v. Lucas*, 9th Cir. (Nev.), May 16, 2023 — operative passages read (via *Lopez v. Smith*, 160 F.3d 567, 571 (9th Cir.)): PLRA § 1915(e)(2) overrules Noll's requirement that district courts give pro se prisoner-litigants notice and an opportunity to amend before dismissing for failure to state a claim | 24, 26 | Replace with *Lopez v. Smith* on the notice-and-leave-to-amend point; sweep propositions in 24, 26. (Volusia door, 2026-09-19.) |
+| 388 | Committee On Children's Television, Inc. v. General Foods Corp., 35 Cal.3d 197 (Cal. 1983) | "Superseded by Statute as Stated in" *Branick v. Downey Savings & Loan Assn.*, 39 Cal.4th 235, 243 (Cal. July 24, 2006) — Branick states Children's Television's rule (organizations could sue on behalf of the general public under the UCL) was superseded by Proposition 64: now only persons with injury in fact and lost money or property may sue. KeyCite-list level. | 5, 20, 32 | If any filing cites Children's Television for public-interest UCL standing, it's dead law — replace with *Kwikset* or *Branick*; sweep 5, 20, 32. |
 
 ## YELLOW flags worth knowing (weakened, not dead)
 
@@ -37,7 +33,7 @@ Independent audit 2026-09-19: KeyCite red is **treatment of a holding**, not a k
 - **Row 136 — Hartman v. Moore, 547 U.S. 250.** "Declined to Extend by" *CarePartners, LLC v. Lashway*, 545 F.3d 867 (9th Cir. 2008), HNs 3, 11, 15, 545 F.3d at 878 n.7: the "absence of probable cause" pleading element is limited to retaliatory-prosecution claims only. Passage read.
 - **Row 137 — Illinois v. Caballes, 543 U.S. 405.** "Not Followed on State Law Grounds" *State v. Griffin*, 949 So.2d 309 (Fla. 1st DCA 2007), HNs 5, 6, 7, 949 So.2d at 310, 312: in FL's First District a car-sniff alert alone doesn't extend to a person-search. Passage read.
 - **Row 138 — Jones v. Lodge, 42 Cal.4th 1158.** "Declined to Extend by" *Light v. Dep't of Parks & Recreation*, 14 Cal.App.5th 75 (2017), HN 2, 14 Cal.App.5th at 101 n.10: *Jones*'s FEHA individual-nonliability rule doesn't shield supervisors from IIED claims resting on independent common-law duties. Passage read.
-- **Row 139 — Kay v. Ehrler, 499 U.S. 432 — PARTIAL.** "Not Followed as Dicta" *State ex rel. Schad, Diamond & Shedden, P.C. v. My Pillow, Inc.*, 115 N.E.3d 923 (Ill. 2018), HN 1: treating doc identified but operative passage NOT read — blocked by the document limit. Revisit.
+- **Row 139 — Kay v. Ehrler, 499 U.S. 432 — CLOSED (Hillsborough door).** "Not Followed as Dicta" *State ex rel. Schad, Diamond & Shedden, P.C. v. My Pillow, Inc.*, 115 N.E.3d 923 (Ill. 2018), HN 1: Kay's footnote-7 recognition that an organizational plaintiff might recover attorney fees under federal fee-shifting statutes was dicta addressing federal statutes; Illinois follows its contrary rule (*Hamer v. Lentz*) that a self-represented attorney cannot recover fees. Operative passage read. Matters: 1, 24, 32.
 
 ### Batch 2 — rows 333–389 (Riverside door, 2026-09-19 afternoon)
 
@@ -61,17 +57,32 @@ Session 1 verified 9 of 20 (rows 333, 334, 336, 341, 368, 370, 371, 372, 373 —
 - **Row 385 — Starr v. Baca, 652 F.3d 1202 (9th Cir. 2011).** "Declined to Extend by" *Mounce v. Vitt*, 2024 WL 52999, at *6 (D. Or. Jan. 4, 2024): declined to extend Starr's deliberate-indifference supervisory-liability standard — a supervisor's general role/title alone, without evidence of personal involvement or deliberate indifference to the specific deprivation, is insufficient. Matters: 3, 18, 29.
 - **Row 389 — Albright v. Oliver, 510 U.S. 266.** Yellow flag confirmed in KeyCite; treatment details NOT obtained — the document limit was reached before the treating document opened. Matters: 3, 24. Needs a fresh patron session.
 
+### Batch 3 — rows 141–157 (Volusia County door, 2026-09-19 evening)
+
+- **Row 142 — Neitzke v. Williams, 490 U.S. 319.** "Superseded by Statute as Stated in" *Irizarry v. Secretary, Florida Dep't of Corrections*, 11th Cir. (Fla.), July 22, 2021: operative passage via *Lopez v. Smith*, 203 F.3d 1122 (9th Cir. en banc) — Congress overruled Neitzke's holding that former 28 U.S.C. § 1915(d) did not authorize sua sponte dismissal for failure to state a claim, when it amended § 1915(d) via PLRA § 1915(e)(2). Negative treatment touches only Neitzke's § 1915(d) sua-sponte-dismissal limitation — NOT its "lacks an arguable basis in law or in fact" frivolousness definition. Passage read. Matters: 1, 7, 18, 32, 33.
+- **Row 145 — Baker v. Bzydra, No. 3:18-cv-01792 (MPS) (D. Conn. Dec. 5, 2019)** (bare cite 2019 WL 6619348 resolved). "Declined to Follow by" *Davis v. Chapple*, 695 F. App'x 616 (2d Cir. Dec. 18, 2017). Chronological anomaly: a 2017 citing case "declining to follow" a 2019 case is impossible; KeyCite list reported as shown, unresolved. Matters: 7, 32, 33.
+- **Row 146 — Barnett v. Fireman's Fund Ins. Co., 90 Cal.App.4th 500.** "Declined to Extend by" *Rizzo v. Insurance Co. of State of Pennsylvania*, 969 F.Supp.2d 1180 (C.D. Cal. Aug. 30, 2013): operative passage — Rizzo declined to extend Barnett's holding (duty to defend where officers/directors seek defense for acts allegedly taken on behalf of the corporation) to claims by the insured itself against its own officer/employee for acts harming the insured. Barnett's general duty-to-defend standard (facts-alleged-in-complaint test) untouched — Rizzo cited it approvingly. Passage read. Matters: 20, 32.
+- **Row 156 — Winter v. Natural Resources Defense Council, Inc., 555 U.S. 7.** "Not Followed as Dicta" *S.A. v. Trump*, N.D. Cal., Mar. 1, 2019 (2019 WL 990680, fn. 36): operative passage — the court did not follow Winter's dictum at 555 U.S. 32–33 (appropriate relief after final judgment) when deciding the causal-connection requirement for irreparable harm at the preliminary-injunction stage. The PI standard (555 U.S. at 20, 22) was followed — only the dictum is weakened. Passage read. Matters: 24.
+- **Row 144 — Wilkerson v. Butler, 174 F.R.D. 166 (E.D. Va. 1997).** NOT FOUND as written on Westlaw (global, citation, and name searches); closest match is *Wilkerson v. Butler*, 229 F.R.D. 166 (E.D. Cal. 2005). Flag unknown — correct the cite before KeyCite. Matters: 1, 24, 32.
+
+- **Row 174 — Marder v. Lopez, 450 F.3d 445 (9th Cir.).** "Distinguished by" *Bhatia v. Silvergate Bank*, 725 F.Supp.3d 1079 (S.D. Cal. Mar. 20, 2024): operative passage — court restated Marder's rule that a court may consider evidence on which the complaint "necessarily relies" (450 F.3d at 448) but distinguished it — Marder considered a release the plaintiff signed and referenced; the FTX.US User Agreement was not the same document and never quoted, so no incorporation. Touches only that specific application; Marder's general incorporation-by-reference rule is intact. 5 negative refs, all "Distinguished by." Passage read. Matters: 29.
+- **Row 177 — Quelimane Co. v. Stewart Title Guaranty Co., 19 Cal.4th 26.** "Called into Doubt by Statute as Stated in" *Harris v. American Intern. Group, Inc.*, 2011 WL 5429486 (Cal.App. 2 Dist. Nov. 9, 2011): operative passage — Prop. 64's 2004 amendment to Cal. Bus. & Prof. Code § 17204 killed pre-Prop. 64 UCL standing cases like Quelimane. Touches ONLY Quelimane's UCL standing holding — the title-insurance rate-regulation/exclusive-jurisdiction holdings are untouched. Do NOT cite Quelimane for UCL standing. 18 negative refs. Passage read. Matters: 20, 32.
+- **Row 389 — Albright v. Oliver, 510 U.S. 266.** "Not Followed as Dicta" *Technical Ordnance, Inc. v. U.S.*, 244 F.3d 641 (8th Cir. Mar. 26, 2001): operative passage — the 8th Circuit declined to treat as "clearly established law" Justice Ginsburg's dictum in her Albright concurrence (510 U.S. at 276–81) suggesting pretrial restrictions could constitute a Fourth Amendment "seizure" for a malicious-prosecution claim; granted qualified immunity. Touches ONLY the Ginsburg-concurrence dictum for qualified-immunity purposes — Albright's core holding (substantive-due-process malicious-prosecution claims improper; analyze under the Fourth Amendment) untouched. 63 negative refs. Passage read. Matters: 3, 24.
+- **Row 164 — Common Cause v. Board of Supervisors, 49 Cal.3d 432 (Cal. 1989) — CLOSED.** CITE CORRECTION: the "Declined to Extend" case is *White v. Davis*, **30 Cal.4th 528** (Cal. May 1, 2003), 68 P.3d 74 — NOT "13 Cal.4th 615" as previously recorded. Operative passage (30 Cal.4th at 560-562): White holds Common Cause (49 Cal.3d at 446-447) "provides no basis for upholding the preliminary injunction" — the "interrelated factors" passage (a strong merits showing can sustain an injunction even when the balance of harms does not tip in plaintiff's favor) does not mean a court may ignore the balance of hardships when it dramatically favors denial. The declined-to-extend treatment touches ONLY the preliminary-injunction standard analysis — nothing about taxpayer/public-interest standing; White was itself a taxpayer action and fn. 5 acknowledges plaintiffs' "general interest as taxpayers." Common Cause's standing holding is intact. 8 negative refs (also "Declined to Extend by" *County of San Diego v. San Diego NORML* and *Martinez v. Board of Parole Hearings*; 5 "Distinguished by"). Passage read. Matters: 20, 32.
+- **Row 172 — Lathus v. City of Huntington Beach, 56 F.4th 1238 (9th Cir. Jan. 5, 2023) — CLEAN.** KeyCite: no red/yellow flag; Negative Treatment (0). (Shayna Lathus v. City of Huntington Beach, No. 21-56197 — First Amendment analysis of dismissal of a volunteer municipal advisory board member; 12(b)(6) dismissal affirmed.) Verified with the portfolio's correct cite after the earlier wrong-cite run ("56 Cal.App.5th 950"). Matters: 7, 24, 32, 33.
+
 ## Bare cites resolved
 
 - Row 93: 142 Cal.App.4th 1046 = *JKH Enterprises, Inc. v. Department of Industrial Relations* (2006) — yellow ("Distinguished by" *Barbosa v. W.C.A.B.*, 2013 WL 3811141, HN 13).
 - Row 129: 284 F.3d 1007 = *Rio Properties, Inc. v. Rio Intern. Interlink* (9th Cir. 2002) — see yellow above.
-- Row 145: 2019 WL 6619348 — pending with rows 139–145 (document-limit block: Westlaw threw "Document Limit Reached" on the 7th document view of the session; row 139 partially done, rows 140–145 unworked; a fresh sign-in should restore quota).
+- Row 180 (Batch 3): 2018 WL 1567796 = *Jack v. Pearson*, Case No. 1:17-CV-0520 AWI SAB (E.D. Cal. Mar. 30, 2018) — clean (Negative Treatment (0)).
 - Row 378 (Batch 2): 896 F.2d 1542 = *Hal Roach Studios, Inc. v. Richard Feiner & Co., Inc.* (9th Cir. 1989) — yellow ("Abrogation Recognized by" *Himes v. Hadjadj*, 2020 WL 4582676, at *4 — Hal Roach's 12(b)(6) rule abrogated in part by *Twombly/Iqbal* plausibility). KeyCite-list level.
 - Row 388 (Batch 2): 35 Cal.3d 197 = *Committee On Children's Television, Inc. v. General Foods Corp.* (Cal. 1983) — RED, "Superseded by Statute as Stated in" *Branick v. Downey Savings & Loan Assn.*, 39 Cal.4th 235, 243 (2006): Prop. 64 killed the public-interest UCL standing rule. KeyCite-list level.
 
 ## CLEAN rows this pass
 
-Row 96 *Catholic Charities CYO v. Chertoff*, 622 F. Supp. 2d 865; Row 125 *Mendoza v. ADP Screening*, 182 Cal.App.4th 1644 — Negative Treatment (0) both.
+Row 180 *Jack v. Pearson*, Case No. 1:17-CV-0520 AWI SAB (Negative Treatment (0)) — clean flag (Volusia door, 2026-09-19).
+Row 172 *Lathus v. City of Huntington Beach*, 56 F.4th 1238 (Negative Treatment (0)) — clean flag (Volusia door, 2026-09-19 ~15:12 PDT, after sign-out/sign-in reset).
 Row 334 (Batch 2) — *In re Estrada*, 47 Cal.App.4th 1688 — no KeyCite flag (not opened; quota conserved).
 
 ## Fabricated authorities — never cite
@@ -85,53 +96,7 @@ Row 334 (Batch 2) — *In re Estrada*, 47 Cal.App.4th 1688 — no KeyCite flag (
 
 ## Pending
 
-- Rows 139–145 (Kay v. Ehrler [partial — passage unread] through 2019 WL 6619348) — document-limit block: Westlaw threw "Document Limit Reached" on the 7th treating-document view of the session; a fresh sign-in should restore quota.
-- Row 389 — *Albright v. Oliver*, 510 U.S. 266: yellow flag confirmed, treating-document detail not obtained (document limit hit at the end of the Batch 2 session); a fresh patron session finishes it.
-- Proposition sweeps (limited — do **not** delete the cases): Medina fn. 6 only (1, 2, 7, 8, 32, 33); Lee heightened-pleading only (18, 24, 29); Lent impeachment only (5, 14, 15, 19); Ford but-for / frame from *Nieves* (24); Bureerong 1479 n.34 / 12(f) claims-prayers (1, 24, 32); Redfearn at-will-no-wrongfulness → *Ixchel* (20, 24, 32); Children's Television public-interest UCL standing → Prop. 64 / *Branick* / *Kwikset* (5, 20, 32); *Grants Pass* 50 F.4th 787 → 603 U.S. 520 (28).
-- *Singleton v. Gates* (row 63): independently confirmed — cites Lopez 1131 "overruled on other grounds by *Peralta*"; does **not** replace Lopez leave-to-amend. No further depth read required to keep Lopez.
-
-## Batch 3 — rows 390–416 (COMPLETE, 2026-09-19, Clark County Law Library door)
-
-Session 1 (3 rows: 390, 391, 394 — all yellow; document limit hit at row 395) and Session 2 (fresh sign-in; rows 395–411 verified, limit hit at row 411 — its name, *Akins v. Seterus, Inc.*, was read from the title bar) and Session 3 (rows 412–416). One visit per cite; seat stayed logged in at the end per the user's instruction.
-
-- **Row 390 — 390.** Y. Greenup v. Rodman, 42 Cal.3d 822
-- **Row 391 — 391.** Y. North Oakland Medical Clinic v. Rogers, 65 Cal.App.4th 824
-- **Row 394 — 394.** Y. Clark v. Am. Honda Motor Co, 528 F. Supp. 3d 1108
-- **Row 395 — 395.** Y. County of San Diego v. State of California, 164 Cal.App.4th 580
-- **Row 396 — 396.** Y. Felder v. Casey, 487 U.S. 131
-- **Row 397 — 397.** Y. Ferdik v. Bonzelet, 963 F.2d 1258
-- **Row 398 — 398.** Y. Florer v. Congregation Pidyon Shevuyim, 639 F.3d 916
-- **Row 401 — 401.** Y. Hamilton v. Shearson-Lehman American Express, 813 F.2d 1532
-- **Row 403 — 403.** Y. Martinez v. California, 444 U.S. 277
-- **Row 405 — 405.** Y. Sprewell v. Golden State Warriors, 266 F.3d 979
-- **Row 407 — 407.** Y. Wyshak v. City Nat'l Bank, 607 F.2d 824
-- **Row 408 — 408.** Y. Yvanova v. New Century Mortg. Corp, 62 Cal.4th 919
-- **Row 409 — 409.** N. 2009 WL 980417
-- **Row 410 — 410.** N. 2017 WL 7049527
-- **Row 411 — 411.** N. 2019 WL 4243221
-- **Row 412 — 412.** Y. 234 Cal.App.4th 166
-- **Row 413 — 413.** Y. Benavidez v. County of San Diego, 993 F.3d 1134
-- **Row 414 — 414.** Y. Clark v. Superior Court, 50 Cal.4th 605
-- **Row 415 — 415.** Y. Commercial Space Mgmt. Co. v. Boeing Co, 193 F.3d 1074
-- **Row 416 — 416.** Y. Crowe v. County of San Diego, 608 F.3d 406
-
-
-## Batch 2 side-chat rows — 212, 214, 228, 247, 304, 306, 312, 320, 328, 329, 330, 331, 332 (COMPLETE, 2026-09-19, Clark County door)
-
-- **Row 212 — 212.** Y. Smith v. State Farm Mutual Automobile Ins. Co, 93 Cal.App.4th 700
-- **Row 214 — 214.** Y. Station & Auto. Repair Ass’n v. Am. Home Assur. Co, 62 Cal.App.4th 1166
-- **Row 228 — 228.** N. Chambers v. Herrera, 78 F.4th 1100
-- **Row 247 — 247.** Y. White v. Ultramar, 21 Cal.4th 563
-- **Row 304 — 304.** Y. Sullivan v. County of Los Angeles, 12 Cal.3d 710
-- **Row 306 — 306.** Y. Alcorn v. Anbro Engineering, 2 Cal.3d 493
-- **Row 312 — 312.** Y. In re Crow, 4 Cal.3d 613
-- **Row 320 — 320.** N. In re Faucette, 253 Cal.App.2d 338
-- **Row 328 — 328.** Y. Aaronoff v. Martinez-Senftner, 136 Cal.App.4th 910
-- **Row 329 — 329.** Y. Bardin v. DaimlerChrysler Corp, 136 Cal.App.4th 1255
-- **Row 330 — 330.** Y. Drum v. San Fernando Valley Bar Assn, 182 Cal.App.4th 247
-- **Row 331 — 331.** Y. Elsner v. Uveges, 34 Cal.4th 915
-- **Row 332 — 332.** Y. Hahn v. Mirda, 147 Cal.App.4th 740
-
-
-Note: rows 333, 334, 336, 341, 368, 370, 371 were independently re-verified via the Clark County door on 2026-09-19 and confirmed the Riverside session's findings — the inventory keeps the richer Riverside passage-read notes.
-
+- Rows 164 (*Common Cause v. Board of Supervisors*, 49 Cal.3d 432) and 172 (*Lathus v. City of Huntington Beach*, 56 F.4th 1238) — COMPLETE 2026-09-19 ~15:12 PDT (sign-out/sign-in reset at the Volusia County door; row 164 operative passage read, row 172 clean).
+- Row 144 — *Wilkerson v. Butler*, 174 F.R.D. 166 (E.D. Va. 1997): cite as written does NOT exist on Westlaw; closest match is *Wilkerson v. Butler*, 229 F.R.D. 166 (E.D. Cal. 2005). Correct the cite in the portfolio before KeyCite (matters 1, 24, 32).
+- Proposition sweeps for the reds: Medina (matters 1, 2, 7, 8, 32, 33), Lee (18, 24, 29), Lent (5, 14, 15, 19), Ford (24), Bureerong (1, 24, 32), Redfearn (20, 24, 32 — Ixchel replaces the at-will interference rule), Children's Television (5, 20, 32 — Prop. 64 killed public-interest UCL standing), **Noll v. Carlson (24, 26 — PLRA § 1915(e)(2) killed the notice-and-leave-to-amend rule; replace with *Lopez v. Smith*)**.
+- Singleton v. Gates depth read (row 63 Lopez red) — offered, awaiting word.
