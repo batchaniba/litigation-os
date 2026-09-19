@@ -534,6 +534,15 @@ ruling. I also could not confirm any relationship between this case and the sepa
 FCRA/ICRAA standalone-disclosure matter against Vons described at § 4.3 — **do not assume they are
 the same case.**
 
+**Update (2026-09-19).** The PACER pull this section asked for is now in the portfolio:
+Dkts. 1, 55, 56, 57, 58, and 59, lodged at
+`internal/docs/counsel/frederick-stanzick/sources/8-25-cv-00191-Carrillo-v-Vons/`
+and cataloged at `/documents/matter-29/carrillo-v-vons/`. The complaint is a class
+action on § 290.46(j)(2)(E), Fair Chance § 12952, FCRA § 1681b(b)(1), and UCL.
+Stanzick signed Asurint's class-cert opposition (Dkt. 57). Still **no merits
+ruling**. Not a related case. Read the playbook, not this September 12 flag, for
+the claims and the argument inventory.
+
 ### 2.9 *Newanforbi v. United Parcel Service, Inc.* — live, no ruling yet (Matter 26)
 
 | | |
@@ -696,9 +705,14 @@ practitioner sources across twenty-two years, and none can cite a case construin
 
 ## 5. Cited but unverified, and one probable conflation
 
-### 5.1 "Walker v. Ronin Staffing / UCLA Health" — no trace; likely a conflation
+### 5.1 "Walker v. Ronin Staffing / UCLA Health" — **resolved (2026-09-19 lodge)**
 
-The request lists "*Walker v. Ronin Staffing / UCLA Health* (complaint pleads § 290.46, filed
+**Update:** Dkts. 1, 14, 16, and 16-1 are now in the portfolio at
+`/documents/matter-29/walker-v-ronin-staffing/`. Complaint pleads § 290.46(j)(2)(E);
+Stanzick signed Sterling's answer; Sterling dismissed without prejudice Oct. 29, 2024.
+This is **not** *Walker v. Fred Meyer*, 953 F.3d 1082.
+
+The request originally listed "*Walker v. Ronin Staffing / UCLA Health* (complaint pleads § 290.46, filed
 2024)." **I found nothing.** No docket, no caption, no news report, no practitioner mention.
 Searches on the party names, the staffing agency, UCLA Health, § 290.46, and 2024 returned
 UCLA-admissions and UCLA-Health-malpractice matters with no relation to the registry statute.
@@ -843,7 +857,10 @@ and order caption in this memo that is not from a locally held PDF comes from th
 
 **Primary, read in full (this repository, `documents` branch):** *Lerma v. Amazon* Dkts. 1, 20,
 23-1, 23-2, 24-1, 26, 27, 28, 36, 43–48 and docket sheet, at
-`internal/public/documents/matter-29/lerma-v-amazon/`; *Newanforbi v. UPS* complaint, Dkt. 7 and
+`internal/public/documents/matter-29/lerma-v-amazon/`. Frederick's signed packet (Dkts. 24,
+24-1, 27, 36) is also lodged in the playbook at
+`internal/docs/counsel/frederick-stanzick/sources/8-22-cv-01727-Lerma-v-Amazon/`.
+*Newanforbi v. UPS* complaint, Dkt. 7 and
 exhibits, Dkts. 10–11, and the Sept. 9, 2026 opposition, at
 `internal/public/documents/matter-26/`.
 

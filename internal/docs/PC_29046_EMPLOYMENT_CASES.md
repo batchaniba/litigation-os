@@ -223,6 +223,10 @@ Filed September 21, 2022.
 
 **Status: REPOSITORY PRIMARY as to the stored Dkt. 36 and docket; public
 docket/news independently confirm the disposition and settlement chronology.**
+Frederick's signed briefs behind that order (Dkt. 24-1 memorandum; Dkt. 27
+reply) are now in the Frederick–Stanzick Playbook at
+`internal/docs/counsel/frederick-stanzick/sources/8-22-cv-01727-Lerma-v-Amazon/`
+and on the Matter 29 curated list. Do not PACER-pull the 69-file docket again.
 
 FAC claims included:
 - Megan's Law / Penal Code § 290.46;
@@ -297,22 +301,34 @@ statutory cause and allowed the alleged statutory violation to serve as a UCL
 
 C.D. Cal. No. 2:24-cv-05669-CBM-SSC.
 Hon. Consuelo B. Marshall; M.J. Stephanie S. Christensen.
-Active through September 2026.
+Filed July 3, 2024.
 
-**Status: docket verified; operative § 290.46 pleading/ruling not fully
-verified in this research.**
+**Status: PRIMARY VERIFIED** for Dkts. 1, 14, 16, and 16-1 in the portfolio at
+`/documents/matter-29/walker-v-ronin-staffing/` and the Frederick–Stanzick
+Playbook `sources/2-24-cv-05669-Walker-v-Ronin/`. Complaint pleads
+§ 290.46(j)(2)(E), Fair Chance, FCRA, and UCL (Ray Kim). Stanzick signed
+Sterling's answer (Sep. 12, 2024). Sterling dismissed without prejudice
+(Oct. 29, 2024). **Not** *Walker v. Fred Meyer*, 953 F.3d 1082 (ICRAA).
 
 No located § 290.46 merits ruling. Do not cite Walker as precedent.
 
 ### 3.4 Sandoval Carrillo v. The Vons Companies, Inc., et al.
 
 C.D. Cal. No. 8:25-cv-00191-SRM-KES.
-Hon. Serena R. Murillo.
+Hon. Serena R. Murillo; Mag. Karen E. Scott.
+Plaintiff's counsel: Raymond Y. Kim (same as *Lerma*).
+CRA counsel: John W. Drury and Jasmine J. Stanzick (Seyfarth) for Asurint.
+Employer counsel: Littler Mendelson for Vons.
 
-Class/employment docket located; class-discovery activity verified.
+Complaint (Dkt. 1, Jan. 31, 2025) pleads § 290.46(j)(2)(E), Fair Chance Act
+§ 12952, FCRA § 1681b(b)(1), and UCL. Class-cert motion (Dkt. 55, Jan. 14,
+2026) and oppositions/replies (Dkts. 56–59, Feb.–Mar. 2026) are in the
+portfolio at `/documents/matter-29/carrillo-v-vons/` and in the
+Frederick–Stanzick Playbook sources. No class-cert or merits order is in
+this lodge.
 
-**Status: high-priority UNVERIFIED LEAD for the specific § 290.46 pleading.**
-No located § 290.46 merits ruling.
+**Status: PRIMARY VERIFIED complaint and class-cert briefing.**
+**Not a merits ruling on the Megan's Law count.** Not a related case.
 
 ### 3.5 Garza v. Starbucks Corporation, et al.
 

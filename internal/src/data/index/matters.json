@@ -1,6 +1,6 @@
 {
   "generated": true,
-  "today": "2026-09-18",
+  "today": "2026-09-19",
   "matters": [
     {
       "number": 1,
@@ -889,12 +889,12 @@
         "id": "27-deadline-1",
         "date": "2026-09-18",
         "kind": "deadline",
-        "status": "open",
+        "status": "overdue",
         "title": "EXPIRES — $25,000 final early global settlement demand in Newanforbi v. Randstad US, LLC et al. (26CV199902), sent Sept. 12, 2026, 8:00 a.m. Expires…",
         "source_dkt": null
       },
-      "overdue": false,
-      "last_updated": "2026-09-18",
+      "overdue": true,
+      "last_updated": "2026-09-17",
       "files": [
         "claims.json",
         "clocks.json",
@@ -970,7 +970,7 @@
         "source_dkt": 7
       },
       "overdue": false,
-      "last_updated": "2026-09-16",
+      "last_updated": "2026-09-18",
       "files": [
         "claims.json",
         "clocks.json",
@@ -1031,7 +1031,7 @@
       "case_no": "TBD",
       "court": "San Joaquin Sup. Ct. (anticipated)",
       "judge": "TBD",
-      "cluster": 5,
+      "cluster": 3,
       "related": [],
       "same_incident": null,
       "lifecycle": "pre_filing",
@@ -1039,7 +1039,7 @@
       "phase": "pre_filing",
       "next_clock": null,
       "overdue": false,
-      "last_updated": "2026-09-18",
+      "last_updated": "2026-09-16",
       "files": [
         "claims.json",
         "clocks.json",
@@ -1360,7 +1360,7 @@
         "source_dkt": null
       },
       "overdue": true,
-      "last_updated": "2026-09-18",
+      "last_updated": "2026-09-16",
       "files": [
         "claims.json",
         "clocks.json",

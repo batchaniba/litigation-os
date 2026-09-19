@@ -2937,13 +2937,28 @@
       "ownerMatter": 29
     },
     {
-      "path": "/documents/matter-29/carrillo-v-vons/Dkt 01 - Complaint (Jan 31, 2025).pdf",
-      "label": "Dkt 01 - Complaint (Jan 31, 2025)",
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 01 - Class Action Complaint (Jan 31, 2025).pdf",
+      "label": "Dkt 01 - Class Action Complaint (Jan 31, 2025)",
       "ownerMatter": 29
     },
     {
-      "path": "/documents/matter-29/carrillo-v-vons/Dkt 55 - Motion for Class Certification (Jan 14, 2026).pdf",
-      "label": "Dkt 55 - Motion for Class Certification (Jan 14, 2026)",
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 15 - Vons Answer to Complaint (Apr 8, 2025).pdf",
+      "label": "Dkt 15 - Vons Answer to Complaint (Apr 8, 2025)",
+      "ownerMatter": 29
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 19 - Asurint Answer to Complaint (May 30, 2025).pdf",
+      "label": "Dkt 19 - Asurint Answer to Complaint (May 30, 2025)",
+      "ownerMatter": 29
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 27 - Stipulated Protective Order (Sep 18, 2025).pdf",
+      "label": "Dkt 27 - Stipulated Protective Order (Sep 18, 2025)",
+      "ownerMatter": 29
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 55 - Plaintiff's Motion for Class Certification (Jan 14, 2026).pdf",
+      "label": "Dkt 55 - Plaintiff's Motion for Class Certification (Jan 14, 2026)",
       "ownerMatter": 29
     },
     {
@@ -2952,23 +2967,33 @@
       "ownerMatter": 29
     },
     {
-      "path": "/documents/matter-29/carrillo-v-vons/Dkt 57 - Asurint Opposition to Class Certification - Stanzick (Feb 18, 2026).pdf",
-      "label": "Dkt 57 - Asurint Opposition to Class Certification - Stanzick (Feb 18, 2026)",
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 57 - Asurint Opposition to Class Certification (Feb 18, 2026).pdf",
+      "label": "Dkt 57 - Asurint Opposition to Class Certification (Feb 18, 2026)",
       "ownerMatter": 29
     },
     {
-      "path": "/documents/matter-29/carrillo-v-vons/Dkt 58 - Reply ISO Class Certification (Mar 25, 2026).pdf",
-      "label": "Dkt 58 - Reply ISO Class Certification (Mar 25, 2026)",
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 58 - Plaintiff's Reply to Vons Opposition (Mar 25, 2026).pdf",
+      "label": "Dkt 58 - Plaintiff's Reply to Vons Opposition (Mar 25, 2026)",
       "ownerMatter": 29
     },
     {
-      "path": "/documents/matter-29/carrillo-v-vons/Dkt 59 - Reply ISO Class Certification (Mar 25, 2026).pdf",
-      "label": "Dkt 59 - Reply ISO Class Certification (Mar 25, 2026)",
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 59 - Plaintiff's Reply to Asurint Opposition (Mar 25, 2026).pdf",
+      "label": "Dkt 59 - Plaintiff's Reply to Asurint Opposition (Mar 25, 2026)",
       "ownerMatter": 29
     },
     {
-      "path": "/documents/matter-29/carrillo-v-vons/Docket History (as of Sep 18, 2026).pdf",
-      "label": "Docket History (as of Sep 18, 2026)",
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 62 - Transcript of Class Certification Hearing (Apr 15, 2026).pdf",
+      "label": "Dkt 62 - Transcript of Class Certification Hearing (Apr 15, 2026)",
+      "ownerMatter": 29
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 64 - Vons Request for Judicial Notice ISO Class Cert Opposition (Sep 15, 2026).pdf",
+      "label": "Dkt 64 - Vons Request for Judicial Notice ISO Class Cert Opposition (Sep 15, 2026)",
+      "ownerMatter": 29
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 64-1 - Exhibit A - Federal Court Order (Sep 15, 2026).pdf",
+      "label": "Dkt 64-1 - Exhibit A - Federal Court Order (Sep 15, 2026)",
       "ownerMatter": 29
     },
     {
@@ -3014,6 +3039,11 @@
     {
       "path": "/documents/matter-29/Consent to Magistrate Judge Jurisdiction - Amazon (N.D. Cal. 3-26-cv-09249-ASK) (Sep 1 2026).pdf",
       "label": "Consent to Magistrate Judge Jurisdiction - Amazon (N.D. Cal. 3-26-cv-09249-ASK) (Sep 1 2026)",
+      "ownerMatter": 29
+    },
+    {
+      "path": "/documents/matter-29/counsel-research/PACER Attorney Case List - Stanzick S.D. Cal. ecf.casd (Sep 18 2026).pdf",
+      "label": "PACER Attorney Case List - Stanzick S.D. Cal. ecf.casd (Sep 18 2026)",
       "ownerMatter": 29
     },
     {
@@ -3257,6 +3287,11 @@
       "ownerMatter": 29
     },
     {
+      "path": "/documents/matter-29/lerma-v-amazon/Dkt 24-1 - Amazon's Memorandum ISO Motion to Dismiss (Dec 15, 2022).pdf",
+      "label": "Dkt 24-1 - Amazon's Memorandum ISO Motion to Dismiss (Dec 15, 2022)",
+      "ownerMatter": 29
+    },
+    {
       "path": "/documents/matter-29/lerma-v-amazon/Dkt 24-4 - Exhibit 2 - Pre-Adverse Action Notice (Dec 15, 2022).pdf",
       "label": "Lerma v. Amazon — Exhibit 2, Pre-Adverse Action Notice (Dkt. 24-4)",
       "ownerMatter": 29
@@ -3269,6 +3304,11 @@
     {
       "path": "/documents/matter-29/lerma-v-amazon/Dkt 26 - Plaintiff's Opposition to Motions to Dismiss (Jan 19, 2023).pdf",
       "label": "Lerma v. Amazon — Plaintiff's Opposition to Motions to Dismiss (Dkt. 26, Jan. 19, 2023)",
+      "ownerMatter": 29
+    },
+    {
+      "path": "/documents/matter-29/lerma-v-amazon/Dkt 27 - Amazon's Reply ISO Motion to Dismiss (Feb 2, 2023).pdf",
+      "label": "Dkt 27 - Amazon's Reply ISO Motion to Dismiss (Feb 2, 2023)",
       "ownerMatter": 29
     },
     {
@@ -3314,16 +3354,6 @@
     {
       "path": "/documents/matter-29/Letter to Court Clerk - Filing Fee Paid in Full, Fee Waiver Hearing Moot (Aug 3 2026).pdf",
       "label": "Letter to Court Clerk — $435.00 filing fee paid in full by money order, requesting the FW-001 fee waiver request be treated as withdrawn/moot and the Aug. 18, 2026 hearing taken off calendar (executed and MAILED Aug. 3, 2026)",
-      "ownerMatter": 29
-    },
-    {
-      "path": "/documents/matter-29/martin-v-assurehire/Dkt 01 - Complaint (Apr 20, 2026).pdf",
-      "label": "Dkt 01 - Complaint (Apr 20, 2026)",
-      "ownerMatter": 29
-    },
-    {
-      "path": "/documents/matter-29/martin-v-assurehire/Docket Sheet (as of Sep 18, 2026).pdf",
-      "label": "Docket Sheet (as of Sep 18, 2026)",
       "ownerMatter": 29
     },
     {
@@ -3427,26 +3457,6 @@
       "ownerMatter": 29
     },
     {
-      "path": "/documents/matter-29/rangel-v-accurate/Dkt 01 - Complaint (Aug 1, 2025).pdf",
-      "label": "Dkt 01 - Complaint (Aug 1, 2025)",
-      "ownerMatter": 29
-    },
-    {
-      "path": "/documents/matter-29/rangel-v-accurate/Dkt 08 - Defendant's Answer and Affirmative Defenses (Sep 26, 2025).pdf",
-      "label": "Dkt 08 - Defendant's Answer and Affirmative Defenses (Sep 26, 2025)",
-      "ownerMatter": 29
-    },
-    {
-      "path": "/documents/matter-29/rangel-v-accurate/Dkt 13 - Notice of Settlement (Dec 1, 2025).pdf",
-      "label": "Dkt 13 - Notice of Settlement (Dec 1, 2025)",
-      "ownerMatter": 29
-    },
-    {
-      "path": "/documents/matter-29/rangel-v-accurate/Docket Sheet (as of Sep 18, 2026).pdf",
-      "label": "Docket Sheet (as of Sep 18, 2026)",
-      "ownerMatter": 29
-    },
-    {
       "path": "/documents/matter-29/Reminder from Amazon.com, Inc. and its affiliates!.pdf",
       "label": "Equifax Onboarding Reminder Email (Jul. 4, 2026)",
       "ownerMatter": 29
@@ -3459,16 +3469,6 @@
     {
       "path": "/documents/matter-29/Reminder Pre-Hire Appointment Email (Jul 6, 2026).pdf",
       "label": "Reminder: Pre-Hire Appointment Email 2 (Jul. 6, 2026)",
-      "ownerMatter": 29
-    },
-    {
-      "path": "/documents/matter-29/rosenberg-v-first-advantage/Dkt 15 - Defendant's Answer and Affirmative Defenses (Sep 16, 2026).pdf",
-      "label": "Dkt 15 - Defendant's Answer and Affirmative Defenses (Sep 16, 2026)",
-      "ownerMatter": 29
-    },
-    {
-      "path": "/documents/matter-29/rosenberg-v-first-advantage/Docket Sheet (as of Sep 18, 2026).pdf",
-      "label": "Docket Sheet (as of Sep 18, 2026)",
       "ownerMatter": 29
     },
     {
@@ -3487,43 +3487,38 @@
       "ownerMatter": 29
     },
     {
-      "path": "/documents/matter-29/santee-v-accurate/Dkt 01 - Complaint (Oct 21, 2025).pdf",
-      "label": "Dkt 01 - Complaint (Oct 21, 2025)",
+      "path": "/documents/matter-29/santee-v-accurate-background/Dkt 01 - Complaint for FCRA Violations (Oct 21, 2025).pdf",
+      "label": "Dkt 01 - Complaint for FCRA Violations (Oct 21, 2025)",
       "ownerMatter": 29
     },
     {
-      "path": "/documents/matter-29/santee-v-accurate/Dkt 14 - Defendant's Answer and Affirmative Defenses (Dec 22, 2025).pdf",
-      "label": "Dkt 14 - Defendant's Answer and Affirmative Defenses (Dec 22, 2025)",
+      "path": "/documents/matter-29/santee-v-accurate-background/Dkt 14 - Accurate Answer and Affirmative Defenses (Dec 22, 2025).pdf",
+      "label": "Dkt 14 - Accurate Answer and Affirmative Defenses (Dec 22, 2025)",
       "ownerMatter": 29
     },
     {
-      "path": "/documents/matter-29/santee-v-accurate/Dkt 18 - Plaintiff's Acceptance of Rule 68 Offer of Judgment (Dec 23, 2025).pdf",
-      "label": "Dkt 18 - Plaintiff's Acceptance of Rule 68 Offer of Judgment (Dec 23, 2025)",
+      "path": "/documents/matter-29/santee-v-accurate-background/Dkt 18 - Plaintiff Acceptance of Rule 68 Offer (Dec 23, 2025).pdf",
+      "label": "Dkt 18 - Plaintiff Acceptance of Rule 68 Offer (Dec 23, 2025)",
       "ownerMatter": 29
     },
     {
-      "path": "/documents/matter-29/santee-v-accurate/Dkt 18-1 - Defendant's Rule 68 Offer of Judgment - $10,000 plus fees (Dec 15, 2025).pdf",
-      "label": "Dkt 18-1 - Defendant's Rule 68 Offer of Judgment - $10,000 plus fees (Dec 15, 2025)",
+      "path": "/documents/matter-29/santee-v-accurate-background/Dkt 18-1 - Accurate Rule 68 Offer of Judgment (Dec 23, 2025).pdf",
+      "label": "Dkt 18-1 - Accurate Rule 68 Offer of Judgment (Dec 23, 2025)",
       "ownerMatter": 29
     },
     {
-      "path": "/documents/matter-29/santee-v-accurate/Dkt 21 - Plaintiff's Motion for Attorney's Fees (Jan 8, 2026).pdf",
-      "label": "Dkt 21 - Plaintiff's Motion for Attorney's Fees (Jan 8, 2026)",
+      "path": "/documents/matter-29/santee-v-accurate-background/Dkt 21 - Plaintiff Motion for Attorneys Fees Under Rule 68 (Jan 8, 2026).pdf",
+      "label": "Dkt 21 - Plaintiff Motion for Attorneys Fees Under Rule 68 (Jan 8, 2026)",
       "ownerMatter": 29
     },
     {
-      "path": "/documents/matter-29/santee-v-accurate/Dkt 21-1 - Exhibit to Fees Motion - blank as filed (Jan 8, 2026).pdf",
-      "label": "Dkt 21-1 - Exhibit to Fees Motion - blank as filed (Jan 8, 2026)",
+      "path": "/documents/matter-29/santee-v-accurate-background/Dkt 21-1 - Exhibit to Fee Motion (Jan 8, 2026).pdf",
+      "label": "Dkt 21-1 - Exhibit to Fee Motion (Jan 8, 2026)",
       "ownerMatter": 29
     },
     {
-      "path": "/documents/matter-29/santee-v-accurate/Dkt 21-2 - Billing Activities Export ISO Fees Motion (Jan 8, 2026).pdf",
-      "label": "Dkt 21-2 - Billing Activities Export ISO Fees Motion (Jan 8, 2026)",
-      "ownerMatter": 29
-    },
-    {
-      "path": "/documents/matter-29/santee-v-accurate/Docket Sheet (as of Sep 18, 2026).pdf",
-      "label": "Docket Sheet (as of Sep 18, 2026)",
+      "path": "/documents/matter-29/santee-v-accurate-background/Dkt 21-2 - Billing Activities Export ISO Fee Motion (Jan 8, 2026).pdf",
+      "label": "Dkt 21-2 - Billing Activities Export ISO Fee Motion (Jan 8, 2026)",
       "ownerMatter": 29
     },
     {
@@ -3577,26 +3572,6 @@
       "ownerMatter": 29
     },
     {
-      "path": "/documents/matter-29/stanzick-searches/C.D. Cal. Attorney Search - Stanzick (Sep 18, 2026).pdf",
-      "label": "C.D. Cal. Attorney Search - Stanzick (Sep 18, 2026)",
-      "ownerMatter": 29
-    },
-    {
-      "path": "/documents/matter-29/stanzick-searches/E.D. Cal. Attorney Search - Stanzick (Sep 18, 2026).pdf",
-      "label": "E.D. Cal. Attorney Search - Stanzick (Sep 18, 2026)",
-      "ownerMatter": 29
-    },
-    {
-      "path": "/documents/matter-29/stanzick-searches/N.D. Cal. Attorney Search - Stanzick (Sep 18, 2026).pdf",
-      "label": "N.D. Cal. Attorney Search - Stanzick (Sep 18, 2026)",
-      "ownerMatter": 29
-    },
-    {
-      "path": "/documents/matter-29/stanzick-searches/S.D. Cal. Attorney Search - Stanzick (Sep 18, 2026).pdf",
-      "label": "S.D. Cal. Attorney Search - Stanzick (Sep 18, 2026)",
-      "ownerMatter": 29
-    },
-    {
       "path": "/documents/matter-29/Stipulation to Extend Time for Accurate Background to Respond (Plaintiff Counterpart, Sep 1 2026).docx",
       "label": "Stipulation to Extend Time for Accurate Background to Respond (Plaintiff Counterpart, Sep 1 2026)",
       "ownerMatter": 29
@@ -3632,48 +3607,53 @@
       "ownerMatter": 29
     },
     {
-      "path": "/documents/matter-29/varela-v-accurate/Dkt 01 - Complaint (Jan 21, 2026).pdf",
-      "label": "Dkt 01 - Complaint (Jan 21, 2026)",
+      "path": "/documents/matter-29/varela-v-accurate-background/Dkt 01 - Complaint for FCRA Violations (Jan 21, 2026).pdf",
+      "label": "Dkt 01 - Complaint for FCRA Violations (Jan 21, 2026)",
       "ownerMatter": 29
     },
     {
-      "path": "/documents/matter-29/varela-v-accurate/Dkt 13 - Defendant's Answer and Affirmative Defenses (Mar 30, 2026).pdf",
-      "label": "Dkt 13 - Defendant's Answer and Affirmative Defenses (Mar 30, 2026)",
+      "path": "/documents/matter-29/varela-v-accurate-background/Dkt 01-1 - Exhibit to Complaint (Jan 21, 2026).pdf",
+      "label": "Dkt 01-1 - Exhibit to Complaint (Jan 21, 2026)",
       "ownerMatter": 29
     },
     {
-      "path": "/documents/matter-29/varela-v-accurate/Dkt 15 - Joint Rule 26(f) Report (Apr 23, 2026).pdf",
+      "path": "/documents/matter-29/varela-v-accurate-background/Dkt 13 - Accurate Answer and Affirmative Defenses (Mar 30, 2026).pdf",
+      "label": "Dkt 13 - Accurate Answer and Affirmative Defenses (Mar 30, 2026)",
+      "ownerMatter": 29
+    },
+    {
+      "path": "/documents/matter-29/varela-v-accurate-background/Dkt 15 - Joint Rule 26(f) Report (Apr 23, 2026).pdf",
       "label": "Dkt 15 - Joint Rule 26(f) Report (Apr 23, 2026)",
       "ownerMatter": 29
     },
     {
-      "path": "/documents/matter-29/varela-v-accurate/Dkt 15-1 - Pretrial Dates Worksheet (Apr 23, 2026).pdf",
-      "label": "Dkt 15-1 - Pretrial Dates Worksheet (Apr 23, 2026)",
+      "path": "/documents/matter-29/varela-v-accurate-background/Dkt 15-1 - Schedule of Pretrial Dates (Apr 23, 2026).pdf",
+      "label": "Dkt 15-1 - Schedule of Pretrial Dates (Apr 23, 2026)",
       "ownerMatter": 29
     },
     {
-      "path": "/documents/matter-29/varela-v-accurate/Dkt 23 - Ex Parte Application re Rule 60(b) with Settlement Agreement Ex. A (Jun 19, 2026).pdf",
-      "label": "Dkt 23 - Ex Parte Application re Rule 60(b) with Settlement Agreement Ex. A (Jun 19, 2026)",
+      "path": "/documents/matter-29/varela-v-accurate-background/Dkt 25 - Opposition to Plaintiff Ex Parte Application (Jul 1, 2026).pdf",
+      "label": "Dkt 25 - Opposition to Plaintiff Ex Parte Application (Jul 1, 2026)",
       "ownerMatter": 29
     },
     {
-      "path": "/documents/matter-29/varela-v-accurate/Dkt 25 - Defendant's Opposition to Ex Parte Application (Jul 1, 2026).pdf",
-      "label": "Dkt 25 - Defendant's Opposition to Ex Parte Application (Jul 1, 2026)",
+      "path": "/documents/matter-29/walker-v-ronin-staffing/Dkt 01 - Class Action Complaint (Jul 3, 2024).pdf",
+      "label": "Dkt 01 - Class Action Complaint (Jul 3, 2024)",
       "ownerMatter": 29
     },
     {
-      "path": "/documents/matter-29/varela-v-accurate/Docket Sheet (as of Sep 18, 2026).pdf",
-      "label": "Docket Sheet (as of Sep 18, 2026)",
+      "path": "/documents/matter-29/walker-v-ronin-staffing/Dkt 14 - Sterling Infosystems Answer to Complaint (Sep 12, 2024).pdf",
+      "label": "Dkt 14 - Sterling Infosystems Answer to Complaint (Sep 12, 2024)",
       "ownerMatter": 29
     },
     {
-      "path": "/documents/matter-29/walker-v-ronin-staffing/Docket Report - History (as of Sep 18, 2026).pdf",
-      "label": "Docket Report - History (as of Sep 18, 2026)",
+      "path": "/documents/matter-29/walker-v-ronin-staffing/Dkt 16 - Stipulation to Dismiss Sterling Without Prejudice (Oct 29, 2024).pdf",
+      "label": "Dkt 16 - Stipulation to Dismiss Sterling Without Prejudice (Oct 29, 2024)",
       "ownerMatter": 29
     },
     {
-      "path": "/documents/matter-29/walker-v-ronin-staffing/Docket Report (as of Sep 18, 2026).pdf",
-      "label": "Docket Report (as of Sep 18, 2026)",
+      "path": "/documents/matter-29/walker-v-ronin-staffing/Dkt 16-1 - Order Dismissing Sterling Infosystems Without Prejudice (Oct 29, 2024).pdf",
+      "label": "Dkt 16-1 - Order Dismissing Sterling Infosystems Without Prejudice (Oct 29, 2024)",
       "ownerMatter": 29
     },
     {
