@@ -974,6 +974,7 @@ UNIFIED memo, 2026-09-19. Recon: `legal-intel/recon/2026-09-19-matter-28-keycite
 
 ```
 python3 internal/scripts/build-westlaw-queue.py
+python3 internal/scripts/render-westlaw-queue-pdf.py   # → internal/docs/WESTLAW_PORTFOLIO_QUEUE.pdf
 ```
 
 Does not touch the verification ledger. Feed flags back through a dated recon + a later Round overlay the way Round 12 did.
