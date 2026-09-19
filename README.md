@@ -181,7 +181,7 @@ Standalone retail civil-rights matter arising from an August 25, 2026 consumer r
 | 29 | Newanforbi v. Amazon.com Services, LLC | 4:26-cv-09249-ASK | USDC N.D. Cal. (Oakland; formerly 3:26-cv-09249-ASK) | Federal | Plaintiff consent filed — both answers Sep. 22 |
 | 30 | Newanforbi v. Moua, et al. | TBD | USDC N.D. Cal. | Federal | Pre-filing — Moua v9 ready; GCA window open |
 | 31 | Newanforbi v. First Advantage LLC | TBD | San Joaquin Sup. Ct. (anticipated) | State | Pre-filing — no demand or complaint yet |
-| 32 | Nforbi v. Meza-Gonzalez, et al | 4:26-cv-08271-ASK | USDC N.D. Cal. (Oakland; 4:26-cv-08271-ASK; opened as 3:26-cv-08271-PHK; related Serrato 3:26-cv-05953-CRB and Candelaria 3:26-cv-08272-LJC) | Federal | 415.20 papers Sep. 17 — mail then file decl |
+| 32 | Nforbi v. Meza-Gonzalez, et al | 4:26-cv-08271-ASK | USDC N.D. Cal. (Oakland; 4:26-cv-08271-ASK; opened as 3:26-cv-08271-PHK; related Serrato 3:26-cv-05953-CRB and Candelaria 3:26-cv-08272-LJC) | Federal | Rule 55(a) default packet drafted Sep. 18 |
 | 33 | Nforbi v. Candelaria et al. | 3:26-cv-08272-LJC | USDC N.D. Cal. (San Francisco Div.) | Federal | Dkt. 17 MTS; opp. Sep. 23; name corrected |
 | 34 | Newanforbi v. Counseling and Psychotherapy Center, Inc., et al. | TBD | USDC N.D. Cal. (San Jose Div.) / Santa Clara Sup. Ct. | Federal | Pre-filing — intake & compliance monitoring |
 | 35 | Ngwa Nforbi v. Ross Stores, Inc., et al. | 26CV501995 | Santa Clara Sup. Ct. (Downtown / First Street) | State | File caption request — then serve Ross ~Oct 25 |

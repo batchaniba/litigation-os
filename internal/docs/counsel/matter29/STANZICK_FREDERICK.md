@@ -125,14 +125,80 @@ Watch for:
 4. **ICRAA mapping.** For each ICRAA section pled, write the one-sentence version of which Accurate act violated it. If you can't, neither can the complaint — and she will notice.
 5. **Watch the answer-vs-MTD tell.** An answer (Path A) signals they want discovery control and believe the report helps them. A surgical MTD (Path B) signals they think the pleading — not the documents — is the weak point.
 
+## 2026-09-18 intel drop — the playbook, confirmed in the wild
+
+Forty-one PACER pulls analyzed today (archived under `/documents/matter-29/{varela,santee,rangel,rosenberg,martin,carrillo,walker,williams-v-accurate}-*/` and `/documents/matter-29/stanzick-searches/`). The forecast above sharpens into a confirmed pattern.
+
+### Answer, then settle
+
+Her cadence is now documented across three Accurate cases:
+
+| Case | Filed | Answered | Settled | Number |
+|---|---|---|---|---|
+| *Santee v. Accurate*, 8:25-cv-02447-FWS-JDE | 10/21/25 | 12/22/25 (template) | 12/23/25 (Rule 68) | **~$17,240 all-in** ($10,000 + $6,757.50 fees + $480 costs) |
+| *Varela v. Accurate*, 5:26-cv-00258-KK-DTB | 1/21/26 | 3/30/26 (template) | 5/5/26 notice | **$35,000 all-in** (SA filed publicly as Ex. A to the 60(b) fight; plaintiff net $15,758.70) |
+| *Rangel v. Accurate*, 3:25-cv-01983-AJB-BJW | 8/1/25 | 9/26/25 (12-defense) | 12/1/25 notice | amount not on docket; economics suggest near the band |
+| *Williams v. Accurate*, 1:23-cv-00175 (N.D. Ill.) | 1/11/23 | 3/2/23 (5-defense, Drury lead) | 4/10/23 notice | amount not on docket; fastest Accurate settle in the dataset (~5 weeks post-answer) |
+
+She answers on a template, prices the case pre-discovery, and exits — usually within ~2 months of the answer, before any discovery motion. The N.D. Cal. attorney search confirms the cadence at scale: 11 cases, most closed 2–7 months after filing.
+
+**Settlement band on pure-accuracy cases: ~$17k–$35k all-in.** Her *Rangel* outcome (ICRAA+FCRA+UCL, modest actuals) sits in/near the band. *Rosenberg* (~$200k/yr wage loss) is the upside comp to watch — it has not settled yet (CMC 11/5/26).
+
+### The Rangel answer is the M29 answer preview
+
+*Rangel* pleads **ICRAA + FCRA + UCL §17200 — the exact M29-against-Accurate stack minus §290.46** — and her answer (Doc 8, 9/26/25) runs **twelve defenses**, not the thin two-defense *Varela* version:
+
+1. Failure to state a claim (complaint didn't specify FCRA/ICRAA sections);
+2. Reasonable procedures / maximum possible accuracy;
+3. Reasonable reinvestigation + timely amended report;
+4. No proximate cause;
+5. Failure to mitigate;
+6. **UCL preempted by 15 U.S.C. §1681t**;
+7. *Safeco* good-faith/objectively-reasonable shield, **extended to "the FCRA and the ICRAA"**;
+8. –11. The **"we're the CRA, not the procurer/user" series** — authorization, disclosure, adverse-action, and certification claims can only be asserted against the entity procuring/using the report;
+12. **§1681k(a) dual compliance** — contemporaneous notice *and* strict procedures.
+
+Admissions pattern to expect: she admits the mechanical facts (Sharp ordered 5/15/25, report completed 5/20/25, dispute received 5/30/25, amended report issued) and the qualified ICRAA status ("provides certain services as an 'investigative consumer reporting agency' … as limited to those activities only"), but punts report contents to **"the referenced report is the best evidence of its contents."** Expect the M29 answer to track this document nearly paragraph for paragraph, plus §290.46-specific denials.
+
+### Williams v. Accurate — the Amazon + Accurate comp (closest M29 factual match)
+
+*Williams v. Accurate*, 1:23-cv-00175 (N.D. Ill., Judge Pacold) pairs **the exact M29 defendants**: Amazon requested the background check, Accurate ran it. Darion Williams lost *two* Amazon jobs to the same mismatched record — a 2016 Illinois involuntary-manslaughter conviction (case 2016CR0583701) matched on first name, last name, and DOB only (his middle initial J; the record-holder's M). Disputed 2/2021 → removed; re-applied 11/2022 with a contingent offer → same record re-inserted; disputed 11/18/22 → removed 12/7/22, too late.
+
+Counts: FCRA §1681e(b) + §1681i (reinsertion, §§1681i(a)(5)(A)–(C)). (Complaint ¶104 has a copy-paste glitch — "re-inserted at least nine prescriptions associated with at least five different physicians" — leftover boilerplate from another template; sloppy plaintiffs' shop.)
+
+Her answer (Doc 12, 3/2/23, co-signed Drury + Stanzick) runs the **thin 5-defense version** — mitigate, no proximate cause, *Safeco* shield, reasonable procedures, reasonable reinvestigation — no UCL/ICRAA counts to defend, so no preemption or "we're the CRA" series. Two tells: the quiet date correction again (complaint: Amazon requested the report 2/2/21; answer admits 2/12/21 — same playbook as Varela and Santee), and the crux line: **"Accurate has no record of receiving a dispute from Plaintiff in or around February 2021."** That sentence is the kill shot against the §1681i reinsertion theory — and the sentence to expect verbatim if M29 has any dispute-then-re-report arc. She admits the Nov 2022 dispute, the reinvestigation, and the 12/7/22 removal; admits prior FCRA suits; denies "Darion Williams is a very common name."
+
+Settled 4/10/23 — **~5 weeks after the answer**, the fastest Accurate exit in the dataset, *despite* a reinsertion claim and two lost Amazon jobs. She prices and exits regardless of claim strength.
+
+### Correction: ICRAA is no longer untested ground for her
+
+*Rosenberg v. First Advantage*, 3:26-cv-07593-TLT (N.D. Cal., Judge Thompson) pleads **ICRAA as its first cause of action** (§§1786.20(b), 1786.24, 1786.16), and Stanzick **answered it 9/16/26**. She is defending an ICRAA claim right now. **§290.46 remains the one claim she has never defended or priced** (Rosenberg is a drug-test/employment-verification dispute — no registry allegation). Her ICRAA answer adapts the template: denies being an investigative CRA under the FCRA, but **admits** qualified investigative-CRA status under the ICRAA "as to those activities only," and denies the report was an "investigative consumer report" under §1786.2(c).
+
+### What this means for the September 22 forecast
+
+Path A (answer) is now the strong favorite — and the answer will look like *Rangel* Doc 8. The settlement band gives the pricing anchor: the only Accurate-side premium M29 carries over *Rangel* is §290.46, which she has never priced. The §290.46 sourcing evidence is the hammer that moves the number off her $17–35k band. *Williams* is now the most on-point Accurate-side comp (Amazon + Accurate, two lost jobs, reinsertion) — her number there priced a stronger claim than *Rangel* and still exited in five weeks.
+
+### Attorney-search inventory (all pulled 9/18/26)
+
+- **N.D. Cal.:** 11 cases — First Advantage ×2, Sterling, Checkr, Inflection ×2, DISA, Asurint, M29 (4:26-cv-09249-ASK), *Rosenberg*, *Williams* (4:25-cv-06678-AMO, open 13+ months — the outlier).
+- **C.D. Cal.:** 31 cases — background-screening defense concentration (Sterling, Equifax, AppFolio, Asurint, Citibank/Discover Bank one-offs).
+- **E.D. Cal.:** 3 cases — two closed Equifax cases + *Martin v. AssureHire* (2:26-cv-01583-DAD-CSK; Stanzick answer due 10/16/26, scheduling conference same day 1:30 p.m. PT before Judge Drozd).
+- **S.D. Cal.:** 5 cases — *Rangel* (settled), *Roman v. Sterling* (the Rule 12(b)(6)-with-leave playbook).
+- **N.D. Ill.:** 65 cases — her practice arc in one printout. 2021–22 was bulk big-3 CRA defense (Equifax/Experian/TransUnion FCRA consumer cases, most closed in 2–5 months); from late 2022 the vendor pivot: *Spencer v. First Advantage* (1:22-cv-06767, closed 9/6/23), *Williams v. Accurate* (1:23-cv-00175), *Ubau v. Inflection* (1:25-cv-00202, closed 4/18/25). Two open: *Coe v. Experian* (1:25-cv-05761), *Aurand v. Equifax* (1:25-cv-06996).
+- **S.D. Ill.:** 5 cases — franchise, bank/credit-union, two Equifax FCRA cases; one open: *Bell v. Equifax* (3:26-cv-00134, filed 2/6/26).
+
+Also pulled: *Carrillo* class-cert briefing (Docs 55–59; her Doc 57 Asurint opposition is a preview paper for her M29 briefing style; class-cert ruling still pending 5 months after the 4/15/26 hearing; Doc 64 RJN filed 9/15/26) and the *Walker* docket (2:24-cv-05669-CBM-SSC).
+
 ## Open verification
 
-- *Roman* motion signature block (did Stanzick author it?).
-- The ~117-matter broader profile: pull the full docket list and confirm the client roster (Checkr, DISA, Equifax, First Advantage, Inflection, Sterling).
-- Stanzick CalBar record (SBN 354704 per the removal consent).
+- *Roman* motion signature block (did Stanzick author it?). — *S.D. Cal. search confirms she is on the Roman docket; authorship of the 12(b)(6) still unverified.*
+- The ~117-matter broader profile: pull the full docket list and confirm the client roster (Checkr, DISA, Equifax, First Advantage, Inflection, Sterling). — *Substantially confirmed 9/18/26: 31 C.D. Cal. + 11 N.D. Cal. + 65 N.D. Ill. + 5 S.D. Ill. cases match the roster; N.D. Ill. shows the 2021–22 big-3 CRA bulk-defense era before the vendor pivot.*
+- Stanzick CalBar record (SBN 354704 per the removal consent). — *Confirmed on her filed answers (Rangel Doc 8, Rosenberg Doc 15).*
 - Frederick's recent N.D. Cal. employment MTD outcomes — win/loss on Fair Chance Act pleadings.
 - Whether the two desks are coordinating (joint defense agreement signals in the docket).
 
 ## Changelog
 
 - 2026-09-11: Created. Two-desk comparison from generated dossiers + counsel research. Pre-September 22 forecast.
+- 2026-09-18: Added 36-document PACER intel drop (Varela/Santee/Rangel/Rosenberg/Martin/Carrillo/Walker + four-district attorney searches). Confirmed answer-then-settle cadence ($17k–$35k band), Rangel 12-defense answer as the M29 preview, Rosenberg ICRAA correction (§290.46 still untested).
+- 2026-09-18 (evening): Added Williams v. Accurate Docs 1 + 12 (N.D. Ill. docket + complaint + answer) and N.D. Ill./S.D. Ill. attorney searches. Williams is the closest M29 factual comp (Amazon + Accurate, two lost jobs, §1681i reinsertion; settled ~5 weeks post-answer); answer's crux line is "no record of receiving a dispute" — expect it verbatim on any re-report arc.
