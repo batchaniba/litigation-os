@@ -80,10 +80,15 @@ handling existence + pin verification from free sources.
    signing in, so seat time is pure lookups.
 4. **Prioritize load-bearing authorities** (the cases the argument actually stands
    on) for full treatment reads; string-cite passengers get a flag glance.
-5. **Per cite:** one search, note the flag color, open the negative-treatment tab
-   only on yellow/red. Record what the treatment is **and whether it touches the
-   proposition cited for** — a yellow flag on an unrelated point doesn't sink the
-   cite.
+5. **Exhaust each cite in a single visit.** Document views are the scarce resource
+   (20/session), so never spend two sessions on one citation: per cite, do one
+   search, note the flag color, open the negative-treatment tab on yellow/red, and
+   capture everything then — the full treatment list (courts, dates, treatment types)
+   plus the actual passages and quotes for any treatment that could touch the
+   proposition cited for. A yellow flag on an unrelated point doesn't sink the cite,
+   but record *why* so nobody re-reads it later. Budget the 20 views: flag-glance the
+   whole batch first, then spend deep-read views only on flags that could matter
+   (standing rule adopted 2026-09-19 after the KeyCite + deep-dive sessions).
 6. **Session hygiene:** in through the library link, whole batch in one go, Sign Off
    to free the seat. If both seats are busy, walk away and retry later.
 7. **Feed results back** into the matter's verification notes so the next draft
