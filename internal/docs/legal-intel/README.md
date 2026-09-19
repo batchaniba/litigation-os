@@ -40,6 +40,7 @@ Closed shells (1, 2, 5, 7, 8, 15) stay off this table. They appear only on the c
 - Counsel hands: `counsel/`
 - Judge memos: `judges/` — check assignment before using
 - Dated surveys: `recon/`
+- Matter 28 MTD stack: [`recon/2026-09-12-matter-28-UNIFIED.md`](recon/2026-09-12-matter-28-UNIFIED.md) (briefing spine) · [`recon/2026-09-18-matter-28-mtd-gap-fill.md`](recon/2026-09-18-matter-28-mtd-gap-fill.md) (PLRA / *Merrill* / Bane / RICO pins). Draft from UNIFIED. Do not open the recon files to draft.
 - Portfolio impeachment map: [`../CROSS_MATTER_RISK_INDEX.md`](../CROSS_MATTER_RISK_INDEX.md) (dated Jul. 11, 2026 — refresh against live captions)
 - 28 cite whitelist: [`../MATTER_28_SAFE_CITE_LIST.md`](../MATTER_28_SAFE_CITE_LIST.md)
 
