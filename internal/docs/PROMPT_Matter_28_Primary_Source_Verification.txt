@@ -1,0 +1,261 @@
+MATTER 28 — PRIMARY-SOURCE VERIFICATION TASK (for an external model with web access)
+
+Prepared 2026-09-19. Paste this whole block into ChatGPT, Grok, Gemini, or Cursor.
+Do not paste repository URLs, git links, or credentials into any chat. None are needed here.
+
+====================================================================
+ROLE AND POSTURE
+====================================================================
+
+You are doing legal-research verification for a pro se plaintiff in an active
+federal case. You are NOT giving legal advice and NOT drafting a brief. Your only
+job is to READ PRIMARY SOURCES and report exactly what they say.
+
+Case: Newanforbi v. Shannon Smith, LCSW, CEO, et al.
+Court: U.S. District Court, Northern District of California
+No.: 3:26-cv-07504-LJC
+Judge: Hon. Lisa J. Cisneros (Magistrate Judge)
+Posture: Defendants' responsive pleading was due Sept. 21, 2026. A Rule 12(b)(6)
+motion is expected. Opposition is due 14 days after the motion is filed
+(N.D. Cal. Civil L.R. 7-3(a)). Initial CMC Oct. 22, 2026.
+
+Defendants: HOPE Psychotherapy, Inc. (d/b/a HOPE Program), a CASOMB-certified
+California sex offender management program (SOMP) vendor operating under a CDCR
+contract; and Shannon Smith, LCSW, its founder and CEO.
+Counsel: Blaze Van Dine and Eric Thomas Martinez, Sims, Lawrence & Broghammer.
+
+Claims: 42 U.S.C. § 1983 (Monell against HOPE; individual capacity against Smith);
+Bane Act (Cal. Civ. Code § 52.1); fraud / negligent misrepresentation;
+RICO (18 U.S.C. § 1962(c)-(d)).
+
+====================================================================
+THE HARD RULES — READ THESE BEFORE YOU START
+====================================================================
+
+1. NEVER report a case as verified from memory. Open the source. If you cannot
+   open it, say "COULD NOT OPEN" and name what you tried. A wrong "verified" is
+   worse than an honest gap — this portfolio has already had to track fabricated
+   citations as remediation debt.
+
+2. Prefer, in this order: the court's own website (supremecourt.gov,
+   cdn.ca9.uscourts.gov, courts.ca.gov), govinfo.gov, CourtListener, Justia,
+   FindLaw, Cornell LII, leginfo.legislature.ca.gov, OAL / CDCR rulemaking pages.
+   Secondary commentary is a lead, never an answer.
+
+3. Quote exactly, with the page or footnote where the words appear. If you cannot
+   confirm a pin against actual reporter pagination, label the pin SECONDARY and
+   say what corroborated it.
+
+4. Report holdings, not vibes. For every case: the disposition (affirmed /
+   reversed / dismissed), what was actually decided, and what the court expressly
+   declined to decide. Published or unpublished. If unpublished, say so.
+
+5. If a source contradicts what this prompt assumes, say so plainly. Contradicting
+   the assumption is the most valuable thing you can do. Do not agree to be
+   agreeable.
+
+6. Do not draft argument. Do not propose brief language. Verification only.
+
+====================================================================
+PRIORITY 1 — THREE UNRESOLVED QUESTIONS (do these first)
+====================================================================
+
+1A. MEINHARDT v. CITY OF SUNNYVALE (2024) 16 Cal.5th 643
+    Two internal research passes disagree about this case, and the disagreement
+    changes the lead argument. Read the opinion and answer:
+    - What is the holding on when the time to appeal begins to run?
+    - Did the Court ADOPT or REJECT the "order that is sufficiently final may be
+      treated as the judgment" approach?
+    - Quote anything the opinion says about ORDERS SUSTAINING A DEMURRER WITHOUT
+      LEAVE TO AMEND and whether an appeal must be taken from a judgment.
+    - Does the opinion say anything about res judicata or preclusion, as opposed
+      to appealability? Quote it or say it does not.
+    - Bottom line: does this decision make it EASIER or HARDER to argue that an
+      order sustaining a demurrer, with no judgment of dismissal entered, is not
+      a final judgment for preclusion purposes?
+
+1B. ESTATE OF ESCHE v. BUNUEL-JORDANA, No. 24-6244 (9th Cir. Sept. 29, 2025)
+    - What was the disposition?
+    - Was any part decided on APPELLATE JURISDICTION grounds (e.g., collateral
+      order doctrine, or no jurisdiction over a private party's QI appeal)?
+    - Quote what the court says about whether private parties may invoke
+      qualified immunity.
+    - Is that discussion the HOLDING, or reasoning supporting a different
+      holding? This is the exact question in dispute. Be precise.
+
+1C. WICKLUND v. IDAHO DEPARTMENT OF CORRECTION, 623 F. App'x 338
+    (9th Cir. No. 12-35294, decided Nov. 23, 2015)
+    - Published or unpublished memorandum disposition?
+    - What claims were at issue and what was the disposition on each?
+    - Did the court address First Amendment retaliation? Qualified immunity?
+      If so, how did it rule on each — granted, denied, affirmed, reversed?
+    - Note: there are several related Wicklund actions (v. Page, v. Ada County,
+      v. Huntsman). Confirm you are reading No. 12-35294 and say which district
+      case it came from.
+
+====================================================================
+PRIORITY 2 — THE PRECLUSION BATTLEGROUND
+====================================================================
+
+2A. PALOMAR MOBILEHOME PARK ASS'N v. CITY OF SAN MARCOS, 989 F.2d 362 (9th Cir. 1993)
+    Quote what it says about whether a California judgment entered after a
+    general demurrer is a judgment on the merits, and give the pin.
+
+2B. POLLOCK v. UNIVERSITY OF SOUTHERN CALIFORNIA, 112 Cal.App.4th 1416 (2003)
+    Quote the passage distinguishing GENERAL from SPECIAL demurrers for
+    preclusion purposes, with the pin.
+
+2C. GODDARD v. SECURITY TITLE INS. & GUAR. CO., 14 Cal.2d 47 (1939), at 52-53
+    Quote the sentence acknowledging that even a general-demurrer judgment MAY
+    NOT be on the merits where the defect is technical or formal. Pin it.
+
+2D. VALVO v. UNIVERSITY OF SOUTHERN CALIFORNIA, 67 Cal.App.3d 887 (1977)
+    Confirm the text at 891-92 and footnote 3. Quote the sentence stating that
+    until entry of judgment a ruling on a demurrer is not res judicata.
+
+2E. LEE v. CITY OF LOS ANGELES, 250 F.3d 668 (9th Cir.)
+    Confirm the YEAR — sources print both 2000 and 2001. Quote what it says
+    about taking judicial notice of the truth of disputed factual matters, with
+    the pin.
+
+2F. CALIFORNIA EXHAUSTION DEMURRERS
+    Is failure to exhaust administrative remedies raised under Code of Civil
+    Procedure § 430.10(a) (no jurisdiction of the subject of the cause of action)
+    or § 430.10(e) (failure to state a cause of action), or either? Cite
+    California authority. This matters because the state court here called
+    exhaustion a "jurisdictional requirement" while the prevailing party's own
+    proposed order recited the (e) formulation.
+
+====================================================================
+PRIORITY 3 — THE REGULATORY SCHEME (state-action and due-process core)
+====================================================================
+
+3A. 15 CAL. CODE REGS. § 3574 (Sex Offender Treatment)
+    - Give the OPERATIVE / EFFECTIVE DATE of the permanent regulation, from the
+      Office of Administrative Law filing or the CDCR rulemaking record
+      (see CDCR notice NCR 25-01, dated Jan. 3, 2025). The notice date is NOT
+      the operative date. This is the single most important item in Priority 3.
+    - Quote subdivision by subdivision, with subdivision letters:
+        * that supervised persons MAY COMPLETE the program BEFORE DISCHARGE
+          FROM PAROLE;
+        * that the review of program completion is INDEPENDENT of whether the
+          person should be discharged from parole;
+        * the one-year Containment Team Meeting review and the factors it
+          considers;
+        * the requirement that a determination to RETAIN be supported by GOOD
+          CAUSE, stated in writing, signed by the treatment provider AND the
+          parole agent on CDCR Form 3043, and delivered within 30 days.
+    - Was there an earlier emergency or predecessor version in effect during
+      calendar year 2025? If so, give its dates and quote the equivalent
+      retention language.
+
+3B. CAL. PENAL CODE § 3008(d)(1) and (d)(2)
+    Quote both subdivisions verbatim from leginfo.legislature.ca.gov. Confirm
+    whether (d)(1) says "participate in" while (d)(2) says "successfully
+    complete," and give the operative dates of each.
+
+3C. CDCR FORM 3043 (Containment Team Meeting / Earned Discharge Consideration
+    Committee), Rev. 11/24
+    Is the form itself publicly available? If so, describe the fields relating
+    to retention, completion, signatures, and reasons. Give the URL.
+
+====================================================================
+PRIORITY 4 — PIN CONFIRMATIONS (quote the sentence at each pin)
+====================================================================
+
+  - ASARCO, LLC v. Union Pacific R.R., 765 F.3d 999, 1004 (9th Cir. 2014)
+      -> the "obvious bar on the face of the complaint" standard for resolving
+         an affirmative defense on a Rule 12(b)(6) motion
+  - Rawson v. Recovery Innovations, Inc., 975 F.3d 742, 753 (9th Cir. 2020)
+      -> "significantly involves itself in the private parties' actions and
+         decisionmaking at issue"
+  - Kirtley v. Rainey, 326 F.3d 1088, 1092 (9th Cir. 2003)
+      -> the four state-action tests
+  - Caviness v. Horizon Cmty. Learning Ctr., 590 F.3d 806 (9th Cir. 2010)
+      -> the conduct-specific inquiry; ALSO state the actual outcome (was the
+         charter school held to be a state actor for the conduct at issue?)
+  - Richardson v. McKnight, 521 U.S. 399 (1997)
+      -> the "systematically organized" private firm language, with the pin
+  - Heath v. Cleary, 708 F.2d 1376, 1380 n.4 (9th Cir. 1983)
+      -> confirm the footnote number is 4 and the page is 1380, and quote it
+  - Perez v. City of San Bruno, 27 Cal.3d 875, 882-83 (1980)
+      -> the prematurity / precondition passage
+  - Zetz v. Boston Scientific Corp., 398 F. Supp. 3d 700, 713 (E.D. Cal. 2019)
+  - Schreiber Distrib. Co. v. Serv-Well Furniture Co., 806 F.2d 1393, 1400-01
+      (9th Cir. 1986)
+  - DZ Reserve v. Meta Platforms, Inc., 96 F.4th 1223, 1233 (9th Cir. 2024)
+  - Arizona Students' Ass'n v. Ariz. Bd. of Regents, 824 F.3d 858, 867
+      (9th Cir. 2016)
+  - Medical Marijuana, Inc. v. Horn, 604 U.S. 593 (2025)
+      -> confirm the official U.S. Reports cite is 604 U.S. 593, and quote what
+         the Court expressly declined to decide about "business," "property,"
+         and proximate cause
+
+====================================================================
+PRIORITY 5 — OPEN SEARCH (report absences as findings)
+====================================================================
+
+5A. Any decision from ANY court, any year, holding a private sex-offender
+    treatment provider or its officer liable in DAMAGES under § 1983, the Bane
+    Act, or RICO. Prior searches found none. If you find none, say so
+    explicitly — a verified absence is a useful finding.
+
+5B. Any 2024-2026 federal decision applying Richardson v. McKnight or
+    Filarsky v. Delia to decide whether a private treatment contractor may
+    invoke qualified immunity.
+
+5C. Merrill v. Mental Health Systems, Inc., S.D. Cal. No. 3:16-cv-01090-GPC-JMA.
+    What happened AFTER the Sept. 13, 2016 order? Was there a later ruling on
+    state action, a dismissal, a settlement, or an appeal? Subsequent history
+    is currently unverified.
+
+5D. Public record on the defendants, with URLs and capture dates:
+    - HOPE Program / HOPE Psychotherapy, Inc. — number of California locations,
+      CASOMB certification statements, CDCR or county contracts
+    - Shannon Smith, LCSW — California Board of Behavioral Sciences license
+      number and status, and any public disciplinary or enforcement record
+    - Any California or county contract award to HOPE Psychotherapy, Inc.
+      Report what the records say, including if they show nothing adverse.
+
+====================================================================
+OPTIONAL — CASE DOCUMENTS
+====================================================================
+
+If you need the underlying documents, a read-only MCP endpoint serves them.
+No credentials, no repository access, no login:
+
+  MCP (JSON-RPC 2.0, Streamable HTTP):
+    POST https://litigation-doc-api.ss8sxswwkt.workers.dev/mcp
+    Tools: listMatters, getMatter, upcomingDeadlines, getFuseBoard,
+           getMatterDocs, searchDocuments, fetchDocument, readDocumentText
+    Use readDocumentText to read a document's text inline.
+
+  REST:
+    https://litigation-doc-api.ss8sxswwkt.workers.dev/matters
+    https://litigation-doc-api.ss8sxswwkt.workers.dev/doc/<sha256>
+
+This case is Matter 28. Documents are optional — Priorities 1 through 5 are
+answerable from public legal sources alone.
+
+====================================================================
+OUTPUT FORMAT
+====================================================================
+
+One block per item, in this exact shape, so it can be pasted back:
+
+  ITEM: <the identifier above, e.g. 1A or 2C>
+  SOURCE READ: <full URL>
+  STATUS: VERIFIED | PARTIALLY VERIFIED | COULD NOT OPEN | CONTRADICTED
+  HOLDING / TEXT: <what it actually says>
+  EXACT QUOTE: "<quoted words>" (pin: <page / footnote / subdivision>)
+  PIN CONFIDENCE: PRIMARY (read in the source) | SECONDARY (corroborated only)
+  PUBLISHED?: <published / unpublished / N/A>
+  EXPRESSLY NOT DECIDED: <what the court declined to reach, or N/A>
+  CONTRADICTS THE PROMPT?: <yes + explain, or no>
+
+Finish with two short lists:
+  (1) EVERY item you could NOT verify, and what you tried.
+  (2) Anything you found that CUTS AGAINST the plaintiff, stated plainly.
+
+List (2) is the most valuable part of your answer. Do not soften it and do not
+omit it.
