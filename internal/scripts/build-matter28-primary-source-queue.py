@@ -1,0 +1,646 @@
+#!/usr/bin/env python3
+"""Build the Matter 28 primary-source verification queue.
+
+Isolates the CASE-LAW citation sources out of the Matter 28 primary-source
+verification task (prepared 2026-09-19 for an external model with web
+access) into a payload the citation funnel can consume, and renders the
+human report beside it so the two cannot drift apart.
+
+Statutes, regulations, agency forms, and entity research from the same
+task are recorded under "excluded" with where they belong instead — they
+are out of scope, not forgotten.
+
+Outputs:
+  internal/docs/citation_sources_matter28_primary.json
+      cites[]       — flat strings, read directly by
+                      lookup-citations.py --cites-file
+      caseLaw[]     — one entry per source: pin, published?, the questions
+                      that verify it, and its existing portfolio status
+      openSearches[]— searches whose output becomes new caseLaw entries
+      excluded[]    — the non-case-law material and where it routes
+      wiring{}      — lookup -> round overlay -> ledger -> safe-cite list
+
+  internal/docs/MATTER_28_PRIMARY_SOURCE_QUEUE.md
+      the same queue, readable
+
+This file carries no verification statuses and cannot create one. Statuses
+enter the portfolio only through citation_verification_rounds.json, after a
+lookup run whose controls passed.
+
+Usage:
+  python3 internal/scripts/build-matter28-primary-source-queue.py
+  python3 internal/scripts/build-matter28-primary-source-queue.py --check
+"""
+import json
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+OUT = ROOT / "docs/citation_sources_matter28_primary.json"
+REPORT = ROOT / "docs/MATTER_28_PRIMARY_SOURCE_QUEUE.md"
+
+
+def c(item, citation, name, *, court, year, pin=None, reporter_pin=None,
+      published=None, lookup="cap+courtlistener", lookup_note="",
+      questions=(), assumption="", existing=None, primary=()):
+    return {
+        "item": item,
+        "citation": citation,
+        "caseName": name,
+        "court": court,
+        "year": year,
+        "reporterPin": reporter_pin,
+        "pinsToConfirm": list(pin or []),
+        "published": published,
+        "lookupProbe": lookup,
+        "lookupNote": lookup_note,
+        "verificationQuestions": list(questions),
+        "promptAssumption": assumption,
+        "existingPortfolioStatus": existing or {
+            "inCorpusIndex": False, "ledgerStatus": None,
+            "auditStatus": None, "safeCiteList": False,
+            "note": "new to the portfolio — no prior verification state",
+        },
+        "primarySources": list(primary),
+    }
+
+
+case_law = [
+    c("1A",
+      "Meinhardt v. City of Sunnyvale, 16 Cal.5th 643 (2024)",
+      "Meinhardt v. City of Sunnyvale",
+      court="Cal. Supreme Court", year=2024, reporter_pin="16 Cal.5th 643",
+      published="published",
+      lookup_note="CAP slug cal-5th is in lookup-citations.py REPORTER_MAP.",
+      questions=[
+          "Holding on when the time to appeal begins to run.",
+          "Did the Court ADOPT or REJECT the 'order sufficiently final may be treated as the judgment' approach?",
+          "Anything on orders sustaining a demurrer without leave to amend, and whether appeal must be taken from a judgment.",
+          "Anything on res judicata / preclusion as opposed to appealability — quote it or state it is absent.",
+          "Net effect: easier or harder to argue an order sustaining a demurrer with no judgment entered is not final for preclusion?",
+      ],
+      assumption="Two internal research passes disagree; the disagreement changes the lead preclusion argument.",
+      primary=["https://www.courts.ca.gov/opinions/documents/", "https://www.courtlistener.com/"]),
+
+    c("1B",
+      "Estate of Esche v. Bunuel-Jordana, No. 24-6244 (9th Cir. Sept. 29, 2025)",
+      "Estate of Esche v. Bunuel-Jordana",
+      court="9th Cir.", year=2025, reporter_pin=None,
+      lookup="courtlistener_name_only",
+      lookup_note="Docket-number cite with no reporter pin — no CAP volume probe. Verify from the CA9 opinion PDF.",
+      questions=[
+          "Disposition.",
+          "Was any part decided on appellate-jurisdiction grounds (collateral order; no jurisdiction over a private party's QI appeal)?",
+          "Quote what the court says about whether private parties may invoke qualified immunity.",
+          "Is that discussion the HOLDING or reasoning supporting a different holding?",
+      ],
+      assumption="Portfolio already treats this as real but MISCHARACTERIZED — jurisdictional, not a QI-threshold holding. The prompt asks the external model to confirm or contradict that.",
+      existing={
+          "inCorpusIndex": False, "ledgerStatus": None,
+          "auditStatus": "MISCHARACTERIZED (matter 28, citation_audit.json)",
+          "safeCiteList": True,
+          "note": "CAUTION_NAMES in build-matter28-safe-cite-list.py; do-not-use cheat sheet in the Sept. 18 gap-fill memo.",
+      },
+      primary=["https://cdn.ca9.uscourts.gov/datastore/opinions/2025/09/29/24-6244.pdf"]),
+
+    c("1C",
+      "Wicklund v. Idaho Dep't of Correction, 623 F. App'x 338 (9th Cir. 2015)",
+      "Wicklund v. Idaho Department of Correction",
+      court="9th Cir. (No. 12-35294, decided Nov. 23, 2015)", year=2015,
+      reporter_pin="623 F. App'x 338",
+      published="TO CONFIRM — prompt asks whether this is an unpublished memorandum disposition",
+      lookup="courtlistener_name_only",
+      lookup_note="F. App'x is NOT in lookup-citations.py REPORTER_MAP (it IS in build-citation-index.py REPORTERS) — no CAP volume probe; CourtListener search only.",
+      questions=[
+          "Published or unpublished memorandum disposition?",
+          "Claims at issue and disposition on each.",
+          "First Amendment retaliation — addressed? how ruled?",
+          "Qualified immunity — addressed? granted/denied/affirmed/reversed?",
+          "Confirm this is No. 12-35294 and name the district case it came from.",
+      ],
+      assumption="Several related Wicklund actions exist (v. Page, v. Ada County, v. Huntsman) — caption collision risk is the point of the item.",
+      existing={
+          "inCorpusIndex": False, "ledgerStatus": None, "auditStatus": None,
+          "safeCiteList": False,
+          "note": "Appears only in dated recon memos as a candidate; never promoted.",
+      },
+      primary=["https://cdn.ca9.uscourts.gov/datastore/memoranda/", "https://www.courtlistener.com/"]),
+
+    c("2A",
+      "Palomar Mobilehome Park Ass'n v. City of San Marcos, 989 F.2d 362 (9th Cir. 1993)",
+      "Palomar Mobilehome Park Ass'n v. City of San Marcos",
+      court="9th Cir.", year=1993, reporter_pin="989 F.2d 362",
+      published="published",
+      questions=["Quote what it says about whether a California judgment entered after a general demurrer is a judgment on the merits; give the pin."],
+      assumption="Supports treating a post-general-demurrer California judgment as on the merits — i.e. potentially ADVERSE to plaintiff's preclusion position.",
+      primary=["https://www.courtlistener.com/", "https://static.case.law/f2d/989/"]),
+
+    c("2B",
+      "Pollock v. University of Southern California, 112 Cal.App.4th 1416 (2003)",
+      "Pollock v. University of Southern California",
+      court="Cal. Ct. App.", year=2003, reporter_pin="112 Cal.App.4th 1416",
+      published="published",
+      questions=["Quote the passage distinguishing GENERAL from SPECIAL demurrers for preclusion purposes, with the pin."],
+      assumption="General/special demurrer distinction controls whether the state-court dismissal was on the merits.",
+      primary=["https://www.courtlistener.com/", "https://static.case.law/cal-app-4th/112/"]),
+
+    c("2C",
+      "Goddard v. Security Title Ins. & Guar. Co., 14 Cal.2d 47 (1939)",
+      "Goddard v. Security Title Ins. & Guar. Co.",
+      court="Cal. Supreme Court", year=1939, reporter_pin="14 Cal.2d 47",
+      pin=["52-53"], published="published",
+      lookup="courtlistener_name_only",
+      lookup_note="cal-2d is NOT in lookup-citations.py REPORTER_MAP — same CAP gap that forced the manual McCorkle confirmation in Round 8.",
+      questions=["Quote the sentence acknowledging that even a general-demurrer judgment MAY NOT be on the merits where the defect is technical or formal; pin it."],
+      assumption="Supplies the carve-out that answers 2A.",
+      primary=["https://www.courtlistener.com/"]),
+
+    c("2D",
+      "Valvo v. University of Southern California, 67 Cal.App.3d 887 (1977)",
+      "Valvo v. University of Southern California",
+      court="Cal. Ct. App.", year=1977, reporter_pin="67 Cal.App.3d 887",
+      pin=["891-92", "footnote 3"], published="published",
+      questions=["Confirm the text at 891-92 and footnote 3.",
+                 "Quote the sentence stating that until entry of judgment a ruling on a demurrer is not res judicata."],
+      assumption="Direct support that a demurrer ruling without entry of judgment is not preclusive.",
+      primary=["https://www.courtlistener.com/", "https://static.case.law/cal-app-3d/67/"]),
+
+    c("2E",
+      "Lee v. City of Los Angeles, 250 F.3d 668 (9th Cir.)",
+      "Lee v. City of Los Angeles",
+      court="9th Cir.", year="2000 or 2001 — DISPUTED, the item is to resolve it",
+      reporter_pin="250 F.3d 668", pin=["689-90 (judicial notice discussion — confirm)"],
+      published="published",
+      questions=["Confirm the YEAR — sources print both 2000 and 2001.",
+                 "Quote what it says about taking judicial notice of the truth of disputed factual matters, with the pin."],
+      assumption="Used to resist judicial notice of the state-court record on the expected Rule 12(b)(6) motion.",
+      existing={
+          "inCorpusIndex": True,
+          "ledgerStatus": "VERIFIED (statusSource=round; P2_joined)",
+          "auditStatus": None, "safeCiteList": False,
+          "note": "Indexed as 'Lee v. City of Los Angeles, 250 F. 3d 668' across matters 18/24/29. Existence already cleared; the OPEN question is the year and the judicial-notice pin, which is characterization, not existence.",
+      },
+      primary=["https://www.courtlistener.com/", "https://static.case.law/f3d/250/"]),
+
+    c("4.1",
+      "ASARCO, LLC v. Union Pacific R.R., 765 F.3d 999 (9th Cir. 2014)",
+      "ASARCO, LLC v. Union Pacific R.R. Co.",
+      court="9th Cir.", year=2014, reporter_pin="765 F.3d 999", pin=["1004"],
+      published="published",
+      questions=["Quote the sentence at 1004 stating the 'obvious bar on the face of the complaint' standard for resolving an affirmative defense on a Rule 12(b)(6) motion."],
+      assumption="Res judicata is an affirmative defense not normally resolvable on the pleadings."),
+
+    c("4.2",
+      "Rawson v. Recovery Innovations, Inc., 975 F.3d 742 (9th Cir. 2020)",
+      "Rawson v. Recovery Innovations, Inc.",
+      court="9th Cir.", year=2020, reporter_pin="975 F.3d 742", pin=["753"],
+      published="published",
+      questions=["Quote at 753: 'significantly involves itself in the private parties' actions and decisionmaking at issue'."],
+      assumption="Lead state-action authority for a private treatment provider.",
+      existing={
+          "inCorpusIndex": True,
+          "ledgerStatus": "UNVERIFIED (P3_unverified_corroborated)",
+          "auditStatus": "VERIFIED (matter 3, citation_audit.json, pinned 751-53)",
+          "safeCiteList": False,
+          "note": "Indexed as 'Rawson v. Recovery Innovations, Inc, 975 F. 3d 742' (matter 3). A clean round entry clears the UNVERIFIED index rows and adds the 753 pin.",
+      }),
+
+    c("4.3",
+      "Kirtley v. Rainey, 326 F.3d 1088 (9th Cir. 2003)",
+      "Kirtley v. Rainey",
+      court="9th Cir.", year=2003, reporter_pin="326 F.3d 1088", pin=["1092"],
+      published="published",
+      questions=["Quote the four state-action tests at 1092."],
+      assumption="Framework case for the state-action section.",
+      existing={
+          "inCorpusIndex": True,
+          "ledgerStatus": "UNVERIFIED (P3_unverified_corroborated)",
+          "auditStatus": None, "safeCiteList": False,
+          "note": "Indexed as 'Kirtley v. Rainey, 326 F. 3d 1088' (matter 3) with no audit or round row — a genuine ledger gap this pass would close.",
+      }),
+
+    c("4.4",
+      "Caviness v. Horizon Cmty. Learning Ctr., 590 F.3d 806 (9th Cir. 2010)",
+      "Caviness v. Horizon Community Learning Center, Inc.",
+      court="9th Cir.", year=2010, reporter_pin="590 F.3d 806",
+      published="published",
+      questions=["Quote the conduct-specific inquiry.",
+                 "State the ACTUAL OUTCOME — was the charter school held to be a state actor for the conduct at issue?"],
+      assumption="Cited for the conduct-specific inquiry; the prompt expressly asks for the outcome because the outcome cuts the other way.",
+      existing={
+          "inCorpusIndex": True,
+          "ledgerStatus": "UNVERIFIED (P3_unverified_corroborated; two caption variants)",
+          "auditStatus": None, "safeCiteList": False,
+          "note": "Two index rows (matter 3): 'Caviness v. Horizon Cmty. Learning Ctr., Inc' and 'Caviness v. Horizon Community Learning Center, Inc'. Both bind to one round entry by case-name key.",
+      }),
+
+    c("4.5",
+      "Richardson v. McKnight, 521 U.S. 399 (1997)",
+      "Richardson v. McKnight",
+      court="U.S. Supreme Court", year=1997, reporter_pin="521 U.S. 399",
+      pin=["the 'systematically organized' private-firm passage — pin to be supplied"],
+      published="published",
+      questions=["Quote the 'systematically organized' private firm language, with the pin."],
+      assumption="Anchor for the no-QI-for-private-firms argument.",
+      existing={
+          "inCorpusIndex": True,
+          "ledgerStatus": "VERIFIED (statusSource=round; P2_joined, 3 caption variants)",
+          "auditStatus": "VERIFIED (matter 28)",
+          "safeCiteList": True,
+          "note": "ALSO the funnel's POSITIVE CONTROL — must resolve FOUND or the run is invalid. Existence is settled; only the pin is open.",
+      }),
+
+    c("4.6",
+      "Heath v. Cleary, 708 F.2d 1376 (9th Cir. 1983)",
+      "Heath v. Cleary",
+      court="9th Cir.", year=1983, reporter_pin="708 F.2d 1376",
+      pin=["1380 n.4"], published="published",
+      questions=["Confirm the footnote number is 4 and the page is 1380, and quote it."],
+      assumption="The prompt itself doubts the pin — treat the footnote number and page as unconfirmed."),
+
+    c("4.7",
+      "Perez v. City of San Bruno, 27 Cal.3d 875 (1980)",
+      "Perez v. City of San Bruno",
+      court="Cal. Supreme Court", year=1980, reporter_pin="27 Cal.3d 875",
+      pin=["882-83"], published="published",
+      questions=["Quote the prematurity / precondition passage at 882-83."],
+      assumption="Supports that exhaustion is a precondition going to prematurity, not a merits adjudication."),
+
+    c("4.8",
+      "Zetz v. Boston Scientific Corp., 398 F. Supp. 3d 700 (E.D. Cal. 2019)",
+      "Zetz v. Boston Scientific Corp.",
+      court="E.D. Cal.", year=2019, reporter_pin="398 F. Supp. 3d 700", pin=["713"],
+      published="published (F. Supp. 3d)",
+      questions=["Quote the sentence at 713."],
+      assumption="Cited in the Matter 28 research stack; proposition not stated in the prompt — ask the external model to state what the pin actually says.",
+      existing={
+          "inCorpusIndex": True,
+          "ledgerStatus": "UNVERIFIED (P3_unverified_corroborated)",
+          "auditStatus": None, "safeCiteList": False,
+          "note": "Indexed with a TRUNCATED caption — 'Zetz v. Boston Scienti, 398 F. Supp. 3d 700' (matter 28). Confirm the full caption so the round entry binds.",
+      }),
+
+    c("4.9",
+      "Schreiber Distrib. Co. v. Serv-Well Furniture Co., 806 F.2d 1393 (9th Cir. 1986)",
+      "Schreiber Distributing Co. v. Serv-Well Furniture Co.",
+      court="9th Cir.", year=1986, reporter_pin="806 F.2d 1393", pin=["1400-01"],
+      published="published",
+      questions=["Quote the sentence(s) at 1400-01."],
+      assumption="RICO pleading standard. Portfolio lock: the year is 1986, NOT 2004, and it REVERSED a RICO dismissal.",
+      existing={
+          "inCorpusIndex": True,
+          "ledgerStatus": "UNVERIFIED (P3_unverified_corroborated)",
+          "auditStatus": None, "safeCiteList": False,
+          "note": "Indexed as 'See Schreiber Distrib. Co. v. Serv-Well Furniture Co, 806 F. 2d 1393' (matter 28). The Sept. 18 gap-fill memo already locks the 1986 date — this pass confirms the pin.",
+      }),
+
+    c("4.10",
+      "DZ Reserve v. Meta Platforms, Inc., 96 F.4th 1223 (9th Cir. 2024)",
+      "DZ Reserve v. Meta Platforms, Inc.",
+      court="9th Cir.", year=2024, reporter_pin="96 F.4th 1223", pin=["1233"],
+      published="published",
+      questions=["Quote the sentence at 1233."],
+      assumption="Fraud / reliance authority; proposition not stated in the prompt.",
+      existing={
+          "inCorpusIndex": True,
+          "ledgerStatus": "UNVERIFIED (P3_unverified_corroborated)",
+          "auditStatus": None, "safeCiteList": False,
+          "note": "Indexed as 'See DZ Reserve v. Meta Platforms, Inc, 96 F. 4th 1223' (matter 28).",
+      }),
+
+    c("4.11",
+      "Arizona Students' Ass'n v. Ariz. Bd. of Regents, 824 F.3d 858 (9th Cir. 2016)",
+      "Arizona Students' Ass'n v. Arizona Board of Regents",
+      court="9th Cir.", year=2016, reporter_pin="824 F.3d 858", pin=["867"],
+      published="published",
+      questions=["Quote the sentence at 867."],
+      assumption="Retaliation / causation authority; proposition not stated in the prompt.",
+      existing={
+          "inCorpusIndex": True,
+          "ledgerStatus": "UNVERIFIED (P3_unverified_corroborated)",
+          "auditStatus": None, "safeCiteList": False,
+          "note": "Indexed under a MANGLED caption — “Az. Students’ Ass. v. Ariz. Bd, 824 F. 3d 858” (matter 28). Reporter-pin binding is the reliable join here, not the name key.",
+      }),
+
+    c("4.12",
+      "Medical Marijuana, Inc. v. Horn, 604 U.S. 593 (2025)",
+      "Medical Marijuana, Inc. v. Horn",
+      court="U.S. Supreme Court", year=2025, reporter_pin="604 U.S. 593",
+      published="published",
+      lookup_note="CAP static.case.law coverage stops well before 2025 — expect a CourtListener/supremecourt.gov confirmation, not a CAP volume hit.",
+      questions=["Confirm the official U.S. Reports cite is 604 U.S. 593.",
+                 "Quote what the Court EXPRESSLY DECLINED to decide about 'business', 'property', and proximate cause."],
+      assumption="RICO business-or-property injury. The declined-to-decide list is the operative content.",
+      primary=["https://www.supremecourt.gov/opinions/", "https://www.govinfo.gov/"]),
+
+    c("5C",
+      "Merrill v. Mental Health Systems, Inc., No. 3:16-cv-01090-GPC-JMA (S.D. Cal.)",
+      "Merrill v. Mental Health Systems, Inc.",
+      court="S.D. Cal.", year=2016, reporter_pin=None,
+      lookup="courtlistener_docket",
+      lookup_note="Docket cite. The portfolio's own recon memo carries a WL pin for the Sept. 13, 2016 order — 2016 WL 4761808 — which the prompt does NOT supply; treat that pin as a portfolio cross-reference, not a prompt source.",
+      questions=["What happened AFTER the Sept. 13, 2016 order?",
+                 "Was there a later ruling on state action, a dismissal, a settlement, or an appeal?"],
+      assumption="Subsequent history is unverified. The Sept. 12/18 recon memos already treat Merrill as the dangerous adverse analog; only its later history is open.",
+      existing={
+          "inCorpusIndex": False, "ledgerStatus": None, "auditStatus": None,
+          "safeCiteList": False,
+          "note": "27 mentions across the recon memos; never promoted to the safe-cite list. Adverse authority — verification protects against a surprise, it does not build an argument.",
+      },
+      primary=["https://www.courtlistener.com/docket/", "https://www.govinfo.gov/"]),
+]
+
+open_searches = [
+    {
+        "item": "2F",
+        "kind": "authority_search",
+        "question": "Is failure to exhaust administrative remedies raised under Cal. Code Civ. Proc. § 430.10(a) (no jurisdiction of the subject of the cause of action) or § 430.10(e) (failure to state a cause of action), or either? Cite California authority.",
+        "whyItMatters": "The state court called exhaustion a 'jurisdictional requirement' while the prevailing party's own proposed order recited the (e) formulation.",
+        "feedback": "Any California case returned is a NEW case-law source — add it to caseLaw[] and re-run the funnel on it. The statute itself is out of scope (see excluded).",
+    },
+    {
+        "item": "5A",
+        "kind": "absence_search",
+        "question": "Any decision from ANY court, any year, holding a private sex-offender treatment provider or its officer liable in DAMAGES under § 1983, the Bane Act, or RICO.",
+        "whyItMatters": "Prior searches found none. A verified absence is itself the finding.",
+        "feedback": "A verified absence is recorded as a note, not as a citation status. Any hit becomes a new caseLaw[] entry. Cross-check against internal/docs/HOPE_SMITH_SOMP_CASES.md before treating a hit as new.",
+    },
+    {
+        "item": "5B",
+        "kind": "authority_search",
+        "question": "Any 2024-2026 federal decision applying Richardson v. McKnight or Filarsky v. Delia to decide whether a private treatment contractor may invoke qualified immunity.",
+        "anchorCases": [
+            "Richardson v. McKnight, 521 U.S. 399 (1997) — see caseLaw item 4.5",
+            "Filarsky v. Delia, 566 U.S. 377 (2012) — already VERIFIED in the ledger (statusSource=round) and on the Matter 28 safe-cite list as a DISTINGUISH; not itself a verification target here",
+        ],
+        "feedback": "Each decision returned is a new caseLaw[] entry needing its own existence + holding pass.",
+    },
+]
+
+excluded = [
+    {"item": "2F (statute text)", "what": "Cal. Code Civ. Proc. § 430.10(a) / (e)",
+     "reason": "Statute, not case law. The citation funnel indexes statutes but lookup-citations.py probes reporter pins only.",
+     "routeTo": "leginfo.legislature.ca.gov; the authority search it generates is kept as openSearches item 2F."},
+    {"item": "3A", "what": "15 Cal. Code Regs. § 3574 (Sex Offender Treatment) — operative date, subdivision quotes, predecessor/emergency version",
+     "reason": "State regulation. No reporter pin; CourtListener/CAP cannot verify it.",
+     "routeTo": "Office of Administrative Law filing / CDCR rulemaking record (notice NCR 25-01, Jan. 3, 2025). The notice date is NOT the operative date."},
+    {"item": "3B", "what": "Cal. Penal Code § 3008(d)(1) and (d)(2) — verbatim text and operative dates",
+     "reason": "Statute, not case law.",
+     "routeTo": "leginfo.legislature.ca.gov."},
+    {"item": "3C", "what": "CDCR Form 3043 (Containment Team Meeting / Earned Discharge Consideration Committee), Rev. 11/24",
+     "reason": "Agency form. Not a citation of any kind.",
+     "routeTo": "CDCR forms library; record availability + URL."},
+    {"item": "5D", "what": "Public record on HOPE Psychotherapy, Inc. and Shannon Smith, LCSW (CASOMB certification, CDCR/county contracts, BBS license and discipline)",
+     "reason": "Entity and licensee research, not case law.",
+     "routeTo": "internal/docs/legal-intel/ (matter card / cluster), not the citation ledger."},
+    {"item": "prompt preamble", "what": "Case caption, court, judge, posture, claims, defense counsel, briefing dates",
+     "reason": "Litigation context. Already live in internal/src/data/matters/28/ and the legal-intel matter card; duplicating it here would create a second source of truth for clocks.",
+     "routeTo": "matters/28/clocks.json and legal-intel/matters/28.md remain authoritative."},
+    {"item": "prompt OPTIONAL block", "what": "The read-only document Worker / MCP endpoint offered to the external model",
+     "reason": "Document transport, not a citation source. Kept out of the citation payload deliberately.",
+     "routeTo": "AGENTS.md 'Worker, not keys'. The Worker URL is the only endpoint an external chat gets; never R2 keys, never a repo URL."},
+    {"item": "prompt OUTPUT FORMAT block", "what": "The per-item reporting shape and the two closing lists",
+     "reason": "Response formatting, not a source.",
+     "routeTo": "Mirrored in the returnMapping below so a returned block can be folded into the round overlay."},
+]
+
+payload = {
+    "generatedBy": "hand isolation of the Matter 28 primary-source verification task (external model, web access), prepared 2026-09-19",
+    "generatedDate": "2026-09-19",
+    "matter": 28,
+    "caseNo": "3:26-cv-07504-LJC (N.D. Cal.)",
+    "scope": "CASE-LAW citation verification sources only. Statutes, regulations, agency forms, and entity/licensee research from the same task are listed under 'excluded' with where they belong instead.",
+    "isolationNote": (
+        "This file carries no verification statuses. Nothing here is VERIFIED, and nothing here may be "
+        "marked VERIFIED from memory — the funnel's own rule. Statuses enter the portfolio only through "
+        "citation_verification_rounds.json after a lookup run whose controls passed."
+    ),
+    "controls": {
+        "positive": "Richardson v. McKnight, 521 U.S. 399 (1997) — must resolve FOUND",
+        "negative": "In re Leman, 66 Cal.App.5th 200 — must NOT resolve",
+        "lastRun": {
+            "date": "2026-09-19",
+            "environment": "Claude Code remote sandbox",
+            "result": "FAILED — both controls returned NOT_FOUND",
+            "cause": (
+                "The environment's egress policy refuses CONNECT to www.courtlistener.com:443 and "
+                "static.case.law:443 (gateway 403). Every source probe returned http_status -1, so the "
+                "negative control passed only by accident."
+            ),
+            "consequence": "No lookup artifact was written and no citation status was recorded. Re-run where CourtListener and static.case.law are reachable.",
+        },
+    },
+    "sourceHierarchy": [
+        {"rank": 1, "source": "Issuing court's own website", "hosts": ["supremecourt.gov", "cdn.ca9.uscourts.gov", "courts.ca.gov"]},
+        {"rank": 2, "source": "govinfo.gov", "hosts": ["govinfo.gov"]},
+        {"rank": 3, "source": "CourtListener", "hosts": ["courtlistener.com"], "note": "Primary machine-readable probe in lookup-citations.py."},
+        {"rank": 4, "source": "Justia", "hosts": ["justia.com"], "note": "Cloudflare 403 from this environment per the citation-verify skill."},
+        {"rank": 5, "source": "FindLaw", "hosts": ["findlaw.com"]},
+        {"rank": 6, "source": "Cornell LII", "hosts": ["law.cornell.edu"]},
+        {"rank": 7, "source": "leginfo.legislature.ca.gov", "hosts": ["leginfo.legislature.ca.gov"], "note": "Statutes only — out of case-law scope."},
+        {"rank": 8, "source": "OAL / CDCR rulemaking pages", "note": "Regulations only — out of case-law scope."},
+        {"rank": None, "source": "Caselaw Access Project static bulk", "hosts": ["static.case.law"],
+         "note": "Not named in the prompt; it is the funnel's second machine probe. Coverage gaps matter: no cal-2d, no F. App'x in REPORTER_MAP, nothing recent enough for 604 U.S. 593."},
+        {"rank": None, "source": "Secondary commentary", "note": "A lead, never an answer. Google Scholar unreliable (often 403)."},
+    ],
+    "verificationRules": [
+        "Never report a case as verified from memory. Open the source, or say COULD NOT OPEN and name what was tried.",
+        "Quote exactly, with the page or footnote. A pin not confirmed against reporter pagination is labelled SECONDARY with what corroborated it.",
+        "Report the disposition and what the court expressly declined to decide. State published or unpublished.",
+        "A source that contradicts the prompt's assumption is the most valuable result. Do not agree to be agreeable.",
+        "Verification only — no argument, no brief language.",
+        "Existence is not holding. A FOUND pin never clears a prior MISCHARACTERIZED or proposition-MISCITED status.",
+    ],
+    "cites": [c["citation"] for c in case_law],
+    "caseLaw": case_law,
+    "openSearches": open_searches,
+    "excluded": excluded,
+    "wiring": {
+        "step1_lookup": {
+            "command": "npm run citations:lookup:matter -- --cites-file internal/docs/citation_sources_matter28_primary.json --out internal/docs/citation_lookup_matter28_primary.json",
+            "note": "lookup-citations.py --cites-file reads the 'cites' key of this file directly; the rest of the payload is ignored by the script. Run --batch controls first and abort if Richardson does not resolve FOUND.",
+        },
+        "step2_overlay": {
+            "target": "internal/docs/citation_verification_rounds.json",
+            "entryShape": {"citation": "<string>", "status": "VERIFIED | MISCITED | MISCHARACTERIZED | NOT_FOUND",
+                           "source": "<where it was read>", "notes": "<holding + pin + URL>", "round": "12-matter28-primary-source"},
+            "binding": (
+                "verify-citations.py binds a round entry to an indexed authority by normalized citation key, "
+                "falling back to case-name key. Entries whose citation is not in citation_index.json (Meinhardt, "
+                "Palomar, Pollock, Goddard, Valvo, ASARCO, Heath, Perez, Medical Marijuana, Esche, Wicklund, "
+                "Merrill) stay inert until the cite appears in a filed PDF — record them anyway so the status "
+                "exists before the cite is drafted, which is the whole point of a pre-draft pass."
+            ),
+        },
+        "step3_rebuild": {"command": "npm run citations:verify && npm run citations:check && npm run generate:readme"},
+        "step4_promote": {
+            "target": "internal/docs/MATTER_28_SAFE_CITE_LIST.md",
+            "rule": (
+                "legal-intel README rule 5: authorities reach the safe-cite list only after the PDF is opened. "
+                "A VERIFIED existence result is not promotion. Esche stays in CAUTION_NAMES unless the external "
+                "read contradicts the MISCHARACTERIZED finding on the record."
+            ),
+        },
+        "returnMapping": {
+            "STATUS: VERIFIED": "round entry status VERIFIED (existence only — characterization still needs the holding answer)",
+            "STATUS: CONTRADICTED": "round entry status MISCHARACTERIZED, with the contradiction quoted in notes",
+            "STATUS: COULD NOT OPEN": "no round entry — leave UNVERIFIED and record the attempt in notes",
+            "STATUS: PARTIALLY VERIFIED": "round entry only if existence is settled; otherwise leave UNVERIFIED",
+            "closing list (2) — what cuts against the plaintiff": "goes to the matter card / cluster lock and the CAUTION bucket, not to the ledger",
+        },
+    },
+    "counts": {
+        "caseLawSources": len(case_law),
+        "openSearches": len(open_searches),
+        "excludedNonCaseLaw": len(excluded),
+        "alreadyInCorpusIndex": sum(1 for x in case_law if x["existingPortfolioStatus"]["inCorpusIndex"]),
+        "wouldClearLedgerUnverified": sum(
+            1 for x in case_law
+            if (x["existingPortfolioStatus"].get("ledgerStatus") or "").startswith("UNVERIFIED")
+        ),
+    },
+}
+
+
+def render(p: dict) -> str:
+    L: list[str] = []
+    w = L.append
+    w("# Matter 28 — primary-source verification queue")
+    w(f"## *Newanforbi v. Shannon Smith, LCSW, et al.*, {p['caseNo']}")
+    w("")
+    w(f"Isolated {p['generatedDate']} from the Matter 28 primary-source verification task "
+      "(written for an external model with web access). Generated by "
+      "`internal/scripts/build-matter28-primary-source-queue.py` — edit the script, not this file.")
+    w("")
+    w(f"**Scope.** {p['scope']}")
+    w("")
+    w(f"**No statuses live here.** {p['isolationNote']}")
+    w("")
+    ctl = p["controls"]["lastRun"]
+    w(f"**Controls, last run {ctl['date']} ({ctl['environment']}): {ctl['result']}.** {ctl['cause']} "
+      f"{ctl['consequence']}")
+    w("")
+    k = p["counts"]
+    w(f"**Counts.** {k['caseLawSources']} case-law sources · {k['openSearches']} open searches · "
+      f"{k['excludedNonCaseLaw']} excluded non-case-law items · {k['alreadyInCorpusIndex']} already in "
+      f"`citation_index.json` · {k['wouldClearLedgerUnverified']} would clear a standing `UNVERIFIED` ledger row.")
+    w("")
+    w("---")
+    w("")
+    w("## Rules carried over from the task")
+    w("")
+    for r in p["verificationRules"]:
+        w(f"- {r}")
+    w("")
+    w("## Source hierarchy")
+    w("")
+    w("| Rank | Source | Hosts | Note |")
+    w("|---|---|---|---|")
+    for h in p["sourceHierarchy"]:
+        rank = h["rank"] if h["rank"] is not None else "—"
+        hosts = ", ".join(f"`{x}`" for x in h.get("hosts", [])) or "—"
+        w(f"| {rank} | {h['source']} | {hosts} | {h.get('note', '')} |")
+    w("")
+    w("## Case-law sources")
+    w("")
+    w("| Item | Citation | Pin(s) | Probe | In index | Ledger |")
+    w("|---|---|---|---|---|---|")
+    for e in p["caseLaw"]:
+        ex = e["existingPortfolioStatus"]
+        pins = "; ".join(e["pinsToConfirm"]) or "—"
+        w(f"| {e['item']} | *{e['caseName']}*, {e['reporterPin'] or 'docket only'} | {pins} | "
+          f"{e['lookupProbe']} | {'yes' if ex['inCorpusIndex'] else 'no'} | {ex['ledgerStatus'] or '—'} |")
+    w("")
+    for e in p["caseLaw"]:
+        w(f"### {e['item']} — {e['citation']}")
+        w("")
+        w(f"- **Court / year:** {e['court']}, {e['year']}")
+        w(f"- **Published:** {e['published'] or 'TO CONFIRM'}")
+        if e["pinsToConfirm"]:
+            w(f"- **Pins to confirm:** {'; '.join(e['pinsToConfirm'])}")
+        w(f"- **Probe:** `{e['lookupProbe']}`" + (f" — {e['lookupNote']}" if e["lookupNote"] else ""))
+        w("- **Verification questions:**")
+        for q in e["verificationQuestions"]:
+            w(f"  - {q}")
+        if e["promptAssumption"]:
+            w(f"- **What the task assumes (contradict it if the source says otherwise):** {e['promptAssumption']}")
+        ex = e["existingPortfolioStatus"]
+        w(f"- **Existing portfolio status:** index={'yes' if ex['inCorpusIndex'] else 'no'}; "
+          f"ledger={ex['ledgerStatus'] or 'none'}; audit={ex['auditStatus'] or 'none'}; "
+          f"safe-cite list={'yes' if ex['safeCiteList'] else 'no'}. {ex['note']}")
+        if e["primarySources"]:
+            w(f"- **Primary source first:** {', '.join(e['primarySources'])}")
+        w("")
+    w("## Open searches (output becomes new case-law sources)")
+    w("")
+    for o in p["openSearches"]:
+        w(f"### {o['item']} — {o['kind']}")
+        w("")
+        w(f"- **Question:** {o['question']}")
+        if o.get("whyItMatters"):
+            w(f"- **Why it matters:** {o['whyItMatters']}")
+        for a in o.get("anchorCases", []):
+            w(f"- **Anchor:** {a}")
+        w(f"- **Feedback path:** {o['feedback']}")
+        w("")
+    w("## Excluded — not case law, not this system's job")
+    w("")
+    w("| Item | What | Why excluded | Routes to |")
+    w("|---|---|---|---|")
+    for x in p["excluded"]:
+        w(f"| {x['item']} | {x['what']} | {x['reason']} | {x['routeTo']} |")
+    w("")
+    w("## Wiring")
+    w("")
+    wire = p["wiring"]
+    w("1. **Lookup.** Run `--batch controls` first; abort if *Richardson* does not resolve FOUND.")
+    w("")
+    w("   ```bash")
+    w(f"   {wire['step1_lookup']['command']}")
+    w("   ```")
+    w("")
+    w(f"   {wire['step1_lookup']['note']}")
+    w("")
+    w(f"2. **Overlay.** Fold results into `{wire['step2_overlay']['target']}` as "
+      f"`{json.dumps(wire['step2_overlay']['entryShape'])}`.")
+    w("")
+    w(f"   {wire['step2_overlay']['binding']}")
+    w("")
+    w(f"3. **Rebuild.** `{wire['step3_rebuild']['command']}`")
+    w("")
+    w(f"4. **Promote.** {wire['step4_promote']['rule']}")
+    w("")
+    w("### Mapping the returned block back")
+    w("")
+    w("| Returned STATUS | Ledger effect |")
+    w("|---|---|")
+    for a, b in wire["returnMapping"].items():
+        w(f"| {a} | {b} |")
+    w("")
+    return "\n".join(L) + "\n"
+
+
+def main() -> int:
+    check = "--check" in sys.argv[1:]
+    body = json.dumps(payload, indent=2, ensure_ascii=False) + "\n"
+    report = render(payload)
+    if check:
+        drift = [
+            str(path)
+            for path, want in ((OUT, body), (REPORT, report))
+            if not path.exists() or path.read_text() != want
+        ]
+        if drift:
+            print("drift: " + ", ".join(drift), file=sys.stderr)
+            return 1
+        print("ok — outputs match the script")
+        return 0
+    OUT.write_text(body)
+    REPORT.write_text(report)
+    print(f"wrote {OUT}\nwrote {REPORT}")
+    print(json.dumps(payload["counts"], indent=2))
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
