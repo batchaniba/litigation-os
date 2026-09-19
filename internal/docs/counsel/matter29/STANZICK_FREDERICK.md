@@ -136,3 +136,5 @@ Watch for:
 ## Changelog
 
 - 2026-09-11: Created. Two-desk comparison from generated dossiers + counsel research. Pre-September 22 forecast.
+
+- 2026-09-19: Lodged Frederick PACER attorney queries (C.D. Cal. 52 cases; E.D. Cal. 6 cases, including live *Wade v. Amazon.com Services LLC*, 1:26-cv-02381-JLT-SAB) and the *Wade* Notice of Removal packet (Frederick / Sbrocca signed). Sources under `sources/` and `/documents/matter-29/counsel-frederick/`.

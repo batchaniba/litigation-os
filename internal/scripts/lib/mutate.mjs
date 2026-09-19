@@ -447,20 +447,40 @@ export function catalogDocument({
   } else {
     registry.documents.push({ path: docPath, label, ownerMatter: n });
   }
-  const rel = matterFileRel(n);
-  const data = readJSON(rel);
-  data.documents ??= [];
-  const matHit = data.documents.find((d) => d.path === docPath);
+
+  // Split matters keep membership in documents.json; legacy flats keep it on
+  // the matter file. Never stuff documents[] into a split matter.json — that
+  // blows the identity size cap and desyncs loadMatters assembly.
+  const layout = matterByNumber(n).layout;
   const matEntry = { path: docPath, filed: !!filed };
   if (matterLabel !== undefined) matEntry.label = matterLabel;
-  if (matHit) Object.assign(matHit, matEntry);
-  else data.documents.push(matEntry);
-  data.last_updated = todayKey();
-  validateIdentityWrite(n, matterByNumber(n).layout, data);
+  if (layout === "split") {
+    const docsRel = `${splitDirRel(n)}/documents.json`;
+    const docs = readJSON(docsRel);
+    const list = Array.isArray(docs) ? docs : [];
+    const matHit = list.find((d) => d.path === docPath);
+    if (matHit) Object.assign(matHit, matEntry);
+    else list.push(matEntry);
+    writeJSON(docsRel, list);
+    const idRel = matterFileRel(n);
+    const identity = readJSON(idRel);
+    identity.last_updated = todayKey();
+    validateIdentityWrite(n, layout, identity);
+    writeJSON(idRel, identity);
+  } else {
+    const rel = matterFileRel(n);
+    const data = readJSON(rel);
+    data.documents ??= [];
+    const matHit = data.documents.find((d) => d.path === docPath);
+    if (matHit) Object.assign(matHit, matEntry);
+    else data.documents.push(matEntry);
+    data.last_updated = todayKey();
+    validateIdentityWrite(n, layout, data);
+    writeJSON(rel, data);
+  }
 
   writeJSON("internal/src/data/documents/manifest.json", manifest);
   writeJSON("internal/src/data/documents/registry.json", registry);
-  writeJSON(rel, data);
   return { ok: true, policy: WRITE_POLICY, r2Key, path: docPath };
 }
 
