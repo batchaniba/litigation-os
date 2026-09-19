@@ -93,9 +93,23 @@ In *Boyer v. First Advantage* (N.D. Cal.), Stanzick handled removal mechanics: n
 
 In *Bosco v. First Advantage* (C.D. Cal.), Kennedy Bosco appeared pro se against Stanzick. Expect no procedural charity and no intimidation missteps.
 
-### The *Roman* playbook (still unverified as hers)
+### Southern District of California — verified attorney query (Sep. 18, 2026)
 
-*Roman v. First Advantage/Sterling* produced a successful Rule 12(b)(6) with leave to amend: wrong corporate affiliate, FCRA preemption / no private injunctive relief, no UCL restitution, *Sonner*, generalized multi-entity pleading. Signature block still unchecked. Keep it as ecosystem argument, not a Stanzick-authored holding.
+PACER **ecf.casd** attorney search lists **five** matters where **Jasmine Jane Stanzick** is counsel of record (receipt lodged at `/documents/matter-29/counsel-research/PACER Attorney Case List - Stanzick S.D. Cal. ecf.casd (Sep 18 2026).pdf`). This is **S.D. Cal.** (San Diego–area federal court), not C.D. Cal.’s “Southern Division” in Santa Ana.
+
+| Case no. | Caption | Filed | Closed (PACER) |
+|---|---|---|---|
+| 3:25-cv-00743-AGS-DEB | *Moore v. Sterling InfoSystems* | Mar. 28, 2025 | Sep. 17, 2025 |
+| 3:25-cv-01955-GPC-DEB | *Roman v. First Background Services* | Jul. 31, 2025 | Jun. 2, 2026 |
+| **3:25-cv-01983-AJB-BJW** | ***Rangel v. Accurate Background, LLC*** | Aug. 1, 2025 | **Jan. 20, 2026** |
+| 3:26-cv-03678-BJC-JAC | *Goggans v. Equifax* | Jun. 23, 2026 | — |
+| 3:26-cv-04114-AJB-MSB | *Raya v. Sterling* | Jul. 17, 2026 | — |
+
+**Matter 29:** *Rangel* is another **Accurate** file on her desk in **S.D. Cal.** — no briefs in this lodge; pull selectively if you need Accurate’s San Diego-track paper. Do not treat the list as related-case disclosure.
+
+### The *Roman* playbook (counsel verified; merits brief still unlodged)
+
+*Roman v. First Background Services Corp.*, **S.D. Cal. 3:25-cv-01955-GPC-DEB** — Stanzick is on the Sep. 18, 2026 attorney list; PACER shows **closed Jun. 2, 2026**. Ecosystem lore (not lodged here): successful Rule 12(b)(6) with leave to amend — wrong corporate affiliate, FCRA preemption / no private injunctive relief, no UCL restitution, *Sonner*, generalized multi-entity pleading. Keep it as argument inventory until a signed brief is in `sources/`, not a Stanzick-authored holding.
 
 ### Predicted September 22 moves — Accurate (updated)
 

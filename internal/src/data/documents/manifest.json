@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1322,
-  "totalBytes": 917654492,
+  "fileCount": 1323,
+  "totalBytes": 917772671,
   "files": [
     {
       "path": "/documents/README.md",
@@ -6612,6 +6612,11 @@
       "path": "/documents/matter-29/santee-v-accurate-background/Dkt 21-2 - Billing Activities Export ISO Fee Motion (Jan 8, 2026).pdf",
       "size": 72604,
       "sha256": "af47a1f73c745cbc30673ad5abd649e54876f653d63bb5b9eaef661917bb320e"
+    },
+    {
+      "path": "/documents/matter-29/counsel-research/PACER Attorney Case List - Stanzick S.D. Cal. ecf.casd (Sep 18 2026).pdf",
+      "size": 118179,
+      "sha256": "f93f9cb9c52327eb3de1be46105588c77fdb704c263d15f6d2dc72599a69001c"
     }
   ]
 }

@@ -227,6 +227,30 @@
       ],
       "usable_as": "Stanzick Accurate answer + next-day Rule 68 ($10k) on individual FCRA/CCRAA; same Slaughter division as Lerma; settlement shape not merits.",
       "not_a_holding": "Not a related case. Rule 68 is a negotiated exit, not FCRA adjudication. Do not cite in Matter 29 filings."
+    },
+    {
+      "id": "rangel-v-accurate-sdcal-2025",
+      "kind": "pacer_pull",
+      "matter": null,
+      "caption": "Rangel v. Accurate Background, LLC et al.",
+      "docket_short_title": "Rangel v. Accurate",
+      "court": "S.D. Cal.",
+      "case_no": "3:25-cv-01983-AJB-BJW",
+      "judge": null,
+      "filed": "2025-08-01",
+      "terminated": "2026-01-20 (PACER closed date on Sep. 18, 2026 attorney query)",
+      "side": "defense",
+      "client": "Accurate Background, LLC",
+      "nature": "FCRA/background — details not in lodge",
+      "stanzick_role": "Counsel of record per ecf.casd attorney query (Sep. 18, 2026). SBN 354704 not on this index card.",
+      "frederick_role": "none",
+      "plaintiff_counsel": null,
+      "outcome": "Closed on PACER Jan. 20, 2026; papers not pulled.",
+      "sources": [
+        "/documents/matter-29/counsel-research/PACER Attorney Case List - Stanzick S.D. Cal. ecf.casd (Sep 18 2026).pdf"
+      ],
+      "usable_as": "Confirms Accurate work in S.D. Cal. as well as C.D. Cal.; pull docket if San Diego-track Accurate motion practice matters.",
+      "not_a_holding": "Index-only. Not a related case. No merits paper in repo."
     }
   ]
 }
