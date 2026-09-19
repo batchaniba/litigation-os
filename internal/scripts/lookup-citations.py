@@ -1,15 +1,31 @@
 #!/usr/bin/env python3
-"""Multi-source citation existence lookup (CourtListener + CAP static.case.law).
+"""Multi-source citation existence lookup (offline bulk oracle + CourtListener + CAP).
 
-Probes reporter pins against:
+Probe order:
+  0. cl_bulk_offline — CourtListener bulk citations table (local SQLite,
+     exact (volume, reporter, page) triple). Existence only; cannot
+     fuzzy-match, so it cannot launder a fabricated cite. A miss is NOT
+     not-found (quarterly snapshot) — it falls through to live probes.
   1. CourtListener Citation Lookup (POST /api/rest/v4/citation-lookup/) when
      COURTLISTENER_TOKEN is set — the pin API (200 / 404 / 400 / 300)
   2. CourtListener REST search API (unauthenticated /api/rest/v4/search/) as corroboration
   3. Caselaw Access Project bulk metadata at static.case.law (CasesMetadata.json)
   4. (opt-in --probe-extra) govinfo.gov search API (USCOURTS collection) and
-     cdn.ca9.uscourts.gov (9th Circuit opinion PDFs) — sketch probes, 2026-09-19
+     cdn.ca9.uscourts.gov (9th Circuit opinion PDFs) — 2026-09-19
 
 Also records reachability for Justia and Google Scholar (usually blocked).
+
+Consensus vocabulary: FOUND / NOT_FOUND / UNRESOLVED / PARTIAL /
+CAPTION_MISMATCH / BLOCKED / UNKNOWN. NOT_FOUND requires every applicable
+pin source to have run and missed (incl. an explicit citation-lookup 404);
+anything less is UNRESOLVED. Name-only search hits (no reporter/WL pin
+behind them) cap at PARTIAL — the fuzzy path never verifies a citation.
+
+Pin confidence is separate from existence: only CAP reporter HTML
+page-label anchors or an official preliminary-print/bound PDF confirm a
+reporter pin (PRIMARY). Pins confirmed through CourtListener plain_text,
+govinfo/ca9/courts.ca.gov slip PDFs, or unbound U.S. cites are SECONDARY
+by construction.
 
 This does NOT mark portfolio statuses by itself — it produces evidence for
 manual / round-overlay confirmation. Characterization still needs opinion text.
@@ -59,6 +75,7 @@ REPORTER_MAP = [
     (r"(\d+)\s+F\.\s*2d\s+(\d+)", "f2d", "F.2d"),
     (r"(\d+)\s+F\.\s*3d\s+(\d+)", "f3d", "F.3d"),
     (r"(\d+)\s+F\.\s*4th\s+(\d+)", "f4th", "F.4th"),
+    (r"(\d+)\s+F\.\s*App'?x\s+(\d+)", "f-appx", "F. App'x"),
     (r"(\d+)\s+F\.\s*Supp\.\s*2d\s+(\d+)", "f-supp-2d", "F. Supp. 2d"),
     (r"(\d+)\s+F\.\s*Supp\.\s*3d\s+(\d+)", "f-supp-3d", "F. Supp. 3d"),
     (r"(\d+)\s+M\.?\s*J\.?\s+(\d+)", "mj", "M.J."),
@@ -68,6 +85,7 @@ REPORTER_MAP = [
     (r"(\d+)\s+Cal\.\s*5th\s+(\d+)", "cal-5th", "Cal. 5th"),
     (r"(\d+)\s+Cal\.\s*4th\s+(\d+)", "cal-4th", "Cal. 4th"),
     (r"(\d+)\s+Cal\.\s*3d\s+(\d+)", "cal-3d", "Cal. 3d"),
+    (r"(\d+)\s+Cal\.\s*2d\s+(\d+)", "cal-2d", "Cal. 2d"),
     (r"(\d+)\s+S\.\s*Ct\.\s+(\d+)", "s-ct", "S. Ct."),
     (r"(\d+)\s+L\.\s*Ed\.\s*2d\s+(\d+)", "l-ed-2d", "L. Ed. 2d"),
 ]
@@ -79,6 +97,143 @@ NAME_RE = re.compile(
 )
 
 
+# ---------------------------------------------------------------------------
+# Offline existence oracle: CourtListener bulk citations table.
+#
+# S3: s3://com-courtlistener-storage/bulk-data/citations-YYYY-MM-DD.csv.bz2
+# (public, no auth). Schema: id,volume,reporter,page,type,cluster_id,
+# date_created,date_modified. Reporter strings are Bluebook-form
+# ("U.S.", "F.3d", "S. Ct.", ...). Quarterly refresh; latest wired below.
+#
+# Build the local SQLite index once with
+#   python3 internal/scripts/build-bulk-citation-index.py
+# (downloads the bz2 to a local dir — NOT the repo — and builds the DB).
+# Probe order: this runs FIRST (step 0), before any network call. It answers
+# existence only: exact (volume, reporter, page) -> cluster_id. It cannot
+# fuzzy-match, so it cannot launder a fabricated cite; a miss here is not
+# NOT_FOUND (snapshot is quarterly — post-cutoff cases fall through to the
+# live CourtListener probes).
+# ---------------------------------------------------------------------------
+
+BULK_SNAPSHOT = "2026-06-30"
+BULK_S3_URL = (
+    "https://com-courtlistener-storage.s3.amazonaws.com"
+    f"/bulk-data/citations-{BULK_SNAPSHOT}.csv.bz2"
+)
+BULK_SQLITE_ENV = "CL_BULK_SQLITE"
+BULK_SQLITE_DEFAULT = str(
+    Path.home() / "workspace/legal-research/citation-bulk/citations.sqlite"
+)
+
+# parse_reporter() label -> bulk-table reporter string. Verified against the
+# 2026-06-30 snapshot (see build-bulk-citation-index.py --check-strings).
+BULK_REPORTER = {
+    "U.S.": "U.S.",
+    "S. Ct.": "S. Ct.",
+    "L. Ed. 2d": "L. Ed. 2d",
+    "F.2d": "F.2d",
+    "F.3d": "F.3d",
+    "F.4th": "F.4th",
+    "F. App'x": "F. App'x",
+    "F. Supp. 2d": "F. Supp. 2d",
+    "F. Supp. 3d": "F. Supp. 3d",
+    "F.R.D.": "F.R.D.",
+    "M.J.": "M.J.",
+    "Cal. 2d": "Cal. 2d",
+    "Cal. 3d": "Cal. 3d",
+    "Cal. 4th": "Cal. 4th",
+    "Cal. 5th": "Cal. 5th",
+    "Cal. App. 3d": "Cal. App. 3d",
+    "Cal. App. 4th": "Cal. App. 4th",
+    "Cal. App. 5th": "Cal. App. 5th",
+}
+
+_bulk_db_ok: bool | None = None
+
+
+def bulk_db_path() -> Path | None:
+    """SQLite index path, or None when it has not been built."""
+    global _bulk_db_ok
+    if _bulk_db_ok is False:
+        return None
+    p = Path(os.environ.get(BULK_SQLITE_ENV) or BULK_SQLITE_DEFAULT)
+    if p.is_file():
+        _bulk_db_ok = True
+        return p
+    _bulk_db_ok = False
+    return None
+
+
+def probe_bulk_offline(citation: str) -> SourceHit:
+    """Step 0: exact (volume, reporter, page) existence check, offline."""
+    rep = parse_reporter(citation)
+    db = bulk_db_path()
+    if not rep:
+        return SourceHit(
+            source="cl_bulk_offline",
+            found=False,
+            notes="skipped: no reporter pin to form a (volume, reporter, page) triple",
+        )
+    if db is None:
+        return SourceHit(
+            source="cl_bulk_offline",
+            found=False,
+            notes=(
+                "skipped: bulk SQLite index not built "
+                "(run internal/scripts/build-bulk-citation-index.py)"
+            ),
+        )
+    reporter = BULK_REPORTER.get(rep["label"])
+    if not reporter:
+        return SourceHit(
+            source="cl_bulk_offline",
+            found=False,
+            notes=f"skipped: reporter {rep['label']!r} has no bulk-table string mapping",
+        )
+    import sqlite3
+
+    try:
+        con = sqlite3.connect(f"file:{db}?mode=ro", uri=True)
+        rows = con.execute(
+            "SELECT cluster_id, cite_type FROM citations "
+            "WHERE reporter = ? AND volume = ? AND page = ?",
+            (reporter, str(rep["volume"]), str(rep["page"])),
+        ).fetchall()
+        con.close()
+    except Exception as e:
+        return SourceHit(
+            source="cl_bulk_offline",
+            found=False,
+            notes=f"bulk index read error: {type(e).__name__}",
+        )
+    if not rows:
+        return SourceHit(
+            source="cl_bulk_offline",
+            found=False,
+            notes=(
+                f"triple ({rep['volume']}, {reporter}, {rep['page']}) absent from "
+                f"{BULK_SNAPSHOT} snapshot — not NOT_FOUND (quarterly cutoff); "
+                "falls through to live probes"
+            ),
+        )
+    cluster_ids = sorted({r[0] for r in rows})
+    first = cluster_ids[0]
+    notes = (
+        f"exact triple hit in {BULK_SNAPSHOT} snapshot: "
+        f"{len(rows)} row(s), {len(cluster_ids)} cluster(s); "
+        "existence only — caption/pin/holdings unverified"
+    )
+    if len(cluster_ids) > 1:
+        notes += "; multiple clusters share this page (table-page collision — disambiguate by caption)"
+    return SourceHit(
+        source="cl_bulk_offline",
+        found=True,
+        url=f"https://www.courtlistener.com/api/rest/v4/clusters/{first}/",
+        citations=[rep["pin"]],
+        notes=notes,
+    )
+
+
 @dataclass
 class SourceHit:
     source: str
@@ -88,6 +243,10 @@ class SourceHit:
     citations: list[str] = field(default_factory=list)
     notes: str = ""
     http_status: int | None = None
+    # True when the hit came from a caption/name search with no reporter- or
+    # WL-pin match behind it. Name-only hits can never produce FOUND alone:
+    # they cap at PARTIAL (the fuzzy path that launders fabricated captions).
+    name_only: bool = False
 
 
 @dataclass
@@ -97,7 +256,7 @@ class LookupResult:
     reporter_pin: str | None
     wl_pin: str | None
     sources: list[SourceHit] = field(default_factory=list)
-    consensus: str = "UNKNOWN"  # FOUND / NOT_FOUND / PARTIAL / BLOCKED / UNKNOWN
+    consensus: str = "UNKNOWN"  # FOUND / NOT_FOUND / UNRESOLVED / PARTIAL / CAPTION_MISMATCH / BLOCKED / UNKNOWN
     matched_name: str = ""
     matched_citations: list[str] = field(default_factory=list)
 
@@ -735,6 +894,7 @@ def lookup_courtlistener(citation: str, name_guess: str) -> SourceHit:
             # Accept rules:
             # - reporter pin: require cite_match (name-only is insufficient)
             # - WL-only: require wl_match
+            # - neither: require name_match, flagged name_only (caps at PARTIAL)
             accept = False
             if rep and cite_match:
                 accept = True
@@ -742,6 +902,7 @@ def lookup_courtlistener(citation: str, name_guess: str) -> SourceHit:
                 accept = True
             elif not rep and not wl and name_match:
                 accept = True
+            name_only_hit = bool(accept and not rep and not wl)
 
             if accept:
                 hit = SourceHit(
@@ -753,8 +914,10 @@ def lookup_courtlistener(citation: str, name_guess: str) -> SourceHit:
                     notes=(
                         f"Search q={q!r}; cite_match={cite_match}; "
                         f"wl_match={wl_match}; name_match={name_match}"
+                        + ("; NAME-ONLY (no pin behind this hit)" if name_only_hit else "")
                     ),
                     http_status=200,
+                    name_only=name_only_hit,
                 )
                 if (cite_match or wl_match) and name_match:
                     return hit
@@ -860,7 +1023,20 @@ def govinfo_api_key() -> str:
 
 
 def probe_govinfo(citation: str) -> SourceHit:
-    """Sketch: query the govinfo search API (USCOURTS collection) for a pin."""
+    """Query the govinfo search API (USCOURTS collection) for a pin.
+
+    Live-response findings (2026-09-19, this VM):
+    - /search rejects GET (\"does not support GET requests\"); use POST with
+      a JSON body {query, collections, offsetMark, pageSize}.
+    - Result ranking is full-text noise, NOT a citator: the first USCOURTS
+      hit for a case-name query is routinely an unrelated docket. A hit is
+      only claimed when the package title is caption-compatible with the
+      query — otherwise this probe would launder the ranker's first hit.
+    - The /packages/USCOURTS-ca9-<docket>/summary pattern did NOT verify:
+      govinfo returned 404 for USCOURTS-ca9-24-06244 (Esche). USCOURTS
+      package coverage skews district/bankruptcy; circuit slip PDFs live on
+      the courts' own CDNs (see probe_ca9). Kept as search-based, US only.
+    """
     rep = parse_reporter(citation)
     unbound = bool(_UNBOUND_US_RE.search(citation))
     if not rep and not unbound:
@@ -874,17 +1050,39 @@ def probe_govinfo(citation: str) -> SourceHit:
             notes=f"skipped: reporter slug {rep['slug']!r} is not a federal reporter",
         )
     query = rep["pin"] if rep else f'"{guess_name(citation)}"'
-    url = GOVINFO_SEARCH + "?" + urllib.parse.urlencode({
-        "historical": "true",
-        "offsetMark": "*",
-        "pageSize": "10",
+    payload = json.dumps({
         "query": query,
-        "api_key": govinfo_api_key(),
-    })
-    status, ctype, body = http_get(url)
+        "collections": ["USCOURTS"],
+        "offsetMark": "*",
+        "pageSize": 10,
+    }).encode()
+    req = urllib.request.Request(
+        GOVINFO_SEARCH + "?historical=true&api_key=" + govinfo_api_key(),
+        data=payload,
+        headers={
+            "User-Agent": UA,
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+        },
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=45) as r:
+            status, body = r.status, r.read()
+    except urllib.error.HTTPError as e:
+        return SourceHit(
+            source="govinfo", found=False, url=GOVINFO_SEARCH,
+            http_status=e.code,
+            notes=f"govinfo search POST failed: HTTP {e.code}",
+        )
+    except Exception as e:
+        return SourceHit(
+            source="govinfo", found=False, url=GOVINFO_SEARCH,
+            notes=f"govinfo search error: {type(e).__name__}",
+        )
     if status != 200:
         return SourceHit(
-            source="govinfo", found=False, url=url,
+            source="govinfo", found=False, url=GOVINFO_SEARCH,
             http_status=status if isinstance(status, int) else None,
             notes="govinfo search unreachable or errored",
         )
@@ -892,31 +1090,45 @@ def probe_govinfo(citation: str) -> SourceHit:
         data = json.loads(body)
     except json.JSONDecodeError:
         return SourceHit(
-            source="govinfo", found=False, url=url, http_status=200,
+            source="govinfo", found=False, url=GOVINFO_SEARCH, http_status=200,
             notes="govinfo returned non-JSON",
         )
-    # Sketch note: confirm these field names against a live response.
     hits = [
         r for r in (data.get("results") or [])
         if (r.get("collectionCode") or "").upper() == "USCOURTS"
     ]
     if not hits:
         return SourceHit(
-            source="govinfo", found=False, url=url, http_status=200,
+            source="govinfo", found=False, url=GOVINFO_SEARCH, http_status=200,
             notes=f"no USCOURTS hits for query {query!r}",
         )
     top = hits[0]
-    dl = top.get("download") or {}
-    pdf = dl.get("pdfLink") or ""
+    title = top.get("title") or ""
+    # govinfo search ranking is junk for citation verification (first hit is
+    # full-text noise, not a citator). Only claim a hit when the package
+    # title is caption-compatible with the query — otherwise this probe
+    # launders whatever the ranker surfaced first.
+    name = guess_name(citation)
+    if title and names_compatible(name, title):
+        return SourceHit(
+            source="govinfo",
+            found=True,
+            url=pdf or url,
+            case_name=title,
+            http_status=200,
+            notes=(
+                f"USCOURTS packageId={top.get('packageId')!r}; title caption-matched "
+                f"against query ({name!r}); slip PDF only — any pin from this source is SECONDARY"
+            ),
+        )
     return SourceHit(
         source="govinfo",
-        found=True,
-        url=pdf or url,
-        case_name=top.get("title") or "",
+        found=False,
+        url=url,
         http_status=200,
         notes=(
-            f"USCOURTS packageId={top.get('packageId')!r}; query={query!r} "
-            "(sketch: pin-vs-title match not asserted)"
+            f"USCOURTS packages mention the query but top title {title!r} is not "
+            f"caption-compatible with {name!r} — not a verified hit"
         ),
     )
 
@@ -983,20 +1195,39 @@ def consensus_for(result: LookupResult) -> str:
     pin = next((s for s in result.sources if s.source == "courtlistener_citation"), None)
     cl = next((s for s in result.sources if s.source == "courtlistener"), None)
     cap = next((s for s in result.sources if s.source == "case.law_static"), None)
+    bulk = next((s for s in result.sources if s.source == "cl_bulk_offline"), None)
+
+    def _skipped(s: SourceHit | None) -> bool:
+        return s is None or "skipped" in (s.notes or "").lower()
+
     if pin and pin.found and pin.case_name and names_compatible(result.case_name_guess, pin.case_name):
         result.matched_name = pin.case_name
         result.matched_citations = pin.citations
         result.consensus = "FOUND"
         return result.consensus
-    found_sources = [s for s in (pin, cl, cap) if s and s.found]
+
+    found_sources = [s for s in (pin, cl, cap, bulk) if s and s.found]
     if not found_sources:
-        if result.wl_pin and not result.reporter_pin:
+        # Final negative rule: NOT_FOUND only when every applicable pin
+        # source actually ran and missed. A skipped probe (no token, no bulk
+        # DB, volume metadata unavailable, quarterly cutoff) means the cite is
+        # UNRESOLVED — absence of evidence is not evidence of absence.
+        pin_404 = bool(pin and not pin.found and "404" in (pin.notes or ""))
+        pin_sources = [s for s in (pin, cl, cap, bulk) if s is not None]
+        any_skipped = any(_skipped(s) for s in pin_sources)
+        if pin_404 and not any_skipped and (result.reporter_pin or result.wl_pin):
             result.consensus = "NOT_FOUND"
             return result.consensus
-        if result.reporter_pin:
-            result.consensus = "NOT_FOUND"
-            return result.consensus
-        result.consensus = "UNKNOWN"
+        result.consensus = "UNRESOLVED"
+        return result.consensus
+
+    if all(s.name_only for s in found_sources):
+        # The fuzzy path: a caption search with no pin behind it can never
+        # verify a citation (this is how fabricated captions get laundered).
+        primary = found_sources[0]
+        result.matched_name = primary.case_name
+        result.matched_citations = primary.citations
+        result.consensus = "PARTIAL"
         return result.consensus
 
     # Prefer CAP/CL name that matches the query; otherwise surface mismatch.
@@ -1044,6 +1275,9 @@ def lookup_one(
     use_lookup = citation_lookup == "always" or (
         citation_lookup == "auto" and bool(courtlistener_token())
     )
+    # Step 0: offline exact-triple existence check. Runs before any network
+    # call; a miss here is not NOT_FOUND (quarterly snapshot cutoff).
+    result.sources.append(probe_bulk_offline(citation))
     cite_hit = None
     if use_lookup:
         cite_hit = lookup_courtlistener_citation(citation, name)
@@ -1202,6 +1436,11 @@ def main(argv: list[str] | None = None) -> int:
 
     # reachability summary (one-shot probes on controls if requested)
     reachability = {
+        "cl_bulk_offline": (
+            "ok (local SQLite built by build-bulk-citation-index.py)"
+            if bulk_db_path() else
+            "not built — run internal/scripts/build-bulk-citation-index.py"
+        ),
         "courtlistener_search": "ok (unauthenticated /api/rest/v4/search/)",
         "case_law_api": "html docs only — JSON API not usable without auth/migration",
         "case_law_static": "ok (CasesMetadata.json + html/{file_name}.html)",
@@ -1245,7 +1484,7 @@ def main(argv: list[str] | None = None) -> int:
             "wrote": str(out_path),
             "counts": {
                 c: sum(1 for r in results if r.consensus == c)
-                for c in ("FOUND", "CAPTION_MISMATCH", "NOT_FOUND", "PARTIAL", "UNKNOWN")
+                for c in ("FOUND", "CAPTION_MISMATCH", "NOT_FOUND", "UNRESOLVED", "PARTIAL", "UNKNOWN")
             },
         }, indent=2))
     return 0

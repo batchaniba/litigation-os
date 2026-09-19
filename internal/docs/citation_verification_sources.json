@@ -1,78 +1,219 @@
 {
-  "generated": "2026-09-19",
-  "survey": "internal/docs/CITATION_SOURCE_SURVEY.md",
-  "survey_probe": "internal/scripts/survey-citation-sources.mjs",
-  "live_confirmation": {
-    "date": "2026-09-19",
-    "survey_controls": {
-      "method": "Headless HTTPS from a datacenter IP; no JS; no Westlaw/Lexis; no COURTLISTENER_TOKEN. Full source blocks in CITATION_SOURCE_SURVEY.md.",
-      "C1": "Richardson v. McKnight, 521 U.S. 399 — FOUND on CL fielded citation: search (count=1), CAP us/521 HTML with *400 page-labels, govinfo USREPORTS-521-399.pdf, LOC usrep521399.pdf, LII HTML (no stars)",
-      "C2": "Medical Marijuana, Inc. v. Horn, 604 U.S. 593 — official prelim (Volume 604 Part 2 pp. 593–649) 200 on supremecourt.gov; CL citation array already has 604 U.S. 593; CAP us/604 404 (U.S. series ends 2014); LII / Justia still show 604 U.S. ___",
-      "C3": "United States v. Paul, 239 F. App'x 353 (9th Cir. 2007) — FOUND on CL citation= and CAP f-appx/239 HTML (*354)",
-      "C4": "Goddard, 14 Cal.2d 47 — FOUND on CAP cal-2d/14. CL bare q= returned 81 citing cases (first hit Boyd v. Freeman). Fielded caseName:Goddard found the pin. REPORTER_MAP still lacks cal-2d.",
-      "C5": "2016 WL 4761808 — count=0 on CL; no free source resolved a bare WL number. westlawCite: field unused. 2016 WL 3945692 hit only because Korenblum also has 195 F. Supp. 3d 475.",
-      "C6": "Dennis v. Evans, No. 24-6244 (4th Cir. Aug. 2, 2024) — CA4 constructible 246244.u.pdf 200. CL/CA9 24-6244 is Estate of Esche (9th Cir.). Docket numbers collide.",
-      "C7": "Zellerman v. Northbridge Holdings, 999 F.4th 1 — CL count=0; CAP f4th/ slug does not exist (404). Clean miss.",
-      "C7b": "In re Leman, 66 Cal.App.5th 200 — CL count=0. CAP cal-app-5th only vols 1–11, so a real vol 66 would also 404."
-    },
-    "govinfo": {
-      "method": "POST application/json to https://api.govinfo.gov/search?api_key=...",
-      "get_returns": "JSON {message} with no results array — sketch GET probe was a miss",
-      "fields_confirmed": ["results", "count", "offsetMark", "title", "packageId", "granuleId", "collectionCode", "dateIssued", "download.pdfLink", "resultLink"],
-      "ranking": "Noisy. collection:(USCOURTS) \"765 F.3d 999\" returned 234 hits whose first page was unrelated E.D. Wash. cases. Name-match required before found=True.",
-      "not_for_unbound_scotus": "USCOURTS does not host Medical Marijuana v. Horn. Slip PDF https://www.supremecourt.gov/opinions/24pdf/23-365_6k47.pdf is the authoritative source."
-    },
-    "ca9_cdn": {
-      "filename_confirmed": "https://cdn.ca9.uscourts.gov/datastore/opinions/YYYY/MM/DD/{docket}.pdf",
-      "strip_no_prefix": "CourtListener docketNumber is often 'No. 13-35356'; CDN file is 13-35356.pdf. 'No. 13-35356.pdf' 404s.",
-      "memoranda_sibling": "https://cdn.ca9.uscourts.gov/datastore/memoranda/YYYY/MM/DD/{docket}.pdf — Wicklund 12-35294 2015-11-23 200 OK",
-      "live_hits": ["ASARCO 13-35356 2014-08-27 opinions 200", "Esche 24-6244 2025-09-29 opinions 200", "Wicklund 12-35294 2015-11-23 memoranda 200"],
-      "live_misses": ["Lee 98-55807 2001-05-04 opinions 404", "Palomar 91-56165 1993-03-30 opinions 404", "ASARCO companion 13-35355 on 2014-08-27 404"]
-    }
-  },
+  "generated": "2026-09-19 (wired: cl_bulk_offline step-0 oracle, govinfo POST + name-match, UNRESOLVED vs NOT_FOUND, name-only cap at PARTIAL, pin confidence rules, honest gaps)",
   "non_case_law_excluded": [
-    "leginfo.legislature.ca.gov (statutes — used for Pen. Code § 3008 verbatim)",
-    "OAL / CDCR rulemaking pages (regulations — OAL Matter 2025-0321-01C pinned 15 CCR § 3574 effective date)",
+    "leginfo.legislature.ca.gov (statutes \u2014 used for Pen. Code \u00a7 3008 verbatim)",
+    "OAL / CDCR rulemaking pages (regulations \u2014 OAL Matter 2025-0321-01C pinned 15 CCR \u00a7 3574 effective date)",
     "CDCR Form 3043 (agency form, not publicly openable as standalone)"
   ],
   "scope": "Case-law citation verification sources isolated from the Matter 28 primary-source verification prompt (2026-09-19). Rule 2 of the prompt gives the preference order; 'proven_in_run' marks sources a verification worker actually read successfully during the 2026-09-19 run.",
   "sources": [
-    {"id": "courtlistener", "name": "CourtListener", "base_url": "https://www.courtlistener.com/api/rest/v4/", "coverage": "Federal + state opinions; citation-lookup (token) and full-text search APIs", "prompt_rule2_rank": 5, "proven_in_run": true, "provenance": "Opinions search used for Wicklund v. Idaho (zero results — confirmed unreported). Survey C1 fielded citation: count=1 Richardson; C2 Horn citation=[604 U.S. 593]; C3 Paul; C7/C7b count=0.", "wire_notes": "Already probed by lookup-citations.py. Survey: bare q= is a citing-case trap (C4 → 81 hits, first caption Boyd v. Freeman). Prefer citation-lookup (token) or fielded citation:\"…\" plus caption. /opinions/ /clusters/ /opinions-cited/ 401 without token. HTML /opinion/… returned 202 empty from the datacenter.", "wired": true, "survey_verdict": "WIRE IN tier 1"},
-    {"id": "cap_static", "name": "Caselaw Access Project (static.case.law)", "base_url": "https://static.case.law/", "coverage": "Official-reporter HTML/JSON. Cliff: U.S. through 2014 (no vol 604); F.3d ~2019; F. App'x ~2018 vols 1–714; no F.4th slug; Cal.2d present; Cal.5th only vol 1; Cal.App.5th only vols 1–11.", "prompt_rule2_rank": null, "proven_in_run": true, "provenance": "Pollock 112 Cal.App.4th 1416 and Sain v. Wood 512 F.3d 886 read from reporter PDFs. Survey: Richardson *400 page-labels; Paul *354; Goddard 14 Cal. 2d 47.", "wire_notes": "Already probed by lookup-citations.py (lookup_cap). Only free star-pagination source. 404 past the cliff is coverage, not NOT_FOUND. api.case.law is retired (2024-09-05 HTML docs redirect). REPORTER_MAP still omits cal-2d even though CAP has it.", "wired": true, "survey_verdict": "WIRE IN tier 1 (corroborator + pin)"},
-    {"id": "justia", "name": "Justia (law.justia.com + docs.justia.com)", "base_url": "https://law.justia.com/", "coverage": "Federal/state opinions (HTML) + federal docket PDFs via docs.justia.com", "prompt_rule2_rank": 6, "proven_in_run": true, "provenance": "Wicklund memo, Valvo 67 Cal.App.3d 887 read in full; Merrill S.D. Cal. orders via docs.justia.com", "wire_notes": "Already probed by lookup-citations.py (probe_justia). Survey: every constructible Justia URL Cloudflare 403 from the datacenter. MANUAL ONLY.", "wired": true, "survey_verdict": "MANUAL ONLY"},
-    {"id": "scholar", "name": "Google Scholar", "base_url": "https://scholar.google.com/", "coverage": "Case-law full-text search fallback; How Cited is MANUAL-ONLY", "prompt_rule2_rank": null, "proven_in_run": false, "provenance": null, "wire_notes": "Already probed by lookup-citations.py (probe_scholar). Survey: 403 bot wall on search, scholar_case, and related.", "wired": true, "survey_verdict": "MANUAL ONLY"},
-    {"id": "govinfo", "name": "govinfo.gov (GPO)", "base_url": "https://www.govinfo.gov/", "coverage": "USCOURTS (selected courts, ~2004–present, incomplete) + historical USREPORTS PDFs", "prompt_rule2_rank": 4, "proven_in_run": false, "provenance": "2026-09-19 live POST confirmed field names; ranking too noisy to treat first hit as the pin. Not the Horn source. Survey: USREPORTS-521-399.pdf 200 (official pages); /app/search is an empty JS shell; API collections 401 without key.", "wire_notes": "Probe exists behind --probe-extra. POST JSON. Name-match required. Do not use USCOURTS for unbound U.S. Reports. Constructible official-PDF pin: /content/pkg/USREPORTS-{vol}/pdf/USREPORTS-{vol}-{page}.pdf", "wired": "opt-in", "survey_verdict": "WIRE IN tier 2 (USREPORTS PDF); USCOURTS search is not a citator"},
-    {"id": "ca9_cdn", "name": "Ninth Circuit opinions (cdn.ca9.uscourts.gov)", "base_url": "https://cdn.ca9.uscourts.gov/datastore/opinions/", "coverage": "9th Circuit published + memorandum dispositions (docket+date PDFs; no reporter pages)", "prompt_rule2_rank": 2, "proven_in_run": true, "provenance": "ASARCO 13-35356 and Esche 24-6244 PDFs 200; Wicklund memo under /memoranda/; Lee/Palomar-era CDN 404.", "wire_notes": "Probe exists behind --probe-extra. Strip 'No. ' from CL docketNumber. Try opinions then memoranda. Pre-~2010 published opinions often missing. Survey: directory indexes 200/0-byte; 24-6244 is Esche, not Dennis (4th Cir.). Docket+court required.", "wired": "opt-in", "survey_verdict": "WIRE IN tier 2 after docket+date"},
-    {"id": "courts_ca_gov", "name": "California Courts opinions (courts.ca.gov)", "base_url": "https://www.courts.ca.gov/opinions/documents/", "coverage": "Recent Cal. Supreme Court + Courts of Appeal slips. Unpublished 60-day list; older unpublished via appellatecases.courtinfo.ca.gov. Not a Cal.2d constructor.", "prompt_rule2_rank": 3, "proven_in_run": true, "provenance": "Meinhardt (2024) 16 Cal.5th 643 read in full from .../opinions/documents/S274147.PDF", "wire_notes": "URL pattern .../documents/<DOCKET>.PDF (e.g. S274147.PDF). Docket-addressable; needs docket-number lookup step. Still unwired. Survey: no depublication/review-granted flag; CRC 8.1115 unpublished is unlabeled on most free mirrors.", "wired": false, "survey_verdict": "WIRE IN tier 2 for recent slips; MANUAL for 8.1115 status"},
-    {"id": "supremecourt_gov", "name": "U.S. Supreme Court (supremecourt.gov)", "base_url": "https://www.supremecourt.gov/opinions/", "coverage": "Slip + preliminary-print + bound-volume PDFs. Horn already has official 604 U.S. 593 in the OT 2024 prelim (604us2r23).", "prompt_rule2_rank": 1, "proven_in_run": true, "provenance": "Horn slip 200 at /opinions/24pdf/23-365_6k47.pdf. Survey also fetched prelim 604us2r23_3e04.pdf and bound 521bv.pdf; slip list HTML already prints 604 U.S. 593.", "wire_notes": "No public API. Slip filename is docket-hash. Bound volume /boundvolumes/{vol}bv.pdf is volume-constructible. Scrape /opinions/slipopinion/{yy} to map docket → official cite. Highest remaining unwired source for current-Term pagination.", "wired": false, "survey_verdict": "WIRE IN tier 1 for current-Term official pages"},
-    {"id": "cornell_lii_scotus", "name": "Cornell LII — Supreme Court", "base_url": "https://www.law.cornell.edu/supremecourt/text/", "coverage": "SCOTUS opinions, citation-addressable HTML. No star pagination on Richardson HTML this session. Recent cases are /text/{docket} (23-365), not /604/593.", "prompt_rule2_rank": 8, "proven_in_run": false, "provenance": "Survey: /521/399 and /supct/html/96-318.ZO.html 200 Richardson; /23-365 200 Horn slip text.", "wire_notes": "Citation-addressable for bound U.S. Reports; will not confirm a pin. Unbound slips are docket slugs.", "wired": false, "survey_verdict": "WIRE IN tier 3 (text mirror, pin SECONDARY)"},
-    {"id": "scocal", "name": "scocal.stanford.edu (Cal. Supreme Court)", "base_url": "https://scocal.stanford.edu/opinion/", "coverage": "Cal. Supreme Court opinions, full HTML text", "prompt_rule2_rank": null, "proven_in_run": true, "provenance": "Goddard 14 Cal.2d 47 read in full", "wire_notes": "Slug-addressable HTML. Needs cite-to-slug resolution. CAP *does* have Cal.2d (survey C4 FOUND); lookup-citations.py REPORTER_MAP still omits cal-2d — that is the wiring gap, not a CAP gap.", "wired": false, "survey_verdict": "MANUAL / optional fallback"},
-    {"id": "findlaw", "name": "FindLaw Caselaw", "base_url": "https://caselaw.findlaw.com/", "coverage": "Federal/state opinions, HTML", "prompt_rule2_rank": 7, "proven_in_run": false, "provenance": null, "wire_notes": "Survey: Cloudflare 403 on constructible SCOTUS URLs. No API. Do not wire.", "wired": false, "survey_verdict": "MANUAL ONLY"},
-    {"id": "alldocket", "name": "alldocket.com", "base_url": "http://alldocket.com/api/cases/", "coverage": "Federal opinion/docket PDFs (RECAP-derived)", "prompt_rule2_rank": null, "proven_in_run": true, "provenance": "Estate of Esche (9th Cir. Sept. 29, 2025) read in full from alldocket PDF path", "wire_notes": "Opaque IDs; not systematically addressable. Manual fallback only — do not build a probe around it.", "wired": false, "survey_verdict": "DO NOT USE as a probe"},
-    {"id": "casetext", "name": "Casetext", "base_url": "https://casetext.com/", "coverage": "None — product shut", "prompt_rule2_rank": null, "proven_in_run": false, "provenance": "Survey 2026-09-19: HTTP 410 Gone, retirement notice pointing at Thomson Reuters.", "wire_notes": "Acquired 2023-08-17; standalone killed 2025-04-01. Remove from any runbook that still lists it.", "wired": false, "survey_verdict": "DO NOT USE"},
-    {"id": "vlex", "name": "vLex / case-law.vlex.com", "base_url": "https://case-law.vlex.com/", "coverage": "Commercial corpus after login", "prompt_rule2_rank": null, "proven_in_run": false, "provenance": "Survey: guessed Richardson vid 200'd a different case (Franchi v. New Hampton).", "wire_notes": "Not constructible. Guessed /vid/ URLs silently serve the wrong opinion. Library login only.", "wired": false, "survey_verdict": "DO NOT USE as a probe"},
-    {"id": "ca4_opinions", "name": "Fourth Circuit opinions (ca4.uscourts.gov)", "base_url": "https://www.ca4.uscourts.gov/opinions/", "coverage": "4th Cir. published + unpublished (.u.pdf)", "prompt_rule2_rank": null, "proven_in_run": false, "provenance": "Survey C6: https://www.ca4.uscourts.gov/opinions/246244.u.pdf 200 Dennis v. Evans.", "wire_notes": "Rare constructible docket → PDF. Unpublished suffix .u.pdf. Pair with court_id so 24-6244 does not resolve as CA9 Esche.", "wired": false, "survey_verdict": "WIRE IN tier 2 for 4th Cir. docket PDFs"},
-    {"id": "loc_usrep", "name": "Library of Congress U.S. Reports scans", "base_url": "https://tile.loc.gov/storage-services/service/ll/usrep/", "coverage": "Historical official U.S. Reports page-image PDFs", "prompt_rule2_rank": null, "proven_in_run": false, "provenance": "Survey C1: usrep521399.pdf 200, 749 KB.", "wire_notes": "Constructible …/usrep{vol}/usrep{vol}{page}/usrep{vol}{page}.pdf. Pin confirmer for old U.S. Reports; will not have 604.", "wired": false, "survey_verdict": "WIRE IN tier 2"}
+    {
+      "id": "cl_bulk_offline",
+      "name": "CourtListener bulk citations table (offline SQLite oracle)",
+      "base_url": "https://com-courtlistener-storage.s3.amazonaws.com/bulk-data/citations-2026-06-30.csv.bz2",
+      "coverage": "~13M citation rows (2026-06-30 snapshot, quarterly); exact (volume, reporter, page) -> cluster_id",
+      "prompt_rule2_rank": 0,
+      "proven_in_run": true,
+      "provenance": "Downloaded + indexed 2026-09-19 from this VM (127MB bz2); HEAD verified 200, Accept-Ranges. Reporter strings verified Bluebook-form (U.S., F.3d, F. App'x, S. Ct., Cal. 5th ...).",
+      "wired": true,
+      "wire_notes": "Step 0 in lookup-citations.py (probe_bulk_offline) via build-bulk-citation-index.py. Answers existence only; cannot fuzzy-match so it cannot launder a fabricated cite. Miss != NOT_FOUND (quarterly cutoff) \u2014 falls through to live probes."
+    },
+    {
+      "base_url": "https://www.courtlistener.com/api/rest/v4/",
+      "coverage": "Federal + state opinions; citation-lookup and full-text search APIs",
+      "id": "courtlistener",
+      "name": "CourtListener",
+      "prompt_rule2_rank": 5,
+      "proven_in_run": true,
+      "provenance": "Opinions search used for Wicklund v. Idaho (zero results \u2014 confirmed unreported)",
+      "wire_notes": "Already probed by lookup-citations.py (citation lookup + search). No change needed.",
+      "wired": true
+    },
+    {
+      "base_url": "https://static.case.law/",
+      "coverage": "Reporter PDFs for published state/federal cases (citation-addressable)",
+      "id": "cap_static",
+      "name": "Caselaw Access Project (static.case.law)",
+      "prompt_rule2_rank": null,
+      "proven_in_run": true,
+      "provenance": "Pollock 112 Cal.App.4th 1416 and Sain v. Wood 512 F.3d 886 read from reporter PDFs",
+      "wire_notes": "Already probed by lookup-citations.py (lookup_cap). No change needed.",
+      "wired": true
+    },
+    {
+      "base_url": "https://law.justia.com/",
+      "coverage": "Federal/state opinions (HTML) + federal docket PDFs via docs.justia.com",
+      "id": "justia",
+      "name": "Justia (law.justia.com + docs.justia.com)",
+      "prompt_rule2_rank": 6,
+      "proven_in_run": true,
+      "provenance": "Wicklund memo, Valvo 67 Cal.App.3d 887 read in full; Merrill S.D. Cal. orders via docs.justia.com",
+      "wire_notes": "Already probed by lookup-citations.py (probe_justia). No change needed.",
+      "wired": true
+    },
+    {
+      "base_url": "https://scholar.google.com/",
+      "coverage": "Case-law full-text search fallback",
+      "id": "scholar",
+      "name": "Google Scholar",
+      "prompt_rule2_rank": null,
+      "proven_in_run": false,
+      "provenance": null,
+      "wire_notes": "Already probed by lookup-citations.py (probe_scholar). No change needed.",
+      "wired": true
+    },
+    {
+      "base_url": "https://www.govinfo.gov/",
+      "coverage": "Federal opinions incl. USCOURTS collection; official API with key",
+      "id": "govinfo",
+      "name": "govinfo.gov (GPO)",
+      "prompt_rule2_rank": 4,
+      "proven_in_run": true,
+      "provenance": "Live-tested 2026-09-19 from this VM: /search rejects GET (POST + JSON body required); ranking is full-text noise; /packages/USCOURTS-ca9-24-06244/summary -> 404 (pattern NOT verified for circuit opinions).",
+      "wire_notes": "probe_govinfo uses POST JSON to /search (USCOURTS). Hit claimed ONLY when package title is caption-compatible with the query (first-hit ranking is junk). Slip PDFs from here are SECONDARY pin sources by construction.",
+      "wired": true
+    },
+    {
+      "base_url": "https://cdn.ca9.uscourts.gov/datastore/opinions/",
+      "coverage": "9th Circuit published + memorandum dispositions (docket-addressable PDFs)",
+      "id": "ca9_cdn",
+      "name": "Ninth Circuit opinions (cdn.ca9.uscourts.gov)",
+      "prompt_rule2_rank": 2,
+      "proven_in_run": false,
+      "provenance": null,
+      "wire_notes": "URL pattern .../opinions/YYYY/MM/DD/<docket>.pdf. Docket-number-addressable, no citation resolver. Covers the portfolio's heaviest circuit (Palomar, Lee, ASARCO, Rawson, Kirtley, Caviness, Heath, Schreiber, DZ Reserve, Arizona Students' Ass'n, Esche). Recommended second new probe.",
+      "wired": false
+    },
+    {
+      "base_url": "https://www.courts.ca.gov/opinions/documents/",
+      "coverage": "Cal. Supreme Court + Courts of Appeal opinions (PDF)",
+      "id": "courts_ca_gov",
+      "name": "California Courts opinions (courts.ca.gov)",
+      "prompt_rule2_rank": 3,
+      "proven_in_run": true,
+      "provenance": "Meinhardt (2024) 16 Cal.5th 643 read in full from .../opinions/documents/S274147.PDF",
+      "wire_notes": "URL pattern .../documents/<DOCKET>.PDF (e.g. S274147.PDF). Docket-addressable; needs docket-number lookup step.",
+      "wired": false
+    },
+    {
+      "base_url": "https://www.supremecourt.gov/opinions/",
+      "coverage": "Slip opinions + bound-volume PDFs; authoritative for unbound U.S. Reports cites",
+      "id": "supremecourt_gov",
+      "name": "U.S. Supreme Court (supremecourt.gov)",
+      "prompt_rule2_rank": 1,
+      "proven_in_run": false,
+      "provenance": null,
+      "wire_notes": "No public API. Highest marginal value: unbound cites like Horn 604 U.S. ___ (no reporter page exists yet) \u2014 slip opinions are the only authoritative source.",
+      "wired": false
+    },
+    {
+      "base_url": "https://www.law.cornell.edu/supremecourt/text/",
+      "coverage": "SCOTUS opinions, citation-addressable HTML",
+      "id": "cornell_lii_scotus",
+      "name": "Cornell LII \u2014 Supreme Court",
+      "prompt_rule2_rank": 8,
+      "proven_in_run": false,
+      "provenance": null,
+      "wire_notes": "URL pattern /supremecourt/text/<volume>/<page> (e.g. /521/399 for Richardson). Citation-addressable with no lookup step \u2014 cheapest SCOTUS probe to add.",
+      "wired": false
+    },
+    {
+      "base_url": "https://scocal.stanford.edu/opinion/",
+      "coverage": "Cal. Supreme Court opinions, full HTML text",
+      "id": "scocal",
+      "name": "SCOTUSblog-style: scocal.stanford.edu (Cal. Supreme Court)",
+      "prompt_rule2_rank": null,
+      "proven_in_run": true,
+      "provenance": "Goddard 14 Cal.2d 47 read in full",
+      "wire_notes": "Slug-addressable HTML (e.g. /opinion/goddard-v-security-title-ins-guar-co-25274). Needs cite-to-slug resolution; useful fallback when CAP lags.",
+      "wired": false
+    },
+    {
+      "base_url": "https://caselaw.findlaw.com/",
+      "coverage": "Federal/state opinions, HTML",
+      "id": "findlaw",
+      "name": "FindLaw Caselaw",
+      "prompt_rule2_rank": 7,
+      "proven_in_run": false,
+      "provenance": null,
+      "wire_notes": "No API; HTML scraping only. Lowest priority \u2014 duplicates CAP/CourtListener coverage.",
+      "wired": false
+    },
+    {
+      "base_url": "http://alldocket.com/api/cases/",
+      "coverage": "Federal opinion/docket PDFs (RECAP-derived)",
+      "id": "alldocket",
+      "name": "alldocket.com",
+      "prompt_rule2_rank": null,
+      "proven_in_run": true,
+      "provenance": "Estate of Esche (9th Cir. Sept. 29, 2025) read in full from .../estate-of-jill-ann-esche-v-bunuel-jordana-10679498-1e95b21f039a/pdf",
+      "wire_notes": "Opaque IDs (.../<slug>/<id>/pdf); not systematically addressable. Manual fallback only \u2014 do not build a probe around it.",
+      "wired": false
+    }
   ],
   "wiring_recommendation": {
-    "note": "The four already-wired sources cover published pins inside CAP's window. Survey 2026-09-19: existence is CL citation-lookup (token) or fielded citation:\"…\" plus caption — never bare q=. Pin confirmation is CAP page-labels or official U.S. Reports PDFs. New probes add value where CAP/CL miss: recent CA9/CA4 PDFs, district USCOURTS packages, and current-Term SCOTUS prelims.",
+    "note": "The four already-wired sources (CourtListener, CAP, Justia, Scholar) cover nearly all published cases. New probes add marginal value in three spots only.",
     "priority_order": [
-      "courtlistener fielded citation: / citation-lookup (primary existence; do not use bare q=)",
-      "cap_static metadata + HTML page-label (corroborator + only free star pin, inside the cliff)",
-      "supremecourt_gov prelim/slip list (official 604 U.S. 593 already posted; CAP will never have it)",
-      "ca9_cdn (filename confirmed; opt-in probe now fetches opinions + memoranda; require court+date)",
-      "ca4_opinions {docket}.u.pdf (constructible; C6 Dennis)",
-      "govinfo USREPORTS-{vol}-{page}.pdf then POST + name-match (official API, ranking is not a citator)",
-      "loc_usrep constructible official-page PDF",
-      "cornell_lii_scotus (text mirror; pin SECONDARY)",
-      "courts_ca_gov + scocal (Cal. direct PDFs; add cal-2d to REPORTER_MAP rather than treating CAP as missing it)"
-    ],
-    "do_not_wire": [
-      "casetext (410 Gone, 2025-04-01)",
-      "api.case.law (retired 2024-09-05)",
-      "vlex guessed /vid/ (200 wrong case)",
-      "justia / findlaw / openjurist / scholar from a datacenter (Cloudflare or bot 403)",
-      "alldocket (opaque IDs)"
+      "govinfo (official API \u2014 most robust new probe)",
+      "ca9_cdn (docket-addressable; portfolio's heaviest circuit)",
+      "supremecourt_gov slip opinions (only authoritative source for unbound U.S. cites, e.g. Horn 604 U.S. ___)",
+      "cornell_lii_scotus (citation-addressable, cheapest to add)",
+      "courts_ca_gov + scocal (Cal. direct PDFs as fallback)"
+    ]
+  },
+  "honest_gaps": [
+    "No free Westlaw-number resolver: WL pins (e.g. 2021 WL 1034838) cannot be resolved offline; CourtListener sometimes carries them, no guarantee.",
+    "No programmatic negative-treatment flags from free sources: KeyCite/Shepard's need Westlaw/Lexis. Only verified remote route: San Diego Law Library pro-se Westlaw pilot (2 concurrent seats, OnePass).",
+    "California depublication can silently stale CourtListener's 'Published' label \u2014 treat publication status as provisional for Cal. cases.",
+    "Bulk offline snapshot is quarterly (2026-06-30): post-cutoff cases are invisible to the oracle; a bulk miss is UNRESOLVED, never NOT_FOUND.",
+    "CAP static is frozen ~2018: no post-2018 state-court coverage; live CAP API retired 2024-09-05.",
+    "CourtListener May-2026 throttle: new accounts 5/min, 50/hr, 125/day; citation-lookup 60 valid cites/min, 250 citations/request.",
+    "supremecourt.gov has no public API; unbound U.S. cites (e.g. Horn 604 U.S. ___) resolve only via slip/preliminary-print PDFs there."
+  ],
+  "pin_confidence_rules": {
+    "PRIMARY": "CAP static reporter HTML page-label anchors; official preliminary-print / bound-volume PDFs (e.g. supremecourt.gov revised PDFs carrying official U.S. pagination).",
+    "SECONDARY": "Everything else by construction: CourtListener plain_text pins, govinfo / ca9 CDN / courts.ca.gov slip PDFs, unbound U.S. cites (suggest S. Ct. / L. Ed. 2d parallel).",
+    "note": "Pin confidence is separate from existence. The offline oracle and pin APIs answer existence; only PRIMARY sources confirm the reporter pin."
+  },
+  "control_matrix_2026_09_19": {
+    "run_from": "hatch VM, 2026-09-19 ~02:00 PDT",
+    "results": [
+      {
+        "control": "C1 Swift v. California, 384 F.3d 1184",
+        "openjurist_by_path": "200 OK",
+        "cap": "f3d/384 first_page=1184 -> 'Swift v. California', file 1184-01; page-label anchors present (PRIMARY pin)",
+        "verdict": "pass"
+      },
+      {
+        "control": "C2 Richardson v. McKnight, 521 U.S. 399",
+        "openjurist_by_path": "200 OK (521/us/399)",
+        "verdict": "pass"
+      },
+      {
+        "control": "C4 In re Hudson, 1 Cal.App. 4th 1 (2006)",
+        "cap": "cal-app-4th/1 first_page=1 -> 'Weidenfeller v. Star & Garter' \u2014 fabricated cite caught (wrong case at pin)",
+        "verdict": "pass (negative control caught)"
+      },
+      {
+        "control": "govinfo search",
+        "finding": "GET rejected; POST JSON works; ranking is full-text noise (top USCOURTS hits for 'Medical Marijuana Horn' are unrelated dockets); /packages/USCOURTS-ca9-24-06244/summary -> 404",
+        "verdict": "probe hardened: name-match required, POST body"
+      },
+      {
+        "control": "ca9 CDN",
+        "finding": "Esche 24-6244 + Wicklund 12-35294 fetched 200 OK this morning",
+        "verdict": "pass"
+      },
+      {
+        "control": "courts.ca.gov",
+        "finding": "Meinhardt (2024) 16 Cal.5th 643 PDF read in full this morning",
+        "verdict": "pass"
+      },
+      {
+        "control": "supremecourt.gov Horn revised PDF (604 U.S. 593 pagination)",
+        "finding": "survey-verified 2026-09-19; NOT re-verified from this VM",
+        "verdict": "documented, not re-tested"
+      }
     ]
   }
 }
