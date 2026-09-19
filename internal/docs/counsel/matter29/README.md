@@ -5,7 +5,7 @@ Living dossier for the two defense desks in **Newanforbi v. Amazon.com Services,
 | File | What it is |
 |---|---|
 | [`STANZICK_FREDERICK.md`](STANZICK_FREDERICK.md) | Read this. Two-desk comparison: Stanzick (Seyfarth / Accurate) vs Frederick (Morgan Lewis / Amazon), pre-September 22 forecast, the seam between the defenses. |
-| [`sources/`](sources/) | Lodged PACER prints: Frederick C.D. Cal. / E.D. Cal. attorney queries (Sep 18, 2026); *Wade v. Amazon* removal packet (E.D. Cal. 1:26-cv-02381). Also catalogued under `/documents/matter-29/counsel-frederick/`. |
+| [`sources/`](sources/) | Lodged PACER prints: Frederick C.D. Cal. / E.D. Cal. / N.D. Cal. attorney queries (Sep 18, 2026); *Wade v. Amazon* removal packet (E.D. Cal. 1:26-cv-02381). Also catalogued under `/documents/matter-29/counsel-frederick/`. |
 
 ## How to update
 

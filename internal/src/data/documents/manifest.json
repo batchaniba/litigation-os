@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1416,
-  "totalBytes": 934268033,
+  "fileCount": 1417,
+  "totalBytes": 934399036,
   "files": [
     {
       "path": "/documents/README.md",
@@ -7082,6 +7082,11 @@
       "path": "/documents/opinions/Newanforbi v Smith - USDC NDCal - Order Directing Service Aug 26 2026.pdf",
       "size": 134726,
       "sha256": "79355d28b4741e9e26e2f3d5b89bf37ef4f3af1bbfece3567e83a91778cc7488"
+    },
+    {
+      "path": "/documents/matter-29/counsel-frederick/PACER - N.D. Cal. Attorney Query - Andrew Paul Frederick (Sep 18 2026).pdf",
+      "size": 131003,
+      "sha256": "ef13cfa261bfcc9f5a9ff74904d0ee6fa0a1d557f3bdc573e5bbd3b27acadba2"
     }
   ]
 }
