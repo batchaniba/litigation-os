@@ -6,8 +6,10 @@ Probes reporter pins against:
      COURTLISTENER_TOKEN is set — the pin API (200 / 404 / 400 / 300)
   2. CourtListener REST search API (unauthenticated /api/rest/v4/search/) as corroboration
   3. Caselaw Access Project bulk metadata at static.case.law (CasesMetadata.json)
-  4. (opt-in --probe-extra) govinfo.gov search API (USCOURTS collection) and
-     cdn.ca9.uscourts.gov (9th Circuit opinion PDFs) — sketch probes, 2026-09-19
+  4. (opt-in --probe-extra) govinfo.gov search API (USCOURTS collection; POST +
+     name-match) and cdn.ca9.uscourts.gov (9th Circuit PDFs; opinions then
+     memoranda). Evidence only — does not vote in consensus. Unbound U.S.
+     Reports slips (*Horn*) are supremecourt.gov, not USCOURTS.
 
 Also records reachability for Justia and Google Scholar (usually blocked).
 
@@ -21,6 +23,7 @@ Usage:
   python3 internal/scripts/lookup-citations.py --batch high-risk
   python3 internal/scripts/lookup-citations.py --matter 28
   python3 internal/scripts/lookup-citations.py --cites-file /tmp/cites.json
+  python3 internal/scripts/lookup-citations.py --cite "765 F.3d 999" --probe-extra
 """
 
 from __future__ import annotations
@@ -180,7 +183,53 @@ def http_post_form(
     return last
 
 
-def _dotenv_token() -> str | None:
+def http_post_json(
+    url: str,
+    payload: dict,
+    *,
+    headers: dict[str, str] | None = None,
+    timeout: int = 45,
+    retries: int = 3,
+):
+    last = (-1, "error", b"")
+    body_bytes = json.dumps(payload).encode()
+    for attempt in range(retries):
+        req_headers = {
+            "User-Agent": UA,
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+        }
+        if headers:
+            req_headers.update(headers)
+        req = urllib.request.Request(url, data=body_bytes, headers=req_headers, method="POST")
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                return r.status, r.headers.get("Content-Type", ""), r.read()
+        except urllib.error.HTTPError as e:
+            body = b""
+            try:
+                body = e.read()
+            except Exception:
+                pass
+            last = (e.code, str(e.reason), body)
+            if e.code in (429, 502, 503, 504) and attempt + 1 < retries:
+                wait = 2.0 * (attempt + 1)
+                if e.code == 429:
+                    wait = 65.0
+                time.sleep(wait)
+                continue
+            return last
+        except Exception as e:
+            last = (-1, type(e).__name__, str(e).encode())
+            if attempt + 1 < retries:
+                time.sleep(0.75 * (attempt + 1))
+                continue
+            return last
+    return last
+
+
+def _dotenv_value(*keys: str) -> str | None:
+    wanted = {k.strip() for k in keys}
     for path in (ROOT.parent / ".env", ROOT / ".env"):
         if not path.is_file():
             continue
@@ -197,12 +246,16 @@ def _dotenv_token() -> str | None:
             key, sep, val = line.partition("=")
             if not sep:
                 continue
-            if key.strip() not in {CL_TOKEN_ENV, CL_TOKEN_ENV_ALT}:
+            if key.strip() not in wanted:
                 continue
             val = val.strip().strip("'").strip('"')
             if val:
                 return val
     return None
+
+
+def _dotenv_token() -> str | None:
+    return _dotenv_value(CL_TOKEN_ENV, CL_TOKEN_ENV_ALT)
 
 
 def courtlistener_token() -> str | None:
@@ -825,107 +878,190 @@ def probe_scholar(citation: str) -> SourceHit:
 
 
 # ---------------------------------------------------------------------------
-# Extra probes (sketch, 2026-09-19) — opt-in via --probe-extra.
+# Extra probes — opt-in via --probe-extra. Live-confirmed 2026-09-19.
 #
-# Sources isolated from the Matter 28 primary-source verification prompt
-# (see internal/docs/citation_verification_sources.json):
+# See internal/docs/citation_verification_sources.json.
 #
-#   govinfo  — GPO's official API. The ONLY authoritative source for unbound
-#              U.S. Reports cites (e.g. Medical Marijuana v. Horn, 604 U.S. ___),
-#              which no reporter PDF, CAP record, or slip-opinion mirror on the
-#              standard probes can resolve yet.
-#   ca9_cdn  — cdn.ca9.uscourts.gov, the 9th Circuit's own opinion PDFs.
-#              Docket-addressable, not citation-addressable, so this probe does
-#              a two-step: CourtListener search -> (docketNumber, dateFiled) ->
-#              candidate datastore URL.
+#   govinfo  — GPO Search Service. POST JSON. Ranking is not a citator:
+#              name-match required before found=True. USCOURTS does not
+#              host unbound U.S. Reports slips (*Horn* is supremecourt.gov).
+#   ca9_cdn  — cdn.ca9.uscourts.gov. Docket-addressable. Two-step:
+#              CourtListener search → strip "No. " → opinions PDF, then
+#              memoranda PDF. Pre-~2010 published opinions often 404.
 #
-# Sketch status: function shapes and URL patterns are drafted; the govinfo JSON
-# field names and the exact ca9 datastore filename conventions need a
-# live-response confirmation pass before these count as production probes.
-# They return evidence only — consensus_for() is intentionally untouched.
+# Evidence only — consensus_for() is intentionally untouched.
 # ---------------------------------------------------------------------------
 
 GOVINFO_SEARCH = "https://api.govinfo.gov/search"
 GOVINFO_API_KEY_ENV = "GOVINFO_API_KEY"
-CA9_DATASTORE = "https://cdn.ca9.uscourts.gov/datastore/opinions"
+CA9_DATASTORE = "https://cdn.ca9.uscourts.gov/datastore"
+CA9_OPINIONS = f"{CA9_DATASTORE}/opinions"
+CA9_MEMORANDA = f"{CA9_DATASTORE}/memoranda"
 
 _FEDERAL_REPORTER_SLUGS = {"us", "f2d", "f3d", "f4th", "f-supp-2d", "f-supp-3d", "s-ct"}
 _UNBOUND_US_RE = re.compile(r"\bU\.?\s*S\.?\s*_{2,}\b")
 _CA9_COURT_TAGS = {"ninth circuit", "ca9", "9th cir."}
+_CA9_NO_PREFIX = re.compile(r"^(?:no\.?\s*)+", re.I)
+
+
+def is_unbound_us(citation: str) -> bool:
+    return bool(_UNBOUND_US_RE.search(citation))
 
 
 def govinfo_api_key() -> str:
     """GOVINFO_API_KEY if set, else the public DEMO_KEY (rate-limited)."""
-    return os.environ.get(GOVINFO_API_KEY_ENV) or "DEMO_KEY"
+    return (
+        (os.environ.get(GOVINFO_API_KEY_ENV) or "").strip()
+        or _dotenv_value(GOVINFO_API_KEY_ENV)
+        or "DEMO_KEY"
+    )
+
+
+def govinfo_search_payload(query: str) -> dict:
+    """POST body for api.govinfo.gov/search (Search Service, 2023+)."""
+    return {
+        "query": query,
+        "pageSize": 10,
+        "offsetMark": "*",
+        "historical": True,
+        "resultLevel": "default",
+    }
+
+
+def govinfo_query_for(citation: str) -> str | None:
+    """USCOURTS field query, or None when this probe should skip."""
+    if is_unbound_us(citation):
+        return None
+    rep = parse_reporter(citation)
+    if not rep or rep["slug"] not in _FEDERAL_REPORTER_SLUGS:
+        return None
+    return f'collection:(USCOURTS) "{rep["pin"]}"'
+
+
+def govinfo_pick_named_hit(results: list, citation: str) -> dict | None:
+    """First USCOURTS row whose title matches the caption. Not hits[0]."""
+    name = guess_name(citation)
+    if not name:
+        return None
+    for row in results or []:
+        if (row.get("collectionCode") or "").upper() != "USCOURTS":
+            continue
+        title = row.get("title") or ""
+        if title and names_compatible(name, title):
+            return row
+    return None
 
 
 def probe_govinfo(citation: str) -> SourceHit:
-    """Sketch: query the govinfo search API (USCOURTS collection) for a pin."""
-    rep = parse_reporter(citation)
-    unbound = bool(_UNBOUND_US_RE.search(citation))
-    if not rep and not unbound:
+    """POST the govinfo Search Service; FOUND only on a caption match."""
+    if is_unbound_us(citation):
         return SourceHit(
-            source="govinfo", found=False, url=GOVINFO_SEARCH,
-            notes="skipped: no federal reporter pin and not an unbound U.S. cite",
+            source="govinfo",
+            found=False,
+            url=GOVINFO_SEARCH,
+            notes=(
+                "skipped: unbound U.S. Reports — USCOURTS does not host slips; "
+                "authoritative source is supremecourt.gov (see citation_verification_sources.json)"
+            ),
         )
-    if rep and rep["slug"] not in _FEDERAL_REPORTER_SLUGS:
+    query = govinfo_query_for(citation)
+    if not query:
+        rep = parse_reporter(citation)
+        if rep:
+            return SourceHit(
+                source="govinfo",
+                found=False,
+                url=GOVINFO_SEARCH,
+                notes=f"skipped: reporter slug {rep['slug']!r} is not a federal reporter",
+            )
         return SourceHit(
-            source="govinfo", found=False, url=GOVINFO_SEARCH,
-            notes=f"skipped: reporter slug {rep['slug']!r} is not a federal reporter",
+            source="govinfo",
+            found=False,
+            url=GOVINFO_SEARCH,
+            notes="skipped: no federal reporter pin",
         )
-    query = rep["pin"] if rep else f'"{guess_name(citation)}"'
-    url = GOVINFO_SEARCH + "?" + urllib.parse.urlencode({
-        "historical": "true",
-        "offsetMark": "*",
-        "pageSize": "10",
-        "query": query,
-        "api_key": govinfo_api_key(),
-    })
-    status, ctype, body = http_get(url)
+    payload = govinfo_search_payload(query)
+    status, ctype, body = http_post_json(
+        GOVINFO_SEARCH,
+        payload,
+        headers={"X-Api-Key": govinfo_api_key()},
+    )
     if status != 200:
         return SourceHit(
-            source="govinfo", found=False, url=url,
+            source="govinfo",
+            found=False,
+            url=GOVINFO_SEARCH,
             http_status=status if isinstance(status, int) else None,
-            notes="govinfo search unreachable or errored",
+            notes="govinfo POST search unreachable or errored",
         )
     try:
         data = json.loads(body)
     except json.JSONDecodeError:
         return SourceHit(
-            source="govinfo", found=False, url=url, http_status=200,
+            source="govinfo",
+            found=False,
+            url=GOVINFO_SEARCH,
+            http_status=200,
             notes="govinfo returned non-JSON",
         )
-    # Sketch note: confirm these field names against a live response.
-    hits = [
-        r for r in (data.get("results") or [])
-        if (r.get("collectionCode") or "").upper() == "USCOURTS"
-    ]
-    if not hits:
+    rows = data.get("results") or []
+    # GET-shaped {message} with no results — the discarded sketch.
+    if not rows and data.get("message") and "results" not in data:
         return SourceHit(
-            source="govinfo", found=False, url=url, http_status=200,
-            notes=f"no USCOURTS hits for query {query!r}",
+            source="govinfo",
+            found=False,
+            url=GOVINFO_SEARCH,
+            http_status=200,
+            notes="govinfo returned {message} with no results (GET-shaped; need POST JSON)",
         )
-    top = hits[0]
-    dl = top.get("download") or {}
+    uscourts_n = sum(
+        1 for r in rows if (r.get("collectionCode") or "").upper() == "USCOURTS"
+    )
+    hit = govinfo_pick_named_hit(rows, citation)
+    if not hit:
+        return SourceHit(
+            source="govinfo",
+            found=False,
+            url=GOVINFO_SEARCH,
+            http_status=200,
+            notes=(
+                f"no caption match for {guess_name(citation)!r} among {uscourts_n} "
+                f"USCOURTS hits (query={query!r}; ranking is not a citator)"
+            ),
+        )
+    dl = hit.get("download") or {}
     pdf = dl.get("pdfLink") or ""
     return SourceHit(
         source="govinfo",
         found=True,
-        url=pdf or url,
-        case_name=top.get("title") or "",
+        url=pdf or hit.get("resultLink") or GOVINFO_SEARCH,
+        case_name=hit.get("title") or "",
         http_status=200,
-        notes=(
-            f"USCOURTS packageId={top.get('packageId')!r}; query={query!r} "
-            "(sketch: pin-vs-title match not asserted)"
-        ),
+        notes=f"USCOURTS packageId={hit.get('packageId')!r}; query={query!r}; name-matched",
     )
 
 
-def _ca9_resolve_docket(citation: str, name_guess: str):
-    """Sketch: citation -> (docket, yyyy, mm, dd) via CourtListener search.
+def ca9_strip_docket(docket: str) -> str:
+    """CourtListener docketNumber is often 'No. 13-35356'; CDN file is 13-35356.pdf."""
+    s = (docket or "").strip()
+    s = _CA9_NO_PREFIX.sub("", s)
+    s = s.split(",")[0].strip()
+    s = s.split(";")[0].strip()
+    return s
 
-    Only accepts 9th Circuit results. Returns None when nothing resolves.
-    """
+
+def ca9_pdf_candidates(docket: str, year: str, month: str, day: str) -> list[tuple[str, str]]:
+    """opinions first, then memoranda. Live 2026-09-19: Wicklund is memoranda."""
+    slug = ca9_strip_docket(docket)
+    y, m, d = year, month, day
+    return [
+        ("opinions", f"{CA9_OPINIONS}/{y}/{m}/{d}/{slug}.pdf"),
+        ("memoranda", f"{CA9_MEMORANDA}/{y}/{m}/{d}/{slug}.pdf"),
+    ]
+
+
+def _ca9_resolve_docket(citation: str, name_guess: str):
+    """citation → (docket, yyyy, mm, dd) via CourtListener search. 9th Cir. only."""
     rep = parse_reporter(citation)
     q = f'"{rep["pin"]}"' if rep else f'"{name_guess}"'
     url = CL_SEARCH + "?" + urllib.parse.urlencode({"type": "o", "q": q})
@@ -940,7 +1076,8 @@ def _ca9_resolve_docket(citation: str, name_guess: str):
         court = str(r.get("court") or "").lower()
         if not any(tag in court for tag in _CA9_COURT_TAGS):
             continue
-        docket = (r.get("docketNumber") or "").strip()
+        raw = (r.get("docketNumber") or "").strip()
+        docket = ca9_strip_docket(raw)
         filed = (r.get("dateFiled") or "")[:10]
         if docket and re.match(r"^\d{4}-\d{2}-\d{2}$", filed):
             y, m, d = filed.split("-")
@@ -949,33 +1086,51 @@ def _ca9_resolve_docket(citation: str, name_guess: str):
 
 
 def probe_ca9(citation: str) -> SourceHit:
-    """Sketch: verify a cite against the 9th Circuit's own opinion PDFs."""
+    """Fetch the 9th Circuit CDN PDF after resolving a docket on CourtListener."""
     rep = parse_reporter(citation)
     if not rep or rep["slug"] not in {"f2d", "f3d", "f4th"}:
         return SourceHit(
-            source="ca9_cdn", found=False, url=CA9_DATASTORE,
+            source="ca9_cdn",
+            found=False,
+            url=CA9_OPINIONS,
             notes="skipped: needs a federal appellate reporter pin (name-only resolution is too noisy)",
         )
     name = guess_name(citation)
     resolved = _ca9_resolve_docket(citation, name)
     if not resolved:
         return SourceHit(
-            source="ca9_cdn", found=False, url=CA9_DATASTORE,
+            source="ca9_cdn",
+            found=False,
+            url=CA9_OPINIONS,
             notes="could not resolve a 9th Circuit docket number via CourtListener search",
         )
     docket, y, m, d = resolved
-    pdf_url = f"{CA9_DATASTORE}/{y}/{m}/{d}/{docket}.pdf"
-    status, ctype, body = http_get(pdf_url, accept="application/pdf")
-    if status == 200 and ((ctype or "").startswith("application/pdf") or body[:4] == b"%PDF"):
-        return SourceHit(
-            source="ca9_cdn", found=True, url=pdf_url,
-            case_name=name, http_status=200,
-            notes=f"docket {docket} resolved; opinion PDF fetched from the 9th Circuit datastore",
-        )
+    last_status = None
+    last_url = CA9_OPINIONS
+    tried = []
+    for kind, pdf_url in ca9_pdf_candidates(docket, y, m, d):
+        tried.append(kind)
+        last_url = pdf_url
+        status, ctype, body = http_get(pdf_url, accept="application/pdf")
+        last_status = status if isinstance(status, int) else None
+        if status == 200 and ((ctype or "").startswith("application/pdf") or body[:4] == b"%PDF"):
+            return SourceHit(
+                source="ca9_cdn",
+                found=True,
+                url=pdf_url,
+                case_name=name,
+                http_status=200,
+                notes=f"docket {docket} resolved; {kind} PDF fetched from the 9th Circuit datastore",
+            )
     return SourceHit(
-        source="ca9_cdn", found=False, url=pdf_url,
-        http_status=status if isinstance(status, int) else None,
-        notes=f"docket {docket} resolved but datastore PDF not fetched (sketch: filename convention unconfirmed)",
+        source="ca9_cdn",
+        found=False,
+        url=last_url,
+        http_status=last_status,
+        notes=(
+            f"docket {docket} resolved but CDN PDF 404 after {', '.join(tried)} "
+            f"(pre-~2010 published opinions often missing)"
+        ),
     )
 
 
@@ -1144,7 +1299,7 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument(
         "--probe-extra",
         action="store_true",
-        help="Also probe govinfo.gov (GPO API) + cdn.ca9.uscourts.gov (9th Cir. PDFs) — sketch probes, evidence only",
+        help="Also probe govinfo (POST + name-match) and CA9 CDN (opinions then memoranda). Evidence only; does not vote in consensus",
     )
     ap.add_argument(
         "--citation-lookup",
@@ -1212,8 +1367,8 @@ def main(argv: list[str] | None = None) -> int:
             if courtlistener_token()
             else "unset — citation-lookup skipped (set COURTLISTENER_TOKEN)"
         ),
-        "govinfo": "opt-in --probe-extra (GOVINFO_API_KEY or DEMO_KEY)",
-        "ca9_cdn": "opt-in --probe-extra (docket-addressable via CourtListener resolver)",
+        "govinfo": "opt-in --probe-extra (POST JSON + name-match; GOVINFO_API_KEY or DEMO_KEY)",
+        "ca9_cdn": "opt-in --probe-extra (CL docket → strip No. → opinions then memoranda)",
     }
 
     out = {

@@ -93,5 +93,81 @@ class CitationLookupHitTest(unittest.TestCase):
         self.assertEqual(lookup.CL_TOKEN_ENV_ALT, "COURTLISTENER_API_TOKEN")
 
 
+class ExtraProbeHelpersTest(unittest.TestCase):
+    def test_ca9_strips_no_prefix_and_companion(self):
+        self.assertEqual(lookup.ca9_strip_docket("No. 13-35356"), "13-35356")
+        self.assertEqual(lookup.ca9_strip_docket("No. 13-35356, 13-35355"), "13-35356")
+        self.assertEqual(lookup.ca9_strip_docket("24-6244"), "24-6244")
+
+    def test_ca9_candidates_opinions_then_memoranda(self):
+        pairs = lookup.ca9_pdf_candidates("No. 12-35294", "2015", "11", "23")
+        self.assertEqual(
+            [k for k, _ in pairs],
+            ["opinions", "memoranda"],
+        )
+        self.assertTrue(pairs[0][1].endswith("/datastore/opinions/2015/11/23/12-35294.pdf"))
+        self.assertTrue(pairs[1][1].endswith("/datastore/memoranda/2015/11/23/12-35294.pdf"))
+        self.assertNotIn("No.", pairs[0][1])
+
+    def test_govinfo_skips_unbound_us_and_builds_uscourts_query(self):
+        self.assertTrue(lookup.is_unbound_us("Medical Marijuana v. Horn, 604 U.S. ___"))
+        self.assertIsNone(lookup.govinfo_query_for("Medical Marijuana v. Horn, 604 U.S. ___"))
+        self.assertEqual(
+            lookup.govinfo_query_for("ASARCO, LLC v. Union Pac. R.R. Co., 765 F.3d 999"),
+            'collection:(USCOURTS) "765 F.3d 999"',
+        )
+        payload = lookup.govinfo_search_payload('collection:(USCOURTS) "765 F.3d 999"')
+        self.assertEqual(payload["offsetMark"], "*")
+        self.assertTrue(payload["historical"])
+
+    def test_govinfo_name_match_rejects_first_unrelated_hit(self):
+        rows = [
+            {"collectionCode": "USCOURTS", "title": "Smith v. Jones", "packageId": "USCOURTS-waed-1"},
+            {
+                "collectionCode": "USCOURTS",
+                "title": "Richardson v. McKnight",
+                "packageId": "USCOURTS-scotus-96-318",
+                "download": {"pdfLink": "https://example.test/richardson.pdf"},
+            },
+        ]
+        cite = "Richardson v. McKnight, 521 U.S. 399"
+        hit = lookup.govinfo_pick_named_hit(rows, cite)
+        self.assertIsNotNone(hit)
+        self.assertEqual(hit["packageId"], "USCOURTS-scotus-96-318")
+        self.assertIsNone(lookup.govinfo_pick_named_hit(rows[:1], cite))
+
+    def test_probe_govinfo_unbound_does_not_call_network(self):
+        hit = lookup.probe_govinfo("Medical Marijuana v. Horn, 604 U.S. ___ (2025)")
+        self.assertFalse(hit.found)
+        self.assertIn("supremecourt.gov", hit.notes)
+
+    def test_probe_govinfo_get_shaped_message_is_not_found(self):
+        def fake_post(url, payload, headers=None):
+            return 200, "application/json", b'{"message": "Use POST"}'
+
+        orig = lookup.http_post_json
+        lookup.http_post_json = fake_post
+        try:
+            hit = lookup.probe_govinfo("ASARCO, LLC v. Union Pac. R.R. Co., 765 F.3d 999")
+        finally:
+            lookup.http_post_json = orig
+        self.assertFalse(hit.found)
+        self.assertIn("GET-shaped", hit.notes)
+
+    def test_extra_probes_do_not_vote_in_consensus(self):
+        result = lookup.LookupResult(
+            query="ASARCO, LLC v. Union Pac. R.R. Co., 765 F.3d 999",
+            case_name_guess="ASARCO, LLC v. Union Pac. R.R. Co.",
+            reporter_pin="765 F.3d 999",
+            wl_pin=None,
+            sources=[
+                lookup.SourceHit(source="govinfo", found=True, case_name="ASARCO, LLC v. Union Pacific"),
+                lookup.SourceHit(source="ca9_cdn", found=True, case_name="ASARCO, LLC v. Union Pacific"),
+            ],
+        )
+        lookup.consensus_for(result)
+        self.assertEqual(result.consensus, "NOT_FOUND")
+
+
 if __name__ == "__main__":
     unittest.main()
