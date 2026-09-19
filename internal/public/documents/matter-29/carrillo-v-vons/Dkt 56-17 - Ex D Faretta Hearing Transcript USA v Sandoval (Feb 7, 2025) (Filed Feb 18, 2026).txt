@@ -1,0 +1,1215 @@
+Case 8:25-cv-00191-SRM-KES   Document 56-17   Filed 02/18/26   Page 1 of 21 Page
+                                  ID #:1299
+
+
+
+
+               EXHIBIT D
+
+
+
+
+                                                                          Exhibit D
+                                                                          Page 44
+Case 8:25-cv-00191-SRM-KES   Document 56-17   Filed 02/18/26   Page 2 of 21 Page
+                                  ID #:1300
+                                                                       1
+
+
+1                     UNITED STATES DISTRICT COURT
+
+2               FOR THE SOUTHERN DISTRICT OF CALIFORNIA
+
+3     _____________________________
+                                   )
+4     UNITED STATES OF AMERICA,    )
+                                   ) Case No. 16-CR-01694-JLS
+5                       Plaintiff, )
+                                   ) Friday, February 7, 2025
+6     v.                           )
+                                   ) Faretta Hearing
+7     ROBERTO A. SANDOVAL,         )
+                                   )
+8                       Defendant. )
+      _____________________________)
+                                   )
+9
+
+10
+               BEFORE THE HONORABLE JANIS L. SAMMARTINO
+11
+
+12                    UNITED STATES DISTRICT JUDGE
+
+13
+                 REPORTER'S TRANSCRIPT OF PROCEEDINGS
+14
+                             PAGES 1 THROUGH 20
+15
+
+16    APPEARANCES:
+
+17    For Plaintiff:     UNITED STATES ATTORNEY'S OFFICE
+                         880 Front Street, Suite 6293
+18                       San Diego, California 92101-8807
+                         BY: AMANDA GRIFFITH, AUSA
+19
+
+20    For Defendant:     LAW OFFICE OF EZEKIEL E. CORTEZ
+                         550 West C Street, Suite 620
+21                       San Diego, California 92101
+                         BY: HECTOR TAMAYO, ESQ.
+22                       (specially appearing)
+
+23
+      Reported By: Stephanie Whitehead, RDR, CRR, CRC, CVR, CSR
+24    District Court Clerk's Office
+      333 West Broadway, Suite 420, San Diego, California 92101
+25    (Reported stenographically; transcribed via computer)
+
+
+
+
+                                                                           Exhibit D
+                                                                           Page 45
+Case 8:25-cv-00191-SRM-KES    Document 56-17   Filed 02/18/26   Page 3 of 21 Page
+                                   ID #:1301
+                                                                        2
+
+
+1                    FRIDAY, FEBRUARY 7, 2025; 1:36 P.M.
+
+2                             *           *            *
+
+3                THE CLERK:    Matter number 12, 16-CR-1694,
+
+4     United States of America v. Roberto Antonio Sandoval for
+
+5     status hearing.
+
+6                MS. GRIFFITH:     Good afternoon, your Honor.
+
+7     Amanda Griffith appearing on behalf of the United
+
+8     States.
+
+9                MR. TAMAYO:      Good afternoon, your Honor.
+
+10    Hector Tamayo specially appearing for Jose Badillo on
+
+11    behalf of Mr. Sandoval.
+
+12               THE COURT:    Okay.   Mr. Sandoval, good
+
+13    afternoon.
+
+14               THE DEFENDANT:     Good afternoon.
+
+15               THE COURT:    I understand you want to represent
+
+16    yourself in this matter?
+
+17               THE DEFENDANT:     Yes, your Honor.
+
+18               THE COURT:    Okay.   Did you ever meet
+
+19    Mr. Badillo?
+
+20               THE DEFENDANT:     Over the phone, yes.
+
+21               THE COURT:    Okay.   And did he talk to you about
+
+22    this matter?
+
+23               THE DEFENDANT:     About appearing pro se or about
+
+24    my case?
+
+25               THE COURT:    Did he talk to you about the matter
+
+
+
+
+                                                                            Exhibit D
+                                                                            Page 46
+Case 8:25-cv-00191-SRM-KES   Document 56-17   Filed 02/18/26   Page 4 of 21 Page
+                                  ID #:1302
+                                                                       3
+
+
+1     that's before the Court, which is the supervised release
+
+2     violation that I thought was resolved at one point but,
+
+3     apparently, there's still some outstanding issues?
+
+4               THE DEFENDANT:     No.    He was looking -- he was
+
+5     basically reviewing the case and -- but before he got
+
+6     back to me regarding that, I decided that I wanted to
+
+7     just go pro se.
+
+8               THE COURT:    Okay.   Well, let me ask you this:
+
+9     Have you ever studied law, sir?
+
+10              THE DEFENDANT:     I have a paralegal certificate.
+
+11              THE COURT:    In what area?
+
+12              THE DEFENDANT:     It's general.
+
+13              THE COURT:    Okay.   When did you get that, sir?
+
+14              THE DEFENDANT:     2017 when I was in pretrial.
+
+15              THE COURT:    Okay.   And let's move that mic a
+
+16    little bit closer to him if you would, Counsel.
+
+17              And let me ask you this:       Where did you get
+
+18    that paralegal certificate from?
+
+19              THE DEFENDANT:     USD.
+
+20              THE COURT:    Okay.   And did you ever practice as
+
+21    a paralegal?
+
+22              THE DEFENDANT:     No.    I was offered a job while
+
+23    I was on supervised release, but I was denied the
+
+24    opportunity by my probation officer.
+
+25              THE COURT:    Okay.   Have you ever represented
+
+
+
+
+                                                                           Exhibit D
+                                                                           Page 47
+Case 8:25-cv-00191-SRM-KES   Document 56-17   Filed 02/18/26   Page 5 of 21 Page
+                                  ID #:1303
+                                                                       4
+
+
+1     yourself before in a criminal matter, sir?
+
+2               THE DEFENDANT:     No, I have not, your Honor.
+
+3               THE COURT:    Okay.    Do you understand that if
+
+4     you represent yourself, you're on your own; this Court,
+
+5     and in particular the Court of Appeal, will not advise
+
+6     you as to how to handle things procedurally,
+
+7     substantively, or in any other way.
+
+8               THE DEFENDANT:     My understanding is that I can
+
+9     make a request for stand-by counsel.
+
+10              THE COURT:    I'm not sure if you can or you
+
+11    can't on that, sir.     I mean, I don't appoint stand-by
+
+12    counsel for appeals, but does either counsel have any
+
+13    experience with stand-by counsel on appeals?
+
+14              MS. GRIFFITH:     Your Honor, I'm not familiar
+
+15    with the practice of being able to appoint stand-by
+
+16    counsel outside of a trial setting, as that right is
+
+17    predicated on the trial rights of an individual.            There
+
+18    is no pending current motion hearing.
+
+19              THE COURT:    Right.
+
+20              MS. GRIFFITH:     The judgment of conviction was
+
+21    issued 13 days ago.     So if the defendant is choosing to
+
+22    go pro se now and looking to his rights to appeal, he
+
+23    can certainly appeal in forma pauperis and see if the
+
+24    Court will change that, or he can seek counsel that way.
+
+25    But he's not entitled to hybrid or stand-by counsel at
+
+
+
+
+                                                                           Exhibit D
+                                                                           Page 48
+Case 8:25-cv-00191-SRM-KES    Document 56-17   Filed 02/18/26   Page 6 of 21 Page
+                                   ID #:1304
+                                                                        5
+
+
+1     this particular stage.
+
+2               THE COURT:     Are you familiar with the rules of
+
+3     criminal procedure?
+
+4               THE DEFENDANT:      It's not something I've studied
+
+5     and know thoroughly.      However, I mean, I know other
+
+6     defendants have defended themselves pro se, and they
+
+7     basically --
+
+8               THE COURT:     You know that other defendants
+
+9     have?
+
+10              THE DEFENDANT:      And I know they learn as they
+
+11    go along.    And, you know, I will be respectful to the
+
+12    rules of the Court and whatever . . . .
+
+13              THE COURT:     Well, you need to know what the
+
+14    rules of the Court are.       So my next question is do you
+
+15    know the rules of appellate practice and appellate
+
+16    procedure?
+
+17              THE DEFENDANT:      It's something that I can
+
+18    research, yes.    But I didn't -- I haven't -- I don't
+
+19    have no experience with it, but . . . .
+
+20              THE COURT:     Do you understand that those rules
+
+21    govern the way that this Court and the appellate court
+
+22    will proceed with this matter?
+
+23              THE DEFENDANT:      Yes, your Honor.
+
+24              THE COURT:     Okay.   And you understand there can
+
+25    be consequences?       There's very little doubt in the
+
+
+
+
+                                                                            Exhibit D
+                                                                            Page 49
+Case 8:25-cv-00191-SRM-KES   Document 56-17   Filed 02/18/26   Page 7 of 21 Page
+                                  ID #:1305
+                                                                       6
+
+
+1     Court's mind that a trained lawyer would handle this
+
+2     matter far better than you could.        And I could state it
+
+3     much more strongly, but I'm going to state it as
+
+4     politely as I can:     I think it extremely unwise to
+
+5     represent yourself.     You're not familiar with the law.
+
+6     You're not familiar with court procedures.           You're not
+
+7     familiar with appellate practice.        And you're not
+
+8     familiar with -- I think I already said appellate
+
+9     procedure, and I urge you not to try to represent
+
+10    yourself.
+
+11              Now, it's hard for me to say what the
+
+12    consequences of self-representation could be, because
+
+13    this is an unusual posture.      It's going forward.
+
+14    There's nothing pending -- as counsel said, there's
+
+15    nothing pending before me.      This was a closed matter
+
+16    that you now wish to appeal.       So I don't know what the
+
+17    posture would be coming back or what the issues would
+
+18    be, but I guess I'll ask this question:          In light of the
+
+19    difficulties in representing yourself and your request
+
+20    to represent yourself, do you still think that this is
+
+21    what you want to do and give up your right to be
+
+22    represented by counsel?
+
+23              THE DEFENDANT:     Yes, your Honor.
+
+24              THE COURT:    Is your decision voluntary?
+
+25              THE DEFENDANT:     Yes, your Honor.
+
+
+
+
+                                                                           Exhibit D
+                                                                           Page 50
+Case 8:25-cv-00191-SRM-KES    Document 56-17   Filed 02/18/26   Page 8 of 21 Page
+                                   ID #:1306
+                                                                        7
+
+
+1                THE COURT:    Any other questions either counsel
+
+2     want to ask?
+
+3                Ms. Griffith?
+
+4                MS. GRIFFITH:     Your Honor, I would note that
+
+5     the defendant wasn't placed under oath.           But as the
+
+6     Court is appearing to grant him pro se status, or
+
+7     trusting that he is being honest and truthful in his
+
+8     representations, such that any later complaints that
+
+9     this hearing was not conducted while he was under oath,
+
+10    is a procedural error.
+
+11               In terms of the immediate consequences, because
+
+12    the defendant got the benefit of not being revoked and
+
+13    sent into custody, he runs the risk of waiving critical
+
+14    times that are deadlines that are imminently approaching
+
+15    in light of this.      So he might run the risk, with lack
+
+16    of counsel, of a complete waiver of his right to either
+
+17    appeal or to otherwise challenge or seek this Court's
+
+18    reconsideration.       So those would be the immediate
+
+19    consequences because the defendant isn't in any
+
+20    custodial danger at this point in time since there is no
+
+21    active pending petition --
+
+22               THE COURT:    Right.
+
+23               MS. GRIFFITH:     -- seeking to deprive him of his
+
+24    liberty.
+
+25               THE COURT:    Mr. Sandoval, Ms. Griffith brings
+
+
+
+
+                                                                            Exhibit D
+                                                                            Page 51
+Case 8:25-cv-00191-SRM-KES   Document 56-17   Filed 02/18/26   Page 9 of 21 Page
+                                  ID #:1307
+                                                                        8
+
+
+1     up an important point.      The Court did not place you
+
+2     under oath.    In answering those questions, have you been
+
+3     truthful with the Court today?
+
+4               THE DEFENDANT:     Yes, your Honor.
+
+5               THE COURT:    And you are voluntarily requesting
+
+6     that you get to represent yourself on this matter?
+
+7               THE DEFENDANT:     Yes, your Honor.
+
+8               THE COURT:    Do you understand her point that
+
+9     critical timelines are rapidly running on this matter?
+
+10              THE DEFENDANT:     Your Honor, I understand that
+
+11    today is supposed to be my deadline to submit a notice
+
+12    of appeal, and I did want to request if that could be
+
+13    extended until Monday considering this was, you know,
+
+14    very last-minute.
+
+15              THE COURT:    I can't do that, sir.        I don't have
+
+16    the authority to do that.      That's why I appointed
+
+17    counsel for you and had a special hearing earlier this
+
+18    week so that you wouldn't be in this predicament, sir.
+
+19    That's why I appointed Mr. Badillo.         And I forget what
+
+20    day it was -- Tuesday, I believe, or Wednesday?            What
+
+21    day did I do it?
+
+22              THE CLERK:    Tuesday.
+
+23              THE COURT:    Tuesday I had Mr. Badillo here.
+
+24    You had the incorrect time.      He talked to you on the
+
+25    phone.   We waived your presence.       I appointed him.       He
+
+
+
+
+                                                                            Exhibit D
+                                                                            Page 52
+Case 8:25-cv-00191-SRM-KES    Document 56-17   Filed 02/18/26   Page 10 of 21 Page
+                                   ID #:1308
+                                                                        9
+
+
+ 1     said he could accept your appointment, and I did that
+
+ 2     especially because today was a critical date.            And I
+
+ 3     don't have the authority to extend that.
+
+ 4               So let me ask you, do you still wish to
+
+ 5     represent yourself?
+
+ 6               THE DEFENDANT:     Yes, your Honor.       Can I explain
+
+ 7     why I decided to make this decision?
+
+ 8               THE COURT:     It doesn't really much matter to
+
+ 9     the Court, sir.       I've told you:    You're not trained.
+
+10     You're not educated in the law.         You don't have the
+
+11     experience of representing yourself.          You've had able
+
+12     counsel appointed for you, and you're choosing not to go
+
+13     forward with that attorney, or any attorney at this
+
+14     point, and apparently you've gotten some advice to the
+
+15     contrary.
+
+16               THE DEFENDANT:     No, your Honor.       This was a
+
+17     decision I made on my own, and it has to do with advice
+
+18     I was given at my probation revocation hearing that I
+
+19     feel had a detrimental impact -- especially, if I'm
+
+20     going to appeal will have an even more detrimental
+
+21     impact.
+
+22               In particular I wanted to present a document as
+
+23     evidence responding to the probation officer's
+
+24     complaint, and I was strongly discouraged from doing
+
+25     that, you know, telling me there would be negative
+
+
+
+
+                                                                            Exhibit D
+                                                                            Page 53
+Case 8:25-cv-00191-SRM-KES    Document 56-17   Filed 02/18/26     Page 11 of 21 Page
+                                   ID #:1309
+                                                                          10
+
+
+ 1     effects.   And so as a result I don't have that document
+
+ 2     in the record.    And so I wanted to at least ask if I
+
+ 3     could get that document in the record today so that it
+
+ 4     is in the record at the district level.
+
+ 5                THE COURT:    But it hasn't been before the Court
+
+ 6     in any of its proceedings, sir.         It was nothing that I
+
+ 7     considered.   Basically, your matter came forward in the
+
+ 8     agreed-upon posture.      I continued it a week for you to
+
+ 9     continue to think and determine what you wanted to do,
+
+10     but basically it came forward and you admitted the
+
+11     allegations and received what I would have to
+
+12     characterize as a very favorable disposition of your
+
+13     matter because of that agreement and admission and
+
+14     acknowledgment that you would avail yourself of the
+
+15     resources and programs that were being presented and set
+
+16     forth for your period of supervision.
+
+17                So that was nothing the Court ever considered,
+
+18     so I can't put something in the record that wasn't
+
+19     before me, sir.       And there's really nothing before me
+
+20     today except this request for an attorney.               I can't
+
+21     extend the deadline for appeal.         I can't do anything
+
+22     with it because I don't have the authority to extend an
+
+23     appellate deadline.
+
+24                So I get back to the question:         Do you continue
+
+25     to wish to represent yourself in this proceeding?
+
+
+
+
+                                                                               Exhibit D
+                                                                               Page 54
+Case 8:25-cv-00191-SRM-KES   Document 56-17   Filed 02/18/26   Page 12 of 21 Page
+                                  ID #:1310
+                                                                       11
+
+
+ 1               THE DEFENDANT:    Based on past experience with
+
+ 2     attorneys, your Honor, giving me advice that I feel has
+
+ 3     been detrimental to me and not -- not being receptive to
+
+ 4     my ideas, and essentially convincing me not to do things
+
+ 5     because they are telling me that there are going to be
+
+ 6     negative consequences, and I feel like that advice gave
+
+ 7     me -- I mean, was detrimental, I've decided that I think
+
+ 8     I would actually do better if I represent myself.
+
+ 9               I mean, I understand I don't understand a lot
+
+10     of the rules and procedures, but my understanding is
+
+11     that when a person is appearing pro se there's some
+
+12     leniency as far as, you know, giving the person some
+
+13     leeway as far as not being a professional attorney.
+
+14               THE COURT:    Well, let me say this --
+
+15               MR. TAMAYO:    Your Honor, if I may.
+
+16               THE COURT:    Certainly.
+
+17               MR. TAMAYO:    Can you give me a moment to maybe
+
+18     counsel Mr. Sandoval?
+
+19               THE COURT:    Okay.   Let me just say one thing:
+
+20     I don't help either side.       I don't help Ms. Griffith
+
+21     with her side of the case, and I don't help you with
+
+22     your side of the case, whether or not you have a lawyer
+
+23     by your side or are there by yourself.         The rules are
+
+24     the same, no matter represented by counsel or not.            The
+
+25     law is not written so that if you're self-representing
+
+
+
+
+                                                                            Exhibit D
+                                                                            Page 55
+Case 8:25-cv-00191-SRM-KES   Document 56-17    Filed 02/18/26   Page 13 of 21 Page
+                                  ID #:1311
+                                                                        12
+
+
+ 1     you get a break, and if you're not self-representing,
+
+ 2     you don't.   So I don't know if I would characterize it
+
+ 3     exactly the way you -- you are characterizing it, sir.
+
+ 4               So I'm going to take a moment and let counsel
+
+ 5     talk to you.
+
+ 6               Go ahead, Counsel.
+
+ 7               MR. TAMAYO:    Thank you, your Honor.
+
+ 8               THE COURT:    Do you want me to call this back?
+
+ 9               MR. TAMAYO:    Yeah, can you recall it?
+
+10               THE COURT:    Sure.   Sure.
+
+11               MR. TAMAYO:    Thank you very much.
+
+12               THE COURT:    I'm sorry.     Stay with us a little
+
+13     longer.
+
+14               MS. GRIFFITH:    Not a problem, your Honor.
+
+15               THE COURT:    Thank you.
+
+16               (Pause in proceedings.)
+
+17               THE CLERK:    Recalling matter number 12,
+
+18     16-CR-1694, United States of America v. Roberto Antonio
+
+19     Sandoval for status hearing.
+
+20               MS. GRIFFITH:    Good afternoon again, your
+
+21     Honor.    Amanda Griffith.
+
+22               MR. TAMAYO:    Good afternoon again, your Honor.
+
+23     Hector Tamayo specially appearing for Jose Badillo on
+
+24     behalf of Mr. Sandoval.
+
+25               THE COURT:    Okay.   You've had a moment to
+
+
+
+
+                                                                             Exhibit D
+                                                                             Page 56
+Case 8:25-cv-00191-SRM-KES   Document 56-17   Filed 02/18/26   Page 14 of 21 Page
+                                  ID #:1312
+                                                                       13
+
+
+ 1     confer.   Who wants to go first?       Anything resolved out
+
+ 2     there or no?
+
+ 3               MR. TAMAYO:    No, your Honor.      It's my
+
+ 4     understanding that Mr. Sandoval is -- he's dead set on
+
+ 5     being pro se in this matter.      And he understands that
+
+ 6     the deadlines are today.     He understands the potential
+
+ 7     consequences.    I've used my 19 years of experience to
+
+ 8     try to tell him otherwise.
+
+ 9               THE COURT:    No, I know you did.       I know you
+
+10     did.
+
+11               Anything you want to add?
+
+12               MS. GRIFFITH:    The only thing I would add, your
+
+13     Honor, is that I think it needs to be made clear in open
+
+14     court with Mr. Sandoval's complete understanding that
+
+15     his status now as a pro se representative -- or that
+
+16     he's representing himself on matters in the court does
+
+17     not give him a license to ignore or disregard the
+
+18     conditions of his supervised release.
+
+19               He doesn't get to seek his own counsel and
+
+20     advise against complying.      The procedural process of
+
+21     this case is the revocation.      The judgment supporting
+
+22     the revocation was entered following his admission, and
+
+23     he is on supervised release.      I am worried that
+
+24     Mr. Sandoval is going to over-inflate his pro se status
+
+25     to object to complying with the conditions of his
+
+
+
+
+                                                                            Exhibit D
+                                                                            Page 57
+Case 8:25-cv-00191-SRM-KES   Document 56-17   Filed 02/18/26   Page 15 of 21 Page
+                                  ID #:1313
+                                                                       14
+
+
+ 1     supervised release, and I just need the Court to advise
+
+ 2     him that under -- any other defendant, whether he's
+
+ 3     pro se or not, would still be expected to comply with
+
+ 4     the Court's orders as conditions of supervised release.
+
+ 5                MR. TAMAYO:   Your Honor, perhaps in an
+
+ 6     abundance of caution we should maybe redo the Faretta
+
+ 7     and have Mr. Sandoval put under oath.
+
+ 8                THE COURT:    Okay.   Mr. Sandoval, would you
+
+ 9     raise your right hand and be sworn by my clerk.
+
+10                (Defendant sworn.)
+
+11                THE COURT:    Okay.   We're going to go back over
+
+12     some questions I've asked you previously, Mr. Sandoval.
+
+13     The first one being, have you ever studied law?
+
+14                THE DEFENDANT:   I have only studied paralegal
+
+15     studies.
+
+16                THE COURT:    I'm sorry?
+
+17                THE DEFENDANT:   Paralegal studies.
+
+18                THE COURT:    Okay.   And was there an area of
+
+19     focus in those paralegal studies?        Was it criminal?      Was
+
+20     it civil?   Was it immigration?
+
+21                THE DEFENDANT:   It was general, your Honor.
+
+22                THE COURT:    It was general.
+
+23                THE DEFENDANT:   Yes.
+
+24                THE COURT:    Have you ever represented yourself
+
+25     in a criminal case in either the state or federal
+
+
+
+
+                                                                            Exhibit D
+                                                                            Page 58
+Case 8:25-cv-00191-SRM-KES   Document 56-17   Filed 02/18/26   Page 16 of 21 Page
+                                  ID #:1314
+                                                                       15
+
+
+ 1     courts?
+
+ 2               THE DEFENDANT:    No, your Honor.
+
+ 3               THE COURT:    Okay.   Do you understand the nature
+
+ 4     of these proceedings?
+
+ 5               THE DEFENDANT:    Yes, your Honor.
+
+ 6               THE COURT:    You understand you were brought in
+
+ 7     on a supervised release violation?
+
+ 8               THE DEFENDANT:    Yes, your Honor.
+
+ 9               THE COURT:    And do you understand that the
+
+10     Court has taken action on that supervised release
+
+11     violation and placed you on conditions of supervision
+
+12     and a term of supervision?
+
+13               Do you understand that?
+
+14               THE DEFENDANT:    Yes, your Honor.
+
+15               THE COURT:    And that those are in full force
+
+16     and effect as of today and going forward?
+
+17               THE DEFENDANT:    Yes, your Honor.
+
+18               THE COURT:    Okay.   Do you understand that if
+
+19     you represent, you're on your own?
+
+20               THE DEFENDANT:    Yes, your Honor.
+
+21               THE COURT:    I do not help either side, the
+
+22     defense side or the government side.         With or without
+
+23     lawyers, the rules are the same.       Stated another way,
+
+24     the playing field is level.
+
+25               THE DEFENDANT:    I understand, your Honor.
+
+
+
+
+                                                                            Exhibit D
+                                                                            Page 59
+Case 8:25-cv-00191-SRM-KES   Document 56-17   Filed 02/18/26   Page 17 of 21 Page
+                                  ID #:1315
+                                                                       16
+
+
+ 1               THE COURT:    I can't give advice.       You can't say
+
+ 2     to the Court, "What should I do?       How do I do this?"
+
+ 3     It's not my role.     I'm like a referee in these
+
+ 4     proceedings.
+
+ 5               Are you familiar with the rules of appellate
+
+ 6     procedure?
+
+ 7               THE DEFENDANT:    No, your Honor.
+
+ 8               THE COURT:    Do you understand that those rules
+
+ 9     govern and that you're bound by those rules and they
+
+10     cannot be relaxed for your benefit?
+
+11               THE DEFENDANT:    Yes, your Honor.       I understand.
+
+12               THE COURT:    When you were here a few moments
+
+13     ago you asked me if I would extend the deadline for you
+
+14     to file your appeal.     And I do not have that authority,
+
+15     sir.   And as I indicated then and I'll indicate now,
+
+16     that's why I set your case on Tuesday to give somebody
+
+17     Wednesday, Thursday, and Friday to file something on
+
+18     your behalf before the appellate period ran.
+
+19               Do you understand that?
+
+20               THE DEFENDANT:    Yes.   And can I explain why
+
+21     that didn't happen?
+
+22               THE COURT:    Why what didn't happen?
+
+23               MR. TAMAYO:    It's not relevant at this --
+
+24               THE DEFENDANT:    Well, just because I want it on
+
+25     the record.    Like I had told you, I understand you said
+
+
+
+
+                                                                            Exhibit D
+                                                                            Page 60
+Case 8:25-cv-00191-SRM-KES   Document 56-17   Filed 02/18/26     Page 18 of 21 Page
+                                  ID #:1316
+                                                                          17
+
+
+ 1     you could not accept anything new on record, but I
+
+ 2     wanted to see if I could get this on record before the
+
+ 3     notice of appeal.
+
+ 4               THE COURT:    You want -- as I understand it, you
+
+ 5     weren't happy with the lawyer who told you that you
+
+ 6     couldn't submit a document into the record; that it
+
+ 7     wasn't going to accomplish anything?
+
+ 8               THE DEFENDANT:    Or even read it, yes, even
+
+ 9     though I feel it's very factual and truthful and
+
+10     mitigating and exculpatory.
+
+11               THE COURT:    Okay.   Nonetheless, you came into
+
+12     this courtroom and under oath admitted the allegations.
+
+13               THE DEFENDANT:    One, your Honor.       One
+
+14     allegation of the two.
+
+15               THE COURT:    One allegation, yes.       And having
+
+16     done that, this Court imposed supervision and extended
+
+17     the term of supervision and set the conditions.              And
+
+18     it's because of that document that was not submitted to
+
+19     the Court, I guess, that we're here today.              And you've
+
+20     asked me to accept that document into the record.              But,
+
+21     sir, it has never been part of the record.              It was not
+
+22     part of my consideration and cannot be at this juncture
+
+23     because there's really nothing before me today.
+
+24               What I did, setting the term of supervision and
+
+25     the conditions of supervision, took place a couple of
+
+
+
+
+                                                                               Exhibit D
+                                                                               Page 61
+Case 8:25-cv-00191-SRM-KES   Document 56-17   Filed 02/18/26   Page 19 of 21 Page
+                                  ID #:1317
+                                                                       18
+
+
+ 1     weeks ago.    And I've only seen you to get counsel
+
+ 2     appointed and then today because you apparently don't
+
+ 3     want the counsel that was appointed for you.
+
+ 4                I've also already indicated to you but will do
+
+ 5     it again that in my opinion -- and I've been doing this
+
+ 6     a lot of years, a lot of years, Mr. Sandoval -- a
+
+ 7     trained lawyer would do a much better job than you're
+
+ 8     able to do.   I think it's extremely unwise, and I'm
+
+ 9     trying to put this as politely as I can.          For you to
+
+10     represent yourself, it's foolhardy.        It's foolish.
+
+11     You're not familiar with the law.        You're not familiar
+
+12     with court procedures.      You're not familiar with
+
+13     appellate procedures.     And so I urge you not to
+
+14     represent yourself.     You don't know the appellate
+
+15     processes of the Ninth Circuit.
+
+16                So in light of everything I've told you and the
+
+17     difficulties of self-representation, I'll ask you again
+
+18     Mr. Sandoval:    Do you still desire to represent yourself
+
+19     and give up your right to be represented by counsel?
+
+20                THE DEFENDANT:   Yes, your Honor.
+
+21                THE COURT:   Is this decision totally voluntary?
+
+22                THE DEFENDANT:   Yes, your Honor.
+
+23                THE COURT:   Okay.   I'll make the findings that
+
+24     you have knowingly and voluntarily waived your right to
+
+25     counsel.   And I think that concludes this matter.
+
+
+
+
+                                                                            Exhibit D
+                                                                            Page 62
+Case 8:25-cv-00191-SRM-KES   Document 56-17   Filed 02/18/26   Page 20 of 21 Page
+                                  ID #:1318
+                                                                         19
+
+
+ 1               MS. GRIFFITH:    I have nothing further.
+
+ 2               THE COURT:    The conditions of supervision have
+
+ 3     been set.   The term of supervision has been set.           And
+
+ 4     you must comply with those, Mr. Sandoval.
+
+ 5               I want to thank you, Mr. Tamayo, for coming and
+
+ 6     standing in on this matter today.
+
+ 7               Mr. Badillo is relieved as your counsel.           And
+
+ 8     anything else that we need to cover here?
+
+ 9               MS. GRIFFITH:    No, your Honor.
+
+10               MR. TAMAYO:    No, your Honor.
+
+11               THE COURT:    Okay.   Thank you, Mr. Sandoval.
+
+12               THE DEFENDANT:    Thank you, your Honor.
+
+13               (Proceedings concluded at 2:16 p.m.)
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+
+
+
+                                                                              Exhibit D
+                                                                              Page 63
+Case 8:25-cv-00191-SRM-KES    Document 56-17   Filed 02/18/26   Page 21 of 21 Page
+                                   ID #:1319
+                                                                        20
+
+
+ 1                           C E R T I F I C A T E
+
+ 2
+
+ 3               I, Stephanie Whitehead, certify that I am a
+
+ 4     duly qualified and acting Official Court Reporter for
+
+ 5     the United States District Court; that the foregoing is
+
+ 6     a true and accurate transcript of the proceedings as
+
+ 7     taken by me in the above-entitled matter on February 7,
+
+ 8     2025; and that the format used complies with the rules
+
+ 9     and requirements of the United States Judicial
+
+10     Conference.
+
+11
+
+12               Dated:      April 2, 2025
+
+13
+
+14
+           s/ STEPHANIE WHITEHEAD
+15
+       Stephanie Whitehead, CSR 10093
+16     U.S. Official Court Reporter
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+
+
+
+                                                                             Exhibit D
+                                                                             Page 64
+

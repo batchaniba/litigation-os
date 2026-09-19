@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1501,
-  "totalBytes": 956025439,
+  "fileCount": 1534,
+  "totalBytes": 968925115,
   "files": [
     {
       "path": "/documents/README.md",
@@ -7507,6 +7507,171 @@
       "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-3 - Ex 2 Deposition of Toni North PMK Vons (Oct 29, 2025) (Filed Feb 18, 2026).meta.json",
       "size": 355,
       "sha256": "01f582f5bfb1d0659158033677e28bf6aabd253ca0c345eedd7da2c902ee04ad"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-9 - Ex 8 Pre-Adverse Action Notice Asurint (Feb 28, 2023) (Filed Feb 18, 2026).pdf",
+      "size": 1068703,
+      "sha256": "6ebfa1f82f1bb543e3abbe88b46f1ff5347b853dedd1e6c2d0c9988b8d49ea3e"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-10 - Ex 9 Carrillo Mitigation Email to Albertsons (Mar 6, 2023) (Filed Feb 18, 2026).pdf",
+      "size": 2647113,
+      "sha256": "6426e71ef48876ecb63dd540f7a37e8ec4c37af62e4449b88389649a4f779483"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-11 - Ex 10 Adverse Action Notice Asurint (Mar 8, 2023) (Filed Feb 18, 2026).pdf",
+      "size": 936664,
+      "sha256": "b28549cb4226d0e46d3f33538adc182f6649b8dbbf581491d29a7732de097530"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-12 - Declaration of Courtney Jones ISO Vons Opposition (Feb 18, 2026).pdf",
+      "size": 417204,
+      "sha256": "ea482669a2e1dabd66ff680e853fd2a109ce89b78ebd35f28c7da6ba86221329"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-13 - Vons Request for Judicial Notice ISO Opposition (Feb 18, 2026).pdf",
+      "size": 151069,
+      "sha256": "d72c7643a70aee0c7101c47bb736444466b70064688f80e6b745f7ad6656d303"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-14 - Ex A Criminal Judgment 3-16-cr-01694 (Aug 31, 2017) (Filed Feb 18, 2026).pdf",
+      "size": 2144955,
+      "sha256": "e52f24c380a13ce8b40bf0a9d27495646e4ee3651b2b016fdf1e261f50952827"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-15 - Ex B Criminal Case Filing 3-16-cr-01694 (Filed Feb 18, 2026).pdf",
+      "size": 1518454,
+      "sha256": "d8685b189d87da07e68f2885eeffc20e9c8cbbb1130a7c770dd5595b6da647fe"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-16 - Ex C Status Hearing Transcript USA v Sandoval (Jan 24, 2025) (Filed Feb 18, 2026).pdf",
+      "size": 855855,
+      "sha256": "a8ccfd4ad2678102f35598cb48001bc2effc881393363032993d64c036e4db22"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-17 - Ex D Faretta Hearing Transcript USA v Sandoval (Feb 7, 2025) (Filed Feb 18, 2026).pdf",
+      "size": 848387,
+      "sha256": "806e6029d3123fe718b8627c8cf6a7c61b0811074ae30fd365970f07d82d7f5d"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-18 - Ex E Ninth Circuit Memorandum USA v Sandoval (Jan 2, 2026) (Filed Feb 18, 2026).pdf",
+      "size": 777870,
+      "sha256": "0743eed6d5e651a1a5293f542fe9c8b28146a689afb8b07dc9af1a5a42279f12"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-19 - Ex F Probation Form 12B Modify Supervision (Aug 28, 2025) (Filed Feb 18, 2026).pdf",
+      "size": 1328995,
+      "sha256": "e675feacc9b3d15c2f83c94d0e9685a83b0b681acec73edcafaafba8b312f70a"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-15 - Ex B Criminal Case Filing 3-16-cr-01694 (Filed Feb 18, 2026).txt",
+      "size": 46026,
+      "sha256": "217a3c6c8a2a82cc41d598d79d93a0cdfe52f179ea08cbf8ee8d9f2d212efa15"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-18 - Ex E Ninth Circuit Memorandum USA v Sandoval (Jan 2, 2026) (Filed Feb 18, 2026).txt",
+      "size": 4108,
+      "sha256": "45a77bcce34594f7cdd4d2e408cc8ea1f42a49fd6aeb464966308eb1a4db5170"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-19 - Ex F Probation Form 12B Modify Supervision (Aug 28, 2025) (Filed Feb 18, 2026).meta.json",
+      "size": 360,
+      "sha256": "eb9b224e97ad08086c341e98936a99dd3a7f952068600d8c118675d84baafae1"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-11 - Ex 10 Adverse Action Notice Asurint (Mar 8, 2023) (Filed Feb 18, 2026).meta.json",
+      "size": 355,
+      "sha256": "cb6aa90436097c6ad27d1c7af87f9df06837938933243143f79651db135a78c5"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-16 - Ex C Status Hearing Transcript USA v Sandoval (Jan 24, 2025) (Filed Feb 18, 2026).meta.json",
+      "size": 370,
+      "sha256": "042dd0c98a0c138e136e1a40201b14284f51334800da1f2f282770513f4f3db3"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-18 - Ex E Ninth Circuit Memorandum USA v Sandoval (Jan 2, 2026) (Filed Feb 18, 2026).meta.json",
+      "size": 366,
+      "sha256": "4648b4c0af74afd7a1a8a069271773832d9f1cff8a846f3dbbfa0241225b1cf3"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-11 - Ex 10 Adverse Action Notice Asurint (Mar 8, 2023) (Filed Feb 18, 2026).txt",
+      "size": 4083,
+      "sha256": "68e04830275e792554adab00a40d33cc94609f32c4518a7fb7427c0f4428cde0"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-16 - Ex C Status Hearing Transcript USA v Sandoval (Jan 24, 2025) (Filed Feb 18, 2026).txt",
+      "size": 39349,
+      "sha256": "88601565f1f74df541d9714e225d1ebce3f9db8820a3de695f7ae50b249df109"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-12 - Declaration of Courtney Jones ISO Vons Opposition (Feb 18, 2026).txt",
+      "size": 10125,
+      "sha256": "b0330a06cee967e52ffc0215be35cb1130ec66855c7c4a9188ec683a4047dfa2"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-14 - Ex A Criminal Judgment 3-16-cr-01694 (Aug 31, 2017) (Filed Feb 18, 2026).meta.json",
+      "size": 353,
+      "sha256": "0cc00a86441ffb70cb25dbe126d590cc3c19005d007dc835fc32e5b761b223b1"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-19 - Ex F Probation Form 12B Modify Supervision (Aug 28, 2025) (Filed Feb 18, 2026).txt",
+      "size": 7940,
+      "sha256": "48f47aa9c91ed48bad870d0d463d7250183492a643e450f1dd346d84b20504e5"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-17 - Ex D Faretta Hearing Transcript USA v Sandoval (Feb 7, 2025) (Filed Feb 18, 2026).meta.json",
+      "size": 371,
+      "sha256": "d5fe2317c2ca64eaa116ea0ec90a9034710564b18a24920b929298ed5951130d"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-9 - Ex 8 Pre-Adverse Action Notice Asurint (Feb 28, 2023) (Filed Feb 18, 2026).meta.json",
+      "size": 354,
+      "sha256": "05410c1e4a61129c6e28a625da3359fa89ce9b43d7036227cfe4a9319260c07c"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-14 - Ex A Criminal Judgment 3-16-cr-01694 (Aug 31, 2017) (Filed Feb 18, 2026).txt",
+      "size": 21529,
+      "sha256": "0daae9478fa020d47de123a900a1ef9c537373101b63c9af495faff0ba44b279"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-12 - Declaration of Courtney Jones ISO Vons Opposition (Feb 18, 2026).meta.json",
+      "size": 348,
+      "sha256": "7e22e5fee605da4c93d06ae7233262ccaeb77a6f1d3925921218abc0fa68fc1a"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-9 - Ex 8 Pre-Adverse Action Notice Asurint (Feb 28, 2023) (Filed Feb 18, 2026).txt",
+      "size": 6740,
+      "sha256": "9bb7938c665947102dd41a4bba8fced2263acb8428e4a847e3dba5f1299ba90b"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-13 - Vons Request for Judicial Notice ISO Opposition (Feb 18, 2026).txt",
+      "size": 12759,
+      "sha256": "21917bfdaa81ac9cc47d507bcb7bb05e70953743bb5e49fc32d4daf5b7a4ae60"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-15 - Ex B Criminal Case Filing 3-16-cr-01694 (Filed Feb 18, 2026).meta.json",
+      "size": 345,
+      "sha256": "3129377727c6ea0bfa4d7d34a7ef60d80b5585dcc204d137e1101c2fe75349c9"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-17 - Ex D Faretta Hearing Transcript USA v Sandoval (Feb 7, 2025) (Filed Feb 18, 2026).txt",
+      "size": 35115,
+      "sha256": "456c01fb4843f7f173f79ee757d41b6df90edc4cd097a62d3ab8ba5387bea1eb"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-13 - Vons Request for Judicial Notice ISO Opposition (Feb 18, 2026).meta.json",
+      "size": 343,
+      "sha256": "52aa0b5b72b13d751abece69dd96249bc3452406877f758a4cc512dff5149207"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-10 - Ex 9 Carrillo Mitigation Email to Albertsons (Mar 6, 2023) (Filed Feb 18, 2026).txt",
+      "size": 12709,
+      "sha256": "4415c657f32f42d52277128d492d5a1deb67b18115702d482807b9cb72317994"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-10 - Ex 9 Carrillo Mitigation Email to Albertsons (Mar 6, 2023) (Filed Feb 18, 2026).meta.json",
+      "size": 359,
+      "sha256": "a8c2a613fce3c9ce01af065fd4f5e094dcf4b0b14b95c3e5ee267e1f18af1431"
     }
   ]
 }

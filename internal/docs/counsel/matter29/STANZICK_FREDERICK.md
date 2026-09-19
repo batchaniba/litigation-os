@@ -149,3 +149,5 @@ Watch for:
 - 2026-09-19 (batch 7): Lodged *Carrillo v. Vons / Asurint*, 8:25-cv-00191-SRM-KES — Vons answer (Dkt. 15), Asurint answer signed by Stanzick (Dkt. 19), stipulated protective order (Dkt. 27), class-cert hearing transcript (Dkt. 62), and Vons additional RJN + Ex. A (Dkt. 64 / 64-1). Also lodged Matter 32 Dkt. 17 default packet and Matter 33 Candelaria PACER docket history (as of Sep 10). Two Carrillo reply dups discarded.
 
 - 2026-09-19 (batch 9): Lodged *Carrillo* Dkt. 56 exhibits to Vons class-cert opposition — Ex. 1 SOP, Ex. 2 Toni North PMK depo, Ex. 4 Vons 2d supp rog responses, Ex. 5 Carrillo depo, Ex. 6 candidate profile (redacted), Ex. 7 Legendary Service commitment (56-2 / 56-3 / 56-5 / 56-6 / 56-7 / 56-8).
+
+- 2026-09-19 (batch 10): Lodged *Carrillo* Dkt. 56-9 through 56-19 — Ex. 8–10 adverse/mitigation notices; Courtney Jones declaration; Vons RJN ISO opposition; Ex. A–F criminal-history RJN exhibits (judgment, criminal filing, status/Faretta transcripts, 9th Cir. memo, Prob. 12B).
