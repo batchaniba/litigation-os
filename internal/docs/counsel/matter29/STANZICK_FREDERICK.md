@@ -141,3 +141,5 @@ Watch for:
 - 2026-09-19 (batch 2): Lodged Frederick N.D. Cal. PACER attorney query (40 cases). C.D. Cal. / E.D. Cal. queries already lodged same day.
 
 - 2026-09-19 (batch 3): Lodged *Williams v. Accurate Background, LLC*, 1:23-cv-00175 (N.D. Ill.) — docket, complaint, and Accurate answer (Dkt. 12, Mar. 2, 2023) signed by John W. Drury with Jasmine J. Stanzick on the block (Seyfarth Chicago). Also lodged Stanzick PACER attorney queries for N.D. Ill. (65 cases) and S.D. Ill. (5 cases). Rangel complaint/answer/settlement/docket and Carrillo docket history were already in the catalog — discarded as dupes.
+
+- 2026-09-19 (batch 5): Lodged *Varela v. Accurate Background, Inc.*, 5:26-cv-00258-KK-DTB (C.D. Cal.) Dkt. 1-1 civil cover sheet (Jan. 21, 2026; Stephen T. Jones). PACER download was titled "Cover sheet Davis.pdf" — form is Varela. Nine Santee / Varela dups discarded (already under `santee-v-accurate` / `varela-v-accurate`).

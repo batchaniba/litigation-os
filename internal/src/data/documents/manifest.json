@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1426,
-  "totalBytes": 938198469,
+  "fileCount": 1429,
+  "totalBytes": 941970140,
   "files": [
     {
       "path": "/documents/README.md",
@@ -1059,7 +1059,7 @@
       "sha256": "f0f7c24c5ca36cd6b45ac270cd171da0c8c5b8dbdf5804cfd93d82563b670ba5"
     },
     {
-      "path": "/documents/matter-12/018 Request for Sheriff Service + Fee Waiver : CC Auth — Ngwa Nforbi v. Diamond Truc.pdf",
+      "path": "/documents/matter-12/018 Request for Sheriff Service + Fee Waiver : CC Auth \u2014 Ngwa Nforbi v. Diamond Truc.pdf",
       "size": 40998,
       "sha256": "c27e93998452da4a50fc081a30c39c36d99d3bb88c879fdd853c14ada4133504"
     },
@@ -1599,7 +1599,7 @@
       "sha256": "75490eafd07533965b7cf9aab18a19970c9b6ef2d6f432d9fbd551254772bb35"
     },
     {
-      "path": "/documents/matter-19/Exhibit A Cover — Petition for Writ of Habeas Corpus (HC-004 Attachment).pdf",
+      "path": "/documents/matter-19/Exhibit A Cover \u2014 Petition for Writ of Habeas Corpus (HC-004 Attachment).pdf",
       "size": 2049,
       "sha256": "77bb842edaf0f19a10e3b73706d98ac3b36245004c91a5a08e776c7411e1f1a0"
     },
@@ -1619,12 +1619,12 @@
       "sha256": "6799967fa187ef88c25f1179ea60aeb51899278c34c6eefa773637ad460cc9b7"
     },
     {
-      "path": "/documents/matter-19/HC-004 Notice and Request for Ruling Packet (with Exhibit A — Unstamped Petition) (Ready to File Aug 17 2026).pdf",
+      "path": "/documents/matter-19/HC-004 Notice and Request for Ruling Packet (with Exhibit A \u2014 Unstamped Petition) (Ready to File Aug 17 2026).pdf",
       "size": 24424353,
       "sha256": "3dedcd2cbeda6c125e4b4b9c7ea85d5cb247874c0e41b78e3c0f1db4d3e6b178"
     },
     {
-      "path": "/documents/matter-19/HC-004 Notice and Request for Ruling Packet (with Exhibit A — Unstamped Petition) (Ready to File Aug 7 2026).pdf",
+      "path": "/documents/matter-19/HC-004 Notice and Request for Ruling Packet (with Exhibit A \u2014 Unstamped Petition) (Ready to File Aug 7 2026).pdf",
       "size": 24424352,
       "sha256": "ea161e502031b4a01a9df56def1b26999062583a20ed08e2451d4b7942834de2"
     },
@@ -5009,17 +5009,17 @@
       "sha256": "e017ca878aac68c58def9536a30e3b0cf52d5a76b1488912cbe45803fe4c55b8"
     },
     {
-      "path": "/documents/matter-30/CASOMB Complaint Submission – HOPE Psychotherapy, Inc. 2.pdf",
+      "path": "/documents/matter-30/CASOMB Complaint Submission \u2013 HOPE Psychotherapy, Inc. 2.pdf",
       "size": 83191,
       "sha256": "dc4061596765570a06d4e86f38db4d34f71fb386904d98ee7bfe821d13256f16"
     },
     {
-      "path": "/documents/matter-30/CASOMB Complaint Submission – HOPE Psychotherapy, Inc. 3.pdf",
+      "path": "/documents/matter-30/CASOMB Complaint Submission \u2013 HOPE Psychotherapy, Inc. 3.pdf",
       "size": 45518,
       "sha256": "ce8099b1e920e74cee0dd78ff9282e74706a93d3ffc90907bfadd5057472bbf4"
     },
     {
-      "path": "/documents/matter-30/CASOMB Complaint Submission – HOPE Psychotherapy, Inc. 4.pdf",
+      "path": "/documents/matter-30/CASOMB Complaint Submission \u2013 HOPE Psychotherapy, Inc. 4.pdf",
       "size": 40474,
       "sha256": "1437c5d712b6b46fcb907c00bf50bd79f6265c528037923266299cda908e6824"
     },
@@ -7132,6 +7132,21 @@
       "path": "/documents/matter-29/stanzick-searches/S.D. Ill. Attorney Search - Jasmine J. Stanzick (Sep 18 2026).pdf",
       "size": 119964,
       "sha256": "7ec1265682bb31cb737a806261d404dc2286af7881c927a5d3bcabe291101f0b"
+    },
+    {
+      "path": "/documents/matter-29/varela-v-accurate/Dkt 01-1 - Civil Cover Sheet (Jan 21, 2026).pdf",
+      "size": 3770120,
+      "sha256": "134ba22452a107068f0293e1aef01b2b844eab34cdd00818411e30c1c6041d85"
+    },
+    {
+      "path": "/documents/matter-29/varela-v-accurate/Dkt 01-1 - Civil Cover Sheet (Jan 21, 2026).txt",
+      "size": 1082,
+      "sha256": "cb4822c723ab18d0135d0f3ebef5bd5cf8bbcf9dd37c30e1729330c9983c528d"
+    },
+    {
+      "path": "/documents/matter-29/varela-v-accurate/Dkt 01-1 - Civil Cover Sheet (Jan 21, 2026).meta.json",
+      "size": 469,
+      "sha256": "bf445f4d0e0b8b7ac811ec9c8ba8dfae6e22958a52e840fd3d61c3463bba453a"
     }
   ]
 }
