@@ -6,7 +6,7 @@
 
 This file does two jobs. First, it inventories the Shannon research already on disk. Second, it closes the verification holes the September 12 spine left open so the opposition can be written from current law, not from a week-old "still open" list.
 
-**Briefing spine remains** `2026-09-12-matter-28-UNIFIED.md`. Do not draft the opposition from this file alone.
+**Briefing spine remains** `2026-09-12-matter-28-UNIFIED.md` (merged 2026-09-19). Do not draft the opposition from this file. *Page* is over-weighted in § 3.1 — UNIFIED § 5.2 leads with *Talamantes*.
 
 ---
 

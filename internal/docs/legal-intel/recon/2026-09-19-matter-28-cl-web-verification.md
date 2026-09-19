@@ -1,3 +1,5 @@
+> **Absorbed into UNIFIED (2026-09-19 merge).** CDN holdings (*Esche*, *Wicklund*, *Meinhardt*, *Horn* 604 U.S. 593) now live in the spine.
+
 # Matter 28 — CourtListener / web verification (pass 2)
 ## *Newanforbi v. Shannon Smith, LCSW, et al.*, N.D. Cal. No. 3:26-cv-07504-LJC
 
