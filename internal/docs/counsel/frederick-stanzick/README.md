@@ -8,7 +8,7 @@ This is the playbook. Identity/role intelligence and lodged comparator briefs li
 |---|---|
 | [`PLAYBOOK.md`](PLAYBOOK.md) | Read this. Two-desk comparison, *Lerma* (Frederick) and *Carrillo* (Stanzick) argument inventories, the seam. |
 | [`cases.json`](cases.json) | Append-only machine cards. One object per docket. |
-| [`sources/`](sources/) | Lodged PACER prints. Not served on the public site. Seeded: *Lerma* Frederick MTD packet (Dkts. 24, 24-1, 27, 36); *Carrillo* class-cert set (Dkts. 1, 55–59). |
+| [`sources/`](sources/) | Lodged PACER prints. Not served on the public site. Seeded: *Lerma* Frederick MTD packet (Dkts. 24, 24-1, 27, 36); *Carrillo* set (Dkts. 1, 15, 19, 27, 55–59, 62, 64, 64-1). |
 
 *Carrillo* is also cataloged at `/documents/matter-29/carrillo-v-vons/`. The full *Lerma* docket (69 PDFs) already lives at `/documents/matter-29/lerma-v-amazon/` — do not PACER-pull it again. Playbook `sources/` copies are the counsel-research lodge.
 
@@ -50,3 +50,8 @@ Identity and role intelligence only. A docket where they appeared for someone el
 | 57 | Asurint opposition | Feb. 18, 2026 | **Stanzick signed.** CRA playbook on paper: certification-only § 1681b(b)(1), *Mendoza*, fail-safe class |
 | 58 | Reply to Vons | Mar. 25, 2026 | "Use of any"; (j)(1) as a common defense; circular adequacy attack |
 | 59 | Reply to Asurint | Mar. 25, 2026 | Notices as common FCRA knowledge proof; no ascertainability in the Ninth Circuit |
+| 15 | Vons answer | Apr. 8, 2025 | Littler employer posture (not Frederick) |
+| 19 | Asurint answer | May 30, 2025 | **Stanzick signed.** Answer-stage certification / registry defenses |
+| 27 | Stipulated protective order | Sep. 18, 2025 | Joint; Stanzick/Drury on Asurint block |
+| 62 | Class-cert hearing transcript | Apr. 15, 2026 | Oral argument; **no written order in lodge** |
+| 64 / 64-1 | Vons supplemental RJN + exhibit | Sep. 15, 2026 | Post-hearing Littler RJN (employer analog) |

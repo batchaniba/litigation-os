@@ -48,6 +48,10 @@ On **February 18, 2026**, Stanzick signed — with John W. Drury (Seyfarth Chica
 
 Papers are lodged under `sources/8-25-cv-00191-Carrillo-v-Vons/` and cataloged at `/documents/matter-29/carrillo-v-vons/`.
 
+### Earlier on the same docket: Dkt. 19 answer (May 30, 2025)
+
+Stanzick signed Asurint's **answer** before the class-cert fight. It is not the September 22 forecast for Matter 29, but it shows the CRA desk answering (not moving to dismiss): Megan's Law / Fair Chance / FCRA / UCL denied; **§ 1681b(b)(1) certification** and affirmative defenses at the answer stage; "Sex Offender Registry" product language in the factual section. Read Dkt. 57 as the upgrade — class-cert depth on the same certification-only / *Mendoza* spine.
+
 ### The *Carrillo* CRA playbook (Dkt. 57) — what she will actually write
 
 Read this before forecasting Accurate's September 22 paper. These are the arguments she has already signed:
@@ -191,7 +195,7 @@ Watch for:
 | **Docket** | C.D. Cal. **8:25-cv-00191-SRM-KES** (Southern Division) |
 | **Judge** | Hon. Serena R. Murillo; Mag. Karen E. Scott |
 | **Filed** | Jan. 31, 2025 (Dkt. 1) |
-| **Status** | Open. Class-cert briefing complete as of Mar. 25, 2026 (hearing noticed Apr. 15, 2026). **No merits ruling on § 290.46.** |
+| **Status** | Open. Class-cert briefing complete Mar. 25, 2026; **Apr. 15, 2026 hearing transcript lodged (Dkt. 62)**. Vons did not oppose a (b)(2) injunctive class at argument; Asurint did. **Written class-cert order not in this lodge** — do not state certified or denied. |
 | **Plaintiff's counsel** | Raymond Y. Kim (SBN 251210), Ray Kim Law — **same counsel as *Lerma*** |
 | **CRA counsel** | John W. Drury (PHV) and **Jasmine J. Stanzick (SBN 354704)**, Seyfarth — Asurint |
 | **Employer counsel** | Rod M. Fliegel, Karimah J. Lamar, Christine Fitzgerald, Robert Geiger, Littler — Vons |
@@ -204,7 +208,7 @@ Watch for:
 
 **Plaintiff replies worth stealing (structure, not prose).** Dkt. 58: (j)(2)(E) is "use of any," not but-for; a blanket (j)(1) "every clerk meets at-risk people" defense is common to the class, not individualized; attacking the named plaintiff's conviction to defeat a Fair Chance class is circular. Dkt. 59: Ninth Circuit does not require ascertainability (*Briseno*); the 613 / pre-adverse / adverse notices are common proof that the CRA knew the employer was using SOR information.
 
-**Open *Carrillo* verification.** Class-cert outcome after the April 15, 2026 hearing is not in this lodge. Do not state that the classes were certified or denied.
+**Open *Carrillo* verification.** Dkt. 62 is the hearing transcript only. Pull the written order when it exists. Do not state that the classes were certified or denied.
 
 ---
 
@@ -232,6 +236,7 @@ Watch for:
 
 ## Changelog
 
+- 2026-09-19: *Carrillo* expanded — Dkts. 15, 19, 27, 62, 64, 64-1 (answers, protective order, class-cert transcript, Vons RJN).
 - 2026-09-19: *Lerma* Frederick packet transferred (Dkts. 24, 24-1, 27, 36). Catalog gap closed on Dkt. 24-1 and Dkt. 27. Desk 2 rewritten from his signed brief, not the Vons analog.
 - 2026-09-19: Playbook space created. *Carrillo* Dkts. 1, 55–59 lodged. Stanzick's Asurint opposition read and inventoried. Matter 29 pointer folder now redirects here.
 - 2026-09-11: Two-desk comparison from generated dossiers + counsel research. Pre-September 22 forecast. (Originally `counsel/matter29/STANZICK_FREDERICK.md`.)
