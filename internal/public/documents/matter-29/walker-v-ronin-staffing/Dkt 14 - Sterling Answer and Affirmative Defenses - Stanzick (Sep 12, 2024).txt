@@ -1,0 +1,1365 @@
+     Case 2:24-cv-05669-CBM-SSC           Document 14     Filed 09/12/24    Page 1 of 38 Page ID
+                                                #:60
+
+
+ 1    Jasmine J. Stanzick (SBN 354704)
+      SEYFARTH SHAW LLP
+ 2    2029 Century Park East, Suite 3500
+      Los Angeles, California 90067-3021
+ 3    Telephone: (310) 277-7200
+      Facsimile: (310) 201-5219
+ 4    jstanzick@seyfarth.com
+ 5    Attorneys for Defendant
+      STERLING INFOSYSTEMS, INC.
+ 6
+ 7
+ 8                                    UNITED STATES DISTRICT COURT
+ 9                               CENTRAL DISTRICT OF CALIFORNIA
+10                                         WESTERN DIVISION
+11
+12    GREGORY WALKER, an individual and                    Case No. 2:24-cv-05669-CBM-AGR
+      on behalf of all others similarly situated,
+13                                                          DEFENDANT STERLING
+                         Plaintiff,                         INFOSYSTEMS, INC.’S ANSWER
+14                                                          TO PLAINTIFF’S COMPLAINT
+               v.                                           AND AFFIRMATIVE AND OTHER
+15                                                          DEFENSES
+      RONIN STAFFING LLC; UCLA
+16    HEALTH; STERLING INFOSYSTEMS,
+      INC. and DOES 1-5,
+17
+                         Defendants.
+18
+19
+               Defendant Sterling Infosystems, Inc. (“Sterling”), by and through its attorneys, and
+20
+      pursuant to Rules 8 and 12 of the Federal Rules of Civil Procedure, hereby answers Plaintiff
+21
+      Gregory Walker’s purported Class Action Complaint And Demand for Jury Trial
+22
+      (“Complaint”), and asserts its affirmative and other defenses as follows:
+23
+                                          SUMMARY OF ACTION
+24
+      COMPLAINT ¶1:
+25
+               Plaintiff, individually and on behalf of all others similarly situated, brings this action
+26
+      for damages and other legal and equitable remedies, based on: (i) the unlawful and unfair
+27
+      conduct of Ronin’s and UCLA Health (“Employer Defendants”) in using information
+28
+
+       DEF’S ANSWER TO PL’S COMPLAINT, AFFIRMATIVE & OTHER DEFENSES
+      312857017v.1
+     Case 2:24-cv-05669-CBM-SSC         Document 14     Filed 09/12/24   Page 2 of 38 Page ID
+                                              #:61
+
+
+ 1    disclosed in the California Department of Justice Megan’s Law Website (“Megan’s Law
+ 2    Website”) for employment purposes; (ii) Employer Defendants’ failure to conduct an
+ 3    individualized assessment of whether Plaintiff’s conviction history has a direct and adverse
+ 4    relationship with the specific duties of an UCLA Health program analyst that justified
+ 5    denying him the position; (iii) Sterling’s unlawful and unfair conduct in furnishing to
+ 6    Employer Defendants investigative background reports containing records of arrest,
+ 7    indictment, misdemeanor complaint, or conviction of a crime that antedate the report by
+ 8    more than seven (7) years; and (iv) Employer Defendants failure to provide a pre-adverse
+ 9    action notice and post-adverse action notice before and after taking adverse action against
+10    Plaintiff based on information contained in the background report.
+11    ANSWER:
+12             With respect to those allegations directed toward Sterling, Sterling admits only that
+13    Plaintiff purports to bring claims for “damages and other legal and equitable remedies” in
+14    connection with a consumer report Sterling prepared on Plaintiff at the request of Ronin
+15    Staffing LLC. Sterling states that the referenced report is the best evidence of its contents
+16    and denies any allegations in Paragraph 1 of the Complaint that are inconsistent with the
+17    referenced report. Sterling further denies that it violated any laws, and denies that Plaintiff
+18    or any potential putative class member is entitled to any damages whatsoever. Sterling
+19    denies any remaining allegations in Paragraph 1 of the Complaint to the extent they are
+20    directed towards Sterling, and specifically denies that class treatment is appropriate in this
+21    action.
+22    COMPLAINT ¶2:
+23             In so doing, Employer Defendants violated the: (i) California Megan’s Law, Penal
+24    Code § 290.46 (“Megan’s Law”); (ii) California Fair Chance Act, Government Code §
+25    12952; (iii) federal Fair Credit Reporting Act (“FCRA”), 15 U.S.C. § 1681b(b)(3); and (iv)
+26    California Unfair Competition Law (“UCL”), Business and Professions Code § 17200.
+27    Sterling violated: (i) California’s Investigative Consumer Reporting Agencies Act
+28
+                                    2
+       DEF’S ANSWER TO PL’S COMPLAINT, AFFIRMATIVE & OTHER DEFENSES
+      312857017v.1
+     Case 2:24-cv-05669-CBM-SSC        Document 14      Filed 09/12/24   Page 3 of 38 Page ID
+                                             #:62
+
+
+ 1    (“ICRAA”), Civil Code § 1786.18; and (ii) the UCL, Business and Professions Code §
+ 2    17200.
+ 3    ANSWER:
+ 4             With respect to those allegations directed toward Sterling, Sterling denies the
+ 5    allegations in Paragraph 2 of the Complaint, and specifically denies that Sterling violated
+ 6    the California Investigative Consumer Reporting Agencies Act (“ICRAA”) or the UCL,
+ 7    Business and Professions Code § 17200, or any other law, and specifically denies that class
+ 8    treatment is appropriate in this action. Sterling lacks knowledge or information sufficient
+ 9    to form a belief as to the truth of the remaining allegations in Paragraph 2 of the Complaint.
+10    COMPLAINT ¶3:
+11             With respect to Ronin and UCLA Health’s unlawful and unfair use of information
+12    on the Megan’s Law Website, pursuant to the applicable statutes, Plaintiff seeks an
+13    injunction and public injunctive relief ordering that, moving forward, Ronin and UCLA
+14    Health cease from using information on the Megan’s Law Website for employment
+15    purposes. With respect to Employer Defendants’ failure to conduct an individualized
+16    assessment of whether an applicant’s conviction history has a direct and adverse
+17    relationship with the specific duties of the job that justify denying the applicant the position,
+18    Plaintiff seeks an injunction and public injunctive relief ordering that, moving forward,
+19    Employer Defendants institute a robust program to provide for the individualized
+20    assessment of each prospective employee or employee with a known conviction history.
+21    With respect to Employer Defendants unlawful and unfair conduct in failing to provide
+22    pre-adverse action and post-adverse action notices, Plaintiff seeks an injunction and public
+23    injunctive relief ordering that, moving forward, Employer Defendants cease such conduct.
+24    With respect to Sterling’s furnishing of investigative background reports containing
+25    records of arrest, indictment, misdemeanor complaint, or conviction of a crime that
+26    antedate the report by more than seven years, pursuant to the applicable statutes, Plaintiff
+27    seeks an injunction and public injunctive relief ordering that, moving forward, Sterling
+28    cease such conduct.
+                                    3
+       DEF’S ANSWER TO PL’S COMPLAINT, AFFIRMATIVE & OTHER DEFENSES
+      312857017v.1
+     Case 2:24-cv-05669-CBM-SSC        Document 14     Filed 09/12/24   Page 4 of 38 Page ID
+                                             #:63
+
+
+ 1    ANSWER:
+ 2             With respect to those allegations directed toward Sterling, Sterling admits that
+ 3    Plaintiff seeks damages for purported violations of “applicable statutes.” Sterling denies
+ 4    that it violated ICRAA or the UCL, or any other law, and specifically denies that Plaintiff
+ 5    or any potential putative class member is entitled to any relief whatsoever from Sterling.
+ 6    Sterling denies any remaining allegations in Paragraph 3 of the Complaint to the extent
+ 7    they are directed towards Sterling, and specifically denies that class treatment is
+ 8    appropriate in this action.
+ 9                                           THE PARTIES
+10    COMPLAINT ¶4:
+11             Plaintiff is an individual consumer residing in the State of California, Los Angeles
+12    County.
+13    ANSWER:
+14             Sterling admits that Plaintiff is a “consumer” as that term is defined by the FCRA.
+15    Sterling lacks knowledge or information sufficient to form a belief as to the location of
+16    Plaintiff’s current residence.
+17    COMPLAINT ¶5:
+18             Defendant Ronin is an employer, staffing agency, and “full-service provider of
+19    award-winning Human Capital Management, Temporary & Direct Hire Support.” Ronin is
+20    a California limited liability company headquartered in Los Angeles County, California.
+21    On information and belief, at all times Ronin was an agent and fiduciary representative and
+22    acted at the direction of UCLA Health.
+23    ANSWER:
+24             Paragraph 5 of the Complaint does not include allegations directed toward Sterling,
+25    and, therefore, no answer from Sterling is required. To the extent an answer is required,
+26    Sterling lacks knowledge or information sufficient to form a belief as to the truth of the
+27    allegations in Paragraph 5 of the Complaint.
+28
+                                    4
+       DEF’S ANSWER TO PL’S COMPLAINT, AFFIRMATIVE & OTHER DEFENSES
+      312857017v.1
+     Case 2:24-cv-05669-CBM-SSC        Document 14     Filed 09/12/24   Page 5 of 38 Page ID
+                                             #:64
+
+
+ 1    COMPLAINT ¶6:
+ 2             Defendant UCLA Health is the public healthcare system affiliated with the
+ 3    University of California, Los Angeles, located in Los Angeles, California. It comprises a
+ 4    number of hospitals, UCLA David Geffen School of Medicine, and an extensive primary
+ 5    care network in the Los Angeles region.
+ 6    ANSWER:
+ 7             Paragraph 6 of the Complaint does not include allegations directed toward Sterling,
+ 8    and, therefore, no answer from Sterling is required. To the extent an answer is required,
+ 9    Sterling lacks knowledge or information sufficient to form a belief as to the truth of the
+10    allegations in Paragraph 6 of the Complaint.
+11    COMPLAINT ¶7:
+12             Defendant Sterling is a consumer reporting agency that assembles and provides
+13    consumer reports to third parties for employment purposes and facilitates third party
+14    background checks. Sterling is a Delaware corporation with headquarters in Independence,
+15    Ohio.
+16    ANSWER:
+17             Sterling admits that it provides certain services as a “consumer reporting agency,”
+18    as that phrase is defined by the FCRA, and as to those services only. Sterling further admits
+19    that its reports may be used in connection with employment decisions and admits that it is
+20    incorporated in Delaware and headquartered in Ohio. Sterling denies any remaining
+21    allegations in Paragraph 7 of the Complaint.
+22    COMPLAINT ¶8:
+23             Doe Defendants 1-5 are companies and/or individuals who used information on the
+24    Megan’s Law Website for employment purposes, failed to conduct an individualized
+25    assessment, failed to provide pre-adverse action or post-adverse action notices, and/or
+26    generated background reports in violation of the ICCRAA.
+27
+28
+                                    5
+       DEF’S ANSWER TO PL’S COMPLAINT, AFFIRMATIVE & OTHER DEFENSES
+      312857017v.1
+     Case 2:24-cv-05669-CBM-SSC         Document 14     Filed 09/12/24   Page 6 of 38 Page ID
+                                              #:65
+
+
+ 1    ANSWER:
+ 2             Paragraph 8 of the Complaint does not include allegations directed toward Sterling,
+ 3    and, therefore, no answer from Sterling is required. To the extent an answer is required,
+ 4    Sterling denies the allegations in Paragraph 8 of the Complaint, and specifically denies that
+ 5    class treatment is appropriate in this action.
+ 6                                   JURISDICTION AND VENUE
+ 7    COMPLAINT ¶9:
+ 8             This is an action brought under 15 U.S.C. § 1681b, 1681n and § 16810 of the FCRA.
+ 9    The Court has jurisdiction over this action pursuant to 28 U.S.C. § 1331 because it arises
+10    under the laws of the United States. This Court also has jurisdiction over this action
+11    pursuant to the Class Action Fairness Act, 28 U.S.C. § 1332(d)(1). Plaintiff brings a class
+12    action under Federal Rule of Civil Procedure 23. Plaintiff and Sterling are citizens of
+13    different states, and on information and belief, the amount in controversy exceeds the sum
+14    of $5,000,000.00.
+15    ANSWER:
+16             Sterling states that the allegations in Paragraph 9 of the Complaint consist only of
+17    legal conclusions and, therefore, no response is required. To the extent a response is
+18    required, Sterling does not challenge jurisdiction and admits only that it is not incorporated
+19    and does not have a principal place of business in California. Sterling denies the remaining
+20    allegations in Paragraph 9, and specifically denies that it violated the ICRAA, the UCL, or
+21    any other law.
+22    COMPLAINT ¶10:
+23             Venue in this district is proper under 28 U.S.C. § 1391(b)(2) because Plaintiff is a
+24    resident of Los Angeles County and a substantial part of the events or omissions giving
+25    rise to the claim occurred in this District.
+26    ANSWER:
+27             Sterling states that the allegations in Paragraph 10 of the Complaint consist only of
+28    legal conclusions and, therefore, no response is required. To the extent a response is
+                                    6
+       DEF’S ANSWER TO PL’S COMPLAINT, AFFIRMATIVE & OTHER DEFENSES
+      312857017v.1
+     Case 2:24-cv-05669-CBM-SSC         Document 14     Filed 09/12/24   Page 7 of 38 Page ID
+                                              #:66
+
+
+ 1    required, Sterling states that it does not challenge venue. Sterling lacks knowledge or
+ 2    information sufficient to form a belief as to Plaintiff’s current residence. Sterling denies all
+ 3    remaining allegations in Paragraph 10 of the Complaint, and specifically denies that it
+ 4    violated the FCRA, or any other law.
+ 5                                     STATEMENT OF FACTS
+ 6    COMPLAINT ¶11:
+ 7             Plaintiff is a graduate of the California State University, Los Angeles. In or around
+ 8    June 2008, Plaintiff obtained his Bachelors of Science from Cal State LA in Business
+ 9    Administration with a minor in Finance and Economics.
+10    ANSWER:
+11             Sterling lacks knowledge or information sufficient to form a belief as to the truth of
+12    the allegations in Paragraph 11 of the Complaint.
+13    COMPLAINT ¶12:
+14             That same month, in June 2008 Plaintiff was convicted of committing a sexual
+15    offense. Plaintiff served approximately four months in jail for his conviction and was
+16    released in or about October 2008. Plaintiff was placed on five years of probation.
+17    Plaintiff’s probation expired in or around June 2013.
+18    ANSWER:
+19             Sterling lacks knowledge or information sufficient to form a belief as to the truth of
+20    the allegations in Paragraph 12 of the Complaint.
+21    COMPLAINT ¶13:
+22             As a result of the conviction, Plaintiff appears as a registered sex offender on the
+23    Megan’s Law Website, along with information about the basis for his conviction.
+24    ANSWER:
+25             Sterling is without knowledge or information sufficient form a belief as to the truth
+26    of the allegations in Paragraph 13 of the Complaint.
+27
+28
+                                    7
+       DEF’S ANSWER TO PL’S COMPLAINT, AFFIRMATIVE & OTHER DEFENSES
+      312857017v.1
+     Case 2:24-cv-05669-CBM-SSC         Document 14     Filed 09/12/24   Page 8 of 38 Page ID
+                                              #:67
+
+
+ 1    COMPLAINT ¶14:
+ 2             Since his release, Plaintiff has worked extremely diligently to become a productive
+ 3    member of society and gain the skills and knowledge to start a professional career in
+ 4    programming and business. Plaintiff has worked as a software engineer, computer
+ 5    programmer, and computer programming tutor.
+ 6    ANSWER:
+ 7             Sterling lacks knowledge or information sufficient to form a belief as to the truth of
+ 8    the allegations in Paragraph 14 of the Complaint.
+ 9    COMPLAINT ¶15:
+10             To become more proficient in technology and programming, Plaintiff attended
+11    school full time and obtained a Master of Science in Software Engineering in 2019 from
+12    California State University, Fullerton. Plaintiff has extensive software engineering skills
+13    and is proficient in various coding languages, including C++, JavaScript and Python.
+14    ANSWER:
+15             Sterling lacks knowledge or information sufficient to form a belief as to the truth
+16    of the allegations in Paragraph 15 of the Complaint.
+17    COMPLAINT ¶16:
+18             However, even with a B.S. from Cal State LA and a M.S. from Cal State Fullerton
+19    Plaintiff has faced extreme difficulty finding a steady, full-time job commensurate with his
+20    education and skillset.
+21    ANSWER:
+22             Sterling lacks knowledge or information sufficient to form a belief as to the truth of
+23    the allegations in Paragraph 16 of the Complaint.
+24    COMPLAINT ¶17:
+25             Plaintiff is now happily married and is eager to move far beyond the mistake of his
+26    past. Plaintiff deeply regrets the actions that led to his conviction, and since his release he
+27    has made every effort to rebuild and redefine himself by educating himself and working
+28    diligently to become a productive member of his community. However, the “powers that
+                                    8
+       DEF’S ANSWER TO PL’S COMPLAINT, AFFIRMATIVE & OTHER DEFENSES
+      312857017v.1
+     Case 2:24-cv-05669-CBM-SSC        Document 14    Filed 09/12/24   Page 9 of 38 Page ID
+                                             #:68
+
+
+ 1    be,” including Ronin, UCLA Health, and Sterling continue to place roadblocks that have
+ 2    made it very difficult for Plaintiff to transition and be a contributing member of society.
+ 3    ANSWER:
+ 4             With respect to those allegations directed toward Sterling, Sterling denies the
+ 5    allegations in Paragraph 17 of the Complaint. Sterling lacks knowledge or information
+ 6    sufficient to form a belief as to the truth of the remaining allegations in Paragraph 17 of
+ 7    the Complaint.
+ 8    COMPLAINT ¶18:
+ 9             In late 2022, Ronin contacted Plaintiff about employment with UCLA Health for a
+10    program analyst position. Ronin said that Plaintiff would be a great candidate for the
+11    position.
+12    ANSWER:
+13             Paragraph 18 does not include any allegations against Sterling and, therefore, no
+14    answer from Sterling is required. To the extent an answer is required, Sterling lacks
+15    knowledge or information sufficient to form a belief as to the truth of the allegations in
+16    Paragraph 18 of the Complaint.
+17    COMPLAINT ¶19:
+18             Plaintiff expressed his interest in the position, and subsequently was contacted
+19    directly by UCLA Health for an interview. After completing two rounds of interviews,
+20    UCLA Health offered Plaintiff the program analyst position and provided a list of
+21    information for Plaintiff to review and complete, including an employment agreement and
+22    authorization form for a background check.
+23    ANSWER:
+24             Paragraph 19 does not include any allegations against Sterling and, therefore, no
+25    answer from Sterling is required. To the extent an answer is required, Sterling lacks
+26    knowledge or information sufficient to form a belief as to the truth of the allegation sin
+27    Paragraph 19 of the Complaint.
+28
+                                    9
+       DEF’S ANSWER TO PL’S COMPLAINT, AFFIRMATIVE & OTHER DEFENSES
+      312857017v.1
+     Case 2:24-cv-05669-CBM-SSC        Document 14     Filed 09/12/24   Page 10 of 38 Page ID
+                                              #:69
+
+
+ 1    COMPLAINT ¶20:
+ 2             Ronin also sent Plaintiff an application, which he completed and returned.
+ 3    ANSWER:
+ 4             Paragraph 20 does not include any allegations against Sterling and, therefore, no
+ 5    answer from Sterling is required. To the extent an answer is required, Sterling lacks
+ 6    knowledge or information sufficient to form a belief as to the truth of the allegation sin
+ 7    Paragraph 20 of the Complaint.
+ 8    COMPLAINT ¶21:
+ 9             Plaintiff completed a number of exams, including a drug test and COVID-19 test. At
+10    UCLA Health’s direction, Plaintiff also completed numerous training courses provided by
+11    UCLA Health and was advised that he would be paid for his time completing the courses.
+12    ANSWER:
+13             Paragraph 21 does not include any allegations against Sterling and, therefore, no
+14    answer from Sterling is required. To the extent an answer is required, Sterling lacks
+15    knowledge or information sufficient to form a belief as to the truth of the allegations in
+16    Paragraph 21 of the Complaint.
+17    COMPLAINT ¶22:
+18             In early October 2022, at Employer Defendants’ direction, Sterling conducted a
+19    background check of Plaintiff and generated and sent Employer Defendants a copy of the
+20    background report.
+21    ANSWER:
+22             With respect to those allegations directed towards Sterling, Sterling admits that it
+23    prepared a consumer report regarding Plaintiff at the request of Ronin Staffing LLC and
+24    shared a copy of the report with Ronin Staffing LLC. Sterling denies any remaining
+25    allegations in Paragraph 22 of the Complaint.
+26
+27
+28
+                                     10
+        DEF’S ANSWER TO PL’S COMPLAINT, AFFIRMATIVE & OTHER DEFENSES
+      312857017v.1
+     Case 2:24-cv-05669-CBM-SSC        Document 14      Filed 09/12/24   Page 11 of 38 Page ID
+                                              #:70
+
+
+ 1    COMPLAINT ¶23:
+ 2             In the Section entitled DOJ Sex Offender Search, the background report states:
+ 3    “WALKER, GREGORY EUGENE IS CURRENTLY A REGISTERED SEX
+ 4    OFFENDER IN THE STATE OF CALIFORNIA.”
+ 5    ANSWER:
+ 6             Sterling states that the referenced report is the best evidence of its contents and
+ 7    denies any allegations in Paragraph 23 of the Complaint that is inconsistent with the
+ 8    contents of the referenced report. Sterling denies any remaining allegations in Paragraph
+ 9    23 of the Complaint.
+10    COMPLAINT ¶24:
+11             Subsequently, in October 2023 UCLA Health informed Plaintiff that the offer was
+12    rescinded because of information contained in Plaintiffs background report.
+13    ANSWER:
+14             Paragraph 24 does not include any allegations against Sterling and, therefore, no
+15    answer from Sterling is required. To the extent an answer is required, Sterling lacks
+16    knowledge or information sufficient to form a belief as to the truth of the allegations in
+17    Paragraph 24 of the Complaint. Answering further, Sterling states that the referenced
+18    report is the best evidence of its contents and denies any allegations in Paragraph 24 of the
+19    Complaint that is inconsistent with the contents of the referenced report. Sterling denies
+20    any remaining allegations in Paragraph 24 of the Complaint.
+21    COMPLAINT ¶25:
+22             Before rescinding the job offer, neither Employer Defendants nor Sterling provided
+23    Plaintiff with a copy of the consumer report or notice that his employment could be
+24    adversely impacted.
+25    ANSWER:
+26             Sterling lacks knowledge or information sufficient to form a belief as to the truth of
+27    the allegations in Paragraph 25 of the Complaint.
+28
+                                     11
+        DEF’S ANSWER TO PL’S COMPLAINT, AFFIRMATIVE & OTHER DEFENSES
+      312857017v.1
+     Case 2:24-cv-05669-CBM-SSC        Document 14      Filed 09/12/24   Page 12 of 38 Page ID
+                                              #:71
+
+
+ 1    COMPLAINT ¶26:
+ 2             After the job offer was withdrawn, Plaintiff did not receive notice in writing that
+ 3    adverse action had been taken based on the background report from Sterling.
+ 4    ANSWER:
+ 5             Sterling lacks knowledge or information sufficient to form a belief as to the truth of
+ 6    the allegations in Paragraph 26 of the Complaint.
+ 7    COMPLAINT ¶27:
+ 8             On information and belief, at no time did Employer Defendants conduct an
+ 9    individualized assessment of whether Plaintiffs conviction history has a direct and adverse
+10    relationship with the specific duties of a UCLA Health program analyst.
+11    ANSWER:
+12             Paragraph 27 does not include any allegations against Sterling and, therefore, no
+13    answer from Sterling is required. To the extent an answer is required, Sterling lacks
+14    knowledge or information sufficient to form a belief as to the truth of the allegations in
+15    Paragraph 27 of the Complaint.
+16    COMPLAINT ¶28:
+17             Ronin and UCLA Health refused to hire Plaintiff because of conviction information
+18    Sterling obtained from the Megan’s Law website and disclosed in the background report
+19    to Employer Defendants. Ronin and UCLA Health also did not compensate Plaintiff for
+20    the time he was employed and the numerous trainings he completed.
+21    ANSWER:
+22             Paragraph 28 does not include any allegations against Sterling and, therefore, no
+23    answer from Sterling is required. To the extent an answer is required, Sterling lacks
+24    knowledge or information sufficient to form a belief as to the truth of the allegations in
+25    Paragraph 28 of the Complaint. Answering further, Sterling states that the referenced
+26    report is the best evidence of its contents and denies any allegations in Paragraph 28 of the
+27    Complaint that is inconsistent with the contents of the referenced report. Sterling denies
+28    any remaining allegations in Paragraph 28 of the Complaint.
+                                     12
+        DEF’S ANSWER TO PL’S COMPLAINT, AFFIRMATIVE & OTHER DEFENSES
+      312857017v.1
+     Case 2:24-cv-05669-CBM-SSC         Document 14      Filed 09/12/24   Page 13 of 38 Page ID
+                                               #:72
+
+
+ 1    COMPLAINT ¶29:
+ 2             If Defendants would give Plaintiff a fair chance at employment, Plaintiff would like
+ 3    to apply again to work for Employer Defendants.
+ 4    ANSWER:
+ 5             Paragraph 29 does not include any allegations against Sterling and, therefore, no
+ 6    answer from Sterling is required. To the extent an answer is required, Sterling lacks
+ 7    knowledge or information sufficient to form a belief as to the truth of the allegations in
+ 8    Paragraph 29 of the Complaint.
+ 9                                 CLASS ACTION ALLEGATIONS
+10    COMPLAINT ¶30:
+11             Plaintiff brings this action on behalf of himself and all others similarly situated (the
+12    “Classes”), pursuant to Federal Rule of Civil Procedure 23(b)(2) and 23(b)(3), based on
+13    the following class definitions:
+14             Megan’s Law Class: All persons in California who applied for employment
+               with Employer Defendants and were denied employment as a result of Ronin
+15             and/or UCLA Health’s use of information disclosed in the Megan’s Law
+               Website, during the relevant statute of limitations period.
+16
+               Fair Chance Class: All persons in California who applied for employment
+17             with Ronin and/or UCLA Health and were denied employment as a result of
+               their conviction history.
+18
+               ICRAA Class: All persons in California on whom Sterling conducted a
+19             background search and furnished an investigative consumer report containing
+               records of arrest, indictment, misdemeanor complaint, or conviction of a
+20             crime that, from the date of disposition, release, or parole, antedate the report
+               by more than seven years, during the relevant statute of limitations period.
+21
+               FCRA Class: All persons in the United States who were denied employment
+22             by Ronin and/or UCLA Health based on information contained in a consumer
+               report, during the relevant statute of limitations period.
+23
+      ANSWER:
+24
+               With respect to those allegations directed towards Sterling, Sterling admits only that
+25
+      Plaintiff purports to bring this Complaint as a class action on behalf of himself and other
+26
+      individuals. Sterling denies all remaining allegations in Paragraph 30 of the Complaint,
+27
+28
+                                     13
+        DEF’S ANSWER TO PL’S COMPLAINT, AFFIRMATIVE & OTHER DEFENSES
+      312857017v.1
+     Case 2:24-cv-05669-CBM-SSC        Document 14    Filed 09/12/24     Page 14 of 38 Page ID
+                                              #:73
+
+
+ 1    and specifically denies that it violated the ICRAA or any other law, and denies that class
+ 2    treatment is appropriate in this action.
+ 3    COMPLAINT ¶31:
+ 4             Excluded from the Classes are: (1) Defendants, any entity or division in which
+ 5    Defendants have a controlling interest, and their legal representatives, officers, directors,
+ 6    assigns, and successors; and (2) the Judge to whom this case is assigned and the Judge’s
+ 7    staff. Plaintiff reserves the right to amend or expand the Classes’ definitions to seek
+ 8    recovery on behalf of additional persons as warranted as facts are learned in further
+ 9    investigation and discovery.
+10    ANSWER:
+11             With respect to those allegations directed towards Sterling, Sterling denies the
+12    allegations in Paragraph 31 of the Complaint, and specifically denies that it violated the
+13    ICRAA or any other law, and denies that class treatment is appropriate in this action.
+14    Sterling denies all remaining allegations in Paragraph 31 of the Complaint.
+15    COMPLAINT ¶32:
+16             Plaintiff and members of the Megan’s Law Class were harmed by the acts of Ronin
+17    and UCLA Health in at least the following ways: Employer Defendants used registry
+18    information in the Megan’s Law Website for purposes relating to employment, Defendants
+19    denied Plaintiff and other members of the Megan’s Law Class employment based on
+20    information from the Megan’s Law Website, and this violation caused Plaintiff and
+21    Megan’s Law Class members to lose an opportunity to earn income, have a lawful paying
+22    job, contribute to the workforce, be productive members of their community, and severe
+23    emotional distress, anxiety, deep frustration and loss of sleep.
+24    ANSWER:
+25             Paragraph 32 does not include any allegations against Sterling and, therefore, no
+26    answer from Sterling is required. To the extent an answer is required, Sterling denies the
+27    allegations in Paragraph 32 of the Complaint, and specifically denies that class treatment
+28    is appropriate in this action.
+                                     14
+        DEF’S ANSWER TO PL’S COMPLAINT, AFFIRMATIVE & OTHER DEFENSES
+      312857017v.1
+     Case 2:24-cv-05669-CBM-SSC        Document 14    Filed 09/12/24   Page 15 of 38 Page ID
+                                              #:74
+
+
+ 1    COMPLAINT ¶33:
+ 2             Common questions of fact and law exist as to all members of the Megan’s Law Class,
+ 3    which predominate over any questions affecting only Plaintiff or individual members of
+ 4    the Megan’s Law Class. These common legal and factual questions, which do not vary
+ 5    between the Megan’s Law class members, and which may be determined without reference
+ 6    to the individual circumstances of any Megan’s Law Class members, include, but are not
+ 7    limited to, the following:
+ 8             A.    Whether, within four years prior to the filing of this Complaint, Employer
+ 9                   Defendants used information in the Megan’s Law Website for purposes
+10                   relating to employment;
+11             B.    Whether, within four years prior to the filing of this Complaint, Employer
+12                   Defendants denied Plaintiff and other members of the Megan’s Law Class
+13                   employment based on information from the Megan’s Law Website;
+14             C.    Whether Plaintiff and the Megan’s Law Class members were damaged
+15                   thereby, and the extent of damages for such violation;
+16             D.    Whether such conduct is unlawful; and
+17             E.    Whether Employer Defendants should be enjoined from engaging in such
+18                   conduct in the future.
+19    ANSWER:
+20             Paragraph 33 does not include any allegations against Sterling and, therefore, no
+21    answer from Sterling is required. To the extent an answer is required, Sterling denies the
+22    allegations in Paragraph 33 of the Complaint, and specifically denies that class treatment
+23    is appropriate in this action.
+24    COMPLAINT ¶34:
+25             As a person who was denied employment as a result of information in the Megan’s
+26    Law Website, Plaintiff is asserting claims that are typical of the Megan’s Law Class.
+27
+28
+                                     15
+        DEF’S ANSWER TO PL’S COMPLAINT, AFFIRMATIVE & OTHER DEFENSES
+      312857017v.1
+     Case 2:24-cv-05669-CBM-SSC        Document 14    Filed 09/12/24   Page 16 of 38 Page ID
+                                              #:75
+
+
+ 1    ANSWER:
+ 2             Paragraph 33 does not include any allegations against Sterling and, therefore, no
+ 3    answer from Sterling is required. To the extent an answer is required, Sterling denies the
+ 4    allegations in Paragraph 33 of the Complaint, and specifically denies that class treatment
+ 5    is appropriate in this action.
+ 6    COMPLAINT ¶35:
+ 7             Plaintiff and members of the Fair Chance Class were harmed by the acts of Ronin in
+ 8    at least the following ways: Employer Defendants intended to deny Plaintiff and members
+ 9    of the Fair Chance Class a position of employment solely or in part because of their
+10    conviction history and did not make an individualized assessment of whether their
+11    conviction history had a direct and adverse relationship with the specific duties of the job
+12    that justified denying them the position. This violation caused Plaintiff and Fair Chance
+13    Class members to lose an opportunity to earn income, have a lawful paying job, contribute
+14    to the workforce, be productive members of their community, and severe emotional distress,
+15    anxiety, deep frustration and loss of sleep.
+16    ANSWER:
+17             Paragraph 35 does not include any allegations against Sterling and, therefore, no
+18    answer from Sterling is required. To the extent an answer is required, Sterling denies the
+19    allegations in Paragraph 35 of the Complaint, and specifically denies that class treatment
+20    is appropriate in this action.
+21    COMPLAINT ¶36:
+22             Common questions of fact and law exist as to all members of the Fair Chance Class
+23    which predominate over any questions affecting only individual members of the Fair
+24    Chance Class. These common legal and factual questions, which do not vary between the
+25    Fair Chance Class members, and which may be determined without reference to the
+26    individual circumstances of any Fair Chance Class members, include, but are not limited
+27    to, the following:
+28
+                                     16
+        DEF’S ANSWER TO PL’S COMPLAINT, AFFIRMATIVE & OTHER DEFENSES
+      312857017v.1
+     Case 2:24-cv-05669-CBM-SSC        Document 14   Filed 09/12/24   Page 17 of 38 Page ID
+                                              #:76
+
+
+ 1             A.    Whether within three years prior to the filing of this Complaint Employer
+ 2                   Defendants conducted individualized assessments of job applicants with a
+ 3                   conviction history;
+ 4             B.    Whether Employer Defendants’ conduct was unlawful; and
+ 5             C.    Whether Employer Defendants should be ordered to comply with the Fair
+ 6                   Chance Act in the future.
+ 7    ANSWER:
+ 8             Paragraph 36 does not include any allegations against Sterling and, therefore, no
+ 9    answer from Sterling is required. To the extent an answer is required, Sterling denies the
+10    allegations in Paragraph 36 of the Complaint, and specifically denies that class treatment
+11    is appropriate in this action.
+12    COMPLAINT ¶37:
+13             As a person with job applicant with a conviction history who was denied
+14    employment by Employer Defendants without an individualized assessment, Plaintiff is
+15    asserting claims that are typical of the Fair Chance Class.
+16    ANSWER:
+17             Paragraph 37 does not include any allegations against Sterling and, therefore, no
+18    answer from Sterling is required. To the extent an answer is required, Sterling denies the
+19    allegations in Paragraph 37 of the Complaint, and specifically denies that class treatment
+20    is appropriate in this action.
+21    COMPLAINT ¶38:
+22             Plaintiff and members of the ICRAA Class were harmed by the acts of UCLA Health
+23    in at least the following ways: Sterling furnished information to Employer Defendants in
+24    an investigative consumer report containing records of arrest, indictment, misdemeanor
+25    complaint, or conviction of a crime that, from the date of disposition, release, or parole,
+26    antedate the report by more than seven years. This violation caused Plaintiff and ICRAA
+27    Class members to lose an opportunity to earn income, have a lawful paying job, contribute
+28
+                                     17
+        DEF’S ANSWER TO PL’S COMPLAINT, AFFIRMATIVE & OTHER DEFENSES
+      312857017v.1
+     Case 2:24-cv-05669-CBM-SSC        Document 14     Filed 09/12/24   Page 18 of 38 Page ID
+                                              #:77
+
+
+ 1    to the workforce, be productive members of their community, and severe emotional distress,
+ 2    anxiety, deep frustration and loss of sleep.
+ 3    ANSWER:
+ 4             Sterling denies the allegations in Paragraph 38 of the Complaint, and specifically
+ 5    denies that it violated ICRAA or any other law, and denies that class treatment is
+ 6    appropriate in this action.
+ 7    COMPLAINT ¶39:
+ 8             Common questions of fact and law exist as to all members of the ICRAA Class
+ 9    which predominate over any questions affecting only individual members of the ICRAA
+10    Class. These common legal and factual questions, which do not vary between the ICRAA
+11    Class members, and which may be determined without reference to the individual
+12    circumstances of any ICRAA Class members, include, but are not limited to, the following:
+13             A.    Whether within two years prior to the filing of this Complaint Sterling
+14                   furnished information to third parties (including Ronin and UCLA Health) in
+15                   an investigative consumer report containing records of arrest, indictment,
+16                   misdemeanor complaint, or conviction of a crime that, from the date of
+17                   disposition, release, or parole, antedate the report by more than seven years;
+18             B.    Whether Sterling’s conduct was unlawful; and
+19             C.    Whether Sterling should be enjoined from engaging in such conduct in the
+20                   future.
+21    ANSWER:
+22             Sterling denies the allegations in Paragraph 39 of the Complaint, and specifically
+23    denies that it violated the ICRAA or any other law, and denies that class treatment is
+24    appropriate in this action.
+25    COMPLAINT ¶40:
+26             As a person that who applied for employment and on whom UCLA Health furnished
+27    an investigative consumer report containing records of arrest, indictment, misdemeanor
+28    complaint, or conviction of a crime that, from the date of disposition, release, or parole,
+                                     18
+        DEF’S ANSWER TO PL’S COMPLAINT, AFFIRMATIVE & OTHER DEFENSES
+      312857017v.1
+     Case 2:24-cv-05669-CBM-SSC        Document 14    Filed 09/12/24    Page 19 of 38 Page ID
+                                              #:78
+
+
+ 1    antedate the report by more than seven years, Plaintiff is asserting claims that are typical
+ 2    of the ICRAA Class.
+ 3    ANSWER:
+ 4             Sterling denies the allegations in Paragraph 40 of the Complaint, and specifically
+ 5    denies that it violated the ICRAA or any other law, and denies that class treatment is
+ 6    appropriate in this action.
+ 7    COMPLAINT ¶41:
+ 8             Plaintiff and members of the FCRA Class were harmed by the acts of Employer
+ 9    Defendants in at least the following ways: Employer Defendants requested a background
+10    search and received a consumer report containing conviction information about Plaintiff.
+11    Before taking adverse action based on information in the report Employer Defendants did
+12    not provide Plaintiff with a copy of the report or a description in writing of his rights under
+13    the FCRA (“pre-adverse action notice”). After taking adverse action, Employer Defendants
+14    failed to provide Plaintiff with notice that adverse action had been taken based in whole or
+15    in part on information in the background report, information about Sterling, and Plaintiffs
+16    other rights under the FCRA (“post-adverse action notice”). This violation caused Plaintiff
+17    and FCRA Class members an opportunity to dispute information in the reports, to lose an
+18    opportunity to earn income, have a lawful paying job, contribute to the workforce, be
+19    productive members of their community, and severe emotional distress, anxiety, deep
+20    frustration and loss of sleep.
+21    ANSWER:
+22             Paragraph 41 does not include any allegations against Sterling and, therefore, no
+23    answer from Sterling is required. To the extent an answer is required, Sterling denies the
+24    allegations in Paragraph 41 of the Complaint, and specifically denies that class treatment
+25    is appropriate in this action.
+26    COMPLAINT ¶42:
+27             Common questions of fact and law exist as to all members of the FCRA. Class which
+28    predominate over any questions affecting only individual members of the FCRA Class.
+                                     19
+        DEF’S ANSWER TO PL’S COMPLAINT, AFFIRMATIVE & OTHER DEFENSES
+      312857017v.1
+     Case 2:24-cv-05669-CBM-SSC        Document 14   Filed 09/12/24   Page 20 of 38 Page ID
+                                              #:79
+
+
+ 1    These common legal and factual questions, which do not vary between the FCRA Class
+ 2    members, and which may be determined without reference to the individual circumstances
+ 3    of any FCRA Class members, include, but are not limited to, the following:
+ 4             A.    Whether Employer Defendants failed to provide a pre-adverse action and
+ 5                   post-adverse action notice;
+ 6             B.    Whether Employer Defendants’ conduct was unlawful; and
+ 7             C.    Whether Employer Defendants should be enjoined from engaging in such
+ 8                   conduct in the future.
+ 9    ANSWER:
+10             Paragraph 42 does not include any allegations against Sterling and, therefore, no
+11    answer from Sterling is required. To the extent an answer is required, Sterling denies the
+12    allegations in Paragraph 42 of the Complaint, and specifically denies that class treatment
+13    is appropriate in this action.
+14    COMPLAINT ¶43:
+15             As a person that who applied for employment with Employer Defendants and on
+16    whom Sterling furnished a background consumer report containing conviction information
+17    from the Megan’s Law Website that was used by Ronin and/or UCLA Health for
+18    employment decisions, Plaintiff is asserting claims that are typical of the FCRA Class.
+19    ANSWER:
+20             Paragraph 43 does not include any allegations against Sterling and, therefore, no
+21    answer from Sterling is required. To the extent an answer is required, Sterling denies the
+22    allegations in Paragraph 43 of the Complaint, and specifically denies that class treatment
+23    is appropriate in this action.
+24    COMPLAINT ¶44:
+25             The members of the Classes are so numerous that joinder of all members would be
+26    unfeasible and impractical. The membership of the Classes is currently unknown to
+27    Plaintiff at this time; however, given that, on information and belief, Ronin and UCLA
+28    Health staff and/or hire thousands of employees in California each year, and Sterling
+                                     20
+        DEF’S ANSWER TO PL’S COMPLAINT, AFFIRMATIVE & OTHER DEFENSES
+      312857017v.1
+     Case 2:24-cv-05669-CBM-SSC         Document 14      Filed 09/12/24   Page 21 of 38 Page ID
+                                               #:80
+
+
+ 1    furnishes background reports for tens of thousands of prospective employees in California
+ 2    per year, the members of each of the Classes are so numerous that joinder of all members
+ 3    is impracticable. The disposition of their claims in a class action is a superior method to
+ 4    individual actions and will provide substantial benefits to the parties and the Court.
+ 5    ANSWER:
+ 6             With respect to those allegations directed towards Sterling, Sterling denies the
+ 7    allegations in Paragraph 44 of the Complaint, and specifically denies that class treatment
+ 8    is appropriate in this action.
+ 9    COMPLAINT ¶45:
+10             Plaintiff will fairly and adequately protect the interest of the members of the Classes
+11    because Plaintiff has no interests which are adverse to the interest of absent class members
+12    and because Plaintiff has retained counsel who possess significant class action litigation
+13    experience regarding alleged violations of consumer statutes.
+14    ANSWER:
+15             Sterling denies the allegations in Paragraph 45 of the Complaint, and specifically
+16    denies that class treatment is appropriate in this action.
+17    COMPLAINT ¶46:
+18             A class action is superior to other available methods of fair and efficient adjudication
+19    of this controversy because individual litigation of each of the claims of the members of
+20    the Classes is impracticable. Even if every Class member could afford individual litigation,
+21    the court system could not. It would be unduly burdensome to the courts in which
+22    individual litigation of numerous issues would proceed. Individualized litigation would
+23    also present the potential for varying, inconsistent, or contradictory judgments and would
+24    magnify the delay and expense to all parties and to the court system resulting from multiple
+25    trials of the same complex factual issues. By contrast, the conduct of this action as a class
+26    action presents fewer management difficulties, conserves the resources of the parties and
+27    of the court system, and protects the rights of each member of the Classes.
+28
+                                     21
+        DEF’S ANSWER TO PL’S COMPLAINT, AFFIRMATIVE & OTHER DEFENSES
+      312857017v.1
+     Case 2:24-cv-05669-CBM-SSC          Document 14     Filed 09/12/24   Page 22 of 38 Page ID
+                                                #:81
+
+
+ 1    ANSWER:
+ 2             Sterling denies the allegations in Paragraph 46 of the Complaint, and specifically
+ 3    denies that class treatment is appropriate in this action.
+ 4    COMPLAINT ¶47:
+ 5             The prosecution of separate actions by individual members of the Classes would
+ 6    create a risk of adjudications with respect to them that would, as a practical matter, be
+ 7    dispositive of the interests of the other Class members not parties to such adjudications or
+ 8    that would substantially impair or impede the ability of such non-party Class members to
+ 9    protect their interests.
+10    ANSWER:
+11             Sterling denies the allegations in Paragraph 47 of the Complaint, and specifically
+12    denies that class treatment is appropriate in this action.
+13    COMPLAINT ¶48:
+14             Ronin, UCLA Health, and Sterling have acted or refused to act in respects generally
+15    applicable to the Classes, thereby making appropriate final and injunctive relief with regard
+16    to the members of the Classes as a whole.
+17    ANSWER:
+18             With respect to those allegations directed towards Sterling, Sterling denies the
+19    allegations in Paragraph 48 of the Complaint, and specifically denies that class treatment
+20    is appropriate in this action.
+21                                      FIRST CAUSE OF ACTION
+22                                   CALIFORNIA MEGAN’S LAW
+23                                     Cal. Pen. Code § 290.46 et seq.
+24                                     (Against Employer Defendants)
+25    COMPLAINT ¶49:
+26             Plaintiff repeats, re-alleges, and incorporates by reference all other paragraphs, as if
+27    fully set forth herein.
+28
+                                     22
+        DEF’S ANSWER TO PL’S COMPLAINT, AFFIRMATIVE & OTHER DEFENSES
+      312857017v.1
+     Case 2:24-cv-05669-CBM-SSC        Document 14    Filed 09/12/24   Page 23 of 38 Page ID
+                                              #:82
+
+
+ 1    ANSWER:
+ 2             Sterling restates its answers to Paragraphs 1 through 48 as its answer to Paragraph
+ 3    49 of the Complaint.
+ 4    COMPLAINT ¶50:
+ 5             California Megan’s Law, Penal Code § 290.46 (“Megan’s Law”), requires that the
+ 6    Department of Justice maintain a public website identifying persons who are registered sex
+ 7    offenders on the website.
+ 8    ANSWER:
+ 9             The allegations in Paragraph 50 of the Complaint consist entirely of legal
+10    conclusions and, therefore, no answer is required to the allegations in Paragraph 50 of the
+11    Complaint. To the extent an answer is required to the allegations, Sterling denies any
+12    allegations in Paragraph 50 of the Complaint that are inconsistent with the cited statute.
+13    Sterling denies any remaining allegations in Paragraph 50 of the Complaint to the extent
+14    they pertain to Sterling.
+15    COMPLAINT ¶51:
+16             To ensure that registered offenders are not discriminated against based on
+17    information in the website, the Megan’s Law also prohibits the use of information from the
+18    Megan’s Law Website from being used for employment purposes. Cal. Penal Code §
+19    290.46(j)(2)(E).
+20    ANSWER:
+21             The allegations in Paragraph 51 of the Complaint consist entirely of legal
+22    conclusions and, therefore, no answer is required to the allegations in Paragraph 51 of the
+23    Complaint. To the extent an answer is required to the allegations, Sterling denies any
+24    allegations in Paragraph 51 of the Complaint that are inconsistent with the cited statute.
+25    Sterling denies any remaining allegations in Paragraph 51 of the Complaint to the extent
+26    they pertain to Sterling.
+27
+28
+                                     23
+        DEF’S ANSWER TO PL’S COMPLAINT, AFFIRMATIVE & OTHER DEFENSES
+      312857017v.1
+     Case 2:24-cv-05669-CBM-SSC        Document 14   Filed 09/12/24   Page 24 of 38 Page ID
+                                              #:83
+
+
+ 1    COMPLAINT ¶52:
+ 2             Ronin and UCLA Health used the information about Plaintiff contained in the
+ 3    Megan’s Law Website for employment purposes and denied Plaintiff employment with
+ 4    UCLA Health.
+ 5    ANSWER:
+ 6             Paragraph 52 does not include any allegations against Sterling and, therefore, no
+ 7    answer from Sterling is required. To the extent an answer is required, Sterling denies the
+ 8    allegations in Paragraph 52 of the Complaint, and specifically denies that class treatment
+ 9    is appropriate in this action.
+10    COMPLAINT ¶53:
+11             As a result of Ronin and UCLA Health’s violations, Plaintiff and members of the
+12    Class are entitled to recover actual damages, including lost wages, damages for emotional
+13    distress, loss of sleep, anxiety, treble damages, statutory damages, a civil penalty of
+14    $25,000.00, exemplary damages, and attorney fees and costs. Plaintiff and members of the
+15    Megan’s Law Class are also entitled to injunctive/preventative relief ordering that, moving
+16    forward, Ronin and UCLA Health cease from using information from the Megan’s Law
+17    site for employment purposes.
+18    ANSWER:
+19             Paragraph 53 does not include any allegations against Sterling and, therefore, no
+20    answer from Sterling is required. To the extent an answer is required, Sterling denies the
+21    allegations in Paragraph 53 of the Complaint, and specifically denies that class treatment
+22    is appropriate in this action.
+23
+24    ///
+25    ///
+26    ///
+27
+28
+                                     24
+        DEF’S ANSWER TO PL’S COMPLAINT, AFFIRMATIVE & OTHER DEFENSES
+      312857017v.1
+     Case 2:24-cv-05669-CBM-SSC         Document 14      Filed 09/12/24   Page 25 of 38 Page ID
+                                               #:84
+
+
+ 1                                   SECOND CAUSE OF ACTION
+ 2                                         FAIR CHANCE ACT
+ 3                                        Cal. Gov. Code § 12952
+ 4                                   (Against Employer Defendants)
+ 5    COMPLAINT ¶54:
+ 6             Plaintiff repeats, re-alleges, and incorporates by reference all other paragraphs, as if
+ 7    fully set forth herein.
+ 8    ANSWER:
+ 9             Sterling restates its answers to Paragraphs 1 through Paragraph 53 as its answer to
+10    Paragraph 54 of the Complaint.
+11    COMPLAINT ¶55:
+12             California’s Fair Chance Act, Government Code § 12952, provides that “[a]n
+13    employer that intends to deny an applicant a position of employment solely or in part
+14    because of the applicant’s conviction history shall make an individualized assessment of
+15    whether the applicant’s conviction history has a direct and adverse relationship with the
+16    specific duties of the job that justify denying the applicant the position.” Gov. Code §
+17    12952(c). In making the assessment, the employer must “consider all the following: (i) The
+18    nature and gravity of the offense or conduct. (ii) The time that has passed since the offense
+19    or conduct and completion of the sentence. (iii) The nature of the job held or sought.” Id.
+20    ANSWER:
+21             The allegations in Paragraph 55 of the Complaint consist entirely of legal
+22    conclusions and, therefore, no answer is required to the allegations in Paragraph 55 of the
+23    Complaint. To the extent an answer is required to the allegations, Sterling denies any
+24    allegations in Paragraph 55 of the Complaint that are inconsistent with the cited statute.
+25    Sterling denies any remaining allegations in Paragraph 55 of the Complaint to the extent
+26    they pertain to Sterling.
+27    COMPLAINT ¶56:
+28             Ronin and UCLA Health are employers.
+                                     25
+        DEF’S ANSWER TO PL’S COMPLAINT, AFFIRMATIVE & OTHER DEFENSES
+      312857017v.1
+     Case 2:24-cv-05669-CBM-SSC        Document 14      Filed 09/12/24   Page 26 of 38 Page ID
+                                              #:85
+
+
+ 1    ANSWER:
+ 2             Paragraph 56 of the Complaint does not include allegations directed towards Sterling,
+ 3    and, therefore, no answer from Sterling is required. To the extent an answer is required,
+ 4    Sterling lacks knowledge or information sufficient to form a belief as to the truth of the
+ 5    allegations in Paragraph 56 of the Complaint.
+ 6    COMPLAINT ¶57:
+ 7             Plaintiff is an applicant who applied for a position of employment with Employer
+ 8    Defendants.
+ 9    ANSWER:
+10             Sterling lacks knowledge or information sufficient to form a belief as to the truth of
+11    the allegations in Paragraph 57 of the Complaint.
+12    COMPLAINT ¶58:
+13             Employer Defendants reviewed Plaintiffs conviction history in the background
+14    report and based on the conviction history intended to deny Plaintiff a position of
+15    employment solely or in part because of his conviction history.
+16    ANSWER:
+17             Sterling denies the allegations in Paragraph 58 of the Complaint.
+18    COMPLAINT ¶59:
+19             Employer Defendants did not make an individualized assessment of whether
+20    Plaintiffs conviction history had a direct and adverse relationship with the specific duties
+21    of a program analyst that Plaintiff applied for that would justify denying him the position.
+22    ANSWER:
+23             Paragraph 59 does not include any allegations against Sterling and, therefore, no
+24    answer from Sterling is required. To the extent an answer is required, Sterling lacks
+25    knowledge or information sufficient to form a belief as to the truth of the allegations in
+26    Paragraph 59 of the Complaint.
+27
+28
+                                     26
+        DEF’S ANSWER TO PL’S COMPLAINT, AFFIRMATIVE & OTHER DEFENSES
+      312857017v.1
+     Case 2:24-cv-05669-CBM-SSC       Document 14    Filed 09/12/24   Page 27 of 38 Page ID
+                                             #:86
+
+
+ 1    COMPLAINT ¶60:
+ 2             The duties of the program analyst included creating various web-based versions of
+ 3    Microsoft Access prototypes using PHP, SQL, and T-SQL. The position was described as
+ 4    a hybrid position that could be handled remotely. Ronin did not consider the nature and
+ 5    gravity of Plaintiffs offense or conduct, the fifteen years that had passed since the offense
+ 6    or conduct and completion of the sentence, or the nature of the job held or sought. It is
+ 7    abundantly clear that Employer Defendants do not provide applicants with a conviction
+ 8    history a “fair chance” at employment.
+ 9    ANSWER:
+10             Paragraph 60 does not include any allegations against Sterling and, therefore, no
+11    answer from Sterling is required. To the extent an answer is required, Sterling lacks
+12    knowledge or information sufficient to form a belief as to the truth of the allegations in
+13    Paragraph 60 of the Complaint.
+14    COMPLAINT ¶61:
+15             As a result of Employer Defendants’ violations, Plaintiff and members of the Fair
+16    Chance Class are entitled to recover actual damages, including lost wages, damages for
+17    emotional distress, loss of sleep, anxiety, treble damages, statutory damages, punitive
+18    damages, and attorney fees and costs. Plaintiff and members of the Fair Chance Class are
+19    also entitled to injunctive/preventative relief ordering that, moving forward, Employer
+20    Defendants comply with the Fair Chance Act and provide each and every applicant with a
+21    conviction history an individualized assessment to fairly determine whether she or he is fit
+22    for the position.
+23    ANSWER:
+24             Paragraph 61 does not include any allegations against Sterling and, therefore, no
+25    answer from Sterling is required. To the extent an answer is required, Sterling lacks
+26    knowledge or information sufficient to form a belief as to the truth of the allegations in
+27    Paragraph 61 of the Complaint.
+28
+                                     27
+        DEF’S ANSWER TO PL’S COMPLAINT, AFFIRMATIVE & OTHER DEFENSES
+      312857017v.1
+     Case 2:24-cv-05669-CBM-SSC         Document 14      Filed 09/12/24   Page 28 of 38 Page ID
+                                               #:87
+
+
+ 1                                    THIRD CAUSE OF ACTION
+ 2                   INVESTIGATIVE CONSUMER REPORTING AGENCIES ACT
+ 3                                       Cal. Civ. Code § 1786.18
+ 4                                           (Against Sterling)
+ 5    COMPLAINT ¶62:
+ 6             Plaintiff repeats, re-alleges, and incorporates by reference all other paragraphs, as if
+ 7    fully set forth herein.
+ 8    ANSWER:
+ 9             Sterling restates its answers to Paragraphs 1 through 61 as its answer to Paragraph
+10    62 of the Complaint.
+11    COMPLAINT ¶63:
+12             California Investigative Consumer Reporting Agencies Act (“ICRAA”), Civil Code
+13    § 1786.18, prohibits an investigative consumer reporting agency from making or furnishing
+14    any investigative consumer report containing, among other things, “[r]ecords of arrest,
+15    indictment, information, misdemeanor complaint, or conviction of a crime that, from the
+16    date of disposition, release, or parole, antedate the report by more than seven years.” Cal.
+17    Civ. Code § 1786.18(a)(7).
+18    ANSWER:
+19             The allegations in Paragraph 63 of the Complaint consist entirely of legal
+20    conclusions and, therefore, no answer is required to the allegations in Paragraph 63 of the
+21    Complaint. To the extent an answer is required to the allegations, Sterling denies any
+22    allegations in Paragraph 63 of the Complaint that are inconsistent with the cited statute.
+23    Sterling denies any remaining allegations in Paragraph 63 of the Complaint, and
+24    specifically denies that it violated ICRAA, or any other law.
+25    COMPLAINT ¶64:
+26             Sterling is an “investigative consumer reporting agency” because it, “for monetary
+27    fees or dues, engages in whole or in part in the practice of collecting, assembling,
+28    evaluating, compiling, reporting, transmitting, transferring, or communicating information
+                                     28
+        DEF’S ANSWER TO PL’S COMPLAINT, AFFIRMATIVE & OTHER DEFENSES
+      312857017v.1
+     Case 2:24-cv-05669-CBM-SSC        Document 14     Filed 09/12/24   Page 29 of 38 Page ID
+                                              #:88
+
+
+ 1    concerning consumers for the purposes of furnishing investigative consumer reports to
+ 2    third parties.” Cal. Civ. Code § 1786.2(d).
+ 3    ANSWER:
+ 4             Sterling admits that it provides certain services as a “consumer reporting agency,”
+ 5    as that phrase is defined by ICRAA, and as limited to those services only. Sterling denies
+ 6    any remaining allegations in Paragraph 64 of the Complaint.
+ 7    COMPLAINT ¶65:
+ 8             An “investigative consumer report” means a consumer report in which information
+ 9    on a consumer’s character, general reputation, personal characteristics, or mode of living
+10    is obtained through any means.” Cal. Civ. Code § 1786.2(c).
+11    ANSWER:
+12             Paragraph 65 of the Complaint consists only of legal conclusions and, therefore, no
+13    answer is required. To the extent an answer is required, Sterling admits that it prepared
+14    “consumer reports” regarding Plaintiff, as that term is defined by the FCRA. Sterling
+15    denies any remaining allegations in Paragraph 65 of the Complaint.
+16    COMPLAINT ¶66:
+17             Plaintiff is a “consumer” under the ICRAA because he is “a natural individual who
+18    has made application to a person for employment purposes.” Cal. Civ. Code § 1786.2(b).
+19    ANSWER:
+20             Sterling admits that Plaintiff is a “consumer,” as that term is defined by the ICRAA.
+21    Sterling denies any remaining allegations in Paragraph 66 of the Complaint.
+22    COMPLAINT ¶67:
+23             Sterling violated the ICRAA by furnishing an investigative consumer report on
+24    Plaintiff containing records of a conviction that antedates the report by more than seven
+25    years. Sterling’s violation was grossly negligent or willful because it was aware of the
+26    ICRAA yet elected to ignore and violate the statute.
+27    ANSWER:
+28             Sterling denies the allegations in Paragraph 67 of the Complaint.
+                                     29
+        DEF’S ANSWER TO PL’S COMPLAINT, AFFIRMATIVE & OTHER DEFENSES
+      312857017v.1
+     Case 2:24-cv-05669-CBM-SSC         Document 14      Filed 09/12/24   Page 30 of 38 Page ID
+                                               #:89
+
+
+ 1    COMPLAINT ¶68:
+ 2             As a result of Sterling’s violations, Plaintiff and members of the ICRAA Class are
+ 3    entitled to recover actual damages, including lost wages, damages for emotional distress,
+ 4    loss of sleep, anxiety, treble damages, statutory damages, punitive damages, and attorney
+ 5    fees and costs. Plaintiff and members of the ICRAA Class are also entitled to
+ 6    injunctive/preventative relief ordering that, moving forward, Sterling ceases from
+ 7    including records of arrest, indictment, information, misdemeanor complaint, or conviction
+ 8    in investigative consumer reports that antedate the report by more than seven years.
+ 9    ANSWER:
+10             Sterling denies the allegations in Paragraph 68 of the Complaint, and specifically
+11    denies that it violated ICRAA, or any other law, and denies that class treatment is
+12    appropriate in this action.
+13                                   FOURTH CAUSE OF ACTION
+14                                  FAIR CREDIT REPORTING ACT
+15                                        15 U.S.C. § 1681b(b)(3)
+16                                   (Against Employer Defendants)
+17    COMPLAINT ¶69:
+18             Plaintiff repeats, re-alleges, and incorporates by reference all other paragraphs, as if
+19    fully set forth herein.
+20    ANSWER:
+21             Sterling restates its answers to Paragraphs 1 through 68 of the Complaint as its
+22    answer to Paragraph 69 of the Complaint.
+23    COMPLAINT ¶70:
+24             Ronin is a “person” as defined by the FCRA.
+25    ANSWER:
+26             Paragraph 70 does not include any allegations against Sterling and, therefore, no
+27    answer from Sterling is required. To the extent an answer is required, Sterling lacks
+28
+                                     30
+        DEF’S ANSWER TO PL’S COMPLAINT, AFFIRMATIVE & OTHER DEFENSES
+      312857017v.1
+     Case 2:24-cv-05669-CBM-SSC        Document 14    Filed 09/12/24   Page 31 of 38 Page ID
+                                              #:90
+
+
+ 1    knowledge or information sufficient to form a belief as to the truth of the allegations in
+ 2    Paragraph 70 of the Complaint.
+ 3    COMPLAINT ¶71:
+ 4             UCLA Health is a “person” as defined by the FCRA.
+ 5    ANSWER:
+ 6             Paragraph 71 does not include any allegations against Sterling and, therefore, no
+ 7    answer from Sterling is required. To the extent an answer is required, Sterling lacks
+ 8    knowledge or information sufficient to form a belief as to the truth of the allegations in
+ 9    Paragraph 71 of the Complaint.
+10    COMPLAINT ¶72:
+11             Plaintiff is a “consumer” as defined by the FCRA, on who a “consumer report” was
+12    generated and furnished, as defined by the FCRA.
+13    ANSWER:
+14             Sterling admits that Plaintiff is a “consumer” as that term is defined by the FCRA.
+15    Sterling denies the remaining allegations in Paragraph 72 of the Complaint.
+16    COMPLAINT ¶73:
+17             Employer Defendants obtained a consumer report on Plaintiff, used it for
+18    employment purposes, and before taking adverse action failed to provide a pre-adverse
+19    action notice, and after taking adverse action failed to provide a post-adverse action notice.
+20    Thus, Employer Defendants are in violation of the FCRA, 15 U.S.C. § 1681b(b)(3).
+21    ANSWER:
+22             Paragraph 73 does not include any allegations against Sterling and, therefore, no
+23    answer from Sterling is required. To the extent an answer is required, Sterling admits that
+24    it prepared a consumer report on Plaintiff at the request of Ronin Staffing LLC. Sterling
+25    denies any remaining allegations in Paragraph 73 of the Complaint to the extent they are
+26    directed to Sterling.
+27
+28
+                                     31
+        DEF’S ANSWER TO PL’S COMPLAINT, AFFIRMATIVE & OTHER DEFENSES
+      312857017v.1
+     Case 2:24-cv-05669-CBM-SSC         Document 14      Filed 09/12/24   Page 32 of 38 Page ID
+                                               #:91
+
+
+ 1    COMPLAINT ¶74:
+ 2             As a result of Employer Defendants negligent violation of the FCRA, Plaintiff and
+ 3    FCRA Class members are entitled to actual damages, and reasonable attorneys’ fees and
+ 4    costs. 15 U.S.C. § 1681n.
+ 5    ANSWER:
+ 6             Paragraph 74 does not include any allegations against Sterling and, therefore, no
+ 7    answer from Sterling is required. To the extent an answer is required, Sterling denies the
+ 8    allegations in Paragraph 74 of the Complaint to the extent they pertain to Sterling.
+ 9    COMPLAINT ¶75:
+10             Employer Defendants also acted with knowledge, willfulness, and reckless disregard
+11    of the law, thereby entitling Plaintiff and FCRA Class members to statutory damages of
+12    $1,000.00 and punitive damages in an amount to be determined at trial. 15 U.S.C. § 1681n.
+13    ANSWER:
+14             Paragraph 75 does not include any allegations against Sterling and, therefore, no
+15    answer from Sterling is required. To the extent an answer is required, Sterling denies the
+16    allegations in Paragraph 75 of the Complaint to the extent they pertain to Sterling.
+17                                     FIFTH CAUSE OF ACTION
+18                                   UNFAIR COMPETITION LAW
+19                           California Business & Professions Code §17200
+20                                       (Against All Defendants)
+21    COMPLAINT ¶76:
+22             Plaintiff repeats, re-alleges, and incorporates by reference all other paragraphs, as if
+23    fully set forth herein.
+24    ANSWER:
+25             Sterling restates its answers to Paragraphs 1 through 75 as its answer to Paragraph
+26    76 of the Complaint.
+27
+28
+                                     32
+        DEF’S ANSWER TO PL’S COMPLAINT, AFFIRMATIVE & OTHER DEFENSES
+      312857017v.1
+     Case 2:24-cv-05669-CBM-SSC       Document 14     Filed 09/12/24   Page 33 of 38 Page ID
+                                             #:92
+
+
+ 1    COMPLAINT ¶77:
+ 2             The UCL defines unfair competition to include any unlawful, unfair, or fraudulent
+ 3    business act or practice. The UCL provides that a court may order injunctive relief as a
+ 4    remedy for any violations of the UCL.
+ 5    ANSWER:
+ 6             The allegations in Paragraph 77 of the Complaint consist entirely of legal
+ 7    conclusions and, therefore, no answer is required to the allegations in Paragraph 77 of the
+ 8    Complaint. To the extent an answer is required, Sterling denies any allegations in
+ 9    Paragraph 77 of the Complaint that are inconsistent with the cited statute. Sterling denies
+10    any remaining allegations in Paragraph 77 of the Complaint, and specifically denies that it
+11    violated the UCL, or any other law.
+12    COMPLAINT ¶78:
+13             Beginning on an exact date unknown to Plaintiff, but at all times relevant herein,
+14    Defendants have committed acts of unfair and unlawful competition proscribed by the UCL,
+15    including the practices alleged herein. The acts of unfair competition include the following:
+16             a.    Employer Defendants used information contained in the Megan’s Law
+17                   Website for employment purposes.
+18             b.    After receiving the conviction information about Plaintiff, Employer
+19                   Defendants failed to conduct an individualized assessment before using the
+20                   conviction information to deny Plaintiff employment.
+21             c.    Sterling included prohibited information in the investigative consumer report
+22                   on Plaintiff and members of the ICRAA Class.
+23             d.    Employer Defendants failed to provide a pre-adverse action notice and post-
+24                   adverse action notice in connection with denying Plaintiff employment
+25                   based on information in the background report from Sterling.
+26    ANSWER:
+27             With respect to those allegations directed towards Sterling, Sterling denies the
+28    allegations in Paragraph 78 of the Complaint.
+                                     33
+        DEF’S ANSWER TO PL’S COMPLAINT, AFFIRMATIVE & OTHER DEFENSES
+      312857017v.1
+     Case 2:24-cv-05669-CBM-SSC        Document 14    Filed 09/12/24   Page 34 of 38 Page ID
+                                              #:93
+
+
+ 1    COMPLAINT ¶79:
+ 2             Defendants’ unlawful conduct has caused and continues to cause substantial injury
+ 3    to Plaintiff and the members of the Classes. As a result of Defendants’ unfair and unlawful
+ 4    conduct, Plaintiff lost money and/or property, including payments made in connection with
+ 5    the hiring process.
+ 6    ANSWER:
+ 7             With respect to those allegations directed towards Sterling, Sterling denies the
+ 8    allegations in Paragraph 79 of the Complaint.
+ 9    COMPLAINT ¶80:
+10             The business acts and practices of Defendants, as hereinabove alleged, constitute
+11    unfair business practices in that said acts and practices offend public policy and are
+12    substantially injurious to consumers and prospective employees. These acts and practices
+13    have no utility that outweighs their substantial harm to consumers and prospective
+14    employees.
+15    ANSWER:
+16             With respect to those allegations directed towards Sterling, Sterling denies the
+17    allegations in Paragraph 80 of the Complaint.
+18    COMPLAINT ¶81:
+19             The unlawful and unfair business acts and practices of Defendants described herein
+20    present a continuing threat to Plaintiff and members of the general public in that Ronin and
+21    UCLA Health are currently engaging in such acts and practices, and will persist and
+22    continue to do so unless and until an injunction is issued by this Court.
+23    ANSWER:
+24             With respect to those allegations directed towards Sterling, Sterling denies the
+25    allegations in Paragraph 81 of the Complaint.
+26    COMPLAINT ¶82:
+27             Pursuant to Business and Professions Code § 17203, Plaintiff seeks a injunction and
+28    public injunctive relief ordering that, moving forward:
+                                     34
+        DEF’S ANSWER TO PL’S COMPLAINT, AFFIRMATIVE & OTHER DEFENSES
+      312857017v.1
+     Case 2:24-cv-05669-CBM-SSC        Document 14    Filed 09/12/24   Page 35 of 38 Page ID
+                                              #:94
+
+
+ 1             a.    Ronin and UCLA Health cease from using information on the Megan’s Law
+ 2                   Website for employment purposes.
+ 3             b.    Ronin and UCLA Health implement and complete individualized assessments
+ 4                   on employment candidates where a background report discloses conviction
+ 5                   information, in connection with employment decisions.
+ 6             c.    Sterling ceases from including records of arrest, indictment, information,
+ 7                   misdemeanor complaint, or conviction of a crime that antedate the report by
+ 8                   more than seven years.
+ 9             d.    Ronin and UCLA Health provide pre-adverse action and post-adverse action
+10                   notices when making adverse employment decisions based on information
+11                   contained in a background report.
+12    ANSWER:
+13             With respect to those allegations directed towards Sterling, Sterling denies the
+14    allegations in Paragraph 82 of the Complaint.
+15    COMPLAINT ¶83:
+16             Pursuant to Code of Civil Procedure § 1021.5, Plaintiff seeks recovery of his
+17    attorney’s fees, costs and expenses incurred in the filing and prosecution of this action
+18    ANSWER:
+19             With respect to those allegations directed towards Sterling, Sterling denies the
+20    allegations in Paragraph 83 of the Complaint.
+21                                      PRAYER FOR RELIEF
+22             WHEREFORE, Plaintiff prays that judgment be entered against Ronin, and Plaintiff
+23    be awarded the following legal and equitable relief:
+24             1.    Certifying the Classes and pursuant to Federal Rule of Civil Procedure 23(b)(2)
+25    and (b)(3), certifying Plaintiffs as the representatives of the Classes, and designating their
+26    counsel as counsel for the Classes
+27             2.    Actual and compensatory damages for injuries suffered by Plaintiffs and the
+28    Classes;
+                                     35
+        DEF’S ANSWER TO PL’S COMPLAINT, AFFIRMATIVE & OTHER DEFENSES
+      312857017v.1
+     Case 2:24-cv-05669-CBM-SSC         Document 14    Filed 09/12/24    Page 36 of 38 Page ID
+                                               #:95
+
+
+ 1             3.    Statutory damages and treble damages;
+ 2             4.    Punitive/exemplary damages;
+ 3             5.    Civil penalties;
+ 4             6.    Injunctive/preventative relief ordering that, moving forward, Ronin and
+ 5    UCLA Health cease from using information from the Megan’s Law Website for
+ 6    employment purposes;
+ 7             7.    Injunctive relief ordering that, moving forward, Ronin and UCLA Health
+ 8    implement and complete individualized assessments where a background report discloses
+ 9    conviction information in connection with employment decisions;
+10             8.    Injunctive relief ordering that, moving forward, Sterling cease from including
+11    records of arrest, indictment, information, misdemeanor complaint, or conviction of a
+12    crime that antedate the report by more than seven years;
+13             9.    Injunctive relief ordering that, moving forward, Ronin and UCLA Health
+14    provide pre-adverse action and post-adverse action notices when making adverse
+15    employment decisions based on information contained in a background report.
+16             10.   Reasonable attorney’s fees and costs to bring and maintain the instant action;
+17             11.   For such other and further relief as the Court may deem just and proper.
+18    ANSWER:
+19             With respect to the relief requested from Sterling and those allegations directed
+20    toward Sterling, Sterling denies that Plaintiff is entitled to any of the relief requested in the
+21    Complaint as to Sterling, and further denies that Plaintiff is entitled to any relief whatsoever
+22    from Sterling.
+23                                          TRIAL BY JURY
+24             Pursuant to the Seventh Amendment to the Constitution of the United States of
+25    America, Plaintiff is entitled to, and demands, a trial by July.
+26    ANSWER:
+27             Sterling admits that Plaintiff purports to demand a jury trial. Sterling denies any
+28    remaining allegations in the Demand for Jury Trial.
+                                     36
+        DEF’S ANSWER TO PL’S COMPLAINT, AFFIRMATIVE & OTHER DEFENSES
+      312857017v.1
+     Case 2:24-cv-05669-CBM-SSC         Document 14      Filed 09/12/24   Page 37 of 38 Page ID
+                                               #:96
+
+
+ 1                            AFFIRMATIVE AND OTHER DEFENSES
+ 2             Without assuming the burden of proof where it otherwise rests with Plaintiff,
+ 3    Defendant asserts the following affirmative and other defenses to the Complaint, and
+ 4    reserves its right to raise additional defenses as may be discovered during the course of
+ 5    these proceedings:
+ 6                                           FIRST DEFENSE
+ 7             Any damages sustained by Plaintiff and/or putative class members were not
+ 8    proximately caused by Sterling.
+ 9                                         SECOND DEFENSE
+10             Sterling consistently followed reasonable procedures to assure maximum possible
+11    accuracy in the information concerning Plaintiff and all other individuals on which it has
+12    prepared consumer reports.
+13                                          THIRD DEFENSE
+14             Plaintiff’s claims and/or the putative class members’ claims are barred in whole or
+15    in part to the extent they occurred and/or accrued outside of the applicable statute of
+16    limitations.
+17                                         FOURTH DEFENSE
+18             To the extent Plaintiff’s purported class includes individuals who suffered no
+19    concrete harm, such individuals lack standing to bring suit against Sterling.
+20                                           FIFTH DEFENSE
+21             Sterling is not subject to general or specific personal jurisdiction in this Court as to
+22    the claims belonging to some or all members of the putative class defined in the Complaint.
+23                                           SIXTH DEFENSE
+24             This Court is not the proper venue as to the claims belonging to some or all members
+25    of the putative class defined in the Complaint.
+26                                        SEVENTH DEFENSE
+27             Plaintiff’s claims on behalf of putative class members fail because Plaintiff cannot
+28    meet his burden to demonstrate that each requirement of Federal Rule of Civil Procedure
+                                     37
+        DEF’S ANSWER TO PL’S COMPLAINT, AFFIRMATIVE & OTHER DEFENSES
+      312857017v.1
+     Case 2:24-cv-05669-CBM-SSC        Document 14    Filed 09/12/24   Page 38 of 38 Page ID
+                                              #:97
+
+
+ 1    23 including, but not limited to, ascertainability, adequacy, typicality, commonality,
+ 2    predominance, and superiority, is met here, and because certifying a class in the
+ 3    circumstances of this case would violate Sterling’s right to due process under the law.
+ 4                                   RESERVATION OF RIGHTS
+ 5             Sterling’s investigation is ongoing and discovery in this action has not commenced.
+ 6    Sterling reserves its right to raise additional defenses as may be discovered or become
+ 7    apparent during the course of these proceedings.
+ 8
+ 9    DATED: September 12, 2024                       SEYFARTH SHAW LLP
+10
+11                                                    By: /s/ Jasmine J. Stanzick
+                                                         Jasmine J. Stanzick
+12                                                       Attorneys for Defendant
+                                                         STERLING INFOSYSTEMS, INC.
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+                                     38
+        DEF’S ANSWER TO PL’S COMPLAINT, AFFIRMATIVE & OTHER DEFENSES
+      312857017v.1
+
