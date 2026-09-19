@@ -1,0 +1,279 @@
+{
+  "schemaVersion": 1,
+  "matter": 28,
+  "generatedDate": "2026-09-19",
+  "purpose": "Case-law-only citation verification seeds isolated from the Matter 28 primary-source verification task. `cites` is directly consumable by internal/scripts/lookup-citations.py --cites-file. Regulatory, statutory, form, contract, and defendant-background items are intentionally excluded.",
+  "cites": [
+    "Meinhardt v. City of Sunnyvale, 16 Cal. 5th 643 (2024)",
+    "Estate of Esche v. Bunuel-Jordana, No. 24-6244 (9th Cir. Sept. 29, 2025)",
+    "Wicklund v. Idaho Department of Correction, No. 12-35294 (9th Cir. Nov. 23, 2015)",
+    "Palomar Mobilehome Park Ass'n v. City of San Marcos, 989 F.2d 362 (9th Cir. 1993)",
+    "Pollock v. University of Southern California, 112 Cal. App. 4th 1416 (2003)",
+    "Goddard v. Security Title Ins. & Guar. Co., 14 Cal. 2d 47 (1939)",
+    "Valvo v. University of Southern California, 67 Cal. App. 3d 887 (1977)",
+    "Lee v. City of Los Angeles, 250 F.3d 668 (9th Cir. 2001)",
+    "ASARCO, LLC v. Union Pacific R.R., 765 F.3d 999 (9th Cir. 2014)",
+    "Rawson v. Recovery Innovations, Inc., 975 F.3d 742 (9th Cir. 2020)",
+    "Kirtley v. Rainey, 326 F.3d 1088 (9th Cir. 2003)",
+    "Caviness v. Horizon Cmty. Learning Ctr., 590 F.3d 806 (9th Cir. 2010)",
+    "Richardson v. McKnight, 521 U.S. 399 (1997)",
+    "Heath v. Cleary, 708 F.2d 1376 (9th Cir. 1983)",
+    "Perez v. City of San Bruno, 27 Cal. 3d 875 (1980)",
+    "Zetz v. Boston Scientific Corp., 398 F. Supp. 3d 700 (E.D. Cal. 2019)",
+    "Schreiber Distrib. Co. v. Serv-Well Furniture Co., 806 F.2d 1393 (9th Cir. 1986)",
+    "DZ Reserve v. Meta Platforms, Inc., 96 F.4th 1223 (9th Cir. 2024)",
+    "Arizona Students' Ass'n v. Arizona Board of Regents, 824 F.3d 858 (9th Cir. 2016)",
+    "Medical Marijuana, Inc. v. Horn, 604 U.S. 593 (2025)",
+    "Filarsky v. Delia, 566 U.S. 377 (2012)",
+    "Merrill v. Mental Health Systems, Inc., No. 3:16-cv-01090-GPC-JMA (S.D. Cal.)"
+  ],
+  "verificationTargets": [
+    {
+      "item": "1A",
+      "authority": "Meinhardt v. City of Sunnyvale",
+      "citation": "16 Cal. 5th 643 (2024)",
+      "targets": [
+        "appeal-clock holding",
+        "whether sufficiently-final-order approach was adopted or rejected",
+        "discussion of orders sustaining demurrers without leave to amend",
+        "whether opinion addresses res judicata/preclusion"
+      ],
+      "preferredPrimarySource": "California Supreme Court opinion",
+      "directSourceHint": "https://www.courts.ca.gov/opinions/documents/S274147.PDF"
+    },
+    {
+      "item": "1B",
+      "authority": "Estate of Esche v. Bunuel-Jordana",
+      "citation": "No. 24-6244 (9th Cir. Sept. 29, 2025)",
+      "targets": [
+        "disposition",
+        "collateral-order/appellate-jurisdiction holding",
+        "private-party qualified-immunity discussion",
+        "holding-versus-reasoning distinction"
+      ],
+      "preferredPrimarySource": "Ninth Circuit published opinion",
+      "directSourceHint": "https://cdn.ca9.uscourts.gov/datastore/opinions/2025/09/29/24-6244.pdf"
+    },
+    {
+      "item": "1C",
+      "authority": "Wicklund v. Idaho Department of Correction",
+      "citation": "No. 12-35294 (9th Cir. Nov. 23, 2015)",
+      "targets": [
+        "publication status",
+        "district-case identity",
+        "First Amendment retaliation disposition",
+        "qualified-immunity disposition",
+        "whether circulated 623 F. App'x 338 reporter cite is valid"
+      ],
+      "preferredPrimarySource": "Ninth Circuit memorandum disposition",
+      "directSourceHint": "https://cdn.ca9.uscourts.gov/datastore/memoranda/2015/11/23/12-35294.pdf"
+    },
+    {
+      "item": "2A",
+      "authority": "Palomar Mobilehome Park Ass'n v. City of San Marcos",
+      "citation": "989 F.2d 362 (9th Cir. 1993)",
+      "targetPins": [
+        "general-demurrer judgment / merits language"
+      ]
+    },
+    {
+      "item": "2B",
+      "authority": "Pollock v. University of Southern California",
+      "citation": "112 Cal. App. 4th 1416 (2003)",
+      "targets": [
+        "claimed general-versus-special-demurrer passage",
+        "confirm or contradict attribution"
+      ]
+    },
+    {
+      "item": "2C",
+      "authority": "Goddard v. Security Title Ins. & Guar. Co.",
+      "citation": "14 Cal. 2d 47 (1939)",
+      "targetPins": [
+        "52-53"
+      ],
+      "targets": [
+        "technical/formal defect exception to merits effect"
+      ]
+    },
+    {
+      "item": "2D",
+      "authority": "Valvo v. University of Southern California",
+      "citation": "67 Cal. App. 3d 887 (1977)",
+      "targetPins": [
+        "891-92",
+        "n.3"
+      ],
+      "targets": [
+        "until entry of judgment demurrer ruling not res judicata"
+      ]
+    },
+    {
+      "item": "2E",
+      "authority": "Lee v. City of Los Angeles",
+      "citation": "250 F.3d 668 (9th Cir. 2001)",
+      "targetPins": [
+        "689-90"
+      ],
+      "targets": [
+        "year",
+        "judicial notice cannot establish truth of disputed facts in public records"
+      ]
+    },
+    {
+      "item": "4-ASARCO",
+      "authority": "ASARCO, LLC v. Union Pacific R.R.",
+      "citation": "765 F.3d 999 (9th Cir. 2014)",
+      "targetPins": [
+        "1004"
+      ],
+      "targets": [
+        "affirmative defense on Rule 12(b)(6); obvious bar on face of complaint"
+      ]
+    },
+    {
+      "item": "4-Rawson",
+      "authority": "Rawson v. Recovery Innovations, Inc.",
+      "citation": "975 F.3d 742 (9th Cir. 2020)",
+      "targetPins": [
+        "753"
+      ],
+      "targets": [
+        "significant state involvement in private-party actions and decisionmaking"
+      ]
+    },
+    {
+      "item": "4-Kirtley",
+      "authority": "Kirtley v. Rainey",
+      "citation": "326 F.3d 1088 (9th Cir. 2003)",
+      "targetPins": [
+        "1092"
+      ],
+      "targets": [
+        "four state-action tests"
+      ]
+    },
+    {
+      "item": "4-Caviness",
+      "authority": "Caviness v. Horizon Cmty. Learning Ctr.",
+      "citation": "590 F.3d 806 (9th Cir. 2010)",
+      "targets": [
+        "conduct-specific state-action inquiry",
+        "actual no-state-action outcome"
+      ]
+    },
+    {
+      "item": "4-Richardson",
+      "authority": "Richardson v. McKnight",
+      "citation": "521 U.S. 399 (1997)",
+      "targets": [
+        "systematically organized private firm language",
+        "exact pin"
+      ]
+    },
+    {
+      "item": "4-Heath",
+      "authority": "Heath v. Cleary",
+      "citation": "708 F.2d 1376 (9th Cir. 1983)",
+      "targetPins": [
+        "1380 n.4"
+      ],
+      "targets": [
+        "California exhaustion dismissal / later §1983 preclusion"
+      ]
+    },
+    {
+      "item": "4-Perez",
+      "authority": "Perez v. City of San Bruno",
+      "citation": "27 Cal. 3d 875 (1980)",
+      "targetPins": [
+        "882-83"
+      ],
+      "targets": [
+        "prematurity / precondition passage"
+      ]
+    },
+    {
+      "item": "4-Zetz",
+      "authority": "Zetz v. Boston Scientific Corp.",
+      "citation": "398 F. Supp. 3d 700 (E.D. Cal. 2019)",
+      "targetPins": [
+        "713"
+      ]
+    },
+    {
+      "item": "4-Schreiber",
+      "authority": "Schreiber Distrib. Co. v. Serv-Well Furniture Co.",
+      "citation": "806 F.2d 1393 (9th Cir. 1986)",
+      "targetPins": [
+        "1400-01"
+      ]
+    },
+    {
+      "item": "4-DZReserve",
+      "authority": "DZ Reserve v. Meta Platforms, Inc.",
+      "citation": "96 F.4th 1223 (9th Cir. 2024)",
+      "targetPins": [
+        "1233"
+      ]
+    },
+    {
+      "item": "4-ArizonaStudents",
+      "authority": "Arizona Students' Ass'n v. Arizona Board of Regents",
+      "citation": "824 F.3d 858 (9th Cir. 2016)",
+      "targetPins": [
+        "867"
+      ]
+    },
+    {
+      "item": "4-Horn",
+      "authority": "Medical Marijuana, Inc. v. Horn",
+      "citation": "604 U.S. 593 (2025)",
+      "targets": [
+        "official U.S. Reports citation",
+        "what Court expressly declined to decide about business",
+        "what Court expressly declined to decide about property",
+        "what Court expressly declined to decide about proximate cause"
+      ]
+    },
+    {
+      "item": "5B-anchor",
+      "authority": "Filarsky v. Delia",
+      "citation": "566 U.S. 377 (2012)",
+      "targets": [
+        "baseline contractor-qualified-immunity authority for 2024-2026 follow-on search"
+      ]
+    },
+    {
+      "item": "5C",
+      "authority": "Merrill v. Mental Health Systems, Inc.",
+      "citation": "S.D. Cal. No. 3:16-cv-01090-GPC-JMA",
+      "targets": [
+        "subsequent history after Sept. 13, 2016 order",
+        "later state-action ruling",
+        "dismissal",
+        "settlement",
+        "appeal"
+      ]
+    }
+  ],
+  "excludedFromCitationSeed": {
+    "regulatoryStatutory": [
+      "15 Cal. Code Regs. § 3574",
+      "Cal. Penal Code § 3008(d)(1)-(2)",
+      "CDCR Form 3043"
+    ],
+    "openEndedCaseLawSearches": [
+      "2F: California cases classifying exhaustion demurrers under CCP § 430.10(a), § 430.10(e), or both",
+      "5A: decisions imposing damages liability on private sex-offender treatment providers/officers under § 1983, Bane Act, or RICO",
+      "5B: 2024-2026 decisions applying Richardson/Filarsky to private treatment contractors"
+    ],
+    "publicRecord": [
+      "5D: HOPE/Shannon licensing, certification, contracts, discipline"
+    ]
+  },
+  "integration": {
+    "existenceCommand": "python3 internal/scripts/lookup-citations.py --cites-file internal/docs/citation_seed_matter28_primary_source.json --out internal/docs/citation_lookup_matter28_primary_source.json",
+    "note": "FOUND verifies existence/caption only. It does not clear MISCHARACTERIZED/MISCITED proposition problems or verify requested pins/holdings."
+  }
+}
