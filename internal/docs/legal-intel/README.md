@@ -41,6 +41,7 @@ Closed shells (1, 2, 5, 7, 8, 15) stay off this table. They appear only on the c
 - Frederick–Stanzick Playbook (Matter 29 two-desk + *Lerma* / *Carrillo* papers): [`../counsel/frederick-stanzick/`](../counsel/frederick-stanzick/)
 - Judge memos: `judges/` — check assignment before using
 - Dated surveys: `recon/`
+- Matter 28 MTD stack: [`recon/2026-09-12-matter-28-UNIFIED.md`](recon/2026-09-12-matter-28-UNIFIED.md) (briefing spine — rebuilt 2026-09-19 on Track A + unique #879 files; do not merge old #879 as-is). Draft from UNIFIED. Do not open the dated supplements to draft. Primary-source ITEM log: [`recon/2026-09-19-matter-28-primary-source-verification.md`](recon/2026-09-19-matter-28-primary-source-verification.md). Gap-fill pins remain at [`recon/2026-09-18-matter-28-mtd-gap-fill.md`](recon/2026-09-18-matter-28-mtd-gap-fill.md).
 - Portfolio impeachment map: [`../CROSS_MATTER_RISK_INDEX.md`](../CROSS_MATTER_RISK_INDEX.md) (dated Jul. 11, 2026 — refresh against live captions)
 - 28 cite whitelist: [`../MATTER_28_SAFE_CITE_LIST.md`](../MATTER_28_SAFE_CITE_LIST.md)
 

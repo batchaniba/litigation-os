@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "fileCount": 1503,
-  "totalBytes": 948011599,
+  "fileCount": 1515,
+  "totalBytes": 978772437,
   "files": [
     {
       "path": "/documents/README.md",
@@ -4229,6 +4229,51 @@
       "sha256": "56bbea2244c34322ec921441b24585a7f8fe7eb901391fcef1695aa07fdbf4ca"
     },
     {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 55-1 - Declaration of Raymond Y. Kim in Support of Motion for Class Certification (Jan 14, 2026).meta.json",
+      "size": 357,
+      "sha256": "a9806d6c7d5100e8baf71bcf81f6569e3020e103c10813bfc3ddc7a9af246aa5"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 55-1 - Declaration of Raymond Y. Kim in Support of Motion for Class Certification (Jan 14, 2026).pdf",
+      "size": 4397522,
+      "sha256": "388245eaa6972f5908d7e16157dfd685b7732dc3f25c57be8cf1a4038c380f6d"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 55-1 - Declaration of Raymond Y. Kim in Support of Motion for Class Certification (Jan 14, 2026).txt",
+      "size": 516428,
+      "sha256": "78aedd29fd60e4733f9aaec2f4b080fca7f7cac9f1f53b42b14ae3f15922ec45"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 55-2 - Declaration of Roberto Sandoval Carrillo in Support of Motion for Class Certification (Jan 14, 2026).meta.json",
+      "size": 373,
+      "sha256": "7ed43d947e2117b3ced282b0bd72d40329d04b68996aa51867976127bf1b1ad8"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 55-2 - Declaration of Roberto Sandoval Carrillo in Support of Motion for Class Certification (Jan 14, 2026).pdf",
+      "size": 25192454,
+      "sha256": "1a2accdd9f8c2ec63392a93e8086741761af09a5a0ee15ae768296eba45ee728"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 55-2 - Declaration of Roberto Sandoval Carrillo in Support of Motion for Class Certification (Jan 14, 2026).txt",
+      "size": 85168,
+      "sha256": "84071377a41a060c8c5984b0373d41f14853b03442004b63b8f88cea888ccba3"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 55-3 - [Proposed] Order Granting Plaintiff's Motion for Class Certification (Jan 14, 2026).meta.json",
+      "size": 360,
+      "sha256": "0e0d47e6da892d14d3d6748880be79d906954db5c7f5bd1969c4d3876d597d45"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 55-3 - [Proposed] Order Granting Plaintiff's Motion for Class Certification (Jan 14, 2026).pdf",
+      "size": 388529,
+      "sha256": "763b8dd08ac78f696602904ac611d5c2f78f90e7a1df0761f14bfe17316bc3aa"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 55-3 - [Proposed] Order Granting Plaintiff's Motion for Class Certification (Jan 14, 2026).txt",
+      "size": 2406,
+      "sha256": "69a8390a17714d2b098fbcadfce16d338d8964c289fc19303b64d3befeecdab6"
+    },
+    {
       "path": "/documents/matter-29/carrillo-v-vons/Dkt 56 - Vons Opposition to Class Certification (Feb 18, 2026).meta.json",
       "size": 361,
       "sha256": "818016e7e1a41ed465fc76e495fff13d05243504ec56cb8ec50770a8bee52cc6"
@@ -4242,6 +4287,21 @@
       "path": "/documents/matter-29/carrillo-v-vons/Dkt 56 - Vons Opposition to Class Certification (Feb 18, 2026).txt",
       "size": 128034,
       "sha256": "190f2fa81bdebac7ed09e3b56c804905581f9469037c77f43816f76b1193b406"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-1 - Declaration of Karimah J. Lamar in Support of Vons' Opposition to Motion for Class Certification (Feb 18, 2026).meta.json",
+      "size": 391,
+      "sha256": "11534bcc5c3c2f4f855b5694b80311b5bde084962a5a17f524e21992e9335553"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-1 - Declaration of Karimah J. Lamar in Support of Vons' Opposition to Motion for Class Certification (Feb 18, 2026).pdf",
+      "size": 167698,
+      "sha256": "79f70d4515cde7b6b27df60274e4150ae61c7bc8d5924239ccd3f0e238eeba50"
+    },
+    {
+      "path": "/documents/matter-29/carrillo-v-vons/Dkt 56-1 - Declaration of Karimah J. Lamar in Support of Vons' Opposition to Motion for Class Certification (Feb 18, 2026).txt",
+      "size": 9152,
+      "sha256": "221a7fb0d047c95ede17ae772dcf0adbe8b0df8efaaf3186e40d08faf4a35b69"
     },
     {
       "path": "/documents/matter-29/carrillo-v-vons/Dkt 57 - Asurint Opposition to Class Certification (Feb 18, 2026).meta.json",
